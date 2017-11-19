@@ -1,0 +1,1 @@
+Režim standardů aplikace Internet Explorer 9, režim standardů aplikace Internet Explorer 10, režim standardů aplikace Internet Explorer 11 a aplikace pro Windows Store

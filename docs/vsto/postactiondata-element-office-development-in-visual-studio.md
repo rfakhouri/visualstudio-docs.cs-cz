@@ -1,0 +1,63 @@
+---
+title: "&lt;postactiondata –&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- <postActionData> element
+- application manifests [Office development in Visual Studio], <postActionData> element
+- postActionData element
+ms.assetid: e36cbd64-fd27-4413-b293-cf5546fbdfaf
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4a8ccea7fd468f590b927234c9114ae82ee1479f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/31/2017
+---
+# <a name="ltpostactiondatagt-element-office-development-in-visual-studio"></a>&lt;postactiondata –&gt; – Element (vývoj pro Office v sadě Visual Studio)
+  `postActionData` Element `vstav3` data související s jakoukoliv akci po nasazení, která spustí po instalaci řešení pro systém Office Určuje obor názvů.  
+  
+## <a name="syntax"></a>Syntaxe  
+  
+```  
+<postActionData>  
+</postActionData>  
+```  
+  
+## <a name="elements-and-attributes"></a>Elementy a atributy  
+ `postActionData` Element je volitelný a je v `vstav3` oboru názvů. Existuje `postActionData` element definovaný v manifest aplikace pro každou akci po nasazení.  
+  
+ `postActions` Element nemá žádné atributy.  
+  
+ `postActions`nemá žádné podřízené prvky.  
+  
+## <a name="post-deployment-action-example"></a>Příklad akce po nasazení  
+  
+### <a name="description"></a>Popis  
+ Následující příklad kódu ukazuje `postAction` element v manifestu aplikace pro řešení Office nasadit pomocí [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]. Tento příklad kódu je součástí většího příkladu vztahujícího se v [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).  
+  
+### <a name="code"></a>Kód  
+  
+```  
+<vstav3:postActionData>  
+  data in any format  
+</vstav3:postActionData>  
+```  
+  
+## <a name="see-also"></a>Viz také  
+ [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
+ [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
+ [ClickOnce – Manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
+  
+  

@@ -1,0 +1,1 @@
+Internet Explorer před verzí Internet Explorer 6

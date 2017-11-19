@@ -1,0 +1,71 @@
+---
+title: BP_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_FLAGS
+helpviewer_keywords: BP_FLAGS enumeration
+ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 801ea6fb80c410b43fb8dd9c164e0c83a0f2ea8f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 10/31/2017
+---
+# <a name="bpflags"></a>BP_FLAGS
+Poskytuje volitelné příznaky, které lze zadat další informace, pokud nastavení boru přerušení.  
+  
+## <a name="syntax"></a>Syntaxe  
+  
+```cpp  
+enum enum_BP_FLAGS {   
+   BP_FLAG_NONE            = 0x0000,  
+   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
+   BP_FLAG_DONT_STOP       = 0x0002  
+};  
+typedef DWORD BP_FLAGS;  
+```  
+  
+```csharp  
+public enum enum_BP_FLAGS {   
+   BP_FLAG_NONE            = 0x0000,  
+   BP_FLAG_MAP_DOCPOSITION = 0x0001,  
+   BP_FLAG_DONT_STOP       = 0x0002  
+};  
+```  
+  
+## <a name="members"></a>Členové  
+ BP_FLAG_NONE  
+ Určuje bez zarážek příznak.  
+  
+ BP_FLAG_MAP_DOCPOSITION  
+ Určuje, že modul ladění (DE) by měla mapování zarážek pomocí pozice dokumentu. To se vztahuje pouze na body přerušení nastavené v orientované skriptu zdrojové soubory jako je například stránky ASP (Active Server).  
+  
+ BP_FLAG_DONT_STOP  
+ Určuje, že zarážce měla by být zpracována modul ladění, ale, modul ladění nakonec nesmí zastavit existuje (který je [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) objekt události by se neměly posílat). Tento příznak slouží k použití především se tracepoints.  
+  
+## <a name="remarks"></a>Poznámky  
+ Použít pro `dwFlags` členem [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) a [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) struktury.  
+  
+ Tyto hodnoty mohou být kombinovány s bitové `OR`.  
+  
+## <a name="requirements"></a>Požadavky  
+ Záhlaví: msdbg.h  
+  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
+  
+ Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+  
+## <a name="see-also"></a>Viz také  
+ [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
+ [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)   
+ [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)
