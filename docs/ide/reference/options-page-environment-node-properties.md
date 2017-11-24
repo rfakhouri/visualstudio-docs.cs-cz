@@ -15,11 +15,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 Tento dokument popisuje stránky (nebo vlastnosti kolekce), jsou přidružené **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, z **možnosti** dialogové okno. Název každé část je hovoru, který se používá pro přístup ke kolekci vlastností a v tabulce v každou část jsou uvedeny vlastnosti v kolekci.  
@@ -71,7 +71,7 @@ Tento dokument popisuje stránky (nebo vlastnosti kolekce), jsou přidružené *
 |Název položky vlastnosti|Hodnota|Popis|  
 |------------------------|-----------|-----------------|  
 |EnableAdminExtensions|Get/Set (Boolean)|Načte rozšíření na uživatele, když Visual Studio je spuštěná s pověřeními správce. Po změně této hodnoty je třeba restartovat Visual Studio.|  
-|EnableOnline|Get/Set (Boolean)|Umožňuje přístup k rozšíření v Galerii Visual Studia.|  
+|EnableOnline|Get/Set (Boolean)|Umožňuje přístup k rozšíření na Visual Studio Marketplace.|  
 |AutomaticallyCheckForUpdates|Get/Set (Boolean)|Automaticky zjišťuje aktualizace nainstalované rozšíření.|  
   
 ## <a name="find-and-replace"></a>hledání a nahrazování  

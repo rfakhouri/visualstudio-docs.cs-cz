@@ -1,50 +1,64 @@
 ---
 title: "Přizpůsobení sady Visual Studio IDE | Microsoft Docs"
 ms.custom: 
-ms.date: 07/20/2017
+ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
 caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9580ca2e45cfd0dcc8b50871d762786e006a166d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.openlocfilehash: 49a42bdc9f8ec979e47f0977abdf36f614141c89
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Přizpůsobení sady Visual Studio IDE
-Visual Studio si můžete přizpůsobit v různé způsoby, jak nejlépe podporují vlastní styl vývoj a požadavky. Toto téma stručně popisuje různé přizpůsobení a kde najít další informace.
 
-Přizpůsobení jsou také k dispozici možnosti prostřednictvím [dialogové okno Možnosti prostředí](../ide/reference/environment-options-dialog-box.md). Kromě toho řadu nastavení mohla používat s vámi napříč instancemi Visual Studio. V tématu [synchronizovat nastavení](../ide/synchronized-settings-in-visual-studio.md).
-
-## <a name="window-layouts"></a>Rozložení oken
-Můžete definovat a uložit více rozložení oken a mezi nimi přepínat. Můžete například definovat jeden rozložení pro kódování a jeden pro ladění. Uspořádá okna pozic a chování a uložit vlastní rozložení najdete v tématu [přizpůsobení rozložení oken](../ide/customizing-window-layouts-in-visual-studio.md).  
+Visual Studio si můžete přizpůsobit v různé způsoby, jak nejlépe podporují vlastní styl vývoj a požadavky. Řadu nastavení mohla používat s vámi napříč instancemi Visual Studio &mdash; najdete v části [synchronizovat nastavení](../ide/synchronized-settings-in-visual-studio.md). Toto téma stručně popisuje různé přizpůsobení a kde můžete najít další informace.
 
 ## <a name="general-environment-options"></a>Možnosti Obecné prostředí
-Chcete-li přizpůsobit mnoho nastavení prostředí, zadejte `environment` v **QuickLaunch** a stiskněte klávesu **Enter**. Pokud se zobrazí stránku vlastností, můžete stisknout **F1** další pomoc na různá nastavení na této stránce. Další informace najdete v tématu [dialogové okno Možnosti prostředí](../ide/reference/environment-options-dialog-box.md).  
 
-## <a name="external-tools"></a>Externí nástroje
-Chcete-li přizpůsobit, které externí nástroje se zobrazí v nabídek a panelů nástrojů, přečtěte si téma [Správa externích nástrojů](../ide/managing-external-tools.md).  
+Mnoho možností pro přizpůsobení se zveřejňují přes [možnosti prostředí](../ide/reference/environment-options-dialog-box.md) dialogové okno. Pro přístup k tohoto dialogového okna dvěma způsoby:
 
-## <a name="start-page"></a>Úvodní stránka
-Chcete-li vytvořit vlastní úvodní stránky pro vám a vašemu týmu, přečtěte si téma [přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md).
+- Na řádku nabídek zvolte **nástroje**, **možnosti**a pokud je ještě není rozbalená, rozbalte **prostředí** uzlu.
+
+- Typ `environment` v **Snadné spuštění** pole a zvolte **prostředí--> Obecné** ze seznamu výsledků.
+
+   > [!TIP]
+   > Pokud se zobrazí dialogové okno, můžete stisknout **F1** nápovědu k různá nastavení na této stránce.
 
 ## <a name="environment-color-themes"></a>Barevné motivy prostředí
-Chcete-li změnit barvu motivu mezi světlým, tmavý a modré, typu "prostředí" v **QuickLaunch**, zvolte **prostředí--> Obecné**a poté změňte **barevný motiv** možnost.
 
-Chcete-li změnit možnosti zabarvení v editoru, zadejte `environment` v **QuickLaunch** a zvolte **prostředí--> písma a barev**. Viz také [postupy: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).  
+Chcete-li změnit barvu motivu mezi světlým, tmavý a modré, typ `environment` v **Snadné spuštění** pole a potom vyberte **prostředí--> Obecné**. V **možnosti** dialogové okno, změny **barevný motiv** možnost.
 
-### <a name="menus-and-toolbars"></a>Nabídek a panelů nástrojů
-Chcete-li přidat nebo odebrat položky nabídky nebo panelu nástrojů, přečtěte si téma [postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).  
+Chcete-li změnit možnosti zabarvení v editoru, zadejte `environment` v **Snadné spuštění** pole a potom vyberte **prostředí--> písma a barev**. V tématu [postupy: Změna písma a barev](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Přejděte z hlavní nabídky velká a malá písmena
-Můžete změnit hlavní nabídky malá a velká písmena mezi **první písmeno velké** (například "soubor") a **velká písmena** ("soubor"). Typ "prostředí" v **QuickLaunch**, vyberte **prostředí > Obecné**a poté změňte **použít název případu stylů na řádku nabídek** možnost.
+
+Můžete změnit hlavní nabídky malá a velká písmena mezi **první písmeno velké** ("soubor") a **velká písmena** ("soubor"). Typ `environment` v **Snadné spuštění** vyberte **prostředí--> Obecné**a poté změňte **použít název případu stylů na řádku nabídek** možnost.
+
+### <a name="customzing-menus-and-toolbars"></a>Přizpůsobení nabídek a panelů nástrojů
+
+Chcete-li přidat nebo odebrat položky nabídky nebo panelu nástrojů, přečtěte si téma [postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+
+## <a name="start-page"></a>Úvodní stránka
+
+Chcete-li vytvořit vlastní úvodní stránky pro vám a vašemu týmu, přečtěte si téma [přizpůsobení úvodní stránky](../ide/customizing-the-start-page-for-visual-studio.md).
+
+## <a name="window-layouts"></a>Rozložení oken
+
+Můžete definovat a uložit více rozložení oken a mezi nimi přepínat. Můžete například definovat jeden rozložení pro kódování a jeden pro ladění. Uspořádá okna pozic a chování a uložit vlastní rozložení najdete v tématu [přizpůsobení rozložení oken](../ide/customizing-window-layouts-in-visual-studio.md).
+
+## <a name="external-tools"></a>Externí nástroje
+
+Můžete přizpůsobit **nástroje** nabídky ke spuštění externích nástrojů pro další informace najdete v tématu [Správa externích nástrojů](../ide/managing-external-tools.md).
 
 ## <a name="see-also"></a>Viz také
-[Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
+
+[Přehled Visual Studio IDE](../ide/visual-studio-ide.md)  
+[Rychlý úvod: první pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)

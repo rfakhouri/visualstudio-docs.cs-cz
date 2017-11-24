@@ -1,10 +1,10 @@
 ---
 title: "Odstraňování problémů instalace | Microsoft Docs"
 description: "V některých případech může problémů. Pokud instalaci sady Visual Studio nebo upgrade selže, může pomoci tuto stránku."
-ms.date: 11/08/2017
+ms.date: 11/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
-ms.author: tims
+ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f0f71dab64a99965facac9ccaa0fff9b53a6e3f6
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4c864a05b267889720ba64a6427861aa2c42e3b2
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Řešení potíží s Visual Studio 2017 instalace a upgrade
 
@@ -37,7 +37,8 @@ Vyhledávání na vaše chybová zpráva s [Visual Studio Community vývojáře]
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>Krok 3 – odstranit adresář instalační program Visual Studio k řešení problémů s upgradem
 Instalační program Visual Studio zavaděč je minimální spustitelný soubor šedé –, který nainstaluje zbytek instalační program Visual Studio. Odstraňování souborů Instalační program Visual Studio a pak znovu spustit zavaděč může vyřešit chyby některé aktualizace.
 
-**Poznámka:** provedením následujících akcí přeinstaluje soubory Instalační program Visual Studio a resetuje metadata instalace.
+>[!NOTE]
+Provedením následujících akcí přeinstaluje soubory Instalační program Visual Studio a obnoví metadata instalace.
 
 1. Ukončete instalační program sady Visual Studio.
 2. Odstraňte adresář instalační program Visual Studio. Adresář je obvykle `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
@@ -57,7 +58,7 @@ V některých situacích, například související s poškozené soubory může
 Jako poslední možnost, můžete [odebrat Visual Studio](remove-visual-studio.md) odebrat všechny instalační soubory a informace o produktu.
 
 1. Postupujte podle pokynů v [odebrat Visual Studio](remove-visual-studio.md).
-2. Znovu spustit zavaděč, který je popsán v [krok 3 – odstranit adresář instalační program Visual Studio k řešení problémů s upgradem](#step-3--delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
+2. Znovu spustit zavaděč, který je popsán v [krok 3 – odstranit adresář instalační program Visual Studio k řešení problémů s upgradem](#step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems).
 3. Zkuste instalaci nebo aktualizaci sady Visual Studio znovu.
 
 ### <a name="step-6---contact-us-optional"></a>Krok 6 – kontaktujte nás (volitelné)
@@ -88,10 +89,10 @@ Shromažďovat protokoly:
 
 ## <a name="more-support-options"></a>Další možnosti podpory
 
-Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
+Pokud žádné další kroky umožňují úspěšně nainstalovat, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Tady je několik více možností:
-
+* Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (To vyžaduje [Githubu](https://github.com/) účtu).

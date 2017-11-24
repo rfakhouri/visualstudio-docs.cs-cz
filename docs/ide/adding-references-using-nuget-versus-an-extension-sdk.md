@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40f554f21cc2cee9fb6d457ef9f4a560740cebc6
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Přidání odkazů pomocí nástroje NuGet a sady Extension SDK
 
@@ -56,7 +55,7 @@ Následující tabulka vám pomůže porovnat odkazující funkce sady SDK s odk
 |Tento mechanismus podporuje počítače s čistou vývojáře. (To znamená, není třeba žádná instalace, a bude fungovat jednoduché načtení ze správy zdrojového kódu.)|N|Protože odkazujete sady SDK, musíte zkontrolovat, v řešení a sady SDK samostatně. Můžete zkontrolovat v sadě SDK ze dvou bez registru výchozí umístění, ze kterých MSBuild opakuje sady SDK (podrobnosti najdete v tématu [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md)). Jako alternativu Pokud do vlastního umístění se skládá ze sady SDK můžete určit následující kód v souboru projektu:<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> Zkontrolujte sady SDK do tohoto umístění.|A|Můžete zkontrolovat na řešení a Visual Studio okamžitě rozpozná a funguje na soubory.|
 |Toho se můžete zapojit velké existující komunity autorů balíčku.|Není k dispozici|Komunita je nová.|A||
 |Můžete připojit velké existující komunitou příjemců balíčku.|Není k dispozici|Komunita je nová.|A||
-|Můžete připojit ekosystém partnerů (Vlastní galerie, úložiště a tak dále).|Není k dispozici|K dispozici úložiště zahrnují Galerie sady Visual Studio, Microsoft Download Center a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|A||
+|Můžete připojit ekosystém partnerů (Vlastní galerie, úložiště a tak dále).|Není k dispozici|K dispozici úložiště zahrnují Visual Studio Marketplace, Microsoft Download Center a [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|A||
 |Tento mechanismus se integruje s servery průběžnou integraci sestavení pro vytvoření balíčku a využití.|A|Sada SDK musí předat umístění vráceno se změnami (vlastnost SDKReferenceDirectoryRoot) na příkazovém řádku MSBuild.|A||
 |Tento mechanismus podporuje obě verze stabilní a předběžné verze balíčků.|A|SDK podporuje přidávání odkazů na více verzí.|A||
 |Tento mechanismus podporuje automatickou aktualizaci pro nainstalované balíčky.|A|Pokud je dodávána jako součást sady Visual Studio automatických aktualizací nebo VSIX, sada SDK poskytuje automatické oznámení.|A||

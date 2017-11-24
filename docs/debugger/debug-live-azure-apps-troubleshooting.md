@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e111159029710684a1a49be2859f6ac5699a70a
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Řešení potíží a známé problémy pro snímek ladění v sadě Visual Studio
 
@@ -30,8 +30,7 @@ Pokud se zobrazí ikona upozornění ![ikona upozornění Snappoint](../debugger
 
 Proveďte tyto kroky:
 
-1. Zkontrolujte, zda že máte stejnou verzi nástroje zdrojový kód, který byl použit k vytvoření a nasazení aplikace.
-1. Ujistěte se, že při zavádění správné symboly pro vaše nasazení. Chcete-li to provést, podívejte se **moduly** okno při ladění snímku a ověřte souboru se symboly sloupci se zobrazuje soubor .pdb načíst pro modul, kterou ladíte. Poznámka: ladicí program snímku se pokusí automaticky stáhnout a použít symboly pro vaše nasazení.
+1. Zkontrolujte, zda že máte stejnou verzi nástroje zdrojového kódu, která se použila k vytvoření a nasazení vaší app.isua1. Ujistěte se, že při zavádění správné symboly pro vaše nasazení. Chcete-li to provést, podívejte se **moduly** okno při ladění snímku a ověřte souboru se symboly sloupci se zobrazuje soubor .pdb načíst pro modul, kterou ladíte. Poznámka: ladicí program snímku se pokusí automaticky stáhnout a použít symboly pro vaše nasazení.
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problém: Symboly se nenačtou při otevření snímku
 
@@ -70,6 +69,7 @@ Proveďte tyto kroky:
 - Optimalizace Roslyn IL nejsou plně podporovány projektů ASP.NET Core. U některých projektů ASP.NET Core nemusí být možné najdete některé proměnné a používat některé proměnné v podmíněné příkazy. 
 - Speciální proměnné, jako například *$FUNCTION* nebo *$CALLER*, nelze vyhodnotit v podmíněné příkazy nebo logpoints pro projekty ASP.NET Core.
 - Ladění snímku nefunguje na aplikační služby, které mají [místní ukládání do mezipaměti](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache) zapnutý.
+- Ladění aplikace API snímku není aktuálně podporován.
 
 ## <a name="see-also"></a>Viz také
 
