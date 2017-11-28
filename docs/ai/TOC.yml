@@ -1,0 +1,29 @@
+- name: Visual Studio Tools for AI
+  href: index.yml
+  items:
+    - name: Přehled
+      items:
+        - name: Informace o Visual Studio Tools for AI
+          href: about-ai-tools.md
+    - name: Instalace
+      href: installation.md
+    - name: Rychlý start
+      items:
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: Kurzy
+      items:
+        - name: TensorFlow + Azure Deep Learning VM
+          href: tensorflow-vm.md
+    - name: Návody
+      items:
+        - name: Vytvoření nového projektu
+          href: create-project.md
+        - name: Vyzkoušejte svůj model
+          href: train-model.md
+    - name: Ukázky kódu
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: Galerie strojového učení
+          href: 'https://gallery.cortanaintelligence.com/projects'
