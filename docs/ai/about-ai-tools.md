@@ -10,13 +10,13 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: 6dd677f04396e3473f1de054393de66a57681192
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 90fcbd7e07ee4f18682d5cf914794982007088d0
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
-# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools pro AI
+# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
 Nástroje sady Visual Studio pro AI je rozšíření pro vytváření, testování a nasazení hloubkové Learning / AI řešení. Bezproblémově integruje se s Azure Machine Learning pro možnosti robustní experimentování, včetně k odesílání dat přípravy a úlohy školení modelu transparentně k cílům různými výpočetními bez omezení. Kromě toho poskytuje podporu pro vlastní metriky a spusťte historie sledování, povolení reprodukovatelnosti datové vědy a auditování. Enterprise připraveni spolupráce, povolit na projektu bezpečně spolupracovat s ostatními uživateli.
 
@@ -31,6 +31,8 @@ Pomůže urychlit AI inovací dnes produktivitu funkce sady Visual Studio. Použ
 Nástroje sady Visual Studio pro AI jsou integrované s Azure Machine Learning snadno procházet galerii ukázkových experimentů pomocí CNTK, TensorFlow, MMLSpark a další. 
 
 ![Ukázka Průzkumníka](media\about\gallery.png)
+
+[Další informace o vytváření projektů z Galerie ukázka](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Horizontální navýšení kapacity přímým učení modelu školení nebo inferencing do cloudu
 Toto rozšíření umožňuje snadno cvičení modely v místním počítači nebo může odesílání úloh do cloudu pomocí našich integraci s Azure Machine Learning. Můžete odeslat různými výpočetními cíle jako clustery Spark, Azure GPU virtuální počítače a další úlohy  

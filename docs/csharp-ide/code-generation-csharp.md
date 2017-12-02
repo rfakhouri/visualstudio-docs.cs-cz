@@ -13,25 +13,25 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98202db8e59957bfafe81b4a7d611b79c642daf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 773fecba4b3a635d86d6b06937151e38ad94912e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="code-generation-features-for-c"></a>Funkce generování kódu pro jazyk C# #
 Visual Studio může pomoct generovat části zdrojového kódu, takže se můžete soustředit na skutečné práci.  Následující funkce generování kódu jsou k dispozici v sadě Visual Studio pro jazyk C#:
   
-* [Generovat typu nebo třídy](code-generation/generate-class-type.md)
-* [Generate – metoda](code-generation/generate-method.md)
-* [Generovat pole nebo vlastnost nebo místní](code-generation/generate-field-property-local.md)
-* [Generovat – konstruktor](code-generation/generate-constructor.md)
+* [Generování třídy / typu](code-generation/generate-class-type.md)
+* [Generování metody](code-generation/generate-method.md)
+* [Generování pole / vlastnosti / místní funkce](code-generation/generate-field-property-local.md)
+* [Generování konstruktoru](code-generation/generate-constructor.md)
 * [Generovat přepsání](code-generation/generate-override.md)
-* [Generovat dokumentační komentáře XML](code-generation/generate-xml-documentation-comments.md)
+* [Generování rovná a přepsání GetHashCode – metoda](code-generation/generate-overrides.md)
+* [Generování komentářů k dokumentaci XML](code-generation/generate-xml-documentation-comments.md)
 * [Implementace abstraktní třídy](code-generation/implement-abstract-class.md)
 * [Implementace rozhraní](code-generation/implement-interface.md)
-* [Zavést místní proměnné](code-generation/introduce-local-variable.md)
+* [Přidání místní proměnné](code-generation/introduce-local-variable.md)
  
 ## <a name="see-also"></a>Viz také  
  [Použití vývojového prostředí sady Visual Studio pro jazyk C#](using-the-visual-studio-development-environment-for-csharp.md)   
- 

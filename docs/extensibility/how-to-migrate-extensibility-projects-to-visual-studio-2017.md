@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89591535b232317abf395c237fdc267c847ca699
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb00d2c338ac1ef9e2be6d77d68ebfe2a246d807
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Postupy: migrace rozšiřitelnost projektů na Visual Studio 2017
 
@@ -102,11 +102,6 @@ Namísto provádění úprav v manifestu XML, můžete použít nové **požadav
   ![přidání požadovaných součástí roslyn](media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
-
-## <a name="if-migrating-from-preview-4-or-preview-5"></a>Pokud migraci z verze Preview 4 nebo Preview 5
-
-* Nahraďte `SetupDependencies` s `Prerequisites` a přesuňte elementy z `Installer` elementu. `Prerequisites`nyní nachází uvnitř přímo `PackageManifest` elementu.
-* [Nepovinné] Odeberte `GenerateVsixV3` elementu. (To se vyžaduje v Preview 5 pouze.) `GenerateVsixV3` Prvek bude ignorován ve verzích nad rámec Preview 5.
 
 ## <a name="update-debug-settings-for-project"></a>Aktualizovat nastavení pro ladění pro projekt
 
@@ -197,3 +192,15 @@ Příklady:
 
 * Pokud máte rozšíření ladicího programu a vědět, že váš projekt odkazuje na VSDebugEng.dll a VSDebug.dll, klikněte na tlačítko filtru v **binárních souborů nebo názvy souborů** záhlaví.  Vyhledejte "VSDebugEng.dll" a kliknutím na tlačítko OK.  Potom klikněte na tlačítko filtru v **binárních souborů nebo názvy souborů** záhlaví znovu a vyhledejte "VSDebug.dll".  Zaškrtněte políčko "Aktuální výběr pro přidat k filtrování" a kliknutím na tlačítko OK.  Teď měl vypadat **název komponenty** najít komponenty, která je většina související s vaší typ rozšíření. V tomto příkladu byste vybrali pouze v době ladicího programu a přidejte ji do vašeho vsixmanifest.
 * Pokud víte, že váš projekt se zabývá elementy ladicí program, můžete hledat na "ladicí program" do vyhledávacího pole filtru na zjistit, jaké součásti obsahují ladicí program v jeho názvu.
+
+## <a name="specifying-a-visual-studio-2017-release"></a>Určení verze Visual Studio 2017
+
+Pokud toto rozšíření vyžaduje určitou verzi sady Visual Studio 2017, například závisí na funkci vydané v 15.3, musíte zadat číslo sestavení v vaší VSIX **InstallationTarget**. Verze 15.3 například má počet sestavení '15.0.26730.3'. Můžete zobrazit mapování k sestavení čísla verzí [zde](../install/visual-studio-build-numbers-and-release-dates.md). Použití číslo verze '15.3, nebude fungovat správně.
+
+Pokud vaše rozšíření vyžaduje 15.3 nebo vyšší, by deklarovat **InstallationTarget verze** jako [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```

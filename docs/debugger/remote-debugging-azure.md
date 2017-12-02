@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4ad0cdadcb3d56af55af629b853e660dc9d86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na službu IIS a systém Azure v rámci Visual Studio 2017
 Můžete nasadit webovou aplikaci ASP.NET do počítače Windows serveru se službou IIS a její nastavení pro vzdálené ladění. Tato příručka vysvětluje, jak nastavit a konfigurace aplikace Visual Studio 2017 ASP.NET Core, ho nasadit do Azure pomocí služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio.
@@ -47,7 +47,7 @@ Mezi dvěma počítači připojené prostřednictvím proxy serveru se nepodporu
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Vytvoření aplikace ASP.NET Core v počítači Visual Studio 2017 
 
-1. Vytvoření nové aplikace ASP.NET Core. (Zvolte **soubor > Nový > projekt**, pak vyberte **Visual C# > Web > webové aplikace ASP.NET Core (.NET Core)**)
+1. Vytvoření nové aplikace ASP.NET Core. (Zvolte **soubor > Nový > projekt**, pak vyberte **Visual C# > Web > webové aplikace ASP.NET Core (.NET Core)**).
 
     V **ASP.NET Core** část šablony, vyberte **webové aplikace**.
 
@@ -59,7 +59,7 @@ Mezi dvěma počítači připojené prostřednictvím proxy serveru se nepodporu
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Vzdálené ladění ASP.NET Core v Azure App Service
 
-Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela zřizované instance služby IIS. Ale je přednastavení konfiguraci služby IIS a si nemůžete přizpůsobit. Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Pokud potřebujete vlastní nastavení služby IIS, vyzkoušejte ladění na [virtuálního počítače Azure](#BKMK_azure_vm).) 
+Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela zřizované instance služby IIS. Ale je přednastavení konfiguraci služby IIS a si nemůžete přizpůsobit. Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Pokud potřebujete vlastní nastavení služby IIS, vyzkoušejte ladění na [virtuálního počítače Azure](#BKMK_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>K nasazení aplikace a vzdálené ladění
 
@@ -67,7 +67,7 @@ Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela z�
 
 2. Zvolte **Microsoft Azure App Service** z **publikovat** dialogové okno, vyberte **vytvořit nový**a postupujte podle pokynů k publikování.
 
-    Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
+    Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 3. V **Průzkumníka serveru**, klikněte pravým tlačítkem myši na instanci služby App Service a zvolte **připojit ladicí program**.
 
@@ -81,7 +81,7 @@ Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela z�
 
 Můžete vytvořit virtuální počítač Azure pro Windows Server a pak nainstalovat a nakonfigurovat službu IIS a ostatní součásti požadovaný software. To trvá déle než nasazení Azure App Service a vyžaduje proveďte zbývající kroky v tomto kurzu.
 
-První, postupujte podle pokynů popsaných v [instalace a spuštění služby IIS](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role).
+První, postupujte podle pokynů popsaných v [instalace a spuštění služby IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
 
 Když otevřete port 80 ve skupině zabezpečení sítě, také otevřete port 4022 pro vzdáleného ladicího programu. Tímto způsobem, nebudete muset otevřít později.
 
@@ -94,13 +94,13 @@ V závislosti na nastavení zabezpečení prohlížeče ho může ušetřit čas
 - download.microsoft.com
 - VisualStudio.com
 
-Pokud používáte Internet Explorer, můžete přidat důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Tyto kroky jsou u jiných prohlížečů.
+Pokud používáte Internet Explorer, můžete přidat důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Tyto kroky jsou u jiných prohlížečů. (Pokud budete muset stáhnout starší verze vzdáleného ladicího programu z my.visualstudio.com, některé další důvěryhodných serverů jsou nutné k přihlášení.)
 
 Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke spouštění různých skripty webu a prostředky. Ve většině případů není tyto další prostředky nutné k instalaci softwaru.
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Instalace jádra ASP.NET v systému Windows Server
 
-1. Nainstalujte [hostování v rozhraní .NET Core systému Windows Server](https://go.microsoft.com/fwlink/?linkid=844461) sady v hostitelském systému. Sady nainstaluje rozhraní .NET Core Runtime, knihovny .NET Core a modulu jádra ASP.NET.
+1. Nainstalujte [hostování v rozhraní .NET Core systému Windows Server](https://aka.ms/dotnetcore-2-windowshosting) sady v hostitelském systému. Sady nainstaluje rozhraní .NET Core Runtime, knihovny .NET Core a modulu jádra ASP.NET. Další podrobné pokyny najdete v tématu [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
     > Pokud systém nemá připojení k Internetu, získejte a nainstalujte  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  před instalací sady hostování v rozhraní .NET Core systému Windows Server.
@@ -209,7 +209,7 @@ Pokud nepoužíváte nasazení webu, musíte publikovat a nasazení aplikace pom
 
 Ve většině nastavení jsou otevřené požadované porty při instalaci ASP.NET a vzdáleného ladicího programu. Ale Pokud řešíte problémy při nasazení a aplikace se nachází za bránou firewall, musíte ověřit, že jsou otevřené správné porty.
 
-Ve virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
+Ve virtuálním počítači Azure, musíte otevřít porty prostřednictvím [skupinu zabezpečení sítě](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80). 
 
 Požadované porty:
 

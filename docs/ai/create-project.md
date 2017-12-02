@@ -1,62 +1,27 @@
----
-title: "Vytvoření projektu v AI nástrojů pro Visual studio"
-description: "Vytvoření projektu pomocí ukázkových z Galerie azure machine learning"
-keywords: AI, visual studio, azure machine learning
-author: lisawong19
-ms.author: liwong
-manager: routlaw
-ms.date: 11/13/2017
-ms.topic: how to article
-ms.technology: visual studio
-ms.devlang: multiple
-ms.service: multiple
-ms.openlocfilehash: 2d8b5f1d06d31eaba9c75e0f0515b2526fc7efdf
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
-ms.translationtype: MT
-ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
----
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Vytvoření projektu AI z Galerie Azure Machine Learning v sadě Visual Studio
+# <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>Vytvoření projektu AI ze šablony v sadě Visual Studio
 
-Azure Machine Learning je integrován s Visual Studio Tools pro AI. Můžete ho machine learning úlohy do vzdáleného výpočetní cíle jako virtuální počítače Azure, clustery Spark a další. Další informace o [Azure Machine Learning experimentování](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration) 
+Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), je snadné vytvořit nový projekt Python pomocí různých šablon.
 
-Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), je snadné vytvořit nový projekt Python použití předem vytvořené recepty v galerii Azure Machine Learning ukázka.
+1. Spusťte sadu Visual Studio.
 
-> ! Azure Machine Learning Workbench musí být nainstalován. K její instalaci prosím najdete [rychlý start Azure Machine Learning instalace](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation) 
+1. Vyberte **soubor > Nový > projekt** (Ctrl + Shift + N). V **nový projekt** dialogové okno, vyhledejte "**AI nástroje**" a vyberte požadované šablony. Všimněte si, že výběrem šablony zobrazuje krátký popis co Šablona nabízí. 
 
-1. Spusťte sadu Visual Studio. Otevřete **Průzkumníka serveru** otevřením **AI nástroje** nabídky a výběr **vyberte clusteru**  
+    ![Dialogové okno Nový projekt VS2017 pomocí šablony Python](media\create-project\new-ai-project.png)
 
-    ![Výběru clusteru](media\create-project\select-cluster.png)
+1. Tento rychlý start, vyberte "**TensorFlow aplikace**" šablony, přiřaďte projektu umístění a název (například "MNIST") a vyberte **OK**. 
 
-1. Přihlaste se k předplatnému Azure Machine Learning kliknutím pravým tlačítkem myši **Azure Machine Learning** vyberte uzel v Průzkumníku serveru **přihlášení** a postupujte podle pokynů.
+1. Visual Studio vytvoří soubor projektu ( `.pyproj` soubor na disku) společně s dalšími soubory podle šablony. Projekt se šablonou "TensorFlow aplikace", obsahuje jeden soubor se stejným názvem jako projektu. Soubor je otevřen v editoru Visual Studio ve výchozím nastavení.
 
-    ![přihlášení](media\create-project\azureml-login.png)
- 
-2. Vyberte **AI nástroje > Azure Machine Learning ukázka Galerie**. 
-    
-    ![Ukázka Galerie](media\create-project\gallery.png)
+    ![Výsledný projektu při použití šablony aplikace Python](media\create-project\new-tensorflowapp.png)
 
-1. Tento rychlý start, vyberte "**MNIST pomocí TensorFlow**" ukázkové a klikněte na tlačítko **nainstalovat**. Zadejte 
-2.
- - **Skupina prostředků**: Skupina prostředků Azure, kde bude uložena metadata
- - **Účet**: experimenty Azure Machine Learning účtu
- - **Pracovní prostor**: pracovní prostor Azure Machine Learning
- - **Typ projektu**: rozhraní machine learning. V takovém případě zvolte **TensorFlow**
- - **Přidat do řešení**: Určuje, zda chcete přidat do vašeho aktuálního řešení Visual Studio nebo vytvoření a otevřete nový řešení
- - **Cesta k projektu**: umístění pro uložení kód
- - **Název projektu**: typ **TensorFlowMNIST**
-   
+1. Všimněte si, že kód importuje již několik knihoven, včetně TensorFlow, numpy, sys a operačního systému. Kromě začíná vaší aplikace připravené některé vstupní argumenty snadno povolit přepínání umístění vstupní Cvičná data, výstup modely a soubory protokolu. Tyto parametry jsou užitečné při odesílání vašeho úloh do více výpočetní kontexty (ie jiný adresář na místním dev pole, než ve sdílené složce Azure). 
 
-    ![Výsledný projektu při použití šablony aplikace Python](media\create-project\new-AzureSampleProject.png)
+1. Projekt má také některé vlastnosti k vytvoření, která usnadňují ladění aplikace pomocí automaticky předání argumentů příkazového řádku tyto vstupní parametry. **Klikněte pravým tlačítkem na** projektu zvolte **vlastnosti** 
 
-1. Visual Studio vytvoří soubor projektu ( `.pyproj` soubor na disku) společně s další soubory definované v ukázce. Projekt se šablonou "MNIST" obsahuje několik souborů.
+    ![Vlastnosti](media\create-project\project-properties.png)
 
-    ![mnist](media\create-project\azml-mnist.png)
+1. Klikněte **ladění** automaticky zjistit argumenty skriptu přidat. můžete je změnit podle potřeby a kde se vstupní data nachází kam chcete výstupu uložené.
 
-1. Odeslání úlohy do Azure Machine Learning. 
+    ![Vlastnosti](media\create-project\/project-properties_1.png)
 
-    ![mnist](media\create-project\submit-azml.png)
-
-1. Spusťte kontejner Docker nebo na místním počítači
-
-    ![mnist](media\create-project\azml-local.png)
+1. Spusťte program stisknutím Ctrl + F5 nebo výběrem **ladění > Spustit bez ladění** v nabídce. Výsledky jsou zobrazeny v okně konzoly.

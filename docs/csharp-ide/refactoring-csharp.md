@@ -12,31 +12,32 @@ f1_keywords:
 - vs.csharp.refactoring.issues
 - vs.csharp.refactoring.buildwarning
 - VS.PreviewChanges
-dev_langs: CSharp
 helpviewer_keywords: refactoring [C#]
-ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
-caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c76d0f8a11d28201bd82a7c654c4575fb3ada86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="refactoring-features-for-c"></a>Refaktoring funkce pro jazyk C# #
-Refaktoring je proces vylepšení kód po byla zapsána změnou interní kód beze změny externí chování kód.  Následující funkce refaktoringu jsou k dispozici v sadě Visual Studio pro jazyk C#:
-  
-* [Podpis metody změn](refactoring/change-method-signature.md)
+
+Refaktoring je proces vylepšení kód po byl proveden zápis. Refaktoring změní interní kód beze změny jeho chování. Následující funkce refaktoringu jsou k dispozici v sadě Visual Studio pro jazyk C#:
+
+* [Podpis změny metod](refactoring/change-method-signature.md)
+* [Převést metodu Get pro vlastnost nebo vlastnost pro metodu Get](refactoring/convert-get-method-to-property.md)
 * [Zapouzdření pole](refactoring/encapsulate-field.md)
 * [Extrahování rozhraní](refactoring/extract-interface.md)
 * [Extrahování metody](refactoring/extract-method.md)
-* [Dočasné vložené proměnné](refactoring/inline-temporary-variable.md)
-* [Přesunout do odpovídající soubor typu](refactoring/move-type-to-matching-file.md)
-* [Přejmenování](refactoring/rename.md)
+* [Dočasná vložená proměnná](refactoring/inline-temporary-variable.md)
+* [Přesuňte deklaraci téměř odkaz](refactoring/move-declaration-near-reference.md)
+* [Přesunutí typu do odpovídajícího souboru](refactoring/move-type-to-matching-file.md)
+* [Odebrat nedostupný kódu](refactoring/remove-unreachable-code.md)
+* [Přejmenovat](refactoring/rename.md)
 * [Typ synchronizace a název souboru](refactoring/sync-type-and-file.md)
 
-## <a name="see-also"></a>Viz také  
- [Použití vývojového prostředí sady Visual Studio pro jazyk C#](using-the-visual-studio-development-environment-for-csharp.md)   
- 
+## <a name="see-also"></a>Viz také
+
+[Použití vývojového prostředí sady Visual Studio pro jazyk C#](using-the-visual-studio-development-environment-for-csharp.md)  

@@ -11,18 +11,19 @@ ms.assetid: b3c8cfc4-7c1f-4606-970e-3f7651604bab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d2972cfe2ea4481ab8f5eab6284277615d1d64a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f7193722e7ec1bee7c63e2495ed2d07155cc663b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="generate-an-override-in-c"></a>Generovat přepsání v jazyce C# #
-**Co:** umožňuje okamžitě generování kódu všechny metody, které je možné přepsat ze základní třídy. 
 
-**Kdy:** chcete přepsat metodu základní třídy a automaticky generovat podpis.  
+**Co:** umožňuje okamžitě generování kódu pro libovolné metody, které je možné přepsat ze základní třídy.
 
-**Důvod:** můžete napsat podpis metody sami, ale tato funkce bude automaticky generovat podpis. 
+**Kdy:** chcete přepsat metodu základní třídy a automaticky generovat podpis.
+
+**Důvod:** můžete napsat podpis metody sami, ale tato funkce bude automaticky generovat podpis.
 
 **Postupy:**
 
@@ -34,11 +35,12 @@ ms.lasthandoff: 10/31/2017
 
    >[!TIP]
    >* Použijte ikonu vlastnost ![Ikona vlastností](media/override_property.png) Chcete-li zobrazit nebo skrýt vlastnosti v seznamu.
-   >* Použijte ikonu – metoda ![Ikona vlastností](media/override_method.png) Chcete-li zobrazit nebo skrýt metody v seznamu.
+   >* Použijte ikonu – metoda ![Ikona – metoda](media/override_method.png) Chcete-li zobrazit nebo skrýt metody v seznamu.
 
 1. Vybrané metody nebo vlastnosti se zařadí do třídy jako přepsání, připraveno k implementaci.
 
    ![Přepsání výsledek](media/override_result.png)
 
-## <a name="see-also"></a>Viz také  
-[Generování kódu (C#)](../code-generation-csharp.md)  
+## <a name="see-also"></a>Viz také
+
+[Generování kódu (C#)](../code-generation-csharp.md)
