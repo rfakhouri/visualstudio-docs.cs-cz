@@ -9,11 +9,11 @@ Description: Learn how to get started using the DataCamp training subscription i
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2ca16f36c77f1956677069e7207578bec27e066
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 5519f1984392c8c816b548892763498e154f30e8
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="activating-the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Aktivace Benefit školení DataCamp v sadě Visual Studio předplatných
 
@@ -34,16 +34,19 @@ Platnost vaší DataCamp výhody závisí na vaše předplatné sady Visual Stud
 
 2. Najděte dlaždici benefit DataCamp v kategorii "Professional vývoj" a klikněte na **aktivovat**.
 
-![Výhody DataCamp dlaždice](_img\vs-datacamp\vs-datacamp-tile-2.png)
+    ![Výhody DataCamp dlaždice](_img\vs-datacamp\vs-datacamp-tile-2.png)
 
-3. Na stránce DataCamp můžete vytvořit nový účet.  Můžete k zadání e-mailovou adresu a heslo, nebo se přihlaste pomocí účtů ze sítě Facebook, LinkedIn nebo Google.  Jakmile jste zadali přihlašovací údaje, klikněte na možnost **Začínáme**.
+3. Na stránce DataCamp můžete vytvořit nový účet.  Můžete k zadání e-mailovou adresu a heslo, nebo se přihlaste pomocí existující účty ze sítě Facebook, LinkedIn nebo Google.  Jakmile jste zadali přihlašovací údaje, klikněte na možnost **Začínáme**.
 
-![DataCamp vytvořit nový účet](_img\vs-datacamp\vs-datacamp-create-account.png)
+    ![DataCamp vytvořit nový účet](_img\vs-datacamp\vs-datacamp-create-account.png)
+
+**Poznámka:** , abyste před zahájením vytváření účtu, zobrazí se následující chybová zpráva: "OOPS!  Propagační kód je neplatná nebo vypršela její platnost."
+K tomu dochází, protože při vytváření propagační kód vyprší za několik minut.  Pokud se tato zpráva se zobrazí, jednoduše vrátit [výhody](https://my.visualstudio.com/benefits) na a klikněte na tlačítko na **aktivovat** odkaz na dlaždici DataCamp výhody.  
 
 4. Po vytvoření účtu můžete studijní postup.  Mezi možnosti patří:
-- Learning R pro vědecké zpracování dat
-- Spuštění Learning Python vědecké zpracování dat
-- Vývoj Skillset vaše Data vědecké účely
+    - Learning R pro vědecké zpracování dat
+    - Spuštění Learning Python vědecké zpracování dat
+    - Vývoj Skillset vaše Data vědecké účely
 
     Klepněte na vaše vybrané cesty, abyste mohli začít. 
 
@@ -51,18 +54,18 @@ Platnost vaší DataCamp výhody závisí na vaše předplatné sady Visual Stud
 
 5. Po výběru cestu můžete dále upřesnit studijní postup výběrem cílem.  Například pokud jste zvolili cestu "Vyvíjet vaše Data vědecké účely Skillset", zobrazí se následující možnosti. Zvolte možnost, nebo klikněte na tlačítko **nejste si jisti.  Zobrazit mi všechny cesty kariérní** vytvořit komplexnější cestu. 
 
-![DataCamp Data Skillset vědecké účely](_img\vs-datacamp\vs-datacamp-datascience.png)
+    ![DataCamp Data Skillset vědecké účely](_img\vs-datacamp\vs-datacamp-datascience.png)
 
 
 6. Na základě cesty a možnosti, které jste vybrali, zobrazí se výběr kariérní sleduje.  Klikněte na **zapsat** tlačítko sledovat podle svého výběru. 
 
-![Sledování DataCamp kariérní](_img\vs-datacamp\vs-datacamp-all-tracks.png)
+    ![Sledování DataCamp kariérní](_img\vs-datacamp\vs-datacamp-all-tracks.png)
 
 7. Až se zaregistrujete ve vašem sledovat, otevře se první kurz v této sledovat.  Kurz vysvětlením, jak pracovat se během, dozvíte se, včetně navigační a dokončení kurzu cvičení.  
 
-![DataCamp Začínáme](_img\vs-datacamp\vs-datacamp-getting-started.png)
+    ![DataCamp Začínáme](_img\vs-datacamp\vs-datacamp-getting-started.png)
 
 Můžete kdykoli zastavit a obnovit vaše školení v další relaci.  Právě navštivte [http://www.datacamp.com](http://www.datacamp.com)a přihlaste se.  Zobrazí řídicí panel a můžete obnovit vaše právo školení, kde je pozastavena. Jednoduše klikněte na **pokračovat sledovat**.
 
-![DataCamp pokračovat školení](_img\vs-datacamp\vs-datacamp-continue-training.png)
+    ![DataCamp Continue Training](_img\vs-datacamp\vs-datacamp-continue-training.png)
 

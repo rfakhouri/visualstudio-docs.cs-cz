@@ -9,24 +9,24 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: e808b57d19306c4a4ce47fd1c623119be1c16422
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="using-product-keys-in-visual-studio-subscriptions"></a>Použití kódů product key v odběry Visual Studio
+# <a name="using-product-keys-in-visual-studio-subscriptions"></a>Použití kódů Product Key v sadě Visual Studio předplatných
 ## <a name="product-keys-overview"></a>Přehled produktu klíče
 Visual Studio odběry poskytnout přístup k produkty Microsoft široký rozsah pro navrhování, vývoj, testování a představujících aplikace. Některé z těchto produktů vyžadují kódy product key během instalace a některé z nich vyžaduje aktivaci.
 
 Visual Studio odběry obvykle zahrnují pět kódy product key pro aktuální verze systému Windows a Office produkty a tři klíče pro starší verze.
 
-Většina kódy product key také povolit více aktivace produktu pro každý klíč.  Řada produktů taky umožňují nainstalovat a používat pro 30 dnů a víc bez aktivace produktu.  Pro většinu odběratele to umožňuje víc než dost aktivace podle jejich potřeb.  Ale pokud vyčerpáte dostupný aktivace produktu, můžete odeslat žádost o další klíči prostřednictvím [Visual Studio odběry zákaznický servis](https://www.visualstudio.com/subscriptions/support/).
+Většina kódy product key také povolit více aktivace produktu pro každý klíč.  Řada produktů taky umožňují nainstalovat a používat pro 30 dnů a víc bez aktivace produktu.  Pro většinu odběratele to umožňuje víc než dost aktivace podle jejich potřeb.  Ale pokud vyčerpáte dostupný aktivace produktu, můžete odeslat žádost o další klíče pomocí sady Visual Studio [odběry zákaznický servis](https://www.visualstudio.com/subscriptions/support/).
 
 ## <a name="activating-a-product"></a>Aktivace produktu
-Aktivace je pro některé produkty; Obecně platí v sadě Visual Studio předplatných Toto je omezený na systému Windows, Windows Server, klient aplikace Microsoft Office a výraz Studio. Pokud se vyžaduje aktivace, řada produktů – včetně Windows a Office – umožňují nainstalovat a používat produkt bez aktivace pro 30 dnů nebo déle. Pokud znovu přeinstalovat image počítače často (alespoň jednou za 30 dní), zvažte, není aktivace produktu. Kódy Product Key zadán jako součást sady Visual Studio předplatného neumožňují neomezená aktivace produktu.
+Aktivace je pro některé produkty.  Obecně platí v sadě Visual Studio předplatných Toto je omezený na systému Windows, Windows Server, klient aplikace Microsoft Office a výraz Studio. Pokud se vyžaduje aktivace, řada produktů – včetně Windows a Office – umožňují nainstalovat a používat produkt bez aktivace pro 30 dnů nebo déle. Pokud znovu přeinstalovat image počítače často (alespoň jednou za 30 dní), zvažte, není aktivace produktu. Kódy Product Key zadán jako součást sady Visual Studio předplatného neumožňují neomezená aktivace produktu.
 
-Pokud jste vyžádaná všechny dostupné product key v rámci svého předplatného a použili až všechny dostupné aktivace, byste požádat o další klíče, že se obrátíte na vašem místním [Visual Studio předplatné zákazníka Service Center](https://www.visualstudio.com/subscriptions/support/). Požadavky bude považovat za případ od případu. Pokud schválení kódy product key, budou přístupné v [stáhne](https://my.visualstudio.com/downloads).
+Pokud jste vyžádaná všechny dostupné product key v rámci svého předplatného a použili až všechny dostupné aktivace, můžete požádat další klíče kontaktováním předplatného místní Visual Studio [zákazníka Service Center](https://www.visualstudio.com/subscriptions/support/). Požadavky bude považovat za případ od případu. Pokud schválení kódy product key, budou přístupné v [stáhne](https://my.visualstudio.com/downloads).
 
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>Maloobchodní a multilicenční verze produktů
 Visual Studio odběry nabízejí výběr maloobchodní a multilicenční verze produktů společnosti Microsoft. Některé produkty, které jsou k dispozici na stahování pouze v jejich prodejní verze nebo pouze v jejich multilicenční verze; Některé jsou k dispozici v obou verzích. Obecně platí produkty, které vyžadují aktivaci, například Windows, Windows Server a klienta produktů Office, nabídnuta jen v jejich prodejní verzi prostřednictvím stahování.
@@ -40,17 +40,17 @@ Denní limit klíče deklarace identity se 10 klíčů pro všechna předplatná
 
 Poznámka: Omezení klíč deklarace identity se mohou změnit. Zkontrolujte zde pro aktuální omezení.
 
-Pokud jste požadovaly maximální počet klíčů, které jsou k dispozici pro vaše předplatné v období 24 hodin, zobrazí se chyba s oznámením, že byl dosažen limit. Limit resetuje každých 24 hodin od 12:01:00 tichomořského času.
+Pokud jste požadovaly maximální počet klíčů, které jsou k dispozici pro vaše předplatné v období 24 hodin, zobrazí se chyba s oznámením, že dosáhl svého limitu. Limit resetuje každých 24 hodin od 12:01:00 tichomořského času.
 
-Naše research ukazuje většina Odběratelé, kteří jsou předmětem počet součástí svoje předplatné kódy product key. Pokud potřebujete další klíčů, můžete odeslat žádost o prostřednictvím [Visual Studio předplatné zákaznický servis](https://www.visualstudio.com/subscriptions/support/) a bude považovat za ke schválení případ od případu.
+Naše research ukazuje většina Odběratelé, kteří jsou předmětem počet součástí svoje předplatné kódy product key. Pokud potřebujete další klíčů, můžete odeslat žádost o prostřednictvím Visual Studio předplatné [oddělení služeb zákazníkům](https://www.visualstudio.com/subscriptions/support/) a bude považovat za ke schválení případ od případu.
 
 ## <a name="locating-and-claiming-product-keys"></a>Vyhledání a deklaraci identity kódy product key
-Chcete-li zobrazit product key, musíte být přihlášeni k předplatnému Visual Studio. Jednotlivých kódů product key se nacházejí výběrem modré tlačítko Získat klíče pro konkrétní produkt na [stáhne](https://my.visualstudio.com/downloads) stránky.  Všechny klíče jsou také k dispozici v agregace na [kódy Product Key](https://my.visualstudio.com/productkeys) stránky. Pokud pro jeden produkt existuje více klíčů, poznámky se zobrazí na sloupci poznámky ke stažení pro snazší identifikaci, který klíč by měl použít.
+Chcete-li zobrazit product key, musíte být přihlášeni k předplatnému Visual Studio. Jednotlivých kódů product key se nacházejí výběrem modrý **získat klíč** odkaz pro konkrétní produkt na [stáhne](https://my.visualstudio.com/downloads) stránky, jak je uvedeno níže.  Všechny klíče jsou také k dispozici v agregace na [kódy Product Key](https://my.visualstudio.com/productkeys) stránky. Pokud pro jeden produkt existuje více klíčů, poznámky se zobrazí na sloupci poznámky ke stažení pro snazší identifikaci, který klíč by měl použít.
 
-![Získat klíč ze stránky stahování](_img/product-keys/download-get-key-cropped.png)
+![Získat klíč ze stránky stahování](_img/product-keys/download-get-key.png)
 
 Některé produkty sady víc edicí produktu do jednoho stahování. V těchto případech určuje zadaný kód product key, které vydání produktu je nainstalováno.
-Některé klíče jsou poskytovány automaticky, jako je například "statická" klíčů, které můžete použít jako podle potřeby, protože aktivace se nevyžaduje. Jiných klíčů musí být vyžádaný výběrem získat klíč nebo tlačítko pro produkt.
+Některé klíče jsou poskytovány automaticky, jako je například "statická" klíčů, které můžete použít jako podle potřeby, protože aktivace se nevyžaduje. Jiných klíčů musí být požadována výběrem **získat klíč** odkaz pro produkt.
 
 Jsou k dispozici, v závislosti na produktu různé typy klíčů. 
 
@@ -83,15 +83,15 @@ Chcete-li nárokovat kód product key:
 3.  Kódy Product Key se abecední podle názvu produktu.  Můžete buď přejděte dolů na název požadované produktu nebo vyhledejte ji pomocí panelu Hledat v horní části stránky.  
 ![Vyhledejte kód Product Key](_img\product-keys\visio-product-key-cropped.png)
 
-V tomto příkladu používáme panelu Hledat najít kód product key pro Visio 2010.
-Jak můžete vidět, existuje několik verzí aplikace Visio 2010 uvedené.  Jeden klíč už byl vyžádaný Visio Standard 2010 a Visio Premium 2010 a mohou mít zbývající čtyři klíče.  Klíčů, které byly vyžádaná jsou oba klíče maloobchodní a zobrazují na stránce.  Všimněte si, že můžete zaznamenat stručné zprávy o nárocích vznášených klíči ve sloupci "Poznámky".  Můžete to použít ve spojení s datem ve sloupci "Claimed" ke sledování, které jste vyžádaná klíče.  Může například provedete poznámky při aktivaci instalace produktu pomocí klíče.  
+V tomto příkladu jsme jste panelu Hledat používaná k nalezení kód product key pro Visio 2010.
+Jak můžete vidět, existuje několik verzí aplikace Visio 2010 uvedené.  Jeden klíč už byl vyžádaný Visio Standard 2010 a Visio Premium 2010 a mohou mít zbývající čtyři klíče.  Klíčů, které byly vyžádaná jsou oba klíče maloobchodní a zobrazují na stránce.  Všimněte si, že můžete zaznamenat stručné zprávy o nárocích vznášených klíči v **poznámky** sloupce.  Můžete to použít ve spojení s datum v **Claimed** sloupec ke sledování jste vyžádaná klíče.  Může například provedete poznámky při aktivaci instalace produktu pomocí klíče.  
 
 ### <a name="exporting-your-claimed-keys"></a>Export klíče deklarovaný
 Můžete exportovat seznam všechny klíče, které jste požadovaly, společně s velké výběr statické a dalších klíčů, které jsou automaticky označené jako "vyžádaná" pro vás.  
 
 **Důležité: Pokud vaše předplatné vyprší, bude už nebudete moct deklarace nových klíčů nebo exportovat klíče deklarovaný.** 
 
-Chcete-li exportovat klíče, klikněte jednoduše na **exportovat všechny klíče** odkaz na pravé straně kódy Product Key.  Vytvoří se soubor XML s názvem KeysExport.xml a budete mít možnost otevřít nebo uložit soubor.  Musíte se k otevření souboru pomocí aplikace umožňuje zpracovávat soubory XML.  Například můžete otevřít soubor jako sešit v aplikaci Excel jen pro čtení.  
+Chcete-li exportovat klíče, klikněte jednoduše na **exportovat všechny klíče** tlačítko na pravé straně kódy Product Key.  Vytvoří se soubor XML s názvem KeysExport.xml a budete mít možnost otevřít nebo uložit soubor.  Musíte se k otevření souboru pomocí aplikace umožňuje zpracovávat soubory XML.  Například můžete otevřít soubor jako sešit v aplikaci Excel jen pro čtení.  
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>Při předvádění Internet prostřednictvím Terminálové služby
 S předplatným Visual Studio, jste oprávněni poskytnout tak koncovým uživatelům přístup k Internetu při předvádění programy pomocí Terminálové služby (Windows Server 2003 nebo Windows Server 2008) nebo služby Vzdálená plocha (Windows Server 2008 R2 a novější). Až 200 anonymní uživatelé mohou mít současně přístup vaší ukázkový tímto způsobem. Vaše ukázkový nesmí používat provozními daty. Visual Studio Odběratelé, kteří mají licenci k ukázku svých aplikací pro koncové uživatele. Tato ukázka Internetu pomocí Terminálové služby (TS) nebo služby Vzdálená plocha (RDS) je jediný scénář, kde mohou koncoví uživatelé bez předplatného sady Visual Studio komunikovat s ukázkový aplikace při software se licencuje prostřednictvím Visual Odběry Studio.

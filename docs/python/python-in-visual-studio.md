@@ -8,16 +8,15 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 652d69ed30c101e7ea8d9b85d9b71e597975d555
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c88c90fcc150187bd10e3100cd703522f86bc191
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Práce s Python v sadě Visual Studio
 
@@ -34,11 +33,11 @@ Abyste mohli začít:
 
 | Funkce | Popis | Dokumentaci obecné Visual Studio | 
 | --- | --- | --- |
-| [Systém projektu Visual Studio](python-projects.md) | Implicitně vybere si strukturu složek Python kódu současně explicitní řízení k identifikaci kódu aplikace, testovacího kódu sestavení webové stránky, JavaScript, skripty atd. | [Řešení a projektů v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
+| [Systém projektu Visual Studio](python-projects.md) | Implicitně vybere si strukturu složek Python kódu současně explicitní řízení k identifikaci kódu aplikace, testovacího kódu sestavení webové stránky, JavaScript, skripty atd. | [Řešení a projekty v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Šablony projektů](python-projects.md#project-templates) | Rychle vytvoří strukturu projektu pro konzolu, web, Azure, vědecké zpracování dat a jiné typy projektů | [Šablony sady Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
 | Podpora více překladač | Podporuje různé verze CPython a IronPython. | není k dispozici |
 | Podpora IPython | Zahrnuje podporu pro IPython/Jupyter v REPL pro vložené pozemků, rozhraní .NET a Windows Presentation Foundation (WPF). | není k dispozici |
-| [Bohaté úpravy, IntelliSense a pochopení kódu](code-editing.md) | Zahrnuje zvýrazňování syntaxe, automatické doplňování kódu a knihovny, [kódu, formátování](code-formatting.md), podpis nápovědy, zobrazení tříd, přejděte na definice, najít všechny odkazy, fragmenty kódu [refaktoring](code-refactoring.md), [ PyLint](code-pylint.md)a další. | [Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Bohaté úpravy, IntelliSense a pochopení kódu](code-editing.md) | Zahrnuje zvýrazňování syntaxe, automatické doplňování kódu a knihovny, [kódu, formátování](code-formatting.md), podpis nápovědy, zobrazení tříd, přejděte na definice, najít všechny odkazy, fragmenty kódu [refaktoring](code-refactoring.md), [ PyLint](code-pylint.md)a další. | [Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [Interaktivní okno](interactive-repl.md) | Poskytuje rychlý prostředí REPL možnost snadno zvýrazněte část kódu a odeslat ho do okna interaktivní pro jazyk Python. | není k dispozici |
 | [Plnohodnotné ladění](debugging.md) | Ladění lze provést s nebo bez projekt sady Visual Studio, včetně možnosti ladění spustitelného existující [ladění ve smíšeném režimu Python/C++](debugging-mixed-mode.md), [vzdálené ladění](debugging-cross-platform-remote.md) do systému Windows nebo Linux nebo Mac. [vzdálené ladění do Azure](debugging-azure-remote.md)a ladění interaktivních okna. | [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md) |
 | [Nástroje pro profilaci s komplexní vytváření sestav](profiling.md) | Popisuje, jak je právě čas strávený v rámci vaší aplikace, včetně možnosti porovnat výkon mezi různé profilování spustí. | [Nástroje pro profilaci](../profiling/profiling-tools.md) (ne všechny funkce profilace aplikace Visual Studio jsou dostupné pro jazyk Python) |

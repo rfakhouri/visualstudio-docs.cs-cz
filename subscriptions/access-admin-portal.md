@@ -5,21 +5,21 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Zjistěte, jak získat přístup k portálu správce"
+Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 89661c12a820d2a7aa3bed562a5efec141dcf01a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="accessing-the-visual-studio-subsubscriptions-administrator-portal"></a>Přístup k sadě Visual Studio subsubscriptions portálu správce
+# <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Přístup k portálu správce předplatných sady Visual Studio
 ## <a name="for-mpsa"></a>Pro MPSA
 Pro přístup k portálu správy předplatných Visual Studio, musíte nastavit jako správce portálu Microsoft Business Center nebo BCP. 
 
-Pokud potřebujete informace o tom, jak nastavit jako správce, získáte informace [spravovat uživatele úvodní příručce](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf). Pokud jste již byla nastavili jako správce, pak můžete přejít přímo na [Visual Studio portálu pro správu předplatných](https://manage.visualstudio.com)
+Pokud potřebujete informace o tom, jak nastavit jako správce, získáte informace [spravovat uživatele úvodní příručce](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf). Pokud jste již byla nastavili jako správce, pak můžete přejít přímo na Visual Studio odběry [portálu pro správu](https://manage.visualstudio.com)
 
 ## <a name="for-volume-licensing-vl"></a>Pro multilicenční (VL)
 Od verze 1. března 2017 zákazníci, kteří pracují stále prostřednictvím procesu registrace a migrace portálu muset spravovat jejich odběry ve [Volume Licensing Service Center (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx). 
@@ -30,9 +30,9 @@ Další informace o správě přihlášení k odběru v těchto průvodcích se 
 
 Primární nebo oznámení kontaktu pro multilicenční smlouvy vaší organizace, bude nutné provést pár kroků můžete nastavit jako správce. 
 
-Pokud potřebujete informace o tom, jak nastavit správce, prosím sledovat [toto video](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) a naleznete v těchto článcích [Visual Studio portálu pro správu předplatných registrace a správa správci](https://go.microsoft.com/fwlink/?linkid=839391). 
+Pokud potřebujete informace o tom, jak nastavit správce, prosím sledovat [toto video](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) a odkazovat na tyto články na Visual Studio portálu pro správu předplatných [registrace a správa správci](https://go.microsoft.com/fwlink/?linkid=839391). 
 
-Pokud jste již byla nastavili jako správce, pak můžete přejít přímo na [Visual Studio portálu pro správu předplatných](https://manage.visualstudio.com).
+Pokud jste již byla nastavili jako správce, pak můžete přejít přímo na Visual Studio odběry [portálu pro správu](https://manage.visualstudio.com).
 
 ## <a name="for-cloud-subscriptions"></a>Pro Cloudová předplatná
 Pokud si koupíte Visual Studio Cloudová předplatná, jsou automaticky nastavíte jako správce pro těchto předplatných.  Pokud jste už zakoupili, je, je můžete spravovat v [https://manage.visualstudio.com](https://manage.visualstudio.com).

@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Porovnání funkcí a výhod standard i cloudové předplatné sady Visual Studio"
+Description: Compare features and benefits of Visual Studio standard and cloud subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c231095c7d96c44f35752aa0a1c233599c43b420
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Porovnejte možnosti odběru sady Visual Studio
 
@@ -24,16 +24,16 @@ Jestli jste student jednotlivých developer, malý tým nebo organizace, je pře
 
 **Visual Studio Enterprise:** toho, jestli je pro telefon, plocha nebo cloudu, Visual Studio je snazší vytvářet skvělé softwaru na počítači a macu. Odběry zahrnout prakticky veškerého softwaru společnosti Microsoft a kredity Azure, Pluralsight kurzy, technické podpory a další.
 
-**Visual Studio Professional:** profesionální vývojáře nástroje a služby pro vytváření všech aplikací pro libovolnou platformu. Snadno spolupracovat a zvýšit produktivitu, jestli pracujete, vlastní nebo s malých týmů.
+**Visual Studio Professional:** získat profesionální vývojáře nástroje a služby pro vytváření všech aplikací pro libovolnou platformu. Snadno spolupracovat a zvýšit produktivitu, jestli pracujete, vlastní nebo s malých týmů.
 
-**Visual Studio Test Professional:** jednotka kvality a spolupráce v celém procesu vývoje s komplexní testování nástroje a standardní předplatné výhody, které zahrnují základní software společnosti Microsoft, měsíční kredity Azure, Technické školení odborníky v oblasti podpory a další.
+**Visual Studio Test Professional:** jednotky kvality a spolupráce v celém procesu vývoje s komplexní testování nástroje a standardní předplatné výhody, které zahrnují základní software společnosti Microsoft, měsíční kredity Azure, technické školení odborníky v oblasti podpory a další.
 
 **Platformy MSDN:** nejvíce komplexní sadu prostředků pro IT & provozní personál a vývojářům rozhraní .NET otestovat, nasadit a spravovat kvalitních aplikací v rámci platformy a zařízení.
 
 **Visual Studio Dev Essentials:** získat všechno, co potřebujete k vytvoření a nasazení aplikace na jakékoli platformě. Pomocí nástroje stavu techniky, výkon cloudu, školení a podpory je naše nejúplnější volné programu pro vývojáře někdy.  
 
 ## <a name="subscription-types"></a>Typy předplatného
-**Standardní odběry** – k dispozici prostřednictvím prodejce na více roky kontrakty multilicenčního programu společnosti Microsoft a přímo prostřednictvím Microsoft Store online.  Jejich funkci trvalé licence pro sadu Visual Studio. 
+**Standardní odběry** – k dispozici prostřednictvím prodejce na více roky kontrakty multilicenčního programu společnosti Microsoft a přímo prostřednictvím Microsoft Store online.  Standardní odběry funkce trvalé licence pro sadu Visual Studio. 
 
 **Cloudová předplatná,** – s Cloudová předplatná, máte přístup k sadě Visual Studio, Visual Studio Team Services, a další odběratele výhody bez dlouhodobé smlouvy.  Přihlášení k odběru, na základě měsíční nebo roční. Fakturace je prováděna pomocí předplatného Microsoft Azure. 
 
@@ -45,7 +45,7 @@ Jestli jste student jednotlivých developer, malý tým nebo organizace, je pře
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx) – jednoznačně šité na míru zajistit výhradní přístup k prostředkům, které vám pomůžou další vyvíjet technických otázek a dovednosti školení.
 
 ## <a name="visual-studio-licensing"></a>Správa licencí v sadě Visual Studio
-Visual Studio odběry (dříve se označovaly jako předplatné MSDN) jsou licencovaná podle jednotlivých uživatelů. Návrh, vývoj, testování nebo předvedení své programy na libovolný počet zařízení, může jeden uživatel pomocí softwaru. Předplatné sady Visual Studio také umožňuje licencovaný uživatel k vyzkoušení softwaru a k simulaci prostředí zákazníků diagnostikovat problémy související s jejich programy.
+Visual Studio odběry jsou licencovaná podle jednotlivých uživatelů. Návrh, vývoj, testování nebo předvedení své programy na libovolný počet zařízení, může jeden uživatel pomocí softwaru. Předplatné sady Visual Studio také umožňuje licencovaný uživatel k vyzkoušení softwaru a k simulaci prostředí zákazníků diagnostikovat problémy související s jejich programy.
 
 Visual Studio Odběratelé, kteří jsou také licence k používání softwaru odběratele (s výjimkou Windows a Windows Server) v Microsoft Azure Virtual Machines, poskytuje větší flexibilitu pro vývoj a testování aplikací. Náklady na licencování pro Windows Server nebo Windows je součástí rychlost virtuálního počítače Windows.
 
@@ -58,7 +58,7 @@ Licenci předplatného sady Visual Studio také umožňuje koncovým uživatelů
 ## <a name="additional-information"></a>Další informace
 [Stáhněte si v sadě Visual Studio licencování dokumentu white paper](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
 
-[Porovnejte možnosti odběru a ceny](https://www.visualstudio.com/pricing).
+[Porovnejte možnosti odběru a ceny](https://www.visualstudio.com/vs/pricing).
 
 [Porovnání funkcí Visual Studio IDE](https://www.visualstudio.com/vs/compare/).
 

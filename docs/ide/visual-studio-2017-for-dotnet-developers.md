@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: f8830b24aa763a1a59830d0dd15231673f1dfac3
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 pro vývojáře .NET
 
@@ -84,6 +84,8 @@ Pokud jsou pocházejících z jiného IDE nebo kódování prostředí, může s
 - [Klávesové zkratky pro Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys2017-KeyboardShortcuts)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
+Níže jsou uvedeny oblíbených zkratky v sadě Visual Studio. Upozorňujeme, že některá rozšíření odpojení klíčových vazeb výchozí sady Visual Studio a vy musíte obnovit klíčových vazeb používat následující příkazy. Chcete-li obnovit vaše klíčových vazeb na výchozí hodnoty v sadě Visual Studio, přejděte na **nástroje > Import a Export nastavení > Obnovit nastavení**.
+
 | Zástupce (všechny profily) | Příkaz | Popis |
 |-|-|-| 
 | **CTRL + T** | Přejděte na všechny | Přejděte na všechny deklarace souboru nebo typ/člen nebo symbol |
@@ -95,6 +97,6 @@ Pokud jsou pocházejících z jiného IDE nebo kódování prostředí, může s
 | **F5** | Spuštění ladění | Spuštění ladění aplikace |
 | **CTRL + F5** | Spustit bez ladění | Místní spuštění aplikace bez ladění |
 | **CTRL + K, D** (výchozí profil) nebo **Ctrl + E, D** (C# profil) | Formátovat dokument | Vyčistí formátování porušení v souboru na základě vašeho znaky, mezery a nastavení odsazení |
-| **CTRL +\,E** (výchozí profil) nebo **Ctrl + W, E** (C# profil) | Seznam chyb zobrazit | Zobrazit všechny chyby v dokument, projekt nebo řešení |
+| **CTRL +\\, E** (výchozí profil) nebo **Ctrl + W, E** (C# profil) | Seznam chyb zobrazit | Zobrazit všechny chyby v dokument, projekt nebo řešení |
 
 

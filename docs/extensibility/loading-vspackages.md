@@ -15,11 +15,11 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94db8d3bb95e254a3fa528a424048162916fce99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 29022d14311e71b7ee33f5339f8e450c47d1ce5c
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loading-vspackages"></a>Načítání VSPackages
 VSPackages jsou načteny do sady Visual Studio jenom v případě, že se požaduje jejich funkce. Například VSPackage je načtena, když Visual Studio použije objekt pro vytváření projektu nebo služba, která implementuje VSPackage. Tato funkce je volána zpožděné načítání, který se používá, pokud je to možné ke zlepšení výkonu.  
@@ -72,61 +72,7 @@ VSPackages jsou načteny do sady Visual Studio jenom v případě, že se požad
   
      Při inicializaci VSPackage vynutí `PackageToBeLoaded` načíst.  
   
-     Platnost načítání není vhodné používat pro komunikaci VSPackage. Použití [pomocí a poskytování služeb](../extensibility/using-and-providing-services.md) místo.  
-  
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Pomocí vlastních atributů k registraci VSPackage  
- V některých případech musíte vytvořit nový atribut registrace pro rozšíření. Atributy registrace můžete použít, chcete-li přidat nového klíče registru nebo přidání nové hodnoty do existující klíče. Nový atribut musí být odvozeny od <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, a musí přepsat <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> a <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> metody.  
-  
-## <a name="creating-a-registry-key"></a>Vytvoření klíče registru  
- Následující kód vytvoří vlastní atribut **vlastní** podklíčů pod klíčem pro VSPackage, která je registrována.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + @"}\Custom");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-    }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveKey(@"Packages\" + context.ComponentType.GUID + @"}\Custom");  
-}  
-  
-```  
-  
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Vytvoření nové hodnoty v části existující klíč registru  
- Můžete přidat vlastní hodnoty do existujícího klíče. Následující kód ukazuje, jak přidat novou hodnotu do VSPackage registrační klíč.  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + "}");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-                }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveValue(@"Packages\" + context.ComponentType.GUID, "NewCustom");  
-}  
-```  
+     Platnost načítání není vhodné používat pro komunikaci VSPackage. Použití [pomocí a poskytování služeb](../extensibility/using-and-providing-services.md) místo.
   
 ## <a name="see-also"></a>Viz také  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [Balíčky VSPackage](../extensibility/internals/vspackages.md)

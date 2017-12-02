@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 474f8f7dc5f3b3b0e1d8323801f650420fce4da0
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: d78531fd3635c010f83a4ebe3c446c8c4c33e943
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 #   <a name="how-to-buy-a-subscription"></a>Jak koupit předplatné
 Existují tři způsoby, jak zakoupit předplatné sady Visual Studio.  
@@ -27,9 +27,9 @@ Můžete si koupit Visual Studio Professional a Visual Studio Enterprise [odběr
 ### <a name="before-you-start"></a>Než začnete
 
 *   K vyúčtování vaše nákupy, budete potřebovat [předplatné](https://azure.microsoft.com/en-us/pricing/purchase-options/). Můžete [zaregistrovat](https://account.windowsazure.com/Subscriptions) před první nákupu nebo během první nákup ve Visual Studio Marketplace.
-Další informace, které [předplatná Azure](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa) můžete použít pro nákupy Visual Studio Marketplace. 
+[Další informace](https://docs.microsoft.com/en-us/vsts/marketplace/marketplace-billing-qa) které předplatná Azure, můžete použít pro nákupy Visual Studio Marketplace. 
 
-*   Zaregistrujte si předplatné Azure a kupte si Visual Studio Marketplace, budete potřebovat ["osobní" účet Microsoft](https://www.microsoft.com/account) nebo ["pracovní nebo školní účet"](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/) Pokud jste nákup pro vaši organizaci, a jejich Správa identit s Azure Active Directory (Azure AD).
+*   Zaregistrujte si předplatné Azure a kupte si Visual Studio Marketplace, budete potřebovat "osobní" [účtu Microsoft](https://www.microsoft.com/account) nebo ["pracovní nebo školní účet"](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/) Pokud jste nákup pro vaši organizaci, a jejich Správa identit s Azure Active Directory (Azure AD).
 
 ### <a name="buy-subscriptions"></a>Kupte si předplatné
 
@@ -66,7 +66,7 @@ Nebo pokud nemáte zaregistrovat nové předplatné.
 <a name="manage-subscriptions"></a>
 ###  <a name="manage-purchased-visual-studio-subscriptions-as-administrator"></a>Správa odběrů zakoupené Visual Studio jako správce
 
-Chcete-li zobrazit všechny odběry Visual Studio zakoupili Visual Studio Marketplace a jejich přiřazení uživatelům, změnit tyto odběry, nebo zrušit tyto odběry jako správce předplatného, přejděte na [Visual Studio Portálu pro správu předplatných](https://manage.visualstudio.com/cloud)a přihlaste se pomocí identit umožňuje pro nákup těchto předplatných.
+Chcete-li zobrazit všechny odběry Visual Studio zakoupili Visual Studio Marketplace a jejich přiřazení uživatelům, změnit tyto odběry nebo zrušit tyto odběry jako správce předplatného, přejděte k předplatným Visual Studio Správa [portál](https://manage.visualstudio.com/cloud)a přihlaste se pomocí identit umožňuje pro nákup těchto předplatných.
 
 *   Chcete-li změnit počet zakoupili předplatné:
 
@@ -76,11 +76,11 @@ Chcete-li zobrazit všechny odběry Visual Studio zakoupili Visual Studio Market
 
 ### <a name="view-visual-studio-subscriptions-assigned-to-you"></a>Zobrazit předplatné sady Visual Studio vám byl přiřazen
 
-K zobrazení předplatných Visual Studio vám přiřazen konkrétně a výhody vaše předplatné, přejděte na portál odběry Visual Studio (```https://my.visualstudio.com```).
+K zobrazení předplatných Visual Studio vám přiřazen konkrétně a výhody vaše předplatné, přejděte na portál Visual Studio odběry [https://my.visualstudio.com](https://my.visualstudio.com).
 
-<img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Subscriptions" src="_img/buy-vs-subscriptions/view-assigned-subscription-list-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
-<img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+   <img alt="Visual Studio subscriptions portal, Benefits" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
 
 ### <a name="marketplace-and-billing-qa"></a>Marketplace a fakturace otázek a odpovědí
 
@@ -89,23 +89,23 @@ Přejděte [Marketplace a fakturace otázek a odpovědí](/vsts/marketplace/mark
 ## <a name="buying-standard-subscriptions-through-the-microsoft-store"></a>Kdybyste kupovali standardní odběry prostřednictvím Microsoft Store
 Visual Studio standardní odběry jsou k dispozici prostřednictvím Microsoft Store.  Se koupit nebo obnovení předplatného:
 
-1. Připojení k [Microsoft Store](https://www.microsoft.com).
+1. Připojení k [Microsoft Store](https://www.microsoft.com/store).
 2. Klikněte na **softwaru** kartě.
 3. Vyberte **odborníky v oblasti softwaru**.
 
-<img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Software Menu" src="_img/buy-vs-subscriptions/professional-software.png" style="border: 1px solid #CCCCCC" />
 
 4. V **nakupovat kategorie** vyberte **Visual Studio**.
 
-<img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Categories List" src="_img/buy-vs-subscriptions/shop-categories.png" style="border: 1px solid #CCCCCC" />
 
 5. V **Visual Studio obchod** vyberte předplatné, které chcete koupit. (Visual Studio Professional 2017 je samostatnou licenci pro prostředí IDE a nezahrnuje předplatné.)
 
-<img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Products" src="_img/buy-vs-subscriptions/shop-visual-studio.png" style="border: 1px solid #CCCCCC" />
 
 6. Na stránce popis produktů budete mít možnost zakoupení nové předplatné nebo zakoupení nové.  Vyberte typ požadované předplatné a přidat do košíku. 
 
-<img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Visual Studio Enterprise options" src="_img/buy-vs-subscriptions/enterprise-options.png" style="border: 1px solid #CCCCCC" />
 
 7. V košíku, klikněte na tlačítko **najdete v článku věnovaném** tlačítko přesunout do **zkontrolujte a umístěte pořadí** stránky.  (Pravděpodobně muset přihlásit ke svému Account Microsoft pokračujte.) 
 
@@ -138,5 +138,5 @@ Aktivace předplatného:
 
 
 Organizace, kteří chtějí výhod více předplatných, je můžete zakoupit prostřednictvím různých programů licenci svazek (VL).  Multilicencí prodávají prostřednictvím autorizovaný Microsoft Partners.  
-Zjistěte, jak [nakupovat prostřednictvím multilicenčního](https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx). Přejděte [Marketplace a fakturace otázek a odpovědí](/vsts/marketplace/marketplace-billing-qa) k odpovědi na více běžné otázky ohledně fakturace Visual Studio Marketplace a Azure. 
+Zjistěte, jak nakupovat prostřednictvím [Volume Licensing](https://www.microsoft.com/Licensing/how-to-buy/how-to-buy.aspx). Přejděte [Marketplace a fakturace otázek a odpovědí](/vsts/marketplace/marketplace-billing-qa) k odpovědi na více běžné otázky ohledně fakturace Visual Studio Marketplace a Azure. 
 

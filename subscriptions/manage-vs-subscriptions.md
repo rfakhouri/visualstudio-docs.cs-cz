@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "Další informace o získání maximum z vašich předplatných Visual Studio."
+Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 640dfcd7a337606982b97f6631cb836a2bffb16c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-subscriptions"></a>Správa předplatných
 ## <a name="signing-in-to-the-portal"></a>Přihlášení k portálu
@@ -21,7 +21,7 @@ Vítá vás vaše předplatné sady Visual Studio!  Vaše předplatné vám posk
 ### <a name="first-time-access"></a>První čas přístup
 Kroky na používání vašeho předplatného první závisí na tom, jak získat předplatné.  
 #### <a name="microsoft-store"></a>Microsoft Store
-Pokud jste zakoupili předplatné Visual Studio prostřednictvím Microsoft Store, kroky aktivace lze inicializovat z platbu **potvrzovací stránku** nebo **potvrzení e-mailu.**  
+Pokud jste zakoupili předplatné sady Visual Studio prostřednictvím Microsoft Store, kroky aktivace lze inicializovat z platbu **potvrzovací stránku** nebo **potvrzení e-mailu.**  
 1.  Na stránce"potvrzení" nebo "E-mail s potvrzením", klikněte na **kliknutím sem se přihlaste**.  Budete přesměrováni na https://my.visualstudio.com/subscriptions/activate.
 2.  Zadejte e-mailovou adresu budete používat k přihlášení k portálu odběratele a klikněte na tlačítko **pokračovat**.
 3.  V závislosti na e-mailovou adresu může být Přesměrováno na přihlašovací stránce Account Microsoft nebo přihlašovací stránku vaší společnosti nebo školy.
@@ -31,25 +31,25 @@ Pokud jste zakoupili předplatné Visual Studio prostřednictvím Microsoft Stor
 #### <a name="workschool-accounts"></a>Pracovní nebo školní účty
 Pokud vaše předplatné byl poskytnut pracovní nebo školní, jste přijali Uvítacího e-mailu.  
 1.  Přejděte [portál odběratele](https://my.visualstudio.com/)
-2.  Zadejte e-mailovou adresu, kterému byla přiřazena nové předplatné sady Visual Studio. Tato adresa je identifikována také v odběrateli **úvodní písmeno**. Zkontrolujte prosím složky Nevyžádaná pošta, pokud **úvodní písmeno** nebyla přijata.
+2.  Zadejte e-mailovou adresu, kterému byla přiřazena nové předplatné sady Visual Studio. Tato adresa je identifikována také v odběrateli **úvodní písmeno**. Zkontrolujte složky Nevyžádaná pošta, pokud nebyla přijata úvodní písmeno.
 3.  Klikněte na tlačítko **pokračovat**
-4.  Budete přesměrováni na podnikové přihlašovací stránce.
+4.  Budete přesměrováni na podnikové přihlašovací stránku.
 5.  Zadejte svoje heslo.
 6.  Klikněte na tlačítko **přihlášení**.
 
 #### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
 Pokud jste zakoupili předplatné měsíční nebo roční cloudu z Visual Studio Marketplace, přejděte [portál odběratele](https://my.visualstudio.com/) a přihlaste se pomocí účtu Microsoft (MSA), které jste zadali při zakoupení předplatného.
 #### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Pomocí pracovní nebo školní účet s účet Microsoft (MSA)
-Pokud má vaše organizace Azure Active Directory, ale nemáte Azure účet služby Active Directory budete muset využít **osobní** možností při přihlašování v procesu.
+Pokud má vaše organizace Azure Active Directory, ale nemáte účet Azure Active Directory, budete muset využít **osobní** možností při přihlašování v procesu.
 1.  Přejděte prosím [portál odběratele](https://my.visualstudio.com)
 2.  Zadejte e-mailovou adresu, kterému byla přiřazena nové předplatné sady Visual Studio. Tato adresa je identifikována také v odběrateli **úvodní písmeno**.  (Zkontrolujte, zda vaše složky Nevyžádaná pošta Pokud nedostali Uvítacího e-mailu.)
 3.  Klikněte na tlačítko **pokračovat**
-4.  Budete přesměrováni na **rozhodnutí stránky**.   Vyberte **pracovní nebo školní účet** Pokud vaše předplatné je přiřazen k **práci nebo ve škole** účet přidružený ke klienta služby Azure Active Directory (AAD).  Vyberte **osobní** Pokud odběr je přidružen **společností** e-mailová adresa, ale také byl převeden na **osobní** účet Microsoft (MSA)
+4.  Budete přesměrováni na **rozhodnutí stránky**.   Vyberte **pracovní nebo školní účet** Pokud vaše předplatné je přiřazen k **práci nebo ve škole** účet přidružený ke klienta služby Azure Active Directory (AAD).  Vyberte **osobní** Pokud odběr je přidružen **podnikové** e-mailová adresa, ale také byl převeden na **osobní** účet Microsoft (MSA)
 5.  Zadejte svoje heslo
 6.  Klikněte na tlačítko **přihlášení** 
 
 ### <a name="managing-multiple-subscriptions"></a>Správa více předplatných
-Na portálu MY spojuje všechny odběry Visual Studio a programy v jednom vylepšené prostředí portálu.  Například můžete mít standardní předplatné například Visual Studio Enterprise prostřednictvím práce a měsíční předplatné Visual Studio Professional nebo Visual Studio Dev Essentials členství, který používáte doma. 
+Na portálu odběry Visual Studio spojuje všechny odběry Visual Studio a programy v jednom vylepšené prostředí portálu.  Například můžete mít standardní předplatné například Visual Studio Enterprise prostřednictvím práce a měsíční předplatné Visual Studio Professional nebo Visual Studio Dev Essentials členství, který používáte doma. 
 #### <a name="which-subscription-am-i-using"></a>Jaké předplatné, které je použito
 Na stránce výhody používanému předplatnému se výrazně zobrazí v modré informační zprávě.  Také se zobrazí v pravém horním rohu stránky.
 
@@ -64,9 +64,9 @@ Na stránce výhody používanému předplatnému se výrazně zobrazí v modré
 #### <a name="if-your-subscription-is-not-visible"></a>Pokud vaše předplatné není viditelná...
 - Může mít skončenou platnost.  Na portálu odběratele se zobrazí pouze aktivní odběry.
 - Může být přidružen jinou e-mailovou adresu. Například pokud se přihlášení k odběru Visual Studio Professional pomocí pracovní nebo školní e-mail a máte přidružené Account Microsoft Visual Studio Dev Essentials členství, zobrazí se pouze předplatné odpovídající e-mailovou adresu použít pro přihlášení k portálu pro odběratele.  Zobrazíte druhého předplatného, musíte se odhlásit se a přihlaste se pomocí e-mailovou adresu.
-- Pokud vaše firma nakoupí odběry přes multilicence, správce nemusí mít předplatné vám přiřazen.  
+- Pokud vaše firma nakoupí odběry přes multilicence, správce, nemusí mít předplatné vám přiřazen nebo může mít přiřazeny vaše předplatné přístup k jiným uživatelem.  
 
-#### <a name="renewing-my-subscriptions"></a>Obnovují se Moje předplatné
+### <a name="renewing-my-subscriptions"></a>Obnovují se Moje předplatné
 **Standardní odběrů**
 - Microsoft Store: Pokud jste zakoupili předplatné z [Microsoft Store](http://www.microsoft.com/store), můžete obnovit jeho existuje také. 
 - Multilicence: Pokud vaše firma nakoupí odběry přes multilicence, měli požádat správce prodejce obnovit vašich předplatných.
@@ -81,7 +81,7 @@ Na stránce výhody používanému předplatnému se výrazně zobrazí v modré
 
 **Visual Studio Dev Essentials -** Essentials vývojářů je bezplatná program a členství ve skupinách nevyprší.  
 
-#### <a name="transferring-subscriptions"></a>Přenášení odběrů
+### <a name="transferring-subscriptions"></a>Přenášení odběrů
 Pokud vaše předplatné byl zakoupen prostřednictvím multilicenčního programu společnosti Microsoft a je nutné ho znovu přiřadit někomu jinému v rámci organizace, správce bude muset to dělají za vás. Odběry prodejní lze přesunout do jiného uživatele kontaktováním oddělení služeb zákazníkům.  Bezplatnou nebo "Není pro prodej" odběrů nelze přenést. 
 
 
@@ -89,9 +89,9 @@ Pokud vaše předplatné byl zakoupen prostřednictvím multilicenčního progra
 
 #### <a name="changing-profile-information"></a>Změna informací o profilu
 Kontaktní údaje a předvolby můžete snadno změnit ve vašem profilu.  
-1.  Klikněte na název vaší Pokud pravém horním rohu portálu odběratele.
+1.  Klikněte na název v pravém horním rohu portálu odběratele.
 2.  Klikněte **upravit profil** tlačítko.
-3.  Na **o** kartě, můžete změnit název, e-mailu, země nebo oblast, obrázků a obraťte se na předvolby profil.  Na kartě "Předvolby" můžete vybrat upřednostňovaný jazyk, datum a čas vzory, časové pásmo a uživatelské rozhraní motivu.  
+3.  Na **o** kartě, můžete změnit název, e-mailu, země nebo oblast, obrázků a obraťte se na předvolby profil.  Na **Předvolby** kartě můžete vybrat upřednostňovaný jazyk, datum a čas vzory, časové pásmo a uživatelské rozhraní motivu.  
 4.  Po dokončení změny, klikněte na tlačítko **Uložit**. 
 5.  Klikněte na tlačítko prohlížeče **zpět** tlačítko se vraťte na stránku výhody. 
 

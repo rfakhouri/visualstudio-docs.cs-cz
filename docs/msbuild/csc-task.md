@@ -21,11 +21,11 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="csc-task"></a>Csc – úloha
 Zabalí CSC.exe a vytvoří spustitelné soubory (soubory .exe), dynamické knihovny (soubory .dll) nebo moduly kódu (.netmodule soubory). Další informace o CSC.exe najdete v tématu [možnosti kompilátoru C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -63,6 +63,7 @@ Zabalí CSC.exe a vytvoří spustitelné soubory (soubory .exe), dynamické knih
 |`NoWin32Manifest`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, neobsahují v manifestu Win32 výchozí.|  
 |`Optimize`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, umožňuje optimalizace. Pokud `false`, zakáže optimalizace. Další informace najdete v tématu [/ optimize (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option).|  
 |`OutputAssembly`|Volitelné `String` výstupní parametr.<br /><br /> Určuje název souboru výstupního souboru. Další informace najdete v tématu [/out (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option).|  
+|`OutputRefAssembly`|Volitelné `String` parametr.<br /><br /> Určuje název výstupního souboru, odkaz na sestavení. Další informace najdete v tématu [/refout (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option).|  
 |`PdbFile`|Volitelné `String` parametr.<br /><br /> Určuje název souboru ladicích informací. Výchozí název je název výstupního souboru s příponou PDB.|  
 |`Platform`|Volitelné `String` parametr.<br /><br /> Určuje platformu procesoru, které se zaměřují výstupní soubor. Tento parametr může mít hodnotu `x86`, `x64`, nebo `anycpu`. Výchozí hodnota je `anycpu`. Další informace najdete v tématu [/Platform (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Způsobí, že úloha import informace veřejného typu ze zadaných položek do aktuálního projektu. Další informace najdete v tématu [/Reference (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Můžete zadat [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] alias v odkazu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru přidáním metadata `Aliases` k původní položce "Odkaz". Chcete-li například nastavit alias "LS1" v příkazovém řádku následující CSC:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> měli byste použít:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
