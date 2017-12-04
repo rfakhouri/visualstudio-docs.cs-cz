@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc7ad92e708666baf1ab0429c041ca9b7d2e0f95
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>Zobrazení snímky pomocí zpětný krok IntelliTrace
 Zpětný krok IntelliTrace automaticky vytvoří snímek vaší aplikace v každé zarážek a ladicí program krok události. Zaznamenaná snímky umožňují přejděte zpět na předchozí zarážky nebo kroky a zobrazení stavu aplikace, stejně jako tomu bylo v minulosti. IntelliTrace zpětný krok vám může ušetřit čas když chcete zobrazit předchozí stav aplikace, ale nechcete, aby se znovu spustit ladění nebo znovu vytvořte stav požadované aplikace.
@@ -38,7 +38,7 @@ Z důvodů výkonu snímky nejsou provedeny, když je krok velmi rychle. Pokud s
 
 ## <a name="navigate-and-view-snapshots"></a>Vyhledání a zobrazení snímky
 
-Mohou procházet mezi událostí pomocí **krok zpětné** a **krok dál** tlačítek na panelu nástrojů ladění. Tato tlačítka přejděte události, které se zobrazují v **události** ve **okno diagnostické nástroje**. Krokování zpětně nebo dopředu na událost automaticky aktivuje historické ladění na vybrané události.
+Mohou procházet mezi událostí pomocí **krok zpět (Alt + [)** a **krok dál (Alt +])** tlačítek na panelu nástrojů ladění. Tato tlačítka přejděte události, které se zobrazují v **události** ve **okno diagnostické nástroje**. Krokování zpětně nebo dopředu na událost automaticky aktivuje historické ladění na vybrané události.
 
 ![Krok zpět a předávat tlačítka](../debugger/media/intellitrace-step-back-icons-description.png "tlačítka krok zpět a krok vpřed")
 
