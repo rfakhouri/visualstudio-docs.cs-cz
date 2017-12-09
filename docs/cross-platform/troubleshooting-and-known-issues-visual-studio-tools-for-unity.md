@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ede4bd9594e3bb19f081d8a7343f5a0c08003cad
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 338f80724598a3c89dcde3806511427b81bffca4
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Odstraňování potíží a známé problémy (Visual Studio Tools for Unity)
 V této části najdete řešení pro běžné problémy s nástroji Visual Studio Tools for Unity, popisem známých problémů a zjistěte, jak můžete pomocí Visual Studio Tools for Unity zlepšit zasílání zpráv o chybách.  
@@ -25,7 +25,7 @@ V této části najdete řešení pro běžné problémy s nástroji Visual Stud
 Chcete-li vyřešit některé běžné problémy s nástroji Visual Studio Tools for Unity, najdete v následujících částech.  
 
 ### <a name="visual-studio-crashes"></a>Visual Studio dojde k chybě
-Může to být kvůli do mezipaměti Visual Studio MEF je poškozený.
+Může to být kvůli mezipaměť Visual Studio MEF je poškozený.
 
 Odstraňte následující složku resetovat mezipaměť MEF (před provedením této akce zavřete Visual Studio):
 
@@ -62,7 +62,8 @@ Pokud Visual Studio se nepodařilo najít umístění zdroje pro konkrétní zar
 ### <a name="unable-to-attach"></a>Nelze připojit
 -   Pokuste se dočasně zakázat váš antivirový nebo vytvořit pravidla vyloučení pro VS a Unity.
 -   Pokuste se dočasně zakázat bránu firewall nebo vytvořit pravidla pro povolení portu TCP nebo UDP sítě mezi VS a Unity.
--   Myslíme, že programy jako prohlížeč Team ruší se proces zjišťování, případně můžete zkusit zastavit dočasně další software, abyste zjistili, zda je něco změnit.
+-   Myslíme, že programy jako prohlížeč Team narušuje proces zjišťování; případně můžete zkusit zastavit dočasně další software, pokud chcete zobrazit, pokud se změní něco.
+-   Hlavní spustitelný soubor Unity nepřejmenovávejte jako VSTU pouze monitoruje procesy "Unity.exe".
 
 ### <a name="unable-to-debug-android-players"></a>Nelze k ladění Android přehrávače
 Můžeme použít vícesměrové vysílání pro zjišťování player, (což je výchozí mechanismus používaný Unity), ale poté používáme regulární připojení TCP připojit ladicí program. Fáze zjišťování je hlavní problém pro zařízení s Androidem.

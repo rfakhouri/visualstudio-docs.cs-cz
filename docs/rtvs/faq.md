@@ -1,23 +1,22 @@
 ---
 title: "R Tools pro Visual Studio – nejčastější dotazy | Microsoft Docs"
 ms.custom: 
-ms.date: 11/13/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: e656ac64-915a-40bb-8196-93d33250ef98
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 79420e09f7ca0b01ce97fc19a063a8b15431b544
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 22d114500ca602806facbf6f6e81ab7497e07526
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="frequently-asked-questions"></a>Nejčastější dotazy
 
@@ -97,7 +96,7 @@ A. Ne, protože Microsoft R Server je různé technologie a neposkytuje mechanis
 
 OTÁZKY. **Můžete RTVS připojit k virtuálnímu počítači vytvořené pomocí image virtuálního počítače vědecké účely dat v Azure?**
 
-A. Ano; předinstalovaný image virtuálního počítače vědecké účely dat pomocí služby vzdálené R pro sadu Visual Studio.
+A. Ano; [virtuálního počítače vědecké účely dat – Windows 2016](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) předinstalovaný image s vzdálené R pro sadu Visual Studio.
 
 Q, **RTVS můžete připojit ke vzdálenému počítači s R nainstalované?**
 

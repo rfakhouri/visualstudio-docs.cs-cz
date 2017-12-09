@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d76ced1c908c832e9fd583eecc3419e57aeb76c7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -104,7 +104,7 @@ Můžete použít programy C++, které využívají služby REST [C++ REST SDK](
 
 C++ programy, které fungují s Microsoft Azure Storage můžete použít [klienta úložiště Microsoft Azure](http://www.nuget.org/packages/wastorage).
 
-Modelování dat &mdash; Visual Studio neposkytuje vrstvu ORM jazyka C++. [TYPU](http://www.codesynthesis.com/products/odb/) je oblíbených open-source ORM jazyka C++.
+Modelování dat&mdash;Visual Studio neposkytuje vrstvu ORM jazyka C++. [TYPU](http://www.codesynthesis.com/products/odb/) je oblíbených open-source ORM jazyka C++.
 
 Další informace o připojení k databázím z aplikací C++, najdete v části [nástrojů Visual Studio data pro jazyk C++](../data-tools/visual-studio-data-tools-for-cpp.md). Další informace o starší verze technologií přístupu k datům Visual C++, najdete v části [přístup k datům](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
 
@@ -139,7 +139,7 @@ Popisuje postup vytvoření dat aplikací, které umožňují vývojářům prog
 [Datové služby WCF 4.5](/dotnet/framework/data/wcf/index)  
 Popisuje způsob použití [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] k nasazení služeb dat na webu nebo v intranetu, které implementují [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Data v řešeních pro systém Office](/office-dev/office-dev/data-in-office-solutions)  
+[Data v řešeních pro systém Office](/office-dev/office-dev/data-in-office-solutions)  
 Obsahuje odkazy na témata, které vysvětlují, jak fungují data v řešeních pro systém Office. To zahrnuje informace o schématu orientované programování, ukládaní dat do mezipaměti a přístup k datům na serveru.
 
 [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)  

@@ -1,26 +1,25 @@
 ---
 title: "Úpravy kódu s R Tools pro sadu Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Úpravy R kódu v sadě Visual Studio
- 
+
 R nástrojů pro Visual Studio (RTVS) přizpůsobuje jim úpravy speciálně pro R. a přitom zachovat všechny funkce a umožňuje používat rozšíření sady Visual Studio. (Například pokud dáváte přednost vazeb klíče VIM, můžete nainstalovat bezplatnou [VsVim rozšíření](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329) z Galerie sady Visual Studio.)
 
 V tomto tématu:
@@ -33,8 +32,7 @@ V tomto tématu:
 - [Vkládání Roxygen komentáře](#inserting-roxygen-comments)
 - [Možnosti editoru](#editor-options)
 
-Také najdete v tématech na [IntelliSense](code-intellisense.md), [výstřižky kódu](code-snippets.md), a [R Markdownu](rmarkdown.md).
-
+Také najdete v tématech na [IntelliSense](code-intellisense.md), [linting](code-linting.md), [výstřižky kódu](code-snippets.md), a [R Markdownu](rmarkdown.md).
 
 ## <a name="syntax-highlighting"></a>zvýraznění syntaxe 
 
@@ -107,9 +105,9 @@ f <- function(a) { return(a + 1) }
 Chcete-li změnit formátování kódu celý soubor, vyberte **Upravit > Upřesnit > Formátovat dokument** (Ctrl + E, D).
 
 Automatické formátování je samostatný operace, která lze vrátit zpět. Například pokud kódu vložíte do editoru a formátování se vztahuje, výběrem **Upravit > vrátit zpět** nebo kombinace kláves Ctrl + Z jednou obrátí formátování; druhý vrácení zpět obrátí vložení sám sebe.
- 
+
 Možnosti formátování (včetně vypnutí formátování) jsou nastaveny prostřednictvím **nástroje > Možnosti** na **textový Editor > R > Upřesnit** kartě. Můžete přejít přímo na tuto stránku pomocí buď **R nástroje > Možnosti editoru...**  příkaz nebo nástrojem v editoru pravým tlačítkem a vyberete **možnosti formátování...** . Najdete v článku [možností editoru](#editor-options) podrobnosti.
- 
+
 ## <a name="inserting-roxygen-comments"></a>Vkládání Roxygen komentáře
 
 RTVS poskytuje zástupce pro generování [Roxygen](http://roxygen.org/) komentáře pomocí názvů parametrů funkce. Stačí zadat `###` na prázdný řádek výše v definici funkce:
@@ -144,5 +142,5 @@ Možnosti na **R > Upřesnit** kartě jsou specifické pro RTVS:
 | | Seznam dokončení na tabulátor | Off | Zadejte jeden nebo více znaků a stisknutím klávesy Tab vyvolá seznam dokončení. |
 | | Shoda částečně typy názvy argumentů | Off | Při psaní názvy argumentu ve volání funkce, podpis nápovědy se zobrazí popis argument, který je nejlepší shodu. |
 | Interaktivní okno | Kontrola syntaxe v konzole R | Off | V okně interaktivní kontrola syntaxe se vztahuje. Kontrola syntaxe nemusí fungovat správně s více řádky příkazy. | 
-| Sbalování | Osnova kódu | On | Automaticky vytvoří sbalitelné oblasti pro oblasti jako příkazy víceřádkový. | 
+| Sbalování | Osnova kódu | On | Automaticky vytvoří sbalitelné oblasti pro oblasti jako příkazy víceřádkový. |
 | Kontrola syntaxe | Zobrazit chyby syntaxe | On | Umožňuje automatické syntaxe Kontrola kódu. |

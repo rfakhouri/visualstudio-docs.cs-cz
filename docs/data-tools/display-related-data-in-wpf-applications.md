@@ -20,44 +20,43 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 74acdba4f04dde072d8d34729932596a601f222d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: acd88eb0d4a485f01f9ced8cc1d2b2cebd182a71
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Zobrazení souvisejících dat v aplikaci WPF
-V některých aplikacích můžete chtít pracovat s daty, která pochází z více tabulek nebo entity, které se vztahují k sobě navzájem v relaci nadřazený podřízený. Například můžete chtít zobrazit tabulku, která zobrazuje zákazníky z `Customers` tabulky. Když uživatel vybere konkrétního zákazníka, jiné mřížky zobrazí objednávky tohoto zákazníka ze související `Orders` tabulky.  
-  
-Můžete vytvořit ovládací prvky vázané na data, která zobrazení souvisejících dat tak, že přetáhnete položky z **zdroje dat** okna Návrháře WPF.  
-  
-## <a name="to-create-controls-that-display-related-records"></a>Chcete-li vytvořit ovládací prvky, které zobrazují související záznamy  
-  
-1.  Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat** otevřete **zdroje dat** okno.  
-  
-2.  Klikněte na tlačítko **přidat nový zdroj dat**a dokončete **konfigurace zdroje dat** průvodce.  
-  
-3.  Otevřete návrháře WPF a ujistěte se, že návrháře obsahuje kontejner, který je cílem platný drop pro položky v **zdroje dat** okno.  
-  
-     Další informace o cílů přemístění platná najdete v tématu [prvky vazby WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
-  
-4.  V **zdroje dat** časové období, rozbalte uzel, který představuje v nadřazené tabulce, nebo objekt v relaci. Nadřazené tabulky nebo objekt je na straně "1" vztah jeden mnoho.  
-  
-5.  Přetáhněte nadřazený uzel (nebo všechny jednotlivé položky nadřazený uzel) z **zdroje dat** okna do cíle přetažení platný v návrháři.  
-  
-     Visual Studio generuje XAML, který vytváří nové ovládací prvky vázané na data pro každou položku, která přetažení. XAML také přidá nový <xref:System.Windows.Data.CollectionViewSource> pro nadřazenou tabulku nebo objekt, který má prostředky cíle přetažení. Pro některé zdroje dat Visual Studio také generuje kód chcete načíst data do nadřazené tabulky či objektu. Další informace najdete v tématu [prvky vazby WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
-  
-6.  V **zdroje dat** okně vyhledejte související podřízenou tabulku nebo objekt. Související podřízené tabulky a objekty se zobrazí jako rozšíření uzly v dolní části seznamu nadřazeného uzlu data.  
-  
-7.  Přetáhněte podřízený uzel (nebo všechny jednotlivé položky podřízený uzel) z **zdroje dat** okna do cíle přetažení platný v návrháři.  
-  
-     Visual Studio generuje XAML, který vytváří nové ovládací prvky vázané na data pro jednotlivé položky, které přetažení. XAML také přidá nový <xref:System.Windows.Data.CollectionViewSource> pro podřízenou tabulku nebo objekt, který má prostředky cíle přetažení. Tento nový <xref:System.Windows.Data.CollectionViewSource> je vázána na vlastnost nadřazené tabulky nebo objekt, který jste právě přetáhli návrháře. Pro některé zdroje dat Visual Studio také generuje kód chcete načíst data do podřízenou tabulku či objekt.  
-  
-     Následující obrázek ukazuje související **objednávky** tabulky **zákazníci** tabulky v datové sadě v **zdroje dat** okno.  
-  
-     ![Okno zdroje dat, zobrazující vztah](../data-tools/media/datasources2.gif "DataSources2")  
-  
+V některých aplikacích můžete chtít pracovat s daty, která pochází z více tabulek nebo entity, které se vztahují k sobě navzájem v relaci nadřazený podřízený. Například můžete chtít zobrazit tabulku, která zobrazuje zákazníky z `Customers` tabulky. Když uživatel vybere konkrétního zákazníka, jiné mřížky zobrazí objednávky tohoto zákazníka ze související `Orders` tabulky.
+
+Můžete vytvořit ovládací prvky vázané na data, která zobrazení souvisejících dat tak, že přetáhnete položky z **zdroje dat** okna Návrháře WPF.
+
+## <a name="to-create-controls-that-display-related-records"></a>Chcete-li vytvořit ovládací prvky, které zobrazují související záznamy
+
+1. Na **Data** nabídky, klikněte na tlačítko **zobrazit zdroje dat** otevřete **zdroje dat** okno.
+
+2. Klikněte na tlačítko **přidat nový zdroj dat**a dokončete **konfigurace zdroje dat** průvodce.
+
+3. Otevřete návrháře WPF a ujistěte se, že návrháře obsahuje kontejner, který je cílem platný drop pro položky v **zdroje dat** okno.
+
+     Další informace o cílů přemístění platná najdete v tématu [prvky vazby WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+
+4. V **zdroje dat** časové období, rozbalte uzel, který představuje v nadřazené tabulce, nebo objekt v relaci. Nadřazené tabulky nebo objekt je na straně "1" vztah jeden mnoho.
+
+5. Přetáhněte nadřazený uzel (nebo všechny jednotlivé položky nadřazený uzel) z **zdroje dat** okna do cíle přetažení platný v návrháři.
+
+     Visual Studio generuje XAML, který vytváří nové ovládací prvky vázané na data pro každou položku, která přetažení. XAML také přidá nový <xref:System.Windows.Data.CollectionViewSource> pro nadřazenou tabulku nebo objekt, který má prostředky cíle přetažení. Pro některé zdroje dat Visual Studio také generuje kód chcete načíst data do nadřazené tabulky či objektu. Další informace najdete v tématu [prvky vazby WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).
+
+6. V **zdroje dat** okně vyhledejte související podřízenou tabulku nebo objekt. Související podřízené tabulky a objekty se zobrazí jako rozšíření uzly v dolní části seznamu nadřazeného uzlu data.
+
+7. Přetáhněte podřízený uzel (nebo všechny jednotlivé položky podřízený uzel) z **zdroje dat** okna do cíle přetažení platný v návrháři.
+
+     Visual Studio generuje XAML, který vytváří nové ovládací prvky vázané na data pro jednotlivé položky, které přetažení. XAML také přidá nový <xref:System.Windows.Data.CollectionViewSource> pro podřízenou tabulku nebo objekt, který má prostředky cíle přetažení. Tento nový <xref:System.Windows.Data.CollectionViewSource> je vázána na vlastnost nadřazené tabulky nebo objekt, který jste právě přetáhli návrháře. Pro některé zdroje dat Visual Studio také generuje kód chcete načíst data do podřízenou tabulku či objekt.
+
+     Následující obrázek ukazuje související **objednávky** tabulky **zákazníci** tabulky v datové sadě v **zdroje dat** okno.
+
+     ![Okno zdroje dat, zobrazující vztah](../data-tools/media/datasources2.gif "DataSources2")
+
 ## <a name="see-also"></a>Viz také
 [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
-[Vytváření vyhledávacích tabulek v aplikacích WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)   
-[Návod: Zobrazování souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md)
+[Vytváření vyhledávacích tabulek v aplikacích WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)

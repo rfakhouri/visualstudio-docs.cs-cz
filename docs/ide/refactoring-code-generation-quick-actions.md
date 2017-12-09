@@ -11,11 +11,11 @@ ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1886834f94c18aa7814fe4fab2c780f4884a59a6
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
-ms.translationtype: MT
+ms.openlocfilehash: 628da2068b2428e82820edfed0ad171566075ea7
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="refactoring-code-generation-and-quick-actions-in-visual-studio"></a>Refaktoring, vytvoření kódu a rychlé akce v sadě Visual Studio
 
@@ -31,11 +31,11 @@ Refaktoring je proces změnu kódu, aby bylo snazší spravovat, pochopit a roz�
 
 * [Psaní a refaktoring kódu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 
-* Refaktoring podporu pro F # je uvedený v [Visual F # výkonné nástroje](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), rozšíření sady Visual Studio třetí strany.
+* [Nástroje sady Visual F # Power](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools) &mdash; refaktoring podporu pro F # je uvedený v rozšíření sady Visual Studio tato třetí strany.
 
 ## <a name="code-generation"></a>Vytvoření kódu
 
-Visual Studio může pomoct generovat části zdrojového kódu, takže se můžete soustředit na skutečné práci.  Další informace najdete na následujících stránkách:
+Visual Studio může pomoct generovat části zdrojového kódu, takže se můžete soustředit na skutečné práci. Další informace najdete na následujících stránkách:
 
 * [Generování kódu (C#)](../csharp-ide/code-generation-csharp.md)
 
@@ -43,12 +43,13 @@ Visual Studio může pomoct generovat části zdrojového kódu, takže se můž
 
 ## <a name="quick-actions"></a>Rychlé akce
 
-Rychlé akce vám umožní snadno refactor, generovat nebo jinak změnit kód, který představuje jednu akci.  To může být použita, pomocí ikonou žárovky ![malé ikonou žárovky](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), nebo stiskněte **Ctrl** + **.** Pokud je ukazatelem na příslušný řádek kódu.
+Rychlé akce vám umožní snadno refactor, generovat nebo jinak změnit kód, který představuje jednu akci. To může být použita, pomocí ikonou žárovky ![malé ikonou žárovky](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), nebo stisknutím kombinace kláves **Ctrl** + **.** Pokud je ukazatelem na příslušný řádek kódu.
 
 * [Rychlé akce](quick-actions.md)
+
 * [Styly kódu a rychlé akce](code-styles-and-quick-actions.md)
 
 ## <a name="see-also"></a>Viz také
 
 [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)  
-[Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md)
+[Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md)

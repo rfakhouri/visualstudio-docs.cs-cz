@@ -1,5 +1,5 @@
 ---
-title: Tipy a triky pro Visual Studio | Microsoft Docs
+title: "Visual Studio klávesové zkratky | Microsoft Docs"
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -7,21 +7,20 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="tips-and-tricks-for-visual-studio"></a>Tipy a triky pro Visual Studio
-Můžete přejít v [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] snadněji pomocí zástupce v tomto tématu. Toto téma je jenom podmnožinu dostupných klávesové zkratky. Získat úplný seznam najdete v tématu [výchozí klávesové zkratky v sadě Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Informace o tom, jak optimalizovat pro usnadnění přístupu sady Visual Studio najdete v tématu [Rady a tipy k usnadnění](../ide/reference/accessibility-tips-and-tricks.md).  
+# <a name="tips-and-tricks-for-visual-studio"></a>Tipy a triky pro Visual Studio
 
-##  <a name="BKMK_WindowMgmt"></a>Správa oken  
+Můžete přejít v sadě Visual Studio snadno pomocí zástupce v tomto tématu. Toto téma je jenom podmnožinu dostupných klávesové zkratky. Získat úplný seznam najdete v tématu [výchozí klávesové zkratky v sadě Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Informace o tom, jak optimalizovat pro usnadnění přístupu sady Visual Studio najdete v tématu [Rady a tipy k usnadnění](../ide/reference/accessibility-tips-and-tricks.md).
+
+##  <a name="BKMK_WindowMgmt"></a>Správa oken
 
 |||  
 |-|-|  
@@ -32,7 +31,7 @@ Můžete přejít v [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md
 |Zobrazit seznam otevřených souborů|Ctrl + Alt + Šipka dolů|  
 |Zobrazit všechny plovoucí Windows|Ctrl+Shift+M|  
 
-##  <a name="BKMK_WindowShortcuts"></a>Období zkratky  
+##  <a name="BKMK_WindowShortcuts"></a>Období zkratky
 
 |||  
 |-|-|  
@@ -42,7 +41,7 @@ Můžete přejít v [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md
 |Spusťte novou instanci|Win + Shift + n|  
 |Přepínání mezi Windows|Win + n|  
 
-##  <a name="BKMK_Search"></a>Hledání v sadě Visual Studio  
+##  <a name="BKMK_Search"></a>Visual Studio vyhledávání
 
 |||  
 |-|-|  
@@ -52,7 +51,7 @@ Můžete přejít v [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md
 |Snadné spuštění rozsah výsledků|- @opt Možnosti<br />- @cmd Příkazy<br />- @mru Naposledy použitých<br />- @doc Otevřít dokumenty|  
 |Hledání v možnostech nástroje|CTRL + E|  
 
-##  <a name="BKMK_EditorFind"></a>Najít editoru  
+##  <a name="BKMK_EditorFind"></a>Najít editoru
 
 |||  
 |-|-|  
@@ -67,7 +66,7 @@ Můžete přejít v [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md
 |Najít v souborech|Ctrl+Shift+F|  
 |Nahradit v souborech|Ctrl+Shift+H|  
 
-##  <a name="BKMK_CodeEditor"></a>Editor kódu  
+##  <a name="BKMK_CodeEditor"></a>Editor kódu
 
 |||  
 |-|-|  
@@ -91,7 +90,7 @@ Můžete přejít v [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md
 |Přecházet mezi více funkce Náhled výsledků|F8 a Shift+F8|  
 |Přepínání mezi okně editoru kódu a prohlížení definice okno|Shift+Esc|  
 
-##  <a name="BKMK_Toolbars"></a>Panely nástrojů  
+##  <a name="BKMK_Toolbars"></a>Panely nástrojů
 
 |||  
 |-|-|  
@@ -100,7 +99,7 @@ Můžete přejít v [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md
 |Najít režim příkazu Textbox|Typ ">"|  
 |Vytvořit nový alias|> alias NewAlias příkaz|  
 
-##  <a name="BKMK_Debugging"></a>Ladění  
+##  <a name="BKMK_Debugging"></a>Ladění
 
 |||  
 |-|-|  
@@ -119,12 +118,14 @@ Můžete přejít v [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md
 |Příkazové podokno zrušte vyrovnávací paměti|> specifikací cls|  
 |Hodnota tiskové příkazové podokno|? název_proměnné|  
 
-##  <a name="BKMK_ALM"></a>Správa životního cyklu aplikací  
- V tématu [klávesové zkratky: Visual Studio Online a sady TFS webový portál a Průzkumník týmových projektů](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+##  <a name="BKMK_ALM"></a>Správa životního cyklu aplikací
 
-## <a name="see-also"></a>Viz také  
- [Blog o sadě Visual Studio](http://blogs.msdn.com/b/visualstudio)   
- [Visual Studio tipy a triky Blog](http://blogs.msdn.com/b/zainnab)   
- [Sada nástrojů Visual Studio na kanálu 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Visual Studio připojení chyby](http://connect.microsoft.com/VisualStudio)
+V tématu [klávesové zkratky: Visual Studio Online a sady TFS webový portál a Průzkumník týmových projektů](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+
+## <a name="see-also"></a>Viz také
+
+[Blog o sadě Visual Studio](http://blogs.msdn.com/b/visualstudio)  
+[Visual Studio tipy a triky Blog](http://blogs.msdn.com/b/zainnab)  
+[Sada nástrojů Visual Studio na kanálu 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
+[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+[Visual Studio připojení chyby](http://connect.microsoft.com/VisualStudio)

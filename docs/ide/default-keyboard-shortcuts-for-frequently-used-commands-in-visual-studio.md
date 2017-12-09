@@ -7,41 +7,33 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5839d6ca-e5ac-4468-9025-3d5ea177f19c
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ad9a9e8851d428010d7116ba94cc08ced211740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2232c2564963a236c5698e081f2bd79c76ae3bf6
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio
-Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k často používaným příkazům v sadě Visual Studio. Úplný seznam příkazů, které mají výchozí zkratky najdete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
-  
+
+Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k často používaným příkazům v sadě Visual Studio. Úplný seznam příkazů, které mají výchozí zkratky najdete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
 > [!NOTE]
->  Můžete vyhledat zástupce pro libovolný příkaz otevřením **možnosti** dialogové okno, rozšíření **prostředí** uzel a pak vyberete **klávesnice**.  
-  
- **V tomto tématu**  
-  
-||||||  
-|-|-|-|-|-|  
-|[Sestavení](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Upravit](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Projekt](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Nástroje](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Okno](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|  
-|[Ladění](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Soubor](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refaktorovat](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Zobrazení](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||  
-  
-##  <a name="bkmk_build"></a>Sestavení  
-  
+> Můžete vyhledat zástupce pro libovolný příkaz otevřením **možnosti** dialogové okno, rozšíření **prostředí** uzel a pak vyberete **klávesnice**.
+
+## <a name="build"></a>Sestavení
+
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
 |Build.BuildSolution|Ctrl+Shift+B [Global]|  
 |Build.Cancel|Ctrl+Break [Global]|  
 |Build.Compile|Ctrl+F7 [Global]|  
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Global]|  
-  
-##  <a name="bkmk_debug"></a>Ladění  
-  
+
+## <a name="debug"></a>Ladit
+
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
 |Debug.BreakatFunction|Ctrl+B [Global]|  
@@ -59,9 +51,9 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 |Debug.StepOver|F10 [globální]|  
 |Debug.StopDebugging|Shift+F5 [Global]|  
 |Debug.ToggleBreakpoint|F9 [globální]|  
-  
-##  <a name="bkmk_edit"></a>Upravit  
-  
+
+## <a name="edit"></a>Upravit
+
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
 |Edit.BreakLine|Zadejte [Text Editor, Report Designer, Windows Forms Designer]<br /><br /> nebo Shift+Enter [Text Editor]|  
@@ -110,9 +102,9 @@ dit. SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Edit.Undo|Ctrl+Z [Global]<br /><br /> nebo Alt+Backspace [Global]|  
 |Edit.WordDeleteToEnd|Ctrl+Delete [Text Editor]|  
 |Edit.WordDeleteToStart|Ctrl+Backspace [Text Editor]|  
-  
-##  <a name="bkmk_file"></a>Soubor  
-  
+
+## <a name="file"></a>Soubor
+
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
 |File.Exit|Alt+F4 [Global]|  
@@ -126,28 +118,28 @@ dit. SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |File.SaveAll|Ctrl+Shift+S [Global]|  
 |File.SaveSelectedItems|Ctrl+S [Global]|  
 |File.ViewinBrowser|Ctrl+Shift+W [Global]|  
-  
-##  <a name="bkmk_project"></a>Projekt  
-  
+
+## <a name="project"></a>Project
+
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
 |Project.AddExistingItem|Shift+Alt+A [Global]|  
 |Project.AddNewItem|Ctrl+Shift+A [Global]|  
-  
-##  <a name="bkmk_refactor"></a>Refaktorovat  
-  
+
+## <a name="refactor"></a>Refaktorovat
+
 |Příkaz|Klávesová zkratka [Context]|  
 |-------------|-----------------------------------|  
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [Global]|  
-  
-##  <a name="bkmk_tools"></a>Nástroje  
-  
+
+## <a name="tools"></a>Nástroje
+
 |Příkaz|Klávesová zkratka [Context]|  
 |-------------|-----------------------------------|  
 |Tools.AttachtoProcess|Ctrl+Alt+P [Global]|  
-  
-##  <a name="bkmk_view"></a>Zobrazení  
-  
+
+## <a name="view"></a>Zobrazit
+
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
 |View.ClassView|Ctrl+Shift+C [Global]|  
@@ -166,9 +158,9 @@ obrazit. TfsTeamExplorer|CTRL +\\, Ctrl + M [globální]|
 |View.Toolbox|Ctrl+Alt+X [Global]|  
 |View.ViewCode|Enter [Class Diagram]<br /><br /> nebo F7 [Settings Designer]|  
 |View.ViewDesigner|Shift+F7 [HTML Editor Source View]|  
-  
-##  <a name="bkmk_window"></a>Okno  
-  
+
+## <a name="window"></a>Okno
+
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
 |Window.ActivateDocumentWindow|Esc [Global]|  
@@ -176,3 +168,7 @@ obrazit. TfsTeamExplorer|CTRL +\\, Ctrl + M [globální]|
 |Window.NextDocumentWindow|Ctrl+F6 [Global]|  
 |Window.NextDocumentWindowNav|Ctrl+Tab [Global]|  
 |Window.NextSplitPane|F6 [globální]|
+
+## <a name="see-also"></a>Viz také
+
+[Identifikování a přizpůsobení klávesových zkratek v sadě Visual Studio](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)

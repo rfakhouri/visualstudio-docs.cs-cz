@@ -12,14 +12,47 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 3f5569a6f6d5bb51db61292e3ba12b16dbc201b9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Protokol změn (Visual Studio Tools for Unity)
 Visual Studio Tools for Unity změnit protokolu.  
+
+## <a name="3502"></a>3.5.0.2
+ Vydaná 2017-12-04
+
+### <a name="new-features"></a>Nové funkce  
+
+-   **Integrace:**  
+
+    -   Projekty Unity se teď při přidání nebo odebrání skriptu z Unity automaticky znovu načítají v sadě Visual Studio.
+
+-   **Ladicí program:**  
+
+    -   Přidat možnost k použití Mono ladicí program sdílí Xamarin a Visual Studio pro Mac k ladění editoru Unity.
+
+    -   Byla přidána podpora pro soubory symbolů přenosné ladění.
+
+### <a name="bug-fixes"></a>Opravy chyb  
+
+-   **Integrace:**  
+
+    -   Opravit potíže s instalací závislosti.
+
+    -   Opravené Unity API nápovědy nabídky se nezobrazují.
+    
+-   **Generování projektu:**  
+
+    -   Generování projektu pevné player při práci na UWP hry s 4.6 IL2CPP/.NET back-end.
+    
+    -   Pevné navíc .dll rozšíření neoprávněně přidat k názvu souboru sestavení.
+    
+    -   Opravené využití konkrétní projektu rozhraní API úroveň kompatibility místo globální jeden.
+    
+    -   Nevynucovat příznak AllowAttachedDebuggingOfEditor Unity jako výchozí hodnota je nyní "true".
 
 ## <a name="3402"></a>3.4.0.2
  Vydaná 2017-09-19
@@ -59,7 +92,7 @@ Visual Studio Tools for Unity změnit protokolu.
 
 -   **Generování projektu:**  
 
-    -   Opravte generování řešení sady Visual Studio na Unity 5.5 a předchozí verze.
+    -   Pevné generování řešení sady Visual Studio Unity 5.5 a předchozí verze.
 
 ## <a name="3300"></a>3.3.0.0
  Vydaná 2017-08-14

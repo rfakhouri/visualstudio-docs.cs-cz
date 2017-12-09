@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 25d3227bcf8a18a2fc6ba68c194e9cac75b2e919
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 7f91a28449ffad135058438ec767095818cc8527
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Instalační program a instalace sady Visual Studio pro Mac
 
@@ -22,7 +22,7 @@ Pro počáteční vývoj nativní, multiplatformní aplikace při existuje staž
 Pro práci s iOS v sadě Visual Studio budete potřebovat následující:
 
 * Mac s systému macOS Sierra 10.12 nebo vyšší
-* Xcode 8.3
+* Xcode 8.3 nebo vyšší. Obvykle se doporučuje nejnovější stabilní verze.
 * Apple ID. Pokud nemáte Apple ID již můžete vytvořit novou v https://appleid.apple.com. Je potřeba mít Apple ID, instalace a přihlášení k Xcode.
 
 ## <a name="install"></a>Instalace

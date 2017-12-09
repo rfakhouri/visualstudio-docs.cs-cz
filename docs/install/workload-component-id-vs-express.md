@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.openlocfilehash: e3f2a67b37d4e6ef6ad7b5e1a946847f63d12903
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 124a40e4e8f4b713e17aa05f95efccc5fcec3589
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-desktop-express-2017-workload-and-component-ids"></a>Visual Studio plochy Express 2017 pracovního vytížení a součást ID
 
@@ -44,10 +44,10 @@ Další informace o tom, jak používat tyto identifikátory najdete v tématu [
 
 ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | Publikování ClickOnce | 15.0.26919.1 | Požadováno
-Microsoft.Component.HelpViewer | Prohlížeč nápovědy | 15.0.26711.1 | Požadováno
-Microsoft.Component.MSBuild | MSBuild | 15.0.26208.0 | Požadováno
-Microsoft.Component.VC.Runtime.OSSupport | Visual C++ runtime pro UPW | 15.0.26621.2 | Požadováno
+Microsoft.Component.ClickOnce | Publikování ClickOnce | 15.0.27019.1 | Požadováno
+Microsoft.Component.HelpViewer | Prohlížeč nápovědy | 15.0.27005.2 | Požadováno
+Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Požadováno
+Microsoft.Component.VC.Runtime.OSSupport | Visual C++ runtime pro UPW | 15.0.27019.1 | Požadováno
 Microsoft.Net.Component.4.5.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.5.1 | 15.0.26621.2 | Požadováno
 Microsoft.Net.Component.4.5.2.TargetingPack | Cílovou sadu rozhraní .NET framework 4.5.2 | 15.0.26621.2 | Požadováno
 Microsoft.Net.Component.4.5.TargetingPack | Cílení na pack rozhraní .NET framework 4.5 | 15.0.26621.2 | Požadováno
@@ -55,14 +55,14 @@ Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 15.0.26
 Microsoft.Net.Component.4.6.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.6.1 | 15.0.26621.2 | Požadováno
 Microsoft.Net.Component.4.6.TargetingPack | Cílení na pack rozhraní .NET framework 4.6. | 15.0.26621.2 | Požadováno
 Microsoft.Net.Component.4.TargetingPack | Cílení na pack rozhraní .NET framework 4 | 15.0.26621.2 | Požadováno
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Nástroje pro vývoj rozhraní .NET framework 4.6.1 | 15.0.26606.0 | Požadováno
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Nástroje pro vývoj rozhraní .NET framework 4.6.1 | 15.0.27005.2 | Požadováno
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Nástroje pro vývoj rozhraní .NET framework 4 – 4.6 | 15.0.26606.0 | Požadováno
-Microsoft.VisualStudio.Component.Common.Azure.Tools | Nástroje pro připojení a publikování | 1.10.50614.2 | Požadováno
+Microsoft.VisualStudio.Component.Common.Azure.Tools | Nástroje pro připojení a publikování | 1.10.50912.1 | Požadováno
 Microsoft.VisualStudio.Component.CoreEditor | Editor základní Visual Studio | 15.0.26606.0 | Požadováno
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 nástrojů | 15.0.26208.0 | Požadováno
-Microsoft.VisualStudio.Component.NuGet | Správce balíčků NuGet | 15.0.26621.2 | Požadováno
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory jazyka C# a Visual Basic Roslyn | 15.0.26208.0 | Požadováno
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# a Visual Basic | 15.0.26711.1 | Požadováno
+Microsoft.VisualStudio.Component.NuGet | Správce balíčků NuGet | 15.0.27128.1 | Požadováno
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory jazyka C# a Visual Basic Roslyn | 15.0.27019.1 | Požadováno
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# a Visual Basic | 15.0.27019.1 | Požadováno
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL runtime | 15.0.26606.0 | Požadováno
 Microsoft.VisualStudio.Component.SQL.CLR | Datové typy CLR systému SQL Server | 15.0.26208.0 | Požadováno
 Microsoft.VisualStudio.Component.SQL.CMDUtils | Nástroje příkazového řádku systému SQL Server | 15.0.26208.0 | Požadováno
@@ -72,15 +72,15 @@ Microsoft.VisualStudio.Component.SQL.NCLI | Nativní klient SQL serveru | 15.0.2
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.0.26906.1 | Požadováno
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statické analytické nástroje | 15.0.26208.0 | Požadováno
 Microsoft.VisualStudio.Component.TextTemplating | Transformace textové šablony | 15.0.26208.0 | Požadováno
-Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI podpory | 15.0.26823.1 | Požadováno
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilátory jazyka Visual C++ a knihovny pro ARM | 15.0.26906.1 | Požadováno
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilátory jazyka Visual C++ a knihovny pro ARM64 | 15.0.26906.1 | Požadováno
+Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI podpory | 15.0.27019.1 | Požadováno
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilátory jazyka Visual C++ a knihovny pro ARM | 15.0.27019.1 | Požadováno
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilátory jazyka Visual C++ a knihovny pro ARM64 | 15.0.27019.1 | Požadováno
 Microsoft.VisualStudio.Component.VisualStudioData | Zdroje dat a odkazy na službu | 15.0.26208.0 | Požadováno
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.0.26208.0 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) pro plochy C++ [x86 a x64] | 15.0.27004.2002 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) pro plochy C++ [ARM a ARM64] | 15.0.27004.2002 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.0.27004.2002 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) pro UPW: C++ | 15.0.27004.2002 | Požadováno
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) pro plochy C++ [x86 a x64] | 15.0.27128.1 | Požadováno
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) pro plochy C++ [ARM a ARM64] | 15.0.27128.1 | Požadováno
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.0.27128.1 | Požadováno
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) pro UPW: C++ | 15.0.27128.1 | Požadováno
 
 ## <a name="unaffiliated-components"></a>Nezávislou na komponenty
 
@@ -101,8 +101,8 @@ Tady je několik další možnosti podpory:
 
 ## <a name="see-also"></a>Viz také
 
-* [ID úlohy a součást Visual Studio](workload-and-component-ids.md)
+* [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)
 * [Příručka správce Visual Studio](visual-studio-administrator-guide.md)
-* [Používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Příklady parametr příkazového řádku](command-line-parameter-examples.md)
+* [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
+  * [Příklady parametrů příkazového řádku](command-line-parameter-examples.md)
 * [Vytvoření offline instalace sady Visual Studio](create-an-offline-installation-of-visual-studio.md)

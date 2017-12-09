@@ -11,15 +11,15 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49a42bdc9f8ec979e47f0977abdf36f614141c89
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: e9ae492d7fc4d110c6e5015c782f97a2561c8bd8
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Přizpůsobení sady Visual Studio IDE
 
-Visual Studio si můžete přizpůsobit v různé způsoby, jak nejlépe podporují vlastní styl vývoj a požadavky. Řadu nastavení mohla používat s vámi napříč instancemi Visual Studio &mdash; najdete v části [synchronizovat nastavení](../ide/synchronized-settings-in-visual-studio.md). Toto téma stručně popisuje různé přizpůsobení a kde můžete najít další informace.
+Visual Studio si můžete přizpůsobit v různé způsoby, jak nejlépe podporují vlastní styl vývoj a požadavky. Řadu nastavení mohla používat s vámi napříč instancemi Visual Studio&mdash;najdete v části [synchronizovat nastavení](../ide/synchronized-settings-in-visual-studio.md). Toto téma stručně popisuje různé přizpůsobení a kde můžete najít další informace.
 
 ## <a name="general-environment-options"></a>Možnosti Obecné prostředí
 

@@ -1,31 +1,30 @@
 ---
 title: R Markdownu s R Tools pro sadu Visual Studio | Microsoft Docs
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 11/16/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3ac955b2-b6e1-4d32-b1a4-2882c93311fc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e3d9ee899c9ed82cacfd9466412bacfea6b8c5e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ed9a2c71807af604e83459299a4d7ec58dfedbe5
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="creating-r-markdown-documents"></a>Vytváření dokumentů R Markdownu
 
 [R Markdownu](https://rmarkdown.rstudio.com/) je dokument formátu, který se zobrazí analýzy v R vysoce kvalitní dokumentů, sestav, prezentací a řídicí panely.
 
-R nástrojů pro Visual Studio (RTVS) poskytuje šablony položky R Markdownu, editor podpory (včetně IntelliSense pro R kódu v editoru) a možnosti generování souboru.
+R Tools pro Visual Studio (RTVS) poskytuje šablony položky R Markdownu, editor podporují (včetně IntelliSense pro R kódu v editoru), možnosti generování souboru a live preview.
 
-Využití formátu R Markdown:
+## <a name="using-r-markdown"></a>Pomocí Markdownu R
 
 1. Zavřete Visual Studio.
 1. (Pouze jednou) Nainstalujte `pandoc` z [pandoc.org](http://pandoc.org/installing.html).
@@ -37,7 +36,7 @@ Využití formátu R Markdown:
     install.packages("rmarkdown")
 
     ```
-1. Vytvoření nového souboru Markdownu R buď pomocí **soubor > Nový** příkazu v nabídce a výběrem **R Markdownu** ze seznamu, nebo kliknutím pravým tlačítkem myši na projekt v Průzkumníku řešení a výběrem **přidat R Markdown** (nebo **Přidat > novou položku...**  a výběrem **R Markdownu** ze seznamu).
+1. Vytvoření nového souboru Markdownu R pomocí **soubor > Nový > soubor** příkazu v nabídce a výběrem **R > R Markdownu** ze seznamu. V kontextu projektu, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a vyberte **přidat Markdownu R** (nebo **Přidat > novou položku...**  a výběrem **R Markdownu** ze seznamu).
 
 1. Výchozí hodnotou tohoto nového souboru jsou následující:
 
@@ -46,23 +45,29 @@ Využití formátu R Markdown:
     title: "Untitled"
     output: html_document
     ---
-    
+
     This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and Microsoft Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-    
+
     When you click the **R Tools | Publish | Preview** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-    
+
     ```{r}
     summary(cars)
     ```
-    
+
     You can also embed plots, for example:
-    
+
     ```{r, echo=FALSE}
     plot(cars)
     ```
-    
+
     Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-    
+
     ~~~
 
-1. V průběhu úprav, klikněte pravým tlačítkem v editoru a vyberte **Preview**, který má možnosti jazyka HTML, PDF a Microsoft Word. Z této verze preview můžete uložit soubor jako vhodný pro formát, který jste zvolili.
+## <a name="previews"></a>Preview verze
+
+Visual Studio 2017 verze 15,5 a novější automaticky získávat živém náhledu pro R Markdownu. Chcete-li zapnout automatickou synchronizaci mezi editoru a ve verzi preview, vyberte **R nástroje > Markdown > automatické synchronizace** (Ctrl + Shift + Y). Pokud nepoužíváte automatické synchronizace, můžete obnovit pomocí preview **R nástroje > Markdown > Náhled Markdownu R opětovného načtení**.
+
+Můžete také zobrazit náhled souboru ve formátu HTML, PDF, a aplikace Microsoft Word formátuje v editoru pravým tlačítkem myši a výběrem jedné z **Preview** příkazy. Stejné příkazy jsou také k dispozici na **R nástroje > Markdown** nabídky. (V dřívějších verzích sady Visual Studio tyto příkazy se nacházejí na **R nástroje > Publikovat** nabídky.)
+
+![RMarkdown živém náhledu a další příkazy nabídky preview](media/rmarkdown-live-preview.png)

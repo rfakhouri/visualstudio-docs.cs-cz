@@ -1,6 +1,6 @@
 ---
 title: "Ladění aplikací za provozu technologie ASP.NET Azure – Visual Studio | Microsoft Docs"
-ms.date: 11/13/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění za provozu aplikací ASP.NET Azure pomocí snímku ladicí program
 
@@ -33,7 +33,7 @@ Kromě toho ladicí program snímku je dostupná jenom pro Visual Studio Enterpr
 
 ## <a name="start-the-snapshot-debugger"></a>Spuštění ladicího programu snímku
 
-1. Nainstalujte [Visual Studio Enterprise 15,5 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) nebo novější. Při aktualizaci z předchozí verze preview Visual Studio 2017, spusťte instalační program Visual Studio a zkontrolujte ladicí program snímku součástí technologie ASP.NET a webové úlohy vývoj.
+1. Nainstalujte [Visual Studio Enterprise 2017 verze 15,5](https://www.visualstudio.com/downloads/) nebo novější. Při aktualizaci z předchozí instalace Visual Studio 2017, spusťte instalační program Visual Studio a zkontrolujte ladicí program snímku součástí technologie ASP.NET a webové úlohy vývoj.
 
 2. Otevřete projekt, který chcete snímek ladění. 
 

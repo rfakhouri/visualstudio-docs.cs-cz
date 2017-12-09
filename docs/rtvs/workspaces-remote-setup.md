@@ -1,36 +1,35 @@
 ---
 title: "Vzdálené pracovní prostory s R Tools pro sadu Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/30/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5778c9cf-564d-47b0-8d64-e5dc09162479
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: aaea147589f274a5b3e1de4071f980b05e8f6745
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d36f49a9b2865c89bd1551ded0d23cf541ff7840
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="setting-up-remote-workspaces"></a>Nastavení vzdálené pracovní prostory
 
-Toto téma vysvětluje postup konfigurace vzdáleného serveru pomocí protokolu SSL a příslušné službě R. To umožňuje R nástrojů pro Visual Studio (RTVS) pro připojení k vzdálené prostoru na tomto serveru. 
+Toto téma vysvětluje postup konfigurace vzdáleného serveru pomocí protokolu SSL a příslušné službě R. To umožňuje R nástrojů pro Visual Studio (RTVS) pro připojení k vzdálené prostoru na tomto serveru.
 
 - [Požadavky na vzdáleném počítači](#remote-computer-requirements)
 - [Nainstalujte certifikát SSL](#install-an-ssl-certificate)
 - [Nainstalujte certifikát SSL v systému Windows](#install-an-ssl-certificate-on-windows)
 - [Na Ubuntu nainstalovat certifikát SSL](#install-an-ssl-certificate-on-ubuntu)
 - [Nainstalujte R služby v systému Windows](#install-r-services-on-windows)
-- [Nainstalujte na Ubuntu R služby](#install-r-services-on-ubuntu)
+- [Nainstalujte R služby v systému Linux](#install-r-services-on-Linux)
 - [Konfigurace služby R](#configure-r-services)
-- [Řešení potíží](#troubleshooting)
+- [Odstraňování potíží](#troubleshooting)
 
 ## <a name="remote-computer-requirements"></a>Požadavky na vzdáleném počítači
 
@@ -50,9 +49,10 @@ Klíčové pole, která musí být v certifikátu je plně kvalifikovaný název
 Pro další informace viz [certifikáty s veřejným klíčem](https://en.wikipedia.org/wiki/Public_key_certificate) na webu Wikipedia.
 
 ## <a name="install-an-ssl-certificate-on-windows"></a>Nainstalujte certifikát SSL v systému Windows
+
 Certifikát SSL musí být nainstalován ručně na systému windows. Postupujte podle pokynů k instalaci certifikátu protokolu SSL.
 
-### <a name="obtaining-a-self-signed-certificate"></a>Získat certifikát podepsaný svým držitelem
+### <a name="obtaining-a-self-signed-certificate-windows"></a>Získat certifikát podepsaný svým držitelem (Windows)
 
 Tuto část přeskočte, pokud máte důvěryhodných certifikátů. Porovnání s certifikát od důvěryhodné autority, jako je vytváření identifikační karty pro sami je certifikát podepsaný svým držitelem. Tento proces je, kurzu mnohem jednodušší než práce s důvěryhodnou autoritou, ale také chybí silné ověřování, což znamená, že útočník můžete nahradit vlastní certifikát pro certifikát bez znaménka zaznamenat veškerý síťový provoz mezi klientem a Server. Proto *certifikát podepsaný svým držitelem by se používat pouze pro testování scénářů, v důvěryhodné síti a nikdy v produkčním prostředí.*
 
@@ -83,7 +83,6 @@ Pokud chcete nainstalovat certifikát na vzdáleném počítači, spusťte `cert
 
 ![Příkaz Import certifikátu](media/workspaces-remote-certificate-import.png)
 
-
 ### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Udělení oprávnění ke čtení privátní klíč certifikátu SSL
 
 Jakmile je certifikát importován, udělte `NETWORK SERVICE` účet oprávnění ke čtení privátní klíč, jak je popsáno v následujících pokynech. `NETWORK_SERVICE`slouží ke spouštění zprostředkovatel služby R, což je služba, která ukončí příchozí připojení SSL k počítači serveru k účtu.
@@ -98,23 +97,25 @@ Jakmile je certifikát importován, udělte `NETWORK SERVICE` účet oprávněn�
 1. Vyberte **OK** dvakrát k zavření v dialogových oknech a potvrďte změny.
 
 ## <a name="install-an-ssl-certificate-on-ubuntu"></a>Na Ubuntu nainstalovat certifikát SSL
+
 `rtvs-daemon` Balíček nainstaluje certifikát podepsaný svým držitelem ve výchozím nastavení jako součást instalace.
 
-### <a name="obtaining-a-self-signed-certificate"></a>Získat certifikát podepsaný svým držitelem
+### <a name="obtaining-a-self-signed-certificate-ubuntu"></a>Získat certifikát podepsaný svým držitelem (Ubuntu)
 
 Naleznete v popisu windows výhod a rizik použití certifikátu podepsaného svým držitelem. `rtvs-daemon` Balíček generuje a nakonfiguruje certifikát podepsaný sám sebou během instalace. Musíte provést pouze v případě, že chcete nahradit automaticky vygeneruje certifikát podepsaný svým držitelem.
 
 K vydání svým certifikátu podepsaného držitelem sami:
 1. SSH nebo přihlášení k počítači systému linux.
-2. Nainstalujte `ssl-cert` balíčku:
+
+1. Nainstalujte `ssl-cert` balíčku:
     ```sh
     sudo apt-get install ssl-cert
     ```
-3. Spustit `make-ssl-cert` k vygenerování certifikátu SSL podepsaného výchozí:
+1. Spustit `make-ssl-cert` k vygenerování certifikátu SSL podepsaného výchozí:
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-4. Generovaný klíč a soubory PEM převeďte PFX. Vygenerovaný soubor PFX musí být ve vaší domovské složky:
+1. Generovaný klíč a soubory PEM převeďte PFX. Vygenerovaný soubor PFX musí být ve vaší domovské složky:
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -137,7 +138,7 @@ Cesta k souboru certifikátu protokolu SSL (cesta k PFX) musí být nastavena v 
     ```
 
 Uložte tento soubor a restartujte démona, `sudo systemctl restart rtvsd`.
-    
+
 ## <a name="install-r-services-on-windows"></a>Nainstalujte R služby v systému Windows
 
 Pokud chcete spustit kódu jazyka R, musí mít vzdálený počítač R překladač nainstalovat následujícím způsobem:
@@ -161,9 +162,9 @@ R služby spustit automaticky při restartování počítače:
 - **Služba Service Broker hostitele R** zpracovává všechny přenosy HTTPS mezi proces a Visual Studio, kde kód R spouští v počítači.
 - **Služba profil uživatele R** je privilegované komponenty, která zpracovává vytvoření profilu uživatele systému Windows. Služba je volána, když nový uživatel poprvé přihlásí k počítači serveru R.
 
-Zobrazí se tyto služby v konzole pro správu služeb (`compmgmt.msc`).  
+Zobrazí se tyto služby v konzole pro správu služeb (`compmgmt.msc`).
 
-## <a name="install-r-services-on-ubuntu"></a>Nainstalujte na Ubuntu R služby
+## <a name="install-r-services-on-linux"></a>Nainstalujte R služby v systému Linux
 
 Pokud chcete spustit kódu jazyka R, musí mít vzdálený počítač R překladač nainstalovat následujícím způsobem:
 
@@ -174,29 +175,18 @@ Pokud chcete spustit kódu jazyka R, musí mít vzdálený počítač R překlad
 
     Oba mají stejné funkce, ale Microsoft R otevřete výhody z další hardware accelerated lineární algebra knihovny laskavým svolením [Intel matematické jádra knihovny](https://software.intel.com/intel-mkl).
 
-1. Stáhnout, extrahujte a spusťte instalační skript [RTVS démon balíček](https://aka.ms/r-remote-services-linux-binary-current). To nainstalujte požadované balíčky, jejich závislosti a démon RTVS:
-
-    - Stáhnout:`wget -O rtvs-daemon.tar.gz https://aka.ms/rtvs-daemon-current`
-    - Extrahujte:`tar -xvzf rtvs-daemon.tar.gz`
-    - Spusťte instalační program: `sudo ./rtvs-install` . Instalace balíčku DotNet vyžaduje nám přidat nový podpisový klíč důvěryhodné. Pro tichou instalaci, nebo pro automatizaci použít tento příkaz `sudo ./rtvs-install -s`.
-    
-
-1. Zapnutí a spuštění démona:
-
-    - Povolení:`sudo systemctl enable rtvsd`
-    - Démon procesu spuštění:`sudo systemctl start rtvsd`
-
-1. Zkontrolujte, zda je spuštěn démon, spusťte tento příkaz `ps -A -f | grep rtvsd`. Měli byste vidět proces, který běží jako `rtvssvc` uživatele. Teď by měla být možné se připojit k tomuto z R nástrojů pro visual Studio, suing adresu url pro tento počítač linux.
-
-Ke konfiguraci `rtvs-daemon`, najdete v části `man rtvsd`.
+1. Postupujte podle pokynů [vzdálené služby R pro Linux](workspaces-remote-r-service-for-linux.md), který obsahuje fyzické počítače Ubuntu virtuálních počítačích Azure Ubuntu, subsystému Windows pro Linux (WSL) a Docker kontejnery, včetně těch, které spuštěné v kontejneru úložiště Azure.
 
 ## <a name="configure-r-services"></a>Konfigurace služby R
 
 S R služby spuštěné na vzdáleném počítači můžete také potřebovat vytvořit uživatelské účty, nastavte pravidla brány firewall, konfigurace sítí Azure a nakonfigurovat certifikát SSL.
 
 1. Uživatelských účtů: vytvoření účtů pro každého uživatele, který má přístup k vzdálenému počítači. Můžete vytvořit buď standardní (bez oprávnění) místní uživatelské účty, nebo můžete připojení počítače R server k vaší doméně a přidat do příslušných skupin zabezpečení k `Users` skupiny zabezpečení.
+
 1. Pravidla brány firewall: ve výchozím nastavení, `R Host Broker` naslouchá na portu TCP 5444. Proto se ujistěte, že jsou povolené pro příchozí a odchozí přenosy pravidla brány firewall systému Windows (odchozí je vyžadována pro instalaci balíčků a podobné scénáře).  Instalační program služby R Nastaví tato pravidla automaticky pro předdefinované bránu Windows firewall. Pokud používáte bránu firewall jiného výrobce, ale otevřít port 5444 pro `R Host Broker` ručně.
+
 1. Konfigurace Azure: Pokud vzdálený počítač je virtuální počítač na platformě Azure, otevřete port 5444 pro příchozí provoz v rámci Azure sítě jako dobře, která je nezávislá brány Windows Firewall. Podrobnosti najdete v tématu [filtrování provozu sítě s skupinu zabezpečení sítě](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) v dokumentaci k Azure.
+
 1. Řekněte zprostředkovatele hostitele R načíst certifikát SSL, které: Pokud instalujete certifikát na intranetový server, je pravděpodobné, že plně kvalifikovaný název domény serveru je stejná jako její název pro rozhraní NETBIOS. V takovém případě není nic, je třeba provést, protože to je výchozí certifikát, který je načten.
 
     Ale pokud nainstalujete certifikát na straně Internetu serveru (například virtuální počítač Azure), použijte plně kvalifikovaný název domény (FQDN) serveru, protože je plně kvalifikovaný název domény internetového serveru nikdy stejná jako její název pro rozhraní NETBIOS.
@@ -224,18 +214,19 @@ Zkuste příkazem ping otestovat vzdáleného počítače z příkazového řád
 
 Existují tři možné důvody:
 
--   [Rozhraní .NET framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49981) nebo vyšší není nainstalován v počítači.
--   Brány firewall pravidla pro `Microsoft.R.Host.Broker` a `Microsoft.R.Host` pro příchozí a odchozí připojení na portu 5444 není povolen.
--   Certifikát SSL s `CN=<remote-machine-name>` nebyl nainstalován.
+- [Rozhraní .NET framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49981) nebo vyšší není nainstalován v počítači.
+- Brány firewall pravidla pro `Microsoft.R.Host.Broker` a `Microsoft.R.Host` pro příchozí a odchozí připojení na portu 5444 není povolen.
+- Certifikát SSL s `CN=<remote-machine-name>` nebyl nainstalován.
 
-Restartujte počítač po změnách výše. Potom zkontrolujte, zda `RHostBrokerService` a `RUserPofileService` běží prostřednictvím buď Správce úloh (kartě služeb) nebo `services.msc`.
+Restartujte počítač po změnách výše. Potom zkontrolujte, zda `RHostBrokerService` a `RUserProfileService` běží prostřednictvím buď Správce úloh (kartě služeb) nebo `services.msc`.
 
 **OTÁZKY. Proč interaktivních okna R říká "401 Přístup odepřen" při připojování k serveru R?**
 
 Existují dvě možné příčiny:
 
 - Je velmi pravděpodobné, který `NETWORK SERVICE` účet nemá přístup k privátnímu klíči certifikátu protokolu SSL. Podle předchozích pokynů udělit `NETWORK SERVICE` přístup k privátnímu klíči.
-- Ujistěte se, že `seclogon` se službou. Použití `services.msc` konfigurace `seclogon` na automatické spouštění.                                                         
+- Ujistěte se, že `seclogon` se službou. Použití `services.msc` konfigurace `seclogon` na automatické spouštění.
+
 **OTÁZKY. Proč interaktivních okna R říká "404 nebyl nalezen" při připojování k serveru R?**
 
 Tato chyba je pravděpodobně z důvodu chybějícího knihovny jazyka Visual C++ redistributable. Zkontrolujte interaktivní okno R a zobrazit, pokud je zpráva týkající se chybějící library(DLL). Potom zkontrolujte, zda VS 2015 redistributable je nainstalován, a zda máte R nainstalované také.

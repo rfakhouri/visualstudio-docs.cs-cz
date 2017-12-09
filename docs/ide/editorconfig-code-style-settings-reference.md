@@ -1,7 +1,7 @@
 ---
 title: "Kódování nastavení konvence pro EditorConfig rozhraní .NET | Microsoft Docs"
 ms.custom: 
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -14,17 +14,15 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
-ms.assetid: 
-caps.latest.revision: "1"
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 25db1488faef4ddb54af9831bee7ccd3d8479f76
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e6ce48d060e340076b336083cb73bdd8145fc1a0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kódování nastavení konvence pro EditorConfig rozhraní .NET
 
@@ -283,9 +281,9 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programova
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Podporovaná verze |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members: žádné | Visual Studio 2017 verze 15,5 |
-| csharp_preferred_modifier_order | IDE0036 | C# | veřejné, privátní, chráněné, interní, statické, extern, nové, virtuální, abstraktní a uzavřené, přepsání, jen pro čtení, unsafe, volatile, asynchronní: žádné | Visual Studio 2017 verze 15,5 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom, Asynchronní: žádné | Visual Studio 2017 verze 15,5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members: žádné | Visual Studio 2017 v. 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | veřejné, privátní, chráněné, interní, statické, extern, nové, virtuální, abstraktní a uzavřené, přepsání, jen pro čtení, unsafe, volatile, asynchronní: žádné | Visual Studio 2017 v. 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, výchozí, privátní, chráněný, veřejné, přítele, NotOverridable, přepisovatelné, MustOverride, přetížení, přepsání, MustInherit, NotInheritable, statické, sdílené, stínů, jen pro čtení, WriteOnly, dimenze, Const, WithEvents, rozšíření, zužující, vlastní, Asynchronní: žádné | Visual Studio 2017 v. 15.5 |
 
 **DotNet\_styl\_vyžadují\_accessibility_modifiers**  
 Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:  
@@ -293,7 +291,7 @@ Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijím
 | Hodnota | Popis |
 | ----- |:----------- |
 | Vždy | Modifikátory accessbility zadat raději |
-| for_non_interface_members | Dáváte přednost modifikátory dostupnosti deklarovat s výjimkou veřejné rozhraní členy. To nebude aktuálně lišit od **vždy** a bude fungovat jako budoucí kontroly pravopisu systému pro Pokud C# přidá výchozí metody rozhraní. |
+| pro\_bez\_interface_members | Dáváte přednost modifikátory dostupnosti deklarovat s výjimkou veřejné rozhraní členy. To nebude aktuálně lišit od **vždy** a bude fungovat jako budoucí kontroly pravopisu systému pro Pokud C# přidá výchozí metody rozhraní. |
 | Nikdy | Není dáváte přednost modifikátory dostupnosti zadat | 
 
 Příklady kódu:  
@@ -577,126 +575,126 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, příslušné jazyk
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Podporovaná verze |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 + | Nikdy: žádné | Visual Studio 2017 verze 15.3 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | Nikdy: žádné | Visual Studio 2017 verze 15.3 |
-| csharp_style_expression_bodied_operators | IDE0023 a IDE0024 | C# 7.0 + | Nikdy: žádné | Visual Studio 2017 verze 15.3 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 + | when_possible: žádné | Visual Studio 2017 verze 15.3 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 + | when_possible: žádné | Visual Studio 2017 verze 15.3 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 + | when_possible: žádné | Visual Studio 2017 verze 15.3 |  
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 + | FALSE: žádné | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | FALSE: žádné | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 a IDE0024 | C# 7.0 + | FALSE: žádné | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0 + | hodnotu true: žádné | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 + | hodnotu true: žádné | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 + | hodnotu true: žádné | Visual Studio 2017 v. 15.3 |  
 
 **CSharp\_styl\_výraz\_bodied_methods**  
-Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:  
+Toto pravidlo je možné zadat hodnoty z v následující tabulce:  
 
 | Hodnota | Popis |
 | ----- |:----------- |
-| when_possible | Dáváte přednost výraz vozidlo členy pro metody |
+| true | Dáváte přednost výraz vozidlo členy pro metody |
 | when_on_single_line | Dáváte přednost výraz vozidlo členy pro metody, když bude jeden řádek |
-| Nikdy | Dáváte přednost bloku těla metody | 
+| false | Dáváte přednost bloku těla metody | 
 
 Příklady kódu:  
 
 ```csharp
-// csharp_style_expression_bodied_methods = when_possible
+// csharp_style_expression_bodied_methods = true
 public int GetAge() => this.Age;
 
-// csharp_style_expression_bodied_methods = never
+// csharp_style_expression_bodied_methods = false
 public int GetAge() { return this.Age; }
 ```  
 
 **CSharp\_styl\_výraz\_bodied_constructors**  
-Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:  
+Toto pravidlo je možné zadat hodnoty z v následující tabulce:   
 
 | Hodnota | Popis |
 | ----- |:----------- |
-| when_possible | Dáváte přednost výraz vozidlo členy pro konstruktory |
+| true | Dáváte přednost výraz vozidlo členy pro konstruktory |
 | when_on_single_line | Dáváte přednost výraz vozidlo členy pro konstruktory, když bude jeden řádek |
-| Nikdy | Dáváte přednost těla bloku pro konstruktory |  
+| false | Dáváte přednost těla bloku pro konstruktory |  
 
 Příklady kódu:  
 
 ```csharp
-// csharp_style_expression_bodied_constructors = when_possible
+// csharp_style_expression_bodied_constructors = true
 public Customer(int age) => Age = age;
 
-// csharp_style_expression_bodied_constructors = never
+// csharp_style_expression_bodied_constructors = false
 public Customer(int age) { Age = age; }
 ```  
 
 **CSharp\_styl\_výraz\_bodied_operators**  
-Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:  
+Toto pravidlo je možné zadat hodnoty z v následující tabulce:    
 
 | Hodnota | Popis |
 | ----- |:----------- |
-| when_possible | Dáváte přednost výraz vozidlo členy pro operátory |
+| true | Dáváte přednost výraz vozidlo členy pro operátory |
 | when_on_single_line | Dáváte přednost výraz vozidlo členy pro operátory, když bude jeden řádek |
-| Nikdy | Dáváte přednost těla bloku pro operátory |  
+| false | Dáváte přednost těla bloku pro operátory |  
 
 Příklady kódu:  
 
 ```csharp
-// csharp_style_expression_bodied_operators = when_possible
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = true
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
     => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
 
-// csharp_style_expression_bodied_operators = never
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = false
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```  
 
 **CSharp\_styl\_výraz\_bodied_properties**  
-Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:  
+Toto pravidlo je možné zadat hodnoty z v následující tabulce:   
 
 | Hodnota | Popis |
 | ----- |:----------- |
-| when_possible | Dáváte přednost výraz vozidlo členy pro vlastnosti |
+| true | Dáváte přednost výraz vozidlo členy pro vlastnosti |
 | when_on_single_line | Dáváte přednost výraz vozidlo členy pro vlastnosti, když bude jeden řádek |
-| Nikdy | Dáváte přednost těla bloku pro vlastnosti |  
+| false | Dáváte přednost těla bloku pro vlastnosti |  
 
 Příklady kódu:  
 
 ```csharp
-// csharp_style_expression_bodied_properties = when_possible
+// csharp_style_expression_bodied_properties = true
 public int Age => _age;
 
-// csharp_style_expression_bodied_properties = never
+// csharp_style_expression_bodied_properties = false
 public int Age { get { return _age; }}
 ```  
 
 **CSharp\_styl\_výraz\_bodied_indexers**  
-Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:  
+Toto pravidlo je možné zadat hodnoty z v následující tabulce:  
 
 | Hodnota | Popis |
 | ----- |:----------- |
-| when_possible | Dáváte přednost výraz vozidlo členy pro indexery |
+| true | Dáváte přednost výraz vozidlo členy pro indexery |
 | when_on_single_line | Dáváte přednost výraz vozidlo členy pro indexery, když bude jeden řádek |
-| Nikdy | Dáváte přednost těla bloku pro indexery | 
+| false | Dáváte přednost těla bloku pro indexery | 
 
 Příklady kódu:  
 
 ```csharp
-// csharp_style_expression_bodied_indexers = when_possible
+// csharp_style_expression_bodied_indexers = true
 public T this[int i] => _value[i];
 
-// csharp_style_expression_bodied_indexers = never
+// csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }
 ```  
 
 **CSharp\_styl\_výraz\_bodied_accessors**  
-Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:  
+Toto pravidlo je možné zadat hodnoty z v následující tabulce:   
 
 | Hodnota | Popis |
 | ----- |:----------- |
-| when_possible | Dáváte přednost výraz vozidlo členy pro přistupující objekty |
+| true | Dáváte přednost výraz vozidlo členy pro přistupující objekty |
 | when_on_single_line | Dáváte přednost výraz vozidlo členy pro přistupující objekty, když bude jeden řádek |
-| Nikdy | Dáváte přednost těla bloku pro přistupující objekty | 
+| false | Dáváte přednost těla bloku pro přistupující objekty | 
 
 Příklady kódu:  
 
 ```csharp
-// csharp_style_expression_bodied_accessors = when_possible
+// csharp_style_expression_bodied_accessors = true
 public int Age { get => _age; set => _age = value; }
 
-// csharp_style_expression_bodied_accessors = never
+// csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
 ```  
 
@@ -705,12 +703,12 @@ Příklad souboru .editorconfig:
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = never:none
-csharp_style_expression_bodied_constructors = never:none
-csharp_style_expression_bodied_operators = never:none
-csharp_style_expression_bodied_properties = when_possible:suggestion
-csharp_style_expression_bodied_indexers = when_possible:suggestion
-csharp_style_expression_bodied_accessors = when_possible:suggestion
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
 ```  
 
 #### <a name="pattern_matching">Shoda vzoru</a>

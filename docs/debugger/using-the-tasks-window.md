@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4eab796f0a3c6a7148c94e780439a727ee6fe450
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-tasks-window"></a>Používání okna úloh
 **Úlohy** okno vypadá takto: **vláken** okno, s výjimkou toho, které se zobrazují informace o <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](/cpp/parallel/concrt/reference/task-group-class.md), nebo [WinJS.Promise ](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) objekty místo každé vlákno. Jako vláken úlohy představují asynchronních operací, které můžou běžet souběžně; Při spuštění ve stejném vlákně, ale může několika úloh. 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/11/2017
   
  V nativním kódu, můžete použít **úlohy** okno při práci s [úkolů skupiny](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralelní algoritmy](/cpp/parallel/concrt/parallel-algorithms), [asynchronních agentů](/cpp/parallel/concrt/asynchronous-agents), a [prosté úlohy](/cpp/parallel/concrt/task-scheduler-concurrency-runtime). Další informace o úlohách v nativním kódu najdete v tématu [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime).  
   
- V jazyce JavaScript můžete použít okno úlohy při práci s kódem .potom promise. V tématu [asynchronní programování v jazyce JavaScript (aplikace pro UPW)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Další informace.   
+ V jazyce JavaScript, můžete použít okno úlohy při práci s promise `.then` kódu. V tématu [asynchronní programování v jazyce JavaScript (aplikace pro UPW)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) Další informace.   
   
  Můžete použít **úlohy** okně vždy, když rozdělit ladicího programu. Je k dispozici na **ladění** nabídky kliknutím **Windows** a pak levým na **úlohy**. Následující obrázek ukazuje **úlohy** okno v jeho výchozí režim.  
   
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/11/2017
 |**Příznaky**|Zobrazuje úkoly, které jsou označeny a umožňuje příznak nebo odstranění označení úlohu.|  
 |**Ikony**|Žlutá šipka označuje aktuální úlohy. Aktuální úloha je na nejvyšší úrovni na aktuální vlákno.<br /><br /> Bílé šipka označuje ukončování úlohy, který je ten, který byl aktuální v době byla vyvolána ladicího programu.<br /><br /> Ikona pozastavení označuje úlohu, která má byly pozastaveny uživatelem. Můžete ukotvení a uvolnění úlohy kliknutím pravým tlačítkem myši v seznamu.|  
 |**ID**|Poskytované systémem číslo pro úlohu. V nativním kódu jde o adresu úlohy.|  
-|**Stav**|Aktuální stav (naplánované, aktivní, zablokovaných, čekání nebo dokončené) úlohy. Naplánované úlohy je ten, který dosud nebyla spuštěna a proto ještě nemá zásobníku volání, přiřazené vlákno nebo související informace.<br /><br /> Aktivní úkol je ten, který byl před porušením v ladicím programu provádění kódu.<br /><br /> Úloha čekání je ten, který je zablokovaný, protože se čeká na signál události, zámek k uvolnění nebo na dokončení jiné úlohy.<br /><br /> Zablokovaných úloha je čekání úlohy, jejichž vlákno je zablokována s jiné vlákno.<br /><br /> Najeďte myší **stav** buňky zablokovaných nebo čekání úlohy zobrazíte další informace o bloku. **Upozornění:** **úlohy** okno sestavy zablokování pouze pro blokované úlohu, která používá primitivní synchronizace, která je podporována počkejte Traversal řetězu (WCT). Například pro zablokovaných <xref:System.Threading.Tasks.Task> objekt, který používá WCT, sestavy ladicího programu **zablokována čekání**. Pro zablokovaných úkol, který je spravován nástrojem Concurrency Runtime, který nepoužívá WCT, ladicího programu sestavy **čekání**. Další informace o WCT najdete v tématu [počkejte Traversal řetězu](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
+|**Status**|Aktuální stav (naplánované, aktivní, zablokovaných, čekání nebo dokončené) úlohy. Naplánované úlohy je ten, který dosud nebyla spuštěna a proto ještě nemá zásobníku volání, přiřazené vlákno nebo související informace.<br /><br /> Aktivní úkol je ten, který byl před porušením v ladicím programu provádění kódu.<br /><br /> Úloha čekání je ten, který je zablokovaný, protože se čeká na signál události, zámek k uvolnění nebo na dokončení jiné úlohy.<br /><br /> Zablokovaných úloha je čekání úlohy, jejichž vlákno je zablokována s jiné vlákno.<br /><br /> Najeďte myší **stav** buňky zablokovaných nebo čekání úlohy zobrazíte další informace o bloku. **Upozornění:** **úlohy** okno sestavy zablokování pouze pro blokované úlohu, která používá primitivní synchronizace, která je podporována počkejte Traversal řetězu (WCT). Například pro zablokovaných <xref:System.Threading.Tasks.Task> objekt, který používá WCT, sestavy ladicího programu **zablokována čekání**. Pro zablokovaných úkol, který je spravován nástrojem Concurrency Runtime, který nepoužívá WCT, ladicího programu sestavy **čekání**. Další informace o WCT najdete v tématu [počkejte Traversal řetězu](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Čas spuštění**|Čas, kdy jsou aktivní úlohy.|  
 |**Doba trvání**|Počet sekund, po které byl aktivní úlohy.|  
 |**Čas dokončení**|Čas, kdy je úloha dokončena.|  

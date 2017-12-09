@@ -12,14 +12,14 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6e71a7cc3200de9570ee0545bbc60e59943a693
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012
-Funkce Rozšířené zabezpečení od verze Windows 8 a Windows Server 2012 požadované významné změny v nástroje pro sledování výkonu sady Visual Studio způsob shromažďování dat na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. Toto téma popisuje změny pro spouštění onWindows 8 a Windows Server 2012 platformy nástroje pro sledování výkonu.
+Funkce Rozšířené zabezpečení od verze Windows 8 a Windows Server 2012 požadované významné změny v nástroje pro sledování výkonu sady Visual Studio způsob shromažďování dat na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. Toto téma popisuje změny pro spouštění na platformy Windows 8 a Windows Server 2012 nástroje pro sledování výkonu.
   
 > [!NOTE]
 >  Nástroje pro sledování výkonu pro jiné podporované verze systému Windows (Windows 7, Windows Server 2008 R2) nezměnily.
@@ -56,9 +56,9 @@ Funkce Rozšířené zabezpečení od verze Windows 8 a Windows Server 2012 pož
   
  Další informace o vytváření profilů aplikací UWP najdete v následujících tématech:  
   
- [Spuštění aplikace UWP v místním počítači](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+ [Spouštění aplikací pro UWP v místním počítači](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [Spuštění aplikace UWP ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+ [Spouštění aplikací pro UWP ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
  [Nástroje pro profilaci](profiling-tools.md)  
   
@@ -90,7 +90,7 @@ Funkce Rozšířené zabezpečení od verze Windows 8 a Windows Server 2012 pož
 |Název nástroje|Popis|  
 |---------------|-----------------|  
 |[VSPerf](../profiling/vsperf.md)|Shromažďuje data profilování z aplikace UWP a shromažďuje data profilování ukázka od aplikací klasické pracovní plochy Windows 8 a Windows Server 2012 aplikací...|  
-|[Vsperfcmd –](../profiling/vsperfcmd.md)|Shromažďuje instrumentace, souběžnosti a data z aplikací, které jsou spuštěny na ploše sadě Windows 8 nebo Windows Server 2012 profilace sledováním interakce vrstev. Shromažďuje všechny typy data profilování z předchozích verzí systému Windows.|  
+|[VSPerfCmd](../profiling/vsperfcmd.md)|Shromažďuje instrumentace, souběžnosti a data z aplikací, které jsou spuštěny na ploše sadě Windows 8 nebo Windows Server 2012 profilace sledováním interakce vrstev. Shromažďuje všechny typy data profilování z předchozích verzí systému Windows.|  
   
  Oba nástroje jsou nainstalované s Visual Studio pro použití v místním počítači.  
   

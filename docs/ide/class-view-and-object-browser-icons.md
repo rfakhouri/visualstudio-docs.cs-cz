@@ -16,25 +16,24 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b6fad74a71e457759bc6b35ecb4679c3f26011e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8b20e30cc983d6dd809daa264e4fedbb3a879386
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="class-view-and-object-browser-icons"></a>Ikony zobrazení třídy a prohlížeče objektů
-**Třídy zobrazení** a **Prohlížeč objektů** zobrazit ikony, které představují entity kódu, například obory názvů, třídy, funkce a proměnné. Následující tabulka ukazuje a popisuje ikony.  
-  
-|Ikona|Popis|Ikona|Popis|  
-|----------|-----------------|----------|-----------------|  
-|![Namespace Symbol](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|Obor názvů|![Symbol deklarace](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Metody nebo funkce|  
+
+**Třídy zobrazení** a **Prohlížeč objektů** zobrazit ikony, které představují entity kódu, například obory názvů, třídy, funkce a proměnné. Následující tabulka ukazuje a popisuje ikony.
+
+|Ikona|Popis|Ikona|Popis|
+|----------|-----------------|----------|-----------------|
+|![Namespace Symbol](../ide/media/vxnamespace_icon.gif "vxNamespace_Icon")|Obor názvů|![Symbol deklarace](../ide/media/vxmethod_icon.gif "vxMethod_Icon")|Metody nebo funkce|
 |![Třídy ikonu](../ide/media/vxclass_icon.gif "vxClass_Icon")|Třída|![Symbol operátoru](../ide/media/vxoperator_icon.gif "vxOperator_Icon")|Operátor|  
-|![Rozhraní Symbol typu Lupa](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Rozhraní|![Vlastnost Symbol](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Vlastnost|  
+|![Rozhraní Symbol typu Lupa](../ide/media/vxinterface_icon.gif "vxInterface_Icon")|Rozhraní|![Vlastnost Symbol](../ide/media/vxproperty_icon.gif "vxProperty_Icon")|Vlastnost|
 |![Struktury Symbol](../ide/media/vxstruct_icon.gif "vxStruct_Icon")|Struktura|![Ikona pole](../ide/media/vxfield_icon.gif "vxField_Icon")|Pole nebo proměnná|  
 |![Union – Symbol](../ide/media/vxunion_icon.gif "vxUnion_Icon")|Unie|![Symbol událostí](../ide/media/vxevent_icon.gif "vxEvent_Icon")|Událost|  
 |![Symbol – výčet](../ide/media/vxenum_icon.gif "vxEnum_Icon")|Výčet|![Konstantní ikonu](../ide/media/vxconstant_icon.gif "vxConstant_Icon")|Konstanta|  
@@ -45,21 +44,23 @@ ms.lasthandoff: 10/31/2017
 |![Výjimka Symbol](../ide/media/vxexception_icon.gif "vxException_Icon")|Výjimka|![Symbol šablony](../ide/media/vxtemplate_icon.gif "vxTemplate_Icon")|Šablony|  
 |![Map – Symbol](../ide/media/vxmap_icon.gif "vxMap_Icon")|mapy|![Chyba vykřičník Symbol](../ide/media/vxerror_icon.gif "vxError_Icon")|Neznámé|  
 |![Zadejte přesměrování Symbol](../ide/media/ob_type_forward.gif "ob_type_forward")|Předávání typů|||  
-  
-## <a name="signal-icons"></a>Signální ikony  
- Následující signální ikony platí pro všechny předchozí ikony a určit jejich usnadnění.  
-  
-> [!NOTE]
->  Pokud zdrojové řízení databáze je součástí projektu, další signální ikony zobrazují označující stav zdrojového kódu, například změnami nebo rezervována.  
-  
-|Ikona|Popis|  
+
+## <a name="signal-icons"></a>Signální ikony
+
+Následující signální ikony platí pro všechny předchozí ikony a určit jejich usnadnění.
+
+|Ikona|Popis|
 |----------|-----------------|  
 |\<Žádná ikona signál >|Veřejné. Přístupné z kdekoli v této komponentě a z libovolné součásti, které na ni odkazuje.|  
 |![Signal – Symbol chráněné](../ide/media/vxsignal_icon_key.gif "vxSignal_Icon_Key")|Chráněný. Přístupné z obsahující třídy nebo typu nebo zařízení odvozené z obsahující třídy nebo typu.|  
 |![Symbol signál privátní](../ide/media/vxsignal_icon_lock.gif "vxSignal_Icon_Lock")|Privátní. Přístupné pouze v obsahující třídy nebo typu.|  
 |![Signal – Symbol zapečetěná](../ide/media/vxsignal_icon_envelope.gif "vxSignal_Icon_Envelope")|Zapečetěné.|  
 |![Signál, přítele &#47; interní Symbol](../ide/media/vxsignal_icon_diamond.gif "vxSignal_Icon_Diamond")|Friend nebo interní. Dostupné jenom z projektu.|  
-|![Signal – ikona šipky](../ide/media/vxsignal_icon_arrow.gif "vxSignal_Icon_Arrow")|Zástupce. Zástupce k objektu.|  
-  
-## <a name="see-also"></a>Viz také  
- [Zobrazení struktury kódu](../ide/viewing-the-structure-of-code.md)
+|![Signal – ikona šipky](../ide/media/vxsignal_icon_arrow.gif "vxSignal_Icon_Arrow")|Zástupce. Zástupce k objektu.|
+
+> [!NOTE]
+> Pokud zdrojové řízení databáze je součástí projektu, další signální ikony zobrazují označující stav zdrojového kódu, například změnami nebo rezervována.
+
+## <a name="see-also"></a>Viz také
+
+[Zobrazení struktury kódu](../ide/viewing-the-structure-of-code.md)

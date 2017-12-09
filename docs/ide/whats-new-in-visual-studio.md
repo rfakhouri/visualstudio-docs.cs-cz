@@ -1,12 +1,10 @@
 ---
 title: "Co je nového ve Visual Studio 2017 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/15/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.StartPage.WhatsNew
@@ -17,14 +15,14 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d084dec8d70842e4247d7063b6a8cad1d3545882
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Jaký & č. 39; s nové v Visual Studio 2017
-#### <a name="updated-for-the-155-preview-4-releasehttpswwwvisualstudiocomen-usnewsreleasenotesvs2017-preview-relnotes"></a>Aktualizováno pro [15,5 verze Preview 4](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes)
+#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aktualizováno pro [15,5 verze](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Hledáte upgrade z předchozí verze sady Visual Studio? Tady je co Visual Studio 2017 nabízejí jste: bezkonkurenční produktivitu pro všechny vývojáře, všechny aplikace a libovolnou platformu. Použijte Visual Studio 2017 k vývoji aplikací pro Android, iOS, Windows, Linux, web a cloud. Svůj kód můžete rychle psát, snadno ladit a diagnostikovat, často testovat a bez obav vydávat. Navíc si můžete sadu Visual Studio rozšířit a přizpůsobit pomocí svých vlastních rozšíření. Použití správy verzí, být agilní a efektivně spolupracovat s touto verzí!
 
 Zde je podrobný rekapitulace změny, které jsme provedli jsme od předchozí verze sady Visual Studio 2015:
@@ -32,20 +30,21 @@ Zde je podrobný rekapitulace změny, které jsme provedli jsme od předchozí v
 * **Předefinovat Základy**. Nové prostředí instalace znamená, že můžete nainstalovat rychleji a nainstalovat, co má v případě potřeby. Jestli chcete zatížení velkých řešení a projektů nebo pracovat v složek kódu nebo ani jeden soubor kódu, Visual Studio rychleji spustí. A Visual Studio umožňuje soustředit na velký obrázek, zejména pro týmy osvojují DevOps.
 * **Výkon a produktivitu**. Jsme se zaměřili na nové a moderní mobilní, cloudové a možnosti vývoj aplikací. Vylepšili jsme také celkový akvizice, výkon, a vyskytne obecné produktivity. Visual Studio rychleji spustí, je rychlejší reakce a vyžaduje méně paměti než před.
 * **Vývoj aplikací s Azure Cloud**. Předdefinované sada nástroje Azure umožňují snadno vytvářet první cloudové aplikace používá technologii Microsoft Azure. Visual Studio snadno ke konfiguraci, vytvářet, ladit, balíčku a nasazovat aplikace a služby v Azure.
+* **Vývoj aplikací pro Windows**. Použití šablon UWP v Visual Studio 2017 k vytvoření jedné projektu pro všechna zařízení s Windows 10 &ndash; počítač, tablet, phone, Xbox, HoloLens, Surface Hub a další. Poté vytvoří balíček aplikace a odešlete ji do Microsoft Store z Visual Studia schválení vaší aplikace zákazníkům.
 * **Vývoj mobilních aplikací**. V aplikaci Visual Studio 2017 můžete inovacemi. Zajistěte a získat výsledky rychlá a má Xamarin, který kombinuje požadavků mobilních platforem pomocí jednoho jádra codebase a sadu znalostí. Přejděte mobilních s vaší stávající týmy, investice do technologie a kódu jazyka C# k poskytování příjemce úrovni prostředí plánem a v části nároky. Urychlit každý krok mobilní životního cyklu k poskytování špičkových příjemce prostředí nebo portfoliu kancelářské aplikace na základě kterých pracovníky.
 * **Vývoj pro různé platformy**. Bezproblémově poskytovat software na všechny cílové platformy. Rozšíření do systému SQL Server pomocí nástrojů Data Redgate DevOps procesy a bezpečně automatizovat nasazení databáze ze sady Visual Studio. Nebo použijte .NET Core pro zápis aplikace a knihovny, které běží ve Windows, Linux a operační systémy systému macOS beze změny. (A **nové v 15.3**: získat vedle sebe podporu pro rozhraní .NET Core 2.0 sady SDK.)
 * **Hry vývoj**. Pomocí nástrojů Visual Studio pro Unity (VSTU) můžete použít Visual Studio psaní herní a editor skriptů v jazyce C# a pak použijte jeho výkonný ladicí program k vyhledání a opravte chyby. Nejnovější verze VSTU zahrnuje pro Unity na ShaderLab shaderu jazyka, lepší vizualizace ladicího programu a generování kódu vylepšené pro Průvodce MonoBehavior zvýrazňování syntaxe. VSTU přináší také soubory projektu Unity, zprávy konzoly a možnost spuštění vaše hra do sady Visual Studio, takže může trávit méně času přepnutí do a z editoru Unity při psaní kódu.
 * **Vývoj pro AI**. Pomocí nástrojů Visual Studio pro AI (**nové v 15,5**), funkce produktivitu sady Visual Studio můžete použít k urychlení AI inovace. Vytvoření, testování a nasazení hloubkové Learning / AI řešení, která bezproblémově integrovat s Azure Machine Learning robustní experimentování funkce, například odeslání dat přípravy a úlohy školení modelu transparentně pro různé výpočetní cíle. Visual Studio Tools for AI poskytuje podporu pro vlastní metriky a spustit sledování historie, která umožňují reprodukovatelnosti datové vědy a auditování.
 
 > [!NOTE]
-> Úplný seznam nových funkcí a funkcí v Visual Studio 2017, najdete v článku [aktuální poznámky k verzi](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes). A funkce Náhled na budoucí funkce nabídek, najdete v článku [poznámky k verzi Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes).
+> Úplný seznam nových funkcí a funkcí v Visual Studio 2017, najdete v článku [aktuální poznámky k verzi](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes). A funkce Náhled na budoucí funkce nabídek, najdete v článku [poznámky k verzi Preview](https://www.visualstudio.com/news/releasenotes/vs2017-preview-relnotes).
 
 Zde uvádíme podrobnější informace o některých nejdůležitějším vylepšení a nové funkce v nástroji Visual Studio 2017.
 
 ## <a name="redefined-fundamentals"></a>Předefinovaná základy
 ### <a name="a-new-setup-experience"></a>Nové prostředí pro instalaci
 
-[Stáhněte si Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) nebo [požadavky na systém zkontrolujte Visual Studio](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)
+[Stáhněte si Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) nebo [požadavky na systém zkontrolujte Visual Studio](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)
 
  Visual Studio je snadnější a rychlejší instalaci jenom funkce, které budete potřebovat, pokud je potřebujete. A odinstaluje řádně, příliš.
 
@@ -116,7 +115,8 @@ A další informace o tom, co je nového [průběžné doručování Tools pro V
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE vylepšení
 #### <a name="use-new-refactorings"></a>Refaktoring pro nové použití
-**V 15.3**, jsme přidali několik nové refaktoring, patří:
+Refaktoring je proces vylepšení kód po byl proveden zápis. Refaktoring změní interní kód beze změny jeho chování. Přidáme nové refaktoring často; Tady je pár:
+
 *   Přidejte parametr (z CallSite)
 *   Generovat přepsání
 *   Přidat pojmenované argument
@@ -126,7 +126,7 @@ A další informace o tom, co je nového [průběžné doručování Tools pro V
 *   Převod Pokud přepínače
 *   Odebrat nepoužité proměnnou
 
-Další informace najdete v tématu [Refactoring, generování kódu a rychlé akce v sadě Visual Studio](refactoring-code-generation-quick-actions.md) stránky.  
+Další informace najdete v tématu [rychlé akce](../ide/quick-actions.md#common-quick-actions).
 
 #### <a name="interact-with-git"></a>Pracovat s Gitem
 Když pracujete s projektem v sadě Visual Studio, můžete nastavit a rychle potvrzení a publikování kódu službě Git. Můžete také spravovat vaše úložiště Git pomocí nabídky kliknutí ze tlačítka v pravém dolním rohu rozhraní IDE.
@@ -175,7 +175,7 @@ Nového pomocníka výjimka můžete zobrazit vaše výjimka informace na Přehl
 Další informace najdete v tématu [pomocí nového pomocníka výjimka v sadě Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) příspěvku na blogu.
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>Snímky a zpětný krok IntelliTrace:
-**Novinka v 15,5** zpětný krok IntelliTrace automaticky vytvoří snímek vaší aplikace v každé zarážek a ladicí program krok události. Zaznamenaná snímky umožňují přejděte zpět na předchozí zarážky nebo kroky a zobrazení stavu aplikace, stejně jako tomu bylo v minulosti. IntelliTrace zpětný krok vám může ušetřit čas když chcete zobrazit předchozí stav aplikace, ale nechcete, aby se znovu spustit ladění nebo znovu vytvořte stav požadované aplikace.
+**Novinka v 15,5**: zpětný krok IntelliTrace automaticky vytvoří snímek vaší aplikace v každé zarážek a ladicí program krok události. Zaznamenaná snímky umožňují přejděte zpět na předchozí zarážky nebo kroky a zobrazení stavu aplikace, stejně jako tomu bylo v minulosti. IntelliTrace zpětný krok vám může ušetřit čas když chcete zobrazit předchozí stav aplikace, ale nechcete, aby se znovu spustit ladění nebo znovu vytvořte stav požadované aplikace.
 
 Můžete vyhledat a zobrazit snímky pomocí **krok zpětné** a **krok dál** tlačítek na panelu nástrojů ladění. Tato tlačítka přejděte události, které se zobrazují v **události** ve **diagnostické nástroje** okno. Krokování zpětně nebo dopředu na událost automaticky aktivuje historické ladění na vybrané události.
 
@@ -184,10 +184,12 @@ Můžete vyhledat a zobrazit snímky pomocí **krok zpětné** a **krok dál** t
 Další informace najdete v tématu [zobrazit snímky IntelliTrace zpětným krok pomocí](../debugger/how-to-use-intellitrace-step-back.md) stránky.
 
 ### <a name="containerization"></a>Rozdělení do kontejnerů
+Kontejnery můžete poskytnout hustotu aplikace vyšší a nižší náklady na nasazení společně s zvýšení produktivity a flexibility DevOps.
+
 #### <a name="docker-container-tooling"></a>Nástrojů kontejner docker
 **Novinka v 15,5**
 * Visual Studio obsahuje nástroje pro Docker kontejnery, které teď podporují Dockerfiles několika fází, které zjednodušit vytváření optimalizovaných bitových kopií kontejneru.
-* Ve výchozím nastavení bude Visual Studio automaticky pro vyžádání obsahu, sestavte a spusťte nezbytné kontejneru bitové kopie na pozadí při otevření projektu, který má Docker podpory. Lze je vypnout pomocí **automaticky spustí kontejnery v pozadí** nastavení v sadě Visual Studio.
+* Když otevřete projekt, který podporuje Docker, bude Visual Studio ve výchozím nastavení automaticky vyžadovat, sestavovat a spouštět nezbytné kontejnerové image na pozadí. Tuto funkci můžete vypnout pomocí nastavení **Automaticky spustit kontejnery na pozadí** v sadě Visual Studio.
 
 ## <a name="cloud-app-development-with-azure"></a>Vývoj aplikací cloudu s Azure
 ### <a name="azure-functions-tools"></a>Azure Functions nástroje
@@ -196,7 +198,7 @@ Jako součást úlohy "Azure development" jsme zahrnuli nástroje umožňující
 Další informace najdete v tématu [nástroje funkce Azure pro sadu Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) stránky.
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Ladění za provozu aplikace ASP.NET pomocí snappoints a logpoints v za provozu aplikace Azure
-**Novinka v 15,5** ladicím programu snímku pořídí snímek aplikací v provozním když provede kód, který vás zajímá. Dáte pokyn, aby ladicí program na pořízení snímku, nastavte snappoints a logpoints ve vašem kódu. Ladicí program umožňuje zobrazit přesně kde došlo k chybě, bez vlivu na provoz produkční aplikace. Ladicí program snímku můžete výrazně zkrátit dobu potřebnou k vyřešení problémů, ke kterým došlo v produkčním prostředí.
+**Novinka v 15,5**: ladicím programu snímku pořídí snímek aplikací v provozním když provede kód, který vás zajímá. Dáte pokyn, aby ladicí program na pořízení snímku, nastavte snappoints a logpoints ve vašem kódu. Ladicí program umožňuje zobrazit přesně kde došlo k chybě, bez vlivu na provoz produkční aplikace. Ladicí program snímku můžete výrazně zkrátit dobu potřebnou k vyřešení problémů, ke kterým došlo v produkčním prostředí.
 
 Snímek kolekce je k dispozici pro následující webové aplikace běžící v Azure App Service:
 
@@ -204,6 +206,24 @@ Snímek kolekce je k dispozici pro následující webové aplikace běžící v 
 * ASP.NET Core aplikací běžících na .NET Core 2.0 nebo novější na systému Windows.
 
 Další informace najdete v tématu [ladění za provozu aplikace ASP.NET pomocí snappoints a logpoints](../debugger/debug-live-azure-applications.md).
+
+## <a name="windows-app-development"></a>Vývoj aplikací pro systém Windows
+### <a name="universal-windows-platform"></a>Univerzální platforma pro Windows
+Univerzální platformu Windows (UWP) je platforma aplikace pro Windows 10. Můžete vyvíjet aplikace pro UPW s jedinou sadu rozhraní API, balíček aplikace jeden a jedno úložiště k dosažení všech zařízeních s Windows 10 &ndash; počítač, tablet, phone, Xbox, HoloLens, Surface Hub a další. UWP podporuje jiné velikosti obrazovky a mnoha interakce, ať to dotykového ovládání, myši a klávesnice, herní zařízení nebo pera. Základem aplikace UWP je představu, že uživatelé mají svoje prostředí na všech jejich zařízeních jsou mobilní a chtějí používat, ať zařízení pro na prováděné úloze je nejvíce vhodnou nebo produktivitu.
+
+ ![Univerzální platformu Windows](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+
+Vyberte si jazyk upřednostňované vývoj&mdash;z jazyka C#, Visual Basic, C++ nebo JavaScript&mdash;k vytvoření aplikace pro univerzální platformu Windows pro zařízení s Windows 10. Visual Studio 2017 poskytuje šablony aplikace UPW pro jednotlivé jazyky, které umožňují vytvořit jeden projekt pro všechna zařízení. Po dokončení práce, můžete vytvořit balíček aplikace a odešlete ji do Microsoft Store z Visual Studia schválení vaší aplikace zákazníkům na jakékoli zařízení s Windows 10.
+
+**Novinka v 15,5**<br/>
+Visual Studio 2017 verze 15,5 poskytuje nejlepší podporu pro Windows 10 patří Creators aktualizace SDK (10.0.16299.0). Aktualizace Windows 10 patří Creators také přináší mnoho vylepšení pro UPW vývojáře. Tady jsou některé z největších změn: 
+
+* **Podpora pro rozhraní .NET Standard 2.0**<br/>
+Kromě nasazení moderní aplikace je aktualizace Windows 10 patří Creators první verzi Windows 10 kvůli zajištění podpory standardní rozhraní .NET 2.0. Prakticky [.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) je implementace reference knihovny základní třídu, která můžete implementovat libovolnou platformu .NET. Cílem .NET Standard je zajistit co největší pro vývojáře .NET sdílet kód na jakékoli platformě .NET, kterou si zvolí při práci.
+* **Nejlepší UWP a Win32** <br/>
+Jsme vylepšili platformu Windows 10 s [plochy most](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) k vylepšit Windows 10 pro všechny vývojáře .NET, zda je jejich aktuální aktivní UWP WPF, Windows Forms nebo Xamarin. S novým typem projektu balení aplikací ve Visual Studio 2017 verze 15,5 můžete vytvořit balíčky aplikace systému Windows pro projekty WPF nebo Windows Forms, podobně jako u projektů UPW. Po balíček aplikace se všechny aplikace pro Windows 10 získat výhody nasazení a máte možnost distribuovat přes Microsoft Store (pro spotřebitele aplikace) nebo Microsoft Store pro firmy a Education. Protože zabalených aplikací mít přístup k úplné plochy UWP API a rozhraní API Win32 na ploše, můžete nyní modernizovat aplikace WPF a Windows Forms postupně s funkcemi UWP rozhraní API a Windows 10. Kromě toho můžete zahrnout vaše Win32 komponenty ve svých aplikacích UPW, které light na ploše se všemi funkcemi Win32. 
+
+Další informace o UWP najdete v tématu [vývoj aplikací pro univerzální platformu Windows (UWP)](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp) stránky.
 
 ## <a name="mobile-app-development"></a>Vývoj mobilních aplikací
 ### <a name="xamarin"></a>Xamarin
@@ -223,6 +243,8 @@ Další informace najdete v tématu [Visual Studio a Xamarin](../cross-platform/
 
 ### <a name="visual-studio-app-center"></a>Centrum aplikace Visual Studio
 **Nové v 15,5**: Centrum aplikace Visual Studio&mdash;tedy nyní obecně dostupné pro Android, iOS, Windows a systému macOS aplikace&mdash;obsahuje všechno, co musíte provést správu životního cyklu aplikací, včetně automatizovaných sestaveních testování v reálném zařízení v cloudu, distribuci do beta testery a obchody s aplikacemi a z reálného využití prostřednictvím havárií a analýzy dat monitorování. Aplikace napsané v Objective-C, Swift, Java, C#, Xamarin a reagovat nativní jsou podporovány v rámci všech funkcí.
+
+  ![Centrum aplikace Visual Studio testovacího prostředí](../ide/media/app-center-test-env.png)
 
 Další informace najdete v tématu [Introducing aplikace Center: vytvoření, testování, distribuci a monitorování aplikací v cloudu](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) příspěvku na blogu.
 
@@ -257,7 +279,7 @@ Jako součást úlohy "Vývoj her pro Unity" jsme zahrnuli nástroje umožňují
 Další informace najdete v tématu [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) stránky.
 
 ## <a name="ai-development"></a>Vývoj pro AI
-### <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools pro AI
+### <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 **Novinka v 15,5**: použijte produktivitu funkce sady Visual Studio pro urychlení AI inovací ještě dnes. Použijte předdefinovaný kód editor funkce, jako jsou zvýraznění syntaxe, IntelliSense a text automatické formátování. Můžete interaktivně otestovat váš přímý learning aplikací ve vašem místním prostředí pomocí procházení po kroku ladění na místní proměnné a modely.
 
   ![Přímý učení IDE](../ai/media/about/ide.png)
@@ -277,7 +299,7 @@ Pokud chcete navrhnout zlepšení o tom, jak jsme můžete zlepšit Visual Studi
  Pokud chcete sledovat stav vašich připomínek Visual Studio, přejděte na [Connect](http://connect.microsoft.com/) a hlášení chyb existuje. Po sestavu, můžete se vrátit k připojení ke sledování jeho stavu.  
 
 ## <a name="see-also"></a>Viz také
-* [Poznámky k verzi 2017 Visual Studio](https://www.visualstudio.com/news/vs2015-vs)
+* [Poznámky k verzi 2017 Visual Studio](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Co je nového v jazyce Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Co je nového v jazyce C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
 * [Co je nového pro Team Foundation Server](https://www.visualstudio.com/docs/whats-new)

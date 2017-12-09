@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31353d1063bc6d4f29eaa0fcde308ce3c34fc218
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>Řízení provádění aplikace UWP v sadě Visual Studio ladicí relace (JavaScript)
 Tento rychlý start ukazuje, jak se orientovat v ladicím programu sady Visual Studio a jak zobrazit stav programu v relaci.  
@@ -69,7 +69,7 @@ Tento rychlý start ukazuje, jak se orientovat v ladicím programu sady Visual S
   
 2.  **Otevření zdrojového souboru default.js.** V Průzkumníku řešení otevřete **js** uzel a zvolte `default.js`.  
   
-3.  **Obsah stránku nahraďte ukázkový kód.** Odstranit veškerý obsah z `default.js` souboru. Na tento odkaz: [ladicího programu navigační ukázkový kód (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)a poté zkopírujte kód uvedený v části JavaScript do schránky. (Vyberte **zpět** v prohlížeči nebo programu help viewer se vraťte do této stránce Rychlý start.) V editoru Visual Studio vložte kód do prázdné nyní `default.js`. Zvolte **Ctrl + S** k uložení souboru.  
+3.  **Obsah stránku nahraďte ukázkový kód.** Odstranit veškerý obsah z `default.js` souboru. Na tento odkaz: [ladicího programu navigační ukázkový kód (JavaScript)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-javascript.js)a poté zkopírujte kód uvedený v části JavaScript do schránky. (Vyberte **zpět** v prohlížeči nebo programu help viewer se vraťte do této stránce Rychlý start.) V editoru Visual Studio vložte kód do prázdné nyní `default.js`. Zvolte **Ctrl + S** k uložení souboru.  
   
  Nyní můžete provést spolu s příklady v tomto tématu.  
   

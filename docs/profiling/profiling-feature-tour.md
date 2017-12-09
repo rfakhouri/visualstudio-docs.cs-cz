@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>Prohlídka funkce profilace
 
@@ -152,7 +152,7 @@ Tady je tabulku, která obsahuje seznam různých nástrojů, které nabízí Vi
 |Nástroj výkon|Windows desktop|Univerzální/úložiště systému Windows|ASP.NET/ASP.NET jádra|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Využití paměti](../profiling/memory-usage.md)|Ano|Ano|Ano|  
-|[Využití procesoru](../profiling/cpu-usage.md)|Ano|Ano|Ano|  
+|[Využití procesoru](../profiling/cpu-usage.md)|Ano|Ano|Ano (ne pro .NET Core/ASP.NET Core)|  
 |[Využití GPU](../debugger/gpu-usage.md)|Ano|Ano|Ne|  
 |[Časová osa aplikace](../profiling/application-timeline.md)|Ano|Ano|Ne|  
 |[PerfTips](../profiling/perftips.md)|Ano|Ano pro jazyk XAML, ne pro HTML|Ano|  

@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c7679aff620b415a8b3c7f7b226d808d0f3f492
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Přechod na relaci ladění ve Visual Studiu (Xaml a C#)
 Tento úvodní ukazuje, jak se orientovat ladicí relace sady Visual Studio a postup zobrazení a změna stavu programu v relaci.  
@@ -52,7 +52,7 @@ Tento úvodní ukazuje, jak se orientovat ladicí relace sady Visual Studio a po
   
  **Otevření zdrojového souboru MainPage.xaml.cs.** Klikněte pravým tlačítkem na libovolné místo v editoru XAML a zvolte **kód zobrazení**. Zobrazí se souboru MainPage.xaml.cs kódu. Všimněte si, že pouze jednu metodu `MainPage()` konstruktoru, je uvedena v souboru.  
   
- **Konstruktor MainPage nahraďte ukázkový kód.** Delete – metoda MainPage(). Na tento odkaz: [ladicího programu navigační ukázkový kód (Xaml a C#)](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)a poté zkopírujte kód uvedené v části C# do schránky. (Vyberte **zpět** v prohlížeči nebo programu help viewer se vraťte do této stránce Rychlý start.) V editoru Visual Studio vložte kód v `partial class MainPage` bloku. Vyberte kombinace kláves CTRL + s k uložení souboru.  
+ **Konstruktor MainPage nahraďte ukázkový kód.** Delete – metoda MainPage(). Na tento odkaz: [ladicího programu navigační ukázkový kód (Xaml a C#)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-xaml-and-csharp.cs)a poté zkopírujte kód uvedené v části C# do schránky. (Vyberte **zpět** v prohlížeči nebo programu help viewer se vraťte do této stránce Rychlý start.) V editoru Visual Studio vložte kód v `partial class MainPage` bloku. Vyberte kombinace kláves CTRL + s k uložení souboru.  
   
  Nyní můžete provést spolu s příklady v tomto tématu.  
   

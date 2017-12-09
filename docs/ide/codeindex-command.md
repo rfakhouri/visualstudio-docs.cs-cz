@@ -16,11 +16,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b68d1a67055e14fce0af48fa58f805216205d4ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: eaf790d8c02c95047e28ca4d911d7f42a33bbd4f
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="codeindex-command"></a>CodeIndex – příkaz
 Použití **codeindex –** příkaz ke správě kódu indexování na Team Foundation Server. Například můžete chtít obnovit index pro opravu Codelensu informace nebo vypnout indexování prozkoumat problémy s výkonem serveru.  
@@ -124,8 +124,8 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"  
 ```  
   
-## <a name="see-also"></a>Viz také  
- [Nalezení změn kódu a další historie pomocí Codelensu](../ide/find-code-changes-and-other-history-with-codelens.md)  
+## <a name="see-also"></a>Viz také
 
- [Správa konfigurace serveru s TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [Nástroje příkazového řádku pro TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
+[Nalezení změn kódu a další historie pomocí CodeLensu](../ide/find-code-changes-and-other-history-with-codelens.md)  
+[Správa konfigurace serveru s TFSConfig](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)  
+[Nástroje příkazového řádku pro TFS](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)

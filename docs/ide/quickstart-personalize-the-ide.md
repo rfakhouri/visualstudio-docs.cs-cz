@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7adb1ec7badaefceb8430d0fcacd8e54e7404ea7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 369407c70ba15c720af3c92a5fabc56497eeedb6
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý úvod: přizpůsobení Visual Studio IDE a Editor
 
@@ -79,11 +79,13 @@ Nyní jsme budete přizpůsobit některé barvy textu pro Editor. První otevře
 
 1. V části **prostředí**, vyberte **písma a barev** kategorie.
 
-   Všimněte si, že text v rámci **zobrazit nastavení pro** uvádí **textového editoru** &mdash; je to, co chceme. Může rozbalte rozbalovací seznam právě pro rozsáhlé seznamu míst, kde můžete přizpůsobit písma a barvy.
+   Všimněte si, že text v rámci **zobrazit nastavení pro** uvádí **textového editoru**&mdash;je to, co chceme. Může rozbalte rozbalovací seznam právě pro rozsáhlé seznamu míst, kde můžete přizpůsobit písma a barvy.
 
 1. Chcete-li změnit barvu textu čísla řádku, v **zobrazení položek** vyberte **číslo řádku**. V **popředí položky** vyberte **olivového**.
 
    ![Dialogové okno Možnosti, kategorie písma a barev](media/quickstart-personalize-line-number-color.png)
+
+   Některé jazyky mají své vlastní konkrétní nastavení písma a barev. Pokud jste vývojář C++ a chcete změnit barvu použitou pro funkce, například můžete vyhledat **funkcí jazyka C++** v **zobrazení položek** seznamu.
 
 1. Před jsme ukončit dialogové okno, můžeme také změnit barvu atributy XML. V **zobrazení položek** seznamu, přejděte dolů k položce **atribut XML** a vyberte ho. V **popředí položky** vyberte **vápna**. Zvolte **OK** naše výběr uložte a zavřete dialogové okno.
 
@@ -97,5 +99,5 @@ Jsme prozkoumali jenom několik způsobů přizpůsobení barev v sadě Visual S
 
 [Rychlý úvod: první pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
 [Přizpůsobení sady Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)  
-[Přizpůsobení editoru](../ide/customizing-the-editor.md)  
-[Přehled sady Visual Studio IDE](../ide/visual-studio-ide.md)
+[Vlastní nastavení editoru](../ide/customizing-the-editor.md)  
+[Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)

@@ -18,11 +18,11 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Příručka začátečníka profilací výkonu
 Nástroje pro profilaci sady Visual Studio můžete použít k analýze problémy s výkonem v aplikaci. Tento postup ukazuje, jak používat **využití procesoru** kartě diagnostické nástroje získat údaje o výkonu pro vaši aplikaci. Diagnostické nástroje jsou podporované pro .NET – vývoj v sadě Visual Studio, včetně ASP.NET a pro vývoj nativní/C++.
@@ -108,7 +108,6 @@ Doporučujeme začít analýza dat kontrolou seznamu funkcí podle využití pro
     V tomto zobrazení vybrané funkce se zobrazí v záhlaví a v **funkci Current** pole (v tomto příkladu GetNumber). Funkce, která volá funkci current se zobrazí na levé straně v části **volání funkce**, a všechny funkce volá funkci current se zobrazují v **volat funkce** pole na pravé straně. (Můžete vybrat buď použijte ke změně aktuální funkce.)
 
     Toto zobrazení uvádí celkový čas (ms) a procento celkového aplikaci spuštěnou dobu, po kterou funkce provedlo v návaznosti na Dokončit.
-
     **Funkce text** také ukazuje celkové množství času (a procentuální hodnotu času) věnovaný tělo funkce bez doby věnovaný volání a funkce s názvem. (V tomto příkladu. 3713 mimo 3729 ms byly věnovaný tělo funkce a zbývajících 16 ms byly věnovaný externí kódu volaného pomocí této funkce).
 
     > [!TIP]
@@ -157,7 +156,7 @@ Použijte pole hledání najít uzel, který hledáte, potom použijte vodorovn�
 </div>
   
 ## <a name="see-also"></a>Viz také  
- [[Využití paměti](../profiling/memory-usage.md)  
+ [Využití paměti](../profiling/memory-usage.md)  
  [Využití procesoru](../profiling/cpu-usage.md)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
  [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)

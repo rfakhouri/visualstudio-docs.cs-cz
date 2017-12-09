@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
-ms.openlocfilehash: 656274c965cb2c360aa8b197b8afa5c66d86ea9c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ef6a121f848d39534b9a96bd215e1d3dba04a923
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 součástí adresáře
 
@@ -42,7 +42,7 @@ Další informace o tom, jak používat tyto identifikátory najdete v tématu [
 
 ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Testovací Agent klíčových funkcí | 15.0.26606.0 | Požadováno
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Testovací Agent klíčových funkcí | 15.0.27019.1 | Požadováno
 
 ## <a name="unaffiliated-components"></a>Nezávislou na komponenty
 
@@ -63,8 +63,8 @@ Tady je několik další možnosti podpory:
 
 ## <a name="see-also"></a>Viz také
 
-* [ID úlohy a součást Visual Studio](workload-and-component-ids.md)
+* [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)
 * [Příručka správce Visual Studio](visual-studio-administrator-guide.md)
-* [Používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-  * [Příklady parametr příkazového řádku](command-line-parameter-examples.md)
+* [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
+  * [Příklady parametrů příkazového řádku](command-line-parameter-examples.md)
 * [Vytvoření offline instalace sady Visual Studio](create-an-offline-installation-of-visual-studio.md)
