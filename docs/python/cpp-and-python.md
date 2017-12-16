@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08f91846340e2acc993e5302badfc846db5f4a9c
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 703197b9ad51334afaffdb057911f75587efb570
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-a-c-extension-for-python"></a>Vytváření rozšíření pro C++ pro jazyk Python
 
@@ -229,12 +229,12 @@ Druhý instalací modulu v globální prostředí Python zpřístupnění do jin
     sfc_module = Extension('superfastcode', sources = ['module.cpp'])
 
     setup(name = 'superfastcode', version = '1.0',
-        description = 'Python Package with superfastcode C++ Extension',
+        description = 'Python Package with superfastcode C++ extension',
         ext_modules = [sfc_module]
         )
     ```
 
-    V tématu [sestavení C a C++ rozšíření](https://docs.python.org/3/extending/building.html) (python.org) pro dokumentaci na tento skript.
+    V tématu [rozšíření sestavení C a C++](https://docs.python.org/3/extending/building.html) (python.org) pro dokumentaci na tento skript.
 
 1. `setup.py` Kód dá pokyn Python k sestavení rozšíření pomocí nástrojů Visual Studio 2015 C++ při použití z příkazového řádku. Otevřete příkazový řádek se zvýšenými oprávněními, přejděte do složky obsahující projekt C++ (a `setup.py`) a zadejte následující příkaz:
 

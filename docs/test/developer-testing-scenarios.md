@@ -12,11 +12,11 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 8f27747037bc496c35594973e730c09533820096
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Vývojáři, kteří testují nástroje, scénáře a možnosti
 
@@ -44,7 +44,7 @@ IntelliTest výrazně snižuje úsilí nezbytné k vytváření a údržbu testo
 * [IntelliTest – jeden Test pro všechna pravidla](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)
 * [IntelliTest videa](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [Začínáme s IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
-* [IntelliTest referenční příručce](intellitest-manual/index.md)
+* [Referenční příručka funkce IntelliTest](intellitest-manual/index.md)
 
 <a name="ui-testing"></a>
 ## <a name="user-interface-testing-with-coded-ui-and-selenium"></a>Testování pomocí programových uživatelského rozhraní a selenu uživatelského rozhraní
@@ -75,7 +75,7 @@ Pokrytí kódu je jedna z možností při spouštění testovacích metod pomoc�
 
 ![Testování s Visual Studio Team Services a serveru Team Foundation Server](media/devtest-codecoverage.png)
 
-* [Použití pokrytí kódu k určení jak mnohem kódu se testuje](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+* [Použití pokrytí kódu k určení rozsahu testovaného kódu](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [Jednotka testování, pokrytí kódu a analýza klonu kódu pomocí sady Visual Studio (testovacího prostředí)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Přizpůsobení analýzy pokrytí kódu](customizing-code-coverage-analysis.md)
 
@@ -87,15 +87,15 @@ Otestujte Explorer nápovědy vývojářům vytvářet, spravovat a získat maxi
 ![Visual Studio Průzkumníka testů](media/devtest-testexplorer.png)
 
 * [Začínáme s testování částí](unit-test-your-code.md)
-* [Spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md)
+* [Spouštění testování částí pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md)
 * [Zápis testů částí pro C/C++](writing-unit-tests-for-c-cpp.md)
-* [Instalace systémů testů jednotek třetích stran](install-third-party-unit-test-frameworks.md)
+* [Instalace systémů pro testování částí od třetích stran](install-third-party-unit-test-frameworks.md)
 
 Visual Studio je rozšiřitelný a otevře dveře testování adaptéry například NUnit a xUnit.net částí třetích stran. Kromě toho funkce klonování kódu přejde ruční v dolním s doručováním vysoké kvality softwaru vám pomáhá identifikovat bloky sémanticky podobný kód, který může být kandidáty pro běžné opravy chyb nebo refaktoring.
 
 ![Integrace testovací třetích stran](media/devtest-thirdparty.png)
 
-## <a name="also-see"></a>Viz také
+## <a name="see-also"></a>Viz také
 
 * [Začínáme s testování částí](getting-started-with-unit-testing.md)
 * [Urychlení jednotky spuštění testu v produktu Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)

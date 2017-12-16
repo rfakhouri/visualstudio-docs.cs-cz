@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio IDE přehled | Microsoft Docs"
 ms.custom: 
-ms.date: 10/03/2017
+ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -9,11 +9,11 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c20e36f91ecd7f5ef03785d42d33010796d105c0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: 811edfd9afaae8bc5c17af3c249ed10c25473701
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="visual-studio-ide-overview"></a>Přehled Visual Studio IDE
 
@@ -35,19 +35,41 @@ Výkon cloudu můžete využít pro své mobilní aplikace tak, že vytvoříte 
 
 ### <a name="create-cloud-apps-for-azure"></a>Vytvoření cloudové aplikace pro Azure.
 
-Visual Studio nabízí sadu nástrojů, které vám umožní snadno vytvářet aplikace s povolenou podporu cloudu používá technologii Microsoft Azure. Můžete nakonfigurovat, vytvářet, ladit, balíčku a nasazení aplikací a služeb Microsoft Azure přímo z prostředí IDE. Využijte Azure services pro aplikace pomocí připojení služby. Chcete-li získat nástroje Azure pro .NET, vyberte **Azure development** zatížení při instalaci sady Visual Studio. Další informace najdete v tématu [Visual Studio Tools for Azure](https://www.visualstudio.com/vs/azure-tools/).
+Visual Studio nabízí sadu nástrojů, které vám umožní snadno vytvářet aplikace s povolenou podporu cloudu používá technologii Microsoft Azure. Můžete nakonfigurovat, vytvářet, ladit, balíčku a nasazení aplikací a služeb Microsoft Azure přímo z prostředí IDE. Chcete-li získat nástroje Azure pro .NET, vyberte **Azure development** zatížení při instalaci sady Visual Studio. Další informace najdete v tématu [Visual Studio Tools for Azure](https://www.visualstudio.com/vs/azure-tools/).
+
+Můžete využít Azure services pro aplikace pomocí připojení služby, jako třeba:
+
+- [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
+
+- [Úložiště Azure](http://azure.microsoft.com/documentation/services/storage/)
+
+[HockeyApp](https://www.visualstudio.com/hockey-app/) pomáhá distribuovat beta verze, shromažďování sestavy havárií za provozu a získávat zpětnou vazbu od skutečné uživatele. Kromě toho můžete integrovat rozhraní REST API Office 365 do vlastní aplikace pro připojení k data uložená v cloudu. Další informace najdete v tématu [tyto ukázky Githubu](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
+
+[Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) pomáhá rozpoznat a diagnostikovat problémy kvality ve svých aplikacích a webové služby. Application Insights také vám pomůže pochopit, co uživatelé ve skutečnosti provádějí s vaší aplikací, můžete optimalizovat uživatelské prostředí.
 
 ### <a name="create-apps-for-the-web"></a>Vytvoření aplikace pro web
 
-Web jednotky naše moderní world a Visual Studio můžete usnadňuje psaní aplikací pro ni. Můžete vytvořit webové aplikace pomocí ASP.NET, Node.js, Python, JavaScript a TypeScript. Visual Studio rozumí webové platformy jako úhlová, jQuery, Express a další. Spuštěné na operačních systémech Windows, Mac a Linux .NET Core a ASP.NET Core. Další informace najdete v tématu [moderních webových nástrojů](https://www.visualstudio.com/vs/modern-web-tooling/).
+Web jednotky naše moderní world a Visual Studio můžete usnadňuje psaní aplikací pro ni. Můžete vytvořit webové aplikace pomocí ASP.NET, Node.js, Python, JavaScript a TypeScript. Visual Studio rozumí webové platformy jako úhlová, jQuery, Express a další. Spuštěné na operačních systémech Windows, Mac a Linux .NET Core a ASP.NET Core. [ASP.NET Core](http://www.asp.net/core/overview) je hlavní aktualizace MVC, WebAPI a SignalR a běží na systému Windows, Mac a Linux.  ASP.NET Core má byly navrženy od základů až zajistit, že jste s .NET Štíhlá a bez možnosti složení zásobníku pro vytváření webových moderní cloudové aplikace a služby.
 
-### <a name="write-code-in-a-world-class-editing-environment"></a>Psaní kódu v třídě world úpravy prostředí
+Další informace najdete v tématu [moderních webových nástrojů](https://www.visualstudio.com/vs/modern-web-tooling/).
 
-Visual Studio umožňuje psát kód rychle a snadno prostřednictvím funkce jako je například zabarvení syntaxe, dokončování příkazů, IntelliSense (místní popisy elementu vybraný úsek kódu), kódu osnovy, nastavení zarážek pro ladění a mnoho dalšího.
+### <a name="build-cross-platform-apps-and-games"></a>Vytváření aplikací pro různé platformy a hry
 
-![Příklad kódu jazyka JavaScript](../ide/media/vside_tour_javascript_example.gif)
+Visual Studio můžete použít k sestavení aplikací a her pro Android, iOS, Linux, Windows a dalších zařízení. Další informace naleznete na [vývoj mobilních řešení pro různé platformy](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Universal Windows Apps můžete využít kódu napříč různými platformami. V tématu [univerzálních aplikací pro Windows](https://dev.windows.com/en-us/windows-apps) Další informace.
 
-Další informace najdete v tématu [psaní kódu v editoru kódu a textovém editoru](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor).
+Zvolte nástroje, které je třeba na základě požadavků na aplikace a jazyk, který chcete použít:
+
+- [Xamarin pro Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): běžné kód základní v jazyce C# pro všechna zařízení.
+
+- [Nástroje sady Visual Studio pro Apache Cordova](../cross-platform/visual-studio-tools-for-apache-cordova.md): běžné kód základní pro HTML, CSS a JavaScript a Typescript.
+
+- [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md): vývoj her pro vytváření 2D/3D v jazyce C#.
+
+- [C++ pro vývoj pro různé platformy](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md): sdílené knihovny kódu a aplikace v jazyce C++.
+
+- [Visual Studio Emulator for Android](../cross-platform/visual-studio-emulator-for-android.md): Visual Studio Emulator for Android: ladit a testovat aplikace pro Android bez ohledu na to rozhraní IDE.
+
+[Vytvoření hry s použitím sady Visual Studio](https://www.visualstudio.com/vs/game-development/) nástroje pro vývoj her například DirectX, Unity, nerealiz, Kokosové a další.
 
 Visual Studio, můžete to udělat celou řadu věcí další pomoc. Získat úplný seznam najdete v tématu [Visual Studio IDE](https://www.visualstudio.com/vs/).
 
@@ -211,7 +233,7 @@ Následující obrázek ukazuje okno Průzkumník týmových projektů pro řeš
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Dokumentaci o Visual Studio Team Services a serveru Team Foundation Server najdete v tématu [Visual Studio Team Services](/vsts/index).
+Můžete také automatizovat vašeho procesu sestavení vytvářet kód, který jste zkontrolovali devs ve vašem týmu do správy verzí. Lze například sestavit jeden nebo více projektů v noci nebo pokaždé, když je kód vrácen se změnami. V tématu [průběžnou integraci na jakékoli platformě](https://www.visualstudio.com/en-us/docs/build/overview) Další informace.
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Připojení ke službám, databází a cloudové prostředky
 
@@ -234,8 +256,13 @@ Můžete zobrazit a spravovat prostředky na základě Azure cloud v sadě Visua
 ![Průzkumník objektů systému SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Rozšíření sady Visual Studio
+Pokud Visual Studio nemá přesný funkce, které potřebujete, můžete ho přidat! Přizpůsobení integrovaného vývojového prostředí na základě vašeho pracovního postupu a styl, přidat podporu pro externí nástroje ještě integrované pomocí sady Visual Studio a upravit stávající funkce zvyšuje produktivitu. Nejnovější verzi Visual Studio Extensibility Tools (VS SDK), najdete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-Pokud Visual Studio nemá přesný funkce, které potřebujete, můžete ho přidat! Přizpůsobení integrovaného vývojového prostředí na základě vašeho pracovního postupu a styl, přidat podporu pro externí nástroje ještě integrované pomocí sady Visual Studio a upravit stávající funkce zvyšuje produktivitu. Visual Studio poskytuje nástroje, ovládací prvky a šablony od společnosti Microsoft, našimi partnery a komunity. Další informace o rozšíření sady Visual Studio najdete v tématu [rozšíření Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
+Kompilátoru platformu .NET (Roslyn) můžete použít k zápisu vlastní analyzátorů kódu a generátory kódu. Najít všechno, co potřebujete v [Roslyn](https://github.com/dotnet/Roslyn).
+
+Najít [existující rozšíření](https://marketplace.visualstudio.com/vs) pro sadu Visual Studio vytvořené vývojáři Microsoftu a také naše komunita vývoj.
+
+Další informace o rozšíření sady Visual Studio najdete v tématu [rozšíření Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Další informace a zjistit, co je nového
 

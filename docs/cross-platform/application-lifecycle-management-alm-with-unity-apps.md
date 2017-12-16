@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 48f29ec016b426319241c1a72701ed529ec7dddd
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a9364a6eb9e46503a257cdc066e3d9ecd1a6c9d0
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) s aplikacemi Unity
 Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než právě psaní kódu. Tyto aktivity, označuje jako DevOps (vývoj + operations) span úplný životní cyklus aplikace a zahrnují plánování a sledování práce, navrhování a implementace kódu, Správa úložiště zdrojového kódu spuštění sestavení, Správa nepřetržité integrace nasazení, testování (včetně testování částí a testy uživatelského rozhraní), spuštěné různé formy diagnostiky v vývoj a provozní prostředí a monitorování výkonu a uživatel chování aplikace v reálném čase pomocí telemetrie a analýzy.  
@@ -73,12 +73,12 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než pr�
 3.  Binární prostředky v projektu Unity – například textury nebo zvukové soubory, může trvat až velké množství úložiště. Různé systémy správy zdrojového jako Git ukládat jedinečnou kopii souboru pro každé změně, která se i v případě, že tato změna ovlivňuje pouze malou část souboru. To může způsobit opakovaném úložiště Git. Chcete-li vyřešit tím, Unity vývojáři často zvolit, aby byla pouze poslední prostředky přidat do jejich úložiště a použít jiný způsob dosavadní práce jejich prostředků, jako je například OneDrive, DropBox nebo git přílohy. Tento přístup funguje, protože tyto prostředky většinou nemusí být verzí společně s změny zdrojového kódu. Vývojáři také běžně nastavit režim serializace Asset editoru projektu na Force Text k ukládání souborů scény v textu, ne binární formát, který umožňuje sloučení ve správě zdrojového kódu. Podrobnosti najdete v tématu [nastavení editoru](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity dokumentaci).  
 
 ## <a name="build"></a>Sestavení  
- Použití odkazu:  **[sestavení](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Použití odkazu:  **[sestavení a verze](/vsts/build-release/index)**  
 
 |Funkce|Podporované s Unity|Další komentáře|  
 |-------------|--------------------------|-------------------------|  
 |Na místním serveru TFS|Možné|Unity projekty jsou vytvořeny pomocí prostředí Unity a ne prostřednictvím sady Visual Studio sestavení systému (vytváření v rámci sady Visual Studio Tools pro Unity bude zkompilovat skripty, ale není vytvoření spustitelného souboru). Je možné [Unity projekty z příkazového řádku sestavení](http://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity dokumentace), takže je možné konfigurovat MSBuild proces na serveru TFS provést odpovídající Unity příkazy, za předpokladu, že Unity samotné je nainstalován na Tento počítač.<br /><br /> Také nabízí Unity [Unity cloudu sestavení](https://build.cloud.unity3d.com/landing/), který sleduje úložiště Git nebo SVN a spustí pravidelné sestavení. V současné době ale nefunguje s verzí Team Foundation nebo Visual Studio Team Services.|  
-|Místní sestavení server propojený s Visual Studio Team Services|Možné|Zadaný stejných podmínek jako výše je další možné směrovat sestavení vyvolané prostřednictvím Visual Studio Team Services pomocí sady TFS počítače místně.  V tématu [sestavení serveru](http://msdn.microsoft.com/Library/2d258a0a-f178-4e93-9da1-eba61151af3c) pokyny.|  
+|Místní sestavení server propojený s Visual Studio Team Services|Možné|Zadaný stejných podmínek jako výše je další možné směrovat sestavení vyvolané prostřednictvím Visual Studio Team Services pomocí sady TFS počítače místně.  V tématu [sestavení a verzí agentů](/vsts/build-release/concepts/agents/agents) pokyny.|  
 |Hostované řadič služby Visual Studio Team Services|Ne|V současné době se nepodporují Unity sestavení.|  
 |Vytváření definic s před a po skripty|Ano|Definici vlastní sestavení, která používá ke spuštění sestavení příkazového řádku Unity můžete také nakonfigurovat pro skripty před a po sestavení.|  
 |Průběžnou integraci včetně ověřované vrácení se změnami|Ano|Ověřované vrácení vrácení se změnami pro TFVC pouze jako Git funguje na žádost o přijetí změn modelu, nikoli vrácení se změnami.|  

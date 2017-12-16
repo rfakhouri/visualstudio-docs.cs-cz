@@ -1,5 +1,5 @@
 ---
-title: "R nástroje Možnosti v sadě Visual Studio | Microsoft Docs"
+title: "Možnosti nástrojů R v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
@@ -17,13 +17,17 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: dd21ba3c54ed274f181c036ed0121d8d3c5a180e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: c9820ea7124157c1cd543bc88195be3d8fcc8b57
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="r-tools-for-visual-studio-options"></a>R nástroje pro možnosti aplikace Visual Studio
+
+Nastavení jsou přístupné prostřednictvím **R nástroje > Možnosti** nabídky, nebo pomocí **nástroje > Možnosti** a posouvání **R nástroje**:
+
+  ![Dialogové okno Možnosti nástroje R](media/options-dialog.png)
 
 Možnosti a nastavení, které jsou specifické pro R se přistupuje pomocí níže uvedených způsobů. Je nutné vybrat **zobrazit všechna nastavení** pole v dolní části **možnosti** dialogové okno pro všechny tyto oddíly se objeví.
 

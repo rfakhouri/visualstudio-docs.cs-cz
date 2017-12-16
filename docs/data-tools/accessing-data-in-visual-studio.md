@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: da7176d3fd64591064bfd33a0780ba7939621182
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -67,7 +67,7 @@ Mnoho dodavatelů databáze a třetím stranám podporují integrace sady Visual
 
 ## <a name="net-languages"></a>Jazyky rozhraní .NET
 
-Všechny .NET přístup k datům, včetně v .NET Core je založena na technologii ADO.NET, sadu třídy, která definuje rozhraní pro přístup k libovolného typu zdroje dat, relačních i nerelačních. Visual Studio obsahuje několik nástrojů a návrhářů, které pracují s ADO.NET za účelem připojení k databázím, zpracovaly data a data k dispozici pro uživatele. V dokumentaci v této části popisuje, jak pomocí těchto nástrojů. Můžete také programu přímo u objektů příkazu ADO.NET. Další informace o přímé volání rozhraní API technologie ADO.NET naleznete v tématu [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) v knihovně MSDN.
+Všechny .NET přístup k datům, včetně v .NET Core je založena na technologii ADO.NET, sadu třídy, která definuje rozhraní pro přístup k libovolného typu zdroje dat, relačních i nerelačních. Visual Studio obsahuje několik nástrojů a návrhářů, které pracují s ADO.NET za účelem připojení k databázím, zpracovaly data a data k dispozici pro uživatele. V dokumentaci v této části popisuje, jak pomocí těchto nástrojů. Můžete také programu přímo u objektů příkazu ADO.NET. Další informace o přímé volání rozhraní API technologie ADO.NET naleznete v tématu [ADO.NET](/dotnet/framework/data/adonet/index).
 
 Přístup k datům dokumentaci konkrétně související s technologií ASP.NET najdete v tématu [práci s daty](http://www.asp.net/web-forms/overview/presenting-and-managing-data) na webu technologie ASP.NET. Kurz použití rozhraní Entity Framework s architekturou ASP.NET MVC, najdete v části [Začínáme s Entity Framework 6 Code First pomocí MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
@@ -88,7 +88,7 @@ V rozhraní .NET máte tři možnosti pro modelování a manipulace s daty v pam
 [Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md)  
 Upřednostňované technologie Microsoft ORM. Můžete ho programu pro relační data jako první třídy objekty .NET. Pro nové aplikace by mělo být první možnost výchozí, pokud model je potřeba. To vyžaduje vlastní podpory z výchozí zprostředkovatel ADO.NET.
 
-[Technologie LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
 Starší generace objekt relační mapper. Funguje dobře pro méně složitých scénářů, ale už v active vývoj.
 
 [Datové sady](../data-tools/dataset-tools-in-visual-studio.md)  
@@ -98,7 +98,7 @@ Není nutné k používání některé z těchto technologií. V některých sc�
 
 ## <a name="native-c"></a>Nativní C++
 
-Aplikace C++, která se připojují k systému SQL Server by měly používat [Microsoft® ODBC ovladač 13.1 pro SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) ve většině případů. Pokud jsou propojené servery, pak je nutné OLE DB a pro který používáte [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). Máte přístup k jiné databáze pomocí [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) nebo přímo ovladače OLE DB. Rozhraní ODBC je rozhraní pro aktuální standardní databáze, ale většina systémů databáze poskytují vlastní funkce, které nelze získat přístup přes rozhraní ODBC. OLE DB je starší verze technologie COM přístup k datům, která je stále podporováno, ale nedoporučuje pro nové aplikace. Další informace najdete v tématu [přístup k datům v jazyce Visual C++](https://docs.microsoft.com/cpp/data/).
+Aplikace C++, která se připojují k systému SQL Server by měly používat [Microsoft® ODBC ovladač 13.1 pro SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) ve většině případů. Pokud jsou propojené servery, pak je nutné OLE DB a pro který používáte [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Máte přístup k jiné databáze pomocí [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) nebo přímo ovladače OLE DB. Rozhraní ODBC je rozhraní pro aktuální standardní databáze, ale většina systémů databáze poskytují vlastní funkce, které nelze získat přístup přes rozhraní ODBC. OLE DB je starší verze technologie COM přístup k datům, která je stále podporováno, ale nedoporučuje pro nové aplikace. Další informace najdete v tématu [přístup k datům v jazyce Visual C++](/cpp/data/data-access-in-cpp).
 
 Můžete použít programy C++, které využívají služby REST [C++ REST SDK](https://github.com/Microsoft/cpprestsdk).
 
@@ -106,11 +106,11 @@ C++ programy, které fungují s Microsoft Azure Storage můžete použít [klien
 
 Modelování dat&mdash;Visual Studio neposkytuje vrstvu ORM jazyka C++. [TYPU](http://www.codesynthesis.com/products/odb/) je oblíbených open-source ORM jazyka C++.
 
-Další informace o připojení k databázím z aplikací C++, najdete v části [nástrojů Visual Studio data pro jazyk C++](../data-tools/visual-studio-data-tools-for-cpp.md). Další informace o starší verze technologií přístupu k datům Visual C++, najdete v části [přístup k datům](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b).
+Další informace o připojení k databázím z aplikací C++, najdete v části [nástrojů Visual Studio data pro jazyk C++](../data-tools/visual-studio-data-tools-for-cpp.md). Další informace o starší verze technologií přístupu k datům Visual C++, najdete v části [přístup k datům](/cpp/data/data-access-in-cpp).
 
 ## <a name="javascript"></a>JavaScript
 
-[JavaScript ve Visual Studiu](https://msdn.microsoft.com/library/hh334522.aspx) je první třídy jazyk pro vytváření aplikací pro různé platformy, aplikace UWP, cloudové služby, weby a webové aplikace. Bower, Grunt, Gulp, npm a NuGet z v sadě Visual Studio můžete použít k instalaci Oblíbené knihovny JavaScript a produkty databáze. Připojit k úložišti Azure a službám pomocí stažení sady SDK z [webu Azure](https://azure.microsoft.com/). Edge.js je knihovnu, která se připojuje ke zdrojům dat ADO.NET kódu JavaScript na straně serveru (Node.js).
+[JavaScript ve Visual Studiu](/scripting/javascript/javascript-language-reference) je první třídy jazyk pro vytváření aplikací pro různé platformy, aplikace UWP, cloudové služby, weby a webové aplikace. Bower, Grunt, Gulp, npm a NuGet z v sadě Visual Studio můžete použít k instalaci Oblíbené knihovny JavaScript a produkty databáze. Připojit k úložišti Azure a službám pomocí stažení sady SDK z [webu Azure](https://azure.microsoft.com/). Edge.js je knihovnu, která se připojuje ke zdrojům dat ADO.NET kódu JavaScript na straně serveru (Node.js).
 
 ## <a name="python"></a>Python
 
@@ -127,7 +127,7 @@ Popisuje Azure Storage a jak vytvářet aplikace pomocí Azure BLOB, tabulek, fr
 [Databáze Azure SQL](https://azure.microsoft.com/documentation/services/sql-database/)  
 Popisuje, jak se připojit k databázi SQL Azure, relační databáze jako služba.
 
-[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)  
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
 Popisuje nástroje, které usnadňují návrh, zkoumání, testování a nasazení připojené data aplikací a databází.
 
 [ADO.NET](/dotnet/framework/data/adonet/index)  
@@ -136,17 +136,17 @@ Popisuje architekturu ADO.NET a jak pomocí třídy ADO.NET spravovat data aplik
 [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)  
 Popisuje postup vytvoření dat aplikací, které umožňují vývojářům programu pro koncepční model místo přímo na relační databázi.
 
-[Datové služby WCF 4.5](/dotnet/framework/data/wcf/index)  
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)  
 Popisuje způsob použití [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] k nasazení služeb dat na webu nebo v intranetu, které implementují [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
 [Data v řešeních pro systém Office](/office-dev/office-dev/data-in-office-solutions)  
 Obsahuje odkazy na témata, které vysvětlují, jak fungují data v řešeních pro systém Office. To zahrnuje informace o schématu orientované programování, ukládaní dat do mezipaměti a přístup k datům na serveru.
 
-[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)  
 Popisuje možnosti dotazu, integrované do jazyka C# a Visual Basic a společného modelu pro dotazování relačních databází, dokumentů XML, datové sady a kolekce v paměti.
 
 [Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)  
 Popisuje práci s funkcí rozhraní .NET Framework XML data, ladění XSLT, XML a architektura jazyka XML.
 
-[XML – dokumenty a Data](/dotnet/standard/data/xml/index)  
+[Dokumenty a data XML](/dotnet/standard/data/xml/index)  
 Poskytuje přehled globální a integrované sadu tříd, které pracují s dokumenty XML a data v rozhraní .NET Framework.

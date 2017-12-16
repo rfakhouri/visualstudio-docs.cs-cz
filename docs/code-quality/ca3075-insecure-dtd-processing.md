@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9660e2dc94cf23269b923c6ba5426a7cc384161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 955587b0fbf9a0fa48d2a7083bea04e102b7a622
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Zpracování nezabezpečené DTD
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  Pokud používáte nezabezpečené <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instance nebo odkaz na externí entity zdroje, analyzátor může přijímat nedůvěryhodná pro vstup a prozrazeny citlivé informace útočníci.  
   
 ## <a name="rule-description"></a>Popis pravidla  
- A [dokumentu typ definice (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnost dokumentu, podle definice [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo bude hledat vlastnosti a instance, kde je nedůvěryhodné data přijatá varování před vývojáře o potenciální [zpřístupnění informací](/dotnet/framework/wcf/feature-details/information-disclosure) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) útoky. Toto pravidlo aktivuje, když:  
+ A *dokumentu typ definice (DTD)* je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnost dokumentu, podle definice [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo bude hledat vlastnosti a instance, kde je nedůvěryhodné data přijatá varování před vývojáře o potenciální [zpřístupnění informací](/dotnet/framework/wcf/feature-details/information-disclosure) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) útoky. Toto pravidlo aktivuje, když:  
   
 -   Je zapnuta DtdProcessing <xref:System.Xml.XmlReader> instance, který se přeloží externí entity XML pomocí <xref:System.Xml.XmlUrlResolver>.  
   
@@ -60,11 +60,11 @@ ms.lasthandoff: 10/31/2017
   
 -   Zakázat DTD zpracování, pokud chcete pracovat s nedůvěryhodných zdrojů nastavením <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> vlastnost **true** .  
   
--   Třídy XmlTextReader má požadavek dědičnosti úplný vztah důvěryhodnosti. V tématu [požadavky dědičnosti](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) Další informace.  
+-   Třídy XmlTextReader má požadavek dědičnosti úplný vztah důvěryhodnosti.  
   
  Rozhraní .NET 4 a novější  
   
--   Nedoporučujeme povolovat DtdProcessing, pokud pracujete s nedůvěryhodných zdrojů, nastavením vlastnosti DtdProcessing [zakázat nebo ignorovat](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx)  
+-   Nedoporučujeme povolovat DtdProcessing, pokud pracujete s nedůvěryhodných zdrojů, a to nastavením <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> vlastnost **zakázat** nebo **Ignorovat**.  
   
 -   Ujistěte se, že metoda Load() přijímá instanci XmlReader ve všech případech InnerXml.  
   

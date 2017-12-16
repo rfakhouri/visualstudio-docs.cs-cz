@@ -13,11 +13,11 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e3b99f769b92ddd9f44f2a95b122e5e388954aef
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="item-functions"></a>Funkce položek
 Od verze nástroje MSBuild 4.0, kód v úlohy a cíle můžete volat funkce položek se získat informace o položkách v projektu. Tyto funkce zjednodušit získávání Distinct() položky a je rychlejší než ve smyčce přes položky.  
@@ -62,7 +62,7 @@ Od verze nástroje MSBuild 4.0, kód v úlohy a cíle můžete volat funkce polo
 |`Reverse`|`@(MyItem->Reverse())`|Vrátí položky v obráceném pořadí.|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|Vrátí `boolean` k označení, zda má libovolnou položku daná metadata název a hodnotu. Porovnání nejsou rozlišována malá a velká písmena.|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|Vrátí položky s jeho metadata vymazán. Pouze `itemspec` se uchovávají.|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|Vrátí položky, které mají název daná metadata. Porovnání nejsou rozlišována malá a velká písmena.|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|Vrátí položky, které mají název daná metadata. Porovnání nejsou rozlišována malá a velká písmena.|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|Vrátí hodnoty metadat, které mají název metadat.|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|Vrátí položky, které mají daná metadata název a hodnotu. Porovnání nejsou rozlišována malá a velká písmena.|  
   

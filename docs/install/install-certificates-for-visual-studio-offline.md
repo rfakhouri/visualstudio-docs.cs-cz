@@ -14,11 +14,11 @@ ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e6dcf1187db5c1e3dd911bc9f91867c383e5a8b2
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ed86e3cd404c40026fad20ef08d4daecd98d74f2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalace certifikátů vyžadovaných pro instalaci offline sady Visual Studio
 
@@ -42,7 +42,7 @@ Pro podniky s offline počítače, které nemají nejnovější kořenové certi
 
 Pokud vytváříte skript nasazení sady Visual Studio v režimu offline klientským pracovním stanicím, postupujte podle těchto kroků:
 
-1. Kopírování [nástroj Certificate Manager](https://msdn.microsoft.com/library/e78byta0.aspx) (certmgr.exe) ke sdílené složce instalace (například \\server\share\vs2017). Certmgr.exe není zahrnutý jako součást Windows samostatně, ale je k dispozici jako součást [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+1. Kopírování [nástroj Certificate Manager](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) ke sdílené složce instalace (například \\server\share\vs2017). Certmgr.exe není zahrnutý jako součást Windows samostatně, ale je k dispozici jako součást [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
 2. Vytvořte dávkový soubor pomocí následujících příkazů:
 
@@ -122,7 +122,7 @@ Tady je několik další možnosti podpory:
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu).
 
 ## <a name="see-also"></a>Viz také
-* [Instalaci sady Visual Studio](install-visual-studio.md)
+* [Instalace sady Visual Studio](install-visual-studio.md)
 * [Příručka správce Visual Studio](visual-studio-administrator-guide.md)
-* [Používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [ID úlohy a součást Visual Studio](workload-and-component-ids.md)
+* [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
+* [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

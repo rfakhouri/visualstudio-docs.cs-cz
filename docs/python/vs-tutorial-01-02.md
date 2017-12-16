@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d417ac531331b62b0f711fe155a94f1ac0954310
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 7be06db583529aae747b95a7c04ea71f4f204218
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-2-writing-and-running-code"></a>Krok 2: Psaní a spuštění kódu
 
@@ -41,14 +41,14 @@ Sice Průzkumníku řešení, kde budete spravovat soubory projektu, *editor* ok
     ```
 
 1. Všimněte si, zabarvení syntaxe, která odlišuje příkaz `print` v argumentu `"Hello Visual Studio"`. Navíc dočasně odstranit poslední `"` na řetězce a Všimněte si, jak Visual Studio se zobrazí červený podtržení pro kód který obsahuje syntaktické chyby. Potom můžete nahradit `"` opravit kód.
- 
+
     ![Barevné zvýrazňování syntaxe IntelliSense a zvýraznění chyby](media/vs-getting-started-python-06-IntelliSense3b.png)
- 
+
     > [!Tip]
     > Protože jeden pro vývojové prostředí je velmi osobní záležitosti, Visual Studio poskytuje úplnou kontrolu nad vzhled a chování sady Visual Studio. Vyberte **nástroje > Možnosti** nabídky příkazů a zkontrolovat nastavení v části **prostředí** a **textového editoru** karty. Ve výchozím nastavení se zobrazí pouze omezený počet možností; Pokud chcete zobrazit všechny dostupné možnosti pro každou programovací jazyk, vyberte **zobrazit všechna nastavení** v dolní části dialogových oken. 
 
 1. Spustit kód, který jste zapisovat do tohoto bodu stisknutím Ctrl + F5 nebo výběrem **ladění > Spustit bez ladění** položku nabídky. Visual Studio zobrazí upozornění, pokud máte pořád chyby v kódu.
- 
+
 1. Při spuštění programu, zobrazí okno konzoly zobrazení výsledků, stejně, jako kdyby byste spustili překladač Pythonu s `PythonApplication1.py` z příkazového řádku. Stisknutím klávesy zavřete okno a vrátíte se do editoru Visual Studio.
 
     ![Výstup prvního spuštění programu](media/vs-getting-started-python-07-output.png)
@@ -70,8 +70,8 @@ Sice Průzkumníku řešení, kde budete spravovat soubory projektu, *editor* ok
 1. Dokončit importováním `sin`, `cos`, a `radians` členy, pro každou vašeho povšimnutí dostupné dokončených automaticky. Když jste hotovi, váš kód by měl vypadat takto:
 
     ```python
-    import sys  
-    from math import sin, cos, radians          
+    import sys
+    from math import sin, cos, radians
     ```
 
     > [!Tip]
@@ -80,18 +80,16 @@ Sice Průzkumníku řešení, kde budete spravovat soubory projektu, *editor* ok
 1. Přidejte trochu další kód tisknout kosinus hodnoty 360 stupňů:
 
     ```python 
-    for i in range(360):        
+    for i in range(360):
         print(cos(radians(i)))
     ```
 
 1. Spusťte program znovu s Ctrl + F5 nebo **ladění > Spustit bez ladění**. Po dokončení zavřete okno výstup.
 
-
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
 > [Používání okna interaktivní REPL](vs-tutorial-01-03.md)
-
 
 ## <a name="going-deeper"></a>Budete hlubší
 

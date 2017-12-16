@@ -1,5 +1,5 @@
 ---
-title: "Chyba vyžadována autorizace proxy | Microsoft Docs"
+title: "Odstranění autorizace proxy server vyžaduje chyby | Microsoft Docs"
 ms.custom: 
 ms.date: 09/22/2017
 ms.reviewer: 
@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6544edb62bac07f5ab787e4a3b2f8abaebafa777
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 7c8c4562f6c3a3b61274024b541f78321c9a8408
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="proxy-authorization-required"></a>Povolení proxy požadovaného
 
@@ -59,7 +59,3 @@ Této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu pr
     NEBO
 
 - Můžete také podle pokynů v [tento příspěvek](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) přidat kód, který vám umožní použít proxy server.
-
-## <a name="see-also"></a>Viz také
-
-[Sada Visual Studio prostředků z Internetu](../connected-environment.md)

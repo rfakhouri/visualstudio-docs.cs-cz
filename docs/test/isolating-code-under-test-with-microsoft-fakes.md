@@ -6,53 +6,55 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
+dev.langs:
+- VB
+- CSharp
 ms.topic: article
-ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
-caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 1802f211002585a2f23e82b8e0b097c118bd1ff5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: f9064c1d7068cc8fe8f367001f7908f65f8a6bdf
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolace testovaného kódu pomocí zástupného rozhraní Microsoft
-Pomoc Microsoft Fakes izolovat kód testujete nahrazením dalších částí aplikace pomocí *zástupných procedur* nebo *překrytí*. Jedná se o malé části kódu, které jsou pod kontrolou testů. Díky izolaci testovacího kódu víte, že pokud se test nezdaří, příčina je zde a ne někde jinde. Zástupné procedury a překrytí také umožňují testování kódu, i když jiné části aplikace ještě nefungují.  
-  
- Jsou dva typy napodobenin:  
-  
--   A [se zakázaným inzerováním](#stubs) nahradí třída malé substitute, který implementuje rozhraní stejné.  Pro použití zástupných procedur je nutné navrhnout aplikaci tak, aby jednotlivé součásti závisely pouze na rozhraních a nikoli na ostatních součástech. („Součást“ představuje třídu nebo skupinu tříd, které jsou navrženy a aktualizovány společně a obvykle obsaženy v sestavení.)  
-  
--   A [shim](#shims) upraví zkompilovaný kód aplikace za běhu, tak, aby místo provedení volání zadanou metodu, běžel shim kód, který poskytuje svůj test. Překrytí lze použít k nahrazení volání na sestavení, které nelze upravit, například sestavení .NET.  
-  
- ![Fakes nahradit ostatní součásti](../test/media/fakes-2.png "Fakes-2")  
-  
- **Požadavky**  
-  
--   Visual Studio Enterprise  
-  
+
+Microsoft Fakes slouží k oddělení kód testujete nahrazením dalších částí aplikace pomocí *zástupných procedur* nebo *překrytí*. Jedná se o malé části kódu, které jsou pod kontrolou testů. Díky izolaci testovacího kódu víte, že pokud se test nezdaří, příčina je zde a ne někde jinde. Zástupné procedury a překrytí také umožňují testování kódu, i když jiné části aplikace ještě nefungují.
+
+Jsou dva typy napodobenin:
+
+-   A [se zakázaným inzerováním](#stubs) nahradí třída malé substitute, který implementuje rozhraní stejné.  Pro použití zástupných procedur je nutné navrhnout aplikaci tak, aby jednotlivé součásti závisely pouze na rozhraních a nikoli na ostatních součástech. („Součást“ představuje třídu nebo skupinu tříd, které jsou navrženy a aktualizovány společně a obvykle obsaženy v sestavení.)
+
+-   A [shim](#shims) upraví zkompilovaný kód aplikace za běhu, tak, aby místo provedení volání zadanou metodu, běžel shim kód, který poskytuje svůj test. Překrytí lze použít k nahrazení volání na sestavení, které nelze upravit, například sestavení .NET.
+
+![Fakes nahradit ostatní součásti](../test/media/fakes-2.png "Fakes-2")  
+
+**Požadavky**
+
+-   Visual Studio Enterprise
+
 ## <a name="choosing-between-stub-and-shim-types"></a>Volba mezi zástupnou procedurou a překrytím  
- Obvykle byste měli považovat projekt sady Visual Studio za součást, protože vytváříte a aktualizujete tyto třídy současně. Měli byste zvážit použití zástupných procedur a překrytí pro volání, která projekt provádí do jiných projektů v rámci vašeho řešení nebo do jiných sestavení, na která projekt odkazuje.  
+Obvykle byste měli považovat projekt sady Visual Studio za součást, protože vytváříte a aktualizujete tyto třídy současně. Měli byste zvážit použití zástupných procedur a překrytí pro volání, která projekt provádí do jiných projektů v rámci vašeho řešení nebo do jiných sestavení, na která projekt odkazuje.  
   
- Jako obecné vodítko použijte zástupné procedury pro volání v rámci řešení sady Visual Studio a překrytí použijte pro volání do jiných odkazovaných sestavení. Je to proto, že u vašeho vlastního řešení je vhodné oddělit součásti definováním rozhraní tak, jak vyžaduje vytváření zástupných procedur. Ale externí sestavení, jako například System.dll, nejsou obvykle vybavena samostatnými definicemi rozhraní, takže je nutné místo toho použít překrytí.  
+Jako obecné vodítko použijte zástupné procedury pro volání v rámci řešení sady Visual Studio a překrytí použijte pro volání do jiných odkazovaných sestavení. Je to proto, že u vašeho vlastního řešení je vhodné oddělit součásti definováním rozhraní tak, jak vyžaduje vytváření zástupných procedur. Ale externí sestavení, jako například System.dll, nejsou obvykle vybavena samostatnými definicemi rozhraní, takže je nutné místo toho použít překrytí.  
   
- Ostatní úvahy:  
+Ostatní úvahy:  
   
- **Výkon.** Překrytí pracují pomaleji, protože přepisují kód za běhu. Zástupné procedury nemají takové nároky na výkon a jsou stejně rychlé jako virtuální metody.  
+**Výkon.** Překrytí pracují pomaleji, protože přepisují kód za běhu. Zástupné procedury nemají takové nároky na výkon a jsou stejně rychlé jako virtuální metody.  
   
- **Statické metody zapečetěná typy.** Zástupné procedury můžete použít pouze k implementaci rozhraní. Proto nelze použít typy zástupných procedur pro statické metody, nevirtuální metody, zapečetěné virtuální metody, metody v zapečetěných typech atd.  
+**Statické metody zapečetěná typy.** Zástupné procedury můžete použít pouze k implementaci rozhraní. Proto nelze použít typy zástupných procedur pro statické metody, nevirtuální metody, zapečetěné virtuální metody, metody v zapečetěných typech atd.  
   
- **Vnitřní typy.** S vnitřní typy, které jsou zpřístupněny pomocí atributu sestavení můžete použít zástupných procedur i překrytí <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
+**Vnitřní typy.** S vnitřní typy, které jsou zpřístupněny pomocí atributu sestavení můžete použít zástupných procedur i překrytí <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
   
- **Privátní metody.** Překrytí mohou nahradit volání do soukromých metod, pokud jsou viditelné všechny typy v podpisu metody. Zástupné procedury mohou nahradit pouze viditelné metody.  
+**Privátní metody.** Překrytí mohou nahradit volání do soukromých metod, pokud jsou viditelné všechny typy v podpisu metody. Zástupné procedury mohou nahradit pouze viditelné metody.  
   
- **Rozhraní a abstraktní metody.** Zástupné procedury poskytují implementace rozhraní a abstraktní metody, které lze použít při testování. Překrytí nelze instrumentace rozhraní a abstraktní metody, protože nemají těla metody.  
+**Rozhraní a abstraktní metody.** Zástupné procedury poskytují implementace rozhraní a abstraktní metody, které lze použít při testování. Překrytí nelze instrumentace rozhraní a abstraktní metody, protože nemají těla metody.  
   
- Obecně doporučujeme používat typy zástupných procedur k izolaci od závislostí v rámci vašeho základu kódu. To lze provést skrytím součástí za rozhraní. Typy překrytí lze použít k izolaci od součástí třetích stran, které neposkytují testovatelné rozhraní API.  
+Obecně doporučujeme používat typy zástupných procedur k izolaci od závislostí v rámci vašeho základu kódu. To lze provést skrytím součástí za rozhraní. Typy překrytí lze použít k izolaci od součástí třetích stran, které neposkytují testovatelné rozhraní API.  
   
 ##  <a name="stubs"></a>Začínáme s zástupných procedur  
- Podrobnější popis najdete v tématu [pomocí zástupných procedury za izolace částí aplikace od sebe navzájem pro testování částí](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
+Podrobnější popis najdete v tématu [pomocí zástupných procedury za izolace částí aplikace od sebe navzájem pro testování částí](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
 1.  **Vložit rozhraní**  
   
@@ -141,14 +143,14 @@ Pomoc Microsoft Fakes izolovat kód testujete nahrazením dalších částí apl
   
     ```  
   
-     Speciální druhem magic tady je třída `StubIStockFeed`. Pro každé rozhraní v odkazovaném sestavení generuje mechanismus rozhraní Microsoft Fakes zástupnou třídu. Název třídy se zakázaným inzerováním je odvozený od názvu rozhraní, s "`Fakes.Stub`" jako předpony a názvy typů parametr, který se připojí.  
+    Speciální druhem magic tady je třída `StubIStockFeed`. Pro každé rozhraní v odkazovaném sestavení generuje mechanismus rozhraní Microsoft Fakes zástupnou třídu. Název třídy se zakázaným inzerováním je odvozený od názvu rozhraní, s "`Fakes.Stub`" jako předpony a názvy typů parametr, který se připojí.  
   
-     Zástupné procedury jsou také generovány pro mechanismy získání a nastavení vlastností, pro události a pro obecné metody. Další informace najdete v tématu [pomocí zástupných procedury za izolace částí aplikace od sebe navzájem pro testování částí](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
+    Zástupné procedury jsou také generovány pro mechanismy získání a nastavení vlastností, pro události a pro obecné metody. Další informace najdete v tématu [pomocí zástupných procedury za izolace částí aplikace od sebe navzájem pro testování částí](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
 ##  <a name="shims"></a>Začínáme s překrytí  
- (Podrobnější popis najdete v tématu [pomocí překrytí účelem izolace aplikace od ostatních sestavení pro testování částí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)  
+(Podrobnější popis najdete v tématu [pomocí překrytí účelem izolace aplikace od ostatních sestavení pro testování částí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)  
   
- Předpokládejme, že obsahuje příslušné součásti volání `DateTime.Now`:  
+Předpokládejme, že obsahuje příslušné součásti volání `DateTime.Now`:  
   
 ```csharp  
 // Code under test:  
@@ -159,9 +161,9 @@ Pomoc Microsoft Fakes izolovat kód testujete nahrazením dalších částí apl
   
 ```  
   
- Během testování, byste chtěli kód shim `Now` vlastnost, protože skutečná verze inconveniently vrátí jinou hodnotu u každé volání.  
+Během testování, byste chtěli kód shim `Now` vlastnost, protože skutečná verze inconveniently vrátí jinou hodnotu u každé volání.  
   
- Pokud chcete používat překrytí, nemáte upravit kód aplikace nebo zapisují určitým způsobem.  
+Pokud chcete používat překrytí, nemáte upravit kód aplikace nebo zapisují určitým způsobem.  
   
 1.  **Přidat Fakes sestavení**  
   
@@ -200,10 +202,9 @@ Pomoc Microsoft Fakes izolovat kód testujete nahrazením dalších částí apl
                     Assert.AreEqual(fixedYear, year);  
                 }  
             }  
-    }  
-  
-    ```  
-  
+    }
+    ```
+
     ```vb  
     <TestClass()> _  
     Public Class TestClass1  
@@ -229,22 +230,22 @@ Pomoc Microsoft Fakes izolovat kód testujete nahrazením dalších částí apl
         End Sub  
     End Class  
     ```  
-  
-     Názvy tříd Shim jsou vytvořeny pomocí prefixu `Fakes.Shim` na původní název typu. Názvy parametrů jsou připojeny k názvu metody. (Nemusíte přidávat žádné sestavení odkaz na System.Fakes.)  
-  
- Předchozí příklad používá překrytí pro statickou metodu. Chcete-li použít doplňkový kód pro metodu instance, napište `AllInstances` mezi název typu a název metody:  
-  
+
+    Názvy tříd Shim jsou vytvořeny pomocí prefixu `Fakes.Shim` na původní název typu. Názvy parametrů jsou připojeny k názvu metody. (Nemusíte přidávat žádné sestavení odkaz na System.Fakes.)  
+
+Předchozí příklad používá překrytí pro statickou metodu. Chcete-li použít doplňkový kód pro metodu instance, napište `AllInstances` mezi název typu a název metody:  
+
 ```  
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  
 ```  
-  
- (Neexistuje žádné sestavení 'System.IO.Fakes' Chcete-li. Obor názvů je generován shim procesu vytváření. Ale můžete použít 'pomocí' nebo 'Importovat' obvyklým způsobem.)  
-  
- Můžete také vytvořit překrytí pro konkrétní instance, konstruktory a vlastnosti. Další informace najdete v tématu [pomocí překrytí účelem izolace aplikace od ostatních sestavení pro testování částí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
-  
+
+(Neexistuje žádné sestavení 'System.IO.Fakes' Chcete-li. Obor názvů je generován shim procesu vytváření. Ale můžete použít 'pomocí' nebo 'Importovat' obvyklým způsobem.)  
+
+Můžete také vytvořit překrytí pro konkrétní instance, konstruktory a vlastnosti. Další informace najdete v tématu [pomocí překrytí účelem izolace aplikace od ostatních sestavení pro testování částí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
+
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Pomocí zástupných procedury za izolace částí aplikace od sebe navzájem pro testování částí](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)  
+ [Vzájemná izolace částí aplikace pomocí zástupných procedury za účelem testování jednotek](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)  
   
- [Pomocí překrytí účelem izolace aplikace od ostatních sestavení pro testování částí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
+ [Izolace aplikace od ostatních sestavení pomocí překrytí za účelem testování jednotek](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
- [Generování kódu, kompilace a konvence pojmenování ve Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+ [Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 90f22c2f7626b09f230c497c54c8a37511ea1b0b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: c8d9e1ea91b5f13961941644871dd881f49a7416
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 
@@ -26,34 +26,34 @@ Kromě správy projektů, zajištění s formátováním úpravy prostředí a o
 
 1. Nahraďte kód v `PythonApplication1.py` souboru následujícím kódem. Případný rozdíl kód rozšiřuje `make_dot_string` tak, aby můžete zkontrolovat jeho diskrétní kroky v ladicím programu. Také zobrazuje `for` cykly do `main` funkce a explicitně spustí při volání této funkce:
 
-    ```python  
-    import sys  
-    from math import sin, cos, radians    
-    
+    ```python
+    import sys
+    from math import sin, cos, radians
+
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
         numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
         str = ' ' * numspaces + 'o'                  # place 'o' after the spaces
         return str
-    
-    def main():  
+
+    def main():
         for i in range(0, 1800, 12):
-            s = make_dot_string(i)  
-            print(s)  
-            
+            s = make_dot_string(i)
+            print(s)
+
     main()
-    ```  
+    ```
 
 1. Zkontrolujte, zda kód funguje správně stisknutím klávesy F5 nebo výběr **ladění > Spustit ladění** příkazu nabídky. Tento příkaz spustí kód v ladicím programu, ale vzhledem k tomu, že jste to neudělali nic pozastavit program, když je spuštěná, právě vytiskne wave vzor několik iterací. Stisknutím klávesy do okna výstupu.
 
     > [!Tip]
     > Zavřete okno výstup automaticky po dokončení programu, nahraďte `main()` volání následujícím kódem:
     >
-    > ```python    
-    > if __name__ == "__main__":  
-    >     sys.exit(int(main() or 0))      
-    > ```    
+    > ```python
+    > if __name__ == "__main__":
+    >     sys.exit(int(main() or 0))
+    > ```
 
 1. Nastavit zarážky `for` příkaz jedním klepnutím na okraji šedé daného řádku nebo umístění pomocí kurzoru do daného řádku a pomocí **ladění > Přepnout zarážku** příkazu (F9). Červené tečky se zobrazí v šedé okraj udávajících zarážek (jak je uvedeno níže šipkou):
 
@@ -78,7 +78,7 @@ Kromě správy projektů, zajištění s formátováním úpravy prostředí a o
     - **Krokovat s Vystoupením** (Shift + F11) spouští zbytek funkci current a pozastaví v volání kódu.
 
 1. Krok přes `for` příkaz pomocí **Krokovat s přeskočením**. *Krokování s* znamená, že ladicí program spustí aktuálního řádku kódu, včetně volání funkce a pak okamžitě pozastaví znovu. Všimněte si jak proměnnou `i` je nyní definována ve **místní hodnoty –** a **automobily** systému windows.
- 
+
 1. Krok v dalším řádku kódu, který volá `make_dot_string` a pozastaví. Krokovat s přeskočením zde konkrétně znamená, že ladicí program spouští celé `make_dot_string` a když se vrátí. Ladicí program nezastaví uvnitř této funkce, pokud existuje samostatné zarážek existuje.
 
 1. Krokování přes kód několik vícekrát pokračovat a sledovat, jak hodnoty v **místní hodnoty –** nebo **automobily** okno změnit.
@@ -86,20 +86,20 @@ Kromě správy projektů, zajištění s formátováním úpravy prostředí a o
 1. V **místní hodnoty –** nebo **automobily** poklikejte na soubor v okně **hodnotu** sloupec pro buď `i` nebo `s` proměnné, které chcete upravit hodnotu. Stiskněte klávesu Enter nebo klikněte na tlačítko mimo tuto hodnotu, aby byly použity všechny změny.
 
 1. Pokračovat v procházení kódu pomocí **Krokovat s vnořením**. Krokovat s vnořením znamená, že zadá ladicího programu v žádném volání funkce, pro kterou má ladicí informace, jako například `make_dot_string`. Jednou uvnitř `make_dot_string` můžete zkontrolovat její místní proměnné a konkrétně projděte jeho kód.
- 
+
 1. Krokování s Krokovat s vnořením pokračovat a Všimněte si, že když dosáhnout konce `make_dot_string`, vrátí další krok `for` smyčky s novou hodnotou vrácenou v `s` proměnné. Jako můžete znovu na krok `print` prohlášení, Všimněte si, že Krokovat s vnořením na `print` nevstupuje do této funkce. Důvodem je, že `print` není napsané v Pythonu, ale je místo nativního kódu uvnitř modul Python runtime.
 
 1. Pokračovat v používání Krokovat s vnořením, dokud jste znovu partway do `make_dot_string`. Potom pomocí **Krokovat s Vystoupením** a Všimněte si, že se vrátíte na `for` smyčky. Ladicí program s Krokovat s Vystoupením, spustí zbytek funkce a automaticky pozastaví v volání kódu. To je velmi užitečné, když jste provedl některé část zdlouhavé funkce, kterou chcete ladit, ale nepotřebujete krok procházení zbytku a nebudete chtít nastavit explicitní zarážek v volání kódu.
 
 1. Chcete-li pokračovat, spuštění programu, dokud nebude dosaženo další zarážku, použijte **pokračovat** (F5). Vzhledem k tomu, že máte zarážky ve `for` smyčky, budete rozdělit na další iterace.
 
-1. Procházení stovky iterace smyčky může to být zdlouhavé, takže Visual Studio můžete přidat *podmínku* k zarážky. Ladicí program pak pozastaví programu u zarážky jenom v případě, že je splněna podmínka. Například můžete použít podmínku se zarážkou na `for` prohlášení, které se pozastaví pouze při hodnotě `i` překračuje 1 600. Pokud chcete nastavit tuto podmínku, klikněte pravým tlačítkem na red zarážek tečky a vyberte **podmínky...** (Alt + F9, C). V **nastavení zarážek** překryvné okno zobrazené, zadejte `i > 1600` jako výraz a vyberte **Zavřít**. Stisknutím klávesy F5 pokračovat a pozorovat, že se program spouští mnoho iterací před koncem Další. 
+1. Procházení stovky iterace smyčky může to být zdlouhavé, takže Visual Studio můžete přidat *podmínku* k zarážky. Ladicí program pak pozastaví programu u zarážky jenom v případě, že je splněna podmínka. Například můžete použít podmínku se zarážkou na `for` prohlášení, které se pozastaví pouze při hodnotě `i` překračuje 1 600. Pokud chcete nastavit tuto podmínku, klikněte pravým tlačítkem na red zarážek tečky a vyberte **podmínky...** (Alt + F9, C). V **nastavení zarážek** překryvné okno zobrazené, zadejte `i > 1600` jako výraz a vyberte **Zavřít**. Stisknutím klávesy F5 pokračovat a pozorovat, že se program spouští mnoho iterací před koncem Další.
 
     ![Nastavení zarážek podmínku](media/vs-getting-started-python-21-debugging4.png)
 
 1. Chcete-li spustit program dokončen, zakázat zarážce kliknete pravým tlačítkem a výběrem **zakázat zarážek** (Ctrl + F9). Potom vyberte **pokračovat** (nebo stiskněte klávesu F5) ke spuštění programu. Při ukončení programu sady Visual Studio zastaví jeho relaci ladění a vrátí jeho režimu úprav. Všimněte si, že můžete také odstranit zarážce kliknutím jeho tečku, ale to také odstraní všechny podmínky, které jste nastavili.
 
-> [!Tip]    
+> [!Tip]
 > V některých situacích, jako je například selhání při spuštění překladač Pythonu, samostatně může ve výstupním okně zobrazí pouze stručně a pak zavřete automaticky bez s možností zobrazíte všechny chyby zprávy. Pokud k tomu dojde, klikněte pravým tlačítkem na projekt v Průzkumníku řešení, vyberte **vlastnosti**, vyberte **ladění** kartě a pak přidejte `-i` k **překladač argumenty** pole. Tento argument způsobí, že překladač uvést do režimu interaktivní po dokončení programu, a tím zprovozní okno Otevřít zadejte Ctrl + Z, zadejte ukončíte.
 
 ## <a name="next-steps"></a>Další kroky
@@ -108,5 +108,6 @@ Kromě správy projektů, zajištění s formátováním úpravy prostředí a o
 > [Instalace balíčků ve vašem prostředí Python](vs-tutorial-01-05.md)
 
 ### <a name="going-deeper"></a>Budete hlubší
+
 - [Ladění](debugging.md).
 - [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md) poskytuje úplnou dokumentaci sady Visual Studio je ladění funkcí.

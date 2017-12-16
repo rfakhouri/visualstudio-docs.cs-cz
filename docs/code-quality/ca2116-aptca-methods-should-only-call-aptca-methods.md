@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5c1b61e8895258a4f27d3803bf7fb5e4e2a0fba3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody APTCA by měly volat pouze metody APTCA
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  Částečně důvěryhodné volající `X` můžete volat metodu `M1`, což způsobilo `M1` volat `M2`. Protože `M2` nemá atribut APTCA jeho bezprostředního volajícího (`M1`) musí splňovat požadavek propojení pro úplný vztah důvěryhodnosti; `M1` má úplný vztah důvěryhodnosti a proto splňuje této kontroly. Je bezpečnostní riziko, protože `X` neúčastní neodpovídajících vyžádání odkaz, který chrání `M2` z nedůvěryhodné volající. Metody s atributem APTCA proto nesmějí volat metody, které nemají atribut.  
   
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Pokud atribut APTCA je zapotřebí, použijte k ochraně metodu, která volá do úplný vztah důvěryhodnosti sestavení vyžádání. Přesný oprávnění závisí na vyžádání je funkce vystavené metodu. Pokud je možné, chrání metodu o úplný vztah důvěryhodnosti k zajištění, že základní funkce není vystavený částečně důvěryhodné volající. Pokud to není možné, vyberte sadu oprávnění, která efektivně chrání zveřejněné funkce. Další informace o požadavky najdete v tématu [požadavky](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+ Pokud atribut APTCA je zapotřebí, použijte k ochraně metodu, která volá do úplný vztah důvěryhodnosti sestavení vyžádání. Přesný oprávnění závisí na vyžádání je funkce vystavené metodu. Pokud je možné, chrání metodu o úplný vztah důvěryhodnosti k zajištění, že základní funkce není vystavený částečně důvěryhodné volající. Pokud to není možné, vyberte sadu oprávnění, která efektivně chrání zveřejněné funkce.  
   
 ## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
  Chcete-li bezpečně potlačit upozornění na toto pravidlo, je nutné zajistit, že funkce vystavené metoda přímo nebo nepřímo neumožňuje volajícím přístup k citlivým informacím, provoz nebo prostředky, které můžete použít destruktivní způsobem.  
@@ -74,12 +74,10 @@ ms.lasthandoff: 10/31/2017
  **Vyžádání pro úplné důvěryhodnosti: požadavek se nezdařilo.**  
 **ClassRequiringFullTrust.DoWork byla volána.**   
 ## <a name="related-rules"></a>Související pravidla  
- [CA2117: Typy APTCA by měl rozšířit pouze základní typy APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
+ [CA2117: Typy APTCA by měly rozšířit pouze základní typy APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines)   
- [Sestavení rozhraní .NET framework s částečně důvěryhodným kódem](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Používání knihoven z částečně důvěryhodného kódu](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Požadavky](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [Požadavky na odkaz](/dotnet/framework/misc/link-demands)   
- [Data a modelování](/dotnet/framework/data/index)
+ [Data a modelování](/dotnet/framework/data/index)

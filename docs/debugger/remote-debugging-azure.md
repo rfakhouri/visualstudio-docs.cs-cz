@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 4e42513e431fd81a85d54a3e9784ebaa6cd26eb2
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na službu IIS a systém Azure v rámci Visual Studio 2017
 Můžete nasadit webovou aplikaci ASP.NET do počítače Windows serveru se službou IIS a její nastavení pro vzdálené ladění. Tato příručka vysvětluje, jak nastavit a konfigurace aplikace Visual Studio 2017 ASP.NET Core, ho nasadit do Azure pomocí služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio.
@@ -47,11 +47,11 @@ Mezi dvěma počítači připojené prostřednictvím proxy serveru se nepodporu
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Vytvoření aplikace ASP.NET Core v počítači Visual Studio 2017 
 
-1. Vytvoření nové aplikace ASP.NET Core. (Zvolte **soubor > Nový > projekt**, pak vyberte **Visual C# > Web > webové aplikace ASP.NET Core (.NET Core)**).
+1. Vytvoření nové aplikace ASP.NET Core. (Vyberte **soubor > Nový > projekt**, pak vyberte **Visual C# > Web > webové aplikace ASP.NET Core**).
 
     V **ASP.NET Core** část šablony, vyberte **webové aplikace**.
 
-2. Ujistěte se, že **povolení podpory Docker** je **není** vybrané a že **ověřování** je nastaven na **bez ověřování**.
+2. Ujistěte se, že **technologii ASP.NET 2.0 základní** je vybraná, který **povolení podpory Docker** je **není** vybrané a že **ověřování** je nastaven na **Bez ověřování**.
 
 3. Název projektu **MyASPApp** a klikněte na tlačítko **OK** k vytvoření nové řešení.
 

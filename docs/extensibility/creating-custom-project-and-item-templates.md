@@ -12,11 +12,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e99505c0d3c4ee59f6e07a5b38d5d95533ab879f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b3081537b1704fd461a458798d646bf7eeb65f0a
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="creating-custom-project-and-item-templates"></a>Vytváření vlastních projektů a šablon položek
 Visual Studio SDK obsahuje šablony projektů, které vytvořit vlastní šablonu projektu a šablonu vlastní položky. Tyto šablony zahrnují některé běžné nahrazení parametru a sestavení jako soubory zip. Se nenasadí automaticky a nejsou k dispozici v experimentální instanci. Je nutné zkopírovat souboru zip souborů k umístění  
@@ -79,7 +79,7 @@ Visual Studio SDK obsahuje šablony projektů, které vytvořit vlastní šablon
   
 4.  Sestavte řešení a stiskněte klávesu F5. Zobrazí se experimentální instanci.  
   
-5.  Pro projekt šablony projektu, měli byste vidět uvedené v projektu šablony **nový projekt** dialogové okno (**souboru / New / Project**) v jazyce Visual C# nebo Visual Basic uzlu. Pro projekt šablony položky, měli byste vidět vaší šablony položky, které jsou uvedené v dialogovém okně Přidat novou položku (v **Průzkumníku řešení**, vyberte uzel projektu a klikněte na **přidat / nová položka**).  
+5.  Pro projekt šablony projektu, měli byste vidět uvedené v projektu šablony **nový projekt** dialogové okno (**soubor > Nový > projekt**) v jazyce Visual C# nebo Visual Basic uzlu. Pro projekt šablony položky, měli byste vidět vaší šablony položky, které jsou uvedené v dialogovém okně Přidat novou položku (v **Průzkumníku řešení**, vyberte uzel projektu a klikněte na **přidat / nová položka**).  
   
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace šablony sady Visual Studio](../ide/visual-studio-template-reference.md)

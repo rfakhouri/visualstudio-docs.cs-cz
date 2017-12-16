@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cba3d5568ee2fa2b4af0eb9c10995c813fe09c01
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Technologie LINQ to SQL nástroje v sadě Visual Studio
 Technologie LINQ to SQL je první objekt relační mapování technologie vydaných společností Microsoft. Je dobře funguje v základní scénáře a nadále podporován v sadě Visual Studio, ale je již ve službě active vývoji. Pomocí LINQ to SQL při zachování starší verze aplikace, který je již používán nebo v jednoduché aplikace, které používá SQL Server a nevyžadují mapování více tabulek. Obecně platí nové aplikace by měly používat rozhraní Entity Framework, pokud je potřeba vrstva relační objekt mapper.  
@@ -62,7 +62,7 @@ V sadě Visual Studio vytvořte LINQ na SQL třídy, které představují tabulk
  Jako jiné objekty, [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] třídy můžete použít dědičnosti a být odvozen od jiné třídy. V databázi jsou vytvořit relace dědičnosti několika způsoby. [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Podporuje koncept dědění jedné tabulky, jak často jsou implementované v relačním systémech. Další informace najdete v tématu [postupy: Konfigurace dědičnosti pomocí Návrhář relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).  
   
 ## <a name="linq-to-sql-queries"></a>Dotazy LINQ to SQL  
- Tříd entit, které jsou vytvořené [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] jsou navrženy pro použití s [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d). Další informace najdete v tématu [postupy: dotaz na informace o](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).  
+ Tříd entit, které jsou vytvořené [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] jsou navrženy pro použití s [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/). Další informace najdete v tématu [postupy: dotaz na informace o](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).  
   
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Rozdělit do různých oborech názvů generovaného DataContext a kód Entity – třída  
  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Poskytuje **kontextu Namespace** a **Entity Namespace** vlastnosti <xref:System.Data.Linq.DataContext>. Tyto vlastnosti určují, jaký obor názvů <xref:System.Data.Linq.DataContext> a generování kódu entity třídy do. Ve výchozím nastavení, jsou tyto vlastnosti prázdné a <xref:System.Data.Linq.DataContext> a tříd entit, které se generují do oboru názvů aplikace. Ke generování kódu do oboru názvů než obor názvů aplikace, zadejte hodnotu do **kontextu Namespace** nebo **Entity Namespace** vlastnosti.

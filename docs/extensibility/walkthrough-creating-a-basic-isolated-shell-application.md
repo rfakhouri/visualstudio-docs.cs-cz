@@ -17,11 +17,11 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4df0d9f772d92ac7f1f106b9befc0a8a2f89a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e3f8eaa704dca0b939665e900e74fc3cb5120307
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Návod: Vytvoření základní izolované prostředí aplikace
 Tento návod ukazuje, jak vytvořit řešení s izolované prostředí, přizpůsobit panel nástrojů nápovědy o a vytvořte instalační program, který nainstaluje izolované prostředí.  
@@ -78,7 +78,7 @@ Tento návod ukazuje, jak vytvořit řešení s izolované prostředí, přizpů
   
 3.  Sestavte řešení a spuštění ladění.  
   
-4.  V **zobrazení nebo ostatní okna**, klikněte na tlačítko **webový prohlížeč**. **Webový prohlížeč** okně se zobrazí na domovskou stránku Microsoft Corporation.  
+4.  V **zobrazení > ostatní okna**, klikněte na tlačítko **webový prohlížeč**. **Webový prohlížeč** okně se zobrazí na domovskou stránku Microsoft Corporation.  
   
 ## <a name="removing-the-print-command"></a>Odebrání příkaz pro tisk  
  Soubor .vsct v projektu izolované prostředí uživatelského rozhraní obsahuje sadu deklarací ve tvaru `<Define name=No_` *Element*`>`, kde *Element* je jedním z nabídky standardní sady Visual Studio a příkazy.  
@@ -101,7 +101,7 @@ Tento návod ukazuje, jak vytvořit řešení s izolované prostředí, přizpů
   
 4.  Odebere příkaz pro tisk.  
   
-5.  Spusťte ladění aplikace izolované prostředí. Ověřte, zda **souboru / Print** příkaz je pryč.  
+5.  Spusťte ladění aplikace izolované prostředí. Ověřte, zda **soubor > Tisk** příkaz je pryč.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Izolované prostředí odebráním funkcí  
  Můžete odebrat některé balíčky, které jsou načteny pomocí sady Visual Studio úpravou souboru .pkgundef, pokud nechcete tyto funkce v aplikaci vlastní izolované prostředí. Zadejte balíček v jednom z podklíčů klíče registru \Packages $RootKey$.  
@@ -147,7 +147,7 @@ Tento návod ukazuje, jak vytvořit řešení s izolované prostředí, přizpů
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  Spuštění ladění a otevřete v izolované prostředí aplikace **Nápověda / o** pole. Měli byste vidět změněné řetězce. Nadpis nápovědy/o pole je stejný jako `AssemblyTitle` hodnota v AssemblyInfo.cs.  
+4.  Spuštění ladění a otevřete v izolované prostředí aplikace **pomoci > o** pole. Měli byste vidět změněné řetězce. Nadpis nápovědy/o pole je stejný jako `AssemblyTitle` hodnota v AssemblyInfo.cs.  
   
 5.  Vlastnosti **Nápověda/o** pole se nacházejí v souboru MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Chcete-li změnit šířku nápovědy/o pole, přejděte na `AboutDialogStyle` blokovat a nastavte `Width` vlastnost na 200:  
   

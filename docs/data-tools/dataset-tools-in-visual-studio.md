@@ -50,11 +50,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0a589cf48f53636bcd3892c7c4c991e0fb516bf3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Datové sady nástrojů v sadě Visual Studio
 > [!NOTE]
@@ -77,13 +77,13 @@ ms.lasthandoff: 10/31/2017
   
     -   [Vyplnění datové sady s použitím objektů TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)  
   
-    -   [Úpravy dat v datových sadách](../data-tools/edit-data-in-datasets.md)  
+    -   [Úprava dat v datových sadách](../data-tools/edit-data-in-datasets.md)  
   
     -   [Ověřování dat v datových sadách](../data-tools/validate-data-in-datasets.md)  
   
-    -   [Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)  
+    -   [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)  
   
--   Dotaz a vyhledávání dat v datové sadě. Další informace najdete v tématu [dotaz datové sady](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]umožňuje [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) nad daty v <xref:System.Data.DataSet> objektu. Další informace najdete v tématu [LINQ na DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
+-   Dotaz a vyhledávání dat v datové sadě. Další informace najdete v tématu [dotaz datové sady](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]umožňuje [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) nad daty v <xref:System.Data.DataSet> objektu. Další informace najdete v tématu [LINQ na DataSet](/dotnet/framework/data/adonet/linq-to-dataset).  
   
 -   Použití **zdroje dat** okno pro vytvoření vazby ovládacích prvků uživatelského rozhraní pro datové sady nebo její jednotlivé sloupce a určete sloupce, které mají být uživatele nelze upravit. Další informace najdete v tématu [vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
@@ -94,4 +94,4 @@ ms.lasthandoff: 10/31/2017
  Informace o převodu datové sady do a ze souboru XML, najdete v článku [data XML pro čtení do datové sady](../data-tools/read-xml-data-into-a-dataset.md) a [uložení datové sady ve formátu XML](../data-tools/save-a-dataset-as-xml.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Data nástroje sady Visual Studio pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

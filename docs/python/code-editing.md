@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 99859fc5b9e48078b037f6d68ad3d3847658a1d0
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 016ba0478ace36dc9492641dcb95f793cdda5fb7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="editing-python-code"></a>Úpravy kódu jazyka Python
 
@@ -32,7 +32,7 @@ Obecné dokumentaci na úpravy kódu v sadě Visual Studio najdete v tématu [ps
 
 Editor integrována se interaktivních okna v sadě Visual Studio, což usnadňuje exchange kód mezi nimi. Najdete v části [kurzu krok 3: použití okna interaktivní REPL](vs-tutorial-01-03.md) a [pomocí okna interaktivní - odeslání kódu interaktivního příkazu](interactive-repl.md#send-code-to-interactive-command) podrobnosti.
 
-Úvod k úpravám kód Python, najdete v části [úpravy kód Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2m30s):
+Úvod k úpravám kód Python, najdete v části [kód Python úpravy](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2m30s):
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
 

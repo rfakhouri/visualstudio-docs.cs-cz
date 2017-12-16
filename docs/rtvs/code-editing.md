@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: b2910a297a5faeda601f91646d9b11396a4711f5
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Úpravy R kódu v sadě Visual Studio
 
@@ -34,7 +34,7 @@ V tomto tématu:
 
 Také najdete v tématech na [IntelliSense](code-intellisense.md), [linting](code-linting.md), [výstřižky kódu](code-snippets.md), a [R Markdownu](rmarkdown.md).
 
-## <a name="syntax-highlighting"></a>zvýraznění syntaxe 
+## <a name="syntax-highlighting"></a>zvýraznění syntaxe
 
 Kromě zvýrazňování různé části kódu, například řetězce, komentáře a klíčová slova, RTVS také označuje a umožňuje odkazy v komentářích:
 
@@ -67,7 +67,7 @@ Sbalitelné kód oblasti umožňují dočasně skrýt součástí kódu v editor
 K vytvoření požadované kód oblasti vlastní příkazu Obklopit s komentáři, které končí `---`. Malá +/-ovládací prvky nalevo od kódu umožňuje pak rozbalení a sbalení oblastí:
 
 ![Vytváření sbalitelné oblasti s komentáři](media/editing-collapsible-regions.gif)
- 
+
 Ve výchozím nastavení Visual Studio vloží mezery po stisknutí klávesy Tab. Toto chování lze znovu změnit, jak je popsáno na [možnosti, textový Editor, karty](../ide/reference/options-text-editor-all-languages.md).
 
 ## <a name="code-navigation"></a>Navigace v kódu

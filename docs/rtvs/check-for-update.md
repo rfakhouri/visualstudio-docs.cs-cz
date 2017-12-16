@@ -1,7 +1,7 @@
 ---
 title: "Aktuální verzi R Tools pro Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 12/04/2017
+ms.date: 12/12/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
@@ -12,17 +12,17 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 835a854e4b5540910b5d6a6bae2e3bf89748c860
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: 79d289b13367abf0c2f247bfd5e630932c287469
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="rtvs-current-version"></a>Aktuální verze RTVS
 
-Od poslední aktualizace na tuto stránku, nejnovější verze R nástrojů pro Visual Studio (RTVS) byla **1.3.31108.1213**. Vaše verze se může lišit v závislosti na vaší verzi sady Visual Studio a zda používáte verzi preview kanál.
+Od poslední aktualizace na tuto stránku nejnovější verzi R nástrojů pro Visual Studio (RTVS) iss **1.0.31108.1213**. Vaše verze se může lišit v závislosti na vaší verzi sady Visual Studio a zda používáte verzi preview kanál.
 
-Vaši verzi můžete zkontrolovat tak, že přejdete do **pomoci > o** v sadě Visual Studio a posouvání dolů na **R Tools pro Visual Studio** položku: 
+Vaši verzi můžete zkontrolovat tak, že přejdete do **pomoci > o** v sadě Visual Studio a posouvání dolů na **R Tools pro Visual Studio** položku:
 
 ![Zkoumání RTVS verze v sadě Visual Studio (VS2017)](media/current-version.png)
 

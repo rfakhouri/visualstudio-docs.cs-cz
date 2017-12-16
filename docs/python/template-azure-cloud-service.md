@@ -1,5 +1,5 @@
 ---
-title: "Šablona projektu Azure Cloud Service pro jazyk Python | Microsoft Docs"
+title: "Šablona projektu Azure cloud service pro jazyk Python | Microsoft Docs"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b8ddcb234d43407c256145245b4cbdac308ed9ea
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 39abe79dda90acfbb8369f60649e9365bcd824cb
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro jazyk Python
 
@@ -28,7 +28,7 @@ Toto téma obsahuje podrobné informace o šabloně projektů a další podporu 
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
-1. Nainstalujte [.NET SDK služby Azure pro sadu Visual Studio](https://www.visualstudio.com/vs/azure-tools/), které je potřeba použít šablonu cloudové služby.
+1. Nainstalujte [.NET SDK služby Azure pro sadu Visual Studio](https://www.visualstudio.com/vs/azure-tools/), které je potřeba použít šablonu služby cloudu.
 1. V sadě Visual Studio, vyberte **soubor > Nový > projekt...** , vyhledejte "Azure Python" a vyberte **Azure Cloud Service** ze seznamu:
 
     ![Šablona projektu cloudové Azure pro jazyk Python](media/template-azure-cloud-project.png)
@@ -46,7 +46,6 @@ Toto téma obsahuje podrobné informace o šabloně projektů a další podporu 
     ![Soubory podpory Role pracovního procesu](media/template-azure-cloud-service-worker-role-support-files.png)
 
     Chcete-li přidat tyto konfigurační skripty na nový projekt, klikněte pravým tlačítkem na projekt, vyberte možnost **Přidat > novou položku...** a vyberte buď **webové Role podpůrné soubory** nebo **soubory podpory Role pracovního procesu**.
-   
 
 ## <a name="configuring-role-deployment"></a>Konfigurace nasazení role
 
@@ -72,7 +71,6 @@ Pokud chcete spustit v emulátoru, nejdříve se ujistěte, projektu cloudu je p
 
 Všimněte si, že z důvodu omezení v emulátoru není možné ladit kód Python. Proto doporučujeme ladění role je spuštěním nezávisle a potom pomocí emulátoru integrace testování před publikováním.
 
-
 ## <a name="deploying-a-role"></a>Nasazení role
 
 Chcete-li otevřít **publikovat** průvodce, vyberte roli projekt v Průzkumníku řešení a vyberte **sestavení > Publikovat** z hlavní nabídky, nebo klikněte pravým tlačítkem na projekt a vyberte **publikovat**.
@@ -83,12 +81,11 @@ Protože každý virtuální počítač se aktivuje, provede `ConfigureCloudServ
 
 Nakonec spuštěním rolí pracovního procesu `LaunchWorker.ps1`, který spuštěn skript v jazyce Python; webové role inicializovat služby IIS a zahájení zpracování webových požadavků.
 
-
 ## <a name="dependencies"></a>Závislosti
 
 Pro cloudové služby `ConfigureCloudService.ps1` skript používá `pip` nainstalovat sadu Python závislosti. Závislosti musí být zadán v souboru s názvem `requirements.txt` (přizpůsobit úpravou `ConfigureCloudService.ps1`). Soubor je spuštěn s `pip install -r requirements.txt` během inicializace.
 
-Poznámka: instance cloudové služby, musíte zadat všechny knihovny s příponami C nezahrnují kompilátory C předem zkompilovat binární soubory.
+Poznámka: instance cloudové služby, musíte zadat všechny knihovny s příponami C nezahrnují kompilátory jazyka C předem zkompilovat binární soubory.
 
 PIP a jeho závislosti, jakož i balíčky v `requirements.txt`, se stáhnou automaticky a může se počítají jako využití fakturovatelné šířky pásma. V tématu [Správa požadované balíčky](python-environments.md#managing-required-packages) podrobnosti o správě `requirements.txt` soubory.
 
@@ -97,6 +94,7 @@ PIP a jeho závislosti, jakož i balíčky v `requirements.txt`, se stáhnou aut
 Pokud váš web nebo worker role tak správně, po nasazení, zkontrolujte následující:
 
 - Složka bin\ s zahrnuje projekt Python (aspoň):
+
     - `ConfigureCloudService.ps1`
     - `LaunchWorker.ps1`(pro role pracovního procesu)
     - `ps.cmd`

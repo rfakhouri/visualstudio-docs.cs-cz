@@ -10,23 +10,17 @@ ms.topic: article
 f1_keywords:
 - vb.ProjectPropertiesSecurity
 - vb.XBAPProjectPropertiesSecurity
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
-caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4eaa6a746f67c891e9e4979f9c5b06202383e5f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e26fc0c15e259a38fcb638436b4ce671f4ecc241
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="security-page-project-designer"></a>Stránka Zabezpečení, návrhář projektu
 **Zabezpečení** stránky **Návrhář projektu** slouží ke konfiguraci nastavení zabezpečení přístupu kódu pro aplikace, které jsou nasazeny pomocí [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] nasazení. Další informace najdete v tématu [zabezpečení přístupu kódu pro aplikace ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
@@ -67,7 +61,7 @@ ms.lasthandoff: 10/31/2017
  **Upravit oprávnění XML**  
  Otevře manifestu šablony aplikace (app.manifest) konfigurace oprávnění pro **(vlastní)** sadu oprávnění.  
   
- **Upřesnit**  
+ **Pokročilé**  
  Otevře se [rozšířené zabezpečení dialogové okno nastavení](../../ide/reference/advanced-security-settings-dialog-box.md), který slouží ke konfiguraci nastavení pro ladění aplikace s omezenými oprávněními. Tato nastavení jsou zaškrtnutá políčka během ladění a výjimek oprávnění znamenat, že vaše aplikace může potřebovat větší oprávnění než definované v zóně.  
   
 ## <a name="see-also"></a>Viz také  
@@ -80,4 +74,4 @@ ms.lasthandoff: 10/31/2017
  [Postupy: ladění aplikace ClickOnce s omezenými oprávněními](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [ClickOnce – zabezpečení a nasazení](../../deployment/clickonce-security-and-deployment.md)   
  [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)   
- [Dialogové okno nastavení rozšířené zabezpečení](../../ide/reference/advanced-security-settings-dialog-box.md)
+ [Dialogové okno Pokročilé nastavení zabezpečení](../../ide/reference/advanced-security-settings-dialog-box.md)

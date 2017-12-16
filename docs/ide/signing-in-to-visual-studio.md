@@ -12,11 +12,11 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7f31880813d5c1c7807ebd908ca83fa10c4b209
-ms.sourcegitcommit: 24f81b8fb59722cf4a856005227f6a29bb2990cd
+ms.openlocfilehash: c40f3c8089ae6855d40775382fd38827aa679f7b
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="sign-in-to-visual-studio"></a>Přihlaste se k sadě Visual Studio
 
@@ -67,4 +67,4 @@ Pokud se vyskytnou potíže při přihlašování, přejděte na téma [účty p
 ## <a name="see-also"></a>Viz také
 
 [Jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Sada Visual Studio prostředků z Internetu](../ide/connected-environment.md)
+[Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)

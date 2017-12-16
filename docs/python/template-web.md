@@ -1,5 +1,5 @@
 ---
-title: "Web šablona projektu pro jazyk Python v sadě Visual Studio | Microsoft Docs"
+title: "Webové šablony projektů pro jazyk Python v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 07/13/2017
 ms.reviewer: 
@@ -12,21 +12,21 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ba0106ad8a820556ed4c8f7aaed915f532f8c824
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: ad0906394552eb3af3293094301f94eee130e870
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="python-web-project-templates"></a>Python webové šablony projektů
+# <a name="python-web-project-templates"></a>Šablony webových projektů jazyka Python
 
-Python v sadě Visual Studio podporuje vývoj webové projekty v rozhraní Bottle, Flask a Django prostřednictvím šablony projektů a spuštění ladění, nakonfigurovaný pro zpracování různých architektury. Obecný "Webového projektu" šablonu můžete použít také pro ostatní rozhraní, jako je například pyramidy.
+Python v sadě Visual Studio podporuje vývoj webové projekty v rozhraní Bottle, Flask a Django prostřednictvím šablony projektů a spuštění ladění, nakonfigurovaný pro zpracování různých architektury. Můžete také použít Obecné **webového projektu** šablona pro ostatní platformy, jako je například pyramidy.
 
 Visual Studio nezahrnuje architektury sami. Rozhraní musíte nainstalovat samostatně kliknutím pravým tlačítkem na projekt a výběrem **Python > framework instalace nebo aktualizace...** .
 
 Spuštění projektu vytvořené ze šablony (přístupné prostřednictvím **soubor > Nový > projekt...** ) spouští webový server s náhodně vybrané místního portu, otevře výchozí prohlížeč při ladění a umožňuje přímé publikování do služby Microsoft Azure.
 
-![Nové šablony webového projektu](media/template-web-new-project.png)
+![Nové šablony webových projektů](media/template-web-new-project.png)
 
 Šablony Bottle, Flask a Django zahrnují výchozí web s některými stránky a statické soubory. Tento kód stačí ke spuštění a ladění serveru místně (kdy některé nastavení je potřeba získat z prostředí) a nasazení do Microsoft Azure (kde [WSGI aplikace](http://www.python.org/dev/peps/pep-3333/) objekt musí být zadán).
 
@@ -36,7 +36,7 @@ Při vytváření projektu ze šablony konkrétní rozhraní, zobrazí se dialog
 
 Pokud nasazujete do služby Microsoft Azure App Service, vyberte verzi jazyka Python jako [lokality rozšíření](https://aka.ms/PythonOnAppService) a ručně nainstalujte balíčky. Navíc vzhledem k tomu, že nemá Azure App Service **není** automaticky instalovat balíčky z `requirements.txt` souboru při nasazení ze sady Visual Studio, postupujte podle podrobností konfigurace na [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-Microsoft Azure Cloud Service *nemá* podporu `requirements.txt` souboru. [Azure projekty cloudových služeb](template-azure-cloud-service.md) podrobnosti.
+Microsoft Azure Cloud Services *nemá* podporu `requirements.txt` souboru. [Azure cloud service projekty](template-azure-cloud-service.md) podrobnosti.
 
 ## <a name="debugging"></a>Ladění
 
@@ -62,12 +62,12 @@ Všechny projektu vlastnost nebo prostředí může být zadána proměnná se s
 > [!Note]
 > Hodnoty v **spustit příkaz serveru** se používají s **ladění > spustit Server** příkaz nebo Ctrl + F5; hodnoty ve **ladění příkaz serveru** skupiny se používají s **Ladění > Spustit ladění serveru** příkaz nebo F5.
 
-
 ### <a name="sample-bottle-configuration"></a>Ukázková konfigurace Bottle
 
-Šablona Bottle webový projekt obsahuje často používaný kód, který nemá nezbytné konfigurace. Importované bottle aplikace nesmí obsahovat tento kód, ale v takovém případě spusťte následující nastavení aplikace pomocí nainstalovaného `bottle` modul:
+**Bottle webového projektu** Šablona zahrnuje často používaný kód, který nemá nezbytné konfigurace. Importované bottle aplikace nesmí obsahovat tento kód, ale v takovém případě spusťte následující nastavení aplikace pomocí nainstalovaného `bottle` modul:
 
 - **Spusťte příkaz serveru** skupiny:
+
     - **Příkaz**: `bottle` (modulu)
     - **Argumenty**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
@@ -79,9 +79,10 @@ Všechny projektu vlastnost nebo prostředí může být zadána proměnná se s
 
 ### <a name="sample-pyramid-configuration"></a>Ukázková konfigurace pyramidy
 
-Jehlanový aplikací jsou aktuálně nejlépe vytvořené pomocí `pcreate` nástroj příkazového řádku. Po vytvoření aplikace, může být importován pomocí [z existujícího kódu Python](python-projects.md#creating-a-project-from-existing-files) šablony. Až to uděláte, vyberte **obecné webového projektu** přizpůsobení nakonfigurovat možnosti. Tato nastavení předpokládá nainstalovanou Pyramid do virtuálního prostředí v `..\env`.
+Jehlanový aplikací jsou aktuálně nejlépe vytvořené pomocí `pcreate` nástroj příkazového řádku. Po vytvoření aplikace, může být importován pomocí [z existující Python code](python-projects.md#creating-a-project-from-existing-files) šablony. Až to uděláte, vyberte **obecné webového projektu** přizpůsobení nakonfigurovat možnosti. Tato nastavení předpokládá nainstalovanou Pyramid do virtuálního prostředí v `..\env`.
 
 - **Ladění** skupiny:
+
     - **Port serveru**: 6543 (nebo ať je nakonfigurovaný v souborech .ini)
 
 - **Spusťte příkaz serveru** skupiny:
@@ -94,7 +95,6 @@ Jehlanový aplikací jsou aktuálně nejlépe vytvořené pomocí `pcreate` nás
 
 > [!Tip]
 > Pravděpodobně budete muset nakonfigurovat **pracovní adresář** vlastnost projektu protože Pyramid aplikace jsou větší, než horní části stromu zdroje na úrovni obvykle jeden adresář.
-
 
 ### <a name="other-configurations"></a>Další konfigurace
 
@@ -161,13 +161,13 @@ Dostupné položky patří:
 - Azure web.config (HttpPlatformHandler): Přidá `web.config` při aplikace naslouchá na soket pro příchozí připojení v souboru.
 - Azure statické soubory web.config: Pokud máte jeden z výše uvedených `web.config` soubory, soubor přidat do podadresáři vyloučíte z zpracovanou aplikaci.
 - Azure vzdáleného ladění web.config: přidá soubory potřebné pro vzdálené ladění pomocí technologie WebSockets.
-- Soubory podpory aplikace webové Role: obsahuje výchozí skripty nasazení pro Cloudovou službu webové role.
-- Soubory podpory Role pracovního procesu: obsahuje výchozí nasazení a spouštět skripty pro cloudové služby rolí pracovního procesu.
+- Soubory podpory aplikace webové Role: obsahuje výchozí skripty nasazení pro cloudové služby webové role.
+- Soubory podpory Role pracovního procesu: obsahuje výchozí nasazení a spouštět skripty pro role pracovního procesu cloudové služby.
 
 Pokud přidáte ladění `web.config` šablona projektu a plánujete používat vzdálené ladění Python, musíte publikovat webu v konfiguraci "Debug". Toto nastavení je oddělená od aktuální konfigurace aktivního řešení a vždy použije jako výchozí "Verze". Pokud chcete ho změnit, otevřete **nastavení** kartě a použít **konfigurace** – pole se seznamem v Průvodci publikovat (najdete v části [dokumentace k Azure](https://azure.microsoft.com/develop/python/) Další informace o vytváření a nasazení do Azure Web Apps):
 
 ![Změna konfigurace publikování](media/template-web-publish-config.png)
 
-**Převést na projekt cloudové služby Microsoft Azure** příkaz (viz obrázek níže) přidá projektu cloudové služby pro vaše řešení. Tento projekt obsahuje nastavení nasazení a konfigurace pro virtuální počítače a služby, který se má použít. Použití **publikovat** v projektu cloudové nasazení do cloudové služby; **publikovat** příkaz na projekt Python stále nasadí na webové servery. V tématu [projekty cloudových služeb Azure](template-azure-cloud-service.md) další podrobnosti.
+**Převést na projekt cloudové služby Microsoft Azure** příkaz (viz obrázek níže) přidá projekt cloudové služby pro vaše řešení. Tento projekt obsahuje nastavení nasazení a konfigurace pro virtuální počítače a služby, který se má použít. Použití **publikovat** v projektu cloudové nasazení do cloudové služby; **publikovat** příkaz na projekt Python stále nasadí na webové servery. V tématu [Azure cloud service projekty](template-azure-cloud-service.md) další podrobnosti.
 
-![Převést na Microsoft Azure Cloud Service projekt – příkaz](media/template-web-convert-menu.png)
+![Převést na Microsoft Azure cloud service projekt – příkaz](media/template-web-convert-menu.png)

@@ -12,13 +12,13 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 7cd4f3e19b6cae5adabd54593fee560c56454f07
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: 1a150a65dd249c4a8f4c63e5f69bd1b15b192538
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="r-tools-for-visual-studio-sample-projects"></a>R nástrojů pro Visual Studio ukázkové projekty
+# <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools pro Visual Studio ukázkové projekty
 
 Tato kolekce ukázek získá vám pomohou s R, R nástrojů pro Visual Studio (RTVS) a Microsoft R Server:
 
@@ -40,7 +40,6 @@ Tato ukázka obsahuje podrobný Úvod do R prostřednictvím rozsáhlé komentá
 
     ![Příklad výstupu z 2úvod k ggplot2. Ukázka R](media/samples-ggplot-output.png)
 
-
 ## <a name="microsoft-r-server-and-machine-learning"></a>Server Microsoft R a Machine Learning
 
 Tato kolekce příklady ukazuje, jak používat R k vytváření modelů machine learning a chcete využít výhod [Microsoft R Server (Paní)](http://aka.ms/rtvs-msft-r). Nainstalujte paní ke spouštění skriptů s `MRS` v názvu a uvedeno.
@@ -53,12 +52,13 @@ Jako s všechny příklady, otevřete soubor, přesuňte kurzor na začátek a p
 
 - `Bike_Rental_Estimation_with_MRS`Vytvoří model vyžádání předpovědi pro kolo pronájem na základě historických dat sady, používat R Server společnosti Microsoft. 
 
-- `Data_Exploration`obsahuje tři skriptů:  
-    - `Import Data from URL.R`ukazuje, jak načíst adresa URL identifikuje data do R.
-    - `Import Data from URL to xdf.R`ukazuje, jak načíst adresa URL identifikuje data do Microsoft R Server jako xdf. (Vyžaduje paní.)
-    - `Using ggplot2.R`je rozšířením `A First Look at R/2-Introduction to ggplot2.R` vzorku, s rozsáhlejší prohlídku funkcí na ggplot2 včetně interaktivní 3D vykreslení.
+- `Data_Exploration`obsahuje tři skriptů:
 
-        ![Výstup pomocí ggplot2. Příklad R](media/samples-3d-interactive.png)
+  - `Import Data from URL.R`ukazuje, jak načíst adresa URL identifikuje data do R.
+  - `Import Data from URL to xdf.R`ukazuje, jak načíst adresa URL identifikuje data do Microsoft R Server jako xdf. (Vyžaduje paní.)
+  - `Using ggplot2.R`je rozšířením `A First Look at R/2-Introduction to ggplot2.R` vzorku, s rozsáhlejší prohlídku funkcí na ggplot2 včetně interaktivní 3D vykreslení.
+
+      ![Výstup pomocí ggplot2. Příklad R](media/samples-3d-interactive.png)
 
 - `Datasets`obsahuje tři `.csv` soubory používané Další ukázky
 - `Flight_Delays_Prediction_with_R`a `Flight_Delays_Prediction_with_MRS` ukazuje, jak k předvídání zpoždění letů pomocí machine learning, která, počasí data a historie výkonu na čas a R. 

@@ -13,11 +13,11 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0adc9f69f1b0e873d2e1f38c9317070dc0d6a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3c37f4dc215027752da9c16fbdfba44b4e10c41c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-a-service"></a>Postupy: poskytování služby
 VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskytování služeb, musí VSPackage Zaregistrujte službu pomocí sady Visual Studio a přidání služby.  
@@ -31,9 +31,9 @@ VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskyt
   
 #### <a name="implementing-a-service"></a>Implementace služby  
   
-1.  Vytvoření projektu VSIX (**souboru / New / Project / Visual C# nebo Extensiblity nebo VSIX projektu**).  
+1.  Vytvoření projektu VSIX (**soubor > Nový > Projekt > Visual C# > Extensiblity > Projekt VSIX**).  
   
-2.  Do projektu přidejte VSPackage. Vyberte uzel projektu v **Průzkumníku řešení** a klikněte na tlačítko **přidat nový položky / Visual C# položky nebo rozšíření nebo balíček Visual Studio**.  
+2.  Do projektu přidejte VSPackage. Vyberte uzel projektu v **Průzkumníku řešení** a klikněte na tlačítko **Přidat > novou položku > Visual C# položky > Rozšíření > Balíček Visual Studio**.  
   
 3.  K implementaci služby, musíte vytvořit tři typy:  
   
@@ -109,7 +109,7 @@ VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskyt
   
 2.  Implementace metody zpětného volání, která by měl vytvořit a vrátit služby nebo hodnota null, pokud nelze vytvořit.  
   
-    ```  
+    ```csharp  
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
@@ -143,4 +143,4 @@ VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskyt
 ## <a name="see-also"></a>Viz také  
  [Postupy: získání služby](../extensibility/how-to-get-a-service.md)   
  [Použití a poskytování služeb](../extensibility/using-and-providing-services.md)   
- [Služba Essentials](../extensibility/internals/service-essentials.md)
+ [Základy služeb](../extensibility/internals/service-essentials.md)

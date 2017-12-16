@@ -16,11 +16,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 8bf11425439387a13db2bb77f0ce798bef076461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Návod: Vytvoření aplikace WPF plochy připojené k mobilní služby Azure
 Windows Presentation Foundation (WPF) můžete rychle vytvořit moderní plochy aplikaci, která využívá mobilní služby Azure k ukládání a poskytují data.  
@@ -556,7 +556,7 @@ Dalším krokem je vytvoření uživatelského rozhraní pro aplikaci. Nejdřív
      Volá **UpdateCheckedTodoItem** metoda a odebere položku ze seznamu a databáze.  
   
 ## <a name="next-steps"></a>Další kroky  
- Po dokončení poměrně zneužívající vlastností prohlížeče příkladem aplikace WPF s Azure back-end. Samozřejmě reálné aplikaci je pravděpodobně mnohem složitější, ale základní koncepty použity. V tématu [grafického subsystému WPF v rozhraní .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+ Po dokončení poměrně zneužívající vlastností prohlížeče příkladem aplikace WPF s Azure back-end. Samozřejmě reálné aplikaci je pravděpodobně mnohem složitější, ale základní koncepty použity. V tématu [grafického subsystému WPF v rozhraní .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130).  
   
  Více přitažlivými uživatelského rozhraní můžete provést přidáním barvu, tvarů, grafiky a animace. V tématu [vytvoření uživatelského rozhraní pomocí návrháře XAML v sadě Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) a [vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). Porovnání mezi nástroje najdete v tématu [navrhování XAML v sadě Visual Studio a nástroj Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
 
@@ -564,4 +564,4 @@ Dalším krokem je vytvoření uživatelského rozhraní pro aplikaci. Nejdřív
   
 ## <a name="see-also"></a>Viz také  
  [Návod: Můj první grafický subsystém WPF aplikace pracovní plochy](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
- [Vytvoření moderních aplikací klasické pracovní plochy s Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+ [Vytvoření moderních desktopových aplikací pomocí Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

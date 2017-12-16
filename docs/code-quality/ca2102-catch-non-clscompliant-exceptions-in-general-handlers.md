@@ -16,11 +16,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a27054ef8732b96d5d71cbc22d567f4509877886
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c241766a38ffc172924516e70b86ebdc22e117e2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Zachycujte výjimky bez CLSCompliant v obecné obslužné rutině
 |||  
@@ -78,10 +78,9 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ```  
   
 ## <a name="related-rules"></a>Související pravidla  
- [CA1031: Zachytávat nezachycujte výjimky obecného typu](../code-quality/ca1031-do-not-catch-general-exception-types.md)  
+ [CA1031: Nezachycujte výjimky obecného typu](../code-quality/ca1031-do-not-catch-general-exception-types.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Výjimky a jejich zpracování](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling)   
  [Ilasm.exe (IL assembleru)](/dotnet/framework/tools/ilasm-exe-il-assembler)   
- [Přepsání kontrol zabezpečení](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Jazyková nezávislost a jazykově nezávislé komponenty](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [Jazyková nezávislost a jazykově nezávislé komponenty](/dotnet/standard/language-independence-and-language-independent-components)

@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 17bdaffa8fdbb6ddff9d7fe5590db021997aa01f
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 2b3a551f19e3410b5f56ebe994676666cdc3d4e1
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Databázi kompatibilní se systémy pro sadu Visual Studio
 
@@ -30,7 +30,7 @@ Pro systém databáze byla přístupná z aplikace .NET a mají být zobrazeny v
 
 Pokud používáte rozhraní API úložiště Azure, nainstalujte emulátorů úložiště Azure na místním počítači během vývoje aby se zabránilo poplatky, dokud nebudete připraveni k nasazení do produkčního prostředí. Další informace najdete v tématu [použití emulátoru úložiště Azure pro vývoj a testování](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
 
-Následující seznam obsahuje některé z oblíbenější systémů databáze, které lze použít v projektech Visual Studio. Seznam není vyčerpávající. Seznam jiných dodavatelů, které nabízí zprostředkovatelé dat ADO.NET, které umožňují těsná integrace s nástroji Visual Studio najdete v tématu [zprostředkovatele dat ADO.NET](https://msdn.microsoft.com/en-us/library/dd363565.aspx).
+Následující seznam obsahuje některé z oblíbenější systémů databáze, které lze použít v projektech Visual Studio. Seznam není vyčerpávající. Seznam jiných dodavatelů, které nabízí zprostředkovatelé dat ADO.NET, které umožňují těsná integrace s nástroji Visual Studio najdete v tématu [zprostředkovatele dat ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 

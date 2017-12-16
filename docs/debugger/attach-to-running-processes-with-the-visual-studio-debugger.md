@@ -31,11 +31,11 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7ed9c7f362399d9cd256b02af9f1fe1bcecf8ce
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 48462684498136d09354fb87917f553d522188c0
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ke spuštěným procesům pomocí ladicího programu sady Visual Studio
 Ladicí program Visual Studio můžete připojit k spuštěných procesů na místním nebo vzdáleném počítači. Jakmile je proces spuštěný, klikněte na tlačítko **ladění > připojit k procesu** (nebo stiskněte klávesu **CTRL + ALT + P**) otevřete **připojit k procesu** dialogové okno.
@@ -122,7 +122,7 @@ Ladicí program se znovu připojit při prvním pokusu shodovat s předchozí ID
 
 ## <a name="additional-info"></a>Další informace
 
-Můžete se dá připojit k více programy při ladění, ale pouze jeden program je aktivní v ladicím programu kdykoli. Můžete nastavit v aktivní aplikaci **ladění umístění** panelu nástrojů nebo **procesy** okno. Další informace najdete v tématu [postupy: nastavení aktuální Program](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+Můžete se dá připojit k více programy při ladění, ale pouze jeden program je aktivní v ladicím programu kdykoli. Můžete nastavit v aktivní aplikaci **ladění umístění** panelu nástrojů nebo **procesy** okno.  
   
 Pokud se pokusíte připojit k procesu vlastníkem nedůvěryhodné uživatelský účet, zobrazí se pole potvrzovací dialogové okno upozornění zabezpečení. Další informace najdete v části [upozornění zabezpečení: připojení k procesu vlastněných nedůvěryhodné uživatelem může být nebezpečný. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
   

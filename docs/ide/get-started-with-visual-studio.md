@@ -1,10 +1,10 @@
 ---
-redirect_url: ../ide/visual-studio-ide
-ms.openlocfilehash: a615a3a6da289f265e350d529349f1fb6ba6865f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/ide/visual-studio-ide
+ms.openlocfilehash: 5f1fa39d6e6cde1664a8aaa34aed7cba726b1d56
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="get-started-with-visual-studio"></a>Začínáme s Visual Studio
 Visual Studio je výkonný nástroj pro vývoj aplikací. Pokud jste tak ještě neučinili, pokračujte a stáhněte a nainstalujte [Visual Studio](https://www.visualstudio.com/vs/). Podívejte se video [Začínáme s Visual Studio – nastavení vaší IDE](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) Další informace o stažení sady Visual Studio a její konfiguraci, způsob, jakým chcete.
@@ -78,7 +78,7 @@ Instalace pracovního vytížení Azure development vám také [Visual Studio To
 ## <a name="tips-and-tricks"></a>Tipy a triky
 Zkratky a užitečné tipy a triky na tom, jak získat další mimo Visual Studio naleznete v následujících tématech.
 - [Začínáme s Visual Studio – tipy a triky](https://www.youtube.com/watch?v=vmXqGwn1Glk&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=4)
-- [Tipy pro vyšší produktivitu pro sadu Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Tipy pro vyšší produktivitu v sadě Visual Studio](../ide/productivity-tips-for-visual-studio.md)
 - [Rady a tipy k sadě Visual Studio](https://channel9.msdn.com/events/TechEd/2013/DEV-B353)
 - [Rady a tipy k ladění jazyka C++](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/C-Plus-Plus-Debugging-Tips-and-Tricks)
 - [Visual Studio nejvíce užitečné (a využívané) tipy [blog Scott Hanselman]](https://www.hanselman.com/blog/VisualStudiosMostUsefulAndUnderusedTips.aspx)

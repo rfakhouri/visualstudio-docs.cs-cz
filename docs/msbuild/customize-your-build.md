@@ -15,11 +15,11 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ed63e19334c2c1c40cd5ac353974d7a1dbdc5764
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="customize-your-build"></a>Přizpůsobení buildu
 Ve verzích nástroje MSBuild starší než verze 15 Pokud chcete zadat novou, vlastní vlastnost, která má projekty v řešení, museli jste ručně přidejte odkaz na tuto vlastnost pro každý soubor projektu v řešení. Nebo, jste museli definovat vlastnost v souboru props a explicitně importovat soubor PROPS v všechny projekty v řešení, mimo jiné.
@@ -87,7 +87,7 @@ Pro msbuild správně sloučit "vnitřní" soubory (`2-src` a `2-test`) "vnějš
 Souhrn msbuild je obecný přístup je následující:
 
 - Pro daný projekt, msbuild vyhledá první `Directory.Build.props` směrem nahoru ve struktuře řešení sloučí s výchozím nastavením a zastaví kontrolu Další informace
-- Pokud chcete, aby více úrovní najít a pak sloučit [ `<Import...>` ](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (viz výše) "vnější" soubor ze souboru "vnitřní"
+- Pokud chcete, aby více úrovní najít a pak sloučit [ `<Import...>` ](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (viz výše) "vnější" soubor ze souboru "vnitřní"
 - Pokud soubor "vnější" nemá sám také importovat něco nad ním, pak kontrolu zastaví existuje
 - Chcete-li řídit proces kontrolu sloučení, použijte `$(DirectoryBuildPropsPath)` a`$(ImportDirectoryBuildProps)`
 
@@ -95,4 +95,4 @@ Nebo jednodušeji: první `Directory.Build.props` který neimportuje nic, je, kd
 
 ## <a name="see-also"></a>Viz také  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [MSBuild – Reference](../msbuild/msbuild-reference.md)   
+ [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)   

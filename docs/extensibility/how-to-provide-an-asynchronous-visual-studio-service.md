@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: poskytování služby asynchronní Visual Studio
 Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, doporučujeme vytvoření služby asynchronní a načíst balíček na vlákna na pozadí. Pro tento účel můžete použít <xref:Microsoft.VisualStudio.Shell.AsyncPackage> ne <xref:Microsoft.VisualStudio.Shell.Package>a přidejte službu s asynchronní balíček speciální asynchronních metod  
@@ -24,9 +24,9 @@ Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, 
   
 ## <a name="implementing-an-asynchronous-service"></a>Implementace asynchronní služby  
   
-1.  Vytvoření projektu VSIX (**souboru / New / Project / Visual C# nebo Extensiblity nebo VSIX projektu**). Název projektu **TestAsync**.  
+1.  Vytvoření projektu VSIX (**soubor > Nový > Projekt > Visual C# > Extensiblity > Projekt VSIX**). Název projektu **TestAsync**.  
   
-2.  Do projektu přidejte VSPackage. Vyberte uzel projektu v **Průzkumníku řešení** a klikněte na tlačítko **přidat nový položky / Visual C# položky nebo rozšíření nebo balíček Visual Studio**. Název tohoto souboru **TestAsyncPackage.cs**.  
+2.  Do projektu přidejte VSPackage. Vyberte uzel projektu v **Průzkumníku řešení** a klikněte na tlačítko **Přidat > novou položku > Visual C# položky > Rozšíření > Balíček Visual Studio**. Název tohoto souboru **TestAsyncPackage.cs**.  
   
 3.  V TestAsyncPackage.cs měnit balíček dědění z AsyncPackage spíše než balíčku:  
   
@@ -225,4 +225,4 @@ public sealed class TestAsyncPackage : AsyncPackage
 8.  Sestavte řešení a spuštění ladění. Jakmile se zobrazí experimentální instanci sady Visual Studio, přejděte na **nástroje** nabídky a podívejte se **vyvolání TestAsyncCommand** položku nabídky. Po kliknutí na tlačítko ji, zapíše TextWriterService soubor, který jste zadali. (Nemusíte otevřete řešení, protože vyvolání příkazu také způsobí, že balíček, který chcete načíst.)  
   
 ## <a name="see-also"></a>Viz také  
- [Použití a poskytování služeb](../extensibility/using-and-providing-services.md)
+ [Používání a poskytování služeb](../extensibility/using-and-providing-services.md)

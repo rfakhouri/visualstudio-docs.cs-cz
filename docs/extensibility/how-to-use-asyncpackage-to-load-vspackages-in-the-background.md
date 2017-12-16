@@ -10,17 +10,17 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-ms.openlocfilehash: 8adc348553ba613898117f10ccd21a6e5cd02ab8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b89f021b181e653dff97368cc5c1f2d993f04323
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Postupy: použití AsyncPackage načíst VSPackages na pozadí
 V/v diskových operací může způsobit načtením a inicializací balíčku VS. V případě takové vstupně-výstupních operací na vlákno uživatelského rozhraní může vést k problémům odezvy. Chcete-li to vyřešit, Visual Studio 2015 zavedená <xref:Microsoft.VisualStudio.Shell.AsyncPackage> třídu, která umožňuje načítání balíčku na vlákna na pozadí.  
   
 ## <a name="creating-an-asyncpackage"></a>Vytvoření AsyncPackage  
- Můžete spustit vytvořením projektu VSIX (**souboru / New / Project / Visual C# nebo rozšíření nebo VSIX projektu**) a přidávání VSPackage k projektu (klikněte pravým tlačítkem na projekt a **položku Přidat/nový / C# položky nebo rozšíření nebo Visual Balíček Studio**). Pak můžete vytvořit vaše služby a přidejte tyto služby do vašeho balíčku.  
+ Můžete spustit vytvořením projektu VSIX (**soubor > Nový > Projekt > Visual C# > Rozšíření > VSIX projektu**) a přidávání VSPackage k projektu (klikněte pravým tlačítkem na projekt a **položku Přidat/nový nebo položky C# nebo Balíček Studio Extensibility/Visual**). Pak můžete vytvořit vaše služby a přidejte tyto služby do vašeho balíčku.  
   
 1.  Odvození balíček <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
   

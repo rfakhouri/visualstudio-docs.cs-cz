@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac633134b5b8037eb9e45131128b0ee0cf2887ab
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Zabezpečení metody by mělo být nadmnožinou typu
 |||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |Narušující změna|Narušující|  
   
 ## <a name="cause"></a>příčina  
- Typ má deklarativní zabezpečení a jeden z jeho metody má deklarativní zabezpečení pro stejnou akci zabezpečení a zabezpečení akce není [požadavky propojení](/dotnet/framework/misc/link-demands) nebo [požadavky dědičnosti](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)a oprávnění zaškrtnutí podle typu nejsou podmnožinu oprávnění ověří pomocí metody.  
+ Typ má deklarativní zabezpečení a jeden z jeho metody má deklarativní zabezpečení pro stejnou akci zabezpečení a zabezpečení akce není [požadavky propojení](/dotnet/framework/misc/link-demands), a zkontrolovat nástrojem typ oprávnění nejsou podmnožinu oprávnění ověří pomocí metody.  
   
 ## <a name="rule-description"></a>Popis pravidla  
  Metody by neměla mít jak metoda úroveň a typ deklarativní zabezpečení pro stejnou akci. Dva kontroly se nekombinují; je použita pouze vyžádání úrovni metody. Například, pokud typ požaduje oprávnění `X`, a jeden z jeho metody požaduje oprávnění `Y`, kód nemá oprávnění k `X` provést metodu.  
@@ -63,6 +63,5 @@ ms.lasthandoff: 10/31/2017
 **[Žádné oprávnění ke čtení (pro název metoda)] Nelze získat přístup k osobním údajům: žádost se nezdařila.**   
 ## <a name="see-also"></a>Viz také  
  [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines)   
- [Dědičnost požadavků](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
  [Požadavky na odkaz](/dotnet/framework/misc/link-demands)   
- [Data a modelování](/dotnet/framework/data/index)
+ [Data a modelování](/dotnet/framework/data/index)

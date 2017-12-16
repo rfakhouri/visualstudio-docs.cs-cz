@@ -21,11 +21,11 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 9682eee19693c95e4f01ea4c99f6daf8646c6af1
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: c418d5ab3618a43a1e12bc3be2d96742fcbb669e
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Port, migrace a Upgrade projektů sady Visual Studio
 
@@ -43,7 +43,7 @@ Podpora pro některé typy změn v průběhu času, ale. Novější verze sady V
 
 Následující seznam popisuje podporu v Visual Studio 2017 pro projekty, které byly vytvořeny v dřívějších verzích.
 
-Pokud nevidíte projektu nebo typ souboru tady, by měla být najdete [Visual Studio 2015 verzi tohoto tématu](https://msdn.microsoft.com/library/hh266747.aspx) a poznamenejte si v komentářích níže.
+Pokud nevidíte projektu nebo typ souboru tady, by měla být najdete [Visual Studio 2015 verzi tohoto tématu](https://msdn.microsoft.com/library/hh266747.aspx) a [souboru problém](https://github.com/MicrosoftDocs/visualstudio-docs/issues/) s podrobnostmi typ vašeho projektu.
 
 | Typ projektu | Podpora |
 | --- | --- |

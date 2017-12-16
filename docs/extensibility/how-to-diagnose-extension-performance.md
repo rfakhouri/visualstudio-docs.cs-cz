@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c2d8b27937be4580da8ff33c5b3c1d57654b4c89
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Měření rozšíření dopad na spuštění
 
@@ -48,7 +48,7 @@ Jsme přidali více funkcí spuštění z Visual Studia 2015, chcete-li pomoc s 
 
 Další informace o těchto funkcích naleznete v následujících dokumentech:
 
-[Pravidla na základě uživatelského rozhraní kontexty](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): modul bohatší založený na pravidlech vytvořených na základě uživatelského rozhraní kontexty umožňují vytvářet vlastní kontexty na základě typy projektů, typů a možnosti. Tato vlastní kontexty slouží k načtení balíčku během více konkrétní scénáře, jako je přítomnost projekt se konkrétní funkce místo spuštění; nebo můžete nastavit [příkaz viditelnost ke stažení na vlastní kontext](https://msdn.microsoft.com/en-us/library/bb166512.aspx) na základě možnosti projektu nebo jiné dostupné podmínky eliminovat potřebu načíst balíček k registraci obslužná rutina příkazu stav dotazu.
+[Pravidla na základě uživatelského rozhraní kontexty](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md): modul bohatší založený na pravidlech vytvořených na základě uživatelského rozhraní kontexty umožňují vytvářet vlastní kontexty na základě typy projektů, typů a možnosti. Tato vlastní kontexty slouží k načtení balíčku během více konkrétní scénáře, jako je přítomnost projekt se konkrétní funkce místo spuštění; nebo můžete nastavit [příkaz viditelnost ke stažení na vlastní kontext](visibilityconstraints-element.md) na základě možnosti projektu nebo jiné dostupné podmínky eliminovat potřebu načíst balíček k registraci obslužná rutina příkazu stav dotazu.
 
 [Podpora asynchronní balíček](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): nové AsyncPackage základní třídy v sadě Visual Studio 2015 umožňuje sadě Visual Studio balíčky, které mají být načíst na pozadí asynchronně, pokud balíček zatížení požadoval uživatel atribut automaticky zatížení nebo dotaz asynchronní služby . Tato načítání pozadí umožňuje IDE zůstane přizpůsobivý při inicializaci rozšíření na pozadí a kritických scénářů, jako je spuštění a řešení zatížení nebude mít vliv.
 

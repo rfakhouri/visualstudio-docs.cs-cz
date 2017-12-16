@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8d17c0a3a1d376f7b44e5fb78f362fc49458462e
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: f424770e725e8d8d6ada9e656b77b5563237af99
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="debugging-your-python-code"></a>Ladění kódu jazyka Python
 
@@ -44,7 +44,7 @@ Také najdete v následujících tématech ladění konkrétní scénáře:
 > [!Tip]
 > Python v sadě Visual Studio podporuje ladění bez projektu. Samostatné Python soubor otevřít, klikněte pravým tlačítkem v editoru vybrat **začínat ladění**, a Visual Studio spustí skript s prostředím výchozí globální (najdete v části [prostředí Python](python-environments.md)) a žádné argumenty. Ale od toho máte plná podpora ladění.
 >
-> K řízení prostředí a argumenty, vytvoření projektu pro kód, který je snadno pracovat [z existujícího kódu Python](python-projects.md#creating-a-project-from-existing-files) šablona projektu.
+> K řízení prostředí a argumenty, vytvoření projektu pro kód, který je snadno pracovat [z existující Python code](python-projects.md#creating-a-project-from-existing-files) šablona projektu.
 
 <a name="debugging-with-a-project"></a>
 

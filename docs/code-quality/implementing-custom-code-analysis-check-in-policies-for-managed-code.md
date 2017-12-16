@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c2853d06bf7dcf2ffd894ee3ae1a90e78e61c6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementace vlastních zásad vrácení se změnami Analýzy kódu pro spravovaný kód
 Analýza kódu, že zásad vrácení se změnami určuje sadu pravidel, která členy týmového projektu musíte spustit na zdrojový kód, než se změnami do správy verzí. Společnost Microsoft poskytuje sadu standard *sad pravidel* pravidel analýzy kódu této skupiny do funkční oblastí. *Sady pravidel vlastních zásad vrácení se změnami* zadejte sadu pravidel analýzy kódu, které jsou specifické pro týmový projekt. Sada pravidel je uložené v souboru analýza.  
@@ -35,7 +35,7 @@ Analýza kódu, že zásad vrácení se změnami určuje sadu pravidel, která �
  Pokud chcete vytvořit vlastní sadu pravidel pro týmový projekt, nejprve vytvořit speciální složky pro pravidlo zásad vrácení se změnami nastavené v **Průzkumník správy zdrojového kódu**. Potom můžete vytvořit soubor sady pravidel a přidání souboru do správy verzí. Nakonec zadejte sady analysis zásady kódu, vrácení se změnami pro týmový projekt pravidel.  
   
 > [!NOTE]
->  Vytvořit složku v týmového projektu, je nejprve nutné mapovat kořenového týmového projektu do umístění v místním počítači. Další informace najdete v tématu [vytvoření a práci s nimi (starý)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Vytvořit složku v týmového projektu, je nejprve nutné mapovat kořenového týmového projektu do umístění v místním počítači.  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Vytvoření složky řízení verze pro sadu pravidel zásad vrácení se změnami  
   
@@ -61,7 +61,7 @@ Analýza kódu, že zásad vrácení se změnami určuje sadu pravidel, která �
   
 1.  V **Průzkumník správy zdrojového kódu**, klikněte pravým tlačítkem na novou složku a pak klikněte na tlačítko **přidat položky do složky**.  
   
-     Další informace najdete v tématu [použití správy verzí](http://msdn.microsoft.com/Library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Další informace najdete v tématu [Git a služby VSTS](/vsts/git/overview).  
   
 2.  Kliknutím pravidlo nastavené soubor, který jste vytvořili a pak klikněte na **Dokončit**.  
   

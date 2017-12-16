@@ -22,16 +22,15 @@ caps.latest.revision: "41"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 77a2594f69fa9d6aae3742dda522b18cd50ed24b
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: d23453b502bc95a64dc84f1642a704261e28eb20
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Upozornění Analýzy kódu pro C/C++
 Tato část uvádí upozornění analýzy kódu C/C++ s výjimkou těch, které jsou vydané [C++ základní pokyny kameny](code-analysis-for-cpp-corecheck.md). Informace o analýze kódu najdete v tématu [/ analyze (Analýza kódu)](/cpp/build/reference/analyze-code-analysis) a [rychlé zahájení: Analýza kódu pro C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Pokyny pro tvorbu zabezpečení kódu](http://msdn.microsoft.com/en-us/9892fd19-45cd-44b6-9fa8-10f1b5cb6ea4)   
  [Analýza kvality kódu C/C++ pomocí nástroje Analýza kódu](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md)   
  [Použití poznámek SAL k snížení míry výskytu závad kódu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)

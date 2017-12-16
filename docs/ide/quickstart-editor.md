@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: b74acd0b7711f7b11965bdde6fd2e152ee340c85
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: 3994c7087cb26e31c5745c99a8b7678aa7e24f23
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Rychlý úvod: kódování v editoru
 
@@ -156,6 +156,7 @@ Po dokončení tento rychlý start pro editoru Visual Studio! Dále můžete vyz
 
 [Rychlý úvod: první pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
 [Rychlý úvod: přizpůsobení Visual Studio IDE a Editor](../ide/quickstart-personalize-the-ide.md)  
+[Rychlý úvod: projekty a řešení](../ide/quickstart-projects-solutions.md)  
 [Fragmenty kódu](../ide/code-snippets.md)  
 [Sbalení](../ide/outlining.md)  
 [Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)  

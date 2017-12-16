@@ -12,15 +12,15 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 29d11f04fb1fc7b0942a98b47dd5638c0572c23b
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 2ab22752a5c751eb78d57863fcb19fc4037c86b4
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="django-web-project-template"></a>Šablona projektu webového rozhraní Django
 
-[Django](https://www.djangoproject.com/) je určená pro vývoj webů rychlé, zabezpečené a škálovatelné vysoké úrovně rozhraní Python. Podpora jazyka Python v sadě Visual Studio poskytuje šablona projektu nastavení struktury založené na rozhraní Django webové aplikace. Abyste mohli použít šablonu v sadě Visual Studio, vyberte **soubor > Nový > projekt**, vyhledejte "Django" a vyberte šablonu, "Webový projekt Django". Výsledný projekt zahrnuje často používaný kód a také výchozí databáze SQLite. Šablonu "Prázdný webový projekt Django" se podobá ale nezahrnuje databázi.
+[Django](https://www.djangoproject.com/) je určená pro vývoj webů rychlé, zabezpečené a škálovatelné vysoké úrovně rozhraní Python. Podpora jazyka Python v sadě Visual Studio poskytuje šablona projektu nastavení struktury založené na rozhraní Django webové aplikace. Abyste mohli použít šablonu v sadě Visual Studio, vyberte **soubor > Nový > projekt**, vyhledejte "Django" a vyberte **webový projekt Django** šablony. Výsledný projekt zahrnuje často používaný kód a také výchozí databáze SQLite. **Prázdný webový projekt Django** šablony je podobné však nezahrnuje databázi.
 
 Visual Studio poskytuje úplné IntelliSense pro projekty Django:
 
@@ -38,13 +38,11 @@ Visual Studio poskytuje úplné IntelliSense pro projekty Django:
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
-
 Visual Studio také poskytuje úplné [ladění podporu](debugging.md) pro projekty Django: 
 
 ![Zarážky](media/template-django-debugging.png)
 
 Je obvyklé, Django projektů se mají spravovat prostřednictvím jejich `manage.py` souboru, který se předpokládá, který následuje Visual Studio. Pokud zastavíte pomocí tento soubor jako vstupní bod, v podstatě rozdělit souboru projektu. V takovém případě budete muset [znovu vytvořit projektu z existujících souborů](python-projects.md#creating-a-project-from-existing-files) bez označení jako projekt Django.
-
 
 ## <a name="django-management-console"></a>Konzola pro správu Django
 

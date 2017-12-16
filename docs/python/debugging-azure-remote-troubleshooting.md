@@ -12,13 +12,13 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 6dc28135245cae755189174b18000b5c06537b6d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b4f7edc3753f8c2b9e84668cda4273feab08e8ca
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="remote-debugging-troubleshooter-for-python-and-azure"></a>Vzdálené ladění Poradce při potížích pro Python a Azure
+# <a name="remote-debugging-rroubleshooter-for-python-and-azure"></a>Vzdálené ladění rroubleshooter pro Python a Azure
 
 Nepodaří připojit k sadě Visual Studio [Azure App Service pro vzdálené ladění](debugging-azure-remote.md) pro některý z následujících důvodů:
 
@@ -33,4 +33,4 @@ Nepodaří připojit k sadě Visual Studio [Azure App Service pro vzdálené lad
 
 Viz také:
 
-- [Azure vzdálené ladění pro jazyk Python](debugging-azure-remote.md)
+- [Vzdálené ladění pro jazyk Python Azure](debugging-azure-remote.md)

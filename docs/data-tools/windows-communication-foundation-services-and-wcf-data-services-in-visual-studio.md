@@ -39,11 +39,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
 Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation (WCF) a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], technologiích společnosti Microsoft pro vytvoření distribuované aplikace. Toto téma obsahuje úvod do služby od [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektivy. Úplnou dokumentaci najdete v tématu [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).  
@@ -243,7 +243,6 @@ K tomuto problému nedošlo, typy v odkazovaných sestaveních sdílejí ve výc
 ||[Postupy: Přidání, aktualizace nebo odebrání odkazu na službu WCF Data](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Popisuje, jak odkazovat a používat [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|  
 |[Řešení potíží s odkazy na službu](../data-tools/troubleshooting-service-references.md)|Uvádí některé běžné chyby, které se můžou vyskytnout s odkazy na službu a jak chcete, aby.|  
 |[Ladění služby WCF](../debugger/debugging-wcf-services.md)|Popisuje běžné problémy ladění a techniky, které mohou nastat při ladění služby WCF.|  
-|[Přehled služby Windows Communication Foundation ověřování](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Popisuje způsob použití WCF k poskytování služeb role pro webový server.|  
 |[Návod: Vytvoření víceúrovňové datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Poskytuje podrobné pokyny pro vytvoření typové datové sady a rozdělit do více projektů kód TableAdapter a datové sady.|  
 |[Odkaz na službu – dialogové okno Konfigurace](../data-tools/configure-service-reference-dialog-box.md)|Popisuje prvky uživatelského rozhraní **nastavit odkaz na službu** dialogové okno.|  
   
@@ -253,4 +252,4 @@ K tomuto problému nedošlo, typy v odkazovaných sestaveních sdílejí ve výc
  <xref:System.Data.Services>  
   
 ## <a name="see-also"></a>Viz také  
- [Data nástroje sady Visual Studio pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

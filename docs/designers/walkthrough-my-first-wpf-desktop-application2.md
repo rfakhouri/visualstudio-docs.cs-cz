@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Návod: Můj první grafický subsystém WPF aplikace pracovní plochy
 Tento názorný postup obsahuje úvod k vývoji Windows Presentation Foundation (WPF). Vytvoříte základní aplikaci, která obsahuje prvky, které jsou společné pro většinu aplikací klasické pracovní plochy WPF: XAML značek, kódu, definice aplikace, ovládací prvky, rozložení, datové vazby a styly.  
@@ -851,40 +851,40 @@ V této části vytvoříte infrastrukturu aplikace, která zahrnuje projektu a 
 ##  <a name="Best_Practices"></a>Doporučené postupy  
  Tento příklad ukazuje základy grafického subsystému WPF a v důsledku toho nedodrží osvědčené postupy pro vývoj aplikací. Podle potřeby komplexní přehled WPF a rozhraní .NET Framework aplikace vývoj osvědčené postupy, najdete v následujících tématech:  
   
--   Usnadnění – [usnadnění – doporučené postupy](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   Usnadnění – [usnadnění – doporučené postupy](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   Zabezpečení – [zabezpečení systému Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   Zabezpečení – [zabezpečení systému Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)  
   
--   Lokalizace - [WPF globalizace a lokalizace – přehled](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   Lokalizace - [WPF globalizace a lokalizace – přehled](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   Výkon – [optimalizace výkonu aplikace WPF](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   Výkon – [optimalizace výkonu aplikace WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a>Co je další  
  Nyní máte několik technik k dispozici pro vytvoření aplikace pomocí grafického subsystému WPF. Teď byste měli mít základní znalosti o stavební bloky aplikace WPF vázané na data. Toto téma je rozhodně není vyčerpávající, ale zpravidla nyní také mít smysl pro některé možnosti, které můžete zjistit, na vlastní nad rámec techniky v tomto tématu.  
   
  Další informace o modelech WPF architektura a programování najdete v následujících tématech:  
   
--   [Architektura WPF](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [Architektura WPF](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [XAML – přehled](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [XAML – přehled](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [Přehled vlastností závislostí](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [Přehled vlastností závislosti](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [Rozložení systému](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [Rozložení systému](/dotnet/framework/wpf/advanced/layout)  
   
--   [Styly a šablony](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [Styly a šablony](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  Další informace o vytváření aplikací najdete v následujících tématech:  
   
--   [Přehled vývoje aplikace](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [Přehled vývoje aplikace](/dotnet/framework/wpf/app-development/index)  
   
--   [Přehled ovládacích prvků](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [Přehled ovládacích prvků](/dotnet/framework/wpf/controls/index)  
   
--   [Přehled vazba dat](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [Přehled datových vazeb](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [WPF grafiky, animace a přehled média](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [WPF grafiky, animace a přehled média](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [Dokumenty v grafickém subsystému WPF](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [Dokumenty v platformě WPF](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>Viz také  
-[Vytvoření moderních aplikací klasické pracovní plochy s Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+[Vytvoření moderních desktopových aplikací pomocí Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

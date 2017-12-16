@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: ab2988bc1123ef16adc929da297a7d5240ec668c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalace balíčků ve vašem prostředí Python
 
@@ -48,23 +48,22 @@ Komunity vývojářů Python má vytvořeného tisíce užitečné balíčky, kt
 
 1. Vytvoření nového projektu s **soubor > Nový > projekt**, výběrem šablony "Aplikace Python". Do souboru kódu, který se zobrazí vložte následující kód, který vytvoří kosinus wave jako v předchozích krocích kurz pouze v tomto případě vykreslí graficky:
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. Spusťte program s (F5) nebo bez něj (Ctrl + F5), chcete-li zobrazit výstup:
 
   ![Výstup matplotlib příklad](media/environments-add-matplotlib3.png)
-
 
 ## <a name="next-steps"></a>Další kroky
 
@@ -72,4 +71,5 @@ Komunity vývojářů Python má vytvořeného tisíce užitečné balíčky, kt
 > [Práce s úložištěm Git](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>Budete hlubší
+
 - [Prostředí Python](python-environments.md)

@@ -18,11 +18,11 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eb50bec1967b9c1f7a969eb802888864f5e72eb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cb65652840162be697abe535003de132c0ad55ea
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="source-server-security-alert"></a>Výstraha zabezpečení zdrojového serveru
 Při použití zdrojového serveru, použijte pouze symbol soubory, které jsou z umístění známé a důvěryhodné.  
@@ -30,7 +30,7 @@ Při použití zdrojového serveru, použijte pouze symbol soubory, které jsou 
  Toto upozornění se zobrazí, když povolíte podporu zdrojového serveru. Příkazy zdrojového serveru jsou součástí soubory ladění symbol (***PDB** soubory). Ujistěte se, že znáte, odkud pocházejí vaše soubory PDB.  
   
 > [!IMPORTANT]
->  Následující potenciální bezpečnostní hrozby musí vzít v úvahu při použití zdrojového serveru: libovolný příkazy může být vložen do souboru PDB aplikace, proto se ujistěte, můžete zadat jenom ty, které chcete provést v souboru srcsrv.ini. Pokus o provedení příkazu mimo soubor srcsvr.ini způsobí zobrazení dialogového okna s potvrzením. Další informace najdete v tématu [upozornění zabezpečení: ladicí program musí spustit nedůvěryhodný příkaz](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Na parametry příkazu není prováděno žádné ověření, tak buďte opatrní pomocí důvěryhodného příkazů. Například pokud důvěřujete souboru cmd.exe, uživateli se zlými úmysly může zadat parametry, které by z příkazu mohly udělat hrozbu.  
+>  Následující potenciální bezpečnostní hrozby musí vzít v úvahu při použití zdrojového serveru: libovolný příkazy může být vložen do souboru PDB aplikace, proto se ujistěte, můžete zadat jenom ty, které chcete provést v souboru srcsrv.ini. Pokus o provedení příkazu mimo soubor srcsvr.ini způsobí zobrazení dialogového okna s potvrzením. Další informace najdete v tématu [upozornění zabezpečení: ladicí program musí spustit nedůvěryhodný příkaz](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Parametry příkazu nejsou ověřovány, proto buďte s důvěryhodnými příkazy opatrní. Například pokud důvěřujete souboru cmd.exe, uživateli se zlými úmysly může zadat parametry, které by z příkazu mohly udělat hrozbu.  
   
 ## <a name="see-also"></a>Viz také  
  [Zadání symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   

@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 369407c70ba15c720af3c92a5fabc56497eeedb6
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý úvod: přizpůsobení Visual Studio IDE a Editor
 
@@ -98,6 +98,8 @@ Jsme prozkoumali jenom několik způsobů přizpůsobení barev v sadě Visual S
 ## <a name="see-also"></a>Viz také
 
 [Rychlý úvod: první pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
+[Rychlý úvod: kódování v editoru](../ide/quickstart-editor.md)  
+[Rychlý úvod: projekty a řešení](../ide/quickstart-projects-solutions.md)  
 [Přizpůsobení sady Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)  
 [Vlastní nastavení editoru](../ide/customizing-the-editor.md)  
 [Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)

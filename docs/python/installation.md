@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 066612a132bf6a092771afd5fc4a876d4b3be425
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: a08ca6acdccad4e7ed3a2ebb0eddb8d95992167d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalace podpory Python v sadě Visual Studio v systému Windows
 
@@ -66,12 +66,11 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
     | Podpora webového Python | Nainstaluje nástroje pro vývoj webů, včetně HTML, CSS a JavaScript úpravy podporu, společně s šablon pro projekty pomocí rozhraní Bottle, Flask a Django. V tématu [Python webové šablony projektů](template-web.md). |
     | Podpora Python IoT | Podporuje vývoj jádro IoT Windows používá Python. |
     | Nástroje pro nativní vývoj Python | Nainstaluje kompilátoru C++ a další komponenty potřebné k vývoji nativní rozšíření pro jazyk Python. V tématu [vytváření rozšíření pro C++ pro jazyk Python](cpp-and-python.md). |
-    | Základní nástroje Azure Cloud Services | Poskytuje další podporu pro vývojáře Azure Cloud Services v Pythonu. V tématu [zure projekty cloudových služeb](template-azure-cloud-service.md). |
+    | Základní nástroje Azure Cloud Services | Poskytuje další podporu pro vývojáře Azure Cloud Services v Pythonu. V tématu [Azure cloud service projekty](template-azure-cloud-service.md). |
 
 1. Po instalaci instalační program poskytuje možnosti změnit, spusťte, opravit nebo odinstalovat Visual Studio. **Upravit** tlačítko se změní na **aktualizace** při instalaci aktualizace Visual Studio jsou aktualizace dostupné pro všechny součásti. (Možnost upravit je pak k dispozici v rozevírací nabídce.) Visual Studio a instalační program z nabídky Start systému Windows můžete také spustit a to vyhledáním "Visual Studio".
 
     ![Spuštění, úprava, úprava nebo odinstalace z instalačního programu sady Visual Studio](media/installation-vs-launch.png)
-
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
 

@@ -1,5 +1,5 @@
 ---
-title: "Příručka začátečníka profilací výkonu v sadě Visual Studio | Microsoft Docs"
+title: "Profil výkonu aplikací v sadě Visual Studio | Microsoft Docs"
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -18,13 +18,13 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: 6db8c14125a88c24aa39c2b2e7393aca174125f9
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="beginners-guide-to-performance-profiling"></a>Příručka začátečníka profilací výkonu
+# <a name="profile-application-performance-in-visual-studio"></a>Profil výkonu aplikací v sadě Visual Studio
 Nástroje pro profilaci sady Visual Studio můžete použít k analýze problémy s výkonem v aplikaci. Tento postup ukazuje, jak používat **využití procesoru** kartě diagnostické nástroje získat údaje o výkonu pro vaši aplikaci. Diagnostické nástroje jsou podporované pro .NET – vývoj v sadě Visual Studio, včetně ASP.NET a pro vývoj nativní/C++.
   
 Když ladicí program pozastaví, **využití procesoru** nástroj shromažďuje informace o funkcích, které jsou prováděny ve vaší aplikaci. Nástroj obsahuje seznam funkcí, které byly provede práci a poskytuje časová osa grafu, které můžete používat a zaměřit se na konkrétní segmenty relace vzorkování.
@@ -68,7 +68,7 @@ V tomto tématu probereme analýza využití procesoru v normálním pracovním 
 
      ![Diagnostické nástroje povolit profilace procesoru](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
-     Pokud vyberete **povolit profilace procesoru**, Visual Studio bude nahráváním funkcí a jak dlouho budou chtít provést. Tato shromážděná data můžete zobrazit, jenom když aplikace se zastavilo na zarážce.
+     Pokud vyberete **záznam procesoru profil**, Visual Studio bude nahráváním funkcí a jak dlouho budou chtít provést. Tato shromážděná data můžete zobrazit, jenom když aplikace se zastavilo na zarážce.
 
 8.  Stiskněte F5 a spusťte aplikaci k vaší zarážce druhý.
 

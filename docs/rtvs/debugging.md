@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: ec65639fb7549b9d824e80b702fab2b2b2e1123d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>Ladění R v sadě Visual Studio
 
@@ -57,12 +57,12 @@ Po zastavení v ladicím programu je také zastavit v řádku prostředí prohl�
 
 Prohlížeč prostředí podporuje řadu příkazů, speciální:
 
-| Příkaz | Popis | 
+| Příkaz | Popis |
 | --- | --- |
 | n | Další: spustí další příkaz v kódu souboru (stejné jako krok přes). |
-| s | Krokování s vnořením: spustí další příkaz do souboru kódu zanoříte se do oboru funkce, pokud další je volání funkce. | 
+| s | Krokování s vnořením: spustí další příkaz do souboru kódu zanoříte se do oboru funkce, pokud další je volání funkce. |
 | F | Dokončit: spustí zbytek aktuální obor funkce a vrátí volajícímu (stejný jako krok out). |
-| c, potřeba | pokračovat: program spustí další zarážku. | 
+| c, potřeba | pokračovat: program spustí další zarážku. |
 | Q | Ukončí: končí relaci ladění. |
 | kde | Zobrazit zásobník: zobrazí v okně interaktivní zásobníku volání. |
 | Nápověda | Zobrazit nápovědu: zobrazí v okně interaktivní dostupné příkazy. |

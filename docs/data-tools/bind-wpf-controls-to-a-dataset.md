@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d7609215f7145ae05d978ba10d556782c886ee3b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 96d5407672ff94749731f9d00088b27e8c4da036
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky vázané na data. Ovládací prvky jsou vázány na záznamy produktu, které jsou zapouzdřené v datové sadě. Taky se přidá tlačítka Procházet produkty a uložit změny do produktu, záznamů.  
@@ -50,8 +50,6 @@ K dokončení tohoto návodu budete potřebovat následující komponenty:
 Předchozí znalosti následující koncepty je také užitečné, ale není nutné k dokončení průvodce:  
   
 -   Datových sad a TableAdapters. Další informace najdete v tématu [datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) a [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
-  
--   Práce s Návrháře WPF. Další informace najdete v tématu [WPF a Silverlight Designer přehled](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   Datové vazby WPF. Další informace najdete v tématu [přehled vazby dat](/dotnet/framework/wpf/data/data-binding-overview).  
   
@@ -257,5 +255,4 @@ Přidejte kód, který umožňuje uživatelům uložit změny do záznamů produ
 ## <a name="see-also"></a>Viz také
 [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [Datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
-[WPF a Silverlight Designer – přehled](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
-[Přehled vazba dat](/dotnet/framework/wpf/data/data-binding-overview)
+[Přehled datových vazeb](/dotnet/framework/wpf/data/data-binding-overview)

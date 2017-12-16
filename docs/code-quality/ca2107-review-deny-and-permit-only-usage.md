@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb802e0d97d265c01540ca10ffe8d0dcf9b273cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Revize použití operací odepřít a povolit pouze
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Metoda obsahuje kontrolu zabezpečení, která určuje akce zabezpečení PermitOnly nebo odepřít.  
   
 ## <a name="rule-description"></a>Popis pravidla  
- [Pomocí metody PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) a <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> zabezpečení akce má být používána pouze ty, kteří mají pokročilé znalosti o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zabezpečení. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.  
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> Zabezpečení akce má být používána pouze ty, kteří mají pokročilé znalosti o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zabezpečení. Kód používající tyto bezpečnostní akce by měl být podroben revizi zabezpečení.  
   
  Odepřít mění výchozí chování, k níž dojde v reakci na poptávku zabezpečení procházení zásobníku. Umožňuje vám určit oprávnění, která nesmí po dobu trvání metodu odmítá, bez ohledu na skutečná oprávnění volajících v zásobníku volání. Pokud procházení zásobníku zjistí metodu, která je zabezpečená službou Odepřít a pokud požadované oprávnění je součástí odepřených oprávnění, procházení zásobníku se nezdaří. PermitOnly také mění výchozí chování procházení zásobníku. To umožňuje kódu k určení jenom oprávnění, které lze udělit, bez ohledu na oprávnění volající. Pokud procházení zásobníku zjistí metodu, která je zabezpečená službou PermitOnly, a pokud požadované oprávnění nezahrnuje oprávnění, které jsou určené PermitOnly, procházení zásobníku se nezdaří.  
   
@@ -82,5 +82,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
  [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines)   
- [Přepsání kontrol zabezpečení](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Pomocí metody PermitOnly](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+

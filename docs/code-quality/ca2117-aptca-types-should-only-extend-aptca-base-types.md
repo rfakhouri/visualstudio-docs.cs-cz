@@ -18,11 +18,11 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5619de2512e18cbe9d7dbfb3d992886ae23a25bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 977f721ed45343e247f8639accc0fa5dc83263c6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Typy APTCA by měl rozšířit pouze základní typy APTCA
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  Veřejné nebo chráněného typ v sestavení s <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atribut dědí z typu v sestavení, které nemá atribut deklarován.  
   
 ## <a name="rule-description"></a>Popis pravidla  
- Ve výchozím nastavení, jsou veřejných nebo chráněného typy v sestavení se silnými názvy implicitně chráněny [požadavky dědičnosti](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pro úplný vztah důvěryhodnosti. Sestavení se silným názvem označené jako <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atribut (APTCA) nemají tato ochrana. Atribut zakáže požadavek dědičnosti. Díky tomu zveřejněné typy deklarované v sestavení zděditelné typy, které nemají úplný vztah důvěryhodnosti.  
+ Ve výchozím nastavení, jsou veřejných nebo chráněného typy v sestavení se silnými názvy implicitně chráněny <xref:System.Security.Permissions.SecurityAction.InheritanceDemand> pro úplný vztah důvěryhodnosti. Sestavení se silným názvem označené jako <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atribut (APTCA) nemají tato ochrana. Atribut zakáže požadavek dědičnosti. Díky tomu zveřejněné typy deklarované v sestavení zděditelné typy, které nemají úplný vztah důvěryhodnosti.  
   
  Když je atribut APTCA na plně důvěryhodný pro sestavení a typ v sestavení dědí od typu, který neumožňuje částečně důvěryhodné volající, je možné zneužití zabezpečení. Pokud dva typy `T1` a `T2` splňovat následující podmínky, škodlivými úmysly použít typ `T1` obejít požadavek dědičnosti implicitní úplný vztah důvěryhodnosti, který chrání `T2`:  
   
@@ -85,6 +85,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Viz také  
  [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines)   
- [Sestavení rozhraní .NET framework s částečně důvěryhodným kódem](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [Používání knihoven z částečně důvěryhodného kódu](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Dědičnost požadavků](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

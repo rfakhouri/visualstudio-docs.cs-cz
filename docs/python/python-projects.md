@@ -12,11 +12,11 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 44065522229a1661efc41e79905d9650f7949ac3
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: f60f930cd29d670ee5ac4b4274082ca00ca0012f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="python-projects"></a>Projektů v jazyce Python
 
@@ -144,6 +144,6 @@ Protože odkazů v IronPython nejsou k dispozici až volání `clr.AddReference(
 
 ### <a name="webpi-projects"></a>Projekty WebPI
 
-Odkazy na záznamy produktu WebPI pro nasazení můžete přidat do Microsoft Azure Cloud Service, kde můžete nainstalovat další součásti prostřednictvím WebPI informačního kanálu. Ve výchozím kanálu zobrazí specifické pro Python a zahrnuje Django, CPython a další komponenty jádra. Můžete také vybrat vlastní informační kanál, jak je uvedeno níže. Při publikování do služby Microsoft Azure, úlohu instalační program nainstaluje všechny odkazované produkty.
+Odkazy na záznamy produktu WebPI pro nasazení můžete přidat do Microsoft Azure Cloud Services, kde můžete nainstalovat další součásti prostřednictvím WebPI informačního kanálu. Ve výchozím kanálu zobrazí specifické pro Python a zahrnuje Django, CPython a další komponenty jádra. Můžete také vybrat vlastní informační kanál, jak je uvedeno níže. Při publikování do služby Microsoft Azure, úlohu instalační program nainstaluje všechny odkazované produkty.
 
 ![Odkazy na WebPI](media/projects-webPI-components.png)

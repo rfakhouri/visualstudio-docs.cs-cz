@@ -20,11 +20,11 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a0a7d55b19455e22836d4750c0842a47816ee86
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 7930ab4b425eeba0896828e5db36ab874166d3bf
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Podporované změny kódu (C# a Visual Basic)
 Upravit a pokračovat zpracovává většinu typů změn kódu uvnitř těla metody. Během ladění, ale nejde použít většinu změn mimo metod a několik změn uvnitř těla metody. Chcete-li tyto nepodporované změny použít, musí Zastavte ladění a restartujte s novou verzí kódu.
@@ -99,8 +99,6 @@ Nepodporované aplikace a platformy zahrnout ASP.NET 5, emulátor Silverlight 5,
   
 -   Ladění zotavení po havárii. Watson výpis.  
   
--   Úpravy kódu po neošetřené výjimky, když "**Unwind zásobníku volání na neošetřených výjimek**" možnost není vybraná.  
-  
 -   Ladění aplikace embedded runtime.  
   
 -   Ladění aplikace pomocí připojit k procesu (**ladění > připojit k procesu**) namísto spuštění aplikace tak, že zvolíte **spustit** z **ladění** nabídky.  
@@ -111,4 +109,4 @@ Nepodporované aplikace a platformy zahrnout ASP.NET 5, emulátor Silverlight 5,
   
 ## <a name="see-also"></a>Viz také  
  [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Postupy: použití operace upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+ [Postupy: Použití operace Upravit a pokračovat (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

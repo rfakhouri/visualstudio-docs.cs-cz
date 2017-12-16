@@ -13,11 +13,11 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ccb0abcf70f66812ab1ffe91958119f08c97966
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: dc427dbca201b472feca89201284ab009abd9d34
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-get-a-service"></a>Postupy: získání služby
 Často je potřeba získat sady Visual Studio službám přístup k různých funkcí. Obecně platí služby Visual Studio poskytuje jeden nebo více rozhraní, které můžete použít. Většina služeb můžete získat z VSPackage.  
@@ -28,9 +28,9 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Získávání služby z inicializovaného VSPackage  
   
-1.  Každé rozšíření sady Visual Studio začíná projekt nasazení VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX projektu s názvem `GetServiceExtension`. Můžete najít v šabloně projektů VSIX **nový projekt** dialogové okno pod **Visual C# nebo rozšíření**.  
+1.  Každé rozšíření sady Visual Studio začíná projekt nasazení VSIX, který bude obsahovat rozšíření prostředků. Vytvoření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX projektu s názvem `GetServiceExtension`. Můžete najít v šabloně projektů VSIX **nový projekt** dialogové okno pod **Visual C# > rozšíření**.  
   
-2.  Nyní přidejte šablonu a vlastní příkaz položka s názvem **GetServiceCommand**. V **přidat novou položku** dialogové okno, přejděte na **Visual C# nebo rozšíření** a vyberte **vlastní příkaz**. V **název** pole v dolní části okna, změňte název souboru příkaz **GetServiceCommand.cs**. Další informace o tom, jak vytvořit vlastní příkaz [vytvoření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2.  Nyní přidejte šablonu a vlastní příkaz položka s názvem **GetServiceCommand**. V **přidat novou položku** dialogové okno, přejděte na **Visual C# > rozšíření** a vyberte **vlastní příkaz**. V **název** pole v dolní části okna, změňte název souboru příkaz **GetServiceCommand.cs**. Další informace o tom, jak vytvořit vlastní příkaz [vytvoření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 3.  V GetServiceCommand.cs odeberte těla metody MenuItemCommand a přidejte následující kód:  
   
@@ -87,4 +87,4 @@ if (sp != null)
 ## <a name="see-also"></a>Viz také  
  [Postupy: poskytování služby](../extensibility/how-to-provide-a-service.md)   
  [Použití a poskytování služeb](../extensibility/using-and-providing-services.md)   
- [Služba Essentials](../extensibility/internals/service-essentials.md)
+ [Základy služeb](../extensibility/internals/service-essentials.md)

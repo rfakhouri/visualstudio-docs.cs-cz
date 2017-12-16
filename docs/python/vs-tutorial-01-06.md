@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8356a9d4ab470b67a6e495d753fa498237e530f4
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 2d3285004ce2b23a20f345966161017387dfdf4e
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-6-working-with-git"></a>Krok 6: Práce s Gitem
 
@@ -48,7 +48,6 @@ Toto téma popisuje vytvoření místní úložiště Git pro existující proje
 
 Rozsáhlejší kurz týkající se práce s Gitem, najdete v části [sdílet kódu s Visual Studio 2017 a služby VSTS Git](https://docs.microsoft.com/vsts/git/share-your-code-in-git-vs-2017)
 
-
 ## <a name="tutorial-review"></a>Kurz revize
 
 Blahopřejeme k dokončení tohoto kurzu na Python v sadě Visual Studio. V tomto kurzu naučili jste se postup:
@@ -62,7 +61,7 @@ Blahopřejeme k dokončení tohoto kurzu na Python v sadě Visual Studio. V tomt
 
 Tady prozkoumejte koncepty a návody, včetně následujících:
 
-- [Vytvoření rozšíření C++ pro Python](cpp-and-python.md)
+- [Vytváření rozšíření pro C++ pro jazyk Python](cpp-and-python.md)
 - [Publikování do služby Azure App Service](publishing-to-azure.md)
 - [Profilace](profiling.md)
 - [Testování částí](unit-testing.md)

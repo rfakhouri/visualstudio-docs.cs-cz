@@ -15,14 +15,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f711c0fcdd4866a1b097585052cdcb3733e426d8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit
-[Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje návrhové ploše k vytváření a úpravy [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] třídy (třídy entity), které jsou založeny na objekty v databázi. Pomocí [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), můžete použít technologie LINQ pro přístup k databázím SQL. Další informace najdete v tématu [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+[Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje návrhové ploše k vytváření a úpravy [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] třídy (třídy entity), které jsou založeny na objekty v databázi. Pomocí [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), můžete použít technologie LINQ pro přístup k databázím SQL. Další informace najdete v tématu [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/).  
   
 Ve výchozím nastavení, je poskytována logiku pro provádění aktualizací [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] modulu runtime. Modul runtime vytvoří výchozí příkazy Insert, Update a Delete na základě schématu tabulky (definice sloupců a informace o primárním klíči). Pokud nechcete použít výchozí chování, můžete konfigurovat chování aktualizací a určit konkrétní uložené procedury pro provádění nezbytné vložení, aktualizace a odstranění potřebné pro práci s daty v databázi. Můžete také k tomu generování výchozí chování není, například pokud vaše třídy entity mapování na zobrazení. Kromě toho můžete přepsat výchozí chování aktualizace, pokud databáze vyžaduje přístup k tabulce prostřednictvím uložených procedur. Další informace najdete v tématu [přizpůsobení Operations podle pomocí uložené procedury](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).  
   
@@ -270,6 +270,6 @@ V závislosti na požadavcích vaší aplikace, existuje několik kroků, které
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     
 [DataContext metody](../data-tools/datacontext-methods-o-r-designer.md)   
 [Postupy: přiřazení uložené procedury k provedení aktualizací, vložení a odstranění](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)  
-[Technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)  
+[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)  
 [Dotazy LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/linq-to-sql-queries)  
  

@@ -22,18 +22,18 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b7e6a534d1a9c3b665b72f0af8257c0915e7a29
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 4d1d35049d71ba011516b3bc06316cb46cc61ced
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Návod: Zlepšení odezvy uživatelského rozhraní (HTML)
 Tento názorný postup vás provede procesem identifikovat a opravit problémy výkonem pomocí [profiler odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md). Profileru je k dispozici v sadě Visual Studio pro aplikace UWP pomocí jazyka JavaScript. V tomto scénáři vytvoříte aplikaci test výkonu, která aktualizuje elementů modelu DOM příliš často a používat profileru k identifikaci a řešení tohoto problému.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Vytváření a spouštění výkon testování aplikace  
   
-1.  V sadě Visual Studio vytvořte nový projekt Windows Universal jazyka JavaScript. (Vyberte **souboru / nové / Project**. Zvolte **JavaScript** v levém podokně a potom zvolte **Windows**, **Windows 10**, pak buď **Universal**, nebo  **Windows Phone**.  
+1.  V sadě Visual Studio vytvořte nový projekt Windows Universal jazyka JavaScript. (Vyberte **soubor > Nový > projekt**. Zvolte **JavaScript** v levém podokně a potom zvolte **Windows**, **Windows 10**, pak buď **Universal**, nebo  **Windows Phone**.  
   
 2.  > [!IMPORTANT]
     >  Diagnostické výsledky zobrazené v tomto tématu se zobrazují pro aplikace pro Windows 8.  

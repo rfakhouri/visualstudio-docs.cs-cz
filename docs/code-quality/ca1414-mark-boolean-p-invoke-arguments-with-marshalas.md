@@ -18,11 +18,11 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25fd80168e78feda70b86f512598a850acae7010
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f990336f84a518a754615eb878e41100d7ccb3f3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Označte logické hodnoty volání nespravovaného kódu pomocí MarshalAs
 |||  
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>Popis pravidla  
  Platforma volání nespravovaného kódu metoda přístupů a je definován pomocí `Declare` – klíčové slovo v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nebo <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute>Určuje chování zařazování, který se používá pro převod typů data mezi spravovanými a nespravovanými kódu. Mnoho jednoduché datové typy, jako například <xref:System.Byte?displayProperty=fullName> a <xref:System.Int32?displayProperty=fullName>, mít jeden reprezentace v nespravovaném kódu a nevyžadují specifikaci jejich chování zařazování; modul common language runtime automaticky poskytuje správné chování.  
   
- <xref:System.Boolean> Datový typ má více reprezentací v nespravovaném kódu. Když <xref:System.Runtime.InteropServices.MarshalAsAttribute> není určena, výchozí chování pro zařazování <xref:System.Boolean> datový typ je <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Toto je 32bitové celé číslo, které není vhodná za všech okolností. Logická reprezentace vyžadovanou nespravované metoda by měla určit a odpovídá na příslušné <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool je typu Win32 BOOL, který je vždycky 4 bajtů. UnmanagedType.U1 má být použit pro C++ `bool` nebo jiné typy 1bajtový. Další informace najdete v tématu [výchozí zařazování pro logickou typy](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).  
+ <xref:System.Boolean> Datový typ má více reprezentací v nespravovaném kódu. Když <xref:System.Runtime.InteropServices.MarshalAsAttribute> není určena, výchozí chování pro zařazování <xref:System.Boolean> datový typ je <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Toto je 32bitové celé číslo, které není vhodná za všech okolností. Logická reprezentace vyžadovanou nespravované metoda by měla určit a odpovídá na příslušné <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool je typu Win32 BOOL, který je vždycky 4 bajtů. UnmanagedType.U1 má být použit pro C++ `bool` nebo jiné typy 1bajtový.  
   
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Opravit porušení toto pravidlo, použít <xref:System.Runtime.InteropServices.MarshalAsAttribute> k <xref:System.Boolean> hodnotu parametru nebo return. Nastavte hodnotu atributu na příslušné <xref:System.Runtime.InteropServices.UnmanagedType>.  
@@ -60,5 +60,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>   
- [Výchozí zařazování pro logickou typy](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)   
  [Spolupráce s nespravovaným kódem](/dotnet/framework/interop/index)

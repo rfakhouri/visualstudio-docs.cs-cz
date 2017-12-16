@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 18cd58899819e49943e009da898705cfa328ffb5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b74b905108543422163142fac5984626969ba95d
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: Použití okna interaktivní REPL
 
@@ -47,7 +47,7 @@ Visual Studio *interaktivních okna* pro jazyk Python poskytuje prostředí boha
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
-    def make_dot_string(x):  
+    def make_dot_string(x):
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
@@ -62,8 +62,8 @@ Visual Studio *interaktivních okna* pro jazyk Python poskytuje prostředí boha
 
     ```python
     for i in range(360):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     ![Vkládání více řádků kódu pomocí odesílání interaktivní](media/vs-getting-started-python-15-interactive5.png)
@@ -82,14 +82,13 @@ Visual Studio *interaktivních okna* pro jazyk Python poskytuje prostředí boha
 
     ```python
     for i in range(0, 1800, 12):
-        s = make_dot_string(i)  
-        print(s) 
+        s = make_dot_string(i)
+        print(s)
     ```
 
     Pokud chcete zkopírovat přesný obsah interaktivních okna, včetně pokynů a výstup, použijte standardní **kopie** příkaz.
 
 1. Co jste právě provedli je vycházejí z podrobností o malou část kódu pomocí rychlé prostředí REPL interaktivních okna a potom pohodlně přidat tento kód do vašeho projektu zdrojový soubor. Když nyní spustíte kód znovu pomocí kombinace kláves Ctrl + F5 (nebo **ladění > Spustit bez ladění**), najdete v části chtěli byste přesné výsledky.
-
 
 ## <a name="next-steps"></a>Další kroky
 

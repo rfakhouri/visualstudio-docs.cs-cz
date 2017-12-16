@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3949d49f763c2513e86c2cd3f1b20c20fb858ecc
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 0fb26eddd3a7bf6af9a2888b6fbc8efa79e33bf5
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="n-tier-data-applications-overview"></a>Přehled vícevrstvých datových aplikací
 *N-vrstvá* data aplikací jsou data aplikací, které jsou rozdělené do několika *vrstev*. Nazývají se také „distribuované aplikace“ a „vícevrstvé aplikace“. N-vrstvé aplikace oddělují zpracování do samostatných vrstev, které jsou distribuovány mezi klientem a serverem. Při vývoji aplikací s přístupem k datům by mělo být cíleno na rozdělení mezi různými úrovněmi, které aplikaci tvoří.  
@@ -34,7 +34,7 @@ Aplikace Visual Studio obsahuje několik funkcí, které usnadní vývojářům 
   
 -   [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje nastavení k vytvoření třídy kontextu DataContext a data do samostatné obory názvů. Tato skutečnost umožňuje logické rozdělení přístupu k datům a vrstev datové entity.  
   
--   [Technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) poskytuje <xref:System.Data.Linq.Table%601.Attach%2A> metoda, která umožňuje shromažďování DataContext z různých vrstev v aplikaci. Další informace najdete v tématu [N-vrstvá a vzdálené aplikace s dotazy LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+-   [Technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) poskytuje <xref:System.Data.Linq.Table%601.Attach%2A> metoda, která umožňuje shromažďování DataContext z různých vrstev v aplikaci. Další informace najdete v tématu [N-vrstvá a vzdálené aplikace s dotazy LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).  
   
 ## <a name="presentation-tier"></a>Prezentační vrstva  
 *Prezentační vrstvy* je vrstvy, ve kterém uživatelé pracují s aplikací. Často také obsahuje další aplikační logiku. Mezi typické komponenty prezentační vrstvy patří:  
@@ -78,11 +78,11 @@ K datové vrstvě nelze přistupovat přímo z klienta v prezentační vrstv�
 ## <a name="help-for-n-tier-development"></a>Nápověda pro N-vrstvý vývoj  
 Následující témata obsahují informace o práci s n-vrstvými aplikacemi:  
   
-[Samostatné datových sad a TableAdapters do různých projektů](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
+[Rozdělování datových sad a objektů TableAdapter do různých projektů](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
   
 [Návod: Vytvoření víceúrovňové datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
 
-[N-vrstvá a vzdálené aplikace s dotazy LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+[N-vrstvé a vzdálené aplikace s LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)  
   
 ## <a name="see-also"></a>Viz také
 [Návod: Vytvoření víceúrovňové datové aplikace](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   

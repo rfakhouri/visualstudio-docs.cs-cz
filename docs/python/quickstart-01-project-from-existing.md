@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f0090c5c7cceabdfc8fde313b7d3ad23337ad409
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 9858b25f72c6a21bf9cf861067bf747c7d06cae9
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Rychlý úvod: vytvoření projektu jazyka Python z existujícího kódu
 
@@ -28,7 +28,6 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
 8. V případě potřeby spustit program stisknutím Ctrl + F5 nebo výběrem **ladění > Spustit bez ladění**. 
-
 
 ## <a name="next-steps"></a>Další kroky
 

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c3e5c90818485ef8fc071f22709dde14933769a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e5b0ddc7a8f521101e09f41b5036b4233a8bcdc6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Sada pravidel Smíšená minimální pravidla
 Microsoft smíšená minimální pravidla se zaměřit na nejdůležitější problémy ve vašich projektů C++, které podporují modul Common Language Runtime, včetně potenciální bezpečnostní díry a dojde k chybě aplikace. Toto pravidlo nastavit v žádné sadě vlastní pravidlo, že které vytvoříte pro projekty jazyka C++, které podporují modul Common Language Runtime by měla obsahovat.  
@@ -59,7 +59,6 @@ Microsoft smíšená minimální pravidla se zaměřit na nejdůležitější pr
 |[C6504](../code-quality/c6504.md)|Hodnotu Null u jiných ukazatele|  
 |[C6505](../code-quality/c6505.md)|MustCheck na Void|  
 |[C6506](../code-quality/c6506.md)|Velikost vyrovnávací paměti na jiný ukazatel nebo pole|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|Null neshodě Dereference nula.|  
 |[C6508](../code-quality/c6508.md)|Přístup pro zápis na konstanta|  
 |[C6509](../code-quality/c6509.md)|Vraťte se používá na předběžnou podmínku.|  
 |[C6510](../code-quality/c6510.md)|V jiných ukazatel byl ukončen hodnotu Null|  
@@ -70,12 +69,8 @@ Microsoft smíšená minimální pravidla se zaměřit na nejdůležitější pr
 |[C6516](../code-quality/c6516.md)|Žádné vlastnosti v atributu|  
 |[C6517](../code-quality/c6517.md)|Platné velikost na bez možnosti čtení vyrovnávací paměti|  
 |[C6518](../code-quality/c6518.md)|Zapisovatelné velikost na umožňovat zápis vyrovnávací paměti|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|Neplatný Poznámka: hodnota vlastnosti 'NeedsRelease' musí být Ano nebo ne|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|Dereference – neplatná velikost řetězce|  
 |[C6522](../code-quality/c6522.md)|Neplatná velikost String – typ|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|Parametr neplatná velikost řetězce|  
 |[C6525](../code-quality/c6525.md)|Neplatná velikost řetězce nedostupný umístění|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|Neplatná velikost String vyrovnávací paměti – typ|  
 |[C6527](../code-quality/c6527.md)|Neplatný poznámky: vlastnost 'NeedsRelease' nesmí být použity na hodnoty typu void|  
 |[C6530](../code-quality/c6530.md)|Nerozpoznaný formát řetězec styl|  
 |[C6540](../code-quality/c6540.md)|Používání atributu poznámky k této funkci zrušíte platnost všech jeho existujících poznámek __declspec|  
@@ -135,8 +130,7 @@ Microsoft smíšená minimální pravidla se zaměřit na nejdůležitější pr
 |[C28253](../code-quality/c28253.md)|Nekonzistentní poznámky pro funkci: parametr má jiné poznámky v této instanci.|  
 |[C28254](../code-quality/c28254.md)|(dynamic_cast <>) není podporována v poznámky|  
 |[C28262](../code-quality/c28262.md)|Chyba syntaxe v Poznámka byla nalezena ve funkci pro poznámky|  
-|[C28263](../code-quality/c28263.md)|Chyby syntaxe v podmíněného poznámky pro vnitřní poznámky nebyl nalezen.|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|Výsledek hodnoty seznamů musí být konstanty.|  
+|[C28263](../code-quality/c28263.md)|Chyby syntaxe v podmíněného poznámky pro vnitřní poznámky nebyl nalezen.| 
 |[C28267](../code-quality/c28267.md)|Chyba syntaxe v poznámky nenašel ve funkci poznámky.|  
 |[C28272](../code-quality/c28272.md)|Poznámky pro funkce, parametr při zkoumání není konzistentní s deklarace funkce|  
 |[C28273](../code-quality/c28273.md)|Pro funkci nejsou konzistentní s deklarace funkce různá vodítka|  

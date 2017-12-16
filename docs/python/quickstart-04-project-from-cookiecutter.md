@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 876fdbd4507fd7ed55e7b29834d4a3bc5e68dfad
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b635d988e54dd8b07092c0c77941552e66a38776
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Rychlý úvod: Vytvořte projekt ze šablony Cookiecutter
 
@@ -42,7 +42,6 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 
     ![Výstup šablony python sklearn třídění cookiecutter projektu](media/projects-from-cookiecutter4.png)
 
-
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
@@ -50,7 +49,7 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 
 ## <a name="see-also"></a>Viz také
 
-- [Použití rozšíření Cookiecutter](cookiecutter.md)
+- [Pomocí rozšíření Cookiecutter](cookiecutter.md)
 - [Vytvoření prostředí pro existující překladač Pythonu](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 - [Instalace podpory Python v sadě Visual Studio 2015 a starší](installation.md).
 - [Umístění instalace](installation.md#install-locations).

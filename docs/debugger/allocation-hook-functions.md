@@ -25,11 +25,11 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9147439d6aab7a6393f37f0cf8b14b0b0401ed1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5e00d43898fbc29ba238a670d39cf8d3e7638122
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="allocation-hook-functions"></a>Funkce háku přidělení
 Funkce háku přidělení, nainstalovat pomocí [_crtsetallochook –](/cpp/c-runtime-library/reference/crtsetallochook), se nazývá pokaždé, když je paměti přidělené, znovu přidělený nebo vydání. Tento typ háku slouží k mnoha různým účelům. Použijte ho k testování, jak se aplikace zpracovává situacích, není dostatek paměti, například nebo chcete zjistit vzory přidělování nebo k protokolování informací o přidělení pro pozdější analýzu.  
@@ -57,4 +57,3 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>Viz také  
  [Háky přidělení a přidělení běhové paměti jazyka C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Zápis funkce háku ladění](../debugger/debug-hook-function-writing.md)   
- [Ukázka crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)

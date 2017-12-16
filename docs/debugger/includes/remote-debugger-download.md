@@ -13,20 +13,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 109d9d8718a2c46dbd982e58b22dcf43e55b2205
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 7e911686d1f8bff191c439f4fc2b92c37d60a31f
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/11/2017
 ---
 1.  Na zařízení nebo server počítač, který chcete ladit (spíše než počítač spuštění sady Visual Studio) získáte správnou verzi nástrojů pro vzdálenou.
 
     |Version|Odkaz|Poznámky|
     |-|-|-|
-    |Visual Studio 2017 Update 4|[Nástroje pro vzdálenou](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Vždy stáhněte verzi odpovídající operační systém zařízení (x86 nebo x64). Pro starší prohlížeče, použijte tyto přímé odkazy: [nástrojů pro vzdálenou (x64)](https://go.microsoft.com/fwlink/?LinkId=746570&clcid=0x409) a [nástrojů pro vzdálenou (x86)](https://go.microsoft.com/fwlink/?LinkId=746569&clcid=0x409).|
-    |Visual Studio 2017 (starší)|[Nástroje pro vzdálenou](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Pokud se zobrazí výzva, připojit ke skupině volné Essentials vývojáře Visual Studio nebo se můžete přihlásit pomocí platné předplatné sady Visual Studio. Pro starší prohlížeče musíte přidat nové důvěryhodných serverů, pokud se zobrazí výzva.|
-    |Visual Studio 2015 Update 3|[Nástroje pro vzdálenou](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, připojit ke skupině volné Essentials vývojáře Visual Studio nebo se můžete přihlásit pomocí platné předplatné sady Visual Studio. Pro starší prohlížeče musíte přidat nové důvěryhodných serverů, pokud se zobrazí výzva.|
-    |Visual Studio 2015 (starší)|[Nástroje pro vzdálenou](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, připojit ke skupině volné Essentials vývojáře Visual Studio nebo se můžete přihlásit pomocí platné předplatné sady Visual Studio. Pro starší prohlížeče musíte přidat nové důvěryhodných serverů, pokud se zobrazí výzva.|
+    |Visual Studio 2017 verze 15,5|[Nástroje pro vzdálenou](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Vždy stáhněte verzi odpovídající operační systém zařízení (x86 nebo x64). Pokud je povolený režim rozšířené zabezpečení (Windows Server), musíte přidat nový důvěryhodných serverů po zobrazení výzvy.|
+    |Visual Studio 2017 (starší)|[Nástroje pro vzdálenou](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Nástroje pro vzdálenou pro dřívější verze Visual Studio 2017 jsou dostupné z My.VisualStudio.com. Pokud se zobrazí výzva, spojení skupině volné Essentials vývojáře Visual Studio nebo Přihlaste se pomocí vašeho předplatného sady Visual Studio ID. Pokud je povolený režim rozšířené zabezpečení (Windows Server), musíte přidat nový důvěryhodných serverů po zobrazení výzvy.|
+    |Visual Studio 2015 Update 3|[Nástroje pro vzdálenou](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, spojení skupině volné Essentials vývojáře Visual Studio nebo Přihlaste se pomocí vašeho předplatného sady Visual Studio ID. Pokud je povolený režim rozšířené zabezpečení (Windows Server), musíte přidat nový důvěryhodných serverů po zobrazení výzvy.|
+    |Visual Studio 2015 (starší)|[Nástroje pro vzdálenou](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, spojení skupině volné Essentials vývojáře Visual Studio nebo Přihlaste se pomocí vašeho předplatného sady Visual Studio ID. Pokud je povolený režim rozšířené zabezpečení (Windows Server), musíte přidat nový důvěryhodných serverů po zobrazení výzvy.|
     |Visual Studio 2013|[Nástroje pro vzdálenou](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Stáhněte si stránku v dokumentaci k sadě Visual Studio 2013|
     |Visual Studio 2012|[Nástroje pro vzdálenou](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Stáhněte si stránku v dokumentaci sady Visual Studio 2012|
   

@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Barvy a styly pro sadu Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Pomocí barev v sadě Visual Studio  
@@ -320,7 +320,7 @@ Někdy budete chtít povolit koncovému uživateli umožňují přizpůsobit už
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Vytváření VSPackage pro vaše přizpůsobitelná barvy  
 VSPackage můžete řídit písma a barev prostřednictvím vlastních kategorií a zobrazení položek na stránce vlastností písma a barev. Pokud používáte tento mechanismus, musí implementovat VSPackages [IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx) rozhraní a jeho přidružené rozhraní.  
   
-V zásadě tento mechanismus lze změnit všechna existující položky zobrazení a kategorie, které je obsahují. Však není vhodné jej použít k úpravě kategorie textového editoru nebo jeho položky zobrazení. Další informace o kategorii textový Editor, najdete v části [písma a barev přehled](https://msdn.microsoft.com/en-us/library/bb165065.aspx).  
+V zásadě tento mechanismus lze změnit všechna existující položky zobrazení a kategorie, které je obsahují. Však není vhodné jej použít k úpravě kategorie textového editoru nebo jeho položky zobrazení. Další informace o kategorii textový Editor, najdete v části [písma a barev přehled](../font-and-color-overview.md).  
   
 Pokud chcete implementovat vlastní kategorie nebo zobrazit položky, musí VSPackage:  
   
@@ -397,7 +397,7 @@ K tomuto účelu musí VSPackage:
   
  **OR**  
   
--   **dotazování IDE pro změny**. To lze provést prostřednictvím systému implementovaná [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) rozhraní. I když především pro podporu trvalost, [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) metoda můžete získat informace o písma a barev pro zobrazení položek. Další informace o nastavení písma a barvy, najdete v článku na webu MSDN [přístup k uložené písma a barev nastavení](https://msdn.microsoft.com/en-us/library/bb166382.aspx).  
+-   **dotazování IDE pro změny**. To lze provést prostřednictvím systému implementovaná [IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) rozhraní. I když především pro podporu trvalost, [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) metoda můžete získat informace o písma a barev pro zobrazení položek. Další informace o nastavení písma a barvy, najdete v článku na webu MSDN [přístup k uložené písma a barev nastavení](../accessing-stored-font-and-color-settings.md).  
   
 > **Poznámka:** k zajištění, zda jsou informace správné výsledky dotazování, použijte [IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx) rozhraní k určení, pokud se před voláním metody načtení potřebuje vyprázdnění mezipaměti a aktualizace [ IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) rozhraní.
   

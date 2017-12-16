@@ -1,7 +1,7 @@
 ---
-title: "Pomocí nastavení EditorConfig ve Visual Studio | Microsoft Docs"
+title: "Pomocí nastavení EditorConfig v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 10/27/2017
+ms.date: 12/13/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -11,15 +11,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 39b3228e64257552c8b629e421c9b5aa4f0e0931
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 87457e6d5581ef0ad5da3aafc232fce5369f92f8
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvořte nastavení editoru přenosné, vlastní s EditorConfig
 
-Nastavení editoru textu v sadě Visual Studio se vztahují na všechny projekty daného typu. Ano, například pokud změníte textového editoru jazyka C# nastavení, toto nastavení platí pro *všechny* projektů C# v sadě Visual Studio. V některých případech můžete však použít konvence, které se liší od vašich vlastních předvoleb, osobní editor. [EditorConfig](http://editorconfig.org/) soubory umožňují tomu popisující běžné možnosti text editoru, jako je například velikost odsazení v jednotlivých projektů. EditorConfig nastavení, které jsou obsaženy v souboru .editorconfig, který je umístěný společně se soubory kódu a projekt, mají přednost před globální text v sadě Visual Studio nastavení editoru. To znamená, které můžete přizpůsobit, každý základu kódu použít nastavení editoru textu, které jsou specifické pro daného projektu. Ne modulu plug-in se vyžaduje k použití této funkce v sadě Visual Studio.
+Ve Visual Studio 2017, můžete přidat [EditorConfig](http://editorconfig.org/) souboru do projektu nebo codebase vynutit konzistentní kódování styly pro všechny uživatele, který funguje v základu kódu. Nastavení EditorConfig mají přednost před globální text v sadě Visual Studio nastavení editoru. To znamená, které můžete přizpůsobit, každý základu kódu použít nastavení editoru textu, které jsou specifické pro daného projektu. V sadě Visual Studio, stále můžete nastavit vlastní předvolby osobní editor **možnosti** dialogové okno. Tato nastavení použít vždy, když pracujete v codebase bez souboru .editorconfig, nebo když soubor .editorconfig není přepsat příslušného nastavení. Příkladem takových předvoleb je odsazení styl&mdash;tabulátory, nebo mezery.
+
+Nastavení EditorConfig podporuje mnoho editory kódu a integrovaného vývojového prostředí, včetně sady Visual Studio. Je přenosné komponenty, která přenáší pomocí kódu a může vynutit kódování styly i mimo Visual Studio.
 
 ## <a name="coding-consistency"></a>Kódování konzistence
 
@@ -31,7 +33,7 @@ Vzhledem k tomu, že nastavení jsou obsaženy v souboru v základu kódu, jejic
 
 ## <a name="override-editorconfig-settings"></a>Přepsání nastavení EditorConfig
 
-Když přidáte soubor .editorconfig do složky v hierarchii souboru, jeho nastavení platí pro všechny příslušné soubory na této úrovni a pod ním. Pokud chcete přepsat nastavení EditorConfig pro konkrétní projekt nebo základu kódu tak, aby používala jiný konvence než EditorConfig souboru na nejvyšší úrovni, stačí přidáte soubor .editorconfig do kořenového adresáře vaší codebase úložišti nebo projektu adresář. Zajistěte, aby se umístí ```root=true``` vlastnost v souboru tak nevypadá všechny další si strukturu adresáře pro soubory .editorconfig Visual Studio. Nové nastavení EditorConfig souboru uplatní na souborů na stejné úrovni a jakéhokoliv podadresáře.
+Když přidáte soubor .editorconfig do složky v hierarchii souboru, jeho nastavení platí pro všechny příslušné soubory na této úrovni a pod ním. Pokud chcete přepsat nastavení EditorConfig pro konkrétní projekt nebo základu kódu tak, aby používala jiný konvence než EditorConfig souboru na nejvyšší úrovni, stačí přidáte soubor .editorconfig do kořenového adresáře vaší codebase úložišti nebo projektu adresář. Zajistěte, aby se umístí ```root=true``` vlastnost v souboru tak nevypadá všechny další si strukturu adresáře pro soubory .editorconfig Visual Studio. Nové nastavení souboru EditorConfig platí pro souborů na stejné úrovni a jakéhokoliv podadresáře.
 
 ```
 # top-most EditorConfig file
@@ -57,19 +59,19 @@ Nastavení editoru EditorConfig jsou podporovány ve všech jazycích podporovan
 
 ## <a name="editing-editorconfig-files"></a>Úprava EditorConfig souborů
 
-Visual Studio poskytuje některé technologie IntelliSense pro úpravy .editorconfig souborů. Pokud chcete upravit velké množství .editorconfig souborů, můžete zjistit [služba jazyka EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) rozšíření užitečné.
+Visual Studio poskytuje některé technologie IntelliSense pro úpravy .editorconfig souborů. Pokud chcete upravit velkého množství souborů .editorconfig, můžete zjistit [služba jazyka EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) rozšíření užitečné.
 
 Jakmile upravíte soubor EditorConfig, musíte znovu načtete soubory s kódem pro nová nastavení vstoupila v platnost.
 
 ## <a name="adding-and-removing-editorconfig-files"></a>Přidávání a odebírání souborů EditorConfig
 
-Přidání EditorConfig souboru do projektu nebo codebase bude není převést stávající styly na nové. Například pokud máte odsazení v souboru, které jsou naformátované se karty a přidat soubor EditorConfig, který odsadí prostory, nebude získat znaky odsazení převedeny do prostorů. Však žádné nové řádky kódu se bude formátovat podle EditorConfig souboru.
+Přidání EditorConfig souboru do projektu nebo codebase nepřevádí existující styly na nové. Například pokud máte odsazení v souboru, které jsou naformátované se karty a přidat soubor EditorConfig, který odsadí prostory, znaky odsazení nebudou převedeny do prostorů. Však žádné nové řádky kódu se bude formátovat podle EditorConfig souboru.
 
 Když odeberete soubor EditorConfig z projektu nebo základu kódu, musí zavřete a znovu otevřít soubory se vrátit do editoru globální nastavení pro nové řádky kódu.
 
 ## <a name="example"></a>Příklad
 
-Následuje příklad, který se zobrazuje stav odsazení fragmentu kódu C# před a po přidání souboru .editorconfig do projektu. **Karty** nastavení v **možnosti** dialogové okno pro textového editoru Visual Studio je nastavena k vytvoření mezer při stisknutí volby **kartě** klíč.
+Následující příklad ukazuje stav odsazení fragmentu kódu C# před a po přidání souboru .editorconfig do projektu. **Karty** nastavení v **možnosti** dialogové okno pro textového editoru Visual Studio je nastavena k vytvoření mezer při stisknutí volby **kartě** klíč.
 
 ![Karta nastavení textového editoru](../ide/media/vside_editorconfig_tabsetting.png)
 
@@ -77,7 +79,7 @@ Podle očekávání, stisknete **kartě** klíč na další řádek odsadí řá
 
 ![Před použitím EditorConfig kódu](../ide/media/vside_editorconfig_before.png)
 
-Přidáme nový soubor s názvem .editorconfig na projekt s tímto obsahem. `[*.cs]` Nastavení znamená, že tato změna se projeví pouze pro soubory kódu C# v tomto projektu.
+Přidáme nový soubor s názvem .editorconfig na projekt s tímto obsahem. `[*.cs]` Nastavení znamená, že tato změna platí pouze pro soubory kódu C# v projektu.
 
 ```
 # Top-most EditorConfig file
@@ -98,7 +100,7 @@ Pokud je soubor EditorConfig kdekoli v strukturu adresáře nebo vyšší umíst
 
    **"Uživatelských předvoleb pro tento typ souboru se přepisují konvence psaní kódu pro tento projekt."**
 
-To znamená, že pokud editor nastavení na **nástroje**, **možnosti**, **textového editoru** (například velikost odsazení a styl, velikost tabulátoru nebo konvence kódování) jsou určené v Soubor EditorConfig nebo vyšší na projekt v strukturu adresáře, názvů v souboru EditorConfig přepíše nastavení v možnosti. Toto chování můžete řídit přepnutím **projektu postupujte podle konvence kódování** možnost **nástroje**, **možnosti**, **textového editoru**. Zrušte zaškrtnutí možnosti se vypne EditorConfig podpora pro Visual Studio.
+To znamená, že pokud editor nastavení na **nástroje**, **možnosti**, **textového editoru** (například velikost odsazení a styl, velikost tabulátoru nebo konvence kódování) jsou určené v Soubor EditorConfig nebo vyšší na projekt v strukturu adresáře, názvů v souboru EditorConfig přepsat nastavení v možnosti. Toto chování můžete řídit přepnutím **projektu postupujte podle konvence kódování** možnost **nástroje**, **možnosti**, **textového editoru**. Zrušte zaškrtnutí možnosti vypne EditorConfig podpora pro Visual Studio.
 
 ![Možnosti nástrojů – postupujte podle projektu konvence kódování](media/coding_conventions_option.png)
 
@@ -108,7 +110,7 @@ Najdete všechny soubory .editorconfig v nadřazené adresáře otevřením př�
 dir .editorconfig /s
 ```
 
-Obor názvů vaší EditorConfig můžete ovládat nastavením ```root=true``` vlastnost v souboru .editorconfig v kořenovém adresáři vašeho úložiště nebo v adresáři, který se nachází váš projekt. Visual Studio vyhledá soubor s názvem .editorconfig v adresáři otevřený soubor a každý nadřazený adresář. Visual Studio zastaví hledání, pokud je dosaženo filepath kořenové, nebo pokud souboru .editorconfig ```root=true``` nalezen.
+Obor názvů vaší EditorConfig můžete ovládat nastavením ```root=true``` vlastnost v souboru .editorconfig v kořenovém adresáři vašeho úložiště nebo v adresáři, který se nachází váš projekt. Visual Studio vyhledá soubor s názvem .editorconfig v adresáři otevřený soubor a každý nadřazený adresář. Hledání končí, když dorazí do kořenové filepath, nebo pokud souboru .editorconfig ```root=true``` nalezen.
 
 ## <a name="see-also"></a>Viz také
 

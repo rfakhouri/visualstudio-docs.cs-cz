@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d36f49a9b2865c89bd1551ded0d23cf541ff7840
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: b161d47ab743680b92ff767e166f180a73da40e6
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="setting-up-remote-workspaces"></a>Nastavení vzdálené pracovní prostory
 
@@ -105,8 +105,8 @@ Jakmile je certifikát importován, udělte `NETWORK SERVICE` účet oprávněn�
 Naleznete v popisu windows výhod a rizik použití certifikátu podepsaného svým držitelem. `rtvs-daemon` Balíček generuje a nakonfiguruje certifikát podepsaný sám sebou během instalace. Musíte provést pouze v případě, že chcete nahradit automaticky vygeneruje certifikát podepsaný svým držitelem.
 
 K vydání svým certifikátu podepsaného držitelem sami:
-1. SSH nebo přihlášení k počítači systému linux.
 
+1. SSH nebo přihlášení k počítači systému linux.
 1. Nainstalujte `ssl-cert` balíčku:
     ```sh
     sudo apt-get install ssl-cert

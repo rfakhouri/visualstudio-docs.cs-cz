@@ -23,11 +23,11 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62a8be3b1a1c98a330efeb26d9a84e74f2334423
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4b383deae8262f9fb53cf4494ef8ce8d65f5ce02
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>Háky přidělení a přidělení běhové paměti jazyka C
 Velmi důležité omezení na funkce háku přidělení je, že se musí explicitně Ignorovat `_CRT_BLOCK` bloky (přidělení paměti interně provedené funkce běhové knihovny jazyka C) Pokud udělají jakékoli volání funkce běhové knihovny jazyka C, které přidělují interní paměť. `_CRT_BLOCK` Bloky můžete ignorovat zahrnutím kódu, například následující na začátku vaší přidělení napojit funkce:  
@@ -43,4 +43,3 @@ if ( nBlockUse == _CRT_BLOCK )
   
 ## <a name="see-also"></a>Viz také  
  [Zápis funkce háku ladění](../debugger/debug-hook-function-writing.md)   
- [Ukázka crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)

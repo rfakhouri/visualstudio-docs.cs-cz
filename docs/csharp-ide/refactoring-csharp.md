@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio refaktoring funkcí (C#) | Microsoft Docs"
+title: "Funkce v sadě Visual Studio refaktoringu jazyka C# | Microsoft Docs"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -16,15 +16,17 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a26fed472f0f1765f7a6ae447127ffce75061c1f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring-features-for-c"></a>Refaktoring funkce pro jazyk C# #
+# <a name="refactoring-features-in-c"></a>Refaktoring funkce v jazyce C# #
 
-Refaktoring je proces vylepšení kód po byl proveden zápis. Refaktoring změní interní kód beze změny jeho chování. Následující funkce refaktoringu jsou k dispozici v sadě Visual Studio pro jazyk C#:
+Refaktoring je proces změny interní struktury kódu beze změny jeho chování. Refaktoring je často použít k nastavení kódu čitelný, udržovatelného a spolehlivost.
+
+Následující funkce refaktoringu jsou k dispozici v sadě Visual Studio pro jazyk C#:
 
 * [Podpis změny metod](refactoring/change-method-signature.md)
 * [Převést metodu Get pro vlastnost nebo vlastnost pro metodu Get](refactoring/convert-get-method-to-property.md)
@@ -40,4 +42,6 @@ Refaktoring je proces vylepšení kód po byl proveden zápis. Refaktoring změn
 
 ## <a name="see-also"></a>Viz také
 
-[Použití vývojového prostředí sady Visual Studio pro jazyk C#](using-the-visual-studio-development-environment-for-csharp.md)  
+[Refaktoring, vytvoření kódu a rychlé akce v sadě Visual Studio](../ide/refactoring-code-generation-quick-actions.md)  
+[Refaktoring v jazyce Visual Basic](../vb-ide/refactoring-vb.md)  
+[Použití vývojového prostředí sady Visual Studio pro jazyk C#](using-the-visual-studio-development-environment-for-csharp.md)

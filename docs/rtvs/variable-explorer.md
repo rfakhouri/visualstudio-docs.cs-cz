@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: e2c65797293a4f4edcc2f6d068db0ee7d9a4f210
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="variable-explorer"></a>Proměnné Explorer
 
@@ -27,22 +27,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 Okna proměnných Průzkumník pak vypadat takto:
 
 ![Okno Průzkumníka proměnné v sadě Visual Studio](media/variable-explorer-window.png)
 
 Pokud máte složitější rámce R dat definované v relaci, můžete přejít do data. Například po spuštění `cars <- mtcars` datovou sadu můžete procházet rozšířením jiné uzly v Průzkumníku proměnné:
- 
+
 ![Rozšířené zobrazení Průzkumníka proměnné](media/variable-explorer-expanded-results.png)
- 
+
 Pokud chcete odstranit proměnné, klikněte pravým tlačítkem a vyberte **odstranit**, nebo vyberte proměnnou a stiskněte klávesu Delete.
 
 Můžete taky vyhledat pozorování v rámci dat pomocí Přírůstkové hledání. Nejprve rozbalte uzly v rámci dat, který chcete hledat, a poté do vyhledávacího pole zadejte hledaný text.
 
 ## <a name="details-table-view"></a>Zobrazení podrobností (tabulky)
 
-Protože data jsou často tabulkové, můžete zobrazit všechny komplexního datového typu jako samostatné tabulky vyberete ikonu lupy nebo kliknete pravým tlačítkem a vyberete **zobrazit podrobnosti**. 
+Protože data jsou často tabulkové, můžete zobrazit všechny komplexního datového typu jako samostatné tabulky vyberete ikonu lupy nebo kliknete pravým tlačítkem a vyberete **zobrazit podrobnosti**.
 
 ![Proměnnou tabulky Průzkumník](media/variable-explorer-table-view.png)
 
@@ -69,7 +69,6 @@ Můžete také přepnout obor funkce při zastavení na zarážce v ladicím pro
 ![Proměnné Explorer zobrazující snímek dat během ladění](media/variable-explorer-as-locals-window.png)
 
 Proměnné Explorer automaticky změní rozsah funkce v průběhu kódu v ladicím programu, například zobrazení místních proměnných ve funkci.
-
 
 ## <a name="importing-data-into-variable-explorer"></a>Import dat do proměnné Explorer
 

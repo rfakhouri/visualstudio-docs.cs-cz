@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4cd3231856dafd869290082337528523544b1e19
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF služby WCF data Service
 V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky vázané na data. Ovládací prvky jsou vázány na záznamy o zákaznících, které jsou zapouzdřené v [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Taky se přidá tlačítka, které zákazníci mohou používat k zobrazení a aktualizaci záznamů.  
@@ -56,8 +56,6 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 -   Data modelů v [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)].  
   
 -   Entity datové modely a ADO.NET Entity Framework. Další informace najdete v tématu [Entity Framework přehled](/dotnet/framework/data/adonet/ef/overview).  
-  
--   Práce s Návrháře WPF. Další informace najdete v tématu [WPF a Silverlight Designer přehled](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
 -   Datové vazby WPF. Další informace najdete v tématu [přehled vazby dat](/dotnet/framework/wpf/data/data-binding-overview).  
   

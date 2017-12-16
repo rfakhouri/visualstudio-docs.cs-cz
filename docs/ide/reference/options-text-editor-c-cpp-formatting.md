@@ -10,18 +10,18 @@ ms.topic: article
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.C%2fC%2b%2b.Formatting.General
-dev_langs: C++
+dev_langs: CPP
 helpviewer_keywords: Text Editor Options dialog box, formatting
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 081dc1215b0e8ac026455a5449761ce103c35551
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 27f8a42d3293d3ffc786b8e1b67d2c569cfcd1ed
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="options-text-editor-cc-formatting"></a>Možnosti, textový editor, C/C++, formátování
 Umožňuje změnit výchozí chování editoru kódu při programování v jazyce C nebo C++.  
@@ -71,7 +71,7 @@ Umožňuje změnit výchozí chování editoru kódu při programování v jazy
   
 -   [if-else](/dotnet/csharp/language-reference/keywords/if-else)  
   
--   [Switch – příkaz (C++)](/cpp/cpp/switch-statement-cpp)  
+-   [switch – příkaz (C++)](/cpp/cpp/switch-statement-cpp)  
   
 -   [while – příkaz (C++)](/cpp/cpp/while-statement-cpp)  
   

@@ -1,7 +1,7 @@
 ---
-title: "Začínáme s ladicím programem | Microsoft Docs"
+title: "Další informace k ladění pomocí sady Visual Studio | Microsoft Docs"
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
+ms.date: 10/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>Začínáme s ladicím programu sady Visual Studio
+# <a name="learn-to-debug-using-visual-studio"></a>Další informace k ladění pomocí sady Visual Studio
 
 Toto téma představuje funkce podrobný návod v ladicím programu sady Visual Studio. Pokud chcete vyšší úrovně zobrazení funkce ladicího programu, najdete v části [prohlídka funkce ladicího programu](../debugger/debugger-feature-tour.md).
 
@@ -138,19 +138,81 @@ Většinou, klávesové zkratky tady používáme, protože je dobrý způsob, j
 
      ![Výsledek zanoříte se do metodu aktualizace](../debugger/media/dbg-tour-update-method.png "krok do aktualizační metody")
 
-    Zde se nám najít další kód, který vypadá zajímavé; aplikace je získávání všechny soubory *.jpg umístěných v jednom adresáři a pak vytvořit objekt fotografií pro každý soubor. Tento kód nám poskytuje dobrý moci spustit, zkontrolujte stav vaší aplikace (proměnné) s ladicím programem.
+    Zde se nám najít další kód, který vypadá zajímavé; aplikace je získávání všechny soubory *.jpg umístěných v jednom adresáři a pak vytvořit objekt fotografií pro každý soubor. Tento kód nám poskytuje dobrý moci spustit, zkontrolujte stav vaší aplikace (proměnné) s ladicím programem. Bude to v dalších částech tohoto kurzu.
 
     Funkce, které vám umožní prohlédnout proměnné jsou jedním z nejužitečnějších funkcí ladicího programu a provést různými způsoby. Často když se pokusíte ladění problém, pokoušíte zjistit, jestli jsou proměnné ukládání hodnoty, které mají mít v určitém čase očekáváte.
 
+## <a name="examine-the-call-stack"></a>Prozkoumat zásobník volání
+
+- Při pozastavena v `Update` metoda, klikněte na tlačítko **zásobníkem volání** okno, které je ve výchozím nastavení otevřít v pravém dolním podokně.
+
+     ![Prozkoumat zásobník volání](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+
+    **Zásobníkem volání** okno zobrazuje pořadí, ve kterém jsou získávání volat metody a funkce. Na začátek řádku ukazuje aktuální funkci ( `Update` metoda v aplikaci prohlídka). Druhý řádek ukazuje, že `Update` byla volána z `Path.set` vlastnost a tak dále.
+
+    >  [!NOTE]
+    > **Zásobníkem volání** okno se podobá ladění perspektivy v některé integrovaného vývojového prostředí jako Eclipse.
+
+    V zásobníku volání je dobrý způsob, jak prozkoumat a lépe pochopit tok spuštění aplikace.
+
+    Poklepáním na řádek kódu přejít, podívejte se na tomto zdrojovém kódu, která také změní aktuální obor ke kontrole pomocí ladicího programu. Tato akce není posunutí ladicího programu.
+
+    Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volání** okno provádět další akce. Například můžete vložit zarážky do určených funkcí, zálohy pomocí ladicího programu **spustit ke kurzoru**a přejděte zkontrolujte zdrojového kódu. Další informace najdete v tématu [postup: prozkoumat zásobník volání](../debugger/how-to-use-the-call-stack-window.md).
+
+## <a name="step-out"></a>Krok
+
+Řekněme, že skončíte zkoumání `Update` metoda v Data.cs a vy chcete využívat funkce, ale zůstane v ladicím programu. Můžete provést pomocí **Krokovat s Vystoupením** příkaz.
+
+1. Stiskněte Shift + F11 (nebo **ladění > Krok**).
+
+     Tento příkaz obnoví spuštění aplikace (a posune ladění) až do aktuálního funkce vrátí hodnotu.
+
+     Byste měli mít zpět `Update` volání metody v Data.cs.
+
+2. Stiskněte Shift + F11 znovu a ladicí program vloží zásobníkem volání zpět do `OnApplicationStartup` obslužné rutiny události.
+
+## <a name="run-to-cursor"></a>Spustit ke kurzoru
+
+1. Vyberte **Zastavte ladění** červené tlačítko ![Zastavte ladění](../debugger/media/dbg-tour-stop-debugging.png "Zastavte ladění") nebo Shift + F5.
+
+2. V `Update` metoda v Data.cs, klikněte pravým tlačítkem myši `Add` metoda volání a zvolte **spustit ke kurzoru**. Tento příkaz spustí, ladění a nastaví dočasné zarážek na aktuálním řádku kódu.
+
+     ![Použití spustit funkci kurzor](../debugger/media/dbg-tour-run-to-cursor.png "spustit ke kurzoru")
+
+    Jste měli pozastavena na zarážka v `MainWindow` (protože se první zarážky nastavit).
+
+3. Stisknutím klávesy F5 přechodu na `Add` jste vybrali metodu **spustit ke kurzoru**.
+
+    Tento příkaz je užitečné, pokud jsou úpravy kódu a chcete rychle zarážku dočasné a spuštění ladicího programu.
+
+## <a name="change-the-execution-flow"></a>Tok provádění změn
+
+1. S ladicím programem pozastavena na `Add` volání metody, pomocí myši můžete získat šipku žlutý (provádění ukazatel) na levé straně a přesunout žlutý šipka nahoru jeden řádek `foreach` smyčky.
+
+     ![Přesuňte ukazatel provádění](../debugger/media/dbg-tour-move-the-execution-pointer.gif "přesunout ukazatel provádění")
+
+    Změnou toku provádění můžete provést akce, jako je testovací cesty provádění různých kódu nebo znova spustí kód bez restartování ladicího programu.
+
+2. Nyní stisknutím klávesy F5.
+
+    Můžete zobrazit bitové kopie, přidány do okna aplikace. Protože jsou opětným spuštěním kódu v `foreach` smyčky, některé z bitové kopie přidané dvakrát!
+    
+    > [!WARNING]
+    > Často budete muset pečlivě s touto funkcí a zobrazí upozornění v popisu tlačítka. Příliš se může zobrazit další upozornění. Přesunutí kurzoru nelze vrátit vaší aplikace do předchozího stavu aplikace.
+
 ## <a name="inspect-variables-with-data-tips"></a>Zkontrolujte proměnné s typy dat
 
-1. Pozastavit ladicí program na `Add` volání metody, hover přes `Add` metoda volání a klikněte na tlačítko **spustit kliknutím** tlačítko ![spustit kliknutím](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+1. Otevřete Data.cs v fotografií prohlížeč ukázkovou aplikaci, klikněte pravým tlačítkem myši `private void Update` deklaraci funkce a zvolte **spustit ke kurzoru** (zastavit aplikaci nejprve Pokud ještě není spuštěná).
 
-2. Nyní, najeďte myší na objekt souboru (`f`) a zobrazí jeho výchozí hodnotu vlastnosti, název souboru `market 031.jpg`.
+    To se pozastaví aplikace s ladicím programem připojen. To umožňuje nám prozkoumat její stav.
+
+2. Najeďte myší `Add` metoda volání a klikněte na tlačítko **spustit kliknutím** tlačítko ![spustit kliknutím](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+
+3. Nyní, najeďte myší na objekt souboru (`f`) a zobrazí jeho výchozí hodnotu vlastnosti, název souboru `market 031.jpg`.
 
      ![Zobrazení dat tip](../debugger/media/dbg-tour-data-tips.gif "zobrazení dat tipu")
 
-3. Rozbalte objekt můžete zobrazit její vlastnosti, jako `FullPath` vlastnost.
+4. Rozbalte objekt můžete zobrazit její vlastnosti, jako `FullPath` vlastnost.
 
     Často při ladění, chcete rychle zkontrolovat hodnot vlastností objektů a typy dat jsou vhodný způsob, jak to provést.
 
@@ -192,66 +254,6 @@ Většinou, klávesové zkratky tady používáme, protože je dobrý způsob, j
 
     Další informace najdete v tématu [nastavovat sledování pomocí sledování a QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>Prozkoumat zásobník volání
-
-1. Klikněte **zásobníkem volání** okno, které je ve výchozím nastavení otevřít v pravém dolním podokně.
-
-     ![Prozkoumat zásobník volání](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
-
-    **Zásobníkem volání** okno zobrazuje pořadí, ve kterém jsou získávání volat metody a funkce. Na začátek řádku ukazuje aktuální funkci ( `Update` metoda v aplikaci prohlídka). Druhý řádek ukazuje, že `Update` byla volána z `Path.set` vlastnost a tak dále.
-
-    >  [!NOTE]
-    > **Zásobníkem volání** okno se podobá ladění perspektivy v některé integrovaného vývojového prostředí jako Eclipse.
-
-    V zásobníku volání je dobrý způsob, jak prozkoumat a lépe pochopit tok spuštění aplikace.
-
-    Poklepáním na řádek kódu přejít, podívejte se na tomto zdrojovém kódu, která také změní aktuální obor ke kontrole pomocí ladicího programu. Tato akce není posunutí ladicího programu.
-
-    Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volání** okno provádět další akce. Například můžete vložit zarážky do určených funkcí, zálohy pomocí ladicího programu **spustit ke kurzoru**a přejděte zkontrolujte zdrojového kódu. Další informace najdete v tématu [postup: prozkoumat zásobník volání](../debugger/how-to-use-the-call-stack-window.md).
-
-## <a name="change-the-execution-flow"></a>Tok provádění změn
-
-1. S ladicím programem pozastavena na `Add` volání metody, pomocí myši můžete získat šipku žlutý (provádění ukazatel) na levé straně a přesunout žlutý šipka nahoru jeden řádek `foreach` smyčky.
-
-     ![Přesuňte ukazatel provádění](../debugger/media/dbg-tour-move-the-execution-pointer.gif "přesunout ukazatel provádění")
-
-    Změnou toku provádění můžete provést akce, jako je testovací cesty provádění různých kódu nebo znova spustí kód bez restartování ladicího programu.
-
-2. Nyní stisknutím klávesy F5.
-
-    Můžete zobrazit bitové kopie, přidány do okna aplikace. Protože jsou opětným spuštěním kódu v `foreach` smyčky, některé z bitové kopie přidané dvakrát!
-    
-    > [!WARNING]
-    > Často budete muset pečlivě s touto funkcí a zobrazí upozornění v popisu tlačítka. Příliš se může zobrazit další upozornění. Přesunutí kurzoru nelze vrátit vaší aplikace do předchozího stavu aplikace.
-
-## <a name="run-to-cursor"></a>Spustit ke kurzoru
-
-1. Vyberte **Zastavte ladění** červené tlačítko ![Zastavte ladění](../debugger/media/dbg-tour-stop-debugging.png "Zastavte ladění") nebo Shift + F5.
-
-2. V `Update` metoda, klikněte pravým tlačítkem myši `Add` metoda volání a zvolte **spustit ke kurzoru**. Tento příkaz spustí, ladění a nastaví dočasné zarážek na aktuálním řádku kódu.
-
-     ![Použití spustit funkci kurzor](../debugger/media/dbg-tour-run-to-cursor.png "spustit ke kurzoru")
-
-    Jste měli pozastavena na zarážka v `MainWindow` (vzhledem k tomu, který je první zarážky.
-
-3. Stisknutím klávesy F5 přechodu na `Add` jste vybrali metodu **spustit ke kurzoru**.
-
-    Tento příkaz je užitečné, pokud jsou úpravy kódu a chcete rychle zarážku dočasné a spuštění ladicího programu.
-
-## <a name="step-out"></a>Krok
-
-Řekněme, že skončíte zkoumání `Update` metoda v Data.cs a vy chcete využívat funkce, ale zůstane v ladicím programu. Můžete provést pomocí **Krokovat s Vystoupením** příkaz.
-
-1. Stiskněte Shift + F11 (nebo **ladění > Krok**).
-
-     Tento příkaz obnoví spuštění aplikace (a posune ladění) až do aktuálního funkce vrátí hodnotu.
-
-     Byste měli mít zpět `Update` volání metody v Data.cs.
-
-2. Stiskněte Shift + F11 znovu a ladicí program vloží zásobníkem volání zpět do `OnApplicationStartup` obslužné rutiny události.
-
-3. Stisknutím klávesy F5 pokračovat.
-
 ## <a name="examine-an-exception"></a>Zkontrolujte výjimku
 
 1. V okně spuštěné aplikace, odstraňte text v **cesta** vstupní pole a vyberte **změnu** tlačítko.
@@ -283,6 +285,7 @@ Další informace o funkcích ladicího programu najdete v tématu [ladicí prog
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## <a name="see-also"></a>Viz také  
- [Ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)
+## <a name="see-also"></a>Viz také
+
+[Ladění v sadě Visual Studio](../debugger/index.md)  
+[Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)

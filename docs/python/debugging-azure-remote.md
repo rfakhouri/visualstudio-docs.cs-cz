@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8e08bcf4cdae07cbaf621825e85fe5a8b699cfa1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 413e5323107ce933266050f4df9a244bf5531d61
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Vzdálené ladění kódu jazyka Python v Azure
 
@@ -28,7 +28,7 @@ Protože Azure vzdálené ladění používá webové sokety, sockets musí být
 
 Jakmile je správně nasazená projekt a webové sokety povolená, můžete připojit ke službě aplikace z **Průzkumníka serveru** v sadě Visual Studio (**zobrazení > Průzkumníka serveru**). Najít váš web v rámci **Azure > služby App Service** a příslušné prostředky skupiny, klikněte pravým tlačítkem a vyberte **připojit ladicí program (Python)**. ( **Připojit ladicí program** příkaz, který je pro aplikace .NET běžící v rámci služby IIS, a je užitečný jenom v případě, že jste společné hostování rozhraní .NET code vedle aplikace Python.)
 
-Visual Studio může trvat můžete přímo na sadu pokyny pro připojení přímo, jak je popsáno níže v [připojení bez Průzkumníka serveru](#attaching-without-server-explorer). Pokud se nezobrazí **připojit ladicí program (Python)** příkaz nebo Visual Studio nepodaří připojit k webu, najdete v části [řešení potíží s vzdálené ladění Azure](debugging-azure-remote-troubleshooting.md).
+Visual Studio může trvat můžete přímo na sadu pokyny pro připojení přímo, jak je popsáno níže v [připojení bez Průzkumníka serveru](#attaching-without-server-explorer). Pokud se nezobrazí **připojit ladicí program (Python)** příkaz nebo Visual Studio nepodaří připojit k webu, najdete v části [řešení potíží s Azure vzdálené ladění](debugging-azure-remote-troubleshooting.md).
 
 Pokud připojení úspěšné, Visual Studio se přepne do zobrazení ladicího programu. Panelu nástrojů označuje proces laděné například `wss://` identifikátor URI:
 

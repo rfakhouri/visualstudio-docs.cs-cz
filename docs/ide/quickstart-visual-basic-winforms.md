@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 22da6f18406331a67a06d030551f7068dd5254fc
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: cf7ba7882d9e95cac013e257a73bd536f36b97cf
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Rychlý úvod: Vytvoření prostředí Windows Forms aplikace v sadě Visual Studio s jazykem Visual Basic
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou aplikaci jazyka Visual Basic, která má založené na Windows uživatelské rozhraní (UI).
@@ -95,5 +95,5 @@ Teď, když jsme přidali ovládacího prvku tlačítko pro vytvoření akce, p�
 Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se dozvěděli, chvíli o jazyka Visual Basic a Visual Studio IDE. Pokud chcete pustíte hlubší, pokračujte prosím se v kurzu **kurzy** části obsahu.  
 
 ## <a name="see-also"></a>Viz také   
-* [Sestavení jazyka Visual Basic "Hello World" konzolovou aplikaci s .NET Core v Visual Studio 2017](https://docs.microsoft.com/dotnet/core/tutorials/vb-with-visual-studio)
-* [Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  
+* [Rychlý úvod: Vytvoření aplikace konzoly v sadě Visual Studio s jazykem Visual Basic](quickstart-visual-basic-console.md)
+* [Další informace o jazyka Visual Basic IntelliSense](visual-basic-specific-intellisense.md)  

@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý úvod: první pohled na Visual Studio IDE
 
-V této 5 až 10 minut Úvod do integrované vývojové prostředí (IDE) sady Visual Studio provedeme prohlídka některých systému windows, nabídky a dalších funkcí uživatelského rozhraní.
+V této 5 až 10 minut Úvod do integrované vývojové prostředí (IDE) sady Visual Studio provedeme prohlídka některých systému windows, nabídky a další funkce uživatelského rozhraní.
 
 ## <a name="start-page"></a>Úvodní stránka
 
@@ -94,8 +94,10 @@ Jsme si prohlédli uvedeno několik funkcí prostředí Visual Studio IDE se sez
 
 - Přejděte v části Obecné elementy uživatelského rozhraní VS dokumentace, která přejde do větší hloubky o systému windows, jako [seznam chyb](../ide/reference/error-list-window.md), [výstup – okno](../ide/reference/output-window.md), [Vlastnosti–okno](../ide/reference/properties-window.md), a [dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md)
 
-- Provést další v prohlídka hloubky rozhraní IDE a i dabble v ladění, v [přehled Visual Studio IDE](../ide/visual-studio-ide.md)
+- Podrobnější prohlídku rozhraní IDE a i dabble v ladění, v [přehled Visual Studio IDE](../ide/visual-studio-ide.md)
 
 ## <a name="see-also"></a>Viz také
 
-[Rychlý úvod: přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)
+[Rychlý úvod: přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)  
+[Rychlý úvod: kódování v editoru](../ide/quickstart-editor.md)  
+[Rychlý úvod: projekty a řešení](../ide/quickstart-projects-solutions.md)  

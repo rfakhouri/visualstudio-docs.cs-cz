@@ -12,13 +12,13 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ed6da27de93c371e59b8851924a39b6387c32db9
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: da77078bfd0d6e2195169d40dfdbfdb484b68655
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="working-with-the-r-interactive-window"></a>Práce s R interaktivních okna
+# <a name="working-with-the-r-interactive-window"></a>Práce s interaktivních okna R
 
 R Tools pro Visual Studio (RTVS) poskytuje interaktivní okno s R, také známé jako **REPL** (čtení-vyhodnotit-tisk-smyčky) okno, ve kterém můžete zadat kód R a okamžitě zobrazit výsledky. Všechny moduly, syntaxe a proměnné, jakož i technologii IntelliSense, je k dispozici v okně interaktivní.
 
@@ -75,7 +75,6 @@ Příkazy nástrojů je následujícím způsobem, většina z nich ekvivalenty 
 | ![Nastavit pracovní adresář pro tlačítko umístění projektu](media/repl-toolbar-11-set-working-directory-to-project.png) | Nastavit pracovní adresář na umístění projektu | Ctrl+Shift+P | Nastaví pracovní adresář na kořenovém aktuálně načtených projektu v sadě Visual Studio. V tématu [pracovní adresář](#working-directory). |
 | (Textové pole) | Vyberte pracovní adresář | není k dispozici | Přímé vstupní pole pro pracovní adresář. V tématu [pracovní adresář](#working-directory). |
 
-
 ## <a name="workspaces-and-sessions"></a>Pracovní prostory a relace
 
 Spuštění kódu v okně interaktivní vytvoří kontextu v aktuální relaci. Kontext se skládá z globální proměnné, definice funkcí, načítání knihovny a tak dále. Tento kontext se nazývají *prostoru*, a můžete uložit a načíst pracovní prostory kdykoli. 
@@ -88,12 +87,10 @@ Chcete-li znovu načíst dříve uložené pracovního prostoru, vyberte **zatí
 
 **Resetovat** tlačítko nebo **R nástroje > relace > resetovat** vymaže kontextu relace. Pokud používáte vzdálenou relaci, resetování dojde také k odstranění profilu uživatele na vzdáleném počítači zrušte vypnout všechny soubory, které jsou v ní uloženy. (Viz [pracovních prostorů](workspaces.md#directories-on-local-and-remote-computers).)
 
-
 ## <a name="working-directory"></a>Pracovní adresář
 
 Vývojáři se běžně chcete změnit své pracovní adresář v interaktivní relace. Různé příkazů, které jsou k dispozici na panelu nástrojů **R nástroje > pracovní adresář** nabídce a místní nabídky projektu umožňuje snadno nastavit pracovní adresář na umístění zdrojového souboru, umístění nebo projektu nebo libovolný jiný libovolného umístění. To pomůže nemuseli zadávat na úplné názvy cest nebo dlouhé názvy cest relativní k odkazování na soubory.
 
- 
 ## <a name="history"></a>Historie
 
 Každého řádku, který zadáte do okna interaktivní obsahuje řádky odeslaných z editoru, se zachovají v REPL na historii. Pak můžete přejít pomocí historie nahoru a dolů klávesy se šipkami, jak jste zvyklí pravděpodobně na příkazovém řádku.

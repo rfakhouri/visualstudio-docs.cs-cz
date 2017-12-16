@@ -12,34 +12,32 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f826f7d33a8d35719afacb053995629433b27642
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Návod: Vytvoření datové sady pomocí Návrháře DataSet
+
 V tomto návodu vytvoříte datové sady pomocí **návrháře Dataset**. Bude vás provede procesem vytvoření nového projektu a přidání nového **datovou sadu** položky k němu. Naučíte se vytvářet tabulky na základě tabulek z databáze bez použití průvodce.  
-  
- Úkoly v tomto návodu zahrnují:  
-  
+
+Úkoly v tomto návodu zahrnují:  
+
 -   Vytvoření nové **formulářové aplikace Windows** projektu.  
-  
+
 -   Přidání prázdnou **datovou sadu** položku do projektu.  
-  
+
 -   Vytváření a konfiguraci zdroje dat v aplikaci podle budovy datová sada se **návrháře Dataset**.  
-  
+ 
 -   Vytvoření připojení k databázi Northwind v **Průzkumníka serveru**.  
-  
+
 -   Vytváření tabulek pomocí instancí TableAdapter v datové sadě založené na tabulkách v databázi.  
-  
+
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Požadavky  
@@ -133,7 +131,7 @@ Tato část vysvětluje postup přidání tabulky do datové sady.
 -   Přidejte logiku ověřování k událostem <xref:System.Data.DataTable.ColumnChanging> nebo <xref:System.Data.DataTable.RowChanging> tabulek dat v datové sadě. Další informace najdete v tématu [ověření dat v datových sadách](../data-tools/validate-data-in-datasets.md).  
   
 ## <a name="see-also"></a>Viz také
-[Vytvoření a konfigurace datové sady v sadě Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
+[Vytvoření a konfigurace datových sad v sadě Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
 [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
 [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
 [Ověřování dat](../data-tools/validate-data-in-datasets.md)   

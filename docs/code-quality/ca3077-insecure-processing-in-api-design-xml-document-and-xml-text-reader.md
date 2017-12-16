@@ -12,11 +12,11 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6944b49626771317f1643f7ae521b0db43c2200c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 7e3e23441a0e4e03f2f7829c24513fd7cfce5eea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Nezabezpečené zpracování v návrhu rozhraní API, dokumentu XML a čtečku textu XML
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  Při navrhování rozhraní API odvozená od třídou XMLDocument nastavenou na a XMLTextReader, mělo pamatovat <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Pomocí nezabezpečené instancí DTDProcessing při odkazování na externí entity zdroje řešení nebo nastavení nezabezpečené hodnot v souboru XML může způsobit zpřístupnění informací.  
   
 ## <a name="rule-description"></a>Popis pravidla  
- A [dokumentu typ definice (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnost dokumentu, podle definice [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo bude hledat vlastnosti a instance, kde je nedůvěryhodné data přijatá varování před vývojáře o potenciální [zpřístupnění informací](/dotnet/framework/wcf/feature-details/information-disclosure) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) útoky. Toto pravidlo aktivuje, když:  
+ A *dokumentu typ definice (DTD)* je jedním ze dvou způsobů analyzátor jazyka XML můžete určit platnost dokumentu, podle definice [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Toto pravidlo bude hledat vlastnosti a instance, kde je nedůvěryhodné data přijatá varování před vývojáře o potenciální [zpřístupnění informací](/dotnet/framework/wcf/feature-details/information-disclosure) hrozeb, které mohou vést k [útok na dostupnost služby (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) útoky. Toto pravidlo aktivuje, když:  
   
 -   <xref:System.Xml.XmlDocument>nebo <xref:System.Xml.XmlTextReader> třídy použít výchozí překladač hodnoty pro zpracování souboru DTD protokolu.  
   

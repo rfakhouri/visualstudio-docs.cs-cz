@@ -11,11 +11,11 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: d203bf88f5af6e69b97404ef8da4548f646750b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fe983de5dab35a031d6c99b37f2da77a200212f9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Další informace o mobilní vývoj pomocí Xamarinu
 Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopit vývoj mobilních aplikací pro víc platforem pomocí Xamarinu. Pokud jste ještě nenainstalovali, Visual Studio a Xamarin, spusťte [nastavení a instalaci](../cross-platform/setup-and-install.md) proces nejprve, pak se vraťte sem práci prostřednictvím těchto prostředků, zatímco instalační programy běží.  
@@ -94,7 +94,7 @@ Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopi
   
 2.  **Simulátoru iOS společnosti Apple.** Další informace, přečtěte si [Začínáme s simulátoru iOS](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Emulátor Windows Phone společnosti Microsoft.** Další informace, přečtěte si [Windows Phone emulátor pro Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3.  **Emulátor Windows Phone společnosti Microsoft.** Další informace, přečtěte si [Windows Phone emulátor pro Windows Phone 8](../debugger/run-windows-phone-apps-in-the-emulator.md).  
   
 ##  <a name="components"></a>Podrobnější prohlídku: Součástí Xamarin  
  *10 minut*  

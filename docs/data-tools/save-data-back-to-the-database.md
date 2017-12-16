@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2c309bd30fb364c36b9e98640a02eb3cf2611aef
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f5d50dff4b71402184e0c1127242c1ddb0b1827f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="save-data-back-to-the-database"></a>Uložit data zpět do databáze
 Datová sada je kopie v paměti data. Pokud změníte data, je dobrým zvykem uložit tyto změny zpět do databáze. Můžete to udělat jedním ze tří způsobů:  
@@ -46,14 +46,14 @@ Pokud jste obeznámeni s TableAdapters, můžete přejít přímo na jednu z tě
 |Téma|Popis|  
 |-----------|-----------------|  
 |[Vkládání nových záznamů do databáze](../data-tools/insert-new-records-into-a-database.md)|Postup aktualizace a vloží pomocí TableAdapters nebo příkaz objektů|  
-|[Aktualizace dat pomocí TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Postup aktualizace s TableAdapters|  
+|[Aktualizace dat pomocí objektu TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Postup aktualizace s TableAdapters|  
 |[Hierarchická aktualizace](../data-tools/hierarchical-update.md)|Provádění aktualizací z datové sady s minimálně dva související tabulky|  
 |[Zpracování výjimky souběžnosti](../data-tools/handle-a-concurrency-exception.md)|Postupy: zpracování výjimky, když dva uživatelé pokusí změnit stejná data v databázi ve stejnou dobu|  
 |[Postupy: ukládání dat pomocí transakce](../data-tools/save-data-by-using-a-transaction.md)|Jak k uložení dat v transakci pomocí System.Transactions – obor názvů a objekt TransactionScope|  
-|[Návod: Ukládání dat do transakce](../data-tools/save-data-in-a-transaction.md)|Návod, který vytvoří aplikaci Windows Forms k předvedení ukládání dat do databáze v transakci|  
+|[Návod: Uložení dat do transakce](../data-tools/save-data-in-a-transaction.md)|Návod, který vytvoří aplikaci Windows Forms k předvedení ukládání dat do databáze v transakci|  
 |[Uložení dat do databáze (více tabulek)](../data-tools/save-data-to-a-database-multiple-tables.md)|Postup úpravy záznamů a uložit změny ve více tabulek zpět do databáze|  
 |[Uložení dat z objektu do databáze](../data-tools/save-data-from-an-object-to-a-database.md)|Jak předat data z objektu, který není v datové sadě k databázi pomocí TableAdapter DbDirect metody|  
-|[Ukládání dat pomocí TableAdapter DBDirect metody](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Jak používat k odesílání dotazů SQL přímo do databáze TableAdapter|  
+|[Ukládání dat pomocí metod TableAdapter DBDirect](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|Jak používat k odesílání dotazů SQL přímo do databáze TableAdapter|  
 |[Uložení datové sady ve formátu XML](../data-tools/save-a-dataset-as-xml.md)|Jak uložit datové sady do dokumentu XML|  
   
 ## <a name="two-stage-updates"></a>Dvoufázová aktualizace  
@@ -217,7 +217,7 @@ Následující tabulka popisuje, jaké změny se potvrdí podle toho, co objekt,
 -   V datech back-end, odesílá data do zdroje dat – například databáze – a díky kterému jej k přijetí nebo odmítnutí data. Pokud pracujete s databázi, která má pokročilé zařízení pro ověřování dat a poskytuje informace o chybě, to může být praktické přístup, protože můžete ověřit data bez ohledu na to, které pocházejí z. Tento přístup však nemusí zohlednit požadavky na ověření specifické pro aplikaci. Kromě toho má zdroj dat, ověřit data může způsobit odezev množství ke zdroji dat, v závislosti na tom, jak vaše aplikace usnadňuje řešení chyb ověřování aktivováno back-end.  
   
     > [!IMPORTANT]
-    >  Při použití datové příkazy s <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> vlastnost, která je nastavena na <xref:System.Data.CommandType.Text>, pečlivě zkontrolujte informace, které se odesílá z klienta před jeho odesláním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) upraveném nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo dojít k poškození databáze. Před přenosem vstupu uživatele na databázi vždy zkontrolujte, že je platný. Je osvědčeným postupem vždy nutné použít parametrických dotazů nebo uložené procedury, pokud je to možné. Další informace najdete v tématu [Přehled zneužití skriptu](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+    >  Při použití datové příkazy s <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> vlastnost, která je nastavena na <xref:System.Data.CommandType.Text>, pečlivě zkontrolujte informace, které se odesílá z klienta před jeho odesláním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) upraveném nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo dojít k poškození databáze. Před přenosem vstupu uživatele na databázi vždy zkontrolujte, že je platný. Je osvědčeným postupem vždy nutné použít parametrických dotazů nebo uložené procedury, pokud je to možné.  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>Aktualizace přenosu ke zdroji dat  
 Poté, co byly provedeny změny v datové sadě, může přenášet změny ke zdroji dat. Nejčastěji to provedete pomocí volání `Update` metoda TableAdapter (nebo adaptér dat). Metoda smyčky prostřednictvím každý záznam v tabulce dat určuje, jaký typ aktualizace je vyžadováno (aktualizace, vložení nebo odstranění), pokud existuje, a poté spustí příslušný příkaz.  
@@ -258,7 +258,7 @@ Poté, co byly provedeny změny v datové sadě, může přenášet změny ke zd
   
  <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> Vlastnost každý parametr odkazuje na sloupec v tabulce data. Například `SourceColumn` vlastnost `au_id` a `Original_au_id` parametry je nastaven na jakémkoli sloupec v tabulce dat obsahuje id autora. Když adaptéru `Update` metoda běží ve sloupci id čte Autor z záznam, který se právě aktualizuje a výplní hodnot příkazu SELECT.  
   
- V příkazu UPDATE budete muset zadat obě novými hodnotami (ty, které budou zapisovat do záznamu) stejně jako starý hodnoty (tak, aby záznamu může být umístěno v databázi). Proto existují dva parametry pro každou hodnotu: jeden pro klauzuli SET a jinou pro klauzuli WHERE. Oba parametry čtení dat ze záznamu, který se právě aktualizuje, ale získají různé verze na základě parametru na hodnotu ve sloupci [SqlParameter.SourceVersion vlastnost](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Parametr pro klauzuli SET získá aktuální verze a parametr pro klauzuli WHERE získá původní verze.  
+ V příkazu UPDATE budete muset zadat obě novými hodnotami (ty, které budou zapisovat do záznamu) stejně jako starý hodnoty (tak, aby záznamu může být umístěno v databázi). Proto existují dva parametry pro každou hodnotu: jeden pro klauzuli SET a jinou pro klauzuli WHERE. Oba parametry čtení dat ze záznamu, který se právě aktualizuje, ale získají různé verze na základě parametru na hodnotu ve sloupci <xref:System.Data.SqlClient.SqlParameter.SourceVersion> vlastnost. Parametr pro klauzuli SET získá aktuální verze a parametr pro klauzuli WHERE získá původní verze.  
   
 > [!NOTE]
 >  Můžete také nastavit hodnoty v `Parameters` kolekce sami v kódu, což by obvykle provést v obslužné rutiny události pro adaptér dat <xref:System.Data.DataTable.RowChanging> událostí.  

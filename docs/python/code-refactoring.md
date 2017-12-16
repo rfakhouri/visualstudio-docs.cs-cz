@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 50f2577436eeb102424a968416f43e58cb0febd1
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 1e3b9fa70f42a0be65f7bea8c39a644d4950b621
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="refactoring-python-code"></a>Refaktoring kódu jazyka Python
 
@@ -28,6 +28,7 @@ Visual Studio obsahuje několik příkazů pro automaticky transformaci a čišt
 - [Odebrat nepoužité importy](#remove-imports) odebere nepoužívané importy
 
 < a name = "rename-variable"</a>
+
 ## <a name="rename"></a>přejmenování
 
 1. Klikněte pravým tlačítkem na identifikátor chcete přejmenovat a vyberte **přejmenovat**, nebo umístit vsuvka tento identifikátor a vyberte **Upravit > Refaktorovat > přejmenujte...**  příkaz nabídky (F2).

@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: a162c9cb7cf7febf6e3b6e95e927a31b6591b027
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 18bf9785ddd62bf7924ebb3eb71b27cd822e3af4
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Postupy: vytvoření metody DataContext namapované na uložené procedury a funkce (Návrhář relací objektů)
 Uložené procedury a funkce lze přidat do [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] jako <xref:System.Data.Linq.DataContext> metody. Volání metody a předávání v požadované parametry spouští uložená procedura nebo funkce v databázi a vrací data v návratový typ <xref:System.Data.Linq.DataContext> metoda. Podrobné informace o <xref:System.Data.Linq.DataContext> metody, najdete v části [DataContext metody (Návrhář relací objektů)](../data-tools/datacontext-methods-o-r-designer.md).  
@@ -57,4 +57,4 @@ Uložené procedury a funkce lze přidat do [!INCLUDE[vs_ordesigner_short](../da
  [Návod: Vytváření třídy LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [Technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
  [Úvod do LINQ v jazyku Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [Postupy: zápis dotazů LINQ v C#](http://msdn.microsoft.com/Library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)
+ [LINQ v jazyce C#](/dotnet/csharp/linq/linq-in-csharp)

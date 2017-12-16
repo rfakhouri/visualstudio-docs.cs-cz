@@ -26,11 +26,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Návod: Ladění formuláře systému Windows
 Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikací. Model Windows Form vytvoří standardní aplikaci systému Windows. Tuto rekapitulaci lze dokončit pomocí jazyků Visual Basic, C# nebo C++.  
@@ -126,7 +126,7 @@ Aplikace modelu Windows Form jsou jedny nejběžnějších spravovaných aplikac
   
 4.  Na **ladění** nabídce zvolte **Windows**, pak **sledovat**a klikněte na tlačítko **Watch1**.  
   
-5.  V **Watch1** klikněte na prázdný řádek. V **název** zadejte `textBox1.Text` (Pokud používáte Visual Basic, Visual C# nebo J#) nebo `textBox1->Text` (Pokud používáte C++), stiskněte klávesu ENTER.  
+5.  V **Watch1** klikněte na prázdný řádek. V **název** zadejte `textBox1.Text` (Pokud používáte Visual Basic a Visual C#) nebo `textBox1->Text` (Pokud používáte C++), stiskněte klávesu ENTER.  
   
      **Watch1** okno zobrazuje hodnotu této proměnné v uvozovkách jako:  
   

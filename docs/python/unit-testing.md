@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 22b5ea7236d6dc418618d7fc006442fa6b9474d9
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: ac81e9d7f00734125f2cc81f0a314a96e56eae7c
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Nastavení pro kód Python testování částí
 
@@ -24,7 +24,7 @@ Testy jednotek jsou části kódu, které testování jiné jednotky kódu v apl
 
 Testování částí Python hojně používá k ověření scénáře při navrhování program. Podpora v jazyce Python v sadě Visual Studio obsahuje zjišťování, provádění a ladění testování částí v kontextu vývojových procesech, aniž by museli testy samostatně.
 
-Toto téma obsahuje stručný obrys možnosti testování v sadě Visual Studio s Pythonem částí. Další informace o obecně testování částí v tématu [si kód Test jednotky](../test/unit-test-your-code.md). Také zjistit na video [testování Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
+Toto téma obsahuje stručný obrys možnosti testování v sadě Visual Studio s Pythonem částí. Další informace o obecně testování částí v tématu [jednotky Otestujte svůj kód](../test/unit-test-your-code.md). Také zjistit na video [testování Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
 

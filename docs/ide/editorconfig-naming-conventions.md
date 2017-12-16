@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8751bdb2d2dfb364f19f62e03edd1527fa3deb7d
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b14f0b98651f0a76d9a9a67bd429673e41e7d319
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Zásady vytváření názvů pro EditorConfig
 
@@ -43,7 +43,7 @@ K popisu druh symboly pro pojmenování pravidlo použít, zadejte vlastnosti v 
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_kinds = <values>`
 
-Povolené hodnoty jsou uvedeny níže, a zadáte více hodnot oddělených čárkami.
+V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot oddělených čárkami.
 
 - \*(Tato hodnota slouží k určení všechny symboly)
 - třída
@@ -63,7 +63,7 @@ Popis úrovní přístupu symbolů má pojmenování pravidlo použít, zadejte 
 
 `dotnet_naming_symbols.<symbolTitle>.applicable_accessibilities = <values>`
 
-Povolené hodnoty jsou uvedeny níže, a zadáte více hodnot oddělených čárkami.
+V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot oddělených čárkami.
 
 - \*(tuto hodnotu použijte k určení všech úrovní přístupu)
 - public
@@ -81,16 +81,15 @@ K popisu modifikátory symbolů má pojmenování pravidlo použít, zadejte ná
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-Povolené hodnoty jsou uvedeny níže, a zadáte více hodnot oddělených čárkami.
+V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot oddělených čárkami.
 
-- \*(tuto hodnotu použijte k určení všech modifikátory)
 - abstraktní nebo must_inherit
 - async
 - const
 - readonly
 - statické nebo sdílené
 
-Pokud ji vynecháte, bude použita pojmenování pravidla pro všechny modifikátory.
+`required_modifiers`Vlastnost je volitelná. Pokud ji vynecháte, bude použita pojmenování pravidla pro všechny modifikátory.
 
 ## <a name="style"></a>Styl
 
@@ -145,7 +144,7 @@ Následující tabulka uvádí povolená závažnost hodnoty, a jejich významu:
 
 Závažnost | Efekt
 ------------ | -------------
-žádná nebo tichou | Když tento styl nedodržíte, nezobrazuje nic uživateli; automaticky generovaný kód bude postupujte podle tohoto stylu.
+žádná nebo tichou | Když tento styl nedodržíte, nezobrazuje nic uživateli; automaticky generovaný kód však následuje tento styl.
 Návrh | Pokud se tento styl nedodržíte, zobrazit uživateli jako návrh, jako základní tečky na první dva znaky. V době kompilace nemá žádný vliv.
 upozornění | Při tomto stylu nedodržíte, zobrazovat upozornění kompilátoru v seznamu chyb.
 Chyba | Když tento styl nedodržíte, zobrazit chyba kompilátoru v seznamu chyb.
@@ -155,7 +154,7 @@ Chyba | Když tento styl nedodržíte, zobrazit chyba kompilátoru v seznamu chy
 
 ## <a name="example"></a>Příklad
 
-Níže je příklad .editorconfig souboru, který obsahuje zásady vytváření názvů, který určuje, že veřejné vlastnosti, metody, pole, události a delegáti musí být velkými písmeny. Všimněte si, že tyto zásady vytváření názvů určuje více druhů symbol, který chcete použít pravidlo, pomocí oddělte hodnoty čárkami.
+Následující soubor .editorconfig obsahuje zásady vytváření názvů, který určuje, že veřejné vlastnosti, metody, pole, události a delegáti musí být velkými písmeny. Všimněte si, že tyto zásady vytváření názvů určuje více druhů symbol, který chcete použít pravidlo, pomocí oddělte hodnoty čárkami.
 
 ```
 # Public members must be capitalized (public_members_must_be_capitalized)

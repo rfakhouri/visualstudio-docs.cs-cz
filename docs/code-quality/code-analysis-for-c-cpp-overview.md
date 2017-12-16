@@ -25,11 +25,11 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: f1634250d97e83b21cccd3ada90933fc0806d35f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-cc-overview"></a>Přehled Analýzy kódu pro C/C++
 Analýza kódu C/C++ nástroj poskytuje informace pro vývojáře o možný výskyt závad v jejich zdrojového kódu C/C++. Přetečení vyrovnávací paměti, zrušení inicializovaného paměti zahrnout běžné kódování chyby oznámené službou nástroj, dereferences ukazatele null a nevracení paměti a prostředků.  
@@ -38,7 +38,7 @@ Analýza kódu C/C++ nástroj poskytuje informace pro vývojáře o možný výs
  Chcete-li přirozené vývojáři použít nástroj pro analýzu, jsou plně integrované v rámci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. Během procesu vytváření všechna upozornění vygenerované zdrojový kód zobrazí v seznamu chyb. Můžete přejít na zdrojový kód, který způsobil upozornění a můžete zobrazit další informace o příčině a možná řešení problému.  
   
 ## <a name="pragma-support"></a>#pragma podpory  
- Vývojáři mohou použít `#pragma` – direktiva považovat upozornění jako chyby; povolit nebo zakázat upozornění a potlačení upozornění pro jednotlivé řádky kódu. Další informace najdete v tématu [postupy: povolení a zákaz analýzy kódu pro konkrétní varování C/C++](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a).  
+ Vývojáři mohou použít `#pragma` – direktiva považovat upozornění jako chyby; povolit nebo zakázat upozornění a potlačení upozornění pro jednotlivé řádky kódu. Další informace najdete v tématu [postupy: nastavení vlastností analýzy kódu pro projekty C/C++ ](how-to-set-code-analysis-properties-for-c-cpp-projects.md).  
   
 ## <a name="annotation-support"></a>Podpora – Poznámka  
  Poznámky zlepšit přesnost analýza kódu. Poznámky poskytují další informace o podmínkách před a po na funkce parametry a návratové typy. Další informace najdete v tématu [postup: Zadejte další informace kódu pomocí __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  

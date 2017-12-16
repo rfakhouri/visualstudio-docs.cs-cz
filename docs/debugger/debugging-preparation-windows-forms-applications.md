@@ -16,7 +16,6 @@ helpviewer_keywords:
 - debugging Windows applications
 - Windows applications, debugging
 - debugging [Visual Studio], Windows applications
-- debugging [J#], Windows applications
 - debugging [C#], Windows applications
 - debugging [Visual Basic], Windows applications
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
@@ -24,11 +23,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2d8f123359e4dfff02f05709d8028c2b9fcd3e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 873b7dd10a2e39aa795626bc7d387df7017740d8
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>Příprava na ladění: Formulářová aplikace Windows
 Šablona projektu Windows Forms vytvoří aplikaci Windows Forms. Ladění tento typ aplikace v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je jednoduché. Další informace najdete v tématu [vytváření projekt aplikace Windows](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  

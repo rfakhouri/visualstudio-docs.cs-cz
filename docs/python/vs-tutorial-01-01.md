@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d6c5cd4395ea0251027edbc94019637b72a630a8
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 07a0b5dbcbb32f7ae8bb7fb4045b55d6aa954f37
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>Práce s Python v sadě Visual Studio
 
@@ -44,20 +44,20 @@ V tomto kurzu začnete s Jednoduchý projekt obsahující soubor jeden, prázdn�
 
 1. V sadě Visual Studio, vyberte **soubor > Nový > projekt** (Ctrl + Shift + N), který spustí **nový projekt** dialogové okno. Zde můžete procházet šablony napříč různými jazyky, pak vyberte jednu pro svůj projekt a určete, kde umístí soubory v sadě Visual Studio.
 
-1. Chcete-li zobrazit šablony Python, vyberte **šablony > jiné jazyky > Python** na levé straně, nebo hledáním "Python". Pomocí vyhledávání je skvělým způsobem, jak najít šablonu, pokud si nepamatujete jeho umístění ve stromové struktuře jazyky.
+1. Chcete-li zobrazit šablony Python, vyberte **nainstalovaná > Python** na levé straně, nebo hledáním "Python". Pomocí vyhledávání je skvělým způsobem, jak najít šablonu, pokud si nepamatujete jeho umístění ve stromové struktuře jazyky.
 
     ![Dialogové okno Nový projekt se zobrazí projektů v jazyce Python](media/vs-getting-started-python-01-new-project.png)
 
-1. Všimněte si, jak podporu jazyka Python v sadě Visual Studio obsahuje několik šablon projektu, včetně webových aplikací pomocí rozhraní Bottle, Flask a Django. Pro účely tohoto návodu ale Začněme s prázdným projektem. 
+    Všimněte si, jak podporu jazyka Python v sadě Visual Studio obsahuje několik šablon projektu, včetně webových aplikací pomocí rozhraní Bottle, Flask a Django. Pro účely tohoto návodu ale Začněme s prázdným projektem.
 
 1. Vyberte **aplikace Python** šablony, zadejte název projektu a vyberte **OK**. 
 
 1. Po chvíli se Visual Studio zobrazí strukturu projektu v **Průzkumníku řešení** okno (1). Výchozí soubor kód je otevřen v editoru (2). Okno vlastností (3) je také zobrazit další informace o libovolnou položku vybraného v Průzkumníkovi řešení, včetně jeho přesné umístění na disku.
- 
+
     ![Průzkumník řešení s projektem Python](media/vs-getting-started-python-02-windows.png)
- 
+
 1. Chvíli trvat Seznamte se s Průzkumníku řešení, která je, kde Procházet soubory a složky ve vašem projektu.
-    
+
     ![Průzkumník řešení rozbalit a zobrazit různé funkce](media/vs-getting-started-python-03-solution-explorer.png)
 
     (1) zvýrazněná tučným písmem je váš projekt pomocí názvu, který jste zadali v dialogovém okně Nový projekt. Na disku, je reprezentována tento projekt `.pyproj` soubor ve složce projektu.
@@ -69,7 +69,7 @@ V tomto kurzu začnete s Jednoduchý projekt obsahující soubor jeden, prázdn�
     (4) v rámci projektu je také **prostředí Python** uzlu. Pokud rozšiřovat, uvidíte dostupné překladače Python, které jsou k dispozici. Rozbalte uzel překladač zobrazíte knihovny, které jsou nainstalovány do prostředí (5).
 
     Klikněte pravým tlačítkem na libovolný uzel nebo položky v Průzkumníku řešení pro přístup k nabídce použít příkazy. Například **přejmenovat** příkaz umožňuje změnit název libovolný uzel nebo položky, včetně projektu a řešení.
-    
+
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]

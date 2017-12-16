@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 191206e9cc16271e64abbeaba87d86ac0108924b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Potvrzení úprav v procesu na ovládací prvky vázané na data před uložením dat
 Při úpravě hodnoty v ovládacích prvcích vázaných na data, musí uživatelé přejít mimo potvrzení aktualizované hodnoty podkladové zdroje dat, který je ovládací prvek vázán na aktuální záznam. Při přetahování položek z [okno zdroje dat](add-new-data-sources.md) na formuláři, první položka, která je vyřadit generuje kód do **Uložit** tlačítko klikněte na události <xref:System.Windows.Forms.BindingNavigator>. Tento kód zavolá <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metodu <xref:System.Windows.Forms.BindingSource>. Proto volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda se vygeneruje pouze pro první <xref:System.Windows.Forms.BindingSource> přidaná do formuláře.  
@@ -38,7 +38,7 @@ Při úpravě hodnoty v ovládacích prvcích vázaných na data, musí uživate
 > [!NOTE]
 >  Přidá návrháře `BindingSource.EndEdit` kódu pouze pro první položku umístění na formuláři. Proto je nutné přidat řádek kódu pro volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource> na formuláři. Můžete ručně přidat řádek kódu pro volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource>. Alternativně můžete přidat `EndEditOnAllBindingSources` metoda formuláře a pojmenujte ji před provedením uložení.  
   
- Následující kód používá [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d) dotaz pro všechny iterace <xref:System.Windows.Forms.BindingSource> součásti a volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource> ve formuláři.  
+ Následující kód používá [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) dotaz pro všechny iterace <xref:System.Windows.Forms.BindingSource> součásti a volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda pro každou <xref:System.Windows.Forms.BindingSource> ve formuláři.  
   
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>K volání EndEdit – pro všechny součásti BindingSource ve formuláři  
   
