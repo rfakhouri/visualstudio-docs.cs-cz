@@ -12,11 +12,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 7e3a1d249ad91a3ffce941442e8b9528592a224d
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.openlocfilehash: eecae2b95947d4bdf40ba6d57a85150e03f21cfb
+ms.sourcegitcommit: abe8d0aaded582058b5f5669d9d534d2f6a83355
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/16/2017
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Začínáme s C# a ASP.NET v sadě Visual Studio
 V tomto kurzu pro vývoj C# pro ASP.NET Core pomocí sady Visual Studio budete vytvořit webovou aplikaci ASP.NET Core C#, přidejte do ní kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace.
@@ -28,7 +28,7 @@ Zde je rychlý nejčastější dotazy k vám představí některé klíčové ko
 ### <a name="what-is-c"></a>Co je C#?
 [C#](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework) je bezpečnost typů a objektově orientované programovací jazyk, který je navržená tak, aby robustní a snadno Další.
 ### <a name="what-is-aspnet-core"></a>Co je ASP.NET Core?
-ASP.NET Core je představuje open source a napříč platformami rozhraní pro vytváření aplikací připojené k Internetu, jako třeba webové aplikace a služby. Aplikace ASP.NET Core můžete spustit na buď [.NET Core](/net/core/platform) nebo rozhraní .NET Framework. Můžete vyvíjet a spuštění aplikace a platformy ASP.NET Core v systému Windows, Mac a Linux. ASP.NET Core je open source v [Githubu](https://github.com/aspnet/home).
+ASP.NET Core je představuje open source a napříč platformami rozhraní pro vytváření aplikací připojené k Internetu, jako třeba webové aplikace a služby. Aplikace ASP.NET Core můžete spustit v rozhraní .NET Framework nebo .NET Core. Můžete vyvíjet a spuštění aplikace a platformy ASP.NET Core v systému Windows, Mac a Linux. ASP.NET Core je open source v [Githubu](https://github.com/aspnet/home).
 ### <a name="what-is-visual-studio"></a>Co je Visual Studio?
 Visual Studio je sada integrované vývojové kancelářské nástroje pro vývojáře. Považujte ho za programu, které můžete použít k vytvoření programy a aplikace.  
 
@@ -46,25 +46,25 @@ Nejdřív vytvoříte projekt ASP.NET Core. Typ projektu se dodává s všechny 
 
    ![Šablona projektu webové aplikace ASP.NET Core v dialogovém okně Nový projekt v prostředí Visual Studio IDE](../ide/media/new-project-csharp-aspnet-mycoreapp.png)
 
-#### <a name="add-a-workgroup-optional"></a>Přidat pracovní skupiny (volitelné)
-Pokud nevidíte **webové aplikace ASP.NET Core** šablony projektu, můžete ho získat tak, že přidáte **ASP.NET Core a vývoje** zatížení. Můžete přidat tímto zatížením v jednom z následujících způsobů, v závislosti na tom, které instalují aktualizace Visual Studio 2017 na váš počítač.
+#### <a name="add-a-workload-optional"></a>Přidat úloha (volitelné)
+Pokud nevidíte **webové aplikace ASP.NET Core** šablony projektu, můžete ho získat tak, že přidáte **ASP.NET a webové vývoj** zatížení. Můžete přidat tímto zatížením v jednom z následujících způsobů, v závislosti na tom, které instalují aktualizace Visual Studio 2017 na váš počítač.
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>Možnost 1: Pomocí dialogového okna Nový projekt
 1. Klikněte **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno.
 
   ![Klikněte na odkaz otevřete instalační program Visual Studio z dialogového okna Nový projekt](../ide/media/vs-open-visual-studio-installer-generic.png)
 
-2. Spustí instalační program Visual Studio. Vyberte **ASP.NET Core a vývoje** zatížení a potom zvolte **upravit**.
+2. Spustí instalační program Visual Studio. Vyberte **ASP.NET a webové vývoj** zatížení a potom zvolte **upravit**.
 
    ![Vývoj pro různé platformy zatížení .NET core v instalačním programu Visual Studio](../ide/media/asp-dot-net-web-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Pomocí nabídky panelu nástrojů
 1. Zrušit mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje** > **funkcí a nástrojů pro získání...** .
 
-2. Spustí instalační program Visual Studio. Vyberte **ASP.NET Core a vývoje** zatížení a potom zvolte **upravit**.   
+2. Spustí instalační program Visual Studio. Vyberte **ASP.NET a webové vývoj** zatížení a potom zvolte **upravit**.   
 
 #### <a name="add-a-project-template"></a>Přidání šablony projektu
-1. V **nové webové aplikace ASP.NET Core** dialogovém okně vyberte **webové aplikace (Model-View-Controller** šablona projektu.  
+1. V **nové webové aplikace ASP.NET Core** dialogovém okně vyberte **webové aplikace (Model-View-Controller)** šablona projektu.  
 
 2. Vyberte **technologii ASP.NET 2.0 základní** v hlavní nabídce rozevíracího seznamu. (Pokud nevidíte **technologii ASP.NET 2.0 základní** v seznamu, nainstalujte ji podle **Stáhnout** odkaz, který by se měla objevit v žlutý pruh v horní části dialogové okno.) Zvolte **OK**.
 
@@ -89,15 +89,16 @@ Vzor MVC pomáhá vytvářet aplikace, které se snadněji testování a aktuali
       ![HomeController.cs soubor v Průzkumníku řešení v sadě Visual Studio](../ide/media/csharp-aspnet-solution-explorer-home-controller.png)
 
 2. Zobrazení **HomeController.cs**
+
   ![HomeController.cs v okně kódu aplikace Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
 
-4. Projekt má také **zobrazení** složky, která obsahuje jiné složky, které jsou mapovány na každém řadiči (a jeden pro **sdílené** zobrazení. Například v zobrazení CSHTML souboru (rozšíření HTML) **/domácí/o** cesta by byla v **Views/Home/About.cshtml**. Umožňuje otevřete tento soubor.
+4. Projekt má také **zobrazení** složky, která obsahuje jiné složky, které jsou mapovány na každém řadiči (a jeden pro **sdílené** zobrazení). Například v zobrazení CSHTML souboru (rozšíření HTML) **/domácí/o** cesta by byla v **Views/Home/About.cshtml**. Umožňuje otevřete tento soubor.
 
   ![About.cshtml soubor v Průzkumníku řešení v sadě Visual Studio](../ide/media/csharp-aspnet-solution-explorer-view-about.png)
 
 5. Tento soubor CSHTML používá syntaxi Razor k vykreslení HTML založené na kombinaci standardní značky a vložené C#.
 
- ![About.cshtml v okně kódu aplikace Visual Studio](../ide/media/csharp-aspnet-home-controller-code.png)
+  ![About.cshtml v okně kódu aplikace Visual Studio](../ide/media/csharp-aspnet-about-cshtml-code.png)
 
  >[!NOTE]
  > Další informace o tom najdete v tématu [Začínáme s C# a technologii ASP.NET pomocí syntaxe Razor](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c) stránky.
@@ -123,7 +124,7 @@ Vzor MVC pomáhá vytvářet aplikace, které se snadněji testování a aktuali
 
  ![Vyberte o v okně prohlížeče pro vaši aplikaci.](../ide/media/csharp-aspnet-browser-page.png)
 
- Kromě jiných věcí o stránce vykreslí část textu v souboru HomeController.cs.
+ Kromě jiných věcí vykreslí stránku v prohlížeči o text, který je nastaveno v souboru HomeController.cs.
 
    ![Zobrazit text na stránce o](../ide/media/csharp-aspnet-browser-page-about.png)
 
@@ -157,7 +158,10 @@ Vzor MVC pomáhá vytvářet aplikace, které se snadněji testování a aktuali
 
   ![Aktualizujte okno prohlížeče a zobrazit změněného textu](../ide/media/csharp-aspnet-browser-page-about-changed.png)
 
-1. Stiskněte klávesu **F5** Zastavit ladění.
+1. Stiskněte klávesu **Shift**+**F5** Zastavit ladění. Nebo zvolte **ladění** > **Zastavte ladění** z nabídky panelu, nebo zvolte **Zastavte ladění** tlačítka panelu nástrojů.
+
+ ![Klikněte na tlačítko Zastavit ladění na panelu nástrojů](../ide/media/csharp-aspnet-stop-debugging.png)
+
 
 Blahopřejeme k dokončení tohoto kurzu!
 
