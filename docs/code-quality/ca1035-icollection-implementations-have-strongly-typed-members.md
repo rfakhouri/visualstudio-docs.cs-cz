@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6be0c08efcd1f409bfb69775822e4904372f2511
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3e595046442092c11b068b6df6fde2a9a56e705
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: Implementace ICollection mají členy silného typu
 |||  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>Související pravidla  
  [CA1038: Enumerátory by měly být silného typu](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
   
- [CA1039: Seznamy jsou silného typu.](../code-quality/ca1039-lists-are-strongly-typed.md)  
+ [CA1039: Seznamy jsou silného typu](../code-quality/ca1039-lists-are-strongly-typed.md)  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Array?displayProperty=fullName>   

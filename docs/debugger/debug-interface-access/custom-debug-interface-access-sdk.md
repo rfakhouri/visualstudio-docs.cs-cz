@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3c1f768c5e4e7f76d63841bb59f07a403e1d78f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e367a96bd24840e734ada21d45ee35dfaee36b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Vlastní (Přístup k rozhraní ladění SDK)
 Některé kompilátory zavést symboly, které nejsou identifikovány podle typů standardní lexikální symbolů. Tyto symboly jsou určeny `SymTagCustom` značky.  
@@ -28,9 +29,9 @@ Některé kompilátory zavést symboly, které nejsou identifikovány podle typ�
   
 |Vlastnost|Datový typ|Popis|  
 |--------------|---------------|-----------------|  
-|[Idiasymbol::get_databytes –](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Pole data přidružená k symbolu.|  
-|[Idiasymbol::get_symindexid –](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|  
-|[Idiasymbol::get_symtag –](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagCustom` (jeden z [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|  
+|[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Pole data přidružená k symbolu.|  
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|  
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagCustom` (jeden z [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|  
   
 ## <a name="see-also"></a>Viz také  
  [Lexikální hierarchie typů symbolů](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

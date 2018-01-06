@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 10b02338b16dc3bd1c67e3ab11cdd02d3d1ef1be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ed47a2ccea76ce9cb6e2a1ef6dd73d53c961544c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406: Vyhněte se argumentům Int64 pro klienty jazyka Visual Basic 6
 |||  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Interoperability.LongArgument#1](../code-quality/codesnippet/VisualBasic/ca1406-avoid-int64-arguments-for-visual-basic-6-clients_1.vb)]  
   
 ## <a name="related-rules"></a>Související pravidla  
- [CA1413: Vyhněte se neveřejným polím v viditelných typech modelu COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
+ [CA1413: Vyhněte se neveřejným polím v hodnotách viditelných modulem COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
   
  [CA1407: Vyhněte se statickým členům ve viditelných typech modelu COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
   
@@ -61,4 +62,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Viz také  
  [Spolupráce s nespravovaným kódem](/dotnet/framework/interop/index)   
- [Long – datový typ](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+ [Datový typ Long](/dotnet/visual-basic/language-reference/data-types/long-data-type)

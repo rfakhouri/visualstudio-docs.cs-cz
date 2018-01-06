@@ -11,11 +11,14 @@ ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: a7e12508537a3bcda1df7997ba9e390b75b9beaf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: d5242dd873591abee15f528d09b6f588ea12f5ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-azure-easy-tables-with-unity-walkthrough"></a>Pomocí tabulky Azure snadno návod Unity
 
@@ -38,19 +41,19 @@ Dokončený projekt je dostupná na Githubu. Průvodce však bude předpokládat
 
 ## <a name="walkthrough-steps"></a>Kroky názorného postupu
 
-1. [Konfigurace snadno tabulek v Azure](visual-studio-tools-for-unity-azure-configure.md)
-2. [Vytváření snadno tabulek](visual-studio-tools-for-unity-azure-setup.md)
+1. [Konfigurace jednoduchých tabulek v Azure](visual-studio-tools-for-unity-azure-configure.md)
+2. [Vytvoření jednoduchých tabulek](visual-studio-tools-for-unity-azure-setup.md)
 3. [Příprava vývojového prostředí](visual-studio-tools-for-unity-azure-prepare.md)
-4. [Vytvořit datové třídy modelu](visual-studio-tools-for-unity-azure-data.md)
-5. [Implementace Azure MobileServiceClient](visual-studio-tools-for-unity-azure-mobile-client.md)
-6. [Úložiště certifikátů zabezpečení Unity Mono aktualizace](visual-studio-tools-for-unity-azure-security.md)
-7. [Testovací připojení klienta](visual-studio-tools-for-unity-azure-connection.md)
-7. [Import ukázkových herní prostředky](visual-studio-tools-for-unity-azure-game-assets.md)
-8. [Test Ukázka hry](visual-studio-tools-for-unity-azure-game.md)
-9. [Vysvětlení RaceScene](visual-studio-tools-for-unity-azure-racescene.md)
-10. [Vysvětlení HeatmapScene](visual-studio-tools-for-unity-azure-heatmapscene.md)
-11. [Vysvětlení LeaderboardScene](visual-studio-tools-for-unity-azure-leaderboardscene.md)
+4. [Vytvoření tříd datových modelů](visual-studio-tools-for-unity-azure-data.md)
+5. [Implementace třídy MobileServiceClient v Azure](visual-studio-tools-for-unity-azure-mobile-client.md)
+6. [Aktualizace úložiště certifikátů zabezpečení Unity Mono](visual-studio-tools-for-unity-azure-security.md)
+7. [Testování připojení klienta](visual-studio-tools-for-unity-azure-connection.md)
+7. [Import ukázkových herních prostředků](visual-studio-tools-for-unity-azure-game-assets.md)
+8. [Testování ukázky hry](visual-studio-tools-for-unity-azure-game.md)
+9. [Vysvětlení k RaceScene](visual-studio-tools-for-unity-azure-racescene.md)
+10. [Vysvětlení k HeatmapScene](visual-studio-tools-for-unity-azure-heatmapscene.md)
+11. [Vysvětlení k LeaderboardScene](visual-studio-tools-for-unity-azure-leaderboardscene.md)
 
 
 ## <a name="next-step"></a>Další krok
-* [Konfigurace snadno tabulek v Azure](visual-studio-tools-for-unity-azure-configure.md)
+* [Konfigurace jednoduchých tabulek v Azure](visual-studio-tools-for-unity-azure-configure.md)

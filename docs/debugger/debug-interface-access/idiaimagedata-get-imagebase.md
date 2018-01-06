@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: daaaf26e0a33ce8e90b2b8ac621ed47d299c8276
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5e3730e7bc543d0b7bdea18e162dfe83e1d803bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 Načte paměti umístění, kde by měla být založena bitovou kopii.  
@@ -42,4 +43,4 @@ HRESULT get_imageBase (
  Kvůli konfliktům základní bitovou kopii může být obrázek automaticky rebased do umístění nevyužitou paměť po načtení. Tato metoda vrátí základní nápovědu (umístění navrhované paměti), která byla uložena v modulu v době kompilace.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiaimagedata –](../../debugger/debug-interface-access/idiaimagedata.md)
+ [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

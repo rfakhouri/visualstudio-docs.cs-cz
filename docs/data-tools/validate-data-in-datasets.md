@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0f328cbaac03680885bdbda97dff7bc9ac3cf2cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-data-in-datasets"></a>Ověřování dat v datových sadách
 Ověřování dat je proces ověření, která zadaných do datových objektů v souladu s omezeními ve schématu datové sady. Proces ověření také potvrdí, že tyto hodnoty jsou následující pravidla, které byly vytvořeny pro vaši aplikaci. Je vhodné ověřit data před odesláním aktualizací do základní databáze. Tím se snižuje chyby, jakož i potenciální počet odezev mezi aplikace a databáze.  
@@ -213,4 +214,4 @@ Předávání <xref:System.Data.DataRowVersion> hodnotu společně s index sloup
 ## <a name="see-also"></a>Viz také
 [Datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
 [Postupy: ověření dat v ovládacím prvku Windows Forms DataGridView](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)   
-[Postupy: zobrazení ikon chyby pro ověřování formuláře pomocí ovládacího prvku Windows Forms ErrorProvider – komponenta](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+[Postupy: Zobrazení ikon chyb pro ověřování formuláře pomocí komponenty Windows Forms ErrorProvider](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

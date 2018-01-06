@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f93a0d11435a060806a89db48b2c9e81efebe3f3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datové sady s použitím objektů TableAdapters
 Součást TableAdapter doplní datové sady daty z databáze, na základě jednoho nebo více dotazy nebo uložené procedury, které zadáte. Můžete také provést TableAdapters přidání, aktualizace a odstranění v databázi k zachování změn, které můžete provést na datovou sadu. Mohou také vystavovat globální příkazy, které se nevztahují žádné konkrétní tabulky.  
@@ -39,9 +40,9 @@ Součást TableAdapter doplní datové sady daty z databáze, na základě jedno
   
 |Téma|Popis|  
 |-----------|-----------------|  
-|[Vytvoření a konfigurace TableAdapters](../data-tools/create-and-configure-tableadapters.md)|Jak používat návrháři k vytvoření a konfigurace TableAdapters|  
-|[Vytváření parametrizovaných dotazů TableAdapter](../data-tools/create-parameterized-tableadapter-queries.md)|Postup povolení uživatelům zadat argumenty procedury TableAdapter nebo dotazy|  
-|[Přímý přístup k databázi pomocí TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Jak používat metody Dbdirect TableAdapters|  
+|[Vytvoření a konfigurace objektů TableAdapter](../data-tools/create-and-configure-tableadapters.md)|Jak používat návrháři k vytvoření a konfigurace TableAdapters|  
+|[Vytvoření parametrizovaných dotazů TableAdapter](../data-tools/create-parameterized-tableadapter-queries.md)|Postup povolení uživatelům zadat argumenty procedury TableAdapter nebo dotazy|  
+|[Přímý přístup k databázi pomocí objektů TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Jak používat metody Dbdirect TableAdapters|  
 |[Vypnutí omezení při naplňování datové sady](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Jak pracovat s omezení cizího klíče při aktualizaci dat|  
 |[Postup rozšíření funkcí TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Postup přidání vlastního kódu do prvků TableAdapters|  
 |[Čtení dat XML do datové sady](../data-tools/read-xml-data-into-a-dataset.md)|Jak pracovat s XML|  
@@ -128,4 +129,4 @@ Součást TableAdapter doplní datové sady daty z databáze, na základě jedno
 Při použití datové příkazy s vlastnost CommandType nastavena na <xref:System.Data.CommandType.Text>, pečlivě zkontrolujte informace, které se odesílá z klienta před jeho odesláním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) upraveném nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo dojít k poškození databáze. Před přenosem vstupu uživatele na databázi vždy zkontrolujte, že je platný. Osvědčeným postupem je vždy nutné použít parametrických dotazů nebo uložené procedury, pokud je to možné.  
   
 ## <a name="see-also"></a>Viz také
-[Datová sada nástrojů](../data-tools/dataset-tools-in-visual-studio.md)
+[Nástroje datové sady](../data-tools/dataset-tools-in-visual-studio.md)

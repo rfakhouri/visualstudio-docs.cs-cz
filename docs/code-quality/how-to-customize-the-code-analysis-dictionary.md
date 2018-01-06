@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a14870e494c9c8efeb7c15dabf034f059c4a3c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Postupy: Přizpůsobení slovníku Analýzy kódu
 Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kódu chyby v pravopisu, gramaticky případ a jiné zásady vytváření názvů služby [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pokyny. Můžete vytvořit vlastní slovník soubor Xml pro přidat, odebrat nebo změnit podmínky, zkratky a zkratky do slovníku předdefinované.  
@@ -95,15 +96,15 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
  Pro následující pravidel analýzy kódu platí podmínky slovník nebo slova nebo Recognized uzly:  
   
--   [CA1701: Složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Malá a velká písmena složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Malá a velká písmena složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 -   [CA1703: Řetězce prostředků by měly být zadány správně](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
 -   [CA1704: Identifikátory by měly být zadány správně](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1709: Identifikátory by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709: Malá a velká písmena identifikátorů by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 -   [CA1726: Použijte upřednostňované výrazy](../code-quality/ca1726-use-preferred-terms.md)  
   
@@ -130,15 +131,15 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
  Podmínky v uzlu slovník nebo slova nebo nerozpoznána platí pro následující pravidel analýzy kódu:  
   
--   [CA1701: Složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Malá a velká písmena složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Malá a velká písmena složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 -   [CA1703: Řetězce prostředků by měly být zadány správně](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
 -   [CA1704: Identifikátory by měly být zadány správně](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
--   [CA1709: Identifikátory by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709: Malá a velká písmena identifikátorů by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 -   [CA1726: Použijte upřednostňované výrazy](../code-quality/ca1726-use-preferred-terms.md)  
   
@@ -171,9 +172,9 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
  Pro následující pravidel analýzy kódu platí podmínky v uzlu slovník nebo slova nebo zastaralé funkce:  
   
--   [CA1701: Složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Malá a velká písmena složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Malá a velká písmena složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 -   [CA1703: Řetězce prostředků by měly být zadány správně](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
@@ -206,9 +207,9 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
  V uzlu slovník nebo slova nebo složené podmínky platí pro následující pravidel analýzy kódu:  
   
--   [CA1701: Složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Malá a velká písmena složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Malá a velká písmena složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 -   [CA1703: Řetězce prostředků by měly být zadány správně](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)  
   
@@ -235,9 +236,9 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
  Podmínky v uzlu slovník nebo slova nebo DiscreteExceptions platí pro následující pravidel analýzy kódu:  
   
--   [CA1701: Složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
+-   [CA1701: Malá a velká písmena složených slov prostředku řetězců by měla být použita správně](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
   
--   [CA1702: Složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
+-   [CA1702: Malá a velká písmena složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
 ###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Slovník nebo režim/CasingExceptions nebo zkratce  
  Zahrnout zkratka seznam termínů, které analýza kódu identifikuje jako správně zadané a určit, jak se používá zkratka při kontrole termín podle malá a velká písmena pravidel pro složených slov, přidejte termín jako vnitřní text slovník nebo režim/CasingExceptions / Acronym element. Zkratka v elementu slovník nebo režim/CasingExceptions nebo zkratku rozlišuje velká a malá písmena.  
@@ -260,7 +261,7 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
  Podmínky v uzlu slovník nebo režim/CasingExceptions platí pro následující pravidel analýzy kódu:  
   
--   [CA1709: Identifikátory by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+-   [CA1709: Malá a velká písmena identifikátorů by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
 ##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Chcete-li použít vlastní slovník do projektu  
   

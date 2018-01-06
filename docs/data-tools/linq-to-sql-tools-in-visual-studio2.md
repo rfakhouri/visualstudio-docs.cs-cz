@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: a160cce25814cd2e110f8896ed6752a18b5dd0da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Technologie LINQ to SQL nástroje v sadě Visual Studio
 Technologie LINQ to SQL je první objekt relační mapování technologie vydaných společností Microsoft. Je dobře funguje v základní scénáře a nadále podporován v sadě Visual Studio, ale je již ve službě active vývoji. Pomocí LINQ to SQL při zachování starší verze aplikace, který je již používán nebo v jednoduché aplikace, které používá SQL Server a nevyžadují mapování více tabulek. Obecně platí nové aplikace by měly používat rozhraní Entity Framework, pokud je potřeba vrstva relační objekt mapper.  

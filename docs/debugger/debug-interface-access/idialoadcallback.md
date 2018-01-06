@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dc5034967fe94b8be6503a9c86f7b6bc6ee14ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5cc40b8041ea5427d223a70c7d3d9347c48be286
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 Zpětná volání obdrží z symbol DIA postup vyhledání, čímž umožní uživatelské rozhraní hlásit průběh pokus o umístění.  
@@ -34,11 +35,11 @@ IDiaLoadCallback : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idialoadcallback::notifydebugdir –](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Volá se při ladění adresář byl nalezen v souboru .exe.|  
-|[Idialoadcallback::notifyopendbg –](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Volá se při otevřel soubor dbg candidate.|  
-|[Idialoadcallback::notifyopenpdb –](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Volá se při otevřel soubor .pdb candidate.|  
-|[Idialoadcallback::restrictregistryaccess –](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Určuje, pokud registru dotazy slouží k vyhledání cesty pro hledání symbolů.|  
-|[Idialoadcallback::restrictsymbolserveraccess –](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Určuje, pokud je povolen přístup k serveru symbol přeložit symboly.|  
+|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Volá se při ladění adresář byl nalezen v souboru .exe.|  
+|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Volá se při otevřel soubor dbg candidate.|  
+|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Volá se při otevřel soubor .pdb candidate.|  
+|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Určuje, pokud registru dotazy slouží k vyhledání cesty pro hledání symbolů.|  
+|[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Určuje, pokud je povolen přístup k serveru symbol přeložit symboly.|  
   
 ## <a name="remarks"></a>Poznámky  
  Toto rozhraní implementuje klientskou aplikaci a poskytuje odkaz na jeho ve volání [idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) metoda.  
@@ -57,4 +58,4 @@ IDiaLoadCallback : IUnknown
  [Idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [Idiareadexeatoffsetcallback –](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)   
  [Idiareadexeatrvacallback –](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   
- [Idialoadcallback2 –](../../debugger/debug-interface-access/idialoadcallback2.md)
+ [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 40842e1067a0b764a4b35ac679ee774f04347359
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e188947f51cb8e277c71a072dfcee72922f37982
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Jeden nebo více objektů vybraných databázi vrátit schématu, která neodpovídá schématu cílové třídy
 Jeden nebo více objektů vybraných databáze vrátí schématu, která neodpovídá schématu cílové třídy. Nic se přidal do návrháře.  
@@ -30,5 +31,5 @@ Jeden nebo více objektů vybraných databáze vrátí schématu, která neodpov
 2.  Vyberte databázový objekt, který vrátí data, která odpovídá schématu cílové třídy (třídy, na kterou objekt databáze je vyřazována do v Návrháři relací objektů).  
   
 ## <a name="see-also"></a>Viz také
-[Návrhář relací objektů zprávy](../data-tools/o-r-designer-messages.md)  
+[Zprávy Návrháře relací objektů](../data-tools/o-r-designer-messages.md)  
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

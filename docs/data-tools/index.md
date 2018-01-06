@@ -5,11 +5,12 @@ ms.author: gewarren
 title: "Pomocí nástrojů data v sadě Visual Studio pro vývoj řešení pro data | Microsoft Docs"
 description: "Další informace o nástrojích pro řešení pro data v sadě Visual Studio."
 ms.technology: vs-data-tools
-ms.openlocfilehash: 134d5ffa213f08bfa22a87e639edf59b990f1e68
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 74a4d787439f8a615f7f9937438e19179630b9f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Pomocí nástrojů data v sadě Visual Studio pro vývoj řešení pro data
 
@@ -120,7 +121,7 @@ Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio</p>
+                        <p><Accessing data in Visual Studio></p>
                     </div>
                 </div>
             </div>

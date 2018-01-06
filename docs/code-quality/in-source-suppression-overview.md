@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f35833df8e84a4e4caba8fd46f8daea8dd5119a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="in-source-suppression-overview"></a>Přehled potlačování ve zdroji
 Potlačení zdroje v je schopnost potlačit nebo ignorovat porušení analýza kódu ve spravovaném kódu tak, že přidáte **suppressmessage –** atribut segmenty kódu, které způsobí porušení zásad. **Suppressmessage –** se podmíněný atribut, který je součástí IL metadat vašeho sestavení spravovaného kódu, jenom když je symbol kompilace CODE_ANALYSIS definované při kompilaci.  

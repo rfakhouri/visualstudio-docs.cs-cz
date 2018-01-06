@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 24d6401cae58b0bede44519900f6d72bd77ab2a9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace pomocí grafického subsystému WPF a Entity Framework 6
 Tato walkthough ukazuje, jak vytvořit základní "forms over data" aplikaci v sadě Visual Studio s SQL Server LocalDB, Northwind databáze, Entity Framework 6 a Windows Presentation Foundation. Ukazuje, jak provést základní vazby dat s hlavní podrobné zobrazení, která je také vlastní "vazby Navigátor" pomocí tlačítka pro "Přesunout další", "Přesunout na předchozí," "Přesunout na začátek," "přesunout na konec," "Aktualizovat" a "Delete".  
@@ -425,5 +426,5 @@ Přidejte do třídy MainWindow v MainWindow.xaml.cs tyto metody obslužné ruti
 Chcete-li začít, ladění, stiskněte **F5**. Měli byste vidět zákazníka a pořadí data vložené do mřížky a navigačních tlačítek by měla fungovat podle očekávání. Klikněte na "Potvrzení" Přidat nového zákazníka nebo pořadí modelu po zadání data. Klikněte na "Zrušit" zpět bez uložení dat z nového zákazníka nebo nového formuláře pořadí. Můžete provést úpravy existující zákazníci a objednávky přímo do textových polí a tyto změny se zapisují do modelu automaticky.  
   
 ## <a name="see-also"></a>Viz také
-[Data nástroje sady Visual Studio pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)  
+[Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)  
 [Dokumentaci Entity Framework](https://msdn.microsoft.com/en-us/data/ee712907.aspx)

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 372279d82f9f316edf0d1aed203be1ce4e48e236
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66d972ad65bd6ff3f4f9f5d7dd71893d9fe09c2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Provede výčet různých symboly obsažené v datovém zdroji.  
@@ -34,13 +35,13 @@ IDiaEnumSymbols : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiaenumsymbols::get__newenum –](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Načte `IEnumVARIANT Interface` verzi této enumerátor.|  
-|[Idiaenumsymbols::get_count –](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|Načte počet symbolů.|  
-|[Idiaenumsymbols::Item –](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Načte symbol prostřednictvím indexu.|  
-|[Idiaenumsymbols::Next –](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Načte zadaný počet symboly v pořadí výčtu.|  
-|[Idiaenumsymbols::Skip –](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Přeskočí zadaný počet symboly v posloupnosti výčtu.|  
-|[Idiaenumsymbols::Reset –](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[Idiaenumsymbols::clone –](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
+|[IDiaEnumSymbols::get__NewEnum](../../debugger/debug-interface-access/idiaenumsymbols-get-newenum.md)|Načte `IEnumVARIANT Interface` verzi této enumerátor.|  
+|[IDiaEnumSymbols::get_Count](../../debugger/debug-interface-access/idiaenumsymbols-get-count.md)|Načte počet symbolů.|  
+|[IDiaEnumSymbols::Item](../../debugger/debug-interface-access/idiaenumsymbols-item.md)|Načte symbol prostřednictvím indexu.|  
+|[IDiaEnumSymbols::Next](../../debugger/debug-interface-access/idiaenumsymbols-next.md)|Načte zadaný počet symboly v pořadí výčtu.|  
+|[IDiaEnumSymbols::Skip](../../debugger/debug-interface-access/idiaenumsymbols-skip.md)|Přeskočí zadaný počet symboly v posloupnosti výčtu.|  
+|[IDiaEnumSymbols::Reset](../../debugger/debug-interface-access/idiaenumsymbols-reset.md)|Návrat na začátek v sekvenci výčtu.|  
+|[IDiaEnumSymbols::Clone](../../debugger/debug-interface-access/idiaenumsymbols-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
   
 ## <a name="remarks"></a>Poznámky  
  Toto rozhraní poskytuje symboly seskupené podle konkrétní typ symbolu, například `SymTagUDT` (uživatelem definované typy) nebo `SymTagBaseClass`. Chcete-li pracovat s symboly seskupené podle adresy, použijte [idiaenumsymbolsbyaddr –](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) rozhraní.  
@@ -48,11 +49,11 @@ IDiaEnumSymbols : IUnknown
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  Získejte toto rozhraní při volání těchto metod:  
   
--   [Idiasession::findchildren –](../../debugger/debug-interface-access/idiasession-findchildren.md)  
+-   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
--   [Idiasymbol::findchildren –](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
+-   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
--   [Idiasourcefile::get_compilands –](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
+-   [IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)  
   
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje, jak získat `IDiaEnumSymbols` rozhraní a pak používat tento výčet do seznamu uživatelem definované typy (UDT).  
@@ -97,4 +98,4 @@ void ShowUDTs(IDiaSymbol *pGlobals)
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::findchildren –](../../debugger/debug-interface-access/idiasession-findchildren.md)   
  [Idiasourcefile::get_compilands –](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)   
- [Idiasymbol::findchildren –](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
+ [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

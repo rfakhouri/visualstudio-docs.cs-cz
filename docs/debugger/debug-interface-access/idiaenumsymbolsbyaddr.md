@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4efdd5297b1a4b995ba7d3e45edc9b2c982f6ecd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c76c61f79b0a76d923f92084a1e1ccdca82b60c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
 Vytvoří výčet podle adresy různé symboly obsažené v datovém zdroji.  
@@ -34,12 +35,12 @@ IDiaEnumSymbolsByAddr : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiaenumsymbolsbyaddr::symbolbyaddr –](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Umisťuje enumerátor provedením vyhledávání podle části a posun.|  
-|[Idiaenumsymbolsbyaddr::symbolbyrva –](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Umisťuje enumerátor provedením vyhledávání podle relativní virtuální adresy (RVA).|  
-|[Idiaenumsymbolsbyaddr::symbolbyva –](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Umisťuje enumerátor provedením vyhledávání pomocí virtuální adresy (VA).|  
-|[Idiaenumsymbolsbyaddr::Next –](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Načte další symboly v pořadí podle adresy. Aktualizuje pozice enumerátor tak počet načtených elementů.|  
-|[Idiaenumsymbolsbyaddr::prev –](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Načte předchozí symboly v pořadí podle adresy. Aktualizuje pozice enumerátor tak počet načtených elementů.|  
-|[Idiaenumsymbolsbyaddr::clone –](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Vytvoří kopii objektu.|  
+|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Umisťuje enumerátor provedením vyhledávání podle části a posun.|  
+|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Umisťuje enumerátor provedením vyhledávání podle relativní virtuální adresy (RVA).|  
+|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Umisťuje enumerátor provedením vyhledávání pomocí virtuální adresy (VA).|  
+|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Načte další symboly v pořadí podle adresy. Aktualizuje pozice enumerátor tak počet načtených elementů.|  
+|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Načte předchozí symboly v pořadí podle adresy. Aktualizuje pozice enumerátor tak počet načtených elementů.|  
+|[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Vytvoří kopii objektu.|  
   
 ## <a name="remarks"></a>Poznámky  
  Toto rozhraní poskytuje symboly seskupené podle adres. Pro práci s symboly seskupená podle typu, například `SymTagUDT` (uživatelem definovaný typ) nebo `SymTagBaseClass`, použijte [idiaenumsymbols –](../../debugger/debug-interface-access/idiaenumsymbols.md) rozhraní.  
@@ -104,4 +105,4 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::getsymbolsbyaddr –](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)   
- [Idiaenumsymbols –](../../debugger/debug-interface-access/idiaenumsymbols.md)
+ [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

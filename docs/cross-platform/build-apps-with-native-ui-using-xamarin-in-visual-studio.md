@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 92bd6ea136c30c02e32045692d311afe93b86296
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: c135468e380bd65383f61aa69b906352a3febe47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Vývoj aplikací s nativní uživatelského rozhraní pomocí Xamarinu v sadě Visual Studio
 Jakmile provedete kroky krok [nastavení a instalaci](../cross-platform/setup-and-install.md) a [ověřte prostředí Xamarin](../cross-platform/verify-your-xamarin-environment.md), tento postup vám ukáže, jak vytvořit základní aplikaci Xamarin (zobrazené dole) s vrstvami nativní uživatelského rozhraní. Nativní uživatelského rozhraní sdíleného kódu se nachází v knihovny přenosných tříd (PCL) a jednotlivé platformy projekty obsahovat definice uživatelského rozhraní.  
@@ -251,7 +252,7 @@ Jakmile provedete kroky krok [nastavení a instalaci](../cross-platform/setup-an
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
     |**text**|**Vyhledávání podle PSČ**|  
-    |**ID**|`@+id/ZipCodeSearchLabel`|  
+    |**id**|`@+id/ZipCodeSearchLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**textColor**|`@android:color/white`|  
     |**stylu písma**|`bold`|  
@@ -283,7 +284,7 @@ Jakmile provedete kroky krok [nastavení a instalaci](../cross-platform/setup-an
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
     |**text**|**PSČ**|  
-    |**ID**|`@+id/ZipCodeLabel`|  
+    |**id**|`@+id/ZipCodeLabel`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginTop**|`5dp`|  
   
@@ -304,7 +305,7 @@ Jakmile provedete kroky krok [nastavení a instalaci](../cross-platform/setup-an
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**ID**|`@+id/zipCodeEntry`|  
+    |**id**|`@+id/zipCodeEntry`|  
     |**layout_marginLeft**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
     |**Šířka**|`165dp`|  
@@ -327,7 +328,7 @@ Jakmile provedete kroky krok [nastavení a instalaci](../cross-platform/setup-an
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**ID**|`@+id/weatherBtn`|  
+    |**id**|`@+id/weatherBtn`|  
     |**text**|**Získat informace o počasí**|  
     |**layout_marginLeft**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  

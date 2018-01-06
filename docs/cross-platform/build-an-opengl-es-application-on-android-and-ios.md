@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 80463925da89165a569b1e6317ef8b1b22c77514
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 6378826a090b05a681a4808573eefd95899b9f6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Sestavení aplikace OpenGL ES pro Android a iOS
 Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platformy možnost, můžete vytvořit řešení sady Visual Studio a projekty pro aplikace pro iOS a Android aplikace, které sdílejí společný kód. Toto téma vás provede řešení šablonu, která vytvoří aplikace pro jednoduché iOS a Android nativní aktivity aplikace. Aplikací mít C++ – kód společné používané OpenGL ES zobrazíte stejné animovaný rotační datové krychle na každé platformě. ES OpenGL (OpenGL pro Embedded Systems nebo GLES) je 2D a 3D grafické rozhraní API, která je podporována v mnoho mobilních zařízení.  

@@ -17,11 +17,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 33ce03bb04df9dc3701f6d9acff5b73e9891334f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4c07bfffff891e0dbe4ed77ada2682660c74b673
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analýza kvality aplikace pomocí nástrojů pro analýzu kódu
 ## <a name="in-this-section"></a>V tomto oddílu  
@@ -34,10 +35,10 @@ ms.lasthandoff: 10/31/2017
  [Použití sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)  
  Vybrat a vytvářet *sad pravidel* použít do projektu.  
   
- [Chyby aplikace analýzy kódu](../code-quality/code-analysis-application-errors.md)  
+ [Chyby aplikace Analýzy kódu](../code-quality/code-analysis-application-errors.md)  
  Opravte chyby v kódu analytické funkce.  
   
- [Zlepšení kvality kódu pomocí týmového projektu vrácení se změnami zásad](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)  
+ [Zvýšení kvality kódu použitím zásad vracení se změnami týmového projektu](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)  
  Pokud používáte Team Foundation verze ovládacího prvku (TFVC), můžete vytvořit zásady vrácení se změnami pro týmové projekty, které vynucují postupy, které vést k lepší kód a efektivnější vývoj skupiny. Vrácení se změnami zásad představuje pravidla, která jsou nastavené na úrovni týmového projektu a vynucuje u počítačů, developer, než se povolí kódu se změnami.  
   
 ### <a name="code-analysis-for-drivers"></a>Analýza kódu pro ovladače  

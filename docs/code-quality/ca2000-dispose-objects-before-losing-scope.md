@@ -19,11 +19,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 81c553a9ae45ed44e8c5d96f49f2063e6383e5ea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 57b499756292a62c64b44f864042ffa740a14016
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Uvolňujte objekty před ztrátou oboru
 |||  
@@ -65,9 +66,9 @@ ms.lasthandoff: 10/31/2017
  Nepotlačujte upozornění tohoto pravidla, pokud jste volali metodu na objekt, který volá metodu `Dispose`, jako například <xref:System.IO.Stream.Close%2A>, nebo pokud metoda, která vyvolala upozornění, vrátí objekt IDisposable zabalující objekt.  
   
 ## <a name="related-rules"></a>Související pravidla  
- [CA2213: Uvolnitelné pole by měl zlikvidován.](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
+ [CA2213: Uvolnitelné pole by mělo být uvolněno](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202: Neodstraňovat objekty více než jednou.](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202: Neuvolňujte objekty několikrát](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>Příklad  
  Při implementaci metody, která vrací uvolnitelný objekt, je zapotřebí použít blok try/finally bez použití bloku catch. Jedině tak zajistíte, aby byl objekt uvolněn. Pomocí bloku try/finally lze povolit vyvolání výjimek v místě selhání a zajistit, aby byl objekt uvolněn.  
@@ -166,4 +167,4 @@ End Function
 
 ## <a name="see-also"></a>Viz také  
  <xref:System.IDisposable>   
- [Dispose – vzor](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Vzor pro metodu Dispose](/dotnet/standard/design-guidelines/dispose-pattern)

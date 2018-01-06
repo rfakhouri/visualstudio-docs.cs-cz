@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
 manager: ghogen
-ms.openlocfilehash: acf69e6cddabad98a68c870ccfaeafa9b420cac7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Vývoj aplikací pro Univerzální platformu Windows (UWP)
 Univerzální platformu Windows a naše jeden jádro systému Windows můžete spustit na jakékoli zařízení s Windows 10, z telefonů pro stolní počítače stejné aplikaci. Vytvořte tyto univerzální aplikace pro Windows s Visual Studio a nástroje pro vývoj pro univerzální aplikace pro Windows.  
@@ -54,4 +55,4 @@ Pokud máte existující aplikace Windows Store 8.1, Windows Phone 8.1 aplikace 
 Po vytvoření aplikace pro Universal Windows, musíte sestavit balíček aplikaci instalovat do zařízení Windows 10 nebo odeslat na web Windows Store. V tématu [balení aplikací](/windows/uwp/packaging/index).
 
 ## <a name="see-also"></a>Viz také
-[Mobilní vývoj pro různé platformy v sadě Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  
+[Vývoj multiplatformních mobilních řešení v sadě Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  

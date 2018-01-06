@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 787b2f5c1a838bb6312fe5d08cd8328b07460243
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 203ee8af0f28f272ece784f086f7aeba7341dfc4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Pouze výčty FlagsAttribute by měly mít názvy v množném čísle
 |||  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
  Je bezpečné potlačit upozornění na pravidlo, je-li název končí v jednotném čísle aplikace word.  
   
 ## <a name="related-rules"></a>Související pravidla  
- [CA1714: Výčty příznaků by měly mít názvy v množném čísle](../code-quality/ca1714-flags-enums-should-have-plural-names.md)  
+ [CA1714: Výčty příznaků by neměly mít názvy v množném čísle](../code-quality/ca1714-flags-enums-should-have-plural-names.md)  
   
  [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
   

@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3511778536bb9664726fc9a61b4773c209a0fd46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6d34a92c1e71df0c355a9c8a3b5290146dce7240
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Nevyvolávejte výjimky v neočekávaných umístěních
 |||  
@@ -133,7 +134,7 @@ ms.lasthandoff: 10/31/2017
  Je bezpečné potlačit upozornění na toto pravidlo, je-li deklarace výjimka místo vyvolaná výjimka způsobila porušení zásady.  
   
 ## <a name="related-rules"></a>Související pravidla  
- [CA2219: Není vyvolání výjimky v klauzulích výjimky](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)  
+ [CA2219: Nevyvolávejte výjimky v klauzulích výjimky](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Upozornění ohledně návrhu](../code-quality/design-warnings.md)

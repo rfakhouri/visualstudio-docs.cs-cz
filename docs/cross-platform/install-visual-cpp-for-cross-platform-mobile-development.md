@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b2d86a6025e2ec9c2ba92870939248cf2dffb5b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: d677c74d44f1ddc0b250d6763cef4738cd642832
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalace Visual C++ pro vývoj mobilních pro různé platformy
 [Visual C++ pro vývoj mobilních řešení pro různé platformy](http://go.microsoft.com/fwlink/p/?LinkId=536383) je instalovatelných komponent sady Visual Studio 2015. Zahrnuje šablony sady Visual Studio napříč platformami a nainstaluje nástroje napříč platformami a sady SDK začít rychle, aniž by museli najít, stahování a nakonfigurovat sami. Tyto nástroje můžete v sadě Visual Studio snadno vytvořit, upravit, ladit a testovat projekty napříč platformami. Toto téma popisuje postup instalace nástroje a software jiných výrobců, které jsou potřebné k vývoji aplikací pro různé platformy pomocí sady Visual Studio. Přehled součásti najdete v tématu [Mobile napříč platformami Visual C++](http://go.microsoft.com/fwlink/p/?LinkId=536387)  

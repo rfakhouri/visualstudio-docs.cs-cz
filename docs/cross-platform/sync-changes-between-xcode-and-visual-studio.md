@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c2a665a397e89edf80f62d0150a98c1941afcd1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: 6913ffc5f2a0515b2682036b46ec8c164e9f877b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Synchronizace změn mezi XCode a Visual Studio
 Microsoft Visual C++ pro vývoj mobilních řešení pro součást obsahuje vzdálené funkce pro synchronizaci práci mezi vaším Počítačem a vaše Mac. Pokud vaše prostředí Visual Studio a Mac počítače jsou spárovat, jsou k dispozici pro iOS aplikace projekty v sadě Visual Studio, který vám pomůže, otevřete projekt v XCode, nové možnosti přesunutí kódu mezi XCode a Visual Studio a vyčistit dočasný adresář projektu XCode.  

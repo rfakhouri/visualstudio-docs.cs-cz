@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 84cf14fc28a3de1d6ff5bff9e40216953d5d1461
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 141adcf6e21c7e0c8d737411988e73fbfbece805
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Identifikátory by neměly mít nesprávnou předponu
 |||  
@@ -49,4 +50,4 @@ ms.lasthandoff: 10/31/2017
  Nepotlačujte upozornění na toto pravidlo.  
   
 ## <a name="related-rules"></a>Související pravidla  
- [CA1715: Identifikátory by měly mít správnou předponou.](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+ [CA1715: Identifikátory by měly mít správnou předponu](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: a6794fb327e298aa8fa7ea313ff12e1b3ab99fb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (Návrhář relací objektů)
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporuje jedno tabulková dědičnost obvykle je implementované v relačním systémech. Tento názorný postup jejich rozšířením obecné kroky uvedené v [postupy: Konfigurace dědičnosti pomocí Návrhář relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tématu a poskytuje některé reálná data za účelem ukázky použití dědičnosti v [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
@@ -54,11 +55,11 @@ ms.lasthandoff: 10/31/2017
   
     |Název sloupce|Datový typ|Povolit hodnoty Null|  
     |-----------------|---------------|-----------------|  
-    |**ID**|**celá čísla**|**False**|  
-    |**Typ**|**celá čísla**|**Hodnota TRUE**|  
+    |**ID**|**int**|**False**|  
+    |**Typ**|**int**|**Hodnota TRUE**|  
     |**FirstName**|**nvarchar(200)**|**False**|  
     |**Příjmení**|**nvarchar(200)**|**False**|  
-    |**Správce**|**celá čísla**|**Hodnota TRUE**|  
+    |**Správce**|**int**|**Hodnota TRUE**|  
   
 3.  Sloupec ID nastavte jako primární klíč.  
   
@@ -193,4 +194,4 @@ ms.lasthandoff: 10/31/2017
  [Návod: Vytváření třídy LINQ to SQL (Návrhář O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [Postupy: přiřazení uložené procedury k provedení aktualizací, vložení a odstranění (Návrhář relací objektů)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
  [Technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [Postupy: generování objektový Model v jazyce Visual Basic nebo C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+ [Postupy: Generování objektového modelu v jazyce Visual Basic nebo C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

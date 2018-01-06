@@ -24,11 +24,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95261dd96b6fdd7350254c74ae895965a3a8eeed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 56cfc8dfdcb3c61b5f1eb1b0f14f3ad1af5fb89e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Dialogové okno Vizualizér DataSetu
 Vizualizér datasetu umožňuje zobrazit obsah datovou sadu, DataTable, DataView nebo DataViewManager objektu. Kliknutím na ikonu lupy, který se zobrazí vedle hodnotu pro jeden z těchto objektů v okně proměnné ladicí program nebo v datového tipu dostanete tento vizualizér.  

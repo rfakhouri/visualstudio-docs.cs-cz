@@ -77,11 +77,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 947da9ccdbf67a71edfaa122de8861912a9e9596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc7b945a8c53d290f573eac4565f2240ec7a2d7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debug-heap-details"></a>Podrobnosti haldy ladění CRT
 Toto téma poskytuje podrobný pohled haldy ladění CRT.  
@@ -305,11 +306,11 @@ typedef struct _CrtMemState
   
 |Funkce|Popis|  
 |--------------|-----------------|  
-|[_Crtmemcheckpoint –](/cpp/c-runtime-library/reference/crtmemcheckpoint)|Uloží snímek haldy v **_crtmemstate –** struktura poskytl aplikace.|  
-|[_Crtmemdifference –](/cpp/c-runtime-library/reference/crtmemdifference)|Porovná dva struktury stavu paměti, uloží rozdíl mezi nimi ve struktuře třetí stav a vrátí hodnotu TRUE, pokud se dva stavy liší.|  
-|[_Crtmemdumpstatistics –](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|Výpisy paměti danou **_crtmemstate –** struktura. Struktura může obsahovat snímek stavu haldy ladění v daném okamžiku nebo rozdíl mezi dvěma snímky.|  
-|[_Crtmemdumpallobjectssince –](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Vypíše informace o všech objektech přidělené od doby pořízení snímku dané, haldy nebo od začátku spuštění. Pokaždé, když ho výpisy paměti **_client_block –** bloku, zavolá funkce háku poskytl aplikace, pokud jeden byl nainstalován pomocí **_crtsetdumpclient –**.|  
-|[_Crtdumpmemoryleaks –](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Určuje, zda všechny paměti nevracení došlo k od spuštění tohoto programu a pokud ano, vypíše všechny přidělené objekty. Pokaždé, když **_crtdumpmemoryleaks –** výpisy paměti **_client_block –** bloku, zavolá funkce háku poskytl aplikace, pokud jeden byl nainstalován pomocí **_crtsetdumpclient –**.|  
+|[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|Uloží snímek haldy v **_crtmemstate –** struktura poskytl aplikace.|  
+|[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|Porovná dva struktury stavu paměti, uloží rozdíl mezi nimi ve struktuře třetí stav a vrátí hodnotu TRUE, pokud se dva stavy liší.|  
+|[_CrtMemDumpStatistics](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|Výpisy paměti danou **_crtmemstate –** struktura. Struktura může obsahovat snímek stavu haldy ladění v daném okamžiku nebo rozdíl mezi dvěma snímky.|  
+|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|Vypíše informace o všech objektech přidělené od doby pořízení snímku dané, haldy nebo od začátku spuštění. Pokaždé, když ho výpisy paměti **_client_block –** bloku, zavolá funkce háku poskytl aplikace, pokud jeden byl nainstalován pomocí **_crtsetdumpclient –**.|  
+|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|Určuje, zda všechny paměti nevracení došlo k od spuštění tohoto programu a pokud ano, vypíše všechny přidělené objekty. Pokaždé, když **_crtdumpmemoryleaks –** výpisy paměti **_client_block –** bloku, zavolá funkce háku poskytl aplikace, pokud jeden byl nainstalován pomocí **_crtsetdumpclient –**.|  
   
  ![Zpět na začátek](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [obsah](#BKMK_Contents)  
   
