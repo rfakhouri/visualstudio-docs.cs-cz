@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 8a611bd18cb06b712f671d370bfc26d4dc8cf4f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 81c6ab1f043074b4da601dbfe2d3dc52243b00e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Umístění a velikost obrazce omezení BoundsRules
 A *hranice pravidlo* je třída, která definuje omezení na velikost a umístění obrazce. Poskytuje metodu, která je volána opakovaně, když uživatel je přetáhnete obrazce nebo rozích nebo stranách obrazce.  
@@ -67,4 +68,4 @@ public class BarBoundsRule: BoundsRules
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>   
- [Neodpovídá na požadavky a šíření změny](../modeling/responding-to-and-propagating-changes.md)
+ [Reagování na změny a šíření změn](../modeling/responding-to-and-propagating-changes.md)

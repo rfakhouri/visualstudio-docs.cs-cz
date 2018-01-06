@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e044e3d89f7cbaae28ff0fd3cefe1c6fe4583c65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
 Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normálním uživatelským přístupem, kdykoli je to možné.  
@@ -33,17 +34,17 @@ Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normáln
 
 |Oblast|Úloha|Další informace|  
 |----------|----------|--------------------------|  
-|Instalace|Nainstalujte Visual Studio.|[Instalaci sady Visual Studio](../install/install-visual-studio.md)|  
-||Instalace, aktualizace nebo odebrání obsahu místní nápovědy|[Instalace a Správa místního obsahu](../ide/install-and-manage-local-content.md)|  
+|Instalace|Nainstalujte Visual Studio.|[Instalace sady Visual Studio](../install/install-visual-studio.md)|  
+||Instalace, aktualizace nebo odebrání obsahu místní nápovědy|[Instalace a správa místního obsahu](../ide/install-and-manage-local-content.md)|  
 |Typy aplikací|Vývoj řešení pro službu SharePoint.|[Požadavky na vývoj řešení služby SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
 ||Získání licence pro vývojáře [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Získat licenci vývojáře](http://go.microsoft.com/fwlink/?LinkID=241313)|  
-|Sada nástrojů|Přidání klasického modelu COM ovládacích prvků na **sada nástrojů**.|[Pomocí sady nástrojů](../ide/using-the-toolbox.md)|  
+|Sada nástrojů|Přidání klasického modelu COM ovládacích prvků na **sada nástrojů**.|[Používání sady nástrojů](../ide/using-the-toolbox.md)|  
 |Doplňky|Instalace a používání doplňků, které byly vytvořeny pomocí klasického modelu COM v rozhraní IDE|[Vytváření doplňků a průvodců](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
-|Sestavování|Použití událostí po sestavení, které registrují komponentu|[Seznámení s kroky vlastního sestavení a událostí sestavení](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
-||Zahrnutí registračního kroku do sestavování projektů v jazyce C++|[Seznámení s kroky vlastního sestavení a událostí sestavení](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
+|Sestavování|Použití událostí po sestavení, které registrují komponentu|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
+||Zahrnutí registračního kroku do sestavování projektů v jazyce C++|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
 |Ladění|Ladění aplikací spouštěných se zvýšenými oprávněními|[Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)|  
 ||Ladění aplikací, které běží pod jiným uživatelským účtem, jako jsou weby ASP.NET|[Ladění aplikací ASP.NET a AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|  
-||Ladění v zóně pro aplikace prohlížeče XAML (XBAP)|[WPF hostitele (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|  
+||Ladění v zóně pro aplikace prohlížeče XAML (XBAP)|[Hostitel WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|  
 ||Pomocí emulátoru k ladění projekty cloudových služeb pro Microsoft Azure.|[Ladění cloudové služby v sadě Visual Studio](http://go.microsoft.com/fwlink/?LinkId=266725)|  
 ||Konfigurace brány firewall pro vzdálené ladění|[Vzdálené ladění](../debugger/remote-debugging.md)|  
 |Nástroje pro měření výkonu|Profilace aplikace|[Průvodce začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md)|  
@@ -70,4 +71,4 @@ Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normáln
 
 ## <a name="see-also"></a>Viz také  
  [Portování, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [Instalaci sady Visual Studio](../install/install-visual-studio.md)
+ [Instalace sady Visual Studio](../install/install-visual-studio.md)

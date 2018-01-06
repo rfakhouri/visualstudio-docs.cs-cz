@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6628ad8decf04fdb4a031c62c2dc3c4af5b179d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e419adef776c3973ae3d470e97c88483f0d7d0ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Postupy: Rozbalení a sbalení stromů nástroje Spy++
 Můžete rozbalit nebo sbalit zobrazení Windows, procesy a vlákna pomocí dvou metod: Kliknutím na ikony v okně nebo pomocí **stromu** nabídky. + A - ikony ve stromové struktuře fungovat stejně jako v okně projektu Visual C++.  
@@ -43,4 +44,4 @@ Můžete rozbalit nebo sbalit zobrazení Windows, procesy a vlákna pomocí dvou
 ## <a name="see-also"></a>Viz také  
  [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   
  [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)

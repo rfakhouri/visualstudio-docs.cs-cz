@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4b437dad35850a20696702b84d8ea98ead8a1e9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9d09c452fb6d03f7f5072e34813c3757455f96a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Starší verze rozhraní v editoru
 Editoru Visual Studio můžete přistupovat ze starší verze rozhraní. Visual Studio SDK zahrnuje adaptérů, označované jako *překrytí*, který povolit tato rozhraní pro interakci s novou editoru. Nicméně doporučujeme aktualizovat starší verze kódu použití editoru nové rozhraní API. Váš kód budou líp fungovat a můžete používat nové technologie, jako je Windows Presentation Foundation (WPF) a Managed Extensibility Framework (MEF).  
@@ -44,6 +45,6 @@ Editoru Visual Studio můžete přistupovat ze starší verze rozhraní. Visual 
 |[Správa zpět a znovu pomocí starší verze rozhraní API](../extensibility/managing-undo-and-redo-by-using-the-legacy-api.md)|Vysvětluje, jak spravovat vrácení zpět a znovu proveďte pomocí starší verze rozhraní API.|  
 |[Postupy: implementace najít a nahradit mechanismus](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Vysvětluje, jak spravovat najít a nahradit pomocí starší verze rozhraní API.|  
 |[Postupy: potlačení upozornění o změně souboru](../extensibility/how-to-suppress-file-change-notifications.md)|Vysvětluje, jak potlačit oznámení o změně souborů pomocí starší verze rozhraní API.|  
-|[Vytváření vlastních editory a návrhářů](../extensibility/creating-custom-editors-and-designers.md)|Vysvětluje, jak vytvořit vlastní editory a návrháři.|  
-|[Vývoj služby jazyk starší verze](../extensibility/internals/developing-a-legacy-language-service.md)|Obsahuje odkazy na dokumenty o funkcích, které poskytují schopnosti přizpůsobení k [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor přidáním podpory služba jazyka.|  
+|[Vytváření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md)|Vysvětluje, jak vytvořit vlastní editory a návrháři.|  
+|[Vývoj služby starší verze jazyka](../extensibility/internals/developing-a-legacy-language-service.md)|Obsahuje odkazy na dokumenty o funkcích, které poskytují schopnosti přizpůsobení k [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] základní editor přidáním podpory služba jazyka.|  
 |[Pomocí písma a barev](../extensibility/using-fonts-and-colors.md)|Vysvětluje, jak pomocí starší verze rozhraní písma a barev.|

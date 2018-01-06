@@ -17,11 +17,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c54a6f5b39136a56753facce4c4f1e5a656fbb36
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kódu v jazyce Visual C#
 Fragmenty kódu jsou předem vytvořené fragmenty kódu, které lze rychle vložit do vašeho kódu. Například `for` fragment kódu vytvoří prázdnou `for` smyčky. Některé fragmenty kódu jsou obklopit fragmenty kódu, které vám umožní vybrat řádky kódu a potom vyberte fragment kódu, který zahrnuje vybrané řádky kódu. Například když vyberete řádků kódu a poté znovu aktivovat `for` fragment kódu, vytvoří `for` smyčky pomocí tyto řádky kódu uvnitř bloku smyčky. Fragmenty kódu můžete nastavit program psaní kódu rychlejší, jednodušší a spolehlivější.  

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aaa76694a60aad5c8bfcc2dd6d26feac03ab6e1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd9959d6883eec10f048733d3119206cc5dea3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Výběr položek sady nástrojů, součásti WPF
 Na této kartě z **výběr položek sady nástrojů** dialogové okno zobrazí seznam dostupných kontrolních mechanismů Windows Presentation Foundation (WPF) v místním počítači. Chcete-li zobrazit tento seznam, vyberte **výběr položek sady nástrojů** z **nástroje** nabídky k zobrazení **výběr položek sady nástrojů** dialogové okno a potom vyberte jeho **grafického subsystému WPF Součásti** kartě. Chcete-li seřadit uvedených součástí, vyberte záhlaví libovolného sloupce.  
@@ -74,5 +75,5 @@ Kromě toho, pokud je pro vlastní ovládací prvek a tato metadata návrhu meta
 Vaše ovládací prvky přímo v jazyce XAML zobrazení můžete odkazovat pomocí mapování oboru názvů a sestavení pro ovládací prvek.  
 
 ## <a name="see-also"></a>Viz také  
-[Sada nástrojů](../../ide/reference/toolbox.md)  
-[Začínáme s WPF](../../designers/getting-started-with-wpf.md)
+[Panel nástrojů](../../ide/reference/toolbox.md)  
+[Začínáme s WPF](../../designers/getting-started-with-wpf.md)

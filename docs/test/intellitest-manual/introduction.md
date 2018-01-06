@@ -12,11 +12,12 @@ ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 454cd11d9e196e7de9775448640a8ee22c434d4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8c98633cf54d2e6d969ae4b7aede394c851784ba
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Přehled Microsoft IntelliTest
 
@@ -55,7 +56,7 @@ IntelliTest vyhledá vstupy relevantní pro otestované programu, což znamená,
 
 Následující příklad vytvoří dvě omezení na parametr s názvem **hodnota** tak, aby IntelliTest vygeneruje požadovaný řetězec.
 
-```
+```csharp
 using System;
 using Microsoft.Pex.Framework; 
 using Microsoft.VisualStudio.TestTools.UnitTesting; 
@@ -83,10 +84,9 @@ Jakmile zkompilovat a provést, generuje IntelliTest sadu testů například ná
 7. "Hello\0World!"
 8. "Hello, World!"
 
-Přejděte [sem](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest#Anchor_0) pochopit uložení generovaného testy.
-Vygenerovaný testovacího kódu by měla obsahovat testu například následující:
+Čtení [generování testů částí s Intellitest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) pochopit uložení generovaného testy. Vygenerovaný testovacího kódu by měla obsahovat testu například následující:
 
-```
+```csharp
 [TestMethod]
 [PexGeneratedBy(typeof(global::HelloWorldTest))]
 [PexRaisedException(typeof(Exception))]
@@ -98,13 +98,12 @@ public void HelloWorldThrowsException167()
 
 Je to snadné!
 
-<a name="limitations"></a>
 ## <a name="limitations"></a>Omezení
 
 Tato část popisuje omezení IntelliTest:
 
 * [Nondeterminism](#nondeterminism)
-* [Souběžnosti](#concurrency)
+* [Souběžnost](#concurrency)
 * [Nativní kód .NET](#native-code)
 * [Platforma](#platform)
 * [Jazyk](#language)
@@ -164,7 +163,7 @@ Protože IntelliTest zachytí a "znovu vyvolá" výjimky v každou instrumentova
 ## <a name="further-reading"></a>Další čtení
 
 * [Úvodní příspěvku na blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2014/11/19/introducing-smart-unit-tests/) na webu MSDN.
-* [Generování testů částí kódu s IntelliTest](https://docs.microsoft.com/en-gb/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest)
+* [Generování testů částí pro kód pomocí funkce IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
 
 ## <a name="got-feedback"></a>Zpětné vazby máte?
 

@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 016e609acb7ad837580b4cabb6055169ac7357c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec87a48e61ee69e01032c3b702ae21d6944eee92
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Postupy: migrace rozšiřitelnost projektů na Visual Studio 2015
 Zde je postup upgradu rozšíření.  
@@ -45,7 +46,7 @@ Zde je postup upgradu rozšíření.
   
 2.  Odebrat odkaz na sestavení VS SDK z projektu jejich výběrem, klikněte pravým tlačítkem a **odebrat**.  
   
-3.  Přidejte verze NuGet referenční sestavení VS SDK.  Stále v **odkazy na Průzkumníka řešení** uzlu, otevřete **spravovat balíčky NuGet...**  dialogové okno.  Pokud chcete získat další informace o tomto dialogovém okně, přečtěte si téma [uživatelského rozhraní Správce balíčků](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI). Referenční sestavení VS SDK jsou publikovány na [nuget.org](http://www.nuget.org) podle [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
+3.  Přidejte verze NuGet referenční sestavení VS SDK.  Stále v **odkazy na Průzkumníka řešení** uzlu, otevřete **spravovat balíčky NuGet...**  dialogové okno.  Pokud chcete získat další informace o tomto dialogovém okně, přečtěte si téma [uživatelského rozhraní Správce balíčků](/NuGet/Tools/Package-Manager-UI). Referenční sestavení VS SDK jsou publikovány na [nuget.org](http://www.nuget.org) podle [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility).  
   
 4.  Pomocí **nuget.org** jako vaše **zdroj balíčku**, vyhledejte název balíčku NuGet, který by odpovídal požadované referenční sestavení (například: Microsoft.VisualStudio.Shell.14.0) a nainstalujte ho v vaší projekt.  NuGet může přidat více referenční sestavení splníte závislosti počáteční sestavení.  
   

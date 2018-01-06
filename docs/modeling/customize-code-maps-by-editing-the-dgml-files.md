@@ -24,11 +24,12 @@ caps.latest.revision: "93"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f270966c5c91dab1a492a775faca3da220a98d6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e4a536f99c81c19ecd22554896463a84715c7b35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Markup Language (.dgml) mapy. Například můžete upravit prvky k určení vlastních stylů, kategorií a vlastností elementy kódu a odkazy, nebo odkaz dokumenty nebo přiřadit adresy URL elementy kódu nebo odkazy. Další informace o DGML elementy najdete v tématu [odkaz směrované grafů Markup Language (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md).  
@@ -645,4 +646,4 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
  [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)   
  [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)   
- [Řízené reference jazyka značení grafů (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md)
+ [Referenční dokumentace jazyka přímého značení grafů (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md)

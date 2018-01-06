@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db041f839e9b7e8ad3268175829ecfee9380e736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 627e5abad07ef0566d23f010ea120df33173fb0e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem Element
 `VisibilityItem` Element určuje, zda se statický příkazů a panely nástrojů. Každá položka identifikuje příkaz nebo nabídky a také kontextu přidružený příkaz uživatelského rozhraní. Sada Visual Studio zjistí příkazy, nabídek a panelů nástrojů a jejich viditelnost bez načítání VSPackages, který je definovat. Rozhraní IDE používá <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> metoda k určení, zda kontext uživatelského rozhraní příkazů je aktivní.  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[VisibilityConstraints Element](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints` Element určuje, zda se statických skupin příkazů a panely nástrojů.|  
+|[VisibilityConstraints – element](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints` Element určuje, zda se statických skupin příkazů a panely nástrojů.|  
   
 ## <a name="remarks"></a>Poznámky  
  Standardní rozhraní Visual Studia kontexty jsou definovány v *cesta instalace Visual Studio SDK*\VisualStudioIntegration\Common\Inc\vsshlids.h souboru stejně jako v <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> a <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> třídy. Více kompletní sadu kontexty uživatelského rozhraní je definována v <xref:Microsoft.VisualStudio.VSConstants> třídy.  
@@ -79,4 +80,4 @@ ms.lasthandoff: 10/31/2017
  <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids>   
  <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>   
  [VisibilityConstraints Element](../extensibility/visibilityconstraints-element.md)   
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

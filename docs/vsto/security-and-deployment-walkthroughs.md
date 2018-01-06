@@ -20,20 +20,21 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6927a639bd3bb41b0498b1eb939d07cddcde0a79
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1d9008dc88640adee8db3f02b43cad314a47b32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-and-deployment-walkthroughs"></a>Návody pro zabezpečení a nasazení
   Následující témata ukazují, jak můžete nastavit zásadu zabezpečení povolit spuštění řešení, a nasazení řešení Office.  
   
 ## <a name="security-topics"></a>Témata týkající se zabezpečení  
- [Postupy: podepisování řešení pro systém Office](../vsto/how-to-sign-office-solutions.md)  
+ [Postupy: Podepisování řešení pro systém Office](../vsto/how-to-sign-office-solutions.md)  
  Poskytuje informace o tom, jak můžete udělit vztah důvěryhodnosti k řešení pomocí certifikátu.  
   
- [Postupy: konfigurace zabezpečení se seznamem povolených](../vsto/how-to-configure-inclusion-list-security.md)  
+ [Postupy: Konfigurace zabezpečení se seznamem povolených položek](../vsto/how-to-configure-inclusion-list-security.md)  
  Vysvětluje, jak nakonfigurovat [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] důvěryhodný dotaz na ovládací prvek zda koncoví uživatelé mají možnost instalace řešení pro systém Office.  
   
 ## <a name="deployment-topics"></a>Témata týkající se nasazení  
@@ -59,22 +60,22 @@ ms.lasthandoff: 10/31/2017
  Poskytuje informace o tom, jak změnit cestu instalace řešení Office.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Návody pro práci s aplikací Word](../vsto/walkthroughs-using-word.md)  
+ [Návody pro práci s aplikací Word](../vsto/walkthroughs-using-word.md)  
  Obsahuje podrobné pokyny, které poskytují úvod do řešení pro systém Office v sadě Visual Studio a pomoci pro ilustraci, jak můžete vytvořit aplikací využívajících aplikace Word.  
   
- [Návody pro práci s aplikací Excel](../vsto/walkthroughs-using-excel.md)  
+ [Návody pro práci s aplikací Excel](../vsto/walkthroughs-using-excel.md)  
  Obsahuje podrobné pokyny, které poskytují úvod do řešení pro systém Office v sadě Visual Studio a pomoci pro ilustraci, jak můžete vytvořit aplikací využívajících aplikace Excel.  
   
- [Data v návody řešení Office](../vsto/data-in-office-solutions-walkthroughs.md)  
+ [Návody pro data v řešeních pro systém Office](../vsto/data-in-office-solutions-walkthroughs.md)  
  Obsahuje podrobné pokyny, které ukazují, jak pracovat s daty v řešení.  
   
  [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Obsahuje odkazy na informace o instalaci, šablony projektů, primární spolupracující sestavení Office a co je nového v vývoj pro Office.  
   
- [Běžné úlohy při programování pro Office](../vsto/common-tasks-in-office-programming.md)  
+ [Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)  
  Uvádí nejčastější dotazy k programování s řešení pro systém Office v sadě Visual Studio a nabízí odkazy na témata, která pomůžou řešit běžné problémy.  
   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
  Obsahuje odkazy na informace o vytváření řešení pro Word a Excel a roli sestavení ve vašem řešení.  
   
 ## <a name="see-also"></a>Viz také  

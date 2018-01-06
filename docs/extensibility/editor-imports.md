@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 81e0a131ef35202581ffb78a75a6b48239a7d81f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-imports"></a>Editor importy
 Počet služeb editor, objekty Factory a zprostředkovatelé, které poskytují rozšíření s různými druhy přístup do editoru jádra, můžete importovat. Například můžete importovat <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> poskytnout vám <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pro daný typ obsahu. (Tento Navigátor umožňuje provádět různé druhy hledání na textovou vyrovnávací paměť).  
@@ -44,19 +45,19 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Další příklady použití importy naleznete v následujících seznamech:  
   
- [Návod: Vytvoření glyf rozpětí](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Návod: Vytvoření okrajového piktogramu](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
  [Návod: Přizpůsobení zobrazení textu](../extensibility/walkthrough-customizing-the-text-view.md)  
   
  [Návod: Zvýraznění textu](../extensibility/walkthrough-highlighting-text.md)  
   
- [Návod: Zobrazení QuickInfo popisy tlačítek](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Návod: Zobrazení popisů tlačítek s rychlými informacemi](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Návod: Zobrazení nápovědy podpis](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Návod: Zobrazení vyhrazené nápovědy](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [Návod: Zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md)  
   
- [Návod: Zobrazení žárovky návrhy](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
+ [Návod: Zobrazení návrhů v podobě žárovky](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)  
   
 ## <a name="importing-the-service-provider"></a>Import poskytovatele služeb  
  Můžete také importovat <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> (nalezen v sestavení Microsoft.VisualStudio.Shell.Immutable.10.0) stejným způsobem, chcete-li získat přístup ke službám Visual Studio:  
@@ -123,4 +124,4 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>|<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSession>.|  
   
 ## <a name="see-also"></a>Viz také  
- [Služba jazyka a body rozšíření editoru](../extensibility/language-service-and-editor-extension-points.md)
+ [Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)

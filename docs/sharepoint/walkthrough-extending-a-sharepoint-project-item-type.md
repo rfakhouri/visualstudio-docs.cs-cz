@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8afe8ed1d59f8daec34a99b1479079a69a1bc740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c885fe006f1a6a65f97b1f11de61e0639dd1559a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Návod: Rozšiřování typu položky projektu SharePoint
   Můžete použít **modelu připojení obchodních dat** položka projektu pro vytvoření modelu pro službu Business Data Connectivity (BDC) ve službě SharePoint. Ve výchozím nastavení když vytvoříte model pomocí této položky projektu data v modelu se uživatelům nezobrazí. Musíte taky vytvořit externího seznamu ve službě SharePoint umožňuje uživatelům zobrazit data.  

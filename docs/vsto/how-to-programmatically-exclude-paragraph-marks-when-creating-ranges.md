@@ -20,11 +20,12 @@ caps.latest.revision: "50"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4012211a39e1286becadd503a20d402f9ac7c7a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5f726a30a7ae50e35726b67336ec41f50be60b24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Postupy: Vyloučení značek odstavů při vytváření oblastí prostřednictvím kódu programu
   Vždy, když vytvoříte <xref:Microsoft.Office.Interop.Word.Range> objekt v závislosti na odstavce, všechny netisknutelné znaky, jako je například značky odstavce, jsou zahrnuty v rozsahu. Chcete vložit text ze zdroje odstavce do cílového odstavce. Pokud nechcete rozdělení cílového odstavce na samostatné odstavce, pak je nutné nejprve odstranit značku odstavce z odstavce zdroje. Navíc vzhledem k tomu, že informace o formátování odstavce je uložena v rámci značku odstavce, nemusí chcete být při vložení rozsahu do existujícího odstavce.  
@@ -125,6 +126,6 @@ ms.lasthandoff: 10/31/2017
  [Postupy: programové vkládání textu do dokumentů aplikace Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Postupy: dokumentů prostřednictvím kódu programu. resetování oblastí v aplikaci Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
  [Postupy: programové definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -20,11 +20,12 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30ac9c68104423c559ad3bfa8712426b67a4c734
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 9cf9517775b5729507252a259485ad8d6cc276ff
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET Ladění: Systémové požadavky
 Toto téma popisuje požadavky na software a zabezpečení pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] ladění scénáře:  
@@ -43,7 +44,7 @@ Toto téma popisuje požadavky na software a zabezpečení pro [!INCLUDE[vstecas
  Chcete-li ladit [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces (hostované ve fondu aplikací), musíte mít oprávnění k ladění tohoto procesu. Ve výchozím nastavení [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikací před jejich služby IIS 6.0 spustit jako **ASPNET** uživatele. Ve službě IIS 6.0 a IIS 7.0 **síťové služby** účet je výchozí hodnota. Pokud je pracovní proces spuštěn jako **ASPNET**, nebo jako **síťové služby**, musí mít oprávnění správce k ladění ho.
 
  > [!IMPORTANT]
- > Od verze Windows Server 2008 R2, doporučujeme použít [ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities) jako identity pro každý fond aplikací.
+ > Od verze Windows Server 2008 R2, doporučujeme použít [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) jako identity pro každý fond aplikací.
   
  Název [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pracovní proces se liší podle ladění scénář a verze služby IIS. Další informace najdete v tématu [postupy: hledání názvu procesu ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

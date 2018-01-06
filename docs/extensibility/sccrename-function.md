@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2936c2ea4425ad6eaccc2d23853f4174e1c9c2a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2fa3c891f1e963b40e34fb0f664bcf479730c20d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccrename-function"></a>SccRename – funkce
 Tato funkce přejmenuje soubor v systému správy zdrojů.  
@@ -65,4 +66,4 @@ SCCRTN SccRename(
  Tato funkce slouží k přejmenování souboru nebo ho přesunout z jednoho umístění do druhého v systému správy zdrojů. Modul plug-in správy zdroje neměli přístup k souboru na disku. Je zodpovědností rozhraní IDE Přejmenování místního souboru.  
   
 ## <a name="see-also"></a>Viz také  
- [Funkce modulu Plug-in rozhraní API ovládacího prvku zdroje](../extensibility/source-control-plug-in-api-functions.md)
+ [Funkce modulu plug-in správy zdrojového kódu v rozhraní API](../extensibility/source-control-plug-in-api-functions.md)

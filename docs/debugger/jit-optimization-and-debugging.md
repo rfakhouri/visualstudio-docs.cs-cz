@@ -20,11 +20,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acf75c0fbf6f5c3cfcf645d288c4e5e2eb2450d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2c3dcd57568bdfaac3ba0f7aff33cefca8a0ee32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimalizace a ladění JIT
 Když ladíte spravované aplikace, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] potlačí optimalizace kódu v běhu (JIT) ve výchozím nastavení. Potlačení JIT optimalizace znamená, že ladíte Neaktivní optimalizované kódu. Spuštění kódu je něco o něco pomalejší, protože není optimalizovaná, ale je mnohem důkladnější prostředí ladění. Ladění optimalizovaného kódu je těžší a doporučené pouze, pokud narazíte na chyby, dojde v optimalizovaný kód, ale nelze reprodukovat v verzi Neaktivní optimalizované.  
@@ -41,4 +42,4 @@ Když ladíte spravované aplikace, [!INCLUDE[vsprvs](../code-quality/includes/v
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
  [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)   
  [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Proces spravovaného spouštění](/dotnet/standard/managed-execution-process)
+ [Proces spravovaného spuštění](/dotnet/standard/managed-execution-process)

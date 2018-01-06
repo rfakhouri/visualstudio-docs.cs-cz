@@ -22,11 +22,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b9e9963b43e6ca2049337fdfdf76b0a1314ae32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78a4e910dbd2c6063f4bdf7b0dff3f27f79b218e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Podpůrné nástroje procházení – Symbol
 **Objekt prohlížeče**, **zobrazení tříd**, **volání prohlížeče** a **Najít výsledky Symbol** nástroje poskytují symbol procházení funkce v sadě Visual Studio. Tyto nástroje zobrazovat hierarchický strom zobrazení symbolů a vztahů mezi symboly ve stromové struktuře. Symboly může představovat obory názvů, třídy, členy třídy, objektů a další jazyk elementů obsažených v různých součástí. Součásti zahrnují projektů sady Visual Studio, externí [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] součásti a knihovny typů (.tlb). Další informace najdete v tématu [zobrazení struktury kódu](../../ide/viewing-the-structure-of-code.md).  
@@ -54,4 +55,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Viz také  
  [Postupy: registrace knihovny pomocí Správce objektu](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [Postupy: vystavení seznam symbolů poskytované knihovny ke správci objektů](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Postupy: určení symbolů v knihovně](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+ [Postupy: Identifikace symbolů v knihovně](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

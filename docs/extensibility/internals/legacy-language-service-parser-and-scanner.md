@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30453237dcd95607a4f3524f115d16bc1cf4859a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 755516fb9d341193005ad39e419e708b6d28867c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analyzátor jazyka starší verze služby a skener
 Analyzátor jsou srdcem služba jazyka. Třídy jazyka spravované Framework balíčku (MPF) vyžadují analyzátoru jazyka pro výběr informací o kódu se zobrazí. Analyzátor odděluje text do lexikální tokenů a pak identifikuje těchto tokenů podle typu a funkce.  
@@ -138,4 +139,4 @@ namespace MyNamespace
  [Implementace služby jazyk starší verze](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
  [Přehled služby starší verze jazyka](../../extensibility/internals/legacy-language-service-overview.md)   
  [Syntaxe barevné ve službě jazyk starší verze](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
- [Související závorky ve službě jazyk starší verze](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
+ [Související závorky ve službě starší verze jazyka](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b19b3956e03c23d70852d8a2297544a72d91b840
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f3927ac9aa9e85be026d2b9a2af1c0c4d956c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-configuration-for-output"></a>Konfigurace projektu pro výstup
 Všechny konfigurace dokáže zajistit podporu sadu sestavení procesy, které vytvoří výstupní položek, jako jsou soubory spustitelný soubor nebo prostředků. Tyto položky výstupní jsou soukromá pro uživatele a mohou být umístěny ve skupinách, které odkazují souvisejících typů výstupu, jako je například spustitelné soubory (.exe, .dll, .lib) a zdrojových souborů (.idl, souborů .h).  

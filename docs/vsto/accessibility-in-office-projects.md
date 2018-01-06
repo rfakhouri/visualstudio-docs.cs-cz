@@ -20,11 +20,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4636e55fa2bc20ba9ff958a897ef7898099cb5c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 01ef94199ae7ea22f72ca08be4dfb9092b03403f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-in-office-projects"></a>Usnadnění v projektech pro systém Office
   Microsoft Visual Studio a Microsoft Office zahrnout mnoho funkcí usnadnění, které umožňují vytvářet vlastní řešení, které splňují požadavky na standardní usnadnění přístupu. Společnost Microsoft publikuje pokyny pro usnadnění přístupu na webu. Podrobnosti najdete v tématu [usnadnění webu](http://go.microsoft.com/fwlink/?LinkID=37113).  
@@ -90,6 +91,6 @@ ms.lasthandoff: 10/31/2017
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
  [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
  [Usnadnění pro postižené osoby](/visualstudio/ide/reference/accessibility-for-people-with-disabilities)   
- [Funkce pro usnadnění přístupu sady Visual Studio](/visualstudio/ide/reference/accessibility-features-of-visual-studio)  
+ [Funkce sady Visual Studio pro usnadnění přístupu](/visualstudio/ide/reference/accessibility-features-of-visual-studio)  
   
   

@@ -12,11 +12,12 @@ ms.assetid: 2171CD69-FBB1-4994-9DCC-3BFFDFD26662
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 17113215615ff87ef0af611a5bc2061ca0126911
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: da80adbf7df01d18ada256f6d419cb015c34369a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="get-started-with-unit-testing"></a>Začínáme s testování částí
 
@@ -91,21 +92,21 @@ Další podrobnosti najdete v tématu [Live jednotkové testování v sadě Visu
 <a name="intellitest"></a>
 ## <a name="generate-unit-tests-with-intellitest"></a>Generování testů částí s IntelliTest
 
-Při spuštění IntelliTest snadno uvidíte které testy se nedaří a přidejte všechny nezbytné kód je opravit. Můžete vybrat, které generovaného testů uložit do testovacího projektu zajistit sada regrese. Při změně kódu se znovu spustí IntelliTest pro synchronizaci generovaného testy s vašimi změnami kódu. Další informace, jak zjistit, [generování testů částí kódu s IntelliTest](https://docs.microsoft.com/visualstudio/test/generate-unit-tests-for-your-code-with-intellitest).
+Při spuštění IntelliTest snadno uvidíte které testy se nedaří a přidejte všechny nezbytné kód je opravit. Můžete vybrat, které generovaného testů uložit do testovacího projektu zajistit sada regrese. Při změně kódu se znovu spustí IntelliTest pro synchronizaci generovaného testy s vašimi změnami kódu. Další informace, jak zjistit, [generování testů částí kódu s IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 
 ![Generování testů jednotek s IntelliTest](media/intellitest.png)
 
 <a name="unit-tests"></a>
 ## <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 
-Pomocí Průzkumníka testů spouštění testování částí v sadě Visual Studio nebo projektů testování částí třetích stran, seskupení testů do kategorií, filtrování seznamu testů a vytvořit, uložit a spustit seznamy stop testů. Můžete také ladění testy a analyzovat pokrytí test výkonu a kód. Další informace, jak zjistit, [spouštění testů jednotek pomocí Průzkumníka testů](https://docs.microsoft.com/visualstudio/test/run-unit-tests-with-test-explorer).
+Pomocí Průzkumníka testů spouštění testování částí v sadě Visual Studio nebo projektů testování částí třetích stran, seskupení testů do kategorií, filtrování seznamu testů a vytvořit, uložit a spustit seznamy stop testů. Můžete také ladění testy a analyzovat pokrytí test výkonu a kód. Další informace, jak zjistit, [spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md).
 
 ![Spouštění testů jednotek pomocí Průzkumníka testů](media/testexplorer.png)
 
 <a name="code-coverage"></a>
 ## <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Použití pokrytí kódu k určení, kolik kódu se testuje
 
-Funkci pokrytí kódu sady Visual Studio lze použít ke zjištění toho, jaký podíl kódu projektu je skutečně testován kódovanými testy, jako jsou například jednotkové testy. Pro efektivní ochranu před chybami je vhodné testovat, neboli „pokrýt“, velkou část kódu projektu. Další informace, jak zjistit, [použití pokrytí kódu k určení jak mnohem kódu se testuje](https://docs.microsoft.com/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested).
+Funkci pokrytí kódu sady Visual Studio lze použít ke zjištění toho, jaký podíl kódu projektu je skutečně testován kódovanými testy, jako jsou například jednotkové testy. Pro efektivní ochranu před chybami je vhodné testovat, neboli „pokrýt“, velkou část kódu projektu. Další informace, jak zjistit, [použití pokrytí kódu k určení jak mnohem kódu se testuje](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
 ![Použití pokrytí kódu k určení, kolik kódu se testuje](media/codecoverage.png)
 
@@ -164,7 +165,7 @@ Odpověď: Ano, použijte modul plug-in dané platformy, že Visual Studio test 
 
 ## <a name="see-also"></a>Viz také
 
-* [Vytvoření příkazu testování částí](create-unit-tests-menu.md)
+* [Vytvoření příkazu pro testování částí](create-unit-tests-menu.md)
 * [Generování testů s IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Spouštění testů pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md)
 * [Určení pokrytí kódu](using-code-coverage-to-determine-how-much-code-is-being-tested.md)

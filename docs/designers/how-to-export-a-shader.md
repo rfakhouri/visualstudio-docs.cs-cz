@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea578a020b4e60c3a2ff11af5d78570d636d822f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6b4c7cedd267ba02772db16e026803061933cf5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-shader"></a>Postupy: Exportování shaderu
 Tento dokument ukazuje, jak používat návrháře shaderu export shaderu směrované grafu shaderu jazyk (DGSL), aby ho můžete používat ve vaší aplikaci.  
@@ -53,4 +54,4 @@ Tento dokument ukazuje, jak používat návrháře shaderu export shaderu směro
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: vytvoření základní barva shaderu](../designers/how-to-create-a-basic-color-shader.md)   
- [Návrhář shaderu](../designers/shader-designer.md)
+ [Návrhář shaderů](../designers/shader-designer.md)

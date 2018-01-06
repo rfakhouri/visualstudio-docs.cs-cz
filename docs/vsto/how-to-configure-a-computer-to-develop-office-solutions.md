@@ -18,11 +18,12 @@ caps.latest.revision: "130"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3fec17bdde7f559cafa3d12833585ffa0c03ab7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 55d2f0c75925cb3bc95242c72e6734759c611d2e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Postupy: Konfigurace počítače pro vývoj řešení pro systém Office
   Chcete-li nakonfigurovat vývojovém počítači tak, aby sada Microsoft Office developer tools můžete použít v sadě Visual Studio, postupujte podle pokynů v tomto tématu. Na vývojovém počítači tyto kroky mohli provést, musí mít oprávnění správce.  
@@ -41,6 +42,6 @@ ms.lasthandoff: 10/31/2017
  [Co je nového v vývoj pro Office](http://msdn.microsoft.com/en-us/bf054af2-c896-4723-aa15-6381145b14bb)   
  [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Postupy: instalace sady Visual Studio Tools for Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
- [Postupy: instalace primární spolupracující sestavení sady Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [Postupy: Instalace primárních sestavení vzájemné spolupráce pro systém Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   

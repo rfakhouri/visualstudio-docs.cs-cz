@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e20d37d0e1162b49ca0fc92f92056b3541698454
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3e1f9bc81c0d13acd1fb9ac1a22f33262e4644f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 Toto téma popisuje strukturu souboru DslDefinition.dsl v projektu Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] řešení, který definuje *jazyka domény*. Soubor DslDefinition.dsl popisuje třídy a vztahy jazyka specifické pro doménu, společně s diagramu, tvarů, konektory, formát serializace a **sada nástrojů** jazyka specifické pro doménu a jeho Nástroje pro úpravy. V řešení jazyka domény je generována kód, který definuje tyto nástroje podle informací v souboru DslDefinition.dsl.  
@@ -549,4 +550,4 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 ## <a name="see-also"></a>Viz také  
  [Glosář nástroje jazyka domény](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md)   
- [Principy modely, třídy a vztahy](../modeling/understanding-models-classes-and-relationships.md)
+ [Porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e5009a1f28fcce344c888e742941015561e9c79
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: cplusplus
+ms.openlocfilehash: 63bd8657d62a05edb1c9772776ca1216a0eee5ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Definice Typedefs jazyka Visual C++ v návrháři tříd
 Příkazy TypeDef vytvořit jednu nebo více vrstev dereference mezi názvem a jeho zdrojovým typem. Návrhář tříd podporuje typy C++ typedef, které jsou deklarovány s klíčovým slovem `typedef`, například:  

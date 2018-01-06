@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e85ad4c4027a27b33f2f96284df80f852ffe3b85
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1463fe22d4b08933112ca1ad0cf28f38a4e102c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-routing-algorithm"></a>Příkaz směrování algoritmus
 Příkazy v sadě Visual Studio jsou zpracovávány několik různých komponent. Příkazy jsou směrovány z nejvnitřnější kontextu, která je založena na aktuálním výběrem, kontext nejkrajnější (také označované jako globální). Další informace najdete v tématu [dostupnosti](../../extensibility/internals/command-availability.md).  
@@ -46,4 +47,4 @@ Příkazy v sadě Visual Studio jsou zpracovávány několik různých komponent
 8.  Globální: Pokud příkaz nebyl byla zpracována výše uvedených kontexty, Visual Studio se pokusí směrovat do VSPackage, který vlastní příkaz, který implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní. Pokud VSPackage již nebyla načtena, není načtou při volání sady Visual Studio <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda. VSPackage je načtena pouze tehdy, když <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> metoda je volána.  
   
 ## <a name="see-also"></a>Viz také  
- [Příkaz návrhu](../../extensibility/internals/command-design.md)
+ [Návrh příkazu](../../extensibility/internals/command-design.md)

@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e85c47133509e3f7bf7c54b8cfa7f2121a26b04b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9da6a64eafa28ac173e4dd64b38d1e64d9639e34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-roles"></a>Vlastnosti rolí domény
 Vlastnosti v následující tabulce jsou přidružené k roli domény. Informace o rolích domény najdete v tématu [Principy modely, třídy a vztahy](../modeling/understanding-models-classes-and-relationships.md). Další informace o tom, jak používat tyto vlastnosti najdete v tématu [přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -45,4 +46,4 @@ Vlastnosti v následující tabulce jsou přidružené k roli domény. Informace
 >  Výchozí hodnota zobrazovaný název vychází hodnotu přidružené vlastnosti vložením mezer před každý velká znak, který je malá znak a který není následnou jiné velké písmeno.  
   
 ## <a name="see-also"></a>Viz také  
- [Vlastnosti vztahů mezi doménami](../modeling/properties-of-domain-relationships.md)
+ [Vlastnosti vztahů domény](../modeling/properties-of-domain-relationships.md)

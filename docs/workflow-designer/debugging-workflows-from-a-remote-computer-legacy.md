@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: f6b1f88fcc796cbee0a48fd39da2ad9c4fe1489a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b4b9207702e6b4c3b93838eccfe1da15c42b5baa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-workflows-from-a-remote-computer-legacy"></a>Ladění pracovních ze vzdáleného počítače (zastaralé)
 Toto téma popisuje postup ladění vzdáleného starší [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace, které jsou vytvořeny pomocí starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když aplikace potřebuje cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -32,4 +33,4 @@ Toto téma popisuje postup ladění vzdáleného starší [!INCLUDE[wf](../workf
  [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)]vzdálené ladění funguje stejně jako vzdálené ladění pro ostatní [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] součásti. Další informace najdete v tématu [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] vzdálené ladění v knihovně MSDN.  
   
 ## <a name="see-also"></a>Viz také  
- [Ladění pracovních starší verze](../workflow-designer/debugging-legacy-workflows.md)
+ [Ladění starších verzí pracovních postupů](../workflow-designer/debugging-legacy-workflows.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 372a1efccbfa211167930710418905d95411760c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-models"></a>Práce se 3D modely
 Můžete použít Editor modelu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vytváření 3D modelů. Můžete vytvořit modely v založené na rozhraní DirectX hry nebo aplikace.  
@@ -32,5 +33,5 @@ Můžete použít Editor modelu v [!INCLUDE[vsprvs](../code-quality/includes/vsp
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Editor modelu](../designers/model-editor.md)|Popisuje, jak použití editoru modelu pro práci s 3D modelů.|  
-|[Příklady Editor modelu](../designers/model-editor-examples.md)|Obsahuje odkazy na témata, která ukazují, jak provádět běžné úkoly 3D modelování pomocí editoru modelu.|
+|[Editor modelů](../designers/model-editor.md)|Popisuje, jak použití editoru modelu pro práci s 3D modelů.|  
+|[Příklady editoru modelů](../designers/model-editor-examples.md)|Obsahuje odkazy na témata, která ukazují, jak provádět běžné úkoly 3D modelování pomocí editoru modelu.|

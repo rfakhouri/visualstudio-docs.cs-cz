@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72460f39cf63346106c2ccd81dc9ab16f8af78b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 51735bf0f46e5a1ead6f989a8e75745ebc8e6e35
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-policy-and-the-properties-window"></a>Šablony zásad a v okně Vlastnosti
 Když na projekt se nachází v projektu šablony organizace, tento projekt šablony enterprise může vynutit zásady. Šablony zásad se změní na omezení systém, který můžete použít k nastavení výchozí hodnoty pro vlastnosti, skrýt vlastnosti, přidávat vlastnosti a tak dále.  
@@ -32,4 +33,4 @@ Když na projekt se nachází v projektu šablony organizace, tento projekt šab
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   
- [Rozšíření vlastnosti](../../extensibility/internals/extending-properties.md)
+ [Rozšíření vlastností](../../extensibility/internals/extending-properties.md)

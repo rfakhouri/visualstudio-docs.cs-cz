@@ -25,11 +25,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39d773ac7a4c3fa8541af30143a3d3031377b5b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 7b0808c62b5538e7b4ae50b7992c9b65750169f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní
   Nástroje pro vývoj pro Office v sadě Visual Studio poskytují třídy a návrhářů, které zpracovávají mnoho podrobnosti implementace, když je budete používat k vytvoření vlastních podoken úloh, vlastních nastavení pásu karet a oblastí formulářů aplikace Outlook v doplňku VSTO. Ale můžete taky implementovat *rozšiřitelnost rozhraní* pro každou funkci sami, pokud máte speciální požadavky.  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
   
 |Rozhraní|Popis|Aplikace|  
 |---------------|-----------------|------------------|  
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implementace tohoto rozhraní pro přizpůsobení uživatelského rozhraní pásu karet. **Poznámka:** můžete přidat **pásu karet (XML)** položku do projektu pro generování výchozí <xref:Microsoft.Office.Core.IRibbonExtensibility> implementace v doplňku VSTO. Další informace najdete v tématu [XML karet](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|  
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|Implementace tohoto rozhraní pro přizpůsobení uživatelského rozhraní pásu karet. **Poznámka:** můžete přidat **pásu karet (XML)** položku do projektu pro generování výchozí <xref:Microsoft.Office.Core.IRibbonExtensibility> implementace v doplňku VSTO. Další informace najdete v tématu [XML karet](../vsto/ribbon-xml.md).|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projekt<br /><br /> Visio<br /><br /> Word|  
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|Implementace tohoto rozhraní k vytvoření vlastního podokna úloh.|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|  
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|Implementace tohoto rozhraní pro vytváření oblasti formuláře aplikace Outlook.|Outlook|  
   

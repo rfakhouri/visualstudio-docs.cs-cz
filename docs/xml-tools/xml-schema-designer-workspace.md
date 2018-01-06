@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4a51f3c0491f35f10d8266b4cb06d3de686e021
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a3da032000d5d286e8476673b3c53b993b18303
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer-workspace"></a>Prostoru Návrhář schématu XML
 Návrhář schématu XML (Návrhář XSD) je grafický nástroj, který umožňuje prozkoumat XML schémata. Kromě [Explorer schématu XML](../xml-tools/xml-schema-explorer.md), která umožňuje procházet přejděte stromu schématu XML a provádět hledání, Návrhář XSD poskytuje tři zobrazení, které vám umožní zkoumat schéma XSD podrobněji. Spuštění zobrazení je spouštěcí bod pro návrháře XSD; ze zobrazení spustit můžete přejít k dalším zobrazením návrháře XSD a zobrazit podrobnosti vašeho schématu sady. Zobrazení grafu umožňuje můžete zobrazit základní informace o schématu nastavit a vztahy mezi uzly schématu. Zobrazení obsahu modelu poskytuje grafické reprezentace podrobnosti o místní a globální schématu uzly, včetně jednoduché a komplexní typy, elementy, skupiny, atributy a skupin atributů.  
@@ -47,8 +48,8 @@ Návrhář schématu XML (Návrhář XSD) je grafický nástroj, který umožňu
   
 ## <a name="in-this-section"></a>V tomto oddílu  
   
--   [Spuštění zobrazení](../xml-tools/start-view.md)  
+-   [Počáteční zobrazení](../xml-tools/start-view.md)  
   
 -   [Zobrazení grafu](../xml-tools/graph-view.md)  
   
--   [Zobrazení obsahu modelu](../xml-tools/content-model-view.md)
+-   [Zobrazení modelu obsahu](../xml-tools/content-model-view.md)

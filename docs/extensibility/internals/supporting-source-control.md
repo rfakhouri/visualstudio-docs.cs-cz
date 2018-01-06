@@ -13,17 +13,18 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a93dbdff19d0a0feaafb549b00968e095690fd78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f5dd2a98ec84b656dc70a00236775710266c54ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-source-control"></a>Podpora správy zdrojového kódu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]podporuje souboru rezervace, vrácení se změnami a jiných operací se zdrojovým ovládací prvek pro váš projekt nebo editor. Jako zdroj ovládacího prvku klienta [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je navržen pro interakci s balíčkem řízení zdroje, jako například [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], který poskytuje archivace, Správa verzí a řízení zařízení pro dynamicky definovanou sadu souborů.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Model pro balíčky zdroj ovládacího prvku](../../extensibility/internals/model-for-source-control-packages.md)  
+ [Model pro balíčky správy zdrojového kódu](../../extensibility/internals/model-for-source-control-packages.md)  
  Popisuje typ projektu musí implementovat rozhraní pro podporu správy zdrojového kódu.  
   
  [Rozhodnutí o návrhu](../../extensibility/internals/source-control-design-decisions.md)  

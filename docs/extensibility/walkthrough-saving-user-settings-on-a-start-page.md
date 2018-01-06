@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a7d8649e0d8cf83650da58386901e638ec14a2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 16de0e205d71e2a71b14f523dedbb45354157355
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Návod: Ukládání uživatelských nastavení na stránce Start
 Můžete zachovat uživatelská nastavení pro úvodní stránku. Podle tohoto návodu, můžete vytvořit ovládací prvek, který uloží nastavení registru, když uživatel klikne na tlačítko a potom načte nastavení pokaždé, když se načte stránce Start. Vzhledem k tomu, že šablona projektu – úvodní stránka obsahuje přizpůsobitelný uživatelského ovládacího prvku a výchozí spuštění stránky XAML volá tuto kontrolu, nemáte upravit stránce Start sám sebe.  
@@ -204,4 +205,4 @@ Můžete zachovat uživatelská nastavení pro úvodní stránku. Podle tohoto n
   
 ## <a name="see-also"></a>Viz také  
  <xref:EnvDTE80.DTE2?displayProperty=fullName>     
- [Přidání příkazů sady Visual Studio na úvodní stránky](../extensibility/adding-visual-studio-commands-to-a-start-page.md)
+ [Přidání příkazů sady Visual Studio na úvodní stránku](../extensibility/adding-visual-studio-commands-to-a-start-page.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b326e88e18e3a7c5515cc11bfda7e5c35ae4a063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9bb2cbe0a87e61a50f3f2b071aef9ef9e12663a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerseries-class"></a>marker_series – třída
 Představuje sériové kanál událostí generovaných jednoho zprostředkovatele.  
@@ -36,7 +37,7 @@ class marker_series;
 |Název|Popis|  
 |----------|-----------------|  
 |[marker_series::marker_series – konstruktor](../profiling/marker-series-marker-series-constructor.md)|Inicializuje novou instanci třídy `marker_series` třídy.|  
-|[marker_series:: ~ marker_series – destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Odstraní objekt marker_series a uvolní všechny přidělené prostředky.|  
+|[marker_series::~marker_series – destruktor](../profiling/marker-series-tilde-marker-series-destructor.md)|Odstraní objekt marker_series a uvolní všechny přidělené prostředky.|  
   
 ### <a name="public-methods"></a>Veřejné metody  
   
@@ -56,4 +57,4 @@ class marker_series;
  **Namespace:** Concurrency::Diagnostic –  
   
 ## <a name="see-also"></a>Viz také  
- [diagnostické Namespace](../profiling/diagnostic-namespace.md)
+ [diagnostic – obor názvů](../profiling/diagnostic-namespace.md)

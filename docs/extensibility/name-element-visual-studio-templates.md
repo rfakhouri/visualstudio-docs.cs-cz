@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 919244051df838861816279513f14e8e98f3e34f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 92b494788d708bcea092b73152e899c00566c49d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="name-element-visual-studio-templates"></a>Element názvu (šablony sady Visual Studio)
 Určuje název šablony, jak se objevuje v **nový projekt** nebo **přidat novou položku** dialogové okno.  

@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 935ea7d9fde2872c952f79afaa95058e9f18d0a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Podpora pro navigační panel ve službě jazyk starší verze
 Navigační panel v horní části editoru zobrazení zobrazí typy a členy v souboru. V levém rozevíracího seznamu jsou uvedeny typy a členy se zobrazují v pravém rozevíracího seznamu. Když uživatel vybere typ, pomocí kurzoru je umístěn na prvním řádku typu. Když uživatel vybere člena, pomocí kurzoru je umístěn na definici tohoto člena. Rozevírací seznamy jsou aktualizovány tak, aby odrážela aktuální umístění pomocí kurzoru.  

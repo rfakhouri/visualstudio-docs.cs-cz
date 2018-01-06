@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: b74b905108543422163142fac5984626969ba95d
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: cdbbebc65eb004c11b4c36b78bd8e0089db3234e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: Použití okna interaktivní REPL
 
@@ -31,7 +32,7 @@ Visual Studio *interaktivních okna* pro jazyk Python poskytuje prostředí boha
     ![Interaktivní okno Python a přetáhnete ke změně velikosti](media/vs-getting-started-python-11-interactive1b.png)
 
     > [!Tip]
-    > Můžete nastavit velikost všech oken v sadě Visual Studio tak, že přetáhnete příhraničních oddělovačů. Můžete také přetáhněte windows nezávisle na rámečku Visual Studio a změna uspořádání, je ale chcete do rámečku. Úplné podrobnosti najdete v tématu <a href="https://docs.microsoft.com/visualstudio/ide/customizing-window-layouts-in-visual-studio" target="_blank">přizpůsobení rozložení oken</a>.
+    > Můžete nastavit velikost všech oken v sadě Visual Studio tak, že přetáhnete příhraničních oddělovačů. Můžete také přetáhněte windows nezávisle na rámečku Visual Studio a změna uspořádání, je ale chcete do rámečku. Úplné podrobnosti najdete v tématu [přizpůsobení rozložení oken](../ide/customizing-window-layouts-in-visual-studio.md).
 
 1. Zadejte pár příkazy, jako je třeba `print("Hello, Visual Studio")` a výrazy, jako jsou `123/456` a zobrazte okamžitou výsledky:
 

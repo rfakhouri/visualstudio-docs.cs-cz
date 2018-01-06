@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474ba0510194590a199c9a418eef2a46888342f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: be7e6b2e29ed74fe57016bb286b54742b0add632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` Funkce přiřadí řetězec zadaný proces nebo přístup z více vláken.  
@@ -95,7 +96,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |-|-|  
 |**Záhlaví**|Zahrnout VSPerf.h|  
 |**Knihovna**|Použití VSPerf.lib|  
-|**Kódování Unicode**|Implementovaná jako `NameProfileW` (Unicode) a `NameProfileA` (ANSI).|  
+|**Unicode**|Implementovaná jako `NameProfileW` (Unicode) a `NameProfileA` (ANSI).|  
   
 ## <a name="example"></a>Příklad  
  Následující kód ukazuje volání funkce NameProfile. Příklad předpokládá použití Win32 řetězce makra a nastavení kompilátoru pro ANSI k určení, zda kód zavolá metodu ANSI povolený funkce.  

@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55ba59a5a29181dfa3cdd70427720293582a648d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c3201c032d0cae645460e614b6d4138297e4a93
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-vspackages"></a>Správa VSPackages
 Ve většině případů nemusíte si dělat starosti o správě VSPackages, protože šablon projektů a položek registraci a automaticky načíst balíček. V některých případech můžete však zjistěte chvilku další, abyste mohli spravovat váš balíček.  
@@ -48,4 +49,4 @@ Rozšíření může ovlivnit výkon zatížení spuštění a řešení. Zjist�
  Zjistit techniky pro řešení potíží s VSPackages, který Nenačítat nebo výskytu chyb: [VSPackages řešení potíží](../extensibility/troubleshooting-vspackages.md)  
   
 ## <a name="see-also"></a>Viz také  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [Balíčky VSPackage](../extensibility/internals/vspackages.md)

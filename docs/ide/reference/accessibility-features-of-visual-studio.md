@@ -14,11 +14,12 @@ ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0ee9f615ad28e486566fb117124a1b69634a4b57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e947fa523b2d5e79e1df1966e6a4c3d9b6c8e7af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funkce pro usnadnění přístupu sady Visual Studio
 > [!TIP]
@@ -41,9 +42,9 @@ Kromě funkcí a nástrojů usnadnění v systému Windows následující funkce
 
  Další informace naleznete v následujících tématech:  
 
--   [Postupy: nastavení možnosti usnadnění přístupu IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)  
+-   [Postupy: Nastavení možností usnadnění přístupu v integrovaném vývojovém prostředí](../../ide/reference/how-to-set-ide-accessibility-options.md)  
 
--   [Postupy: výhradní používání klávesnice](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
+-   [Postupy: Výhradní používání klávesnice](../../ide/reference/how-to-use-the-keyboard-exclusively.md)  
 
 -   [Výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md)  
 
@@ -52,4 +53,4 @@ Kromě funkcí a nástrojů usnadnění v systému Windows následující funkce
 -   [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
 
 ## <a name="see-also"></a>Viz také  
- [Usnadnění produkty a služby společnosti Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
+ [Produkty a služby pro usnadnění přístupu od Microsoftu](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

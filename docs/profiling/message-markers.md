@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8139a54c57e37240d9be730014759951bd2bfc06
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e341db6e1c83e268d7074c2b8afed307f6c0840f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="message-markers"></a>Značky zpráv
 Značky zpráv představuje výstup protokolu. Zpráva je řetězec, který je vydaný na konkrétní vlákno v určitém čase. Zprávy můžete exportovat do textového souboru pro použití pomocí jiných nástrojů. Ve zprávě v Concurrency Visualizer zobrazíte řetězec zprávy, přesuňte ukazatel. A můžete zobrazit všechny značky zpráv v [sestava značek](../profiling/markers-report.md).  Následující obrázek znázorňuje značku zprávy.  

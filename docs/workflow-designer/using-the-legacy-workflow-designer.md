@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: eda078bdfc0eae8861ac4e70b0f1f73a399f994c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7faec3b7a6bf33886928034e1f68ab31c7a60b03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Pomocí návrháře pracovních postupů starší verze
 Starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] poskytované [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] lze použít k cíli [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -37,21 +38,21 @@ Starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] poskyt
 |Inteligentní značky|Aktivity, které jsou konfigurovány není úplně nebo není řádně označené ikonou vykřičníku. Můžete kliknutím na ikonu a najdete v rozevíracím seznamu je konfigurace, které existují na aktivity. Pak můžete použít **vlastnosti** okno správně konfigurovat aktivity. Pokud se všechny vlastnosti jsou platné pro aktivity, vykřičník ikona zmizí.|  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Visual Studio pracovního postupu Windows (zastaralé)](../workflow-designer/visual-studio-workflow-windows-legacy.md)  
+ [Okna pracovních postupů v sadě Visual Studio (starší verze)](../workflow-designer/visual-studio-workflow-windows-legacy.md)  
   
- [Vytváření projektů pracovního postupu starší verze](../workflow-designer/creating-legacy-workflow-projects.md)  
+ [Vytváření projektů pracovních postupů starších verzí](../workflow-designer/creating-legacy-workflow-projects.md)  
   
- [Sekvenční pracovní postup zobrazení (zastaralé)](../workflow-designer/sequential-workflow-views-legacy.md)  
+ [Zobrazení sekvenčního pracovního postupu (starší verze)](../workflow-designer/sequential-workflow-views-legacy.md)  
   
- [Aktivity pracovního postupu starší verze](../workflow-designer/legacy-workflow-activities.md)  
+ [Aktivity starších verzí pracovních postupů](../workflow-designer/legacy-workflow-activities.md)  
   
- [Použití motivů v pracovních postupech (zastaralé)](../workflow-designer/using-themes-in-workflows-legacy.md)  
+ [Používání motivů v pracovních postupech (starší verze)](../workflow-designer/using-themes-in-workflows-legacy.md)  
   
- [Pomocí Návrháře pracovního postupu starší stav počítače](../workflow-designer/using-the-legacy-state-machine-workflow-designer.md)  
+ [Používání starší verze návrháře pracovních postupů stavového stroje](../workflow-designer/using-the-legacy-state-machine-workflow-designer.md)  
   
- [Pomocí návrháře starší aktivity](../workflow-designer/using-the-legacy-activity-designer.md)  
+ [Používání starší verze návrháře aktivit](../workflow-designer/using-the-legacy-activity-designer.md)  
   
- [Starší verzi návrháře pro nápovědy uživatelského rozhraní pro Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)  
+ [Nápověda k uživatelskému rozhraní návrháře pro programovací model Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Vývoj pracovních postupů](http://go.microsoft.com/fwlink?LinkID=65010)

@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f24fd3c3a0ffb537c63346ef867a2a43481acfa9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 881979b54fb8f8f07a7ffeb2f3648b690fe2bf78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>Přidávání adresářů do dialogového okna Nový projekt
 Když vytvoříte nové typy projektů, také můžete zaregistrovat nový adresář v **nový projekt** dialogové okno pro zobrazení je pro použití jako šablony. Následující příklad kódu vysvětluje, jak zaregistrovat nový adresář, také známé jako uzel. V příkladu je zaregistrovaný vystavené VSPackage CLSID_Package šablony. V důsledku toho, na levé straně **nový projekt** dialogové okno nabízí přidané uzel s názvem dáno Folder_Label_ResID prostředků. Tento prostředek je načten z VSPackage satelitní knihovny DLL.  
@@ -50,4 +51,4 @@ NoRemove NewProjectTemplates
 ## <a name="see-also"></a>Viz také  
  [Registrace šablon projektů a položek](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Přidávání položek do pro přidání nové položky dialogových oken](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [Přidávání do adresáře přidat novou položku – dialogové okno](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+ [Přidávání adresářů do dialogového okna Přidat novou položku](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b196adf16359c640ba08495b36f4ba428cf8ba48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc5a5013b402d01db8aa84134c9a2740d0ff6304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box-visual-studio"></a>Dialogové okno Možnosti (Visual Studio)
 **Možnosti** dialogové okno umožňuje nakonfigurovat integrované vývojové prostředí (IDE) vašim potřebám. Můžete například vytvořit výchozí umístění pro uložení pro projekty, změnit výchozí vzhled a chování systému windows a vytvoření zkratky pro často používané příkazy. Existují také možnosti specifické pro platformu a vývoj jazyk. Dostanete **možnosti** z **nástroje** nabídky.  
@@ -45,4 +46,4 @@ ms.lasthandoff: 10/31/2017
  Výběr nebo unselecting **zobrazit všechna nastavení** platí všechny změny provedené v **možnosti** dialogové okno, i když ještě neklikli **OK**.  
   
 ## <a name="see-also"></a>Viz také  
- [Přizpůsobení editoru](../../ide/customizing-the-editor.md)
+ [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)

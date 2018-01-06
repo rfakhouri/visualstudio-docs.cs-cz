@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 89e050bb2a946a03e8ccf854134d46af9001dbd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 89311ac792a5dfd55497ccdadea89289dca11ff5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-development-samples"></a>Ukázky vývoje pro systém Office
   Visual Studio obsahuje ukázkové aplikace, které ukazují, jak vytvářet řešení systému Office pomocí nástroje Microsoft Office developer tools. Kód v tyto ukázky ukazuje syntaxi, struktura a techniky sloužící k vytvoření řešení pro systém Office.  
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Viz také  
  [Ukázky vývojáře MSDN: Učili ukázky kódu](http://go.microsoft.com/fwlink/?LinkID=248199)   
- [Běžné úlohy při programování pro Office](../vsto/common-tasks-in-office-programming.md)  
+ [Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)  
   
   

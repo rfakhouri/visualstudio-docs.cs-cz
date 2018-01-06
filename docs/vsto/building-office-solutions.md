@@ -31,11 +31,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3df5fca6d41070b09ceb8b8be9b05212b7caa69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cf3fde8e5a7e91719da11faca01453b405e30401
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-office-solutions"></a>Sestavování řešení pro systém Office
   Obecně platí, sestavování a ladění projektů Office je stejná jako sestavování a ladění jiné typy projektů v sadě Visual Studio, například Windows Forms. Témata v této části popisují rozdíly, které existují. Obecné informace o tom, jak vytvářet aplikace, najdete v tématu [kompilaci a sestavování v sadě Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio).  
@@ -114,7 +115,7 @@ ms.lasthandoff: 10/31/2017
 |-----------|-----------------|  
 |[Ladění projektů Office](../vsto/debugging-office-projects.md)|Uvede problémy při ladění projektů Office.|  
 |[Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|Ukazuje, jak vytvořit základní přizpůsobení na úrovni dokumentu pro Excel.|  
-|[Postupy: opětovné povolení doplňku VSTO, který byl zakázán](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Popisuje, jak znovu zapnout VSTO doplněk, který byl pevného nebo soft zakázán.|  
-|[Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)|Obsahuje odkazy na informace o vytváření řešení pro systém Office a o roli sestavení v řešení.|  
+|[Návody: Opětovné povolení zakázaného doplňku VSTO](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|Popisuje, jak znovu zapnout VSTO doplněk, který byl pevného nebo soft zakázán.|  
+|[Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)|Obsahuje odkazy na informace o vytváření řešení pro systém Office a o roli sestavení v řešení.|  
   
   

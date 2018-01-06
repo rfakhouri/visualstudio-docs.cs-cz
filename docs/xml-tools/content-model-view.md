@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2991b31c387e959b055d30d37dd01cf79652adf7
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 582082504b713988039af609d59150715f75ecfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="content-model-view"></a>Zobrazení obsahu modelu
 Zobrazení obsahu modelu poskytuje grafické reprezentace místní a globální schématu uzlů a jejich komponent, včetně jednoduché a komplexní typy, elementy, skupiny modelů, atributy a skupin atributů. XML – komentáře a pokyny pro zpracování nelze zobrazit v zobrazení obsahu modelu. Zobrazení modelu obsahu obsahuje dva panely: **prostoru** panel, který obsahuje seznam uzlů v [prostoru Návrhář schématu XML](../xml-tools/xml-schema-designer-workspace.md)a na návrhovou plochu, kde se můžete podívat modelu obsahu schématu uzly, které jsou vybrány v **prostoru** panelu. Zobrazení obsahu modelu zahrnuje taky panelu nástrojů Návrhář schématu XML a navigačního panelu.  
@@ -51,7 +52,7 @@ Zobrazení obsahu modelu poskytuje grafické reprezentace místní a globální 
 |**Zobrazit dokumentaci**|Zobrazí nebo skryje poznámky nebo dokumentaci uzlu obsah.|  
 |**Exportujte Diagram jako obrázek...**|Uloží na návrhovou plochu do soubor ve formátu XPS.|  
 |**Zobrazení kódu**|Otevře se soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v Průzkumníku schématu XML bude také vybrána v editoru XML.|  
-|**Vlastnosti – okno**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
+|**Okno Vlastnosti**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
   
  Následující tabulka popisuje možnosti, které jsou k dispozici pro panel pracovního prostoru.  
   
@@ -65,7 +66,7 @@ Zobrazení obsahu modelu poskytuje grafické reprezentace místní a globální 
 |**Generovat ukázkovém kódu XML**|K dispozici pouze pro globální elementy. Generuje a ukázkový soubor XML pro element globální.|  
 |**Vybrat vše**|Vybere všechny uzly v panelu pracovního prostoru.|  
 |**Zobrazení kódu**|Otevře se soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v Průzkumníku schématu XML bude také vybrána v editoru XML.|  
-|**Vlastnosti – okno**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
+|**Okno Vlastnosti**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
   
 ## <a name="properties-window"></a>Okno vlastností  
  Pomocí místní nabídky původně otevřete **vlastnosti** okno. Ve výchozím nastavení **vlastnosti** okno se zobrazí v pravém dolním rohu Visual Studio. Při kliknutí na uzel, který se vykreslí v zobrazení obsahu modelu, vlastnosti tento uzel se zobrazí v **vlastnosti** okno.  
@@ -116,4 +117,4 @@ Posuvník přiblížení se neprůhledné, když vyberte ho hover přes, nebo po
  Pokud provedete změny schématu nastavení v editoru XML změny budou synchronizovány v zobrazení obsahu modelu. Další informace najdete v tématu [integrace pomocí editoru XML](../xml-tools/integration-with-xml-editor.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Prostoru Návrhář schématu XML](../xml-tools/xml-schema-designer-workspace.md)
+ [Pracovní prostor Návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md)

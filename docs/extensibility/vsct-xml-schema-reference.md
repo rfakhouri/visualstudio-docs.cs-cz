@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1fc82041f8ab2790c63c271f85d573a3105ab8b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e02d4ad31a4877dd88dca941c06e38f7eeac82f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsct-xml-schema-reference"></a>Referenční dokumentace schématu VSCT XML
 Poskytne tabulku prvky kompilátoru tabulky příkaz schématu, povolené podřízených elementů a atributů pro každý.  
@@ -45,36 +46,36 @@ Poskytne tabulku prvky kompilátoru tabulky příkaz schématu, povolené podř�
 ## <a name="schema-hierarchy"></a>Schéma hierarchie  
  Soubor .vsct obsahuje následující hlavní prvky.  
   
- [CommandTable Element](../extensibility/commandtable-element.md)  
+ [CommandTable – element](../extensibility/commandtable-element.md)  
   
- [Extern – Element](../extensibility/extern-element.md)  
+ [Extern – element](../extensibility/extern-element.md)  
   
- [Zahrňte prvek](../extensibility/include-element.md)  
+ [Include – element](../extensibility/include-element.md)  
   
- [Definování elementu](../extensibility/define-element.md)  
+ [Define – element](../extensibility/define-element.md)  
   
- [Element příkazy](../extensibility/commands-element.md)  
+ [Commands – element](../extensibility/commands-element.md)  
   
- [CommandPlacements Element](../extensibility/commandplacements-element.md)  
+ [CommandPlacements – element](../extensibility/commandplacements-element.md)  
   
- [VisibilityConstraints Element](../extensibility/visibilityconstraints-element.md)  
+ [VisibilityConstraints – element](../extensibility/visibilityconstraints-element.md)  
   
- [Element klíčových vazeb](../extensibility/keybindings-element.md)  
+ [KeyBindings – element](../extensibility/keybindings-element.md)  
   
- [UsedCommands Element](../extensibility/usedcommands-element.md)  
+ [UsedCommands – element](../extensibility/usedcommands-element.md)  
   
- [Nadřazený Element](../extensibility/parent-element.md)  
+ [Parent – element](../extensibility/parent-element.md)  
   
- [Icon – Element](../extensibility/icon-element.md)  
+ [Icon – element](../extensibility/icon-element.md)  
   
- [Element řetězce](../extensibility/strings-element.md)  
+ [Strings – element](../extensibility/strings-element.md)  
   
- [Element Command příznak](../extensibility/command-flag-element.md)  
+ [Command Flag – element](../extensibility/command-flag-element.md)  
   
- [Element symboly](../extensibility/symbols-element.md)  
+ [Symbols – element](../extensibility/symbols-element.md)  
   
  [Podmíněné atributy](../extensibility/vsct-xml-schema-conditional-attributes.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Jak přidat VSPackages prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Směrování příkazů v VSPackages](../extensibility/internals/command-routing-in-vspackages.md)
+ [Směrování příkazů v balíčcích VSPackage](../extensibility/internals/command-routing-in-vspackages.md)

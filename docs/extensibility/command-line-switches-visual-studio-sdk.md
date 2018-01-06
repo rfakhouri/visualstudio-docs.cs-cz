@@ -16,22 +16,23 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f24037448970f7104174aacdc2bf53df6dc7b9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 62ec48106915f43ace3aed370e652e036e97baa0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Přepínače příkazového řádku (Visual Studio SDK)
 Devenv.exe, spustitelný soubor, který začíná [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), podporuje speciálně pro vývoj VSPackages přepínače příkazového řádku. VSPackages, můžete zpřístupnit vlastní přepínače na příkazovém řádku nástroje Devenv. Následující témata obsahují informace o tom, jak používat přepínače příkazového řádku v prostředí IDE.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Přepínače příkazového řádku nástroje DEVENV pro vývoj VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md)  
+ [Přepínače příkazového řádku nástroje Devenv pro vývoj rozšíření VSPackage](../extensibility/devenv-command-line-switches-for-vspackage-development.md)  
  Popisuje nástroje Devenv přepínače příkazového řádku, které můžete použít ke zjednodušení VSPackage vývoj, ladění a nasazení.  
   
- [Přidání přepínače příkazového řádku](../extensibility/adding-command-line-switches.md)  
+ [Přidání přepínačů příkazového řádku](../extensibility/adding-command-line-switches.md)  
  Popisuje, jak implementovat, vyhledejte a přečtěte si uživatel zadal přepínače příkazového řádku pro svůj balíček.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Přepínače příkazového řádku nástroje devenv](../ide/reference/devenv-command-line-switches.md)  
+ [Devenv – přepínače příkazového řádku](../ide/reference/devenv-command-line-switches.md)  
  Vysvětluje, jak nastavit různé možnosti pro rozhraní IDE, a jak můžete zkompilovat, umožňuje Devenv sestavení a ladění projektů z příkazového řádku. Kromě toho je informace o syntaxi Devenv přepínačů a tabulku přepínače.

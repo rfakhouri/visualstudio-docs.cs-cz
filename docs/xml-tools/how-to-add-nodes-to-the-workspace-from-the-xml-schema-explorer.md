@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4781830d73d36f981937a51e7f9a8bf86780198c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37da28d4c5db1e008af29c03997943720dcfbada
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Postupy: přidání uzlů do pracovního prostoru z Průzkumníka schématu XML
 Toto téma vysvětluje, jak přidat uzly do [Návrhář schématu XML prostoru](../xml-tools/xml-schema-designer-workspace.md) z Průzkumníka schématu XML. Toho lze dosáhnout pomocí přetahování uzlů z Průzkumníka schématu XML do zobrazení o návrháři XSD nebo pomocí místní nabídku Průzkumníka schématu XML. Můžete také přidat uzly, kteří jsou zvýrazněni v důsledku vyhledávání provádí Explorer schématu XML. Další informace najdete v tématu [postupy: přidání schématu nastavit vyhledávání výsledek uzly do pracovního prostoru](../xml-tools/how-to-add-schema-set-search-result-nodes-to-the-workspace.md).  
@@ -61,4 +62,4 @@ Toto téma vysvětluje, jak přidat uzly do [Návrhář schématu XML prostoru](
      `purchaseOrder` Uzlu a `PurchaseOrderType` uzel se zobrazí vedle sebe na návrhové plochy [zobrazení grafu](../xml-tools/graph-view.md). Protože se vztahují dva uzly ( `purchaseOrder` element je `PurchaseOrderType` typu), šipka vykreslením mezi nimi.  
   
 ## <a name="see-also"></a>Viz také  
- [Průzkumník schématu XML](../xml-tools/xml-schema-explorer.md)
+ [Průzkumník schémat XML](../xml-tools/xml-schema-explorer.md)

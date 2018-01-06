@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-feature-tour"></a>Prohlídka funkce profilace
 
@@ -146,7 +147,8 @@ Pokud potřebujete například instrumentace funkce, které nejsou aktuálně na
 
 ![Nástroj Průzkumník výkonu](../profiling/media/prof-tour-performance-explorer.png "prohlížeč výkonu")
 
-## <a name="which-tool-should-i-use"></a>Který nástroj mám použít?  
+## <a name="tool_support_info"></a>Který nástroj mám použít?  
+
 Tady je tabulku, která obsahuje seznam různých nástrojů, které nabízí Visual Studio a typy jiný projekt můžete například vytvořit pomocí:
   
 |Nástroj výkon|Windows desktop|Univerzální/úložiště systému Windows|ASP.NET/ASP.NET jádra|  
@@ -157,7 +159,7 @@ Tady je tabulku, která obsahuje seznam různých nástrojů, které nabízí Vi
 |[Časová osa aplikace](../profiling/application-timeline.md)|Ano|Ano|Ne|  
 |[PerfTips](../profiling/perftips.md)|Ano|Ano pro jazyk XAML, ne pro HTML|Ano|  
 |[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ano|Ne|Ano (ne pro ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Pouze .NET Enterprise|Pouze .NET Enterprise|Pouze .NET Enterprise|
+|[IntelliTrace](../debugger/intellitrace.md)|Rozhraní .NET a Visual Studio Enterprise pouze|Rozhraní .NET a Visual Studio Enterprise pouze|Rozhraní .NET a Visual Studio Enterprise pouze|
 |[Využití sítě](../profiling/network-usage.md)|Ne|Ano|Ne| 
 |[Rychlost odezvy HTML UI](../profiling/html-ui-responsiveness.md)|Ne|Ano pro HTML, ne pro jazyk XAML|Ne|  
 |[Paměť jazyka JavaScript](../profiling/javascript-memory.md)|Ne|Ano pro HTML, ne pro jazyk XAML|Ne|  

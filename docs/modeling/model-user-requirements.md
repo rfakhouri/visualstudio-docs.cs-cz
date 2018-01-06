@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 064d2819a9a7bd3e72539ff7624299e3619f4e94
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 Visual Studio pomáhá pochopit, popisují a komunikaci potřebám uživatelů ve kreslení diagramy o jejich aktivity a rámci systému hraje v pomoci jim dosáhli svých cílů. Model požadavky je sada tyto diagramy, z nichž každý se zaměřuje na různé aspekty potřeby uživatelů. Videoukázka, najdete v tématu: [modelování domény obchodní](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  

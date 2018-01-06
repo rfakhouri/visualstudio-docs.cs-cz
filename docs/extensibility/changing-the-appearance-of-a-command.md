@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ffb8aed183b50958c8835b2a1e79b808ac20174
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eec62227ec39c1758c15e83fd1d8306e807d59fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Změna vzhledu příkazu
 Změnou vzhledu příkazu můžete poskytnutí zpětné vazby pro vaše uživatele. Například můžete příkazu, který bude vypadat jinak, když není k dispozici. Můžete nastavit příkazy k dispozici nebo není k dispozici, skrýt nebo je zobrazit, nebo zaškrtněte nebo zrušte zaškrtnutí je v nabídce.  
@@ -91,4 +92,4 @@ Změnou vzhledu příkazu můžete poskytnutí zpětné vazby pro vaše uživate
  [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Jak přidat VSPackages prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Rozšíření nabídek a příkazů](../extensibility/extending-menus-and-commands.md)   
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

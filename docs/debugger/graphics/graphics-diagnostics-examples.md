@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0fd05d9b8e45b80c0c8bddf3ea1f776c385378b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c1ff7797b16bddb039b5871832736665bd8d054
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-diagnostics-examples"></a>Příklady diagnostiky grafiky
 Tyto příklady ukazují, jak ladit vykreslování problémy s aplikací založených na rozhraní DirectX pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky.  
@@ -41,7 +42,7 @@ Tyto příklady ukazují, jak ladit vykreslování problémy s aplikací založe
   
 -   [Návod: Chybějící objekty z důvodu stavu zařízení](walkthrough-missing-objects-due-to-device-state.md)  
   
--   [Návod: Chybějící objekty z důvodu použití funkce Vertex Shading](walkthrough-missing-objects-due-to-vertex-shading.md)  
+-   [Návod: Chybějící objekty z důvodu použití funkce vertex shading](walkthrough-missing-objects-due-to-vertex-shading.md)  
   
 -   [Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení](walkthrough-missing-objects-due-to-misconfigured-pipeline.md)  
   

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 79105e43cba14c12cf0f82edd05b57286c012ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flag-markers"></a>Značky příznaků
 Příznak značku představuje něco, co došlo k chybě v okamžiku v čase v aplikaci. Příznak může představovat různé druhy událostí aplikace. Příznak může například zobrazovat naplánovaného konkrétní pracovní položky nebo pokud došlo k výjimce. Moduly runtime například Task Parallel Library můžete také vygenerovat příznaky.  

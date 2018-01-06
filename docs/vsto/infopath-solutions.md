@@ -23,11 +23,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c5dbcc0a83d94864858da04bdfe46e5b9ae39e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: da9cebf8d4c8a30821585160ff07edd6eae0cd7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="infopath-solutions"></a>Řešení pro aplikaci InfoPath
   Visual Studio poskytuje šablony projektů, které můžete použít k vytvoření doplňků VSTO pro Microsoft Office InfoPath 2013 a InfoPath 2010. InfoPath není k dispozici v Office 2016.  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 |Úloha|Další informace|  
 |----------|--------------------------|  
-|Vytvoření vlastního podokna úloh.|[Vlastní podokna úloh](../vsto/custom-task-panes.md)|  
+|Vytvoření vlastního podokna úloh.|[Vlastní podokona úloh](../vsto/custom-task-panes.md)|  
 |Přidáte vlastní karty na pásu karet v aplikaci InfoPath.|[Přizpůsobení pásu karet pro aplikaci InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|  
   
  Další informace o přizpůsobení uživatelského rozhraní InfoPath a další aplikace Microsoft Office, najdete v části [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  

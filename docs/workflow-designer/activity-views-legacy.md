@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 50f57684db32f601bd4cbf870456da458aa5ce7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0a6658bdf0f1df76e585236497ba4ba19525b199
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="activity-views-legacy"></a>Zobrazení aktivity (zastaralé)
 Řada aktivit poskytované [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)], ze které pracovní postupy se skládá, máte několik zobrazení návrhu k dispozici v starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Při přetažení Návrhář aktivity z **sada nástrojů** na návrhovou plochu a následně vždy, když vyberete aktivitu, můžete přepínat mezi různých zobrazení pomocí **pracovního postupu**nabídky nebo kliknutím pravým tlačítkem na vybrané aktivity. Navíc při přesunutí ukazatele nad název vybranou aktivitou, rozevírací seznam sadu karet se zobrazí, můžete přepínat mezi různá zobrazení.  
@@ -40,4 +41,4 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="see-also"></a>Viz také  
  [Aktivity pracovního postupu starší verze](../workflow-designer/legacy-workflow-activities.md)   
- [Sekvenční pracovní postup zobrazení (zastaralé)](../workflow-designer/sequential-workflow-views-legacy.md)
+ [Zobrazení sekvenčního pracovního postupu (starší verze)](../workflow-designer/sequential-workflow-views-legacy.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf34a3fe708a6ecab200262224da395b9fa37ecb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd45ebf8be2732cded5c84f18338f104b76840cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>Důležité informace pro uvolnění a překladní vnořené projekty
 Při implementaci projektu vnořené typy, musíte provést další kroky, když jste a opětovném načtení projektů. Oznámit správně naslouchací procesy pro řešení události, musíte správně zvýšit `OnBeforeUnloadProject` a `OnAfterLoadProject` události.  
@@ -35,4 +36,4 @@ Při implementaci projektu vnořené typy, musíte provést další kroky, když
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>   
- [Vnoření projekty](../../extensibility/internals/nesting-projects.md)
+ [Vnoření projektů](../../extensibility/internals/nesting-projects.md)

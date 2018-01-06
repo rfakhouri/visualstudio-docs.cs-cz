@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebfb54a289fe085f00c40df34256cfb2174f98fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb66dfffaf8fa8339ce9060c912dc358fb454a7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Vytváření rozšíření pomocí šablony položky editoru
 Můžete vytvořit šablony položek, které jsou zahrnuté v sadě Visual Studio SDK k vytvoření základní editor rozšíření, které přidat třídění, vylepšení a okraje do editoru. Šablony položek editor jsou k dispozici pro projekty Visual C# nebo Visual Basic VSIX.  
@@ -99,4 +100,4 @@ Můžete vytvořit šablony položek, které jsou zahrnuté v sadě Visual Studi
 4.  Tento projekt sestavit a spustit ladění. Zobrazí se experimentální instanci. Pokud otevřete textový soubor, zobrazí se zelený okraj, který má slova "Hello EditorMargin1" pod vodorovný posuvník.  
   
 ## <a name="see-also"></a>Viz také  
- [Služba jazyka a body rozšíření editoru](../extensibility/language-service-and-editor-extension-points.md)
+ [Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)

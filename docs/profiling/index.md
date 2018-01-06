@@ -3,11 +3,11 @@ layout: LandingPage
 title: "Profilace aplikací pomocí sady Visual Studio | Microsoft Docs"
 description: "Zjistěte, jak používat Visual Studio 2017 profilu výkon vaší aplikací, služeb a nástrojů v jazyk podle vašeho výběru."
 ms.technology: vs-ide-debug
-ms.openlocfilehash: e671683cf0ea257bf6170a3c2e41b8d0db503450
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.openlocfilehash: 166f141dcc1e303c07fa319a4ef4a54be3180d82
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="profiling-in-visual-studio"></a>Profilace v sadě Visual Studio
 
@@ -51,7 +51,7 @@ Profilování a diagnostických nástrojů pomoci diagnostikovat paměť a využ
         </a>
     </li>
     <li>
-        <a href="../profiling/beginners-guide-to-performance-profiling.md#video">
+        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -151,7 +151,7 @@ Profilování a diagnostických nástrojů pomoci diagnostikovat paměť a využ
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Analýza spotřeby energie (aplikace pro Store)</h3>
+                        <h3>Analýza spotřeby energie (aplikace UWP)</h3>
                     </div>
                 </div>
             </div>

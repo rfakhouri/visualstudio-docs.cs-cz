@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8d720b3647b077cfe66950d842163d774cb34e92
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5fe712caf9e76905dee8307998ea0854a469a71d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Klávesové zkratky v Návrháři pracovních postupů
 Všechny základní funkce služby [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] přístupná pomocí klávesnice.  
@@ -83,8 +84,8 @@ Všechny základní funkce služby [!INCLUDE[wfd1](../workflow-designer/includes
   
     4.  Vybrat vše  
   
-    5.  Vrácení zpět  
+    5.  vrácení zpět  
   
-    6.  Znovu:  
+    6.  znovu:  
   
 -   Přemapování klávesové zkratky pro úpravy příkazy uvnitř výrazu [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] v [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], upravit klávesové zkratky v [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] oboru. Změny provedené v textovém editoru oboru nelze použít automaticky na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Pokud chcete namapovat zástupce na obou místech, musíte použít změny dvakrát (jednou pro každý obor).

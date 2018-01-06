@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 88af397feba9b06eabd73ec23dcf1204ebe755e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fd740c437fc7e5f3d355e883d4023bc6edfcde1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Ve službě jazyk starší zvýrazňování syntaxe
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]barevné zvýrazňování služby se používá k identifikaci elementy jazyka a jejich zobrazení pomocí zadaného barev v editoru.  
@@ -66,13 +67,13 @@ Jednoduché colorizer modelu
 >  Kromě použití colorizer služby jazyk, VSPackage můžete použít pro obecné účely [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] text zvýrazňování mechanismus. Další informace o tento mechanismus najdete v tématu [pomocí písma a barev](../../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Implementace barevné zvýrazňování syntaxe](../../extensibility/internals/implementing-syntax-coloring.md)  
+ [Implementace barevného zvýrazňování syntaxe](../../extensibility/internals/implementing-syntax-coloring.md)  
  Popisuje, jak přistupuje k editoru barevné zvýrazňování syntaxe a služba jazyka musí implementace pro podporu syntaxe zvýrazňování služba jazyka.  
   
- [Postupy: použití předdefinované Colorable položek](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
+ [Postupy: Použití předdefinovaných položek, které lze zabarvit](../../extensibility/internals/how-to-use-built-in-colorable-items.md)  
  Ukazuje, jak používat integrované colorable položek ze služby jazyk.  
   
- [Vlastní Colorable položky](../../extensibility/internals/custom-colorable-items.md)  
+ [Vlastní položky, které lze zabarvit](../../extensibility/internals/custom-colorable-items.md)  
  Popisuje, jak implementovat vlastní colorable položky.  
   
 ## <a name="see-also"></a>Viz také  

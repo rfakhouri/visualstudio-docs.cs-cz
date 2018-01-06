@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 58402e1030516e6f587ec428bd98179ff82ec43a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 17168b43056870dc259965c31902c36450876702
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-domain-properties"></a>Vlastnosti vlastností domény
 A *vlastnost domain* je funkce prvku modelu, který uchovává hodnotu. Například `Person` domény třída může mít vlastnosti `Name` a `BirthDate`. V definici DSL vlastnosti domény jsou uvedeny v poli Třída domény v diagramu a v části domény třídy v Průzkumníku DSL. Další informace najdete v tématu [jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md).  

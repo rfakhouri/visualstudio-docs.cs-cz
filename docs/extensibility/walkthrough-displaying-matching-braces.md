@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a7d122f19e21eebbe5bd598272fb7cb9f52b27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3dde61c10d0a8c9fc5578b02cc713f648409cbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Návod: Zobrazení odpovídající složené závorky
 Můžete implementovat funkce založené na jazyce jako třeba závorky definováním složené závorky, které chcete porovnat a následným přidáním značku značky text odpovídající složené závorky, když pomocí kurzoru je na některém ze složené závorky. Můžete definovat složené závorky v kontextu jazyka, nebo můžete definovat typ vlastního souboru název rozšíření a obsahu a použití značek u právě tohoto typu nebo značky můžete použít pro existující typ obsahu (například "text"). Následující postup ukazuje, jak použít závorky značek k typu obsahu "text".  
@@ -125,4 +126,4 @@ Můžete implementovat funkce založené na jazyce jako třeba závorky definov�
 4.  Když umístíte pomocí kurzoru před otevřete levá složená závorka, by měl mít zvýrazněná této závorek a odpovídajících složených závorek zavřít. Když umístěte kurzor bezprostředně za zavřít složené závorce, by měly být označeny této závorek a odpovídajících otevřete složených závorek.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

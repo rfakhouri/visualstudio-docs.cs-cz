@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bc2f4a50996ccca6a56632166121bf9784629bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 739dd0d41fb63c4993dad0d66737aaada1cf01c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-directory-description-vsdir-files"></a>Popis Directory šablony (. Soubory VSDIR)
 Soubor popisu directory šablony (.vsdir) je textový soubor, který umožňuje integrované vývojové prostředí (IDE) k zobrazení složky, průvodce .vsz soubory a soubory šablony, které jsou spojeny s projektem v dialogových oknech. Obsahuje jeden záznam na soubor nebo složku. Všechny soubory .vsdir v uváděného umístění jsou sloučeny, i když pouze jeden projektový soubor je obvykle zadáváno, k popisu více složek, průvodci nebo soubory šablon.  
@@ -67,4 +68,4 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
   
 ## <a name="see-also"></a>Viz také  
  [Průvodci](../../extensibility/internals/wizards.md)   
- [Průvodce (. Soubor vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Soubor průvodce (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

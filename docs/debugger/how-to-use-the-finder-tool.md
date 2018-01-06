@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e48fd86555a2bd110f2945063b23f03d0ce64e16
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8930726d4f45164842a41fdf87ea3a8f55397278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-finder-tool"></a>Postupy: Používání vyhledávacího nástroje
 Můžete použít nástroj pro vyhledávání v **najít okno** dialogové okno pro zobrazení vlastností okna nebo zprávy. Nástroj pro vyhledávání můžete také najít zakázané podřízená okna a rozpoznat, které okno zvýrazněte Pokud vypnuto podřízené překrývá.  
@@ -55,4 +56,4 @@ Nástroj pro vyhledávání v dialogovém okně Najít
 ## <a name="see-also"></a>Viz také  
  [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)   
  [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)

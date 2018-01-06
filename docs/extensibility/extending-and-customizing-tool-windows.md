@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6488df3ec567051709f6464d49d891cdd8f995dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 74616bf92b1424b4749354d1f0a7b3232e66a335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-and-customizing-tool-windows"></a>Rozšíření a přizpůsobení okna nástrojů
 Visual Studio poskytuje několik různých typů systému windows, například nástroj windows, windows dokumentu a dialogové okno windows. Další windows například vlastnosti okna, ve výstupním okně a okno seznam úloh jsou typy nástroje systému windows.  
@@ -50,4 +51,4 @@ Visual Studio poskytuje několik různých typů systému windows, například n
  V rozšíření sady Visual Studio by měl vytvořit modální dialogová okna odvozením z <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName>, která umožňuje řídit je a zbytek z uživatelského rozhraní. Další informace najdete v tématu. [Vytváření a správa modální dialogová okna](../extensibility/creating-and-managing-modal-dialog-boxes.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Vytváření rozšíření s okno nástroje](../extensibility/creating-an-extension-with-a-tool-window.md)
+ [Vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md)

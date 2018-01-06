@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c31e4c8367c1ceba5a4692438e8c1f1503f4f63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb45d2196a9f84b8f956b8ede665df6e3ed249c2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Připojí modul ladění (DE) pro program nebo programy. Volá se správcem ladicí relace (SDM), když je DE je spuštěné v procesu na SDM.  

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb474e832f815453fd84ba35bc3680b961e17954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-components-tab"></a>Sada nástrojů, karta Součásti
 Zobrazí součásti, které můžete přidat do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] a [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Designer. Kromě [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] součásti, které jsou součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], například <xref:System.Messaging.MessageQueue> a <xref:System.Diagnostics.EventLog> součásti, můžete přidat vaše vlastní nebo jiných součástí na této kartě. Další informace najdete v tématu [postupy: manipulace s kartami panelu nástrojů](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
@@ -63,7 +64,7 @@ Zobrazí součásti, které můžete přidat do [!INCLUDE[vbprvb](../../code-qua
  **ServiceController**  
  Vytvoří <xref:System.ServiceProcess.ServiceController> instanci komponenty, které můžete použít k manipulaci s stávající služby, včetně spouštět a zastavovat služby a odesílání příkazů k nim. Další informace najdete v tématu [monitorování služby systému Windows](http://msdn.microsoft.com/en-us/4542ee3f-e052-4cb9-8726-58e9420de222).  
   
- **Časovač**  
+ **Timer**  
  Vytvoří <xref:System.Windows.Forms.Timer> instanci komponenty, které můžete použít k přidání funkcí založené na čase do aplikací systému Windows. Další informace najdete v tématu [komponenta časovač](/dotnet/framework/winforms/controls/timer-component-windows-forms).  
   
 > [!NOTE]

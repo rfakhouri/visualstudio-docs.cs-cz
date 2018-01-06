@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ac80a3fcf3a7f75be3f23dd1350da047ccbb393
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ab4e57f500c2dfbfe673713c784cbc93ff52a73d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-context"></a>Kontext vyhodnocení výrazu
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění, **kontext vyhodnocení výrazu**:  
@@ -32,4 +33,4 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění, **konte
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní vyhodnocení výrazu](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
- [Kontexty ladicí program](../../extensibility/debugger/debugger-contexts.md)
+ [Kontexty ladicího programu](../../extensibility/debugger/debugger-contexts.md)

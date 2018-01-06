@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f11a3717e6096ac08a8201bc9b6fc81e1a197d0a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d32ef451cbbefaa2ce639d3271b762fa90892945
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zápis protokolovacích nástrojů pro více procesorů
 Schopnost [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] chcete využít výhod více procesorů, může snížit čas sestavení projektu, ale také přidá složitost tak, aby sestavení protokolování událostí. V prostředí s jedním procesorem událostí, zprávy, upozornění a chyby přicházejí na protokolovacího nástroje předvídatelný, sekvenční způsobem. V prostředí s více procesory, můžete však události z různých zdrojů dorazí, ve stejnou dobu nebo mimo pořadí. Zajistit pro to, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje více-procesorů podporující protokolovacího nástroje a nový model protokolování a umožňuje vám vytvořit vlastní "předávání protokolovacích nástrojů."  
@@ -115,4 +116,4 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |SHOWCOMMANDLINE|  
   
 ## <a name="see-also"></a>Viz také  
- [Vytváření předávání protokolovacích nástrojů](../msbuild/creating-forwarding-loggers.md)
+ [Vytváření předávajících (sekundárních) protokolovacích nástrojů](../msbuild/creating-forwarding-loggers.md)

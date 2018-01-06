@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2a731c504355cbd3869790720af1f67f6c6bf0eb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 787134277f27e901c6afe6a8e9c41d224431a122
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; – Element (zaváděcího nástroje)
 `InstallChecks` Element podporuje spouštění různých testů na místním počítači a ujistěte se, že byly nainstalovány všechny příslušné požadavky pro aplikaci.  

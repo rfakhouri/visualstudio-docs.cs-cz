@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44b79585ae80841baf9f9ba12da79441779011b8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e66b87a143629643b02e03a880349124c3adaa64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Získá příznak označující, zda modul byl převeden do modulu Common mezilehlá jazyk souboru CIL () na nativní modul.  
@@ -53,4 +54,4 @@ HRESULT get_isCVTCIL(
   
 ## <a name="see-also"></a>Viz také  
  [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
- [Compilanddetails –](../../debugger/debug-interface-access/compilanddetails.md)
+ [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)

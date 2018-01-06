@@ -12,11 +12,12 @@ ms.assetid: d3de7b31-0262-4373-ba84-e74eda7651e4
 caps.latest.revision: "26"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5a6a1a314e837b441e2fc563baabf935659adcf8
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5f61b5c2c0fc5f252ed331e58137f970f6705df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-run-unit-tests-for-a-uwp-app-in-visual-studio"></a>Vytváření a spouštění testování částí pro aplikace UWP v sadě Visual Studio
 Testovací nástroje sady Visual Studio jednotky jsou navrženy pro podporu vývojáři a týmům, kteří začlenit testování v jejich postupy pro vývoj softwaru částí. Testování částí poskytnout vývojáři a testerům, sada efektivní, udržovatelný způsob hledání logické chyby v metody třídy v projektech Visual C#, Visual Basic a Visual C++.  

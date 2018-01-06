@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: eca5b5dff1bb7a00d8e138d367581081eaab6fc5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: ada6fe4eec6b8bda3f0b44f097581103ea7b138e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 Pomocí InstallShield Limited Edition, můžete vytvořit soubor instalace a distribuovat ji pro uživatele tak, aby si můžou nainstalovat desktopová aplikace nebo součást bez připojení k síti. InstallShield Limited Edition je zdarma pro uživatele edice Visual Studio Professional a Enterprise. Nahradí technologii Instalační služby systému Windows, která již nepodporuje sady Visual Studio. Jako alternativu můžete distribuovat aplikací a součástí s použitím technologie ClickOnce, který vyžaduje připojení k síti. V tématu [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md).  

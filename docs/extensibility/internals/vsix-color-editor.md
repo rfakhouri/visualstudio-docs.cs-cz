@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7987d2b6d22893e82893755ed76fa5253aeb600c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa699e0c6d4d23ec6e5cdc347627a98efb623672
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-editor"></a>Editor barva VSIX
 Nástroj editoru barva rozšíření Visual Studio můžete vytvářet a upravovat vlastní barvy pro sadu Visual Studio. Nástroj můžete také vygenerovat klíče motivů prostředků tak, aby barvy lze použít v kódu. Tento nástroj je užitečný pro provedení barvy pro rozšíření sady Visual Studio, který podporuje motivů. Tento nástroj můžete otevřít soubory .pkgdef a .xml. Visual Studio motivů (soubory .vstheme) lze pomocí editoru Visual Studio rozšíření barva změnou přípona souboru .xml. Kromě toho .vstheme soubory lze importovat do aktuální soubor .xml.  

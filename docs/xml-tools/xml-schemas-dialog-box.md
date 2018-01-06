@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9c248532c5724c5d5bc3a3bad6c1e6b4674fd5e
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 71cff97fc87d22a4edeee3b114e9599f307ab040
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schemas-dialog-box"></a>Dialogové okno schémat XML
 **Schémat XML** dialogové okno slouží k výběru které schématu XML schéma definice jazyka (XSD). Chcete přidružit k dokumentu XML. Můžete vybrat schéma z mezipaměti schématu, nebo zadejte schéma, které se nenachází v mezipaměti. Vybrané schématech jsou považovány za součást sadu schématu. Sada schématu se používá technologie IntelliSense a také ověření dokumentu XML.  
@@ -48,4 +49,4 @@ Odebere aktuálně vybrané schéma ze sady schématu. Schéma budou odebrány z
 ## <a name="see-also"></a>Viz také  
  [Součásti editoru XML](../xml-tools/xml-editor-components.md)   
  [Postupy: Výběr schémat XML pro použití](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
- [Mezipaměti schématu](../xml-tools/schema-cache.md)
+ [Mezipaměť schémat](../xml-tools/schema-cache.md)

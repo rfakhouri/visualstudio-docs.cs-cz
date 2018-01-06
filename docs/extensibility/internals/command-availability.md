@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ecdbdc3074ad6dc80a8bd713c46303ba3cca628c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 53ab248d9e71d3177cabb8ce522343d37bcabb26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-availability"></a>Příkaz dostupnosti
 Kontext sady Visual Studio Určuje, které příkazy, které jsou k dispozici. Kontext, můžete změnit v závislosti na aktuální projekt, aktuální editor, VSPackages, která jsou načtena a dalších aspektů integrované vývojové prostředí (IDE).  
@@ -55,4 +56,4 @@ Kontext sady Visual Studio Určuje, které příkazy, které jsou k dispozici. K
   
 ## <a name="see-also"></a>Viz také  
  [Výběr objektů kontextu](../../extensibility/internals/selection-context-objects.md)   
- [Jak přidat VSPackages prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

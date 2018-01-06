@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24a2937b37aa339f85e197f6ff2bb49cbb0ce86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: de8de116a9853391249a7a37a35bd54d0a6946d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-project-template"></a>Šablona projektu VSIX
 Šablona projektu VSIX slouží k zabalení jedno nebo více rozšíření sady Visual Studio v projektu VSIX a pak publikovat v balíčku [Galerie sady Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) webu.  
@@ -85,4 +86,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Viz také  
  [VSIX rozšíření schéma 2.0 – referenční informace](../extensibility/vsix-extension-schema-2-0-reference.md)   
- [Hledání a používání rozšíření Visual Studia](../ide/finding-and-using-visual-studio-extensions.md)
+ [Hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "48"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4cdcd1fd772505ff4536968290ca87a85a501f6a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 07b5eea4fe6d5f58ec4b05563af253aeef0c5f6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Přidávání panelů nástrojů do okno nástroje
 Tento návod ukazuje, jak přidat panel nástrojů pro okno nástroje.  
@@ -117,4 +118,4 @@ Tento návod ukazuje, jak přidat panel nástrojů pro okno nástroje.
 3.  Na panelu nástrojů klikněte na ikonu k zobrazení zprávy **TWTestCommandPackage uvnitř TWToolbar.TWTestCommand.MenuItemCallback()**.  
   
 ## <a name="see-also"></a>Viz také  
- [Přidávání panelů nástrojů](../extensibility/adding-a-toolbar.md)
+ [Přidání panelu nástrojů](../extensibility/adding-a-toolbar.md)

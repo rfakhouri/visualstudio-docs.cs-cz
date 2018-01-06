@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2839b44af2156ab237bd2b88c0b4c77e41f4b82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 739dff217b59bd9424594c4049c765ad5145d634
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextové nabídky (Explorer schématu XML)
 Následující položky kontextové nabídky se používají k provádění schématu konkrétní hledání a dalších operací.  
@@ -29,7 +30,7 @@ Následující položky kontextové nabídky se používají k provádění sch�
 |**Zobrazit nejpravděpodobnější kořenových elementů**|Vyhledá a označuje všechny globální prvky, které nejsou na něj odkazovat z globální prvky výjimkou sama sebe.|  
 |**Zobrazit globální typy**|Vyhledá a označuje všechny globální typy v sadě schématu.|  
 |**Zobrazit globální prvky**|Vyhledá a označuje všechny globální elementy ve schématu sady.|  
-|**Vlastnosti – okno**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
+|**Okno Vlastnosti**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
   
 ## <a name="node-type-namespace"></a>Typ uzlu: Namespace  
  Následující tabulka popisuje možnosti, které jsou k dispozici pro uzlu oboru názvů.  
@@ -40,7 +41,7 @@ Následující položky kontextové nabídky se používají k provádění sch�
 |**Zobrazit všechny odchozí odkazy**|Pro každý soubor v oboru názvů vybrané najde a klade důraz následující:<br /><br /> -Všechny obory názvů, kterou se odkazuje v importovat příkazy bez `schemaLocation` atribut.<br />-Všechny soubory v oborech názvů než vybrané ve stanoveném `schemaLocation` v importu a zahrnují příkazy.|  
 |**Zobrazit globální typy**|Vyhledá a označuje všechny globální typy v vybraný obor názvů.|  
 |**Zobrazit globální prvky**|Vyhledá a označuje všechny globální elementy ve vybrané obor názvů.|  
-|**Vlastnosti – okno**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
+|**Okno Vlastnosti**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
   
 ## <a name="node-type-file"></a>Typ uzlu: soubor  
  Následující tabulka popisuje možnosti, které jsou k dispozici pro uzel souboru.  
@@ -52,7 +53,7 @@ Následující položky kontextové nabídky se používají k provádění sch�
 |**Zobrazit globální typy**|Vyhledá a označuje všechny globální typy v tomto souboru.|  
 |**Zobrazit globální prvky**|Vyhledá a označuje všechny globální prvky v tomto souboru.|  
 |**Zobrazení kódu**|Otevře se soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v Průzkumníku schématu XML bude také vybrána v editoru XML.|  
-|**Vlastnosti – okno**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
+|**Okno Vlastnosti**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
   
 ## <a name="all-global-node-types"></a>Všechny typy globální uzlu  
  Následující tabulka popisuje možnosti, které jsou k dispozici pro všechny uzly globální.  
@@ -62,7 +63,7 @@ Následující položky kontextové nabídky se používají k provádění sch�
 |**V zobrazení grafů**|Otevře zobrazení grafu. Pokud vybraný uzel není v pracovním prostoru, přidá do pracovního prostoru a vybírá uzel.|  
 |**V zobrazení modelu obsahu**|Otevře zobrazení modelu obsahu. Pokud vybraný uzel není v pracovním prostoru, přidá do pracovního prostoru a vybírá uzel.|  
 |**Zobrazení kódu**|Otevře se soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v Průzkumníku schématu XML bude také vybrána v editoru XML.|  
-|**Vlastnosti – okno**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
+|**Okno Vlastnosti**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
   
 ## <a name="node-type-element"></a>Typ uzlu: Element  
  Kromě možností globální uzlu popsané výše kontextovou nabídku uzly elementu obsahuje následující možnosti:  
@@ -115,4 +116,4 @@ Následující položky kontextové nabídky se používají k provádění sch�
   
 ## <a name="see-also"></a>Viz také  
  [Průzkumník schématu XML](../xml-tools/xml-schema-explorer.md)   
- [Hledání sadu schématu](../xml-tools/searching-the-schema-set.md)
+ [Hledání v sadě schémat](../xml-tools/searching-the-schema-set.md)

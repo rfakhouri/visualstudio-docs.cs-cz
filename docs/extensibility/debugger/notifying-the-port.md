@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91bedf387fe86c2bf2fefb34e643e581a37c15bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 154a5891d9a11dd77c92f3f297a2e905d40f0327
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="notifying-the-port"></a>Upozornění portu
 Po spuštění programu, port musí být upozorněni, následujícím způsobem:  
@@ -49,4 +50,4 @@ Po spuštění programu, port musí být upozorněni, následujícím způsobem:
 ## <a name="see-also"></a>Viz také  
  [Spuštění programu](../../extensibility/debugger/launching-a-program.md)   
  [Připojení po spuštění](../../extensibility/debugger/attaching-after-a-launch.md)   
- [Ladění úlohy](../../extensibility/debugger/debugging-tasks.md)
+ [Úlohy ladění](../../extensibility/debugger/debugging-tasks.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: fdf062c9b33dd4a160f54bba83991a3cdda7f0d1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1806b6aa1b6c6d4ac233e4a9d5785fe903d42221
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>Použití řídicích sekvencí v textových šablonách
 Můžete použít řídicích sekvencí v textových šablonách mají vygenerovat značky text šablony a (v C# pouze kód) řídicí řídicí znaky a znaky uvozovek.  
@@ -38,4 +39,4 @@ Můžete použít řídicích sekvencí v textových šablonách mají vygenerov
 -   Pokud řídicí (\\) znak zobrazí kdekoliv jinde v libovolném pořadí, než kde je řídicí sekvence řídicí znak nebo uvozovky (v jazyku C# pouze), znak, který bude výstup přímo.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: generování šablon ze šablon pomocí řídicích sekvencí](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)
+ [Postupy: Generování šablon ze šablon pomocí řídicích sekvencí](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

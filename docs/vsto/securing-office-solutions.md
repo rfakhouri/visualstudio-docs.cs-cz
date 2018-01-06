@@ -19,22 +19,23 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 50960f95b317f389cfe9f99154e51a5103b419d3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 45052deff58e992b427f72188fcb0dc8ade91b95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-office-solutions"></a>Zabezpečení řešení pro systém Office
   Model zabezpečení pro řešení pro systém Office zahrnuje několik technologií: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], v Centru zabezpečení v Microsoft Office a zónu lokalit s omezeným přístupem aplikace Internet Explorer. Následující části popisují, jak fungují funkce různých zabezpečení:  
   
--   [Udělení důvěry pro řešení pro systém Office](#GrantingTrustToSolutions)  
+-   [Udělení důvěry řešením pro systém Office](#GrantingTrustToSolutions)  
   
 -   [Udělení důvěry dokumentům](#GrantingTrustToDocuments)  
   
 -   [Udělení důvěry při použití Instalační služby systému Windows](#GrantingTrustWindowsInstaller)  
   
--   [Specifické aspekty zabezpečení pro řešení Office](#Security)  
+-   [Specifické aspekty zabezpečení u řešení pro systém Office](#Security)  
   
 -   [Zabezpečení během vývoje](#SecurityDuringDeployment)  
   

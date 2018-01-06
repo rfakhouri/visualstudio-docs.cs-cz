@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8061c419f81493e56a58df8fefbe4d3362d43e46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 753f916d148675afd7313afc8673232f22280b7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-issues"></a>Problémy se zabezpečením
 Pouze oprávnění potřebná k ladění program pomocí sady Visual Studio, jsou stejné jako ty, které je třeba spustit program. To zahrnuje vzdáleného ladění pro většině případů (některých situacích zahrnující jiných služeb, jako je například Internetová informační služba může vyžadovat vyšší úroveň oprávnění).  

@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 862d537585e3599a7069f1a30d1dc652a49e699c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 049521213437e2d28e1e26b61859685158cebc08
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskscheduler-class---internal-members"></a>Třída TaskScheduler – vnitřní členy
 Toto téma popisuje vnitřní členy <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> třídu, která vám pomůže implementovat vlastní ladicí program. Obecné informace o této třídy, najdete v článku <xref:System.Threading.Tasks.TaskScheduler> referenční téma.  
@@ -50,4 +51,4 @@ Toto téma popisuje vnitřní členy <xref:System.Threading.Tasks.TaskScheduler?
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
- [Interní informace o paralelní rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Interní informace o paralelním rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 1e3b9fa70f42a0be65f7bea8c39a644d4950b621
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: e8ab260780c7cd2841d0ffe88f4eb0cc817592c4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="refactoring-python-code"></a>Refaktoring kódu jazyka Python
 
@@ -25,7 +26,7 @@ Visual Studio obsahuje několik příkazů pro automaticky transformaci a čišt
 - [Přejmenujte](#rename) přejmenuje vybraná třída, metoda nebo název proměnné
 - [Extrahování metody](#extract-method) vytvoří novou metodu z na vybraný úsek kódu
 - [Přidat import](#add-import) poskytuje inteligentní značky přidat chybějící importu
-- [Odebrat nepoužité importy](#remove-imports) odebere nepoužívané importy
+- [Odebrat nepoužité importy](#remove-unused-imports) odebere nepoužívané importy
 
 < a name = "rename-variable"</a>
 
@@ -71,6 +72,7 @@ Podobně Visual Studio filtruje funkce, které jsou importovány z ostatních mo
 Nakonec, pokud něco by za normálních okolností vyloučeny, ale má jiné hodnoty, které by byly součástí (protože název se přiřazenou hodnotu v modulu, například), Visual Studio stále vyloučí importu. Toto chování se předpokládá, že hodnota by neměla exportovat, protože je definována v jiný modul, a proto je pravděpodobně fiktivní hodnotu, která není taky exportovat další přiřazení.
 
 < a name = "remove import"</a>
+
 ## <a name="remove-unused-imports"></a>Odebrat nepoužité importy
 
 Při psaní kódu, je snadné se `import` příkazy pro moduly, které nejsou používány vůbec. Protože Visual Studio analyzuje kódu, může automaticky zjistit, jestli `import` prohlášení je potřeba pohledem na tom, jestli se používá název importované v rámci oboru níže, kde dochází k příkazu.

@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d72671a9c9e470dafae2b36c8cf5ec34b43e750
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d63827110dab8b8028e27fa6d544f5dd1bcfc23b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-editor-controls-and-menus-by-using-the-legacy-api"></a>Přizpůsobení ovládací prvky editoru a nabídky pomocí starší verze rozhraní API
 Služba jazyka nebo textového zobrazení můžete ovládat kontextové nabídky a ovládací prvky v editoru. Na stránkách v této části jsou upřesněny postupy pro práci s těmito funkcemi.  
@@ -36,5 +37,5 @@ Služba jazyka nebo textového zobrazení můžete ovládat kontextové nabídky
  Poskytuje pokyny pro aktualizaci **stavového řádku**.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Editor a rozšíření služeb jazyk](../extensibility/editor-and-language-service-extensions.md)  
+ [Editor a rozšíření služeb jazyka](../extensibility/editor-and-language-service-extensions.md)  
  Představuje různé typy editory, které můžete použít v sadě Visual Studio.

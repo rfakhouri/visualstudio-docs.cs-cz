@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33dd97cf627ae10e71a2aa2213a9763e86818b70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5774161bdeb33ee954965262532406834a5c5eb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="entering-break-mode"></a>Přejít do režimu pozastavení
 Následující část popisuje proces, který nastane, když je zarážku došlo po zanoříte se do funkce, běží na řádek zdrojový kód, který se nachází kurzor nebo k zarážku.  
@@ -45,4 +46,4 @@ Následující část popisuje proces, který nastane, když je zarážku došlo
     -   [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) získat informace o paměti  
   
 ## <a name="see-also"></a>Viz také  
- [Události volání ladicí program](../../extensibility/debugger/calling-debugger-events.md)
+ [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)

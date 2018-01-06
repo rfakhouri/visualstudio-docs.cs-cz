@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f971dd1a6ed2c4e16e3e991d43bc6ca7ca5b2f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e76425b81bc2198bbe96740c792b6da47a14d846
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="asynctaskmethodbuildermbuilder-field"></a>AsyncTaskMethodBuilder.m_builder pole
 Představuje objekt obecný tvůrce, do které tato instance neobecnou deleguje.  
@@ -38,4 +39,4 @@ Představuje objekt obecný tvůrce, do které tato instance neobecnou deleguje.
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>   
- [Interní informace o paralelní rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Interní informace o paralelním rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b8a4e4c2ca938d8c600d3fd9ef0e615aa847fd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06ffcbaf1266f017b75e6c3662300096b534e209
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Vrátí informace, které umožňuje vytváření čitelná pro člověka chybová zpráva.  
@@ -74,4 +75,4 @@ int GetErrorMessage(
   
 ## <a name="see-also"></a>Viz také  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
- [TYP ZPRÁVY](../../../extensibility/debugger/reference/messagetype.md)
+ [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

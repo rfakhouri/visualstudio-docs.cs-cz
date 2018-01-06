@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Spy++. process properties
 - process properties, Spy++
@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fc116cc0085d5db9e54ca6befce6d3627c5d975
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e1178cd848cbac3589faeb2292e2ceadf52c11b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="process-properties-dialog-box"></a>Dialogové okno vlastností procesů
 Další informace o specifickém procesu pomocí tohoto dialogového okna. K zobrazení tohoto dialogového okna, přesunout fokus [zobrazení procesů](../debugger/processes-view.md) okno. Vyberte libovolný uzel procesu ve stromové struktuře, a potom vyberte **vlastnosti** z **zobrazení** nabídky.  
@@ -43,7 +44,7 @@ Další informace o specifickém procesu pomocí tohoto dialogového okna. K zob
  [Dialogové okno hledání procesů](../debugger/process-search-dialog-box.md)  
  Použít k vyhledání uzlu pro konkrétní proces v zobrazení procesů.  
   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)  
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
  Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.  
   
  [Hledání procesu v zobrazení procesů](../debugger/how-to-search-for-a-process-in-processes-view.md)  
@@ -52,8 +53,8 @@ Další informace o specifickém procesu pomocí tohoto dialogového okna. K zob
  [Zobrazení procesů](../debugger/processes-view.md)  
  Zobrazení stromu active procesů.  
   
- [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)  
+ [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
  Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
   
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)  
+ [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
  Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.

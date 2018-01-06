@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3bc985bf9fb55b67b5a332f007abe98c6718fbf2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: aa70e2a6019a97c248e6d4b411dacc222be59a1f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-a-port-supplier"></a>Implementace Port dodavatele
 Port dodavatele poskytuje porty na žádost o správce ladicí relace (SDM). Port dodavatele musí implementovat při ladění do počítače bez modelu DCOM, nebo když nové zařízení musí být podporována. Zajistit ladění na mobilní telefon, například mohly implementovat dodavatele port, který poskytuje porty, které se připojují na mobilní telefon (možná prostřednictvím Reakcí nebo buňky připojení) a vytvoří výčet procesy a programy spuštěné na telefonu.  
@@ -30,12 +31,12 @@ Port dodavatele poskytuje porty na žádost o správce ladicí relace (SDM). Por
  [Implementace a registrace dodavatele portu](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
  Popisuje, jak SDM komunikuje s dodavatelem port a jeho porty.  
   
- [Požadovaný Port dodavatele rozhraní](../../extensibility/debugger/required-port-supplier-interfaces.md)  
+ [Požadovaná rozhraní dodavatele portu](../../extensibility/debugger/required-port-supplier-interfaces.md)  
  Dokumenty rozhraní, která musí být implementována získat port dodavatele.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Koncepty ladicí program](../../extensibility/debugger/debugger-concepts.md)  
+ [Koncepty ladicího programu](../../extensibility/debugger/debugger-concepts.md)  
  Popisuje hlavní koncepty ladění architektury.  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšiřitelnost ladicího programu sady Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Rozšiřitelnost programu Visual Studio Debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

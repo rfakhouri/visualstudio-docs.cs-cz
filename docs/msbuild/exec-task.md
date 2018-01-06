@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7447f3f6fc9042bbcca5fc176e26200f4848a04c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0eadf1b5d94a136861d45275ebc5b94b6707cf14
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="exec-task"></a>Exec – úloha
 Spouští zadaný programu nebo příkaz pomocí zadaných argumentů.  
@@ -36,8 +37,11 @@ Spouští zadaný programu nebo příkaz pomocí zadaných argumentů.
 |Parametr|Popis|  
 |---------------|-----------------|  
 |`Command`|Požadované `String` parametr.<br /><br /> Příkazy ke spuštění. To může být systémové příkazy, jako je například attrib, nebo spustitelný soubor, jako je například program.exe, runprogram.bat nebo setup.msi.<br /><br /> Tento parametr může obsahovat více řádků příkazy. Alternativně můžete umístit více příkazů v dávkovém souboru a spusťte ho pomocí tohoto parametru.|  
+|`ConsoleOutput`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Výstup každé položky je řádek ze standardní výstup nebo standardní chybový proud vygenerované nástrojem. To zachycenou pouze pokud `ConsoleToMsBuild` je nastaven na `true`.|
+|`ConsoleToMsBuild`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, úloha zaznamená standardní chybu a standardní výstup nástroje a zpřístupnit v `ConsoleOutput` výstupní parametr. Výchozí hodnota je `false`.|
 |`CustomErrorRegularExpression`|Volitelné `String` parametr.<br /><br /> Určuje regulární výraz, který se používá k přímé chyba řádků v výstupu nástroje. To je užitečné pro nástroje, které produkují neobvykle formátovaný výstup.|  
 |`CustomWarningRegularExpression`|Volitelné `String` parametr.<br /><br /> Určuje regulární výraz, který se používá k přímé upozornění řádků v výstupu nástroje. To je užitečné pro nástroje, které produkují neobvykle formátovaný výstup.|  
+|`EchoOff`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, nebude úloha emitování rozšířené formu `Command` do protokolu nástroje MSBuild. Výchozí hodnota je `false`.|
 |`ExitCode`|Volitelné `Int32` výstupní parametr jen pro čtení.<br /><br /> Určuje kód ukončení, které poskytuje provedeného příkazu.|  
 |`IgnoreExitCode`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, úloha ignoruje ukončovací kód, který zajišťuje provedeného příkazu. Jinak vrátí úlohu `false` Pokud provedeného příkazu vrátí nenulový ukončovací kód.|  
 |`IgnoreStandardErrorWarningFormat`|Volitelné `Boolean` parametr.<br /><br /> Pokud `false`, vybere řádky v výstupu, který odpovídat formátu Standardní chyby nebo upozornění a je zaznamená jako chyby nebo upozornění. Pokud `true`, toto chování zakázat. Výchozí hodnota je `false`.|  

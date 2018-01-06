@@ -11,11 +11,12 @@ caps.latest.revision: "13"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 98811cc3e7830dfcbf548bc34c5b3ee268e6f858
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e9fc83c57b2e1d0bb9768835b3cccc5be36b9295
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Vytváření kódu z jazyka specifického pro doménu
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] nabízí efektivní způsob, jak generovat kód, dokumentů, konfigurační soubory a jiné artefakty z dat v modelech. Pomocí [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], můžete vytvořit sadu tříd, které představují data a může zapisovat textové šablony ve třídách jejichž názvy a vlastnosti odrážet tato data.  
@@ -37,15 +38,15 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] nabízí efektivní zp
  Tato část popisuje některé z způsobů, jak vytvářet, upravovat a ladění textové šablony použité v [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Přístup k modely z textové šablony](../modeling/accessing-models-from-text-templates.md)  
+ [Přístup k modelům z textových šablon](../modeling/accessing-models-from-text-templates.md)  
   
  Poskytuje základní informace o odkazující na jazyk specifické pro doménu v textové šablony.  
   
- [Návod: Ladění textové šablony této přístupů modelu](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
+ [Návod: Ladění textové šablony přistupující k modelu](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
   
  Popisuje postup řešení potíží a ladění na textové šablony, která odkazuje na jazyk, specifické pro doménu.  
   
- [Návod: Připojování hostitele k generovaného procesoru direktiv](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
+ [Návod: Připojení hostitele k procesoru vygenerovaných direktiv](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
   
  Popisuje, jak připojit vlastní hostitel generovaného direktivy procesor.  
   
@@ -59,10 +60,10 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] nabízí efektivní zp
  Poskytuje syntaxe direktivy textových šablon a řídicí bloky.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+ [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
  Vysvětluje proces transformace textových šablon.  
   
- [Generování kódu v procesu sestavení](../modeling/code-generation-in-a-build-process.md)  
+ [Vytvoření kódu v procesu sestavení](../modeling/code-generation-in-a-build-process.md)  
   
  Pokud jsou generování souborů z DSL na serveru, sestavení, přečtěte si toto téma.

@@ -20,11 +20,12 @@ caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da7f4695bc817a66761c579b4c5af85b59ee041f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8d4e1e92eab8def99a67b7da531770bb2dd58fc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="granting-trust-to-office-solutions"></a>Udělení důvěry řešením pro systém Office
   Udělení vztah důvěryhodnosti řešení pro systém Office znamená, úprava zásady zabezpečení o každém cílovém počítači tak, aby důvěřoval sestavení řešení, manifest aplikace, manifest nasazení a dokumentu. Vztah důvěryhodnosti lze udělit řešení Office vy nebo koncový uživatel.  
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)   
  [Udělení důvěry dokumentům](../vsto/granting-trust-to-documents.md)   
  [Řešení potíží se zabezpečením řešení Office](../vsto/troubleshooting-office-solution-security.md)   
- [Specifické aspekty zabezpečení pro řešení Office](../vsto/specific-security-considerations-for-office-solutions.md)  
+ [Specifické aspekty zabezpečení u řešení pro systém Office](../vsto/specific-security-considerations-for-office-solutions.md)  
   
   

@@ -19,11 +19,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f94a8364f52f7723a1ab9dae6114a8bb66a91683
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Rozšíření vlastnosti, seznam úkolů, výstupní a možnosti Windows
 Žádné okno nástroje v sadě Visual Studio můžete přistupovat. Tento návod ukazuje, jak integrovat do nové informace o vaší okno nástroje **možnosti** stránky a nové nastavení na **vlastnosti** stránky a také jak k zápisu do **seznam úkolů** a **výstup** systému windows.  

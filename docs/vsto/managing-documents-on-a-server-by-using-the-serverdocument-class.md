@@ -19,11 +19,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd24d18df965535ee1315ae7807ac23723dc51d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 96d69ccb51be632440474bb0aa1b32e6ebe7a68a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-documents-on-a-server-by-using-the-serverdocument-class"></a>Správa dokumentů na serveru s použitím třídy ServerDocument
   Použitím třídy ServerDocument v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] spravovat několik aspektů přizpůsobení na úrovni dokumentu, i když nejsou nainstalované aplikace Microsoft Office Word a Microsoft Office Excel. Můžete provádět následující úlohy:  
@@ -70,5 +71,5 @@ ms.lasthandoff: 10/31/2017
  [Postupy: připojení rozšíření spravovaného kódu k dokumentům](../vsto/how-to-attach-managed-code-extensions-to-documents.md)   
  [Postupy: odebrání rozšíření spravovaného kódu z dokumentů](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
  [Visual Studio Tools for Office Runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Ukládání dat do mezipaměti](../vsto/caching-data.md)  
+ [Ukládaní dat do mezipaměti](../vsto/caching-data.md)  
   

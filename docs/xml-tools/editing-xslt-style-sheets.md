@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a10bcadbffef1f67086263762f292765c932a986
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c2e405c988f07a373538e723b44acccc9838d853
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-xslt-style-sheets"></a>Úpravy XSLT šablony stylů
 Editor souborů XML lze také upravit XSLT šablony stylů. Můžete využít výhod výchozí funkce editoru, jako je technologie IntelliSense, osnovy, fragmenty kódu XML a tak dále. Kromě toho existují také nové funkce, které usnadňují vývoj v XSLT.  
@@ -40,4 +41,4 @@ Editor souborů XML lze také upravit XSLT šablony stylů. Můžete využít v�
  Můžete spustit ladicí program XSLT ze souboru XSLT v editoru XML. Ladicí program podporuje nastavení zarážek v souboru XSLT, zobrazení stavu spuštění XSLT a tak dále. Ukazatele myši na proměnnou XSLT zobrazí popisek s hodnotou proměnné. Ladicí program slouží k ladění šablony stylů a ladit kompilované transformace XSL vyvolat z jiné aplikace. Další informace najdete v tématu [ladění XSLT](../xml-tools/debugging-xslt.md).  
   
 ## <a name="see-also"></a>Viz také  
- [XML Editor](../xml-tools/xml-editor.md)
+ [Editor XML](../xml-tools/xml-editor.md)

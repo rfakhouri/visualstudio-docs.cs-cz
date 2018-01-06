@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd3e3b8da06e6846c8c6adc6ddc3f65873c1e2bb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dcf36dc8f4ef818a84719bc534a09ecf30baf76f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-standard-editors"></a>Postupy: otevření standardní editory
 Když otevřete standardního editoru, umožníte IDE určit standardní editor pro určený typ souboru, místo zadání editor projektu specifické pro soubor.  
@@ -57,4 +58,4 @@ Když otevřete standardního editoru, umožníte IDE určit standardní editor 
  [Otevření a uložení položky projektu](../extensibility/internals/opening-and-saving-project-items.md)   
  [Postupy: otevření projektu konkrétní editory](../extensibility/how-to-open-project-specific-editors.md)   
  [Postupy: otevření editory pro otevřené dokumenty](../extensibility/how-to-open-editors-for-open-documents.md)   
- [Zobrazení souborů pomocí příkaz pro otevření souboru](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
+ [Zobrazení souborů pomocí příkazu Otevřít soubor](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)

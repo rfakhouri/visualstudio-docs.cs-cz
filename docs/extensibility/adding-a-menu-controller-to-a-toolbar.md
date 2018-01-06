@@ -16,11 +16,12 @@ caps.latest.revision: "38"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 786d7c8841f680d5af5c539e30723289df4db0f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 720aeb5670127d64e7b3fc9b016a032c0526c083
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Přidávání řadiče nabídky na panelu nástrojů
 Tento názorný postup je založený na [přidání panelu nástrojů na okno nástroje](../extensibility/adding-a-toolbar-to-a-tool-window.md) návod a ukazuje, jak přidat řadič nabídky na panelu nástrojů okna. Postupy v tomto poli lze použít také na panelu nástrojů, který je vytvořen v [přidávání panelů nástrojů](../extensibility/adding-a-toolbar.md) návod.  
@@ -229,4 +230,4 @@ Tento názorný postup je založený na [přidání panelu nástrojů na okno n�
   
 ## <a name="see-also"></a>Viz také  
  [Přidávání panelů nástrojů do okno nástroje](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Přidávání panelů nástrojů](../extensibility/adding-a-toolbar.md)
+ [Přidání panelu nástrojů](../extensibility/adding-a-toolbar.md)

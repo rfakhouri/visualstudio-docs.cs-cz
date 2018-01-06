@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18f7aa6c48b0f1deebd292193d46119e8a97c4b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fbc385f5bf00d8e54aadc21162a9174be71d416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Postupy: Vytvoření a úprava úrovní MIP
 Tento dokument ukazuje, jak používat **Editor obrázků** ke generování a úpravě *MIP úrovně* texture místo úroveň z – podrobnosti (mez stanovitelnosti).  
@@ -45,4 +46,4 @@ Tento dokument ukazuje, jak používat **Editor obrázků** ke generování a ú
 >  Pokud není potřeba upravovat obsah jednotlivých úrovní MIP – jako mohou k dosažení určité účinky – doporučujeme generování mipmaps z texture zdroje v čase vytvoření buildu. To pomáhá zajistit, že MIP úrovně zůstat synchronizované s texture zdroje, protože úpravy na úrovni MIP nejsou automaticky rozšíří na jiných úrovních. Další informace o tom, jak vygenerovat mipmaps v čase vytvoření buildu najdete v tématu [postupy: Export texturou této obsahuje Mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: vytvoření základní textury](../designers/how-to-create-a-basic-texture.md)
+ [Postupy: Vytvoření základní textury](../designers/how-to-create-a-basic-texture.md)

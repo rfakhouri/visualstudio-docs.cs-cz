@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1f4fd45337ebd0f00362d352077cf8441e6f5afa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 57aa814ac458fc3c893f8a2d557840d936ed033b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="animate-objects-in-xaml-designer"></a>Animace objektů v Návrháři XAML
 Můžete vytvořit krátké animace, které přesun objektů nebo je objevovat a odhlášení.  
@@ -41,4 +42,4 @@ Můžete vytvořit krátké animace, které přesun objektů nebo je objevovat a
 |![Konfigurace nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [vytvořit animace a pracovat s usnadnění](https://www.youtube.com/watch?v=mAJXYrwxGYo)|Animace důsledky, které se zobrazí po stisknutí dolů tlačítka na bitovou kopii kalkulačky.|  
   
 ## <a name="see-also"></a>Viz také  
- [Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+ [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

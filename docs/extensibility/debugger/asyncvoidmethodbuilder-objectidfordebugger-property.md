@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3dcff37e81bffefcc4385ad014d04c9b259c6eeb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4382da42fa21c5a3ce10887ad856e29bba9ae088
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>Vlastnost AsyncVoidMethodBuilder.ObjectIdForDebugger
 Získá objekt, který se dá použít k jednoznačné identifikaci tohoto tvůrce pro ladicí program.  
@@ -36,4 +37,4 @@ private object ObjectIdForDebugger
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
- [Interní informace o paralelní rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Interní informace o paralelním rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

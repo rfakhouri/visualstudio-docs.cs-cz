@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589013b996f9ed018e28292a27c6a760eef1dae7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec61845433329645fbc4f02a72c062c3cf47f9f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges – funkce
 Tato funkce zobrazí daný seznam souborů a poskytuje informace o změnách název pro každý soubor prostřednictvím funkce zpětného volání.  
@@ -67,4 +68,4 @@ SCCRTN SccQueryChanges(
 ## <a name="see-also"></a>Viz také  
  [Funkce modulu Plug-in rozhraní API ovládacího prvku zdroje](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
- [Kódy chyb](../extensibility/error-codes.md)
+ [Chybové kódy](../extensibility/error-codes.md)

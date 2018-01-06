@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57e6d01e918256217e94077f6414651e50dd4c74
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 018103ed0ede32b65403821e36128bca6fd083a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem – element
   Představuje položku vlastní data, která je přidružená k položce projektu služby SharePoint, ve formátu klíč/hodnota. Klíč i hodnota musí být řetězce.  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|**Klíč**|Požadované **xs:string** atribut.<br /><br /> Klíč, který se používá k ukládání a načítání datová položka.|  
+|**Key**|Požadované **xs:string** atribut.<br /><br /> Klíč, který se používá k ukládání a načítání datová položka.|  
 |**Hodnota**|Požadované **xs:string** atribut.<br /><br /> Hodnota datová položka.|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
 |**Nesmí být prázdné**|Ne|  
   
 ## <a name="see-also"></a>Viz také  
- [Referenční dokumentace schématu položek projektu služby SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+ [Referenční dokumentace schématu položek projektu SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

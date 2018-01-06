@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd963c269ee5fe18d3f490bf85bab5dcf3afbf9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Ukládání informací o symbolech s datovými soubory výkonu
 Pokud používáte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) k analýze souborů a plánování přesunutí souboru VSP do jiného počítače, musíte nastavit výkon nastavení projektu pro uložení nebo *serializovat* symboly v váš soubor sestavy. Tím se zvyšuje velikost souboru sestavy. Serializace symboly je třeba dvou důvodů:  
@@ -67,4 +68,4 @@ Pokud používáte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] int
 ## <a name="see-also"></a>Viz také  
  [Ukládání a export výkonu nástrojů pro Data](../profiling/saving-and-exporting-performance-tools-data.md)   
  [Postupy: referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)   
- [Vsperfreport –](../profiling/vsperfreport.md)
+ [VSPerfReport](../profiling/vsperfreport.md)

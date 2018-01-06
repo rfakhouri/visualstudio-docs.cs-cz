@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e90143904c8d628e4288e24602907a75ae4bc59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9d807c38af14249b265c411de31f6cde03855c60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-local-database-files-in-office-solutions-overview"></a>Přehled použití místních souborů databáze v řešeních pro systém Office
   Ve vašem řešení Office můžete zahrnout soubor databáze, jako je například SQL Server Express (MDF) soubor nebo soubor aplikace Microsoft Office Access (.mdb). To umožňuje koncovým uživatelům udržovat místní databázi v situacích, kdy není povinné, například v místní inventáře řešení, které se používá v jednom počítači zachování do centralizované databáze.  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
  [Postupy: naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
  [Postupy: aktualizace zdroje dat s použitím dat z hostitelského ovládacího prvku](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
- [Ukládání dat do mezipaměti](../vsto/caching-data.md)  
+ [Ukládaní dat do mezipaměti](../vsto/caching-data.md)  
   
   

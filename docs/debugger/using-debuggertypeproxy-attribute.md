@@ -21,11 +21,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7796f11581f072e0437f341590bb064eeec81f7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36e80508ce0febc7678585faf6518bf6b838a289
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>Používání atributu DebuggerTypeProxy
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute>Určuje server proxy nebo stand-in, typu a změny, které způsob typ se zobrazí v ladicího programu. Při zobrazení proměnné, která má proxy server proxy serveru znamená původní typu v **zobrazení**. V okně proměnné ladicí program se zobrazí pouze veřejné členy typ proxy. Soukromé členy nejsou zobrazeny.  

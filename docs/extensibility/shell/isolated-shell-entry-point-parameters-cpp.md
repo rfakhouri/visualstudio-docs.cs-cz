@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54b15d849efacb681eb8b4238cd067144bc67342
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 78993e12c1ab4098e20aad243faaa487ff0ea35b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Izolované prostředí vstupní bod parametrů (C++)
 Při spuštění aplikace z Visual Studia založený na prostředí, zavolá vstupní bod spuštění z prostředí sady Visual Studio. Následující nastavení může být přepsána ve volání vstupní bod spuštění prostředí. Popis jednotlivých nastaveních najdete v tématu [. Soubory Pkgdef](modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md).  

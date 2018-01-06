@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e7f810ff5ad1654081cd061edbc4360eb988402
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 60365f3722ae4e2c1f8b52dacc3df03840fb3304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Postupy: určení symbolů v knihovně
 Procházení symbol nástrojů zobrazí hierarchické zobrazení symbolů. Symboly představují obory názvů, třídy, členy třídy, objektů a další elementy jazyka.  
@@ -87,4 +88,4 @@ N1
 ## <a name="see-also"></a>Viz také  
  [Podpůrné nástroje procházení – Symbol](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
  [Postupy: registrace knihovny pomocí Správce objektu](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Postupy: vystavení seznam symbolů poskytované knihovny ke správci objektů](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Postupy: Zveřejnění seznamů symbolů poskytovaných knihovnou správci objektů](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

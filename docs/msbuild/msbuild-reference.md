@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 40b1fdb27bd2a256a1cff4b5a2066a3223939771
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f780de1bac1786ac3c5ffb70bd1a2f442fc8734
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-reference"></a>Referenční dokumentace nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]je systém sestavení pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Následující odkazy vás přesměrují na témata, které obsahují [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] referenční informace.  
@@ -40,16 +41,16 @@ ms.lasthandoff: 10/31/2017
  [Podmíněné konstrukce](../msbuild/msbuild-conditional-constructs.md)  
  Popisuje postup použití `Choose`, `When`, a `Otherwise` elementy.  
   
- [MSBuild vyhrazené a známé vlastnosti](../msbuild/msbuild-reserved-and-well-known-properties.md)  
+ [Vyhrazené a známé vlastnosti nástroje MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)  
  Popisuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] rezervované vlastnosti.  
   
- [Běžné vlastnosti projektu nástroje MSBuild](../msbuild/common-msbuild-project-properties.md)  
+ [Obecné vlastnosti projektu nástroje MSBuild](../msbuild/common-msbuild-project-properties.md)  
  Popisuje vlastnosti projektu, které jsou společné pro všechny typy projektů a také vlastnosti, které se často používají typy konkrétní projekt.  
   
  [Společné položky projektu nástroje MSBuild](../msbuild/common-msbuild-project-items.md)  
  Popisuje položky projektu, které jsou společné pro všechny typy projektů a položek, které se často používají typy konkrétní projekt.  
   
- [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md)  
+ [Referenční dokumentace k příkazovému řádku](../msbuild/msbuild-command-line-reference.md)  
  Popisuje argumenty a přepínače, které lze použít s [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].exe.  
   
  [. Soubory cíle](../msbuild/msbuild-dot-targets-files.md)  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
  [Další zdroje informací](../msbuild/additional-resources-for-msbuild.md)  
  Obsahuje odkazy na [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] weby a diskusní skupiny.  
   
- [WPF MSBuild – Reference](../msbuild/wpf-msbuild-reference.md)  
+ [Referenční dokumentace WPF MSBuild](../msbuild/wpf-msbuild-reference.md)  
  Obsahuje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] cílů a referenční dokumentace úlohy pro Windows Presentation Foundation (WPF).  
   
  [Speciální řídicí znaky](../msbuild/special-characters-to-escape.md)  

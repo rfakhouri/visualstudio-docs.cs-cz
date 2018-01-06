@@ -12,11 +12,12 @@ caps.latest.revision: "64"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 95aa5c1a5df7200ff3fda3554ea5944767aeb082
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e12acc12559b4295958906fd182c381933bb5d45
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Mobilní vývoj pro různé platformy v sadě Visual Studio
 Aplikace pro Android, iOS a Windows zařízení můžete vytvořit pomocí sady Visual Studio.  Při navrhování vaší aplikace pomocí nástrojů v sadě Visual Studio můžete snadno přidání připojených služeb, jako je například Office 365, Azure App Service a Application Insights.
@@ -92,7 +93,7 @@ Aplikace pro Android, iOS a Windows zařízení můžete vytvořit pomocí sady 
 |--------------------|
 |[Další informace o univerzálních aplikací pro Windows](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Centrum vývojářů pro Windows)|
 |[Vytvoření vaší první z nich](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Centrum vývojářů pro Windows)|
-|[Vývoj aplikací pro univerzální platformu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
+|[Vývoj aplikací pro Univerzální platformu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrace aplikací do univerzální platformy Windows (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
 ##  <a name="HTML"></a>Vytvoření aplikace pro Android, iOS a Windows (HTML/JavaScript)
@@ -117,7 +118,7 @@ Aplikace pro Android, iOS a Windows zařízení můžete vytvořit pomocí sady 
 |**Víc se uč**|
 |--------------------|
 |[Instalaci sady Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Začínáme s nástroji Visual Studio Tools pro Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
+|[Začínáme s nástroji Visual Studio Tools pro Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
 |[Další informace o emulátor sady Visual Studio pro Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a>Vytvoření aplikace pro Android a Windows (C++)

@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4f329b1402917bc7c129bcdc9f504dfe99bcccbf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1b993512350e6bd27d0dce8ef359bc33fccde5ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Postupy: Vytvoření webové části služby SharePoint pomocí návrháře
   Webové části můžete vytvořit přidáním **Visual webovou část** položky žádné projektu služby SharePoint. Otevře se návrháře Visual Web Developer v sadě Visual Studio, kde můžete přidat ovládacími prvky a kódem do webové části. Visual webové části fungovat stejným způsobem, stejně jako webové části. Jediným rozdílem je, že navrhnete visual webových částí v návrháři Visual Web Developer.  

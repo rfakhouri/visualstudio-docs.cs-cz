@@ -16,11 +16,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: abf6598cd18661575c0c6bcf6be3c70fffbd21f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: bc470eb36e700f136fec57e208c5bd920ea5e073
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-page-project-designer-c"></a>Stránka Sestavení, návrhář projektu (C#)
 Použití **sestavení** stránky **Návrhář projektu** zadat vlastnosti konfigurace sestavení projektu. Tato stránka se vztahuje na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze projekty.  
@@ -116,9 +117,9 @@ Označuje, že ve spravované aplikaci zveřejní objektu COM (Obálka volateln�
 **Generovat sestavení serializace**  
 Určuje, zda kompilátor použije k vytvoření sestavení serializace XML nástroje Generátor serializátor XML (Sgen.exe). Sestavení serializace může zlepšit výkon spuštění <xref:System.Xml.Serialization.XmlSerializer> Pokud jste použili třídy k serializaci typů v kódu. Ve výchozím nastavení je tato možnost nastavena na **automaticky**, která určuje, že sestavení serializace generováno pouze v případě, že jste použili <xref:System.Xml.Serialization.XmlSerializer> ke kódování typy v kódu jazyka XML. **Vypnout** Určuje, že sestavení serializace nikdy vydána, bez ohledu na to, jestli váš kód používá <xref:System.Xml.Serialization.XmlSerializer>. **Na** Určuje, že sestavení serializace vždy vygenerovat. Sestavení serializace jsou pojmenované `TypeName`. XmlSerializers.dll. Další informace najdete v tématu [nástroje Generátor serializátor XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).  
 
-**Upřesnit**  
+**Pokročilé**  
 Kliknutím zobrazíte [Advanced sestavení dialogové okno nastavení (C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md) dialogové okno.  
 
 ## <a name="see-also"></a>Viz také  
 [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)   
-[Možnosti kompilátoru C#](/dotnet/csharp/language-reference/compiler-options/index)
+[Možnosti kompilátoru jazyka C#](/dotnet/csharp/language-reference/compiler-options/index)

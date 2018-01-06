@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cde0a7c34fe81c86d9f500bb1800006e5291ee92
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cbf4e9f2ccbe895db79115949818345c62245f71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Volitelné porovnání projektu místní složku pro zdrojové úložiště ovládací prvek
 Ve zdroji řízení 1.2 rozhraní API modulu Plugin porovnání mezi složky místní projektu a Správa zdrojového kódu se dá udělat pomocí funkce [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) a [SccDirDiff](../../extensibility/sccdirdiff-function.md).  
@@ -42,4 +43,4 @@ Ve zdroji řízení 1.2 rozhraní API modulu Plugin porovnání mezi složky mí
 >  Tato funkce používá stejné příznaky příkazu jako [SccDiff](../../extensibility/sccdiff-function.md). Jako modul plugin poskytovatele správy zdrojového kódu můžete se rozhodnout nebude podporovat operace "rychlý rozdílové" pro adresáře.  
   
 ## <a name="see-also"></a>Viz také  
- [Co je nového v zdroj ovládacího prvku modulu Plug-in rozhraní API verze 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Co je nového v rozhraní API modulu plug-in správy zdrojového kódu ve verzi 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

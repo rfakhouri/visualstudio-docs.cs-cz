@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b55d1d5ec8e84c8d16681ffd0ac738291e1bc39d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 911cc5e7959e5a392ff4ff53945ca5277605f7b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Vícesouborové DSL v jediném řešení
 V rámci jedné řešení můžete balíček několik DSL, linky, tak, že jsou nainstalovány společně.  
@@ -63,4 +64,4 @@ V rámci jedné řešení můžete balíček několik DSL, linky, tak, že jsou 
 ## <a name="see-also"></a>Viz také  
  [Integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
  [Postupy: přidání obslužné rutiny a přetažení](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Kopírování chování přizpůsobení](../modeling/customizing-copy-behavior.md)
+ [Přizpůsobení chování kopírování](../modeling/customizing-copy-behavior.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 22c307129e1c0295b041180f475c3d905cc43539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a1d5b2bbf218d35cf20638d865c6c78379c5f02b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Postupy: Určení prvního cíle k sestavení
 Soubor projektu může obsahovat jednu nebo více `Target` prvků, které definují, jak sestavení projektu. [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) Modul sestavení první ho projektu najde a všechny závislosti, pokud soubor projektu neobsahuje `DefaultTargets` atribut `InitialTargets` pomocí příkazového řádku je zadán atribut nebo cíl **/ Cíl** přepínače.  
@@ -75,6 +76,6 @@ Soubor projektu může obsahovat jednu nebo více `Target` prvků, které definu
      `msbuild <file name>.proj /t:Clean;Compile`  
   
 ## <a name="see-also"></a>Viz také
-  [Nástroje MSBuild](../msbuild/msbuild.md)  
+  [MSBuild](../msbuild/msbuild.md)  
  [Cíle](../msbuild/msbuild-targets.md)   
  [Postupy: Vyčištění sestavení](../msbuild/how-to-clean-a-build.md)

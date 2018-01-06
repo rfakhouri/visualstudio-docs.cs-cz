@@ -12,19 +12,20 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e2485d80fa9ec0816513ac7e5c374bdd6832dff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f8f21520b0ab26e3f0099097a473ee298c5674
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Modifikační klávesy nástroje pero v programu Blend
-Následující tabulka uvádí zkratky, které můžete použít při vytváření její změnit cestu **pera** nástroj ![](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Můžete také **pera** nástroj pro přidání nebo odebrání bodů na existující cesty, nebo pro připojení dvě existující cesty.  
+Následující tabulka uvádí zkratky, které můžete použít při vytváření její změnit cestu **pera** nástroj ![ ] (../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png "d514358f-185a-412f-a55d-36633b25dc8a"). Můžete také **pera** nástroj pro přidání nebo odebrání bodů na existující cesty, nebo pro připojení dvě existující cesty.  
   
 |Pro tuto akci|Postup|Ukazatele|  
 |-----------------------|-------------|-------------|  
-|Vytvořit bod zahájíte segment rovná čára|Klikněte na tlačítko Vytvořit nový bod|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Ukazatele pera|  
-|Vytvořit bod zahájíte segment křivku|Klikněte na tlačítko Vytvořit nový bod a poté přetáhněte upravit tečný popisovače před uvolněním tlačítka myši|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8")<br /><br /> Ukazatele pera|  
+|Vytvořit bod zahájíte segment rovná čára|Klikněte na tlačítko Vytvořit nový bod|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Ukazatele pera|  
+|Vytvořit bod zahájíte segment křivku|Klikněte na tlačítko Vytvořit nový bod a poté přetáhněte upravit tečný popisovače před uvolněním tlačítka myši|![](../designers/media/0bfb1b71-80ac-4ad4-aed8-40e09f8b7ab8.png "0bfb1b71-80ac-4AD4-aed8-40e09f8b7ab8")<br /><br /> Ukazatele pera|  
 |Upravit poslední tangens bez smooth omezení, což umožní provádět ostrý roh|Klikněte na tlačítko Vytvořit nový bod a potom stiskněte klávesu ALT před uvolněním tlačítka myši|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Pen upravit ukazatele|  
 |Rozdělení poslední tangens tak, aby tečný koncové body pracovat nezávisle, což umožní provádět ostrý roh|Chcete-li vytvořit nový bod a pak stiskněte klávesu ALT a přetáhněte ji před uvolněním tlačítka myši|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Pen upravit ukazatele|  
 |Přesunout tečný koncový bod, kolem nového bodu po 15 stupních|Chcete-li vytvořit nový bod a potom stiskněte klávesu SHIFT + ALT a přetáhněte ji před uvolněním tlačítka myši|![](../designers/media/317e5475-b70c-489f-9477-110a98639ade.png "317e5475-b70c-489f-9477-110a98639ade")<br /><br /> Pen upravit ukazatele|  

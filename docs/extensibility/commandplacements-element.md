@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7757716dc3f4c9e327a6145642e169c23e895c0e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 597f6cc9be1f2d33e72566d49bdfb3aa74ed4a8a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandplacements-element"></a>CommandPlacements Element
 CommandPlacements element skupiny CommandPlacement elementy a další CommandPlacements seskupení.  
@@ -50,13 +51,13 @@ CommandPlacements element skupiny CommandPlacement elementy a další CommandPla
 |Prvek|Popis|  
 |-------------|-----------------|  
 |CommandPlacements|Elementy CommandPlacement skupin a dalších CommandPlacements seskupení.|  
-|[CommandPlacement Element](../extensibility/commandplacement-element.md)|Umožňuje tlačítka, skupiny a nabídky mají být zahrnuty do více než jednu skupinu nebo nabídky.|  
+|[CommandPlacement – element](../extensibility/commandplacement-element.md)|Umožňuje tlačítka, skupiny a nabídky mají být zahrnuty do více než jednu skupinu nebo nabídky.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy.|  
+|[CommandTable – element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -71,4 +72,4 @@ CommandPlacements element skupiny CommandPlacement elementy a další CommandPla
   
 ## <a name="see-also"></a>Viz také  
  [CommandPlacement Element](../extensibility/commandplacement-element.md)   
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

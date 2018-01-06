@@ -18,18 +18,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4380299fd37b456dd3be6da7cf37981ad89b1caf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikace UWP v sadě Visual Studio
 Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) řídí stav spuštění aplikace – spuštění, pozastavení, obnovení a ukončení aplikace v odpovědi na akce uživatelů a stavu zařízení. Při ladění, systém Windows vypíná tyto aktivační události. Toto téma popisuje, jak má provést tyto události v ladicím programu.  
   
  Toto téma také popisuje, jak ladit **úlohy na pozadí**. Úlohy na pozadí umožňují provádění některých operací v procesech na pozadí, i když není aplikace spuštěna. Ladicí program můžete použít pro umístění vaší aplikace v režimu ladění a potom – bez spuštění uživatelského rozhraní – spuštění a ladění úloh na pozadí.  
   
- Další informace o úlohách správy životního cyklu procesu a pozadí najdete v části [spuštění, obnovení a multitasking](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/index).  
+ Další informace o úlohách správy životního cyklu procesu a pozadí najdete v části [spuštění, obnovení a multitasking](/windows/uwp/launch-resume/index).  
   
 ##  <a name="BKMK_In_this_topic"></a>V tomto tématu  
  [Události správu životního cyklu proces spuštění](#BKMK_Trigger_Process_Lifecycle_Management_events)  

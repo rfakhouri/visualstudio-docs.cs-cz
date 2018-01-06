@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f4f13cabe47bc55a78733ea2bee5504d404c5c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 1fcba0ef7abec3c8f5d71d34b8ff4e19e047d50b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-build-events-c"></a>Postupy: Specifikace událostí sestavení (C#)
 Použití událostí sestavení Pokud chcete zadat příkazy, které před zahájením sestavení nebo po dokončení sestavení. Události sestavení jsou spuštěny pouze v případě, že sestavení úspěšně dosáhne těchto bodů v procesu sestavení.  
@@ -187,4 +188,4 @@ Použití událostí sestavení Pokud chcete zadat příkazy, které před zahá
  [Stránka události sestavení, Návrhář projektu (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
  [Dialogové okno Příkazový řádek události/po sestavení události před sestavením](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
  [Postupy: určení událostí sestavení (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
- [Kompilaci a sestavování](../ide/compiling-and-building-in-visual-studio.md)
+ [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d17f11394b533cebd2481ea859ec2b0f2194c360
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5037b284a0f524a8b7c550a72fe76a27afd37f10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-forwarding-loggers"></a>Vytváření předávajících (sekundárních) protokolovacích nástrojů
 Předávání protokolovacích nástrojů zvýšit efektivitu protokolování umožňují zvolit události, kterou chcete sledovat, když vytváříte projekty v systému s více procesory. Když povolíte předávání protokolovacích nástrojů, můžete zabránit nežádoucí události z zahltí centrální protokolovacího nástroje zpomalení čase vytvoření buildu a zbytečného protokolu.  
@@ -44,4 +45,4 @@ Předávání protokolovacích nástrojů zvýšit efektivitu protokolování um
 ## <a name="see-also"></a>Viz také  
  [Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Protokolovací nástroje sestavení](../msbuild/build-loggers.md)   
- [Protokolování v prostředí s více procesory](../msbuild/logging-in-a-multi-processor-environment.md)
+ [Protokolování v prostředí s více procesory](../msbuild/logging-in-a-multi-processor-environment.md)

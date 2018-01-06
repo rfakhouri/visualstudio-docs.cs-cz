@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30b3ca5d68731fccf874b250741a6e67697539fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2fb7e886940cf26341a6f0f0fd46bb1fc594cc7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Zpřístupní vlastnosti rámce zásobníku.  
@@ -35,21 +36,21 @@ IDiaStackFrame : IUnknown
 |Metoda|Popis|  
 |------------|-----------------|  
 |[IDiaStackFrame::get_allocatesBasePointer](../../debugger/debug-interface-access/idiastackframe-get-allocatesbasepointer.md)|Získá příznak označující, že základní ukazatel je přidělen pro kód v tomto rozsahu adres. Tato metoda je zastaralá.|  
-|[Idiastackframe::get_base –](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Získá základní adresu rámečku.|  
-|[Idiastackframe::get_cplusplusexceptionhandling –](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Získá příznak označující, že zpracovávání výjimek v jazyce C++ je v platnosti.|  
+|[IDiaStackFrame::get_base](../../debugger/debug-interface-access/idiastackframe-get-base.md)|Získá základní adresu rámečku.|  
+|[IDiaStackFrame::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-cplusplusexceptionhandling.md)|Získá příznak označující, že zpracovávání výjimek v jazyce C++ je v platnosti.|  
 |[IDiaStackFrame::get_functionStart](../../debugger/debug-interface-access/idiastackframe-get-functionstart.md)|Získá příznak označující, zda blok obsahuje vstupní bod funkce.|  
-|[Idiastackframe::get_lengthlocals –](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Získá počet bajtů lokální proměnné nabídnutých v zásobníku.|  
-|[Idiastackframe::get_lengthparams –](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Získá počet bajtů parametrů nabídnutých v zásobníku.|  
-|[Idiastackframe::get_lengthprolog –](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Získá počet bajtů kódu prologu v bloku|  
-|[Idiastackframe::get_lengthsavedregisters –](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Získá počet bajtů uložené registry nabídnutých v zásobníku.|  
-|[Idiastackframe::get_localsbase –](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Získá základní adresu lokální proměnné.|  
-|[Idiastackframe::get_maxstack –](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|Načte maximální počet bajtů nabídnutých v zásobníku v rámečku.|  
-|[Idiastackframe::get_rawlvarinstancevalue –](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Načte hodnotu zadaného místní proměnné nezpracovaná bajtů.|  
-|[Idiastackframe::get_registervalue –](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Načte hodnotu zadaného registrace.|  
-|[Idiastackframe::get_returnaddress –](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Načte zpětná adresa rámečku.|  
-|[Idiastackframe::get_size –](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Získá velikost rámce v bajtech.|  
+|[IDiaStackFrame::get_lengthLocals](../../debugger/debug-interface-access/idiastackframe-get-lengthlocals.md)|Získá počet bajtů lokální proměnné nabídnutých v zásobníku.|  
+|[IDiaStackFrame::get_lengthParams](../../debugger/debug-interface-access/idiastackframe-get-lengthparams.md)|Získá počet bajtů parametrů nabídnutých v zásobníku.|  
+|[IDiaStackFrame::get_lengthProlog](../../debugger/debug-interface-access/idiastackframe-get-lengthprolog.md)|Získá počet bajtů kódu prologu v bloku|  
+|[IDiaStackFrame::get_lengthSavedRegisters](../../debugger/debug-interface-access/idiastackframe-get-lengthsavedregisters.md)|Získá počet bajtů uložené registry nabídnutých v zásobníku.|  
+|[IDiaStackFrame::get_localsBase](../../debugger/debug-interface-access/idiastackframe-get-localsbase.md)|Získá základní adresu lokální proměnné.|  
+|[IDiaStackFrame::get_maxStack](../../debugger/debug-interface-access/idiastackframe-get-maxstack.md)|Načte maximální počet bajtů nabídnutých v zásobníku v rámečku.|  
+|[IDiaStackFrame::get_rawLVarInstanceValue](../../debugger/debug-interface-access/idiastackframe-get-rawlvarinstancevalue.md)|Načte hodnotu zadaného místní proměnné nezpracovaná bajtů.|  
+|[IDiaStackFrame::get_registerValue](../../debugger/debug-interface-access/idiastackframe-get-registervalue.md)|Načte hodnotu zadaného registrace.|  
+|[IDiaStackFrame::get_returnAddress](../../debugger/debug-interface-access/idiastackframe-get-returnaddress.md)|Načte zpětná adresa rámečku.|  
+|[IDiaStackFrame::get_size](../../debugger/debug-interface-access/idiastackframe-get-size.md)|Získá velikost rámce v bajtech.|  
 |[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Získá příznak označující, že systém výjimek je v platnosti.|  
-|[Idiastackframe::get_type –](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Načte typ rámce.|  
+|[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Načte typ rámce.|  
   
 ## <a name="remarks"></a>Poznámky  
  Rámec zásobníku je abstrakcí volání funkce během jejího provádění.  
@@ -112,4 +113,4 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumstackframes –](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [Idiaenumstackframes::Next –](../../debugger/debug-interface-access/idiaenumstackframes-next.md)   
- [Idiastackwalkframe –](../../debugger/debug-interface-access/idiastackwalkframe.md)
+ [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md)

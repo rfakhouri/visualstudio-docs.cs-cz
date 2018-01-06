@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 436b5f745dc9b3b8c135ad111e6e708bbd391b4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ceee0091dc20938f9098985c2609f0a3d239c699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="references-element-visual-studio-templates"></a>Element odkazů (šablony sady Visual Studio)
 Skupiny odkazy na sestavení, které šablona se přidá do projektů.  
@@ -49,7 +50,7 @@ Skupiny odkazy na sestavení, které šablona se přidá do projektů.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Referenční dokumentace](../extensibility/reference-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje odkaz na sestavení přidat, pokud položka byla přidána do projektu. Musí být jeden nebo více `Reference` elementů v `References` elementu.|  
+|[Referenční informace](../extensibility/reference-element-visual-studio-templates.md)|Požadovaný element.<br /><br /> Určuje odkaz na sestavení přidat, pokud položka byla přidána do projektu. Musí být jeden nebo více `Reference` elementů v `References` elementu.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   

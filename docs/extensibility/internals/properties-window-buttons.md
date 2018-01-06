@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4cd83a8d8e72c18f8a6929e8985f7a8635a940d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-buttons"></a>Tlačítka Vlastnosti – okno
 V závislosti na vývoj jazyk a typ produktu, zobrazí se určité tlačítka na panelu nástrojů pro ve výchozím nastavení **vlastnosti** okno. Ve všech případech **Categorized**, **Alphabetized**, **vlastnosti**, a **stránky vlastností** tlačítka se zobrazí. V jazyce Visual C# a Visual Basic **události** tlačítko se zobrazí také. V některých projektech Visual C++ **VC ++ zprávy** a **přepsání VC** tlačítka se zobrazí. Může se zobrazit další tlačítka pro jiné typy projektů. Další informace o tlačítka v **vlastnosti** okně najdete v části [vlastnosti – okno](../../ide/reference/properties-window.md).  
@@ -39,4 +40,4 @@ V závislosti na vývoj jazyk a typ produktu, zobrazí se určité tlačítka na
 >  Nelze přidat tlačítka panelu nástrojů na **vlastnosti** okno pomocí nespravovaného kódu. Přidání tlačítka panelu nástrojů, musíte vytvořit spravovaného objektu, která je odvozena z <xref:System.Windows.Forms.Design.PropertyTab>.  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšíření vlastnosti](../../extensibility/internals/extending-properties.md)
+ [Rozšíření vlastností](../../extensibility/internals/extending-properties.md)

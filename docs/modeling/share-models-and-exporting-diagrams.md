@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 982a4f54788e38129adaf5b23c15609f3ccad53d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 49c6ea6eff4abbd8b0863bc04a07b8c912f35c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Sdílení modelů a export diagramů
 V sadě Visual Studio můžete sdílet modelů a diagramů s kolegy několika způsoby.  
@@ -50,8 +51,8 @@ V sadě Visual Studio můžete sdílet modelů a diagramů s kolegy několika zp
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Strukturujte svá řešení modelování](../modeling/structure-your-modeling-solution.md)|Sdílení modelů v projektu střední nebo velké.|  
-|[Exportovat diagramy jako obrázky](../modeling/export-diagrams-as-images.md)|Můžete zkopírovat částí diagramů do aplikací, jako jsou aplikace PowerPoint nebo Word nebo vytisknout diagram, který soubor ve formátu XPS.|  
+|[Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)|Sdílení modelů v projektu střední nebo velké.|  
+|[Exportování diagramů jako obrázků](../modeling/export-diagrams-as-images.md)|Můžete zkopírovat částí diagramů do aplikací, jako jsou aplikace PowerPoint nebo Word nebo vytisknout diagram, který soubor ve formátu XPS.|  
 |[Analýza a modelování vaší architektury](../modeling/analyze-and-model-your-architecture.md)|Přehled modelů a diagramů.|  
   
 ## <a name="see-also"></a>Viz také  

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24f3760fb328331684e6894954d79675ff27494e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ceabc30399871c7bbe7fef737e7ecbd87187257d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-document-properties-properties-window"></a>Vlastnosti dokumentu XML, vlastnosti – okno
 **Vlastnosti** okno poskytuje základní informace o dokumentu, který je aktivní v editoru XML. Vlastnosti, které jsou k dispozici lišit v závislosti na typu dokumentu XML, který je aktuálně aktivní.  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  Tato vlastnost je viditelná jenom v případě, že soubor XSLT je aktuálně aktivní v okně editoru.  
   
- **Výstup**  
+ **Output**  
  Soubor, který se vygeneruje, když transformace dokument XML.  
   
  Pokud soubor není určena, výchozí název souboru se generuje na základě `method` atributu u `xsl:output` element, který určuje příponu souboru. Výchozí soubor se nachází v dočasném adresáři aktuálního uživatele.  

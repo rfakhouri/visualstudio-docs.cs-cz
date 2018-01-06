@@ -16,11 +16,12 @@ caps.latest.revision: "39"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26f5777477617b0bffe008ec92873b852af8fe08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85d38f2347009d75c5e06365c757d2d51339bf06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Přidání příkazu na panelu nástrojů Průzkumník řešení
 Tento návod ukazuje, jak přidat tlačítko **Průzkumníku řešení** panelu nástrojů.  
@@ -120,4 +121,4 @@ Tento návod ukazuje, jak přidat tlačítko **Průzkumníku řešení** panelu 
  Viditelnost tlačítko řídí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dokud VSPackage je načtena. Po načtení VSPackage viditelnost tlačítko řídí VSPackage.  Další informace najdete v tématu [MenuCommands Vs. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

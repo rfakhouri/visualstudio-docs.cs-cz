@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 285cfb5a68055612fc7d77022b8f9d1d61067ded
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9440eeda69592fad2e7c8f4e3e936f4b3dff29b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="uninit"></a>UnInit
 Dokončí soubor protokolu grafiky, zavře se a uvolní prostředky, které jste použili při aplikaci se aktivně zaznamenání grafických informací.  
@@ -33,4 +34,4 @@ void UnInit();
  Po `UnInit` byla volána na instanci systému `VsgDbg` třídy, nové grafiky souboru protokolu lze vytvořit voláním `Init` a dokončené voláním `UnInit`. To můžete opakovat tolikrát, kolikrát chcete použít stejné `VsgDbg` instance vytvořit několik nezávislých grafiky soubory protokolu.  
   
 ## <a name="see-also"></a>Viz také  
- [Init –](init.md)
+ [Init](init.md)

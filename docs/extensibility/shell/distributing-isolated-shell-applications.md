@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7e2a85a7e94ad9a700b197c9c4e0f75e78b4ec2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6e9b7ded8d24e4d252d29338d89bd176648511a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="distributing-isolated-shell-applications"></a>Distribuce aplikací izolované prostředí
 Chcete-li vytvořit aplikaci izolované prostředí je třeba nainstalovat Visual Studio a sadu Visual Studio SDK. Pokud chcete distribuovat aplikace na počítače, další uživatelé nebo zákazníci, musí obsahovat speciální redistributable package pro izolované prostředí.  

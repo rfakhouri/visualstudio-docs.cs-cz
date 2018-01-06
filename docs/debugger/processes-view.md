@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2ca6d0d7f875e376af37fcdcfa5d4156b8f4038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d2dc97cbe5c6bc178e4b14c89287a3f1c3794dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processes-view"></a>Zobrazení procesů
 Zobrazení procesů zobrazí strom všech aktivních procesů ve vašem systému. Název modulu a ID procesu jsou zobrazeny. Zobrazení procesů použijte, pokud chcete prozkoumat konkrétní systém procesu, který obvykle odpovídá provádění programu. Procesy, které jsou určeny názvy modulů, nebo se označují "systémových procesů."  
@@ -46,10 +47,10 @@ Zobrazení procesů nástroje Spy ++
  Vysvětluje, jak zobrazit další informace o zprávu.  
   
 ### <a name="related-sections"></a>Související oddíly  
- [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)  
+ [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
  Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
   
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)  
+ [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
  Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.  
   
  [Dialogové okno hledání procesů](../debugger/process-search-dialog-box.md)  
@@ -58,5 +59,5 @@ Zobrazení procesů nástroje Spy ++
  [Dialogové okno vlastností procesu](../debugger/process-properties-dialog-box.md)  
  Zobrazí vlastnosti procesů vybrané v zobrazení procesů.  
   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)  
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
  Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.

@@ -13,11 +13,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f503d9e8b0ef125fdb72ea60a9928f308b900993
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 15dd5f0121fca86a38631bf775ec25d4428632e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-outlining"></a>Návod: vytvoření přehledu
 Můžete implementovat funkce založené na jazyce jako třeba osnovy definováním druhy text oblastí, které chcete rozbalit nebo sbalit. Můžete definovat oblasti v kontextu služby jazyk, nebo můžete definovat typ vlastního souboru název rozšíření a obsahu a definice oblast týkají pouze typu nebo definice oblasti můžete použít pro existující typ obsahu (například "text"). Tento návod ukazuje, jak definovat a zobrazení osnovy oblastí.  
@@ -134,4 +135,4 @@ Můžete implementovat funkce založené na jazyce jako třeba osnovy definován
 4.  Měla by existovat popisující oblast, která obsahuje oba složené závorky. Nyní byste měli mít klikněte na tlačítko mínus nalevo od otevřete závorek na Sbalit popisující oblast. Když sbalena oblast, symbol tří teček (...) by se měla objevit nalevo od oblasti sbalené a místní okno obsahující hledaný text **najeďte text** by se měla objevit při přesunutí ukazatele myši na se třemi tečkami.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

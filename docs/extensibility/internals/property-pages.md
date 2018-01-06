@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 484d53315f836117b69270a2f43b6b780733b9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-pages"></a>Stránky vlastností
 Uživatelé mohou zobrazit a změnit vlastnosti závislá na konfiguraci a - nezávislé projektu pomocí stránky vlastností. A **stránky vlastností** tlačítko je k dispozici v **vlastnosti** okno nebo na panelu nástrojů Průzkumníku řešení pro objekty, které poskytují zobrazení stránky vlastnosti vybraného objektu. Stránky vlastností jsou vytvořené pomocí prostředí a jsou dostupné pro projekty a řešení. Mohou, ale být k dispozici pro položky projektu, které používají závislá na konfiguraci vlastností. Tato funkce může použít, pokud soubory v rámci projektu vyžadují různé kompilátoru přepínač nastavení k vytvoření správně.  

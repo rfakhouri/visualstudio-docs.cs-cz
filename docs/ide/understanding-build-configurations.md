@@ -29,11 +29,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 003e4abaf5e6fbabead604c495b2018402cf74ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cf3f299f2b5ec2e38b5fe0315b6d0abc0411b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-configurations"></a>Principy konfigurací sestavení
 Můžete uložit různé konfigurace vlastností řešení a projektu pro použití v různých druhů sestavení. Vytvořit, vyberte, upravit nebo odstranit konfiguraci, můžete použít **nástroje Configuration Manager**. Chcete-li jej otevřít v řádku nabídek zvolte **sestavení**, **nástroje Configuration Manager**, nebo stačí zadat **konfigurace** v **Snadné spuštění** pole. Můžete také **konfigurace řešení** seznam na **standardní** nástrojů vyberte konfiguraci, nebo otevřít **nástroje Configuration Manager**.  
@@ -89,4 +90,4 @@ Můžete uložit různé konfigurace vlastností řešení a projektu pro použi
  [Kompilaci a sestavování](../ide/compiling-and-building-in-visual-studio.md)   
  [Projekty a řešení](../ide/solutions-and-projects-in-visual-studio.md)   
  [Odkaz sestavení C/C++](/cpp/build/reference/c-cpp-building-reference)   
- [Přepínače příkazového řádku nástroje devenv](../ide/reference/devenv-command-line-switches.md)
+ [Devenv – přepínače příkazového řádku](../ide/reference/devenv-command-line-switches.md)

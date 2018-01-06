@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9762bf8905ad162bd6059fae9ed1b7be06ca7919
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5fe8fe1706e6310c077399bb9300d439a7664d21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Postupy: Vytváření a odebrání závislostí projektu
 Při sestavování řešení, které obsahuje více projektů, může být nezbytné pro určité projekty nejprve sestavení, ke generování kódu, které používají jiné projekty. Když na projekt spotřebovává spustitelného kódu generovaných jiného projektu, projekt, který generuje kód se označuje jako závislosti projektu projekt, který využívá kód. Tyto vztahy závislosti lze definovat v **závislosti projektu** dialogové okno.  

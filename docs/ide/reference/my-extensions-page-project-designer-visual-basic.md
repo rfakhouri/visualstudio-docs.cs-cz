@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b95a691f3246fd3745ce90bffa7967bd5ad52d31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18817d7fd6af26c5e1ce9d021afc37d1e9da8f34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Stránka Moje rozšíření, návrhář projektu (Visual Basic)
 Použití **Moje rozšíření** stránky **Návrhář projektu** ke správě `My` rozšíření oboru názvů ve vašem projektu. `My`rozšíření oboru názvů umožňují přizpůsobit `My` obor názvů přidání vlastní členů. Informace o vytváření vlastních `My` rozšíření oboru názvů, najdete v části [rozšíření My Namespace v jazyce Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).  
@@ -43,4 +44,4 @@ Použití **Moje rozšíření** stránky **Návrhář projektu** ke správě `M
  [Rozšíření My Namespace v jazyce Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)   
  [Balení a nasazení vlastních rozšíření oboru názvů My](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)   
  [Rozšíření aplikačního modelu jazyka Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)   
- [Přizpůsobení výběru objektů jsou k dispozici v mé](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)
+ [Přizpůsobení výběru objektů dostupných v oboru názvů My](/dotnet/visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my)

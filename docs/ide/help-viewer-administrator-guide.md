@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4c034b6aec75499d2e38af35f22cd852fa2e15
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-viewer-administrator-guide"></a>Příručka správce Help Viewer
 Help Viewer umožňuje spravovat místní instalace nápovědy pro sítě v prostředích s nebo bez připojení k Internetu. Místní obsah nápovědy je konfigurováno na základě na počítač. Ve výchozím nastavení uživatelé musí mít práva správce k jejich místní Nápověda instalace aktualizace.  
@@ -143,7 +144,7 @@ Před vytvořením základní sady obsahu, musíte nejprve odinstalovat všechny
 3.  Spusťte soubor .bat na místní počítače, které chcete nainstalovat na obsah nápovědy.  
   
 ## <a name="see-also"></a>Viz také
-[Argumenty příkazového řádku pro aplikaci Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Přepsání Help Content Manager](../ide/help-content-manager-overrides.md)  
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
+[Argumenty příkazového řádku pro Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)  
+[Přepsání voleb Help Content Manageru](../ide/help-content-manager-overrides.md)  
+[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)  
 [Prohlížeč nápovědy sady SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

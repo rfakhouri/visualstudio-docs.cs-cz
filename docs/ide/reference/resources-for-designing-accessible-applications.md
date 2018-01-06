@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a5469b3e6f09df75561cf85ba56c96721494aabf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Prostředky pro navržení aplikací usnadňujících přístup
 Pomocí následujících odkazů se najít informace o technologiích, které podporují přístupné návrhu a také tipy a příklady pro vývoj dostupné aplikace systému Windows a webové servery. Obecné informace o usnadnění přístupu lze nalézt v online [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
@@ -57,4 +58,4 @@ Pomocí následujících odkazů se najít informace o technologiích, které po
 -   **Web Accessibility Initiative World Wide Web Consortium (W3C)** tento web obsahuje pokyny a postupy pro vývoj přístupný webový server. Další informace najdete v tématu [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
   
 ## <a name="see-also"></a>Viz také  
- [Funkce pro usnadnění přístupu sady Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)
+ [Funkce sady Visual Studio pro usnadnění přístupu](../../ide/reference/accessibility-features-of-visual-studio.md)

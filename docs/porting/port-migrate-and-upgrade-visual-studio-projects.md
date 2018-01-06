@@ -21,11 +21,12 @@ ms.assetid: bee759bd-6ff5-4c2e-913a-ea7d3c906c29
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c418d5ab3618a43a1e12bc3be2d96742fcbb669e
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: b91e9bae56333dcb07e19922c9a9461b23ab8e66
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Port, migrace a Upgrade projektů sady Visual Studio
 
@@ -47,7 +48,7 @@ Pokud nevidíte projektu nebo typ souboru tady, by měla být najdete [Visual St
 
 | Typ projektu | Podpora |
 | --- | --- |
-| Projekty .NET core (.xproj) | Projekty vytvořené pomocí sady Visual Studio 2015 používá preview nástrojů, která zahrnuje soubor projektu .xproj. Při otevření souboru .xproj s Visual Studio 2017, vyzve k migraci souboru .csproj formátu (záloha souboru .xproj přišla). Tento formát .csproj projektů .NET Core není podporována v VS2015 a starší.  Formát .xproj není podporovaný v aplikaci Visual Studio 2017 jinak než při migraci do .csproj. Další informace najdete v tématu [migrace .NET Core projekty do formátu .csproj](https://docs.microsoft.com/dotnet/core/migration/#visual-studio-2017).|
+| Projekty .NET core (.xproj) | Projekty vytvořené pomocí sady Visual Studio 2015 používá preview nástrojů, která zahrnuje soubor projektu .xproj. Při otevření souboru .xproj s Visual Studio 2017, vyzve k migraci souboru .csproj formátu (záloha souboru .xproj přišla). Tento formát .csproj projektů .NET Core není podporována v VS2015 a starší.  Formát .xproj není podporovaný v aplikaci Visual Studio 2017 jinak než při migraci do .csproj. Další informace najdete v tématu [migrace .NET Core projekty do formátu .csproj](/dotnet/core/migration/#visual-studio-2017).|
 | Webové aplikace ASP.NET a základní webové aplikace ASP.NET pomocí Application Insights povoleno | Pro každého uživatele, Visual Studio informace o prostředku je uložen v registru na uživatelskou instanci. Používá se při uživatele nemáte projektu otevřít a chce vyhledávání dat Azure Application Insights. Visual Studio 2015 používá umístění v registru jiné než Visual Studio 2017 a nedošlo ke konfliktu.<br/><br/>Jakmile uživatel vytvoří webovou aplikaci ASP.NET nebo webové aplikace ASP.NET Core, uloží se prostředek do v souboru .suo. Uživatel může otevřete projekt v sadě Visual Studio 2015 nebo 2017 a informace o prostředcích se použije pro obě sady Visual Studio podporuje projekty a řešení používá napříč obě verze. Uživatelé budou muset ověřit jednou pro každý produkt. Například pokud projektu vytvořené pomocí sady Visual Studio 2015 a otevřít v aplikaci Visual Studio 2017, uživatel bude muset ověření na Visual Studio 2017. |
 | Webový formulář nebo formulář Windows v jazyce C# nebo Visual Basic | Projekt můžete otevřít ve Visual Studio 2017 a Visual Studio 2015. |
 | Databáze projektů testování částí (.csproj, .vbproj)    | Starší datová jednotka projektů testování bude načten v Visual Studio 2017, ale použije GAC'd verzi závislostí. Upgrade projektu testů jednotek používat nejnovější závislosti klikněte pravým tlačítkem na projekt v Průzkumníku řešení a vyberte **převést na projekt testování částí SQL Server...** . |

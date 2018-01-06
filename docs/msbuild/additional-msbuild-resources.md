@@ -603,11 +603,12 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-ms.openlocfilehash: bf172e3a2f2098d72db5e56d54c598d656650c88
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c795dca53bec8191cdb9e2d61fa49ec03d84fa66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-msbuild-resources"></a>Další prostředky nástroje MSBuild
 Pokud pro řešený problém nelze najít potřebné informace v dokumentaci, lze použít jiné zdroje, například články znalostní báze, komunitu vývojářů nebo odbornou pomoc.  
@@ -624,4 +625,4 @@ Pokud pro řešený problém nelze najít potřebné informace v dokumentaci, lz
  Pokud stále máte otázky po zkuste jiné prostředky, můžete obrátit podpory společnosti Microsoft navštivte stránky [Microsoft Help and Support](http://go.microsoft.com/fwlink/?linkid=1782) webu. Informace o podpoře produktu ve vaší oblasti najdete v tématu [kontaktujte nás](../ide/talk-to-us.md).  
 
 ## <a name="see-also"></a>Viz také  
- [Řešení potíží s cílením rozhraní .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
+ [Řešení potíží s cílením na rozhraní .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

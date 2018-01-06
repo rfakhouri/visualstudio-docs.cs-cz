@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 856e8b3f13c5938dd6bd7ec1465bda9715636875
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 33a6c3b57ae47e25eeaeb22c245e77c8a810d9a2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>V okně interaktivní pomocí IPython
 
@@ -31,7 +32,7 @@ Pro účely tohoto postupu byste měli mít [Anaconda](https://www.continuum.io)
 
 1. Podívejte se na **balíčky** (nebo **pip**) kartě a ujistěte se, že `IPython` a `matplotlib` jsou uvedeny. Pokud tomu tak není, nainstalujte je zde.
 
-1. Vyberte **přehled** a vyberte **použití IPython interaktivním režimu.** (V sadě Visual Studio 2015, vyberte **konfigurovat interaktivní možnosti** otevřete **možnosti** dialogové okno, nastavte **interaktivním režimu** IPython a vyberte **OK** ).    
+1. Vyberte **přehled** a vyberte **použití IPython interaktivním režimu.** (V sadě Visual Studio 2015, vyberte **konfigurovat interaktivní možnosti** otevřete **možnosti** dialogové okno, nastavte **interaktivním režimu** IPython a vyberte **OK** ).
 
 1. Vyberte **otevřete okno interaktivní** se zprovoznit interaktivních okna v režimu IPython. Budete muset resetovat okno, pokud jste změnili právě interaktivním režimu; Možná budete také muset stiskněte klávesu Enter, pokud je to pouze >>> se zobrazí dotaz.
 
@@ -75,11 +76,11 @@ Pro účely tohoto postupu byste měli mít [Anaconda](https://www.continuum.io)
     ![Odesílání kódu z editoru do interaktivních okna](media/ipython-repl-05.png)
 
 1. Pokud chcete zobrazit grafy mimo okno interaktivní, spusťte kód místo pomocí **ladění > Spustit bez ladění** příkaz.
-    
+
 IPython obsahuje mnoho dalších užitečné funkcí například uvozovací znaky prostředí systému a nahrazení proměnné, zaznamenávání výstup atd. Odkazovat [IPython dokumentace](http://ipython.org/documentation.html) Další informace.
 
 ## <a name="related-topics"></a>Související témata
 
 - Chcete-li použít Jupyter snadno a bez instalace, zkuste bezplatnou [poznámkových bloků Azure hostovaná služba](https://notebooks.azure.com/) které vám umožní zachovat a sdílet s ostatními poznámkové bloky.
 
-- Jupyter (dříve označované jako IPython) můžete také spustit na virtuálním počítači v Azure vlastní systému Windows nebo Linux. Podrobnosti najdete v tématu [vytvoření Azure virtuální počítač. instalace Jupyter a systémem Azure Poznámkový blok Jupyter](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).
+- Jupyter (dříve označované jako IPython) můžete také spustit na virtuálním počítači v Azure vlastní systému Windows nebo Linux. Podrobnosti najdete v tématu [vytvoření Azure virtuální počítač. instalace Jupyter a systémem Azure Poznámkový blok Jupyter](/azure/virtual-machines/virtual-machines-linux-jupyter-notebook).

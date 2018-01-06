@@ -16,11 +16,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03a74bf73f457009a6f17f8e7bdda8e4e7b9e35f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fb109fd91e4c295bf372b14e26bc2a75c3be6b1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-a-watch-window-expression"></a>Vyhodnocení výrazu okno kukátka
 > [!IMPORTANT]
@@ -51,10 +52,10 @@ ms.lasthandoff: 10/31/2017
 >  Není nutné pro EE řídit tento dvoukrokový proces, i když to; předpokládá Visual Studio EE můžete analyzovat a vyhodnocovat u nich v stejný krok při [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) nazývá (jedná se jak MyCEE ukázka funguje, třeba). Pokud váš jazyk mohl vytvořit složité výrazy, můžete oddělit krok analýzy z kroku vyhodnocení. Tím mnoho podívejte se na výrazy, se může zvýšit výkonu v ladicím programu sady Visual Studio jsou zobrazena.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Ukázka implementace vyhodnocení výrazu](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
+ [Ukázková implementace vyhodnocení výrazu](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md)  
  Pomocí ukázkových MyCEE krok procesem vyhodnocení výrazu.  
   
- [Vyhodnocení výrazu](../../extensibility/debugger/evaluating-a-watch-expression.md)  
+ [Vyhodnocení výrazu kukátka](../../extensibility/debugger/evaluating-a-watch-expression.md)  
  Vysvětluje, co se stane po úspěšné výraz analýzy.  
   
 ## <a name="related-sections"></a>Související oddíly  

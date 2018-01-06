@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cc9abe486055d5bb9794021e28b786b9afe9b54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f98170313b72394b5b295769a77d8770cd1cb0e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view"></a>Zobrazení vláken
 Zobrazení vláken je plochý seznam všechna vlákna spojené s windows ve vašem systému. Vlákno ID a název modulu pro každé vlákno se zobrazí. Procesy nejsou zahrnuty, ale budete moci snadno najít proces, který vlastní vybrané vlákno.  
@@ -42,10 +43,10 @@ Zobrazení vláken nástroje Spy ++
  Vysvětluje, jak zobrazit další informace o vlákna.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)  
+ [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
  Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
   
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)  
+ [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
  Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.  
   
  [Dialogové okno hledání vláken](../debugger/thread-search-dialog-box.md)  
@@ -54,5 +55,5 @@ Zobrazení vláken nástroje Spy ++
  [Dialogové okno vlastností vláken](../debugger/message-properties-dialog-box.md)  
  Zobrazí vlastnosti vybrané v zobrazení vláken nebo zobrazení zpráv vlákna.  
   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)  
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
  Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.

@@ -16,11 +16,12 @@ caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 171a31147aec5c0477d6a23e73dc0e66693b534d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak přidat VSPackages prvky uživatelského rozhraní
 VSPackage můžete přidávat prvky uživatelského rozhraní (UI, například nabídky panely nástrojů) a nástroje systému windows pro Visual Studio prostřednictvím .vsct souboru.  
@@ -303,4 +304,4 @@ priority="0x0100" type="Menu">
 -   Chcete-li způsobit, že některé prvky uživatelského rozhraní, který se má zobrazit v prostředí IDE, musíte implementovat jednu nebo více rozhraní nebo napsat kód.  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšíření nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)
+ [Rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)

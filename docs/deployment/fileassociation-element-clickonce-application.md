@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1b5040f6de578a6436f16c1a1c81d9cef4f789ee
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bd5d7ed1a37923cefc4a6b7975610b6016fd0ae6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt; – Element (ClickOnce aplikace)
 Určuje příponu souboru, který se má přidružit aplikace.  
@@ -82,4 +83,4 @@ Určuje příponu souboru, který se má přidružit aplikace.
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [ClickOnce – Manifest aplikace](../deployment/clickonce-application-manifest.md)
+ [ClickOnce – manifest aplikace ](../deployment/clickonce-application-manifest.md)

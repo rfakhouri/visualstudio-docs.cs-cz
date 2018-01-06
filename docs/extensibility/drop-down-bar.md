@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f5da476bb9b54b536cb296112d578574822e410
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7058c0b93cd0ff4afb2a13b625cd7ef034b03699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="drop-down-bar"></a>Panel rozevíracího seznamu
 Panelu rozevíracího seznamu je k dispozici v horní části okna kódu a obsahuje dva rozevírací seznamy.  
@@ -51,4 +52,4 @@ Panel rozevíracího seznamu
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení Windows kódu pomocí starší verze rozhraní API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)   
- [Podpora pro navigační panel ve službě jazyk starší verze](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)
+ [Podpora navigačního panelu ve službě starší verze jazyka](../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)

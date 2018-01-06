@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: b39d142a44a99cc0fde362249d5717ee75c09323
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bbf11e020380114f12de3c6b71960faf80791ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Návod: Vytvoření kódu pomocí textových šablon
 Generování kódu umožňuje vytvářet kód programu, který je silného typu a ještě jde snadno změnit, pokud změny modelu zdroje. Tento rozdíl oproti alternativní postup zápisu úplně obecné program, který přijímá konfigurační soubor, který je flexibilnější, ale má za následek kód, který je ani jeden z nich tak snadno přečíst a změnit, ani je takové dobrý výkon. Tento návod ukazuje této výhody.  
@@ -104,7 +105,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 4.  V tomto návodu název souboru `exampleXml.xml`. Nastavte obsah byl soubor XML uvedené v předchozí části.  
   
- ..  
+ .  
   
 ### <a name="add-a-test-code-file"></a>Přidání souboru testovacího kódu  
  Přidejte do projektu soubor C# a zápisu v ní ukázkový kód, který chcete být schopni zapisovat. Příklad:  

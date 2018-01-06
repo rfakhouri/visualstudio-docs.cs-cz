@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efe08d9e23f1a77fd68df2bdba4389e7b7955b11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nové generace projektu: Pod pokličkou, první část
 Někdy představit o tom, jak vytvořit vlastní typ projektu? Zajímat, co se ve skutečnosti stane, když vytvoříte nový projekt? Umožňuje provést funkce Náhled pod pokličkou a zjistěte, co se skutečně děje.  
@@ -216,4 +217,4 @@ devenv /installvstemplates
  **MyProjectNode** se zobrazí jako podřízený uzel z Visual C# jenom v uzlu systému Windows.  
   
 ## <a name="see-also"></a>Viz také  
- [Nové generace projektu: Pod pokličkou, část 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Nová generace projektů: Pod pokličkou, část druhá](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

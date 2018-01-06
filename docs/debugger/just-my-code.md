@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df9c61f85c56847fa1b9d881cc26cd2e79f3bd2e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 476ff209f96aa5729d20bd9a5a5d12c9e5a5c39a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>Určete, zda chcete ladit pouze uživatelského kódu pomocí pouze můj kód v sadě Visual Studio
 Můžete nakonfigurovat Visual Studio automaticky krok přes systému, framework a jiná volání neuživatelských a sbalit těchto volání v okně zásobník volání. Funkce, která povolí nebo zakáže toto chování se nazývá *pouze můj kód*. Toto téma popisuje, jak použít pouze můj kód v projektu C#, Visual Basic, C++ a JavaScript.

@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 ms.author: dagriffe
 author: dgriffen
 manager: ghogen
-ms.openlocfilehash: 15c63e446699f254ba33237c264c06c1da802811
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dagriffe
+ms.openlocfilehash: b601653e4b2d309d41f32ff71666567ab860e698
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX Language Pack schéma 2.0 – referenční informace
 
@@ -71,5 +72,5 @@ V rámci `<Metadata>` element může mít následující prvky:
 |Název|Popis|
 |-----------|-----------------|
 |[Lokalizace balíčků VSIX](../extensibility/localizing-vsix-packages.md)|Ukazuje, jak k podpoře lokalizovaného instalačního balíčku VSIX.|
-|[VSIX rozšíření schéma 2.0 – referenční informace](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX manifest popisuje obsah soubor nasazení VSIX, který umožňuje rozšíření sady Visual Studio k instalaci pomocí **rozšíření a aktualizace** dialogové okno.|
-|[Hledání a používání rozšíření Visual Studia](../ide/finding-and-using-visual-studio-extensions.md)|Ukazuje, jak používat **rozšíření a aktualizace** dialogové okno k instalaci, odebrání, aktivovat a deaktivovat rozšíření.|
+|[VSIX Extension Schema 2.0 – referenční informace](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX manifest popisuje obsah soubor nasazení VSIX, který umožňuje rozšíření sady Visual Studio k instalaci pomocí **rozšíření a aktualizace** dialogové okno.|
+|[Hledání a používání rozšíření sady Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)|Ukazuje, jak používat **rozšíření a aktualizace** dialogové okno k instalaci, odebrání, aktivovat a deaktivovat rozšíření.|

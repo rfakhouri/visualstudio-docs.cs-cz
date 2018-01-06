@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e590d6fff715aae33ee757460f2b0ba3df31e6e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5f7b7440ff2f42eba1d138872071d4e51d2402c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Začínáme se službou a rozšíření editorů jazyka
 Editor rozšíření můžete použít k přidání funkcí služby jazyk například osnovy, odpovídající složené závorce, IntelliSense a žárovek vlastní programovací jazyk nebo jakýkoli typ obsahu. Můžete také přizpůsobit vzhled a chování editoru Visual Studio, například textu zvýrazňování okraje, vylepšení a další vizuální prvky. Můžete také definovat vlastní typ obsahu a určit vzhled a chování textového zobrazení, ve kterých se zobrazí obsah.  
@@ -84,9 +85,9 @@ Editor rozšíření můžete použít k přidání funkcí služby jazyk např�
   
  Můžete také vytvořit editor MEF součásti z rozšíření balíček Visual Studio. Naleznete v následujících seznamech podrobnosti:  
   
--   [Návod: Použití příkazů prostředí s příponou editoru](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+-   [Návod: Použití příkazů prostředí s rozšířením editoru](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
--   [Návod: Použití klávesovou zkratku s příponou editoru](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+-   [Návod: Použití klávesové zkratky s rozšířením editoru](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Služba jazyka a body rozšíření editoru](../extensibility/language-service-and-editor-extension-points.md)
+ [Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)

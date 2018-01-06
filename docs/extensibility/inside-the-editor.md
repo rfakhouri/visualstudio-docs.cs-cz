@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1876f334ad1b444b464ecc420767dea90baed6b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 585da54c691bda21a363dfe1308c6ed229a024ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-editor"></a>V editoru
 Editor se skládá z několika různé subsystémy, které jsou navržené tak, aby editoru samostatné modelu text z textového zobrazení a uživatelské rozhraní.  
@@ -38,7 +39,7 @@ Editor se skládá z několika různé subsystémy, které jsou navržené tak, 
   
 -   [Projekce](../extensibility/inside-the-editor.md#projection)  
   
--   [Osnova](../extensibility/inside-the-editor.md#outlining)  
+-   [Sbalení](../extensibility/inside-the-editor.md#outlining)  
   
 -   [Vazby myši](../extensibility/inside-the-editor.md#mousebindings)  
   
@@ -289,4 +290,4 @@ P: ABCDEvwxyz
   
 ## <a name="see-also"></a>Viz také  
  [Služba jazyka a body rozšíření editoru](../extensibility/language-service-and-editor-extension-points.md)   
- [Editor importy](../extensibility/editor-imports.md)
+ [Importy do editoru](../extensibility/editor-imports.md)

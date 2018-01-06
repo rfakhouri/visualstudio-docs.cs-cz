@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1090d1509152aaa507220d3119977bb8e9252876
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: generování fragmentu kódu XML z schématu XML
 Editor souborů XML má možnost k vygenerování XML fragmenty ze schématu schématu XML definition language (XSD). Například jako vytváření souboru XML, zatímco umístěný vedle názvu elementu, stisknete klávesu TAB k naplnění element s daty XML vygenerovat z informace o schématu pro daný element.  
@@ -155,4 +156,4 @@ Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Po
   
 ## <a name="see-also"></a>Viz také  
  [Fragmenty kódu XML](../xml-tools/xml-snippets.md)   
- [Postupy: použití fragmenty kódu XML](../xml-tools/how-to-use-xml-snippets.md)
+ [Postupy: Použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md)

@@ -10,11 +10,12 @@ ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.openlocfilehash: d1307f63464b0e652a97e9b06314b08112d8b097
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: použití kontextu založený na pravidlech uživatelského rozhraní pro rozšíření Visual Studia
 Visual Studio umožňuje načítání VSPackages při určitých známých <xref:Microsoft.VisualStudio.Shell.UIContext>s aktivují. Tyto kontexty uživatelského rozhraní nejsou velmi dobře podrobných, ponechat autorům rozšíření žádný výběr ale vybrat kontextu k dispozici uživatelské rozhraní, která aktivuje před bodem VSPackage načíst ve skutečnosti chtěli. Seznam známých kontexty uživatelského rozhraní, naleznete v části <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  

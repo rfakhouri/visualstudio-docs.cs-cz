@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 55783b604e929d2e5d4cdc613befa2fbec42aec4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0fdab6cb0b259fe169a9ebd43c92158a5ce20d4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Příručka pro testovací modulů plug-in programu zdroj ovládacího prvku
 Tato část obsahuje pokyny pro testování vaší zdrojového kódu pomocí modulu plug-in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Přehled rozsáhlé nejběžnější testování oblastech, jakož i některé z komplikovanější oblastí, které mohou způsobovat je k dispozici. Tento přehled není určená jako vyčerpávající seznam testovací případy.  
@@ -66,7 +67,7 @@ Tato část obsahuje pokyny pro testování vaší zdrojového kódu pomocí mod
   
     -   Případ 1c: Přidat řešení od správy zdrojového kódu  
   
--   [Oblasti test 2: Získání od správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [Testovací oblast 2: Načtení ze správy zdrojového kódu](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
 -   [Test oblasti 3: Rezervovat / vrátit zpět rezervaci](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
@@ -82,7 +83,7 @@ Tato část obsahuje pokyny pro testování vaší zdrojového kódu pomocí mod
   
     -   Případ 3e: vrátit zpět rezervaci  
   
--   [Test oblasti 4: Vrácení se změnami](../../extensibility/internals/test-area-4-check-in.md)  
+-   [Testovací oblast 4: Vrácení se změnami](../../extensibility/internals/test-area-4-check-in.md)  
   
     -   Případ 4a: Upravit položky  
   
@@ -90,7 +91,7 @@ Tato část obsahuje pokyny pro testování vaší zdrojového kódu pomocí mod
   
     -   Případ 4c: Přidání projektů  
   
--   [Test oblasti 5: Změna zdrojového kódu](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [Testovací oblast 5: Změna správy zdrojového kódu](../../extensibility/internals/test-area-5-change-source-control.md)  
   
     -   Případ 5a: vytvoření vazby  
   
@@ -98,15 +99,15 @@ Tato část obsahuje pokyny pro testování vaší zdrojového kódu pomocí mod
   
     -   Případ 5c: Rebind  
   
--   [Testování oblasti 6: odstranění](../../extensibility/internals/test-area-6-delete.md)  
+-   [Testovací oblast 6: Odstranění](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Testování oblasti 7: sdílené složky](../../extensibility/internals/test-area-7-share.md)  
+-   [Testovací oblast 7: Sdílení](../../extensibility/internals/test-area-7-share.md)  
   
--   [Testovací oblasti 8: Modul Plug-in přepínání](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+-   [Testovací oblast 8: Přepínání modulu plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
     -   Případ 8a: Automatická změna  
   
     -   Případ 8b: na základě řešení změn  
   
 ## <a name="see-also"></a>Viz také  
- [Moduly plug-in programu zdroj ovládacího prvku](../../extensibility/source-control-plug-ins.md)
+ [Moduly plug-in správy zdrojového kódu](../../extensibility/source-control-plug-ins.md)

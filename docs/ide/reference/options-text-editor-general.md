@@ -53,11 +53,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 747e17f876972fb44f686fe90ad4e97fd035279e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 55c4678954a274b99c0bdeadb250ec3c602d3b20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-general"></a>Možnosti, textový editor, obecné
 Toto dialogové okno umožňuje měnit globální nastavení pro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] kódu a textovém editoru. K zobrazení tohoto dialogového okna, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **textového editoru** složku a pak klikněte na tlačítko **Obecné**.  

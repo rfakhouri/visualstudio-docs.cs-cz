@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c3cd6f5f45736a7b2578bc9df80a8472d3b50c3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2b19c6ba222644bc9d5fb97874f50bf6a6aa59d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-a-custom-document"></a>Ukládání vlastní šablony dokumentů
 Obslužné rutiny prostředí **Uložit**, **uložit jako**, a **Uložit vše** příkazy. Když uživatel klikne **Uložit**, **uložit jako**, **nebo uložit všechny** na **souboru** nabídky nebo ukončí řešení, což vede Uložit vše, následující Spustí se proces.  
@@ -47,4 +48,4 @@ Uložit, uložit jako a Uložit vše příkaz pro vlastní editor zpracování
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Otevření a uložení položky projektu](../../extensibility/internals/opening-and-saving-project-items.md)
+ [Otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md)

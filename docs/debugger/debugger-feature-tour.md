@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 91b7ff9ea0b5caae46715894016469fadecaa098
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Prohlídka funkce ladicího programu sady Visual Studio
 
@@ -192,6 +193,26 @@ Pomocníka výjimka je skvělé funkce, která vám může pomoct ladění chyb.
 > Pomocníka výjimka nahrazuje Pomocníka pro výjimky v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Rozbalte **nastavení výjimky** uzlu zobrazíte další možnosti o tom, jak zpracovávat tento typ výjimky, ale nebudete muset změnit všechno u této ukázky!
+
+## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Ladění aplikací za provozu technologie ASP.NET ve službě Azure App Service
+
+**ladicí program snímku** pořídí snímek aplikací v provozním když provede kód, který vás zajímá. Dáte pokyn, aby ladicí program na pořízení snímku, nastavte snappoints a logpoints ve vašem kódu. Ladicí program umožňuje zobrazit přesně kde došlo k chybě, bez vlivu na provoz produkční aplikace. Ladicí program snímku můžete výrazně zkrátit dobu potřebnou k vyřešení problémů, ke kterým došlo v produkčním prostředí.
+
+![Spuštění ladicího programu snímku](../debugger/media/snapshot-launch.png "spuštění ladicího programu snímku")
+
+Snímek kolekce je k dispozici pro aplikace ASP.NET, které jsou spuštěné v Azure App Service. Aplikace ASP.NET musí být spuštěn v rozhraní .NET Framework 4.6.1 nebo novější, a ASP.NET Core aplikace musí být spuštěná na .NET Core 2.0 nebo novější na systému Windows.
+
+Další informace najdete v tématu [ladění za provozu aplikace ASP.NET pomocí ladicího programu snímku](../debugger/debug-live-azure-applications.md).
+
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Zobrazení snímky s IntelliTrace krok zpětným (Visual Studio Enterprise)
+
+**Zpětný krok IntelliTrace** automaticky vytvoří snímek vaší aplikace v každé zarážek a ladicí program krok události. Zaznamenaná snímky umožňují přejděte zpět na předchozí zarážky nebo kroky a zobrazení stavu aplikace, stejně jako tomu bylo v minulosti. IntelliTrace zpětný krok vám může ušetřit čas když chcete zobrazit předchozí stav aplikace, ale nechcete, aby se znovu spustit ladění nebo znovu vytvořte stav požadované aplikace.
+
+Můžete vyhledat a zobrazit snímky pomocí **krok zpětné** a **krok dál** tlačítek na panelu nástrojů ladění. Tato tlačítka přejděte události, které se zobrazují v **události** ve **diagnostické nástroje** okno.
+
+![Krok tlačítka vpřed a zpět](../debugger/media/intellitrace-step-back-icons-description.png  "krok zpět a jejich předávání tlačítka")  
+
+Další informace najdete v tématu [zobrazit snímky IntelliTrace zpětným krok pomocí](../debugger/how-to-use-intellitrace-step-back.md) stránky.
 
 ## <a name="more-features-to-look-at"></a>Podívejte se na další funkcí
 

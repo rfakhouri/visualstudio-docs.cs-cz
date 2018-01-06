@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7daf63f27d9c285c126e437f55d25ff674d7360f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd5ff13eec62eae238b126efd7001b1f6348551
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Postupy: Určení příkazů k provedení před instrumentací a po instrumentaci
 Můžete zadat příkazy, které před nebo po jsou vybaveny binárních souborů v relaci výkonu. Všemi příkazy, které můžou být vystavené z příkazového řádku lze zadat jako před instrumentací nebo po instrumentaci událost. Můžete například zadat příkazy, které automatizují opětovného podpisu sestavení se silným názvem klíčem v dávkovém souboru, která se spustí po jsou vybaveny binární soubory.  

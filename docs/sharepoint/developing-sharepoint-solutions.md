@@ -19,11 +19,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 836568ff9c8b18c944ed2fe9e1e407c2176b48c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c7bfb38e31f2ac9a8bb72f93015bfafbe270c64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-sharepoint-solutions"></a>Vývoj řešení služby SharePoint
   Několik šablon typ projektu služby SharePoint jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytváření webů služby SharePoint a prvky webu. Seznam dostupné typy projektů, naleznete v části [projektu služby SharePoint a šablony položek projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Následuje popis elementy a vlastnosti projektu služby SharePoint.  
@@ -113,22 +114,22 @@ ms.lasthandoff: 10/31/2017
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Projektu služby SharePoint a šablony položek projektu](../sharepoint/sharepoint-project-and-project-item-templates.md)|Popisuje projektu služby SharePoint a šablony položek projektu, které jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Postupy: přidání položek do projektu služby SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Popisuje, jak přidat nové nebo existující položky do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.|  
+|[Šablony projektů a položek projektů služby SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md)|Popisuje projektu služby SharePoint a šablony položek projektu, které jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
+|[Postupy: Přidání položek do projektu služby SharePoint](../sharepoint/how-to-add-items-to-a-sharepoint-project.md)|Popisuje, jak přidat nové nebo existující položky do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.|  
 |[Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|Vás krok za krokem při vytváření zákazníka pole, typu obsahu, definice seznamu a instanci seznamu.|  
-|[Postupy: vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)|Popisuje postup přidání přijímače událostí pro projekt vytvořené v [návod: vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
+|[Postupy: Vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)|Popisuje postup přidání přijímače událostí pro projekt vytvořené v [návod: vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).|  
 |[Vytváření řešení pracovního postupu služby SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)|Popisuje postup vytvoření projekty workflow, který obsahuje formuláře přidružení pracovního postupu a formuláře inicializace pracovního postupu.|  
 |[Vytváření stránek pro službu SharePoint](../sharepoint/creating-pages-for-sharepoint.md)|Popisuje, jak můžete vytvořit například stránky aplikací, weby, hlavní stránky a stránky rozložení stránek pro službu SharePoint.|  
-|[Vytvoření webové části pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Popisuje postup přidání ovládacích prvků, které umožňují uživatelům přímo upravit obsah, vzhled a chování stránek webu služby SharePoint pomocí prohlížeče.|  
+|[Vytváření webových částí pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Popisuje postup přidání ovládacích prvků, které umožňují uživatelům přímo upravit obsah, vzhled a chování stránek webu služby SharePoint pomocí prohlížeče.|  
 |[Vytváření opakovaně použitelných ovládacích prvků pro webové části nebo stránky aplikací](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Popisuje, jak vytvořit uživatelské ovládací prvky, které mohou být spotřebovávána stránky aplikací a webových částí, které používají ve službě SharePoint.|  
 |[Integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Popisuje, jak integrovat data z webové služby a serveru back-end aplikace do aplikace SharePoint.|  
 |[Vytváření definic webu pro službu SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md)|Popisuje postup vytvoření definice webů: šablony, které se používají k vytváření webů služby SharePoint.|  
-|[Import položek z existující stránky SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Popisuje, jak importovat z existující stránky SharePoint do položek, jako jsou typy obsahu a moduly [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.|  
-|[Vložené soubory v řešení pomocí modulů](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Popisuje, jak používat moduly pro nasazení soubory z vaší [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu na web služby SharePoint.|  
-|[Procházení připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Popisuje, jak procházet místních webů služby SharePoint pomocí Průzkumníka serveru.|  
-|[Poskytnutí balení a informace o nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Popisuje, jak používat vlastnosti položky projektu k zadání informací o balení a nasazení pro projekty, například položky bezpečné řízení, odkazy na výstup projektu a vlastnosti funkcí.|  
+|[Import položek z existující stránky SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)|Popisuje, jak importovat z existující stránky SharePoint do položek, jako jsou typy obsahu a moduly [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.|  
+|[Vložení souborů do řešení pomocí modulů](../sharepoint/using-modules-to-include-files-in-the-solution.md)|Popisuje, jak používat moduly pro nasazení soubory z vaší [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu na web služby SharePoint.|  
+|[Procházení připojení služby SharePoint pomocí průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|Popisuje, jak procházet místních webů služby SharePoint pomocí Průzkumníka serveru.|  
+|[Poskytování informací o balení a nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)|Popisuje, jak používat vlastnosti položky projektu k zadání informací o balení a nasazení pro projekty, například položky bezpečné řízení, odkazy na výstup projektu a vlastnosti funkcí.|  
 |[Postupy: Přidání a odebrání mapovaných složek](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Popisuje, jak mapované složky lze přidat do projektu vám umožňuje snadnější přístup k prostředkům služby SharePoint.|  
-|[Aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md)|Popisuje problémy související s řešení v izolovaném prostoru.|  
+|[Aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md)|Popisuje problémy související s řešení v izolovaném prostoru.|  
 |[Zabezpečení pro řešení služby SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Popisuje důležité informace o zabezpečení pro vývoj řešení služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
 |[Dialogové okno pro výběr adresy URL &#40; Vývoj pro SharePoint v sadě Visual Studio &#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Popisuje dialogové okno, které můžete použít k přidání odkazů na cestu k prostředkům ve vašem projektu nebo na místním serveru SharePoint.|  
   

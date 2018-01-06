@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc9c13ecf6a5cc6e62caa897adce16830026261a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c03df6edc54948060fa3b1f8eee264646a80f38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Podpora více verzí sady Visual Studio
 Termín *vedle sebe* znamená, že můžete nainstalovat a spravovat více verzí produktu na stejném počítači. Pro VSPackages, to znamená, že uživatel může mít několik verzí sady Visual Studio nainstalované na stejném počítači. Ale nemůže mít vedle sebe verze vaší VSPackages načíst do jediné verze sady Visual Studio.  
@@ -42,11 +43,11 @@ Termín *vedle sebe* znamená, že můžete nainstalovat a spravovat více verz�
     >  Instalaci verze sady Visual Studio se nainstaluje také odpovídající verzi systému [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Například instalaci sady Visual Studio 2010 a Visual Studio 2012 na stejném počítači se nainstaluje také verze 4.0 a 4.5 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], v uvedeném pořadí.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Volba mezi VSPackages sdílené a verzí](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
+ [Volba mezi sdíleným a verzovaným rozšířením VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md)  
  Vysvětluje, jak řešit problémy vedle sebe v vaší VSPackage.  
   
  [Registrace přípony názvů souborů pro nasazení vedle sebe](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)  
  Popisuje, jak vaše VSPackage registraci přidružení souborů ve scénáři vedle sebe.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Instalace VSPackages pomocí Instalační služby systému Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)  
+ [Instalace balíčků VSPackage pomocí Instalační služby systému Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)  

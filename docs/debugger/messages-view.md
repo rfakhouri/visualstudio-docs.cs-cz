@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 538cd0cd023b8861d6adb88c19b42aac59c9f4dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="messages-view"></a>Zobrazení zpráv
 Každé okno má datového proudu k přidružených zpráv. Okno zobrazení zprávy zobrazí tento datový proud zpráv. Popisovač okna, kód zprávy a zpráva se zobrazí. Můžete vytvořit zobrazení zprávy pro přístup z více vláken nebo proces stejně. To vám umožní zobrazit zprávy odeslané do vlastní konkrétní proces nebo podproces, který je obzvláště užitečné pro zaznamenání zprávy oken inicializace všechny systémy windows.  
@@ -68,10 +69,10 @@ Zobrazení zpráv nástroje Spy ++
  Jak zobrazit další informace o zprávu.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)  
+ [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
  Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
   
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)  
+ [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
  Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.  
   
  [Dialogové okno možností zpráv](../debugger/message-options-dialog-box.md)  
@@ -83,5 +84,5 @@ Zobrazení zpráv nástroje Spy ++
  [Dialogové okno vlastností zpráv](../debugger/message-properties-dialog-box.md)  
  Slouží k zobrazení vlastností zpráv vybraném v zobrazení zpráv.  
   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)  
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
  Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.

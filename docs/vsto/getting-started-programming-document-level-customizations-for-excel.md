@@ -18,11 +18,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1755aa5c8e54bd1b84e0f88ea70b4163f3a87af6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0c2f8d0a8360153b81d54b5d1867af452e6aaf9d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-excel"></a>Začínáme s programováním přizpůsobení pro aplikaci Excel na úrovni dokumentů
   Pokud jste začali vytváření přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel pomocí sady Visual Studio, zde je, co potřebujete vědět.  
@@ -50,9 +51,9 @@ ms.lasthandoff: 10/31/2017
   
 -   [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)  
   
--   [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)  
+-   [Automatizace v aplikaci Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)  
   
--   [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)  
+-   [Přehled hostitelských položek a hostitelských ovládacích prvků](../vsto/host-items-and-host-controls-overview.md)  
   
 ## <a name="customizing-the-user-interface-of-excel"></a>Přizpůsobení uživatelského rozhraní aplikace Excel  
  Většina řešení Microsoft Office upravit uživatelské rozhraní (UI) aplikace Office a poskytují některé způsob uživatelům interakci s řešením. Existuje mnoho způsobů, ve kterých můžete upravit uživatelského rozhraní aplikace Excel pomocí přizpůsobení na úrovni dokumentu. Například můžete přidat ovládací prvky na pásu karet, nebo můžete zobrazit podokna akcí. Další informace najdete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
  [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)   
  [Návody pro práci s aplikací Excel](../vsto/walkthroughs-using-excel.md)   
  [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)   
- [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
+ [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
   
   

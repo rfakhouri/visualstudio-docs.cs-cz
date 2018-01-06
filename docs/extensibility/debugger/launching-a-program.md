@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 29e05c7cef8b7bc8644ccbf7ea542e2f043547a6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5762b59a52cce2bf918c50630bbf82e176d9e82f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="launching-a-program"></a>Spuštění programu
 Uživatelé, kteří chtějí k ladění programu můžete stisknutím klávesy F5 spusťte ladicí program z prostředí IDE. To začne řadu událostí, které konečným výsledkem je rozhraní IDE připojení k modul ladění (DE), který je pak připojení nebo připojení k programu následujícím způsobem:  
@@ -60,5 +61,5 @@ Uživatelé, kteří chtějí k ladění programu můžete stisknutím klávesy 
  Dokumenty při relaci ladění je připraven k DE připojit k programu.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Ladění úlohy](../../extensibility/debugger/debugging-tasks.md)  
+ [Úlohy ladění](../../extensibility/debugger/debugging-tasks.md)  
  Obsahuje odkazy na různé ladění úlohy, jako je například spuštěním programu a vyhodnocení výrazů.

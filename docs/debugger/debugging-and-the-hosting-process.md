@@ -20,11 +20,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02cdf8b50415a238c2af2735a20fea4ed8c23668
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01d4ebaada2c8ac65c1f44a5c80525f1b9e66a5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-and-the-hosting-process"></a>Ladění a proces hostování
 Proces hostování sady Visual Studio zlepšuje ladicího programu a umožňuje nové funkce ladicího programu, jako je ladění částečným vztahem důvěryhodnosti a vyhodnocení výrazu při návrhu. Pokud potřebujete, můžete zákaz procesu hostování. Další informace najdete v tématu [postupy: zákaz procesu hostování](../ide/how-to-disable-the-hosting-process.md). Následující části popisují některé rozdíly mezi ladění a bez hostitelského procesu.  
@@ -44,4 +45,4 @@ Proces hostování sady Visual Studio zlepšuje ladicího programu a umožňuje 
 ## <a name="see-also"></a>Viz také  
  [Proces hostování (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
  [Postupy: ladění aplikace s částečnou důvěryhodností](../debugger/how-to-debug-a-partial-trust-application.md)   
- [Postupy: zákaz procesu hostování](../ide/how-to-disable-the-hosting-process.md)
+ [Postupy: Zákaz procesu hostování](../ide/how-to-disable-the-hosting-process.md)

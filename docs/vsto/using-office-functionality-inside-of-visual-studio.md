@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa48a6d46035cd0c631882065b7c9b9ab2e2b8ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38eb32ac983d81d3ef94431d6275da643f632ae9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-office-functionality-inside-of-visual-studio"></a>Použití funkcí systému Office v aplikaci Visual Studio
   Při vytváření projektu úrovni dokumentu dokumentu a přidružené aplikace jsou hostované v sadě Visual Studio, můžete navrhnout a pracovat přímo s dokumentu. Pokud máte aplikace Microsoft Office aplikace otevřete v sadě Visual Studio, obecně funguje podle očekávání. Některé z funkcí aplikace je však jinou nebo je nepřístupný.  
@@ -43,6 +44,6 @@ ms.lasthandoff: 10/31/2017
  [Ochrana dokumentů v řešeních na úrovni dokumentu](../vsto/document-protection-in-document-level-solutions.md)   
  [Přehled rozšíření spravovaného kódu a Information Rights Management](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Ochrana heslem v dokumentech Office](../vsto/password-protection-on-office-documents.md)   
- [Postupy: otevření řešení pro systém Office bez spuštění kódu](../vsto/how-to-open-office-solutions-without-running-code.md)  
+ [Postupy: Otevření řešení pro systém Office bez spuštění kódu](../vsto/how-to-open-office-solutions-without-running-code.md)  
   
   

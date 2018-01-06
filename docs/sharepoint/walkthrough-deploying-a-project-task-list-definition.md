@@ -18,11 +18,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a9f981db2b48c550e1312acf4f387a495a0386e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 16cccaf9a8639ef2d7213140121b087cd15e72d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-deploying-a-project-task-list-definition"></a>Postupy: Nasazení definice seznamu úloh projektu
   Tento postup vám ukáže, jak používat [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] Pokud chcete vytvořit, upravit, ladění a nasazení seznam serveru SharePoint ke sledování úloh projektu.  
@@ -190,7 +191,7 @@ ms.lasthandoff: 10/31/2017
   
 -   [Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)  
   
--   [Postupy: vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)  
+-   [Postupy: Vytvoření přijímače událostí](../sharepoint/how-to-create-an-event-receiver.md)  
   
 -   [Prostředí Windows PowerShell pro SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)  
   

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb60f482edeea1271c0f864fd5b907138e83d103
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 66ac0837649b42dc238eac57829c713b2bf83e3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-project-specific-editors"></a>Postupy: otevření projektu konkrétní editory
 Pokud soubor položky se otevřít projekt vnitřně vázán na konkrétní editor pro tento projekt, musíte projektu otevřete soubor v editoru specifické pro projekt. Soubor není možné delegovat na rozhraní IDE mechanismus pro výběr editoru. Například místo pomocí editoru standardní rastrový obrázek, můžete použít tuto možnost editoru pro konkrétní projekt zadejte konkrétní bitové mapy editor, který rozpoznává informace v souboru, které jsou jedinečné pro váš projekt.  
@@ -57,4 +58,4 @@ Pokud soubor položky se otevřít projekt vnitřně vázán na konkrétní edit
 ## <a name="see-also"></a>Viz také  
  [Otevření a uložení položky projektu](../extensibility/internals/opening-and-saving-project-items.md)   
  [Postupy: otevření standardní editory](../extensibility/how-to-open-standard-editors.md)   
- [Postupy: otevření editory pro otevřené dokumenty](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Postupy: Otevření editorů pro otevřené dokumenty](../extensibility/how-to-open-editors-for-open-documents.md)

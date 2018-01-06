@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1e1be9c268826c64d775d56904dfdb1f3cd1bc14
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ae2bfdc41e3ce9901f91887f805298f13aa4fe8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="measure-mode-onoff"></a>Zapnutí nebo vypnutí režimu míry
 Pomocí tohoto nástroje lze přesně změřit časový interval v časové ose. Pokud chcete povolit režim měr, klikněte na tlačítko měr (což je ikona pravítka) a poté přetáhněte v časové ose. Při tažení Všimněte si, že oblasti pod ukazatelem je zvýrazněn žlutě a měření času se zobrazí na panelu nástrojů pravé tlačítko. Tato hodnota je vypočítána dynamicky a přetáhněte tak, aby okamžitě uvidíte, jak dlouho trvá určitá událost. Po uvolnění tlačítka myši, zůstává viditelná hodnoty time.  

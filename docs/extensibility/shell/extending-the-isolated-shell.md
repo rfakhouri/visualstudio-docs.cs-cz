@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 063a569ff047b3febd2608cb3c1e0003f40f7785
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 04257a6ea4bfb3dbe788ba48ee3077b1847b000d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-isolated-shell"></a>Rozšíření izolované prostředí
 Prostředí sady Visual Studio izolované můžete rozšířit přidáním VSPackage, součást Managed Extensibility Framework (MEF) nebo obecné VSIX projektu do aplikace izolované prostředí.  
@@ -121,4 +122,4 @@ Prostředí sady Visual Studio izolované můžete rozšířit přidáním VSPac
 8.  Sestavení a spuštění řešení.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Vytvoření základní izolované prostředí aplikace](walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Návod: Vytvoření základní aplikace izolovaného prostředí](walkthrough-creating-a-basic-isolated-shell-application.md)

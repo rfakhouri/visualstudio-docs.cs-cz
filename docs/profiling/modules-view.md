@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd32edd9828702ec95754018ff361a44da00e5bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: be5b8481170ee6d733fbe4cfc36d4606b644517e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view"></a>Zobrazení modulů
 Zobrazení modulů uvádí moduly data profilování. Každý modul je kořenový uzel je hierarchický strom. PROFILOVANÉHO funkce modulu jsou uvedené pod tímto uzlem modulu. Pokud data profilování nebyla shromážděna pomocí metody vzorkování, informace z řádku je uvedena pod uzlu funkce a data ukazatel instrukce je uvedena pod uzlu řádku.  

@@ -18,11 +18,12 @@ caps.latest.revision: "81"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e4f3dd4d84e52c8ae98cd5ae2dd8b93ac1e69c59
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 925c61e2fa8ebf8c53e8170c7563031b4bbcb18b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-text-template-directives"></a>T4 – direktivy textových šablon
 Direktivy poskytují pokyny stroji, který provádí transformace textových šablon.  
@@ -37,37 +38,37 @@ Direktivy poskytují pokyny stroji, který provádí transformace textových ša
   
  Direktivy jsou zpravidla prvním prvkem v souboru šablony nebo vkládaném souboru. Neměli umístěte je uvnitř bloku kódu `<#...#>`, ani po blok funkce třída `<#+...#>`.  
   
- [T4 – Direktiva šablony](../modeling/t4-template-directive.md)  
+ [T4 – direktiva Template](../modeling/t4-template-directive.md)  
  ```  
 <#@ template [language="VB"] [hostspecific="true|TrueFromBase"] [debug="true"] [inherits="templateBaseClass"] [culture="code"] [compilerOptions="options"] [visibility="internal"] [linePragmas="false"] #>  
 ```  
   
- [T4 – Direktiva Parameter](../modeling/t4-parameter-directive.md)  
+ [T4 – direktiva Parameter](../modeling/t4-parameter-directive.md)  
  ```  
 <#@ parameter type="Full.TypeName" name="ParameterName" #>  
 ```  
   
- [T4 – Direktiva Output](../modeling/t4-output-directive.md)  
+ [T4 – direktiva Output](../modeling/t4-output-directive.md)  
  ```  
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>  
 ```  
   
- [T4 – Direktiva Assembly](../modeling/t4-assembly-directive.md)  
+ [T4 – direktiva Assembly](../modeling/t4-assembly-directive.md)  
  ```  
 <#@ assembly name="[assembly strong name|assembly file name]" #>  
 ```  
   
- [T4 – Direktiva Import](../modeling/t4-import-directive.md)  
+ [T4 – direktiva Import](../modeling/t4-import-directive.md)  
  ```  
 <#@ import namespace="namespace" #>  
 ```  
   
- [T4 – Direktiva Include](../modeling/t4-include-directive.md)  
+ [T4 – direktiva Include](../modeling/t4-include-directive.md)  
  ```  
 <#@ include file="filePath" #>  
 ```  
   
- [T4 cleanupbehavior – direktiva](../modeling/t4-cleanupbehavior-directive.md)  
+ [T4 – direktiva CleanUpBehavior](../modeling/t4-cleanupbehavior-directive.md)  
  ```  
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>  
 ```  

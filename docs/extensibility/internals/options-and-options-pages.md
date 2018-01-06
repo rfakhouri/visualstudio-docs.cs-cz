@@ -18,11 +18,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 665567430ac9fdfdc301329972a3a4f7b621a241
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1177a9a4df1f07c93540fa039117c5fa81289e17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-and-options-pages"></a>Možnosti a možnosti stránky
 Kliknutím na tlačítko **možnosti** na **nástroje** otevře se nabídka **možnosti** dialogové okno. Možnosti v tomto dialogovém se souhrnně označují jako možnosti stránky. V navigačním podokně ovládacího prvku strom zahrnuje možnosti kategorií a každou kategorii má možnosti stránky. Když vyberete na stránce, v pravém podokně zobrazí jeho možnosti. Tyto stránek umožňují změnit hodnoty možnosti, které určují stav VSPackage.  

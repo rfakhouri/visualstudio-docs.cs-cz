@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 78dc3c36a7513a04afd8f8e136996c3f896291e2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 42d412e576ddf9ca53f79b7349d99b87b9ef3238
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Postupy: Určení událostí sestavení (Visual Basic)
 Události sestavení v jazyce Visual Basic lze spustit skripty, makra nebo jiné akce jako součást procesu kompilace. Události před sestavením předcházet kompilaci. události po sestavení dojde po kompilaci.  
@@ -169,4 +170,4 @@ Události sestavení v jazyce Visual Basic lze spustit skripty, makra nebo jiné
  [Stránka kompilovat, Návrhář projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Publikovat stránku, Návrhář projektu](../ide/reference/publish-page-project-designer.md)   
  [Dialogové okno Příkazový řádek události/po sestavení události před sestavením](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Postupy: určení událostí sestavení (C#)](../ide/how-to-specify-build-events-csharp.md)
+ [Postupy: Specifikace událostí sestavení (C#)](../ide/how-to-specify-build-events-csharp.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: acdc524b00baaf0de52ad30ea7abad82dc57651b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec5ff5f5bafec14099e5b10b9861be5936b75009
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="group-element"></a>Skupinového elementu
 Definuje skupinu VSPackage příkaz.  
@@ -55,7 +56,7 @@ Definuje skupinu VSPackage příkaz.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Element skupiny](../extensibility/groups-element.md)|Obsahuje položky, které definují příkaz skupiny VSPackage.|  
+|[Groups – element](../extensibility/groups-element.md)|Obsahuje položky, které definují příkaz skupiny VSPackage.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -66,4 +67,4 @@ Definuje skupinu VSPackage příkaz.
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

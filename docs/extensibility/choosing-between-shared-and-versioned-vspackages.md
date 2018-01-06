@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9442d6685d27a9270c1e71e3a79e9f810b6f40f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 20613722410bbe57231177eefafec79184d7741f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Volba mezi VSPackages sdílené a verzí
 Různé verze sady Visual Studio mohou existovat vedle sebe na stejném počítači. VSPackages může podporovat všechny směs [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] verze.  
@@ -66,4 +67,4 @@ Různé verze sady Visual Studio mohou existovat vedle sebe na stejném počíta
   
 ## <a name="see-also"></a>Viz také  
  [Instalace VSPackages pomocí Instalační služby systému Windows](../extensibility/internals/installing-vspackages-with-windows-installer.md)   
- [Součásti správy](../extensibility/internals/component-management.md)
+ [Správa komponent](../extensibility/internals/component-management.md)

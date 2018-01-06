@@ -20,11 +20,12 @@ caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 932a7ccc3f52d80e4f75999f401c61b2663095f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 629e320cc47d65347cdd767b984a151afbf648e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="late-binding-in-office-solutions"></a>Pozdní vazba v řešeních pro systém Office
   Některé typy v objektové modely aplikací Office poskytují funkce, které jsou k dispozici prostřednictvím funkce pozdní vazba. Například některé metody a vlastnosti, může vracet různé typy objektů v závislosti na kontextu aplikace Office a některé typy můžou zpřístupnit různé metody nebo vlastnosti v různých kontextech.  
@@ -72,6 +73,6 @@ ms.lasthandoff: 10/31/2017
  [Option Strict – příkaz](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflexe (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexe (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

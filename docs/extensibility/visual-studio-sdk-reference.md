@@ -15,11 +15,12 @@ caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40c900b2f266be4ea88921b5f7cd0db02991a091
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f84f92b4d940bc7141f8c53730a128651b27a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK – referenční informace
 Tato část obsahuje informace o sadě Visual Studio obory názvů, související obory názvů a dalších oblastí zájmu pro vývojáře, kteří používají Visual Studio SDK.  
@@ -228,22 +229,22 @@ Tato část obsahuje informace o sadě Visual Studio obory názvů, souvisejíc�
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md) – výčet  
  Určuje příznaky IntelliSense hostitele.  
   
- [Referenční dokumentace schématu VSCT XML](../extensibility/vsct-xml-schema-reference.md)  
+ [XML schéma VSCT – referenční informace](../extensibility/vsct-xml-schema-reference.md)  
  Poskytne tabulku prvky schématu tabulky příkaz Visual Studio, povolené podřízených elementů a atributů pro každý.  
   
  [Identifikátory GUID a konstant](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
  Poskytuje seznam identifikátorů GUID, které používají v rámci sady SDK.  
   
- [Konstanty COM ve spravovaném kódu](../extensibility/com-constants-in-managed-code.md)  
+ [Konstanty modelu COM ve spravovaném kódu](../extensibility/com-constants-in-managed-code.md)  
  Poskytuje seznam identifikátorů pro prvky uživatelského rozhraní používaných v celém prostředí SDK.  
   
- [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)  
+ [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)  
  Odkazy na témata pro rozhraní API ovládacího prvku Plug-in zdroje.  
   
  [Přepínače příkazového řádku](../extensibility/command-line-switches-visual-studio-sdk.md)  
  Odkazy na témata, které popisují, jak mohou vývojáři automatizovat některé úlohy z příkazového řádku.  
   
- [Zpracování chyb a návratové hodnoty](../extensibility/error-handling-and-return-values.md)  
+ [Zpracování chyb a návratových hodnot](../extensibility/error-handling-and-return-values.md)  
  Popisuje architekturu chyby pro VSPackages, což je stejný jako v jiných Windows programování.  
   
  [Objekty](../extensibility/objects.md)  

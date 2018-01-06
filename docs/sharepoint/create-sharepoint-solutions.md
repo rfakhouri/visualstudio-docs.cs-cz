@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee86d396e5e3023c0ab75f3daddf92cb2649dfde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5ed1a399a121f1f3ca1ba601fe5a9293f1e88dac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-sharepoint-solutions"></a>Vytvoření řešení služby SharePoint
   Jako alternativu k jejich vytváření v aplikaci SharePoint Designer můžete vytvořit aplikací služby SharePoint v sadě Visual Studio. Visual Studio podporuje tím, že poskytuje funkce, jako Rozšířené ladicí nástroje, IntelliSense, dokončování a šablony projektů rychlý vývoj pro SharePoint. Visual Studio také využívá pokročilé nástroje založené na rozhraní .NET Framework a jazyky. Projekty SharePoint můžete vyvíjet pomocí jazyka Visual Basic a Visual C# a vyvíjíte aplikace pro projekty SharePoint pomocí jazyka JavaScript.  

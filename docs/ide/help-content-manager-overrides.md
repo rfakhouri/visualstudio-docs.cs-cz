@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bc6af5aa42eb480d5eff736633c2df6e68979
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-content-manager-overrides"></a>Přepsání voleb aplikace Help Content Manager
 Můžete změnit výchozí chování Prohlížeč nápovědy a souvisejících s funkcí v prostředí Visual Studio IDE. Některé možnosti jsou určené vytváření [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) souboru nastavit různé hodnoty klíčů registru. Ostatní se nastavují přímo v registru.
@@ -62,6 +63,6 @@ Následující dva chování lze řídit nastavením hodnoty klíčů registru v
   
 ## <a name="see-also"></a>Viz také
 [Příručka správce Help Vieweru](../ide/help-viewer-administrator-guide.md)  
-[Argumenty příkazového řádku pro aplikaci Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
+[Argumenty příkazového řádku pro Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)  
+[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)  
 [Úprava izolované prostředí pomocí souboru .pkgdef](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

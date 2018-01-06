@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a409a752d415430e9eab24ee08d2bfb0044dd742
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3744f9022ef1ef0fb435ac98d7e63d9cff717f32
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="handling-specialized-deployment"></a>Zpracování specializuje nasazení
 Nasazení je volitelné operace pro projekty. Webového projektu, například podporuje nasazení umožníte projektu aktualizovat webový server. Podobně **Smart Device** projektu podporuje nasazení zkopírovat integrované aplikace cílového zařízení. Projekt podtypů můžete zadat chování specializovaná nasazení implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> rozhraní. Toto rozhraní definuje kompletní sadu operace nasazení:  
@@ -295,4 +296,4 @@ Nasazení je volitelné operace pro projekty. Webového projektu, například po
 >  Všechny ukázky kódu, poskytnuté v tomto tématu jsou součástí většího příkladu v [VSSDK ukázky](http://aka.ms/vs2015sdksamples).  
   
 ## <a name="see-also"></a>Viz také  
- [Projekt podtypů](../../extensibility/internals/project-subtypes.md)
+ [Podtypy projektů](../../extensibility/internals/project-subtypes.md)

@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 256eaf2b451f91abdcc90c2beeedb7f689e95db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 97283921205eaf70c77c054b269ee56f0e1adcd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Vytváření řešení pracovního postupu služby SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]poskytuje nástroje, které vám pomohou vytvořit vlastní pracovní postupy, které spravují životní cyklus dokumenty a vypisovat položky ve webovém serveru SharePoint. Zadat položky zahrnují návrháře, sadu ovládacích prvků aktivity a odkazy na sestavení nezbytné. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]zahrnuje také **Průvodce vlastním nastavením SharePoint**, vám pomůžou vytvořit a konfigurovat pracovní postupy.  
@@ -142,8 +143,8 @@ ms.lasthandoff: 10/31/2017
 |[Návod: Vytváření a ladění řešení pracovního postupu služby SharePoint](../sharepoint/walkthrough-creating-and-debugging-a-sharepoint-workflow-solution.md)|Vás provede procesem vytváření a ladění jednoduchou [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pracovního postupu.|  
 |[Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)|Vás krok za krokem k vytvoření více plnohodnotné [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dokončení pracovního postupu pomocí formulářů přidružení a inicializace.|  
 |[Návod: Přidání stránky aplikace do pracovního postupu](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)|Staví na tématu [návod: vytvoření pracovního postupu pomocí formulářů přidružení a inicializace](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) přidáním stránku aplikace Další .aspx, která hlásí data zadaná do pracovního postupu.|  
-|[Návod: Vytvoření vlastní stránky aktivit pracovního postupu](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Ukazuje, jak provádět úlohy dvou klíčů: vytvoření pracovního postupu úrovni webu a vytvořit vlastní pracovní postup aktivitu.|  
-|[Návod: Importujte opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Ukazuje, jak importovat opakovaně použitelný deklarativní pracovní postupy vytvořené v SharePoint Designer 2010 do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.|  
+|[Návod: Vytvoření vlastní aktivity pracovního postupu na webu](../sharepoint/walkthrough-create-a-custom-site-workflow-activity.md)|Ukazuje, jak provádět úlohy dvou klíčů: vytvoření pracovního postupu úrovni webu a vytvořit vlastní pracovní postup aktivitu.|  
+|[Návod: Import opakovaně použitelného pracovního postupu návrháře služby SharePoint do sady Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md)|Ukazuje, jak importovat opakovaně použitelný deklarativní pracovní postupy vytvořené v SharePoint Designer 2010 do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.|  
   
 ## <a name="see-also"></a>Viz také  
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   

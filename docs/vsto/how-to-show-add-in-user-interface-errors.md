@@ -20,11 +20,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3b483889dbd970b2225c773e6dd43b9333b0d8a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 35247fed0577d410db86b6d3bd436586784f240a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Postupy: Zobrazení chyb uživatelského rozhraní doplňku
   Ve výchozím nastavení je-li doplňku VSTO pokusí manipulovat s Microsoft Office uživatelské rozhraní (UI) a selže, zobrazí žádná chybová zpráva. Můžete ale nakonfigurovat aplikace Microsoft Office pro zobrazení zprávy pro chyby, které se vztahují k uživatelského rozhraní. Pokud chcete zjistit, proč vlastní pás karet nezobrazí, můžete použít tyto zprávy nebo proč se zobrazí pásu karet, ale žádné ovládací prvky se zobrazí.  

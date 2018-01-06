@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 337bf9a33f781046f0713dbb52a72412229dcd17
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 515aefab86a0a047d7074d127d9dd621feb0117c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Postupy: Vytvoření shaderu textury stupňů šedé
 Tento dokument ukazuje, jak vytvořit shaderu texture ve stupních šedi pomocí návrháře shaderu a jazyk shaderu grafu (DGSL) přesměruje. Tato shaderu upraví hodnoty barva RGB ukázka texture a používá je spolu s beze změny alfa nastavit konečnou barvu.  
@@ -55,4 +56,4 @@ Tento dokument ukazuje, jak vytvořit shaderu texture ve stupních šedi pomocí
  [Postupy: Export shaderu](../designers/how-to-export-a-shader.md)   
  [Editor obrázků](../designers/image-editor.md)   
  [Návrhář shaderu](../designers/shader-designer.md)   
- [Uzly návrháře shaderu](../designers/shader-designer-nodes.md)
+ [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

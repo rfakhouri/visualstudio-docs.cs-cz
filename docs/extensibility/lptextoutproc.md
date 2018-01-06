@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86c8cce3abf16d7236acdd5ec468b06fdb46f997
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9fb212d7908d32bc9d9d14d7e8f4786089bc5f89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Když uživatel provede operaci zdroj ovládacího prvku z uvnitř integrované vývojové prostředí (IDE), může modul plug-in správy zdroje mají být umístěny chyba nebo stavové zprávy týkající se operace. Modul plug-in seznam můžete zobrazit svůj vlastní okna zpráv pro tento účel. Ale pro další bezproblémovou integraci, modul plug-in můžete předat řetězce integrovaného vývojového prostředí, které zobrazí je v jeho nativní způsob zobrazení informací o stavu. Mechanismus pro toto je `LPTEXTOUTPROC` – ukazatel na funkci. Prostředí IDE implementuje tuto funkci (podrobněji popsané v následující) pro zobrazení stavů a chyb.  
@@ -141,4 +142,4 @@ LONG SendStatusMessage(
   
 ## <a name="see-also"></a>Viz také  
  [Funkce zpětného volání, které implementují rozhraní IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
- [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)
+ [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9b106e9d1ef1fc10c5c0cd99ceaed76f87408713
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 02db64a64cdf6e8cdbaf7a0d99044e2b8e9071c4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Návod: Komplexní datové vazby v projektu doplňku VSTO
   Data můžete vázat na hostiteli a ovládacích prvků Windows Forms v projekty doplňku VSTO. Tento návod ukazuje, jak přidání ovládacích prvků do listu aplikace Microsoft Office Excel a vytvoření vazby ovládacích prvků k datům v době běhu.  
@@ -148,6 +149,6 @@ ms.lasthandoff: 10/31/2017
  [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [Pomocí místních souborů databáze v přehled řešení pro systém Office](../vsto/using-local-database-files-in-office-solutions-overview.md)   
  [Připojování k datům v aplikacích Windows Forms](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [BindingSource – přehled komponenty](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
+ [Přehled komponenty BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
   

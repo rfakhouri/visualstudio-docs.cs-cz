@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb35cc5cdc00b5c4225ba4fd2fb8cc2b1214cb49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 685e7beeea5921b7c555b53aaa0b396f81914cbe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Další informace o ladicího programu v sadě Visual Studio
 Většina ladicího programu můžete otevřít při ladění vašeho programu. Pokud chcete zobrazit seznam ladicího programu, nastavit zarážky a spustit ladění. Po kliknutí na zastaví zarážek a spuštění, klikněte na tlačítko **ladění > Windows**.  
@@ -26,7 +27,7 @@ Většina ladicího programu můžete otevřít při ladění vašeho programu. 
 |**Okno**|**Klávesová zkratka**|**V tématu**|  
 |Zarážky|CTRL + ALT + B|[Použití zarážek](../debugger/using-breakpoints.md)|  
 |Nastavení výjimky|CTRL + ALT + E|[Správa výjimek pomocí ladicího programu](../debugger/managing-exceptions-with-the-debugger.md)|  
-|Výstup|CTRL + ALT + O|[Výstup – okno](../ide/reference/output-window.md)|    
+|Výstup|CTRL + ALT + O|[Okno Výstup](../ide/reference/output-window.md)|    
 |Sledování|CTRL + ALT + W, (1, 2, 3, 4)|[Sledování a QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)|  
 |QuickWatch|SHIFT + F9|[Sledování a QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)|  
 |Automatické hodnoty|CTRL + ALT + V, A|[Automatické hodnoty a místní hodnoty – Windows](../debugger/autos-and-locals-windows.md)|  

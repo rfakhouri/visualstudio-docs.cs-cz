@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6baa3086d1a81ce433a077ab1ed0dff4cb152308
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1cbc00fde74aa8f3592d4f50b31005e951b14962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Pokyny pro tvorbu textových šablon T4
 Tato obecná pravidla mohou být užitečné, pokud chcete generovat kód programu nebo jiných prostředků aplikace v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Jsou nejsou pevně pravidla.  
@@ -155,4 +156,4 @@ Team Members:
   
 ## <a name="see-also"></a>Viz také  
  [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
- [Generování textu běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md)
+ [Generování textu za běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

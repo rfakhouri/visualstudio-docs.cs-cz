@@ -20,11 +20,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0b2785e69bbfd6dff17f73b9840b88ad48454e0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a3c152640963da1414c34770fff68645e33098ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Postupy: Profilace aplikace SharePoint
   Tento návod ukazuje způsob použití nástrojů pro profilaci k optimalizaci výkonu aplikace SharePoint v sadě Visual Studio. Ukázková aplikace je příjemce událostí funkce služby SharePoint, obsahující nečinné smyčky, která snižuje výkon přijímače událostí funkcí. Visual Studio profiler umožňuje nalézt a eliminovat nejnákladnější (nejpomalejší provádění) součástí projektu, také známé jako *aktivní trase*.  

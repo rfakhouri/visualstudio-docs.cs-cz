@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53db0506509813b0c92651c8c53d681d8f650167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d6dcabe310743fee85c4560a0a37f029660bc90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Zobrazení (IP) ukazatele na instrukce – Data kolizí
 Zobrazení dat kolizí v IP adres zobrazí seznam dat pokyny sestavení, které byly blokovat spouštění v profilaci spustit.  
@@ -48,4 +49,4 @@ Zobrazení dat kolizí v IP adres zobrazí seznam dat pokyny sestavení, které 
  [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení ukazatele (IP) instrukcí](../profiling/instruction-pointers-ips-view.md)   
  [Ukazatele na instrukce (IP) zobrazení – vzorkování](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   
- [Zobrazení ukazatele (IP) instrukcí](../profiling/instruction-pointers-ips-view-sampling-data.md)
+ [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-sampling-data.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4bd487bd3f5a6978af9f79eb9e0a00866b5df52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: df782cd974adcd589824e8a47cd0249842bd8d48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="document-lock-holder-management"></a>Správa vlastníka zámku dokumentu
 Spuštění dokumentu EFS (r... tabulky) zaznamenává počet otevřené dokumenty a zámky žádné úpravy, které mají. Zámek úpravy můžete umístit na dokument v r... při prostřednictvím kódu programu úpravách na pozadí bez uživatele zobrazuje dokument otevřít v okně dokumentu. Tato funkce se často používá návrháři, které upravují více souborů přes grafické uživatelské rozhraní.  
@@ -43,4 +44,4 @@ Spuštění dokumentu EFS (r... tabulky) zaznamenává počet otevřené dokumen
   
 ## <a name="see-also"></a>Viz také  
  [Spuštěné tabulce dokumentu](../extensibility/internals/running-document-table.md)   
- [Trvalosti a tabulce dokument spuštěná](../extensibility/internals/persistence-and-the-running-document-table.md)
+ [Trvalost a spuštěná tabulka dokumentů](../extensibility/internals/persistence-and-the-running-document-table.md)

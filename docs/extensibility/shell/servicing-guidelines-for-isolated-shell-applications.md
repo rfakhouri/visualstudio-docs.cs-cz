@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f99631db1709a17aaf9809669bbeb2f69b10e2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f4139512bc63141c24b42d0ef3bd53119f4d1fb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Obsluhy pokyny pro izolované prostředí aplikace
 Když distribuujete aplikace z Visual Studia, které jsou izolované prostředí, musí být schopen poskytnout aktualizace softwaru pro aplikaci po instalaci. K tomuto účelu musí nainstalovat aplikaci pomocí souboru Microsoft Installer (MSI). Tento druh instalace umožňuje aktualizace softwaru od Microsoftu distribuována s webovou stažení a spotřebovávají vašim zákazníkům bez zásahu vlastní.  

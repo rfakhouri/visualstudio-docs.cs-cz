@@ -11,11 +11,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 492455d06c65bdcf3838c4f61d1fd2dbbcbb0c3f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1f64368c90f6d77be24271eeaac96cc6b5624f67
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 Jazyka specifické pro doménu (DSL) můžete rozšířit pomocí Managed Extensibility Framework (MEF). Vy nebo jiní vývojáři budou moci zapsat rozšíření pro DSL beze změny definice DSL a kód programu. Taková rozšíření zahrnují příkazy nabídky, obslužné rutiny přetahování myší a ověření. Budou uživatelé moci nainstalovat vaší DSL a volitelně nainstalovat rozšíření pro ni.  
@@ -377,4 +378,4 @@ namespace MefExtension
  [Přesouvání rozšíření Visual Studia](../extensibility/shipping-visual-studio-extensions.md)   
  [Spravovaná rozšíření Framework (MEF)](/dotnet/framework/mef/index)   
  [Postupy: přidání obslužné rutiny a přetažení](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Ověření v jazyce specifické pro doménu](../modeling/validation-in-a-domain-specific-language.md)
+ [Ověřování v jazyce specifickém pro doménu](../modeling/validation-in-a-domain-specific-language.md)

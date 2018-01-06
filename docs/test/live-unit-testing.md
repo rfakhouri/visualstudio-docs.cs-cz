@@ -11,11 +11,12 @@ helpviewer_keywords:
 ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38cf43429b5078de100c963df133ea1ba11c8717
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: af8e902f4d56d18097e99a06f76958d3bf2fcff2
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Testování částí pomocí Visual Studio 2017 za provozu
 
@@ -117,7 +118,7 @@ Ukazatele myši na symbol úspěšné nebo neúspěšné v okně kód, lze zjist
  
   ![Image](./media/lut-failedinfo.png) 
 
-Kromě názvy a výsledky testů, umožňuje popisku můžete znovu spustit sadu testů, spusťte sadu testů pomocí ladicího programu. Pokud vyberete jeden nebo více testů v popisu tlačítka, můžete také spustit nebo ladění právě tyto testy. To umožňuje ladění testů, aniž by museli opustit okno kódu. Při ladění, kromě sledování žádné zarážky mohou být již nastavena, pozastaví spuštění programu při ladicí program provede [ `Assert` ](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) metodu, která vrátí neočekávaný výsledek. 
+Kromě názvy a výsledky testů, umožňuje popisku můžete znovu spustit sadu testů, spusťte sadu testů pomocí ladicího programu. Pokud vyberete jeden nebo více testů v popisu tlačítka, můžete také spustit nebo ladění právě tyto testy. To umožňuje ladění testů, aniž by museli opustit okno kódu. Při ladění, kromě sledování žádné zarážky mohou být již nastavena, pozastaví spuštění programu při ladicí program provede [ `Assert` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert) metodu, která vrátí neočekávaný výsledek. 
 
 Po přesunutí ukazatele myši neúspěšných testů v popisu tlačítka, rozšíří poskytnout další informace o selhání, jak je znázorněno na následujícím obrázku. Pokud dvakrát kliknete na neúspěšných testů v popisu tlačítka, můžete přejít přímo na.
 

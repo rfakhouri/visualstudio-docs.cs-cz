@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a1cf847b87e7902ef535359420ea105a48dc9a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e086111be924d1262866f882b77d821659af909d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="international-settings-environment-options-dialog-box"></a>Mezinárodní nastavení, prostředí, dialogové okno Možnosti
 Stránka mezinárodní nastavení umožňuje změnit výchozí jazyk, když máte více než jedna jazyková verze integrované vývojové prostředí (IDE) v počítači nainstalován. Tohoto dialogového okna můžete přejít pomocí výběr **možnosti** z **nástroje** nabídky a pak vyberete **mezinárodní nastavení** z **prostředí** složky. Pokud tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
@@ -42,4 +43,4 @@ Stránka mezinárodní nastavení umožňuje změnit výchozí jazyk, když mát
   
 ## <a name="see-also"></a>Viz také  
  [Nainstalujte jazykové sady](../../install/install-visual-studio.md#step-6---install-language-packs-optional)   
- [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)
+ [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)

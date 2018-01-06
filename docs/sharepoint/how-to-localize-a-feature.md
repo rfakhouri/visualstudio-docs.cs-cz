@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53dbaa806ae3b65314d5aeed8df9338905a946cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 03adaa74feacc82c5f63c1930f7dad63cc931433
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-localize-a-feature"></a>Postupy: Lokalizace funkce
   Ve výchozím nastavení použijte funkci názvy a popisy pevně řetězcové hodnoty. Lokalizace funkce nadpis a popis, nahraďte řetězce výrazy, které odkazují na lokalizované prostředky.  
@@ -67,6 +68,6 @@ ms.lasthandoff: 10/31/2017
  [Lokalizace řešení služby SharePoint](../sharepoint/localizing-sharepoint-solutions.md)   
  [Postupy: Přidání zdrojového souboru](../sharepoint/how-to-add-a-resource-file.md)   
  [Postupy: lokalizace značek ASPX](../sharepoint/how-to-localize-aspx-markup.md)   
- [Postupy: lokalizace kódu](../sharepoint/how-to-localize-code.md)  
+ [Postupy: Lokalizace kódu](../sharepoint/how-to-localize-code.md)  
   
   

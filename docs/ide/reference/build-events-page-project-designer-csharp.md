@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c701adc4da2f59505699a02f1b4ccc304841f3ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 245172c76ac5c62e80183a9e09e9787f311dca24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-events-page-project-designer-c"></a>Stránka Události sestavení, návrhář projektu (C#)
 Použití **události sestavení** stránky **Návrhář projektu** k určení pokyny ke konfiguraci sestavení. Můžete také zadat podmínky, za kterých se spustit žádné události po sestavení. Další informace najdete v tématu [postupy: určení událostí sestavení (C#)](../../ide/how-to-specify-build-events-csharp.md)a [postup: Zadejte události sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
@@ -59,4 +60,4 @@ Použití **události sestavení** stránky **Návrhář projektu** k určení p
  [Postupy: určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Postupy: určení událostí sestavení (C#)](../../ide/how-to-specify-build-events-csharp.md)   
  [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)   
- [Kompilaci a sestavování](../../ide/compiling-and-building-in-visual-studio.md)
+ [Kompilace a sestavení](../../ide/compiling-and-building-in-visual-studio.md)

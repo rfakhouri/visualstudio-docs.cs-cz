@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a08d7a94dcd512f650564a07a1e6784bffe8c45e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generování a konfigurace aplikace z modelů
 Můžete vygenerovat nebo konfigurovat částí aplikace z modelu.
@@ -25,9 +26,9 @@ Můžete vygenerovat nebo konfigurovat částí aplikace z modelu.
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generování kódu vaší aplikace z modelu  
  Nejjednodušší způsob, jak generovat kód je pomocí textových šablon. Mohou generovat kód ve stejné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení, ve kterém můžete zachovat modelu. Další informace naleznete v tématu:  
   
--   [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+-   [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
   
--   [Generování kódu z jazyka domény](../modeling/generating-code-from-a-domain-specific-language.md)  
+-   [Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)  
   
  Tato metoda je snadno použitelná postupně. Začněte s aplikaci, která se dá použít jenom pro konkrétní případ a zvolte několik části, které chcete z modelu se liší. Přejmenujte zdrojové soubory z těchto částí tak, že budou textové šablony (.tt) soubory. V tomto okamžiku zdrojové soubory .cs automaticky vygeneruje ze šablony souborů, aplikace bude fungovat jako předtím.  
   
@@ -40,7 +41,7 @@ Můžete vygenerovat nebo konfigurovat částí aplikace z modelu.
 ## <a name="configuring-your-application-from-a-model"></a>Konfigurace vaší aplikace z modelu  
  Pokud chcete měnit chování vaší aplikace za běhu, nemůžete použít generování kódu, který generuje zdrojového kódu, než je kompilované aplikace. Místo toho můžete navrhnout vaše aplikace ke čtení modelu a jeho chování se liší podle toho. Další informace naleznete v tématu:  
   
--   [Postupy: otevření modelu ze souboru v programovém kódu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
+-   [Postupy: Otevření modelu ze souboru v kódu programu](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
  Tuto metodu lze použít také postupně, ale existuje další práci na začátku. Budete muset psát kód, který bude číst modelu a nastavit rozhraní, které umožňuje jeho hodnoty přístupné části proměnné. Vytváření proměnných částí obecný je větší než generování kódu.  
   
@@ -76,4 +77,4 @@ Můžete vygenerovat nebo konfigurovat částí aplikace z modelu.
 ## <a name="see-also"></a>Viz také  
  [Generování kódu z jazyka domény](../modeling/generating-code-from-a-domain-specific-language.md)   
  [Postupy: otevření modelu ze souboru v programovém kódu](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
- [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
+ [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

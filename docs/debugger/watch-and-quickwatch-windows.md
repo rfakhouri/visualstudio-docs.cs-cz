@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8792c9ed175d2ced5d9c10cc19b2d222f4d839a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Nastavovat sledování na proměnné pomocí sledování a QuickWatch Windows v sadě Visual Studio
 Při ladění, můžete použít **sledovat** (**ladění > Windows > sledovat > sledování (1, 2, 3, 4)**) a **QuickWatch** (klikněte pravým tlačítkem na proměnnou nebo  **Ladění > QuickWatch**) systému windows můžete sledovat proměnné a výrazy.  Rozdíl je, že **sledovat** okno může zobrazit několika proměnných, při **QuickWatch** okno zobrazí jednu proměnnou najednou.
@@ -232,7 +233,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>Dynamické zobrazení a okno kukátka  
  Některé skriptovací jazyky (například JavaScript nebo Python) použít dynamické nebo [kachní zadáním](https://en.wikipedia.org/wiki/Duck_typing), a jazyky rozhraní .NET (ve verzi 4.0 a novější) podporují objekty, které je obtížné sledovat pomocí normální ladění systému windows, protože jejich může mít runtime vlastnosti a metody, které nelze zobrazit.  
   
- Pokud okno kukátka zobrazí objektu vytvořeny z typ, který implementuje [IDynamicMetaObjectProvider rozhraní](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), ladicí program přidá speciální **dynamického zobrazení** uzlu **automobily**  zobrazení. Tento uzel obsahuje dynamické členy dynamický objekt, ale neumožňuje úpravu hodnoty členů.  
+ Pokud okno kukátka zobrazí objektu vytvořeny z typ, který implementuje [IDynamicMetaObjectProvider rozhraní](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), ladicí program přidá speciální **dynamického zobrazení** uzlu **automobily**  zobrazení. Tento uzel obsahuje dynamické členy dynamický objekt, ale neumožňuje úpravu hodnoty členů.  
   
  Pokud kliknete pravým tlačítkem na všechny podřízené z **dynamického zobrazení** a zvolte **Přidat kukátko**, ladicí program vloží novou proměnnou sledovat který vrhá objekt pro dynamický objekt. Jinými slovy **název objektu** stane (**(dynamických) objektů). Název**.  
   

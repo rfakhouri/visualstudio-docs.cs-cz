@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 973d191305383967aee1c7379fd203375a71c825
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ab243886341d720045fc2d1fbd7a813b7d81c9e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="required-port-supplier-interfaces"></a>Požadovaný Port dodavatele rozhraní
 Port dodavatele musí implementovat [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) rozhraní.[ IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)  
@@ -84,4 +85,4 @@ Port dodavatele musí implementovat [IDebugPortSupplier2](../../extensibility/de
      Poskytuje způsob, jak SDM připojit k tomuto programu.  
   
 ## <a name="see-also"></a>Viz také  
- [Implementace Port dodavatele](../../extensibility/debugger/implementing-a-port-supplier.md)
+ [Implementace dodavatele portu](../../extensibility/debugger/implementing-a-port-supplier.md)

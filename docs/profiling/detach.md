@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97d48bdcfe663fe5434622775add890166663276
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eba6a028e1a4431be0338ea76874019ed53f23ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="detach"></a>Odpojit
 VSPerfCmd.exe **odpojení** možnost odpojí profileru od zadané procesy nebo všechny procesy, pokud žádný není určen. Profilace musí mít inicializovány pomocí metody vzorkování.  

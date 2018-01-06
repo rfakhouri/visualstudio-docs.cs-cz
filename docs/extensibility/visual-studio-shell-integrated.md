@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0d92a6c7250e22972a2b352b74b974601ff6065c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b43e4ac1c8e40a9f4f378be42cc642767bee0777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-shell-integrated"></a>Prostředí Visual Studio (integrovaný)
 Prostředí sady Visual Studio integrované zahrnuje integrované vývojové prostředí (IDE), integrace ovládacích prvků zdrojového a ladicí program. Žádný programovací jazyk je zahrnuta. Integrované prostředí však poskytuje rozhraní, které umožňuje přidat programovací jazyky.  
@@ -51,7 +52,7 @@ Prostředí sady Visual Studio integrované zahrnuje integrované vývojové pro
   
 ## <a name="notes"></a>Poznámky  
   
-#### <a name="1-data-tools"></a>1. Nástroje data  
+#### <a name="1-data-tools"></a>1. Datové nástroje  
  Integrované prostředí zahrnuje databáze vývojovými nástroji, např. podpora rozšiřitelnost dat a zjednodušeného **Průzkumníku řešení**. Však systém SQL Server Express, SQL Reporting a Crystal Reports nejsou zahrnuty v integrované prostředí.  
   
 #### <a name="2-debugging-support"></a>2. Podpora ladění  

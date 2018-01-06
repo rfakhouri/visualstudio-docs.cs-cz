@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 71b9feb3368b8c8bbec6ad7c38962056caeea32f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: ced5c9948a94295490126bef68ff1b316c87e964
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektura řešení pro systém Office v sadě Visual Studio
   Témata v této části poskytují informace o fungování řešení vytvořená pomocí doplňku Office developer tools v sadě Visual Studio.  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)  
  Popisuje součástí doplňků VSTO a jak jsou načteny aplikace.  
   
- [Visual Studio Tools for Office Runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
+ [Přehled nástrojů Visual Studio Tools for Office runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
  Popisuje různé verze modulu runtime, který se používá pro řešení pro systém Office.  
   
  [Položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
  [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Obsahuje odkazy na informace o konfiguraci vývojovém počítači k vytvoření Office řešení, jak začít vytváření řešení a co se změnilo od předchozích verzí sady Office developer tools v sadě Visual Studio.  
   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
  Obsahuje odkazy na informace o vytváření řešení pro systém Office.  
   
  [Obecné referenční informace &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  

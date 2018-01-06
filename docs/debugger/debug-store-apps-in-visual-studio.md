@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3920bfbd5b1ddbddc3166118ead0c7d0fefff8d8
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 8684a1220b871e2c77f8c0229cddd807a6031cd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-uwp-apps-in-visual-studio"></a>Ladění aplikace UWP v sadě Visual Studio
 Ladicí program Visual Studio můžete k řízení provádění programu a zkontrolujte stav. Ladicí program můžete najít příčinu závad v aplikacích pro UPW a pochopit, jak vaše aplikace právě funguje. Když v ladicím programu pozastavte (zalomení), Visual Studio zobrazí zdrojový soubor, který obsahuje kód, provádění a zvýrazňuje provádění příkazu. Zásobník volání provádění funkcí a dalších aspektů stav aplikací se můžete podívat na hodnoty proměnných. Můžete pokračovat v provádění (krok prostřednictvím) jeden příkaz programu současně zobrazíte jak příkazy změnit hodnoty programu. V aplikace napsané v jazyce JavaScript můžete prozkoumat a upravit modelu DOM stránky.  

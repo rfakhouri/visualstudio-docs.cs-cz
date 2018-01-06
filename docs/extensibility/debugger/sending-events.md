@@ -13,11 +13,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf4c3b0f494a5825820b8f794ccaf5dc727786e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2bfdefc3202a026516edb3f9221e0626e1a83b4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sending-events"></a>Odesílání událostí
 Tento mechanismus pro komunikaci mezi ladicího programu a modul ladění (DE) je model událostí podle modelu DCOM. Události se odesílají jako objekty modelu COM a jednotlivých událostí obsahuje parametry, které zadejte následující informace:  
@@ -36,12 +37,12 @@ Tento mechanismus pro komunikaci mezi ladicího programu a modul ladění (DE) j
  [Zdroje událostí](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  
  Popisuje dva zdroje událostí: ladění modulu (DE) a relace ladění manager (SDM).  
   
- [Typy podporované událostí](../../extensibility/debugger/supported-event-types.md)  
+ [Podporované typy událostí](../../extensibility/debugger/supported-event-types.md)  
  Popisuje typy aktuálně podporované událostí: asynchronní a synchronní.  
   
  [Popisy událostí](../../extensibility/debugger/event-descriptions.md)  
  Definuje události a důvody pro jejich použití.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Vytváření vlastních ladění modulu](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+ [Vytvoření vlastního ladicího stroje](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  Popisuje, jak funguje Zavedenými s překladač nebo operačního systému k poskytování ladění služeb.

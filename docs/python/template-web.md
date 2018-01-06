@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: ad0906394552eb3af3293094301f94eee130e870
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 67132298bd8c6cf61027f01dab795f57b302b108
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="python-web-project-templates"></a>Šablony webových projektů jazyka Python
 
@@ -67,13 +68,12 @@ Všechny projektu vlastnost nebo prostředí může být zadána proměnná se s
 **Bottle webového projektu** Šablona zahrnuje často používaný kód, který nemá nezbytné konfigurace. Importované bottle aplikace nesmí obsahovat tento kód, ale v takovém případě spusťte následující nastavení aplikace pomocí nainstalovaného `bottle` modul:
 
 - **Spusťte příkaz serveru** skupiny:
-
-    - **Příkaz**: `bottle` (modulu)
-    - **Argumenty**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Příkaz**: `bottle` (modulu)
+  - **Argumenty**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - **Ladění serveru příkaz** skupiny:
-    - **Příkaz**: `bottle` (modulu)
-    - **Argumenty**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Příkaz**: `bottle` (modulu)
+  - **Argumenty**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Možnost se nedoporučuje, když pomocí sady Visual Studio pro ladění.
 
@@ -82,12 +82,11 @@ Všechny projektu vlastnost nebo prostředí může být zadána proměnná se s
 Jehlanový aplikací jsou aktuálně nejlépe vytvořené pomocí `pcreate` nástroj příkazového řádku. Po vytvoření aplikace, může být importován pomocí [z existující Python code](python-projects.md#creating-a-project-from-existing-files) šablony. Až to uděláte, vyberte **obecné webového projektu** přizpůsobení nakonfigurovat možnosti. Tato nastavení předpokládá nainstalovanou Pyramid do virtuálního prostředí v `..\env`.
 
 - **Ladění** skupiny:
-
-    - **Port serveru**: 6543 (nebo ať je nakonfigurovaný v souborech .ini)
+  - **Port serveru**: 6543 (nebo ať je nakonfigurovaný v souborech .ini)
 
 - **Spusťte příkaz serveru** skupiny:
-    - Příkaz: `..\env\scripts\pserve-script.py` (skript)
-    - Argumenty:`Production.ini`
+  - Příkaz: `..\env\scripts\pserve-script.py` (skript)
+  - Argumenty:`Production.ini`
 
 - **Ladění serveru příkaz** skupiny:
     - Příkaz: `..\env\scripts\pserve-script.py` (skript)
@@ -145,7 +144,7 @@ Nakonec se můžete přihlásit pomocí [vývoj konzoly](https://github.com/proj
 
 V současné době doporučený způsob instalace balíčků je po instalaci rozšíření lokality a provádění pip přímo použít konzolu pro vývoj. Pomocí úplnou cestu k Python je důležité, nebo může spustit špatný a obecně je potřeba použít virtuální prostředí. Příklad:
 
-```
+```command
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt

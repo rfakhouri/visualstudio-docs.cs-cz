@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ad7ecfb61e1d8ecb7bcb000a659b798eb651461
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a126ec0329695455013ca8625a8aeb774cf2ad36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-performance-collection-methods"></a>Principy metody kolekce údajů o výkonu
 Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžete použít pro shromažďování dat o výkonu. Toto téma popisuje různé metody a předkládá návrhy některých situací, ve kterých mohou být použity konkrétní metody shromažďování dat.  
@@ -30,7 +31,7 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
 |------------|-----------------|  
 |[Vzorkování](#sampling)|Shromažďuje statistická data o práci provedené aplikací.|  
 |[Instrumentace](#instrumentation)|Shromažďuje podrobné informace o časování jednotlivých volání funkce.|  
-|[Souběžnosti](#concurrency)|Shromažďuje podrobné informace o vícevláknových aplikacích.|  
+|[Souběžnost](#concurrency)|Shromažďuje podrobné informace o vícevláknových aplikacích.|  
 |[Využívání paměti rozhraním .NET](#net_memory)|Shromažďuje podrobné informace o přidělování a uvolňování paměti .NET.|  
 |[Sledováním interakce vrstev](#tier_interaction)|Shromažďuje informace o synchronních voláních funkcí rozhraní ADO.NET na databázi SQL Server.<br /><br /> Profilování interakce vrstev lze shromažďovat pomocí sady [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] nebo [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]. Nicméně data profilace interakce vrstev můžete zobrazit pouze v sadě [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] nebo [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|  
   
@@ -124,7 +125,7 @@ Data interakce vrstev, která jsou shromážděna nástroji pro profilaci
   
  [Shromažďování dat interakce vrstev](../profiling/collecting-tier-interaction-data.md)  
   
- [Zobrazení interakce vrstvy](../profiling/tier-interaction-views.md)  
+ [Zobrazení interakce vrstev](../profiling/tier-interaction-views.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: shromažďování dat o výkonu pro webový server](../profiling/how-to-collect-performance-data-for-a-web-site.md)   

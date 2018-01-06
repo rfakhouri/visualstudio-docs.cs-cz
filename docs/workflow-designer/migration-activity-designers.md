@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: bad24eb3693988c8d4f51f347a8473856dd1d224
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6310971ee43067e23a1d893924ecba4e717f5553
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="migration-activity-designers"></a>Migrace návrháře aktivit
 Návrháře aktivit migrace se používá k volání 3.0 nebo 3.5 aktivity pracovního postupu z pracovního postupu cílení [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)]. Témata obsažené v této části poskytují pokyny o tom, jak používat [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] návrháře aktivit.  
@@ -33,13 +34,13 @@ Návrháře aktivit migrace se používá k volání 3.0 nebo 3.5 aktivity praco
   
  [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)  
   
- [Pomocí návrháře aktivit](../workflow-designer/using-the-activity-designers.md)  
+ [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)  
   
  [Zasílání zpráv](../workflow-designer/messaging-activity-designers.md)  
   
  [Modul runtime](../workflow-designer/runtime-activity-designers.md)  
   
- [Primitivní elementy.](../workflow-designer/primitives-activity-designers.md)  
+ [Primitivní elementy](../workflow-designer/primitives-activity-designers.md)  
   
  [Transakce](../workflow-designer/transaction-activity-designers.md)  
   

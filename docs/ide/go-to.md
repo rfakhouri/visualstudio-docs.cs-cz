@@ -16,11 +16,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9309a143760aab5b59355b4cea6cd214aaa49812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-code-using-go-to-commands"></a>Vyhledání kódu pomocí přejít na příkazy  
 Visual Studio **přejít na** příkazy zaměřují se hledání kódu můžete rychle najít zadané položky. Můžete přejít na konkrétní řádku, typ, symbol, souboru a člena z jednoduchého jednotné rozhraní. Tato funkce existuje v Visual Studio 2017 nebo novější.  
@@ -84,4 +85,4 @@ Okno centra   | Přesuňte toto okno k centru horní části editoru kódu, mís
 
 ## <a name="see-also"></a>Viz také  
 [Navigace v kódu](../ide/navigating-code.md)  
-[Přejděte do definice a funkce Náhled definice](../ide/go-to-and-peek-definition.md)  
+[Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)  

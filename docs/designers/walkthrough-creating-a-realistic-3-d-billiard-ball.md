@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dab9b5c631edde1883d4e4d2dcfa0dbf530b0441
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bd49879c6c23981bc88eb4309fb6c7da8e215bd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Postupy: Vytvoření realistické trojrozměrné kulečníkové koule
 Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové míč pomocí návrháře shaderu a Editor obrázků v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. 3D vzhled míč kulečníkové je dosáhnout kombinací několik technik shaderu s prostředky vhodné struktury.  
@@ -219,4 +220,4 @@ Tento návod ukazuje, jak vytvořit realistické 3D kulečníkové míč pomocí
  [Postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Návrhář shaderu](../designers/shader-designer.md)   
  [Editor obrázků](../designers/image-editor.md)   
- [Uzly návrháře shaderu](../designers/shader-designer-nodes.md)
+ [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

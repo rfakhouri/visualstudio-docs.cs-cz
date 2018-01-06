@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f430486c613e6281404110d4441d2a3d2100534
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff1902689524dd980c8223ca83863238254df448
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registrace příkazy pro přípony názvu souboru
 Přidružení příponu názvu souboru pomocí aplikace má obvykle upřednostňovat, která nastane po dvojitém kliknutí uživatele. Upřednostňovaná tato akce je spojena se slovesem, například otevřená, který odpovídá akci.  
@@ -114,4 +115,4 @@ Přidružení příponu názvu souboru pomocí aplikace má obvykle upřednostň
 >  Pokud chcete změnit výchozí akce pro rozšíření v nasazení vedle sebe, zvažte dopad na instalaci a odebrání. Během instalace se přepíše původní výchozí hodnotu.  
   
 ## <a name="see-also"></a>Viz také  
- [Správa přidružení souboru vedle sebe](../extensibility/managing-side-by-side-file-associations.md)
+ [Správa přidružení souborů vedle sebe](../extensibility/managing-side-by-side-file-associations.md)

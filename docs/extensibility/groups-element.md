@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0352d2c2bee683c602dbe0449a9c25bb6ff259a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c3aa69594dd644e5b4f1c5d74d313b72cf2f505
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="groups-element"></a>Element skupiny
 Obsahuje položky, které definují příkaz skupiny VSPackage.  
@@ -46,14 +47,14 @@ Obsahuje položky, které definují příkaz skupiny VSPackage.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Skupinového elementu](../extensibility/group-element.md)|Představuje skupinu jeden příkaz.|  
-|[Element skupiny](../extensibility/groups-element.md)|Obsahuje položky, které definují příkaz skupiny VSPackage.|  
+|[Group – element](../extensibility/group-element.md)|Představuje skupinu jeden příkaz.|  
+|[Groups – element](../extensibility/groups-element.md)|Obsahuje položky, které definují příkaz skupiny VSPackage.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Element příkazy](../extensibility/commands-element.md)|Představuje kolekci příkazů na panelu nástrojů VSPackage.|  
+|[Commands – element](../extensibility/commands-element.md)|Představuje kolekci příkazů na panelu nástrojů VSPackage.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -67,4 +68,4 @@ Obsahuje položky, které definují příkaz skupiny VSPackage.
   
 ## <a name="see-also"></a>Viz také  
  [Jak přidat VSPackages prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

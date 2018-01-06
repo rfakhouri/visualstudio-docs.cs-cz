@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c167c0a0f0a9dd0c14b92f27c0d9d862b5157072
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3e8157d6ecede516ca1dcb2900cf081c11a2b790
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-implementation-of-locals"></a>Ukázka implementace lokální proměnné
 > [!IMPORTANT]
@@ -51,16 +52,16 @@ ms.lasthandoff: 10/31/2017
  [Implementace GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)  
  Popisuje implementace [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md).  
   
- [Vytváření výčtu lokální proměnné](../../extensibility/debugger/enumerating-locals.md)  
+ [Vytváření výčtů pro místní hodnoty](../../extensibility/debugger/enumerating-locals.md)  
  Popisuje, jak modul ladění (DE) odešle volání na výčet lokální proměnné nebo argumenty.  
   
  [Načtení místních vlastností](../../extensibility/debugger/getting-local-properties.md)  
  Popisuje, jak je DE zavolá se získat název, typ a hodnotu jeden nebo více lokální proměnné.  
   
- [Získávání místní hodnoty](../../extensibility/debugger/getting-local-values.md)  
+ [Načtení místních hodnot](../../extensibility/debugger/getting-local-values.md)  
  Popisuje, získávání hodnotu místní, který vyžaduje službu objektu vazač poskytují kontext vyhodnocení.  
   
- [Místní hodnoty – vyhodnocení](../../extensibility/debugger/evaluating-locals.md)  
+ [Vyhodnocení místních hodnot](../../extensibility/debugger/evaluating-locals.md)  
  Vysvětluje, jak se vyhodnocují místní hodnoty.  
   
 ## <a name="related-sections"></a>Související oddíly  
@@ -71,4 +72,4 @@ ms.lasthandoff: 10/31/2017
  Ukazuje jeden ze způsobů implementace k vytvoření vyhodnocení výrazu pro jazyk MyC.  
   
 ## <a name="see-also"></a>Viz také  
- [Zobrazení místní hodnoty](../../extensibility/debugger/displaying-locals.md)
+ [Zobrazení místních hodnot](../../extensibility/debugger/displaying-locals.md)

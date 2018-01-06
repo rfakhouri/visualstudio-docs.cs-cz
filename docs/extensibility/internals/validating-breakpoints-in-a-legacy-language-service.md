@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8d2f56c29121a4be06f00198edd235007fc1cd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 85d9add1e66fdde2fcdbfd5c83bf99b6180a4642
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Ověřování zarážky ve službě jazyk starší verze
 Zarážku označuje, že spuštění programu by se měla zastavit na určitém místě, když je spuštěn v ladicí program. Uživatele můžete umístit zarážku na kterýkoli řádek v zdrojový soubor, protože editoru nemá žádné informace o co se považuje za platné umístění pro zarážky. Při spuštění ladicího programu všechny označený zarážky (označovaný jako čekající na vyřízení zarážky) je vázána na požadované místo v běžící aplikaci. Ve stejnou dobu, kdy se ověřují zarážky zajistit, aby se označit platný kód umístění. Například zarážky na komentář není platný, protože neexistuje žádný kód v tomto umístění ve zdrojovém kódu. Ladicí program zakáže neplatný zarážky.  

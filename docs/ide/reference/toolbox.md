@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e345b573544839aea7601e334545e4ba410d6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox"></a>Sada nástrojů
 **Sada nástrojů** zobrazí ikon pro ovládací prvky a další položky, které můžete přidat do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projekty. Otevřete **sada nástrojů**, klikněte na tlačítko **sada nástrojů** na **zobrazení** nabídky. Můžete ukotvit **sada nástrojů**, a můžete připnout otevřené nebo ji nastavte na **skrýt automaticky**.  
@@ -38,17 +39,17 @@ ms.lasthandoff: 10/31/2017
 ## <a name="help-on-toolbox-tabs"></a>Nápovědy na kartách sada nástrojů  
  Následující dokumenty obsahují další informace o konkrétní **sada nástrojů** karty.  
   
--   [Sada nástrojů, karta Data](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+-   [Panel nástrojů, karta Data](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
--   [Sada nástrojů, karta součásti](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+-   [Panel nástrojů, karta Součásti](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
--   [Sada nástrojů, Karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+-   [Panel nástrojů, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
--   [Sada nástrojů, karta Data](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+-   [Panel nástrojů, karta Data](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
--   [Sada nástrojů, karta součásti](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+-   [Panel nástrojů, karta Součásti](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
--   [Sada nástrojů, Karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+-   [Panel nástrojů, karta HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>Viz také  
- [Pomocí sady nástrojů](../../ide/using-the-toolbox.md)
+ [Používání sady nástrojů](../../ide/using-the-toolbox.md)

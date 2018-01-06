@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8a5c35fb036c1d9a94bd42c5ceabe17ae65e7b7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 756fa86cf892120b0062e2816f146425ac1b4fa3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-workflow-activities"></a>Aktivity pracovního postupu starší verze
 [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)]zahrnuje výchozí sadu aktivit, které poskytují funkce pro tok řízení, podmínek, zpracování událostí, správu stavu a komunikaci s aplikacemi a službami. Při návrhu pracovních postupů, můžete použít poskytované systémem aktivity, které jsou poskytovány [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], nebo můžete vytvořit vlastní aktivitu.  
@@ -69,16 +70,16 @@ ms.lasthandoff: 10/27/2017
  [!INCLUDE[crabout](../test/includes/crabout_md.md)]vytváření vlastních aktivit, najdete v části [vývoj vlastních aktivit](http://go.microsoft.com/fwlink?LinkID=65023) a [pomocí návrháře starší aktivity](../workflow-designer/using-the-legacy-activity-designer.md).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Zobrazení aktivity (zastaralé)](../workflow-designer/activity-views-legacy.md)  
+ [Zobrazení aktivit (starší verze)](../workflow-designer/activity-views-legacy.md)  
  Popisuje zobrazení různých aktivit.  
   
- [Postupy: přidání aktivit do sady nástrojů (zastaralé)](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
+ [Postupy: Přidání aktivit do panelu nástrojů (starší verze)](../workflow-designer/how-to-add-activities-to-the-toolbox-legacy.md)  
  Ukazuje, jak přidat aktivity do sady nástrojů.  
   
- [Postupy: vytvoření podmínky deklarativní pravidla (zastaralé)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
+ [Postupy: Vytvoření podmínky deklarativního pravidla (starší verze)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)  
  Ukazuje postup vytvoření podmínku deklarativní pravidla.  
   
- [Postupy: vytvoření sadu pravidel aktivitě PolicyActivity (zastaralé)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
+ [Postupy: Vytvoření sady pravidel aktivit zásad (starší verze)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md)  
  Ukazuje postup vytvoření sady pravidel aktivitě PolicyActivity.  
   
  [Postupy: implementace kontraktu operace s WCF (zastaralé)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)  

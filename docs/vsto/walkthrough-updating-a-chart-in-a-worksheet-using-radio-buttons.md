@@ -19,11 +19,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74bd005514fa2fe72450a95d84f38dd17a7b639f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 90427051f2dd3ca7a906e7b6716a33ddd538f726
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Návod: Aktualizace grafu na listu s použitím přepínačů
   Tento návod ukazuje základy používání rádiová tlačítka na tabulku aplikace Microsoft Office Excel poskytuje způsob, jak rychle přepínat mezi možnostmi uživateli. V takovém případě možnosti změnit styl grafu.  
@@ -254,6 +255,6 @@ ms.lasthandoff: 10/31/2017
 -   Formátování v listu pomocí zaškrtávacích políček změnit. Další informace najdete v tématu [návod: Změna listu formátování pomocí ovládacích prvků CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Návody pro práci s aplikací Excel](../vsto/walkthroughs-using-excel.md)  
+ [Návody pro práci s aplikací Excel](../vsto/walkthroughs-using-excel.md)  
   
   

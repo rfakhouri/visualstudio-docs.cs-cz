@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd630a2fed94604cb91dc3af7e46f96269f75ad0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5af5dce3edf1ac2910af5f8d593ed8e316cff721
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="button-element"></a>Button Element
 Definuje element, který může uživatel zasahovat. Tlačítka můžou být různé typy: tlačítko, tlačítko nabídky a SplitDropDown.  
@@ -52,17 +53,17 @@ Definuje element, který může uživatel zasahovat. Tlačítka můžou být rů
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Nadřazený Element](../extensibility/parent-element.md)|Volitelné. Nadřazený element tlačítko.|  
-|[Icon – Element](../extensibility/icon-element.md)|Volitelné. Ikony přidružené tlačítko.|  
-|[Element Command příznak](../extensibility/command-flag-element.md)|Požadováno. Platné hodnoty CommandFlag pro tlačítko jsou následujícím způsobem.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -Typu TextOnly|  
-|[Element řetězce](../extensibility/strings-element.md)|Požadováno. Podřízená [ButtonText Element](../extensibility/buttontext-element.md) musí být definován.|  
+|[Parent – element](../extensibility/parent-element.md)|Volitelné. Nadřazený element tlačítko.|  
+|[Icon – element](../extensibility/icon-element.md)|Volitelné. Ikony přidružené tlačítko.|  
+|[Command Flag – element](../extensibility/command-flag-element.md)|Požadováno. Platné hodnoty CommandFlag pro tlačítko jsou následujícím způsobem.<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -Typu TextOnly|  
+|[Strings – element](../extensibility/strings-element.md)|Požadováno. Podřízená [ButtonText Element](../extensibility/buttontext-element.md) musí být definován.|  
 |Poznámka|Volitelný komentář.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Element tlačítka](../extensibility/buttons-element.md)|Tlačítko prvky skupiny.|  
+|[Buttons – element](../extensibility/buttons-element.md)|Tlačítko prvky skupiny.|  
   
 ## <a name="example"></a>Příklad  
  V následujícím příkladu definuje v souboru .vsct tlačítko.  
@@ -80,4 +81,4 @@ Definuje element, který může uživatel zasahovat. Tlačítka můžou být rů
  ```
  
 ## <a name="see-also"></a>Viz také  
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -25,11 +25,12 @@ caps.latest.revision: "67"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3672d2448c2b8872605db4a72c06d18c12e18886
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f2ad259a116b1679f1e619dc9d281c114fa086cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellitrace-features"></a>Funkce IntelliTrace
 Můžete zaznamenat události IntelliTrace a metoda volá vaší aplikaci, což umožňuje zkontrolovat stav (zásobník volání a místní proměnné hodnoty) v různých okamžicích v provádění. Stačí spustit ladění obvyklým – IntelliTrace je zapnutá ve výchozím nastavení a zobrazí se informace, které je v novém záznamu IntelliTrace **diagnostické nástroje** v části **události** kartě. Vyberte událost a klikněte na **aktivovat historické ladění** zobrazíte zásobník volání a místní hodnoty zaznamenány pro tuto událost.  

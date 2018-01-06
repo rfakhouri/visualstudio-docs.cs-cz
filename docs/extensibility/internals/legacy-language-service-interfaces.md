@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 925b504d8cba4813631d4f8ba6f7dbd9750f5eae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 82555c861a6bf250a818b185de57fc48f143e4f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-interfaces"></a>Rozhraní služeb starší verze jazyka
 Pro žádný konkrétní programovací jazyk může být pouze jednu instanci služby jazyk najednou. Služba jednoho jazyka však může sloužit více než jeden editor.  
@@ -55,4 +56,4 @@ Pro žádný konkrétní programovací jazyk může být pouze jednu instanci sl
   
 ## <a name="see-also"></a>Viz také  
  [Vývoj služby jazyk starší verze](../../extensibility/internals/developing-a-legacy-language-service.md)   
- [Kontrolní seznam: Vytvoření služby jazyk starší verze](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+ [Kontrolní seznam: Vytvoření služby starší verze jazyka](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)

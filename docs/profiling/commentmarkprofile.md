@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cb46497c8e00cedeb4056571d8fa1d19eb26c0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 413c429343b564aea941e61d86308e68d5910c51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` Funkce vloží číselné značku a textového řetězce v souboru .vsp. Značky a komentáře, které má být vložen, profilace podprocesu, který obsahuje `CommentMarkProfile` funkce musí být ON.  
@@ -71,7 +72,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 |-|-|  
 |**Záhlaví**|Zahrnout VSPerf.h|  
 |**Knihovna**|Použití VSPerf.lib|  
-|**Kódování Unicode**|Implementovaná jako `CommentMarkProfileW` (Unicode) a `CommentMarkProfileA` (ANSI).|  
+|**Unicode**|Implementovaná jako `CommentMarkProfileW` (Unicode) a `CommentMarkProfileA` (ANSI).|  
   
 ## <a name="example"></a>Příklad  
  Následující kód ukazuje volání funkce CommentMarkProfile. V příkladu se předpokládá použití Win32 řetězce makra a Unicode nastavení kompilátoru pro zjištění, zda kód volá [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)] volání funkce.  

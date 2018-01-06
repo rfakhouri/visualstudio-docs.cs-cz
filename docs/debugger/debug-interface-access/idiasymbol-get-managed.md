@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b8906c1806c21359445a8f4f66c88c044818595
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 19568c1dfdb3cde822be946e68e46e285926b5ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetmanaged"></a>IDiaSymbol::get_managed
 Načte příznak, který určuje, zda je symbol odkazuje do spravovaného kódu.  
@@ -42,4 +43,4 @@ HRESULT get_managed (
 >  Vrácená hodnota `S_FALSE` znamená vlastnost není k dispozici pro symbol.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

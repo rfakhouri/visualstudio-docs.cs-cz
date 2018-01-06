@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4ef9833b61a88fe45d9293cd036a52ce74788d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 25156aa6087e5ce1b00e1a4230d4fbf42ef75513
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr-warnings"></a>Upozornění VSInstr
 Následující tabulka uvádí vystavený nástroj VSInstr.exe upozornění. NOWARN možnost společně s čísla upozornění můžete potlačit zobrazení této výstrahy.  
@@ -46,4 +47,4 @@ Následující tabulka uvádí vystavený nástroj VSInstr.exe upozornění. NOW
 |**VSP2014**|Výsledný instrumentovaného bitové kopie pravděpodobně není platný a nemusí být možné spustit.<br /><br /> Tato zpráva se zobrazí při posledním instrumentovaného sestavení má neplatnou hlavičku PE.|  
   
 ## <a name="see-also"></a>Viz také  
- [Vsinstr –](../profiling/vsinstr.md)
+ [VSInstr](../profiling/vsinstr.md)

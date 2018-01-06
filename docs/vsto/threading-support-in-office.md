@@ -20,11 +20,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbfccabe310732943a818515c69abc61bec59e52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c06e88c90116040fa3e9448368d32953095f889e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threading-support-in-office"></a>Podpora práce s vlákny v systému Office
   Toto téma obsahuje informace o tom, jak dělení na vlákna je podporována v modelu objektů aplikace Microsoft Office. Objektový model Office není bezpečné pro přístup z více vláken, ale je možné pracovat s více vlákny v řešení Office. Aplikace Office jsou servery modelu COM (Component Object). COM umožňuje klientům volání COM serverů na libovolný vláken. U serverů modelu COM, které nejsou bezpečné pro přístup z více vláken poskytuje COM mechanismus k serializaci souběžných volání tak, aby pouze jedno vlákno logické spustí na serveru kdykoli. Tento mechanismus se označuje jako model single-threaded apartment (STA). Vzhledem k tomu, že se serializují volání, mohou být blokovány volající za období, zatímco server je zaneprázdněn nebo je zpracování jiná volání na vlákna na pozadí.  
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
  [Dělení na spravovaná vlákna](/dotnet/standard/threading/)  
  [Dělení na vlákna (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [vlákna (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
  [Použití vláken a dělení na vlákna](/dotnet/standard/threading/using-threads-and-threading)   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
   
   

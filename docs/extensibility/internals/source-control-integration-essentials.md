@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 09e96719bd7d9a2091bf31dc343036f0312c02fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-integration-essentials"></a>Zdroj ovládacího prvku integrace Essentials
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]podporuje dva typy integrace ovládacích prvků zdrojového: ovládací prvek zdroje modul plug-in, poskytuje základní funkce a je sestaven pomocí rozhraní API modulu Plugin zdroj ovládacího prvku (dříve označované jako rozhraní API MSSCCI) a integrace řešení řízení na základě VSPackage zdroje, poskytuje robustnější funkce.  
@@ -56,4 +57,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Viz také  
  [Přehled](../../extensibility/internals/source-control-integration-overview.md)   
  [Vytvoření ovládacího prvku zdroj modulu Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)   
- [Vytvoření ovládacího prvku VSPackage zdroje](../../extensibility/internals/creating-a-source-control-vspackage.md)
+ [Vytvoření balíčku VSPackage správy zdrojového kódu](../../extensibility/internals/creating-a-source-control-vspackage.md)

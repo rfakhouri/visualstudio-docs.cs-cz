@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilace v klastrech HPC (High Performance Computing)
 Můžete profilu na výpočetní uzly clusterů Microsoft Windows HPC pomocí metody vzorkování [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] nebo [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)] nástrojích pro profilaci. Další informace o prostředí HPC naleznete v části [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) na webu společnosti Microsoft.  

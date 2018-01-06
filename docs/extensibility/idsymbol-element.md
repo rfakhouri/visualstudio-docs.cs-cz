@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 734d05dd013be9a3d6c4a173a5c7abc7a01ef2d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 004b40acb50fe85604d0a3cfa9f5626891fa66a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idsymbol-element"></a>IDSymbol Element
 `IDSymbol` Element obsahuje ID, které odpovídá páru GUID:ID představující nabídky, skupinu nebo příkaz. Identifikátor GUID pochází z nadřazené `GuidSymbol` elementu. `IDSymbol` Element má `name` atribut, který poskytuje popisný název pro dané ID, který je součástí `value` atribut.  
@@ -47,10 +48,10 @@ ms.lasthandoff: 10/31/2017
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[GuidSymbol Element](../extensibility/guidsymbol-element.md)|Obsahuje identifikátor GUID, které odpovídá páru GUID:ID představující nabídky, skupinu nebo příkaz. Skupiny `IDSymbol` elementy.|  
+|[GuidSymbol – element](../extensibility/guidsymbol-element.md)|Obsahuje identifikátor GUID, které odpovídá páru GUID:ID představující nabídky, skupinu nebo příkaz. Skupiny `IDSymbol` elementy.|  
   
 ## <a name="remarks"></a>Poznámky  
  Každý `IDSymbol` element v danou `GuidSymbol` element musí mít jedinečnou `value`. Ale `IDSymbol` prvky, které mají stejné hodnoty může existovat v balíčku, dokud mají jiné nadřazené položky.  
   
 ## <a name="see-also"></a>Viz také  
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

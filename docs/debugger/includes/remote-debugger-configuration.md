@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 05a288a2d8dff776d8a5d3faea47b06d101f2ea3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: cfb41cf6274238fef2de9b74496a33fba110e04f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/03/2018
 ---
 Musíte mít oprávnění správce na vzdáleném počítači.  
   
@@ -43,4 +43,4 @@ Musíte mít oprávnění správce na vzdáleném počítači.
   
  Po dokončení ladění a muset zastavit vzdáleného ladicího programu, klikněte na tlačítko **soubor > ukončení** v okně. Můžete restartovat z **spustit** nabídky nebo z příkazového řádku:  
   
- **\<Visual Studio Instalační adresář > \Common7\IDE\Remote ladicí program\\< x86, x64 nebo Appx\msvsmon.exe**.  
+ **\<Visual Studio Instalační adresář > \Common7\IDE\Remote ladicí program\\< x86, x64 nebo Appx > \msvsmon.exe**.  

@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6fdb3585d0b2bba5daf248707fa2848d3d32dfdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: eb8abbcb335aad7b65466ee40cfa70d656a3ea3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-universal-windows-projects"></a>Správa projektů Universal Windows
 Univerzální aplikace pro Windows jsou aplikace, které se zaměřují na Windows 8.1 a Windows Phone 8.1, což umožňuje vývojářům používat kód a dalších prostředků na obě platformy. Sdílené kód a prostředky jsou uchovávány v sdílený projekt, zatímco kód specifický pro platformu a prostředky jsou uchovávány v samostatné projekty, jeden pro systém Windows a druhou pro Windows Phone. Další informace o univerzálních aplikací pro Windows najdete v tématu [univerzálních aplikací pro Windows](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx). Visual Studio rozšíření, které spravují projekty měli vědět, že projekty univerzálních aplikací pro Windows mají strukturu, která se liší od jedné platformy aplikace. Tento návod ukazuje, jak přejděte sdílený projekt a spravovat sdílené položky.  

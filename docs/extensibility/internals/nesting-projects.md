@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4207903fdd0f9a1462460d7f7cb2704e70e08df6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5b91f9dc00b9130f2c239bd3254f78376bc0fdf3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nesting-projects"></a>Vnoření projekty
 Podnikové aplikace vývojáře, kteří používají vašeho balíčku VS můžete pohodlně Seskupit podobné typy projektů společně v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pomocí *projektu vnoření*. Projekt šablony organizace například používá vnořené projektů pro projekty skupiny do kategorií. Obchodní průčelí za projekty, projekty webového uživatelského rozhraní a tak dále jsou seskupeny dohromady v jedné kategorii.  
@@ -45,4 +46,4 @@ Příklad vnořené projekty
  [Filtrování AddItem dialogových oken pro vnořené projekty](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
  [Kontrolní seznam: Vytvoření nové typy projektu](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Kontextové parametry](../../extensibility/internals/context-parameters.md)   
- [Průvodce (. Soubor vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Soubor průvodce (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d8b349bee09f068a5777ecc212223c36951236ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 896448526f41514fb74b385f8605839908708305
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 Toto rozhraní představuje proces, který běží na portu. Jestliže port je místního portu, potom `IDebugProcess2` obvykle reprezentuje fyzický procesu v místním počítači.  
@@ -49,9 +50,9 @@ IDebugProcess2 : IUnknown
 |[GetName –](../../../extensibility/debugger/reference/idebugprocess2-getname.md)|Získá název, popisný název nebo název souboru procesu.|  
 |[GetServer](../../../extensibility/debugger/reference/idebugprocess2-getserver.md)|Získá instanci objektu, který tento proces běží na počítač serveru.|  
 |[Ukončení](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)|Ukončit proces.|  
-|[Připojení](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Připojí k procesu.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocess2-attach.md)|Připojí k procesu.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprocess2-candetach.md)|Určuje, pokud SDM můžete odpojit proces.|  
-|[Odpojení](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Umožňuje odpojit ladicí program z procesu.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Umožňuje odpojit ladicí program z procesu.|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Získá identifikátor procesu systému.|  
 |[Getprocessid –](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Získá globálně jedinečný identifikátor pro tento proces.|  
 |[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [ZASTARALÝ]|Získá název relace, který je ladění proces.<br /><br /> [ZASTARALÉ. MĚLI VŽDY VRÁTÍ `E_NOTIMPL`.]|  

@@ -15,11 +15,12 @@ caps.latest.revision: "59"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 45714799a518cefa1edb7164437af7c4a067b0e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4e809363656b94dc4e922d558a57a0848dba46e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Je platforma pro vytváření aplikací. Tento modul, který je také označován jako MSBuild, poskytuje schéma XML pro soubor projektu, který určuje, jak platformy sestavení zpracuje a vytvoří softwaru. Visual Studio použije nástroje MSBuild, ale není závisí na sadě Visual Studio. Vyvoláním msbuild.exe v souboru projektu nebo řešení můžete orchestraci a sestavení produkty v prostředích, kde není nainstalovaná sada Visual Studio.  
@@ -202,11 +203,11 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 |[Úlohy](../msbuild/msbuild-tasks.md)|Ukazuje, jak vytvořit jednotku spustitelného kódu, který mohou využívat [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k provádění operací atomic sestavení.|  
 |[Podmínky](../msbuild/msbuild-conditions.md)|Popisuje postup použití `Condition` atribut elementu MSBuild.|  
 |[Rozšířené koncepty](../msbuild/msbuild-advanced-concepts.md)|Uvede dávkování, provádění transformací, cílení na více verzí a další pokročilé techniky.|  
-|[Protokolování v nástroji MSBuild](../msbuild/logging-in-msbuild.md)|Popisuje, jak do protokolu událostí sestavení, zpráv a chyby.|  
+|[Protokolování v nástroji MSBuild](../msbuild/logging-in-msbuild.md)|Popisuje, jak do protokolu událostí sestavení, zpráv a chyby.|  
 |[Další zdroje informací](../msbuild/additional-msbuild-resources.md)|Obsahuje seznam podpory a komunitních zdrojů pro další informace o nástroji MSBuild.|  
   
 ## <a name="reference"></a>Odkaz  
- [MSBuild – Reference](../msbuild/msbuild-reference.md)  
+ [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)  
  Odkazy na témata, které obsahují referenční informace.  
   
  [Glosář](msbuild-glossary.md) definuje běžné podmínky nástroje MSBuild.

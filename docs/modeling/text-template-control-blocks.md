@@ -12,11 +12,12 @@ caps.latest.revision: "32"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0a2f2ba54f26e84ee321f0f726f2f07dbef5c19b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5bd426efbe6de1815c28bd122f13e7c6c912c359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-template-control-blocks"></a>Řídicí bloky textových šablon
 Řídicí bloky umožňují napsat kód v textové šablony, aby bylo možné odlišit výstup. Existují tři druhy řídicí bloky, které jsou rozlišené jejich otvírací závorky:  

@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de361711234404e8b83e28aa1875b3549039bce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 447fa8749958a3fa2b65a6ef7eb878b906170e6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Postupy: Import stránky předlohy nebo motivu
   Můžete udělit stránky na webu služby SharePoint konzistentní vzhled vytvořením a použitím hlavní stránky a motivů. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]neposkytuje šablon pro tyto elementy, ale můžete je vytvořit v seznamu služby SharePoint a pak je importovat do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [stavebním blokem: stránek a uživatelské rozhraní](http://go.microsoft.com/fwlink/?LinkID=182095) na webu společnosti Microsoft.  
@@ -97,6 +98,6 @@ ms.lasthandoff: 10/31/2017
  [Stránky předlohy](http://go.microsoft.com/fwlink/?LinkId=184955)   
  [Import položek z existující stránky SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   
  [Vytváření stránek pro službu SharePoint](../sharepoint/creating-pages-for-sharepoint.md)   
- [Vložené soubory v řešení pomocí modulů](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
+ [Vložení souborů do řešení pomocí modulů](../sharepoint/using-modules-to-include-files-in-the-solution.md)  
   
   

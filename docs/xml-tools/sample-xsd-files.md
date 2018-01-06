@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a48af8fb930f30157314b408ff4b77f4c397ff7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 98783b05d531f41583bbd3843e50a808f655ba2b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-xsd-files"></a>Ukázkové soubory XSD
 Následující příklad soubory se používají v dokumentaci k Návrhář schématu XSD.  
@@ -28,6 +29,6 @@ Následující příklad soubory se používají v dokumentaci k Návrhář sch�
   
 |Téma|Popis|  
 |-----------|-----------------|  
-|[Ukázkový soubor XSD: Nákupu pořadí schématu](../xml-tools/sample-xsd-file-purchase-order-schema.md)|XSD dokument, který bude obsahovat schéma pořadí typické nákupu.|  
-|[Ukázkový soubor XSD: Schéma jednoduchý](../xml-tools/sample-xsd-file-simple-schema.md)|XSD dokument, který bude obsahovat jednoduché schématu.|  
-|[Ukázkový soubor XSD: vztahy](../xml-tools/sample-xsd-file-relationships.md)|XSD dokument, který bude obsahovat schématu s relací.|
+|[Ukázkový soubor XSD: Schéma nákupní objednávky](../xml-tools/sample-xsd-file-purchase-order-schema.md)|XSD dokument, který bude obsahovat schéma pořadí typické nákupu.|  
+|[Ukázkový soubor XSD: Jednoduché schéma](../xml-tools/sample-xsd-file-simple-schema.md)|XSD dokument, který bude obsahovat jednoduché schématu.|  
+|[Ukázkový soubor XSD: Relace](../xml-tools/sample-xsd-file-relationships.md)|XSD dokument, který bude obsahovat schématu s relací.|

@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 899211452a776931e3d0d9742e499ed8ba78a652
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3755dbb95dc220d070219fbac4a03885d5ed0158
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="reference-programmatic-capture"></a>Referenční dokumentace (zachytávání prostřednictvím kódu programu)
 Diagnostika grafiky podporuje programovou kontrolu nad jeho zachycení funkce prostřednictvím zachytávání prostřednictvím kódu programu rozhraní API. Toto rozhraní API slouží k přepnutí a taky přidat zprávy do diagnostiky grafiky HUD (zobrazení Head-Up), inicializovat a vytvořit grafiky soubory protokolu a zaznamenání grafických informací.  
@@ -27,7 +28,7 @@ Diagnostika grafiky podporuje programovou kontrolu nad jeho zachycení funkce pr
   
 |Název|Popis|  
 |----------|-----------------|  
-|[VsgDbg – třída](vsgdbg-class.md)|Představuje rozhraní, přes který se v aplikaci součást diagnostiky grafiky řídí prostřednictvím kódu programu.|  
+|[Třída VsgDbg](vsgdbg-class.md)|Představuje rozhraní, přes který se v aplikaci součást diagnostiky grafiky řídí prostřednictvím kódu programu.|  
   
 ### <a name="preprocessor-symbols"></a>Symboly preprocesoru  
   

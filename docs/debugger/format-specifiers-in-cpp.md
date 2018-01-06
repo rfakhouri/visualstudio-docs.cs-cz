@@ -30,11 +30,12 @@ caps.latest.revision: "40"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0318f5a3cb1cd19c658030d64c4f6ec8bcbf0a9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 11be1eb546902e8e37843383fe499274f819883f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory formátu v jazyce C++ v ladicím programu sady Visual Studio
 Formát, ve kterém je zobrazená hodnota v lze změnit **sledovat** okno použití specifikátorů formátu.  
@@ -76,7 +77,7 @@ int main() {
 |**SB**|const char * řetězec (bez uvozovek)|\<umístění > "hello, world"|Ahoj světe|  
 |s8|Řetězec ve formátu UTF-8|\<umístění > "Toto je â˜• Šálek kávy UTF-8"|"Toto je ☕ Šálek kávy UTF-8"|
 |**s8b**|Řetězec ve formátu UTF-8 (bez uvozovek)|\<umístění > "hello, world"|Ahoj světe|  
-|su|Řetězec znaků Unicode (kódování UTF-16)|\<umístění > L "hello, world"|L "hello, world"<br /><br /> u "hello, world"|  
+|su|Řetězec znaků Unicode (kódování UTF-16)|\<umístění > L "hello, world"|L "hello, world"<br /><br /> U "hello world"|  
 |Sub –|Řetězec znaků Unicode (kódování UTF-16) (bez uvozovek)|\<umístění > L "hello, world"|Ahoj světe|  
 |bstr|Řetězce BSTR|\<umístění > L "hello, world"|L "hello, world"|  
 |env|Blok prostředí (ukončenou řetězec dvojitou hodnotu null)|\<umístění > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
@@ -139,7 +140,7 @@ int main() {
 |**MQ**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|2bajtové znaky (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Specifikátor velikosti pro ukazatele jako pole ve spolupráce ladění pomocí C + +/ CLIt  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a>Specifikátor velikosti pro ukazatele jako pole ve spolupráce ladění pomocí C + +/ CLI  
  Pokud máte ukazatel na objekt, který chcete zobrazit jako pole, můžete zadat počet elementů pole celé číslo:  
   
 |Specifikátor|Formát|Výraz|Zobrazené hodnoty|  

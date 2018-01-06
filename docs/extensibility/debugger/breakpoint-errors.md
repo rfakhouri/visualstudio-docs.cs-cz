@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9c197bbaf8fb79ea4396c7b2e36af94d59c7ea8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cd9347290199ce695f7b2f42733ad8e5d108ac0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="breakpoint-errors"></a>Breakpoint – chyby
 Následující popisuje proces, když se pokusí vytvořit vazbu na kód zarážku ale selže:  
@@ -36,4 +37,4 @@ Následující popisuje proces, když se pokusí vytvořit vazbu na kód zaráž
 4.  Volání SDM [IDebugErrorBreakpoint2::GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) získat z důvodu, proč se nepodařilo vytvořit vazbu zarážek chyby.  
   
 ## <a name="see-also"></a>Viz také  
- [Události volání ladicí program](../../extensibility/debugger/calling-debugger-events.md)
+ [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)

@@ -21,21 +21,18 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2c4077c57232f511097d6e1d46c49bf7337aee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 873e08817eef7d1760a717d98e413d8d4096323b
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="debugger-basics"></a>Základy ladicího programu
 Ladicí program Visual Studio umožňuje sledovat chování běhové vašeho programu a vyhledejte chyby logiku. Ladicí program funguje pro všechny programovací jazyky Visual Studio a jejich přidružené knihovny. S ladicím programem může dojít k narušení provádění krokovat kód a vyhodnocení proměnné ve vaší aplikaci.  
   
-## <a name="in-this-section"></a>V tomto oddílu  
  [Začínáme s ladicím programem](../debugger/getting-started-with-the-debugger.md)  
  Vysvětluje, jak používat funkce ladicí program k ladění aplikací.  
-
- [Podívejte se na video ladicí program](../debugger/getting-started-with-the-debugger.md#video)  
- Ukazuje, jak používat funkce ladicí program k ladění aplikací.
   
  [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)  
  Popisuje postup krok prostřednictvím kódu s ladicím programem.  

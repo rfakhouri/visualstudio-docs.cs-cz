@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 303ce6608ee17b99995d871c5da1536a08fef335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cd3e9d5e10e6946b4cae8ce02a5a39511e4baaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Návod: Zobrazení QuickInfo popisy tlačítek
 QuickInfo je funkce technologie IntelliSense, která zobrazuje metoda podpisy a popisy, když se uživatel přesune ukazatel myši název metody. Funkce založené na jazyce jako třeba QuickInfo můžete implementovat definováním identifikátory, pro které byste chtěli poskytnout QuickInfo popisy, a pak vytvořit popisek ve kterém chcete zobrazit obsah. Můžete definovat QuickInfo v kontextu služby jazyk, nebo můžete definovat typ vlastního souboru název rozšíření a obsahu a zobrazit QuickInfo právě tohoto typu nebo můžete zobrazit QuickInfo pro existující typ obsahu (například "text"). Tento návod ukazuje, jak má být zobrazen pro typ obsahu "text" QuickInfo.  
@@ -177,4 +178,4 @@ QuickInfo je funkce technologie IntelliSense, která zobrazuje metoda podpisy a 
 4.  Přesuňte ukazatel myši nad jednu z výskytů "Přidat". Podpis a popis `add` metoda má být zobrazen.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

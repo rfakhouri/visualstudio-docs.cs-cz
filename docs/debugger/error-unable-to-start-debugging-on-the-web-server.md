@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -26,16 +26,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Chyba: Nepodařilo se zahájit ladění na webovém serveru.
 
@@ -119,7 +119,7 @@ Po převzetí kroky popsané v tomto poli se problém vyřešit a před dalším
 
 * Zkontrolujte konfiguraci fondu aplikací, se v případě potřeby opravte a potom opakujte.
 
-    Fond aplikací může být nakonfigurován pro verzi technologie ASP.NET, která neodpovídá projektu sady Visual Studio. Aktualizovat verzi technologie ASP.NET ve fondu aplikací a restartujte ji. Podrobné informace najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+    Fond aplikací může být nakonfigurován pro verzi technologie ASP.NET, která neodpovídá projektu sady Visual Studio. Aktualizovat verzi technologie ASP.NET ve fondu aplikací a restartujte ji. Podrobné informace najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     Navíc pokud se změnila oprávnění hesla, musíte je aktualizovat v fond aplikací nebo Web.  Ve fondu aplikací, aktualizujte přihlašovací údaje v **Upřesnit nastavení > Model procesu > Identity**. Pro webový server, aktualizujte přihlašovací údaje v **základní nastavení > připojte se jako...** . Restartujte fond aplikací.
     
@@ -129,7 +129,7 @@ Po převzetí kroky popsané v tomto poli se problém vyřešit a před dalším
 
 * Ujistěte se, že je nainstalována správná verze technologie ASP.NET ve službě IIS.
 
-    Tento problém může způsobit neodpovídající verze technologie ASP.NET ve službě IIS a v projektu sady Visual Studio. Musíte nastavit framework verze v souboru web.config. Instalace technologie ASP.NET ve službě IIS, použijte [instalačního programu webové platformy (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Další informace naleznete v [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) nebo pro ASP.NET Core [hostitele v systému Windows pomocí služby IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+    Tento problém může způsobit neodpovídající verze technologie ASP.NET ve službě IIS a v projektu sady Visual Studio. Musíte nastavit framework verze v souboru web.config. Instalace technologie ASP.NET ve službě IIS, použijte [instalačního programu webové platformy (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Další informace naleznete v [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) nebo pro ASP.NET Core [hostitele v systému Windows pomocí služby IIS](https://docs.asp.net/en/latest/publishing/iis.html).
   
 * Řešení chyb při ověřování, pokud používáte pouze IP adresa
 
@@ -155,7 +155,7 @@ Pokud konfigurace služby IIS není příčinou problému, proveďte následují
 
      Pokud služba IIS není nainstalována správně, měli byste obdržet chyby při zadávání `http://localhost` v prohlížeči.
      
-     Další informace o nasazení do služby IIS najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) a pro ASP.NET Core [hostitele v systému Windows pomocí služby IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+     Další informace o nasazení do služby IIS najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) a pro ASP.NET Core [hostitele v systému Windows pomocí služby IIS](https://docs.asp.net/en/latest/publishing/iis.html).
 
 * Vytvořte základní aplikace ASP.NET na serveru (nebo použijte soubor základní web.config).
 

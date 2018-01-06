@@ -26,11 +26,12 @@ caps.latest.revision: "91"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 026353ff6a59b0dbf3ef1bb817210f2e835963de
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2870f057f34299a41dcb090f97bb13316cb28387
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Procházení a změna uspořádání map kódu
 Změna uspořádání položek na map kódu k snadnější čtení a zvýšit výkon.  
@@ -323,4 +324,4 @@ Změna uspořádání položek na map kódu k snadnější čtení a zvýšit v�
  [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)   
  [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)   
- [Řízené reference jazyka značení grafů (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md)
+ [Referenční dokumentace jazyka přímého značení grafů (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md)

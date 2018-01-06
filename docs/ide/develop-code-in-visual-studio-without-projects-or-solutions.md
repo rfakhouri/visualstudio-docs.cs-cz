@@ -29,11 +29,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9531a49ced6e8f72154cbdd59fce271ff673f59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78b59ff3d8d6c54465ce29334c1dbe041b7a71be
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Vývoj kódu v sadě Visual Studio bez projekty a řešení  
 V 2017 Visual Studio můžete do sady Visual Studio bez nutnosti soubor řešení nebo produktu project otevřete kód z téměř jakéhokoli typu na základě adresáře projektu. To znamená, že můžete, například najít projekt kódu na Git, klonovat a pak otevřete přímo do sady Visual Studio a začít, aniž by bylo nutné vytvořit projekt nebo řešení pro vývoj.  
@@ -171,7 +172,7 @@ V tomto postupu přidáme dva vlastní sestavovací úlohy, které využívají 
 
   ![Příkaz úloh vlastní sestavení](./media/VSIDE_Code_Tasks_CustTask1.png)
 
-1. Přidejte následující úlohy sestavení do tasks.vs.json. V tomto příkladu přidáme dvě úlohy: jeden názvem "makefile sestavení" které používá příkaz nMake a tím projekt sestavit, druhou s názvem souboru pravidel vyčistit která volá příkaz nMake s argumentem "čistou". Tyto úlohy musí být přidaní v rámci pole existujících "úlohy". (Všimněte si, že jsou pouze příklad úlohami sestavení. Je ve skutečnosti pracovat, je potřeba mít pracovní zátěž, která obsahuje [nNake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) v systému nainstalována.)  
+1. Přidejte následující úlohy sestavení do tasks.vs.json. V tomto příkladu přidáme dvě úlohy: jeden názvem "makefile sestavení" které používá příkaz nMake a tím projekt sestavit, druhou s názvem souboru pravidel vyčistit která volá příkaz nMake s argumentem "čistou". Tyto úlohy musí být přidaní v rámci pole existujících "úlohy". (Všimněte si, že jsou pouze příklad úlohami sestavení. Je ve skutečnosti pracovat, je potřeba mít pracovní zátěž, která obsahuje [nNake](/cpp/build/nmake-reference) v systému nainstalována.)
 
   ```xml
   {

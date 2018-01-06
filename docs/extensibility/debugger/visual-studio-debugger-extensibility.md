@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9a14f95fbed47670b3c5b5db19e4e0e6b8ba074
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5b5943dc8087a22e1bdfb94ae6d0d10335c174a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Rozšiřitelnost ladicího programu sady Visual Studio
 Visual Studio obsahuje ladicí program kód plně interaktivní zdroje, poskytuje efektivní a snadno použitelný nástroj pro sledování dolů chyby v programu. Ladicí program má úplnou podporu jazyka Visual Basic, C#, C/C++ a JavaScript. Nicméně s [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], která je k dispozici z [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), jinými programovací jazyky může být podporovaný v ladicím programu s stejné bohaté funkce.  
@@ -36,16 +37,16 @@ Visual Studio obsahuje ladicí program kód plně interaktivní zdroje, poskytuj
  [Začínáme](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
  Popisuje, co [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění nabídky a jak nainstalovat sadu SDK.  
   
- [Vytváření vlastních ladění modulu](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+ [Vytvoření vlastního ladicího stroje](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
  Dokumenty vlastní proces DE, od přípravy vašeho programu pro DE k odpojení DE.  
   
  [Zápis vyhodnocovací filtr výrazů CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
  Vysvětluje, zda je nutné napsat vyhodnocovací filtr výrazů.  
   
- [Výběr strategie implementace modulu ladění](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
+ [Výběr strategie implementace ladicího stroje](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
  Popisuje, jak implementovat vaše DE.  
   
- [Referenční dokumentace](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
+ [Referenční informace](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
  Dokumenty [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozhraní API pro ladění.  
   
  [Ukázky](../../extensibility/debugger/visual-studio-debugging-samples.md)  

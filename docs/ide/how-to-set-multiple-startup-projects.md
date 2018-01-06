@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6241d739a48e8061bb9962578fd4e4158f78cac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9b148fe01c3cd36713853531941c09611a6bf57f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Postupy: Nastavení vícenásobných spouštěných projektů
 Visual Studio můžete zadat více než jeden projekt se spustí při spuštění ladicího programu.  
@@ -33,7 +34,7 @@ Visual Studio můžete zadat více než jeden projekt se spustí při spuštěn�
 4.  Vyberte **více projektů po spuštění** možnost a nastavte příslušné akce.
 
 ## <a name="see-also"></a>Viz také  
- [Kompilaci a sestavování](../ide/compiling-and-building-in-visual-studio.md)
+ [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)
 
  [Vytváření řešení a projektů](../ide/creating-solutions-and-projects.md)
 

@@ -13,11 +13,12 @@ caps.latest.revision: "42"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f702a834b925f13525db122934a5593d313e0ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b54dabbe00b0df920655b595cab32ed21126415b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-highlighting-text"></a>Návod: Zvýraznění textu
 Různých vizuálních efektů můžete přidat do editoru vytvořením součásti Managed Extensibility Framework (MEF). Tento návod ukazuje, jak chcete zvýraznit všechny výskyty aktuální slova v textovém souboru. Pokud slovo dojde k více než jednou v textovém souboru a umístit pomocí kurzoru v jeden výskyt, každý výskyt zvýrazní.  
@@ -408,4 +409,4 @@ Různých vizuálních efektů můžete přidat do editoru vytvořením součás
 4.  Umístěte kurzor v jednom z výskytů text "hello". Každý výskyt by měl být modře zvýrazněný.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

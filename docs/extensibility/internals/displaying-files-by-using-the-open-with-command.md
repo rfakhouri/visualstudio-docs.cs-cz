@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed8a19ce0cfb6a7936d61ff7a5855498d2010359
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a1631632a2ceb66380d1d0c41e54b5a4244a31a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>Zobrazení souborů pomocí příkazu Open
 Projekt můžete požádat IDE pro zobrazení **otevřít v** dialogové okno. Tento požadavek vyzývá uživatele k otevření souboru, který má výběr standardní editory. Následující kroky popisují tohoto procesu.  
@@ -37,4 +38,4 @@ Projekt můžete požádat IDE pro zobrazení **otevřít v** dialogové okno. T
 ## <a name="see-also"></a>Viz také  
  [Otevření a uložení položky projektu](../../extensibility/internals/opening-and-saving-project-items.md)   
  [Zobrazení souborů pomocí příkaz pro otevření souboru](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)   
- [Postupy: otevření standardní editory](../../extensibility/how-to-open-standard-editors.md)
+ [Postupy: Otevření standardních editorů](../../extensibility/how-to-open-standard-editors.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5613790632c4bd462c1efbb3f218a0299b276179
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5f1e8888461026f734ac08c5ec3f23b10f310174
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve hře nebo aplikaci
 Tento článek popisuje, jak můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ke zpracování 3D prostředky a zahrnout je ve vašich sestaveních.  
@@ -202,8 +203,8 @@ cbuffer MiscVars : register(b3)
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: Export Texture, který obsahuje Mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Popisuje, jak exportovat texture, který obsahuje předpočítané mipmaps pomocí bitové kopie obsahu kanálu.|  
-|[Postupy: Export Texture, který má předem vynásobený Alpha](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Popisuje, jak použít bitovou kopii obsahu kanálu pro exportování texture, který obsahuje předem vynásobí alfanumerické hodnoty.|  
-|[Postupy: Export texturou pro použití s Direct2D nebo Javascipt aplikace](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Popisuje, jak použít bitovou kopii obsahu kanálu pro exportování texture, které je možné v aplikaci Direct2D nebo JavaScript.|  
+|[Postupy: Export textury obsahující mipmapy](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Popisuje, jak exportovat texture, který obsahuje předpočítané mipmaps pomocí bitové kopie obsahu kanálu.|  
+|[Postupy: Export textury s přednásobeným alfa](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Popisuje, jak použít bitovou kopii obsahu kanálu pro exportování texture, který obsahuje předem vynásobí alfanumerické hodnoty.|  
+|[Postupy: Export textury pro použití s rozhraním Direct2D nebo aplikacemi JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Popisuje, jak použít bitovou kopii obsahu kanálu pro exportování texture, které je možné v aplikaci Direct2D nebo JavaScript.|  
 |[Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md)|Popisuje nástroje pro úpravy, které poskytuje Visual Studio pro vytváření a manipulace s nimi 3D prostředky, které zahrnují textury a bitové kopie, 3D modely a shadery.|  
-|[Postupy: Export shaderu](../designers/how-to-export-a-shader.md)|Popisuje, jak exportovat shaderu z Návrháře shaderu.|
+|[Postupy: Exportování shaderu](../designers/how-to-export-a-shader.md)|Popisuje, jak exportovat shaderu z Návrháře shaderu.|

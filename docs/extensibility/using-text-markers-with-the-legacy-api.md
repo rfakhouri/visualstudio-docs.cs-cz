@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64f4d7f7e4a71c1d304bfa5045175fd613bcb539
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Text značky pomocí starší verze rozhraní API
 Text značky je plovoucí rozsah textu ve vyrovnávací paměť, která může mít vliv na zobrazení a chování oblasti textu. Značky zahrnují zarážky, záložky, podtržení vlnovkami a oblasti jen pro čtení. Text značky jsou v podstatě liší od barevné zvýrazňování syntaxe. Barevné zvýrazňování syntaxe je rychlý způsob, jak sdělit syntaxe jazyka, který je přidružené k oblasti textu. Barevné zvýrazňování syntaxe je obecně požadovány při Windows překreslí obrazovky, když je důležité rychlost. Barevné zvýrazňování syntaxe změní barvu textu. Text značek můžete změnit mnoho dalších vlastností text. Text značek můžete "float" a použít zvláštní chování barevné zvýrazňování.  

@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0fa94458b1b3b02e2df666af099d97bb7e115c22
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: b7eaa5214a87c2931a260f1c5adb6bac56dfa288
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumenty příkazového řádku pro aplikaci Help Content Manager
 Můžete určit způsob nasazení a Správa místního obsahu nápovědy pomocí argumenty příkazového řádku pro obsah správce nápovědy (HlpCtntMgr.exe). Je nutné spustit skripty pro tento nástroj příkazového řádku s oprávněními správce a tyto skripty nelze spustit jako služby. Pomocí tohoto nástroje můžete provádět následující úlohy:  
@@ -89,5 +90,5 @@ UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because anothe
   
 ## <a name="see-also"></a>Viz také  
 [Příručka správce Help Vieweru](../ide/help-viewer-administrator-guide.md)  
-[Přepsání Help Content Manager](../ide/help-content-manager-overrides.md)  
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+[Přepsání voleb Help Content Manageru](../ide/help-content-manager-overrides.md)  
+[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)

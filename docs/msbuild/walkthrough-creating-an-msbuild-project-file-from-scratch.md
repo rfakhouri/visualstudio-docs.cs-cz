@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 740eefc28e0b48d327fb5d0900ab39364633f877
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b8c0f47186b36cea9b203805c3c9c009acb3fb42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Návod: Vytvoření souboru projektu MSBuild od začátku
 Programovací jazyky, které cílí na rozhraní .NET Framework použijte soubory projektu nástroje MSBuild k označení a řízení procesu sestavení aplikace. Pokud používáte Visual Studio k vytvoření souboru projektu nástroje MSBuild, příslušné XML je automaticky přidá do souboru. Ale možná bude vhodné se seznámit s uspořádání XML a jak ji k řízení sestavení můžete změnit.  
@@ -481,4 +482,4 @@ Programovací jazyky, které cílí na rozhraní .NET Framework použijte soubor
   
 ## <a name="see-also"></a>Viz také  
 [Přehled nástroje MSBuild](../msbuild/msbuild.md)  
- [MSBuild – Reference](../msbuild/msbuild-reference.md)
+ [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93efd5d0e0eb391a164f4997b7ddeedab09b4201
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ec3bfc47829bce2fe5ad836c970cb28f8a1294e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updateconfiguration-devenvexe"></a>/ Updateconfiguration (devenv.exe)
 Upozorní [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sloučit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] balíčků na systém a kontroly MEF mezipaměti pro všechny změny.  
@@ -43,4 +44,4 @@ Devenv.exe /updateconfiguration
   
 ## <a name="see-also"></a>Viz také  
  [Přizpůsobení sady Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)   
- [Přepínače příkazového řádku nástroje devenv](../../ide/reference/devenv-command-line-switches.md)
+ [Devenv – přepínače příkazového řádku](../../ide/reference/devenv-command-line-switches.md)

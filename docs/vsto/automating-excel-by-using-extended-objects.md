@@ -25,11 +25,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fee085fc97308dd3f62066215b65faede08162e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f8342db2cc5803aaed31a7bda0cc8d8b6ae15e83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automating-excel-by-using-extended-objects"></a>Automatizace v aplikaci Excel s použitím rozšířených objektů
   Při vývoji řešení pro aplikaci Excel v sadě Visual Studio, můžete použít *hostitele položky* a *hostování ovládacího prvku*s v řešení. Jedná se o objekty, které rozšiřují určité běžně používané objekty ve model objektů aplikace Excel (tedy model objektu zveřejněného prostřednictvím primární spolupracující sestavení pro aplikaci Excel), jako například <xref:Microsoft.Office.Interop.Excel.Worksheet> a <xref:Microsoft.Office.Interop.Excel.Range> objekty. Rozšířené objekty chovají jako objekty aplikace Excel, které jsou založené na, ale jejich přidat další funkce, například nové události a možnosti vazby dat k objektům.  
@@ -56,13 +57,13 @@ ms.lasthandoff: 10/31/2017
   
  Další informace o hostitelských ovládacích prvcích můžete použít v projekty aplikace Excel, najdete v následujících tématech:  
   
--   [Ovládací prvek graf](../vsto/chart-control.md)  
+-   [Graf – ovládací prvek](../vsto/chart-control.md)  
   
 -   [ListObject – ovládací prvek](../vsto/listobject-control.md)  
   
 -   [NamedRange – ovládací prvek](../vsto/namedrange-control.md)  
   
--   [Xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md)  
+-   [XMLMappedRange – ovládací prvek](../vsto/xmlmappedrange-control.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: vyplnění ovládacích prvků ListObject daty](../vsto/how-to-fill-listobject-controls-with-data.md)   

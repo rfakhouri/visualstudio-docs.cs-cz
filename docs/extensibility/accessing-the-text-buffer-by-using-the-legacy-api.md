@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: facfc1670bf9d04035beffc47b7124bd5d309a7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Přístup k textová vyrovnávací paměť s použitím rozhraní API starší verze
 Text je zodpovědný za správu textové datové proudy a soubor trvalost. I když vyrovnávací paměti můžou číst nebo zapisovat dalších formátů, všechny běžné komunikace s vyrovnávací paměti se provádí pomocí kódování Unicode. Ve starší verzi rozhraní API textovou vyrovnávací paměť můžete použít jeden – nebo dvourozměrná souřadnicový systém můžete určit umístění znaku ve vyrovnávací paměti.  

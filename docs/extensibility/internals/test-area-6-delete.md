@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a8949135bb7354ba0279ac1b6c2f0ba99fb1b2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 204038ac7a86c0b458ea08c2f4bd2c6a4dffe7cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-6-delete"></a>Testování oblasti 6: odstranění
 Tato oblast modulu plug-in testovací zdrojového kódu zahrnuje akce odstranění.  
@@ -32,7 +33,7 @@ Tato oblast modulu plug-in testovací zdrojového kódu zahrnuje akce odstraněn
   
 -   Složky  
   
--   Project  
+-   Projekt  
   
  V závislosti na typu projektu, můžete mít možnost **odebrat** projektu (soubory na disku zůstanou) nebo **odstranit** projektu (odebere soubory na disku). Obě tyto akce odebere projektu nebo položku z **Průzkumníku řešení**.  
   
@@ -56,4 +57,4 @@ Tato oblast modulu plug-in testovací zdrojového kódu zahrnuje akce odstraněn
 |Odstranění souboru z webového systému souboru projektu|1.  Vytvořte soubor systém webového projektu.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Odstranění souboru z projektu.<br />4.  Opakujte kroky 1 až 3 pro místní webového projektu (vykonává různé cesty prostřednictvím kód, ale má stejné externí rozhraní a chování).|Běžné očekávané chování.|  
   
 ## <a name="see-also"></a>Viz také  
- [Příručka pro testovací modulů plug-in programu zdroj ovládacího prvku](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

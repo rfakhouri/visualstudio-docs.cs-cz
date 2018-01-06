@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36deb203a9eb642684c65ea09dc8e1d6c4ba98c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 290b144da6cf6c8e680fdba7dcf99ffbaa19cf53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-and-continue-not-supported-for-f"></a>Operace Upravit a pokračovat není podporována pro F#. #
 Upravit a pokračovat není podporován při ladění kódu F #. Úpravy F # – kód je možné během relace ladění, ale je nutno. Změny kódu nejsou použité během ladicí relace. Veškeré úpravy provedené F # – kód při ladění proto způsobí zdrojový kód, který neodpovídá kód laděné.

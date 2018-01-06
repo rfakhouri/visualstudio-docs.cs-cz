@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c6b6a0cbfc0a82bbc827b0a994426ef7e87ced91
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c15327837dbcd2fb1fe795a1e9891451df22e4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formátování, XML, textový Editor, dialogové okno Možnosti
 Toto dialogové okno umožňuje zadat nastavení formátování pro Editor XML. Dostanete **možnosti** dialogové okno z **nástroje** nabídky.  

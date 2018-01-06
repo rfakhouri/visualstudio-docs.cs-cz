@@ -20,11 +20,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47ed06179d09996ac1b35cd3d2dd5d6cb99296d7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d5075e55f1db35f7a588094a7c398c9d4c25483c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visualizer-security-considerations"></a>Hlediska zabezpečení vizualizéru
 Zápis Vizualizéru zahrnuje možných bezpečnostních hrozeb. Pro tyto potenciální hrozby aktuálně neexistuje žádné známé zneužití, ale vývojáři by měl mít na paměti je a trvat příslušná bezpečnostní opatření, podle postupu popsaného tady, pro ochranu proti zneužití budoucí.  

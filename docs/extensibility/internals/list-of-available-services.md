@@ -15,11 +15,12 @@ caps.latest.revision: "49"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1f2fca0baa747311b08983d8fc7e30efd02ae4c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 50016483ea1fa5a04c41e49493eda92b6a270b8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-of-available-services"></a>Seznam dostupných služeb
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]a Visual Studio SDK podporují následující služby. Některé balíčky nabízejí vlastní služby, které zde nejsou uvedeny – například jazyk služby nemají jedné služby identifikátor GUID. Název jazyka, musíte použít k vyhledání GUID služba jazyka v registru.  
@@ -162,4 +163,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Viz také  
  [COM a spravované služby](http://msdn.microsoft.com/en-us/6c5808b4-ad87-48d7-ae06-33a81e7052af)   
- [Použití a poskytování služeb](../../extensibility/using-and-providing-services.md)
+ [Používání a poskytování služeb](../../extensibility/using-and-providing-services.md)

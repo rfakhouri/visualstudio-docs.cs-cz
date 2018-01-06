@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f101d75770e344961dabc981be352387d60a5f6b
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 4d550b5b6df7b799f00b0043846be387cb6e6322
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Postupy: Rozdělení třídy na částečné třídy (návrhář tříd)
 Prohlášení o třídu nebo strukturu mezi několik deklarace můžete rozdělit pomocí `Partial` – klíčové slovo v jazyce Visual Basic nebo `partial` – klíčové slovo v jazyce Visual C#. Můžete vytvořit tolik částečné deklarace tak, jak chcete v tolik jiných zdrojových souborů, nebo do jednoho zdrojového souboru. Všechny deklarace však musí být ve stejném sestavení a o stejný obor názvů.  

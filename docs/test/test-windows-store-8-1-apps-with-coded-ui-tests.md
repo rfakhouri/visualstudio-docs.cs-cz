@@ -11,11 +11,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 9680f9886e4aeaefe8c476b7e9fff46fb3e24182
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5df259efedd50e67ee6e8f94203eb4e0ac56c71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Testování pomocí programových testů uživatelského rozhraní Windows aplikace UWP
 
@@ -324,4 +325,4 @@ Po vytvoření projektu, vytváření testu zůstává stejná jako předtím.
   
 ## <a name="see-also"></a>Viz také  
  [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Nastavení jedinečné vlastnosti automatizace pro ovládací prvky UWP pro testování](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)
+ [Nastavení jedinečné vlastnosti automatizace pro ovládací prvky UWP za účelem testování](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

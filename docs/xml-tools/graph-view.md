@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 606924d197dc88b5dd5e400e1df8523e83e58259
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5ee2965fab52915ec3f9651edd3dc51b2ed1c491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vztahy mezi uzly. Všimněte si, že jste ke změně rozložení schéma nastavit na návrhovou plochu, která neumožňuje zobrazení grafu. Zobrazení grafu zahrnuje taky panelu nástrojů Návrhář schématu XML a navigačního panelu.  
@@ -55,7 +56,7 @@ Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vz
 |**Exportujte Diagram jako obrázek...**|Uloží na návrhovou plochu do soubor ve formátu XPS.|  
 |**Vybrat vše**|Vybere všechny uzly na návrhovou plochu.|  
 |**Zobrazení kódu**|Otevře se soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v Průzkumníku schématu XML bude také vybrána v editoru XML.|  
-|**Vlastnosti – okno**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
+|**Okno Vlastnosti**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|  
   
  Kromě běžných nastavení popsané výše kontextové nabídky pro globální elementy taky obsahuje následující možnosti:  
   

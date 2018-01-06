@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a60ac9de727e8542df7455ee331737403f6bef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-a-project-type"></a>Registrace typu projektu
 Když vytvoříte nový typ projektu, musíte vytvořit položky registru, které umožňují [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznat a pracovat s typ vašeho projektu. Obvykle vytvoříte tyto položky registru pomocí souboru registru skript (.).  
@@ -270,4 +271,4 @@ Když vytvoříte nový typ projektu, musíte vytvořit položky registru, kter�
 ## <a name="see-also"></a>Viz také  
  [Kontrolní seznam: Vytvoření nové typy projektu](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Prvky modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)   
- [Vytváření instancí projektu pomocí objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+ [Vytváření instancí projektu pomocí objektů pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

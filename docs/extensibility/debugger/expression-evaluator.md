@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b08da6a123107d793d522770d44315aaa432dede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator"></a>Vyhodnocení výrazu
 Vyhodnocovače výrazů (EE) zkontrolujte syntaxi jazyka analyzovat a vyhodnocovat proměnné a výrazy v době běhu, což jim umožní jde zobrazit uživatele, když prostředí IDE je v režimu pozastavení.  
@@ -44,4 +45,4 @@ Vyhodnocovače výrazů (EE) zkontrolujte syntaxi jazyka analyzovat a vyhodnocov
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Moduly ladění očekávat komunikovat s vyhodnocovací filtr výrazů pomocí rozhraní Common Language Runtime (CLR). V důsledku toho vyhodnocení výrazu, funguje s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění moduly musí podporovat modulu CLR (Úplný seznam všech CLR ladění v rozhraní najdete v debugref.doc, která je součástí systému [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)]).  
   
 ## <a name="see-also"></a>Viz také  
- [Ladicí program komponenty](../../extensibility/debugger/debugger-components.md)
+ [Komponenty ladicího programu](../../extensibility/debugger/debugger-components.md)

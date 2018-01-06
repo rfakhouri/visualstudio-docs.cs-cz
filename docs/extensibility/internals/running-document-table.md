@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf66dce40cda2d72757c3a2fe141ed023b286d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-document-table"></a>Spuštěné tabulce dokumentu
 Prostředí IDE udržuje seznam všechny aktuálně otevřené dokumenty v interní strukturu názvem spuštěné tabulce dokumentu (r...). Tento seznam obsahuje všechny otevřené dokumenty v paměti, bez ohledu na to, jestli tyto dokumenty jsou aktuálně Upravovaný. Dokument je libovolnou položku, která je trvalý, včetně souborů v projektu nebo hlavní soubor projektu (například soubor VCXPROJ).  
@@ -61,4 +62,4 @@ Prostředí IDE udržuje seznam všechny aktuálně otevřené dokumenty v inter
   
 ## <a name="see-also"></a>Viz také  
  [RDT_ReadLock využití](../../extensibility/internals/rdt-readlock-usage.md)   
- [Trvalosti a tabulce dokument spuštěná](../../extensibility/internals/persistence-and-the-running-document-table.md)
+ [Trvalost a spuštěná tabulka dokumentů](../../extensibility/internals/persistence-and-the-running-document-table.md)

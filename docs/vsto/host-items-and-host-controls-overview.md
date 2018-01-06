@@ -41,11 +41,12 @@ caps.latest.revision: "100"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1ae5a2cf43fc457fccb3b4a8e5c53a5596fdae1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0a85f69ce67afdb4e1138c75b7c939be3980453f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="host-items-and-host-controls-overview"></a>Přehled hostitelských položek a hostitelských ovládacích prvků
   Hostitelských položek a hostitelských ovládacích prvků jsou typy, které pomáhají zajistit programovací model pro řešení Office, které jsou vytvořené pomocí nástroje pro vývoj pro Office v sadě Visual Studio. Hostitelských položek a hostitelských ovládacích prvků zkontrolujte interakci s objektové modely aplikace Microsoft Office Word a Microsoft Office Excel, které jsou založené na modelu COM, více jako interakci s spravovaných objektů, jako je Windows Forms – ovládací prvky.  
@@ -90,23 +91,23 @@ ms.lasthandoff: 10/31/2017
   
  Následující hostitelské ovládací prvky jsou k dispozici pro projekty aplikace Excel:  
   
--   [Ovládací prvek graf](../vsto/chart-control.md)  
+-   [Graf – ovládací prvek](../vsto/chart-control.md)  
   
 -   [ListObject – ovládací prvek](../vsto/listobject-control.md)  
   
 -   [NamedRange – ovládací prvek](../vsto/namedrange-control.md)  
   
--   [Xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md)  
+-   [XMLMappedRange – ovládací prvek](../vsto/xmlmappedrange-control.md)  
   
  Následující hostitelské ovládací prvky jsou k dispozici pro projekty aplikace Word:  
   
--   [BOOKMARK – ovládací prvek](../vsto/bookmark-control.md)  
+-   [Bookmark – ovládací prvek](../vsto/bookmark-control.md)  
   
 -   [Ovládací prvky obsahu](../vsto/content-controls.md)  
   
--   [XmlNode – ovládací prvek](../vsto/xmlnode-control.md)  
+-   [XMLNode – ovládací prvek](../vsto/xmlnode-control.md)  
   
--   [XmlNodes – ovládací prvek](../vsto/xmlnodes-control.md)  
+-   [XMLNodes – ovládací prvek](../vsto/xmlnodes-control.md)  
   
  Hostitelské ovládací prvky, které jsou přidány do dokumentů Office chovají jako nativní objekty Office; hostitelské ovládací prvky však mít další funkce, včetně události a možnosti pro datové vazby. Například, pokud chcete zaznamenat události nativní <xref:Microsoft.Office.Interop.Excel.Range> objektů v aplikaci Excel, je nutné nejprve zpracovat událost změny listu. Pak je třeba určit, zda změn došlo k chybě v rámci <xref:Microsoft.Office.Interop.Excel.Range>. Naproti tomu <xref:Microsoft.Office.Tools.Excel.NamedRange> má hostitelského ovládacího prvku <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> událost, která dokáže zpracovat přímo.  
   
@@ -132,7 +133,7 @@ ms.lasthandoff: 10/31/2017
   
  Další informace o tom, jak přidat hostitele ovládacích prvků do dokumentů najdete v následujících tématech:  
   
--   [Postupy: Přidání ovládacích prvků graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+-   [Postupy: Přidání ovládacích prvků Graf do listů](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
 -   [Postupy: Přidání ovládacích prvků ListObject do listů](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
@@ -179,6 +180,6 @@ ms.lasthandoff: 10/31/2017
  [Automatizace v aplikaci Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)   
  [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)   
  [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
- [Vazba dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
+ [Vazba dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

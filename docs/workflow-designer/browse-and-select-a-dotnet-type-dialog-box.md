@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ac184805803e92758e1de93400c957d00e8ebda6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b891f2af72de34c2ccd71043f2674c338ddb44f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procházet a vyberte dialogové okno typ rozhraní .NET
 V **vlastnosti** oken, dialogových oken nebo návrháře například návrháře proměnné, když vyberete **Procházet pro typy...**  ze seznamu datových typů, je **Procházet a vyberte typ formátu .NET** dialogové okno (uvedené ve zkrácené formě jako "typ prohlížeče"). V tomto dialogovém můžete typu ze sestavení a projektů zobrazení stromu.  
@@ -72,4 +73,4 @@ V **vlastnosti** oken, dialogových oken nebo návrháře například návrhář
  Při výběru typu kontraktu služby, typ prohlížeče se zobrazí pouze typy, které mají <xref:System.ServiceModel.ServiceContractAttribute> atribut.  
   
 ## <a name="see-also"></a>Viz také  
- [Pomocí návrháře aktivit](../workflow-designer/using-the-activity-designers.md)
+ [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 111227b41b3fe48af963f93f07cdee5e5511661f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8915f71d4dcb84a481c0223a64afbddf9b0c722a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Vytváření základních sestav profilace z příkazového řádku
 Toto téma popisuje základní vsperfreport – příkazy, které generování sestav hodnot oddělených čárkami (.csv) z .vsp nebo .vsps profilace datový soubor. Popis všech možností sestav najdete v tématu [vsperfreport –](../profiling/vsperfreport.md).  
@@ -41,12 +42,12 @@ Toto téma popisuje základní vsperfreport – příkazy, které generování s
 |**CallerCallee**|Představuje relace nadřazený podřízený mezi funkce.|-   [Vzorkování dat](../profiling/caller-callee-view-sampling-data.md)<br />-   [Data instrumentace](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Data instrumentace paměti .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Data kolizí](../profiling/caller-callee-view-contention-data.md)|  
 |**Funkce**|Seznamy profilace dat podle funkce.|-   [Vzorkování dat](../profiling/functions-view-sampling-data.md)<br />-   [Data instrumentace](../profiling/functions-view-instrumentation-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Data instrumentace paměti .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Data kolizí](../profiling/functions-view-contention-data.md)|  
 |**CallTree**|Představuje spuštění cesty a data profilování funkcí v profilaci spustit.|-   [Data instrumentace](../profiling/call-tree-view-instrumentation-data.md)<br />-   [Vzorkování dat](../profiling/call-tree-view-sampling-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/call-tree-view-dotnet-memory-sampling-data.md)<br />-   [Data instrumentace paměti .NET](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)<br />-   [Data kolizí](../profiling/call-tree-view-contention-data.md)|  
-|**Čítač**|Seznamy profilace značky a hodnoty čítače výkonu systému Windows, které byly shromážděny během vytváření profilu spustit.|-   [Zobrazení značek](../profiling/marks-view.md)|  
+|**Counter**|Seznamy profilace značky a hodnoty čítače výkonu systému Windows, které byly shromážděny během vytváření profilu spustit.|-   [Zobrazení značek](../profiling/marks-view.md)|  
 |**IP**|Seznamy profilace dat podle instrukcí.|-   [Vzorkování dat](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Data kolizí](../profiling/instruction-pointers-ips-view-contention-data.md)|  
 |**Životnosti**|Uvádí dobu trvání přidělené objektů.|-   [Zobrazení doby života objektu](../profiling/object-lifetime-view.md)|  
 |**Řádek**|Seznamy profilace datový zdroj kódu řádku.|-   [Vzorkování dat](../profiling/lines-view-sampling-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Data kolizí](../profiling/lines-view-contention-data.md)|  
 |**Záhlaví**|Profilace informaci hlavičky dat souboru.|Konkrétní do souboru.|  
-|**Značky**|Profilace značky se shromažďují v profilaci spustit.|-   [Zobrazení značek](../profiling/marks-view.md)|  
+|**Mark**|Profilace značky se shromažďují v profilaci spustit.|-   [Zobrazení značek](../profiling/marks-view.md)|  
 |**Modul**|Seznamy profilace data pro moduly.|-   [Vzorkování dat](../profiling/modules-view-sampling-data.md)<br />-   [Data instrumentace](../profiling/modules-view-instrumentation-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Data instrumentace paměti .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Data kolizí](../profiling/modules-view-contention-data.md)|  
 |**Proces**|Seznamy profilace data pro procesy.|-   [Zobrazení procesů](../profiling/process-view.md)<br />-   [Data kolizí](../profiling/process-view-contention-data.md)|  
 |**Přístup z více vláken**|Seznamy profilace data pro vlákna.|-   [Zobrazení procesů](../profiling/process-view.md)|  

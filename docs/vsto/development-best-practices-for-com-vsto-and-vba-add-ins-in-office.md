@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55b3a2cbaf98eeacb78f55bea23d638cd4a1ab6d
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: office
+ms.openlocfilehash: 8985b3bb6e20b24b86174286104158c8830de971
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Vývoj osvědčené postupy pro COM, VSTO a VBA doplňky v Office
   Pokud vyvíjíte COM, postupujte podle VSTO nebo VBA pro vytváření doplňků pro Office, vývoj osvědčené postupy, které jsou popsané v tomto článku.   To pomůže zajistit:
@@ -27,13 +28,13 @@ ms.lasthandoff: 11/11/2017
 -  Jednodušší nasazení doplňku pro vaše uživatele a správce IT.
 -  Nedojde k neúmyslnému instalace nebo modul runtime selhání tohoto doplňku.
 
->Poznámka: Pomocí [plochy most](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-root) Příprava vašeho modelu COM, VSTO nebo VBA doplňku pro Windows Store se nepodporuje. Doplňky COM, VSTO a VBA nelze distribuovat úložiště systému Windows nebo Office úložiště. 
+>Poznámka: Pomocí [plochy most](/windows/uwp/porting/desktop-to-uwp-root) Příprava vašeho modelu COM, VSTO nebo VBA doplňku pro Windows Store se nepodporuje. Doplňky COM, VSTO a VBA nelze distribuovat úložiště systému Windows nebo Office úložiště. 
   
 ## <a name="do-not-check-for-office-during-installation"></a>Nekontrolovat Office během instalace  
  Nedoporučujeme mít vaše add-in zjistit, zda je nainstalována Office během procesu instalace doplňku. Pokud není nainstalovaná Office, můžete nainstalovat doplněk a uživatel bude mít přístup k po dokončení instalace sady Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Použití vložené typy spolupráce (NoPIA)  
-Pokud řešení používá rozhraní .NET 4.0 nebo novější, použijte vložené typy spolupráce (NoPIA) místo v závislosti na Office primární zprostředkovatel komunikace s objekty sestavení (primární) redistributable. Pomocí typu vložení snižuje velikost instalace řešení a k zajištění budoucí kompatibility. Office 2010 byl poslední verzi systému Office, která odeslaná PIA redistributable. Další informace najdete v tématu [návod: vložení informací o typu ze sestavení sady Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) a [ekvivalence typů a vložené typy zprostředkovatel komunikace s objekty](https://docs.microsoft.com/en-us/dotnet/framework/interop/type-equivalence-and-embedded-interop-types). 
+Pokud řešení používá rozhraní .NET 4.0 nebo novější, použijte vložené typy spolupráce (NoPIA) místo v závislosti na Office primární zprostředkovatel komunikace s objekty sestavení (primární) redistributable. Pomocí typu vložení snižuje velikost instalace řešení a k zajištění budoucí kompatibility. Office 2010 byl poslední verzi systému Office, která odeslaná PIA redistributable. Další informace najdete v tématu [návod: vložení informací o typu ze sestavení sady Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) a [ekvivalence typů a vložené typy zprostředkovatel komunikace s objekty](/windows/uwp/porting/desktop-to-uwp-root).
 
 Pokud řešení používá starší verzi rozhraní .NET, doporučujeme aktualizovat vaše řešení, aby používalo rozhraní .NET 4.0 nebo novější. Pomocí rozhraní .NET 4.0 nebo novější snižuje požadavky modulu runtime v novějších verzích systému Windows.
   
@@ -66,4 +67,4 @@ Pokud chcete zadat příkazy podpory pro klientské aplikace sady Office (např�
 >Důležité: Microsoft udržuje seznam podporovaných doplňky pro připravenosti sestavy a ISV kontaktní informace. Doplněk uvedené získáte v tématu [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Použijte nástroj Sledování procesu pomáhají ladit instalace nebo načítání problémy
-Pokud vaše doplněk má problémy s kompatibilitou při instalaci nebo zatížení, mohou být s problémy s přístupem k souborům a registru. Použití [monitorování procesu](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon) nebo podobné ladicí nástroj protokolování a porovnání chování proti pracovního prostředí, aby bylo možné identifikovat problém. 
+Pokud vaše doplněk má problémy s kompatibilitou při instalaci nebo zatížení, mohou být s problémy s přístupem k souborům a registru. Použití [monitorování procesu](/sysinternals/downloads/procmon) nebo podobné ladicí nástroj protokolování a porovnání chování proti pracovního prostředí, aby bylo možné identifikovat problém.

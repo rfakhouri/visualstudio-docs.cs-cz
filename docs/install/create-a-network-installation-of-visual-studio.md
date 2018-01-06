@@ -14,18 +14,19 @@ ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: fa4aec5f164e188ff9832d06a4b3c8dad46ae63d
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: f5e6c5a94ac4c875922d2da09e9171f4929035f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvořit sítě instalaci sady Visual Studio 2017
 
 Správce podnikové sítě běžně, vytvoří bod instalace sítě pro nasazení do klientských pracovních stanic. Jsme jste chtěli Visual Studio 2017 umožnit pro ukládání do mezipaměti soubory pro počáteční instalaci společně s všechny aktualizace produktu do jediné složky. (Tento proces se také označuje jako _vytváření rozložení_.) Jsme k tomu, aby klientské pracovní stanice pomocí stejné umístění v síti můžete spravovat jejich instalace i v případě, že ještě neprovedli aktualizaci na nejnovější servisní aktualizace.
 
-> [!NOTE]
-> Pokud máte víc edicí sady Visual Studio používán v rámci vaší organizace (například jak Visual Studio Professional a Visual Studio Enterprise), musíte vytvořit sdílenou složku instalace samostatnou síť pro každé edici.
+ > [!NOTE]
+ > Pokud máte víc edicí sady Visual Studio používán v rámci vaší organizace (například jak Visual Studio Professional a Visual Studio Enterprise), musíte vytvořit sdílenou složku instalace samostatnou síť pro každé edici.
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Stáhněte si Visual Studio zaváděcího nástroje
 
@@ -157,10 +158,10 @@ Tady je několik další možnosti podpory:
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
-* [Instalaci sady Visual Studio](install-visual-studio.md)
+* [Instalace sady Visual Studio](install-visual-studio.md)
 * [Příručka správce Visual Studio](visual-studio-administrator-guide.md)
-* [Používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [ID úlohy a součást Visual Studio](workload-and-component-ids.md)
+* [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
+* [ID úloh a komponent sady Visual Studio](workload-and-component-ids.md)

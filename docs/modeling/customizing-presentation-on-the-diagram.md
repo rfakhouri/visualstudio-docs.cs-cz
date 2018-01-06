@@ -12,28 +12,29 @@ caps.latest.revision: "31"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6f171bdffd8fb76801156331f7016d061c8333a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68d9f4fefb1a092b90431bce335d8abcba6b6bbb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Přizpůsobení prezentace v diagramu
 Na diagramu je oblast hlavní prezentace nástroje jazyka domény designer. Obvykle budou uživatelé používat diagramu vytvořit jejich modelů. Diagram můžete přizpůsobit, jak je popsáno v následujících tématech.  
   
--   [Definování konektory a obrazců](../modeling/defining-shapes-and-connectors.md)  
+-   [Definování obrazců a konektorů](../modeling/defining-shapes-and-connectors.md)  
   
--   [Řízení barvu, styl čáry a další vlastnosti obrazce](../modeling/controlling-color-line-style-and-other-shape-properties.md)  
+-   [Řízení barvy, stylu čáry a ostatních vlastností obrazce](../modeling/controlling-color-line-style-and-other-shape-properties.md)  
   
--   [Řízení viditelnost ikony nebo Dekoratéra](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)  
+-   [Řízení viditelnosti ikony nebo dekorátoru](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)  
   
--   [Přizpůsobení bitové kopie pole a Text](../modeling/customizing-text-and-image-fields.md)  
+-   [Přizpůsobení textových a obrazových polí](../modeling/customizing-text-and-image-fields.md)  
   
--   [Nastavení obrázek na pozadí v diagramu](../modeling/setting-a-background-image-on-a-diagram.md)  
+-   [Nastavení obrázku pozadí v diagramu](../modeling/setting-a-background-image-on-a-diagram.md)  
   
--   [Vnoření tvarů](../modeling/nesting-shapes.md)  
+-   [Vnořování obrazců](../modeling/nesting-shapes.md)  
   
--   [Vložení Diagram ve formuláři Windows](../modeling/embedding-a-diagram-in-a-windows-form.md)  
+-   [Vložení diagramu do formuláře Windows](../modeling/embedding-a-diagram-in-a-windows-form.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md)
+ [Navigace v modelu a aktualizace modelu v kódu programu](../modeling/navigating-and-updating-a-model-in-program-code.md)

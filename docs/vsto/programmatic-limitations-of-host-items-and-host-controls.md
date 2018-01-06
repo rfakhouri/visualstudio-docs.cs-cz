@@ -35,11 +35,12 @@ caps.latest.revision: "67"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b9650014deb748607598b470d7eb797193213f39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d994f3b8b6612313ec689947c1da4c5b423fe362
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Programová omezení hostitelských položek a hostitelských ovládacích prvků
   Jednotlivé položky hostitele a řízení hostitele je určena pro chovat jako odpovídající nativní aplikace Microsoft Office Word nebo objekt aplikace Microsoft Office Excel s dalšími funkcemi. Existují však určité základní rozdíly mezi chování hostitelských položek a hostitelských ovládacích prvků a nativní objektů Office za běhu.  

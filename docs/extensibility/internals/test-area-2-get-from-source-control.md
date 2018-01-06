@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d436ef99907556c93f48c55bea315ae66e6218e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a9ec7071a1e4ca78bb116c577cdcc77f9798c050
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-2-get-from-source-control"></a>Oblasti test 2: Získání od správy zdrojového kódu
 Tato oblast testovací zahrnuje testovacích případů pro načítání položky z úložiště verzí pomocí příkazu Get. Tyto testovacích případů lze použít pro obě místní a webové projekty.  
@@ -57,4 +58,4 @@ Tato oblast testovací zahrnuje testovacích případů pro načítání položk
 |Získání řešení s projektem jeden|1.  Vytvoření řešení s projektem jeden.<br />2.  Místní řešení ve správě zdrojového kódu.<br />3.  Odstraňte všechny soubory projektu místně.<br />4.  Získání řešení (**soubor**, **správy zdrojového kódu**, **získat**).|Všechny odstraněné soubory jsou obnoveny místně.|  
   
 ## <a name="see-also"></a>Viz také  
- [Příručka pro testovací modulů plug-in programu zdroj ovládacího prvku](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

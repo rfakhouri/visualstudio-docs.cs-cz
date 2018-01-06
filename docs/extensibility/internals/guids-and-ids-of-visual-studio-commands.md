@@ -18,11 +18,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ce546f36ed93f0f42bfd548c64f2a25669e162b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 44ae5ff7e9095d6c88d753342da30983b30b7364
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Identifikátory příkazů sady Visual Studio a identifikátory GUID
 Hodnoty GUID a ID příkazů zahrnuté v sadě Visual Studio integrované vývojové prostředí (IDE) jsou definovány v .vsct soubory, které jsou nainstalovány v rámci sady Visual Studio SDK. Další informace najdete v tématu [IDE-Defined příkazy, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -66,4 +67,4 @@ Hodnoty GUID a ID příkazů zahrnuté v sadě Visual Studio integrované vývoj
 ## <a name="see-also"></a>Viz také  
  [MenuCommands Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Visual Studio příkaz tabulky (. Soubory Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Referenční dokumentace schématu VSCT XML](../../extensibility/vsct-xml-schema-reference.md)
+ [XML schéma VSCT – referenční informace](../../extensibility/vsct-xml-schema-reference.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c1ffd73919b4788e9c0151a636539faceea5300
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 32cbb7bee21b54c932e0c369c46c3b2c3dacd898
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Ladění ovládacího prvku ActiveX vázaného na data
 Pokud vyvíjíte ovládací prvek ActiveX, který bude vázán k prvku zdroje dat, můžete vytvořit vlastní aplikaci kontejneru a použití tohoto kontejneru k ladění ovládacího prvku ActiveX.  

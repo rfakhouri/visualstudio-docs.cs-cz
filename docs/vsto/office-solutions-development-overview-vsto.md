@@ -18,11 +18,12 @@ caps.latest.revision: "69"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c35be3e79aea37b82e9ae46463582a0874e51a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b3d731fd0c38eab376e99e0f143287507042652
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Přehled vývoje řešení pro systém Office (VSTO)
   Pomocí aplikace Microsoft Office jako front-endu řešení můžete využít výhod známé Microsoft Office uživatelská rozhraní a nástroje, jako je funkce zpracování textu v aplikaci Word, funkce analýzy dat aplikace Excel a funkcím pro správu e-mailu aplikace Outlook . Můžete vyvinout řešení v sadě Visual Studio k přizpůsobení aplikace Office a přidání specifické funkce, které jsou potřeba pro své obchodní procesy. Například můžete zapnout Word do generátor kontrakt, který sestaví kontrakty se existující částí, které lze upravovat nebo ne upravovat. V aplikaci Excel můžete vytvořit listu aplikace automatizované nároky přizpůsobené pro různé projekty. Vaši uživatelé můžete taky využít řešení pro systém office do offline režimu, které umožňuje komplexní řešení praktičtější, než by se použily, pokud používáte architekturu založenou na web.  
@@ -47,9 +48,9 @@ ms.lasthandoff: 10/31/2017
   
  Další informace o přizpůsobení najdete v následujících tématech:  
   
--   [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
+-   [Začínáme s programováním přizpůsobení pro aplikaci Excel na úrovni dokumentů](../vsto/getting-started-programming-document-level-customizations-for-excel.md)  
   
--   [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
+-   [Začínáme s programováním přizpůsobení pro aplikaci Word na úrovni dokumentů](../vsto/getting-started-programming-document-level-customizations-for-word.md)  
   
 -   [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
  Další informace o doplňků VSTO najdete v následujících tématech:  
   
--   [Začínáme programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+-   [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
 -   [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)  
   
@@ -73,9 +74,9 @@ ms.lasthandoff: 10/31/2017
   
  Další informace o používání v řešeních pro systém Office VSTO PIA najdete v následujících tématech:  
   
--   [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
+-   [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
   
--   [Primární spolupracující sestavení sady Office](../vsto/office-primary-interop-assemblies.md)  
+-   [Primární sestavení vzájemné spolupráce pro Office](../vsto/office-primary-interop-assemblies.md)  
   
 ## <a name="running-microsoft-vsto-office-solutions-on-end-user-computers"></a>Koncový uživatel počítačích se systémem Microsoft VSTO řešení pro systém Office  
  Když vytvoříte řešení VSTO Office, zvažte, jak požadavcích nasazení může ovlivnit vaše možnosti vývoje.  
@@ -95,6 +96,6 @@ ms.lasthandoff: 10/31/2017
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Word](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
- [Začínáme programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

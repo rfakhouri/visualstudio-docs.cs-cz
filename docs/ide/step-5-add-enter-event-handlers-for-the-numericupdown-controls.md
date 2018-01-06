@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f3cf117116f5da70391f5252e3d1bde4e2416b69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3d205dae6dd00ec5d763b9fb36f9c48041438ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Krok 5: Přidejte obslužné rutiny události pro ovládací prvky NumericUpDown
 V páté části tohoto kurzu přidáte obslužné rutiny událostí Enter trochu usnadnění vstup odpovědi kvízu s časovým limitem problémů. Tento kód bude vyberte a zrušte aktuální hodnota v každém NumericUpDown – ovládací prvek, jakmile kvízu s časovým limitem příjemce rozhodne se a začne zadejte jinou hodnotu.  

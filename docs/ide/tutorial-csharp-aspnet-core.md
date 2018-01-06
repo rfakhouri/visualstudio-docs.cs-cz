@@ -12,14 +12,17 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: eecae2b95947d4bdf40ba6d57a85150e03f21cfb
-ms.sourcegitcommit: abe8d0aaded582058b5f5669d9d534d2f6a83355
+ms.workload:
+- aspnet
+- dotnetcore
+ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/16/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Začínáme s C# a ASP.NET v sadě Visual Studio
-V tomto kurzu pro vývoj C# pro ASP.NET Core pomocí sady Visual Studio budete vytvořit webovou aplikaci ASP.NET Core C#, přidejte do ní kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace.
+V tomto kurzu pro vývoj C# pomocí ASP.NET Core pomocí sady Visual Studio budete vytvořit webovou aplikaci ASP.NET Core C#, přidejte do ní kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace.
 
 Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
 
@@ -113,7 +116,7 @@ Vzor MVC pomáhá vytvářet aplikace, které se snadněji testování a aktuali
 
 ## <a name="run-and-debug-the-application"></a>Spuštění a ladění aplikace
 
-1. Vyberte **IIS Express** tlačítko v integrovaném vývojovém prostředí pro sestavení a spuštění aplikace v režimu ladění. (Alternativně můžete stisknout **F5**, nebo můžete zvolit **ladění > Spustit ladění** z řádku nabídek.)
+1. Vyberte **IIS Express** tlačítko v integrovaném vývojovém prostředí pro sestavení a spuštění aplikace v režimu ladění. (Nebo stisknout **F5**, nebo zvolte **ladění > Spustit ladění** z řádku nabídek.)
 
   ![Klikněte na tlačítko IIS Express v sadě Visual Studio](../ide/media/csharp-aspnet-iis-express-button.png)
 
@@ -158,7 +161,7 @@ Vzor MVC pomáhá vytvářet aplikace, které se snadněji testování a aktuali
 
   ![Aktualizujte okno prohlížeče a zobrazit změněného textu](../ide/media/csharp-aspnet-browser-page-about-changed.png)
 
-1. Stiskněte klávesu **Shift**+**F5** Zastavit ladění. Nebo zvolte **ladění** > **Zastavte ladění** z nabídky panelu, nebo zvolte **Zastavte ladění** tlačítka panelu nástrojů.
+1. Vyberte **Zastavte ladění** tlačítka panelu nástrojů na Zastavte ladění. (Nebo stisknout **Shift**+**F5**, nebo zvolte **ladění** > **Zastavte ladění** z řádku nabídek.)
 
  ![Klikněte na tlačítko Zastavit ladění na panelu nástrojů](../ide/media/csharp-aspnet-stop-debugging.png)
 
@@ -168,3 +171,6 @@ Blahopřejeme k dokončení tohoto kurzu!
 ## <a name="see-also"></a>Viz také
 * [Začínáme s ASP.NET MVC jádra a sady Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
 * [Začínáme s stránky Razor v ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+* [Co je nového v jazyce C#](/dotnet/csharp/whats-new)
+* [Referenční dokumentace jazyka C#](/dotnet/csharp/language-reference/index)
+* [Základy C# pro začátečníky absolutní](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169) video kurzu

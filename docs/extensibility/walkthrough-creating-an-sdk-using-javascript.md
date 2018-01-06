@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a87ee7d1a48c313a29d00524d471b46ef572f4a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2a53b10f3d9a69c0181a432dad491bebd177f5be
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-javascript"></a>Návod: Vytvoření sady SDK, pomocí jazyka JavaScript
 Tento názorný postup učí, jak vytvořit jednoduché matematické SDK jako Visual Studio rozšíření (VSIX) pomocí jazyka JavaScript.  Průvodce se dělí na tyto části:  
@@ -317,4 +318,4 @@ Tento názorný postup učí, jak vytvořit jednoduché matematické SDK jako Vi
 12. V aplikaci uživatelského rozhraní, zadejte všechny dvou čísel, vyberte operace a potom zvolte  **=**  tlačítko. Se zobrazí správný výsledek.  
   
 ## <a name="see-also"></a>Viz také  
- [Vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md)
+ [Vytvoření sady SDK (Software Development Kit)](../extensibility/creating-a-software-development-kit.md)

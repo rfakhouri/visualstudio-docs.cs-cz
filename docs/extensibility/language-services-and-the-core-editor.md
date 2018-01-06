@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1528bc685577082df997535a680c372620821de0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c3d2bcad21bb919125b487a57b73d3a458a3a1f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="language-services-and-the-core-editor"></a>Jazyk služeb a editoru jádra
 Editory v sadě Visual Studio jsou často přidružená služba jazyka. Kromě jiných věcí poskytuje služba jazyka barevné zvýrazňování syntaxe, dokončování příkazů, IntelliSense a formátování textu.  
@@ -46,4 +47,4 @@ Objekty služby základní editoru a jazyk
  [Poskytuje služby kontextu jazyka pomocí starší verze rozhraní API](../extensibility/providing-a-language-service-context-by-using-the-legacy-api.md)   
  [Hostování IntelliSense](../extensibility/intellisense-hosting.md)   
  [Obsažené jazyky](../extensibility/contained-languages.md)   
- [Vývoj služby jazyk starší verze](../extensibility/internals/developing-a-legacy-language-service.md)
+ [Vývoj služby starší verze jazyka](../extensibility/internals/developing-a-legacy-language-service.md)

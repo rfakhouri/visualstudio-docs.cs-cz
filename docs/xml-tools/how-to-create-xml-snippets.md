@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36fccee0e228e4391e80388284b59f19e1f3a1b9
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-xml-snippets"></a>Postupy: vytvoření fragmenty kódu XML
 XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje fragmentu kódu XML, s názvem "Fragment", který je fragment často používaný pro vytvoření nové fragmenty kódu XML.  
@@ -115,4 +116,4 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
 ## <a name="see-also"></a>Viz také  
  [Fragmenty kódu XML](../xml-tools/xml-snippets.md)   
  [Postupy: použití fragmenty kódu XML](../xml-tools/how-to-use-xml-snippets.md)   
- [Postupy: generování fragmentu kódu XML z schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+ [Postupy: Generování fragmentu XML ze schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 18431ea15b53959234da4b2c6dedb24b8fa2e390
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4fbab9bacc8c5272588a4b2dfe819650bfc6110f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Postupy: Zahrnutí předpokladů s aplikací ClickOnce
 Před distribucí požadovaný software s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, musíte nejprve stáhnout balíčky Instalační služby pro tyto požadavky na vývojovém počítači. Při publikování aplikace a zvolte **Stáhnout požadavky ze stejného umístění jako Moje aplikace**, dojde k chybě, pokud balíčky Instalační služby systému nejsou v **balíčky** složky.  
@@ -53,4 +54,4 @@ Před distribucí požadovaný software s [!INCLUDE[ndptecclick](../deployment/i
      Nyní můžete instalační balíček distribuovat spolu s aplikací.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+ [Postupy: Instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

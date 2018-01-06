@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 962023733d2d746e0acb584e3dcbdc1a5e369012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec424f5e85f5bff9be5b276b3978b25dc3239fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Začínáme s Roslyn analyzátory
 S analyzátorů za provozu, na základě projektu kódu v sadě Visual Studio rozhraní API autoři se dají dodávat analýzy kódu pro konkrétní domény jako součást jejich balíčků NuGet.  Protože tyto analyzátorů jsou zapnuté kompilátoru platformou .NET (označován kódovým "Roslyn"), může vést k upozornění do vašeho kódu jako typ i předtím, než jste dokončili řádku (žádné další čekání na sestavení kódu ke zjišťování problémů).  Analyzátory můžete také surface automatické kódu oprava prostřednictvím žárovky řádku Visual Studia umožnit vám vyčištění kódu okamžitě  

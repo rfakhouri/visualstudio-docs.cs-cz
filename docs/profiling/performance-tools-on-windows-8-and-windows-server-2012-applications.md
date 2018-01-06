@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: b82860f4bdbf206441591703137f15decb294269
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012
 Funkce Rozšířené zabezpečení od verze Windows 8 a Windows Server 2012 požadované významné změny v nástroje pro sledování výkonu sady Visual Studio způsob shromažďování dat na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. Toto téma popisuje změny pro spouštění na platformy Windows 8 a Windows Server 2012 nástroje pro sledování výkonu.

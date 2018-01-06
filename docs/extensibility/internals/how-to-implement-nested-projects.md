@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 26456122d8b2cb0e89cfcda929cf68306959a31e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 757668070daacb449a6bc7cbd88ae629fe6487a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-implement-nested-projects"></a>Postupy: implementace vnořené projekty
 Při vytváření jsou typu vnořené projektu existuje několik dalších kroků, které musí být implementována. Nadřazený projekt přebírá některé stejné odpovědnosti, které má řešení pro jeho vnořená projekty. Nadřazený projekt je kontejner projekty podobná řešení. Konkrétně existují několik událostí, které musí být vyvolány řešení a projekty nadřazené vytvořit hierarchii vnořené projekty. Tyto události jsou popsané v následující proces pro vytváření vnořených projektů.  
@@ -81,17 +82,17 @@ Při vytváření jsou typu vnořené projektu existuje několik dalších krok�
   
  V následujících tématech se zabývá několik konceptů, které je třeba zvážit při implementaci vnořené projekty:  
   
- [Důležité informace pro uvolnění a překladní vnořené projekty](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)  
+ [Důležité informace pro uvolnění a opětovné načtení vnořených projektů](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)  
   
  [Podpora průvodce pro vnořené projekty](../../extensibility/internals/wizard-support-for-nested-projects.md)  
   
- [Implementace příkaz zpracování pro vnořené projekty](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)  
+ [Implementace zpracování příkazů pro vnořené projekty](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)  
   
- [Filtrování AddItem dialogových oken pro vnořené projekty](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
+ [Filtrování dialogového okna Přidat položku pro vnořené projekty](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Přidávání položek do pro přidání nové položky dialogových oken](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Registrace šablon projektů a položek](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Kontrolní seznam: Vytvoření nové typy projektu](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Kontextové parametry](../../extensibility/internals/context-parameters.md)   
- [Průvodce (. Soubor vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [Soubor průvodce (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

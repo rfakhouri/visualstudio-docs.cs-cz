@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4c8cd4fac7cd6f498716b3611c1b37e1afdc600
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 17b234a774914e998c228dc780b645864420658d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Postupy: Vytváření typů s povolenou hodnotou Null (návrhář tříd)
 Některé typy hodnot vždy nějaké (nebo potřebujete) definovanou hodnotu. Toto je běžnou praxí v databázích, kde některá pole nemusí být přiřazeny žádnou hodnotu. Například můžete do pole databáze do označují, že je ještě nebyly přiřazeny hodnotu přiřadit hodnotu null.  

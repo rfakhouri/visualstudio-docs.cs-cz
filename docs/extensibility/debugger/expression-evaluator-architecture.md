@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6805b97da8e8f742b1b6c0bb3298e9324bb1f72e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluator-architecture"></a>Architektura vyhodnocování výrazu
 > [!IMPORTANT]
@@ -53,10 +54,10 @@ ms.lasthandoff: 10/31/2017
  [Kontext vyhodnocení](../../extensibility/debugger/evaluation-context.md)  
  Poskytuje argumenty, které se předá, když je DE volá EE.  
   
- [Výraz klíče vyhodnocování rozhraní](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
+ [Rozhraní vyhodnocovače klíčových výrazů](../../extensibility/debugger/key-expression-evaluator-interfaces.md)  
  Popisuje klíčové rozhraní potřebné při zápisu EE, společně s kontext vyhodnocení.  
   
 ## <a name="see-also"></a>Viz také  
  [Zápis vyhodnocovací filtr výrazů CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Zobrazení místní hodnoty](../../extensibility/debugger/displaying-locals.md)   
- [Změna hodnoty místní](../../extensibility/debugger/changing-the-value-of-a-local.md)
+ [Změna hodnoty místní hodnoty](../../extensibility/debugger/changing-the-value-of-a-local.md)

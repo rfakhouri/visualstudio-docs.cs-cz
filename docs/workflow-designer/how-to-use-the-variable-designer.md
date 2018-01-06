@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 064080a2446858123dd7b259dd5d2752f4253a80
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c9bf63222f16e29044a9a07078096b765421fbb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-variable-designer"></a>Postupy: použití návrháře proměnné
 Proměnné návrháře se používá k vytvoření proměnné pro použití v scénáře datových vazeb a podmíněné příkazy. Návrhář přistupuje kliknutím **proměnné** tlačítko v levém horním rohu na plátno návrhu. Návrhář obsahuje seznam proměnných, které jsou uvedeny ve formě tabulky a lze seřadit podle jednotlivých záhlaví sloupců, s výjimkou **výchozí** sloupce. Každá proměnná obsahuje název, typ proměnné, oboru a výchozí hodnota (pokud existuje). Název a výchozí hodnotou jsou upravitelných textových polí a typu a rozsahu rozevírací seznamy. Rozsah je aktivita, která byla vybrána, když byl vyvolán návrháře proměnné. Pokud proměnnou nelze vytvořit v rámci oboru výběru, bude výchozí oboru pro nejbližší nadřazený aktivitu výběru, která umožňuje proměnné, které chcete vytvořit ve svém oboru. [! ZAHRNOUT[crabout](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).  
@@ -39,4 +40,4 @@ Proměnné návrháře se používá k vytvoření proměnné pro použití v sc
 ## <a name="see-also"></a>Viz také  
  [Pomocí návrháře pracovních postupů](../workflow-designer/using-the-workflow-designer.md)   
  [Proměnné a argumenty](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)   
- [Postupy: používání Argument Designer](../workflow-designer/how-to-use-the-argument-designer.md)
+ [Postupy: Používání návrháře argumentů](../workflow-designer/how-to-use-the-argument-designer.md)

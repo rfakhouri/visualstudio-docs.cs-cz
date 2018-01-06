@@ -22,11 +22,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 914974e27e6856174a4260b741f2e864d8509ff8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 15143ad050997cd92b21bd342f5d821c9514271a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-to-script"></a>Postupy: Připojení ke skriptu
 Toto téma vysvětluje, jak ručně připojit ladicí program Visual Studio do souboru skriptu pro ladění.  
@@ -71,5 +72,5 @@ Toto téma vysvětluje, jak ručně připojit ladicí program Visual Studio do s
 ## <a name="see-also"></a>Viz také  
  [Ladění skriptu](../debugger/client-side-script-debugging.md)   
  [Připojení ke spuštěným procesům](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Upozornění zabezpečení: Připojení k procesu vlastníkem nedůvěryhodné uživatele může být nebezpečný. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
+ [Upozornění zabezpečení: Připojení k procesu, jehož vlastníkem je nedůvěryhodný uživatel, může být nebezpečné. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)

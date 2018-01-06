@@ -22,11 +22,12 @@ caps.latest.revision: "59"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e8102cf760020b5584458ebd77052684a1b4af2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: cffce10e443b2605e29d800cb271c4a96dc70359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-object-model-overview"></a>Přehled modelu objektů aplikace Outlook
   K vývoji doplňků VSTO pro aplikaci Microsoft Office Outlook, můžete pracovat s objekty, které jsou k dispozici ve model objektu aplikace. Objektový model aplikace Outlook poskytuje třídy a rozhraní, které představují položky v uživatelském rozhraní. Například <xref:Microsoft.Office.Interop.Outlook.Application> objekt představuje celou aplikaci <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> objekt představuje složku obsahující e-mailových zpráv nebo jiných položek a <xref:Microsoft.Office.Interop.Outlook.MailItem> objekt představuje e-mailové zprávy.  
@@ -138,9 +139,9 @@ ms.lasthandoff: 10/31/2017
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Práce s položkami kontaktů](../vsto/working-with-contact-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s kontakty.|  
-|[Práce s položkami pošty](../vsto/working-with-mail-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s položkami pošty.|  
+|[Práce s položkami kontaktů](../vsto/working-with-contact-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s kontakty.|  
+|[Práce s položkami pošty](../vsto/working-with-mail-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s položkami pošty.|  
 |[Práce se složkami](../vsto/working-with-folders.md)|Obsahuje témata, která ukazují, jak provádět úlohy s složek.|  
-|[Práce s položkami kalendáře](../vsto/working-with-calendar-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s položkami kalendáře.|  
-|[Postupy: programové určení aktuální položky aplikace Outlook](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Ukazuje, jak zobrazit název v aktuální složce a některé informace o vybrané položce.|  
+|[Práce s položkami kalendáře](../vsto/working-with-calendar-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s položkami kalendáře.|  
+|[Postupy: Určení aktuální položky aplikace Outlook prostřednictvím kódu programu](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Ukazuje, jak zobrazit název v aktuální složce a některé informace o vybrané položce.|  
   

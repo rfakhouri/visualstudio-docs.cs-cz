@@ -26,11 +26,12 @@ caps.latest.revision: "96"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97cac11c943b75f5bc74e5cb67c9810b9ba7032
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: aca002dc7f9793dc379fb4e1a325342704e4d6c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: Vytváření projektů pro systém Office v prostředí Visual Studio
   Můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoření doplňku VSTO a na úrovni dokumentu vlastní nastavení pro aplikace Microsoft Office. Další informace o těchto typech projektů najdete v tématu [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -164,6 +165,6 @@ ms.lasthandoff: 10/31/2017
  [Přehled šablon projektů Microsoft Office](../vsto/office-project-templates-overview.md)   
  [Spolupráce na vývoji řešení pro systém Office](../vsto/collaborative-development-of-office-solutions.md)   
  [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
- [Začínáme programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [Začínáme s programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

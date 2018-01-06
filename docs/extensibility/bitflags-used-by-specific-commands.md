@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e66d0f67e3774b1cbc908bb6b1bd13884a1d3171
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitové příznaky, které používá konkrétní příkazy
 Chování počet funkcí v rozhraní API ovládacího prvku Plug-in zdroje můžete upravit nastavení jeden nebo více bitů jedinou hodnotu. Tyto hodnoty jsou označovány jako bitové příznaky. Různé bitové příznaky používá rozhraní API ovládacího prvku Plug-in zdroje jsou podrobně popsané tady seskupených podle funkce, která je používá.  
@@ -36,7 +37,7 @@ Chování počet funkcí v rozhraní API ovládacího prvku Plug-in zdroje můž
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Modul plug-in zdrojového kódu se očekává automaticky zjistí, zda je soubor textu nebo binárních.|  
 |`SCC_FILETYPE_TEXT`|0x01|Typ souboru je text.|  
-|`SCC_FILETYPE_BINARY`|0x04|Typ souboru není binární. **Poznámka:** `SCC_FILETYPE_TEXT` a `SCC_FILETYPE_BINARY` se vzájemně vylučují.   Nastavte právě jeden nebo ani jeden z nich.|  
+|`SCC_FILETYPE_BINARY`|0x04|Typ souboru není binární. **Poznámka:** `SCC_FILETYPE_TEXT` a `SCC_FILETYPE_BINARY` se vzájemně vylučují. Nastavte právě jeden nebo ani jeden z nich.|  
 |`SCC_ADD_STORELATEST`|0x02|Uložit pouze nejnovější verzi (žádné rozdíly).|  
   
 ## <a name="diff-flags"></a>Diff příznaky  
@@ -108,4 +109,4 @@ Chování počet funkcí v rozhraní API ovládacího prvku Plug-in zdroje můž
 |`SCC_OPT_SCO_YES`|1L|Žádné modulu plug-in checkout uživatelského rozhraní, žádné pracovní adresář.|`SCC_OPT_SCCCHECKOUTONLY`|  
   
 ## <a name="see-also"></a>Viz také  
- [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)
+ [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)

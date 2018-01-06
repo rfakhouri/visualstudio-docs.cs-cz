@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8bd22d71753a8bf86adbe2b437407481388c48d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d1a6ffff4d3ac0410ca3de7e2cd595119763e88b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-tasks"></a>Ladění úlohy
 Chcete-li ladit program, musí být spuštěn a modul ladění (DE) musí být připojené k němu, jinak DE musí být připojené k dříve spuštěného programu. Po připojení, musí je DE generovat určité události spuštění. V odpovědi balíček ladění pokusí navázat zarážky nastavení v IDE. Pokud se program dotkne vázané breakpoint, zastaví a čeká na vstup uživatele.  
@@ -38,23 +39,23 @@ Chcete-li ladit program, musí být spuštěn a modul ladění (DE) musí být p
  [Řízení spouštění](../../extensibility/debugger/control-of-execution.md)  
  Vysvětluje, jak je DE obvykle odesílá událost vstupního bodu, o dokončení zatížení událost nebo zastavení událostí, v závislosti na v případech.  
   
- [Vazba zarážky](../../extensibility/debugger/binding-breakpoints.md)  
+ [Vytváření vazeb zarážek](../../extensibility/debugger/binding-breakpoints.md)  
  Popisuje, jak, pokud uživatel nastaví zarážku, rozhraní IDE výrobky zpracovává žádosti a vyzve k relaci ladění k vytvoření zarážce.  
   
- [Vyhodnocení výrazů](../../extensibility/debugger/evaluating-expressions.md)  
+ [Vyhodnocování výrazů](../../extensibility/debugger/evaluating-expressions.md)  
  Vysvětluje, jak se vytvářejí výrazy, co se stane při vyhodnocování výrazu.  
   
  [Vizualizace a zobrazení dat](../../extensibility/debugger/visualizing-and-viewing-data.md)  
  Vysvětluje, jak vizualizérech typu a vlastní prohlížeče jsou podporovány nástrojem vyhodnocovací filtr výrazů (EE).  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Koncepty ladicí program](../../extensibility/debugger/debugger-concepts.md)  
+ [Koncepty ladicího programu](../../extensibility/debugger/debugger-concepts.md)  
  Popisuje hlavní koncepty ladění architektury.  
   
- [Ladicí program komponenty](../../extensibility/debugger/debugger-components.md)  
+ [Komponenty ladicího programu](../../extensibility/debugger/debugger-components.md)  
  Poskytuje přehled ladění součásti sady Visual Studio, mezi které patří DE, EE a symbol obslužné rutiny (SH).  
   
- [Kontexty ladicí program](../../extensibility/debugger/debugger-contexts.md)  
+ [Kontexty ladicího programu](../../extensibility/debugger/debugger-contexts.md)  
  Vysvětluje, jak funguje DE současně v kódu, dokumentace a kontexty vyhodnocení výrazu. Popisuje, pro každou tři kontexty, umístění, pozice nebo vyhodnocení relevantní k němu.  
   
 ## <a name="see-also"></a>Viz také  

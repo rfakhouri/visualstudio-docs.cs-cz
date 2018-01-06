@@ -18,11 +18,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 53e90448d5e7a24f4904f9c4ea02ac041531ce02
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: af70078790c684ce774a203b265d7c767779ab15
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Vlastnosti nástroje MSBuild podporované službou SharePoint
   Všechny [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] mohou být používány v souboru, soubor projektu nebo soubor projektu uživatele Microsoft.VisualStudio.SharePoint.targets definovánu vlastnost [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektů služby SharePoint. Kromě nejběžnější [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] vlastnosti poskytl projektu služby SharePoint definuje další vlastnosti, které jsou specifické pro projekty SharePoint.  
@@ -57,6 +58,6 @@ ms.lasthandoff: 10/31/2017
 >  Můžete použít buď [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] proměnné syntaxe `$(` *propertyName* `)` nebo syntaxe proměnné prostředí `%` *propertyName* `%` Chcete-li určit vlastnost.  
   
 ## <a name="see-also"></a>Viz také  
- [MSBuild – Reference](/visualstudio/msbuild/msbuild-reference)  
+ [Referenční dokumentace nástroje MSBuild](/visualstudio/msbuild/msbuild-reference)  
   
   

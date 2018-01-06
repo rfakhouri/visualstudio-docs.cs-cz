@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 51ed8cd351a306c3992b4b6c9fcc2231a90085f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ae692249ea952970b096825c8f6968158eb2f17f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-priority"></a>Priorita projektu
 Položka projektu obvykle je členem jenom jedné projekt v řešení. Proto IDE může snadno zjistit projektu, který se používá k otevření položky. Ale pokud je určitá položka členem více než jeden projekt, rozhraní IDE používá schéma s prioritou určit nejlepší projekt pro otevření položky.  
@@ -37,4 +38,4 @@ Položka projektu obvykle je členem jenom jedné projekt v řešení. Proto IDE
 ## <a name="see-also"></a>Viz také  
  [Ostatní soubory projektu](../../extensibility/internals/miscellaneous-files-project.md)   
  [Postupy: otevření editory pro otevřené dokumenty](../../extensibility/how-to-open-editors-for-open-documents.md)   
- [Přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
+ [Přidávání šablon projektů a položek projektů](../../extensibility/internals/adding-project-and-project-item-templates.md)

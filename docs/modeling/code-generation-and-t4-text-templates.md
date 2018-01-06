@@ -19,11 +19,12 @@ caps.latest.revision: "82"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 60840f3d47b43ea84bec66ea7957f613d2379901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Vytvoření kódu a textové šablony T4
 V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *textové šablony T4* je směs text bloky a řízení logiky, která může generovat textového souboru. Ovládací prvek logiku je zapsána jako fragmenty kódu programu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nebo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. V sadě Visual Studio 2015 Update 2 nebo novější můžete v šablonách T4 – direktivy jazyka C# – funkce verze 6.0. Vygenerovaný soubor může být text libovolného typu, například webovou stránku nebo soubor prostředků nebo zdrojový kód aplikace v libovolném jazyce.  
@@ -97,13 +98,13 @@ namespace Fabrikam.FirstJob
  Funkce transformace textových šablon jmenuje *T4*.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Generování textu běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+ [Generování textu za běhu pomocí textových šablon T4](../modeling/run-time-text-generation-with-t4-text-templates.md)  
  V jakékoli aplikaci, která generuje textové soubory jsou předkompilovaných textové šablony metodu jednoduchost a spolehlivost definice text. Tato metoda však nelze použít pro textové šablony, které změní za běhu.  
   
- [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
+ [Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)  
  Generování kódu a další prostředky z modelu vám umožňuje aktualizovat aplikaci tím, že aktualizace modelu.  
   
- [Generování kódu v procesu sestavení](../modeling/code-generation-in-a-build-process.md)  
+ [Vytvoření kódu v procesu sestavení](../modeling/code-generation-in-a-build-process.md)  
  Pokud jste nainstalovali [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK, můžete zajistit generovaného softwaru zachová aktuální změny v modelu.  
   
  [Zápis textové šablony T4](../modeling/writing-a-t4-text-template.md)  
@@ -122,4 +123,4 @@ namespace Fabrikam.FirstJob
  Postup zápisu procesory direktiv a vlastní ukázka hostitele pro zdroje dat došlo k chybě.  
   
 ## <a name="see-also"></a>Viz také  
- [Generování kódu z jazyka domény](../modeling/generating-code-from-a-domain-specific-language.md)
+ [Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)

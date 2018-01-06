@@ -16,11 +16,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b94b842566c3f8bf5ad5374acda0ccc9e9b50cbe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff646066c4e29c46c7ad3c24322d368fa54da9eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-choose-collection-methods"></a>Postupy: Výběr metod kolekcí
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Nástrojích pro profilaci podporují tři metody shromažďování dat o výkonu: vzorkování, instrumentace a souběžnosti. Metoda vzorkování nebo instrumentace můžete použít také ke shromažďování dat paměti přidělení a dobu života rozhraní .NET.  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 |**Vzorkování procesoru**|Shromažďuje statistiky aplikace, které jsou užitečné pro počáteční analýzy a analyzovat problémy využití procesoru.|  
 |**Instrumentace**|Shromažďuje podrobné časování data, která jsou užitečné pro přesně zacílené analýzy a analýza problémů s výkonem vstupu a výstupu.|  
 |**Přidělení paměti .NET**|Shromažďuje [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dat přidělení paměti pomocí metoda profilování se vzorkováním.|  
-|**Souběžnosti**|Shromažďuje data kolizí číselné prostředků.|  
+|**Souběžnost**|Shromažďuje data kolizí číselné prostředků.|  
   
 ## <a name="performance-explorer"></a>Prohlížeč výkonu  
   

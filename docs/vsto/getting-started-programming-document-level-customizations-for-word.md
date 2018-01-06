@@ -18,11 +18,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 424c4867f0b18d7f819bf60a248b801741916efb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 12265c725480324c396d59d848e5269432bb5d6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-programming-document-level-customizations-for-word"></a>Začínáme s programováním přizpůsobení pro aplikaci Word na úrovni dokumentů
   Pokud jste začali vytváření úpravy na úrovni dokumentů pro Microsoft Office Word pomocí sady Visual Studio, zde je, co potřebujete vědět.  
@@ -50,9 +51,9 @@ ms.lasthandoff: 10/31/2017
   
 -   [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)  
   
--   [Automatizace v aplikaci Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)  
+-   [Automatizace v aplikaci Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)  
   
--   [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)  
+-   [Přehled hostitelských položek a hostitelských ovládacích prvků](../vsto/host-items-and-host-controls-overview.md)  
   
 ## <a name="customizing-the-user-interface-of-word"></a>Přizpůsobení uživatelského rozhraní aplikace Word  
  Většina řešení Microsoft Office upravit uživatelské rozhraní (UI) aplikace Office a poskytují některé způsob uživatelům interakci s řešením. Existuje mnoho způsobů, ve kterých můžete upravit pomocí přizpůsobení na úrovni dokumentu Word uživatelského rozhraní. Například můžete přidat ovládací prvky na pásu karet, a můžete zobrazit podokna akcí. Další informace najdete v tématu [přizpůsobení uživatelského rozhraní Office](../vsto/office-ui-customization.md).  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
  [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)   
  [Návody pro práci s aplikací Word](../vsto/walkthroughs-using-word.md)   
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   
- [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
+ [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
   
   

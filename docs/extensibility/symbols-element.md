@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ef5b215e18163b10c8002affc959bd80b586cf0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a6065162ce5ba7c8f611be7a093bba7a0c55fca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbols-element"></a>Element symboly
 Definuje identifikátory, které jsou používány jiné VSCT elementy a identifikátory GUID. Pro nespravovaného kódu, tyto informace obvykle pochází z soubory hlaviček, které jsou určené [Extern Element](../extensibility/extern-element.md). Spravovaný kód používá podřízených elementů symboly elementu, který chcete definovat tyto informace.  
@@ -57,7 +58,7 @@ Definuje identifikátory, které jsou používány jiné VSCT elementy a identif
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Kořenový element .vsct souboru.|  
+|[CommandTable – element](../extensibility/commandtable-element.md)|Kořenový element .vsct souboru.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -73,4 +74,4 @@ Definuje identifikátory, které jsou používány jiné VSCT elementy a identif
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

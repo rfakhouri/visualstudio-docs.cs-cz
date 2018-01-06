@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79d888e9b50d18b4a9d46a8914381db27f09698d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a76b14f28bdb74345813931fc334f98090abd93c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-of-execution"></a>Řízení spouštění
 Modul ladění (DE) obvykle odešle jednu z následujících událostí jako poslední událost spuštění:  
@@ -62,4 +63,4 @@ Modul ladění (DE) obvykle odešle jednu z následujících událostí jako pos
  Volání SDM provede `Step`, **Execute**, a **pokračovat** jsou asynchronní, což znamená, že SDM očekává, že volání rychle vrátit. Pokud je DE odešle SDM zastavení událostí ve stejném vlákně, před `Step`, **Execute**, nebo **pokračovat** vrátí SDM přestane reagovat.  
   
 ## <a name="see-also"></a>Viz také  
- [Ladění úlohy](../../extensibility/debugger/debugging-tasks.md)
+ [Úlohy ladění](../../extensibility/debugger/debugging-tasks.md)

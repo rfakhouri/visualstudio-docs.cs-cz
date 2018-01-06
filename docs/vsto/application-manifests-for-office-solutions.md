@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: feda5cbd710ad1d3b7175219261a16f78a774f7d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 847d42015b28f3d2ad0e2e2eb48c5b1ce060ab14
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifesty aplikace pro řešení Office
   Manifest aplikace je soubor XML, který popisuje sestavení, která jsou načtena do řešení Microsoft Office. Použít vývojových nástrojů Microsoft Office v sadě Visual Studio [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] aplikace manifestu schéma definované v [Manifest aplikace ClickOnce](/visualstudio/deployment/clickonce-application-manifest) odkaz.  
@@ -105,6 +106,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Viz také  
  [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce – Manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce – manifest aplikace ](/visualstudio/deployment/clickonce-application-manifest)  
   
   

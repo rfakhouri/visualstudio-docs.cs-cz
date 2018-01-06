@@ -20,11 +20,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: "85"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: af6cb2319ffb851e91ff87d7e998eeb25315e9fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a8a7f23593e3d4056d1f3469d1d26ff6aed23882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 Automatizované testy, které jednotky vaší aplikace pomocí jeho uživatelské rozhraní (UI) se označují jako *programové testy uživatelského rozhraní* (CUITs). Tyto testy zahrnují funkční testování ovládacích prvků uživatelského rozhraní. Které vám umožní ověřte, zda je správně funguje celou aplikaci, včetně jeho uživatelské rozhraní. Programové testy uživatelského rozhraní jsou obzvláště užitečná, kterých je ověření nebo jiné logiku v uživatelském rozhraní, například v na webové stránce. Používají se také často k automatizaci existující manuálního testu.  
@@ -309,11 +310,11 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
         -   [Anatomie programového testu UI](../test/anatomy-of-a-coded-ui-test.md)  
   
-        -   [Osvědčené postupy pro programové testy uživatelského rozhraní](../test/best-practices-for-coded-ui-tests.md)  
+        -   [Doporučené postupy pro programové testy UI](../test/best-practices-for-coded-ui-tests.md)  
   
         -   [Testování rozsáhlé aplikace s více mapami uživatelského rozhraní](../test/testing-a-large-application-with-multiple-ui-maps.md)  
   
-        -   [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+        -   [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
   
 ###  <a name="generatedCode"></a>Generovaný kód  
  Pokud vyberete **generovat kód**, se vytvářejí několika částí kódu:  

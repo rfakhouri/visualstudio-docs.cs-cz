@@ -16,11 +16,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb79bfa9938aade8ff138817073fad4897276184
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1eaa8cc41e7b27d509e68d6785c34a9ae214ffd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dynamically-adding-menu-items"></a>Dynamicky přidání položek nabídky
 Položky nabídky můžete přidat v době běhu zadáním `DynamicItemStart` příkaz příznak na definici tlačítko zástupný symbol v sadě Visual Studio souboru příkaz – Tabulka (.vsct), pak definování (v kódu) počet nabídky položky k zobrazení a zpracování příkazy. Při načítání VSPackage zástupný text nahrazen položky dynamické nabídky.  
@@ -361,4 +362,4 @@ public sealed class DynamicMenuItemsPackage : Package
   
 ## <a name="see-also"></a>Viz také  
  [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)   
- [Jak přidat VSPackages prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

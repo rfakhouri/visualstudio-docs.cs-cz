@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5635f5da028283e6683548ec4388f7b3bfcbd8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 9c7b9c8f0f36435c2595a5df648daa54a614e278
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Uspořádání objektů do kontejnerů rozložení v Návrháři XAML
 Představte si, kam chcete objekty, které se zobrazí na stránce. objekty, například bitové kopie, tlačítka a videa. Možná budete chtít zobrazit v řádků a sloupců na jediném řádku svisle nebo vodorovně nebo v pevné pozici.  
@@ -35,7 +36,7 @@ Představte si, kam chcete objekty, které se zobrazí na stránce. objekty, nap
   
  Jsou použité nejvíce často se používá následující panelů rozložení, ale existují i další. Můžete je vyhledat všechny v **prostředky** panelu.  
   
--   [Mřížky](#Grid)  
+-   [Mřížka](#Grid)  
   
 -   [UniformGrid](#Uniform)  
   
@@ -50,7 +51,7 @@ Představte si, kam chcete objekty, které se zobrazí na stránce. objekty, nap
 ###  <a name="Grid"></a>Mřížky  
  Umožňuje uspořádejte objekty do řádků a sloupců.  
   
- ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441f-9136-98375fee87b7")  
+ ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441F-9136-98375fee87b7")  
   
  **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pomocí mřížky](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
@@ -102,7 +103,7 @@ Představte si, kam chcete objekty, které se zobrazí na stránce. objekty, nap
   
 -   [Ohraničení](#Border)  
   
--   [Místní nabídka](#Popup)  
+-   [Popup](#Popup)  
   
 -   [ScrollViewer](#Scroll)  
   

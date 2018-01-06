@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 16be8f494b5e8709244568afeb654ae02ca85899
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 448eba0d13a9501c328da79fa31fa66f4376d5df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Přidání uživatelského ovládacího prvku do úvodní stránky
 Tento návod ukazuje, jak přidat odkaz na stránku vlastní spuštění knihovny DLL. V příkladu přidáme sestavení uživatelského ovládacího prvku uživatelského ovládacího prvku k řešení a pak odkazuje na sestavení vytvořené ze souboru XAML – úvodní stránka. Novou kartu hostitelem uživatelského ovládacího prvku, který funguje jako základní webový prohlížeč.  
@@ -189,4 +190,4 @@ Tento návod ukazuje, jak přidat odkaz na stránku vlastní spuštění knihovn
   
 ## <a name="see-also"></a>Viz také  
  [Ovládací prvky kontejneru WPF](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)   
- [Návod: Přidání vlastních XAML pro úvodní stránku](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Návody: Přidání vlastního souboru XAML na úvodní stránku](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

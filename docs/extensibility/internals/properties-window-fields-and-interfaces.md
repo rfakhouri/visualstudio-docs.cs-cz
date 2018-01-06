@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4dd37d33230be758bd5a5adf6f5e10d5a978800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Vlastnosti – okno pole a rozhraní
 Model pro výběr k určení, které informace se zobrazují v **vlastnosti** okno je založena na okno, který má právě fokus v prostředí IDE. Objekt kontextu jeho výběru nabídnutých do kontextu globální výběr mohou mít každý okno a objekt v rámci vybrané okno. Při toto okno je aktivní prostředí aktualizuje kontext globální výběr hodnotami z rámce okna. Když se změní fokus, takže nemá kontext výběr.  
@@ -117,4 +118,4 @@ STDAPI DLLGetDocumentation
  Jiný způsob, jak získat lokalizovaný název a popis vlastnosti je implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>. Další informace týkající se implementace této metody naleznete v tématu [pole okno Vlastnosti a rozhraní](../../extensibility/internals/properties-window-fields-and-interfaces.md).  
 
 ## <a name="see-also"></a>Viz také  
- [Rozšíření vlastnosti](../../extensibility/internals/extending-properties.md)
+ [Rozšíření vlastností](../../extensibility/internals/extending-properties.md)

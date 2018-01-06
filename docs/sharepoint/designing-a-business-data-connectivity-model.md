@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0af1b3038fd0cdf4629c1a1acb9e14d0297dc19d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 886522cacff9359b3516b9e09530bfb1c41acfe6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Navrhování modelu připojení obchodních dat
   Přidáním entity a metody pro soubor modelu můžete vyvinout model pro službu Business Data Connectivity (BDC). Entity popisuje kolekci datová pole. Například entita může představovat tabulky v databázi. Metoda provede úlohu například přidání, odstranění nebo aktualizace dat reprezentována entity. Další informace najdete v tématu [integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -119,20 +120,20 @@ ms.lasthandoff: 10/31/2017
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md)|Popisuje nástroje, které můžete použít pro vizuální návrh model pro Záložní.|  
-|[Postupy: Přidání Entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)|Ukazuje, jak přidat externích typů obsahu nebo entity do modelu.|  
-|[Postupy: přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům zobrazení seznamu entit v seznamu nebo webové části.|  
+|[Přehled nástrojů pro navrhování modelů služby BDC](../sharepoint/bdc-model-design-tools-overview.md)|Popisuje nástroje, které můžete použít pro vizuální návrh model pro Záložní.|  
+|[Postupy: Přidání entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)|Ukazuje, jak přidat externích typů obsahu nebo entity do modelu.|  
+|[Postupy: Přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům zobrazení seznamu entit v seznamu nebo webové části.|  
 |[Postupy: Přidání specifické vyhledávací metody](../sharepoint/how-to-add-a-specific-finder-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům zobrazit podrobnosti o konkrétní entity.|  
-|[Postupy: přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům přidat záznamy na zdroji dat přímo ze seznamu nebo webové části.|  
-|[Postupy: přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům odebrat data ze zdroje dat pomocí možností v uživatelské rozhraní (UI) seznam nebo webové části.|  
+|[Postupy: Přidání metody vytvoření](../sharepoint/how-to-add-a-creator-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům přidat záznamy na zdroji dat přímo ze seznamu nebo webové části.|  
+|[Postupy: Přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům odebrat data ze zdroje dat pomocí možností v uživatelské rozhraní (UI) seznam nebo webové části.|  
 |[Postupy: Přidání aktualizační metody](../sharepoint/how-to-add-an-updater-method.md)|Ukazuje, jak přidat metodu, která umožňuje uživatelům měnit záznamy dat ve zdroji dat přímo ze seznamu nebo webové části.|  
-|[Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Ukazuje, jak používat okno podrobností metoda v sadě Visual Studio k přidání parametrů vstupní a zpět na metodu.|  
-|[Postupy: definování deskriptoru typu parametru](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Ukazuje, jak definovat parametr datové typy v modelu.|  
-|[Postupy: definování Instance metody](../sharepoint/how-to-define-a-method-instance.md)|Ukazuje, jak vytvořit instanci metodu, která provede BDC.|  
+|[Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)|Ukazuje, jak používat okno podrobností metoda v sadě Visual Studio k přidání parametrů vstupní a zpět na metodu.|  
+|[Postupy: Definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|Ukazuje, jak definovat parametr datové typy v modelu.|  
+|[Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)|Ukazuje, jak vytvořit instanci metodu, která provede BDC.|  
 |[Postupy: Přidání deskriptoru filtru do vyhledávací metody](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|Ukazuje, jak povolit uživatelům omezení počtu instancí vrácených funkcí vyhledávací metody.|  
-|[Vytvoření přidružení mezi entitami](../sharepoint/creating-an-association-between-entities.md)|Popisuje, jak je možné definovat vztahy mezi entit v modelu. Obchodní Data webové části, externí uvádí a vlastních aplikací můžete zobrazit tyto relace mezi daty v uživatelském rozhraní (UI).|  
+|[Vytváření přidružení mezi entitami](../sharepoint/creating-an-association-between-entities.md)|Popisuje, jak je možné definovat vztahy mezi entit v modelu. Obchodní Data webové části, externí uvádí a vlastních aplikací můžete zobrazit tyto relace mezi daty v uživatelském rozhraní (UI).|  
 |[Postupy: vytvoření přidružení mezi entitami](../sharepoint/how-to-create-an-association-between-entities.md)|Ukazuje, jak definovat vztahy mezi entit v modelu.|  
-|[Návod: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Poskytuje podrobné pokyny, které ukazují, jak vytvořit a otestovat model, který se zobrazí v seznamu SharePoint externí kontakty.|  
+|[Návod: Vytvoření externího seznamu ve službě SharePoint s použitím obchodních dat](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)|Poskytuje podrobné pokyny, které ukazují, jak vytvořit a otestovat model, který se zobrazí v seznamu SharePoint externí kontakty.|  
 |[Integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|Poskytuje přehled o vytváření a navrhování modelů služby BDC.|  
   
   

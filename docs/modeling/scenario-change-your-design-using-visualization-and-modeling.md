@@ -20,11 +20,12 @@ caps.latest.revision: "61"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: f0b99b4a4bcfbec58c23e529e3ee250ca19554ab
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e6ffb17164bf49cb585d9fd67dd99c833a805411
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénář: Změna návrhu pomocí vizualizace a modelování
 Ujistěte se, že váš systém software splňuje požadavky uživatelů pomocí vizualizace a modelování nástroje v sadě Visual Studio.
@@ -92,13 +93,13 @@ Položky v diagramech závislosti nacházejí v projektu modelování, ale nejso
   
  Další informace:  
   
--   [Vytváření diagramů závislost z vašeho kódu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
   
 -   [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+-   [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
--   [Modelování SDK pro Visual Studio – specifické pro doménu jazyky](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+-   [Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
@@ -391,7 +392,7 @@ Položky v diagramech závislosti nacházejí v projektu modelování, ale nejso
   
  Návrhář tříd jako výchozí bod pro prozkoumat a popisují existujících tříd, slouží k vytvoření diagramů tříd z kódu.  
   
--   [Postupy: Přidání diagramů tříd do projektů (návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
+-   [Postupy: Přidání diagramů tříd do projektů (Návrhář tříd)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)  
   
 #### <a name="summary-strengths-of-class-diagrams"></a>Souhrn: Síly diagramy tříd  
  Diagramy tříd můžete definovat:  
@@ -459,11 +460,11 @@ Položky v diagramech závislosti nacházejí v projektu modelování, ale nejso
   
  Další informace:  
   
--   [Vytváření diagramů závislost z vašeho kódu](../modeling/create-layer-diagrams-from-your-code.md)  
+-   [Vytváření diagramů závislostí z kódu](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Diagramy závislost: referenční dokumentace](../modeling/layer-diagrams-reference.md)  
+-   [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)  
   
--   [Diagramy závislost: pokyny](../modeling/layer-diagrams-guidelines.md)  
+-   [Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)  
   
 -   [Ověřování kódu pomocí diagramů závislostí](../modeling/validate-code-with-layer-diagrams.md)  
   

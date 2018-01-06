@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f655af14204f7dcf0812ce5ee32676225d5b3ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e9d240defd8788408a585d5ff33b2561e517027
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="zoom-control-threads-view"></a>Ovládací prvek Lupa (Zobrazení vláken)
 Ovládací prvek Lupa je jezdce, který vám umožní přiblížení a oddálení na časové ose tak, aby se můžete soustředit na oblasti zvláštní zájem. Vzhledem k tomu, že tento ovládací prvek zvětší středu zobrazení časové osy, center před zvětšení oblasti, které vás zajímají.  

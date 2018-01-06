@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a0868c898b9713bec07939a2e0404eb17d988ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 37d01c39479918b95203a7dacdba17c1ff9d1ec9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-designer"></a>Návrhář schématu XML
 Návrhář schématu XML (Návrhář XSD) je grafický nástroj, který umožňuje vizualizovat schéma nastavit na různých úrovních abstrakce. Jsou tyto hlavní komponenty návrháře XSD:  
@@ -30,14 +31,14 @@ Návrhář schématu XML (Návrhář XSD) je grafický nástroj, který umožňu
 -   [Zobrazení obsahu modelu](../xml-tools/content-model-view.md) poskytuje grafické reprezentace podrobnosti o místní a globální schématu uzly, včetně jednoduché a komplexní typy, elementy, skupiny, atributy a skupin atributů.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Průzkumník schématu XML](../xml-tools/xml-schema-explorer.md)  
+ [Průzkumník schémat XML](../xml-tools/xml-schema-explorer.md)  
  Poskytuje přehled o Průzkumníku schématu XML a jak ji umožňuje pracovat s schématu XML definition language (XSD) schémata.  
   
- [Prostoru Návrhář schématu XML](../xml-tools/xml-schema-designer-workspace.md)  
+ [Pracovní prostor Návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md)  
  Poskytuje přehled o pracovním prostoru Návrhář schématu XSD.  
   
- [Integrace s editoru XML](../xml-tools/integration-with-xml-editor.md)  
+ [Integrace s editorem XML](../xml-tools/integration-with-xml-editor.md)  
  Popisuje, jak Návrhář schématu XML je integrovaná s editoru XML.  
   
- [Úlohy Návrhář schématu XML](../xml-tools/xml-schema-designer-tasks.md)  
+ [Úlohy v Návrháři schémat XML](../xml-tools/xml-schema-designer-tasks.md)  
  Popisuje provádění běžných úloh s nástroji Návrhář schématu XML.

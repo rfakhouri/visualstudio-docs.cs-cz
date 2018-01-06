@@ -27,11 +27,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systému windows pro vytvoření rozložení oken, která nejlépe pro různé pracovní postupy pro vývoj. Při přizpůsobování rozložení IDE ho pamatuje. Například, pokud změníte ukotvení umístění **Průzkumníku řešení** a pak zavřete Visual Studio, při příštím spuštění se i v případě, že pracujete v jiném počítači, **Průzkumníku řešení** bude ukotveno v tomto stejné umístění. Můžete také pojmenujte vlastní rozložení a uložit jej a potom přepínat mezi rozložení pomocí jednoho příkazu. Například můžete vytvořit rozložení pro úpravy a druhou pro ladění a přepínat mezi nimi pomocí **okno &#124; Použít rozložení okna** příkazu nabídky.  

@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5072e552d0e8527caeb95edc65d8717bece036c9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7156ca7c69d0704c889a1c21ec13242f3e92edc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overriding-toolsversion-settings"></a>Přepsání nastavení parametru ToolsVersion
 Můžete změnit sada nástrojů pro projekty a řešení v jednom ze tří způsobů:  
@@ -130,4 +131,4 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
  [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)   
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
  [Sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)   
- [Konfigurace standardní a vlastní sady nástrojů](../msbuild/standard-and-custom-toolset-configurations.md)
+ [Standardní a vlastní konfigurace sady nástrojů](../msbuild/standard-and-custom-toolset-configurations.md)

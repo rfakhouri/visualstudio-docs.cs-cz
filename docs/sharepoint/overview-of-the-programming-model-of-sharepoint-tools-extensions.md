@@ -19,11 +19,12 @@ caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5209ec60734213fbafb7b176d91589527b571c32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b8d869dab81273262d23b7aa905370f530b24c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Přehled modelu programování rozšíření nástrojů služby SharePoint
   Při vytváření rozšíření pro nástroje služby SharePoint v sadě Visual Studio, můžete začít tím, že implementujete jeden nebo více rozhraní rozšíření, které jsou vystavené nástroje služby SharePoint. Ve většině případů budete implementovat funkce v rozšíření také používat jiné typy poskytované nástroje služby SharePoint. V některých případech můžete také použít typy v jiných objektové modely poskytované sadě Visual Studio a služby SharePoint. Musíte pochopit účel každé z těchto objektových modelů a vědět, jak je používat spolu vzájemně vytvoření rozšíření pro nástroje služby SharePoint.  
@@ -101,6 +102,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Viz také  
  [Rozšíření nástrojů SharePoint v sadě Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
  [Volání do služby SharePoint objektové modely](../sharepoint/calling-into-the-sharepoint-object-models.md)   
- [Použití služby projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)  
+ [Použití služby projektu služby SharePoint](../sharepoint/using-the-sharepoint-project-service.md)  
   
   

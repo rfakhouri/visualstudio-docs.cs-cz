@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 617b495cab96d8fdb0ddd7c69d6e6c1dd93d7ccc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1a57911b8736af27caf0bd9ba30e9e03bdebed2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení
 Jakmile vytvoříte projekt sady Visual Studio IDE, můžete zobrazit informace o toto sestavení v **výstup** okno. Pomocí těchto informací můžete, například řešit selhání sestavení. Pro projekty C++ můžete také zobrazit stejné informace v souboru .txt, který má vytvořili a uložili automaticky. Pro projekty spravovaného kódu, můžete zkopírovat a vkládat informace z **výstup** okno na .txt souboru a uložte ho sami. Prostředí IDE můžete také použít k určení toho, jaké typy informací, které chcete zobrazit o každé sestavení.  
@@ -59,4 +60,4 @@ Jakmile vytvoříte projekt sady Visual Studio IDE, můžete zobrazit informace 
 ## <a name="see-also"></a>Viz také  
  [Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Sestavování a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
- [Kompilaci a sestavování](../ide/compiling-and-building-in-visual-studio.md)
+ [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

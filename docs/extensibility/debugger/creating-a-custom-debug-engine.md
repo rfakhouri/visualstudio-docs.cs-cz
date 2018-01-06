@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb5971bf86c6b97d38daaf86f3a093da196020da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edee6528919cfe28c542be850b9a104188ce403
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-custom-debug-engine"></a>Vytváření vlastních ladění modulu
 Modul ladění (DE) je komponenta umožňující ladění konkrétní běhu architektury. Je obvykle pouze jeden implementace DE za běhu prostředí.  
@@ -43,13 +44,13 @@ Modul ladění (DE) je komponenta umožňující ladění konkrétní běhu arch
 5.  Ukončení a odpojení  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Registrace modulu vlastní ladění](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
+ [Registrace vlastního ladicího stroje](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
  Popisuje kroky potřebné k registraci modul ladění pomocí sady Visual Studio, takže lze jej použít.  
   
- [Povolení Program chcete ladit](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
+ [Povolení ladění programu](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
  Vysvětluje, že před vaší DE můžete ladit program, musí nejprve spuštění DE nebo připojení k existující aplikaci.  
   
- [Řízení provádění a stavu vyhodnocení](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
+ [Řízení provádění a vyhodnocení stavu](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
  Popisuje, proč ladění aplikace vyžaduje implementace funkce řízení provádění.  
   
  [Odesílání událostí](../../extensibility/debugger/sending-events.md)  
@@ -58,11 +59,11 @@ Modul ladění (DE) je komponenta umožňující ladění konkrétní běhu arch
  [Ukončení a odpojení](../../extensibility/debugger/termination-and-detaching.md)  
  Vysvětluje, jak zajistit normální ukončení, což znamená, že neexistují žádné zarážky, výjimky, chyby nebo nekonečné smyčky v aplikaci chcete ladit.  
   
- [Události volání ladicí program](../../extensibility/debugger/calling-debugger-events.md)  
+ [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)  
  Dokumenty volání pořadí událostí, ke kterým dochází v relaci ladění.  
   
- [Postupy: Ladění modul vlastní ladění](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ [Postupy: Ladění vlastního ladicího stroje](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
  Vysvětluje, jak ladit vlastní DE.  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšiřitelnost ladicího programu sady Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Rozšiřitelnost programu Visual Studio Debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

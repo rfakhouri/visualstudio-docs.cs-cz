@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ddc53a84ca6cc09c5682bc874503849eee98eae8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 Tento dokument popisuje stránky (nebo vlastnosti kolekce), jsou přidružené **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, z **možnosti** dialogové okno. Název každé část je hovoru, který se používá pro přístup ke kolekci vlastností a v tabulce v každou část jsou uvedeny vlastnosti v kolekci.  
@@ -165,4 +166,4 @@ Tento dokument popisuje stránky (nebo vlastnosti kolekce), jsou přidružené *
  [Určení názvů vlastností položky na stránkách možnosti](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Stránka Možnosti, písma a barvy vlastnosti uzlu](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Stránka Možnosti, vlastnosti uzlu textového editoru](../../ide/reference/options-page-text-editor-node-properties.md)   
- [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)
+ [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)

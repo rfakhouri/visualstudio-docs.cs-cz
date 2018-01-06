@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda89cc132ecd496605c19194c0221de503f4469
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8720fe94797e212cb332368572b291ce7fb40a26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-edit-xml-files"></a>Postupy: úpravy souborů XML
 Editor souborů XML je nové editor souborů XML. Lze použít v samostatném souboru XML nebo na soubor přidružený k projektu sady Visual Studio. Editor souborů XML je přidružen následující přípony souborů: .config, DTD, XML, XSD, .xdr, XSL, XSLT a .vssettings. Editor souborů XML je taky přiřazený další soubor jakéhokoli typu, nemá žádné konkrétní editor registrován a který obsahuje XML DTD obsahu.  
@@ -71,4 +72,4 @@ Editor souborů XML je nové editor souborů XML. Lze použít v samostatném so
 ## <a name="see-also"></a>Viz také  
  [XML Editor](../xml-tools/xml-editor.md)   
  [Vlastnosti dokumentu XML, vlastnosti – okno](../xml-tools/xml-document-properties-properties-window.md)   
- [Postupy: vytvoření schématu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+ [Postupy: Vytvoření schématu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

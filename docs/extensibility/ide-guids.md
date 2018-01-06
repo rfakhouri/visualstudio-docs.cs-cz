@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e2cd6f661afb876d06c30bdccb6786eac4e99e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9034be93256250c5502d5f8da9c79a4308a47ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-guids"></a>Identifikátory GUID IDE
 <xref:Microsoft.VisualStudio.VSConstants> Třída publikuje identifikátory GUID některé části integrované vývojové prostředí (IDE), jak je uvedeno v následující tabulce.  
@@ -133,4 +134,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Viz také  
  [Konstanty COM ve spravovaném kódu](../extensibility/com-constants-in-managed-code.md)   
  [Konstanty IDE](../extensibility/ide-constants.md)   
- [Příkazy definované IDE pro rozšíření projektu systémy](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+ [Příkazy definované prostředím IDE pro rozšíření systémů projektů](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

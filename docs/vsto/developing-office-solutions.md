@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 478bd6d27d6e4ef0fe75891d95cdc4b3258a74e8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: b15c9fbf2815132ac4ad84e3b321bb22db199ed2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-office-solutions"></a>Vývoj řešení pro systém Office
   Po návrhu projektu pomocí doplňku Office developer tools v sadě Visual Studio a nastavit soubory projektu, můžete začít soustředit na implementaci kódu a vlastní uživatelské rozhraní (UI).  
@@ -53,15 +54,15 @@ ms.lasthandoff: 10/31/2017
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)|Popisuje různé aspekty psaní kódu v řešeních pro systém Office.|  
+|[Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)|Popisuje různé aspekty psaní kódu v řešeních pro systém Office.|  
 |[Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)|Přehled modelu programování doplňků VSTO a souvisejících úloh programování.|  
 |[Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)|Přehled modelu programování přizpůsobení na úrovni dokumentu a souvisejících úloh programování.|  
-|[Přizpůsobení uživatelského rozhraní sady Office](../vsto/office-ui-customization.md)|Popisuje různé způsoby, můžete přizpůsobit aplikace uživatelského rozhraní systému Office s použitím doplňků VSTO a úpravy na úrovni dokumentů.|  
-|[Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)|Popisuje různé způsoby, které můžete pracovat s daty v řešeních pro systém Office, jako je například svázání dat s ovládacími prvky a ukládání do mezipaměti data v přizpůsobeních na úrovni dokumentu.|  
-|[Jak ovlivňuje automatické ukládání řešení pro systém Office](./how-autosave-impacts-office-solutions.md)|Popisuje úpravy, které možná budete muset udělat řešení pro systém Office, pokud je povoleno automatické ukládání.|
-|[Řešení potíží s řešení pro systém Office](../vsto/troubleshooting-office-solutions.md)|Poskytuje tipy pro řešení běžných problémů, které se mohou vyskytnout při vytváření řešení pro systém Office.|  
-|[Dělení na vlákna podpory v Office](../vsto/threading-support-in-office.md)|Poskytuje přehled o práci s více vlákny v řešeních pro systém Office.|  
-|[Usnadnění v projektech pro systém Office](../vsto/accessibility-in-office-projects.md)|Popisuje funkce usnadnění, které jsou k dispozici v řešeních pro systém Office.|  
+|[Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)|Popisuje různé způsoby, můžete přizpůsobit aplikace uživatelského rozhraní systému Office s použitím doplňků VSTO a úpravy na úrovni dokumentů.|  
+|[Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)|Popisuje různé způsoby, které můžete pracovat s daty v řešeních pro systém Office, jako je například svázání dat s ovládacími prvky a ukládání do mezipaměti data v přizpůsobeních na úrovni dokumentu.|  
+|[Jak ovlivňuje automatické ukládání řešení pro Office](./how-autosave-impacts-office-solutions.md)|Popisuje úpravy, které možná budete muset udělat řešení pro systém Office, pokud je povoleno automatické ukládání.|
+|[Řešení potíží s řešeními pro systém Office](../vsto/troubleshooting-office-solutions.md)|Poskytuje tipy pro řešení běžných problémů, které se mohou vyskytnout při vytváření řešení pro systém Office.|  
+|[Podpora práce s vlákny v systému Office](../vsto/threading-support-in-office.md)|Poskytuje přehled o práci s více vlákny v řešeních pro systém Office.|  
+|[Usnadnění v projektech pro systém Office](../vsto/accessibility-in-office-projects.md)|Popisuje funkce usnadnění, které jsou k dispozici v řešeních pro systém Office.|  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: vytváření a změny přizpůsobených vlastností dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)   

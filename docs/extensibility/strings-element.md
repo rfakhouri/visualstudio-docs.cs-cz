@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea2f1808adcb7c8c79d2139e89e31f21a85cb694
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 61d6498cafaf97033864bc31d55c257c9a3a564f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="strings-element"></a>Element řetězce
 Element řetězce musí obsahovat alespoň **ButtonText** podřízený element. Všechny ostatní podřízené prvky jsou volitelné. Neplatný kód XML znaky, jako například 'a' a ' <' musí být programového jako entity ('&amp;'a'&lt;' a tak dále).  
@@ -59,9 +60,9 @@ Element řetězce musí obsahovat alespoň **ButtonText** podřízený element. 
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Button Element](../extensibility/button-element.md)|Definuje element, který může uživatel zasahovat.|  
-|[Menu Element](../extensibility/menu-element.md)|Definuje samostatnou položku nabídky.|  
-|[Element pole se seznamem](../extensibility/combo-element.md)|Definuje příkazy, které se zobrazují v pole se seznamem.|  
+|[Button – element](../extensibility/button-element.md)|Definuje element, který může uživatel zasahovat.|  
+|[Menu – element](../extensibility/menu-element.md)|Definuje samostatnou položku nabídky.|  
+|[Combo – element](../extensibility/combo-element.md)|Definuje příkazy, které se zobrazují v pole se seznamem.|  
   
 ## <a name="see-also"></a>Viz také  
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

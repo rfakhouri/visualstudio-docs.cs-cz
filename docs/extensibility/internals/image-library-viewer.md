@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3da2368d8d30ba54dd6b4ae6a36aba6e75ea2967
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b699233d0b0ddf14079240da3bd831a172641fba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-library-viewer"></a>Image Viewer knihovny
 Nástroj Visual Studio Image Viewer knihovny můžete načíst a hledání manifesty bitové kopie, které uživateli umožňují s nimi manipulovat stejným způsobem, který by Visual Studio. Uživatel může změnit pozadí, velikosti, DPI, vysoký kontrast a další nastavení. Nástroj také zobrazí informace o načtení pro každý manifest bitové kopie a informace o zdroji každé bitové kopie v manifestu bitové kopie. Tento nástroj je užitečný pro:  
@@ -99,7 +100,7 @@ Nástroj Visual Studio Image Viewer knihovny můžete načíst a hledání manif
 |Systém|Složky Windows\System32|  
 |WinDir|Hodnota proměnné prostředí % WinDir %|  
   
- **Bitové kopie**  
+ **Obrázek**  
   
  \<Image > element definuje obrázek, který může odkazovat přezdívka. Identifikátor GUID a ID, které dohromady tvoří Přezdívka bitové kopie. Přezdívka pro bitovou kopii musí být jedinečný v rámci celého obrázku knihovny. Pokud má více než jeden obrázek dané přezdívka, první z nich došlo při vytváření knihovny je ten, který je zachován.  
   

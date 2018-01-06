@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5907f540e5f81e26b7d184352e3c38531ec5da66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb69380913f188031c97b46530ea2659fc05fe30
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="contributing-to-the-automation-model"></a>Přispívání do modelu automatizace
 Visual Studio poskytuje sadu rozhraní automatizace pro přizpůsobení prostředí. Model automatizace je objektový model, který umožňuje koncovým uživatelům vytvářet doplňky sady Visual Studio a rozšíření.  
@@ -30,31 +31,31 @@ Visual Studio poskytuje sadu rozhraní automatizace pro přizpůsobení prostře
  [Přehled modelu automatizace](../../extensibility/internals/automation-model-overview.md)  
  Definuje automation model jako související skupiny objektů, které řídí hlavní omezující vlastnosti pro běžné prostředí. Tuto sadu objektů je obrázku v diagramu modelu automatizace.  
   
- [Poskytnutí automatizace pro VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md)  
+ [Poskytování automatizace pro balíčky VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md)  
  Popisuje, k dispozici automatizace pro vaše VSPackage dvě hlavní možnosti.  
   
- [Vystavení objektů projektu](../../extensibility/internals/exposing-project-objects.md)  
+ [Zveřejňování objektů projektu](../../extensibility/internals/exposing-project-objects.md)  
  Poskytuje podrobné pokyny pro vytvoření VSPackage konkrétní objekty.  
   
- [Projekt modelování](../../extensibility/internals/project-modeling.md)  
+ [Modelování projektu](../../extensibility/internals/project-modeling.md)  
  Popisuje standardní projektu objekty, které jsou potřebné k automatizaci nového typu projektu a ukazuje cestu, která odpovídá automatizace projektu. Toto téma obsahuje také výpisech deklarací a implementaci pro třídy.  
   
  [Vystavení události](../../extensibility/internals/exposing-events-in-the-visual-studio-sdk.md)  
  Poskytuje podrobné pokyny pro vytvoření události pro váš model automatizace.  
   
- [Podpora automatizace pro možnosti stránky](../../extensibility/internals/automation-support-for-options-pages.md)  
+ [Podpora automatizace pro stránky Možnosti](../../extensibility/internals/automation-support-for-options-pages.md)  
  Popisuje, jak vrátit objekt automatizace pro podporu vlastnosti VSPackage vlastní **možnosti** dialogové okno na **nástroj** nabídky tím, že rozšíří `DTE.Properties` objektu.  
   
- [Poskytnutí automatizace pro kód](../../extensibility/internals/providing-automation-for-code.md)  
+ [Poskytování automatizace pro kód](../../extensibility/internals/providing-automation-for-code.md)  
  Vysvětluje, že vytvoření automatizace modelu kódu se nevyžaduje. Odkaz je však zadat v tomto tématu, která poskytuje pronikavého informace do kód – modely.  
   
- [Postupy: poskytování automatizace pro Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [Postupy: Poskytování automatizace pro Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  Vysvětluje, že poskytuje automatizace je vhodné vždy, když chcete zpřístupnit objekty automatizace v okně prostředí a prostředí již neposkytuje objekt připravených automatizace. Popisuje automatizace pro nástroje systému windows a windows dokumentu.  
   
- [Pomocí modelu automatizace](../../extensibility/internals/using-the-automation-model.md)  
+ [Použití modelu automatizace](../../extensibility/internals/using-the-automation-model.md)  
  Obsahuje dva příklady kódu, které ukazují, jak příjemce automatizace získá počáteční projekt objekty automatizace.  
   
- [Pro konfiguraci a SelectedItem objekty automatizace](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)  
+ [Automatizace pro konfiguraci a objekty SelectedItem](../../extensibility/internals/automation-for-configuration-and-selecteditem-objects.md)  
  Poskytuje informace o automatizaci pro možnosti konfigurace a automatizace pro vybrané položky.  
   
 ## <a name="reference"></a>Odkaz  

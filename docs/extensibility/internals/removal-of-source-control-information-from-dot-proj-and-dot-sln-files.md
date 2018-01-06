@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ea933a7e9efc08347ea107b089101f1e5d5459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4131e3d5139911c6a1bb9b44d8d8acaefa6cb632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>Odebrání informace o řízení zdroje z. Proj a. Sln – soubory
 Ve verzi 1.2 rozhraní API modulu Plugin zdroj ovládacího prvku SCC informace jsou uloženy v MSSCCPRJ. SCC soubor. Výhodou MSSCCPRJ. Soubor SCC je, že není zdroje informace SCC - řídí, jako je tomu v souborech .proj a .sln.  
@@ -28,4 +29,4 @@ Ve verzi 1.2 rozhraní API modulu Plugin zdroj ovládacího prvku SCC informace 
  V rozhraní API modulu Plugin ovládací prvek zdroj verze 1.1, rozhraní IDE používá ~ SAK soubory ke zjištění, jestli podporuje modul plug-in MSSCCPRJ. Metoda SCC ukládání informací o zdroj ovládacího prvku. Zdroj ovládacího prvku Plug-in API verze 1.2 poskytuje novou funkci pro podporu MSSCCPRJ zjišťování. SCC souboru bez použití ~ SAK souboru. Další informace najdete v tématu [odstranění ~ SAK soubory](../../extensibility/internals/elimination-of-tilde-sak-files.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Co je nového v zdroj ovládacího prvku modulu Plug-in rozhraní API verze 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Co je nového v rozhraní API modulu plug-in správy zdrojového kódu ve verzi 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

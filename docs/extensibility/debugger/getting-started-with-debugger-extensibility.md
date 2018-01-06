@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1419f4e45aefed59aa36b249568a53a47ad3c459
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 964b6bcc18e74174aa59e7a1bb4441e24d3918d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Začínáme s rozšiřitelnost ladicí program
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Poskytuje informace, které musí mít vytvářet a přizpůsobovat ladicí program komponenty používané k ladění aplikací z uvnitř [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí.  
@@ -38,17 +39,17 @@ ms.lasthandoff: 10/31/2017
 -   ATL COM  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Plán pro rozšíření ladicí program](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
+ [Plán pro rozšíření ladicího programu](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
  Popisuje proces implementace ladění v produktu, v závislosti na vaší kompilátoru a její výstup.  
   
- [Ladicí program komponenty](../../extensibility/debugger/debugger-components.md)  
+ [Komponenty ladicího programu](../../extensibility/debugger/debugger-components.md)  
  Obsahuje přehled [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění komponent, které zahrnují modul ladění (DE), vyhodnocovací filtr výrazů (EE) a symbol obslužné rutiny (SH).  
   
- [Koncepty ladicí program](../../extensibility/debugger/debugger-concepts.md)  
+ [Koncepty ladicího programu](../../extensibility/debugger/debugger-concepts.md)  
  Popisuje hlavní koncepty ladění architektury.  
   
- [Kontexty ladicí program](../../extensibility/debugger/debugger-contexts.md)  
+ [Kontexty ladicího programu](../../extensibility/debugger/debugger-contexts.md)  
  Vysvětluje, jak funguje modul ladění (DE) současně v kódu, dokumentace a kontexty vyhodnocení výrazu. Popisuje, pro každou tři kontexty, umístění, pozice nebo vyhodnocení relevantní k němu.  
   
- [Ladění úlohy](../../extensibility/debugger/debugging-tasks.md)  
+ [Úlohy ladění](../../extensibility/debugger/debugging-tasks.md)  
  Obsahuje odkazy na různé ladění úlohy, jako je například spuštěním programu a vyhodnocení výrazů.

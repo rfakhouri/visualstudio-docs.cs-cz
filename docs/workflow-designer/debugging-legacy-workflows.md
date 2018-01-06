@@ -15,11 +15,12 @@ caps.latest.revision: "8"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2253eb414e58d5168cf6e1d2f4c22880d18d1bd6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d15236de90af6a8749482f2b159d66c28a1b8c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-legacy-workflows"></a>Ladění pracovních starší verze
 Pokud používáte starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] v [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] k sestavení [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace, aby target.NET Framework 3.0 nebo 3.5, můžete ladit vaše pracovní postupy jako libovolné jiné programy nastavení zarážek, připojení k procesům a prozkoumání vláken a Zásobník volání. Máte také možnost ladění vzdáleně.  
@@ -59,16 +60,16 @@ Pokud používáte starší verze [!INCLUDE[wfd1](../workflow-designer/includes/
 -   Ladění ve smíšeném režimu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Vyvolání ladicího programu sady Visual Studio pro Windows Workflow Foundation (zastaralé)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
+ [Spuštění ladicího programu sady Visual Studio pro programovací model Windows Workflow Foundation (starší verze)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
   
- [Zakázání ladicího programu sady Visual Studio pro Windows Workflow Foundation (zastaralé)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
+ [Zakázání ladicího programu sady Visual Studio pro programovací model Windows Workflow Foundation (starší verze)](../workflow-designer/disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)  
   
- [Postupy: ladění pracovních založený na technologii ASP.NET (zastaralé)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)  
+ [Postupy: Ladění pracovních postupů založených na technologii ASP.NET (starší verze)](../workflow-designer/how-to-debug-aspnet-based-workflows-legacy.md)  
   
- [Postupy: Nastavte zarážky v pracovních postupech (zastaralé)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)  
+ [Postupy: Nastavení zarážek v pracovních postupech (starší verze)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)  
   
- [Ladění pracovních ze vzdáleného počítače (zastaralé)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)  
+ [Ladění pracovních postupů ze vzdáleného počítače (starší verze)](../workflow-designer/debugging-workflows-from-a-remote-computer-legacy.md)  
   
- [Ladění taktování možnosti (zastaralé)](../workflow-designer/debug-stepping-options-legacy.md)  
+ [Možnosti krokování při ladění (starší verze)](../workflow-designer/debug-stepping-options-legacy.md)  
   
- [Postupy: Změna možnost ladění krokování (zastaralé)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Postupy: Změna možností krokování při ladění (starší verze)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

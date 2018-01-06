@@ -20,11 +20,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 822be7f0e6e79f600331197c60ed48ea84cde200
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 83bf3b48d562e5acf24fedd27954c10505454b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>Manifesty aplikací a nasazení v řešeních pro systém Office
   Manifest aplikace je soubor XML, který poskytuje informace, který je používán řešení Office pro vyhledání a aktualizujte jeho sestavení. Manifest aplikace můžete použít s manifestu nasazení, který je soubor XML, který je uložený na serveru, který poskytuje informace potřebné k vyhledání nejaktuálnější verzi manifest aplikace a sestavení.  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce – Manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)   
- [ClickOnce – Manifest nasazení](/visualstudio/deployment/clickonce-deployment-manifest)  
+ [ClickOnce – manifest nasazení](/visualstudio/deployment/clickonce-deployment-manifest)  
   
   

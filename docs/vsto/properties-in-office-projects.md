@@ -23,11 +23,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8c5832388db7e70791193024b263da275cdf5eaa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 54eb1f58c6e623df352b382df7259e4457dd4597
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-in-office-projects"></a>Vlastnosti v projektech pro systém Office
   Nejsou k dispozici několik důležitých vlastnosti, které jsou k dispozici pro projekty Office v sadě Visual Studio. Tyto vlastnosti jsou přístupné z **vlastnosti** okno.  
@@ -58,6 +59,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Viz také  
  [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Přehled šablon projektů Microsoft Office](../vsto/office-project-templates-overview.md)   
- [Události v projektech pro systém Office](../vsto/events-in-office-projects.md)  
+ [Události v projektech pro systém Office](../vsto/events-in-office-projects.md)  
   
   

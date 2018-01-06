@@ -11,11 +11,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 83e44a28b0039c743724f3c70bee95e2ef2d419b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 19bdf650f2d11f9a773e714742c6f57359b7b63b
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů částí pro C/C++ v sadě Visual Studio
 Můžete napsat a spouštění testů jednotek C++ pomocí **Průzkumníka testů** okno, stejně jako u ostatních jazyků. Další informace o používání **Průzkumníka testů**, najdete v části [spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md). 
@@ -37,7 +38,7 @@ Kromě nainstalované rozhraní můžete napsat vlastní test adaptéru pro libo
 
 2) **Boost.Test** je dodávána jako součást výchozí **vývoj plochy s jazykem C++** zatížení. Je integrován se **Průzkumníka testů** ale v současné době není šablona projektu, proto je nutné jej ručně nakonfigurovat. Další informace najdete v tématu [postupy: použití Boost.Test v sadě Visual Studio](how-to-use-boost-test-for-cpp.md). 
 
-3) **CTest** podpora je součástí [CMake Tools pro Visual Studio](/cpp/ide/cmake-tools-for-cpp.md) komponenta, která je součástí z **vývoj plochy s C++** zatížení. Ale CTest není ještě plně integrovaná s **Průzkumníka testů**. Další informace najdete v tématu [postupy: použití CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
+3) **CTest** podpora je součástí [CMake Tools pro Visual Studio](/cpp/ide/cmake-tools-for-cpp) komponenta, která je součástí z **vývoj plochy s C++** zatížení. Ale CTest není ještě plně integrovaná s **Průzkumníka testů**. Další informace najdete v tématu [postupy: použití CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
 
 
 **Visual Studio 2015 a starší**

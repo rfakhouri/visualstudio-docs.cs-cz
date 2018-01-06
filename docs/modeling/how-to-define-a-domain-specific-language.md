@@ -20,11 +20,12 @@ caps.latest.revision: "43"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 0d2483fb8c3f244f2a5fd51f076d7157711cd34f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení ze šablony. Klíčovou součástí řešení je diagram definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a obrazců DSL. Po úpravě a přidáte k těmto prvkům, můžete přidat kód programu k přizpůsobení DSL podrobněji.  
@@ -74,9 +75,9 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
   
     -   Vyberte **minimální Návrhář WinForm** nebo **minimální WPF Designer** vytvořit DSL, který se zobrazí na plochu Windows Forms nebo WPF. Budete muset napsat kód pro definování editoru. Další informace naleznete v následujících tématech:  
   
-         [Vytváření jazyk specifické pro doménu formulářů Windows](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
+         [Vytvoření jazyka specifického pro doménu založeného na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
   
-         [Vytváření specifické pro doménu jazyk grafického subsystému WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)  
+         [Vytvoření jazyka specifického pro doménu založeného na WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)  
   
 3.  Zadejte příponu názvu souboru pro vaše DSL na stránce příslušné průvodce. Toto je rozšíření, který bude používat soubory obsahující instance vaší DSL.  
   
@@ -629,7 +630,7 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
 ## <a name="see-also"></a>Viz také  
  [Začínáme s jazyky specifické pro doménu](../modeling/getting-started-with-domain-specific-languages.md)   
  [Vytváření jazyk specifické pro doménu formulářů Windows](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
- [Vytváření specifické pro doménu jazyk grafického subsystému WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
+ [Vytvoření jazyka specifického pro doménu založeného na WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

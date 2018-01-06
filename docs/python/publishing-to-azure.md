@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 1216f0de7ad32d8d76d7016d5a8aa145a110603d
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 043e720d96c021bf510047a8dc7643d057d8982d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Publikování do služby Azure App Service
 
@@ -28,10 +31,10 @@ V tomto tématu:
 
 - [Požadavky](#prerequisites)
 - [Vytvoření služby Azure App Service](#create-an-azure-app-service)
-- [Konfigurace Python v App Service](#configure-python-on-app-service)
-- [Publikování do služby App Service - Visual Studio 2017](#publish-to-app-service-visual-studio-2017)
-- [Publikování do služby App Service – Visual Studio 2015](#publish-to-app-service-visual-studio-2015)
-- [Vzdálené ladění na služby App Service](#remote-debugging-on-app-service)
+- [Konfigurace Python v App Service](#configure-python-on-azure-app-service)
+- [Publikování do služby App Service - Visual Studio 2017](#publish-to-app-service---visual-studio-2017)
+- [Publikování do služby App Service – Visual Studio 2015](#publish-to-app-service---visual-studio-2015)
+- [Vzdálené ladění na služby App Service](#remote-debugging-on-azure-app-service)
 
 > [!Note]
 > Pozadí na změny mezi Visual Studio 2015 a Visual Studio 2017, naleznete v příspěvku blogu, [publikovat do Azure na Visual Studio 2017](https://blogs.msdn.microsoft.com/pythonengineering/2016/12/12/publish-to-azure-in-vs-2017/).
@@ -50,10 +53,10 @@ V tomto návodu budete potřebovat projekt webové aplikace založené na rozhra
 
 Publikování do služby Azure vyžaduje cíl služby App Service. Pro tento účel můžete vytvořit služby App Service pomocí předplatného Azure, nebo můžete použít dočasnou lokalitu.
 
-Pokud ještě nemáte předplatné, začínat [bezplatný účet Azure úplné](https://azure.microsoft.com/en-us/free/), což zahrnuje štědrém kredity u služby Azure. Také vzít v úvahu registrujete [Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/), který vám dává 25 platební každý měsíc jeden rok.
+Pokud ještě nemáte předplatné, začínat [bezplatný účet Azure úplné](https://azure.microsoft.com/free/), což zahrnuje štědrém kredity u služby Azure. Také vzít v úvahu registrujete [Visual Studio Dev Essentials](https://azure.microsoft.com/pricing/member-offers/vs-dev-essentials/), který vám dává 25 platební každý měsíc jeden rok.
 
 > [!Tip]
-> I když Azure požádá o platební karty se ověřit svůj účet, karta se nic nestrhne. Můžete také nastavit [útrat](https://docs.microsoft.com/azure/billing/billing-spending-limit) rovna vaší bezplatný kredit zaručit, že dojde k žádné další poplatky. Kromě toho Azure poskytuje bezplatné služby App Service vrstvy plán, který je ideální pro jednoduchá testovací aplikace, jak je popsáno v následující části.
+> I když Azure požádá o platební karty se ověřit svůj účet, karta se nic nestrhne. Můžete také nastavit [útrat](/azure/billing/billing-spending-limit) rovna vaší bezplatný kredit zaručit, že dojde k žádné další poplatky. Kromě toho Azure poskytuje bezplatné služby App Service vrstvy plán, který je ideální pro jednoduchá testovací aplikace, jak je popsáno v následující části.
 
 ### <a name="using-a-subscription"></a>Použití předplatného
 
@@ -85,7 +88,7 @@ V případě potřeby můžete taky nainstalovat `bottle` balíček pomocí proc
 
 Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soubory v projektu na server. Je proto nutné, vytvoření potřebné soubory pro konfiguraci prostředí serveru.
 
-1. V sadě Visual Studio **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a vyberte **Přidat > novou položku...* . V dialogovém okně se zobrazí výběrem šablony "Azure web.config (rychlé CGI)" a vyberte možnost OK. Tím se vytvoří `web.config` souboru do kořenového adresáře projektu. 
+1. V sadě Visual Studio **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a vyberte **Přidat > novou položku...* . V dialogovém okně se zobrazí výběrem šablony "Azure web.config (rychlé CGI)" a vyberte možnost OK. Tím se vytvoří `web.config` souboru do kořenového adresáře projektu.
 
 1. Změnit `PythonHandler` položku v `web.config` tak, aby cesta odpovídá Python instalace na serveru. Příklad pro jazyk Python 3.6.1 x64 položky by měl vypadat takto:
 
@@ -161,7 +164,7 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
 
     c. Pomocí konzole Kudu můžete upgradovat všechny balíčky uvedené ve vaší aplikaci `requirements.txt` souboru: přejděte do stejné složky Python, který se používá v `web.config`, jako například `/home/python361x64`, a spusťte následující příkaz, jak je popsáno v [Kudu konzole](managing-python-on-azure-app-service.md#azure-app-service-kudu-console)části:
 
-    ```
+    ```command
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
@@ -185,9 +188,9 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Publikování do služby App Service – Visual Studio 2015
 
 > [!Note] 
-> Krátké video tohoto procesu můžete najít na [kurzu Python Visual Studio: vytváření webu](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (webu youtube.com, 3m10s). 
+> Krátké video tohoto procesu můžete najít na [kurzu Python Visual Studio: vytváření webu](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (webu youtube.com, 3m10s).
 
-1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt vyberte **publikovat**. 
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt vyberte **publikovat**.
 
 1. V **publikovat** dialogovém okně, vyberte **Microsoft Azure App Service**:
 
@@ -223,4 +226,4 @@ Když publikujete konfiguraci ladění z Visual Studia 2015, proces automaticky 
 
 S Visual Studio 2017 místo toho přidejte tyto součásti přímo do projektu. Klikněte pravým tlačítkem na projekt v **Průzkumníku řešení**, vyberte **Přidat > novou položku...** a vyberte šablonu "Azure vzdálené ladění web.config". Ladění `web.debug.config` souboru a `ptvsd` nástroj složky objeví ve vašem projektu.
 
-Jakmile tyto soubory jsou nasazeny na server (automaticky s Visual Studiem 2015; v příštím publikování s Visual Studio 2017), můžete postupovat podle pokynů pro [Azure vzdálené ladění](https://docs.microsoft.com/visualstudio/python/debugging-azure-remote).
+Jakmile tyto soubory jsou nasazeny na server (automaticky s Visual Studiem 2015; v příštím publikování s Visual Studio 2017), můžete postupovat podle pokynů pro [Azure vzdálené ladění](debugging-azure-remote.md).

@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: 50da0b90dd1c8924d8772eabd83265ff3827c2c2
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: a9350a7aa2ed3b4befaa2305042dbc4fc74fcf31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Procházení a aktualizace modelů vrstev v programovém kódu
 Toto téma popisuje elementů a vztahů v modelech vrstvy, které můžete procházení a aktualizace pomocí kódu programu. Další informace o diagramy závislost z hlediska uživatele najdete v tématu [diagramy závislost: referenční dokumentace](../modeling/layer-diagrams-reference.md) a [diagramy závislost: pokyny](../modeling/layer-diagrams-guidelines.md).  
@@ -129,4 +130,4 @@ public void ... (...)
  [Přidání ověřování vlastní architektury do diagramů závislostí](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Přidání vlastních vlastností do diagramů závislostí](../modeling/add-custom-properties-to-layer-diagrams.md)   
  [Diagramy závislost: referenční dokumentace](../modeling/layer-diagrams-reference.md)   
- [Diagramy závislost: pokyny](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)   

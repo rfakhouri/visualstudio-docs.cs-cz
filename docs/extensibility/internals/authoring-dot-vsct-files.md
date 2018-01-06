@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bad1a8cbd8bc0369d405bf0a0c26c4285e143e46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="authoring-vsct-files"></a>Vytváření obsahu. Vsct soubory
 Tento dokument ukazuje, jak vytvořit soubor .vsct k přidání položky nabídky, panely nástrojů a další prvky uživatelského rozhraní (UI) v sadě Visual Studio integrované vývojové prostředí (IDE). Tyto kroky použijte, když přidáte prvky uživatelského rozhraní pro Visual Studio balíček (VSPackage), který ještě nemá soubor .vsct.  
@@ -238,4 +239,4 @@ Tento dokument ukazuje, jak vytvořit soubor .vsct k přidání položky nabídk
 ## <a name="see-also"></a>Viz také  
  [Rozšíření nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)   
  [Visual Studio příkaz tabulky (. Soubory Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [Referenční dokumentace schématu VSCT XML](../../extensibility/vsct-xml-schema-reference.md)
+ [XML schéma VSCT – referenční informace](../../extensibility/vsct-xml-schema-reference.md)

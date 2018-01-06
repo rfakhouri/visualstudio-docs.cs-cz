@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73cdce5415dd50059dcd443f67424203430aba87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dfdf86124bdaf9160121b7d93263dc1d60425515
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hitting-a-breakpoint"></a>Stiskne zarážky
 Následující část popisuje proces při ladění modulu (DE) dotkne zarážku při spuštění nebo krokování:  
@@ -31,4 +32,4 @@ Následující část popisuje proces při ladění modulu (DE) dotkne zarážku
 2.  Volá správce ladicí relace (SDM) [IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) získat zarážek, který byl vybrán.  
   
 ## <a name="see-also"></a>Viz také  
- [Události volání ladicí program](../../extensibility/debugger/calling-debugger-events.md)
+ [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)

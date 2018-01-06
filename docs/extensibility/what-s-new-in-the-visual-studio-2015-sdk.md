@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8b1fa4647cd5b145d19e2264381b186394be814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1008e1c81c6d99bc9fa0615263cf023a56101435
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Jaký & č. 39; s ve Visual Studio 2015 SDK
 Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visual Studio 2015, Visual Studio 2015, aktualizovat a Visual Studio 2017.  
@@ -39,13 +40,13 @@ Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visu
 ### <a name="visual-c-and-visual-basic"></a>Visual C# a Visual Basic  
  Pro C# a Visual Basic je plný rozsah šablony položek projektu, které vám umožní vytvořit VSPackages, příkazy nabídky, nástroj windows, editor třídění, editor vylepšení a rozšíření okraj editoru. Můžete přidat některé nebo všechny tyto standardní projekt VSIX. Další informace naleznete v tématu:  
   
--   [Vytvoření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)  
+-   [Vytváření rozšíření pomocí příkazu nabídky](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
--   [Vytváření rozšíření s okno nástroje](../extensibility/creating-an-extension-with-a-tool-window.md)  
+-   [Vytváření rozšíření pomocí panelu nástrojů](../extensibility/creating-an-extension-with-a-tool-window.md)  
   
 -   [Vytváření rozšíření pomocí šablony položky editoru](../extensibility/creating-an-extension-with-an-editor-item-template.md)  
   
--   [Vytváření rozšíření s VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
+-   [Vytváření rozšíření pomocí VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)  
   
      Průvodce VSPackage už vytvoří rozšíření v C# nebo Visual Basic.  
   
@@ -53,7 +54,7 @@ Visual Studio SDK obsahuje následující nové a aktualizované funkce pro Visu
  Pro jazyk C++ průvodce VSPackage podporovat příkazy nabídky okna nástrojů a vlastní editory. Podívejte se v **nový projekt** dialogové okno ve **Visual C++ / rozšiřitelnost**.  
   
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Sestavení referenční VS SDK prostřednictvím balíčku NuGet  
- Pro vyšší přenositelnost a sdílení rozšiřitelnost projektů můžete použít referenční sestavení VS SDK verze NuGet.  Jsou dostupné v [nuget.org](http://www.nuget.org) publikováno [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) a lze je snadno přidat na projekt nebo řešení pomocí sady Visual Studio **odkazuje / spravovat NuGet Balíčky** dialogové okno. Můžete přidat jednotlivé odkazy na konkrétní rozšíření sestavení nebo přidat VS SDK odkazuje na sestavení najednou pomocí sady SDK VS [Meta balíček](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Další informace o systému NuGet najdete v tématu [NuGet dokumentace](http://docs.microsoft.com/NuGet) a [uživatelského rozhraní Správce balíčků](http://docs.microsoft.com/NuGet/Tools/Package-Manager-UI) témata.  
+ Pro vyšší přenositelnost a sdílení rozšiřitelnost projektů můžete použít referenční sestavení VS SDK verze NuGet.  Jsou dostupné v [nuget.org](http://www.nuget.org) publikováno [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) a lze je snadno přidat na projekt nebo řešení pomocí sady Visual Studio **odkazuje / spravovat NuGet Balíčky** dialogové okno. Můžete přidat jednotlivé odkazy na konkrétní rozšíření sestavení nebo přidat VS SDK odkazuje na sestavení najednou pomocí sady SDK VS [Meta balíček](http://www.nuget.org/packages/VSSDK_Reference_Assemblies). Další informace o systému NuGet najdete v tématu [NuGet dokumentace](/NuGet) a [uživatelského rozhraní Správce balíčků](/NuGet/Tools/Package-Manager-UI) témata.  
   
  Použijete-li verze NuGet referenční sestavení VS SDK, jiný uživatel nebude muset nainstalovat VS SDK k otevření a sestavení projektu.  NuGet referenční sestavení a nástroje pro sestavení VS SDK se automaticky nainstalují na svém počítači pro tento projekt.  
   

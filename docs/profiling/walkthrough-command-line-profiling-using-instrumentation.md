@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54c91b8238b21f214edda0941c0c91fd4bdda8e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29a68dc22a348c787d192bebecea91caed7aa0cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Návod: Profilace z příkazového řádku s použitím instrumentace
 Tento návod provede profilace [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] samostatné aplikaci a shromažďování podrobných časování volání počet data pomocí metody instrumentace z nástroje pro profilaci. V tomto návodu se provádění následujících úloh:  

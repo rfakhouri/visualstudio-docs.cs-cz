@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ccc530a741aaefd7e1faf1bd5f8974e27d9c7fb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro sadu Visual Studio
 Při navrhování uživatelské rozhraní, které používá společné prvky prostředí sady Visual Studio, nebo chcete vaše rozhraní element konzistentní s podobné funkce, použijte existující token názvy v definičních souborech balíčku a vyberte a přiřaďte barvy. To zajišťuje, že vaše uživatelské prostředí zůstává konzistentní s celkovou prostředí Visual Studio a jeho aktualizace automaticky při přidávání nebo aktualizaci motivů.  

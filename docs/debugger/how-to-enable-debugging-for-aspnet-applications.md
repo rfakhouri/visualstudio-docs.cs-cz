@@ -21,11 +21,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9048f965ad2f04b4eed8fe3a753f6fddc280dbfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: e3c6dffbd99dbdd91753ce8d06ab139006692089
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-aspnet-applications-in-visual-studio"></a>Ladění aplikací ASP.NET v sadě Visual Studio
 
@@ -124,7 +125,7 @@ Pro ladění na místní webový server, nastavte vlastnosti projektu. Pro ladě
 
 2. Pokud si zvolíte externího serveru (vlastní), zadejte správnou adresu URL v **adresa URL projektu** (nebo **základní adresa URL**) pole.
 
-    Pokud je externí server místní služba IIS, IIS musí být správně nainstalována a nakonfigurována. Například musí být nakonfigurován správnou verzi technologie ASP.NET ve službě IIS. Další informace najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Pokud budete chtít otestovat nasazení, jakož i ladění, přečtěte si téma [nasazení otestovat](https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
+    Pokud je externí server místní služba IIS, IIS musí být správně nainstalována a nakonfigurována. Například musí být nakonfigurován správnou verzi technologie ASP.NET ve službě IIS. Další informace najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45). Pokud budete chtít otestovat nasazení, jakož i ladění, přečtěte si téma [nasazení otestovat](/aspnet/web-forms/overview/deployment/visual-studio-web-deployment/deploying-to-iis).
 
     Pokud je externí server [vzdáleného](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md), místo toho připojit k procesu a nepoužívají se tato nastavení projektu pro ladění.
 
@@ -134,7 +135,7 @@ Pro službu IIS Express, nemusíte konfigurovat webový server (tuto část pře
 
 Pokud používáte místní webový server IIS, postupujte podle těchto kroků.
 
-1. Ujistěte se, zda je služba IIS správně nainstalován. Další informace najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+1. Ujistěte se, zda je služba IIS správně nainstalován. Další informace najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
     * Ujistěte se, že instalujete správnou verzi ASP.NET na serveru. Instalace webové platformy (WebPI) použít k instalaci technologie ASP.NET 4.5 (z uzlu serveru v systému Windows Server 2012 R2, zvolte **získat nové komponenty webové platformy** a poté vyhledejte ASP.NET). K instalaci ASP.NET Core, najdete v části [publikování do služby IIS](https://docs.asp.net/en/latest/publishing/iis.html#iis-configuration).
 
@@ -230,5 +231,5 @@ Například můžete zadat `debug="true"` v www.microsoft.com/aaa/Web.config a v
 [Ladění nasazených webových aplikací](debugging-deployed-web-applications.md)   
 [Návod: Ladění webového formuláře](walkthrough-debugging-a-web-form.md)   
 [Postupy: ladění výjimek ASP.NET](how-to-debug-aspnet-exceptions.md)   
-[Ladění webových aplikací: chyby a řešení potíží](debugging-web-applications-errors-and-troubleshooting.md)
+[Ladění webových aplikací: Chyby a řešení potíží](debugging-web-applications-errors-and-troubleshooting.md)
   

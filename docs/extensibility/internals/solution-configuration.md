@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5b9009a4adab2420a796b3011175ef37fac9bfcb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 129f86fae5de5501d72b0cdbe5e261717e60e780
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solution-configuration"></a>Konfigurace řešení
 Konfigurace řešení úložiště vlastnosti na úrovni řešení. Jejich přímé chování **spustit** klíč (F5) a **sestavení** příkazy. Ve výchozím nastavení tyto příkazy sestavit a spustit konfiguraci ladění. Oba příkazy spustí v kontextu konfigurace řešení. To znamená, že uživatel očekávat F5 start a sestavení bez ohledu aktivním řešení se konfigurují prostřednictvím nastavení. Prostředí je určena k optimalizaci pro řešení, nikoli projekty, pokud jde o vytváření a spouštění.  
@@ -29,7 +30,7 @@ Konfigurace řešení úložiště vlastnosti na úrovni řešení. Jejich pří
   
  Zde je, jak můžete implementovat konfigurace řešení nepodporuje typ vašeho projektu:  
   
--   Project  
+-   Projekt  
   
      Zobrazuje názvy projektů v aktuálním řešení nalezen.  
   

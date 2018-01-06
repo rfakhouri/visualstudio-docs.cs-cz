@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1850fd8eab4151dfb24bdc30dafe2e110406c37a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1f9cd36f6ea56b8defb3197abc66055616aa5d21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Vytvoří výčet různé datové prvky rámce obsažené v datovém zdroji.  
@@ -34,15 +35,15 @@ IDiaEnumFrameData : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiaenumframedata::get__newenum –](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Načte `IEnumVARIANT Interface` verzi této enumerátor.|  
-|[Idiaenumframedata::get_count –](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Získá počet elementů datové rámce.|  
-|[Idiaenumframedata::Item –](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Načte datový prvek rámce prostřednictvím indexu.|  
-|[Idiaenumframedata::Next –](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Načte zadaný počet elementů dat rámce v pořadí výčtu.|  
-|[Idiaenumframedata::Skip –](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Přeskočí zadaný počet rámce datových elementů v posloupnosti výčtu.|  
-|[Idiaenumframedata::Reset –](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[Idiaenumframedata::clone –](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
-|[Idiaenumframedata::framebyrva –](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Vrátí rámeček s relativní virtuální adresy (RVA).|  
-|[Idiaenumframedata::framebyva –](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Vrátí rámeček podle virtuální adresy (VA).|  
+|[IDiaEnumFrameData::get__NewEnum](../../debugger/debug-interface-access/idiaenumframedata-get-newenum.md)|Načte `IEnumVARIANT Interface` verzi této enumerátor.|  
+|[IDiaEnumFrameData::get_Count](../../debugger/debug-interface-access/idiaenumframedata-get-count.md)|Získá počet elementů datové rámce.|  
+|[IDiaEnumFrameData::Item](../../debugger/debug-interface-access/idiaenumframedata-item.md)|Načte datový prvek rámce prostřednictvím indexu.|  
+|[IDiaEnumFrameData::Next](../../debugger/debug-interface-access/idiaenumframedata-next.md)|Načte zadaný počet elementů dat rámce v pořadí výčtu.|  
+|[IDiaEnumFrameData::Skip](../../debugger/debug-interface-access/idiaenumframedata-skip.md)|Přeskočí zadaný počet rámce datových elementů v posloupnosti výčtu.|  
+|[IDiaEnumFrameData::Reset](../../debugger/debug-interface-access/idiaenumframedata-reset.md)|Návrat na začátek v sekvenci výčtu.|  
+|[IDiaEnumFrameData::Clone](../../debugger/debug-interface-access/idiaenumframedata-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
+|[IDiaEnumFrameData::frameByRVA](../../debugger/debug-interface-access/idiaenumframedata-framebyrva.md)|Vrátí rámeček s relativní virtuální adresy (RVA).|  
+|[IDiaEnumFrameData::frameByVA](../../debugger/debug-interface-access/idiaenumframedata-framebyva.md)|Vrátí rámeček podle virtuální adresy (VA).|  
   
 ## <a name="remarks"></a>Poznámky  
   
@@ -111,4 +112,4 @@ void ShowFrameData(IDiaSession *pSession)
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::getenumtables –](../../debugger/debug-interface-access/idiasession-getenumtables.md)   
- [Idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md)
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

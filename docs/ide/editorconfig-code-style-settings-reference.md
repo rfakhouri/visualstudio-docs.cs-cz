@@ -18,15 +18,16 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 72ac4518025648c5f2f84b021cba25979906b792
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
-ms.translationtype: HT
+ms.workload: kaseyu
+ms.openlocfilehash: 1eaef82dd904c867510770a1850d5893434a78e1
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kódování nastavení konvence pro EditorConfig rozhraní .NET
 
-V Visual Studio 2017, můžete definovat a udržovat styl konzistentní kód ve vaší základu kódu s použitím [EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) souboru. EditorConfig obsahuje několik jader formátování vlastností, jako například `indent_style` a `indent_size`. V sadě Visual Studio .NET kódování konvence nastavení lze také nakonfigurovat pomocí souboru EditorConfig. Soubory EditorConfig umožňují vám umožní povolit nebo zakázat jednotlivé .NET konvence kódování a nakonfigurovat na úroveň, na který chcete konvence vynucuje prostřednictvím úroveň závažnosti. Další informace o tom, jak zajistit konzistenci v vaší codebase pomocí EditorConfig [vytvoření přenosné vlastního editoru možnosti](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options). Můžete také zobrazit [platformy .NET kompilátoru .editorconfig soubor](https://github.com/dotnet/roslyn/blob/master/.editorconfig) jako příklad.
+V Visual Studio 2017, můžete definovat a udržovat styl konzistentní kód ve vaší základu kódu s použitím [EditorConfig](../ide/create-portable-custom-editor-options.md) souboru. EditorConfig obsahuje několik jader formátování vlastností, jako například `indent_style` a `indent_size`. V sadě Visual Studio .NET kódování konvence nastavení lze také nakonfigurovat pomocí souboru EditorConfig. Soubory EditorConfig umožňují vám umožní povolit nebo zakázat jednotlivé .NET konvence kódování a nakonfigurovat na úroveň, na který chcete konvence vynucuje prostřednictvím úroveň závažnosti. Další informace o tom, jak zajistit konzistenci v vaší codebase pomocí EditorConfig [vytvoření přenosné vlastního editoru možnosti](../ide/create-portable-custom-editor-options.md). Můžete také zobrazit [platformy .NET kompilátoru .editorconfig soubor](https://github.com/dotnet/roslyn/blob/master/.editorconfig) jako příklad.
 
 Existují tři podporované .NET kódování konvence kategorie:
 
@@ -971,7 +972,7 @@ Příklad souboru .editorconfig:
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_throw_expression = true:suggestions:
+csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 

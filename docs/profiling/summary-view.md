@@ -18,11 +18,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f07b924c5af117f39e19dc5add6046a14be22a6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 552a2c66bd71d83ff1c8cd3453154c065d8bdb3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view"></a>Souhrnné zobrazení
 Souhrnné zobrazení zobrazí informace o výkonu nejnákladnější funkce nebo objekty v profilaci spustit. Toto zobrazení nabízí časová osa grafu a minimálně dva seznamy nejnákladnější funkce nebo objekty podle metriky výkonu profilování metody. Data v tomto zobrazení, závisí na profilování metoda, která byla použita (vzorkování, instrumentace nebo souběžnosti) a jestli byl shromážděn přidělení paměti .NET.  

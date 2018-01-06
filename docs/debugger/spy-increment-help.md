@@ -13,20 +13,21 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e0d7f7ccb9b752af4789b757fb1a3ed2ae5d29e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10e50e8afde8bd4d5669ee899a061b708377f28f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="spy-help"></a>Nápověda nástroje Spy++
 V dokumentaci k nástroji Spy ++ zahrnuje dvě skupiny obecná témata na použití nástroje Spy ++ a na zobrazení nástroje Spy ++. Tyto jsou následovaný nástroje Spy ++ odkaz, který poskytuje další podrobnosti v každé pole dialogové okno a příkaz nabídky k dispozici.  
   
 ## <a name="using-spy"></a>Použití nástroje Spy++  
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)  
+ [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
  Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.  
   
- [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)  
+ [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
  Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
   
 ## <a name="spy-reference"></a>Referenční dokumentace nástroje Spy++  

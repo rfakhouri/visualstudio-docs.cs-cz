@@ -16,11 +16,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f7481531c910ddf668ce911ae37215545b77903
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d52a9dbed6cec64426247a0b92bff2b8ec98ec97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Zápis běžné vyhodnocení výrazu Runtime jazyka
 > [!IMPORTANT]
@@ -31,29 +32,29 @@ ms.lasthandoff: 10/31/2017
  Kód v kontextu programovací jazyk musí interpretovat některé aspekty ladění balíčku sady Visual Studio. Například při provádění zastaví na zarážce, všechny výrazy, které uživatel zadal do **sledovat** okna musí být vyhodnocena a zobrazí. Také uživatel může změnit hodnotu místní proměnné zadáním výrazu do **sledovat** okno nebo do **Immediate** okno.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Modul Common Language Runtime a vyhodnocení výrazu](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
+ [Modul CLR a vyhodnocování výrazů](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md)  
  Vysvětluje, že pokud proprietární programovací jazyk jsou integraci do prostředí Visual Studio IDE, zápis EE schopná vyhodnocení výrazů v kontextu proprietární jazyka umožňuje zkompilovat do převodního jazyka Microsoft (MSIL) bez nutnosti psaní modul ladění.  
   
- [Architektura vyhodnocování výrazu](../../extensibility/debugger/expression-evaluator-architecture.md)  
+ [Architektura vyhodnocovače výrazů](../../extensibility/debugger/expression-evaluator-architecture.md)  
  Popisuje, jak požadovaným rozhraním EE implementace a volání common language runtime symbol zprostředkovatele (SP) a rozhraní vazače.  
   
- [Registrace vyhodnocení výrazu](../../extensibility/debugger/registering-an-expression-evaluator.md)  
+ [Registrace vyhodnocovače výrazů](../../extensibility/debugger/registering-an-expression-evaluator.md)  
  Zaznamenává, že EE musí se registrovat jako objekt pro vytváření tříd se modul common language runtime a běhová prostředí sady Visual Studio.  
   
- [Implementace vyhodnocení výrazu](../../extensibility/debugger/implementing-an-expression-evaluator.md)  
+ [Implementace vyhodnocovače výrazů](../../extensibility/debugger/implementing-an-expression-evaluator.md)  
  Popisuje, jak proces vyhodnocení výrazu zahrnuje modul ladění (DE), zprostředkovatele symbol (SP), objekt vazače a vyhodnocovací filtr výrazů (EE).  
   
- [Zobrazení místní hodnoty](../../extensibility/debugger/displaying-locals.md)  
+ [Zobrazení místních hodnot](../../extensibility/debugger/displaying-locals.md)  
  Popisuje, jak, při spuštění, pozastavení, balíček ladění volá DE zobrazíte seznam místní proměnné a argumenty.  
   
- [Vyhodnocení výrazu okno kukátka](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
+ [Vyhodnocení výrazu okna kukátka](../../extensibility/debugger/evaluating-a-watch-window-expression.md)  
  Dokumenty, jakým způsobem volá balíček Visual Studio ladění DE k určení aktuální hodnota každý výraz ve svém seznamu sledovat.  
   
- [Změna hodnoty místní](../../extensibility/debugger/changing-the-value-of-a-local.md)  
+ [Změna hodnoty místní hodnoty](../../extensibility/debugger/changing-the-value-of-a-local.md)  
  Vysvětluje, že při změně hodnotu místní, každý řádek místní hodnoty – okno je související objekt, který poskytuje název, typ a aktuální hodnota místní.  
   
- [Implementace typ Vizualizérech a vlastní prohlížečů](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
+ [Implementace vizualizérů typů a vlastních prohlížečů](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md)  
  Vysvětluje, které rozhraní musí být implementované která komponenta pro podporu typu vizualizérech a vlastní prohlížeče.  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšiřitelnost ladicího programu sady Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Rozšiřitelnost programu Visual Studio Debugger](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9a8617c4d6c5ac4a224a97f6a6311a5526151599
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bce4fe32dc53904dec901736d7d02e3f7ac21b69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Rozšíření dalšími částmi sady Visual Studio
 Existuje více částí rozhraní Visual Studio, které můžete rozšířit. Zde jsme vám ukážou, pár.  
@@ -28,9 +29,9 @@ Existuje více částí rozhraní Visual Studio, které můžete rozšířit. Zd
 ## <a name="extending-the-toolbox"></a>Rozšíření sady nástrojů  
  Zjistěte, jak přidat nové ovládací prvky a další položky do sady nástrojů a způsob použití sady nástrojů funkce:  
   
--   [Vytvoření ovládacího prvku sady nástrojů WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
+-   [Vytvoření ovládacího prvku panelu nástrojů WPF](../extensibility/creating-a-wpf-toolbox-control.md)  
   
--   [Vytvoření ovládacího prvku Windows Forms sada nástrojů](../extensibility/creating-a-windows-forms-toolbox-control.md)  
+-   [Vytvoření ovládacího prvku panelu nástrojů modelu Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)  
   
 ## <a name="extending-the-status-bar"></a>Rozšíření stavového řádku  
  Zjistěte, jak číst a zapisovat do stavového řádku a indikátoru průběhu a jak poskytnout animace a dalších uživatelského rozhraní: [rozšíření stavový řádek](../extensibility/extending-the-status-bar.md).  

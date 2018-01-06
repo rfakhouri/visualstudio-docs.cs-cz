@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 77230702bf8dc582e176e4dd0f17eab3385966c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d97695cae08352ea213ba02008ab99bef7f61c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Postupy: Potlačení upozornění kompilátoru
 Zadáním jednoho nebo více druhů upozornění kompilátoru, že nechcete, aby mohla obsahovat můžete declutter protokolu sestavení. Například můžete použít tento postup, chcete-li zkontrolovat některé, ale ne všechny informace, které se automaticky vygeneruje při nastavení podrobností protokolu sestavení na normální, podrobnosti nebo diagnostiky. Další informace o podrobností najdete v tématu [postupy: zobrazení, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).  
@@ -109,4 +110,4 @@ Zadáním jednoho nebo více druhů upozornění kompilátoru, že nechcete, aby
 ## <a name="see-also"></a>Viz také  
  [Návod: Vytvoření aplikace](../ide/walkthrough-building-an-application.md)   
  [Postupy: zobrazení, uložit a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)   
- [Kompilaci a sestavování](../ide/compiling-and-building-in-visual-studio.md)
+ [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

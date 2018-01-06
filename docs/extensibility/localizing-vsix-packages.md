@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a8bb9332b30e5dbc410bdacea3800713b25b10f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6b95047348f549073a05060b81874f65d7781918
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-vsix-packages"></a>Lokalizace balíčků VSIX
 
@@ -108,4 +109,4 @@ Následující příklad ukazuje odpovídající části souboru Extension.vsixm
 |-----------|-----------------|
 |[VSIX LanguagePack schéma 2.0 – referenční informace](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Jazyková sada VSIX popisuje informace o lokalizaci VSIX souboru nasazení.|
 |[Anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Popisuje strukturu a obsah balíčku vsix.|
-|[Lokalizace příkazy nabídky](../extensibility/localizing-menu-commands.md)|Ukazuje, jak k lokalizaci další prostředky textu v rozšíření.|
+|[Lokalizace příkazů nabídky](../extensibility/localizing-menu-commands.md)|Ukazuje, jak k lokalizaci další prostředky textu v rozšíření.|

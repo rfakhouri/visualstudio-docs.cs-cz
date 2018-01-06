@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c92f7975e3fe45e4f87e67f2c3c54a26a7d8b87a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf96f1cdbdf8e3f995d8a1020a655b73d369cf7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-shaders"></a>Práce se shadery
 Můžete použít Návrháře shaderu na základě grafu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] návrhu vlastní shaderu účinky. Můžete použít tyto shadery založené na rozhraní DirectX hry nebo aplikace.  
@@ -37,6 +38,6 @@ Můžete použít Návrháře shaderu na základě grafu v [!INCLUDE[vsprvs](../
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Návrhář shaderu](../designers/shader-designer.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shaderu Designer pro práci s shadery.|  
-|[Uzly návrháře shaderu](../designers/shader-designer-nodes.md)|Popisuje druhy shaderu Návrhář uzlů, které můžete použít k dosažení grafiky účinky.|  
-|[Příklady návrháře shaderu](../designers/shader-designer-examples.md)|Obsahuje odkazy na témata, která ukazují, jak používat návrháře shaderu k dosažení běžné grafiky účinky.|
+|[Návrhář shaderů](../designers/shader-designer.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shaderu Designer pro práci s shadery.|  
+|[Uzly návrháře shaderů](../designers/shader-designer-nodes.md)|Popisuje druhy shaderu Návrhář uzlů, které můžete použít k dosažení grafiky účinky.|  
+|[Příklady návrháře shaderů](../designers/shader-designer-examples.md)|Obsahuje odkazy na témata, která ukazují, jak používat návrháře shaderu k dosažení běžné grafiky účinky.|

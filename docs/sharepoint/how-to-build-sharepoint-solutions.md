@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e198cce23f29cc00079c2bd60077ade3663bc8b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cd54bdfb29bdc0966a0ad56817720814f38a47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Postupy: Sestavení řešení služby SharePoint
   Sestavování řešení služby SharePoint je nejsou jiné než vytváření dalších aplikací v sadě Visual Studio. Další informace o vytváření aplikací najdete v tématu [kompilaci a sestavování v sadě Visual Studio](/visualstudio/ide/compiling-and-building-in-visual-studio). Informace některé aspekty, které jsou specifické pro řešení služby SharePoint, naleznete v [postupy: nasazení a publikování řešení služby SharePoint na místní web služby SharePoint](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).  

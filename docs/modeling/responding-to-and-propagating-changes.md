@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 7ea11c018f210b804f4ea6542eb7a7817ae1507c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: cebfaa79e2524dcd6ba862ec55467acc9e5cd316
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="responding-to-and-propagating-changes"></a>Reagování na změny a šíření změn
 Pokud element vytvořit, odstranit nebo aktualizovat, můžete napsat kód, který rozšíří změny do dalších částí modelu, nebo externím prostředkům, například soubory, databáze nebo ostatní součásti.  
@@ -26,15 +27,15 @@ Pokud element vytvořit, odstranit nebo aktualizovat, můžete napsat kód, kter
   
 |Technika|Scénáře|Další informace|  
 |---------------|---------------|--------------------------|  
-|Definujte počítané vlastnosti domény.|Vlastnost domény, jehož hodnota je vypočítána od dalších vlastností v modelu. Například za cenu, která je součet cen souvisejících elementů.|[Úložiště počítaný a vlastní vlastnosti](../modeling/calculated-and-custom-storage-properties.md)|  
-|Definujte vlastnost úložiště vlastní domény.|Vlastnost domény uložené v dalších částí modelu nebo externě. Například může analyzovat řetězec výraz do stromu v modelu.|[Úložiště počítaný a vlastní vlastnosti](../modeling/calculated-and-custom-storage-properties.md)|  
-|Přepsání změnit obslužné rutiny, například OnValueChanging a OnDeleting|Synchronizujte různé prvky a udržovat synchronizované s modelem externí hodnoty.<br /><br /> Omezení hodnoty, které mají definovanou oblastí.<br /><br /> Volá se bezprostředně před a za hodnotu vlastnosti a jiné změny. Chcete-li ukončit změnu, lze došlo k výjimce.|[Domény vlastnost hodnota změnu obslužné rutiny](../modeling/domain-property-value-change-handlers.md)|  
-|Pravidla|Můžete definovat pravidla, které jsou zařazeny do fronty pro provedení těsně před koncem transakce, ve které došlo ke změně. Jejich nejsou u zpět nebo znovu provést. Je použijte k byly shodné s jinou jednou ze součástí sady Windows store.|[Pravidla rozšířit změny v modelu](../modeling/rules-propagate-changes-within-the-model.md)|  
-|Uložení událostí|Modelování úložiště poskytuje oznámení o události, jako je například přidávání nebo odstraňování prvek nebo odkaz nebo změně hodnoty vlastnosti. Událost se taky spouští na zpět a znovu. Úložiště události používejte k aktualizaci hodnoty, které nejsou v úložišti.|[Obslužné rutiny událostí rozšířit změny mimo modelu](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
-|Události rozhraní .NET|Obslužné rutiny, které reakce na kliknutí myší a dalších gesta mají obrazce. Je třeba zaregistrovat pro tyto události pro každý objekt. Registrace se obvykle provádí v přepsání InitializeInstanceResources a je třeba provést pro každý prvek.<br /><br /> Tyto události obvykle dochází mimo transakci.|[Postupy: zachycení a klikněte na tvar nebo Dekoratéra](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
-|Rozsah pravidla|Rozsah pravidlo se používá konkrétně Chcete-li omezit rozsah obrazce.|[BoundsRules omezit tvar umístění a velikost](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
-|Výběr pravidel|Výběr pravidel konkrétně omezit, co si uživatel může vybrat.|[Postupy: přístup k a omezit aktuální výběr](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
-|OnAssocatedPropertyChanged|Uveďte stavy elementů modelu pomocí funkce tvarů a konektory například stínové, šipek, barvu a šířku čáry a styl.|[Aktualizace tvarů a konektory tak, aby odrážela modelu](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
+|Definujte počítané vlastnosti domény.|Vlastnost domény, jehož hodnota je vypočítána od dalších vlastností v modelu. Například za cenu, která je součet cen souvisejících elementů.|[Vypočtené a vlastní vlastnosti úložiště](../modeling/calculated-and-custom-storage-properties.md)|  
+|Definujte vlastnost úložiště vlastní domény.|Vlastnost domény uložené v dalších částí modelu nebo externě. Například může analyzovat řetězec výraz do stromu v modelu.|[Vypočtené a vlastní vlastnosti úložiště](../modeling/calculated-and-custom-storage-properties.md)|  
+|Přepsání změnit obslužné rutiny, například OnValueChanging a OnDeleting|Synchronizujte různé prvky a udržovat synchronizované s modelem externí hodnoty.<br /><br /> Omezení hodnoty, které mají definovanou oblastí.<br /><br /> Volá se bezprostředně před a za hodnotu vlastnosti a jiné změny. Chcete-li ukončit změnu, lze došlo k výjimce.|[Obslužné rutiny změny hodnoty vlastnosti domény](../modeling/domain-property-value-change-handlers.md)|  
+|Pravidla|Můžete definovat pravidla, které jsou zařazeny do fronty pro provedení těsně před koncem transakce, ve které došlo ke změně. Jejich nejsou u zpět nebo znovu provést. Je použijte k byly shodné s jinou jednou ze součástí sady Windows store.|[Pravidla šířící změny v modelu](../modeling/rules-propagate-changes-within-the-model.md)|  
+|Uložení událostí|Modelování úložiště poskytuje oznámení o události, jako je například přidávání nebo odstraňování prvek nebo odkaz nebo změně hodnoty vlastnosti. Událost se taky spouští na zpět a znovu. Úložiště události používejte k aktualizaci hodnoty, které nejsou v úložišti.|[Obslužné rutiny události šířící změny mimo model](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
+|Události rozhraní .NET|Obslužné rutiny, které reakce na kliknutí myší a dalších gesta mají obrazce. Je třeba zaregistrovat pro tyto události pro každý objekt. Registrace se obvykle provádí v přepsání InitializeInstanceResources a je třeba provést pro každý prvek.<br /><br /> Tyto události obvykle dochází mimo transakci.|[Postupy: Zachycení kliknutí na obrazec nebo dekorátor](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
+|Rozsah pravidla|Rozsah pravidlo se používá konkrétně Chcete-li omezit rozsah obrazce.|[Umístění a velikost obrazce omezení BoundsRules](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
+|Výběr pravidel|Výběr pravidel konkrétně omezit, co si uživatel může vybrat.|[Postupy: Přístup k aktuálnímu výběru a jeho omezení](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
+|OnAssocatedPropertyChanged|Uveďte stavy elementů modelu pomocí funkce tvarů a konektory například stínové, šipek, barvu a šířku čáry a styl.|[Aktualizace obrazců a konektorů k vyjádření modelu](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
   
 ## <a name="comparing-rules-and-store-events"></a>**Porovnání pravidla a události v úložišti**  
  Změna žadateli, pravidla a události se spouštějí při změnách v modelu.  
@@ -53,4 +54,4 @@ Pokud element vytvořit, odstranit nebo aktualizovat, můžete napsat kód, kter
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: zachycení a klikněte na tvar nebo Dekoratéra](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
- [Psaní kódu sestavit si jazyka domény](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)

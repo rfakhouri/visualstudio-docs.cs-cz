@@ -11,11 +11,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: fa2ffd383d2180b672347043dd02459473e3a608
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 72c8918d0f3396273bb0eee81cddd8f09c779592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel
 Testování framework pro programové testy uživatelského rozhraní a zaznamenávání akcí nepodporuje všechny možné uživatelské rozhraní. Nepodporuje specifické uživatelské rozhraní, který chcete otestovat. Například nelze vytvořit okamžitě programového testu UI nebo záznamu pro akce [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] tabulky. Můžete však vytvořit vlastní rozšíření programové framework testu uživatelského rozhraní, která bude podporovat vaše specifické uživatelské rozhraní a využívají k rozšiřitelnosti rozhraní programových testů uživatelského rozhraní. V následujícím tématu je uveden příklad toho, jak rozšířit rozhraní pro podporu vytváření programové testy uživatelského rozhraní a zaznamenávání akcí pro [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Další informace o platformy, které jsou podporovány, naleznete v části [podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
@@ -78,4 +79,4 @@ Přehled architektury
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
  [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
  [Osvědčené postupy pro programové testy uživatelského rozhraní](../test/best-practices-for-coded-ui-tests.md)   
- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

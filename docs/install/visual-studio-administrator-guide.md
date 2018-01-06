@@ -16,11 +16,12 @@ ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 62e7a5cca98de8f4b584c7a3b3d9b72fdefa2519
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: c143456d71057071aa953605e2ee60c6aa9c77de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 Příručka správce
 
@@ -62,19 +63,19 @@ Tady je několik další možnosti podpory:
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
 * [Nainstalovat Visual Studio 2017](install-visual-studio.md)
 * [Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
-  * [Příklady parametr příkazového řádku](command-line-parameter-examples.md)
+  * [Příklady parametrů příkazového řádku](command-line-parameter-examples.md)
   * [Referenční dokumentace úlohy a ID součásti](workload-and-component-ids.md)
 * [Vytvořit založené na síti instalaci sady Visual Studio](create-a-network-installation-of-visual-studio.md)
   * [Instalace certifikátů vyžadovaných pro instalaci offline sady Visual Studio](install-certificates-for-visual-studio-offline.md)
 * [Automatizovat Visual Studio se souborem odpovědí](automated-installation-with-response-file.md)
-* [Automatické použití kódů product key při nasazení sady Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
-* [Výchozí nastavení pro nasazení v podnicích sady Visual Studio](set-defaults-for-enterprise-deployments.md)
-* [Zakažte nebo přesunout do mezipaměti balíčku](disable-or-move-the-package-cache.md)
+* [Automatické použití kódů Product Key při nasazení sady Visual Studio](automatically-apply-product-keys-when-deploying-visual-studio.md)
+* [Nastavení výchozích hodnot pro podniková nasazení sady Visual Studio](set-defaults-for-enterprise-deployments.md)
+* [Zakázání nebo přesunutí mezipaměti balíčku](disable-or-move-the-package-cache.md)
 * [Aktualizace založené na síti instalace sady Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Ovládací prvek aktualizací pro nasazení v sadě Visual Studio](controlling-updates-to-visual-studio-deployments.md)
+* [Řízení aktualizací nasazení sady Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Nástroje pro zjišťování a správu instancí sady Visual Studio](tools-for-managing-visual-studio-instances.md)

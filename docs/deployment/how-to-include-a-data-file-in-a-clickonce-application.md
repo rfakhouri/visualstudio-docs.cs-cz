@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: b03083ce6e9fe7fcebdad0b82373bee41221bbb5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7ddfdb0518a8e3154d966fdea884bf7f2e3ea37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Postupy: Zahrnutí datového souboru do aplikace ClickOnce
 Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalací aplikací je přiřazen adresář na místní disk cílového počítače, kde aplikace může spravovat svá vlastní data. Datové soubory mohou zahrnovat souborů všech typů: textové soubory, soubory XML nebo i soubory databáze (.mdb) Microsoft Access. Následující postupy ukazují, jak přidat datový soubor libovolného typu do vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
@@ -88,4 +89,4 @@ Každý [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instal
      Manifest nasazení musíte znovu podepsat, protože došlo ke změně jeho hodnoty hash manifestu aplikace.  
   
 ## <a name="see-also"></a>Viz také  
- [Přístup k místním i vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Přístup k místním a vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: da6628c34570bfe637c2cc5b3d8cad12b16dac12
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 665f03744fc559727e96373512fc983e5d75293c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-applications"></a>Zabezpečování aplikací
 Zatímco většina aplikací mít běžné problémy zabezpečení, každou doménu aplikace má výzvy zabezpečení své vlastní.  

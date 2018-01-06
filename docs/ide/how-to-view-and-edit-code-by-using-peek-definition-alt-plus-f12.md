@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bf0dd4ab4a60dc7cfdfd351aee59c4942f75ef69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e44c9e7cc8aee41606366e1d4cb175a1855053f3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (ALT+F12)
 Můžete použít **funkce Náhled definice** příkaz k zobrazení a úpravy kódu, aniž by se přepnula od kód, který píšete. **Funkce Náhled definice** a **přejít k definici** zobrazovat stejné informace, ale **funkce Náhled definice** zobrazuje v místním okně, a **přejít k definici** ukazuje kód v okně samostatného kódu. **Přejít k definici** způsobí, že váš kontext (tedy active kódu – okno, aktuálního řádku a pozice kurzoru) přejděte do okna Definice kódu. Pomocí **funkce Náhled definice**, můžete zobrazit a upravit definici a pohyb v souboru definice a zachovat přitom vaše místní v původní soubor kódu.  

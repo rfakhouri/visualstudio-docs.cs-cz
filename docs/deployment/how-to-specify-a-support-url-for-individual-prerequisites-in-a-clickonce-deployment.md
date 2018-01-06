@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 2335c0279c8e7a23e1b514a8264651e73fedebfc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4a73d6cd0996f3f0e91b5a5381ee1b8ccd58a2a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Postupy: Určení adresy URL webu s podporou pro jednotlivé předpoklady v nasazení ClickOnce
 A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pro počet požadavků, které musí být k dispozici v klientském počítači pro můžete otestovat nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] spuštění aplikace. Patří mezi ně požadovaná minimální verze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], verzi operačního systému a všechny sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], ale nemůže nainstalovat některý z těchto předpokladů; Pokud není nalezen předpokladem, jednoduše zastaví instalaci a zobrazí se dialogové okno s vysvětlením, proč instalace se nezdařila.  
@@ -89,4 +90,4 @@ A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pro počet p
  [Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [\<compatibleFrameworks > elementu](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [ClickOnce a kód Authenticode](../deployment/clickonce-and-authenticode.md)   
- [Požadavky na nasazení aplikací](../deployment/application-deployment-prerequisites.md)
+ [Nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md)

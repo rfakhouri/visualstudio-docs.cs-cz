@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d74f0a7978ab0e06cfc7289c827c458487aa630c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 03336b99b8b49c190a292ca9257aa24d4366f28c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vssdk-utilities"></a>VSSDK nástroje
 Témata v této části popisují nástroje, které se dodávají spolu s VSSDK.  
@@ -26,7 +27,7 @@ Témata v této části popisují nástroje, které se dodávají spolu s VSSDK.
  [Nástroj RegPkg](../../extensibility/internals/regpkg-utility.md)  
   [Nástroj CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md)  
   [Nástroj CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)  
-  [Nástrojů barev motivů](../../extensibility/internals/color-theming-tools.md)  
-  [Nástroje služby bitových kopií](../../extensibility/internals/image-service-tools.md)  
+  [Nástroje barevných motivů](../../extensibility/internals/color-theming-tools.md)  
+  [Nástroje služby image](../../extensibility/internals/image-service-tools.md)  
   
 ## <a name="related-sections"></a>Související oddíly

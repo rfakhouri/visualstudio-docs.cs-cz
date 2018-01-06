@@ -12,11 +12,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1bb3ee7a4b646e39e22752d336d5414f64551ce0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7c0992b8db46155a709f58714dfd427882674d2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Postupy: Vytvoření shaderu základní barvy
 Tento dokument ukazuje, jak vytvořit plochý barevný shaderu pomocí návrháře shaderu a jazyk shaderu grafu (DGSL) přesměruje. Tento shaderu nastaví barvu konečné na konstantní hodnotu barva RGB.  
@@ -61,4 +62,4 @@ Tento dokument ukazuje, jak vytvořit plochý barevný shaderu pomocí návrhá�
  [Postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Postupy: Export shaderu](../designers/how-to-export-a-shader.md)   
  [Návrhář shaderu](../designers/shader-designer.md)   
- [Uzly návrháře shaderu](../designers/shader-designer-nodes.md)
+ [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

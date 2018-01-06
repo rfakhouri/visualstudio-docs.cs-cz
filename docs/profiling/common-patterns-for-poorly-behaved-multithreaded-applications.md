@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 744e3031c94a3b152728000e7c5425f85fb9e9ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c938f5effc963fa881506f55d0e4b271ae3a914
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Obecné vzory pro vícevláknové aplikace s nevhodným chováním
 Vizualizér souběžnosti pomáhá vývojářům vizualizovat chování aplikace s více vlákny. Tento nástroj obsahuje galerii obecné vzory pro vícevláknové aplikace, které se chovají chybně. Galerie obsahuje typické a rozpoznatelném visual vzorů, které jsou k dispozici prostřednictvím nástroje, společně s vysvětlení chování, která je reprezentována každý vzor, pravděpodobně výsledkem tohoto chování a nejběžnější přístup při řešení.  

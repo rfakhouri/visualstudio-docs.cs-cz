@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 002d9f2bb9a70d3f223b13d505639089005a09ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 846f0bff11c557164ff101d0b5beb1950fded62e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchies-and-selection"></a>Hierarchie a výběr
 Když upravíte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], měli byste se seznámit jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zpracovává hierarchií, jako jsou projekty a jak ji používá výběr kontext k určení, co se zobrazí uživateli. Tato část popisuje koncepty [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hierarchií a výběr.  
@@ -29,10 +30,10 @@ Když upravíte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], m�
  [Hierarchie v sadě Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)  
  Popisuje projektu hierarchií a obecné koncept hierarchií.  
   
- [Výběr a měny v prostředí IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)  
+ [Výběr a měna v prostředí IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)  
  Popisuje, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) udržuje informace o aktuálně aktivní objekty uživatele a umožňuje VSPackages sledovat měny.  
   
- [Výběr objektů kontextu](../../extensibility/internals/selection-context-objects.md)  
+ [Kontextové objekty výběru](../../extensibility/internals/selection-context-objects.md)  
  Popisuje model pro určení uživatele výběr kontextu se zaměřují na okno.  
   
  [Zpětná vazba pro uživatele](../../extensibility/internals/feedback-to-the-user.md)  

@@ -23,11 +23,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5ae973b0a1fc30f0592f6cb2702df645708ab43f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c1c8757de9b63c3fed75ec7e2ef7f61c89e18226
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-publishing-and-upgrading-sharepoint-solution-packages"></a>Nasazení, publikování a upgradování balíčků řešení služby SharePoint
   Až budete vyvíjet řešení služby SharePoint v sadě Visual Studio, můžete nasadit jeho souboru balíčku (WSP) na místním serveru SharePoint nebo jej publikujte do vzdáleného nebo místního serveru SharePoint. Pokud nasazujete soubory, můžete přizpůsobit, jak se nasadí soubory balíčku (WSP).  

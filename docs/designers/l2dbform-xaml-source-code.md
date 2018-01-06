@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ccc6fcfa8471d767356f1e30d1e5f8b0ed15d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b815904a7ac2b8a050cd4b907698c43a91d929dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.XAML zdrojového kódu
 Toto téma obsahuje a popisuje zdrojový soubor XAML pro [WPF Data vazbu pomocí LINQ to XML příklad](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
@@ -243,4 +244,4 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
   
 ## <a name="see-also"></a>Viz také  
  [Návod: LinqToXmlDataBinding příklad](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [L2DBForm.XAML.cs zdrojového kódu](../designers/l2dbform-xaml-cs-source-code.md)
+ [Zdrojový kód L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)

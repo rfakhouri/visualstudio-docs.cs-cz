@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dad79623bbc721c67c19a37436d2bf5e64b93c59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: feec1e85287b3a1c24ce3c328227ba0455ae044b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window-object-list"></a>Seznam objektů vlastnosti – okno
 Seznam objektů v **vlastnosti** okno je rozevíracího seznamu, který vám umožní změnit výběr na další objekty, které jsou k dispozici v rámci jednoho nebo více vybraných windows. Vyberte jiný objekt z v tomto seznamu se aktivuje volání <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> k informování prostředí vybral nový objekt. Informace zobrazené v **vlastnosti** okno se poté změní na Zobrazit vlastnosti přidružené k nově vybraný objekt.  
@@ -32,4 +33,4 @@ Seznam objektů v **vlastnosti** okno je rozevíracího seznamu, který vám umo
  Pokud objekt COM neimplementuje <xref:Microsoft.VisualStudio.OLE.Interop.IProvideClassInfo>, **vlastnosti** okně se zobrazí název rozhraní namísto názvu objekt na levé straně seznamu.  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšíření vlastnosti](../../extensibility/internals/extending-properties.md)
+ [Rozšíření vlastností](../../extensibility/internals/extending-properties.md)

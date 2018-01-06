@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e80bd33d9351c6b2dd5ce65d327e6cdb40fc70a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5e5e83629bdb2b93db3a34ba577da4df84b119cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-report-view-columns"></a>Postupy: Přizpůsobení sloupců zobrazení sestavy
 Nástroje pro sledování výkonu v aplikaci Visual Studio Team System vývoj Edition jsou plně integrované do integrované vývojové prostředí (IDE) a poskytuje integrované uživatelské prostředí. V následujícím seznamu je typický pro zobrazení, které se dají přizpůsobit podle přidání, odebrání a změna uspořádání sloupců:  
@@ -31,7 +32,7 @@ Nástroje pro sledování výkonu v aplikaci Visual Studio Team System vývoj Ed
   
 -   [Zobrazení řádků](../profiling/lines-view.md)  
   
--   [Zobrazení ukazatele (IP) instrukcí](../profiling/instruction-pointers-ips-view.md)  
+-   [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view.md)  
   
 -   [Volající/volaný – zobrazení](../profiling/caller-callee-view.md)  
   

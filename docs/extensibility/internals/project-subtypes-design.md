@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70d16c90ad8ef4837ad9d131e46ed2027dd6c543
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-subtypes-design"></a>Návrh podtypů projektu
 Projekt podtypů umožní VSPackages rozšířit projekty založené na Microsoft Build Engine (MSBuild). Použití agregace, můžete znovu použít hromadné implementované v systému projektu jádro spravované [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ještě stále přizpůsobit chování pro konkrétní scénář.  

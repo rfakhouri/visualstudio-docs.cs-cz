@@ -16,11 +16,12 @@ caps.latest.revision: "41"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28b66dea8440c969926abd3892739f4e041b064
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fbba5070af77e1509ed3b3840a2045ae0f2c12b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-and-providing-services"></a>Použití a poskytování služeb
 Služba je smlouva mezi dvěma VSPackages. Jeden VSPackage nabízí konkrétní sadu rozhraní pro jiné VSPackage využívat. Například [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nabízí <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> služby pro všechny VSPackage se zatížením. Tato služba poskytuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> rozhraní, které lze použít k zápisu do protokolu činnosti. Další informace najdete v tématu [postupy: použití protokolu činnosti](../extensibility/how-to-use-the-activity-log.md).  
@@ -36,19 +37,19 @@ Služba je smlouva mezi dvěma VSPackages. Jeden VSPackage nabízí konkrétní 
 |<xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution>|Poskytuje základní funkce související s řešení, jako je například možnost vytvořit výčet projekty, vytvořte nové projekty a sledování změn projektu.|  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Služba Essentials](../extensibility/internals/service-essentials.md)  
+ [Základy služeb](../extensibility/internals/service-essentials.md)  
  Uvede důležité elementy služby Visual Studio.  
   
- [Postupy: získání služby](../extensibility/how-to-get-a-service.md)  
+ [Postupy: Získání služby](../extensibility/how-to-get-a-service.md)  
  Popisuje, jak požádat o (spotřebovávat) služby.  
   
- [Postupy: poskytování služby](../extensibility/how-to-provide-a-service.md)  
+ [Postupy: Poskytování služby](../extensibility/how-to-provide-a-service.md)  
  Popisuje, jak mají poskytovat služby.  
   
- [Postupy: poskytování služby asynchronní Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
+ [Postupy: Poskytování asynchronní služby sady Visual Studio](../extensibility/how-to-provide-an-asynchronous-visual-studio-service.md)  
  Popisuje, jak zajistit asynchronní služby.  
   
- [Postupy: odstraňování potíží se službami](../extensibility/how-to-troubleshoot-services.md)  
+ [Postupy: Řešení problémů se službami](../extensibility/how-to-troubleshoot-services.md)  
  Popisuje běžné problémy a uvede řešení k nim.  
   
 ## <a name="related-sections"></a>Související oddíly  

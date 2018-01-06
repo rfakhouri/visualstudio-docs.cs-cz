@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a51359a840812bc20714df91a3357801366f3616
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 35b8821a76926da6ea9cab8ca61ef8f62e5ec72d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usedcommands-element"></a>UsedCommands Element
 UsedCommands element skupiny UsedCommand elementy a další UsedCommands seskupení.  
@@ -48,13 +49,13 @@ UsedCommands element skupiny UsedCommand elementy a další UsedCommands seskupe
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[UsedCommand Element](../extensibility/usedcommand-element.md)|Příkaz, který je implementováno modulem jiný kód.|  
+|[UsedCommand – element](../extensibility/usedcommand-element.md)|Příkaz, který je implementováno modulem jiný kód.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy (například položky nabídky, nabídek, panely nástrojů a pole se seznamem), které poskytuje VSPackage integrované vývojové prostředí (IDE).|  
+|[CommandTable – element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy (například položky nabídky, nabídek, panely nástrojů a pole se seznamem), které poskytuje VSPackage integrované vývojové prostředí (IDE).|  
   
 ## <a name="example"></a>Příklad  
   
@@ -68,4 +69,4 @@ UsedCommands element skupiny UsedCommand elementy a další UsedCommands seskupe
   
 ## <a name="see-also"></a>Viz také  
  [UsedCommand Element](../extensibility/usedcommand-element.md)   
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

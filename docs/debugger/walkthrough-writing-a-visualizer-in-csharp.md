@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: CSharp
 helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
@@ -20,11 +16,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fd63f183d42111cfb8381b5fee86debbca6cd04e
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 6e161b3c914d0a87a720f1217b52a571b85f5ff9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Návod: Zápis vizualizéru v jazyce C# #
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí jazyka C#. Vizualizér, které vytvoříte v tomto návodu zobrazí obsah řetězce pomocí systému Windows forms se zprávou. Tento jednoduchý řetězec vizualizér není obzvláště užitečná sám o sobě, ale zobrazí základní kroky, které je potřeba provést k vytvoření užitečnější vizualizérech pro jiné datové typy.  
@@ -69,7 +66,7 @@ Postupujte podle níže vytvořit vizualizéru úlohy.
   
 6.  V DebuggerSide.cs, přidejte následující příkaz na `using` příkazy:  
   
-    ```  
+    ```csharp  
     using Microsoft.VisualStudio.DebuggerVisualizers;  
     ```  
   
@@ -79,13 +76,13 @@ Postupujte podle níže vytvořit vizualizéru úlohy.
   
 1.  V DebuggerSide.cs přejděte na následující řádek kódu:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide  
     ```  
   
 2.  Změňte kód, který:  
   
-    ```  
+    ```csharp  
     public class DebuggerSide : DialogDebuggerVisualizer  
     ```  
   
@@ -95,8 +92,8 @@ Postupujte podle níže vytvořit vizualizéru úlohy.
   
 -   V `public class DebuggerSide`, přidejte následující **metoda:**  
   
-    ```  
-    override protected void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
+    ```csharp  
+    protected override void Show(IDialogVisualizerService windowService, IVisualizerObjectProvider objectProvider)  
     {  
     }  
     ```  
@@ -113,7 +110,7 @@ Postupujte podle níže vytvořit vizualizéru úlohy.
   
 4.  V DebuggerSide.cs, přidejte následující příkaz na `using` příkazy:  
   
-    ```  
+    ```csharp  
     using System.Windows.Forms;  
     ```  
   
@@ -123,7 +120,7 @@ Postupujte podle níže vytvořit vizualizéru úlohy.
   
 1.  V `Show` metoda, přidejte následující řádek kódu:  
   
-    ```  
+    ```csharp  
     MessageBox.Show(objectProvider.GetObject().ToString());  
     ```  
   
@@ -137,12 +134,12 @@ Postupujte podle níže vytvořit vizualizéru úlohy.
   
 1.  Přidejte následující kód atribut DebuggerSide.cs, po `using` příkazy ale předtím, než `namespace MyFirstVisualizer`:  
   
-    ```  
+    ```csharp  
     [assembly:System.Diagnostics.DebuggerVisualizer(  
     typeof(MyFirstVisualizer.DebuggerSide),  
     typeof(VisualizerObjectSource),  
-    Target  = typeof(System.String),  
-    Description  = "My First Visualizer")]  
+    Target = typeof(System.String),  
+    Description = "My First Visualizer")]  
     ```  
   
 2.  Na **sestavení** nabídky, zvolte **sestavení MyFirstVisualizer**. Projekt má sestavit úspěšně. Než budete pokračovat, opravte všechny chyby sestavení.  
@@ -153,7 +150,7 @@ Postupujte podle níže vytvořit vizualizéru úlohy.
   
 1.  Přidejte následující metodu do třídy `public DebuggerSide`:  
   
-    ```  
+    ```csharp  
     public static void TestShowVisualizer(object objectToVisualize)  
     {  
        VisualizerDevelopmentHost visualizerHost = new VisualizerDevelopmentHost(objectToVisualize, typeof(DebuggerSide));  
@@ -203,13 +200,13 @@ Postupujte podle níže vytvořit vizualizéru úlohy.
   
 3.  V TestConsole.cs, přidejte následující kód, který `using` příkazy:  
   
-    ```  
+    ```csharp  
     using MyFirstVisualizer;  
     ```  
   
 4.  V metodě `Main`, přidejte následující kód:  
   
-    ```  
+    ```csharp  
     String myString = "Hello, World";  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  

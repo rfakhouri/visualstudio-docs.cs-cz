@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: cbb7b09e5c36980ceeedd99f69241996bd25bfa3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 61d58b172c185a908a6314664ccd4cfe2172dc8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Vývoj aplikací pomocí návrháře pracovních postupů
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] Je vizuálního návrháře a ladicí program pro grafické vytváření a ladění [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace v [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] který je hostován v [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] vývojové prostředí. Umožňuje vytvořit aplikace složené pracovního postupu, knihovna aktivit nebo [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] službu pomocí šablony a návrháře aktivit. [!INCLUDE[crabout](../test/includes/crabout_md.md)]pracovní postupy, najdete v článku [modelu Windows Workflow Foundation &#91;. NET Framework 4 &#93; ](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
@@ -51,19 +52,19 @@ ms.lasthandoff: 10/27/2017
 -   **Přidat odkaz na službu...**  funkce vám umožní generovat aktivity, automaticky které přístup k webovým službám.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Pomocí návrháře pracovních postupů](../workflow-designer/using-the-workflow-designer.md)  
+ [Používání návrháře postupu provádění](../workflow-designer/using-the-workflow-designer.md)  
  Ukazuje postup vytvoření nových aktivit a projektů pracovního postupu pomocí předdefinovaných Designer a jak použít jiné nástroje poskytované návrháře pro zpracování argumenty, proměnné, výrazy, import a navigace s popisem cesty.  
   
- [Pomocí návrháře aktivit](../workflow-designer/using-the-activity-designers.md)  
+ [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)  
  Popisuje kategorie aktivit a šablony a jejich návrhářů, které jsou k dispozici systému.  
   
- [Ladění pracovních postupů pomocí návrháře pracovních postupů](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)  
+ [Ladění pracovních postupů pomocí návrháře postupu provádění](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)  
  Popisují, jak provést tradiční ladění postupy a také ladění XAML a výrazy.  
   
- [Nápověda uživatelského rozhraní Návrháře pracovního postupu](../workflow-designer/workflow-designer-ui-help.md)  
+ [Nápověda k uživatelskému rozhraní návrháře postupu provádění](../workflow-designer/workflow-designer-ui-help.md)  
  Obsahuje témata kontextové nápovědy pro dialogová okna poskytované [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)], a také pokyny k funkce návrháře prostředí, klávesové zkratky a chybové zprávy.  
   
- [Vývoj aplikací pracovní postup zacílený na rozhraní .NET 3.0 nebo 3.5 rozhraní .NET Framework](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
+ [Vývoj aplikací pracovních postupů určených pro .NET Framework verze 3.0 nebo 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Obsahuje pokyny k použití návrháře starší verze, která je cílena [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
  [Návrhář opětovného hostování &#91; Ukázky WF &#93;](http://msdn.microsoft.com/Library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  

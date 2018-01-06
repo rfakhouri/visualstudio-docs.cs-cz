@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d9c163063cfa4e2a78f8a07ab74efbecb355448
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef4179c5bc0fb80e2fb65d54885c342ca49bce3b
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Synchronizovat nastavení v sadě Visual Studio
 
@@ -51,7 +52,7 @@ Ve výchozím nastavení jsou synchronizovány následující nastavení.
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Vypnout synchronizovaná nastavení v určitém počítači
 
-Synchronizovaná nastavení pro sadu Visual Studio jsou ve výchozím nastavení zapnuté. Synchronizovaná nastavení v počítači můžete vypnout přechodem na **nástroje &#124; Možnosti &#124; Prostředí &#124; Synchronizovat nastavení** stránku a po zrušení zaškrtnutí políčka.  Například pokud se rozhodnete nechcete synchronizovat nastavení sady Visual Studio v počítači A jakékoli změny nastavení v počítači provedeny proveďte, nejsou zobrazeny na počítačích B nebo počítač C. počítačích B a C bude pokračovat k synchronizaci mezi sebou, ale není s počítačem A.
+Synchronizovaná nastavení pro sadu Visual Studio jsou ve výchozím nastavení zapnuté. Synchronizovaná nastavení v počítači můžete vypnout přechodem na **nástroje &#124; Možnosti &#124; Prostředí &#124; Účty** stránku a po zrušení zaškrtnutí políčka.  Například pokud se rozhodnete nechcete synchronizovat nastavení sady Visual Studio v počítači A jakékoli změny nastavení v počítači provedeny proveďte, nejsou zobrazeny na počítačích B nebo počítač C. počítačích B a C bude pokračovat k synchronizaci mezi sebou, ale není s počítačem A.
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchronizovat nastavení v sadě Visual Studio rodiny produktů a verzí
 

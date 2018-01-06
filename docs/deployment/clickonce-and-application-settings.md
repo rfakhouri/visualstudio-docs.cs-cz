@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: fbe35de06ac09c95a045748a5d8ecb379779a20a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 862f51aa7d124c3dbaa6514b666d74c26334e299
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce a nastavení aplikace
 Nastavení aplikace pro Windows Forms umožňuje snadno vytvářet, ukládat a udržovat vlastní aplikaci a uživatelské předvolby v klientovi. Následující dokument popisuje, jak fungují soubory nastavení aplikace v aplikaci ClickOnce a jak ClickOnce přenese nastavení při upgradu na další verzi.  
@@ -58,4 +59,4 @@ Nastavení aplikace pro Windows Forms umožňuje snadno vytvářet, ukládat a u
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   
  [Přehled nastavení aplikace](/dotnet/framework/winforms/advanced/application-settings-overview)   
  [ClickOnce – Přehled mezipaměti](../deployment/clickonce-cache-overview.md)   
- [Přístup k místním i vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)
+ [Přístup k místním a vzdáleným datům v aplikacích ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

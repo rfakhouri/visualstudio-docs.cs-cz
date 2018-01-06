@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nové generace projektu: Pod pokličkou, část 2
 V [nové generace projektu: pod pokličkou, jednu část](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) jsme viděli jak **nový projekt** dialogu zadá. Předpokládejme, jste vybrali **aplikaci Visual C# Windows**, vyplněné **název** a **umístění** textová pole a kliknutelnou OK.  
@@ -157,5 +158,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Nové generace projektu: Pod pokličkou, první část](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
- [Nástroje MSBuild](../../msbuild/msbuild.md)
+ [Nová generace projektů: Pod pokličkou, část první](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [MSBuild](../../msbuild/msbuild.md)

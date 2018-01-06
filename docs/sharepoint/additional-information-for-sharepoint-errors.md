@@ -23,11 +23,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4323bb31cb1b63e26c4964bb8e1ce71f010a249e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 55151999b3fb0576eb71a1f112bb4c4069accba5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Další informace o chybách služby SharePoint
   Můžete najít pomoc při řešení potíží [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů SharePoint chyby a upozornění při řešení potíží témata a veřejné fóra Microsoft Developer Network (MSDN).  
@@ -35,11 +36,11 @@ ms.lasthandoff: 10/31/2017
 ## <a name="troubleshooting-errors-and-issues"></a>Řešení potíží s chyb a problémů  
  O pomoc s některé běžné chyby a další problémy v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, naleznete v následujících tématech:  
   
--   [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+-   [Řešení potíží s řešeními služby SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
 -   [Ladění řešení služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md)  
   
--   [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
+-   [Řešení potíží s balením a nasazením služby SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
 ## <a name="other-resources"></a>Další zdroje  
  Následující tabulka uvádí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nástrojů služby SharePoint, fóra a další zdroje, které jsou k dispozici na webu MSDN.  

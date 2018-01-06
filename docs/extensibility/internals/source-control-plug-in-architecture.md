@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0cde4ca360aa0059abcbe0b64d63b4a94e85d78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 22929c34d656fb4f163076ca0b5dfb498d44c884
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-architecture"></a>Modul Plug-in architektury zdroje
 Můžete přidat podporu zdroj ovládacího prvku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) pomocí implementace a připojení modulu plug-in Správa zdrojového kódu. Prostředí IDE se připojí k modulu plug-in přes dobře definované API Plug-In zdroj řízení zdrojového kódu. Prostředí IDE zpřístupní funkcí správy zdrojového kódu pro řízení verze tím, že poskytuje uživatelské rozhraní (UI), která se skládá z panely nástrojů a příkazy nabídky. Modul plug-in správy zdroje implementuje funkce správy zdrojů.  
@@ -42,4 +43,4 @@ Diagram architektury znázorňující modulu plug-in interakce mezi VS a Správa
 ## <a name="see-also"></a>Viz také  
  [Moduly plug-in programu zdroj ovládacího prvku](../../extensibility/source-control-plug-ins.md)   
  [Glosář](../../extensibility/source-control-plug-in-glossary.md)   
- [Vytvoření ovládacího prvku zdroj modulu Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Vytvoření modulu plug-in správy zdrojového kódu](../../extensibility/internals/creating-a-source-control-plug-in.md)

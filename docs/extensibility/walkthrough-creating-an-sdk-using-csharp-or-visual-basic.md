@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5f944dad46225a70192bbfb0dbd0d1dc6dc861a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a8b0b8452fb20b9b6da4e8ad58c221010f23c9ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK, pomocí jazyka C# nebo Visual Basic
 V tomto návodu dozvíte, jak vytvořit jednoduché SDK knihovny Math pomocí Visual C# a pak balíček sady SDK jako Visual Studio rozšíření (VSIX). Budete proveďte následující postupy:  
@@ -245,4 +246,4 @@ V tomto návodu dozvíte, jak vytvořit jednoduché SDK knihovny Math pomocí Vi
 ## <a name="see-also"></a>Viz také  
  [Návod: Vytvoření sady SDK, pomocí C++](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
  [Návod: Vytvoření sady SDK, pomocí jazyka JavaScript](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
- [Vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md)
+ [Vytvoření sady SDK (Software Development Kit)](../extensibility/creating-a-software-development-kit.md)

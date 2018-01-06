@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 5f98e1bd3052f3977a0071f2835fad1a7ed16726
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a780cb0089a83df8f91a8c27be6c2b2953e70399
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Dialogové okno Vyberte podmínku (zastaralé)
 Toto téma popisuje, jak používat **vyberte podmínku** dialogovém okně pro starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -57,4 +58,4 @@ Toto téma popisuje, jak používat **vyberte podmínku** dialogovém okně pro 
  [Pomocí aktivity IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65075)   
  [Pomocí aktivity ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65080)   
  [Pomocí aktivity aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091)   
- [Starší verzi návrháře pro nápovědy uživatelského rozhraní pro Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Nápověda k uživatelskému rozhraní návrháře pro programovací model Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e02c91f5e5a55e82633d89aa7209321126271e8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a11770bc54a7b96aa918b73b34e0028731bf0f9c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="no-source-available"></a>Žádný zdroj není k dispozici.
 Projektu neobsahuje zdrojového kódu pro kód, který se pokoušíte zobrazit. Obvyklé příčiny je dvakrát klikněte na modul, který nemá zdrojového kódu v **okně zásobník volání** nebo **vlákna – okno**. Můžete pokračovat v ladění, ale okno zdroj nelze použít k nastavení zarážek a provádět další akce v tomto umístění. Pokud potřebujete nastavit zarážky, použijte **okno zpětný překlad** místo.  

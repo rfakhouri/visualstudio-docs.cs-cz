@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 45ef0413540729abb67caad992a557c5b4692dfe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3d23b1b97145b5e0b24ebfe814aeca5168ef6a06
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Toto rozhraní umožňuje relace ladění manager (SDM) oznámit proces, který se připojuje k nebo probíhá odpojování od proces.  
@@ -47,8 +48,8 @@ IDebugProcessEx2 : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Připojení](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje o proces relace je nyní ladění proces.|  
-|[Odpojení](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje o proces relace je již ladění proces.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprocessex2-attach.md)|Informuje o proces relace je nyní ladění proces.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprocessex2-detach.md)|Informuje o proces relace je již ladění proces.|  
 |[AddImplicitProgramNodes](../../../extensibility/debugger/reference/idebugprocessex2-addimplicitprogramnodes.md)|Přidá program uzlů pro seznam modulů ladění.|  
   
 ## <a name="remarks"></a>Poznámky  

@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 766f00475971da1ca009737f9360952422177814
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cd28633fcb4b8186dae154428e489d51041aa8b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Vyhodnocení výrazu v režimu pozastavení
 Následující část popisuje proces, který nastane, když je v režimu pozastavení ladicího programu a musí provést vyhodnocení výrazu.  
@@ -43,4 +44,4 @@ Následující část popisuje proces, který nastane, když je v režimu pozast
     -   V případě použití `IDebugExpression2::EvaluateAsync`, rozhraní daného zpětné volání se používá pro komunikaci probíhající proces hodnocení. Po dokončení vyhodnocení EvaluateAsync odešle [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) rozhraní prostřednictvím zpětné volání. S tímto rozhraním událostí nelze získat konečná hodnota s [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Události volání ladicí program](../../extensibility/debugger/calling-debugger-events.md)
+ [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)

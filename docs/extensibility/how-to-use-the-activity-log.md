@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d08cd747c762d7820e4744251fb00abff22b3fdc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c27934d043a067f88bd9f47efe7d8f7972959e10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-activity-log"></a>Postupy: použití protokolu aktivit
 VSPackages může zapisovat zprávy do protokolu činnosti. Tato funkce je užitečná zejména při ladění VSPackages v prostředích prodejní.  
@@ -64,4 +65,4 @@ VSPackages může zapisovat zprávy do protokolu činnosti. Tato funkce je užit
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>   
  [Řešení potíží s VSPackages](../extensibility/troubleshooting-vspackages.md)   
- [VSPackages](../extensibility/internals/vspackages.md)
+ [Balíčky VSPackage](../extensibility/internals/vspackages.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 985a174955ac96c37cc4f50e4550f7186d3f80c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 672ce7f47dc8478343f336ed06757af109a5ecce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control"></a>Správa zdrojového kódu
 Tato část popisuje možnosti pro implementaci správy zdrojového kódu jako integrovaná funkce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], buď pomocí modulu plug-in Správa zdrojového kódu nebo zdroj ovládacího prvku VSPackage.  
@@ -29,14 +30,14 @@ Tato část popisuje možnosti pro implementaci správy zdrojového kódu jako i
  [Přehled](../../extensibility/internals/source-control-integration-overview.md)  
  Přehled dvě dostupné možnosti pro implementaci správy zdrojového kódu.  
   
- [Vytvoření ovládacího prvku zdroj modulu Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)  
+ [Vytvoření modulu plug-in správy zdrojového kódu](../../extensibility/internals/creating-a-source-control-plug-in.md)  
  Popisuje postup vytvoření Správa zdrojového kódu modulu plug-in poskytující funkce správy zdrojového prostřednictvím [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zdroj ovládacího prvku uživatelského rozhraní (UI).  
   
- [Vytvoření ovládacího prvku VSPackage zdroje](../../extensibility/internals/creating-a-source-control-vspackage.md)  
+ [Vytvoření balíčku VSPackage správy zdrojového kódu](../../extensibility/internals/creating-a-source-control-vspackage.md)  
  Popisuje postup vytvoření zdrojového kódu VSPackage, který není pouze poskytuje funkce správy zdrojového ale můžete použít k přizpůsobení [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zdroj ovládacího prvku uživatelského rozhraní.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Moduly plug-in programu zdroj ovládacího prvku](../../extensibility/source-control-plug-ins.md)  
+ [Moduly plug-in správy zdrojového kódu](../../extensibility/source-control-plug-ins.md)  
  Referenční informace pro rozhraní API modulu Plug-in řízení zdroje.  
   
  [Rozšíření projektů](../../extensibility/extending-projects.md)  

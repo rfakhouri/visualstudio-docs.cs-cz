@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e944c8a998a3e8bba46d5018faf1b9103a91240
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6218e01d061bbf65e0cae051050076e4b8267a2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="addressing-dpi-issues"></a>Řešení problémů DPI
 Se zvyšující číslo zařízení se dodává s "s vysokým rozlišením" obrazovky. Tyto obrazovky obvykle mají více než 200 počet pixelů na palec (ICP). Práce s aplikací na těchto počítačích bude vyžadovat obsah tak, aby se rozšířit tak, aby vyhovovaly zobrazení obsah v normálním zobrazení vzdálenosti pro zařízení. Od verze 2014 je primární cíle pro s vysokou hustotou zobrazí mobilní zařízení (tablety, notebooky design a telefony) computing.  

@@ -13,15 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 dev_langs: C++
-ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 7d55fdb061b9cb2fcd0497b7dde8e5c4255cf5e3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="custom-native-etw-heap-events"></a>Vlastní nativní ETW – události haldy
 
-Visual Studio obsahuje celou řadu [profilování a diagnostické nástroje](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), včetně nativní paměti profileru.  Tato profileru zachytí [události trasování událostí](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od zprostředkovatele haldy a poskytuje analýzu jak paměti se přidělovány a využívány.  Ve výchozím nastavení tento nástroj můžete analyzovat pouze přidělení z standardní haldy Windows žádost a rozdělení mimo tento nativní haldy by se zobrazit.
+Visual Studio obsahuje celou řadu [profilování a diagnostické nástroje](../profiling/profiling-tools.md), včetně nativní paměti profileru.  Tato profileru zachytí [události trasování událostí](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) od zprostředkovatele haldy a poskytuje analýzu jak paměti se přidělovány a využívány.  Ve výchozím nastavení tento nástroj můžete analyzovat pouze přidělení z standardní haldy Windows žádost a rozdělení mimo tento nativní haldy by se zobrazit.
 
 Existují mnoho případy, ve kterých chcete použít vlastní vlastní haldy a vyhnout se nároky na přidělení z haldě standardní.  Například můžete použít [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) přidělit velké množství paměti při spuštění aplikace nebo hra, a následně spravovat vlastní bloky v rámci tohoto seznamu.  V tomto scénáři by nástroj paměti profileru vidět jenom tento počáteční přidělení a není vaší vlastní správy provést uvnitř bloku paměti.  Však pomocí vlastního zprostředkovatele nativní ETW haldy, můžete je nechat nástroj vědět o rozdělení, které provádíte mimo standardní halda.
 
@@ -47,7 +48,7 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-Snímek z [využití paměti](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) nástroj bez vlastní haldy sledování by zobrazit právě přidělení jednobajtová 8192 a žádné vlastní přidělení prováděné fondem:
+Snímek z [využití paměti](../profiling/memory-usage.md) nástroj bez vlastní haldy sledování by zobrazit právě přidělení jednobajtová 8192 a žádné vlastní přidělení prováděné fondem:
 
 ![Přidělení haldy Windows](media/heap-example-windows-heap.png)
 
@@ -138,7 +139,7 @@ V této knihovně můžete snadno použít jazyka C a C++.
    ```
 
 ## <a name="tracking-memory-usage"></a>Sledování využití paměti
-Pomocí těchto volání na místě, vaše vlastní haldy využití lze nyní sledovat přes standardní **využití paměti** nástroje v sadě Visual Studio.  Další informace o tom, jak pomocí tohoto nástroje najdete v tématu [využití paměti](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) dokumentaci. Zkontrolujte, zda že jste povolili haldy profilace pomocí snímků, jinak se nezobrazí vaše vlastní haldy využití zobrazí. 
+Pomocí těchto volání na místě, vaše vlastní haldy využití lze nyní sledovat přes standardní **využití paměti** nástroje v sadě Visual Studio.  Další informace o tom, jak pomocí tohoto nástroje najdete v tématu [využití paměti](../profiling/memory-usage.md) dokumentaci. Zkontrolujte, zda že jste povolili haldy profilace pomocí snímků, jinak se nezobrazí vaše vlastní haldy využití zobrazí. 
 
 ![Povolit haldy profilace](media/heap-enable-heap.png)
 
@@ -152,11 +153,11 @@ Výchozí hodnota *NT haldy* haldy vypadá a to stejně jako dříve, a uveďte 
 
 ![Halda NT s sledovací modul](media/heap-example-windows-heap.png)
 
-I s standardní haldy Windows, můžete také použít tento nástroj porovnat snímky a vyhledejte nevracení a poškození vlastní haldy, který je popsán v hlavní [využití paměti](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) dokumentaci.
+I s standardní haldy Windows, můžete také použít tento nástroj porovnat snímky a vyhledejte nevracení a poškození vlastní haldy, který je popsán v hlavní [využití paměti](../profiling/memory-usage.md) dokumentaci.
 
 > [!TIP]
 > Visual Studio také obsahuje **využití paměti** nástroj v **profilace výkonu** sada nástrojů, která je povolena z **ladění > výkonu profileru** nabídky, nebo **Alt + F2** klávesové kombinace.  Tato funkce nezahrnuje haldy sledování a nezobrazí vaše vlastní haldy podle postupu popsaného tady.  Pouze **diagnostické nástroje** okno, které můžete povolit **ladění > Windows > zobrazit diagnostické nástroje** nabídky, nebo **Ctrl + Alt + F2** klávesové kombinaci, obsahuje tato funkce.
 
 ## <a name="see-also"></a>Viz také
-[Nástroje pro profilaci](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
-[Využití paměti](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+[Nástroje pro profilaci](../profiling/profiling-tools.md)  
+[Využití paměti](../profiling/memory-usage.md)

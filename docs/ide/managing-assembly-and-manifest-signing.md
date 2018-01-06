@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8227a514887150e3477e026a238df608fe98d11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Správa sestavení a podepsání manifestu
 Softwarová součást podpis silného názvu poskytuje identitu globálně jedinečný. Silné názvy jsou použity zaručit, že sestavení nemůže být falešné jiným uživatelem a zajistit závislosti součástí a příkazy konfigurace, které se mapují na správný komponentu a verze komponenty.  
@@ -72,4 +73,4 @@ Obecně by neměl podepsat spustitelné soubory. Silně pojmenované součást n
   
 ## <a name="see-also"></a>Viz také  
  [Sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies)   
- [Sestavení se silným názvem (podepisování sestavení) (C + +/ CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+ [Sestavení se silným názvem (podepisování sestavení) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

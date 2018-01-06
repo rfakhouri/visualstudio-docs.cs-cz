@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f845e18bbd4c06d5652571ec83270a80d31ec852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e0f01e10050fcbdb5cf27390464ae6b8b3e62d64
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-provider"></a>Symbol zprostředkovatele
 Implementace vyhodnocování výrazu musí přístup k symbolické ladicí informace generované kompilátor jazyka, aby bylo možné vyhodnotit proměnné a výrazy. Dělá to pomocí využívání rozhraní symbol zprostředkovatele (SP), označované taky jako obslužná rutina symbol.  
@@ -32,4 +33,4 @@ Implementace vyhodnocování výrazu musí přístup k symbolické ladicí infor
  Pokud vaše SP bude pracovat pouze s modulem vaše vlastní ladění, můžete implementovat SP podle potřeby v závislosti na potřebách vaší ladění modulu.  
   
 ## <a name="see-also"></a>Viz také  
- [Ladicí program komponenty](../../extensibility/debugger/debugger-components.md)
+ [Komponenty ladicího programu](../../extensibility/debugger/debugger-components.md)

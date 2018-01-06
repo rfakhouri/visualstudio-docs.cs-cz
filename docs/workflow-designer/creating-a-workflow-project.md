@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 6cdc8fb745fb78ff2b5d3ce9a478005eee2737c3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 00f8c4c7acec790d9982c786abe8f51be383770c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-workflow-project"></a>Vytvoření projektu pracovního postupu
 Pracovní postupy, [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] služeb pracovních postupů, vlastní aktivity a vlastní aktivity Designer lze vytvořit pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony projektu. Tato část popisuje postup vytváření knihoven a aplikace se šablonami projektů, která je k dispozici v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -29,23 +30,23 @@ Pracovní postupy, [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.m
  Poslední téma popisuje, jak přidat aktivity pracovního postupu, Designer a služeb nebo jiných [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu položky do existující pracovního postupu (nebo jiných).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: vytvoření aplikace konzoly pracovního postupu](../workflow-designer/how-to-create-a-workflow-console-application.md)  
+ [Postupy: Vytvoření konzolové aplikace pracovního postupu](../workflow-designer/how-to-create-a-workflow-console-application.md)  
  Popisuje, jak k vytvoření konzolové aplikace pracovního postupu.  
   
- [Postupy: vytvoření aplikace pracovního postupu služby WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
+ [Postupy: Vytvoření aplikace služeb pracovního postupu WCF](../workflow-designer/how-to-create-a-wcf-workflow-service-application.md)  
  Popisuje kroky potřebné k vytvoření [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] aplikace služby pracovního postupu.  
   
- [Postupy: vytvoření knihovna aktivit](../workflow-designer/how-to-create-an-activity-library.md)  
+ [Postupy: Vytvoření knihovny aktivit](../workflow-designer/how-to-create-an-activity-library.md)  
  Popisuje postup, jak použít k vytvoření knihovna aktivit v [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].  
   
- [Postupy: vytvoření Knihovna návrháře aktivit](../workflow-designer/how-to-create-an-activity-designer-library.md)  
+ [Postupy: Vytvoření knihovny návrhářů aktivit](../workflow-designer/how-to-create-an-activity-designer-library.md)  
  Popisuje postup vytvoření návrhářů, které jsou přizpůsobené pro více publik.  
   
  [Postupy: Přidání nové položky do projektu pracovního postupu](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)  
  Popisuje, jak přidat aktivity další pracovního postupu nebo návrháři a dalších [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] položek, jako jsou aktivity kódu do existujícího projektu.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Navrhování pracovních postupů](/dotnet/framework/windows-workflow-foundation/designing-workflows)  
+ [Návrh pracovních postupů](/dotnet/framework/windows-workflow-foundation/designing-workflows)  
   
 ## <a name="see-also"></a>Viz také  
- [Pomocí návrháře pracovních postupů](../workflow-designer/using-the-workflow-designer.md)
+ [Používání návrháře postupu provádění](../workflow-designer/using-the-workflow-designer.md)

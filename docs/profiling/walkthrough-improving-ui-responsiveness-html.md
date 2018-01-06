@@ -22,11 +22,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d1d35049d71ba011516b3bc06316cb46cc61ced
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: 2c44751b9a4eb60ddc6124311bd75592777d4cb9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Návod: Zlepšení odezvy uživatelského rozhraní (HTML)
 Tento názorný postup vás provede procesem identifikovat a opravit problémy výkonem pomocí [profiler odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md). Profileru je k dispozici v sadě Visual Studio pro aplikace UWP pomocí jazyka JavaScript. V tomto scénáři vytvoříte aplikaci test výkonu, která aktualizuje elementů modelu DOM příliš často a používat profileru k identifikaci a řešení tohoto problému.  

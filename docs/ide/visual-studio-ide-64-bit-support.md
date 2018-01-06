@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e462696b540617a6b583425682bdfea1da1fb44
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 12b3bed69f8a73a9f50dfce2aae47354dec042e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Umožňuje nastavit aplikací pro různé platformy, včetně 64bitové platformy. Další informace na 64bitové platformě podpoře v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], najdete v části [64bitové aplikace](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  

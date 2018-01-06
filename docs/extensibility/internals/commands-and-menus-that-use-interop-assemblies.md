@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee9fa1faa52afb2ea6d8154b4767fcab2cee0981
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d89b698a97d1793b3c5255966d9eca35ec1b78f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>Příkazy a nabídky, které používají spolupráce – sestavení
 Musí být VSPackage, který implementuje příkazy nabídek a panelů nástrojů pomocí spolupráce – sestavení:  
@@ -35,24 +36,24 @@ Musí být VSPackage, který implementuje příkazy nabídek a panelů nástroj�
  Následující text popisuje, jak to provést tyto úlohy.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Určení stavu příkazu pomocí spolupráce – sestavení](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
+ [Určení stavu příkazu pomocí spolupracujícího sestavení](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
  Popisuje, jak VSPackage upozorní IDE o které příkazy podporuje, a zda jsou nyní zapnuta.  
   
- [Příkaz kontrakty spolupráce – sestavení](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
+ [Kontrakty příkazů ve spolupracujícím sestavení](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
  Poskytuje definici kontraktu základní příkaz používané všechny VSPackages implementace příkazů pomocí spolupráce – sestavení  
   
  [Implementace](../../extensibility/internals/command-implementation.md)  
  Poskytuje přehled o tom, jak VSPackage implementuje příkaz.  
   
- [Registrace sestavení vzájemné spolupráce obslužné rutiny příkazů](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
+ [Registrace obslužných rutin příkazů spolupracujícího sestavení](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
  Popisuje položky registru IDE oznámit, že poskytuje VSPackage obslužná rutina příkazu.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Dostupnost](../../extensibility/internals/command-availability.md)  
  Popisuje kritéria, která se používají zařízení IDE k určení, které VSPackage příkazy jsou k dispozici a jaké objekt zpracovává je.  
   
- [Jak přidat VSPackages prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
  Poskytuje podrobné informace o tom, jak vytvářet uživatelské rozhraní, která používá [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] příkaz podpory.  
   
- [Směrování příkazů v VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)  
+ [Směrování příkazů v balíčcích VSPackage](../../extensibility/internals/command-routing-in-vspackages.md)  
  Přehled procesu používá k propojení objekt s správný příkaz žádosti.

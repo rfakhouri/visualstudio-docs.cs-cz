@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3e0216161669e12c245484da3ca6e4de63c6a48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ce1de0467e7e662fd0def096ef6adb042578f8b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-type-design-decisions"></a>Rozhodnutí o návrhu typ projektu
 Než vytvoříte nový typ projektu, musíte nastavit několik rozhodnutí o návrhu týkající se typu vašeho projektu. Musíte se rozhodnout, jaké typy položky, které bude obsahovat projekty, jak bude natrvalo soubory projektu a jaké závazků model budete používat.  
@@ -66,4 +67,4 @@ Než vytvoříte nový typ projektu, musíte nastavit několik rozhodnutí o ná
  [Trvalost projektu](../../extensibility/internals/project-persistence.md)   
  [Prvky modelu projektu](../../extensibility/internals/elements-of-a-project-model.md)   
  [Základní součásti služby projektu modelu](../../extensibility/internals/project-model-core-components.md)   
- [Vytváření typů projektu](../../extensibility/internals/creating-project-types.md)
+ [Vytváření typů projektů](../../extensibility/internals/creating-project-types.md)

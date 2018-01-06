@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6e9644353430fa70d6876ab3210ad340ac30312d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0c3a9edc754070c7bb0aabdc76b2d52efd32a453
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="making-commands-available"></a>Zpřístupnění příkazy
 Po přidání více VSPackages k sadě Visual Studio, může se pomocí příkazů přeplněné uživatelské rozhraní (UI). Můžete naprogramovat vašeho balíčku, abyste tento problém omezili, následujícím způsobem:  
@@ -151,4 +152,4 @@ Po přidání více VSPackages k sadě Visual Studio, může se pomocí příkaz
  [MenuCommands Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
  [Jak přidat VSPackages prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Směrování příkazů v VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)   
- [Dynamicky přidání položek nabídky](../../extensibility/dynamically-adding-menu-items.md)
+ [Dynamické přidávání položek nabídky](../../extensibility/dynamically-adding-menu-items.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 199c33ce94aa1fcb5cffc45570a4425df3dbd720
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 748b547cda2a3c07ed84337d37f2a7e096ee112d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="blocking-time-profile-report"></a>Sestava profilu času blokace
 Profil sestavy poskytují agregační blokování časových dat pro zásobníky volání, které jsou specifické pro jednotlivé blokování kategorie (například "Vstupně-výstupních operací" nebo "Synchronizace"). Sestava přerušování obsahuje seznam procesů, které zrušené aktuální proces společně se počet instancí přerušení. Pokud chcete vytvořit blokování Sestava profilu, nástroj shromažďuje blokování volání rozhraní API a shromáždí je do stromu zásobníky volání. Data zobrazená na tyto sestavy se liší podle aktuální časové rozmezí, skrytý vláken a následující dva filtry, které mohou být použity:  

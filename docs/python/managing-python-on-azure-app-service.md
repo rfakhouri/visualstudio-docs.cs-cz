@@ -12,11 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: d328897a4d7644e76634ecff3bfbaef4dbd0c3ec
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Správa Python v Azure App Service
 
@@ -28,7 +31,7 @@ Přizpůsobitelné podpora Python ve službě Azure App Service je k dispozici j
 > I když služby App Service ve výchozím nastavení má Python 2.7 a Python 3.4 nainstalované v kořenové složky na serveru, nelze upravit ani instalovat balíčky v těchto prostředích, ani by měl záviset na jejich přítomnosti. Se místo toho spoléhají na rozšíření lokality, kterou řídíte, jak je popsáno v tomto tématu.
 
 > [!Important]
-> Postupů popsaných v tomto poli se mohou změnit a to především při zlepšování. Odesílány zpět změny [Python Engineering v blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/). >
+> Postupů popsaných v tomto poli se mohou změnit a to především při zlepšování. Odesílány zpět změny [Python Engineering v blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>Výběr verze Python prostřednictvím portálu Azure
 
@@ -44,20 +47,19 @@ Přizpůsobitelné podpora Python ve službě Azure App Service je k dispozici j
 1. Vyberte požadované rozšíření, přijměte právní podmínky a pak vyberte **OK**.
 1. Po dokončení instalace, zobrazí se upozornění na portálu.
 
-
 ## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Výběr verze Python prostřednictvím Správce Azure Resource Manager
 
 Pokud nasazujete aplikační službu pomocí šablony Azure Resource Manager, přidejte rozšíření lokality jako prostředek. Rozšíření se zobrazí jako vnořeného prostředku s typem `siteextensions` a názvem z [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
 
 Například po přidání odkazu na `python361x64` (Python 3.6.1 x 64), může vaše šablona vypadat třeba takto (vynechání některé vlastnosti):
 
-```
+```json
 "resources": [
   {
     "apiVersion": "2015-08-01",
     "name": "[parameters('siteName')]",
     "type": "Microsoft.Web/sites",
-    
+
     // ...
 
     "resources": [
@@ -96,8 +98,8 @@ Tím se otevře stránka popis rozšíření, která obsahuje cestu:
 Pokud máte potíže s zobrazuje cestu pro rozšíření, můžete najít ručně pomocí konzoly:
 
 1. Na stránce služby App Service, vyberte **nástroje pro vývoj > konzole**.
-2. Zadejte příkaz `ls ../home` nebo `dir ..\home` zobrazíte nejvyšší úrovně rozšíření složek, jako například `Python361x64`.
-3. Zadejte příkaz jako `ls ../home/python361x64` nebo `dir ..\home\python361x64` k ověření, že obsahuje `python.exe` a další soubory překladač.
+1. Zadejte příkaz `ls ../home` nebo `dir ..\home` zobrazíte nejvyšší úrovně rozšíření složek, jako například `Python361x64`.
+1. Zadejte příkaz jako `ls ../home/python361x64` nebo `dir ..\home\python361x64` k ověření, že obsahuje `python.exe` a další soubory překladač.
 
 ### <a name="configuring-the-fastcgi-handler"></a>Konfigurace obslužná rutina FastCGI
 
@@ -123,6 +125,7 @@ FastCGI je rozhraní, které funguje na úrovni požadavku. Služba IIS obdrží
 ```
 
 `<appSettings>` Definované tady jsou k dispozici pro vaše aplikace jako proměnné prostředí:
+
 - Hodnota `PYTHONPATH` volně rozšířeno, ale musí obsahovat kořenu vaší aplikace.
 - `WSGI_HANDLER`musí odkazovat na importovatelné WSGI aplikaci z vaší aplikace.
 - `WSGI_LOG`je volitelné, ale doporučené pro ladění aplikace. 
@@ -169,33 +172,32 @@ Instalovat balíčky přímo v prostředí serveru, použijte jednu z následuj�
 | Sady s aplikací | Instalovat balíčky přímo do projektu a potom je nasadit do služby App Service, jako by byly součástí vaší aplikace. V závislosti na tom, kolik závislostí máte a jak často je aktualizovat, tato metoda může být nejjednodušší způsob, jak získat pracovní nasazení budete. Se doporučuje, aby knihovny musí odpovídat verzi jazyka Python na serveru, v opačném případě uvidíte skrytého chyby po nasazení. Ale nutné dodat, protože verze jazyka Python v App Service rozšíření lokality jsou stejné jako těchto verzí vydala python.org, můžete snadno získat kompatibilní verze pro místní vývoj. |
 | Virtuální prostředí | Není podporováno. Místo toho použijte sdružování a nastavte `PYTHONPATH` proměnnou prostředí, aby odkazoval na umístění balíčků. |
 
-
 ### <a name="azure-app-service-kudu-console"></a>Azure App Service Kudu konzoly
 
 [Kudu konzoly](https://github.com/projectkudu/kudu/wiki/Kudu-console) umožňuje přímé se zvýšením oprávnění příkazového řádku přístup k serveru služby App Service a její systému souborů. Toto je obou cenným nástrojem ke zjištění ladění a umožňuje pro operace rozhraní příkazového řádku, například při instalaci balíčků.
 
 1. Otevření modulu Kudu z stránku služby App Service na portálu Azure tak, že vyberete **nástroje pro vývoj > Rozšířené nástroje**, pak výběrem **přejděte**. Tato akce přejde na adresu URL, která je stejná jako základní aplikace adresu URL služby s výjimkou s `.scm` vložit. Například, pokud je základní adresa URL `https://vspython-test.azurewebsites.net/` Kudu bude na `https://vspython-test.scm.azurewebsites.net/` (který můžete označit záložkou):
 
-    ![Konzole Kudu pro službu Azure App Service](media/python-on-azure-console01.png)    
+    ![Konzole Kudu pro službu Azure App Service](media/python-on-azure-console01.png)
 
-2. Vyberte **konzolou pro ladění > CMD** pro otevření konzoly, ve kterém můžete přejít do instalace Python a zjistit, co knihovny jsou již existuje.
+1. Vyberte **konzolou pro ladění > CMD** pro otevření konzoly, ve kterém můžete přejít do instalace Python a zjistit, co knihovny jsou již existuje.
 
-3. Chcete-li nainstalovat jeden balíček:
+1. Chcete-li nainstalovat jeden balíček:
 
     a. Přejděte do složky instalace Python, ve které chcete nainstalovat balíček, jako například `d:\home\python361x64`.
-     
+
     b. Použití `python.exe -m pip install <package_name>` nainstalovat balíček.
-    
+
     ![Příklad instalace bottle přes konzolu Kudu pro Azure App Service](media/python-on-azure-console02.png)
-    
-4. Pokud jste nasadili `requirements.txt` pro vaši aplikaci k serveru neudělali, nainstalujte všechny tyto požadavky následujícím způsobem:
+
+1. Pokud jste nasadili `requirements.txt` pro vaši aplikaci k serveru neudělali, nainstalujte všechny tyto požadavky následujícím způsobem:
 
     a. Přejděte do složky instalace Python, ve které chcete nainstalovat balíček, jako například `d:\home\python361x64`.
-    
+
     b. Spusťte příkaz `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
-    
+
     Pomocí `requirements.txt` je doporučená, protože je snadné reprodukujte vašeho balíčku přesně nastavit lokálně a na serveru. Jenom nezapomeňte, přejděte konzole po nasazení všechny změny `requirements.txt` a spusťte příkaz znovu.
-    
+
 > [!Note]
 > Neexistuje žádné kompilátor jazyka C v App Service, takže je potřeba nainstalovat wheel pro všechny balíčky s rozšíření nativní moduly. Mnoho oblíbených balíčky zadejte vlastní souborů Wheel. Pro balíčky, které nejsou, použijte `pip wheel <package_name>` na místním vývojovém počítači a pak nahrajte kolečka na váš web. Příklad, naleznete v části [Správa požadované balíčky](python-environments.md#managing-required-packages)
 
@@ -210,7 +212,6 @@ Místo použití konzole Kudu prostřednictvím portálu Azure, můžete spustit
 }
 ```
 
-Informace o příkazech a ověřování najdete v tématu [Kudu dokumentaci](https://github.com/projectkudu/kudu/wiki/REST-API). 
+Informace o příkazech a ověřování najdete v tématu [Kudu dokumentaci](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-Můžete také zjistit pomocí přihlašovacích údajů `az webapp deployment list-publishing-profiles` příkaz prostřednictvím rozhraní příkazového řádku Azure (v tématu [az webapp nasazení](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles)). Pomocné knihovny pro publikování Kudu příkazy je k dispozici na [Githubu](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
-
+Můžete také zjistit pomocí přihlašovacích údajů `az webapp deployment list-publishing-profiles` příkaz prostřednictvím rozhraní příkazového řádku Azure (v tématu [az webapp nasazení](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles)). Pomocné knihovny pro publikování Kudu příkazy je k dispozici na [Githubu](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).

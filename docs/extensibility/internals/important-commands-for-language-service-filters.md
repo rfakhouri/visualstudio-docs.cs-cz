@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c0fa4b408c43acbf2ec87bcfaca5135c9037af7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ee6c746874e7e00643f1b840185969a6dabadfe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="important-commands-for-language-service-filters"></a>Důležité příkazy pro filtry služby jazyk
 Pokud chcete vytvořit filtr plnohodnotný jazyk služby, vezměte v úvahu zpracování následující příkazy. Úplný seznam identifikátory příkazů je definována v <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> výčtu pro spravovaný kód a Stdidcmd.h hlavičky souboru pro nespravované [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] kódu. Můžete najít v souboru Stdidcmd.h *cesta instalace Visual Studio SDK*\VisualStudioIntegration\Common\Inc.  
@@ -42,4 +43,4 @@ Pokud chcete vytvořit filtr plnohodnotný jazyk služby, vezměte v úvahu zpra
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID><br /><br /> <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|Odeslané z nabídky, obvykle **výběru jako komentáře** nebo **zrušte komentář u výběru** z **Upřesnit** v **upravit** nabídky. <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>Označuje, že uživatel chce komentář vybraný text; <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> označuje, že uživatel chce zrušte komentář u vybraný text. Tyto příkazy se dají implementovat jenom služba jazyka.|  
   
 ## <a name="see-also"></a>Viz také  
- [Vývoj služby jazyk starší verze](../../extensibility/internals/developing-a-legacy-language-service.md)
+ [Vývoj služby starší verze jazyka](../../extensibility/internals/developing-a-legacy-language-service.md)

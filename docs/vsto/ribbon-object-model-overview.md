@@ -16,11 +16,12 @@ caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 655a1b6f3d57ac15fc7a50a603b2a12791251c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-object-model-overview"></a>Přehled modelu objektů pásu karet
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zpřístupňuje model silného typu objektu, který můžete použít k získání a nastavení vlastností ovládacích prvků pásu karet za běhu. Například můžete dynamicky naplnit ovládací prvky nabídky, nebo zobrazení a skrytí ovládacích prvcích kontextově. Na pásu karet, ale jenom dříve, než na pásu karet je načtena podle aplikace Office, můžete přidat také karty, skupiny a ovládací prvky. Informace najdete v tématu [nastavení vlastnosti, stane jen pro čtení](#SettingReadOnlyProperties).  
@@ -53,14 +54,14 @@ ms.lasthandoff: 10/31/2017
 |**Pole**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|  
 |**Tlačítko**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|  
 |**Skupina tlačítek**|<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|  
-|**Zaškrtávací políčko**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
-|**Pole se seznamem**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
+|**CheckBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox>|  
+|**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|  
 |**Rozevírací seznam**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|  
 |**Textové pole**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|  
 |**Galerie**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|  
 |**Skupiny**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|  
 |**Popisek**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|  
-|**Nabídky**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
+|**Nabídka**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|  
 |**Oddělovač**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|  
 |**Tlačítko rozdělení**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|  
 |**Karta**|<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|  
@@ -198,6 +199,6 @@ ms.lasthandoff: 10/31/2017
  [Postupy: Přizpůsobení předdefinované karty](../vsto/how-to-customize-a-built-in-tab.md)   
  [Postupy: Přidání ovládacích prvků do zobrazení Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
  [Postupy: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Postupy: Zobrazit chyby doplňku uživatelského rozhraní](../vsto/how-to-show-add-in-user-interface-errors.md)  
+ [Postupy: Zobrazení chyb uživatelského rozhraní doplňku](../vsto/how-to-show-add-in-user-interface-errors.md)  
   
   

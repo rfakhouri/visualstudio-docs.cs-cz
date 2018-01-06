@@ -12,11 +12,12 @@ caps.latest.revision: "42"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: fe3f64cf11542d0b8098bb9a47c02a2a47647253
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Přidání ověřování vlastní architektury do diagramů závislostí
 V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu proti model vrstvy, aby můžete ověřit, že zdrojový kód odpovídá závislosti v diagramu závislostí. Je algoritmus standardní ověřování, ale můžete definovat vlastní rozšíření ověření.  
@@ -99,7 +100,7 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
   
 5.  Vraťte se do projektu ověření vrstvy a přidejte následující odkazy na projekt:  
   
-    |**Referenční dokumentace**|**Co můžete udělat**|  
+    |**Referenční informace**|**Co můžete udělat**|  
     |-------------------|------------------------------------|  
     |Microsoft.VisualStudio.GraphModel.dll|Přečtěte si architektura grafu|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Přečtěte si, že DOM kódu související s vrstvami|  

@@ -1,7 +1,7 @@
 ---
 title: Azure SDK pro Python | Microsoft Docs
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 03/07/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,11 +12,14 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e7a31bf6bff3e7f53ee50283d8efbe2218b8e88f
-ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 647b07e3816551e60e176280199ad5298db53200
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK pro Python
 
@@ -28,7 +31,7 @@ Azure SDK je nainstalovat z [indexu balíčků Pythonu](https://pypi.python.org/
 
 Nainstalujte **nejnovější stabilní verze** (podporuje Python 2.7 a 3.3 +) následujícím způsobem:
 
-```bash
+```command
 pip install azure
 ```
 
@@ -40,14 +43,14 @@ Dokumentaci můžete najít na [azure sdk pro python.readthedocs.org](http://azu
 
 [Azure SDK pro středisku pro vývojáře Python](http://azure.microsoft.com/develop/python/) má také počet užitečné zdroje, včetně počtu kurzy, jako například:
 
-  - Vytvoření webové aplikace s [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app), a [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
-  - [Úložiště objektů BLOB](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
-  - [Úložiště Table](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
-  - [Fronty úložiště](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
-  - [DocumentDB](https://docs.microsoft.com/azure/documentdb/documentdb-python-application)
-  - [Fronty služby Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
-  - [Předplatné témata sběrnice služeb](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
-  - [Správa služeb](https://docs.microsoft.com/azure/cloud-services/cloud-services-python-how-to-use-service-management)
+- Vytvoření webové aplikace s [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app) [Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app), a [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app).
+- [Úložiště objektů BLOB](/azure/storage/storage-python-how-to-use-blob-storage)
+- [Úložiště Table](/azure/storage/storage-python-how-to-use-table-storage)
+- [Fronty úložiště](/azure/storage/storage-python-how-to-use-queue-storage)
+- [DocumentDB](/azure/documentdb/documentdb-python-application)
+- [Fronty služby Service Bus](/azure/service-bus-messaging/service-bus-python-how-to-use-queues)
+- [Předplatné témata sběrnice služeb](/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)
+- [Správa služeb](/azure/cloud-services/cloud-services-python-how-to-use-service-management)
 
 Pro veřejná rozhraní API bez dokumentaci, jednotka testů v [sady SDK úložiště GitHub](https://github.com/Azure/azure-sdk-for-python) jsou dobrou zdroje informací:
 

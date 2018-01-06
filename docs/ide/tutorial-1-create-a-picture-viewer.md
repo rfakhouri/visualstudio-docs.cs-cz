@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 73c9289d95c7df352819546eab6d95084576215c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0537b1f335d46854dd43727ade695909db421ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriál 1: Vytvoření prohlížeče obrázků
 V tomto kurzu vytvoříte program, který načte obrázek ze souboru a zobrazí v okně. Zjistíte, jak přetáhněte ovládací prvky jako tlačítka a pole obrázků ve formuláři, nastavit jejich vlastnosti a použití kontejnerů plynule změnit velikost formuláře. Můžete také začít psát kód. Získáte informace o následujících postupech:  
@@ -55,14 +56,14 @@ Obrázek, který vytvoříte v tomto kurzu
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Krok 1: Vytvořte projekt aplikace Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Začněte tím, že vytvoříte projekt aplikace Windows Forms.|  
-|[Krok 2: Spusťte svůj Program](../ide/step-2-run-your-program.md)|Spusťte program aplikaci Windows Forms, který jste vytvořili v předchozím kroku.|  
+|[Krok 1: Vytvořte projekt formulářové aplikace Windows](../ide/step-1-create-a-windows-forms-application-project.md)|Začněte tím, že vytvoříte projekt aplikace Windows Forms.|  
+|[Krok 2: Spusťte svůj program](../ide/step-2-run-your-program.md)|Spusťte program aplikaci Windows Forms, který jste vytvořili v předchozím kroku.|  
 |[Krok 3: Nastavte vlastnosti svého formuláře](../ide/step-3-set-your-form-properties.md)|Změnit způsob vzhled formuláře pomocí **vlastnosti** okno.|  
 |[Krok 4: Rozvrhněte svůj formulář pomocí ovládacího prvku TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)|Přidat `TableLayoutPanel` ovládacího prvku do svého formuláře.|  
 |[Krok 5: Přidejte do svého formuláře ovládací prvky](../ide/step-5-add-controls-to-your-form.md)|Přidání ovládacích prvků, například `PictureBox` řízení a `CheckBox` do svého formuláře ovládací prvek. Přidání tlačítka do svého formuláře.|  
 |[Krok 6: Pojmenujte své ovládací prvky tlačítek](../ide/step-6-name-your-button-controls.md)|Přejmenujte tlačítka požadavků uživatele.|  
 |[Krok 7: Přidejte do svého formuláře komponenty dialogových oken](../ide/step-7-add-dialog-components-to-your-form.md)|Přidat **OpenFileDialog** součásti a **ColorDialog** součásti do svého formuláře.|  
-|[Krok 8: Zapište kód pro zobrazení obslužné rutiny události obrázku tlačítka](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Psaní kódu pomocí nástroje IntelliSense.|  
-|[Krok 9: Zkontrolujte, okomentujte a otestujte svůj kód](../ide/step-9-review-comment-and-test-your-code.md)|Zkontrolujte a otestujte svůj kód. Podle potřeby přidejte komentáře.|  
-|[Krok 10: Zapište kód pro přídavná tlačítka a zaškrtávací políčko](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napište kód, aby ostatní tlačítka a zaškrtávací políčko pracovní pomocí IntelliSense.|  
-|[Krok 11: Spusťte svůj Program a vyzkoušejte jiné funkce](../ide/step-11-run-your-program-and-try-other-features.md)|Spusťte svůj program a nastavte barvu pozadí. Vyzkoušejte jiné funkce, jako je například změna barvy, písma a hranice.|
+|[Krok 8: Zapište kód pro obslužnou rutinu události zobrazení tlačítka s obrázkem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Psaní kódu pomocí nástroje IntelliSense.|  
+|[Krok 9: Zrevidujte, okomentujte a otestujte svůj kód](../ide/step-9-review-comment-and-test-your-code.md)|Zkontrolujte a otestujte svůj kód. Podle potřeby přidejte komentáře.|  
+|[Krok 10: Zapište kód pro přídavná tlačítka a zaškrtávací pole](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Napište kód, aby ostatní tlačítka a zaškrtávací políčko pracovní pomocí IntelliSense.|  
+|[Krok 11: Spusťte svůj program a vyzkoušejte další funkce](../ide/step-11-run-your-program-and-try-other-features.md)|Spusťte svůj program a nastavte barvu pozadí. Vyzkoušejte jiné funkce, jako je například změna barvy, písma a hranice.|

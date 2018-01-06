@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e2f2e76d9dec25e6c5bf5d6deeab42364d28de8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 35dfc24f22d223fcd6f1db225342bb406e73c3ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Čísla verzí pro hlavní a lokalizované satelitní sestavení
 <xref:System.Resources.SatelliteContractVersionAttribute> Třída poskytuje podporu správy verzí pro hlavní sestavení, který používá místní zdroje prostřednictvím Správce prostředků. Použití <xref:System.Resources.SatelliteContractVersionAttribute> k aplikaci hlavní sestavení vám umožní aktualizovat a znovu nasadit sestavení bez nutnosti aktualizace jeho satelitních sestavení. Například můžete použít <xref:System.Resources.SatelliteContractVersionAttribute> třídy s aktualizací service pack, která není zavést nové prostředky bez znovu sestavit a znovu nasazovat satelitní sestavení. Pro vaše lokalizované prostředky k dispozici, musí odpovídat verzi satelitní kontrakt hlavní sestavení <xref:System.Reflection.AssemblyVersionAttribute> třída satelitních sestavení. Musíte zadat přesnou verzi číslo <xref:System.Resources.SatelliteContractVersionAttribute>; zástupné znaky, jako například "*" nejsou povoleny. Další informace najdete v tématu [načítání prostředků](/dotnet/framework/resources/retrieving-resources-in-desktop-apps).  

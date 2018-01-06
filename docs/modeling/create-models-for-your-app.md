@@ -26,11 +26,12 @@ caps.latest.revision: "58"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: cc4455d507265376b9f208d8f351472ee6968c45
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3f4a6e3ba2eafa281fda8557f48c0886aff89105
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-models-for-your-app"></a>Vytváření modelů pro aplikaci
 Diagramy modelování vám pomůžou pochopit, vysvětlení a komunikovat nápady o kódu a uživatelské požadavky, které musí podporovat systému softwaru.
@@ -41,9 +42,9 @@ Diagramy modelování vám pomůžou pochopit, vysvětlení a komunikovat nápad
   
 |**Diagram**|**Zobrazuje**|  
 |-----------------|---------------|  
-|[Diagramy závislost: pokyny](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy závislost: referenční dokumentace](../modeling/layer-diagrams-reference.md)|Základní architektura systému|  
+|[Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)|Základní architektura systému|  
 |Mapy kódu<br /><br /> [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)|Závislosti a další relace v existujícího kódu|  
-|Diagramy tříd kód vygenerován<br /><br /> [Práce s diagramy tříd (návrhář tříd)](../ide/working-with-class-diagrams-class-designer.md)|Typy a jejich vztahů v rozhraní .NET kódu|  
+|Diagramy tříd kód vygenerován<br /><br /> [Práce s diagramy tříd (Návrhář tříd)](../ide/working-with-class-diagrams-class-designer.md)|Typy a jejich vztahů v rozhraní .NET kódu|  
   
 ## <a name="related-tasks"></a>Související úlohy  
   
@@ -54,7 +55,7 @@ Diagramy modelování vám pomůžou pochopit, vysvětlení a komunikovat nápad
 |[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|Pomocí modely k popisu celkové strukturu a chování vašeho systému a ujistěte se, že bude vyhovovat potřebám uživatelů.|  
 |[Ověřování systému během vývoje](../modeling/validate-your-system-during-development.md)|Ujistěte se, že váš software zůstává konzistentní s potřebám vašich uživatelů a přehled architektury systému.|  
 |[Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)<br /><br /> [Použití modelů ve agilní vývoj](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Pomůže vám pomůžou pochopit a změnit systému při jeho vývoji modelů.|  
-|[Strukturujte svá řešení modelování](../modeling/structure-your-modeling-solution.md)|Uspořádejte modely v projektu střední nebo velké.|  
+|[Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)|Uspořádejte modely v projektu střední nebo velké.|  
   
 ## <a name="external-resources"></a>Externí zdroje  
   

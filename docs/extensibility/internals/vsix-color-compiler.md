@@ -11,11 +11,12 @@ caps.latest.revision: "6"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b7ff76cd40f80f6855de72795b08e70fb87ed0f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8cdf8fd3d32678cc80d215d77e34cd7987d7bd29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-color-compiler"></a>Barva kompilátoru VSIX
 Nástroj Visual Studio rozšíření barva kompilátoru je konzolovou aplikaci, která přebírá souboru .xml představující barvy pro existující sady Visual Studio motivy a převede ji na .pkgdef souboru tak, aby tyto barvy lze použít v sadě Visual Studio. Protože se snadno porovnat rozdíly mezi soubory .xml, tento nástroj je užitečný pro správu vlastních barev ve správě zdrojového kódu. Je také můžete jazyka do prostředí sestavení tak, aby výstup sestavení je soubor platný .pkgdef.  

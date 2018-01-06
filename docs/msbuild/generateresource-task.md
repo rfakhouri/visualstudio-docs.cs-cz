@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b3004b780400d2fac46866ac4ad02bda18ada9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef2517b05b58ac2a672a5eba04ca6f1dc48a27f3
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="generateresource-task"></a>GenerateResource – úloha
 Převede mezi .txt a soubory RESX (formát založený na jazyce XML prostředku) a společné jazykové runtime .resources binární soubory, které můžete vložených do binární spustitelného nebo zkompilovat do satelitní sestavení. Tato úloha se obvykle používá převést soubory s příponou TXT nebo RESX soubory Resource. `GenerateResource` Úloh je funkčně podobná [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator).  
@@ -41,7 +42,7 @@ Převede mezi .txt a soubory RESX (formát založený na jazyce XML prostředku)
 |`ExecuteAsTool`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, spouští tlbimp.exe a aximp.exe z příslušná cílová framework out-of-proc ke generování sestavení nezbytné obálku. Tento parametr umožňuje cílení na více verzí z `ResolveComReferences`.|  
 |`FilesWritten`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje názvy všech souborů zapsat na disk. To zahrnuje soubor mezipaměti, pokud existuje. Tento parametr je užitečné pro implementace vyčistit.|  
 |`MinimalRebuildFromTracking`|Volitelné `Boolean` parametr.<br /><br /> Získá nebo nastaví přepínač, který určuje, zda bude použit sledovaných přírůstkové sestavení. Pokud `true`, je zapnutá přírůstkové sestavení; jinak bude vynutit opětovném sestavení.|  
-|`NeverLockTypeAssemblies`|Volitelné `Boolean` parametr.<br /><br /> Získá nebo nastaví logickou hodnotu, která určuje, zda chcete vytvořit nový [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) k vyhodnocení, soubory prostředků (RESX) (true) nebo vytvořit nový [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) pouze když soubory prostředků odkazují na uživatele sestavení (false).|  
+|`NeverLockTypeAssemblies`|Volitelné `Boolean` parametr.<br /><br /> Získá nebo nastaví logickou hodnotu, která určuje, zda chcete vytvořit nový [AppDomain](/dotnet/api/system.appdomain) k vyhodnocení, soubory prostředků (RESX) (true) nebo vytvořit nový [AppDomain](/dotnet/api/system.appdomain) pouze když soubory prostředků odkazují na uživatele sestavení (false).|  
 |`OutputResources`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Určuje název generovaného souborů, jako jsou například soubory .resources. Pokud název nezadáte, bude použit název odpovídající vstupní soubor a souboru .resources, který se vytvoří je umístěn v adresáři, který obsahuje vstupní soubor.|  
 |`PublicClass`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, vytvoří třídu jako veřejná Třída prostředků se silnými typy.|  
 |`References`|Volitelné `String[]` parametr.<br /><br /> Odkazy na načíst typy v soubory RESX z. Elementy datového souboru RESX může mít typ formátu .NET. Pokud je pro čtení souboru RESX, to je třeba vyřešit. Obvykle se nevyřeší úspěšně pomocí standardní typ načítání pravidla. Pokud zadáte sestavení v `References`, že mají přednost před.<br /><br /> Tento parametr není potřeba prostředky se silnými typy.|  

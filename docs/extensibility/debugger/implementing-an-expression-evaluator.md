@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8cb80098edf4f05de550c8b8a22e0ed0649ca26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f18e2e131b6baa325bd7e0b65babee4c3679ed8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-an-expression-evaluator"></a>Implementace vyhodnocení výrazu
 > [!IMPORTANT]
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
  EE využívá všechny tyto rozhraní.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Strategie implementace vyhodnocování výrazu](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
+ [Strategie implementace vyhodnocovače výrazů](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  
  Definuje třech krocích proces pro implementaci strategie výraz vyhodnocování (EE).  
   
 ## <a name="see-also"></a>Viz také  

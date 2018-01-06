@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d3006ddafa743a5cd55a687895e894f3cbb068a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 16d3e15187d6164bf0b659a94ac81d26a8bf6a5c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Vytváření doplňků VSTO pro Office s použitím sady Visual Studio
   Sada Microsoft Office developer tools v sadě Visual Studio slouží k vytvoření aplikace rozhraní .NET Framework, které rozšiřují Office. Tyto aplikace se také nazývají *řešení pro systém Office*.  
@@ -39,13 +40,13 @@ ms.lasthandoff: 10/31/2017
  [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Obsahuje odkazy na informace o tom, jak nakonfigurovat vývojovém počítači k vytvoření řešení pro systém Office, jak začít vytváření řešení pro systém Office a co je nového pro vývoj pro Office v sadě Visual Studio.  
   
- [Upgrade a migrace řešení Office](../vsto/upgrading-and-migrating-office-solutions.md)  
+ [Upgrade a migrace řešení pro systém Office](../vsto/upgrading-and-migrating-office-solutions.md)  
  Obsahuje odkazy na informace týkající se procesu upgradu pro projekty vytvořené pomocí dřívějších verzí sady Visual Studio.  
   
- [Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
+ [Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
  Obsahuje odkazy na informace o tom, jak řešení pro systém Office fungovat, včetně informací o přizpůsobení na úrovni dokumentu a doplňků VSTO.  
   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
  Poskytuje informace o tom, jak vytvořit projektu aplikace Office a nakonfigurujete svůj projekt v sadě Visual Studio.  
   
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)  
@@ -54,10 +55,10 @@ ms.lasthandoff: 10/31/2017
  [Řešení pro aplikaci Excel](../vsto/excel-solutions.md)  
  Poskytuje informace o tom, jak automatizovat aplikace Excel, vytvořte řešení pro aplikaci Excel a pochopit globalizace problémy, které jsou specifické pro aplikaci Excel.  
   
- [Řešení pro aplikaci InfoPath](../vsto/infopath-solutions.md)  
+ [InfoPath – řešení](../vsto/infopath-solutions.md)  
  Poskytuje informace o tom, jak vytvořit šablony formulářů a doplňků VSTO pro aplikaci InfoPath.  
   
- [Řešení pro aplikaci Outlook](../vsto/outlook-solutions.md)  
+ [Outlook – řešení](../vsto/outlook-solutions.md)  
  Poskytuje informace o tom, jak automatizovat Outlook a vytváření doplňků VSTO pro Outlook a formuláři oblasti.  
   
  [Řešení pro aplikaci PowerPoint](../vsto/powerpoint-solutions.md)  
@@ -69,10 +70,10 @@ ms.lasthandoff: 10/31/2017
  [Řešení pro aplikaci Visio](../vsto/visio-solutions.md)  
  Poskytuje informace o tom, jak automatizovat Visio a vytváření doplňků Visio VSTO.  
   
- [Řešení aplikace Word](../vsto/word-solutions.md)  
+ [Řešení pro Word](../vsto/word-solutions.md)  
  Poskytuje informace o tom, jak automatizovat aplikace Word a vytvářet řešení aplikace Word.  
   
- [Vytváření řešení pro systém Office](../vsto/building-office-solutions.md)  
+ [Sestavování řešení pro systém Office](../vsto/building-office-solutions.md)  
  Poskytuje informace o rozdílech mezi vytváření projektů Office a jinými typy projektů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
  [Ladění projektů Office](../vsto/debugging-office-projects.md)  

@@ -17,11 +17,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13701dd85cfc2339650ec2df641ac1f5f15e75f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69bc0ae15a33cd3f7fd9b06a25a34f7dc88c083c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Průvodce začátečníka procesoru vzorkování
 Nástroje pro profilaci sady Visual Studio můžete použít k analýze problémy s výkonem v aplikaci. Tento postup ukazuje, jak používat **vzorkování** data.
@@ -127,6 +128,6 @@ Nástroje pro profilaci sady Visual Studio můžete použít k analýze problém
 ## <a name="see-also"></a>Viz také  
  [Prohlížeč výkonu](../profiling/performance-explorer.md)   
  [Začínáme](../profiling/getting-started-with-performance-tools.md)   
- [Přehled](../profiling/overviews-performance-tools.md)  
+ [Přehledy](../profiling/overviews-performance-tools.md)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
  [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)

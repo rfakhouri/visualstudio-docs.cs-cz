@@ -14,11 +14,12 @@ caps.latest.revision: "28"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 70200da27d102f0ec6b8231a680965e8ee420d44
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e26560740dd8d6f86d80dc5063a5c9b55cac8171
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-in-a-build-process"></a>Vytvoření kódu v procesu sestavení
 [Transformace textu](../modeling/code-generation-and-t4-text-templates.md) nelze vyvolat v rámci [proces sestavení](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení. Některé úlohy sestavení se specializují na transformaci textu. Úlohy sestavení T4 spouštějí textové šablony návrhu a rovněž kompilují textové šablony běhu (předzpracované).  
@@ -280,7 +281,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
   
 -   [Texttransform – nástroj](../modeling/generating-files-with-the-texttransform-utility.md) lze použít v příkazu skripty. Ve většině případů je jednodušší použít MSBuild.  
   
--   [Volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
+-   [Volání transformací textu v rozšíření VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
   
 -   [Návrh textové šablony](../modeling/design-time-code-generation-by-using-t4-text-templates.md) jsou transformovány Visual Studio.  
   

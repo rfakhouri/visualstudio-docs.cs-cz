@@ -13,21 +13,22 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c28fbedddcd5a3d7bb80f1c14cd9a7f2ffe89eb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0435225f30f5f596aed4631f0130b94cd3b273ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>Osnovy a skrytý Text ve službě jazyk starší verze
 Osnova umožňuje sbalit posloupnost řádky textu do jednoho řádku. Například v jazyce C++ všechny metody lze sbalit na jeden řádek, zobrazuje pouze podpis metody. Skrytý text je posloupnost řádky textu, které může být zobrazen nebo skryt.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: podpora osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
+ [Postupy: Podpora osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)  
  Vysvětluje, jak implementovat  
   
- [Postupy: podporují skrytého textu ve službě jazyk starší verze](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Postupy: Poskytování podpory skrytého textu ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Vysvětlující účel oblast skrytého textu a poskytuje pokyny o tom, jak implementovat oblast skrytého textu.  
   
- [Postupy: podporují rozšířené popisující ve službě jazyk starší verze](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Postupy: Rozšířená podpora osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Popisuje dvě možnosti, které rozšiřují popisující podporu pro svůj jazyk nad rámec podpora *sbalit do definice* příkaz.

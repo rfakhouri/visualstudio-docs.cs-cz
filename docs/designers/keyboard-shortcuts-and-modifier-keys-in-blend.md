@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f9c616c359480831827549d05496157ad28e4575
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c934ae4869867b0680999514cbaae99c74c3d2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Klávesové zkratky a modifikační klávesy v programu Blend
 Klávesové zkratky urychlit práci snížením akci, která by vyžadovala více klikne na tlačítko myši do jednoho klávesové zkratky. Klávesové zkratky v [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] pocházet v těchto dvou kategorií:  
@@ -32,7 +33,7 @@ Přístupové klávesy, které se zobrazují podtržítkem po stisknutí kláves
   
      Většina klávesových zkratek lze snadno rozpoznat v uživatelském rozhraní nástroje [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)]; se zobrazí vpravo od příkazy nabídky. Například **soubor** nabídce **otevřeného projektu** příkaz nabídky obsahuje klávesovou zkratku CTRL + SHIFT + O. Zobrazíte klávesové zkratky pro nástroje **nástroje** panelu, ukazatele nad nástroj.  
   
-     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")  
+     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4E8A-8039-bead80a3e595")  
 Klávesové zkratky, které se zobrazují vedle položky nabídky, které mají zástupců  
   
  Další informace o usnadnění a funkcích najdete v tématu [usnadnění společnosti Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069).  

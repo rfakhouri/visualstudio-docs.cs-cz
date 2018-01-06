@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f31a9d38d89488c6680e7becbfe02899444f6627
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: bc92b589cb956eaa31c22a84dce075d6599297d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Postupy: Přidání komentářů do diagramů tříd (návrhář tříd)
 Tvary komentářů můžete použít k přidání poznámek ke diagramů tříd. Obrazec komentář má jednu vlastnost **Text**, do kterého můžete zadat text. Tvary komentářů existovat jenom na povrch diagram a není v kódu.  

@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d7f4abe6240f799ed6db71fcf04a40774facaf6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f70d41b353640a3b2b108a55f14b8737a7fe1f8d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizard-vsz-file"></a>Průvodce (. Soubor vsz)
 Integrované vývojové prostředí (IDE) používá soubory ke spuštění průvodce. Tyto soubory .vsz obsahují informace, které rozhraní IDE používá k určení, které průvodce k volání a jaké informace, které mají být předána do průvodce.  
@@ -51,4 +52,4 @@ Param="WIZARDUI = FALSE"
 ## <a name="see-also"></a>Viz také  
  [Vlastní parametry](../../extensibility/internals/custom-parameters.md)   
  [Průvodci](../../extensibility/internals/wizards.md)   
- [Popis Directory šablony (. Soubory VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+ [Soubory popisu adresáře šablon (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

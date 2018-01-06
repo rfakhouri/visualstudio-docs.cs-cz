@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 6e5d17a1a84eb71252956e921522e6eebfd67925
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f79852eae4b7dfae7345dbf6033a0e1cc0444250
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Postupy: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
 Můžete změnit chování některé standardní příkazy, které jsou definovány automaticky ve vašem DSL. Například může změnit **Vyjmout** tak, aby se vyloučí citlivé informace. K tomuto účelu přepsání metody v příkazu set – třída. Tyto třídy jsou definovány v souboru CommandSet.cs v projektu DslPackage a jsou odvozené z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  

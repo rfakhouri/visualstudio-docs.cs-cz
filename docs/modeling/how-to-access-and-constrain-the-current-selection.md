@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 870a8d1c08a8ca0fa72cabf47c8e1087a39e70f9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 6cfc93f3e0423f57cd0df5e919854cc1a46a1b3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Postupy: Přístup k aktuálnímu výběru a jeho omezení
 Když píšete příkaz nebo gesto obslužnou rutinu pro váš jazyk specifické pro doménu, můžete určit, jaký element klepli pravým tlačítkem myši uživatele. Některé tvary nebo pole můžete také zabránit ve výběru. Například můžete uspořádat, že když uživatel klikne na ikonu dekoratéra, obrazec, který jej obsahuje místo něho se vybere. Omezíte-výběr tímto způsobem snižuje počet obslužných rutin, které máte k zápisu. Také umožňuje jednodušší pro uživatele, který můžete klikněte kamkoli do tvaru bez nutnosti vyhnout dekoratéra.  

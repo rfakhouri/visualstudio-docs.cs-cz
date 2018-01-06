@@ -13,14 +13,15 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2a3175065cfa6886092b7cad05b348851db69e6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1b63f3c74a59630ea762cb1ba37bc192f53e5fcb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-and-export-settings-environment-options-dialog-box"></a>Nastavení importu a exportu, prostředí, dialogové okno Možnosti
 Tato stránka slouží k určení, kde je uložený soubor nastavení uživatele a jestli se má použít soubor nastavení týmu. Další informace o nastavení najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)
+ [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)

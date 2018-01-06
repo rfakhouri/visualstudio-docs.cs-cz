@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50db39e9a6b864df8876054b455b169531260a9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e4612f5779d6177d58cef7f087ef6e11bbe4ebd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="inside-the-core-editor"></a>V editoru jádra
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Základní editor je sada několik komponent, které umožňují upravit a dotazovat textové informace. Pokud jste upravili editoru základní pomocí starší verze rozhraní API, může nadále používat toto vlastní nastavení, které budou směrovány přes adaptéry editor. Doporučujeme, ale přizpůsobit se vlastní nastavení do editoru nové rozhraní API.  

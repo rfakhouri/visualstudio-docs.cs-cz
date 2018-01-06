@@ -18,11 +18,12 @@ caps.latest.revision: "106"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0447f7ac0836f0f23334d8759d294437191aa6a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-saved-intellitrace-data"></a>Pomocí uložených dat technologie IntelliTrace
 Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejděte na určité místo spuštění vaší aplikace. Tento soubor může obsahovat události výkonu, výjimky, vláken, testovací kroky, moduly a jiné informace systému, aby záznamy IntelliTrace při vaše aplikace běží.  
@@ -194,7 +195,7 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
     |**Kategorie Id**|**Kategorie Id**|  
     |**Kategorie**|**Kategorie**|  
     |**Oblasti**|**Produktu**|  
-    |**Výstup**|**Zpráva**|  
+    |**Output**|**Zpráva**|  
     |**Id korelace**|**Id korelace**|  
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>Spuštění ladění z nezpracované výjimky  

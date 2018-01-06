@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fa7378493c8df41b70be6fda17b2763f90fd7f04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementace a registrace dodavatele portu
 Role dodavatele portu je sledovat a zadejte porty, které pak spravovat procesy. V době, kdy port musí být vytvořen dodavatele portu je vytvořena instance pomocí CoCreate s identifikátorem GUID port dodavatele (Správce ladicí relace [SDM] použije port dodavatele vybraného uživatele nebo dodavatele port zadaný v projektu systému). Pak zavolá SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) zobrazíte mohou být přidány žádné porty. Pokud lze přidat na port, nový port je požadované voláním [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) a předání [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) port, který popisuje. `AddPort`vrátí nový port reprezentována [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní.  
@@ -65,4 +66,4 @@ RemoveMetric(metrictypePortSupplier,
 ## <a name="see-also"></a>Viz také  
  [Implementace Port dodavatele](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [Pomocníci SDK pro ladění](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Port dodavatelů](../../extensibility/debugger/port-suppliers.md)
+ [Dodavatelé portů](../../extensibility/debugger/port-suppliers.md)

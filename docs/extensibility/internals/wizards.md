@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 838b7cac850b8e7eb3401065cf13202d3a3a40ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6d9d468997d0e0f4cc913db1b9ac316f4e698f99
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wizards"></a>Průvodci
 Po vytvoření průvodce, obvykle je vhodné ho přidat do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), aby ostatní ho používat. Přidání průvodce se potom zobrazí v **přidat nový projekt** nebo **přidat novou položku** dialogová okna. Chcete-li zobrazit **přidat nový projekt** nebo **přidat novou položku** dialogové okno polí, klikněte pravým tlačítkem na otevřete řešení v **Průzkumníku řešení**, přejděte na **přidat**, a pak klikněte na tlačítko **nový projekt** nebo **novou položku**.  
@@ -31,10 +32,10 @@ Po vytvoření průvodce, obvykle je vhodné ho přidat do [!INCLUDE[vsprvs](../
  Témata v této části popisují soubory, které implementují způsobí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **přidat nový projekt** a **přidat novou položku** dialogových oken k zobrazení seznamu průvodce mezi dostupných průvodcích a šablon a požadavky, které průvodce musí splnit, aby správně fungovaly v prostředí IDE.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Popis Directory šablony (. Soubory VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)  
+ [Soubory popisu adresáře šablon (.Vsdir)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)  
  Poskytuje přehled jakou šablonu soubory popis adresáře a vysvětluje, jak fungují v prostředí IDE pro zobrazení složky, průvodce .vsz soubory a soubory šablony, které jsou spojeny s projektem v dialogových oknech.  
   
- [Průvodce (. Soubor vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)  
+ [Soubor průvodce (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)  
  Vysvětluje, jak rozhraní IDE spuštění průvodců a uvádí tyto tři části souboru.  
   
  [Rozhraní průvodce (IDTWizard)](../../extensibility/internals/wizard-interface-idtwizard.md)  

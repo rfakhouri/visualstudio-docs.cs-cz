@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: daa41beb487020dcaeccba692ace97b057a6b3ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 176f44c105909935988a06f3eb928e5adfb77149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadata položek v dávkování úloh
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]má schopnost rozdělení seznamech položek do různých kategorií nebo dávek, na základě položky metadat a spuštění úlohy jednou se jednotlivých dávek. Může být matoucí pochopit přesně položky, které jsou předávány s které dávky. Toto téma obsahuje následující běžné scénáře, které zahrnují dávkování.  
@@ -226,4 +227,4 @@ Items in ExampColl: Item2;Item5
  [Itemmetadata – Element (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [Dávkování](../msbuild/msbuild-batching.md)   
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [MSBuild – Reference](../msbuild/msbuild-reference.md)
+ [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)

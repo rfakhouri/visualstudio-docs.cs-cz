@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0ec26ec3305cf56f5b03312816737ed7131f4d2
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: fdb49d915871bd9ac955ed61cdc7850bf35d6f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Postupy: hledání témat v obsahu
 V **obsah** kartě obsahu (obsah) můžete použít k nalezení informací. Obsah je rozevírací seznam obsahující všechny témat v nainstalované knih. Usnadnění informace o tom, jak procházet obsahu najdete v tématu [klávesové zkratky (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
@@ -56,4 +57,4 @@ Pokud jste otevřeli pomocí indexu nebo funkce fulltextového vyhledávání t�
 ## <a name="see-also"></a>Viz také
 [Postupy: hledání témat v rejstříku](../ide/how-to-find-topics-in-the-index.md)  
 [Postupy: vyhledávání témat](../ide/how-to-search-for-topics.md)  
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cf196a227e5cb92cae48dd1eeceace25ffc0295
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 69ad8f62931b628582c73a3e370a86611795caa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Identifikátory GUID a ID nabídky sady Visual Studio
 Toto téma se zobrazí hodnoty GUID a ID nabídky a skupin v řádku nabídek Visual Studio. Tyto hodnoty jsou definovány v .vsct soubory, které jsou nainstalovány v rámci sady Visual Studio SDK. Další informace najdete v tématu [IDE-Defined příkazy, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -39,7 +40,7 @@ Toto téma se zobrazí hodnoty GUID a ID nabídky a skupin v řádku nabídek Vi
 |-----------|--------|  
 |Soubor nebo úpravy/zobrazení|IDG_VS_MM_FILEEDITVIEW|  
 |Refaktoring|IDG_VS_MM_REFACTORING:|  
-|Project|IDG_VS_MM_PROJECT|  
+|Projekt|IDG_VS_MM_PROJECT|  
 |Sestavení|IDG_VS_MM_BUILDDEBUGRUN|  
 |Formát nebo nástroje|IDG_VS_MM_TOOLSADDINS|  
 |Okno/Help nebo komunity|IDG_VS_MM_WINDOWHELP|  
@@ -55,7 +56,7 @@ Toto téma se zobrazí hodnoty GUID a ID nabídky a skupin v řádku nabídek Vi
 |Upravit|IDM_VS_MENU_EDIT|  
 |Zobrazit|IDM_VS_MENU_VIEW|  
 |Refaktorovat|IDM_VS_MENU_REFACTORING|  
-|Project|IDM_VS_MENU_PROJECT|  
+|Projekt|IDM_VS_MENU_PROJECT|  
 |Sestavení|IDM_VS_MENU_BUILD|  
 |Formát|IDM_VS_MENU_FORMAT|  
 |Nástroje|IDM_VS_MENU_TOOLS|  
@@ -218,4 +219,4 @@ Toto téma se zobrazí hodnoty GUID a ID nabídky a skupin v řádku nabídek Vi
 ## <a name="see-also"></a>Viz také  
  [Identifikátory panelů nástrojů Visual Studio a identifikátory GUID](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
  [Identifikátory příkazů sady Visual Studio a identifikátory GUID](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

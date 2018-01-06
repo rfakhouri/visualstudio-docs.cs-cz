@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d586851da7d02f89335a3920364e25b7f4876860
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 05805e5cf4b21f4c7d233cab7dd8421ee76f626f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-overview"></a>Přehled služby starší verze jazyka
 Služba jazyka poskytuje podporu editor, který umožňuje implementovat určité [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] funkce. Třídy spravované Framework balíčku (MPF) jazyk služby poskytují plnou podporu pro často používané funkce a částečné podporu pro další funkce.  
@@ -63,34 +64,34 @@ Služba jazyka poskytuje podporu editor, který umožňuje implementovat určit�
   
 -   [Registrace služby jazyk starší verze](../../extensibility/internals/registering-a-legacy-language-service1.md)  
   
--   [Syntaxe barevné ve službě jazyk starší verze](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
+-   [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)  
   
--   [Související závorky ve službě jazyk starší verze](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
+-   [Související závorky ve službě starší verze jazyka](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)  
   
--   [Osnova ve službě jazyk starší verze](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
+-   [Osnova ve službě starší verze jazyka](../../extensibility/internals/outlining-in-a-legacy-language-service.md)  
   
--   [Přidávání poznámek kódu ve službě jazyk starší verze](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
+-   [Kód komentářů ve službě starší verze jazyka](../../extensibility/internals/commenting-code-in-a-legacy-language-service.md)  
   
--   [Přeformátování kódu ve službě jazyk starší verze](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
+-   [Přeformátování kódu ve službě starší verze jazyka](../../extensibility/internals/reformatting-code-in-a-legacy-language-service.md)  
   
--   [Vlastní vlastnosti dokumentu ve službě jazyk starší verze](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
+-   [Vlastní vlastnosti dokumentu ve službě starší verze jazyka](../../extensibility/internals/custom-document-properties-in-a-legacy-language-service.md)  
   
--   [Podpora pro fragmenty kódu ve službě jazyk starší verze](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
+-   [Podpora pro fragmenty kódu ve službě starší verze jazyka](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)  
   
--   [Podpora pro navigační panel ve službě jazyk starší verze](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
+-   [Podpora navigačního panelu ve službě starší verze jazyka](../../extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service.md)  
   
--   [Dokončení slova ve službě jazyk starší verze](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
+-   [Dokončování slov ve službě starší verze jazyka](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)  
   
--   [Dokončení člen ve službě jazyk starší verze](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
+-   [Dokončování členů ve službě starší verze jazyka](../../extensibility/internals/member-completion-in-a-legacy-language-service.md)  
   
 -   [Informace o parametrech ve službě jazyk starší verze](../../extensibility/internals/parameter-info-in-a-legacy-language-service2.md)  
   
--   [Rychlé informace ve službě jazyk starší verze](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
+-   [Rychlé informace ve službě starší verze jazyka](../../extensibility/internals/quick-info-in-a-legacy-language-service.md)  
   
--   [Podpora pro automobily okna ve službě jazyk starší verze](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
+-   [Podpora okna Automatické hodnoty ve službě starší verze jazyka](../../extensibility/internals/support-for-the-autos-window-in-a-legacy-language-service.md)  
   
--   [Ověřování zarážky ve službě jazyk starší verze](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
+-   [Ověřování zarážek ve službě starší verze jazyka](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Implementace služby jazyk starší verze](../../extensibility/internals/implementing-a-legacy-language-service1.md)   
- [Rozšíření služby starší verze jazyka](../../extensibility/internals/legacy-language-service-extensibility.md)
+ [Rozšíření služeb starší verze jazyka](../../extensibility/internals/legacy-language-service-extensibility.md)

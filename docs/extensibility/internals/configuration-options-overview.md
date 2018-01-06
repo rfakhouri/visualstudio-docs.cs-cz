@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f91f6c3668b7cc1ce881dd0b98d1bd5dddebf530
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuration-options-overview"></a>Přehled možností konfigurace
 Projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] může podporovat víc konfigurací, které mohou být vytvořeny, vyladěnou, spuštění nebo nasazené. Konfigurace je typu sestavení popsané s pojmenovanou sadu vlastností, obvykle přepínače kompilátoru a umístění souborů. Ve výchozím nastavení nová řešení obsahovat dvě konfigurace Debug a Release. Tyto konfigurace provádět pomocí obnoveno výchozí nastavení, nebo upravit tak, aby splňovaly vaše konkrétní požadavky řešení a projektu. Některé balíčky se dají vytvářet dvěma způsoby: jako ActiveX editor nebo jako součást na místě. Projekty pro podporu více konfigurací, ale není nutné. Pokud je dostupný pouze jednu konfiguraci, tato konfigurace je namapována na všechny konfigurace řešení.  

@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8795ba56833282bac600db79ba33da70aa6c3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4229d9045dfe64fcb320eca7cf004de56e7f8f0d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Vytvoření ovládacího prvku Windows Forms sada nástrojů
 Šablony položek ovládacího prvku Windows Forms sada nástrojů, která je součástí sady Visual Studio Extensibility Tools (VS SDK) umožňuje vytvoření ovládacího prvku, který je automaticky přidán do **sada nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak používat šablony k vytvoření ovládacího prvku jednoduchý čítač, který distribuujete do jiných uživatelů.  
@@ -215,4 +216,4 @@ ms.lasthandoff: 10/31/2017
  [Rozšíření dalšími částmi sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Vytvoření ovládacího prvku sady nástrojů WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Rozšíření dalšími částmi sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
- [Základy vývoj ovládacího prvku Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)
+ [Základní informace o vývoji ovládacích prvků Windows Forms](/dotnet/framework/winforms/controls/windows-forms-control-development-basics)

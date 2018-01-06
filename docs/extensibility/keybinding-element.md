@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2f620d895defbeeb3317f4a977db454a14ce3adc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 2019a34e55148007cd75df12212bd4b0a897159c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keybinding-element"></a>KeyBinding Element
 KeyBinding element určuje klávesové zkratky pro příkazy.  
@@ -60,7 +61,7 @@ KeyBinding element určuje klávesové zkratky pro příkazy.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Element klíčových vazeb](../extensibility/keybindings-element.md)|Elementy KeyBinding skupin a dalších klíčových vazeb seskupení.|  
+|[KeyBindings – element](../extensibility/keybindings-element.md)|Elementy KeyBinding skupin a dalších klíčových vazeb seskupení.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -75,4 +76,4 @@ KeyBinding element určuje klávesové zkratky pro příkazy.
   
 ## <a name="see-also"></a>Viz také  
  [Element klíčových vazeb](../extensibility/keybindings-element.md)   
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

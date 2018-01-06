@@ -20,11 +20,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e30d1fbd8cd23a514d1036bc43c809626c665d73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78806b2ace7872db06ff403bcae28bb6eff21cd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Postupy: Použití vizualizéru stromu WPF
 Můžete vizualizéru stromu WPF a prozkoumejte vizuálním stromu WPF objektu a zobrazte vlastnosti závislosti WPF pro objekty, které jsou obsaženy ve stromové struktuře. Další informace o visual stromy najdete v tématu [stromy v grafickém subsystému WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Další informace o vlastnostech závislostí v tématu [přehled vlastností závislostí](/dotnet/framework/wpf/advanced/dependency-properties-overview).  
@@ -66,4 +67,4 @@ Můžete vizualizéru stromu WPF a prozkoumejte vizuálním stromu WPF objektu a
 ## <a name="see-also"></a>Viz také  
  [Vytvořit vlastní Vizualizérech](../debugger/create-custom-visualizers-of-data.md)   
  [Stromy v grafickém subsystému WPF](/dotnet/framework/wpf/advanced/trees-in-wpf)   
- [Přehled vlastností závislostí](/dotnet/framework/wpf/advanced/dependency-properties-overview)
+ [Přehled vlastností závislosti](/dotnet/framework/wpf/advanced/dependency-properties-overview)

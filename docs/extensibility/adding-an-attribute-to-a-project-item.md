@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fce6b9770703afda8e8c1af6e17c10287625f647
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 011c6dbf74f12921b0458db9990b9f1e0e807c48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>Přidání atributu do položky projektu
 Metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> získávat a nastavovat hodnoty atributů položka projektu. SetItemAttribute vytvoří atribut Pokud již neexistuje, přidání do metadata položky projektu.  
@@ -49,4 +50,4 @@ Metody <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetIte
     ```  
   
 ## <a name="see-also"></a>Viz také  
- [Zachování dat v souboru projektu nástroje MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+ [Trvalá data v souboru projektu nástroje MSBuild](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

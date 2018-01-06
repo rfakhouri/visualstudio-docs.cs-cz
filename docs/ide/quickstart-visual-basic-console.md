@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 330594aaccbd691a548fec9c237de91d471f4020
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Rychlý úvod: Vytvoření první aplikace konzoly v sadě Visual Studio s jazykem Visual Basic
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou aplikaci jazyka Visual Basic, která běží na konzole.
@@ -43,7 +44,7 @@ Nejdřív vytvoříte projekt aplikace Visual Basic. Typ projektu se dodává s 
      ![Vývoj pro různé platformy zatížení .NET core v instalačním programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ## <a name="create-the-application"></a>Vytvoření aplikace
-Po výběru vaše šablona projektu jazyka Visual Basic a název projektu, Visual Studio vytvoří jednoduchou aplikaci "Hello World". Zavolá [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String) metodu pro zobrazení řetězcového literálu "Hello, World!" v okně konzoly.
+Po výběru vaše šablona projektu jazyka Visual Basic a název projektu, Visual Studio vytvoří jednoduchou aplikaci "Hello World". Zavolá <xref:System.Console.WriteLine%2A> metodu pro zobrazení řetězcového literálu "Hello, World!" v okně konzoly.
 
 ![Zobrazit ve výchozím kódu Hello, World ze šablony](../ide/media/vb-console-helloworld-template.png)
 
@@ -56,7 +57,7 @@ Když to uděláte, v okně konzoly je viditelná jenom na chvíli, než toto ok
 ### <a name="add-some-code"></a>Přidat kód
 Přidejme nějaký kód pozastavení aplikace a pak požádejte na vstup uživatele.
 
-1. Přidejte následující kód ihned po volání [Console.WriteLine(System.String)](https://docs.microsoft.com/en-us/dotnet/api/system.console.writeline?view=netframework-4.7.1#System_Console_WriteLine_System_String) metoda:
+1. Přidejte následující kód ihned po volání <xref:System.Console.WriteLine%2A> metoda:
 
    ```vb
    Console.Write("Press any key to continue...")

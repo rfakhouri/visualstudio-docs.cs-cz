@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 561c7e12b1c8e888513b44b8fec36f8bb5e5f9fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf92d22b3c27d23fa90b6d9be13cf4fa6604384a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>Technologie LINQ to XML dynamické vlastnosti
 Tato část obsahuje referenční informace o dynamických vlastností v technologii LINQ to XML. Konkrétně tyto vlastnosti jsou vystavené <xref:System.Xml.Linq.XAttribute> a <xref:System.Xml.Linq.XElement> třídy, které se nacházejí v <xref:System.Xml.Linq> oboru názvů.  
@@ -35,8 +36,8 @@ Tato část obsahuje referenční informace o dynamických vlastností v technol
   
 |Téma|Popis|  
 |-----------|-----------------|  
-|[Dynamické vlastnosti XAttribute – třída](../designers/xattribute-class-dynamic-properties.md)|Obsahuje podrobné informace o dynamické vlastnosti, které jsou zveřejněné <xref:System.Xml.Linq.XAttribute> třídy.|  
-|[Dynamické vlastnosti XElement – třída](../designers/xelement-class-dynamic-properties.md)|Obsahuje podrobné informace o dynamické vlastnosti, které jsou zveřejněné <xref:System.Xml.Linq.XElement> třídy.|  
+|[Dynamické vlastnosti třídy XAttribute](../designers/xattribute-class-dynamic-properties.md)|Obsahuje podrobné informace o dynamické vlastnosti, které jsou zveřejněné <xref:System.Xml.Linq.XAttribute> třídy.|  
+|[Dynamické vlastnosti třídy XElement](../designers/xelement-class-dynamic-properties.md)|Obsahuje podrobné informace o dynamické vlastnosti, které jsou zveřejněné <xref:System.Xml.Linq.XElement> třídy.|  
   
 ## <a name="reference"></a>Odkaz  
  <xref:System.Xml.Linq>  

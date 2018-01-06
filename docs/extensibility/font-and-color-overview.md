@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13a2a8b584af507f8937fd6abb46c85f329de0b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09597130864ae0c1e79ef7470c58b25dde8a9263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="font-and-color-overview"></a>Písma a barev – přehled
 Toto téma popisuje nastavení písma a barvy textu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Je také seznámíte se základními pojmy, kategorie a zobrazení položek a se popisuje, jak VSPackages a editoru základní použít atributy textu.  
@@ -82,4 +83,4 @@ Toto téma popisuje nastavení písma a barvy textu v [!INCLUDE[vsprvs](../code-
   
 ## <a name="see-also"></a>Viz také  
  [Starší verze rozhraní v editoru](../extensibility/legacy-interfaces-in-the-editor.md)   
- [Ve službě jazyk starší zvýrazňování syntaxe](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
+ [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

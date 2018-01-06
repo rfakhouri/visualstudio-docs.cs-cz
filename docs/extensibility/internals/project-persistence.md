@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7bb782b79c00576a431c8f4453ddf020606aaf5a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d77c307ec7b732ba727b7210b4f4eaacb44584aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-persistence"></a>Trvalost projektu
 Trvalost je potřeba zvážit důležité pro váš projekt. Většina projektů pomocí položky projektu, které představují soubory; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] také podporuje projekty, jejichž data jsou nezaložené souboru. Oba soubory vlastněné projekt a soubor projektu musí nastavit jako trvalý. Prostředí IDE dá pokyn projekt uložit sám sebe nebo položka projektu.  
@@ -47,4 +48,4 @@ Trvalost je potřeba zvážit důležité pro váš projekt. Většina projektů
   
 ## <a name="see-also"></a>Viz také  
  [Kontrolní seznam: Vytvoření nové typy projektu](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Vytváření instancí projektu pomocí objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
+ [Vytváření instancí projektu pomocí objektů pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

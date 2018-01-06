@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3eeb080af73966b48cf8be543faa4276ae3b438c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Postupy: Vytvoření přechodu shaderu založeného na geometrii
 Tento dokument ukazuje, jak vytvořit na základě geometrie přechodu shaderu pomocí návrháře shaderu a jazyk směrované shaderu grafu. Tato shaderu škáluje konstantní hodnotu barva RGB podle výšky každého bodu objektu v prostoru world.  
@@ -77,4 +78,4 @@ Tento dokument ukazuje, jak vytvořit na základě geometrie přechodu shaderu p
  [Postupy: Model 3D geologické struktury](../designers/how-to-model-3-d-terrain.md)   
  [Postupy: Vytvoření Texture ve stupních šedi shaderu](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Návrhář shaderu](../designers/shader-designer.md)   
- [Uzly návrháře shaderu](../designers/shader-designer-nodes.md)
+ [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

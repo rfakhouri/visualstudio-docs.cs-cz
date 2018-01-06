@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2727f17665d845029fcf32dbcd12dd7603dad519
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: e4edcc21986ae0fd033228971697057932e63670
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Návod: Přizpůsobení vložit, aktualizovat a odstraňovat chování tříd entit
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) poskytuje návrhové ploše k vytváření a úpravy [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] třídy (třídy entity), které jsou založeny na objekty v databázi. Pomocí [technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), můžete použít technologie LINQ pro přístup k databázím SQL. Další informace najdete v tématu [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/).  
@@ -264,7 +265,7 @@ V závislosti na požadavcích vaší aplikace, existuje několik kroků, které
   
 -   Implementujte souběžnost kontroly během aktualizace. Informace najdete v tématu [optimistickou metodu souběžného: Přehled](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).  
   
--   Přidání dotazů LINQ do filtru data. Informace najdete v tématu [Úvod do dotazů LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md).  
+-   Přidání dotazů LINQ do filtru data. Informace najdete v tématu [Úvod do dotazů LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).  
   
 ## <a name="see-also"></a>Viz také
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)     

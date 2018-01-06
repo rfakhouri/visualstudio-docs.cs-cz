@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e409d31b4f1e16f735b9b4ef22d42dedccf55a9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c2fc24775cee3d40857166d3415f90b2adf756
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-vspackages"></a>Řešení potíží s VSPackages
 Následují nejčastější problémy, které může mít s vaší VSPackage a tipy pro řešení problémů.  
@@ -127,4 +128,4 @@ Následují nejčastější problémy, které může mít s vaší VSPackage a t
  Ujistěte se, že má položka InprocServer32 správnou cestu k souboru VSPackage dll.  
   
 ## <a name="see-also"></a>Viz také  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [Balíčky VSPackage](../extensibility/internals/vspackages.md)

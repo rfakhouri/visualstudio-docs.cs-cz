@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be50964aaadad30aa13d6627be2ad1637e6123b3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb683afe63880af9d1a666436739140519f7339b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkframe"></a>IDiaStackWalkFrame
 Udržuje zásobník kontextu mezi volání [idiaframedata::Execute –](../../debugger/debug-interface-access/idiaframedata-execute.md) metoda.  
@@ -34,11 +35,11 @@ IDiaStackWalkFrame : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiastackwalkframe::get_registervalue –](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|Načte hodnotu registru.|  
-|[Idiastackwalkframe::put_registervalue –](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Nastaví hodnotu registru.|  
-|[Idiastackwalkframe::readmemory –](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Přečte paměti z bitové kopie.|  
-|[Idiastackwalkframe::searchforreturnaddress –](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Vyhledá zadaný zásobníku pro nejbližší funkce zpáteční adresu.|  
-|[Idiastackwalkframe::searchforreturnaddressstart –](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Vyhledá zadaný zásobníku pro zpáteční adresu nebo blízko zadaná adresa.|  
+|[IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)|Načte hodnotu registru.|  
+|[IDiaStackWalkFrame::put_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-put-registervalue.md)|Nastaví hodnotu registru.|  
+|[IDiaStackWalkFrame::readMemory](../../debugger/debug-interface-access/idiastackwalkframe-readmemory.md)|Přečte paměti z bitové kopie.|  
+|[IDiaStackWalkFrame::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddress.md)|Vyhledá zadaný zásobníku pro nejbližší funkce zpáteční adresu.|  
+|[IDiaStackWalkFrame::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkframe-searchforreturnaddressstart.md)|Vyhledá zadaný zásobníku pro zpáteční adresu nebo blízko zadaná adresa.|  
   
 ## <a name="remarks"></a>Poznámky  
  Toto rozhraní se používá během spuštění programu pro čtení a zápis registry a také přístup k paměti a najít návratové adresy.  
@@ -55,4 +56,4 @@ IDiaStackWalkFrame : IUnknown
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaframedata::Execute –](../../debugger/debug-interface-access/idiaframedata-execute.md)
+ [IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c694295c3456accc8d2c1cd3b0a1ec20f59343c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7208d38966e2caa9f9510c48c34952742d06c1b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Dokončování příkazů ve službě jazyk starší verze
 Dokončování příkazů je proces, pomocí kterého služba jazyka pomáhá uživatelům dokončit klíčové slovo jazyka nebo element, který zahájil zadáním v editoru jádra. Toto téma popisuje, jak dokončování funguje a jak implementovat ve službě jazyk.  
@@ -40,4 +41,4 @@ Dokončování příkazů je proces, pomocí kterého služba jazyka pomáhá u�
  Při zadání aktivační událost se v editoru – konkrétně textová vyrovnávací paměť – vaše služba jazyka pak zavolá <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> metoda. To způsobí, že editor zprovoznit uživatelského rozhraní, takže uživatel může vybrat z kandidáty dokončení příkazu. Tato metoda vyžaduje, abyste implementovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> a <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> příznaky jako parametry. V rozbalovacím seznamu se zobrazí seznam položek dokončení. Uživatel se stále zadáte, vybrat v rámci pole se seznamem aktualizován, aby odrážel zadali nejvíce odpovídá poslední znaky. Implementuje editoru základní uživatelské rozhraní pro dokončování příkazů, ale služba jazyka musí implementovat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> rozhraní k definování sady položek dokončení kandidáta pro příkaz.  
   
 ## <a name="see-also"></a>Viz také  
- [Brání starší verze jazyka služby příkazy](../../extensibility/internals/intercepting-legacy-language-service-commands.md)
+ [Příkazy zachytávání služby starší verze jazyka](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

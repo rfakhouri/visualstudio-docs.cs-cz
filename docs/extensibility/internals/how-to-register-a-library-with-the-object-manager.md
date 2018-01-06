@@ -18,11 +18,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6782e1cb84f4fbbe63a0e69a5c684d44ec7ccd21
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4ecb20a39657fd9a1e668321654dd2a293807adf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Postupy: registrace knihovny pomocí Správce objektu
 Procházení symboly nástrojů, jako je například **zobrazení tříd**, **Prohlížeč objektů**, **volání prohlížeče** a **Najít výsledky Symbol**, vám umožní zobrazit symboly v projektu nebo v externích součástí. Symboly zahrnují obory názvů, třídy, rozhraní, metod a další elementy jazyka. Sledování těchto symbolů do knihoven a umístěte je do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] správce objektů, které naplňuje nástroje s daty.  
@@ -170,4 +171,4 @@ Procházení symboly nástrojů, jako je například **zobrazení tříd**, **Pr
 ## <a name="see-also"></a>Viz také  
  [Rozšíření služby starší verze jazyka](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Podpůrné nástroje procházení – Symbol](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Postupy: vystavení seznam symbolů poskytované knihovny ke správci objektů](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Postupy: Zveřejnění seznamů symbolů poskytovaných knihovnou správci objektů](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

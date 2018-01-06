@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45996e66500ebf275154553774d5116c6075af0f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea164deb661dfe093ee81d40658c4f9ef6c57558
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Informace přístupů, které popisuje proces mapování z bloku bajtů image textu číslo řádku zdrojového souboru.  
@@ -34,20 +35,20 @@ IDiaLineNumber : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idialinenumber::get_compiland –](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Získá odkaz na symbol pro kompilace, která podílí bajtů textu bitové kopie.|  
-|[Idialinenumber::get_sourcefile –](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Získá odkaz na objekt zdrojového souboru.|  
-|[Idialinenumber::get_linenumber –](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Načte číslo řádku ve zdrojovém souboru.|  
-|[Idialinenumber::get_linenumberend –](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Načte číslo řádku založené na jeden zdroj, které končí příkaz nebo výraz.|  
-|[Idialinenumber::get_columnnumber –](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|Načte číslo sloupce, které začíná výraz nebo příkaz.|  
-|[Idialinenumber::get_columnnumberend –](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|Načte číslo sloupce, které končí výraz nebo příkaz.|  
-|[Idialinenumber::get_addresssection –](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Načte část oddílu adresa paměti, kde začíná blok.|  
-|[Idialinenumber::get_addressoffset –](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Načte posunutí část adresy paměti, kde začíná blok.|  
-|[Idialinenumber::get_relativevirtualaddress –](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Načte obrázek relativní virtuální adresy (RVA) blok.|  
-|[Idialinenumber::get_virtualaddress –](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Načte virtuální adresy (VA) bloku.|  
-|[Idialinenumber::get_length –](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Získá počet bajtů v bloku.|  
-|[Idialinenumber::get_sourcefileid –](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Načte identifikátor jedinečný zdroj souborů pro zdrojový soubor, který podílí tohoto řádku.|  
-|[Idialinenumber::get_statement –](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Získá příznak označující, že tyto informace řádku popisuje začátku prohlášení ve zdroji programu.|  
-|[Idialinenumber::get_compilandid –](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Načte jedinečný identifikátor pro kompilace, která podílí tohoto řádku.|  
+|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Získá odkaz na symbol pro kompilace, která podílí bajtů textu bitové kopie.|  
+|[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Získá odkaz na objekt zdrojového souboru.|  
+|[IDiaLineNumber::get_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Načte číslo řádku ve zdrojovém souboru.|  
+|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Načte číslo řádku založené na jeden zdroj, které končí příkaz nebo výraz.|  
+|[IDiaLineNumber::get_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|Načte číslo sloupce, které začíná výraz nebo příkaz.|  
+|[IDiaLineNumber::get_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|Načte číslo sloupce, které končí výraz nebo příkaz.|  
+|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Načte část oddílu adresa paměti, kde začíná blok.|  
+|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Načte posunutí část adresy paměti, kde začíná blok.|  
+|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Načte obrázek relativní virtuální adresy (RVA) blok.|  
+|[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Načte virtuální adresy (VA) bloku.|  
+|[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Získá počet bajtů v bloku.|  
+|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Načte identifikátor jedinečný zdroj souborů pro zdrojový soubor, který podílí tohoto řádku.|  
+|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Získá příznak označující, že tyto informace řádku popisuje začátku prohlášení ve zdroji programu.|  
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Načte jedinečný identifikátor pro kompilace, která podílí tohoto řádku.|  
   
 ## <a name="remarks"></a>Poznámky  
   
@@ -146,4 +147,4 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenumlinenumbers –](../../debugger/debug-interface-access/idiaenumlinenumbers.md)   
  [Idiaenumlinenumbers::Item –](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)   
- [Idiaenumlinenumbers::Next –](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)
+ [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 9dfcba23b9c8df3bbd62a0ef4dd0c4d98f578514
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 Textové řetězce ve vaší aplikaci v době běhu můžete vygenerovat pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] runtime textové šablony. Počítače, kde se spouští aplikace není nutné mít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Modul runtime šablony se někdy označuje jako "zpracované textové šablony" vzhledem k tomu, že v době kompilace Šablona generuje kód, který se spustí v době běhu.  

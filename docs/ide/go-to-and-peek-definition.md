@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 467d119e67db254b6e15630c08c411bb15283351
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db67f01ff2a58ee856e4588df8770fc4edef8ca2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-definition-and-peek-definition"></a>Přejděte do definice a funkce Náhled definice  
 Přejít k definici a prohlížení definice funkce umožňují snadno zobrazit definici typ nebo člen.
@@ -51,4 +52,4 @@ Další informace najdete v tématu [postupy: zobrazení a úpravy kódu podle p
 
 ## <a name="see-also"></a>Viz také  
 [Navigace v kódu](../ide/navigating-code.md)  
-[Postupy: zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+[Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  

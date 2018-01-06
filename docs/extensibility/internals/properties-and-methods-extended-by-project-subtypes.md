@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fd4e46148950af925b7b41c4e3b5bd66fce5063c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 288e8f680d12aeffb2979c3f0d89b44b0553b62e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>Vlastnosti a metody prodloužena podtypů projektu
 Podtyp projekt obsahuje mnoho napájení, jež ovlivňují chování projektu, protože je sestavený jako agregátoru základní projektu. Tento oddíl shrnuje některé funkce, které mohou být rozšířené nebo upraveném podtypů projektu.  
@@ -52,4 +53,4 @@ Podtyp projekt obsahuje mnoho napájení, jež ovlivňují chování projektu, p
  Základní projekt poskytuje výchozí implementaci třídy výše uvedené vlastnosti. Získá základní projekt tak, že volání `QueryInterface` pro <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> na dílčí nejkrajnější projektu, což umožňuje dílčí projektu přepsat implementace vlastnosti.  
   
 ## <a name="see-also"></a>Viz také  
- [Návrh podtypů projektu](../../extensibility/internals/project-subtypes-design.md)
+ [Návrh podtypů projektů](../../extensibility/internals/project-subtypes-design.md)

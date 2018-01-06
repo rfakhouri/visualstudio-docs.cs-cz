@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4dd74bc1a59d93e2eef9c7dc00d8b83d53628a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cb73a5e5f40d21a5b17faae9602e40f7cd39d48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Vytvoření okna nástroj s více instancemi
 Okno nástroje můžete naprogramovat tak, aby více instancí může být otevřena současně. Ve výchozím nastavení nástroj windows může mít pouze jednu instanci otevřete.  

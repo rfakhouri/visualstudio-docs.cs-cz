@@ -23,11 +23,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0d58ea851423e9239d8685f89890b5d9e152d53
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5a9bda1bdf3fadffedc71873ddec6733b68651a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Postupy: Ověření nastavení vlastnosti služby IIS
 Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu služby IIS. Tyto vlastnosti musí být správně nastavené pro aplikaci spustit, tak ověření těchto nastavení je často nezbytným krokem při řešení potíží.  
@@ -80,4 +81,4 @@ Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu 
 9. Klikněte na tlačítko **OK** zavřete **Správce Internetové informační služby (IIS)**, **Správce služeb Internetu**, nebo **Internetová informační služba**dialogové okno.  
   
 ## <a name="see-also"></a>Viz také  
- [Řešení potíží](../debugger/debugging-web-applications-troubleshooting.md)
+ [Odstraňování potíží](../debugger/debugging-web-applications-troubleshooting.md)

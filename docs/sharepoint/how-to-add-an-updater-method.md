@@ -24,11 +24,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3270e35f270ba40534d3a3a9fce679bfd8f6534
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: a03a4038418415889d5394111e0960f0edf01b22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-an-updater-method"></a>Postupy: Přidání aktualizační metody
   Můžete povolit uživatelům aktualizovat obchodní data v externí seznam serveru SharePoint tak, že vytvoříte *aktualizační* metoda. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
  [Postupy: přidání metody odstranění](../sharepoint/how-to-add-a-deleter-method.md)   
  [Přehled nástrojů pro navrhování modelu služby BDC](../sharepoint/bdc-model-design-tools-overview.md)   
  [Postupy: Přidání parametru k metodě](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [Postupy: definování Instance metody](../sharepoint/how-to-define-a-method-instance.md)  
+ [Postupy: Definování instance metody](../sharepoint/how-to-define-a-method-instance.md)  
   
   

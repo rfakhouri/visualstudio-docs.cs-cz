@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kódu – odkaz schématu
 IntelliSense – fragmenty kódu jsou předem vytvořené části kódu, které jsou připravené pro vložení do vaší aplikace pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Svou produktivitu můžete zvýšit tak, že vytvoříte fragmenty kódu, které snižují množství času stráveného zadáváním opakujícího se kódu nebo hledáním ukázek. Schéma XML fragment kódu technologie IntelliSense vám pomůže vytvořit vlastní fragmenty kódu a přidat je do fragmenty kódu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] již obsahuje.  

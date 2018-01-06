@@ -35,11 +35,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3786e74f9913400e7a95d962c8512d2263d6ae39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29407d3f8d95f815b588fff30a4e1268904eb54d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-tools-in-visual-studio"></a>Nástroje XML v sadě Visual Studio
 *Jazyk XML (Extensible Markup)* je značka jazyk, který poskytuje formát pro popisující data. To zajišťuje přesnější deklarace výsledků vyhledávání a užitečnější napříč různými platformami. Kromě toho XML umožňuje oddělení prezentace z data. Například ve formátu HTML je použití značek ke prohlížeč zobrazit data jako tučné a kurzíva; v XML použijete jenom k popisu dat, jako název města, teploty a barometrický tlak značky. V XML vytvoříte pomocí šablony stylů například šablony stylů XSL (Extensible Language) a kaskádových stylů (CSS) pro data k dispozici v prohlížeči. XML odděluje data od prezentaci a proces. To umožňuje zobrazit a zpracovat data, protože chcete, s použitím různých šablony stylů a aplikace.  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/31/2017
  Popisuje třídy a další prvky, které tvoří <xref:System.Xml.Serialization> obor názvů a poskytuje odkazy na podrobnější informace o jednotlivých položkách.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [XML Document Object Model (DOM).](/dotnet/standard/data/xml/xml-document-object-model-dom)  
+ [Model DOM (Document Object Model) dokumentu XML](/dotnet/standard/data/xml/xml-document-object-model-dom)  
  Popisuje, jak <xref:System.Xml.XmlDocument> a její související třídy dodržovat W3C Document Object Model (základní) úroveň 1 a 2 úrovni oboru názvů podporu specifikace.  
   
  [Načítání kódu XML s XmlReader](http://msdn.microsoft.com/en-us/3029834c-a27e-4331-b7aa-711924062182)  
@@ -83,8 +84,8 @@ ms.lasthandoff: 10/31/2017
  [Transformace XSLT](/dotnet/standard/data/xml/xslt-transformations)  
  Popisuje, jak <xref:System.Xml.Xsl.XslCompiledTransform> třída implementuje doporučení XSLT 1.0.  
   
- [Zpracování kódu XML dat pomocí jazyka XPath datový Model](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)  
+ [Zpracování dat XML pomocí modelu dat XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)  
  Popisuje, jak <xref:System.Xml.XPath.XPathNavigator> třída může zpracovat data XML uložené v <xref:System.Xml.XPath.XPathDocument> nebo <xref:System.Xml.XmlDocument> objektu. <xref:System.Xml.XPath.XPathNavigator> Třídy je založena na XQuery 1.0 a XPath 2.0 datový Model a slouží k přejděte a upravit XML data.  
   
- [Objektový Model schématu XML (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)  
+ [Model objektu schématu (SOM) XML](/dotnet/standard/data/xml/xml-schema-object-model-som)  
  Popisuje třídy používané pro vytváření a manipulace s nimi schémat XML, tím, že poskytuje <xref:System.Xml.Schema.XmlSchema> třídy se načíst a upravit schéma.

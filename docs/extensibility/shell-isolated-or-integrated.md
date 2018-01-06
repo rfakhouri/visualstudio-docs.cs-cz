@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f06af0b884d404b3fd2e8e36cac235c10d254bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 787fd7c6980df9809fed9582f4ec8da81de8f862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-isolated-or-integrated"></a>Prostředí shell (izolovaný nebo integrované)
 Můžete vytvořit vlastní aplikace založené na sadě Visual Studio v režimu integrovaném nebo izolované. V integrovaném režimu jsou k dispozici kromě aplikace mnoho funkcí sady Visual Studio. V izolovaném režimu zvolte podmnožinu funkcí sady Visual Studio, které chcete distribuovat spolu s vlastní rozšíření.  
@@ -60,4 +61,4 @@ Můžete vytvořit vlastní aplikace založené na sadě Visual Studio v režimu
  Další informace o Distribuovatelné balíčky, najdete v článku [Visual Studio Extensibility stáhne](http://go.microsoft.com/fwlink/?LinkID=119298) webu.  
   
 ## <a name="see-also"></a>Viz také  
- [Přesouvání rozšíření Visual Studia](../extensibility/shipping-visual-studio-extensions.md)
+ [Odesílání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

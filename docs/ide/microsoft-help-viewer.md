@@ -22,11 +22,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d770c1b7d05117243643680898348b71cf0a978d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 Můžete nainstalovat a zobrazit obsah pro různé produkty a technologie v místním počítači pomocí nápovědy společnosti Microsoft, včetně sady Visual Studio, rozhraní .NET Framework, referenční informace k jazyku, SQL Server a Windows Development. Prohlížeč nápovědy umožňuje:  
@@ -85,4 +86,4 @@ Panel nástrojů v okně prohlížeče nápovědy obsahuje následující tlač�
 ## <a name="see-also"></a>Viz také
 [Instalace programu Microsoft Help Viewer](../ide/microsoft-help-viewer-installation.md)  
 [Příručka správce Help Vieweru](../ide/help-viewer-administrator-guide.md)  
-[Instalace a Správa místního obsahu](../ide/install-and-manage-local-content.md)
+[Instalace a správa místního obsahu](../ide/install-and-manage-local-content.md)

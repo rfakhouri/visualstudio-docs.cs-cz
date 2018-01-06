@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b6556c2b1dc486754bb4dff0dc73e6f19263a6c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 0c827df346b6521303d5d42c3423b513ed497086
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody instrumentace nástrojích pro profilaci ke shromažďování podrobných dat časování, data přidělení paměti .NET a životnosti objektů .NET z dynamicky kompilovat [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.  
@@ -141,7 +142,7 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
     |**klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**Hodnota**|`PerformanceToolsFolder`**\VSInstr.Exe**|  
+    |**value**|`PerformanceToolsFolder`**\VSInstr.Exe**|  
   
 4.  Přidejte další **přidat** jako podřízený element **appSettings** elementu.  
   
@@ -150,7 +151,7 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
     |**klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
-    |**Hodnota**|`PerformanceToolsFolder`|  
+    |**value**|`PerformanceToolsFolder`|  
   
      `PerformanceToolsFolder`je cesta profileru spustitelné soubory. Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována ve výchozím umístění, bude hodnota **10.0\Team C:\Program Files\Microsoft Visual Studio Tools nástroje**  
   

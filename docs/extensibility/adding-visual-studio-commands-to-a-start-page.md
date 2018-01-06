@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 973e0cfbceb6cbf67c5bc11cdde370607334809a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: efb332de822bd86cc95c4786dbca3472fd0984cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Přidání příkazů sady Visual Studio na úvodní stránky
 Když vytvoříte vlastní úvodní stránky, můžete do něj může přidat příkazy sady Visual Studio. Tento dokument popisuje různé způsoby, jak vytvořit vazbu příkazy sady Visual Studio na objekty XAML na úvodní stránce.  
@@ -111,4 +112,4 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
  Příklad, naleznete v části [návod: ukládání nastavení uživatele na stránce Start](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Přidání uživatelského ovládacího prvku do úvodní stránky](../extensibility/adding-user-control-to-the-start-page.md)
+ [Přidání uživatelského ovládacího prvku na úvodní stránku](../extensibility/adding-user-control-to-the-start-page.md)

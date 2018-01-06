@@ -13,11 +13,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f57cfea2655061985f58692c2d6c47c6433230bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de2af589a92e401ecf549726dea1a5ae300a20bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio
 Blend for Visual Studio vám pomůže návrhu založených na XAML Windows a webové aplikace. Poskytuje stejné prostředí základní XAML návrhu jako Visual Studio a přidá vizuální nástroje pro pokročilé úlohy, jako je například animace a chování. (Porovnání mezi nástroje najdete v tématu [navrhování XAML v sadě Visual Studio a nástroj Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).)
@@ -97,7 +98,7 @@ Pokud jste ještě Blend for Visual Studio, pozorně se seznámit s jedinečné 
   
  ![Panel vlastnosti](../designers/media/blend5_properties_panel.png "Blend5_properties_panel")  
   
- **Kategorie** rozbalení a sbalení kategorie vlastností. Klikněte na tlačítko **rozbalte** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") a **sbalit** ![sbalit](../designers/media/b5_collapse_button.png "b5_collapse_button") zobrazit nebo skrýt podrobnosti kategorie.  
+ **Kategorie** rozbalení a sbalení kategorie vlastností. Klikněte na tlačítko **rozbalte** ![ ] (../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") a **sbalit** ![sbalit] (../designers/media/b5_collapse_button.png "b5_collapse_button") zobrazit nebo skrýt podrobnosti kategorie.  
   
 |||  
 |-|-|  

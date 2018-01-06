@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cf17377de9a21f52f15b263be07fcacb6966096
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 053b1ea5903675f60d59c3574f982f2461e39e4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---sampling-data"></a>Zobrazení modulů – Data vzorkování
 Zobrazení modulů vzorkování dat výkonu zobrazí data, která se seskupují po moduly, které byly vzorkovat v profilaci data. Každý modul je kořenem hierarchickou stromovou strukturu. Jen Vzorkovaná funkce modulu jsou uvedené pod tímto uzlem modulu.  

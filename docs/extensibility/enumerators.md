@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b9f71c83d70dc6daca7a3906b784d6babf8dea7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7929ead4ced01561adb8c11dcaa56bc97f57884b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerators"></a>Výčty
 Tato část uvádí enumerátor datových typů v rozhraní API Plug-in ovládací prvek zdroje, musíte znát modulu plug-in zdrojového kódu.  
@@ -36,7 +37,7 @@ Tato část uvádí enumerátor datových typů v rozhraní API Plug-in ovládac
  Obsahuje pojmenované konstantní hodnoty, které určují stav adresáře v rámci správy zdrojového kódu.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Vytvoření ovládacího prvku zdroj modulu Plug-in](../extensibility/internals/creating-a-source-control-plug-in.md)  
+ [Vytvoření modulu plug-in správy zdrojového kódu](../extensibility/internals/creating-a-source-control-plug-in.md)  
  Definuje sadu SDK Plug-in Zdroj ovládacího prvku a popisuje zahrnuté prostředky.  
   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)  
@@ -48,5 +49,5 @@ Tato část uvádí enumerátor datových typů v rozhraní API Plug-in ovládac
  [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)  
  Popisuje funkce zpětného volání, který je používán [SccOpenProject](../extensibility/sccopenproject-function.md) pro zobrazení zpráv ze zdrojového kódu modulu plug-in pomocí rozhraní IDE.  
   
- [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)  
+ [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)  
  Obsahuje úplný seznam všech elementů v rozhraní API ovládacího prvku Plug-in zdroje.

@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c93a889ca1bfa911a9f0934302450f6c1ec5413
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d01c655924bfbeae525c91ffb231f4d2b3d2c38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parameter-nodes"></a>Uzly parametru
 V Návrháři shaderu parametr uzly představují vstupy shaderu, které jsou pod kontrolou aplikace na základě za kreslení, například, vlastnosti materiálu, směrová světla, fotoaparát pozice a čas. Protože tyto parametry s každou volání kreslení můžete změnit, můžete poskytnout objekt různé vzhledy stejné shaderu.  

@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8dacc0a3dfc230085c7575960238711d16d1ef8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1960b5fe7b7c507b5b3275315ea6ae1715c27f76
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-for-source-control-packages"></a>Model pro balíčky zdroj ovládacího prvku
 Následující model představuje příklad implementace ovládacího prvku zdroje. V modelu uvidíte rozhraní, které je nutné implementovat a prostředí služby, které je třeba volat. Všechny služby, jako je ve skutečnosti volání metody určité rozhraní, které jste získali mimo službu. Aby bylo snazší zjistit, jak se provádí kontrola zdroje jsou identifikovány názvy tříd.  

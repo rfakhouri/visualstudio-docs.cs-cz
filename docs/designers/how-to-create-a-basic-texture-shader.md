@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4620278c98ea373b8e0cde387f1b5526bf21349b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52e909e911a552b69930ef6a60257fca29a0794d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Postupy: Vytvoření shaderu základní textury
 Tento dokument ukazuje, jak vytvořit jeden texture shaderu pomocí návrháře shaderu a jazyk shaderu grafu (DGSL) přesměruje. Tato shaderu nastaví barvu konečné přímo na RGB a alfa hodnot, které jsou odebírána data z textury.  
@@ -69,4 +70,4 @@ Tento dokument ukazuje, jak vytvořit jeden texture shaderu pomocí návrháře 
  [Postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Editor obrázků](../designers/image-editor.md)   
  [Návrhář shaderu](../designers/shader-designer.md)   
- [Uzly návrháře shaderu](../designers/shader-designer-nodes.md)
+ [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

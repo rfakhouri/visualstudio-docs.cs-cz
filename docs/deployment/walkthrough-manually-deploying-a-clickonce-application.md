@@ -24,11 +24,12 @@ caps.latest.revision: "49"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 10f99d620060245fd7dac4e2420216a23d068a83
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Návod: Ruční nasazení aplikace ClickOnce
 Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, nebo budete muset použít nasazení pokročilé funkce, jako je například nasazení důvěryhodných aplikací by měl použít nástroj příkazového řádku Mage.exe k vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty. Tento návod popisuje, jak vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí příkazového řádku verze (Mage.exe) nebo grafické verze (MageUI.exe) generování manifestu a nástroj pro úpravy.  
@@ -210,4 +211,4 @@ Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick
  [MageUI.exe (generování manifestu a nástroj pro úpravy, grafický klient)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)   
  [Publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [ClickOnce – Manifest nasazení](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce – Manifest aplikace](../deployment/clickonce-application-manifest.md)
+ [ClickOnce – manifest aplikace ](../deployment/clickonce-application-manifest.md)

@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a08c43dbc6ec14768b0d74cd6fd89ef152b1074e
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 2d589c4f9fabefbc141d96b233c55a1fd9fc10eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Navrhování a zobrazování tříd a typů
 Návrh, vizualizovat a Refaktorovat třídami a ostatními typy v kódu pomocí návrháře tříd v sadě Visual Studio. Vytvořit a upravit třídy ve vašem projektu Visual C# .NET, Visual Basic .NET nebo C++, pochopit strukturu projektu lepší nebo reorganizovat kódu pomocí diagramů tříd.  

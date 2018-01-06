@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0006505bb1c1825c79a7ba1b04d1323c8ca1608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 31f9f7650336c3787e68b511cf099c04317bca7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contention-data-views"></a>Zobrazení dat kolizí prostředku
 Tato část obsahuje referenční informace pro zobrazení a sestav profileru datových souborů, které obsahují data profilování kolizí přístup z více vláken.  
@@ -52,7 +53,7 @@ Tato část obsahuje referenční informace pro zobrazení a sestav profileru da
  [Zobrazení řádků](../profiling/lines-view-contention-data.md)  
  Zobrazí seznam dat kolizí prostředku zdrojového kódu čára.  
   
- [Zobrazení ukazatele (IP) instrukcí](../profiling/instruction-pointers-ips-view-contention-data.md)  
+ [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-contention-data.md)  
  Zobrazuje seznam sporu prostředků podle instrukcí.  
   
  [Zobrazení procesů](../profiling/process-view-contention-data.md)  

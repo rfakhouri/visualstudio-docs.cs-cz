@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4a4162b91a9345c94b7bd6a7e2f1099da3d631e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5651e7c00abe91ec8e4cae7b720b6534318051f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Řešení potíží s registrací RegPkg balíčku
 > [!NOTE]
@@ -39,4 +40,4 @@ ms.lasthandoff: 10/31/2017
  Starší verzi RegPkg můžete zaregistrovat balíčky, které byly vytvořené pomocí Microsoft.VisualStudio.Shell.dll sestavení. Je však nelze zaregistrovat balíčky vytvořené pomocí novější verze tohoto sestavení.  
   
 ## <a name="see-also"></a>Viz také  
- [VSPackages](../../extensibility/internals/vspackages.md)
+ [Balíčky VSPackage](../../extensibility/internals/vspackages.md)

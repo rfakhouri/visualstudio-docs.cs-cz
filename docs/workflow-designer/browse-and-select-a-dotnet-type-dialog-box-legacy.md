@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 2733464db0ab6047af7c47fb8278d7126b41fe6c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 441ec5380e6b722b96fee731388b652a86a6828b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Procházet a vybrat .NET typ dialogové okno (zastaralé)
 Toto téma popisuje, jak používat **Procházet a vyberte typ formátu .NET** dialogovém okně pro starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -32,4 +33,4 @@ Toto téma popisuje, jak používat **Procházet a vyberte typ formátu .NET** d
 |**Typ**|Levý panel zobrazuje stromovou strukturu sestavení odkazuje. Pravý panel zobrazuje typů, které jsou k dispozici pro výběr ze sestavení odkazuje vybrané v levém podokně.|  
   
 ## <a name="see-also"></a>Viz také  
- [Pomocí návrháře starší aktivity](../workflow-designer/using-the-legacy-activity-designer.md)
+ [Používání starší verze návrháře aktivit](../workflow-designer/using-the-legacy-activity-designer.md)

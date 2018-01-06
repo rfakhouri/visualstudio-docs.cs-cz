@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: bbfe3eb4f76d8237d6e1a1b7c26aa48b1f081f1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Ladění nebo zakázat kód projektu v Návrháři XAML
 V mnoha případech může být způsobeno neošetřených výjimek v Návrháři XAML kód projektu pokusu o přístup k vlastnosti nebo metody, které vracet různé hodnoty nebo když je aplikace spuštěna v Návrháři pracovních různými způsoby. Můžete tyto výjimky vyřešit ladění projektu kódu v jiné instanci sady Visual Studio, nebo je dočasně zakázat zakázat kód projektu v návrháři.  

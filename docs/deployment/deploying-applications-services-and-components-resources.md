@@ -25,11 +25,12 @@ caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 38ead66ffcc92d37b62b3ccb2833cebcba8732b4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: cbb1f96a7432b90cae725d88c1fcbc8a990494d4
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deploying-applications-services-and-components"></a>Nasazení aplikací, služeb a komponent
 
@@ -44,13 +45,13 @@ Informace o možnosti, jak vytvořit konfigurace prostředí pro aplikace pro Wi
   
 | Scénář nasazení | Podpůrný obsah |
 | --- | --- |  
-| **Publikovat do cloudu:** můžete zpřístupnit aplikací, služeb a dat z odkudkoli pomocí sady Visual Studio nasadit do Microsoft Azure.|[Publikování aplikací do Microsoft Azure](https://docs.microsoft.com/en-us/azure/#pivot=products) |
+| **Publikovat do cloudu:** můžete zpřístupnit aplikací, služeb a dat z odkudkoli pomocí sady Visual Studio nasadit do Microsoft Azure.|[Publikování aplikací do Microsoft Azure](/azure/#pivot=products) |
 | **Publikování aplikace UWP:** můžete snadno vytvářet, odeslání a prodeje aplikace z Microsoft Store zákazníkům po celém světě. |[Publikování aplikace pro Windows](https://developer.microsoft.com/store/publish-apps) |
 | **Nasazení aplikace ASP.NET nebo služby:** aplikací a služeb ASP.NET můžete nasadit v několika různými způsoby.|[Nasazení webové aplikace ASP.NET a služeb](http://www.asp.net/aspnet/overview/deployment) |
 | **Publish-in pro aplikaci Office:** můžete publikovat doplňku pro Office v sadě Visual Studio. | [Nasazení a publikování tohoto doplňku Office](https://dev.office.com/docs/add-ins/publish/publish) |
-| **Nasazení služby WCF nebo OData:** jiné aplikace můžete použít WCF RIA services, které nasazujete na webový server. | [Vývoj a nasazení služby WCF Data Services](https://docs.microsoft.com/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **Nasazení služby WCF nebo OData:** jiné aplikace můžete použít WCF RIA services, které nasazujete na webový server. | [Vývoj a nasazení služby WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
 | **Nasazení aplikace:** pomocí ClickOnce – nasazení, můžete publikovat aplikace na webovém serveru nebo síťové sdílené složky. Uživatelé pak mohou aplikaci nainstalovat jediným kliknutím. | [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md) |
-| **Nasazení aplikace Visual C++:** modulu runtime Visual C++ pomocí aplikace můžete nasadit pomocí Centrální nasazení, místní nasazení nebo statické propojení. | [Nasazení nativních aplikací klasické pracovní plochy (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md) |
+| **Nasazení aplikace Visual C++:** modulu runtime Visual C++ pomocí aplikace můžete nasadit pomocí Centrální nasazení, místní nasazení nebo statické propojení. | [Nasazení nativních aplikací klasické pracovní plochy (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp) |
 | **Instalační program vytvořit:** instalační program na základě MSI WiX lze vytvořit pomocí [WiX Toolset 2017 rozšíření sady Visual Studio](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Všimněte si, že InstallShield Limited Edition je už součástí sady Visual Studio; Obraťte se na [Flexera softwaru](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o dostupnosti pro Visual Studio 2017. |
 | **Nasazení aplikace pro testování:** můžete povolit složitější vývoj a testování nasazení vaší aplikace do virtuálního prostředí.|[Testování v testovacím prostředí](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) | 
 | **Instalace požadovaných součástí:** nakonfigurováním obecný instalační program, který se označuje jako zaváděcí nástroj můžete nainstalovat požadované součásti pro aplikací klasické pracovní plochy.|[Nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md) |

@@ -16,11 +16,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: af9a13a72aed42f46a755520802f8688bc962161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70329c058146dde9b94713b66dfbd29319250f45
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-office-is-not-installed-on-this-computer"></a>Sada Microsoft Office není v tomto počítači nainstalována.
   Aplikace Microsoft Office, která odpovídá typu projektu nelze najít sady Visual Studio. Pokud vyvíjíte projektu doplňku VSTO, to znamená, že nelze ladění a spusťte projekt. Pokud se pokoušíte vytvořit projekt na úrovni dokumentu a, znamená to, že nelze vytvořit projekt.  

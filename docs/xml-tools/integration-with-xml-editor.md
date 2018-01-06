@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab405ec541393e2b9aa256b40ccea5cce061cdc3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 5fef7ed581ad39488bc35d9cc46ac211008f5962
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integration-with-xml-editor"></a>Integrace s editoru XML
 Návrhář schématu XML je integrovaná s editoru XML. Pokud upravíte soubor XSD v editoru XML, změna se projeví v [Explorer schématu XML](../xml-tools/xml-schema-explorer.md). Pokud máte [zobrazení grafu](../xml-tools/graph-view.md) nebo [zobrazení obsahu modelu](../xml-tools/content-model-view.md) otevřená, změna se také zobrazí existuje. Je možné přecházet mezi Návrhář schématu XML a Editor souborů XML následujícími způsoby:  
@@ -34,4 +35,4 @@ Někdy je užitečné kódu v editoru XML a grafický Návrhář vedle sebe. Chc
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif "XSDDesignerWithXMLEditorAndCMV")  
   
 ## <a name="see-also"></a>Viz také  
- [Průzkumník schématu XML](../xml-tools/xml-schema-explorer.md)
+ [Průzkumník schémat XML](../xml-tools/xml-schema-explorer.md)

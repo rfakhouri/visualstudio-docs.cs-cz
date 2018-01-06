@@ -17,11 +17,12 @@ caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 238e4c0c0fe9021424b48963eac7d21bf6f9a049
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b6b6726ebf45522834d916897f456952b66a3605
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltcustomerrorreportinggt-element-clickonce-deployment"></a>&lt;customErrorReporting&gt; – Element (ClickOnce – nasazení)
 Určuje identifikátor URI zobrazíte, když dojde k chybě.  
@@ -50,4 +51,4 @@ http://www.contoso.com/applications/error.asp? outer=System.Deployment.Applicati
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [ClickOnce – Manifest nasazení](../deployment/clickonce-deployment-manifest.md)
+ [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md)

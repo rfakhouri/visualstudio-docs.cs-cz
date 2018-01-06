@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.rename
 dev_langs: VB
-ms.openlocfilehash: 35313f036e1f324d3f8908a4527cd3a2ad64ae52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da85803adf3de8afa0912a1f47e2b474952df51d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-a-code-symbol-in-visual-basic"></a>Přejmenujte symbol kódu v jazyce Visual Basic
 **Co:** umožňuje přejmenovat identifikátory pro kód symboly, například pole, místní proměnné, metody, obory názvů, vlastnosti a typy.
@@ -55,4 +56,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Viz také  
 [Refaktoringu (Visual Basic)](../refactoring-vb.md)  
-[Zobrazení náhledu změn](../../ide/preview-changes.md)
+[Náhled změn](../../ide/preview-changes.md)

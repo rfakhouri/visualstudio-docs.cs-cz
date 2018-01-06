@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808f2fda26046962eada377f8a204351adef19bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 88281496c2e8350f910feda7934e2b55a494243b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Určení, zda implementovat řízení VSPackage zdroje
 Tato část popisuje možnosti Zdroj ovládacího prvku zásuvné moduly a Správa zdrojového kódu VSPackages pro rozšíření řešení a nabízí rozsáhlé pokyny o výběru cestu vhodný integrace správy zdrojového kódu.  
@@ -39,4 +40,4 @@ Tato část popisuje možnosti Zdroj ovládacího prvku zásuvné moduly a Sprá
 4.  Zpracování událostí dotazu upravit a uložit dotazu (viz [dotazu upravit dotaz uložit](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
 ## <a name="see-also"></a>Viz také  
- [Vytvoření ovládacího prvku zdroj modulu Plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Vytvoření modulu plug-in správy zdrojového kódu](../../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "44"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4be8e84c6040f3b4d57082cd39920aec2196e9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c2ac175d2fd267500f19e9f22cd46d88dcc9f314
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Vytváření opakovaně použitelných skupin tlačítek
 Skupina příkazu je kolekce příkazy, které se vždy zobrazují společně v nabídce nebo na panelu nástrojů. Všechny skupiny pro příkaz znovu lze přiřazením do jiné nadřazené nabídek v části CommandPlacements .vsct souboru.  

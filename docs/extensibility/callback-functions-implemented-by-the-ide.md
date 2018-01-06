@@ -15,11 +15,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fbc71942a87685a4011b13d1054c4855a5e18012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3c1845a82947286800145ff898f8f49f8c3c2477
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funkce zpětného volání, které implementují rozhraní IDE
 Chcete-li integraci s integrované vývojové prostředí (IDE) jako bezproblémové nejblíže a nabízí jednotnou koncového uživatele prostředí, modul plug-in zdrojového kódu můžete použít funkce zpětného volání, které implementují rozhraní IDE. Modul plug-in můžete volat tyto funkce v příslušnou dobu během operace řízení zdroj předávat informace k prostředí IDE; prostředí IDE pak můžete zobrazit tyto informace jako vložené prvky v jeho nativní uživatelského rozhraní. Uživatel má méně fragmentovaných prostředí v tomto scénáři než pokud modul plug-in pracujících vlastní uživatelské rozhraní.  
@@ -58,5 +59,5 @@ Chcete-li integraci s integrované vývojové prostředí (IDE) jako bezproblém
  [SccSetOption](../extensibility/sccsetoption-function.md)  
  Nastaví širokou škálu možností. Každá možnost začíná `SCC_OPT_xxx` a má svou vlastní definované sady hodnot.  
   
- [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)  
+ [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)  
  Popisuje obsah části referenční dokumentace sady SDK Plug-in Zdroj ovládacího prvku.

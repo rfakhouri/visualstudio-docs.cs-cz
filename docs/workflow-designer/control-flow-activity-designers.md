@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 45ffc19d3ede7af9d32e4599f17ecde9bd097bb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7453a61f599b8d3e051fea1c016d914814ec7fd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-flow-activity-designers"></a>Návrháře aktivit toku řízení
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]zahrnuje několik poskytované systémem aktivit, které můžete použít při vytváření vaše pracovní postupy. Tato část obsahuje poskytované systémem aktivity použít k řízení toku v pracovním postupu. V následujících tématech popisují tyto aktivity a poskytují pokyny o tom, jak je používat.  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="related-sections"></a>Související oddíly  
  U jiných typů návrháře aktivit najdete v následujících tématech.  
   
- [Pomocí návrháře aktivit](../workflow-designer/using-the-activity-designers.md)  
+ [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)  
   
  [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/27/2017
   
  [Modul runtime](../workflow-designer/runtime-activity-designers.md)  
   
- [Primitivní elementy.](../workflow-designer/primitives-activity-designers.md)  
+ [Primitivní elementy](../workflow-designer/primitives-activity-designers.md)  
   
  [Transakce](../workflow-designer/transaction-activity-designers.md)  
   
@@ -94,4 +95,4 @@ ms.lasthandoff: 10/27/2017
  [Zpracování chyb](../workflow-designer/error-handling-activity-designers.md)  
   
 ## <a name="external-resources"></a>Externí zdroje  
- [Pomocí návrháře aktivit](../workflow-designer/using-the-activity-designers.md)
+ [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)

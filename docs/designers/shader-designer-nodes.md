@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2393d254ee2864291a0a3ae5bbed6e78d80d3863
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bff905ae4f280d106eea34d513af35ee3de663b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer-nodes"></a>Uzly návrháře shaderů
 Články v této části dokumentace obsahují informace o různých shaderu Návrhář uzly, které můžete použít k vytvoření grafiky účinky.  
@@ -46,9 +47,9 @@ ms.lasthandoff: 10/31/2017
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Konstantní uzly](../designers/constant-nodes.md)|Popisuje uzlů, které můžete použít k reprezentaci literálových hodnot a interpolované vrchol stavu informace ve výpočtech shaderu. Protože vrchol stavu je interpolované – a proto se liší pro každý pixelů – každá instance pixelů shaderu obdrží jinou verzi konstanta.|  
-|[Parametr uzly](../designers/parameter-nodes.md)|Popisuje uzlů, které můžete použít k vyjádření polohy kamery, vlastnosti materiálu, osvětlení parametry, čas a další informace o aplikaci stavu ve výpočtech shaderu.|  
-|[Texture uzly](../designers/texture-nodes.md)|Popisuje uzly, které můžete použít k ukázkové různé typy texture a geometrie a k vytvoření nebo transformace texture souřadnice běžné způsoby.|  
+|[Uzly konstanty](../designers/constant-nodes.md)|Popisuje uzlů, které můžete použít k reprezentaci literálových hodnot a interpolované vrchol stavu informace ve výpočtech shaderu. Protože vrchol stavu je interpolované – a proto se liší pro každý pixelů – každá instance pixelů shaderu obdrží jinou verzi konstanta.|  
+|[Uzly parametru](../designers/parameter-nodes.md)|Popisuje uzlů, které můžete použít k vyjádření polohy kamery, vlastnosti materiálu, osvětlení parametry, čas a další informace o aplikaci stavu ve výpočtech shaderu.|  
+|[Uzly textury](../designers/texture-nodes.md)|Popisuje uzly, které můžete použít k ukázkové různé typy texture a geometrie a k vytvoření nebo transformace texture souřadnice běžné způsoby.|  
 |[Matematické uzly](../designers/math-nodes.md)|Popisuje uzly, které můžete použít k provedení algebraických, logiku, trigonometrické a další matematické operace, které mapují přímo na HLSL pokyny.|  
-|[Nástroj uzly](../designers/utility-nodes.md)|Popisuje uzly, které můžete použít k provádění běžných osvětlení výpočty a dalších běžných operací, které se nemapují přímo na HLSL pokyny.|  
-|[Uzly filtrů](../designers/filter-nodes.md)|Popisuje uzly, které můžete použít pro filtrování texture a filtrování barev.|
+|[Uzly nástroje](../designers/utility-nodes.md)|Popisuje uzly, které můžete použít k provádění běžných osvětlení výpočty a dalších běžných operací, které se nemapují přímo na HLSL pokyny.|  
+|[Uzly filtru](../designers/filter-nodes.md)|Popisuje uzly, které můžete použít pro filtrování texture a filtrování barev.|

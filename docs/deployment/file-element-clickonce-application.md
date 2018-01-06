@@ -26,11 +26,12 @@ caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f448b7455bcbe13b7257a58a0eafbadd1165b197
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;soubor&gt; – Element (ClickOnce aplikace)
 Identifikuje všechny nesestavené soubory stáhli a používá je aplikace.  
@@ -202,4 +203,4 @@ Identifikuje všechny nesestavené soubory stáhli a používá je aplikace.
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [ClickOnce – Manifest aplikace](../deployment/clickonce-application-manifest.md)
+ [ClickOnce – manifest aplikace ](../deployment/clickonce-application-manifest.md)

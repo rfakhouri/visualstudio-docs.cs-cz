@@ -22,11 +22,12 @@ caps.latest.revision: "54"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 38508a664ff94628dfd3fd5ec00eacb32fbb1187
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c4f8d987b8079230591d4bfdbe51c6d640cbf265
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>Volání kódu v doplňcích VSTO z jiných řešení pro Office
   Objekt můžou zpřístupnit v doplňku VSTO do jiných řešení, včetně jiných řešení pro Microsoft Office. To je užitečné, pokud vaše doplňku VSTO poskytuje službu, která chcete povolit jiné řešení použít. Například pokud máte doplňku VSTO pro aplikaci Microsoft Office Excel, který provádí výpočtů finančních dat z webové služby, jiná řešení můžete provést tyto výpočty volání do doplněk aplikace Excel VSTO za běhu.  

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff86fd14857206361a4bd9c15088cb3547200b28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7baa202558b6bb7bc60a0bb27d42ae004933ddea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-markers"></a>Značky Vizualizéru souběžnosti
 Vizualizér souběžnosti značky jsou ikony, které představují události v aplikaci.  Obvykle se aplikace generuje těchto událostí k určení fáze nebo výskyty v aplikaci.  Události lze vygenerovat, aplikací nebo knihovny a moduly runtime, který používá aplikace.  
@@ -47,7 +48,7 @@ Vizualizér souběžnosti značky jsou ikony, které představují události v a
   
 -   [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)  
   
--   [Toku dat](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
+-   [Tok dat](/dotnet/standard/parallel-programming/dataflow-task-parallel-library)  
   
 -   [Paralelní LINQ (PLINQ)](/dotnet/standard/parallel-programming/parallel-linq-plinq)  
   

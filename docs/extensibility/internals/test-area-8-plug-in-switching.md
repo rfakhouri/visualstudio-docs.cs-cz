@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03e7bd5728320bb2efd0b90728b6c1a16f5997ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f6a518d618b3a98ec85cbbe015d3b2c5fc7a710
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-8-plug-in-switching"></a>Testovací oblasti 8: Modul Plug-in přepínání
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) má uživatelské rozhraní (UI) Chcete-li změnit aktuální modul plug-in zdrojového kódu. Tato oblast testovací poskytuje testovacích případů pro proces výběr, který chcete použít pro řešení správy zdrojového kódu modulu plug-in.  
@@ -56,4 +57,4 @@ ms.lasthandoff: 10/31/2017
 |Změna modulu plug-in pro řešení|1.  Vyberte modul plug-in pod testování jako aktuální (**nástroje** -> **možnosti** -> **správy zdrojového kódu** -> **modulu Plug-in Výběr**).<br />2.  Vytvořte nový projekt a řešení.<br />3.  Přidáte řešení do správy zdrojového kódu.<br />4.  Odpojení od správy zdrojového kódu řešení (pomocí **změnu zdrojového kódu** dialogové okno).<br />5.  Vyberte jiný modul plug-in (například [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />6.  Znovu načte řešení z disku, pokud odpojeno.<br />7.  Přidáte řešení do správy zdrojového kódu.<br />8.  Odpojení od správy zdrojového kódu řešení (pomocí **změnu zdrojového kódu** dialogové okno).<br />9. Vyberte modul plug-in testovaného znovu.<br />10. Znovu načte řešení z disku, pokud odpojeno.<br />11. Vytvoření vazby řešení do původního umístění (pomocí **změnu zdrojového kódu** dialogové okno).|Řešení se přidá do správy zdrojového kódu s použitím vybraný modul plug-in.|  
   
 ## <a name="see-also"></a>Viz také  
- [Příručka pro testovací modulů plug-in programu zdroj ovládacího prvku](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

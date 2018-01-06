@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 146303eebbd824342b000fb14b8dbf953c3f0523
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bcbb3e6b475a9dcd22d012073d3197013da337c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Postupy: zobrazení dokumentů datové připojení
 Pokud máte nové zobrazení dokumentů, bude pravděpodobně možné připojit k existující data objektu dokumentu.  
@@ -46,4 +47,4 @@ Pokud máte nové zobrazení dokumentů, bude pravděpodobně možné připojit 
   
 ## <a name="see-also"></a>Viz také  
  [Podpora více zobrazení dokumentu](../extensibility/supporting-multiple-document-views.md)   
- [Data dokumentu a zobrazení dokumentu vlastní editorů](../extensibility/document-data-and-document-view-in-custom-editors.md)
+ [Data dokumentu a zobrazení dokumentu ve vlastních editorech](../extensibility/document-data-and-document-view-in-custom-editors.md)

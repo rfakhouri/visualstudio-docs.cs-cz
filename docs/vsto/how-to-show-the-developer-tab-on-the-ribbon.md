@@ -18,11 +18,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cad7fb4fe49df9688a0b9e7b3baa1f1108694136
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3885ce387aa27857e59fb3af74990d953c047225
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Postupy: Zobrazení karty Vývojář na pásu karet
   Abyste měli přístup **vývojáře** karty na pásu karet aplikace Office, je nutné nakonfigurovat ji zobrazit tuto kartu, protože se zobrazí ve výchozím nastavení. Například musíte zobrazit dané kartě Pokud chcete přidat <xref:Microsoft.Office.Tools.Word.GroupContentControl> k přizpůsobení na úrovni dokumentu ve Wordu.  
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/31/2017
 5.  Vyberte **OK** tlačítko zavřete **možnosti** dialogové okno.  
   
 ## <a name="see-also"></a>Viz také  
- [Přizpůsobení uživatelského rozhraní sady Office](../vsto/office-ui-customization.md)  
+ [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)  
   
   

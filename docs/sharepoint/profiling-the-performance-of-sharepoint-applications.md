@@ -23,11 +23,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0effe0190d54d05d706127a8e5fada66af1c7ab6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilace výkonu aplikací služby SharePoint
   Pokud vaše aplikace služby SharePoint se provádí pomalu nebo neefektivnímu, slouží k identifikaci problematické kódu a další elementy profilování funkce v sadě Visual Studio. Pomocí testování funkce zatížení, můžete určit, jakým způsobem aplikace SharePoint provádí vytížený, například když mnoho uživatelů současně přístup k aplikaci. Spuštěním testů výkonnosti webu budete vyhodnocovat, jakým způsobem aplikace provádí na webu. Pomocí programových testů uživatelského rozhraní, můžete ověřit, zda celou aplikaci služby SharePoint, včetně jeho uživatelské rozhraní, funguje správně. Použijete-li tyto testy společně, mohou pomoci identifikovat problémy s výkonem, před nasazením aplikace.  

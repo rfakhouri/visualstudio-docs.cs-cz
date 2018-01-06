@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 29c8594b80c55eb000d70f05d35bbf28becb6e26
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 Vizualizace a modelování SDK, můžete definovat obslužné rutiny událostí úložiště rozšíří změny na prostředky mimo úložiště, jako je například proměnné bez úložiště, soubory, modely v jiných úložišť nebo jiné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření. Obslužné rutiny událostí úložiště jsou spouštěny na konci transakce došlo k aktivační událost. Rovněž jsou prováděna v operaci zpět nebo znovu. Na rozdíl od úložiště pravidla jsou proto je nejvhodnější pro aktualizaci hodnoty, které jsou mimo úložišti události v úložišti. Na rozdíl od událostí rozhraní .NET, jsou obslužné rutiny událostí úložiště zaregistrované pro naslouchání na třídu: nemáte registraci samostatné obslužnou rutinu pro každou instanci. Další informace o tom, jak zvolit různé způsoby zpracování změn najdete v tématu [reakce na a šíření změny](../modeling/responding-to-and-propagating-changes.md).  

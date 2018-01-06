@@ -22,11 +22,12 @@ caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: d3a8ae32afec789595ecd126eeaee0c5ea05a9e8
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 Nasazení komponent COM starší verze tradičně bylo snadné. Součásti musí být globálně registrované a to může způsobit nežádoucí vedlejší účinky mezi překrývající se aplikace. Tato situace se obecně nejedná o problém v aplikacích rozhraní .NET Framework protože součásti jsou naprosto izolované aplikace nebo jsou kompatibilní vedle sebe. Visual Studio umožňuje nasadit izolované komponenty modelu COM v systému Windows XP nebo novější operační systém.  

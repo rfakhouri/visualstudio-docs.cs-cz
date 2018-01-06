@@ -19,11 +19,12 @@ caps.latest.revision: "46"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee78ad2aac4ff9cefcb3291d3b1b2010d8a1c26c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 6c9db34e05c964b95a41593b194c4941293c7efb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Postupy: Aktualizace textu záložek prostřednictvím kódu programu
   Můžete vložit text do záložku zástupný symbol v dokumentu aplikace Microsoft Office Word tak, aby text můžete načíst později, nebo nahrazení textu v záložky. Pokud vyvíjíte přizpůsobení na úrovni dokumentu, můžete také aktualizovat v text <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek, který je vázaný na data. Další informace najdete v tématu [vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -86,6 +87,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Viz také  
  [Postupy: programové vkládání textu do dokumentů aplikace Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   
- [BOOKMARK – ovládací prvek](../vsto/bookmark-control.md)  
+ [Bookmark – ovládací prvek](../vsto/bookmark-control.md)  
   
   

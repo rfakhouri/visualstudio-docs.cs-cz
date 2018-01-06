@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e890145199fe864d2f7b5010495375bfbc6cc094
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ecbf5e3bed5ba506278f00b2b5b0b76f8f02850a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Návod: Přizpůsobení zobrazení textu
 Textového zobrazení můžete přizpůsobit úpravou některý z následujících vlastností v jeho mapy editor formátu:  
@@ -94,4 +95,4 @@ Textového zobrazení můžete přizpůsobit úpravou některý z následující
 5.  Zapněte viditelné prázdný znak. (Na **upravit** nabídky, přejděte na příkaz **Upřesnit** a pak klikněte na **zobrazení mezer**). Zadejte text, některé karty. Má být zobrazena Red šipek, které představují karty.  
   
 ## <a name="see-also"></a>Viz také  
- [Služba jazyka a body rozšíření editoru](../extensibility/language-service-and-editor-extension-points.md)
+ [Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)

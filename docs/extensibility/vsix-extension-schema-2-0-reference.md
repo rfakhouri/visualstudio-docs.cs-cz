@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c1c81a34a290b34207f505d6b1ab46fa8b11cd8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 4f0ac6fdedb5d65f40f718c568297dc0196c4537
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX rozšíření schéma 2.0 – referenční informace
 Soubor manifestu nasazení VSIX popisuje obsah balíčku VSIX. Formát souboru se řídí schéma. Verze 2.0 toto schéma podporuje přidání vlastní typy a atributy.  Schéma manifest je rozšiřitelný. Manifestu zavaděč ignoruje XML elementů a atributů, které není pochopit.  
@@ -217,4 +218,4 @@ Soubor manifestu nasazení VSIX popisuje obsah balíčku VSIX. Formát souboru s
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Přesouvání rozšíření Visual Studia](../extensibility/shipping-visual-studio-extensions.md)
+ [Odesílání rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

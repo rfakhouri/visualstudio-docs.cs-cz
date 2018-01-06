@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a4d74e6ff0d3532c3aed199da841a56270195af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 095a02edb0a462e2fdbdca0f7f92018861b3d6bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 Určuje typ pole, které jsou součástí [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objektu.  
@@ -157,7 +158,7 @@ public enum enum_FIELD_KIND {
  Určuje, že je pole ukazatel.  
   
  FIELD_TYPE_ENUM  
- Určuje, že je pole Výčtový typ dat..  
+ Určuje, že je pole Výčtový typ dat.  
   
  FIELD_TYPE_LABEL  
  Označuje, že je pole štítek.  

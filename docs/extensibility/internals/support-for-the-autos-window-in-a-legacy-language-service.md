@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c824845d4cbdb58241c088c1cb30259d3c298f72
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: db6be625c671a508be3c2fd2f1697282af282bdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Podpora pro automobily okna ve službě jazyk starší verze
 **Automobily** zobrazuje výrazy, například proměnné a parametry, které jsou v oboru, když program laděné je pozastaveno (buď z důvodu zarážku nebo výjimku). Výrazy může obsahovat proměnné, místní nebo globální a parametry, které se změnily v místní oboru. **Automobily** okno může také obsahovat instancí třídy, struktury nebo jiný typ. Potenciálně všechno, co můžete vyhodnotit vyhodnocení výrazu lze zobrazit v **automobily** okno.  

@@ -12,11 +12,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3881b015821952b4a2aeaa60d22c66bf47dff9c4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 76cad59931a6c99bfd21fc0d149b86bf8a3b8a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 Pomocí Průzkumníka testů spouštění testování částí v sadě Visual Studio nebo projektů testování částí třetích stran, seskupení testů do kategorií, filtrování seznamu testů a vytvořit, uložit a spustit seznamy stop testů. Můžete také ladění testy a analyzovat pokrytí test výkonu a kód.  
@@ -180,7 +181,7 @@ Pomocí Průzkumníka testů spouštění testování částí v sadě Visual St
 |**Chybová zpráva**|Uživatelem definované chybové zprávy, které vrácený se nezdařilo hledání vyhodnotí pro odpovídající položky.|  
 |**Cesta k souboru**|Plně kvalifikovaný název zdrojové soubory test vyhledá odpovídá.|  
 |**Plně kvalifikovaný název**|Vyhledá soubor plně kvalifikovaný název testovací obory názvů, třídy a metody odpovídá.|  
-|**Výstup**|Vyhledá uživatelem definované chybové zprávy, které jsou zapsány do standardního výstupního (stdout) nebo standardního chybového (stderr). Syntaxe k určení výstupní zprávy jsou definovány částí unit test framework.|  
+|**Output**|Vyhledá uživatelem definované chybové zprávy, které jsou zapsány do standardního výstupního (stdout) nebo standardního chybového (stderr). Syntaxe k určení výstupní zprávy jsou definovány částí unit test framework.|  
 |**Výsledek**|Vyhledá názvy kategorie Průzkumníka testů pro odpovídá: **se nezdařilo testy**, **přeskočen testy**, **předán testy**.|  
   
  K vyloučení podsady výsledků filtr, použijte následující syntaxi:  
@@ -264,4 +265,4 @@ FullName:"MyClass" - FullName:"PerfTest"
   
 ## <a name="see-also"></a>Viz také  
  [Testování částí kódu](../test/unit-test-your-code.md)   
- [Spuštění testů jednotek v podobě procesu 64-bit](../test/run-a-unit-test-as-a-64-bit-process.md)
+ [Spuštění testování částí v podobě 64bitového procesu](../test/run-a-unit-test-as-a-64-bit-process.md)

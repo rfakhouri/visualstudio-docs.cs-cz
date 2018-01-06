@@ -11,11 +11,12 @@ caps.latest.revision: "26"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 63295738603d2a88adb70b43d41e185c7eabbc69
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c349c79ebd2348fa4ce0c04fd3020d7909a3c34a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus poskytuje metodu pro vytváření odkazů mezi modely a z dalších nástrojů do modelů. Můžete například propojit modely jazyka domény (DSL) a modely UML. Můžete vytvořit integrované sadu DSL, linky.  
@@ -27,7 +28,7 @@ ms.lasthandoff: 11/07/2017
   
  Další informace a ukázky kódu najdete v tématu:  
   
--   [Postupy: přidání obslužné rutiny a přetažení](../modeling/how-to-add-a-drag-and-drop-handler.md)  
+-   [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)  
   
 -   [Modelování SDK pro Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)  
 
@@ -513,4 +514,4 @@ private const string INVALID_REF_FORMAT =
 ## <a name="see-also"></a>Viz také  
  [Postupy: otevření modelu ze souboru v programovém kódu](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [Postupy: přidání obslužné rutiny a přetažení](../modeling/how-to-add-a-drag-and-drop-handler.md)   
- [Pomocí sady Visual Studio ModelBus v textové šablony](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+ [Použití prvku Visual Studio ModelBus v textové šabloně](../modeling/using-visual-studio-modelbus-in-a-text-template.md)

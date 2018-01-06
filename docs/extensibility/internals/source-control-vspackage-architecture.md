@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 80153e271fed6a7fab49e00c8124f1ede7613bfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 002dea54b63a78975d56464319614d369a9b2318
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-vspackage-architecture"></a>Architektura VSPackage zdroj ovládacího prvku
 Balíček správy zdrojového kódu se VSPackage, který používá služby, které [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poskytuje IDE. Balíček správy zdrojového kódu, poskytuje jeho funkce jako zdroj řízení služby. Kromě toho je balíček správy zdrojového kódu rozmanitější alternativní než zdrojového kódu pro integraci správy zdrojového kódu do modulu plug-in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  

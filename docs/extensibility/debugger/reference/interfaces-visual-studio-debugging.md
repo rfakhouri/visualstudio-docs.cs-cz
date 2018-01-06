@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 121544050a4bc17bbf616b1a2c7b9a90f98f9c9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 13951a42b5a0fe6874c713bea3025e232b259b6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interfaces-visual-studio-debugging"></a>Rozhraní (Visual Studio ladění)
 Metody jsou abecední v rámci každé rozhraní v tabulce obsahu a na stránce rozhraní v tabulce Vtable pořadí.  
@@ -26,15 +27,15 @@ Metody jsou abecední v rámci každé rozhraní v tabulce obsahu a na stránce 
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)  
  Popisuje rozhraní používá modul pro ladění.  
   
- [Rozhraní vyhodnocení výrazu](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
+ [Rozhraní pro vyhodnocení výrazu](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)  
  Popisuje rozhraní, která se vyhodnotí výrazy v zásobníku volání při režimu pozastavení.  
   
- [Zprostředkovatel rozhraní symbol](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
+ [Rozhraní poskytovatele symbolů ](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)  
  Popisuje rozhraní, která implementuje poskytovatele symbol přidružit typy identifikátorů.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Referenční dokumentace rozhraní API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
+ [Referenční dokumentace ke knihovně API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)  
  Obsahuje dokumentaci k rozhraní, výčty a struktury [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladění SDK.  
   
 ## <a name="see-also"></a>Viz také  
- [Referenční dokumentace rozhraní API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
+ [Referenční dokumentace ke knihovně API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

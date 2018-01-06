@@ -18,14 +18,15 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 82d4687a72cb0f13291aa01ff37b91afbcc254e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 772134090da6db5152ad855c1c5620f9e267b29f
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-msbuild-project-items"></a>Společné položky projektu nástroje MSBuild
-V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], je určitá položka s názvem odkaz na jeden nebo více souborů. Položky obsahovat metadata, jako jsou názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru microsoft.build.commontypes.xsd.  
+V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], je určitá položka s názvem odkaz na jeden nebo více souborů. Položky obsahovat metadata, jako jsou názvy souborů, cesty a čísel verzí. Všechny typy v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mají společnou několik položek. Tyto položky jsou definovány v souboru Microsoft.Build.CommonTypes.xsd.  
   
 ## <a name="common-items"></a>Společné položky  
  Následuje seznam všech společné položky projektu.  
@@ -33,7 +34,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="reference"></a>Odkaz  
  Představuje odkaz na sestavení (spravované) v projektu.  
   
-|Název položky|Popis|  
+|Název položky metadat|Popis|  
 |---------------|-----------------|  
 |HintPath|Volitelný řetězec. Relativní nebo absolutní cesta sestavení.|  
 |Název|Volitelný řetězec. Zobrazovaný název sestavení, například "System.Windows.Forms."|  
@@ -45,7 +46,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="comreference"></a>COMReference  
  Představuje komponenty modelu COM (nespravovaný) odkazovat v projektu.  
   
-|Název položky|Popis|  
+|Název položky metadat|Popis|  
 |---------------|-----------------|  
 |Název|Volitelný řetězec. Zobrazovaný název součásti.|  
 |Identifikátor GUID|Volitelný řetězec. Identifikátor GUID pro komponentu ve formuláři {12345678-1234-1234-1234-1234567891234}.|  
@@ -58,14 +59,14 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="comfilereference"></a>COMFileReference  
  Představuje seznam knihovny typů, které informačního kanálu do cílové ResolvedComreference.  
   
-|Název položky|Popis|  
+|Název položky metadat|Popis|  
 |---------------|-----------------|  
 |WrapperTool|Volitelný řetězec. Název obálku nástroj, který se používá na komponentu, například "tlbimp."|  
   
 ### <a name="nativereference"></a>NativeReference  
  Představuje soubor manifestu nativní nebo odkaz na takový soubor.  
   
-|Název položky|Popis|  
+|Název položky metadat|Popis|  
 |---------------|-----------------|  
 |Název|Požadovaný řetězec. Základní název souboru manifestu.|  
 |HintPath|Požadovaný řetězec. Relativní cesta souboru manifestu.|  
@@ -73,16 +74,16 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="projectreference"></a>ProjectReference  
  Představuje odkaz na jiný projekt.  
   
-|Název položky|Popis|  
+|Název položky metadat|Popis|  
 |---------------|-----------------|  
 |Název|Volitelný řetězec. Zobrazovaný název odkazu.|  
-|Project|Volitelný řetězec. Identifikátor GUID pro odkaz na ve formuláři {12345678-1234-1234-1234-1234567891234}.|  
+|Projekt|Volitelný řetězec. Identifikátor GUID pro odkaz na ve formuláři {12345678-1234-1234-1234-1234567891234}.|  
 |Balíček|Volitelný řetězec. Cesta souboru projektu, který je odkazováno.|  
   
 ### <a name="compile"></a>Kompilace  
  Představuje zdrojové soubory pro kompilátor.  
   
-|Název položky|Popis|  
+|Název položky metadat|Popis|  
 |---------------|-----------------|  
 |DependentUpon|Volitelný řetězec. Určuje soubor, který tento soubor závisí na pro správnou kompilaci.|  
 |AutoGen|Volitelné logická hodnota. Určuje, zda soubor byl vygenerován pro do projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE).|  
@@ -93,7 +94,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Představuje prostředky, které má být vložen v generovaném sestavení.  
   
-|Název položky|Popis|  
+|Název položky metadat|Popis|  
 |---------------|-----------------|  
 |DependentUpon|Volitelný řetězec. Určuje soubor, který tento soubor závisí na pro správnou kompilaci|  
 |Generátor|Požadovaný řetězec. Název generátor všech souborů, který se spouští na tuto položku.|  
@@ -107,7 +108,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="content"></a>Obsah  
  Představuje soubory, které nejsou zkompilovány do projektu, ale může vložených nebo publikované společně s ho.  
   
-|Název položky|Popis|  
+|Název položky metadat|Popis|  
 |---------------|-----------------|  
 |DependentUpon|Volitelný řetězec. Určuje soubor, který tento soubor závisí na pro správnou kompilaci.|  
 |Generátor|Požadovaný řetězec. Název generátor všech souborů, která běží na tuto položku.|  
@@ -122,7 +123,7 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
 ### <a name="none"></a>Žádné  
  Představuje soubory, které by měl mít žádný atribut role v procesu sestavení.  
   
-|Název položky|Popis|  
+|Název položky metadat|Popis|  
 |---------------|-----------------|  
 |DependentUpon|Volitelný řetězec. Určuje soubor, který tento soubor závisí na pro správnou kompilaci.|  
 |Generátor|Požadovaný řetězec. Název generátor všech souborů, který se spouští na tuto položku.|  
@@ -142,4 +143,4 @@ V [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md
  Představuje sestavení, jejichž obory názvů musí být importovány pomocí [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilátoru.  
   
 ## <a name="see-also"></a>Viz také  
- [Běžné vlastnosti projektu nástroje MSBuild](../msbuild/common-msbuild-project-properties.md)
+ [Obecné vlastnosti projektu nástroje MSBuild](../msbuild/common-msbuild-project-properties.md)

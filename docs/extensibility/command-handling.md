@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cb2bf52c038b0abbac742aafa942f2f7ea7ea1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3ecbff62570067b25aae9ad525138687eb281c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-handling"></a>Zpracování příkazů
 Jako editor můžete definovat nové příkazy. Příkazy se obvykle zobrazují v nabídce, na panelu nástrojů nebo v kontextové nabídce.  
@@ -50,4 +51,4 @@ Jako editor můžete definovat nové příkazy. Příkazy se obvykle zobrazují 
  Můžete také použít předdefinované příkazy, které nemusejí být definován v souboru .vsct. Například pokud si projdete soubor EditorPane.cs vygenerované šablony balíček Visual Studio, zjistíte, že sadu předdefinovaných příkazy, jako například <xref:Microsoft.VisualStudio.VSConstants.VSStd97CmdID> definované <xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>, jsou zpracovávány v obslužné rutiny příkazů, jako je například metoda onSelectAll.  
   
 ## <a name="see-also"></a>Viz také  
- [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

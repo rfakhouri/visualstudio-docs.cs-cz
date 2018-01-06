@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c57284e21e1b276c6191109701f507c5a12f819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a4b0cc6e7105f91a4192d2c079854c8953736eaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Práce s 3D prostředky pro hry a aplikace
 Tento dokument popisuje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje, které můžete použít k vytvoření nebo úpravě 3D modely, textury a shadery pro založené na rozhraní DirectX hry a aplikace.  
@@ -52,7 +53,7 @@ Tento dokument popisuje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Práce s textury a obrázků](../designers/working-with-textures-and-images.md)|Popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pro práci s obrázky a textury.|  
-|[Práce s 3D modely](../designers/working-with-3-d-models.md)|Popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pro práci s 3D modelů.|  
-|[Práce s shadery](../designers/working-with-shaders.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shaderu Designer vytvářet a upravovat vlastní shaderu účinky.|  
-|[Pomocí 3D prostředky v hry nebo aplikace](../designers/using-3-d-assets-in-your-game-or-app.md)|Popisuje postup používání prostředků, které jste vytvořili pomocí Editor obrázků, Editor modelu nebo shaderu Návrhář v hry nebo aplikace.|
+|[Práce s texturami a obrázky](../designers/working-with-textures-and-images.md)|Popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pro práci s obrázky a textury.|  
+|[Práce se 3D modely](../designers/working-with-3-d-models.md)|Popisuje způsob použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pro práci s 3D modelů.|  
+|[Práce se shadery](../designers/working-with-shaders.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shaderu Designer vytvářet a upravovat vlastní shaderu účinky.|  
+|[Používání 3D prostředků ve hře nebo aplikaci](../designers/using-3-d-assets-in-your-game-or-app.md)|Popisuje postup používání prostředků, které jste vytvořili pomocí Editor obrázků, Editor modelu nebo shaderu Návrhář v hry nebo aplikace.|

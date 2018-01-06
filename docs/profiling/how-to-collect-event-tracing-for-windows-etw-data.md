@@ -17,11 +17,12 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ad7c937ba6c3845e905abea31f4525198f8389
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a720bf57c8668d956a1036d73a264a4936142cd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Postupy: Shromažďování dat Trasování událostí pro Windows
 Události trasování událostí pro Windows (ETW) je zařízení efektivní jádra úroveň trasování, které umožňuje jádra protokolu profileru nebo události definované aplikací. Data, která se shromažďují ze zprostředkovatele událostí lze zobrazit pouze pomocí /**souhrn: ETW** možnost [vsperfreport –](../profiling/vsperfreport.md) nástroj příkazového řádku. Tato sestava slouží k určení, kde dojde k problémům s výkonem v aplikaci.  

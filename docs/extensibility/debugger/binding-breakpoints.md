@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08000dddcd574d21225aa110cf9eb4ab2487aadb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 55416d6b156055d967424476f5add3b4ed75d18d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-breakpoints"></a>Vazba zarážky
 Pokud uživatel nastaví zarážku, možná stisknutím klávesy F9, rozhraní IDE výrobky zpracovává žádost a vyzve k relaci ladění k vytvoření zarážce.  
@@ -56,4 +57,4 @@ Pokud uživatel nastaví zarážku, možná stisknutím klávesy F9, rozhraní I
  Pokud Zavedenými zpracovává zarážku, nelze vytvořit vazbu, ale některé jiné DE vázat ji, vrátí upozornění. Prostředí IDE reaguje glyf otázku uvnitř glyfy zarážek nalevo od řádku kódu původního umístění.  
   
 ## <a name="see-also"></a>Viz také  
- [Ladění úlohy](../../extensibility/debugger/debugging-tasks.md)
+ [Úlohy ladění](../../extensibility/debugger/debugging-tasks.md)

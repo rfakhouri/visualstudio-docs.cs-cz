@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3058e19d4ac6211c741efd973344a1af14238d10
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xaml-designer-options-page"></a>Stránka Možnosti Návrhář XAML
 Použití **návrháře XAML** stránku možností určíte způsob elementů a atributů formátování v dokumentech XAML. Otevřete tuto stránku, vyberte **nástroje** nabídce a potom zvolte **možnosti**. Pro přístup k **návrháře XAML** vlastnost vyberte **návrháře XAML** uzlu. Nastavení pro Návrhář XAML se použijí při otevření dokumentu. Ano Pokud změníte nastavení, budete muset zavřete a znovu otevřete Visual Studio, aby se změny projevily.
@@ -46,7 +47,7 @@ Pomocí tohoto nastavení můžete řídit, kdy a jak návrháře XAML se zobraz
 |-|-|  
 |**Svislý**|Zdroj XAML, zobrazí se na levé straně zobrazení XAML a návrháře XAML, zobrazí se na druhé straně.|  
 |**Vodorovné**|Horní XAML zobrazení se zobrazí návrháře XAML a zdroji XAML, zobrazí se pod ním.|  
-|**Výchozí**|Dokument XAML používá rozdělení orientaci doporučeno pro platformu cílem projektu dokumentu. Pro většinu platforem jde o ekvivalent **vodorovné**.|  
+|**Default**|Dokument XAML používá rozdělení orientaci doporučeno pro platformu cílem projektu dokumentu. Pro většinu platforem jde o ekvivalent **vodorovné**.|  
 
 ## <a name="zoom-by-using"></a>Pomocí zvětšení
 Toto nastavení použijte k určení, jak funguje přiblížení při úpravě dokumentu XAML.

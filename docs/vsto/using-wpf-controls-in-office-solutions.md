@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f15eea2c0f1e7e62990d860007a7efc4966cb8cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 9cbb87017b910accae5ebc63b648691c50f88476
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-wpf-controls-in-office-solutions"></a>Použití ovládacích prvků WPF v řešeních pro systém Office
   I když řešení vytvořená pomocí nástrojů pro vývoj pro Office v sadě Visual Studio jsou navrženy pro práci s přímo s Windows Forms – ovládací prvky, které můžete použít ovládacích prvků WPF v řešeních. Windows Presentation Foundation (WPF) představuje alternativu k Windows Forms pro návrh uživatelského rozhraní. WPF pomocí značek jazyka nazývaného rozšiřitelné aplikace Markup Language (XAML) poskytuje nové techniky zařadit uživatelského rozhraní, média a dokumenty. Další informace najdete v tématu [Úvod k použití WPF v sadě Visual Studio 2015](/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs).  
@@ -99,19 +100,19 @@ ms.lasthandoff: 10/31/2017
 ## <a name="wpf-resources"></a>Prostředky grafického subsystému WPF  
  Další informace o architektuře a problémy návrhu pro hostování ovládacích prvků WPF ve formulářích a ovládací prvky Windows Forms najdete v následujících tématech:  
   
--   [Architektura vstupní interoperabilita WPF a Windows Forms](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)  
+-   [Architektura vstupu interoperability Windows Forms a WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)  
   
--   [Windows Forms a mapování vlastností WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)  
+-   [Mapování vlastnosti Windows Forms a WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)  
   
--   [WPF a vzájemná spolupráce Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)  
+-   [Vzájemná spolupráce subsystémů WPF a Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)  
   
--   [Windows Forms a ovládacích prvků ekvivalentní WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)  
+-   [Ovládací prvky Windows Forms a ekvivalentní ovládací prvky WPF](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)  
   
  Další informace o přidávání ovládacích prvků WPF v době návrhu pro ovládací prvky Windows Forms a formuláře v sadě Visual Studio najdete v následujících tématech:  
   
--   [Návod: Vytvoření nového obsahu WPF v rozhraní Windows Forms v době návrhu](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)  
+-   [Návod: Vytvoření nového obsahu WPF v modelu Windows Forms během návrhu](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)  
   
--   [Návod: Uspořádání obsahu WPF ve Windows Forms v době návrhu](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)  
+-   [Návod: Uspořádání obsahu WPF v modelu Windows Forms během návrhu](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)  
   
 -   [Návod: Určení stylu obsahu WPF](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)  
   
@@ -124,6 +125,6 @@ ms.lasthandoff: 10/31/2017
  [Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
  [Postupy: Přidání vlastního podokna úloh do aplikace](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)  
+ [Postupy: Přidání oblasti formuláře do projektu doplňku pro Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)  
   
   

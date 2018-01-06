@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f8422e4333c1f1ccffc928ce9a43e4afa53cc7a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 168aa0f7b93d20afaa30924dc17f05e0cac465bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>Struktura VSPackage (Zdroj ovládacího prvku VSPackage)
 Sada zdroj ovládacího prvku balíček SDK poskytuje pokyny pro vytváření VSPackage, který povolí zdroj ovládacího prvku implementátor integrovat své funkce správy zdrojového s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí. VSPackage je komponenty COM, která je obvykle načtena na vyžádání pomocí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) podle služby, které mají být inzerovány balíček v jeho položky registru. Každý VSPackage musí implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>. VSPackage obvykle využívá službách nabízených [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE a proffers některé služby.  

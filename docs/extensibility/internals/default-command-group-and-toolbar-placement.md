@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c5f1ec42408e4fd7d33d9445ae09252fae8d03db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 84e850d44162a964ce6ef8b64be92ce4eeacb86e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Příkaz výchozí skupiny a umístění panelu nástrojů
 Pro produkt jednotnost a stabilitu, uživatelské rozhraní zobrazí určitých skupin příkaz ve výchozím nastavení, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsahuje definice pro příkazy a příkaz skupiny. VSPackages můžete také použít standardní příkazy a příkaz skupiny.  
@@ -45,4 +46,4 @@ Pro produkt jednotnost a stabilitu, uživatelské rozhraní zobrazí určitých 
   
 ## <a name="see-also"></a>Viz také  
  [Příkazy definované IDE, nabídky a skupin](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)   
- [Jak přidat VSPackages prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+ [Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

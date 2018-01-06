@@ -14,11 +14,12 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
-ms.openlocfilehash: bb11488b7d2a2a3dfc1d490ed988048edad9edb1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: multiple
+ms.openlocfilehash: 5ad4781dc52dffd677106484c2a9bdedff3eaba4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 součástí adresáře
 
@@ -946,7 +947,7 @@ Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Visu
 Microsoft.VisualStudio.Component.DiagnosticTools | Rozhraní .NET, nástroje pro profilaci | 15.0.27005.2 | Doporučeno
 Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.0.26606.0 | Doporučeno
 Component.Dotfuscator | Preemptivní ochrana – Dotfuscatoru | 15.0.26208.0 | Nepovinné
-Microsoft.Component.CodeAnalysis.SDK | Kompilátoru platformy .NET SDK | 15.0.27128.1 | Nepovinné
+Microsoft.Component.CodeAnalysis.SDK | Sada .NET Compiler Platform SDK | 15.0.27128.1 | Nepovinné
 Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Nepovinné
 Microsoft.Component.VC.Runtime.OSSupport | Visual C++ runtime pro UPW | 15.0.27019.1 | Nepovinné
 Microsoft.Net.Component.4.6.TargetingPack | Cílení na pack rozhraní .NET framework 4.6. | 15.0.26621.2 | Nepovinné
@@ -1038,7 +1039,7 @@ Tady je několik další možnosti podpory:
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
 

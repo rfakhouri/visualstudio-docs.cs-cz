@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cb4ed4767146a07db6a4567768ee9a49fec97667
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: cf4320ac20aae231eb2e824a7a948e2bd52672b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>Vytváření rozšíření s VSPackage
 Tento návod ukazuje, jak vytvořit projekt VSIX a přidat položku VSPackage projektu. Chcete-li zobrazit okno se zprávou získat službu prostředí uživatelského rozhraní budeme používat VSPackage.  

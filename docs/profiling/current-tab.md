@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 506a74699ba9f3cf059feb34b16d69af0150895a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb69f11081015960cd79d54fb90893a9202c9bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="current-tab"></a>Aktuální karta
 Kliknutím **aktuální** kartě uvidíte zásobník volání (Pokud je k dispozici), který je nejblíže k aktuální výběr bod v časové ose Pokud je vybrána segment procesoru přístup z více vláken.  V takovém případě bodě výběru představuje černou šipku nebo pomocí kurzoru nad časovou osu. Pokud je vybraná blokování segmentu, pomocí kurzoru není zobrazit, protože se žádné provádění. Však stále zvýrazní segmentu a se zobrazí zásobníku volání.  

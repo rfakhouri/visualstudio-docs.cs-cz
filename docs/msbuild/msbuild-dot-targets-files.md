@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0811a2f32ae9834c1141265a936e67c6a04adbcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c382d6e967705b95e46c6c797915c49841688c6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-targets-files"></a>MSBuild – soubory .Targets
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]zahrnuje několik .TARGETS – soubory, které obsahují položky, vlastnosti, cílů a úloh pro běžné scénáře. Tyto soubory se automaticky importují do většinu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] soubory ke zjednodušení správy a čitelnost projektu.  
@@ -49,5 +50,5 @@ Directory.Build.targets je soubor definovaný uživatelem, který poskytuje při
 
 ## <a name="see-also"></a>Viz také  
  [Import – Element (MSBuild)](../msbuild/import-element-msbuild.md)   
- [MSBuild – Reference](../msbuild/msbuild-reference.md)  
- [Nástroje MSBuild](../msbuild/msbuild.md)
+ [Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)  
+ [MSBuild](../msbuild/msbuild.md)

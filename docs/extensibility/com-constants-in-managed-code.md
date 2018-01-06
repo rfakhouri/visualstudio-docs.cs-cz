@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cd6e70cc58f27dd0beb08d615abcdb52884f3f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ca950fb5be94dc75ca038db4c109f5a46c6b2c0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="com-constants-in-managed-code"></a>Konstanty COM ve spravovaném kódu
 Spravované balíček Framework (MPF) zpřístupní některé standardní konstanty COM do spravovaného kódu. Níže jsou uvedeny tyto konstanty pro vaši informaci.  
@@ -129,4 +130,4 @@ Spravované balíček Framework (MPF) zpřístupní některé standardní konsta
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
 ## <a name="see-also"></a>Viz také  
- [Zpracování chyb a návratové hodnoty](../extensibility/error-handling-and-return-values.md)
+ [Zpracování chyb a návratových hodnot](../extensibility/error-handling-and-return-values.md)

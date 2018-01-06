@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ab99d27af2ecb9fef24084b41a326c66c828d4b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c88f2efd3e7494fdec5d0cfaee8ecb492c43603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Postupy: tisk diagramů ze zobrazení grafu a zobrazení modelu obsahu
 Toto téma popisuje postup vytisknout diagram zobrazení grafu zobrazení nebo zobrazení obsahu modelu.  
@@ -34,4 +35,4 @@ Toto téma popisuje postup vytisknout diagram zobrazení grafu zobrazení nebo z
 ## <a name="see-also"></a>Viz také  
  [Zobrazení grafu](../xml-tools/graph-view.md)   
  [Zobrazení obsahu modelu](../xml-tools/content-model-view.md)   
- [Prostoru Návrhář schématu XML](../xml-tools/xml-schema-designer-workspace.md)
+ [Pracovní prostor Návrháře schémat XML](../xml-tools/xml-schema-designer-workspace.md)

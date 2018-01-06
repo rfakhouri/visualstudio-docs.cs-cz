@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: daffde4567ebe1134277147afe35ae501a57cdb7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4a0d158311b82a799cbdf7e7d9c0093f588208a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flowchart-activity-designers"></a>Vývojový diagram návrháře aktivit
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]zahrnuje několik poskytované systémem aktivit, které můžete použít při vytváření vaše pracovní postupy. Tato část obsahuje poskytované systémem aktivity používat ke správě na vývojových diagramech v pracovním postupu. V následujících tématech popisují tyto aktivity a poskytují pokyny o tom, jak je používat.  
@@ -42,13 +43,13 @@ ms.lasthandoff: 10/27/2017
   
  [Tok řízení](../workflow-designer/control-flow-activity-designers.md)  
   
- [Pomocí návrháře aktivit](../workflow-designer/using-the-activity-designers.md)  
+ [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)  
   
  [Zasílání zpráv](../workflow-designer/messaging-activity-designers.md)  
   
  [Modul runtime](../workflow-designer/runtime-activity-designers.md)  
   
- [Primitivní elementy.](../workflow-designer/primitives-activity-designers.md)  
+ [Primitivní elementy](../workflow-designer/primitives-activity-designers.md)  
   
  [Transakce](../workflow-designer/transaction-activity-designers.md)  
   

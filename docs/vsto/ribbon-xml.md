@@ -27,11 +27,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 38cf7e2fd9229ddc0a99f317a0680ea272fa3ad5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-xml"></a>Pás karet – XML
   Položka pásu karet (XML) umožňuje přizpůsobení pásu karet pomocí XML. Použijte položku pásu karet (XML), pokud chcete přizpůsobit na pásu karet způsobem, který nepodporuje položek pásu karet (vizuálního návrháře). Porovnání co můžete dělat s každou položkou najdete v tématu [přehled pásu karet](../vsto/ribbon-overview.md).  
@@ -130,7 +131,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|--------------------|-----------------|  
 |**Při načtení**|**customUI**|Určuje metodu, která je volána, když načtení aplikace pásu karet.|  
 |**idMso**|**Karta**|Identifikuje předdefinované karty zobrazit na pásu karet.|  
-|**ID**|**skupiny**|Tento parametr identifikuje skupinu.|  
+|**id**|**skupiny**|Tento parametr identifikuje skupinu.|  
 |**Popisek**|**skupiny**|Určuje text, který se zobrazí ve skupině.|  
   
  Výchozí elementů a atributů v souboru XML karet jsou pouze malou elementů a atributů, které jsou k dispozici. Úplný seznam dostupných elementů a atributů, najdete v článku na technické [přizpůsobení uživatelské rozhraní pásu karet Office (2007) pro vývojáře (část 2 ze 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
@@ -142,13 +143,13 @@ ms.lasthandoff: 10/31/2017
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|`GetCustomUI`|Vrátí obsah souboru XML pásu karet. Aplikace Microsoft Office volat tuto metodu za účelem získání řetězec XML, který definuje uživatelské rozhraní vaše vlastní pás karet. Implementuje tuto metodu <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metoda. **Poznámka:** `GetCustomUI` by měla být implementována pouze k vrácení obsahu souboru XML karet; neměl by být použit k chybě při inicializaci doplňku VSTO.   Konkrétně by se neměl pokoušet zobrazit dialogová okna nebo jiných windows ve vaší `GetCustomUI` implementace. Vlastní pás karet, jinak hodnota nemusí pracovat správně. Pokud budete muset spustit kód, který inicializuje vaší doplňku VSTO, přidejte kód, který `ThisAddIn_Startup` obslužné rutiny události.|  
+|`GetCustomUI`|Vrátí obsah souboru XML pásu karet. Aplikace Microsoft Office volat tuto metodu za účelem získání řetězec XML, který definuje uživatelské rozhraní vaše vlastní pás karet. Implementuje tuto metodu <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> metoda. **Poznámka:** `GetCustomUI` by měla být implementována pouze k vrácení obsahu souboru XML karet; neměl by být použit k chybě při inicializaci doplňku VSTO. Konkrétně by se neměl pokoušet zobrazit dialogová okna nebo jiných windows ve vaší `GetCustomUI` implementace. Vlastní pás karet, jinak hodnota nemusí pracovat správně. Pokud budete muset spustit kód, který inicializuje vaší doplňku VSTO, přidejte kód, který `ThisAddIn_Startup` obslužné rutiny události.|  
 |`OnLoad`|Přiřadí <xref:Microsoft.Office.Core.IRibbonControl> parametru `ribbon` pole. Aplikace Microsoft Office volat tuto metodu v případě, že načtete vlastní pás karet. Toto pole můžete použít k dynamicky aktualizovat vlastní pás karet. Další informace najdete v tématu technického článku [přizpůsobení uživatelské rozhraní pásu karet Office (2007) pro vývojáře (část 1 ze 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
 |`GetResourceText`|Volá `GetCustomUI` metoda získat obsah souboru XML pásu karet.|  
   
 ## <a name="see-also"></a>Viz také  
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
  [Návod: Vytvoření vlastní karty pomocí kódu XML pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
- [Přizpůsobení uživatelského rozhraní sady Office](../vsto/office-ui-customization.md)  
+ [Přizpůsobení uživatelského rozhraní systému Office](../vsto/office-ui-customization.md)  
   
   

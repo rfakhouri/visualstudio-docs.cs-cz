@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 297d9535a8e9655ed87230d4f947faeb29e08487
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbf234d18c48ed501987f160bd2b98ec9f768b6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manifest-from-resources"></a>Manifestu z prostředků
 Manifest z prostředků nástroje je konzolovou aplikaci, která přebírá seznam prostředky obrázků (.png nebo XAML soubory) a vygeneruje soubor .imagemanifest, který umožňuje tyto bitové kopie pro použití s Visual Studio Service bitové kopie. Kromě toho tento nástroj slouží k přidání bitové kopie do existující .imagemanifest. Tento nástroj je užitečný pro přidání podporu pro bitové kopie do rozšíření pro Visual Studio vysokou hodnotou DPI a motivů. Soubor generovaný .imagemanifest by měl součástí a nasadit jako součást rozšíření sady Visual Studio (VSIX).  

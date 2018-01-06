@@ -12,11 +12,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: ec6d6bc63094b361f7663e640d9133add3bfbfd0
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: b71e1797b7ba5378b7a8396f56f97cc9a0c63b2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-test-basics"></a>Základní informace o testech jednotek
 Zkontrolujte, že váš kód funguje podle očekávání tím vytváření a spouštění testování částí. Je volána testování, protože rozdělíte dolů funkce vašeho programu do diskrétní možností intenzivního testování chování, které můžete testovat jako jednotlivých částí *jednotky*. Visual Studio Průzkumníka testů poskytuje flexibilní a efektivní způsob, jak spustit testy částí a zobrazit jejich výsledky v sadě Visual Studio. Visual Studio nainstaluje testování architektury pro spravovaná a nativní kód částí společnosti Microsoft. Použití *framework testování částí* vytvářet testy částí, spouštění je a ohlásí výsledky tyto testy. Testování částí spusťte při provádění změn pro testování, aby váš kód stále funguje správně. Visual Studio Enterprise můžete k tomu automaticky s [Live testování částí](live-unit-testing-intro.md), který zjistí testy vliv kódu změní a běží na pozadí během psaní.
@@ -44,9 +45,9 @@ Zkontrolujte, že váš kód funguje podle očekávání tím vytváření a spo
 ###  <a name="BKMK_Quick_starts"></a>Rychlé spuštění  
  Úvod do testování částí, které přejdete přímo do kódování najdete v jednom z těchto témat:  
   
--   [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+-   [Návod: Vytváření a spouštění testů částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
--   [Rychlé zahájení: Testování vývoj řízený testy pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)  
+-   [Rychlý začátek: Vývoj řízený testy s použitím Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
 -   [Testování částí nativního kódu pomocí Průzkumníka testů](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
@@ -187,7 +188,7 @@ public void Withdraw_AmountMoreThanBalance_Throws()
   
  Další informace o rozhraní testování částí Microsoft najdete v jednom z následujících témat:  
   
--   [Zápis testů částí pro rozhraní .NET Framework s částí Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+-   [Zápis testů částí pro rozhraní .NET Framework s infrastrukturou pro testování částí Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
 -   [Zápis testů částí pro C/C++](writing-unit-tests-for-c-cpp.md)  
   

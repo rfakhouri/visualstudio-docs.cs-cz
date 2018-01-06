@@ -30,11 +30,12 @@ caps.latest.revision: "79"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 941ca002d2f840805253624e7e0004fb560c4167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2655cd8f8c75f9c10063a1b85d2390b153782d85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-designer"></a>Návrhář pásu karet
   Návrhář pásu karet je plátno visual návrhu. Chcete-li přidat vlastní karty, skupiny a ovládacích prvků na pásu karet z aplikace Microsoft Office pomocí Návrháře pásu karet.  
@@ -146,13 +147,13 @@ ms.lasthandoff: 10/31/2017
 |**Pole**|Kontejner, který slouží k uspořádání ovládacích prvků ve skupině. Pole s výjimkou oddělovač, skupinu nebo na kartě můžete přidat libovolný ovládací prvek. Pole může být vodorovně nebo svisle.|  
 |**Tlačítko**|Tlačítko, které se spustí akce. Tlačítko můžete přidat ke skupině, skupina tlačítek, rozevíracího seznamu, galerie, nabídky nebo tlačítko rozdělení.|  
 |**Skupina tlačítek**|Skupinu, která obsahuje jeden nebo více tlačítek, přepínacích tlačítek, nabídek, tlačítka rozdělení a Galerie. Skupina tlačítek můžete přidat ke skupině nebo nabídky.|  
-|**Zaškrtávací políčko**|Pole, která zaškrtnuto nebo ne k zapnutí nebo vypnutí možnost.|  
-|**Pole se seznamem**|Textové pole se seznamem. Uživatelé můžete buď zadejte nebo vyberte si sami vyberou. V poli se zobrazí aktuální výběr. Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> vlastnost k přidání a odebrání položek na běh před nebo po načtení pásu karet do aplikací Office.|  
+|**CheckBox**|Pole, která zaškrtnuto nebo ne k zapnutí nebo vypnutí možnost.|  
+|**ComboBox**|Textové pole se seznamem. Uživatelé můžete buď zadejte nebo vyberte si sami vyberou. V poli se zobrazí aktuální výběr. Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> vlastnost k přidání a odebrání položek na běh před nebo po načtení pásu karet do aplikací Office.|  
 |**Rozevírací seznam**|Seznam položek, které můžete vybrat uživatele. Uživatele nelze zadat nové položky v rozevíracím seznamu.<br /><br /> Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> vlastnost k přidávání položek do seznamu. Můžete přidávat a odebírat položky v době běhu.<br /><br /> Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> vlastnost pro přidání tlačítek do seznamu. Nelze však přidat a odebrat tlačítka v době běhu po načtení pásu karet do aplikací Office.|  
 |**Textové pole**|Pole, ve kterém může uživatel zadat text.|  
 |**Galerie**|Nabídky, která uvede mřížky visual voleb, ze kterých můžete vybrat uživatele nebo pole. Můžete řídit rozložení výběr v nabídce. Použití <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> a <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> vlastnosti k určení počtu řádků a sloupců, které se zobrazí položky a tlačítka galerie.|  
 |**Popisek**|Text, který můžete použít k identifikaci ovládacích prvků na pásu karet.|  
-|**Nabídky**|Rozevíracího seznamu, která může obsahovat následující prvky:<br /><br /> – Tlačítko<br />-Zaškrtávací políčko<br />-Galerie<br />-Nabídky<br />– Tlačítko rozdělení<br />-Přepínací tlačítko<br />-Oddělovače<br /><br /> Přidání ovládacího prvku do nabídky v Návrháři pásu karet, klikněte na šipku dolů v nabídce vystavit povrchu návrháře nabídky. Potom můžete přetáhnout ovládacích prvků pásu karet z **sada nástrojů** na v nabídce. K uspořádání ovládacích prvků, přetáhněte je na požadované místo.<br /><br /> Přidání ovládacích prvků do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po pásu karet je načten do aplikace Office, je nutné nastavit <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> vlastnost **true** před načtením na pásu karet. Informace o tom, jak to udělat najdete v tématu [přehled modelu objektů pásu karet](../vsto/ribbon-object-model-overview.md).|  
+|**Nabídka**|Rozevíracího seznamu, která může obsahovat následující prvky:<br /><br /> – Tlačítko<br />-Zaškrtávací políčko<br />-Galerie<br />-Nabídky<br />– Tlačítko rozdělení<br />-Přepínací tlačítko<br />-Oddělovače<br /><br /> Přidání ovládacího prvku do nabídky v Návrháři pásu karet, klikněte na šipku dolů v nabídce vystavit povrchu návrháře nabídky. Potom můžete přetáhnout ovládacích prvků pásu karet z **sada nástrojů** na v nabídce. K uspořádání ovládacích prvků, přetáhněte je na požadované místo.<br /><br /> Přidání ovládacích prvků do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po pásu karet je načten do aplikace Office, je nutné nastavit <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> vlastnost **true** před načtením na pásu karet. Informace o tom, jak to udělat najdete v tématu [přehled modelu objektů pásu karet](../vsto/ribbon-object-model-overview.md).|  
 |**Oddělovač**|Dynamické panelu slouží k oddělení položky v seznamu. Při přidání do skupiny, na panelu je svislý. Při přidání do nabídky, panelu je vodorovné.|  
 |**Tlačítko rozdělení**|Tlačítko s nabídky připojit. Tlačítko rozdělení může obsahovat žádné z následujících ovládacích prvků:<br /><br /> – Tlačítko<br />-Zaškrtávací políčko<br />-Galerie<br />-Nabídky<br />– Tlačítko rozdělení<br />-Přepínací tlačítko<br />-Oddělovače<br /><br /> Stejně jako v nabídce tlačítko rozdělení má svou vlastní návrhovou plochu. Ale na rozdíl od nabídku lze aktualizovat pouze položky v tlačítko rozdělení před načtením na pásu karet do aplikací Office. Informace o aktualizaci položky v tlačítko rozdělení najdete v tématu [přehled modelu objektů pásu karet](../vsto/ribbon-object-model-overview.md).|  
 |**Přepínací tlačítko**|Tlačítko, které se zobrazí stisknutí nebo nebyla stisknuta klávesa.|  
@@ -210,6 +211,6 @@ ms.lasthandoff: 10/31/2017
  [Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
  [Postupy: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
  [Postupy: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)  
+ [Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)  
   
   

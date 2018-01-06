@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7dcdbfa22301e6872e5ea39fd910a326f817ce1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: c5c09288baaeb0cad029a04641533f2b9c69f8cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Referenční dokumentace rozhraní API produktu Visual Studio Profiler (nativní)
 Rozhraní API profileru Visual Studio umožňují k programovému řízení množství shromažďovaných dat a vložení časové razítko a profil značky během vytváření profilů. Použití nativních rozhraní API, můžete zahrnout soubor hlaviček VSPerf.h a přidat VSPerf.lib ve vašem projektu.  

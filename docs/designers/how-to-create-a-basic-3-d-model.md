@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4bba90206a428ae9bb782e7eac408b872721351f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b9a7bfb1d2eb3f54da0953a78d1e9630ed00aab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Postupy: Vytvoření základního 3D modelu
 Tento dokument ukazuje, jak vytvořit základní 3D modelu pomocí editoru modelu.  
@@ -79,4 +80,4 @@ Tento dokument ukazuje, jak vytvořit základní 3D modelu pomocí editoru model
 ## <a name="see-also"></a>Viz také  
  [Postupy: Model 3D geologické struktury](../designers/how-to-model-3-d-terrain.md)   
  [Editor modelu](../designers/model-editor.md)   
- [Návrhář shaderu](../designers/shader-designer.md)
+ [Návrhář shaderů](../designers/shader-designer.md)

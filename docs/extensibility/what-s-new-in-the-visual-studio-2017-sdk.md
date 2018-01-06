@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0be477d54ffeab52c415890c7d95447fa3f55ffc
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: vssdk
+ms.openlocfilehash: f6b27e60f1cc47b236ed2d3516313537a6121be5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>Jaký & č. 39; s ve Visual Studio 2017 SDK
 
@@ -35,7 +36,7 @@ Nový formát má podporu pro:
 Další informace o těchto změnách, najdete v následujících tématech:
 
 * [Změny rozšiřitelnosti pro 2017](breaking-changes-2017.md)
-* [Podpora Ngen ve VSIX v3](ngen-support.md)
+* [Podpora Ngen ve VSIX v. 3](ngen-support.md)
 * [Instalace mimo složku rozšíření](set-install-root.md)
 * [Nejčastější dotazy pro Visual Studio 2017 rozšiřitelnosti](faq-2017.md)
 

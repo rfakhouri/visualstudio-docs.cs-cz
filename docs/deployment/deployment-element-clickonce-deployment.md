@@ -24,11 +24,12 @@ caps.latest.revision: "30"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: ddcdc96095775f5957fbc9db872b51396798ba52
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0caff13f84208152b3fa2ff4e56a7a2c7f0b6dd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;nasazení&gt; – Element (ClickOnce – nasazení)
 Identifikuje atributy použité pro nasazení aktualizací a vystavení systému.  
@@ -124,4 +125,4 @@ Identifikuje atributy použité pro nasazení aktualizací a vystavení systému
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [ClickOnce – Manifest nasazení](../deployment/clickonce-deployment-manifest.md)
+ [ClickOnce – manifest nasazení](../deployment/clickonce-deployment-manifest.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bfef7e641bc8f7e041242ce28110845855c2a65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e0fb464d3eb9d7b39b853593c9458fe800296321
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editor-factories"></a>Objekty Factory editoru
 Objekt factory editoru vytvoří editor objektů a umístí je do rámec okna, označované jako fyzické zobrazení. Vytvoří dokument data a objekty zobrazení dokumentu, které jsou potřebné k vytvoření editory a návrháři. Objekt factory editoru potřebné pro vytvoření základní editoru Visual Studio a všechny standardní editor. Vlastní editor lze volitelně také můžete vytvořit pomocí objekt factory editoru.  
@@ -55,4 +56,4 @@ Objekt factory editoru vytvoří editor objektů a umístí je do rámec okna, o
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
- [Spuštěné tabulce dokumentu](../extensibility/internals/running-document-table.md)
+ [Spuštění tabulky dokumentů](../extensibility/internals/running-document-table.md)

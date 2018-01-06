@@ -34,11 +34,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 978a2709fb95a0ade74f5c67d5dc774823ded6a3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: a5a3ffde718d951181d788cca5cf57a21cbff4d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Možnosti, textový editor, XAML, formátování
 Použití **formátování** na stránce vlastností zadejte způsob elementů a atributů formátování v dokumentech XAML. Otevřete **možnosti** dialogové okno, klikněte na tlačítko **nástroje** nabídce a pak klikněte na tlačítko **možnosti**. Pro přístup k **formátování** vlastnost rozbalte **textového editoru**, **XAML**, **formátování** uzlu.  

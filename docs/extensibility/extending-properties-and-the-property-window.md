@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ba36f0279c8401e49b30a4f1f61b3e857cb20b5b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0a0775a8476d7fc4842ade5f4ac7b96271d06a8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-properties-and-the-property-window"></a>Rozšíření vlastností a v okně Vlastnosti
 **Vlastnosti** okna lze zobrazit a upravit vlastnosti doby návrhu a události vybraných objektů.  
@@ -30,8 +31,8 @@ ms.lasthandoff: 10/31/2017
  Když vyberete objekt v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], veřejné vlastnosti tohoto objektu se zobrazí v **vlastnosti** okno. Další informace najdete v tématu [okno Přehled vlastností](../extensibility/internals/properties-window-overview.md).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Vystavení vlastností do okna vlastností](../extensibility/exposing-properties-to-the-properties-window.md)  
+ [Vystavení vlastností v okně Vlastnosti](../extensibility/exposing-properties-to-the-properties-window.md)  
  Vysvětluje, jak může mít vaše vlastní vlastnosti zobrazí v okně Vlastnosti.  
   
- [Získání vlastností projektu](../extensibility/getting-project-properties.md)  
+ [Načtení vlastností projektu](../extensibility/getting-project-properties.md)  
  Vysvětluje, jak získat vlastnosti projektu.

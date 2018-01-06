@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55da85b9740216cefe55911d79dab2c16b035695
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 602515daedec99bbcfa3efd58469de5d8ba3df7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře
   Pokud vytvoříte webové části pro web služby SharePoint, vaši uživatelé můžete přímo upravit obsah, vzhled a chování stránek v dané lokalitě pomocí prohlížeče. Tento postup vám ukáže, jak vytvořit webovou část vizuálně pomocí webu služby SharePoint **Visual webovou část** šablona projektu v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

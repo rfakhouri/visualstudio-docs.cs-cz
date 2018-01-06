@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03c0cbd20258618297e943524d06ba7b3a496264
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ef1bce81e20772660a6074c15bd5dad494804373
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adapting-legacy-code-to-the-editor"></a>Přizpůsobení starší verze kódu do editoru
 Editoru Visual Studio obsahuje řadu funkcí, které je přístupné z existující kód součásti. Následující pokyny ukazují, jak přizpůsobit bez MEF součásti, například VSPackage, využívat funkce editor. Podle pokynů také ukazují, jak použít adaptéry získání služby editoru ve spravovaných i nespravovaných kódu.  

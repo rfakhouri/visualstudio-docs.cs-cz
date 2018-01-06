@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f29ca84669f563da5733c8c07b219d498ccf6ded
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 668287dc8b0b5ac9dd37cb450582e3a56fb7f25e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-project-objects"></a>Vystavení objektů projektu
 Typy vlastních projektů zajistí objekty automatizace, aby bylo možné povolit přístup k projektu pomocí rozhraní automatizace. Každý typ projektu se očekává poskytování standardní <xref:EnvDTE.Project> automatizace objektu, který je přístupný z <xref:EnvDTE.Solution>, který obsahuje kolekce všechny projekty, které jsou otevřeny v integrovaném vývojovém prostředí. Každá položka v projektu musí být vystavené <xref:EnvDTE.ProjectItem> objekt s `Project.ProjectItems`. Kromě těchto objektů standardní automatizace můžete zvolit projekty nabízejí objekty automatizace specifické pro projekt.  

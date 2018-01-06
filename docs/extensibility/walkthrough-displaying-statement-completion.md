@@ -13,11 +13,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7ebdc87e1dccf2bde66ccfeebb6c2b4fba144c70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d9c3b44bd46c34a864896cbf1002505085be5143
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Návod: Zobrazení dokončování příkazů
 Na základě jazyka dokončování můžete implementovat definováním identifikátory, pro které byste chtěli poskytnout dokončení a potom aktivuje relaci dokončení. Můžete definovat dokončování v kontextu služby jazyk, definovat vlastní příponu názvu souboru a typu obsahu a následně se zobrazí dokončení právě tohoto typu nebo můžete aktivovat dokončení pro existující typ obsahu – například prostý text"". Tento návod ukazuje, jak aktivovat dokončování pro typ obsahu "prostý text", což je typ obsahu textových souborů. Typ obsahu "text" je nadřazeného všechny ostatní typy obsahu, včetně kódu a soubory XML.  
@@ -204,4 +205,4 @@ Na základě jazyka dokončování můžete implementovat definováním identifi
 4.  Jak budete zadávat nejprve "a" a potom "d", seznamu, který obsahuje "Přidání" a "přizpůsobení" budou zobrazeny. Všimněte si, že je vybraný přidání. Když zadáte jiný "d", seznamu by měl obsahovat pouze "Přidání", která je teď vybrána. Můžete potvrdit "Přidání" po stisknutí klávesy MEZERNÍK, tabulátor nebo Enter nebo zavření seznamu zadáním Esc nebo jiného klíče.  
   
 ## <a name="see-also"></a>Viz také  
- [Návod: Propojení typu obsahu s příponu názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Návod: Propojení typu obsahu s příponou názvu souboru](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

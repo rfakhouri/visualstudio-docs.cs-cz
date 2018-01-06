@@ -27,11 +27,12 @@ caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7309e17e04627654aaaf2e28a54c75fa2d6993c
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: 8b3ced43c776cc948467d68b2112fb808dd2a48c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supported-code-changes-c"></a>Podporované změny kódu (C++)
 Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu. Některé změny však nelze použít při spuštění programu. Pokud chcete tyto změny použít, musíte zastavit provádění a vytvořit novou verzi kód.  
@@ -143,4 +144,4 @@ Upravit a pokračovat jazyka Visual C++ zpracovává většinu typů změn kódu
  Upravit a pokračovat neobnoví souborů definic (IDL) rozhraní. Proto změny IDL – atributy neodrazí se v průběhu ladění. Pokud chcete zobrazit výsledek změny IDL – atributy, musí Zastavte ladění a sestavte znovu vaší aplikace. Upravit a pokračovat negeneruje chybě nebo upozornění Pokud IDL – atributy se změnila. Další informace najdete v tématu [IDL – atributy](/cpp/windows/idl-attributes).  
   
 ## <a name="see-also"></a>Viz také  
- [Upravit a pokračovat (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+ [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-cpp.md)

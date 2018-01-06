@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 392f2f33d792c4e8f31ff0423b68a28a68797818
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e1f5fc7695df028330d0e53faebefc178f499da1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="filtering-the-additem-dialog-box-for-nested-projects"></a>Filtrování AddItem dialogových oken pro vnořené projekty
 Při zobrazení **AddItem** dialogové okno pro vnořený projekt, nadřazený projekt můžete řídit, které položky se zobrazují v dialogovém okně.  
@@ -36,4 +37,4 @@ Při zobrazení **AddItem** dialogové okno pro vnořený projekt, nadřazený p
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [Přidávání položek do pro přidání nové položky dialogových oken](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Registrace šablon projektů a položek](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Vnoření projekty](../../extensibility/internals/nesting-projects.md)
+ [Vnoření projektů](../../extensibility/internals/nesting-projects.md)

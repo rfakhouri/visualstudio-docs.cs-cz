@@ -20,18 +20,19 @@ caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 86ffd65cf0ebe19a9f3c1f42c24fc365536be661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9b3fd00e849a54fc926054e1f7e0d97b2907cf02
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Začínáme ladění vícevláknové aplikace v sadě Visual Studio
 Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní pro ladění vícevláknové aplikace. Tento kurz ukazuje, jak používat značky přístup z více vláken **paralelní zásobníky** okně **paralelního sledování** oken, podmíněné zarážky a filtr zarážky. V tomto kurzu trvá jenom pár minut, ale jeho dokončení vás seznámí s funkcemi pro ladění vícevláknové aplikace.
 
 |         |         |
 |---------|---------|
-| ![Přehrát video,](../install/media/video-icon.png "WatchVideo") | [Přehrát video,](#video) na vícevláknové ladění, který ukazuje podobným způsobem. |
+|  ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171) na vícevláknové ladění, který ukazuje podobným způsobem. |
 
 Další témata obsahují další informace o použití další vícevláknové ladicí nástroje:
 
@@ -372,12 +373,6 @@ Můžete nastavit zarážky v různých podmínkách, jako je název vlákna neb
 #### <a name="to-switch-to-another-thread"></a>Chcete-li přepnout na jiné vlákno 
 
 - Přepnutí na jiné vlákno, najdete v tématu [postupy: přepnutí na jiné vlákno během ladění](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
-
-## <a name="video"></a>Podívejte se na video o vícevláknové ladění
-
-<div style="padding-top: 56.25%; position: relative; width: 100%;">
-<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171" frameborder="0" allowfullscreen></iframe>
-</div>
 
 #### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>Další informace o windows paralelních zásobníků a paralelního sledování  
   

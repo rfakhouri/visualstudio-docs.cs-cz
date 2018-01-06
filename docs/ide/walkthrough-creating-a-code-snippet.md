@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: 0ad7cdb245aa43deab22593fbbb5a5b10105f5af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Návod: Vytvoření fragmentu kódu
 Fragment kódu můžete vytvořit pomocí pouhých několika krocích. Všechny, které musíte udělat je vytvořte soubor XML, vyplňte příslušná elementy a přidejte do ní váš kód. Můžete také přidat odkazy a nahrazující parametry do vašeho kódu. Můžete přidat fragment k instalaci sady Visual Studio pomocí tlačítka Import na Správce fragmentů kódu (**nástroje**, **Správce fragmentů kódu...** ).  

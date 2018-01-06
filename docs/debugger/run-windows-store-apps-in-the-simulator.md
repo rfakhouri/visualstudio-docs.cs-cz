@@ -17,11 +17,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf4c5d1e71a4d0e0d8ac74ba02bff29ddc1c7477
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: d4a64f9463650941fe8d645a1a6b92376277f0b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-uwp-and-windows-81-apps-in-the-simulator"></a>V simulátoru spouštět aplikace pro UPW a Windows 8.1
 Visual Studio simulátor pro aplikace UWP a Windows 8.1 je aplikace pracovní plochy, která simuluje aplikace UWP nebo Windows 8.1. Můžete spustit aplikace zvolte velikost fyzické obrazovky a řešení, který chcete emulovat. Můžete také simulace událostí otočení a běžné touch a simulovat vlastnosti síťového připojení.
@@ -146,7 +147,7 @@ Visual Studio simulátor pro aplikace UWP a Windows 8.1 je aplikace pracovní pl
   
  [Způsob reakce na události systému s úkoly na pozadí](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [Jak aktivovat pozastavení, obnovení a události v aplikacích pro UPW na pozadí](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+ [Jak aktivovat pozastavení, obnovení a události na pozadí v aplikacích pro UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Přejděte simulátoru pomocí klávesnice  
  Můžete přejít simulátoru nástrojů stisknutím klávesy **kombinaci kláves CTRL + ALT + Šipka nahoru** přejděte fokus z okna simulátoru na panelu nástrojů simulátoru. Použití **šipka nahoru** a **šipka dolů** přecházet mezi tlačítka panelu nástrojů.  

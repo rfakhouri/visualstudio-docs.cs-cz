@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8ead1571856fa04e10103fbf2274dc0e22295154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9f6e3110ca4988fcc12e547f3bcd82c1026f3aeb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referenční dokumentace rozhraní API (Visual Studio ladění)
 V části odkaz zahrnuje koncepční přehled rozhraní API, průvodce, který ukazuje syntaxi a použití pro všechny prvky rozhraní API a širokou příklady kódu. Všechny odkazy jsou abecedně uvedené podle kategorie.  
@@ -49,4 +50,4 @@ V části odkaz zahrnuje koncepční přehled rozhraní API, průvodce, který u
  [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [Pomocníci SDK pro ladění](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Rozšiřitelnost ladicího programu sady Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Rozšiřitelnost programu Visual Studio Debugger](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

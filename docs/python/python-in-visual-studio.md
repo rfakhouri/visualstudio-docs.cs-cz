@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f831aa683efdacc8a01ffbf5ef5a280c1a95f9e3
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: f91fcfa7e0ea7247eb91a3512f7abd64d8684809
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Práce s Python v sadě Visual Studio
 
@@ -54,7 +55,7 @@ Video úvod, najdete v článku krátké [Python Tools pro Visual Studio](https:
 
 **OTÁZKY. Je k dispozici v sadě Visual Studio pro Mac podporu Python?**
 
-A. Není v tuto chvíli, když na vyžádání na [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Visual Studio pro Mac](https://docs.microsoft.com/visualstudio/mac/) dokumentace identifikuje aktuální typy vývoj, které podporují. Do té doby, Visual Studio Code v systému Windows, Mac a Linux [pracuje s Python prostřednictvím dostupná rozšíření](https://code.visualstudio.com/docs/languages/python).
+A. Není v tuto chvíli, když na vyžádání na [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Visual Studio pro Mac](/visualstudio/mac/) dokumentace identifikuje aktuální typy vývoj, které podporují. Do té doby, Visual Studio Code v systému Windows, Mac a Linux [pracuje s Python prostřednictvím dostupná rozšíření](https://code.visualstudio.com/docs/languages/python).
 
 **OTÁZKY. Co je můžete použít k vytvoření uživatelského rozhraní s Pythonem?**
 

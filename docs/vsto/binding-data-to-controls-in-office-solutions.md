@@ -23,11 +23,12 @@ caps.latest.revision: "70"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb94603d3041a30e978fff0ac6fff399648fc027
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 70748440dc325266439ee71569e858eb3d815fc1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="binding-data-to-controls-in-office-solutions"></a>Vazba dat k ovládacím prvkům v řešeních pro systém Office
   Můžete vytvořit vazbu ovládacích prvků Windows Forms a *hostování ovládacích prvků* na dokument aplikace Microsoft Office Word nebo sešitu aplikace Microsoft Office Excel ke zdroji dat, data se automaticky zobrazit ovládací prvky. Data můžete vázat na ovládací prvky v projektech na úrovni aplikace i na úrovni dokumentu.  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: využívat Data databáze v aplikaci Excel?](http://go.microsoft.com/fwlink/?LinkID=130287).  
   
 ## <a name="simple-data-binding"></a>Jednoduchá datová vazba  
- Jednoduchá datová vazba existuje, pokud je vlastnost ovládací prvek vázán na jeden datový prvek, jako je například hodnotu v tabulce dat.. Například <xref:Microsoft.Office.Tools.Excel.NamedRange> má ovládací prvek <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost, která mohou být vázány na pole v datové sadě. Při změně pole v datové sadě, změní se také hodnotu pojmenované oblasti. Všechny hostitele ovládací prvky, s výjimkou <xref:Microsoft.Office.Tools.Word.XMLNodes> řídit, podporu jednoduché datové vazby. <xref:Microsoft.Office.Tools.Word.XMLNodes> Ovládací prvek je kolekce, a proto ho nepodporuje datová vazba.  
+ Jednoduchá datová vazba existuje, pokud je vlastnost ovládací prvek vázán na jeden datový prvek, jako je například hodnotu v tabulce dat. Například <xref:Microsoft.Office.Tools.Excel.NamedRange> má ovládací prvek <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> vlastnost, která mohou být vázány na pole v datové sadě. Při změně pole v datové sadě, změní se také hodnotu pojmenované oblasti. Všechny hostitele ovládací prvky, s výjimkou <xref:Microsoft.Office.Tools.Word.XMLNodes> řídit, podporu jednoduché datové vazby. <xref:Microsoft.Office.Tools.Word.XMLNodes> Ovládací prvek je kolekce, a proto ho nepodporuje datová vazba.  
   
  Chcete-li provést jednoduché datové vazby k hostitelského ovládacího prvku, přidejte <xref:System.Windows.Forms.Binding> k vlastnosti datové vazby ovládacího prvku. A <xref:System.Windows.Forms.Binding> objekt představuje jednoduchý vazbu mezi hodnotu vlastnosti ovládacího prvku a hodnotu datový prvek.  
   
@@ -77,22 +78,22 @@ ms.lasthandoff: 10/31/2017
 ### <a name="binding-data-in-document-level-projects-at-design-time"></a>Vazba dat v projekty na úrovni dokumentu v době návrhu  
  Následující témata ukazují příklady vazba dat v době návrhu:  
   
--   [Postupy: naplnění listů daty z databáze](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
+-   [Postupy: Naplnění listů daty z databáze](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)  
   
--   [Postupy: naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
+-   [Postupy: Naplnění dokumentů daty z databáze](../vsto/how-to-populate-documents-with-data-from-a-database.md)  
   
--   [Postupy: naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md)  
+-   [Postupy: Naplnění dokumentů daty z objektů](../vsto/how-to-populate-documents-with-data-from-objects.md)  
   
--   [Postupy: naplnění dokumentů daty ze služeb](../vsto/how-to-populate-documents-with-data-from-services.md)  
+-   [Postupy: Naplnění dokumentů daty ze služeb](../vsto/how-to-populate-documents-with-data-from-services.md)  
   
--   [Postupy: procházení databázových záznamů na listu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
+-   [Postupy: Procházení databázových záznamů na listu](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)  
   
 ### <a name="binding-data-in-vsto-add-in-projects"></a>Vazba dat v projekty doplňku VSTO  
  V doplňku VSTO projekty můžete přidat ovládací prvky pouze za běhu. Následující témata ukazují příklady vazba dat v době běhu:  
   
--   [Návod: Jednoduché datové vazby v projektu doplňku VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
+-   [Návod: Jednoduché datové vazby v doplňku VSTO pro Project](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
   
--   [Návod: Komplexní datové vazby v projektu doplňku VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
+-   [Návod: Složité datové vazby v doplňku VSTO pro Project](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
   
 ## <a name="updating-data-that-is-bound-to-host-controls"></a>Aktualizace dat, která je vázána k hostování ovládacích prvků  
  Datová vazba mezi zdrojem dat a hostitelského ovládacího prvku zahrnuje obousměrný data aktualizace. V jednoduché datové vazby ve zdroji dat se projeví automaticky v ovládacím prvku hostitele, ale vyžadují explicitní volání aktualizovat zdroj dat změny v ovládacím prvku hostitele. Důvodem je, že v některých případech změny do jednoho pole vázané na data nebyly přijaty. Pokud jsou opatřeny změny v jiné pole vázané na data. Máte například dvě pole, jednu pro stáří a druhou pro let prostředí. Prostředí nesmí překročit stáří. Uživatele nelze aktualizovat stáří z 50 až 25 a potom zkušenost od 30 do 10 Pokud uživatel provede změny ve stejnou dobu. Chcete-li tento problém vyřešit, nebudou aktualizovány pole s jednoduché datové vazby, dokud aktualizace explicitně odesílá kódu.  
@@ -111,6 +112,6 @@ ms.lasthandoff: 10/31/2017
  [Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)    
  [Aktualizace dat pomocí TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)    
  [Ukládání dat do mezipaměti](../vsto/caching-data.md)   
- [Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)  
+ [Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)  
   
   

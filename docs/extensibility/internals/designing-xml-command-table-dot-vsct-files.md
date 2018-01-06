@@ -13,11 +13,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca277abe07ffe843ed3f4106615796340f5367a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e007ffe8cf3cc893bc9575a3e7c083090b523467
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Návrh tabulky příkaz XML (. Soubory Vsct)
 Soubor XML příkaz tabulky (.vsct) popisuje rozložení a vzhled příkaz položky pro VSPackage. Příkaz položky zahrnují tlačítka, pole se seznamem, nabídek, panely nástrojů a skupiny příkaz položek. Toto téma popisuje XML příkaz tabulky souborů, jejich vlivu příkaz položek a nabídek a postup jejich vytvoření.  
@@ -124,4 +125,4 @@ Soubor XML příkaz tabulky (.vsct) popisuje rozložení a vzhled příkaz polo�
  Spusťte nástroj pomocí příkazového řádku **/reset CreateExpInstance**. Mějte na paměti, že tento nástroj odebere z podregistru experimentální všechny registrované VSPackages nejsou obvykle nainstalovány s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšíření nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)
+ [Rozšiřování nabídek a příkazů](../../extensibility/extending-menus-and-commands.md)

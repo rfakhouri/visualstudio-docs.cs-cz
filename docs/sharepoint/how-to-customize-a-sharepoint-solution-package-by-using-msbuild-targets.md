@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 758cf3e62621c22f3f97dc62b70c745afb860b8a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 4c0fbc4a2feb3abc92c47567dcb0ea3d425ddda1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Postupy: Přizpůsobení balíčku řešení SharePoint pomocí cílů nástroje MSBuild
   Pomocí cílů nástroje MSBuild v příkazovém řádku lze přizpůsobit, jak Visual Studio vytvoří soubory balíčku SharePoint (WSP). Například můžete upravit vlastnosti nástroje MSBuild Chcete-li změnit adresář zprostředkující balení a skupiny nástroje MSBuild položky, které zadat výčtové soubory.  

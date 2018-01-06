@@ -16,11 +16,12 @@ caps.latest.revision: "36"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 737ce6ae0368d7d1db9d72e6fb25355409663c09
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7aed43ac4248c9bfd1e43d5e6c732a4fef3af529
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Vystavení vlastností do okna vlastností
 Tento názorný postup zpřístupní veřejné vlastnosti objektu **vlastnosti** okno. Pro tyto vlastnosti provedené změny se projeví v **vlastnosti** okno.  
@@ -270,4 +271,4 @@ Tento názorný postup zpřístupní veřejné vlastnosti objektu **vlastnosti**
  Okna nástrojů Visual Studio zachovat mezi relacemi sady Visual Studio. Další informace o zachování stavu okno nástroje najdete v tématu <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšíření vlastností a v okně Vlastnosti](../extensibility/extending-properties-and-the-property-window.md)
+ [Rozšíření vlastností a okno Vlastnosti](../extensibility/extending-properties-and-the-property-window.md)

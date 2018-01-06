@@ -21,11 +21,12 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 7e56d596c37960ddfa548921da897f08fbfbbf5b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1923c39669d50303f907974816fbb54297c477c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-security-and-deployment"></a>ClickOnce – zabezpečení a nasazení
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]je nasazení technologie, která umožňuje vytvoření automatických aktualizací aplikací systému Windows, které můžete nainstalovat a spustit s minimálním uživatelským interakci. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]poskytuje úplnou podporu pro publikování a aktualizace aplikace nasazené pomocí technologie ClickOnce, pokud jste si vytvořili projekt v jazyce Visual Basic a Visual C#. Další informace o nasazení aplikací Visual C++, najdete v části [ClickOnce – nasazení pro aplikace Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).  
@@ -96,13 +97,13 @@ ms.lasthandoff: 10/27/2017
   
 |Nástroj|Popis|  
 |----------|-----------------|  
-|[Stránka zabezpečení, Návrhář projektu](../ide/reference/security-page-project-designer.md)|Přihlásí manifestů aplikace a nasazení.|  
-|[Publikovat stránku, Návrhář projektu](../ide/reference/publish-page-project-designer.md)|Vytváří a upravuje manifestů aplikace a nasazení pro aplikace Visual Basic a Visual C#.|  
-|[Mage.exe (generování manifestu a nástroj pro úpravy)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Generuje manifestů aplikace a nasazení pro aplikace Visual Basic, Visual C# a Visual C++.<br /><br /> Podepíše a znovu podepíše manifestů aplikace a nasazení.<br /><br /> Můžete spustit z dávky skripty a příkazového řádku.|  
-|[MageUI.exe (generování manifestu a nástroj pro úpravy, grafický klient)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Vytváří a upravuje manifestů aplikace a nasazení.<br /><br /> Podepíše a znovu podepíše manifestů aplikace a nasazení.|  
-|[Generateapplicationmanifest – úloha](../msbuild/generateapplicationmanifest-task.md)|Generuje manifest aplikace.<br /><br /> Můžete spustit z nástroje MSBuild. Další informace najdete v tématu [MSBuild – Reference](../msbuild/msbuild-reference.md).|  
-|[Generatedeploymentmanifest – úloha](../msbuild/generatedeploymentmanifest-task.md)|Generuje manifest nasazení.<br /><br /> Můžete spustit z nástroje MSBuild. Další informace najdete v tématu [MSBuild – Reference](../msbuild/msbuild-reference.md).|  
-|[Signfile – úloha](../msbuild/signfile-task.md)|Přihlásí manifestů aplikace a nasazení.<br /><br /> Můžete spustit z nástroje MSBuild. Další informace najdete v tématu [MSBuild – Reference](../msbuild/msbuild-reference.md).|  
+|[Stránka Zabezpečení, Návrhář projektu](../ide/reference/security-page-project-designer.md)|Přihlásí manifestů aplikace a nasazení.|  
+|[Stránka Publikovat, Návrhář projektu](../ide/reference/publish-page-project-designer.md)|Vytváří a upravuje manifestů aplikace a nasazení pro aplikace Visual Basic a Visual C#.|  
+|[Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Generuje manifestů aplikace a nasazení pro aplikace Visual Basic, Visual C# a Visual C++.<br /><br /> Podepíše a znovu podepíše manifestů aplikace a nasazení.<br /><br /> Můžete spustit z dávky skripty a příkazového řádku.|  
+|[MageUI.exe (Manifest Generation and Editing Tool, grafický klient)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Vytváří a upravuje manifestů aplikace a nasazení.<br /><br /> Podepíše a znovu podepíše manifestů aplikace a nasazení.|  
+|[GenerateApplicationManifest – úloha](../msbuild/generateapplicationmanifest-task.md)|Generuje manifest aplikace.<br /><br /> Můžete spustit z nástroje MSBuild. Další informace najdete v tématu [MSBuild – Reference](../msbuild/msbuild-reference.md).|  
+|[GenerateDeploymentManifest – úloha](../msbuild/generatedeploymentmanifest-task.md)|Generuje manifest nasazení.<br /><br /> Můžete spustit z nástroje MSBuild. Další informace najdete v tématu [MSBuild – Reference](../msbuild/msbuild-reference.md).|  
+|[SignFile – úloha](../msbuild/signfile-task.md)|Přihlásí manifestů aplikace a nasazení.<br /><br /> Můžete spustit z nástroje MSBuild. Další informace najdete v tématu [MSBuild – Reference](../msbuild/msbuild-reference.md).|  
 |<xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>|Vytvořte vlastní aplikaci pro generování manifestů aplikace a nasazení.|  
   
  Následující tabulka uvádí verze rozhraní .NET Framework, které jsou potřeba pro podporu aplikací ClickOnce v těchto prohlížečů.  

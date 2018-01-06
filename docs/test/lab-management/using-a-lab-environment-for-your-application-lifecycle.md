@@ -12,11 +12,12 @@ ms.assetid: b435eb39-dc7c-46fa-a91b-6e6dd614f01c
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 2eb863996b430c8473adb751851777c532fcfc89
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 88068cf7da401388ac7d8e72e665e91ef1b958b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Použít testovací prostředí pro vaše devops
 
@@ -134,10 +135,10 @@ Zde jsou některé další koncepty, které byste měli mít před pokračován�
 * [Plánování testovacího prostředí](https://msdn.microsoft.com/library/ff756575%28v=vs.140%29.aspx) 
 * [Správa testovacího prostředí](https://msdn.microsoft.com/library/dd936084%28v=vs.140%29.aspx) 
 * [Nastavení pro prostředí SCVMM](https://msdn.microsoft.com/library/dd380687%28v=vs.140%29.aspx) 
-* [Upgrade SCVMM 2008 R2 na SCVMM 2012](upgrade-scvmm-2008-r2-scvmm-2012.md) 
+* [Upgrade prostředí SCVMM 2008 R2 na SCVMM 2012](upgrade-scvmm-2008-r2-scvmm-2012.md) 
 * [Správa oprávnění](https://msdn.microsoft.com/library/dd380760%28v=vs.140%29.aspx) 
 * [Nastavení změn](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx) 
-* [Řešení potíží](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
+* [Odstraňování potíží](https://msdn.microsoft.com/library/ee853230%28v=vs.140%29.aspx)
   
 ### <a name="set-up-environments"></a>Nastavení prostředí
 

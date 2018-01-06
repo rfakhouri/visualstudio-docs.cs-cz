@@ -6,18 +6,19 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords: Window Search
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abc4ea7ee1445c0d1846fadb5319f17d98d3afcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f3b7b20b6ae96904b88ad97bbf87bf066f941d6
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="window-search-dialog-box"></a>Dialogové okno hledání oken
 Pomocí tohoto dialogového okna můžete najít a vyberte uzel pro konkrétní okno v [zobrazení oken](../debugger/windows-view.md). K zobrazení tohoto dialogového okna, Přesun zaměření pro zobrazení období systému Windows. Zvolte **najít okno** z **vyhledávání** nabídky.  
@@ -51,17 +52,17 @@ Pomocí tohoto dialogového okna můžete najít a vyberte uzel pro konkrétní 
  [Zobrazení oken](../debugger/windows-view.md)  
  Zobrazení stromu dostupné windows a ovládacích prvků.  
   
- [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)  
+ [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
  Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
   
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)  
+ [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
  Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.  
   
- [Najít – dialogové okno](../debugger/find-window-dialog-box.md)  
+ [Dialogové okno vyhledávacího okna](../debugger/find-window-dialog-box.md)  
  Použít k zobrazení všech vlastností či zprávy z konkrétní okno.  
   
  [Dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md)  
  Slouží k zobrazení vlastností okna vybraném v zobrazení systému Windows.  
   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)  
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
  Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.

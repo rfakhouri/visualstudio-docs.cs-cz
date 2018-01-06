@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 181462529b4e66f894328d099298408a91145c6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Zrevidujte, okomentujte a otestujte svůj kód
 Dále přidejte komentář k vašeho kódu. Komentář je poznámka, která nelze změnit způsob, který se chová program. Umožňuje jednodušší někomu, kdo je čtení kód a co provádí. Přidávání komentářů do kódu je dobré která podporují nahrát do. V jazyce Visual C# dvě lomítka (/ /) označení řádku jako komentář. V jazyce Visual Basic jednoduché uvozovky (') slouží k označení řádku jako komentář. Po přidání komentáře otestujete váš program. Je vhodné spustit a otestovat kód často při práci na projekty, aby bylo možné zachytit a opravili všechny problémy před kód získá složitější. To se označuje jako *iterativnější testování,*.  

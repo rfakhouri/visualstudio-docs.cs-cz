@@ -21,11 +21,12 @@ caps.latest.revision: "44"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f97ce4480ebdf04cce6a129d7c1950ac28df2aaf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0120e93e809d1d0f57b5b7dc993a982b1c78836
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr"></a>VSInstr
 Vsinstr – nástroj slouží k instrumentace binárních souborů. Je možné pomocí následující syntaxe:  
@@ -50,7 +51,7 @@ VSInstr [/U] filename [/options]
 |**Pokrytí**|Provede pokrytí instrumentace. Dá se dá použít jenom s následující možnosti: **podrobné**, **OutputPath**, **vyloučit**, a **Logfile**...|  
 |**Verbose**|**Podrobné**možnost se používá k zobrazení podrobných informací o procesu instrumentace.|  
 |**NoWarn**`[:[Message Number[;Message Number]]]`|Potlačit všechny nebo konkrétní varování.<br /><br /> `Message Number`-počet upozornění. Pokud `Message Number` je tento parametr vynechán, jsou potlačeny všechny výstrahy.<br /><br /> Další informace najdete v tématu [upozornění VSInstr](../profiling/vsinstr-warnings.md).|  
-|**Ovládací prvek** `:{` **vláken** `&#124;` **proces** `&#124;` **globální**`}`|Určuje úroveň profilování následující shromažďování dat vsinstr – řízení možností:<br /><br /> **Spuštění**<br /><br /> **StartOnly**<br /><br /> **Pozastavit**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Vlákno** -určuje funkce řízení kolekce dat úrovni přístup z více vláken. Profilace je spustit nebo zastavit pouze pro aktuální vlákno. Profilování stav jiná vlákna nemá vliv. Výchozí hodnota je přístup z více vláken.<br /><br /> **Proces** -určuje funkce ovládacího prvku kolekce profilování data úrovni procesu. Profilace spuštění nebo zastavení pro všechna vlákna v aktuálním procesu. Profilování stav jiné procesy nemá vliv.<br /><br /> **Globální** -určuje funkce řízení kolekce dat (mezi procesy) globální úrovni.<br /><br /> Pokud nezadáte úroveň profilování dojde k chybě.|  
+|**Ovládací prvek** `:{` **vláken** `&#124;` **proces** `&#124;` **globální**`}`|Určuje úroveň profilování následující shromažďování dat vsinstr – řízení možností:<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Pozastavit**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Vlákno** -určuje funkce řízení kolekce dat úrovni přístup z více vláken. Profilace je spustit nebo zastavit pouze pro aktuální vlákno. Profilování stav jiná vlákna nemá vliv. Výchozí hodnota je přístup z více vláken.<br /><br /> **Proces** -určuje funkce ovládacího prvku kolekce profilování data úrovni procesu. Profilace spuštění nebo zastavení pro všechna vlákna v aktuálním procesu. Profilování stav jiné procesy nemá vliv.<br /><br /> **Globální** -určuje funkce řízení kolekce dat (mezi procesy) globální úrovni.<br /><br /> Pokud nezadáte úroveň profilování dojde k chybě.|  
 |**Spustit** `:{` **uvnitř** `&#124;` **mimo**`},funcname`|Omezení shromažďování dat funkce cíl a podřízené funkce volané pomocí této funkce.<br /><br /> **Uvnitř** -vloží funkci StartProfile bezprostředně po zadání cílové funkce. Vloží funkci StopProfile bezprostředně před každou vrátit ve funkci cíl.<br /><br /> **Mimo** -vloží funkci StartProfile bezprostředně před každou volání funkce cíl. Vloží funkci StopProfile ihned po každém volání funkce cíl.<br /><br /> `funcname`-název funkce cíl.|  
 |**Pozastavit** `:{` **uvnitř** `&#124;` **mimo**`},funcname`|Vyloučí shromažďování dat pro cílový funkce a funkce podřízené volané funkce.<br /><br /> **Uvnitř** -vloží funkci SuspendProfile bezprostředně po zadání cílové funkce. Vloží funkci ResumeProfile bezprostředně před každou vrátit ve funkci cíl.<br /><br /> **Mimo** -vloží funkci SuspendProfile bezprostředně před vstupem funkce cíl. Vloží funkci ResumeProfile ihned po ukončení z funkce cíl.<br /><br /> `funcname`-název funkce cíl.<br /><br /> Pokud cílový funkce obsahuje StartProfile funkce, funkce SuspendProfile vložena před ním. Pokud cílový funkce obsahuje StopProfile funkce, funkce ResumeProfile vložena za ním.|  
 |**StartOnly:** `{` **před** `&#124;` **po** `&#124;` **horní** `&#124;` **dolní** `},funcname`|Začne shromažďování dat během spuštění profilování. Funkce rozhraní StartProfile API vloží do zadaného umístění.<br /><br /> **Před** – bezprostředně před vstupem funkce cíl.<br /><br /> **Po** – ihned po ukončení funkce cíl.<br /><br /> **Horní** – bezprostředně po zadání cílové funkce.<br /><br /> **Dolní** – bezprostředně před každou vrátit ve funkci cíl.<br /><br /> `funcname`-název funkce cíl.|  

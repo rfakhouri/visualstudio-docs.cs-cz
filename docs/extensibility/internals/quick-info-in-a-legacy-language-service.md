@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 692884d31e55921489aad0fbbea32ca1c094c6c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8e0fa4a65960d0324a4be19db61648be48b08349
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Rychlé informace ve službě jazyk starší verze
 Rychlé informace technologie IntelliSense zobrazí informace o identifikátor ve zdroji, když uživatel umístí znak v identifikátoru a vybere **rychlé informace** z **IntelliSense** nabídky nebo obsahuje myši kurzor přes identifikátor. To způsobí, že aby se s informacemi o identifikátor tip nástroj. Tyto informace se obvykle skládá z typu identifier. Pokud modul ladění je aktivní, mohou obsahovat tyto informace aktuální hodnotu. Modul ladění poskytuje hodnot výrazu, zatímco služba jazyka zpracovává jenom identifikátory.  

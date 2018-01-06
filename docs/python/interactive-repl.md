@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: de538cfa9470ce148bc5d8f85653edef4c3fd8b0
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 2e80df306a3ce659225ae195b0b57922ab7d9a85
+ms.sourcegitcommit: fb73b56d45ebc0386cd4de1a706ba9e20c59daf1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Práce s oknem interaktivní Python
 
@@ -47,7 +48,7 @@ Nejdřív přejít do okna prostředí Python (**zobrazení > ostatní okna > pr
 
 ![Interaktivní okno odkaz v okně prostředí Python](media/interactive-window-opening.png)
 
-Druhý, u dolního okraje **zobrazení > ostatní okna** nabídky, je ** příkaz Python interaktivních okna ** pro vaše prostředí výchozí, stejně jako příkaz, který má přejít do okna prostředí:
+Druhý, u dolního okraje **zobrazení > ostatní okna** nabídky, je **interaktivní okno Python** příkaz pro vaše prostředí výchozí, stejně jako příkaz, který má přejít do okna prostředí:
 
 ![Položky nabídky interaktivních okna v zobrazení > ostatní okna](media/interactive-window-menu.png)
 

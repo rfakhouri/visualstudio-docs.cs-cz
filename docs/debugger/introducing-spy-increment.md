@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 69fbcb828f7fd534e9f086db43f2e63110794b9c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb12ef13e73e33b213d2b8ca79c2439b517fbda9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introducing-spy"></a>Představení nástroje Spy++
 Nástroje Spy ++ umožňuje provádět následující úlohy:  
@@ -57,4 +58,4 @@ Nástroje Spy ++ umožňuje provádět následující úlohy:
  [Postupy: spuštění nástroje Spy ++](../debugger/how-to-start-spy-increment.md)   
  [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   
  [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)

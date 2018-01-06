@@ -15,11 +15,12 @@ caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4bc85e0b5d03af1a34676030144f36457c1366ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Sada Modeling SDK pro sadu Visual Studio – jazyky domény
 Pomocí sady SDK modelování pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], můžete vytvořit výkonné založené na modelu vývojové nástroje, které můžete integrovat do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Stejným způsobem můžete vytvořit jednu nebo několik definic modelu a integrovat je do sady nástrojů.  
@@ -47,34 +48,34 @@ Pomocí sady SDK modelování pro [!INCLUDE[vsprvs](../code-quality/includes/vsp
  Pokyny k rozšířené postupy a řešení potíží, najdete v článku [Visual Studio DSL & modelování rozšíření nástrojů fórum](http://go.microsoft.com/fwlink/?LinkID=186074).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Začínáme s jazyky specifické pro doménu](../modeling/getting-started-with-domain-specific-languages.md)  
+ [Začínáme s jazyky specifickými pro doménu](../modeling/getting-started-with-domain-specific-languages.md)  
   
- [Principy modely, třídy a vztahy](../modeling/understanding-models-classes-and-relationships.md)  
+ [Porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md)  
   
- [Jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md)  
+ [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)  
   
- [Přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md)  
+ [Přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md)  
   
- [Ověření v jazyce specifické pro doménu](../modeling/validation-in-a-domain-specific-language.md)  
+ [Ověřování v jazyce specifickém pro doménu](../modeling/validation-in-a-domain-specific-language.md)  
   
- [Psaní kódu sestavit si jazyka domény](../modeling/writing-code-to-customise-a-domain-specific-language.md)  
+ [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)  
   
- [Generování kódu z jazyka domény](../modeling/generating-code-from-a-domain-specific-language.md)  
+ [Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)  
   
- [Pochopení kódu DSL](../modeling/understanding-the-dsl-code.md)  
+ [Porozumění kódu DSL](../modeling/understanding-the-dsl-code.md)  
   
- [Přizpůsobení souboru úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md)  
+ [Přizpůsobení souborového úložiště a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md)  
   
- [Nasazení řešení jazyka domény](../modeling/deploying-domain-specific-language-solutions.md)  
+ [Nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md)  
   
- [Vytváření jazyk specifické pro doménu formulářů Windows](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
+ [Vytvoření jazyka specifického pro doménu založeného na modelu Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)  
   
- [Vytváření specifické pro doménu jazyk grafického subsystému WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)  
+ [Vytvoření jazyka specifického pro doménu založeného na WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)  
   
- [Postupy: rozšíření návrháře jazyka domény](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
+ [Postupy: Rozšíření Návrháře DSL](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
   
- [Podporované edice sady Visual Studio pro vizualizace a modelování SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)  
+ [Verze sady Visual Studio podporované pro Visualization & Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)  
   
- [Postupy: migrace na novou verzi jazyka domény](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)  
+ [Postupy: Migrace jazyka specifického pro doménu na novou verzi](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)  
   
- [Referenční dokumentace rozhraní API pro modelování SDK pro Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
+ [Referenční dokumentace rozhraní API k sadě Modeling SDK pro Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

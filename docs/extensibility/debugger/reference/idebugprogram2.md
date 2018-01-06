@@ -14,11 +14,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 754b2e79131e425b8e27c0084acbd6243016815a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7f02d099fe680006966219bb626e17bc7a7114b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Toto rozhraní představuje program, který běží v procesu.  
@@ -44,9 +45,9 @@ IDebugProgram2 : IUnknown
 |[GetName –](../../../extensibility/debugger/reference/idebugprogram2-getname.md)|Získá název programu.|  
 |[Getprocess –](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)|Získá proces, který tento program je spuštěn v.|  
 |[Ukončení](../../../extensibility/debugger/reference/idebugprogram2-terminate.md)|Ukončí tento program.|  
-|[Připojení](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Připojí se k tomuto programu.|  
+|[Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md)|Připojí se k tomuto programu.|  
 |[CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)|Určuje, pokud modul ladění (DE), můžete odpojení od programu.|  
-|[Odpojení](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Umožňuje odpojit ladicí program z tohoto programu.|  
+|[Detach](../../../extensibility/debugger/reference/idebugprogram2-detach.md)|Umožňuje odpojit ladicí program z tohoto programu.|  
 |[GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)|Získá globálně jedinečný identifikátor pro tento program.|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugprogram2-getdebugproperty.md)|Získá programu vlastnosti.|  
 |[Spuštění](../../../extensibility/debugger/reference/idebugprogram2-execute.md)|Dál spuštěním tohoto programu z zastaveném stavu. Všechny předchozí provádění stav je vymazán.|  

@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d3d01a13acf68bbf8e58ca0fa1cb41b145d9d3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e2920642c46aa3f6cdf85f4f80c2334d18095718
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utility-nodes"></a>Uzly nástroje
 V Návrháři shaderu nástroj uzly představují běžné, užitečné shaderu výpočty, které se nehodí přehledně do jiné kategorie. Některé uzly nástroj provádějí jednoduché operace, například připojování vektory společně nebo podmíněně výběr výsledky a ostatní provádět komplexní operace například computing osvětlení příspěvky podle oblíbených osvětlení modelů.  

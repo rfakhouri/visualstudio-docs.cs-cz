@@ -15,11 +15,12 @@ caps.latest.revision: "51"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8e4a2485b7e702844a037787234ef3a1ab66495d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e334a148a205338a872e9581bce1c3c1a70b7df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Přidání nabídky na panelu nabídek Visual Studio
 Tento návod ukazuje, jak přidat nabídku na panelu nabídek integrované vývojové prostředí (IDE) sady Visual Studio. Panel nabídek IDE obsahuje nabídky kategorie, jako **soubor**, **upravit**, **zobrazení**, **okno**, a **pomoci** .  
@@ -97,4 +98,4 @@ Tento návod ukazuje, jak přidat nabídku na panelu nabídek integrované vývo
      Okno se zprávou by měl zobrazit a zobrazí se zpráva "TestCommand balíček uvnitř TopLevelMenu.TestCommand.MenuItemCallback()". To znamená, že nový příkaz funguje.  
   
 ## <a name="see-also"></a>Viz také  
- [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

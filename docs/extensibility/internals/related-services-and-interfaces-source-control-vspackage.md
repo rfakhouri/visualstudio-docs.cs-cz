@@ -15,11 +15,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d652db21fb98cbb0f06c2ac5ceec0f8f239beff6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7d19c7e2560fafbf54257bf4c46303874bfc717b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Rozhraní (Zdroj ovládacího prvku VSPackage) a související služby
 Tato část obsahuje všechny zdrojové řízení VSPackage související rozhraní [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Správa zdrojového kódu VSPackage implementuje některé z těchto rozhraní a jiné používá k provádění úkolů správy zdrojového.  
@@ -43,7 +44,7 @@ Tato část obsahuje všechny zdrojové řízení VSPackage související rozhra
 |---------------|-------------|--------------------|----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Editory volání toto rozhraní před změnou nebo ukládání souboru. Správa zdrojového kódu VSPackage můžete rezervovat soubor nebo odepřít operaci Pokud rezervaci selže.|Správa zdrojového kódu VSPackage|Doporučeno|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Toto rozhraní poskytuje funkce správy základní zdrojového pro projekty, jako je registrace a zrušení registrace projekty se správa zdrojového kódu a zajištění podpory pro základní zdroj ovládacího prvku glyfů.|Správa zdrojového kódu VSPackage|Požadováno|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Toto rozhraní se získávají z <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> pomocí <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> funkce, nebo jednoduše přetypování implementace objektu `IVsHierarchy` k `IVsSccProject2`. Používá se pro získávání souborů ve správě zdrojového kódu v projektu nebo k informování projektu aktuální stav zdroje ovládací prvek nebo umístění.|Project|Požadováno|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Toto rozhraní se získávají z <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> pomocí <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> funkce, nebo jednoduše přetypování implementace objektu `IVsHierarchy` k `IVsSccProject2`. Používá se pro získávání souborů ve správě zdrojového kódu v projektu nebo k informování projektu aktuální stav zdroje ovládací prvek nebo umístění.|Projekt|Požadováno|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider>|Modul integrace používá k nastavení aktuální aktivní VSPackage toto rozhraní.|Správa zdrojového kódu VSPackage|Požadováno|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Toto rozhraní je založená na modelu předplatného. Všechny VSPackage mohou signalizovat, že chce přijímat události dokumentu a poradí s prostředí na události, které se chystáte dojít. Je implementována a zpracovává [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], který pak předá události implementace `IVsTrackProjectDocumentsEvents2` k VSPackage.|Zdroj ovládacího prvku se zakázaným inzerováním|Požadováno|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3>|Toto rozhraní poskytuje dávkové zpracování, operace synchronizované čtení a zápisu a rozšířené `OnQueryAddFiles` metoda.|Zdroj ovládacího prvku se zakázaným inzerováním|Požadováno|  
@@ -56,7 +57,7 @@ Tato část obsahuje všechny zdrojové řízení VSPackage související rozhra
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>|VSPackage používá toto rozhraní se definovat další glyfů zdroj ovládacího prvku glyfů pro uzly ve **Průzkumníku řešení**.|Správa zdrojového kódu VSPackage|Nepovinné|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccAddWebProjectFromSourceControl>|**Přidat** dialogové okno pro webové projekty používá toto rozhraní. Poskytuje metody pro procházení pro řízení zdrojového umístění a pro otevření webového projektu dříve přidali v úložišti správy zdrojů v tomto umístění.|Správa zdrojového kódu VSPackage|Doporučeno|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>|Toto rozhraní poskytuje podporu pro načítání asynchronní (pozadí) projekty od správy zdrojového kódu.|Správa zdrojového kódu VSPackage|Nepovinné|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents>|Toto rozhraní umožňuje projektů se mají sledovat průběh asynchronní načítání iniciovaná <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>.|Project|Nepovinné|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromSccProjectEvents>|Toto rozhraní umožňuje projektů se mají sledovat průběh asynchronní načítání iniciovaná <xref:Microsoft.VisualStudio.Shell.Interop.IVsAsynchOpenFromScc>.|Projekt|Nepovinné|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccToolsOptions>|Toto rozhraní umožňuje IDE k dotazování VSPackage active zdrojového kódu. Prostředí IDE dotazuje hodnotu nastavení správy zdrojů, které mají význam i v případě, že žádná aktivní zdrojová ovládací prvek neexistuje VSPackage registrována. Toto rozhraní je implementováno a zpracovává [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].|Zdroj ovládacího prvku se zakázaným inzerováním|Požadováno|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>|Toto rozhraní se používá v registraci VSPackage zdrojového kódu.|Zdroj ovládacího prvku se zakázaným inzerováním|Požadováno|  
 |<xref:EnvDTE.SourceControl>|Toto rozhraní se používá v automatizace. Jako takový zpřístupní jenom funkce, které může být provedena bez zobrazení uživatelského rozhraní.|Správa zdrojového kódu VSPackage|Nepovinné|  

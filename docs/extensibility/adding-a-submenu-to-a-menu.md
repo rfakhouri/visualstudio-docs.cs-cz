@@ -17,11 +17,12 @@ caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a77cd9504dffc50fd3a3be021cb4e379378f9ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 150252dceaff2d194af8f59d92fdaf39cdae259c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Přidání podnabídky do nabídky
 Tento názorný postup je založený na ukázky v [přidání nabídky na panelu nabídek Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) ukazuje, jak přidat podnabídky k **TestMenu** nabídky.  
@@ -159,4 +160,4 @@ Tento názorný postup je založený na ukázky v [přidání nabídky na panelu
   
 ## <a name="see-also"></a>Viz také  
  [Přidání nabídky na panelu nabídek Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
- [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

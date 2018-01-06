@@ -22,11 +22,12 @@ caps.latest.revision: "78"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd89a4cd713e4cdff22ffbbd570ee2e0bf60ef37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3b01307811930ec865e2b38e899318dfdd99c74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-object-model-overview"></a>Přehled modelu objektů aplikace Word
   Při vývoji řešení aplikace Word v sadě Visual Studio komunikovat s model objektů aplikace Word. Tento objektový model se skládá z třídy a rozhraní, které jsou uvedeny v primární spolupracující sestavení pro aplikaci Word a jsou definovány v <xref:Microsoft.Office.Interop.Word> oboru názvů.  
@@ -37,11 +38,11 @@ ms.lasthandoff: 10/31/2017
   
  Informace o používání model objektů aplikace Word k provádění specifických úloh najdete v následujících tématech:  
   
--   [Práce s dokumenty](../vsto/working-with-documents.md)  
+-   [Práce s dokumenty](../vsto/working-with-documents.md)  
   
--   [Práce s textem v dokumentech](../vsto/working-with-text-in-documents.md)  
+-   [Práce s textem v dokumentech](../vsto/working-with-text-in-documents.md)  
   
--   [Práce s tabulkami](../vsto/working-with-tables.md)  
+-   [Práce s tabulkami](../vsto/working-with-tables.md)  
   
 ##  <a name="understanding"></a>Principy Model objektů aplikace Word  
  Word poskytuje stovky objekty, se kterými můžete pracovat. Tyto objekty jsou uspořádány do hierarchie, která přesně dodržuje uživatelské rozhraní. V horní části hierarchie <xref:Microsoft.Office.Interop.Word.Application> objektu. Tento objekt představuje aktuální instanci aplikace Word. <xref:Microsoft.Office.Interop.Word.Application> Objekt obsahuje <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, a <xref:Microsoft.Office.Interop.Word.Range> objekty. Každý z těchto objektů má mnoho metody a vlastnosti, které dostanete pracovat a manipulovat s daným objektem.  
@@ -140,6 +141,6 @@ ms.lasthandoff: 10/31/2017
  [Práce s tabulkami](../vsto/working-with-tables.md)   
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c31184a78bae612e4341c3210a1f34f993a0581f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc3236397dd8a9d0f10927ba3e8fe23d2c4ba78f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Postupy: generovat informace o registru pro instalační program
 Nástroj RegPkg.exe slouží ke generování manifestu registrace pro spravované VSPackage. Manifest můžete začlenit do instalační balíček Instalační služby systému Windows. RegPkg také můžete generovat soubor, který může být součástí zdrojového souboru instalace na základě [sada nástrojů XML pro instalační program systému Windows](http://go.microsoft.com/fwlink/?LinkId=62238).  
@@ -185,4 +186,4 @@ Nástroj RegPkg.exe slouží ke generování manifestu registrace pro spravovan�
   
 ## <a name="see-also"></a>Viz také  
  [Registrace VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
- [VSPackages](../../extensibility/internals/vspackages.md)
+ [Balíčky VSPackage](../../extensibility/internals/vspackages.md)

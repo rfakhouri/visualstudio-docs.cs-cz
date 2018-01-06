@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5e9bfcf1d4da949c7f24ccf004cf3d031e776063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ad84bca1dd6abaa0603b88d8be3575b9f68e337a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="menus-element"></a>Element nabídky
 Definuje všechny nabídek a panelů nástrojů, které implementuje VSPackage.  
@@ -46,14 +47,14 @@ Definuje všechny nabídek a panelů nástrojů, které implementuje VSPackage.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Element nabídky](../extensibility/menus-element.md)|Definuje všechny nabídek a panelů nástrojů, které implementuje VSPackage.|  
-|[Menu Element](../extensibility/menu-element.md)|Představuje jeden nabídky nebo panelu nástrojů.|  
+|[Menus – element](../extensibility/menus-element.md)|Definuje všechny nabídek a panelů nástrojů, které implementuje VSPackage.|  
+|[Menu – element](../extensibility/menu-element.md)|Představuje jeden nabídky nebo panelu nástrojů.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Element příkazy](../extensibility/commands-element.md)|Představuje kolekci příkazů v VSPackage.|  
+|[Commands – element](../extensibility/commands-element.md)|Představuje kolekci příkazů v VSPackage.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -82,4 +83,4 @@ Definuje všechny nabídek a panelů nástrojů, které implementuje VSPackage.
   
 ## <a name="see-also"></a>Viz také  
  [Jak přidat VSPackages prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

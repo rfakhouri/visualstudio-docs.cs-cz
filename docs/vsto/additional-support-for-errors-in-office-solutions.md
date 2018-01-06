@@ -61,11 +61,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d57dab19820436dd9c7e3fb07607b5506c180a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e0da4387056e68046294a2f82c9db7bbc798de07
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Další podpora pro chyby v řešeních pro systém Office
   Můžete použít následující prostředky vám pomůžou najít odpovědi na problémy, na které narazíte, jako je vytváření řešení pro systém Office v sadě Visual Studio.  
@@ -73,11 +74,11 @@ ms.lasthandoff: 10/31/2017
 ## <a name="troubleshooting-specific-errors"></a>Řešení konkrétních chyb  
  O pomoc s některé běžné chyby v řešeních pro systém Office najdete v následujících tématech:  
   
--   [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
+-   [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
   
--   [Řešení potíží se zabezpečením řešení Office](../vsto/troubleshooting-office-solution-security.md)  
+-   [Řešení potíží se zabezpečením řešení pro systém Office](../vsto/troubleshooting-office-solution-security.md)  
   
--   [Řešení potíží s nasazením řešení Office](../vsto/troubleshooting-office-solution-deployment.md)  
+-   [Řešení potíží s nasazením řešení pro systém Office](../vsto/troubleshooting-office-solution-deployment.md)  
   
 ## <a name="other-resources"></a>Další zdroje  
  [Visual Studio Tools for Office fórum](http://go.microsoft.com/fwlink/?LinkId=149744)  
@@ -89,13 +90,13 @@ ms.lasthandoff: 10/31/2017
  [Nápovědu a podporu Microsoftu](http://go.microsoft.com/fwlink/?LinkID=108287)  
  Poskytuje přístup k článkům znalostní báze, souborům ke stažení a aktualizacím, webovému vysílání podpory a jiným službám.  
   
- [Další prostředky pro vývoj řešení pro systém Office](../vsto/additional-resources-for-developing-office-solutions.md)  
+ [Další zdroje informací o vývoji řešení pro systém Office](../vsto/additional-resources-for-developing-office-solutions.md)  
  Obsahuje odkazy na další zdroje informací o další informace o vývoji řešení pro systém Office a vývoj pro Office v prostředí Visual Studio.  
   
 ## <a name="see-also"></a>Viz také  
  [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Řešení potíží se zabezpečením řešení Office](../vsto/troubleshooting-office-solution-security.md)   
  [Řešení potíží s nasazením řešení Office](../vsto/troubleshooting-office-solution-deployment.md)   
- [Další prostředky pro vývoj řešení pro systém Office](../vsto/additional-resources-for-developing-office-solutions.md)  
+ [Další zdroje informací o vývoji řešení pro systém Office](../vsto/additional-resources-for-developing-office-solutions.md)  
   
   

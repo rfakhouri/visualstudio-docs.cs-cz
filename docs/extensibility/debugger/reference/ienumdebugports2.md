@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8379dc1c7dfedfcf46b594fe6ea3bfbc64dfb950
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 277189c9b5510df1da4802e42225ffafa4b6995c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 Toto rozhraní zobrazí porty dodavatele počítače nebo portu.  
@@ -40,7 +41,7 @@ IEnumDebugPorts2 : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Další](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|Načte zadaný počet portů v posloupnosti výčtu.|  
+|[Next](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|Načte zadaný počet portů v posloupnosti výčtu.|  
 |[Přeskočit](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|Přeskočí určeného čísla portů v posloupnosti výčtu.|  
 |[Resetování](../../../extensibility/debugger/reference/ienumdebugports2-reset.md)|Návrat na začátek v sekvenci výčtu.|  
 |[Klonování](../../../extensibility/debugger/reference/ienumdebugports2-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  

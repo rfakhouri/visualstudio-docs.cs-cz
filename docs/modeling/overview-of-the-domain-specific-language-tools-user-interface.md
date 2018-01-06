@@ -13,11 +13,12 @@ caps.latest.revision: "25"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: d76ed4d14e7333678fcf927dfa1b2f21d8573be5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 416c7f399ce8ce23eceee4ccf8891dd657d5836a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Přehled uživatelského rozhraní Jazykových nástrojů specifických pro doménu
 Když poprvé otevřete řešení jazykové nástroje specifické pro doménu (DSL Tools) v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], uživatelské rozhraní bude vypadat podobně jako na následujícím obrázku.  
@@ -50,4 +51,4 @@ Když poprvé otevřete řešení jazykové nástroje specifické pro doménu (D
 ## <a name="see-also"></a>Viz také  
  [Přehled nástroje jazyka domény](../modeling/overview-of-domain-specific-language-tools.md)   
  [Glosář nástroje jazyka domény](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
- [Přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md)
+ [Přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md)

@@ -14,11 +14,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8883e2bb2e573d5c3fdf1e66d41b01abc25d6f0b
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
-ms.translationtype: HT
+ms.workload: multiple
+ms.openlocfilehash: 082569ea1875e03154e98e8078a21aafc7ad76dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-language-specific-editor-options"></a>Nastavení možností editoru pro konkrétní jazyk
 
@@ -51,4 +52,4 @@ Visual Studio nabízí celou řadu text editoru možnosti, které platí pro kon
 
 [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)  
 [Vytvoření přenosného nastavení vlastního editoru pomocí řešení EditorConfig](../../ide/create-portable-custom-editor-options.md)  
-[Přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md) &mdash; obsahuje odkazy na témata, které vysvětlují, jak upravit nastavení, vazeb klíče a další funkce integrované vývojové prostředí (IDE).
+[Přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)&mdash;obsahuje odkazy na témata, které vysvětlují, jak upravit nastavení, vazeb klíče a další funkce integrované vývojové prostředí (IDE).

@@ -12,30 +12,31 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 206049d850b1f2f3c6b225b0c0d9c51d2a449a07
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01f10f3d9c2f0f61708c14f2d7a8307f9db850f4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-profiling-tools-reference"></a>Referenční dokumentace nástrojů příkazového řádku pro profilaci
 Nástroje příkazového řádku výkonu umožňuje programátorům profilu svých aplikací na příkazovém řádku. Následující příkazový řádek nástrojů pro profilaci umožňují profil kódu na příkazovém řádku.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Vsinstr –](../profiling/vsinstr.md)  
+ [VSInstr](../profiling/vsinstr.md)  
  Zobrazí seznam možností instrumentace VSInstr.exe.  
   
  [Upozornění VSInstr](../profiling/vsinstr-warnings.md)  
  Zobrazí seznam upozornění vsinstr – nástroj vystavil.  
   
- [Vsperfclrenv –](../profiling/vsperfclrenv.md)  
+ [VSPerfCLREnv](../profiling/vsperfclrenv.md)  
  Zobrazí seznam možností VSPerfCLREnv.exe konfigurace prostředí pro vytváření profilů spravovaného kódu.  
   
- [Vsperfcmd –](../profiling/vsperfcmd.md)  
+ [VSPerfCmd](../profiling/vsperfcmd.md)  
  Zobrazí seznam možností VSPerfCmd.exe pro shromažďování dat výkonu.  
   
- [Vsperfmon –](../profiling/vsperfmon.md)  
+ [VSPerfMon](../profiling/vsperfmon.md)  
  Zobrazí seznam možností VSPerfMon.exe pro shromažďování dat kolekce.  
   
- [Vsperfreport –](../profiling/vsperfreport.md)  
+ [VSPerfReport](../profiling/vsperfreport.md)  
  Zobrazí seznam možností příkazového řádku VSPerfReport.exe pro vytváření sestav.

@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f61a9917d484499e3cfd641f581859de01663bd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f87ff08ea8d5e325ac66d923300927b59ab06452
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-7-share"></a>Testování oblasti 7: sdílené složky
 Tato oblast testovací zahrnuje sdílení položky mezi umístěními prostřednictvím **sdílenou složku** příkaz.  
@@ -62,4 +63,4 @@ Tato oblast testovací zahrnuje sdílení položky mezi umístěními prostředn
 |Sdílet několik souborů z jedné projektu do jiného|1.  Vytvoření nového projektu s několik souborů v ní.<br />2.  Přidáte řešení do správy zdrojového kódu.<br />3.  Zavřete řešení.<br />4.  Vytvořte nový projekt v nové řešení.<br />5.  Přidáte řešení do správy zdrojového kódu.<br />6.  Vyberte projekt.<br />7.  Otevřete **sdílené složky** dialogové okno (**soubor** -> **správy zdrojového kódu** -> **sdílenou složku**).<br />8.  Sdílejte několik souborů z dříve vytvořený projekt aktuálně otevřeného projektu.|Běžné očekávané chování.|  
   
 ## <a name="see-also"></a>Viz také  
- [Příručka pro testovací modulů plug-in programu zdroj ovládacího prvku](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

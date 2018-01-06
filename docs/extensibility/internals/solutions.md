@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b4bc84546daaa6e2404707b6663aa65e8309870
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 75298d8fa2ede5db06bef624eeb385785c416747
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="solutions"></a>Řešení
 Řešení je skupina jednoho nebo více projektů, které vzájemně spolupracují a vytvoření aplikace. Projekt a stavové informace, které se vztahují k řešení jsou uloženy v dva soubory řešení, soubor založený na textu řešení (.sln) a soubor binární řešení uživatele možnost (.suo).  
@@ -29,8 +30,8 @@ ms.lasthandoff: 10/31/2017
  Popisuje typy souborů řešení, které jsou součástí řešení a proces, který nastane, když je otevřen řešení.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Řešení (. Soubor SLN –)](../../extensibility/internals/solution-dot-sln-file.md)  
+ [Soubor řešení (.Sln)](../../extensibility/internals/solution-dot-sln-file.md)  
  Vysvětluje strukturu soubor .sln.  
   
- [Možnosti uživatele řešení (. Soubor suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
+ [Soubor uživatelských možností řešení (.Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
  Vysvětluje .suo soubor.

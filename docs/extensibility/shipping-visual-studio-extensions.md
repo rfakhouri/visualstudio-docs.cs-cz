@@ -16,11 +16,12 @@ caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf74110cf42daa51521cc7ea706c1b951b23deb8
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: vssdk
+ms.openlocfilehash: 543f107081a5cc29ac14f1c2ba2e05924b72e353
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shipping-visual-studio-extensions"></a>Přesouvání rozšíření Visual Studia
 Po dokončení vývoje rozšíření, nainstalujte ji na jiné počítače, sdílet se svými přáteli a spolupracovníky nebo ji zveřejnit na Visual Studio Marketplace. V této části vám vysvětlíme, vše, co musíte udělat, aby bylo možné publikovat a spravovat rozšíření: práce se soubory VSIX, publikování, lokalizace a aktualizace.  
@@ -52,14 +53,14 @@ Po dokončení vývoje rozšíření, nainstalujte ji na jiné počítače, sdí
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Začínáme s šablona projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Vysvětluje, jak nainstalovat vlastní šablonu projektu pomocí šablony projektu VSIX.|  
+|[Začínáme se šablonou projektu VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)|Vysvětluje, jak nainstalovat vlastní šablonu projektu pomocí šablony projektu VSIX.|  
 |[Anatomie balíčku VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Popisuje součásti balíčku VSIX.|  
 |[Šablona projektu VSIX](../extensibility/vsix-project-template.md)|Poskytuje podrobné pokyny o tom, jak balíčku a publikování rozšíření.|  
 |[Lokalizace balíčků VSIX](../extensibility/localizing-vsix-packages.md)|Vysvětluje, jak zajistit textu pro proces instalace pomocí souborů extension.vsixlangpack.|  
 |[Postupy: aktualizace rozšíření](../extensibility/how-to-update-a-visual-studio-extension.md)|Popisuje postup aktualizace rozšíření ve vašem systému a jak nasadit aktualizace do stávající rozšíření sady Visual Studio.|  
-|[Postupy: Přidání závislosti balíčku VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Popisuje postup přidání odkazy na balíčky pro nasazení VSIX.|  
+|[Postupy: Přidání závislosti k balíčku VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Popisuje postup přidání odkazy na balíčky pro nasazení VSIX.|  
 |[Příprava rozšíření pro nasazení Instalační služby systému Windows](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Vysvětluje, jak nasadit rozšíření pomocí Instalační služby systému Windows.|  
 |[Podepisování balíčků VSIX](../extensibility/signing-vsix-packages.md)|Vysvětluje, jak k podepisování balíčků VSIX.|  
-|[Privátní Galerie](../extensibility/private-galleries.md)|Vysvětluje, jak vytvářet privátní Galerie pro rozšíření.|  
+|[Privátní galerie](../extensibility/private-galleries.md)|Vysvětluje, jak vytvářet privátní Galerie pro rozšíření.|  
 |[Podpora více verzí sady Visual Studio](../extensibility/supporting-multiple-versions-of-visual-studio.md)|Ukazuje, jak získat podporu rozšíření více verzí sady Visual Studio.|
 |[Vyhledání sady Visual Studio](locating-visual-studio.md)|Popisuje, jak najít instance Visual Studio pro nasazení vlastního rozšíření.|

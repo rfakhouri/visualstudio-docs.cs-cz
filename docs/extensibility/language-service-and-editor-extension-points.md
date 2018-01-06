@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c30ed08cc4c62b033f86dfd71e2276bd8be8fbad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7e62f1f3cac8f279dedbc79f283b908119d66ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="language-service-and-editor-extension-points"></a>Služba jazyka a body rozšíření editoru
 Editor poskytuje rozšíření body, které můžete rozšířit jako součásti Managed Extensibility Framework (MEF), včetně většinu funkcí služby jazyk. Toto jsou hlavní rozšíření bodu kategorií:  
@@ -545,9 +546,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Další informace o implementaci zdroje IntelliSense viz následující kurzy:  
   
- [Návod: Zobrazení QuickInfo popisy tlačítek](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Návod: Zobrazení popisů tlačítek s rychlými informacemi](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Návod: Zobrazení nápovědy podpis](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Návod: Zobrazení vyhrazené nápovědy](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [Návod: Zobrazení dokončování příkazů](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -572,4 +573,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Další informace o používání řadiče IntelliSense najdete v následující kurzy:  
   
- [Návod: Zobrazení QuickInfo popisy tlačítek](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
+ [Návod: Zobrazení popisů tlačítek s rychlými informacemi](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

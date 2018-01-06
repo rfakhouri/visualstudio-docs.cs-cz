@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e31746567a300ea8f9a62079ab1392fe9f1e0ec8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae35bafc612b4fd7b76a06c47300fee4f35ce5ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-in-msbuild-15"></a>Co je nového v nástroji MSBuild 15
 MSBuild je nyní k dispozici jako součást [.NET Core SDK](https://www.microsoft.com/net/download/core) a mohou vytvářet projekty .NET Core v systému Windows, systému macOS a Linux.  
@@ -51,4 +52,4 @@ MSBuild je nyní k dispozici jako součást [.NET Core SDK](https://www.microsof
 - `GetPathOfFileAbove`vrátí cestu k souboru, všechny předcházející. Je funkčně odpovídá volání`<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
 ## <a name="see-also"></a>Viz také
-[Nástroje MSBuild](../msbuild/msbuild.md)
+[MSBuild](../msbuild/msbuild.md)

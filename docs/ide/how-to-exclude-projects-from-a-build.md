@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64a10c356100e6ace36ec1c574c85479741113c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8392a17a1d1f0648176c6b68463102e31c61cf20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>Postupy: Vyloučení projektů ze sestavení
 Můžete vytvořit řešení bez vytváření všechny projekty, které obsahuje. Například může vyloučit projekt, který dělí sestavení. Je pak sestavení projektu po byste prozkoumat a adresu problémy.  
@@ -58,4 +59,4 @@ Můžete vytvořit řešení bez vytváření všechny projekty, které obsahuje
 ## <a name="see-also"></a>Viz také  
  [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)   
  [Postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)   
- [Postupy: sestavení více konfigurací současně](../ide/how-to-build-multiple-configurations-simultaneously.md)
+ [Postupy: Sestavení více konfigurací současně](../ide/how-to-build-multiple-configurations-simultaneously.md)

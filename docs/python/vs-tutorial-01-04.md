@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c8d9e1ea91b5f13961941644871dd881f49a7416
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 5e8c34c777abf9f7932d05396cb03e612bfd8eea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 
@@ -45,7 +46,7 @@ Kromě správy projektů, zajištění s formátováním úpravy prostředí a o
     main()
     ```
 
-1. Zkontrolujte, zda kód funguje správně stisknutím klávesy F5 nebo výběr **ladění > Spustit ladění** příkazu nabídky. Tento příkaz spustí kód v ladicím programu, ale vzhledem k tomu, že jste to neudělali nic pozastavit program, když je spuštěná, právě vytiskne wave vzor několik iterací. Stisknutím klávesy do okna výstupu.
+1. Zkontrolujte, zda kód funguje správně stisknutím klávesy F5 nebo výběr **ladění > Spustit ladění** příkazu nabídky. Tento příkaz spustí kód v ladicím programu, ale vzhledem k tomu, že jste to neudělali nic pozastavit program, když je spuštěná, právě vytiskne wave vzor několik iterací. Stisknutím libovolné klávesy zavřete okno výstup.
 
     > [!Tip]
     > Zavřete okno výstup automaticky po dokončení programu, nahraďte `main()` volání následujícím kódem:

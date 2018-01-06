@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f55564cc5c439d4ead88299108d3db5e10b9e11e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3889f8cbb93abb19a227c1d985eb9aa55685e450
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-fonts"></a>Postupy: Změna písem
 Můžete změnit písmo, styl písma a velikost písma pro nástroje Spy ++ windows.  
@@ -35,4 +36,4 @@ Můžete změnit písmo, styl písma a velikost písma pro nástroje Spy ++ wind
 ## <a name="see-also"></a>Viz také  
  [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   
  [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7df850e46f8f5d81b9127a9885128452900b84b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 44694e84fc0ab83ca4caf7bf80535dcae50a636f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogové okno Upřesnit nastavení sestavení (C#)
 
@@ -30,7 +31,7 @@ Použití **Upřesnit nastavení sestavení** dialogové okno s **Návrhář pro
 
  **Jazyková verze** Určuje verzi jazyka. Sada funkcí se liší v jednotlivých verzích, tato možnost slouží k vynucení kompilátoru povolit pouze podmnožinu implementovanou funkcí nebo povolit pouze funkce kompatibilní s současných standardů. Toto nastavení má následující možnosti:
 
- - **Výchozí**
+ - **default**
 
    Cílem aktuální verze.
 

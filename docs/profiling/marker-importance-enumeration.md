@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d09138f90b94d3b37c4a20fbe53f311fa29a36e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae7bb9f300a1d57707966a3b4dbae202eea78d8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance – výčet
 Představuje úroveň důležitosti značky Vizualizéru souběžnosti.  
@@ -46,4 +47,4 @@ enum marker_importance;
  **Namespace:** Concurrency::Diagnostic –  
   
 ## <a name="see-also"></a>Viz také  
- [diagnostické Namespace](../profiling/diagnostic-namespace.md)
+ [diagnostic – obor názvů](../profiling/diagnostic-namespace.md)

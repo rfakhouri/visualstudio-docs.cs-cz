@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc0105b56f0a33a86953c95e3d36f5d7f00bcd37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f7c69bc08d0f1bb72a37b76fca2d402d73036deb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="determining-which-editor-opens-a-file-in-a-project"></a>Určení Editor otevře soubor v projektu
 Když uživatel otevře soubor v projektu, prostředí projde procesu dotazování, nakonec otevřete editor odpovídající nebo návrháře pro tento soubor. Počáteční postup zaměstnaní prostředí je stejný pro standardní a vlastní editory. Prostředí používá celou řadu kritéria při dotazování které editoru otevřete soubor a VSPackage musí koordinaci s prostředím během tohoto procesu.  

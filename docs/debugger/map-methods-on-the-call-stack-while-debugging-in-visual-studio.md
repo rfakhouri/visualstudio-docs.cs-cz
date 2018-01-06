@@ -32,11 +32,12 @@ caps.latest.revision: "39"
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: ff0f152f92d852846200c96a63927445aa8867b0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Vytvoření visual mapování zásobníku volání při ladění ve Visual Studio Enterprise
 Vytvoření mapy kódu pro vizuální trasování zásobníku volání při ladění. Můžete si dělat poznámky na mapě ke sledování kódu činnosti tak, abyste se mohli zaměřit na hledání chyb.
@@ -194,4 +195,4 @@ Tady je rychle zobrazit na mapě kódu:
  [Mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md)   
  [Použití map kódu k ladění aplikací](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Nalezení potenciálních problémů pomocí analyzátorů mapy kódu](../modeling/find-potential-problems-using-code-map-analyzers.md)   
- [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)
+ [Procházení a změna uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md)

@@ -12,26 +12,29 @@ caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdd1238eee39b902adf581092a90f7d84c1b0a98
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: vssdk
+ms.openlocfilehash: 0c0843c8bfb899dc23bcb1ce31eb3f8b9eaffd54
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-2017"></a>Upgrade vlastních šablon projektů a položek pro Visual Studio 2017
-Počínaje Visual Studio 2017, Visual Studio mění způsob zjistí šablon projektů a položek, které byly nainstalovány VSIX nebo byl soubor MSI. Pokud jste vlastníkem rozšíření, které používají vlastní projektu nebo šablony položek, budete muset aktualizovat rozšíření. Toto téma vysvětluje, co musíte udělat.  
-  
- Tato změna ovlivňuje pouze Visual Studio 2017. Předchozí verze sady Visual Studio nemá vliv.  
-  
- Pokud chcete vytvořit šablonu projektu nebo položky jako součást rozšíření VSIX, přečtěte si téma [vytváření vlastních projektů a šablon položek](../extensibility/creating-custom-project-and-item-templates.md).  
-  
-## <a name="template-scanning"></a>Šablona kontrolu  
- Dříve **devenv/Setup** nebo **devenv/installvstemplates** zkontrolovat místního disku najít šablony projektů a položek. Od verze Preview 4, kontrola proběhne pouze pro individuální umístění (**%USERPROFILE%\Documents\\< verze sady Visual Studio\>šablony exportovat \My\\**) používané pro šablony, které jsou generované **soubor > Exportovat šablony** příkaz.  
-  
- Pro jiné umístění (neuživatelských) musí obsahovat manifest(.vstman) soubor, který určuje umístění a dalších vlastností šablony. .Vstman soubor je vytvořen společně s .vstemplate soubor použitý pro šablony. Při instalaci rozšíření pomocí VSIX, můžete k tomu lze nutnosti rekompilace rozšíření ve Visual Studio 2017. Ale pokud používáte byl soubor MSI, je potřeba provést změny ručně. Seznam co je potřeba udělat, aby byly tyto změny, naleznete v části **upgrady pro rozšíření nainstalované pomocí. MSI** dál v tomto tématu.  
+
+Počínaje Visual Studio 2017, Visual Studio zjistí šablon projektů a položek, které byly nainstalovány VSIX nebo byl soubor MSI jiným způsobem s předchozími verzemi sady Visual Studio. Pokud jste vlastníkem rozšíření, které používají vlastní projektu nebo šablony položek, budete muset aktualizovat rozšíření. Toto téma vysvětluje, co musíte udělat.
+
+Tato změna ovlivňuje pouze Visual Studio 2017. Předchozí verze sady Visual Studio nemá vliv.
+
+Pokud chcete vytvořit šablonu projektu nebo položky jako součást rozšíření VSIX, přečtěte si téma [vytváření vlastních projektů a šablon položek](../extensibility/creating-custom-project-and-item-templates.md).
+
+## <a name="template-scanning"></a>Šablona kontrolu
+
+V předchozích verzích sady Visual Studio **devenv/Setup** nebo **devenv/installvstemplates** zkontrolovat místního disku najít šablony projektů a položek. Od verze Visual Studio 2017, kontrola se provádí pouze pro individuální umístění. Výchozí umístění individuální **%USERPROFILE%\Documents\\< verze sady Visual Studio\>\Templates\\**. Toto umístění se používá pro šablony, které jsou generované **projektu** > **exportovat šablony...**  příkaz, pokud **automaticky importovat šablonu do sady Visual Studio** možnost je vybraná v průvodci.
+
+Pro jiné umístění (neuživatelských) musí obsahovat manifest(.vstman) soubor, který určuje umístění a dalších vlastností šablony. .Vstman soubor je vytvořen společně s .vstemplate soubor použitý pro šablony. Při instalaci rozšíření pomocí VSIX, můžete k tomu lze nutnosti rekompilace rozšíření ve Visual Studio 2017. Ale pokud používáte byl soubor MSI, je potřeba provést změny ručně. Seznam co je potřeba udělat, aby byly tyto změny, naleznete v části **upgrady pro rozšíření nainstalované pomocí. MSI** dál v tomto tématu.  
   
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Postup aktualizace VSIX rozšíření projektu nebo šablony položek  
- Tento postup vysvětluje, jak vám má Visual Studio 2017
+
 1.  Otevřete řešení ve Visual Studio 2017. Zobrazí se výzva k upgradu kód. Click **OK**.  
   
 2.  Po dokončení upgradu, musíte změnit verzi cíl instalace. V projektu VSIX, otevřete soubor source.extension.vsixmanifest a vyberte **nainstalovat cíle** kartě. Pokud **rozsahu verze** pole je **[14.0]**, klikněte na tlačítko **upravit** a změnit tak, aby obsahovala Visual Studio 2017. Například můžete nastavit **[14.0,15.0]** nainstalovat rozšíření pro Visual Studio 2015 nebo Visual Studio 2017, nebo **[15.0]** nainstalovat do právě Visual Studio 2017.  
@@ -176,41 +179,19 @@ Ukážeme body rozdíl mezi Visual Studio 2015 a Visual Studio 2017 verzích sou
   
  Další informace o různých prvků souboru .vstman najdete v tématu [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md).  
   
-## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Upgrady pro rozšíření nainstalované pomocí. MSI  
- Některá rozšíření na základě MSI nasazení šablon do společné umístění šablon například následující:  
-  
--   **\<Visual Studio Instalační adresář > \Common7\IDE\\< ProjectTemplates nebo šablon položek >**  
-  
--   **\<Visual Studio Instalační adresář > \Common7\IDE\Extensions\\< Název_rozšíření\>\\< projektu nebo šablon položek >**  
-  
- Pokud toto rozšíření provede nasazení na základě MSI, budete muset ručně generování manifestu šablony a ujistěte se, že je součástí instalace rozšíření. Byste měli porovnat .vstman příklady uvedené výše a [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md). Pokud chcete zobrazit, co je potřeba zahrnout  
-  
- Měli byste vytvořit samostatné manifesty pro šablony projektů a položek a by měla odkazovat na kořenový šablony adresář uvedeného výše. Měli byste vytvořit jeden manifest na rozšíření a národní prostředí.  
-  
-## <a name="troubleshooting-template-installation"></a>Řešení potíží s instalací šablony  
- Pokud narazíte na problémy nasazení vašeho projektu nebo šablony položek, můžete povolit protokolování diagnostiky.  
-  
-1.  Vytvořte soubor pkgdef ve složce Common7\IDE\CommonExtensions pro instalaci (například C:\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\EnablePkgDefLogging.pkgdef) s tímto obsahem:  
-  
-     ```
-     [$RootKey$\VsTemplate]
-     "EnableTemplateDiscoveryLog"=dword:00000001
-     ```
+## <a name="upgrades-for-extensions-installed-with-an-msi"></a>Upgrady pro rozšíření nainstalované pomocí. MSI
 
-2. Otevřete "vývojáře příkazový řádek" pro instalaci vyhledáním ve Windows search a spusťte `devenv /updateConfiguration`.
+Některá rozšíření na základě MSI nasazení šablon do společné umístění šablon například následující:
 
-3.  Spuštění sady Visual Studio a spusťte dialogová okna Nový projekt a nové položky k chybě při inicializaci stromy obě šablony. Protokol šablony se teď zobrazí v **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (identifikátor instanceid odpovídá ID instalace vaší instance sady Visual Studio). Každý inicializace stromu šablona připojí položky do tohoto protokolu.  
-  
- Soubor protokolu obsahuje následující sloupce:  
-  
--   **FullPathToTemplate**, který má následující hodnoty:  
-  
-    -   1 pro nasazení na základě manifestu  
-  
-    -   0 pro nasazení založené na disku  
-  
--   **TemplateFileName**  
-  
--   Ostatní vlastnosti šablony
+- **\<Visual Studio Instalační adresář > \Common7\IDE\\< ProjectTemplates nebo šablon položek >**
 
-Poznámka: Zakázání protokolování, buď odeberte soubor pkgdef, nebo změňte hodnotu `EnableTemplateDiscoveryLog` k `dword:00000000` a spusťte `devenv /updateConfiguration` znovu.
+- **\<Visual Studio Instalační adresář > \Common7\IDE\Extensions\\< Název_rozšíření\>\\< projektu nebo šablon položek >**
+
+Pokud toto rozšíření provede nasazení na základě MSI, budete muset ručně generování manifestu šablony a ujistěte se, že je součástí instalace rozšíření. Porovnání .vstman příklady uvedené výše a [Visual Studio Manifest odkaz na schéma šablon](../extensibility/visual-studio-template-manifest-schema-reference.md).
+
+Měli byste vytvořit samostatné manifesty pro šablony projektů a položek a by měla odkazovat na kořenový šablony adresář uvedeného výše. Vytvoření jednoho manifestu na rozšíření a národní prostředí.
+
+## <a name="see-also"></a>Viz také
+
+[Řešení potíží s zjišťování šablony](troubleshooting-template-discovery.md)  
+[Vytváření vlastních šablon projektů a položek](creating-custom-project-and-item-templates.md)

@@ -40,11 +40,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2b925e32711e1624a4dfbe74fb5614ee6e0b062
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72081f6c140c4634918e67098493cb37bb324848
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-and-replacing-text"></a>Hledání a nahrazení textu
 Můžete najít a nahradit text v editoru kódu v sadě Visual Studio a určité textový výstup windows, jako **výsledky hledání** systému windows, pomocí **najít a nahradit** ovládací prvek nebo **najít nebo Nahradit v souborech**. Můžete také hledat a nahradit v některé návrháře windows, například návrháře XAML a návrháři formulářů Windows a nástroj windows  

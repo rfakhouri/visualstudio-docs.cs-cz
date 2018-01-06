@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 03ef7e9e7402ba03e132eb4c80c37a21d556c09c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: cd71c63ab20dc943d1e0c7ac94d374c9d3bca359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Navrhování XAML v sadě Visual Studio
 
@@ -24,9 +25,9 @@ Visual Studio a nástroj Blend for Visual Studio poskytují visual nástroje pro
   
 Proces návrhu aplikace závisí na nástroj, který zvolíte a svou cílovou platformu. Toto téma přítomen porovnává nástrojů návrhu XAML v sadě Visual Studio a nástroj Blend for Visual Studio. Další podrobné návody pro použití nástroje najdete v následujících tématech:
 
-- [Vytvoření uživatelského rozhraní pomocí návrháře XAML v sadě Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
-- [Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)
-- [Vytvoření moderních aplikací klasické pracovní plochy s Windows Presentation Foundation](create-modern-desktop-applications-with-windows-presentation-foundation.md)
+- [Vytvoření uživatelského rozhraní pomocí Návrháře XAML v sadě Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)
+- [Vytvoření moderních desktopových aplikací pomocí Windows Presentation Foundation](create-modern-desktop-applications-with-windows-presentation-foundation.md)
 
 ## <a name="choosing-the-right-tool"></a>Výběr správného nástroje  
  Vaši volbu nástrojů návrhu je do značné míry závisí na vaší sady znalostí. Pokud jste více orientovaný kódu, můžete napsat kód XAML v sadě Visual Studio k provádění úloh i pokročilé návrhu. Pokud jste více orientovaný návrhu, Blend for Visual Studio umožňuje provádět pokročilé úlohy bez nutnosti psaní kódu.  
@@ -68,4 +69,4 @@ Proces návrhu aplikace závisí na nástroj, který zvolíte a svou cílovou pl
 |**Upravit ovládací prvky, šablony a styly**|Vyžaduje kódování a znalosti o WPF styly a šablony.|Zapněte všechny bitové kopie do ovládacího prvku.<br /><br /> Použijte šablonu nástroje pro úpravy provést změny ovládací prvky, styly a šablony pomocí několika kliknutí myší.<br /><br /> Například můžete použít nástroj Blend for Visual Studio styl prostředky k implementaci běžných ovládacích prvků WPF (například tlačítka, seznamy, posuvníky, nabídek, atd.) a změnit jejich barvu, styl nebo základní šablony přímo v programu Blend for Visual Studio. Můžete pak přepnout kód pro všechny změny podle potřeby.|[Úpravy stylu objektů](../designers/modify-the-style-of-objects-in-blend.md)|  
 |**Uživatelské rozhraní se připojit k datům**|Můžete vytvořit zdroj dat z prostředků, jako je například databáze systému SQL Server, WCF nebo webové služby, objekty nebo seznamy služby SharePoint a svázat zdroj dat pro vaše ovládací prvky uživatelského rozhraní.<br /><br /> Pro prostředí interaktivní návrhu musí ručně vytvořit návrhu data.|Vytvoření ukázkových dat snadno pro při vytváření prototypu a testování. Přepínač tak, aby dynamická data, jakmile budete připraveni.<br /><br /> Blendu pro Visual Studio generování dat možnosti nejsou vyřízeny (můžete přidat názvy, čísla, adresy URL, fotografie snadno za chodu) a mohou ušetřit mnoho času.<br /><br /> Pro dynamická data můžete vázat vaše ovládací prvky uživatelského rozhraní do souboru XML nebo jakýkoli zdroj dat CLR.|[Zobrazení dat](../designers/display-data-in-blend.md)|  
   
- Další informace o pokročilé návrhu XAML najdete v tématu. [Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+ Další informace o pokročilé návrhu XAML najdete v tématu. [Vytvoření uživatelského rozhraní pomocí nástroje Blend pro Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

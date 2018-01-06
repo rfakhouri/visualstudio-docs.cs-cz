@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b2680a8f42dc984897b3fba4913ea69dbc23333f
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: be03e554bbdf55c447437116373cc60b15df391e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-xslt-profiler"></a>Návod: XSLT profileru
 Profileru XSLT vytvoří podrobné sestavy XSLT výkonu, které pomáhají měr, hodnocení a cíle problémy související s výkonem v kódu XSLT. Profileru XSLT zahrnuje užitečné pomocné parametry pro XSL a XSLT optimalizace na list stylu. Pro aplikace XSLT této vyžádání maximální výkon, tento nástroj může být nezbytné.  
@@ -109,4 +110,4 @@ Postupy v následující návod vyžadují Visual Studio a rozhraní .NET Framew
 4.  Zobrazení procesů zobrazí tabulku, která zahrnuje **ID procesu**, **název procesu**, **čas zahájení**a **koncový čas**. Data lze seřadit kliknutím na názvy sloupců.  
   
 ## <a name="see-also"></a>Viz také  
-[Návod: Použití hierarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+[Návod: Používání hierarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

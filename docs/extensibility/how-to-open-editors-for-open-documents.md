@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dfd145281a467a23cd01d73ff04721d68580254e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c4c6321644cb59f55ad1335249aec5b071aef4ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Postupy: otevření editory pro otevřené dokumenty
 Předtím, než na projekt se otevře okno dokument, projekt nejprve musí určit, zda soubor je již otevřete v okně dokumentu pro jiný editor. Soubor může být buď otevřete v editoru specifické pro projekt nebo jeden z standardní editory zaregistrován v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -57,4 +58,4 @@ Předtím, než na projekt se otevře okno dokument, projekt nejprve musí urči
 ## <a name="see-also"></a>Viz také  
  [Otevření a uložení položky projektu](../extensibility/internals/opening-and-saving-project-items.md)   
  [Postupy: otevření projektu konkrétní editory](../extensibility/how-to-open-project-specific-editors.md)   
- [Postupy: otevření standardní editory](../extensibility/how-to-open-standard-editors.md)
+ [Postupy: Otevření standardních editorů](../extensibility/how-to-open-standard-editors.md)

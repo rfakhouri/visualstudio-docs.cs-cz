@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06ca9ec7fc3c084ce503ba0900d10eb2b68f4349
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff3f23af3bf9358f47251a7ea45082f5508349b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-security-settings-dialog-box"></a>Dialogové okno Upřesnit nastavení zabezpečení
 Toto dialogové okno umožňuje zadat nastavení zabezpečení související s laděním v zóně.  
@@ -40,4 +41,4 @@ Toto dialogové okno umožňuje zadat nastavení zabezpečení související s l
  Pokud budete muset povolit aplikaci pro přístup na webový server nebo sdílená složka serveru odpovídající **adresy URL instalace** jste zadali na **publikovat** stránky, zadejte tuto adresu URL. Tato možnost je dostupná jenom v případě **udělit přístup k aplikaci do jeho lokality původu** je vybrána.  
   
 ## <a name="see-also"></a>Viz také  
- [Stránka zabezpečení, Návrhář projektu](../../ide/reference/security-page-project-designer.md)
+ [Stránka Zabezpečení, Návrhář projektu](../../ide/reference/security-page-project-designer.md)

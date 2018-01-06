@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model služby jazyk starší verze
 Služba jazyka definuje elementy a funkce pro konkrétní jazyk a slouží k poskytování editoru informace specifické pro daný jazyk. Například editoru musí vědět, elementy a klíčová slova jazyka za účelem podpory barevné zvýrazňování syntaxe.  
@@ -51,4 +52,4 @@ Základní jazyk modelu služby
 |Služba jazyka|Implementace závislé; implementuje<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Objekt, který poskytuje informace pro konkrétní jazyk například zvýraznění syntaxe, dokončování a odpovídající složené závorce editoru.|  
   
 ## <a name="see-also"></a>Viz také  
- [Data dokumentu a zobrazení dokumentu vlastní editorů](../../extensibility/document-data-and-document-view-in-custom-editors.md)
+ [Data dokumentu a zobrazení dokumentu ve vlastních editorech](../../extensibility/document-data-and-document-view-in-custom-editors.md)

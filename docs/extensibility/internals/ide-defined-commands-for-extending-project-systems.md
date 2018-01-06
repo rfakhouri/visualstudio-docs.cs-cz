@@ -15,11 +15,12 @@ caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a5e6f4caf8466100763b6a4ae11f6760a3d4c655
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 3b450a55de29e112d158cb783ad366eb4fbcaca7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Příkazy definované IDE pro rozšíření projektu systémy
 Pokud chcete rozšířit projektu systémů, můžete použít příkazy a příkaz skupiny poskytované [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.  
@@ -75,4 +76,4 @@ Pokud chcete rozšířit projektu systémů, můžete použít příkazy a pří
 ## <a name="see-also"></a>Viz také  
  [Jak přidat VSPackages prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [MenuCommands Vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)   
- [Vytváření opakovaně použitelných skupin tlačítek](../../extensibility/creating-reusable-groups-of-buttons.md)
+ [Vytváření znovu použitelných skupin tlačítek](../../extensibility/creating-reusable-groups-of-buttons.md)

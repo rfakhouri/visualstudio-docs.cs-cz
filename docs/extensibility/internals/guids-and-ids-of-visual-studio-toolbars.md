@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bbb14818cebb35f703ec6f5ade084d96ac383d6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Identifikátory panelů nástrojů Visual Studio a identifikátory GUID
 Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou zahrnuté v sadě Visual Studio integrované vývojové prostředí (IDE) a skupiny obsahují. Tyto hodnoty jsou definovány v .vsct soubory, které jsou nainstalovány v rámci sady Visual Studio SDK. Další informace najdete v tématu [IDE-Defined příkazy, nabídky a skupiny](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).  
@@ -140,4 +141,4 @@ Toto téma uvádí hodnoty GUID a ID panelů nástrojů, které jsou zahrnuté v
 ## <a name="see-also"></a>Viz také  
  [Přidávání řadiče nabídky na panelu nástrojů](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [Přidávání panelů nástrojů do okno nástroje](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Identifikátory GUID a ID nabídky sady Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+ [Identifikátory GUID a ID nabídek sady Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

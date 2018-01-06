@@ -11,11 +11,12 @@ ms.assetid: 683790b4-b68b-42d7-8dc4-a68eca05aa01
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8505f9a4fa8571e0e1c1e45f092d1b0e40c8ee9b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 93736bfbf2e0a97965e44978e379f0cbe40f656a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-method-in-visual-basic"></a>Generovat metody v jazyce Visual Basic
 **Co:** umožňuje okamžitě přidání metody do třídy. 
@@ -49,4 +50,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>Viz také  
 [Generování kódu (Visual Basic)](../code-generation-vb.md)  
-[Zobrazení náhledu změn](../../ide/preview-changes.md)
+[Náhled změn](../../ide/preview-changes.md)

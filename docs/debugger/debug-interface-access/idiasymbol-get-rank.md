@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 623c700c6f9a30b6142faeb7e1b31881d0e0fe11
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f4929f892520924e34ab78dac3a9691c7d43a504
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
 Načte pořadí FORTRAN vícerozměrné (počet dimenzí).  
@@ -45,4 +46,4 @@ HRESULT get_rank (
  Pořadí odkazuje na počet dimenzí v matici kde pole je deklarován jako `myarray[1,2,3]`. V tomto příkladu má pořadí 3 až 3 dimenzí. Pořadí se nevztahuje na C++ používaný koncept pole polí pro každou dimenzi (tedy `myarray[1][2][3]`).  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

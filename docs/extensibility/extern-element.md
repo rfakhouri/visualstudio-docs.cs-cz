@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 764b6ff8b19711cb05f34c9bf652956057318346
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff198f5c4b574bf3a27ae1ee8fb6ffdd482c7f71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extern-element"></a>Extern – Element
 Extern element odkazuje na externí hlavičky () soubory sloučit s .vsct soubor v době kompilace. Soubory, který se má sloučit musí být na cestu zahrnutí zadané pro kompilátor VSCT nebo odkazuje [zahrnují Element](../extensibility/include-element.md). Soubory mohou být další .vsct soubory nebo soubory hlaviček C++.  
@@ -57,7 +58,7 @@ Extern – Element
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy – to znamená, položky nabídky, nabídek, panely nástrojů a pole se seznamem – poskytující VSPackage k prostředí IDE.|  
+|[CommandTable – element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy – to znamená, položky nabídky, nabídek, panely nástrojů a pole se seznamem – poskytující VSPackage k prostředí IDE.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -74,4 +75,4 @@ Extern – Element
 ## <a name="see-also"></a>Viz také  
  [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Jak přidat VSPackages prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

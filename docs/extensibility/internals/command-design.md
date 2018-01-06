@@ -15,11 +15,12 @@ caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cf6d0d7a9aa556aab454f90e4dcfc5dc4f236c03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: fe3db0582c65a2ece2162ab24afb6d179b865a27
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-design"></a>Příkaz návrhu
 Když přidáte příkaz VSPackage, musíte zadat, kam se má zobrazit, když je k dispozici a jak je zpracovávat.  
@@ -69,7 +70,7 @@ Když přidáte příkaz VSPackage, musíte zadat, kam se má zobrazit, když je
 |[Dostupnost](../../extensibility/internals/command-availability.md)|Popisuje, jak Visual Studio kontextu Určuje, které příkazy jsou k dispozici.|  
 |[Směrování algoritmus](../../extensibility/internals/command-routing-algorithm.md)|Popisuje, jak Visual Studio příkaz směrování architektura umožňuje zpracovávat jiné VSPackages příkazy.|  
 |[Pokyny pro umístění](../../extensibility/internals/command-placement-guidelines.md)|Navrhne, jak na pozici příkazy v prostředí Visual Studio.|  
-|[Jak přidat VSPackages prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Popisuje, jak můžete využívat VSPackages nejlépe příkaz architektura sady Visual Studio.|  
-|[Příkaz výchozí skupiny a umístění panelu nástrojů](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Popisuje, jak můžete použít VSPackages nejlépe příkazy, které jsou zahrnuté v sadě Visual Studio.|  
-|[Správa VSPackages](../../extensibility/managing-vspackages.md)|Popisuje, jak načte VSPackages v sadě Visual Studio.|  
-|[Visual Studio příkaz tabulky (. Soubory Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Poskytuje informace o formátu XML .vsct soubory, které se používají k popisu rozložení a vzhled příkazů v VSPackages.|
+|[Jak balíčky VSPackages přidávají prvky uživatelského rozhraní](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)|Popisuje, jak můžete využívat VSPackages nejlépe příkaz architektura sady Visual Studio.|  
+|[Výchozí umístění příkazů, skupin a panelů nástrojů](../../extensibility/internals/default-command-group-and-toolbar-placement.md)|Popisuje, jak můžete použít VSPackages nejlépe příkazy, které jsou zahrnuté v sadě Visual Studio.|  
+|[Správa rozšíření VSPackages](../../extensibility/managing-vspackages.md)|Popisuje, jak načte VSPackages v sadě Visual Studio.|  
+|[Soubory tabulek příkazů sady Visual Studio (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)|Poskytuje informace o formátu XML .vsct soubory, které se používají k popisu rozložení a vzhled příkazů v VSPackages.|

@@ -21,11 +21,12 @@ caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 263e3d9a01912c1b47dd518cfc9cd270937e4b7c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68c8f730bf684688cb09970a58ab79101022d4d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Ukázky nasazení ClickOnce a podrobné návody
 Tato část obsahuje ukázkové aplikace, příklad kódu a podrobné návody, které ilustrují syntaxi, struktura a techniky, které jsou používány k nasazení Windows Forms, WPF a konzolové aplikace.  
@@ -42,4 +43,4 @@ Tato část obsahuje ukázkové aplikace, příklad kódu a podrobné návody, k
   
 ## <a name="see-also"></a>Viz také  
  [Návody pro Visual Studio](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
- [Visual Studio – ukázky](../ide/visual-studio-samples.md)
+ [Ukázky sady Visual Studio](../ide/visual-studio-samples.md)

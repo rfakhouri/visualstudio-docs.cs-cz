@@ -23,11 +23,12 @@ caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1650326711d8d788a7e232df97044c8e896e3b4
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Ladění kódu HTML a CSS v UWP a aplikace pro Windows 8.1
 ![Platí pro systém Windows a Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -52,7 +53,7 @@ ms.lasthandoff: 11/11/2017
   
 -   Zkontrolujte, jak byly použity styly CSS prvky stránky a trasování pravidla, které byly použity.  
   
- Při ladění aplikace, musíte často v Průzkumníku modelu DOM. Vyberte elementy. Když vyberete element, hodnoty, které se zobrazují na kartě na pravé straně Průzkumníka modelu DOM automaticky aktualizovat tak, aby odrážela vybraný prvek v Průzkumníku modelu DOM.. Jedná se o karty: **styly**, **počítané**, **rozložení**. Aplikace UWP podporovat i **události** a **změny** karty. Další informace o výběru elementy najdete v tématu [výběr elementy](#SelectingElements).  
+ Při ladění aplikace, musíte často v Průzkumníku modelu DOM. Vyberte elementy. Když vyberete element, hodnoty, které se zobrazují na kartě na pravé straně Průzkumníka modelu DOM automaticky aktualizovat tak, aby odrážela vybraný prvek v Průzkumníku modelu DOM. Jedná se o karty: **styly**, **počítané**, **rozložení**. Aplikace UWP podporovat i **události** a **změny** karty. Další informace o výběru elementy najdete v tématu [výběr elementy](#SelectingElements).  
   
 > [!TIP]
 >  Pokud je okno Průzkumníka modelu DOM zavřená, zvolte **ladění**>**Windows** > **Průzkumníka modelu DOM** znovu ho otevřete. Okno se zobrazí pouze během ladicí relace skriptu.  

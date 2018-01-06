@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f3e4590a2623d05b78f4c62e877b0ff3783ceec9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b42dadc5a606bcbd94334a070cc571607576dcc9
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="msbuild-conditions"></a>Podmínky nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]podporuje konkrétní sadu podmínek, které lze použít kdekoli `Condition` atribut je povolen. Následující tabulka vysvětluje tyto podmínky.  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|-----------------|  
 |'`stringA`' == '`stringB`'|Vyhodnotí jako `true` Pokud `stringA` rovná `stringB`.<br /><br /> Příklad:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Jednoduchých uvozovek a jsou vyžadovány pro jednoduché alfanumerické řetězce nebo logické hodnoty. Jednoduché uvozovky jsou však nutná pro prázdné hodnoty.|  
 |'`stringA`' != '`stringB`'|Vyhodnotí jako `true` Pokud `stringA` se nerovná `stringB`.<br /><br /> Příklad:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Jednoduchých uvozovek a jsou vyžadovány pro jednoduché alfanumerické řetězce nebo logické hodnoty. Jednoduché uvozovky jsou však nutná pro prázdné hodnoty.|  
-|\<, >, \<=, >=|Vyhodnotí číselné hodnoty operandy. Vrátí `true` Pokud relační vyhodnocení má hodnotu true. Operandy se musí vyhodnotit desetinné nebo hexadecimální číslo. Hexadecimální číslice musí začínat řetězcem "0 x". **Poznámka:** v XML znaky `<` a `>` , je nutné uvést. Symbol `<` je reprezentován jako `<`. Symbol `>` je reprezentován jako `>`.|  
+|\<, >, \<=, >=|Vyhodnotí číselné hodnoty operandy. Vrátí `true` Pokud relační vyhodnocení má hodnotu true. Operandy se musí vyhodnotit desetinné nebo hexadecimální číslo. Hexadecimální číslice musí začínat řetězcem "0 x". **Poznámka:** v XML znaky `<` a `>` , je nutné uvést. Symbol `<` je reprezentován jako `&lt;`. Symbol `>` je reprezentován jako `&gt;`.|  
 |Existuje ('`stringA`')|Vyhodnotí jako `true` Pokud soubor nebo složku s názvem `stringA` existuje.<br /><br /> Příklad:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Jednoduchých uvozovek a jsou vyžadovány pro jednoduché alfanumerické řetězce nebo logické hodnoty. Jednoduché uvozovky jsou však nutná pro prázdné hodnoty.|  
 |HasTrailingSlash ('`stringA`')|Vyhodnotí jako `true` Pokud zadaný řetězec obsahuje buď koncové zpětné lomítko (\\) nebo předávat lomítko (/).<br /><br /> Příklad:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Jednoduchých uvozovek a jsou vyžadovány pro jednoduché alfanumerické řetězce nebo logické hodnoty. Jednoduché uvozovky jsou však nutná pro prázdné hodnoty.|  
 |!|Vyhodnotí jako `true` Pokud je výsledkem operand `false`.|  

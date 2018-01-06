@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9099d652012fb8b45b7b79f9c620f4102e7af602
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e406bc0cd5d7e4cb082e1f5e34fa6645538d02ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>Osvědčené postupy pro implementaci modulu Plug-in Správa zdrojového kódu
 Následující technické podrobnosti vám může pomoct spolehlivě implementovat zdrojového kódu v modulu plug-in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
@@ -62,4 +63,4 @@ Následující technické podrobnosti vám může pomoct spolehlivě implementov
   
 ## <a name="see-also"></a>Viz také  
  [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)   
- [Vytvoření ovládacího prvku zdroj modulu Plug-in](../extensibility/internals/creating-a-source-control-plug-in.md)
+ [Vytvoření modulu plug-in správy zdrojového kódu](../extensibility/internals/creating-a-source-control-plug-in.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f34f19d41f3d624c57cc6c92d51b5c19ddb2137
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: afcaef724b5fc5f8270e5126e91d421f2e15b946
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Rozšíření filtru Průzkumník řešení
 Můžete rozšířit **Průzkumníku řešení** filtrovat funkce, které chcete zobrazit nebo skrýt různých souborů. Například můžete vytvořit filtr, který zobrazuje pouze soubory C# – třída objektu pro vytváření v **Průzkumníku**, jak tento návod ukazuje.  

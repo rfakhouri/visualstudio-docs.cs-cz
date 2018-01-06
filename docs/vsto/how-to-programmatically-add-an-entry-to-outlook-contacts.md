@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d94e1c1fa7aac5fe5be517587155be1f7c00102
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 2e72b3391660c3eb4d132b549666695cbf5e4ced
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Postupy: Přidání položky ke kontaktům aplikace Outlook prostřednictvím kódu programu
   Tento příklad vytvoří nový kontakt a zadá data do nového kontaktu.  
@@ -35,6 +36,6 @@ ms.lasthandoff: 10/31/2017
  [Práce s položkami kontaktů](../vsto/working-with-contact-items.md)   
  [Postupy: vytváření událostí prostřednictvím kódu programu](../vsto/how-to-programmatically-create-appointments.md)   
  [Postupy: přístup programu ke kontaktům aplikace Outlook](../vsto/how-to-programmatically-access-outlook-contacts.md)   
- [Postupy: hledání e-mailových adres v kontaktech prostřednictvím kódu programu](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)  
+ [Postupy: Hledání e-mailových adres v kontaktech prostřednictvím kódu programu](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)  
   
   

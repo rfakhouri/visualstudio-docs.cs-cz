@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a7bee6cb18fee301dfab5e7c08c58521eac4e84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 587e76a0108f3636d851b299c30506e0d8d55d9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-view-filter"></a>Filtr zobrazení sestav výkonu
 Filtr zobrazení sestav profileru okna se nachází v horní části okna sestavy výkon. Pokud ho nevidíte, klikněte **zobrazit filtru** tlačítko.  
@@ -41,4 +42,4 @@ Filtr zobrazení sestav profileru okna se nachází v horní části okna sestav
   
 ## <a name="see-also"></a>Viz také  
  [Analýza výkonu nástrojů pro Data](../profiling/analyzing-performance-tools-data.md)   
- [Vsperfreport –](../profiling/vsperfreport.md)
+ [VSPerfReport](../profiling/vsperfreport.md)

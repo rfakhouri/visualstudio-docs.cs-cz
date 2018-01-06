@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: a575ab2ede1c537ea4a62b27656946f838ef8b47
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d367dbbe273f39bef9ebb6161211864d6d430b97
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio pracovního postupu Windows (zastaralé)
 Starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] poskytované [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] lze použít k cíli [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Starší verzi návrháře je vizuálního návrháře, který můžete použít k vytvoření pracovního postupu. Můžete přetáhnout aktivity z **sada nástrojů** na návrh surface a že je nakonfigurovat. Jako [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] okno editor zabírá oblasti hlavní okno používají jiné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] oken editoru. Název pracovního postupu se zobrazí v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] záhlaví okna.  
@@ -32,4 +33,4 @@ Starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] poskyt
 |Ladění windows|Standardní sady Visual Studio ladění windows, například **vláken**, **zásobníkem volání**, **zarážek**, **místní hodnoty – nástroj**a **Nástroj Sledování** systému windows.|  
   
 ## <a name="see-also"></a>Viz také  
- [Ladění pracovních starší verze](../workflow-designer/debugging-legacy-workflows.md)
+ [Ladění starších verzí pracovních postupů](../workflow-designer/debugging-legacy-workflows.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6ce0fccf3a957edfdf732ce3ea462bef26c5a0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Složené vzory pro sadu Visual Studio
 Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích. Mezi nejdůležitější složené vzory v sadě Visual Studio s ohledem na konzistence patří:  
@@ -428,7 +429,7 @@ Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích.
 |Enter – klávesa|Provede operaci přejmenování|  
 |Klávesy ESC|Zruší operaci přejmenování|  
 |Kliknutím na tlačítko mimo oblast upravit na místě|Provede operaci přejmenování|  
-|Vrácení zpět|Zadejte snadno zpět, chcete-li zrušit operaci přejmenování|  
+|vrácení zpět|Zadejte snadno zpět, chcete-li zrušit operaci přejmenování|  
   
 #### <a name="selection-within-lists-and-grid-controls"></a>Výběr v seznamech a ovládací prvky mřížky  
  Klíče koncept v seznamu výběru je, že je na základě řádku, znamená to, že při výběru celý řádek je vybrán jako jednotku. Naopak mřížky můžete povolit konkrétní buněk vybrat bez ovlivnění jiných aspektů řádek. Mřížky může také obsahovat hierarchie vnořené řádků (například TreeGrid) umožňujících celý větví úrovně hierarchie k vybrané a není vybraná interakcí s nadřazenou řádky. Výběr v seznamu se zobrazí pomocí jednoduchého zvýraznění barev v celé řadě data. Zaměřuje se zobrazí ve jednopixelové desítkovém ohraničení okolo aktuálního řádku upravovat nebo buňky (řádku, pokud jsou všechny buňky jen pro čtení).  
@@ -485,7 +486,7 @@ Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích.
 |Dialogové okno|Umístění dialogového okna, pokud byl přesunut<br /><br /> Zobrazení, které uživatel naposledy použila v dialogovém okně|Když se zavře dialogové okno<br /><br /> Při ukončení relace sady Visual Studio|V paměti<br /><br /> V registru **HKEY_Current_User**|  
 |Okno|Velikost a umístění okna|Po zavření okna<br /><br /> Až se změní režim Visual Studio<br /><br /> Při ukončení relace sady Visual Studio|**Možností uživatele (.suo)** soubor projektu<br /><br /> Soubor vlastních možností pro nastavení okna|  
 |Dokument|Aktuální výběr v dokumentu<br /><br /> Zobrazení dokumentu<br /><br /> Poslední několika místech uživatel navštívil|Při ukládání dokumentu|**Možností uživatele (.suo)** soubor projektu|  
-|Project|Odkazy na soubory<br /><br /> Odkazy na adresáře na disku<br /><br /> Odkazy na ostatní software<br /><br /> Součásti<br /><br /> Stavové informace o projektu sám sebe|Při uložení projektu|Soubor projektu|  
+|Projekt|Odkazy na soubory<br /><br /> Odkazy na adresáře na disku<br /><br /> Odkazy na ostatní software<br /><br /> Součásti<br /><br /> Stavové informace o projektu sám sebe|Při uložení projektu|Soubor projektu|  
 |Řešení|Odkazy na projekty<br /><br /> Odkazy na soubory|Když je uložena na projekt nebo řešení|**Řešení (.sln)** souboru|  
 |Nastavení v **nástroje > Možnosti**|Přizpůsobení klávesnice<br /><br /> Přizpůsobení panelu nástrojů<br /><br /> Barevná schémata|Když **nástroje > Možnosti** zavře dialogové okno<br /><br /> Při ukončení relace sady Visual Studio|V registru **HKEY_Current_User**|  
   

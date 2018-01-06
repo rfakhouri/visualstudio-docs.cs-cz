@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2edb49095bb71e71414e82855c1b3c39904a62f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 73931a8be39933c727225d582bc4e4e35b805d7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-incrementally"></a>Postupy: Přírůstkové sestavování
 Když vytvoříte nový projekt, je důležité, který dříve vytvořené součásti, které jsou stále aktuální nejsou znovu sestavit. Pokud jsou všechny cíle pokaždé, když, bude každé sestavení trvat dlouhou dobu pro dokončení. Chcete-li povolit přírůstkové sestavení (sestavení, ve kterém jsou zastaralé, tyto cíle, které nebyly byla vytvořená před nebo které cílí jenom se znovu sestavit), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) můžete porovnat časová razítka vstupní soubory s časová razítka výstupních souborů a zjistěte, jestli se mají přeskočit, sestavení nebo částečně znovu sestavit cíl. Musí však být mapování 1: 1 mezi vstupy a výstupy. Transformace můžete povolit cíle k identifikaci této přímé mapování. Další informace o transformací najdete v tématu [transformuje](../msbuild/msbuild-transforms.md).  

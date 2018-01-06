@@ -1,53 +1,52 @@
 ---
-title: "Postupy: nahrazení parametrů v šabloně | Microsoft Docs"
+title: "Přidání parametrů název šablon projektů a položek v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/02/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
+- template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
-ms.assetid: a62924a7-4ba0-413d-b606-fdbe1fcf2807
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6e13e704502443c371021c515c7a9578497f829
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ecdd277a36cb1c074653edb2af7f1882e6d25ede
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Postupy: Nahrazení parametrů v šabloně
-Můžete nahradit parametry šablony například názvy tříd a obory názvů, pokud soubor na základě šablony je vytvořen. Úplný seznam parametrů šablony, najdete v části [parametry šablony](../ide/template-parameters.md).  
-  
-## <a name="procedure"></a>Postup  
- Při každém projektu, na základě této šablony můžete nahradit parametry v souborech šablony. Tento postup vysvětluje, jak vytvořit šablonu, která nahradí název oboru názvů bezpečný název projektu při vytvoření nového projektu pomocí šablony.  
-  
-#### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>Pomocí parametru nahradit název oboru názvů název projektu  
-  
-1.  Vložte parametr v jednom nebo více souborů kódu v šabloně. Příklad:  
-  
-    ```  
-    namespace $safeprojectname$  
-    ```  
-  
-    > [!NOTE]
-    >  Parametry šablony jsou zapsány ve formátu $*parametr*$.  
-  
-2.  V souboru .vstemplate pro šablonu, vyhledejte `ProjectItem` element, který obsahuje tento soubor.  
-  
-3.  Nastavte `ReplaceParameters` atribut `true` pro `ProjectItem` elementu. Příklad:  
-  
-    ```  
-    <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  
-    ```  
-  
-## <a name="see-also"></a>Viz také  
- [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)   
- [Parametry šablony](../ide/template-parameters.md)   
- [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [ProjectItem – Element (šablony sady Visual Studio položky)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+# <a name="how-to-substitute-parameters-in-a-template"></a>Postupy: nahrazení parametrů v šabloně
+
+Parametry šablony umožňují nahradit identifikátory například názvy tříd a obory názvů, když dojde k vytvoření souboru ze šablony. Můžete přidat parametry šablony do stávající šablony, nebo vytvořit vlastní šablony s parametry šablony.
+
+Parametry šablony jsou zapsány ve formátu $*parametr*$. Úplný seznam parametrů šablony, najdete v části [parametry šablony](../ide/template-parameters.md).
+
+Následující části se dozvíte, jak upravit šablonu, která má nahradit název oboru názvů s názvem"bezpečné projektu".
+
+## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Pomocí parametru nahradit název oboru názvů
+
+1. Vložte parametr v jednom nebo více souborů kódu v šabloně. Příklad:
+
+    ```csharp
+    namespace $safeprojectname$
+    ```
+
+1. V souboru .vstemplate pro šablonu, vyhledejte `ProjectItem` element, který obsahuje tento soubor.
+
+1. Nastavte `ReplaceParameters` atribut `true` pro `ProjectItem` element:
+
+    ```xml
+    <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>
+    ```
+
+## <a name="see-also"></a>Viz také
+
+[Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)  
+[Parametry šablony](../ide/template-parameters.md)  
+[Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
+[ProjectItem – element (šablony sady Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

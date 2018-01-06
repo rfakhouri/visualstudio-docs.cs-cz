@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: a126524672b0b827d278d2d76c01d907c9d403a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 464557102bd6dcbbbda4032c0588c55baa954664
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Přidání vlastnosti sledování do definice jazyka specifického pro doménu
 Tento návod ukazuje, jak přidat vlastnost sledování do modelu domény.  
@@ -762,4 +763,4 @@ Tento návod ukazuje, jak přidat vlastnost sledování do modelu domény.
  <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
  <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
  [Jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md)   
- [Postupy: vytvoření řešení jazyka domény](../modeling/how-to-create-a-domain-specific-language-solution.md)   
+ [Postupy: Vytváření řešení jazyka specifického pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md)   

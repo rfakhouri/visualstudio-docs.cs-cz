@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: d8f4c4763d40583f02aa97eaea066db5de2a7479
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7c691e4dc60afca2d56a63af8572d75b02e970e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="primitives-activity-designers"></a>Návrháře aktivit primitivní elementy.
 Návrháře aktivit primitivních elementů se používají k vytvoření a konfigurace různých aktivit v <xref:System.Activities.Statements> obor názvů, jako je například přiřazení a zpoždění. Témata obsažené v této části poskytují pokyny o tom, jak používat [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Designer aktivity a šablony.  
@@ -51,4 +52,4 @@ Návrháře aktivit primitivních elementů se používají k vytvoření a konf
  [Zpracování chyb](../workflow-designer/error-handling-activity-designers.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Pomocí návrháře aktivit](../workflow-designer/using-the-activity-designers.md)
+ [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)

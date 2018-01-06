@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 24a229c7c96221c0b7f04a91d5f71fa566e71e81
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8822d0aa9947dccbdfabc43d7090b52eba7d0844
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Postupy: Konfigurace chování výzvy důvěryhodnosti ClickOnce
 Můžete nakonfigurovat vztahu důvěryhodnosti ClickOnce řídit, jestli koncoví uživatelé mají možnost instalace aplikace ClickOnce, například aplikace Windows Forms, aplikace Windows Presentation Foundation, konzolové aplikace, prohlížeč WPF aplikace a řešení pro systém Office. Nakonfigurujete výzvu vztahu důvěryhodnosti nastavením klíče registru na počítači koncového uživatele.  

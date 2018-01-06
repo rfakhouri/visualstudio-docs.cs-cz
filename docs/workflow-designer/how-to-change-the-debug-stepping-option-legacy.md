@@ -17,11 +17,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: ff11186c82102230ec939c0c9b1c5aba69df7f3f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bc92b5babe53b249fc66d93adbc0d69e6f7cf0e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Postupy: Změna možnost ladění krokování (zastaralé)
 Toto téma popisuje, jak změnit možnosti taktování ladění pro [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace v starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] mají souběžných akce. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -44,4 +45,4 @@ Toto téma popisuje, jak změnit možnosti taktování ladění pro [!INCLUDE[wf
   
 ## <a name="see-also"></a>Viz také  
  [Ladění pracovních starší verze](../workflow-designer/debugging-legacy-workflows.md)   
- [Ladění taktování možnosti (zastaralé)](../workflow-designer/debug-stepping-options-legacy.md)
+ [Možnosti krokování při ladění (starší verze)](../workflow-designer/debug-stepping-options-legacy.md)

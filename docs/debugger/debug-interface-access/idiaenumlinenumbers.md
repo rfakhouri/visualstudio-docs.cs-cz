@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92d257749e12605fb02c4c25a57b1862880d9a5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69b8be7dc136cc871effa0c74f2f69481e114bb7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 Provede výčet různých čísla řádků, které jsou obsažené v datovém zdroji.  
@@ -34,28 +35,28 @@ IDiaEnumLineNumbers : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiaenumlinenumbers::get__newenum –](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Načte [IEnumVARIANT rozhraní](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) verzi této enumerátor.|  
-|[Idiaenumlinenumbers::get_count –](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Načte počet čísla řádků.|  
-|[Idiaenumlinenumbers::Item –](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Načte číslo řádku prostřednictvím indexu.|  
-|[Idiaenumlinenumbers::Next –](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Načte zadaný počet čísla řádků v pořadí výčtu.|  
-|[Idiaenumlinenumbers::Skip –](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Přeskočí zadaný počet čísla řádků v posloupnosti výčtu.|  
-|[Idiaenumlinenumbers::Reset –](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[Idiaenumlinenumbers::clone –](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|Načte [IEnumVARIANT rozhraní](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) verzi této enumerátor.|  
+|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|Načte počet čísla řádků.|  
+|[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|Načte číslo řádku prostřednictvím indexu.|  
+|[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|Načte zadaný počet čísla řádků v pořadí výčtu.|  
+|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|Přeskočí zadaný počet čísla řádků v posloupnosti výčtu.|  
+|[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|Návrat na začátek v sekvenci výčtu.|  
+|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
   
 ## <a name="remarks"></a>Poznámky  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  Toto rozhraní se získá voláním jednu z následujících metod v [idiasession –](../../debugger/debug-interface-access/idiasession.md) rozhraní:  
   
--   [Idiasession::findlines –](../../debugger/debug-interface-access/idiasession-findlines.md)  
+-   [IDiaSession::findLines](../../debugger/debug-interface-access/idiasession-findlines.md)  
   
--   [Idiasession::findlinesbyaddr –](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
+-   [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)  
   
--   [Idiasession::findlinesbyrva –](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
+-   [IDiaSession::findLinesByRVA](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)  
   
--   [Idiasession::findlinesbyva –](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
+-   [IDiaSession::findLinesByVA](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)  
   
--   [Idiasession::findlinesbylinenum –](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
+-   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje, jak získat `IDiaEnumLineNumbers` rozhraní z relace. V takovém případě příklad ukazuje, jak získat řádek číslo výčtu pro funkci (reprezentována `pSymbol`). Více kompletní příklad, jak pomocí čísla řádků, najdete v článku [idialinenumber –](../../debugger/debug-interface-access/idialinenumber.md) rozhraní.  
@@ -100,4 +101,4 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
  [Idiasession::findlinesbyrva –](../../debugger/debug-interface-access/idiasession-findlinesbyrva.md)   
  [Idiasession::findlinesbyva –](../../debugger/debug-interface-access/idiasession-findlinesbyva.md)   
  [Idiasession::findlines –](../../debugger/debug-interface-access/idiasession-findlines.md)   
- [Idiasession::findlinesbyaddr –](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)
+ [IDiaSession::findLinesByAddr](../../debugger/debug-interface-access/idiasession-findlinesbyaddr.md)

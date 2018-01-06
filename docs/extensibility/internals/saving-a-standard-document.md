@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73ef7f1b347dc2fdcfe2904ef19a2d52036d927e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0cdfb4631420f6803e6434bd67b93bd713cfd1f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-a-standard-document"></a>Ukládání standardní dokumentu
 Prostředí zajišťuje uložit, uložit jako a uložte všechny příkazy. Když uživatel vybere **Uložit**, **uložit jako**, nebo **Uložit vše** z **soubor** nabídky nebo ukončí řešení, což vede k  **Uložte všechny**, se spustí následující proces.  
@@ -62,4 +63,4 @@ Uložit, uložit jako a Uložit vše příkaz zpracování standardního editoru
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [Otevření a uložení položky projektu](../../extensibility/internals/opening-and-saving-project-items.md)
+ [Otevření a uložení položek projektu](../../extensibility/internals/opening-and-saving-project-items.md)

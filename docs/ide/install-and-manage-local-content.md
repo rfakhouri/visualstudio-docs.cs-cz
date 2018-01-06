@@ -26,11 +26,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bd498004568bab80565782e11b46691a7d0ef1f
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: be2145f95ac28654852ad4e6d77aa6f33e0ecf8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-manage-local-content"></a>Instalace a Správa místního obsahu
 Pomocí prohlížeče Microsoft Help Viewer můžete přidat, odebrat, aktualizovat a přesouvat obsah, který je nainstalován v počítači podle vašich potřeb vývoj softwaru.  
@@ -126,4 +127,4 @@ Můžete ušetřit místo na disku odstraněním nežádoucí obsahu z vašeho p
 3.  Vyberte **Zavřít** když obsah se přesunul.  
   
 ## <a name="see-also"></a>Viz také  
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)

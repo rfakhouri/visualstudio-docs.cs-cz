@@ -15,11 +15,12 @@ caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 06b6dc2fab4158f36126b6509909dd0db6fd7125
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ea9c2ebd295fe463192c50da402240e0b1df1304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="checklist-creating-new-project-types"></a>Kontrolní seznam: Vytvoření nové typy projektu
 Je třeba provést několik úloh k vytvoření nového typu projektu. Následující kontrolní seznam poskytuje návod, jak tyto úlohy.  
@@ -63,4 +64,4 @@ Je třeba provést několik úloh k vytvoření nového typu projektu. Následuj
 ## <a name="see-also"></a>Viz také  
  [Hierarchie v sadě Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [Kdy vytvořit typy projektů](../../extensibility/internals/when-to-create-project-types.md)   
- [Vytváření typů projektu](../../extensibility/internals/creating-project-types.md)
+ [Vytváření typů projektů](../../extensibility/internals/creating-project-types.md)

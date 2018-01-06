@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 7f5513ef40523c994b50d72d900aace591fdea14
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 621d13bbc86693a7c49674ae8372e7a1000cbe10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Postupy: vytváření stavu počítače pracovního postupu konzolových aplikací (zastaralé)
 Postupujte podle těchto kroků k vytvoření projektu konzolové aplikace stavu počítače pracovního postupu pomocí starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] poskytované [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -51,4 +52,4 @@ Postupujte podle těchto kroků k vytvoření projektu konzolové aplikace stavu
   
 ## <a name="see-also"></a>Viz také  
  [Vytváření projektů pracovního postupu starší verze](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Postupy: vytvoření knihovny stavu počítače pracovního postupu (zastaralé)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
+ [Postupy: Vytvoření knihovny pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)

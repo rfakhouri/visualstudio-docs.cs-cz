@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d2ee5e741466b7976c8b397928cd9fccd12472fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1acc753d2a02c3be88687a4e42d71d23e988af48
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Řetězce, které jsou použity jako klíče pro vyhledání modulu Plug-in zdrojového kódu
 Následující řetězce jsou klíče pro přístup k registru k nalezení informací o ovládacím prvku modulu plug-in.  
@@ -51,4 +52,4 @@ Následující řetězce jsou klíče pro přístup k registru k nalezení infor
 ## <a name="see-also"></a>Viz také  
  [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)   
  [Postupy: Instalace modulu Plug-in Správa zdrojového kódu](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
- [MSSCCPRJ. Soubor SCC](../extensibility/mssccprj-scc-file.md)
+ [Soubor MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

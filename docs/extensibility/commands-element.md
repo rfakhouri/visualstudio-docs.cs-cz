@@ -16,11 +16,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 61d7f67eda9bdd1d215586a75ed01c1089ccf7fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7c5cce390ad786ad530153e1850850509990b039
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commands-element"></a>Element příkazy
 Představuje kolekci příkazů na panelu nástrojů VSPackage. Kolekce může mít až pět témata, následujícím způsobem: nabídky, skupiny, tlačítek, kláves a rastrové obrázky.  
@@ -52,17 +53,17 @@ Představuje kolekci příkazů na panelu nástrojů VSPackage. Kolekce může m
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Element nabídky](../extensibility/menus-element.md)|Definuje všechny nabídky, které implementuje VSPackage.|  
-|[Element skupiny](../extensibility/groups-element.md)|Obsahuje položky, které definují příkaz skupiny ve VSPackage.|  
-|[Element tlačítka](../extensibility/buttons-element.md)|Tlačítko prvky skupiny.|  
-|[Rastrové obrázky – Element](../extensibility/bitmaps-element.md)|Prvky skupiny rastrového obrázku.|  
-|[Element kláves](../extensibility/combos-element.md)|Prvky pole se seznamem skupin.|  
+|[Menus – element](../extensibility/menus-element.md)|Definuje všechny nabídky, které implementuje VSPackage.|  
+|[Groups – element](../extensibility/groups-element.md)|Obsahuje položky, které definují příkaz skupiny ve VSPackage.|  
+|[Buttons – element](../extensibility/buttons-element.md)|Tlačítko prvky skupiny.|  
+|[Bitmaps – element](../extensibility/bitmaps-element.md)|Prvky skupiny rastrového obrázku.|  
+|[Combos – element](../extensibility/combos-element.md)|Prvky pole se seznamem skupin.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy, které poskytuje VSPackage k prostředí IDE. Možné prvky jsou položky nabídky, nabídek, panely nástrojů a pole se seznamem.|  
+|[CommandTable – element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy, které poskytuje VSPackage k prostředí IDE. Možné prvky jsou položky nabídky, nabídek, panely nástrojů a pole se seznamem.|  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje, jak používat [příkazy Element](../extensibility/commands-element.md).  
@@ -92,4 +93,4 @@ Představuje kolekci příkazů na panelu nástrojů VSPackage. Kolekce může m
   
 ## <a name="see-also"></a>Viz také  
  [Jak přidat VSPackages prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

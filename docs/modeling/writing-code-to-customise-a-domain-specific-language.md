@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 2d456f84078e54694deb11fda0082ac40d278dd2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e7b5fc639e93061a4abd0acbfc1425223d673282
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>Zápis kódu pro úpravu jazyka specifického pro doménu
 V této části se dozvíte, jak použít vlastní kód pro přístup, upravit nebo vytvořit model v jazyce specifické pro doménu.  
@@ -74,4 +75,4 @@ V této části se dozvíte, jak použít vlastní kód pro přístup, upravit n
 -   **Serializace**. Úložiště poskytuje standardní způsob, jak serializovat objekty, které obsahuje do souboru. Můžete upravit pravidla pro serializaci a deserializaci. Další informace najdete v tématu [přizpůsobení File Storage a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md)
+ [Přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md)

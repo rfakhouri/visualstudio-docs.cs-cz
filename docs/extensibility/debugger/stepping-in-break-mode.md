@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 011de9ce3e4e1445354f907dcf56a0f4ecbef6bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: bb56cef2f60b0268528ea75e4fe2b991a7472192
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="stepping-in-break-mode"></a>Krokování s v režimu pozastavení
 Následující text popisuje proces, který nastane, když je v režimu pozastavení ladicího programu a musí krok prostřednictvím kódu:  
@@ -32,4 +33,4 @@ Následující text popisuje proces, který nastane, když je v režimu pozastav
 2.  Po dokončení kroku odeslat [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) jako událost zastavit.  
   
 ## <a name="see-also"></a>Viz také  
- [Události volání ladicí program](../../extensibility/debugger/calling-debugger-events.md)
+ [Volání událostí ladicího programu](../../extensibility/debugger/calling-debugger-events.md)

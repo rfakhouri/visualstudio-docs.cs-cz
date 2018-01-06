@@ -2,7 +2,7 @@
 title: Nainstalovat Visual Studio 2017 | Microsoft Docs
 description: Informace o instalaci sady Visual Studio, krok za krokem.
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -15,15 +15,15 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-ms.assetid: 8d4297e4-9f43-4f12-95ec-22e61154480e
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ff51b5910d8b81d8319eddd0fa3be08d2f9553d7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-studio-2017"></a>Nainstalovat Visual Studio 2017
 Vítá vás nový způsob instalaci sady Visual Studio! V našem nejnovější verzi jsme provedli jsme je snazší pro vás k výběru a instalaci součástí, které potřebujete. Také jsme jste snížení nároků sady Visual Studio tak, aby nainstaloval rychleji a s menšími dopady na systém než kdy dřív.
@@ -48,7 +48,7 @@ Dotazy týkající se staršími verzemi sady Visual Studio vedle sebe s Visual 
 Další stáhněte si soubor zaváděcího nástroje Visual Studio. Uděláte to tak, klikněte na následující tlačítko, vyberte edici Visual Studio 2017, který chcete, klikněte na tlačítko **Uložit**a potom klikněte na **otevřít složku**.
 
  > [!div class="button"]
- > [Stáhněte si Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
+ > [Stažení sady Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 <br/>
 
 |         |         |
@@ -77,9 +77,9 @@ Po instalaci instalační program vám pomůže ho svou instalaci přizpůsobit 
 
 1.  Najít úlohu, kterou chcete v **instalaci sady Visual Studio** obrazovky.
 
-  ![Dialogové okno nastavení Visual Studio 2017](media/vs2017-workloads.PNG "úlohy instalace sady Visual Studio")
+ ![Vyberte zatížení z tohoto dialogového okna nastavení Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
 
-     Vyberte například zatížení vývoj aplikací .NET. Se dodává s výchozí editor jádra, která obsahuje základní kódu úpravy podporu pro více než 20 jazycích, schopnost otevírat a upravovat kód z libovolné složky bez nutnosti vytvářet projekt a integrované správy zdrojového kódu.  
+     Vyberte například zatížení "Vývoj aplikací .NET". Se dodává s výchozí editor jádra, která obsahuje základní kódu úpravy podporu pro více než 20 jazycích, schopnost otevírat a upravovat kód z libovolné složky bez nutnosti vytvářet projekt a integrované správy zdrojového kódu.  
 
 2.  Po výběru workload(s) má, klikněte na tlačítko **nainstalovat**.
 
@@ -88,7 +88,7 @@ Po instalaci instalační program vám pomůže ho svou instalaci přizpůsobit 
 3.  Po instalaci nové úlohy a součásti, klikněte na tlačítko **spusťte**.  
 
 > [!TIP]
->  Kdykoli po instalaci můžete nainstalovat úlohy nebo součásti, které jste původně nenainstalovali. Pokud máte Visual Studio otevřete, přejděte na **nástroje**, **funkcí a nástrojů pro získání...**  otevře se instalační program Visual Studio. Můžete také otevřít **instalační program Visual Studio** z nabídky Start. Odtud můžete vybrat úlohy nebo součásti, které chcete nainstalovat a pak klikněte na **upravit**.  
+>  Kdykoli po instalaci můžete nainstalovat úlohy nebo součásti, které jste původně nenainstalovali. Pokud máte Visual Studio otevřete, přejděte na **nástroje** > **funkcí a nástrojů pro získání...**  otevře se instalační program Visual Studio. Můžete také otevřít **instalační program Visual Studio** z nabídky Start. Odtud můžete vybrat úlohy nebo součásti, které chcete nainstalovat a pak klikněte na **upravit**.  
 
 |         |         |
 |---------|---------|
@@ -135,7 +135,7 @@ Tady je několik další možnosti podpory:
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
 * Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
 * [Aktualizace Visual Studio 2017](update-visual-studio.md)
@@ -144,4 +144,4 @@ Tady je několik další možnosti podpory:
 * [Vytvoření offline instalace Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio Příručka pro správce 2017](visual-studio-administrator-guide.md)
   * [Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
-* [Instalace nástroje sestavení do kontejneru](build-tools-container.md)
+* [Instalace Build Tools do kontejneru](build-tools-container.md)

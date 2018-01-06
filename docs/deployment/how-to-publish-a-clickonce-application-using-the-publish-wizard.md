@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: f7921ccebf9872f8a1f8ed79e6ee8da05d04e320
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d314763f8ff4dc170148cca166e3ecdff051ae24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Postupy: Publikování aplikace ClickOnce pomocí průvodce publikováním
 Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sdílené složky nebo cestu, FTP server nebo vyměnitelná média. Můžete publikovat aplikace pomocí Průvodce publikováním; je k dispozici v dalších vlastností souvisejících s publikováním **publikovat** stránky **Návrhář projektu**. Další informace najdete v tématu [publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md).  
@@ -103,4 +104,4 @@ Pro aplikaci ClickOnce zpřístupnit uživatelům, je nutné ji publikovat na sd
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md)   
  [Zabezpečování aplikací ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Nasazení řešení Office s použitím technologie ClickOnce](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)
+ [Nasazení řešení Office s použitím technologie ClickOnce](/office-dev/office-dev/deploying-an-office-solution-by-using-clickonce)

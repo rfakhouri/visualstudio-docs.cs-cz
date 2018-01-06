@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d951c08e3505673242b249c42b846f3d4c88300
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 690c1cf6ff64e71bcf9ad96ab5cb2c9f472d9855
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="c-library-reference"></a>Referenční dokumentace knihoven jazyka C
 Tato část obsahuje informace o sadě SDK Vizualizéru souběžnosti.  
@@ -26,26 +27,26 @@ Tato část obsahuje informace o sadě SDK Vizualizéru souběžnosti.
 >  Jazyk C standardní si vyhrazuje použití identifikátorů, které začínají podtržítkem (`_`) znak pro implementace například knihovny. Nepoužívejte názvy počínaje podtržítkem ve vašem kódu. Uvolní chování kódu elementy, jejichž názvy následují touto konvencí se nezaručuje a v budoucnu se mohou změnit. Z těchto důvodů jsou tyto elementy kódu vynechaný této dokumentace.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Cvcreatedefaultmarkerseriesofdefaultprovider – funkce](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
+ [CvCreateDefaultMarkerSeriesOfDefaultProvider – funkce](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  
   
- [Cvcreatemarkerseries – funkce](../profiling/cvcreatemarkerseries-function.md)  
+ [CvCreateMarkerSeries – funkce](../profiling/cvcreatemarkerseries-function.md)  
   
- [Cvcreatemarkerserieswithcodepagea – funkce](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
+ [CvCreateMarkerSeriesWithCodePageA – funkce](../profiling/cvcreatemarkerserieswithcodepagea-function.md)  
   
- [Cventerspan – funkce](../profiling/cventerspan-function.md)  
+ [CvEnterSpan – funkce](../profiling/cventerspan-function.md)  
   
- [Cvinitprovider – funkce](../profiling/cvinitprovider-function.md)  
+ [CvInitProvider – funkce](../profiling/cvinitprovider-function.md)  
   
- [Cvisenabled – funkce](../profiling/cvisenabled-function.md)  
+ [CvIsEnabled – funkce](../profiling/cvisenabled-function.md)  
   
- [Cvleavespan – funkce](../profiling/cvleavespan-function.md)  
+ [CvLeaveSpan – funkce](../profiling/cvleavespan-function.md)  
   
- [Cvreleasemarkerseries – funkce](../profiling/cvreleasemarkerseries-function.md)  
+ [CvReleaseMarkerSeries – funkce](../profiling/cvreleasemarkerseries-function.md)  
   
- [Cvreleaseprovider – funkce](../profiling/cvreleaseprovider-function.md)  
+ [CvReleaseProvider – funkce](../profiling/cvreleaseprovider-function.md)  
   
- [Cvwritealert – funkce](../profiling/cvwritealert-function.md)  
+ [CvWriteAlert – funkce](../profiling/cvwritealert-function.md)  
   
- [Cvwriteflag – funkce](../profiling/cvwriteflag-function.md)  
+ [CvWriteFlag – funkce](../profiling/cvwriteflag-function.md)  
   
- [Cvwritemessage – funkce](../profiling/cvwritemessage-function.md)
+ [CvWriteMessage – funkce](../profiling/cvwritemessage-function.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 959387176e079d76263a2a5c499b5a0723fd7ad7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1891e0242463f3673d22d22e0f9a2d000b01ae60
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Oblasti test 1: Přidání do nebo otevřete od správy zdrojového kódu
 Tento modul plug-in správy zdroje otestovat zahrnuje oblasti umístění řešení nebo projekty ve správě zdrojového kódu a jejich načítání od správy zdrojového kódu.  
@@ -87,4 +88,4 @@ Tento modul plug-in správy zdroje otestovat zahrnuje oblasti umístění řeše
 |Přidat do řešení – řešení ve výběru přidány do správy zdrojového kódu|1.  Vytvoření řešení s projektem.<br />2.  Přidejte jenom řešení do správy zdrojového kódu jako výběr. Pokud tento krok úspěšný, pokračujte dalším krokem.<br />3.  Zavřete řešení.<br />4.  Vytvořte nové řešení.<br />5.  Přidat dříve řízené řešení od správy zdrojového kódu (**soubor**, **správy zdrojového kódu**, **přidat projekt od správy zdrojového kódu**).|`Result from Step 2:`<br /><br /> Projekt není ve správě zdrojového kódu.<br /><br /> `Result from Step 5:`<br /><br /> Pokud první řešení měl položky řešení, není možné je přidat od správy zdrojového kódu, se nezobrazí.<br /><br /> Projekt z první řešení se objeví jako nedostupné.|  
   
 ## <a name="see-also"></a>Viz také  
- [Příručka pro testovací modulů plug-in programu zdroj ovládacího prvku](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

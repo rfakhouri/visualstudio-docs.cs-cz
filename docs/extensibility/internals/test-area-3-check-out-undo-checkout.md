@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 74f2c8d5589eb4e8a3df9accdd85109e9858920d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8835f1f8c312b3aba72353625a1d97b514dc21b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Test oblasti 3: Rezervovat / vrátit zpět rezervaci
 Tato oblast modulu plug-in testovací zdrojového kódu zahrnuje úpravy a navrácení položky z úložiště verzí prostřednictvím **rezervovat** a **vrátit zpět rezervaci** příkazy.  
@@ -137,4 +138,4 @@ Tato oblast modulu plug-in testovací zdrojového kódu zahrnuje úpravy a navr�
 |Vrátit zpět rezervaci projektu po odstranění soubory z projektu|1.  Vytvoření nového projektu a přidat jej do správy zdrojového kódu.<br />2.  Podívejte se na projektu.<br />3.  Odstranění souboru z projektu.<br />4.  Vrátit zpět, najdete v článku věnovaném projektu.|Odstraněnému souboru se zobrazí pod na projekt v Průzkumníku řešení.<br /><br /> Projekt je již rezervován.|  
   
 ## <a name="see-also"></a>Viz také  
- [Příručka pro testovací modulů plug-in programu zdroj ovládacího prvku](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

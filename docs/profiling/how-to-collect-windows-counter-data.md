@@ -19,11 +19,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5b16cf6260932f11c9d4fd33f2eb5662327355a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 125bca0b0edd6571c6cc969da0cd3cbe809057da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Postupy: Shromažďování dat čítačů Windows
 Čítače systému Windows jsou čítače výkonu systému, které se můžou shromažďovat ve stanovených intervalech při vytváření profilu. V zobrazení značky sestavy nástrojích pro profilaci řádek označený **pro automatické označování** v každém intervalu kolekce. Řádek obsahuje sloupce, které popisují hodnoty čítače výkonu v tomto intervalu. Analýza omezit na určitou dobu mezi dvěma konkrétní značky, vyberte značky, klikněte pravým tlačítkem a pak vyberte **filtrovat podle** ->  **značky** z místní nabídky.  

@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c4e3d64f77064c04e131853786495c921711f2d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b17674b8cd5058ec20db4c483b2c3508aa275b29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support-templates"></a>Podpora šablony webových serverů
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Šablony projektů a položek webu poskytují opakovaně použitelný a přizpůsobitelné webové stránky projektů a položek zástupnými procedurami, které urychlit proces vývoje odebráním potřebu vytvářet nové webové projekty a položky od začátku. Další informace o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] šablony, viz [vytváření projektů a šablon položek](../../ide/creating-project-and-item-templates.md).  
@@ -187,4 +188,4 @@ ms.lasthandoff: 10/31/2017
      Soubor šablony, který určuje obsah nové stránky předlohy a jeho závislých souborů, pokud existuje.  
   
 ## <a name="see-also"></a>Viz také  
- [Podpora webového serveru](../../extensibility/internals/web-site-support.md)
+ [Podpora webu](../../extensibility/internals/web-site-support.md)

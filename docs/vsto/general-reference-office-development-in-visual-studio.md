@@ -16,11 +16,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1810a57d8f12cff2e34834684f39bf6f508ed5c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: c297381f4629b35757693fd95f003a001034060c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Obecný odkaz (vývoj pro Office v sadě Visual Studio)
   Tato část obsahuje technické podrobnosti o projektů Microsoft Office v sadě Visual Studio.  
@@ -29,10 +30,10 @@ ms.lasthandoff: 10/31/2017
 >  Máte zájem o vývoji řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na [Office Add in modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky Office mají malé nároky ve srovnání s doplňků VSTO a řešení a můžete je vytvořit pomocí téměř jakoukoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Primární spolupracující sestavení sady Office](../vsto/office-primary-interop-assemblies.md)  
+ [Primární sestavení vzájemné spolupráce pro Office](../vsto/office-primary-interop-assemblies.md)  
  Uvádí primární spolupracující sestavení, které jsou k dispozici pro instalaci s Office a obsahuje stručný popis každého.  
   
- [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)  
+ [Manifesty aplikace pro řešení Office](../vsto/application-manifests-for-office-solutions.md)  
  Popisuje, jak manifestů aplikace se používají v řešeních pro systém Office.  
   
  [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
  [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)  
  Popisuje ukázky kódu a podrobné návody pro vytváření projektů Office v sadě Visual Studio, který vám může pomoct informace a Experimentujte s syntaxe, struktura a techniky sloužící k vytvoření řešení pro systém Office.  
   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
  Obsahuje odkazy na informace o tom, jak začít vytvářet projekty Office pomocí sady Visual Studio.  
   
   

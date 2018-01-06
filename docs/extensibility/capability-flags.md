@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5104bff319f4a6517ddccde1da1407156797928e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ec5cedcec1d79cbc3a71410a1048f5014c8aa9e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="capability-flags"></a>Příznaky schopností
 SCC_CAP_*xxx* příznaky jsou bitové příznaky, které slouží k určení možností modulu plug-in Správa zdrojového kódu. SCC_EXCAP_*xxx* příznaky jsou přírůstkové příznaky, které označují rozšířené schopnosti a odkazující na celočíselnou hodnotu.  
@@ -80,4 +81,4 @@ SCC_CAP_*xxx* příznaky jsou bitové příznaky, které slouží k určení mo�
 |`SCC_EXCAP_RENAME_CHECKEDOUT`|11|Můžete přejmenovat rezervovaných souborů.|  
   
 ## <a name="see-also"></a>Viz také  
- [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)
+ [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)

@@ -12,11 +12,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 dev_langs: vb
-ms.openlocfilehash: 68270961af154e15e02f3426da98007edd631bc4
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Začínáme s jazykem Visual Basic v sadě Visual Studio
 V tomto kurzu pro Visual Basic (VB) budete používat Visual Studio k vytvoření a spuštění aplikace několik různých konzoly a prozkoumat některé funkce sady Visual Studio [integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
@@ -32,7 +33,7 @@ Visual Studio je sada integrované vývojové kancelářské nástroje pro vývo
 ### <a name="what-is-a-console-app"></a>Co je konzola aplikace?
 Konzolové aplikace přebírá vstup a také znám jako zobrazí výstup v okně příkazového řádku do konzoly.
 ### <a name="what-is-net-core"></a>Co je .NET Core?
-.NET core je dalším krokem evolučním rozhraní .NET Framework. Tam, kde rozhraní .NET Framework můžete sdílet kódu v rámci programovacích jazyků, .NET Core přidá možnost sdílet kód napříč platformami i lépe, je s otevřeným zdrojem. (Rozhraní .NET Framework a .NET Core zahrnují knihovny předkompilované funkce, jakož i modul common language runtime (CLR), která funguje jako virtuální počítač, ve kterém pro spouštění vašeho kódu.)
+.NET core je dalším krokem evolučním rozhraní .NET Framework. Kde rozhraní .NET Framework povoleno, abyste sdílet kódu v rámci programovací jazyky .NET Core přidá možnost sdílet kód napříč platformami. I lépe je open source. (Rozhraní .NET Framework a .NET Core zahrnují knihovny předkompilované funkce, jakož i modul common language runtime (CLR), která funguje jako virtuální počítač, ve kterém pro spouštění vašeho kódu.)
 
 ## <a name="start-developing"></a>Začít vyvíjet
 Jste připravení začít vyvíjet? Jdeme!
@@ -70,7 +71,7 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
 
 1. Pokud již není otevřený, otevřete váš *WhatIsYourName* projektu.
 
-2. Zadejte následující kód jazyka Visual Basic ihned po levá hranatá závorka, která následuje `Sub Main(args As String())` řádku a před první pravá závorka:
+2. Zadejte následující kód jazyka Visual Basic ihned po levá hranatá závorka, která následuje `Sub Main(args As String())` řádku a před `End Sub` řádku:
 
      ```vb
      Console.WriteLine(vbCrLf + "What is your name? ")

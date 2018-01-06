@@ -16,13 +16,14 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebba0ea11781a4b5a3d01aabb718b0ad778daab9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="inside-the-visual-studio-sdk"></a>V sadě Visual Studio SDK
+# <a name="inside-the-visual-studio-sdk"></a>Práce se sadou Visual Studio SDK
 Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, včetně architektura sady Visual Studio, součásti, služeb, schémata, nástroje a podobně.  
   
 ## <a name="extensibility-architecture"></a>Architektura rozšiřitelnosti  
@@ -37,7 +38,7 @@ Zobecněný pohled na architekturu Visual Studio
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  Prostředí sady Visual Studio poskytuje základní funkce a podporovat komunikaci mezi mezi jeho VSPackages a MEF rozšíření komponent. Další informace najdete v tématu [prostředí sady Visual Studio](../../extensibility/internals/visual-studio-shell.md).  
   
-## <a name="user-experience-guidelines"></a>Pokyny pro práci uživatelů  
+## <a name="user-experience-guidelines"></a>Pravidla pro práci s uživatelským prostředím  
  Pokud máte v úmyslu návrhu nové funkce pro sadu Visual Studio, byste měli vzít podívejte se na tipy k návrhu a použitelnost těchto pokynů: [Visual Studio prostředí pro práci uživatelů](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).  
   
 ## <a name="commands"></a>Příkazy  

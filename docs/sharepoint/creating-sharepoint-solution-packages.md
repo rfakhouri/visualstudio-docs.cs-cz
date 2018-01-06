@@ -18,11 +18,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f21356c34a94540d20be2bb9fa092bff270f1a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fe7822382443e6c1e9bc1a77eb0cd64844504172
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-sharepoint-solution-packages"></a>Vytváření balíčků řešení služby SharePoint
   Pomocí návrháře balíčků, můžete vytvořit a upravit balíčky pro nasazení. Například můžete přidat položky projektu služby SharePoint a funkce, obnovit server služby IIS, nastavte obory aktivace funkce a identifikovat funkcí. Návrhář také generuje manifest, soubor XML, který popisuje každý balíček.  
@@ -76,10 +77,10 @@ ms.lasthandoff: 10/31/2017
  Když vytvoříte balíček projektu služby SharePoint, soubor WSP je vytvořena v SolutionFolder\bin\\*BuildConfiguration* složky. Například, pokud je vaše řešení v *jednotky*: \Visual Studio 2013\Projects\ListDefinition1 a vaše konfigurace sestavení nastavená na vydání, WSP soubor se nachází v *jednotky*: \Visual Studio 2013\ Projects\ListDefinition1\bin\Release.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
+ [Postupy: Přizpůsobení balíčku řešení služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)  
  [Postupy: Přidání nebo odebrání funkcí a položek z balíčku pomocí návrháře balíčků](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)   
  [Postupy: vytvoření balíčku služby SharePoint](http://msdn.microsoft.com/en-us/b24be45c-e91d-49bb-afb0-7b265404214b)   
  [Postupy: vytvoření balíčku řešení služby SharePoint pomocí úloh nástroje MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)   
- [Postupy: přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
+ [Postupy: Přizpůsobení balíčku řešení SharePoint pomocí cílů nástroje MSBuild](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)  
   
   

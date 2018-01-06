@@ -15,11 +15,12 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 28f0715665fb032ac2cf78dd58be65005b1065d0
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Jaký & č. 39; s nové v Visual Studio 2017
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aktualizováno pro [15,5 verze](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -223,7 +224,7 @@ Kromě nasazení moderní aplikace je aktualizace Windows 10 patří Creators pr
 * **Nejlepší UWP a Win32** <br/>
 Jsme vylepšili platformu Windows 10 s [plochy most](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) k vylepšit Windows 10 pro všechny vývojáře .NET, zda je jejich aktuální aktivní UWP WPF, Windows Forms nebo Xamarin. S novým typem projektu balení aplikací ve Visual Studio 2017 verze 15,5 můžete vytvořit balíčky aplikace systému Windows pro projekty WPF nebo Windows Forms, podobně jako u projektů UPW. Po balíček aplikace se všechny aplikace pro Windows 10 získat výhody nasazení a máte možnost distribuovat přes Microsoft Store (pro spotřebitele aplikace) nebo Microsoft Store pro firmy a Education. Protože zabalených aplikací mít přístup k úplné plochy UWP API a rozhraní API Win32 na ploše, můžete nyní modernizovat aplikace WPF a Windows Forms postupně s funkcemi UWP rozhraní API a Windows 10. Kromě toho můžete zahrnout vaše Win32 komponenty ve svých aplikacích UPW, které light na ploše se všemi funkcemi Win32. 
 
-Další informace o UWP najdete v tématu [vývoj aplikací pro univerzální platformu Windows (UWP)](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp) stránky.
+Další informace o UWP najdete v tématu [vývoj aplikací pro univerzální platformu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) stránky.
 
 ## <a name="mobile-app-development"></a>Vývoj mobilních aplikací
 ### <a name="xamarin"></a>Xamarin
@@ -270,7 +271,7 @@ A teď obsahuje podporu Docker.
 
 **Novinka v 15.3**: Visual Studio 2017 verze 15.3 podporuje vývoj .NET Core 2.0. Použití rozhraní .NET 2.0 základní vyžaduje stahování a instalace .NET Core 2.0 SDK samostatně.  
 
-Další informace najdete v tématu [.NET Core průvodce](https://docs.microsoft.com/dotnet/core/index) stránky.
+Další informace najdete v tématu [.NET Core průvodce](/dotnet/core/index) stránky.
 
 ## <a name="games-development"></a>Vývoj her
 ### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
@@ -301,6 +302,6 @@ Pokud chcete navrhnout zlepšení o tom, jak jsme můžete zlepšit Visual Studi
 ## <a name="see-also"></a>Viz také
 * [Poznámky k verzi 2017 Visual Studio](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Co je nového v jazyce Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [Co je nového v jazyce C#](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [Co je nového v jazyce C#](/dotnet/csharp/whats-new)  
 * [Co je nového pro Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
 * [Co je nového v sadě Visual Studio pro Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

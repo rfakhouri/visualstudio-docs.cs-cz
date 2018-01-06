@@ -26,11 +26,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8b61477ae3b588b2aeadf1c9d99618151825f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3fc67e84ab9519e41c2c8eb8da29025da510bc6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Postupy: Určení lokalizovaných názvů, vlastností a oprávnění pomocí zdrojového souboru
   Pomocí souboru prostředků, můžete zadat lokalizované názvy, definovat vlastnosti a použít oprávnění tor objektů, které jsou definované v modelu služby Připojení obchodních dat (BDC). Zadejte tyto informace, můžete přidat **prostředků připojení obchodních dat** položku do projektu, který obsahuje **modelu připojení obchodních dat** položky. Potom zadejte názvy, vlastnosti a oprávnění tak, že upravíte soubor XML pro soubor prostředků.  

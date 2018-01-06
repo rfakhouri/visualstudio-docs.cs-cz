@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b61478b482ed10aba61ea9ce412dc0fe0725b0bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Soubor SCC
 Při řešení sady Visual Studio nebo projektu je umístěn ve správě zdrojového kódu pomocí rozhraní IDE, rozhraní IDE obdrží dvě důležité informace od správy zdrojového kódu ve formě řetězce modulu plug-in. Tyto řetězce "AuxPath" a "ProjName", jsou neprůhledné IDE, ale používají se modul plug-in provede najít řešení nebo projektu ve správě verzí. Prostředí IDE obvykle obdrží tyto řetězce první voláním [SccGetProjPath](../extensibility/sccgetprojpath-function.md), a je pak uloží do souboru řešení nebo produktu project pro budoucí volání [SccOpenProject](../extensibility/sccopenproject-function.md). Když vložen soubory řešení a projektu, řetězce "AuxPath" a "ProjName" se neaktualizují automaticky, když uživatel větví, větve, nebo zkopíruje soubory řešení a projektu, které jsou ve správě verzí. Abyste měli jistotu, že soubory řešení a projektu ukazují jejich správné umístění ve správě verzí, uživatelé musí ručně aktualizovat řetězce. Vzhledem k tomu, že řetězce mají být neprůhledné, nemusí být vždy zrušte způsob jejich aktualizace.  
@@ -77,4 +78,4 @@ Při řešení sady Visual Studio nebo projektu je umístěn ve správě zdrojov
   
 ## <a name="see-also"></a>Viz také  
  [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)   
- [Řetězce, které jsou použity jako klíče pro vyhledání modulu Plug-in zdrojového kódu](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
+ [Řetězce, které slouží jako klíče pro vyhledání modulu plug-in pro správu zdrojového kódu](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

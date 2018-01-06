@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 513404a9abda00844e8ba68e5e207961d6de4868
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69965b35d919c4170c54cbfa1eed5d5a52dc8287
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostika grafiky sady Visual Studio
 Visual Studio*diagnostiky grafiky* je sada nástrojů pro záznam a pak analýza vykreslování a výkonu problémům v Direct3D – aplikace. Diagnostika grafiky lze použít na aplikace, které běží místně na počítači s Windows v emulátoru Windows zařízení nebo na vzdálený počítač nebo zařízení.  
@@ -66,13 +67,13 @@ Visual Studio*diagnostiky grafiky* je sada nástrojů pro záznam a pak analýza
  [Historie pixelu](graphics-pixel-history.md)  
  Pomocí **historie pixelů grafiky** okno analyzovat, jak je aktuálně vybrané pixelů ovlivňován události, které vliv, můžete identifikovat události nebo kombinaci událostí, které způsobí určité druhy problémů vykreslování. Historie pixelu je zvláště užitečné, pokud objekt je nesprávně vykreslit, protože výstup shaderu pixelů je buď nesprávný nebo zkombinovaná nesprávně s rámečkem vyrovnávací paměti, nebo když objekt nezobrazí i vzhledem k tomu, že byly vyřazeny jeho pixelů než dosáhnou vyrovnávací paměť snímku.  
   
- [Tabulce objektů.](graphics-object-table.md)  
+ [Tabulka objektů](graphics-object-table.md)  
  Můžete použít **tabulka grafických objektů** prozkoumat vlastnosti a obsah objektů konkrétní Direct3D – a prostředky, které jsou platné pro aktuálně vybrané události. Objekt tabulky můžete určit kontextu zařízení grafiky, která je aktivní během události a zkontrolujte obsah grafických prostředků, jako jsou konstantní vyrovnávacích pamětí, vrchol vyrovnávací paměti a textury.  
   
  [Ladicí program HLSL](hlsl-shader-debugger.md)  
  Pro zjištění, jak kód shaderu pro aktuálně vybrané události a grafika kanálu fáze chová, můžete použít **ladicí program HLSL** ke krokování kódu, zkontrolujte obsah proměnných a provádět další typické úlohy ladění. Ladicí program HLSL můžete taky kontrola výpočetního shaderu kódu, bez ohledu na to, jestli výsledky se dále zpracovávat v kanálu grafiky nebo jen pro čtení zpět vaší aplikace.  
   
- [Nástroj příkazového řádku zachycení](command-line-capture-tool.md)  
+ [Nástroj příkazového řádku pro zachytávání](command-line-capture-tool.md)  
  Pomocí nástroje příkazového řádku zachycení rychle zachycení a přehrání grafických informací bez použití sady Visual Studio nebo zachytávání prostřednictvím kódu programu. Nástroj příkazového řádku zachycení, můžete pro automatizaci nebo v testovacím prostředí.  
   
  [Příklady](graphics-diagnostics-examples.md)  

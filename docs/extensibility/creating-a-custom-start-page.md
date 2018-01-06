@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d9782e51688ae1ef4fda3ed52636de54149fa79e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-a-custom-start-page"></a>Vytváření vlastní úvodní stránky
 Můžete vytvořit vlastní úvodní stránku podle kroků v tomto dokumentu.  
@@ -91,4 +92,4 @@ Můžete vytvořit vlastní úvodní stránku podle kroků v tomto dokumentu.
  [Přidání uživatelského ovládacího prvku do úvodní stránky](../extensibility/adding-user-control-to-the-start-page.md)   
  [Přidání příkazů sady Visual Studio na úvodní stránky](../extensibility/adding-visual-studio-commands-to-a-start-page.md)   
  [Návod: Ukládání uživatelských nastavení na stránce Start](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)   
- [Nasazení vlastní úvodní stránky](../extensibility/deploying-custom-start-pages.md)
+ [Nasazení vlastních úvodních stránek](../extensibility/deploying-custom-start-pages.md)

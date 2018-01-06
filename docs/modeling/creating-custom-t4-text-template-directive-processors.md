@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e288ccfd0e59f95c521d605c34e04240c94a1848
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e220692b263dbb35779c25ff0b189f219e98b842
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Vytváření vlastních procesorů pro direktivy textových šablon T4
 *Proces transformace textových šablon* trvá *textové šablony* souboru jako vstup a vytváří textový soubor jako výstup. *Text šablony transformační modul* proces a modul komunikuje se službou hostitele transformace textových šablon a textové šablony jeden nebo více ovládacích prvků *procesory direktiv* k dokončení proces. Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).  

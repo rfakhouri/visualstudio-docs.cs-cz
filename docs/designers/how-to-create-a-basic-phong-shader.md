@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29def0d3aef8a097f5b956bd43df7d8b53abebb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52040b717204f151e4a370f5f2a25b29781878b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Postupy: Vytvoření základního Phongova shaderu
 Tento dokument ukazuje, jak vytvořit shaderu osvětlení, který implementuje klasického modelu osvětlení Phong pomocí návrháře shaderu a jazyk shaderu grafu (DGSL) přesměruje.  
@@ -75,4 +76,4 @@ Tento dokument ukazuje, jak vytvořit shaderu osvětlení, který implementuje k
  [Postupy: Export shaderu](../designers/how-to-export-a-shader.md)   
  [Postupy: vytvoření základní společnost Lambert shaderu](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Návrhář shaderu](../designers/shader-designer.md)   
- [Uzly návrháře shaderu](../designers/shader-designer-nodes.md)
+ [Uzly návrháře shaderů](../designers/shader-designer-nodes.md)

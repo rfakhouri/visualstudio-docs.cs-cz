@@ -16,11 +16,12 @@ caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ec2b7a18dac9616db1743a50539c2860caca2e26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 1137c8c5c6041b41e8cbdc0e13d43b6188bd1b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-components"></a>Ladicí program komponenty
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Je implementovaný jako VSPackage a spravuje celý ladicí relace ladicí program. Relaci ladění zahrnuje následující prvky:  
@@ -45,35 +46,35 @@ ms.lasthandoff: 10/31/2017
  [Ladění balíčku](../../extensibility/debugger/debug-package.md)  
  Popisuje ladění balíčku, který se spouští v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí shell a zpracovává všechny uživatelské rozhraní.  
   
- [Správce procesu ladění](../../extensibility/debugger/process-debug-manager.md)  
+ [Správce ladění procesu](../../extensibility/debugger/process-debug-manager.md)  
  Obsahuje přehled funkce PDM, což je správce procesů, které můžete ladit.  
   
- [Správce ladicí relace](../../extensibility/debugger/session-debug-manager.md)  
+ [Správce ladění relace](../../extensibility/debugger/session-debug-manager.md)  
  Definuje SDM, které poskytuje jednotný pohled na relaci ladění k prostředí IDE. SDM spravuje DE.  
   
- [Ladění modulu](../../extensibility/debugger/debug-engine.md)  
+ [Ladicí stroj](../../extensibility/debugger/debug-engine.md)  
  Ladění služby, které poskytuje DE dokumenty.  
   
  [Provozní režimy](../../extensibility/debugger/operational-modes.md)  
  Poskytuje přehled o tři režimy, ve kterých může fungovat i rozhraní IDE: režimu, režimu spuštění a pozastavení režimu návrhu. Přechod mechanismy jsou popsány i.  
   
- [Vyhodnocení výrazu](../../extensibility/debugger/expression-evaluator.md)  
+ [Vyhodnocovač výrazů](../../extensibility/debugger/expression-evaluator.md)  
  Vysvětlující účel EE za běhu.  
   
- [Symbol zprostředkovatele](../../extensibility/debugger/symbol-provider.md)  
+ [Poskytovatel symbolů](../../extensibility/debugger/symbol-provider.md)  
  Popisuje, jak, v implementaci zprostředkovatele symbol vyhodnotí proměnné a výrazy.  
   
- [Typ vizualizér a vlastní prohlížeč](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)  
+ [Vizualizér typů a vlastní prohlížeč](../../extensibility/debugger/type-visualizer-and-custom-viewer.md)  
  Popisuje, co je typ vizualizér a vlastní prohlížeč a jakou roli hrají vyhodnocovací filtr výrazů v doprovodné obě.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Koncepty ladicí program](../../extensibility/debugger/debugger-concepts.md)  
+ [Koncepty ladicího programu](../../extensibility/debugger/debugger-concepts.md)  
  Popisuje hlavní koncepty ladění architektury.  
   
- [Kontexty ladicí program](../../extensibility/debugger/debugger-contexts.md)  
+ [Kontexty ladicího programu](../../extensibility/debugger/debugger-contexts.md)  
  Vysvětluje, jak funguje DE současně v kódu, dokumentace a kontexty vyhodnocení výrazu. Popisuje, pro každou tři kontexty, umístění, pozice nebo vyhodnocení relevantní k němu.  
   
- [Ladění úlohy](../../extensibility/debugger/debugging-tasks.md)  
+ [Úlohy ladění](../../extensibility/debugger/debugging-tasks.md)  
  Obsahuje odkazy na různé ladění úlohy, jako je například spuštěním programu a vyhodnocení výrazů.  
   
 ## <a name="see-also"></a>Viz také  

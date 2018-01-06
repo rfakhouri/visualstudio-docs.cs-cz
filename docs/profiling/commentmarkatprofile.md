@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f8c51fc0f1009316f406a45c62e95f24397fef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f196a9e2c5951037c215dfd69fd29864b72cd41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Metoda vloží hodnoty časového razítka, číselné značky a komentáře řetězce v souboru .vsp. Hodnota časového razítka slouží k synchronizaci externí události. Značky a komentáře, které má být vložen profilace podprocesu, který obsahuje funkci CommentMarkAtProfile musí být ON.  
@@ -74,7 +75,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |-|-|  
 |**Záhlaví**|Zahrnout VSPerf.h|  
 |**Knihovna**|Použití VSPerf.lib|  
-|**Kódování Unicode**|Implementovaný jako CommentMarkAtProfileW (Unicode) a CommentMarkAtProfileA (ANSI).|  
+|**Unicode**|Implementovaný jako CommentMarkAtProfileW (Unicode) a CommentMarkAtProfileA (ANSI).|  
   
 ## <a name="example"></a>Příklad  
  Následující kód ukazuje použití volání CommentMarkAtProfile obecné funkce. Příklad předpokládá použití Win32 řetězce makra a nastavení kompilátoru pro ANSI k určení, zda kód zavolá metodu ANSI povolený funkce.  

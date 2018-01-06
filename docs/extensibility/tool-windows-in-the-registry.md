@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 38b4415a24a7440a2d3725fb1183863e7a337bbb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d3277a4e24b12d409654548b5670a4d47fa9539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tool-windows-in-the-registry"></a>Nástroje systému Windows v registru
 VSPackages, které poskytují nástroje systému windows musíte zaregistrovat u [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jako nástroj okno zprostředkovatele. Nástroje systému windows vytvořených pomocí šablony balíček Visual Studio k tomu ve výchozím nastavení. Okno poskytovatelů nástrojů mít klíče registru systému, které určit viditelnost atributy, jako je například výchozí velikost okna nástroje a umístění, identifikátor GUID okně, které slouží jako nástroj podokna a styl ukotvení.  
@@ -43,4 +44,4 @@ VSPackages, které poskytují nástroje systému windows musíte zaregistrovat u
  Druhý volitelné klíč ToolWindows\Visibility, určuje identifikátory GUID příkazy, které vyžadují panel nástrojů, který má být viditelné. V tomto případě nejsou žádné příkazy zadané. Další informace najdete v tématu [konfigurace zobrazení okna nástroj](../extensibility/tool-window-display-configuration.md).  
   
 ## <a name="see-also"></a>Viz také  
- [VSPackages](../extensibility/internals/vspackages.md)
+ [Balíčky VSPackage](../extensibility/internals/vspackages.md)

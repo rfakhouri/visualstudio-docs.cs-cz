@@ -20,11 +20,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7582b0bcef8a97de14fb3b931745d6dcc21fa876
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 47ff77e26ede1c8f9c1bf35b8fc3e69a7951d24c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-and-debugging-sharepoint-solutions"></a>Sestavování a ladění řešení služby SharePoint
   Sestavování a ladění řešení služby SharePoint je obecně stejná jako sestavování a ladění jiné typy projektů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Témata v této části popisují rozdíly, které existují.  

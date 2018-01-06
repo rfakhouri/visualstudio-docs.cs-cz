@@ -24,11 +24,12 @@ caps.latest.revision: "66"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6bee3ed6bb88945d880f1fb855cec0f7cb9be27
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: f2727d3c1608db15ab4b46285c0ad6971864978e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="excel-object-model-overview"></a>Přehled modelu objektů aplikace Excel
   Pro vývoj řešení, které používají aplikace Microsoft Office Excel, můžete pracovat s objekty poskytované model objektů aplikace Excel. Toto téma představuje nejdůležitější objekty:  
@@ -121,8 +122,8 @@ ms.lasthandoff: 10/31/2017
 |Název|Popis|  
 |-----------|-----------------|  
 |[Řešení pro aplikaci Excel](../vsto/excel-solutions.md)|Vysvětluje, jak můžete vytvořit přizpůsobení na úrovni dokumentu a doplňků VSTO pro aplikaci Microsoft Office Excel.|  
-|[Práce s oblastmi](../vsto/working-with-ranges.md)|Obsahuje příklady, které ukazují, jak provádět běžné úlohy s rozsahy.|  
-|[Práce s listy](../vsto/working-with-worksheets.md)|Obsahuje příklady, které ukazují, jak provádět běžné úkoly s listů.|  
+|[Práce s oblastmi](../vsto/working-with-ranges.md)|Obsahuje příklady, které ukazují, jak provádět běžné úlohy s rozsahy.|  
+|[Práce s listy](../vsto/working-with-worksheets.md)|Obsahuje příklady, které ukazují, jak provádět běžné úkoly s listů.|  
 |[Práce se sešity](../vsto/working-with-workbooks.md)|Obsahuje příklady, které ukazují, jak provádět běžné úkoly s sešity.|  
   
   

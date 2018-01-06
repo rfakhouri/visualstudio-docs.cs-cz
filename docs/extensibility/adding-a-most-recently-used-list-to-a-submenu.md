@@ -16,11 +16,12 @@ caps.latest.revision: "46"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d622bd917548666e12eff6d29639f62d3ef4bc1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 087faaae07c4c240b53830ee238cee4f9065d21f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Přidání většina nedávno používá seznamu podnabídky
 Tento názorný postup je založený na ukázky v [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md)a ukazuje, jak přidat do podnabídky dynamického seznamu. Dynamické seznamu je základem pro vytvoření seznamu naposledy (použitých).  
@@ -207,4 +208,4 @@ Tento názorný postup je založený na ukázky v [přidání podnabídky do nab
 4.  Znovu otevřete podnabídky. Všimněte si, že **3 položky** je nyní v horní části seznamu a dalších položek se nabídne o jednu pozici dolů. Klikněte na tlačítko **3 položky** znovu a Všimněte si, okno se zprávou stále zobrazuje "Vybrané položky 3", označující, že se text správně přesunul do nového umístění společně s příkaz popisek.  
   
 ## <a name="see-also"></a>Viz také  
- [Dynamicky přidání položek nabídky](../extensibility/dynamically-adding-menu-items.md)
+ [Dynamické přidávání položek nabídky](../extensibility/dynamically-adding-menu-items.md)

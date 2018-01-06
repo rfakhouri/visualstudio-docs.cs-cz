@@ -13,11 +13,12 @@ caps.latest.revision: "29"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-ms.openlocfilehash: c9871a767ae8e2a9c77edecda19c986c4ee85f26
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 4a93b60cfac2bbc727fbc2a7b4054c4e7b8e3dce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-models-in-your-development-process"></a>Použití modelů ve vývojových procesech
 V sadě Visual Studio můžete v modelu vám pomůžou pochopit a změnit systému, aplikace nebo součást. Model můžete vizualizovat na světě, ve kterém funguje systému, vysvětlení potřeby uživatelů, definovat architekturu systému, analyzovat kód a ujistěte se, že váš kód splňuje požadavky. Najdete v části [Channel 9 Video: architektura prostřednictvím modelování zlepšení](http://go.microsoft.com/fwlink/?LinkID=252078).  
@@ -129,7 +130,7 @@ V sadě Visual Studio můžete v modelu vám pomůžou pochopit a změnit systé
 |**Videa**|![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How do I videa: postup vytvoření a použití modelů a diagramů UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML s Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How do I řady: UML nástrojů a rozšíření (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
 |**Fóra**|-   [Visual Studio vizualizace a modelování nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio vizualizace a modelování SDK (nástroje DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogy**|[Visual Studio ALM a Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|  
-|**Technické články a deníků**|[Architektura softwaru MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Pokyny k nástrojům architektury Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
+|**Technické články a deníků**|[Architektura softwaru MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Pokyny k nástrojům architektury sady Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>Viz také  
  [Použití modelů ve agilní vývoj](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
@@ -137,6 +138,6 @@ V sadě Visual Studio můžete v modelu vám pomůžou pochopit a změnit systé
  [Modelování uživatelských požadavků](../modeling/model-user-requirements.md)   
  [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)   
  [Vývoj testů z modelu](../modeling/develop-tests-from-a-model.md)   
- [Strukturujte svá řešení modelování](../modeling/structure-your-modeling-solution.md)
+ [Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

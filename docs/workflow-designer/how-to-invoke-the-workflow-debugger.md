@@ -11,11 +11,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 8d7fbdb1851669d704cb8a44f8144291c04ae0ce
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f840354cad5551a9413ccb74851dfaca3353a5fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Postupy: volání ladicí program pracovního postupu
 Obecně platí při ladění pracovních postupů, stejně jako při ladění programy vytvořené v jiné sadě Visual Studio programovací jazyky. Ladicí program pracovního postupu můžete spustit těmito způsoby:  
@@ -43,4 +44,4 @@ Obecně platí při ladění pracovních postupů, stejně jako při ladění pr
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Nastavte zarážky v pracovních postupech](../workflow-designer/how-to-set-breakpoints-in-workflows.md)   
- [Ladění pracovních postupů pomocí návrháře pracovních postupů](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
+ [Ladění pracovních postupů pomocí návrháře postupu provádění](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)

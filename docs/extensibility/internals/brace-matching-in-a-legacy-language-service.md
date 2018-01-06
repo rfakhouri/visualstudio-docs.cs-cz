@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd70d65a7d2cbabbbf7fcd3581e8ba974ff25ee2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c496c65244f0ede0c3a6385f6cf1329479a17c22
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Související závorky ve službě jazyk starší verze
 Odpovídající složené závorce pomáhá vývojářům sledovat jazykové elementy, které se provést společně, jako je například kulaté závorky a složené závorky. Vývojář zadá pravé složené závorce, je označený levá složená závorka.  
@@ -140,4 +141,4 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>Viz také  
  [Funkce služby starší verze jazyka](../../extensibility/internals/legacy-language-service-features1.md)   
- [Analyzátor jazyka starší verze služby a skener](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+ [Analyzátor a skener služby starší verze jazyka](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

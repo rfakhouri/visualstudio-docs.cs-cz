@@ -22,27 +22,28 @@ caps.latest.revision: "32"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 856358b9864da9cb685619ec1ce94d2c5b4bc4f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: fdb9d357f1046c453ad6e21829a55983a044ff4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Řešení potíží s nasazením ClickOnce
 Toto téma vám pomůže diagnostikovat a vyřešit nejběžnější problémy s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.  
   
  Ve většině případů [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace se stáhne do počítače uživatele a spustit bez problémů. Existují však některé případy, kdy problémy konfigurace webového serveru nebo aplikaci může způsobit nepředvídatelné problémy.  
   
- [Postupy: nastavení umístění souboru vlastního protokolu pro chyby nasazení ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ [Postupy: Nastavení vlastního umístění souboru protokolu pro chyby nasazení ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
  Popisuje, jak přesměrovat všechny [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] selhání aktivaci na počítači do jednoho souboru protokolu.  
   
- [Postupy: určení souborů podrobného protokolování pro nasazení ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ [Postupy: Určení souborů podrobného protokolování pro nasazení ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
  Popisuje, jak zvýšit podrobností, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zapíše do souborů protokolu.  
   
- [Server a problémy s konfigurací klienta v nasazeních ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
+ [Problémy s konfigurací serveru a klienta v nasazeních ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
  Popisuje různé problémy s konfigurací vašeho webového serveru, který by mohl způsobit potíže při stahování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
   
- [Zabezpečení, správy verzí a manifestu problémy v nasazeních ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
+ [Problémy se zabezpečením, správou verzí a manifestem v nasazeních ClickOnce](../deployment/security-versioning-and-manifest-issues-in-clickonce-deployments.md)  
  Popisuje různé problémy kolem [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení.  
   
  [Řešení konkrétních chyb v nasazeních ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)  
@@ -53,4 +54,4 @@ Toto téma vám pomůže diagnostikovat a vyřešit nejběžnější problémy s
   
 ## <a name="see-also"></a>Viz také  
  [ClickOnce – Manifest nasazení](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce – Manifest aplikace](../deployment/clickonce-application-manifest.md)
+ [ClickOnce – manifest aplikace ](../deployment/clickonce-application-manifest.md)

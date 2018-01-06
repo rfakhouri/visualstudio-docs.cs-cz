@@ -20,11 +20,12 @@ caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a07f5b47ac6d9941a24f1d452bb1e290365049ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 357da47a68e3ae25fcd30f9516ce0509b9717807
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-outlook-form-regions"></a>Vytváření oblastí formulářů aplikace Outlook
   Oblasti formuláře můžete použít k přizpůsobení formulářů aplikace Microsoft Office Outlook. Visual Studio poskytuje pokročilé nástroje, které bylo snazší pro vás k návrhu, vývoji a ladění oblasti formuláře.  
@@ -182,13 +183,13 @@ ms.lasthandoff: 10/31/2017
 |Název|Popis|  
 |-----------|-----------------|  
 |[Pokyny pro vytváření oblastí formulářů aplikace Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)|Poskytuje informace, které vám může pomoct optimalizovat vaší oblasti formuláře a nedocházelo k problémům.|  
-|[Postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Ukazuje, jak vytvořit oblasti formuláře rozšíření pomocí formuláře aplikace Microsoft Office Outlook standardními nebo vlastními **nové oblasti formuláře aplikace Outlook** průvodce.|  
-|[Přidružení oblasti formuláře k třídě zpráv aplikace Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|Vysvětluje, jak určit, které aplikace Microsoft Office Outlook položky zobrazení oblasti formuláře ve přidružení oblasti formuláře k třídě zpráv každé položky.|  
-|[Postupy: Návrh oblasti formuláře aplikace Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)|Ukazuje, jak navrhnout vlastní formulář oblasti, která se zobrazí jako nová stránka v okně Inspector kontaktní položky.|  
-|[Návod: Import oblasti formuláře navržené v aplikaci Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Ukazuje, jak návrh oblasti formuláře v aplikaci Microsoft Office Outlook a pak import oblasti formuláře do projektu doplňku VSTO pro Outlook pomocí **nové oblasti formuláře aplikace Outlook** průvodce.|  
-|[Přístup k oblasti formuláře za běhu](../vsto/accessing-a-form-region-at-run-time.md)|Popisuje, jak napsat kód pro zobrazení, skrytí nebo úprava ovládacích prvků na oblasti formuláře a povolit uživatelům spustit kód z jiných oblastí ve vašem projektu pomocí `Globals` třídy.|  
-|[Postupy: zabránění zobrazení oblasti formuláře aplikace Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Ukazuje, jak zabránit zobrazení oblasti formuláře pro konkrétní položku aplikace Microsoft Office Outlook.|  
+|[Postupy: Přidání oblasti formuláře do projektu doplňku pro Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)|Ukazuje, jak vytvořit oblasti formuláře rozšíření pomocí formuláře aplikace Microsoft Office Outlook standardními nebo vlastními **nové oblasti formuláře aplikace Outlook** průvodce.|  
+|[Přidružení oblasti formuláře k třídě zpráv aplikace Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)|Vysvětluje, jak určit, které aplikace Microsoft Office Outlook položky zobrazení oblasti formuláře ve přidružení oblasti formuláře k třídě zpráv každé položky.|  
+|[Návod: Návrh oblasti formuláře aplikace Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)|Ukazuje, jak navrhnout vlastní formulář oblasti, která se zobrazí jako nová stránka v okně Inspector kontaktní položky.|  
+|[Návod: Import oblasti formuláře navržené v aplikaci Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)|Ukazuje, jak návrh oblasti formuláře v aplikaci Microsoft Office Outlook a pak import oblasti formuláře do projektu doplňku VSTO pro Outlook pomocí **nové oblasti formuláře aplikace Outlook** průvodce.|  
+|[Přístup k oblasti formuláře za běhu](../vsto/accessing-a-form-region-at-run-time.md)|Popisuje, jak napsat kód pro zobrazení, skrytí nebo úprava ovládacích prvků na oblasti formuláře a povolit uživatelům spustit kód z jiných oblastí ve vašem projektu pomocí `Globals` třídy.|  
+|[Postupy: Zabránění zobrazení oblasti formuláře v aplikaci Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)|Ukazuje, jak zabránit zobrazení oblasti formuláře pro konkrétní položku aplikace Microsoft Office Outlook.|  
 |Ukazuje, jak získat přístup k položce Outlook, ve kterém se zobrazí oblasti formuláře.|  
-|[Vlastní akce v oblastí formulářů aplikace Outlook](../vsto/custom-actions-in-outlook-form-regions.md)|Popisuje, jak povolit uživatelům reagovat na položku aplikace Outlook.|  
+|[Vlastní akce v oblastech formulářů aplikace Outlook](../vsto/custom-actions-in-outlook-form-regions.md)|Popisuje, jak povolit uživatelům reagovat na položku aplikace Outlook.|  
   
   

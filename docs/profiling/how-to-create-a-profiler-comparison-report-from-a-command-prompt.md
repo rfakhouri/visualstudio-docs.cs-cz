@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fe95412c11da05d409954762f40c46745b98940
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3eb863a53b1e03ca71db9c18a1d8188ef47b392
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>Postupy: Vytvoření sestavy porovnání profileru z příkazového řádku
 Můžete vygenerovat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci sestavy, který porovnává výkonnostní data součásti dvě data profilování (. / Nebo VSP. Soubory VSPS). Sestava zobrazí rozdíly, výkon regresí a vylepšení, které došlo k jedné relace profilování na druhý. Hodnoty v sestavě prezentují rozdílů nebo změna ze směrného plánu první soubor, který určíte. Touto položkou delta je vypočtena určením rozdíl mezi původní hodnoty, což je hodnota směrného plánu, a hodnota výsledek z nové analýzy. Porovnání profileru dat může být založen na funkce v kódu, modulů v aplikaci, řádky, ukazatele na instrukce (IP) a typy.  
@@ -27,7 +28,7 @@ Můžete vygenerovat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] n
   
  Vytvoření sestavy porovnání použijte následující syntaxi:  
   
- **Vsperfreport – / diff** `VspFileName1` *VspFileName2* [**/**`Options`]    
+ **Vsperfreport – / diff** `VspFileName1` *VspFileName2* [**/**`Options`]  
   
  Můžete přidat možnosti z následující tabulce **/vsperfreport – diff** příkazového řádku.  
   

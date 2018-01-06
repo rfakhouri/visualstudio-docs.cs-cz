@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3a7716f7f2f20504e854fe91afa0b315d856fef
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f9192bc9e69e977b8e0e8a4bbdf36a9d20e9d33f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalace Microsoft Help Viewer
 Několik produktů můžete zobrazit obsah nápovědy v nápovědy společnosti Microsoft, včetně Visual Studio a SQL Server.
@@ -51,5 +52,5 @@ Jiný způsob, jak snadno nainstalovat Microsoft Help Viewer se prostřednictví
 |  ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video")  |  [Přehrát video,](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) o tom, jak nainstalovat prohlížeč nápovědy pomocí Instalační program Visual Studio. |
 
 ## <a name="see-also"></a>Viz také
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
+[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)  
 [Prohlížeč nápovědy a offline obsah pro SQL Server](/sql/sql-server/sql-server-help-installation)

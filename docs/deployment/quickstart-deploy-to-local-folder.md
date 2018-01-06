@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c8696e7ffb4120bae12538a03b77d62c0d091a7
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 3b97ca67c9e8d8a4cfb7d99a6c518c8e49a8c426
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Nasazení do místní složky pomocí nástroje Visual Studio publikovat webovou aplikaci nebo aplikaci .NET Core
 
@@ -65,6 +66,6 @@ Publikované soubory žádným způsobem, který chcete nasaďte. Můžete např
 
 ## <a name="next-steps"></a>Další kroky
 
-- [Nasazení aplikace .NET Core pomocí nástroje publikování](https://docs.microsoft.com/en-us/dotnet/core/deploying/deploy-with-vs)
-- [Balíček aplikace na ploše pro Microsoft Store (Desktop mostu)](https://docs.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-- (.NET) [Nasazení rozhraní .NET Framework a aplikace](https://docs.microsoft.com/en-us/dotnet/framework/deployment/)
+- [Nasazení aplikace .NET Core pomocí nástroje publikování](/dotnet/core/deploying/deploy-with-vs)
+- [Balíček aplikace na ploše pro Microsoft Store (Desktop mostu)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+- (.NET) [Nasazení rozhraní .NET Framework a aplikace](/dotnet/framework/deployment/)

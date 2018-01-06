@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 007e1a6468429212ba7d1833157a4c9a2e771652
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e1ff5e6233d04f5dff35e96660dacf319c014a78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-of-compartment-shapes"></a>Vlastnosti obrazců prostoru
 Tvary prostředí jsou jedním z tvarů, které můžete použít k zobrazení třídu domény v jazyce specifické pro doménu. Můžete rozbalit nebo sbalit přihrádky.  

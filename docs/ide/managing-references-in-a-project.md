@@ -24,11 +24,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9442275dba03eabb183e9917ecc5c8fe874b0478
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="managing-references-in-a-project"></a>Správa odkazů v projektu
 
@@ -54,7 +55,7 @@ Můžete nastavit odkaz na následující typy součástmi a službami:
 
 ### <a name="project-references"></a>Odkazy na projekt
 
-Projekty pro Universal Windows Platform (UWP) můžete vytvořit odkazy na další UWP projekty v řešení, nebo projekty Windows 8.1 nebo binární soubory, za předpokladu, že tyto projekty nepoužívají rozhraní API, která jsou zastaralé v systému Windows 10. Další informace najdete v tématu [přesunutí ze systému Windows 8 Runtime UWP](https://docs.microsoft.com/en-us/windows/uwp/porting/w8x-to-uwp-root).
+Projekty pro Universal Windows Platform (UWP) můžete vytvořit odkazy na další UWP projekty v řešení, nebo projekty Windows 8.1 nebo binární soubory, za předpokladu, že tyto projekty nepoužívají rozhraní API, která jsou zastaralé v systému Windows 10. Další informace najdete v tématu [přesunutí ze systému Windows 8 Runtime UWP](/windows/uwp/porting/w8x-to-uwp-root).
 
 Pokud zvolíte možnost změnit cílový projekty Windows 8.1 na Windows 10, najdete v části [Port, migrace a Upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 

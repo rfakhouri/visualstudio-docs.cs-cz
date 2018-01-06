@@ -18,11 +18,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f32dceca8a6b14e6b1777e5c525327f46adca47
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: dotnet
+ms.openlocfilehash: ec48d6a581eb756ee89d9db1a3dfaa78ac1fb3a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
 Použití **aplikace** stránky **Návrhář projektu** zadat nastavení aplikace a vlastnosti projektu.  
@@ -101,4 +102,4 @@ Zadejte název cesty nebo klikněte na tlačítko Procházet (**...** ) pro při
   
 ## <a name="see-also"></a>Viz také  
 [Správa vlastností aplikace](../../ide/application-properties.md)  
-[Psaní kódu v řešeních pro systém Office](/office-dev/office-dev/writing-code-in-office-solutions)
+[Psaní kódu v řešeních pro systém Office](/office-dev/office-dev/writing-code-in-office-solutions)

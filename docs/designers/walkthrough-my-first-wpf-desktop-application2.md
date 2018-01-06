@@ -15,11 +15,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e3f3002dc40c0bdae3aad6cdbacb4b9b70422157
+ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/02/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Návod: Můj první grafický subsystém WPF aplikace pracovní plochy
 Tento názorný postup obsahuje úvod k vývoji Windows Presentation Foundation (WPF). Vytvoříte základní aplikaci, která obsahuje prvky, které jsou společné pro většinu aplikací klasické pracovní plochy WPF: XAML značek, kódu, definice aplikace, ovládací prvky, rozložení, datové vazby a styly.  
@@ -268,7 +269,7 @@ V této části vytvoříte infrastrukturu aplikace, která zahrnuje projektu a 
   
 1.  Vyberte následující obrázek a uložte ho jako `watermark.png`.  
   
-     ![Vodoznak návod](../designers/media/wpf_watermark.png "WPF_watermark")  
+     ![Vodoznak návod](../designers/media/wpf_watermark.png "vodoznak")  
   
     > [!NOTE]
     >  Případně můžete vytvořit vlastní image a uložte ho jako `watermark.png`.  

@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed049293c50fc59c7f6541a3b4a4cc58c6bd5a7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-projects"></a>Upgrade projektů
 Změny do projektu modelu z jedné verze nástroje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na další může vyžadovat, aby projekty a řešení upgradovat tak, aby mohly běžet na novější verzi. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Poskytuje rozhraní, které lze použít k implementaci upgradu podporu ve vašich vlastních projektů.  

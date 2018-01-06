@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 689fac97264aad3d301095cffed07b825c723474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c5f230da41efa8dd2fa522a5f86ae1402991b2cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elements-of-a-project-model"></a>Prvky modelu projektu
 Rozhraní a implementace všechny projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sdílet základní strukturu: model projektu pro typ vašeho projektu. V projektu modelu, který je VSPackage vyvíjíte, můžete vytvořit objekty, které splňují svoje rozhodnutí o návrhu a fungují společně s globální funkce poskytované službou rozhraní IDE. I když můžete řídit, jak je trvalý položka projektu, například nebudete řídit oznámení, že soubor musí zachovat. Když uživatel umístí fokus na položku otevřít projekt a vybere **Uložit** na **soubor** nabídce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nabídky panelu, musí váš kód typ projektu intercept příkazu z prostředí IDE, zachovat soubor, a odešlete oznámení zpět do integrovaného vývojového prostředí už změny souboru.  
@@ -50,4 +51,4 @@ model projektu
  [Základní součásti služby projektu modelu](../../extensibility/internals/project-model-core-components.md)   
  [Vytváření instancí projektu pomocí objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Postupy: získání služby](../../extensibility/how-to-get-a-service.md)   
- [Vytváření typů projektu](../../extensibility/internals/creating-project-types.md)
+ [Vytváření typů projektů](../../extensibility/internals/creating-project-types.md)

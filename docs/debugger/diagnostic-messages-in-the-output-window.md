@@ -30,11 +30,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2b898921b022dde9a666a42725bf63c0bb9e6ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df071834a6ae36da0156c527284f6ffbfcee0e4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Odeslat diagnostické zprávy v okně Výstup
 Můžete napsat běhu zprávy a pokuste se **výstup** pomocí okna `Debug` – třída nebo `Trace` třídy, které jsou součástí z <xref:System.Diagnostics> knihovny tříd. Použití třídy ladění, pokud pouze výstup v ladicí verze vašeho programu. Používejte třídu trasování, pokud chcete, aby výstupu v ladění i vydání verze.  

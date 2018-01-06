@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea195b8b3af284858253e6300b9a4484eb30f757
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: b6952cfdebb38030d154ad022a799c07fcb9721b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-editor"></a>XML Editor
 Editor souborů XML je založena na [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio textovém editoru a obsahuje další podporu jazyků XML. Editor souborů XML obsahuje následující funkce:  
@@ -58,16 +59,16 @@ Pro dobře známé souboru rozšíření, jako je například .xml, XSD, XSL a .
  [Ověření dokumentu XML](../xml-tools/xml-document-validation.md)  
  Popisuje funkce pro kontrolu a ověření syntaxe.  
   
- [Funkce IntelliSense Editor XML](../xml-tools/xml-editor-intellisense-features.md)  
+ [Funkce IntelliSense editoru XML](../xml-tools/xml-editor-intellisense-features.md)  
  Popisuje funkce IntelliSense editoru.  
   
- [Fragmenty kódu XML](../xml-tools/xml-snippets.md)  
+ [Fragmenty XML](../xml-tools/xml-snippets.md)  
  Popisuje, jak používat funkci fragmenty kódu XML.  
   
- [Úpravy XSLT šablony stylů](../xml-tools/editing-xslt-style-sheets.md)  
+ [Úpravy šablon stylů XSLT](../xml-tools/editing-xslt-style-sheets.md)  
  Popisuje XSLT prostředí pro úpravy.  
   
- [Mezipaměti schématu](../xml-tools/schema-cache.md)  
+ [Mezipaměť schémat](../xml-tools/schema-cache.md)  
  Uvádí schémat, které jsou nainstalované pomocí editoru XML.  
   
  [Součásti editoru XML](../xml-tools/xml-editor-components.md)  

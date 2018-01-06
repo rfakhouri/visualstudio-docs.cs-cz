@@ -15,11 +15,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93db7526e7d6ba3eccf86e8c9769a1d9e9af3519
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 622c0d4a75289e5025051b339b959a6b0b56442d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Postupy: vypnutí kompatibility upozornění pro moduly plug-in programu zdroj ovládacího prvku
 Uživatel může zobrazit několik kompatibility upozornění, když využívání zdrojového kódu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Upozornění uvedené závisí na možnostech modulu plug-in zdrojového kódu a je možné zakázat jako podrobné sem.  
@@ -45,4 +46,4 @@ Uživatel může zobrazit několik kompatibility upozornění, když využíván
      Je nejvhodnější pro podporu vícenásobný přístup (`SCC_CAP_REENTRANT` schopností); to se odebrat toto upozornění. Ale pokud tato podpora není možné, můžete nastavit tyto položky registru.  
   
 ## <a name="see-also"></a>Viz také  
- [Příznaky schopností](../extensibility/capability-flags.md)
+ [Příznaky funkcí](../extensibility/capability-flags.md)

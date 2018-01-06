@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 25b0f76c657f4d4df7375b4fc9e418e8806bd51f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 995ac17cd99c395dcf1c69f0d05e1b273ac72f1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-in-visual-studio"></a>Zabezpečení v sadě Visual Studio
 Zabezpečení byste měli věnovat pozornost ve všech aspektech vývoje aplikace od návrhu až po nasazení. Spusťte jako bezpečně spuštěním sady Visual Studio. V tématu [oprávnění uživatele](../ide/user-permissions-and-visual-studio.md).  
@@ -45,7 +46,7 @@ Zabezpečení byste měli věnovat pozornost ve všech aspektech vývoje aplikac
 ## <a name="building-for-security"></a>Vytváření pro zabezpečení  
  Zabezpečení je také důležitý faktor v procesu sestavení.  Pár dalších kroků můžete zlepšit zabezpečení nasazené aplikace a pomáhá zabránit neoprávněnému zpětnou analýzu, falšování identity nebo jiným útokům.
 
- [Dotfuscatoru Community Edition (CE)](dotfuscator/index.md)  
+ [Dotfuscator Community Edition (CE)](dotfuscator/index.md)  
  Vysvětluje, jak nastavit a začít používat bezplatnou preemptivní ochranu - Dotfuscatoru Community Edition k ochraně sestavení .NET z zpětnou a neoprávněnému použití (například neoprávněným ladění).
   
  [Správa sestavení a podepsání manifestu](managing-assembly-and-manifest-signing.md)  

@@ -15,11 +15,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d746d874b7efe18b1bd8dabf15804f1c05b57ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor"></a>Editor obrázků
 Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Editor obrázků pro zobrazení a úpravám prostředků texture a bitové kopie.  
@@ -108,13 +109,13 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
 |**Na skutečnou velikost**|Zobrazí bitovou kopii pomocí vztahu 1:1 mezi pixelů bitové kopie a pixelů na obrazovce.|  
 |**Nejlepší přiblížení**|Zobrazí úplnou bitovou kopii v rámce okna.|  
 |**Zvětšení šířky**|Zobrazí celou šířku obrázku v rámce okna.|  
-|**Mřížky**|Povolí nebo zakáže mřížky, který ukazuje hranice pixelů. Dokud zvětšení bitovou kopii, se nemusí zobrazit mřížky.|  
+|**Mřížka**|Povolí nebo zakáže mřížky, který ukazuje hranice pixelů. Dokud zvětšení bitovou kopii, se nemusí zobrazit mřížky.|  
 |**Další úroveň MIP zobrazení**|Aktivuje další větší MIP úrovni v řetězu MIP mapy. Úroveň active MIP se zobrazí na návrhovou plochu. Tato položka je dostupná jenom pro textury, které mají MIP úrovně.|  
 |**Zobrazení předchozí MIP úrovně**|Aktivuje další menší MIP úrovni v řetězu MIP mapy. Úroveň active MIP se zobrazí na návrhovou plochu. Tato položka je dostupná jenom pro textury, které mají MIP úrovně.|  
 |**Červený kanál**<br /><br /> **Kanál zelená**<br /><br /> **Modrá kanálu**<br /><br /> **Alfa kanálu**|Povolí nebo zakáže určité barevný kanál. **Poznámka:** systematičtěji povolením nebo zakázáním kanály barev, můžete izolovat problémy, které se vztahují na jeden nebo více z nich. Můžete třeba zjistit nesprávný průhlednost alfa.|  
 |**Pozadí**|Povolí nebo zakáže zobrazení prostřednictvím transparentní částí obrázku na pozadí. Můžete nakonfigurovat, jak se zobrazí na pozadí a vybrat z těchto možností:<br /><br /> **Šachovnice**<br /> Používá zelenou barvu společně s barvu pozadí zadané pro zobrazení na pozadí jako šachovnicový vzor. Tuto možnost můžete použít k lepšímu více zřejmá transparentní částí obrázku.<br /><br /> Bílé pozadí<br /> Barva bílé používá pro zobrazení na pozadí.<br /><br /> Začernit pozadí<br /> Používá černé barvy pro zobrazení na pozadí.<br /><br /> Animace pozadí<br /> Posouvá šachovnicový vzor pomalu. Tuto možnost můžete použít k lepšímu více zřejmá transparentní částí obrázku.|  
 |**Vlastnosti**|Případně otevře nebo zavření **vlastnosti** okno.|  
-|**Upřesnit**|Obsahuje další příkazy a možnosti.<br /><br /> **Filtry**<br /><br /> Poskytuje několik běžných filtry bitové kopie: **černobílý**, **rozostření**, **Brighten**, **ztmavit**, **detekce okraje**, **Reliéf**, **invertování barev**, **Ripple**, **sépii**, a **Zostřit**.<br /><br /> **Moduly grafiky**<br /><br /> **Vykreslení s D3D11**<br /> Direct3D – 11 používá k vykreslení návrhovou plochu Editor obrázků.<br /><br /> **Vykreslení s D3D11WARP**<br /> Direct3D – 11 Windows Advanced Rasterizační platformy (Osnova) používá k vykreslení návrhovou plochu Editor obrázků.<br /><br /> **Nástroje**<br /><br /> **Překlopit vodorovných**<br /> Transponuje bitovou kopii kolem jeho vodorovné nebo x, osy.<br /><br /> **Překlopit Vertical**<br /> Transponuje bitovou kopii kolem jeho vertical nebo y, osy.<br /><br /> **Generovat Mips**<br /> Generuje MIP úrovně pro bitovou kopii. Pokud MIP úrovně již existují, se znovu vytvoří z největší MIP úrovně. Veškeré změny, které byly provedeny na menší MIP úrovně budou ztraceny. Pokud chcete uložit MIP úrovně, které se mají vygenerovat, musí používat formát .dds Pokud chcete uložit obrázek.<br /><br /> **Zobrazení**<br /><br /> **Obnovovací frekvence**<br /> Když je povolené, zobrazí v pravém horním rohu na návrhovou plochu snímků za sekundu. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu. **Tip:** můžete **Upřesnit** tlačítko poslední příkaz spusťte znovu.|  
+|**Pokročilé**|Obsahuje další příkazy a možnosti.<br /><br /> **Filtry**<br /><br /> Poskytuje několik běžných filtry bitové kopie: **černobílý**, **rozostření**, **Brighten**, **ztmavit**, **detekce okraje**, **Reliéf**, **invertování barev**, **Ripple**, **sépii**, a **Zostřit**.<br /><br /> **Moduly grafiky**<br /><br /> **Vykreslení s D3D11**<br /> Direct3D – 11 používá k vykreslení návrhovou plochu Editor obrázků.<br /><br /> **Vykreslení s D3D11WARP**<br /> Direct3D – 11 Windows Advanced Rasterizační platformy (Osnova) používá k vykreslení návrhovou plochu Editor obrázků.<br /><br /> **Nástroje**<br /><br /> **Překlopit vodorovných**<br /> Transponuje bitovou kopii kolem jeho vodorovné nebo x, osy.<br /><br /> **Překlopit Vertical**<br /> Transponuje bitovou kopii kolem jeho vertical nebo y, osy.<br /><br /> **Generovat Mips**<br /> Generuje MIP úrovně pro bitovou kopii. Pokud MIP úrovně již existují, se znovu vytvoří z největší MIP úrovně. Veškeré změny, které byly provedeny na menší MIP úrovně budou ztraceny. Pokud chcete uložit MIP úrovně, které se mají vygenerovat, musí používat formát .dds Pokud chcete uložit obrázek.<br /><br /> **Zobrazení**<br /><br /> **Obnovovací frekvence**<br /> Když je povolené, zobrazí v pravém horním rohu na návrhovou plochu snímků za sekundu. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu. **Tip:** můžete **Upřesnit** tlačítko poslední příkaz spusťte znovu.|  
   
  Tady je **Editor obrázků** panelu nástrojů.  
   
@@ -272,5 +273,5 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
 |Název|Popis|  
 |-----------|-----------------|  
 |[Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md)|Obsahuje přehled nástroje, které můžete použít v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pro práci s prostředky grafiky například textury a bitové kopie, 3D modely a shaderu účinky.|  
-|[Editor modelu](../designers/model-editor.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelu Editor pro práci s 3D modely.|  
-|[Návrhář shaderu](../designers/shader-designer.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shaderu Designer pro práci s shadery.|
+|[Editor modelů](../designers/model-editor.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelu Editor pro práci s 3D modely.|  
+|[Návrhář shaderů](../designers/shader-designer.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shaderu Designer pro práci s shadery.|

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f34917cf5138201b1668e2800bc4ae1fd8e73a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e477801883abde205a1667b444575c0f831b930f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.XAML.cs zdrojového kódu
 Toto téma obsahuje obsah a popis C# zdrojový kód v souboru L2DBForm.xaml.cs. L2XDBForm třídu obsažené v tomto souboru je možné rozdělit do tří logických částí: datové členy a `OnRemove` a `OnAddBook` obslužné rutiny události kliknutí na tlačítko.  
@@ -139,4 +140,4 @@ namespace LinqToXmlDataBinding {
   
 ## <a name="see-also"></a>Viz také  
  [Návod: LinqToXmlDataBinding příklad](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [L2DBForm.XAML zdrojového kódu](../designers/l2dbform-xaml-source-code.md)
+ [Zdrojový kód L2DBForm.xaml](../designers/l2dbform-xaml-source-code.md)

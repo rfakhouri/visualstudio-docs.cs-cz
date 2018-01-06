@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71a53dfcb7ae7cca5b360d2e115c34909ca32f86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a6a5c8d9220b0cd2c0dddfee283d222f4efb9ab8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commandplacement-element"></a>CommandPlacement Element
 CommandPlacement element umožňuje tlačítka, skupiny a nabídky mají být zahrnuty do více než jednu skupinu nebo nabídky. Pomocí elementu CommandPlacement nemáte zcela znovu definovat tyto položky k úpravě vzhledu uživatelské rozhraní.  
@@ -56,7 +57,7 @@ CommandPlacement element umožňuje tlačítka, skupiny a nabídky mají být za
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[CommandPlacements Element](../extensibility/commandplacements-element.md)|Určuje skupiny CommandPlacements a CommandPlacement elementů.|  
+|[CommandPlacements – element](../extensibility/commandplacements-element.md)|Určuje skupiny CommandPlacements a CommandPlacement elementů.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -71,4 +72,4 @@ CommandPlacement element umožňuje tlačítka, skupiny a nabídky mají být za
   
 ## <a name="see-also"></a>Viz také  
  [CommandPlacements Element](../extensibility/commandplacements-element.md)   
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

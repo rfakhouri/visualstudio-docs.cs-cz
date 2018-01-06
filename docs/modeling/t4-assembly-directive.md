@@ -11,11 +11,12 @@ caps.latest.revision: "4"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 458fc4b2f96480c1f41efd8b80050fd0911b3e85
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a9d475a535d40af9a254a3f82839a8b733c2343d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="t4-assembly-directive"></a>T4 – direktiva Assembly
 V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] návrhu textové šablony, `assembly` – direktiva načte sestavení tak, aby váš kód šablony můžete používat jeho typů. Podobně jako při přidávání odkaz na sestavení v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu.  
@@ -92,4 +93,4 @@ V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] návrhu textové ša
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [T4 – Direktiva Include](../modeling/t4-include-directive.md)
+ [T4 – direktiva Include](../modeling/t4-include-directive.md)

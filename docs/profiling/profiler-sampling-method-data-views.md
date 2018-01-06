@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a27e4854371ebdae828335e84f2fab8d0165831
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e189434481c9fbe7e5f97c6e0cb6d0598b4b7379
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiler-sampling-method-data-views"></a>Zobrazení dat metod vzorkování profileru
 Tato část obsahuje referenční informace pro zobrazení a sestav profileru datových souborů, které byly vygenerovány pomocí metody vzorkování.  
@@ -46,7 +47,7 @@ Tato část obsahuje referenční informace pro zobrazení a sestav profileru da
  [Zobrazení řádků](../profiling/lines-view-sampling-data.md)  
  Uvádí řádky kódu zdroje, které byly prováděny, kdy byly shromážděny ukázky.  
   
- [Zobrazení ukazatele (IP) instrukcí](../profiling/instruction-pointers-ips-view-sampling-data.md)  
+ [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view-sampling-data.md)  
  Uvádí řádky kódu zdroje, které byly prováděny, kdy byly shromážděny ukázky.  
   
 ## <a name="reference"></a>Odkaz  

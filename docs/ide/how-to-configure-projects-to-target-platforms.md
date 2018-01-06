@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22838f561793845c9b44e57631c46773b094c98b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ccca87721c39daa7e613d7426c9d5fed6a144cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Umožňuje nastavit aplikací pro různé platformy, včetně 64bitové platformy. Další informace na 64bitové platformě podpoře v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], najdete v části [64bitové aplikace](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
@@ -67,4 +68,4 @@ ms.lasthandoff: 10/31/2017
  [Principy platforem sestavení](../ide/understanding-build-platforms.md)   
  [/ Platform (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
  [64bitové aplikace](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Podpora 64bitových technologií sady Visual Studio IDE](../ide/visual-studio-ide-64-bit-support.md)
+ [Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide-64-bit-support.md)

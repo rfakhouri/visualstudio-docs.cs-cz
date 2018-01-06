@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: da5d71a36b39f47dc0a068e9aa25950687143f29
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a90e858a8eed0c6d1c92423b1f074bf51c01eb63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="runtime-activity-designers"></a>Modul runtime návrháře aktivit
 Modul runtime návrháře aktivit se používají k zachování a ukončení aktivity pracovního postupu. Témata obsažené v této části poskytují pokyny o tom, jak používat [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] návrháře aktivit.  
@@ -36,7 +37,7 @@ Modul runtime návrháře aktivit se používají k zachování a ukončení akt
   
  [Zasílání zpráv](../workflow-designer/messaging-activity-designers.md)  
   
- [Primitivní elementy.](../workflow-designer/primitives-activity-designers.md)  
+ [Primitiva](../workflow-designer/primitives-activity-designers.md)  
   
  [Transakce](../workflow-designer/transaction-activity-designers.md)  
   
@@ -45,4 +46,4 @@ Modul runtime návrháře aktivit se používají k zachování a ukončení akt
  [Zpracování chyb](../workflow-designer/error-handling-activity-designers.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Pomocí návrháře aktivit](../workflow-designer/using-the-activity-designers.md)
+ [Používání návrhářů aktivit](../workflow-designer/using-the-activity-designers.md)

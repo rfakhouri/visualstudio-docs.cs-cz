@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 514eb7a80b5e23997abb64c513af1b278bf90704
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 0d3fa64b06504d8982594945f5b0c38956676b4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="miscellaneous-files-project"></a>Ostatní soubory projektu
 Když uživatel otevře položky projektu, rozhraní IDE přiřadí různé soubory projektu všechny položky, které nejsou členy žádné projekty v řešení.  
@@ -45,4 +46,4 @@ Když uživatel otevře položky projektu, rozhraní IDE přiřadí různé soub
  [Postupy: otevření projektu konkrétní editory](../../extensibility/how-to-open-project-specific-editors.md)   
  [Postupy: otevření standardní editory](../../extensibility/how-to-open-standard-editors.md)   
  [Přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [Přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md)
+ [Přidávání šablon projektů a položek projektů](../../extensibility/internals/adding-project-and-project-item-templates.md)

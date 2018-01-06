@@ -14,11 +14,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f75693fe1caa638d60d69f9ba61e15426c8f2ed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d5d311802101d632532ec1599ef39aff4a43141
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
 Načte příznak, který určuje, zda se používá direktiva preprocesoru bezpečné vyrovnávací paměti. Použijte, když [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md) je nastaven na `SymTagFunction`.  
@@ -52,4 +53,4 @@ HRESULT get_isSafeBuffers(
   
 ## <a name="see-also"></a>Viz také  
  [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)   
- [strict_gs_check –](/cpp/preprocessor/strict-gs-check)
+ [strict_gs_check](/cpp/preprocessor/strict-gs-check)

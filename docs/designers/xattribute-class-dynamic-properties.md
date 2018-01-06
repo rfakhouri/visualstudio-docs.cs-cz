@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eac3e0f92d4f87b18f1458879e90ba13b6843940
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6b6073953aa43d1555c4d97808663fd4c5504e3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xattribute-class-dynamic-properties"></a>Dynamické vlastnosti XAttribute – třída
 Tato část popisuje dynamických vlastností <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>.  
@@ -30,4 +31,4 @@ Tato část popisuje dynamických vlastností <xref:System.Xml.Linq.XAttribute?d
 ## <a name="see-also"></a>Viz také  
  <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>   
  [Technologie LINQ to XML dynamické vlastnosti](../designers/linq-to-xml-dynamic-properties.md)   
- [Dynamické vlastnosti XElement – třída](../designers/xelement-class-dynamic-properties.md)
+ [Dynamické vlastnosti třídy XElement](../designers/xelement-class-dynamic-properties.md)

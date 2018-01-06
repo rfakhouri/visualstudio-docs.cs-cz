@@ -20,11 +20,12 @@ caps.latest.revision: "103"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02f5d5cf2d726755cce4b3de2dcd74a5dad18db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8b7322faa797ea9ce51af0cd716ffb6536f062ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-and-creating-office-solutions"></a>Navrhování a tvorba řešení pro systém Office
   Visual Studio poskytuje šablony projektů, které můžete použít k vytvoření několika různých typů řešení pro systém Office. Tato část dokumentace popisuje šablony projektů a poskytuje pokyny k vytváření projektů Office. Informace o tom, jak implementovat kódu a uživatelské rozhraní přizpůsobení po vytvoření projektu najdete v tématu [vývoj řešení pro systém Office](../vsto/developing-office-solutions.md).  
@@ -108,6 +109,6 @@ ms.lasthandoff: 10/31/2017
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
  [Běžné úlohy při programování pro Office](../vsto/common-tasks-in-office-programming.md)   
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
- [Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
+ [Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)  
   
   

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591cc9ef1693f2a910eb42a2be3ff5db02ed5c8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 878c06e1965b5a96510df0e1b28175972546e227
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Přidávání do adresáře přidat novou položku – dialogové okno
 Následující příklad kódu ukazuje, jak zaregistrovat novou sadu adresářů pro **přidat novou položku** dialogové okno. Pro adresáře **přidat novou položku** dialogové okno se liší pro každý projekt. Proto jsou registrované adresáře v podklíči projekty v nalezen \<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  

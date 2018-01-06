@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c90f7cec454cc6562e2cd20e2da64cfe86e243f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f20e5d251d8d6ef31289fb1b9ee8b9420ff9146a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="single-and-multi-tab-views"></a>Zobrazení jeden a více karta
 Editor můžete vytvořit různé typy zobrazení. Jedním z příkladů je okno editoru kódu, jiné je Návrhář formulářů.  
@@ -117,4 +118,4 @@ Error:
 ## <a name="see-also"></a>Viz také  
  [Podpora více zobrazení dokumentu](../extensibility/supporting-multiple-document-views.md)   
  [Postupy: zobrazení dokumentů datové připojení](../extensibility/how-to-attach-views-to-document-data.md)   
- [Vytváření vlastních editory a návrhářů](../extensibility/creating-custom-editors-and-designers.md)
+ [Vytváření vlastních editorů a návrhářů](../extensibility/creating-custom-editors-and-designers.md)

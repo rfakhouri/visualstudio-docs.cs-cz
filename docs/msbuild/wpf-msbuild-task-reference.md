@@ -22,11 +22,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: bdf6da409d3b7e87e95c8eb08f6ce730e3c1b1cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c62a9c6c276d1f84ff504fd8637505d70d72a47c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild – referenční dokumentace úlohy
 Proces sestavení Windows Presentation Foundation (WPF) rozšiřuje stroje Microsoft build engine (MSBuild) o další sadu sestavení úlohy, včetně úlohy kompilace kódu a zdroje procesu.  
@@ -60,4 +61,4 @@ Proces sestavení Windows Presentation Foundation (WPF) rozšiřuje stroje Micro
  Přidá  **\<hostinbrowser – / >** element manifest aplikace (*projectname*. exe.manifest) při [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] sestavení projektu.  
   
 ## <a name="see-also"></a>Viz také  
- [Nástroje MSBuild](../msbuild/msbuild.md)
+ [MSBuild](../msbuild/msbuild.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7759a2394f2cda19f875a85a22c4a674fee8964
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d2de7b73238589786c1e8a4ba42389201123c2b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-model-core-components"></a>Základní součásti služby projektu modelu
 V následujících tabulkách rozbalit na projekt modelu. Stručný popis rozhraní a služeb, které jsou určené v modelu a rozhraní a služby se specifickými objekty přidružené k dispozici v tabulkách. Kromě toho tabulky Podrobnosti dalších rozhraní, které jsou volitelné při vytváření projektu a údržbě v závislosti na požadavcích vaší konkrétní projekt typu.  

@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 91ce5811be2aae3744afb7444ab35a9a3da54a20
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5e82bde3e7d30fd0516deb4f79ff89bb77d19709
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-activity-designers"></a>Pomocí návrháře aktivit
 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] Zahrnuje několik poskytované systémem aktivit, které můžete použít při vytváření aktivity a pracovní postupy. Tato část popisuje kategorie aktivit poskytované systémem a jejich návrhářů, které jsou k dispozici. Témata v jednotlivých aktivit a jejich odpovídajících designeru v každém z těchto kategorií popisují, co tyto aktivity se a poskytovat pokyny k jejich použití.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/27/2017
  [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)  
  Použitý k vytvoření aktivity vývojový diagram návrháře aktivit.  
   
- [Stav počítače](../workflow-designer/state-machine-activity-designers.md)  
+ [Stavový stroj](../workflow-designer/state-machine-activity-designers.md)  
  Návrháře aktivit použitý k vytvoření aktivity stav počítače.  
   
  [Zasílání zpráv](../workflow-designer/messaging-activity-designers.md)  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
  [Modul runtime](../workflow-designer/runtime-activity-designers.md)  
  Umožňuje zachovat a ukončení aktivity pracovního postupu návrháře aktivit.  
   
- [Primitivní elementy.](../workflow-designer/primitives-activity-designers.md)  
+ [Primitiva](../workflow-designer/primitives-activity-designers.md)  
  Používat ke správě primitivní aktivity, například přiřazení a prodlevu návrháře aktivit.  
   
  [Transakce](../workflow-designer/transaction-activity-designers.md)  
@@ -58,8 +59,8 @@ ms.lasthandoff: 10/27/2017
  <xref:System.Activities.Presentation.Toolbox.ToolboxCategory>  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Pomocí návrháře pracovních postupů](../workflow-designer/using-the-workflow-designer.md)  
+ [Používání návrháře postupu provádění](../workflow-designer/using-the-workflow-designer.md)  
   
- [Ladění pracovních postupů pomocí návrháře pracovních postupů](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)  
+ [Ladění pracovních postupů pomocí návrháře postupu provádění](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)  
   
- [Nápověda uživatelského rozhraní Návrháře pracovního postupu](../workflow-designer/workflow-designer-ui-help.md)
+ [Nápověda k uživatelskému rozhraní návrháře postupu provádění](../workflow-designer/workflow-designer-ui-help.md)

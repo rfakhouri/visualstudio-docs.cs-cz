@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d442dbf376d5615b6c10842c16d01183fc70056a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5d8c1d13263972462ef30e55a34c316f5dd0c7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-xml-snippets"></a>Postupy: použití fragmenty kódu XML
 Pomocí následujících příkazů v místní nabídce editoru XML můžete vyvolat fragmenty kódu XML. **Vložit fragment** příkaz vloží fragment kódu XML na pozici kurzoru. **Příkazu Obklopit s** příkaz zabalí fragment kódu XML kolem vybraný text. Každý fragment kódu XML určil typy fragment kódu. Typy fragment kódu určit, zda je k dispozici v tomto fragmentu kódu **Vložit fragment** příkaz, **příkazu Obklopit s** příkaz nebo obojí.  
@@ -112,4 +113,4 @@ Pomocí následujících příkazů v místní nabídce editoru XML můžete vyv
 ## <a name="see-also"></a>Viz také  
  [Fragmenty kódu XML](../xml-tools/xml-snippets.md)   
  [Postupy: generování fragmentu kódu XML z schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)   
- [Postupy: vytvoření fragmenty kódu XML](../xml-tools/how-to-create-xml-snippets.md)
+ [Postupy: Vytváření fragmentů XML](../xml-tools/how-to-create-xml-snippets.md)

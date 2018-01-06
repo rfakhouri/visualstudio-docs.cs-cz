@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f26268e6168379632868c07a9d9c58f9485c8ada
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 946fc12ab7a77aa72d5d09f7ba9522723f8e18b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints Element
 VisibilityConstraints element určuje, zda statických skupin příkazů a panely nástrojů. Viditelnost nejprve řídí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) bez načítání VSPackage.  
@@ -47,14 +48,14 @@ VisibilityConstraints element určuje, zda statických skupin příkazů a panel
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[VisibilityItem Element](../extensibility/visibilityitem-element.md)|Určuje, zda se statický příkazů a panely nástrojů.|  
+|[VisibilityItem – element](../extensibility/visibilityitem-element.md)|Určuje, zda se statický příkazů a panely nástrojů.|  
 |[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Určuje, zda statických skupin příkazů a panely nástrojů.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[CommandTable Element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy (například položky nabídky, nabídek, panely nástrojů a pole se seznamem), které poskytuje VSPackage k prostředí IDE.|  
+|[CommandTable – element](../extensibility/commandtable-element.md)|Definuje všechny elementy, které představují příkazy (například položky nabídky, nabídek, panely nástrojů a pole se seznamem), které poskytuje VSPackage k prostředí IDE.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -67,4 +68,4 @@ VisibilityConstraints element určuje, zda statických skupin příkazů a panel
   
 ## <a name="see-also"></a>Viz také  
  [VisibilityItem Element](../extensibility/visibilityitem-element.md)   
- [Visual Studio příkaz tabulky (. Soubory Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Soubory tabulek příkazů sady Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

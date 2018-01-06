@@ -13,11 +13,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 98a42547786e15815ef760e9f397c3c469c4a1a1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a4f38bed7fc164fd5283b98afe780bc81a6a7265
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Editor podmínek pravidla dialogové okno (zastaralé)
 Toto téma popisuje, jak používat **Editor podmínek pravidla** dialogovém okně pro starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
@@ -87,4 +88,4 @@ Toto téma popisuje, jak používat **Editor podmínek pravidla** dialogovém ok
  [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)   
  [Dialogové okno Vyberte podmínku (zastaralé)](../workflow-designer/select-condition-dialog-box-legacy.md)   
  [Pomocí podmínek v pracovních postupech](http://go.microsoft.com/fwlink?LinkID=65009)   
- [Starší verzi návrháře pro nápovědy uživatelského rozhraní pro Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Nápověda k uživatelskému rozhraní návrháře pro programovací model Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

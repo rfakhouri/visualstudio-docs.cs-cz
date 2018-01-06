@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af86f2b8daeffeb700b619c4ba0d9cbb00700dd8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 612017888c78f0994a83a10e3628fc10b667f8d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Plán pro rozšíření ladicí program
 Tato dokumentace poskytuje průvodce a referenční informace pro rozšíření [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] ladicího programu s [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].  
@@ -34,21 +35,21 @@ Tato dokumentace poskytuje průvodce a referenční informace pro rozšíření 
   
      [Vyhodnocení výrazu](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
-     [Vyhodnocení výrazů](../../extensibility/debugger/evaluating-expressions.md)  
+     [Vyhodnocování výrazů](../../extensibility/debugger/evaluating-expressions.md)  
   
      [Kontext vyhodnocení výrazu](../../extensibility/debugger/expression-evaluation-context.md)  
   
-     [Vyhodnocení výrazu v režimu pozastavení](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
+     [Vyhodnocení výrazu v režimu přerušení](../../extensibility/debugger/expression-evaluation-in-break-mode.md)  
   
-     [Zápis běžné vyhodnocení výrazu Runtime jazyka](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
+     [Zápis vyhodnocovače výrazů modulu CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
 -   Cíle a chráněné operačního systému nebo jiných běhové prostředí, budete muset napsat vlastní DE. Kurz, který vytvoří jednoduchý DE pomocí knihovny ATL COM je k dispozici. Další informace naleznete v následujících tématech:  
   
-     [Vytváření vlastních ladění modulu](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
+     [Vytvoření vlastního ladicího stroje](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
      [Kurz: Vytvoření modul ladění pomocí knihovny ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
-     [Implementace Port dodavatele](../../extensibility/debugger/implementing-a-port-supplier.md)  
+     [Implementace dodavatele portu](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
      [Ukázky](../../extensibility/debugger/visual-studio-debugging-samples.md)  
   

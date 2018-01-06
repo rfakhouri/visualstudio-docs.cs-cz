@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ed84b4b1bf6c974f22682dcb8d899208c653ebc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 308de182e604f06fff9ad25cb65428b2d48ff257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Další zdroje řízení pokyny pro projekty a editory
 Existuje několik pokyny, které projekty a editory by měl splňovat za účelem podpory správy zdrojového kódu.  
@@ -25,7 +26,7 @@ Existuje několik pokyny, které projekty a editory by měl splňovat za účele
 ## <a name="guidelines"></a>Pokyny  
  Projekt nebo editoru vhodné provést následující pro podporu správy zdrojového kódu:  
   
-|Oblast|Project|Editor|Podrobnosti|  
+|Oblast|Projekt|Editor|Podrobnosti|  
 |----------|-------------|------------|-------------|  
 |Privátní kopie souborů|X||Prostředí podporuje privátní kopie souborů. To znamená že každá osoba zařazen do projektu má jejich vlastní privátní kopírování souborů v tomto projektu.|  
 |Trvalost ANSI nebo Unicode|X|X|Pokud napíšete kód trvalost, zachovat soubory ve formátu ANSI, protože většina zdrojové programy řízení aktuálně nepodporují kódování Unicode.|  

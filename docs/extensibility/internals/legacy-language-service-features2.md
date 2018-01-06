@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c91beed050f665a73622eb929fbafc482a15a78
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 92c33d46f7bc58de1bee0b6c782165a6c7cd8d5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="legacy-language-service-features"></a>Funkce služby starší verze jazyka
 Následující témata obsahují seznam některé funkce služby starší verze jazyka, které můžete zadat.  
@@ -28,22 +29,22 @@ Následující témata obsahují seznam některé funkce služby starší verze 
 >  Doporučujeme vám, že začnete používat co nejdříve editoru nové rozhraní API. Tím zvýšit výkon služby jazyk a umožňují využívat výhod nových funkcí editoru.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Ve službě jazyk starší zvýrazňování syntaxe](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
+ [Barevné zvýrazňování syntaxe ve službě starší verze jazyka](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
  Vysvětluje, jak implementovat barevné zvýrazňování syntaxe.  
   
- [Automatické formátování ve službě jazyk starší verze](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)  
+ [Automatické formátování ve službě starší verze jazyka](../../extensibility/internals/automatic-formatting-in-a-legacy-language-service.md)  
  Vysvětluje, jak implementovat, automatické formátování.  
   
  [Informace o parametrech ve službě jazyk starší verze](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Vysvětluje, jak implementovat popisu tlačítka technologie IntelliSense parametr informace.  
   
- [Dokončování příkazů ve službě jazyk starší verze](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
+ [Dokončování příkazů ve službě starší verze jazyka](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)  
  Vysvětluje, jak implementovat IntelliSense seznam příkazů a dokončení seznam členů.  
   
- [Osnovy a skrytý Text ve službě jazyk starší verze](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
+ [Osnova a skrytý text ve službě starší verze jazyka](../../extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service.md)  
  Vysvětluje, jak implementovat popisující nebo skrytý text.  
   
- [Postupy: podporují rozšířené popisující ve službě jazyk starší verze](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Postupy: Rozšířená podpora osnovy ve službě starší verze jazyka](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Vysvětluje některé kroky v jeho implementaci podpora ladicího programu...  
   
 ## <a name="related-sections"></a>Související oddíly

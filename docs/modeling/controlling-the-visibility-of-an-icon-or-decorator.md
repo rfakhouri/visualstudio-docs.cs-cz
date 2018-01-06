@@ -11,11 +11,12 @@ caps.latest.revision: "2"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: f3dc3efefa4a89d64a64bd946f1f79e6c5a6d4df
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 3a4e1927cd17a5cc86ed58565b53f04aeb6977a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Řízení viditelnosti ikony či dekorátoru
 A *dekoratéra* je ikona nebo řádek textu, který se zobrazí na obrazce v jazyce specifické pro doménu (DSL). Můžete nastavit jsou zobrazeny dekoratéra a zmizí v závislosti na stavu vlastnosti v modelu. Například na obrazec představující osobu, může mít různé ikony, které jsou uvedeny v závislosti na osoby pohlaví, počet podřízených prvků a tak dále.  
@@ -110,4 +111,4 @@ A *dekoratéra* je ikona nebo řádek textu, který se zobrazí na obrazce v jaz
  [Definování konektory a obrazců](../modeling/defining-shapes-and-connectors.md)   
  [Nastavení obrázek na pozadí v diagramu](../modeling/setting-a-background-image-on-a-diagram.md)   
  [Navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Psaní kódu sestavit si jazyka domény](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+ [Zápis kódu pro úpravu jazyka specifického pro doménu](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -6,7 +6,7 @@ ms.reviewer:
 ms.suite: 
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Spy++, thread properties
 - thread properties, Spy++
@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9250db8b405885b5f8e8c76a68d0663c52d82ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0abdebd821051d6821567c8a8ec87329868c6b28
+ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="thread-properties-dialog-box"></a>Dialogové okno vlastností vláken
 Použijte toto dialogové okno pole Najít další informace o konkrétní vlákno. K zobrazení tohoto dialogového okna, přesunout fokus [zobrazení vláken](../debugger/threads-view.md) okno nebo otevřete [zobrazení zpráv](../debugger/messages-view.md) a rozbalte zprávu. Vyberte libovolný uzel přístup z více vláken ve stromové struktuře, a potom vyberte **vlastnosti** z **zobrazení** nabídky.  
@@ -34,7 +35,7 @@ Použijte toto dialogové okno pole Najít další informace o konkrétní vlák
  [Dialogové okno hledání vláken](../debugger/thread-search-dialog-box.md)  
  Použít k vyhledání uzlu pro konkrétní vlákna v zobrazení vláken.  
   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)  
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)  
  Obsahuje části popisující každého nástroje Spy ++ nabídky a dialogové okno pole.  
   
  [Hledání vlákna v zobrazení vláken](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
@@ -43,8 +44,8 @@ Použijte toto dialogové okno pole Najít další informace o konkrétní vlák
  [Zobrazení vláken](../debugger/threads-view.md)  
  Zobrazí stromové zobrazení aktivních podprocesů.  
   
- [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)  
+ [Zobrazení nástroje Spy++](../debugger/spy-increment-views.md)  
  Popisuje zobrazení stromů nástroje Spy ++ systému windows, zprávy, procesy a vláken.  
   
- [Použití nástroje Spy ++](../debugger/using-spy-increment.md)  
+ [Použití nástroje Spy++](../debugger/using-spy-increment.md)  
  Nabízí nástroje Spy ++ a vysvětluje, jak lze použít.

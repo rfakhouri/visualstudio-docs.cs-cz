@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bafb60abd13713ec8f942de62bf6c82aead379a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 31aa1a09739203039ca5af2c6265502ed7ac09a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functions-view---sampling-data"></a>Zobrazení funkcí – Data vzorkování
 Zobrazení sestavy funkce pro metody vzorkování profil obsahuje seznam funkcí, které byly vzorkovat při vytváření profilu spustit.  

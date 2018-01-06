@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59853bf733364f2db8a60e3c9515e2771c8e4ebe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Návod: Zaznamenání grafických informací prostřednictvím kódu
 Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky k prostřednictvím kódu programu zaznamenání grafických informací z aplikace Direct3D.  
@@ -201,4 +202,4 @@ Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] d
 ## <a name="see-also"></a>Viz také  
  [Návod: Zaznamenání grafických informací](walkthrough-capturing-graphics-information.md)   
  [Zaznamenání grafických informací](capturing-graphics-information.md)   
- [Nástroj příkazového řádku zachycení](command-line-capture-tool.md)
+ [Nástroj příkazového řádku pro zachytávání](command-line-capture-tool.md)

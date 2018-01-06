@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4157b6292a292274a24242fddc46fb1f707247e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ae9531eb344cf08599f1c69bcc0842f38f10df1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-data-views"></a>Obecná zobrazení dat
 Tato část obsahuje referenční informace o zobrazení a sestav profileru datových souborů, které jsou společné pro všechny metody profilování.  
@@ -43,7 +44,7 @@ Tato část obsahuje referenční informace o zobrazení a sestav profileru dato
  [Zobrazení řádků](../profiling/lines-view.md)  
  Popisuje zobrazení řádků a sestavy. Datové sloupce závisí na metodě profilování.  
   
- [Zobrazení ukazatele (IP) instrukcí](../profiling/instruction-pointers-ips-view.md)  
+ [Zobrazení ukazatelů na instrukce](../profiling/instruction-pointers-ips-view.md)  
  Popisuje ukazatel instrukce (IP) – zobrazení a sestavy. Datové sloupce závisí na metodě profilování.  
   
  [Zobrazení procesů](../profiling/process-view.md)  

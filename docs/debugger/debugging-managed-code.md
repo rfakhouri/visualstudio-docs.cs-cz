@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 42018230262e17bc99905833da1b15e30a7d62aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: fc083adc600b7de2538abf1ada468f3d626b7ba6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-managed-code"></a>Ladění spravovaného kódu
 Tato část popisuje běžné problémy ladění a techniky pro spravované aplikace nebo aplikace napsané v jazyce cílených modul common language runtime, jako je například jazyka Visual Basic, C# a C++. Technik popsaných v tomto poli se vysoké úrovně techniky. Další informace najdete v tématu [používání ladicího programu](../debugger/debugger-basics.md).  
@@ -49,7 +50,7 @@ Tato část popisuje běžné problémy ladění a techniky pro spravované apli
  [Ladění ve smíšeném režimu](../debugger/debugging-mixed-mode-applications.md)  
  Popisuje, ladění aplikací ve smíšeném režimu. To znamená jakékoli aplikace, která kombinuje nativního kódu se spravovaným kódem.  
   
- [Chyba: Ladění není možné, protože v systému je povolen ladicí program jádra](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
+ [Chyba: Ladění není možné, protože v systému je povolen ladicí program protokolu Kernel.](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  
  Popisuje, k níž dojde, pokud se pokusíte ladění spravovaného kódu na chybovou zprávu [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)], nebo systém Windows NT, která byla spuštěna v režimu ladění.  
   
  [Optimalizace a ladění JIT](../debugger/jit-optimization-and-debugging.md)  

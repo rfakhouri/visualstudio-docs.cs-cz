@@ -11,11 +11,12 @@ caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5813788834a7a5a99c10fe6dafc35a300bac007
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-service-and-catalog"></a>Bitové kopie služby a katalog
 Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí Visual Studio Service bitovou kopii a bitovou kopii katalogu byla zavedená v sadě Visual Studio 2015.  
@@ -133,7 +134,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí Visual Studi
 |Systém|Složky Windows\System32|  
 |WinDir|Hodnota proměnné prostředí % WinDir %|  
   
- **Bitové kopie**  
+ **Obrázek**  
   
  \<Image > element definuje obrázek, který může odkazovat přezdívka. Identifikátor GUID a ID, které dohromady tvoří Přezdívka bitové kopie. Přezdívka pro bitovou kopii musí být jedinečný v rámci celého obrázku knihovny. Pokud má více než jeden obrázek dané přezdívka, první z nich došlo při vytváření knihovny je ten, který je zachován.  
   

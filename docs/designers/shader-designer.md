@@ -15,11 +15,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb3a7122f561f2c1beaa5674be2220a565586aa4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shaderu návrháři k vytváření, úpravě a exportovat vlastní vizuálních efektů, které jsou známé jako *shadery*.  
@@ -79,9 +80,9 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
 |**Náhled s kuželem**|Když je povolené, model kužele slouží k zobrazení náhledu shaderu. Lze povolit pouze jeden preview tvar najednou.|  
 |**Náhled s teapot**|Když je povolené, model teapot slouží k zobrazení náhledu shaderu. Lze povolit pouze jeden preview tvar najednou.|  
 |**Náhled s roviny**|Když je povolené, model rovinou slouží k zobrazení náhledu shaderu. Lze povolit pouze jeden preview tvar najednou.|  
-|**Sada nástrojů**|Případně zobrazí nebo skryje **sada nástrojů**.|  
+|**Panel nástrojů**|Případně zobrazí nebo skryje **sada nástrojů**.|  
 |**Vlastnosti**|Můžete také zobrazí nebo skryje **vlastnosti** okno.|  
-|**Upřesnit**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Export**: umožňuje exportovat shaderu v různých formátech.<br /><br /> **Exportovat jako**: Exportuje shaderu buď HLSL zdrojový kód nebo jako kompilované shaderu. Další informace o tom, jak exportovat shadery najdete v tématu [postupy: Export shaderu](../designers/how-to-export-a-shader.md).<br /><br /> **Grafika moduly**: umožňuje výběr zobrazovací jednotky, která se používá k zobrazení na návrhovou plochu.<br /><br /> **Vykreslení s D3D11**: 11 Direct3D – používá k vykreslení návrhovou plochu návrháře shaderu.<br /><br /> **Vykreslení s D3D11WARP**: používá Direct3D – 11 Windows Advanced Rasterizační platformy (Osnova) k vykreslení návrhovou plochu návrháře shaderu.<br /><br /> **Zobrazení**: umožňuje výběr další informace o návrháři shaderu.<br /><br /> **Míra s rámečkem**: když je povolené, zobrazí aktuální obnovovací frekvence v pravém horním rohu na návrhovou plochu. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu.  Tato možnost je užitečná, když povolíte **režimu vykreslování v reálném čase** možnost.|  
+|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Export**: umožňuje exportovat shaderu v různých formátech.<br /><br /> **Exportovat jako**: Exportuje shaderu buď HLSL zdrojový kód nebo jako kompilované shaderu. Další informace o tom, jak exportovat shadery najdete v tématu [postupy: Export shaderu](../designers/how-to-export-a-shader.md).<br /><br /> **Grafika moduly**: umožňuje výběr zobrazovací jednotky, která se používá k zobrazení na návrhovou plochu.<br /><br /> **Vykreslení s D3D11**: 11 Direct3D – používá k vykreslení návrhovou plochu návrháře shaderu.<br /><br /> **Vykreslení s D3D11WARP**: používá Direct3D – 11 Windows Advanced Rasterizační platformy (Osnova) k vykreslení návrhovou plochu návrháře shaderu.<br /><br /> **Zobrazení**: umožňuje výběr další informace o návrháři shaderu.<br /><br /> **Míra s rámečkem**: když je povolené, zobrazí aktuální obnovovací frekvence v pravém horním rohu na návrhovou plochu. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu.  Tato možnost je užitečná, když povolíte **režimu vykreslování v reálném čase** možnost.|  
   
 > [!TIP]
 >  Můžete **Upřesnit** tlačítko poslední příkaz spusťte znovu.  
@@ -187,4 +188,4 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
 |-----------|-----------------|  
 |[Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md)|Obsahuje přehled [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje, které můžete použít pro práci s textury a bitové kopie, 3D modely a shaderu účinky.|  
 |[Editor obrázků](../designers/image-editor.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Editor obrázků pro práci s textury a bitové kopie.|  
-|[Editor modelu](../designers/model-editor.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelu Editor pro práci s 3D modely.|
+|[Editor modelů](../designers/model-editor.md)|Popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelu Editor pro práci s 3D modely.|

@@ -31,11 +31,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7fa4e3b548f5839b16a6bdeaf4a7d8ba6d00beb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 738c7988dbd5ee4757b231904be08dcf295ba5b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="word-solutions"></a>Řešení pro Word
   Visual Studio poskytuje šablony projektů, které můžete použít k vytvoření přizpůsobení na úrovni dokumentu a doplňků VSTO pro aplikaci Microsoft Office Word. Tato řešení můžete použít k automatizaci aplikace Word, rozšířit funkce aplikace Word a přizpůsobení uživatelského rozhraní (UI) aplikace Word. Další informace o rozdílech mezi úpravy na úrovni dokumentu a doplňků VSTO najdete v tématu [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
@@ -93,7 +94,7 @@ ms.lasthandoff: 10/31/2017
 |Úloha|Další informace|  
 |----------|--------------------------|  
 |Přizpůsobení pásu karet.|[Přehled pásu karet](../vsto/ribbon-overview.md)|  
-|Přidání ovládacích prvků Windows Forms nebo rozšířené ovládací prvky aplikace Word na vlastní dokument (pro přizpůsobení na úrovni dokumentu) nebo otevřete dokumentu (pro modul Add-in VSTO).|[Postupy: Přidání ovládacích prvků do dokumentů Office Windows Forms](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
+|Přidání ovládacích prvků Windows Forms nebo rozšířené ovládací prvky aplikace Word na vlastní dokument (pro přizpůsobení na úrovni dokumentu) nebo otevřete dokumentu (pro modul Add-in VSTO).|[Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|  
   
 ### <a name="options-for-document-level-customizations"></a>Možnosti pro úpravy na úrovni dokumentů  
  Následující tabulka uvádí možnosti přizpůsobení, které jsou k dispozici pouze pro úpravy na úrovni dokumentů.  
@@ -108,18 +109,18 @@ ms.lasthandoff: 10/31/2017
   
 |Úloha|Další informace|  
 |----------|--------------------------|  
-|Vytvoření vlastního podokna úloh.|[Vlastní podokna úloh](../vsto/custom-task-panes.md)|  
+|Vytvoření vlastního podokna úloh.|[Vlastní podokona úloh](../vsto/custom-task-panes.md)|  
   
 ### <a name="related-topics"></a>Související témata  
   
 |Název|Popis|  
 |-----------|-----------------|  
 |[Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)|Poskytuje přehled hlavních typů poskytované model objektů aplikace Word.|  
-|[Automatizace v aplikaci Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)|Poskytuje informace o rozšířených objektů (poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), můžete použít v řešeních pro aplikaci Word.|  
-|[Windows Forms – ovládací prvky na přehled dokumenty sady Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Popisuje, jak můžete přidat ovládací prvky Windows Forms do dokumentů aplikace Word.|  
+|[Automatizace v aplikaci Word s použitím rozšířených objektů](../vsto/automating-word-by-using-extended-objects.md)|Poskytuje informace o rozšířených objektů (poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]), můžete použít v řešeních pro aplikaci Word.|  
+|[Přehled ovládacích prvků modelu Windows Forms v dokumentech Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Popisuje, jak můžete přidat ovládací prvky Windows Forms do dokumentů aplikace Word.|  
 |[Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Ukazuje, jak vytvořit základní přizpůsobení na úrovni dokumentu ve Wordu.|  
-|[Návod: Vytvoření vašeho prvního doplňku VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Ukazuje, jak vytvořit základní Add-in VSTO ve Wordu.|  
-|[Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Ukazuje, jak přidat Windows Forms tlačítko a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu za běhu pomocí doplňku VSTO.|  
+|[Návody: Vytvoření prvního doplňku VSTO pro Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Ukazuje, jak vytvořit základní Add-in VSTO ve Wordu.|  
+|[Návod: Přidání ovládacích prvků do dokumentu za běhu v doplňku VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Ukazuje, jak přidat Windows Forms tlačítko a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> do dokumentu za běhu pomocí doplňku VSTO.|  
 |[Wordu 2010 v vývoj pro Office](http://go.microsoft.com/fwlink/?LinkId=199020)|Obsahuje odkazy na články a referenční dokumentaci o vývoj řešení pro aplikaci Word (nejsou specifické pro vývoj pro Office pomocí sady Visual Studio).|  
   
   

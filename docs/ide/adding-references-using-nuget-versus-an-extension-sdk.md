@@ -11,17 +11,18 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Přidání odkazů pomocí nástroje NuGet a sady Extension SDK
 
 Balíček můžete poskytnout pro používání v rámci projektů sady Visual Studio pomocí buď rozšíření NuGet pro Visual Studio, nebo software development kit (SDK). Prostřednictvím popisu podobnosti a rozdíly mezi dvěma mechanismy, v tomto tématu vám pomohou vybrat tu nejlepší pro úlohu.
 
-- NuGet je systém správy balíčků open source, který slouží ke zjednodušení procesu začlenění knihoven do projektu řešení. Další informace najdete v tématu [NuGet dokumentaci](http://docs.microsoft.com/nuget).
+- NuGet je systém správy balíčků open source, který slouží ke zjednodušení procesu začlenění knihoven do projektu řešení. Další informace najdete v tématu [NuGet dokumentaci](/nuget).
 
 - Sada SDK je kolekce souborů, které sada Visual Studio zpracuje jako položka jeden odkaz. **Správce odkazů** dialogové okno obsahuje seznam všech sad SDK, které jsou relevantní pro projekt, který je otevřený, když zobrazíte toto okno zobrazené. Když přidáte sady SDK do projektu, je veškerý obsah sady SDK, že přístup pomocí IntelliSense, **sada nástrojů**, návrháře, **Prohlížeč objektů**, MSBuild, nasazení, ladění a zabalení. Další informace o sadách SDK, najdete v tématu [vytváření Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 

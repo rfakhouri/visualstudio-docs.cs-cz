@@ -19,11 +19,12 @@ caps.latest.revision: "21"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 5474a2101a96576d7043c10cc3fd35fad3756653
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d22180b0e48a875eaef3ab9e3b8ceac35b1fa6ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce
 Většina aplikací spotřebovávají nebo tvoří data. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]poskytuje celou řadu možností pro čtení a zápis dat, místně i vzdáleně.  
@@ -111,4 +112,4 @@ Většina aplikací spotřebovávají nebo tvoří data. [!INCLUDE[ndptecclick](
  Ve většině případů, nebudete mít pro přístup k databázi přímo, ale bude přistupovat místo prostřednictvím serveru webové aplikace napsané v [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nebo webové služby XML. Přístup k databázi tímto způsobem je často nejlepší metody Pokud vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení aplikace z webového serveru. Server v částečné důvěryhodnosti můžete přistupovat bez zvyšování oprávnění aplikace.  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: zahrnutí datového souboru v aplikaci ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+ [Postupy: Zahrnutí datového souboru do aplikace ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

@@ -13,22 +13,23 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 33f31ec1d5adedb2fac6c2a37c050ee65d774894
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 899d2758be1561d9b5fbda3280230333cc0ac8a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-type-essentials"></a>Essentials typ projektu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obsahuje několik typů projekt pro jazyky, jako například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] nebo [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Umožňuje taky vytvořit vlastní typy projektů.  
   
  Pokud chcete přidat vlastní příkazy, editory nebo nástroj windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], můžete to provést bez vytvoření nového projektu typu. Další informace naleznete v následujících tématech:  
   
--   [Příkazy, nabídek a panelů nástrojů](../../extensibility/internals/commands-menus-and-toolbars.md)  
+-   [Příkazy, nabídky a panely nástrojů](../../extensibility/internals/commands-menus-and-toolbars.md)  
   
--   [Editor a rozšíření služeb jazyk](../../extensibility/editor-and-language-service-extensions.md)  
+-   [Editor a rozšíření služeb jazyka](../../extensibility/editor-and-language-service-extensions.md)  
   
--   [Rozšíření a přizpůsobení okna nástrojů](../../extensibility/extending-and-customizing-tool-windows.md)  
+-   [Rozšíření a přizpůsobení panelů nástrojů](../../extensibility/extending-and-customizing-tool-windows.md)  
   
  Podobně pokud chcete přizpůsobit chování zadaných [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typy projektů, můžete provést tak pomocí podtypů projektu. Další informace najdete v tématu [projektu podtypů](../../extensibility/internals/project-subtypes.md).  
   
@@ -67,4 +68,4 @@ ms.lasthandoff: 10/31/2017
 -   Typy projektů může podporovat víc konfigurací, jako je ladění a vydání. Uživatelé mohou změnit různé konfigurace projektu pomocí stránky vlastností, které zadáte. Další informace najdete v tématu [Správa možnosti konfigurace](../../extensibility/internals/managing-configuration-options.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Nasazení typy projektů](../../extensibility/internals/deploying-project-types.md)
+ [Nasazování typů projektů](../../extensibility/internals/deploying-project-types.md)

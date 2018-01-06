@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7cfa9fc89ad2d4776a7aa0b5071db6bd5daddd9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f71cca51a27c8ed9d6467d99425d4d3b721d195
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Dialogové okno Snadné spuštění, Prostředí, Možnosti
 Můžete použít **Snadné spuštění** k rychlému vyhledání a provádět akce u prostředků IDE jako možnosti, šablony, nabídky. Nemůžete použít **Snadné spuštění** vyhledávání kódu a symboly. **Snadné spuštění** vyhledávacího pole je umístěna v pravém horním rohu panelu nabídek a je přístupný výběrem kombinace kláves Ctrl + Q klíče. Do pole zadejte hledaný řetězec. K vyhledání řetězce, které obsahují @, použijte ' @@'.  
@@ -51,4 +52,4 @@ Můžete použít **Snadné spuštění** k rychlému vyhledání a provádět a
   
 ## <a name="see-also"></a>Viz také  
  [Obecné elementy uživatelského rozhraní (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)   
- [Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)
+ [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)

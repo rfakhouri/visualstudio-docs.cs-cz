@@ -23,11 +23,12 @@ caps.latest.revision: "38"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e78fb90532cf75ca2e0f2a9dc6b6aa9759c75e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 8aef9cc040e6a1bc2449e8b0c5b7de91083b98e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Uchování dynamických ovládacích prvků v dokumentech systému Office
   Ovládací prvky, které jsou přidány za běhu nejsou trvalé, když je uložit a zavřít tento dokument nebo sešitu. Přesné chování se liší pro hostitele a ovládacích prvků Windows Forms. V obou případech můžete přidat kód pro vaše řešení se znovu vytvořit ovládacích prvků, když uživatel znovu otevře dokument.  

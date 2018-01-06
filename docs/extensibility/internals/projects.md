@@ -18,11 +18,12 @@ caps.latest.revision: "43"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c175d85b55734df841f30d131639c3bfeed40361
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ff9f1a9d22511fe6a4c388d6d84ec1992a185ec5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projects"></a>Projekty
 V sadě Visual Studio, projekty jsou kontejnery, které vývojáři použít k uspořádání soubory zdrojového kódu a další prostředky, které se zobrazují v **Průzkumníku řešení**. Projekty jsou obvykle soubory (například souboru .csproj projektů C#), které obsahují odkazy na soubory zdrojového kódu a prostředkům, jako jsou soubory rastrového obrázku. Projekty umožňují uspořádat, sestavení, ladění a nasazení zdrojového kódu, odkazuje na webové služby a databáze a dalším prostředkům. VSPackages systém projektu sady Visual Studio můžete rozšířit třemi hlavními způsoby: *typy projektů*, *projektu podtypů*, a *vlastních nástrojů*.  
@@ -31,7 +32,7 @@ V sadě Visual Studio, projekty jsou kontejnery, které vývojáři použít k u
  [Typy projektů](../../extensibility/internals/project-types.md)  
  *Typy projektů* přidat podporu pro nové typy projektů, jako je například programovacích jazyků. Například jednotlivé jazyky, Visual Studio podporuje má svůj vlastní typ projektu a ukázka integrace IronPython zahrnuje typ projektu pro jazyk IronPython. Musíte vytvořit typu projektu pro jiné jazyky než C# nebo Visual Basic pro přizpůsobení, jak se položky vytvořené, ladit, nasazení a zobrazují v **Průzkumníku řešení**. Další informace najdete v tématu [typy projektů](../../extensibility/internals/project-types.md).  
   
- [Projekt podtypů](../../extensibility/internals/project-subtypes.md)  
+ [Podtypy projektů](../../extensibility/internals/project-subtypes.md)  
  *Projekt podtypů* jsou založená na typy projektů a umožňuje přizpůsobit projekty jsou vytvořené, ladit a nasadit. Visual Studio použije podtypů projektu s projekty Smart Device Project; nasazení se přizpůsobit tak, že zkopírujete program nově vytvořené z vývojovém počítači cílového zařízení. C# a typy projektů jazyka Visual Basic lze použít jako základ pro projekt podtypů; Typy projektů C++ nelze. Vlastní typy projektů můžete také použít jako základ u podtypů projektu. Další informace najdete v tématu [projektu podtypů](../../extensibility/internals/project-subtypes.md).  
   
  [Webové projekty](../../extensibility/internals/web-projects.md)  
@@ -44,5 +45,5 @@ V sadě Visual Studio, projekty jsou kontejnery, které vývojáři použít k u
  Obsahuje ukázky v VSSDK, které pracují s projekty a řešení.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [V sadě Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)  
+ [Práce se sadou Visual Studio SDK](../../extensibility/internals/inside-the-visual-studio-sdk.md)  
  Popisují různé aspekty rozšíření sady Visual Studio.

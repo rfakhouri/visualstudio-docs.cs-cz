@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5937d37cfed89ee7f10779f764b8d78d370eb362
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b92a622b6b898c917710ac748b9205079d71ea5e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-class---internal-members"></a>Task – třída – vnitřní členy
 Toto téma popisuje vnitřní členy <xref:System.Threading.Tasks.Task?displayProperty=fullName> třídu, která vám pomůže implementovat vlastní ladicí program. Obecné informace o této třídy, najdete v článku <xref:System.Threading.Tasks.Task> referenční téma.  
@@ -84,4 +85,4 @@ Toto téma popisuje vnitřní členy <xref:System.Threading.Tasks.Task?displayPr
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
- [Interní informace o paralelní rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Interní informace o paralelním rozšíření pro rozhraní .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

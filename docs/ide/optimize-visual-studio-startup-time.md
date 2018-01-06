@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.performancecenter
 ms.technology: vs-ide-general
-ms.openlocfilehash: 78a2a4dc41b4c6b3154951f6f48b95b3894fc92e
-ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
+ms.workload: multiple
+ms.openlocfilehash: 44e620ed0092f9761b3a6c72e306898fe6ea06af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimalizace výkonu v sadě Visual Studio
 Visual Studio slouží ke spuštění jako rychle a efektivně míře. Však určitá rozšíření Visual Studia a nástroje systému windows může nepříznivě ovlivnit čas spuštění, když jsou načteny. Můžete řídit chování pomalé rozšíření a nástroje systému windows v **Správa výkonu Visual Studio** dialogové okno. Další Obecné tipy pro zlepšení výkonu, najdete v části [Rady a tipy pro zvýšení výkonu Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).  

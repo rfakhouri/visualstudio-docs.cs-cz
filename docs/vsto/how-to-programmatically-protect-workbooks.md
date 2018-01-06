@@ -22,11 +22,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7dcbedb2c30758c762af0c301c239dd03fe4b10f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 5c383c95d37894aaa49a4a42d2b9a17b9a193f41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Postupy: Zamykání sešitů prostřednictvím kódu programu
   Sešitu aplikace Microsoft Office Excel můžete chránit tak, aby uživatelé nelze přidat nebo odstraňování listů a také prostřednictvím kódu programu ochranu sešitu. Volitelně můžete zadat heslo, uvádí, zda má strukturu chráněné (takže uživatele nelze přesunout listy) a uveďte, zda má windows sešit chráněný.  
@@ -73,6 +74,6 @@ ms.lasthandoff: 10/31/2017
  [Práce se sešity](../vsto/working-with-workbooks.md)   
  [Postupy: zamykání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-protect-worksheets.md)   
  [Postupy: skrývání listů prostřednictvím kódu programu](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
+ [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 870469b77eb2f9fcf562602dd651c84fa71020ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 24cc20166bad875dcaebbd5492a7fe8317539d47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluating-expressions"></a>Vyhodnocení výrazů
 Výrazy se vytvářejí z řetězců, které jsou předávány z automobily, sledování, QuickWatch nebo okamžitou windows. Při vyhodnocování výrazu generuje tisknutelná řetězec, který obsahuje název a typ proměnné nebo argument a jeho hodnotu. Tento řetězec se zobrazí v okně odpovídající IDE.  
@@ -37,4 +38,4 @@ Výrazy se vytvářejí z řetězců, které jsou předávány z automobily, sle
 ## <a name="see-also"></a>Viz také  
  [Rámce zásobníku](../../extensibility/debugger/stack-frames.md)   
  [Kontext vyhodnocení výrazu](../../extensibility/debugger/expression-evaluation-context.md)   
- [Ladění úlohy](../../extensibility/debugger/debugging-tasks.md)
+ [Úlohy ladění](../../extensibility/debugger/debugging-tasks.md)

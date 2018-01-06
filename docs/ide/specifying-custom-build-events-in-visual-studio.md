@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e17e8ada438ab8b7223bd9fcaca326c91e69f901
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8288ce8d049f949120c5631366dbaac2efc792b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Specifikace vlastních událostí sestavení v sadě Visual Studio
 Určení událostí sestavení vlastní, můžete automaticky spouštět příkazy před zahájením sestavení nebo po jejím dokončení. Můžete například spustit soubor .bat před sestavení spustí nebo zkopírujte nové soubory do složky, po dokončení sestavení. Události sestavení spustit pouze v případě, že sestavení úspěšně dosáhne těchto bodů v procesu sestavení.  
@@ -58,4 +59,4 @@ Určení událostí sestavení vlastní, můžete automaticky spouštět příka
  [Kompilaci a sestavování](../ide/compiling-and-building-in-visual-studio.md)   
  [Dialogové okno Příkazový řádek události/po sestavení události před sestavením](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
  [Speciální znaky nástroje MSBuild](../msbuild/msbuild-special-characters.md)   
- [Návod: Vytvoření aplikace](../ide/walkthrough-building-an-application.md)
+ [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md)

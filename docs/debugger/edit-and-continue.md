@@ -23,11 +23,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7375a9be72f6f65ab07e543c481b3075d8b5d8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f23156d7684fa2878eb09c3fec6a32e2938c13a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Kód upravit a pokračovat ladění v sadě Visual Studio (C#, VB, C++)
 Upravit a pokračovat, je funkce ušetřit čas, která umožňuje provádět změny vašeho zdrojového kódu při aplikace je v režimu pozastavení. Když můžete pokračovat v provádění programu pomocí příkazu jako **pokračovat** nebo **krok**, upravit a pokračovat automaticky tyto změny kódu s omezeními. To vám umožňuje provést změny kódu během relace ladění, místo nutnosti zastavit, znovu zkompiluje celý váš program a restartujte relaci ladění.  
@@ -38,7 +39,7 @@ Upravit a pokračovat, je funkce ušetřit čas, která umožňuje provádět zm
   
  [Postupy: zastavení změn kódu](../debugger/how-to-stop-code-changes.md)   
   
- [Upravit a pokračovat (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
+ [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-cpp.md)  
   
  [Upravit a pokračovat (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)  
   

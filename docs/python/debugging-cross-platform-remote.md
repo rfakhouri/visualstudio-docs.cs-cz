@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 4879b862d1e5f54c1a88e62d41df760ca0f27ad5
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 1f682cd15f96cf4ea5c12e52d3471580129279f6
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Vzdálené ladění kódu jazyka Python v systému Linux
 
@@ -35,9 +36,9 @@ Následující položky jsou potřeba provést tento postup:
 - Vzdálený počítač se systémem Python v operačním systému jako Mac OSX nebo Linux.
 - Port 5678 (příchozí) otevřen v bráně firewall na tento počítač, který je výchozí pro vzdálené ladění.
 
-Můžete snadno vytvořit [virtuální počítače s Linuxem v Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) a [přístup pomocí vzdálené plochy](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) ze systému Windows. Je vhodné Ubuntu pro virtuální počítač, protože Python je nainstalována ve výchozím nastavení; jinak, najdete v seznamu na [nainstalovat překladač Pythonu zvoleného](python-environments.md#selecting-and-installing-python-interpreters) pro další Python umístění pro stahování.
+Můžete snadno vytvořit [virtuální počítače s Linuxem v Azure](/azure/virtual-machines/linux/creation-choices) a [přístup pomocí vzdálené plochy](/azure/virtual-machines/linux/use-remote-desktop) ze systému Windows. Je vhodné Ubuntu pro virtuální počítač, protože Python je nainstalována ve výchozím nastavení; jinak, najdete v seznamu na [nainstalovat překladač Pythonu zvoleného](python-environments.md#selecting-and-installing-python-interpreters) pro další Python umístění pro stahování.
 
-Podrobné informace o vytváření pravidla brány firewall pro virtuální počítač Azure, najdete v části [otevřít porty pro virtuální počítač v Azure pomocí webu Azure portal](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
+Podrobné informace o vytváření pravidla brány firewall pro virtuální počítač Azure, najdete v části [otevřít porty pro virtuální počítač v Azure pomocí webu Azure portal](/azure/virtual-machines/windows/nsg-quickstart-portal).
 
 ## <a name="preparing-the-script-for-debugging"></a>Příprava ladění skriptu
 
@@ -131,14 +132,13 @@ V následujícím postupu jsme zarážku jednoduché zastavit vzdálený proces.
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-
 ## <a name="securing-the-debugger-connection-with-ssl"></a>Zabezpečení ladicího programu připojení pomocí protokolu SSL
 
 Ve výchozím nastavení zabezpečené připojení k serveru vzdáleného ladění ptvsd pouze tajný klíč a všechna data předávána ve formátu prostého textu. Pro lepší zabezpečení připojení podporuje ptvsd SSL, které můžete nastavit takto:
 
 1. Na vzdáleném počítači generovat samostatný certifikát podepsaný svým držitelem a pomocí openssl soubory klíčů:
-    
-    ```bash
+
+    ```command
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
@@ -151,8 +151,8 @@ Ve výchozím nastavení zabezpečené připojení k serveru vzdáleného laděn
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
-    
-    Můžete provést také stejné změny v souboru kódu na místním počítači, ale ve skutečnosti není spustit tento kód, proto není nezbytně nutné.    
+
+    Můžete provést také stejné změny v souboru kódu na místním počítači, ale ve skutečnosti není spustit tento kód, proto není nezbytně nutné.
 
 1. Restartujte program Python na vzdáleném počítači, což připravené pro ladění.
 

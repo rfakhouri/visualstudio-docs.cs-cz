@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 0eb248f04119f8f0ad70b9a09a4fb22c73399233
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: aspnet
+ms.openlocfilehash: 36905d8716b2f6a0fd961f668b7b5ca7c3ef623d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Postupy: ladění pracovních založený na technologii ASP.NET (zastaralé)
 Toto téma popisuje postup ladění [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]– na základě [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacích, které cílí buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] v starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)].  
@@ -56,4 +57,4 @@ Toto téma popisuje postup ladění [!INCLUDE[vstecasp](../code-quality/includes
 ## <a name="see-also"></a>Viz také  
  [Vyvolání ladicího programu sady Visual Studio pro Windows Workflow Foundation (zastaralé)](../workflow-designer/invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy.md)   
  [Postupy: Nastavte zarážky v pracovních postupech (zastaralé)](../workflow-designer/how-to-set-breakpoints-in-workflows-legacy.md)   
- [Ladění pracovních starší verze](../workflow-designer/debugging-legacy-workflows.md)
+ [Ladění starších verzí pracovních postupů](../workflow-designer/debugging-legacy-workflows.md)

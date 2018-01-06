@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c198065c72f1e6eaa0722de562abe6079f88aa1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 7589c9a2aedf987af79689e8babccb554fbb4ccc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-tools"></a>Vlastní nástroje
 *Vlastní nástroje* vám umožní přidružit nástroj položku v projektu a spusťte tento nástroj vždy, když se soubor uložit. Některé vlastních nástrojů, někdy označovány jako *jedním souborem generátory*, se často používají k implementaci překladatele, které generují kód z dat a naopak. Můžete například vytvořit jeden soubor generátory [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] zdrojový kód soubory .settings a resx. Vygenerovaný zdrojový kód poskytuje silného typu přístup k datům v souborech .settings a resx. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] a [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] typy projektů podporu vlastních nástrojů; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] typy projektů nepodporují. Vlastní typy projektů může také podporovat vlastních nástrojů.  
@@ -30,16 +31,16 @@ ms.lasthandoff: 10/31/2017
  Vlastní nástroje jsou přidružené `ProjectItem` rozhraní objektu a jsou podobné návrháři a editory. Vlastní nástroj trvá soubor reprezentována `ProjectItem` jako vstup a zapíše nový soubor od jejichž název souboru `DefaultExtension` metoda.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Implementace generátory jedním souborem](../../extensibility/internals/implementing-single-file-generators.md)  
+ [Implementace generátorů tvořených jedním souborem](../../extensibility/internals/implementing-single-file-generators.md)  
  Popisuje postup použití <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> rozhraní k implementaci vlastního nástroje.  
   
- [Registrace generátory jeden soubor](../../extensibility/internals/registering-single-file-generators.md)  
+ [Registrace generátorů tvořených jedním souborem](../../extensibility/internals/registering-single-file-generators.md)  
  Obsahuje popis pro všechny položky registru pro vlastní nástroj.  
   
- [Vystavení typy vizuální nástroje](../../extensibility/internals/exposing-types-to-visual-designers.md)  
+ [Zveřejnění typů pro vizuální návrháře](../../extensibility/internals/exposing-types-to-visual-designers.md)  
  Vysvětluje, jak projektu systémů poskytuje podporu pro vizuální nástroje přístupové generované třídy a typů prostřednictvím dočasné přenosné spustitelné soubory (PE).  
   
- [Uložením vlastnosti položky projektu](../../extensibility/persisting-the-property-of-a-project-item.md)  
+ [Trvalé uložení vlastnosti položky projektu](../../extensibility/persisting-the-property-of-a-project-item.md)  
  Ukazuje, jak se zachovat vlastnosti položky projektu, například autora zdrojový soubor, v souboru projektu.  
   
 ## <a name="reference"></a>Odkaz  

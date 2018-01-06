@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f9e1bbce7fd1727bc629f015894c16b1d56a2150
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: ffe029ecf5839f03732a1e5162dd22da4fe0a18e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-area-5-change-source-control"></a>Test oblasti 5: Změna zdrojového kódu
 Tato oblast modulu plug-in testovací zdrojového kódu zahrnuje změnu zdrojového kódu pomocí **změnu zdrojového kódu** příkaz.  
@@ -76,4 +77,4 @@ Tato oblast modulu plug-in testovací zdrojového kódu zahrnuje změnu zdrojov�
 |Rebind řešení nebo projektu pouze ve stejném adresáři|1.  Vytvořte projekt.<br />2.  Přidat pouze projekt pomocí ovládacího prvku zdroje (**soubor**, **správy zdrojového kódu**, **přidat vybrané projekty do správy zdrojového kódu**.<br />3.  Zavřete řešení.<br />4.  Vytvořte nové řešení s alespoň dva projekty.<br />5.  Přidáte řešení do správy zdrojového kódu.<br />6.  Přidáte projekt vytvořili v kroku 1 od správy zdrojového kódu.<br />7.  Pokud se zobrazí výzva, přijměte checkout řešení.<br />8.  Zkontrolujte v celé řešení.<br />9. Otevřete **změnu zdrojového kódu** dialogové okno.<br />10. Vyberte projektu přidané (z kroku 6) a klikněte na **vyjmout z pořadače**.<br />11. Klikněte na tlačítko **OK** zavřete dialogové okno.<br />12. Rezervaci přijměte, pokud se zobrazí výzva.<br />13. Znovu otevřete **změnu zdrojového kódu** dialogové okno.<br />14. Vyberte projektu přidané (z kroku 6) a klikněte na **vazby**.<br />15. Vyberte na původní umístění.|Řešení a projekty zůstat řízené.|  
   
 ## <a name="see-also"></a>Viz také  
- [Příručka pro testovací modulů plug-in programu zdroj ovládacího prvku](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
+ [Testovací příručka pro moduly plug-in správy zdrojového kódu](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

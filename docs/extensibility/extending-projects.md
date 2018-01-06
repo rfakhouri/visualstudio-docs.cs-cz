@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051043583b4be3ce795fab544156c7a1f94d88c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 5e22bbdbbf297fd6eb4580bd53d55c96f2faac17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-projects"></a>Rozšíření projektů
 Projekty a řešení způsoby sadě Visual Studio uspořádává soubory kódu a prostředků do jednotky kompilace a nasazení. Můžete najít další informace o projekty v [projekty (Visual Studio SDK)](../extensibility/extending-projects.md).  
@@ -29,28 +30,28 @@ Projekty a řešení způsoby sadě Visual Studio uspořádává soubory kódu a
  Témata v této části popisují, jak k vytváření vlastních projektů a jak spravovat různé typy řešení sady Visual Studio.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Vytvoření systému základní projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md)  
+ [Vytvoření systému základního projektu, část 1](../extensibility/creating-a-basic-project-system-part-1.md)  
  Popisuje, jak vytvořit vlastní projekt systému.  
   
- [Vytvoření systému základní projektu, část 2](../extensibility/creating-a-basic-project-system-part-2.md)  
+ [Vytvoření systému základního projektu, část 2](../extensibility/creating-a-basic-project-system-part-2.md)  
  Popisuje, jak vytvořit vlastní projekt systému.  
   
  [Ukládání dat v souborech projektu](../extensibility/saving-data-in-project-files.md)  
  Vysvětluje, jak přidat do projektu (. * proj) soubory.  
   
- [Ověření podtypů projektu v době běhu](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
+ [Ověření podtypů projektu za běhu](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  Vysvětluje, jak ověřit dílčí projektu v době běhu.  
   
- [Přidávání a odebírání stránky vlastností](../extensibility/adding-and-removing-property-pages.md)  
+ [Přidávání a odebírání stránek vlastností](../extensibility/adding-and-removing-property-pages.md)  
  Vysvětluje, jak přizpůsobit stránky vlastností projektu vlastní.  
   
  [Přidání atributu do položky projektu](../extensibility/adding-an-attribute-to-a-project-item.md)  
  Vysvětluje, jak přidat atribut položku vlastních projektů.  
   
- [Uložením vlastnosti položky projektu](../extensibility/persisting-the-property-of-a-project-item.md)  
+ [Trvalé uložení vlastnosti položky projektu](../extensibility/persisting-the-property-of-a-project-item.md)  
  Vysvětluje, jak se zachovat vlastnosti položky vlastních projektů.  
   
- [Správa projektů Universal Windows](../extensibility/managing-universal-windows-projects.md)  
+ [Správa projektů univerzálních aplikací pro Windows](../extensibility/managing-universal-windows-projects.md)  
  Vysvětluje, jak spravovat projekty universal.  
   
 ## <a name="related-sections"></a>Související oddíly

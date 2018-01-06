@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vsl.GenerateFromUsage
 dev_langs: VB
-ms.openlocfilehash: 1524d2899d8c775a20943d2695065bfe36885a25
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0a900b912c1a15c61dc17164571c1284743581c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-class-or-type-in-visual-basic"></a>Generovat třídu nebo typ v jazyce Visual Basic
 **Co:** umožňuje okamžitě generování kódu pro třídu nebo typu. 
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
    Access | Nastavte typ tak, aby měl *výchozí*, *interní* nebo *veřejné* přístup.
    Typ | To je možné nastavit jako *třída* nebo *struktura*.
    Název | To nelze změnit a bude mít název, který jste již zadali.
-   Project | Pokud jsou v řešení pro více projektů, můžete místo třída nebo struktura TTL.
+   Projekt | Pokud jsou v řešení pro více projektů, můžete místo třída nebo struktura TTL.
    Název souboru | Můžete vytvořit nový soubor nebo typu můžete přidat do existujícího souboru.
 
 1. Třída nebo struktura bude automaticky vytvořen s konstruktorem odvodit z jeho využití.
@@ -71,4 +72,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Viz také  
 [Generování kódu (Visual Basic)](../code-generation-vb.md)  
-[Zobrazení náhledu změn](../../ide/preview-changes.md)
+[Náhled změn](../../ide/preview-changes.md)

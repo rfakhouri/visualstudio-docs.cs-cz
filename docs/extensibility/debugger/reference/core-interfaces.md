@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 367917032b836ce6a7d07cf3eba85db14464a957
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 54ecbe034f4fa7054be2725205a013e5899849e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="core-interfaces"></a>Základní rozhraní
 Následující rozhraní jsou základní rozhraní pro rozšíření ladicí program pomocí [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].  
@@ -51,9 +52,9 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicí pro
   
 -   [Vlastnosti](#Properties)  
   
--   [Rámce zásobníku](#StackFrames)  
+-   [Bloky zásobníku](#StackFrames)  
   
--   [Vláken](#Threads)  
+-   [Vlákna](#Threads)  
   
 -   [Typ Vizualizérech](#TypeVisualizers)  
   
@@ -307,4 +308,4 @@ Následující rozhraní jsou základní rozhraní pro rozšíření ladicí pro
   
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace rozhraní API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
- [Vytváření vlastních ladění modulu](../../../extensibility/debugger/creating-a-custom-debug-engine.md)
+ [Vytvoření vlastního ladicího stroje](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -10,11 +10,12 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 83458b769b5551ed07774e244cce65a97477a713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 92c829e2a0ee0e3fb793d0fd6230460f9102973a
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Začínáme s Live jednotkové testování v sadě Visual Studio
 
@@ -55,7 +56,7 @@ Teď, když jste vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 1. V **přidat nový projekt** dialogovém okně, vyberte jazyka C# uzlu, pak vyberte **.NET Standard**. 
 
    > [!NOTE]
-   > Protože naše knihovna cílí na Standard .NET spíše než konkrétní implementace rozhraní .NET, může být volána z žádnou implementaci rozhraní .NET, která podporuje tuto verzi .NET Standard. Další informace najdete v tématu [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Protože naše knihovna cílí na Standard .NET spíše než konkrétní implementace rozhraní .NET, může být volána z žádnou implementaci rozhraní .NET, která podporuje tuto verzi .NET Standard. Další informace najdete v tématu [.NET Standard](/dotnet/standard/net-standard).
 
 1. Vyberte **knihovny tříd (.NET Standard)** šablony v pravém podokně a zadejte `StringLibrary` v **název** textového pole, jak ukazuje následující obrázek:
 
@@ -83,7 +84,7 @@ Teď, když jste vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 1. V **přidat nový projekt** dialogovém okně, vyberte uzel jazyka Visual Basic a pak vyberte **.NET Standard**. 
 
    > [!NOTE]
-   > Protože naše knihovna cílí na Standard .NET spíše než konkrétní implementace rozhraní .NET, může být volána z žádnou implementaci rozhraní .NET, která podporuje tuto verzi .NET Standard. Další informace najdete v tématu [.NET Standard](https://docs.microsoft.com/dotnet/standard/net-standard).
+   > Protože naše knihovna cílí na Standard .NET spíše než konkrétní implementace rozhraní .NET, může být volána z žádnou implementaci rozhraní .NET, která podporuje tuto verzi .NET Standard. Další informace najdete v tématu [.NET Standard](/dotnet/standard/net-standard).
 
 1. Vyberte **knihovny tříd (.NET Standard)** šablony v pravém podokně a zadejte `StringLibrary` v **název** textového pole, jak ukazuje následující obrázek:
 
@@ -103,7 +104,7 @@ Teď, když jste vytvořili řešení, vytvoříte knihovny tříd s názvem `St
      
       - `HasEmbeddedSpaces`Vrátí `true` Pokud řetězec obsahuje znak embedded prázdné; jinak vrátí `false`.
     
-1. Klikněte pravým tlačítkem na projekt StringLibrary v **Průzkumníku řešení** a vyberte **vlastnosti**. V **aplikace** kartě, odstraňte text v **kořenový obor názvů** textového pole, jak ukazuje následující obrázek. Kořenového oboru názvů je definována [příkaz Namespace](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/namespace-statement) ve zdrojovém kódu.
+1. Klikněte pravým tlačítkem na projekt StringLibrary v **Průzkumníku řešení** a vyberte **vlastnosti**. V **aplikace** kartě, odstraňte text v **kořenový obor názvů** textového pole, jak ukazuje následující obrázek. Kořenového oboru názvů je definována [příkaz Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) ve zdrojovém kódu.
 
    ![Dialogové okno vlastností projektu projektu jazyka Visual Basic](./media/lut-start/vb-properties.png)
  
@@ -249,7 +250,7 @@ Pokrytí kódu k rozšíření `StartsWithLower` metoda, postupujte takto:
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
 
-1. Změnit `DirectCallWithNullOrEmpty` metoda přidáním následující kód ihned po volání [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) metoda.
+1. Změnit `DirectCallWithNullOrEmpty` metoda přidáním následující kód ihned po volání [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) metoda.
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#2)]
 
@@ -266,7 +267,7 @@ Pokrytí kódu k rozšíření `StartsWithLower` metoda, postupujte takto:
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
 
-1. Změnit `DirectCallWithNullOrEmpty` metoda přidáním následující kód ihned po volání [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) metoda.
+1. Změnit `DirectCallWithNullOrEmpty` metoda přidáním následující kód ihned po volání [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsFalse` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.isfalse) metoda.
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#2)]
 
@@ -307,7 +308,7 @@ V této části budete zjistit, jak můžete za provozu testování částí ide
     
 1. Vyberte **ladění vybrané** k ladění selhání testu. 
  
-1. Visual Studio provede test v režimu ladění. Naše testovací přiřadí proměnné s názvem každý řetězec v matici `phrase` a předává jej do `HasEmbeddedSpaces` metoda. Spuštění programu pozastaví a vyvolá čas ladicí program první výraz assert `false`. Dialogové okno výjimka, která je výsledkem Neočekávaná hodnota v [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) volání metody, které je znázorněno na následujícím obrázku.  
+1. Visual Studio provede test v režimu ladění. Naše testovací přiřadí proměnné s názvem každý řetězec v matici `phrase` a předává jej do `HasEmbeddedSpaces` metoda. Spuštění programu pozastaví a vyvolá čas ladicí program první výraz assert `false`. Dialogové okno výjimka, která je výsledkem Neočekávaná hodnota v [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) volání metody, které je znázorněno na následujícím obrázku.  
 
    ![Za provozu dialogu výjimka testování jednotky.](media/lut-start/exception-dialog-cs.png) 
  
@@ -340,7 +341,7 @@ V této části budete zjistit, jak můžete za provozu testování částí ide
     
 1. Vyberte **ladění vybrané** k ladění selhání testu. 
  
-1. Visual Studio provede test v režimu ladění. Naše testovací přiřadí proměnné s názvem každý řetězec v matici `phrase` a předává jej do `HasEmbeddedSpaces` metoda. Spuštění programu pozastaví a vyvolá čas ladicí program první výraz assert `false`. Dialogové okno výjimka, která je výsledkem Neočekávaná hodnota v [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) volání metody, které je znázorněno na následujícím obrázku.  
+1. Visual Studio provede test v režimu ladění. Naše testovací přiřadí proměnné s názvem každý řetězec v matici `phrase` a předává jej do `HasEmbeddedSpaces` metoda. Spuštění programu pozastaví a vyvolá čas ladicí program první výraz assert `false`. Dialogové okno výjimka, která je výsledkem Neočekávaná hodnota v [ `Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue` ](/dotnet/api/microsoft.visualstudio.testtools.unittesting.assert.istrue) volání metody, které je znázorněno na následujícím obrázku.  
 
    ![Za provozu dialogu výjimka testování jednotky.](media/lut-start/exception-dialog-vb.png) 
  

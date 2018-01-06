@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 588badc75a604df65949c99fa16f84ad4e9c9175
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c96250c79ea283117254a96875c3a1f03f4cb30b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Otevřete okno dynamické nástroj
 Nástroje systému windows jsou obvykle otevřít pomocí příkazu v nabídce, nebo ekvivalentní klávesové zkratky. V některých případech však může být zapotřebí okno nástroje, které se otevře vždy, když platí konkrétní kontext uživatelského rozhraní a zavře případě kontext uživatelského rozhraní se již nepoužívá. Nástroje systému windows, jako jsou ty se nazývají *dynamické* nebo *automaticky viditelná*.  

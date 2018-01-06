@@ -25,22 +25,23 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fea0a39532b7edbbe5f8419f1d5588b8a5d73471
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10ffa79e5a9ca7d64be9842db80a39f54d192a4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Chyby a řešení potíží se vzdáleným laděním
 Při pokusu o ladění vzdáleně se můžete setkat s následujícími chybami.  
   
 -   [Chyba: Nelze automatické krokování s vnořením serveru](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
--   [Chyba: Sadu Microsoft Visual Studio sledování vzdáleného ladění (MSVSMON. Soubor EXE) nezobrazí, aby byl spuštěn ve vzdáleném počítači.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
+-   [Chyba: Zdá se, že sledování vzdáleného ladění sady Microsoft Visual Studio (MSVSMON.EXE) na vzdáleném počítači neběží.](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   
 -   [Nelze se připojit k Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
--   [Chyba: Vzdálený počítač nezobrazí v dialogovém okně Vzdálená připojení](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
+-   [Chyba: Vzdálený počítač se nezobrazuje v dialogovém okně Vzdálená připojení](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
 ## <a name="see-also"></a>Viz také  
  [Vzdálené ladění](../debugger/remote-debugging.md)

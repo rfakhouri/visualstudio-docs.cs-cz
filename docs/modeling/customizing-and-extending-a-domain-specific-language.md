@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: efdd7f5358ce0ec4afd32ebaa8ff1fd8d117dc47
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 976fbd25965c62e82f9b358f22c8fe3f2b83363e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
 Visual Studio modelování a vizualizace SDK (VMSDK) poskytuje několik úrovní, ve kterém můžete definovat modelování nástroje:  
@@ -65,16 +66,16 @@ Visual Studio modelování a vizualizace SDK (VMSDK) poskytuje několik úrovní
 |Trvalé nástroje – uživatel může dvakrát klikněte na jakýkoli nástroj vytvořit mnoho tvarů nebo konektory za sebou.|V Průzkumníku DSL, vyberte `Editor` uzlu. V okně Vlastnosti nastavte **používá trvalé položek sady nástrojů**.|  
 |Definování příkazy nabídky|V tématu [postupy: úprava příkazu standardní nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |Omezit model s ověřovací pravidla|V tématu [ověření v jazyce specifické pro doménu](../modeling/validation-in-a-domain-specific-language.md)|  
-|Generování kódu, konfigurační soubory nebo dokumenty z DSL.|[Generování kódu z jazyka domény](../modeling/generating-code-from-a-domain-specific-language.md)|  
+|Generování kódu, konfigurační soubory nebo dokumenty z DSL.|[Vytváření kódu z jazyka specifického pro doménu](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Přizpůsobit jak modely ukládají do souboru.|V tématu [přizpůsobení úložiště File a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
 |Modely uložte do databáze nebo jiného média.|Přepsání *YourLanguage*DocData<br /><br /> V tématu [přizpůsobení úložiště File a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
 |Několik DSL, linky integrate tak, aby fungovaly v rámci jedné aplikace.|V tématu [integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
-|Umožňují vaše DSL potřeba rozšířit o třetích stran a řídit rozšíření.|[Rozšíření vaší DSL pomocí rozhraní MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Sdílení třídy mezi DSL, linky pomocí knihovny DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definování zásad uzamčení pro vytvoření segmentů jen pro čtení](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
+|Umožňují vaše DSL potřeba rozšířit o třetích stran a řídit rozšíření.|[Rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Sdílení tříd mezi jazyky specifickými pro doménu (DSL) pomocí knihovny DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definování zásady zamykání pro vytváření segmentů jen pro čtení](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
 ## <a name="see-also"></a>Viz také  
  [Jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md)   
  [Psaní kódu sestavit si jazyka domény](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Modelování SDK pro Visual Studio – specifické pro doménu jazyky](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+ [Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

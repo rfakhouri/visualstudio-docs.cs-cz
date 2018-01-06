@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a88a82896eeb2d8f124fa7abcfa26dc9b5ab2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 763e123fcae809e174238ab2f204bec537dbf868
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>Postupy: Ruční vytváření výkonnostních relací
 Můžete ručně vytvořit relaci výkonu. Není nutné otevřete projekt v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] k tomu. Další informace najdete v tématu [konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md).  

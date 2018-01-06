@@ -22,20 +22,21 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 732a270564c40c4ca20952d86abb8618f9a060f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 0ba481206e24870e0772290beba129d373c30862
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visio-object-model-overview"></a>Přehled modelu objektů aplikace Visio
   K vývoji řešení pro systém Office pro aplikaci Microsoft Office Visio, můžete pracovat s Visio – objektový model. Tento objektový model se skládá z třídy a rozhraní, které jsou uvedeny v primární spolupracující sestavení pro aplikaci Visio a jsou definovány v oboru názvů Microsoft.Office.Interop.Visio.  
   
  Toto téma obsahuje stručný přehled modelu objektů aplikace Visio. Informace o používání Visio – objektový model k provádění úloh v projektech Office najdete v následujících tématech:  
   
--   [Práce s dokumenty aplikace Visio](../vsto/working-with-visio-documents.md)  
+-   [Práce s dokumenty aplikace Visio](../vsto/working-with-visio-documents.md)  
   
--   [Práce s obrazci aplikace Visio](../vsto/working-with-visio-shapes.md)  
+-   [Práce s obrazci aplikace Visio](../vsto/working-with-visio-shapes.md)  
   
 ## <a name="understanding-the-visio-object-model"></a>Vysvětlení modelu objektů aplikace Visio  
  Visio poskytuje mnoho objektů, se kterými můžete pracovat. Tyto objekty jsou uspořádány do hierarchie, která přesně dodržuje uživatelské rozhraní. V horní části hierarchie [Microsoft.Office.Interop.Visio.Application](https://msdn.microsoft.com/library/office/ff766485.aspx) objektu. Tento objekt představuje aktuální instanci aplikace Visio. Objekt Microsoft.Office.Interop.Visio.Application obsahuje objekty Microsoft.Office.Interop.Visio.Document a Microsoft.Office.Interop.Visio.Page, jakož i Microsoft.Office.Interop.Visio.Documents a Microsoft.Office.Interop.Visio.Pages kolekce. Každá z těchto objektů a kolekcí má mnoho metody a vlastnosti, které můžete přístup k manipulaci a pracovat s ním.  
@@ -83,6 +84,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>Viz také  
  [Řešení pro aplikaci Visio](../vsto/visio-solutions.md)   
  [Práce s dokumenty aplikace Visio](../vsto/working-with-visio-documents.md)   
- [Práce s obrazci aplikace Visio](../vsto/working-with-visio-shapes.md)  
+ [Práce s obrazci aplikace Visio](../vsto/working-with-visio-shapes.md)  
   
   

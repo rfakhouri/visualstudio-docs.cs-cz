@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 42e686558088e549e43a91effee0d4938401ea9c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e0aa2503e7e729a632c677a317493b85a6822741
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-the-help-viewer"></a>Přizpůsobení programu help viewer
 Můžete přizpůsobit rozložení windows Prohlížeč nápovědy, stejně jako jiné možnosti, jako je například velikost písma, maximální počet výsledků a jestli se mají zahrnout obsah v angličtině.
@@ -48,4 +49,4 @@ Otevřete **možnosti prohlížeče** dialogové okno a vybrat **možnosti prohl
 |Zahrnout nebo vyloučit obsah v angličtině, při zobrazení obsahu pro jiné než anglické verzi produktu.|Vyberte nebo zrušte **zahrnují anglické obsahu do všech navigační karty a požadavky F1** zaškrtávací políčko. **Upozornění:** tato funkce také určuje, jestli si můžete stáhnout obsah v angličtině v **spravovat obsah** kartě.|
 
 ## <a name="see-also"></a>Viz také
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)

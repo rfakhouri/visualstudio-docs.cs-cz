@@ -23,11 +23,12 @@ caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52583bdbf6edf4f2a698bc8662a0faf659841926
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: fcf026af4877ee2aefe17551763752d385b63493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ribbon-overview"></a>Přehled pásu karet
   Na pásu karet je způsob, jak uspořádat související příkazy, aby byly snadněji najít. Příkazy se zobrazí jako ovládacích prvků na pásu karet. Ovládací prvky jsou uspořádány do *skupiny* podél vodorovné pruhu na horním okraji okna aplikace. Související skupiny jsou uspořádány na kartách.  
@@ -121,20 +122,20 @@ ms.lasthandoff: 10/31/2017
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Postupy: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md)|Ukazuje, jak přizpůsobit na pásu karet z aplikace Microsoft Office, přidejte **pásu karet (vizuálního návrháře)** nebo **pásu karet (XML)** položku do projektu Office.|  
+|[Postupy: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md)|Ukazuje, jak přizpůsobit na pásu karet z aplikace Microsoft Office, přidejte **pásu karet (vizuálního návrháře)** nebo **pásu karet (XML)** položku do projektu Office.|  
 |[Návrhář pásu karet](../vsto/ribbon-designer.md)|Popisuje, jak můžete přidat vlastní karty, skupiny a ovládacích prvků na pásu karet z aplikace Microsoft Office pomocí Návrháře pásu karet.|  
-|[Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Ukazuje, jak vytvořit vlastní pás karet karty pomocí Návrháře pásu karet. Návrhář pásu karet můžete použít k přidání a umisťování ovládacích prvků na vlastní kartě.|  
+|[Návod: Vytvoření vlastní karty pomocí návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Ukazuje, jak vytvořit vlastní pás karet karty pomocí Návrháře pásu karet. Návrhář pásu karet můžete použít k přidání a umisťování ovládacích prvků na vlastní kartě.|  
 |[Přehled modelu objektů pásu karet](../vsto/ribbon-object-model-overview.md)|Obsahuje přehled silného typu objektu modelu, který můžete použít k získání a nastavení vlastností ovládacích prvků pásu karet za běhu.|  
 |[Návod: Aktualizace ovládacích prvků na pásu karet za běhu](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Ukazuje, jak použít objektový model pásu karet aktualizace ovládacích prvků na pásu karet po načtení pásu karet do aplikací Office.|  
 |[Přizpůsobení pásu karet pro aplikaci Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Obsahuje pokyny k přizpůsobení pásu karet v aplikaci Microsoft Office Outlook.|  
 |[Přizpůsobení pásu karet pro aplikaci InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Obsahuje pokyny k přizpůsobení pásu karet v aplikaci Microsoft Office InfoPath.|  
-|[Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)|Ukazuje, jak zobrazit, skrýt a upravit na pásu karet a povolit uživatelům spustit kód z ovládacích prvků v vlastního podokna úloh, podokna akce nebo oblasti formuláře aplikace Outlook.|  
-|[Postupy: Změna polohy karty na pásu karet](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Ukazuje, jak chcete-li změnit pořadí karet na pásu karet.|  
+|[Přístup k pásu karet za běhu](../vsto/accessing-the-ribbon-at-run-time.md)|Ukazuje, jak zobrazit, skrýt a upravit na pásu karet a povolit uživatelům spustit kód z ovládacích prvků v vlastního podokna úloh, podokna akce nebo oblasti formuláře aplikace Outlook.|  
+|[Postupy: Změna pozice karty na pásu karet](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Ukazuje, jak chcete-li změnit pořadí karet na pásu karet.|  
 |[Postupy: Přizpůsobení předdefinované karty](../vsto/how-to-customize-a-built-in-tab.md)|Ukazuje, jak přidat skupiny a ovládacích prvků do předdefinované karty.|  
 |[Postupy: Přidání ovládacích prvků do zobrazení Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Ukazuje, jak k přidávání ovládacích prvků do nabídky, které se otevře po kliknutí **soubor**.|  
-|[Postupy: Přidání Spouštěče dialogového okna do skupiny pásu karet](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Zobrazuje přidání Spouštěče dialogového okna na žádnou skupinu na pásu karet.|  
-|[Postupy: Export pásu karet z Návrháře pásu karet do kódu XML pásu karet](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Popisuje přizpůsobení pásu karet pokročilé způsoby exportováním pásu karet z Návrháře pásu karet XML.|  
-|[Kódu XML pásu karet](../vsto/ribbon-xml.md)|Vysvětluje, jak můžete přizpůsobit pásu karet pomocí kódu XML pásu karet.|  
-|[Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstruje postup vytvoření vlastní karty pásu karet pomocí **pásu karet (XML)** položky.|  
+|[Postupy: Přidání spouštěče dialogového okna do skupiny pásu karet](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Zobrazuje přidání Spouštěče dialogového okna na žádnou skupinu na pásu karet.|  
+|[Postupy: Export pásu karet z návrháře pásu karet do kódu XML pásu karet](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Popisuje přizpůsobení pásu karet pokročilé způsoby exportováním pásu karet z Návrháře pásu karet XML.|  
+|[Pás karet – XML](../vsto/ribbon-xml.md)|Vysvětluje, jak můžete přizpůsobit pásu karet pomocí kódu XML pásu karet.|  
+|[Návod: Vytvoření vlastní karty pomocí návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstruje postup vytvoření vlastní karty pásu karet pomocí **pásu karet (XML)** položky.|  
   
   

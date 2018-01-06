@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bbda1d3a9835d95978f7bfadbfe1b99971f6d367
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eed8f03eefb15b982f297b78f7503c947df8d712
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6: Pojmenujte své ovládací prvky tlačítek
 Je pouze jeden PictureBox na daný formulář. Pokud jste ji přidali rozhraní IDE automaticky pojmenuje **pictureBox1**. Existuje pouze jeden CheckBox, která se nazývá **checkBox1**. Později, brzy bude napsat kód, a tento kód bude odkazovat na zaškrtávací políčko a PictureBox. Protože se nachází pouze jeden z těchto ovládacích prvků, budete vědět, co znamená až uvidíte **pictureBox1** nebo **checkBox1** ve vašem kódu.  

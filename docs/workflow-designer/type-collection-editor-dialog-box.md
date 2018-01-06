@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: bdc27b59640d92507956030fc34c767e321a81fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8e4b794a623c3a0218e44773da6bdb6c76612816
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="type-collection-editor-dialog-box"></a>Dialogové okno Editor typ kolekce
 **Editor kolekce typ** dialogové okno se používá k přidání známé typy **odeslat** a **Receive** aktivity. Toto dialogové okno se také používá k přidání argumenty obecného typu pro **InvokeMethod** aktivity. Pokud se používá pro **odeslat** a **Receive** aktivit za účelem přidání známé typy **Editor kolekce typu** dialogové okno vyžaduje typ dodatky být jedinečný. Pokud je přidána duplicitní typ a tato změna se potvrdí kliknutím **OK**, se vrátí chybovou zprávu. Pokud se používá pro **InvokeMethod** aktivitu Přidat argumenty obecného typu **Editor kolekce typ** dialogové okno umožňuje přidání duplicitní typů.  

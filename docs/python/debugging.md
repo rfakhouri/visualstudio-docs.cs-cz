@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: f424770e725e8d8d6ada9e656b77b5563237af99
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: python
+ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debugging-your-python-code"></a>Ladění kódu jazyka Python
 
@@ -30,7 +31,7 @@ V tomto tématu:
 
 - [Základní ladění](#basic-debugging)
 - [Možnosti ladění projektu](#project-debugging-options)
-- [Ladění interaktivních okna](#the-debug-interactive-window)
+- [Okamžité a interaktivní windows](#immediate-and-interactive-windows)
 
 Také najdete v následujících tématech ladění konkrétní scénáře:
 
@@ -162,6 +163,7 @@ Ve výchozím nastavení spustí ladicí program vašeho programu standardní Sp
 | Proměnné prostředí | V tomto poli víceřádkový text, přidat položky ve formátu `NAME=VALUE`. Protože toto nastavení je použito jako poslední, v horní části všechny stávající globální proměnné a po `PYTHONPATH` je nastaven podle nastavení cesty hledání ji umožňuje ručně přepsat všechny z nich jiné proměnné. |
 
 < a name = "the – ladění interaktivní – okno"</a>
+
 ## <a name="immediate-and-interactive-windows"></a>Okamžité a interaktivní windows
 
 Existují dvě interaktivní windows můžete během relace ladění: okno Standardní okamžitou Visual Studio a Python ladění interaktivních okna.

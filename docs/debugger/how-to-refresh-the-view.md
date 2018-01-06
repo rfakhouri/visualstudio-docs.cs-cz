@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b52d62a3da405f2bc0abbac91b0de8c1690cab2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f2cff688dcc35d87c47a23d8243b68747c1c3f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-refresh-the-view"></a>Postupy: Aktualizace zobrazení
 Nástroje Spy ++ trvá "snímek" systémové tabulky a aktualizuje zobrazení na základě těchto informací. Je důležité, pravidelně aktualizovat zobrazení vašeho systému. Pokud máte nástroje Spy ++ zobrazení otevřete a neaktualizovaly, zobrazení, neuvidíte tyto procesy, vláken a systému windows, které jsou následně vytvořené. Navíc se může zobrazit položky, které už existují. **Aktualizovat** příkaz je k dispozici pro všechna zobrazení kromě zobrazení zpráv.  
@@ -29,4 +30,4 @@ Nástroje Spy ++ trvá "snímek" systémové tabulky a aktualizuje zobrazení na
 ## <a name="see-also"></a>Viz také  
  [Použití nástroje Spy ++](../debugger/using-spy-increment.md)   
  [Zobrazení nástroje Spy ++](../debugger/spy-increment-views.md)   
- [Referenční dokumentace nástroje Spy ++](../debugger/spy-increment-reference.md)
+ [Referenční dokumentace nástroje Spy++](../debugger/spy-increment-reference.md)

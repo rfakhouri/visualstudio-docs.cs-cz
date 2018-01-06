@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b2933f82c4088735f4203d947bad66c71aeb3e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b729c71836e0a57f18c05cf6435581419bdbb92e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="buttons-element"></a>Element tlačítka
 Skupiny [tlačítko](../extensibility/button-element.md) elementy, které představují jednotlivé příkazy.  
@@ -46,14 +47,14 @@ Skupiny [tlačítko](../extensibility/button-element.md) elementy, které předs
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Element tlačítka](../extensibility/buttons-element.md)|Tlačítko prvky skupiny.|  
-|[Button Element](../extensibility/button-element.md)|Definuje příkaz, který může uživatel zasahovat.|  
+|[Buttons – element](../extensibility/buttons-element.md)|Tlačítko prvky skupiny.|  
+|[Button – element](../extensibility/button-element.md)|Definuje příkaz, který může uživatel zasahovat.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Element příkazy](../extensibility/commands-element.md)|Představuje kolekci příkazů na panelu nástrojů VSPackage.|  
+|[Commands – element](../extensibility/commands-element.md)|Představuje kolekci příkazů na panelu nástrojů VSPackage.|  
   
 ## <a name="example"></a>Příklad  
   
@@ -71,4 +72,4 @@ Skupiny [tlačítko](../extensibility/button-element.md) elementy, které předs
   
 ## <a name="see-also"></a>Viz také  
  [Jak přidat VSPackages prvky uživatelského rozhraní](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Příkazy, nabídek a panelů nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)
+ [Příkazy, nabídky a panely nástrojů](../extensibility/internals/commands-menus-and-toolbars.md)

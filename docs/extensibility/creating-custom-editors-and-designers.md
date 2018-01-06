@@ -15,11 +15,12 @@ caps.latest.revision: "31"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 149870d9c9a0a281cb0bba167496cc4c37d6f83a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d8d354333545a6ec2b637e160818d506fa049c29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-editors-and-designers"></a>Vytváření vlastních editory a návrhářů
 Integrované vývojové prostředí (IDE) sady Visual Studio může hostovat různé typy editoru:  
@@ -76,29 +77,29 @@ Integrované vývojové prostředí (IDE) sady Visual Studio může hostovat rů
  [Návod: Vytvoření vlastního editoru](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Vysvětluje, jak vytvořit vlastní editor.  
   
- [Návod: Přidání funkce do vlastního editoru](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Návod: Přidání funkcí do vlastního editoru](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Vysvětluje, jak pro přidání funkcí do vlastní editor.  
   
- [Návrhář inicializace a konfigurace metadat](../extensibility/designer-initialization-and-metadata-configuration.md)  
+ [Inicializace návrháře a konfigurace metadat](../extensibility/designer-initialization-and-metadata-configuration.md)  
  Vysvětluje, jak k chybě při inicializaci návrháře.  
   
- [Poskytuje podporu vrácení zpět, aby Designer](../extensibility/supplying-undo-support-to-designers.md)  
+ [Nastavení podpory fáze vrácení zpět v návrháři](../extensibility/supplying-undo-support-to-designers.md)  
  Vysvětluje, jak zajistit podporu vrácení zpět pro návrháře.  
   
- [Vlastní editorů zvýrazňování syntaxe](../extensibility/syntax-coloring-in-custom-editors.md)  
+ [Barevné zvýrazňování syntaxe ve vlastních editorech](../extensibility/syntax-coloring-in-custom-editors.md)  
  Vysvětluje rozdíl mezi v editoru základní a vlastní editory zvýrazňování syntaxe.  
   
- [Data dokumentu a zobrazení dokumentu vlastní editorů](../extensibility/document-data-and-document-view-in-custom-editors.md)  
+ [Data dokumentu a zobrazení dokumentu ve vlastních editorech](../extensibility/document-data-and-document-view-in-custom-editors.md)  
  Vysvětluje, jak implementovat vlastní editory data dokumentů a zobrazení dokumentu.  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Starší verze rozhraní v editoru](../extensibility/legacy-interfaces-in-the-editor.md)  
  Vysvětluje, jak pro přístup k editoru základní prostřednictvím starší verze rozhraní API.  
   
- [Vývoj služby jazyk starší verze](../extensibility/internals/developing-a-legacy-language-service.md)  
+ [Vývoj služby starší verze jazyka](../extensibility/internals/developing-a-legacy-language-service.md)  
  Vysvětluje, jak implementovat služba jazyka.  
   
- [Rozšíření dalšími částmi sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
+ [Rozšíření dalších částí sady Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  
  Vysvětluje, jak vytvářet prvky uživatelského rozhraní, které odpovídají zbytek [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
 ## <a name="see-also"></a>Viz také  

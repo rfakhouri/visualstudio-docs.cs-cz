@@ -20,11 +20,12 @@ caps.latest.revision: "5"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: 3eefde445f5c8aca7199d4316472fe92c3160d00
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 99be4338bcee9ffb5c7cb9cf28f6187128345f85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Pomocí Návrháře pracovního postupu starší stav počítače
 Když vytvoříte nový projekt workflow stavu počítače v [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] , která se zaměřuje buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], můžete použít buď **stavu počítače pracovního postupu konzolové aplikace** nebo  **Stav pracovního postupu knihovna počítačů** šablona starší verze projektu. Pokud si zvolíte jednu z těchto šablon projektu stavu počítače, zobrazí se jako návrháře uživatelské rozhraní starší verze návrháře stav počítače. Informace o šablonách projektů starší verze stavu počítače najdete v tématu [postupy: vytvoření stavu počítače pracovního postupu konzolové aplikace (zastaralé)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) a [postupy: vytvoření stavu počítače pracovního postupu knihovny (starší)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

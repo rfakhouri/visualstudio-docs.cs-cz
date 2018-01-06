@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc45c47f47fe18bc857715acc3948561f06e718c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: b77cc0ea260ae86460de3c7a7752277a99291778
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="source-control-plug-in-glossary"></a>Modul Plug-in Glosář zdroj ovládacího prvku
 Následující užitečné termíny a definice se týkají dokumentace zdroj ovládacího prvku Plug-in SDK.  
@@ -55,7 +56,7 @@ Následující užitečné termíny a definice se týkají dokumentace zdroj ovl
  Sloučit  
  Proces během dvou nebo více zdroje spojení souborů kód k vytvoření nového souboru, která zahrnuje všechny funkce z předchozí soubory. Tento koncept je důležité ve správě verzí, kde dva nebo více vývojářů práci soubory současně.  
   
- Project  
+ Projekt  
  Zdrojové složky ovládací prvek se často označuje jako projekt. To nemá žádný vztah s řešeními nebo projekty v sadě Visual Studio.  
   
  modul plug-in  
@@ -68,4 +69,4 @@ Následující užitečné termíny a definice se týkají dokumentace zdroj ovl
  Potvrdit změny v historii souboru nebo sadu souborů. Revize je jedním snímku v nepřetržitě změna projektu.  
   
 ## <a name="see-also"></a>Viz také  
- [Moduly plug-in programu zdroj ovládacího prvku](../extensibility/source-control-plug-ins.md)
+ [Moduly plug-in správy zdrojového kódu](../extensibility/source-control-plug-ins.md)

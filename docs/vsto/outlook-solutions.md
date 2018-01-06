@@ -23,11 +23,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e0784662a1c48602dd8f93f5ae97c0a69192c3a5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 3692e6b224297175d8466a993b0dc16cc7827294
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlook-solutions"></a>Řešení pro aplikaci Outlook
   Visual Studio poskytuje šablony projektů, které můžete použít k vytvoření doplňků VSTO pro aplikaci Microsoft Office Outlook. Doplňků VSTO slouží k automatizaci operací aplikace Outlook, rozšířit funkce aplikace Outlook nebo přizpůsobení uživatelského rozhraní (UI) aplikace Outlook. Další informace o doplňků VSTO najdete v tématu [architektura VSTO doplňky](../vsto/architecture-of-vsto-add-ins.md).  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
 |-----------|-----------------|  
 |[Přehled modelu objektů aplikace Outlook](../vsto/outlook-object-model-overview.md)|Obsahuje přehled objektů, které jsou dostupné ve model objektu aplikace.|  
 |[Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)|Popisuje nástroje poskytované subsystémem pro Visual Studio, které usnadňují návrh, vyvíjet a ladit oblasti formuláře.|  
-|[Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Ukazuje, jak vytvořit doplňku VSTO pro aplikaci Microsoft Office Outlook.|  
+|[Návod: Vytvoření prvního doplňku VSTO pro Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)|Ukazuje, jak vytvořit doplňku VSTO pro aplikaci Microsoft Office Outlook.|  
 |[Outlook 2010 v vývoj pro Office](http://go.microsoft.com/fwlink/?LinkId=199013)|Oblasti v knihovně MSDN, kde můžete najít články a referenční dokumentace o vývoji řešení pro aplikaci Outlook (nejsou specifické pro vývoj pro Office pomocí sady Visual Studio).|  
   
   

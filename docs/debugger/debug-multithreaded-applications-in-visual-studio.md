@@ -24,11 +24,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f8798616d9a39d46150f039ffe4340302439f31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Ladění vícevláknových aplikací v sadě Visual Studio
 Vlákno je posloupnost pokyny, které operační systém přiděluje času procesoru. Každý proces, který běží v operačním systému se skládá z nejméně jedno vlákno. Procesy, které mají více než jedno vlákno se nazývají s více vlákny.  
@@ -41,7 +42,7 @@ Visual Studio poskytuje různé nástroje pro použití v ladění vícevláknov
 
 - Pro vlákna, jsou mezi primární nástroje k ladění vláken **vláken** okno, značek přístup z více vláken ve windows zdroj **paralelní zásobníky** okně **paralelního sledování** okně a **ladění umístění** panelu nástrojů. Další informace o **vláken** okno a **ladění umístění** nástrojů najdete v části [návod: ladění pomocí okna vláken](../debugger/how-to-use-the-threads-window.md). Další informace o použití **paralelní zásobníky** a **paralelního sledování** windows, najdete v části [Začínáme ladění vícevláknové aplikace](../debugger/get-started-debugging-multithreaded-apps.md). Obě témata ukazují, jak používat značky přístup z více vláken.
   
-- Pro kód, který používá [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/), jsou mezi primární nástroje pro ladění **paralelní zásobníky** okno, **Paralelního sledování** okně a **úlohy** okno ( **úlohy** okno také podporuje JavaScript). Abyste mohli začít, najdete v části [návod: ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md) a [návod: ladění aplikace C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application.md). 
+- Pro kód, který používá [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/), jsou mezi primární nástroje pro ladění **paralelní zásobníky** okno, **Paralelního sledování** okně a **úlohy** okno ( **úlohy** okno také podporuje JavaScript). Abyste mohli začít, najdete v části [návod: ladění paralelní aplikace](../debugger/walkthrough-debugging-a-parallel-application.md) a [návod: ladění aplikace C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application). 
 
 - K ladění vláken v GPU, primárním nástrojem jsou **vláken GPU** okno. V tématu [postupy: použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md).  
 
@@ -98,7 +99,7 @@ Ladění vícevláknové aplikace, která má uživatelské rozhraní může bý
  [Více vláken v součásti](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  Používání více vláken v [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] součásti.  
   
- [Podpora více vláken ve starším kódu (Visual C++)](/cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
+ [Podpora multithreadingu ve starším kódu (Visual C++)](/cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
  Dělení na vlákna koncepty a ukázkový kód pro programátory v jazyce C++ pomocí MFC.  
   
 ## <a name="see-also"></a>Viz také  

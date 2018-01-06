@@ -15,11 +15,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2b3d3e56a99c7ab688910c956538a9c38c67becc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 042382e37fbd64043ba8d7273a5f0215d2ea9756
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-control-messages-view"></a>Postupy: Řízení zobrazení zpráv
 Pomocí nástroje Spy ++, budete mít značnou kontrolu nad obsah [zobrazení zpráv](../debugger/messages-view.md) okno. Můžete [spuštění a zastavení](../debugger/how-to-start-and-stop-the-message-log-display.md) zobrazení zpráv v kdykoli a můžete zadat:  

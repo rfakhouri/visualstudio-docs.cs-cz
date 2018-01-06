@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4677b10d54a6c591c2f60e4c0b1f2978ad49a0ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c13b1a4e1b183b3a6f4b54f58cca3593ce5c7bb2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Spravovaná rozšíření Framework v editoru
 Editor je sestaven pomocí součásti Managed Extensibility Framework (MEF). Můžete vytvořit vlastní MEF součásti pro rozšíření editoru a váš kód může využít i pro součásti editoru.  
@@ -105,4 +106,4 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
 5.  Když jste sestavili sestavení, vložte ho... Složka \Common7\IDE\Components\ instalace Visual Studia.  
   
 ## <a name="see-also"></a>Viz také  
- [Služba jazyka a body rozšíření editoru](../extensibility/language-service-and-editor-extension-points.md)
+ [Rozšiřovací body služeb jazyka a editoru](../extensibility/language-service-and-editor-extension-points.md)

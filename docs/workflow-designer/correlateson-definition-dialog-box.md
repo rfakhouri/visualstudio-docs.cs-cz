@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: ErikRe
 ms.author: erikre
 manager: erikre
-ms.openlocfilehash: babe684c0fd4eeec1a00e4f44868bfc0a67e5f9d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 07e028a3ac5018c8a9866a6aee061d679cff74a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="correlateson-definition-dialog-box"></a>Dialogové okno Definice CorrelatesOn
 **CorrelatesOn** dialogové okno se používá v [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] upravit <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> vlastnost <xref:System.ServiceModel.Activities.Receive> aktivity. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Receive](../workflow-designer/receive-activity-designer.md) tématu.  
@@ -37,4 +38,4 @@ ms.lasthandoff: 10/27/2017
  <xref:System.ServiceModel.Activities.Receive>   
  [CorrelationInitializers dialogové okno Přidat](../workflow-designer/add-correlationinitializers-dialog-box.md)   
  [Korelace dialogové okno Přidat](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
- [Inicializace dialogové okno korelace](../workflow-designer/initialize-correlation-dialog-box.md)
+ [Dialogové okno Inicializace korelace](../workflow-designer/initialize-correlation-dialog-box.md)

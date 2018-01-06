@@ -25,11 +25,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f8842bd80832211f02532ca706416416325663b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: d7fbbad8433df7dd36d8f09a13305da3e15430c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Omezení ovládacích prvků Windows Forms v dokumentech Office
   Existují určité rozdíly mezi ovládacími prvky Windows Forms, které jsou přidány do dokumentů aplikace Microsoft Office Word nebo sešitů aplikace Microsoft Office Excel a ovládací prvky Windows Forms, které jsou přidány do Windows Forms. Například když přidáte <xref:Microsoft.Office.Tools.Word.Controls.Button> řídit k dokumentu, vlastnosti, jako <xref:Microsoft.Office.Tools.Word.Controls.Button.Dock%2A>, <xref:Microsoft.Office.Tools.Word.Controls.Button.Anchor%2A>, a <xref:Microsoft.Office.Tools.Word.Controls.Button.TabIndex%2A> nefungují tak, jak by se dalo očekávat.  
@@ -197,6 +198,6 @@ ms.lasthandoff: 10/31/2017
  [Ovládací prvky v dokumentech Office](../vsto/controls-on-office-documents.md)   
  [Windows Forms – ovládací prvky na přehled dokumenty sady Office](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Postupy: Přidání ovládacích prvků do dokumentů Office Windows Forms](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)  
+ [Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)  
   
   

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 519993c8527b0cd64c283416cd60eb48112e6886
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: e728fbe2a9e430224a3da822cbcae45745eeb29e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie balíčku VSIX
 Balíčku VSIX je soubor VSIX, který obsahuje jeden nebo více rozšíření Visual Studia, spolu s metadaty, které Visual Studio využívá ke klasifikaci a instalaci rozšíření. Aby metadata jsou obsaženy v manifestu VSIX a souboru .xml [Content_Types]. Balíčku VSIX může také obsahovat jeden nebo více souborů Extension.vsixlangpack zajistit lokalizované instalace text a může obsahovat další balíčků VSIX pro instalaci závislosti.  

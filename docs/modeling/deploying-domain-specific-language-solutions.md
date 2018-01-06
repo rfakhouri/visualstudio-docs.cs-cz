@@ -12,17 +12,18 @@ caps.latest.revision: "27"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: e638031d1c675b21e7d0bd8a8fdd8d1f83a5d05f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f830880b936fbc70d0bdc0e103c4b128570b74a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Nasazování řešení jazyka specifického pro doménu
 Jazyk specifické pro doménu můžete nainstalovat na vašem počítači nebo na jiné počítače. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]musí být již nainstalován v cílovém počítači.  
   
--   [MSI a VSIX nasazení DSL](../modeling/msi-and-vsix-deployment-of-a-dsl.md)  
+-   [Nasazení jazyka specifického pro doménu (DSL) pomocí MSI nebo VSIX](../modeling/msi-and-vsix-deployment-of-a-dsl.md)  
   
--   [Více DSL, linky v jednom řešení](../modeling/multiple-dsls-in-one-solution.md)  
+-   [Více jazyků specifických pro doménu (DSL) v jednom řešení](../modeling/multiple-dsls-in-one-solution.md)  
   
 -   [Nasazení prostředí VS](../modeling/vs-shell-deployment.md)

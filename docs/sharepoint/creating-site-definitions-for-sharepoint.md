@@ -20,11 +20,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a4a7c002bd17da5f693955a82ab2e74bf65dc0cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: 98be671e456c75c4be79994c84bf1ed6ae5114de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Vytváření definic webu pro službu SharePoint
   Do projektu definice webu služby SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umožňuje vytvářet *lokalita definice*, který slouží jako základ pro nový web služby SharePoint. Tyto definice nejen určit vzhled a chování webu služby SharePoint, ale jeho výchozí obsah a funkce. V definici lze umístit předkonfigurované seznamy, typy obsahu, přijímače událostí, obrázky a další položky. SharePoint zahrnuje některé definice webů, jako je například BLOG, např. Při vytvoření webu na základě definice lokality BLOG lokalita obsahuje seznamy, webové části a další položky, které web blogu vyžaduje.  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 |[Postupy: vytvoření vlastní stránky definice a konfigurace](http://go.microsoft.com/fwlink/?LinkId=183309)|Popisuje, jak vytvořit definici vlastní stránky ve službě SharePoint tak, že existující definice lokality a potom můžete tuto kopii upravit.|  
 |[WebTemp.xml](http://go.microsoft.com/fwlink/?LinkId=183310)|Popisuje původní soubor, který určuje k dispozici v lokalitě definice **výběr šablony** části **nový web služby SharePoint** stránky.|  
 |[Lokalizace řešení služby SharePoint](../sharepoint/localizing-sharepoint-solutions.md)|Popisuje, jak připravit vaše řešení služby SharePoint pro globální použití.|  
-|[Vytvoření webové části pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Popisuje, jak můžete vytvořit částí stránku služby SharePoint, které mohou uživatelé změnit.|  
+|[Vytváření webových částí pro službu SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|Popisuje, jak můžete vytvořit částí stránku služby SharePoint, které mohou uživatelé změnit.|  
 |[Vytváření opakovaně použitelných ovládacích prvků pro webové části nebo stránky aplikací](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|Popisuje, jak můžete vytvořit opakovaně použitelných ovládacích prvků, které běží v stránky aplikací a webové části.|  
 |[Visual Web Developer](http://go.microsoft.com/fwlink/?LinkId=178725)|Popisuje, jak používat návrháře, které se zobrazí po otevření webové stránky ve vašem projektu.|  
 |[Přehled technologie ASP.NET Web Pages](http://go.microsoft.com/fwlink/?LinkId=178726)|Poskytuje obecné informace o struktuře [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] webové stránky, jak jsou zpracovávány pomocí [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]a jak [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stránky zobrazí kód, který splňuje standardy XHTML.|  

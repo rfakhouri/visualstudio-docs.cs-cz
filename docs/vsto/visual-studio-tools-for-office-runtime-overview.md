@@ -31,11 +31,12 @@ caps.latest.revision: "92"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61fe29fca2feb0f19e613af62f4d9407b8d8bbff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e091564ce02f55904e69d1abd9e240534a6dd8c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Přehled nástrojů Visual Studio Tools for Office runtime
   Ke spuštění řešení, které jsou vytvořené pomocí nástroje Microsoft Office developer tools v sadě Visual Studio, Visual Studio 2010 Tools for Office Runtime musí nainstalovat do počítačů koncových uživatelů. Další informace najdete v tématu [postupy: instalace sady Visual Studio Tools pro sadu Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Modul Visual Studio 2010 Tools for Office Runtime se skládá ze dvou hlavních součástí:  
@@ -126,6 +127,6 @@ ms.lasthandoff: 10/31/2017
  [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Upgrade a migrace řešení Office](../vsto/upgrading-and-migrating-office-solutions.md)  
+ [Upgrade a migrace řešení pro systém Office](../vsto/upgrading-and-migrating-office-solutions.md)  
   
   

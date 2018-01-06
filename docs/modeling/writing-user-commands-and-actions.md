@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: c9cf2ed906cd35f201c13cc2f82f8142f598b901
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 14e0252b4bf9a34c219db09d621bd5b12f7fbb78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-user-commands-and-actions"></a>Zápis uživatelských příkazů a akcí
 Jazyk specifické pro doménu můžete přizpůsobit přidáním příkazy k diagramu a odpovídá na požadavky gesta například přetahování myší, klikněte na tlačítko a dvakrát klikněte na události.  
@@ -30,9 +31,9 @@ Jazyk specifické pro doménu můžete přizpůsobit přidáním příkazy k dia
   
 -   [Postupy: Intercept kliknutí na tvar nebo Dekoratéra](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md) -povolit kliknutím z položky jinou položku, která odkazuje na vaše uživateli.  
   
--   [Postupy: přístup k a omezit aktuální výběr](../modeling/how-to-access-and-constrain-the-current-selection.md)  
+-   [Postupy: Přístup k aktuálnímu výběru a jeho omezení](../modeling/how-to-access-and-constrain-the-current-selection.md)  
   
--   [Přizpůsobení nástroje – Element](../modeling/customizing-element-tools.md)  
+-   [Přizpůsobení nástrojů elementu](../modeling/customizing-element-tools.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Nasazení řešení jazyka domény](../modeling/deploying-domain-specific-language-solutions.md)
+ [Nasazení řešení jazyka specifického pro doménu](../modeling/deploying-domain-specific-language-solutions.md)

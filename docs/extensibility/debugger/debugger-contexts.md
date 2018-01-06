@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 809f0f50ace62253371d4fd14425bb870a3be633
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: f36df39cf29ff298a327ec6e6d4bb02ff53485a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugger-contexts"></a>Kontexty ladicí program
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění, modul ladění (DE) funguje současně v několika různých kontextů, následujícím způsobem:  
@@ -48,5 +49,5 @@ V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění, modul l
  [Ladění komponent](../../extensibility/debugger/debugger-components.md)  
  Poskytuje přehled ladění součásti sady Visual Studio, mezi které patří ladění modulu (DE), vyhodnocovací filtr výrazů (EE) a symbol obslužné rutiny (SH).  
   
- [Ladění úlohy](../../extensibility/debugger/debugging-tasks.md)  
+ [Úlohy ladění](../../extensibility/debugger/debugging-tasks.md)  
  Obsahuje odkazy na různé ladění úlohy, jako je například spuštěním programu a vyhodnocení výrazů.

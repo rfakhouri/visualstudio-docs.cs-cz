@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c4b91633c94b899157cef5418be0ac8a4d784f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 9cc1e668f1d78bc6a1db66b6fd4dfebf77b0f6ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glosář ladicího programu sady Visual Studio
 Toto jsou termínů používaných v [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ladění SDK.  
@@ -88,4 +89,4 @@ Toto jsou termínů používaných v [!INCLUDE[vsprvs](../../../code-quality/inc
  Abstrakci pro popisující upozornění v čekající zarážky. Upozornění zarážek popisuje důvod, proč nebyl čekající zarážek ještě vázána na umístění kódu. To může být, že kód nebyl dosud načtena pro popsaného čekající zarážek umístění, nebo z jiného důvodu.  
   
 ## <a name="see-also"></a>Viz také  
- [Rozšiřitelnost ladicího programu sady Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
+ [Rozšiřitelnost programu Visual Studio Debugger](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

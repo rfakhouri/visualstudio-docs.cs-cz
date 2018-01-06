@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: def8de31a28a6a49f611c863ebb88d566ff93aa6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eab9e96906e5d6bd31ef0f84bebf635c4c104b3d
+ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="toolbox-html-tab"></a>Sada nástrojů, karta HTML
 **HTML** karty z panelu nástrojů poskytuje součásti, které jsou užitečné pro webové stránky a webové formuláře. Pokud chcete zobrazit na této kartě, poprvé otevřete dokument pro úpravy v Návrháři HTML. Na **zobrazení** nabídky, klikněte na tlačítko **sada nástrojů**a pak klikněte na tlačítko **HTML** karty z panelu nástrojů.  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="tasks"></a>Úlohy  
 
--   [Pomocí sady nástrojů](../../ide/using-the-toolbox.md)  
+-   [Používání sady nástrojů](../../ide/using-the-toolbox.md)  
 
 ## <a name="ui-elements"></a>Prvky uživatelského rozhraní  
  Tyto nástroje jsou k dispozici ve výchozím nastavení na kartě HTML.  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Doporučujeme, abyste ověřili všechny vstup uživatele. Další informace najdete v tématu [ověření vstupu uživatele na webech rozhraní ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Doporučujeme, abyste ověřili všechny vstup uživatele. Další informace najdete v tématu [ověření vstupu uživatele na webech rozhraní ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Vstup (soubor)**  
  ![Stránky HTML pole souboru](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Doporučujeme, abyste ověřili všechny vstup uživatele. Další informace najdete v tématu [ověření vstupu uživatele na webech rozhraní ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Doporučujeme, abyste ověřili všechny vstup uživatele. Další informace najdete v tématu [ověření vstupu uživatele na webech rozhraní ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Vstup (heslo)**  
  ![Pole hesla Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -113,7 +114,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Pokud aplikace přenáší uživatelská jména a hesla, byste měli nakonfigurovat váš Web z umístění použít k zašifrování přenos Secure Sockets Layer (SSL). Další informace najdete v tématu "Zabezpečení připojení protokolem SSL" v [provozní příručce služby IIS](http://go.microsoft.com/fwlink/?linkid=47856). Kromě toho se doporučuje, abyste ověřili všechny vstup uživatele. Další informace najdete v tématu [ověření vstupu uživatele na webech rozhraní ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Pokud aplikace přenáší uživatelská jména a hesla, byste měli nakonfigurovat váš Web z umístění použít k zašifrování přenos Secure Sockets Layer (SSL). Další informace najdete v tématu "Zabezpečení připojení protokolem SSL" v [provozní příručce služby IIS](http://go.microsoft.com/fwlink/?linkid=47856). Kromě toho se doporučuje, abyste ověřili všechny vstup uživatele. Další informace najdete v tématu [ověření vstupu uživatele na webech rozhraní ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Vstup (zaškrtávací políčko)**  
  ![Webová stránka HTML sady nástrojů políčko možnost](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -160,7 +161,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 > [!IMPORTANT]
->  Doporučujeme, abyste ověřili všechny vstup uživatele. Další informace najdete v tématu [ověření vstupu uživatele na webech rozhraní ASP.NET Web Pages (Razor)](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
+>  Doporučujeme, abyste ověřili všechny vstup uživatele. Další informace najdete v tématu [ověření vstupu uživatele na webech rozhraní ASP.NET Web Pages (Razor)](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites).  
 
  **Tabulka**  
  ![HTMLpageToolbarTable – snímek obrazovky](../../ide/reference/media/vxtable.gif "vxTable")  
@@ -173,7 +174,7 @@ ms.lasthandoff: 10/31/2017
 <table cellspacing="1" width="75%" border=1> <tr><td></td></tr></table>   
 ```  
 
-**Bitové kopie**  
+**Obrázek**  
  ![Stránky HTML obrázek položky](../../ide/reference/media/vximage.gif "vxImage")  
 
  Vloží `img` elementu. Upravit tento element zadat jeho `src` a jeho `alt` text.  
@@ -221,4 +222,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Viz také  
  [Sada nástrojů](../../ide/reference/toolbox.md)   
- [Pomocí sady nástrojů](../../ide/using-the-toolbox.md)   
+ [Používání sady nástrojů](../../ide/using-the-toolbox.md)   

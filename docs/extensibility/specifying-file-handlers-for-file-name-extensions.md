@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5833285a3d9ce9df02dc0359379ea623054588a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: d5db7a218a718e27f584abbf350b49907b56fb17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Určení souboru obslužné rutiny pro přípony názvu souboru
 Existuje několik způsobů, jak zjistit, která zpracovává soubor, který má příponu souboru konkrétní aplikace. Příkazy OpenWithList a OpenWithProgids jsou dva způsoby, jak zadat soubor obslužných rutin pod položkou registru pro příponu souboru.  
@@ -81,4 +82,4 @@ HKEY_CLASSES_ROOT\
   
 ## <a name="see-also"></a>Viz také  
  [O přípony názvů souborů](../extensibility/about-file-name-extensions.md)   
- [Registrace příkazy pro přípony názvu souboru](../extensibility/registering-verbs-for-file-name-extensions.md)
+ [Registrace operací pro přípony názvů souborů](../extensibility/registering-verbs-for-file-name-extensions.md)

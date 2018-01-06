@@ -13,11 +13,12 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a34a964450931071a290764074f4e955fe19aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 09b43963d657e8d1fe7aa24e98632d2ca46240c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-site-support"></a>Podpora webového serveru
 Systém lokality webového projektu je systém projektu, který vytvoří webové projekty. Webové projekty zase vytvářet webové aplikace. Webový projekt generuje jeden spustitelný soubor pro každou webovou stránku, který je spojen kódu. Soubory zdrojového kódu ve složce /App_Code se generují další spustitelné soubory.  
@@ -31,10 +32,10 @@ Systém lokality webového projektu je systém projektu, který vytvoří webov�
 ```  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Podpora šablony webových serverů](../../extensibility/internals/web-site-support-templates.md)  
+ [Šablony podpory webu](../../extensibility/internals/web-site-support-templates.md)  
  Seznam šablon, které můžete použít k vytvoření nové webové projekty a přidružené položky.  
   
- [Atributy webu podpory](../../extensibility/internals/web-site-support-attributes.md)  
+ [Atributy podpory webu](../../extensibility/internals/web-site-support-attributes.md)  
  Představuje atributy registrace, které připojení webového projektu do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] a [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)].  
   
 ## <a name="related-sections"></a>Související oddíly  

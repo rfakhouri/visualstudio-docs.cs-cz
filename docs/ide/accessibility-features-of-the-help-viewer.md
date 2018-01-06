@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35d062e3ab0cae690cb6242f132a20c53604cd0c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f706ca6fcaba9d1f5423fee3f32eefdaca163b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Funkce usnadnění programu Help Viewer
 Společnosti Microsoft je poskytovat snadněji použitelné produkty a služby pro každodenní použití. Toto téma obsahuje informace o funkcích, produktech a služby, které pomáhají vytvořit Prohlížeč nápovědy dostupné pro osoby s širokou škálu dalo.  
@@ -37,5 +38,5 @@ Můžete upravit velikost písma v které tématu text se zobrazí v okně dokum
 Prohlížeč nápovědy můžete přemístit přetažením jeho záhlaví na jinou pozici.  
   
 ## <a name="see-also"></a>Viz také
-[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
-[Klávesové zkratky (program Help Viewer)](../ide/shortcut-keys-help-viewer.md)
+[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)  
+[Klávesové zkratky (Help Viewer)](../ide/shortcut-keys-help-viewer.md)

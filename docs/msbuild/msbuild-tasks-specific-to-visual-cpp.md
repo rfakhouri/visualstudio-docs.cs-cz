@@ -18,11 +18,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 497eacfd4d980c6d06cfc6efb99d02922a077032
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 1e725bc94a159ea5295341021f60ee1183a8982e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Úlohy nástroje MSBuild specifické pro Visual C++
 Úlohy zadejte kód, který spouští během procesu sestavení. Při instalaci Visual C++ následující úlohy jsou k dispozici, kromě těch, které jsou nainstalované s [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Další informace najdete v tématu [přehled nástroje MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview).  
@@ -40,16 +41,16 @@ ms.lasthandoff: 10/31/2017
 |-----------|-----------------|  
 |[BscMake – úloha](../msbuild/bscmake-task.md)|Zabalí nástroj Microsoft procházet údržby nástroje pro konfiguraci (bscmake.exe).|  
 |[CL – úloha](../msbuild/cl-task.md)|Zabalí nástroj kompilátoru Visual C++ (cl.exe).|  
-|[Cppclean – úloha](../msbuild/cppclean-task.md)|Odstraní dočasné soubory, které MSBuild vytvoří při sestavení projektu Visual C++.|  
+|[CPPClean – úloha](../msbuild/cppclean-task.md)|Odstraní dočasné soubory, které MSBuild vytvoří při sestavení projektu Visual C++.|  
 |[LIB – úloha](../msbuild/lib-task.md)|Zabalí nástroj Microsoft 32bitový Správce knihovny (lib.exe).|  
 |[Odkaz – úloha](../msbuild/link-task.md)|Zabalí nástroj linkeru jazyka Visual C++ (link.exe).|  
 |[MIDL – úloha](../msbuild/midl-task.md)|Zabalí nástroj kompilátoru Microsoft rozhraní Definition Language (MIDL) (midl.exe).|  
 |[MT – úloha](../msbuild/mt-task.md)|Zabalí nástroj Microsoft Manifest (mt.exe).|  
 |[RC – úloha](../msbuild/rc-task.md)|Zabalí nástroj Microsoft kompilátor prostředků Windows (rc.exe).|  
 |[SetEnv – úloha](../msbuild/setenv-task.md)|Nastaví nebo odstraní hodnotu proměnné zadaného prostředí.|  
-|[Vcmessage – úloha](../msbuild/vcmessage-task.md)|Protokoly upozornění a chybové zprávy během sestavení.|  
+|[VCMessage – úloha](../msbuild/vcmessage-task.md)|Protokoly upozornění a chybové zprávy během sestavení.|  
 |[XDCMake – úloha](../msbuild/xdcmake-task.md)|Zabalí nástroj dokumentace XML (xdcmake.exe), která sloučí soubory komentář (projektový) dokumentu XML do souboru .xml.|  
 |[XSD – úloha](../msbuild/xsd-task.md)|Zabalí nástroj definice schématu XML (xsd.exe), který generuje schématu nebo třída soubory ze zdroje.|  
-|[MSBuild – Reference](../msbuild/msbuild-reference.md)|Popisuje elementy MSBuild systému.|  
+|[Referenční dokumentace nástroje MSBuild](../msbuild/msbuild-reference.md)|Popisuje elementy MSBuild systému.|  
 |[Úlohy](../msbuild/msbuild-tasks.md)|Popisuje úlohy, jako jsou jednotky kód, který mohou být kombinovány k vytvoření sestavení.|  
 |[Zápis úloh](../msbuild/task-writing.md)|Popisuje postup vytvoření úlohy.|

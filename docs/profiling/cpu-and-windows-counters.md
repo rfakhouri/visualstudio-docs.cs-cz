@@ -16,11 +16,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: d22300bc675de5074497589af53b304b9a1caa4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cpu-and-windows-counters"></a>Čítače procesoru a systému Windows
 Visual Studio Profiler umožňuje shromažďovat údaje o výkonu, který byl vytvořen v operačním systému (čítače systému Windows) a data výkonu vygenerovaná jednotky procesoru (čítače CPU).  
@@ -132,4 +133,4 @@ Visual Studio Profiler umožňuje shromažďovat údaje o výkonu, který byl vy
  [Přehled](../profiling/overviews-performance-tools.md)   
  [Postupy: výběr událostí vzorkování](../profiling/how-to-choose-sampling-events.md)   
  [Postupy: shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)   
- [Postupy: shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)
+ [Postupy: Shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)

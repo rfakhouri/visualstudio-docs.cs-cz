@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1fa99ea63f9af2c69519691add827053b3059ac0
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 4bcf4042551c768a7386158d9de7d4e629095b85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xml-schema-explorer"></a>Průzkumník schématu XML
 Průzkumník schématu XML je integrovaná do sady Microsoft Visual Studio a Editor souborů XML pro práci s schématu XML definition language (XSD) schématy. Při otevření souboru schématu XML **schématu nastavit** uzel se zobrazí v Průzkumníku schématu XML. Všechny zahrnuté, importované nebo Předefinovaná schémata pro cílový soubor a také všechny soubory, které se odkazuje prostřednictvím `include` nebo `import` prohlášení, také se zobrazí v Průzkumníku schématu XML.  
@@ -82,13 +83,13 @@ Následuje příklad stromové struktury:
   
 ## <a name="in-this-section"></a>V tomto oddílu  
   
--   [Hledání sadu schématu](../xml-tools/searching-the-schema-set.md)  
+-   [Hledání v sadě schémat](../xml-tools/searching-the-schema-set.md)  
   
 -   [Řazení, filtrování a seskupení](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
 -   [Kontextové nabídky](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [Integrace literálů XML pomocí Průzkumníka schématu XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+-   [Integrace literálů XML s Průzkumníkem schémat XML](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: přidání uzlů do pracovního prostoru z Průzkumníka schématu XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+ [Postupy: Přidání uzlů do pracovního prostoru z Průzkumníka schémat XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

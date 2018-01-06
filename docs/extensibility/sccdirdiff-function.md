@@ -14,11 +14,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea335ef6bcb2a27b4312c613062be0d365711cbc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: c1f6f990bb33ddbc1d7591fa3ab9837f472f8418
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff – funkce
 Tato funkce zobrazí rozdíly mezi aktuálním místním adresáři na disku klienta a odpovídající projekt ve správě zdrojového kódu.  
@@ -82,4 +83,4 @@ SCCRTN SccDirDiff(
 >  Tato funkce používá stejné příznaky příkazu jako [SccDiff](../extensibility/sccdiff-function.md). Správa zdrojového kódu modulu plug-in však rozhodnout operace "rychlé rozdílové" pro adresáře není podporována.  
   
 ## <a name="see-also"></a>Viz také  
- [Funkce modulu Plug-in rozhraní API ovládacího prvku zdroje](../extensibility/source-control-plug-in-api-functions.md)
+ [Funkce modulu plug-in správy zdrojového kódu v rozhraní API](../extensibility/source-control-plug-in-api-functions.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1cdf521228a1878fa94343418bd6a182f9707a2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 06d90b5174cc9ff2d09d7ccba8b2f39bc1d2a077
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-icons-to-menu-commands"></a>Přidávání ikon na příkazy nabídky
 Příkazy se může zobrazit na nabídek a panelů nástrojů. Na panely nástrojů je běžné pro příkaz pro zobrazí právě ikonu (a šetřit tak místo) při v nabídkách, že příkaz se obvykle zobrazují s jak ikonu a text.  
@@ -86,4 +87,4 @@ Příkazy se může zobrazit na nabídek a panelů nástrojů. Na panely nástro
   
 ## <a name="see-also"></a>Viz také  
  [Rozšíření nabídek a příkazů](../extensibility/extending-menus-and-commands.md)   
- [Referenční dokumentace schématu VSCT XML](../extensibility/vsct-xml-schema-reference.md)
+ [XML schéma VSCT – referenční informace](../extensibility/vsct-xml-schema-reference.md)

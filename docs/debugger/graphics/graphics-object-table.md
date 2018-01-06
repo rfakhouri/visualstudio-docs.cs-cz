@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7449cef9dca41aee61a3f15162252298db04e71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb03ab88ca3d1d50b559cef87bfdf045a0a81319
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="graphics-object-table"></a>Tabulka grafických objektů
 Tabulka grafických objektů v aplikaci Visual Studio analýza grafických vám pomůže pochopit Direct3D – objekty, které podporují rámec hry nebo aplikace.  
@@ -83,11 +84,11 @@ Tabulka grafických objektů v aplikaci Visual Studio analýza grafických vám 
   
 |Typ|Popis|  
 |----------|-----------------|  
-|**plovoucí desetinná čárka**|Hodnota s plovoucí desetinnou čárkou 32-bit.|  
+|**float**|Hodnota s plovoucí desetinnou čárkou 32-bit.|  
 |**float2**|Vektor, který obsahuje dva 32bitové hodnoty s plovoucí desetinnou čárkou.|  
 |**float3**|Vektor, který obsahuje tři 32bitové hodnoty s plovoucí desetinnou čárkou.|  
 |**FLOAT4**|Vektor, který obsahuje čtyři 32bitové hodnoty s plovoucí desetinnou čárkou.|  
-|**bajtů**|Hodnota typu 8bitové celé číslo se znaménkem.|  
+|**byte**|Hodnota typu 8bitové celé číslo se znaménkem.|  
 |**2 bajtů**|Hodnota 16bitové celé číslo se znaménkem.|  
 |**4bajtové**|Hodnota, 32bitové celé číslo se znaménkem. Stejné jako **int**.|  
 |**na 8 bajtů**|Hodnota 64bitové celé číslo se znaménkem. Stejné jako **int64**.|  
@@ -103,14 +104,14 @@ Tabulka grafických objektů v aplikaci Visual Studio analýza grafických vám 
 |**half2**|Vektor, který obsahuje dvě hodnoty s plovoucí desetinnou čárkou 16 bitů.|  
 |**half3**|Vektor, který obsahuje tři hodnoty s plovoucí desetinnou čárkou 16 bitů.|  
 |**half4**|Vektor, který obsahuje čtyři 16 bitů s plovoucí desetinnou čárkou.|  
-|**Double**|Hodnota s plovoucí desetinnou čárkou 64-bit.|  
-|**celá čísla**|Hodnota, 32bitové celé číslo se znaménkem. Stejné jako **4bajtové**.|  
+|**double**|Hodnota s plovoucí desetinnou čárkou 64-bit.|  
+|**int**|Hodnota, 32bitové celé číslo se znaménkem. Stejné jako **4bajtové**.|  
 |**Int64**|Hodnota 64bitové celé číslo se znaménkem. Stejné jako **8bajtová**.|  
 |**xint**|32bitové šestnáctkové hodnoty. Stejné jako **x4byte**.|  
 |**xint64**|64bitová verze šestnáctkové hodnoty. Stejné jako **x8byte**.|  
 |**uint**|Hodnota, 32bitové celé číslo bez znaménka. Stejné jako **u4byte**.|  
 |**UInt64**|Hodnota 64bitové celé číslo bez znaménka. Stejné jako **u8byte**.|  
-|**BOOL**|Logická hodnota (`true` nebo `false`) hodnotu. Každý logická hodnota je reprezentována 32bitovou hodnotu.|  
+|**bool**|Logická hodnota (`true` nebo `false`) hodnotu. Každý logická hodnota je reprezentována 32bitovou hodnotu.|  
   
 ## <a name="see-also"></a>Viz také  
  [Diagnostika grafiky (ladění grafiky DirectX)](visual-studio-graphics-diagnostics.md)   

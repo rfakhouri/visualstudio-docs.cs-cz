@@ -19,11 +19,12 @@ caps.latest.revision: "35"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc6254be575593056c386360aa0d7c0a83833d75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: a69b93f05619b16657d045cc7ef833d468ae7a51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-isolated-shell"></a>Izolované prostředí sady Visual Studio
 Prostředí sady Visual Studio izolované vám umožní vytvořit samostatné aplikace, které můžou běžet souběžně sdílená s jinými verzemi sady Visual Studio. Je použité především k hostování specializované nástroje, které můžete používat služby Visual Studio, ale také mít přizpůsobený vzhled a značky. Funkcích nástroje Visual Studio a skupinami příkaz nabídky je možné snadno zapnout zapnout a vypnout. Aplikační tituly, ikony aplikace a úvodní obrazovky jsou plně přizpůsobit. Seznam přizpůsobitelné funkce najdete v tématu [přizpůsobení izolované prostředí](../extensibility/customizing-the-isolated-shell.md).  
@@ -66,4 +67,4 @@ Prostředí sady Visual Studio izolované vám umožní vytvořit samostatné ap
 |Rozšiřitelnost|Využívá VSPackages a MEF komponenty|  
   
 ## <a name="see-also"></a>Viz také  
- [Prostředí shell (izolovaný nebo integrované)](../extensibility/shell-isolated-or-integrated.md)
+ [Prostředí (izolované nebo integrované)](../extensibility/shell-isolated-or-integrated.md)

@@ -36,11 +36,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d9f7cef6c0dfa35a4a718c0918fbc55409af04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c89e8b018fa0979fe4c73f5cd9e0db95efd88d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, prostředí, dialogové okno Možnosti
 Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazení dokumentů v integrované vývojové prostředí (IDE) a spravovat externí změny dokumentů a souborů. Tohoto dialogového okna můžete přejít pomocí kliknutím na tlačítko **možnosti** na **nástroje** nabídce a potom vyberete **dokumenty** v **prostředí** uzlu. Pokud **dokumenty** nejsou uvedené v seznamu vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  

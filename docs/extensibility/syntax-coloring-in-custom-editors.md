@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c7a63c077207fdc85f3ad8b57119e1c7d1ca30b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8c40538b34c23e88b2c680db170b9d46b7b40f62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Vlastní editorů zvýrazňování syntaxe
 Visual Studio SDK prostředí editory, včetně editoru základní pomocí služby jazyk identifikovat konkrétní syntaktické položky a jejich zobrazení pomocí zadaného barev pro zobrazení daného dokumentu.  
@@ -60,4 +61,4 @@ Visual Studio SDK prostředí editory, včetně editoru základní pomocí služ
  [Ve službě jazyk starší zvýrazňování syntaxe](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementace barevné zvýrazňování syntaxe](../extensibility/internals/implementing-syntax-coloring.md)   
  [Postupy: použití předdefinované Colorable položek](../extensibility/internals/how-to-use-built-in-colorable-items.md)   
- [Vlastní Colorable položky](../extensibility/internals/custom-colorable-items.md)
+ [Vlastní položky, které lze zabarvit](../extensibility/internals/custom-colorable-items.md)

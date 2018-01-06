@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e487acefcb06c4fa0cd2070bfcf20bd065d500ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: vssdk
+ms.openlocfilehash: 8d72a42c89cc775b9312d301a052ee102d977728
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="elimination-of-sak-files"></a>Odstranění ~ SAK soubory
 1.2 rozhraní API modulu Plugin zdroj ovládacího prvku ~ SAK soubory byly nahrazeny schopností příznaky a nové funkce, která zjišťují, jestli podporuje modul plug-in správy zdroje MSSCCPRJ souborů a sdílené rezervace.  
@@ -54,4 +55,4 @@ ms.lasthandoff: 10/31/2017
 >  Pokud tento klíč registru je nastavené na DWORD: 00000000, je ekvivalentní klíč se neexistující a Visual Studio pořád se pokouší o vytvoření dočasné soubory. Ale pokud DWORD: 00000001 nastavení klíče registru, Visual Studio nebude pokoušet vytvořit dočasné soubory. Místo toho předpokládá, že modul plug-in správy zdroje nepodporuje MSSCCPRJ. Soubor SCC a nepodporuje sdílené rezervace.  
   
 ## <a name="see-also"></a>Viz také  
- [Co je nového v zdroj ovládacího prvku modulu Plug-in rozhraní API verze 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+ [Co je nového v rozhraní API modulu plug-in správy zdrojového kódu ve verzi 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
