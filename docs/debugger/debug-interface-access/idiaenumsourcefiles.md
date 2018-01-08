@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbcd3e50e1b53a56342b5ab344ec54180001fa80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2e549a4c7dffe565ef311bb75ff5706afb5c65cd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Provede výčet různých zdrojové soubory obsažené v datovém zdroji.  
@@ -34,13 +35,13 @@ IDiaEnumSourceFiles : IUknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiaenumsourcefiles::get__newenum –](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Načte `IEnumVARIANT Interface` verzi této enumerátor.|  
-|[Idiaenumsourcefiles::get_count –](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Načte počet zdrojové soubory.|  
-|[Idiaenumsourcefiles::Item –](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Načte zdrojového souboru pomocí indexu.|  
-|[Idiaenumsourcefiles::Next –](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Načte zadaný počet zdrojové soubory v pořadí výčtu.|  
-|[Idiaenumsourcefiles::Skip –](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Přeskočí zadaný počet zdrojové soubory v posloupnosti výčtu.|  
-|[Idiaenumsourcefiles::Reset –](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[Idiaenumsourcefiles::clone –](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Načte `IEnumVARIANT Interface` verzi této enumerátor.|  
+|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Načte počet zdrojové soubory.|  
+|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Načte zdrojového souboru pomocí indexu.|  
+|[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Načte zadaný počet zdrojové soubory v pořadí výčtu.|  
+|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Přeskočí zadaný počet zdrojové soubory v posloupnosti výčtu.|  
+|[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Návrat na začátek v sekvenci výčtu.|  
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
   
 ## <a name="remarks"></a>Poznámky  
   
@@ -91,4 +92,4 @@ IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiasession::FindFile –](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [Idiasession::findlinesbylinenum –](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)   
- [Idiatable –](../../debugger/debug-interface-access/idiatable.md)
+ [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

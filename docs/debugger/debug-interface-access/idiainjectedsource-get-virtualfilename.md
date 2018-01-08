@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab52f6dee7152837c17508aac65eeab501c7f0c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef67fcde92715e1b405d337e3bdc41ae3835473e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiainjectedsourcegetvirtualfilename"></a>IDiaInjectedSource::get_virtualFilename
 Načte název přidělený nepocházející ze souborů zdrojového kódu; To znamená, kód, který byl vložit.  
@@ -39,4 +40,4 @@ HRESULT get_virtualFilename (
  V případě úspěchu vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. Jinak vrátí kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiainjectedsource –](../../debugger/debug-interface-access/idiainjectedsource.md)
+ [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

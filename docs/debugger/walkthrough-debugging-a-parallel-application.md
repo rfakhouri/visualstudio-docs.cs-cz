@@ -25,11 +25,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a532c2e238528ea32492aae22b001ab0955f8c6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b05192c2d57c280cef970d4b8887ff7eadbb27b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Návod: Ladění paralelní aplikace v sadě Visual Studio
 Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní zásobníky** windows k ladění paralelní aplikace. Tyto windows vám pomůžou pochopit a ověřit modul runtime chování kód, který používá [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). Tento názorný postup obsahuje ukázkový kód, který má integrovanou zarážky. Po kód dělí, Průvodce ukazuje způsob použití **paralelních úloh** a **paralelní zásobníky** windows a zkontrolujte ji.  

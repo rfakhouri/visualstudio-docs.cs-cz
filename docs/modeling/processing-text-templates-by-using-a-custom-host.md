@@ -14,11 +14,12 @@ caps.latest.revision: "33"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: ea51f2b4b11680c07d9e7344d097b954a57d3f4d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 5f4456899b724d8a7cd2dba6039b28eee29bfafd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Zpracování textových šablon pomocí vlastního hostitele
 *Transformace textu šablony* zpracovat trvá *textové šablony* souboru jako vstup a vytváří textový soubor jako výstup. Můžete volat transformační modul text z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření, nebo z samostatné aplikace běžící na počítači, na kterém [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalovaná. Nicméně je nutné zadat *ukázka hostitele textových*. Tato třída připojuje šablonu k prostředí, vyhledává prostředky, jako jsou sestavení a vkládané soubory, a zpracovává výstup a chybové zprávy.  
@@ -62,5 +63,5 @@ string output = engine.ProcessTemplate(templateString, host);
  [Proces transformace textových šablon](../modeling/the-text-template-transformation-process.md)  
  Popisuje, jak transformace textu fungují, a které části si můžete přizpůsobit.  
   
- [Vytváření vlastních T4 Text šablony procesory direktiv](../modeling/creating-custom-t4-text-template-directive-processors.md)  
+ [Vytváření vlastních procesorů pro direktivy textových šablon T4](../modeling/creating-custom-t4-text-template-directive-processors.md)  
  Poskytuje přehled procesorů direktiv textových šablon.
