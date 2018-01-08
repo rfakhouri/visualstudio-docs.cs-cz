@@ -25,11 +25,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e00d43898fbc29ba238a670d39cf8d3e7638122
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 4fe5ac5ec207bb52884c097d1562a85a3414ba7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="allocation-hook-functions"></a>Funkce háku přidělení
 Funkce háku přidělení, nainstalovat pomocí [_crtsetallochook –](/cpp/c-runtime-library/reference/crtsetallochook), se nazývá pokaždé, když je paměti přidělené, znovu přidělený nebo vydání. Tento typ háku slouží k mnoha různým účelům. Použijte ho k testování, jak se aplikace zpracovává situacích, není dostatek paměti, například nebo chcete zjistit vzory přidělování nebo k protokolování informací o přidělení pro pozdější analýzu.  

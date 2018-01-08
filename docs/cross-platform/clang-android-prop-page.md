@@ -44,11 +44,12 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - VC.Project.VCClangCompilerTool.MultiProcessorCompilation
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 876650f14ea5017d80a554ed038ca1bcd5d19cfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 693ab7a1068ebe841e7e59a79ed015c4f287798a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-project-properties-android-c"></a>Vlastnosti projektu clang (Android C++)
 
@@ -72,8 +73,8 @@ Kontrola zabezpečení | Kontrola zabezpečení pomáhá zjišťovat zásobníku
 Pozice nezávislé kódu | Generovat pozice nezávislé kódu (PIC) pro použití ve sdílené knihovně.
 Použít krátký výčty | Typ výčtu využívá jenom tolik bajtů požadovaných ve vstupní sadě možných hodnot.
 Povolit informace běhového typu | Přidá kód pro kontrolu typy objektů C++ v době běhu (informace o běhu programu typ).     (frtti, fno rtti)
-Jazyk C – Standard | Určuje standard jazyka C. | **Výchozí**<br>**Kompilátorem C89** -Standard kompilátorem C89 Language.<br>**C99** -C99 Language Standard.<br>**C11** -C11 Language Standard.<br>**C99 (GNU dialekt)** -C99 Standard Language (GNU dialekt).<br>**C11 (GNU dialekt)** -C11 Standard Language (GNU dialekt).<br>
-Standard jazyka C++ | Určuje standard jazyka C++. | **Výchozí**<br>**C ++ 03** -03 jazyk standardu C ++.<br>**C ++ 11** -C ++ 11 jazyk Standard.<br>**C ++ 14** -C ++ 14 jazyk Standard.<br>**C ++ 03 (GNU dialekt)** – C ++ 03 Standard Language (GNU dialekt).<br>**C ++ 11 (GNU dialekt)** – C ++ 11 Standard Language (GNU dialekt).<br>**C ++ 14 (GNU dialekt)** – C ++ 14 Standard Language (GNU dialekt).<br>
+Jazyk C – Standard | Určuje standard jazyka C. | **Default**<br>**Kompilátorem C89** -Standard kompilátorem C89 Language.<br>**C99** -C99 Language Standard.<br>**C11** -C11 Language Standard.<br>**C99 (GNU dialekt)** -C99 Standard Language (GNU dialekt).<br>**C11 (GNU dialekt)** -C11 Standard Language (GNU dialekt).<br>
+Standard jazyka C++ | Určuje standard jazyka C++. | **Default**<br>**C ++ 03** -03 jazyk standardu C ++.<br>**C ++ 11** -C ++ 11 jazyk Standard.<br>**C ++ 14** -C ++ 14 jazyk Standard.<br>**C ++ 03 (GNU dialekt)** – C ++ 03 Standard Language (GNU dialekt).<br>**C ++ 11 (GNU dialekt)** – C ++ 11 Standard Language (GNU dialekt).<br>**C ++ 14 (GNU dialekt)** – C ++ 14 Standard Language (GNU dialekt).<br>
 Definice preprocesoru | Definuje předběžného zpracování symboly pro zdrojový soubor. (-D).
 Nedefinované Definice preprocesoru | Určuje, že jeden nebo více preprocesor undefines.  (-U [makro])
 Nedefinované všechny definice preprocesoru | Nedefinované všechny dříve definované preprocesoru hodnoty.  (-undef)

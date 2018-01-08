@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2450ed950227b6755b57f20f3520a1e75034aafe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 1ebb2621aa8da474c08d12e187feadef85840663
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="insert-new-records-into-a-database"></a>Vkládání nových záznamů do databáze
 Chcete-li vkládání nových záznamů do databáze, můžete použít `TableAdapter.Update` metoda nebo jeden z TableAdapter DBDirect – metody (konkrétně `TableAdapter.Insert` metoda). Další informace najdete v tématu [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
@@ -83,4 +84,4 @@ Nové záznamy můžete vložit přímo do databáze pomocí příkazu objekty.
  Musíte mít přístup k databázi, kterou se pokoušíte připojit k, jakož i oprávnění k provedení vloží do požadované tabulky.  
   
 ## <a name="see-also"></a>Viz také  
- [Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+ [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

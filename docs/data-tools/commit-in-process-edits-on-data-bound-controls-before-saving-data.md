@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 38d50f1e3da0004869ae66df8e486affa1b68c2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Potvrzení úprav v procesu na ovládací prvky vázané na data před uložením dat
 Při úpravě hodnoty v ovládacích prvcích vázaných na data, musí uživatelé přejít mimo potvrzení aktualizované hodnoty podkladové zdroje dat, který je ovládací prvek vázán na aktuální záznam. Při přetahování položek z [okno zdroje dat](add-new-data-sources.md) na formuláři, první položka, která je vyřadit generuje kód do **Uložit** tlačítko klikněte na události <xref:System.Windows.Forms.BindingNavigator>. Tento kód zavolá <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metodu <xref:System.Windows.Forms.BindingSource>. Proto volání <xref:System.Windows.Forms.BindingSource.EndEdit%2A> metoda se vygeneruje pouze pro první <xref:System.Windows.Forms.BindingSource> přidaná do formuláře.  

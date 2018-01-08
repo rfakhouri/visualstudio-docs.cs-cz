@@ -229,11 +229,12 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: d578457776afb058ee0f40bba4bb0d208f2f5e66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: ea895859550d1ebb5ddfebe743388dc971d82592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Další prostředky pro odstraňování chyb přístupu k datům
 Pomoc při řešení potíží chyby a upozornění můžete najít ve veřejné fórech Microsoft Developer Network (MSDN). Následující tabulka uvádí data související s fóra k dispozici na webu MSDN.  
@@ -262,4 +263,4 @@ Pomoc při řešení potíží chyby a upozornění můžete najít ve veřejné
  Informace o řešení potíží s připojením k serveru SQL Server najdete v tématu [postup řešení potíží s připojením k databázového stroje SQL Server](http://go.microsoft.com/fwlink/?LinkID=246151).  
   
 ## <a name="see-also"></a>Viz také  
- [Data nástroje sady Visual Studio pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

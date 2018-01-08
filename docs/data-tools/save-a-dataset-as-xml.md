@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 1e41e0481325838b5de60b76ed1c7c1fc617f48e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: c6176b1d7e9f18ce08fddf21f199cd21304ca8a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-a-dataset-as-xml"></a>Uložení datové sady ve formátu XML
 Při volání metody dostupné XML na datovou sadu můžete přístupu k datům XML v datové sadě. Chcete-li uložit data ve formátu XML, můžete zavolat buď <xref:System.Data.DataSet.GetXml%2A> metoda nebo <xref:System.Data.DataSet.WriteXml%2A> metodu <xref:System.Data.DataSet>.  
@@ -48,4 +49,4 @@ Při volání metody dostupné XML na datovou sadu můžete přístupu k datům 
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]  
   
 ## <a name="see-also"></a>Viz také  
- [Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+ [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 23cf5ee9ef7369d8c0f52adde639adad4abe3ae6
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 9f2373e3a851899d139360caf0f6bb8b6ab0efa5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Postupy: ukládání dat pomocí transakce
 Ukládání dat v transakci pomocí <xref:System.Transactions> oboru názvů. Použití <xref:System.Transactions.TransactionScope> objektu účast v transakci, která je pro vás automaticky spravovány.  
@@ -53,5 +54,5 @@ Vrácení transakce, způsobí výjimku před voláním <xref:System.Transaction
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]  
   
 ## <a name="see-also"></a>Viz také
-[Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)  
-[Návod: Ukládání dat do transakce](../data-tools/save-data-in-a-transaction.md)  
+[Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)  
+[Návod: Uložení dat do transakce](../data-tools/save-data-in-a-transaction.md)  

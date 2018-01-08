@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3f8a31f886548d03f7acac58d392713ced297b42
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: cb3f6c23d4994346dab26e800c116ad0c7301f4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Tato metoda související je metoda zálohování pro následující výchozí insert, update nebo delete metody
 Tato metoda související je metoda zálohování pro následující výchozí insert, update nebo delete metody. Pokud odstraníte, budou odstraněny také tyto metody. Chcete pokračovat?  
@@ -36,5 +37,5 @@ Tato metoda související je metoda zálohování pro následující výchozí i
      Zavře okno se zprávou a nebudou provedeny žádné změny.  
   
 ## <a name="see-also"></a>Viz také
-[Návrhář relací objektů zprávy](../data-tools/o-r-designer-messages.md)  
+[Zprávy Návrháře relací objektů](../data-tools/o-r-designer-messages.md)  
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

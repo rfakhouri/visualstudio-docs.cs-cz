@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 12b8c166873802e3c0e6a8d4e73ff1b686229222
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 5556a5d9a537684a8d1e73ee363b4c9ac8f6baa8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdroje dat
 Ovládací prvky vázané na data můžete vytvořit tak, že přetáhnete položky z **zdroje dat** okna do WPF designer nebo Návrhář formulářů Windows. Jednotlivé položky **zdroje dat** okno má výchozí ovládací prvek, který se vytvoří, když ji přetáhněte do návrháře. Můžete ale vytvoření různých ovládacího prvku.  

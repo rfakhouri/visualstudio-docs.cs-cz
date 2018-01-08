@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7d49f0ddc965327334aea471b1276b4e78987ec2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 4968eab5e1d355543a8658e72540bc66fa2543b9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizace dat pomocí TableAdapter
 Poté, co byla upravena a ověřit data v datovou sadu, můžete odeslat aktualizovaná data zpět na databázi zavoláním `Update` metodu [TableAdapter](../data-tools/create-and-configure-tableadapters.md). `Update` Metoda aktualizace do jedné tabulky datového a spustí příkaz správný (INSERT, UPDATE nebo DELETE) na základě <xref:System.Data.DataRow.RowState%2A> z každý řádek dat v tabulce. Když datovou sadu s související tabulky, Visual Studio generuje TableAdapterManager třídy, které můžete použít k provedení aktualizace. Třída TableAdapterManager zajistí, že jsou ve správném pořadí podle omezení cizího klíče, které jsou definovány v databázi provedeny aktualizace. Pokud používáte ovládací prvky vázané na data, vytvoří architektuře vazby dat členské proměnné volané tableAdapterManager TableAdapterManager třídy. 
@@ -53,4 +54,4 @@ Poté, co byla upravena a ověřit data v datovou sadu, můžete odeslat aktuali
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
   
 ## <a name="see-also"></a>Viz také  
- [Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+ [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

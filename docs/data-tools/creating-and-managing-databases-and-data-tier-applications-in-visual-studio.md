@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7f538c51bd5f15f91dfae0d13a9dae8cf4f8afb1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Databázové projekty a aplikace na datové vrstvě v sadě Visual Studio  
 Databázové projekty můžete použít k vytvoření nové databáze nové aplikace na datové vrstvě (DAC) a k aktualizaci existující databáze a aplikace na datové vrstvě. Databázové projekty i DAC projekty umožňují použít techniky verze řízení a projekt správy pro váš vývojový program databáze na mnohem stejným způsobem, že použijete tyto techniky spravovaným nebo nativním kódem. Vám může pomoci váš vývojový tým vytvoříte spravovat změny databáze a databázové servery *DAC projektu*, *projekt databáze*, nebo *serverový projekt* a umístit ho v části Správa verzí. Členy týmu prohlížet soubory a ujistěte se, vytvářet a testovat změny v *izolované vývojového prostředí*, nebo izolovaného prostoru, než je sdílet s týmem. K zajištění kvality kódu, můžete váš tým dokončit a otestovat všechny změny pro konkrétní verzi databáze v testovacím prostředí, před nasazením změny do produkčního prostředí.  
@@ -37,4 +38,4 @@ Seznam funkcí databáze, které podporuje aplikace datové vrstvy, najdete v č
 |**Při vytváření prototypu, ověření testů, výsledky a změny databázové skripty a objekty:** můžete použít [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] editor provést jednu z těchto běžné úlohy.|-   [Dotaz a textové editory (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (webu společnosti Microsoft)|  
   
 ## <a name="see-also"></a>Viz také
-[Data nástroje sady Visual Studio pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+[Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

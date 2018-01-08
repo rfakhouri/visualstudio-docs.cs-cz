@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7beda305bbe0673b6e1b47f0e11eb641ab8aa0d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cfcb19170221ea7e37a25cb93c7bf77fc769fd1a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiainjectedsource"></a>IDiaInjectedSource
 Přístupy vložit uložené ve zdroji dat DIA zdrojového kódu.  
@@ -34,13 +35,13 @@ IDiaInjectedSource : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiainjectedsource::get_crc –](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Načte kontrolu cyklické redundance (CRC) vypočítaných z bajtů zdrojového kódu.|  
-|[Idiainjectedsource::get_length –](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Získá počet bajtů kódu.|  
-|[Idiainjectedsource::get_filename –](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Načte název souboru pro zdroj.|  
-|[Idiainjectedsource::get_objectfilename –](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Načte název souboru objektů, ke kterému bylo kompilováno zdroji.|  
-|[Idiainjectedsource::get_virtualfilename –](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Načte název přidělený nepocházející ze souborů zdrojového kódu; To znamená, kód, který byl vložit.|  
-|[Idiainjectedsource::get_sourcecompression –](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Načte indikátoru komprese zdroj použít.|  
-|[Idiainjectedsource::get_source –](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Načte bajtů zdrojového kódu.|  
+|[IDiaInjectedSource::get_crc](../../debugger/debug-interface-access/idiainjectedsource-get-crc.md)|Načte kontrolu cyklické redundance (CRC) vypočítaných z bajtů zdrojového kódu.|  
+|[IDiaInjectedSource::get_length](../../debugger/debug-interface-access/idiainjectedsource-get-length.md)|Získá počet bajtů kódu.|  
+|[IDiaInjectedSource::get_filename](../../debugger/debug-interface-access/idiainjectedsource-get-filename.md)|Načte název souboru pro zdroj.|  
+|[IDiaInjectedSource::get_objectFilename](../../debugger/debug-interface-access/idiainjectedsource-get-objectfilename.md)|Načte název souboru objektů, ke kterému bylo kompilováno zdroji.|  
+|[IDiaInjectedSource::get_virtualFilename](../../debugger/debug-interface-access/idiainjectedsource-get-virtualfilename.md)|Načte název přidělený nepocházející ze souborů zdrojového kódu; To znamená, kód, který byl vložit.|  
+|[IDiaInjectedSource::get_sourceCompression](../../debugger/debug-interface-access/idiainjectedsource-get-sourcecompression.md)|Načte indikátoru komprese zdroj použít.|  
+|[IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)|Načte bajtů zdrojového kódu.|  
   
 ## <a name="remarks"></a>Poznámky  
  Vložený zdroj je text, který je vložit během kompilace. To neznamená preprocesor `#include` použít v jazyce C++.  
@@ -124,4 +125,4 @@ void PrintInjectedSource(IDiaInjectedSource* pSource)
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiaenuminjectedsources::Item –](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)   
  [Idiaenuminjectedsources::Next –](../../debugger/debug-interface-access/idiaenuminjectedsources-next.md)   
- [Idiaenuminjectedsources –](../../debugger/debug-interface-access/idiaenuminjectedsources.md)
+ [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 368481d0a38b7b8f721aa18be0ecda7d35a42aba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 734c7b8a8416503e457f964d74e0a3773cbada2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástroje pro sestavení pomocí iOS
 Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použít k úpravám, ladění a nasazení iOS kódu simulátoru iOS nebo zařízení s iOS, ale kvůli licenční omezení, musí být kód vytvořené a spouštět vzdáleně na macu. Sestavení a spuštění aplikace pro iOS pomocí sady Visual Studio, budete muset nastavit a konfigurovat vzdáleného agenta [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), na vaše Mac. Obslužné rutiny vzdáleného agenta sestavení požadavky ze sady Visual Studio a spustí aplikace na zařízení s iOS připojené k počítači Mac, nebo v simulátoru na Mac. iOS  
@@ -239,4 +240,4 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
      kde *config_file_path* je cesta k souboru konfigurace ve formátu JSON. Možnosti spuštění a jejich hodnoty nesmí obsahovat pomlčky.  
   
 ## <a name="see-also"></a>Viz také  
- [Instalace Visual C++ pro vývoj mobilních pro různé platformy](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+ [Instalace komponenty Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

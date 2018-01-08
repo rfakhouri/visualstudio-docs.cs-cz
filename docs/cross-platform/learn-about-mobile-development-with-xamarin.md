@@ -11,11 +11,12 @@ caps.latest.revision: "12"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: fe983de5dab35a031d6c99b37f2da77a200212f9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: xamarin
+ms.openlocfilehash: 9e2c341d9516959fcc7ef6bc40215023891d618a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Další informace o mobilní vývoj pomocí Xamarinu
 Toto téma vás přesměruje na přehled materiál, který vám pomůže pochopit vývoj mobilních aplikací pro víc platforem pomocí Xamarinu. Pokud jste ještě nenainstalovali, Visual Studio a Xamarin, spusťte [nastavení a instalaci](../cross-platform/setup-and-install.md) proces nejprve, pak se vraťte sem práci prostřednictvím těchto prostředků, zatímco instalační programy běží.  

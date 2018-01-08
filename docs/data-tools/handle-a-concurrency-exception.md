@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9162274d234c22e8bbe299389d2b41f57a69d714
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) se vyvolá, když dva uživatelé pokusí změnit stejná data v databázi ve stejnou dobu. V tomto návodu vytvoříte aplikace systému Windows, která ukazuje, jak zachytit <xref:System.Data.DBConcurrencyException>, vyhledejte řádek, který chybu způsobil a další strategie, jak se nezdařilo.  
@@ -224,4 +225,4 @@ Uživatel je pak možné přepsat databázi navrhované verzí, nebo zrušit akt
 10. Výběr **ne** zruší aktualizace a aktualizace datovou sadu s hodnotami, které jsou aktuálně v databázi. Výběr **Ano** navržená hodnota zapisuje do databáze.  
   
 ## <a name="see-also"></a>Viz také  
- [Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+ [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

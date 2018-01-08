@@ -16,11 +16,12 @@ caps.latest.revision: "27"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a362829f776cb1a9a50609c83821ba569537796a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 21ec79e9cb20e68ee57298a0d7a197657a616e31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Použití poznámek SAL k snížení míry výskytu závad kódu C/C++
 SAL je jazyk poznámky Microsoft zdrojového kódu. Pomocí zdrojového kódu poznámky, můžete provést záměr za kódu explicitní. Tyto poznámky také povolit automatizované analýze statické nástrojů pro analýzu kódu přesněji, s výrazně méně falešně pozitivních a výsledkům.  
@@ -31,7 +32,7 @@ SAL je jazyk poznámky Microsoft zdrojového kódu. Pomocí zdrojového kódu po
   
      Poskytuje informace a příklady, které se zobrazí základní poznámek SAL.  
   
--   [Zadávání poznámek k parametrům funkcí a návratovým hodnotám](../code-quality/annotating-function-parameters-and-return-values.md)  
+-   [Zadávání poznámek k parametrům funkcí a návratovým hodnotám](../code-quality/annotating-function-parameters-and-return-values.md)  
   
      Uvádí poznámek SAL pro funkce a parametry funkce.  
   
@@ -43,11 +44,11 @@ SAL je jazyk poznámky Microsoft zdrojového kódu. Pomocí zdrojového kódu po
   
      Uvádí poznámek SAL pro třídy a struktury.  
   
--   [Zadávání poznámek k chování při zamykání](../code-quality/annotating-locking-behavior.md)  
+-   [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)  
   
      Vysvětluje, jak pomocí zámku mechanismy poznámek SAL.  
   
--   [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+-   [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
      Uvádí poznámek SAL, určující podmínku nebo oboru (umístění) dalších poznámek SAL.  
   

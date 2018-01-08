@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 34a3f5c0add8085556fd1e8e8efe6bdcaaac79ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 33039813b0373257a99378bc6d90b5c0f4f7130b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
 Načte kontrolu cyklické redundance (CRC) vypočítaných z bajtů zdrojového kódu.  
@@ -39,4 +40,4 @@ HRESULT get_crc (
  V případě úspěchu vrátí `S_OK`. Vrátí `S_FALSE` -li tato vlastnost není podporována. Jinak vrátí kód chyby.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiainjectedsource –](../../debugger/debug-interface-access/idiainjectedsource.md)
+ [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

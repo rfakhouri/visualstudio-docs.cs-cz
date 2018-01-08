@@ -22,11 +22,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b2ad22eccb561bf58ee845d58268620aad778a20
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 629bc4dc36ade84f6a6e55518775f0d11165da7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++
 Můžete nakonfigurovat pravidla, které používá nástroj pro analýzu kódu k analýze kódu v každé konfiguraci vašeho projektu. Kromě toho můžete nastavit analýzy kódu pro potlačení upozornění z kódu, které se generují a přidávají do projektu pomocí nástroje třetích stran.  
@@ -54,4 +55,4 @@ Můžete nakonfigurovat pravidla, které používá nástroj pro analýzu kódu 
   
 ## <a name="see-also"></a>Viz také  
  [Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
- [Analýza kódu pro C/C++ upozornění](../code-quality/code-analysis-for-c-cpp-warnings.md)
+ [Upozornění Analýzy kódu pro C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)

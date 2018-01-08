@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64360c57f0d4b09f0dc7e8026208c7ec542709c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 689fe39cfb8a7719efbba15b412800d9dfa78361
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Upozornění Analýzy kódu pro spravovaný kód
 Spravovaná analýza kódu nástroj poskytuje upozornění, které indikují porušení pravidel v knihovnách spravovaného kódu. Upozornění jsou uspořádány do oblasti pravidlo například návrhu, lokalizace, výkonu a zabezpečení. Každé upozornění označuje, že je porušení pravidel spravovaná analýza kódu. Tato část obsahuje podrobný diskusí a příklady pro každý upozornění analýzy spravovaného kódu.  
@@ -47,7 +48,7 @@ Spravovaná analýza kódu nástroj poskytuje upozornění, které indikují por
 |||  
 |-|-|  
 |[Upozornění podle CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Zobrazí seznam všech upozornění podle CheckId|  
-|[Kryptografie upozornění](../code-quality/cryptography-warnings.md)|Upozornění, které podporují bezpečnější knihovny a aplikace prostřednictvím správné použití šifrování.|  
+|[Upozornění kryptografie](../code-quality/cryptography-warnings.md)|Upozornění, které podporují bezpečnější knihovny a aplikace prostřednictvím správné použití šifrování.|  
 |[Upozornění ohledně návrhu](../code-quality/design-warnings.md)|Upozornění, které podporují správné knihovny návrhu podle specifikace [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pokynů pro návrh.|  
 |[Upozornění globalizace](../code-quality/globalization-warnings.md)|Upozornění, které podporují připravených knihovny a aplikace.|  
 |[Upozornění interoperability](../code-quality/interoperability-warnings.md)|Upozornění, které podporují interakci s klienty COM.|  
@@ -59,4 +60,4 @@ Spravovaná analýza kódu nástroj poskytuje upozornění, které indikují por
 |[Upozornění spolehlivosti](../code-quality/reliability-warnings.md)|Upozornění, které podporují spolehlivost knihovny a aplikace, například správné využití paměti a přístup z více vláken.|  
 |[Upozornění zabezpečení](../code-quality/security-warnings.md)|Upozornění, které podporují bezpečnější knihovny a aplikace.|  
 |[Upozornění využití](../code-quality/usage-warnings.md)|Upozornění, která podporují vhodné použití [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|[Chyby zásad analýzy kódu](../code-quality/code-analysis-policy-errors.md)|Chyby, ke kterým došlo, pokud zásady pro analýzu kódu nesplněno při vrácení se změnami.|
+|[Chyby zásad Analýzy kódu](../code-quality/code-analysis-policy-errors.md)|Chyby, ke kterým došlo, pokud zásady pro analýzu kódu nesplněno při vrácení se změnami.|

@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938aaf760a2a6305580331945875391e6ad819af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d37843917be3a2668e9a2887f046eaee00600dc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Začínáme (Přístup k rozhraní ladění SDK)
 Ladění rozhraní přístup (DIA) SDK poskytuje vám s instruktážní dokumentace a ukázky, která ukazuje, jak používat rozhraní API DIA. Použití rozhraní a metody v sadě DIA SDK k vývoji vlastních aplikací, které otevřete soubory PDB a dbg a vyhledat obsah pro symboly, hodnoty, atributy, adresy a další informace o ladění. Tato sada SDK poskytuje referenční tabulky pro vlastnosti přidružené k symboly v aplikací C++ nalezen.  
@@ -47,8 +48,8 @@ Ladění rozhraní přístup (DIA) SDK poskytuje vám s instruktážní dokument
  [Přehled](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
  Zkontroluje Základní architektura DIA.  
   
- [Dotazování. Soubor PDB](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+ [Dotazování na soubor .Pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
  Obsahuje podrobné pokyny týkající se používání rozhraní API DIA do souboru PDB dotazu.  
   
 ## <a name="see-also"></a>Viz také  
- [Debug Interface Access SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)
+ [Přístup k rozhraní ladění SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

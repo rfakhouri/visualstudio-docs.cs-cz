@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b7aa58a94b44270c89a1ea0ddcb380abd830b31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 23df339101ada3ad6f2d59311c38380d0cdfc201
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 Přeskočí zadaný počet symboly v posloupnosti výčtu.  
@@ -39,4 +40,4 @@ HRESULT Skip (
  V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` Pokud neexistují žádné další symboly tak, aby přeskočil.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiaenumsymbols –](../../debugger/debug-interface-access/idiaenumsymbols.md)
+ [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

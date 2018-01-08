@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: da148a7258a055e230e8a1377d90adffebaff6d7
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e29edf31a0ad3535b671ed2e972e994553c78547
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>Nelze načíst informace o schématu pro objekt databáze \<název objektu >
 Tato zpráva se obvykle zobrazují při aktualizaci objektu v **Průzkumníka serveru Průzkumníka a databáze** zkopírován do schránky, odstraněna z databáze a pak vložit do návrháře. Vzhledem k tomu, že databázový objekt již existuje, zobrazí se tato zpráva.  
@@ -26,5 +27,5 @@ Tato zpráva se obvykle zobrazují při aktualizaci objektu v **Průzkumníka se
 -   Klikněte na tlačítko **OK** zavřete dialogové okno.  
   
 ## <a name="see-also"></a>Viz také
-[Návrhář relací objektů zprávy](../data-tools/o-r-designer-messages.md)  
+[Zprávy Návrháře relací objektů](../data-tools/o-r-designer-messages.md)  
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

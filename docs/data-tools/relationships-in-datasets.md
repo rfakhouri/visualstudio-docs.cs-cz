@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bfc537118f6c1769ec98893099daa0c61d1b5b1d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 95bfef50e7ce5016b68df1442e625a88beb22181
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-relationships-between-datasets"></a>Vytvářet vztahy mezi datové sady
 Datové sady, které obsahují související data tabulky, použijte <xref:System.Data.DataRelation> objekty představují vztah nadřazený podřízený mezi tabulkami a vrácení souvisejících záznamů od sebe navzájem. Přidání souvisejících tabulek do datové sady pomocí **Průvodce konfigurací zdroje dat**, nebo **návrháře Dataset**, vytvoří a nakonfiguruje <xref:System.Data.DataRelation> objekt pro vás.  
@@ -108,4 +109,4 @@ Relace mezi tabulkami dat zobrazí jako řádky v **návrháře Dataset**, s kl�
 2.  Z **Data** nabídce vyberte možnost **zobrazení popisků relací** příkaz, který zobrazí název relace. Zrušte zaškrtnutí tohoto příkazu skrýt název relace.
 
 ## <a name="see-also"></a>Viz také
-[Vytvoření a konfigurace datové sady v sadě Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
+[Vytvoření a konfigurace datových sad v sadě Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

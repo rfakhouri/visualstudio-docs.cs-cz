@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a38494b21c87e249317b0a55fbdffa95702404cd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Vytváření vlastních sad pravidel Analýzy kódu
 Použijete pravidel analýzy kódu pro spravovaný projekt kódu zadáním sadu pravidel, která obsahuje jeden nebo více pravidel. Standardní pravidla sady Microsoft zadejte skupiny pravidel, která jsou uspořádána podle funkce a hloubka. Pravidla pro pokynů základní návrhu a pravidla pokynů návrhu pro rozšířené Microsoft například obsahovat pravidla, které soustředit na použitelnost a jeho udržovatelnost problémy s přidané důraz na pravidla pojmenování v sadě pravidel Extended.  
@@ -24,7 +25,7 @@ Použijete pravidel analýzy kódu pro spravovaný projekt kódu zadáním sadu 
  Můžete také vytvořit vlastní pravidlo sady, které kombinuje dvě nebo více standardní sady pravidel nebo který určuje pravidla v jednu nebo více sad standardního pravidla. Uložíte vlastní pravidlo nastaví Analýza souboru a můžete je zadat ve více projektech kódu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: vytvoření vlastní sady pravidel](../code-quality/how-to-create-a-custom-rule-set.md)  
+ [Postupy: Vytvoření vlastní sady pravidel](../code-quality/how-to-create-a-custom-rule-set.md)  
  Popisuje postup vytvoření vlastního pravidla nastavit úpravou jednu nebo více sad standardního pravidla.  
   
  [Práce v pravidle s editorem sad](../code-quality/working-in-the-code-analysis-rule-set-editor.md)  

@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68524053107052094d53b21cac93fbbc053881dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 498b3b3eced8e21cb2079715a0bd6c2375eb8dfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Sada pravidel Rozšířená pravidla správnosti pro spravovaný kód
 Sada pravidel pravidla správnosti rozšířené Microsoft maximalizuje logiku a framework využití chyby, které jsou hlášeny nástroje Analýza kódu. Navíc je důraz na konkrétní scénáře, jako je interoperabilita modelů COM a mobilní aplikace. Měli byste zvážit, včetně toto pravidlo nastavit, pokud jeden z těchto scénářů vztahuje na projektu nebo k nalezení dalších problémů ve vašem projektu.  

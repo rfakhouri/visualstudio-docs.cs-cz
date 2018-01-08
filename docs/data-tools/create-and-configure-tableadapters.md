@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 11086ba17f3f2fb7af99d76b3efadece4a23c426
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 3c9b501b78a82a94b81b2a29c86fd07a7a0d7f98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-configure-tableadapters"></a>Vytvoření a konfigurace TableAdapters
 Objekty TableAdapter umožňují komunikaci mezi aplikací a databází. Připojení k databázi, spusťte dotazy nebo uložené procedury a vraťte se nová data tabulky nebo zadejte existující <xref:System.Data.DataTable> s vrácená data. TableAdapters můžete také odeslat aktualizovaná data z vaší aplikace zpět do databáze.  

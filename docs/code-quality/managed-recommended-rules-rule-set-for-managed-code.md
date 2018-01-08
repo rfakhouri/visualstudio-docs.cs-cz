@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a727c41ef4b7539eb20a10d91fe981ad1c5ad1c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a3ce64d9573013ad1fe1e76b50cfc5da940347e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Sada pravidel Spravovaná doporučená pravidla pro spravovaný kód
 Pravidlo doporučená pravidla spravované Microsoft nastavit a zaměřit se na nejdůležitější problémy v spravovaného kódu, včetně potenciální bezpečnostní díry, dojde k chybě aplikace a další důležité chyby logiku a návrhu můžete použít. Toto pravidlo nastavené v žádné vlastní sady pravidel, které vytvoříte pro projekty by měla obsahovat.  

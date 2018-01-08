@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 198e4b6d0ba2f3517cf907007cc544ca2e154013
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-code-metrics-data"></a>Práce s daty metrik kódu
 
@@ -103,7 +104,7 @@ Můžete vybrat a Kopírovat vybraný řádek dat metrik kódu do schránky jako
 
 Můžete vytvořit [Visual Studio Team Services (VSTS)](/vsts/index) pracovní položka, která je založená na výsledkem **výsledků metriky kódu** okno. Když je vytvořena pracovní položka, Visual Studio automaticky zadá název v **název** data metriky pole a kódu v rámci **historie** kartě.
 
-Další informace o služby VSTS pracovní položky, najdete v části [pracovní položky](/vsts/work/work-items/index).
+Další informace o služby VSTS pracovní položky, najdete v části [pracovní položky (VSTS)](/vsts/work/work-items/index).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>K vytvoření pracovní položky podle výsledku
 

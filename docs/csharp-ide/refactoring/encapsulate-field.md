@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.encapsulatefield
 dev_langs: csharp
-ms.openlocfilehash: f934d33d2c7bdc698b00305f3c86f904eae99e33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 59b71a0716415dcedeab9954486ef27e0fc438d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encapsulate-a-field-in-c"></a>Zapouzdření pole v jazyce C# #
 **Co:** umožňuje zapnout pole do vlastnosti a aktualizovat všechny použití tohoto pole použití nově vytvořený vlastnosti.
@@ -55,4 +56,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Viz také  
 [Refaktoring (C#)](../refactoring-csharp.md)  
-[Zobrazení náhledu změn](../../ide/preview-changes.md)
+[Náhled změn](../../ide/preview-changes.md)

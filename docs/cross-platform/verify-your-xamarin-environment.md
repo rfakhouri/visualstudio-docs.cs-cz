@@ -11,20 +11,21 @@ caps.latest.revision: "13"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: a770fdeae316e6ee79e919df9c9cc1b4551b90b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: 203f977ac4bc9a0ba72284b54a6936a77bae0f61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="verify-your-xamarin-environment"></a>Ověřte prostředí Xamarin
 Po dokončení instalační programy (viz [nastavení a instalaci](../cross-platform/setup-and-install.md)), věnovat několik minut, ověřte, zda je vše připraveno prostředí vývoj na platformě Xamarin.  
   
  Po dokončení těchto ověřování, můžete provést jednu nebo obě následující kurzy:  
   
--   [Další informace základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md)  
+-   [Základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md)  
   
--   [Vývoj aplikací s nativní uživatelského rozhraní pomocí Xamarinu v sadě Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
+-   [Vytváření aplikací s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
   
 ## <a name="all-platforms"></a>Všechny platformy  
  Nejprve vyberte **nástroje > Možnosti**, rozbalte položku **Xamarin > jiných**a klikněte na tlačítko **zkontrolujte teď** odkaz pro aktualizace. Musíte používat Xamarin 4.0.3.214 nebo později zabránili předchozí problémy s licencí.  

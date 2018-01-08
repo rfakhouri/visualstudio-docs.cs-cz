@@ -29,11 +29,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9491eb19796c766d216af458ca122b1fa5032596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 84ade967c00e33390402e16a1b2980277f89ed5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="continuing-execution-after-an-exception"></a>Pokračování v provádění po výjimce
 Pokud ladicí program dělí provádění z důvodu výjimku, zobrazí se **pomocníka výjimka**, ve výchozím nastavení. Pokud je zakázána **pomocníka výjimka** v **možnosti** dialogové okno, zobrazí se **Pomocníka pro výjimky** (C# nebo Visual Basic) nebo **výjimky**  dialogové okno (C++).  

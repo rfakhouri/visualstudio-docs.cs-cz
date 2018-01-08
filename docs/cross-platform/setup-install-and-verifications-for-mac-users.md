@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: b93ea35fd58d5ee678176e3da98e33b65f82740a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: b4656e98095b9ab7ff5dd5e95dd729c972190720
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Instalační program, instalace a ověření pro uživatele Mac
 Toto téma je určené výhradně pro vývojáře, kteří pracují hlavně na Macu a kteří volitelně použijte sadu Visual Studio uvnitř virtuálního počítače s Windows v Mac. Pokud jste vývojář pracující hlavně na počítači se systémem Windows a muset nastavit sekundární Mac pro cílení na iOS, přečtěte si téma hlavní [nastavení a instalaci](../cross-platform/setup-and-install.md) tématu.

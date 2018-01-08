@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cb887a31855c7c31451b2f15c4da3c386a3fe0f4
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: a5243d0a7b4e1d6ddf8665afda98fef824f723b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Upozornění. Do dialogového okna konfigurace chování, které nebyly použity byly provedeny změny
 Upozornění. Do dialogového okna konfigurace chování, které nebyly použity byly provedeny změny. Opravdu chcete použít změny?  
@@ -32,5 +33,5 @@ Upozornění. Do dialogového okna konfigurace chování, které nebyly použity
 -   Klikněte na tlačítko **ne** zrušit změnu vybraný **třída** a **chování**.  
   
 ## <a name="see-also"></a>Viz také
-[Návrhář relací objektů zprávy](../data-tools/o-r-designer-messages.md)  
+[Zprávy Návrháře relací objektů](../data-tools/o-r-designer-messages.md)  
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

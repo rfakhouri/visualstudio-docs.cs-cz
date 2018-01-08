@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 78322512fdc59b4ba661bca0d40d1532ac4c98e2
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 4b403d3bbe2e42ee74af7a2f7babe8b2700dd0d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Vytváření vyhledávacích tabulek v aplikacích WPF
 Termín *vyhledávací tabulky* (někdy nazývané *vyhledávání vazby*) popisuje ovládacího prvku, který zobrazí informace z tabulky jeden datový na základě hodnoty pole cizího klíče v druhé tabulce. Můžete vytvořit vyhledávací tabulku tak, že přetáhnete hlavní uzel nadřazené tabulky nebo objekt v **zdroje dat** oken na ovládací prvek, který je již vázána na sloupec nebo vlastnost v související podřízené tabulce.  
@@ -61,7 +62,7 @@ Předpokládejme například tabulku `Orders` v prodejní databázi. Každý z�
   
 7.  V části podřízený uzel klikněte na rozevírací nabídky pro položku, která má vztah podřízenými a nadřazenými data. (V předchozím příkladu je to **CustomerID** uzlu.) Vyberte jednu z následujících typů ovládacích prvků, které podporují vazby vyhledávání:  
   
-    -   **Pole se seznamem**  
+    -   **ComboBox**  
   
     -   **ListBox**  
   

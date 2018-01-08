@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9943b6d5263a616523db92a67df58746579b0d51
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: b53dec270481ca8aa6009b9ddd27bdcdfeae6037
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Postupy: Konfigurace dědičnosti pomocí Návrhář relací objektů
 [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) Podporuje koncept dědění jedné tabulky, jak často jsou implementované v relačním systémech. V jedné tabulce dědičnosti je jedné databáze tabulku, která obsahuje pole pro informace nadřazené a podřízené informace. Pomocí relačních dat sloupce diskriminátoru obsahuje hodnotu, která určuje, které třídy žádné záznam patří.  

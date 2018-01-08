@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 118d19a1be813b0488503be86a316ccc82bd7b37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29b783e20925b3eaa4a7b0956fdcfdbcab06a328
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="metadata-as-source"></a>Metadata jako zdroj
 Metadata jako zdroj umožňuje zobrazit metadata, která se zobrazí jako zdrojový kód C# do vyrovnávací paměti jen pro čtení. To umožňuje zobrazení deklarace typů a členů (bez implementace). Metadata jako zdroj můžete zobrazit spuštěním **přejít k definici** příkazu pro typy nebo členy, jejichž zdrojový kód není k dispozici z projekt nebo řešení.  

@@ -14,11 +14,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6396b698a5f4d2602c9969d6cab0422832b3e6dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d11a8c3169b019ac504ed98258d9281037eb1dd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Postupy: Vytváření nebo aktualizace standardních zásad vracení se změnami Analýzy kódu
 Může vyžadovat, že analýza kódu být spouštěn na všechny projekty kódu v týmového projektu pomocí zásad vrácení se změnami kódu analysis. Vyžadování analýza kódu může zlepšit kvalitu kód, který se změnami do základu kódu.  
@@ -71,4 +72,4 @@ Může vyžadovat, že analýza kódu být spouštěn na všechny projekty kódu
     -   Další informace o tom, jak vytvořit a implementovat pravidlo vlastních zásad vrácení se změnami nastavení najdete [implementace vlastních zásad vrácení se změnami pro spravovaný kód](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Vytváření a používání zásad vrácení se změnami analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+ [Vytváření a používání zásad vrácení se změnami Analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

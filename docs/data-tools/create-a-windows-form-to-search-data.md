@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2799e2425ec9748075fc082881243658c363e327
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: fd882c536fefde9a9eb6ab546d6049d1f1216771
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Vytvoření formuláře Windows k vyhledávání dat
 Běžný scénář aplikace je zobrazení vybrané dat ve formuláři. Například můžete chtít zobrazit objednávky pro konkrétního zákazníka nebo podrobnosti o určitém pořadí. V tomto scénáři uživatel zadá informace do formuláře a potom je dotaz proveden se vstupem uživatele jako parametr; To znamená je vybraná data, na základě parametrizovaného dotazu. Dotaz vrátí jenom data, která splňuje kritéria zadaná uživatelem. Tento návod ukazuje, jak vytvořit dotaz, který vrátí zákazníků v konkrétním městě a upravit uživatelské rozhraní, aby uživatelé mohli zadejte název města a stiskněte tlačítko provést dotaz.  

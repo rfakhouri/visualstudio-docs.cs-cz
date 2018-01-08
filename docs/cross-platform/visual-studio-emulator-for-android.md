@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7900b976e2533f1bd9a53d1e9e437339c6041a73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df3e4def97d8563e3901662ede92e79acd5c5d4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulátor sady Visual Studio pro Android
 Emulátor sady Visual Studio pro Android je plochy aplikace, která emuluje zařízení se systémem Android. Poskytuje virtualizované prostředí, ve kterém můžete ladění a testování aplikací pro Android bez fyzického zařízení. Poskytuje také izolované prostředí pro prototypy vaší aplikace.  
@@ -100,4 +101,4 @@ Emulátor sady Visual Studio pro Android je plochy aplikace, která emuluje zař
   
 ## <a name="see-also"></a>Viz také  
  [Systémové požadavky pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Řešení potíží s emulátor sady Visual Studio pro Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Poradce při potížích s emulátorem sady Visual Studio pro Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

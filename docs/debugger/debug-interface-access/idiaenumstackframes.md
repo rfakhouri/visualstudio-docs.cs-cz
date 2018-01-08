@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3cbfea7394a2720ed4341e883fefe90556c86e57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f9c4c81fcecb76cc094297cb8fa5c733a677a831
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumstackframes"></a>IDiaEnumStackFrames
 Provede výčet různých rámce zásobníku, která je k dispozici.  
@@ -27,8 +28,8 @@ Provede výčet různých rámce zásobníku, která je k dispozici.
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiaenumstackframes::Next –](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Načte zadaný počet elementů rámce zásobníku z pořadí výčtu.|  
-|[Idiaenumstackframes::Reset –](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Návrat na začátek v sekvenci výčtu.|  
+|[IDiaEnumStackFrames::Next](../../debugger/debug-interface-access/idiaenumstackframes-next.md)|Načte zadaný počet elementů rámce zásobníku z pořadí výčtu.|  
+|[IDiaEnumStackFrames::Reset](../../debugger/debug-interface-access/idiaenumstackframes-reset.md)|Návrat na začátek v sekvenci výčtu.|  
   
 ## <a name="remarks"></a>Poznámky  
   

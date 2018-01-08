@@ -17,11 +17,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eba5a9f55e5d3d08eee48dc083a7e2f848118162
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 42c5f99b3bf5ba95bc279cd5e117745ccc8e02c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-refactoring-c"></a>Refaktoring pro přejmenování (C#)
 **Přejmenujte** je refaktoringu funkce v sadě Visual Studio integrované vývojové prostředí (IDE), která poskytuje snadný způsob, jak přejmenovat identifikátory pro symboly kód například pole, místní proměnné, metody, obory názvů, vlastnosti a typy. **Přejmenujte** lze použít ke změně názvy v komentářích a v řetězcích a změnit deklarace a volání identifikátoru.  

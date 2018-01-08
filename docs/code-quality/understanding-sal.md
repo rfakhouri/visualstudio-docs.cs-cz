@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d1c6ac08b47bd5ad5e6dd84bbf78496c421a21a6
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-sal"></a>Porozumění SAL
 Poznámky jazyk zdrojového kódu Microsoft (SAL) poskytuje sadu poznámky, které lze použít k popisu, jak funkce používá jeho parametrů, předpokladů, které umožňuje o nich a záruky, které umožňuje po dokončení. Poznámky jsou definovány v záhlaví souboru `<sal.h>`. Visual Studio analýzy kódu pro jazyk C++ používá poznámek SAL k úpravě jeho analýzu funkce. Další informace o SAL 2.0 ovladače pro vývoj pro Windows najdete v tématu [poznámky SAL 2.0 pro Windows ovladače](http://go.microsoft.com/fwlink/?LinkId=250979).  

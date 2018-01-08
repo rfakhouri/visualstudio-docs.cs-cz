@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 318acd282090dd17fcfd7fd12e7370e906c67806
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Postupy: vytvoření LINQ na třídy SQL, které jsou namapované na tabulky a zobrazení (Návrhář relací objektů)
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]třídy, které jsou namapované na databázových tabulek a zobrazení, se nazývají *tříd entit*. Třídy entita se mapuje na záznam, kdežto jednotlivé vlastnosti třídy entity mapování na jednotlivé sloupce, které tvoří záznam. Vytváření tříd entit, které jsou založeny na databázových tabulek nebo zobrazení tak, že přetáhnete tabulky a zobrazení z **Průzkumníka serveru**/**Průzkumník databáze** na [technologie LINQ to SQL nástrojů v Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Vygeneruje třídy a použije konkrétní [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atributy povolit [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funkce (datové komunikace a možnosti Úpravy <xref:System.Data.Linq.DataContext>). Podrobné informace o [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] třídách naleznete v tématu [technologii LINQ to SQL objektový Model](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  

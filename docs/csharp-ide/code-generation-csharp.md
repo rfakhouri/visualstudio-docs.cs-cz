@@ -13,11 +13,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 773fecba4b3a635d86d6b06937151e38ad94912e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: f70130a0652f6a7f9d7947ef0cebafb038ea6335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-features-for-c"></a>Funkce generování kódu pro jazyk C# #
 Visual Studio může pomoct generovat části zdrojového kódu, takže se můžete soustředit na skutečné práci.  Následující funkce generování kódu jsou k dispozici v sadě Visual Studio pro jazyk C#:

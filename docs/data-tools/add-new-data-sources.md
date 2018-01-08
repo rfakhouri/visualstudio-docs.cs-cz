@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0c83367d383ab72194e5f83609b0f93d8602fdcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 865f575aefedb5813a72d7a0bb2024bc85313db0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-new-data-sources"></a>Přidat nové zdroje dat
 V rámci .NET data nástroje v sadě Visual Studio termín *zdroj dat* odkazují na objekty .NET, které se připojují k úložišti dat a zpřístupnit data pro aplikace .NET. Návrháři Visual Studio můžete využívat výstup zdroje dat pro generování často používaný kód, který váže data do formulářů, když jste přetažení databázové objekty z **zdroje dat** okno. Tento typ zdroje dat může být:  
@@ -97,4 +98,4 @@ V rámci .NET data nástroje v sadě Visual Studio termín *zdroj dat* odkazují
  Zdroj dat ze seznamu serveru SharePoint můžete vytvořit spuštěním **Průvodce konfigurací zdroje dat** a výběrem **SharePoint** typ zdroje dat. SharePoint zpřístupní data prostřednictvím [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], takže vytvoření zdroje dat SharePoint je stejný jako vytváření zdroje dat ze služby. Výběr **SharePoint** položky v **Průvodce konfigurací zdroje dat** otevře **přidat odkaz na službu** dialogové okno, kde můžete připojit ke službě data služby SharePoint Tím přejdete na serveru SharePoint.  To vyžaduje SharePoint SDK.  
   
 ## <a name="see-also"></a>Viz také  
- [Data nástroje sady Visual Studio pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+ [Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

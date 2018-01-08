@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c76a173f137ede589b870f5119153a4233bcd730
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d85ef4eeb3d0836c1da8b12bf3413e11699d1af1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Zpřístupní podrobnosti o základní umístění a paměť posunutí modulu nebo image.  
@@ -34,9 +35,9 @@ IDiaImageData : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiaimagedata::get_relativevirtualaddress –](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Načte umístění ve virtuální paměti modulu vzhledem k aplikaci.|  
-|[Idiaimagedata::get_virtualaddress –](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Načte umístění ve virtuální paměti bitové kopie.|  
-|[Idiaimagedata::get_imagebase –](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Načte paměti umístění, kde by měla být založena bitovou kopii.|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|Načte umístění ve virtuální paměti modulu vzhledem k aplikaci.|  
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Načte umístění ve virtuální paměti bitové kopie.|  
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Načte paměti umístění, kde by měla být založena bitovou kopii.|  
   
 ## <a name="remarks"></a>Poznámky  
  Některé datové proudy debug (XDATA, PDATA) obsahovat kopií dat, které jsou také uloženy v bitové kopii. Tyto Streamovat data objektů může být dotázán na `IDiaImageData` rozhraní. Najdete v části "Poznámky pro volající" v tomto tématu podrobnosti.  
@@ -120,4 +121,4 @@ void ShowImageData(IDiaSession *pSession)
   
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
- [Idiaenumdebugstreamdata –](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)
+ [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

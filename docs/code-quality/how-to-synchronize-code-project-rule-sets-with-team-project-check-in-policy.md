@@ -13,13 +13,14 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de3a7bfaccec45dc6b7fce1def45a6e6de8e75f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 899f9026b2e7c86ad1bd9f722dc7e1904cab2b9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Postupy: Synchronizace sady pravidel projektu kódu se zásadou vracení se změnami týmového projektu
+# <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>Postupy: Synchronizace sady pravidel projektu kódu se zásadou vrácení se změnami týmového projektu
 Můžete synchronizovat nastavení analýzy kódu pro kód projekty zásad vrácení se změnami pro týmový projekt tak, že zadáte sadu pravidel, která obsahuje alespoň pravidla, která jsou zadaná v pravidle nastavení zásad vrácení se změnami. Vaše vývojáře realizace může informovat o název a umístění pravidla pro nastavení zásady vrácení se změnami. Chcete-li zajistit, aby používal analýzy kódu pro projekt správnou sadu pravidel, můžete použít jednu z následujících možností:  
   
 -   Pokud zásad vrácení se změnami používá jednu z sady předdefinovaných pravidel Microsoft, otevřete dialogové okno Vlastnosti projektu kódu, zobrazit stránku Analýza kódu a vyberte pravidlo, nastavte na stránce nastavení projektu kódu analýza kódu. Microsoft sady standardních pravidel jsou automaticky nainstalovány pomocí sady Visual Studio jsou nastaveny na jen pro čtení a by neměla být upravována. Pokud nejsou upravovat sady pravidel, je zaručeno pravidla v zásady a sady pravidel místní, tak, aby odpovídaly.  

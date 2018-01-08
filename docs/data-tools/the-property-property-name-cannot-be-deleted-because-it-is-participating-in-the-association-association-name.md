@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 150d176c105e8368fc97f36a19774824dcb91c3e
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 44a83e15cd712fb98c697b68b1dccaea5d0caf99
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>Vlastnost &lt;název vlastnosti&gt; nelze odstranit, protože se účastní přidružení &lt;název přidružení&gt;
 Vybranou vlastnost je nastavena jako **vlastnosti přidružení** pro přidružení mezi třídami uvedené v chybové zprávě. Vlastnosti nelze odstranit, pokud se účastní přidružení mezi datových tříd.  
@@ -34,5 +35,5 @@ Vybranou vlastnost je nastavena jako **vlastnosti přidružení** pro přidruže
 4.  Pokuste se znovu odstranit vlastnost.  
   
 ## <a name="see-also"></a>Viz také
-[Návrhář relací objektů zprávy](../data-tools/o-r-designer-messages.md)  
+[Zprávy Návrháře relací objektů](../data-tools/o-r-designer-messages.md)  
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

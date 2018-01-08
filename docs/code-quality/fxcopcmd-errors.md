@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 ms.author: gewarren
 author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2439b04c921de6e06b98bd1bb5a9fc0af3ea56d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 48b082f5b00f260d2f8e2519a4551fab23dc1011
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fxcopcmd-errors"></a>Chyby jazyka FxCopCmd
 Fxcopcmd – nebere v úvahu všechny chyby jako kritické. Pokud jazyka FxCopCmd má dostatečné informace k provedení částečné analýzy, provede analýzu a sestavy chybách, ke kterým došlo k chybě. Kód chyby, která je 32bitové celé číslo, obsahuje bitovou kombinaci číselných hodnot, které odpovídají chyby.  
@@ -54,4 +55,4 @@ Fxcopcmd – nebere v úvahu všechny chyby jako kritické. Pokud jazyka FxCopCm
     >  Jazyka FxCopCmd návratový kód "Sestavení odkazuje na chyby" 0x200 sám o sobě je upozornění, nikoli k chybě. Tento návratový kód označuje, že nebyly nalezeny odkazy na chybějící nepřímých ale, aby bylo možné k jejich zpracování jazyka FxCopCmd. Je upozornění, že je možné, že některé výsledky analýzy může mít dojde k narušení bezpečnosti. Při kombinaci s jakýkoli návratový kód, zvažte "Sestavení odkazuje na chyby" návratový kód za chybu.  
   
 ## <a name="see-also"></a>Viz také  
- [Chyby aplikace analýzy kódu](../code-quality/code-analysis-application-errors.md)
+ [Chyby aplikace Analýzy kódu](../code-quality/code-analysis-application-errors.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 51b579d047987648caab31136b6378e0a6f0475d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 699fc53d0679e303e9c661c54634f162d95e2a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ pro vývoj mobilních pro různé platformy
 Můžete vytvářet nativní aplikace C++ pro iOS, Android a Windows zařízení a společný kód sdílené složky v knihovnách vytvořené pro iOS, Android a Windows pomocí Visual C++ pro vývoj mobilních řešení pro různé platformy. Toto je možnost k dispozici ve Visual Studiu 2015, který nainstaluje sady SDK a nástroje, které jsou potřeba pro vývoj pro různé platformy sdílené knihovny a nativní aplikace. Při instalaci, můžete vytvořit kód, který běží na iOS a zařízení se systémem Android a platformy kromě Windows, Windows Phone a Xbox Visual C++.  
@@ -97,12 +98,12 @@ Můžete vytvářet nativní aplikace C++ pro iOS, Android a Windows zařízení
   
 ## <a name="in-this-section"></a>V tomto oddílu  
   
-1.  [Instalace Visual C++ pro vývoj mobilních pro různé platformy](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1.  [Instalace komponenty Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
-2.  [Instalace a konfigurace nástroje pro sestavení pomocí iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
+2.  [Instalace a konfigurace nástrojů pro vytváření pomocí iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-3.  [Vytvoření aplikace pro Android nativní aktivity](../cross-platform/create-an-android-native-activity-app.md)  
+3.  [Vytvoření aplikace s NativeActivity pro Android](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [Sestavení aplikace OpenGL ES pro Android a iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4.  [Vytvoření aplikace OpenGL ES na Androidu a iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5.  [Příklady mobilní vývoj pro různé platformy](../cross-platform/cross-platform-mobile-development-examples.md)
+5.  [Příklady vývoje multiplatformních mobilních řešení](../cross-platform/cross-platform-mobile-development-examples.md)

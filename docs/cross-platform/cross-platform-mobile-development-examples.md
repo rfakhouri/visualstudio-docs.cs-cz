@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 6809ffe0c53448d7d00fec1169b90fd87274367e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 030fe898926c1e1d124a780c9ba73fec31109cd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Příklady mobilní vývoj pro různé platformy
 Některé šablony nainstalované ve Visual C++ pro vývoj mobilních řešení pro různé platformy generování dokončení příklady, které se můžete dozvědět se od. Kromě toho webu Windows Dev Center má několik příklad aplikace, které si můžete stáhnout a vyzkoušet v sadě Visual Studio.  

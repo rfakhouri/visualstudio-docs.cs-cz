@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 1c7e99ce49df969fae439afac5d65369fae9c37a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: e7078e6814abeb0db2afd2cffe698f923e530179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Uložení dat z objektu do databáze
 Data můžete uložit v objektech k databázi předáním hodnoty z objektu do jednoho z TableAdapter DBDirect – metody (například `TableAdapter.Insert`). Další informace najdete v tématu [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
@@ -78,4 +79,4 @@ Data můžete uložit v objektech k databázi předáním hodnoty z objektu do j
  Musíte mít oprávnění k provedení vybrané příkaz INSERT, UPDATE nebo DELETE pro tabulku v databázi.  
   
 ## <a name="see-also"></a>Viz také  
- [Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+ [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

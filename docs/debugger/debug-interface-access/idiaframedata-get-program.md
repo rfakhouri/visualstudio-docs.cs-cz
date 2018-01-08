@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a26982c1827b9d9b4a7ed09e8aa3af61c9141c9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10d5d331c4308586485ea77824cda4864c6ee943
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 Načte řetězec program, který se používá k výpočtu registrace nastavit před voláním funkce aktuální.  
@@ -52,4 +53,4 @@ HRESULT get_program (
  Všimněte si, že řetězec programu je specifické pro procesor a konvence volání, nastavení pro funkci reprezentována aktuální rámec zásobníku.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiaframedata –](../../debugger/debug-interface-access/idiaframedata.md)
+ [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

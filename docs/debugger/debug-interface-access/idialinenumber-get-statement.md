@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05cb3f85fe2f1ea82622a4537b89895a44eebf63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8659123c09482537aadc3baedb597f5c7030708d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 Získá příznak označující, že tyto informace řádek popisuje začátku prohlášení, nikoli výraz ve zdroji programu.  
@@ -42,4 +43,4 @@ HRESULT get_statement (
  Příkazy může zahrnovat více řádků. Tato metoda určuje, pokud počet přidružený řádek označuje začátek Víceřádkový příkaz.  
   
 ## <a name="see-also"></a>Viz také  
- [Idialinenumber –](../../debugger/debug-interface-access/idialinenumber.md)
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

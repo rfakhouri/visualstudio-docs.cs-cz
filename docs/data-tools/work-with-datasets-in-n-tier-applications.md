@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 1bb1b91894fc562b7080a8225b69b3703948a604
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Práce s datových sad ve víceúrovňových aplikacích
 *Vícevrstvé datové aplikace* datově zaměřená aplikace, které jsou rozdělené do několika logických vrstev (nebo *vrstev*). Jinými slovy vícevrstvé datové aplikace je aplikace, která rozdělen do více projektů, s úroveň přístupu dat, vrstvu obchodní logiky a prezentační vrstvou každý svůj vlastní projektu. Další informace najdete v tématu [vícevrstvé datové aplikace přehled](../data-tools/n-tier-data-applications-overview.md).  

@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 05a0a339b413495aadfa397e5fec3b826f920026
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 Když vytvoříte aplikaci, která zpracovává data v databázi, můžete provádět základní úlohy, jako je například definování připojovací řetězce, vkládání dat a spuštění uložené procedury. Podle tohoto tématu zjistíte, jak používat databázi v aplikaci jednoduchou aplikaci "forms over data" Windows Forms pomocí Visual C# nebo Visual Basic a ADO.NET.  Všechny dat technologie .NET – včetně datové sady, technologie LINQ to SQL a Entity Framework – nakonec proveďte kroky, které jsou velmi podobné těm, které jsou uvedené v tomto článku.  
@@ -232,4 +233,4 @@ K dokončení logice FillOrCancel formuláře, postupujte podle těchto kroků.
 Vyberte **F5** klíč pro vytvoření a testování vaší aplikace po code každou obslužnou rutinu události kliknutí a pak je po dokončení kódování.
 
 ## <a name="see-also"></a>Viz také
-[Data nástroje sady Visual Studio pro .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+[Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

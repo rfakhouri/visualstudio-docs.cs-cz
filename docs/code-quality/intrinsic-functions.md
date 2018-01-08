@@ -19,11 +19,12 @@ caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: be65ae9177591b015cd8b29b3dbdc262b66a30ab
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: c25c76ba43c983a6029c8d50e183ccf839ef08bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intrinsic-functions"></a>Vnitřní funkce
 Výraz v SAL může být výraz C/C++, za předpokladu, že je výraz, který nemá vedlejší účinky – například ++,--a volání funkce v tomto kontextu jsou vybavené vedlejší účinky.  SAL však poskytuje některé funkce jako objekty a některé vyhrazené znaky, které můžete použít ve výrazech SAL. Tyto jsou označovány jako *vnitřní funkce*.  
@@ -37,7 +38,7 @@ Výraz v SAL může být výraz C/C++, za předpokladu, že je výraz, který ne
 |`_Inexpressible_(expr)`|Nevyjadřuje situaci, kde velikost vyrovnávací paměti je příliš složité pomocí výrazu poznámky – například když je počítaný prohledáním vstupní datové sady a pak počítání vybrané členy.|  
 |`_Nullterm_length_(param)`|`param`je počet elementů ve vyrovnávací paměti než, ale není včetně zakončením hodnotu null. Lze ji použít na všechny vyrovnávací paměti typu neagregačními, není void.|  
 |`_Old_(expr)`|Vyhodnocena v předběžnou podmínku, `_Old_` vrátí vstupní hodnotu `expr`.  Při vyhodnocování v po podmínka, vrátí hodnotu `expr` jako jeho by byly vyhodnoceny v předběžnou podmínku.|  
-|`_Param_(n)`|`n`Tý parametr funkce, počítáno od 1 do `n`, a `n` literálu integrální konstanta. Pokud je parametr, tato anotace je stejný jako při přístupu ke parametr podle názvu. **Poznámka:** `n` mohou odkazovat na poziční parametry, které jsou definované za tři tečky nebo mohou být použity v prototypy funkcí nejsou-li použity názvy.  |  
+|`_Param_(n)`|`n`Tý parametr funkce, počítáno od 1 do `n`, a `n` literálu integrální konstanta. Pokud je parametr, tato anotace je stejný jako při přístupu ke parametr podle názvu. **Poznámka:** `n` mohou odkazovat na poziční parametry, které jsou definované za tři tečky nebo mohou být použity v prototypy funkcí nejsou-li použity názvy.|  
 |`return`|C/C++ vyhrazené – klíčové slovo `return` lze použít ve výrazu SAL k označení návratovou hodnotu funkce.  Hodnota je k dispozici pouze ve stavu post; je chyba syntaxe pro použití v předběžné stavu.|  
   
 ## <a name="string-specific"></a>Konkrétní řetězec  

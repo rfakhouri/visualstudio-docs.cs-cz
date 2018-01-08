@@ -11,11 +11,12 @@ ms.assetid: 96cfed7f-f090-4369-8a85-2dcd4c7cf12b
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 301c4f7a8955f22952787c78eaeabff826495c29
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: ff462a62bfd7fe687f2b0d35f365e76468a7e0e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implement-an-abstract-class-in-c"></a>Implementace abstraktní třídy v jazyce C# #
 **Co:** umožňuje okamžitě generování kódu potřebnou k implementaci abstraktní třídu. 
@@ -51,4 +52,4 @@ ms.lasthandoff: 10/31/2017
 
 ## <a name="see-also"></a>Viz také  
 [Generování kódu (C#)](../code-generation-csharp.md)  
-[Zobrazení náhledu změn](../../ide/preview-changes.md)
+[Náhled změn](../../ide/preview-changes.md)

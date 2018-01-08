@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cc60c4fe5ff014b1088509c8e5c4982bf7f4322a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: e5b38288cc8d0d58e18e4aea3de2b80470783ea6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Postupy: rozšíření kód vygenerovaný Návrhář relací objektů
 Kód vygenerovaný [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] znovu vygeneruje při změně tříd entit a dalších objektů na plochu návrháře. Z důvodu této nové vygenerování kódu se kód, který přidáte do generovaný kód přepíše obvykle při návrháře znovu generuje kód. [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Poskytuje možnost pro vygenerování souborů třídu, ve které můžete přidat kód, který nedojde k přepsání. Příkladem přidání vlastního kódu pro kód vygenerovaný [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] je přidání ověření dat pro LINQ na třídy SQL (entita). Informace najdete v tématu [postupy: přidávání ověření do tříd entit](../data-tools/how-to-add-validation-to-entity-classes.md).  
@@ -50,5 +51,5 @@ Kód vygenerovaný [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_orde
 ## <a name="see-also"></a>Viz také  
  [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
  [Návod: Vytváření třídy LINQ to SQL (Návrhář O-R)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
- [Technologie LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
  

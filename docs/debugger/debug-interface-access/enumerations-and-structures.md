@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15fed0e2638ba8870a47a65a359b4f02bc6c7eda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad7b4d4a42c15398b1817c06ec0193aef16e865b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerations-and-structures"></a>Výčty a struktury
 Jsou to výčty a struktury využívané prostředím DIA SDK.  
@@ -77,11 +78,11 @@ Jsou to výčty a struktury využívané prostředím DIA SDK.
  Popisuje položku v adres mapují.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
+ [Rozhraní (Přístup k rozhraní ladění SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
  Určuje rozhraní poskytované DIA SDK.  
   
- [Konstanty (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
+ [Konstanty (Přístup k rozhraní ladění SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  Určuje konstanty, které jsou k dispozici v sadě DIA SDK.  
   
 ## <a name="see-also"></a>Viz také  
- [Referenční dokumentace](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+ [Referenční informace](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e9cba33565af81a76d043a3fc3f63eef831e1ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b5e9e0a3ca0a994547679ba71e545b4235b6c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>Postupy: Vytvoření vlastní sady pravidel
 V [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)], [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)], a [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)], můžete vytvořit a upravit vlastní *sadu pravidel* podle potřeb konkrétní projekt přidružené analýza kódu. Chcete-li vytvořit vlastní pravidlo nastavit, otevřete ho nebo více standardní pravidlo nastaví v editoru sadu pravidel. Potom můžete přidat nebo odebrat konkrétní pravidla a akce, která nastane, když analýza kódu určuje, že došlo k porušení pravidlo můžete změnit.  

@@ -26,11 +26,12 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 9f4e4cd3ebb12e59fc4b7fbcf16122b381d5f610
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-data"></a>Ukládání dat
 Ukládání dat je, že proces uchování dat v datovém modelu aplikace vrátit zpět na původní úložiště dat, obvykle relační databáze jako SQL Server.  
@@ -40,7 +41,7 @@ Ukládání dat je, že proces uchování dat v datovém modelu aplikace vrátit
  Následující témata popisují koncepty a přidružené k ukládání dat úlohy.  
   
 ## <a name="related-topics"></a>Související témata  
-[Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)  
+[Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)  
  Poskytuje přehled o tom, jak změn v datové sadě a jak datovou sadu sleduje informace o změnách, chcete-li tyto změny uložit do databáze.  
   
 [Postupy: přidat, upravit a odstranit entity (služby WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  

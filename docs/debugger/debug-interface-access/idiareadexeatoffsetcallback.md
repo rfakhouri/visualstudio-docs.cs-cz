@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aaeee00b1e077a587d33e5b1362dda666fcae698
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: abb829d12f05a9c220bc22647659c438180d237e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
 Umožňuje aplikaci klienta k poskytování bajtů spustitelného souboru jako zadaný umístěním souboru.  
@@ -34,7 +35,7 @@ IDiaReadExeAtOffsetCallback : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Idiareadexeatoffsetcallback::readexecutableat –](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Přečte zadaný počet bajtů, začínající na zadaném posunu ze spustitelného souboru.|  
+|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Přečte zadaný počet bajtů, začínající na zadaném posunu ze spustitelného souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
  Toto rozhraní implementuje klientskou aplikaci chcete-li poskytovat bajtů ke spustitelnému souboru pomocí absolutní posun do souboru ke spustitelnému souboru. Chcete-li použít relativní virtuální adresu, implementujte [idiareadexeatrvacallback –](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) rozhraní.  
@@ -52,4 +53,4 @@ IDiaReadExeAtOffsetCallback : IUnknown
 ## <a name="see-also"></a>Viz také  
  [Rozhraní (přístup k rozhraní SDK ladění)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiadatasource::loaddataforexe –](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [Idiareadexeatrvacallback –](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)
+ [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)

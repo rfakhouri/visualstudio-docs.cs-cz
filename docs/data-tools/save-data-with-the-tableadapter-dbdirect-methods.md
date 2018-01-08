@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3ed52a167b607236b8493e4c8c1736ee597162b9
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: fb85f9cfb2b70838d32761b412541bf15b2884c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Ukládání dat pomocí TableAdapter DBDirect metody
 Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL přímo s databází pomocí metod TableAdapter DBDirect. Metod TableAdapter DBDirect zadejte jemné úroveň kontroly nad aktualizace vaší databáze. Můžete je použít ke spuštění konkrétních příkazů SQL a uložených procedur voláním jednotlivých `Insert`, `Update`, a `Delete` metody podle potřeby vaší aplikace (oproti přetížené `Update` metodu, která provede aktualizace INSERT a DELETE příkazy všechny v jednom volání).  
@@ -170,4 +171,4 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 -   Přidání další tabulky k datové sadě výběrem **konfigurace sady dat pomocí průvodce** uvnitř **zdroje dat** okno. Můžete přidat ovládací prvky, které zobrazení souvisejících dat přetažením související uzly do formuláře. Další informace najdete v tématu [vztahy v datových sadách](relationships-in-datasets.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+ [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

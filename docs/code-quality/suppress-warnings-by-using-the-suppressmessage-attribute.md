@@ -22,11 +22,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>Potlačení upozornění použitím atributu SuppressMessage
 Je často užitečné k označení, že je nonapplicable umožníte členové týmu vědět, že kód byl zkontrolovány a bylo zjištěno, že má být potlačeno upozornění upozornění. Potlačení zdroje (ISS) umožňuje vývojář uvést atribut, který potlačí upozornění blízko umístění, které vygenerovalo upozornění. Můžete přidat atribut ISS přímo ke zdrojovému souboru nebo můžete použít v místní nabídce [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  
@@ -36,7 +37,7 @@ Je často užitečné k označení, že je nonapplicable umožníte členové t�
 |||  
 |-|-|  
 |[Přehled potlačování ve zdroji](../code-quality/in-source-suppression-overview.md)|Další informace o ISS a způsobu jeho použití v kódu.|  
-|[Postupy: potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Zjistěte, jak potlačení upozornění v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE pomocí místní nabídky.|  
+|[Postupy: Potlačení upozornění použitím položky nabídky](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|Zjistěte, jak potlačení upozornění v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE pomocí místní nabídky.|  
   
 ## <a name="related-sections"></a>Související oddíly  
  [Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

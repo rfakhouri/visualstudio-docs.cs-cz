@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26dd5500f50b185c31809d9882e03e56541a567a
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 775c03583a2fac35f2b62525bf5a18a67f250cef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Přidání kódu do datových sad ve víceúrovňových aplikacích
 Vytvoření souboru třídu pro datovou sadu a přidání kódu k němu můžete rozšířit funkce datové sady (místo přidávání kódu do *DatasetName*. Soubor Dataset.Designer). Částečné třídy povolit kód pro určité třídy rozdělit mezi několik fyzických souborů. Další informace najdete v tématu [částečné](/dotnet/visual-basic/language-reference/modifiers/partial) nebo [částečné třídy a metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).  
@@ -65,7 +66,7 @@ Ve výchozím nastavení po oddělíte datovou sadu a TableAdapter kód, výsled
   
 ## <a name="see-also"></a>Viz také
 [Přehled vícevrstvých datových aplikací](../data-tools/n-tier-data-applications-overview.md)   
-[Přidávání kódu do prvků TableAdapters ve víceúrovňových aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
+[Přidávání kódu do objektů TableAdapter ve vícevrstvých aplikacích](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
 [Vytvoření a konfigurace TableAdapters](create-and-configure-tableadapters.md)  
 [Přehled hierarchické aktualizace](hierarchical-update.md)     
 [Datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

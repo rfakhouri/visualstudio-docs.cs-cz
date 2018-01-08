@@ -13,16 +13,17 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b0607013b6c40fc4276a233556320efcaa9e20a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 683e5588a9d0d7355af4efd531e6e3889f943c03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-quality-tools"></a>Řešení potíží s nástroji kvality
 Pokud máte problémy při spuštění nástrojů sady Visual Studio kvality, témata v této části vám může pomoct diagnostikovat a opravit potíže.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Řešení potíží analýzy kódu](../code-quality/troubleshooting-code-analysis-issues.md)  
+ [Řešení potíží s Analýzou kódu](../code-quality/troubleshooting-code-analysis-issues.md)  
   
- [Potíží s metrikami kódu](../code-quality/troubleshooting-code-metrics-issues.md)
+ [Řešení potíží s metrikami kódu](../code-quality/troubleshooting-code-metrics-issues.md)

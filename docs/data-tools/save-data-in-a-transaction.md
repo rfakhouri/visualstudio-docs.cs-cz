@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f8d1d25c2aaa66658df53dbaea366c196e8e7f6b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Návod: Ukládání dat do transakce
 Tento návod ukazuje, jak k uložení dat v transakci pomocí <xref:System.Transactions> oboru názvů. V tomto návodu vytvoříte aplikaci Windows Forms. Průvodce konfigurací zdroje dat použijete k vytvoření datové sady pro dvě tabulky v ukázkové databázi Northwind. Data vázané ovládací prvky na formuláři Windows, a budete upravovat kód pro objektu BindingNavigator na tlačítko Uložit k aktualizaci databáze uvnitř objekt TransactionScope přidáte.  
@@ -175,4 +176,4 @@ Pořadí pro vyřešení změny na souvisejících dat je následující:
   
 ## <a name="see-also"></a>Viz také
 [Postupy: ukládání dat pomocí transakce](../data-tools/save-data-by-using-a-transaction.md)  
-[Uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md)
+[Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

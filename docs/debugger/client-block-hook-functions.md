@@ -24,11 +24,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7761690ee905ffd65ded9498de7422857b31f455
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0356ef6574e281ed896df5789eb741da1f206ba4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="client-block-hook-functions"></a>Funkce háku bloku klienta
 Pokud chcete ověřit nebo ohlásit obsah dat uložených v `_CLIENT_BLOCK` blokuje, můžete napsat funkci speciálně pro tento účel. Funkce, která můžete psát musí mít prototyp podobný následujícímu, jak jsou definovány v CRTDBG. V:  
@@ -52,4 +53,4 @@ typedef void (__cdecl *_CRT_DUMP_CLIENT)
 ## <a name="see-also"></a>Viz také  
  [Zápis funkce háku ladění](../debugger/debug-hook-function-writing.md)   
  [Ukázka crt_dbg2](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)   
- [_Crtreportblocktype –](/cpp/c-runtime-library/reference/crtreportblocktype)
+ [_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)

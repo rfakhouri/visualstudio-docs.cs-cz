@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 052bb1314560089feb714027737f35167c947418
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 268940f39d3d74e7dd701f9c458d7dd08ff6c1f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-policy-errors"></a>Chyby zásad Analýzy kódu
 Následující chyby dojít, pokud zásady pro analýzu kódu nesplněno při vrácení se změnami:  
@@ -74,4 +75,4 @@ Následující chyby dojít, pokud zásady pro analýzu kódu nesplněno při vr
  Tato chyba se vztahují na projekty nespravované. Zásady pro analýzu kódu vyžaduje analýzy kódu pro C/C++, ale není povolený v aktuálním projektu na straně klienta.  
   
 ## <a name="see-also"></a>Viz také  
- [Chyby aplikace analýzy kódu](../code-quality/code-analysis-application-errors.md)
+ [Chyby aplikace Analýzy kódu](../code-quality/code-analysis-application-errors.md)

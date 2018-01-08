@@ -24,11 +24,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 558640368021f3556db479fc431c66dae266c9a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d1e4ec34b55e9e24c33157446cd74262a640d4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="com-server-and-container-debugging"></a>Ladění serveru a kontejneru modelu COM
 Aplikace modelu COM provést určité úlohy mimo pro programátory přímou kontrolu. Komunikace mezi knihovny DLL, využití počítá na objekty a operace se schránkou je uvedeno několik z oblastí, kde může dojít k neočekávanému chování. Pokud k tomu dojde, je prvním krokem sledovat zdroj problému.  

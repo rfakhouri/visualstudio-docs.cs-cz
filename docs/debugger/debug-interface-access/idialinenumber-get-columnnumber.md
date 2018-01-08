@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03673b339336cc5c5cdb32b284cf3c7cc1b38998
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ddcced006ded40275ce46838fbaface05ea26960
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
 Načte číslo sloupce, které začíná výraz nebo příkaz.  
@@ -43,4 +44,4 @@ HRESULT get_columnNumber (
  Posun bajtů do řádek pro první znak příkaz na řádku, je hodnota sloupce, tato metoda vrátí.  
   
 ## <a name="see-also"></a>Viz také  
- [Idialinenumber –](../../debugger/debug-interface-access/idialinenumber.md)
+ [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
