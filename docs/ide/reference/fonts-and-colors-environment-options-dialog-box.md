@@ -30,11 +30,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccb924164b4d590f8ed440dfa905c1c040a13924
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Písma a barvy, prostředí, dialogové okno Možnosti
 **Písma a barev** stránky **možnosti** dialogové okno umožňuje vytvořit vlastní písma a barev režim pro různé prvky uživatelského rozhraní v integrované vývojové prostředí (IDE). Tohoto dialogového okna můžete přejít pomocí kliknutím na tlačítko **Nástroje / možnosti**a potom vyberete **prostředí / písma a barev**. Pokud tato stránka se nezobrazí v seznamu, vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
@@ -191,7 +192,7 @@ Uvádí položky, pro které můžete změnit barvu popředí a na pozadí.
 |**Atribut XML**|Názvy atributů.|  
 |**Uvozovky atributu XML**|Znaky uvozovek pro atributy XML.|  
 |**Hodnota atributu XML**|Obsah XML atributů.|  
-|**Části XML Cdata**|Obsah \<![CDATA [...]] >.|  
+|**Části XML Cdata**|Obsah \<! [ CDATA [...]] >.|  
 |**Komentáře XML**|Obsah \<!---->.|  
 |**Oddělovač XML**|Syntaxe jazyka XML oddělovače, včetně <, <?, <!, \<!--,-->,?\>, \<! [,]] > a [,].|  
 |**Atribut Doc XML**|Hodnota dokumentace xml, jako atribut \<název parametru = "I" > kde je obarvené "I".|  

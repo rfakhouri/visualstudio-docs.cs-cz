@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 291cb024413072a6e07cbe46a2679994f7bd3315
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a10c38ec29e9a149d6756bcbe5bbfa1e65fcbe24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Zobrazení řádků – Data vzorkování paměti .NET
 Zobrazení řádků pro data paměti .NET přidělení profilování využívající metody vzorkování uvádí příkazy, které přidělené paměti při spuštění profilování. Sloupce, které zahrnují také velikost a počet přidělených.  
@@ -56,7 +57,7 @@ Zobrazení řádků pro data paměti .NET přidělení profilování využívaj�
 |**End řádku zdroje**|Koncová číslo řádku ve zdrojovém souboru, kdy došlo k chybě přidělení.|  
 |**Začátek znaku zdroje**|Posun počáteční znak v řádku souboru zdroje, kdy došlo k přidělení.|  
 |**End znaku zdroje**|Posun ukončovací znak v řádku souboru zdroje, kdy došlo k přidělení.|  
-|**Název řádku**|Identifikátor generovaný profileru řádku pomocí následující syntaxe:`Source File`**; [** `Line Number Start` **,**`Character Start`**] ->; [**`Line Number Start,Character Start`**]**|  
+|**Název řádku**|Identifikátor generovaný profileru řádku pomocí následující syntaxe:`Source File`**; [**  `Line Number Start` **,**`Character Start`**] ->; [** `Line Number Start,Character Start`**]**|  
 |**Výhradní přidělení**|Celkový počet objektů, které byly vytvořeny v tomto řádku.|  
 |**Výhradní přidělení %**|Procento všechny objekty vytvořené v profilaci spuštění, které byly přiděleny na tomto řádku.|  
 |**Výhradní bajtů**|Procento všech bajtů paměti, které byly přiděleny v profilaci spuštění, které byly přiděleny na tomto řádku.|  

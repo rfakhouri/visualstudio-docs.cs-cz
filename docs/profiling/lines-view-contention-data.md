@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88b8169f5e0e53a76ff2b1bee61dc80f41a9f595
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1465b9d8a14d5889bf856caa52b807ee2954cd0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---contention-data"></a>Zobrazení řádků – Data kolizí
 Zobrazení řádků dat kolizí uvádí údaje o výkonu pro příkazy, které byly prováděny, kdy ukázky byly shromážděny v profilaci spustit. Ve zdrojovém souboru příkaz může mít rozsah více než jeden řádek v souboru zdroje a jeden řádek může obsahovat více než jeden výraz.  
@@ -52,7 +53,7 @@ Zobrazení řádků dat kolizí uvádí údaje o výkonu pro příkazy, které b
 |**Včetně blokované čas: %**|Procento všech blokovaných času v procesu, který byl včetně blokované čas příkaz.|  
 |**Kolizí (včetně).**|Počet pokusů, tento příkaz a funkce, které byly volat v příkazu nebyly blokované spuštění.|  
 |**% Kolizí (včetně).**|Procento kolizní události v procesu, které byly včetně kolizí tohoto prohlášení.|  
-|**Název řádku**|Generované profileru identifikátor řádku. Identifikátor se používá následující syntaxe:`SourceFile`**; [** `LineNumberStart` **,**`CharacterStart`**] ->; [**`LineNumberEnd`**,**`CharacterEnd`**]**|  
+|**Název řádku**|Generované profileru identifikátor řádku. Identifikátor se používá následující syntaxe:`SourceFile`**; [**  `LineNumberStart` **,**`CharacterStart`**] ->; [** `LineNumberEnd`**,**`CharacterEnd`**]**|  
 |**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
 |**Název modulu**|Název modul, který obsahuje příkaz.|  
 |**Cesta modulu**|Cesta modul, který obsahuje příkaz.|  

@@ -23,11 +23,12 @@ caps.latest.revision: "91"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09a356408815ed6fea416d27e59a58a4edc6a6a3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: office
+ms.openlocfilehash: e84bd10c2a7e3ce4c760e0f9231390d4fd037616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Nasazení řešení Office s použitím Instalační služby systému Windows
 Naučte se vytvářet Instalační služby systému Windows pro řešení Office s použitím [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -226,7 +227,7 @@ Instalační program aplikace musí obsahovat pouze následující součásti, a
   
 4. V poznámkovém bloku, nahraďte text **zde bude vaše GUID** vložením identifikátor GUID na příslušné místo.  
   
-   **&lt;Vlastnosti&gt;**  element souboru podobá následující zprávě.  
+    **&lt;Vlastnosti&gt;**  element souboru podobá následující zprávě.  
   
   
    ```xml  
@@ -482,7 +483,7 @@ Chcete-li upravit vlastní vlastnosti, vytvořte program, který odebere přizp�
   
 11. V **vyhledejte cílový soubor** dialogové okno, procházet a **SetExcelDocumentProperties.Primary.output** souboru a potom vyberte **otevřete** tlačítko.  
   
-   Umístění tohoto souboru závisí na složku, která jste zadali pro **INSTALLDIR** vlastnosti projektu instalace. Například pokud nastavíte tuto vlastnost na složku s názvem **[PersonalFolder] DemoWorkbookApp**, můžete najít **SetExcelDocumentProperties.Primary.output** soubor procházením **[ProgramFilesFolder] \DemoWorkbookApp**.  
+   Umístění tohoto souboru závisí na složku, která jste zadali pro **INSTALLDIR** vlastnosti projektu instalace. Například pokud nastavíte tuto vlastnost na složku s názvem **[PersonalFolder] DemoWorkbookApp**, můžete najít **SetExcelDocumentProperties.Primary.output** soubor procházením **[ ProgramFilesFolder] \DemoWorkbookApp**.  
   
    V několika dalších krocích můžete získat ID řešení dokumentu a poté předat toto ID jako parametr konzolové aplikace. Budete také předat umístění dokumentu, manifest nasazení a sestavení dokumentu.  
   
@@ -540,7 +541,7 @@ Chcete-li upravit vlastní vlastnosti, vytvořte program, který odebere přizp�
 [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
 [Položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
 [Přehled přizpůsobených vlastností dokumentu](../vsto/custom-document-properties-overview.md)  
-[Udělení důvěry pro řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md)  
+[Udělení důvěry řešením pro systém Office](../vsto/granting-trust-to-office-solutions.md)  
 [Udělení důvěry dokumentům](../vsto/granting-trust-to-documents.md)  
 [Nasazení aplikace Visual Studio 2010 Tools pro řešení Office pomocí Instalační služby systému Windows](http://go.microsoft.com/fwlink/?LinkId=201807)  
   

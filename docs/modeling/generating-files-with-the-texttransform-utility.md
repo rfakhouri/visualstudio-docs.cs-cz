@@ -14,11 +14,12 @@ caps.latest.revision: "41"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.openlocfilehash: 1d168695aca3626fa1ba351aef56faf001c5b6ee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generování souborů pomocí nástroje TextTransform
 TextTransform.exe je nástroj příkazového řádku, který můžete použít k transformaci textové šablony. Při volání TextTransform.exe je zadat jako argument název textového souboru šablony. TextTransform.exe volá transformační modul text a zpracuje textové šablony. TextTransform.exe se obvykle nazývá z skriptů. Není však obvykle vyžaduje, protože je možné provádět transformací textu v sadě Visual Studio nebo v procesu sestavení.  
@@ -62,13 +63,13 @@ TextTransform [<options>] <templateName>
 |**-I** \<includedirectory >|Adresář, který obsahuje textové šablony obsažené v šabloně zadaný text.|  
 |**-P** \<referencepath >|Adresář pro vyhledávání pro sestavení zadané v rámci šablony text nebo pro použití **- r** možnost.<br /><br /> Například například sestavení, které používá pro Visual Studio API, použijte<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|  
 |**-dp** \<processorName >!\< Název třídy >! \<assemblyName &#124; codeBase >|Název, název typu úplné a sestavení direktivy procesoru, který slouží ke zpracování vlastní direktivy v textové šablony.|  
-|**-a** [processorName]! [directiveName]! \<parameterName >! \<parameterValue >|Zadejte hodnotu parametru direktivy procesoru. Pokud zadáte pouze název parametru a hodnota, bude k dispozici pro všechny procesory direktiv parametr. Pokud zadáte procesoru direktiv, parametr je k dispozici pouze určeným procesorem. Pokud zadáte název směrnice, parametr je k dispozici jenom v případě, že zadaný direktiva je zpracovávána.<br /><br /> Pro přístup k hodnotám parametrů z procesoru direktiv nebo textové šablony, použijte <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. V textové šablony, zahrnují `hostspecific` v – direktiva šablony a vyvolání zprávy na `this.Host`. Příklad:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Zadávejte vždy '!' označí, i v případě vynechání volitelné procesoru a direktivy názvy. Příklad:<br /><br /> `-a !!param!value`|  
+|**-a** [processorName]! [ directiveName]! \<parameterName >! \<parameterValue >|Zadejte hodnotu parametru direktivy procesoru. Pokud zadáte pouze název parametru a hodnota, bude k dispozici pro všechny procesory direktiv parametr. Pokud zadáte procesoru direktiv, parametr je k dispozici pouze určeným procesorem. Pokud zadáte název směrnice, parametr je k dispozici jenom v případě, že zadaný direktiva je zpracovávána.<br /><br /> Pro přístup k hodnotám parametrů z procesoru direktiv nebo textové šablony, použijte <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. V textové šablony, zahrnují `hostspecific` v – direktiva šablony a vyvolání zprávy na `this.Host`. Příklad:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Zadávejte vždy '!' označí, i v případě vynechání volitelné procesoru a direktivy názvy. Příklad:<br /><br /> `-a !!param!value`|  
 |**-h**|Poskytuje nápovědu.|  
   
 ## <a name="related-topics"></a>Související témata  
   
 |Úloha|Téma|  
 |----------|-----------|  
-|Generování souborů v řešení systému [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
+|Generování souborů v řešení systému [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[Vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
 |Zápis procesory direktiv k transformaci zdrojům dat.|[Přizpůsobení transformace textu T4](../modeling/customizing-t4-text-transformation.md)|  
 |Zápis textu ukázka hostitele, který umožňuje vyvolání textové šablony z vlastní aplikace.|[Zpracování textových šablon pomocí vlastního hostitele](../modeling/processing-text-templates-by-using-a-custom-host.md)|
