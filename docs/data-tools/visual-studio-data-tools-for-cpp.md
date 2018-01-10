@@ -14,11 +14,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 2e354145fa47e243c3dea1641086626e9bcc2c5c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ebb3acfb9fcd49a682e888058b71adbd4119429a
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Data nástroje sady Visual Studio pro jazyk C++
 
@@ -26,7 +26,7 @@ Nativní C++ často poskytují nejrychlejší výkon při přístupu k zdroje da
   
 Pro připojení k databázím SQL, můžete použít nativních aplikací C++ ovladače ODBC a OLE DB a ADO zprostředkovatele, které jsou součástí systému Windows. Tyto můžete připojit k jakékoli databázi, která podporuje tato rozhraní. Ovladač ODBC je standardní. OLE DB slouží k zajištění zpětné kompatibility. Další informace o těchto technologií dat najdete v tématu [Windows Data Access Components](https://msdn.microsoft.com/en-us/library/windows/desktop/aa968814.aspx).  
   
-Využít výhod vlastních funkcí v systému SQL Server 2005 a novější, použijte [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Nativní klient také obsahuje ovladač ODBC systému SQL Server a SQL Server zprostředkovateli OLE DB v jedné nativní dynamická knihovna (DLL). Tyto podporovat aplikace pomocí nativního kódu rozhraní API (rozhraní ODBC, OLE DB a ADO) systému Microsoft SQL Server.  SQL Server Native Client nainstaluje SQL Server Data Tools. Průvodce programováním se zde: [SQL serveru Nativní klient programování](/sql/sql-docs/docs/relational-databases/native-client/sql-server-native-client-programming).  
+Využít výhod vlastních funkcí v systému SQL Server 2005 a novější, použijte [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Nativní klient také obsahuje ovladač ODBC systému SQL Server a SQL Server zprostředkovateli OLE DB v jedné nativní dynamická knihovna (DLL). Tyto podporovat aplikace pomocí nativního kódu rozhraní API (rozhraní ODBC, OLE DB a ADO) systému Microsoft SQL Server.  SQL Server Native Client nainstaluje SQL Server Data Tools. Průvodce programováním se zde: [SQL serveru Nativní klient programování](/sql/relational-databases/native-client/sql-server-native-client-programming).  
   
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Pro připojení k localDB přes rozhraní ODBC a nativní klient SQL z aplikace C++  
   

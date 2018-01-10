@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 97950a9d5d6f76505e93153dccd14cfce7be15a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a26ca0228a869d36daf427f4ba90fd1b17abeaf
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Návod: Použití XSLT IntelliSense
 Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování hodnoty některých atributů.  
@@ -26,7 +26,7 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
   
 1.  Vytvořte nový soubor XSLT a zkopírujte následující kód:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
     <!-- These 2 elements effectively assign  
          $messages = resources/en.xml/<messages>,  
@@ -46,22 +46,22 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
       </xsl:message>  
     </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Vložit kurzor po `<xsl:template name="msg23" match="msg23">` a stiskněte klávesu ENTER. Začněte psát následující `xsl:call-template` element:  
   
-    ```  
+    ```xml
     <xsl:call-template name="localized-message">  
     </xsl:call-template>  
-    ```  
+    ```
   
      Se zobrazí v seznamu názvy šablon `name=""` atribut `xsl:call-template` element při psaní.  
   
 3.  Vložit kurzor po `<xsl:call-template name="localized-message">` a stiskněte klávesu ENTER. Začněte psát následující `xsl:with-param` element:  
   
-    ```  
+    ```xml
     <xsl:with-param name="msgcode">msg23</xsl:with-param>  
-    ```  
+    ```
   
      Seznam názvů parametrů se zobrazí v `name=""` atribut `xsl:with-param` elementu.  
   
@@ -69,7 +69,7 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
   
 1.  Vytvořte nový soubor XSLT a zkopírujte následující kód:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
       <xsl:template match="/">  
         <HTML>  
@@ -112,13 +112,13 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
         </TD>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Vložit kurzor po `<xsl:apply-templates select="phone" />` a stiskněte klávesu ENTER. Začněte psát následující `xsl: apply-templates` element:  
   
-    ```  
+    ```xml
     <xsl:apply-templates select="phone"  mode="accountNumber">  
-    ```  
+    ```
   
      Seznam režimů šablonu se zobrazí v `mode=""` atribut `xsl:apply-templates` elementu.  
   
@@ -126,7 +126,7 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
   
 1.  Vytvořte nový soubor XSLT a zkopírujte následující kód:  
   
-    ```  
+    ```xml
     <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate"  
     version="1.0">  
       <xsl:param name="browser" select="'InternetExplorer'"/>  
@@ -153,15 +153,16 @@ Tento návod ukazuje, jak pomocí XSLT IntelliSense automatické dokončování 
         </alt:stylesheet>  
       </xsl:template>  
     </xsl:stylesheet>  
-    ```  
+    ```
   
 2.  Vložit kurzor po `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` a stiskněte klávesu ENTER. Začněte psát následující `xsl:namespace-alias` element:  
   
-    ```  
+    ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>  
-    ```  
+    ```
   
      Všimněte si, jak seznam předpon zobrazovaly v `stylesheet-prefix` a `result-prefix` atributy `xsl:namespace-alias` elementu.  
   
-## <a name="see-also"></a>Viz také  
- [Funkce IntelliSense editoru XML](../xml-tools/xml-editor-intellisense-features.md)
+## <a name="see-also"></a>Viz také
+
+[Funkce IntelliSense editoru XML](../xml-tools/xml-editor-intellisense-features.md)

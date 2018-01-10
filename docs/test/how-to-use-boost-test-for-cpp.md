@@ -1,22 +1,21 @@
 ---
 title: "Jak používat Boost.Test jazyka C++ v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/07/2017
+ms.date: 01/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2e0710a8-8e8a-4f6e-8415-5ab3eb830079
-caps.latest.revision: "14"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b469ee739ebdc4f3cf61e8b5e578c676b5af5e24
-ms.sourcegitcommit: 0614bdb0895b6e6f5b84ba4e1d9327802eca3a6b
+ms.workload: cplusplus
+ms.openlocfilehash: bdf772be03f6021f499b9bf777922d6d2743e0dc
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak používat Boost.Test jazyka C++ v sadě Visual Studio
 
@@ -32,9 +31,15 @@ Vyžaduje Boost.Test [nárůst](http://www.boost.org/)! Pokud nemáte nárůst n
 
 1. Postupujte podle pokynů v [Vcpkg: Správce balíčků C++ pro Windows](/cpp/vcpkg) k instalaci vcpkg (pokud ji nemáte).
 
-1. Spustit `vcpkg install boost:x86-windows-static` k instalaci se statickou knihovnou skóre.
+1. Nainstalujte Boost.Test dynamická nebo statická knihovny:
 
-1. Spustit `vcpkg integrate install` příkaz konfigurace Visual Studia s knihovnou a musí zahrnovat cest skóre hlavičky a binární soubory.
+    - Spustit `vcpkg install boost-test` k instalaci dynamickou knihovnu Boost.Test.
+    
+       -NEBO-
+       
+    - Spustit `vcpkg install boost-test:x86-windows-static` k instalaci se statickou knihovnou Boost.Test.
+
+1. Spustit `vcpkg integrate install` konfigurace Visual Studia s knihovnou a musí zahrnovat cest skóre hlavičky a binární soubory.
 
 ## <a name="create-a-project-for-your-tests"></a>Vytvoření projektu testů
 
