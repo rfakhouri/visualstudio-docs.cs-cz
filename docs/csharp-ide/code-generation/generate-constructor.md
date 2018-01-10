@@ -12,11 +12,11 @@ author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 9ffa85d768939522935199edde6d0f19b3f2b7a2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dd5e1012c37660917d77e2643922d8a90a8e2ffe
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="generate-a-constructor-in-c"></a>Generovat konstruktor v jazyce C# #
 **Co:** umožňuje okamžitě generování kódu pro nový konstruktor na třídu. 
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
 
    ![Generování výsledků – konstruktor](media/constructor_result.png)
 
-## <a id="selection"></a>Přidejte parametr existující konstruktoru
+## <a id="addparameter"></a>Přidejte parametr existující konstruktoru
 1. Přidání parametru k existující instanci objektu.
 
 1. Umístěte kurzor na řádek níž se nachází červenou vlnovkou označující jste použili konstruktor, který ještě neexistuje.

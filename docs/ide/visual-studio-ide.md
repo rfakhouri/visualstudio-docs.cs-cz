@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e8b2ee3e80d292e6a05a23c2f5b6932d569e0024
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 5b289868d0cc27da76becf62a2bac51f02fa55c2
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Přehled Visual Studio IDE
 
@@ -196,7 +196,7 @@ Toto jsou některé další běžné funkce produktivitu v sadě Visual Studio:
 
   ![Seznam členů v sadě Visual Studio](../ide/media/vs2017_Intellisense.png)
 
-- **Podtržení vlnovkou** jsou podtržení vlnovkami red, které vás upozorní na chyby nebo potenciální problémy ve vašem kódu v reálném čase během psaní. To umožňuje opravit okamžitě bez čekání na chyby zjištěné při kompilaci nebo čas spuštění. Pokud je ukazatel myši nad vlnovka, zobrazí další informace o této chybě. Žárovky může zobrazit i na levém okraji s návrhy, jak chybu opravit. Další informace najdete v tématu [rychlé akce pomocí žárovek](../ide/perform-quick-actions-with-light-bulbs.md).
+- **Podtržení vlnovkou** jsou podtržení vlnovkami red, které vás upozorní na chyby nebo potenciální problémy ve vašem kódu v reálném čase během psaní. To umožňuje opravit okamžitě bez čekání na chyby zjištěné při kompilaci nebo čas spuštění. Pokud je ukazatel myši nad vlnovka, zobrazí další informace o této chybě. Žárovky může zobrazit i na levém okraji s návrhy, jak chybu opravit. Další informace najdete v tématu [rychlé akce](../ide/quick-actions.md).
 
  ![Podtržení vlnovkou](../ide/media/vs2017_squiggle.png)
 

@@ -11,12 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 0219ff704e22ab1c27d47e312825a66cb3a15166
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 516bd2de626fa7a5ffcbf4234c849e81860b9e08
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvořte nastavení editoru přenosné, vlastní s EditorConfig
 
@@ -32,43 +31,86 @@ Konvence, které používáte na osobní projekty kódování mohou lišit od t�
 
 Vzhledem k tomu, že nastavení jsou obsaženy v souboru v základu kódu, jejich přenosu společně s tohoto základu kódu. Tak dlouho, dokud otevření souboru kódu v editoru EditorConfig předpisy, se implementují nastavení editoru textu. Další informace o souborech EditorConfig najdete v tématu [EditorConfig.org](http://editorconfig.org/) webu.
 
-## <a name="override-editorconfig-settings"></a>Přepsání nastavení EditorConfig
-
-Když přidáte soubor .editorconfig do složky v hierarchii souboru, jeho nastavení platí pro všechny příslušné soubory na této úrovni a pod ním. Pokud chcete přepsat nastavení EditorConfig pro konkrétní projekt nebo základu kódu tak, aby používala jiný konvence než EditorConfig souboru na nejvyšší úrovni, stačí přidáte soubor .editorconfig do kořenového adresáře vaší codebase úložišti nebo projektu adresář. Zajistěte, aby se umístí ```root=true``` vlastnost v souboru tak nevypadá všechny další si strukturu adresáře pro soubory .editorconfig Visual Studio. Nové nastavení souboru EditorConfig platí pro souborů na stejné úrovni a jakéhokoliv podadresáře.
-
-```
-# top-most EditorConfig file
-root = true
-```
-
-![EditorConfig hierarchie](../ide/media/vside_editorconfig_hierarchy.png)
-
-EditorConfig soubory se čtou shora dolů a nejbližší EditorConfig soubory se čtou poslední. Konvence z odpovídající části EditorConfig se použijí v pořadí, ve kterém byly pro čtení, takže názvů v blíže soubory mají přednost před.
-
 ## <a name="supported-settings"></a>Podporovaná nastavení
 
-Editor v sadě Visual Studio podporuje následující ze základní sady [EditorConfig vlastnosti](http://editorconfig.org/#supported-properties):
+Editor v sadě Visual Studio podporuje základní sady [EditorConfig vlastnosti](http://editorconfig.org/#supported-properties):
 
 - indent_style
 - indent_size
 - tab_width
 - end\_of_line
 - Znaková sada
+- Trim\_trailing_whitespace
+- Vložit\_final_newline
 - kořen
 
 Nastavení editoru EditorConfig jsou podporovány ve všech jazycích podporovaných v sadě Visual Studio, s výjimkou XML. Kromě toho EditorConfig podporuje [kódu stylu](../ide/editorconfig-code-style-settings-reference.md) a [pojmenování](../ide/editorconfig-naming-conventions.md) konvence pro C# a Visual Basic.
-
-## <a name="editing-editorconfig-files"></a>Úprava EditorConfig souborů
-
-Visual Studio poskytuje některé technologie IntelliSense pro úpravy .editorconfig souborů. Pokud chcete upravit velkého množství souborů .editorconfig, můžete zjistit [služba jazyka EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) rozšíření užitečné.
-
-Jakmile upravíte soubor EditorConfig, musíte znovu načtete soubory s kódem pro nová nastavení vstoupila v platnost.
 
 ## <a name="adding-and-removing-editorconfig-files"></a>Přidávání a odebírání souborů EditorConfig
 
 Přidání EditorConfig souboru do projektu nebo codebase nepřevádí existující styly na nové. Například pokud máte odsazení v souboru, které jsou naformátované se karty a přidat soubor EditorConfig, který odsadí prostory, znaky odsazení nebudou převedeny do prostorů. Však žádné nové řádky kódu se bude formátovat podle EditorConfig souboru.
 
 Když odeberete soubor EditorConfig z projektu nebo základu kódu, musí zavřete a znovu otevřít soubory se vrátit do editoru globální nastavení pro nové řádky kódu.
+
+### <a name="to-add-an-editorconfig-file-to-a-project-or-solution"></a>Chcete-li přidat soubor EditorConfig na projekt nebo řešení
+
+1. Otevřete projekt nebo řešení v sadě Visual Studio. Vyberte uzel na projekt nebo řešení, v závislosti na tom, jestli by se měly používat nastavení .editorconfig na všechny projekty v řešení nebo pouze jeden. Můžete také vybrat složku ve projekt nebo řešení pro přidání .editorconfig soubor.
+
+1. V řádku nabídek zvolte **projektu** > **přidat novou položku...** , nebo stiskněte klávesu **Ctrl**+**Shift**+**A**.
+
+   **Přidat novou položku** otevře se dialogové okno.
+
+1. Do kategorií na levé straně vyberte **Obecné**a potom zvolte **textový soubor** šablony. V **název** textové pole, zadejte `.editorconfig` a potom zvolte **přidat**.
+
+   Soubor .editorconfig se zobrazí v Průzkumníku řešení a otevře v editoru.
+
+   ![.editorconfig soubor v Průzkumníku řešení](media/editorconfig-in-solution-explorer.png)
+
+1. Upravte soubor podle potřeby, třeba:
+
+```EditorConfig
+root = true
+
+[*.{cs,vb}]
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.cs]
+csharp_new_line_before_open_brace = methods
+```
+
+Alternativně můžete nainstalovat [služba jazyka EditorConfig rozšíření](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). Po instalaci tohoto rozšíření, jednoduše vyberte **přidat** > **.editorconfig soubor** z nabídky řešení uzel, uzel projektu nebo libovolné složky v Průzkumníku řešení klikněte pravým tlačítkem nebo kontextu.
+
+![Přidat .editorconfig soubor s příponou](media/editorconfig-extension-add.png)
+
+## <a name="override-editorconfig-settings"></a>Přepsání nastavení EditorConfig
+
+Když přidáte soubor .editorconfig do složky v hierarchii souboru, jeho nastavení platí pro všechny příslušné soubory na této úrovni a pod ním. Můžete také přepsat EditorConfig nastavení pro konkrétní projekt, codebase nebo součástí základu kódu, tak, aby ho používá jiný konvence než ostatní části základu kódu. To může být užitečné, když začlenit kód z někde jinde a nechcete měnit jeho konvence.
+
+K přepsání některých nebo všech nastavení EditorConfig, přidání .editorconfig souboru na úrovni hierarchie souboru chcete použít tyto přepsaného nastavení. Nové nastavení souboru EditorConfig se vztahují na soubory na stejné úrovni a jakéhokoliv podadresáře.
+
+![EditorConfig hierarchie](../ide/media/vside_editorconfig_hierarchy.png)
+
+Pokud jste právě chcete přepsat některé, ale ne všechna nastavení, jednoduše zadejte tato nastavení v souboru .editorconfig. Přepíše pouze vlastnosti, které explicitně seznamu v souboru nižší úrovně. Další nastavení z vyšší úrovně .editorconfig soubory budou se dál platit. Pokud chcete zajistit, aby _žádné_ nastavení z _žádné_ vyšší úrovně .editorconfig soubory platí pro tuto část základu kódu, přidejte ```root=true``` vlastnost k souboru .editorconfig nižší úrovně:
+
+```EditorConfig
+# top-most EditorConfig file
+root = true
+```
+
+EditorConfig soubory se čtou shora dolů a nejbližší EditorConfig soubory se čtou poslední. Konvence z odpovídající části EditorConfig se použijí v pořadí, ve kterém byly pro čtení, takže názvů v blíže soubory mají přednost před.
+
+## <a name="editing-editorconfig-files"></a>Úprava EditorConfig souborů
+
+Visual Studio poskytuje některé technologie IntelliSense pro úpravy .editorconfig souborů.
+
+![IntelliSense v souboru .editorconfig](media/editorconfig-intellisense-no-extension.png)
+
+Jakmile upravíte soubor EditorConfig, musíte znovu načtete soubory s kódem pro nová nastavení vstoupila v platnost.
+
+Pokud chcete upravit velkého množství souborů .editorconfig, můžete zjistit [služba jazyka EditorConfig rozšíření](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) užitečné. Některé funkce tohoto rozšíření zahrnují syntaxe zvýraznění, vylepšené IntelliSense, ověřování a formátování kódu.
+
+![IntelliSense s příponou EditorConfig služba jazyka](media/editorconfig-intellisense.png)
 
 ## <a name="example"></a>Příklad
 
@@ -82,7 +124,7 @@ Podle očekávání, stisknete **kartě** klíč na další řádek odsadí řá
 
 Přidáme nový soubor s názvem .editorconfig na projekt s tímto obsahem. `[*.cs]` Nastavení znamená, že tato změna platí pouze pro soubory kódu C# v projektu.
 
-```
+```EditorConfig
 # Top-most EditorConfig file
 root = true
 
@@ -107,7 +149,7 @@ To znamená, že pokud editor nastavení na **nástroje**, **možnosti**, **text
 
 Najdete všechny soubory .editorconfig v nadřazené adresáře otevřením příkazového řádku a spuštěním následujícího příkazu z kořenového adresáře disku, který obsahuje projektu:
 
-```
+```Shell
 dir .editorconfig /s
 ```
 

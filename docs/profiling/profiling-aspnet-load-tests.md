@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: aspnet
-ms.openlocfilehash: 7c4a1e48d5e9bdbf28569656b580608a6c35034a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a742732817f926b9ea1b74b31ab97acfb9e8f4ec
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-aspnet-load-tests"></a>Profilace zátěžových testů ASP.NET
 Můžete shromáždit profilace data z automatizované [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] webové testy, které jste spustili projekty ASP.NET – webové servery. Můžete shromáždit vzorkování a úroveň dat interakce. Další informace naleznete v následujících tématech:  
@@ -25,8 +25,6 @@ Můžete shromáždit profilace data z automatizované [!INCLUDE[TCMext](../misc
  [(NIB) Postupy: spuštění relace výkonu na webovou aplikaci z Editor testu výkonnosti webu](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
   
  [Postupy: Konfigurace služby ASP.NET Profiler pro zátěžové testy s využitím testovacích nastavení v sadě Visual Studio](http://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)  
-  
- [Spouštění systémových testů s použitím sady Microsoft Visual Studio](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio).  
   
 ## <a name="see-also"></a>Viz také  
  [Porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)   

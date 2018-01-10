@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 58e2d02b32a17cf23e95639077c26b6b41dae00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 70c058f6c930b9eb58cf0518d3418ccedcf083b4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="profiling-the-performance-of-sharepoint-applications"></a>Profilace výkonu aplikací služby SharePoint
   Pokud vaše aplikace služby SharePoint se provádí pomalu nebo neefektivnímu, slouží k identifikaci problematické kódu a další elementy profilování funkce v sadě Visual Studio. Pomocí testování funkce zatížení, můžete určit, jakým způsobem aplikace SharePoint provádí vytížený, například když mnoho uživatelů současně přístup k aplikaci. Spuštěním testů výkonnosti webu budete vyhodnocovat, jakým způsobem aplikace provádí na webu. Pomocí programových testů uživatelského rozhraní, můžete ověřit, zda celou aplikaci služby SharePoint, včetně jeho uživatelské rozhraní, funguje správně. Použijete-li tyto testy společně, mohou pomoci identifikovat problémy s výkonem, před nasazením aplikace.  
@@ -66,9 +66,7 @@ ms.lasthandoff: 12/22/2017
 |[Testování částí kódu](/visualstudio/test/unit-test-your-code)|Popisuje, jak najít logické chyby v kódu pomocí testování částí.|  
 |[Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|Popisuje postup testování uživatelského rozhraní aplikací služby SharePoint.|  
   
-## <a name="see-also"></a>Viz také  
- [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
- [Testování aplikace](/devops-test-docs/test/test-apps-early-and-often)   
- [Zlepšení kvality kódu](/visualstudio/test/improve-code-quality)  
-  
-  
+## <a name="see-also"></a>Viz také
+
+[Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
+[Zlepšení kvality kódu](/visualstudio/test/improve-code-quality)

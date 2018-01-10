@@ -19,11 +19,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6e76a8880e488177f12cfb949ec46e95fd825986
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8eef98d11f98e3db8216c69dcfacf478c676a837
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Postupy: Použití průvodců se šablonami projektů
 Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní, pokud je implementována, umožňuje spouštět vlastní kód, když uživatel vytvoří projekt ze šablony.  
@@ -198,6 +198,7 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
             private void button1_Click(object sender, EventArgs e)  
             {  
                 customMessage = textBox1.Text;  
+                this.Close();
             }  
         }  
     ```  
@@ -231,13 +232,13 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
   
 10. Extrahujte veřejný klíč ze souboru key.snk. V okně příkazového řádku zadejte  
   
-     **\<umístění sn.exe > \sn.exe - p key.snk outfile.key.**  
+     **\<umístění sn.exe > \sn.exe -p key.snk outfile.key.**  
   
      Nezapomeňte obklopit cestu sn.exe v uvozovkách, pokud nejsou mezery v názvech adresářů!  
   
 11. Získání tokenu veřejného klíče z Výstupní_soubor:  
   
-     **\<umístění sn.exe > \sn.exe - t outfile.key.**  
+     **\<umístění sn.exe > -t outfile.key \sn.exe.**  
   
      Nezapomeňte znovu, musí si uvozovky. Měli byste vidět řádek ve výstupu takto  
   

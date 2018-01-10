@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
-caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 19bdf650f2d11f9a773e714742c6f57359b7b63b
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+author: mikeblome
+ms.openlocfilehash: d926e28dc918900715090d32f929b6b7ff5cb482
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů částí pro C/C++ v sadě Visual Studio
 Můžete napsat a spouštění testů jednotek C++ pomocí **Průzkumníka testů** okno, stejně jako u ostatních jazyků. Další informace o používání **Průzkumníka testů**, najdete v části [spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md). 
