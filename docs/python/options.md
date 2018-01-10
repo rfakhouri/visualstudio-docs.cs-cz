@@ -1,7 +1,7 @@
 ---
 title: "Možnosti Python v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/04/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -19,11 +19,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b80164e4b41bf164e9235858f51d8a211dd70caa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: HT
+ms.openlocfilehash: 6776eee4436e54ca1b0215b307eeb5fa098802c3
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Možnosti pro jazyk Python v sadě Visual Studio
 
@@ -40,6 +40,8 @@ Konkrétní možnosti jsou popsány v následujících částech:
 - [Možnosti diagnostiky](#diagnostics-options)
 - [Interaktivní možnosti Windows](#interactive-windows-options)
 - [Rozšířené možnosti editoru Python](#advanced-python-editor-options)
+
+Všimněte si, že **experimentální** skupina obsahuje možnosti pro funkce, které jsou stále ve vývoji a nejsou zde popsány. Že jsou často popsané v příspěvcích na [inženýrství Python v blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Obecné možnosti
 
@@ -69,7 +71,6 @@ Konkrétní možnosti jsou popsány v následujících částech:
 | Povolit ladění na standardní knihovny jazyka Python | Off | Umožňuje krok do zdrojového kódu standardní knihovna při ladění, ale zvyšuje čas potřebný pro ladicí program spustit.|
 
 ![Dialogové okno Možnosti Python, karta ladění](media/options-debugging.png)
-
 
 ## <a name="diagnostics-options"></a>Možnosti diagnostiky
 
