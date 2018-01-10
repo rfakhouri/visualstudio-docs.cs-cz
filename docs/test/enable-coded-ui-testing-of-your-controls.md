@@ -7,31 +7,20 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
-caps.latest.revision: "22"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d44026c2a4424cbacd16af57d3fb132d23ba8068
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 782a68e61786121095d3bf730dbd053564bad1cf
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky
-Vlastní ovládací prvek lze snadno testovat, pokud budete implementovat podporu pro architekturu programové testování uživatelského rozhraní. Zvýšení úrovně podpory můžete přidat postupně. Můžete začít díky podpoře záznam a přehrávání a vlastnost ověření. Můžete vytvořit na který umožňující Tvůrce programového testu uživatelského rozhraní, rozpoznat vlastní vlastnosti ovládacího prvku a poskytnout vlastní třídy pro přístup k tyto vlastnosti z generovaného kódu. Může také pomoci programové uživatelského rozhraní test Tvůrce zachycení akce způsobem, který bude co nejblíže ke záměr akce dále zaznamenávána.  
-  
- **V tomto tématu:**  
-  
-1.  [Podpora záznam a přehrávání a ověření vlastností implementací usnadnění přístupu](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
-  
-2.  [Ověření vlastností vlastní podporu implementací vlastnost poskytovatele](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
-  
-3.  [Podpora generování kódu pomocí implementace třídy pro přístup k vlastní vlastnosti](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
-  
-4.  [Podpora deklaracemi záměr akce implementací filtr akce](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
-  
- ![CUIT &#95; Úplné](../test/media/cuit_full.png "CUIT_Full")  
+Vlastní ovládací prvek lze snadno testovat, pokud budete implementovat podporu pro architekturu programové testování uživatelského rozhraní. Zvýšení úrovně podpory můžete přidat postupně. Můžete začít díky podpoře záznam a přehrávání a vlastnost ověření. Můžete vytvořit na který umožňující Tvůrce programového testu uživatelského rozhraní, rozpoznat vlastní vlastnosti ovládacího prvku a poskytnout vlastní třídy pro přístup k tyto vlastnosti z generovaného kódu. Může také pomoci programové uživatelského rozhraní test Tvůrce zachycení akce způsobem, který bude co nejblíže ke záměr akce dále zaznamenávána.
+
+![CUIT &#95; Úplné](../test/media/cuit_full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a>Podpora záznam a přehrávání a ověření vlastností implementací usnadnění přístupu  
  Tvůrce programového testu uživatelského rozhraní zaznamená informace o ovládacích prvcích, že dojde během nahrávání a poté generuje kód do opakování této relaci. Pokud vaše řízení nepodporuje usnadnění, Tvůrce programového testu uživatelského rozhraní zaznamená akce (jako jsou kliknutí myší) s použitím souřadnice obrazovky. Při přehrávání testu generovaný kód bude vydávat těchto kliknutí myší v stejné souřadnice obrazovky. Pokud vlastní ovládací prvek se zobrazuje na jiné místo na obrazovce při přehrávání testu, se nezdaří generovaný kód k provedení této akce na vlastní ovládací prvek. To může způsobit selhání, pokud test přehrávání na různých obrazovek konfigurace, v různých prostředích, nebo po byly provedeny změny rozložení uživatelského rozhraní.  
@@ -86,10 +75,11 @@ Vlastní ovládací prvek lze snadno testovat, pokud budete implementovat podpor
   
  ![CUIT &#95; CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")  
   
-### <a name="to-support-custom-property-validation"></a>Pro podporu ověřování vlastní vlastnosti  
- ![CUIT &#95; Props](../test/media/cuit_props.png "CUIT_Props")  
-  
-1.  Přepsání křivky legendy přístupné objektu <xref:System.Windows.Forms.AccessibleObject.Description%2A> vlastnost k předání bohaté vlastnost hodnot v řetězci popis oddělené od hlavní popis (a vzájemně při implementaci více vlastností) středníkem (;).  
+### <a name="to-support-custom-property-validation"></a>Pro podporu ověřování vlastní vlastnosti
+
+![CUIT &#95; Props](../test/media/cuit_props.png "CUIT_Props")
+
+1. Přepsání křivky legendy přístupné objektu <xref:System.Windows.Forms.AccessibleObject.Description%2A> vlastnost k předání bohaté vlastnost hodnot v řetězci popis oddělené od hlavní popis (a vzájemně při implementaci více vlastností) středníkem (;).  
   
     ```csharp  
     public class CurveLegendAccessibleObject : AccessibleObject  
@@ -106,99 +96,87 @@ Vlastní ovládací prvek lze snadno testovat, pokud budete implementovat podpor
         }  
     }  
     ```  
-  
-2.  Vytvořit balíček rozšíření testu uživatelského rozhraní pro vlastní ovládací prvek vytvořením projektu knihovny tříd a přidejte odkazy na usnadnění, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common, a Microsoft.VisualStudio.TestTools.Extension. Změna **přibalit definované typy** pro usnadnění přístupu k **False**.  
-  
-3.  Přidání třídy zprostředkovatele vlastnost, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>.  
-  
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using Accessibility;  
-    using Microsoft.VisualStudio.TestTools.UITesting;  
-    using Microsoft.VisualStudio.TestTools.UITest.Extension;  
-    using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
-    using Microsoft.VisualStudio.TestTools.UITest.Common;  
-  
-    namespace ChartControlExtensionPackage  
-    {  
-        public class ChartControlPropertyProvider : UITestPropertyProvider  
-        {  
-        }  
-    }  
-    ```  
-  
-4.  Implementaci zprostředkovatele vlastnost tím, že názvy vlastností a vlastnost popisovačů v <xref:System.Collections.Generic.Dictionary%602>.  
-  
-<CodeContentPlaceHolder>3</CodeContentPlaceHolder>  
-5.  Přepsání <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> indikující, že vaše sestavení poskytuje podporu specifické pro ovládací prvek pro vlastní ovládací prvek a jeho podřízených položek.  
-  
-<CodeContentPlaceHolder>4</CodeContentPlaceHolder>  
-6.  Přepsání zbývající abstraktní metody <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>.  
-  
-<CodeContentPlaceHolder>5</CodeContentPlaceHolder>  
-7.  Přidání třídy balíček rozšíření, který je odvozený od <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.  
-  
-<CodeContentPlaceHolder>6</CodeContentPlaceHolder>  
-8.  Definování `UITestExtensionPackage` atribut pro sestavení.  
-  
-<CodeContentPlaceHolder>7</CodeContentPlaceHolder>  
-9. Ve třídě balíček rozšíření přepsat <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A?displayProperty=fullName> má vrátit třídu vlastnost poskytovatele, pokud je požadovaná vlastnost poskytovatele.  
-  
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder>  
-10. Přepsání zbývající abstraktní metody a vlastnosti <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.  
-  
-<CodeContentPlaceHolder>9</CodeContentPlaceHolder>  
-11. Sestavení vaší binární soubory a zkopírujte je do **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
-  
+
+1. Vytvořit balíček rozšíření testu uživatelského rozhraní pro vlastní ovládací prvek vytvořením projektu knihovny tříd a přidejte odkazy na usnadnění, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common, a Microsoft.VisualStudio.TestTools.Extension. Změna **přibalit definované typy** pro usnadnění přístupu k **False**.
+
+1. Přidání třídy zprostředkovatele vlastnost, která je odvozena z <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>:
+
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using Accessibility;
+    using Microsoft.VisualStudio.TestTools.UITesting;
+    using Microsoft.VisualStudio.TestTools.UITest.Extension;
+    using Microsoft.VisualStudio.TestTools.UITesting.WinControls;
+    using Microsoft.VisualStudio.TestTools.UITest.Common;
+
+    namespace ChartControlExtensionPackage
+    {
+        public class ChartControlPropertyProvider : UITestPropertyProvider
+        {
+        }
+    }
+    ```
+
+1. Implementaci zprostředkovatele vlastnost tím, že názvy vlastností a vlastnost popisovačů v <xref:System.Collections.Generic.Dictionary%602>.
+
+1. Přepsání <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> indikující, že vaše sestavení poskytuje podporu specifické pro ovládací prvek pro vlastní ovládací prvek a jeho podřízených položek.
+
+1. Přepsání zbývající abstraktní metody<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>
+
+1. Přidání třídy balíček rozšíření, který je odvozený od <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
+
+1. Definování `UITestExtensionPackage` atribut pro sestavení.
+
+1. Ve třídě balíček rozšíření přepsat <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A?displayProperty=fullName> má vrátit třídu vlastnost poskytovatele, pokud je požadovaná vlastnost poskytovatele.
+
+1. Přepsání zbývající abstraktní metody a vlastnosti <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.
+
+1. Sestavení vaší binární soubory a zkopírujte je do **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
+
 > [!NOTE]
->  Tento balíček rozšíření se použijí pro libovolný ovládací prvek, který je typu "Text". Pokud testujete více ovládacích prvků stejného typu, budete muset testovat samostatně a spravovat, které balíčky rozšíření nasazených při záznamu testy.  
-  
-##  <a name="codegeneration"></a>Podpora generování kódu pomocí implementace třídy pro přístup k vlastní vlastnosti  
- Tvůrce programového testu uživatelského rozhraní generuje kód ze záznamu relace, používá <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> třídu pro vaše ovládací prvky přístup.  
-  
-<CodeContentPlaceHolder>10</CodeContentPlaceHolder>  
- Pokud jste implementovali vlastnost poskytovatele poskytnout přístup k vlastní vlastnosti ovládacího prvku, můžete přidat specializované třídu, která se používá pro přístup tyto vlastnosti tak, aby se zjednodušilo generovaného kódu.  
-  
-<CodeContentPlaceHolder>11</CodeContentPlaceHolder>  
-### <a name="to-add-a-specialized-class-to-access-your-control"></a>Postup přidání specializované třídy pro přístup k vlastní ovládací prvek  
- ![CUIT &#95; CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")  
-  
-1.  Implementace třídy, který je odvozený od <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> a přidejte typ ovládacího prvku do kolekce vlastností vyhledávání v konstruktoru.  
-  
-<CodeContentPlaceHolder>12</CodeContentPlaceHolder>  
-2.  Implementujte vlastní vlastnosti ovládacího prvku jako vlastnosti třídy.  
-  
-<CodeContentPlaceHolder>13</CodeContentPlaceHolder>  
-3.  Přepsání poskytovatele vlastnost <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> metoda vrátí typ novou třídu pro křivku legendy podřízených ovládacích prvků.  
-  
-<CodeContentPlaceHolder>14</CodeContentPlaceHolder>  
-4.  Přepsání poskytovatele vlastnost <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> metoda vrátí typ metody PropertyNames novou třídu.  
-  
-<CodeContentPlaceHolder>15</CodeContentPlaceHolder>  
+> Tento balíček rozšíření se použijí pro libovolný ovládací prvek, který je typu "Text". Pokud testujete více ovládacích prvků stejného typu, budete muset testovat samostatně a spravovat, které balíčky rozšíření nasazených při záznamu testy.
+
+##  <a name="codegeneration"></a>Podpora generování kódu pomocí implementace třídy pro přístup k vlastní vlastnosti
+
+Tvůrce programového testu uživatelského rozhraní generuje kód ze záznamu relace, používá <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> třídu pro vaše ovládací prvky přístup.
+
+Pokud jste implementovali vlastnost poskytovatele poskytnout přístup k vlastní vlastnosti ovládacího prvku, můžete přidat specializované třídu, která se používá pro přístup tyto vlastnosti tak, aby se zjednodušilo generovaného kódu.
+
+### <a name="to-add-a-specialized-class-to-access-your-control"></a>Postup přidání specializované třídy pro přístup k vlastní ovládací prvek
+
+![CUIT &#95; CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")  
+
+1. Implementace třídy, který je odvozený od <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> a přidejte typ ovládacího prvku do kolekce vlastností vyhledávání v konstruktoru.  
+
+1. Implementujte vlastní vlastnosti ovládacího prvku jako vlastnosti třídy.  
+
+1. Přepsání poskytovatele vlastnost <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> metoda vrátí typ novou třídu pro křivku legendy podřízených ovládacích prvků.  
+
+1. Přepsání poskytovatele vlastnost <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> metoda vrátí typ metody PropertyNames novou třídu.
+
 ##  <a name="intentawareactions"></a>Podpora deklaracemi záměr akce implementací filtr akce  
  Když Visual Studio zaznamenává testu, zaznamená jednotlivých událostí myši a klávesnice. Ale v některých případech záměr akce může dojít ke ztrátě řady událostí myši a klávesnice. Například pokud vlastní ovládací prvek podporuje automatické dokončování, stejnou sadu událostí myši a klávesnice, které může vést k jiné hodnoty při při testu přehrávání v jiném prostředí. Můžete přidat filtr akce modul plug-in, nahradí jednu akci řadu události klávesnice a myši. Tímto způsobem můžete nahradit řadu událostí myši a klávesnice, což vede k výběru hodnoty jedinou akcí, které nastavuje hodnotu. Programové testy uživatelského rozhraní učinit chrání před rozdíly v automatického dokončování z jednoho prostředí do druhého.  
   
-### <a name="to-support-intent-aware-actions"></a>Pro podporu deklaracemi záměr akce  
- ![CUIT &#95; Akce](../test/media/cuit_actions.png "CUIT_Actions")  
-  
-1.  Implementace třídy filtru akce, který je odvozený od <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, přepisování vlastnosti <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
-  
-<CodeContentPlaceHolder>16</CodeContentPlaceHolder>  
-2.  Přepsání <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. V příkladu v tomto poli realpces akce poklikejte na soubor s jedním klikněte na tlačítko akce.  
-  
-<CodeContentPlaceHolder>17</CodeContentPlaceHolder>  
-3.  Přidat filtr akce <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> metoda vašeho balíčku rozšíření.  
-  
-<CodeContentPlaceHolder>18</CodeContentPlaceHolder>  
-4.  Sestavení vaší binární soubory a zkopírujte je do %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
-  
+### <a name="to-support-intent-aware-actions"></a>Pro podporu deklaracemi záměr akce
+
+![CUIT &#95; Akce](../test/media/cuit_actions.png "CUIT_Actions")  
+
+1. Implementace třídy filtru akce, který je odvozený od <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, přepisování vlastnosti <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>. 
+
+1. Přepsání <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. V příkladu v tomto poli realpces akce poklikejte na soubor s jedním klikněte na tlačítko akce.
+
+1. Přidat filtr akce <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> metoda vašeho balíčku rozšíření.
+
+1. Sestavení vaší binární soubory a zkopírujte je do %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+
 > [!NOTE]
->  Filtr akce nezávisí na implementaci usnadnění nebo na poskytovateli vlastnost.  
-  
-## <a name="debug-your-property-provider-or-action-filter"></a>Ladění vlastnost poskytovatele nebo filtrů Akce  
- Vlastnosti zprostředkovatele a akce filtru se implementují ve rozšíření balíček, který je načten a spustit pomocí Tvůrce programového testu uživatelského rozhraní, v procesu samostatné z vaší aplikace.  
-  
+> Filtr akce nezávisí na implementaci usnadnění nebo na poskytovateli vlastnost.
+
+## <a name="debug-your-property-provider-or-action-filter"></a>Ladění vlastnost poskytovatele nebo filtrů Akce
+
+Vlastnosti zprostředkovatele a akce filtru se implementují ve rozšíření balíček, který je načten a spustit pomocí Tvůrce programového testu uživatelského rozhraní, v procesu samostatné z vaší aplikace.
+
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>Chcete-li ladit vlastnosti zprostředkovatele nebo akce filtru  
   
 1.  Sestavení ladicí verze vaší kopie balíčku rozšíření knihovna .dll a soubory PDB do %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  

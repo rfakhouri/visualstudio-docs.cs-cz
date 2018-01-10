@@ -13,16 +13,15 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
-caps.latest.revision: "83"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: ebdac762d3dcc4079ed6e8247b394da685b1013a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 6320f9730be9c47da11a43b57b64c86e46a42bf4
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Postupy: Vytváření a spouštění testů jednotek pro spravovaný kód
 Tento názorný postup bude krok vás vytvoření, spuštění a přizpůsobení řadu testů jednotek pomocí částí Microsoft unit test framework pro spravovaný kód a Průzkumníka testů Visual Studio. Spustit s projektu C#, který je ve vývoji, vytvořit testy, které vykonává jeho kód, spusťte testy a podívejte se na výsledky. Potom můžete měnit kód projektu a znovu spusťte testy.  

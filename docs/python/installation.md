@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: cd1ce1ce47705e5e8b63fb3ef7cc36c401503886
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a8136bd3e694ae544b176b8da6bfc2b721eb0c89
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalace podpory Python v sadě Visual Studio v systému Windows
 
@@ -27,7 +27,7 @@ Chcete-li nainstalovat podporu jazyka Python pro Visual Studio, postupujte podle
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 a starší](#visual-studio-2013-and-earlier)
 
-Pro Visual Studio 2015 a starší musíte taky nainstalovat samostatně překladač Pythonu podle vašeho výběru (Python 3.5 a starší; není podporována 3.6). Podrobnosti najdete v tématu [prostředí Python](python-environments.md). Stejné stránce také obsahuje pokyny pro přidání existující překladač Python pro Visual Studio 2017.
+Pro Visual Studio 2015 a starší musíte taky nainstalovat samostatně překladač Pythonu podle vašeho výběru (Python 3.5 a starší; 3.6 není podporována a vygeneruje zpráva "Python Nepodporovaná verze 3.6"). Podrobnosti najdete v tématu [prostředí Python](python-environments.md). Stejné stránce také obsahuje pokyny pro přidání existující překladač Python pro Visual Studio 2017.
 
 Chcete-li rychle otestování podpory Python po provedení kroků instalace, otevřete okno Python interaktivní stisknutím klávesy Alt-I a zadáním `2+2`. Pokud nevidíte výstup `4`, znovu zkontrolovat vaše kroky.
 
@@ -60,10 +60,10 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 
     ![Python vývoj možnosti v instalačním programu sady Visual Studio](media/installation-python-options.png)
 
-    | Možnost | Popis | 
+    | Možnost | Popis |
     | --- | --- |
     | Distribuce Python | Vyberte libovolnou kombinaci variant 32bitové a 64bitové verze Python 2, Python 3, Anaconda2 a Anaconda3 distribuce, které chcete pracovat. Každý obsahuje překladač distribuci, modulu runtime a knihovny. Anaconda, konkrétně je platforma vědecké účely open data, která zahrnuje širokou škálu balíčky. (Můžete vrátit na instalační program sady Visual Studio kdykoli přidat nebo odebrat distribuce.) |
-    | Podpora Cookiecutter šablony | Nainstaluje Cookicutter grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. V tématu [pomocí rozšíření Cookicutter](cookiecutter.md). |
+    | Podpora Cookiecutter šablony | Nainstaluje Cookiecutter grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. V tématu [pomocí rozšíření Cookiecutter](cookiecutter.md). |
     | Podpora webového Python | Nainstaluje nástroje pro vývoj webů, včetně HTML, CSS a JavaScript úpravy podporu, společně s šablon pro projekty pomocí rozhraní Bottle, Flask a Django. V tématu [Python webové šablony projektů](template-web.md). |
     | Podpora Python IoT | Podporuje vývoj jádro IoT Windows používá Python. |
     | Nástroje pro nativní vývoj Python | Nainstaluje kompilátoru C++ a další komponenty potřebné k vývoji nativní rozšíření pro jazyk Python. V tématu [vytváření rozšíření pro C++ pro jazyk Python](cpp-and-python.md). |
@@ -83,7 +83,7 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 
 1. Vyberte **programovací jazyky > Python Tools pro Visual Studio** a potom **Další**:
 
-    ![Možnost PTVS v instalační program sady Visual Studio 2015](media/installation-vs2015.png)    
+    ![Možnost PTVS v instalační program sady Visual Studio 2015](media/installation-vs2015.png)
 
 1. Po dokončení instalačního programu sady Visual Studio [nainstalovat překladač Pythonu zvoleného](python-environments.md#selecting-and-installing-python-interpreters). Pokud již máte překladač nainstalovaná, přečtěte si téma [vytváření prostředí pro existující překladač](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
@@ -114,11 +114,11 @@ Pro Visual Studio 2015 a starší cesty instalace jsou následující:
 
 kde:
 
-- &lt;VS_ver&gt; je:    
-    - 14.0 pro Visual Studio 2015
-    - 12.0 pro Visual Studio 2013
-    - 11.0 pro sadu Visual Studio 2012
-    - 10.0 pro Visual Studio 2010
+- &lt;VS_ver&gt; je:
+  - 14.0 pro Visual Studio 2015
+  - 12.0 pro Visual Studio 2013
+  - 11.0 pro sadu Visual Studio 2012
+  - 10.0 pro Visual Studio 2010
 - &lt;PTVS_ver&gt; číslo verze, jako je například 2.2, 2.1, 2.0, 1.5, 1.1 a 1.0.
 
 ### <a name="user-specific-installations-15-and-earlier"></a>Uživatelská instalace (1,5 a starší)

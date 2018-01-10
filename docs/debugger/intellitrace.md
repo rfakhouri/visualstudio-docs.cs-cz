@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bb0018e97cdbacc5e16e9591a0d480d509e1a9f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Strávíte méně času ladění aplikace při použití IntelliTrace zaznamenávat a sledování historie provádění vašeho kódu. Chyby můžete snadno najít, protože IntelliTrace umožňuje:  
@@ -47,7 +47,7 @@ Strávíte méně času ladění aplikace při použití IntelliTrace zaznamená
 |||  
 |-|-|  
 |**Ladění Moje aplikace s použitím technologie IntelliTrace:**<br /><br /> -Zobrazit mi po události.<br />-Zobrazit mi volání informace s posledních událostí.<br />-Uložte Moje relace IntelliTrace.<br />– Ovládací prvek data, která shromažďuje IntelliTrace.|-   [Návod: Použití IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Funkce IntelliTrace](../debugger/intellitrace-features.md)<br />-   [Historické ladění](../debugger/historical-debugging.md)<br />-   [Zobrazení snímky pomocí zpětný krok IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)|  
-|**Shromáždění dat technologie IntelliTrace během relace testu v Test Manager**|-   [Shromažďování více diagnostických dat v manuálních testech](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+|**Shromáždění dat technologie IntelliTrace během relace testu v Test Manager**|-   [Shromažďování více diagnostických dat v manuálních testech](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
 |**Shromáždění dat technologie IntelliTrace z nasazené aplikace**|-   [Použití samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Spusťte ladění ze souboru protokolu IntelliTrace (.iTrace soubor).**|-   [Pomocí uložených dat technologie IntelliTrace](../debugger/using-saved-intellitrace-data.md)|  
   
@@ -89,7 +89,7 @@ Strávíte méně času ladění aplikace při použití IntelliTrace zaznamená
   
 -   Vaše aplikace dojde k chybě v testovacím počítači, ale na vývojovém počítači, spouští úspěšně.  
   
-     Můžete shromáždit data IntelliTrace z nástroje Microsoft Test Manager, uložit tato data do souboru .iTrace a připojit tento soubor k pracovní položce serveru Team Foundation Server pro pozdější zkoumání. V tématu [shromažďování více diagnostických dat v manuálních testech](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests) a [použít uložené dat technologie IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
+     Můžete shromáždit data IntelliTrace z nástroje Microsoft Test Manager, uložit tato data do souboru .iTrace a připojit tento soubor k pracovní položce serveru Team Foundation Server pro pozdější zkoumání. V tématu [shromažďování více diagnostických dat v manuálních testech](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests) a [použít uložené dat technologie IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
   
 -   V nasazení aplikace se stane chyb nebo selhání.  
   
@@ -180,8 +180,6 @@ Strávíte méně času ladění aplikace při použití IntelliTrace zaznamená
   
 ## <a name="in-this-section"></a>V tomto oddílu  
  [Funkce IntelliTrace](../debugger/intellitrace-features.md)  
-  
- [Zahrnout diagnostických dat trasování s obtížně reprodukovatelnými chybami](/devops-test-docs/test_notintoc/including-diagnostic-trace-data-with-bugs-that-are-difficult-to-reproduce)  
   
  [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)  
   

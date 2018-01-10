@@ -21,11 +21,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e78e17d4b9060a3a52498109a744c13cdf972abb
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 82894a5d7f92c8231a6ba3a1948369fb2c819a6d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="replace-method-string-javascript"></a>replace – metoda (String) (JavaScript)
 Nahrazuje text v řetězci regulárním výrazem nebo hledaným řetězcem.  
@@ -34,7 +34,7 @@ Nahrazuje text v řetězci regulárním výrazem nebo hledaným řetězcem.
   
 ```  
   
-stringObj. replace(rgExp, replaceText)  
+stringObj.replace(rgExp, replaceText)  
 ```  
   
 ## <a name="parameters"></a>Parametry  
@@ -59,8 +59,8 @@ stringObj. replace(rgExp, replaceText)
 |**$&**|Určuje část `stringObj` celý vzor odpovídající. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] nebo novější)|  
 |`$``|Určuje část `stringObj` který předchází shody popsaného  **$&** . ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] nebo novější)|  
 |`$'`|Určuje část `stringObj` , který následuje shody popsaného  **$&** . ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] nebo novější)|  
-|`$`  ***n***|*n* Tý zachytit submatch, kde  *n*  je jednoduché desetinné číslo od 1 do 9. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] nebo novější)|  
-|`$`  ***nn***|*nn* Tý zachytit submatch, kde  *nn*  je letopočty desetinné číslo od 01 do 99. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] nebo novější)|  
+|`$`  ***n***| *n* Tý zachytit submatch, kde  *n*  je jednoduché desetinné číslo od 1 do 9. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] nebo novější)|  
+|`$`  ***nn***| *nn* Tý zachytit submatch, kde  *nn*  je letopočty desetinné číslo od 01 do 99. ([!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] nebo novější)|  
   
  Pokud `replaceText` je funkce, pro každý odpovídající podřetězec funkce je volána s následující *m* + 3 argumenty kde *m* je počet zaznamenávání závorkách v levém `rgExp`. První argument je podřetězec, který byl shodný. Další *m* argumenty jsou všechny záznamy, která byla vygenerována z hledání. Argument *m* + 2 je posun v rámci `stringObj` kde došlo k chybě shody a argument *m* + 3 je `stringObj`. Výsledkem je hodnota řetězce, která vznikla nahrazením každého shodného podřetězce odpovídající návratovou hodnotou volání funkce.  
   
@@ -89,7 +89,7 @@ var re = /(\S+)(\s+)(\S+)/g;
 var result = s.replace(re, "$3$2$1");  
 document.write(result);  
   
-// Output:  quick The fox brown over jumps lazy the dog.  
+// Output:  quick The fox brown over jumped lazy the dog.  
 ```  
   
  Následující příklad, který funguje v [!INCLUDE[jsv55textspecific](../../javascript/reference/includes/jsv55textspecific-md.md)] a novější, ukazuje, jak používat funkci, která vrátí Nahrazovací text. Nahradí všechny instance čísla následované znakem „F“ převodem na stupně Celsia.  

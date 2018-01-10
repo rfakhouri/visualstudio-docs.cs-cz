@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6c04b27acbd94172083c6efd41d55eaca13fd5e7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Pomocí uložených dat technologie IntelliTrace
 Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejděte na určité místo spuštění vaší aplikace. Tento soubor může obsahovat události výkonu, výjimky, vláken, testovací kroky, moduly a jiné informace systému, aby záznamy IntelliTrace při vaše aplikace běží.  
@@ -39,7 +39,7 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
     |**Zdroj**|**V tématu**|  
     |----------------|-------------|  
     |Relaci IntelliTrace ve Visual Studio Enterprise (ale ne Professional nebo komunity edice)|[Funkce IntelliTrace](../debugger/intellitrace-features.md)|  
-    |Relace testování v Microsoft Test Manager. Tento soubor .iTrace připojí k pracovní položce Team Foundation Server.|[Shromažďování více diagnostických dat v manuálních testech](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)|  
+    |Relace testování v Microsoft Test Manager. Tento soubor .iTrace připojí k pracovní položce Team Foundation Server.|[Shromažďování více diagnostických dat v manuálních testech](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent, buď samostatně nebo pomocí System Center 2012 R2 Operations Manager pro technologii ASP.NET webové aplikace a služby SharePoint aplikace běžící v nasazení|-   [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co je nového pro System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a>Co chcete udělat?  
@@ -266,7 +266,7 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
   
  [Funkce IntelliTrace](../debugger/intellitrace-features.md)  
   
- [Shromažďování více diagnostických dat v manuálních testech](/devops-test-docs/test/collect-more-diagnostic-data-in-manual-tests)  
+ [Shromažďování více diagnostických dat v manuálních testech](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   

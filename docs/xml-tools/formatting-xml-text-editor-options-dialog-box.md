@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5c15327837dbcd2fb1fe795a1e9891451df22e4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a4d6de24a75b5a08820878bc74633c02ab4118f
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formátování, XML, textový Editor, dialogové okno Možnosti
 Toto dialogové okno umožňuje zadat nastavení formátování pro Editor XML. Dostanete **možnosti** dialogové okno z **nástroje** nabídky.  
@@ -35,12 +35,12 @@ Toto dialogové okno umožňuje zadat nastavení formátování pro Editor XML. 
  **Zarovnat atributy na své vlastní řádku**  
  Zarovnává druhé a následné atributy svisle tak, aby odpovídaly odsazení prvního atributu. Následující text XML je příklad, jak by zarovnán atributy.  
   
-```  
+```xml
 <item id = "123-A"  
       name = "hammer"  
       price = "9.95">  
 </item>  
-```  
+```
   
 ## <a name="auto-reformat"></a>Automaticky přeformátovat  
  **Na vložte ze schránky**  
@@ -55,12 +55,12 @@ Toto dialogové okno umožňuje zadat nastavení formátování pro Editor XML. 
   
  Pokud element obsahuje směs text a značku, obsah se považují za být smíšený obsah. Následuje příklad prvku s smíšený obsah.  
   
-```  
+```xml
 <dir>c:\data\AlphaProject\  
   <file readOnly="false">test1.txt</file>  
   <file readOnly="false">test2.txt</file>  
 </dir>  
-```  
+```
   
 ## <a name="see-also"></a>Viz také  
  [Vlastnosti dokumentu XML, vlastnosti – okno](../xml-tools/xml-document-properties-properties-window.md)   

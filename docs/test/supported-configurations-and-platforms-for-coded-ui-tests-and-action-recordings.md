@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: coded UI tests
-ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
-caps.latest.revision: "106"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 580187da1ceb95369eb9da085248016a9d9a1707
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+author: gewarren
+ms.openlocfilehash: d2cc29115108b1a5d308a227ed0be30d44e56d67
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí
 Podporované konfigurace a platformy pro programové testy uživatelského rozhraní pro Visual Studio Enterprise jsou uvedeny v následující tabulce. Tyto konfigurace platí také pro zaznamenávání akcí, které jsou vytvořeny pomocí [!INCLUDE[MTRlong](../test/includes/mtrlong_md.md)].  
@@ -70,6 +69,6 @@ Podporované konfigurace a platformy pro programové testy uživatelského rozhr
   
  Informace o tom, jak vytvořit rozšíření, které podporují jiné platformy najdete v tématu [povolení programového testování z vaše ovládacích prvků uživatelského rozhraní](../test/enable-coded-ui-testing-of-your-controls.md) a [rozšiřování programových testů uživatelského rozhraní a zaznamenávání akcí do podpory aplikace Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).  
   
-## <a name="see-also"></a>Viz také  
- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Generování programových testů UI ze stávajícího záznamu akcí](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)
+## <a name="see-also"></a>Viz také
+
+[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)  

@@ -13,15 +13,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: b9762a3ce0a448fdf2b9e2d2b6127e7565187f70
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-projects"></a>Projektů v jazyce Python
 
-Aplikace Python jsou obvykle definovány pomocí pouze složky a soubory, ale může být tato struktura složitá, jak je aplikace, se zvětšit a případně zahrnují automaticky generovaný soubory JavaScript pro webové aplikace a tak dále. Ke správě této složitost, můžete vytvořit projektů sady Visual Studio pro aplikace Python. Projekt Python ( `.pyproj` souboru) identifikuje všechny zdroje a soubory obsahu přidružené k projektu, obsahuje informace o sestavení pro každý soubor, udržuje informace o integraci se systémy správy zdrojového kódu a pomáhá uspořádat vaše aplikace do logické součásti.
+Aplikace Python jsou obvykle definovány pomocí pouze složky a soubory, ale může být tato struktura složitá, jak je aplikace, se zvětšit a případně zahrnují automaticky generovaný soubory JavaScript pro webové aplikace a tak dále. Projekt sady Visual Studio pomáhá spravovat Tato složitost. Projekt ( `.pyproj` souboru) identifikuje všechny zdroje a soubory obsahu přidružené k projektu, obsahuje informace o sestavení pro každý soubor, udržuje informace o integraci se systémy správy zdrojového kódu a pomáhá uspořádat vaší aplikace do logické součásti.
 
 Kromě toho jsou vždy spravované projekty v sadě Visual Studio *řešení*, která může obsahovat libovolný počet projekty, které může odkazovat na sebe navzájem. Projekt Python můžete například odkazovat projektu jazyka C++ pro modul rozšíření tak, aby Visual Studio automaticky sestavení projektů C++ (v případě potřeby) při spuštění ladění projektu Python. (Obecné informace, naleznete v [řešení a projektů v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
@@ -38,7 +38,7 @@ V tomto tématu:
 
 < a name = "lightweight využití projektu – bez"</a>
 > [!Tip]
-> I bez na projekt sady Visual Studio pracuje s kód Python, jak můžete otevřít Python souboru samostatně a získejte automatické doplňování, IntellSense a ladění (v editoru pravým tlačítkem myši a výběrem **spuštění [s | bez] ladění**). Protože takový kód vždy používá výchozího globálního prostředí, ale může se zobrazit nesprávný dokončování nebo chyby Pokud kód je určená pro jinou prostředí. Kromě toho Visual Studio analyzuje všechny soubory a balíčky v složky, ve kterém je otevřen jeden soubor, který může spotřebovat značnou část času procesoru.
+> I bez na projekt sady Visual Studio pracuje s kód Python, jak můžete otevřít Python souboru samostatně a získejte automatické doplňování, IntelliSense a ladění (v editoru pravým tlačítkem myši a výběrem **spuštění [s | bez] ladění**). Protože takový kód vždy používá výchozího globálního prostředí, ale může se zobrazit nesprávný dokončování nebo chyby Pokud kód je určená pro jinou prostředí. Kromě toho Visual Studio analyzuje všechny soubory a balíčky v složky, ve kterém je otevřen jeden soubor, který může spotřebovat značnou část času procesoru.
 >
 > Je jednoduché vytvořit projekt sady Visual Studio z existujícího kódu, jak je popsáno níže v [vytvoření projektu z existujících souborů](#creating-a-project-from-existing-files).
 
@@ -62,15 +62,16 @@ Nový projekt je vždy přidružen prostředí výchozí globální Python. Chce
 ![Aktivace prostředí pro projekt Python](media/projects-activate-environment.png)
 
 < a name = "typy projektů"</a>
+
 ## <a name="project-templates"></a>Šablony projektů
 
-Visual Studio poskytuje několik způsobů, jak nastavit projekt Python, od začátku, nebo z existujícího kódu. Chcete-li použít šablonu, vyberte **soubor > Nový > projekt...**  příkaz nabídky nebo klikněte pravým tlačítkem na řešení v Průzkumníku řešení a vyberte **Přidat > Nový projekt...** , které obě zprovoznit **nový projekt** dialogu níže. Specifické pro Python šablony zobrazíte hledání "Python" nebo vyberte **šablony > jiné jazyky > Python** uzlu:
+Visual Studio poskytuje několik způsobů, jak nastavit projekt Python, od začátku, nebo z existujícího kódu. Chcete-li použít šablonu, vyberte **soubor > Nový > projekt...**  příkaz nabídky nebo klikněte pravým tlačítkem na řešení v Průzkumníku řešení a vyberte **Přidat > Nový projekt...** , které obě zprovoznit **nový projekt** dialogu níže. Specifické pro Python šablony zobrazíte hledání "Python" nebo vyberte **nainstalovaná > Python** uzlu:
 
 ![Dialogové okno Nový projekt se šablonami Python](media/projects-new-project-dialog.png)
 
 Následující tabulka shrnuje šablony dostupné na Visual Studio 2017 (ne všechny šablony jsou dostupné v všechny předchozí verze):
 
-| Šablony | Popis | 
+| Šablony | Popis |
 | --- | --- |
 | [Z existujícího kódu jazyka Python](#creating-a-project-from-existing-files) | Projekt sady Visual Studio vytvoří z existujícího kódu Python ve struktuře složek.  |
 | Aplikace Python | Struktura základního projektu pro novou aplikaci Python s jeden, prázdný zdrojového souboru. Ve výchozím projektu spouští v konzole překladač výchozí globální prostředí, které můžete změnit [přiřazení do různých prostředí](python-environments.md#project-specific-environments). |

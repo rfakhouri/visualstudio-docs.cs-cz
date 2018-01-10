@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
-caps.latest.revision: "33"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a24166bb88737699dc3b853cf7a821649acbc118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 9e89ff364b0b10ee85be6fdd98d3e328f8c337ee
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Upgrade programových testů UI z produktu Visual Studio 2010
 Testování projektů obsahující programové testy uživatelského rozhraní, které byly vytvořeny v [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 jsou bezobslužně opravit při otevření v sadě Visual Studio 2012 nebo novější. Pokud projektů testů jsou zaškrtnutá políčka do správy zdrojového kódu, soubory projektu jsou rezervovány pro tato oprava. Jakmile opravit, tyto testovací projekty obsahující programové může testů uživatelského rozhraní, potom použít v obou [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 a [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].  
@@ -64,9 +63,9 @@ Testování projektů obsahující programové testy uživatelského rozhraní, 
   
 -   **Zátěžové testování:** při spuštění zátěžového testu společně s typem sítě než profil místní sítě (LAN) v počítači to se systémem Windows 8, ovladači sítě emulátoru způsobuje chybu operačního systému. Další podrobnosti najdete v tématu [2736182 článku KB](http://support.microsoft.com/kb/2736182).  
   
-## <a name="see-also"></a>Viz také  
- [Portování, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [Upgrade testů z dřívějších verzí sady Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Generování programových testů UI ze stávajícího záznamu akcí](/devops-test-docs/test/generating-a-coded-ui-test-from-an-existing-action-recording)   
- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Viz také
+
+[Přenosy, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+[Upgrade testů z dřívějších verzí sady Visual Studio](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)  
+[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)  
+[Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
-caps.latest.revision: "12"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: f4da0733b53b17dbcca779b0fd3e7afcddcb2e85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a71eb54bad089e7d5bad24416604d93da615bd15
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Postupy: Konfigurace testů jednotek pro cílení na dřívější verzi rozhraní .NET Framework
 Když vytvoříte projekt testů v sadě Microsoft Visual Studio, je jako cíl, ve výchozím nastavení nejnovější verzi rozhraní .NET Framework. Kromě toho pokud provádíte upgrade projektů testů z předchozích verzí sady Visual Studio, se upgradují na nejnovější verzi rozhraní .NET Framework. Úpravou vlastností projektu, můžete explicitně znovu vybrat projektu na dřívější verze rozhraní .NET Framework.  

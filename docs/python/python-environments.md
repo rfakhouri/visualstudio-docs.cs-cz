@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: bd871b1e78878c8ae05cb69e1ac97d50197a18b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="python-environments"></a>Prostředí Python
 
@@ -53,7 +53,7 @@ S výjimkou s Visual Studio 2017 podpora v jazyce Python není součástí přek
 | Překladač | Popis |
 | --- | --- |
 | [CPython](https://www.python.org/) | "Nativní" a nejčastěji používaných překladač, k dispozici v 32bitové a 64bitové verze (32bitová verze doporučené). Zahrnuje nejnovější funkce jazyka, maximální kompatibility balíček Python, plná podpora ladění a interoperabilita s [IPython](http://ipython.org/). Viz také: [použít Python 2 nebo Python 3?](http://wiki.python.org/moin/Python2orPython3). Všimněte si, že Visual Studio 2015 a starší nepodporují Python 3.6 a může poskytnout chyba "Unsupported verze python 3.6". Používat jazyk Python, 3.5 nebo starší místo. |
-| [IronPython](https://github.com/IronLanguages/main) | Implementace rozhraní .NET jazyka Python, k dispozici v 32bitové a 64bitové verze, C# / f # nebo Visual Basic zprostředkovatel komunikace s objekty, poskytuje přístup k rozhraní API technologie .NET, standardní Python ladění (ale ne C++ ve smíšeném režimu ladění) a ve smíšeném IronPython / C# ladění. IronPython, ale nepodporuje virtuální prostředí. | 
+| [IronPython](https://github.com/IronLanguages/ironpython2) | Implementace rozhraní .NET jazyka Python, k dispozici v 32bitové a 64bitové verze, C# / f # nebo Visual Basic zprostředkovatel komunikace s objekty, poskytuje přístup k rozhraní API technologie .NET, standardní Python ladění (ale ne C++ ve smíšeném režimu ladění) a ve smíšeném IronPython / C# ladění. IronPython, ale nepodporuje virtuální prostředí. |
 | [Anaconda](https://www.continuum.io) | Platformě vědecké účely open data používá technologii Python a obsahuje nejnovější verzi CPython a většina těžko instalovat balíčky. Doporučujeme, abyste ho nelze v opačném případě rozhodnete-li. |
 | [PyPy](http://www.pypy.org/) | Vysoce výkonné trasování JIT, provádění Python, který je vhodný pro dlouhodobé programy a situacích slouží k určení výkonu problémy, ale nemůže najít jiné řešení. Funguje s Visual Studio, ale s omezenou podporu pro pokročilé funkce ladění. |
 | [Jython](http://www.jython.org/) | Implementace jazyka Python na virtuální počítač Java (JVM). Podobá se IronPython, kód spuštěný v Jython mohou komunikovat s třídy jazyka Java a knihovny, ale nemusí být možné používat mnoho knihovny určené pro CPython. Funguje s Visual Studio, ale s omezenou podporu pro pokročilé funkce ladění. |
@@ -73,7 +73,7 @@ V obou případech se zobrazí okno prostředí Python jako karty na stejné úr
 
 ![Okno prostředí Python](media/environments-default-view.png)
 
-Výše uvedený příklad ukazuje, že Python 3.4 (32bitová verze CPython) je nainstalována spolu s 32bitové a 64bitové verze IronPython 2.7. V takovém případě je výchozí prostředí tučným Python 3.4, který se používá pro všechny nové projekty. Pokud nevidíte žádné prostředí uvedené, znamená to, že jste nainstalovali nástroje Python Tools pro sadu Visual Studio v sadě Visual Studio 2015 nebo dřívější, ale nebyly nainstalovány překladač Pythonu (viz [zvolíte a instalace Python překladače](#selecting-and-installing-python-interpreters) výše). 
+Výše uvedený příklad ukazuje, že Python 3.4 (32bitová verze CPython) je nainstalována spolu s 32bitové a 64bitové verze IronPython 2.7. V takovém případě je výchozí prostředí tučným Python 3.4, který se používá pro všechny nové projekty. Pokud nevidíte žádné prostředí uvedené, znamená to, že jste nainstalovali nástroje Python Tools pro sadu Visual Studio v sadě Visual Studio 2015 nebo dřívější, ale nebyly nainstalovány překladač Pythonu (viz [zvolíte a instalace Python překladače](#selecting-and-installing-python-interpreters) výše).
 
 > [!Tip]
 > Když **prostředí Python** prostředí jsou uvedené v horní části a různé karty v dolní části, je omezený, jako v příkladu nahoře. Okno dostatečně zvětšující však změny široké zobrazení, které možná pohodlnější pro práci s.
@@ -161,7 +161,7 @@ V takovém případě protože prostředí je umístěný v oblasti chráněnéh
 
 **Zvýšení oprávnění teď** uděluje oprávnění pro nástrojem pip pro jednu operaci, správu subjektu také všechny operační systémy vyzve k zadání oprávnění. Výběr **pokračovat bez oprávnění správce** pokusy o instalaci balíčku, ale pip selže při pokusu o vytvoření složky s výstupem, jako "Chyba: Nepodařilo se vytvořit" C:\Program Files\Anaconda3\Lib\site-packages\ PNG.PY': bylo odepřeno oprávnění. "
 
-Výběr **vždy zvýšení oprávnění při instalaci nebo odebrání balíčků** dialogu zabraňuje zobrazování pro prostředí. Chcete-li se znovu zobrazí dialogové okno, přejděte na **nástroje > Možnosti > Python Tools > Obecné** a kliknutím na tlačítko, **resetovat všechny trvale skrytá dialogová okna**. 
+Výběr **vždy zvýšení oprávnění při instalaci nebo odebrání balíčků** dialogu zabraňuje zobrazování pro prostředí. Chcete-li se znovu zobrazí dialogové okno, přejděte na **nástroje > Možnosti > Python Tools > Obecné** a kliknutím na tlačítko, **resetovat všechny trvale skrytá dialogová okna**.
 
 V tom, že stejné možnosti kartě, můžete také vybrat **vždy spustit jako správce pip** o potlačení pro všechna prostředí. V tématu [možnosti - karta Obecné](options.md#general-options).
 
@@ -247,13 +247,13 @@ Technicky libovolný název souboru může sloužit k sledování požadavků (p
 
     ![Možnosti requirements.txt aktualizace](media/environments-requirements-txt-replace.png)
 
-    - **Nahradí celý soubor** odebere všechny položky, komentáře a možnosti, které existují.
-    - **Aktualizovat existující položky** zjistí požadavků balíčku a aktualizuje verze specifikátory tak, aby odpovídaly aktuálně nainstalovanou verzi.
-    - **Aktualizace a přidání položky** aktualizuje všechny požadavky, které se nacházejí a přidá všechny ostatní balíčky na konec souboru.
+  - **Nahradí celý soubor** odebere všechny položky, komentáře a možnosti, které existují.
+  - **Aktualizovat existující položky** zjistí požadavků balíčku a aktualizuje verze specifikátory tak, aby odpovídaly aktuálně nainstalovanou verzi.
+  - **Aktualizace a přidání položky** aktualizuje všechny požadavky, které se nacházejí a přidá všechny ostatní balíčky na konec souboru.
 
 Protože `requirements.txt` soubory jsou určeny k freeze – požadavky na projektu, všechny nainstalované balíčky jsou zapsány s přesné verze. Použití přesné verze zajišťuje, že budete moci snadno opakovat prostředí na jiném počítači. Balíčky jsou zahrnuty i v případě, že byly instalovány s rozsahem verze jako závislost jiný balíček, nebo instalační program než pip.
 
-Pokud` requirements.txt` soubor existuje při přidávání nové virtuální prostředí, **Přidání virtuálního prostředí** dialogovém okně se zobrazí možnost automaticky, instalaci balíčků a usnadňuje tak znovu vytvořit prostředí na jiném počítači:
+Pokud `requirements.txt` soubor existuje při přidávání nové virtuální prostředí, **Přidání virtuálního prostředí** dialogovém okně se zobrazí možnost automaticky, instalaci balíčků a usnadňuje tak znovu vytvořit prostředí na jiném počítači:
 
 ![Vytvoření virtuálního prostředí s requirements.txt](media/environments-requirements-txt.png)
 

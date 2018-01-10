@@ -8,16 +8,15 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: coded UI tests, data-driven
-ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
-caps.latest.revision: "56"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: cb7e1e231cda62f5312be7dd1058667e5b9ae363
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 50d4a9d6b300a46ac074989e91d9eb4aecf9a496
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Vytvoření datově řízeného programového testu UI
 K testování různých podmínkách, můžete spustit testy vícekrát s jiným parametrem hodnotami. Datově řízeného programového uživatelského rozhraní jsou testy pohodlný způsob, jak to udělat. Můžete definovat hodnoty parametrů ve zdroji dat a každý řádek ve zdroji dat je iterace programového testu uživatelského rozhraní. Celkový výsledek testu budou založeny na výsledek pro všechny iterace. Například pokud se jeden testovací iterace nezdaří, celkový výsledek testu je selhání.  

@@ -12,14 +12,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 51c8076ef3166e7f0f887a77399a0edfd5cfc072
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 62a860da6c8f672f5ecd03d3ab97bb9e3ddd3365
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Použití pokrytí kódu k určení rozsahu testovaného kódu
 Funkci pokrytí kódu sady Visual Studio lze použít ke zjištění toho, jaký podíl kódu projektu je skutečně testován kódovanými testy, jako jsou například jednotkové testy. Pro efektivní ochranu před chybami je vhodné testovat, neboli „pokrýt“, velkou část kódu projektu.  
@@ -267,15 +268,16 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
  Když sestavení proběhne, jsou výsledků pokrytí kódu připojeny k testovacímu běhu a zobrazí se v přehledu sestavení.  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analýza pokrytí kódu v příkazovém řádku  
- Pro spuštění testů z příkazového řádku se používá příkaz vstest.console.exe. Pokrytí kódu je jednou z možností tohoto nástroje. Další informace najdete v tématu [možnosti příkazového řádku VSTest.Console.exe](/devops-test-docs/test/vstest-console-exe-command-line-options).  
+
+Pro spuštění testů z příkazového řádku se používá příkaz vstest.console.exe. Pokrytí kódu je možnost vstest.console.exe nástroje.
+
+1.  Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:
   
-1.  Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:  
+    V systému Windows **spustit** nabídce zvolte **Visual Studio 2017** > **příkazový řádek vývojáře pro VS 2017**.  
   
-     V systému Windows **spustit** nabídce zvolte **všechny programy**, **Microsoft Visual Studio**, **nástroje sady Visual Studio**,  **Příkazový řádek vývojáře**.  
+2.  Spusťte následující příkaz:
   
-2.  Spusťte:  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
 ## <a name="troubleshooting"></a>Poradce při potížích  
  Pokud se nezobrazí výsledky pokrytí kódu, přečtěte si téma [řešení potíží s pokrytí kódu](../test/troubleshooting-code-coverage.md).  

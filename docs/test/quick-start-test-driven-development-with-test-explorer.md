@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
-caps.latest.revision: "15"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4344c844c47568c3c23744a890c202493704b6a8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 0dce2cfd041b3fe0be3ecd4061e3447190d5e448
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý začátek: Vývoj řízený testy s použitím Průzkumníka testů
 Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguje prostřednictvím mnoho kroků přírůstkové vývoje. Existuje několik rozhraní, které můžete použít k zápisu testy jednotek, včetně některých vyvinuté třetími stranami. Některé testovací rozhraní se specializují na testování v různých jazycích nebo platformy. Průzkumníka testů poskytuje jednotné rozhraní pro testování částí v některém z těchto rozhraní. Jsou k dispozici pro rozhraní nejčastěji používaných adaptéry a můžete napsat vlastní adaptéry pro ostatní platformy.  

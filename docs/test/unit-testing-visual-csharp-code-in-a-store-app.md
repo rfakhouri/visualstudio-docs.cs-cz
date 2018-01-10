@@ -4,19 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
-caps.latest.revision: "19"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 63018bdae7cec687ccf81d53ef6e35ecdc169c83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: dc9a2ac6d7267cd94902b7bbf950b49e0d71f815
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Testování Visual C# – kód v aplikaci UWP částí
 Toto téma popisuje jeden způsob, jak vytvářet testy částí pro třídu Visual C# v aplikaci UWP. Třída Rooter ukazuje nepřesných vědomosti limit teoreticky z calculus implementací funkce pro výpočet odhad druhou odmocninu čísla na zadanou mocninu. Matematické výrazy aplikace potom pomocí této funkce můžete zobrazit uživatele fun věcí, které lze provést pomocí matematické.  

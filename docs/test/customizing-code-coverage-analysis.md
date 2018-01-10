@@ -7,21 +7,21 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
-caps.latest.revision: "16"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bbac737c6f5bbb3dbe99b0ceae2eb648bcf4295
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: e0a27e78735b85417a62d99e4f9b5d101a7a177d
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="customizing-code-coverage-analysis"></a>Přizpůsobení analýzy pokrytí kódu
+
 Ve výchozím nastavení nástroj Visual Studio pokrytí kódu analyzuje všechny sestavení řešení (.exe/.dll), které jsou načteny během testování částí. Doporučujeme zachovat toto výchozí nastavení, protože ve většině případů funguje dobře. Další informace najdete v tématu [pomocí pokrytí kódu k určení jak mnohem kódu se testuje](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).  
   
- Před přizpůsobením chování pokrytí kódu je třeba zvážit některé alternativy:  
+Před přizpůsobením chování pokrytí kódu je třeba zvážit některé alternativy:  
   
 -   *Chcete vyloučit testovacího kódu z pokrytí výsledky kódu a obsahovat pouze kódu aplikace.*  
   
@@ -31,10 +31,11 @@ Ve výchozím nastavení nástroj Visual Studio pokrytí kódu analyzuje všechn
   
      Získejte soubory s příponou .pdb pro tato sestavení a zkopírujte je do stejné složky jako soubory sestavení s příponou .dll.  
   
- Chcete-li přizpůsobit chování pokrytí kódu, zkopírujte [ukázku na konci tohoto tématu](#sample) a přidejte ji do vašeho řešení pomocí .runsettings příponu souboru. Upravit vlastní potřebám a potom na **Test** nabídce zvolte **nastavení testu**, **vyberte nastavení testu** souboru. Zbývající část tohoto tématu popisuje tento postup podrobněji.  
+Chcete-li přizpůsobit chování pokrytí kódu, zkopírujte [ukázku na konci tohoto tématu](#sample) a přidejte ji do vašeho řešení pomocí .runsettings příponu souboru. Upravit vlastní potřebám a potom na **Test** nabídce zvolte **nastavení testu**, **vyberte nastavení testu** souboru. Zbývající část tohoto tématu popisuje tento postup podrobněji.  
   
-## <a name="the-runsettings-file"></a>Soubor s příponou .runsettings  
- V souboru s příponou .runsettings jsou uvedena upřesňující nastavení pokrytí kódu. Jedná se o konfigurační soubor používaný nástroji pro testování částí. Doporučujeme vám, že zkopírujete [ukázku na konci tohoto tématu](#sample) a upravit ho podle vlastních potřeb.  
+## <a name="the-runsettings-file"></a>Soubor s příponou .runsettings
+
+V souboru s příponou .runsettings jsou uvedena upřesňující nastavení pokrytí kódu. Jedná se o konfigurační soubor používaný nástroji pro testování částí. Doporučujeme vám, že zkopírujete [ukázku na konci tohoto tématu](#sample) a upravit ho podle vlastních potřeb.  
   
 -   *Co se stalo .testsettings soubor, který lze použít v sadě Visual Studio 2010?*  
   
@@ -58,8 +59,9 @@ Ve výchozím nastavení nástroj Visual Studio pokrytí kódu analyzuje všechn
   
  Další aspekty testování částí lze nakonfigurovat ve stejném souboru s příponou .runsettings. Další informace najdete v tématu [si kód Test jednotky](../test/unit-test-your-code.md).  
   
-### <a name="specifying-symbol-search-paths"></a>Určení cest pro hledání symbolů  
- Pokrytí kódu vyžaduje, aby byly pro sestavení k dispozici symboly (soubory s příponou .pdb). V případě sestavení vytvořených vaším řešením jsou soubory symbolů obvykle k dispozici spolu s binárními soubory a pokrytí kódu pracuje automaticky. Ale v některých případech můžete chtít zahrnout odkazovaná sestavení do analýzy pokrytí kódu. V takových případech se nemusí soubory s příponou .pdb nacházet u binárních souborů, ale můžete zadat cestu pro hledání symbolů v souboru s příponou .runsettings.  
+### <a name="specifying-symbol-search-paths"></a>Určení cest pro hledání symbolů
+
+Pokrytí kódu vyžaduje, aby byly pro sestavení k dispozici symboly (soubory s příponou .pdb). V případě sestavení vytvořených vaším řešením jsou soubory symbolů obvykle k dispozici spolu s binárními soubory a pokrytí kódu pracuje automaticky. Ale v některých případech můžete chtít zahrnout odkazovaná sestavení do analýzy pokrytí kódu. V takových případech se nemusí soubory s příponou .pdb nacházet u binárních souborů, ale můžete zadat cestu pro hledání symbolů v souboru s příponou .runsettings.  
   
 ```xml  
 <SymbolSearchPaths>                
@@ -72,8 +74,9 @@ Ve výchozím nastavení nástroj Visual Studio pokrytí kódu analyzuje všechn
 > [!WARNING]
 >  Vyhodnocování symbolů může trvat dobu, zvláště při použití vzdáleného umístění souborů s velkým množstvím sestavení. Zvažte proto možnost zkopírování vzdálených souborů s příponou .pdb do stejného umístění jako binární soubory (.dll a .exe).  
   
-### <a name="excluding-and-including"></a>Vyloučení a zahrnutí  
- Vybraná sestavení lze vyloučit z analýzy pokrytí kódu. Příklad:  
+### <a name="excluding-and-including"></a>Vyloučení a zahrnutí
+
+Vybraná sestavení lze vyloučit z analýzy pokrytí kódu. Příklad:  
   
 ```minterastlib  
 <ModulePaths>  
@@ -99,8 +102,9 @@ Ve výchozím nastavení nástroj Visual Studio pokrytí kódu analyzuje všechn
   
  `Include`se zpracují dříve, než `Exclude`.  
   
-### <a name="regular-expressions"></a>Regulární výrazy  
- Pomocí regulárních výrazů můžete zahrnout a vyloučit uzly. Další informace najdete v tématu [pomocí regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Regulární výrazy nejsou stejné jako zástupné znaky. Zejména:  
+### <a name="regular-expressions"></a>Regulární výrazy
+
+Pomocí regulárních výrazů můžete zahrnout a vyloučit uzly. Další informace najdete v tématu [pomocí regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Regulární výrazy nejsou stejné jako zástupné znaky. Zejména:  
   
 1.  **. \***  odpovídá řetězci všech znaků  
   
@@ -178,43 +182,47 @@ Ve výchozím nastavení nástroj Visual Studio pokrytí kódu analyzuje všechn
   
 ## <a name="how-to-specify-runsettings-files-while-running-tests"></a>Jak určit soubory s příponou .runsettings při spouštění testů  
   
-### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Přizpůsobení souboru s příponou .runsettings v testech sady Visual Studio  
- Zvolte **Test**, **nastavení testu**, **vyberte soubor s nastavením testu** a vyberte soubor .runsettings. Soubor se zobrazí v nabídce Nastavení testu a můžete jej vybrat nebo zrušit. Po výběru souboru .runsettings platí vždy, když používáte **analýza pokrytí kódu**.  
-  
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>Přizpůsobení parametrů spuštění v testu příkazového řádku  
- Pro spuštění testů z příkazového řádku se používá příkaz vstest.console.exe. Soubor nastavení je parametr tohoto nástroje. Další informace najdete v tématu [použití konzoly VSTest.console z příkazového řádku](/devops-test-docs/test/using-vstest-console-from-the-command-line).  
-  
-1.  Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:  
-  
-     V systému Windows **spustit**, zvolte **všechny programy**, **Microsoft Visual Studio**, **nástroje sady Visual Studio**, **vývojáře Příkazový řádek**.  
-  
-2.  Spusťte:  
-  
-     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
-  
-### <a name="to-customize-run-settings-in-a-build-definition"></a>Přizpůsobení parametrů spuštění v definici sestavení  
- Data pokrytí kódu můžete získat ze sestavení týmu.  
-  
- ![Určení runsettings v definici sestavení](../test/media/codecoverage-buildrunsettings.png "CodeCoverage buildRunsettings")  
-  
+### <a name="to-customize-runsettings-in-visual-studio-tests"></a>Přizpůsobení souboru s příponou .runsettings v testech sady Visual Studio
+
+Zvolte **Test** > **nastavení testu** > **vyberte soubor s nastavením testu** a vyberte soubor .runsettings. Soubor se zobrazí v nabídce Nastavení testu a můžete jej vybrat nebo zrušit. Po výběru souboru .runsettings platí vždy, když používáte **analýza pokrytí kódu**.
+
+### <a name="to-customize-run-settings-in-a-command-line-test"></a>Přizpůsobení parametrů spuštění v testu příkazového řádku
+
+Pro spuštění testů z příkazového řádku se používá příkaz vstest.console.exe. Soubor nastavení je parametr tohoto nástroje.
+
+1.  Spusťte příkazový řádek pro vývojáře v sadě Visual Studio:
+
+    V systému Windows **spustit** nabídce zvolte **Visual Studio 2017** > **příkazový řádek vývojáře pro VS 2017**.
+
+2.  Spusťte následující příkaz:
+
+    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
+
+### <a name="to-customize-run-settings-in-a-build-definition"></a>Přizpůsobení parametrů spuštění v definici sestavení
+
+Data pokrytí kódu můžete získat ze sestavení týmu.
+
+![Určení runsettings v definici sestavení](../test/media/codecoverage-buildrunsettings.png "CodeCoverage buildRunsettings")  
+
 1.  Zkontrolujte, zda byl soubor s příponou .runsettings vrácen se změnami.  
   
 2.  V nástroji Team Explorer otevřete **sestavení**a potom přidat nebo upravit definici buildu.  
   
-3.  Na **proces** rozbalte **automatizovaných testů**, **Test zdroje**, **spustit nastavení**. Vyberte vaše **.runsettings** souboru.  
+3.  Na **proces** rozbalte **automatizovaných testů** > **Test zdroje** > **spustit nastavení**. Vyberte vaše **.runsettings** souboru.
   
     -   *Ale **testovací sestavení** se zobrazí místo **Test zdroje**. Při nastavení **spustit nastavení** pole, I lze vybrat pouze .testsettings soubory.*  
   
          V části **automatizovaných testů**, vyberte **testovací sestavení**a zvolte **[...]**  na konci řádku. V **spuštění testu, přidat či upravit** dialogové okno, sada **Test Runner** k **Visual Studio Test Runner**.  
   
- Výsledky jsou zobrazeny v souhrnné části zprávy o sestavení.  
+Výsledky jsou zobrazeny v souhrnné části zprávy o sestavení.
   
-##  <a name="sample"></a>Ukázka souboru .runsettings  
- Zkopírujte tento kód a upravte jej podle svých potřeb. Toto je výchozí soubor s příponou .runsettings.  
-  
- (Pro jiné účely souboru .runsettings najdete v části [konfigurace testování částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  
-  
-```xml  
+##  <a name="sample"></a>Ukázka souboru .runsettings
+
+Zkopírujte tento kód a upravte jej podle svých potřeb. Toto je výchozí soubor s příponou .runsettings.
+
+(Pro jiné účely souboru .runsettings najdete v části [konfigurace testování částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>  
 <!-- File name extension must be .runsettings -->  
 <RunSettings>  
@@ -322,10 +330,10 @@ Included items must then not match any entries in the exclude list to remain inc
       </DataCollector>  
     </DataCollectors>  
   </DataCollectionRunSettings>  
-</RunSettings>  
-  
-```  
-  
-## <a name="see-also"></a>Viz také  
- [Použití pokrytí kódu k určení jak mnohem kódu se testuje](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)   
- [Testování částí kódu](../test/unit-test-your-code.md)
+</RunSettings>
+```
+
+## <a name="see-also"></a>Viz také
+
+[Použití pokrytí kódu k určení rozsahu testovaného kódu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)  
+[Testování částí kódu](../test/unit-test-your-code.md)

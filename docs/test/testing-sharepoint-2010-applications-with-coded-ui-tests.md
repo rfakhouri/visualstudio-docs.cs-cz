@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
-caps.latest.revision: "30"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4cf5eac9600be44405142666e1f94408c44b0a13
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní
 Včetně programové testy uživatelského rozhraní v aplikaci SharePoint umožňuje ověřit, zda je správně funguje celou aplikaci, včetně jeho ovládacích prvků uživatelského rozhraní. Programové testy uživatelského rozhraní můžete také ověřit, hodnoty a logiku v uživatelském rozhraní.  
@@ -144,10 +143,10 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>Fórum  
  [Visual Studio ALM a Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>Viz také  
- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Výkonnosti webů a zátěžové testování aplikací služby SharePoint 2010 a 2013](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [Vytvoření řešení služby SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
- [Zobrazení a ladění kódu služby SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
- [Sestavování a ladění řešení služby SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Profilace výkonu aplikací služby SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)
+## <a name="see-also"></a>Viz také
+
+[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)  
+[Vytvoření řešení služby SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
+[Zobrazení a ladění kódu služby SharePoint](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)   
+[Sestavování a ladění řešení služby SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
+[Profilace výkonu aplikací služby SharePoint](/office-dev/office-dev/profiling-the-performance-of-sharepoint-applications)

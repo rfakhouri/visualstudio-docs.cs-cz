@@ -13,11 +13,11 @@ author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload: unity
-ms.openlocfilehash: c6c22a04348266b4db83984ff194ad1cef2ac668
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e68024333084b6166305266dd061ef32bc0e14a
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) s aplikacemi Unity
 Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než právě psaní kódu. Tyto aktivity, označuje jako DevOps (vývoj + operations) span úplný životní cyklus aplikace a zahrnují plánování a sledování práce, navrhování a implementace kódu, Správa úložiště zdrojového kódu spuštění sestavení, Správa nepřetržité integrace nasazení, testování (včetně testování částí a testy uživatelského rozhraní), spuštěné různé formy diagnostiky v vývoj a provozní prostředí a monitorování výkonu a uživatel chování aplikace v reálném čase pomocí telemetrie a analýzy.  
@@ -84,8 +84,7 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než pr�
 |Vytváření definic s před a po skripty|Ano|Definici vlastní sestavení, která používá ke spuštění sestavení příkazového řádku Unity můžete také nakonfigurovat pro skripty před a po sestavení.|  
 |Průběžnou integraci včetně ověřované vrácení se změnami|Ano|Ověřované vrácení vrácení se změnami pro TFVC pouze jako Git funguje na žádost o přijetí změn modelu, nikoli vrácení se změnami.|  
 
-## <a name="testing"></a>Testování  
- Použití odkazu:  **[testování aplikace](/devops-test-docs/test/test-apps-early-and-often)**  
+## <a name="testing"></a>Testování
 
 |Funkce|Podporované s Unity|Další komentáře|  
 |-------------|--------------------------|-------------------------|  
@@ -96,8 +95,9 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než pr�
 |[Testování částí kódu](../test/unit-test-your-code.md)|V rámci Unity, ale ne Visual Studio|Poskytuje Unity vlastní jednotkové testování framework jako součást [nástroje Test Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset úložiště). Výsledky testů jednotek jsou hlášeny v rámci Unity a nebude prezentované v sadě Visual Studio.|  
 |[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)|Ne|Programové testy uživatelského rozhraní závisí na čitelný ovládací prvky v uživatelském rozhraní aplikace; Aplikace Unity jsou grafické ve své podstatě a obsah není tak přečíst nástroje uživatelského rozhraní programového testu.|  
 
-## <a name="improve-code-quality"></a>Zlepšení kvality kódu  
- Použití odkazu:  **[zlepšení kvality kódu](/visualstudio/test/improve-code-quality)**  
+## <a name="improve-code-quality"></a>Zlepšení kvality kódu
+
+Použití odkazu:  **[zlepšení kvality kódu](/visualstudio/test/improve-code-quality)**  
 
 |Funkce|Podporované s Unity|Další komentáře|  
 |-------------|--------------------------|-------------------------|  

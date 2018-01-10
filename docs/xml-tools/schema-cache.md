@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 77e0557e57831348d0736ca8d8d25189c631e010
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="schema-cache"></a>Mezipaměti schématu
 Nabízí XML Editor umístěný v adresáři %InstallRoot%\Xml\Schemas mezipaměti schématu. Mezipaměti schématu je globální pro všechny uživatele ve vašem počítači a obsahuje standardní schémat XML, které se používají pro ověřování dokumentu IntelliSense a XML.  
@@ -54,13 +54,13 @@ Nabízí XML Editor umístěný v adresáři %InstallRoot%\Xml\Schemas mezipamě
   
  Editor souborů XML také podporuje libovolný počet schématu katalogu soubory v adresáři mezipaměti schématu. Katalogů schémat může ukazovat na jiné umístění pro schémat, které chcete, aby editoru seznámit. Soubor catalog.xsd definuje formát souboru katalogu a je součástí adresář mezipaměti schématu. Výchozí katalog je soubor catalog.xml a obsahuje odkazy na další schémata v InstallDir %. Toto je vzorkování catalog.xml souboru:  
   
-```  
+```xml
 <SchemaCatalog xmlns="http://schemas.microsoft.com/xsd/catalog">  
   <Schema href="%InstallDir%/help/schemas/Favorites.xsd" targetNamespace="urn:Favorites-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/Links.xsd" targetNamespace="urn:Links-Schema"/>  
   <Schema href="%InstallDir%/help/schemas/MyHelp.xsd" targetNamespace="urn:VSHelp-Schema"/>  
 </SchemaCatalog>  
-```  
+```
   
  `href` Atribut může být jakékoli cesty nebo http adresa URL souboru odkazující na schéma. Cesta k souboru může být relativní vzhledem k dokumentu katalogu. Následující proměnné, oddělená %%, jsou rozpoznány pomocí editoru a rozbalí se v cestě:  
   
@@ -82,25 +82,25 @@ Nabízí XML Editor umístěný v adresáři %InstallRoot%\Xml\Schemas mezipamě
   
 Může zahrnovat dokumentu katalogu `Catalog` element, který odkazuje na jiné katalogů. Můžete použít `Catalog` element tak, aby odkazoval centrální katalog sdíleny váš tým nebo společnosti nebo online katalogu sdílet s obchodními partnery. `href` Atribut je soubor cestu nebo http adresa URL pro jiné katalogů. Tady je příklad `Catalog` element:  
   
-```  
+```xml
 <Catalog href="file://c:/xcbl/xcblCatalog.xml"/>  
-```  
+```
   
  Katalog můžete také ovládat, jak schémata jsou spojené s dokumenty XML pomocí speciální `Association` elementu. Tento element přidruží schémat, které mají s konkrétní příponou, které mohou být užitečné, protože Editor souborů XML neprovádí žádné automatické přidružení schémat, které nemají žádné cílový obor názvů `targetNamespace` atribut. V následujícím příkladu `Association` element přidruží schéma dotNetConfig všechny soubory, které mají příponu souboru "konfigurace":  
   
-```  
+```xml
 <Association extension="config" schema="%InstallDir%/xml/schemas/dotNetConfig.xsd"/>  
-```  
+```
   
 ## <a name="localized-schemas"></a>Lokalizované schémata  
  V mnoha případech catalog.xml soubor neobsahuje položky pro lokalizované schémat. Můžete přidat další záznamy catalog.xml soubor, který přejděte do adresáře lokalizované schématu.  
   
  V následujícím příkladu a nové `Schema` byl vytvořen element, který používá proměnnou % LCID % tak, aby odkazoval na lokalizované schéma.  
   
-```  
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"  
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>  
-```  
+```
   
 ## <a name="changing-the-location-of-the-schema-cache"></a>Změna umístění mezipaměti schématu  
  Můžete přizpůsobit umístění mezipaměti schématu pomocí **různé** stránka Možnosti. Pokud máte adresáře Oblíbené schémat, lze nakonfigurovat editoru místo toho použít tyto schémat.  

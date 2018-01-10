@@ -1,7 +1,7 @@
 ---
 title: "Práce s Python v sadě Visual Studio, krok 1 | Microsoft Docs"
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/08/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: python
-ms.openlocfilehash: adb49bb6070fee611a2ba67913943e68ee938d29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9c80eb8b09a7bbcfc813c70d548f9762422262ed
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Práce s Python v sadě Visual Studio
 
@@ -51,7 +51,7 @@ V tomto kurzu začnete s Jednoduchý projekt obsahující soubor jeden, prázdn�
 
     Všimněte si, jak podporu jazyka Python v sadě Visual Studio obsahuje několik šablon projektu, včetně webových aplikací pomocí rozhraní Bottle, Flask a Django. Pro účely tohoto návodu ale Začněme s prázdným projektem.
 
-1. Vyberte **aplikace Python** šablony, zadejte název projektu a vyberte **OK**. 
+1. Vyberte **aplikace Python** šablony, zadejte název projektu a vyberte **OK**.
 
 1. Po chvíli se Visual Studio zobrazí strukturu projektu v **Průzkumníku řešení** okno (1). Výchozí soubor kód je otevřen v editoru (2). Okno vlastností (3) je také zobrazit další informace o libovolnou položku vybraného v Průzkumníkovi řešení, včetně jeho přesné umístění na disku.
 

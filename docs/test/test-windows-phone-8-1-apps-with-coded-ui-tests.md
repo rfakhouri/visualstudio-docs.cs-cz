@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
-caps.latest.revision: "28"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 8aa1bac1a98d8121dcba30dace22483e4a80e1d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 2af4471fd816746f19c06a7769fec6eb4ae5f425
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testování UWP aplikace Windows a 8.1 Phone pomocí programových testů uživatelského rozhraní
 
@@ -376,7 +375,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 |Funkce|Aplikace UWP|Aplikace Windows Phone|  
 |-------------|------------------------|------------------------|  
-|Cíl pro spouštění testů|Místním nebo vzdáleném počítači. Vzdálené počítače lze zadat, pokud používáte ke spuštění testů automatizované testovacího případu. V tématu [automatizace testovacího případu v nástroji Microsoft Test Manager](/devops-test-docs/test/automate-a-test-case-in-microsoft-test-manager).|Emulátoru nebo zařízení. Zobrazit, [Otázka: může testy provést v emulátoru pouze nebo I taky použít fyzické zařízení?](#TestingPhoneAppsCodedUI_EmulatorDevice) v tomto tématu.|  
+|Cíl pro spouštění testů|Místním nebo vzdáleném počítači. Vzdálené počítače lze zadat, pokud používáte ke spuštění testů automatizované testovacího případu.|Emulátoru nebo zařízení. Zobrazit, [Otázka: může testy provést v emulátoru pouze nebo I taky použít fyzické zařízení?](#TestingPhoneAppsCodedUI_EmulatorDevice) v tomto tématu.|  
 |Spuštění z příkazového řádku|Není zapotřebí zadat cílový soubor s nastavením.|Vyžaduje k určení cílového souboru Runsettings.|  
 |Specializované třídy pro ovládacích prvků prostředí|<xref:Microsoft.VisualStudio.TestTools.UITesting.DirectUIControls.DirectUIControl>|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|  
 |Webové zobrazení ovládacího prvku aplikace XAML|Podporované, pokud používáte Html * specializuje třídy pro interakci s elementů HTML. V tématu <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Není podporováno.|  

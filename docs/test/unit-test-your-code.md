@@ -11,16 +11,15 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
-caps.latest.revision: "62"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="unit-test-your-code"></a>Testy jednotek kódu
 Testování částí poskytnout vývojáři a testerům, sada rychlý způsob, jak hledat logické chyby v metody třídy v [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], a [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] projekty.  
@@ -55,15 +54,6 @@ Testování částí poskytnout vývojáři a testerům, sada rychlý způsob, j
 |**Rozšíření jednotka typu testu:** funkce můžete přidat do vaší testy, které nemusí být v rámci testování jednotky. Například je možné přidat vlastnost testu, která specifikuje, zda má test běžet pod běžným uživatelem nebo ne. Nebo je možné rozšířit rozhraní přidáním atributů řádku do metody a použít data v tomto řádku uvnitř testu.|Ukázkový kód o tom, jak rozšířit jednotka test framework, naleznete v následujících [webu společnosti Microsoft](http://go.microsoft.com/fwlink/?LinkId=185591).|  
 |**Nastavení možností otestování:** například můžete zadat, kde jsou uložené výsledky testů.|[Konfigurace testů částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
-## <a name="related-tasks"></a>Související úlohy  
- [Kontrola výsledků testů v nástroji Microsoft Test Manager](http://msdn.microsoft.com/en-us/9fb3e429-78df-4fe2-89ed-0ad1db0738f4)  
-  
- Popisuje výsledky testů a způsoby, jak s nimi pracovat, včetně jejich prohlížení, uložení a odstranění.  
-  
- [Spouštění systémových testů s použitím sady Microsoft Visual Studio](/devops-test-docs/test/running-automated-tests-using-microsoft-visual-studio)  
-  
- Obsahuje odkazy na informace o použití sady Visual Studio a pomocí [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] ke spuštění automatizovaných testů.  
-  
 ## <a name="reference"></a>Odkaz  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>  
  Popisuje obor názvů UnitTesting, který poskytuje atributy, výjimky, kontrolní výrazy a další třídy, které podporují testování částí.  
@@ -85,6 +75,6 @@ Testování částí poskytnout vývojáři a testerům, sada rychlý způsob, j
 ### <a name="reference"></a>Odkaz  
  [Index obsahu pro testování částí](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>Viz také  
- [Zlepšení kvality kódu](/visualstudio/test/improve-code-quality)   
- [Testování aplikace](/devops-test-docs/test/test-apps-early-and-often)
+## <a name="see-also"></a>Viz také
+
+[Zlepšení kvality kódu](/visualstudio/test/improve-code-quality)

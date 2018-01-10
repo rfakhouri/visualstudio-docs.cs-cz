@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
-caps.latest.revision: "10"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 65f9a9dd0e07a86ee6a4b883a7318f9add7df3cf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 57a33ce473cd82fcb6fb8517d7003c8772c1d4da
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalace systémů testů jednotek od třetích stran
 Testování Průzkumníka Visual Studio můžete spustit test rozhraní, které vyvinula adaptéru rozhraní pro aplikaci Explorer žádné jednotky. Instalační program rozhraní Framework nainstalují binární soubory a přidá šablony projektů Visual Studio pro jazyky, které podporuje. Když vytvoříte pomocí šablony projektu, rozhraní je zaregistrován pomocí Průzkumníka testů. Řešení sady Visual Studio může obsahovat projektů testů jednotek, které používají různé architektury a které se budou zaměřovat na různé jazyky. Průzkumníka testů spouští je všechny.  

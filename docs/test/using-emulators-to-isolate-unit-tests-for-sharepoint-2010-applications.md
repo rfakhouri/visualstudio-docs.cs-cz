@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
-caps.latest.revision: "15"
-ms.author: douge
-manager: douge
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 68999863abbf539bf1d83456d0630820249adb77
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+author: gewarren
+ms.openlocfilehash: 7595df2e8d57ae21d134aa68d156e87b883e8500
+ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolace testů jednotek aplikací pro SharePoint 2010 s použitím emulátorů
 Balíček Microsoft.SharePoint.Emulators poskytuje sadu knihoven, které vám pomohou vytvořit testy izolované jednotek aplikací pro Microsoft SharePoint 2010. Použít emulátorů [překrytí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) z [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) izolace rámec vytvořit jednoduché objekty v paměti, které napodobují nejběžnější objekty a metody rozhraní API služby SharePoint. Pokud není emulovaných metoda služby SharePoint, nebo pokud chcete změnit výchozí chování emulátoru, můžete vytvořit překrytí Fakes výsledky, které chcete poskytnout.  
@@ -589,7 +588,7 @@ namspace MySPAppTests
  [V tomto tématu](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>Viz také  
- [Testování částí kódu](../test/unit-test-your-code.md)   
- [Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)   
- [Výkonnosti webů a zátěžové testování aplikací služby SharePoint 2010 a 2013](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
- [Vývoj řešení služby SharePoint](/office-dev/office-dev/developing-sharepoint-solutions)
+
+[Testování částí kódu](../test/unit-test-your-code.md)  
+[Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)  
+[Vývoj řešení služby SharePoint](/office-dev/office-dev/developing-sharepoint-solutions)
