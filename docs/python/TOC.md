@@ -20,7 +20,7 @@
 ### [Šablona webového projektu Django](template-django.md)
 ### [Šablona cloudové služby Azure](template-azure-cloud-service.md)
 ## [Azure SDK pro Python](azure-sdk-for-python.md)
-# Postupy
+# Návody
 ## [Úpravy kódu](code-editing.md)
 ### [Formátování kódu](code-formatting.md)
 ### [Refaktoring kódu](code-refactoring.md)

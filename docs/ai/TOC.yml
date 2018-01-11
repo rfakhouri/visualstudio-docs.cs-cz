@@ -17,10 +17,26 @@
           href: tensorflow-vm.md
     - name: Návody
       items:
-        - name: Vytvoření nového projektu
-          href: create-project.md
+        - name: Vytvoření projektu
+          items:
+            - name: Vytvoření projektu z galerie ukázek
+              href: create-project-gallery.md
+            - name: "Vytvoření projektu z\_existujícího kódu"
+              href: create-project-existing.md
+            - name: Vytvoření projektu ze šablony
+              href: create-project.md
+            - name: Vytvoření projektu z úložiště GitHubu
+              href: create-project-repo.md
         - name: Vyzkoušejte svůj model
           href: train-model.md
+        - name: Zobrazení podrobností o úloze
+          href: job-details.md
+        - name: Monitorování využití GPU
+          href: monitor-gpu.md
+        - name: Monitorování TensorBoard
+          href: monitor-tensorboard.md
+        - name: Správa úložiště
+          href: manage-storage.md
     - name: Ukázky kódu
       items:
         - name: GitHub

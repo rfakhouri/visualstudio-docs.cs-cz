@@ -1,12 +1,22 @@
-# [Průvodce funkcí profilování](profiling-feature-tour.md)
-## [Průvodce profilací výkonu pro začátečníky](beginners-guide-to-performance-profiling.md)
-## [Novinky v nástrojích pro profilaci](what-s-new-in-profiling-tools.md)
+
+# [Dokumentace profilace](index.md)
+# Přehled
+## [Průvodce funkcí profilování](profiling-feature-tour.md)
+# Rychlý start
+## [Analýza využití procesoru (spravovaný)](quickstart-cpu-usage-managed.md)
+## [Analýza využití procesoru (nativní)](quickstart-cpu-usage-native.md)
+## [Analýza využití procesoru (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# Kurzy
+## [Výkon aplikace profilu v sadě Visual Studio](beginners-guide-to-performance-profiling.md)
+## [Využití paměti profilu v sadě Visual Studio](memory-usage.md)
+# Koncepty
 ## [Spouštění nástrojů pro profilaci s ladicím programem nebo bez něj](running-profiling-tools-with-or-without-the-debugger.md)
-## [Analýza využití paměti](memory-usage.md)
-### [Vlastní nativní události haldy Trasování událostí pro Windows](custom-native-etw-heap-events.md)
-### [Využití paměti bez ladicího programu](memory-usage-without-debugging2.md)
+# Návody
 ## [Analýza využití procesoru](cpu-usage.md)
 ### [Analýza využití procesoru v univerzální aplikaci pro Windows (UWP)](analyze-cpu-usage-in-a-windows-universal-app.md)
+## [Analýza využití paměti](analyze-memory-usage.md)
+### [Vlastní nativní události haldy Trasování událostí pro Windows](custom-native-etw-heap-events.md)
+### [Využití paměti bez ladicího programu](memory-usage-without-debugging2.md)
 ## [Analýza využití GPU](gpu-usage.md)
 ## [Analýza spotřeby prostředků](application-timeline.md)
 ## [Použití tipů pro výkon](perftips.md)
@@ -366,4 +376,6 @@
 ##### [CvWriteFlag – funkce](cvwriteflag-function.md)
 ##### [CvWriteMessage – funkce](cvwritemessage-function.md)
 ### [Nástroj příkazového řádku Vizualizéru souběžnosti (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [Analýza spotřeby energie v aplikacích pro UWP](analyze-energy-use-in-store-apps.md)
+## [Analýza spotřeby energie v aplikacích pro Store](analyze-energy-use-in-store-apps.md)
+# Prostředky
+## [Novinky v nástrojích pro profilaci](what-s-new-in-profiling-tools.md)

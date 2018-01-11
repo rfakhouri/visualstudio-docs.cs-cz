@@ -10,7 +10,7 @@
 ### [Používání kódů Product Key](product-keys.md)
 ### Jak aktivovat výhody
 #### Nástroje
-##### [Visual Studio Enterprise](vs-ide-benefit.md) 
+##### [Integrované vývojové prostředí sady Visual Studio](vs-ide-benefit.md) 
 ##### [Visual Studio Team Services](vs-vsts.md)
 ##### [Microsoft Azure](vs-azure.md) 
 ##### [Parasoft](vs-parasoft.md)
@@ -33,7 +33,7 @@
 ##### [Technická podpora](vs-tech-support.md)
 
 ## Správci
-### [Role a povinnosti správce](admin-responsibilities.md)
+### [Přehled správce](admin-responsibilities.md)
 ### [Přístup k portálu správce](access-admin-portal.md)
 ### [Používání portálu správce](using-admin-portal.md)
 ### [Přiřazení předplatného](assign-license.md)
