@@ -12,12 +12,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.workload: cplusplus
-ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Pomocí kameny základní pokyny pro C++
 Základní pokyny C++ jsou přenosné sadu pokyny, pravidla a osvědčené postupy o kódování v jazyce C++ vytvořené odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu tato pravidla v rámci jeho nástrojů pro analýzu kódu pro jazyk C++. Kameny platí základní jsou nainstalované ve výchozím nastavení v Visual Studio 2017 a [k dispozici jako balíčku NuGet pro Visual Studio 2015](#vs2015_corecheck).
@@ -86,7 +85,7 @@ Při přidávání nové pravidel pro kontrolu C++ základní pokyny, může zv�
 Od verze Visual Studio 2017 verze 15.3 sady podporované pravidel jsou: 
   - **Vlastník ukazatel pravidla** vynutit [Správa prostředků kontroluje související s vlastníka<T> od základní pokynů C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Const pravidla** vynutit [související const kontroly od základní pokynů C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+  - **Const pravidla** vynutit [související const kontroly od základní pokynů C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).  
 
   - **Nezpracovaná pravidla ukazatel** vynutit [Správa prostředků kontroluje související s nezpracovaná ukazatele od základní pokynů C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
@@ -98,11 +97,14 @@ Od verze Visual Studio 2017 verze 15.3 sady podporované pravidel jsou:
 
   **Visual Studio 2017 verze 15,5**:
   - **Třída pravidla** několik pravidel, které soustředit na správné použití speciální metod a virtuální specifikace. Toto je podmnožinou kontroly doporučené pro [třídy a hierarchie tříd](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class). 
-  - **Pravidla souběžnosti** jediné pravidlo, které zachytí deklarovaný badlyly ochrana objekty. Další informace najdete v části [pokyny týkající se souběžnosti](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
+  - **Pravidla souběžnosti** jediné pravidlo, které zachytí chybně deklarovaný ochrana objekty. Další informace najdete v tématu [pokyny týkající se souběžnosti](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency). 
   - **Pravidla deklarace** několik pravidel z [rozhraní pokyny](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) jsou deklarovány které zaměřit na to, jak globální proměnné.  
   - **Funkce pravidla** dva kontroly, které pomáhají s přijetím `noexcept` specifikátor. Toto je část pokyny pro [vymazat funkce návrhu a implementace](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions). 
   - **Sdílené ukazatel pravidla** jako součást [Správa prostředků](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) pokyny vynucení jsme přidali několik pravidel, které jsou specifické pro jak sdílené ukazatele jsou předána do funkce nebo použít místně.  
-  - **Pravidel stylů** jeden kontrola jednoduchý, ale důležité, která zakáže použití [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Toto je prvním krokem při vylepšení psaní kódu stylu a použití výrazy a příkazy v jazyce C++. 
+  - **Pravidel stylů** jeden kontrola jednoduchý, ale důležité, která zakáže použití [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Toto je prvním krokem při vylepšení psaní kódu stylu a použití výrazy a příkazy v jazyce C++.  
+  
+  **Visual Studio 2017 verze 15,6 operací**:
+  - **Aritmetické pravidla** pravidla k detekci aritmetické [přetečení](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow), [podepsané nepodepsaných operations](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) a [bit manipulaci s](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
 
 
  Můžete omezit upozornění na právě jednu nebo několik skupin. **Nativní minimální** a **nativní doporučená** pravidlo nastaví zahrnout C++ základní zkontrolujte pravidla kromě jiných PREfast kontroly. Pokud chcete zobrazit dostupné sady pravidel, otevřete dialogové okno Vlastnosti projektu, vyberte **Analysis\General kód**, otevřete rozevírací seznam v **sad pravidel** pole se seznamem a vybrat **zvolte více sad pravidel** . Další informace o použití sady pravidel v sadě Visual Studio najdete v tématu [pomocí sad pravidel k seskupování pravidel analýzy kódu](using-rule-sets-to-group-code-analysis-rules.md).
@@ -120,7 +122,7 @@ CPPCORECHECK_UNIQUE_POINTER_WARNINGS
 CPPCORECHECK_BOUNDS_WARNINGS
 ```
 
-Tyto makra odpovídají sady pravidel a rozšířit seznam upozornění čísel oddělených mezerami. Pomocí příslušné – Direktiva pragma konstrukce, můžete nakonfigurovat efektivní sada pravidel, která je zajímavé pro projekt nebo část kódu. V následujícím příkladu se pouze o chybí konstantní modifikátory upozornit analýza kódu:
+Tyto makra odpovídají sady pravidel a rozšířit seznam upozornění čísel oddělených mezerami. Pomocí příslušné – Direktiva pragma konstrukce, můžete nakonfigurovat efektivní sada pravidel, která je zajímavé pro projekt nebo část kódu. V následujícím příkladu analýza kódu varuje pouze o chybí konstantní modifikátory:
 
 ```cpp
 #include <CppCoreCheck\Warnings.h>
@@ -129,8 +131,7 @@ Tyto makra odpovídají sady pravidel a rozšířit seznam upozornění čísel 
 ```
 
 ## <a name="attributes"></a>Atributy
- Microsoft Visual C++ compiler má omezenou podporu pro GSL potlačit atribut.
-Může sloužit k potlačení upozornění na výrazu a příkazy bloku uvnitř funkce.
+ Microsoft Visual C++ compiler má omezenou podporu pro GSL potlačit atribut. Může sloužit k potlačení upozornění na výrazu a příkazy bloku uvnitř funkce.
 
 ```cpp
 // Supress only warnings from the 'r.11' rule in expression.
@@ -164,10 +165,10 @@ Může sloužit k potlačení upozornění na výrazu a příkazy bloku uvnitř 
  Můžete použít možnost příkazového řádku k dočasnému zakázání všechny analýzy kódu pro soubor zadáním `/analyze-`. Tímto se vytvoří upozornění *D9025 přepsání '/ analyzovat' s ' / analyze – '*, která upozorní znovu zapnout analýza kódu. později.
 
  ## <a name="corecheck_per_file"></a>Povolení kontrolu C++ základní pokyny na soubory konkrétní projektu
-Někdy může být užitečné proveďte zaměřené analýzy kódu a stále využívají prostředí Visual Studio IDE. Toto je vzorový scénář, který lze použít pro rozsáhlých projektů ušetřit čas sestavení a usnadňují výsledky filtru:
+V některých případech může být užitečné proveďte zaměřené analýzy kódu a stále používání prostředí Visual Studio IDE. Následující vzorový scénář lze použít pro rozsáhlých projektů ušetřit čas sestavení a usnadňují výsledky filtru:
 
 1.  V příkazovém okně nastavený `esp.extension` a `esp.annotationbuildlevel` proměnné prostředí.
-2.  Visual Studio spustíte z příkazového okna dědění tyto proměnné.
+2.  Dědění tyto proměnné, spusťte z příkazového prostředí sady Visual Studio. 
 3.  Načtení projektu a otevřete jeho vlastnosti.
 4.  Povolit analýza kódu, vyberte příslušné pravidlo sady, ale není rozšíření analýzy kódu.
 5.  Přejděte na soubor, který chcete analyzovat pomocí kontrolu C++ základní pokyny a otevřete jeho vlastnosti.
@@ -212,13 +213,13 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
 ```
 
 ### <a name="non-msbuild-projects"></a>Bez MSBuild projekty
-Pokud používáte systém sestavení, která není závisí na MSBuild pořád se dá spustit nástroj pro kontrolu, ale budete muset Seznamte se s některé interní informace o modulu Konfigurace analýzy kódu. Všimněte si, že se nezaručuje, že tyto internals podporovaná v budoucnu.
+Pokud používáte systém sestavení, která není závisí na MSBuild pořád se dá spustit nástroj pro kontrolu, ale budete muset Seznamte se s některé interní informace o modulu Konfigurace analýzy kódu. Tyto interní informace o se nezaručuje, že podporovaná v budoucnu.
 
 Budete muset nastavit pár proměnných prostředí a použít správné možnosti příkazového řádku pro kompilátor. Je lepší, aby fungovaly v prostředí "nativní nástroje příkazového řádku" tak, že nemáte k vyhledání konkrétních cest pro kompilátor, zahrnout adresáře atd.
 
 1.  **Proměnné prostředí**
   - `set esp.extensions=cppcorecheck.dll`Tato hodnota informuje modul načíst modul C++ základní pokyny.
-  - `set esp.annotationbuildlevel=ignore`To zakáže logiku, která zpracovává poznámek SAL. Poznámky neovlivňuje analýza kódu v kontrola C++ základní pokyny, ale jejich trvá zpracování času (někdy mnoho času). Toto nastavení je volitelný, ale důrazně doporučujeme.
+  - `set esp.annotationbuildlevel=ignore`To zakáže logiku, která zpracovává poznámek SAL. Poznámky neovlivňuje analýza kódu v kontrola C++ základní pokyny, ale jejich zpracování trvá určitou dobu (někdy dlouhou dobu). Toto nastavení je volitelný, ale důrazně doporučujeme.
   - `set caexcludepath=%include%`Důrazně doporučujeme zakázat upozornění, které na standardní hlavičky. Můžete přidat více cest zde, například cestu k společné hlavičky ve vašem projektu.
 2.  **Možnosti příkazového řádku**
   - `/analyze`Analýza kódu umožňuje (zvažte taky použití / analyze: pouze a / analyze: quiet).

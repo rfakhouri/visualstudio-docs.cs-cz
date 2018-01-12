@@ -1,49 +1,8 @@
 ---
-title: "Spuštění aplikace UWP v místním počítači | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
-ms.assetid: e42a21a8-6423-4caf-b4dc-72b263e76019
-caps.latest.revision: "15"
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 63cb81c9bc168ad0bda8d675c0bf0bbde3759eff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+redirect_url: /visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml
+ms.openlocfilehash: 309b1bbf8e16ef7747db5583c103cd4b74ec4570
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
-# <a name="run-uwp-apps-on-the-local-machine"></a>Spuštění aplikace UWP v místním počítači
-![Platí pouze pro Windows](../debugger/media/windows_only_content.png "windows_only_content")  
-  
- Ladění, testování nebo spuštění analýzu výkonu na aplikace pro UPW, můžete spustit aplikace na stejném počítači který je hostitelem Visual Studio. Pokud zobrazení na zařízení dotykovým ovládáním, mohou vykonávat všechny funkce aplikace; jinak bude omezeno na gesta myši a klávesnice.  
-  
-##  <a name="BKMK_How_to_run_on_a_local_machine"></a>Jak spustit v místním počítači  
- Chcete-li spustit aplikace v místním počítači, vyberte **místního počítače** z rozevíracího seznamu vedle tlačítko Spustit ladění ladicí program **standardní** panelu nástrojů.  
-  
- ![Spustit v místním počítači](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")  
-  
- Pokud nevidíte **standardní** nástrojů, klikněte na tlačítko **zobrazení** nabídky, přejděte na příkaz **panely nástrojů**a potom klikněte na **standardní**.  
-  
- Výběr provedený v rozevíracím seznamu je uchován v souboru projektu vlastnosti a změní výchozí spustit cíl.  
-  
- Spuštění cílového můžete vytvořit také přímo v souboru vlastnosti projektu. Klikněte pravým tlačítkem myši na název projektu v **Průzkumníku řešení** a potom zvolte **vlastnosti**. Udělejte jednu z následujících akcí:  
-  
--   V projektech pro C# a Visual Basic, klikněte na tlačítko **ladění** a pak vyberte **místního počítače** z **cílové zařízení** rozevíracího seznamu.  
-  
-     ![C &#35; a stránce vlastností projektu jazyka Visual Basic](../debugger/media/vsrun_cs_vb_projprop_local.png "VSRUN_CS_VB_ProjProp_Local")  
-  
--   V projektech C++ a JavaScript, rozbalte **vlastnosti konfigurace** uzel, klikněte na tlačítko **ladění**a potom vyberte **místní ladicí program** z **ladicí program ke spuštění** seznamu.  
-  
-     ![C & č. 43; & č. 43; Stránka vlastností projektu jazyka JavaScript a](../debugger/media/vsrun_cpp_js_projprop_local.png "VSRUN_CPP_JS_ProjProp_Local")  

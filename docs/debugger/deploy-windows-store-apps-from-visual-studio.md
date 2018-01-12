@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 359431356bb06a04857b93e10996a2123c80f129
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Nasazení aplikací UWP ze sady Visual Studio
 ![Platí pouze pro Windows](../debugger/media/windows_only_content.png "windows_only_content")  
@@ -59,7 +59,7 @@ ms.lasthandoff: 12/22/2017
 Na vzdáleném zařízení Windows 10, musíte povolit [režim vývojáře](/windows/uwp/get-started/enable-your-device-for-development). Na zařízení s Windows 10 verzi Tvůrce Update nebo nástrojů pro vzdálenou jsou automaticky nainstalovány později při nasazení aplikace. Další informace najdete v tématu [ladění balíček nainstalovanou aplikaci](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Na Windows 8.1 a verze pre-Creator aktualizace systému Windows 10 nástrojů pro vzdálenou Visual Studio musí být nainstalován na vzdáleném zařízení a musí být spuštěna vzdáleného ladicího programu. Na Windows 8.1 je také nutné nainstalovat licenci vývojáře.
+> Na verze pre-Creator aktualizace systému Windows 10 a Windows 8.1 musí být nainstalované vzdálené nástroje pro sadu Visual Studio na vzdáleném zařízení a musí být spuštěna vzdáleného ladicího programu. Na Windows 8.1 je také nutné nainstalovat licenci vývojáře.
   
 Nasazení použije síťový kanál vzdáleného ladicího programu k odeslání v souborech aplikace na vzdáleném zařízení.  
   
@@ -101,7 +101,7 @@ Nasazení použije síťový kanál vzdáleného ladicího programu k odeslání
  Můžete nastavit následující možnosti nasazení na stránce vlastností ladění spouštěný projekt.  
   
  **Povolit zpětnou smyčku sítě**  
- Z bezpečnostních důvodů [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikaci, která je nainstalovaná standardním způsobem není povolená pro volání sítě do zařízení je nainstalovaný. Ve výchozím nasazení sady Visual Studio vytvoří výjimku z tohoto pravidla pro aplikace nasazené. Tato výjimka umožňuje otestovat postupy komunikace na jednom počítači. Před odesláním v aplikaci [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], měli byste otestovat aplikace bez výjimky.  
+ Z bezpečnostních důvodů, UWP nebo [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikaci, která je nainstalovaná standardním způsobem není povolená pro volání sítě do zařízení je nainstalovaný. Ve výchozím nasazení sady Visual Studio vytvoří výjimku z tohoto pravidla pro aplikace nasazené. Tato výjimka umožňuje otestovat postupy komunikace na jednom počítači. Před odesláním v aplikaci [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], měli byste otestovat aplikace bez výjimky.  
   
  Postup odebrání výjimky zpětné smyčky sítě z aplikace:  
   

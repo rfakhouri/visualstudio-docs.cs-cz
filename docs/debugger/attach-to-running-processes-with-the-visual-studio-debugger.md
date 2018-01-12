@@ -32,11 +32,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28126f9c832f55d63bd1b477599cf83ac8a57d59
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ke spuštěným procesům pomocí ladicího programu sady Visual Studio
 Ladicí program Visual Studio můžete připojit k spuštěných procesů na místním nebo vzdáleném počítači. Jakmile je proces spuštěný, klikněte na tlačítko **ladění > připojit k procesu** (nebo stiskněte klávesu **CTRL + ALT + P**) otevřete **připojit k procesu** dialogové okno.
@@ -147,10 +147,7 @@ Pro některé typy aplikací (jako jsou aplikace UWP), nemusíte připojit pří
 |Ladění jiné typy podporované aplikace na proces serveru|Pomocí nástrojů pro vzdálenou (Pokud je vzdálený server) a připojit k procesu|Iexplore.exe nebo jinými procesy|V případě potřeby použijte Správce úloh k identifikaci procesu. V tématu [vzdálené ladění](../debugger/remote-debugging.md) a v dalších částech v tomto tématu|
 |Vzdálené ladění aplikace na ploše systému Windows|Nástroje pro vzdálenou a F5|Není k dispozici| V tématu [vzdálené ladění](../debugger/remote-debugging.md)|
 |Vzdálené ladění aplikace Universal (UWP), OneCore, HoloLens a IoT|Ladění nainstalovanou aplikaci balíčku|Není k dispozici|V tématu [ladění balíčku aplikace nainstalována](debug-installed-app-package.md) místo použití **připojit k procesu**|
-|Ladění aplikace univerzální aplikace pro Windows (UWP), OneCore, HoloLens a IoT, které jste nezahájili ze sady Visual Studio|Ladění nainstalovanou aplikaci balíčku|Není k dispozici|V tématu [ladění balíčku aplikace nainstalována](debug-installed-app-package.md) místo použití **připojit k procesu**|
-  
-> [!WARNING]
->  Pro připojení k UPW, který je napsán v jazyce JavaScript, musíte nejdřív povolit ladění pro aplikace. V tématu [připojit ladicí program](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) ve službě Windows Dev Center.  
+|Ladění aplikace univerzální aplikace pro Windows (UWP), OneCore, HoloLens a IoT, které jste nezahájili ze sady Visual Studio|Ladění nainstalovanou aplikaci balíčku|Není k dispozici|V tématu [ladění balíčku aplikace nainstalována](debug-installed-app-package.md) místo použití **připojit k procesu**|  
   
 > [!NOTE]
 >  V ladicím programu pro připojení k kód napsaný v jazyce C++ kód potřebuje pro vydávání `DebuggableAttribute`. Můžete přidat to kódu automaticky pomocí propojení s [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) – možnost linkeru.
