@@ -21,17 +21,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 - Business Data Connectivity service [SharePoint development in Visual Studio], data
 - BDC [SharePoint development in Visual Studio], data
-ms.assetid: e092e3d6-2c5f-4060-ae86-d37db8967559
-caps.latest.revision: "19"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 4cacdbb314130fa45b5aa3820abbbffbcbc6c0bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c054049c09f13c224ee4f0bb3021af1121f5cea8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="integrating-business-data-into-sharepoint"></a>Integrace obchodních dat do služby SharePoint
   Obchodní data můžete integrovat do služby SharePoint. Obchodní data mohou pocházet z back-end serverů aplikace, jako například [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel a SAP, nebo webové službě. Uživatele můžete zobrazit, přidat, aktualizovat nebo odstranit podniková data pomocí externí seznamy nebo obchodní Data webových částí služby SharePoint.  Uživatelé mohou také přístup k těmto datům do offline režimu v aplikaci Microsoft Office, jako je například Microsoft Outlook. Další informace najdete v tématu [kde můžete můžete zobrazit externí Data](http://go.microsoft.com/fwlink/?LinkId=169295).  

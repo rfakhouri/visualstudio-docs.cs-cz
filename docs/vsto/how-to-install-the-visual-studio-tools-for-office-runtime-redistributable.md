@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Office runtime [Office development in Visual Studio]
 - installing Office development tools in Visual Studio
-ms.assetid: ac7a9ad3-e810-4d7f-a0e2-9992c9036b8d
-caps.latest.revision: "94"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: cdd4ab2331bb6e21c126f10258db2e233a533f9d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5f76191ca8b41f252e5009c0d3e7e09415f6f081
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Postupy: Instalace nástrojů Visual Studio Tools for Office runtime Redistributable
   Visual Studio 2010 Tools for Office Runtime musí být nainstalován na každém počítači, který spouští řešení, které jsou vytvořené pomocí nástroje Microsoft Office developer tools v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Modul runtime se nainstaluje automaticky při instalaci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]a Microsoft Office. Další informace najdete v tématu [Visual Studio Tools for Office Runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  

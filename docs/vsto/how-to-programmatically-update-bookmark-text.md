@@ -14,17 +14,15 @@ helpviewer_keywords:
 - bookmarks, updating text
 - text [Office development in Visual Studio], updating in bookmarks
 - Bookmark control, updating contents
-ms.assetid: 2324164d-2538-4695-9aaf-7285ce403be3
-caps.latest.revision: "46"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6c9db34e05c964b95a41593b194c4941293c7efb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: af3252f87bd3c7d6a6c6e75ae85cea4cd75bd1e9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Postupy: Aktualizace textu záložek prostřednictvím kódu programu
   Můžete vložit text do záložku zástupný symbol v dokumentu aplikace Microsoft Office Word tak, aby text můžete načíst později, nebo nahrazení textu v záložky. Pokud vyvíjíte přizpůsobení na úrovni dokumentu, můžete také aktualizovat v text <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek, který je vázaný na data. Další informace najdete v tématu [vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).  

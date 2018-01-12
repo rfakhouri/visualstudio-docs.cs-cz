@@ -15,17 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, site definitions
 - site definitions [SharePoint development in Visual Studio]
-ms.assetid: 83db570d-6b9f-4dab-9e71-db41f17b987a
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 98be671e456c75c4be79994c84bf1ed6ae5114de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d29ab819dfc7efd04d27652ab3d711c89045847c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="creating-site-definitions-for-sharepoint"></a>Vytváření definic webu pro službu SharePoint
   Do projektu definice webu služby SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] umožňuje vytvářet *lokalita definice*, který slouží jako základ pro nový web služby SharePoint. Tyto definice nejen určit vzhled a chování webu služby SharePoint, ale jeho výchozí obsah a funkce. V definici lze umístit předkonfigurované seznamy, typy obsahu, přijímače událostí, obrázky a další položky. SharePoint zahrnuje některé definice webů, jako je například BLOG, např. Při vytvoření webu na základě definice lokality BLOG lokalita obsahuje seznamy, webové části a další položky, které web blogu vyžaduje.  

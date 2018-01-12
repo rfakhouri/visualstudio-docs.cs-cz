@@ -7,30 +7,28 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da7cbf43ff21825e57b5bd5a47f59dbee27fe938
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1e36ebaec08d09cbf006f4c20e743b5c2a909169
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Návod: Použití hierarchie XSLT
-Nástroj XSLT Hierarchy zjednodušuje celou řadu úloh vývoj XML. Stylů XSLT často používá `includes` a `imports` pokyny. Kompilace se spouští z hlavní šablony stylů, ale když se zobrazí chybu v důsledku kompilování stylů XSLT, chyba mohou pocházet z jiného zdroje než hlavní šablony stylů. Oprava chyby nebo úpravou šablony stylů může vyžadovat přístup k zahrnuté ani importované šablony stylů. Procházení šablony stylů v ladicím programu může zobrazit zahrnuté a importované šablony stylů a můžete chtít přidat zarážky v určitém okamžiku v jedné nebo více součástí šablony stylů.  
+
+Nástroj XSLT Hierarchy zjednodušuje celou řadu úloh vývoj XML. Stylů XSLT často používá `includes` a `imports` pokyny. Kompilace se spouští z hlavní šablony stylů, ale když se zobrazí chybu v důsledku kompilování stylů XSLT, chyba mohou pocházet z jiného zdroje než hlavní šablony stylů. Oprava chyby nebo úpravou šablony stylů může vyžadovat přístup k zahrnuté ani importované šablony stylů. Procházení šablony stylů v ladicím programu může zobrazit zahrnuté a importované šablony stylů a můžete chtít přidat zarážky v určitém okamžiku v jedné nebo více součástí šablony stylů.
+
+Jiný scénář, kde může být užitečná nástroj XSLT Hierarchy je uvedení zarážky předdefinované šablony pravidel. Šablony pravidel jsou speciální šablony vygenerovat pro každý režimu šablony stylů a volá `xsl:apply-templates` když žádné jiné šablony, odpovídá uzlu. Ladicí program XSLT implementovat ladění předdefinované šablony pravidel, vygeneruje soubor s pravidly v dočasné složce a zkompiluje je společně s hlavní šablony stylů. Bez zanoříte se do kód z některé `xsl:apply-template`, může být obtížné najít stylů, které byly součástí hlavní šablony stylů nebo můžete najít a otevřít šablony stylů pomocí předdefinované šablony pravidel.
+
+Příklad v tomto tématu ukazuje ladění pomocí odkazovaného stylů.
+
+## <a name="to-debug-in-a-referenced-style-sheet"></a>Chcete-li ladit v odkazované šabloně stylů.
+
+1. Otevřete dokument XML v sadě Visual Studio. Tento příklad používá následující `collection.xml` dokumentu.  
   
- Jiný scénář, kde může být užitečná nástroj XSLT Hierarchy je uvedení zarážky předdefinované šablony pravidel. Šablony pravidel jsou speciální šablony vygenerovat pro každý režimu šablony stylů a volá `xsl:apply-templates` když žádné jiné šablony, odpovídá uzlu. Ladicí program XSLT implementovat ladění předdefinované šablony pravidel, vygeneruje soubor s pravidly v dočasné složce a zkompiluje je společně s hlavní šablony stylů. Bez zanoříte se do kód z některé `xsl:apply-template`, může být obtížné najít stylů, které byly součástí hlavní šablony stylů nebo můžete najít a otevřít šablony stylů pomocí předdefinované šablony pravidel.  
-  
- Příklad v tomto tématu ukazuje ladění pomocí odkazovaného stylů.  
-  
-### <a name="procedure-title"></a>Název postupu  
-  
-1.  Otevřete dokument XML v sadě Visual Studio. Tento příklad používá následující `collection.xml` dokumentu.  
-  
-    ```  
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>  
     <?xml-stylesheet type="text/xsl" href="xslinclude.xsl"?>  
     <COLLECTION>  
@@ -50,11 +48,11 @@ Nástroj XSLT Hierarchy zjednodušuje celou řadu úloh vývoj XML. Stylů XSLT 
         <PUBLISHER>Scootney</PUBLISHER>  
       </BOOK>  
     </COLLECTION>  
-    ```  
-  
-2.  Přidejte následující `xslincludefile.xsl`:  
-  
-    ```  
+    ```
+
+1. Přidejte následující `xslincludefile.xsl`:
+
+    ```xml
     <?xml version='1.0'?>  
     <xsl:stylesheet version="1.0"  
           xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
@@ -73,11 +71,11 @@ Nástroj XSLT Hierarchy zjednodušuje celou řadu úloh vývoj XML. Stylů XSLT 
     </xsl:template>  
   
     </xsl:stylesheet>  
-    ```  
+    ```
   
 3.  Přidejte následující `xslinclude.xsl` souboru:  
   
-    ```  
+    ```xml
     <?xml version='1.0'?>  
     <xsl:stylesheet version="1.0"  
           xmlns:xsl="http://www.w3.org/1999/XSL/Transform">  
@@ -107,13 +105,14 @@ Nástroj XSLT Hierarchy zjednodušuje celou řadu úloh vývoj XML. Stylů XSLT 
   
       <xsl:include href="xslincludefile.xsl" />  
     </xsl:stylesheet>  
-    ```  
+    ```
   
-4.  Přidejte zarážku u instrukce:`<xsl:include href="xslincludefile.xsl" />`  
+4.  Přidejte zarážku u instrukce `<xsl:include href="xslincludefile.xsl" />`.
   
 5.  Spusťte ladění.  
   
-6.  Při zastavení ladicího programu u instrukce `<xsl:include href="xslincludefile.xsl" />`, stiskněte klávesu krok do tlačítko. Všimněte si, že je ladění můžete pokračovat v odkazované šablony stylů. V hierarchii je viditelná a Návrhář zobrazí správné cestě.  
+6.  Při zastavení ladicího programu u instrukce `<xsl:include href="xslincludefile.xsl" />`, stiskněte **Krokovat s vnořením** tlačítko. Všimněte si, že je ladění můžete pokračovat v odkazované šablony stylů. V hierarchii je viditelná a Návrhář zobrazí správné cestě.  
   
-## <a name="see-also"></a>Viz také  
- [Návod: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+## <a name="see-also"></a>Viz také
+
+[Návod: Profiler XSLT](../xml-tools/walkthrough-xslt-profiler.md)

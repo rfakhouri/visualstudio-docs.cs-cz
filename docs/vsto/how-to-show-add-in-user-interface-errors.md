@@ -15,17 +15,15 @@ helpviewer_keywords:
 - errors [Office development in Visual Studio], user interface errors
 - user interfaces [Office development in Visual Studio], errors
 - application-level add-ins [Office development in Visual Studio], user interface errors
-ms.assetid: aa82cc04-e616-4501-940c-79d11fb393cc
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 35247fed0577d410db86b6d3bd436586784f240a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4ce5204855cd6ebe468d652b8420cddc7fd19a1a
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>Postupy: Zobrazení chyb uživatelského rozhraní doplňku
   Ve výchozím nastavení je-li doplňku VSTO pokusí manipulovat s Microsoft Office uživatelské rozhraní (UI) a selže, zobrazí žádná chybová zpráva. Můžete ale nakonfigurovat aplikace Microsoft Office pro zobrazení zprávy pro chyby, které se vztahují k uživatelského rozhraní. Pokud chcete zjistit, proč vlastní pás karet nezobrazí, můžete použít tyto zprávy nebo proč se zobrazí pásu karet, ale žádné ovládací prvky se zobrazí.  

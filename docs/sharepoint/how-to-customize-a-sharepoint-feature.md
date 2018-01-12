@@ -17,17 +17,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, features
-ms.assetid: e624c546-564b-4c73-9f1b-dc3675e76a55
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0ed5ca134205568a185541b64e3f22cc4f76ed36
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: adb4283a56715da704df8991543ea89c6cbc79a4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Postupy: Přizpůsobení funkce služby SharePoint
   Můžete vytvořit a přizpůsobit funkcí služby SharePoint pomocí návrháře funkce v sadě Visual Studio. Můžete například nastavit obor funkcí a přidat další funkce, jako závislosti. Ve výchozím nastavení je otevřené návrháře funkce při přidání nové funkce v Průzkumníku řešení nebo balíček Průzkumníka služby SharePoint.  

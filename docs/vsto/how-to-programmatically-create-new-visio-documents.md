@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - Visio [Office development in Visual Studio], creating Visio documents
 - documents [Office development in Visual Studio], creating Visio documents
-ms.assetid: a0294d4c-be49-4cd0-b22e-3ec7568f3ec7
-caps.latest.revision: "22"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3f96738d9e553ede2b74ebc118a2769b32926cba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 072a279bd342f60f8ebfb307a880c39bdc8b2d51
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Postupy: Vytváření nových dokumentů aplikace Visio prostřednictvím kódu programu
   Když vytváříte vykreslení dokumentu nové aplikace Microsoft Office Visio, přidejte do kolekce Microsoft.Office.Interop.Visio.Documents otevřené dokumenty Visio. V důsledku toho Microsoft.Office.Interop.Visio.Documents.Add metoda vytvoří novou vykreslování dokumentů aplikace Visio. Další informace najdete v tématu referenční dokumentaci VBA pro [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) metoda.  

@@ -24,16 +24,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: bf9049907d1648b1950f8d66e0fd183c82699e92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Ladění kódu HTML a CSS v UWP a aplikace pro Windows 8.1
 ![Platí pro systém Windows a Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Pro aplikace, JavaScript Visual Studio poskytuje komplexní ladění prostředí, které obsahuje funkce, které jsou pro vývojáře v aplikaci Internet Explorer a Visual Studio. Tyto funkce jsou podporované pro [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], aplikace Windows Phone a pro aplikace vytvořené pomocí nástroje sady Visual Studio pro Apache Cordova.  
+ Pro aplikace, JavaScript Visual Studio poskytuje komplexní ladění prostředí, které obsahuje funkce, které jsou pro vývojáře v aplikaci Internet Explorer a Visual Studio. Tyto funkce jsou podporované pro aplikace UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], aplikace Windows Phone a pro aplikace vytvořené pomocí nástroje sady Visual Studio pro Apache Cordova.  
   
  Použití interaktivní ladění modelu DOM kontroly nástroje poskytované můžete zobrazit a upravit kód vykreslené značky HTML a CSS. Provedete to vše bez zastavení a spuštění ladicího programu.
   
@@ -268,9 +268,9 @@ ms.lasthandoff: 12/22/2017
  Pro příklad, který ukazuje, jak vybrat elementy pomocí **vybrat element** tlačítko najdete v tématu [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ##  <a name="BrowserSupport"></a>Prohlížeče a podporu platforem  
- Visual Studio tools pro JavaScript, Průzkumníka modelu DOM a okna konzoly jazyka JavaScript jsou podporovány na následujících platformách:  
+ Průzkumník modelu DOM a okna konzoly jazyka JavaScript jsou podporovány na následujících platformách:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]a aplikace pro Windows Phone pomocí jazyka JavaScript a HTML  
+-   Aplikace UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] a aplikací Windows Phone pomocí jazyka JavaScript a HTML  
   
 -   Internet Explorer 11 a systémem[!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

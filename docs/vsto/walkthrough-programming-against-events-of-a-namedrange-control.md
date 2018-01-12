@@ -16,17 +16,15 @@ helpviewer_keywords:
 - NamedRange control, events
 - worksheets, events
 - worksheets, automating
-ms.assetid: b69676f9-23b2-4ed6-83ab-8868c3f10948
-caps.latest.revision: "57"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 46e83b8450a441eb7bc405c855271e315edb2e3c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a06e8aa544cdaff2e75d8af942f8aea68e7bc960
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-programming-against-events-of-a-namedrange-control"></a>Návod: Programové ošetření událostí ovládacího prvku NamedRange
   Tento návod ukazuje, jak přidat <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládacího prvku na listu aplikace Microsoft Office Excel a program před jeho události za použití pomocí nástroje pro vývoj pro Office v sadě Visual Studio.  

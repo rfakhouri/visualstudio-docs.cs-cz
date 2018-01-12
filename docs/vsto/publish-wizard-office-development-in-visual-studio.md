@@ -18,17 +18,15 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], Publish Wizard
 - Office applications [Office development in Visual Studio], Publish Wizard
 - Publish Wizard, Office solutions
-ms.assetid: 793314b6-b6a6-4509-8f1c-dd9466cf5190
-caps.latest.revision: "17"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1f74bdf7b740fbf8d30df78f1433196d21c0ebbf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Průvodce publikováním (vývoj pro Office v sadě Visual Studio)
   Použití **Průvodci publikováním** Pokud chcete kopírovat soubory řešení do zadaného umístění, vytvořte manifestu soubory a vytvořte instalační program.  
@@ -52,7 +50,7 @@ ms.lasthandoff: 12/22/2017
  Ve výchozím umístění pro publikování je *http://localhost/projectname/* Pokud máte nainstalovanou službu IIS, nebo adresáři publish\ v takovém případě ještě nainstalována služba IIS.  
   
 > [!NOTE]  
->  Existují další důležité informace, pokud má cílový počítač se systémem Windows Vista. Musíte být správce v počítači Windows Vista použít možnost místní publikovat. Kromě toho výchozí umístění je vždy *publikování\\*  adresář, bez ohledu na to, jestli máte nainstalovanou službu IIS.  
+>  Existují další důležité informace, pokud má cílový počítač se systémem Windows Vista. Musíte být správce v počítači Windows Vista použít možnost místní publikovat. Kromě toho výchozí umístění je vždy *publikování\\ * adresář, bez ohledu na to, jestli máte nainstalovanou službu IIS.  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Co je výchozí cesty instalace na počítačích koncových uživatelů?  
  Cesta instalace je volitelný. Cesta instalace můžete nastavit později, pokud dáváte přednost. Podrobnosti najdete v tématu [postup: Změňte cestu instalace řešení Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
@@ -72,7 +70,7 @@ ms.lasthandoff: 12/22/2017
   
 ## <a name="see-also"></a>Viz také  
  [Nasazení řešení Office s použitím technologie ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Publikovat stránku, Návrhář projektu &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Publikovat stránku, Návrhář projektu & #40; vývoj pro Office v sadě Visual Studio & #41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
   
   

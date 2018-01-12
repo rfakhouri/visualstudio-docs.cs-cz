@@ -30,17 +30,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], host items
 - document-level customizations [Office development in Visual Studio], host items
 - Word [Office development in Visual Studio], host controls
-ms.assetid: 88487946-6f3d-4ea6-8de0-dd219b8002df
-caps.latest.revision: "67"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d994f3b8b6612313ec689947c1da4c5b423fe362
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 96c027730553c8dd51774d1ff64c6552b4e5905b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Programová omezení hostitelských položek a hostitelských ovládacích prvků
   Jednotlivé položky hostitele a řízení hostitele je určena pro chovat jako odpovídající nativní aplikace Microsoft Office Word nebo objekt aplikace Microsoft Office Excel s dalšími funkcemi. Existují však určité základní rozdíly mezi chování hostitelských položek a hostitelských ovládacích prvků a nativní objektů Office za běhu.  

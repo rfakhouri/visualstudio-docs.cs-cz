@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef5fb93914f418915c11b51071419308b3ac9a0c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a0eb590549578ac9aea824f52c8192c97dce94f2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 Můžete ladit aplikace z Visual Studia, která byla nasazena do jiného počítače. K tomu použít vzdáleného ladicího programu sady Visual Studio.
@@ -35,9 +35,9 @@ Podrobné pokyny pro vzdálené ladění naleznete v následujících tématech.
 |Scénář|Odkaz|
 |-|-|-|
 |ASP.NET|[Vzdálené ladění ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) nebo [vzdáleného ladění ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|C# nebo Visual Basic|[Vzdálené ladění jazyka C# nebo projektu jazyka Visual Basic](remote-debugging-csharp.md)|
-|C++|[Vzdálené ladění projektu jazyka C++](remote-debugging-cpp.md)|
-|Univerzální aplikace pro Windows (UWP)|[Ladění nainstalovaným balíčkem aplikace](debug-installed-app-package.md)|
+|C# nebo Visual Basic|[Vzdálené ladění jazyka C# nebo projektu jazyka Visual Basic](../debugger/remote-debugging-csharp.md)|
+|C++|[Vzdálené ladění projektu jazyka C++](../debugger/remote-debugging-cpp.md)|
+|Univerzální aplikace pro Windows (UWP)|[Spuštění aplikace UWP ve vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md) a [ladění balíček nainstalované aplikace](../debugger/debug-installed-app-package.md)|
 |Azure|[Vzdálené ladění technologie ASP.NET v Azure](remote-debugging-azure.md)|
 |Azure Service Fabric|[Ladění vzdáleného aplikace Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).|
 

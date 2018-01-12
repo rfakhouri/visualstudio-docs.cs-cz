@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Ribbon [Office development in Visual Studio], object model
-ms.assetid: cae24f66-e980-41ee-a915-d4c8e03efbc1
-caps.latest.revision: "75"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1ca5b96157ee6077d4e904d21ba2a95c4f059e02
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bda61cd7ca0e169a4f62fbc0c33b24e3c4ec0048
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="ribbon-object-model-overview"></a>Přehled modelu objektů pásu karet
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Zpřístupňuje model silného typu objektu, který můžete použít k získání a nastavení vlastností ovládacích prvků pásu karet za běhu. Například můžete dynamicky naplnit ovládací prvky nabídky, nebo zobrazení a skrytí ovládacích prvcích kontextově. Na pásu karet, ale jenom dříve, než na pásu karet je načtena podle aplikace Office, můžete přidat také karty, skupiny a ovládací prvky. Informace najdete v tématu [nastavení vlastnosti, stane jen pro čtení](#SettingReadOnlyProperties).  

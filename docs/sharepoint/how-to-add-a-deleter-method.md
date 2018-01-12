@@ -21,17 +21,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], deleting entity instances
 - Business Data Connectivity service [SharePoint development in Visual Studio], deleting data
 - Business Data Connectivity service [SharePoint development in Visual Studio], removing data
-ms.assetid: 3362eaf4-5dc7-4450-9009-b296308ae61f
-caps.latest.revision: "21"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 622be02def57621f43439f84f84321cb1bac9911
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e2ac47b315189dc2f0f7196db46aeb17ed08480
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-deleter-method"></a>Postupy: Přidání metody odstranění
   Můžete povolit koncový uživatel odstranit záznam dat z externího seznamu na web služby SharePoint přidáním *metoda odstranění* metoda do modelu. Další informace najdete v tématu [navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md).  

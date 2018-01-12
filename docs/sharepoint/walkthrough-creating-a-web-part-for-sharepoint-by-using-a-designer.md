@@ -16,17 +16,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-ms.assetid: 3dd62654-ada2-468f-b7da-eb5704a2ff7a
-caps.latest.revision: "34"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 602515daedec99bbcfa3efd58469de5d8ba3df7b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28be854f01234783ff9873753eb88ca92bc192d6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Návod: Vytvoření webové části pro službu SharePoint pomocí návrháře
   Pokud vytvoříte webové části pro web služby SharePoint, vaši uživatelé můžete přímo upravit obsah, vzhled a chování stránek v dané lokalitě pomocí prohlížeče. Tento postup vám ukáže, jak vytvořit webovou část vizuálně pomocí webu služby SharePoint **Visual webovou část** šablona projektu v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -64,7 +62,7 @@ ms.lasthandoff: 12/22/2017
   
      **Nový projekt** zobrazí se dialogové okno.  
   
-3.  V **nový projekt** dialogové okno, v části buď **Visual C#** nebo **jazyka Visual Basic**, rozbalte položku **Office/SharePoint**a potom vyberte  **Řešení služby SharePoint** kategorie.  
+3.  V **nový projekt** dialogové okno, v části buď **Visual C#** nebo **jazyka Visual Basic**, rozbalte položku **Office/SharePoint**a potom vyberte ** Řešení služby SharePoint** kategorie.  
   
 4.  V seznamu šablon, vyberte **SharePoint 2013 – webová část Visual** šablony a potom zvolte **OK** tlačítko.  
   

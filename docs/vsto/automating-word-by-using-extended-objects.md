@@ -20,17 +20,15 @@ helpviewer_keywords:
 - host controls, Word
 - host controls [Office development in Visual Studio], Word
 - Word [Office development in Visual Studio], host controls
-ms.assetid: 3911c7cd-7092-468d-bd82-2fdec53a2d9b
-caps.latest.revision: "27"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 89dde8238cd2badb4ea9841263d822b5729d00cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3073f5f80e805f4c55e6924ada1be9a2ba139f6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="automating-word-by-using-extended-objects"></a>Automatizace v aplikaci Word s použitím rozšířených objektů
   Při vývoji řešení aplikace Word v sadě Visual Studio, můžete použít *hostitele položky* a *hostování ovládacího prvku*s v řešení. Jedná se o objekty, které rozšiřují určité běžně používané objekty ve model objektů aplikace Word (tedy model objektu zveřejněného prostřednictvím primární spolupracující sestavení pro aplikaci Word), jako například <xref:Microsoft.Office.Interop.Word.Document> a <xref:Microsoft.Office.Interop.Word.ContentControl> objekty. Rozšířené objekty chovají jako Word objekty, které jsou založené na, ale přidat další události a možnosti pro datové vazby k objektům.  

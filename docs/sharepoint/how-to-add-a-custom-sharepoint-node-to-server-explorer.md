@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
-ms.assetid: b992a192-f926-45e6-9416-85ddfe1061d0
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 117daf019b6d8104db19306449bdcd517282d81e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b5cc829451a4227625ae1ad8da9e5da8bd0d9d4
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Postupy: Přidání vlastního uzlu služby SharePoint do průzkumníka serveru
   Můžete přidat vlastní uzly v rámci **připojení služby SharePoint** uzlu v **Průzkumníka serveru**. To je užitečné, pokud chcete zobrazit další součásti služby SharePoint, které nejsou zobrazeny v **Průzkumníka serveru** ve výchozím nastavení. Další informace najdete v tématu [rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  

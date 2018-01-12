@@ -26,17 +26,15 @@ helpviewer_keywords:
 - user interfaces [Office development in Visual Studio], Word
 - Office documents [Office development in Visual Studio, Word
 - document-level customizations [Office development in Visual Studio], Word
-ms.assetid: ef339ad8-1897-4a44-b588-e6004d0b6d8b
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 738c7988dbd5ee4757b231904be08dcf295ba5b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cf08132ca3422186eccb1e436340f57bb26b0cb7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="word-solutions"></a>Řešení pro Word
   Visual Studio poskytuje šablony projektů, které můžete použít k vytvoření přizpůsobení na úrovni dokumentu a doplňků VSTO pro aplikaci Microsoft Office Word. Tato řešení můžete použít k automatizaci aplikace Word, rozšířit funkce aplikace Word a přizpůsobení uživatelského rozhraní (UI) aplikace Word. Další informace o rozdílech mezi úpravy na úrovni dokumentu a doplňků VSTO najdete v tématu [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  

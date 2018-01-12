@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: form regions [Office development in Visual Studio], creating
-ms.assetid: b033fc06-cdeb-4d7f-804b-86d15bfa022a
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 715d58e205442511db9709a5e57b1b689e008628
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Návod: Návrh oblasti formuláře aplikace Outlook
   Oblasti formuláře vlastní rozšířit standardní nebo vlastní formuláře aplikace Microsoft Office Outlook. V tomto návodu se navrhnout vlastní formulář oblasti, která se zobrazí jako nová stránka v okně Inspector kontaktní položky. Této oblasti formuláře zobrazí mapu každou adresu, která je uvedena získáte, posílejte informace o adresy na Windows Live místní vyhledávací web. Informace o oblasti formuláře najdete v tématu [vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md).  

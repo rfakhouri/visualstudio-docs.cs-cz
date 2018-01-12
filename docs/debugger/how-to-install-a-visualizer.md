@@ -22,17 +22,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 71b1d5cda498f42383e430a505296b2c4e074b73
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e9864a2a8f3f39e368ae1293b4b27fc0a8d9e056
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-install-a-visualizer"></a>Postupy: Instalace vizualizéru
 Po vytvoření vizualizéru, musíte nainstalovat vizualizér tak, že bude k dispozici v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalace vizualizéru je jednoduchý proces.  
   
 > [!NOTE]
->  V **úložiště** aplikace, pouze standardní text, HTML, XML a JSON vizualizérech jsou podporovány. Vizualizérech vlastní (vytvořené uživatelem) nejsou podporovány.  
+>  V aplikacích pro UPW, pouze standardní text, HTML, XML a JSON vizualizérech podporují. Vizualizérech vlastní (vytvořené uživatelem) nejsou podporovány.  
   
 ### <a name="to-install-a-visualizer"></a>Instalace vizualizéru  
   

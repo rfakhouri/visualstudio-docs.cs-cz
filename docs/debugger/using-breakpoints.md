@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 20f1b517d271bd50cdb96c595f2e8ab9be7c5e65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Použití zarážek v ladicím programu sady Visual Studio
 Pokud chcete zastavit provádění ladicí program, případně zobrazíte stav proměnných kódu nebo pro zobrazení v zásobníku volání, můžete nastavit zarážky. Jsou jedním z nejdůležitějších techniky ladění v sadě nástrojů pro vývojáře.  
@@ -232,7 +232,7 @@ Pokud chcete zastavit provádění ladicí program, případně zobrazíte stav 
 ## <a name="export-and-import-breakpoints"></a>Export a Import zarážky  
  Zarážku můžete exportovat do souboru XML tak, že kliknete pravým tlačítkem na zarážce a výběr **exportovat**. Soubor je uložen ve výchozím nastavení v adresáři řešení. Chcete-li importovat zarážky, otevřete **zarážky** okno (**CTRL + ALT + B**) a na panelu nástrojů klikněte na šipku vpravo (popisek je **zarážky importovat ze souboru**) .  
   
-## <a name="troubleshoot-breakpoints"></a>Řešení potíží s zarážky  
+## <a name="troubleshoot"></a>Řešení potíží s zarážky 
   
 ### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Po odstranění zarážku, ale I nadále stiskněte tlačítko při spuštění ladění znovu  
  Pokud jste odstranili zarážku při ladění, v některých případech můžete narazit zarážek znovu při příštím spuštění ladění. Pokud chcete zastavit stiskne tento bod přerušení, zajistěte, aby všechny instance zarážce se odeberou z **zarážky** okno.  

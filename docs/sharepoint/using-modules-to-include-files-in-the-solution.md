@@ -14,17 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment modules
 - SharePoint development in Visual Studio, modules
 - modules [SharePoint development in Visual Studio]
-ms.assetid: 74d1d69f-5cd9-452f-8d35-e1f4d8a084fd
-caps.latest.revision: "16"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: f340d0a8c713aedc6ee74aa598c7170495ac8c01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c7f0fff081215e1bf1a9e2c5320668f2c698b2e6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="using-modules-to-include-files-in-the-solution"></a>Vložení souborů do řešení pomocí modulů
   Může nastat situace, kdy můžete chtít nasadit soubory na server SharePoint bez ohledu na jejich typ souboru, jako je například nové stránky předlohy. Chcete-li to provést, můžete použít *moduly* (Nezaměňovat s [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] code moduly). Moduly jsou kontejnery pro soubory v řešení služby SharePoint. Po nasazení řešení se soubory v modulu se zkopírují do zadané složky na serveru SharePoint.  

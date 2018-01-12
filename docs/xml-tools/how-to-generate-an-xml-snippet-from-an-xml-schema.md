@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8c27307155a56aae07b69c02c6cbdf3da72059b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e8b30c782cea694fdc400cd84047f7ab1add823b
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: generování fragmentu kódu XML z schématu XML
 Editor souborů XML má možnost k vygenerování XML fragmenty ze schématu schématu XML definition language (XSD). Například jako vytváření souboru XML, zatímco umístěný vedle názvu elementu, stisknete klávesu TAB k naplnění element s daty XML vygenerovat z informace o schématu pro daný element.  
@@ -138,7 +138,7 @@ Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Po
     </xs:complexType>  
   </xs:element>  
 </xs:schema>  
-```  
+```
   
 ### <a name="output"></a>Výstup  
  Následuje XML data, která se generuje na základě informací schématu přidružené `Contact` elementu. Položky označen jako `bold` určit upravitelné pole v tomto fragmentu kódu XML.  
@@ -152,7 +152,7 @@ Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Po
     <Type>Voice</Type>  
   </Phone>  
 </Contact>  
-```  
+```
   
 ## <a name="see-also"></a>Viz také  
  [Fragmenty kódu XML](../xml-tools/xml-snippets.md)   

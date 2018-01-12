@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - form regions [Office development in Visual Studio], custom actions
 - custom actions [Office development in Visual Studio]
-ms.assetid: 583fd5f0-aafa-4858-9c54-38a9fdf3bede
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 89b49139db9d91ba742caeb80308f9175195a843
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66a4d81728d438a749b46e42b003c02d08f13d67
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Vlastní akce v oblastech formulářů aplikace Outlook
   Akce zobrazení tlačítek, které umožní uživatelům reagovat na položku Microsoft Office Outlook. Například reagovat na položku e-mailu, uživatelé kliknout **odpověď**, **Odpovědět všem**, nebo **dál** tlačítka akce. Všechny tyto akce vytvoří novou položku e-mailu a naplní položky pole pomocí informací z původní položky.  

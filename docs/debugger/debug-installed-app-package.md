@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: ca1edcc26c8e015f12db6b1d564c182aa765ed52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Ladění balíček nainstalovanou aplikaci v aplikaci Visual Studio (UWP)
 
@@ -94,6 +94,8 @@ Když ladíte balíčku aplikace nainstalované ve vzdáleném počítači poprv
 
 > [!NOTE]
 > Aplikace UWP mohou být vytvořeny a zkompilovat na Windows 8.1 nebo novější, ale vyžadují ke spuštění Windows 10. Pokud vyvíjíte aplikace pro UPW v počítačích s Windows 8.1, můžete vzdáleně ladit aplikace pro UPW spuštěna na jiném zařízení Windows 10, za předpokladu, že hostitele a cílové počítače jsou ve stejné síti LAN. K tomu, stáhněte a nainstalujte nástroje Remote Tools pro sadu Visual Studio na obou počítačích. Nainstalovaná verze musí odpovídat stávající verze sady Visual Studio, který jste nainstalovali a architektura vyberete (x86, x 64) se taky musí shodovat s cílové aplikace.
+
+Informace o rozšířené možnosti pro vzdálené nasazení aplikace UWP v tématu [nasazení a ladění aplikace UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   
 ## <a name="see-also"></a>Viz také  
  [Ladění v sadě Visual Studio](../debugger/index.md)  

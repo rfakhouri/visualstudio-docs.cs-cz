@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], opening
 - Word [Office development in Visual Studio], opening documents
-ms.assetid: 08f7fe4b-d96d-4a0c-b32a-aa7fd7992316
-caps.latest.revision: "44"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 991a282cb3fc8a34f3434c9cdb0a9be214c9e3bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 151571ace6790f05c067f8dff641988301bc1b0e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>Postupy: Otevírání stávajících dokumentů prostřednictvím kódu programu
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A> Metoda otevře existující dokument aplikace Microsoft Office Word určeného plně kvalifikovaný název a cesta k souboru. Tato metoda vrátí hodnotu <xref:Microsoft.Office.Interop.Word.Document> představující otevřenou dokumentu.  

@@ -14,17 +14,15 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-ms.assetid: 5547e2ed-47a3-48f1-9619-42149c03df76
-caps.latest.revision: "26"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2ca99a5ad13989f29126b23a93055b174bb49150
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a03dd09525d29aaea31ef5c376814bd09747f90e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Návod: Vytváření rozšíření projektu SharePoint
   Tento návod ukazuje postup vytvoření rozšíření pro projekty SharePoint. Můžete použít rozšíření projektu reakce na události na úrovni projektu například pokud je projekt přidat, odstranit nebo přejmenovat. Můžete také přidat vlastní vlastnosti nebo reagovat, když se změní hodnota vlastnosti. Na rozdíl od rozšíření položek projektu rozšíření nemůže být přidružena konkrétní typ projektu služby SharePoint. Při vytváření rozšíření projektu rozšíření načte, když jakýkoli druh projektu služby SharePoint je otevřen v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  

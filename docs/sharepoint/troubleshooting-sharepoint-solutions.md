@@ -14,17 +14,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, troubleshooting
-ms.assetid: d3c8a01c-8fac-40d0-bf9e-476901f1490a
-caps.latest.revision: "42"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5454aa06d4256c6c5e9ee1a8aa9573377ce9abdb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Řešení potíží s řešeními služby SharePoint
   S těmito problémy nebo výstrahy může dojít při ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicí program. Další informace najdete v tématu [ladění řešení pracovního postupu služby SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -278,7 +276,7 @@ ms.lasthandoff: 12/22/2017
  Nepodařilo se načíst konfigurační soubor Web.config. Zkontrolujte soubor pro všechny nesprávně vytvořené elementy XML a zkuste to znovu. Došlo k následující chybě: nebyl nalezen ve slovníku zadaný klíč.  
   
 ### <a name="resolution"></a>Rozlišení  
- Chcete-li vyřešit tento problém, ujistěte se, že adresa URL webu hodnota vlastnosti projektu služby SharePoint v sadě Visual Studio odpovídá adrese URL, kterému je přiřazen výchozí pásmo pro mapování alternativních adres URL webové aplikace. Chyba nelze vyřešit pomocí jiné zóně, jako je například Intranet, pro adresu URL. Lokality adresu URL pro projekt a adresu URL v zóně výchozí musí shodovat. Pro přístup k mapování alternativních adres URL, otevřete nástroj Centrální správa SharePoint 2010, zvolte **Správa aplikací** odkaz a pak v části **webových aplikací**, vyberte  **Konfigurace mapování alternativních adres URL** odkaz. Další informace najdete v tématu [vytvořit zóny pro webové aplikace](http://go.microsoft.com/fwlink/?LinkId=192274).  
+ Chcete-li vyřešit tento problém, ujistěte se, že adresa URL webu hodnota vlastnosti projektu služby SharePoint v sadě Visual Studio odpovídá adrese URL, kterému je přiřazen výchozí pásmo pro mapování alternativních adres URL webové aplikace. Chyba nelze vyřešit pomocí jiné zóně, jako je například Intranet, pro adresu URL. Lokality adresu URL pro projekt a adresu URL v zóně výchozí musí shodovat. Pro přístup k mapování alternativních adres URL, otevřete nástroj Centrální správa SharePoint 2010, zvolte **Správa aplikací** odkaz a pak v části **webových aplikací**, vyberte ** Konfigurace mapování alternativních adres URL** odkaz. Další informace najdete v tématu [vytvořit zóny pro webové aplikace](http://go.microsoft.com/fwlink/?LinkId=192274).  
   
 ## <a name="see-also"></a>Viz také  
  [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)   

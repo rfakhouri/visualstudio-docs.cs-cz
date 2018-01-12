@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, tables
 - Word [Office development in Visual Studio], tables
 - documents [Office development in Visual Studio], tables
-ms.assetid: d0c0a84c-48d5-4c02-b026-d6924f155e04
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6baa1a72ec8f51a25d5abc0539b27b71b41c5d38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e43da4d8ff2aa5c07d640e332b619b0a38fa9e1b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="working-with-tables"></a>Práce s tabulkami
   Témata v této části poskytují podrobné postupy a příklady kódu pro použití v objektovém modelu v aplikaci Microsoft Office Word k práci s tabulkami v projektech Office. V některých případech se liší od způsobů, jak je provést v přizpůsobeních na úrovni dokumentu způsobů, jak provádět tyto úlohy v doplňcích VSTO.  

@@ -16,17 +16,15 @@ helpviewer_keywords:
 - upgrading applications [Office development in Visual Studio]
 - upgrading Office solutions in Visual Studio
 - migrating Office solutions in Visual Studio
-ms.assetid: cc60cdcb-593d-498a-8358-f1f3ac673fe1
-caps.latest.revision: "105"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: fd6ff05fde0e02e9b45b67ffe665a296085bf934
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c81cba2c80f8eaabeae15fc5425ed7e02c378123
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="upgrading-and-migrating-office-solutions"></a>Upgradování a migrace řešení pro systém Office
   Pokud máte aplikaci Microsoft Office project, která byla vytvořena ve starší verzi sady Visual Studio, je třeba upgradovat projekt, který používá v aktuální verzi sady Visual Studio. Pokud chcete upgradovat aplikaci Microsoft Office project, otevřete ho ve verzi Visual Studia, která zahrnuje nástroje Microsoft Office developer tools. Další informace o verzích sady Visual Studio, které zahrnují nástroje Microsoft Office developer tools najdete v tématu [konfigurace počítače pro vývoj řešení pro Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  

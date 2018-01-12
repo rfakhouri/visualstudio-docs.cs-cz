@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7a6a1a17768c1f52bec0f98ed9f9f86754856419
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 789c2317fcb1bc46b5708f1810563b20fe8895ed
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 Strávíte méně času ladění aplikace při použití IntelliTrace zaznamenávat a sledování historie provádění vašeho kódu. Chyby můžete snadno najít, protože IntelliTrace umožňuje:  
@@ -56,7 +56,7 @@ Strávíte méně času ladění aplikace při použití IntelliTrace zaznamená
 |||  
 |-|-|  
 |**Podporované**|– Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br />     Můžete ladit většina aplikace, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, pracovní postup prostředí Windows, SharePoint 2010, SharePoint 2013 a 64bitová verze aplikace.<br />     K ladění aplikací služby SharePoint s použitím technologie IntelliTrace, najdete v části [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br />     Chcete-li ladit aplikace Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění je publikována Cloudová služba se IntelliTrace a Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|  
-|**Omezená podpora**|-.NET core a ASP.NET Core aplikace podporované pro pouze události<br />-F # aplikace jako pokusné<br />– Podporované pro události jenom aplikace Windows Store|  
+|**Omezená podpora**|-.NET core a ASP.NET Core aplikace podporované pro pouze události<br />-F # aplikace jako pokusné<br />-Aplikace UWP podporované pro pouze události|  
 |**Nepodporuje se**|-C++, jiných jazyků a skriptu<br />-Služby systému Windows, Silverlight, Xbox, nebo [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplikace|  
   
 > [!NOTE]

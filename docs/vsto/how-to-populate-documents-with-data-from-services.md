@@ -14,17 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - Web services [Office development in Visual Studio], populating documents
 - data [Office development in Visual Studio], adding to documents
-ms.assetid: 4c42653c-627f-445e-9024-8482eaf5562e
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5cdcfc080251d62bf0f7dbede2016b4821383c5a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: eb06e77cf45a3c912f569686cdbe246baece8a03
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Postupy: Naplnění dokumentů daty ze služeb
   Přístup k datům funguje stejným způsobem jako v projekty na úrovni dokumentu pro Microsoft Office jako v systému Windows Forms projekty. Použít stejnou nástroje a kódu přenést data do vašeho řešení a ovládací prvky Windows Forms můžete použít i k zobrazení dat. Kromě toho můžete využít názvem hostitelské ovládací prvky, které jsou nativní objekty v aplikaci Microsoft Office Excel a Microsoft Office Word vylepšily se události a možnosti data vazba ovládacích prvků. Další informace najdete v tématu [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  

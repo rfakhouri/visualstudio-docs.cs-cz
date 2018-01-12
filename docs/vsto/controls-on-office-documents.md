@@ -16,17 +16,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], controls
 - controls [Office development in Visual Studio]
 - documents [Office development in Visual Studio], controls
-ms.assetid: b057f321-8c60-4c02-b485-e2604a696623
-caps.latest.revision: "40"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 3a8a8f3bd66ef6f70f8775c1ed064df61b0e9e52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3a5ce9a160010d893a88f1ebc31b229597bba909
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="controls-on-office-documents"></a>Ovládací prvky v dokumentech Office
   Nástroje pro vývoj pro Office v sadě Visual Studio můžete použít k přidávání ovládacích prvků Windows Forms a *hostování ovládacích prvků* do dokumentů aplikace Word a sešitů aplikace Excel. Hostitelské ovládací prvky jsou objekty, které rozšiřují různé objekty uživatelského rozhraní (UI) v objektové modely Word a Excel.  

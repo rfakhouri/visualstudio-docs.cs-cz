@@ -14,17 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], populating
 - databases [Office development in Visual Studio], populating worksheets
 - data [Office development in Visual Studio], adding to worksheets
-ms.assetid: e9e37cf1-53ca-45d0-8409-5428be7f96c5
-caps.latest.revision: "39"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6efeccfdaa6b3377869fb20f9c66613960529daf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5a5cfe5d15e1b883de46809523f1d1acaecddc91
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Postupy: Naplnění listů daty z databáze
   Stejným způsobem, že vám přístup k datům ve Windows Forms projekty můžou k datům ve projekty na úrovni dokumentu Office. Použít stejnou nástroje a kódu přenést data do vašeho řešení a ovládací prvky Windows Forms můžete použít i k zobrazení dat. Kromě toho můžete využít názvem hostitelské ovládací prvky, které jsou nativní objekty v aplikaci Microsoft Office Excel vylepšily se události a možnosti datové vazby ovládacích prvků. Další informace najdete v tématu [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  

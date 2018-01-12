@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 05962d6806631bdfa9b873038ec85cdf9969d55c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 376719363bd97970bdfa333d9aab0e57a8484c73
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Postupy: vytvoření fragmenty kódu XML
 XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje fragmentu kódu XML, s názvem "Fragment", který je fragment často používaný pro vytvoření nové fragmenty kódu XML.  
@@ -54,7 +54,7 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
   <SnippetType>SurroundsWith</SnippetType>  
   <SnippetType>Expansion</SnippetType>  
 </SnippetTypes>  
-```  
+```
   
  `Expansion` Typ Určuje, zda se zobrazí fragmentu při vyvolání **Vložit fragment** příkaz. `SurroundsWith` Typ Určuje, zda se zobrazí fragmentu při vyvolání **okolí s** příkaz.  
   
@@ -72,7 +72,7 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
   <name>$name$</name>  
   $selected$ $end$</test>]]>  
 </Code>  
-```  
+```
   
  `Code` Element zahrnuje tři proměnné.  
   
@@ -88,7 +88,7 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
 <test>  
   <name>name</name>  
 </test>  
-```  
+```
   
  Hodnota elementu název je označena jako upravitelné oblasti.  
   
@@ -100,7 +100,7 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
   <ID>name</ID>  
   <Default>name</Default>  
 </Literal  
-```  
+```
   
  Literály můžete se také podívat na funkce. Editor souborů XML obsahuje funkci s názvem **LookupPrefix**. **LookupPrefix** funkce vyhledává daný identifikátor URI oboru názvů z umístění v dokumentu XML tento fragment kódu je volána z a vrátí předponu oboru názvů, který je definovaný pro tento obor názvů, pokud existuje, a obsahuje dvojtečku (:) Tento název. Tady je příklad `Literal` element, který používá **LookupPrefix** funkce.  
   
@@ -109,7 +109,7 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
    <ID>prefix</ID>  
    <Function>LookupPrefix("namespaceURI")</Function>  
 </Literal>  
-```  
+```
   
  Proměnná $ $prefix se pak použít jinde v vaší fragment kódu XML.  
   

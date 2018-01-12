@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - documents [Office development in Visual Studio], populating with data
 - data [Office development in Visual Studio], adding to documents
-ms.assetid: 83e6ebac-e468-4bef-a91c-78c7bf597a75
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 2ecc8e8ce76c2212d9921cc9b15ead7a7b22316e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 02f2b735ceb473f7ffe55345c1cd45dc084edb80
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Postupy: Naplnění dokumentů daty z objektů
   Accesing data v datovém objektu funguje stejným způsobem jako v projekty na úrovni dokumentu pro aplikaci Microsoft Office Word stejně jako ve Windows Forms projekty. Použít stejnou nástroje a kódu přenést data z objektu do vašeho řešení a ovládací prvky Windows Forms můžete použít k zobrazení dat. Kromě toho můžete zobrazit data pomocí hostitelské ovládací prvky. Hostitelské ovládací prvky jsou nativní objekty v aplikaci Microsoft Office Word, které vylepšily se události a možnosti data vazby. Další informace najdete v tématu [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  

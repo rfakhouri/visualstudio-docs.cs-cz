@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 88ccba516a0bce6e3413bf14d38d32baf68d8274
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a419d738943f780ddb6077978242ac08ff91d36
+ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="xml-snippets"></a>Fragmenty kódu XML
 Editor souborů XML nabízí funkci, *fragmenty kódu XML*, který umožňuje rychleji vytvářet soubory XML. Fragmenty kódu XML můžete znovu použít vložením do souborů. Můžete také vygenerovat data XML na základě schématu schématu XML definition language (XSD).  
@@ -37,7 +37,7 @@ Editor souborů XML nabízí funkci, *fragmenty kódu XML*, který umožňuje ry
     </xs:sequence>  
   </xs:complexType>  
 </xs:element>  
-```  
+```
   
  Můžete vložit fragmenty kódu dvěma způsoby. **Vložit fragment** příkaz vloží fragment kódu XML na pozici kurzoru. **Příkazu Obklopit s** příkaz zabalí fragment kódu XML kolem vybraný text. Buď jsou k dispozici obě příkazy z **IntelliSense** dílčí pod **upravit** nabídky, nebo v místní nabídce editor.  
   

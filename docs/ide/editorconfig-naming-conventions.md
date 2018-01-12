@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
 ms.workload: multiple
-ms.openlocfilehash: 5b6d7f0dc43ca11b6fee4b97d5422b863a7b89f4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Zásady vytváření názvů pro EditorConfig
 
@@ -157,7 +157,7 @@ Chyba | Když tento styl nedodržíte, zobrazit chyba kompilátoru v seznamu chy
 
 Následující soubor .editorconfig obsahuje zásady vytváření názvů, který určuje, že veřejné vlastnosti, metody, pole, události a delegáti musí být velkými písmeny. Všimněte si, že tyto zásady vytváření názvů určuje více druhů symbol, který chcete použít pravidlo, pomocí oddělte hodnoty čárkami.
 
-```
+```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
 [*.{cs,vb}]
 dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
@@ -177,7 +177,7 @@ Následující snímek obrazovky ukazuje účinku zásad vytváření názvů v 
 
 Nyní změníme závažnost porušení na `warning`:
 
-```
+```EditorConfig
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 

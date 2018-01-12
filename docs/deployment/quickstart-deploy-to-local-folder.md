@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology: vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 helpviewer_keywords: deployment, local folder
@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3b97ca67c9e8d8a4cfb7d99a6c518c8e49a8c426
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4e575a6d885b079c1c5afd0af6cbdadcd1d38d96
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Nasazení do místní složky pomocí nástroje Visual Studio publikovat webovou aplikaci nebo aplikaci .NET Core
 
@@ -66,6 +66,6 @@ Publikované soubory žádným způsobem, který chcete nasaďte. Můžete např
 
 ## <a name="next-steps"></a>Další kroky
 
-- [Nasazení aplikace .NET Core pomocí nástroje publikování](/dotnet/core/deploying/deploy-with-vs)
-- [Balíček aplikace na ploše pro Microsoft Store (Desktop mostu)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+- [Nasazení aplikace .NET Core pomocí nástroje Publish](/dotnet/core/deploying/deploy-with-vs)
+- [Balíček desktopové aplikace pro Microsoft Store (přemostění na desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
 - (.NET) [Nasazení rozhraní .NET Framework a aplikace](/dotnet/framework/deployment/)

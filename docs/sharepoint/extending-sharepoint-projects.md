@@ -14,17 +14,15 @@ helpviewer_keywords:
 - projects [SharePoint development in Visual Studio], extending
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
-ms.assetid: 4643012b-6e6c-4b7c-bb92-b04b34f6c715
-caps.latest.revision: "19"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 8f8d6087576f6b64b9b0694e9c177637dd28c059
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 403ff3793dfd5ae4211444868af8c37dbd908672
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="extending-sharepoint-projects"></a>Rozšíření projektů SharePoint
   Vytváření rozšíření projektu, pokud chcete přizpůsobit funkce na úrovni projektu projektů SharePoint. Například můžete přidat vlastní vlastnosti projektu nebo reakce na události na úrovni projektu, které se vyvolá, když uživatel sama vyvinula řešení služby SharePoint v sadě Visual Studio.  

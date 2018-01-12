@@ -14,17 +14,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, security
 - Office applications [Office development in Visual Studio], security
 - security [Office development in Visual Studio]
-ms.assetid: af840916-dda4-4e52-b536-802ebcab30ca
-caps.latest.revision: "78"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 45052deff58e992b427f72188fcb0dc8ade91b95
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 271aad509d5ad2adb764b55f93fa65a8178424bd
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="securing-office-solutions"></a>Zabezpečení řešení pro systém Office
   Model zabezpečení pro řešení pro systém Office zahrnuje několik technologií: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], v Centru zabezpečení v Microsoft Office a zónu lokalit s omezeným přístupem aplikace Internet Explorer. Následující části popisují, jak fungují funkce různých zabezpečení:  
@@ -67,7 +65,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="document-level-solutions"></a>Řešení na úrovni dokumentu  
  Plně kvalifikovaná cesta dokumentu musí přidat do seznamu důvěryhodných lokalit v aplikaci Microsoft Office, pokud vyvíjíte následující typy projektů:  
   
--   Řešení, které jsou v síťové sdílené složky, například na úrovni dokumentu  *\\\servername\sharename*.  
+-   Řešení, které jsou v síťové sdílené složky, například na úrovni dokumentu * \\\servername\sharename*.  
   
 -   Úrovni dokumentu řešení pro aplikaci Word používající DOC nebo DOCM soubory.  
   

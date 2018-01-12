@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - ranges, extending
 - documents [Office development in Visual Studio], extending ranges
-ms.assetid: 055af7a4-13d5-4236-b5fb-a112721482c5
-caps.latest.revision: "41"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 6981d61cdbc5115ddd55418fc256842c36915140
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 81d3535f7f4e449c5cb56bea78a255b5388d6e94
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>Postupy: Rozšiřování oblastí v dokumentech prostřednictvím kódu programu
   Po definování <xref:Microsoft.Office.Interop.Word.Range> objekt v dokumentu aplikace Microsoft Office Word změnit jeho počáteční a koncové body pomocí <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> a <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody. <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> a <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> metody přijímají stejné dva argumenty, *jednotky* a *počet*. *Počet* argument je počet jednotek, které chcete přesunout a *jednotky* argument může mít jednu z následujících <xref:Microsoft.Office.Interop.Word.WdUnits> hodnoty:  

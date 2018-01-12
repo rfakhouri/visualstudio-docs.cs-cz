@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: Office development in Visual Studio, installing tools
-ms.assetid: 0b481186-fd31-43bf-aa4a-591f94309555
-caps.latest.revision: "97"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: c07a1ce1434f3ad5f3d8707a4fbaa89695d878f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c3e0ab446cb2aa65d0ec90aea596308ec4dcafec
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="configuring-a-computer-to-develop-office-solutions"></a>Konfigurace počítače pro vývoj řešení pro systém Office
   Pokud chcete vytvořit doplňků VSTO a vlastní nastavení pro Microsoft Office, nainstalujte podporovanou verzi sady Visual Studio, rozhraní .NET Framework a aplikace Microsoft Office.  

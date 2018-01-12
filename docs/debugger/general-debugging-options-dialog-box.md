@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bf693d7a5339e57edeaed82c25ed552901e1ea51
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Obecné, ladění, dialogové okno Možnosti
 **Nástroje > Možnosti > ladění > Obecné** stránce můžete nastavit následující možnosti:  
@@ -85,7 +85,7 @@ Zapne automatické vyhodnocení vlastnosti a funkce implicitní volá ve windows
     Provede volání na řetězec implicitní převod při vyhodnocování objekty ve windows proměnné. Proto že výsledek je zobrazen jako řetězec místo názvu typu. Vztahuje se pouze při ladění v kódu jazyka C#. Toto nastavení může být přepsána debuggerdisplay – atribut (viz [používání atributu DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
 **Povolit podporu zdrojového serveru**  
-Informuje ladicího programu sady Visual Studio získat zdrojové soubory ze zdrojových serverů, které implementují SrcSrv (`srcsrv.dll`) protokolu. Team Foundation Server a ladění nástrojů pro Windows jsou dva servery zdroje, které implementují protokol. Další informace o nastavení SrcSrv najdete v tématu [SrcSrv](hhttps://msdn.microsoft.com/en-us/library/windows/hardware/ff558791(v=vs.85).aspx) dokumentaci. Kromě toho najdete v části [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+Informuje ladicího programu sady Visual Studio získat zdrojové soubory ze zdrojových serverů, které implementují SrcSrv (`srcsrv.dll`) protokolu. Team Foundation Server a ladění nástrojů pro Windows jsou dva servery zdroje, které implementují protokol. Další informace o nastavení SrcSrv najdete v tématu [SrcSrv](https://msdn.microsoft.com/library/windows/hardware/ff558791(v=vs.85).aspx) dokumentaci. Kromě toho najdete v části [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 >  Protože čtení soubory PDB můžete spustit libovolný kód v souborech, ujistěte se, že důvěřujete serveru.  

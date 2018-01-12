@@ -15,17 +15,15 @@ helpviewer_keywords:
 - ranges, excluding paragraph marks in Word
 - documents [Office development in Visual Studio], paragraph marks
 - paragraphs, controlling structure
-ms.assetid: 6d563834-34bd-4462-a556-4339d9277eee
-caps.latest.revision: "50"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 5f726a30a7ae50e35726b67336ec41f50be60b24
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 37af64898686da4f09730f5b46fbbfa0936ddd0e
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Postupy: Vyloučení značek odstavů při vytváření oblastí prostřednictvím kódu programu
   Vždy, když vytvoříte <xref:Microsoft.Office.Interop.Word.Range> objekt v závislosti na odstavce, všechny netisknutelné znaky, jako je například značky odstavce, jsou zahrnuty v rozsahu. Chcete vložit text ze zdroje odstavce do cílového odstavce. Pokud nechcete rozdělení cílového odstavce na samostatné odstavce, pak je nutné nejprve odstranit značku odstavce z odstavce zdroje. Navíc vzhledem k tomu, že informace o formátování odstavce je uložena v rámci značku odstavce, nemusí chcete být při vložení rozsahu do existujícího odstavce.  

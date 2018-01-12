@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2bf34eda9c9957b8a989244da3f2fce03a5d151e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c84239c2f70a32558f64a299791db917926a8c44
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Návod: Zaznamenání grafických informací prostřednictvím kódu
 Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky k prostřednictvím kódu programu zaznamenání grafických informací z aplikace Direct3D.  
@@ -42,7 +42,7 @@ Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] d
 -   Zachycení informací grafiky  
   
 > [!NOTE]
->  Předchozích implementacích zachytávání prostřednictvím kódu programu spoléhali na nástroje pro vzdálenou pro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pro zajištění zachycení, Windows 8.1 podporuje zachycení přímo přes Direct3D – 11.2. V důsledku toho již máte k instalaci nástrojů pro vzdálenou pro zachytávání prostřednictvím kódu programu na Windows 8.1.  
+>  Předchozích implementacích zachytávání prostřednictvím kódu programu spolehlivé vzdálených nástrojů pro Visual Studio pro [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pro zajištění zachycení, Windows 8.1 podporuje zachycení přímo přes Direct3D – 11.2. V důsledku toho již musíte nainstalovat nástroje Remote Tools pro sadu Visual Studio pro zachytávání prostřednictvím kódu programu na Windows 8.1.  
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Příprava aplikace použít zachytávání prostřednictvím kódu programu  
  Pokud chcete použít zachytávání prostřednictvím kódu programu ve vaší aplikaci, musí obsahovat potřebné hlavičky. Tyto hlavičky jsou součástí sady SDK pro Windows 8.1.  
@@ -183,10 +183,10 @@ Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] d
   
      Pokud nemáte-li provést tento krok, název souboru je default.vsglog. Pokud neuvedli `DONT_SAVE_VSGLOG_TO_TEMP`, pak umístění souboru je relativní vzhledem k dočasnému adresáři; jinak, je relativní vzhledem k pracovní adresář nebo v jiném umístění. Pokud jste zadali absolutního názvu souboru.  
   
- Pro [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplikace, umístění dočasné složky je specifický pro každého uživatele a aplikace a se většinou nachází v umístění, třeba C:\users\\*uživatelské jméno*\AppData\Local\Packages\\ *pfn*\TempState\\. Aplikací klasické pracovní plochy, umístění dočasné složky je specifický pro každého uživatele a se většinou nachází v umístění, třeba C:\Users\\*uživatelské jméno*\AppData\Local\Temp\\.  
+ Pro UPW a [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplikace, umístění dočasné složky je specifický pro každého uživatele a aplikace a se většinou nachází v umístění, třeba C:\users\\*uživatelské jméno*\AppData\Local\Packages\\ *pfn*\TempState\\. Aplikací klasické pracovní plochy, umístění dočasné složky je specifický pro každého uživatele a se většinou nachází v umístění, třeba C:\Users\\*uživatelské jméno*\AppData\Local\Temp\\.  
   
 > [!NOTE]
->  Zápis do určitého umístění, musí mít oprávnění k zápisu do tohoto umístění; v opačném případě dojde k chybě. Mějte na paměti, [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplikace jsou omezeny více než aplikace klasické pracovní plochy o kde lze zapisovat a může vyžadovat další konfiguraci k zápisu do určitých umístění.  
+>  Zápis do určitého umístění, musí mít oprávnění k zápisu do tohoto umístění; v opačném případě dojde k chybě. Mějte na paměti této UWP a [!INCLUDE[win8_appname_long](../includes/win8_appname_long_md.md)] aplikace jsou omezeny více než aplikace klasické pracovní plochy o kde lze zapisovat a může vyžadovat další konfiguraci k zápisu do určitých umístění.  
   
 ### <a name="capturing-the-graphics-information"></a>Zaznamenání grafických informací  
  Po aplikace připravené pro zachytávání prostřednictvím kódu programu a volitelně nakonfigurovaný umístění a název grafiky soubor protokolu, sestavení aplikace a pak spusťte nebo ladění ho k zaznamenání dat; Nespouštět diagnostiky grafiky z [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] při použití zachytávání prostřednictvím kódu programu rozhraní API. Grafika protokol je zapsán do umístění, které jste zadali. Pokud chcete zachovat tuto verzi protokolu, ho přesunete do jiného umístění; jinak budou přepsány při dalším spuštění aplikace.  

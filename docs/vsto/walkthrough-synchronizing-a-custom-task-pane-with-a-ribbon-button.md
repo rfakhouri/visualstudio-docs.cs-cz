@@ -23,17 +23,15 @@ helpviewer_keywords:
 - hiding custom task panes
 - task panes [Office development in Visual Studio], creating
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
-ms.assetid: 00ce8b1e-1370-42f2-9dc9-609cada392f1
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0505759a63598bedefb2315582ac844e16a9405f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7368c580d2f00d929bdeefd11665e9f579af17f7
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Návod: Synchronizace vlastního podokna úloh s tlačítkem na pásu karet
   Tento návod ukazuje postup vytvoření vlastního podokna úloh, uživatelé mohou zobrazit nebo skrýt kliknutím na tlačítko přepnutí na pásu karet. Vždy byste měli vytvořit prvek uživatelského rozhraní (UI), jako je tlačítko, které mohou uživatelé kliknout a zobrazit nebo skrýt vlastního podokna úloh, protože aplikace Microsoft Office neposkytují výchozí způsob, jak uživatelům zobrazit nebo skrýt vlastní podokna úloh.  

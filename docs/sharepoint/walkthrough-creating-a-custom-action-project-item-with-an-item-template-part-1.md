@@ -15,17 +15,15 @@ helpviewer_keywords:
 - SharePoint project items, defining your own types
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint development in Visual Studio, defining new project item types
-ms.assetid: 41ed9c1c-4239-4d80-934b-975fde744288
-caps.latest.revision: "152"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 70a307fe1eb68cb6e1409d0a43178795f0d9421c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dae92a4c20130425fa93a413856f3d2cb5a37387
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
   Systému projektu služby SharePoint v sadě Visual Studio můžete rozšířit vytvořením vlastní projektu typu položky. V tomto návodu vytvoříte položky projektu, který lze přidat do projektu služby SharePoint k vytvoření vlastní akce na web služby SharePoint. Vlastní akce přidá položku nabídky **Akce webu** nabídky Web služby SharePoint.  
@@ -114,7 +112,7 @@ ms.lasthandoff: 12/22/2017
   
 2.  V seznamu v horní části **nový projekt** dialogové okno pole, ujistěte se, že **rozhraní .NET Framework 4.5** je vybrána.  
   
-3.  V **nový projekt** dialogové okno, rozbalte seznam **Visual C#** nebo **jazyka Visual Basic** uzlů, zvolte **Windows** uzel a potom vyberte  **Třídy knihovny** šablona projektu.  
+3.  V **nový projekt** dialogové okno, rozbalte seznam **Visual C#** nebo **jazyka Visual Basic** uzlů, zvolte **Windows** uzel a potom vyberte ** Třídy knihovny** šablona projektu.  
   
 4.  V **název** zadejte **ProjectItemDefinition**a potom zvolte **OK** tlačítko.  
   
@@ -164,7 +162,7 @@ ms.lasthandoff: 12/22/2017
   
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>Chcete-li vytvořit vlastní ikonou pro položky projektu  
   
-1.  V **Průzkumníku řešení**, otevřete místní nabídku pro **ProjectItemDefinition** projektu, zvolte **přidat**a potom zvolte **novou položku...** .  
+1.  V **Průzkumníku řešení**, otevřete místní nabídku pro **ProjectItemDefinition** projektu, zvolte **přidat**a potom zvolte **novou položku... **.  
   
 2.  V seznamu položek projektu, vyberte **soubor ikony** položky.  
   
@@ -289,7 +287,7 @@ ms.lasthandoff: 12/22/2017
     </VSTemplate>  
     ```  
   
-     `OutputSubPath` Element určuje další složky v cestě, pod kterým šablony položky se vytvoří při sestavování projektu. Zde určené složky zajistí, že šablony položky bude k dispozici jenom v případě, že zákazníci otevřete **přidat novou položku** dialogové okno, rozbalte seznam **SharePoint** uzel a potom vyberte **2010**  uzlu.  
+     `OutputSubPath` Element určuje další složky v cestě, pod kterým šablony položky se vytvoří při sestavování projektu. Zde určené složky zajistí, že šablony položky bude k dispozici jenom v případě, že zákazníci otevřete **přidat novou položku** dialogové okno, rozbalte seznam **SharePoint** uzel a potom vyberte **2010 ** uzlu.  
   
 17. V **Průzkumníku řešení**, otevřete místní nabídku pro **ItemTemplate** projektu a potom vyberte **znovu načíst projekt**.  
   
@@ -359,7 +357,7 @@ ms.lasthandoff: 12/22/2017
   
 1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **soubor**, **nový**, **projektu**.  
   
-2.  Rozbalte položku **Visual C#** nebo **jazyka Visual Basic** (v závislosti na jazyce, který podporuje vaše šablony položky), rozbalte položku **SharePoint**a potom vyberte **2010**  uzlu.  
+2.  Rozbalte položku **Visual C#** nebo **jazyka Visual Basic** (v závislosti na jazyce, který podporuje vaše šablony položky), rozbalte položku **SharePoint**a potom vyberte **2010 ** uzlu.  
   
 3.  V seznamu šablon projektu, zvolte **projektu služby SharePoint 2010**.  
   
@@ -461,6 +459,6 @@ ms.lasthandoff: 12/22/2017
  [Použití služby projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Odkaz na schéma šablon sady Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons)   
- [Vytvoření ikony nebo jiného obrázku &#40; Editor obrázků pro ikony &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Vytvoření ikony nebo jiného obrázku & #40; Editor obrázků pro ikony & #41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

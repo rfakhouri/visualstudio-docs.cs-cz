@@ -15,17 +15,15 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], defining your own types
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, defining new project item types
-ms.assetid: b53d48d7-cbf2-45c2-9537-06a6819be397
-caps.latest.revision: "60"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 05a0f2a997791564a8358287ff1d632c3ff7bffe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1
   Projekty SharePoint jsou kontejnery pro jednu nebo více položek projektu služby SharePoint. Vytváření vlastních typů položek projektu služby SharePoint a poté je přidružení pomocí šablony projektu můžete rozšířit systému projektu služby SharePoint v sadě Visual Studio. V tomto návodu se definování typu položky projektu pro vytvoření sloupce webu a pak vytvoříte projekt šablonu, která slouží k vytvoření nového projektu, který obsahuje položky projektu sloupce webu.  
@@ -173,9 +171,9 @@ ms.lasthandoff: 12/22/2017
   
 4.  Uložte projekt a pak zavřete druhou instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-5.  V instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , otevřete řešení SiteColumnProjectItem, má v **Průzkumníku řešení**, otevřete místní nabídku pro **SiteColumnProjectTemplate** uzel projektu, zvolte  **Přidat**a potom zvolte **existující položka**.  
+5.  V instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , otevřete řešení SiteColumnProjectItem, má v **Průzkumníku řešení**, otevřete místní nabídku pro **SiteColumnProjectTemplate** uzel projektu, zvolte ** Přidat**a potom zvolte **existující položka**.  
   
-6.  V **přidat existující položku** dialogové okno, otevřete seznam přípon souborů a potom zvolte **všechny soubory (\*.\*)** .  
+6.  V **přidat existující položku** dialogové okno, otevřete seznam přípon souborů a potom zvolte **všechny soubory (\*.\*) **.  
   
 7.  V adresáři, který obsahuje BaseSharePointProject projekt, vyberte soubor key.snk a potom zvolte **přidat** tlačítko.  
   
@@ -218,7 +216,7 @@ ms.lasthandoff: 12/22/2017
     </VSTemplate>  
     ```  
   
-     `OutputSubPath` Element určuje další složky v cestě, pod kterým je vytvořena šablona projektu při sestavování projektu. Zde určené složky zajistí, že šablona projektu bude k dispozici jenom v případě, že zákazníci otevřete **nový projekt** dialogové okno, rozbalte seznam **SharePoint** uzel a potom vyberte **2010**  uzlu.  
+     `OutputSubPath` Element určuje další složky v cestě, pod kterým je vytvořena šablona projektu při sestavování projektu. Zde určené složky zajistí, že šablona projektu bude k dispozici jenom v případě, že zákazníci otevřete **nový projekt** dialogové okno, rozbalte seznam **SharePoint** uzel a potom vyberte **2010 ** uzlu.  
   
 5.  Soubor uložte a zavřete.  
   

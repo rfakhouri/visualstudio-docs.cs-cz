@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - data access [Office development in Visual Studio]
-ms.assetid: 14a42e96-ed2f-48a1-a0c0-e19f9eba4956
-caps.latest.revision: "32"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: d81c8b10f5ace634cc58bd3135af9b2e69f1c519
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 48857640268c45026aacae903896451fd18f1af8
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="accessing-data-in-documents-on-the-server"></a>Přístup k datům v dokumentech na serveru
   Můžete ovládat data v přizpůsobení na úrovni dokumentu bez nutnosti použít objektový model Microsoft Office Word nebo Microsoft Office Excel. To znamená, že můžete přístup k datům obsaženým v dokumentu na serveru, který nemá slovo nebo nainstalovat aplikace Excel. Například kód na serveru (například v [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stránky) můžete upravit data v dokumentu a odeslání přizpůsobených dokumentu pro koncového uživatele. Když se koncový uživatel otevře dokument, kód vazby dat v sestavení řešení váže vlastních dat do dokumentu. To je možné, protože data v dokumentu je oddělená od uživatelského rozhraní. Další informace najdete v tématu [Data do mezipaměti v přizpůsobeních na úrovni dokumentu](../vsto/cached-data-in-document-level-customizations.md).  

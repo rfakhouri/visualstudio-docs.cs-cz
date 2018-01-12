@@ -18,23 +18,20 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3bc498bf0a2a0293421ba680eab608cff4a85437
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 6e6b144e3456f9ce2019c791f71f2d0b631fc883
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="debug-universal-windows-apps-uwp"></a>Ladění univerzální aplikace pro Windows (UWP)
-Ladicí program Visual Studio poskytuje úplnou podporu pro ladění aplikace UWP.  
-  
-Informace o ladění univerzálních aplikací pro Windows najdete v tématu [nasazení a ladění aplikace UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps).  
+Ladicí program Visual Studio poskytuje úplnou podporu pro ladění aplikace UWP a Windows 8.1.  
   
 Chcete-li ladit aplikace pro Windows Phone 8, přečtěte si téma [ladění aplikace pro Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff402572(v=vs.105).aspx).  
   
 |||  
 |-|-|  
-|[Spuštění aplikace ze sady Visual Studio](../debugger/run-store-apps-from-visual-studio.md)|Spouštět aplikace pro UPW v místním počítači, v emulátoru nebo simulátoru aplikaci nebo na vzdáleném zařízení.|  
-|[Ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)|Najít a opravit chyby v aplikacích pro UPW pomocí ladicího programu sady Visual Studio.|  
+|[Spusťte relaci ladění pro aplikace UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|Spouštět aplikace pro UPW v místním počítači připojeném zařízení, v emulátoru nebo simulátoru aplikaci nebo na vzdáleném zařízení.|  
 |[Ladění balíčku nainstalované aplikace](../debugger/debug-installed-app-package.md)|Ladění nasazených aplikací, místních i vzdálených.|
 |[Předběžné načtení obsahu pro aplikace UWP](../debugger/prefetch-content-for-windows-store-apps.md)|Analýza neovlivňuje aplikace UWP ContentPrefetcher třídy.|  
   

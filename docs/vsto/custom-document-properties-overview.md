@@ -17,17 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio], custom properties
 - _AssemblyLocation property
 - _AssemblyName property
-ms.assetid: 9a215904-b760-4a49-93e8-a1a708ce0526
-caps.latest.revision: "36"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0a670510a7898b38ec7f61a22f8258015b112151
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4f6dfae83f09398ba9a8d1377c16756487193ee2
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="custom-document-properties-overview"></a>Přehled přizpůsobených vlastností dokumentu
   Při sestavování projektu úrovni dokumentu sady Visual Studio přidá dva vlastní vlastnosti dokumentu v projektu: _AssemblyLocation a _assemblyname –. Když uživatel otevře dokument, zkontroluje tyto vlastní vlastnosti dokumentu aplikace Microsoft Office. Pokud existují v dokumentu načte aplikaci [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], který spustí přizpůsobení. Další informace najdete v tématu [architektura z řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).  

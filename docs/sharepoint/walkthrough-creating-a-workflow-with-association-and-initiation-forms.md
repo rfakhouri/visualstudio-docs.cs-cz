@@ -19,17 +19,15 @@ helpviewer_keywords:
 - association forms [SharePoint development in Visual Studio]
 - initiation forms [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, workflow initiation forms
-ms.assetid: c8666d8c-b173-4245-8014-9c1cd6acb071
-caps.latest.revision: "38"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: b3178c330d34570d1406a1b63368537bc7f66887
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4b6eed3807b4031a7ab41c16f532442fb0968601
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Návod: Vytvoření pracovního postupu pomocí formulářů přidružení a inicializace
   Tento návod ukazuje, jak vytvořit základní sekvenční pracovní postup, která zahrnuje použití formulářů přidružení a inicializace. Jedná se o ASPX formulářů, které umožňují parametry mají být přidány do pracovního postupu, pokud je první přidružená správcem služby SharePoint (formulář přidružení) a při spuštění pracovního postupu uživatelem (formulář spuštění).  
@@ -272,7 +270,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  Přidejte tuto aktivitu do pracovního postupu pomocí jedné z následujících kroků:  
   
-    -   Otevřete místní nabídku pro **createtask –** aktivitu, zvolte **kopie**, otevřete místní nabídku pro jednu ze dvou **vyřadit aktivity sem** oblasti v rámci  **IfElseActivity1** v Návrháři pracovních postupů a potom zvolte **vložení**.  
+    -   Otevřete místní nabídku pro **createtask –** aktivitu, zvolte **kopie**, otevřete místní nabídku pro jednu ze dvou **vyřadit aktivity sem** oblasti v rámci ** IfElseActivity1** v Návrháři pracovních postupů a potom zvolte **vložení**.  
   
     -   Přetáhněte **createtask –** aktivity z **sada nástrojů** na jednu ze dvou **vyřadit aktivity sem** oblasti v rámci **IfElseActivity1**.  
   
@@ -286,7 +284,7 @@ ms.lasthandoff: 12/22/2017
   
 10. Vyberte **vytvořit vazbu na nový člen** , zvolte **vytvořit pole** možnost tlačítko a potom vyberte **OK** tlačítko.  
   
-11. Vyberte **TaskProperties** vlastnost a klikněte na tlačítko se třemi tečkami (![ASP.NET – Návrhář mobilních řešení elipsy](../sharepoint/media/mwellipsis.gif "ASP.NET – Návrhář mobilních řešení elipsy")) tlačítko pro zobrazení  **Vytvořit vazbu vlastnosti** dialogové okno.  
+11. Vyberte **TaskProperties** vlastnost a klikněte na tlačítko se třemi tečkami (![ASP.NET – Návrhář mobilních řešení elipsy](../sharepoint/media/mwellipsis.gif "ASP.NET – Návrhář mobilních řešení elipsy")) tlačítko pro zobrazení ** Vytvořit vazbu vlastnosti** dialogové okno.  
   
 12. Vyberte **vytvořit vazbu na nový člen** , zvolte **vytvořit pole** možnost tlačítko a potom vyberte **OK** tlačítko.  
   
@@ -296,7 +294,7 @@ ms.lasthandoff: 12/22/2017
   
     -   Otevřete místní nabídku pro **LogToHistoryListActivity** aktivitu, zvolte **kopie**, otevřete místní nabídku pro druhý **vyřadit aktivity sem** oblasti v rámci **IfElseActivity1** v Návrháři pracovních postupů a potom zvolte **vložení**.  
   
-    -   Přetáhněte **LogToHistoryListActivity** aktivity z **sada nástrojů**a umístěte jej do dalších **vyřadit aktivity sem** oblasti v rámci **IfElseActivity1** .  
+    -   Přetáhněte **LogToHistoryListActivity** aktivity z **sada nástrojů**a umístěte jej do dalších **vyřadit aktivity sem** oblasti v rámci **IfElseActivity1 **.  
   
 ## <a name="adding-code-to-the-workflow"></a>Přidání kódu do pracovního postupu  
  Dál přidejte kód pracovního postupu pro ni funkce.  
@@ -366,7 +364,7 @@ ms.lasthandoff: 12/22/2017
   
 5.  V **vlastnosti** okně vyberte šipku rozevíracího seznamu **podmínku** vlastnost a potom nastavte *kód stavu* hodnotu.  
   
-6.  Rozbalte **podmínku** vlastnost tak, že zvolíte na symbol plus (![TreeView plus](../sharepoint/media/plus.gif "TreeView plus")) vedle sebe a pak jeho hodnotu nastavte *checkApprovalNeeded* .  
+6.  Rozbalte **podmínku** vlastnost tak, že zvolíte na symbol plus (![TreeView plus](../sharepoint/media/plus.gif "TreeView plus")) vedle sebe a pak jeho hodnotu nastavte *checkApprovalNeeded *.  
   
 7.  V Návrháři pracovních postupů otevřete místní nabídku pro **logToHistoryListActivity1** aktivitu a potom vyberte **Generovat obslužné rutiny** ke generování pro metodu prázdný `MethodInvoking` událostí.  
   

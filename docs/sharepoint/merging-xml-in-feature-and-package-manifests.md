@@ -11,17 +11,15 @@ dev_langs:
 - VB
 - CSharp
 helpviewer_keywords: SharePoint development in Visual Studio, packaging
-ms.assetid: fc1cbd2a-0166-4f2f-a81b-4dac2fa7b0f3
-caps.latest.revision: "10"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 895bb4f7bde787a135699e4197622037413a1869
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 81e6f83dd4fc825e885843a47d45485918f7dabe
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="merging-xml-in-feature-and-package-manifests"></a>Sloučení XML do manifestů funkce a balíku
   Funkce a balíčky jsou definovány [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] manifest soubory. Tyto zabalené manifesty představují kombinaci data vygenerovaná ze návrháři a vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] zadané v šabloně manifestu uživateli. Během balení [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] slučuje vlastní [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] příkazy s zadaný Návrhář [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] na formuláři zabalené [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] souboru manifestu. Podobným elementům s výjimky uvedené dále v sloučení výjimky jsou sloučeny předejdete [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] chyby ověření po nasazení soubory do služby SharePoint, a aby manifest soubory menší a efektivnější.  

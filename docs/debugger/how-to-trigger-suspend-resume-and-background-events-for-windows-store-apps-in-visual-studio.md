@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 70e0ab429f6359e8bb50a83307e9e042e0bfa4b0
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikace UWP v sadě Visual Studio
 Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) řídí stav spuštění aplikace – spuštění, pozastavení, obnovení a ukončení aplikace v odpovědi na akce uživatelů a stavu zařízení. Při ladění, systém Windows vypíná tyto aktivační události. Toto téma popisuje, jak má provést tyto události v ladicím programu.  
@@ -109,7 +109,7 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
      ![Pozastavit, pokračovat, ukončete a úlohy na pozadí](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a>Aktivovat události procesu správy životního cyklu a úlohy z aplikace nainstalované na pozadí  
- Použijte dialogové okno ladění aplikace nainstalována načíst aplikaci, která je již nainstalován do ladicího programu. Může například ladění aplikace nainstalovaná z Microsoft Store nebo ladění aplikace, když máte zdrojové soubory pro aplikace, ale ne projekt Visual Studio pro aplikaci. Dialogové okno ladění nainstalované aplikace umožňuje že spuštění aplikace v režimu ladění v sadě Visual Studio počítači nebo na vzdáleném zařízení, nebo chcete-li nastavit aplikaci spustit v režimu ladění, ale nespustí se. Najdete v článku **nainstalovanou aplikaci spustit v ladicím programu** části buď [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) nebo [Visual C++, Visual C# a Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) verze **spuštění ladicí relace** Další informace.  
+ Použijte dialogové okno ladění aplikace nainstalována načíst aplikaci, která je již nainstalován do ladicího programu. Může například ladění aplikace nainstalovaná z Microsoft Store nebo ladění aplikace, když máte zdrojové soubory pro aplikace, ale ne projekt Visual Studio pro aplikaci. Dialogové okno ladění nainstalované aplikace umožňuje že spuštění aplikace v režimu ladění v sadě Visual Studio počítači nebo na vzdáleném zařízení, nebo chcete-li nastavit aplikaci spustit v režimu ladění, ale nespustí se. Najdete v článku **nainstalovanou aplikaci spustit v ladicím programu** části [spustit relaci ladění v aplikaci UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
   
  Jakmile aplikace je načten do ladicího programu, můžete použít některý z výše popsaných postupů.  
   

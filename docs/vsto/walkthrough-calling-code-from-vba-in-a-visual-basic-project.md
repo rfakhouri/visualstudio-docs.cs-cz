@@ -19,17 +19,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, Visual Basic for Applications and
 - calling code from VBA
 - document-level customizations [Office development in Visual Studio], calling code
-ms.assetid: 798bc2fa-449e-4d1a-86b4-18e57b02a4a8
-caps.latest.revision: "45"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 1428ad569b50ee3ff176f7fd7c55135a9ea718c1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fcd52322d88b79d90d4a20888ad2bb90a379c7df
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-basic-project"></a>Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic
   Tento návod ukazuje, jak volat metodu přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word z jazyka Visual Basic pro aplikace (VBA) kód v dokumentu. Postup zahrnuje tři základní kroky: Přidejte metodu k `ThisDocument` položky třída hostitele, vystavit metody VBA kód a potom volejte metodu z kódu jazyka VBA v dokumentu.  

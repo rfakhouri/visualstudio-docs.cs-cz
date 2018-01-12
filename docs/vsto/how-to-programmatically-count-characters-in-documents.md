@@ -14,17 +14,15 @@ helpviewer_keywords:
 - characters, counting in documents
 - counting characters in documents
 - documents [Office development in Visual Studio], counting characters
-ms.assetid: ab64fe87-896a-4b56-bdf8-91c4326b540e
-caps.latest.revision: "37"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 06f38d7e95bbe4b0f52b31f2f73584ff827e4225
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e1d22d8fc6f6e939ec349d185dad22bdb94d176d
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Postupy: Počítání znaků v dokumentech prostřednictvím kódu programu
   První znak v dokumentu je na pozici znaku 0, který reprezentuje bod vložení. Poslední pozice znaku rovná celkový počet znaků v dokumentu. Můžete určit počet znaků v dokumentu s použitím <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> vlastnost <xref:Microsoft.Office.Interop.Word.Characters> kolekce.  

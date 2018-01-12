@@ -13,17 +13,15 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-ms.assetid: 1706f6a2-ea84-4234-85ae-19feb8540507
-caps.latest.revision: "12"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: 0da90955a590881a02117213246e580339dbe596
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2544bbe60ea014ee873342f06ce285c809b42eb6
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="form-support-in-workflows"></a>Podpora formulářů v produktu Workflows
   V pracovním postupu možné použít čtyři typy tvarů: přidružení, spuštění, úloh a úpravy. Tyto typy formuláře může být založen na formuláře ASPX nebo formuláře aplikace InfoPath. Úroveň podpory, který [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] poskytuje pro příslušného formuláře závisí na několika faktorech, které jsou popsány v následujících tabulkách. Další informace o typech formuláře pracovního postupu najdete v tématu [přehled pracovního postupu Forms](http://go.microsoft.com/fwlink/?LinkId=185228) na webu MSDN.  

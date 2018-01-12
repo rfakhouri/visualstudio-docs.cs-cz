@@ -10,17 +10,15 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-ms.assetid: 03ef25c2-6308-4737-a655-74bbbb472dc2
-caps.latest.revision: "14"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: bafc82f247f067f1f836730ec1f676f2f9559915
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Zvýšení výkonu doplňku VSTO
   Můžete uživatelům poskytovat lepší pomocí optimalizace doplňků VSTO vytvořených pro Office aplikace tak, aby rychle začít, vypnout, otevřete položky a provádět další úlohy. Pokud vaše doplňku VSTO pro Outlook, můžete také snížit pravděpodobnost, že vaše doplňku VSTO bude zakázána z důvodu snížený výkon. Může zvýšit výkon vaší doplňku VSTO implementací následujících strategií:  

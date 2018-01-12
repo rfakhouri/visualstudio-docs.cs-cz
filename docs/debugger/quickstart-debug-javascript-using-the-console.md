@@ -23,16 +23,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6250a6b5cdf502d95aea3aaec033acaad826de42
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93deb8c5a8d4d17597db0fa2f93f097b4839e88b
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Rychlý úvod: Ladění JavaScriptu pomocí konzoly
 ![Platí pro systém Windows a Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Můžete okna konzoly jazyka JavaScript využívat a ladit aplikace UPW, které jsou vytvořené pomocí jazyka JavaScript. Tyto funkce jsou podporované pro [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace, Windows Phone aplikace a aplikace vytvořené pomocí nástrojů Visual Studio pro Apache Cordova. Informace o příkazech konzoly, najdete v části [příkazy konzoly pro JavaScript](../debugger/javascript-console-commands.md).  
+ Můžete okna konzoly jazyka JavaScript využívat a ladit aplikace UPW, které jsou vytvořené pomocí jazyka JavaScript. Tyto funkce jsou podporované pro aplikace UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace, Windows Phone aplikace a aplikace vytvořené pomocí nástrojů Visual Studio pro Apache Cordova. Informace o příkazech konzoly, najdete v části [příkazy konzoly pro JavaScript](../debugger/javascript-console-commands.md).  
   
  V okně konzoly JavaScript umožňuje:  
   
@@ -269,7 +269,7 @@ ms.lasthandoff: 12/22/2017
 ##  <a name="BrowserSupport"></a>Prohlížeče a podporu platforem  
  V okně konzoly jazyka JavaScript se podporuje na následujících platformách:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]a aplikace pro Windows Phone pomocí jazyka JavaScript a HTML  
+-   Aplikace UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]a aplikace pro Windows Phone pomocí jazyka JavaScript a HTML  
   
 -   Internet Explorer 11 a systémem[!INCLUDE[win81](../debugger/includes/win81_md.md)]  
   

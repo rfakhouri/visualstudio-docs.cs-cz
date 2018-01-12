@@ -14,17 +14,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], protected documents
 - datasets [Office development in Visual Studio], caching
 - data [Office development in Visual Studio], caching
-ms.assetid: 91b865fc-bd01-438f-ac63-2fe3175bc2e8
-caps.latest.revision: "23"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload: office
-ms.openlocfilehash: ecc4913d9d508d95347945b8f4aaa816bc3d510c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
+ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Postupy: Ukládání dat do mezipaměti v dokumentu chráněném heslem
   Pokud přidáte data do mezipaměti data v dokumentu nebo sešitu, který je chráněný heslem, změny data uložená v mezipaměti nejsou uloženy automaticky. Změny můžete uložit data uložená v mezipaměti přepsáním dvě metody ve vašem projektu.  
