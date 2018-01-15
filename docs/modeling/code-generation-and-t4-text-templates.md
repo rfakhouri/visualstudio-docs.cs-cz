@@ -14,17 +14,15 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
-caps.latest.revision: "82"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3ca05f93fd4753c8a00eb1a5dee4c4bc9a2f4efc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6eeadb77cd0250ab7b2cc48c2abdb8d9f1a1f373
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Vytvoření kódu a textové šablony T4
 V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], *textové šablony T4* je směs text bloky a řízení logiky, která může generovat textového souboru. Ovládací prvek logiku je zapsána jako fragmenty kódu programu [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] nebo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. V sadě Visual Studio 2015 Update 2 nebo novější můžete v šablonách T4 – direktivy jazyka C# – funkce verze 6.0. Vygenerovaný soubor může být text libovolného typu, například webovou stránku nebo soubor prostředků nebo zdrojový kód aplikace v libovolném jazyce.  

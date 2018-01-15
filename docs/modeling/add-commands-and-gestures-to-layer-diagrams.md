@@ -15,11 +15,11 @@ author: alexhomer1
 ms.author: ahomer
 manager: douge
 ms.workload: multiple
-ms.openlocfilehash: f03b460c3e37bb6299047cb0e35e80895f08cfb3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
-ms.translationtype: MT
+ms.openlocfilehash: af3df828a2abc441ce2efb3998b10fb1991e3127
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Přidání příkazů a gest do diagramů závislostí
 Můžete definovat příkazy nabídky kontextu a gesty obslužné rutiny v diagramech závislosti v sadě Visual Studio. Tato rozšíření můžete balíček do Visual Studio integrace rozšíření (VSIX), které můžete distribuovat jiným uživatelům v sadě Visual Studio.  
@@ -45,7 +45,7 @@ Můžete definovat příkazy nabídky kontextu a gesty obslužné rutiny v diagr
   
 3.  Chcete-li otestovat rozšíření, stiskněte **CTRL + F5** nebo **F5**.  
   
-     Experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] spustí. V tomto případě vytvořte diagram závislostí. Příkaz nebo gesto rozšíření by měla fungovat v tomto diagramu.  
+     Spustí experimentální instanci sady Visual Studio. V tomto případě vytvořte diagram závislostí. Příkaz nebo gesto rozšíření by měla fungovat v tomto diagramu.  
   
 4.  Ukončete experimentální instanci a upravte ukázkový kód. Další informace najdete v tématu [vyhledání a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
@@ -55,7 +55,7 @@ Můžete definovat příkazy nabídky kontextu a gesty obslužné rutiny v diagr
   
      [Definování obslužné rutiny gest](#gesture)  
   
-6.  K instalaci rozšíření hlavní instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nebo na jiném počítači najít **VSIX** souboru v **bin\\\***. Zkopírujte jej do počítače, ve které chcete nainstalovat a pak na ni dvakrát kliknete. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
+6.  Chcete-li nainstalovat rozšíření v hlavní instanci sady Visual Studio, nebo v jiném počítači, vyhledejte **VSIX** souboru v **bin\\\***. Zkopírujte jej do počítače, ve které chcete nainstalovat a pak na ni dvakrát kliknete. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Přidání příkaz nebo gesto do samostatné VSIX  
  Pokud chcete vytvořit jednu VSIX, který obsahuje příkazy, validátory vrstvy a ostatní rozšíření, doporučujeme vytvořit jeden projekt k definování VSIX a samostatné projekty pro obslužné rutiny.
@@ -104,9 +104,9 @@ Můžete definovat příkazy nabídky kontextu a gesty obslužné rutiny v diagr
   
      Viz také [vyhledání a aktualizace modelů v programovém kódu vrstvy](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Chcete-li otestovat funkci, stiskněte CTRL + F5 nebo F5. Experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otevře. V tomto případě vytvořit nebo Otevřít diagram závislostí.  
+2.  Chcete-li otestovat funkci, stiskněte CTRL + F5 nebo F5. Otevře se experimentální instanci sady Visual Studio. V tomto případě vytvořit nebo Otevřít diagram závislostí.  
   
-3.  K instalaci VSIX hlavní instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nebo na jiném počítači najít **VSIX** souboru v **bin** adresář projektu VSIX. Zkopírujte jej do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows (Průzkumníka souborů ve Windows 8).  
+3.  Chcete-li nainstalovat VSIX hlavní instanci sady Visual Studio, nebo na jiném počítači, vyhledejte **VSIX** souboru v **bin** adresář projektu VSIX. Zkopírujte jej do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows.  
   
      Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   

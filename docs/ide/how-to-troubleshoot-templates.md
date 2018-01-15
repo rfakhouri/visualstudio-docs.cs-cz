@@ -11,11 +11,11 @@ helpviewer_keywords: templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6d9a73cd45a0e497fb2ecc0f4b4697071e3b37
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: d9242d053044fa66e6eb3d506382cf7cfb5d0295
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Postupy: řešení problémů se šablonami
 
@@ -47,20 +47,6 @@ Pokud soubor .vstemplate v šabloně nedrží schéma šablony sady Visual Studi
 1. Nový soubor .zip umístíte ve stejném adresáři jako starý soubor .zip.
 
 1. Odstraňte extrahované soubory šablony a původní soubor .zip šablony.
-
-## <a name="monitor-the-event-log"></a>Monitorování protokolu událostí
-
-Visual Studio protokoly chyb, které zjistí při zpracování souborů .zip. Pokud šablonu nezobrazí v **nový projekt** dialogové okno jako očekávání, můžete použít **Prohlížeč událostí** k odstranění problému.
-
-### <a name="to-locate-template-errors-in-event-viewer"></a>V prohlížeči událostí vyhledejte chyby šablony
-
-1. V systému Windows z **spustit** nabídce zvolte **nástroje pro správu Windows** > **Prohlížeč událostí**.
-
-1. V levém podokně vyberte **protokoly systému Windows** > **aplikace**.
-
-1. Vyhledejte události s **zdroj** hodnotu `Visual Studio - VsTemplate`.
-
-1. Chcete-li zobrazit chybu, dvakrát klikněte na šablonu události.
 
 ## <a name="enable-diagnostic-logging"></a>Povolit protokolování diagnostiky
 

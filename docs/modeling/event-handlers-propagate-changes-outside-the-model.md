@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
-ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
-caps.latest.revision: "18"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b1ef5efcce853f55ad518f1cdba35d2363f5504e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 Vizualizace a modelování SDK, můžete definovat obslužné rutiny událostí úložiště rozšíří změny na prostředky mimo úložiště, jako je například proměnné bez úložiště, soubory, modely v jiných úložišť nebo jiné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření. Obslužné rutiny událostí úložiště jsou spouštěny na konci transakce došlo k aktivační událost. Rovněž jsou prováděna v operaci zpět nebo znovu. Na rozdíl od úložiště pravidla jsou proto je nejvhodnější pro aktualizaci hodnoty, které jsou mimo úložišti události v úložišti. Na rozdíl od událostí rozhraní .NET, jsou obslužné rutiny událostí úložiště zaregistrované pro naslouchání na třídu: nemáte registraci samostatné obslužnou rutinu pro každou instanci. Další informace o tom, jak zvolit různé způsoby zpracování změn najdete v tématu [reakce na a šíření změny](../modeling/responding-to-and-propagating-changes.md).  
@@ -38,7 +36,7 @@ Vizualizace a modelování SDK, můžete definovat obslužné rutiny událostí 
   
     -   `ElementDeleted`-spustí po element modelu, vztah, tvar nebo konektor byl odstraněn. Pořád přístup k elementu hodnoty vlastností, ale bude mít žádné relace pro další prvky.  
   
-2.  Přidejte třídu definici *YourDsl***DocData** v samostatném souboru kódu v **DslPackage** projektu.  
+2.  Přidejte třídu definici *YourDsl *** DocData** v samostatném souboru kódu v **DslPackage** projektu.  
   
 3.  Zápis kódu událost jako metody, jako v následujícím příkladu. Může být `static`, pokud chcete získat přístup `DocData`.  
   

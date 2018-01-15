@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: uwp
 author: gewarren
-ms.openlocfilehash: b1cc13dfd81876f647178ebf3702c778cabb533e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c9610360c0ea6d32c4825b1e2768f3eaaa06a6fa
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>Spouštění testů jednotek pro aplikace UWP v sadě Visual Studio
 Toto téma popisuje postup spouštění testů jednotek pomocí Průzkumníka testů v sadě Microsoft Visual Studio  
@@ -55,7 +55,7 @@ Toto téma popisuje postup spouštění testů jednotek pomocí Průzkumníka te
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a>Spouštění testů v Průzkumníka testů  
  Při sestavování testovacího projektu testů se zobrazí v Průzkumníku otestovat. Pokud není viditelná Průzkumníka testů, zvolte **Test** v sadě Visual Studio nabídce zvolte **Windows**a potom zvolte **Průzkumníka testů**.  
   
- ![Průzkumníka testů jednotek](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Průzkumníka testů jednotek](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Při spuštění, zápisu a znovu spusťte testy Průzkumníka testů zobrazí výsledky v výchozí skupiny **testy se nezdařilo**, **předán testy**, **přeskočen testy** a  **Nejde spustit testy**. Můžete změnit způsob Průzkumníka testů skupiny testů.  
   

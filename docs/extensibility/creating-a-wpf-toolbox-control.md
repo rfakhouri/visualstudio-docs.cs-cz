@@ -17,11 +17,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 605ce6f221df959e553cbfde2f3439da06b474c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0bc83d29eb076b70be5c9192acdbe39e301a6f16
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Vytvoření ovládacího prvku sady nástrojů WPF
 Ovládací prvek sady nástrojů WPF (Windows Presentation Framework) šablona umožňuje vytvořit ovládacích prvků WPF, které jsou automaticky přidány do **sada nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak vytvořit pomocí šablony **sada nástrojů** ovládací prvek, který distribuujete do jiných uživatelů.  
@@ -61,7 +61,7 @@ Ovládací prvek sady nástrojů WPF (Windows Presentation Framework) šablona u
   
 1.  Otevřete MyToolboxControl.xaml.cs v zobrazení kódu.  
   
-2.  Nalezena třída MyToolboxControl a přejmenujte jej na TestControl. (Nejrychlejší způsob, jak to udělat, je k přejmenování třídy, vyberte **přejmenovat** v místní nabídce a proveďte kroky. (Další informace o **přejmenovat** příkazů najdete v tématu [přejmenovat refaktoring (C#)](../csharp-ide/rename-refactoring-csharp.md).)  
+2.  Nalezena třída MyToolboxControl a přejmenujte jej na TestControl. (Nejrychlejší způsob, jak to udělat, je k přejmenování třídy, vyberte **přejmenovat** v místní nabídce a proveďte kroky. (Další informace o **přejmenovat** příkazů najdete v tématu [přejmenovat refaktoring (C#)](../ide/reference/rename-csharp.md).)
   
 3.  Přejděte na `ProvideToolboxControl` atribut a změňte hodnotu první parametr **Test**. Toto je název skupiny, která bude obsahovat ovládacího prvku **sada nástrojů**.  
   

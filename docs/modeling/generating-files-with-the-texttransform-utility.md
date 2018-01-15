@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
-ms.assetid: 06a48235-fe02-403e-a1cf-2ae70b4db62f
-caps.latest.revision: "41"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ebd8b73cf28452998f00dbf863e6637f6c9188e5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: de8564aa1743ed22ff4a600d9bf655bbb4adaed4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Generování souborů pomocí nástroje TextTransform
 TextTransform.exe je nástroj příkazového řádku, který můžete použít k transformaci textové šablony. Při volání TextTransform.exe je zadat jako argument název textového souboru šablony. TextTransform.exe volá transformační modul text a zpracuje textové šablony. TextTransform.exe se obvykle nazývá z skriptů. Není však obvykle vyžaduje, protože je možné provádět transformací textu v sadě Visual Studio nebo v procesu sestavení.  
@@ -63,7 +61,7 @@ TextTransform [<options>] <templateName>
 |**-I** \<includedirectory >|Adresář, který obsahuje textové šablony obsažené v šabloně zadaný text.|  
 |**-P** \<referencepath >|Adresář pro vyhledávání pro sestavení zadané v rámci šablony text nebo pro použití **- r** možnost.<br /><br /> Například například sestavení, které používá pro Visual Studio API, použijte<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|  
 |**-dp** \<processorName >!\< Název třídy >! \<assemblyName &#124; codeBase >|Název, název typu úplné a sestavení direktivy procesoru, který slouží ke zpracování vlastní direktivy v textové šablony.|  
-|**-a** [processorName]! [ directiveName]! \<parameterName >! \<parameterValue >|Zadejte hodnotu parametru direktivy procesoru. Pokud zadáte pouze název parametru a hodnota, bude k dispozici pro všechny procesory direktiv parametr. Pokud zadáte procesoru direktiv, parametr je k dispozici pouze určeným procesorem. Pokud zadáte název směrnice, parametr je k dispozici jenom v případě, že zadaný direktiva je zpracovávána.<br /><br /> Pro přístup k hodnotám parametrů z procesoru direktiv nebo textové šablony, použijte <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. V textové šablony, zahrnují `hostspecific` v – direktiva šablony a vyvolání zprávy na `this.Host`. Příklad:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Zadávejte vždy '!' označí, i v případě vynechání volitelné procesoru a direktivy názvy. Příklad:<br /><br /> `-a !!param!value`|  
+|**-a** [processorName]! [directiveName]! \<parameterName >! \<parameterValue >|Zadejte hodnotu parametru direktivy procesoru. Pokud zadáte pouze název parametru a hodnota, bude k dispozici pro všechny procesory direktiv parametr. Pokud zadáte procesoru direktiv, parametr je k dispozici pouze určeným procesorem. Pokud zadáte název směrnice, parametr je k dispozici jenom v případě, že zadaný direktiva je zpracovávána.<br /><br /> Pro přístup k hodnotám parametrů z procesoru direktiv nebo textové šablony, použijte <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>. V textové šablony, zahrnují `hostspecific` v – direktiva šablony a vyvolání zprávy na `this.Host`. Příklad:<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> Zadávejte vždy '!' označí, i v případě vynechání volitelné procesoru a direktivy názvy. Příklad:<br /><br /> `-a !!param!value`|  
 |**-h**|Poskytuje nápovědu.|  
   
 ## <a name="related-topics"></a>Související témata  

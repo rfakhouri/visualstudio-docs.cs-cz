@@ -13,14 +13,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: eba6a028e1a4431be0338ea76874019ed53f23ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 02ff1bd3e3db51a444d371e2e803f77ef1429676
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="detach"></a>Odpojit
-VSPerfCmd.exe **odpojení** možnost odpojí profileru od zadané procesy nebo všechny procesy, pokud žádný není určen. Profilace musí mít inicializovány pomocí metody vzorkování.  
+VSPerfCmd.exe **odpojení** možnost-li zadán žádný odpojí profileru z zadaný procesy nebo všechny procesy. Profilace musí mít inicializovány pomocí metody vzorkování.  
   
  Profilace, která byla spuštěna s buď **spusťte** nebo **Attach** možnosti můžete odpojit s **odpojení**. Profileru může být reattched pomocí dalších **Attach** příkazy.  
   

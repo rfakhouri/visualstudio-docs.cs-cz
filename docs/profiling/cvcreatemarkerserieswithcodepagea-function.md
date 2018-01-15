@@ -15,14 +15,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6e435e702b25bd3abaacd4a789d635901617a611
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d40f895133ce4fc36a40292d7931c47dd166e8e4
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="cvcreatemarkerserieswithcodepagea-function"></a>CvCreateMarkerSeriesWithCodePageA – funkce
-Vytvoří řady značky pro daného zprostředkovatele a zadány znaková stránka. Tato funkce slouží k určení kódové stránky explicitně pro text naprogramovaný funkce rozhraní API ANSI značky. Nastavení znakové stránky může být užitečné v případě, že bude zachycen a potom analyzovat na různé počítače s jinou národní prostředí nebo jazyky trasování. Ve výchozím nastavení se používá znaková stránka vrácené funkcí GetACP().  
+Vytvoří řady značky daného poskytovatele a zadanou znakovou stránku. Tato funkce slouží k určení kódové stránky explicitně pro text naprogramovaný funkce rozhraní API ANSI značky. Nastavení znakové stránky může být užitečné v případě, že bude zachycen a potom analyzovat na různé počítače s jinou národní prostředí nebo jazyky trasování. Ve výchozím nastavení se používá znaková stránka vrácené funkcí GetACP().  
   
 ## <a name="syntax"></a>Syntaxe  
   

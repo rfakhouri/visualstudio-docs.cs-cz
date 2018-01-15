@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 64674976-841f-43cb-8e61-0645c8a89eec
-caps.latest.revision: "5"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 40ad4b98b29fe4d54fc3126f49c0454eafc4454d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 578c1aa9200640fc41392dc4046afe1793284f3c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Volání transformací textu v rozšíření VS
 Pokud píšete rozšíření sady Visual Studio, jako je například příkazu nabídky nebo [jazyka domény](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), je možné použít službu ukázka text k transformaci textové šablony. Získat <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> služby a vysílat <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.  

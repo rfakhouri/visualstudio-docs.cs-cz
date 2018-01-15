@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-ms.assetid: cd550399-05fc-4dbf-be4c-f5094bb752ce
-caps.latest.revision: "22"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 70ff75bd3bee039b0c97c35cc7135044e2cff1a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fc00b5889d1f529eef0370e1de1f9d9c89bc4ae9
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 Příkazy nabídky můžete přidat do jazyka specifické pro doménu (DSL) tak, aby vaši uživatelé můžete provádět úlohy, které jsou specifické pro vaše DSL. Při kliknutí pravým tlačítkem myši v diagramu se zobrazují příkazy v nabídce kontextu (místní). Příkaz můžete definovat, aby se zobrazí pouze v nabídce v konkrétních situacích. Například můžete provést příkaz viditelná jenom v případě, že uživatel klikne na konkrétní typy elementu nebo elementů v konkrétní stavy.  

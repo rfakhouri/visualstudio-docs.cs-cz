@@ -9,20 +9,18 @@ ms.topic: article
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
-caps.latest.revision: "51"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2edee4658c952816fc961254aee2c3cccfbe7c4d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bc8bcec7b5484ad1065539b5860bae115dcb4fd0
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Návod: Vytvoření vlastního hostitele textových šablon
-A *textové šablony**hostitele* poskytuje prostředí, které umožňuje *text šablony transformační modul* ke spuštění. Tento hostitel se stará o interakce stroje se systémem souborů. Modul nebo *procesoru direktiv* potřebného soubor nebo sestavení může požádat o prostředku z hostitele. Hostitel pak může požadovaný prostředek najít prohledáním adresáře a globální mezipaměti sestavení (GAC). Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).  
+A *textové šablony ** hostitele* poskytuje prostředí, které umožňuje *text šablony transformační modul* ke spuštění. Tento hostitel se stará o interakce stroje se systémem souborů. Modul nebo *procesoru direktiv* potřebného soubor nebo sestavení může požádat o prostředku z hostitele. Hostitel pak může požadovaný prostředek najít prohledáním adresáře a globální mezipaměti sestavení (GAC). Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).  
   
  Můžete napsat vlastního hostitele. Pokud chcete použít *transformace textu šablony* funkce z mimo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo pokud chcete integrovat do vlastních nástrojů této funkce. Vytvoření vlastního hostitele, je nutné vytvořit třídu, která dědí z <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentaci jednotlivých metod najdete v tématu <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

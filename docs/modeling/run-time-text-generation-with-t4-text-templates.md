@@ -11,17 +11,15 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
-caps.latest.revision: "22"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 32d2fa502a5eca166ccca9fbc87ceb632d7617ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2bbc9fb84ae2487d3c90efcecf9d48c43c28df32
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 Textové řetězce ve vaší aplikaci v době běhu můžete vygenerovat pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] runtime textové šablony. Počítače, kde se spouští aplikace není nutné mít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Modul runtime šablony se někdy označuje jako "zpracované textové šablony" vzhledem k tomu, že v době kompilace Šablona generuje kód, který se spustí v době běhu.  

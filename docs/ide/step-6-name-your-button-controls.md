@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: eed8f03eefb15b982f297b78f7503c947df8d712
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 12065875980d114d6ea8b9912009701afb5cf9a0
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6: Pojmenujte své ovládací prvky tlačítek
 Je pouze jeden PictureBox na daný formulář. Pokud jste ji přidali rozhraní IDE automaticky pojmenuje **pictureBox1**. Existuje pouze jeden CheckBox, která se nazývá **checkBox1**. Později, brzy bude napsat kód, a tento kód bude odkazovat na zaškrtávací políčko a PictureBox. Protože se nachází pouze jeden z těchto ovládacích prvků, budete vědět, co znamená až uvidíte **pictureBox1** nebo **checkBox1** ve vašem kódu.  
@@ -74,7 +74,7 @@ Karta Form1.cs s kódem jazyka Visual C#
   
      Po přidání obslužné rutiny události pro ovládací prvek se můžete vrátit do něj kdykoli Návrhář formulářů Windows poklepáním na ovládací prvek, nebo v nabídce panelu Výběr **zobrazení**, **kód**.  
   
-     Názvy jsou důležité při vytváření programů a metody (včetně obslužné rutiny událostí) může mít libovolný název, který chcete. Když přidáváte obslužné rutiny události pomocí rozhraní IDE, vytvoří název na základě jeho názvu a události ke zpracování. Například událost klikněte na tlačítko s názvem **showButton** je volána `showButton_Click()` obslužná rutina události. Navíc se po názvu metody k označení, že jsou právě popsané metody přidají obvykle otvírání a zavírání závorky (). Pokud se rozhodnete, kterou chcete změnit název proměnné kódu, klikněte pravým tlačítkem v proměnné a pak zvolte **Refaktorovat**, **přejmenovat**. Všechny instance této proměnné v kódu jsou přejmenovat. V tématu [přejmenovat refaktoring (C#)](../csharp-ide/refactoring/rename.md) nebo [přejmenovat refaktoring (Visual Basic)](../vb-ide/refactoring/rename.md) Další informace.
+     Názvy jsou důležité při vytváření programů a metody (včetně obslužné rutiny událostí) může mít libovolný název, který chcete. Když přidáváte obslužné rutiny události pomocí rozhraní IDE, vytvoří název na základě jeho názvu a události ke zpracování. Například událost klikněte na tlačítko s názvem **showButton** je volána `showButton_Click()` obslužná rutina události. Navíc se po názvu metody k označení, že jsou právě popsané metody přidají obvykle otvírání a zavírání závorky (). Pokud se rozhodnete, kterou chcete změnit název proměnné kódu, klikněte pravým tlačítkem v proměnné a pak zvolte **Refaktorovat**, **přejmenovat**. Všechny instance této proměnné v kódu jsou přejmenovat. V tématu [přejmenovat refaktoring (C#)](../ide/reference/rename-csharp.md) nebo [přejmenovat refaktoring (Visual Basic)](../ide/reference/rename-vb.md) Další informace.
   
 ### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
   

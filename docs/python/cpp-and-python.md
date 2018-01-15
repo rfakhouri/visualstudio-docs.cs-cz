@@ -13,12 +13,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: a1e5568f30177d3f4664d1cc1ebd7192539b86bf
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: c4c10f6f2bb0624ab72e8eb7f07db38f61bcf1a7
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Vytváření rozšíření pro C++ pro jazyk Python
 
@@ -156,6 +158,9 @@ Další informace najdete v tématu [instalaci podpory jazyka Python pro Visual 
 ## <a name="convert-the-c-project-to-an-extension-for-python"></a>Převedení projektu C++ na rozšíření pro jazyk Python
 
 Chcete-li C++ DLL do rozšíření pro jazyk Python, nejdřív změnit exportovaných metod pro interakci s typy Python. Potom je přidat funkce, který exportuje modulu, společně s definice metod modulu. Pozadí na co se zde zobrazí, najdete v části [Python nebo C API referenční příručce](https://docs.python.org/3/c-api/index.html) a hlavně [objekty modulu](https://docs.python.org/3/c-api/module.html) na python.org. (Nezapomeňte z ovládacího prvku rozevíracího seznamu v pravém horním rohu vyberte verzi jazyka Python.)
+
+> [!Note]
+> Tyto pokyny platí pro Python 3.x. Pokud pracujete s Python 2.7, podívejte se na [rozšíření Python 2.7 pomocí jazyka C nebo C++](https://docs.python.org/2.7/extending/extending.html) a [portování rozšíření modulů pro Python 3](https://docs.python.org/2.7/howto/cporting.html) (python.org).
 
 1. V souboru C++ zahrnují `Python.h` v horní části:
 

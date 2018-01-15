@@ -11,17 +11,15 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selecticondialog
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords: Domain-Specific Language, toolbox
-ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
-caps.latest.revision: "26"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8f9d26b727281c3443549bd38afce5d9da043334
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e7ce422f22a2420e3972477bfe9513b88a5861f1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 Je nutné zadat položek sady nástrojů pro prvky, které chcete, aby mohli uživatelé přidat do jejich modely. Existují dva typy nástrojů: element nástroje a nástroje pro připojení. V Návrháři generovaného uživatele můžete vybrat nástroj na element přetáhněte obrazců do diagramu a můžete vybrat nástroj pro připojení k vykreslení odkazy mezi obrazce. Obecně platí nástroje pro element uživatelům přidání instancí třídy domény do jejich modely a nástroje připojení k zajištění jejich přidání instancí vztahů mezi doménami.  

@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
-caps.latest.revision: "14"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1f64368c90f6d77be24271eeaac96cc6b5624f67
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4a746d3b2c913025bb9fc84b4f3fec34fe2bc7cf
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 Jazyka specifické pro doménu (DSL) můžete rozšířit pomocí Managed Extensibility Framework (MEF). Vy nebo jiní vývojáři budou moci zapsat rozšíření pro DSL beze změny definice DSL a kód programu. Taková rozšíření zahrnují příkazy nabídky, obslužné rutiny přetahování myší a ověření. Budou uživatelé moci nainstalovat vaší DSL a volitelně nainstalovat rozšíření pro ni.  

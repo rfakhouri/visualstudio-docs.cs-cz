@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: dependency diagrams, adding custom validation
-ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
-caps.latest.revision: "42"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 130d53cb0e32add0251306c261cf456459f2192a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82d65618dd510c90fa2aea95b43727787e9e727b
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Přidání ověřování vlastní architektury do diagramů závislostí
 V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu proti model vrstvy, aby můžete ověřit, že zdrojový kód odpovídá závislosti v diagramu závislostí. Je algoritmus standardní ověřování, ale můžete definovat vlastní rozšíření ověření.  
@@ -59,7 +57,7 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
     > [!NOTE]
     >  Metodu bude volán jen v konkrétních případech a zarážky nebude fungovat automaticky. Další informace najdete v tématu [ladění ověření vrstev](#debugging).  
   
-5.  K instalaci rozšíření hlavní instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nebo na jiném počítači najít **VSIX** souboru v **bin\\\***. Zkopírujte jej do počítače, ve které chcete nainstalovat a pak na ni dvakrát kliknete. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
+5.  Chcete-li nainstalovat rozšíření v hlavní instanci sady Visual Studio, nebo v jiném počítači, vyhledejte **VSIX** souboru v **bin\\\***. Zkopírujte jej do počítače, ve které chcete nainstalovat a pak na ni dvakrát kliknete. Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Přidání validátor vrstvy do samostatné VSIX  
  Pokud chcete vytvořit jednu VSIX, který obsahuje validátory vrstvy, příkazy a další rozšíření, doporučujeme vytvořit jeden projekt k definování VSIX a samostatné projekty pro obslužné rutiny. 
@@ -116,7 +114,7 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
     > [!NOTE]
     >  Metodu bude volán jen v konkrétních případech a zarážky nebude fungovat automaticky. Další informace najdete v tématu [ladění ověření vrstev](#debugging).  
   
-8.  K instalaci VSIX hlavní instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nebo na jiném počítači najít **VSIX** souboru v **bin** adresář projektu VSIX. Zkopírujte jej do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows. (Průzkumníka souborů ve Windows 8.)  
+8.  Chcete-li nainstalovat VSIX hlavní instanci sady Visual Studio, nebo na jiném počítači, vyhledejte **VSIX** souboru v **bin** adresář projektu VSIX. Zkopírujte jej do počítače, ve které chcete nainstalovat VSIX. Poklikejte na soubor VSIX v Průzkumníku Windows.
   
      Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
@@ -150,7 +148,7 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
   
  Když uživatel vyvolá **ověření architektura** příkaz nabídky systému runtime vrstvy analýz vrstvy a jejich artefaktů k vytvoření grafu. Graf má čtyři části:  
   
--   Modely vrstev z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení, které jsou reprezentovány jako uzly a odkazy v grafu.  
+-   Vrstvě modely řešení sady Visual Studio, které jsou reprezentovány jako uzly a odkazy v grafu.  
   
 -   Kód, položky projektu a artefaktů, které jsou definovány v řešení a reprezentován jako uzly a odkazy, které představují závislosti zjištěné procesem analýzy.  
   
@@ -190,7 +188,7 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
  Odkazy z vrstvy na elementy v kódu mají kategorii "Představuje".  
   
 ##  <a name="debugging"></a>Ladění ověření  
- Chcete-li ladit ověření rozšíření vrstvy, stiskněte CTRL + F5. Experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otevře. V tomto případě otevřít nebo vytvořit model vrstvy. Tento model musí být přidružený kód a musí mít alespoň jeden závislostí.  
+ Chcete-li ladit ověření rozšíření vrstvy, stiskněte CTRL + F5. Otevře se experimentální instanci sady Visual Studio. V tomto případě otevřít nebo vytvořit model vrstvy. Tento model musí být přidružený kód a musí mít alespoň jeden závislostí.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Testování pomocí řešení, které obsahuje závislosti  
  Ověření není proveden, pokud jsou k dispozici následující vlastnosti:  
@@ -199,7 +197,7 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
   
 -   Existují vrstvy v modelu, které jsou přidružené elementy kódu.  
   
- Při prvním spuštění experimentální instance služby [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otestovat ověření rozšíření, otevřít nebo vytvořit řešení, které má tyto vlastnosti.  
+ Při prvním spuštění experimentální instanci sady Visual Studio k testování ověření rozšíření, otevřete nebo vytvářet řešení, která má tyto vlastnosti.  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>Spuštění Vyčistit řešení před ověření architektura  
  Při každé aktualizaci ověřovacího kódu pomocí **Vyčistit řešení** příkaz na **sestavení** nabídky v experimentální řešení, před testovacího příkaz ověřením. To je nezbytné, protože v mezipaměti výsledky ověření. Pokud jste neprovedli aktualizaci diagramu testovací závislostí nebo jeho kód, nebude provedeno metody ověřování.  
@@ -207,9 +205,9 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
 ### <a name="launch-the-debugger-explicitly"></a>Explicitně spuštění ladicího programu  
  Ověření se spustí jako samostatný proces. Proto nebude aktivována zarážky v metodu ověření. Ladicí program musí explicitně připojit k procesu, když ověření bylo zahájeno.  
   
- Připojit ladicí program k procesu ověřování, Vložit volání `System.Diagnostics.Debugger.Launch()` na začátku metodu ověření. Když se zobrazí dialogové okno ladění, vybrat hlavní instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Připojit ladicí program k procesu ověřování, Vložit volání `System.Diagnostics.Debugger.Launch()` na začátku metodu ověření. Když se zobrazí dialogové okno ladění, vyberte hlavní instanci sady Visual Studio.  
   
- Alternativně můžete vložit volání `System.Windows.Forms.MessageBox.Show()`. Jakmile se zobrazí okno se zprávou, přejděte na hlavní instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a na **ladění** nabídce klikněte na tlačítko **připojit k procesu**. Vyberte proces, který je pojmenován **Graphcmd.exe**.  
+ Alternativně můžete vložit volání `System.Windows.Forms.MessageBox.Show()`. Jakmile se zobrazí okno se zprávou, přejděte k hlavní instanci sady Visual Studio a na **ladění** nabídce klikněte na tlačítko **připojit k procesu**. Vyberte proces, který je pojmenován **Graphcmd.exe**.  
   
  Vždy spustit experimentální instanci stisknutím CTRL + F5 (**spustit bez ladění**).  
   

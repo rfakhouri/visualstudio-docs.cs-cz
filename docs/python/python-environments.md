@@ -1,7 +1,7 @@
 ---
 title: "Prostředí Python v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 07/25/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,43 +12,47 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 4f190d02850f1effc9e1597d14fecf323de68356
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 54c25180e0133ec407099cf4bb0f58f2279279d4
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-environments"></a>Prostředí Python
 
-Python v sadě Visual Studio usnadňuje správu více prostředí Python a snadno přepínat mezi nimi pro různé projekty.
+Python *prostředí* je kontext, ve kterém můžete spustit kód Python. Prostředí se skládá z překladač knihovny (obvykle Python standardní knihovny) a sadu instalovaných balíčků. Tyto součásti společně určují, které jazykové konstrukty a syntaxe jsou platné, spouštění jaký operační systém funkce mají přístup a které balíčky, které můžete použít.
 
-**Poznámka:**: Pokud jste ještě Python v sadě Visual Studio, najdete v následujících tématech nejprve jako to znamenat diskusní závisí na je:
+V sadě Visual Studio, můžete spravovat všechna prostředí pomocí [okno prostředí Python](#managing-python-environments-in-visual-studio) jak je popsáno v tomto článku. Pro daný projekt, vyberete prostředí pro spuštění kódu, ladění, kontrola syntaxe, import a člen dokončených zobrazení a všemi ostatními úkoly, které jsou specifické pro překladač a nainstalované knihovny. Visual Studio také udržuje databázi IntelliSense pro každé prostředí, která poskytuje pro automatické dokončování při zadávání kódu.
+
+Visual Studio také poskytuje podporu pro virtuální prostředí, `requirements.txt` souborů a cesty hledání.
+
+**Poznámka:**: Pokud jste ještě Python v sadě Visual Studio, najdete v následujících článcích pro potřeby pozadí:
 
 - [Práce s Python v sadě Visual Studio](python-in-visual-studio.md)
 - [Instalace podpory Python v sadě Visual Studio](installation.md)
 
-Python *prostředí*, ve které je vždy spustit kód Python, se skládá z překladač, knihovny (obvykle Python standardní knihovnu), a sadu instalovaných balíčků. Tyto součásti společně určují, které jazykové konstrukty a syntaxe jsou platné, spouštění jaký operační systém funkce mají přístup a které balíčky, které můžete použít.
+## <a name="global-and-virtual-environments"></a>Globální a virtuální prostředí
 
-V sadě Visual Studio, prostředí také zahrnuje databázi IntelliSense pro prostředí s knihovny, tak, že zadáte příkaz jako `import` editor v sadě Visual Studio se automaticky zobrazí seznam dostupných knihoven, jakož i moduly v rámci Tyto knihovny.
+Existují dva typy prostředí Python: globální a virtuální.
 
-Často vývojáři použít pouze jeden, globální prostředí Python. Ostatní vývojáři však zapotřebí spravovat několik globální prostředí, projektu konkrétní prostředí a virtuální prostředí, jak je popsáno v tomto tématu:
+**Globální prostředí**: instalace každý Python (například Python 2.7, Python 3.6 a Anaconda 4.4.0, viz [výběr a instalace Python překladače](#selecting-and-installing-python-interpreters) udržuje vlastní prostředí. Každé prostředí se skládá z konkrétní překladač Pythonu, jeho standardní knihovna a sadu předem nainstalované balíčky. Instalaci balíčku do globální prostředí bude dostupná pro všechny projekty pomocí prostředí. Pokud prostředí je umístěný v oblasti Ochrana systému souborů (v rámci `c:\program files`, například), pak instalace balíčků vyžaduje oprávnění správce.
 
-- [Výběr a instalace překladače Python](#selecting-and-installing-python-interpreters)
-- [Správa prostředí Python v sadě Visual Studio](#managing-python-environments-in-visual-studio)
-- [Globální prostředí](#global-environments)
-- [Specifické pro projekt prostředí](#project-specific-environments)
-- [Virtuální prostředí](#virtual-environments)
-- [Správa požadované balíčky](#managing-required-packages)
-- [Cesty hledání](#search-paths)
+Globální prostředí jsou k dispozici pro všechny projekty v počítači. V sadě Visual Studio vyberte jeden globální prostředí jako výchozí, což se použije pro všechny projekty Pokud zvolíte jinou pro projekt. Další informace najdete v tématu [výběr prostředí pro projekt](#selecting-an-environment-for-a-project).
 
-Video úvod naleznete v tématu [Správa prostředí Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2m35s).
+**Virtuální prostředí**: protože balíčky nainstalované do globální prostředí jsou k dispozici na všechny projekty, které používají prostředí, je v konfliktu může dojít, pokud dva projekty vyžadují Nekompatibilní balíčky nebo různé verze stejného balíčku. Virtuální prostředí vyhnout takové konflikty pomocí překladač a standardní knihovny z globální prostředí ale udržování své vlastní balíček úložišť v izolovaném složek.
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+V sadě Visual Studio, můžete vytvořit virtuální prostředí pro konkrétní projekt, který je uložený v podsložce v projektu (viz [vytvoření virtuálních prostředí](#creating-virtual-environments). Soubor projektu také identifikuje virtuální prostředí. Visual Studio také zaznamenává všechny balíčky, které můžete nainstalovat do virtuálního prostředí v projektu `requirements.txt` souboru. Pokud sdílíte projektu a jinými vývojáři otevřít na svých počítačích, Visual Studio poskytuje možnost znovu vytvořte virtuální prostředí.
 
-## <a name="selecting-and-installing-python-interpreters"></a>Výběr a instalace překladače Python
+### <a name="selecting-and-installing-python-interpreters"></a>Výběr a instalace překladače Python
 
-S výjimkou s Visual Studio 2017 podpora v jazyce Python není součástí překladač Pythonu proto musíte nainstalovat některou z následujících pro spouštění vašeho kódu. Obecně platí Visual Studio automaticky rozpozná nově nainstalovaná překladače a nastaví prostředí pro každou. Pokud se nezjistí nainstalované prostředí, přečtěte si téma [vytváření prostředí pro existující překladač](#creating-an-environment-for-an-existing-interpreter).
+Ve výchozím nastavení instalaci zatížení vývoj Python ve Visual Studio 2017 se nainstaluje také Python 3 (64 bitů). Volitelně můžete pro instalaci 32bitové a 64bitové verze Python 2, Python 3, Anaconda 2 a Anaconda 3, jak je popsáno v [instalace](installation.md). Můžete také ručně nainstalovat všechny překladače uvedené v následující tabulce.
+
+Pro Visual Studio 2015 a starší je nutné mezi překladače nainstalovat ručně.
+
+Visual Studio (všechny verze) automaticky vytvoří prostředí pro každou kontrolou registru překladač Pythonu (následující [období 514 - Python registrace v registru Windows](https://www.python.org/dev/peps/pep-0514/)). Pokud Visual Studio nerozpozná nainstalované prostředí, přečtěte si téma [vytváření prostředí pro existující překladač](#creating-an-environment-for-an-existing-interpreter).
 
 | Překladač | Popis |
 | --- | --- |
@@ -62,30 +66,32 @@ Vývojáři, které chcete přidat nové formuláře detekce prostředí Python,
 
 ## <a name="managing-python-environments-in-visual-studio"></a>Správa prostředí Python v sadě Visual Studio
 
-Otevřete okno prostředí Python, proveďte jednu z následujících akcí:
+Chcete-li otevřít okno prostředí Python, vyberte **zobrazení > ostatní okna > prostředí Python** příkazu nabídky nebo klikněte pravým tlačítkem **prostředí Python** uzel pro projekt v Průzkumníku řešení a Vyberte **zobrazení všech prostředí Python**:
 
-1. Vyberte **zobrazení > ostatní okna > prostředí Python** příkazu nabídky.
-1. Klikněte pravým tlačítkem myši **prostředí Python** pro projekt v Průzkumníku řešení a vyberte **zobrazení všech prostředí Python**:
-
-    ![Zobrazit všechna prostředí příkazu v Průzkumníku řešení](media/environments-view-all.png)
+    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
 
 V obou případech se zobrazí okno prostředí Python jako karty na stejné úrovni do Průzkumníka řešení:
 
 ![Okno prostředí Python](media/environments-default-view.png)
 
-Výše uvedený příklad ukazuje, že Python 3.4 (32bitová verze CPython) je nainstalována spolu s 32bitové a 64bitové verze IronPython 2.7. V takovém případě je výchozí prostředí tučným Python 3.4, který se používá pro všechny nové projekty. Pokud nevidíte žádné prostředí uvedené, znamená to, že jste nainstalovali nástroje Python Tools pro sadu Visual Studio v sadě Visual Studio 2015 nebo dřívější, ale nebyly nainstalovány překladač Pythonu (viz [zvolíte a instalace Python překladače](#selecting-and-installing-python-interpreters) výše).
+Výše uvedený příklad ukazuje, že Python 3.4 (32bitová verze CPython) je nainstalována spolu s 32bitové a 64bitové verze IronPython 2.7. Výchozí prostředí tučným je Python 3.4, který se používá pro všechny nové projekty. Pokud nevidíte žádné prostředí uvedené, znamená to, že jste nainstalovali nástroje Python Tools pro sadu Visual Studio v sadě Visual Studio 2015 nebo dřívější, ale nebyly nainstalovány překladač Pythonu (viz [zvolíte a instalace Python překladače](#selecting-and-installing-python-interpreters) výše). **+ Vlastní...**  příkaz umožňuje [vytvoření prostředí pro existující překladač](#create-an-environment-for-an-existing-interpreter).
 
-> [!Tip]
-> Když **prostředí Python** prostředí jsou uvedené v horní části a různé karty v dolní části, je omezený, jako v příkladu nahoře. Okno dostatečně zvětšující však změny široké zobrazení, které možná pohodlnější pro práci s.
->
-> ![Zobrazení v okně rozšířit prostředí Python](media/environments-expanded-view.png)
+Napravo od jednotlivých uvedených prostředí je ovládací prvek, které se otevře okno s interaktivní pro prostředí. Může se zobrazit další ovládací prvek se aktualizuje databázi IntelliSense pro prostředí.
+
+Pod seznamem prostředí je selektor rozevíracího seznamu pro **přehled**, **balíčky**, a **IntelliSense** možnosti popsané dál v této části. Pokud rozbalíte **prostředí Python** okno dost široké, tyto možnosti se zobrazují jako karet, které možná pohodlnější pro práci s:
+
+![Zobrazení v okně rozšířit prostředí Python](media/environments-expanded-view.png)
 
 > [!Note]
 > I když Visual Studio respektuje možnost balíčky systému lokality, neposkytuje způsob, jak změnit z Visual Studia.
 
+Video Úvod do správy prostředí v sadě Visual Studio, najdete v části [Správa prostředí Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (Microsoft Virtual Academy, 2m35s).
+
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
+
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>Vytvoření prostředí pro existující překladač
 
-Visual Studio normálně vyhledá nainstalované překladač Pythonu kontrolou registru (následující [období 514 - Python registrace v registru Windows](https://www.python.org/dev/peps/pep-0514/)). Ale Visual Studio nemusí být pokud překladač je nainstalován v nestandardním způsobem. V takových případech můžete odkazovat Visual Studio přímo překladač následujícím způsobem:
+Pokud Visual Studio není vyhledat překladač (například když je nainstalovaná v nestandardním umístění), můžete vytvořit a následuje prostředí jako:
 
 1. Vyberte **+ vlastní...**  v [okno prostředí Python](#managing-python-environments-in-visual-studio), který vytváří nové prostředí a otevře [ **konfigurace** kartě](#configure-tab) popsané dál.)
 
@@ -99,7 +105,7 @@ Visual Studio normálně vyhledá nainstalované překladač Pythonu kontrolou r
 
 ### <a name="moving-an-existing-interpreter"></a>Přesunutí existující překladač
 
-Pokud přesouváte existující překladač do nového umístění v systému souborů, Visual Studio nerozpozná automaticky změnu. Ruční kroky jsou nezbytné k aktualizaci seznamu v okně prostředí:
+Pokud přesouváte existující překladač do nového umístění v systému souborů, Visual Studio automaticky nerozpozná změnu a jeho prostředí musíte aktualizovat ručně:
 
 - Pokud jste původně vytvořili prostředí pro tento překladač, upravte prostředí tak, aby odkazoval na nové umístění.
 
@@ -116,6 +122,7 @@ Poskytuje základní informace a příkazy pro prostředí:
 | Nastavit jako výchozí pro nové projekty toto prostředí | Nastaví active prostředí, které může způsobit, že Visual Studio se stručně přestane reagovat při načítání databázi IntelliSense. Prostředí s mnoha balíčky může být po delší dobu reagovat. |
 | Navštívit webovou stránku distributorovi | Otevře prohlížeč na adresu URL od distribuci jazyka Python. Python 3.x, například přejde k python.org. |
 | Otevřete okno interaktivní | Otevře se [interaktivních okna (REPL)](interactive-repl.md) pro toto prostředí v sadě Visual Studio použití žádné [spouštěcí skripty (viz níže)](#startup-scripts). |
+| Prozkoumat interaktivní skripty | V tématu [spouštěcí skripty](#startup-scripts). |
 | Použití IPython interaktivním režimu | Pokud nastavíte, otevře se okno interaktivní s IPython ve výchozím nastavení. Tato povoleno vložené ukazuje zeměpisný a rozšířené syntaxe IPython například `name?` chcete zobrazit nápovědu a `!command` pro příkazy prostředí. Tato možnost se doporučuje při použití distribuci Anaconda, jako je vyžaduje další balíčky. Další informace najdete v tématu [pomocí IPython v okně interaktivní](interactive-repl-ipython.md). |
 | Otevřete v prostředí PowerShell | Spustí překladač v příkazové okno prostředí PowerShell. |
 | (Složky odkazů) | Poskytují rychlý přístup k prostředí nástroje instalační složku, překladač python.exe a pythonw.exe překladač. První otevře v Průzkumníku Windows, dvou otevřete okno konzoly. |
@@ -149,7 +156,7 @@ Pokud se zobrazí, obsahuje podrobnosti, jak je popsáno v následující tabulc
 
 ### <a name="pip-tab"></a>Karta PIP
 
-Spravuje balíčky nainstalované v prostředí, což umožňuje také vyhledat a nainstalovat nové (včetně závislostí). Hledání filtry vaší aktuálně nainstalovaných balíčků a [úložiště PyPI](https://pypi.python.org). Můžete také přímo zadat libovolný `pip install` příkaz do vyhledávacího pole, včetně příznaky, jako například `--user` nebo `--no-deps`.
+Spravuje balíčky nainstalované v prostředí, což umožňuje hledat a instalovat nové (včetně závislostí). Hledání filtry vaší aktuálně nainstalovaných balíčků a [úložiště PyPI](https://pypi.python.org). Můžete také přímo zadat libovolný `pip install` příkaz do vyhledávacího pole, včetně příznaky, jako například `--user` nebo `--no-deps`.
 
 ![Karta pip prostředí Python](media/environments-pip-tab.png)
 
@@ -175,13 +182,7 @@ Databáze obsahuje metadata pro všechny prostředí knihovny a zvyšuje rychlos
 
 Knihovny, pro které nebyla kompilována data jsou označené **!**; Pokud prostředí s databáze není kompletní, **!** také se zobrazí vedle sebe v seznamu hlavní prostředí.
 
-## <a name="global-environments"></a>Globální prostředí
-
-Globální (nebo systémové) prostředí jsou k dispozici pro všechny projekty na počítači. Sada Visual Studio automaticky obvykle zjistí globální prostředí a lze zobrazit v [okno prostředí Python](#managing-python-environments-in-visual-studio). Pokud ne, můžete přidat prostředí ručně pomocí této stejného časového období.
-
-Visual Studio používá výchozí prostředí pro všechny nové projekty pro provádění, ladění, kontrola syntaxe, zobrazování, importu a dokončování člen a další úlohy, které vyžadují prostředí. Změna výchozího prostředí má vliv na všechny projekty, ve kterých nebylo [specifické pro projekt prostředí](#project-specific-environments) přidali, jak je popsáno dále.
-
-## <a name="project-specific-environments"></a>Specifické pro projekt prostředí
+## <a name="selecting-an-environment-for-a-project"></a>Výběr prostředí pro projekt
 
 Specifické pro projekt prostředí Ujistěte se, že projektu vždy běží v prostředí s konkrétní, ignoruje prostředí globální výchozí. Například pokud prostředí výchozí globální CPython, ale vyžaduje projektu IronPython a některé knihovny, které nejsou nainstalované v globální prostředí, prostředí specifické pro projekt je nezbytné.
 
@@ -207,13 +208,7 @@ Chcete-li nainstalovat nové balíčky, klikněte pravým tlačítkem na prostř
 > [!Tip]
 > Je běžné situace, kde pip nepodaří nainstalovat balíček, pokud balíček obsahuje zdrojový kód pro nativní součásti v `*.pyd` soubory. Bez požadovaná verze sady Visual Studio nainstalována nelze zkompilovat pip těchto součástí. Chybová zpráva zobrazená v této situaci je `error: Unable to find vcvarsall.bat`. `easy_install`často je možné stáhnout předem kompilovaném binární soubory, a můžete si stáhnout vhodný kompilátoru pro starší verze jazyka Python z [http://aka.ms/VCPython27](http://aka.ms/VCPython27). Další podrobnosti najdete v tématu [řešení problémů s problémové z "nelze najít vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) na Python tools blogu týmu.
 
-## <a name="virtual-environments"></a>Virtuální prostředí
-
-Protože balíčky nainstalované do globální prostředí jsou k dispozici na všechny projekty, které ho používají, je v konfliktu může dojít, pokud dva projekty vyžadují Nekompatibilní balíčky nebo různé verze stejného balíčku. Aby nedošlo ke konfliktům, Visual Studio poskytuje možnost vytvářet *virtuální prostředí*, které jsou obvykle specifické do projektu.
-
-Jako další prostředí Python virtuálního prostředí se skládá z překladač Pythonu, knihovny a sadu balíčků. V takovém případě ale virtuálního prostředí používá překladač a knihovna z jedné globální prostředí (za předpokladu, že podporuje virtuální prostředí), ale jeho balíčky jsou oddělené a izolované od na globální a všechny ostatní virtuální prostředí. Tato izolace znovu zabraňuje konflikty a minimalizuje virtuální prostředí nároky na přibližnou velikost jeho balíčků. 
-
-Vytvoření virtuálního prostředí:
+## <a name="creating-virtual-environments"></a>Vytvoření virtuálního prostředí
 
 1. Klikněte pravým tlačítkem na **prostředí Python** v Průzkumníku řešení a vyberte **přidat virtuální prostředí...** , který spustí následující:
 
@@ -231,11 +226,11 @@ Existující virtuální prostředí se dá přidat taky kliknutím pravým tla�
 
 Po přidání virtuálního prostředí do projektu se zobrazí v **prostředí Python** okno, můžete ji aktivujete jako jakékoli jiné prostředí, a můžete spravovat své balíčky. Pravým tlačítkem a vyberete **odebrat** buď odebere odkaz na prostředí, nebo odstraní prostředí a všechny jeho soubory na disku (ale ne základní překladač).
 
-Všimněte si, že jednou z nevýhod virtuální prostředí je, že budou obsahovat cesty k souborům pevně a proto nelze snadno být sdílené nebo přenosu na jiné počítače vývoj. Naštěstí můžete použít `requirements.txt` souboru, jak je popsáno v následující části.
+Všimněte si, že jednou z nevýhod virtuální prostředí je, že budou obsahovat cesty k souborům pevně a proto nelze snadno být sdílené nebo přenosu do jiných počítačů vývoj. Naštěstí můžete použít `requirements.txt` souboru, jak je popsáno v další části, kde umožnit příjemcům projektu snadno obnovit prostředí.
 
-## <a name="managing-required-packages"></a>Správa požadované balíčky
+## <a name="managing-required-packages-requirementstxt"></a>Správa požadované balíčky (requirements.txt)
 
-Pokud jste sdílení projektu s ostatními, použití systému sestavení nebo plánujete [publikování do služby Microsoft Azure](template-azure-cloud-service.md), je třeba zadat externí balíčky vyžaduje. Doporučuje se používat [soubor requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) obsahující seznam příkazů pro pip, který nainstaluje požadované verze závislé balíčky.
+Pokud jste sdílení projektu s ostatními, použití systému sestavení nebo plánujete [publikování do služby Microsoft Azure](template-azure-cloud-service.md), je třeba zadat externí balíčky, které vyžaduje projekt. Doporučuje se používat [soubor requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) obsahující seznam příkazů pro pip, který nainstaluje požadované verze závislé balíčky.
 
 Technicky libovolný název souboru může sloužit k sledování požadavků (pomocí `-r <full path to file>` při instalaci balíčku), ale Visual Studio poskytuje konkrétní podporu pro `requirements.txt`:
 
@@ -286,17 +281,18 @@ Cleaning up...
 
 ## <a name="search-paths"></a>Cesty hledání
 
-S typickému využití Python `PYTHONPATH` proměnnou prostředí (nebo `IRONPYTHONPATH`atd) poskytuje výchozí cesta hledání pro soubory modulu. To znamená, když použijete `import <name>` prohlášení, Python, první hledání jeho integrované moduly pro odpovídající název a potom složka hledání obsahující Python kódu je spouštěno, pak prohledá "Cesta pro hledání modulu" podle definice příslušné prostředí Proměnná. (V tématu [Path hledání modulu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) a [proměnné prostředí](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) v základní dokumentace Python.)
+S typickému využití Python `PYTHONPATH` proměnnou prostředí (nebo `IRONPYTHONPATH`atd) poskytuje výchozí cesta hledání pro soubory modulu. To znamená, když použijete `from <name> import...` nebo `import <name>` prohlášení, Python prohledává v pořadí pro odpovídajícím názvem následujících umístěních:
 
-Proměnné prostředí path hledání, ale je ignorován v sadě Visual Studio, i když je nastavená pro celý systém. Je ignorován ve skutečnosti, přesněji *protože* je nastavena pro celý systém a proto vyvolá určité otázek, které nelze automaticky zodpovězeny: odkazovaný moduly, které jsou určené výhradně pro Python 2.7 nebo Python 3.3? Budou se přepsat standardní knihovna moduly? Vývojář si je vědoma toto chování nebo je škodlivý zneužití pokus?
+1. Integrované moduly jazyka Python.
+1. Složka obsahující kód Python, které používáte.
+1. "Modul vyhledávání cestu" jako definovanou proměnnou prostředí použít. (V tématu [Path hledání modulu](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) a [proměnné prostředí](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) v základní dokumentace Python.)
 
-Podpora v jazyce Python v sadě Visual Studio tak poskytuje i prostředky ke specifikaci cest hledání přímo v prostředí a projekty. Cesty hledání se předávají jako hodnotu `PYTHONPATH` (nebo ekvivalentního) při ladění nebo spuštění skriptu ze sady Visual Studio. Přidáním cesty hledání Visual Studio zkontroluje knihovny v těchto umístěních a vytvoří databáze IntelliSense pro ně (vytváření, ke které databáze může chvíli trvat v závislosti na počtu knihovny).
+Visual Studio ignoruje proměnné prostředí path hledání, ale i v případě, že proměnná je nastavená pro celý systém. Je ignorován ve skutečnosti, přesněji *protože* je nastavena pro celý systém a proto vyvolá určité otázek, které nelze automaticky zodpovězeny: odkazovaný moduly, které jsou určené výhradně pro Python 2.7 nebo Python 3.3? Budou se přepsat standardní knihovna moduly? Vývojář si je vědoma toto chování nebo je škodlivý zneužití pokus?
 
-Chcete-li přidat cestu vyhledávání, klikněte pravým tlačítkem na **cesty hledání** položky v Průzkumníku řešení, vyberte **přidat složku do cesty pro hledání...** a vyberte složku, kterou chcete zahrnout. Tato cesta je používána pro jakékoli prostředí přidružený k projektu.
+Visual Studio tak poskytuje i prostředky ke specifikaci cest hledání přímo v prostředí a projekty. Kód, který můžete spustit nebo ladění v sadě Visual Studio obdrží cesty hledání v hodnotě `PYTHONPATH` (a ostatní ekvivalentní proměnné). Přidáním cesty hledání Visual Studio zkontroluje knihovny v těchto umístěních a vytvoří databáze IntelliSense pro ně (vytváření, ke které databáze může chvíli trvat v závislosti na počtu knihovny).
+
+Chcete-li přidat cestu vyhledávání, klikněte pravým tlačítkem na **cesty hledání** položky v Průzkumníku řešení, vyberte **přidat složku do cesty pro hledání...** a vyberte složku, kterou chcete zahrnout. Tato cesta je používána pro jakékoli prostředí přidružený k projektu. (Může se zobrazit chyby Pokud prostředí je založena na Python 3 a pokusíte se do přidat cestu vyhledávání modulů Python 2.7.)
 
 Soubory s `.zip` nebo `.egg` rozšíření lze také přidat jako cesty hledání tak, že vyberete **přidat archivu Zip do cesty pro hledání...** . Stejně jako u složky, obsah tyto soubory jsou kontrolovány a k dispozici pro technologii IntelliSense.
 
-> [!Note]
-> Je možné přidat cestu vyhledávání modulů Python 2.7, když používáte Python 3.3 a mohou zobrazit v důsledku chyby.
-
-Pokud používáte pravidelně stejné cesty pro hledání a obsah se často nemění, může být efektivnější k její instalaci do vaší lokality balíčky složky. Ho je pak možné analyzovat a uloženy v databázi IntelliSense, je vždycky být přidružen prostředí určený a nevyžaduje cesta hledání přidávaného pro každý projekt.
+Pokud používáte pravidelně stejné cesty pro hledání a obsah se často nemění, může být efektivnější k její instalaci do vaší lokality balíčky složky. Cesta hledání se pak analyzují a uloženy v databázi IntelliSense, je vždycky být přidružen prostředí určený a nevyžaduje cesta hledání mají být přidány do každého projektu.

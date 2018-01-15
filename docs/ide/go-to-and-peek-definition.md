@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio přejděte do definice a funkce Náhled definice | Microsoft Docs"
+title: "Zobrazení definice typů v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 01/10/2018
 ms.reviewer: 
@@ -8,27 +8,28 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- code editor, go to definition
-- code editor, peek definition
+- code editor, view definition
 - go to definition
 - peek definition
+- type definition [Visual Studio]
+- member definition [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 967b5132ac29c7b6444d32703b8340d17f8b5edb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/13/2018
 ---
-# <a name="go-to-definition-and-peek-definition"></a>Přejděte do definice a funkce Náhled definice
+# <a name="view-type-and-member-definitions"></a>Definice zobrazení typu a členu
 
-Přejít k definici a prohlížení definice funkce umožňují snadno zobrazit definici typ nebo člen.
+Vývojáři často potřebují zobrazit zdrojový kód definice pro typy nebo členy třídy, které používají v svůj kód. V sadě Visual Studio přejít k definici a prohlížení definice funkce umožňují snadno zobrazit definici typ nebo člen. Pokud zdrojový kód není k dispozici, zobrazí se místo toho metadat.
 
 ## <a name="go-to-definition"></a>Přechod na definici
 
-Přejít k definici funkce přejde na zdroj typ nebo člen a výsledek otevře novou záložku. Pokud se uživatel klávesnice, umístěte ukazatel myši na text někde v názvu symbolu a stiskněte klávesu **F12**. Pokud používáte myši, vyberte buď **přejít k definici** z místní nabídky nebo pomocí **Ctrl + kliknutí** funkce popsané níže.
+Přejít k definici funkce přejde na zdroj typ nebo člen a výsledek otevře novou záložku. Pokud se uživatel klávesnice, umístěte ukazatel myši na text někde v názvu symbolu a stiskněte klávesu **F12**. Pokud používáte myši, vyberte buď **přejít k definici** z místní nabídky nebo pomocí **Ctrl + kliknutí** funkcí popsaných v následující části.
 
 ### <a name="ctrl-click-go-to-definition"></a>CTRL + kliknutí přechod na definici
 
@@ -50,13 +51,26 @@ Potom stiskněte klávesu **Ctrl** (nebo libovolného modifikační klávesy je 
 
 ![Funkce Náhled definice animace](../ide/media/peek_definition.gif)
 
-Pokud jste prohlížet jinou definici z automaticky otevíraném okně, začněte s popisem cesty cesty, která můžete přejít pomocí kružnice a šipek, které jsou uvedeny výše automaticky otevřeném okně.
+Pokud jste prohlížet jinou definici z automaticky otevíraném okně, začněte s popisem cesty cesta, která můžete přejít pomocí kružnice a šipek, které se zobrazují nad automaticky otevřeném okně.
 
 Další informace najdete v tématu [postupy: zobrazení a úpravy kódu podle pomocí funkce Náhled definice (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
-## <a name="viewing-decompiled-source-definitions"></a>Definice zobrazení decompiled zdrojů
+## <a name="view-metadata-as-source-code-c"></a>Zobrazení metadat jako zdrojový kód (C#)
 
-Nové ve verzi Visual Studio 2017 verze 15,6 operací preview 2, můžete nastavit najdete decompiled zdrojovém kódu, když zvolíte možnost **přejít k definici** nebo **funkce Náhled definice** na typ nebo člen v kódu jazyka C#. Chcete-li tuto funkci zapnout, vyberte **nástroje** > **možnosti** z řádku nabídek. Potom rozbalte **textového editoru** > **C#** > **Upřesnit**a vyberte **přepínat na decompiled zdroje**.
+Při prohlížení definice typů jazyka C# nebo členy kdo má zdrojový kód není k dispozici, se místo toho zobrazí jejich metadat. Můžete zobrazit prohlášení o typy a členy, ale není jejich implementace.
+
+Při spuštění **přejít k definici** nebo **funkce Náhled definice** příkazu pro položku jejichž zdrojový kód je k dispozici, záložkách dokument, který obsahuje zobrazení, že položka metadat, zobrazí jako zdrojový kód Zobrazí se v editoru kódu. Název typu následovaný **[z metadat]**, se zobrazí na kartě dokumentu.
+
+Například pokud spustíte **přejít k definici** příkazu pro <xref:System.Console>, metadata pro <xref:System.Console> se zobrazí v editoru kódu jako zdrojový kód C#. Kód podobá jeho deklaraci, ale nyní zobrazit implementace.
+
+![Metadata jako zdroj](../ide/media/metadatasource.png "MetadataSource")
+
+> [!NOTE]
+> Při pokusu o spuštění **přejít k definici** nebo **funkce Náhled definice** příkaz pro typy nebo členy, které jsou označené jako interní sady Visual Studio nezobrazuje jako zdrojový kód, bez ohledu na to, jestli jejich metadat odkazující sestavení je přítele či nikoli.
+
+### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Zobrazit definice decompiled zdrojů místo metadata (C#)
+
+Novinka v **Visual Studio 2017 verze 15,6 operací preview 2**, můžete nastavit možnost zobrazíte decompiled zdrojového kódu při zobrazení definice jazyka C# typ nebo člen kdo má zdrojový kód je k dispozici. Chcete-li tuto funkci zapnout, vyberte **nástroje** > **možnosti** z řádku nabídek. Potom rozbalte **textového editoru** > **C#** > **Upřesnit**a vyberte **přepínat na decompiled zdroje**.
 
 ![Zobrazení decompiled definice](media/go-to-definition-decompiled-sources.png)
 

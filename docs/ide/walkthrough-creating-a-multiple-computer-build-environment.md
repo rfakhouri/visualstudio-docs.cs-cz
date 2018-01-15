@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 76b88d48b78ebab2058a2fa13feef327908f2b24
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Postup: Vytvoření prostředí pro sestavení s použitím více počítačů
 
@@ -29,7 +29,6 @@ Můžete vytvořit prostředí sestavení v rámci vaší organizace instalace s
 Tento dokument neuděluje práva k distribuci softwaru externě nebo poskytovat prostředí sestavení třetím stranám.  
   
 > Právní omezení<br /><br /> Tento dokument je poskytován na "jako-je" základ. Když jsme testovali podle kroků uvedených, Nedokážeme podrobně testování každých konfigurace. Pokusíme se s dalšími informacemi, které se naučili zachovat aktuální dokument. Informace a názory vyjádřené v tomto dokumentu včetně adres URL a dalších odkazů na internetové weby mohou změnit bez předchozího upozornění. Společnost Microsoft neposkytuje žádné záruky, vyjádřené nebo předpokládané, s ohledem na informacích uvedených v tomto poli. Můžete na sebe rizika spojená s jejím používáním.<br /><br /> Tento dokument neposkytuje jste žádná zákonná práva duševního vlastnictví produktů společnosti Microsoft. Můžete kopírovat a tento dokument použít pro interní referenční účely.<br /><br /> Nemáte žádnou povinnost poskytnout Microsoft jakékoli návrhy, komentáře nebo jinou zpětnou ("názory"), vztahující se k tomuto dokumentu. Odpojit poskytování zpětné vazby však lze v Products společnosti Microsoft a související specifikace nebo jiné dokumentace (dále souhrnně nazývané "Offerings Microsoft"), který pak vycházejí další třetí strany pro vývoj vlastních produkty. Podle toho, pokud poskytnete Microsoft Feedback na libovolnou verzi systému tento dokument nebo Offerings Microsoft na které se vztahují, souhlasíte: (a) společnosti Microsoft může volně používat, reprodukujte, licence, distribuci a jinak obchodně využívat vaši zpětnou vazbu v jakékoli aplikaci Microsoft Nabídka; (b) můžete také udělit třetím stranám bezplatně pouze ta patentová práva nutná pro povolení jiné produkty nebo rozhraní s konkrétní části Microsoft Product, které obsahují vaše zpětná vazba. a (c) vám nebude dát společnosti Microsoft zpětnou (i), ke které máte důvod se domnívat, podléhá všechny deklarace identity patentová, autorským či jiné duševní vlastnictví nebo práva jakékoli třetí strany; nebo subjektu (ii) s licenčními podmínkami, které hledat tak, aby vyžadovala zařadit všechny Microsoft Offering nebo odvozené od těchto zpětnou vazbu nebo jiné duševní vlastnictví společnosti Microsoft na licencovanou nebo jinak sdílet s jakékoli třetí strany.
-
 
 Tento návod byl ověřen vůči následující operační systémy, spuštěním nástroje MSBuild v příkazovém řádku a pomocí Team Foundation Build.  
   
@@ -47,7 +46,7 @@ Tento návod byl ověřen vůči následující operační systémy, spuštění
   
  Více počítačů prostředí nelze použít k vytvoření tyto typy aplikací:  
   
--   [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]aplikace. K vytvoření [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace, musíte nainstalovat Visual Studio v počítači sestavení.  
+-   Aplikace UWP. Pro vývoj aplikací UWP, je nutné nainstalovat Visual Studio v počítači sestavení.  
   
 -   Desktopové aplikace, které cílí na rozhraní .NET Framework 4 nebo dřívější. Pokud chcete vytvořit tyto typy aplikací, musíte nainstalovat Visual Studio nebo referenční sestavení rozhraní .NET a nástroje (ze sady Windows SDK 7.1) v počítači sestavení.  
   

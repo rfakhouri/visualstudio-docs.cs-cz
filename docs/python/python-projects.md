@@ -1,7 +1,7 @@
 ---
 title: "Python projekty v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 07/13/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,35 +12,31 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 6fe63cd9258c5baf9509bb68d4258e839ebe75f0
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 7a0e449772f0947daf6c6bc8ec67af3a7456925d
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="python-projects"></a>Projektů v jazyce Python
 
 Aplikace Python jsou obvykle definovány pomocí pouze složky a soubory, ale může být tato struktura složitá, jak je aplikace, se zvětšit a případně zahrnují automaticky generovaný soubory JavaScript pro webové aplikace a tak dále. Projekt sady Visual Studio pomáhá spravovat Tato složitost. Projekt ( `.pyproj` souboru) identifikuje všechny zdroje a soubory obsahu přidružené k projektu, obsahuje informace o sestavení pro každý soubor, udržuje informace o integraci se systémy správy zdrojového kódu a pomáhá uspořádat vaší aplikace do logické součásti.
 
-Kromě toho jsou vždy spravované projekty v sadě Visual Studio *řešení*, která může obsahovat libovolný počet projekty, které může odkazovat na sebe navzájem. Projekt Python můžete například odkazovat projektu jazyka C++ pro modul rozšíření tak, aby Visual Studio automaticky sestavení projektů C++ (v případě potřeby) při spuštění ladění projektu Python. (Obecné informace, naleznete v [řešení a projektů v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
-
 ![Projekt Python v Průzkumníku řešení](media/projects-solution-explorer.png)
 
-Visual Studio poskytuje řadu šablon projektu Python rychle nastavit počet struktury aplikace, včetně šablonu pro vytvoření projektu z existujících stromovou strukturu složek a šablonu pro vytvoření projektu čistá, prázdný. V tématu [šablony projektu](#project-templates) pod pro index.
+Kromě toho jsou vždy spravované projekty v sadě Visual Studio *řešení*, která může obsahovat libovolný počet projekty, které může odkazovat na sebe navzájem. Například projekt Python, můžete odkazovat projektu jazyka C++, která implementuje modul rozšíření. S tuto relaci sady Visual Studio automaticky sestavení projektu C++ (v případě potřeby) při spuštění ladění projektu Python. (Obecné informace, naleznete v [řešení a projektů v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).)
 
-V tomto tématu:
+Visual Studio poskytuje řadu šablon projektu Python rychle nastavit počet struktury aplikace, včetně šablonu pro vytvoření projektu z existujících stromovou strukturu složek a šablonu pro vytvoření projektu čistá, prázdný. V tématu [šablony projektu](#project-templates) pro index.
 
-- [Přidávání souborů, přiřazení spouštění souborů a nastavení prostředí](#adding-files-assigning-a-startup-file-and-setting-environments)
-- [Šablony projektů](#project-templates)
-- [Připojené soubory](#linked-files)
-- [Odkazy](#references)
+<a name="lightweight-usage-project-free"></a>
 
-< a name = "lightweight využití projektu – bez"</a>
 > [!Tip]
-> I bez na projekt sady Visual Studio pracuje s kód Python, jak můžete otevřít Python souboru samostatně a získejte automatické doplňování, IntelliSense a ladění (v editoru pravým tlačítkem myši a výběrem **spuštění [s | bez] ladění**). Protože takový kód vždy používá výchozího globálního prostředí, ale může se zobrazit nesprávný dokončování nebo chyby Pokud kód je určená pro jinou prostředí. Kromě toho Visual Studio analyzuje všechny soubory a balíčky v složky, ve kterém je otevřen jeden soubor, který může spotřebovat značnou část času procesoru.
+> I bez projektu Visual Studio funguje dobře s kódem jazyka Python. Například můžete otevřít Python souboru samostatně a získejte automatické doplňování, IntelliSense a ladění (v editoru pravým tlačítkem myši a výběrem **spuštění [s | bez] ladění**). Protože takový kód vždy používá výchozího globálního prostředí, ale může se zobrazit nesprávný dokončování nebo chyby Pokud kód je určená pro jinou prostředí. Kromě toho Visual Studio analyzuje všechny soubory a balíčky v složky, ve kterém je otevřen jeden soubor, který může spotřebovat značnou část času procesoru.
 >
-> Je jednoduché vytvořit projekt sady Visual Studio z existujícího kódu, jak je popsáno níže v [vytvoření projektu z existujících souborů](#creating-a-project-from-existing-files).
+> Je jednoduché vytvořit projekt sady Visual Studio z existujícího kódu, jak je popsáno v [vytvoření projektu z existujících souborů](#creating-a-project-from-existing-files).
 
 Úvod do projektů v jazyce Python v sadě Visual Studio, najdete v části video [získávání kód Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Microsoft Virtual Academy, 2m17s).
 
@@ -50,14 +46,14 @@ Informace v tématu starší video [podrobné informace: Správa zdrojového kó
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Přidávání souborů, přiřazení spouštění souborů a nastavení prostředí
 
-Když budete vyvíjet aplikace, musíte obvykle do projektu přidejte nové soubory různých typů. Přidání tyto soubory se snadno provádí kliknutím pravým tlačítkem na projekt a výběrem **Přidat > existující položka...** , pomocí kterého jste soubor, který chcete přidat, procházet nebo **Přidat > novou položku...** , který zobrazí dialogové okno s různými šablony položek, včetně souborů prázdný python, třída python, testování částí a různé soubory související s webových aplikací. Doporučujeme, abyste mohli prozkoumat tyto možnosti se testovacího projektu se dozvíte, co je k dispozici ve vaší verzi sady Visual Studio.
+Když budete vyvíjet aplikace, musíte obvykle do projektu přidejte nové soubory různých typů. Přidání tyto soubory se provádí kliknutím pravým tlačítkem na projekt a výběrem **Přidat > existující položka...** . pomocí které můžete vyhledat soubor, který chcete přidat, nebo **Přidat > novou položku...** , který zobrazí dialogové okno s různými šablon položek. Šablony zahrnují soubory prázdný python, třídu python, testování částí a různé soubory vztahující se k webovým aplikacím. Tyto možnosti se testovacího projektu se dozvíte, co je k dispozici ve vaší verzi sady Visual Studio můžete prozkoumat.
 
-Každý projekt Python má jeden soubor přiřazené spuštění zobrazeny tučným v Průzkumníku řešení. Spouštěcí soubor je soubor, který se spustí při spuštění ladění (F5 nebo **ladění > Spustit ladění**) nebo spusťte projekt v okně interaktivní (Shift + Alt + F5 nebo **ladění > spustit projekt v interaktivní Python**). Chcete-li ji změnit, klikněte pravým tlačítkem na nový soubor a vyberte **nastavit jako spouštěcí soubor**.
+Každý projekt Python má jeden soubor přiřazené spuštění zobrazeny tučným v Průzkumníku řešení. Spouštěcí soubor je soubor, který se spustí při spuštění ladění (F5 nebo **ladění > Spustit ladění**) nebo při spuštění projektu v okně interaktivní (Shift + Alt + F5 nebo **ladění > spustit projekt v Pythonu Interaktivní**). Chcete-li ji změnit, klikněte pravým tlačítkem na nový soubor a vyberte **nastavit jako spouštěcí soubor**.
 
 > [!Tip]
-> Když odeberete vybranou spouštěcí soubor z projektu a nevybírejte nový, pokusu o spuštění projektu výsledky v Python výstup okna zobrazování ale pak a jindy mizí téměř okamžitě. Pokud narazíte na toto chování, zkontrolujte, že budete mít soubor přiřazené spuštění. Navíc pokud chcete zachovat ve výstupním okně Otevřít v takových případech, klikněte pravým tlačítkem na projekt, vyberte možnost **vlastnosti**, vyberte **ladění** kartě a pak přidejte `-i` k **překladač argumenty** pole. Tento argument způsobí, že překladač uvést do režimu interaktivní po dokončení programu, a tím zprovozní okno Otevřít zadejte Ctrl + Z, zadejte ukončíte.
+> Když odeberete vybranou spouštěcí soubor z projektu a nevybírejte nový, spuštění projektu výsledky v Python výstup okna zobrazování, ale pak zmizení téměř okamžitě. Pokud narazíte na toto chování, zkontrolujte, že budete mít soubor přiřazené spuštění. Navíc pokud chcete zachovat ve výstupním okně Otevřít v takových případech, klikněte pravým tlačítkem na projekt, vyberte možnost **vlastnosti**, vyberte **ladění** kartě a pak přidejte `-i` k **překladač argumenty** pole. Tento argument způsobí, že překladač uvést do režimu interaktivní po dokončení programu, a tím zprovozní okno Otevřít zadejte Ctrl + Z, zadejte ukončíte.
 
-Nový projekt je vždy přidružen prostředí výchozí globální Python. Chcete-li přidružit projektu do různých prostředí (včetně virtuální prostředí), klikněte pravým tlačítkem na s **prostředí Python** uzlu v projektu, vyberte **prostředí Python přidat nebo odebrat**, a Vyberte ty, které chcete. Chcete-li změnit aktivního prostředí, klikněte pravým tlačítkem na požadované prostředí a vyberte **aktivovat prostředí** jak je uvedeno níže. Další podrobnosti najdete v tématu [prostředí Python](python-environments.md#project-specific-environments).
+Nový projekt je vždy přidružen prostředí výchozí globální Python. Chcete-li přidružit projektu do různých prostředí (včetně virtuální prostředí), klikněte pravým tlačítkem na s **prostředí Python** uzlu v projektu, vyberte **prostředí Python přidat nebo odebrat**, a Vyberte ty, které chcete. Chcete-li změnit aktivního prostředí, klikněte pravým tlačítkem na požadované prostředí a vyberte **aktivovat prostředí** jak je uvedeno níže. Další informace najdete v tématu [prostředí Python](python-environments.md#selecting-an-environment-for-a-project).
 
 ![Aktivace prostředí pro projekt Python](media/projects-activate-environment.png)
 
@@ -74,7 +70,7 @@ Následující tabulka shrnuje šablony dostupné na Visual Studio 2017 (ne vše
 | Šablony | Popis |
 | --- | --- |
 | [Z existujícího kódu jazyka Python](#creating-a-project-from-existing-files) | Projekt sady Visual Studio vytvoří z existujícího kódu Python ve struktuře složek.  |
-| Aplikace Python | Struktura základního projektu pro novou aplikaci Python s jeden, prázdný zdrojového souboru. Ve výchozím projektu spouští v konzole překladač výchozí globální prostředí, které můžete změnit [přiřazení do různých prostředí](python-environments.md#project-specific-environments). |
+| Aplikace Python | Struktura základního projektu pro novou aplikaci Python s jeden, prázdný zdrojového souboru. Ve výchozím projektu spouští v konzole překladač výchozí globální prostředí, které můžete změnit [přiřazení do různých prostředí](python-environments.md#selecting-an-environment-for-a-project). |
 | [Cloudové služby Azure](template-azure-cloud-service.md) | Projekt pro cloudové služby Azure napsané v Pythonu. |
 | [Webové projekty](template-web.md) | Projekty pro webové servery založené na různé platformy, včetně charakteristické znaky Bottle, Flask a Django Flask/Jade. |
 | IronPython aplikace | Podobně jako šablona aplikací Python, ale používá IronPython ve výchozí povolení rozhraní .NET spolupráce a ve smíšeném režimu ladění s jazyky rozhraní .NET. |
@@ -83,6 +79,9 @@ Následující tabulka shrnuje šablony dostupné na Visual Studio 2017 (ne vše
 | Aplikaci IronPython Windows Forms | Struktura projektu pomocí IronPython withUI vytvoření kódu pomocí Windows Forms. Aplikace běží bez zobrazení konzoly. |
 | Aplikace na pozadí (IoT) | Podporuje nasazení projektů v jazyce Python spustit jako služby na pozadí na zařízení. Přejděte [Centrum vývojářů pro Windows IoT](https://dev.windows.com/en-us/iot) Další informace. |
 | Modul rozšíření Python | Tato šablona se zobrazí pod Visual C++, pokud jste nainstalovali **Python tools nativní vývoj** se zatížením Python ve Visual Studio 2017 (najdete v části [instalace](installation.md)). Poskytuje základní strukturu pro rozšíření C++ knihovny DLL, podobně jako co je popsáno na [vytváření rozšíření pro C++ pro jazyk Python](cpp-and-python.md). |
+
+> [!Note]
+> Protože Python je interpretovaný jazyk, Python projekty v sadě Visual Studio nepřispívají k samostatnému spustitelnému souboru jako další projekty kompilované jazyka (C#, např.). Další informace najdete v tématu [otázky a odpovědi](python-in-visual-studio.md#questions-and-answers).
 
 < a name = "vytvoření--z – stávající – soubory projektu"</a>
 
@@ -95,9 +94,9 @@ Následující tabulka shrnuje šablony dostupné na Visual Studio 2017 (ne vše
 
 ## <a name="linked-files"></a>Připojené soubory
 
-Připojené soubory jsou soubory, které začlenění do projektu, ale většinou se nacházejí mimo složky projektu aplikace. Jsou zobrazeny v Průzkumníkovi řešení jako normální soubory ikonou překryté zástupce: ![Ikona připojený soubor](media/projects-linked-file-icon.png)
+Propojené soubory jsou soubory, které jsou uvedeny do projektu, ale mimo složky projektu aplikace jsou obvykle umístěny. Jsou zobrazeny v Průzkumníkovi řešení jako normální soubory ikonou překryté zástupce: ![Ikona připojený soubor](media/projects-linked-file-icon.png)
 
-Připojené soubory jsou určené v `.pyproj` souboru pomocí normální `<Compile Include="...">` elementu. Pokud se používají mimo strukturu adresáře na relativní cestu nebo mohou být soubory explicitní odkaz zadáním jejich cesty v Průzkumníku řešení mohou být implicitní propojených souborů:
+Připojené soubory jsou určené v `.pyproj` souboru pomocí `<Compile Include="...">` elementu. Implicitní, pokud používají mimo strukturu adresáře na relativní cestu nebo explicitní, pokud používají cesty v Průzkumníku řešení jsou propojené soubory:
 
 ```xml
 <Compile Include="..\test2.py">

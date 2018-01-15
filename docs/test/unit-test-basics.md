@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 492aaa5190bb0b24e7077d3523197ff4eff6ba49
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 17029522cae96200b7bc28b0f917cc5d33f6c673
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unit-test-basics"></a>Základní informace o testech jednotek
 Zkontrolujte, že váš kód funguje podle očekávání tím vytváření a spouštění testování částí. Je volána testování, protože rozdělíte dolů funkce vašeho programu do diskrétní možností intenzivního testování chování, které můžete testovat jako jednotlivých částí *jednotky*. Visual Studio Průzkumníka testů poskytuje flexibilní a efektivní způsob, jak spustit testy částí a zobrazit jejich výsledky v sadě Visual Studio. Visual Studio nainstaluje testování architektury pro spravovaná a nativní kód částí společnosti Microsoft. Použití *framework testování částí* vytvářet testy částí, spouštění je a ohlásí výsledky tyto testy. Testování částí spusťte při provádění změn pro testování, aby váš kód stále funguje správně. Visual Studio Enterprise můžete k tomu automaticky s [Live testování částí](live-unit-testing-intro.md), který zjistí testy vliv kódu změní a běží na pozadí během psaní.
@@ -219,7 +219,7 @@ public void My_Test ()
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a>Spuštění testů Průzkumníka testů  
  Při sestavování testovacího projektu testů se zobrazí v Průzkumníku otestovat. Pokud není viditelná Průzkumníka testů, zvolte **Test** v sadě Visual Studio nabídce zvolte **Windows**a potom zvolte **Průzkumníka testů**.  
   
- ![Průzkumníka testů jednotek](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![Průzkumníka testů jednotek](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  Při spuštění, zápisu a znovu spusťte testy, výchozí zobrazení Průzkumníka testů zobrazí výsledky v skupiny **testy se nezdařilo**, **předán testy**, **přeskočen testy** a  **Nejde spustit testy**. Můžete použít záhlaví skupiny k otevření zobrazení, které se zobrazí všechny je testů v této skupině.  
   
@@ -286,7 +286,6 @@ public void My_Test ()
  K vytvoření testu řízené daty pro `AddIntegerHelper` metoda, nejdřív vytvoříme databáze Access s názvem `AccountsTest.accdb` a tabulku s názvem `AddIntegerHelperData`. `AddIntegerHelperData` Tabulka definuje sloupce, které chcete zadat první a druhý operandy přidání a ve sloupci k určení očekávaný výsledek. Počet řádků jsme vyplní s příslušnými hodnotami.  
   
 ```csharp  
-  
 [DataSource(  
     @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb",   
     "AddIntegerHelperData"  
@@ -300,8 +299,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
     int expected = Convert.ToInt32(TestContext.DataRow["Sum"]);  
     int actual = target.AddIntegerHelper(x, y);  
     Assert.AreEqual(expected, actual);  
-}  
-  
+}
 ```  
   
  S atributy metoda spustí jednou pro každý řádek v tabulce. Průzkumníka testů hlásí selhání testu pro metodu, pokud všechny iterace selže. Na panelu informací o výsledky testu pro metodu ukazuje metodu průchodu nebo selhání stav pro každý řádek dat.  

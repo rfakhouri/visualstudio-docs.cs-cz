@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: 50a2da5a92276b5ace29bdc2b0a35eaae516a3c9
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Správa Python v Azure App Service
 
 [Aplikační služba Azure](https://azure.microsoft.com/services/app-service/) je nabídku platforma jako služba pro webové aplikace, jestli jsou weby přístupných prostřednictvím prohlížeče, REST API, které používají vlastní klienti nebo událost aktivuje zpracování. App Service plně podporuje použití Python k implementaci aplikace.
 
-Přizpůsobitelné podpora Python ve službě Azure App Service je k dispozici jako sada App Service *lokality rozšíření* , každý obsahovat na konkrétní verzi modulu runtime jazyka Python. Můžete nainstalovat všechny požadované balíčky přímo do prostředí, jak je popsáno v tomto tématu. Přizpůsobením prostředí v samotné aplikaci služby nemusíte udržovat balíčků ve vašich projektů webové aplikace nebo odešlete kódem aplikace. 
+Přizpůsobitelné podpora Python ve službě Azure App Service je k dispozici jako sada App Service *lokality rozšíření* , každý obsahovat na konkrétní verzi modulu runtime jazyka Python. Můžete nainstalovat všechny požadované balíčky přímo do prostředí, jak je popsáno v tomto tématu. Přizpůsobením prostředí v samotné aplikaci služby nemusíte udržovat balíčků ve vašich projektů webové aplikace nebo odešlete kódem aplikace.
 
 > [!Tip]
 > I když služby App Service ve výchozím nastavení má Python 2.7 a Python 3.4 nainstalované v kořenové složky na serveru, nelze upravit ani instalovat balíčky v těchto prostředích, ani by měl záviset na jejich přítomnosti. Se místo toho spoléhají na rozšíření lokality, kterou řídíte, jak je popsáno v tomto tématu.
@@ -87,7 +88,7 @@ Začněte tím, že hledání úplnou cestu k rozšíření lokality `python.exe
 
 Rozšíření webu Python je nainstalována na serveru v části `d:\home` ve složce odpovídající verzi jazyka Python a architektura (kromě několik starší verze). Například Python 3.6.1 x64 je nainstalován v `d:\home\python361x64`. Úplná cesta k překladač Pythonu je pak `d:\home\python361x64\python.exe`.
 
-Pokud chcete zobrazit konkrétní cestu na App Service, vyberte **rozšíření** na stránce služby App Service zvolte rozšíření v seznamu. 
+Pokud chcete zobrazit konkrétní cestu na App Service, vyberte **rozšíření** na stránce služby App Service zvolte rozšíření v seznamu.
 
 ![Seznam přípon v Azure App Service](media/python-on-azure-extension-list.png)
 
@@ -165,7 +166,7 @@ Překladač Pythonu nainstalované prostřednictvím rozšíření lokality je p
 
 Instalovat balíčky přímo v prostředí serveru, použijte jednu z následujících metod:
 
-| Metody | Použití | 
+| Metody | Použití |
 | --- | --- |
 | [Azure App Service Kudu konzoly](#azure-app-service-kudu-console) | Nainstaluje balíčky interaktivně. Balíčky musí být čistý Python nebo souborů Wheel, musíte publikovat. |
 | [Kudu REST API](#kudu-rest-api) | Můžete použít k automatizaci instalace balíčku.  Balíčky musí být čistý Python nebo souborů Wheel, musíte publikovat. |
@@ -199,7 +200,7 @@ Instalovat balíčky přímo v prostředí serveru, použijte jednu z následuj�
     Pomocí `requirements.txt` je doporučená, protože je snadné reprodukujte vašeho balíčku přesně nastavit lokálně a na serveru. Jenom nezapomeňte, přejděte konzole po nasazení všechny změny `requirements.txt` a spusťte příkaz znovu.
 
 > [!Note]
-> Neexistuje žádné kompilátor jazyka C v App Service, takže je potřeba nainstalovat wheel pro všechny balíčky s rozšíření nativní moduly. Mnoho oblíbených balíčky zadejte vlastní souborů Wheel. Pro balíčky, které nejsou, použijte `pip wheel <package_name>` na místním vývojovém počítači a pak nahrajte kolečka na váš web. Příklad, naleznete v části [Správa požadované balíčky](python-environments.md#managing-required-packages)
+> Neexistuje žádné kompilátor jazyka C v App Service, takže je potřeba nainstalovat wheel pro všechny balíčky s rozšíření nativní moduly. Mnoho oblíbených balíčky zadejte vlastní souborů Wheel. Pro balíčky, které nejsou, použijte `pip wheel <package_name>` na místním vývojovém počítači a pak nahrajte kolečka na váš web. Příklad, naleznete v části [Správa požadované balíčky](python-environments.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>Kudu REST API
 

@@ -8,17 +8,15 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords: vs.dsltools.dsldesigner.deletebehavior
 helpviewer_keywords: Domain-Specific Language, deletion
-ms.assetid: c6bf088d-52c6-4817-af45-ddae745bb5a9
-caps.latest.revision: "23"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0eb1878df437e1767d5bfe49ce4794b5b2c243d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c51c44d47f24994e75ca91b4f4d8d7f2c9a805a6
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-deletion-behavior"></a>Přizpůsobení chování odstranění
 Odstraňování element obvykle způsobí, že související prvky také odstranit. Všechny vztahy k němu připojená a všechny podřízené elementy jsou odstraněny. Toto chování je s názvem *odstranit šíření*. Odstranění šíření, například uspořádat, zda jsou odstraněny další související prvky můžete přizpůsobit. Psaní kódu programu, se může být odstranění šíření závisí na stavu modelu. Může také způsobit jiné změny, ke kterým došlo v reakci na odstranění.  
@@ -78,7 +76,7 @@ Odstraňování element obvykle způsobí, že související prvky také odstran
 >  Pokud chcete přidat programovém kódu do vaší definice DSL, vytvořte soubor samostatné kódu v **Dsl** projektu a zápis částečné definice k posílení třídy ve složce vygenerovat kód. Další informace najdete v tématu [psaní kódu jazyka domény sestavit si](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a>Definování odstranění uzavření  
- Operace odstranění používá třídu *YourModel***DeleteClosure** k určení prvky, které chcete odstranit, zadaný počáteční výběr. Zavolá `ShouldVisitRelationship()` a `ShouldVisitRolePlayer()` opakovaného proti grafu relací. Můžete přepsat tyto metody. ShouldVisitRolePlayer je k dispozici s identitou odkaz a prvek na jednu z rolí na odkaz. Měla by vrátit jednu z následujících hodnot:  
+ Operace odstranění používá třídu *YourModel *** DeleteClosure** k určení prvky, které chcete odstranit, zadaný počáteční výběr. Zavolá `ShouldVisitRelationship()` a `ShouldVisitRolePlayer()` opakovaného proti grafu relací. Můžete přepsat tyto metody. ShouldVisitRolePlayer je k dispozici s identitou odkaz a prvek na jednu z rolí na odkaz. Měla by vrátit jednu z následujících hodnot:  
   
 -   **VisitorFilterResult.Yes**– element měla by být odstraněna a walkera by měly pokračovat a zkuste to elementu je další odkazy.  
   

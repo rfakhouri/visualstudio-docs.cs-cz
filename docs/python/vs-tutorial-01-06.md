@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: ce432a20aa451807058fc83432705e5b32440b63
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 7905a77718669dd2cef340f0f6559868237dfdd0
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="step-6-working-with-git"></a>Krok 6: Práce s Gitem
 
@@ -62,7 +64,7 @@ Blahopřejeme k dokončení tohoto kurzu na Python v sadě Visual Studio. V tomt
 
 Tady prozkoumejte koncepty a návody, včetně následujících:
 
-- [Vytváření rozšíření pro C++ pro jazyk Python](cpp-and-python.md)
+- [Vytvoření rozšíření C++ pro Python](cpp-and-python.md)
 - [Publikování do služby Azure App Service](publishing-to-azure.md)
 - [Profilace](profiling.md)
 - [Testování jednotek](unit-testing.md)

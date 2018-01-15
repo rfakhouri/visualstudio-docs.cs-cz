@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c865fd1d01f7bf0137c68010bcb850a7a8450680
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2006f565edbca8a859cd2c155645e47e083b5528
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-application-resources-net"></a>Správa prostředků aplikace (.NET)
 
@@ -48,7 +48,6 @@ Vyberte **prostředky** kartě. Pokud projekt není obsahovat jeden již, přida
 Prostředky se spravují jinak v rozhraní .NET projektů než jiné typy projektů. Další informace o prostředcích v:
 
 - Univerzální platformu Windows (UWP) aplikace, najdete v části [prostředky aplikace a systém správy prostředků](/windows/uwp/app-resources/)
-- Aplikace pro Windows 8.x, najdete v části [definování prostředky aplikace (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465228.aspx)
 - Projekty C++, najdete v části [práce se zdrojovými soubory](/cpp/windows/working-with-resource-files) a [postupy: vytvoření prostředku](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Viz také

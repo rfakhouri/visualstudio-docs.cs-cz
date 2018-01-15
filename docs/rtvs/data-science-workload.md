@@ -15,15 +15,15 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: c757f67efb26d1ca9e029447b044d9b6c6ea8a65
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c83a24cbcbe13047ef103f86c8bd81fee1506c2d
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Vědecké zpracování dat a analytických aplikací pracovního vytížení
 
-Zatížení vědecké zpracování dat a analytických aplikací v sadě Visual Studio spojuje tři jazyky a jejich odpovídajících runtime distribuce:
+Zatížení vědecké zpracování dat a analytické aplikace uvedené v instalačním programu sady Visual Studio spojuje tři jazyky a jejich odpovídajících runtime distribuce:
 
 - [R a klient Microsoft R](../rtvs/index.md)
 - [Python a Anaconda](../python/python-in-visual-studio.md)

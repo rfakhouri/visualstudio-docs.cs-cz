@@ -25,11 +25,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c1e994edfac648652876cc0b58b4b6f5ede1cccf
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: c941b196897b7d3f7a815c50fc1e0a4817d3ed74
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="managing-references-in-a-project"></a>Správa odkazů v projektu
 
@@ -61,13 +61,13 @@ Pokud zvolíte možnost změnit cílový projekty Windows 8.1 na Windows 10, naj
 
 ### <a name="extension-sdk-references"></a>Reference na rozšíření sady SDK
 
-Visual Basic, C#, C++ a JavaScript univerzální platformu Windows (UWP) aplikace, můžete odkazovat rozšíření sady SDK cílených [!INCLUDE[win81](../debugger/includes/win81_md.md)], tak dlouho, dokud tyto rozšíření sady SDK se nedoporučuje používat rozhraní API, která jsou zastaralé v systému Windows 10. Zkontrolujte, zda webu dodavatele rozšíření sady SDK a zjistěte, zda může být odkazován aplikace UWP.
+Aplikace Visual Basic, C#, C++ a JavaScript univerzální platformu Windows (UWP) můžete odkazovat rozšíření sady SDK cílených Windows 8.1, tak dlouho, dokud tyto rozšíření sady SDK se nedoporučuje používat rozhraní API, která jsou zastaralé v systému Windows 10. Zkontrolujte, zda webu dodavatele rozšíření sady SDK a zjistěte, zda může být odkazován aplikace UWP.
 
 Pokud zjistíte, že rozšíření sady SDK, se na ně odkazovat aplikace není podporována, pak je třeba provést následující kroky:
 
-1. Podívejte se na název projektu, který je příčinou chyby. Platformy, na které je cílem vašeho projektu je uvedeno v závorkách vedle názvu projektu. Například **(Windows 8.1) s názvem MyProjectName** znamená, že váš projekt **s názvem MyProjectName** je cílení na platformy verzi [!INCLUDE[win81](../debugger/includes/win81_md.md)].
+1. Podívejte se na název projektu, který je příčinou chyby. Platformy, na které je cílem vašeho projektu je uvedeno v závorkách vedle názvu projektu. Například **(Windows 8.1) s názvem MyProjectName** znamená, že váš projekt **s názvem MyProjectName** je cílení na platformy verzi Windows 8.1.
 
-2. Přejděte na webu dodavatele, který vlastní nepodporované Extension SDK a nainstalujte verzi sady SDK rozšíření se závislostmi, které jsou kompatibilní s verzí platformy, na které cílí projektu.
+1. Přejděte na webu dodavatele, který vlastní nepodporované Extension SDK a nainstalujte verzi sady SDK rozšíření se závislostmi, které jsou kompatibilní s verzí platformy, na které cílí projektu.
 
     > [!NOTE]
     > Je možné zjistit, jestli má závislosti na dalších sadách SDK rozšíření Extension SDK podle **správce odkazů**. Restartujte Visual Studio, vytvořte nový projekt aplikace UPW C# a potom klikněte pravým tlačítkem na projekt a zvolte **přidat odkaz na**. Přejděte na **Windows** kartě, pak se **rozšíření** dílčí karty a vyberte rozšíření sady SDK. Podívejte se na v pravém podokně **správce odkazů**. Pokud má závislosti, budou uvedené existuje.
@@ -75,13 +75,13 @@ Pokud zjistíte, že rozšíření sady SDK, se na ně odkazovat aplikace není 
     > [!IMPORTANT]
     > Pokud váš projekt je cílení na Windows 10 a sady SDK rozšíření nainstalovaná v předchozím kroku má závislost na balíček Microsoft Visual C++ Runtime, v14.0 na verzi Microsoft Visual C++ Runtime balíčku, který je kompatibilní s Windows 10 a je nainstalován pomocí sady Visual Studio.
 
-3. Pokud sada SDK rozšíření jste nainstalovali v předchozím kroku má závislosti na dalších sadách SDK rozšíření, přejděte do lokalit dodavatelů, kteří vlastní závislosti a nainstalujte verze tyto závislosti, které jsou kompatibilní s verzí platformy, na které je váš projekt cílení na.
+1. Pokud sada SDK rozšíření jste nainstalovali v předchozím kroku má závislosti na dalších sadách SDK rozšíření, přejděte do lokalit dodavatelů, kteří vlastní závislosti a nainstalujte verze tyto závislosti, které jsou kompatibilní s verzí platformy, na které je váš projekt cílení na.
 
-4. Restartujte Visual Studio a otevřete v aplikaci.
+1. Restartujte Visual Studio a otevřete v aplikaci.
 
-5. Klikněte pravým tlačítkem na **odkazy** uzlu v projektu, který způsobil chybu a zvolte **přidat odkaz na**.
+1. Klikněte pravým tlačítkem na **odkazy** uzlu v projektu, který způsobil chybu a zvolte **přidat odkaz na**.
 
-6. Klikněte na tlačítko **Windows** kartu a potom **rozšíření** dílčí, poté zrušte zaškrtnutí políček pro původní sady SDK rozšíření a zkontrolujte políček pro nové sady SDK rozšíření. Click **OK**.
+1. Klikněte na tlačítko **Windows** kartu a potom **rozšíření** dílčí, poté zrušte zaškrtnutí políček pro původní sady SDK rozšíření a zkontrolujte políček pro nové sady SDK rozšíření. Click **OK**.
 
 ## <a name="adding-a-reference-at-design-time"></a>Přidání odkazu na v době návrhu
 

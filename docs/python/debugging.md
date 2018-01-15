@@ -12,12 +12,14 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: 71ab9d5c58ebb76ad158b9f9e66b35b4732c1d4e
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: 9a260001e661c9d6d0f9a1b472caa07c25637ff7
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="debugging-your-python-code"></a>Ladění kódu jazyka Python
 
@@ -36,7 +38,7 @@ V tomto tématu:
 Také najdete v následujících tématech ladění konkrétní scénáře:
 
 - [Vzdálené ladění napříč platformami](debugging-cross-platform-remote.md)
-- [Azure vzdálené ladění](debugging-azure-remote.md)
+- [Vzdálené ladění Azure](debugging-azure-remote.md)
 - [Ladění ve smíšeném režimu Python/C++](debugging-mixed-mode.md)
 - [Symboly pro ladění ve smíšeném režimu](debugging-symbols-for-mixed-mode.md)
 

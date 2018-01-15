@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
 ms.workload: multiple
-ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 67927715cc88373040d1820f70faaf70198388c1
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="quickstart-coding-in-the-editor"></a>Rychlý úvod: kódování v editoru
 
@@ -135,7 +135,7 @@ Editoru Visual Studio snadno Zkontrolujte definici typu, metoda atd. Jedním ze 
 
 ## <a name="refactoring-a-name"></a>Refaktoring název
 
-Nikdo poprvé získá kód doprava a jednu z akcí, které chcete změnit je název proměnné nebo metoda. Už si můžete vyzkoušet Visual Studio [refaktoring](../ide/refactoring-code-generation-quick-actions.md#refactoring) funkce přejmenovat `_words` proměnnou `words`.
+Nikdo poprvé získá kód doprava a jednu z akcí, které chcete změnit je název proměnné nebo metoda. Už si můžete vyzkoušet Visual Studio [refaktoring](../ide/refactoring-in-visual-studio.md) funkce přejmenovat `_words` proměnnou `words`.
 
 1. Umístěte ukazatel myši nad definice `words` proměnnou a zvolte **přejmenovat...**  z klikněte pravým tlačítkem nebo místní nabídky nebo klikněte na tlačítko **Ctrl**+**R**, **Ctrl**+**R**.
 
@@ -155,11 +155,11 @@ Po dokončení tento rychlý start pro editoru Visual Studio! Dále můžete vyz
 
 ## <a name="see-also"></a>Viz také
 
-[Rychlý úvod: první pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
-[Rychlý úvod: přizpůsobení Visual Studio IDE a Editor](../ide/quickstart-personalize-the-ide.md)  
-[Rychlý úvod: projekty a řešení](../ide/quickstart-projects-solutions.md)  
+[Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
+[Rychlý úvod: Přizpůsobení Visual Studio IDE a editor](../ide/quickstart-personalize-the-ide.md)  
+[Rychlý úvod: Projekty a řešení](../ide/quickstart-projects-solutions.md)  
 [Fragmenty kódu](../ide/code-snippets.md)  
 [Sbalení](../ide/outlining.md)  
 [Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)  
-[Refactoring](../ide/refactoring-code-generation-quick-actions.md#refactoring)  
-[Používání atributu IntelliSense](../ide/using-intellisense.md)  
+[Refactoring](../ide/refactoring-in-visual-studio.md)  
+[Používání atributu IntelliSense](../ide/using-intellisense.md)

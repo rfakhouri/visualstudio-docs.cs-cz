@@ -1,7 +1,7 @@
 ---
-title: "Python v sadě Visual Studio | Microsoft Docs"
+title: "Python v sadě Visual Studio (Windows) | Microsoft Docs"
 ms.custom: 
-ms.date: 09/26/2017
+ms.date: 01/09/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-python
@@ -12,27 +12,29 @@ caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: python
-ms.openlocfilehash: f91fcfa7e0ea7247eb91a3512f7abd64d8684809
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- python
+- data-science
+ms.openlocfilehash: bcfe9502cc2d5d83f1b4cac24c71459ca5acb230
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
-# <a name="working-with-python-in-visual-studio"></a>Práce s Python v sadě Visual Studio
+# <a name="working-with-python-in-visual-studio-windows"></a>Práce s Python v sadě Visual Studio (Windows)
 
 Python je oblíbených programovací jazyk, který je spolehlivá, flexibilní, usnadňuje další, bez použití na všech operačních systémech a nepodporuje komunity silné vývojářů a mnoho volné knihovny. Python podporuje všechny způsobů vývoje, včetně webových aplikací, webové služby, aplikace klasické pracovní plochy, skriptování a vědecké výpočty a používá mnoho vysoké školy, vědců, běžné vývojáři a profesionální vývojáře agentem. Další informace o jazyce na [python.org](https://www.python.org) a [Python pro začátečníky](https://www.python.org/about/gettingstarted/).
 
-Visual Studio v systému Windows poskytuje [open-source](https://github.com/Microsoft/ptvs) podporu pro jazyk Python prostřednictvím vývoj Python a vědecké zpracování dat úlohy (Visual Studio 2017) a volné Python Tools pro Visual Studio rozšíření (Visual Studio 2015 a starší). Python v současné době nepodporuje v sadě Visual Studio pro Mac, ale je k dispozici na Mac a Linux pomocí Visual Studio Code (viz [Q & A pod](#questions-and-answers).
+Visual Studio v systému Windows poskytuje [open-source](https://github.com/Microsoft/ptvs) podporu pro jazyk Python prostřednictvím vývoj Python a vědecké zpracování dat úlohy (Visual Studio 2017) a volné Python Tools pro Visual Studio rozšíření (Visual Studio 2015 a starší). Python v současné době nepodporuje v sadě Visual Studio pro Mac, ale je k dispozici na Mac a Linux pomocí Visual Studio Code (viz [otázky a odpovědi](#questions-and-answers)).
 
 Abyste mohli začít:
 
 - Postupujte podle [pokyny k instalaci](installation.md) nastavit zatížení Python
 - Přejděte prostřednictvím jednoho nebo více Quickstarts k vytvoření projektu. Pokud si nejste jisti, začínat [vytvořte projekt ze šablony](quickstart-02-project-from-template.md).
 - Postupujte podle [práce s Python v sadě Visual Studio](vs-tutorial-01-01.md) kurz prostředí úplného začátku do konce.
-- Potom pomocí níže uvedených odkazů a prozkoumejte Python související funkce a možnosti sady Visual Studio, sám sebe.
+- Potom pomocí odkazů v následující tabulce a prozkoumejte Python související funkce a možnosti sady Visual Studio, sám sebe.
 
-| Funkce | Popis | Dokumentaci obecné Visual Studio | 
+| Funkce | Popis | Dokumentaci obecné Visual Studio |
 | --- | --- | --- |
 | [Systém projektu Visual Studio](python-projects.md) | Implicitně vybere si strukturu složek Python kódu současně explicitní řízení k identifikaci kódu aplikace, testovacího kódu sestavení webové stránky, JavaScript, skripty atd. | [Řešení a projekty v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Šablony projektů](python-projects.md#project-templates) | Rychle vytvoří strukturu projektu pro konzolu, web, Azure, vědecké zpracování dat a jiné typy projektů | [Šablony sady Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
@@ -49,7 +51,6 @@ Také zahrnuje úlohy Python [Azure SDK pro jazyk Python](azure-sdk-for-python.m
 Video úvod, najdete v článku krátké [Python Tools pro Visual Studio](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) kurzu na webu Microsoft Virtual Academy (asi 22 minut celkový). 
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
-
 
 ## <a name="questions-and-answers"></a>Otázky a odpovědi
 
@@ -176,25 +177,24 @@ Podporované funkce sady Visual Studio verze a edice:
 | Ladění testu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 <br/>
 
-1. Podpora Git pro sadu VS 2012 je k dispozici ve Visual Studio Tools for Git rozšíření, která je k dispozici na [Galerie sady Visual Studio](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
+1. Podpora Git pro sadu Visual Studio 2012 je k dispozici ve Visual Studio Tools for Git rozšíření, která je k dispozici na [Galerie sady Visual Studio](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c).
 
-2. Nasazení na web Azure vyžaduje, aby [Azure SDK pro .NET 2.1 - VS 2010 SP1](http://go.microsoft.com/fwlink/?LinkId=313855).  Novější verze nepodporují VS 2010.
+1. Nasazení na web Azure vyžaduje, aby [Azure SDK pro .NET 2.1 - Visual Studio 2010 SP1](http://go.microsoft.com/fwlink/?LinkId=313855). Novější verze sady Visual Studio 2010 se nepodporuje.
 
-3. Podpora pro Azure webovou roli a roli pracovního procesu vyžaduje [Azure SDK pro .NET 2.3 - VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511) nebo novější.
+1. Podpora pro Azure webovou roli a roli pracovního procesu vyžaduje [Azure SDK pro .NET 2.3 - VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511) nebo novější.
 
-4. Podpora pro Azure webovou roli a roli pracovního procesu vyžaduje [Azure SDK pro .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) nebo novější.
+1. Podpora pro Azure webovou roli a roli pracovního procesu vyžaduje [Azure SDK pro .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) nebo novější.
 
-5. Editor šablon Django ve Visual Studiu 2013 se některé známé problémy, které se vyřeší instalací aktualizace 2.
+1. Editor šablon Django ve Visual Studiu 2013 se některé známé problémy, které se vyřeší instalací aktualizace 2.
 
-6. Vyžaduje Windows 8 nebo novější. Visual Studio 2013 Express pro Web nemá připojení do dialogového okna procesu, ale vzdálené ladění webu Azure je stále možné pomocí příkazu připojit ladicí program (Python) v Průzkumníku serveru. Vzdálené ladění vyžaduje [Azure SDK pro .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) nebo novější.
+1. Vyžaduje Windows 8 nebo novější. Visual Studio 2013 Express pro Web nemá připojení do dialogového okna procesu, ale vzdálené ladění webu Azure je stále možné pomocí příkazu připojit ladicí program (Python) v Průzkumníku serveru. Vzdálené ladění vyžaduje [Azure SDK pro .NET 2.3 – Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) nebo novější.
 
-7. Vyžaduje Windows 8 nebo novější. Připojit ladicí program (Python) příkaz v Průzkumníku serveru vyžaduje [Azure SDK pro .NET 2.3 - VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510) nebo novější.
+1. Vyžaduje Windows 8 nebo novější. Připojit ladicí program (Python) příkaz v Průzkumníku serveru vyžaduje [Azure SDK pro .NET 2.3 – Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) nebo novější.
 
-8. Vyžaduje Windows 8 nebo novější.
+1. Vyžaduje Windows 8 nebo novější.
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- [Zápis senzor Kinect hry s Pythonem pomocí PyKinect](https://github.com/Microsoft/PTVS/wiki/PyKinect) (Githubu wiki)
 - [WFastCGI most mezi službou IIS a Python](https://pypi.python.org/pypi/wfastcgi) (python.org)
 - [Volné kurzy Pythonu na webu Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Horní Python dotazy na Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

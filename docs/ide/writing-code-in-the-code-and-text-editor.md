@@ -63,11 +63,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bde177cb8f9ec8e72a331c785addfa7fead64dc7
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="write-code-in-the-code-editor"></a>Psaní kódu v editoru kódu
 Editoru Visual Studio poskytuje řadu funkcí, které usnadňují můžete zapsat a spravovat kódu a text. Můžete rozbalit nebo sbalit různé bloky kódu pomocí osnovy. Další informace o kódu pomocí IntelliSense, **Prohlížeč objektů**a hierarchie volání. Kód můžete najít pomocí funkce, jako **přejít na**, **přejít k definici**, a **najít všechny odkazy**. Můžete vložit bloky kódu s fragmenty kódu a kódu můžete vygenerovat pomocí funkce **generování před využitím**. Pokud jste před editoru Visual Studio nikdy nepoužívali, projděte si téma [úpravy si kód](https://www.visualstudio.com/features/ide-vs) rychlý přehled.  
@@ -130,9 +130,10 @@ Chcete-li zjistit, kde jsou elementy konkrétní kódu odkazovat v celé vaší 
 ## <a name="customize-the-editor"></a>Přizpůsobení editoru  
 Můžete sdílet nastavení sady Visual Studio s jinou developer, mají nastavení v souladu s standard nebo obnovit výchozí nastavení sady Visual Studio pomocí **Průvodce importem a exportem nastavení** příkaz na  **Nástroje pro** nabídky. V **Průvodce importem a exportem nastavení**, můžete změnit obecné nastavení vybrané nebo jazyk a nastavení pro konkrétní projekt.
 
-Chcete-li definovat nové klávesové zkratky nebo změnit stávající klávesové zkratky, přejděte na **nástroje**, **možnosti**, **prostředí**, **klávesnice**. Další informace o zkratky najdete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+Chcete-li definovat nové klávesové zkratky nebo změnit stávající klávesové zkratky, přejděte na **nástroje**, **možnosti**, **prostředí**, **klávesnice**. Další informace o zkratky najdete v tématu [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Další informace o přizpůsobení editoru najdete v tématu [přizpůsobení editoru](../ide/customizing-the-editor.md). Informace o možnostech editoru pro konkrétní jazyk najdete v tématu [pomocí vývojovém prostředí sady Visual Studio pro jazyk C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md) a [možnosti, textový Editor, JavaScript, formátování](../ide/reference/options-text-editor-javascript-formatting.md).
+Další informace o přizpůsobení editoru najdete v tématu [přizpůsobení editoru](../ide/customizing-the-editor.md). Možnosti editoru specifické pro JavaScript najdete v tématu [možnosti, textový Editor, JavaScript, formátování](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Viz také  
- [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Viz také
+
+[Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)

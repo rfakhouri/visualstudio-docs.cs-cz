@@ -15,17 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-ms.assetid: d1772463-0eb1-40a5-b7c0-9a008bc76760
-caps.latest.revision: "43"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 320e244c17f8e21330aa3925030650126a0ba5a6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení ze šablony. Klíčovou součástí řešení je diagram definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a obrazců DSL. Po úpravě a přidáte k těmto prvkům, můžete přidat kód programu k přizpůsobení DSL podrobněji.  
@@ -122,7 +120,7 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
   
 -   Kořenová třída se zobrazuje v levé horní DSL definice diagramu, v části **třídy a vztahy**. Přejmenujte jej na název liší od DSL. Například DSL s názvem **MusicLibrary** může mít kořenová třída s názvem **Hudba**.  
   
--   Třída diagramu se zobrazí v pravém dolním rohu diagram DSL definice v **elementy diagramu** sloupce. Možná bude muset se posuňte doprava k jeho zobrazení. Je obvykle název *YourDsl***Diagram**.  
+-   Třída diagramu se zobrazí v pravém dolním rohu diagram DSL definice v **elementy diagramu** sloupce. Možná bude muset se posuňte doprava k jeho zobrazení. Je obvykle název * YourDsl ***Diagram**.  
   
 -   Pokud jste použili **toku úkolů** šablony a chcete vytvořit diagramy s plaveckých drah, zachovat a přejmenujte objektu Actor domény třídy a ActorSwimlane tvaru.  
   
@@ -223,11 +221,11 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
   
 2.  **Sestavte a spusťte DSL.** Stiskněte klávesu F5 nebo CTRL + F5, aby se spustil novou instanci třídy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] v experimentální režimu. V experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete nebo vytvořte soubor, který má příponu názvu souboru z vaší DSL.  
   
-3.  **Otevřete Průzkumníka.** Na straně diagramu je okno Průzkumníka jazyk, který je obvykle s názvem *YourLanguage* Explorer. Pokud se toto okno nezobrazí, může to být na kartě pod Průzkumníku řešení. Pokud nemůžete najít, na **zobrazení** nabídky, přejděte na příkaz **ostatní okna**a potom klikněte na *YourLanguage***Explorer**.  
+3.  **Otevřete Průzkumníka.** Na straně diagramu je okno Průzkumníka jazyk, který je obvykle s názvem *YourLanguage* Explorer. Pokud se toto okno nezobrazí, může to být na kartě pod Průzkumníku řešení. Pokud nemůžete najít, na **zobrazení** nabídky, přejděte na příkaz **ostatní okna**a pak klikněte na tlačítko * YourLanguage ***Explorer**.  
   
      Aplikace explorer představuje stromové zobrazení modelu.  
   
-4.  **Vytvoření nových elementů.** Klikněte pravým tlačítkem na kořenový uzel v horní části a pak klikněte na tlačítko **přidat nové***YourClass*.  
+4.  **Vytvoření nových elementů.** Klikněte pravým tlačítkem na kořenový uzel v horní části a pak klikněte na tlačítko **přidat nové *** YourClass*.  
   
      V jazyce Průzkumníka se zobrazí novou instanci třídy třídě.  
   
@@ -623,7 +621,7 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
 |V Průzkumníku DSL nelze přidat do kolekce. Například při kliknutí pravým tlačítkem myši nástroje, neexistuje žádný příkaz "Přidat Tool" v nabídce.<br /><br /> V Průzkumníku pro moje DSL nelze přidat element do seznamu.|Klikněte pravým tlačítkem na položku výše uzlu, který se pokoušíte. Pokud chcete přidat do seznamu, je příkaz přidat, není v uzlu seznamu, ale jeho vlastníka.|  
 |Po vytvoření třídy domény, ale nelze vytvořit instance v Průzkumníku jazyk.|Každá třída domény s výjimkou kořenové musí být cílem vnoření relace.|  
 |V Průzkumníku pro moje DSL elementy jsou zobrazeny pouze s jejich názvy typů.|V definici DSL, vyberte vlastnost domain třídy a ve vlastnostech okno, nastavte **název elementu, který je** na hodnotu true.|  
-|Moje DSL se vždy otevře v editoru XML.|K tomu dochází z důvodu chyby při při čtení souboru. Ale i poté, co můžete vyřešit tuto chybu, musíte explicitně nastavit editoru být vašeho DSL návrháře.<br /><br /> Klikněte pravým tlačítkem na položku projektu, klikněte na tlačítko **otevřít v** a vyberte *YourLanguage***návrháře (výchozí)**.|  
+|Moje DSL se vždy otevře v editoru XML.|K tomu dochází z důvodu chyby při při čtení souboru. Ale i poté, co můžete vyřešit tuto chybu, musíte explicitně nastavit editoru být vašeho DSL návrháře.<br /><br /> Klikněte pravým tlačítkem na položku projektu, klikněte na tlačítko **otevřít v** a vyberte * YourLanguage ***návrháře (výchozí)**.|  
 |Sady nástrojů Moje DSL nezobrazí po změně názvy sestavení.|Zkontrolovat a aktualizovat **DslPackage\GeneratedCode\Package.tt** Další informace najdete v tématu [postupy: Změna Namespace jazyka specifické pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
 |Sady nástrojů Moje DSL nezobrazí, ale I nedošlo ke změně názvu sestavení.<br /><br /> Nebo, zobrazí se okno se zprávou, reporting selhání načtení rozšíření.|Resetovat experimentální instanci a znovu sestavte řešení.<br /><br /> 1.  V systému Windows nabídky Start, v části **všechny programy**, rozbalte položku [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], pak **nástroje**a potom klikněte na **resetovat Visual Studio experimentální instanci Microsoft**.<br />2.  Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.|  
   

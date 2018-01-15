@@ -14,18 +14,19 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
+- data-science
 - azure
-ms.openlocfilehash: e5bde434f3a5097f51f461aad5b02ae183e2204c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro jazyk Python
 
 Visual Studio poskytuje šablony vám pomohou začít vytvářet Azure Cloud Services používá Python.
 
-A [Cloudová služba](http://go.microsoft.com/fwlink/?LinkId=306052) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každá provádí koncepčně samostatná úloha, ale můžete samostatně replikaci Visual počítače podle potřeby pro škálování. Webové role poskytují hostování pro front-end webové aplikace. Python jsou obavy, všechny webové rozhraní, které podporuje WSGI můžete použít pro zapsání takové aplikace (podporuje [šablona projektu webové](template-web.md)). Role pracovního procesu jsou určeny k dlouho běžící procesy, které není komunikovat přímo s uživateli. Obvykle provádění použití [data](http://go.microsoft.com/fwlink/?LinkId=401571) a [služby app service](http://go.microsoft.com/fwlink/?LinkId=401572) knihovny, které mohou být nainstalovány s `pip install` &nbsp; [ `azure` ](http://pypi.org/project/azure).
+A [Cloudová služba](http://go.microsoft.com/fwlink/?LinkId=306052) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každá provádí koncepčně samostatná úloha, ale můžete samostatně replikaci Visual počítače podle potřeby pro škálování. Webové role poskytují hostování pro front-end webové aplikace. Python jsou obavy, všechny webové rozhraní, které podporuje WSGI můžete použít pro zapsání takové aplikace (podporuje [šablona projektu webové](template-web.md)). Role pracovního procesu jsou určeny k dlouho běžící procesy, které není komunikovat přímo s uživateli. Obvykle provádění použití [data](http://go.microsoft.com/fwlink/?LinkId=401571) a [služby app service](http://go.microsoft.com/fwlink/?LinkId=401572) knihovny, které mohou být nainstalovány s [ `pip install azure` ](http://pypi.org/project/azure).
 
 Toto téma obsahuje podrobné informace o šabloně projektů a další podporu Visual Studio 2017 (starší verze jsou podobné, ale některé rozdíly). Další informace o práci s Azure z Python, přejděte [Azure střediska pro vývojáře Python](http://go.microsoft.com/fwlink/?linkid=254360).
 
@@ -80,7 +81,7 @@ Chcete-li otevřít **publikovat** průvodce, vyberte roli projekt v Průzkumní
 
 Proces publikování zahrnuje dvě fáze. První Visual Studio vytvoří jeden balíček obsahující všechny role pro cloudové služby. Tento balíček je, co je nasazen do Azure, která inicializuje jeden nebo více virtuálních počítačů pro každou roli a nasadit zdroj.
 
-Protože každý virtuální počítač se aktivuje, provede `ConfigureCloudService.ps1` skript a nainstalujte všechny závislosti. Tento skript ve výchozím nastavení nainstaluje nejnovější verzi jazyka Python z [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) a všechny balíčky v zadané `requirements.txt` souboru. 
+Protože každý virtuální počítač se aktivuje, provede `ConfigureCloudService.ps1` skript a nainstalujte všechny závislosti. Tento skript ve výchozím nastavení nainstaluje nejnovější verzi jazyka Python z [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) a všechny balíčky v zadané `requirements.txt` souboru.
 
 Nakonec spuštěním rolí pracovního procesu `LaunchWorker.ps1`, který spuštěn skript v jazyce Python; webové role inicializovat služby IIS a zahájení zpracování webových požadavků.
 
@@ -90,7 +91,7 @@ Pro cloudové služby `ConfigureCloudService.ps1` skript používá `pip` nainst
 
 Poznámka: instance cloudové služby, musíte zadat všechny knihovny s příponami C nezahrnují kompilátory jazyka C předem zkompilovat binární soubory.
 
-PIP a jeho závislosti, jakož i balíčky v `requirements.txt`, se stáhnou automaticky a může se počítají jako využití fakturovatelné šířky pásma. V tématu [Správa požadované balíčky](python-environments.md#managing-required-packages) podrobnosti o správě `requirements.txt` soubory.
+PIP a jeho závislosti, jakož i balíčky v `requirements.txt`, se stáhnou automaticky a může se počítají jako využití fakturovatelné šířky pásma. V tématu [Správa požadované balíčky](python-environments.md#managing-required-packages-requirementstxt) podrobnosti o správě `requirements.txt` soubory.
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 
@@ -98,9 +99,9 @@ Pokud váš web nebo worker role tak správně, po nasazení, zkontrolujte násl
 
 - Složka bin\ s zahrnuje projekt Python (aspoň):
 
-    - `ConfigureCloudService.ps1`
-    - `LaunchWorker.ps1`(pro role pracovního procesu)
-    - `ps.cmd`
+  - `ConfigureCloudService.ps1`
+  - `LaunchWorker.ps1`(pro role pracovního procesu)
+  - `ps.cmd`
 
 - Zahrnuje projekt Python `requirements.txt` souborů, výpis všechny závislosti (nebo případně kolekce souborů kolečko).
 - Povolení vzdálené plochy na cloudové služby a prozkoumejte soubory protokolu.

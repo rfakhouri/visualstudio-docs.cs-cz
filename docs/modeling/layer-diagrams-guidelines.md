@@ -11,17 +11,15 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-ms.assetid: 2903bec7-a93b-46a6-aac6-994ac4f3f1a7
-caps.latest.revision: "55"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4590652f37c3f1a1bdaf6bd601aee8d01d1a1c98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy závislost: pokyny
 Popis architektury aplikace na vysoké úrovni vytvořením *závislostí diagramy* v sadě Visual Studio. Ujistěte se, že váš kód zůstává konzistentní s Tento návrh ověřením kódu s diagram závislostí. Ověření vrstev můžete použít také v procesu sestavení. V tématu [Channel 9 Video: návrh a ověřte vaší architektury pomocí závislostí diagramy](http://go.microsoft.com/fwlink/?LinkID=252073).  

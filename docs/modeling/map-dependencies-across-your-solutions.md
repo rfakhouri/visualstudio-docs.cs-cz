@@ -26,33 +26,33 @@ helpviewer_keywords:
 - dependency graphs
 - graph documents, exporting
 - code exploration, visualizing
-ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
-caps.latest.revision: "243"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: fc8d9774c69216136eb2b4c99b379ef1c714997f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapování závislostí napříč vaším řešením
-Když chcete pochopit závislosti mezi kódu, Vizualizujte je pomocí vytváření map kódu. Díky tomu můžete zjistit, jak vyhovuje kód společně bez přečtení prostřednictvím soubory a řádků kódu.  
-  
- ![Zobrazení závislostí napříč vaším řešením](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
-  
- **Tady jsou některé videa**:  
-  
--   [Pochopení kódu závislostmi prostřednictvím vizualizace](http://go.microsoft.com/fwlink/?LinkID=252065)  
-  
--   [Vizualizace dopad změny](http://go.microsoft.com/fwlink/?LinkID=252068)  
-  
--   [Seznámení s komplexní kódu pomocí map kódu](http://go.microsoft.com/fwlink/?LinkID=259869)  
-  
-##  <a name="GetStarted"></a>Začínáme s mapy kódu  
- **Použití map kódu musíte buď**:  
+
+Když chcete pochopit závislosti mezi kódu, Vizualizujte je pomocí vytváření map kódu. Díky tomu můžete zjistit, jak vyhovuje kód společně bez přečtení prostřednictvím soubory a řádků kódu.
+
+![Zobrazení závislostí napříč vaším řešením](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")
+
+**Tady jsou některé videa**:
+
+- [Pochopení kódu závislostmi prostřednictvím vizualizace](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
+
+- [Vizualizace dopad změny](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
+
+- [Seznámení s komplexní kódu pomocí map kódu](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
+
+## <a name="GetStarted"></a>Začínáme s mapy kódu
+
+**Použití map kódu musíte buď**:
   
 -   Visual Studio Enterprise: Vytvoření mapy kódu z editoru kódu, Průzkumníka řešení, zobrazení tříd nebo prohlížeč objektů.  
   
@@ -171,7 +171,7 @@ Když chcete pochopit závislosti mezi kódu, Vizualizujte je pomocí vytvářen
   
 10. Dalším způsobem, abyste se mohli zaměřit na mapě komplexní řešení je generovat nové mapování obsahující vybrané položky z existující mapu. Uložení **CTRL** , že při výběru položky, které chcete se zaměřit na, otevřete místní nabídku a vyberte **nový graf z výběru**.  
   
-     ![Zobrazit vybrané položky na nové mapě kódu](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
+     ![Zobrazit vybrané položky na nové mapě kódu](../modeling/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")  
   
 11. Obsahující kontext se přenášejí do nové mapování. Skrýt složky řešení a žádné kontejnery, které nechcete zobrazit pomocí **filtry** podokně.  
   

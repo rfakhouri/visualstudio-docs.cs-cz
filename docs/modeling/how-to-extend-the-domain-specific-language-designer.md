@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
-caps.latest.revision: "9"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9eaa07b0fdf0055ea4ba2849f6438882a22cf85e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8db29f57c05f1bc9c80c3dc658c23a7c7e109edd
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Postupy: Rozšíření návrháře jazyka specifického pro doménu
 Můžete provést rozšíření návrháře, který slouží k úpravám DSL definice. Typy rozšíření, které můžete provést zahrnují přidání příkazy nabídky, přidání obslužné rutiny pro přetažení a dvakrát klikněte na gesta a pravidel, které jsou aktivované, když konkrétní typy hodnot nebo vztahy změnit. Rozšíření můžete zabalené jako Visual Studio integrace rozšíření (VSIX) a distribuovat do jiných uživatelů.  

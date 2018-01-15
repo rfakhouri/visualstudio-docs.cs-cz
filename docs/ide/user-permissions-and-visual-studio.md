@@ -18,19 +18,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8062b6d37c675defeea369ebe8f8bf15fcbdd8ee
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
-Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normálním uživatelským přístupem, kdykoli je to možné.  
+
+Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normálním uživatelským přístupem, kdykoli je to možné.
 
 > [!WARNING]
->  Je třeba zajistit, aby nebylo kompilováno, spouštěno nebo laděno jakékoli řešení systému Visual Studio, které nebylo získáno od důvěryhodné osoby nebo z důvěryhodného zdroje.  
+> Je třeba zajistit, aby nebylo kompilováno, spouštěno nebo laděno jakékoli řešení systému Visual Studio, které nebylo získáno od důvěryhodné osoby nebo z důvěryhodného zdroje.
 
- V režimu normálního uživatele lze v integrovaném vývojovém prostředí IDE aplikace Visual Studio provádět téměř cokoli, ale pro provedení následujících úkolů je potřeba mít administrátorská oprávnění:  
+V režimu normálního uživatele lze v integrovaném vývojovém prostředí IDE aplikace Visual Studio provádět téměř cokoli, ale pro provedení následujících úkolů je potřeba mít administrátorská oprávnění:
 
 |Oblast|Úloha|Další informace|  
 |----------|----------|--------------------------|  
@@ -50,25 +51,21 @@ Z důvodu bezpečnosti by měl být systém Visual Studio spuštěn s normáln
 |Nástroje pro měření výkonu|Profilace aplikace|[Průvodce začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md)|  
 |Nasazení|Nasazení webové aplikace do Internetové informační služby (IIS) v místním počítači|[Nasazení webové aplikace ASP.NET do poskytovatele hostování pomocí sady Visual Studio nebo Visual Web Developer: nasazení do IIS jako testovacího prostředí](http://go.microsoft.com/fwlink/?LinkId=266478)|
 
-## <a name="running-visual-studio-as-an-administrator"></a>Spuštění sady Visual Studio jako správce  
- Sadu Visual Studio můžete spustit s oprávněními správce při každém spuštění rozhraní IDE nebo můžete upravit zástupce sady tak, aby se vždy spustila s oprávněními správce. Další informace naleznete v nápovědě pro Windows.  
+## <a name="running-visual-studio-as-an-administrator"></a>Spuštění sady Visual Studio jako správce
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8debuggerincludeswin8mdmd-includewin81debuggerincludeswin81mdmd-includewinserver8debuggerincludeswinserver8mdmd-or-includewinblueserver2ideincludeswinblueserver2mdmd"></a>Spuštění sady Visual Studio s oprávněními pro správu [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[win81](../debugger/includes/win81_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)], nebo[!INCLUDE[winblue_server_2](../ide/includes/winblue_server_2_md.md)]  
+Sadu Visual Studio můžete spustit s oprávněními správce při každém spuštění rozhraní IDE nebo můžete upravit zástupce sady tak, aby se vždy spustila s oprávněními správce. Další informace naleznete v nápovědě pro Windows.
 
-1.  Na **spustit** zadejte **Visual Studio**. Měli byste vidět verzi nebo verze systému Visual Studio, které jste nainstalovali.  
+### <a name="to-run-visual-studio-with-administrative-permissions"></a>Spuštění sady Visual Studio s oprávněními pro správu
 
-2.  Vyberte verzi systému Visual Studio, kterou chcete spustit, a následně vyvolejte místní nabídku (zobrazí se v dolní části obrazovky). Zvolte **spustit jako správce**.  
+Tyto pokyny jsou určené pro Windows 10. Jsou podobné pro jiné verze systému Windows.
 
-     Při spuštění sady Visual Studio, **(správce)** se zobrazí po název produktu v záhlaví.  
+1. Otevřete **spustit** nabídce a posuňte se Visual Studio 2017.
 
-#### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7debuggerincludeswin7mdmd-or-includewinsvr08r2debuggerincludeswinsvr08r2mdmd"></a>Spuštění sady Visual Studio s oprávněními pro správu [!INCLUDE[win7](../debugger/includes/win7_md.md)] nebo[!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)]  
+1. Klikněte pravým tlačítkem nebo kontextu nabídce **Visual Studio 2017**, vyberte **Další** > **spustit jako správce**.
 
-1.  Na **spustit** nabídce zvolte **všechny programy**.  
+     Při spuštění sady Visual Studio, **(správce)** se zobrazí po název produktu v záhlaví.
 
-2.  V **Microsoft Visual Studio** *verze* vyberte složku **Visual Studio** *verze* otevřete místní nabídce a potom zvolte  **Spustit jako správce**.  
+## <a name="see-also"></a>Viz také
 
-     Při spuštění sady Visual Studio, **(správce)** se zobrazí po název produktu v záhlaví.  
-
-## <a name="see-also"></a>Viz také  
- [Portování, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
- [Instalace sady Visual Studio](../install/install-visual-studio.md)
+[Přenosy, migrace a upgrade projektů sady Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+[Instalace sady Visual Studio](../install/install-visual-studio.md)

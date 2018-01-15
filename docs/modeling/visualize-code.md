@@ -11,17 +11,15 @@ helpviewer_keywords:
 - code, understanding
 - code, visualizing
 - code, exploring
-ms.assetid: 0dd7d438-393a-4cd3-b417-9bf37379e1b0
-caps.latest.revision: "47"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 50904fd36dc3a4f009b87b9daa5c603fdee702ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3272195d1099ea851cbabf32c845ce2d46a697c
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="visualize-code"></a>Vizualizace kódu
 Vizualizace a modelování nástroje v sadě Visual Studio můžete použít k vám pomůžou pochopit stávající kód a popisují vaše aplikace. Díky tomu můžete vizuálně zjistěte, jak může ovlivnit změny kódu a nápovědy vyhodnocení práci a rizik, které jsou výsledkem tyto změny. Příklad:  

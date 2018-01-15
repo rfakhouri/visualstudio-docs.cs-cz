@@ -20,18 +20,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 27f298ad0317223e40f6e9a8606aa9b6aed735fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f7db5fbeee13d5342869c29beb37a8230e0e2396
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizace a lokalizace aplikací
+
 Pokud máte v plánu na distribuci aplikace mezinárodní cílovou skupinu, budete muset zachovat několik věcí, nezapomeňte během fáze návrhu a vývoj. I v případě, že nemáte k dispozici tyto plány, malé úsilí předem můžete usnadnily podstatně by se měl plánu změnit v budoucích verzích vaší aplikace. Služby, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usnadňují vývoj jednu aplikaci, která se může přizpůsobit různá národní prostředí spravovaný vývoj pomocí sady Visual Studio.  
   
  Visual Studio byla navržena od začátku tak, aby vývoji pro mezinárodní cílovou skupinu snadno provedením výhod služeb, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Na následujících stránkách pomůže vám představí internacionalizace funkce integrovaná v sadě Visual Studio.  
   
-## <a name="in-this-section"></a>V tomto oddílu  
+## <a name="in-this-section"></a>V tomto oddílu
+
  [Představení mezinárodních aplikací založených na prostředí .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Seznámíte se základními pojmy související s vývojem softwaru pro mezinárodní trh pomocí sady Visual Studio a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
@@ -41,12 +43,7 @@ Pokud máte v plánu na distribuci aplikace mezinárodní cílovou skupinu, bude
  [Globalizace aplikací](../ide/globalizing-applications.md)  
  Obsahuje odkazy na stránky o vytváření aplikací, které podporují více jazykových verzí.  
   
-## <a name="related-sections"></a>Související oddíly  
- [Globalizace aplikace (HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
- Obsahuje témata s postupy a pokyny, které vám pomohou globalizace a lokalizace Windows 8.1 aplikace vyvíjené v HTML.  
-  
- [Globalizace aplikace (XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
- Obsahuje témata s postupy a pokyny, které vám pomohou globalizace a lokalizace Windows 8.1 aplikace vyvíjené v XAML.  
+## <a name="related-sections"></a>Související oddíly
   
  [Doporučené postupy pro vývoj aplikací připravených k použití](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Obsahuje základní informace o programování pro mezinárodní cílovou skupinu.  

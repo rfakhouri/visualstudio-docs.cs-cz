@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - requirements
 - stories
-ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
-caps.latest.revision: "28"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c3584a8620c4f2d9c0f82efc94bae4dc4c33233
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 Visual Studio pomáhá pochopit, popisují a komunikaci potřebám uživatelů ve kreslení diagramy o jejich aktivity a rámci systému hraje v pomoci jim dosáhli svých cílů. Model požadavky je sada tyto diagramy, z nichž každý se zaměřuje na různé aspekty potřeby uživatelů. Videoukázka, najdete v tématu: [modelování domény obchodní](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
@@ -61,7 +59,7 @@ Visual Studio pomáhá pochopit, popisují a komunikaci potřebám uživatelů v
 ##  <a name="BusinessRules"></a>Zobrazuje obchodní pravidla  
  Obchodní pravidlo je požadavek, který není spojen s případu konkrétní použití a má být dodržen v celém systému.  
   
- Mnoho obchodní pravidla jsou omezení vztahy mezi koncepční třídy. Můžete napsat tyto *statické**obchodní pravidla* jako komentáře přidružené k příslušné třídy v diagramu koncepční třídy. Příklad:  
+ Mnoho obchodní pravidla jsou omezení vztahy mezi koncepční třídy. Můžete napsat tyto *statické ** obchodní pravidla* jako komentáře přidružené k příslušné třídy v diagramu koncepční třídy. Příklad:  
   
  ![Pravidlo v připojené k třídě objednávka komentář. ] (../modeling/media/uml_reqmcd2.png "UML_ReqmCD2")  
   

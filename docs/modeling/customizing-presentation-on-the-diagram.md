@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: Domain-Specific Language, diagram
-ms.assetid: 259836b0-783c-46a0-b7c7-dc4b2f7b4a81
-caps.latest.revision: "31"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 68d9f4fefb1a092b90431bce335d8abcba6b6bbb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1742e157b987cf7ce25eb60dfa44ce6dad64d84d
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="customizing-presentation-on-the-diagram"></a>Přizpůsobení prezentace v diagramu
 Na diagramu je oblast hlavní prezentace nástroje jazyka domény designer. Obvykle budou uživatelé používat diagramu vytvořit jejich modelů. Diagram můžete přizpůsobit, jak je popsáno v následujících tématech.  

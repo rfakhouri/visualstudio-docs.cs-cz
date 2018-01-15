@@ -7,17 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: text templates, custom directive processors
-ms.assetid: 422b47af-5441-4b02-b5ad-1b8b328457e3
-caps.latest.revision: "29"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: e220692b263dbb35779c25ff0b189f219e98b842
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fe637b6ae730cf70113abda14fad794c30868242
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Vytváření vlastních procesorů pro direktivy textových šablon T4
 *Proces transformace textových šablon* trvá *textové šablony* souboru jako vstup a vytváří textový soubor jako výstup. *Text šablony transformační modul* proces a modul komunikuje se službou hostitele transformace textových šablon a textové šablony jeden nebo více ovládacích prvků *procesory direktiv* k dokončení proces. Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).  

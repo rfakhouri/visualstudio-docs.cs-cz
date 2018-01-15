@@ -18,11 +18,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: a7680ff2613051cb795d2ca9cb509f725e92dd23
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7bab332a66784dd473a0cf2b841b617aecda9e9f
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>R nástroje pro možnosti aplikace Visual Studio
 
@@ -34,8 +34,8 @@ Možnosti a nastavení, které jsou specifické pro R se přistupuje pomocí ní
 
 - Možnosti formátování kódu (v tématu [možností editoru](code-editing.md#editor-options): **nástroje > Možnosti** nabídce pak vyberte **textový Editor > R > formátování**
 - Možnosti linting (najdete v části [Linting](code-linting.md)): **nástroje > Možnosti** nabídce pak vyberte **textový Editor > R > hadříkem**
-- Rozšířené možnosti editoru ([popsaných v tomto tématu](#text-editor-r-advanced-options)): **nástroje > Možnosti** nabídce pak vyberte **textový Editor > R > Upřesnit**
-- Chování možnosti ([popsaných v tomto tématu](#r-tools-advanced-options)): **R nástroje > Možnosti** nabídky, nebo **nástroje > Možnosti**, posuňte se k **R nástroje**.
+- Rozšířené možnosti editoru ([popsaných v tomto tématu](#text-editor-r--advanced-options)): **nástroje > Možnosti** nabídce pak vyberte **textový Editor > R > Upřesnit**
+- Chování možnosti ([popsaných v tomto tématu](#r-tools--advanced-options)): **R nástroje > Možnosti** nabídky, nebo **nástroje > Možnosti**, posuňte se k **R nástroje**.
 
 **R nástroje > Nastavení vědecké účely dat** příkaz ovlivní také řadu různých nastavení v sadě Visual Studio celkové. Tento příkaz je popsaná v další části.
 

@@ -11,11 +11,11 @@ helpviewer_keywords: item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5145263ce84cf9e1f6a5ef970701ace660ecb73d
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 8fd5d7fba092df5accfaad9d26cfc05f196981ba
+ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-create-item-templates"></a>Postupy: vytváření šablon položek
 
@@ -62,8 +62,6 @@ Průvodce nepodporuje většinu činností, které chcete vytvořit šablonu zá
    ```xml
    <TemplateID>Microsoft.CSharp.Class</TemplateID>
    ```
-
-   Pro projekty Windows 8.1 jazyka C#, v souboru .vstemplate, přidejte následující kód XML v rámci otevření a zavření `<TemplateData>` značky: `<TemplateGroupID>WinRT-Managed</TemplateGroupID>`. Pro projekty C++ Windows 8.1, použijte hodnotu `WinRT-Native-6.3`. Windows 10 a jiné typy projektů najdete v tématu [templategroupid – element (rozšíření)](../extensibility/templategroupid-element-visual-studio-templates.md). Odkaz na dokončení .vstemplate naleznete v části [odkaz na schéma šablon (rozšiřitelnost)](../extensibility/visual-studio-template-schema-reference.md).
 
 1. V sadě Visual Studio .vstemplate soubor uložte a zavřete ho.
 

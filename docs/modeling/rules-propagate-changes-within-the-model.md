@@ -9,17 +9,15 @@ ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
-ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
-caps.latest.revision: "30"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7f2b46b615c80e2455823ee63262f17f08d307c3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2d8646866794a1a09c3f1e1e1f84011093dfc7c5
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Pravidla šířící změny v modelu
 Můžete vytvořit pravidlo úložiště rozšířit změnu od jednoho prvku na jiné vizualizace a modelování SDK (VMSDK). Když dojde ke změně na libovolný prvek v úložišti, pravidla je naplánováno spuštění, obvykle v případě, že nejkrajnější je transakce potvrzena. Existují různé typy pravidel pro různé druhy událostí, například přidávání element nebo odstranění. Pravidla můžete připojit na konkrétní typy elementů, tvarů nebo diagramů. Mnoho vestavěných funkcí jsou definována pravidly: například pravidla zajistěte, aby diagram aktualizovala při změně modelu. Jazyka specifické pro doménu můžete přizpůsobit přidáním vlastních pravidel.  

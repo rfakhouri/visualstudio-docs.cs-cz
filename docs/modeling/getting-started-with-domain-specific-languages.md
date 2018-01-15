@@ -6,17 +6,15 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 024392a2-2c04-404f-a27b-7273553c3b60
-caps.latest.revision: "16"
-author: alancameronwills
-ms.author: awills
-manager: douge
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5703410772945a95ed0efea95a665b2a106e0ce7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
+ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 Toto téma vysvětluje základní koncepce při definování a používání jazyka specifické pro doménu (DSL) vytvořené pomocí sady SDK modelování pro sadu Visual Studio.  
@@ -143,7 +141,7 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
 ### <a name="the-content-of-a-model"></a>Obsah modelu  
- Obsah souboru, který je instancí DSL nazývá *modelu*. Model obsahuje *modelu**elementy* a *odkazy* mezi elementy. Definice DSL Určuje, jaké typy prvků modelu a odkazy může existovat v modelu. Například v DSL, vytvořené z šablony minimální jazyk, je jeden typ prvku modelu a jeden typ odkazu.  
+ Obsah souboru, který je instancí DSL nazývá *modelu*. Model obsahuje *modelu ** elementy* a *odkazy* mezi elementy. Definice DSL Určuje, jaké typy prvků modelu a odkazy může existovat v modelu. Například v DSL, vytvořené z šablony minimální jazyk, je jeden typ prvku modelu a jeden typ odkazu.  
   
  Definice DSL můžete určit, jak se zobrazí v diagramu modelu. Můžete z mnoha různých styly tvarů a konektory. Můžete určit, že některé obrazce se zobrazí uvnitř ostatním tvarům.  
   
