@@ -1,0 +1,1 @@
+# [Propojené prostředí sady Visual Studio](visual-studio-connected-environment.md)
