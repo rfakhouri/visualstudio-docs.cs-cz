@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
 ms.workload: multiple
-ms.openlocfilehash: 2719ecd60a68de795c51ec4363a9130e4da9019c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
+ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="naming-conventions-for-editorconfig"></a>Zásady vytváření názvů pro EditorConfig
 
@@ -74,7 +74,7 @@ V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot odděl
 - chráněné\_interní nebo protected_friend
 
 > [!NOTE]
-> Musíte zadat úroveň usnadnění přístupu v rámci vaší zásady vytváření názvů, jinak zásady vytváření názvů může být ignorována.
+> Nezadávejte úroveň usnadnění přístupu v rámci zásady vytváření názvů, pokud není k dispozici na typ symbolu, které se zaměříte usnadnění. Například parametry nemají úrovní přístupu. Pokud zadáte úroveň usnadnění pro parametr zásady vytváření názvů, pojmenování pravidla nebude fungovat správně.
 
 ### <a name="symbol-modifiers"></a>Modifikátory – symbol
 
@@ -128,7 +128,7 @@ Povolené hodnoty pro tuto vlastnost jsou:
 
 - pascal_case
 - camel_case
-- první\_word_upper
+- first\_word_upper
 - všechny\_horní
 - all_lower
 
