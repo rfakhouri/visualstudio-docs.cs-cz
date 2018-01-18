@@ -84,6 +84,13 @@
 #### [Cílení na konkrétní verzi rozhraní .NET Framework](ide/targeting-a-specific-dotnet-framework-version.md)
 ##### [Přehled cílení na více verzí](ide/visual-studio-multi-targeting-overview.md)
 ##### [Cílení na verzi rozhraní .NET Framework](ide/how-to-target-a-version-of-the-dotnet-framework.md)
+#### Vytvoření šablon projektů a položek
+##### [Vytváření šablon projektu](ide/how-to-create-project-templates.md)
+##### [Vytváření šablon vícenásobného projektu](ide/how-to-create-multi-project-templates.md)
+##### [Vytváření šablon položek](ide/how-to-create-item-templates.md)
+##### [Vytváření šablon položek s více soubory](ide/how-to-create-multi-file-item-templates.md)
+##### [Vytváření webových šablon](ide/how-to-manually-create-web-templates.md)
+##### [Řešení problémů se šablonami](ide/how-to-troubleshoot-templates.md)
 #### [Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Vývoj bez projektů nebo řešení (Otevřít složku)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 ### [Psaní kódu v editoru](ide/writing-code-in-the-code-and-text-editor.md)
@@ -95,7 +102,7 @@
 #### [Šifrování a zalomení řádků](ide/encodings-and-line-breaks.md)
 ##### [Ukládání a otevírání souborů s kódováním](ide/how-to-save-and-open-files-with-encoding.md)
 #### [Sbalení](ide/outlining.md)
-#### [Automatické generování kódu](ide/code-generation-in-visual-studio.md)
+#### [Generování a oprava kódu](ide/code-generation-in-visual-studio.md)
 ##### [Fragmenty kódu](ide/code-snippets.md)
 ###### Používání fragmentů kódu
 ####### [Fragmenty kódu v jazyce Visual C#](ide/visual-csharp-code-snippets.md)
@@ -305,15 +312,9 @@
 ### [Přizpůsobení šablon projektů a položek](ide/customizing-project-and-item-templates.md)
 #### [Aktualizace existujících šablon](ide/how-to-update-existing-templates.md)
 #### [Nahrazení parametrů v šabloně](ide/how-to-substitute-parameters-in-a-template.md)
-### Vytváření nových šablon projektů a položek
-#### [Vytváření šablon projektu](ide/how-to-create-project-templates.md)
-#### [Vytváření šablon vícenásobného projektu](ide/how-to-create-multi-project-templates.md)
-#### [Vytváření šablon položek](ide/how-to-create-item-templates.md)
-#### [Vytváření šablon položek s více soubory](ide/how-to-create-multi-file-item-templates.md)
-#### [Vytváření webových šablon](ide/how-to-manually-create-web-templates.md)
+### Šablony projektů a položek
 ### [Parametry šablony](ide/template-parameters.md)
-### [Odkaz na schéma šablony (rozšiřitelnost)](extensibility/visual-studio-template-schema-reference.md)
-### [Řešení problémů se šablonami](ide/how-to-troubleshoot-templates.md)
+### [Odkaz na schéma šablony (rozšiřitelnost)](extensibility/visual-studio-template-schema-reference.md?toc=/visualstudio/toc.json)
 ## Obecné prvky uživatelského rozhraní
 ### [Hierarchie volání](ide/reference/call-hierarchy.md)
 ### [Náhled změn](ide/preview-changes.md)
