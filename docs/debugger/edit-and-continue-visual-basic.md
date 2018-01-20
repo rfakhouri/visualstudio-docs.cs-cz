@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 36cdf6538a1a9f258eef0c251d14884b64ca70c2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 82ec43b02895c2067b04f52f893184a82dd0f36b
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-basic"></a>Upravit a pokračovat (Visual Basic)
 Upravit a pokračovat, je funkce pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ladění, který umožňuje změnit kódu, když je prováděna v režimu pozastavení. Po použití úprav kódu, můžete pokračovat v provádění kódu s novou úprav v místě a projevily.  
@@ -42,7 +42,7 @@ Upravit a pokračovat, je funkce pro [!INCLUDE[vbprvb](../code-quality/includes/
  Upravit a pokračovat se podporuje v UWP aplikací pro Windows 10 a x86 a x64 aplikací, které se zaměřují rozhraní .NET Framework 4.6 desktop nebo novější verze (pouze plochy verze rozhraní .NET Framework je).
 
  > [!NOTE]
- > Nepodporované aplikace a platformy zahrnout ASP.NET 5, emulátor Silverlight 5, Windows Phone a Windows Phone a Windows 8.1.
+ > Nepodporované aplikace a platformy zahrnout ASP.NET 5, Silverlight 5 a Windows 8.1.
   
  Upravit a pokračovat není podporován při spuštění ladění pomocí **připojit k procesu**. Upravit a pokračovat není podporována pro optimalizovaného kódu nebo ve smíšeném spravovaná a nativní kód. Další informace najdete v tématu [podporované změny kódu (C# a Visual Basic](../debugger/supported-code-changes-csharp.md).
   

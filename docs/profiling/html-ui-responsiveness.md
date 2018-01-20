@@ -7,28 +7,23 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - performance, JavaScript [UWP apps]
 - performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
 - profiler, JavaScript [UWP apps]
-ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
 caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71e8c18401b341ef1e1b24c35dc39e80758c31d2
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkonu k dispozici pro univerzální aplikace pro Windows.  
@@ -42,9 +37,9 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
 -   Visual aktualizace, které jsou méně časté, než se očekávalo. K tomu dojde, pokud je příliš zaneprázdněn udržovat smooth obnovovací frekvence vlákna uživatelského rozhraní. Například pokud je zaneprázdněné vlákna uživatelského rozhraní, může vyřadit rámce. Některé non-UI vlákno pracovat, jako jsou síťové požadavky, dekódování, bitové kopie a barvy můžete také omezit četnosti aktualizací visual. (Ne všechny Malování se provádí ve vlákně UI.)  
   
 ##  <a name="RunningProfiler"></a>Spusťte nástroj odezvy uživatelského rozhraní HTML  
- Pokud máte pracovní UWP nebo Windows 8.1 aplikaci otevřete v sadě Visual Studio nebo nainstalovat do počítače se systémem Windows 8 nebo novější, můžete použít nástroj odezvy uživatelského rozhraní HTML.  
+ Pokud máte aplikace pro UPW pracovní otevřete v sadě Visual Studio, můžete použít nástroj odezvy uživatelského rozhraní HTML.  
   
-1.  Pokud spouštíte aplikaci ze sady Visual Studio na **standardní** panelu nástrojů v **spustit ladění** vyberte cíl nasazení, jako je například jeden z Windows Phone emulátorů, **místního počítače** , **Simulátoru**, nebo **vzdáleného počítače**.  
+1.  Pokud spouštíte aplikaci ze sady Visual Studio na **standardní** panelu nástrojů v **spustit ladění** vyberte cíl nasazení, jako **místního počítače** nebo **Zařízení**.  
   
 2.  Na **ladění** nabídce zvolte **profileru výkonu...** .  
   
@@ -115,7 +110,7 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
   
      Následující obrázek znázorňuje graf využití procesoru s určitou oblast zájmu zvýrazněná.  
   
-     ![Graf využití procesoru](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+     ![CPU utilization graph](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. Použití [zobrazit podrobnosti časová osa](#TimelineDetails) získat podrobné informace o událostech, které se spouští příliš často nebo trvá příliš dlouho dokončení. Například vyhledejte následující:  
   
@@ -183,7 +178,7 @@ if (performance.mark && performance.measure) {
   
  Zde je, jak časovou osu relace diagnostiky vypadá s popisek zobrazí několik události životního cyklu aplikace:  
   
- ![Relace diagnostiky pravítka](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
+ ![Diagnostic session ruler](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
   
  Časová osa zobrazí, když dojde k událostem lifecyle aplikace, jako jsou aktivační události, a zobrazuje značky uživatel (uživatel značky trojúhelníčky), můžete přidat do vašeho kódu. Můžete vybrat události, které chcete zobrazit tipy s dalšími informacemi. Další informace o značky uživatele najdete v tématu [označit kód pro analýzu](#ProfileMark) v tomto tématu.  
   
@@ -203,7 +198,7 @@ if (performance.mark && performance.measure) {
   
  Tento příklad ukazuje, jak vypadá graf využití procesoru:  
   
- ![Graf využití procesoru](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+ ![CPU utilization graph](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
  Použijte tento graf tak, aby:  
   
@@ -228,7 +223,7 @@ if (performance.mark && performance.measure) {
   
  Tento příklad ukazuje, jak vypadá visual propustnost grafu:  
   
- ![Diagram Visual propustnosti](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
+ ![Visual throughput graph](../profiling/media/js_htmlvizprof_vizthru.png "JS_HTMLVizProf_VizThru")  
   
  Pomocí visual propustnost graf tak, aby:  
   
@@ -280,7 +275,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="FilterTimelineDetails"></a>Podrobnosti o filtru časové osy  
  Můžete filtrovat zobrazení v podrobnostech časovou osu pro konkrétní událost výběrem **filtr událostí** z kontextové nabídky pro konkrétní události. Pokud vyberete tuto možnost, časového harmonogramu a mřížky zobrazení jsou vymezeny pro zvolenou událost. Výběr v graf využití procesoru rozsahy taky na konkrétní události.  
   
- ![Filtrování časovou osu pro událost](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
+ ![Filtering timeline to an event](../profiling/media/js_htmlvizprofiler_filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
   
 ###  <a name="FilterEvents"></a>Filtrování událostí  
  Můžete filtrovat na některé události z časová osa grafu podrobnosti ke snížení šumu v datech, nebo omezit data, která není zajímavé pro váš scénář výkonu. Můžete filtrovat podle názvu události nebo trvání události nebo podle konkrétní filtry, které jsou zde popsané.  
@@ -317,7 +312,7 @@ if (performance.mark && performance.measure) {
   
 -   **Skriptování.** Označuje čas strávený analýzy a spouštění JavaScript. To zahrnuje událostí DOM, časovače, vyhodnocení skriptu a pracovní rámce animace. Obsahuje uživatelský kód a kód knihovny.  
   
--   **GLOBÁLNÍ KATALOG.** Označuje čas strávený uvolňování paměti.  
+-   **GC.** Označuje čas strávený uvolňování paměti.  
   
 -   **Stylů.** Označuje, že čas strávený analýzy šablon stylů CSS a výpočet element prezentace a rozložení.  
   

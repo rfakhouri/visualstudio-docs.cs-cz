@@ -16,14 +16,14 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 52acd997d1f6dd9f019a6495cfbeab4e459d661b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na službu IIS a systém Azure v rámci Visual Studio 2017
-Můžete nasadit webovou aplikaci ASP.NET do počítače Windows serveru se službou IIS a její nastavení pro vzdálené ladění. Tato příručka vysvětluje, jak nastavit a konfigurace aplikace Visual Studio 2017 ASP.NET Core, ho nasadit do Azure pomocí služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio.
+Pro službu Azure App Service, doporučujeme ladění pomocí [ladicí program snímku](../debugger/debug-live-azure-applications.md) nebo můžete postupovat podle pokynů v tomto tématu připojit ladicí program ze sady Visual Studio. Pokud používáte Windows Server na virtuální počítač Azure se službou IIS, můžete ho také nastavit pro vzdálené ladění. Tato příručka vysvětluje, jak nastavit a konfigurace aplikace Visual Studio 2017 ASP.NET Core, ho nasadit do Azure pomocí služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio.
 
 > [!WARNING]
 > Nezapomeňte odstranit prostředky Azure, které vytvoříte, když jste dokončili kroky v tomto kurzu. Tímto způsobem můžete účtovány poplatky zbytečné.
@@ -63,7 +63,7 @@ Mezi dvěma počítači připojené prostřednictvím proxy serveru se nepodporu
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Vzdálené ladění ASP.NET Core v Azure App Service
 
-Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela zřizované instance služby IIS. Ale je přednastavení konfiguraci služby IIS a si nemůžete přizpůsobit. Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Pokud potřebujete vlastní nastavení služby IIS, vyzkoušejte ladění na [virtuálního počítače Azure](#BKMK_azure_vm).) 
+Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela zřizované instance služby IIS. Ale je přednastavení konfiguraci služby IIS a si nemůžete přizpůsobit. Další podrobné pokyny naleznete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Pokud potřebujete vlastní nastavení služby IIS, vyzkoušejte ladění na [virtuálního počítače Azure](#BKMK_azure_vm).) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>K nasazení aplikace a vzdálené ladění
 
@@ -93,10 +93,10 @@ Když otevřete port 80 ve skupině zabezpečení sítě, také otevřete port 4
 
 V závislosti na nastavení zabezpečení prohlížeče ho může ušetřit čas přidat následující důvěryhodných serverů na prohlížeč, abyste si můžete snadno stáhnout software popsané v tomto kurzu. Může být potřeba přístup k těchto lokalit:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- VisualStudio.com
+- visualstudio.com
 
 Pokud používáte Internet Explorer, můžete přidat důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Tyto kroky jsou u jiných prohlížečů. (Pokud budete muset stáhnout starší verze vzdáleného ladicího programu z my.visualstudio.com, některé další důvěryhodných serverů jsou nutné k přihlášení.)
 

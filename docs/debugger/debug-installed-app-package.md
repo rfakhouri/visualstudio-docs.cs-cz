@@ -23,11 +23,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: e21d29c3a95de4e5174a9966665f3e4e6781f726
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Ladění balíček nainstalovanou aplikaci v aplikaci Visual Studio (UWP)
 
@@ -91,9 +91,6 @@ Když ladíte balíčku aplikace nainstalované ve vzdáleném počítači poprv
 
      > [!NOTE]
 > Na k dispozici, XBox nebo HoloLens zařízení bude restartováno aplikace s ladicím programem připojen, pokud je již spuštěna.
-
-> [!NOTE]
-> Aplikace UWP mohou být vytvořeny a zkompilovat na Windows 8.1 nebo novější, ale vyžadují ke spuštění Windows 10. Pokud vyvíjíte aplikace pro UPW v počítačích s Windows 8.1, můžete vzdáleně ladit aplikace pro UPW spuštěna na jiném zařízení Windows 10, za předpokladu, že hostitele a cílové počítače jsou ve stejné síti LAN. K tomu, stáhněte a nainstalujte nástroje Remote Tools pro sadu Visual Studio na obou počítačích. Nainstalovaná verze musí odpovídat stávající verze sady Visual Studio, který jste nainstalovali a architektura vyberete (x86, x 64) se taky musí shodovat s cílové aplikace.
 
 Informace o rozšířené možnosti pro vzdálené nasazení aplikace UWP v tématu [nasazení a ladění aplikace UWP](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps.md#advanced-remote-deployment-options). 
   

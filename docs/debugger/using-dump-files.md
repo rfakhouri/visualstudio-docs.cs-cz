@@ -25,11 +25,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: de774e323c1580c2a4d7c925f9c9297c392b2794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 179d66b80676cf47bb12e82fcd8e4ac00503a492
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Použití souborů výpisu paměti pomocí sady Visual Studio
 Soubory s nebo bez haldách; výpisů Vytvořte soubor výpisu; Otevřete soubor s výpisem; Najít binární soubory, na pdb a zdrojového souboru pro souboru výpisu.
@@ -56,11 +56,11 @@ Soubory s nebo bez haldách; výpisů Vytvořte soubor výpisu; Otevřete soubor
   
 -   Visual Studio můžete ladit soubory s výpisem paměti nativních aplikaci ze zařízení ARM. Visual Studio může také ladit soubory s výpisem paměti aplikací spravovaných aplikace ze zařízení ARM, avšak pouze v nativním ladicím programu.  
   
--   Chcete-li ladit [režimu jádra](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) dump soubory v sadě Visual Studio 2013, stáhněte si [Windows 8.1 verze ladění nástrojů pro Windows](http://msdn.microsoft.com/windows/hardware/gg463009). V tématu [ladění jádra v sadě Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+-   Chcete-li ladit [režimu jádra](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) soubory výpisů, stáhněte si ladicí nástroje pro systém Windows, který je součástí [ovladač Kit WDK (Windows)](/windows/hardware/windows-driver-kit). 
   
 -   Visual Studio nemůže ladění souborů výpisu paměti, které jsou uloženy ve starším formátu výpisu známé jako [úplné uživatelského režimu výpisu](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx). Pamatujte, že výpis paměti s úplným uživatelským režimem není stejný jako výpis s daty haldy.  
   
--   Ladění [SOS.dll (rozšíření ladění SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) v sadě Visual Studio, musíte nainstalovat ladění nástrojů pro Windows, která je součástí systému Windows Driver Kit (WDK). V tématu [Windows 8.1 Preview: stažení sad, služba bits a nástrojů](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+-   Ladění [SOS.dll (rozšíření ladění SOS)](/dotnet/framework/tools/sos-dll-sos-debugging-extension) v sadě Visual Studio, je nutné nainstalovat nástroje ladění pro Windows, která je součástí [ovladač Kit WDK (Windows)](/windows/hardware/windows-driver-kit) 
   
 ##  <a name="BKMK_Create_a_dump_file"></a>Vytvoření souboru výpisu  
  Vytvoření souboru s výpisem paměti pomocí aplikace Visual Studio:  

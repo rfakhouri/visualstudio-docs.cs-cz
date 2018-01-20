@@ -18,16 +18,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 40c3a112d77e7e00d95aaa92a77a3b6739c96293
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c463bc443540e136b2cffd1a4abdda2cc543d05
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Ladění ovládacího prvku webového zobrazení v aplikaci UWP
-![Platí pro systém Windows a Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- Zkontrolujte a ladit `WebView` ovládacích prvků v prostředí Windows Runtime aplikace, můžete nakonfigurovat Visual Studio se připojit ladicí program skriptu, při spuštění aplikace. Od verze Visual Studio 2013 Update 2, máte dva způsoby, jak pracovat s `WebView` řídí používání ladicího programu:  
+ Zkontrolujte a ladit `WebView` ovládacích prvků v prostředí Windows Runtime aplikace, můžete nakonfigurovat Visual Studio se připojit ladicí program skriptu, při spuštění aplikace. Máte dva způsoby, jak pracovat s `WebView` řídí používání ladicího programu:  
   
 -   Otevřete [Průzkumníka modelu DOM](../debugger/quickstart-debug-html-and-css.md) pro `WebView` instance a zkontrolujte elementů modelu DOM, prozkoumat problémy stylu CSS a testování dynamicky vykreslené změny stylů.  
   

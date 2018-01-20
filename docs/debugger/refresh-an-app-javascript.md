@@ -1,5 +1,5 @@
 ---
-title: Aktualizace aplikace Windows 8.1 nebo aplikace UWP | Microsoft Docs
+title: "Aktualizace aplikací UWP | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -23,16 +23,15 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 636f88313d53625e5bb778ffe7bebc8f891ed4bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ef42c0208b973707294a842376ef737216e13774
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="refresh-a-uwp-or-windows-81-app"></a>Aktualizujte UWP nebo aplikace Windows 8.1
-![Platí pro systém Windows a Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="refresh-a-uwp-app-in-visual-studio"></a>Aktualizace aplikace UWP v sadě Visual Studio
   
- Můžete provádět změny kódu a ladění a potom aktualizujte aplikace pro UPW pomocí jazyka JavaScript výběrem **aplikace pro aktualizaci Windows** tlačítko **ladění** panelu nástrojů. Výběr toto tlačítko znovu načte aplikaci bez zastavení a spuštění ladicího programu. Funkce aktualizace umožňuje měnit kód HTML, CSS a JavaScript a rychle zobrazit výsledek. Tato funkce je podporována pro aplikace UWP a Windows 8.1.  
+ Můžete provádět změny kódu a ladění a potom aktualizujte aplikace pro UPW pomocí jazyka JavaScript výběrem **aplikace pro aktualizaci Windows** tlačítko **ladění** panelu nástrojů. Výběr toto tlačítko znovu načte aplikaci bez zastavení a spuštění ladicího programu. Funkce aktualizace umožňuje měnit kód HTML, CSS a JavaScript a rychle zobrazit výsledek. Tato funkce je podporována pro aplikace UWP.  
   
  Aktualizace není Udržovat stav vaší aplikace nebo odrážela tyto změny do vaší aplikace:  
   
@@ -51,37 +50,19 @@ ms.lasthandoff: 12/22/2017
   
 ### <a name="to-refresh-an-app"></a>Aktualizace aplikace  
   
-1.  V sadě Visual Studio vytvořte nový projekt pomocí šablony projektu aplikace navigace.  
-  
-     To může být aplikace pro UPW nebo aplikace Windows 8.1.  
-  
-2.  Pomocí šablony otevřete v sadě Visual Studio, vyberte cíl ladění.  
-  
-     Pokud projekt Windows Phone je vaše aktuální spouštěný projekt, vyberte emulátoru Windows Phone pro cíl ladění. Jinak vyberte možnost **simulátoru** nebo **místního počítače**.  
+1.  S UWP projektem otevřeným v sadě Visual Studio, vyberte **místního počítače** jako cíl ladění.
   
      ![Vyberte možnost ladění cílového seznamu](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 3.  Stisknutím klávesy F5 a spusťte aplikaci v režimu ladění.  
   
-4.  Umožňuje přepnout do sady Visual Studio. (Stisknutím klávesy F12).  
+4.  Umožňuje přepnout do sady Visual Studio. 
   
-5.  V **Průzkumníku řešení**v **stránky** > **domácí** složku, otevřete home.html.  
-  
-6.  Změňte text nadpisu stránky z  
-  
-    ```html  
-    Welcome to yourAppName!  
-    ```  
-  
-     na něco jiného, například takto:  
-  
-    ```html  
-    Hello!  
-    ```  
+5.  Na domovské stránce aplikace UWP upravte některé HTML.
   
 7.  Klikněte na tlačítko **aplikace pro aktualizaci Windows** tlačítka, který vypadá podobně jako tento: ![tlačítko aplikace aktualizovat Windows](../debugger/media/js_refresh.png "JS_Refresh"). (Nebo stisknutím klávesy F4.)  
   
-8.  Umožňuje přepnout do aplikace. Aplikace je znovu bez restartování ladicího programu a zobrazí se název nové stránky.  
+8.  Umožňuje přepnout do aplikace. Aplikace je znovu a aktualizované HTML slouží k vykreslení aplikace.
   
 ## <a name="see-also"></a>Viz také  
  [Rychlý úvod: Ladění kódu HTML a CSS](../debugger/quickstart-debug-html-and-css.md)

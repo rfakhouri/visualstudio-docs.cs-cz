@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2507ec49129692914ba6d11e4f651d5895b49c8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 462b164d0a6d3e9cba0f9698b7dba3b01aa5fee5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Spuštění nástroje pro profilaci s nebo bez ladicí program
 Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (například **využití procesoru** a **využití paměti**) lze spustit s nebo bez něj. Nástroje pro sledování výkonu non-ladicí program slouží ke spuštění na verzi konfigurace, zatímco integrovaná s ladicím programem nástroje jsou určeny pro spuštění pro ladění konfigurace.  
@@ -52,7 +52,7 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
   
      Následující grafické ukazuje **diagnostické nástroje** okno ve Visual Studiu 2015 Update 1:  
   
-     ![DiagnosticTools & č. 45; Aktualizaci1](../profiling/media/diagnostictools-update1.png "DiagnosticTools aktualizaci1")  
+     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 4.  Můžete vybrat, jestli chcete zobrazit **využití paměti** nebo **využití procesoru** (nebo obě) s **vyberte nástroje** nastavení na panelu nástrojů. Pokud používáte Visual Studio Enterprise, můžete povolit nebo zakázat IntelliTrace v **nástroje / Možnosti / IntelliTrace**.  
   
@@ -77,7 +77,7 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
   
 2.  Na **ladění** nabídce zvolte **profileru výkonu...** (Klávesovou zkratku: Alt + F2).  
   
-3.  Na stránce spuštění diagnostiky zvolte jeden nebo více nástroje ke spuštění v relaci. Zobrazí se pouze nástroje, které se vztahují na typu projektu, operační systém a programovací jazyk. Když zvolíte diagnostický nástroj, výběr nástroje, které nelze spustit ve stejné relaci diagnostiky jsou zakázány. Zde je, jak může vypadat vaše volby pro C# Windows univerzální aplikace:  
+3.  Na stránce spuštění diagnostiky zvolte jeden nebo více nástroje ke spuštění v relaci. Zobrazí se pouze nástroje, které se vztahují na typu projektu, operační systém a programovací jazyk. Když zvolíte diagnostický nástroj, výběr nástroje, které nelze spustit ve stejné relaci diagnostiky jsou zakázány. Zde je, jak může vypadat vaše volby pro aplikace UWP C#:  
   
      ![Vyberte diagnostické nástroje](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
@@ -104,10 +104,10 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
 |-|-|  
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Časová osa ukazuje délku relace profilace, aktivační události životního cyklu aplikace a uživatelské značky.|  
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Přetažením modrých panelů můžete vybrat určitou oblast časové osy a omezit tak sestavu jen na tuto část časové osy.|  
-|![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Nástroj zobrazí jeden nebo více hlavní grafy. Pokud vaše relace diagnostiky je vytvořen s několik nástrojů, jsou zobrazeny všechny hlavní grafy.|  
+|![Step 3](../profiling/media/procguid_3.png "ProcGuid_3")|Nástroj zobrazí jeden nebo více hlavní grafy. Pokud vaše relace diagnostiky je vytvořen s několik nástrojů, jsou zobrazeny všechny hlavní grafy.|  
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Můžete sbalit a rozbalit jednotlivé grafy.|  
 |![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|Pokud data zahrnují informace z několika nástrojů, podrobnosti pro tento nástroj se shromažďují na kartách.|  
-|![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Nástroj může mít jeden nebo více zobrazení podrobností. Zobrazení je filtrovaná podle vybrané oblasti časové osy.|  
+|![Step 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Nástroj může mít jeden nebo více zobrazení podrobností. Zobrazení je filtrovaná podle vybrané oblasti časové osy.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Nastavení cílového analysis na jiné zařízení.  
  Kromě toho aplikace od projekt Visual Studio, můžete také spustit diagnostické relací na alternativní cíle. Například můžete chtít diagnostikovat problémy s výkonem na verzi vaší aplikace, která byla nainstalována z obchodu s aplikacemi Windows.  
@@ -123,7 +123,7 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
  ![Zadejte adresu url pro zobrazení v aplikaci Internet Explorer](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Vzdálené ladění  
- Relace diagnostiky systémem vzdáleného počítače nebo tabletu vyžaduje, aby vzdálené nástroje sady Visual Studio na vzdálený cíl nainstalovaná a spuštěná. Desktopové aplikace, najdete v části [vzdálené ladění](../debugger/remote-debugging.md).  Univerzálních aplikací pro Windows, najdete v části [aplikace UWP spustit na vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+ Relace diagnostiky systémem vzdáleného počítače nebo tabletu vyžaduje, aby vzdálené nástroje sady Visual Studio na vzdálený cíl nainstalovaná a spuštěná. Desktopové aplikace, najdete v části [vzdálené ladění](../debugger/remote-debugging.md).  Pro aplikace UWP, najdete v části [aplikace UWP spustit na vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Příspěvky blogu a články MSDN z vývojový tým diagnostiky  
  [Časopis MSDN: Analýza výkonu při ladění ve Visual Studiu 2015](https://msdn.microsoft.com/en-us/magazine/dn973013.aspx)  

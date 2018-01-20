@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3109f33c24b3ff217f6e48c6458a4c6514b0b151
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 340ef03d7b9449f6fc9ee50a4c24afff03120e6f
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analýza spotřeby prostředků a aktivita vláken uživatelského rozhraní (XAML)
 Použití **časová osa aplikace** profileru najít a opravit interakce aplikace související s problémy s výkonem v aplikacích XAML. Tento nástroj pomáhá zlepšit výkon aplikace XAML tím, že poskytuje podrobný přehled o spotřeby prostředků aplikace. Můžete analyzovat čas strávený aplikací Příprava rámce uživatelského rozhraní (rozložení a vykreslování), sítě a disku požadavky obsluhy a ve scénářích, jako je spuštění aplikace, načtení stránky a Windows změny velikosti.  
@@ -31,8 +31,6 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 1.  Univerzální aplikace pro Windows (ve Windows 10)  
   
 2.  Windows 8.1  
-  
-3.  Windows Phone 8.1 (společné platformě XAML)  
   
 4.  Windows Presentation Foundation (rozhraní .net 4.0 a novější)  
   
@@ -103,7 +101,7 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 |**Analýza**|Čas strávený analýzy soubory XAML a vytváření objektů.<br /><br /> Rozšiřování **Parsing** uzlu v **časová osa podrobnosti** zobrazí řetězec závislostí všechny soubory XAML, které byly analyzovat v důsledku události kořenové. To vám umožní identifikovat nepotřebných souborů analýzy a objekt vytvoření ve scénářích citlivé výkonu a optimalizovat je.|  
 |**Rozložení**|V velké aplikace může být uvedené na obrazovce tisíce elementy ve stejnou dobu. To může způsobit nízkou obnovovací frekvence uživatelského rozhraní a odezvu odpovídajícím způsobem nízký aplikací. Událost rozložení přesně určuje náklady rozložení jednotlivých prvků (tj. čas věnovaný uspořádat, míry, ApplyTemplate, ArrangeOverride a ArrangeOverride) a vytvoří visual stromy, které trvalo část při průchodu rozložení. Tuto vizualizaci můžete použít k určení, které vaše logické stromy musí vyřazení nebo vyhodnotit jiným mechanismem odložení za účelem optimalizace vaší průchodu rozložení.|  
 |**Vykreslení**|Čas strávený vykreslení elementů XAML na obrazovku.|  
-|**I / 0**|Čas strávený načítání dat z místního disku nebo síťovým prostředkům, které jsou přístupné prostřednictvím [Microsoft Windows Internet (WinINet) rozhraní API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
+|**I/0**|Čas strávený načítání dat z místního disku nebo síťovým prostředkům, které jsou přístupné prostřednictvím [Microsoft Windows Internet (WinINet) rozhraní API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Kód aplikace**|Čas strávený provádění kódu aplikace (uživatel), která nesouvisí se analýza nebo rozložení.|  
 |**Další XAML**|Čas strávený provádění kódu runtime jazyka XAML.|  
   

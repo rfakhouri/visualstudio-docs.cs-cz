@@ -13,16 +13,16 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: eabbb315d03a6ba69d80d46276b0b6dff5846693
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cfe16da805ec8a43af8bed0c7e112e589d060bc4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 Když potřebujete prozkoumat problémy s výkonem v aplikaci, je vhodné oddělení na zahájení pochopení, jak používá procesoru. **Využití procesoru** nástroj ukazuje, kde je procesoru výdaje čas provádění Visual C++, Visual C# nebo Visual Basic a kód jazyka JavaScript. Od verze Visual Studio 2015 Update 1, můžete zobrazit rozpis podle funkce využití procesoru bez opuštění ladicího programu. Můžete zapnout procesoru profilace zapnout a vypnout při ladění a zobrazit výsledky při spuštění je zastaveno, například zarážky.  
   
-Máte několik možností pro spouštění a správu relace diagnostiky. Například můžete spustit **využití procesoru** nástroj na místních nebo vzdálených počítačích nebo na v simulátoru nebo emulátor. Můžete analyzovat výkon otevřít projekt v sadě Visual Studio, připojený k spuštěné aplikaci, nebo můžete spustit aplikaci, která je nainstalované ze služby Microsoft Store. Další informace najdete v tématu [spustit nástrojích pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Návod, která analyzuje výkon aplikací UWP najdete v tématu [analýza využití procesoru v aplikaci UWP (Universal Windows)](analyze-cpu-usage-in-a-windows-universal-app.md). 
+Máte několik možností pro spouštění a správu relace diagnostiky. Například můžete spustit **využití procesoru** nástroj na místních nebo vzdálených počítačích nebo na v simulátoru nebo emulátor. Můžete analyzovat výkon otevřít projekt v sadě Visual Studio, připojený k spuštěné aplikaci, nebo můžete spustit aplikaci, která je nainstalované ze služby Microsoft Store. Další informace najdete v tématu [spustit nástrojích pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi sestavení. Analýza využití procesoru při ladění, najdete v tématu [začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md). 
   
@@ -54,7 +54,7 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
   
  Nástroj pro využití procesoru analyzuje data a zobrazí sestavu.  
   
- ![Sestava CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+ ![CpuUsage report](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analýza využití procesoru sestavy  
   
@@ -62,13 +62,13 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
  Pokud chcete začít, vysvětlení volání stromu informace, vyberte znovu `GetMaxNumberButton_Click` segmentovat a podívejte se na podrobnosti o stromu hovoru.  
   
 ####  <a name="BKMK_Call_tree_structure"></a>Struktura stromu volání  
- ![GetMaxNumberButton &#95; Klikněte na tlačítko volání stromu](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+ ![GetMaxNumberButton&#95;Click call tree](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
 |-|-|  
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Uzel na nejvyšší úrovni ve stromech volání využití procesoru je pseudo uzel|  
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Ve většině aplikací když **zobrazit externí kód** možnost je vypnuta, je uzel druhé úrovně **[externí kód]** uzlu, který obsahuje systém a architektura kód, který spustí a ukončí aplikaci a nevykresluje uživatelského rozhraní, ovládací prvky plánování vláken a poskytuje jiných nízké úrovně služeb k aplikaci.|  
-|![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Podřízené objekty daného uzlu druhé úrovně jsou metody uživatelského kódu a asynchronní rutiny, které jsou volány, nebo vytvořené druhé úrovně systému a framework kódu.|  
+|![Step 3](../profiling/media/procguid_3.png "ProcGuid_3")|Podřízené objekty daného uzlu druhé úrovně jsou metody uživatelského kódu a asynchronní rutiny, které jsou volány, nebo vytvořené druhé úrovně systému a framework kódu.|  
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Podřízené uzly metody obsahovat data jen pro volání metody nadřazené. Když **zobrazit externí kód** je zakázaná, metody aplikace může také obsahovat **[externí kód]** uzlu.|  
   
 ####  <a name="BKMK_External_Code"></a>Externí kódu  
@@ -91,9 +91,9 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
 |||  
 |-|-|  
 |**Celkové využití procesoru (%)**|![Celkový počet rovnice data %](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Procento procesoru aktivitu aplikace ve vybrané časové rozmezí, která byla použita ve volání funkce a funkce volané funkce. Všimněte si, že se to neliší od **využití procesoru** časová osa grafu, který porovnává celkovou aktivitu aplikace v časový rozsah a celkový počet dostupné kapacity procesoru.|  
-|**Vlastního procesoru (%)**|![Vlastní % rovnice](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Procento procesoru aktivitu aplikace ve vybrané časové rozmezí, která byla použita ve volání funkce, s výjimkou aktivitu funkce volané funkce.|  
+|**Vlastního procesoru (%)**|![Self % equation](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Procento procesoru aktivitu aplikace ve vybrané časové rozmezí, která byla použita ve volání funkce, s výjimkou aktivitu funkce volané funkce.|  
 |**Celkové využití procesoru (ms)**|Počet milisekund, po stráví ve volání funkce v vybraný časový rozsah a funkce, které byly volá funkci.|  
-|**Vlastního procesoru (ms)**|Počet milisekund, po stráví ve volání funkce v vybraný časový rozsah a funkce, které byly volá funkci.|  
+|**Self CPU (ms)**|Počet milisekund, po stráví ve volání funkce v vybraný časový rozsah a funkce, které byly volá funkci.|  
 |**Modul**|Název modul, který obsahuje funkce, nebo počet modulů obsahující funkce v uzlu služby [externí kód].|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Asynchronní funkce ve využití procesoru stromu volání  
@@ -101,11 +101,11 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
   
  Pokud chcete zobrazit tento v našem příkladu, znovu vyberte `GetMaxNumberAsyncButton_Click` segmentu v časovou osu.  
   
- ![GetMaxNumberAsyncButton &#95; Klikněte na výběr sestavy](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+ ![GetMaxNumberAsyncButton&#95;Click report selection](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
   
  První dva uzly v rámci **[externí kód]** generované kompilátorem metod třídy stav počítače. Třetí je volání původní metody. Rozšiřování generovaného metody se dozvíte, co se děje.  
   
- ![Rozšířené GetMaxNumberAsyncButton &#95; Klikněte na tlačítko volání stromu](../profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
+ ![Expanded GetMaxNumberAsyncButton&#95;Click call tree](../profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
 -   `MainPage::GetMaxNumberAsyncButton_Click`nemá velmi málo; spravuje seznam hodnot úloh, vypočítá maximální počet výsledků a zobrazí výstup.  
   

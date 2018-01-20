@@ -1,7 +1,7 @@
 ---
 title: "Nasazení aplikací UWP ze sady Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,20 +12,18 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: ef3a0f36-bfc9-4ca0-aa61-18261f619bff
 caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 95f009ca761d4d978fb5e5a9323722e5dfc34cb8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Nasazení aplikací UWP ze sady Visual Studio
-![Platí pouze pro Windows](../debugger/media/windows_only_content.png "windows_only_content")  
   
  Nasazení funkce sady Visual Studio vytvoří a zaregistruje aplikace UWP, které jsou vytvořené pomocí sady Visual Studio na cílovém zařízení. Přesně jak aplikace registrovaná závisí na tom cílové zařízení místní nebo vzdálené:  
   
@@ -59,7 +57,7 @@ ms.lasthandoff: 01/10/2018
 Na vzdáleném zařízení Windows 10, musíte povolit [režim vývojáře](/windows/uwp/get-started/enable-your-device-for-development). Na zařízení s Windows 10 verzi Tvůrce Update nebo nástrojů pro vzdálenou jsou automaticky nainstalovány později při nasazení aplikace. Další informace najdete v tématu [ladění balíček nainstalovanou aplikaci](../debugger/debug-installed-app-package.md).
 
 > [!NOTE]
-> Na verze pre-Creator aktualizace systému Windows 10 a Windows 8.1 musí být nainstalované vzdálené nástroje pro sadu Visual Studio na vzdáleném zařízení a musí být spuštěna vzdáleného ladicího programu. Na Windows 8.1 je také nutné nainstalovat licenci vývojáře.
+> Na verze pre-Creator aktualizace systému Windows 10 musí být nainstalované vzdálené nástroje pro sadu Visual Studio na vzdáleném zařízení a musí být spuštěna vzdáleného ladicího programu.
   
 Nasazení použije síťový kanál vzdáleného ladicího programu k odeslání v souborech aplikace na vzdáleném zařízení.  
   
@@ -117,5 +115,6 @@ Nasazení použije síťový kanál vzdáleného ladicího programu k odeslání
 -   Na stránce vlastností JavaScript a ladění, nastavte **spustit aplikaci** hodnotu **Ano**.  
   
 ## <a name="see-also"></a>Viz také  
- [Ladění balíček nainstalovanou aplikaci](../debugger/debug-installed-app-package.md).   
+ [Rozšířené možnosti vzdálené nasazení](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
+ [Ladění balíček nainstalované aplikace](../debugger/debug-installed-app-package.md)   
  [Spuštění aplikace ze sady Visual Studio](../debugger/run-store-apps-from-visual-studio.md)

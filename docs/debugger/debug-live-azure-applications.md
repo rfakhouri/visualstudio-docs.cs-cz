@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 32d58ec27d54b1b9c731747b01ad1f59d1d222b7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5317c06dc5ff6515627e562d576785c2ff25a98a
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Ladění za provozu aplikací ASP.NET Azure pomocí snímku ladicí program
 
@@ -47,9 +47,12 @@ Kromě toho ladicí program snímku je dostupná jenom pro Visual Studio Enterpr
 
    ![Spuštění ladicího programu snímku](../debugger/media/snapshot-launch.png "spuštění ladicího programu snímku")
 
-    Při prvním vyberete **připojit ladicí program snímku**, zobrazí se výzva k instalaci ladicí program snímku ve službě Azure App Service. Tato instalace vyžaduje restart služby Azure App Service. 
+    Při prvním vyberete **připojit ladicí program snímku**, zobrazí se výzva k nainstalujte rozšíření lokality ladicí program snímku v Azure App Service. Tato instalace vyžaduje restart služby Azure App Service. 
 
    Visual Studio je nyní v režimu ladění snímek.
+
+    > [!NOTE]
+    > Rozšíření lokality služby Application Insights podporuje také ladění snímku. Pokud narazíte na chybová zpráva "lokality rozšíření zastaralá", najdete v tématu [řešení potíží s tipy a známé problémy pro ladění snímku](../debugger/debug-live-azure-apps-troubleshooting.md) pro upgrade podrobnosti.
 
    ![Režim ladění snímku](../debugger/media/snapshot-message.png "snímku režim ladění")
 
@@ -130,7 +133,7 @@ Kromě vytvoření snímku, když je dosaženo snappoint, můžete také nakonfi
 
 ## <a name="next-steps"></a>Další kroky
 
-- Informace o tom, chcete-li prověřit proměnné při zobrazení snímku, najdete v části [prohlídka funkce Debbuger](../debugger/debugger-feature-tour.md).
+- Informace o tom, chcete-li prověřit proměnné při zobrazení snímku, najdete v části [prohlídka funkce ladicího programu](../debugger/debugger-feature-tour.md).
 - Zobrazení [– nejčastější dotazy k ladění snímku](../debugger/debug-live-azure-apps-faq.md).
 - Zobrazení [řešení potíží s tipy a známé problémy pro ladění snímku](../debugger/debug-live-azure-apps-troubleshooting.md).
 - Pokud chcete zobrazit snímky ve službě Application Insights, pokud se vaše aplikace dotkne výjimku, můžete to udělat. Další informace najdete v tématu [ladění snímků výjimky v aplikacích .NET](/azure/application-insights/app-insights-snapshot-debugger). Application Insights podporuje aplikace Service Fabric kromě Azure App Service.

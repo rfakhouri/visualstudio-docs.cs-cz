@@ -7,11 +7,7 @@ ms.suite:
 ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - dominators, memory analyzer (JavaScript)
 - memory leaks (JavaScript)
@@ -21,17 +17,16 @@ helpviewer_keywords:
 - JavaScript Memory Analyzer
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
-ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
 caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 00162ab0ad516391b98ee0a17fa9c9f7294c92b3
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analýza využití paměti jazyka JavaScript v aplikacích pro UPW
 Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio vám pomohou pochopit, využití paměti a najít nevracení paměti v aplikace UWP vytvořená pro systém Windows pomocí jazyka JavaScript. Podporované aplikace patří aplikace pro univerzální aplikace pro Windows.
@@ -48,36 +43,14 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio vám 
   
      Automaticky jsou vyfiltrovány objekty, které nejsou vytvořené přímo v kódu aplikace. Data můžete také filtrovat podle názvu objektu.  
   
- Kurz, který vás provede proces identifikace nevracení paměti v aplikaci pro práci, najdete v části [návod: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
-  
- V tomto tématu:  
-  
- [Spustit Analyzátor paměti jazyka JavaScript](#Run)   
- [Zkontrolujte využití paměti](#Check)   
- [Izolovat nevracení paměti](#Isolate)   
- [Zobrazení souhrnu využití paměti za provozu](#LiveMemory)   
- [Zobrazit souhrn snímku](#SnapshotSummary)   
- [Zobrazit podrobnosti o snímku](#SnapshotDetails)   
- [Zobrazit rozdílové snímku](#SnapshotDiff)   
- [Objekty zobrazení podle dominator](#FoldObjects)   
- [Filtrování dat podle identifikátoru](#Filter)   
- [Vyhledání objektu ve stromu objektů](#ShowInRootsView)   
- [Zobrazovat odkazy na sdílené objekty](#References)   
- [Předdefinované objekty zobrazení](#BuiltInValues)   
- [Uložte soubory relace diagnostiky](#Save)   
- [Zdrojový kód přidružit data o využití paměti](#JSConsoleCommands)   
- [Tipy pro identifikaci problémů s pamětí](#Tips)  
-  
 ##  <a name="Run"></a>Spustit Analyzátor paměti jazyka JavaScript  
- Analyzátor paměti můžete použít, když máte aplikaci UWP pracovní otevřete v sadě Visual Studio nebo nainstalovaných v počítači, který běží [!INCLUDE[win8](../debugger/includes/win8_md.md)] nebo novější.  
+ Analyzátor paměti můžete použít, když máte aplikaci UWP pracovní otevřete v sadě Visual Studio.
   
 #### <a name="to-run-the-memory-analyzer"></a>Chcete-li spustit Analyzátor paměti  
   
 1.  Otevřete Visual Studio.  
   
-2.  Pokud spouštíte aplikaci ze sady Visual Studio v **spustit ladění** seznam na **standardní** nástrojů, vyberte cíl ladění pro projekt: buď emulátoru Windows Phone nebo pro aplikace pro UPW  **Místní počítač**, **simulátoru**, nebo **vzdáleného počítače**.  
-  
-     Další informace o těchto možnostech najdete v tématu [spouští aplikace ze sady Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
+2.  Pokud spouštíte aplikaci ze sady Visual Studio v **spustit ladění** seznam na **standardní** nástrojů, vyberte cíl ladění pro projekt: buď **místního počítače** nebo **Zařízení**.  
   
 3.  Na řádku nabídek zvolte **ladění**, **profileru výkonu...** .  
   
@@ -146,7 +119,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio vám 
   
      Následující obrázek znázorňuje příklad snímku směrného plánu.  
   
-     ![Základní snímku](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
+     ![Baseline snapshot](../profiling/media/js_mem_leak_workflow_baseline.png "JS_Mem_Leak_Workflow_Baseline")  
   
     > [!TIP]
     >  Přesnější kontrolu nad načasování snímky, můžete použít [zdrojový kód přidružit data o využití paměti](#JSConsoleCommands) příkazů v kódu.  
@@ -400,6 +373,3 @@ if (performance && performance.mark) {
          Můžete používat tyto příkazy lze izolovat problémy, které nelze izolovat ručně provedením haldy snímku.  
   
     -   Vytvořte objekt testu a trasování v zobrazeních analyzátor paměti jazyka JavaScript, jako jsou typy zobrazení. Například můžete připojit velký objekt k jinému objektu zobrazíte, zda určitý objekt nebo elementu byla uvolněna.  
-  
-## <a name="see-also"></a>Viz také  
- [Návod: Vyhledání nevrácené paměti (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

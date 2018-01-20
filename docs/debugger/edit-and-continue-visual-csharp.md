@@ -22,11 +22,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: e2e2d380bf90ae2cb0140c508f7cb3b9842c7bf8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c9b820dceefbb84dc9c0b9b9efff75afdb38b30f
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="edit-and-continue-visual-c"></a>Upravit a pokračovat (Visual C#)
  Upravit a pokračovat pro jazyk C# můžete provést změny kódu v režimu pozastavení při ladění. Změny lze použít bez nutnosti zastavit a restartovat relaci ladění. Editor zdrojového kódu v režimu spuštění, je jen pro čtení.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/22/2017
  Upravit a pokračovat se podporuje v UWP ve Windows 10 a x86 a x64 aplikací, které se zaměřují rozhraní .NET Framework 4.6 desktop nebo novější verze (pouze plochy verze rozhraní .NET Framework je).
 
  > [!NOTE]
- > Nepodporované aplikace a platformy zahrnout ASP.NET 5, emulátor Silverlight 5, Windows Phone a Windows Phone a Windows 8.1.
+ > Nepodporované aplikace a platformy zahrnout ASP.NET 5, Silverlight 5 a Windows 8.1.
   
  Když upravit a pokračovat, je povoleno, podporované změny se použijí automaticky, když použijete příkaz spuštění ladicího programu, například **pokračovat**, **krok**, **další příkaz Set**, nebo provést vyhodnocení funkce v okně ladicí program.  
   

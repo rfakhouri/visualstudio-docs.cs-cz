@@ -1,7 +1,7 @@
 ---
 title: "Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikace UWP | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,17 +13,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 4a62f02d98ed06df4a3eea1b3f253f5e91ff7115
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikace UWP v sadě Visual Studio
 Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) řídí stav spuštění aplikace – spuštění, pozastavení, obnovení a ukončení aplikace v odpovědi na akce uživatelů a stavu zařízení. Při ladění, systém Windows vypíná tyto aktivační události. Toto téma popisuje, jak má provést tyto události v ladicím programu.  
@@ -31,19 +30,6 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
  Toto téma také popisuje, jak ladit **úlohy na pozadí**. Úlohy na pozadí umožňují provádění některých operací v procesech na pozadí, i když není aplikace spuštěna. Ladicí program můžete použít pro umístění vaší aplikace v režimu ladění a potom – bez spuštění uživatelského rozhraní – spuštění a ladění úloh na pozadí.  
   
  Další informace o úlohách správy životního cyklu procesu a pozadí najdete v části [spuštění, obnovení a multitasking](/windows/uwp/launch-resume/index).  
-  
-##  <a name="BKMK_In_this_topic"></a>V tomto tématu  
- [Události správu životního cyklu proces spuštění](#BKMK_Trigger_Process_Lifecycle_Management_events)  
-  
- [Aktivační události úlohy na pozadí](#BKMK_Trigger_background_tasks)  
-  
--   [Aktivační událost úloh na pozadí z standardní ladicí relace](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
-  
--   [Aktivují úlohy na pozadí, když není aplikace spuštěna](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
-  
- [Aktivovat události procesu správy životního cyklu a úlohy z aplikace nainstalované na pozadí](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
-  
- [Diagnostika chyb aktivace úlohy pozadí](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a>Události správu životního cyklu proces spuštění  
  Windows můžete pozastavit vaší aplikace, když uživatel přepíná směrem od nebo když Windows vstupuje do stavu snížené spotřeby energie. Může reagovat `Suspending` události uložení příslušné aplikace a uživatelská data do trvalého úložiště a k uvolnění prostředků. Když je aplikace byl obnoven z **pozastaveno** stavu, přejde **systémem** stavu a bude pokračovat, kde bylo při bylo pozastaveno. Může reagovat `Resuming` událostí obnovte nebo aktualizujte stav aplikace a uvolnit prostředky.  
@@ -88,7 +74,7 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
   
 2.  Otevřete stránku vlastnosti ladění pro projekt spuštění. V Průzkumníku řešení vyberte projekt. Na **ladění** nabídce zvolte **vlastnosti**.  
   
-     Pro projekty C++, možná budete muset Rozbalit **vlastnosti konfigurace** a potom zvolte **ladění**.  
+     Projekty C++ a JavaScript, rozbalte položku **vlastnosti konfigurace** a potom zvolte **ladění**.  
   
 3.  Proveďte jednu z těchto akcí:  
   
@@ -109,7 +95,7 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
      ![Pozastavit, pokračovat, ukončete a úlohy na pozadí](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
 ##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a>Aktivovat události procesu správy životního cyklu a úlohy z aplikace nainstalované na pozadí  
- Použijte dialogové okno ladění aplikace nainstalována načíst aplikaci, která je již nainstalován do ladicího programu. Může například ladění aplikace nainstalovaná z Microsoft Store nebo ladění aplikace, když máte zdrojové soubory pro aplikace, ale ne projekt Visual Studio pro aplikaci. Dialogové okno ladění nainstalované aplikace umožňuje že spuštění aplikace v režimu ladění v sadě Visual Studio počítači nebo na vzdáleném zařízení, nebo chcete-li nastavit aplikaci spustit v režimu ladění, ale nespustí se. Najdete v článku **nainstalovanou aplikaci spustit v ladicím programu** části [spustit relaci ladění v aplikaci UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger).
+ Použití **ladění nainstalován balíček aplikace** dialogové okno načíst aplikaci, která je již nainstalován do ladicího programu. Může například ladění aplikace nainstalovaná z Microsoft Store nebo ladění aplikace, když máte zdrojové soubory pro aplikace, ale ne projekt Visual Studio pro aplikaci. **Ladění nainstalován balíček aplikace** dialogové okno umožňuje spuštění aplikace v režimu ladění v sadě Visual Studio počítači nebo na vzdáleném zařízení, nebo chcete-li nastavit aplikaci spustit v režimu ladění, ale nespustí se. Další informace najdete v tématu [ladění balíček nainstalovanou aplikaci](../debugger/debug-installed-app-package.md).
   
  Jakmile aplikace je načten do ladicího programu, můžete použít některý z výše popsaných postupů.  
   
@@ -127,5 +113,5 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
 ## <a name="see-also"></a>Viz také  
  [Testování aplikací pro UPW pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Životní cyklus aplikace](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [Spuštění, obnovení a multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Životní cyklus aplikace](/windows/uwp/launch-resume/app-lifecycle)   
+ [Spuštění, obnovení a multitasking](/windows/uwp/launch-resume/index)

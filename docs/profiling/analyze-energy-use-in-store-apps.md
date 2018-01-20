@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 9ad762745627c2c30378f5017d88e78b00921d4a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6728f940b1d8613587b6b879324bd37a2a35e2d
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analýza spotřeby energie v aplikacích pro UPW
 Visual Studio **spotřeba energie na** profileru pomáhá analyzovat power a spotřeby energie aplikací UWP do úsporného režimu tablet zařízení, která používají nebo jeho část čas na své vlastní baterie. Na zařízení napájeném z baterie může aplikace s příliš vysokou spotřebou energie způsobit tak velkou nespokojenost zákazníka, že ji může dokonce i odinstalovat. Optimalizace energie můžete zvýšit přijetí vaší aplikace a použít zákazníků.  
@@ -106,7 +106,7 @@ if (performance && performance.mark) {
      Aplikace Visual Studio analyzuje shromážděná data a zobrazuje výsledky.  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a>Shromažďovat data profilu energie pro nainstalovanou aplikaci  
- Nástroj Spotřeba energie lze spustit pouze v aplikacích pro Windows Store 8.1, které jsou spouštěny z řešení aplikace Visual Studio nebo jsou instalovány z Windows Store. Když je řešení otevřené v sadě Visual Studio, je výchozí cíl **spouštěný projekt**. Zacílení nainstalované aplikace:  
+ Spotřeba energie na nástroj lze spustit jen u aplikace UPW, které jsou spouštěny z řešení sady Visual Studio nebo jsou nainstalované ze služby Microsoft Store. Když je řešení otevřené v sadě Visual Studio, je výchozí cíl **spouštěný projekt**. Zacílení nainstalované aplikace:  
   
 1.  Zvolte **změnit cíl** a potom zvolte **nainstalované aplikace**.  
   
@@ -127,10 +127,10 @@ if (performance && performance.mark) {
 |-|-|  
 |![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Soubor sestavy má název sestavy*RRRRMMDD hh: mm*.diagsession. Pokud se rozhodnete sestavu uložit, můžete název změnit.|  
 |![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Časová osa ukazuje délku relace profilace, aktivační události životního cyklu aplikace a uživatelské značky.|  
-|![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Přetažením modrých panelů můžete vybrat určitou oblast časové osy a omezit tak sestavu jen na tuto část časové osy.|  
+|![Step 3](../profiling/media/procguid_3.png "ProcGuid_3")|Přetažením modrých panelů můžete vybrat určitou oblast časové osy a omezit tak sestavu jen na tuto část časové osy.|  
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|**Spotřeby energie** grafu je Víceřádkový graf, který zobrazuje změny ve výkonu způsobený prostředků zařízení během relace profilování. Profiler Spotřeba energie sleduje výkon využívaný procesorem, síťovou aktivitou a displejem.|  
 |![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|**Prostředky (On/vypnutém)** graf obsahuje podrobnosti o síti náklady na energii. **Sítě** panelu představuje čas, který síťové připojení není otevřené. **Přenos dat** podřízené panelu je čas, aby byla aplikace příjem nebo odeslání dat přes síť.|  
-|![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|**Energie využití: Souhrn** ukazuje přímo úměrná množství celkovou spotřebu, která byla použita ve vybrané časové osy procesoru, síťové aktivity a zobrazení na obrazovce.|  
+|![Step 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|**Energie využití: Souhrn** ukazuje přímo úměrná množství celkovou spotřebu, která byla použita ve vybrané časové osy procesoru, síťové aktivity a zobrazení na obrazovce.|  
   
  **K analýze dat profilu energie**  
   

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: efd4ca5457a1175b19deddfd4194091dbcb2864e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cb0ed99e341e89aaaa295d2fc4a4cf25f726e2f5
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="debugging-applications"></a>Ladicí aplikace
 V následujících částech se zabývají ladění pro konkrétní typy aplikací. Typy jinou aplikaci a různé jazyky vyžadují různá nastavení a techniky a dispozici různé problémy, které je potřeba ladit.  
@@ -31,7 +31,7 @@ V následujících částech se zabývají ladění pro konkrétní typy aplikac
   
 |||  
 |-|-|  
-|[Ladění UWP a aplikací Windows 8.1](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Popisuje, jak k ladění aplikace UWP.|  
+|[Ladění aplikací pro UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Popisuje, jak k ladění aplikace UWP.|  
 |[Ladění spravovaného kódu](../debugger/debugging-managed-code.md)|Popisuje, jak k ladění spravovaného kódu (Visual C#, Visual Basic a F3).|  
 |[Ladění nativního kódu](../debugger/debugging-native-code.md)|Popisuje, jak ladit jiný druh nativních aplikací C++.|  
 |[Ladění kódu GPU](../debugger/debugging-gpu-code.md)|Popisuje postup ladění kódu C++, která běží na grafický procesor (GPU).|  

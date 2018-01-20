@@ -1,5 +1,5 @@
 ---
-title: "Ladění kódu HTML a CSS (UPW a aplikace Windows 8.1) | Microsoft Docs"
+title: "Ladění kódu HTML a CSS v aplikacích pro UPW | Microsoft Docs"
 ms.custom: 
 ms.date: 07/17/2017
 ms.reviewer: 
@@ -8,32 +8,26 @@ ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.WebClient.DomExplorer
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
+dev_langs: JavaScript
 helpviewer_keywords:
 - debugging, CSS
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-ms.assetid: 6d156cff-36c6-425a-acf8-e1f02d4f7869
 caps.latest.revision: "101"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 59ec4b4a7b0f8c924c09608b8cda34473820c1f5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="debug-html-and-css-in-uwp-and-windows-81-apps"></a>Ladění kódu HTML a CSS v UWP a aplikace pro Windows 8.1
-![Platí pro systém Windows a Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Ladění kódu HTML a CSS v aplikacích pro UPW v sadě Visual Studio
   
- Pro aplikace, JavaScript Visual Studio poskytuje komplexní ladění prostředí, které obsahuje funkce, které jsou pro vývojáře v aplikaci Internet Explorer a Visual Studio. Tyto funkce jsou podporované pro aplikace UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)], aplikace Windows Phone a pro aplikace vytvořené pomocí nástroje sady Visual Studio pro Apache Cordova.  
+ Pro aplikace, JavaScript Visual Studio poskytuje komplexní ladění prostředí, které obsahuje funkce, které jsou pro vývojáře v aplikaci Internet Explorer a Visual Studio. Tyto funkce jsou podporované pro aplikace UWP a pro aplikace vytvořené pomocí nástroje sady Visual Studio pro Apache Cordova.  
   
  Použití interaktivní ladění modelu DOM kontroly nástroje poskytované můžete zobrazit a upravit kód vykreslené značky HTML a CSS. Provedete to vše bez zastavení a spuštění ladicího programu.
   
@@ -67,11 +61,11 @@ ms.lasthandoff: 01/10/2018
   
 1.  Vytvořte nové řešení v sadě Visual Studio výběrem **soubor** > **nový projekt**.  
   
-2.  Zvolte **JavaScript** > **úložiště**, vyberte buď **aplikací pro Windows** nebo **aplikace Windows Phone**a potom zvolte  **Prázdná aplikace**.  
+2.  Zvolte **JavaScript** > **univerzální pro Windows**a potom zvolte **WinJS aplikace**.  
   
 3.  Zadejte název projektu, například `FlipViewApp`a zvolte **OK** k vytvoření dané aplikace.  
   
-4.  V textu elementu default.html přidejte tento kód:  
+4.  V textu elementu index.html přidejte tento kód:  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -129,9 +123,9 @@ ms.lasthandoff: 01/10/2018
   
         function updateImages() {  
   
-            pages.setAt(0, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223195" });  
-            pages.setAt(1, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223196" });  
-            pages.setAt(2, { flipImg: "http://go.microsoft.com/fwlink/?LinkID=223197" });  
+            pages.setAt(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+            pages.setAt(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+            pages.setAt(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
         };  
   
         app.oncheckpoint = function (args) {  
@@ -148,19 +142,17 @@ ms.lasthandoff: 01/10/2018
     })();  
     ```  
   
-     Následující obrázek znázorňuje, co chcete zobrazit, pokud jsme tuto aplikaci spustit v emulátoru telefonu (bude vypadat podobně jako v simulátoru). Však získat aplikaci do tohoto stavu jsme bude mít první vyřešit počet chyb.  
+     Následující obrázek znázorňuje, co chcete zobrazit, pokud jsme spustit tuto aplikaci. Však získat aplikaci do tohoto stavu jsme bude mít první vyřešit počet chyb.  
   
      ![Aplikace FlipView zobrazující očekávané výsledky](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  Vyberte buď **simulátoru** nebo **emulátoru 8.1 WVGA 4 palce 512MB** z rozevíracího seznamu vedle položky **spustit ladění** tlačítko **ladění**nástrojů:  
+7.  Zvolte **místního počítače** z rozevíracího seznamu vedle položky **spustit ladění** tlačítko **ladění** nástrojů:  
   
      ![Vyberte možnost ladění cílového seznamu](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  Zvolte **ladění** > **spustit ladění**, nebo stiskněte klávesu F5, ke spouštění vaší aplikace v režimu ladění.  
   
-     Toto spouští aplikaci v simulátoru nebo emulátor telefonu, ale protože stylu má několik chyb v něm uvidíte většinou prázdnou obrazovku. První `FlipView` bitové kopie se zobrazí v Čtvereček blízko poloviny obrazovky.  
-  
-9. Pokud spouštíte aplikaci v simulátoru, vyberte **změnit řešení** příkazu panelu nástrojů na pravé straně simulátoru konfigurace rozlišení obrazovky 1 280 x 800. Tím bude zajištěno, že hodnoty zobrazené v následujících krocích shodovat, co se zobrazí v simulátoru.  
+     Toto spouští aplikaci, ale protože stylu má několik chyb v něm uvidíte většinou prázdnou obrazovku. První `FlipView` bitové kopie se zobrazí v Čtvereček blízko poloviny obrazovky.  
   
 10. Přepněte do sady Visual Studio a zvolte **Průzkumníka modelu DOM** kartě.  
   
@@ -169,7 +161,7 @@ ms.lasthandoff: 01/10/2018
   
 11. V okně Průzkumníka modelu DOM vyberte element DIV pro oddíl, který má ID `"fView"`. Chcete-li zobrazit a vybrat správný element DIV použijte klávesy se šipkami. (Klávesu šipka doprava vám umožní zobrazit podřízené položky elementu.)  
   
-     ![Průzkumník modelu DOM](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
+     ![DOM Explorer](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
     >  Můžete také vybrat DIV element v levém dolním rohu okna konzoly jazyka JavaScript zadáním `select(fView)` na >> vstupní řádku a stisknutím klávesy Enter.  
@@ -188,16 +180,16 @@ ms.lasthandoff: 01/10/2018
   
 14. V hlavním okně Průzkumníka modelu DOM dvakrát klikněte na styl vložené výšky a šířky `fView` DIV element. Nyní můžete upravit hodnoty v tomto poli. V tomto scénáři chceme je úplně odebrat.  
   
-15. Vyberte `width: 100px;height: 100px;`, stiskněte klávesu Delete a potom stiskněte klávesu Enter. Po stisknutí klávesy Enter, nové hodnoty se okamžitě projeví v simulátoru nebo Phone emulátoru, i když nejsou zastavit relaci ladění.  
+15. V hlavním okně klikněte dvakrát na `width: 100px;height: 100px;`, stiskněte **odstranit** klíče a potom stiskněte klávesu **Enter**. Po stisknutí klávesy Enter, nové hodnoty se okamžitě projeví v aplikaci, i když nejsou zastavit relaci ladění.  
   
     > [!IMPORTANT]
     >  Jak můžete aktualizovat atributy v okně Průzkumníka modelu DOM, můžete také aktualizovat hodnoty, které se zobrazují na **styly**, **počítané**, a **rozložení** karty. Další informace najdete v tématu [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md) a [ladění rozložení pomocí Průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md).  
   
-16. Přepnout do aplikace tak, že vyberete Phone emulátoru nebo simulátoru, nebo pomocí Alt + Tab.  
+16. Výběrem nebo pomocí Alt + Tab umožňuje přepnout do aplikace.  
   
      Nyní `FlipView` ovládací prvek se zobrazí větší než velikost obrazovky simulátoru nebo emulátor telefonu. Toto není určený výsledek. K prozkoumání, přepněte zpět na Visual Studio.  
   
-17. V Průzkumníku modelu DOM., vyberte **počítané** kartě znovu a otevřete pravidlo výšku. FView element stále zobrazuje hodnota 100 %, podle očekávání ze šablon stylů CSS, ale vypočtená hodnota se rovná simulátoru výška obrazovky (pro příklad, 800px nebo 667.67px), což není co chceme pro tuto aplikaci. Chcete-li prozkoumat, můžete odebrat výška a šířka pro `fView` DIV element.  
+17. V Průzkumníku modelu DOM., vyberte **počítané** kartě znovu a otevřete pravidlo výšku. FView element stále zobrazuje hodnota 100 %, podle očekávání ze šablon stylů CSS, ale vypočtená hodnota se rovná výška obrazovky aplikace (například 800px 667.67px, nebo s jinou hodnotou), což je, není co chceme pro tuto aplikaci. K prozkoumání v dalších krocích jsme odebrat výšky a šířky pro `fView` DIV element.  
   
 18. V **styly** kartě a zrušte zaškrtnutí políčka vlastností výšky a šířky pro `#fView` selektor šablon stylů CSS.  
   
@@ -209,13 +201,11 @@ ms.lasthandoff: 01/10/2018
   
 20. Chcete-li prozkoumat, přepněte do sady Visual Studio a zvolte **rozložení** a podívejte se na modelu pole elementu.  
   
-     V **rozložení** karty, zobrazí se následující hodnoty:  
+     V **rozložení** karty, zobrazí se následující:  
   
-    -   Pro simulátoru: 320px (posun) a 320px (okraje).  
+    -   255px (posun) a 255px (okraje) nebo podobné hodnoty, v závislosti na rozlišení vašeho zařízení. 
   
-    -   Pro emulátor Phone: 100px (posun) a 100px (okraje).  
-  
-     Následující obrázek znázorňuje jak **rozložení** karta vypadá, pokud používáte emulátor telefonu (100px posun a okraje).  
+     Následující obrázek znázorňuje jak **rozložení** karta vypadá, pokud používáte emulátor s 100px posun a okraje).  
   
      ![Karta rozložení Průzkumníka modelu DOM](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -265,24 +255,8 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]
 >  Zvýraznění elementy ukázáním je podporována pouze částečně v emulátoru Windows Phone.  
   
- Pro příklad, který ukazuje, jak vybrat elementy pomocí **vybrat element** tlačítko najdete v tématu [styly ladění šablon stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
-  
-##  <a name="BrowserSupport"></a>Prohlížeče a podporu platforem  
- Průzkumník modelu DOM a okna konzoly jazyka JavaScript jsou podporovány na následujících platformách:  
-  
--   Aplikace UWP [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] a aplikací Windows Phone pomocí jazyka JavaScript a HTML  
-  
--   Internet Explorer 11 a systémem[!INCLUDE[win81](../debugger/includes/win81_md.md)]  
-  
--   Internet Explorer 10 systémem[!INCLUDE[win8](../debugger/includes/win8_md.md)]  
-  
- Přejděte [sem](http://go.microsoft.com/fwlink/?LinkID=232448) ke stažení [!INCLUDE[win8](../debugger/includes/win8_md.md)] a Visual Studio.  
-  
 ## <a name="see-also"></a>Viz také  
  [Ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [Ladění stylů CSS pomocí Průzkumníka modelu DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
- [Ladění rozložení pomocí Průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md)   
- [Zobrazení naslouchacích procesů událostí DOM](../debugger/view-dom-event-listeners.md)   
  [Aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [Ladění ovládacího prvku webového zobrazení](../debugger/debug-a-webview-control.md)   
  [Klávesové zkratky](../debugger/keyboard-shortcuts-html-and-javascript.md)   

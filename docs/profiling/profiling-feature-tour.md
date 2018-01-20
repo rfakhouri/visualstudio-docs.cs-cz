@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2542ce19d51dd3aa3031c71da3c23f7ec73ac240
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="profiling-feature-tour"></a>Prohlídka funkce profilace
 
@@ -32,7 +32,7 @@ Při ladění, můžete použít **diagnostické nástroje** okno k analýze CPU
 
 ![Zobrazení diagnostických nástrojů souhrnu](../profiling/media/prof-tour-cpu-and-memory-graph.gif "souhrn diagnostické nástroje")
 
-**Diagnostické nástroje** okno je často upřednostňovaný způsob, jak profil aplikace, ale můžete také provést analýzu postmortální aplikace místo. Pokud chcete další informace o různý přístup, najdete v části [spuštění profilace nástroje s nebo bez ladicí program](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+**Diagnostické nástroje** okno je často upřednostňovaný způsob, jak profil aplikace, ale pro verzi sestavení můžete také provést analýzu postmortální aplikace místo. Pokud chcete další informace o různý přístup, najdete v části [spuštění profilace nástroje s nebo bez ladicí program](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Profilace nástroj pro podporu různých typů aplikací najdete v tématu [které nástroje?](#tool_support_info).
 
 ## <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 
@@ -119,13 +119,13 @@ V grafech můžete také použít k určení, zda existují procesoru vázaný n
 
 ## <a name="analyze-performance-javascript"></a>Analýza výkonu (JavaScript)
 
-Pro aplikace Windows Universal HTML můžete použít nástroje pro paměť jazyka JavaScript a HTML odezvy uživatelského rozhraní.
+Pro aplikace UWP můžete použít nástroje pro paměť jazyka JavaScript a HTML odezvy uživatelského rozhraní.
 
 Nástroj paměť jazyka JavaScript je podobná nástroj využití paměti k dispozici pro jiné typy aplikací. Tento nástroj slouží k pochopení využití paměti a najít nevracení paměti v aplikaci. Další podrobnosti o tomto nástroji najdete v tématu [paměť jazyka JavaScript](../profiling/javascript-memory.md).
 
 ![Paměť jazyka JavaScript profilace nástroj](../profiling/media/diagjsmemory.png "DiagJSMemory")
 
-Chcete-li diagnostikovat odezvy uživatelského rozhraní, pomalé načítání čas a pomalé visual aktualizace v aplikacích Windows Universal HTML, použijte nástroj odezvy uživatelského rozhraní HTML. Využití je podobná nástroje časová osa aplikace pro jiné typy aplikací. Další informace najdete v tématu [odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md).
+Chcete-li diagnostikovat odezvy uživatelského rozhraní, pomalé načítání čas a pomalé visual aktualizace v aplikacích pro UPW, použijte nástroj odezvy uživatelského rozhraní HTML. Využití je podobná nástroje časová osa aplikace pro jiné typy aplikací. Další informace najdete v tématu [odezvy uživatelského rozhraní HTML](../profiling/html-ui-responsiveness.md).
 
 ![Profilace nástroj odezvy uživatelského rozhraní HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
 
@@ -151,7 +151,7 @@ Pokud potřebujete například instrumentace funkce, které nejsou aktuálně na
 
 Tady je tabulku, která obsahuje seznam různých nástrojů, které nabízí Visual Studio a typy jiný projekt můžete například vytvořit pomocí:
   
-|Nástroj výkon|Windows desktop|Univerzální/úložiště systému Windows|ASP.NET/ASP.NET jádra|  
+|Nástroj výkon|Windows desktop|UWP|ASP.NET/ASP.NET jádra|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Využití paměti](../profiling/memory-usage.md)|Ano|Ano|Ano|  
 |[Využití procesoru](../profiling/cpu-usage.md)|Ano|Ano|Ano (ne pro .NET Core/ASP.NET Core)|  

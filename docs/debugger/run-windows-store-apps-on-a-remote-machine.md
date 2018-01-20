@@ -1,5 +1,5 @@
 ---
-title: "Spuštění aplikace UPW a Windows 8.1 ve vzdáleném počítači | Microsoft Docs"
+title: "Spuštění aplikace UWP ve vzdáleném počítači | Microsoft Docs"
 ms.custom: 
 ms.date: 01/05/2018
 ms.reviewer: 
@@ -18,35 +18,32 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: uwp
-ms.openlocfilehash: 3e27aae0b9a8e57575015d1d8d5baee3803959a9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/19/2018
 ---
-# <a name="run-uwp-and-windows-81-apps-on-a-remote-machine"></a>Spuštění aplikace UPW a Windows 8.1 ve vzdáleném počítači  
+# <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Spuštění aplikace UWP ve vzdáleném počítači v sadě Visual Studio
   
-Ke spuštění aplikace UPW nebo Windows 8.1 ve vzdáleném počítači, je nutné připojit se pomocí nástroje Remote Tools pro sadu Visual Studio. Nástroje remote tools umožňují spouštět, ladit, profil a testování aplikace pro UPW, která běží na jedno zařízení z druhého počítače, který běží v sadě Visual Studio. Spuštění na vzdáleném zařízení může být zvláště efektivní, když počítač Visual Studio nepodporuje funkce, které jsou specifické pro aplikace UWP, například dotykového ovládání, geografického umístění a fyzické orientace. Toto téma popisuje postupy pro konfiguraci a spouští vzdálenou relaci.
+Ke spuštění aplikace UPW ve vzdáleném počítači, je nutné připojit se pomocí nástroje Remote Tools pro sadu Visual Studio. Nástroje remote tools umožňují spouštět, ladit, profil a testování aplikace pro UPW, která běží na jedno zařízení z druhého počítače, který běží v sadě Visual Studio. Spuštění na vzdáleném zařízení může být zvláště efektivní, když počítač Visual Studio nepodporuje funkce, které jsou specifické pro aplikace UWP, například dotykového ovládání, geografického umístění a fyzické orientace. Toto téma popisuje postupy pro konfiguraci a spouští vzdálenou relaci.
 
 V některých scénářích nástrojů pro vzdálenou automaticky nainstaluje, když nasadíte na vzdáleném zařízení.
 
 - Pro počítače s Windows 10 systémem Creators aktualizace a novější verze budou automaticky nainstalovány nástroje pro vzdálenou.
 - Pro zařízení s Windows 10 Xbox, IOT a HoloLens budou automaticky nainstalovány nástroje pro vzdálenou.
-- Pro Windows Phone, musíte být fyzicky připojení k telefonu, je třeba nainstalovat [licence pro vývojáře](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) (Windows Phone 8 a 8.1), nebo povolte [režim vývojáře](/windows/uwp/get-started/enable-your-device-for-development) (Windows Mobile 10), a vy musíte Vyberte **zařízení** jako cíl ladění. Nástroje pro vzdálenou nejsou požadovaná nebo podporované.
+- Pro systém Windows Mobile 10, musíte být fyzicky připojení k telefonu, je nutné povolit [režim vývojáře](/windows/uwp/get-started/enable-your-device-for-development) a je nutné vybrat **zařízení** jako cíl ladění. Nástroje pro vzdálenou nejsou požadovaná nebo podporované.
 
-Pro počítače s Windows 8.1 a počítače s Windows 10 pre-Creator aktualizace verzí systému Windows nainstalujte nástroje pro vzdálenou ve vzdáleném počítači ručně předtím, než můžete ladit. Postupujte podle pokynů v tomto tématu. 
+Pro počítače s Windows 10 pre-Creator aktualizace verzí systému Windows nainstalujte nástroje pro vzdálenou ve vzdáleném počítači ručně předtím, než můžete ladit. Postupujte podle pokynů v tomto tématu. 
   
 ##  <a name="BKMK_Prerequisites"></a>Požadavky  
  Ladění na vzdáleném zařízení:  
   
--   Vzdálené zařízení a počítače Visual Studio musí být připojené přes síť, nebo připojené přímo pomocí kabelu USB nebo sítě Ethernet. Ladění po Internetu není podporováno.  
+- Vzdálené zařízení a počítače Visual Studio musí být připojené přes síť, nebo připojené přímo pomocí kabelu USB nebo sítě Ethernet. Ladění po Internetu není podporováno.  
 
-- Vzdálené zařízení musí být povolen pro vývoj.
-
-    - Pro zařízení s Windows 8 a Windows 8.1 [licence pro vývojáře](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh974578.aspx) musí být nainstalován na vzdáleném zařízení.
-    - Pro zařízení s Windows 10, musíte povolit [režim vývojáře](/windows/uwp/get-started/enable-your-device-for-development). 
+- Je nutné povolit [režim vývojáře](/windows/uwp/get-started/enable-your-device-for-development). 
   
--   Pro počítače s Windows 10 s verzí systému Windows 10 starší než Windows 10 Creator aktualizace, je nutné [instalaci a spuštění vzdáleného ladění součásti](#BKMK_download).
+- Pro počítače s Windows 10 s verzí systému Windows 10 starší než Windows 10 Creator aktualizace, je nutné [instalaci a spuštění vzdáleného ladění součásti](#BKMK_download).
   
 ##  <a name="BKMK_Security"></a>Zabezpečení  
 Ve výchozím nastavení **Universal (nešifrovaného protokolu)** se používá ve Windows 10. Tuto protokolu lze používat pouze v důvěryhodných sítích. Ladění připojení je zranitelný vůči uživateli se zlými úmysly kteří může zachytávat a měnit data, které jsou předávány mezi vývoj a vzdáleného počítače.
@@ -56,7 +53,7 @@ Ve výchozím nastavení **Universal (nešifrovaného protokolu)** se používá
   
 ##  <a name="BKMK_DirectConnect"></a>Jak se připojit přímo pomocí kabelu USB 
 
-Ve Windows 10, můžete nasadit do zařízení připojená k portu USB výběrem **zařízení** místo **vzdáleného počítače** jako cíl nasazení (můžete to provést **standardní** panelu nástrojů nebo na stránce vlastností ladění). Pro Windows 8.1 musí být nainstalované vzdálené nástroje na zařízení, než se můžete připojit přímo.
+Ve Windows 10, můžete nasadit do zařízení připojená k portu USB výběrem **zařízení** místo **vzdáleného počítače** jako cíl nasazení (můžete to provést **standardní** panelu nástrojů nebo na stránce vlastností ladění).
 
 ##  <a name="BKMK_ConnectVS"></a>Konfigurace projektu Visual Studia pro vzdálené ladění  
  Zadejte vzdálené zařízení pro připojení k ve vlastnostech projektu. Postup se liší v závislosti na programovací jazyk. Můžete zadat síťový název vzdáleného zařízení nebo můžete vybrat z **vzdáleného připojení** dialogové okno.  
@@ -94,7 +91,7 @@ Ve Windows 10, můžete nasadit do zařízení připojená k portu USB výběrem
   
 ## <a name="BKMK_download"></a>Stáhněte a nainstalujte nástroje pro vzdálenou (předběžné Creators aktualizace)
 
-Pokud používáte Windows 8.1 nebo pre-Creator aktualizace verze systému Windows 10, postupujte podle těchto pokynů. Jinak můžete tuto část přeskočit.
+Pokud používáte pre-Creator aktualizace verze systému Windows 10, postupujte podle těchto pokynů. Jinak můžete tuto část přeskočit.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
@@ -105,8 +102,9 @@ Pokud používáte Windows 8.1 nebo pre-Creator aktualizace verze systému Windo
 ##  <a name="BKMK_RunRemoteDebug"></a>Spustit relaci vzdáleného ladění  
  Spuštění, zastavení a přechod na relaci vzdáleného ladění stejným způsobem jako místní relace. Na verze pre-Creator aktualizace systému Windows 10 zkontrolujte, zda že je spuštěna Remote Debugging Monitor na vzdáleném zařízení.  
   
- Zvolte **spustit ladění** na **ladění** nabídky (klávesové: F5). Projekt je překompilovat, pak nasazené a spustit na vzdáleném zařízení. Ladicí program pozastaví spuštění na zarážkách a můžete krok do, přes a z vašeho kódu. Zvolte **Zastavte ladění** ukončete svou relaci ladění a zavřete vzdálené aplikace. Další informace najdete v tématu [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
+ Zvolte **spustit ladění** na **ladění** nabídky (klávesové: F5). Projekt je překompilovat, pak nasazené a spustit na vzdáleném zařízení. Ladicí program pozastaví spuštění na zarážkách a můžete krok do, přes a z vašeho kódu. Zvolte **Zastavte ladění** ukončete svou relaci ladění a zavřete vzdálené aplikace.
   
 ## <a name="see-also"></a>Viz také  
+ [Rozšířené možnosti vzdálené nasazení](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)  
  [Testování aplikací pro UPW pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
  [Ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

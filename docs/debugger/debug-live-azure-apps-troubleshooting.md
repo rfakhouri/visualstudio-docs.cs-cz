@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d007bdf5d2029e896167a2fd7b32359c661aa7fa
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 7792e22398afd476703407e8ae2159e0f1afd931
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Řešení potíží a známé problémy pro snímek ladění v sadě Visual Studio
 
@@ -71,6 +71,17 @@ Proveďte tyto kroky:
 - Speciální proměnné, jako například *$FUNCTION* nebo *$CALLER*, nelze vyhodnotit v podmíněné příkazy nebo logpoints pro projekty ASP.NET Core.
 - Ladění snímku nefunguje na aplikační služby, které mají [místní ukládání do mezipaměti](/azure/app-service/app-service-local-cache) zapnutý.
 - Ladění aplikace API snímku není aktuálně podporován.
+
+## <a name="site-extension-upgrade"></a>Upgrade rozšíření lokality
+
+Ladění snímku a Application Insights závisí na ICorProfiler, která načte do procesu lokality a způsobí, že soubor uzamčení problémy při upgradu. Doporučujeme tento proces na Ujistěte se, že neexistuje žádný čas dolů, pokud pro vaše pracoviště.
+
+- Vytvoření [nasazovací Slot](/azure/app-service/web-sites-staged-publishing) v rámci vaší služby App Service a nasazení webu na Slot.
+- Prohodit Slot s provozním z Průzkumníku cloudu v sadě Visual Studio nebo z portálu Azure.
+- Zastavení webu Slot. Bude to trvat několik sekund ukončit vypnout procesu w3wp.exe lokality ze všech instancí.
+- Upgrade lokality rozšíření slotu z modulu Kudu lokality nebo na portálu Azure (*okně služby aplikace > Nástroje pro vývoj > Rozšíření > aktualizace*).
+- Spusťte server Slot. Doporučujeme, abyste na společnosti, znovu ji tedy.
+- Prohodit Slot s produkčním.
 
 ## <a name="see-also"></a>Viz také
 

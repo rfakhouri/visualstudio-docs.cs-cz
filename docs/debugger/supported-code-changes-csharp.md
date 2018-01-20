@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: 6147390fb8551ea472590525cb36d9dc210b9a84
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 628aad6f1ae097ea040a6043db1ef12f0b60a7a4
+ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Podporované změny kódu (C# a Visual Basic)
 Upravit a pokračovat zpracovává většinu typů změn kódu uvnitř těla metody. Během ladění, ale nejde použít většinu změn mimo metod a několik změn uvnitř těla metody. Chcete-li tyto nepodporované změny použít, musí Zastavte ladění a restartujte s novou verzí kódu.
@@ -86,7 +86,7 @@ Následující tabulka uvádí změny, které mohou být provedeny C# a kód jaz
 
 ## <a name="unsupported-app-scenarios"></a>Aplikace nepodporované scénáře
 
-Nepodporované aplikace a platformy zahrnout ASP.NET 5, emulátor Silverlight 5, Windows Phone a Windows Phone a Windows 8.1.
+Nepodporované aplikace a platformy zahrnout ASP.NET 5, Silverlight 5 a Windows 8.1.
 
 > [!NOTE]
 > Aplikace, které jsou podporovány zahrnuty UWP Windows 10 a x86 a x64 aplikací, které se zaměřují rozhraní .NET Framework 4.6 desktop nebo novější verze (pouze plochy verze rozhraní .NET Framework je).
