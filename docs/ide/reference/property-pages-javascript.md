@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6665452bd074c083216120732cff8a3f18a74dca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4e4f01a74a3246a326c1695371a303472901c9ea
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="property-pages-javascript"></a>Stránky vlastností, JavaScript
 **Stránky vlastností**poskytuje přístup k nastavení projektu. Stránky, které se zobrazují v můžete použít **stránky vlastností** Chcete-li změnit vlastnosti projektu.  
@@ -68,11 +68,11 @@ Následující stránky a možnosti se zobrazí v **stránky vlastností**.
  **Ladicí program na spuštění**  
  Určuje výchozí hostitel pro ladicí program.  
 
--   Vyberte **místního počítače** a spusťte aplikaci v sadě Visual Studio hostitelském počítači. Další informace najdete v tématu [spouštění aplikací v místním počítači](http://go.microsoft.com/fwlink/?LinkId=234912).  
+-   Vyberte **místního počítače** a spusťte aplikaci v sadě Visual Studio hostitelském počítači. Další informace najdete v tématu [spouštění aplikací v místním počítači](../../debugger/run-windows-store-apps-on-the-local-machine.md).  
 
--   Vyberte **simulátoru** a spusťte aplikaci v simulátoru. Další informace najdete v tématu [spouštění aplikací v simulátoru](http://go.microsoft.com/fwlink/?LinkId=234913).  
+-   Vyberte **simulátoru** a spusťte aplikaci v simulátoru. Další informace najdete v tématu [spouštění aplikací v simulátoru](../../debugger/run-windows-store-apps-in-the-simulator.md).  
 
--   Vyberte **vzdáleného počítače** a spusťte aplikaci ve vzdáleném počítači. Další informace o vzdáleném ladění najdete v tématu [spouštění aplikací ve vzdáleném počítači](http://go.microsoft.com/fwlink/?LinkId=234914).  
+-   Vyberte **vzdáleného počítače** a spusťte aplikaci ve vzdáleném počítači. Další informace o vzdáleném ladění najdete v tématu [spouštění aplikací ve vzdáleném počítači](../../debugger/run-windows-store-apps-on-a-remote-machine.md).  
 
 **Spuštění aplikace**  
 Určuje, zda chcete při stisknutím klávesy F5 nebo klikněte na tlačítko spustit aplikaci **ladění**, **spustit ladění**. Vyberte **Ano** k spustit aplikaci; jinak vyberte možnost **ne**. Pokud vyberete **ne**, můžete stále ladění aplikace, pokud používáte jinou metodu se ho spustit.  

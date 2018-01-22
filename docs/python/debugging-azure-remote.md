@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0cac283dacb0f63005f67dc279087726de26772
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 2703b526dd0823afa678dbe57eb6cf45e57b6da6
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Vzdálené ladění kódu jazyka Python v Azure
 
-[Python podporují v sadě Visual Studio](installation.md) zahrnuje možnost vzdáleně ladění kódu Python, která běží na Azure App Service. Na rozdíl od jednoduchého vzdáleného ladění, cílový počítač v tomto scénáři není přímo přístupné přes protokol TCP, proto Visual Studio poskytuje proxy server, který zveřejňuje protokol ladicí program přes protokol HTTP. Projekty vytvořené pomocí šablony webového automaticky tento proxy server nakonfigurovat v vygenerovaného `web.debug.config` souboru. Vzdálené ladění je také povoleno, když publikujete konfiguraci ladění projektu, jak je popsáno na [publikování do služby Azure App Service](template-web.md#publishing-to-azure-app-service).
+[Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md) zahrnuje možnost vzdáleně ladění kódu Python, která běží na Azure App Service. Na rozdíl od jednoduchého vzdáleného ladění, cílový počítač v tomto scénáři není přímo přístupné přes protokol TCP, proto Visual Studio poskytuje proxy server, který zveřejňuje protokol ladicí program přes protokol HTTP. Projekty vytvořené pomocí šablony webového automaticky tento proxy server nakonfigurovat v vygenerovaného `web.debug.config` souboru. Vzdálené ladění je také povoleno, když publikujete konfiguraci ladění projektu, jak je popsáno na [publikování do služby Azure App Service](template-web.md#publishing-to-azure-app-service).
 
 Protože Azure vzdálené ladění používá webové sokety, sockets musí být povolen pro App Service pomocí [portál Azure](https://portal.azure.com) přechodem na **Nastavení > Nastavení aplikace** vypíná a zapíná  **Obecná nastavení > webové sokety** k **na**, pak výběrem **Uložit** na použití změny. (Všimněte si, že **ladění** nastavení se nevztahuje na ladění Python.)
 

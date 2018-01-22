@@ -15,18 +15,18 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 007cf0508d2feedcf5f23898555f57b0fe0c908d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e029855ed34c227d1fe9d4d940f15995f65a2d30
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation – element (šablony sady Visual Studio)
 Určuje, zda uživatel je vyzván pro projekt prostřednictvím umístění pro uložení **nový projekt** dialogové okno při vytvoření projektu. Pokud tento element je nastaven na `true`, pak bude uživatel vyzván k uložení umístění; Pokud `false`, pak vyzve nejsou. (To znamená, dočasný projekt se vytvoří.)  
   
  \<VSTemplate >  
- \<TemplateData >  
- \<PromptForSaveOnCreation >  
+ \<TemplateData>  
+ \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,7 +57,7 @@ Určuje, zda uživatel je vyzván pro projekt prostřednictvím umístění pro 
 ## <a name="remarks"></a>Poznámky  
  `PromptForSaveOnCreation`je volitelný element. Výchozí hodnota je `false`.  
   
- Dočasné projekty jsou projekty, které můžete vytvořit a upravit bez uložení obsah tohoto projektu na disku. Další informace najdete v tématu [NIB dočasné projekty](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Dočasné projekty jsou projekty, které můžete vytvořit a upravit bez uložení obsah tohoto projektu na disku.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad nastaví hodnotu `PromptForSaveOnCreation` rovna `false`, která určuje umožňující projektu, který bude vytvořen jako dočasné projektu.  
@@ -88,5 +88,5 @@ Určuje, zda uživatel je vyzván pro projekt prostřednictvím umístění pro 
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
+ [Visual Studio Template Schema Reference](../extensibility/visual-studio-template-schema-reference.md)   
  [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)

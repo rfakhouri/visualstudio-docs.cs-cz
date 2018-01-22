@@ -13,11 +13,11 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 9ee06a96eeb0d7fd0cec7c0f2e22159741767e01
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3f77630af8cf31e1e5b18cdf06fd5642c83a17a9
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Vytváření projektů R v sadě Visual Studio
 
@@ -28,7 +28,7 @@ Projekty jsou vždy spravované v rámci sady Visual Studio *řešení*, která 
 ## <a name="creating-a-new-r-project"></a>Vytvoření nového projektu R
 
 1. Spuštění sady Visual Studio.
-1. Zvolte **soubor > Nový > projekt...** (Ctrl + Shift + N)
+1. Zvolte **soubor > Nový > projekt...** (Ctrl+Shift+N)
 1. Vyberte z v části "R projekt" **šablony > R**, název a umístění poskytnout projekt a vyberte **OK**:
 
     ![Dialogové okno Nový projekt pro R v sadě Visual Studio (RTVS v VS2017)](media/getting-started-01-new-project.png)
@@ -50,9 +50,9 @@ Tento příkaz vytvoří projekt s prázdnou `script.R` soubor otevřete v edito
 | EnableCodeIndexing | Ano | Určuje, jestli se má spouštět indexování úlohy pro rychlejší hledání kódu na pozadí. |
 | UseSpacesForTab | Ano | Určuje, zda se mají vkládat mezery (Ano) nebo znaku tabulátoru (ne) při stisknutí klávesy Tab v editoru. |
 | NumSpacesForTab | 2 | Počet mezer vkládaných Pokud UseSpacesForTab kladná. |
-| Kódování | ZNAKOVÉ SADY UTF-8 | Výchozí kódování pro `.R` soubory. |
+| Kódování | UTF-8 | Výchozí kódování pro `.R` soubory. |
 | RnwWeave | Sweave | Balíček pro použití při tkaní Rnw souboru. |
-| Latexu | pdfLaTeX | Knihovnu, která má použít při převodu RMarkdwon do PDF. |
+| LaTeX | pdfLaTeX | Knihovnu, která má použít při převodu RMarkdwon do PDF. |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>Převádění složku souborů do projektu R
 
@@ -119,6 +119,6 @@ V následujícím příkladu obsahuje řešení projektu R se model sestavuje po
 Projekt zvýrazněná s tučné písmo je "počáteční" projekt pro řešení; Chcete-li ji změnit, klikněte pravým tlačítkem myši na jiný projekt a vyberte **nastavit jako spouštěný projekt**.
 
 > [!Note]
-> V současné době není k dispozici žádné explicitní R C# nebo integrace jazyka C++ na místě (protože je pro Python, najdete v části [vytváření rozšíření pro C++ pro jazyk Python](../python/cpp-and-python.md)).  Ale nejsou k dispozici, které poskytují c a C++ mostů pro R. knihovny
+> V současné době není k dispozici žádné explicitní R C# nebo integrace jazyka C++ na místě (protože je pro Python, najdete v části [vytváření rozšíření pro C++ pro jazyk Python](../python/working-with-c-cpp-python-in-visual-studio.md)).  Ale nejsou k dispozici, které poskytují c a C++ mostů pro R. knihovny
 
 Další informace o obecně řízení projektů a řešení najdete v tématu [řešení a projektů v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md).

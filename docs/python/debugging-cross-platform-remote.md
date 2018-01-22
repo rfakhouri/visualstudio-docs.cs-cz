@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: df8e23f0544571aa07e8b013c62922e1a69868d2
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 0d7c6644dc3f52629ff91d2f6b5dd44dbdba6b3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Vzdálené ladění kódu jazyka Python v systému Linux
 
@@ -38,7 +38,7 @@ Následující položky jsou potřeba provést tento postup:
 - Vzdálený počítač se systémem Python v operačním systému jako Mac OSX nebo Linux.
 - Port 5678 (příchozí) otevřen v bráně firewall na tento počítač, který je výchozí pro vzdálené ladění.
 
-Můžete snadno vytvořit [virtuální počítače s Linuxem v Azure](/azure/virtual-machines/linux/creation-choices) a [přístup pomocí vzdálené plochy](/azure/virtual-machines/linux/use-remote-desktop) ze systému Windows. Je vhodné Ubuntu pro virtuální počítač, protože Python je nainstalována ve výchozím nastavení; jinak, najdete v seznamu na [nainstalovat překladač Pythonu zvoleného](python-environments.md#selecting-and-installing-python-interpreters) pro další Python umístění pro stahování.
+Můžete snadno vytvořit [virtuální počítače s Linuxem v Azure](/azure/virtual-machines/linux/creation-choices) a [přístup pomocí vzdálené plochy](/azure/virtual-machines/linux/use-remote-desktop) ze systému Windows. Je vhodné Ubuntu pro virtuální počítač, protože Python je nainstalována ve výchozím nastavení; jinak, najdete v seznamu na [nainstalovat překladač Pythonu zvoleného](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) pro další Python umístění pro stahování.
 
 Podrobné informace o vytváření pravidla brány firewall pro virtuální počítač Azure, najdete v části [otevřít porty pro virtuální počítač v Azure pomocí webu Azure portal](/azure/virtual-machines/windows/nsg-quickstart-portal).
 

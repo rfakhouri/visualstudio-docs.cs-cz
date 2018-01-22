@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 91707d75ca71ae7e035322c8a9c25ab6e4befe43
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a35010af9ee0b0d7ad885f607b8fc1e2d54a19ba
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Nové generace projektu: Pod pokličkou, část 2
 V [nové generace projektu: pod pokličkou, jednu část](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) jsme viděli jak **nový projekt** dialogu zadá. Předpokládejme, jste vybrali **aplikaci Visual C# Windows**, vyplněné **název** a **umístění** textová pole a kliknutelnou OK.  
@@ -28,7 +28,7 @@ V [nové generace projektu: pod pokličkou, jednu část](../../extensibility/in
 ## <a name="generating-the-solution-files"></a>Generování souborů řešení  
  Výběr šablony aplikace přesměruje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozbalte a otevřete odpovídající soubor .vstemplate a spusťte šablonu interpretovat příkazy XML, který v tomto souboru. Tyto příkazy vytváření projektů a položek projektu do nové nebo existující řešení.  
   
- Šablona rozbalí zdrojové soubory, názvem šablony položek ze stejné složky ZIP, který obsahuje soubor .vstemplate. Šablona zkopíruje tyto soubory do nového projektu, přizpůsobení je odpovídajícím způsobem. Přehled šablon projektů a položek najdete v tématu [NIB: šablony sady Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041).  
+ Šablona rozbalí zdrojové soubory, názvem šablony položek ze stejné složky ZIP, který obsahuje soubor .vstemplate. Šablona zkopíruje tyto soubory do nového projektu, přizpůsobení je odpovídajícím způsobem.  
   
 ### <a name="template-parameter-replacement"></a>Nahrazení parametru šablony  
  Pokud šablona zkopíruje na nový projekt šablony položky, nahradí všechny parametry šablony řetězce pro přizpůsobení souboru. Parametr šablony je speciální token, který je a následnou dolaru, například, $date$.  

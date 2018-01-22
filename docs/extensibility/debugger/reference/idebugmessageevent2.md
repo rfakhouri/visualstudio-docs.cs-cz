@@ -15,11 +15,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5e14e8ea2df83520724b9f6663c9624d54cf772c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e61b6bae37b9e37dc9e448122f4595f3cba20f7f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Toto rozhraní používá stroj ladění (DE) k odeslání zprávy do Visual Studia, která vyžaduje odpověď od uživatele.  
@@ -49,7 +49,7 @@ IDebugMessageEvent2 : IUnknown
 ## <a name="remarks"></a>Poznámky  
  DE bude používat toto rozhraní, pokud to vyžaduje konkrétní odpověď od uživatele pro danou zprávu. Například pokud je DE získá zprávu "Přístup byl odepřen" po pokusu o vzdáleně připojit k programu, DE odešle tato konkrétní zpráva k sadě Visual Studio v `IDebugMessageEvent2` událost s styl box zpráva `MB_RETRYCANCEL`. To umožňuje uživateli opakovat nebo ukončit v operaci připojení.  
   
- DE Určuje, jak se tato zpráva je zpracovávat souladu s konvencemi prostředí Win32 funkce `MessageBox` (viz [AfxMessageBox –](http://msdn.microsoft.com/Library/d66d0328-cdcc-48f6-96a4-badf089099c8) podrobnosti).  
+ DE Určuje, jak se tato zpráva je zpracovávat souladu s konvencemi prostředí Win32 funkce `MessageBox` (viz [AfxMessageBox –](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) podrobnosti).  
   
  Použití [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) rozhraní pro odesílání zpráv pro Visual Studio, které nevyžadují odpověď od uživatele.  
   
@@ -58,7 +58,7 @@ IDebugMessageEvent2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

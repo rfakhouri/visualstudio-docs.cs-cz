@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b04bf8fcb72b9ea4578516dcd58fde35a6d4e347
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 569f827a549e240629a492237bb89ae5f0fcd25f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="python-web-project-templates"></a>Šablony webových projektů jazyka Python
 
@@ -33,7 +33,7 @@ Spuštění projektu vytvořené ze šablony (přístupné prostřednictvím **s
 
 Šablony Bottle, Flask a Django zahrnují výchozí web s některými stránky a statické soubory. Tento kód stačí ke spuštění a ladění serveru místně (kdy některé nastavení je potřeba získat z prostředí) a nasazení do Microsoft Azure (kde [WSGI aplikace](http://www.python.org/dev/peps/pep-3333/) objekt musí být zadán).
 
-Při vytváření projektu ze šablony konkrétní rozhraní, zobrazí se dialogové okno můžete nainstaluje potřebné balíčky pomocí nástroje pip. Doporučujeme také používat [virtuální prostředí](python-environments.md#global-and-virtual-environments) pro webové projekty tak, aby se správnými závislostmi jsou zahrnuty při publikování webu:
+Při vytváření projektu ze šablony konkrétní rozhraní, zobrazí se dialogové okno můžete nainstaluje potřebné balíčky pomocí nástroje pip. Doporučujeme také používat [virtuální prostředí](managing-python-environments-in-visual-studio.md#global-and-virtual-environments) pro webové projekty tak, aby se správnými závislostmi jsou zahrnuty při publikování webu:
 
 ![Dialog, který nainstaluje potřebné balíčky pro šablony projektu](media/template-web-requirements-txt-wizard.png)
 
@@ -81,7 +81,7 @@ Všechny projektu vlastnost nebo prostředí může být zadána proměnná se s
 
 ### <a name="sample-pyramid-configuration"></a>Ukázková konfigurace pyramidy
 
-Jehlanový aplikací jsou aktuálně nejlépe vytvořené pomocí `pcreate` nástroj příkazového řádku. Po vytvoření aplikace, může být importován pomocí [z existující Python code](python-projects.md#creating-a-project-from-existing-files) šablony. Až to uděláte, vyberte **obecné webového projektu** přizpůsobení nakonfigurovat možnosti. Tato nastavení předpokládá nainstalovanou Pyramid do virtuálního prostředí v `..\env`.
+Jehlanový aplikací jsou aktuálně nejlépe vytvořené pomocí `pcreate` nástroj příkazového řádku. Po vytvoření aplikace, může být importován pomocí [z existující Python code](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) šablony. Až to uděláte, vyberte **obecné webového projektu** přizpůsobení nakonfigurovat možnosti. Tato nastavení předpokládá nainstalovanou Pyramid do virtuálního prostředí v `..\env`.
 
 - **Ladění** skupiny:
   - **Port serveru**: 6543 (nebo ať je nakonfigurovaný v souborech .ini)

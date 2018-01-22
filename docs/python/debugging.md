@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a260001e661c9d6d0f9a1b472caa07c25637ff7
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 5cd67d031cd41a1f36de68d7372fdfcfd6f8e476
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="debugging-your-python-code"></a>Ladění kódu jazyka Python
 
@@ -45,9 +45,9 @@ Také najdete v následujících tématech ladění konkrétní scénáře:
 <a name="debugging-without-a-project"></a>
 
 > [!Tip]
-> Python v sadě Visual Studio podporuje ladění bez projektu. Samostatné Python soubor otevřít, klikněte pravým tlačítkem v editoru vybrat **začínat ladění**, a Visual Studio spustí skript s prostředím výchozí globální (najdete v části [prostředí Python](python-environments.md)) a žádné argumenty. Ale od toho máte plná podpora ladění.
+> Python v sadě Visual Studio podporuje ladění bez projektu. Samostatné Python soubor otevřít, klikněte pravým tlačítkem v editoru vybrat **začínat ladění**, a Visual Studio spustí skript s prostředím výchozí globální (najdete v části [prostředí Python](managing-python-environments-in-visual-studio.md)) a žádné argumenty. Ale od toho máte plná podpora ladění.
 >
-> K řízení prostředí a argumenty, vytvoření projektu pro kód, který je snadno pracovat [z existující Python code](python-projects.md#creating-a-project-from-existing-files) šablona projektu.
+> K řízení prostředí a argumenty, vytvoření projektu pro kód, který je snadno pracovat [z existující Python code](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) šablona projektu.
 
 <a name="debugging-with-a-project"></a>
 
@@ -58,7 +58,7 @@ Základní pracovní postup ladění zahrnuje nastavení zarážek, krokování 
 Ladicí relace začíná **ladění > Spustit ladění** příkaz, **spustit** tlačítka na panelu nástrojů nebo klávesy F5. Tyto akce spuštění vašeho projektu po spuštění souboru (ukazuje tučné v Průzkumníku řešení) se aktivního prostředí projektu a argumenty příkazového řádku nebo cesty pro hledání, které bylo zadáno v okně Vlastnosti projektu (najdete v části [ladění projektu možnosti](#project-debugging-options). Pokud z nějakého důvodu nemáte k dispozici po spuštění souboru nastavit, ale výstup – okno Python stručně se zobrazí a zmizí. V takovém případě klikněte pravým tlačítkem na příslušný soubor a vyberte **nastavit jako spouštěcí soubor**.
 
 > [!Note]
-> Ladicí program vždy začíná active prostředí Python pro projekt. Chcete-li změnit prostředí, zkontrolujte různých jednu aktivní, jak je popsáno na [prostředí Python](python-environments.md).
+> Ladicí program vždy začíná active prostředí Python pro projekt. Chcete-li změnit prostředí, zkontrolujte různých jednu aktivní, jak je popsáno na [prostředí Python](managing-python-environments-in-visual-studio.md).
 
 ### <a name="breakpoints"></a>Zarážky
 
@@ -164,7 +164,7 @@ Ve výchozím nastavení spustí ladicí program vašeho programu standardní Sp
 | Překladač cesta | Přepíše cesta přidružená aktuální prostředí.  Hodnota může být užitečné pro spouštění vašeho skriptu s nestandardní překladač. |
 | Proměnné prostředí | V tomto poli víceřádkový text, přidat položky ve formátu `NAME=VALUE`. Protože toto nastavení je použito jako poslední, v horní části všechny stávající globální proměnné a po `PYTHONPATH` je nastaven podle nastavení cesty hledání ji umožňuje ručně přepsat všechny z nich jiné proměnné. |
 
-< a name = "the – ladění interaktivní – okno"</a>
+<a name="the-debug-interactive-window"</a>
 
 ## <a name="immediate-and-interactive-windows"></a>Okamžité a interaktivní windows
 

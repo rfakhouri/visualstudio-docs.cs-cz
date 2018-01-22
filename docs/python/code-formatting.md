@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8aa91005774baf1a3154418a5e0b7780d0238b69
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 96ef5d340a961671b199e521b2d6ee5d05794160
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="formatting-python-code"></a>Formátování kódu jazyka Python
 
@@ -30,7 +30,7 @@ Visual Studio vám umožní rychle přeformátovat kód tak, aby odpovídala př
 
 Možnosti se konfigurují pomocí **nástroje > Možnosti > textový Editor > Python > formátování** a jeho vnořené karty a ve výchozím nastavení jsou nastavené tak, aby odpovídaly nadmnožinou [průvodci správným stylem období 8](http://www.python.org/dev/peps/pep-0008/). **Obecné** karta určuje, kdy je použit formátování; nastavení tři karty jsou popsaná v tomto tématu.
 
-[Python podporují v sadě Visual Studio](installation.md) také přidá užitečné [zadejte komentář odstavce](#fill-comment-paragraph-command) příkaz **Upravit > Upřesnit** nabídky, jak je popsáno následujících.
+[Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md) také přidá užitečné [zadejte komentář odstavce](#fill-comment-paragraph-command) příkaz **Upravit > Upřesnit** nabídky, jak je popsáno následujících.
 
 ## <a name="spacing"></a>Mezery
 

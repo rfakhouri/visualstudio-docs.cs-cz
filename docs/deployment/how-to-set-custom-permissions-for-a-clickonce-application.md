@@ -20,11 +20,11 @@ author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload: multiple
-ms.openlocfilehash: 671f48cfac80595832f7aeee71e0e87388f947e6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a2a9a3315b58fa0181c004917081362cf60df4c0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Postupy: Nastavení vlastních oprávnění pro aplikaci ClickOnce
 Můžete nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, která používá výchozí oprávnění pro zóny Internet nebo místní Intranet. Případně můžete vytvořit vlastní zónu pro konkrétní oprávnění, které aplikace potřebuje. Můžete to provést úpravou oprávnění zabezpečení na **zabezpečení** stránky **Návrhář projektu**.  
@@ -50,7 +50,7 @@ Můžete nasadit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md
 7.  Před `</applicationRequestMinimum>` elementu, přidejte kód XML pro oprávnění, která vaše aplikace vyžaduje.  
   
     > [!NOTE]
-    >  Můžete použít `ToXml` metoda oprávnění nastavená pro generování kódu XML pro manifest aplikace. Například pro vygenerování XML pro <xref:System.Security.Permissions.EnvironmentPermission> sadu oprávnění, volání <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metoda. Další informace o struktuře oprávnění XML naleznete v tématu [NIB: postupy: Import a nastavte oprávnění pomocí souboru XML](http://msdn.microsoft.com/en-us/dea16b54-c108-408a-ac36-cdc05f746236).  
+    >  Můžete použít `ToXml` metoda oprávnění nastavená pro generování kódu XML pro manifest aplikace. Například pro vygenerování XML pro <xref:System.Security.Permissions.EnvironmentPermission> sadu oprávnění, volání <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> metoda.  
   
 ## <a name="see-also"></a>Viz také  
  [Zabezpečování aplikací ClickOnce](../deployment/securing-clickonce-applications.md)   

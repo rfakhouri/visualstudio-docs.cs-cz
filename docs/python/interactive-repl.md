@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 01e3e0d3969b483a77b524cb6fd2713c6653678e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: bf04cbfaff76747c952f9cf86e93fea47be2e91f
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Práce s oknem interaktivní Python
 
@@ -38,7 +38,7 @@ Visual Studio má počet Python REPL režimy zvolit:
 
 Toto téma popisuje **standardní** a **ladění** REPL režimy. Informace o režimech IPython v [pomocí IPython REPL](interactive-repl-ipython.md).
 
-Podrobný návod s příklady, včetně interakce s editoru, jako je například Ctrl + Enter, najdete v části [kurzu krok 3: použití okna interaktivní REPL](vs-tutorial-01-03.md). Video úvod naleznete v tématu [interaktivní okno Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2m22s).
+Podrobný návod s příklady, včetně interakce s editoru, jako je například Ctrl + Enter, najdete v části [kurzu krok 3: použití okna interaktivní REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Video úvod naleznete v tématu [interaktivní okno Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2m22s).
 
 > [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
@@ -104,7 +104,7 @@ Zadání `dir()` v oboru zobrazí platné identifikátory v tomto oboru, včetn�
 
 ![Interaktivní okno v oboru importlib –](media/interactive-importlib-scope.png)
 
-< a name = "odesílání kódu na interaktivní"</a>
+<a name="sending-code-to-interactive"</a>
 
 ## <a name="send-code-to-interactive-command"></a>Kód poslat interaktivního příkazu
 

@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio C++ základní pokyny kontrolu odkaz | Microsoft Docs"
 ms.custom: 
-ms.date: 11/15/2017
+ms.date: 01/18/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: c17574722804409b58d648af66b255888e945db2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d5db13aa350e33a297981066f36c3d1dfd1ecb67
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ základní pokyny pro kontrolu odkaz
 Tato část uvádí C++ základní pokyny pro kontrolu upozornění. Informace o analýze kódu najdete v tématu [/ analyze (Analýza kódu)](/cpp/build/reference/analyze-code-analysis) a [rychlé zahájení: Analýza kódu pro C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).  
@@ -26,17 +26,17 @@ Tato část uvádí C++ základní pokyny pro kontrolu upozornění. Informace o
 
 ## <a name="ownerpointer-group"></a>OWNER_POINTER skupiny
 
-[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
+[C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md)  
   Vrátí objekt oboru místo přidělené haldy, pokud má konstruktor move. V tématu [C++ základní pokyny R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr). 
      
 [C26403 RESET_OR_DELETE_OWNER](C26403.md)  
   Resetovat nebo explicitně odstranit vlastníka\<T > ukazatel % variable %. V tématu [C++ základní pokyny R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
      
 [C26404 DONT_DELETE_INVALID](C26404.md)  
-  Neodstraňujte vlastníka\<T > což může být v neplatném stavu. V tématu [C++ základní pokyny R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
+  Neodstraňujte vlastníka\<T >, může být v neplatném stavu. V tématu [C++ základní pokyny R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
 
 [C26405 DONT_ASSIGN_TO_VALID](C26405.md)  
-  Nepřiřazujte vlastníka\<T > což může být v platném stavu. V tématu [C++ základní pokyny R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
+  Nepřiřazujte vlastníka\<T >, může být v platném stavu. V tématu [C++ základní pokyny R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
 
 [C26406 DONT_ASSIGN_RAW_TO_OWNER](C26406.md)  
   Nepřiřazujte nezpracovaná ukazatel na vlastníka\<T >. V tématu [C++ základní pokyny R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).  
@@ -55,8 +55,8 @@ Tato část uvádí C++ základní pokyny pro kontrolu upozornění. Informace o
 
 ## <a name="rawpointer-group"></a>RAW_POINTER skupiny
  
-[C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)  
-Nepřiřazujte výsledek přidělení nebo volání funkce s vlastníkem\<T > vrátí hodnotu k nezpracované ukazatel, použijte vlastníka<T> místo. V tématu [C++ základní pokyny I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
+[C26400  NO_RAW_POINTER_ASSIGNMENT](c26400.md)  
+Nepřiřazujte výsledek přidělení nebo volání funkce s vlastníkem\<T > vrátí hodnotu k nezpracované ukazatel, pomocí vlastníka\<T > místo toho. V tématu [C++ základní pokyny I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
 
 [C26401 DONT_DELETE_NON_OWNER](c26401.md)  
 Neodstraňujte nezpracovaná ukazatele, který není vlastníkem\<T >. V tématu [C++ základní pokyny I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw). 
@@ -123,16 +123,30 @@ Neodstraňujte nezpracovaná ukazatele, který není vlastníkem\<T >. V tématu
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md)  
   Globální inicializátoru objektu extern % symbol %, má přístup k. V tématu [C++ základní pokyny I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).  
   
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) nepoužívejte nepojmenované objekty s vlastní vytváření a odstraňování. [ES.84: (Nedoporučujeme) deklarovat místní proměnné bez názvu](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 ## <a name="class-group"></a>Skupina – třída
     
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md)  
   Pokud definovat nebo odstranit všechny operace výchozí typ '% symbol %', definovat nebo odstraňte všechny. V tématu [C++ základní pokyny C.21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).  
+
+
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) funkce 'symbol %' by měl být označen 'override'. V tématu [ C.128: virtuální funkce by měl určovat právě jeden virtuální, mají přednost před, nebo konečné](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final). 
+
   
 [C26434 DONT_HIDE_METHODS](C26434.md)  
   Funkce '% symbol_1 %' skryje bez virtuální funkce '% symbol_2 %'. V tématu [C++ základní pokyny C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).  
   
+
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) funkce 'symbol %' by měl určovat právě jeden z 'virtuální', 'přepsat' nebo 'konečné'. V tématu [ C.128: virtuální funkce by měl určovat právě jeden virtuální, mají přednost před, nebo konečné](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md). 
+
+
 [C26436 NEED_VIRTUAL_DTOR](C26436.md)  
   Typ '% symbol %' s virtuální funkcí musí buď veřejné virtuální nebo chráněného nevirtuální destruktor. V tématu [C++ základní pokyny C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).  
+
+
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) přepíše destruktor neměli používat explicitní 'override' nebo 'virtuální' specifikátory. V tématu [C.128: virtuální funkce by měl určovat právě jeden virtuální, mají přednost před, nebo konečné](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+
 
 ## <a name="type-group"></a>Typ skupiny
     
@@ -158,37 +172,37 @@ Neodstraňujte nezpracovaná ukazatele, který není vlastníkem\<T >. V tématu
 
 ## <a name="const-group"></a>CONST skupiny
     
-C26460 USE_CONST_REFERENCE_ARGUMENTS:  
+C26460 USE_CONST_REFERENCE_ARGUMENTS  
   Argument odkaz '% argument %' pro funkci '% funkce %, může být označen jako `const`. V tématu [C++ základní pokyny con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
 C26461 USE_CONST_POINTER_ARGUMENTS: argument ukazatel '% argument %' pro funkci '% funkce %, může být označen jako ukazatel na `const`. V tématu [C++ základní pokyny con.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).  
   
-C26462 USE_CONST_POINTER_FOR_VARIABLE:  
+C26462 USE_CONST_POINTER_FOR_VARIABLE  
   Hodnota ukazuje % variable % je přiřadit pouze jednou, označte ji jako ukazatel na `const`. V tématu [C++ základní pokyny con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26463 USE_CONST_FOR_ELEMENTS:  
+C26463 USE_CONST_FOR_ELEMENTS  
   Elementy pole % pole %, jsou přiřazeny pouze jednou, označit elementy `const`. V tématu [C++ základní pokyny con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26464 USE_CONST_POINTER_FOR_ELEMENTS:  
+C26464 USE_CONST_POINTER_FOR_ELEMENTS  
   Hodnoty ukazující na elementy pole % pole %, jsou přiřazeny pouze jednou, elementy označit jako ukazatel na `const`. V tématu [C++ základní pokyny con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
 
-C26496 USE_CONST_FOR_VARIABLE:  
+C26496 USE_CONST_FOR_VARIABLE  
   Proměnná % variable % je přiřadit pouze jednou, označte ji jako `const`. V tématu [C++ základní pokyny con.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).  
   
-C26497 USE_CONSTEXPR_FOR_FUNCTION:  
+C26497 USE_CONSTEXPR_FOR_FUNCTION  
   Tato funkce funkce % může být označen `constexpr` Pokud se požaduje vyhodnocení kompilaci. V tématu [C++ základní pokyny F.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rf-constexpr).  
   
-C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL:  
+C26498 USE_CONSTEXPR_FOR_FUNCTIONCALL  
   Pomocí této funkce % volání funkce % `constexpr` Pokud se požaduje vyhodnocení kompilaci. V tématu [C++ základní pokyny con.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-constexpr).  
 
 ## <a name="type-group"></a>Typ skupiny
-C26465 NO_CONST_CAST_UNNECESSARY:  
+C26465 NO_CONST_CAST_UNNECESSARY  
   Nepoužívejte `const_cast` přetypovat rychle `const`. `const_cast`není vyžadována. constness nebo volatility není odebírán tento převod. V tématu [C++ základní pokyny Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-constcast).  
   
-C26466 NO_STATIC_DOWNCAST_POLYMORPHIC:  
+C26466 NO_STATIC_DOWNCAST_POLYMORPHIC  
   Nepoužívejte `static_cast` downcasts. Přetypování z polymorfní typ měli používat dynamic_cast. V tématu [C++ základní pokyny Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-downcast).  
   
-C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR:  
+C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR  
   Nepoužívejte `reinterpret_cast`. Můžete použít přetypování z void * `static_cast`. V tématu [C++ základní pokyny Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).  
   
 [C26472 NO_CASTS_FOR_ARITHMETIC_CONVERSION](C26472.md)  
@@ -203,22 +217,22 @@ C26471 NO_REINTERPRET_CAST_FROM_VOID_PTR:
 [C26475 NO_FUNCTION_STYLE_CASTS](C26475.md)  
   Nepoužívejte styl funkce C-přetypování. V tématu [C++ základní pokyny ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).  
      
-C26490 NO_REINTERPRET_CAST:  
+C26490 NO_REINTERPRET_CAST  
   Nepoužívejte `reinterpret_cast`. V tématu [C++ základní pokyny Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26491 NO_STATIC_DOWNCAST:  
+C26491 NO_STATIC_DOWNCAST  
   Nepoužívejte `static_cast` downcasts. V tématu [C++ základní pokyny Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26492 NO_CONST_CAST:  
+C26492 NO_CONST_CAST  
   Nepoužívejte `const_cast` přetypovat rychle `const`. V tématu [C++ základní pokyny Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
     
-C26493 NO_CSTYLE_CAST:  
+C26493 NO_CSTYLE_CAST  
   Nepoužívejte přetypování ve stylu jazyka. V tématu [C++ základní pokyny Type.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type). 
      
-C26494 VAR_USE_BEFORE_INIT:  
+C26494 VAR_USE_BEFORE_INIT  
   Proměnná % variable % není inicializován. Vždy inicializujte objekt. V tématu [C++ základní pokyny Type.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
-C26495 MEMBER_UNINIT:  
+C26495 MEMBER_UNINIT  
   Proměnná % variable % není inicializován. Vždy inicializace členské proměnné. V tématu [C++ základní pokyny Type.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).  
   
 ## <a name="bounds-group"></a>ROZSAH skupiny
@@ -226,10 +240,10 @@ C26495 MEMBER_UNINIT:
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)   
   Nepoužívejte aritmetika ukazatele. Místo toho použijte rozpětí. V tématu [C++ základní pokyny Bounds.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26482 NO_DYNAMIC_ARRAY_INDEXING:  
+C26482 NO_DYNAMIC_ARRAY_INDEXING  
   Pouze index do polí pomocí konstantní výrazy. V tématu [C++ základní pokyny Bounds.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
   
-C26483 STATIC_INDEX_OUT_OF_RANGE:  
+C26483 STATIC_INDEX_OUT_OF_RANGE  
   Hodnota % hodnota je mimo rozsah (0, vázané % %) proměnné % variable %. Pouze index do polí pomocí konstantní výrazy, které jsou v rámci hranice pole. V tématu [C++ základní pokyny Bounds.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).  
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)   

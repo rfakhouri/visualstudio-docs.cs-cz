@@ -14,11 +14,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 6d9d468997d0e0f4cc913db1b9ac316f4e698f99
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 96d91fa687c914f0c3f98c4ddca64a93a5d70d02
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="wizards"></a>Průvodci
 Po vytvoření průvodce, obvykle je vhodné ho přidat do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), aby ostatní ho používat. Přidání průvodce se potom zobrazí v **přidat nový projekt** nebo **přidat novou položku** dialogová okna. Chcete-li zobrazit **přidat nový projekt** nebo **přidat novou položku** dialogové okno polí, klikněte pravým tlačítkem na otevřete řešení v **Průzkumníku řešení**, přejděte na **přidat**, a pak klikněte na tlačítko **nový projekt** nebo **novou položku**.  
@@ -50,9 +50,6 @@ Po vytvoření průvodce, obvykle je vhodné ho přidat do [!INCLUDE[vsprvs](../
 ## <a name="related-sections"></a>Související oddíly  
  [Typy projektů](../../extensibility/internals/project-types.md)  
  Obsahuje odkazy na další témata, které nabízí informace o tom, jak navrhnout nové typy projektů.  
-  
- [Návod: Vytvoření průvodce](http://msdn.microsoft.com/Library/adb41fe9-fcca-4e87-bf4f-bf2fa68e8b06)  
- Ukazuje, jak vytvořit průvodce.  
   
  [Rozšíření projektů](../../extensibility/extending-projects.md)  
  Popisuje způsob použití [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projekty a řešení pro uspořádání soubory kódu a soubory prostředků a implementaci řízení zdrojů.

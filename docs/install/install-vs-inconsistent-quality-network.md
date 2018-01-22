@@ -1,25 +1,24 @@
 ---
 title: "Nainstalujte na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích | Microsoft Docs"
 description: "Popisuje, jak funguje instalační program sady Visual Studio v podmínkách nespolehlivé mezi sítě a vysvětluje, jak ke stažení instalačních souborů před zahájením instalace."
-ms.date: 08/30/2017
-ms.reviewer: tims
+ms.date: 01/17/2018
+ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- '{{PLACEHOLDER}}'
-- '{{PLACEHOLDER}}'
-ms.assetid: 44DB1998-68CD-4560-870A-EE5B993DCF6E
-author: timsneath
+- installing Visual Studio
+- no internet connection
+author: tglee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 1d7b9b7084b91ace1f76d4d411f117df41cfd257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8b78f51c3b408d5a8c0723779cdf0b2d165aeec1
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Nainstalovat Visual Studio 2017 na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích
 
@@ -32,7 +31,7 @@ Doporučujeme vám, že zkusíte webovou Instalační službu sady Visual Studio
 Ale pokud vaše připojení k Internetu je k dispozici nebo nespolehlivé, můžete příkazového řádku k vytvoření místní mezipaměti souborů, které potřebujete k dokončení instalace v režimu offline. Tady je způsob.
 
 > [!NOTE]
-> Pokud jste správce organizace, který chce provést nasazení sady Visual Studio 2017 k síti klientské pracovní stanice, které jsou bránou firewall z Internetu, najdete v našich [vytvořit sítě instalaci sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) a [Zvláštní požadavky pro instalaci sady Visual Studio v režimu offline](../install/install-visual-studio-in-offline-environment.md) stránky.
+> Pokud jste správce organizace, který chce provést nasazení sady Visual Studio 2017 k síti klientské pracovní stanice, které jsou bránou firewall z Internetu, najdete v našich [vytvořit sítě instalaci sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) a [Instalaci certifikátů vyžadovaných pro instalaci sady Visual Studio offline](../install/install-certificates-for-visual-studio-offline.md) stránky.
 
 ## <a name="step-1---download-the-visual-studio-bootstrapper"></a>Krok 1 – stažení zaváděcího nástroje Visual Studio
 
@@ -84,8 +83,8 @@ Použijte tento příkaz ke spuštění instalace:
 
 ```c:\vs2017layout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional```
 
-  > [!NOTE]
-  > Pokud dojde k chybě, že podpis je neplatný, je nutné nainstalovat aktualizované certifikáty. Otevřete složku Certifikáty v mezipaměti v režimu offline. Dvakrát klikněte na každý ze souborů certifikátu a potom klikněte pomocí Průvodce správce certifikátů. Pokud se zobrazí výzva k zadání hesla, ponechte prázdné.
+> [!NOTE]
+> Pokud dojde k chybě, že podpis je neplatný, je nutné nainstalovat aktualizované certifikáty. Otevřete složku Certifikáty v mezipaměti v režimu offline. Dvakrát klikněte na každý ze souborů certifikátu a potom klikněte pomocí Průvodce správce certifikátů. Pokud se zobrazí výzva k zadání hesla, ponechte prázdné.
 
 ## <a name="list-of-language-locales"></a>Seznam národní prostředí
 
@@ -94,9 +93,9 @@ Použijte tento příkaz ke spuštění instalace:
 | cs-CZ | Čeština |
 | de-DE | Němčina |
 | en US | Angličtina |
-| ES-ES | Španělština |
+| es-ES | Španělština |
 | fr-FR | Francouzština |
-| IT-IT | Italština |
+| it-IT | Italština |
 | ja-JP | Japonština |
 | ko-KR | Korejština |
 | pl-PL | Polština |
@@ -104,7 +103,7 @@ Použijte tento příkaz ke spuštění instalace:
 | ru-RU | Ruština |
 | tr-TR | Turečtina |
 | zh-CN | -Čínština, zjednodušená čínština |
-| zh-TW. | Tradiční čínština – |
+| zh-TW | Tradiční čínština – |
 
 ## <a name="get-support"></a>Získat podporu
 V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

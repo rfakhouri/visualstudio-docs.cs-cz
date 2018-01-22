@@ -14,16 +14,16 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5c47295c1906c6517638bdf8e9c3a55897f38aa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 26cf161259736dbd2b2e26279842571d62f69352
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="extending-properties"></a>Rozšíření vlastnosti
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Vlastnosti** okno Prohlížeč universal vlastností pro komponenty modelu COM a modelu COM + a podporuje všechny [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produkty. **Vlastnosti** okno pracuje s `ITypeInfo` zadejte informace a metadata modelu COM + seznam vlastnosti doby návrhu pro aktuálně vybraný objekt v jakémkoli okně integrované vývojové prostředí (IDE).  
   
- **Vlastnosti** okno, které lze otevřít stisknutím klávesy F4 nebo výběrem **vlastnosti – okno** na **zobrazení** nabídce slouží k zobrazení a úpravy Konfigurace nezávislé, návrhu vlastností a událostí vybraných objektů. Vlastnosti závislá na konfiguraci, přidružené k řešení a projekty, se zobrazí na [stránky vlastností](../../extensibility/internals/property-pages.md). Další informace najdete v tématu [vlastnosti NIB: projektu](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [Správa možnosti konfigurace](../../extensibility/internals/managing-configuration-options.md), a [správy NIB: položka v projektech](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ **Vlastnosti** okno, které lze otevřít stisknutím klávesy F4 nebo výběrem **vlastnosti – okno** na **zobrazení** nabídce slouží k zobrazení a úpravy Konfigurace nezávislé, návrhu vlastností a událostí vybraných objektů. Vlastnosti závislá na konfiguraci, přidružené k řešení a projekty, se zobrazí na [stránky vlastností](../../extensibility/internals/property-pages.md). Další informace najdete [Správa možnosti konfigurace](../../extensibility/internals/managing-configuration-options.md).  
   
  ![Přehled vlastností okna](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Vlastnosti – okno  

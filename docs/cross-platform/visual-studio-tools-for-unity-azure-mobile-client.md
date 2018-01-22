@@ -14,11 +14,11 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 451b4f1f2580a55077bf3fc6a9ad3f16a2afaf0f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f6b7861b1cf027e4c2f47f711d6f47376dec3a7c
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="implement-the-azure-mobileserviceclient"></a>Implementace Azure MobileServiceClient
 
@@ -75,7 +75,7 @@ Měla by existovat pouze jedna instance `MobileServiceClient`, takže návod pou
   ```
 
   > [!NOTE]
-  > Pokud IntelliSense nerozpozná Microsoft.WindowsAzure obor názvů, zkontrolujte, že jste dokončili všechny kroky v [Příprava vývojového prostředí]() části.
+  > Pokud IntelliSense nerozpozná Microsoft.WindowsAzure obor názvů, zkontrolujte, že jste dokončili všechny kroky v [Příprava vývojového prostředí](visual-studio-tools-for-unity-azure-prepare.md) části.
 
 4. V předchozím kódu, nahraďte `MOBILE_APP_URL` s adresou URL back-endu mobilní aplikace.
 

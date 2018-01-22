@@ -16,11 +16,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 5ea7b08c95aa2844a65a9a6783774fe32c9e8c50
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Podpora pro projekt a vlastnosti konfigurace
 **Vlastnosti** okno v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) můžete zobrazit vlastnosti projektu a konfigurace. Stránky vlastností můžete zadat pro vlastní typ projektu, takže uživatel může nastavit vlastnosti pro vaši aplikaci.  
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/22/2017
  Spravovaná rozhraní balíčku pro projekty (MPFProj) poskytuje pomocné třídy pro vytváření a správu nového projektu systému. Zdrojový kód a kompilace pokyny naleznete v [sady MPF projektů – Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
 ## <a name="persistence-of-project-and-configuration-properties"></a>Trvalost projektu a vlastnosti konfigurace  
- Vlastnosti projektu a konfigurace jsou ukládány v souboru projektu, který má příponu názvu souboru, například přidružený typ projektu, .csproj, .vbproj a .myproj. Soubor šablony projektů jazyka obvykle používají ke generování souboru projektu. Existují však ve skutečnosti několik způsobů, jak přidružit typy projektů a šablon. Další informace najdete v tématu [NIB: šablony sady Visual Studio](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041) a [Directory popis šablony (. Soubory VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+ Vlastnosti projektu a konfigurace jsou ukládány v souboru projektu, který má příponu názvu souboru, například přidružený typ projektu, .csproj, .vbproj a .myproj. Soubor šablony projektů jazyka obvykle používají ke generování souboru projektu. Existují však ve skutečnosti několik způsobů, jak přidružit typy projektů a šablon. Další informace najdete v tématu [Directory popis šablony (. Soubory VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
  Vlastnosti projektu a konfigurace jsou vytvořené pomocí přidávání položek do souboru šablony. Tyto vlastnosti jsou pak k dispozici žádné vytvořených pomocí typu projektu, který používá tato šablona projektů. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]projekty a MPFProj používejte [není v sestavení: Přehled nástroje MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schématu pro soubory šablon. Tyto soubory obsahují PropertyGroup – část pro každou konfiguraci. Vlastnosti projekty jsou obvykle ukládány v první části PropertyGroup, který má argumentem konfigurace nastavena na hodnotu null. řetězec.  
   

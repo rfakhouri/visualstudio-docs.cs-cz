@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d14263c228cdbedc0f74acc20d81cfe58380812f
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: b33c96844abc9bbf4cc7bcd403626980e0bf37a5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro jazyk Python
 
@@ -91,7 +91,7 @@ Pro cloudové služby `ConfigureCloudService.ps1` skript používá `pip` nainst
 
 Poznámka: instance cloudové služby, musíte zadat všechny knihovny s příponami C nezahrnují kompilátory jazyka C předem zkompilovat binární soubory.
 
-PIP a jeho závislosti, jakož i balíčky v `requirements.txt`, se stáhnou automaticky a může se počítají jako využití fakturovatelné šířky pásma. V tématu [Správa požadované balíčky](python-environments.md#managing-required-packages-requirementstxt) podrobnosti o správě `requirements.txt` soubory.
+PIP a jeho závislosti, jakož i balíčky v `requirements.txt`, se stáhnou automaticky a může se počítají jako využití fakturovatelné šířky pásma. V tématu [Správa požadované balíčky](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) podrobnosti o správě `requirements.txt` soubory.
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 

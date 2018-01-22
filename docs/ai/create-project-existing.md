@@ -24,7 +24,7 @@ Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), je sn
 8. V případě potřeby spustit program stisknutím Ctrl + F5 nebo výběrem **ladění > Spustit bez ladění**. 
 
 > [!div class="nextstepaction"]
-> [Kurz: Práce s Python v sadě Visual Studio](https://docs.microsoft.com/visualstudio/python/vs-tutorial-01-00)
+> [Kurz: Práce s Python v sadě Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 
 ## <a name="see-also"></a>Viz také
 

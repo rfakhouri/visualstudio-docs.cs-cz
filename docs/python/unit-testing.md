@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 620e847b9da1e8becf2df66d070a290071248d84
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 509d8b001ff00f754df8cec0cc08194dbfc2ff3d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Nastavení pro kód Python testování částí
 
@@ -35,7 +35,7 @@ Toto téma obsahuje stručný obrys možnosti testování v sadě Visual Studio 
 
 Podle konvence, Visual Studio identifikuje testů jsou jako metody, jejichž názvy začínají `test`. Pokud chcete zobrazit toto chování, postupujte takto:
 
-1. Otevřete [projekt Python](python-projects.md) načíst v sadě Visual Studio, klikněte pravým tlačítkem na projekt, vyberte **Přidat > novou položku...** , pak vyberte **testování částí Python** následuje **přidat**.
+1. Otevřete [projekt Python](managing-python-projects-in-visual-studio.md) načíst v sadě Visual Studio, klikněte pravým tlačítkem na projekt, vyberte **Přidat > novou položku...** , pak vyberte **testování částí Python** následuje **přidat**.
 
 1. Tato akce vytvoří `test1.py` soubor s kódem, který importuje standardní `unittest` modulu, odvozená třída testu z `unittest.TestCase`a vyvolá `unittest.main()` Pokud spustíte skript přímo:
 
@@ -92,7 +92,7 @@ Spuštění ladění, nastavte počáteční zarážku ve vašem kódu, potom kl
 
 ![Ladění testu](media/unit-test-debugging.png)
 
-Můžete také použít **analýza pokrytí kódu pro vybrané testy** a **profil Test** příkazy, v závislosti na vaší verzi sady Visual Studio (najdete v článku [funkce matice](python-in-visual-studio.md#features-matrix)).
+Můžete také použít **analýza pokrytí kódu pro vybrané testy** a **profil Test** příkazy, v závislosti na vaší verzi sady Visual Studio (najdete v článku [funkce matice](overview-of-python-tools-for-visual-studio.md#features-matrix)).
 
 ### <a name="known-issues"></a>Známé problémy
 

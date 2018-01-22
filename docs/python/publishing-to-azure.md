@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 10da44e4766fa3a68a0f4d70a4c1e89f3f9ccf65
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 32e2f0d889bac5313201fd65bf98ce2a8243a284
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Publikování do služby Azure App Service
 
@@ -44,7 +44,7 @@ V tomto tématu:
 
 V tomto návodu budete potřebovat projekt webové aplikace založené na rozhraní Bottle, Flask a Django. Pokud ještě nemáte projektu a chcete pokusit proces publikování, vytvoření projektu jednoduchá testovací následujícím způsobem:
 
-1. V sadě Visual Studio, vyberte **soubor > Nový > projekt**, vyhledejte "Bottle", vyberte **Bottle webového projektu**, zadejte a název a cestu k projektu, klikněte na tlačítko **OK**. (Je součástí zatížení Python vývoj šablona Bottle; viz [instalace](installation.md).)
+1. V sadě Visual Studio, vyberte **soubor > Nový > projekt**, vyhledejte "Bottle", vyberte **Bottle webového projektu**, zadejte a název a cestu k projektu, klikněte na tlačítko **OK**. (Je součástí zatížení Python vývoj šablona Bottle; viz [instalace](installing-python-support-in-visual-studio.md).)
 
 1. Postupujte podle pokynů k instalaci externích balíčků, výběr **nainstalovat do virtuálního prostředí** a vaše upřednostňované základní překladač pro virtuální prostředí. Tato volba verze jazyka Python, které jsou nainstalované v App Service se obvykle shodují.
 

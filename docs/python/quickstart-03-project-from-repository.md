@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 66f99665fc9d580a3c0c366fa2922ea6a15e0e7c
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 74be5c65cbb4b2498f9904c6e021c774400bfbf8
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Rychlý úvod: klonovat úložiště Python kódu v sadě Visual Studio
 
-Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](installation.md), můžete snadno klonovat úložiště v kódu jazyka Python a vytvořte projekt z něj.
+Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](installing-python-support-in-visual-studio.md), můžete snadno klonovat úložiště v kódu jazyka Python a vytvořte projekt z něj.
 
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
 
@@ -71,15 +71,15 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 14. Spusťte program zjistíte, že první kontrola předá a program se zastaví v další koan. Pokračujte, opravte chyby a opětovné spuštění programu, jak chcete.
 
 > [!Important]
-> Ve tento rychlý start, kterou jste vytvořili přímé klon *python_koans* úložišti na Githubu. Takové úložiště je chráněný autorem z přímé změny, takže pokus o potvrzení změn do úložiště se nezdaří. V praxi vývojáři místo rozvětvit úložiště k tomuto účtu GitHub, ujistěte se, že změny a vytvořte žádosti o přijetí změn se odeslat tyto změny do původní úložiště. Tyto kroky jsou popsané v [kurzu kroku 6 – práce s Gitem](vs-tutorial-01-06.md).
+> Ve tento rychlý start, kterou jste vytvořili přímé klon *python_koans* úložišti na Githubu. Takové úložiště je chráněný autorem z přímé změny, takže pokus o potvrzení změn do úložiště se nezdaří. V praxi vývojáři místo rozvětvit úložiště k tomuto účtu GitHub, ujistěte se, že změny a vytvořte žádosti o přijetí změn se odeslat tyto změny do původní úložiště. Tyto kroky jsou popsané v [kurzu kroku 6 – práce s Gitem](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
 
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
-> [Kurz: Práce s Python v sadě Visual Studio](vs-tutorial-01-01.md)
+> [Kurz: Práce s Python v sadě Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Viz také
 
-- [Vytvoření prostředí pro existující překladač Pythonu](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Instalace podpory Python v sadě Visual Studio 2015 a starší](installation.md).
-- [Umístění instalace](installation.md#install-locations).
+- [Vytvoření prostředí pro existující překladač Pythonu](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Instalace podpory Python v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md).
+- [Umístění instalace](installing-python-support-in-visual-studio.md#install-locations).

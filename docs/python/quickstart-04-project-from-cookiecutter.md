@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0a866796ac9a4fb76c9f0ef8370d8c19217b8ee7
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: dfe00af70cdbfbe9c583d15fc5431dc7a85d8276
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Rychlý úvod: Vytvořte projekt ze šablony Cookiecutter
 
-Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](installation.md), je snadné vytvořit nový projekt ze šablony Cookiecutter, včetně mnoha z těch, které jsou publikovány na Githubu. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) poskytuje grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. To je součástí Visual Studio 2017 a je možné nainstalovat odděleně v dřívějších verzích sady Visual Studio.
+Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](installing-python-support-in-visual-studio.md), je snadné vytvořit nový projekt ze šablony Cookiecutter, včetně mnoha z těch, které jsou publikovány na Githubu. [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) poskytuje grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. To je součástí Visual Studio 2017 a je možné nainstalovat odděleně v dřívějších verzích sady Visual Studio.
 
 1. Tento rychlý start nejprve nainstalujte distribuční Anaconda3 Python, včetně nezbytných balíčků Python pro šablonu Cookiecutter zobrazeny zde. Spusťte instalační program sady Visual Studio, vyberte **upravit**, rozbalte položku Možnosti **vývoj Python** na pravé straně a vyberte možnost "Anaconda3" (32bitová nebo 64bitová verze). Všimněte si, že instalace může trvat delší dobu v závislosti na rychlosti sítě Internet, ale toto je nejjednodušší způsob, jak nainstalovat potřebné balíčky.
 
@@ -48,11 +48,11 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 ## <a name="next-steps"></a>Další kroky
 
 > [!div class="nextstepaction"]
-> [Kurz: Práce s Python v sadě Visual Studio](vs-tutorial-01-01.md)
+> [Kurz: Práce s Python v sadě Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 ## <a name="see-also"></a>Viz také
 
 - [Použití rozšíření Cookiecutter](cookiecutter.md)
-- [Vytvoření prostředí pro existující překladač Pythonu](python-environments.md#creating-an-environment-for-an-existing-interpreter).
-- [Instalace podpory Python v sadě Visual Studio 2015 a starší](installation.md).
-- [Umístění instalace](installation.md#install-locations).
+- [Vytvoření prostředí pro existující překladač Pythonu](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Instalace podpory Python v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md).
+- [Umístění instalace](installing-python-support-in-visual-studio.md#install-locations).

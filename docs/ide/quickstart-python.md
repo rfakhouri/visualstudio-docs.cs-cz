@@ -16,11 +16,11 @@ dev_langs: python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 684cbe21a7f6454549d2e014682533697306152b
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 756419ce7390ba727bc5847d95c86399838d972a
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Rychlý úvod: použijte sadu Visual Studio k vytvoření první webové aplikace Python
 
@@ -28,7 +28,7 @@ V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prost
 
 ## <a name="create-the-project"></a>Vytvoření projektu
 
-1. Otevřete Visual Studio 2017.
+1. Open Visual Studio 2017.
 
 1. Z panelu horní nabídce zvolte **soubor > Nový > projekt...** .
 
@@ -70,7 +70,7 @@ V tento rychlý start ale, pomocí knihovny Falcon prostředí proces instalaci 
 
 Další informace o Falcon, navštivte [falconframework.org](https://falconframework.org/).
 
-Všimněte si, že místo instalace knihovny v globální prostředí, vývojáři obvykle vytvoříte "virtuální prostředí" do kterého chcete nainstalovat knihovny pro konkrétní projekt. Zahrnout mnoho Python šablony projektů v sadě Visual Studio `requirements.txt` soubor, který obsahuje seznam knihoven, na kterých závisí šabloně. Vytváření projektů z jednoho z těchto šablon aktivuje vytvoření virtuálního prostředí, do které jsou nainstalovány knihovny. Další informace najdete v tématu [prostředí Python - virtuální prostředí](../python/python-environments.md#creating-virtual-environments).
+Všimněte si, že místo instalace knihovny v globální prostředí, vývojáři obvykle vytvoříte "virtuální prostředí" do kterého chcete nainstalovat knihovny pro konkrétní projekt. Zahrnout mnoho Python šablony projektů v sadě Visual Studio `requirements.txt` soubor, který obsahuje seznam knihoven, na kterých závisí šabloně. Vytváření projektů z jednoho z těchto šablon aktivuje vytvoření virtuálního prostředí, do které jsou nainstalovány knihovny. Další informace najdete v tématu [prostředí Python - virtuální prostředí](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Přidání souboru kódu
 
@@ -144,7 +144,7 @@ Další informace o Falcon, najdete v článku [rychlý start Falcon](https://fa
 Blahopřejeme k dokončení tento rychlý start, ve kterém Seznámili jste se trochu Visual Studio IDE s Python. Chcete-li pokračovat s úplnější kurz Python v sadě Visual Studio, včetně použití interaktivních okna, ladění, vizualizace dat a práce s Gitem, vyberte níže uvedené tlačítko.
 
 > [!div class="nextstepaction"]
-> [Kurz: Začínáme s Pythonem v sadě Visual Studio](../python/vs-tutorial-01-01.md).
+> [Kurz: Začínáme s Pythonem v sadě Visual Studio](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md).
 
 - Další informace o [Python webové šablony aplikace v sadě Visual Studio](../python/template-web.md)
 - Další informace o [Python ladění](../python/debugging.md)

@@ -13,11 +13,11 @@ author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload: vssdk
-ms.openlocfilehash: 79022af292161d30440a01749ecc929ce7f3b511
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 269c19410207e47f233eadfa984a84a7c8445743
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="language-server-protocol"></a>Jazyk serveru protokolu
 
@@ -39,11 +39,11 @@ Došlo k vývoji LSP v čase a dnes je ve verzi 3.0. Jeho spuštění, když kon
 
 Přibližně ve stejnou dobu spuštění Microsoft pro práci na serveru pro jazyk TypeScript, za účelem podpory TypeScript editorů jako Emacs a Sublime Text. V této implementaci editoru komunikuje přes stdin/stdout s procesu TypeScript serveru a používá vycházející protokol ladicí program v8: datové části JSON pro požadavky a odpovědi. TypeScript server integroval do TypeScript Sublime modul plug-in a VS Code pro úpravy bohaté TypeScript.
 
-Po s v integrované dva servery s jiným jazykem, spustit týmem VS Code a prozkoumejte společný protokol serveru jazyk pro editory a integrovaného vývojového prostředí. Společný protokol umožňuje poskytovatele jazyka vytvoření jeden jazyk serveru, která mohou být spotřebovávána různých integrovaného vývojového prostředí. Příjemce jazyk serveru má jenom jednou implementace protokolu na straně klienta. Výsledkem win-win situaci pro poskytovatele jazyka a jazyk příjemce.
+Po s integrované dva servery s jiným jazykem, spustit týmem VS Code a prozkoumejte společný protokol serveru jazyk pro editory a integrovaného vývojového prostředí. Společný protokol umožňuje poskytovatele jazyka vytvoření jeden jazyk serveru, která mohou být spotřebovávána různých integrovaného vývojového prostředí. Příjemce jazyk serveru má jenom jednou implementace protokolu na straně klienta. Výsledkem win-win situaci pro poskytovatele jazyka a jazyk příjemce.
 
-Práce s jazyk protokolu používané serverem TypeScript, byl další obecné vlastnosti a jazykově neutrální. Protokol byl s jazykem VS Code rozhraní API pro inspiraci další funkce jazyka. Samotný protokol je zálohovaný s JSON-RPC pro vzdálené volání z důvodu jeho jednoduchost a podpora knihovny pro řadě programovacích jazyků.
+Protokol jazyk serveru spustit pomocí protokolu používané serverem TypeScript rozšiřování s další funkce jazyka vycházející jazyk VS kódu rozhraní API. Protokol je zálohovaný s JSON-RPC pro vzdálené volání díky jednoduchost a existující knihovny.
 
-Dogfooded team VS Code protokol implementací několik serverů linter jazyk. Jazyk serveru linter reaguje na požadavky na hadříkem (kontrola) souboru a vrátí sadu zjištěné upozornění a chyby. Cílem bylo hadříkem soubor jako uživatelské úpravy v dokumentu, což znamená, že bude mnoho požadavků linting během relace editoru. Byly provedeny smysl zachovat server nahoru a spuštěný, aby nový proces linting nebylo nutné spustit pro každý uživatel upravit. Několik serverů linter byly implementovány, včetně VS Code ESLint a TSLint rozšíření. Tyto dva servery linter jsou implementované v TypeScript/JavaScript i spustit na Node.js. Sdílení knihovny, který implementuje klientskou a serverovou součást protokolu.
+VS Code team deklaraci protokol implementací několik serverů linter jazyk, které reagují na požadavky na hadříkem (kontrola) souboru a vrátit sadu zjištěné upozornění a chyb. Cílem bylo hadříkem soubor jako uživatelské úpravy v dokumentu, což znamená, že bude mnoho požadavků linting během relace editoru. Byly provedeny smysl zachovat server nahoru a spuštěný, aby nový proces linting nemusel být spuštěna pro každý uživatel upravit. Několik serverů linter byly implementovány, včetně VS Code ESLint a TSLint rozšíření. Tyto dva servery linter jsou implementované v TypeScript/JavaScript i spustit na Node.js. Sdílení knihovny, který implementuje klientskou a serverovou součást protokolu.
 
 ## <a name="how-the-lsp-works"></a>Jak funguje LSP
 

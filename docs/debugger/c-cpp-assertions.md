@@ -33,11 +33,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 46ea417ccd8b4dbecd0c6584699e9f2e98330d69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a53c03f1ab2c8680329f17bfa36a49b12062bff5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="cc-assertions"></a>Kontrolní výrazy jazyka C/C++
 Příkaz assertion Určuje podmínku, která byste měli mít hodnotu true v okamžiku v programu. Pokud není tato podmínka true, kontrolní výraz selže, provádění vašeho programu přeruší a [dialogové okno kontrolní výraz](../debugger/assertion-failed-dialog-box.md) se zobrazí.  
@@ -46,7 +46,7 @@ Příkaz assertion Určuje podmínku, která byste měli mít hodnotu true v oka
   
 -   Kontrolní výrazy MFC MFC programů.  
   
--   [ATLASSERT](http://msdn.microsoft.com/Library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) pro programy, které používají knihovnu ATL.  
+-   [ATLASSERT](/cpp/atl/reference/debugging-and-error-reporting-macros#atlassert) pro programy, které používají knihovnu ATL.  
   
 -   Kontrolní výrazy CRT pro programy, které používají běhové knihovny jazyka C.  
   
@@ -95,7 +95,7 @@ ASSERT(nM++ > 0); // Don't do this!
   
 ```  
   
- Protože `ASSERT` výraz, který není vyhodnocen ve verzi vašeho programu `nM` bude mít různé hodnoty v verze pro ladění a vydání. Nechcete-li tento problém v prostředí MFC, můžete použít [OVĚŘTE](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) makro místo `ASSERT`.  `VERIFY`vyhodnotí výraz ve všech verzích ale nekontroluje výsledek v prodejní verzi.  
+ Protože `ASSERT` výraz, který není vyhodnocen ve verzi vašeho programu `nM` bude mít různé hodnoty v verze pro ladění a vydání. Nechcete-li tento problém v prostředí MFC, můžete použít [OVĚŘTE](/cpp/mfc/reference/diagnostic-services#verify) makro místo `ASSERT`.  `VERIFY`vyhodnotí výraz ve všech verzích ale nekontroluje výsledek v prodejní verzi.  
   
  Být obzvláště opatrní při používání volání funkcí v příkazech kontrolní výraz, protože vyhodnocování funkce může mít neočekávané vedlejší účinky.  
   
@@ -111,7 +111,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
 ##  <a name="BKMK_CRT_assertions"></a>Kontrolní výrazy CRT  
  CRTDBG. Definuje soubor hlaviček H [_ASSERT a _asserte – makra](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) assertion kontroly.  
   
-|– Makro|Výsledek|  
+|Macro|Výsledek|  
 |-----------|------------|  
 |`_ASSERT`|Pokud zadaný výraz vyhodnocena jako FALSE, soubor název a řádek číslo `_ASSERT`.|`_ASSERTE`|  
 |`_ASSERTE`|Stejné jako `_ASSERT`, plus řetězcovou reprezentaci výraz, který byl prohlašovanou.|  
@@ -165,7 +165,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
   
  Pokud v argumentu MFC `ASSERT` makro vyhodnocen jako nula nebo hodnotu false, makro zastaví spuštění programu a upozorní uživatele; jinak, pokračuje v provádění.  
   
- Když kontrolní výrazy selže, dialogové okno zpráva se zobrazuje název zdrojového souboru a číslo řádku kontrolní výraz. Pokud se rozhodnete opakování v dialogovém okně pole, volání [afxdebugbreak –](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) způsobí, že provádění možnost proniknout do ladicího programu. V tomto okamžiku můžete prozkoumat zásobník volání a pomocí jiných zařízení ladicí program můžete určit, proč se nepodařilo kontrolní výraz. Pokud jste povolili [pouze za běhu ladění](../debugger/just-in-time-debugging-in-visual-studio.md)a ladicí program již nebyla spuštěna, dialogové okno můžete spustit ladicí program.  
+ Když kontrolní výrazy selže, dialogové okno zpráva se zobrazuje název zdrojového souboru a číslo řádku kontrolní výraz. Pokud se rozhodnete opakování v dialogovém okně pole, volání [afxdebugbreak –](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) způsobí, že provádění možnost proniknout do ladicího programu. V tomto okamžiku můžete prozkoumat zásobník volání a pomocí jiných zařízení ladicí program můžete určit, proč se nepodařilo kontrolní výraz. Pokud jste povolili [pouze za běhu ladění](../debugger/just-in-time-debugging-in-visual-studio.md)a ladicí program již nebyla spuštěna, dialogové okno můžete spustit ladicí program.  
   
  Následující příklad ukazuje, jak používat `ASSERT` Zkontrolujte návratovou hodnotu funkce:  
   
@@ -180,7 +180,7 @@ ASSERT(x >= 0);   //  Assertion fails if x is negative
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
   
- `ASSERT` Makro nevygeneruje žádný kód ve vydané verzi. Pokud potřebujete při vyhodnocování výrazu ve verzi, použijte [OVĚŘTE](http://msdn.microsoft.com/Library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) místo ASSERT – makro.  
+ `ASSERT` Makro nevygeneruje žádný kód ve vydané verzi. Pokud potřebujete při vyhodnocování výrazu ve verzi, použijte [OVĚŘTE](/cpp/mfc/reference/diagnostic-services#verify) místo ASSERT – makro.  
   
 ###  <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a>Assert_valid – MFC a CObject::AssertValid  
  [CObject::AssertValid](/cpp/mfc/reference/cobject-class.md#CObject__AssertValid) metoda poskytuje spuštění kontroly interní stavu objektu. I když nejsou nezbytné k přepsání `AssertValid` při odvozování třídě z `CObject`, můžete použít třídu spolehlivější tímto způsobem. `AssertValid`kontrolní výrazy proveďte na všechny proměnné členů objektu k ověření, jestli obsahují platné hodnoty. Například měli zkontrolovat, že ukazatel členské proměnné nejsou NULL.  

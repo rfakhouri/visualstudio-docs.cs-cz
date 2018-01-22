@@ -2,7 +2,7 @@
 title: "Vytvoření Offline instalace sady Visual Studio | Microsoft Docs"
 description: "Zjistěte, jak k instalaci sady Visual Studio v režimu offline."
 ms.custom: 
-ms.date: 08/30/2017
+ms.date: 01/17/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
@@ -17,11 +17,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6eb68b00e429db1336f851d6e4789ae0b4c8b803
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b9badba3247846ce63b79d48da7482ff0c58b693
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>Vytvoření offline instalace Visual Studio 2017
 
@@ -41,7 +41,7 @@ Doporučujeme vám, že zkusíte [instalačního programu sady Visual Studio web
 Pokud chcete nainstalovat do offline režimu, protože připojení k Internetu je k dispozici nebo nespolehlivé, viz [nainstalovat Visual Studio 2017 na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích](../install/install-vs-inconsistent-quality-network.md). Příkazového řádku můžete použít k vytvoření místní mezipaměti souborů, které potřebujete k dokončení instalace v režimu offline. Tento proces nahradí soubory ISO k dispozici pro předchozí verze.
 
 > [!NOTE]
-> Pokud jste správce organizace, který chce provést nasazení sady Visual Studio 2017 k síti klientské pracovní stanice, které jsou bránou firewall z Internetu, najdete v našich [vytvořit sítě instalaci sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) a [Zvláštní požadavky pro instalaci sady Visual Studio v režimu offline](../install/install-visual-studio-in-offline-environment.md) stránky.
+> Pokud jste správce organizace, který chce provést nasazení sady Visual Studio 2017 k síti klientské pracovní stanice, které jsou bránou firewall z Internetu, najdete v našich [vytvořit sítě instalaci sady Visual Studio 2017](../install/create-a-network-installation-of-visual-studio.md) a [Instalaci certifikátů vyžadovaných pro instalaci sady Visual Studio offline](../install/install-certificates-for-visual-studio-offline.md) stránky.
 
 ## <a name="get-support"></a>Získat podporu
 V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

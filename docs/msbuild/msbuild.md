@@ -16,11 +16,11 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4e809363656b94dc4e922d558a57a0848dba46e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Je platforma pro vytváření aplikací. Tento modul, který je také označován jako MSBuild, poskytuje schéma XML pro soubor projektu, který určuje, jak platformy sestavení zpracuje a vytvoří softwaru. Visual Studio použije nástroje MSBuild, ale není závisí na sadě Visual Studio. Vyvoláním msbuild.exe v souboru projektu nebo řešení můžete orchestraci a sestavení produkty v prostředích, kde není nainstalovaná sada Visual Studio.  
@@ -50,7 +50,7 @@ ms.lasthandoff: 12/22/2017
  Můžete napsat kód v prostředí Visual Studio IDE, ale spustit sestavení pomocí nástroje MSBuild. Jako další možnost vytvoření kódu v prostředí IDE ve vývojovém počítači, ale pomocí příkazového řádku s MSBuild sestavení kódu, který je integrován z více vývojářů.  
   
 > [!NOTE]
->  Team Foundation Build můžete použít pro automaticky kompilovat, testování a nasazení aplikace. Sestavení systému můžete automaticky spustit sestavení, když vývojáři změnami kódu (například jako součást strategie průběžnou integraci) nebo podle plánu (například noční sestavení sestavení ověřovací Test). Team Foundation Build zkompiluje kódu pomocí nástroje MSBuild. Další informace najdete v tématu [sestavení aplikace](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+>  Team Foundation Build můžete použít pro automaticky kompilovat, testování a nasazení aplikace. Sestavení systému můžete automaticky spustit sestavení, když vývojáři změnami kódu (například jako součást strategie průběžnou integraci) nebo podle plánu (například noční sestavení sestavení ověřovací Test). Team Foundation Build zkompiluje kódu pomocí nástroje MSBuild. Další informace najdete v tématu [sestavení a verze](/vsts/build-release/index).  
   
  Toto téma obsahuje přehled nástroje MSBuild. Úvodní kurz, najdete v části [návod: použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/22/2017
   
 -   [Pomocí nástroje MSBuild v sadě Visual Studio](#BKMK_VisualStudio)  
   
--   [Cílení na více verzí](#BKMK_Multitargeting)  
+-   [Multitargeting](#BKMK_Multitargeting)  
   
 ##  <a name="BKMK_CommandPrompt"></a>Pomocí nástroje MSBuild v příkazovém řádku  
  Ke spuštění [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] na příkazovém řádku, předat soubor projektu do MSBuild.exe, společně s možnosti příkazového řádku. Možnosti příkazového řádku umožňují nastavit vlastnosti, provést určité cíle a nastavte další možnosti, které řídí procesu sestavení. Třeba, použijte následující syntaxi příkazového řádku k vytvoření souboru `MyProj.proj` s `Configuration` vlastnost nastavena na hodnotu `Debug`.  

@@ -1,7 +1,7 @@
 ---
 title: "Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů | Microsoft Docs"
 ms.custom: 
-ms.date: 06/21/2017
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 24c317a641fc178306013d8b75c3254f3d3f7b1c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů
 
@@ -119,15 +119,15 @@ Některé součásti v seznamu nemusí být zobrazeny, v závislosti na [!INCLUD
 
     Pro 32bitový operační systém přidejte jedno z následujících klíčů registru.
 
-    - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\. NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@= "*AssemblyLocation*"
+    - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
-    - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@= "*AssemblyLocation*"
+    - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
     Pro 64bitový operační systém přidejte jedno z těchto klíčů registru v podregistru 32bitového registru.
 
-    - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@= "*AssemblyLocation*"
+    - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
-    - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@= "*AssemblyLocation*"
+    - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\*VersionMinimum*\AssemblyFoldersEx\MyAssemblies]@="*AssemblyLocation*"
 
     *VersionMinimum* je nejnižší verze rozhraní .NET Framework, která se použije. Pokud *VersionMinimum* je v3.0, složky zadané v AssemblyFoldersEx vztahují na projekty cílených rozhraní .NET Framework 3.0 a novějších.
 
@@ -198,7 +198,7 @@ Pokud typ projektu nepodporuje **rozšíření**, na kartě se nezobrazí v **sp
 
 Můžete použít **Procházet** tlačítko procházení pro součást v systému souborů.
 
-Projekt se může odkazovat na součást, která cílí na jinou verzi rozhraní .NET Framework. Můžete například vytvořit aplikaci, která cílí na rozhraní .NET Framework 4 Client Profile, jež odkazuje na součást, která cílí na rozhraní .NET Framework 2. Další informace najdete v tématu [cílení na konkrétní verzi rozhraní .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Projekt se může odkazovat na součást, která cílí na jinou verzi rozhraní .NET Framework. Například můžete vytvořit aplikace s cílem 4.7 rozhraní .NET Framework, který odkazuje na komponentu, která je cílena na rozhraní .NET Framework 4. Další informace najdete v tématu [cílení na konkrétní verzi rozhraní .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
 
 Měli byste se vyhnout přidávání odkazů na soubory do výstupů jiného projektu ve stejném řešení, protože to může vést k chybám při kompilaci. Místo toho použijte **řešení** kartě **správce odkazů** dialogové okno vytvořit odkazy na projekt na projekt. To usnadňuje vývoj v týmu tím, že umožňuje lepší správu knihovny tříd, které vytvoříte v projektech. Další informace najdete v tématu [řešení potíží s odkazy na přerušený](../ide/troubleshooting-broken-references.md).
 

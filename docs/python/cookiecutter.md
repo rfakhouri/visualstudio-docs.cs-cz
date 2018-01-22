@@ -15,17 +15,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6c75991ed6c55d7905bcaaca5947f7f32897ab14
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d87beb4e8f475bd52c5be7f1d75f27ecf3b691ac
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="using-the-cookiecutter-extension"></a>Pomocí rozšíření Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) poskytuje grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. To je součástí Visual Studio 2017 a je možné nainstalovat odděleně v dřívějších verzích sady Visual Studio.
 
-Cookiecutter vyžaduje Python 3.3 nebo vyšší (32bitové nebo 64bitové verze) nebo Anaconda 3 4.2 nebo novější (32bitová nebo 64bitová verze). Pokud není k dispozici vhodný překladač Pythonu, Visual Studio zobrazí upozornění. Pokud instalujete překladač Pythonu je spuštěn v sadě Visual Studio, klikněte na tlačítko Domů na panelu nástrojů Cookiecutter ke zjištění překladač nově nainstalovaný. (Viz [prostředí Python](python-environments.md) Další informace o prostředí v obecné.)
+Cookiecutter vyžaduje Python 3.3 nebo vyšší (32bitové nebo 64bitové verze) nebo Anaconda 3 4.2 nebo novější (32bitová nebo 64bitová verze). Pokud není k dispozici vhodný překladač Pythonu, Visual Studio zobrazí upozornění. Pokud instalujete překladač Pythonu je spuštěn v sadě Visual Studio, klikněte na tlačítko Domů na panelu nástrojů Cookiecutter ke zjištění překladač nově nainstalovaný. (Viz [prostředí Python](managing-python-environments-in-visual-studio.md) Další informace o prostředí v obecné.)
 
 Po instalaci, vyberte **zobrazení > Cookiecutter Explorer** otevřete její okno:
 

@@ -15,11 +15,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 753c3d78ff3da45213ea7cb9625d765e564a88e1
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: b9a6c3240075107edfc5109fa6c62aaf6c23d92b
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="django-web-project-template"></a>Šablona projektu webového rozhraní Django
 
@@ -37,7 +37,7 @@ Visual Studio poskytuje úplné IntelliSense pro projekty Django:
 
 - Pro vložených šablon stylů CSS a JavaScript zvýrazňování syntaxe:
 
-    ![IntelliSense šablon stylů CSS](media/template-django-intellisense-css.png)
+    ![CSS IntelliSense](media/template-django-intellisense-css.png)
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 
@@ -45,7 +45,7 @@ Visual Studio také poskytuje úplné [ladění podporu](debugging.md) pro proje
 
 ![Zarážky](media/template-django-debugging.png)
 
-Je obvyklé, Django projektů se mají spravovat prostřednictvím jejich `manage.py` souboru, který se předpokládá, který následuje Visual Studio. Pokud zastavíte pomocí tento soubor jako vstupní bod, v podstatě rozdělit souboru projektu. V takovém případě budete muset [znovu vytvořit projektu z existujících souborů](python-projects.md#creating-a-project-from-existing-files) bez označení jako projekt Django.
+Je obvyklé, Django projektů se mají spravovat prostřednictvím jejich `manage.py` souboru, který se předpokládá, který následuje Visual Studio. Pokud zastavíte pomocí tento soubor jako vstupní bod, v podstatě rozdělit souboru projektu. V takovém případě budete muset [znovu vytvořit projektu z existujících souborů](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files) bez označení jako projekt Django.
 
 ## <a name="django-management-console"></a>Konzola pro správu Django
 

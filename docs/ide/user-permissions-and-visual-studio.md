@@ -12,17 +12,15 @@ helpviewer_keywords:
 - user permissions
 - administrative privileges
 - permissions
-ms.assetid: 70485ed7-6342-41bf-8250-7a6826e21b98
-caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8062b6d37c675defeea369ebe8f8bf15fcbdd8ee
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 6a19d67530d3cb7ac81ee00e3e65f4cce74c8d07
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Uživatelská oprávnění a sada Visual Studio
 
@@ -39,7 +37,7 @@ V režimu normálního uživatele lze v integrovaném vývojovém prostředí 
 ||Instalace, aktualizace nebo odebrání obsahu místní nápovědy|[Instalace a správa místního obsahu](../ide/install-and-manage-local-content.md)|  
 |Typy aplikací|Vývoj řešení pro službu SharePoint.|[Požadavky na vývoj řešení služby SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|  
 ||Získání licence pro vývojáře [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Získat licenci vývojáře](http://go.microsoft.com/fwlink/?LinkID=241313)|  
-|Sada nástrojů|Přidání klasického modelu COM ovládacích prvků na **sada nástrojů**.|[Používání sady nástrojů](../ide/using-the-toolbox.md)|  
+|Sada nástrojů|Přidání klasického modelu COM ovládacích prvků do **sada nástrojů**.|[Panel nástrojů](../ide/reference/toolbox.md)|  
 |Doplňky|Instalace a používání doplňků, které byly vytvořeny pomocí klasického modelu COM v rozhraní IDE|[Vytváření doplňků a průvodců](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|  
 |Sestavování|Použití událostí po sestavení, které registrují komponentu|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](/cpp/ide/understanding-custom-build-steps-and-build-events)|  
 ||Zahrnutí registračního kroku do sestavování projektů v jazyce C++|[Seznámení s kroky vlastního sestavení a s událostmi sestavení](/cpp/ide/understanding-custom-build-steps-and-build-events)|  

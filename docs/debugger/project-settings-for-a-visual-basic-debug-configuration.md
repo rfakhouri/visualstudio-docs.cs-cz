@@ -26,11 +26,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 47047758d237bb652d5b8e447f8fc7b6e608148e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a9d9b9c5cee3dc69698320af77a7cc909b344a2d
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Nastavení projektu pro konfiguraci ladění jazyka Visual Basic
 Můžete změnit nastavení projektu pro [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] konfiguraci ladění v **stránky vlastností** okno, jak je popsáno v [konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md). Následující tabulky popisují kde najít nastavení souvisejících s ladicí program v **stránky vlastností** okno.  
@@ -43,7 +43,7 @@ Můžete změnit nastavení projektu pro [!INCLUDE[vbprvb](../code-quality/inclu
 |Nastavení|Popis|  
 |-------------|-----------------|  
 |**Konfigurace**|Nastaví režim kompilaci aplikace. Zvolte mezi **aktivní (ladění)**, **ladění**, **verze**, **všechny konfigurace**.|  
-|**Zahájení**|Tato skupina ovládacích prvků určuje akci, která se stane, když vyberte počáteční z nabídky ladění.<br /><br /> -   **Spusťte projekt** je výchozí a spustí počáteční projekt pro ladění. Další informace najdete v tématu [NIB způsobu: nastavit projekty po spuštění](http://msdn.microsoft.com/en-us/31465836-0911-48db-a5d9-e456b635e970).<br />-   **Spuštění externího programu** umožňuje spustit a připojit k programu, který není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Další informace najdete v tématu [přiřadit běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Spustit prohlížeč v adrese URL** umožňuje ladění webové aplikace.|  
+|**Zahájení**|Tato skupina ovládacích prvků určuje akci, která se stane, když vyberte počáteční z nabídky ladění.<br /><br /> -   **Spusťte projekt** je výchozí a spustí počáteční projekt pro ladění. <br />-   **Spuštění externího programu** umožňuje spustit a připojit k programu, který není součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Další informace najdete v tématu [přiřadit běžící procesy](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Spustit prohlížeč v adrese URL** umožňuje ladění webové aplikace.|  
 |**Argumenty příkazového řádku.**|Určuje argumenty příkazového řádku pro program, který má ladit. Název příkazu je název program zadaný v externí program spustit. Pokud je spuštění akce nastavená na Spustit adresu URL, argumenty příkazového řádku se ignorují.|  
 |**Pracovní adresář**|Určuje pracovní adresář programu laděné. V [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], pracovní adresář je adresář je aplikace spuštěna z. Výchozí pracovní adresář je \bin\Debug nebo \bin\Release, v závislosti na aktuální konfiguraci.|  
 |**Použití vzdáleného počítače**|Pokud je zaškrtnuté políčko, je povoleno vzdálené ladění. Do textového pole, můžete zadat název vzdáleného počítače kde bude aplikace spuštěna pro účely ladění nebo [název serveru Msvsmon](../debugger/remote-debugging.md). Umístění EXE ve vzdáleném počítači je zadána vlastnost výstupní cesta na kartě sestavení. Umístění musí být ke sdílení adresář ve vzdáleném počítači.|  

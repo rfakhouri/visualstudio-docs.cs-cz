@@ -2,7 +2,7 @@
 title: "Příklady parametr příkazového řádku pro instalaci sady Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 05/06/2017
-ms.reviewer: tims
+ms.reviewer: 
 ms.suite: 
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
@@ -12,11 +12,11 @@ author: timsneath
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4729300eea0a4e1474779edd4bec021a5db9e73c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f91810f53a27cc988c44e6c283364bb2d29e39e0
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Příklady parametr příkazového řádku pro instalaci Visual Studio 2017
 Pro ilustraci postup [používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md), zde je několik příkladů, které můžete přizpůsobit tak, aby odpovídaly vašim potřebám.
@@ -35,6 +35,15 @@ vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
 ```
+
+* Aktualizace instance Visual Studio pomocí příkazového řádku s žádný interaktivní výzvy, ale zobrazí průběh:
+```
+vs_enterprise.exe --update --quiet --wait
+vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+```
+
+> [!NOTE]
+> Oba příkazy jsou povinné. První příkaz aktualizuje instalační program Visual Studio. V druhém příkazu aktualizuje instanci sady Visual Studio. Abyste se vyhnuli dialogové okno Řízení uživatelských účtů, příkazový řádek spustíte jako správce. 
 
 * Instalaci bezobslužně, plochy instance sady Visual Studio s Francouzská jazyková sada, vrácení jenom v případě, že je nainstalovaný produkt.
 ```

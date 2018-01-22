@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d6e879e8708c55ebb5ebdd5980bd70ea1e4a97d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb9b5119659600b4bfd902e61eda70a85b645efd
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="create-solutions-and-projects"></a>Vytvoření řešení a projekty
 
@@ -81,7 +81,7 @@ Pokud máte kolekci soubory zdrojového kódu, můžete je snadno přidat k proj
 1. V průvodci, přejděte do umístění souborů a potom zadejte název pro nový projekt v **název** pole. Až skončíte, zvolte **Dokončit** tlačítko.
 
 > [!NOTE]
-> Tato možnost je nejvhodnější pro poměrně jednoduché kolekce souborů. V současné době jsou podporovány pouze typy projektů Visual C++, Apache Cordova, Visual Basic a Visual C#.
+> Tato možnost funguje nejlépe ve poměrně jednoduché kolekce souborů. V současné době jsou podporovány pouze typy projektů Visual C++, Apache Cordova, Visual Basic a Visual C#.
 
 ## <a name="add-files-to-a-solution"></a>Přidání souborů do řešení
 

@@ -1,7 +1,7 @@
 ---
 title: "Používání parametrů příkazového řádku pro instalaci sady Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 09/22/2017
+ms.date: 01/17/2018
 ms.reviewer: tims
 ms.suite: 
 ms.technology: vs-acquisition
@@ -16,11 +16,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: bfdce6484661354315a4f6b8b4a219f119ec8742
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku
 Když instalujete Visual Studio 2017 z příkazového řádku, můžete řídit nebo upravit instalaci různých parametry příkazového řádku. Z příkazového řádku můžete provádět následující akce:
@@ -40,7 +40,10 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 
 > Syntaxe:`vs_enterprise.exe [command] <options>...`
 
-(Nahraďte `vs_enterprise.exe` podle potřeby pro edici produktu instalujete. Příklady najdete v tématu [příklady parametr příkazového řádku](command-line-parameter-examples.md) stránky.)
+(Nahraďte `vs_enterprise.exe` podle potřeby pro edici produktu instalujete.)
+
+>[!TIP]
+> Další příklady použití příkazového řádku pro instalaci Visual Studio 2017 najdete v tématu [příklady parametr příkazového řádku](command-line-parameter-examples.md) stránky.)
 
 | **Příkaz** | **Popis** |
 | ----------------------- | --------------- |
@@ -106,9 +109,9 @@ Seznam úloh a ID součástí, které jsou seřazené podle produktu Visual Stud
 | cs-CZ | Čeština |
 | de-DE | Němčina |
 | en US | Angličtina |
-| ES-ES | Španělština |
+| es-ES | Španělština |
 | fr-FR | Francouzština |
-| IT-IT | Italština |
+| it-IT | Italština |
 | ja-JP | Japonština |
 | ko-KR | Korejština |
 | pl-PL | Polština |
@@ -116,7 +119,7 @@ Seznam úloh a ID součástí, které jsou seřazené podle produktu Visual Stud
 | ru-RU | Ruština |
 | tr-TR | Turečtina |
 | zh-CN | -Čínština, zjednodušená čínština |
-| zh-TW. | Tradiční čínština – |
+| zh-TW | Tradiční čínština – |
 
 ## <a name="error-codes"></a>Kódy chyb
 V závislosti na výsledku operace `%ERRORLEVEL%` proměnné prostředí se nastaví na jednu z následujících hodnot:
@@ -143,7 +146,6 @@ Tady je několik další možnosti podpory:
 
 ## <a name="see-also"></a>Viz také
 
- * [Nainstalovat Visual Studio 2017](install-visual-studio.md)
- * [Vytvoření offline instalace Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Příklady parametr příkazového řádku pro instalaci Visual Studio 2017](command-line-parameter-examples.md)
+ * [Vytvoření offline instalace Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
  * [Automatizace instalace sady Visual Studio souborem odpovědí](automated-installation-with-response-file.md)

@@ -16,11 +16,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 50b306a3332678a4ab648e0e79730b0ef3ac996e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Správa Python v Azure App Service
 
@@ -200,7 +200,7 @@ Instalovat balíčky přímo v prostředí serveru, použijte jednu z následuj�
     Pomocí `requirements.txt` je doporučená, protože je snadné reprodukujte vašeho balíčku přesně nastavit lokálně a na serveru. Jenom nezapomeňte, přejděte konzole po nasazení všechny změny `requirements.txt` a spusťte příkaz znovu.
 
 > [!Note]
-> Neexistuje žádné kompilátor jazyka C v App Service, takže je potřeba nainstalovat wheel pro všechny balíčky s rozšíření nativní moduly. Mnoho oblíbených balíčky zadejte vlastní souborů Wheel. Pro balíčky, které nejsou, použijte `pip wheel <package_name>` na místním vývojovém počítači a pak nahrajte kolečka na váš web. Příklad, naleznete v části [Správa požadované balíčky](python-environments.md#managing-required-packages-requirementstxt).
+> Neexistuje žádné kompilátor jazyka C v App Service, takže je potřeba nainstalovat wheel pro všechny balíčky s rozšíření nativní moduly. Mnoho oblíbených balíčky zadejte vlastní souborů Wheel. Pro balíčky, které nejsou, použijte `pip wheel <package_name>` na místním vývojovém počítači a pak nahrajte kolečka na váš web. Příklad, naleznete v části [Správa požadované balíčky](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
 
 ### <a name="kudu-rest-api"></a>Kudu REST API
 

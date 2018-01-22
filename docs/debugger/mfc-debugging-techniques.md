@@ -29,17 +29,17 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 4efe2cfeb769cfaa339c96d5b315718e6697b088
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="mfc-debugging-techniques"></a>Techniky ladění MFC
 Pokud ladíte aplikaci MFC, může být užitečné tyto techniky ladění.  
   
 ##  <a name="BKMK_In_this_topic"></a>V tomto tématu  
- [Afxdebugbreak –](#BKMK_AfxDebugBreak)  
+ [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
  [Makro trasování](#BKMK_The_TRACE_macro)  
   
@@ -64,7 +64,7 @@ Pokud ladíte aplikaci MFC, může být užitečné tyto techniky ladění.
     -   [Vytvoření aplikace MFC s informace o ladění pro vybrané moduly](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a>Afxdebugbreak –  
- Knihovna MFC poskytuje speciální [afxdebugbreak –](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) funkce pro pevně kódováno zarážky ve zdrojovém kódu:  
+ Knihovna MFC poskytuje speciální [afxdebugbreak –](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) funkce pro pevně kódováno zarážky ve zdrojovém kódu:  
   
 ```  
 AfxDebugBreak( );  
@@ -147,9 +147,9 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
     |Hodnota|Popis|  
     |-----------|-----------------|  
-    |**allocmemdf –**|Zapněte přidělení diagnostiky paměti (výchozí).|  
-    |**delayfreememdf –**|Zpoždění při volání metody uvolnění paměti `delete` nebo `free` až do konce programu. To způsobí, že je váš program přidělit maximální množství paměti.|  
-    |**checkalwaysmemdf –**|Volání [afxcheckmemory –](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) pokaždé, když je paměti přidělené nebo vydání.|  
+    |**allocMemDF**|Zapněte přidělení diagnostiky paměti (výchozí).|  
+    |**delayFreeMemDF**|Zpoždění při volání metody uvolnění paměti `delete` nebo `free` až do konce programu. To způsobí, že je váš program přidělit maximální množství paměti.|  
+    |**checkAlwaysMemDF**|Volání [afxcheckmemory –](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) pokaždé, když je paměti přidělené nebo vydání.|  
   
      Tyto hodnoty můžete použít v kombinaci provedením operace logické OR, jak je vidět tady:  
   

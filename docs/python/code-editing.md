@@ -15,15 +15,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 16f0e7d406e042d16fff4fbe257b62bac97253c3
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 518f952f4b983acbcd3d2f508126f5298e16d579
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="editing-python-code"></a>Úpravy kódu jazyka Python
 
-Vývojáři stráví velkou část doba pro jejich v editoru kódu, takže [Python podporují v sadě Visual Studio](installation.md) poskytuje funkce, které vám pomohou být produktivnější. Funkce zahrnují IntelliSense zvýraznění syntaxe, automatické doplňování, podpis Nápověda, metoda přepsání, hledání a navigace. 
+Vývojáři stráví velkou část doba pro jejich v editoru kódu, takže [Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md) poskytuje funkce, které vám pomohou být produktivnější. Funkce zahrnují IntelliSense zvýraznění syntaxe, automatické doplňování, podpis Nápověda, metoda přepsání, hledání a navigace. 
 
 V tomto tématu:
 
@@ -33,7 +33,7 @@ V tomto tématu:
 
 Obecné dokumentaci na úpravy kódu v sadě Visual Studio najdete v tématu [psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md). Viz také [osnovy v sadě Visual Studio](../ide/outlining.md), což vám usnadní zaměřené na konkrétní části kódu. Podpora Python zahrnuje použití prohlížeče objektů Visual Studio (**zobrazení > ostatní okna > Prohlížeč objektů** nebo Ctrl + W, J) pro zkontrolujete tříd definovaných v každé modulu a funkce definované v těchto tříd. 
 
-Editor integrována se interaktivních okna v sadě Visual Studio, což usnadňuje exchange kód mezi nimi. Najdete v části [kurzu krok 3: použití okna interaktivní REPL](vs-tutorial-01-03.md) a [pomocí okna interaktivní - odeslání kódu interaktivního příkazu](interactive-repl.md#send-code-to-interactive-command) podrobnosti.
+Editor integrována se interaktivních okna v sadě Visual Studio, což usnadňuje exchange kód mezi nimi. Najdete v části [kurzu krok 3: použití okna interaktivní REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) a [pomocí okna interaktivní - odeslání kódu interaktivního příkazu](interactive-repl.md#send-code-to-interactive-command) podrobnosti.
 
 Úvod k úpravám kód Python, najdete v části [kód Python úpravy](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2m30s):
 
@@ -41,7 +41,7 @@ Editor integrována se interaktivních okna v sadě Visual Studio, což usnadňu
 
 ## <a name="intellisense"></a>IntelliSense
 
-Poskytuje IntelliSense [dokončených](#completions), [podpis nápovědy](#signature-help), [rychlé informace](#quick-info), a [barevné zvýrazňování kódu](#code-coloring). Chcete-li zvýšit výkon, IntelliSense závisí na databázi dokončení, který se vygeneruje pro každé prostředí Python ve vašem projektu. Databáze může být potřeba aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze se zobrazuje v **prostředí Python** okno (na stejné úrovni jako Průzkumník řešení) na **IntelliSense** karta (najdete v části [prostředí Python](python-environments.md)). 
+Poskytuje IntelliSense [dokončených](#completions), [podpis nápovědy](#signature-help), [rychlé informace](#quick-info), a [barevné zvýrazňování kódu](#code-coloring). Chcete-li zvýšit výkon, IntelliSense závisí na databázi dokončení, který se vygeneruje pro každé prostředí Python ve vašem projektu. Databáze může být potřeba aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze se zobrazuje v **prostředí Python** okno (na stejné úrovni jako Průzkumník řešení) na **IntelliSense** karta (najdete v části [prostředí Python](managing-python-environments-in-visual-studio.md)). 
 
 ### <a name="completions"></a>Dokončování
 

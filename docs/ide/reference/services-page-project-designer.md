@@ -1,7 +1,7 @@
 ---
 title: "Stránka služby, Návrhář projektu | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -11,32 +11,30 @@ f1_keywords: vb.ProjectPropertiesServices
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-ms.assetid: 6dd9e0fa-acba-4d7d-b081-705b0fc86ff5
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 3a44dc8304274bf0633e891690f6b34d2637dfa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 218f75c57d27cd424324eff8987561e9bee25e93
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="services-page-project-designer"></a>Stránka Služby, návrhář projektu
-Klient aplikačních služeb poskytují zjednodušenou přístup k [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] přihlášení, rolí a profilu služby z aplikací Windows Forms a Windows Presentation Foundation (WPF). Můžete použít **služby** stránky **Návrhář projektu** povolit a nakonfigurovat klientské aplikační služby pro váš projekt.  
+
+Klient aplikačních služeb poskytují zjednodušenou přístup k [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] přihlášení, rolí a profilu služby z aplikací Windows Forms a Windows Presentation Foundation (WPF). Můžete použít **služby** stránky **Návrhář projektu** povolit a nakonfigurovat klientské aplikační služby pro váš projekt.
+
+U klientských aplikačních služeb slouží k ověřování uživatelů, určete, každý uživatel přiřazenou roli nebo role a ukládat uživatelská nastavení aplikace, které můžete sdílet přes síť centralizovaný server. Další informace najdete v tématu [klientské aplikační služby](/dotnet/framework/common-client-technologies/client-application-services).
+
+Pro přístup k **služby** vyberte uzel projektu v **Průzkumníku řešení**a potom klikněte na **vlastnosti** na **projektu** nabídky. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **služby** kartě.
+
+## <a name="task-list"></a>Seznam úloh
+
+[Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
   
- U klientských aplikačních služeb slouží k ověřování uživatelů, určete, každý uživatel přiřazenou roli nebo role a ukládat uživatelská nastavení aplikace, které můžete sdílet přes síť centralizovaný server. Další informace najdete v tématu [klientské aplikační služby](/dotnet/framework/common-client-technologies/client-application-services).  
-  
- Pro přístup k **služby** vyberte uzel projektu v **Průzkumníku řešení**a potom klikněte na **vlastnosti** na **projektu** nabídky. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **služby** kartě.  
-  
-> [!NOTE]
->  Klient aplikačních služeb vyžadují plnou verzi rozhraní .NET Framework a nejsou podporovány v profil klienta rozhraní .NET Framework. Pokud **povolit klientské aplikační služby** zaškrtávací políčko je zakázáno, ověřte, zda **cílové rozhraní** je nastaven na rozhraní .NET Framework 3.5 nebo novější. Chcete-li zobrazit **cílové rozhraní** nastavení v jazyce C#, otevřete v Návrháři projektu a klikněte **aplikace** stránky. Chcete-li zobrazit **cílové rozhraní** nastavení v jazyce Visual Basic, otevřete v Návrháři projektu, klikněte na **zkompilovat** a pak klikněte na tlačítko **Upřesnit možnosti kompilace**.  
-  
-## <a name="task-list"></a>Seznam úloh  
- [Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
-  
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
+## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+
  **Konfigurace**  
  Tento ovládací prvek se nedá upravovat na této stránce. Popis tohoto ovládacího prvku naleznete v tématu [stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md) nebo [stránka sestavení, Návrhář projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md).  
   
@@ -67,9 +65,10 @@ Klient aplikačních služeb poskytují zjednodušenou přístup k [!INCLUDE[aja
  **Pokročilé**  
  Otevře se [rozšířená nastavení pro dialogové okno služby](../../ide/reference/advanced-settings-for-services-dialog-box.md), který můžete přepsat výchozí chování. Například můžete toto dialogové okno zadat databázi pro offline úložiště místo použití místního systému souborů. Další informace najdete v tématu [rozšířená nastavení pro dialogové okno služby](../../ide/reference/advanced-settings-for-services-dialog-box.md).  
   
-## <a name="see-also"></a>Viz také  
- [Klient aplikačních služeb](/dotnet/framework/common-client-technologies/client-application-services)   
- [Rozšířená nastavení pro dialogové okno služby](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
- [Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
- [Stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Stránka Sestavení, Návrhář projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
+## <a name="see-also"></a>Viz také
+
+[Klient aplikačních služeb](/dotnet/framework/common-client-technologies/client-application-services)   
+[Rozšířená nastavení pro dialogové okno služby](../../ide/reference/advanced-settings-for-services-dialog-box.md)   
+[Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
+[Stránka kompilovat, Návrhář projektu (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
+[Stránka Sestavení, Návrhář projektu (C#)](../../ide/reference/build-page-project-designer-csharp.md)   

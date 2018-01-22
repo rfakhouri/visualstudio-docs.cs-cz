@@ -1,7 +1,7 @@
 ---
 title: "Cílení na rozhraní .NET Framework v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
-ms.openlocfilehash: c3d388238b443fcb717502a893a674f99a315f38
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled cílení na více Visual Studio
 
@@ -70,9 +70,6 @@ Když vytvoříte projekt, vyberte cíl [!INCLUDE[dnprdnshort](../code-quality/i
 ## <a name="resolving-system-and-user-assembly-references"></a>Řešení systému a uživatel odkazy na sestavení
 
 Chcete-li cílové verze rozhraní .NET Framework, musíte nejprve nainstalovat odkazy na příslušné sestavení. Si můžete stáhnout na vývojáře sady pro různé verze rozhraní .NET Framework [.NET stáhne](https://www.microsoft.com/net/download/windows) stránky.
-
-> [!NOTE]
-> Pokud jsou cílení na rozhraní .NET Framework 4 nebo 3.5 a chcete další informace o profil klienta a kdy ji použít, najdete v článku [profil klienta rozhraní .NET Framework](http://msdn.microsoft.com/library/cc656912\(v=vs.100\).aspx) v dokumentaci k rozhraní .NET Framework 4.
 
 **Přidat odkaz na** dialogové okno zakáže sestavení systému, které se netýkají cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze tak, že není možné je přidat do projektu nechtěně. (Systém sestavení jsou soubory .dll, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi.) Odkazy, které patří do framework verzi, která je novější než verze cílové nevyřeší a ovládací prvky, které jsou závislé na takový odkaz nelze přidat. Pokud chcete povolit odkazu, obnovit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cíl, které obsahuje odkaz na projekt.  Další informace najdete v tématu [postupy: cílení na verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 

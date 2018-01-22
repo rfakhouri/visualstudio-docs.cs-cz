@@ -1,7 +1,7 @@
 ---
 title: "Linting R kód R nástroje pro sadu Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 12/04/2017
+ms.date: 01/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
@@ -14,23 +14,25 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload: data-science
-ms.openlocfilehash: 76f4ceb040e62e4ebac46e8a791f5dac0d73aff5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b7fcd958c1bed744f40c1a726e6bec4f86d307df
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Linting R kódu v sadě Visual Studio
 
-Linting je proces, který analyzuje kód na nich možné chyby a také formátování problémy a dalších šumu v souborech kódu (například nesprávné prázdných znaků). Linting také pomáhá podporovat určité konvence psaní kódu, například přidělování identifikátorů názvů, což je velmi užitečné v rámci týmů a jiných spolupráce situacích.
+Linting je proces, který analyzuje kód na nich možné chyby, formátování problémů a obdobný kód například nesprávné prázdný znak. Linting také pomáhá podporovat určité konvence psaní kódu, například přidělování identifikátorů názvů, což je velmi užitečné v rámci týmů a jiných spolupráce situacích.
 
-R nástrojů pro Visual Studio (RTVS) poskytuje integrovanou linting pro R a chování, které jsou řízeny prostřednictvím nejrůznějších možností. Tyto možnosti se nacházejí v **nástroje > Možnosti > textový Editor > R > hadříkem**.
+R Tools pro Visual Studio (RTVS) poskytuje integrované linting pro R a chování, které jsou řízeny prostřednictvím nejrůznějších možností, které jsou popsané v tomto článku. Tyto možnosti se nacházejí v **nástroje > Možnosti > textový Editor > R > hadříkem**.
 
-Linting ve výchozím nastavení vypnutá. Chcete-li povolit linting, nastavte **všechny > Povolit hadříkem** možnost na hodnotu true. Následující části v tomto tématu popisují všemi dalšími možnostmi linting:
+Linting ve výchozím nastavení vypnutá. Chcete-li povolit linting, nastavte **všechny > Povolit hadříkem** možnost na hodnotu true.
 
 Když je povolené, linting se použije v editoru během psaní. Problémy se zobrazí jako zelená podtržení vlnovkou. Na následujícím obrázku, například RTVS identifikovala šesti linting problémy, včetně použití `=` místo `<-` pro přiřazení, nedostatečná mezery okolo argumenty funkce, použijte pascalcase a velká písmena identifikátorů a použití středník. Ukazatele myši problém obsahuje popis.
 
 ![Příklady linting pro kód R](media/linting-01.png)
+
+Často mění linting možnosti v závislosti na potřebách projektu nebo souboru. Například může použít ukázkový kód z kurzu online `=` místo `<-` společně s pascalcase identifikátory. Takový kód by zobrazit časté linting upozornění, protože výchozí možnosti linting příznak těchto případech. Při práci s tímto kódem, pak je můžete jednoduše zakázat možnosti místo výdaje čas odstranění každá instance.
 
 ## <a name="assignment-group"></a>Přiřazení skupiny
 

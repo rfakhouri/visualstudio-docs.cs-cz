@@ -21,11 +21,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f4113eda7afc2a5509c4f3f19b74628d7a9eb36e
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
+ms.openlocfilehash: 1c4f90aae0644ec1ff0edad55904360ddddb4be5
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Možnosti pro jazyk Python v sadě Visual Studio
 
@@ -51,10 +51,10 @@ Všimněte si, že **experimentální** skupina obsahuje možnosti pro funkce, k
 | --- | --- | --- |
 | Zobrazí okno výstup, při vytváření virtuálního prostředí| On | Zrušením zabránit zobrazování okně výstupu. |
 | Zobrazí okno výstup při instalaci nebo odebrání balíčků | On |  Zrušením zabránit zobrazování okně výstupu. |
-| Vždy spustit jako správce pip | Off | Vždy zvyšuje `pip install` operací pro všechna prostředí. Při instalaci balíčků, Visual Studio vyzve k zadání oprávnění správce, pokud prostředí je umístěný v oblasti chráněného systému souborů, jako `c:\Program Files`. V této výzvy můžete vždy zvýšení oprávnění `pip install` pro právě jeden prostředí. V tématu [prostředí Python - karta pip](python-environments.md#pip-tab). |
+| Vždy spustit jako správce pip | Off | Vždy zvyšuje `pip install` operací pro všechna prostředí. Při instalaci balíčků, Visual Studio vyzve k zadání oprávnění správce, pokud prostředí je umístěný v oblasti chráněného systému souborů, jako `c:\Program Files`. V této výzvy můžete vždy zvýšení oprávnění `pip install` pro právě jeden prostředí. V tématu [prostředí Python - karta pip](managing-python-environments-in-visual-studio.md#pip-tab). |
 | Automaticky generovat dokončení DB při prvním použití | On | Pro [dokončování IntelliSense](code-editing.md#intellisense) fungovat pro knihovnu, musíte Visual Studio vygenerovat dokončení databáze pro tuto knihovnu. Vytváření databáze se provádí na pozadí při knihovny je nainstalovaná, ale nemusí být kompletní při spuštění psaní kódu. Tuto možnost Visual Studio upřednostňuje dokončení databáze pro knihovnu při psaní kódu, která jej používá. |
-| Ignorovat systémové PYTHONPATH proměnné | On | PYTHONPATH ve výchozím nastavení se ignoruje, protože Visual Studio poskytuje více přímé prostředky ke specifikaci cest hledání v prostředích a projektů. V tématu [prostředí Python - cesty hledání](python-environments.md#search-paths) podrobnosti. |
-| Cesty hledání aktualizací při přidání připojené soubory | On | Je-li nastaven, přidání [připojený soubor](python-projects.md#linked-files) do projektu aktualizace [cesty hledání](python-environments.md#search-paths) tak, aby IntelliSense můžete zahrnout obsah složky připojený soubor ve své databázi dokončení. Zrušte zaškrtnutí tohoto políčka vyloučit takový obsah z databáze dokončení. |
+| Ignorovat systémové PYTHONPATH proměnné | On | PYTHONPATH ve výchozím nastavení se ignoruje, protože Visual Studio poskytuje více přímé prostředky ke specifikaci cest hledání v prostředích a projektů. V tématu [prostředí Python - cesty hledání](managing-python-environments-in-visual-studio.md#search-paths) podrobnosti. |
+| Cesty hledání aktualizací při přidání připojené soubory | On | Je-li nastaven, přidání [připojený soubor](managing-python-projects-in-visual-studio.md#linked-files) do projektu aktualizace [cesty hledání](managing-python-environments-in-visual-studio.md#search-paths) tak, aby IntelliSense můžete zahrnout obsah složky připojený soubor ve své databázi dokončení. Zrušte zaškrtnutí tohoto políčka vyloučit takový obsah z databáze dokončení. |
 | Upozornit, pokud importovat modul nebyl nalezen. | On | Zrušte této volby potlačení upozornění, když víte importovaného modulu není v současné době dostupné, ale neovlivní jinak operaci kódu. |
 | Sestava nekonzistentní odsazení jako | Upozornění | Protože překladač Pythonu výraznou závisí na správné odsazení k určení oboru, Visual Studio ve výchozím nastavení vydá upozornění při zjištění nekonzistentní odsazení, které můžou uvádět chyb v kódu. Nastavte na *chyby* být i víc striktní, což vede k ukončení v takových případech. Chcete-li toto chování zcela zakázat, vyberte *není*. |
 | Zkontrolujte průzkum nebo zprávy | Jednou za týden | Nastaví frekvenci, ve kterém můžete povolit Visual Studio můžete otevřít okno obsahující webové stránky s související Python průzkumy a položek zpráv, pokud je k dispozici. Možnosti jsou *nikdy*, *jednou denně*, *jednou za týden*, a *jednou za měsíc*. |
@@ -88,7 +88,7 @@ Všimněte si, že **experimentální** skupina obsahuje možnosti pro funkce, k
 
 | Možnost | Výchozí | Popis |
 | --- | --- | --- |
-| Skripty | není k dispozici | Určuje obecné složku pro spouštěcí skripty, které chcete použít pro interaktivní windows pro všechna prostředí. V tématu [spouštěcí skripty](python-environments.md#startup-scripts). Upozorňujeme však, že tato funkce momentálně nefunguje. |
+| Skripty | není k dispozici | Určuje obecné složku pro spouštěcí skripty, které chcete použít pro interaktivní windows pro všechna prostředí. V tématu [spouštěcí skripty](managing-python-environments-in-visual-studio.md#startup-scripts). Upozorňujeme však, že tato funkce momentálně nefunguje. |
 | Nahoru/dolů šipky přejděte historie | On | Používá k procházení historie v okně interaktivní klávesy se šipkami. Vymažte toto nastavení použijte klávesy se šipkami místo toho přejděte v rámci interaktivních okna výstupu. |
 | Režim dokončení | Pouze vyhodnocení výrazů bez volání funkcí | Určení Dostupní členové na výrazu v okně interaktivní proces může vyžadovat vyhodnocení aktuální nedokončené výrazu, což může vést k vedlejší účinky nebo funkce volané vícekrát. Ve výchozím nastavení je *pouze vyhodnocení výrazů bez volání funkce* vyloučí výrazů, které se zobrazují pro volání funkce, ale vyhodnotí jiné výrazy. Například vyhodnotí `a.b` ale ne `a().b`.  *Nikdy vyhodnocení výrazů* brání všechny vedlejší účinky použití jenom normální IntelliSense modulu pro návrhy. *Vyhodnotit všechny výrazy* vyhodnotí dokončení výraz získat návrhy, bez ohledu na vedlejší účinky. |
 | Skrýt návrhy statické analýzy | Off | Pokud nastavíte, zobrazí pouze návrhy, která se získala při vyhodnocování výrazu. Pokud v kombinaci s režim dokončení *nikdy vyhodnocení výrazů*, žádné užitečné dokončených se zobrazí v okně interaktivní. |

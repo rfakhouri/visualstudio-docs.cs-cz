@@ -13,11 +13,11 @@ ms.author: tglee
 manager: ghogen
 dev_langs: vb
 ms.workload: multiple
-ms.openlocfilehash: 1ceda9e53426255331c85996b54378a91324a3fa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Začínáme s jazykem Visual Basic v sadě Visual Studio
 V tomto kurzu pro Visual Basic (VB) budete používat Visual Studio k vytvoření a spuštění aplikace několik různých konzoly a prozkoumat některé funkce sady Visual Studio [integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
@@ -41,7 +41,7 @@ Jste připravení začít vyvíjet? Jdeme!
 ### <a name="create-a-project"></a>Vytvoření projektu
 Nejdříve vytvoříme projekt aplikace Visual Basic. Typ projektu se dodává s všechny soubory šablony, které budete potřebovat, než jste přidali i nic!
 
-1. Otevřete Visual Studio 2017.
+1. Open Visual Studio 2017.
 
 2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
 
@@ -82,11 +82,11 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
      Console.ReadKey(True)
     ```
 
-    Tento kód nahradí existující [Console.WriteLine](/dotnet/api/system.console.writeline?view=netframework-4.7.1), [Console.Write](/dotnet/api/system.console.write?view=netframework-4.7.1), a [Console.ReadKey]() příkazy.
+    Tento kód nahradí existující <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, a <xref:System.Console.ReadKey%2A> příkazy.
 
  ![Okno kódu zobrazuje co je název vašeho kódu](../ide/media/vb-codewindow-what-name.png)
 
-3. Když se otevře v okně konzoly, zadejte název. Vaše okna konzoly by měl vypadat podobně jako na následujícím snímku obrazovky:       
+3. Když se otevře v okně konzoly, zadejte název. Vaše okna konzoly by měl vypadat podobně jako na následujícím snímku obrazovky:
 
    ![Zobrazuje, jaké je vaše jméno, datum a čas okně konzoly a stisknutím libovolné klávesy pokračujte zpráv](../ide/media/vb-console-what-name.png)
 

@@ -26,11 +26,11 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.workload: cplusplus
-ms.openlocfilehash: 84ba9274258fe41b93a980c815bfd808454b9061
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 28a5e13c2c56c7ecdb65efdfc1bd0b3c6eb47bfc
+ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="code-analysis-for-cc-overview"></a>Přehled Analýzy kódu pro C/C++
 Analýza kódu C/C++ nástroj poskytuje informace pro vývojáře o možný výskyt závad v jejich zdrojového kódu C/C++. Přetečení vyrovnávací paměti, zrušení inicializovaného paměti zahrnout běžné kódování chyby oznámené službou nástroj, dereferences ukazatele null a nevracení paměti a prostředků.  
@@ -48,7 +48,7 @@ Analýza kódu C/C++ nástroj poskytuje informace pro vývojáře o možný výs
  Můžete chtít vyžadovat, aby všechny zdrojového kódu vrácení se změnami splňovat určité zásady. Zejména budete chtít Ujistěte se, zda analýza byla spuštěna jako krok pro poslední místní sestavení. Další informace o povolení zásady pro analýzu kódu vrácení se změnami, najdete v části [vytváření a používání vrácení se změnami zásad analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Integrace sestavení Team  
- Chcete-li spustit nástroj pro analýzu kódu jako krok pro můžete použít integrované funkce systém sestavení [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proces sestavení. Další informace najdete v tématu [sestavení aplikace](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Chcete-li spustit nástroj pro analýzu kódu jako krok pro můžete použít integrované funkce systém sestavení [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] proces sestavení. Další informace najdete v tématu [sestavení a verze](/vsts/build-release/index).  
   
 ## <a name="command-line-support"></a>Podpora příkazového řádku  
  Kromě plné integraci v rámci vývojového prostředí vývojáři použít také nástroj pro analýzu z příkazového řádku, jak je znázorněno v následujícím příkladu:  
