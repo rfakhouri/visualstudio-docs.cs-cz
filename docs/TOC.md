@@ -165,7 +165,7 @@
 ###### [Přejmenovat](ide/reference/rename-vb.md)
 ###### [Synchronizace typu a názvu souboru](ide/reference/sync-type-and-file-vb.md)
 #### [Tipy pro vyšší produktivitu](ide/productivity-tips-for-visual-studio.md)
-##### [Tipy a triky](ide/tips-and-tricks-for-visual-studio.md)
+##### [Tipy pro používání klávesnice](ide/tips-and-tricks-for-visual-studio.md)
 ##### [Tipy pro vývojáře .NET](ide/visual-studio-2017-for-dotnet-developers.md)
 ##### [Identifikování a přizpůsobení klávesových zkratek](ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 ###### [Výchozí klávesové zkratky pro často používané příkazy](ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
