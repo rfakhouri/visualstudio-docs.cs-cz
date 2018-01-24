@@ -16,34 +16,36 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: ba54912b61e624861bbaec56d9e5bab68d7f5d78
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na službu IIS a systém Azure v rámci Visual Studio 2017
-Pro službu Azure App Service, doporučujeme ladění pomocí [ladicí program snímku](../debugger/debug-live-azure-applications.md) nebo můžete postupovat podle pokynů v tomto tématu připojit ladicí program ze sady Visual Studio. Pokud používáte Windows Server na virtuální počítač Azure se službou IIS, můžete ho také nastavit pro vzdálené ladění. Tato příručka vysvětluje, jak nastavit a konfigurace aplikace Visual Studio 2017 ASP.NET Core, ho nasadit do Azure pomocí služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio.
+# <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění jádra ASP.NET ve službě IIS v Azure v Visual Studio 2017
+
+Tato příručka vysvětluje, jak nastavit a konfigurace aplikace Visual Studio 2017 ASP.NET Core, ho nasadit do Azure pomocí služby IIS a připojení vzdáleného ladicího programu ze sady Visual Studio.
+
+Doporučený způsob vzdáleného ladění na platformě Azure, závisí na váš scénář:
+
+* K ladění ASP.NET Core v Azure App Service, najdete v části [Azure ladění aplikace pomocí ladicího programu snímku](../debugger/debug-live-azure-applications.md). Toto je doporučená metoda.
+* Chcete-li ladit ASP.NET Core v Azure App Service pomocí funkce tradičnější ladění, postupujte podle kroků v tomto tématu (naleznete v části [vzdáleného ladění na Azure App Service](#remote_debug_azure_app_service)).
+
+    V tomto scénáři je nutné nasadit aplikace do Azure ze sady Visual Studio, ale není potřeba ručně instalaci nebo konfiguraci služby IIS nebo vzdáleného ladicího programu (tyto součásti jsou reprezentované pomocí čáry s koncovými body), jak je znázorněno na následujícím obrázku.
+
+    ![Součásti vzdáleného ladicího programu](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
+
+* K ladění služby IIS na virtuální počítač Azure, postupujte podle kroků v tomto tématu (naleznete v části [vzdáleného ladění na virtuální počítač Azure](#remote_debug_azure_vm)). To umožňuje použít vlastní konfiguraci služby IIS, ale kroky instalace a nasazení jsou složitější.
+
+    Pro virtuální počítač Azure je nutné nasadit aplikace do Azure ze sady Visual Studio a také musíte ručně nainstalovat roli služby IIS a vzdáleného ladicího programu, jak je znázorněno na následujícím obrázku.
+
+    ![Součásti vzdáleného ladicího programu](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
+
+* Chcete-li ladit ASP.NET Core na Azure Service Fabric, přečtěte si téma [ladění vzdálené aplikace Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 > [!WARNING]
 > Nezapomeňte odstranit prostředky Azure, které vytvoříte, když jste dokončili kroky v tomto kurzu. Tímto způsobem můžete účtovány poplatky zbytečné.
 
-Toto téma ukazuje, jak:
-
-* Vzdálené ladění jádra ASP.NET ve službě Azure App Service
-
-* Vzdálené ladění ASP.NET Core ve virtuálním počítači Azure
-
-Pro službu Azure App Service je nutné nasadit aplikace do Azure ze sady Visual Studio, ale není potřeba ručně instalaci nebo konfiguraci služby IIS nebo vzdáleného ladicího programu (tyto součásti jsou reprezentované pomocí čáry s koncovými body), jak je znázorněno na následujícím obrázku.
-
-![Součásti vzdáleného ladicího programu](../debugger/media/remote-debugger-azure-app-service.png "Remote_debugger_components")
-
-Pro virtuální počítač Azure je nutné nasadit aplikace do Azure ze sady Visual Studio a také musíte ručně nainstalovat roli služby IIS a vzdáleného ladicího programu, jak je znázorněno na následujícím obrázku.
-
-![Součásti vzdáleného ladicího programu](../debugger/media/remote-debugger-azure-vm.png "Remote_debugger_components")
-
-> [!NOTE]
-> Chcete-li ladit ASP.NET Core na Azure Service Fabric, přečtěte si téma [ladění vzdálené aplikace Service Fabric](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application).
 
 ### <a name="requirements"></a>Požadavky
 
@@ -61,11 +63,11 @@ Mezi dvěma počítači připojené prostřednictvím proxy serveru se nepodporu
 
 4. Otevřete soubor About.cshtml.cs a nastavte zarážky `OnGet` – metoda (v starší šablony, otevřete místo nich HomeController.cs a nastavit bod přerušení `About()` metoda).
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Vzdálené ladění ASP.NET Core v Azure App Service
+## <a name="remote_debug_azure_app_service"></a>Vzdálené ladění ASP.NET Core v Azure App Service
 
 Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela zřizované instance služby IIS. Ale je přednastavení konfiguraci služby IIS a si nemůžete přizpůsobit. Další podrobné pokyny naleznete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Pokud potřebujete vlastní nastavení služby IIS, vyzkoušejte ladění na [virtuálního počítače Azure](#BKMK_azure_vm).) 
 
-#### <a name="to-deploy-the-app-and-remote-debug"></a>K nasazení aplikace a vzdálené ladění
+#### <a name="to-deploy-the-app-and-remote-debug-using-server-explorer"></a>K nasazení aplikace a vzdálené ladění pomocí Průzkumníka serveru
 
 1. V sadě Visual Studio, klikněte pravým tlačítkem na uzel projektu a zvolte **publikovat**.
 
@@ -73,7 +75,7 @@ Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela z�
 
     Podrobné pokyny najdete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-3. V **Průzkumníka serveru**, klikněte pravým tlačítkem myši na instanci služby App Service a zvolte **připojit ladicí program**.
+3. Otevřete **Průzkumníka serveru** (**zobrazení** > **Průzkumníka serveru**), klikněte pravým tlačítkem myši na instanci služby App Service a zvolte **připojit ladicí program**.
 
 4. V běžící aplikaci ASP.NET, klikněte na odkaz **o** stránky.
 
@@ -81,7 +83,7 @@ Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela z�
 
     Je to! Další kroky v tomto tématu se týkají vzdáleného ladění na virtuální počítač Azure.
 
-## <a name="BKMK_azure_vm"></a>Vzdálené ladění ASP.NET Core ve virtuálním počítači Azure
+## <a name="remote_debug_azure_vm"></a>Vzdálené ladění ASP.NET Core ve virtuálním počítači Azure
 
 Můžete vytvořit virtuální počítač Azure pro Windows Server a pak nainstalovat a nakonfigurovat službu IIS a ostatní součásti požadovaný software. To trvá déle než nasazení Azure App Service a vyžaduje proveďte zbývající kroky v tomto kurzu.
 

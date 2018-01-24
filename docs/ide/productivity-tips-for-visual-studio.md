@@ -11,47 +11,41 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5e257d8d90d21c4298b92f7bc4b923ed5a720c85
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu pro sadu Visual Studio
 
-Následující tipy, můžete rychle a efektivně zápisu, přejděte a ladění kódu v sadě Visual Studio.
+Toto téma obsahuje různé typy můžete zapsat, přejděte a rychle a efektivně ladit kód.
 
-Další informace o běžných klávesových zkratek najdete v tématu [tipy a triky](../ide/tips-and-tricks-for-visual-studio.md). Získat úplný seznam najdete v tématu [identifikuje a přizpůsobení klávesových zkratek](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) a [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
-
-## <a name="accessing-visual-studio-tools"></a>Přístup k nástroji Visual Studio
-
-Příkazový řádek vývojáře nebo jiný nástroj Visual Studio, můžete přistupovat rychle Pokud připnete nabídky Start nebo na hlavním panelu.
-
-1. V Průzkumníku Windows přejděte do `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
-
-1. Klikněte pravým tlačítkem myši nebo Otevřít kontextovou nabídku **příkazový řádek vývojáře**a potom zvolte **připnout na Start** nebo **připnout na hlavní panel**.
+Informace o běžných klávesových zkratek najdete v tématu [klávesové tipy](../ide/tips-and-tricks-for-visual-studio.md). Úplný seznam klávesové zkratky, naleznete v [identifikuje a přizpůsobení klávesových zkratek](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) a [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="writing-code"></a>Psaní kódu
 
 Napište kód rychleji pomocí následující funkce.
 
-- **Použití ukázkové aplikace**. Vývoj aplikací můžete urychlit stahuje a instaluje ukázkové aplikace z [Microsoft Developer Network](https://code.msdn.microsoft.com/). Můžete si také přečíst určitou technologii nebo programovací koncept stažením a prohlížení sadu ukázka pro tuto oblast.
+- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úpravy rychlejší. Například v **Visual Studio 2017 verze 15,6 operací preview 2** a novější, můžete příkaz snadno duplicitní bez nutnosti zkopírujte jej, změnit umístění kurzor a pak ji vložit řádek kódu. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo Sbalit vybraný text tak, že zvolíte **upravit** > **Upřesnit** > **rozbalte výběr** a **Kontrakt výběr**, nebo stisknutím kombinace kláves **Ctrl**+**W** a **Ctrl**+**posunutí**  + **W** (k dispozici v **Visual Studio 2017 verze 15,5** a novější).
 
 - **Použití prvku IntelliSense**. Při zadávání kódu v editoru, zobrazí se informace technologie IntelliSense, například vypsat členy, informace o parametrech, rychlé informace, podpis pomoci a dokončení Word. Tyto funkce podporují přibližné shody textu; například seznamy výsledky pro členy seznam obsahuje pouze položky, které začínají znaky, zda jste zadali, ale také položky, které obsahují znak kombinace kdekoli v jejich názvy. Další informace najdete v tématu [pomocí IntelliSense](../ide/using-intellisense.md).
 
 - **Změnit automatické vkládání možností IntelliSense, protože jste zadali kód**. IntelliSense přepnutí do režimu návrhu, můžete určit, že IntelliSense možnosti jsou vloženy pouze v případě, že je explicitně zvolit.
 
-     Pokud chcete povolit režim návrhu, vyberte **Ctrl** + **Alt** + **MEZERNÍK** klíče, nebo v řádku nabídek zvolte **upravit**, **IntelliSense**, **přepnout režim dokončení**.
+     Pokud chcete povolit režim návrhu, vyberte **Ctrl**+**Alt**+**MEZERNÍK** klíče, nebo v řádku nabídek zvolte **upravit**  >  **IntelliSense** > **přepnout režim dokončení**.
 
 - **Fragmenty kódu použít**. Můžete použít předdefinované fragmenty nebo vytvořit vlastní fragmenty kódu.
 
-     Chcete-li vložit fragment kódu v řádku nabídek zvolte **upravit**, **IntelliSense**, **Vložit fragment** nebo otevřete místní nabídky v souboru a zvolte **Vložit fragment kódu** . Další informace najdete v tématu [fragmenty kódu](../ide/code-snippets.md).
+     Chcete-li vložit fragment kódu v řádku nabídek zvolte **upravit** > **IntelliSense** > **Vložit fragment** nebo **příkazu Obklopit s**, nebo otevřete místní nabídky v souboru a zvolte **fragment kódu** > **Vložit fragment** nebo **příkazu Obklopit s**. Další informace najdete v tématu [fragmenty kódu](../ide/code-snippets.md).
 
-- **Opravte chyby vloženého kódu**. Rychlé akce vám umožní snadno refactor, generovat nebo jinak změnit kód, který představuje jednu akci. Můžete použít tyto akce pomocí ikonou žárovky ![malé ikonou žárovky](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), nebo stisknutím kombinace kláves **Alt + Enter** nebo **Ctrl +.** Pokud je ukazatelem na příslušný řádek kódu. V tématu [rychlé akce](quick-actions.md) Další informace.
+- **Opravte chyby vloženého kódu**. Rychlé akce vám umožní snadno refactor, generovat nebo jinak změnit kód, který představuje jednu akci. Můžete použít tyto akce pomocí ikonou žárovky ![malé ikonou žárovky](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), nebo stisknutím kombinace kláves **Alt** +  **Zadejte** nebo **Ctrl**+**.** Pokud je ukazatelem na příslušný řádek kódu. V tématu [rychlé akce](quick-actions.md) Další informace.
 
 - **Zobrazit a upravit definici element kódu**. Můžete rychle zobrazit a upravit modul, ve kterém je definovaný element kódu, jako je členem, proměnné nebo místní.
 
-    Otevřete definici v místním okně, zvýrazněte elementu a potom zvolte **Alt + F12** klíče, nebo otevřete místní nabídku pro element a potom vyberte **funkce Náhled definice**. V okně samostatného kódu otevřete definici, otevřete místní nabídku pro element a zvolte **přechod na definici**.
+    Otevřete definici v místním okně, zvýrazněte elementu a potom zvolte **Alt**+**F12** klíče, nebo otevřete místní nabídku pro element a potom vyberte **prohlížení Definice**. V okně samostatného kódu otevřete definici, otevřete místní nabídku pro element a zvolte **přechod na definici**.
+
+- **Použití ukázkové aplikace**. Vývoj aplikací můžete urychlit stahuje a instaluje ukázkové aplikace z [Microsoft Developer Network](https://code.msdn.microsoft.com/). Můžete si také přečíst určitou technologii nebo programovací koncept stažením a prohlížení sadu ukázka pro tuto oblast.
 
 ## <a name="navigating-within-your-code"></a>Navigace v rámci vašeho kódu
 
@@ -59,15 +53,15 @@ Napište kód rychleji pomocí následující funkce.
 
 - **BOOKMARK řádků kódu**. Záložky můžete rychle přecházet na konkrétní řádky kódu v souboru.
 
-    Pokud chcete nastavit záložku, na panelu nabídek, zvolte **upravit**, **záložky**, **Přepnout záložku**. Můžete zobrazit všechny záložky řešení v **záložky** okno. Další informace najdete v tématu [nastavení záložek v kódu](../ide/setting-bookmarks-in-code.md).
+    Pokud chcete nastavit záložku, na panelu nabídek, zvolte **upravit** > **záložky** > **Přepnout záložku**. Můžete zobrazit všechny záložky řešení v **záložky** okno. Další informace najdete v tématu [nastavení záložek v kódu](../ide/setting-bookmarks-in-code.md).
 
 - **Vyhledejte symbol definice v souboru**. Můžete hledat v rámci řešení najít definice symbolů a názvy souborů, ale výsledky hledání neobsahují obory názvů nebo lokální proměnné.
 
-   Chcete-li používat tuto funkci na řádku nabídek zvolte **upravit**, **přejít na**.
+   Chcete-li používat tuto funkci na řádku nabídek zvolte **upravit** > **přejít na**.
 
 - **Procházet celková struktura kódu**. V **Průzkumníku**, můžete vyhledat a procházet třídy a jejich typy a členy ve vašich projektů. Můžete také vyhledat symboly, zobrazení hierarchie volání metody, najít odkazy na symboly a provádět další úlohy. Pokud se rozhodnete element kódu v **Průzkumníku řešení**, související soubor se otevře v **Preview** kartě a přesune kurzor na element v souboru. Další informace najdete v tématu [zobrazení struktury kódu](../ide/viewing-the-structure-of-code.md).
 
-## <a name="finding-items-faster"></a>Rychlejší hledání položek
+## <a name="finding-items-faster"></a>Hledání položek rychlejší
 
 Můžete hledat ve IDE pro příkazy, soubory a možnosti, kromě filtrování obsah nástroj Windows zobrazit pouze relevantní informace pro aktuální úlohu.
 
@@ -91,7 +85,7 @@ Ladění může využívat velké množství času, ale následující tipy vám
 
 - **Nastavte zarážky dočasné**. Můžete vytvořit dočasný zarážek v aktuálního řádku kódu a současně spuštění ladicího programu. Při kliknutí na tento řádek kódu, ladicího programu vstupuje do režimu pozastavení. Další informace najdete v tématu [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
 
-    Chcete-li tuto funkci použít, zvolte **Ctrl** + **F10** klíče nebo otevřete místní nabídku pro řádek kódu, na kterém chcete rozdělit a potom vyberte **spustit kurzor** .
+    Chcete-li tuto funkci použít, zvolte **Ctrl**+**F10** klíče nebo otevřete místní nabídku pro řádek kódu, na kterém chcete rozdělit a potom vyberte **spustit kurzor** .
 
 - **Přesunout bod provádění během ladění**. Můžete přesunout aktuální bod spuštění pro různé části kódu a potom znovu spusťte ladění z tohoto bodu. Tato metoda je užitečná, pokud chcete ladit části kódu, aniž by museli znovu vytvořit všechny kroky, které jsou potřeba k dosažení této části. Další informace najdete v tématu [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -105,9 +99,17 @@ Ladění může využívat velké množství času, ale následující tipy vám
 
      Další informace o dalších příkazech najdete v tématu [aliasy příkazů Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-## <a name="managing-files-toolbars-and-windows"></a>Správa souborů, panely nástrojů a systému Windows
+## <a name="accessing-visual-studio-tools"></a>Přístup k nástroji Visual Studio
 
- Současně můžete být práce ve více souborech kódu a přesun mezi několik nástrojů, když budete vyvíjet aplikace. Můžete ponechat pomocí následující tipy uspořádány.
+Příkazový řádek vývojáře nebo jiný nástroj Visual Studio, můžete přistupovat rychle Pokud připnete nabídky Start nebo na hlavním panelu.
+
+1. V Průzkumníku Windows přejděte do `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+
+1. Klikněte pravým tlačítkem myši nebo Otevřít kontextovou nabídku **příkazový řádek vývojáře**a potom zvolte **připnout na Start** nebo **připnout na hlavní panel**.
+
+## <a name="managing-files-toolbars-and-windows"></a>Správa souborů, panely nástrojů a systému windows
+
+Současně můžete být práce ve více souborech kódu a přesun mezi několik nástrojů, když budete vyvíjet aplikace. Můžete ponechat pomocí následující tipy uspořádány.
 
 - **Zachovány soubory, které často používáte viditelné v editoru**. Soubory na levé straně na kartě si můžete připnout tak, aby se zobrazoval bez ohledu na to, kolik souborů je otevřen v editoru.
 

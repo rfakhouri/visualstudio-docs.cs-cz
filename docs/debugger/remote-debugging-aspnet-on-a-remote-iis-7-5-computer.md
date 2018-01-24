@@ -13,18 +13,18 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: aspnet
-ms.openlocfilehash: 35b8cd394881ba5bf075044d30aee17ab6a321c4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 6f11ec81c740a6930ce4eaef16d4e4e389aaca47
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění technologie ASP.NET v počítači vzdálené služby IIS
 K ladění aplikace ASP.NET, která byla nasazena do služby IIS, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace a pak připojte k běžící aplikaci ze sady Visual Studio.
 
 ![Součásti vzdáleného ladicího programu](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Tato příručka vysvětluje, jak nastavit a konfigurovat aplikaci Visual Studio 2017 ASP.NET MVC 4.5.2, nasazení pro službu IIS a připojení vzdáleného ladicího programu ze sady Visual Studio. Vzdálené ladění ASP.NET Core, najdete v tématu [vzdáleného ladění ASP.NET Core na počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Také můžete nasazovat a ladění ve službě IIS pomocí Azure. Další informace najdete v tématu [vzdáleného ladění na Azure](../debugger/remote-debugging-azure.md).
+Tato příručka vysvětluje, jak nastavit a konfigurovat aplikaci Visual Studio 2017 ASP.NET MVC 4.5.2, nasazení pro službu IIS a připojení vzdáleného ladicího programu ze sady Visual Studio. Vzdálené ladění ASP.NET Core, najdete v tématu [vzdáleného ladění ASP.NET Core na počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md). Pro službu Azure App Service, můžete snadno nasadit a ladění předem nakonfigurované instance služby IIS pomocí [ladicí program snímku](../debugger/debug-live-azure-applications.md) (.NET 4.6.1 vyžaduje), nebo [připojení ladicího programu z Průzkumníka serveru](../debugger/remote-debugging-azure.md).
 
 Tyto postupy jsme otestovali na tyto konfigurace serveru:
 * Windows Server 2012 R2 a služby IIS 8 (pro Windows Server 2008 R2, server postup se liší)
@@ -50,10 +50,10 @@ Vzdáleného ladicího programu je podporována v systému Windows Server, poč�
 
 V závislosti na nastavení zabezpečení se může ušetřit čas přidat následující důvěryhodných serverů na prohlížeč, abyste si můžete snadno stáhnout software popsané v tomto kurzu. Může být potřeba přístup k těchto lokalit:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- VisualStudio.com
+- visualstudio.com
 
 Pokud používáte Internet Explorer, můžete přidat důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Tyto kroky jsou u jiných prohlížečů. (Pokud budete muset stáhnout starší verze vzdáleného ladicího programu z my.visualstudio.com, některé další důvěryhodných serverů jsou nutné k přihlášení.)
 
@@ -70,7 +70,7 @@ Pokud potřebujete podrobnější informace k instalaci technologie ASP.NET ve s
     > [!NOTE]
     > Pokud používáte Windows Server 2008 R2, nainstalujte technologii ASP.NET 4 místo použití tohoto příkazu:
 
-     **C:\WINDOWS\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe - ir**
+     **C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -ir**
 
 2. Restartování systému (nebo spuštění **net stop byl /y** následuje **net start w3svc** z příkazového řádku a pokračovat tam ke změně systému cesta).
 

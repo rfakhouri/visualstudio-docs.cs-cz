@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: c3ecb38b4f208eac3a49cc2f0e21fb98ef81ea68
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8c17803a6a1f0f2681b7b1c8510ebe66072c9c38
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje vyhledávání datová vazba
 Při zobrazování dat ve Windows Forms, můžete zvolit existující ovládacích prvků z **sada nástrojů**, nebo můžete vytvořit vlastní ovládací prvky, pokud vaše aplikace vyžaduje funkce není k dispozici ve standardní ovládací prvky. Tento návod ukazuje postup vytvoření ovládacího prvku, který implementuje <xref:System.ComponentModel.LookupBindingPropertiesAttribute>. Určuje, které implementují <xref:System.ComponentModel.LookupBindingPropertiesAttribute> může obsahovat tři vlastnosti, které mohou být vázány na data. Tyto prvky jsou podobné <xref:System.Windows.Forms.ComboBox>.  
@@ -57,11 +57,12 @@ Při zobrazování dat ve Windows Forms, můžete zvolit existující ovládací
   
 -   Vytvořte formulář k zobrazení dat v ovládacím prvku nové.  
   
-## <a name="prerequisites"></a>Požadavky  
+## <a name="prerequisites"></a>Požadavky
+
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.  
-  
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.  
-  
+
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
+
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:  
 
     1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz...** .  

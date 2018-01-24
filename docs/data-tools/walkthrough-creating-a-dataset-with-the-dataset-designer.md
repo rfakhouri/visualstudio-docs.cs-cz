@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 44139e06a09fc2883c7a42202129bfd3c82343d2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 35f98e7442c6600baa1afcc38642abf8e7aeb3ba
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Návod: Vytvoření datové sady pomocí Návrháře DataSet
 
@@ -44,7 +44,7 @@ V tomto návodu vytvoříte datové sady pomocí **návrháře Dataset**. Bude v
 ## <a name="prerequisites"></a>Požadavky  
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.  
   
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.  
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.  
   
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:  
 

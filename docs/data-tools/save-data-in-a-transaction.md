@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 303caa59af4cbcbafa9ec14fb6ffb3559d6b1bab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 160cf1021e6b95dcfc6cf8ee97b20c4502f9099e
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Návod: Ukládání dat do transakce
 Tento návod ukazuje, jak k uložení dat v transakci pomocí <xref:System.Transactions> oboru názvů. V tomto návodu vytvoříte aplikaci Windows Forms. Průvodce konfigurací zdroje dat použijete k vytvoření datové sady pro dvě tabulky v ukázkové databázi Northwind. Data vázané ovládací prvky na formuláři Windows, a budete upravovat kód pro objektu BindingNavigator na tlačítko Uložit k aktualizaci databáze uvnitř objekt TransactionScope přidáte.  
@@ -34,7 +34,7 @@ Tento návod ukazuje, jak k uložení dat v transakci pomocí <xref:System.Trans
 ## <a name="prerequisites"></a>Požadavky  
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.  
   
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **vývoj aplikací .NET** zatížení, nebo jako jednotlivých součástí.  
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **vývoj aplikací .NET** zatížení, nebo jako jednotlivých součástí.  
   
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:  
 

@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f54a6dc2f47d10a47635a600d97decf3846e9d3f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f2c72525b6101f14e9aac4365cc6af75b3083545
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="security-warnings"></a>Upozornění zabezpečení
 Upozornění zabezpečení podporují bezpečnější knihovny a aplikace. Tato upozornění pomáhají zabránit chybám zabezpečení v programu. Pokud některá z těchto upozornění zakážete, měli byste v kódu jasně označit důvod a také informovat bezpečnostního úředníka vývoje projektu.  
@@ -81,7 +81,7 @@ Upozornění zabezpečení podporují bezpečnější knihovny a aplikace. Tato 
 |[CA2149: Transparentní metody nesmějí provádět volání do nativního kódu](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Toto pravidlo je vyvoláno na jakékoli transparentní metodě, která přímo volá nativní kód, například prostřednictvím P/Invoke. Porušení tohoto pravidla vede k vyvolání výjimky MethodAccessException v modelu transparentnosti úrovně 2 a k úplnému požadavku na nespravovaný kód v modelu transparentnosti úrovně 1.|  
 |[CA2151: Pole s kritickými typy by měla být kritická pro zabezpečení](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|Chcete-li používat typy kritické z hlediska zabezpečení, musí být kód, který odkazuje na typ, buď kritický z hlediska zabezpečení, nebo bezpečně kritický z hlediska zabezpečení. To platí i v případě, že je odkaz nepřímý. Proto je existence transparentního pole kritického z hlediska zabezpečení nebo transparentního pole bezpečně kritického z hlediska zabezpečení zavádějící, jelikož transparentní kód nebude mít k poli přístup.|  
 |[CA5122 P/Invoke deklarace nesmí být kritické](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|Metody jsou při provádění operace citlivé na zabezpečení označeny jako SecuritySafeCritical, ale lze je také bezpečně použít transparentním kódem. Transparentní kód nesmí nikdy přímo volat nativní kód prostřednictvím P/Invoke. Proto označení P/Invoke jako bezpečně kritické z hlediska zabezpečení neumožní transparentnímu kódu vyvolat je a je zavádějící pro analýzu zabezpečení.|  
-|[CA2153: Vyhněte se zpracování výjimek v poškozeném stavu](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Poškozený stav výjimky (rozšíření na straně klienta)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) znamenat, že paměť poškození existuje v procesu. Zachytávání tyto než umožní procesu havárií může vést k ohrožení zabezpečení, pokud útočník můžete umístit zneužití do oblasti poškozená paměti.|  
+|[CA2153: Vyhněte se zpracování výjimek v poškozeném stavu](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Poškozený stav výjimky (rozšíření na straně klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) znamenat, že paměť poškození existuje v procesu. Zachytávání tyto než umožní procesu havárií může vést k ohrožení zabezpečení, pokud útočník můžete umístit zneužití do oblasti poškozená paměti.|  
 |[CA3075: Zpracování nezabezpečené specifikace DTD](../code-quality/ca3075-insecure-dtd-processing.md)|Pokud používáte nezabezpečené DTDProcessing instance nebo odkazovat na externí entity zdroje, analyzátor může přijmout nedůvěryhodné vstup a prozrazeny citlivé informace útočníci.|  
 |[CA3076: Spuštění nezabezpečeného skriptu XSLT](../code-quality/ca3076-insecure-xslt-script-execution.md)|Pokud spustíte předlohy se styly transformace XSLT (Extensible Language) v aplikacích .NET nezabezpečeným, procesor může vyřešit nedůvěryhodné odkazy na identifikátor URI, které by mohly prozrazeny citlivé informace útočníci, což Denial of Service a webů útoky.|  
 |[CA3077: Nezabezpečené zpracování v návrhu rozhraní API, dokumentu XML a čtečce textu XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Při navrhování rozhraní API odvozená od třídou XMLDocument nastavenou na a XMLTextReader, mělo pamatovat DtdProcessing.  Pomocí nezabezpečené instancí DTDProcessing při odkazování na externí entity zdroje řešení nebo nastavení nezabezpečené hodnot v souboru XML může způsobit zpřístupnění informací.|

@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: af76fad7d6288aff08de22b076d27cafbb5c3cff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8fbe818e233c8bbdaf4431c70b8962baf43a2ed2
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Databázi kompatibilní se systémy pro sadu Visual Studio
 
@@ -29,13 +29,13 @@ K vývoji aplikací dat připojené v sadě Visual Studio, obvykle instalace sys
 
 Pro systém databáze byla přístupná z aplikace .NET a mají být zobrazeny v sadě Visual Studio data nástroje windows musí mít zprostředkovatel ADO.NET data provider. Zprostředkovatel musí podporovat rozhraní Entity Framework konkrétně, pokud budete chtít použít Entity datových modelech v aplikaci .NET. Mnoho poskytovatelů jsou nabízena prostřednictvím Správce balíčků NuGet nebo prostřednictvím Visual Studio Marketplace.
 
-Pokud používáte rozhraní API úložiště Azure, nainstalujte emulátorů úložiště Azure na místním počítači během vývoje aby se zabránilo poplatky, dokud nebudete připraveni k nasazení do produkčního prostředí. Další informace najdete v tématu [použití emulátoru úložiště Azure pro vývoj a testování](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/).
+Pokud používáte rozhraní API úložiště Azure, nainstalujte emulátorů úložiště Azure na místním počítači během vývoje aby se zabránilo poplatky, dokud nebudete připraveni k nasazení do produkčního prostředí. Další informace najdete v tématu [použití emulátoru úložiště Azure pro vývoj a testování](/azure/storage/common/storage-use-emulator).
 
 Následující seznam obsahuje některé z oblíbenější systémů databáze, které lze použít v projektech Visual Studio. Seznam není vyčerpávající. Seznam jiných dodavatelů, které nabízí zprostředkovatelé dat ADO.NET, které umožňují těsná integrace s nástroji Visual Studio najdete v tématu [zprostředkovatele dat ADO.NET](/dotnet/framework/data/adonet/data-providers).
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 
-SQL Server je databáze nejdůležitějšího Microsoft nabídky. SQL Server 2016 poskytuje revoluční výkon, pokročilé zabezpečení a bohaté, integrované sestavy a analýzy. Je dodáván v různých edicích, které jsou určené pro jiné účely: z pro použití v jednom počítači vysoce škálovatelnou a vysoce výkonné obchodní analýzy. SQL Server Express je plnohodnotný edice systému SQL Server, který je přizpůsobený pro opětovnou distribuci a vložení.  LocalDB je zjednodušená edice systému SQL Server Express, která vyžaduje žádná konfigurace a běží v procesu vaší aplikace. Můžete si stáhnout nebo oba produkty z [stránce pro stažení SQL Server Express](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx). Mnoho příkladů SQL v této části použijte SQL Server LocalDB. SQL Server Management Studio (SSMS) je samostatná databáze správy aplikace, která má více funkcí než je zadán v Průzkumníku objektů Server SQL sady Visual Studio. Aplikace SSMS můžete získat z předchozích odkazu.
+SQL Server je databáze nejdůležitějšího Microsoft nabídky. SQL Server 2016 poskytuje revoluční výkon, pokročilé zabezpečení a bohaté, integrované sestavy a analýzy. Je dodáván v různých edicích, které jsou určené pro jiné účely: z pro použití v jednom počítači vysoce škálovatelnou a vysoce výkonné obchodní analýzy. SQL Server Express je plnohodnotný edice systému SQL Server, který je přizpůsobený pro opětovnou distribuci a vložení.  LocalDB je zjednodušená edice systému SQL Server Express, která vyžaduje žádná konfigurace a běží v procesu vaší aplikace. Můžete si stáhnout nebo oba produkty z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express). Mnoho příkladů SQL v této části použijte SQL Server LocalDB. SQL Server Management Studio (SSMS) je samostatná databáze správy aplikace, která má více funkcí než je zadán v Průzkumníku objektů Server SQL sady Visual Studio. Aplikace SSMS můžete získat z předchozích odkazu.
 
 ## <a name="oracle"></a>Oracle
 

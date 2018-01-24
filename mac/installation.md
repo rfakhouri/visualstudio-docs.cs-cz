@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 7f91a28449ffad135058438ec767095818cc8527
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.openlocfilehash: 5de4760b001e82a0c95c593c1308746946b2c630
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Instalační program a instalace sady Visual Studio pro Mac
 
@@ -49,6 +49,18 @@ Pro práci s iOS v sadě Visual Studio budete potřebovat následující:
 
   ![Vyberte položky](media/installer-image5.png)
 
+  Pokud nechcete, aby k instalaci všech platformách, použijte Průvodce níže vám pomohou rozhodnout platforem, které nainstalovat:
+
+  * **Aplikace pomocí Xamarinu**:
+      - Xamarin.Forms – vyberte **Android** a **iOS** platformy.
+      - iOS vybrat pouze – **iOS** platformy (Všimněte si, že budete muset nainstalovat [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Android vybrat pouze – **Android** platformy (Všimněte si, že byste měli také vybrat relevantní závislosti).
+      - Mac vybrat pouze – **systému macOS** platformy (Všimněte si, že budete muset nainstalovat [ **Xcode**](https://developer.apple.com/xcode/)).
+      - Vyberte aplikace Xamarin plně napříč platformami – **Android**, **iOS**, a **systému macOS** platformy.
+  * **Aplikace .NET core** – vyberte **.NET Core** platformy.
+  * **Webové aplikace ASP.NET Core** – vyberte **.NET Core** platformy.
+  * **Vývoj pro různé platformy Unity herní** – žádné další platformy je potřeba nainstalovat překračuje Visual Studio for Mac. Odkazovat [Průvodce nastavením Unity](~/setup-vsmac-tools-unity.md) Další informace o instalaci rozšíření Unity.
+
   Tato obrazovka instalace zobrazí verze a velikosti jednotlivých součástí. Můžete kliknutím na jednotlivé komponenty, chcete-li zobrazit seznam závislosti pro tuto součást (pro Android), najdete v části Další balíčky, které stáhne (pro .NET Core), nebo zobrazit žádné další aplikace, které jsou vyžadované (pro iOS a systému macOS):
 
   ![Android Další závislosti](media/installer-image6.png)
@@ -69,22 +81,11 @@ Pro práci s iOS v sadě Visual Studio budete potřebovat následující:
 
 10. Po úspěšné instalace můžete začít vyvíjet aplikace v sadě Visual Studio stisknutím **spustit**:
 
-  ![Otevřete Visual Studio](media/installer-image11.png)
+  ![Open Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
 Pokud jste vybrali instalaci není platformy nebo nástroj při původní instalaci (podle unselecting ho v kroku #6), musíte spustit [instalační program](https://www.visualstudio.com/vs/) znovu Pokud chcete přidat součásti později.
 
-## <a name="manual-installation"></a>Ruční instalace
-
-Pokud vaše instalace selže nebo libovolné jedné součásti instalace se nezdaří, bude pravděpodobně možné vyřešit problém pomocí ruční instalace. K zobrazení požadované součásti a stáhnout každé z nich, proveďte následující kroky:
-
-1. Na druhé obrazovce na instalační program Visual Studio, přejděte na panelu nabídek a vyberte **zobrazit pokyny k ruční instalaci**:
-
-    ![Možnost zobrazující ruční instalaci položky nabídky](media/installer-image12.png)
-
-2. Postupujte podle pokynů ke stažení a instalaci součástí ručně:
-
-  ![Dialogové okno Ruční instalace](media/installer-image13.png)
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalaci sady Visual Studio pro Mac za serverem brány firewall nebo proxy server
 
@@ -92,4 +93,24 @@ Nainstalujte sadu Visual Studio pro Mac za bránou firewall, musí být proveden
 
 Konfigurace sítě pro povolení přístupu do následujícího umístění:
 
-* [Koncové body Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+* [Koncové body Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+
+## <a name="next-steps"></a>Další kroky
+
+Instalace sady Visual Studio pro Mac, můžete zahájit zápis kódu pro vaše aplikace. Následující příručky jsou k dispozici pro vás provede další kroky psaní a nasazení vašich projektů.
+
+### <a name="ios"></a>iOS
+
+1. [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
+2. [Zřizování zařízení](https://developer.xamarin.com/guides/ios/getting_started/installation/device_provisioning)(ke spuštění aplikace na zařízení).
+
+
+### <a name="android"></a>Android
+
+1. [Pomocí Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+2. [Emulátor sady SDK pro Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Nastavit zařízení pro vývoj](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+
+### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikace .NET core, webové aplikace ASP.NET Core, vývoj her pro Unity
+
+Další úlohy, najdete v části [úlohy](~/workloads.md) stránky.

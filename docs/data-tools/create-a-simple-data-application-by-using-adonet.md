@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: b1f6e8ed06f9f2355ac3a740319bb75924bf3d6b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1525a858885bb7b824967712186f81e060f63519
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 Když vytvoříte aplikaci, která zpracovává data v databázi, můžete provádět základní úlohy, jako je například definování připojovací řetězce, vkládání dat a spuštění uložené procedury. Podle tohoto tématu zjistíte, jak používat databázi v aplikaci jednoduchou aplikaci "forms over data" Windows Forms pomocí Visual C# nebo Visual Basic a ADO.NET.  Všechny dat technologie .NET – včetně datové sady, technologie LINQ to SQL a Entity Framework – nakonec proveďte kroky, které jsou velmi podobné těm, které jsou uvedené v tomto článku.  
@@ -47,7 +47,7 @@ Když vytvoříte aplikaci, která zpracovává data v databázi, můžete prov�
   
 -   Visual Studio Community Edition.  
   
--   SQL Server Express LocalDB. Pokud nemáte SQL serveru Express LocalDB, můžete ho nainstalovat [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx).  
+-   SQL Server Express LocalDB. Pokud nemáte SQL serveru Express LocalDB, můžete ho nainstalovat [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express).
 
 Toto téma předpokládá, že jste se seznámili s funkcemi základní prostředí Visual Studio IDE a můžete vytvořit aplikaci Windows Forms, přidat formuláře do projektu, put, tlačítek a jiných ovládacích prvků ve formulářích, nastavte vlastnosti ovládacích prvků a jednoduché události kódu. Pokud se tedy se tyto úlohy, doporučujeme provést [Začínáme s Visual C# a Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) tématu před spuštěním tohoto průvodce.  
   
@@ -99,8 +99,8 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
   
 |Ovládací prvky pro daný formulář navigace|Vlastnosti|  
 |--------------------------------------|----------------|  
-|Tlačítko|Název = btnGoToAdd|  
-|Tlačítko|Název = btnGoToFillOrCancel|  
+|Tlačítko|Name = btnGoToAdd|  
+|Tlačítko|Name = btnGoToFillOrCancel|  
 |Tlačítko|Název = btnExit|  
   
  **Nový zákazník formuláře**  
@@ -109,13 +109,13 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
   
 |Ovládací prvky pro nový zákazník formulář|Vlastnosti|  
 |---------------------------------------|----------------|  
-|TextBox|Název = txtCustomerName|  
-|TextBox|Název = txtCustomerID<br /><br /> Jen pro čtení = True|  
-|Tlačítko|Název = btnCreateAccount|  
+|TextBox|Name = txtCustomerName|  
+|TextBox|Name = txtCustomerID<br /><br /> Jen pro čtení = True|  
+|Tlačítko|Name = btnCreateAccount|  
 |NumericUpdown|Počet desetinných míst = 0<br /><br /> Maximální = 5000<br /><br /> Název = numOrderAmount|  
-|DateTimePicker|Formát krátkého =<br /><br /> Název = dtpOrderDate|  
-|Tlačítko|Název = btnPlaceOrder|  
-|Tlačítko|Název = btnAddAnotherAccount|  
+|DateTimePicker|Formát krátkého =<br /><br /> Name = dtpOrderDate|  
+|Tlačítko|Name = btnPlaceOrder|  
+|Tlačítko|Name = btnAddAnotherAccount|  
 |Tlačítko|Název = btnAddFinish|  
   
  **FillOrCancel formuláře**  
@@ -124,13 +124,13 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
   
 |Ovládací prvky pro daný formulář FillOrCancel|Vlastnosti|  
 |----------------------------------------|----------------|  
-|TextBox|Název = txtOrderID|  
+|TextBox|Name = txtOrderID|  
 |Tlačítko|Název = btnFindByOrderID|  
-|DateTimePicker|Formát krátkého =<br /><br /> Název = dtpFillDate|  
+|DateTimePicker|Formát krátkého =<br /><br /> Name = dtpFillDate|  
 |DataGridView|Název = dgvCustomerOrders<br /><br /> Jen pro čtení = True<br /><br /> RowHeadersVisible = False|  
 |Tlačítko|Název = btnCancelOrder|  
 |Tlačítko|Název = btnFillOrder|  
-|Tlačítko|Název = btnFinishUpdates|  
+|Tlačítko|Name = btnFinishUpdates|  
   
 ##  <a name="BKMK_storetheconnectionstring"></a>Připojovací řetězec uložit  
  Když se aplikace pokusí otevřít připojení k databázi, aplikace musí mít přístup k připojovací řetězec. Abyste se vyhnuli, zadáte řetězec ručně na každý formulář, řetězec uložit v souboru App.config ve vašem projektu a vytvoření metody, která vrátí řetězec, pokud metoda je volána z libovolného formuláře v aplikaci.  

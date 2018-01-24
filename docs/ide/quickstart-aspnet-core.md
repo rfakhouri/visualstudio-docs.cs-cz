@@ -14,13 +14,13 @@ dev_langs: CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66c1b3ca7a877c001bc3aeb69c5331fdc828aad8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý úvod: použijte sadu Visual Studio k vytvoření první webové aplikace ASP.NET Core
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první webové aplikace ASP.NET Core
 
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou webovou aplikaci ASP.NET Core C#. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
 
@@ -28,13 +28,13 @@ V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prost
 
 Nejdřív vytvoříte projekt webové aplikace technologie ASP.NET Core. Typ projektu se dodává s soubory šablon, které tvoří funkční webovou aplikaci, než jste přidali i nic!
 
-1. Otevřete Visual Studio 2017.
+1. Open Visual Studio 2017.
 
-1. V horní nabídce vyberte příkaz **soubor**, **nový**, **projektu...** .
+1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
 
 1. V **nový projekt** dialogové okno, v levém podokně rozbalte **Visual C#**, zvolte **.NET Core**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**, zvolte **OK**.
 
-     Pokud nevidíte **.NET Core** projektu šablony, zrušte mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje**, **získat nástroje a Funkce...** . Spustí instalační program Visual Studio. Vyberte **ASP.NET a webové vývoj** zatížení, zvolte **upravit**.
+     Pokud nevidíte **.NET Core** projektu kategorie šablony, vyberte **otevřete instalační program Visual Studio** odkaz v levém podokně. Spustí instalační program Visual Studio. Vyberte **ASP.NET a webové vývoj** zatížení, zvolte **upravit**.
 
      ![Zatížení technologie ASP.NET v instalační program VS](../ide/media/quickstart-aspnet-workload.png)
 
@@ -64,7 +64,7 @@ Nejdřív vytvoříte projekt webové aplikace technologie ASP.NET Core. Typ pro
  }
  ```
 
-1. Uvidíte dvě podtržení vlnovkami vyskytovat v části **prostředí** a **řetězec**, protože tyto typy nejsou v oboru. Otevřete **seznam chyb** nezobrazí nástrojů najdete v části stejné chyby. (Pokud se nezobrazí **seznam chyb** nástrojů vyberte **zobrazení**, **seznam chyb** z hlavní nabídky panelu.)
+1. Uvidíte dvě podtržení vlnovkami vyskytovat v části **prostředí** a **řetězec**, protože tyto typy nejsou v oboru. Otevřete **seznam chyb** nezobrazí nástrojů najdete v části stejné chyby. (Pokud se nezobrazí **seznam chyb** nástrojů vyberte **zobrazení** > **seznam chyb** z hlavní nabídky panelu.)
 
    ![Seznam chyb](../ide/media/quickstart-aspnet-errorlist.png)
 
@@ -72,7 +72,7 @@ Nejdřív vytvoříte projekt webové aplikace technologie ASP.NET Core. Typ pro
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 
-1. Stiskněte klávesu **Ctrl + F5** otevřete ve webovém prohlížeči a spusťte aplikaci.
+1. Stiskněte klávesu **Ctrl**+**F5** otevřete ve webovém prohlížeči a spusťte aplikaci.
 
 1. V horní části webu, zvolte **o** zobrazíte zprávy jste přidali v adresáři `OnGet()` metodu pro **o** stránky.
 
@@ -85,5 +85,6 @@ Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se naučili
 
 ## <a name="see-also"></a>Viz také
 
+[Začínáme s C# a ASP.NET v sadě Visual Studio](tutorial-csharp-aspnet-core.md)  
 [Začínáme s C# a Visual Basic pomocí sady Visual Studio](getting-started-with-visual-csharp-and-visual-basic.md)  
 [Začínáme s stránky Razor v ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)

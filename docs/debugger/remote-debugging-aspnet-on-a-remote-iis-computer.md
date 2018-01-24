@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d08fd52f501ed962f50c232d579171fc52dd2b19
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v Visual Studio 2017
 K ladění aplikace ASP.NET, která byla nasazena do služby IIS, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace a pak připojte k běžící aplikaci ze sady Visual Studio.
 
 ![Součásti vzdáleného ladicího programu](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Tato příručka vysvětluje, jak nastavit a konfigurovat Visual Studio 2017 ASP.NET Core, nasazení pro službu IIS a připojení vzdáleného ladicího programu ze sady Visual Studio. Vzdálené ladění ASP.NET 4.5.2, najdete v tématu [vzdáleného ladění ASP.NET na počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Také můžete nasazovat a ladění ve službě IIS pomocí Azure. Další informace najdete v tématu [vzdáleného ladění na Azure](../debugger/remote-debugging-azure.md).
+Tato příručka vysvětluje, jak nastavit a konfigurovat Visual Studio 2017 ASP.NET Core, nasazení pro službu IIS a připojení vzdáleného ladicího programu ze sady Visual Studio. Vzdálené ladění ASP.NET 4.5.2, najdete v tématu [vzdáleného ladění ASP.NET na počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Také můžete nasazovat a ladění ve službě IIS pomocí Azure. Pro službu Azure App Service, můžete snadno nasadit a ladění předem nakonfigurované instance služby IIS pomocí [ladicí program snímku](../debugger/debug-live-azure-applications.md) nebo [připojení ladicího programu z Průzkumníka serveru](../debugger/remote-debugging-azure.md).
 
 Tyto postupy jsme otestovali na tyto konfigurace serveru:
 * Windows Server 2012 R2 a služby IIS 8
@@ -56,10 +56,10 @@ Mezi dvěma počítači připojené prostřednictvím proxy serveru se nepodporu
 
 V závislosti na nastavení zabezpečení se může ušetřit čas přidat následující důvěryhodných serverů na prohlížeč, abyste si můžete snadno stáhnout software popsané v tomto kurzu. Může být potřeba přístup k těchto lokalit:
 
-- Microsoft.com
+- microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- VisualStudio.com
+- visualstudio.com
 
 Pokud používáte Internet Explorer, můžete přidat důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Tyto kroky jsou u jiných prohlížečů. (Pokud budete muset stáhnout starší verze vzdáleného ladicího programu z my.visualstudio.com, některé další důvěryhodných serverů jsou nutné k přihlášení.)
 

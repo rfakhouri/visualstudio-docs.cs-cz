@@ -9,11 +9,11 @@ ms.date: 01/16/2018
 ms.topic: article
 helpviewer_keywords: editor
 ms.workload: dotnet
-ms.openlocfilehash: 8f8c8433a1c07b508ee6a433592914340a7c0de3
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 pro vývojáře .NET
 
@@ -104,6 +104,9 @@ Níže jsou uvedeny oblíbených zkratky v sadě Visual Studio. Upozorňujeme, �
 | **Ctrl+F12** | Přejít na implementaci | Přejděte do jeho různé implementace ze základní typ nebo člen |
 | **Shift+F12** | Najít všechny odkazy | Zobrazit všechny symbol nebo literálu odkazy |
 | **Ctrl+.** (také **Alt + zadejte** v profilu C#) | Rychlé akce a refaktoringy | Zobrazit, jaké kód opravy, akce generování kódu, refaktoring nebo jiných rychlé akce jsou k dispozici na výběr kurzoru pozici nebo kód |
+| **CTRL**+**E**,**V** | Duplicitní řádku | Duplikuje řádek kódu, která kurzor se nachází v (k dispozici v **Visual Studio 2017 verze 15,6 operací preview 2** a novější) |
+| **Ctrl**+**W** | Rozbalte výběr | Aktuální výběr o jednu jednotku strukturální rozšíří (k dispozici v **Visual Studio 2017 verze 15,5**) |
+| **Ctrl**+**Shift**+**W** | Výběr kontraktu | Kontrakty (snižuje) aktuální výběr o jednu jednotku strukturální (k dispozici v **Visual Studio 2017 verze 15,5**) |
 | **Ctrl+Q** | Snadné spuštění | Hledání všechna nastavení sady Visual Studio |
 | **F5** | Spuštění ladění | Spuštění ladění aplikace |
 | **Ctrl+F5** | Spustit bez ladění | Místní spuštění aplikace bez ladění |

@@ -7,28 +7,28 @@ ms.suite:
 ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 92fa57068a760fc8168fa46cf32a5660293b2e9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d46b1c9e87b0bf5b8c0b12cfe10ac4cd85a4741c
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Vyhněte se zpracování poškozená stavu výjimek
+
 |||  
 |-|-|  
 |TypeName|AvoidHandlingCorruptedStateExceptions|  
 |CheckId|CA2153|  
 |Kategorie|Microsoft.Security|  
 |Narušující změna|Bez ukončování řádků|  
-  
-## <a name="cause"></a>příčina  
- [Poškozený stav výjimky (rozšíření na straně klienta)](https://msdn.microsoft.com/en-us/magazine/dd419661.aspx) znamenat, že paměť poškození existuje v procesu. Zachytávání tyto než umožní procesu havárií může vést k ohrožení zabezpečení, pokud útočník můžete umístit zneužití do oblasti poškozená paměti.  
+
+## <a name="cause"></a>příčina
+
+[Poškozený stav výjimky (rozšíření na straně klienta)](https://msdn.microsoft.com/magazine/dd419661.aspx) znamenat, že paměť poškození existuje v procesu. Zachytávání tyto než umožní procesu havárií může vést k ohrožení zabezpečení, pokud útočník můžete umístit zneužití do oblasti poškozená paměti.
   
 ## <a name="rule-description"></a>Popis pravidla  
  Rozšíření na straně klienta signalizuje, že stav procesu má byla poškozena a nebyla zachycena v systému. V poškozeném stavu scénáři obslužnou rutinu obecné pouze zachytí výjimky Pokud označíte metodu správné `HandleProcessCorruptedStateExceptions` atribut. Ve výchozím nastavení [Common Language Runtime (CLR)](/dotnet/standard/clr) nebude vyvolat catch obslužné rutiny pro rozšíření na straně klienta.  

@@ -23,11 +23,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 52243e28dbc35fbefb67fa1b52ce9fb6cdbda98d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 71572ac38c7aed3154360d3bad9e4b84fe0107e3
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="handle-a-concurrency-exception"></a>Zpracování výjimky souběžnosti
 Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) se vyvolá, když dva uživatelé pokusí změnit stejná data v databázi ve stejnou dobu. V tomto návodu vytvoříte aplikace systému Windows, která ukazuje, jak zachytit <xref:System.Data.DBConcurrencyException>, vyhledejte řádek, který chybu způsobil a další strategie, jak se nezdařilo.  
@@ -51,7 +51,7 @@ Výjimky souběžnosti (<xref:System.Data.DBConcurrencyException>) se vyvolá, k
 ## <a name="prerequisites"></a>Požadavky  
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.  
   
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.  
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.  
   
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:  
 

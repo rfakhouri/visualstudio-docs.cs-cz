@@ -17,28 +17,28 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9f6aaafa0ff72a175b5900b1ff1dfa054fe0381b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 Další informace o usnadnění klávesnice najdete v tématu [Rady a tipy k usnadnění](../ide/reference/accessibility-tips-and-tricks.md) a [postupy: použití klávesnice výhradně](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 Výběrem příslušné klávesovou zkratku můžete zpřístupnit různé příkazů a oken v sadě Visual Studio. Toto téma uvádí výchozí zkratky pro obecné vývoj profil, který je možné vybrat při instalaci sady Visual Studio. Bez ohledu na to, které jste vybrali profil můžete identifikovat zástupce pro příkaz otevřením **možnosti** dialogové okno, rozšíření **prostředí** uzel a pak vyberete **klávesnice**. Klávesové zkratky můžete také upravit přiřazením různých zkratek jakémukoli příkazu.
 
-Seznam běžných klávesové zkratky a další produktivitu informace najdete v tématu [výchozí klávesové zkratky pro často použít příkazy v sadě Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [tipy a triky](../ide/tips-and-tricks-for-visual-studio.md), a [ Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md).
+Seznam běžných klávesové zkratky a další produktivitu informace najdete v tématu [výchozí klávesové zkratky pro často použít příkazy v sadě Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [klávesové tipy](../ide/tips-and-tricks-for-visual-studio.md), a [ Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md).
 
 Oddíly v následující tabulce obsahují příkazy, které jsou globální, takže jsou přístupné z libovolného místa v sadě Visual Studio pomocí klávesových zkratek:
 
 |||||  
 |-|-|-|-|  
-|[Analýza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Upravit](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Projekt](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
+|[Analýza](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)|[Upravit](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)|[Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)|  
 |[Architektura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Editor kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Projekt a řešení kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Průzkumníka testů](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|  
 |[Sestavení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Soubor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refaktorovat](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Nástroje](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|  
-|[Třídy zobrazení kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Průzkumník řešení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Zobrazení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|  
-|[Ladění](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Zátěžový Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Tým](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Okno](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|  
+|[Třídy zobrazení kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Pomoc](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Průzkumník řešení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[View](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|  
+|[Ladění](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Zátěžový Test](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Team](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Window](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|  
 |[Ladicí program kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Další kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation kontextové nabídky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|  
 |[Centrum diagnostiky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||  
 
@@ -51,7 +51,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |[Editor programového testu UI](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[Sloučení okno editoru](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[Návrhář zobrazení](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|  
 |[Editor datové sady](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools, porovnat schématu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Team Foundation Build podrobností Editoru](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
 |[Rozdíl prohlížeč](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools, Návrháře tabulky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[Průzkumníka testů](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Návrhář formulářů Windows](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
-|[Průzkumník modelu DOM](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server Data Tools, Editor T-SQL](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[Textový Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[Pracovní položky editoru](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|  
+|[Průzkumník modelu DOM](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_DOM)|[Microsoft SQL Server Data Tools, T-SQL Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TSQLeditor)|[Text Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TextEditor)|[Pracovní položky editoru](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workItemEditor)|  
 |[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools, Editor PDW T-SQL](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[Diagram činnosti UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[Zobrazení dotazu pracovních položek](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
 |[Editor dokumentu grafu](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Nástroj Page Inspector](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[Diagramu tříd UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[Zobrazení výsledků pracovních položek](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|  
 |[Diagnostika grafiky](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[Návrhář dotazů](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[Diagram komponent UML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[Návrhář postupu provádění](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|  
@@ -72,7 +72,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
-|Architecture.NewDiagram|CTRL +\\, Ctrl + N|  
+|Architecture.NewDiagram|Ctrl+\\, Ctrl+N|  
 
 ###  <a name="bkmk_build"></a>Sestavení
 
@@ -89,7 +89,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |--------------|------------------------|  
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Enter|  
 
-###  <a name="bkmk_debug"></a>Ladění
+###  <a name="bkmk_debug"></a> Debug
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -120,13 +120,13 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Debug.Memory1|Ctrl+Alt+M, 1|  
 |Debug.Memory2|Ctrl + Alt + M, 2|  
 |Debug.Memory3|Ctrl + Alt + M, 3|  
-|Debug.Memory4|Ctrl + Alt + M, 4|  
+|Debug.Memory4|Ctrl+Alt+M, 4|  
 |Debug.Modules|Ctrl+Alt+U|  
 |Debug.ParallelStacks|Ctrl+Shift+D, S|  
 |Debug.ParallelWatch1|Ctrl+Shift+D, 1|  
-|Debug.ParallelWatch2|Ctrl + Shift + D, 2|  
-|Debug.ParallelWatch3|Ctrl + Shift + D, 3|  
-|Debug.ParallelWatch4|Ctrl + Shift + D, 4|  
+|Debug.ParallelWatch2|Ctrl+Shift+D, 2|  
+|Debug.ParallelWatch3|Ctrl+Shift+D, 3|  
+|Debug.ParallelWatch4|Ctrl+Shift+D, 4|  
 |Debug.Processes|Ctrl+Alt+Z|  
 |Debug.QuickWatch|Shift+F9<br /><br /> or<br /><br /> Ctrl+Alt+Q|  
 |Debug.RefreshWindowsapp|Ctrl+Shift+R|  
@@ -171,7 +171,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |-------------|-----------------------|  
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|  
 
-###  <a name="bkmk_edit"></a>Upravit
+###  <a name="bkmk_edit"></a> Edit
 
 |Příkazy||  
 |--------------|-|  
@@ -340,12 +340,12 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0, Ctrl+A<br /><br /> or<br /><br /> Ctrl+0, A|  
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0, Ctrl+W<br /><br /> or<br /><br /> Ctrl+0, W|  
 
-###  <a name="bkmk_test"></a>Test
+###  <a name="bkmk_test"></a> Test
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
-|Test.UseCodedUITestBuilder|CTRL +\\, Ctrl + C|  
-|Test.UseExistingActionRecording|CTRL +\\, Ctrl + A|  
+|Test.UseCodedUITestBuilder|Ctrl+\\, Ctrl+C|  
+|Test.UseExistingActionRecording|Ctrl+\\, Ctrl+A|  
 
 ###  <a name="bkmk_testexplorerGLOBAL"></a>Průzkumníka testů
 
@@ -371,7 +371,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
 |View.AllWindows|Shift+Alt+M|  
-|View.ArchitectureExplorer|CTRL +\\, Ctrl + R|  
+|View.ArchitectureExplorer|Ctrl+\\, Ctrl+R|  
 |View.Backward|Alt + šipka doleva|  
 |View.BookmarkWindow|Ctrl+K, Ctrl+W|  
 |View.BrowseNext|Ctrl+Shift+1|  
@@ -379,12 +379,12 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |View.CallHierarchy|Ctrl+Alt+K|  
 |View.ClassView|Ctrl+Shift+C|  
 |View.ClassViewGoToSearchCombo|Ctrl+K, Ctrl+V|  
-|View.CodeDefinitionWindow|CTRL +\\, D<br /><br /> or<br /><br /> CTRL +\\, Ctrl + D|  
+|View.CodeDefinitionWindow|Ctrl+\\, D<br /><br /> or<br /><br /> Ctrl+\\, Ctrl+D|  
 |View.CommandWindow|Ctrl+Alt+A|  
 |View.DataSources|Shift+Alt+D|  
 |View.DocumentOutline|Ctrl+Alt+T|  
 |View.EditLabel|F2|  
-|View.ErrorList|CTRL +\\, E<br /><br /> or<br /><br /> CTRL +\\, Ctrl + E|  
+|View.ErrorList|Ctrl+\\, E<br /><br /> or<br /><br /> Ctrl+\\, Ctrl+E|  
 |View.F#Interactive|Ctrl+Alt+F|  
 |View.FindSymbolResults|Ctrl+Alt+F12|  
 |View.Forward|Alt + šipka doprava|  
@@ -404,11 +404,11 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |View.ServerExplorer|Ctrl+Alt+S|  
 |View.ShowSmartTag|Shift+Alt+F10<br /><br /> or<br /><br /> Ctrl+.|  
 |View.SolutionExplorer|Ctrl+Alt+L|  
-|View.SQLServerObjectExplorer|CTRL +\\, Ctrl + S|  
-|View.TaskList|CTRL +\\, T<br /><br /> or<br /><br /> CTRL +\\, Ctrl + T|  
-|View.TfsTeamExplorer|CTRL +\\, Ctrl + M|  
+|View.SQLServerObjectExplorer|Ctrl+\\, Ctrl+S|  
+|View.TaskList|Ctrl+\\, T<br /><br /> or<br /><br /> Ctrl+\\, Ctrl+T|  
+|View.TfsTeamExplorer|Ctrl+\\, Ctrl+M|  
 |View.Toolbox|Ctrl+Alt+X|  
-|View.UMLModelExplorer|CTRL +\\, Ctrl + U|  
+|View.UMLModelExplorer|Ctrl+\\, Ctrl+U|  
 |View.ViewCode|F7|  
 |View.ViewDesigner|Shift+F7|  
 |View.WebBrowser|Ctrl+Alt+R|  
@@ -504,13 +504,13 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |-|-|  
 |Příkazy|Klávesové zkratky|  
 |Diff.IgnoreTrimWhitespace|CTRL +\\, Ctrl + mezerník|  
-|Diff.InlineView|CTRL +\\, Ctrl + 1|  
-|Diff.LeftOnlyView|CTRL +\\, Ctrl + 3|  
+|Diff.InlineView|Ctrl+\\, Ctrl+1|  
+|Diff.LeftOnlyView|Ctrl+\\, Ctrl+3|  
 |Diff.NextDifference|F8|  
 |Diff.PreviousDifference|Shift+F8|  
-|Diff.RightOnlyView|CTRL +\\, Ctrl + 4|  
-|Diff.SideBySideView|CTRL +\\, Ctrl + 2|  
-|Diff.SwitchBetweenLeftAndRight|CTRL +\\, Ctrl + Tab|  
+|Diff.RightOnlyView|Ctrl+\\, Ctrl+4|  
+|Diff.SideBySideView|Ctrl+\\, Ctrl+2|  
+|Diff.SwitchBetweenLeftAndRight|Ctrl+\\, Ctrl+Tab|  
 |Diff.SynchronizeViewToggle|CTRL +\\, Ctrl + šipka dolů|  
 |EditorContextMenus.CodeWindow.AddComment|Ctrl+Shift+K|  
 |EditorContextMenus.CodeWindow.EditLocalFile|Ctrl+Shift+P|  
@@ -551,11 +551,11 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Graphics.MovePixelSelectionRight|Shift + Alt + šipka doprava|  
 |Graphics.MovePixelSelectionUp|Shift + Alt + šipka nahoru|  
 |Graphics.ZoomToActualSize|Shift+Alt+0|  
-|Graphics.ZoomToFitInWindow|Shift + Alt + 9|  
+|Graphics.ZoomToFitInWindow|Shift+Alt+9|  
 |Graphics.ZoomIn|Shift+Alt+=|  
 |Graphics.ZoomOut|Shift+Alt+-|  
 
-##  <a name="bkmk_HTMLeditor"></a>HTML Editor  
+##  <a name="bkmk_HTMLeditor"></a> HTML Editor  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
@@ -1029,7 +1029,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |QueryDesigner.Results|Ctrl+4|  
 |QueryDesigner.SQL|Ctrl+3|  
 
-##  <a name="bkmk_visualstudio"></a>Visual Studio  
+##  <a name="bkmk_visualstudio"></a> Visual Studio  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  

@@ -22,11 +22,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 7704b8f4af9f6858e476f4075c6f38cda3052118
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b93cacb9f64a4fbf0b6478feb922c74b35a3f7ea
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho formátu do druhého. Pomocí zákazníků a tabulky objednávky z Northwind, jeden formulář umožňuje vybrat zákazníka a druhý formulář obsahuje objednávky vybraného zákazníka. Tento návod ukazuje postup vytvoření metody na druhý formulář, který přijímá data z první formulář.  
@@ -53,7 +53,7 @@ Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho
 ## <a name="prerequisites"></a>Požadavky  
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.  
   
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.  
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.  
   
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:  
 

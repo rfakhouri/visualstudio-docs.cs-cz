@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: fd882c536fefde9a9eb6ab546d6049d1f1216771
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 31ec03dbc2eda481d4de82a848d696b80e99cb2e
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Vytvoření formuláře Windows k vyhledávání dat
 Běžný scénář aplikace je zobrazení vybrané dat ve formuláři. Například můžete chtít zobrazit objednávky pro konkrétního zákazníka nebo podrobnosti o určitém pořadí. V tomto scénáři uživatel zadá informace do formuláře a potom je dotaz proveden se vstupem uživatele jako parametr; To znamená je vybraná data, na základě parametrizovaného dotazu. Dotaz vrátí jenom data, která splňuje kritéria zadaná uživatelem. Tento návod ukazuje, jak vytvořit dotaz, který vrátí zákazníků v konkrétním městě a upravit uživatelské rozhraní, aby uživatelé mohli zadejte název města a stiskněte tlačítko provést dotaz.  
@@ -48,11 +48,12 @@ Běžný scénář aplikace je zobrazení vybrané dat ve formuláři. Napříkl
   
 -   Zadání parametrů do formuláře a provádění parametrizovaného dotazu.  
   
-## <a name="prerequisites"></a>Požadavky  
+## <a name="prerequisites"></a>Požadavky
+
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.  
-  
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.  
-  
+
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
+
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:  
 
     1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz...** .  

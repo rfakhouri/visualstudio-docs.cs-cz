@@ -21,11 +21,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e2b973b00e132973b8569bc5cad8c1f1318317cd
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 
@@ -35,7 +35,7 @@ Fragmenty kódu jsou malé bloky opakovaně použitelný kód, který lze vloži
 
 V sadě Visual Studio jsou dva druhy fragment kódu: fragmenty rozšíření, které jsou přidány do zadaného kurzoru a může nahradit zástupce fragment kódu a příkazu Obklopit s s fragmenty (C# a C++ pouze), které jsou přidány kolem vybraného bloku kódu.
 
-Příklad vložení fragmentu: v jazyce C# tryf zástupce slouží k vložení blok try-finally –:
+Příkladem fragment rozšíření: v jazyce C# tryf zástupce slouží k vložení blok try-finally –:
 
 ```csharp
 try

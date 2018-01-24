@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5a41ed010a4e950bd0fa4d28f63481587b847309
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fdd95f1890033e90b2679a2c992f3a49ad474851
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="managing-application-settings-net"></a>Správa nastavení aplikace (.NET)
 
@@ -99,7 +99,7 @@ Musíte také explicitně volat `Save` metoda této obálkové třídy, aby zach
 Properties.Settings.Default.Save();
 ```
 
-Obecné informace o přístup k nastavení aplikace pomocí `Settings` třídy najdete v tématu [přehled nastavení aplikace (.NET Frameword)](/dotnet/framework/winforms/advanced/application-settings-overview). Informace o iterace v rámci nastavení najdete v tématu to [příspěvek na fóru](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Obecné informace o přístup k nastavení aplikace pomocí `Settings` třídy najdete v tématu [přehled nastavení aplikace (rozhraní .NET Framework)](/dotnet/framework/winforms/advanced/application-settings-overview). Informace o iterace v rámci nastavení najdete v tématu to [příspěvek na fóru](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Viz také
 

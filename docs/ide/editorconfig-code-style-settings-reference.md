@@ -21,11 +21,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 1657a440405533ba188a101ae22c26c2777feff5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 76b7ed58713f61882130c48d808012dc35055f55
+ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kódování nastavení konvence pro EditorConfig rozhraní .NET
 
@@ -66,51 +66,51 @@ V následujícím seznamu jsou povolená jazyk pravidla konvence:
 
 - Nastavení stylu kódu rozhraní .NET
     - ["This." a kvalifikátory "mě."](#this_and_me)
-        - DotNet\_styl\_kvalifikace\_for_field
-        - DotNet\_styl\_kvalifikace\_for_property
+        - dotnet\_style\_qualification\_for_field
+        - dotnet\_style\_qualification\_for_property
         - DotNet\_styl\_kvalifikace\_for_method
-        - DotNet\_styl\_kvalifikace\_for_event
+        - dotnet\_style\_qualification\_for_event
     - [Klíčová slova jazyka namísto názvů typu framework pro odkazy na typ](#language_keywords)
-        - DotNet\_styl\_předdefinované\_typ\_pro\_místní hodnoty –\_parameters_members
-        - DotNet\_styl\_předdefinované\_typ\_pro\_member_access
+        - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
+        - dotnet\_style\_predefined\_type\_for\_member_access
     - [Předvolby – modifikátor](#normalize_modifiers)
-        - DotNet\_styl\_vyžadují\_accessibility_modifiers
-        - CSharp\_upřednostňované\_modifier_order
-        - Visual\_základní\_upřednostňované\_modifier_order
+        - dotnet\_style\_require\_accessibility_modifiers
+        - csharp\_preferred\_modifier_order
+        - visual\_basic\_preferred\_modifier_order
     - [Předvolby úrovni výrazu](#expression_level)
-        - DotNet\_styl\_object_initializer
+        - dotnet\_style\_object_initializer
         - DotNet\_styl\_collection_initializer
-        - DotNet\_styl\_explicitní\_tuple_names
-        - DotNet\_styl\_coalesce_expression
-        - DotNet\_styl\_null_propagation
-        - DotNet\_přednost\_odvodit\_tuple_names
-        - DotNet\_přednost\_odvodit\_anonymní\_typ\_member_names
+        - dotnet\_style\_explicit\_tuple_names
+        - dotnet\_style\_coalesce_expression
+        - dotnet\_style\_null_propagation
+        - dotnet\_prefer\_inferred\_tuple_names
+        - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
 - Nastavení stylu kódu C#
     - [Implicitní a explicitní typy](#var)
         - CSharp\_styl\_var\_pro\_vytvořené\_in_types
-        - CSharp\_styl\_var\_při\_typ\_is_apparent
-        - CSharp\_styl\_var_elsewhere
+        - csharp\_style\_var\_when\_type\_is_apparent
+        - csharp\_style\_var_elsewhere
     - [Členové tvoření výrazy](#expression_bodied_members)
-        - CSharp\_styl\_výraz\_bodied_methods
-        - CSharp\_styl\_výraz\_bodied_constructors
-        - CSharp\_styl\_výraz\_bodied_operators
-        - CSharp\_styl\_výraz\_bodied_properties
-        - CSharp\_styl\_výraz\_bodied_indexers
-        - CSharp\_styl\_výraz\_bodied_accessors
+        - csharp\_style\_expression\_bodied_methods
+        - csharp\_style\_expression\_bodied_constructors
+        - csharp\_style\_expression\_bodied_operators
+        - csharp\_style\_expression\_bodied_properties
+        - csharp\_style\_expression\_bodied_indexers
+        - csharp\_style\_expression\_bodied_accessors
     - [Shoda vzoru](#pattern_matching)
-        - CSharp\_styl\_vzor\_odpovídající\_přes\_je\_s\_cast_check
-        - CSharp\_styl\_vzor\_odpovídající\_přes\_jako\_s\_null_check
+        - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
+        - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
     - [Vložená deklarace proměnných](#inlined_variable_declarations)
-        - CSharp\_styl\_vložená\_variable_declaration
+        - csharp\_style\_inlined\_variable_declaration
     - [Předvolby úrovni výrazu](#expression_level_csharp)
-        - CSharp\_přednost\_jednoduché\_default_expression
-        - CSharp\_styl\_deconstructed\_variable_declaration
-        - CSharp\_styl\_vzor\_místní\_přes\_anonymous_function
+        - csharp\_prefer\_simple\_default_expression
+        - csharp\_style\_deconstructed\_variable_declaration
+        - csharp\_style\_pattern\_local\_over\_anonymous_function
     - ["Null" Kontrola předvolby](#null_checking)
-        - CSharp\_styl\_throw_expression
-        - CSharp\_styl\_podmíněného\_delegate_call
+        - csharp\_style\_throw_expression
+        - csharp\_style\_conditional\_delegate_call
     - [Předvolby blok kódu](#code_block)
-        - CSharp\_prefer_braces
+        - csharp\_prefer_braces
 
 ### <a name="net-code-style-settings"></a>Nastavení stylu kódu rozhraní .NET
 
@@ -129,7 +129,7 @@ Následující tabulka uvádí názvy pravidel, použít programovací jazyky a 
 | dotnet_style_qualification_for_method | C# a Visual Basic | FALSE: žádné |
 | dotnet_style_qualification_for_event | C# a Visual Basic | FALSE: žádné |
 
-**DotNet\_styl\_kvalifikace\_for_field**
+**dotnet\_style\_qualification\_for_field**
 
 - Když je toto pravidlo nastavená na **true**, raději polí, která mají být uvedena `this.` v jazyce C# nebo `Me.` v jazyce Visual Basic.
 - Když je toto pravidlo nastavená na **false**, raději pole _není_ k být uvedena `this.` nebo `Me.`.
@@ -152,7 +152,7 @@ Me.capacity = 0
 capacity = 0
 ```
 
-**DotNet\_styl\_kvalifikace\_for_property**
+**dotnet\_style\_qualification\_for_property**
 
 - Když je toto pravidlo nastavená na **true**, raději vlastnosti, které chcete být uvedena `this.` v jazyce C# nebo `Me.` v jazyce Visual Basic.
 - Když je toto pravidlo nastavená na **false**, raději vlastnosti _není_ k být uvedena `this.` nebo `Me.`.
@@ -198,7 +198,7 @@ Me.Display()
 Display()
 ```
 
-**DotNet\_styl\_kvalifikace\_for_event**
+**dotnet\_style\_qualification\_for_event**
 
 - Když je toto pravidlo nastavená na **true**, raději události, které mají být uvedena `this.` v jazyce C# nebo `Me.` v jazyce Visual Basic.
 - Když je toto pravidlo nastavená na **false**, raději události _není_ k být uvedena `this.` nebo `Me.`.
@@ -243,7 +243,7 @@ Následující tabulka uvádí názvy pravidel, ID pravidla, použít programova
 | dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 a IDE0014 | C# a Visual Basic | hodnotu true: žádné |
 | dotnet_style_predefined_type_for_member_access | IDE0013 a IDE0015 | C# a Visual Basic | hodnotu true: žádné |
 
-**DotNet\_styl\_předdefinované\_typ\_pro\_místní hodnoty –\_parameters_members**
+**dotnet\_style\_predefined\_type\_for\_locals\_parameters_members**
 
 - Když je toto pravidlo nastavená na **true**, raději klíčové slovo jazyka pro místní proměnné, parametry metody a členy, místo název typu pro typy, které mají klíčové slovo je zastupovat třídy.
 - Když je toto pravidlo nastavená na **false**, raději název typu pro místní proměnné, parametry metody a členy, místo klíčové slovo jazyka třídy.
@@ -266,7 +266,7 @@ Private _member As Integer
 Private _member As Int32
 ```
 
-**DotNet\_styl\_předdefinované\_typ\_pro\_member_access**
+**dotnet\_style\_predefined\_type\_for\_member_access**
 
 - Když je toto pravidlo nastavená na **true**, raději klíčové slovo jazyka pro člen přístup výrazy, místo název typu pro typy, které mají klíčové slovo představující je.
 - Když je toto pravidlo nastavená na **false**, raději název typu pro člen přístup výrazy, místo klíčové slovo jazyka.
@@ -300,23 +300,23 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 #### <a name="normalize_modifiers">Předvolby – modifikátor</a>
 
-Pravidla stylu v této části problém modifikátor předvolby včetně nutnosti accessbility modifikátory a určení požadované modifikátor pořadí řazení.
+Pravidla stylu v této části problém modifikátor předvolby včetně nutnosti modifikátory dostupnosti a určení požadované modifikátor pořadí řazení.
 
 Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programovacích jazyků, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
 | Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members: žádné | 15.5 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | veřejné, privátní, chráněné, interní, statické, extern, nové, virtuální, abstraktní a uzavřené, přepsání, jen pro čtení, unsafe, volatile, asynchronní: žádné | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, výchozí, privátní, chráněný, veřejné, přítele, NotOverridable, přepisovatelné, MustOverride, přetížení, přepsání, MustInherit, NotInheritable, statické, sdílené, stínů, jen pro čtení, WriteOnly, dimenze, Const, WithEvents, rozšíření, zužující, vlastní, Asynchronní: žádné | 15.5 |
 
-**DotNet\_styl\_vyžadují\_accessibility_modifiers**
+**dotnet\_style\_require\_accessibility_modifiers**
 
 Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:
 
 | Hodnota | Popis |
 | ----- |:----------- |
-| Vždy | Modifikátory accessbility zadat raději |
+| Vždy | Modifikátory dostupnosti zadat raději |
 | pro\_bez\_interface_members | Dáváte přednost modifikátory dostupnosti deklarovat s výjimkou veřejné rozhraní členy. To nebude aktuálně lišit od **vždy** a bude fungovat jako budoucí kontroly pravopisu systému pro Pokud C# přidá výchozí metody rozhraní. |
 | Nikdy | Není dáváte přednost modifikátory dostupnosti zadat |
 
@@ -398,7 +398,7 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programova
 | dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + a Visual Basic 15 + | hodnotu true: návrh | 15,6 operací náhled 2 |
 | dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# a Visual Basic | hodnotu true: návrh | 15,6 operací náhled 2 |
 
-**DotNet\_styl\_object_initializer**
+**dotnet\_style\_object_initializer**
 
 - Když je toto pravidlo nastavená na **true**, raději objekty, které se inicializovat pomocí inicializátory objektů, pokud je to možné.
 - Když je toto pravidlo nastavená na **false**, raději objekty, které se *není* být inicializována pomocí inicializátory objektů.
@@ -423,7 +423,7 @@ Dim c = New Customer()
 c.Age = 21
 ```
 
-**DotNet\_styl\_collection_initializer**
+**dotnet\_style\_collection_initializer**
 
 - Když je toto pravidlo nastavená na **true**, raději kolekcí, aby bylo možné inicializována pomocí Inicializátory kolekcí, pokud je to možné.
 - Když je toto pravidlo nastavená na **false**, raději kolekce a *není* být inicializována pomocí Inicializátory kolekcí.
@@ -452,7 +452,7 @@ list.Add(2)
 list.Add(3)
 ```
 
-**DotNet\_styl\_explicitní\_tuple_names**
+**dotnet\_style\_explicit\_tuple_names**
 
 - Když je toto pravidlo nastavená na **true**, přednost ItemX vlastnosti názvy řazené kolekce členů.
 - Když je toto pravidlo nastavená na **false**, přednost ItemX vlastnosti názvy řazené kolekce členů.
@@ -479,7 +479,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-**DotNet\_styl\_coalesce_expression**
+**dotnet\_style\_coalesce_expression**
 
 - Když je toto pravidlo nastavená na **true**, raději null slučování výrazy Ternární operátor kontrola.
 - Když je toto pravidlo nastavená na **false**, raději Ternární operátor kontrola slučování výrazy hodnotu null.
@@ -504,7 +504,7 @@ Dim v = If(x Is Nothing, y, x) ' or
 Dim v = If(x IsNot Nothing, x, y)
 ```
 
-**DotNet\_styl\_null_propagation**
+**dotnet\_style\_null_propagation**
 
 - Když je toto pravidlo nastavená na **true**, dávají přednost používání operátor podmíněného hodnotu null, pokud je to možné.
 - Když je toto pravidlo nastavená na **false**, dávají přednost používání Ternární null kontrole, kde je to možné.
@@ -529,7 +529,7 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-**DotNet\_přednost\_odvodit\_tuple_names**
+**dotnet\_prefer\_inferred\_tuple_names**
 
 - Když je toto pravidlo nastavená na **true**, raději názvy elementů odvozené řazené kolekce členů.
 - Když je toto pravidlo nastavená na **false**, raději názvy elementů explicitní řazené kolekce členů.
@@ -544,7 +544,7 @@ var tuple = (age, name);
 var tuple = (age: age, name: name);
 ```
 
-**DotNet\_styl\_přednost\_odvodit\_anonymní\_typ\_member_names**
+**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
 
 - Když je toto pravidlo nastavená na **true**, raději názvy člen vyvozen anonymního typu.
 - Když je toto pravidlo nastavená na **false**, dáváte přednost explicitní anonymního typu názvy členů.
@@ -590,7 +590,7 @@ Následující tabulka uvádí názvy pravidel, použít programovací jazyky a 
 | csharp_style_var_when_type_is_apparent | C# | hodnotu true: žádné |
 | csharp_style_var_elsewhere | C# | hodnotu true: žádné |
 
-**CSharp\_styl\_var\_pro\_vytvořené\_in_types**
+**csharp\_style\_var\_for\_built\_in_types**
 
 - Když je toto pravidlo nastavená na **true**, raději `var` se používá k deklaraci proměnné pomocí předdefinovaného systémového typy, jako `int`.
 - Když je toto pravidlo nastavená na **false**, přednost explicitní typ přes `var` deklarovat proměnné pomocí předdefinovaného systémového typy, jako `int`.
@@ -605,7 +605,7 @@ var x = 5;
 int x = 5;
 ```
 
-**CSharp\_styl\_var\_při\_typ\_is_apparent**
+**csharp\_style\_var\_when\_type\_is_apparent**
 
 - Když je toto pravidlo nastavená na **true**, raději `var` když je typ již uveden na pravé straně výrazu deklarace.
 - Když je toto pravidlo nastavená na **false**, přednost explicitní typ přes `var` když je typ již uveden na pravé straně výrazu deklarace.
@@ -620,7 +620,7 @@ var obj = new Customer();
 Customer obj = new Customer();
 ```
 
-**CSharp\_styl\_var_elsewhere**
+**csharp\_style\_var_elsewhere**
 
 - Když je toto pravidlo nastavená na **true**, raději `var` přes explicitního typu ve všech případech, není-li přepsat pravidlo stylu jiný kód.
 - Když je toto pravidlo nastavená na **false**, přednost explicitní typ přes `var` ve všech případech, není-li přepsat pravidlo stylu jiný kód.
@@ -660,7 +660,7 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, příslušné jazyk
 | csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0 + | hodnotu true: žádné | 15.3 |
 | csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0 + | hodnotu true: žádné | 15.3 |
 
-**CSharp\_styl\_výraz\_bodied_methods**
+**csharp\_style\_expression\_bodied_methods**
 
 Toto pravidlo je možné zadat hodnoty z v následující tabulce:
 
@@ -680,7 +680,7 @@ public int GetAge() => this.Age;
 public int GetAge() { return this.Age; }
 ```
 
-**CSharp\_styl\_výraz\_bodied_constructors**
+**csharp\_style\_expression\_bodied_constructors**
 
 Toto pravidlo je možné zadat hodnoty z v následující tabulce:
 
@@ -700,7 +700,7 @@ public Customer(int age) => Age = age;
 public Customer(int age) { Age = age; }
 ```
 
-**CSharp\_styl\_výraz\_bodied_operators**
+**csharp\_style\_expression\_bodied_operators**
 
 Toto pravidlo je možné zadat hodnoty z v následující tabulce:
 
@@ -722,7 +722,7 @@ public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```
 
-**CSharp\_styl\_výraz\_bodied_properties**
+**csharp\_style\_expression\_bodied_properties**
 
 Toto pravidlo je možné zadat hodnoty z v následující tabulce:
 
@@ -742,7 +742,7 @@ public int Age => _age;
 public int Age { get { return _age; }}
 ```
 
-**CSharp\_styl\_výraz\_bodied_indexers**
+**csharp\_style\_expression\_bodied_indexers**
 
 Toto pravidlo je možné zadat hodnoty z v následující tabulce:
 
@@ -762,7 +762,7 @@ public T this[int i] => _value[i];
 public T this[int i] { get { return _values[i]; } }
 ```
 
-**CSharp\_styl\_výraz\_bodied_accessors**
+**csharp\_style\_expression\_bodied_accessors**
 
 Toto pravidlo je možné zadat hodnoty z v následující tabulce:
 
@@ -806,7 +806,7 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, příslušné jazyk
 | csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# 7.0 + | hodnotu true: návrh |
 | csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# 7.0 + | hodnotu true: návrh |
 
-**CSharp\_styl\_vzor\_odpovídající\_přes\_je\_s\_cast_check**
+**csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check**
 
 - Když je toto pravidlo nastavená na **true**, raději shoda vzoru místo `is` výrazy s typ přetypování.
 - Když je toto pravidlo nastavená na **false**, raději `is` výrazy s přetypování typu místo porovnávání vzorů.
@@ -821,7 +821,7 @@ if (o is int i) {...}
 if (o is int) {var i = (int)o; ... }
 ```
 
-**CSharp\_styl\_vzor\_odpovídající\_přes\_jako\_s\_null_check**
+**csharp\_style\_pattern\_matching\_over\_as\_with\_null_check**
 
 - Když je toto pravidlo nastavená na **true**, raději shoda vzoru místo `as` výrazy s hodnotou null kontroly k určení, pokud je něco určitého typu.
 - Když je toto pravidlo nastavená na **false**, raději `as` výrazy s kontroly hodnoty null místo k určení, pokud je něco určitého typu porovnávání vzorů.
@@ -856,7 +856,7 @@ Následující tabulka uvádí název pravidla, ID pravidla, příslušné jazyk
 | --------- | -------- | -------------------- | ----------------------|
 | csharp_style_inlined_variable_declaration | IDE0018 | C# 7.0 + | hodnotu true: návrh |
 
-**CSharp\_styl\_vložená\_variable_declaration**
+**csharp\_style\_inlined\_variable_declaration**
 
 - Když je toto pravidlo nastavená na **true**, raději `out` proměnné deklarovat vložené v seznamu argumentů volání metody, pokud je to možné.
 - Když je toto pravidlo nastavená na **false**, raději `out` proměnné deklarovat před volání metody.
@@ -892,7 +892,7 @@ Následující tabulka uvádí název pravidla, ID pravidla, příslušné jazyk
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0 + | hodnotu true: návrh | 15.5 |
 | csharp_style_pattern_local_over_anonymous_function | IDE0039 | C# 7.0 + | hodnotu true: návrh | 15.5 |
 
-**CSharp\_přednost\_jednoduché\_default_expression**
+**csharp\_prefer\_simple\_default_expression**
 
 Toto pravidlo stylu týká pomocí [ `default` literál pro výchozí hodnotu výrazy](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) při kompilátor může odvodit typ výrazu.
 
@@ -909,7 +909,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
 ```
 
-**CSharp\_styl\_deconstructed\_variable_declaration**
+**csharp\_style\_deconstructed\_variable_declaration**
 
 - Když je toto pravidlo nastavená na **true**, raději deconstructed deklarace proměnné.
 - Když je toto pravidlo nastavená na **false**, není dáváte přednost deconstruction v deklarace proměnných.
@@ -932,7 +932,7 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-**CSharp\_styl\_vzor\_místní\_přes\_anonymous_function**
+**csharp\_style\_pattern\_local\_over\_anonymous_function**
 
 - Když je toto pravidlo nastavená na **true**, raději lokální funkce přes anonymní funkce.
 - Když je toto pravidlo nastavená na **false**, raději anonymní funkce přes místní funkce.
@@ -975,7 +975,7 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, příslušné jazyk
 | csharp_style_throw_expression | IDE0016 | C# 7.0 + | hodnotu true: návrh |
 | csharp_style_conditional_delegate_call | IDE0041 | C# 6.0 + | hodnotu true: návrh |
 
-**CSharp\_styl\_throw_expression**
+**csharp\_style\_throw_expression**
 
 - Když je toto pravidlo nastavená na **true**, dávají přednost používání `throw` výrazy místo `throw` příkazy.
 - Když je toto pravidlo nastavená na **false**, dávají přednost používání `throw` příkazy místo `throw` výrazy.
@@ -991,7 +991,7 @@ if (s == null) { throw new ArgumentNullException(nameof(s)); }
 this.s = s;
 ```
 
-**CSharp\_styl\_podmíněného\_delegate_call**
+**csharp\_style\_conditional\_delegate_call**
 
 - Když je toto pravidlo nastavená na **true**, dávají přednost používání podmíněný operátor slučování (`?.`) při vyvolání výrazu lambda, namísto provádění null zkontrolovat.
 - Když je toto pravidlo nastavená na **false**, raději provést kontrolu null před vyvoláním výrazu lambda, místo použití podmíněný operátor slučování (`?.`).
@@ -1025,7 +1025,7 @@ Následující tabulka uvádí název pravidla, ID pravidla, příslušné jazyk
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_braces | IDE0011 | C# | hodnotu true: žádné | 15.3 |
 
-**CSharp\_raději\_složené závorky**
+**csharp\_prefer\_braces**
 
 - Když je toto pravidlo nastavená na **true**, raději složené závorky i pro jeden řádek kódu.
 - Když je toto pravidlo nastavená na **false**, dáváte přednost žádné složené závorky, pokud povolena.
@@ -1098,7 +1098,7 @@ Následující tabulka uvádí název pravidla, použitelné jazyky, výchozí h
 | ----------- | -------------------- | ----------------------| ----------------  |
 | dotnet_sort_system_directives_first |  C# a Visual Basic | true | 15.3  |
 
-**DotNet\_řazení\_systému\_directives_first**
+**dotnet\_sort\_system\_directives_first**
 
 - Když je toto pravidlo nastavená na **true**System.* pomocí direktiv abecedně seřadí a umístit je před jiné direktiv Using.
 - Když je toto pravidlo nastavená na **false**, neumísťujte System.* pomocí direktiv před ostatními pomocí direktivy.
@@ -1145,7 +1145,7 @@ V následující tabulce jsou uvedeny "nový řádek" názvy pravidel, použitel
 | csharp_new_line_before_members_in_anonymous_types |  C# | true | 15.3  |
 | csharp_new_line_between_query_expression_clauses |  C# | true | 15.3  |
 
-**CSharp\_nové\_řádku\_před\_open_brace**
+**csharp\_new\_line\_before\_open_brace**
 
 Toto pravidlo se vztahuje, zda otevřete levá složená závorka `{` musí být umístěny na stejném řádku jako předchozí kód, nebo na nový řádek. Pro toto pravidlo nezadáte **true** nebo **false**. Místo toho zadejte **všechny**, **žádné**, nebo jeden nebo více code prvky, jako **metody** nebo **vlastnosti**, můžete definovat, kdy by měla být toto pravidlo použít. Úplný seznam povolených hodnot je uvedené v následující tabulce:
 
@@ -1175,7 +1175,7 @@ void MyMethod() {
 }
 ```
 
-**CSharp\_nové\_řádku\_before_else**
+**csharp\_new\_line\_before_else**
 
 - Když je toto pravidlo nastavená na **true**, umístěte `else` příkazy na nový řádek.
 - Když je toto pravidlo nastavená na **false**, umístěte `else` příkazy na stejném řádku.
@@ -1199,7 +1199,7 @@ if (...) {
 }
 ```
 
-**CSharp\_nové\_řádku\_before_catch**
+**csharp\_new\_line\_before_catch**
 
 - Když je toto pravidlo nastavená na **true**, umístěte `catch` příkazy na nový řádek.
 - Když je toto pravidlo nastavená na **false**, umístěte `catch` příkazy na stejném řádku.
@@ -1223,7 +1223,7 @@ try {
 }
 ```
 
-**CSharp\_nové\_řádku\_before_finally**
+**csharp\_new\_line\_before_finally**
 
 - Když je toto pravidlo nastavená na **true**, vyžadují `finally` příkazy, čímž se po pravé složené závorce na nový řádek.
 - Když je toto pravidlo nastavená na **false**, vyžadují `finally` příkazy na stejném řádku jako složená závorka.
@@ -1252,9 +1252,9 @@ try {
 }
 ```
 
-**CSharp\_nové\_řádku\_před\_členy\_v\_object_initializers**
+**csharp\_new\_line\_before\_members\_in\_object_initializers**
 
-- Když je toto pravidlo nastavená na **true**, aby členové intializers objektu na samostatné řádky.
+- Když je toto pravidlo nastavená na **true**, aby členové intiializers objektu na samostatné řádky.
 - Když je toto pravidlo nastavená na **false**, vyžadují členy inicializátory objektů na stejném řádku.
 
 Příklady kódu:
@@ -1274,7 +1274,7 @@ var z = new B()
 }
 ```
 
-**CSharp\_nové\_řádku\_před\_členy\_v\_anonymous_types**
+**csharp\_new\_line\_before\_members\_in\_anonymous_types**
 
 - Když je toto pravidlo nastavená na **true**, aby členové anonymní typy na samostatné řádky.
 - Když je toto pravidlo nastavená na **false**, vyžadují členů anonymní typy na stejném řádku.
@@ -1340,7 +1340,7 @@ Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí h
 | csharp_indent_switch_labels |  C# | true | 15.3  |
 | csharp_indent_labels |  C# | no_change | 15.3  |
 
-**CSharp\_odsazení\_case_contents**
+**csharp\_indent\_case_contents**
 
 - Když je toto pravidlo nastavená na **true**, odsazení `switch` případ obsah.
 - Když je toto pravidlo nastavená na **false**, není odsazovat `switch` případ obsah.
@@ -1375,7 +1375,7 @@ switch(c) {
 }
 ```
 
-**CSharp\_odsazení\_switch_labels**
+**csharp\_indent\_switch_labels**
 
 - Když je toto pravidlo nastavená na **true**, odsazení `switch` popisky.
 - Když je toto pravidlo nastavená na **false**, není odsazovat `switch` popisky.
@@ -1410,7 +1410,7 @@ default:
 }
 ```
 
-**CSharp\_indent_labels**
+**csharp\_indent_labels**
 
 Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:
 
@@ -1487,7 +1487,7 @@ Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí h
 | csharp_space_between_method_call_parameter_list_parentheses |  C# | false | 15.3  |
 | csharp_space_between_parentheses |  C# | false | 15.3  |
 
-**CSharp\_místo\_after_cast**
+**csharp\_space\_after_cast**
 
 - Když je toto pravidlo nastavená na **true**, vyžadují mezeru mezi přetypování a hodnotou.
 - Když je toto pravidlo nastavená na **false**, vyžadují _žádné_ mezery mezi přetypování a hodnotu.

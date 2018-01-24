@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: c5e59b34a1093b90320bfdd05989913e72600a8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dc3ebe35c7b9697921e50a9ea310723128b494be
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje rozšířené datové vazby
 
@@ -60,7 +60,7 @@ Během tohoto návodu se dozvíte, jak:
 
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.
 
-1. Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
+1. Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **úložiště dat a zpracování** zatížení, nebo jako jednotlivých součástí.
 
 1. Ukázková databáze Northwind nainstalujte pomocí následujících kroků:
 
@@ -68,9 +68,9 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
        Otevře se okno editoru dotazů.
 
-    2. Kopírování [Northwind Transact-SQL skriptu](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do schránky. Tento skript T-SQL vytvoří databázi Northwind od začátku a naplní s daty.
+    1. Kopírování [Northwind Transact-SQL skriptu](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) do schránky. Tento skript T-SQL vytvoří databázi Northwind od začátku a naplní s daty.
 
-    3. Vložit do editoru dotazů skriptu T-SQL a potom vyberte **Execute** tlačítko.
+    1. Vložit do editoru dotazů skriptu T-SQL a potom vyberte **Execute** tlačítko.
 
        Po krátkou dobu dotaz dokončí provádění a vytvoření databáze Northwind.
 

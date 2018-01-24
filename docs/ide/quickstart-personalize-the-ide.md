@@ -11,13 +11,13 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ef88495e4251376a7b2f297293ce865f3917c7e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e5195693a4ef2ba3aeec1f2d5751e56b70f19e57
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý úvod: přizpůsobení Visual Studio IDE a Editor
+# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý úvod: Přizpůsobení Editor a Visual Studio – sada IDE
 
 V tento rychlý start 5 až 10 minut jsme budete přizpůsobit barvu motivu sady Visual Studio a dvě barvy textu v textovém editoru.
 
@@ -98,9 +98,9 @@ Jsme prozkoumali jenom několik způsobů přizpůsobení barev v sadě Visual S
 
 ## <a name="see-also"></a>Viz také
 
-[Rychlý úvod: první pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
-[Rychlý úvod: kódování v editoru](../ide/quickstart-editor.md)  
-[Rychlý úvod: projekty a řešení](../ide/quickstart-projects-solutions.md)  
+[Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
+[Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)  
+[Rychlý úvod: Projekty a řešení](../ide/quickstart-projects-solutions.md)  
 [Přizpůsobení sady Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)  
 [Vlastní nastavení editoru](../ide/customizing-the-editor.md)  
 [Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)

@@ -11,13 +11,13 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 49518c7d38ebbec74908123b83b57bf039dda6f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a74d123d8cb0055f01619bae25b9a1bda54b35f4
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý úvod: první pohled na Visual Studio IDE
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Rychlý úvod: První pohled na Visual Studio IDE
 
 V této 5 až 10 minut Úvod do integrované vývojové prostředí (IDE) sady Visual Studio provedeme prohlídka některých systému windows, nabídky a další funkce uživatelského rozhraní.
 
@@ -99,6 +99,6 @@ Jsme si prohlédli uvedeno několik funkcí prostředí Visual Studio IDE se sez
 
 ## <a name="see-also"></a>Viz také
 
-[Rychlý úvod: přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)  
-[Rychlý úvod: kódování v editoru](../ide/quickstart-editor.md)  
-[Rychlý úvod: projekty a řešení](../ide/quickstart-projects-solutions.md)  
+[Rychlý úvod: Přizpůsobení integrovaného vývojového prostředí](../ide/personalizing-the-visual-studio-ide.md)  
+[Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)  
+[Rychlý úvod: Projekty a řešení](../ide/quickstart-projects-solutions.md)

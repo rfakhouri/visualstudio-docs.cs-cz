@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: 7cc4d8420cd823964aeed790a412e462b14634c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9e513fc346991912dcc91e9a56062e49760d9779
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření víceúrovňové datové aplikace
 *N-vrstvá* data aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logických vrstev, nebo *vrstev*. Rozdělit součásti aplikace do diskrétní úrovní zvyšuje udržovatelnosti a škálovatelnost aplikace. Dělá to tím, že umožňuje snazší přijetí nové technologie, které mohou být použity k jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvy, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstva přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, například ověřování a ověřování. Datová vrstva obsahuje relační databáze. Vícevrstvé aplikace obvykle uložit citlivé informace vrstva přístupu k datům ze střední vrstvě udržovat izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [vícevrstvé datové aplikace přehled](../data-tools/n-tier-data-applications-overview.md).  
@@ -57,7 +57,7 @@ Během tohoto návodu budete provádět následující kroky:
 ## <a name="prerequisites"></a>Požadavky  
 Tento návod používá SQL Server Express LocalDB a ukázková databáze Northwind.  
   
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **vývoj aplikací .NET** zatížení, nebo jako jednotlivých součástí.  
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **vývoj aplikací .NET** zatížení, nebo jako jednotlivých součástí.  
   
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:  
 

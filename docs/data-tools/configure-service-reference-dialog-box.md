@@ -18,20 +18,21 @@ ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b3b9ae8406845de886009da981eaf7f63e68972b
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dialogové okno Nastavit odkaz na službu
-**Nastavit odkaz na službu** dialogové okno umožňuje konfigurovat chování [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] služby.  
-  
+
+**Nastavit odkaz na službu** dialogové okno umožňuje konfigurovat chování služby Windows Communication Foundation (WCF).
+
 > [!NOTE]
->  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, vyberte v nabídce Nástroje pro nastavení importu a exportu. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
-  
- Pro přístup k **nastavit odkaz na službu** dialogové okno, klikněte pravým tlačítkem na může služba odkaz v **Průzkumníku řešení** a zvolte **nastavit odkaz na službu**. Můžete také přístup k dialogu kliknutím **Upřesnit** tlačítka na **přidat služby odkaz dialogové okno**.  
-  
+> Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, vyberte v nabídce Nástroje pro nastavení importu a exportu. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).
+
+Pro přístup k **nastavit odkaz na službu** dialogové okno, klikněte pravým tlačítkem na může služba odkaz v **Průzkumníku řešení** a zvolte **nastavit odkaz na službu**. Můžete také přístup k dialogu kliknutím **Upřesnit** tlačítka na **přidat služby odkaz dialogové okno**.
+
 ## <a name="task-list"></a>Seznam úloh  
   
 -   Chcete-li změnit adresu, která je hostitelem služby WCF, zadejte nové adresy v **adresu** pole.  
@@ -86,16 +87,15 @@ ms.lasthandoff: 12/22/2017
  **Seznam odkazovaná sestavení**  
  Obsahuje seznam odkazovaná sestavení projektu nebo webu. Když **znovu použít typy v odkazovaných sestaveních** je vybraná, jednotlivá sestavení může být vybrána nebo vymazána.  
   
- **Přidat odkaz na Web**  
- Zobrazí [webový odkaz dialogové okno Přidat](https://msdn.microsoft.com/en-us/library/8dcbc50t(v=vs.100).aspx).  
-  
-> [!NOTE]
->  Tuto možnost byste měli použít pouze pro projekty, které používají verzi 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
-  
-> [!NOTE]
->  **Přidat odkaz na Web** tlačítko je dostupné pouze tehdy, když **nastavit odkaz na službu** dialogové okno se zobrazí z **přidat služby odkaz dialogové okno**.  
-  
-## <a name="see-also"></a>Viz také  
+ **Přidat odkaz na Web** zobrazí dialogové okno Přidat odkaz na Web.
 
- [Postupy: Přidání odkazu na webovou službu](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
- [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/configure-service-reference-dialog-box.md)
+> [!NOTE]
+> Tuto možnost byste měli použít pouze pro projekty, které používají verzi 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+
+> [!NOTE]
+> **Přidat odkaz na Web** tlačítko je dostupné pouze tehdy, když **nastavit odkaz na službu** dialogové okno se zobrazí z **přidat služby odkaz dialogové okno**.
+
+## <a name="see-also"></a>Viz také
+
+[Postupy: Přidání odkazu na webovou službu](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
+[Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/configure-service-reference-dialog-box.md)

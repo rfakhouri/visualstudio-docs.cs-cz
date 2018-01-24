@@ -7,29 +7,29 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs: CSharp
-ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
-caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload: data-storage
-ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace pomocí grafického subsystému WPF a Entity Framework 6
+
 Tato walkthough ukazuje, jak vytvořit základní "forms over data" aplikaci v sadě Visual Studio s SQL Server LocalDB, Northwind databáze, Entity Framework 6 a Windows Presentation Foundation. Ukazuje, jak provést základní vazby dat s hlavní podrobné zobrazení, která je také vlastní "vazby Navigátor" pomocí tlačítka pro "Přesunout další", "Přesunout na předchozí," "Přesunout na začátek," "přesunout na konec," "Aktualizovat" a "Delete".  
   
  Tento článek se zaměřuje na pomocí nástrojů data v sadě Visual Studio a nebude pokoušet o vysvětlují základní technologie žádné podrobněji. Přitom se předpokládá, že máte základní znalost jazyka XAML, rozhraní Entity Framework a SQL. Tento příklad také nepředvádí architektury Model-View-View Model (modelem MVVM), což je standard pro aplikace WPF. Tento kód však můžete zkopírovat do rozhraní MVVM aplikace s velmi málo úpravy.  
   
-## <a name="install-and-connect-to-northwind"></a>Nainstalujte a připojte se k Northwind  
+## <a name="install-and-connect-to-northwind"></a>Nainstalujte a připojte se k Northwind
+
 Tento příklad používá SQL Server Express LocalDB a ukázková databáze Northwind. Ho měli spolupracovat s ostatními produkty databáze SQL stejně dobře, pokud zprostředkovatel ADO.NET data provider pro tento produkt podporuje rozhraní Entity Framework.  
-  
-1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [stránce pro stažení edice serveru SQL](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **vývoj aplikací .NET** zatížení, nebo jako jednotlivých součástí.  
-  
+
+1.  Pokud nemáte SQL serveru Express LocalDB, nainstalovat buď z [SQL Server Express stránky pro stažení](https://www.microsoft.com/sql-server/sql-server-editions-express), nebo pomocí **instalační program Visual Studio**. V instalačním programu Visual Studio se může nainstalovat SQL Server Express LocalDB jako součást **vývoj aplikací .NET** zatížení, nebo jako jednotlivých součástí.
+
 2.  Ukázková databáze Northwind nainstalujte pomocí následujících kroků:  
 
     1. V sadě Visual Studio, otevřete **Průzkumník objektů systému SQL Server** okno. (Průzkumník objektů systému SQL Server je nainstalován jako součást **úložiště dat a zpracování** zatížení v instalačním programu Visual Studio.) Rozbalte **systému SQL Server** uzlu. Klikněte pravým tlačítkem na vaší instanci LocalDB a vyberte **nový dotaz...** .  
@@ -44,7 +44,7 @@ Tento příklad používá SQL Server Express LocalDB a ukázková databáze Nor
   
 3.  [Přidat nové připojení](../data-tools/add-new-connections.md) pro Northwind.  
   
-## <a name="configure-the-project"></a>Konfigurace projektu  
+## <a name="configure-the-project"></a>Konfigurace projektu
   
 1.  V sadě Visual Studio, vyberte **soubor**, **nový**, **projektu...**  a poté vytvořit novou aplikaci WPF C#.  
   
@@ -58,7 +58,7 @@ Tento příklad používá SQL Server Express LocalDB a ukázková databáze Nor
   
 4.  Visual Studio jsme teď můžete použít k vytvoření modelu založenému na databázi Northwind.  
   
-## <a name="create-the-model"></a>Vytvoření modelu  
+## <a name="create-the-model"></a>Vytvoření modelu
   
 1.  Klikněte pravým tlačítkem na uzel projektu v Průzkumníku řešení a zvolte **přidat**, **novou položku...** . V levém podokně pod uzlem C# vyberte **Data** a v prostředním podokně vyberte **ADO.NET Entity Data Model**.  
   
@@ -92,8 +92,9 @@ Tento příklad používá SQL Server Express LocalDB a ukázková databáze Nor
   
 Nyní jsme připraveni spojit tento model na stránku XAML, takže jsme zobrazení, přejděte a upravit data.  
   
-## <a name="databind-the-model-to-the-xaml-page"></a>DataBind modelu na stránku XAML  
- Je možné napsat vlastní kód datové vazby, ale je mnohem snazší nechte nástroj Visual Studio to pro vás udělal.  
+## <a name="databind-the-model-to-the-xaml-page"></a>DataBind modelu na stránku XAML
+
+Je možné napsat vlastní kód datové vazby, ale je mnohem snazší nechte nástroj Visual Studio to pro vás udělal.  
   
 1.  Z hlavní nabídky zvolte **Projekt > Přidat nový zdroj dat** se zprovoznit **Průvodce konfigurací zdroje dat**. Zvolte **objekt** vzhledem k tomu, že jsme vazbu k tříd modelu, není pro databázi:  
   
@@ -144,8 +145,9 @@ Nyní jsme připraveni spojit tento model na stránku XAML, takže jsme zobrazen
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]  
 
 8.  Stiskněte klávesu **F5**. Měli byste vidět podrobnosti pro první zákazníka, která byla načtena do CollectionViewSource. Měli byste taky vidět jejich objednávky v datové mřížce. Formátování, které není skvělé, takže umožňuje oprava. Také vytvoříme způsob, jak zobrazit další záznamy a provést základní operace CRUD.  
-  
-## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Upravte návrh stránek a přidat nové zákazníky a objednávky mřížky  
+
+## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Upravte návrh stránek a přidat nové zákazníky a objednávky mřížky
+
 Výchozí uspořádání vytvářených Visual Studio není ideální pro naši aplikaci, takže jsme budete provádět některé změny ručně v XAML. Chcete-li povolit uživateli přidat nového zákazníka nebo pořadí jsme také potřebovat některé "forms" (které jsou ve skutečnosti mřížky). Aby bylo možné přidat nové zákazníka a pořadí, potřebujeme samostatnou sadu textová pole, které nejsou vázané na data na `CollectionViewSource`. Jsme budete řídit mřížky, které uživateli se zobrazí v každém okamžiku nastavením vlastnosti viditelné v metodách obslužné rutiny. Nakonec přidáme tlačítko Odstranit pro každý řádek v mřížce objednávky umožňující uživateli odstranit jednotlivé pořadí.  
   
 Nejprve přidejte tyto styly prvku Windows.Resources v MainWindow.xaml:  
@@ -350,11 +352,12 @@ Celý vnější mřížky vedle, nahraďte tento kód:
 ```  
   
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Přidání tlačítek přejděte, přidat, aktualizovat a odstranit  
- V aplikacích Windows Forms načíst objekt BindingNavigator s tlačítka pro procházení řádků v databázi a provádění základních operací CRUD. WPF neposkytuje BindingNavigator, ale je dostatečně snadné ji vytvořit. Jsme to udělat pomocí tlačítka uvnitř vodorovné StackPanel a jsme budete tlačítka přidružit příkazy, které jsou vázány na metody v kódu.  
+
+V aplikacích Windows Forms načíst objekt BindingNavigator s tlačítka pro procházení řádků v databázi a provádění základních operací CRUD. WPF neposkytuje BindingNavigator, ale je dostatečně snadné ji vytvořit. Jsme to udělat pomocí tlačítka uvnitř vodorovné StackPanel a jsme budete tlačítka přidružit příkazy, které jsou vázány na metody v kódu.  
   
- Příkaz logiku se skládá fours částí: (1) příkazy, (2) vazby, (3) tlačítka a (4) obslužné rutiny příkazů v modelu code-behind.  
+Příkaz logiku se skládá fours částí: (1) příkazy, (2) vazby, (3) tlačítka a (4) obslužné rutiny příkazů v modelu code-behind.  
   
-#### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Přidání tlačítka, vazby a příkazy v jazyce XAML  
+### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Přidání tlačítka, vazby a příkazy v jazyce XAML
   
 1.  Nejprve v našem MainWindow.xaml souboru uvnitř elementu Windows.Resources přidejme příkazy:  
   
@@ -414,7 +417,7 @@ Celý vnější mřížky vedle, nahraďte tento kód:
     </StackPanel>  
     ```  
   
-#### <a name="add-command-handlers-to-the-mainwindow-class"></a>Přidejte obslužné rutiny příkazů do třídy MainWindow  
+### <a name="add-command-handlers-to-the-mainwindow-class"></a>Přidejte obslužné rutiny příkazů do třídy MainWindow  
   
 Kódu je minimální s výjimkou metody přidat a odstranit. Navigace provádí volání metod na vlastnost zobrazení CollectionViewSource. DeleteOrderCommandHandler ukazuje, jak provádět kaskádové odstranění na pořadí. Musíme nejprve odstranit Order_Details, které jsou k ní přidružena. UpdateCommandHandler přidá nový zákazník nebo pořadí do kolekce, jinak pouze změny provedené v textových polích uživatel aktualizuje existujícího zákazníka nebo pořadí.  
   
@@ -423,8 +426,10 @@ Přidejte do třídy MainWindow v MainWindow.xaml.cs tyto metody obslužné ruti
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]  
   
 ## <a name="run-the-application"></a>Spuštění aplikace
+
 Chcete-li začít, ladění, stiskněte **F5**. Měli byste vidět zákazníka a pořadí data vložené do mřížky a navigačních tlačítek by měla fungovat podle očekávání. Klikněte na "Potvrzení" Přidat nového zákazníka nebo pořadí modelu po zadání data. Klikněte na "Zrušit" zpět bez uložení dat z nového zákazníka nebo nového formuláře pořadí. Můžete provést úpravy existující zákazníci a objednávky přímo do textových polí a tyto změny se zapisují do modelu automaticky.  
   
 ## <a name="see-also"></a>Viz také
+
 [Visual Studio Data Tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)  
-[Dokumentaci Entity Framework](https://msdn.microsoft.com/en-us/data/ee712907.aspx)
+[Dokumentaci Entity Framework](/ef/)

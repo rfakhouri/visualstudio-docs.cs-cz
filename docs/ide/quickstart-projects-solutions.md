@@ -11,13 +11,13 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/23/2018
 ---
-# <a name="quickstart-projects-and-solutions"></a>Rychlý úvod: projekty a řešení
+# <a name="quickstart-projects-and-solutions"></a>Rychlý úvod: Projekty a řešení
 
 V tento rychlý start 10 minut jsme budete zjistit, co znamená vytvoření řešení a projektu v sadě Visual Studio. Podíváme vlastnosti projektu a některé soubory, které může obsahovat. Také vytvoříme odkaz na druhý projekt.
 
@@ -62,7 +62,7 @@ Nyní Pojďme přidat naše první projekt do řešení. Jsme budete začít s p
    Projekt s názvem "QuickDate" se zobrazí pod řešení v **Průzkumníku řešení**. Aktuálně obsahuje jednoho souboru s názvem **App.config**.
 
    > [!NOTE]
-   > Pokud nevidíte **Visual C#** v levém podokně dialogového okna, je potřeba nainstalovat **vývoj aplikací .NET** zatížení. Snadný způsob, jak to udělat, je kliknout na odkaz **otevřete instalační program Visual Studio** odkaz ve spodní části tohoto levého podokna. **Instalační program Visual Studio** otevře, a z ní můžete správné zatížení a potom **upravit** tlačítko.
+   > Pokud nevidíte **Visual C#** v levém podokně dialogového okna, je potřeba nainstalovat **vývoj aplikací .NET** zatížení. Snadný způsob, jak to udělat je vybrat **otevřete instalační program Visual Studio** odkaz v levém dolním rohu dialogu. Po **instalační program Visual Studio** spustí, vyberte **vývoj aplikací .NET** zatížení a potom **upravit** tlačítko.
 
    ![Otevřete odkaz instalační program Visual Studio](media/quickstart-projects-open-installer.png)
 
@@ -182,9 +182,9 @@ Blahopřejeme k dokončení tento rychlý start! Potom můžete prozkoumávat n�
 
 ## <a name="see-also"></a>Viz také
 
-[Rychlý úvod: první pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
-[Rychlý úvod: přizpůsobení Visual Studio IDE a editor](../ide/quickstart-personalize-the-ide.md)  
-[Rychlý úvod: kódování v editoru](../ide/quickstart-editor.md)  
+[Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
+[Rychlý úvod: Přizpůsobení Visual Studio IDE a editor](../ide/quickstart-personalize-the-ide.md)  
+[Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)  
 [Správa vlastností projektů a řešení](../ide/managing-project-and-solution-properties.md)  
 [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)  
 [Vývoj kódu v sadě Visual Studio bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  

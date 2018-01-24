@@ -1,20 +1,19 @@
 ---
-title: "Visual Studio IDE přehled | Microsoft Docs"
+title: "Přehled sady Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: d95cbaff8545e67bfadb0c86a256353b3fa23191
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
+ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Přehled Visual Studio IDE
 
@@ -32,7 +31,7 @@ Nebo můžete jednoduše otevřít některé kódu můžete získat z téměř o
 
 Můžete vytvořit nativní mobilních aplikací pro různé platformy pomocí Visual C# a Xamarin nebo Visual C++, nebo hybridní aplikace pomocí jazyka JavaScript pomocí Apache Cordova. Můžete napsat mobilní hry pro Unity, nerealiz, DirectX, Kokosové a další. Visual Studio obsahuje emulátoru Androidu můžete spustit a ladění aplikací pro Android.
 
-Výkon cloudu můžete využít pro své mobilní aplikace tak, že vytvoříte Azure aplikace služby. Azure app services povolit vaše aplikace ukládat data do cloudu, bezpečně ověřování uživatelů a automaticky škálovat své prostředky nebo dolů na vyhovovaly potřebám vaší aplikace a firmu. Další informace najdete v tématu [vývoj aplikací pro mobilní](https://www.visualstudio.com/vs/mobile-app-development/).
+Výkon cloudu můžete využít pro své mobilní aplikace tak, že vytvoříte Azure aplikace služby. Azure app services povolit vaše aplikace ukládat data do cloudu, bezpečně ověřování uživatelů a automaticky škálovat své prostředky nebo dolů na vyhovovaly potřebám vaší aplikace a firmu. Další informace najdete v tématu [vývoj mobilních aplikací](https://www.visualstudio.com/vs/mobile-app-development/).
 
 ### <a name="create-cloud-apps-for-azure"></a>Vytvoření cloudové aplikace pro Azure.
 
@@ -96,7 +95,7 @@ Při prvním spuštění sady Visual Studio, můžete volitelně Přihlaste se p
 
 Další informace o něco jeden vhodný způsob je pro použití! Umožňuje podrobné informace a vytvořit nové, jednoduchý program.
 
-1. Otevřete Visual Studio. V nabídce zvolte **soubor**, **nový**, **projektu**.
+1. Otevřete Visual Studio. V nabídce zvolte **soubor** > **nový** > **projektu**.
 
   ![snímek obrazovky](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -104,11 +103,14 @@ Další informace o něco jeden vhodný způsob je pro použití! Umožňuje pod
 
 1. **Nový projekt** dialogové okno zobrazí několik šablon projektu. Vyberte **univerzální pro Windows** kategorii v **Visual C#**, vyberte **prázdná aplikace (univerzální pro Windows)** šablony a potom vyberte **OK**tlačítko.
 
-  ![snímek obrazovky](../ide/media/VSIDE_Tour_NewProject2.png)
+  > [!NOTE]
+  > Pokud nevidíte **univerzální pro Windows** kategorie, je třeba nainstalovat **Universal Windows Platform Development** zatížení. To pokud chcete udělat, vyberte **otevřete instalační program Visual Studio** odkaz na spodní levé straně **nový projekt** dialogové okno. Po **instalační program Visual Studio** otevře, vyberte **Universal Windows Platform Development** zatížení a potom zvolte **upravit**.
+
+  ![Šablonu prázdná aplikace UWP](../ide/media/new-uwp-blank-app-template.png)
 
   Tím se vytvoří nový prázdný Universal Windows aplikace projekt pomocí Visual C# a XAML jako programovací jazyky. Počkejte chvilku při Visual Studio nastaví projekt pro vás. Pokud se zobrazí výzva k zadání informací, přijměte výchozí hodnoty právě teď.
 
-1. V **nové Universal Windows Project** dialogové okno pole, přijměte výchozí hodnoty tak, že zvolíte **OK**.
+1. V **nový projekt univerzální platformu Windows** dialogové okno pole, přijměte výchozí hodnoty tak, že zvolíte **OK**.
 
 1. Zanedlouho byste měli vidět něco podobného jako na následujícím snímku obrazovky. Soubory projektu jsou uvedeny na pravé straně v okně nazývá Průzkumník řešení.
 
@@ -140,7 +142,7 @@ Další informace o něco jeden vhodný způsob je pro použití! Umožňuje pod
 
   ![snímek obrazovky](../ide/media/VSIDE_Tour_XAMLButton2.png)
 
-1. Nyní spusťte aplikaci. To provedete tak, že zvolíte **spustit** (![tlačítko Start](../ide/media/VSIDE_StartButton.png)) tlačítka na panelu nástrojů nebo výběrem **F5** klíče, nebo v nabídce, výběrem možnosti **ladění**, **Spustit ladění**.
+1. Nyní spusťte aplikaci. To provedete tak, že zvolíte **spustit** (![tlačítko Start](../ide/media/VSIDE_StartButton.png)) tlačítka na panelu nástrojů nebo výběrem **F5** klíče, nebo v nabídce, výběrem možnosti **ladění**  >  **Spustit ladění**.
 
   ![snímek obrazovky](../ide/media/VSIDE_Tour_RunButton.png)
 
@@ -248,15 +250,16 @@ Můžete zobrazit a spravovat prostředky na základě Azure cloud v sadě Visua
 
 ![Průzkumník cloudu](../ide/media/VSIDE_CloudExplorer.png)
 
-**V Průzkumníku serveru** vám pomůže Procházet a spravovat instance systému SQL Server a prostředky místně, vzdáleně a na Azure, Salesforce.com, Office 365 a weby. Chcete-li otevřít Průzkumníka serveru na hlavní nabídky, zvolte **zobrazení**, **Průzkumníka serveru**. V tématu [přidat nová připojení](../data-tools/add-new-connections.md) pro další informace o použití Průzkumníka serveru.
+**V Průzkumníku serveru** vám pomůže Procházet a spravovat instance systému SQL Server a prostředky místně, vzdáleně a na Azure, Salesforce.com, Office 365 a weby. Chcete-li otevřít Průzkumníka serveru na hlavní nabídky, zvolte **zobrazení** > **Průzkumníka serveru**. V tématu [přidat nová připojení](../data-tools/add-new-connections.md) pro další informace o použití Průzkumníka serveru.
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) je výkonný vývojové prostředí pro SQL Server, databáze SQL Azure a Azure SQL Data Warehouse. Umožňuje vytvářet, ladit, udržovat a Refaktorovat databáze. Můžete pracovat s projektem databáze, nebo přímo s připojené databáze instance nebo vypnout místně.
 
 **Průzkumník objektů systému SQL Server** v sadě Visual Studio poskytuje zobrazení objektů databáze podobně jako SQL Server Management Studio. Průzkumník objektů systému SQL Server můžete pro účely správy a návrh lehká databáze, včetně úpravy dat v tabulce, porovnání schémat, provádění dotazů pomocí kontextové nabídky přímo z Průzkumníka objektů systému SQL Server a další.
 
-![Průzkumník objektů systému SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
+![SQL Server Object Explorer](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Rozšíření sady Visual Studio
+
 Pokud Visual Studio nemá přesný funkce, které potřebujete, můžete ho přidat! Přizpůsobení integrovaného vývojového prostředí na základě vašeho pracovního postupu a styl, přidat podporu pro externí nástroje ještě integrované pomocí sady Visual Studio a upravit stávající funkce zvyšuje produktivitu. Nejnovější verzi Visual Studio Extensibility Tools (VS SDK), najdete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
 Kompilátoru platformu .NET (Roslyn) můžete použít k zápisu vlastní analyzátorů kódu a generátory kódu. Najít všechno, co potřebujete v [Roslyn](https://github.com/dotnet/Roslyn).
@@ -276,6 +279,6 @@ Blahopřejeme k dokončení prohlídku Visual Studio IDE! Věříme, že jste se
 * [Integrované vývojové prostředí sady Visual Studio](https://www.visualstudio.com/vs/)
 * [Stažení sady Visual Studio](https://www.visualstudio.com/downloads/)
 * [Blog sady Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Fóra Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Visual Studio Forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft Virtual Academy](https://mva.microsoft.com/)
 * [Channel 9](https://channel9.msdn.com/)
