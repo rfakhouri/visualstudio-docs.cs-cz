@@ -38,11 +38,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 30eafe77ef4e115650f0871139e009e07fd6729b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: e5873276795477778e4c358d59788248230bb4b5
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Použití zarážek v ladicím programu sady Visual Studio
 Pokud chcete zastavit provádění ladicí program, případně zobrazíte stav proměnných kódu nebo pro zobrazení v zásobníku volání, můžete nastavit zarážky. Jsou jedním z nejdůležitějších techniky ladění v sadě nástrojů pro vývojáře.  
@@ -160,6 +160,9 @@ Pokud chcete zastavit provádění ladicí program, případně zobrazíte stav 
  Pokud jste nastavili podmínku zarážek s neplatnou syntaxi, zobrazí se zpráva s upozorněním. Pokud zadáte podmínku zarážek s platnou syntaxi ale neplatnou sémantikou, upozornění se zobrazí při prvním, které je průchodu zarážkou. V obou případech ladicího programu dělí spuštění, když je dosaženo neplatný zarážek. Zarážce je přeskočen pouze v případě, že podmínka je platný a vyhodnocuje `false`.  
   
  Podmínka může být libovolný platný výraz, který rozpozná ladicího programu. Další informace o platné výrazy najdete v tématu [výrazy v ladicím programu](../debugger/expressions-in-the-debugger.md).  
+
+> [!NOTE]
+> Můžete použít **CTRL + Enter** zavřete **nastavení zarážek** okno.
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Pomocí ID objektů v podmínkách zarážek (C# a F #)  
  Nastanou chvíle, kdy chcete pozorovat chování určitého objektu; Například můžete chtít zjistit, proč byl objekt vložit více než jednou do kolekce. V C# a F #, můžete vytvořit ID objektů pro určité instance [odkazové typy](/dotnet/csharp/language-reference/keywords/reference-types) a použijte je v zarážek podmínky. ID objektu je generované common language runtime (CLR) ladění služeb a přidružená k objektu.  Pokud chcete vytvořit ID objektu, postupujte takto:  
@@ -232,20 +235,6 @@ Pokud chcete zastavit provádění ladicí program, případně zobrazíte stav 
 ## <a name="export-and-import-breakpoints"></a>Export a Import zarážky  
  Zarážku můžete exportovat do souboru XML tak, že kliknete pravým tlačítkem na zarážce a výběr **exportovat**. Soubor je uložen ve výchozím nastavení v adresáři řešení. Chcete-li importovat zarážky, otevřete **zarážky** okno (**CTRL + ALT + B**) a na panelu nástrojů klikněte na šipku vpravo (popisek je **zarážky importovat ze souboru**) .  
   
-## <a name="troubleshoot"></a>Řešení potíží s zarážky 
-  
-### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>Po odstranění zarážku, ale I nadále stiskněte tlačítko při spuštění ladění znovu  
- Pokud jste odstranili zarážku při ladění, v některých případech můžete narazit zarážek znovu při příštím spuštění ladění. Pokud chcete zastavit stiskne tento bod přerušení, zajistěte, aby všechny instance zarážce se odeberou z **zarážky** okno.  
-  
-### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>Ladicí program nemůže nalézt správnou verzi zdrojového souboru pro zarážky  
- Pokud došlo ke změně zdrojového souboru a zdroj už neodpovídá kódu, kterou ladíte, může ladicího programu najít zdrojový soubor, který odpovídá zarážku, i když zdrojový soubor existuje.  
-  
-1.  Pokud chcete zobrazit zdrojový kód, který neodpovídá verzi sady Visual Studio jsou ladění, zvolte **ladění > Možnosti a nastavení**. Na **ladění nebo Obecné** zrušte zaškrtnutí políčka **vyžadují zdrojové soubory, které přesně odpovídají původní verze** možnost.  
-  
-2.  Můžete také navázat zarážce ke zdrojovému souboru. Vyberte zarážce a zvolte **podmínky** v místní nabídce. Zkontrolujte **povolit zdrojovém kódu, aby se liší od originálu** v **nastavení zarážek** okno.  
-  
-### <a name="breakpoints-dont-work-in-a-dll"></a>Zarážky nefungují v knihovně DLL  
- Nelze nastavit zarážky ve zdrojovém souboru při ladicího programu nebyl načíst informace o ladění pro modul kde se nachází kódu. Zprávy mohou zahrnovat například příznaky **nenastaví zarážce**. Glyfy zarážek upozornění se zobrazí v zarážek umístění. Tyto zarážky upozornění však budou skutečné zarážky po načtení kód. Další informace o načtení symbolů najdete v tématu [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
-  
 ## <a name="see-also"></a>Viz také  
- [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)
+[Řešení potíží s zarážky v ladicím programu sady Visual Studio](../debugger/troubleshooting-breakpoints.md)  
+[Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)

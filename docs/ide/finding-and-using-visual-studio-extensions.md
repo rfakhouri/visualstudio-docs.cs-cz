@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6ed49a18c7497eefc21a7fe7bfe9d35003863a5e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: beec883c66182b3a840c0052b237c2ba41c5b023
+ms.sourcegitcommit: 062795f922e7b59fe00d3d95a01a9a8a28840017
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Vyhledávání a používání rozšíření Visual Studia
 
@@ -31,7 +31,7 @@ Rozšíření pro Visual Studio jsou kód balíčky, které běží v prostřed�
 Můžete použít **rozšíření a aktualizace** dialogové okno instalace rozšíření sady Visual Studio a ukázky z webů a jiných umístění a potom povolit, zakázat, aktualizovat, nebo je odinstalovat. (**Nástroje nebo rozšíření a aktualizace**, nebo typ **rozšíření** v **Snadné spuštění** okno). Dialogové okno také ukazuje aktualizace nainstalované ukázky a rozšíření. Můžete také stáhnout rozšíření z webů nebo je můžete získat z jiných vývojáři.
 
 > [!NOTE]
-> Spouštění v sadě Visual Studio 2015, rozšíření hostované na Visual Studio Marketplace se automaticky aktualizuje.  Pomocí tohoto nastavení můžete změnit **rozšíření a aktualizace** dialogové okno.  Projděte část o **automatické aktualizace rozšíření** níže podrobnosti.
+> Spouštění v sadě Visual Studio 2015, rozšíření hostované na Visual Studio Marketplace se automaticky aktualizují. Pomocí tohoto nastavení můžete změnit **rozšíření a aktualizace** dialogové okno.  Projděte část o **automatické aktualizace rozšíření** níže podrobnosti.
 
 ## <a name="finding-visual-studio-extensions"></a>Hledání rozšíření Visual Studia
 
@@ -66,24 +66,26 @@ Pokud chcete vypnout automatické aktualizace, můžete zakázat funkci pro vše
 > [!NOTE]
 > Od verze Visual Studio 2015 Update 2, můžete zadat (v **Nástroje / možnosti / prostředí nebo rozšíření a aktualizace**) tom, zda má funkce Automatické aktualizace pro rozšíření na uživatele, všechna rozšíření uživatele nebo oba (výchozí nastavení).
 
-## <a name="extension-crash-notifications"></a>Rozšíření havárií oznámení
+## <a name="extension-crashunresponsiveness-notifications"></a>Rozšíření havárie nebo absence reagování oznámení
 
-V aplikaci Visual Studio 2017 (verze 15.3 - Preview) Visual Studio vás upozorní, pokud má podezření, že rozšíření byl součástí havárie v předchozí relaci. Když Visual Studio dojde k chybě, ukládá zásobník výjimek. Při příštím spuštění Visual Studio zkontroluje zásobníku, počínaje listu a směřování ve znalostní bázi. Pokud Visual Studio zjistí, že rámeček patří do modul, který je součástí nainstalované a povolené rozšíření, upozorní vás zprávou, jako
+Novinka v **Visual Studio 2017 verze 15.3**, Visual Studio vás upozorní, pokud má podezření, že rozšíření byl součástí havárie v předchozí relaci. Když Visual Studio dojde k chybě, ukládá zásobník výjimek. Při příštím spuštění Visual Studio zkontroluje zásobníku, počínaje listu a směřování ve znalostní bázi. Pokud Visual Studio zjistí, že rámeček patří do modul, který je součástí nainstalované a povolené rozšíření, zobrazí oznámení.
 
-"Předchozí relace byla neočekávaně ukončena. Zakázání rozšíření 'extension_name' mohou pomoci zabránit podobné problémy."
+Novinka v **sady Visual Studio 15,6 operací verzi preview 3**, Visual Studio také vás upozorní, pokud se má podezření, že rozšíření způsobuje Uživatelském rozhraní přestal reagovat.
 
-Můžete ignorovat oznámení nebo provést jednu z následujících akcí:
+Když tato oznámení se zobrazují, můžete ignorovat oznámení nebo provést jednu z následujících akcí:
 
 - Zvolte **zakáže toto rozšíření**. Visual Studio zakáže rozšíření a umožňuje vědět, jestli je potřeba restartovat systém pro zakázání vstoupily v platnost. Můžete je znovu povolit rozšíření v **rozšíření a aktualizace** dialogové, pokud chcete.
 
-- Zvolte **nezobrazovat pro tuto příponu**. Prostředí IDE již nebude zobrazovat oznámení o dojde k chybě související s touto příponou, ale zobrazí oznámení pro ostatní rozšíření přidružená dojde k chybě.
+- Zvolte **tuto zprávu již nezobrazovat**. 
+  - Pokud oznámení týká havárie v předchozí relace, Visual Studio nebude zobrazovat, že probíhá oznámení, když se havárie spojené s touto příponou. Visual Studio, bude mít oznámení po absence reagování můžou být spojené s touto příponou, nebo dojde k chybě nebo absence reagování, který může být přidružen další rozšíření. 
+  - Pokud oznámení týká absence reagování, rozhraní IDE už zobrazit oznámení, když toto rozšíření je přidružen absence reagování. Visual Studio, bude mít související s havárií oznámení pro tuto příponu a související s havárií a absence reagování oznámení pro ostatní rozšíření. 
 
-- Zvolte **Další** zobrazíte toto téma nápovědy ve výchozím prohlížeči.
+- Zvolte **Další** na této stránce.
 
-- Vyberte **X** tlačítko na konci oznámení zavření oznámení. Pokud stejné rozšiřující se zabývá havárie v relaci budoucí, znovu se zobrazí oznámení.
+- Vyberte **X** tlačítko na konci oznámení zavření oznámení. Nové oznámení se zobrazí pro budoucí instance rozšíření bylo možné přidružit havárie nebo absence reagování uživatelského rozhraní.
 
 > [!NOTE]
-> Oznámení havárií znamená, že byla pouze než rozšíření modulů v zásobníku při chybě. Je však nemusí znamenat, že rozšíření samotné způsobila havárii. Je možné, že rozšíření volat kód, který je součástí sady Visual Studio a tento kód způsobila havárii. Však oznámení může být stále užitečné, pokud scénář, která vedla k havárii není pro vás důležité. V takovém případě zakázání rozšíření zabraňuje stejné havárie v budoucnu bez dopadu na produktivitu.
+> Uživatelské rozhraní absence reagování nebo havárie oznámení znamená pouze jeden z modulů rozšíření v zásobníku se při reagovat uživatelského rozhraní, nebo pokud došlo k havárii. Je však nemusí znamenat, že rozšíření samotné bylo který. Je možné, že rozšíření volat kód, který je součástí sady Visual Studio, který naopak výsledkem reagovat uživatelského rozhraní nebo havárie. Však oznámení může být stále užitečné, pokud rozšíření, která vedla k absence reagování uživatelského rozhraní nebo havárie není pro vás důležité. V takovém případě zakázání rozšíření zabraňuje absence reagování uživatelského rozhraní nebo havárii v budoucnu, bez dopadu na produktivitu. 
 
 ## <a name="sample-master-copies-and-working-copies"></a>Ukázka hlavní kopie a práci kopie
 
