@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: a3ee963ef1ac4c4159f0fe1922bfafa90875fad7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: b6e23b91f411cd5260d31927ec35957a3f6c00c1
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Porozumění modelům, třídám a vztahům
 Jazyk specifické pro doménu (DSL) je definován v souboru jeho definice DSL, spolu s vlastní program kód, který může zapsat. Většinu kódu programu v řešení DSL se generují z tohoto souboru.  
@@ -150,4 +150,4 @@ Jazyk specifické pro doménu (DSL) je definován v souboru jeho definice DSL, s
  Odvozené relace se specializuje jeho základní relace. Domény třídy to, které odkazy by měl být odvozen od nebo stejný jako propojená vztahem základní třídy. V modelu je vytvořen odkaz odvozené relace, představuje instanci odvozené i základní relace. V programovém kódu můžete přejít na v opačném směru odkaz pomocí vlastnosti generovány základní nebo odvozené třídy.  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástroje jazyka domény](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

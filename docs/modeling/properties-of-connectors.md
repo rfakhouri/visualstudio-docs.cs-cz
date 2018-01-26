@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7874e3017c714f41a660f96bedbb126fe121086e
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 892f9b3cacd5e2c0c33373ca5ec065ba436ffe59
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-connectors"></a>Vlastnosti konektorů
 Konektory představují vztahy domén v generované návrháře.  
@@ -33,21 +33,21 @@ Konektory představují vztahy domén v generované návrháře.
 |Barva textu|Barva, který se používá pro dekoratéry textu, které jsou přidruženy tento konektor.|černé|  
 |Tloušťka|Tloušťka čáry pro tento konektor se měří v palcích.|0.03125|  
 |Modifikátor přístupu|Úroveň přístupu třídy (`public` nebo `internal`).|Public|  
-|Vlastní atributy|Použít k přidání atributů do zdrojového kódu třídu, která se generují z tohoto konektoru.|\<žádné >|  
+|Vlastní atributy|Použít k přidání atributů do zdrojového kódu třídu, která se generují z tohoto konektoru.|\<none>|  
 |Generuje dvojitou odvozené|Pokud `True`, budou generovány základní třídu a částečné třídy (pro podporu přizpůsobení prostřednictvím přepsání). Další informace najdete v tématu [přepsání a rozšíření třídy generované](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Má vlastní – konstruktor|Pokud `True`, bude k dispozici vlastní konstruktor v zdrojového kódu. Další informace najdete v tématu [přepsání a rozšíření třídy generované](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modifikátor dědičnosti|Popisuje typ dědičnosti zdrojovou třídu kódu, která se generují z konektoru (`none`, `abstract` nebo `sealed`).|žádná|  
 |Základní konektoru|Základní třída tohoto konektoru.|(žádný)|  
 |Název|Název tohoto konektoru.|Aktuální název|  
 |Obor názvů|Obor názvů, který je přidružený tento konektor.|Aktuální obor názvů|  
-|ToolTip – typ|Jak popisek je definována (pevná, proměnné nebo žádný). Pokud odstraněna, pak hodnota `Fixed Tooltip Text` vlastnost se používá jako popisek; Pokud proměnné, pak popisek je definována v vlastní kód.|\<žádné >|  
-|Poznámky|Neformální poznámky, které jsou přidruženy tento konektor.|\<žádné >|  
+|ToolTip – typ|Jak popisek je definována (pevná, proměnné nebo žádný). Pokud odstraněna, pak hodnota `Fixed Tooltip Text` vlastnost se používá jako popisek; Pokud proměnné, pak popisek je definována v vlastní kód.|\<none>|  
+|Poznámky|Neformální poznámky, které jsou přidruženy tento konektor.|\<none>|  
 |Styl směrování|Styl, který se používá pro směrování konektor. A `Rectilinear` konektor umožňuje Pravoúhlá oplátku podle potřeby; `Straight` konektor neexistuje.|Lomené|  
 |Barva zveřejněné jako vlastnost<br /><br /> Zveřejněné přerušovaná čára jako vlastnost<br /><br /> Tloušťka zveřejněné jako vlastnost<br /><br /> Barva textu zpřístupňuje|Pokud `True`, může uživatel nastavit vlastnost stanovené obrazce. Chcete-li tuto možnost nastavíte, klikněte pravým tlačítkem na definici tvar a klikněte na **přidat zveřejněné**.|False|  
-|Popis|Používá k dokumentu generovaný návrháře.|\<žádné >|  
-|Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro tento konektor.|\<žádné >|  
-|Opravené Text popisku|Text, který se používá pro pevnou popisek.|\<žádné >|  
-|Nápověda – klíčové slovo|Klíčové slovo, které se používá k indexu F1 – Nápověda pro tento element.|\<žádné >|  
+|Popis|Používá k dokumentu generovaný návrháře.|\<none>|  
+|Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro tento konektor.|\<none>|  
+|Opravené Text popisku|Text, který se používá pro pevnou popisek.|\<none>|  
+|Nápověda – klíčové slovo|Klíčové slovo, které se používá k indexu F1 – Nápověda pro tento element.|\<none>|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástroje jazyka domény](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

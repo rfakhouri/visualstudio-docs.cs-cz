@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: ca381d794569ebae4da2d46225d800dbfe4cf480
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 4573d87bbb7d5f447bf6d2038cec310132a0c9f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Používání jiných webových prohlížečů v programových testech uživatelského rozhraní
 Programové testy UI mohou automatizovat testování webových aplikací tím, že zaznamenají vaše testy pomocí aplikace Internet Explorer. Potom můžete přizpůsobit test a přehrát jej buď pomocí aplikace Internet Explorer, nebo jiných typů prohlížečů pro tyto webové aplikace.  
@@ -36,7 +36,7 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
   
     -   Windows Internet Explorer 9  
   
-    -   Aplikaci Windows Internet Explorer 10  
+    -   Windows Internet Explorer 10  
   
     -   Podporované verze Mozilla Firefox a Google Chrome, přejděte [sem](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
@@ -78,7 +78,7 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
     > [!TIP]
     >  Můžete také stáhnout komponenty selenu pro programové testování uživatelského rozhraní mezi prohlížeče z [zde](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
- Další informace o vytváření a používání uživatelského rozhraní programových testů, najdete v části [vytváření programových testů uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
+ Další informace o vytváření a používání uživatelského rozhraní programových testů, najdete v části [vytváření programových testů uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md).  
   
 ### <a name="enable-debugging"></a>Povolení ladění  
  Chcete-li povolit ladění webové aplikace, je nutné dokončit následující možnosti konfigurace:  
@@ -101,19 +101,19 @@ Programové testy UI mohou automatizovat testování webových aplikací tím, �
  *Co je třeba vědět?*  
  **Poznámky**  
   
--   ![Prerequsite](../test/media/prereq.png "požadavků") Apple Safari webový prohlížeč není podporován.  
+-   ![Požadovaný](../test/media/prereq.png "požadavků") Apple Safari webový prohlížeč není podporován.  
   
--   ![Prerequsite](../test/media/prereq.png "požadavků") akce spuštění webového prohlížeče musí být součástí programového testu uživatelského rozhraní.  
+-   ![Požadovaný](../test/media/prereq.png "požadavků") akce spuštění webového prohlížeče musí být součástí programového testu uživatelského rozhraní.  
   
      Pokud je již webový prohlížeč otevřen a chcete v něm spustit příslušné kroky, aniž byste používali aplikaci Internet Explorer, přehrávání selže. Je proto vhodné zahrnout spuštění webového prohlížeče jako součást programových testů UI.  
   
--   ![Prerequsite](../test/media/prereq.png "požadavků") konkrétní automatizace prohlížeče na základě akcí uživatelského rozhraní, jako je maximalizovat, minimalizovat a obnovení není podporována.  
+-   ![Požadovaný](../test/media/prereq.png "požadavků") konkrétní automatizace prohlížeče na základě akcí uživatelského rozhraní, jako je maximalizovat, minimalizovat a obnovení není podporována.  
   
  **Tipy**  
   
 -   ![Tip](../test/media/tip.png "Tip") můžete nakonfigurovat výstup programové uživatelského rozhraní protokolů zahrnout snímky obrazovky. Chcete-li tak učinit, musíte provést některá nastavení konfigurace v souboru QTAgent32.exe.config. Ve výchozím nastavení je tento soubor nainstalován v následujícím umístění:  
   
-     **C:\Program soubory (x86) \Microsoft Visual Studio 11.0\Common7\IDE**  
+     **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
      Nastavte následující hodnoty:  
   

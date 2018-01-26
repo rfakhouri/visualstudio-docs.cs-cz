@@ -11,27 +11,29 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 16001ed6447f3dcfe649d0fe659c98d97b9e310c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: be69cc9335480d901824ce8a4981728a34db6395
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Nastavení vlastního procesoru direktiv
+
 Pokud chcete použít vlastního procesoru direktiv v sadě Visual Studio na libovolném počítači, je nutné jej zaregistrovat pomocí jedné z metod popsaných v tomto tématu.  
   
- Alternativní metody jsou následující:  
+Alternativní metody jsou následující:  
   
--   [Rozšíření sady Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Tato metoda poskytuje způsob, jak nainstalovat a odinstalovat procesor direktiv ve vašem vlastním počítači i v jiných počítačích. Zpravidla můžete do stejného rozšíření VSIX zabalit jiné funkce.  
+-   [Rozšíření sady Visual Studio](../extensibility/shipping-visual-studio-extensions.md). Tato metoda poskytuje způsob, jak nainstalovat a odinstalovat procesor direktiv ve vašem vlastním počítači i v jiných počítačích. Zpravidla můžete do stejného rozšíření VSIX zabalit jiné funkce.  
   
 -   [VSPackage](../extensibility/internals/vspackages.md). Pokud definujete VSPackage obsahující kromě procesoru direktiv i jiné funkce, lze procesor direktiv pohodlně zaregistrovat.  
   
 -   Nastavení klíče registru: Pomocí této metody přidáte položku registru pro procesor direktiv.  
   
- Budete muset použít jednu z těchto metod, pouze pokud chcete k transformaci text šablony v sadě Visual Studio nebo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pokud ve své aplikaci používáte vlastního hostitele, je tento vlastní hostitel odpovědný za vyhledání procesoru direktiv pro jednotlivé direktivy.  
+Budete muset použít jednu z těchto metod, pouze pokud chcete k transformaci text šablony v sadě Visual Studio nebo MSBuild. Pokud ve své aplikaci používáte vlastního hostitele, je tento vlastní hostitel odpovědný za vyhledání procesoru direktiv pro jednotlivé direktivy.  
   
-## <a name="deploying-a-directive-processor-in-a-vsix"></a>Nasazení procesoru direktiv v rozšíření VSIX  
- Můžete přidat do vlastního procesoru direktiv [rozšíření Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+## <a name="deploying-a-directive-processor-in-a-vsix"></a>Nasazení procesoru direktiv v rozšíření VSIX
+
+Můžete přidat do vlastního procesoru direktiv [rozšíření Visual Studio (VSIX)](../extensibility/starting-to-develop-visual-studio-extensions.md).
   
  Přitom musíte zajistit, aby v souboru .vsix byly obsaženy následující dvě položky:  
   
@@ -39,10 +41,10 @@ Pokud chcete použít vlastního procesoru direktiv v sadě Visual Studio na lib
   
 -   Soubor .pkgdef, který registruje procesor direktiv Kořenový název tohoto souboru musí být stejný jako sestavení. Soubory mohou mít například název CDP.dll a CDP.pkgdef.  
   
- Chcete-li zkontrolovat nebo změnit obsah souboru .vsix, změňte jeho příponu na .zip a pak jej otevřete. Po úpravě obsahu změňte příponu souboru zpět na .vsix.  
-  
- Soubor .vsix lze vytvořit několika způsoby. Jednu metodu popisuje následující postup.  
-  
+Chcete-li zkontrolovat nebo změnit obsah souboru .vsix, změňte jeho příponu na .zip a pak jej otevřete. Po úpravě obsahu změňte příponu souboru zpět na .vsix.  
+
+Soubor .vsix lze vytvořit několika způsoby. Jednu metodu popisuje následující postup.  
+
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Vývoj vlastního procesoru direktiv v projektu VSIX  
   
 1.  Vytvoření projektu VSIX v sadě Visual Studio.  
@@ -90,11 +92,11 @@ Pokud chcete použít vlastního procesoru direktiv v sadě Visual Studio na lib
   
 5.  Přidejte do projektu následující odkazy:  
   
-    -   **Microsoft.VisualStudio.TextTemplating. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost. \*.0**  
+    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
 6.  Přidejte do projektu třídu vlastního procesoru direktiv.  
   
@@ -197,5 +199,6 @@ Pokud chcete použít vlastního procesoru direktiv v sadě Visual Studio na lib
 |Třída|REG_SZ|\<**Váš plně kvalifikovaný název třídy**>|  
 |Assembly|REG_SZ|\<**Název sestavení v mezipaměti GAC**>|  
   
-## <a name="see-also"></a>Viz také  
- [Vytváření vlastních procesorů pro direktivy textových šablon T4](../modeling/creating-custom-t4-text-template-directive-processors.md)
+## <a name="see-also"></a>Viz také
+
+[Vytváření vlastních procesorů pro direktivy textových šablon T4](../modeling/creating-custom-t4-text-template-directive-processors.md)

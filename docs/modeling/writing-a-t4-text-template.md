@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: ee218f119d8c996c1be72ff911735c271df44e98
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 927b033928d200cbab5271be93679106e7f4fe72
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Tvorba textové šablony T4
 Textová šablona obsahuje text, který z ní bude vygenerován. Například bude obsahovat šablonu, která vytvoří webovou stránku "\<html >..." a všechny ostatní standardní části na stránce HTML. Vložit do šablony jsou *řízení bloky*, které jsou fragmenty kódu programu. Řídicí bloky poskytují různé hodnoty a umožňují, aby části textu byly podmíněné a opakované.  
@@ -258,9 +258,10 @@ Content of MyFile.txt is:
   
 ```  
   
- Lze také získat další služby, které jsou poskytovány tímto hostitelem. Další informace najdete v tématu [přístup k sadě Visual Studio nebo k jiným hostitelům z šablony](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
-  
-### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Návrhové textové šablony běží v oddělené doméně AppDomain.  
+Lze také získat další služby, které jsou poskytovány tímto hostitelem. Další informace najdete v tématu [přístup k sadě Visual Studio nebo k jiným hostitelům z šablony](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
+
+### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Návrhové textové šablony běží v oddělené doméně AppDomain.
+
  Je třeba věnovat pozornost, [návrhu textové šablony](../modeling/design-time-code-generation-by-using-t4-text-templates.md) běží v objektu AppDomain, která je oddělená od hlavní aplikace. Ve většině případů to není důležité, ale v některých složitých případech lze narazit na omezení. Pokud například chcete předat data do nebo ze šablony ze samostatné služby, musí tato služba poskytovat serializovatelné rozhraní API.  
   
  (Tato akce není platí [spuštění textové šablony](../modeling/run-time-text-generation-with-t4-text-templates.md), který poskytuje kód, který se zkompiluje spolu s ostatními vašeho kódu.)  

@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 6a3b1dc2966f2fd07c8f0462ebb47bebf25b843c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 793d4becea65caca5bf127707c96c44de028fd3d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="properties-of-a-dsl-definition"></a>Vlastnosti definice DSL
 Definování vlastnosti DslDefinition *jazyka domény* vlastnosti definice například číslování verze. DslDefinition vlastnosti se zobrazí v **vlastnosti** okně po kliknutí na tlačítko Otevřít oblast v diagramu *Návrhář jazyk specifické pro doménu*.  
@@ -27,21 +27,21 @@ Definování vlastnosti DslDefinition *jazyka domény* vlastnosti definice např
 |Vlastnost|Popis|Výchozí|  
 |--------------|-----------------|-------------|  
 |Modifikátor přístupu|Určuje, zda – modifikátor přístupu pro třídu domény veřejné nebo interní.|public|  
-|Vlastní atributy|Uživatelem definované atributy pro třídu domény.<br /><br /> **Poznámka:** přidat atribut, klikněte na tlačítko Procházet.|\<žádné >|  
+|Vlastní atributy|Uživatelem definované atributy pro třídu domény.<br /><br /> **Poznámka:** přidat atribut, klikněte na tlačítko Procházet.|\<none>|  
 |Název společnosti|Název aktuální název společnosti v registru systému.|Aktuální název společnosti|  
 |Název|Název třídy této domény.|Aktuální název|  
 |Obor názvů|Obor názvů se spojit s touto třídou domény.|Aktuální obor názvů|  
-|Identifikátor Guid balíčku|Identifikátor guid [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generovaná pro tato DSL balíčku.|\<žádné >|  
-|Namespace balíčku|Obor názvů pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generovaná pro tato DSL balíčku.|\<žádné >|  
-|Název produktu|Název produktu, které se zaregistruje pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generovaná pro tato DSL balíčku.|\<žádné >|  
-|Poznámky|Poznámky k přidružený ke třídě této domény.|\<žádné >|  
-|Popis|Popis pro tuto třídu domény.|\<žádné >|  
-|Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro tuto třídu domény.|\<žádné >|  
-|Nápověda – klíčové slovo|Klíčové slovo nápovědy související s touto třídou domény.|\<žádné >|  
+|Identifikátor Guid balíčku|Identifikátor guid [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generovaná pro tato DSL balíčku.|\<none>|  
+|Package Namespace|Obor názvů pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generovaná pro tato DSL balíčku.|\<none>|  
+|Název produktu|Název produktu, které se zaregistruje pro [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generovaná pro tato DSL balíčku.|\<none>|  
+|Poznámky|Poznámky k přidružený ke třídě této domény.|\<none>|  
+|Popis|Popis pro tuto třídu domény.|\<none>|  
+|Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro tuto třídu domény.|\<none>|  
+|Nápověda – klíčové slovo|Klíčové slovo nápovědy související s touto třídou domény.|\<none>|  
 |Sestavení|Číslo přírůstkové sestavení pro tuto definici jazyka domény.|0|  
 |Hlavní verze|Číslo přírůstkové hlavní sestavení pro tuto definici jazyka domény.|1|  
 |Podverze|Číslo přírůstkové menší sestavení pro tuto definici jazyka domény.|0|  
 |Revize|Číslo pro tuto definici jazyka domény sestavení přírůstkové revize.|0|  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástroje jazyka domény](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

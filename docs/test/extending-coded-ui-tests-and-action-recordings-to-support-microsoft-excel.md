@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: ae08752c7687844fbe620bf6314496b474b6e915
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0133db8e1060da48e5938a08ded187fa900b4d30
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Rozšiřování programových testů UI a záznamů akcí k podpoře Microsoft Excel
 Testování framework pro programové testy uživatelského rozhraní a zaznamenávání akcí nepodporuje všechny možné uživatelské rozhraní. Nepodporuje specifické uživatelské rozhraní, který chcete otestovat. Například nelze vytvořit okamžitě programového testu UI nebo záznamu pro akce [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] tabulky. Můžete však vytvořit vlastní rozšíření programové framework testu uživatelského rozhraní, která bude podporovat vaše specifické uživatelské rozhraní a využívají k rozšiřitelnosti rozhraní programových testů uživatelského rozhraní. V následujícím tématu je uveden příklad toho, jak rozšířit rozhraní pro podporu vytváření programové testy uživatelského rozhraní a zaznamenávání akcí pro [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)]. Další informace o platformy, které jsou podporovány, naleznete v části [podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).  
@@ -68,14 +68,16 @@ Přehled architektury
   
  Možná budete muset upravit přesná kopie cesty, ale je nutná žádná další instalace. Na 64bitový počítač, použijte ke spuštění příkazového řádku Visual Studio Enterprise 32bitová verze `CopyDrop.bat` souboru.  
   
-### <a name="testing-excel-with-the-sampletestproject"></a>Testování aplikace Excel pomocí SampleTestProject aplikace  
- Spusťte test v zadané testovacího projektu, který používá určitou verzi aplikace Excel, nemusí mít, nebo vytvořit vlastní testovacího projektu a záznam vlastní test. Další informace najdete v tématu [vytváření programových testů uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
-  
-## <a name="see-also"></a>Viz také  
- <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Osvědčené postupy pro programové testy uživatelského rozhraní](../test/best-practices-for-coded-ui-tests.md)   
- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+### <a name="testing-excel-with-the-sampletestproject"></a>Testování aplikace Excel pomocí SampleTestProject aplikace
+
+Spusťte test v zadané testovacího projektu, který používá určitou verzi aplikace Excel, nemusí mít, nebo vytvořit vlastní testovacího projektu a záznam vlastní test. Další informace najdete v tématu [vytváření programových testů uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md).
+
+## <a name="see-also"></a>Viz také
+
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   
+<xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>   
+[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
+[Osvědčené postupy pro programové testy uživatelského rozhraní](../test/best-practices-for-coded-ui-tests.md)   
+[Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

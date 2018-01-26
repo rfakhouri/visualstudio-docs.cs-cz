@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: e3589707f07564bbcd84151b0eedeb1c0029428b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 093457cf2aea3951db89e6fa677ec03fe55df89a
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Použití ovládacích prvků HTML5 v programových testech UI
 Programové testy uživatelského rozhraní zahrnují podporu pro některé z ovládacích prvků HTML5, které jsou součástí aplikace Internet Explorer 9 a Internet Explorer 10.  
@@ -121,7 +121,7 @@ string VideoWidth
   
 |Akce|Záznam|Generovaný kód|  
 |------------|---------------|--------------------|  
-|**Nastavení pozice v posuvníku**|Nastaví pozici \<x > v \<name > posuvníku|HtmlSlider.ValueAsNumber=\<x >|  
+|**Nastavení pozice v posuvníku**|Nastaví pozici \<x > v \<name > posuvníku|HtmlSlider.ValueAsNumber=\<x>|  
   
  Následující vlastnosti jsou k dispozici pro HtmlSlider a assertion lze přidat na všechny z nich:  
   
@@ -136,12 +136,12 @@ string ValueAsNumber
   
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a>ProgressBar  
  **Ovládací prvek ProgreesBar:** je ProgressBar – ovládací prvek-interactable. Kontrolní výrazy lze přidat na `Value` a `Max` vlastnosti tohoto ovládacího prvku.  
-  
+
  ![HTML5 ProgressBar – ovládací prvek](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
-  
-## <a name="see-also"></a>Viz také  
- [Elementy HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Přizpůsobení vaší programového testu uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+
+## <a name="see-also"></a>Viz také
+
+[Elementy HTML](http://go.microsoft.com/fwlink/?LinkID=232441)  
+[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)  
+[Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)  
+[Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

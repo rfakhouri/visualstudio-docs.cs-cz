@@ -25,19 +25,20 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f439ebbf7505086c3105fbb5aee9ba05f22de2e4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 26dbef0fce67b4af461e7bbc15ecb870f630ca0e
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-models-for-your-app"></a>Vytváření modelů pro aplikaci
+
 Diagramy modelování vám pomůžou pochopit, vysvětlení a komunikovat nápady o kódu a uživatelské požadavky, které musí podporovat systému softwaru.
-  
- Jaké verze sady Visual Studio podporovat každý typ diagramu najdete v tématu [verze podpora architektura a modelování nástroje](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Můžete vizualizovat architekturu systému nebo existujícího kódu, vytvořte následující diagramy:  
-  
+
+Jaké verze sady Visual Studio podporovat každý typ diagramu najdete v tématu [verze podpora architektura a modelování nástroje](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+
+Můžete vizualizovat architekturu systému nebo existujícího kódu, vytvořte následující diagramy:  
+
 |**Diagram**|**Zobrazuje**|  
 |-----------------|---------------|  
 |[Diagramy závislostí: Pokyny](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramy závislostí: Referenční dokumentace](../modeling/layer-diagrams-reference.md)|Základní architektura systému|  
@@ -52,11 +53,10 @@ Diagramy modelování vám pomůžou pochopit, vysvětlení a komunikovat nápad
 |[Modelování uživatelských požadavků](../modeling/model-user-requirements.md)|Použijte modely pro vysvětlení a komunikaci potřeby uživatelů.|  
 |[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|Pomocí modely k popisu celkové strukturu a chování vašeho systému a ujistěte se, že bude vyhovovat potřebám uživatelů.|  
 |[Ověřování systému během vývoje](../modeling/validate-your-system-during-development.md)|Ujistěte se, že váš software zůstává konzistentní s potřebám vašich uživatelů a přehled architektury systému.|  
-|[Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)<br /><br /> [Použití modelů ve agilní vývoj](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)|Pomůže vám pomůžou pochopit a změnit systému při jeho vývoji modelů.|  
+|[Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)<br /><br /> [Použití modelů ve agilní vývoj](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Pomůže vám pomůžou pochopit a změnit systému při jeho vývoji modelů.|  
 |[Strukturování řešení modelování](../modeling/structure-your-modeling-solution.md)|Uspořádejte modely v projektu střední nebo velké.|  
   
-## <a name="external-resources"></a>Externí zdroje  
-  
-|**Kategorie**|**Odkazy**|  
-|------------------|---------------|  
-|**Fóra**|-   [Visual Studio vizualizace a modelování nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio vizualizace a modelování SDK (nástroje DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+## <a name="resources"></a>Prostředky
+
+[Visual Studio vizualizace & modelování fóra nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)  
+[Fórum rozšíření sady Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)

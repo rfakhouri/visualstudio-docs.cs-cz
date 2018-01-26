@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: c58dc30285257a8292e8ce8dcf81b7b31cfee2c5
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 86955d745e645d2d37e9e33f258a2662bcac59fe
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 Toto téma popisuje strukturu souboru DslDefinition.dsl v projektu Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] řešení, který definuje *jazyka domény*. Soubor DslDefinition.dsl popisuje třídy a vztahy jazyka specifické pro doménu, společně s diagramu, tvarů, konektory, formát serializace a **sada nástrojů** jazyka specifické pro doménu a jeho Nástroje pro úpravy. V řešení jazyka domény je generována kód, který definuje tyto nástroje podle informací v souboru DslDefinition.dsl.  
@@ -546,6 +546,6 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
  Konektor maps může také obsahovat dekoratéra mapy.  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástroje jazyka domény](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md)   
  [Porozumění modelům, třídám a vztahům](../modeling/understanding-models-classes-and-relationships.md)

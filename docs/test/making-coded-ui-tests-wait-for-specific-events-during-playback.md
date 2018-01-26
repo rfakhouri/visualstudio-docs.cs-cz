@@ -7,17 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 4a6c7ae9f0438d440471bc9e049b539e96e63e13
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: d28182eb626bb937e8d1e1d0e3cc39bd62233df7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Zajištění čekání programových testů UI na konkrétní události při přehrávání
+
 V programových přehrávání testu uživatelského rozhraní můžete určit, aby test čekání na určité události proběhnout, jako je například okno se zobrazí indikátor průběhu zmizet a tak dále. Chcete-li to provést, použijte odpovídající metodu UITestControl.WaitForControlXXX(), jak je popsáno v následující tabulce. Příklad programového testu uživatelského rozhraní, který čeká na povolit pomocí ovládacího prvku <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> metodu, najdete v části [návod: vytváření, úpravy a údržba programového uživatelského rozhraní testovací](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).  
   
  **Požadavky**  
@@ -27,7 +28,7 @@ V programových přehrávání testu uživatelského rozhraní můžete určit, 
 > [!TIP]
 >  Můžete také přidat zpoždění před akce pomocí editoru programových testů uživatelského rozhraní. Další informace najdete v tématu [postupy: vložení zpoždění před uživatelského rozhraní akce pomocí editoru programových testů UI](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
- **UITestControl.WaitForControlXXX() metody**  
+ **UITestControl.WaitForControlXXX() Methods**  
   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>  
   
@@ -103,18 +104,15 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  Můžete použít <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.ThinkTimeMultiplier%2A>vlastnost upravit dobu trvání režimu spánku. Ve výchozím nastavení tato proměnná je 1 ale můžete zvýšit nebo snížit dobu čekání po celém kód změnit. Například pokud testujete konkrétně přes pomalé síti nebo některých jiných případ nízký výkon, můžete změnit tuto proměnnou na jednom místě (nebo i v konfiguračním souboru) na 1.5, chcete-li přidat další 50 % čekat na všech místech.  
   
  Playback.Wait() interně volá Thread.Sleep() (po výše výpočetní) v menší bloky dat v cyklu for při kontrole operace cancel\break uživatele. Jinými slovy Playback.Wait() umožňuje zrušit přehrávání před koncem čekání, zatímco režimu spánku může není nebo throw výjimka.  
-  
+
 > [!TIP]
->  Editor programového testu uživatelského rozhraní lze snadno upravit programových testů uživatelského rozhraní. Pomocí editoru testování uživatelského rozhraní programového, můžete vyhledat, zobrazit a upravit zkušební metody. Můžete taky upravit akcí uživatelského rozhraní a jejich přidružených ovládacích prvcích v mapě ovládací prvek uživatelského rozhraní. Další informace najdete v tématu [testů uživatelského rozhraní pro úpravy programový pomocí editoru programových testů uživatelského rozhraní](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
-  
- **Pokyny**  
-  
- Další informace najdete v tématu [testování pro nastavené průběžné doručování s Visual Studio 2012 – kapitoly 5: automatizace systémových testů](http://go.microsoft.com/fwlink/?LinkID=255196)  
-  
-## <a name="see-also"></a>Viz také  
- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Návod: Vytváření, úpravy a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
- [Anatomie programového testu UI](../test/anatomy-of-a-coded-ui-test.md)   
- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Postupy: vložení prodlevy před akci uživatelského rozhraní pomocí editoru programových testů UI](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)
+> Editor programového testu uživatelského rozhraní lze snadno upravit programových testů uživatelského rozhraní. Pomocí editoru testování uživatelského rozhraní programového, můžete vyhledat, zobrazit a upravit zkušební metody. Můžete taky upravit akcí uživatelského rozhraní a jejich přidružených ovládacích prvcích v mapě ovládací prvek uživatelského rozhraní. Další informace najdete v tématu [testů uživatelského rozhraní pro úpravy programový pomocí editoru programových testů uživatelského rozhraní](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+
+## <a name="see-also"></a>Viz také
+
+[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)  
+[Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)  
+[Návod: Vytváření, upravování a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)  
+[Anatomie programového testu UI](../test/anatomy-of-a-coded-ui-test.md)  
+[Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)  
+[Postupy: vložení prodlevy před akci uživatelského rozhraní pomocí editoru programových testů UI](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)

@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 3a0d2932e4fc14070759906ad27c36f63132559b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: d9df35f6ace396d1f2859ea7f5a16033c1739b16
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Izolace aplikace od ostatních sestavení pomocí překrytí za účelem testování částí
 **Kód Shim typy** jsou jedním z dvě technologie, které systém Fakes Microsoft použije k vám umožní snadno izolovat součásti testovaného z prostředí. Překrytí přesměrovat volání konkrétní metody kód, který zapisuje jako součást svůj test. Mnoho způsobů vrátí odlišné výsledky závislé na externí podmínkách, ale doplňkový kód je pod kontrolou svůj test a konzistentní výsledky při každém volání můžete vrátit. Jednodušší testů k zápisu.  
@@ -414,7 +414,7 @@ public class ShimMyBase : ShimBase<MyBase> {
 ```  
   
 ###  <a name="BKMK_Static_constructors"></a>Statické konstruktory  
- Typy Shim vystavit statickou metodu `StaticConstructor` na kód shim statického konstruktoru typu. Vzhledem k tomu, že statické konstruktory provedení po pouze, musíte zajistit, aby je shimu dřív, než kteréhokoli člena typu přistupuje.  
+ Typy Shim vystavit statickou metodu `StaticConstructor` na kód shim statického konstruktoru typu. Vzhledem k tomu, že statické konstruktory provedení po pouze, budete muset Ujistěte se, že je shimu dřív, než kteréhokoli člena typu přistupuje.  
   
 ###  <a name="BKMK_Finalizers"></a>Finalizační metody  
  Finalizační metody nejsou podporovány v napodobeniny.  

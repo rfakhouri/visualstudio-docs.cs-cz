@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 2302c2bbfbd38ff307335b525aa319afb5f07e25
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0cb316475748033bb020a2f3065f9492a5a201ed
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Úpravy programových testů uživatelského rozhraní pomocí Editoru programových testů uživatelského rozhraní
 Editor programového testu uživatelského rozhraní lze snadno upravit programových testů uživatelského rozhraní. Pomocí editoru testování uživatelského rozhraní programového, můžete vyhledat, zobrazit a upravit vlastnosti testovací metody a akcí uživatelského rozhraní. Kromě toho můžete použít ovládací prvek mapy uživatelského rozhraní zobrazení a jejich odpovídající ovládacích prvcích pro úpravy.  
@@ -29,7 +29,7 @@ Editor programového testu uživatelského rozhraní lze snadno upravit programo
 ## <a name="why-should-i-do-this"></a>Proč to mám udělat?  
  Pomocí editoru testování uživatelského rozhraní programového je rychlejší a efektivnější než úpravy kódu v vaše programové metody testu uživatelského rozhraní pomocí editoru kódu. S programového uživatelského rozhraní editoru testu, nástrojů a v místní nabídky můžete použít k rychlému vyhledání a upravte hodnoty vlastností, které jsou spojené s akcí uživatelského rozhraní a ovládací prvky. Například programového uživatelského rozhraní editoru testu na panelu nástrojů můžete provést následující příkazy:  
   
- ![Edito testu uživatelského rozhraní](../test/media/uitesteditor.png "UITestEditor")  
+ ![UI Test Edito](../test/media/uitesteditor.png "UITestEditor")  
   
 1.  [Najít](../ide/finding-and-replacing-text.md) pomáhá při hledání akcí uživatelského rozhraní a ovládací prvky.  
   
@@ -194,7 +194,7 @@ Editor programového testu uživatelského rozhraní lze snadno upravit programo
  *Co je třeba vědět?*  
  **Poznámky**  
   
--   ![Prerequsite](../test/media/prereq.png "požadavků") Pokud je potřeba zajistit, že určitý ovládací prvek je k dispozici před akci uživatelského rozhraní, měli byste zvážit přidání vlastní kód pro metodu test pomocí odpovídající UITestControl.WaitForControlXXX() Metoda. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Provedení programové uživatelského rozhraní testy čekání konkrétní události při přehrávání](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
+-   ![Požadovaný](../test/media/prereq.png "požadavků") Pokud je potřeba zajistit, že určitý ovládací prvek je k dispozici před akci uživatelského rozhraní, měli byste zvážit přidání vlastní kód pro metodu test pomocí odpovídající UITestControl.WaitForControlXXX() Metoda. [!INCLUDE[crdefault](../test/includes/crdefault_md.md)][Provedení programové uživatelského rozhraní testy čekání konkrétní události při přehrávání](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).  
   
  **Tipy**  
   
@@ -216,6 +216,6 @@ Editor programového testu uživatelského rozhraní lze snadno upravit programo
 ## <a name="see-also"></a>Viz také
 
 [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)  
-[Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)  
+[Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)  
 [Vytvoření datově řízeného programového testu UI](../test/creating-a-data-driven-coded-ui-test.md)  
 [Návod: Vytváření, upravování a údržba programového testu UI](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

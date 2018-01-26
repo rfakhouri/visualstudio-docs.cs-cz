@@ -13,13 +13,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0ffbfd6da8abb0063ed16d7956bcec97626c9666
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 495e226a16e94dbe87584c54fa317ccb0ab84482
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
+
 Visual Studio pomáhá pochopit, popisují a komunikaci potřebám uživatelů ve kreslení diagramy o jejich aktivity a rámci systému hraje v pomoci jim dosáhli svých cílů. Model požadavky je sada tyto diagramy, z nichž každý se zaměřuje na různé aspekty potřeby uživatelů. Videoukázka, najdete v tématu: [modelování domény obchodní](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Informace, které verze sady Visual Studio podporovat každý typ modelu, najdete v tématu [verze podpora architektura a modelování nástroje](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -43,10 +44,11 @@ Visual Studio pomáhá pochopit, popisují a komunikaci potřebám uživatelů v
  Model požadavky poskytuje největší výhody, pokud ji použít k zaměření diskuze s uživatele nebo jejich zástupci a pokroku na začátku každé iteraci. Není nutné k dokončení podrobně před psaní kódu. Částečně funkční aplikaci, i v případě velmi mnohem jednodušší, obvykle je základem nejvíce podporovat diskuzi o požadavky s uživateli. Model je efektivní způsob, jak shrnout výsledky těchto diskusí. Další informace najdete v tématu [použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
->  V těchto tématech "systém" znamená systému nebo aplikace, které vyvíjíte. Může to být velké kolekce mnoho softwarové a hardwarové součásti; nebo jednu aplikaci; nebo softwarová součást uvnitř větší systému. V každém případě popisuje požadavky model chování, které je viditelná z mimo vašemu systému, prostřednictvím uživatelského rozhraní nebo rozhraní API.  
+> V těchto tématech "systém" znamená systému nebo aplikace, které vyvíjíte. Může to být velké kolekce mnoho softwarové a hardwarové součásti; nebo jednu aplikaci; nebo softwarová součást uvnitř větší systému. V každém případě popisuje požadavky model chování, které je viditelná z mimo vašemu systému, prostřednictvím uživatelského rozhraní nebo rozhraní API.  
   
-## <a name="common-tasks"></a>Obecné úlohy  
- Můžete vytvořit několik různých zobrazení požadavků uživatelů.  Každé zobrazení poskytuje konkrétní typ informací.  Když vytvoříte tato zobrazení, je nejvhodnější často přesunout z jednoho do jiného. Můžete spustit z libovolného zobrazení.  
+## <a name="common-tasks"></a>Běžné úlohy
+
+Můžete vytvořit několik různých zobrazení požadavků uživatelů.  Každé zobrazení poskytuje konkrétní typ informací.  Když vytvoříte tato zobrazení, je nejvhodnější často přesunout z jednoho do jiného. Můžete spustit z libovolného zobrazení.  
   
 |Diagram nebo dokumentu|Co je popsaný v modelu požadavky|Část|  
 |-------------------------|-----------------------------------------------|-------------|  
@@ -56,8 +58,9 @@ Visual Studio pomáhá pochopit, popisují a komunikaci potřebám uživatelů v
   
  Všimněte si, že většinu typů diagramu lze použít pro jiné účely. Přehled typů diagramu najdete v tématu [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md).
   
-##  <a name="BusinessRules"></a>Zobrazuje obchodní pravidla  
- Obchodní pravidlo je požadavek, který není spojen s případu konkrétní použití a má být dodržen v celém systému.  
+##  <a name="BusinessRules"></a>Zobrazuje obchodní pravidla
+
+Obchodní pravidlo je požadavek, který není spojen s případu konkrétní použití a má být dodržen v celém systému.  
   
  Mnoho obchodní pravidla jsou omezení vztahy mezi koncepční třídy. Můžete napsat tyto *statické ** obchodní pravidla* jako komentáře přidružené k příslušné třídy v diagramu koncepční třídy. Příklad:  
   
@@ -75,8 +78,9 @@ Visual Studio pomáhá pochopit, popisují a komunikaci potřebám uživatelů v
 |--------------------|----------|  
 |Jak vyvíjet kód, který dodržuje obchodní pravidla|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a>Popisující kvality služeb požadavky  
- Existuje několik kategorií kvality požadavek na službu. Zahrnují následující:  
+##  <a name="QoSRequirements"></a>Popisující kvality služeb požadavky
+
+Existuje několik kategorií kvality požadavek na službu. Zahrnují následující:  
   
 -   Výkon  
   
@@ -88,17 +92,13 @@ Visual Studio pomáhá pochopit, popisují a komunikaci potřebám uživatelů v
   
 -   Robustnost  
   
- Jsou některé z těchto požadavků v popisech případů konkrétní použití. Další požadavky nejsou specifické pro případy použití a efektivní zapisují v samostatných dokumentu. Pokud je to možné, je užitečné řídit termínů definované ve model požadavky. V následujícím příkladu Všimněte si, že hlavní slova, která požadavek na jsou názvy třídy v předchozí obrázky, případy použití a aktéři:  
-  
- Pokud restaurace odstraní položku nabídky, zatímco zákazníka je řazení jídlem, zobrazí se všechny položky pořadí, který odkazuje na danou položku nabídky červeně.  
-  
- Další informace naleznete v následujících tématech:  
-  
-|Další informace o|Číst|  
-|--------------------|----------|  
-|Podrobnější informace o záznamu kvality služeb požadavky|[Pokyny pro definování kvality služeb požadavky](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
-|Jak vyvíjet kód, který dodržuje kvality služeb požadavky|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
-  
-## <a name="see-also"></a>Viz také  
- [Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)   
- [Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)   
+Jsou některé z těchto požadavků v popisech případů konkrétní použití. Další požadavky nejsou specifické pro případy použití a efektivní zapisují v samostatných dokumentu. Pokud je to možné, je užitečné řídit termínů definované ve model požadavky. V následujícím příkladu Všimněte si, že hlavní slova, která požadavek na jsou názvy třídy v předchozí obrázky, případy použití a aktéři:
+
+Pokud restaurace odstraní položku nabídky, zatímco zákazníka je řazení jídlem, zobrazí se všechny položky pořadí, který odkazuje na danou položku nabídky červeně.
+
+V tématu [modelování architektury aplikace](../modeling/model-your-app-s-architecture.md) se dozvíte, jak vyvíjet kód, který dodržuje kvality služeb požadavky.
+
+## <a name="see-also"></a>Viz také
+
+[Použití modelů ve vývojových procesech](../modeling/use-models-in-your-development-process.md)  
+[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)

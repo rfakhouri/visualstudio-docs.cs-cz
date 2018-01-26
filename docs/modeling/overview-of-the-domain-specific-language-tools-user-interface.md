@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 5d489f41069f478abfba32a65690a5adc9c2272c
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 4dabfb345d9a98228afae5e20b63e6ded760800d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Přehled uživatelského rozhraní Jazykových nástrojů specifických pro doménu
 Když poprvé otevřete řešení jazykové nástroje specifické pro doménu (DSL Tools) v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], uživatelské rozhraní bude vypadat podobně jako na následujícím obrázku.  
@@ -41,12 +41,12 @@ Když poprvé otevřete řešení jazykové nástroje specifické pro doménu (D
   
 |**Termín**|**Definice**|  
 |--------------|--------------------|  
-|Domény – třída|Třídy domény jsou typy elementů ve modelech.<br /><br /> Třídu domény může být více než jednou v diagramu, pokud je cílem více než jedna relace.<br /><br /> Přidání třídy domény, přetáhněte nástroj domény třídy z **sada nástrojů** k **třídy a vztahy** postranní diagramu.|  
+|Domain Class|Třídy domény jsou typy elementů ve modelech.<br /><br /> Třídu domény může být více než jednou v diagramu, pokud je cílem více než jedna relace.<br /><br /> Přidání třídy domény, přetáhněte nástroj domény třídy z **sada nástrojů** k **třídy a vztahy** postranní diagramu.|  
 |Relace domény|Typy odkazů mezi elementy ve modelech se vztahy domén.<br /><br /> *Vložení vztah* označuje, že je cílový element ve vlastnictví nebo obsažená v tomto elementu zdroje a zobrazí se jako plná čára. Každý element v modelu musí být cílem jeden vnoření relace, tak, aby forms stromu modelu. A *referenční vztah* označuje obecné propojení mezi prvků modelu a zobrazí se jako přerušovaná čára. Libovolný element, může mít libovolný počet referenčních odkazů.<br /><br /> Vytvoření relace klepnutím na nástroj na **sada nástrojů**, kliknutím na domény třída zdroje a pak kliknutím na cílové třídy.|  
 |Konektory a obrazců|Tvary zadejte, jak mají být zobrazeny elementů modelu v diagramu DSL., konektory zadat řádky v diagramu DSL, který slouží k zobrazení relace.<br /><br /> Chcete-li vytvořit tvar nebo konektor, přetáhněte nástroj, který **elementy diagramu** postranní diagramu.|  
 |Obrazce mapy|Obrazce mapy se zobrazí jako čáru v diagramu modelu domény, propojení obrazce do třídy domény, která se zobrazí, nebo konektor k relace domény, který se zobrazí.|  
   
 ## <a name="see-also"></a>Viz také  
  [Přehled nástroje jazyka domény](../modeling/overview-of-domain-specific-language-tools.md)   
- [Glosář nástroje jazyka domény](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)   
+ [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)   
  [Přizpůsobení a rozšíření jazyka specifického pro doménu](../modeling/customizing-and-extending-a-domain-specific-language.md)

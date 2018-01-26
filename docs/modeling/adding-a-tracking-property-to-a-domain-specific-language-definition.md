@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 8250f21bd95816bf0d9424dc4a3fbb45302919d7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 21e31bd582fda7884f0f246bd6eda39e5e89a375
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Přidání vlastnosti sledování do definice jazyka specifického pro doménu
 Tento návod ukazuje, jak přidat vlastnost sledování do modelu domény.  
@@ -27,7 +27,7 @@ Tento návod ukazuje, jak přidat vlastnost sledování do modelu domény.
   
  Například v jazykové nástroje specifické pro doménu (DSL Tools) zobrazovaný název vlastnosti třídy domény má výchozí hodnotu, která se počítá pomocí názvu třídy domény, ale uživatel změňte hodnotu v době návrhu nebo ho resetovat do počítaná hodnota.  
   
- V tomto návodu vytvoříte jazyk specifické pro doménu (DSL), který má Namespace, sledování vlastnost, která má výchozí hodnotu na základě Namespace výchozí vlastnosti modelu. Další informace o sledování vlastnosti najdete v tématu [definování vlastnosti sledování](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ V tomto návodu vytvoříte jazyk specifické pro doménu (DSL), který má Namespace, sledování vlastnost, která má výchozí hodnotu na základě Namespace výchozí vlastnosti modelu. Další informace o sledování vlastnosti najdete v tématu [definování vlastnosti sledování](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 -   Podpora nástroje DSL, sledování popisovače vlastnosti. Návrháře DSL však nelze použít k přidání vlastnosti sledování jazyka. Proto je nutné přidat vlastní kód definovat a implementovat vlastnost sledování.  
   
@@ -48,9 +48,9 @@ Tento návod ukazuje, jak přidat vlastnost sledování do modelu domény.
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|  
+|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
+|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
   
 ## <a name="creating-the-dsl-project"></a>Vytvořením DSL projektu  
  Vytvoření projektu pro váš jazyk specifické pro doménu.  
@@ -253,7 +253,7 @@ Tento návod ukazuje, jak přidat vlastnost sledování do modelu domény.
 #### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>Změnit popisovač typu pro třídu ExampleModel domény  
   
 1.  Přidejte následující kód do souboru TypeDescriptor.cs.  
-  
+
     ```csharp  
     using System;  
     using System.ComponentModel;  

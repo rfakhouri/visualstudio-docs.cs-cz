@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: fbda836ec423d9a86b51b2334a3015589512d816
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 15970f48791078d498fa7a187546c1c7230d3cf0
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testování aplikací pro SharePoint 2010 pomocí programových testů uživatelského rozhraní
 Včetně programové testy uživatelského rozhraní v aplikaci SharePoint umožňuje ověřit, zda je správně funguje celou aplikaci, včetně jeho ovládacích prvků uživatelského rozhraní. Programové testy uživatelského rozhraní můžete také ověřit, hodnoty a logiku v uživatelském rozhraní.  
@@ -29,12 +29,12 @@ Včetně programové testy uživatelského rozhraní v aplikaci SharePoint umož
   
  **Poznámky**  
   
--   ![Prerequsite](../test/media/prereq.png "požadavků") testy programového uživatelského rozhraní aplikací služby SharePoint jsou podporovány pouze pro SharePoint 2010.  
+-   ![Požadovaný](../test/media/prereq.png "požadavků") testy programového uživatelského rozhraní aplikací služby SharePoint jsou podporovány pouze pro SharePoint 2010.  
   
--   ![Prerequsite](../test/media/prereq.png "požadavků") není dostupná podpora pro ovládací prvky aplikace Visio a PowerPoint 2010 v aplikaci služby SharePoint.  
+-   ![Požadovaný](../test/media/prereq.png "požadavků") není dostupná podpora pro ovládací prvky aplikace Visio a PowerPoint 2010 v aplikaci služby SharePoint.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Vytvoření programového testu uživatelského rozhraní pro aplikaci služby SharePoint  
- [Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) pro vaše aplikace SharePoint 2010 je stejný jako vytváření testů pro jiné typy aplikací. Záznam a přehrávání jsou podporovány pro všechny ovládací prvky v rozhraní Web úpravy. Rozhraní pro výběr kategorie a webové části jsou všechny standardní ovládací prvky.  
+ [Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md) pro vaše aplikace SharePoint 2010 je stejný jako vytváření testů pro jiné typy aplikací. Záznam a přehrávání jsou podporovány pro všechny ovládací prvky v rozhraní Web úpravy. Rozhraní pro výběr kategorie a webové části jsou všechny standardní ovládací prvky.  
   
  ![Webové části služby SharePoint](../test/media/cuit_sharepoint.png "CUIT_SharePoint")  
   
@@ -141,7 +141,7 @@ uiGridKeyboardInputEdit.Text=value;
  [Testování pro nastavené průběžné doručování s Visual Studio 2012 – 5 kapitoly automatizace systémových testů](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="forum"></a>Fórum  
- [Visual Studio ALM a Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=254496)  
+ [Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
 ## <a name="see-also"></a>Viz také
 

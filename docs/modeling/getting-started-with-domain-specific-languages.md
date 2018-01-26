@@ -10,25 +10,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: b3e0d6ec6eb1449defcc49102a97e69a7105a838
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 92db1c4d27eec5a9ac18d51644dfb0141c2fef34
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
-Toto téma vysvětluje základní koncepce při definování a používání jazyka specifické pro doménu (DSL) vytvořené pomocí sady SDK modelování pro sadu Visual Studio.  
+Toto téma vysvětluje základní koncepce při definování a používání jazyka specifické pro doménu (DSL) vytvořené pomocí sady SDK modelování pro sadu Visual Studio.
 
+> [!NOTE]
+> V 2017 Visual Studio sada SDK Text šablony transformaci a Visual Studio SDK modelování instalují automaticky při instalaci konkrétní funkce sady Visual Studio. Další podrobnosti najdete v tématu [tomto příspěvku na blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
- Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL nástroje Lab**, které můžete najít v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL nástroje Lab**, které můžete najít v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
   
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Co se děje s jazyka domény?  
  Jazyka domény je notaci, obvykle grafického rozhraní, který je určen k použití pro určitý účel. Jazyků, například UML jsou naopak pro obecné účely. V DSL můžete definovat typy element modelu a jejich vztahů a jak se mají zobrazovat na obrazovce.  
   
- Když navrženy DSL, můžete distribuovat jako součást balíčku rozšíření integrace aplikace Visual Studio (VSIX). Uživatelé pracovat s DSL v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
+ Když navrženy DSL, můžete distribuovat jako součást balíčku rozšíření integrace aplikace Visual Studio (VSIX). Uživatelé pracovat s DSL v sadě Visual Studio:  
   
  ![Rodina stromového diagramu, nástrojů a explorer](../modeling/media/familyt_instance.png "FamilyT_Instance")  
   
@@ -36,14 +35,14 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
   
  Jedním z hlavní aplikace DSL, linky je pro generování kódu programu, konfigurační soubory a jiné artefakty. Zejména v rozsáhlých projektů a řady produktů, které vytvoří několik variant produktu, generování mnoho aspektů proměnné z DSL, linky nabízejí velký nárůst v spolehlivost a velmi rychle reagovat na požadavky na změny.  
   
- Zbytek tento přehled je návod, který představuje základní operace vytváření a používání jazyka specifické pro doménu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Zbytek tento přehled je návod, který představuje základní operace vytváření a používání jazyka domény v sadě Visual Studio.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Pokud chcete definovat DSL, je třeba nainstalovat následující součásti:  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Modelování SDK pro Visual Studio||  
 
@@ -52,7 +51,7 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
 
   
 ## <a name="creating-a-dsl-solution"></a>Vytvořením DSL řešení  
- Pokud chcete vytvořit nový jazyk specifické pro doménu, vytvořte novou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení pomocí šablony projektu jazyka domény.  
+ Pokud chcete vytvořit nový jazyk specifické pro doménu, vytvořte nové řešení sady Visual Studio pomocí šablony projektu jazyka domény.  
   
 #### <a name="to-create-a-dsl-solution"></a>Chcete-li vytvořit řešení DSL  
   
@@ -100,7 +99,7 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
   
 -   **Projekt DSL** tento projekt obsahuje kód, který definuje jazyk specifické pro doménu.  
   
--   **Projekt DslPackage** tento projekt obsahuje kód, který umožňuje instancí DSL otevřít a upravovat v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+-   **Projekt DslPackage** tento projekt obsahuje kód, který umožňuje instancí DSL otevřít a upravovat v sadě Visual Studio.  
   
 ##  <a name="Debugging"></a>Spuštění DSL  
  Řešení DSL můžete spustit ihned po jeho vytvoření. Později můžete upravit definici DSL postupně, spuštění řešení znovu po každé změně.  
@@ -110,15 +109,15 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
 1.  Klikněte na tlačítko **transformaci všech šablon** na panelu nástrojů v Průzkumníku řešení. To regeneruje většinu zdrojového kódu z DslDefinition.dsl.  
   
     > [!NOTE]
-    >  Vždy, když změníte DslDefinition.dsl, musíte kliknout na **transformaci všech šablon** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat transformaci všech šablon](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+    >  Vždy, když změníte DslDefinition.dsl, musíte kliknout na **transformaci všech šablon** předtím, než znovu sestavte řešení. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat transformaci všech šablon](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
 2.  Stisknutím klávesy F5, nebo na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.  
   
-     DSL sestavení a je nainstalován v experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+     DSL sestavení a je nainstalován v experimentální instanci sady Visual Studio.
   
-     Experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] spustí. Experimentální instanci trvá jeho nastavení ze samostatné podstrom registru, kde [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření jsou registrované pro účely ladění. Normální instance [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nemají přístup k rozšíření registrovaná existuje.  
+     Spustí experimentální instanci sady Visual Studio. Experimentální instanci trvá jeho nastavení ze samostatné podstrom registru, které jsou registrované rozšíření Visual Studia pro účely ladění. Normální instance sady Visual Studio nemají přístup k rozšíření registrovaná existuje.  
   
-3.  V experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete soubor modelu s názvem **Test** z **Průzkumníku řešení**.  
+3.  V experimentální instanci sady Visual Studio otevřete soubor modelu s názvem **Test** z **Průzkumníku řešení**.  
   
      \-nebo –  
   
@@ -136,7 +135,7 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
   
 5.  Klikněte na tlačítko popisky tvarů je změnit.  
   
- Vaše experimentální [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bude vypadat podobně jako v následujícím příkladu:  
+ Experimentální sady Visual Studio bude vypadat podobně jako v následujícím příkladu:  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
@@ -147,7 +146,7 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
   
  Můžete zobrazit modelu jako strom v **Explorer** zobrazit během úprav modelu. Při přidávání obrazců do diagramu, se zobrazí také v Průzkumníku elementů modelu. Průzkumníku lze použít, i když není k dispozici žádný diagram.  
   
- Pokud nevidíte Explorer ladění instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]na **zobrazení** nabídce přejděte na příkaz **ostatní okna**a potom klikněte na  *\<si jazyk >* **Explorer**.  
+ Pokud nevidíte v Průzkumníku v ladění instanci sady Visual Studio **zobrazení** nabídce přejděte na příkaz **ostatní okna**a potom klikněte na  *\<si jazyk >* **Explorer**.  
   
 ### <a name="the-api-of-your-dsl"></a>Rozhraní API vašeho DSL  
  Vaše DSL generuje rozhraní API, které umožňuje číst a aktualizovat modely, které jsou instancemi třídy DSL. Jedna aplikace rozhraní API je ke generování textových souborů z modelu. Další informace najdete v tématu [vytvoření kódu v době návrhu pomocí textových šablon T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).  
@@ -164,7 +163,7 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
   
 ##### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>Po změně souboru modelu vygenerovat textové soubory  
   
-1.  V experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], uložte soubor modelu.  
+1.  V experimentální instanci sady Visual Studio uložte soubor modelu.  
   
 2.  Ujistěte se, že parametr názvu souboru do každého souboru .tt odkazuje na soubor modelu, který používáte pro experimenty. Uložte soubor .tt.  
   
@@ -182,7 +181,7 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
  Další informace najdete v tématu [generování kódu z jazyka domény](../modeling/generating-code-from-a-domain-specific-language.md) a [psaní kódu jazyka domény sestavit si](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="customizing-the-dsl"></a>Přizpůsobení DSL  
- Pokud chcete upravit definici DSL, ukončete experimentální instanci a aktualizovat definice v hlavní [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instance.  
+ Pokud chcete upravit definici DSL, ukončete experimentální instanci a aktualizovat definice v hlavní instance Visual Studio.  
   
 > [!NOTE]
 >  Po úpravě definice DSL může dojít ke ztrátě informací v modelů testů, které jste vytvořili pomocí starší verze.  Například ladění řešení obsahuje souboru, který je pojmenován vzorku, který obsahuje některé tvarů a konektory. Po spuštění k vývoji vaší definice DSL, nebudou viditelné a budou ztraceny při ukládání souboru.  
@@ -222,9 +221,9 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
   
     2.  Klikněte na tlačítko **transformaci všech šablon** na panelu nástrojů Průzkumníku řešení  
   
-    3.  Stiskněte klávesu F5. Počkejte, dokud experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se zobrazí.  
+    3.  Stiskněte klávesu F5. Počkejte, až se zobrazí experimentální instanci sady Visual Studio.  
   
-4.  V řešení ladění experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete soubor modelu testu. Přetažením elementů na ji z panelu nástrojů. Všimněte si, že nástroj titulky a názvy typů v Průzkumníku DSL změnily.  
+4.  V ladění řešení v experimentální instanci sady Visual Studio otevřete soubor modelu testu. Přetažením elementů na ji z panelu nástrojů. Všimněte si, že nástroj titulky a názvy typů v Průzkumníku DSL změnily.  
   
 5.  Uložte soubor modelu.  
   
@@ -348,7 +347,7 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
   
 8.  Uložit definici DSL, klikněte na tlačítko **transformaci všech šablon**a potom stiskněte klávesu **F5**.  
   
-9. V experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete soubor modelu testu. Použijte nové nástroje k vytvoření městech a odkazů mezi městech a osoby. Všimněte si, že můžete vytvořit pouze propojení mezi správné typy elementu.  
+9. V experimentální instanci sady Visual Studio otevřete soubor modelu testu. Použijte nové nástroje k vytvoření městech a odkazů mezi městech a osoby. Všimněte si, že můžete vytvořit pouze propojení mezi správné typy elementu.  
   
 10. Vytvořte kód, který uvádí města, ve kterém je každá osoba umístěn. Textové šablony jsou jedno z míst, kde můžete spouštět takový kód. Například může upravit existující soubor Sample.tt v řešení pro ladění, tak, aby obsahoval následující kód:  
   
@@ -380,33 +379,32 @@ Toto téma vysvětluje základní koncepce při definování a používání jaz
 ## <a name="validation-and-commands"></a>Ověření a příkazy  
  Tato další DSL může vyvíjet přidáním omezení ověřování. Tato omezení jsou metody, které můžete definovat, které se ujistěte, že model je ve správném stavu. Například můžete definovat omezení a ujistěte se, datum narození dítěte je novější než jejích nadřazených tříd. Funkce ověřování zobrazí upozornění, pokud uživatel DSL pokusí uložit model, který dělí žádné omezení. Další informace najdete v tématu [ověření v jazyce specifické pro doménu](../modeling/validation-in-a-domain-specific-language.md).  
   
- Můžete také definovat příkazy nabídky, které může uživatel vyvolat. Příkazy můžete upravit modelu. Také mohou komunikovat s jinými modely v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a s externím prostředkům. Další informace najdete v tématu [postupy: Úprava standardních příkazů nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+ Můžete také definovat příkazy nabídky, které může uživatel vyvolat. Příkazy můžete upravit modelu. Takže může také komunikovat s jinými modely v sadě Visual Studio a externím prostředkům. Další informace najdete v tématu [postupy: Úprava standardních příkazů nabídky](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="deploying-the-dsl"></a>Nasazení DSL  
- Povolit jiných uživatelů použití jazyka specifické pro doménu, distribuci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření (VSIX) souboru. Tím se vytvoří při sestavování řešení DSL.  
+ Povolit jiných uživatelů použití jazyka specifické pro doménu, distribuujete soubor rozšíření Visual Studio (VSIX). Tím se vytvoří při sestavování řešení DSL.  
   
- Vyhledejte soubor VSIX do složky bin vašeho řešení. Zkopírujte jej do počítače, na kterém chcete nainstalovat. Na tomto počítači poklikejte na soubor VSIX. Ve všech instancích lze použít DSL [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] na tomto počítači.  
+ Vyhledejte soubor VSIX do složky bin vašeho řešení. Zkopírujte jej do počítače, na kterém chcete nainstalovat. Na tomto počítači poklikejte na soubor VSIX. DSL lze ve všech instancích sady Visual Studio na tomto počítači.  
   
- Stejný postup slouží k instalaci DSL ve vašem počítači, takže nemusíte používat experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Stejný postup slouží k instalaci DSL ve vašem počítači, takže nemusíte používat experimentální instanci sady Visual Studio.  
   
  Další informace najdete v tématu [nasazení řešení jazyk specifické pro doménu](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ##  <a name="Reset"></a>Odebrání starého experimentální DSL, linky  
- Pokud jste si vytvořili experimentální DSL, linky, které již nechcete, můžete je odebrat z počítače resetováním [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] experimentální instanci.  
+ Pokud jste vytvořili experimentální DSL, které již nechcete linky, můžete je odebrat z počítače resetováním Visual Studio experimentální instanci.  
   
- Tato akce odebere z počítače všechny experimentální DSL, linky a dalších experimentální [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření. Jedná se o rozšíření, které byly provedeny v režimu ladění.  
+ Tato akce odebere z počítače všechny experimentální DSL, linky a další experimentální rozšíření sady Visual Studio. Jedná se o rozšíření, které byly provedeny v režimu ladění.  
   
- Tento postup neodebere DSL, linky nebo jiné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření, které byly nainstalovány plně spuštěním souboru VSIX.  
+ Tento postup neodebere DSL, linky nebo jiné rozšíření sady Visual Studio, které byly nainstalovány plně spuštěním souboru VSIX.  
   
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Chcete-li obnovit Visual Studio experimentální instanci  
   
 1.  Klikněte na tlačítko **spustit**, klikněte na tlačítko **všechny programy**, **Microsoft Visual Studio 2010 SDK**, **nástroje**a potom **resetovat Microsoft Visual Studio 2010 experimentální instance**.  
   
-2.  Znovu vytvořit všechny experimentální DSL, linky nebo jiných experimentální [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření, které chcete použít.  
+2.  Znovu vytvořit všechny experimentální DSL, linky nebo jiných experimentální rozšíření sady Visual Studio, které chcete použít.  
   
-## <a name="see-also"></a>Viz také  
- [Principy modely, třídy a vztahy](../modeling/understanding-models-classes-and-relationships.md)   
- [Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)   
+## <a name="see-also"></a>Viz také
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
+[Principy modely, třídy a vztahy](../modeling/understanding-models-classes-and-relationships.md)   
+[Jak se definuje jazyk specifický pro doménu](../modeling/how-to-define-a-domain-specific-language.md)
 

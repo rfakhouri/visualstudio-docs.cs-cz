@@ -10,29 +10,29 @@ ms.topic: article
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 500b3a3c28b2ccb07e8fb61552aff9c427d780d6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: b1b92a223a54c48dd08cce2fc02904f1b66606bc
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>Ukázkový projekt testů jednotek
-Tento ukázkový kód je určen pro použití v následující kurzy:  
-  
--   [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Tento názorný postup vás provede kroky pro vytváření a přizpůsobení testování částí, jejich spuštění a podívejte se na výsledky testu.  
-  
--   [Návod: Spuštění testů a zobrazit pokrytí kódu](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8). Tento návod ukazuje, jak zobrazit data pro pokrytí kódu, který zobrazuje podíl vašeho projektu kódu, která se testuje.  
-  
--   [Návod: použití nástroje testů z příkazového řádku](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). V tomto návodu můžete pomocí nástroje příkazového řádku MSTest.exe spouštět testy a zobrazit výsledky.  
-  
-## <a name="sample-code"></a>Ukázkový kód  
- Pouze touto úmyslnou chybou v této ukázce je, že metodu v debetní "m_balance += částka" by měl mít minus, není plus přihlášení před symbolem rovná se.  
-  
-```  
+
+Tento ukázkový kód je určen pro použití v následující kurzy:
+
+- [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md). Tento názorný postup vás provede kroky pro vytváření a přizpůsobení testování částí, jejich spuštění a podívejte se na výsledky testu.
+
+- [Návod: Použití nástroje testů z příkazového řádku](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867). V tomto návodu můžete pomocí nástroje příkazového řádku MSTest.exe spouštět testy a zobrazit výsledky.
+
+## <a name="sample-code"></a>Ukázkový kód
+
+Pouze touto úmyslnou chybou v této ukázce je, že metodu v debetní "m_balance += částka" by měl mít minus, není plus přihlášení před symbolem rovná se.
+
+```csharp
 using System;   
   
 namespace BankAccountNS  
@@ -120,18 +120,18 @@ namespace BankAccountNS
             ba.Credit(5.77);  
             ba.Debit(11.22);  
             Console.WriteLine("Current balance is ${0}", ba.Balance);  
-        }  
-  
-    }  
-}  
-```  
-  
- / * Společností, organizací, produktů, názvů domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené.  Žádné spojení se skutečnou společností, organizace, produktu, název domény, e-mailovou adresu, logem, osoba, místech nebo události je určený nebo událostmi. \*/  
-  
-## <a name="working-with-the-code"></a>Práce s kódem  
- Pro práci s tímto kódem je nejprve nutné pro něj vytvořit projekt v sadě [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Postupujte podle kroků v části "Příprava návodu" [návod: vytváření a spuštěné testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).  
-  
-## <a name="see-also"></a>Viz také  
- [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
- [Návod: Spuštění testů a zobrazit pokrytí kódu](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
- [Návod: použití nástroje testů z příkazového řádku](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)
+        }
+    }
+}
+```
+
+/ * Společností, organizací, produktů, názvů domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné spojení se skutečnou společností, organizace, produktu, název domény, e-mailovou adresu, logem, osoba, místech nebo události je určený nebo událostmi. \*/
+
+## <a name="working-with-the-code"></a>Práce s kódem
+
+Pro práci s tímto kódem, musíte nejprve vytvořit projekt pro něj v sadě Visual Studio. Postupujte podle kroků v části "Příprava návodu" [návod: vytváření a spuštěné testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+
+## <a name="see-also"></a>Viz také
+
+[Návod: Vytváření a spouštění testů částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+[Návod: použití nástroje testů z příkazového řádku](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

@@ -19,27 +19,23 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: becfedc10f054c006709c3095f924b58c1ba5062
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 972fa76d83c9ecfbe9efb23897a6e0ec5928c35f
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
-Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení ze šablony. Klíčovou součástí řešení je diagram definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a obrazců DSL. Po úpravě a přidáte k těmto prvkům, můžete přidat kód programu k přizpůsobení DSL podrobněji.  
-  
- Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL nástroje Lab**, které můžete najít v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
+Definovat jazyk specifické pro doménu (DSL), řešení sady Visual Studio vytvořit ze šablony. Klíčovou součástí řešení je diagram definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a obrazců DSL. Po úpravě a přidáte k těmto prvkům, můžete přidat kód programu k přizpůsobení DSL podrobněji.
 
+Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL nástroje Lab**, které můžete najít v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ##  <a name="templates"></a>Výběr šablony řešení  
  Pokud chcete definovat DSL, je třeba nainstalovat následující součásti:  
   
 |||  
 |-|-|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
+|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|  
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|  
 |Visual Studio vizualizace a modelování SDK||  
 
@@ -47,7 +43,7 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
   
- Pokud chcete vytvořit nový jazyk specifické pro doménu, vytvořte novou [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení pomocí šablony projektu jazyka domény.  
+ Chcete-li vytvořit nový jazyk specifické pro doménu, vytvořte nové řešení sady Visual Studio pomocí šablony projektu jazyka domény.  
   
 #### <a name="to-create-a-dsl-solution"></a>Chcete-li vytvořit řešení DSL  
   
@@ -98,17 +94,17 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
 ### <a name="test-the-solution"></a>Testování řešení  
  Šablona řešení poskytuje DSL, kterou můžete upravit nebo použít, protože je funkční.  
   
- Chcete-li otestovat řešení, stiskněte klávesu F5 nebo CTRL + F5. Novou instanci třídy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] otevře v experimentální režimu.  
+ Chcete-li otestovat řešení, stiskněte klávesu F5 nebo CTRL + F5. Otevře se v experimentální režimu novou instanci sady Visual Studio.  
   
- V nové instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], v Průzkumníku řešení otevřete soubor ukázka. Otevře se jako diagram s sady nástrojů.  
+ V nové instanci sady Visual Studio v Průzkumníku řešení otevřete soubor ukázka. Otevře se jako diagram s sady nástrojů.  
   
- Pokud spuštění řešení, které jste vytvořili z **minimální jazyk** šablony, vaše experimentální [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bude vypadat podobně jako v následujícím příkladu:  
+ Pokud spuštění řešení, které jste vytvořili z **minimální jazyk** šablony, experimentální sady Visual Studio bude vypadat podobně jako v následujícím příkladu:  
   
  ![](../modeling/media/dsl_min.png "DSL_min")  
   
  Experimentujte s nástroje. Vytvořte elementy a jejich připojení.  
   
- Ukončete experimentální instance [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+ Ukončete experimentální instanci sady Visual Studio.  
   
 > [!NOTE]
 >  Pokud jste změnili DSL, jste už nebude moci zobrazit tvary se vzorkem testovací soubor. Však bude možné k vytvoření nových elementů.  
@@ -217,11 +213,11 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
   
 ##### <a name="to-test-the-new-domain-classes"></a>K testování nových třídách domény  
   
-1.  **Klikněte na tlačítko transformaci všech šablon** na panelu nástrojů Průzkumníka řešení pro generování kódu DSL návrháře. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat transformaci všech šablon](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1.  **Klikněte na tlačítko transformaci všech šablon** na panelu nástrojů Průzkumníka řešení pro generování kódu DSL návrháře. Tento krok můžete automatizovat. Další informace najdete v tématu [jak automatizovat transformaci všech šablon](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
   
-2.  **Sestavte a spusťte DSL.** Stiskněte klávesu F5 nebo CTRL + F5, aby se spustil novou instanci třídy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] v experimentální režimu. V experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete nebo vytvořte soubor, který má příponu názvu souboru z vaší DSL.  
+2.  **Sestavte a spusťte DSL.** Stisknutím klávesy F5 nebo CTRL + F5 spustí novou instanci sady Visual Studio v režimu experimentální. V experimentální instanci sady Visual Studio otevřete nebo vytvořte soubor, který má příponu názvu souboru z vaší DSL.  
   
-3.  **Otevřete Průzkumníka.** Na straně diagramu je okno Průzkumníka jazyk, který je obvykle s názvem *YourLanguage* Explorer. Pokud se toto okno nezobrazí, může to být na kartě pod Průzkumníku řešení. Pokud nemůžete najít, na **zobrazení** nabídky, přejděte na příkaz **ostatní okna**a pak klikněte na tlačítko * YourLanguage ***Explorer**.  
+3.  **Otevřete Průzkumníka.** Na straně diagramu je okno Průzkumníka jazyk, který je obvykle s názvem *YourLanguage* Explorer. Pokud se toto okno nezobrazí, může to být na kartě pod Průzkumníku řešení. Pokud nemůžete najít, na **zobrazení** nabídky, přejděte na příkaz **ostatní okna**a potom klikněte na *YourLanguage* **Explorer**.  
   
      Aplikace explorer představuje stromové zobrazení modelu.  
   
@@ -317,7 +313,7 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
   
 1.  **Klikněte na tlačítko transformaci všech šablon** na panelu nástrojů Průzkumníka řešení pro generování kódu DSL návrháře.  
   
-2.  **Sestavte a spusťte DSL.** Stiskněte klávesu F5 nebo CTRL + F5, aby se spustil novou instanci třídy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] v experimentální režimu. V experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete nebo vytvořte soubor, který má příponu názvu souboru z vaší DSL.  
+2.  **Sestavte a spusťte DSL.** Stisknutím klávesy F5 nebo CTRL + F5 spustí novou instanci sady Visual Studio v režimu experimentální. V experimentální instanci sady Visual Studio otevřete nebo vytvořte soubor, který má příponu názvu souboru z vaší DSL.  
   
 3.  **Ověřte, že nástroje element zobrazují na panelu nástrojů.**  
   
@@ -393,7 +389,7 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
   
 1.  **Klikněte na tlačítko transformaci všech šablon** na panelu nástrojů Průzkumníka řešení pro generování kódu DSL návrháře.  
   
-2.  **Sestavte a spusťte DSL.** Stiskněte klávesu F5 nebo CTRL + F5, aby se spustil novou instanci třídy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] v experimentální režimu. V experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete nebo vytvořte soubor, který má příponu názvu souboru z vaší DSL.  
+2.  **Sestavte a spusťte DSL.** Stisknutím klávesy F5 nebo CTRL + F5 spustí novou instanci sady Visual Studio v režimu experimentální. V experimentální instanci sady Visual Studio otevřete nebo vytvořte soubor, který má příponu názvu souboru z vaší DSL.  
   
 3.  **Ověřte, že se na panelu nástrojů zobrazí nástroje pro připojení.**  
   
@@ -494,7 +490,7 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
   
 1.  **Klikněte na tlačítko transformaci všech šablon** na panelu nástrojů Průzkumníka řešení pro generování kódu DSL návrháře.  
   
-2.  **Sestavte a spusťte DSL.** Stiskněte klávesu F5 nebo CTRL + F5, aby se spustil novou instanci třídy [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] v experimentální režimu. V experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], otevřete nebo vytvořte soubor, který má příponu názvu souboru z vaší DSL.  
+2.  **Sestavte a spusťte DSL.** Stisknutím klávesy F5 nebo CTRL + F5 spustí novou instanci sady Visual Studio v režimu experimentální. V experimentální instanci sady Visual Studio otevřete nebo vytvořte soubor, který má příponu názvu souboru z vaší DSL.  
   
 3.  **Ověřte, zda nástroj zobrazí na panelu nástrojů.**  
   
@@ -623,12 +619,10 @@ Chcete-li definovat jazyk specifické pro doménu (DSL), musíte vytvořit [!INC
 |V Průzkumníku pro moje DSL elementy jsou zobrazeny pouze s jejich názvy typů.|V definici DSL, vyberte vlastnost domain třídy a ve vlastnostech okno, nastavte **název elementu, který je** na hodnotu true.|  
 |Moje DSL se vždy otevře v editoru XML.|K tomu dochází z důvodu chyby při při čtení souboru. Ale i poté, co můžete vyřešit tuto chybu, musíte explicitně nastavit editoru být vašeho DSL návrháře.<br /><br /> Klikněte pravým tlačítkem na položku projektu, klikněte na tlačítko **otevřít v** a vyberte * YourLanguage ***návrháře (výchozí)**.|  
 |Sady nástrojů Moje DSL nezobrazí po změně názvy sestavení.|Zkontrolovat a aktualizovat **DslPackage\GeneratedCode\Package.tt** Další informace najdete v tématu [postupy: Změna Namespace jazyka specifické pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).|  
-|Sady nástrojů Moje DSL nezobrazí, ale I nedošlo ke změně názvu sestavení.<br /><br /> Nebo, zobrazí se okno se zprávou, reporting selhání načtení rozšíření.|Resetovat experimentální instanci a znovu sestavte řešení.<br /><br /> 1.  V systému Windows nabídky Start, v části **všechny programy**, rozbalte položku [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], pak **nástroje**a potom klikněte na **resetovat Visual Studio experimentální instanci Microsoft**.<br />2.  Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.|  
+|Sady nástrojů Moje DSL nezobrazí, ale I nedošlo ke změně názvu sestavení.<br /><br /> Nebo, zobrazí se okno se zprávou, reporting selhání načtení rozšíření.|Resetovat experimentální instanci a znovu sestavte řešení.<br /><br /> 1.  V systému Windows nabídky Start, v části **všechny programy**, rozbalte položku [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], pak **nástroje**a potom klikněte na **resetovat Visual Studio experimentální instanci Microsoft**.<br />2.  V sadě Visual Studio**sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**.|  
   
 ## <a name="see-also"></a>Viz také  
  [Začínáme s jazyky specifické pro doménu](../modeling/getting-started-with-domain-specific-languages.md)   
  [Vytváření jazyk specifické pro doménu formulářů Windows](../modeling/creating-a-windows-forms-based-domain-specific-language.md)   
  [Vytvoření jazyka specifického pro doménu založeného na WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

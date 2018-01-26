@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: 0dce2cfd041b3fe0be3ecd4061e3447190d5e448
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: fb46a6d739e06f980b13cd2b643946b47b6661e3
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Rychlý začátek: Vývoj řízený testy s použitím Průzkumníka testů
 Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguje prostřednictvím mnoho kroků přírůstkové vývoje. Existuje několik rozhraní, které můžete použít k zápisu testy jednotek, včetně některých vyvinuté třetími stranami. Některé testovací rozhraní se specializují na testování v různých jazycích nebo platformy. Průzkumníka testů poskytuje jednotné rozhraní pro testování částí v některém z těchto rozhraní. Jsou k dispozici pro rozhraní nejčastěji používaných adaptéry a můžete napsat vlastní adaptéry pro ostatní platformy.  
@@ -147,15 +147,15 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
   
      ![Průzkumník testování částí zobrazující testu předávání. ] (../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")  
   
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Přidávat testy rozšířit rozsah vstupy  
-  
-1.  Chcete-li zvýšit vaši důvěry, že váš kód funguje ve všech případech, přidejte testy, které se pokusí mnohem širší škále vstupních hodnot.  
-  
+#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Přidávat testy rozšířit rozsah vstupy
+
+1.  Chcete-li zvýšit vaši důvěry, že váš kód funguje ve všech případech, přidejte testy, které se pokusí mnohem širší škále vstupních hodnot.
+
     > [!TIP]
-    >  Vyhněte se změna existující testy, které předat. Místo toho přidejte nové testy. Změníte existující testy jenom v případě, že požadavky na uživatele změnit. Tato zásada pomáhá zajistit, aby neztratili stávající funkce při práci rozšířit kód.  
-  
-     Ve třídě testovací přidáte následující test, který pokusí řadu vstupní hodnoty:  
-  
+    >  Vyhněte se změna existující testy, které předat. Místo toho přidejte nové testy. Změníte existující testy jenom v případě, že požadavky na uživatele změnit. Tato zásada pomáhá zajistit, aby neztratili stávající funkce při práci rozšířit kód.
+
+     Ve třídě testovací přidáte následující test, který pokusí řadu vstupní hodnoty:
+
     ```csharp  
     [TestMethod]  
     public void RooterValueRange()  

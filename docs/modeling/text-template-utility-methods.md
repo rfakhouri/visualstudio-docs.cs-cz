@@ -11,22 +11,24 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: f851f98fca98af8dfc95160f244c59cc0645a805
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 66b4c44a79446aacc56761b6b565d8c979d007f7
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="text-template-utility-methods"></a>Pomocné metody textových šablon
-Existuje několik metod, které jsou k dispozici vždy při psaní kódu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] textové šablony. Tyto metody jsou definovány v <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
-  
+
+Existuje několik metod, které jsou k dispozici vždy při psaní kódu v sadě Visual Studio textové šablony. Tyto metody jsou definovány v <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+
 > [!TIP]
->  Můžete také použít jiné metody a služeb poskytovaných hostitelské prostředí v pravidelných (ne předběžně zpracované) textové šablony. Například můžete vyřešit cesty k souborům, protokolování chyb a získat služeb poskytovaných [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a všechny načíst balíčky.  Další informace najdete v tématu [přístup k sadě Visual Studio z textové šablony](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Můžete také použít jiné metody a služeb poskytovaných hostitelské prostředí v pravidelných (ne předběžně zpracované) textové šablony. Například můžete vyřešit cesty k souborům, protokolování chyb a získat služby poskytované sadě Visual Studio a všechny načíst balíčky. Další informace najdete v tématu [přístup k sadě Visual Studio z textové šablony](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
   
-## <a name="write-methods"></a>Zápis metod  
- Můžete použít `Write()` a `WriteLine()` metody připojit text v rámci bloku standardní kódu namísto použití bloku kódu výrazu. Následující bloky kódu dva jsou funkčně rovnocenné.  
+## <a name="write-methods"></a>Zápis metod
+
+Můžete použít `Write()` a `WriteLine()` metody připojit text v rámci bloku standardní kódu namísto použití bloku kódu výrazu. Následující bloky kódu dva jsou funkčně rovnocenné.  
   
-##### <a name="code-block-with-an-expression-block"></a>Blok kódu s bloku výraz  
+### <a name="code-block-with-an-expression-block"></a>Blok kódu s bloku výraz  
   
 ```  
 <#  
@@ -38,7 +40,7 @@ while (i-- > 0)
 #>  
 ```  
   
-##### <a name="code-block-using-writeline"></a>Blok kódu pomocí WriteLine()  
+### <a name="code-block-using-writeline"></a>Blok kódu pomocí WriteLine()  
   
 ```  
 <#   
@@ -66,7 +68,8 @@ while (i-- > 0)
 #>   
 ```  
   
-## <a name="indentation-methods"></a>Odsazení metody  
+## <a name="indentation-methods"></a>Odsazení metody
+
  Odsazení metody slouží k formátování výstupu z textové šablony. <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> Třída má `CurrentIndent` řetězec vlastnost, která zobrazuje aktuální odsazení v textové šablony a `indentLengths` pole tedy seznam odsazení, které byly přidány. Můžete přidat odsazení s `PushIndent()` metoda a odečítání odsazení s `PopIndent()` metoda. Pokud chcete odebrat všechny odsazení, použijte `ClearIndent()` metoda. Následující blok kódu ukazuje použití těchto metod:  
   
 ```  
@@ -94,7 +97,7 @@ Hello
 ```  
   
 ## <a name="error-and-warning-methods"></a>Chyby a upozornění metody  
- Chybové a výstražné pomocné metody můžete přidat zprávy a pokuste se [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] seznam chyb. Následující kód například přidá chybovou zprávu do seznamu chyb.  
+ Chyby a upozornění pomocné metody slouží k přidání zprávy do Visual Studio v seznamu chyb. Následující kód například přidá chybovou zprávu do seznamu chyb.  
   
 ```  
 <#  
@@ -115,7 +118,7 @@ Hello
   
  `<#@template ... hostspecific="true" #>`  
   
- Typ `this.Host` závisí na typ hostitele, ve kterém je prováděna šablony. V šabloně, který běží v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], může odevzdat `this.Host` k `IServiceProvider` k získání přístupu k službám, jako je rozhraní IDE. Příklad:  
+ Typ `this.Host` závisí na typ hostitele, ve kterém je prováděna šablony. V šabloně, který běží v sadě Visual Studio, může odevzdat `this.Host` k `IServiceProvider` k získání přístupu k službám, jako je rozhraní IDE. Příklad:  
   
 ```  
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)  

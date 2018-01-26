@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 7c0ecd953a0a4cb744f726fc6a62bee564d15579
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 581d4e907185339aa16bacce19a9bf31ff4d121d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
 Visual Studio modelování a vizualizace SDK (VMSDK) poskytuje několik úrovní, ve kterém můžete definovat modelování nástroje:  
@@ -55,7 +55,7 @@ Visual Studio modelování a vizualizace SDK (VMSDK) poskytuje několik úrovní
 |Odstranit, Nadřadit nebo znovu připojit související prvky, když se odstraní. element.|Nastavte **rozšíří odstranit** hodnotu vztah role. Pro složitější důsledky přepíší `ShouldVisitRelationship` a `ShouldVisitRolePlayer` metody v `MyDslDeleteClosure` třídy, které jsou definované v **DomainModel.cs**<br /><br /> V tématu [přizpůsobení chování při odstranění](../modeling/customizing-deletion-behavior.md)|  
 |Zachovejte tvar rozložení a vzhled na kopírování a přetáhněte jej.|Přidat konektory a obrazců do zkopírovaný `ElementGroupPrototype`. Je nejvhodnější metodu pro přepsání`ElementOperations.CreateElementGroupPrototype()`<br /><br /> V tématu [přizpůsobení chování kopie](../modeling/customizing-copy-behavior.md).|  
 |Vkládání obrazců do zvoleného umístění, jako je například aktuálním umístěním kurzoru.|Přepsání `ClipboardCommandSet.ProcessOnCopy()` používat konkrétní umístění verzi `ElementOperations.Merge().` najdete v části [přizpůsobení chování kopie](../modeling/customizing-copy-behavior.md).|  
-|Vytvořte další odkazy na vložení|Přepsání ClipboardCommandSet.ProcessOnPasteCommand()|  
+|Vytvořte další odkazy na vložení|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Povolit přetažení z tohoto diagramu, ostatní DSL, linky a Windows elementy|V tématu [postupy: přidání obslužné rutiny a přetažení](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Povolit tvar nebo nástroj, který se přetáhli podřízené obrazce, jako je port, jako kdyby byly přetáhli nadřazený.|U třídy cílový objekt, předávání vynechaných objektu do nadřazené definujte sloučení direktivu Element. V tématu [přizpůsobení Element vytváření a přesun](../modeling/customizing-element-creation-and-movement.md).|  
 |Povolit nástroj být přetáhli obrazce a další odkazy tvaru nebo nebo objekty vytvořené. Chcete-li například povolit komentář, který má být přetažen na položku, ke kterému má být propojena.|Definovat sloučení direktivu Element u třídy cíle domény a odkazy, které má být vygenerován. V případech, komplexní můžete přidat vlastní kód. V tématu [přizpůsobení Element vytváření a přesun](../modeling/customizing-element-creation-and-movement.md).|  
@@ -70,10 +70,10 @@ Visual Studio modelování a vizualizace SDK (VMSDK) poskytuje několik úrovní
 |Několik DSL, linky integrate tak, aby fungovaly v rámci jedné aplikace.|V tématu [integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|  
 |Umožňují vaše DSL potřeba rozšířit o třetích stran a řídit rozšíření.|[Rozšíření vašeho DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Sdílení tříd mezi jazyky specifickými pro doménu (DSL) pomocí knihovny DSL](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definování zásady zamykání pro vytváření segmentů jen pro čtení](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
   
-## <a name="see-also"></a>Viz také  
- [Jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md)   
- [Psaní kódu sestavit si jazyka domény](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
+## <a name="see-also"></a>Viz také
+
+[Jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md)   
+[Psaní kódu sestavit si jazyka domény](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+[Sada Modeling SDK pro Visual Studio – jazyky specifické pro doménu](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

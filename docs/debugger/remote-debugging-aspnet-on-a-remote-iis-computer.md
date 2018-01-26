@@ -15,18 +15,18 @@ manager: ghogen
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 748da513053b981e88afccf6c16ccabd60d80b3e
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: f1938473a3a5e085e63b9b522bbc31678dedbbd4
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v Visual Studio 2017
 K ladění aplikace ASP.NET, která byla nasazena do služby IIS, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace a pak připojte k běžící aplikaci ze sady Visual Studio.
 
 ![Součásti vzdáleného ladicího programu](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
 
-Tato příručka vysvětluje, jak nastavit a konfigurovat Visual Studio 2017 ASP.NET Core, nasazení pro službu IIS a připojení vzdáleného ladicího programu ze sady Visual Studio. Vzdálené ladění ASP.NET 4.5.2, najdete v tématu [vzdáleného ladění ASP.NET na počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Také můžete nasazovat a ladění ve službě IIS pomocí Azure. Pro službu Azure App Service, můžete snadno nasadit a ladění předem nakonfigurované instance služby IIS pomocí [ladicí program snímku](../debugger/debug-live-azure-applications.md) nebo [připojení ladicího programu z Průzkumníka serveru](../debugger/remote-debugging-azure.md).
+Tato příručka vysvětluje, jak nastavit a konfigurovat Visual Studio 2017 ASP.NET Core, nasazení pro službu IIS a připojení vzdáleného ladicího programu ze sady Visual Studio. Vzdálené ladění ASP.NET 4.5.2, najdete v tématu [vzdáleného ladění ASP.NET na počítači se službou IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Také můžete nasazovat a ladění ve službě IIS pomocí Azure. Pro službu Azure App Service, můžete snadno nasadit a ladění předem nakonfigurované instance služby IIS a vzdáleného ladicího programu buď pomocí [ladicí program snímku](../debugger/debug-live-azure-applications.md) nebo [připojení ladicího programu z Průzkumníka serveru](../debugger/remote-debugging-azure.md).
 
 Tyto postupy jsme otestovali na tyto konfigurace serveru:
 * Windows Server 2012 R2 a služby IIS 8

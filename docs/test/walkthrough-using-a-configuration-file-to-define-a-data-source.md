@@ -11,17 +11,18 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 269efd6f66d6430b9fa533c2cfebb6bdf0f78e3d
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: f36df08f6f750337cdd9c68458aebb92866d0a67
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Návod: Použití konfiguračního souboru k definování zdroje dat
+
 Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config k testování jednotek. Se dozvíte, jak vytvořit soubor app.config, který definuje zdroj dat, který můžete používat <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> třídy. Úlohy, které jsou uvedené v tomto návodu zahrnují následující:  
   
 -   Vytvoření souboru app.config.  
@@ -35,7 +36,7 @@ Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config 
 -   Přístupu k datům zdroje pomocí <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> třídy.  
   
 ## <a name="prerequisites"></a>Požadavky  
- K dokončení toho návodu budete potřebovat:  
+ K dokončení tohoto postupu potřebujete:  
   
 -   Visual Studio Enterprise  
   
@@ -76,7 +77,7 @@ Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config 
 >  Název sestavení musí odpovídat sestavení Microsoft Visual Studio .NET Framework, který používáte. Nastavte verzi na 9.0.0.0, pokud používáte Visual Studio .NET Framework 3.5. Pokud používáte Visual Studio .NET Framework 2.0, nastavte verzi na 8.0.0.0.  
   
 ## <a name="define-connection-strings"></a>Definujte připojovací řetězce  
- Připojovací řetězce definovat zprostředkovatele konkrétní informace pro přístup k datové zdroje. Připojovací řetězce, které jsou definované v konfiguračních souborech poskytují informace zprostředkovatele opakovaně použitelné dat v aplikaci. V této části vytvoříte dva připojovací řetězce, které budou používat zdroje dat, které jsou definovány v části vlastní konfigurace.  
+ Připojovací řetězce definovat informace specifické pro zprostředkovatele pro přístup k datové zdroje. Připojovací řetězce, které jsou definované v konfiguračních souborech poskytují informace zprostředkovatele opakovaně použitelné dat v aplikaci. V této části vytvoříte dva připojovací řetězce, které budou používat zdroje dat, které jsou definovány v části vlastní konfigurace.  
   
 #### <a name="to-define-connection-strings"></a>Chcete-li definovat připojovací řetězce  
   
@@ -148,20 +149,20 @@ Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config 
 |`dataTableName`|`"Sheet1$"`|  
 |`dataAccessMethod`|`"Sequential"`|  
   
- `microsoft.visualstudio.testtools` Element by měl vypadat podobně jako tento:  
-  
-```  
+`microsoft.visualstudio.testtools` Element by měl vypadat podobně jako tento:
+
+```xml
 <microsoft.visualstudio.testtools>  
     <dataSources>  
         <add name="MyJetDataSource" connectionString="MyJetConn" dataTableName="MyDataTable" dataAccessMethod="Sequential"/>  
         <add name="MyExcelDataSource" connectionString="MyExcelConn" dataTableName="Sheet1$" dataAccessMethod="Sequential"/>  
     </dataSources>  
 </microsoft.visualstudio.testtools>  
-```  
-  
- Soubor app.config konečné by měl vypadat podobně jako tento:  
-  
-```  
+```
+
+Soubor app.config konečné by měl vypadat podobně jako tento:
+
+```xml
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
     <configSections>  
@@ -217,13 +218,11 @@ Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config 
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Chcete-li vytvořit testů jednotek pomocí souboru app.config zdroje dat  
   
-1.  Přidání testů jednotek pro projekt test.  
-  
-     Další informace najdete v tématu [vytváření a spouštění testů jednotek pro existující kód](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173).  
+1.  Přidání testů jednotek pro projekt test.
   
 2.  Automaticky generovaný obsah testování částí nahraďte následujícím kódem:  
   
-    ```  
+    ```csharp
     using System;  
     using Microsoft.VisualStudio.TestTools.UnitTesting;  
   
@@ -264,12 +263,11 @@ Tento návod ukazuje, jak používat zdroj dat definované v souboru app.config 
 3.  Zkontrolujte atributy DataSource. Všimněte si, názvy nastavení ze souboru app.config.  
   
 4.  Sestavte řešení a spusťte MyTestMethod a MyTestMethod2 testy.  
-  
+
 > [!IMPORTANT]
->  Nasaďte položky jako zdroje dat tak, že jsou přístupné pro test v adresáři pro nasazení.  
-  
+> Nasaďte položky jako zdroje dat tak, že jsou přístupné pro test v adresáři pro nasazení.
+
 ## <a name="see-also"></a>Viz také
 
 [Testování částí kódu](../test/unit-test-your-code.md)  
-[Vytváření a spouštění testování částí pro existujícího kódu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)  
 [Postupy: Testy částí řízené daty](../test/how-to-create-a-data-driven-unit-test.md)

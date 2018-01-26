@@ -14,18 +14,20 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: a0acdea369d19c19c4edf9ca427801ba8df54e0a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 61c4afb816d5cd0be3628d9c801f578a5210b4a2
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednotek pro obecné metody
-Testování částí pro obecné metody lze vygenerujte přesně tak jako u jiných metod, jak je popsáno v [postupy: vytváření a spouštění testování částí](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Následující části obsahují informace a příklady vytváření testy částí pro obecné metody.  
-  
-## <a name="type-arguments-and-type-constraints"></a>Argumenty typu a omezení typu  
- Když [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generuje testů jednotek pro obecné třídy, jako například `MyList<T>`, vygeneruje dvě metody: Obecné pomocné rutiny a metodu test. Pokud `MyList<T>` má minimálně jeden typ omezení, argument typu musí splňovat všechny typ omezení. Abyste měli jistotu, že obecná kódu v rámci testu funguje podle očekávání pro všechny povolenou vstupy, volá metodu testovací obecné pomocnou metodu s všechna omezení, které chcete testovat.  
-  
+
+Testování částí pro obecné metody můžete vygenerovat přesně tak jako u jiných metod. Následující části obsahují informace a příklady vytváření testy částí pro obecné metody.
+
+## <a name="type-arguments-and-type-constraints"></a>Argumenty typu a omezení typu
+
+Visual Studio vygeneruje-li testování částí pro obecné třídy, jako například `MyList<T>`, vygeneruje dvě metody: Obecné pomocné rutiny a metodu test. Pokud `MyList<T>` má minimálně jeden typ omezení, argument typu musí splňovat všechny typ omezení. Abyste měli jistotu, že obecná kódu v rámci testu funguje podle očekávání pro všechny povolenou vstupy, volá metodu testovací obecné pomocnou metodu s všechna omezení, které chcete testovat.
+
 ## <a name="examples"></a>Příklady  
  Následující příklady ilustrují testy částí pro obecné typy:  
   
@@ -197,6 +199,6 @@ namespace ClassLibrary2
 }  
 ```  
   
-## <a name="see-also"></a>Viz také  
- [Anatomie testování částí](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
- [Testování částí kódu](../test/unit-test-your-code.md)
+## <a name="see-also"></a>Viz také
+
+[Testování částí kódu](../test/unit-test-your-code.md)

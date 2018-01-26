@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: dotnet
 author: gewarren
-ms.openlocfilehash: a71eb54bad089e7d5bad24416604d93da615bd15
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 13780b561ba14cc06269e443265313e3b2e664c6
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Postupy: Konfigurace testů jednotek pro cílení na dřívější verzi rozhraní .NET Framework
 Když vytvoříte projekt testů v sadě Microsoft Visual Studio, je jako cíl, ve výchozím nastavení nejnovější verzi rozhraní .NET Framework. Kromě toho pokud provádíte upgrade projektů testů z předchozích verzí sady Visual Studio, se upgradují na nejnovější verzi rozhraní .NET Framework. Úpravou vlastností projektu, můžete explicitně znovu vybrat projektu na dřívější verze rozhraní .NET Framework.  
@@ -62,7 +62,7 @@ Když vytvoříte projekt testů v sadě Microsoft Visual Studio, je jako cíl, 
   
      Zobrazí se vlastnosti testovacího projektu Visual Basic.  
   
-5.  Na **zkompilovat** vyberte kartu **Upřesnit možnosti kompilace** jak je znázorněno na následujícím obrázku.  
+5.  Na **zkompilovat** , zvolte **Upřesnit možnosti kompilace** jak je znázorněno na následujícím obrázku.
   
      ![Rozšířené možnosti kompilace](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
@@ -84,7 +84,7 @@ Když vytvoříte projekt testů v sadě Microsoft Visual Studio, je jako cíl, 
   
      Zobrazí se vlastnosti testovacího projektu Visual C#.  
   
-5.  Na **aplikace** vyberte kartu **cílové rozhraní** a potom zvolte **rozhraní .NET Framework 3.5** nebo novější z rozevíracího seznamu můžete změnit framework.as target ukazuje na následujícím obrázku. Neměla by být zadána jako verze klienta.  
+5.  Na **aplikace** , zvolte **cílové rozhraní**. V rozevíracím seznamu vyberte **rozhraní .NET Framework 3.5** nebo novější, jak je znázorněno na následujícím obrázku. Neměla by být zadána jako verze klienta.
   
      ![Cílový framework rozevírací & č. 45; seznamu níže](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
@@ -125,8 +125,8 @@ Když vytvoříte projekt testů v sadě Microsoft Visual Studio, je jako cíl, 
   
 8.  V Průzkumníku řešení, zvolte Výběr **znovu načíst projekt** z místní nabídky vaší nové testovacího projektu Visual C++.  
   
-## <a name="see-also"></a>Viz také  
- [Vytváření a spouštění testování částí pro existujícího kódu](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Vytvoření řešení služby SharePoint](/office-dev/office-dev/create-sharepoint-solutions)   
- [Sestavování a ladění řešení služby SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   
- [Dialogové okno Pokročilé nastavení kompilátoru (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
+## <a name="see-also"></a>Viz také
+
+[Vytvoření řešení služby SharePoint](/office-dev/office-dev/create-sharepoint-solutions)  
+[Sestavování a ladění řešení služby SharePoint](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)  
+[Dialogové okno Pokročilé nastavení kompilátoru (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

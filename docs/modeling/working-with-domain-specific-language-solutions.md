@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 0f72632ccb56da42da3a9534a9a6d26d87dd6791
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: a8208d41631985fb6027e2827a847bb3e5e1d7ec
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>Práce s řešeními jazyka specifického pro doménu
 Jazyk specifické pro doménu (DSL) je vytvořený pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení. Tato část se o tom, jak nastavit a přizpůsobit řešení.  
@@ -47,5 +47,5 @@ Jazyk specifické pro doménu (DSL) je vytvořený pomocí [!INCLUDE[vsprvs](../
  [Postupy: Rozšíření Návrháře DSL](../modeling/how-to-extend-the-domain-specific-language-designer.md)  
  Můžete přizpůsobit návrháře DSL s příkazy nabídky.  
   
- [Jak automatizovat transformaci všech šablon](http://msdn.microsoft.com/en-us/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
+ [Jak automatizovat transformaci všech šablon](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)  
  Abyste se vyhnuli, kliknutím na transformaci všech šablon, můžete u ní nastavit automatické součást sestavení.

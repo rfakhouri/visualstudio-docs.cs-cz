@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: a582796e7436df49a719d758896ee8dcea43b068
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 74d271b6d1c9124d323b9c1ecbbfe9e716b1c5b8
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Postupy: Testy jednotek řízené daty
 Pomocí částí Microsoft unit test framework pro spravovaný kód, můžete nastavit metoda testování částí tak, k načtení hodnoty používané v metodě testu z datového zdroje. Metoda je provozován pro každý řádek ve zdroji dat, která usnadňuje testování různých vstupu pomocí jedné metody.  
@@ -182,12 +182,12 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
  Když metoda testovaného po opravě a test znovu spustit, na panelu výsledků změní na zelenou a metodu test je přesunuta do **předán testování** skupiny.  
   
-## <a name="see-also"></a>Viz také  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>   
- [Postupy: vytváření a spouštění testování částí](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)   
- [Testování částí kódu](../test/unit-test-your-code.md)   
- [Spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)   
- [Zápis testů částí pro rozhraní .NET Framework s infrastrukturou pro testování částí Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+## <a name="see-also"></a>Viz také
+
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>  
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>  
+[Testování částí kódu](../test/unit-test-your-code.md)  
+[Spouštění testování částí pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)  
+[Zápis testů částí pro rozhraní .NET Framework s infrastrukturou pro testování částí Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)

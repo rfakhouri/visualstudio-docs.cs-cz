@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 64a7f5ae729ff2badfc03750efa43c70973a7498
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 9c21673f318d97ac5abb2b89bdd8d65ae01cef17
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 Textové šablony T4 návrhu umožňují generování programovém kódu a další soubory v vaší [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Většinou se tak, aby se liší kód, který generují podle data z zápisu šablony *modelu*. Model je soubor nebo databáze, která obsahuje klíčové informace o požadavcích vaší aplikace.  
@@ -298,12 +298,11 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
  Pokud se změní modelu zdroje, byste měli znovu spustit všechny šablony v řešení. Chcete-li to provést ručně, zvolte **transformaci všech šablon** na **sestavení** nabídky.  
   
- Pokud jste nainstalovali [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK, může mít všechny šablony transformovat automaticky vždy, když je vytvořit nové sestavení. K tomu, upravte svůj soubor projektu (.csproj nebo .vbproj) v textovém editoru a přidejte následující řádky na konci souboru, po jakékoliv `<import>` příkazy:  
+ Pokud jste nainstalovali Visual Studio SDK modelování, je třeba všechny šablony transformovat automaticky vždy, když je vytvořit nové sestavení. K tomu, upravte svůj soubor projektu (.csproj nebo .vbproj) v textovém editoru a přidejte následující řádky na konci souboru, po jakékoliv `<import>` příkazy:
 
+> [!NOTE]
+> V 2017 Visual Studio sada SDK Text šablony transformaci a Visual Studio SDK modelování instalují automaticky při instalaci konkrétní funkce sady Visual Studio. Další podrobnosti najdete v tématu [tomto příspěvku na blogu](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-[!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-
-  
 ```  
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />  
 <PropertyGroup>  

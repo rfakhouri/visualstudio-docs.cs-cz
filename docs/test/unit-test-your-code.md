@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
 author: gewarren
-ms.openlocfilehash: a70433a811ad8cf45bb44b12c2971c90c8f82ff2
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: bafabb6755a5d3c8cf8f2b60b67a9dc0d7af9792
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="unit-test-your-code"></a>Testy jednotek kódu
 Testování částí poskytnout vývojáři a testerům, sada rychlý způsob, jak hledat logické chyby v metody třídy v [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)], [!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)], a [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] projekty.  
   
  Nástroje testování částí zahrnují:  
   
-1.  **Průzkumníka testů.** Průzkumník testů dovoluje spouštět testy částí a zobrazit jejich výsledky. Průzkumník testů může použít libovolné rozhraní testování částí, včetně rozhraní třetích stran, které má adaptér pro Průzkumníka.  
+1.  **Test Explorer.** Průzkumník testů dovoluje spouštět testy částí a zobrazit jejich výsledky. Průzkumník testů může použít libovolné rozhraní testování částí, včetně rozhraní třetích stran, které má adaptér pro Průzkumníka.  
   
 2.  **Částí Microsoft unit test framework pro spravovaný kód.** Rozhraní společnosti Microsoft pro testování částí spravovaného kódu je nainstalováno spolu se sadou Visual Studio a poskytuje rozhraní pro testování kódu rozhraní .NET.  
   
@@ -43,14 +43,14 @@ Testování částí poskytnout vývojáři a testerům, sada rychlý způsob, j
   
 |Úlohy|Související témata|  
 |-----------|-----------------------|  
-|**Rychlé zahájení práce a návody:** používat další jednotky testování v sadě Visual Studio z příklady kódu v následujících tématech.|-   [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Rychlé zahájení: Testování vývoj řízený testy pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Přidání testů částí do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)<br />-   [Testování částí nativního kódu pomocí Průzkumníka testů](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)|  
-|**Testování částí pomocí Průzkumníka testů:** zjistěte, jak můžete Průzkumníka testů pomocí vytvoření produktivní a efektivní testování částí.|-   [Testování částí](../test/unit-test-basics.md)<br />-   [Vytvoření projektu testování částí](../test/create-a-unit-test-project.md)<br />-   [Spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalace systémů testů jednotek třetích stran](../test/install-third-party-unit-test-frameworks.md)<br />-   [Upgrade z produktu Visual Studio 2010 testování částí](http://msdn.microsoft.com/en-us/9bb75856-f68a-4de2-a084-b08a947a1172)|  
+|**Rychlé zahájení práce a návody:** používat další jednotky testování v sadě Visual Studio z příklady kódu v následujících tématech.|-   [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [Rychlé zahájení: Testování vývoj řízený testy pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [Přidání testů částí do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|  
+|**Testování částí pomocí Průzkumníka testů:** zjistěte, jak můžete Průzkumníka testů pomocí vytvoření produktivní a efektivní testování částí.|-   [Testování částí](../test/unit-test-basics.md)<br />-   [Vytvoření projektu testování částí](../test/create-a-unit-test-project.md)<br />-   [Spouštění testů jednotek pomocí Průzkumníka testů](../test/run-unit-tests-with-test-explorer.md)<br />-   [Instalace systémů testů jednotek třetích stran](../test/install-third-party-unit-test-frameworks.md)<br />-   [Upgrade testu programového UI z produktu Visual Studio 2010](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)|  
 |**Testování částí spravovaného kódu:**|-   [Zápis testů částí pro rozhraní .NET Framework s částí Microsoft Unit Test Framework pro spravovaný kód](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|  
 |**C++ – kód testování částí**|-   [Zápis testů částí pro C/C++ s Microsoft Unit Testing Framework pro C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|  
 |**Uzavírací testování částí**|-   [Izolace testovaného kódu pomocí zástupného rozhraní Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)|  
 |**Použijte pokrytí kódu k určení, jaké části kódu vašeho projektu se testuje pomocí testování částí:** Další informace o funkci pokrytí kódu [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] testovací nástroje.|-   [Použití pokrytí kódu k určení jak mnohem kódu se testuje](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|  
-|**Analýzám přízvuk a výkonu pomocí zátěžových testů pro testy částí:** můžete vytvořit zátěžový test a přidejte testů jednotek do ní ke zjištění výkonu a vystavila zátěži problémy ve vaší aplikaci. **Poznámka:** vytváření a používání zátěžové testy vyžaduje Visual Studio Enterprise.|-   [Vytváření a úpravy zátěžových testů](http://msdn.microsoft.com/en-us/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [Postupy: Přidání testy výkonnosti webu a testování částí do scénáře zátěžového testu](http://msdn.microsoft.com/en-us/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [Postupy: odebrání scénáře zátěžového testu webové testy a testy jednotek](http://msdn.microsoft.com/en-us/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|  
-|**Nastavit a vynutit brány kvality:** vytvořením brány kvality vynutit spuštění testů, než k zajištění kvality kódu se změnami kódu.|-   [Nastavit a vynutit brány kvality](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Analýzám přízvuk a výkonu pomocí zátěžových testů pro testy částí:** můžete vytvořit zátěžový test a přidejte testů jednotek do ní ke zjištění výkonu a vystavila zátěži problémy ve vaší aplikaci.|-   [Spouštění testování (služby VSTS a sady TFS)](/vsts/load-test/)|  
+|**Nastavit a vynutit brány kvality:** vytvořením brány kvality vynutit spuštění testů, než se změnami kódu, abyste zajistili kvality kódu.|-   [Nastavit a vynutit brány kvality](http://msdn.microsoft.com/Library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**Rozšíření jednotka typu testu:** funkce můžete přidat do vaší testy, které nemusí být v rámci testování jednotky. Například je možné přidat vlastnost testu, která specifikuje, zda má test běžet pod běžným uživatelem nebo ne. Nebo je možné rozšířit rozhraní přidáním atributů řádku do metody a použít data v tomto řádku uvnitř testu.|Ukázkový kód o tom, jak rozšířit jednotka test framework, naleznete v následujících [webu společnosti Microsoft](http://go.microsoft.com/fwlink/?LinkId=185591).|  
 |**Nastavení možností otestování:** například můžete zadat, kde jsou uložené výsledky testů.|[Konfigurace testů částí s použitím souboru .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|  
   
@@ -67,7 +67,7 @@ Testování částí poskytnout vývojáři a testerům, sada rychlý způsob, j
  [Channel 9: Testování aplikace UWP vyvíjené v XAML částí](http://go.microsoft.com/fwlink/?LinkId=226285)  
   
 ### <a name="forums"></a>Diskuzní fóra  
- [Testování částí sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
+ [Visual Studio Unit Testing](http://go.microsoft.com/fwlink/?LinkId=224477)  
   
 ### <a name="guidance"></a>Doprovodné materiály  
  [Testování pro nastavené průběžné doručování s Visual Studio 2012 – kapitoly 2: testování částí: testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)  

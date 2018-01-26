@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 34d2008b4316d75d37292b5baa456bf9cdc65e15
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: d2d6d4ebfa8ca86179afb8d88b59dca6b42d9e26
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Práce s průzkumníkem jazyka specifického pro doménu
 **DSL Explorer** několik druhů informace se zobrazí v zobrazení stromu. Další informace o většinu položky v Průzkumníku DSL najdete v tématu [jak definovat jazyka domény](../modeling/how-to-define-a-domain-specific-language.md).  
@@ -43,4 +43,4 @@ ms.lasthandoff: 01/13/2018
 -   **Chování serializace XML**. Serializace nastavení pro model. Další informace o serializaci najdete v tématu [přizpůsobení File Storage a serializace XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Glosář nástroje jazyka domény](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

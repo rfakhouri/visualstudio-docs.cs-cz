@@ -8,17 +8,18 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: coded UI tests, data-driven
+author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload: multiple
-author: gewarren
-ms.openlocfilehash: 50d4a9d6b300a46ac074989e91d9eb4aecf9a496
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 7f88dcf7bf952cf96663e8d42ad9d64e6459cb7d
+ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Vytvoření datově řízeného programového testu UI
+
 K testování různých podmínkách, můžete spustit testy vícekrát s jiným parametrem hodnotami. Datově řízeného programového uživatelského rozhraní jsou testy pohodlný způsob, jak to udělat. Můžete definovat hodnoty parametrů ve zdroji dat a každý řádek ve zdroji dat je iterace programového testu uživatelského rozhraní. Celkový výsledek testu budou založeny na výsledek pro všechny iterace. Například pokud se jeden testovací iterace nezdaří, celkový výsledek testu je selhání.  
   
  **Požadavky**  
@@ -47,17 +48,16 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
      ![Metoda test Genetate](../test/media/cuit_datadriven_cuitbuildergencode.png "CUIT_dataDriven_CUITBuilderGenCode")  
   
      Zavřete Tvůrce testu. Metoda je přidat do testu:  
-  
-    ```csharp  
+
+    ```csharp
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
         // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.  
-        this.UIMap.AddNumbers();  
-  
-    }  
-    ```  
-  
+        this.UIMap.AddNumbers();
+    }
+    ```
+
 5.  Použití `AddNumbers()` metodu k ověření, že test běží. Umístěte kurzor do výše uvedená metoda test, otevřete kontextu nabídku a vyberte **spuštění testů**. (Klávesové zkratky: Ctrl + R, T).  
   
      Výsledek testu, který ukazuje Pokud test předán nebo se nezdařilo se zobrazí v okně Průzkumníka testů. Otevřete okno Průzkumníka testů z **TEST** nabídce zvolte **Windows** a potom zvolte **Průzkumníka testů**.  
@@ -78,7 +78,7 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
   
      Protože `ValidateSum` metoda ověří výsledky `AddNumbers` metoda, přesunout ho k dolnímu okraji bloku kódu.  
   
-    ```csharp  
+    ```csharp
     public void CodedUITestMethod1()  
     {  
   
@@ -86,8 +86,8 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
         this.UIMap.AddNumbers();  
         this.UIMap.ValidateSum();  
   
-    }  
-    ```  
+    }
+    ```
   
 9. Ověřte, že test běží pomocí `ValidateSum()` metoda. Umístěte kurzor do výše uvedená metoda test, otevřete kontextu nabídku a vyberte **spuštění testů**. (Klávesové zkratky: Ctrl + R, T).  
   
@@ -123,7 +123,7 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
   
 1.  Svázat zdroj dat, přidejte `DataSource` atribut do existujícího `[TestMethod]` atribut, který je hned nad metodu test.  
   
-    ```  
+    ```csharp
     [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]  
     public void CodedUITestMethod1()  
     {  
@@ -132,14 +132,13 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
         this.UIMap.AddNumbers();  
         this.UIMap.ValidateSum();  
   
-    }  
-  
-    ```  
-  
+    }
+    ```
+
      Zdroj dat je nyní k dispozici pro použití v této metodě test.  
   
     > [!TIP]
-    >  V tématu [ukázky atribut zdroje dat](#CreateDataDrivenCUIT_QA_DataSourceAttributes) ve funkci QA část ukázky použití jiné typy zdrojů dat, jako je například XML, SQL Express a Excel.  
+    > V tématu [ukázky atribut zdroje dat](#CreateDataDrivenCUIT_QA_DataSourceAttributes) ve funkci QA část ukázky použití jiné typy zdrojů dat, jako je například XML, SQL Express a Excel.  
   
 2.  Spuštění testu.  
   
@@ -151,7 +150,7 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
   
 1.  Přidat `using Microsoft.VisualStudio.TestTools.UITesting.WinControls` na začátek souboru CodedUITest.cs:  
   
-    ```  
+    ```csharp
     using System;  
     using System.Collections.Generic;  
     using System.Text.RegularExpressions;  
@@ -163,11 +162,11 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
     using Microsoft.VisualStudio.TestTools.UITest.Extension;  
     using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;  
     using Microsoft.VisualStudio.TestTools.UITesting.WinControls;  
-    ```  
+    ```
   
 2.  Přidat `TestContext.DataRow[]` v `CodedUITestMethod1()` metodu, která bude ze zdroje dat použít hodnoty. Hodnoty zdroje dat přepsat konstanty přiřadit do zdroje UIMap ovládacích prvků pomocí ovládacích prvků `SearchProperties`:  
   
-    ```  
+    ```csharp
     public void CodedUITestMethod1()  
     {  
   
@@ -177,8 +176,8 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
         this.UIMap.ValidateSumExpectedValues.UIItem2TextDisplayText = TestContext.DataRow["Sum"].ToString();  
         this.UIMap.ValidateSum();  
   
-    }  
-    ```  
+    }
+    ```
   
      Vlastnosti, které hledání do kódu data, a pokuste se zjistit pomocí editoru programových testů uživatelského rozhraní.  
   
@@ -213,7 +212,7 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
   
  **Typy zdrojů dat a atributy**  
   
--   SDÍLENÝ SVAZEK CLUSTERU  
+-   CSV  
   
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\data.csv", "data#csv", DataAccessMethod.Sequential), DeploymentItem("data.csv"), TestMethod]`  
   
@@ -235,26 +234,26 @@ K testování různých podmínkách, můžete spustit testy vícekrát s jiným
   
 ### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>Otázka: je možné použít datové testy na mé aplikace Windows Phone?  
  **Odpověď:** Ano. Řízené daty testy programového uživatelského rozhraní pro Windows Phone jsou definovány pomocí atributu DataRow na testovací metoda. V následujícím příkladu, x a y pomocí hodnoty 1 a 2 pro první iterace a -1 -2 pro druhý iterace testu.  
-  
-```  
+
+```csharp
 [DataRow(1, 2, DisplayName = "Add positive numbers")]  
 [DataRow(-1, -2, DisplayName = "Add negative numbers")]  
 [TestMethod]  
-public void DataDrivingDemo_MyTestMethod(int x, int y)  
-  
-```  
-  
- Další informace najdete v tématu [řízené daty pomocí programových testů uživatelského rozhraní pro aplikace z Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).  
+public void DataDrivingDemo_MyTestMethod(int x, int y)
+```
+
+Další informace najdete v tématu [řízené daty pomocí programových testů uživatelského rozhraní pro aplikace z Windows Phone](../test/test-windows-phone-8-1-apps-with-coded-ui-tests.md#TestingPhoneAppsCodedUI_DataDriven).
   
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Otázka: Proč nelze změnit kód v souboru UIMap.Designer?  
  **Odpověď:** změny kódu provedené v souboru UIMapDesigner.cs budou přepsány pokaždé, když generování kódu pomocí zdroje UIMap - Tvůrce programového testu uživatelského rozhraní. V této ukázce a ve většině případů můžete provést změny kódu potřebnými k povolení testu budou používat zdroj dat k souboru zdrojového kódu testu (CodedUITest1.cs).  
-  
- Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.  
-  
-## <a name="see-also"></a>Viz také  
- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
- [Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Osvědčené postupy pro programové testy uživatelského rozhraní](../test/best-practices-for-coded-ui-tests.md)   
- [Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+
+Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.  
+
+## <a name="see-also"></a>Viz také
+
+<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
+<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
+[Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)   
+[Vytváření programové testy uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)   
+[Osvědčené postupy pro programové testy uživatelského rozhraní](../test/best-practices-for-coded-ui-tests.md)   
+[Podporované konfigurace a platformy pro programové testy uživatelského rozhraní a zaznamenávání akcí](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
