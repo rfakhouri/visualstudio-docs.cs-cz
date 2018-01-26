@@ -18,6 +18,7 @@
 # Návody
 ## [Procházení kódu s ladicím programem](navigating-through-code-with-the-debugger.md)
 ## [Použití zarážek](using-breakpoints.md)
+### [Zarážky pro odstraňování potíží](troubleshooting-breakpoints.md)
 ## [Kontrola dat](debugger-windows.md)
 ### [Kontrola proměnných](autos-and-locals-windows.md)
 ### [Nastavení sledování u proměnných](watch-and-quickwatch-windows.md)

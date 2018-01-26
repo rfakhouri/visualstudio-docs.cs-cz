@@ -366,6 +366,7 @@
 #### [Návrhář XAML, dialogové okno Možnosti](ide/reference/xaml-designer.md)
 ### [Okno Výstup](ide/reference/output-window.md)
 ### [Referenční dokumentace k vlastnostem projektu](ide/reference/project-properties-reference.md)
+#### [Stránka Aplikace, Návrhář projektu (UPW)](ide/reference/application-page-project-designer-uwp.md)
 #### [Stránka Aplikace, Návrhář projektu (Visual Basic)](ide/reference/application-page-project-designer-visual-basic.md)
 ##### [Dialogové okno Informace o sestavení](ide/reference/assembly-information-dialog-box.md)
 #### [Stránka Aplikace, Návrhář projektu (C#)](ide/reference/application-page-project-designer-csharp.md)
