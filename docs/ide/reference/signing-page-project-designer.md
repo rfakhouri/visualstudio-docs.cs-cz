@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,16 +20,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-caps.latest.revision: "34"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7aa75e814ddd4d8b8c093fd37a366410a279d6ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 53fe343002de3f89431927c95f36a0c092b36c2c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="signing-page-project-designer"></a>Stránka Podepisování, návrhář projektu (C#)
 Použití **podpisování** stránky **Návrhář projektu** k podepsání manifestů aplikace a nasazení a také k podepsání sestavení (podpis silného názvu).  
@@ -89,11 +91,11 @@ Použití **podpisování** stránky **Návrhář projektu** k podepsání manif
 > [!NOTE]
 >  Když se přihlásíte sestavení, nemusí mít vždycky přístup k privátním klíčem. Organizace může mít například úzce chráněného pár klíčů, vývojáři nemají přístup k každý den. Veřejný klíč může být k dispozici, ale přístup k privátnímu klíči je omezen na několik z nich. V takovém případě můžete použít *odložené* nebo *částečné podepsání* zajistit veřejný klíč, dokud je předáno sestavení odložit přidání privátní klíč.  
   
-## <a name="see-also"></a>Viz také  
- [Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)   
- [Správa sestavení a podepsání manifestu](../../ide/managing-assembly-and-manifest-signing.md)   
- [Podpis pro spravované aplikace silného názvu](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Postupy: podepsání manifestů aplikace a nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Postupy: podepsání sestavení (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)   
- [Postupy: podepsání sestavení se silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   
- [Sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies)   
+## <a name="see-also"></a>Viz také
+
+[Referenční dokumentace k vlastnostem projektu](../../ide/reference/project-properties-reference.md)  
+[Správa sestavení a podepsání manifestu](../../ide/managing-assembly-and-manifest-signing.md)  
+[Postupy: Podepsání manifestů aplikace a nasazení](../../ide/how-to-sign-application-and-deployment-manifests.md)  
+[Postupy: podepsání sestavení (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)  
+[Postupy: Podepsání sestavení silným názvem](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)  
+[Sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies) 

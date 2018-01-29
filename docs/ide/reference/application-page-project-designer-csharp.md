@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: f13701a8-4e2e-4474-9d60-bb43decbe0c1
-caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: ec48d6a581eb756ee89d9db1a3dfaa78ac1fb3a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7f9b348ad39b26b22e1678e76a1310e2c3f9b863
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
+
 Použití **aplikace** stránky **Návrhář projektu** zadat nastavení aplikace a vlastnosti projektu.  
   
 Pro přístup k **aplikace** vyberte uzel projektu (ne **řešení** uzel) v **Průzkumníku řešení**. Zvolte **projektu**, **vlastnosti** v řádku nabídek. Jakmile se zobrazí v Návrháři projektu, klikněte **aplikace** kartě.  
@@ -98,8 +99,4 @@ Pro přístup k **aplikace** vyberte uzel projektu (ne **řešení** uzel) v **P
 **Zdrojový soubor**  
 Pokud zadáte soubor prostředků pro projekt, vyberte tento přepínač. Výběr této možnosti zakáže **ikonu** a **Manifest** možnosti.  
   
-Zadejte název cesty nebo klikněte na tlačítko Procházet (**...** ) pro přidání zdrojového souboru Win32 do projektu.  
-  
-## <a name="see-also"></a>Viz také  
-[Správa vlastností aplikace](../../ide/application-properties.md)  
-[Psaní kódu v řešeních pro systém Office](/office-dev/office-dev/writing-code-in-office-solutions)
+Zadejte název cesty nebo klikněte na tlačítko Procházet (**...** ) pro přidání zdrojového souboru Win32 do projektu.

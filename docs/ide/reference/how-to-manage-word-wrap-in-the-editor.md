@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,28 +13,28 @@ helpviewer_keywords:
 - editors, text viewing
 - Code Editor, word wrap
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e813e51511b88397f0accc637e85d9e546b48c47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 75a82b2c3e3e251dbd53ae8d2fc67edabb33f830
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Postupy: Správa zalamování řádků v editoru
-Můžete nastavit a vymazat **zalamování** možnost. Pokud je tato možnost nastavená, část dlouhý řádek, který je delší než aktuální šířku okno editoru kódu se zobrazí na další řádek. Pokud tato možnost vybrána, například k usnadnění používání číslování řádků, můžete procházet Chcete-li vidět konců dlouhé řádky.  
-  
- Další informace najdete v tématu [postupy: nastavení možností editoru Obecné](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
-  
+
+Můžete nastavit a vymazat **zalamování** možnost. Pokud je tato možnost nastavená, část dlouhý řádek, který je delší než aktuální šířku okno editoru kódu se zobrazí na další řádek. Pokud tato možnost vybrána, například k usnadnění používání číslování řádků, můžete procházet Chcete-li vidět konců dlouhé řádky.
+
 > [!NOTE]
->  Dialogová okna a příkazy nabídky se zobrazí se mohou lišit od těch popsaných v **pomoci** v závislosti na aktivním nastavení nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
-  
-## <a name="procedure"></a>Postup  
-  
-#### <a name="to-set-word-wrap-preferences"></a>Nastavit předvolby wrap slovo  
+> Dialogová okna a příkazy nabídky se zobrazí se mohou lišit od těch popsaných v **pomoci** v závislosti na aktivním nastavení nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).
+
+## <a name="procedure"></a>Postup
+
+### <a name="to-set-word-wrap-preferences"></a>Nastavit předvolby wrap slovo
   
 1.  Na **nástroje** nabídce vyberte možnost **možnosti**.  
   
@@ -52,7 +53,8 @@ Můžete nastavit a vymazat **zalamování** možnost. Pokud je tato možnost na
     > [!NOTE]
     >  Tyto šipky připomenutí nejsou přidány do vašeho kódu: jsou pouze pro účely zobrazení.  
   
-## <a name="see-also"></a>Viz také  
- [Přizpůsobení editoru](../../ide/customizing-the-editor.md)   
- [Dialogové okno možností textového editoru pole](../../ide/reference/text-editor-options-dialog-box.md)   
- [Psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md)
+## <a name="see-also"></a>Viz také
+
+[Vlastní nastavení editoru](../../ide/customizing-the-editor.md)  
+[Textový editor, dialogové okno Možnosti](../../ide/reference/text-editor-options-dialog-box.md)  
+[Psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md)

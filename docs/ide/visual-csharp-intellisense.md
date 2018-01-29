@@ -1,5 +1,5 @@
 ---
-title: Visual C# IntelliSense | Microsoft Docs
+title: IntelliSense C# | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -8,25 +8,26 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C#, IntelliSense
+- C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-intellisense"></a>Visual C# IntelliSense
+# <a name="c-intellisense"></a>C# IntelliSense
 
-Visual C# IntelliSense je k dispozici, pokud v editoru a při ladění v kódování [přímý režim](../ide/reference/immediate-window.md) příkazové okno.
+C# IntelliSense je k dispozici, pokud kódování v editoru a při ladění v [přímý režim](../ide/reference/immediate-window.md) příkazové okno.
 
 ## <a name="completion-lists"></a>Seznamy dokončení
 
-Seznamy dokončení IntelliSense v jazyce Visual C# obsahovat tokeny od seznamu členů, dokončení Word a další. Poskytuje rychlý přístup k:
+Seznamy dokončení IntelliSense v jazyce C# obsahovat tokeny od seznamu členů, dokončení Word a další. Poskytuje rychlý přístup k:
 
 - Členy typu nebo obor názvů
 
@@ -42,15 +43,15 @@ Seznamu dokončení v jazyce C# je také důležité tokeny pomocí filtrů a p�
 
 ## <a name="code-snippets-in-completion-lists"></a>Fragmenty kódu v seznamy dokončení
 
-V jazyce Visual C# seznamu dokončení zahrnuje fragmenty kódu můžete snadno vložit předdefinované těla kódu do vaší aplikace. Fragmenty kódu jsou uvedeny v seznamu dokončení jako uvedeném fragmentu [zástupce text](../ide/code-snippets-schema-reference.md#shortcut). Další informace o fragmentech kódu, které jsou k dispozici v jazyce Visual C# ve výchozím nastavení najdete v tématu [fragmenty kódu Visual C#](../ide/visual-csharp-code-snippets.md).
+Seznam dokončení v jazyce C#, zahrnuje fragmenty kódu můžete snadno vložit předdefinované těla kódu do vaší aplikace. Fragmenty kódu jsou uvedeny v seznamu dokončení jako uvedeném fragmentu [zástupce text](../ide/code-snippets-schema-reference.md#shortcut). Další informace o fragmentech kódu, které jsou k dispozici v jazyce C# ve výchozím nastavení najdete v tématu [fragmenty kódu v C#](../ide/visual-csharp-code-snippets.md).
 
 ## <a name="language-keywords-in-completion-lists"></a>Klíčová slova jazyka v seznamy dokončení
 
-V jazyce Visual C# seznamu dokončení také obsahuje klíčová slova jazyka. Další informace o klíčová slova jazyka C#, najdete v části [klíčová slova jazyka C#](/dotnet/csharp/language-reference/keywords/index).
+Seznam dokončení v jazyce C#, také zahrnuje klíčová slova jazyka. Další informace o klíčová slova jazyka C#, najdete v části [klíčová slova jazyka C#](/dotnet/csharp/language-reference/keywords/index).
 
 ## <a name="extension-methods-in-completion-lists"></a>Rozšiřující metody v seznamy dokončení
 
-V jazyce Visual C# dokončení seznam obsahuje rozšiřující metody, které jsou v oboru.
+Seznam dokončení v jazyce C#, obsahuje rozšiřující metody, které jsou v oboru.
 
 > [!NOTE]
 > Seznam dokončení nejsou zobrazeny všechny rozšiřující metody pro <xref:System.String> objekty.
@@ -59,9 +60,9 @@ Metody rozšíření použití různých ikony než instance metody. Výpis sezn
 
 ## <a name="filtered-completion-lists"></a>Filtrované seznamy dokončení
 
-IntelliSense odebere nepotřebné členy ze seznamu dokončení pomocí filtrů. Visual C# filtry seznamy dokončení, které se zobrazují pro tyto položky:
+IntelliSense odebere nepotřebné členy ze seznamu dokončení pomocí filtrů. C# filtry seznamy dokončení, které se zobrazují pro tyto položky:
 
-- **Základní třídy a rozhraní**: IntelliSense automaticky odebere položky z rozhraní a základní třída dokončení seznamů, v deklaraci třídy základní a rozhraní seznamy a seznamy omezení. Například výčty se nezobrazí v seznamu dokončení pro základní třídy, protože výčty nelze použít pro základní třídy. Seznam dokončení základní třídy obsahuje pouze rozhraní a obory názvů. Pokud jste v seznamu vyberte položku a potom zadejte do čárkami, IntelliSense odebere ze seznamu dokončení základní třídy, protože Visual C# nepodporuje vícenásobná dědičnost. Stejné chování dochází v klauzulích omezení taky.
+- **Základní třídy a rozhraní**: IntelliSense automaticky odebere položky z rozhraní a základní třída dokončení seznamů, v deklaraci třídy základní a rozhraní seznamy a seznamy omezení. Například výčty se nezobrazí v seznamu dokončení pro základní třídy, protože výčty nelze použít pro základní třídy. Seznam dokončení základní třídy obsahuje pouze rozhraní a obory názvů. Pokud jste v seznamu vyberte položku a potom zadejte do čárkami, IntelliSense odebere ze seznamu dokončení základní třídy, protože C# nepodporuje vícenásobná dědičnost. Stejné chování dochází v klauzulích omezení taky.
 
 - **Atributy**: Pokud použijete typ atributu, je seznamu dokončení filtrované tak, že seznam obsahuje pouze ty typy, které sestup z obory názvů, které obsahují tyto typy, jako <xref:System.Attribute>.
 
@@ -133,7 +134,7 @@ Možnosti, které se zobrazují patří:
 
 - **Generované pole**
 
-- **Generate – metoda**
+- **Generování metody**
 
 - **Generovat – třída**
 
@@ -145,11 +146,11 @@ V editoru kódu technologie IntelliSense můžete spojit metody (obslužné ruti
 
 Pokud zadáte `+=` operátor po na pole událostí v souboru .cs IntelliSense zobrazí výzvu s možností stiskněte **kartě** klíč. Vloží novou instanci třídy delegáta, který odkazuje na metodu zpracování události.
 
-![Tlačítko automaticky háku až](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Button Auto Hook Up](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
 Pokud vyberete **kartě**, IntelliSense automaticky dokončení příkazu a odkazu na obslužnou rutinu události se zobrazí jako vybraný text v editoru kódu. K dokončení automatického událostí spojení, IntelliSense vyzváni ke stisknutí tlačítka **kartě** klíč znovu a vytvořit prázdný se zakázaným inzerováním obslužné rutiny událostí.
 
-![Generovat obslužné rutiny události](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Generate Event Handler](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
 
 > [!NOTE]
 > Pokud nové delegáta, který je vytvořen pomocí IntelliSense odkazuje stávající obslužné rutiny události, IntelliSense komunikuje tyto informace v popisu tlačítka. Poté můžete upravit tento odkaz; text je již vybrána v editoru kódu. Jinak automatické událostí spojení je dokončena v tomto okamžiku.

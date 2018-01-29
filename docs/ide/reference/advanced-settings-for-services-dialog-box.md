@@ -4,22 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesAdvancedServices
-helpviewer_keywords: Advanced Settings for Services dialog box
+f1_keywords:
+- vb.ProjectPropertiesAdvancedServices
+helpviewer_keywords:
+- Advanced Settings for Services dialog box
 ms.assetid: 6dde4a2d-85e1-4275-aa55-24b84111be91
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77f2f55d142f87e43f2bd3848c8dcd0b352c197e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 264f90329bfbf969f50dbc38073bdda26987fd26
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>Dialogové okno Pokročilé nastavení služeb
 Klient aplikačních služeb poskytují zjednodušenou přístup k [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] přihlášení, rolí a profilu služby z aplikací Windows Forms a Windows Presentation Foundation (WPF). Můžete použít **služby** stránku **Návrhář projektu** konfigurace klientských aplikačních služeb. Další informace o **služby** stránky najdete v tématu [stránka služby, Návrhář projektu](../../ide/reference/services-page-project-designer.md).  
@@ -28,14 +32,14 @@ Klient aplikačních služeb poskytují zjednodušenou přístup k [!INCLUDE[aja
   
  Pro přístup k **pokročilé nastavení služeb** dialogové okno, vyberte uzel projektu v **Průzkumníku řešení**a potom klikněte na **vlastnosti** na **projektu**  nabídky. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **služby** a pak klikněte **Upřesnit** tlačítko. Toto tlačítko bude zakázána, dokud nepovolíte klientské aplikační služby.  
   
-## <a name="task-list"></a>Seznam úloh  
- [Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)  
-  
- [Postupy: práce Offline u klientských aplikačních služeb](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)  
-  
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
+## <a name="task-list"></a>Seznam úloh
+
+- [Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+
+## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+
  **Uložit hodnoty hash hesla místně pro povolení offline přihlášení**  
- Určuje, zda šifrovaném formátu hesla uživatele bude do mezipaměti místně umožnit uživatelům přihlášení, když je aplikace v režimu offline. Další informace najdete v tématu [postup: Offline pracovní u klientských aplikačních služeb](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38). Tato možnost je vybrána ve výchozím nastavení.  
+ Určuje, zda šifrovaném formátu hesla uživatele bude do mezipaměti místně umožnit uživatelům přihlášení, když je aplikace v režimu offline. Tato možnost je vybrána ve výchozím nastavení.
   
  **Vyžadovat, aby se znovu přihlaste vždy, když vyprší platnost souboru cookie serveru uživatelé**  
  Určuje, zda dříve ověření uživatelé jsou automaticky k novému ověření když vaše aplikace používá role nebo profilu služby a vypršela platnost souboru cookie pro ověřování serveru. Vyberte tuto možnost, chcete odepřít přístup k aplikační služby a vyžadují explicitní opětovné ověření po vypršení platnosti souboru cookie. To je užitečné pro aplikace nasazené na veřejných místech, abyste měli jistotu, že uživatelé, kteří nechte aplikace spuštěna po použití zůstat ověří po neomezenou dobu. Tato možnost není ve výchozím nastavení zaškrtnuté.  
@@ -48,8 +52,8 @@ Klient aplikačních služeb poskytují zjednodušenou přístup k [!INCLUDE[aja
  **Použít vlastní připojovací řetězec**  
  Určuje, zda poskytovatelé služeb klienta použije vlastní úložiště dat pro místní mezipaměti. Ve výchozím nastavení použije poskytovatelé služeb místního systému souborů pro ukládání do mezipaměti. Výběrem této možnosti bude automaticky vyplnit textové pole s výchozí připojovací řetězec. Můžete ponechat výchozí připojovací řetězec k automatickému generování a použít databázi SQL Server Compact Edition, nebo můžete zadat připojovací řetězec k existující databázi systému SQL Server. Další informace najdete v tématu [postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services). Tato možnost není ve výchozím nastavení zaškrtnuté.  
   
-## <a name="see-also"></a>Viz také  
- [Klient aplikačních služeb](/dotnet/framework/common-client-technologies/client-application-services)   
- [Stránka služby, Návrhář projektu](../../ide/reference/services-page-project-designer.md)   
- [Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)   
- [Postupy: práce Offline u klientských aplikačních služeb](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38)
+## <a name="see-also"></a>Viz také
+
+[Klientské aplikační služby](/dotnet/framework/common-client-technologies/client-application-services)  
+[Stránka Služby, Návrhář projektu](../../ide/reference/services-page-project-designer.md)  
+[Postupy: Konfigurace klientských aplikačních služeb](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)

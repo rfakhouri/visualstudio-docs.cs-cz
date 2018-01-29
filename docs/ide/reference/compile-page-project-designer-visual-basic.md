@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesCompile
+f1_keywords:
+- vb.ProjectPropertiesCompile
 helpviewer_keywords:
 - compilation, Visual Basic projects
 - compilation, options [Visual Basic]
@@ -17,16 +19,17 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-caps.latest.revision: "60"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3cd68fa71bf201c7a2ac05fd7881b216cbca0938
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 32a883c1a04dc6ab5189cd5b2e5173406c098f6d
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Stránka Kompilovat, návrhář projektu (Visual Basic)
 Použití **zkompilovat** stránky v Návrháři projektu k určení kompilace pokyny. Na této stránce můžete také zadat kompilátoru pokročilé možnosti a před sestavením nebo po sestavení událostí.  
@@ -39,21 +42,21 @@ Pro přístup k **zkompilovat** vyberte uzel projektu (ne **řešení** uzel) v 
  Následující nastavení umožňuje vybrat konfigurace a platformy můžete zobrazit nebo upravit.  
   
 > [!NOTE]
->  S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. Proto **konfigurace** a **platformy** seznamy nejsou zobrazeny. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+> S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. Proto **konfigurace** a **platformy** seznamy nejsou zobrazeny.
   
  **Konfigurace**  
- Určuje nastavení konfigurace, které chcete zobrazit nebo změnit. Nastavení jsou **ladění** (výchozí), **verze**, nebo **všechny konfigurace**. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e) a [postupy: vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).  
+ Určuje nastavení konfigurace, které chcete zobrazit nebo změnit. Nastavení jsou **ladění** (výchozí), **verze**, nebo **všechny konfigurace**. Další informace najdete v tématu [Principy konfigurací sestavení](../../ide/understanding-build-configurations.md) a [postupy: vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md).
   
  **Platforma**  
- Určuje nastavení platformy, které chcete zobrazit nebo změnit. Můžete zadat **libovolný procesor** (výchozí), **x64**, nebo **x86**. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje nastavení platformy, které chcete zobrazit nebo změnit. Můžete zadat **libovolný procesor** (výchozí), **x64**, nebo **x86**.
   
 ## <a name="compiler-configuration-options"></a>Možnosti konfigurace kompilátoru  
  Tato nastavení umožňují nastavit kompilátor možnosti konfigurace.  
   
  **Vytvoření výstupní cesta**  
- Určuje umístění výstupních souborů pro tento projekt konfiguraci. Zadejte cestu k výstupu sestavení v tomto poli, nebo klikněte **Procházet** tlačítko vyberte cestu. Všimněte si, že cesta je relativní; Pokud chcete zadat absolutní cestu, bude uložen jako relativní. Výchozí cesta je bin\Debug\ nebo bin\Release\\. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje umístění výstupních souborů pro tento projekt konfiguraci. Zadejte cestu k výstupu sestavení v tomto poli, nebo klikněte **Procházet** tlačítko vyberte cestu. Všimněte si, že cesta je relativní; Pokud chcete zadat absolutní cestu, bude uložen jako relativní. Výchozí cesta je bin\Debug\ nebo bin\Release\\.
   
- S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. **Sestavení** příkaz **ladění** nabídky (F5) bude umístěte sestavení do umístění ladění, bez ohledu na to **výstupní cesta** zadáte. Ale **sestavení** příkaz **sestavení** nabídky vloží ho do umístění, které zadáte. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. **Sestavení** příkaz **ladění** nabídky (F5) bude umístěte sestavení do umístění ladění, bez ohledu na to **výstupní cesta** zadáte. Ale **sestavení** příkaz **sestavení** nabídky vloží ho do umístění, které zadáte.
   
  **Možnost explicitní**  
  Určuje, jestli se má povolit implicitní deklarace proměnných. Vyberte **na** tak, aby vyžadovala explicitní deklarace proměnné. To způsobí, že kompilátoru zprávy o chybách Pokud proměnné nejsou deklarovat, než se používají. Vyberte **vypnout** umožňuje implicitní deklarace proměnných.  
@@ -167,10 +170,9 @@ Kliknutím na toto tlačítko přístup **události sestavení** dialogové okno
   
 **Možnosti rozšířené kompilace**  
 Kliknutím na toto tlačítko přístup **AdvancedCompiler nastavení** dialogové okno. Použití **AdvancedCompiler nastavení** dialogové okno zadat projektu rozšířenou vlastností konfigurace sestavení. Toto dialogové okno se vztahují na projekty Visual Basic jenom. Další informace najdete v tématu [Advanced kompilátoru dialogové okno nastavení (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
-  
-## <a name="see-also"></a>Viz také  
- [Konfigurace ladění a verzí projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [Správa vlastností kompilace](http://msdn.microsoft.com/en-us/94308881-f10f-4caf-a729-f1028e596a2c)   
- [Postupy: určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Visual Basic – kompilátor příkazového řádku](/dotnet/visual-basic/reference/command-line-compiler/index)   
- [Postupy: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md)
+
+## <a name="see-also"></a>Viz také
+
+[Postupy: Určení událostí sestavení (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)  
+[Visual Basic Command-Line Compiler](/dotnet/visual-basic/reference/command-line-compiler/index)  
+[Postupy: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md)

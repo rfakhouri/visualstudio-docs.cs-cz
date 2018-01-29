@@ -4,22 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
+f1_keywords:
+- Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="publish-page-project-designer"></a>Publikovat stránku, návrhář projektu
 **Publikovat** stránky **Návrhář projektu** slouží ke konfiguraci vlastností pro ClickOnce – nasazení.  
@@ -44,16 +47,16 @@ ms.lasthandoff: 12/22/2017
  Pro WPF aplikace webového prohlížeče **aplikace je k dispozici také offline** možnost je zakázána, protože takové aplikace jsou k dispozici pouze online.  
   
  **Soubory aplikace**  
- Otevře [aplikace soubory](http://msdn.microsoft.com/en-us/b06dff3a-b87a-4caf-996b-7a4acf8137a8), který slouží k určení, jak a kde jsou nainstalovány jednotlivé soubory.  
+ Otevře dialogové okno souborů aplikace, které slouží k určení, jak a kde jsou nainstalovány jednotlivé soubory.  
   
  **Požadavky**  
- Otevře se [dialogové okno požadavky](../../ide/reference/prerequisites-dialog-box.md), který slouží k určení požadovaných součástí, jako je rozhraní .NET Framework, společně s aplikace nainstalována.  
+ Otevře dialogové okno požadavky, které slouží k určení požadovaných součástí, jako je rozhraní .NET Framework, společně s aplikace nainstalována.  
   
- **Aktualizace**  
- Otevře [dialogové okno aktualizace aplikace](http://msdn.microsoft.com/en-us/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), který slouží k určení chování aktualizací pro danou aplikaci. Nejsou k dispozici při **aplikace je k dispozici pouze online** je vybrána.  
+ **Updates**  
+ Otevře dialogové okno aktualizace aplikace, které slouží k určení chování aktualizací pro danou aplikaci. Nejsou k dispozici při **aplikace je k dispozici pouze online** je vybrána.  
   
  **Možnosti**  
- Otevře se [dialogové okno publikování možnosti](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), který slouží k určení dalších rozšířené možnosti publikování.  
+ Otevře dialogové okno Možnosti publikování, který slouží k určení dalších upřesňujících možností publikování.  
   
  **Verze publikování**  
  Nastaví číslo verze publikování pro aplikaci. Při změně číslo verze aplikace publikována jako aktualizace. Jednotlivých součástí verzi publikování (**hlavní**, **menší**, **sestavení**, **revize**) může mít maximální hodnota je 65355 (<xref:System.UInt16.MaxValue>), maximální povolenou <xref:System.Version>.  
@@ -64,7 +67,7 @@ ms.lasthandoff: 12/22/2017
  Volitelné. Pokud je vybraná tato možnost (výchozí), **revize** součástí číslo verze publikování se zvýší o jeden pokaždé, když je aplikace publikována. To způsobí, že aplikace má být publikován jako aktualizace.  
   
  **Průvodce publikováním**  
- Otevře se [Průvodce publikováním](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872). Probíhá dokončování Průvodce Publikovat má stejný účinek jako spuštěná **publikovat** příkaz na **sestavení** nabídky.  
+ Otevře Průvodce publikováním. Probíhá dokončování Průvodce Publikovat má stejný účinek jako spuštěná **publikovat** příkaz na **sestavení** nabídky.  
   
  **Nyní publikování**  
  Publikuje aplikace pomocí aktuální nastavení. Ekvivalentní **Dokončit** v tlačítko **PublishWizard**.  

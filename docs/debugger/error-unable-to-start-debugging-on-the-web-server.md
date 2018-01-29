@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -26,16 +27,17 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a7d09deda1aa2b24fba90f9d9d417917c5b284ad
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Chyba: Nepodařilo se zahájit ladění na webovém serveru.
 
@@ -84,8 +86,10 @@ Této chybě dochází často, protože k chybě nebo konfigurace došlo ke změ
 
 ## <a name="server_error"></a>Vzdálený server vrátil chybu
 
-Zkontrolujte kód chyby, který se vrátí ve zprávě pomoci určit příčinu problému. Zde naleznete několik běžné kódy chyb.
-- (403) zakázán. Ověřte, že se připojujete k správný typ serveru a adresu URL (v **vlastnosti > Web > servery** nebo **vlastnosti > ladění**, v závislosti na typu vašeho projektu). Také ověřte, že soubor web.config serveru obsahuje `debug=true` v elementu kompilace. Pokud toto nastavení je již správné, ověřte, zda složce webové aplikace má správná oprávnění. Další informace najdete v tématu [Zkontrolujte konfiguraci služby IIS](#vxtbshttpservererrorsthingstocheck).
+Zkontrolujte vaše [souboru protokolu služby IIS](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) dílčí kódy chyb a další informace a tuto službu IIS 7 [příspěvku na blogu](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
+
+Kromě toho se tady jsou některé běžné kódy chyb a několik návrhů.
+- (403) zakázán. Existuje mnoho možných příčin této chyby, proto zkontrolujte nastavení zabezpečení služby IIS pro webový server a souboru protokolu. Zajistěte, aby web.config serveru zahrnuje `debug=true` v elementu kompilace. Ujistěte se, zda vaše webové aplikace složka má správná oprávnění a konfiguraci fondu aplikací správnost (heslo může mít změnit). V tématu [Zkontrolujte konfiguraci služby IIS](#vxtbshttpservererrorsthingstocheck). Pokud tato nastavení jsou správné a jsou místně ladění, taky ověřit, že se připojujete k správný typ serveru a adresu URL (v **vlastnosti > Web > servery** nebo **vlastnosti > ladění**, v závislosti na typu vašeho projektu).
 - (503) server není k dispozici. Fond aplikací může mít zastavená kvůli změně chyby nebo konfigurace. Restartujte fond aplikací.
 - (404) nebyl nalezen. Ujistěte se, že fond aplikací je nakonfigurován pro správnou verzi technologie ASP.NET.
 
@@ -125,7 +129,7 @@ Po převzetí kroky popsané v tomto poli se problém vyřešit a před dalším
     
 * Zkontrolujte, že složce webové aplikace má správná oprávnění.
 
-    Ujistěte se, že poskytnout IIS_IUSRS, IUSR nebo konkrétní uživatele přidruženého k fondu aplikací pro čtení a oprávnění pro složku webové aplikace pro spouštění. Vyřešte problém a restartujte fond aplikací.
+    Zkontrolujte poskytnout IIS_IUSRS IUSR, nebo v přidružené konkrétního uživatele [fond aplikací](/iis/manage/configuring-security/application-pool-identities) číst a spouštět oprávnění pro složku webové aplikace. Vyřešte problém a restartujte fond aplikací.
 
 * Ujistěte se, že je nainstalována správná verze technologie ASP.NET ve službě IIS.
 

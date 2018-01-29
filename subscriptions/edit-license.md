@@ -1,5 +1,5 @@
 ---
-title: "Upravit předplatná v portálu správce | Visual Studio Marketplace"
+title: "Upravit předplatná v portálu správce | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,11 +9,11 @@ Description: Learn how administrators can edit subscription assignments.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c561e7a56f2e70cae1addd32902f68a582b49a02
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Úpravy přiřazení předplatné sady Visual Studio
 
@@ -29,13 +29,15 @@ Můžete aktualizovat odběrateli křestní jméno, příjmení, země, jazyk a 
 
    ![Upravit podrobnosti odběratele](_img\edit-license\edit-subscriber.png)
 
-Poznámka: Pokud potřebujete změnit úroveň odběr pro odběratele, musíte odstranit uživatele z portálu a znovu přidejte. Předplatné úrovně se nedají upravovat.
+> [!NOTE]
+> Pokud potřebujete změnit úroveň odběr pro odběratele, musíte odstranit uživatele z portálu a znovu přidejte. Předplatné úrovně se nedají upravovat.
 
 ## <a name="editing-multiple-subscribers-by-using-bulk-edit"></a>Úprava více odběrateli pomocí hromadné úpravy
 
 Můžete upravit více odběrateli najednou procesem hromadné úpravy. Tato funkce slouží především pro organizace, které jsou průchodu přes firemní e-mailová adresa změny nebo pokud se organizace rozhodla pro omezení přístupu ke stahování. 
 
-**Důležité:** předplatné úrovně (tj. Enterprise, Professional atd.) a nelze je měnit předplatné identifikátory GUID.  Když zkusíte nahrávaný s následujícími položkami změnit, nahrávání se nezdaří.  
+> [!IMPORTANT]
+> Předplatné úrovně (tj. Enterprise, Professional atd.) a nelze je měnit předplatné identifikátory GUID.  Když zkusíte nahrávaný s následujícími položkami změnit, nahrávání se nezdaří.  
 
 1.  Chcete-li upravit více odběrateli najednou, přejděte na kartu odběratele. Na pásu karet v horní části, klikněte na tlačítko **hromadně upravovat**. 
 

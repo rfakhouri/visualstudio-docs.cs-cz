@@ -1,30 +1,32 @@
 ---
-title: "Fragmenty kódu jazyka Visual C# | Microsoft Docs"
+title: "Fragmenty kódu v C# | Microsoft Docs"
 ms.custom: 
 ms.date: 06/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - snippets [C#], default snippets
 - snippets [C#], Code Snippet Inserter
 - Code Snippet Inserter [C#]
-- Visual C#, default snippets
+- C#, default snippets
 ms.assetid: dbea3dd6-e650-4190-b874-c9f097d7de6e
-caps.latest.revision: "33"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 4ab98d4a4f589959982bdcb584189b30923ddbc9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 04b75cb77a41d69edfae565660d7dbabe6c10ee9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-c-code-snippets"></a>Fragmenty kódu v jazyce Visual C#
+# <a name="c-code-snippets"></a>Fragmenty kódu v C#
 Fragmenty kódu jsou předem vytvořené fragmenty kódu, které lze rychle vložit do vašeho kódu. Například `for` fragment kódu vytvoří prázdnou `for` smyčky. Některé fragmenty kódu jsou obklopit fragmenty kódu, které vám umožní vybrat řádky kódu a potom vyberte fragment kódu, který zahrnuje vybrané řádky kódu. Například když vyberete řádků kódu a poté znovu aktivovat `for` fragment kódu, vytvoří `for` smyčky pomocí tyto řádky kódu uvnitř bloku smyčky. Fragmenty kódu můžete nastavit program psaní kódu rychlejší, jednodušší a spolehlivější.  
 
  Můžete vložit fragment kódu v umístění kurzoru nebo vložit fragmentu kódu obklopit kolem aktuálně vybraný úsek kódu. Vkládací modul fragmentu kódu je vyvolána prostřednictvím **Vložit fragment kódu** nebo **příkazu Obklopit s** příkazy **IntelliSense** nabídky, nebo pomocí klávesové zkratky CTRL + K a pak X nebo CTRL + K a poté S v uvedeném pořadí.  
@@ -43,7 +45,7 @@ Fragmenty kódu jsou předem vytvořené fragmenty kódu, které lze rychle vlo�
 |checked|Vytvoří [zaškrtnutí](/dotnet/csharp/language-reference/keywords/checked) bloku.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|  
 |třída|Vytvoří deklaraci třídy.|V oboru názvů (včetně globálního oboru názvů), třídu nebo struktury.|  
 |konstruktoru|Vytvoří konstruktor pro obsahující třídu.|Uvnitř třídy.|  
-|SH|Vytvoří volání <xref:System.Console.WriteLine%2A>.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|  
+|cw|Vytvoří volání <xref:System.Console.WriteLine%2A>.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|  
 |do|Vytvoří [provést](/dotnet/csharp/language-reference/keywords/do) `while` smyčky.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|  
 |else|Vytvoří [else](/dotnet/csharp/language-reference/keywords/if-else) bloku.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|  
 |enum|Vytvoří [výčtu](/dotnet/csharp/language-reference/keywords/enum) deklarace.|V oboru názvů (včetně globálního oboru názvů), třídu nebo struktury.|  

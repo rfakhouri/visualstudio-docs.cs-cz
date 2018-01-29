@@ -9,11 +9,11 @@ Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 8059d316912e78bcbcaa9d4f54f86b4e2c2b907f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="managing-subscriptions"></a>Správa předplatných
 ## <a name="signing-in-to-the-portal"></a>Přihlášení k portálu
@@ -31,7 +31,7 @@ Pokud jste zakoupili předplatné sady Visual Studio prostřednictvím Microsoft
 #### <a name="workschool-accounts"></a>Pracovní nebo školní účty
 Pokud vaše předplatné byl poskytnut pracovní nebo školní, jste přijali Uvítacího e-mailu.  
 1.  Přejděte [portál odběratele](https://my.visualstudio.com/)
-2.  Zadejte e-mailovou adresu, kterému byla přiřazena nové předplatné sady Visual Studio. Tato adresa je identifikována také v odběrateli **úvodní písmeno**. Zkontrolujte složky Nevyžádaná pošta, pokud nebyla přijata úvodní písmeno.
+2.  Zadejte e-mailovou adresu, kterému byla přiřazena nové předplatné sady Visual Studio. Tato adresa je rovněž definovaný v uvítací e-mail odběratele. Zkontrolujte složky Nevyžádaná pošta, pokud nebyla přijata Uvítacího e-mailu.
 3.  Klikněte na tlačítko **pokračovat**
 4.  Budete přesměrováni na podnikové přihlašovací stránku.
 5.  Zadejte svoje heslo.

@@ -4,20 +4,24 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
-helpviewer_keywords: Prerequisites dialog box
+f1_keywords:
+- Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
+helpviewer_keywords:
+- Prerequisites dialog box
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2e88e3999bdca7b926042685ca7bd2d561c12d5d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Dialogové okno Požadavky
 
@@ -42,7 +46,7 @@ Požadované součásti, které se zobrazují v **požadavky** dialogové okno m
 
 |Prvek|Popis|
 |-------------|-----------------|
-|**Rozhraní .NET framework 3.5 SP1**|Tento balíček nainstaluje následující:<br /><br /> -Rozhraní .NET framework verze 2.0, 3.0 a 3.5.<br />-Podpora pro všechny verze rozhraní .NET Framework na 32bitové (x86) a (x64) 64bitové operační systémy.<br />-Jazykové sady pro každou verzi rozhraní .NET Framework, která se instaluje se balíček.<br />-Služba sady pro rozhraní .NET Framework 2.0 a 3.0.<br /><br /> Rozhraní .NET framework 3.0 je součástí systému Windows Vista a rozhraní .NET Framework 3.5 je součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Rozhraní .NET framework 3.5 je vyžadována pro všechny jazyka Visual Basic a Visual C# zkompilovaných projektů pro 32bitové operační systémy a pro který cílovém Frameworku, který je nastaven na **rozhraní .NET Framework 3.5**a pro projekty Visual Basic a Visual C# zkompilovat pro 64bitové operační systémy. (IA64 není podporována.) Všimněte si, že jsou projekty Visual Basic a Visual C# zkompilovaném pro všechny architektura procesoru ve výchozím nastavení. Další informace najdete v tématu [přehled cílení na více Visual Studio](../../ide/visual-studio-multi-targeting-overview.md), [Redistribuce rozhraní .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287), a [nasazení požadovaných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Ve výchozím nastavení je vybraná tato položka.|
+|**Rozhraní .NET framework 3.5 SP1**|Tento balíček nainstaluje následující:<br /><br /> -Rozhraní .NET framework verze 2.0, 3.0 a 3.5.<br />-Podpora pro všechny verze rozhraní .NET Framework na 32bitové (x86) a (x64) 64bitové operační systémy.<br />-Jazykové sady pro každou verzi rozhraní .NET Framework, která se instaluje se balíček.<br />-Služba sady pro rozhraní .NET Framework 2.0 a 3.0.<br /><br /> Rozhraní .NET framework 3.0 je součástí systému Windows Vista a rozhraní .NET Framework 3.5 je součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Rozhraní .NET framework 3.5 je vyžadována pro všechny projekty Visual Basic a C#, kompilovaná pro 32bitové operační systémy a pro který cílovém Frameworku, který je nastaven na **rozhraní .NET Framework 3.5**a pro projekty Visual Basic a C# zkompilovat pro 64bitové prostředí operační systémy. (IA64 není podporována.) Všimněte si, že jsou projekty Visual Basic a C# zkompilovaném pro všechny architektura procesoru ve výchozím nastavení. Další informace najdete v tématu [přehled cílení na více Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) a [nasazení požadovaných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Ve výchozím nastavení je vybraná tato položka.|
 |**Rozhraní Microsoft .NET Framework 4.x**|Tento balíček nainstaluje rozhraní .NET Framework 4.x pro x86 a x64 platformy.|
 |**Microsoft System CLR Types pro SQL Server 2014 (x64 a x86)**|Tento balíček nainstaluje Microsoft System CLR Types pro SQL Server 2014 pro x64 nebo x86.|
 |**SQL Server 2008 R2 Express**|Tento balíček nainstaluje Microsoft SQL Server 2008 R2 Express, bezplatná edice systému Microsoft SQL Server 2008 R2, databázi ideální pro malé webové, server nebo aplikací klasické pracovní plochy. Může sloužit zdarma pro vývoj a produkci. Bezplatný [registrace](http://go.microsoft.com/fwlink/?LinkId=130380) je vyžadována pro distribuci SQL Server 2008 R2 Express s aplikací.|
@@ -56,6 +60,5 @@ Požadované součásti, které se zobrazují v **požadavky** dialogové okno m
 
 [Stránka Publikovat, Návrhář projektu](../../ide/reference/publish-page-project-designer.md)  
 [Nezbytné součásti nasazení aplikace](../../deployment/application-deployment-prerequisites.md)  
-[Redistribuce rozhraní .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)  
 [Nasazení nezbytných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
 [Přehled cílení na více verzí sady Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)

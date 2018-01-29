@@ -15,17 +15,19 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-general
+ms.workload:
+- multiple
+ms.openlocfilehash: 3dd53222baf58b0c609967bc86e3051c428073e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Přidání podpory editoru Visual Studio pro jiné jazyky
 Další informace o tom, jak editoru Visual Studio podporuje čtení a procházení jazyky jiný počítač a jak můžete přidat podporu editoru Visual Studio pro jiné jazyky.  
@@ -40,11 +42,11 @@ Další informace o tom, jak editoru Visual Studio podporuje čtení a procháze
 |||||||  
 |-|-|-|-|-|-|  
 |A. bat|F#|Java|Markdownu|Rzivosti|Visual Basic|  
-|Clojure|Přejděte|JavaDoc|Jazyka Objective-C|ShaderLab|Visual C#|  
+|Clojure|Přejděte|JavaDoc|Objective-C|ShaderLab|C#|  
 |CMake|Groovy|FORMÁT JSON|Perl|ShellScript|Visual C++|  
 |CoffeeScript|HTML|MENŠÍ|Python|SQL|VBNet|  
 |CSS|INI|LUA|R|Kód SWIFT|XML|  
-|Docker|Jade|Ujistěte se|Ruby|TypeScript|YAML|  
+|Docker|Jade|Make|Ruby|TypeScript|YAML|  
   
  Kromě zabarvení syntaxe a dokončování basic, Visual Studio má taky funkci [přejít na](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Tato funkce umožňuje rychle vyhledat soubory kódu, cesty k souborům a kód symboly. Visual Studio poskytuje přejít na podporu pro následující jazyky.  
   
@@ -62,7 +64,7 @@ Další informace o tom, jak editoru Visual Studio podporuje čtení a procháze
   
 -   Visual C++  
   
--   Visual C#  
+-   C#  
   
  Všechny tyto typy souborů mají funkce popsané dříve i když podpora pro daný jazyk ještě nebyl nainstalován. Instalace specializované podpory pro některé jazyky může poskytnout další jazyková podpora, jako je například IntelliSense nebo jiné pokročilé jazykové funkce jako je například žárovek.  
   
@@ -71,7 +73,7 @@ Další informace o tom, jak editoru Visual Studio podporuje čtení a procháze
   
  Přidejte všechny nové gramatika TextMate pro sadu Visual Studio v následující složce:  
   
- % userprofile %\\. vs\Extensions  
+ %userprofile%\\.vs\Extensions  
   
  Tento základní cestě přidejte následující složkám, pokud se vztahují na vaši situaci:  
   

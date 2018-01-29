@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 475c228dc7031dbb7cb98d9f325fcce89f31223b
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Seznam úloh, prostředí, dialogové okno Možnosti
 Tato stránka Možnosti umožňuje přidat, odstranit a změňte komentář tokeny, které generují **seznam úkolů** připomenutí. K zobrazení těchto nastavení, vyberte **možnosti** z **nástroje** nabídky, rozbalte **prostředí** složku a zvolte **seznam úkolů**.  
@@ -51,7 +53,7 @@ Tato stránka Možnosti umožňuje přidat, odstranit a změňte komentář toke
  Když Vložit komentář do vašeho kódu, jejíž text začíná tokenu z **seznam tokenů**, **seznam úkolů** zobrazí komentář jako nová položka při každém otevření souboru pro úpravy. Kliknutí na toto tlačítko **seznam úkolů** položku přejít přímo na řádek komentáře v kódu. Další informace najdete v tématu [používání seznamu úkolů](../../ide/using-the-task-list.md).  
   
  seznam tokenů  
- Zobrazí seznam tokeny a umožňuje přidat nebo odebrat vlastní tokeny. Komentář tokeny jsou písmen v jazyce Visual C# a Visual C++, ale není v jazyce Visual Basic.  
+ Zobrazí seznam tokeny a umožňuje přidat nebo odebrat vlastní tokeny. Komentář tokeny jsou písmen v C# a Visual C++, ale není v jazyce Visual Basic.  
   
 > [!NOTE]
 >  Pokud nezadáte požadovaný token přesně tak, jak se objevuje v **seznam tokenů**, úlohu komentář se nezobrazí v **seznam úkolů**.  

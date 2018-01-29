@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - bi-directional language support, about bi-directional language support
 - Arabic language, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b0d0010d9aa4c56fdffef2eceb458776a863d23
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Vytváření aplikací v obousměrných jazycích
 Visual Studio můžete vytvářet aplikace, které správně zobrazovat text v jazycích, které jsou zapsány-doleva, včetně arabština a hebrejština. Pro některé funkce můžete jednoduše nastavit vlastnosti. V ostatních případech je nutné implementovat funkce v kódu.  
@@ -80,15 +82,16 @@ Visual Studio můžete vytvářet aplikace, které správně zobrazovat text v j
 -   Kód a prostý text. V editoru kódu (což je také textovém editoru) arabské nebo hebrejštinu můžete použít název třídy, funkce, proměnné, vlastnosti, textové literály, atributy a tak dále. Editor však nepodporuje pořadí čtení zprava doleva. text začíná vždy na levý okraj.  
   
     > [!TIP]
-    >  Doporučujeme umístit textové literály soubory prostředků místo pevně kódováno je do aplikací. Další informace najdete v tématu [návod: lokalizace Windows Forms](http://msdn.microsoft.com/en-us/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Doporučujeme umístit textové literály soubory prostředků místo pevně kódováno je do aplikací. Další informace najdete v tématu [prostředky v aplikacích klasické pracovní plochy (rozhraní .NET Framework)](/dotnet/framework/resources/index).
   
     > [!NOTE]
-    >  Musíte být konzistentní v tom, jak odkazovat na objekty s názvem v těchto jazycích. Pokud používáte kašida v pojmenování Arabic proměnné, je vždy nutné použít kašida k odkazování na tuto proměnnou nebo dojde k chybám.  
+    > Musíte být konzistentní v tom, jak odkazovat na objekty s názvem v těchto jazycích. Pokud používáte kašida v pojmenování Arabic proměnné, je vždy nutné použít kašida k odkazování na tuto proměnnou nebo dojde k chybám.  
   
 -   Komentáře kódu. Komentáře můžete vytvořit v arabské nebo hebrejštinu. Můžete taky těchto jazyků v nástroji Tvůrce komentář.  
   
-## <a name="see-also"></a>Viz také  
- [Obousměrná podpora pro systém Windows Forms aplikace](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
- [Obousměrná podpora pro webových aplikací ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
- [Globalizace aplikací](../ide/globalizing-applications.md)   
- [Lokalizace aplikací](../ide/localizing-applications.md)
+## <a name="see-also"></a>Viz také
+
+[Podpora obousměrného zápisu u formulářových aplikací Windows](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications)  
+[Obousměrná podpora pro webových aplikací ASP.NET](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)  
+[Globalizace aplikací](../ide/globalizing-applications.md)  
+[Lokalizace aplikací](../ide/localizing-applications.md)

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - Web applications, accessibility
 - accessibility, Web applications
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6df23292ef3ae5016d2ddd48f0ced93e3a577a2f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Prostředky pro navržení aplikací usnadňujících přístup
 Pomocí následujících odkazů se najít informace o technologiích, které podporují přístupné návrhu a také tipy a příklady pro vývoj dostupné aplikace systému Windows a webové servery. Obecné informace o usnadnění přístupu lze nalézt v online [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).  
@@ -33,7 +35,7 @@ Pomocí následujících odkazů se najít informace o technologiích, které po
   
 -   **Technologie Microsoft .NET řeči** Microsoft .NET řeči SDK je sada Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] ovládací prvky, doplňku Microsoft Internet Explorer řeči, ukázkové aplikace a dokumentace, která umožňuje vývojářům webů pro vytvoření, ladění a nasazení rozpoznávání řeči [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] aplikace. Nástroje jsou bezproblémově integrovány Microsoft Visual Studio, což umožňuje vývojářům využívat známého vývojového prostředí. Další informace najdete v tématu [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
   
--   **Principy SAMI 1.0** technologie Microsoft synchronizované přístupné média Interchange (SAMI) poskytuje způsob pro vývojáře titulek zvuk obsah pro multimédia PC. Další informace najdete v tématu [http://msdn.microsoft.com/en-us/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
+-   **Principy SAMI 1.0** technologie Microsoft synchronizované přístupné média Interchange (SAMI) poskytuje způsob pro vývojáře titulek zvuk obsah pro multimédia PC. Další informace najdete v tématu [Principy SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx).  
   
 ## <a name="windows-applications"></a>Aplikace systému Windows  
   
@@ -45,13 +47,9 @@ Pomocí následujících odkazů se najít informace o technologiích, které po
   
 ## <a name="web-sites"></a>Weby  
   
--   [Návod: Pokyny pro usnadnění přístupu pro nabídky ovládacích prvků pomocí bitové kopie a automatické odeslání](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Toto téma obsahuje podrobné pokyny pro zahrnutí přístupných ovládacích prvků v ukázkové webové stránky, jakož i některé tipy k usnadnění návrhu na webu.  
+-   [Návod: Pokyny pro usnadnění přístupu pro nabídky ovládacích prvků pomocí bitové kopie a automatické odeslání](http://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Toto téma obsahuje podrobné pokyny pro zahrnutí přístupných ovládacích prvků v ukázkové webové stránky, jakož i některé tipy k usnadnění návrhu na webu.
   
--   **Webové stránky lepší přístup** Tento technický článek obsahuje seznam prvků jazyka HTML 3.2, které jsou dostupné i prvky, které mohou být přístupné pro použití při vývoji webu. Další informace najdete v tématu [http://msdn2.microsoft.com/en-us/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
-  
--   **Vytváření přístupných webových stránek s DHTML** Tento technický článek obsahuje seznam prvků jazyka HTML 4.0, které jsou dostupné i přístupné tipy pro návrh webu. Další informace najdete v tématu [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
-  
--   **Text alternativy k nepřístupné webové stránky** Tento technický článek popisuje, jak poskytnout více zobrazení stejné webové stránky, jako je například verze pouze text pomocí XML a XSLT. Další informace najdete v tématu [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
+-   **Vytváření přístupných webových stránek s DHTML** Tento technický článek obsahuje seznam prvků jazyka HTML 4.0, které jsou dostupné i přístupné tipy pro návrh webu. Další informace najdete v tématu [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).
   
 ### <a name="third-party-resources"></a>Prostředky třetích stran.  
   

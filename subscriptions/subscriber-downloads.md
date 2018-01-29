@@ -1,5 +1,5 @@
 ---
-title: "Pomocí odběratele soubory ke stažení na Vizuály Studio předplatná | Visual Studio Marketplace"
+title: "Pomocí odběratele soubory ke stažení na Vizuály Studio předplatná | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,15 +9,15 @@ Description: Learn how to locate and download Microsoft products included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d5826576cb0e36c0c8a6a145bc6ed3f34d2d43cc
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele stáhne v sadě Visual Studio předplatných
 Jako součást výhody pro předplatitele máte přístup k široké škále stažení softwaru.  
-Musí jste přihlášení k vašemu předplatnému přístup [stáhne](https://my.visualstudio.com/downloads) kartě. 
+Musí jste přihlášení k vašemu předplatnému přístup [stáhne](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs) kartě. 
 
 ## <a name="product-availability"></a>Dostupnost produktu
 Všechny obchodní a příjemce Microsoft produkty, které jsou relevantní pro projekty vývoje softwaru obecně platí, jsou k dispozici pro předplatitele sady Visual Studio. S Visual Studio odběry produkty obvykle zůstanou k dispozici ke stažení dlouho do budoucna – i po skončila podpora období rozšířené produktu, které zákazníkům umožňují vývoj a testování starší verze aplikace a přecházet na novější platformy. Existují případy, kdy nelze zadat některé produkty odběratelům, jak je uvedeno níže, ale zajišťujeme, veškeré úsilí, chcete-li minimalizovat tyto události.
@@ -25,7 +25,7 @@ Všechny obchodní a příjemce Microsoft produkty, které jsou relevantní pro 
 Tady je několik důvodů, proč nemusí být k dispozici pro odběratele konkrétní produkty:
 
 - **Produkt není součástí úrovni předplatného nebo program.** [Další informace](https://www.visualstudio.com/vs/pricing/) o softwaru a výhody, které jsou k dispozici ve vašem předplatném nebo [stáhnout úplný seznam](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx_) produktů podle úrovně předplatného. Některé programy, například [Microsoft Partner Network](https://partner.microsoft.com/), poskytovat odběry Visual Studio jako součást jejich výhody.  Tato předplatná nezahrnují všechny produkty, které jsou součástí zakoupené předplatné sady Visual Studio. Odběratele, kteří mají tyto programy by měli směrovat dotazy týkající se dostupnosti produktu stahování do týmy podpory pro tyto aplikace.
-- **Předplatné není součástí produktu.** Některé produkty společnosti Microsoft nejsou součástí odběry z důvodu speciální licenční podmínky, technická omezení nebo developer relevance. Pokud chcete navrhovat produkt přidat do odběru, pošlete e-mail na Visual Studio [oddělení služeb zákazníkům](https://www.visualstudio.com/subscriptions/support/) Center.
+- **Předplatné není součástí produktu.** Některé produkty společnosti Microsoft nejsou součástí odběry z důvodu speciální licenční podmínky, technická omezení nebo developer relevance. Pokud chcete navrhovat produkt přidat do odběru, pošlete e-mail na Visual Studio [zákazníka Service Center](https://www.visualstudio.com/subscriptions/support/).
 - **Tento produkt je veřejně dostupný.** Některé nástroje, sady SDK, DDKs a aktualizace service Pack jsou veřejně dostupné z [Microsoft Download Center](https://www.microsoft.com/download). Některé tyto produkty nemusejí být publikovány na soubory ke stažení.
 - **Produktu ještě uvolněna.**  Mnoho předběžné verze (beta) verze a verze kandidáty jsou k dispozici na soubory ke stažení. Ne všechny beta však může být součástí; například některé beta vyžadovat zvláštní registraci nebo podmínky. Další informace o otevřete technické beta verze programů, navštivte [Microsoft Connect](http://connect.microsoft.com/).
 - **Produkt není k dispozici ve vaší zemi.** Některé produkty společnosti Microsoft nejsou k dispozici z důvodu místní omezení.
@@ -34,10 +34,12 @@ Tady je několik důvodů, proč nemusí být k dispozici pro odběratele konkr�
 ## <a name="what-do-i-get"></a>Co lze získat?
 Počet a typ stahování závisí na vaše předplatné úroveň a program členství.  Odběratelé s Visual Studio Enterprise standardní odběry, například může mít různé soubory ke stažení pro ně k dispozici než Odběratelé, kteří získají svoje předplatné prostřednictvím odběru programu Microsoft Partner Network nebo BizSpark.  Další informace o tom, jaké soubory ke stažení jsou k dispozici pro každou úroveň předplatného, stáhněte si seznam [produkty ve zvýhodnění úroveň](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
 
+Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Jak najít soubory ke stažení na portálu odběratele? 
 Pouze stahování, které jsou součástí vašeho předplatného se zobrazují pro vás na [stáhne](https://my.visualstudio.com/downloads/featured) stránky.  Pokud máte více než jedno předplatné nebo členství v programu, soubory ke stažení ukazuje budou **nejvyšší předplatné** podržíte, i když se právě nacházíte jiný odběr.  Například pokud máte předplatné Visual Studio Professional a Visual Studio Dev Essentials členství i spojené se stejným ID přihlášení, soubory ke stažení ukazuje bude ty součástí předplatného úrovni Professional, i když jste aktuálně zobrazení vaší výhody Dev Essentials.  
 
-Při návštěvě [stáhne](https://my.visualstudio.com/downloads/featured) stránky, uvidíte Oblíbené položky ke stažení ve skupinách uspořádané podle typu produktu.  Můžete vyberte jednu z oblíbených soubory ke stažení ukazuje nebo vyhledávání pro některý z produktů pomocí panelu Hledat v horní části stránky. 
+Při návštěvě [stáhne](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs) stránky, uvidíte Oblíbené položky ke stažení ve skupinách uspořádané podle typu produktu.  Můžete vyberte jednu z oblíbených soubory ke stažení ukazuje nebo vyhledávání pro některý z produktů pomocí panelu Hledat v horní části stránky. 
 
 ![Stránka stahování odběratele](_img\subscriber-downloads\subscriber-downloads-resized.png)
 

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,23 +16,24 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0187b8a70fc012fc6d2564f77ea5a2b2ff7c20d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 88f3ec2d9e8c682511c87cbcf5a5690ae797d8c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Dialogové okno Možnosti, projekty a řešení, sestavit a spustit
 
-V tomto dialogovém můžete zadat maximální počet projekty Visual C++ a Visual C#, které můžete vytvořit ve stejnou dobu, sestavení určité výchozí chování a některé sestavení nastavení protokolu. Chcete-li získat přístup k tyto možnosti, vyberte **nástroje > Možnosti** rozbalte **projekty a řešení**a vyberte **sestavit a spustit**.
+V tomto dialogovém můžete zadat maximální počet projekty Visual C++ nebo C#, které můžete vytvořit ve stejnou dobu, sestavení určité výchozí chování a některé sestavení nastavení protokolu. Chcete-li získat přístup k tyto možnosti, vyberte **nástroje > Možnosti** rozbalte **projekty a řešení**a vyberte **sestavit a spustit**.
   
 **Maximální počet paralelní projektu sestavení**  
-Určuje maximální počet projekty Visual C++ a Visual C#, které můžete vytvořit ve stejnou dobu. K optimalizaci procesu sestavení, se automaticky nastaví maximální počet paralelní projektu sestavení na počet procesorů v počítači. Maximální počet je 32.  
+Určuje maximální počet projekty Visual C++ a C#, které můžete vytvořit ve stejnou dobu. K optimalizaci procesu sestavení, se automaticky nastaví maximální počet paralelní projektu sestavení na počet procesorů v počítači. Maximální počet je 32.  
 
 **Pouze při spuštění sestavení projektů po spuštění a závislosti**  
 Při použití klíče, vyberte F5 sestavení spouštěný projekt a jeho závislé součásti **ladění > Spustit** příkaz nabídky, nebo použít příkazy na **sestavení** nabídky. Pokud je prázdné, jsou všechny projekty a závislosti sestavení. 

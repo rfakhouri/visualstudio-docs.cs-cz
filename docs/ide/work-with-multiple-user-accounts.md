@@ -7,17 +7,16 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 
@@ -52,7 +51,7 @@ Otevření Průzkumníka serveru, zobrazí se prostředky pro tento odběry.
 1. Zvolte uzel projektu v Průzkumníku řešení a potom zvolte **přidat, připojení službě**. **Přidat připojení službě** průvodce se zobrazí a zobrazí seznam služeb v účtu Azure, která souvisí s vaším ID sady Visual Studio přihlášení. Všimněte si, že nemáte samostatně přihlaste k Azure. Však nutné se přihlásit k jiné účty při prvním pokusu o přístup k jejich prostředkům z jednoho počítače.
 
     > [!WARNING]
-    > Pokud je to poprvé vytvoříte aplikaci UWP v sadě Visual Studio v určitém počítači, zobrazí se výzva tak, aby vaše zařízení pro režimu pro vývoj přechodem na **nastavení &#124;  Aktualizace a zabezpečení &#124; Pro vývojáře** ve vašem počítači. Další informace najdete v tématu [povolit zařízení pro vývoj](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx).
+    > Pokud je to poprvé vytvoříte aplikaci UWP v sadě Visual Studio v určitém počítači, zobrazí se výzva tak, aby vaše zařízení pro režimu pro vývoj přechodem na **nastavení &#124;  Aktualizace a zabezpečení &#124; Pro vývojáře** ve vašem počítači. Další informace najdete v tématu [povolit zařízení pro vývoj](/windows/uwp/get-started/enable-your-device-for-development).
 
 ### <a name="access_azure"></a>Přístup k Azure Active Directory ve webovém projektu
 
@@ -74,7 +73,7 @@ Klikněte na šipku dolů vedle vašeho jména uživatele v horním rohu sady Vi
 
 Postupujte podle pokynů zadejte nová pověření pro účet. Následující obrázek znázorňuje správce účtu po jeho Contoso.com pracovní účet k přidání uživatele.
 
-![Účet správce](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")
+![Account Manager](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Pokroku Průvodce přidáním připojených služeb a Průzkumníka serveru
 
@@ -82,4 +81,4 @@ Nyní přejděte na **Průzkumníka serveru** znovu, klikněte pravým tlačítk
 
 ## <a name="see-also"></a>Viz také
 
-[Přihlaste se k sadě Visual Studio](signing-in-to-visual-studio.md)
+[Přihlášení k sadě Visual Studio](signing-in-to-visual-studio.md)

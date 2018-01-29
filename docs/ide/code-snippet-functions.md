@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,33 +13,37 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fec5c2bbbf97bee5e0abb0725641a5c562997065
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippet-functions"></a>Funkce fragmentu kódu
-Existují tři funkce, které jsou k dispozici pro použití s [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] výstřižky kódu. Funkce jsou určené v [funkce](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) element fragmentu kódu. Informace o vytváření fragmenty kódu najdete v tématu [fragmenty kódu](../ide/code-snippets.md).  
-  
-## <a name="functions"></a>Funkce  
- Následující tabulka popisuje funkce dostupné pro použití s `Function` element v fragmenty kódu.  
-  
+
+Existují tři funkce, které jsou k dispozici pro použití s fragmenty kódu v C#. Funkce jsou určené v [funkce](../ide/code-snippets-schema-reference.md#function) element fragmentu kódu. Informace o vytváření fragmenty kódu najdete v tématu [fragmenty kódu](../ide/code-snippets.md).
+
+## <a name="functions"></a>Funkce
+
+Následující tabulka popisuje funkce dostupné pro použití s `Function` element v fragmenty kódu.
+
 |Funkce|Popis|Jazyk|  
 |--------------|-----------------|--------------|  
 |`GenerateSwitchCases(` `EnumerationLiteral` `)`|Generuje příkaz switch a sadu case – příkazy pro členy výčtu určeného `EnumerationLiteral` parametr. `EnumerationLiteral` Parametr musí být odkaz na výčet literálu nebo výčtového typu.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`ClassName()`|Vrací název třídy, která obsahuje vložené fragment kódu.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
 |`SimpleTypeName(` `TypeName` `)`|Snižuje *TypeName* parametr v kontextu, ve kterém byl vyvolán fragmentu své nejjednodušší podobě.|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak používat `GenerateSwitchCases` funkce. Když tento fragment kódu je vložen a výčet je zadán do `$switch_on$` literálu, `$cases$` literál generuje `case` příkaz pro každou hodnotu ve výčtu.  
-  
-```  
+## <a name="example"></a>Příklad
+
+Následující příklad ukazuje, jak používat `GenerateSwitchCases` funkce. Když tento fragment kódu je vložen a výčet je zadán do `$switch_on$` literálu, `$cases$` literál generuje `case` příkaz pro každou hodnotu ve výčtu.  
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -74,12 +79,13 @@ Existují tři funkce, které jsou k dispozici pro použití s [!INCLUDE[csprcs]
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje, jak používat `ClassName` funkce. Při vložení tento fragment kódu `$classname$` literál se nahradí název nadřazených třídy v tomto umístění v souboru kódu.  
-  
-```  
+```
+
+## <a name="example"></a>Příklad
+
+Následující příklad ukazuje, jak používat `ClassName` funkce. Při vložení tento fragment kódu `$classname$` literál se nahradí název nadřazených třídy v tomto umístění v souboru kódu.
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -120,12 +126,13 @@ Existují tři funkce, které jsou k dispozici pro použití s [!INCLUDE[csprcs]
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="example"></a>Příklad  
- Tento příklad ukazuje způsob použití `SimpleTypeName` funkce. Když tento fragment kódu vložíte do souboru kódu `$SystemConsole$` literál nahradí nejjednodušší forma <xref:System.Console> typu v kontextu, ve kterém byl vyvolán fragmentu.  
-  
-```  
+```
+
+## <a name="example"></a>Příklad
+
+Tento příklad ukazuje způsob použití `SimpleTypeName` funkce. Když tento fragment kódu vložíte do souboru kódu `$SystemConsole$` literál nahradí nejjednodušší forma <xref:System.Console> typu v kontextu, ve kterém byl vyvolán fragmentu.  
+
+```xml
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
     <CodeSnippet Format="1.0.0">  
         <Header>  
@@ -152,8 +159,9 @@ Existují tři funkce, které jsou k dispozici pro použití s [!INCLUDE[csprcs]
         </Snippet>  
     </CodeSnippet>  
 </CodeSnippets>  
-```  
-  
-## <a name="see-also"></a>Viz také  
- [Funkce – Element (fragmentech kódu technologie Intellisense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
- [Fragmenty kódu – odkaz schématu](../ide/code-snippets-schema-reference.md)
+```
+
+## <a name="see-also"></a>Viz také
+
+[Element – funkce](../ide/code-snippets-schema-reference.md#function)  
+[Fragmenty kódu – odkaz schématu](../ide/code-snippets-schema-reference.md)

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - resource files, fallback processes
 - user interface, culture setting
 ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 9acc8f2e015b6ca2ad26881eeb1f53012d96e56d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 20eefe3933767e357d977e2f3a5a0626aa555c39
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Představení mezinárodních aplikací založených na prostředí .NET Framework
 V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], k vytvoření aplikace připravených skládá ze dvou částí: globalizace, proces návrhu aplikace, které můžete přizpůsobit pro jiné kultury a lokalizace, proces překladu prostředky pro konkrétní jazykové verze. Obecné informace o navrhování aplikací pro mezinárodní cílovou skupinu najdete v tématu [osvědčené postupy pro vývoj aplikací připravených](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
@@ -47,7 +49,7 @@ V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], k vytvoření aplik
   
  Systém projektu pro Windows Forms a webových formulářů umožňuje vytvářet soubory prostředků pomocí šablony souboru prostředku sestavení, přístup k prostředkům a sestavení projektu. Satelitní sestavení bude vytvořen společně s hlavní sestavení.  
   
- Když provede lokalizovanou aplikaci, její vzhled je určen podle dvě hodnoty jazykové verze. (A *jazykovou verzi* je sada uživatelské předvolby informace související s jazyk uživatele, prostředí a kulturního konvence.) Nastavení jazykové verze uživatelského rozhraní určuje prostředky, ke kterým budou načteny. Jazyková verze uživatelského rozhraní je nastaven jako `UICulture` v souborech Web.config a direktivy stránky a <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> v kódu Visual Basic a Visual C#. Nastavení jazykové verze Určuje formátování hodnot například data, čísla, měny a tak dále. Jazyková verze je nastaven jako `Culture` v souborech Web.config a direktivy stránky <xref:System.Globalization.CultureInfo.CurrentCulture%2A> v kódu Visual Basic a Visual C#.  
+ Když provede lokalizovanou aplikaci, její vzhled je určen podle dvě hodnoty jazykové verze. (A *jazykovou verzi* je sada uživatelské předvolby informace související s jazyk uživatele, prostředí a kulturního konvence.) Nastavení jazykové verze uživatelského rozhraní určuje prostředky, ke kterým budou načteny. Jazyková verze uživatelského rozhraní je nastaven jako `UICulture` v souborech Web.config a direktivy stránky a <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> v kódu Visual Basic a C#. Nastavení jazykové verze Určuje formátování hodnot například data, čísla, měny a tak dále. Jazyková verze je nastaven jako `Culture` v souborech Web.config a direktivy stránky <xref:System.Globalization.CultureInfo.CurrentCulture%2A> v kódu Visual Basic a C#.  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Globalization>   

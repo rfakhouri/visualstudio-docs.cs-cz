@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: fffb892efdbe3ad2731de5b0b81f6e59f237f884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: d0a00fb9fa52bcba39f4648fc3ffb9800890ac30
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -23,37 +25,37 @@ IntelliSense pro jazyk C++ je k dispozici pro samostatné soubory stejně jako u
 
 ## <a name="intellisense-features-in-c"></a>Funkce technologie IntelliSense v jazyce C++
 
-IntelliSense je název zadaný pro sadu funkcí, které kódování pohodlnější. Vzhledem k tomu, že jiné osoby mít různé návrhy o tom, co je vhodné, prakticky všechny funkce technologie IntelliSense můžete povolit nebo zakázat v **textový Editor, C/C++, Upřesnit** stránku vlastností.
+IntelliSense je název zadaný pro sadu funkcí, které kódování pohodlnější. Vzhledem k tomu, že jiné osoby mít různé návrhy o tom, co je vhodné, prakticky všechny funkce technologie IntelliSense můžete povolit nebo zakázat v **možnosti** dialogovém **textového editoru**  >  **C/C++** > **rozšířené**. **Možnosti** dialogové okno je k dispozici **nástroje** nabídky v řádku nabídek.
 
-![Nástroje, možnosti, textový Editor, C &#47; C & č. 43; & č. 43; Upřesnit](../ide/media/sintellisensecpptoolsoptions.PNG "sIntelliSenseCppToolsOptions")
+![Možnosti nástrojů – dialogové okno](../ide/media/sintellisensecpptoolsoptions.PNG)
 
 Položky nabídky a klávesové zkratky, viz následující obrázek můžete použít pro přístup k technologii IntelliSense.
 
-![Visual C & č. 43; & č. 43; IntelliSense nabídky](../ide/media/vs2015_cpp_intellisense_menu.png "vs2015_cpp_intellisense_menu")
+![Nabídky IntelliSense](../ide/media/vs2015_cpp_intellisense_menu.png)
 
 ### <a name="statement-completion-and-member-list"></a>Seznam dokončení a člen – příkaz
 
-Když začnete psát klíčové slovo, typ, funkce, název proměnné nebo jiného programu elementu, který rozpoznává kompilátor, editor nabízí můžete dokončit slovo
+Když začnete psát klíčové slovo, typ, funkce, název proměnné nebo jiného programu elementu, který rozpoznává kompilátor, editor nabízí dokončit slovo za vás.
 
 Seznam ikony a jejich významy, naleznete v části [zobrazení tříd a ikony v prohlížeči objekt](../ide/class-view-and-object-browser-icons.md).
 
-![Visual C & č. 43; & č. 43; Dokončení okno aplikace Word](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C&#43;&#43; Complete Word window](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
-Při prvním vyvolání seznam členů pouze zobrazuje členy, které jsou dostupné pro aktuální kontext. Pokud používáte **kombinaci kláves Ctrl + J** po, který se zobrazí všechny členy, bez ohledu na usnadnění přístupu. Pokud vyvolání ho třetí čas, zobrazí se i širší seznam prvky programu. Dokončování příkazů v můžete vypnout **C/C++ obecné možnosti** stránky.
+Při prvním vyvolání seznam členů pouze zobrazuje členy, které jsou dostupné pro aktuální kontext. Pokud vyberete **Ctrl**+**J** po, který se zobrazí všechny členy, bez ohledu na usnadnění přístupu. Pokud vyvolání ho třetí čas, zobrazí se i širší seznam prvky programu. Můžete vypnout seznam členů v **možnosti** dialogovém **textového editoru** > **C/C++** > **Obecné**  >  **Automatický seznam členů**.
 
-![Visual C & č. 43; & č. 43; Seznam členů](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
+![Visual C&#43;&#43; Member List](../ide/media/vs2015_cpp_list_members.png "vs2015_cpp_list_members")
 
 ### <a name="parameter-help"></a>Parametr nápovědy
 
-Když zadáte žádná levá složená závorka volání funkce nebo lomená závorka v deklaraci třídy šablony proměnné, představuje editoru malém okně s typy parametrů pro každé přetížení funkce nebo konstruktor. Parametr "aktuální" – v závislosti na umístění kurzoru – je tučným písmem. Dokončování příkazů v můžete vypnout **C/C++ obecné možnosti** stránky.
+Když zadáte žádná levá složená závorka volání funkce nebo lomená závorka v deklaraci třídy šablony proměnné, představuje editoru malém okně s typy parametrů pro každé přetížení funkce nebo konstruktor. Parametr "aktuální"&mdash;v závislosti na umístění kurzoru&mdash;je tučným písmem. Informace o parametrech v můžete vypnout **možnosti** dialogovém **textového editoru** > **C/C++** > **Obecné**  >  **Informace o parametrech**.
 
-![Visual C & č. 43; & č. 43; Parametr nápovědy](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
+![Visual C&#43;&#43; Parameter Help](../ide/media/vs_2015_cpp_param_help.png "vs_2015_cpp_param_help")
 
 ### <a name="quick-info"></a>Rychlé informace
 
-Když najedete myší do proměnné, zobrazí se vložené, která obsahuje informace o typu a záhlaví, ve kterém je definovaný typ malém okně. Podržte ukazatel nad volání funkce zobrazíte podpis funkce. Rychlé informace v můžete vypnout **textový Editor, C/C++, Upřesnit** stránky.
+Když najedete myší do proměnné, zobrazí se vložené, která obsahuje informace o typu a záhlaví, ve kterém je definovaný typ malém okně. Podržte ukazatel nad volání funkce zobrazíte podpis funkce. Můžete vypnout v rychlé informace **možnosti** dialogovém **textového editoru** > **C/C++** > **Upřesnit**  >  **Automaticky rychlé informace**.
 
-![Visual C & č. 43; & č. 43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
+![Visual C&#43;&#43; QuickInfo](../ide/media/vs2015_cpp_quickinfo.png "vs2015_cpp_quickInfo")
 
 ### <a name="error-squiggles"></a>Chyba podtržení vlnovkou
 
@@ -63,9 +65,9 @@ Podtržení vlnovkou pod element programu (proměnné, – klíčové slovo, slo
 
 ### <a name="code-colorization-and-fonts"></a>Kód zabarvení a písem
 
-Výchozí barev a písem lze změnit pomocí **prostředí, písma a barev** stránku vlastností. Můžete změnit písmo pro mnoho uživatelského rozhraní windows tady, ne jenom editoru. Nastavení, které jsou specifické pro C++ začínat řetězcem "C++"; ostatní nastavení jsou pro všechny jazyky.
+Výchozí barev a písem lze změnit v **možnosti** dialogovém **prostředí** > **písma a barev**. Můžete změnit písmo pro mnoho uživatelského rozhraní windows tady, ne jenom editoru. Nastavení, které jsou specifické pro C++ začínat řetězcem "C++"; ostatní nastavení jsou pro všechny jazyky.
 
-### <a name="cross-platform-intellisense"></a>Napříč platformami IntelliSense
+### <a name="cross-platform-intellisense"></a>Cross-platform IntelliSense
 
 V projektu sdíleného kódu některé funkce IntelliSense, jako je například podtržení vlnovkou jsou k dispozici i v případě, že pracujete v kontextu systému Android. Pokud píšete některé kód, který by mělo za následek chybu v projektu na neaktivní, IntelliSense stále zobrazuje podtržení vlnovkou, ale jsou v barvu než podtržení vlnovkou chyby v aktuálním kontextu.
 
@@ -95,7 +97,7 @@ Všimněte si následujících akcí:
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense pro samostatné soubory
 
-Když otevřete jeden soubor mimo žádného projektu, se stále objevuje IntelliSense. Můžete povolit nebo zakázat konkrétní funkce přechodem na **textový Editor, C/C++, Upřesnit** zapnout nebo vypnout funkce IntelliSense. Konfigurace technologie IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **IntelliSense a procházení pro soubory bez projektu** v **Upřesnit** části. V tématu [průvodce Visual C++](http://msdn.microsoft.com/en-us/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).
+Když otevřete jeden soubor mimo žádného projektu, se stále objevuje IntelliSense. Můžete povolit nebo zakázat konkrétní funkce IntelliSense **možnosti** dialogovém **textového editoru** > **C/C++**  >  **Rozšířené**. Konfigurace technologie IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **IntelliSense a procházení pro soubory bez projektu** části.
 
 ![Visual C & č. 43; & č. 43; jeden soubor intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 

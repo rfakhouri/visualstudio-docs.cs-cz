@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: accessibility [Visual Studio]
+helpviewer_keywords:
+- accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7b7623a60f5a6e06739596b02125806205c07b4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6881e90a0035ed7c918acab924832013d9b17088
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Postupy: nastavení možnosti usnadnění přístupu IDE
 > [!TIP]
@@ -33,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="editors-dialogs-and-tool-windows"></a>Editory, dialogová okna a nástroje systému Windows  
  Ve výchozím nastavení, dialogová okna a nástroj windows v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] použít stejnou velikost písma a barvy jako operační systém. Nastavení Barva rámečku IDE, dialogová okna, panely nástrojů a nástroje systému windows jsou založené barevném schématu: světlý nebo tmavý. Můžete změnit na aktuální barevný motiv v [Obecné, prostředí, dialogové okno Možnosti](../../ide/reference/general-environment-options-dialog-box.md).  
 
- Automaticky otevíraná okna můžete také zobrazit v zobrazení kódu v editoru. Tyto windows můžete vyzvat vás k dispozici členy na aktuální objekt a parametry k dokončení funkce nebo příkaz. Tyto windows může být užitečné, pokud máte potíže s psaním. Však budou narušovat fokusu v editoru kódu, což může být problematické pro některé uživatele. Tyto windows můžete vypnout otevřením dialogového okna Možnosti a vymazání **automatický seznam členů** a **informace o parametrech** v **textového editoru**, **všechny Jazyky**, **Obecné** stránku **možnosti** dialogové okno. Další informace najdete v tématu [postupy: nastavení možností editoru Obecné](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Automaticky otevíraná okna můžete také zobrazit v zobrazení kódu v editoru. Tyto windows můžete vyzvat vás k dispozici členy na aktuální objekt a parametry k dokončení funkce nebo příkaz. Tyto windows může být užitečné, pokud máte potíže s psaním. Však budou narušovat fokusu v editoru kódu, což může být problematické pro některé uživatele. Tyto windows můžete vypnout otevřením dialogového okna Možnosti a vymazání **automatický seznam členů** a **informace o parametrech** v **textového editoru**, **všechny Jazyky**, **Obecné** stránku **možnosti** dialogové okno.
 
  Můžete přeuspořádat windows v integrované vývojové prostředí (IDE) nejlépe vyhovovat způsobu práce. Můžete ukotvení, float, skrýt nebo automaticky skrýt každý okno nástroje.  
 

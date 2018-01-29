@@ -4,27 +4,30 @@ ms.custom:
 ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.Projects.WebProjects
+f1_keywords:
+- VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 75d892c4947ee93521234f9bb2cdb781bd0b09f5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1cf6798a8870834b97693845c1e39870863a66e4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Dialogové okno Možnosti, Projekty a řešení, Webové projekty
 
 Nastaví webový server, který bude používat webové projekty pro vývoj v rámci [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Chcete-li získat přístup k tyto možnosti, vyberte **nástroje > Možnosti** rozbalte **projekty a řešení**a vyberte **webové projekty**.
 
-Ve výchozím nastavení spuštění webového projektu v sadě Visual Studio používá vývojový Server sady Visual Studio. Další informace najdete v tématu [webové servery v sadě Visual Studio pro webové projekty ASP.NET](http://msdn.microsoft.com/en-us/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
+Ve výchozím nastavení spuštění webového projektu v sadě Visual Studio používá vývojový Server sady Visual Studio. Další informace najdete v tématu [webové servery v sadě Visual Studio pro webové projekty ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).
 
 > [!NOTE]
 >  K dispozici v dialogových oken, názvy a umístění příkazy nabídky, které vidíte, se může lišit od co je popsáno v nápovědě v závislosti na aktivním nastavení nebo edici. Tato stránka nápovědy byla zapsána pomocí **nastavení webu** v paměti. Chcete-li zobrazit nebo změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  

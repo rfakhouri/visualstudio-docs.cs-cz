@@ -74,7 +74,6 @@
 ##### [Přidání odkazů pomocí nástroje NuGet a sady Extension SDK](ide/adding-references-using-nuget-versus-an-extension-sdk.md)
 ##### [Přidání nebo odebrání importovaných oborů názvů (Visual Basic)](ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 ##### [Řešení potíží s poškozenými odkazy](ide/troubleshooting-broken-references.md)
-#### [Vlastnosti aplikace](ide/application-properties.md)
 #### [Správa prostředků aplikace (.NET)](ide/managing-application-resources-dotnet.md)
 #### [Správa nastavení aplikace (.NET)](ide/managing-application-settings-dotnet.md)
 ##### [Přidání konfiguračního souboru aplikace do projektu C#](ide/how-to-add-app-config-file.md)

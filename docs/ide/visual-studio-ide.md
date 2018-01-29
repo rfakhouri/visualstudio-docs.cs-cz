@@ -8,12 +8,13 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d4d302c84322388f96b37aa913e4debd3d331a7
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 5bde32fc86610fa451aa01659401362fe4207f5c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Přehled Visual Studio IDE
 
@@ -29,7 +30,7 @@ Nebo můžete jednoduše otevřít některé kódu můžete získat z téměř o
 
 ### <a name="create-mobile-apps"></a>Vytvoření mobilní aplikace
 
-Můžete vytvořit nativní mobilních aplikací pro různé platformy pomocí Visual C# a Xamarin nebo Visual C++, nebo hybridní aplikace pomocí jazyka JavaScript pomocí Apache Cordova. Můžete napsat mobilní hry pro Unity, nerealiz, DirectX, Kokosové a další. Visual Studio obsahuje emulátoru Androidu můžete spustit a ladění aplikací pro Android.
+Můžete vytvořit nativní mobilních aplikací pro různé platformy pomocí jazyka C# a Xamarin nebo Visual C++, nebo hybridní aplikace pomocí jazyka JavaScript pomocí Apache Cordova. Můžete napsat mobilní hry pro Unity, nerealiz, DirectX, Kokosové a další. Visual Studio obsahuje emulátoru Androidu můžete spustit a ladění aplikací pro Android.
 
 Výkon cloudu můžete využít pro své mobilní aplikace tak, že vytvoříte Azure aplikace služby. Azure app services povolit vaše aplikace ukládat data do cloudu, bezpečně ověřování uživatelů a automaticky škálovat své prostředky nebo dolů na vyhovovaly potřebám vaší aplikace a firmu. Další informace najdete v tématu [vývoj mobilních aplikací](https://www.visualstudio.com/vs/mobile-app-development/).
 
@@ -55,7 +56,7 @@ Další informace najdete v tématu [moderních webových nástrojů](https://ww
 
 ### <a name="build-cross-platform-apps-and-games"></a>Vytváření aplikací pro různé platformy a hry
 
-Visual Studio můžete použít k sestavení aplikací a her pro Android, iOS, Linux, Windows a dalších zařízení. Další informace naleznete na [vývoj mobilních řešení pro různé platformy](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Universal Windows Apps můžete využít kódu napříč různými platformami. V tématu [univerzálních aplikací pro Windows](https://dev.windows.com/en-us/windows-apps) Další informace.
+Visual Studio můžete použít k sestavení aplikací a her pro Android, iOS, Linux, Windows a dalších zařízení. Další informace naleznete na [vývoj mobilních řešení pro různé platformy](../cross-platform/cross-platform-mobile-development-in-visual-studio.md). Universal Windows Apps můžete využít kódu napříč různými platformami. V tématu [univerzálních aplikací pro Windows](https://dev.windows.com/windows-apps) Další informace.
 
 Zvolte nástroje, které je třeba na základě požadavků na aplikace a jazyk, který chcete použít:
 
@@ -108,7 +109,7 @@ Další informace o něco jeden vhodný způsob je pro použití! Umožňuje pod
 
   ![Šablonu prázdná aplikace UWP](../ide/media/new-uwp-blank-app-template.png)
 
-  Tím se vytvoří nový prázdný Universal Windows aplikace projekt pomocí Visual C# a XAML jako programovací jazyky. Počkejte chvilku při Visual Studio nastaví projekt pro vás. Pokud se zobrazí výzva k zadání informací, přijměte výchozí hodnoty právě teď.
+  Tím se vytvoří nový prázdný Universal Windows aplikace projekt pomocí jazyka C# a XAML jako programovací jazyky. Počkejte chvilku při Visual Studio nastaví projekt pro vás. Pokud se zobrazí výzva k zadání informací, přijměte výchozí hodnoty právě teď.
 
 1. V **nový projekt univerzální platformu Windows** dialogové okno pole, přijměte výchozí hodnoty tak, že zvolíte **OK**.
 
@@ -194,7 +195,7 @@ Toto jsou některé další běžné funkce produktivitu v sadě Visual Studio:
 
  ![Refaktoring](../ide/media/VSIDE_refactor.png)
 
-- **IntelliSense** je také souhrnný název pro sadu oblíbených funkcí, které zobrazují informace o typu o kódu přímo v editoru a v některých případech zápisu malých bits kódu pro vás. Je to jako mít základní dokumentace vložené v editoru ušetří práci s k vyhledání informací o typu v okně samostatné nápovědy. Funkce IntelliSense se liší podle jazyka. Další informace najdete v tématu [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), a [specifické pro Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Některé funkce IntelliSense v práci na následujícím obrázku:
+- **IntelliSense** je také souhrnný název pro sadu oblíbených funkcí, které zobrazují informace o typu o kódu přímo v editoru a v některých případech zápisu malých bits kódu pro vás. Je to jako mít základní dokumentace vložené v editoru ušetří práci s k vyhledání informací o typu v okně samostatné nápovědy. Funkce IntelliSense se liší podle jazyka. Další informace najdete v tématu [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ Intellisense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), a [specifické pro Visual Basic IntelliSense ](../ide/visual-basic-specific-intellisense.md). Některé funkce IntelliSense v práci na následujícím obrázku:
 
   ![Seznam členů v sadě Visual Studio](../ide/media/vs2017_Intellisense.png)
 
@@ -236,7 +237,7 @@ Následující obrázek ukazuje okno Průzkumník týmových projektů pro řeš
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
-Můžete také automatizovat vašeho procesu sestavení vytvářet kód, který jste zkontrolovali devs ve vašem týmu do správy verzí. Lze například sestavit jeden nebo více projektů v noci nebo pokaždé, když je kód vrácen se změnami. V tématu [průběžnou integraci na jakékoli platformě](https://www.visualstudio.com/en-us/docs/build/overview) Další informace.
+Můžete také automatizovat vašeho procesu sestavení vytvářet kód, který jste zkontrolovali devs ve vašem týmu do správy verzí. Lze například sestavit jeden nebo více projektů v noci nebo pokaždé, když je kód vrácen se změnami. V tématu [sestavení a verze (služby VSTS a sady TFS)](/vsts/build-release/index) Další informace.
 
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Připojení ke službám, databází a cloudové prostředky
 
@@ -279,6 +280,6 @@ Blahopřejeme k dokončení prohlídku Visual Studio IDE! Věříme, že jste se
 * [Integrované vývojové prostředí sady Visual Studio](https://www.visualstudio.com/vs/)
 * [Stažení sady Visual Studio](https://www.visualstudio.com/downloads/)
 * [Blog sady Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio Forums](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
+* [Visual Studio Forums](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
 * [Microsoft Virtual Academy](https://mva.microsoft.com/)
 * [Channel 9](https://channel9.msdn.com/)

@@ -1,5 +1,5 @@
 ---
-title: "Návod: Vytvoření jednoduché aplikace s Visual C# nebo Visual Basic | Microsoft Docs"
+title: "Návod: Vytvoření jednoduché aplikace s C# nebo Visual Basic | Microsoft Docs"
 ms.custom: 
 ms.date: 10/03/2017
 ms.reviewer: 
@@ -11,18 +11,19 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-caps.latest.revision: "19"
+caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: b33816e074cf63826c931bcda0978ebdb5bb8bbe
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Návod: Vytvoření jednoduché aplikace s použitím jazyka Visual C# nebo Visual Basic
+# <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>Návod: Vytvoření jednoduché aplikace s C# nebo Visual Basic
 Provedením tohoto návodu budete seznámit se s řadu nástrojů, dialogová okna a návrhářů, které můžete použít při vývoji aplikací pomocí sady Visual Studio. Budete vytvořit jednoduchou aplikaci "Hello, World", návrh uživatelského rozhraní, přidejte kód a ladění chyb, zatímco informace o práci v integrované vývojové prostředí (IDE).
   
 ##  <a name="BKMK_ConfigureIDE"></a>Konfigurace prostředí IDE  

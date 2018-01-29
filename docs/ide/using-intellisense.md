@@ -7,7 +7,8 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vc.tools.intellisense
+f1_keywords:
+- vc.tools.intellisense
 helpviewer_keywords:
 - IntelliSense, Complete Word
 - IntelliSense, completion mode
@@ -25,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1423e3db18a3849fdcbf93bf0a4299a0f743b242
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-intellisense"></a>Používání atributu IntelliSense
 
@@ -60,7 +62,7 @@ Informace o parametru poskytují informace o počtu, názvech a typech parametr�
 
 Parametr tučně označuje další parametr, který je vyžadován při zadávání funkce. Pro přetížené funkce můžete použít klávesy se šipkami nahoru a dolů a zobrazit tak alternativní informace o parametru pro přetížení funkce.
 
-![Informace o parametrech](../ide/media/vs2015_param_info.png "VS2015_param_Info")
+![Parameter Info](../ide/media/vs2015_param_info.png "VS2015_param_Info")
 
 Když opatřujete poznámkami funkce a parametry s komentáři XML dokumentace, komentáře se zobrazí jako informace o parametru. Další informace najdete v tématu [zadávání komentářů ke kódu XML](../ide/supplying-xml-code-comments.md).
 
@@ -70,7 +72,7 @@ Informace o parametrech můžete vyvolat ručně tak, že zvolíte **upravit** >
 
 Rychlé informace zobrazí úplnou deklaraci pro libovolný identifikátor ve vašem kódu.
 
-![Rychlé informace sadě Visual Studio](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
+![Visual Studio Quick Info](../ide/media/vs2015_quick_info.png "VS2015_Quick_info")
 
 Když vyberete člena z **vypsat členy** pole, se také zobrazí rychlé informace.
 
@@ -109,7 +111,7 @@ MessageBox( hWnd, "String literal|")
 ## <a name="see-also"></a>Viz také
 
 [Specifické pro jazyk Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)  
-[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)  
+[C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [JavaScript IntelliSense](../ide/javascript-intellisense.md)  
 [Psaní a refaktoring kódu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  
 [Zadávání komentářů ke kódu XML](../ide/supplying-xml-code-comments.md)

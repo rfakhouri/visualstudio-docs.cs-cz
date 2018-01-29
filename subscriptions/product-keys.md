@@ -1,5 +1,5 @@
 ---
-title: "Použití kódů Product Key"
+title: "Použití kódů Product Key | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,13 +9,14 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Použití kódů Product Key v sadě Visual Studio předplatných
+
 ## <a name="product-keys-overview"></a>Přehled produktu klíče
 Visual Studio odběry poskytnout přístup k produkty Microsoft široký rozsah pro navrhování, vývoj, testování a představujících aplikace. Některé z těchto produktů vyžadují kódy product key během instalace a některé z nich vyžaduje aktivaci.
 
@@ -45,7 +46,7 @@ Pokud jste požadovaly maximální počet klíčů, které jsou k dispozici pro 
 Naše research ukazuje většina Odběratelé, kteří jsou předmětem počet součástí svoje předplatné kódy product key. Pokud potřebujete další klíčů, můžete odeslat žádost o prostřednictvím Visual Studio předplatné [oddělení služeb zákazníkům](https://www.visualstudio.com/subscriptions/support/) a bude považovat za ke schválení případ od případu.
 
 ## <a name="locating-and-claiming-product-keys"></a>Vyhledání a deklaraci identity kódy product key
-Chcete-li zobrazit product key, musíte být přihlášeni k předplatnému Visual Studio. Jednotlivých kódů product key se nacházejí výběrem modrý **získat klíč** odkaz pro konkrétní produkt na [stáhne](https://my.visualstudio.com/downloads) stránky, jak je uvedeno níže.  Všechny klíče jsou také k dispozici v agregace na [kódy Product Key](https://my.visualstudio.com/productkeys) stránky. Pokud pro jeden produkt existuje více klíčů, poznámky se zobrazí na sloupci poznámky ke stažení pro snazší identifikaci, který klíč by měl použít.
+Chcete-li zobrazit product key, musíte být přihlášeni k předplatnému Visual Studio. Jednotlivých kódů product key se nacházejí výběrem modrý **získat klíč** odkaz pro konkrétní produkt na [stáhne](https://my.visualstudio.com/downloads) stránky, jak je uvedeno níže.  Všechny klíče jsou také k dispozici v agregace na [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) stránky. Pokud pro jeden produkt existuje více klíčů, poznámky se zobrazí na sloupci poznámky ke stažení pro snazší identifikaci, který klíč by měl použít.
 
 ![Získat klíč ze stránky stahování](_img/product-keys/download-get-key.png)
 
@@ -68,7 +69,7 @@ Jsou k dispozici, v závislosti na produktu různé typy klíčů.
 |    Klíče výrobce OEM                    |    Toto jsou klíče výrobce, které umožňují víc aktivací.                                                                                                                                                                       |
 |    Prodejní DreamSpark klíč    |    Tyto klíče prodejní jsou pro DreamSpark a umožňují jeden aktivace. Prodejní DreamSpark klíče jsou vydávány v dávkách a jsou primárně určený pro studenty spotřeby.                                                                                     |
 |    Klíč DreamSpark testovacího prostředí         |    Tyto klíče použití testovacího prostředí jsou DreamSpark programů a umožňují víc aktivací. DreamSpark testovacím klíče jsou určeny k použití v univerzity počítače laboratorní scénáře.                                                                                       |
-|    Klíč k vícenásobné aktivaci DreamSpark         |    Toto jsou klíč k vícenásobné aktivaci klíče pro zákazníky programu DreamSpark.                                                                                                                                                                                                  |
+|    DreamSpark MAK Key         |    Toto jsou klíč k vícenásobné aktivaci klíče pro zákazníky programu DreamSpark.                                                                                                                                                                                                  |
 |
 
 Mohou médium nárokovat klíč ze stránky pro stažení produktu, nebo můžete vyhledat klíč musíte na [kódy Product Key](https://my.visualstudio.com/productkeys) stránky. 
@@ -79,7 +80,7 @@ Pouze odběratelé s aktivní odběry můžete stáhnout produkty a deklarace id
 
 Chcete-li nárokovat kód product key:
 1.  Přihlaste se k předplatnému Visual Studio.  Musí být přihlášený ke stažení produktů nebo deklarací kódy product key. 
-2.  Klikněte na [kódy Product Key](https://my.visualstudio.com/productkeys) kartě.
+2.  Klikněte na [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) kartě.
 3.  Kódy Product Key se abecední podle názvu produktu.  Můžete buď přejděte dolů na název požadované produktu nebo vyhledejte ji pomocí panelu Hledat v horní části stránky.  
 ![Vyhledejte kód Product Key](_img\product-keys\visio-product-key-cropped.png)
 
@@ -91,7 +92,7 @@ Můžete exportovat seznam všechny klíče, které jste požadovaly, společně
 
 **Důležité: Pokud vaše předplatné vyprší, bude už nebudete moct deklarace nových klíčů nebo exportovat klíče deklarovaný.** 
 
-Chcete-li exportovat klíče, klikněte jednoduše na **exportovat všechny klíče** tlačítko na pravé straně kódy Product Key.  Vytvoří se soubor XML s názvem KeysExport.xml a budete mít možnost otevřít nebo uložit soubor.  Musíte se k otevření souboru pomocí aplikace umožňuje zpracovávat soubory XML.  Například můžete otevřít soubor jako sešit v aplikaci Excel jen pro čtení.  
+Chcete-li exportovat klíče, klikněte jednoduše na **exportovat všechny klíče** odkaz na pravé straně kódy Product Key.  Vytvoří se soubor XML s názvem KeysExport.xml a budete mít možnost otevřít nebo uložit soubor.  Musíte se k otevření souboru pomocí aplikace umožňuje zpracovávat soubory XML.  Například můžete otevřít soubor jako sešit v aplikaci Excel jen pro čtení.  
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>Při předvádění Internet prostřednictvím Terminálové služby
 S předplatným Visual Studio, jste oprávněni poskytnout tak koncovým uživatelům přístup k Internetu při předvádění programy pomocí Terminálové služby (Windows Server 2003 nebo Windows Server 2008) nebo služby Vzdálená plocha (Windows Server 2008 R2 a novější). Až 200 anonymní uživatelé mohou mít současně přístup vaší ukázkový tímto způsobem. Vaše ukázkový nesmí používat provozními daty. Visual Studio Odběratelé, kteří mají licenci k ukázku svých aplikací pro koncové uživatele. Tato ukázka Internetu pomocí Terminálové služby (TS) nebo služby Vzdálená plocha (RDS) je jediný scénář, kde mohou koncoví uživatelé bez předplatného sady Visual Studio komunikovat s ukázkový aplikace při software se licencuje prostřednictvím Visual Odběry Studio.
@@ -99,8 +100,9 @@ S předplatným Visual Studio, jste oprávněni poskytnout tak koncovým uživat
 Toto je kromě práva pro vývoj/testování, kde odběratele Visual Studio můžete použít jako v mnoha RDS nebo TS připojení podle potřeby.
 
 ### <a name="enabling-rds-access"></a>Povolení přístupu vzdálené plochy 
-Visual Studio odběratele můžete zvýšit počet uživatelů, kteří mají přístup k Windows serveru pomocí vzdálené plochy zadáním kódu product key zadaný v [kódy Product Key](https://my.visualstudio.com/productkeys) na kartě [portál odběratele](https://my.visualstudio.com). Chcete-li získat kód product key, připojení k stránce kódy Product Key a posuňte se dolů a verzi Windows serveru se systémem. Vyhledejte "Windows Server < verze > R2 připojení vzdálené plochy < uživatele nebo zařízení >" a klikněte **klíč deklarace identity** odkaz. Například pokud používáte vzdálené plochy v systému Windows Server 2012 R2 a vaše nasazení používá licence CAL na uživatele, zvolte "Windows Server 2012 připojení vzdálené plochy uživatele (50)".
+Visual Studio odběratele můžete zvýšit počet uživatelů, kteří mají přístup k Windows serveru pomocí vzdálené plochy zadáním kódu product key zadaný v [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) na kartě [portál odběratele](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Chcete-li získat kód product key, připojení k stránce kódy Product Key a posuňte se dolů a verzi Windows serveru se systémem. Vyhledejte "Windows Server < verze > R2 připojení vzdálené plochy < uživatele nebo zařízení >" a klikněte **klíč deklarace identity** odkaz. Například pokud používáte vzdálené plochy v systému Windows Server 2012 R2 a vaše nasazení používá licence CAL na uživatele, zvolte "Windows Server 2012 připojení vzdálené plochy uživatele (50)".
 Pět klíče každého typu jsou k dispozici pro Windows Server 2008 R2 a každý klíč bude podporovat 20 připojení. Pro Windows Server 2012 R2, čtyři klíče pro každý typ jsou poskytují a bude podporovat 50 připojení. 
+
 #### <a name="to-enable-additional-connections-in-windows-server"></a>Povolit další připojení v systému Windows Server: 
 1.  Spusťte Správce serveru.
 2.  Otevřete v seznamu serverů v levém navigačního podokna.
@@ -113,4 +115,4 @@ Koncoví uživatelé mohou připojit k přístup k aplikacím prostřednictvím 
 - Až 200 souběžných uživatelských připojení lze pro ukázky aplikace. 
 - Kódy product key povolit připojení uživatele musí být získána předplatitele sady Visual Studio.
 
-Pokud budete potřebovat pokyny pro nastavení licencování VP na serveru, najdete v tématu [konfigurace licencování VP ve Windows serveru 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Pokud máte nějaké dotazy, navštivte [fórum služby Vzdálená plocha společnosti Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/en-US/home?forum=winserverTS). 
+Pokud budete potřebovat pokyny pro nastavení licencování VP na serveru, najdete v tématu [konfigurace licencování VP ve Windows serveru 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx). Pokud máte nějaké dotazy, navštivte [fórum služby Vzdálená plocha společnosti Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS). 

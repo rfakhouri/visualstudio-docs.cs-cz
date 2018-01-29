@@ -4,12 +4,14 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: VS.ReferenceManager
+f1_keywords:
+- VS.ReferenceManager
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - references [Visual Studio], adding
 - assemblies [Visual Studio], references
 - Visual Basic projects, references
@@ -23,12 +25,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 34dd559abcbfa6172c52edd2ed5eae2898f0b358
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: aefd0227717352e449b51950620d0f0900cf2e60
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů
 
@@ -161,7 +164,7 @@ Karta Windows obsahuje všechny sady SDK, které jsou specifické pro platformy,
 
 Soubor WinMD je možné v sadě Visual Studio vygenerovat dvěma způsoby:
 
-- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]aplikace spravované projekty**: [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projekty aplikací můžete výstup WinMD binárních souborů nastavením vlastnosti projektu &#124; Výstupní typ = souboru WinMD. Název souboru WinMD musí představovat nadřazený obor názvů všech oborů názvů, které existují jeho v rámci. Pokud například projekt obsahuje obory názvů A.B a A.B.C, možné názvy pro soubory WinMD na jeho výstupu jsou A.winmd a A.B.winmd. Pokud uživatel zadá vlastnosti projektu &#124; Název sestavení nebo vlastnosti projektu &#124; Namespace hodnotu, která je nesouvislý ze sady obory názvů v projektu nebo je nadmnožinou obor názvů v rámci projektu, se generuje upozornění sestavení: 'A.winmd' není platný .winmd název souboru pro toto sestavení. Všechny typy v rámci souboru metadat systému Windows musejí existovat v podřízeném oboru názvů daného názvu souboru. Typy, které nejsou v oboru názvů sub názvu souboru, nebudete moci být umístěné za běhu. V tomto sestavení je nejmenší společný obor názvů CSWSClassLibrary1“. Plochy projektu jazyka Visual Basic a Visual C# můžete využívat pouze WinMDs, který je vytvořen pomocí [!INCLUDE[win8](../debugger/includes/win8_md.md)] sady SDK, které se označují jako první strany WinMDs a WinMDs nelze vygenerovat.
+- **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]aplikace spravované projekty**: [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projekty aplikací můžete výstup WinMD binárních souborů nastavením vlastnosti projektu &#124; Výstupní typ = souboru WinMD. Název souboru WinMD musí představovat nadřazený obor názvů všech oborů názvů, které existují jeho v rámci. Pokud například projekt obsahuje obory názvů A.B a A.B.C, možné názvy pro soubory WinMD na jeho výstupu jsou A.winmd a A.B.winmd. Pokud uživatel zadá vlastnosti projektu &#124; Název sestavení nebo vlastnosti projektu &#124; Namespace hodnotu, která je nesouvislý ze sady obory názvů v projektu nebo je nadmnožinou obor názvů v rámci projektu, se generuje upozornění sestavení: 'A.winmd' není platný .winmd název souboru pro toto sestavení. Všechny typy v rámci souboru metadat systému Windows musejí existovat v podřízeném oboru názvů daného názvu souboru. Typy, které nejsou v oboru názvů sub názvu souboru, nebudete moci být umístěné za běhu. V tomto sestavení je nejmenší společný obor názvů CSWSClassLibrary1“. Plochy projektu Visual Basic a C# můžete využívat pouze WinMDs, který je vytvořen pomocí [!INCLUDE[win8](../debugger/includes/win8_md.md)] sady SDK, které se označují jako první strany WinMDs a WinMDs nelze vygenerovat.
 
 - **[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]Nativní projekty aplikací**: nativní WinMD soubor obsahuje pouze metadata. Jeho implementace se nachází v samostatném souboru knihovny DLL. Jeden může vytvářet nativní binární soubory výběrem šablony projektu komponenty prostředí Windows Runtime **nový projekt** dialogové okno nebo spuštěním z prázdného projektu a změna vlastností projektu pro generování souboru WinMD. Pokud projekt obsahuje nesouvislé obory názvů, chyba sestavení oznámí uživateli, aby sloučit své obory názvů nebo spustit nástroj MSMerge.
 

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - resources [Visual Studio], fallback system
 - resource files, fallback processes
 ms.assetid: dadf8f2c-f74c-44d7-bec0-a1e956d8d38d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8235f246a52e3f8f53536abdf1aba2c0dede875d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cc663c02d3151e6dd55c1c35388ac7b33f049bb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Hierarchická organizace zdrojů pro lokalizaci
 V sadě Visual Studio jsou uložené v samostatné soubory lokalizované prostředky (například řetězce a bitové kopie, které jsou vhodné pro každou jazykovou verzi data) a načíst podle nastavení jazykové verze uživatelského rozhraní. Zjistit, jak jsou načíst lokalizované prostředky, je vhodné považovat je jako hierarchické uspořádání.  
@@ -50,10 +52,9 @@ V sadě Visual Studio jsou uložené v samostatné soubory lokalizované prostř
   
  ![NeutralSpecificResources – grafika](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
-## <a name="see-also"></a>Viz také  
- [Neutrální jazyky zdrojů pro lokalizaci](../ide/neutral-resources-languages-for-localization.md)   
- [Zabezpečení a lokalizovaná satelitní sestavení](../ide/security-and-localized-satellite-assemblies.md)   
- [Lokalizace aplikací](../ide/localizing-applications.md)   
- [Globalizace a lokalizace aplikací](../ide/globalizing-and-localizing-applications.md)   
- [Postupy: nastavení jazykové verze a jazyková verze uživatelského rozhraní pro globalizace Windows Forms](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)   
- [Postupy: nastavení jazykové verze a jazyková verze uživatelského rozhraní pro globalizaci webové stránky ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+## <a name="see-also"></a>Viz také
+
+[Neutrální jazyky zdrojů pro lokalizaci](../ide/neutral-resources-languages-for-localization.md)  
+[Zabezpečení a lokalizovaná satelitní sestavení](../ide/security-and-localized-satellite-assemblies.md)  
+[Lokalizace aplikací](../ide/localizing-applications.md)  
+[Globalizace a lokalizace aplikací](../ide/globalizing-and-localizing-applications.md)

@@ -3,21 +3,24 @@ title: "Rady a tipy pro zvýšení výkonu sady Visual Studio | Microsoft Docs"
 ms.date: 08/31/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: debugger
+helpviewer_keywords:
+- debugger
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b703fd45732e3fd083a5c95b68647f67dce57b3a
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: f15f9b34a19617986ca64f9b13af1b28d4c9d01a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Rady a tipy pro zvýšení výkonu sady Visual Studio
 
@@ -32,7 +35,7 @@ Visual Studio výkonu doporučení jsou určené pro situace, nedostatek paměti
 
     Pokud upgradujete systém z 32bitové verze systému Windows na 64bitovou verzi, rozbalte velikost virtuální paměti, které jsou k dispozici pro Visual Studio z 2 GB do 4 GB. To umožňuje sadě Visual Studio pro zpracování podstatně větší zatížení, i když je 32bitový proces.
 
-    Další informace najdete v tématu [paměťová omezení](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) a [pomocí/LARGEADDRESSAWARE na 64bitovém systému Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Další informace najdete v tématu [paměťová omezení](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) a [pomocí/LARGEADDRESSAWARE na 64bitovém systému Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Konfigurace řešení a projekty
 
@@ -47,6 +50,7 @@ Pokud máte velké řešení s mnoha projektů, může mít užitek tím, že pr
     Řešení můžete rozdělit na několik menších souborů řešení s běžně používanými projekty. Tato refaktoring by výrazně snížit využití paměti pro pracovní postup. Menší řešení načíst také rychlejší.
 
 ## <a name="configure-debugging-options"></a>Konfigurace možností ladění
+
 Pokud jste se obvykle dostatek paměti během relace ladění, můžete optimalizovat výkon tím, že jeden nebo více změn konfigurace.
 
 - **Povolit pouze můj kód**
@@ -74,6 +78,7 @@ Pokud jste se obvykle dostatek paměti během relace ladění, můžete optimali
     Další informace najdete v tématu [nástrojích pro profilaci](../profiling/profiling-tools.md).
 
 ## <a name="disable-tools-and-extensions"></a>Zakázat nástroje a rozšíření
+
 Některé nástroje nebo rozšíření může vypnuté ke zlepšení výkonu.
 
 > [!TIP]
@@ -123,7 +128,8 @@ Chcete-li vynutit uvolnění paměti, použijte klávesová zkratka: **Ctrl + Al
 
 Pokud vynucení uvolňování paměti spolehlivě provede váš scénář fungovat, soubor sestavy pomocí nástroje Visual Studio zpětnou vazbu, jak toto chování je pravděpodobné, že chyby.
 
-Podrobný popis garbage collector v CLR, najdete v části [základní z kolekce paměti](https://msdn.microsoft.com/en-us/library/ee787088(v=vs.110).aspx).
+Podrobný popis garbage collector v CLR, najdete v části [základní z kolekce paměti](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Viz také  
- [Integrované vývojové prostředí sady Visual Studio](../ide/index.md)
+## <a name="see-also"></a>Viz také
+
+[Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)

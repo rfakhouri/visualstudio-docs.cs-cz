@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +23,17 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: "35"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 94f2683611dd04555fdd842e96f2c1ee4bb20fb1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Sestavování a čištění projektů a řešení v sadě Visual Studio
 Pomocí postupů v tomto tématu lze vytvořit, znovu sestavit nebo vyčistit všechny nebo některé z projektů nebo položky projektu v řešení. Podrobný kurz, najdete v části [návod: vytváření aplikace](../ide/walkthrough-building-an-application.md).  
@@ -58,11 +60,11 @@ Pomocí postupů v tomto tématu lze vytvořit, znovu sestavit nebo vyčistit v�
   
 1.  V **Průzkumníku**, zvolte nebo otevřete projekt.  
   
-2.  Na řádku nabídek zvolte **sestavení**a potom vyberte buď **sestavení***ProjectName* nebo **znovu sestavit***ProjectName*.  
+2.  Na řádku nabídek zvolte **sestavení**a potom vyberte buď **sestavení *** ProjectName* nebo **znovu sestavit *** ProjectName*.  
   
-    -   Zvolte **sestavení***ProjectName* vytvářet jen ty součásti, které se změnily od poslední sestavení projektu.  
+    -   Zvolte **sestavení *** ProjectName* vytvářet jen ty součásti, které se změnily od poslední sestavení projektu.  
   
-    -   Zvolte **znovu sestavit***ProjectName* "vyčistěte" projekt a následně vytvořit soubory projektu a všechny součásti projektu.  
+    -   Zvolte **znovu sestavit *** ProjectName* "vyčistěte" projekt a následně vytvořit soubory projektu a všechny součásti projektu.  
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>K vytvoření spouštěný projekt a jeho závislosti  
   
@@ -111,11 +113,12 @@ Pomocí postupů v tomto tématu lze vytvořit, znovu sestavit nebo vyčistit v�
     -   Zvolte Ctrl + Break klíče.  
   
 ## <a name="see-also"></a>Viz také
-[Postupy: zobrazení, uložit a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)   
-[Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)   
-[Kompilaci a sestavování](../ide/compiling-and-building-in-visual-studio.md)   
-[Principy konfigurací sestavení](../ide/understanding-build-configurations.md)   
-[Konfigurace ladění a verzí projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
-[Odkaz sestavení C/C++](/cpp/build/reference/c-cpp-building-reference)   
-[Přepínače příkazového řádku nástroje devenv](../ide/reference/devenv-command-line-switches.md)   
+
+[Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Získávání protokolů o sestavení](../msbuild/obtaining-build-logs-with-msbuild.md)  
+[Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)  
+[Principy konfigurací sestavení](../ide/understanding-build-configurations.md)  
+[Postupy: Nastavení konfigurace ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md)  
+[Referenční zdroje k sestavení programu v jazyce C/C++](/cpp/build/reference/c-cpp-building-reference)  
+[Devenv – přepínače příkazového řádku](../ide/reference/devenv-command-line-switches.md)  
 [Projekty a řešení](../ide/solutions-and-projects-in-visual-studio.md)

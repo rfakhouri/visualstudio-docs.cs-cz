@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,19 +25,21 @@ helpviewer_keywords:
 - formatting [C#]
 - Text Editor Options dialog box, formatting
 ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 2032b0b50c9f22396d63b32b1d050eb40ea70a79
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 0c4303cb996094562ed955e58f6b7ec37b38fc2c
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-formatting"></a>Možnosti, textový editor, C#, formátování
-Použití **formátování** dialogové okno stránky vlastností pro nastavení možností pro formátování kódu v editoru kódu. Pro přístup k tohoto dialogového okna, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte položku **textového editoru**, rozbalte položku **C#**a potom klikněte na  **Formátování**.  
+
+Použití **formátování** dialogové okno stránky vlastností pro nastavení možností pro formátování kódu v editoru kódu. Pro přístup k **možnosti** dialogové okno v sadě Visual Studio, klikněte na tlačítko **nástroje** > **možnosti**. Potom rozbalte **textového editoru**, rozbalte položku **C#**, rozbalte položku **kódu stylu**a potom klikněte na **formátování**.  
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  

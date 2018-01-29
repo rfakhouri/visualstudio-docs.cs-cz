@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,16 +24,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: "27"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 596e9e6dfa5f7fb464430636f696e37748ccb8eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e26a9fa0daf5c92c81161bdcafd92490f9a05113
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Přizpůsobení rozložení oken v sadě Visual Studio
 V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systému windows pro vytvoření rozložení oken, která nejlépe pro různé pracovní postupy pro vývoj. Při přizpůsobování rozložení IDE ho pamatuje. Například, pokud změníte ukotvení umístění **Průzkumníku řešení** a pak zavřete Visual Studio, při příštím spuštění se i v případě, že pracujete v jiném počítači, **Průzkumníku řešení** bude ukotveno v tomto stejné umístění. Můžete také pojmenujte vlastní rozložení a uložit jej a potom přepínat mezi rozložení pomocí jednoho příkazu. Například můžete vytvořit rozložení pro úpravy a druhou pro ladění a přepínat mezi nimi pomocí **okno &#124; Použít rozložení okna** příkazu nabídky.  
@@ -80,7 +82,7 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
 > [!NOTE]
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
 
-### <a name="dock-windows"></a>Dokování oken  
+### <a name="dock-windows"></a>Dock Windows  
  Když klikněte na tlačítko a přetáhněte ji na záhlaví okna nástroje nebo na kartě okna dokumentu, zobrazí se Průvodce kosočtverec. Během operace přetažení Pokud se ukazatel myši nad jednu z šipky v kosočtverec, podbarvené oblasti se objeví který ukazuje, kde bude okno ukotveno, pokud teď uvolnění tlačítka myši.  
 
  Chcete-li přesunout lze ukotvit okno bez uchycení na místo, zvolte klávesu Ctrl a přetáhněte okna.  
@@ -134,7 +136,7 @@ V sadě Visual Studio můžete přizpůsobit pozici, velikost a chování systé
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Vytvoření projektu uživatelského rozhraní a přizpůsobení rozložení  
 
-1.  V **nový projekt** dialogové okno, vytvořte Visual C# plochy aplikace WPF a volání se vám líbí. Předstírají, že je projekt kde jsme budete pracovat v uživatelském rozhraní, tak chcete maximalizovat místa pro návrháře okno a stranou přesunout jiné nástroje systému windows.  
+1.  V **nový projekt** dialogové okno, vytvořte aplikaci plochy WPF C# a volání se vám líbí. Předstírají, že je projekt kde jsme budete pracovat v uživatelském rozhraní, tak chcete maximalizovat místa pro návrháře okno a stranou přesunout jiné nástroje systému windows.  
 
 2.  Pokud máte více monitorů, pull **Průzkumníku řešení** okno a **vlastnosti** okno přes na druhém monitoru. Na jednom monitorování systému zavřete všechna okna s výjimkou návrháře.  
 

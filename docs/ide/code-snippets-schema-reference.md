@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: "17"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b3fdf8728e5afd839718e31e4eb6b113b8f9cde2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c267b110b67a69b526bb7efc985bb22bb954b3a1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="code-snippets-schema-reference"></a>Fragmenty kódu – odkaz schématu
 IntelliSense – fragmenty kódu jsou předem vytvořené části kódu, které jsou připravené pro vložení do vaší aplikace pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Svou produktivitu můžete zvýšit tak, že vytvoříte fragmenty kódu, které snižují množství času stráveného zadáváním opakujícího se kódu nebo hledáním ukázek. Schéma XML fragment kódu technologie IntelliSense vám pomůže vytvořit vlastní fragmenty kódu a přidat je do fragmenty kódu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] již obsahuje.  
@@ -36,9 +38,9 @@ IntelliSense – fragmenty kódu jsou předem vytvořené části kódu, které 
 |[Element kódu](../ide/code-snippets-schema-reference.md#code)|[Import – Element](../ide/code-snippets-schema-reference.md#import)|[Element fragmentu kódu](../ide/code-snippets-schema-reference.md#snippet)|  
 |[CodeSnippet Element](../ide/code-snippets-schema-reference.md#codesnippet)|[Import – Element](../ide/code-snippets-schema-reference.md#imports)|[SnippetType Element](../ide/code-snippets-schema-reference.md#snippettype)|  
 |[CodeSnippets Element](../ide/code-snippets-schema-reference.md#codesnippets)|[Element – klíčové slovo](../ide/code-snippets-schema-reference.md#keyword)|[SnippetTypes Element](../ide/code-snippets-schema-reference.md#snippettypes)|  
-|[Deklarace Element](../ide/code-snippets-schema-reference.md#declarations)|[Element klíčová slova](../ide/code-snippets-schema-reference.md#keywords)|[Title Element](../ide/code-snippets-schema-reference.md#title)|  
+|[Deklarace Element](../ide/code-snippets-schema-reference.md#declarations)|[Keywords Element](../ide/code-snippets-schema-reference.md#keywords)|[Title Element](../ide/code-snippets-schema-reference.md#title)|  
 |[Výchozí Element](../ide/code-snippets-schema-reference.md#default)|[Literál elementu](../ide/code-snippets-schema-reference.md#literal)|[Element popisu tlačítka](../ide/code-snippets-schema-reference.md#tooltip)|  
-|[Description – Element](../ide/code-snippets-schema-reference.md#description)|[Namespace – Element](../ide/code-snippets-schema-reference.md#namespace)|[Typ elementu](../ide/code-snippets-schema-reference.md#type)|  
+|[Description – Element](../ide/code-snippets-schema-reference.md#description)|[Namespace Element](../ide/code-snippets-schema-reference.md#namespace)|[Typ elementu](../ide/code-snippets-schema-reference.md#type)|  
 |[Element – funkce](../ide/code-snippets-schema-reference.md#function)|[Object Element](../ide/code-snippets-schema-reference.md#object)|[Adresa URL elementu](../ide/code-snippets-schema-reference.md#url)|  
 |[Header Element](../ide/code-snippets-schema-reference.md#header)|[Referenční dokumentace elementu](../ide/code-snippets-schema-reference.md#reference)||  
   
@@ -240,7 +242,7 @@ Nejsou k dispozici pro tento element kódu tři atributy:
  Určuje funkci, která se má provést, když literál nebo objekt získá fokus v sadě Visual Studio.  
   
 > [!NOTE]
->  `Function` Element je podporována pouze v fragmenty kódu jazyka Visual C#.  
+>  `Function` Element je podporována pouze v fragmenty kódu v C#.  
   
 ```xml  
 <Function>  
@@ -275,7 +277,7 @@ Nejsou k dispozici pro tento element kódu tři atributy:
 |[Autor – Element](../ide/code-snippets-schema-reference.md#author)|Volitelný element. Jméno osoby nebo společnosti, která fragment kódu vytvořila. Může být nula nebo jeden `Author` elementů v `Header` elementu.|  
 |[Description – Element](../ide/code-snippets-schema-reference.md#description)|Volitelný element. Popis fragmentu kódu. Může být nula nebo jeden `Description` elementů v `Header` elementu.|  
 |[HelpUrl Element](../ide/code-snippets-schema-reference.md#helpurl)|Volitelný element. Adresa URL s dalšími informacemi o fragmentu kódu. Může být nula nebo jeden `HelpURL` prvky v záhlaví elementu. **Poznámka:** Visual Studio nepoužívá `HelpUrl` elementu. Tento element je součástí schématu XML fragmentu kódu technologie IntelliSense a jakékoli fragmenty kódu, které tento element obsahují, budou úspěšně ověřeny, ale hodnota elementu nebude nikdy použita.|  
-|[Element klíčová slova](../ide/code-snippets-schema-reference.md#keywords)|Volitelný element. Skupiny `Keyword` elementy. Může být nula nebo jeden `Keywords` elementů v `Header` elementu.|  
+|[Keywords Element](../ide/code-snippets-schema-reference.md#keywords)|Volitelný element. Skupiny `Keyword` elementy. Může být nula nebo jeden `Keywords` elementů v `Header` elementu.|  
 |[Zástupce – Element](../ide/code-snippets-schema-reference.md#shortcut)|Volitelný element. Určuje textovou zkratku, pomocí níž lze fragment kódu vložit. Může být nula nebo jeden `Shortcut` elementů v `Header` elementu.|  
 |[SnippetTypes Element](../ide/code-snippets-schema-reference.md#snippettypes)|Volitelný element. Skupiny `SnippetType` elementy. Může být nula nebo jeden `SnippetTypes` elementů v `Header` elementu. Pokud neexistují žádné `SnippetTypes` elementů fragmentu kódu je vždy platný.|  
 |[Title Element](../ide/code-snippets-schema-reference.md#title)|Požadovaný element. Popisný název fragmentu kódu. Musí být přesně jeden `Title` element v `Header` elementu.|  
@@ -332,7 +334,7 @@ Nejsou k dispozici pro tento element kódu tři atributy:
   
 |Podřízený element|Popis|  
 |-------------------|-----------------|  
-|[Namespace – Element](../ide/code-snippets-schema-reference.md#namespace)|Požadovaný element. Určuje obor názvů používaný fragmentem kódu. Musí být přesně jeden `Namespace` element v `Import` elementu.|  
+|[Namespace Element](../ide/code-snippets-schema-reference.md#namespace)|Požadovaný element. Určuje obor názvů používaný fragmentem kódu. Musí být přesně jeden `Namespace` element v `Import` elementu.|  
   
 |Nadřazený element|Popis|  
 |--------------------|-----------------|  
@@ -369,7 +371,7 @@ Nejsou k dispozici pro tento element kódu tři atributy:
   
 |Nadřazený element|Popis|  
 |--------------------|-----------------|  
-|[Element klíčová slova](../ide/code-snippets-schema-reference.md#keywords)|Jednotlivé skupiny `Keyword` elementy.|  
+|[Keywords Element](../ide/code-snippets-schema-reference.md#keywords)|Jednotlivé skupiny `Keyword` elementy.|  
   
  Je vyžadována textová hodnota. Klíčové slovo fragmentu kódu.  
   
@@ -563,7 +565,7 @@ Nejsou k dispozici pro tento element kódu tři atributy:
   
 -   `Expansion`: umožňuje fragment kódu, který má být vložen na pozici kurzoru.  
   
--   `Refactoring`: Určuje, že je během Visual C# refaktoring používá fragmentu kódu. `Refactoring`nelze použít v fragmenty vlastní kód.  
+-   `Refactoring`: Určuje, že je během C# refaktoring používá fragmentu kódu. `Refactoring`nelze použít v fragmenty vlastní kód.  
   
 ##  <a name="snippettypes"></a>SnippetTypes Element  
  Jednotlivé skupiny `SnippetType` elementy. Pokud `SnippetTypes` element není k dispozici, fragmentu kódu můžete vložit kdekoli v kódu.  

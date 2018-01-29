@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,19 +14,19 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
-caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 13d04bde21f46fd8950e79464beccfe2228633aa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c0683e9c619352c6d3f7d0cb431d3e2c973b6270
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Stránka Aplikace, návrhář projektu (Visual Basic)
+
 Použití **aplikace** stránky v Návrháři projektu zadat nastavení aplikace a vlastnosti projektu.  
   
 Pro přístup k **aplikace** vyberte uzel projektu (ne **řešení** uzel) v **Průzkumníku řešení**. Zvolte **projektu**, **vlastnosti** v řádku nabídek. Jakmile se zobrazí v Návrháři projektu, klikněte **aplikace** kartě.  
@@ -111,7 +112,7 @@ Pro přístup k **aplikace** vyberte uzel projektu (ne **řešení** uzel) v **P
  Následující nastavení jsou k dispozici v **vlastnosti framework aplikace Windows** části. Tyto možnosti jsou dostupné pouze v případě **Povolit aplikační rozhraní** je zaškrtnuté políčko. Popisuje části následující touto **vlastnosti framework aplikace Windows** nastavení pro aplikace Windows Presentation Foundation (WPF).  
   
  **Povolit vizuální styly XP**  
- Povolí nebo zakáže vizuální styly Windows XP, také známé jako *motivy systému Windows XP*. Vizuální styly Windows XP povolit, například ovládací prvky s zaoblenými hranami a dynamické barvy. Výchozí hodnota je povoleno. Další informace o vizuální styly Windows XP najdete v tématu [funkce systému Windows XP a Windows Forms – ovládací prvky](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)).  
+ Povolí nebo zakáže vizuální styly Windows XP, také známé jako *motivy systému Windows XP*. Vizuální styly Windows XP povolit, například ovládací prvky s zaoblenými hranami a dynamické barvy. Výchozí hodnota je povoleno.
   
  **Ujistěte se, jedna instance aplikace**  
  Zaškrtněte toto políčko, pokud chcete zabránit uživatelům ve spouštění více instancí aplikace. Ve výchozím nastavení toto políčko není zaškrtnuté. Toto nastavení umožňuje několik instancí aplikace ke spuštění.  
@@ -157,7 +158,4 @@ Pro přístup k **aplikace** vyberte uzel projektu (ne **řešení** uzel) v **P
  **Zobrazit události aplikace**  
  Kliknutím na toto tlačítko Zobrazit `Application` soubor částečné třídy (Application.xaml.vb) v editoru kódu. Pokud soubor neexistuje, vytvoří Návrhář projektu s názvem příslušné třídy a obor názvů.  
   
- <xref:System.Windows.Application> Objekt vyvolává události, když dojde k určité změny stavu aplikace (například na spuštění aplikace nebo ukončení). Úplný seznam událostí, které tato třída poskytuje, naleznete v části <xref:System.Windows.Application>. Tyto události jsou zpracovávány v části kódu uživatele `Application` třídu.  
-  
-## <a name="see-also"></a>Viz také  
-[Správa vlastností aplikace](../../ide/application-properties.md) [psaní kódu v řešeních pro systém Office](/office-dev/office-dev/writing-code-in-office-solutions)
+ <xref:System.Windows.Application> Objekt vyvolává události, když dojde k určité změny stavu aplikace (například na spuštění aplikace nebo ukončení). Úplný seznam událostí, které tato třída poskytuje, naleznete v části <xref:System.Windows.Application>. Tyto události jsou zpracovávány v části kódu uživatele `Application` třídu.

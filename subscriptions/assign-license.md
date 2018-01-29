@@ -1,5 +1,5 @@
 ---
-Title: Assign licenses to Visual Studio Subscriptions
+Title: Assign licenses to Visual Studio Subscriptions | Microsoft Docs
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -9,13 +9,14 @@ Description: Learn how administrators can assign licenses to subscribers
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: d9d26c9519ec5cca1f7127f93d9d1ab60378ad3f
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: b82f02b968398d0a8d1ce4872ce00e8447a2ae4d
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Přiřazování licencí na portálu správce předplatných sady Visual Studio
+
 ## <a name="assigning-a-single-user"></a>Přiřazení jenom jednoho konkrétního uživatele
 Pokud máte k dispozici licence pro předplatné sady Visual Studio, můžete přiřadit těchto licencí pro nové uživatele pro ně pro přístup k jejich odběru výhody. 
 1.  Přiřadit jeden odběratel Visual Studio, v horní části tabulky, klikněte na tlačítko **přidat**.
@@ -26,11 +27,11 @@ Pokud máte k dispozici licence pro předplatné sady Visual Studio, můžete p�
 
 Pokud má vaše organizace jiný e-mail pro příjem e-mailů než ten, který se má použít pro přihlášení, máte možnost pro zadání ho sem. Vyberte na odkaz, který označuje "Jinou e-mailovou komunikaci než přihlášení?". 
 
-Pokud chcete mít přístupu pro stahování softwaru při zápisu do tohoto odběratele [Visual Studio odběry portál](https:/my.visualstudio.com), ponechte zaškrtnutým políčkem stahování. Pokud zvolíte možnost zrušte zaškrtnutí tohoto políčka, uživatel nebude mít přístup k stažení softwaru, ale bude mít dál přístup k všechny další výhody, které jsou zahrnuty v rámci předplatného. Když jste hotovi, klikněte na tlačítko **přidat**.
+Pokud chcete mít přístupu pro stahování softwaru při zápisu do tohoto odběratele [Visual Studio odběry portál](https:/my.visualstudio.com?wt.mc_id=o~msft~docs), ponechte zaškrtnutým políčkem stahování. Pokud zvolíte možnost zrušte zaškrtnutí tohoto políčka, uživatel nebude mít přístup k stažení softwaru, ale bude mít dál přístup k všechny další výhody, které jsou zahrnuty v rámci předplatného. Když jste hotovi, klikněte na tlačítko **přidat**.
 
-  ![Zadejte informace o odběru](_img\assign-license-add\add-subscriber-1.png)
+   ![Zadejte informace o odběru](_img\assign-license-add\add-subscriber-1.png)
 
-  ![Zadejte informace o odběru](_img\assign-license-add\add-subscriber-2.png)
+   ![Zadejte informace o odběru](_img\assign-license-add\add-subscriber-2.png)
 
 3.  Po přidání odběratele, se automaticky odesílat e-mailu přiřazení nové odběratele s další pokyny. Přiřazení e-mailu můžete kdykoli znovu odeslat výběrem odběratele a kliknutím na **znovu odeslal** tlačítka v horní nabídce.
 
@@ -43,7 +44,7 @@ Pokud chcete mít přístupu pro stahování softwaru při zápisu do tohoto odb
 
 2. Hromadně přiřadit používá šablonu aplikace Microsoft Excel nahrát odběratele. V dialogovém okně nahrát více odběrateli, klikněte na tlačítko **Stáhnout** stáhnout šablonu. Vždy stáhněte nejnovější verzi této šablony. Pokud používáte starší verzi, odeslání hromadné se pravděpodobně nezdaří.
 
-![Nahrát několik odběratele](_img\assign-license-add\bulk-assign-upload.png)
+    ![Nahrát několik odběratele](_img\assign-license-add\bulk-assign-upload.png)
 
 3.  Vyplňte pole pomocí informací pro jednotlivce, které chcete přiřadit odběry v tabulce aplikace Excel. Odkaz je volitelné pole. Pokud jste vyplnili všechny součástí šablony nesprávně, měli byste vidět chybová zpráva s popisem problému. Uložte soubor na vašem pevném disku po dokončení.
 **K zajištění načtení smooth, sledujte následující osvědčené postupy:**
@@ -51,7 +52,7 @@ Pokud chcete mít přístupu pro stahování softwaru při zápisu do tohoto odb
     - Odebrání mezer před a po polí formuláře, jako jsou jména uživatelů.
     - Zajistěte, aby se jména uživatelů neobsahují mezery mezi názvy první nebo poslední dvě části (například dvě části křestní jméno, například "Maggie může" by neměl být zadán jako "Maggie může" jako systém nebude trim volné místo)
 
-    ![Hromadné přidání šablony](_img\assign-license-add\bulk-template.png)
+   ![Hromadné přidání šablony](_img\assign-license-add\bulk-template.png)
 
 4.  Vrátit na portál pro správu předplatných Visual Studio a v dialogovém okně nahrát více odběrateli, klikněte na tlačítko **Procházet**. Přejděte k souboru aplikace Excel, který jste uložili a klikněte na tlačítko **OK**. Průběh nahrávání se zobrazí na obrazovce. 
 

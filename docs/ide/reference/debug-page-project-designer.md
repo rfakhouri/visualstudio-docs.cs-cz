@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vb.ProjectPropertiesDebug
+f1_keywords:
+- vb.ProjectPropertiesDebug
 helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-caps.latest.revision: "32"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a16f39d9f9ba6c3e0790a53c85d0824178083953
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 305f5160ab91fdfa61e9133ab9f867194e4a117f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="debug-page-project-designer"></a>Stránka Ladění, návrhář projektu
 > [!WARNING]
@@ -29,16 +32,16 @@ ms.lasthandoff: 12/22/2017
   
  Použití **ladění** stránky **Návrhář projektu** pro nastavení vlastností pro ladění chování v projektu jazyka Visual Basic nebo C#.  
   
- Abyste měli přístup **ladění** vyberte uzel projektu v **Průzkumníku řešení**. Na **projektu** nabídce zvolte *ProjectName***vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **ladění** kartě.  
+ Abyste měli přístup **ladění** vyberte uzel projektu v **Průzkumníku řešení**. Na **projektu** nabídce zvolte * ProjectName ***vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **ladění** kartě.  
   
 ## <a name="configuration-and-platform"></a>Konfigurace a platformy  
  Následující možnosti vám umožňují vyberte konfigurace a platformy můžete zobrazit nebo upravit.  
   
  **Konfigurace**  
- Určuje nastavení konfigurace, které chcete zobrazit nebo změnit. Toto nastavení může být **ladění** (výchozí), **verze**, nebo **všechny konfigurace**. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje nastavení konfigurace, které chcete zobrazit nebo změnit. Toto nastavení může být **ladění** (výchozí), **verze**, nebo **všechny konfigurace**.
   
  **Platforma**  
- Určuje nastavení platformy, které chcete zobrazit nebo změnit. Může zahrnovat volby **libovolný procesor** (výchozí), **x64**, a **x86**. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Určuje nastavení platformy, které chcete zobrazit nebo změnit. Může zahrnovat volby **libovolný procesor** (výchozí), **x64**, a **x86**.
   
 ## <a name="start-action"></a>Zahájení  
  **Zahájení** označuje položky se spustí, když je ladit aplikace: projektu, vlastní program, adresu URL nebo nic. Ve výchozím nastavení je tato možnost nastavena na **spuštění projektu**. **Spustit akci** nastavení na **ladění** stránka určuje hodnotu `StartAction` vlastnost.  
@@ -74,10 +77,10 @@ ms.lasthandoff: 12/22/2017
   
  Chcete-li ladit v zóně zabezpečení, musíte povolit tuto možnost a **ladění tuto aplikaci s vybraným nastavením oprávnění** v [rozšířené zabezpečení dialogové okno nastavení](../../ide/reference/advanced-security-settings-dialog-box.md).  
   
-## <a name="see-also"></a>Viz také  
- [Ladění v sadě Visual Studio](../../debugger/debugging-in-visual-studio.md)   
- [Konfigurace ladění nastavení projektu pro jazyk C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Nastavení projektu jazyka Visual Basic konfiguraci ladění](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Správa vlastností ladění](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Postupy: ladění aplikace ClickOnce s omezenými oprávněními](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Postupy: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md)
+## <a name="see-also"></a>Viz také
+
+[Ladění v sadě Visual Studio](../../debugger/debugging-in-visual-studio.md)  
+[Konfigurace ladění nastavení projektu pro jazyk C#](../../debugger/project-settings-for-csharp-debug-configurations.md)  
+[Nastavení projektu jazyka Visual Basic konfiguraci ladění](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
+[Postupy: Ladění aplikace ClickOnce s omezenými oprávněními](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)  
+[Postupy: Vytvoření a úprava konfigurací](../../ide/how-to-create-and-edit-configurations.md)

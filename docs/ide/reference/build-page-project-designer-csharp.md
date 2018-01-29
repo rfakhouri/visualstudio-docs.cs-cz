@@ -4,24 +4,27 @@ ms.custom:
 ms.date: 06/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: cs.ProjectPropertiesBuild
+f1_keywords:
+- cs.ProjectPropertiesBuild
 helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-caps.latest.revision: "43"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: bc470eb36e700f136fec57e208c5bd920ea5e073
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 233bb7516678888a2c7c4e6ec0b1b4f7d21b1393
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="build-page-project-designer-c"></a>Stránka Sestavení, návrhář projektu (C#)
 Použití **sestavení** stránky **Návrhář projektu** zadat vlastnosti konfigurace sestavení projektu. Tato stránka se vztahuje na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze projekty.  
@@ -34,7 +37,7 @@ Pro přístup k **sestavení** vyberte uzel projektu (ne **řešení** uzel) v *
 Následující možnosti vám umožňuje vybrat konfigurace a platformy můžete zobrazit nebo upravit.  
 
 > [!NOTE]
->  S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. Proto tyto možnosti nezobrazí. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+> S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. Proto tyto možnosti nezobrazí. Další informace najdete v tématu [postupy: nastavení ladění a konfigurace verze](/debugger/how-to-set-debug-and-release-configurations.md).
 
 **Konfigurace**  
 Určuje nastavení konfigurace, které chcete zobrazit nebo změnit. Toto nastavení může být **aktivní (ladění)** (Toto je výchozí nastavení), **ladění**, **verze**, nebo **všechny konfigurace**.  
@@ -104,9 +107,9 @@ Zpracovává všechny upozornění jako chyby.
 Následující nastavení se používají ke konfiguraci výstupní možnosti procesu sestavení.  
 
 **Výstupní cesta**  
-Určuje umístění výstupních souborů pro tento projekt konfiguraci. Zadejte cestu k výstupu sestavení v tomto poli, nebo zvolte **Procházet** tlačítko zadejte cestu. Všimněte si, že cesta je relativní; Pokud chcete zadat absolutní cestu, bude uložen jako relativní. Výchozí cesta je bin\Debug nebo bin\Release\\. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+Určuje umístění výstupních souborů pro tento projekt konfiguraci. Zadejte cestu k výstupu sestavení v tomto poli, nebo zvolte **Procházet** tlačítko zadejte cestu. Všimněte si, že cesta je relativní; Pokud chcete zadat absolutní cestu, bude uložen jako relativní. Výchozí cesta je bin\Debug nebo bin\Release\\.
 
-S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. **Sestavení** příkaz **ladění** nabídky (F5) bude umístěte sestavení do umístění ladění, bez ohledu na to **výstupní cesta** zadáte. Ale **sestavení** příkaz **sestavení** nabídky vloží ho do umístění, které zadáte. Další informace najdete v tématu [ladění a vydání konfigurace projektu](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. **Sestavení** příkaz **ladění** nabídky (F5) bude umístěte sestavení do umístění ladění, bez ohledu na to **výstupní cesta** zadáte. Ale **sestavení** příkaz **sestavení** nabídky vloží ho do umístění, které zadáte. Další informace najdete v tématu [Principy konfigurací sestavení](../../ide/understanding-build-configurations.md).
 
 **Souborů dokumentace XML**  
 Určuje název souboru, do které dokumentaci se zpracují komentáře. Další informace najdete v tématu [/DOC (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option).  

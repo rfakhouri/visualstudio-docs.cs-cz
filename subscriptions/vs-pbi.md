@@ -1,29 +1,58 @@
 ---
-title: "Výhody Power BI Pro"
+title: "Power BI Pro Benefit v sadě Visual Studio předplatných | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 1/12/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the Power BI Pro subscription included with your Visual Studio subscription.
+Description: Learn about the Power BI Pro subscription included with selected Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 905ac7f211a419c1214338b600e08b1be8970b89
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: d7470903db579dff7a4bc0fd17a26e6b5494d675
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="activating-the-power-bi-pro-benefit-in-visual-studio-subscriptions"></a>Aktivace výhodou Power BI Pro předplatné sady Visual Studio
+# <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro v sadě Visual Studio předplatných
 
-Vývoj, testování a nasazení doplňků pro Office a SharePoint.  Zahrnuje klienta jedním webem služby SharePoint Online Developer. 
+## <a name="overview"></a>Přehled
+Transformovat data do bohaté vizuály můžete shromažďovat a uspořádání. 
 
+## <a name="eligibility"></a>Podmínky
+| Úrovni předplatného / Program                                                  | Výhody               | Obnovitelných?                                                         |
+|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
+| Visual Studio Enterprise Standard                                             | Zahrnuté              |  Ano                                                               |
+| Visual Studio Enterprise roční                                               | Zahrnuté              |  Ano                                                               |
+| Visual Studio Enterprise každý měsíc                                              | Není k dispozici         |                                                                    |
+| Visual Studio Professional Standard                                           | Není k dispozici         |                                                                    |
+| Visual Studio Professional roční                                             | Není k dispozici         |                                                                    | 
+| Visual Studio Professional každý měsíc                                            | Není k dispozici         |                                                                    |
+| Visual Studio Test Pro                                                        | Není k dispozici         |                                                                    |
+| MSDN platformy                                                                | Zahrnuté              |  Ano                                                               |
+| Visual Studio Dev Essentials                                                  | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Zahrnuté              |  Ano                                                               |
+| Visual Studio Enterprise - FTE                                                | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – Microsoft Partner Network                          | Není k dispozici         |                                                                    |
+| Visual Studio Professional - Microsoft Partner Network                        | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – Imagine (Standard)                                 | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – Představte si (Premium)                                  | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – BizSpark                                           | Zahrnuté              |  Ano                                                               |
+| Microsoft Certified Trainer - Software a služby                             | Zahrnuté              |  Ano                                                               |
+| Microsoft Certified Trainer - softwaru & vývojářů Services                   | Zahrnuté              |  Ano                                                               |
+
+<sup>1</sup>*zahrnuje není pro prodej (NFR), cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP)*   
+
+Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+
+## <a name="activation-steps"></a>Postup aktivace
 Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo přihlášení pomocí existujícího účtu. 
-1.  Klikněte na **získat kód** odkaz v dolní části dlaždici benefit.   Obdržíte oznámení, že kód byla úspěšně načtena.  Klikněte na tlačítko **aktivovat**. 
+1.  Přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+
+2.  V části nástroje na stránce výhody vyhledejte dlaždici Power BI Pro. Klikněte na **získat kód** odkaz v dolní části dlaždici benefit.   Obdržíte oznámení, že kód byla úspěšně načtena.  Klikněte na tlačítko **aktivovat**. 
 
     ![Power BI Pro Benefit dlaždice](_img\vs-pbi\vs-pbi-tile.png)  
-
 
 2. Možná již máte účet, pokud jste aktivovali určité jiné předplatné výhod, jako je například Office 365 vývojářského předplatného nebo Enterprise Mobility + Security.  Pokud se najde existující účet, budete mít možnost přidat do existujícího účtu Power BI Pro předplatné nebo si zaregistrovat nový účet.  Důrazně doporučujeme jej přidat do existující účet, můžete přístup k různým výhodám s ID jednoho uživatele.  
 
@@ -64,3 +93,14 @@ Pokud chcete používat Power BI Pro, budete muset nastavit účet nebo přihlá
 
 
 11. Teď, když je nastavili svůj účet Power BI Pro, zobrazí se Centrum pro správu Office 365, kde můžete spravovat uživatele a domény, instalace softwaru Office a další informace o Office 365.  Je to!  Jste připravení přejít. 
+
+## <a name="faq"></a>Nejčastější dotazy
+*Kontrola aktualizací*
+
+## <a name="support-resources"></a>Podpora prostředky
+-  Potřebujete pomoc s Power BI Pro?  
+    - Podívejte se [online dokumentaci](/power-bi/).
+    - Problémy s registrací?  Podívejte se na [registrace do služby Power BI jako samostatnou](/power-bi/service-self-service-signup-for-power-bi)
+    - Prozkoumejte nejdůležitější problémy, získat pomoc od komunity nebo odeslat lístek podpory na [stránku podpory](https://powerbi.microsoft.com/support/).
+-  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
+-  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 

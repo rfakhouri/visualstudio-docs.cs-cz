@@ -4,55 +4,54 @@ ms.custom:
 ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
-ms.technology: vs-ide-deployment
+ms.technology:
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: ASP.NET, web applications, deployment, publishing
+helpviewer_keywords:
+- ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # Jaké možnosti publikování je pro mě nejlepší?
 
 Z Visual Studia, webové aplikace lze publikovat přímo na následující cíle:
 
-- [Aplikační služba Azure](#azure-app-service)
+- [Azure App Service](#azure-app-service)
 - [Virtuální počítače Azure](#azure-virtual-machines)
 - [Systém souborů](#file-system)
 - [Vlastní cíle (služby IIS, FTP, atd.) ](#custom-targets), který zahrnuje všechny libovolné webové servery.
 
 Na **publikovat** kartě můžete vybrat existující profil publikování, importovat existující nebo vytvořit novou pomocí možnosti popsané v tomto poli.
 
-## Aplikační služba Azure
+## Azure App Service Web Apps
 
-[Aplikační služba Azure](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) pomáhá vývojářům rychle vytvořit různé škálovatelných webových aplikací a služeb bez údržbu infrastruktury.
+[Azure App Service Web Apps](/azure/app-service/app-service-web-overview) (nebo jenom webové aplikace) pomáhá vývojářům rychle vytvořit různé škálovatelných webových aplikací a služeb bez údržbu infrastruktury.
 
-Pro webové aplikace na konkrétní aplikační služby je kontejner pro [ *webové aplikace*](https://azure.microsoft.com/en-us/documentation/articles/app-service-web-overview/), který přesně odpovídá, co si by představit jako tradiční webového hostitele. To znamená webovou aplikaci obsahuje nezbytné výpočetní prostředky, které můžete spustit kód na straně serveru a zpřístupní ji k Internetu.
-
-Můžete určit, kolik computing spotřeby webové aplikace má výběrem [cenová úroveň nebo se chystáte](https://azure.microsoft.com/documentation/articles/azure-web-sites-web-hosting-plans-in-depth-overview/) pro službu obsahující aplikaci. Můžete mít více webových aplikací (a jinými typy aplikací) sdílet stejnou službu aplikace beze změny cenové úrovně. Například můžete hostovat vývoj, pracovní a provozní společně na stejném App Service Web Apps.
+Můžete určit, kolik computing spotřeby webové aplikace má výběrem [cenová úroveň nebo se chystáte](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview) pro službu obsahující aplikaci. Můžete mít více webových aplikací (a jinými typy aplikací) sdílet stejnou službu aplikace beze změny cenové úrovně. Například můžete hostovat vývoj, pracovní a provozní společně na stejném App Service Web Apps.
 
 App Service běží na hostovaných v cloudu virtuálních počítačů v Azure, ale jsou spravovaná tyto virtuální počítače. Každou webovou aplikaci v App Service bude přiřazen jedinečný \*. azurewebsites.net URL; všechny cenové úrovně než volné povolit přiřazení vlastních názvů domén do lokality.
 
-### Když chcete-li zvolit Azure App Service
+### Když chcete-li zvolit Azure App Service Web Apps
 
 - Chcete nasadit webovou aplikaci, která je přístupná prostřednictvím Internetu.
 - Chcete automaticky škálovat podle požadavků webové aplikace bez nutnosti znovu nasadit.
 - Nechcete udržovat infrastrukturu serveru (včetně aktualizací softwaru).
 - Nepotřebujete žádné úpravy na úrovni počítače na serverech, které jsou hostiteli webové aplikace.
 
-
 > Pokud chcete používat Azure App Service ve svém vlastním datovém centru nebo jiným počítačům v místě, můžete to udělat tak pomocí [zásobník Azure](https://azure.microsoft.com/overview/azure-stack/).
 
-
-## Virtuální počítače Azure
+## Azure Virtual Machines
 
 [Virtuální počítače Azure (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) umožňují vytvářet a spravovat libovolný počet výpočetních prostředků v cloudu. Za předpokladu, odpovědnost za všechny softwaru a aktualizací na virtuálních počítačích, můžete je upravit tolik, kolik požadovaného podle požadavků vaší webové aplikaci. Virtuální počítače můžete přistupovat přímo prostřednictvím vzdálené plochy, a také požadovaných každé z nich budou udržovat přiřazená IP adresa.
 

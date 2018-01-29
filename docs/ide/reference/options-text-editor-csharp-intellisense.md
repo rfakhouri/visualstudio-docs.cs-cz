@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -17,19 +18,20 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-caps.latest.revision: "25"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: b0b69b7eafbfbb1b5c2c582fd0c734a183ea0a78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 322ae48b1ded8dfef7e25a80937da957e50f756f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-intellisense"></a>Možnosti, textový editor, C#, IntelliSense
-Použití **IntelliSense** stránka vlastností můžete upravit nastavení, které ovlivňují chování IntelliSense pro Visual C#. Dostanete **IntelliSense** stránka vlastností kliknutím **možnosti** na **nástroje** nabídky, pak levým na **C#** v **Textového editoru** složku a potom kliknutím na tlačítko **IntelliSense.**  
+Použití **IntelliSense** stránka vlastností můžete upravit nastavení, které ovlivňují chování IntelliSense pro jazyk C#. Dostanete **IntelliSense** stránka vlastností kliknutím **možnosti** na **nástroje** nabídky, pak levým na **C#** v **Textového editoru** složku a potom kliknutím na tlačítko **IntelliSense.**  
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
@@ -44,7 +46,7 @@ Použití **IntelliSense** stránka vlastností můžete upravit nastavení, kte
  Pokud je vybraná tato možnost, IntelliSense přidá klíčová slova jazyka C#, například [třída](/dotnet/csharp/language-reference/keywords/class), do seznamu dokončení.  
   
  **Seznamy dokončení umístit fragmenty kódu**  
- Pokud je vybraná tato možnost, IntelliSense přidá do seznamu dokončení aliasy pro fragmenty kódu v C#. V případě alias fragmentu kódu je stejný jako klíčové slovo, například [třída](/dotnet/csharp/language-reference/keywords/class), klíčové slovo je nahrazena zástupce. Další informace najdete v tématu [fragmenty kódu Visual C#](../../ide/visual-csharp-code-snippets.md).  
+ Pokud je vybraná tato možnost, IntelliSense přidá do seznamu dokončení aliasy pro fragmenty kódu v C#. V případě alias fragmentu kódu je stejný jako klíčové slovo, například [třída](/dotnet/csharp/language-reference/keywords/class), klíčové slovo je nahrazena zástupce. Další informace najdete v tématu [fragmenty kódu v C#](../../ide/visual-csharp-code-snippets.md).  
   
 ## <a name="selection-in-completion-lists"></a>Výběr v seznamy dokončení  
  **Potvrzené zadáním následujících znaků:**  

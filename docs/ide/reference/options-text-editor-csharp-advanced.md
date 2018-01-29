@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -18,19 +19,20 @@ helpviewer_keywords:
 - outlining options [C#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: "22"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 1f7bcff6d2e94944985789db2bf0ac80150a478e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 193b61ab95daa84c5815c251c7d52103c88977e1
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="options-text-editor-c-advanced"></a>Možnosti, textový editor, C#, upřesnit
-Tento dialog můžete upravit nastavení pro dokumentační komentáře XML, editor formátování a refaktoring kódu pro Visual C#. Pro přístup k tohoto dialogového okna, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **textového editoru** složky, rozbalte položku **C#**a pak klikněte na tlačítko  **Rozšířené**.  
+Tento dialog můžete upravit nastavení pro dokumentační komentáře XML, editor formátování a refaktoring kódu pro jazyk C#. Pro přístup k tohoto dialogového okna, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **textového editoru** složky, rozbalte položku **C#**a pak klikněte na tlačítko  **Rozšířené**.  
   
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
@@ -76,9 +78,9 @@ Když kurzor je nastavený uvnitř symbol, nebo když klikněte na symbol, jsou 
   
 ## <a name="organize-usings"></a>Uspořádat Using  
  Nejprve umístit direktivy "Systém", pokud řazení direktiv Using  
- Při výběru `System` pomocí direktivy zobrazí před ostatními pomocí direktivy. Další informace najdete v tématu direktiv Using uspořádat v [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
+ Při výběru `System` pomocí direktivy zobrazí před ostatními pomocí direktivy. Další informace najdete v tématu direktiv Using uspořádat v [C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).  
   
 ## <a name="see-also"></a>Viz také  
  [Dokumentační komentáře XML](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [Nastavení možností editoru pro konkrétní jazyk](../../ide/reference/setting-language-specific-editor-options.md)   
- [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+ [C# IntelliSense](../../ide/visual-csharp-intellisense.md)

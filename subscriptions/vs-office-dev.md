@@ -1,39 +1,64 @@
 ---
-title: "Office 365 pro vývojáře"
+title: "Office 365 pro vývojáře v sadě Visual Studio předplatných | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 11/12/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to activate the Power BI Pro subscription included in your Visual Studio subscription.
+Description: Learn about the Office 365 Developer benefit included in your Visual Studio subscription.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 2c0144daad1060ab4004804159fd1433cff6f820
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 24d43f71aec3be05809fe79085cd7710f47f99ca
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="visual-studio-subscriptions---the-office-365-developer-subscription-benefit"></a>Visual Studio odběry - zvýhodněné předplatné pro vývojáře Office 365
+# <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Zvýhodněné předplatné pro vývojáře Office 365 v sadě Visual Studio předplatných
 
 ## <a name="overview"></a>Přehled
 
-Odběratelé s Visual Studio Enterprise, standard nebo Visual Studio Enterprise roční předplatná cloudu přijímat benefit vývojářského předplatného Office 365.  Vývojářského předplatného Office 365 umožňuje odběratele pro vývoj, testování a nasazení doplňky pro Microsoft Office a Microsoft SharePoint.  Tuto výhodu umožňuje pro jednoho klienta a až 25 uživatelů.
+Odběratelé s vybrané odběry Visual Studio Enterprise přijímat benefit vývojářského předplatného Office 365.  Vývojářského předplatného Office 365 umožňuje vývoj, testování a nasazení doplňky pro Microsoft Office a Microsoft SharePoint.  Tuto výhodu umožňuje pro jednoho klienta a až 25 uživatelů.
 
-## <a name="activating-the-office-365-developer-benefit-in-visual-studio-subscriptions"></a>Aktivace Office 365 pro vývojáře v sadě Visual Studio předplatných
+## <a name="eligibility"></a>Podmínky
+| Úrovni předplatného / Program                                                  | Výhody               | Obnovitelných?                                                         |
+|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
+| Visual Studio Enterprise Standard                                             | Zahrnuté              |  Ano                                                               |
+| Visual Studio Enterprise roční                                               | Zahrnuté              |  Ano                                                               |
+| Visual Studio Enterprise každý měsíc                                              | Není k dispozici         |                                                                    |
+| Visual Studio Professional Standard                                           | Není k dispozici         |                                                                    |
+| Visual Studio Professional roční                                             | Není k dispozici         |                                                                    | 
+| Visual Studio Professional každý měsíc                                            | Není k dispozici         |                                                                    |
+| Visual Studio Test Pro                                                        | Není k dispozici         |                                                                    |
+| MSDN platformy                                                                | Není k dispozici         |                                                                    |
+| Visual Studio Dev Essentials                                                  | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise - NFR<sup>1</sup>                                               | Zahrnuté              |  Ano                                                               |
+| Visual Studio Enterprise - FTE                                                | Zahrnuté              |  Ano                                                               |
+| Visual Studio Enterprise – Microsoft Partner Network                          | Není k dispozici         |                                                                    |
+| Visual Studio Professional - Microsoft Partner Network                        | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – Imagine (Standard)                                 | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – Představte si (Premium)                                  | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – BizSpark                                           | Zahrnuté              |  Ano                                                               |
+| Microsoft Certified Trainer - Software a služby                             | Zahrnuté              |  Ano                                                               |
+| Microsoft Certified Trainer - softwaru & vývojářů Services                   | Zahrnuté              |  Ano                                                               |
 
-1. Navštivte [https://my.visualstudio.com](https://my.visualstudio.com) k přihlášení na portál pro odběratele.
+<sup>1</sup>*zahrnuje není pro prodej (NFR), cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP)*   
+
+Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+
+## <a name="activation-steps"></a>Postup aktivace
+
+1. Navštivte [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) k přihlášení na portál pro odběratele.
 2. V závislosti na váš účet můžete buď přesměrováni na přihlašovací stránku vaší organizace, nebo na přihlašovací stránce Account Microsoft.   V obou případech zadejte svoje uživatelské jméno a heslo a klikněte na tlačítko **Další**.
-3. Po dokončení v procesu přihlašování, měli byste vidět stránce výhody odběry.  Pokud máte více než jedno předplatné, můžete přepnout mezi předplatnými kliknutím na šipku rozevíracího seznamu v horním pravém rohu pod pásem karet černé.  Na dlaždici benefit Office 365 vývojářského předplatného je v nástroji kategorii.  Použijte šipku na pravé straně řádku dlaždic dokud dlaždici Office je viditelná. 
-4. Klikněte na **získat kód** odkaz v dolní části dlaždici benefit.   Pokud kód byl načteny, klikněte na tlačítko **aktivovat**. 
+3. Po dokončení procesu přihlašování, měli byste vidět stránce výhody odběry.  Pokud máte více než jedno předplatné, můžete přepnout mezi předplatnými kliknutím na šipku rozevíracího seznamu v horním pravém rohu pod pásem karet černé.  Na dlaždici benefit Office 365 vývojářského předplatného je v nástroji kategorii.  Použijte šipku na pravé straně řádku dlaždic dokud dlaždici Office je viditelná. 
+4. V části nástroje vyhledejte dlaždici vývojářského předplatného Office 365.  Klikněte na **získat kód** odkaz v dolní části dlaždici benefit.   Pokud kód byl načteny, klikněte na tlačítko **aktivovat**. 
 
     ![Dlaždice Dev Benefit Office 365](_img\vs-office-dev\vs-office-dev-tile.png)
 
 5.  Dalším krokem je vytvoření účtu.  Zadejte své kontaktní informace a klikněte na **Další**. 
 
     ![Výhody Dev účet Office 365](_img\vs-office-dev\vs-office-dev-account-cropped.png)
-
 
 
 6.  Zadejte požadované informace o kde můžete být používání odběru a klikněte na tlačítko **Další**.  Tyto informace slouží k určení dostupnost předplatného a všechny příslušné daně.  
@@ -55,24 +80,24 @@ Odběratelé s Visual Studio Enterprise, standard nebo Visual Studio Enterprise 
 
     ![Jak funguje tento vzhled Benefit Dev Office 365](_img\vs-office-dev\vs-office-dev-price.png)
 
-11. V dokončení "Krok 3", zobrazí se výzva k výběru "Způsob platby".  Nejsou k dispozici dvě možnosti platby.  První možností je přidat **platební karty** (jako zobrazené dole), a druhou možností je **faktury**.  V obou případech 0,00 Kč pořadí odeslání kliknutím **odešlete objednávku**.
+11. V dokončení "Krok 3", zobrazí se výzva k výběru "Způsob platby".  Nejsou k dispozici dvě možnosti platby.  První možností je přidat **platební karty** (jako zobrazené dole), a druhou možností je **faktury**.  V obou případech 0,00 Kč pořadí odeslání kliknutím **odešlete objednávku**.   
 
-    Poznámka: Pro odběratele, kteří nechtějí zajistit platební karty, vyberte **faktury** platby.  Můžete také vybrat **platit do roku** omezit příjmu faktury jednou za rok.
- 
-
-    ![Platebních Dev Benefit Office 365](_img\vs-office-dev\vs-office-dev-credit-blur-cropped.png)
-
+> [!NOTE]
+> Pro odběratele, kteří nechtějí zajistit platební karty, vyberte **faktury** platby.  Můžete také vybrat **platit do roku** omezit příjmu faktury jednou za rok.
 
 12. V tomto okamžiku jste úspěšně uplatněn benefit vašeho vývojářského předplatného Office 365.  Se zobrazí na stránce potvrzení objednávky.  Stránky se zadat odkaz [přihlašovací stránce](https://portal.office.com "přihlašovací stránky Office 365").  Doporučujeme, abyste záložky na stránce pro pozdější použití.  Také budete chtít záznam ID uživatele, který je zobrazený na stránce.  (Taky se zobrazí uvítací e-mail na adresu, kterou jste zadali při nastavování účtu.)  Klikněte na tlačítko **spusťte instalační program** pokračujte.  
 
     ![Potvrdit pořadí Dev Benefit Office 365](_img\vs-office-dev\vs-office-dev-confirm.png)
 
+## <a name="faq"></a>Nejčastější dotazy
 
-## <a name="setting-up-the-office-365-developer-subscription-benefit"></a>Nastavení zvýhodněné předplatné pro Office 365 vývojáře
+### <a name="q--how-do-i-set-up-my-office-365-developer-subscription-once-its-been-activated"></a>Otázka: Jak nastavím Moje předplatné Office 365 vývojáře po je aktivace?
+Odpověď: nastavení zvýhodněné předplatné pro Office 365 vývojáře
 
 1. Pokud chcete nastavit benefit vašeho vývojářského předplatného Office 365, můžete spustit ze stránky "Děkujeme vám za objednávku", nebo se přihlaste k portálu Office navštívíte [https://portal.office.com](https://portal.office.com) později.  V takovém případě jsme vybrali **spustit instalační program** za stránku potvrzení.
 
-Poznámka: Pro přihlášení k https://portal.office.com, budete se muset použít vaše nové Office 365 vývojáře předplatné ID uživatele, které jste vytvořili v kroku 7 výše.
+> [!NOTE]
+> Pro přihlášení k https://portal.office.com, budete muset použít vaše nové Office 365 vývojáře předplatné ID uživatele, které jste vytvořili v kroku 7 výše.
 
 2. Po kliknutí na **spustit instalační program**, "Krok 1" vyzve k připojení do již existující domény, které už vlastníte, nebo chcete-li pokračovat pomocí instalačního programu klienta během procesu uplatnění.  V následujícím příkladu jsme jste se rozhodli Pokud chcete pokračovat v používání naše appsbyjane2017.onmicrosoft.com"domény.
 
@@ -85,9 +110,9 @@ Poznámka: Pro přihlášení k https://portal.office.com, budete se muset použ
     - Word
     - Excel
     - PowerPoint
-    - Aplikace OneNote
+    - OneNote
     - Access
-    - Vydavatele
+    - Publisher
     - Outlook
     - Skype pro firmy
     - OneDrive pro firmy
@@ -102,13 +127,13 @@ Poznámka: Pro přihlášení k https://portal.office.com, budete se muset použ
 7.  Když se zobrazí dialogové okno Řízení uživatelských účtů, klikněte na tlačítko **Ano** umožňující Office tak, aby nainstalovat do počítače.  
 
 
-## <a name="updating-the-number-of-users-from-the-office-365-admin-portal"></a>Aktualizace počet uživatelů z portálu pro správu Office 365
-
-V případě, že nebyla přiřadit požadovaný počet uživatelů během procesu uplatnění a chcete tento počet zvýšit později, postupujte podle následujících kroků. 
+### <a name="q-how-do-i-update-the-number-of-users-from-the-office-365-admin-portal"></a>Otázka: jak aktualizovat počet uživatelů z portálu pro správu Office 365?
+Odpověď: V případě, že nebyla přiřadit požadovaný počet uživatelů během procesu uplatnění a chcete tento počet zvýšit později, postupujte podle následujících kroků. 
 
 1. Pokud chcete zvýšit uživatele po dokončení procesu uplatnění, budete muset navštivte [https://portal.office.com](https://portal.office.com) a přihlaste se pomocí "ID uživatele" vytvořené během vytváření kroky klienta.
 
-Poznámka: Pokud máte problémy se hledání přihlašovacích údajů v informace, podívejte se v odeslaný "Service týmu služeb Microsoft Online" s předmět e-mailu "Potvrzení objednávky" "potvrzení objednávky: Děkujeme vám za váš nákup".  Alternativně můžete také prohledat vaší doručené pošty pro "textu: (Office 365 Enterprise E3 vývojáře MSDN)".
+> [!NOTE]
+> Pokud máte problémy se hledání přihlašovacích údajů v informace, podívejte se odeslaný "Service týmu služeb Microsoft Online" s předmět e-mailu "Potvrzení objednávky" "potvrzení objednávky: Děkujeme vám za váš nákup".  Alternativně můžete také prohledat vaší doručené pošty pro "textu: (Office 365 Enterprise E3 vývojáře MSDN)".
 
 2. Po úspěšném přihlášení, vyberte **správce** dlaždici. Budete přesměrováni na stránku"správce".
 
@@ -120,6 +145,10 @@ Poznámka: Pokud máte problémy se hledání přihlašovacích údajů v inform
 
 6. Hodnota "Nákupu" uvedeného na stránce "Předplatných" by měl nyní shodovat s hodnotou odeslána.
 
-Poznámka: Přesahuje hodnotu 25 "Celkový počet uživatelů" bude výsledkem chyba.
+> [!NOTE]
+> Překročení hodnotu 25 "Celkový počet uživatelů", bude mít za následek chybu.
 
-
+## <a name="support-resources"></a>Podpora prostředky
+-  Potřebujete pomoc s předplatným Office Developer? Podívejte se [podporu](https://developer.microsoft.com/office/support) prostředky na [Office Dev Center](https://developer.microsoft.com/office).
+-  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
+-  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 

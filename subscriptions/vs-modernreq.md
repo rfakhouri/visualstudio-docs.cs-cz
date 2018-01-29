@@ -1,25 +1,55 @@
 ---
-title: Aktivace MODERNRequirements
+title: "Výhodou MODERNRequirements v sadě Visual Studio předplatných | Microsoft Docs"
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
-Ms.date: 10/3/2017
+Ms.date: 1/12/2018
 Ms.topic: Get-Started-Article
-Description: Learn how to download and install the ModernRequirements suite of products included in your Visual Studio Enterprise subscription.
+Description: Learn about the ModernRequirements suite of products included in selected Visual Studio Enterprise subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: af4c0f4228995efa6754e618c43e03083e5cf990
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4ff6c7db66547bc2d4da05bf9aec087113c64cbe
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/29/2018
 ---
-# <a name="activating-the-modernrequirements-benefit-in-visual-studio-subscriptions"></a>Aktivace Benefit MODERNRequirements v sadě Visual Studio předplatných
-Vaše organizace předplatné zahrnuje odběr pro MODERNRequirements SmartOffice 4TFS a ModernRequirements4TFS šesti měsíců.  SmartOffice4TFS MODERNRequirements' rozšiřuje možnosti sady TFS nebo Visual Studio Team Services s formátovaným textem rychlý, zjednodušené vytváření a zobrazení pro generování sestav Microsoft.  ModernRequirements4TFS poskytuje možnosti simulace HTML5 a pracovní položka monitorování standardních hodnot.  
+# <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Výhodou MODERNRequirements4TFS odběry sady Visual Studio
 
+## <a name="overview"></a>Přehled
 
-1.  Chcete-li používat vaše MODERNRequirements výhody, klikněte na **získat kód** odkaz v dolní části dlaždici výhody.   
+Vybrané předplatné sady Visual Studio zahrnují odběr pro MODERNRequirements SmartOffice 4TFS a ModernRequirements4TFS šesti měsíců.  MODERNRequirements SmartOffice4TFS rozšiřuje možnosti sady TFS nebo Visual Studio Team Services s formátovaným textem rychlý, zjednodušené vytváření a zobrazení pro generování sestav Microsoft.  ModernRequirements4TFS poskytuje možnosti simulace HTML5 a pracovní položka monitorování standardních hodnot.  
+
+## <a name="eligibility"></a>Podmínky
+| Úrovni předplatného / Program                                                  | Výhody               | Obnovitelných?                                                         |
+|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
+| Visual Studio Enterprise Standard                                             | 6 měsíců              |  Ano                                                               |
+| Visual Studio Enterprise roční                                               | 6 měsíců              |  Ano                                                               |
+| Visual Studio Enterprise každý měsíc                                              | Není k dispozici         |                                                                    |
+| Visual Studio Professional Standard                                           | Není k dispozici         |                                                                    |
+| Visual Studio Professional roční                                             | Není k dispozici         |                                                                    | 
+| Visual Studio Professional každý měsíc                                            | Není k dispozici         |                                                                    |
+| Visual Studio Test Pro                                                        | Není k dispozici         |                                                                    |
+| MSDN platformy                                                                | Není k dispozici         |                                                                    |
+| Visual Studio Dev Essentials                                                  | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 6 měsíců              |  Ano                                                               |
+| Visual Studio Enterprise - FTE                                                | 6 měsíců              |  Ano                                                               |
+| Visual Studio Enterprise – Microsoft Partner Network                          | 6 měsíců              |  Ano                                                               |
+| Visual Studio Professional - Microsoft Partner Network                        | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – Imagine (Standard)                                 | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – Představte si (Premium)                                  | Není k dispozici         |                                                                    |
+| Visual Studio Enterprise – BizSpark                                           | Není k dispozici         |                                                                    |
+| Microsoft Certified Trainer - Software a služby                             | Není k dispozici         |                                                                    |
+| Microsoft Certified Trainer - softwaru & vývojářů Services                   | Není k dispozici         |                                                                    |
+
+<sup>1</sup>*zahrnuje není pro prodej (NFR), cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP)*   
+
+Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+
+## <a name="activation-steps"></a>Postup aktivace
+1.  Pokud chcete používat vaše MODERNRequirementsTFS výhody, přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+2.  Najděte dlaždici MODERNRequirements4TFS v části nástroje a klikněte na **získat kód** odkaz v levém dolním rohu na dlaždici.   
 
     ![Výhody ModernRequirements dlaždice](_img\vs-modernreq\vs-modernreq-tile.png)
 
@@ -48,10 +78,10 @@ Vaše organizace předplatné zahrnuje odběr pro MODERNRequirements SmartOffice
 9.  Otevřete podsložku "SmartOffice4TFS_Online". 
 
 10. Složka bude obsahovat čtyři instalační program aplikace, jeden pro:
-- SmartExcel4TFS_Online
-- SmartOutlook4TFS_Online
-- SmartVisio4TFS_Online
-- SmartWord4TFS_Online
+    - SmartExcel4TFS_Online
+    - SmartOutlook4TFS_Online
+    - SmartVisio4TFS_Online
+    - SmartWord4TFS_Online
 
     ![Možnosti stahování ModernRequirement](_img\vs-modernreq\vs-modernreq-downloaded-cropped.png)
 
@@ -79,3 +109,10 @@ Vaše organizace předplatné zahrnuje odběr pro MODERNRequirements SmartOffice
 
 22. Když aplikace Word se otevře, uvidíte, že byl přidán na kartě SmartWord4TFS. Klikněte na kartu zobrazíte SmartWord4TFS nástrojů. 
 
+## <a name="faq"></a>Nejčastější dotazy
+*Kontrola aktualizací*
+
+## <a name="support-resources"></a>Podpora prostředky
+-  Potřebujete pomoc s produkty ModernRequirements?  Navštivte https://www.modernrequirements.com/support-2/.
+-  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
+-  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 

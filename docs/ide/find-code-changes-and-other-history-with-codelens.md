@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b454893c2d68b23d130d6ff38be493d988dfb1fe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a1123d1c557f6e7f01eb98e668b4f13785ee6893
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Nalezení změn kódu a další historie pomocí CodeLensu
 
@@ -40,9 +42,9 @@ Budete potřebovat:
 
 -  Visual Studio Enterprise nebo Visual Studio Professional
 
--  Kódu v jazyce Visual C# .NET nebo Visual Basic .NET
+-  Kód jazyka C# nebo Visual Basic
 
-Vyberte **odkazy** ukazatele (**Alt + 2**). Pokud se zobrazí **0 odkazy**, budete mít žádné odkazy z kódu jazyka Visual C# nebo Visual Basic. To neobsahuje odkazy z jiných položek, jako jsou soubory XAML a ASPX.
+Vyberte **odkazy** ukazatele (**Alt + 2**). Pokud se zobrazí **0 odkazy**, budete mít žádné odkazy z kódu jazyka C# nebo Visual Basic. To neobsahuje odkazy z jiných položek, jako jsou soubory XAML a ASPX.
 
 ![Codelensu & č. 45; Zvolte odkazy na ukazatele](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
 
@@ -66,9 +68,9 @@ Budete potřebovat:
 
 - Team Foundation Server 2013 nebo novější, Visual Studio Team Services nebo Git
 
-- [Lync 2010 nebo novější nebo Skype pro firmy](http://technet.microsoft.com/en-us/lync), kontaktujte tým z editoru kódu  
+- [Lync 2010 nebo novější nebo Skype pro firmy](https://technet.microsoft.com/office/dn788773), kontaktujte tým z editoru kódu
 
-Pro Visual C# .NET nebo Visual Basic .NET kód, který je uložen s verzí Team Foundation (TFVC) nebo Git, získat Codelensu podrobnosti na úrovni třídy a metody (*kód. element úrovni* indikátory). Pokud je úložiště Git hostovaná v TfGit, také získáte odkazy na pracovní položky sady TFS.  
+Pro C# nebo Visual Basic kód, který je uložen s verzí Team Foundation (TFVC) nebo Git, získat Codelensu podrobnosti na úrovni třídy a metody (*kód. element úrovni* indikátory). Pokud je úložiště Git hostovaná v TfGit, také získáte odkazy na pracovní položky sady TFS.  
 
 ![Element kódu & č. 45; úrovně indikátory](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
 
@@ -86,7 +88,7 @@ Zjistí, kdo změnili C# nebo kód jazyka Visual Basic a změny, které budou pr
 
 ![Codelensu: Get změnit historie kódu v TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
 
-Výchozí hodnota je časové období posledních 12 měsíců. Pokud váš kód je uložený na serveru Team Foundation Server, můžete to změnit spuštěním [TFSConfig příkaz](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod** příznak.  
+Výchozí hodnota je časové období posledních 12 měsíců. Pokud váš kód je uložený na serveru Team Foundation Server, můžete to změnit spuštěním [TFSConfig příkaz](/vsts/tfs-server/command-line/tfsconfig-cmd) s [codeindex – příkaz](../ide/codeindex-command.md) a **/indexHistoryPeriod** příznak.
 
 Chcete-li zobrazit podrobné historie všechny změny, včetně těch, které z více než rokem, zvolte **zobrazit všechny změny souboru**.  
 
@@ -193,7 +195,7 @@ Další informace o testování částí, které existují kódu bez otevření 
 
 -   Visual Studio Enterprise nebo Visual Studio Professional  
   
--   Kódu v jazyce Visual C# .NET nebo Visual Basic .NET  
+-   Kód jazyka C# nebo Visual Basic  
   
 -   A [projektu testování částí](../test/unit-test-your-code.md) má testů částí kódu aplikace  
   
@@ -217,7 +219,7 @@ Další informace o testování částí, které existují kódu bez otevření 
   
 6.  Pokud chcete zobrazit, kolik lidí změnit tento test, který změnil tento test nebo byly provedeny změny kolik tento test [najít váš kód historie a propojené položky](#FindCodeHistory).
 
-##  <a name="QA"></a>MODUL OTÁZKY A ODPOVĚDI
+##  <a name="QA"></a> Q & A
 
 ###  <a name="ChangeOrTurnOff"></a>Otázka: jak lze zapnout Codelensu nebo vypnout? Nebo zvolte které indikátory zobrazíte?
 
@@ -233,15 +235,15 @@ Další informace o testování částí, které existují kódu bez otevření 
   
 ###  <a name="NoIndicators"></a>Otázka: kde je Codelensu?
 
-**Odpověď:** Codelensu se zobrazí v kódu Visual C# .NET a Visual Basic .NET na úrovni metodu, třídu, indexer a vlastnost. Codelensu se zobrazí na úrovni souborů pro všechny ostatní typy souborů.
+**Odpověď:** Codelensu se zobrazí v kódu jazyka C# a Visual Basic na úrovni metodu, třídu, indexer a vlastnost. Codelensu se zobrazí na úrovni souborů pro všechny ostatní typy souborů.
 
 - Ujistěte se, že je zapnutý Codelensu. Přejděte na **nástroje**, **možnosti**, **textového editoru**, **všechny jazyky**, **Codelensu**.  
-  
-- Pokud váš kód je uložený v sadě TFS, ujistěte se, že kód indexování zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).  
 
-- Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. [Zkontrolujte, zda máte oprávnění člen týmu.](http://msdn.microsoft.com/en-us/f58805de-ba61-4d09-8f2d-d3ab9662ecfd)  
+- Pokud váš kód je uložený v sadě TFS, ujistěte se, že kód indexování zapnutá pomocí [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](/vsts/tfs-server/command-line/tfsconfig-cmd).
 
-- Indikátory test jednotky se nezobrazí, když kód aplikace nemá testování částí. Indikátory stavu testu se automaticky zobrazí v projektech testů. Pokud znáte kód aplikace má testování částí, že testovací indikátory nezobrazí, zkuste jej sestavit řešení (**Ctrl + Shift + B**).  
+- Indikátory související s aplikací TFS se zobrazí pouze v případě, že jsou pracovní položky propojeny s kódem a máte oprávnění otevírat propojené pracovní položky. [Zkontrolujte, zda máte oprávnění členů týmu](/vsts/work/scale/multiple-teams).
+
+- Indikátory test jednotky se nezobrazí, když kód aplikace nemá testování částí. Indikátory stavu testu se automaticky zobrazí v projektech testů. Pokud znáte kód aplikace má testování částí, že testovací indikátory nezobrazí, zkuste jej sestavit řešení (**Ctrl + Shift + B**).
 
 ### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Otázka: Proč nevidím v pracovní položce. podrobnosti pro potvrzení?
 
@@ -301,11 +303,11 @@ Použití klávesnice:
 
 ###  <a name="LocalVersion"></a>Otázka: co je "Místní verze"?
 
-**Odpověď:** **místní verze** šipku odkazuje na poslední sadu změn ve vaší místní verzi tohoto souboru. Pokud je serveru novější změn, se objeví nad nebo pod **místní verze** šipku, v závislosti na pořadí slouží k řazení změn.  
+**Odpověď:** **místní verze** šipku odkazuje na poslední sadu změn ve vaší místní verzi tohoto souboru. Pokud je serveru novější změn, se objeví nad nebo pod **místní verze** šipku, v závislosti na pořadí slouží k řazení změn.
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Otázka: je možné spravovat, jak Codelensu zpracuje kód pro zobrazení historie a propojené položky?
 
-**Odpověď:** Ano, pokud kód v sadě TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62).
+**Odpověď:** Ano, pokud kód v sadě TFS, použijte [codeindex – příkaz](../ide/codeindex-command.md) s [příkazu TFS Config](/vsts/tfs-server/command-line/tfsconfig-cmd).
 
 ## <a name="see-also"></a>Viz také
 

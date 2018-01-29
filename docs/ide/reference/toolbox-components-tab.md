@@ -4,24 +4,26 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Toolbox, Components tab
-ms.assetid: 332fafab-a763-4244-b388-15d1b5b5cc04
-caps.latest.revision: "14"
+helpviewer_keywords:
+- Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cf0ab13b104422771b117c17ed3ff89b53fa461f
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="toolbox-components-tab"></a>Sada nástrojů, karta Součásti
-Zobrazí součásti, které můžete přidat do [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] a [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] Designer. Kromě [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] součásti, které jsou součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], například <xref:System.Messaging.MessageQueue> a <xref:System.Diagnostics.EventLog> součásti, můžete přidat vaše vlastní nebo jiných součástí na této kartě. Další informace najdete v tématu [postupy: manipulace s kartami panelu nástrojů](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db).  
+
+Zobrazí součásti, které můžete přidat do jazyka Visual Basic a C# Designer. Kromě součásti rozhraní .NET Framework, které jsou součástí sady Visual Studio, jako <xref:System.Messaging.MessageQueue> a <xref:System.Diagnostics.EventLog> součásti, můžete přidat vaše vlastní nebo jiných součástí na této kartě.
   
  Zobrazené na této kartě **zobrazení** nabídce vyberte možnost **sada nástrojů**. V **sada nástrojů**, vyberte **součásti** kartě.  
   
@@ -37,7 +39,7 @@ Zobrazí součásti, které můžete přidat do [!INCLUDE[vbprvb](../../code-qua
  **ErrorProvider**  
  Vytvoří `System.Windows.Forms.ErrorProvider` instanci komponenty, které označuje pro koncového uživatele, že ovládací prvek na formuláři došlo k chybě s ním spojená.  
   
- **Protokol událostí**  
+ **EventLog**  
  Vytvoří <xref:System.Diagnostics.EventLog> instanci komponenty, které můžete použít k interakci se systémem a vlastní protokoly událostí, včetně zápisu události do protokolu a načítání dat protokolu. Další informace najdete v tématu [Úvod do protokolu událostí komponenty](http://msdn.microsoft.com/en-us/a2ba4f28-4b1a-435e-99ef-51b28e21f805).  
   
  **FileSystemWatcher**  
@@ -58,7 +60,7 @@ Zobrazí součásti, které můžete přidat do [!INCLUDE[vbprvb](../../code-qua
  **Proces**  
  Vytvoří <xref:System.Diagnostics.Process> instance komponenty můžete použít k zastavení, spuštění a manipulaci data související s procesy ve vašem systému. Další informace najdete v tématu [monitorování a Správa procesů systému Windows](http://msdn.microsoft.com/en-us/a86bd4c1-b92c-49a0-8f32-61d67837b45e).  
   
- **Portu SerialPort**  
+ **SerialPort**  
  Vytvoří `System.IO.Ports.SerialPort` instanci komponenty, která poskytuje synchronní a událostmi řízené vstupně-výstupních operací, přístup k PIN kódu a zalomení stav a přístup k vlastnostem sériového zařízení.  
   
  **ServiceController**  
@@ -73,5 +75,5 @@ Zobrazí součásti, které můžete přidat do [!INCLUDE[vbprvb](../../code-qua
 ## <a name="see-also"></a>Viz také  
  [Programování s komponentami](http://msdn.microsoft.com/Library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   
  [Součást programování návody](http://msdn.microsoft.com/Library/373cacf7-479e-4b05-991c-5cb18824e913)   
- [Sada nástrojů](../../ide/reference/toolbox.md)   
+ [Toolbox](../../ide/reference/toolbox.md)   
  [Výběr dialogové okno položek sady nástrojů (Visual Studio)](http://msdn.microsoft.com/en-us/bd07835f-18a8-433e-bccc-7141f65263bb)

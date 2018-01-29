@@ -4,11 +4,12 @@ ms.custom:
 ms.date: 03/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- Visual C# projects, references
+- C# projects, references
 - Visual Basic projects, references
 - troubleshooting references
 - referencing files from projects
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d2b7046240f711d640b8143afddb667e2726eb35
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ecca7ee3d9d5ae6a4f347df7438cb38718d702b4
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="troubleshoot-broken-references"></a>Řešení potíží s poškozenými odkazy
 
@@ -61,7 +63,7 @@ Chcete-li tento problém vyřešit, můžete odstranit poškozený odkaz a pak j
 
 1. Pokud používáte Visual Basic, vyberte **odkazy** a klikněte na tlačítko **cesty odkazů** tlačítko. V **cesty odkazů** dialogovém okně zadejte cestu ke složce obsahující položku, kterou chcete odkazovat v **složky** pole a pak klikněte na **přidat složku** tlačítko.
 
-    Pokud používáte Visual C#, vyberte **cesty odkazů** stránky. V **složky** pole, zadejte cestu ke složce obsahující položku, kterou chcete odkazovat, a pak klikněte na **přidat složku** tlačítko.
+    Pokud používáte C#, vyberte **cesty odkazů** stránky. V **složky** pole, zadejte cestu ke složce obsahující položku, kterou chcete odkazovat, a pak klikněte na **přidat složku** tlačítko.
 
 ## <a name="referenced-file-has-been-deleted"></a>Odkazovaný soubor byl odstraněn
 

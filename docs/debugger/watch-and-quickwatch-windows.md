@@ -4,10 +4,12 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.watch
+f1_keywords:
+- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -15,22 +17,21 @@ helpviewer_keywords:
 - expression evaluation
 - registers, evaluating
 - debugging [Visual Studio], expression evaluation
-ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 086d7b103095f6cbc9d90c962fd0ad31af964f54
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
+ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Nastavovat sledování na proměnné pomocí sledování a QuickWatch Windows v sadě Visual Studio
-Při ladění, můžete použít **sledovat** (**ladění > Windows > sledovat > sledování (1, 2, 3, 4)**) a **QuickWatch** (klikněte pravým tlačítkem na proměnnou nebo  **Ladění > QuickWatch**) systému windows můžete sledovat proměnné a výrazy.  Rozdíl je, že **sledovat** okno může zobrazit několika proměnných, při **QuickWatch** okno zobrazí jednu proměnnou najednou.
+Při ladění, můžete použít **sledovat** a **QuickWatch** windows si chcete přehrát proměnné a výrazy.  Rozdíl je, že **sledovat** okno může zobrazit několika proměnných, při **QuickWatch** okno zobrazí jednu proměnnou najednou. 
 
-Windows jsou k dispozici pouze během relace ladění. 
+Windows jsou k dispozici pouze během relace ladění. Otevřete **sledovat** okně zvolte **ladění > Windows > sledovat > sledování (1, 2, 3, 4)**). Chcete-li otevřít **QuickWatch** okně buď klikněte pravým tlačítkem na proměnnou a zvolte **QuickWatch** nebo zvolte **ladění > QuickWatch**.
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Sledování jednu proměnnou s QuickWatch  
  Můžete použít **QuickWatch** okno sledovat jednu proměnnou. Například pokud máte následující kód:  
@@ -54,11 +55,11 @@ static void Main(string[] args)
   
 2.  Spusťte ladění. Provádění zastaví u zarážky.  
   
-3.  Otevřete **QuickWatch** okno (klikněte pravým tlačítkem na a, zvolte **QuickWatch**, nebo **SHIFT + F9**).
+3.  Otevřete **QuickWatch** okno (klikněte pravým tlačítkem na `a`, zvolte **QuickWatch**, nebo vyberte `a` a stiskněte klávesu **SHIFT + F9**).
 
     Měli byste vidět proměnnou v **hodnoty** okno s hodnotou 1.
 
-    ![Výraz QuickWatch](../debugger/media/watchexpression.png "QuickWatchExpression")  
+    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
 
     Pokud chcete vyhodnotit výraz pomocí proměnné, přidejte výraz například `a + b` k **výraz** a klikněte na **přehodnocovat**. 
   
@@ -115,11 +116,11 @@ int main()
   
  Například pokud máte kód uvedené v předchozí části, můžete získat průměr ze tří hodnot takto:  
   
- ![Podívejte se na výrazu](../debugger/media/watchexpression.png "WatchExpression")  
+ ![Watch Expression](../debugger/media/watchexpression.png "WatchExpression")  
   
  Obecně platí, pravidla pro vyhodnocení výrazů v **sledovat** okna jsou stejné jako pravidla pro vyhodnocení výrazů v jazyce kódování. Pokud výraz obsahuje chybu syntaxe, můžete očekávat ke stejné chybě kompilátoru, která zobrazí se v editoru kódu. Tady je příklad:  
   
- ![Podívejte se na chyby výrazu](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
+ ![Watch Expression Error](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
 ##  <a name="bkmk_refreshWatch"></a>Aktualizace hodnot sledování, které jsou zastaralé.  
  V některých případech může zobrazit aktualizace ikona (šipka cyklické) Pokud je výrazu vyhodnoceného v **sledovat** okno.  Například, pokud máte vyhodnocení vlastnosti vypnutý (**nástroje > Možnosti > ladění > povolit vyhodnocení vlastnosti a jiná volání funkce implicitní**), a máte následující kód:  
