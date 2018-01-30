@@ -4,7 +4,8 @@ ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,16 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: "38"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9b3fd00e849a54fc926054e1f7e0d97b2907cf02
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Začínáme ladění vícevláknové aplikace v sadě Visual Studio
 Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní pro ladění vícevláknové aplikace. Tento kurz ukazuje, jak používat značky přístup z více vláken **paralelní zásobníky** okně **paralelního sledování** oken, podmíněné zarážky a filtr zarážky. V tomto kurzu trvá jenom pár minut, ale jeho dokončení vás seznámí s funkcemi pro ladění vícevláknové aplikace.
@@ -199,7 +201,7 @@ Zahájíte tento kurz, musíte projekt vícevláknové aplikace. Postupujte podl
   
 -   V editoru kódu zdroj vyhledejte následující kód: 
   
-    ```CSharp  
+    ```csharp  
     Thread.Sleep(3000);  
     Console.WriteLine();  
     ```  
@@ -228,7 +230,7 @@ Zahájíte tento kurz, musíte projekt vícevláknové aplikace. Postupujte podl
   
 4.  V editoru zdrojového kódu vyhledejte řádek, který obsahuje zarážce:  
   
-    ```CSharp  
+    ```csharp  
     Thread.Sleep(3000);  
     ```  
   
@@ -260,7 +262,7 @@ V **paralelní zásobníky** okno, můžete přepnout mezi zobrazení vláken a 
 
 1. Otevřete **paralelní zásobníky** okna tak, že zvolíte **ladění > Windows > paralelní zásobníky**. Měli byste vidět něco podobného jako to (přesné informace budou lišit v závislosti na aktuální umístění každé vlákno, hardwaru a programovacího jazyka).
 
-    ![Paralelní zásobníky – okno](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
+    ![Parallel Stacks Window](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
     V tomto příkladu zleva doprava se nám získat tyto informace:
     
@@ -287,7 +289,7 @@ V **paralelní zásobníky** okno, můžete přepnout mezi zobrazení vláken a 
 
     Hodnoty pro počet proměnnou pro každé vlákno se zobrazí v okně. (Pokud nevidíte tuto velkého množství informací ještě, pokuste se stisknutím klávesy F11 několik vícekrát posunut provádění vlákna v ladicím programu.)
 
-    ![Paralelní kukátko – okno](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
+    ![Parallel Watch Window](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
 4. Pravým tlačítkem na jednu z jeho řádků v okně zobrazíte dostupné možnosti.
 

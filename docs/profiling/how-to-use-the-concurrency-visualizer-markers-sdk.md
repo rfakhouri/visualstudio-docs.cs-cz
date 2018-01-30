@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
-caps.latest.revision: "9"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 794a853db12f106e8f7002d93bca798d45bb582c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f07afd0b97177ec6cae33d9ee372390c504f686
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Postupy: Použití SDK značek Vizualizéru souběžnosti
 Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvořit rozsahy a zapsat příznaky, zprávy a upozornění.  
@@ -93,7 +95,7 @@ Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvo�
   
     ```  
   
-    ```CSharp  
+    ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
@@ -119,7 +121,7 @@ Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvo�
   
     ```  
   
-    ```CSharp  
+    ```csharp  
   
     Span flagSpan = Markers.EnterSpan("flag span");  
     Markers.WriteFlag("Here is the flag.");  
@@ -160,7 +162,7 @@ Toto téma ukazuje, jak se používat sadu SDK Vizualizéru souběžnosti vytvo�
     messageSeriesSpan.Leave()  
     ```  
   
-    ```CSharp  
+    ```csharp  
   
     MarkerSeries flagSeries = Markers.DefaultWriter.CreateMarkerSeries("flag series");  
     Span flagSeriesSpan = flagSeries.EnterSpan("flag span");  

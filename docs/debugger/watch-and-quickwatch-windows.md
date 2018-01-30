@@ -22,8 +22,8 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c518becd09f6b94fb598975caa913d150ac2a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 01/29/2018
@@ -36,7 +36,7 @@ Windows jsou k dispozici pouze během relace ladění. Otevřete **sledovat** ok
 ## <a name="observing-a-single-variable-with-quickwatch"></a>Sledování jednu proměnnou s QuickWatch  
  Můžete použít **QuickWatch** okno sledovat jednu proměnnou. Například pokud máte následující kód:  
   
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b;  
@@ -125,7 +125,7 @@ int main()
 ##  <a name="bkmk_refreshWatch"></a>Aktualizace hodnot sledování, které jsou zastaralé.  
  V některých případech může zobrazit aktualizace ikona (šipka cyklické) Pokud je výrazu vyhodnoceného v **sledovat** okno.  Například, pokud máte vyhodnocení vlastnosti vypnutý (**nástroje > Možnosti > ladění > povolit vyhodnocení vlastnosti a jiná volání funkce implicitní**), a máte následující kód:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     List<string> list = new List<string>();  
@@ -177,7 +177,7 @@ var1 = var2
   
  Následující kód vytvoří jednu metodu `Person` pomocí místní proměnné, ale chcete zjistit, co `Person`na název se jinou metodu:  
   
-```CSharp  
+```csharp  
 class Person  
 {  
     public Person(string name)  

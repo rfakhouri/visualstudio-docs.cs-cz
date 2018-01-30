@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a969a75a7c0cda89d040b8829fc8313974646c07
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Začínáme s ladicím programu sady Visual Studio
 Ladicí program Visual Studio je snadno použitelný v libovolném jazyce. Zde ukážeme postup ladění jednoduché programu v C#, ale můžete použít stejný postup na kód v jiných jazycích, jako je například C++ a JavaScript.
@@ -27,7 +29,7 @@ Pokud chcete přehrát video, zobrazující podobné funkce, najdete v části [
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a>Ladění projektu pro základní C#  
  Začněme s jednoduchou aplikaci konzoly C# (**soubor > Nový > projekt**, pak vyberte **Visual C#** a potom **konzolové aplikace**). Pokud jste nikdy práce pomocí sady Visual Studio před, přečtěte si téma [návod: vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Hlavní** metoda právě přidá 1 do proměnná typu integer 10krát a vytiskne výsledek do konzoly:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -56,7 +58,7 @@ static void Main(string[] args)
   
  Můžete ukazatel myši přesunete **testInt** proměnné, které chcete zobrazit aktuální hodnota v data tip.  
   
- ![DBG &#95; Základy &#95; Data &#95; Tipy](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
+ ![DBG&#95;Basics&#95;Data&#95;Tips](../debugger/media/dbg_basics_data_tips.png "DBG_Basics_Data_Tips")  
   
  Pod okno kódu byste měli vidět **automobily**, **místní hodnoty –**, a **sledovat** systému windows. Tyto windows zobrazit aktuální hodnoty proměnných v době spuštění. Obě **automobily** a **místní hodnoty –** windows zobrazit **testInt** s hodnotou **10**.  
   
@@ -71,7 +73,7 @@ static void Main(string[] args)
   
  Rozdíl mezi **Krokovat s vnořením** a **Krokovat s přeskočením**, je potřeba přidat metodu, která volá jinou metodu. Přidání metody do aplikace C# a volat z metody Main. Kód by měl vypadat přibližně takto:  
   
-```CSharp  
+```csharp  
 static void Main(string[] args)  
 {  
     Method1();  

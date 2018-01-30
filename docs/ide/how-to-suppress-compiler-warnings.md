@@ -9,12 +9,13 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 868e3be3dc789928fe061d236cdc7a0971d49c71
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.openlocfilehash: 3af162101eb20e018be44480c862192c0c59276a
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Postupy: potlačení upozornění kompilátoru
 
@@ -111,7 +112,7 @@ Tento příklad ukazuje, jak upravit *.vbproj* potlačení upozornění kompilá
 
     **Výstup** okno přestane zobrazovat upozornění, která jste zadali.
 
-Další informace najdete v tématu [/nowarn) – možnost kompilátoru](/dotnet/visual-basic/reference/command-line-compiler/nowarn) pro Visual Basic – kompilátor příkazového řádku.
+Další informace najdete v tématu [/nowarn – možnost kompilátoru](/dotnet/visual-basic/reference/command-line-compiler/nowarn) pro Visual Basic – kompilátor příkazového řádku.
 
 ## <a name="suppressing-warnings-for-nuget-packages"></a>Potlačení upozornění pro balíčky NuGet
 

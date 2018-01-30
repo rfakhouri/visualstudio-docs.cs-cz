@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -25,16 +26,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
-caps.latest.revision: "29"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: c1186da8d276796816d8531963f746f222526b6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: e1191884f0a20463f9d248a6acfca4337212b613
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory formátu v jazyce C# v ladicím programu sady Visual Studio
 Formát, ve kterém je zobrazená hodnota v lze změnit **sledovat** okno použití specifikátorů formátu. Můžete také použít specifikátory formátu v **Immediate** okně **příkaz** okno a to i v systému windows zdroje. Pokud přesunutí ukazatele myši na výrazu v těchto windows, zobrazí se v datového tipu výsledek. Datatips – bude odrážet specifikace formátu v popis dat zobrazení.  
@@ -44,7 +46,7 @@ Formát, ve kterém je zobrazená hodnota v lze změnit **sledovat** okno použi
 ## <a name="using-format-specifiers"></a>Použití specifikátorů formátu  
  Pokud máte následující kód:  
   
-```CSharp  
+```csharp  
 {  
         int my_var1 = 0x0065;  
         int my_var2 = 0x0066;  
@@ -61,11 +63,11 @@ Formát, ve kterém je zobrazená hodnota v lze změnit **sledovat** okno použi
   
 |Specifikátor|Formát|Původní hodnotu sledování|Zobrazí|  
 |---------------|------------|--------------------------|--------------|  
-|AC|Vynutí vyhodnocení výrazu. To může být užitečné, když je vypnutý implicitní vyhodnocení vlastnosti a funkce implicitní volání.|Zpráva "vyhodnocení funkce implicitní vypnutý uživatelem."|\<Hodnota >|  
+|ac|Vynutí vyhodnocení výrazu. To může být užitečné, když je vypnutý implicitní vyhodnocení vlastnosti a funkce implicitní volání.|Zpráva "vyhodnocení funkce implicitní vypnutý uživatelem."|\<Hodnota >|  
 |d|desítkové celé číslo|0x0065|101|  
 |dynamické odkazy|Zobrazí zadaný objekt pomocí dynamického zobrazení|Zobrazí všechny členy objektu, včetně dynamického zobrazení|Zobrazí pouze dynamického zobrazení|  
 |h|hexadecimální celé číslo|61541|0x0000F065|  
-|NQ|řetězec s žádné uvozovky|"Řetězec"|Moje řetězec|  
+|nq|řetězec s žádné uvozovky|"Řetězec"|Moje řetězec|  
 |hidden|Zobrazí všechny veřejné a jiné veřejné členy|Zobrazí veřejné členy|Zobrazí všechny členy|  
 |Nezpracovaná|Zobrazí položky, jak se zobrazí v uzlu nezpracované položky. Na objekty proxy pouze platná.|Slovník\<T >|Nezpracovaná zobrazení slovník\<T >|  
 |výsledky|Použít s proměnnou typ, který implementuje rozhraní IEnumerable nebo rozhraní IEnumerable\<T >, obvykle výsledek výrazu dotazu. Zobrazí pouze členové, které obsahují výsledku dotazu.|Zobrazí všechny členy.|Zobrazí členy splňují podmínky dotazu.|  

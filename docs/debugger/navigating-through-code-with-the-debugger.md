@@ -4,25 +4,28 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.debug.execution
+f1_keywords:
+- vs.debug.execution
 helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
 ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
-caps.latest.revision: "42"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c45f6cfa37ee8593da08d59071d8244b08feac7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: f6b83e1be32eb657555131a934f8c11f9567c5bc
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="navigate-code-with-the-visual-studio-debugger"></a>Procházení kódu s ladicím programu sady Visual Studio
 Seznamte se s příkazy a zkratky přejděte kódu v ladicím programu a který bude rychlejší a snazší najít a vyřešte problémy v aplikaci. Když přejdete kódu v ladicím programu, můžete zkontrolovat stav vaší aplikace nebo Další informace o toku jeho spuštění.  
@@ -32,13 +35,13 @@ Seznamte se s příkazy a zkratky přejděte kódu v ladicím programu a který 
   
  Na zelenou šipku také spuštění ladicího programu (stejné jako **F5**).  
   
- ![DBG &#95; Základy &#95; Spustit &#95; ladění](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
  Zahrnují několik způsobů spuštění aplikace s ladicím programem připojené **F11** ([kroku do kódu](#BKMK_Step_into__over__or_out_of_the_code)), **F10** ([krok přes kód](#BKMK_Step_over_Step_out)), nebo pomocí **spustit ke kurzoru**.  Na co dělat tyto možnosti najdete v dalších částech tohoto tématu informace.  
   
  Při ladění, žlutý řádek zobrazuje kód, který provede další.  
   
- ![DBG &#95; Základy &#95; Rozdělení &#95; Režim](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
+ ![DBG&#95;Basics&#95;Break&#95;Mode](../debugger/media/dbg_basics_break_mode.png "DBG_Basics_Break_Mode")  
   
  Při ladění, můžete přepínat mezi příkazy, jako je **F5**, **F11** a používat další funkce popsané v tomto tématu (například zarážky) rychle získat na kód, který chcete zobrazit v.  
   
@@ -56,7 +59,7 @@ Seznamte se s příkazy a zkratky přejděte kódu v ladicím programu a který 
   
 -   Ve skutečnosti ladicí program prostřednictvím kódu příkazy spíše než fyzické řádky. Například `if` klauzule lze zapisovat na jeden řádek:  
   
-    ```CSharp  
+    ```csharp  
     int x = 42;  
     string s = "Not answered";  
     if( int x == 42) s = "Answered!";  
@@ -78,7 +81,7 @@ Seznamte se s příkazy a zkratky přejděte kódu v ladicím programu a který 
 |Příkaz klávesnice|Příkaz nabídky|Popis|  
 |----------------------|------------------|-----------------|  
 |**F10**|**Krok přes**|Pokud aktuální řádek obsahuje volání funkce, **Krokovat s přeskočením** spustí kód pak pozastaví spuštění na prvním řádku kódu po vyvolání funkce vrátí hodnotu.|  
-|**SHIFT + F11**|**Krok**|**Krokovat s Vystoupením** pokračuje spuštění kódu a pozastaví spuštění, když aktuální funkce vrátí hodnotu (ladicí program přeskočí prostřednictvím funkci current).|  
+|**Shift+F11**|**Krok**|**Krokovat s Vystoupením** pokračuje spuštění kódu a pozastaví spuštění, když aktuální funkce vrátí hodnotu (ladicí program přeskočí prostřednictvím funkci current).|  
   
 > [!TIP]
 >  Pokud potřebujete nalézt vstupní bod v aplikaci, začínat **F10** nebo **F11**. Tyto příkazy jsou často užitečné při kontrole stavu vaší aplikace nebo při pokusu o další informace o toku jeho spuštění.  

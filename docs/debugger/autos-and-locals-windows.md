@@ -4,7 +4,8 @@ ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,16 +15,17 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: "24"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 77dd01333941e897628a40a5a5dc1749917dcb89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
+ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Zkontrolovat proměnné v automobily a místní hodnoty – Windows v sadě Visual Studio
 **Automobily** okno (při ladění, **CTRL + ALT + V, A**, nebo **ladění > Windows > automobily**) a **místní hodnoty –** okno (při ladění **CTRL + ALT + V, L**, nebo **ladění > Windows > místní hodnoty –**) jsou velmi užitečné, pokud chcete zobrazit hodnoty proměnné při ladění. **Místní hodnoty –** okno zobrazí proměnné, které jsou definovány v místní obor, což je obecně funkce nebo metoda, která je aktuálně spouštěna. **Automobily** okno se zobrazí proměnné používá kolem aktuálního řádku (místo, kde je zastavena ladicího programu). Přesně které proměnné zobrazení v tomto okně se liší v různých jazycích. V tématu [proměnné, které se zobrazí v okně automobily?](#bkmk_whatvariables) níže.  
@@ -33,14 +35,14 @@ Pokud potřebujete další informace o základní ladění, přečtěte si [Zač
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Prohlížení objekty v systému windows automobily a lokální proměnné  
 Pole a objekty jsou zobrazeny v systému windows automobily a místní hodnoty jako ovládacích prvků strom. Klikněte na šipku nalevo od názvu proměnné rozbalte zobrazení zobrazit pole a vlastnosti. Tady je příklad [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) objekt v **místní hodnoty –** okno:  
   
-![Místní hodnoty – & č. 45; FileStream](../debugger/media/locals-filestream.png "FileStream lokální proměnné")  
+![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="bkmk_whatvariables"></a>Jaké proměnné se zobrazí v okně Automatické hodnoty?  
  Můžete použít **automobily** okno v kódu jazyka C#, Visual Basic a C++. **Automobily** okno nepodporuje jazyk JavaScript a F #.  
   
  V jazyce C# a Visual Basic **automobily** okně se zobrazí všechny proměnné použít na aktuální nebo předchozí řádek. Pokud například deklarovat čtyři proměnné a jejich nastavení následujícím způsobem:
 
-```CSharp
+```csharp
     public static void Main()
     {
        int a, b, c, d;
@@ -53,7 +55,7 @@ Pole a objekty jsou zobrazeny v systému windows automobily a místní hodnoty j
 
  Pokud nastavíte bod přerušení na řádku `c = 3`; a spusťte ladicí program, když se zastaví provádění **automobily** okno bude vypadat například takto:  
 
- ![Automatické hodnoty & č. 45; CSharp](../debugger/media/autos-csharp.png "automobily CSharp")  
+ ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
 
  Všimněte si, že hodnota `c` je 0, protože řádek `c = 3` ještě nebyla spuštěna.  
 
@@ -73,7 +75,7 @@ Pole a objekty jsou zobrazeny v systému windows automobily a místní hodnoty j
 
  Pokud nastavíte bod přerušení na řádku `e = 5;` a spusťte ladicí program, když se zastaví provádění **automobily** okno bude vypadat například takto:  
   
- ![Automatické hodnoty & č. 45; Cplus](../debugger/media/autos-cplus.png "automobily Cplus")  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
  Všimněte si, že proměnná e není inicializována, protože kód na řádku `e = 5;` ještě nebyla spuštěna.  
   
@@ -84,7 +86,7 @@ Pole a objekty jsou zobrazeny v systému windows automobily a místní hodnoty j
   
  Následující kód C# přidá vrácené hodnoty dvě funkce:  
 
-```CSharp
+```csharp
 static void Main(string[] args)  
 {  
     int a, b, c, d;  
