@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-code-analysis
+ms.technology:
+- vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36e0ab96c1c0c3deeced62ff9808737c903e682b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c82bc929fa7633719c06569cb3dded5df651a349
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Zvýšení kvality kódu použitím zásad vracení se změnami týmového projektu
 
@@ -48,7 +50,7 @@ Můžete určit těchto týmového projektu vrácení se změnami zásad:
 |Úloha|Podpůrný obsah|
 |----------|------------------------|
 |**Pomocí analýzy kódu v procesu vývoje:** členové týmu spuštění analýzy kódu na svých počítačích vývoj. V sadě Visual Studio, vývojáři konfigurace a spuštění spuštění analýzy kódu pro kód jednotlivých projektů, zobrazit a analyzovat problémy nalezena. je spuštěn a vytváření pracovních položek pro upozornění.|[Analýza kvality aplikace](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|
-|**Vytváření a spouštění testování částí:** testování částí poskytnout vývojáři a testerům, sada rychlý způsob, jak hledat logické chyby v metody třídy v projektu C#, Visual Basic .NET a C++. Testování částí můžete vytvořit jednou a spustit při každém tohoto zdrojového kódu se změní na Ujistěte se, že byly zavedeny žádné chyby.|[Testování částí kódu](../test/unit-test-your-code.md)|
+|**Vytváření a spouštění testování částí:** testování částí poskytnout vývojáři a testerům, sada rychlý způsob, jak hledat logické chyby v metody třídy v projektu C#, Visual Basic a C++. Testování částí můžete vytvořit jednou a spustit při každém tohoto zdrojového kódu se změní na Ujistěte se, že byly zavedeny žádné chyby.|[Testování částí kódu](../test/unit-test-your-code.md)|
 |**Sledování pracovních položek a závad:** pracovní položky můžete použít ke sledování a správě pracovní i informace o týmového projektu. Pracovní položka je databáze záznam, který [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] používá ke sledování přiřazení a průběh práce. Různé typy pracovních položek můžete sledovat různé typy práce, například požadavky zákazníků, chyby produktu a vývojářských úloh.|[Pracovní položky (VSTS)](/vsts/work/work-items/index)|
 
 ## <a name="external-resources"></a>Externí zdroje

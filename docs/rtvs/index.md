@@ -1,23 +1,26 @@
 ---
 title: R Tools pro Visual Studio | Microsoft Docs
+description: "R nástrojů pro Visual Studio (RTVS) je bezplatná, open-source příponu, která poskytuje mnoho funkcí jazyka, včetně technologii IntelliSense, ladění a vzdálené pracovní prostory."
 ms.custom: 
 ms.date: 11/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: c18eadd6cfcdf6fc77b204f78654126ceb1862db
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: f0ed20e323714ab28ae66c2522b613e1414a0973
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Práce s R v sadě Visual Studio
 
@@ -30,22 +33,22 @@ R nástrojů pro Visual Studio (RTVS) je bezplatný, [open-source](https://githu
 
 Chcete-li prostředí R v sadě Visual Studio:
 
-- [Nainstalujte nástroje pro R](installation.md).
-- Postupujte podle [Začínáme](getting-started-with-r.md) průvodce, a taky [ukázky](getting-started-samples.md) a [získání pomoci](getting-started-help.md) témata.
+- [Nainstalujte nástroje pro R](installing-r-tools-for-visual-studio.md).
+- Postupujte podle [Začínáme](getting-started-with-r.md) průvodce, a taky [ukázky](getting-started-samples.md) a [získání pomoci](getting-started-help.md) články.
 
 Potom postupujte podle níže odkazy, které další informace o funkce související s R a také obecné možnosti sady Visual Studio, sám sebe.
 
 | Funkce | Popis | Dokumentaci obecné Visual Studio | 
 | --- | --- | --- |
-| [Systém projektu Visual Studio](projects.md) | Uspořádání a správu související soubory ve struktuře pohodlný a využít užitečné šablony pro položky, jako je například kódu jazyka R, dokumentace R, R Markdownu, dotazy SQL a uložených procedur. Získejte také [Správce balíčků](package-manager.md) a [systému SQL Server integration](sql-server.md).  | [Řešení a projekty v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Pracovní prostor](workspaces.md) | RTVS můžete vytvořit vazbu na místní a vzdálené pracovní prostory, což umožňuje vytvořit kód R místně s menší sady dat, pak snadno spustit kód na výkonnější počítače založené na cloudu s mnohem větších datových sad. | není k dispozici |
-| [Možnosti nástrojů R](options.md) | Ovládat různé aspekty RTVS. | [Dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Bohaté úpravy, IntelliSense a fragmenty kódu](code-editing.md) | Zahrnuje zvýrazňování, syntaxe [IntelliSense](code-intellisense.md) ve všech váš kód a knihovny, kód formátování, podpis nápovědy, přechod na definici, najít všechny odkazy [výstřižky kódu](code-snippets.md)a další. | [Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [R Markdown](rmarkdown.md) | R Markdownu dokumenty můžete sdílet vaše data výsledky se integrované kódu jazyka R uvnitř bloky kódu markdownu. | není k dispozici |
-| [Interaktivní okno](interactive-repl.md) | Nabízí úplné REPL prostředí R a umožňuje snadno spouštění kódu ve zdrojovém souboru v okně interaktivní. | není k dispozici |
-| [Vizualizace dat](visualizing-data.md) | Vykreslení je nedílnou součástí prostředí R a RTVS podporuje více nezávislých výkresu windows, každou s vlastní historie a možnost přesunout ukazuje zeměpisný mezi windows. Pozemků můžete uložit do rastrového obrázku a soubory PDF nebo jako rastrový obrázek nebo metafile zkopírován do schránky.  | není k dispozici |
+| [Systém projektu Visual Studio](r-projects-in-visual-studio.md) | Uspořádání a správu související soubory ve struktuře pohodlný a využít užitečné šablony pro položky, jako je například kódu jazyka R, dokumentace R, R Markdownu, dotazy SQL a uložených procedur. Získejte také [Správce balíčků](r-package-manager-in-visual-studio.md) a [systému SQL Server integration](integrating-sql-server-with-r.md).  | [Řešení a projekty v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
+| [Workspace](r-workspaces-in-visual-studio.md) | RTVS můžete vytvořit vazbu na místní a vzdálené pracovní prostory, což umožňuje vytvořit kód R místně s menší sady dat, pak snadno spustit kód na výkonnější počítače založené na cloudu s mnohem větších datových sad. | není k dispozici |
+| [Možnosti nástrojů R](options-for-r-tools-in-visual-studio.md) | Ovládat různé aspekty RTVS. | [Dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md) |
+| [Bohaté úpravy, IntelliSense a fragmenty kódu](editing-r-code-in-visual-studio.md) | Zahrnuje zvýrazňování, syntaxe [IntelliSense](r-intellisense.md) ve všech váš kód a knihovny, kód formátování, podpis nápovědy, přechod na definici, najít všechny odkazy [výstřižky kódu](code-snippets-for-r.md)a další. | [Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [R Markdown](rmarkdown-with-r-in-visual-studio.md) | R Markdownu dokumenty můžete sdílet vaše data výsledky se integrované kódu jazyka R uvnitř bloky kódu markdownu. | není k dispozici |
+| [Interaktivní okno](interactive-repl-for-r-in-visual-studio.md) | Nabízí úplné REPL prostředí R a umožňuje snadno spouštění kódu ve zdrojovém souboru v okně interaktivní. | není k dispozici |
+| [Vizualizace dat](visualizing-data-with-r-in-visual-studio.md) | Vykreslení je nedílnou součástí prostředí R a RTVS podporuje více nezávislých výkresu windows, každou s vlastní historie a možnost přesunout ukazuje zeměpisný mezi windows. Pozemků můžete uložit do rastrového obrázku a soubory PDF nebo jako rastrový obrázek nebo metafile zkopírován do schránky.  | není k dispozici |
 | [Průzkumník proměnných](variable-explorer.md) | Proměnné v globální nebo balíček specifické obory, zkontrolujte možnost Zobrazit řazení tabulky a exportovat do souboru CSV. | není k dispozici |
-| [Plnohodnotné ladění](debugging.md) | Zahrnuje integraci se interaktivních okna. | [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md) |
+| [Plnohodnotné ladění](debugging-r-in-visual-studio.md) | Zahrnuje integraci se interaktivních okna. | [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md) |
 
 Viz také [nejčastější dotazy](faq.md).
 

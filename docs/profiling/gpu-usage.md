@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="gpu-usage"></a>Využití GPU
 Použijte nástroj využití GPU ve Visual Studio výkon a diagnostiku pro lepší pochopení využití základní hardware Direct3D – aplikace. Můžete ji určit, zda je vázané na procesor nebo GPU vazby a získat přehled o použití platforma hardwaru efektivněji výkon vaší aplikace. Využití GPU podporuje aplikace, které používají Direct3D – 12, Direct3D – 11 a Direct3D – 10; nepodporuje se jiné grafické rozhraní API, například Direct2D nebo OpenGL.  
@@ -104,7 +104,7 @@ Od verze Visual Studio 2017, tato data můžete otevřít pomocí [GPUView](/win
 |**Přístup z více vláken**|ID podprocesu, které vás zajímají. Vícevláknové aplikace to vám může pomoci identifikovat konkrétní vláken, které patří do procesu, který vás zajímá. Události spojené s vybranou posloupnost jsou vyznačené na každý časové osy.|  
 |**Zobrazení**|Počet zobrazení se zobrazí jejichž obnovovací frekvence **Poznámka:** některé ovladače lze nakonfigurovat, aby k dispozici více fyzických zobrazí jako jeden, velké virtuální zobrazení. Jedním zobrazení v seznamu uvedena, může se zobrazit i v případě, že tento počítač má několik zobrazí připojen.|  
 |**Filtr**|Klíčová slova, která vás zajímá. Události v dolní části sestavy bude obsahovat pouze ty, které odpovídají – klíčové slovo v celé nebo částečně. Více klíčových slov můžete určit jejich oddělením středníkem (;).|  
-|**Řazení hierarchie**|Zaškrtávací políčko, která určuje, zda jsou události hierarchií – definovat přes uživatele značek – zachovaná nebo ignorovat.|  
+|**Hierarchy Sort**|Zaškrtávací políčko, která určuje, zda jsou události hierarchií – definovat přes uživatele značek – zachovaná nebo ignorovat.|  
   
  Seznam událostí v dolní části sestavy využití GPU zobrazí podrobnosti o jednotlivých událostí.  
   
@@ -118,7 +118,7 @@ Od verze Visual Studio 2017, tato data můžete otevřít pomocí [GPUView](/win
 |**ID podprocesu**|ID vlákna, ze kterého přišel události.|  
   
 > [!IMPORTANT]
->  Windows 8.1 se vyžaduje pro uvedení událostí. Kromě toho pokud GPU nebo ovladač nepodporují nezbytné instrumentace funkce, všechny události se zobrazí jako 'bez atributů'. Nezapomeňte aktualizovat ovladač GPU a zkuste to znovu, pokud k tomuto problému dochází. Další informace najdete v tématu [hardwaru a ovladače, které podporují](#hwsupport) níže.  
+>  Pokud GPU nebo ovladač nepodporují nezbytné instrumentace funkce, všechny události se zobrazí jako 'bez atributů'. Nezapomeňte aktualizovat ovladač GPU a zkuste to znovu, pokud k tomuto problému dochází. Další informace najdete v tématu [hardwaru a ovladače, které podporují](#hwsupport) níže.  
   
 ## <a name="gpu-usage-settings"></a>Nastavení využití GPU  
  Můžete nakonfigurovat nástroj využití GPU odložit kolekce profilace informace, namísto spuštění ke shromažďování informací při spuštění aplikace. Vzhledem k velikosti analytické informace můžou být důležité, to je užitečné, když víte, že zpomalení výkonu vaší aplikace se zobrazí až později.  

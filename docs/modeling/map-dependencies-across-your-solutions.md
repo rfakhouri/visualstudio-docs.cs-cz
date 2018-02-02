@@ -29,12 +29,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 135e0e9d5b6b2d4e0f75804a98c8f40f17d0b736
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 9b921b3b4c1bad9b68f668ec7589b4a0030052d0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapování závislostí napříč vaším řešením
 
@@ -63,13 +64,13 @@ Když chcete pochopit závislosti mezi kódu, Vizualizujte je pomocí vytvářen
   
  **Můžete namapovat závislosti pro kód v těchto jazycích**:  
   
--   Visual C# .NET nebo Visual Basic .NET v řešení nebo sestavení (.dll nebo .exe)  
+-   Visual C# nebo Visual Basic v řešení nebo sestavení (.dll nebo .exe)  
   
 -   Nativní nebo spravovaný kód C nebo C++ v projektech Visual C++, soubory hlaviček (.h nebo `#include`), nebo binárních souborů  
   
 -   X ++ projekty a sestavení vytvořené z modulů .NET pro aplikace Microsoft Dynamics AX  
   
- **Poznámka:** pro projekty než C# nebo Visual Basic .NET, jsou méně možností pro spuštění Mapa kódu nebo přidání položky do existující mapu kódu. Nelze například klikněte pravým tlačítkem na objekt v textovém editoru projektu C++ a přidat jej do Mapa kódu. Můžete však přetáhněte a vyřadit kódu jednotlivých elementů nebo soubory z Průzkumníku řešení, zobrazení tříd a prohlížeč objektů.  
+ **Poznámka:** pro projekty než C# nebo Visual Basic, jsou méně možností pro spuštění Mapa kódu nebo přidání položky do existující mapu kódu. Nelze například klikněte pravým tlačítkem na objekt v textovém editoru projektu C++ a přidat jej do Mapa kódu. Můžete však přetáhněte a vyřadit kódu jednotlivých elementů nebo soubory z Průzkumníku řešení, zobrazení tříd a prohlížeč objektů.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Chcete-li zobrazit celkový závislosti mezi řešení  
   
@@ -286,7 +287,7 @@ Když chcete pochopit závislosti mezi kódu, Vizualizujte je pomocí vytvářen
 ##  <a name="SeeSourceHeader"></a>Najdete v části závislosti mezi C a C++ zdrojové soubory a soubory hlaviček  
  Pokud chcete vytvořit podrobnější mapy pro projekty C++, nastavte možnost Procházet informace kompilátoru (**/FR**) na těchto projekty. Jinak se objeví zpráva s dotazem, zda chcete tuto možnost nastavit. Pokud vyberete **OK**, nastaví tato možnost pouze aktuální mapy. Můžete skrýt zprávu pro všechny novější mapy. Pokud je skrýt tuto zprávu, můžete nastavit znovu zobrazí. Nastavte následující klíč registru na `0` nebo odstranit klíč:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Když otevřete řešení, které obsahuje projekty Visual C++, může trvat nějakou dobu, než se aktualizuje databáze technologie IntelliSense. Během této doby, není možné vytvořit map kódu hlavičky (.h nebo `#include`) soubory, dokud nebude dokončeno databázi IntelliSense aktualizace. Na stavovém řádku v dolní části sady Visual Studio můžete sledovat průběh aktualizace. Chcete-li vyřešit problémy nebo zprávy, které se zobrazují, protože jsou zakázaná určitá nastavení IntelliSense, najdete v části [řešení potíží s mapy pro kód C a C++](#Troubleshooting).  
   
@@ -310,7 +311,7 @@ Když chcete pochopit závislosti mezi kódu, Vizualizujte je pomocí vytvářen
 |**Problém**|**Možná příčina**|**Řešení**|  
 |---------------|------------------------|--------------------|  
 |Mapa kódu se nepodařilo vygenerovat.|V řešení nebyly úspěšně sestaveny žádné projekty.|Opravte chyby sestavení, které nastaly a pak znovu vygenerovat mapy.|  
-|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]přestane reagovat při pokusu o generování mapy kódu z **architektura** nabídky.|Soubor databáze programů (.pdb) může být poškozen.<br /><br /> Soubor .pdb ukládá informace o ladění, jako je typ, metoda a informace zdrojového souboru.|Znovu sestavte řešení a potom akci opakujte.|  
+|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] přestane reagovat při pokusu o generování mapy kódu z **architektura** nabídky.|Soubor databáze programů (.pdb) může být poškozen.<br /><br /> Soubor .pdb ukládá informace o ladění, jako je typ, metoda a informace zdrojového souboru.|Znovu sestavte řešení a potom akci opakujte.|  
 |Určitá nastavení pro databázi procházení IntelliSense jsou zakázána.|Určitá nastavení IntelliSense může být zakázáno v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **možnosti** dialogové okno.|Chcete-li tato nastavení povolit, zapněte je.<br /><br /> V tématu [možnosti, textový Editor, C/C++, Upřesnit](../ide/reference/options-text-editor-c-cpp-advanced.md).|  
 |Zpráva **neznámé metody** se zobrazí v uzlu metoda.<br /><br /> K tomuto problému dochází, protože nelze vyřešit název metody.|Binární soubor nemusí mít základní tabulku přemístění.|Zapnout **/FIXED:NO** možnost v linkeru.|  
 ||Soubor databáze programů (.pdb) nemusí být vytvořen.<br /><br /> Soubor .pdb ukládá informace o ladění, jako je typ, metoda a informace zdrojového souboru.|Zapnout **/DEBUG** možnost v linkeru.|  

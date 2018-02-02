@@ -4,23 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - security [Visual Studio], applications
 - application design, securability
 ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
-caps.latest.revision: "20"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 665f03744fc559727e96373512fc983e5d75293c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a95521c2ce49e5dfd00863ead6f0f878547f56ec
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="securing-applications"></a>Zabezpečování aplikací
 Zatímco většina aplikací mít běžné problémy zabezpečení, každou doménu aplikace má výzvy zabezpečení své vlastní.  
@@ -31,19 +33,19 @@ Zatímco většina aplikací mít běžné problémy zabezpečení, každou dom�
  [Osvědčené postupy zabezpečení](/cpp/top/security-best-practices-for-cpp)  
  Obsahuje informace o funkcích zabezpečení a postupy, které jsou k dispozici při práci v jazyce Visual C++.  
   
- [Zabezpečení a programování (C# a Visual Basic)](https://msdn.microsoft.com/en-us/library/ms233782(v=vs.100).aspx)  
+ [Zabezpečení a programování (C# a Visual Basic)](https://msdn.microsoft.com/library/ms233782(v=vs.100).aspx)  
  Poskytuje informace o zabezpečení se první tři pro vývojáře v jazyce Visual Basic a C#: oprávnění, webových aplikací a instalaci sady Visual Studio.  
   
 ## <a name="securing-mobile-applications"></a>Zabezpečení mobilních aplikací  
  Při rostoucí oblíbenosti mobilních zařízení, stane se důležitější zabezpečení informací a dat na těchto zařízeních.  
   
- [Důležité informace o zabezpečení pro zařízení](http://msdn.microsoft.com/en-us/45fab484-8718-452e-8210-04fda3c6cb87)  
+ [Důležité informace o zabezpečení pro zařízení](http://msdn.microsoft.com/45fab484-8718-452e-8210-04fda3c6cb87)  
  Popisuje několika faktory, které ovlivňují zásady zabezpečení pro zařízení.  
   
- [Cíle zabezpečení pro rozhraní .NET Compact Framework](http://msdn.microsoft.com/en-us/64ac2770-e2bc-40a3-abbf-56c8a2c0e364)  
+ [Cíle zabezpečení pro rozhraní .NET Compact Framework](http://msdn.microsoft.com/64ac2770-e2bc-40a3-abbf-56c8a2c0e364)  
  Popisuje cíle pro rozhraní .NET Compact Framework zabezpečení.  
   
- [Návrh zabezpečené mobilní webové stránky formuláře](http://msdn.microsoft.com/en-us/b69727c1-f81f-4221-a116-8f92f769365f)  
+ [Návrh zabezpečené mobilní webové stránky formuláře](http://msdn.microsoft.com/b69727c1-f81f-4221-a116-8f92f769365f)  
  Popisuje plánování a implementace podpora zabezpečení v bezdrátových sítí a mobilní zařízení.  
   
 ## <a name="securing-web-applications"></a>Zabezpečení webových aplikací  
@@ -55,10 +57,7 @@ Zatímco většina aplikací mít běžné problémy zabezpečení, každou dom�
  [Zabezpečení webové aplikace ASP.NET](http://msdn.microsoft.com/Library/658d0430-1644-4744-b52d-08b0d6fcacb8)  
  Podrobné informace o tom, jak řešit potíže se autorizaci a ověřování technologie ASP.NET.  
   
- [Důležité informace o zabezpečení pro jazyk JScript](http://msdn.microsoft.com/en-us/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
- Podrobné informace o některých zabezpečení problémů, kterým může dojít programátory v jazyce JScript.  
-  
- [Postupy: použití zabezpečení přenosu](http://msdn.microsoft.com/en-us/16210e41-5492-4cc8-9002-7366b1fc7297)  
+ [Postupy: použití zabezpečení přenosu](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  Popisuje, jak používat zabezpečení přenosu pro ověřování při připojování ke službě WCF.  
   
 ## <a name="securing-desktop-applications"></a>Zabezpečení aplikací klasické pracovní plochy  

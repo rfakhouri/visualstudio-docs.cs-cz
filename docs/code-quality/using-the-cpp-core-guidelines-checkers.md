@@ -6,17 +6,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
-caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
+dev_langs:
+- CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 0dba021b25a63a057f882aeb5c49a560992c2c2b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Pomocí kameny základní pokyny pro C++
 Základní pokyny C++ jsou přenosné sadu pokyny, pravidla a osvědčené postupy o kódování v jazyce C++ vytvořené odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu tato pravidla v rámci jeho nástrojů pro analýzu kódu pro jazyk C++. Kameny platí základní jsou nainstalované ve výchozím nastavení v Visual Studio 2017 a [k dispozici jako balíčku NuGet pro Visual Studio 2015](#vs2015_corecheck).
@@ -191,7 +191,7 @@ Můžete vytvořit kontroly C++ základní pokyny v automatizovaných sestavení
 ```
 Ujistěte se, že přidáte tyto vlastnosti před importem souboru Microsoft.Cpp.targets. Můžete vybrat konkrétní pravidlo sady nebo vytvořit vlastní sady pravidel nebo použít výchozí sadu pravidlo, které zahrnuje další PREfast kontroly.
 
-Nástroj pro kontrolu C++ základní součástí lze spustit pouze na zadané soubory pomocí stejný přístup jako [dříve popisované](#coreckeck_per_file), ale pomocí nástroje MSBuild souborů. Proměnné prostředí lze nastavit pomocí `BuildMacro` položky:
+Nástroj pro kontrolu C++ základní součástí lze spustit pouze na zadané soubory pomocí stejný přístup jako [dříve popisované](#corecheck_per_file), ale pomocí nástroje MSBuild souborů. Proměnné prostředí lze nastavit pomocí `BuildMacro` položky:
 
 ```xml
 <ItemGroup>

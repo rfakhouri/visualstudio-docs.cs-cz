@@ -5,27 +5,26 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - code analysis, walkthroughs
 - code analysis, rule sets
-ms.assetid: 7fe0a4e3-1ce0-4f38-a87a-7d81238ec7cd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Návod: Konfigurace a používání vlastní sady pravidel
+
 Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které byly nakonfigurovány k použijte vlastní *sadu pravidel* na knihovny tříd. Můžete vybrat sadu pravidel, která má vztah k typu projektu, který jste zadali pro vaše řešení, nebo můžete vybrat, že nastaví alternativní pravidlo ke splnění konkrétní potřebu například procházení kódu starší verze na problémy, které lze opravit pevných způsobem. V obou případech sady pravidel se dá přizpůsobit taky vyladění je požadavky projektu.  
   
- V tomto návodu se krok prostřednictvím tyto procesy:  
+V tomto návodu se krok prostřednictvím tyto procesy:  
   
 -   Vytvoření knihovny tříd.  
   
@@ -39,14 +38,11 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které byly nak
   
 -   Spuštění analýzy kódu a zjistěte, jak nastavit pravidlo přizpůsobení chování funguje.  
   
-## <a name="prerequisites"></a>Požadavky  
+## <a name="using-rule-sets-with-code-analysis"></a>Použití sad pravidel analýzy kódu
+
+Nejprve vytvořte knihovnu jednoduchá.  
   
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], nebo[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
-  
-## <a name="using-rule-sets-with-code-analysis"></a>Použití sad pravidel analýzy kódu  
- Nejprve vytvořte knihovnu jednoduchá.  
-  
-#### <a name="create-a-class-library"></a>Vytvoření knihovny tříd  
+### <a name="create-a-class-library"></a>Vytvoření knihovny tříd  
   
 1.  Na **soubor** nabídky, klikněte na tlačítko **nový** a pak klikněte na **projektu**.  
   
@@ -58,7 +54,7 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které byly nak
   
  V dalším kroku vyberete **Microsoft základní pravidla obecných zásad návrhu** sadu pravidel a uložit ho s projektem.  
   
-#### <a name="select-a-code-analysis-rule-set"></a>Vyberte sadu pravidel analýzy kódu  
+### <a name="select-a-code-analysis-rule-set"></a>Vyberte sadu pravidel analýzy kódu  
   
 1.  Na **analyzovat** nabídky, klikněte na tlačítko **konfigurace analýzy kódu pro RuleSetSample**.  
   
@@ -75,11 +71,11 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které byly nak
   
  V dalším kroku přidáte nějaký kód do třídy knihovny, která se použije k předvedení porušení CA1704 "Identifikátory by měly být zadány správně" pravidel nástroje Analýza kódu. Další informace najdete v tématu [CA1704: identifikátory by měly být zadány správně](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   
-#### <a name="add-your-own-code"></a>Přidat vlastní kód  
+### <a name="add-your-own-code"></a>Přidat vlastní kód  
   
 -   V Průzkumníku řešení otevřete soubor Class1.cs a nahraďte existující kód s následujícími službami:  
   
-    ```  
+    ```csharp
     using System;  
     using System.Collections.Generic;  
     using System.Text;  
@@ -99,13 +95,12 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které byly nak
                 return (sum);  
             }  
         }  
-    }  
+    }
+    ```
   
-    ```  
+Nyní můžete spustit analýza kódu v projektu RuleSetSample a vyhledejte všechny chyby a varování vygenerované v okně Seznam chyb.  
   
- Nyní můžete spustit analýza kódu v projektu RuleSetSample a vyhledejte všechny chyby a varování vygenerované v okně Seznam chyb.  
-  
-#### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Spuštění analýzy kódu v projektu RuleSetSample  
+### <a name="run-code-analysis-on-the-rulesetsample-project"></a>Spuštění analýzy kódu v projektu RuleSetSample  
   
 1.  Na **analyzovat** nabídky, klikněte na tlačítko **spuštění analýzy kódu na RuleSetSample**.  
   
@@ -117,7 +112,7 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které byly nak
   
  V dalším kroku bude upravit pravidlo vyloučen CA1704 upozornění, "Identifikátory by měly být zadány správně".  
   
-#### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Upravit pravidlo, nastavte pro váš projekt zakázat konkrétní pravidlo  
+### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>Upravit pravidlo, nastavte pro váš projekt zakázat konkrétní pravidlo  
   
 1.  Na **analyzovat** nabídky, klikněte na tlačítko **konfigurace analýzy kódu pro RuleSetSample**.  
   
@@ -127,15 +122,15 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které byly nak
   
 4.  V části **akce** sloupce, vyberte **None.** CA1704 zabrání zobrazení jako upozornění nebo chyby v okně Seznam chyb.  
   
-     Teď by být dobrý čas a experimentovat s různými tlačítka panelu nástrojů a možnosti, abyste se seznámili s nimi filtrování. Například můžete použít **Group By** při vyhledání konkrétní pravidla nebo kategorie pravidel rozevíracího seznamu. Dalším příkladem je, že můžete používat **skrýt zakázaná pravidla** tlačítka na panelu nástrojů stránky sadu pravidel pro skrytí nebo zobrazení všechna pravidla s **akce** sloupec nastavený na **žádné**. To může být užitečné, pokud chcete vyhledat všechna pravidla, která jste vypnuli k ověření, stále chcete mít je zakázána.  
+     Teď je vhodná doba a experimentovat s různými tlačítka panelu nástrojů a možnosti, abyste se seznámili s nimi filtrování. Například můžete použít **Group By** při vyhledání konkrétní pravidla nebo kategorie pravidel rozevíracího seznamu. Dalším příkladem je, že můžete používat **skrýt zakázaná pravidla** tlačítka na panelu nástrojů stránky sadu pravidel pro skrytí nebo zobrazení všechna pravidla s **akce** sloupec nastavený na **žádné**. To může být užitečné, pokud chcete vyhledat všechna pravidla, která jste vypnuli k ověření, stále chcete mít je zakázána.  
   
 5.  V nabídce Zobrazit klikněte na tlačítko Vlastnosti – okno. Typ **Moje vlastní pravidlo nastavené** do pole název okna Vlastnosti nástroje. Zobrazovaný název sady nové pravidel se tak změní [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE.  
   
 6.  Na **soubor** nabídky, klikněte na tlačítko **uložit všechny Rules.ruleset** uložení vlastní pravidla sady. Přejděte do kořenové složky vašeho projektu. V **název souboru** textového pole, typ **MyCustomRuleSet**. Pro použití s projektu můžete nyní vybrat sadu vlastní pravidlo.  
   
- Sadou vaší nové pravidel vytvořen budete muset teď nakonfigurovat nastavení projektu k určení, kterou chcete použít nastavení s ním nové pravidlo.  
+Sadou vaší nové pravidel vytvořen budete muset teď nakonfigurovat nastavení projektu k určení, kterou chcete použít nastavení s ním nové pravidlo.  
   
-#### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Zadejte nové pravidlo nastavit pro použití s projektu  
+### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>Zadejte nové pravidlo nastavit pro použití s projektu  
   
 1.  V Průzkumníku řešení klikněte pravým tlačítkem na projekt a potom vyberte **vlastnosti**.  
   
@@ -147,12 +142,13 @@ Tento návod ukazuje, jak pomocí nástrojů pro analýzu kódu, které byly nak
   
  Nakonec se spustí znovu pomocí vaší MyCustomRuleSet sada pravidel analýzy kódu. Všimněte si, že v okně Seznam chyb nezobrazí porušení pravidel výkonu CA1704.  
   
-#### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Spuštění analýzy kódu v projektu RuleSetSample podruhé  
+### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>Spuštění analýzy kódu v projektu RuleSetSample podruhé  
   
 1.  Na **analyzovat** nabídky, klikněte na tlačítko **spuštění analýzy kódu na RuleSetSample**.  
   
 2.  V okně Seznam chyb, Všimněte si, že po kliknutí na tlačítko **upozornění**, už se nezobrazují porušení upozornění CA1704 pro pravidlo "Identifikátory by měly být zadány správně".  
   
-## <a name="see-also"></a>Viz také  
- [Postupy: Konfigurace analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
- [Referenční dokumentace sady pravidel nástroje Analýza kódu](../code-quality/code-analysis-rule-set-reference.md)
+## <a name="see-also"></a>Viz také
+
+[Postupy: Konfigurace analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+[Referenční dokumentace sady pravidel nástroje Analýza kódu](../code-quality/code-analysis-rule-set-reference.md)

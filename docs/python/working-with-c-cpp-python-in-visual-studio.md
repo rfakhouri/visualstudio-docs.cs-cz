@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d0ef17900f515ff69f25c30fc797e4e3c9cc7a6
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ef58c0eb177238075b0f1cd097f8949272538a75
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Vytváření rozšíření pro C++ pro jazyk Python
 
@@ -49,7 +50,7 @@ Další informace najdete v tématu [instalaci podpory jazyka Python pro Visual 
 
 1. Vytvořte nový projekt Python v sadě Visual Studio výběrem **soubor > Nový > projekt**. Vyhledejte "Python", vyberte **aplikace Python** šablony, poskytněte vhodný název a umístění a vyberte **OK**.
 
-1. V projektu `.py` souboru, vložte následující kód, který benchmarks výpočet hyperbolický tangens (implementována bez použití knihovny math pro snazší porovnání). Můžete zadat kód ručně, aby některé z prostředí [Python úpravy funkce](code-editing.md).
+1. V projektu `.py` souboru, vložte následující kód, který benchmarks výpočet hyperbolický tangens (implementována bez použití knihovny math pro snazší porovnání). Můžete zadat kód ručně, aby některé z prostředí [Python úpravy funkce](editing-python-code-in-visual-studio.md).
 
     ```python
     from itertools import islice
@@ -288,7 +289,7 @@ Visual Studio podporuje ladění kódu jazyka Python a C++ společně.
 
     ![Zastavení u zarážky v kódu C++](media/cpp-debugging.png)
 
-1. V tomto okamžiku můžete krok prostřednictvím kódu C++, zkontrolujte proměnné a tak dále. Tyto funkce jsou podrobně popsané na [ladění C++ a Python společně](debugging-mixed-mode.md).
+1. V tomto okamžiku můžete krok prostřednictvím kódu C++, zkontrolujte proměnné a tak dále. Tyto funkce jsou podrobně popsané na [ladění C++ a Python společně](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
 ## <a name="alternative-approaches"></a>Alternativní přístupy
 

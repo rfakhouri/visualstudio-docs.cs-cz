@@ -4,24 +4,26 @@ ms.custom:
 ms.date: 11/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 92ea72f3d64edc31c187198a5af73ed98c0fc8be
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- vssdk
+ms.openlocfilehash: 98bbebfb5f82d10179897e94b6a49cbb3d8c6220
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Přidání rozšíření protokolu jazyk serveru
 
-Jazyk serveru protokolu (LSP) je společný protokol, ve tvaru v2.0 JSON RPC, používá k zajištění funkce služby pro různé editory kódu jazyka. Pomocí protokolu, mohou vývojáři psát jeden jazyk serveru zadejte jazyk funkce služby jako technologii IntelliSense, chyba diagnostiky, najít všechny odkazy na různé editory kódu, které podporují LSP atd. Tradičně, můžete přidat jazyk služby v sadě Visual Studio a to buď pomocí souborů gramatika TextMate poskytnout základní funkce, například zvýraznění syntaxe, nebo vlastní jazyk služby pomocí úplné sady Visual Studio rozšiřitelnost rozhraní API pro zápis do Zadejte data širší. Nyní podpora LSP nabízí třetí možnost.
+Jazyk serveru protokolu (LSP) je společný protokol, ve tvaru v2.0 JSON RPC, používá k zajištění funkce služby pro různé editory kódu jazyka. Pomocí protokolu, mohou vývojáři psát jeden jazyk serveru zadejte jazyk funkce služby jako technologii IntelliSense, chyba diagnostiky, najít všechny odkazy, atd. pro různé editory kódu, které podporují LSP. Tradičně, můžete přidat jazyk služby v sadě Visual Studio a to buď pomocí souborů gramatika TextMate poskytnout základní funkce, například zvýraznění syntaxe, nebo vlastní jazyk služby pomocí úplné sady Visual Studio rozšiřitelnost rozhraní API pro zápis do Zadejte data širší. Nyní podpora LSP nabízí třetí možnost.
 
 ![Služba Protokol serveru jazyka v sadě Visual Studio](media/lsp-service-in-VS.png)
 
@@ -33,7 +35,7 @@ Další informace o tom, jak vytvořit ukázkové jazyk serveru nebo jak integro
 
 ![Implementace protokolu jazyk serveru](media/lsp-implementation.png)
 
-Tento článek popisuje postup vytvoření rozšíření v sadě Visual Studio, který používá jazyk LSP na server. Předpokládá, že jste již vytvořili serveru na základě LSP jazyk a chcete jen integrovat do sady Visual Studio.
+Tento článek popisuje postup vytvoření rozšíření sady Visual Studio, které používá jazyk LSP na server. Předpokládá, že jste již vytvořili serveru na základě LSP jazyk a chcete jen integrovat do sady Visual Studio.
 
 Pro podporu v sadě Visual Studio můžete servery jazyk komunikaci s klientem (Visual Studio) pomocí následujících mechanismů:
 
@@ -53,7 +55,7 @@ Inicializace | Ano
 inicializovat | 
 vypnutí | Ano
 Ukončení | Ano
-$/ cancelRequest | Ano
+$/cancelRequest | Ano
 okno nebo showMessage | Ano
 okno nebo showMessageRequest | Ano
 okno nebo logMessage | Ano
@@ -61,8 +63,8 @@ telemetrie/událost |
 Klient nebo registerCapability |
 Klient nebo unregisterCapability |
 pracovní prostor nebo didChangeConfiguration | Ano
-pracovní prostor nebo didChangeWatchedFiles | Ano
-pracovní prostor nebo symbol | Ano
+workspace/didChangeWatchedFiles | Ano
+workspace/symbol | Ano
 pracovní prostor nebo executeCommand | Ano
 pracovní prostor nebo applyEdit | Ano
 textDocument/publishDiagnostics | Ano
@@ -84,10 +86,10 @@ textDocument/rangeFormatting | Ano
 textDocument/onTypeFormatting |
 textDocument a definic | Ano
 textDocument/codeAction | Ano
-textDocument/Codelensu |
+textDocument/codeLens |
 Codelensu nebo řešení |
 textDocument/documentLink |
-documentLink nebo řešení |
+documentLink/resolve |
 textDocument nebo přejmenování | Ano
 
 ## <a name="getting-started"></a>Začínáme
@@ -100,7 +102,7 @@ Další přechodem na vytvoření nové prázdné VSIXProject **soubor** > **nov
 
 ![Vytvoření projektu vsix](media/lsp-vsix-project.png)
 
-Ve verzi preview VS podpora LSP bude ve formě VSIX ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). Rozšíření vývojáři, kteří chtějí vytvořit pomocí jazyka servery LSP rozšíření musí být závislý na tento VSIX. To znamená, že pro zákazníky chtějí nainstalovat rozšíření serveru jazyk **musíte nejprve nainstalovat Preview VSIX jazyk serveru protokolu klienta.**
+Ve verzi preview VS podpora LSP bude ve formě VSIX ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)). Rozšíření vývojáři, kteří chtějí vytvořit pomocí jazyka servery LSP rozšíření musí být závislý na tento VSIX. Proto zákazníci chtějí nainstalovat rozšíření serveru jazyk **musíte nejprve nainstalovat Preview VSIX jazyk serveru protokolu klienta.**
 
 K definování závislostí VSIX, otevřete návrháře manifestu VSIX pro vaše VSIX (podle dvojitým kliknutím na soubor source.extension.vsixmanifest ve vašem projektu) a přejděte do **závislosti**:
 
@@ -112,12 +114,13 @@ Vytvoření nové závislosti takto:
 
 * **Zdroj**: definované ručně
 * **Název**: jazyk serveru protokolu klienta ve verzi Preview
-* **Identifikátor**: Microsoft.VisualStudio.LanguageServer.Client.Preview
+* **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
 * **Rozsah verze**: [1.0,2.0)
 * **Jak je vyřešit závislosti**: nainstalovaná uživatelem
-* **Adresa URL pro stažení**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
+* **Download URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
 
->**Poznámka:**: **stáhnout URL** by měl být vyplněna, uživatelé, kteří instalují rozšíření vědět, jak nainstalovat požadované závislosti.
+> [!NOTE]
+> **Stáhnout URL** musí být vyplněna, takže uživatelé, kteří instalují rozšíření vědět, jak nainstalovat požadované závislosti.
 
 ### <a name="language-server-and-runtime-installation"></a>Instalace serveru a prostředí runtime jazyka
 
@@ -146,7 +149,7 @@ LSP nezahrnuje specifikace o tom, jak poskytnout zabarvení text pro jazyky. Pok
 
 5. Klikněte pravým tlačítkem na soubory a vyberte **vlastnosti**. Změňte akci sestavení na **obsahu** a **zahrnout do VSIX** vlastnost na hodnotu true.
 
-Tím se přidá složka "Gramatika" v balíčku instalační adresář jako zdroj úložiště s názvem 'MyLang' ('MyLang' je právě název rozlišení více tras a může být libovolný jedinečný řetězec). Všechny gramatika (.tmlanguage soubory) a motiv soubory (.tmtheme) v tomto adresáři jsou zachyceny jako možnosti a mají přednost před předdefinované gramatika součástí TextMate. Pokud soubor gramatika deklarované rozšíření odpovídají na příponu souboru otevíráte, bude kroku TextMate.
+Po dokončení předchozích kroků, se přidá do složky "Gramatika" k instalaci balíčku adresáři jako zdrojové úložiště s názvem 'MyLang' ('MyLang' je právě název rozlišení více tras a může být libovolný jedinečný řetězec). Všechny gramatika (.tmlanguage soubory) a motiv soubory (.tmtheme) v tomto adresáři jsou zachyceny jako možnosti a mají přednost před předdefinované gramatika součástí TextMate. Pokud soubor gramatika deklarované rozšíření odpovídají na příponu souboru otevíráte, bude kroku TextMate.
 
 ## <a name="creating-a-simple-language-client"></a>Vytvoření jednoduchého jazyk klienta
 
@@ -156,9 +159,12 @@ Po vytvoření projektu VSIX, přidejte následující balíčky NuGet do projek
 
 * [Microsoft.VisualStudio.LanguageServer.Client](https://www.nuget.org/packages/Microsoft.VisualStudio.LanguageServer.Client)
 
-Potom můžete vytvořit novou třídu které implementuje [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) rozhraní, hlavní rozhraní, které jsou potřebné pro jazyk klienti připojení k serveru na základě LSP jazyk.
+> [!NOTE]
+> Pokud převezmete závislost na balíček NuGet po dokončení předchozích kroků, balíčky Newtonsoft.Json a StreamJsonRpc jsou přidány do projektu také. **Nelze aktualizovat tyto balíčky, pokud si nejste jisti, že tyto nové verze bude nainstalována na verzi sady Visual Studio, vaše cíle rozšíření**. Sestavení nebudou zahrnuty ve vašem VSIX – místo toho se budou být zachyceny z instalačního adresáře nástroje Visual Studio. Pokud je odkazováno na novější verzi sestavení, než je nainstalována v počítači uživatele, rozšíření *nebude fungovat*.
 
-Zde je příklad:
+Potom můžete vytvořit novou třídu, která implementuje [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017) rozhraní, hlavní rozhraní, které jsou potřebné pro jazyk klienti připojení k serveru na základě LSP jazyk.
+
+Zde je ukázka:
 
 ```csharp
 namespace MockLanguageExtension
@@ -209,9 +215,9 @@ namespace MockLanguageExtension
 }
 ```
 
-Hlavní metody, které potřebují k implementaci jsou [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) a [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) je volána, když Visual Studio načetl rozšíření a jazyk server je připraven ke spuštění. U této metody můžete vyvolat [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) delegáta okamžitě na signál, že jazyk serveru by měl být spuštěn, nebo můžete provést další logiku a vyvolání [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) později. **K aktivaci serveru jazyka musí volat StartAsync v určitém okamžiku.**
+Hlavní metody, které potřebují k implementaci jsou [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) a [ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017). [OnLoadedAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.onloadedasync?view=visualstudiosdk-2017) je volána, když Visual Studio načetl rozšíření a jazyk server je připraven ke spuštění. U této metody můžete vyvolat [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) delegáta okamžitě na signál, že jazyk serveru by měl být spuštěn, nebo můžete provést další logiku a vyvolání [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) později. **Pokud chcete aktivovat jazyk serveru, musí volat StartAsync v určitém okamžiku.**
 
-[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) je metoda nakonec vyvolat volání [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) delegovat; obsahuje logiku pro spuštění jazyk serveru a připojení k němu. Objekt připojení bude muset být vrácen, která obsahuje datové proudy pro zápis do serveru a čtení ze serveru. Jakékoli výjimky vydané zde bude zachycena a zobrazí uživateli zprávu informačním panelu v sadě Visual Studio.
+[ActivateAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.activateasync?view=visualstudiosdk-2017) je metoda nakonec vyvolat volání [StartAsync](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient.startasync?view=visualstudiosdk-2017) delegovat; obsahuje logiku pro spuštění jazyk serveru a připojení k němu. Objekt připojení, která obsahuje datové proudy pro zápis do serveru a čtení ze serveru musí být vrácen. Jakékoli výjimky vydané tady jsou zachycení a zobrazí uživateli zprávu informačním panelu v sadě Visual Studio.
 
 ### <a name="activation"></a>Aktivace
 
@@ -236,13 +242,13 @@ Klikněte na tlačítko Nový vytvořit nového prostředku:
 
 ![definování MEF asset](media/lsp-define-asset.png)
 
-* **Typ**: Microsoft.VisualStudio.MefComponent
+* **Type**: Microsoft.VisualStudio.MefComponent
 * **Zdroj**: na projekt v aktuálním řešení
 * **Projekt**: [projektu]
 
 ### <a name="content-type-definition"></a>Definice typu obsahu
 
-Aktuálně je jediný způsob, jak načíst rozšíření serveru na základě LSP jazyk podle typu obsahu souboru. To znamená, že při definování třída jazyk klienta (které implementuje [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), budete muset určit typy souborů, při otevření, který načte rozšíření. Pokud jsou otevřené žádné soubory, které odpovídají definované typ obsahu, nebude možné načíst rozšíření.
+Aktuálně je jediný způsob, jak načíst rozšíření serveru na základě LSP jazyk podle typu obsahu souboru. To znamená při definování třída jazyk klienta (které implementuje [ILanguageClient](/dotnet/api/microsoft.visualstudio.languageserver.client.ilanguageclient?view=visualstudiosdk-2017)), budete muset určit typy souborů, je-li otevřít, způsobí, že rozšíření načíst. Pokud jsou otevřené žádné soubory, které odpovídají definované typ obsahu, nebude možné načíst rozšíření.
 
 To se provádí prostřednictvím definování jednu nebo více tříd ContentTypeDefinition:
 
@@ -265,7 +271,7 @@ namespace MockLanguageExtension
 }
 ```
 
-V předchozím příkladu se vytvoří definici typu obsahu pro soubory, které končí .bar příponu souboru. Definice pro typ obsahu, který je uveden název "řádku" a **musí** odvozena od [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
+V předchozím příkladu se vytvoří definici typu obsahu pro soubory, které končí `.bar` příponu souboru. Definice pro typ obsahu, který je uveden název "řádku" a **musí** odvozena od [CodeRemoteContentTypeName](/dotnet/api/microsoft.visualstudio.languageserver.client.coderemotecontentdefinition.coderemotecontenttypename?view=visualstudiosdk-2017).
 
 Po přidání definici typu obsahu, můžete pak definovat, kdy se mají načíst rozšíření jazyk klienta ve třídě jazyk klienta:
 
@@ -277,13 +283,13 @@ Po přidání definici typu obsahu, můžete pak definovat, kdy se mají načís
     }
 ```
 
-Přidání podpory pro servery jazyk LSP nevyžaduje, abyste implementovat vlastní systému projektu v sadě Visual Studio. Zákazníci, můžete otevřít v sadě Visual Studio k použití služby jazyk jeden soubor nebo složku. Ve skutečnosti podporovat pro servery LSP jazyk je navržen pro práci jenom v situacích, otevřete složka či soubor. Některé funkce, jako je například nastavení, nebude fungovat, pokud je implementovaný systému vlastní projektu.
+Přidání podpory pro servery jazyk LSP nevyžaduje, abyste implementovat vlastní systému projektu v sadě Visual Studio. Zákazníci, můžete otevřít v sadě Visual Studio k použití služby jazyk jeden soubor nebo složku. Ve skutečnosti podporovat pro servery LSP jazyk je navržen pro práci jenom v situacích, otevřete složka či soubor. Pokud se implementuje systému vlastní projektu, některé funkce (například nastavení) nebude fungovat.
 
 ## <a name="advanced-features"></a>Pokročilé funkce
 
 ### <a name="settings"></a>Nastavení
 
-Podpora pro konkrétní nastavení je k dispozici pro verzi Preview LSP podpory v sadě Visual Studio, ale je stále ještě probíhá Vylepšené vlastní jazyk serveru. Nastavení jsou specifická pro co serveru jazyk podporuje a obvykle řídit, jak jazyk serveru vysílá data. Například jazyk serveru může mít nastavení pro maximální počet ohlášených chyb. Rozšíření autoři by definovat výchozí hodnotu, která může změnit uživatele pro konkrétní projekty.
+Podpora pro vlastní nastavení pro konkrétní jazyk serveru je k dispozici pro verzi Preview LSP podpory v sadě Visual Studio, ale je stále ještě probíhá zlepšila. Nastavení jsou specifická pro co serveru jazyk podporuje a obvykle řídit, jak jazyk serveru vysílá data. Například jazyk serveru může mít nastavení pro maximální počet ohlášených chyb. Rozšíření autoři by definovat výchozí hodnotu, která může změnit uživatele pro konkrétní projekty.
 
 Pomocí těchto kroků-li přidat podporu pro nastavení služby linky LSP jazyka:
 
@@ -320,7 +326,7 @@ Pomocí těchto kroků-li přidat podporu pro nastavení služby linky LSP jazyk
 
   ![Upravit prostředek vspackage](media/lsp-add-vspackage-asset.png)
 
-  * **Typ**: Microsoft.VisualStudio.VsPackage
+  * **Type**: Microsoft.VisualStudio.VsPackage
   * **Zdroj**: souboru v systému souborů
   * **Cesta**: [cesta k souboru pkgdef]
 
@@ -336,9 +342,9 @@ Pomocí těchto kroků-li přidat podporu pro nastavení služby linky LSP jazyk
   }
   ```
 ### <a name="enabling-diagnostics-tracing"></a>Povolení trasování diagnostiky
-K vypsání všech zpráv mezi klientem a serverem, které mohou být užitečné při ladění problémů se dá zapnout diagnostické trasování.  Pokud chcete povolit diagnostické trasování, postupujte podle následujících kroků:
+K vypsání všech zpráv mezi klientem a serverem, které mohou být užitečné při ladění problémů se dá zapnout diagnostické trasování.  Pokud chcete povolit diagnostické trasování, postupujte takto:
 
-1. Otevřete nebo vytvořte soubor s nastaveními prostoru "VSWorkspaceSettings.json" (viz výše).
+1. Otevřít nebo vytvořit soubor s nastaveními prostoru "VSWorkspaceSettings.json" (viz "Uživatelské úpravy nastavení pracovního prostoru").
 2. Přidejte následující řádek v souboru json nastavení:
 
 ```json
@@ -347,12 +353,12 @@ K vypsání všech zpráv mezi klientem a serverem, které mohou být užitečn�
 }
 ```
 
-Existují 3 možné hodnoty pro trasování podrobností:
+Existují tři možné hodnoty pro trasování podrobností:
 * "Off": zcela vypnout trasování
 * "Zprávy": budou trasovány trasování zapnutá, ale ID jedinou metodou název a odpovědi.
 * "Podrobné": trasování zapnuto; zpráva celý rpc je trasovat.
 
-Pokud je trasování zapnuto, obsah se zapíšou do souboru v adresáři "% temp%\VisualStudio\LSP".  Bude se řídit formát pojmenování [LanguageClientName]-[razítka data a času] log.  V současné době může trasování povoleno pouze pro scénáře otevřít složku.  Otevírání jeden soubor k aktivaci serveru jazyk nemá diagnostické trasování podpory. 
+Pokud je trasování zapnutý obsah se zapisují do souboru v adresáři "% temp%\VisualStudio\LSP".  Protokol následuje formát pojmenování `[LanguageClientName]-[Datetime Stamp].log`.  V současné době může trasování povoleno pouze pro scénáře otevřít složku.  Otevírání jeden soubor k aktivaci serveru jazyk nemá diagnostické trasování podpory.
 
 ### <a name="custom-messages"></a>Vlastní zprávy
 
@@ -466,7 +472,7 @@ Pokud chcete zobrazit zdrojový kód Ukázka rozšíření pomocí klienta LSP r
 
 **Nastavit jako k vytváření vlastních projektů systému doplníte Moje LSP jazyk serveru poskytovat bohatší podporu funkce v sadě Visual Studio, jak postupovat učinit?**
 
-Podpora pro servery, na základě LSP jazyk v sadě Visual Studio spoléhají na [funkce Otevřít složku](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/) a je určená speciálně pro nevyžadují systému vlastní projektu. Můžete vytvořit vlastní projekt systému pokynů [zde](https://github.com/Microsoft/VSProjectSystem), ale některé funkce, jako je například nastavení, nemusí fungovat. Výchozí inicializace logiku pro servery LSP jazyk je předávat složky, do kořenové složky aktuálně otevíráte, takže pokud používáte vlastní projekt systému, budete muset během inicializace zajistit jazyk serveru můžete zadat vlastní logiky správně spusťte.
+Podpora pro servery, na základě LSP jazyk v sadě Visual Studio využívá [funkce Otevřít složku](https://blogs.msdn.microsoft.com/visualstudio/2016/04/12/open-any-folder-with-visual-studio-15-preview/) a je určená speciálně pro nevyžadují systému vlastní projektu. Můžete vytvořit vlastní projekt systému pokynů [zde](https://github.com/Microsoft/VSProjectSystem), ale některé funkce, jako je například nastavení, nemusí fungovat. Výchozí inicializace logiku pro servery LSP jazyk je předávat složky, do kořenové složky aktuálně otevíráte, takže pokud používáte vlastní projekt systému, budete muset během inicializace zajistit jazyk serveru můžete zadat vlastní logiky správně spusťte.
 
 **Jak přidat podporu ladicí program?**
 
@@ -474,7 +480,7 @@ Jsme zajištění podpory u [běžné ladění protokolu](https://code.visualstu
 
 **Pokud je již VS podporované jazykové služby nainstalovat (například JavaScript), lze přesto nainstalovat LSP jazyk serveru rozšíření, která nabízí další funkce, (například linting)?**
 
-Ano, ale ne všechny funkce budou fungovat správně. Konečným cílem pro LSP jazyk serveru rozšíření je pro povolení služby jazyk není nativně podporované Visual Studio. Můžete vytvořit rozšíření, která nabízí další podporu pomocí LSP jazyk serverů, ale některé funkce, například technologii IntelliSense, nebude funkce smooth prostředí. Obecně doporučujeme se LSP jazyk serverová rozšíření aplikace použít pro zajištění nové možnosti jazyka, není rozšíření stávajících.
+Ano, ale ne všechny funkce budou fungovat správně. Konečným cílem pro LSP jazyk serveru rozšíření je pro povolení služby jazyk není nativně podporované Visual Studio. Můžete vytvořit rozšíření, která nabízí další podporu pomocí LSP jazyk serverů, ale některé funkce (například IntelliSense) nebude smooth prostředí. Obecně se doporučuje, aby LSP jazyk serverová rozšíření aplikace lze použít k poskytnutí nové možnosti jazyk není rozšíření stávajících.
 
 **Kde lze publikovat Moje dokončené jazyk serveru LSP VSIX?**
 

@@ -4,10 +4,12 @@ ms.custom:
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords: vs.progression.debugwithcodemaps
+f1_keywords:
+- vs.progression.debugwithcodemaps
 dev_langs:
 - CSharp
 - VB
@@ -28,16 +30,17 @@ helpviewer_keywords:
 - debugging [Visual Studio], tracing the call stack visually
 - debugging [Visual Studio], visualizing the call stack
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
-caps.latest.revision: "39"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.workload: multiple
-ms.openlocfilehash: 9d1efeee412d98c62b7dc6aa2c92d2bbab4fab6d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 99f388fea1d6512760f99615256f71002099e9be
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Vytvoření visual mapování zásobníku volání při ladění ve Visual Studio Enterprise
 Vytvoření mapy kódu pro vizuální trasování zásobníku volání při ladění. Můžete si dělat poznámky na mapě ke sledování kódu činnosti tak, abyste se mohli zaměřit na hledání chyb.
@@ -46,7 +49,7 @@ Vytvoření mapy kódu pro vizuální trasování zásobníku volání při lad�
   
 -   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   Kód, který můžete ladit, jako je například Visual C# .NET, Visual Basic .NET, C++, JavaScript nebo X ++  
+-   Kód, který můžete ladit, jako je například Visual C#, Visual Basic, C++, JavaScript nebo X ++  
 
 Tady je rychle zobrazit na mapě kódu:
   
@@ -66,7 +69,7 @@ Tady je rychle zobrazit na mapě kódu:
   
 -   [Najít chyby pomocí mapy](#FindBugs)  
   
--   [MODUL OTÁZKY A ODPOVĚDI](#QA)  
+-   [Q & A](#QA)  
   
  Podrobnosti příkazů a akcích, které můžete použít při práci s map kódu najdete v tématu [Procházet a uspořádání map kódu](../modeling/browse-and-rearrange-code-maps.md).  
   
@@ -95,7 +98,7 @@ Tady je rychle zobrazit na mapě kódu:
  ![Mapa kódu aktualizace další zásobníkem volání](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")  
   
 ##  <a name="AddRelatedCode"></a>Přidání souvisejících kódu do mapy  
- Nyní máte k dispozici mapu - co dále? Pokud pracujete s Visual C# .NET nebo Visual Basic .NET, přidejte položky, jako je například pole, vlastnosti a jiných metod pro sledování, co se děje v kódu.  
+ Nyní máte k dispozici mapu - co dále? Pokud pracujete s Visual C# nebo Visual Basic, přidejte položky, jako je například pole, vlastnosti a jiných metod pro sledování, co se děje v kódu.  
   
  Dvakrát klikněte na metodu zobrazíte jeho definice kód, nebo pomocí místní nabídky pro metodu. (Klávesové: Vyberte metodu na mapu a stiskněte klávesu **F12**)  
   
@@ -131,7 +134,7 @@ Tady je rychle zobrazit na mapě kódu:
   
  ![Přidat nové zásobník volání k volání metody na mapě kódu](../debugger/media/debuggermap_addnewcallforrepaint.png "DebuggerMap_AddNewCallForRepaint")  
   
-##  <a name="QA"></a>MODUL OTÁZKY A ODPOVĚDI  
+##  <a name="QA"></a> Q & A  
   
 -   **Ne všechny hovory se zobrazí na mapě. Proč?**  
   

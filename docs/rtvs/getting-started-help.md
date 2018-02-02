@@ -1,23 +1,26 @@
 ---
 title: "Okno v nástrojích pro R nápovědy pro sadu Visual Studio | Microsoft Docs"
+description: "Nápověda pro R je implementovaná přímo do okna interaktivní v sadě Visual Studio prostřednictvím? Příkaz."
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 001/24/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-r
+ms.technology:
+- devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.workload: data-science
-ms.openlocfilehash: 232c02bf68125afb1ffa5234e0feee049e9c5f69
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-science
+ms.openlocfilehash: c95cb854a5c6d517b6e02e63bc744cd2bdc3ba1e
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>Nápověda v R nástrojů pro Visual Studio
 
@@ -28,7 +31,7 @@ Nápověda pro R je implementovaná přímo do okna interaktivní v sadě Visual
 > [!Tip]
 > V okně nápovědy, stejně jako všechny ostatní v sadě Visual Studio, můžete uspořádané a ukotven, ale chcete. V tématu [přizpůsobení rozložení oken v sadě Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md).
 >
-> V prohlížeči otevřete nápovědy výsledky, vyberte **R nástroje > Možnosti** nabídky a sady **R pomoci prohlížeče** vlastnost `External`. V tématu [možnosti](options.md).
+> V prohlížeči otevřete nápovědy výsledky, vyberte **R nástroje > Možnosti** nabídky a sady **R pomoci prohlížeče** vlastnost `External`. V tématu [možnosti](options-for-r-tools-in-visual-studio.md).
 
 Chcete-li v nápovědě, použijte `??` příkazu s parametrem hledaný termín. Pokud hledaný termín obsahuje mezery, použijte uvozovky:
 
@@ -52,7 +55,7 @@ Vývojáři často vyhledejte v dokumentaci R nápovědu k názvy funkcí, datov
     ![Volajícím pomoc prostřednictvím v místní nabídce klikněte pravým tlačítkem](media/help-right-click.png)
 
 > [!Tip]
-> V prohlížeči otevřete integrované nápovědy, vyberte **R nástroje > Možnosti** a nastavte **F1 webový prohlížeč** k `External`. V tématu [možnosti](options.md).
+> V prohlížeči otevřete integrované nápovědy, vyberte **R nástroje > Možnosti** a nastavte **F1 webový prohlížeč** k `External`. V tématu [možnosti](options-for-r-tools-in-visual-studio.md).
 
 ## <a name="integrated-stackoverflow-search"></a>Integrované hledání StackOverflow
 
@@ -64,4 +67,4 @@ Připojením oboru řetězec, můžete změnit `R site:stackoverflow`, až **R n
 
 ![Změna možnost F1 webové hledání řetězce](media/options-dialog.png)
 
-Pokud chcete zobrazit výsledky v prohlížeči, změnit **F1 webový prohlížeč** možnost, jak je popsáno na [možnosti](options.md).
+Pokud chcete zobrazit výsledky v prohlížeči, změnit **F1 webový prohlížeč** možnost, jak je popsáno na [možnosti](options-for-r-tools-in-visual-studio.md).

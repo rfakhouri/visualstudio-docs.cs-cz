@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 08/04/2017
 ms.reviewer: Jamie.Young
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
-caps.latest.revision: "10"
+caps.latest.revision: 
 ms.author: v-brickg
 manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 69fad7f5bab020aea442670687e5fc781eee2955
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- v-brickg
+ms.openlocfilehash: eb6ff923bd74b4c6350e8252d59c86cabff11428
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Slovník Visual jazyka pro sadu Visual Studio
 Visual Studio používá společný vizuální jazyk k objasnění konceptů, které představují stavební kameny jeho používá a jiných dokumentů. Při návrhu nové ikony, použijte k identifikaci koncepty, které mají být umístěny v vlastní image tohoto slovníku.  
@@ -448,7 +450,7 @@ Visual Studio používá společný vizuální jazyk k objasnění konceptů, kt
 | **Stav akce: pozastaveno** | ![Stav akce: pozastavena ikonu](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused.png "VLD_S_ActionStatusPaused") | ![Server je pozastaven ikonu](../../extensibility/ux-guidelines/media/vld_s_actionstatuspaused_serverpaused.png "VLD_S_ActionStatusPaused_ServerPaused")<br />Server pozastavit |
 | **Stav akce: přehrávání, systémem** | ![Stav akce: přehrávání spuštěn ikona](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning.png "VLD_S_ActionStatusPlayingRunning") | ![Ikona serveru spustit](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_serverstarted.png "VLD_S_ActionStatusPlayingRunning_ServerStarted")<br />Spuštění serveru<br />![Nebude nikdy spuštěn ikonu](../../extensibility/ux-guidelines/media/vld_s_actionstatusplayingrunning_neverrun.png "VLD_S_ActionStatusPlayingRunning_NeverRun")<br />Nebude nikdy spuštěn |
 | **Stav akce: zastavena** | ![Stav akce: zastavena ikonu](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped.png "VLD_S_ActionStatusStopped") | ![Ikona serveru zastavena](../../extensibility/ux-guidelines/media/vld_s_actionstatusstopped_serverstopped.png "VLD_S_ActionStatusStopped_ServerStopped")<br />Server přestal |
-| **Výstrahy** | ![Ikona upozornění](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![Odkazovanou tabulku s ikona chyby karta cue](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />Odkazovanou tabulku s cue karta chyby<br />![Ikona okno analýzy kódu](../../extensibility/ux-guidelines/media/vld_s_alert_codeanalysiswindow.png "VLD_S_Alert_CodeAnalysisWindow")<br />Analýza kódu – okno |
+| **Výstrahy** | ![Ikona upozornění](../../extensibility/ux-guidelines/media/vld_s_alert.png "VLD_S_Alert") | ![Odkazovanou tabulku s ikona chyby karta cue](../../extensibility/ux-guidelines/media/vld_s_alert_linkedtablewitherrortabcue.png "VLD_S_Alert_LinkedTableWithErrorTabCue")<br />Odkazovanou tabulku s cue karta chyby |
 | **Zarážek: pokročilé zakázáno** | ![Zarážek: advanced zakázané ikonu](../../extensibility/ux-guidelines/media/vld_s_breakpointadvanceddisabled.png "VLD_S_BreakpointAdvancedDisabled") ||
 | **Zarážek: rozšířené povoleno**  |![Zarážek: advanced povoleno ikonu](../../extensibility/ux-guidelines/media/vld_s_breakpointadvancedenabled.png "VLD_S_BreakpointAdvancedEnabled") ||
 | **Breakpoint –: vázán** | ![Breakpoint: Ikona vázané](../../extensibility/ux-guidelines/media/vld_s_breakpointbound.png "VLD_S_BreakpointBound") ||

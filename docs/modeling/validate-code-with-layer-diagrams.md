@@ -21,12 +21,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c3f457e46c1f9f0d7b3ed2f862a411245caf72e7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 7f00144687d2e9bc728cbdd1ef57342d1b19881d
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -54,7 +55,7 @@ Pokud chcete mít jistotu, že kód není v konfliktu s návrh, ověřování k�
   
 -   Chcete-li ověřit kód automaticky s Team Foundation Build Visual Studio na serveru Team Foundation Build  
   
--   Řešení s projektem modelování s diagram závislostí. Tento diagram závislostí musí být propojena na artefakty v projektech Visual C# .NET nebo Visual Basic .NET, které chcete ověřit. V tématu [vytváření diagramů závislost z vašeho kódu](../modeling/create-layer-diagrams-from-your-code.md).  
+-   Řešení s projektem modelování s diagram závislostí. Tento diagram závislostí musí být propojena na artefakty v C# nebo Visual Basic projekty, které chcete ověřit. V tématu [vytváření diagramů závislost z vašeho kódu](../modeling/create-layer-diagrams-from-your-code.md).  
   
  Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [verze podpora architektura a modelování nástroje](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -120,7 +121,7 @@ V této verzi sady Visual Studio dojde k ověření závislostí v reálném ča
 2.  Chcete-li zobrazit zdroj jednotlivé chyby, dvakrát klikněte na chybu v **seznam chyb** okno.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Mapa kódu může zobrazit místo zdroji této chyby. K tomu dochází, pokud kód je závislý na sestavení, které není specifikováno diagram závislostí nebo kód chybí závislost, která je zadána diagram závislostí. Zkontrolujte Mapa kódu nebo kód k určení, zda by měla existovat závislosti. Další informace o map kódu najdete v tématu [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Mapa kódu může zobrazit místo zdroji této chyby. K tomu dochází, pokud kód je závislý na sestavení, které není specifikováno diagram závislostí nebo kód chybí závislost, která je zadána diagram závislostí. Zkontrolujte Mapa kódu nebo kód k určení, zda by měla existovat závislosti. Další informace o map kódu najdete v tématu [mapování závislostí napříč vaším řešením](../modeling/map-dependencies-across-your-solutions.md).  
   
 3.  Chcete-li spravovat chyby, přečtěte si téma [spravovat chyby ověření](#ManageErrors).  
   

@@ -4,20 +4,20 @@ ms.custom:
 ms.date: 05/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 59131181-1caa-4b7f-be4b-e84709634edf
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 36045b311a73af96df51553f9025a1de84c93b78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ca07027874c304f009bdee7fddf9d6465e047202
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Začínáme s diagnostikou grafiky sady Visual Studio
 V této části budete připravit k použití diagnostiky grafiky poprvé, pak budete zachycení snímků z aplikace Direct3D – a prozkoumejte je Graphics Analyzeru.  
@@ -31,13 +31,6 @@ V této části budete připravit k použití diagnostiky grafiky poprvé, pak b
  Volitelné funkce systému Windows *grafických nástrojů* poskytuje infrastrukturu záznam a přehrávání, který je požadován diagnostiky grafiky ve Windows 10.  
   
  Informace o instalaci nástrojů grafiky najdete v tématu [nainstalovat grafické nástroje pro Windows 10](#InstallGraphicsTools).  
-  
-### <a name="windows-81-prerequisites"></a>Požadavky pro Windows 8.1  
- Systému Windows Software Development Kit (SDK) pro Windows 8.1 poskytuje infrastrukturu záznam a přehrávání diagnostiky grafiky ve Windows 8.1 vyžadují, která podporuje vývoj pro Windows 8.1 a Windows 8.  
-  
- [Stáhněte si Windows Software Development Kit (SDK) pro Windows 8.1](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)  
-  
- Chcete-li použít vzdálené přehrávání počítač se systémem Windows 10 z vývojovém počítači s Windows 8.1, je nutné nainstalovat sadu Windows 10 SDK na vývojovém počítači a volitelné funkce grafických nástrojů na počítače pro přehrávání.  
   
 ##  <a name="InstallGraphicsTools"></a>Instalace nástrojů grafiky pro Windows 10  
  V systému Windows 10, poskytuje infrastrukturu diagnostiky grafiky volitelná funkce systému Windows, nazvaný *grafických nástrojů*. Tato funkce se vyžaduje k zaznamenání a přehrání grafických informací ve Windows 10 bez ohledu na to, jestli aplikace zaznamenávané cíle předchozí verze systému windows nebo kterou verzi Direct3D – používá. Můžete nainstalovat funkce grafické nástroje předem; v opačném případě bude nainstalovaný na vyžádání první čas spuštění relace diagnostiky grafiky sady Visual Studio.  
@@ -66,9 +59,7 @@ V této části budete připravit k použití diagnostiky grafiky poprvé, pak b
  Pokud již máte vlastní Direct3D – aplikace a prozkoumejte diagnostiky grafiky, skvěle! Jinak použijte jednu z těchto možností:
 
 - **DirectX 11 aplikace (univerzální pro Windows)** nebo **DirectX 12 aplikace (univerzální pro Windows)** šablony projektu pro Windows 10.
-- **DirectX aplikace (Windows 8.1)** šablona projektu pro Windows 8.1.
 - [Ukázka Direct3D – 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) pro Windows 10.  
-- [DirectX mramor bludiště herní ukázka](https://code.msdn.microsoft.com/windowsapps/DirectX-Marble-Maze-Game-e4806345) pro Windows 8.1.  
   
  Ujistěte se, že můžete vytvořit aplikaci než budete pokračovat.  
   

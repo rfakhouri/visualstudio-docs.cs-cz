@@ -1,14 +1,16 @@
 ---
-title: "Správa Python v Azure App Service | Microsoft Docs"
+title: "Instalace jazyka Python překladače a knihovny v Azure App Service | Microsoft Docs"
+description: "Postup instalace překladač Pythonu a knihovny v Azure App Service a konfiguraci webové aplikace správně odkazovat na tento překladač."
 ms.custom: 
 ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -16,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: d97ae6f3b1665fc841c34fcca06afc6a2eaf1e36
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff8fb49321d12416391edd1463f651ae169b1bee
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Správa Python v Azure App Service
 
@@ -131,7 +133,7 @@ FastCGI je rozhraní, které funguje na úrovni požadavku. Služba IIS obdrží
 - `WSGI_HANDLER`musí odkazovat na importovatelné WSGI aplikaci z vaší aplikace.
 - `WSGI_LOG`je volitelné, ale doporučené pro ladění aplikace. 
 
-V tématu [publikování v Azure](publishing-to-azure.md) další podrobnosti o `web.config` obsah pro Bottle, Flask a Django webové aplikace.
+V tématu [publikování v Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) další podrobnosti o `web.config` obsah pro Bottle, Flask a Django webové aplikace.
 
 ### <a name="configuring-the-httpplatform-handler"></a>Konfigurace HttpPlatform obslužné rutiny
 
@@ -170,7 +172,7 @@ Instalovat balíčky přímo v prostředí serveru, použijte jednu z následuj�
 | --- | --- |
 | [Azure App Service Kudu konzoly](#azure-app-service-kudu-console) | Nainstaluje balíčky interaktivně. Balíčky musí být čistý Python nebo souborů Wheel, musíte publikovat. |
 | [Kudu REST API](#kudu-rest-api) | Můžete použít k automatizaci instalace balíčku.  Balíčky musí být čistý Python nebo souborů Wheel, musíte publikovat. |
-| Sady s aplikací | Instalovat balíčky přímo do projektu a potom je nasadit do služby App Service, jako by byly součástí vaší aplikace. V závislosti na tom, kolik závislostí máte a jak často je aktualizovat, tato metoda může být nejjednodušší způsob, jak získat pracovní nasazení budete. Se doporučuje, aby knihovny musí odpovídat verzi jazyka Python na serveru, v opačném případě uvidíte skrytého chyby po nasazení. Ale nutné dodat, protože verze jazyka Python v App Service rozšíření lokality jsou stejné jako těchto verzí vydala python.org, můžete snadno získat kompatibilní verze pro místní vývoj. |
+| Sady s aplikací | Instalovat balíčky přímo do projektu a potom je nasadit do služby App Service, jako by byly součástí vaší aplikace. V závislosti na tom, kolik závislostí máte a jak často je aktualizovat, tato metoda může být nejjednodušší způsob, jak získat pracovní nasazení budete. Se doporučuje, aby knihovny musí odpovídat verzi jazyka Python na serveru, v opačném případě se zobrazí skrytého chyby po nasazení. Ale nutné dodat, protože verze jazyka Python v App Service rozšíření lokality jsou stejné jako těchto verzí vydala python.org, můžete snadno získat kompatibilní verze pro místní vývoj. |
 | Virtuální prostředí | Není podporováno. Místo toho použijte sdružování a nastavte `PYTHONPATH` proměnnou prostředí, aby odkazoval na umístění balíčků. |
 
 ### <a name="azure-app-service-kudu-console"></a>Azure App Service Kudu konzoly

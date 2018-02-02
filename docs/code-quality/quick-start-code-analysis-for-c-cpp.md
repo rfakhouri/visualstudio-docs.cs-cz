@@ -10,34 +10,19 @@ ms.topic: article
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-ms.assetid: 6110b8ba-0af6-4acd-b1ba-bb0551f90e44
-caps.latest.revision: "8"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 5fe47a5e0bb2eb8c2002c8a516ef10aa81aa0e58
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ed2f4acfe185039950d627092839b14234cadccd
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="quick-start-code-analysis-for-cc"></a>Rychlé zahájení: Analýza kódu pro C/C++
-Pravidelně systémem analýza kódu C nebo C++ kódu, lze vylepšit kvalitu aplikace. To vám může pomoct najít běžné problémy, porušení osvědčených postupů programovací nebo závad, které je obtížné zjistit prostřednictvím testování. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože analýza kódu hledá vzory konkrétního kódu, které jsou platné, ale stále vytvořit problémy pro vás nebo další uživatelé, kteří používají váš kód.  
-  
-## <a name="in-this-topic"></a>V tomto tématu  
-  
--   [Konfigurace sady pravidel pro projekt](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_ConfigureRuleSets)  
-  
--   [Spuštění analýzy kódu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Run)  
-  
--   [Analýza a tvorba řešení upozornění analýzy kódu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Analyze)  
-  
--   [Potlačení upozornění analýzy kódu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Suppress)  
-  
--   [Vytváření pracovních položek pro kód upozornění analýzy](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Creating_work_items_for_code_analysis_warnings)  
-  
--   [Vyhledávání a filtrování výsledků analýzy kódu](../code-quality/quick-start-code-analysis-for-c-cpp.md#BKMK_Search)  
+# <a name="quickstart-code-analysis-for-cc"></a>Rychlý úvod: Analýza kódu pro C/C++
+Pravidelně systémem analýza kódu C nebo C++ kódu, lze vylepšit kvalitu aplikace. To vám může pomoct najít běžné problémy, porušení osvědčených postupů programovací nebo závad, které je obtížné zjistit prostřednictvím testování. Upozornění analýzy kódu se liší od kompilátoru chyby a upozornění, protože analýza kódu hledá vzory konkrétního kódu, které jsou platné, ale stále vytvořit problémy pro vás nebo další uživatelé, kteří používají váš kód.
   
 ##  <a name="BKMK_ConfigureRuleSets"></a>Konfigurace sady pravidel pro projekt  
   
@@ -85,20 +70,18 @@ Pravidelně systémem analýza kódu C nebo C++ kódu, lze vylepšit kvalitu apl
   
 -   Na **sestavení** nabídce zvolte **spuštění analýzy kódu na** *název projektu*.  
   
- Kompiluje projekt nebo řešení a analýza kódu spustí. Výsledky se zobrazí v okně nástroje Analýza kódu.  
+ Kompiluje projekt nebo řešení a analýza kódu spustí. Výsledky se zobrazí v seznamu chyb.  
   
-##  <a name="BKMK_Analyze"></a>Analýza a tvorba řešení upozornění analýzy kódu  
- Chcete-li analyzovat konkrétní upozornění, zvolte název upozornění v okně nástroje Analýza kódu. Toto upozornění se rozšíří zobrazíte další informace o problému. Pokud je to možné, analýza kódu zobrazuje čísla řádků a analýzy logiky, která vedla k upozornění. Podrobné informace o upozornění, včetně možná řešení problému zvolte id upozornění zobrazíte tématu nápovědy v knihovně MSND pro zprávu.  
-  
- Pokud rozbalíte upozornění, řádek kódu, který způsobil upozornění zvýrazněn v editoru kódu v sadě Visual Studio.  
-  
- Po zjištění problému, abyste ho mohli vyřešit ve vašem kódu. Poté znovu spusťte analýza kódu a ujistěte se, že upozornění již nadále nebude zobrazovat v okně nástroje Analýza kódu a není má vaše oprava vyvolá nové upozornění.  
-  
-> [!TIP]
->  Analýza kódu z okna Analýza kódu můžete znovu spustit. Vyberte **analyzovat** tlačítko a zvolte oboru analýzy. Můžete znovu spustit analýzu na celé řešení nebo na vybrané projektu.  
-  
+##  <a name="BKMK_Analyze"></a>Analýza a tvorba řešení upozornění analýzy kódu
+
+Chcete-li analyzovat konkrétní upozornění, zvolte název upozornění v seznamu chyb. Toto upozornění se rozšíří zobrazíte další informace o problému. Pokud je to možné, analýza kódu zobrazuje čísla řádků a analýzy logiky, která vedla k upozornění. Podrobné informace o upozornění, včetně možná řešení problému zvolte ID upozornění k zobrazení jeho odpovídající online téma nápovědy.
+
+Pokud vyberete upozornění, řádek kódu, který způsobil upozornění zvýrazněn v editoru kódu v sadě Visual Studio.
+
+Po zjištění problému, abyste ho mohli vyřešit ve vašem kódu. Spusťte analýza kódu a ujistěte se, že toto upozornění se již v seznamu chyb a není má vaše oprava vyvolá žádné nové upozornění.
+
 ##  <a name="BKMK_Suppress"></a>Potlačení upozornění analýzy kódu  
- Existují situace, kdy můžete rozhodnout není opravte upozornění analýzy kódu. Můžete se rozhodnout řešení upozornění vyžaduje příliš mnoho Změna kódu ve vztahu k pravděpodobnost, že problém vyvstanou v jakékoli reálného provádění kódu. Nebo možná se domníváte, že není vhodný pro konkrétní kontext analýzy, který se používá v upozornění. Jednotlivé upozornění můžete potlačit tak, aby se nebude zobrazovat v okně nástroje Analýza kódu.  
+ Existují situace, kdy můžete rozhodnout není opravte upozornění analýzy kódu. Můžete se rozhodnout řešení upozornění vyžaduje příliš mnoho Změna kódu ve vztahu k pravděpodobnost, že problém vyvstanou v jakékoli reálného provádění kódu. Nebo možná se domníváte, že není vhodný pro konkrétní kontext analýzy, který se používá v upozornění. Jednotlivé upozornění můžete potlačit tak, aby se nebude zobrazovat v seznamu chyb.  
   
  Potlačit upozornění:  
   
@@ -115,19 +98,22 @@ Pravidelně systémem analýza kódu C nebo C++ kódu, lze vylepšit kvalitu apl
   
  **Chcete-li vytvořit pracovní položku pro jeden nebo více upozornění kódu C/C++**  
   
-1.  V okně nástroje Analýza kódu rozbalte a vyberte upozornění  
+1.  V seznamu chyb rozbalte a vyberte upozornění  
   
-2.  V místní nabídce pro upozornění, vyberte **vytvoření pracovní položky**a potom vyberte typ pracovní položky.  
+2.  V místní nabídce pro upozornění, vyberte **vytvoření pracovní položky**a potom vyberte typ pracovní položky.
   
 3.  Visual Studio vytvoří jeden pracovní položku pro vybrané upozornění a pracovní položky se zobrazí v okně dokumentu rozhraní IDE.  
   
 4.  Přidat další informace a potom vyberte **uložit pracovní položka**.  
   
-##  <a name="BKMK_Search"></a>Vyhledávání a filtrování výsledků analýzy kódu  
- Můžete hledat dlouhými seznamy zprávy upozornění a můžete filtrovat upozornění v řešení vícenásobného projektu.  
+##  <a name="BKMK_Search"></a>Vyhledávání a filtrování výsledků analýzy kódu
+
+Můžete hledat dlouhými seznamy zprávy upozornění a můžete filtrovat upozornění v řešení vícenásobného projektu.  
   
-1.  **Pro upozornění filtru podle názvu nebo id upozornění**: Zadejte – klíčové slovo v **filtru** textové pole.  
+- **Pro upozornění filtru podle názvu nebo id upozornění**: zadejte do pole hledání klíčové slovo.
   
-2.  **Pro upozornění filtru projektu**: V řešení vícenásobného projektu, zvolte jeden nebo více projektů v seznamu nahoře napravo od okna Analýza kódu. Zvolte název řešení pro zobrazení všech upozornění.  
-  
-3.  **Pro upozornění filtru podle závažnosti**: ve výchozím kódu analýzy zprávy jsou přiřazeny závažnost **upozornění**. Můžete přiřadit závažnost jednu nebo více zpráv jako **chyba** v vlastní pravidlo. Vyberte buď **upozornění** nebo **chyba** k zobrazení pouze zprávy, které jsou přiřazeny příslušné závažnosti. Zvolte **všechny** zobrazíte všechny zprávy.
+- **Pro upozornění filtru podle závažnosti**: ve výchozím kódu analýzy zprávy jsou přiřazeny závažnost **upozornění**. Můžete přiřadit závažnost jednu nebo více zpráv jako **chyba** v vlastní pravidlo. Na **závažnost** sloupec **seznam chyb**, příkaz na šipku rozevíracího seznamu a potom klepněte na ikonu filtru. Zvolte **upozornění** nebo **chyba** k zobrazení pouze zprávy, které jsou přiřazeny příslušné závažnosti. Zvolte **Vybrat vše** zobrazíte všechny zprávy.
+
+## <a name="see-also"></a>Viz také
+
+[Analýza kódu pro C/C++](../code-quality/code-analysis-for-c-cpp-overview.md)

@@ -9,58 +9,34 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: dc9a2ac6d7267cd94902b7bbf950b49e0d71f815
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 0e0af23cca96238a0ea7bbcde11ac4507e55a9bc
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>Testování Visual C# – kód v aplikaci UWP částí
-Toto téma popisuje jeden způsob, jak vytvářet testy částí pro třídu Visual C# v aplikaci UWP. Třída Rooter ukazuje nepřesných vědomosti limit teoreticky z calculus implementací funkce pro výpočet odhad druhou odmocninu čísla na zadanou mocninu. Matematické výrazy aplikace potom pomocí této funkce můžete zobrazit uživatele fun věcí, které lze provést pomocí matematické.  
-  
- Toto téma ukazuje, jak používat jako první krok při vývoji testování částí. V tento přístup napíšete testovací metodu, která ověřuje konkrétní chování v systému, která jsou testování a potom napíšete kód, který projde testem. Provedením změn v pořadí podle následujících postupů můžete nechat provést zpětnou Tato strategie prvním zápisu kód, který chcete otestovat a zapište si testování částí.  
-  
- Toto téma také vytvoří jeden řešení sady Visual Studio a samostatné projekty pro testy částí a knihovnu DLL, kterou chcete testovat. Testy jednotek můžete zahrnout taky přímo v projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a knihovny DLL.  
-  
-> [!NOTE]
->  Visual Studio Community, Enterprise a Professional poskytnutí dodatečných funkcí pro testování jednotky.  
->   
->  -   Použijte libovolnou architekturu test jednotky třetích stran s otevřeným zdrojem, vytvořený adaptér rozšíření pro Microsoft testování Explorer. Můžete také analyzovat a zobrazit informace o pokrytí kódu pro testy.  
-> -   Spouštění testů po každé sestavení.  
-> -   VS Enterprise také obsahuje Microsoft Fakes, představuje izolace rozhraní pro spravovaný kód, který vám umožní zaměřit testy na vlastní kód nahrazením testovacího kódu pro systém a funkce třetích stran.  
->   
->  Další informace najdete v tématu [ověřování kódu pomocí testy jednotek](http://msdn.microsoft.com/library/dd264975.aspx) v knihovně MSDN.  
-  
-##  <a name="BKMK_In_this_topic"></a>V tomto tématu  
- [Vytvoření řešení a projektu testování částí](#BKMK_Create_the_solution_and_the_unit_test_project)  
-  
- [Ověřte, zda spustit testy v Průzkumníka testů](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [Přidejte do projektu matematické výrazy Rooter – třída](#BKMK_Add_the_Rooter_class_to_the_Maths_project)  
-  
- [Několik k testovacímu projektu do projektu aplikace](#BKMK_Couple_the_test_project_to_the_app_project)  
-  
- [Opakované posílení testy a ujistěte se, je předat](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Ladění selhání testu](#BKMK_Debug_a_failing_test)  
-  
- [Refaktorovat kód](#BKMK_Refactor_the_code_)  
-  
+
+Toto téma popisuje jeden způsob, jak vytvářet testy částí pro třídu Visual C# v aplikaci UWP. Třída Rooter ukazuje nepřesných vědomosti limit teoreticky z calculus implementací funkce pro výpočet odhad druhou odmocninu čísla na zadanou mocninu. Matematické výrazy aplikace potom pomocí této funkce můžete zobrazit uživatele fun věcí, které lze provést pomocí matematické.
+
+Toto téma ukazuje, jak používat jako první krok při vývoji testování částí. V tento přístup napíšete testovací metodu, která ověřuje konkrétní chování v systému, která jsou testování a potom napíšete kód, který projde testem. Provedením změn v pořadí podle následujících postupů můžete nechat provést zpětnou Tato strategie prvním zápisu kód, který chcete otestovat a zapište si testování částí.
+
+Toto téma také vytvoří jeden řešení sady Visual Studio a samostatné projekty pro testy částí a knihovnu DLL, kterou chcete testovat. Testy jednotek můžete zahrnout taky přímo v projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a knihovny DLL.
+
 ##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a>Vytvoření řešení a projektu testování částí  
   
-1.  Na **soubor** nabídce zvolte **nový**a potom zvolte **nový projekt**.  
+1.  Na **soubor** nabídce zvolte **nový** > **projektu...** .
   
-2.  V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná**, pak rozbalte **Visual C#** a zvolte **univerzální pro Windows**. Zvolte **prázdnou aplikaci** ze seznamu šablon projektu.  
+2.  V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná** > **Visual C#** a zvolte **univerzální pro Windows**. Zvolte **prázdnou aplikaci** ze seznamu šablon projektu.
   
 3.  Název projektu `Maths` a zajistěte, aby **vytvořit adresář pro řešení** je vybrána.  
   
 4.  V Průzkumníku řešení, zvolte název řešení a potom vyberte **přidat** z místní nabídky a potom zvolte **nový projekt**.  
   
-5.  V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná**, pak rozbalte **Visual C#** a zvolte **univerzální pro Windows** . Zvolte **knihovny Test jednotky (Universal Windows)** ze seznamu šablon projektu.  
-  
-     ![Vytvoření projektu testování částí](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
+5.  V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná**, pak rozbalte **Visual C#** a zvolte **univerzální pro Windows** . Zvolte **jednotky testování aplikace (univerzální pro Windows)** ze seznamu šablon projektu.
   
 6.  Otevřete UnitTest1.cs v editoru Visual Studio.  
   
@@ -116,7 +92,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro třídu Vis
   
      K testovacímu projektu vytvoří a spustí. Zobrazí se okno Průzkumníka testů a testovací je uveden v části **předán testy**. Souhrn panelu v dolní části okna poskytuje další informace o vybrané testu.  
   
-     ![Testování Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
+     ![Test Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
 ##  <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a>Přidejte do projektu matematické výrazy Rooter – třída  
   
@@ -185,7 +161,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro třídu Vis
   
 5.  V Průzkumníku testu zvolte **spustit všechny**.  
   
-     ![Základní Test proběhl](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+     ![Basic Test passed](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
  Máte nastavení testu a projektů kód a ověřit, že můžete spustit testy, které běží funkce v projektu kódu. Teď můžete začít zapisovat skutečné testy a kódu.  
   
@@ -287,7 +263,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro třídu Vis
   
      Test se nezdaří. Zvolte název testu v Průzkumníku otestovat. Je označený selhání kontrolního výrazu. Zpráva o neúspěšném zpracování je zobrazen v podokně podrobností Průzkumníka testů.  
   
-     ![NegativeRangeTests se nezdařilo](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+     ![NegativeRangeTests failed](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
 3.  Chcete-li zjistit, proč test se nezdaří, kroku prostřednictvím funkce:  
   

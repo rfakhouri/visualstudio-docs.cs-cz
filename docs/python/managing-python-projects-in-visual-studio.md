@@ -1,26 +1,27 @@
 ---
-title: "Správa projektů v jazyce Python v sadě Visual Studio | Microsoft Docs"
+title: "Správa projektů pro Python aplikace v sadě Visual Studio | Microsoft Docs"
 description: "Vysvětlující účel projekty v sadě Visual Studio, ukazuje, jak vytvořit a spravovat projekty pro kód Python a popisuje jiný projekt šablony dostupné pro jazyk Python."
 ms.custom: 
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 90a1c568b5e97afcaa975e1fe77230fa0b65d80d
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: c1909a421cc4f80653438b2dd627aef8559005d6
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-projects"></a>Projektů v jazyce Python
 
@@ -72,8 +73,8 @@ Následující tabulka shrnuje šablony dostupné na Visual Studio 2017 (ne vše
 | --- | --- |
 | [Z existujícího kódu jazyka Python](#creating-a-project-from-existing-files) | Projekt sady Visual Studio vytvoří z existujícího kódu Python ve struktuře složek.  |
 | Aplikace Python | Struktura základního projektu pro novou aplikaci Python s jeden, prázdný zdrojového souboru. Ve výchozím projektu spouští v konzole překladač výchozí globální prostředí, které můžete změnit [přiřazení do různých prostředí](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project). |
-| [Cloudové služby Azure](template-azure-cloud-service.md) | Projekt pro cloudové služby Azure napsané v Pythonu. |
-| [Webové projekty](template-web.md) | Projekty pro webové servery založené na různé platformy, včetně charakteristické znaky Bottle, Flask a Django Flask/Jade. |
+| [Cloudové služby Azure](python-azure-cloud-service-project-template.md) | Projekt pro cloudové služby Azure napsané v Pythonu. |
+| [Webové projekty](python-web-application-project-templates.md) | Projekty pro webové servery založené na různé platformy, včetně charakteristické znaky Bottle, Flask a Django Flask/Jade. |
 | IronPython aplikace | Podobně jako šablona aplikací Python, ale používá IronPython ve výchozí povolení rozhraní .NET spolupráce a ve smíšeném režimu ladění s jazyky rozhraní .NET. |
 | Aplikace IronPython WPF | Struktura projektu pomocí IronPython soubory Windows Presentation Foundation XAML pro uživatelské rozhraní aplikace. Visual Studio poskytuje návrháře XAML uživatelského rozhraní, kódu může být napsané v Pythonu a spuštění aplikace bez zobrazení konzoly. |
 | IronPython Silverlight webové stránky | Projekt IronPython, který běží v prohlížeči pomocí programu Silverlight. Kód aplikace Python je součástí webové stránky jako skript. Vrátí značku skriptu standardní dolů určitý kód JavaScript, která inicializuje IronPython systémem uvnitř Silverlight, ze kterého může váš kód Python zasahovat modelu DOM. |

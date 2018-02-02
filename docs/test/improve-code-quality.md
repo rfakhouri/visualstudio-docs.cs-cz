@@ -1,24 +1,21 @@
 ---
 title: "Testovací nástroje sady Visual Studio | Microsoft Docs"
-ms.custom: na
-ms.date: 02/17/2017
-ms.reviewer: na
-ms.suite: na
+ms.date: 01/31/2018
 ms.technology: vs-devops-test
-ms.tgt_pltfrm: na
 ms.topic: article
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: ad98bfedbccabd5b02059151ce3a5c510fecd83b
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: cc57d6ea3ebba0cff901635d411d047bbafbfa94
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testovací nástroje v sadě Visual Studio
 
@@ -34,7 +31,7 @@ Testovací nástroje sady Visual Studio může pomoct vám a vašemu týmu pro v
 |[Testování částí kódu](../test/unit-test-your-code.md)|Průzkumníka testů snadno integrovat testování částí v praxi vaší vývoj. Můžete použít Microsoft unit test framework nebo jeden z několika rozhraní třetích stran s otevřeným zdrojem.|
 |[IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md)|IntelliTest automaticky vygeneruje testy částí a testovací data pro spravovaný kód.|
 |[Pokrytí kódu](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|Pokrytí kódu určuje, jaké části kódu vašeho projektu je ve skutečnosti testuje programové testy, jako je například testy jednotek.|
-|[Napodobeniny Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)|Napodobeniny Microsoft můžete izolovat kód, který zkoušíte nahrazením dalších částí aplikace pomocí zástupných procedury nebo překrytí.|
+|[Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|Napodobeniny Microsoft můžete izolovat kód, který zkoušíte nahrazením dalších částí aplikace pomocí zástupných procedury nebo překrytí.|
 |[Živé testování částí](../test/live-unit-testing.md)|Za provozu jednotkové testování automaticky spustí testy jednotek na pozadí a graficky zobrazí výsledky pokrytí a testování kódu v editoru kódu v sadě Visual Studio.|
 |[Automatizace uživatelského rozhraní](../test/use-ui-automation-to-test-your-code.md)|Použití programových uživatelského rozhraní testů do jednotky aplikace jeho uživatelském rozhraní.|
 |[Lab Management](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)|Testovací prostředí je kolekce virtuálních a fyzických počítačů, které můžete použít pro vývoj a testování aplikací.|

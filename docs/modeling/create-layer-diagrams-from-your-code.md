@@ -14,30 +14,33 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b05e295830762939e2142b550863219afaa06ce
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b6c1d9b4fa92146b64d075ff4268bc32c0e65c1
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Vytváření diagramů závislost z vašeho kódu
-K vizualizaci Architektura vysoké úrovně, logické systému softwaru, vytvořit *diagram závislostí* v sadě Visual Studio. Abyste měli jistotu, že váš kód zůstává konzistentní s Tento návrh, ověření kódu s diagram závislostí. Můžete vytvořit diagramy závislostí pro projekty Visual C# .NET a Visual Basic .NET. Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [verze podpora architektura a modelování nástroje](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
-  
- ![Vytvoření diagramu závislostí](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")  
-  
- Diagram závislostí umožňuje uspořádat do logických, abstraktní skupin nazývaných položky řešení sady Visual Studio *vrstvy*. Pomocí vrstev můžete popsat hlavní úlohy, které provádějí tyto artefakty, nebo hlavní komponenty systému. Každá vrstva může obsahovat další vrstvy, které popisují podrobnější úlohy. Můžete také určit určené nebo existující *závislosti* mezi vrstvami. Tyto závislosti, které jsou reprezentovány šipkami, zobrazují, které vrstvy mohou použít nebo právě používají funkce představované ostatními vrstvami. Chcete-li si udržet architektonickou kontrolu nad kódem, zobrazte zamýšlené závislosti v diagramu a potom ověřte kód proti diagramu.  
-  
- [Video: Ověření svoje závislosti architektury v reálném čase](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
-  
-##  <a name="CreateDiagram"></a>Vytvoření diagramu závislostí  
- Než vytvoříte diagram závislostí, ujistěte se, že vaše řešení s projektem modelování. 
-  
+
+K vizualizaci Architektura vysoké úrovně, logické systému softwaru, vytvořit *diagram závislostí* v sadě Visual Studio. Abyste měli jistotu, že váš kód zůstává konzistentní s Tento návrh, ověření kódu s diagram závislostí. Můžete vytvořit diagramy závislostí pro projekty Visual C# a Visual Basic. Tuto funkci podporovat kterou verzí sady Visual Studio najdete v tématu [verze podpora architektura a modelování nástroje](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+![Vytvoření diagramu závislostí](../modeling/media/layerdiagramvisualizecode.png "LayerDiagramVisualizeCode")
+
+Diagram závislostí umožňuje uspořádat do logických, abstraktní skupin nazývaných položky řešení sady Visual Studio *vrstvy*. Pomocí vrstev můžete popsat hlavní úlohy, které provádějí tyto artefakty, nebo hlavní komponenty systému. Každá vrstva může obsahovat další vrstvy, které popisují podrobnější úlohy. Můžete také určit určené nebo existující *závislosti* mezi vrstvami. Tyto závislosti, které jsou reprezentovány šipkami, zobrazují, které vrstvy mohou použít nebo právě používají funkce představované ostatními vrstvami. Chcete-li si udržet architektonickou kontrolu nad kódem, zobrazte zamýšlené závislosti v diagramu a potom ověřte kód proti diagramu.
+
+[Video: Ověření svoje závislosti architektury v reálném čase](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+
+##  <a name="CreateDiagram"></a>Vytvoření diagramu závislostí
+
+Než vytvoříte diagram závislostí, ujistěte se, že vaše řešení s projektem modelování.
+
 > [!IMPORTANT]
->  Nepřidávejte, přetáhněte nebo zkopírujte existujícího diagramu závislost z projektem modelování, do jiného projektu modelování nebo na jiné místo v řešení. Tím budou zachovány odkazy z původního diagramu i v případě, že změníte diagram. Rovněž to způsobí, že ověřování vrstev nebude fungovat správně. Důsledkem mohou být i další problémy, jako jsou například chybějící prvky nebo jiné chyby při pokusu o otevření diagramu.  
->   
->  Místo toho přidejte nový diagram závislost na projekt modelování. Zkopírujte prvky ze zdrojového diagramu do nového diagramu. Uložte projekt modelování a nový diagram závislostí.  
-  
+> Nepřidávejte, přetáhněte nebo zkopírujte existujícího diagramu závislost z projektem modelování, do jiného projektu modelování nebo na jiné místo v řešení. Tím budou zachovány odkazy z původního diagramu i v případě, že změníte diagram. Rovněž to způsobí, že ověřování vrstev nebude fungovat správně. Důsledkem mohou být i další problémy, jako jsou například chybějící prvky nebo jiné chyby při pokusu o otevření diagramu.
+>
+> Místo toho přidejte nový diagram závislost na projekt modelování. Zkopírujte prvky ze zdrojového diagramu do nového diagramu. Uložte projekt modelování a nový diagram závislostí.
+
 #### <a name="to-add-a-new-dependency-diagram-to-a-modeling-project"></a>Chcete-li přidat nový diagram závislost na projekt modelování  
   
 1.  Na **architektura** nabídce zvolte **nový Diagram závislostí**.  

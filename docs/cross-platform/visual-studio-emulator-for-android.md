@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology:
+- tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df3e4def97d8563e3901662ede92e79acd5c5d4c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3029954623ffbd5324a8a1ab9b67def375b1a486
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulátor sady Visual Studio pro Android
 Emulátor sady Visual Studio pro Android je plochy aplikace, která emuluje zařízení se systémem Android. Poskytuje virtualizované prostředí, ve kterém můžete ladění a testování aplikací pro Android bez fyzického zařízení. Poskytuje také izolované prostředí pro prototypy vaší aplikace.  
@@ -27,7 +29,9 @@ Emulátor sady Visual Studio pro Android je plochy aplikace, která emuluje zař
  Můžete otestovat vaši aplikaci ve profil jedinečný zařízení pro jednotlivé platformy Android, rozlišení obrazovky a další vlastnosti hardwaru nepodporuje Visual Studio Emulator for Android.
 
 > [!NOTE]
-> Emulátor Google Android se doporučuje pro použití s nástroji Visual Studio Tools pro Apache Cordova. Další informace najdete v tématu [spuštění aplikace Apache Cordova v Androidu](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
+> Emulátor Google Android se doporučuje použít v následujících případech:
+> - Při použití nástroje sady Visual Studio pro Apache Cordova. Další informace najdete v tématu [spuštění aplikace Apache Cordova v Androidu](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator).
+> - Když je potřeba zkontrolovat emulátoru bitové kopie obsahující Android 7.0 nebo novější, protože neexistují žádné plány publikovat Android Image po verze 6.0 pro použití v Visual Studio Emulator for Android.
   
 ##  <a name="Installing"></a>Instalace a odinstalace  
  Instalace  
@@ -79,7 +83,7 @@ Emulátor sady Visual Studio pro Android je plochy aplikace, která emuluje zař
  Po instalaci sady profilů, které chcete zacílit, můžete tyto nové profily spustit přímo ze Správce stisknutím zeleným **přehrání** tlačítko. Také se zobrazí v rozevírací nabídce ladění cíl v žádný typ, a platformy mobilních projektu sady Visual Studio.  
   
 ##  <a name="FeaturesTest"></a>Funkce, které můžete testovat v emulátoru  
- Podrobné informace o funkcích můžete otestovat v emulátoru, najdete [dokumentaci](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Podrobné informace o funkcích můžete otestovat v emulátoru, najdete [příspěvku na blogu](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
   
 ##  <a name="FeaturesNonTest"></a>Funkce, které nelze otestovat v emulátoru  
  Následující seznam popisuje funkce platformu Android, které **nelze** testování v emulátoru. Je třeba otestovat tyto funkce na fyzické zařízení.  

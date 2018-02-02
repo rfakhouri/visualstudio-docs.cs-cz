@@ -6,22 +6,26 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: editorconfig [Visual Studio]
+helpviewer_keywords:
+- editorconfig [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 516bd2de626fa7a5ffcbf4234c849e81860b9e08
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.openlocfilehash: 65eafeab083b85fb7e872adabf97f5497cc62291
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvořte nastavení editoru přenosné, vlastní s EditorConfig
 
 Ve Visual Studio 2017, můžete přidat [EditorConfig](http://editorconfig.org/) souboru do projektu nebo codebase vynutit konzistentní kódování styly pro všechny uživatele, který funguje v základu kódu. Nastavení EditorConfig mají přednost před globální text v sadě Visual Studio nastavení editoru. To znamená, které můžete přizpůsobit, každý základu kódu použít nastavení editoru textu, které jsou specifické pro daného projektu. V sadě Visual Studio, stále můžete nastavit vlastní předvolby osobní editor **možnosti** dialogové okno. Tato nastavení použít vždy, když pracujete v codebase bez souboru .editorconfig, nebo když soubor .editorconfig není přepsat příslušného nastavení. Příkladem takových předvoleb je odsazení styl&mdash;tabulátory, nebo mezery.
 
 Nastavení EditorConfig podporuje mnoho editory kódu a integrovaného vývojového prostředí, včetně sady Visual Studio. Je přenosné komponenty, která přenáší pomocí kódu a může vynutit kódování styly i mimo Visual Studio.
+
+> [!NOTE]
+> Když přidáte soubor EditorConfig do projektu v sadě Visual Studio, formátování existující kód není změnit, dokud se formátovat dokument (**upravit** > **Upřesnit**  >  **Formátovat dokument** nebo **Ctrl**+**tisíc**, **Ctrl**+**D**). Žádné nové řádky kódu jsou však formátovaného podle nastavení EditorConfig.
 
 ## <a name="coding-consistency"></a>Kódování konzistence
 
@@ -40,15 +44,15 @@ Editor v sadě Visual Studio podporuje základní sady [EditorConfig vlastnosti]
 - tab_width
 - end\_of_line
 - Znaková sada
-- Trim\_trailing_whitespace
-- Vložit\_final_newline
+- trim\_trailing_whitespace
+- insert\_final_newline
 - kořen
 
 Nastavení editoru EditorConfig jsou podporovány ve všech jazycích podporovaných v sadě Visual Studio, s výjimkou XML. Kromě toho EditorConfig podporuje [kódu stylu](../ide/editorconfig-code-style-settings-reference.md) a [pojmenování](../ide/editorconfig-naming-conventions.md) konvence pro C# a Visual Basic.
 
 ## <a name="adding-and-removing-editorconfig-files"></a>Přidávání a odebírání souborů EditorConfig
 
-Přidání EditorConfig souboru do projektu nebo codebase nepřevádí existující styly na nové. Například pokud máte odsazení v souboru, které jsou naformátované se karty a přidat soubor EditorConfig, který odsadí prostory, znaky odsazení nebudou převedeny do prostorů. Však žádné nové řádky kódu se bude formátovat podle EditorConfig souboru.
+Přidání EditorConfig souboru do projektu nebo codebase nepřevádí existující styly na nové. Například pokud máte odsazení v souboru, které jsou naformátované se karty a přidat soubor EditorConfig, který odsadí prostory, znaky odsazení nebudou automaticky převedena do prostorů. Však žádné nové řádky kódu jsou formátovaná podle EditorConfig souboru. Kromě toho pokud formátovat dokument (**upravit** > **Upřesnit** > **formátovat dokument** nebo **Ctrl** + **Tisíc**, **Ctrl**+**D**), nastavení v souboru EditorConfig platí do existujícího kódu.
 
 Když odeberete soubor EditorConfig z projektu nebo základu kódu, musí zavřete a znovu otevřít soubory se vrátit do editoru globální nastavení pro nové řádky kódu.
 
@@ -68,16 +72,16 @@ Když odeberete soubor EditorConfig z projektu nebo základu kódu, musí zavře
 
 1. Upravte soubor podle potřeby, třeba:
 
-```EditorConfig
-root = true
+   ```EditorConfig
+   root = true
 
-[*.{cs,vb}]
-indent_size = 4
-trim_trailing_whitespace = true
+   [*.{cs,vb}]
+   indent_size = 4
+   trim_trailing_whitespace = true
 
-[*.cs]
-csharp_new_line_before_open_brace = methods
-```
+   [*.cs]
+   csharp_new_line_before_open_brace = methods
+   ```
 
 Alternativně můžete nainstalovat [služba jazyka EditorConfig rozšíření](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig). Po instalaci tohoto rozšíření, jednoduše vyberte **přidat** > **.editorconfig soubor** z nabídky řešení uzel, uzel projektu nebo libovolné složky v Průzkumníku řešení klikněte pravým tlačítkem nebo kontextu.
 
@@ -91,7 +95,7 @@ K přepsání některých nebo všech nastavení EditorConfig, přidání .edito
 
 ![EditorConfig hierarchie](../ide/media/vside_editorconfig_hierarchy.png)
 
-Pokud jste právě chcete přepsat některé, ale ne všechna nastavení, jednoduše zadejte tato nastavení v souboru .editorconfig. Přepíše pouze vlastnosti, které explicitně seznamu v souboru nižší úrovně. Další nastavení z vyšší úrovně .editorconfig soubory budou se dál platit. Pokud chcete zajistit, aby _žádné_ nastavení z _žádné_ vyšší úrovně .editorconfig soubory platí pro tuto část základu kódu, přidejte ```root=true``` vlastnost k souboru .editorconfig nižší úrovně:
+Pokud chcete přepsat některé, ale ne všechna nastavení, zadejte pouze tyto nastavení v souboru .editorconfig. Pouze vlastnosti, které explicitně seznamu v souboru nižší úrovně se přepíšou. Další nastavení z vyšší úrovně .editorconfig souborů se nadále používat. Pokud chcete zajistit, aby _žádné_ nastavení z _žádné_ vyšší úrovně .editorconfig soubory platí pro tuto část základu kódu, přidejte ```root=true``` vlastnost k souboru .editorconfig nižší úrovně:
 
 ```EditorConfig
 # top-most EditorConfig file
@@ -122,7 +126,7 @@ Podle očekávání, stisknete **kartě** klíč na další řádek odsadí řá
 
 ![Před použitím EditorConfig kódu](../ide/media/vside_editorconfig_before.png)
 
-Přidáme nový soubor s názvem .editorconfig na projekt s tímto obsahem. `[*.cs]` Nastavení znamená, že tato změna platí pouze pro soubory kódu C# v projektu.
+Přidáte nový soubor s názvem .editorconfig na projekt s tímto obsahem. `[*.cs]` Nastavení znamená, že tato změna platí pouze pro soubory kódu C# v projektu.
 
 ```EditorConfig
 # Top-most EditorConfig file
@@ -143,7 +147,7 @@ Pokud je soubor EditorConfig kdekoli v strukturu adresáře nebo vyšší umíst
 
    **"Uživatelských předvoleb pro tento typ souboru se přepisují konvence psaní kódu pro tento projekt."**
 
-To znamená, že pokud editor nastavení na **nástroje**, **možnosti**, **textového editoru** (například velikost odsazení a styl, velikost tabulátoru nebo konvence kódování) jsou určené v Soubor EditorConfig nebo vyšší na projekt v strukturu adresáře, názvů v souboru EditorConfig přepsat nastavení v možnosti. Toto chování můžete řídit přepnutím **projektu postupujte podle konvence kódování** možnost **nástroje**, **možnosti**, **textového editoru**. Zrušte zaškrtnutí možnosti vypne EditorConfig podpora pro Visual Studio.
+To znamená, že pokud editor nastavení na **nástroje** > **možnosti** > **textového editoru** (například velikost odsazení a styl, velikost tabulátoru nebo kódování konvence) jsou určené v souboru EditorConfig nebo vyšší na projekt v strukturu adresáře, názvů v souboru EditorConfig potlačit nastavení ve možnosti. Toto chování můžete řídit přepnutím **projektu postupujte podle konvence kódování** možnost **nástroje** > **možnosti**  >  **Textového editoru**. Zrušte zaškrtnutí možnosti vypne EditorConfig podpora pro Visual Studio.
 
 ![Možnosti nástrojů – postupujte podle projektu konvence kódování](media/coding_conventions_option.png)
 
@@ -158,6 +162,7 @@ Obor názvů vaší EditorConfig můžete ovládat nastavením ```root=true``` v
 ## <a name="see-also"></a>Viz také
 
 [Pravidla týkající se rozhraní .NET kódu stylu](../ide/editorconfig-code-style-settings-reference.md)  
+[Zásady vytváření názvů .NET](../ide/editorconfig-naming-conventions.md)  
 [Podpora EditorConfig služby jazyk](../extensibility/supporting-editorconfig.md)  
 [EditorConfig.org](http://editorconfig.org/)  
 [Psaní kódu v editoru](writing-code-in-the-code-and-text-editor.md)

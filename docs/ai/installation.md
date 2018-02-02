@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.workload: multiple
-ms.openlocfilehash: 55524900d59bf3631d724e2cb142e649bf82c839
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: db07adc39f807b4dfc938ddf599bd7f83378f475
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installation"></a>Instalace
 
@@ -103,7 +104,7 @@ Pak je potřeba ověřit, zda je správně nainstalován jazyk Python 3.5 a pip 
     C:\Users\test>python -m pip install -U pip
     ```
 
-- **systému macOS**
+- **macOS**
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -117,7 +118,7 @@ Pak je potřeba ověřit, zda je správně nainstalován jazyk Python 3.5 a pip 
 ### <a name="python-on-visual-studio"></a>Python v sadě Visual Studio
 
 Python je plně podporovaný v sadě Visual Studio prostřednictvím rozšíření.
-Další informace o instalaci [Python pro Visual Studio Tools](https://docs.microsoft.com/visualstudio/python/installation) další podrobnosti.
+Další informace o instalaci [Python pro Visual Studio Tools](../python/installing-python-support-in-visual-studio.md) další podrobnosti.
 
 ### <a name="numpy-and-scipy"></a>NumPy a SciPy
 
@@ -135,7 +136,7 @@ pip3.5 install -U numpy scipy
 >
 > Výše uvedený příkaz upgrady existující staré nebo neoficiální (například balíčky z http://www.lfd.uci.edu/~gohlke/pythonlibs/ pro systém Windows pomocí jiných výrobců) NumPy a SciPy na nejnovější oficiální ty.
 
-### <a name="microsoft-cognitive-toolkit-cntk"></a>Sada nástrojů pro kognitivní (CNTK)
+### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft Cognitive Toolkit (CNTK)
 
 [Kognitivní nástrojů Microsoft](https://cntk.ai) je jednotná nástrojů přímým learning popisuje neuronové sítě jako řadu výpočetní kroky prostřednictvím orientovaného grafu. CNTK podporuje Python a BrainScript programovacích jazyků.
 
@@ -209,7 +210,7 @@ Pokud chcete nainstalovat PyTorch, spusťte následující příkaz v terminálu
     - Dekomprese domovskému adresáři, například "C:\Users\test\pytorch".
     - Přidejte proměnnou prostředí % PYTHONPATH % "C:\Users\test\pytorch\Lib\site-packages".
 
-- **systému macOS**
+- **macOS**
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```

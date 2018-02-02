@@ -9,44 +9,28 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: mikeblome
-ms.openlocfilehash: 1b032b651603beb5771bfa68b8dc8628540d638e
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>Postup testování knihovny DLL Visual C++ pro aplikace UWP 
+# <a name="how-to-test-a-visual-c-dll"></a>Postup testování knihovny DLL Visual C++
+
 Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DLL C++ pro aplikace pro univerzální platformu Windows (UWP) pomocí Microsoft Test Framework pro C++. Knihovny DLL RooterLib ukazuje nepřesných vědomosti limit teoreticky z calculus implementací funkce pro výpočet odhad druhou odmocninu čísla na zadanou mocninu. Knihovny DLL pak může být součástí aplikace pro UPW, který ukazuje uživatele fun věcí, které lze provést pomocí matematické.  
   
  Toto téma ukazuje, jak používat jako první krok při vývoji testování částí. V tento přístup napíšete testovací metodu, která ověřuje konkrétní chování v systému, která jsou testování a potom napíšete kód, který projde testem. Provedením změn v pořadí podle následujících postupů můžete nechat provést zpětnou Tato strategie prvním zápisu kód, který chcete otestovat a zapište si testování částí.  
   
- Toto téma také vytvoří jeden řešení sady Visual Studio a samostatné projekty pro testy částí a knihovnu DLL, kterou chcete testovat. Testy jednotek můžete zahrnout taky přímo v projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a. KNIHOVNY DLL. V tématu [přidání testů částí do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) tipy, které struktura používat.  
-  
-##  <a name="In_this_topic"></a>V tomto tématu  
-
- [Vytvoření řešení a projektu testování částí](#Create_the_solution_and_the_unit_test_project)  
-  
- [Ověřte, zda spustit testy v Průzkumníka testů](#Verify_that_the_tests_run_in_Test_Explorer)  
-  
- [Do řešení přidat projektu knihovny DLL](#Add_the_DLL_project_to_the_solution)  
-  
- [Zpřístupněte funkce DLL testovacího kódu](#make_the_dll_functions_visible_to_the_test_code)  
-  
- [Opakované posílení testy a ujistěte se, je předat](#Iteratively_augment_the_tests_and_make_them_pass)  
-  
- [Ladění selhání testu](#Debug_a_failing_test)  
-  
- [Refaktorovat kód beze změny testů](#Refactor_the_code_without_changing_tests)  
+ Toto téma také vytvoří jeden řešení sady Visual Studio a samostatné projekty pro testy částí a knihovnu DLL, kterou chcete testovat. Testy jednotek můžete zahrnout taky přímo v projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a. KNIHOVNY DLL. V tématu [přidání testů částí do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) tipy, které struktura používat.
   
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a>Vytvoření řešení a projektu testování částí  
   
-1.  Na **soubor** nabídce zvolte **nový**a potom zvolte **nový projekt**.  
+1.  Na **soubor** nabídce zvolte **nový** > **nový projekt...** .
   
-2.  V dialogovém okně Nový projekt rozbalte **nainstalovaná**, pak rozbalte **Visual C++** a zvolte **UWP**. Zvolte **knihovny Test jednotky (aplikace pro UPW)** ze seznamu šablon projektu.  
-  
-     ![Vytvoření a C & č. 43; & č. 43; Jednotka knihovny test](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
+2.  V dialogovém okně Nový projekt rozbalte **nainstalovaná** > **Visual C++** a zvolte **univerzální pro Windows**. Zvolte **jednotky testování aplikace (univerzální pro Windows)** ze seznamu šablon projektu.
   
 3.  Název projektu `RooterLibTests`, zadejte umístění, název řešení `RooterLib`; a zajistěte, aby **vytvořit adresář pro řešení** je zaškrtnuté.  
   
@@ -83,7 +67,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
   
      K testovacímu projektu vytvoří a spustí. Zobrazí se okno Průzkumníka testů a testovací je uveden v části **předán testy**. Souhrn panelu v dolní části okna poskytuje další informace o vybrané testu.  
   
-     ![Testování Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
+     ![Test Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
 ##  <a name="Add_the_DLL_project_to_the_solution"></a>Do řešení přidat projektu knihovny DLL  
   
@@ -194,7 +178,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
   
 5.  V Průzkumníku testu zvolte **spustit všechny**.  
   
-     ![Základní Test proběhl](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+     ![Basic Test passed](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
  Máte nastavení testu a projektů kód a ověřit, že můžete spustit testy, které běží funkce v projektu kódu. Teď můžete začít zapisovat skutečné testy a kódu.  
   
@@ -297,7 +281,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
   
      Test se nezdaří. Zvolte název testu v Průzkumníku otestovat. Je označený selhání kontrolního výrazu. Zpráva o neúspěšném zpracování je zobrazen v podokně podrobností Průzkumníka testů.  
   
-     ![NegativeRangeTests se nezdařilo](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+     ![NegativeRangeTests failed](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
 3.  Chcete-li zjistit, proč test se nezdaří, kroku prostřednictvím funkce:  
   

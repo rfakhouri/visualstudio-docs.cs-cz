@@ -4,23 +4,26 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.XAMLDesigner
-ms.assetid: ad3820b2-0d95-4807-a75c-c3467ed973a3
-caps.latest.revision: "1"
+ms.topic: reference
+f1_keywords:
+- VS.ToolsOptionsPages.XAMLDesigner
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- uwp
+ms.openlocfilehash: bf71bb6f2d52159ab203d14c690a73525af091ae
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="xaml-designer-options-page"></a>Stránka Možnosti Návrhář XAML
+
 Použití **návrháře XAML** stránku možností určíte způsob elementů a atributů formátování v dokumentech XAML. Otevřete tuto stránku, vyberte **nástroje** nabídce a potom zvolte **možnosti**. Pro přístup k **návrháře XAML** vlastnost vyberte **návrháře XAML** uzlu. Nastavení pro Návrhář XAML se použijí při otevření dokumentu. Ano Pokud změníte nastavení, budete muset zavřete a znovu otevřete Visual Studio, aby se změny projevily.
 
 > [!NOTE]
@@ -100,7 +103,7 @@ Tato nastavení použijte k určení, zda důsledky jsou vykreslen při úpravě
 |**Vykreslení efekty**|Určuje, zda důsledky vykreslit při úpravě souborů XAML v Návrháři XAML pomocí Blend.|  
 |**Prahová hodnota přiblížení**|Určuje procento přiblížení či oddálení v které efekty při vykreslení **vykreslení důsledky** je zaškrtnuto políčko. Pokud jste zvětšení nad rámec tohoto nastavení, důsledky už nebudou zobrazovat v Návrháři XAML.|  
 
-## <a name="see-also"></a>Viz také  
- [XAML v grafickém subsystému WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
- [Postupy: Změna nastavení zobrazení XAML](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
- [XAML a návody kódu](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+## <a name="see-also"></a>Viz také
+
+[XAML ve WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)  
+[Návod: Moje první desktopová aplikace WPF](../../designers/walkthrough-my-first-wpf-desktop-application2.md)

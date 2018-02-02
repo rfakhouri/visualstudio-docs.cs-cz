@@ -1,10 +1,9 @@
 ---
-title: "Konvence pojmenování .NET pro EditorConfig | Microsoft Docs"
+title: "Soubory .NET pojmenování konvence pro EditorConfig | Microsoft Docs"
 ms.custom: 
 ms.date: 11/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -13,14 +12,15 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: d6df33919220852642bac195d47752ec88e467ee
-ms.sourcegitcommit: d922eabedbeaedccecc5ca497ff12eb1f37933f1
+ms.workload:
+- multiple
+ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 02/01/2018
 ---
-# <a name="naming-conventions-for-editorconfig"></a>Zásady vytváření názvů pro EditorConfig
+# <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
 Zásady vytváření názvů se týkají pojmenování elementy kódu, jako jsou třídy, vlastnosti a metody. Například můžete zadat, že veřejné členy nutné velkými písmeny nebo asynchronní metody musí končit "Asynchronní". Tato pravidla můžete vynutit zadáním je [.editorconfig soubor](../ide/create-portable-custom-editor-options.md). Pojmenování porušení pravidel zobrazit buď v seznamu chyb nebo jako návrh pod názvem, v závislosti na závažnosti můžete zvolit pravidla. Není nutné pro sestavení projektu chcete-li zobrazit narušení.
 

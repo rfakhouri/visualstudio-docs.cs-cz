@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ec8c0e9010cefd1e5c6b639edf02d785422800ff
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 06eec90026054bf8081c1cd1727d6cbfc3f30bbe
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramy závislost: pokyny
 Popis architektury aplikace na vysoké úrovni vytvořením *závislostí diagramy* v sadě Visual Studio. Ujistěte se, že váš kód zůstává konzistentní s Tento návrh ověřením kódu s diagram závislostí. Ověření vrstev můžete použít také v procesu sestavení. V tématu [Channel 9 Video: návrh a ověřte vaší architektury pomocí závislostí diagramy](http://go.microsoft.com/fwlink/?LinkID=252073).  
@@ -62,7 +63,7 @@ Popis architektury aplikace na vysoké úrovni vytvořením *závislostí diagra
  V tématu [vytváření diagramů závislost z vašeho kódu](../modeling/create-layer-diagrams-from-your-code.md).  
   
 ##  <a name="CreateLayers"></a>Definovat vrstvy představující funkční oblasti nebo součásti  
- Vrstvy představují logické skupiny *artefakty*, jako jsou projekty, soubory kódu, obory názvů, třídy a metody. Můžete vytvořit vrstev z artefakty z projektů Visual C# .NET a Visual Basic .NET, nebo můžete připojit specifikace nebo plány na vrstvu pomocí propojení dokumentů, například soubory aplikace Word nebo Powerpointové prezentace. Jednotlivé úrovně zobrazí jako obdélníku v diagramu a zobrazuje počet artefaktů, které jsou propojeny s ho. Vrstva může obsahovat vnořené vrstvy, které popisují úlohy, konkrétnější.  
+ Vrstvy představují logické skupiny *artefakty*, jako jsou projekty, soubory kódu, obory názvů, třídy a metody. Můžete vytvořit vrstev z artefakty z projektů jazyka Visual C# a Visual Basic nebo můžete připojit specifikace nebo plány na vrstvu pomocí propojení dokumentů, například soubory aplikace Word nebo Powerpointové prezentace. Jednotlivé úrovně zobrazí jako obdélníku v diagramu a zobrazuje počet artefaktů, které jsou propojeny s ho. Vrstva může obsahovat vnořené vrstvy, které popisují úlohy, konkrétnější.  
   
  V rámci obecných pokynů, název vrstvy podle jejich funkce, například "Prezentace" nebo "Služby". Pokud artefakty spolu vzájemně úzce souvisí, můžete je umístíte ve stejné vrstvě. Pokud artefakty mohou být aktualizovány samostatně nebo použít v samostatné aplikace, můžete je umístíte do různých vrstev. Další informace o rozvrstvení vzory, navštivte stránku trendy a postupy v [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).  
   

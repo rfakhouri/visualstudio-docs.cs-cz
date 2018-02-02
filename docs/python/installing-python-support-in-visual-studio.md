@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a3f788b114b4250819c4867136cb1b888c816cf8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 552d256b315d6506911ae4cf8724b33173cd39a4
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalace podpory Python v sadě Visual Studio v systému Windows
 
@@ -35,7 +36,7 @@ Pro Visual Studio 2015 a starší musíte taky nainstalovat samostatně překlad
 Chcete-li rychle otestování podpory Python po provedení kroků instalace, otevřete okno Python interaktivní stisknutím klávesy Alt-I a zadáním `2+2`. Pokud nevidíte výstup `4`, znovu zkontrolovat vaše kroky.
 
 > [!Tip]
-> Zatížení Python zahrnuje užitečné Cookiecutter rozšíření, která poskytuje grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. Podrobnosti najdete v tématu [pomocí Cookiecutter](cookiecutter.md).
+> Zatížení Python zahrnuje užitečné Cookiecutter rozšíření, která poskytuje grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. Podrobnosti najdete v tématu [pomocí Cookiecutter](using-python-cookiecutter-templates.md).
 
 > [!Note]
 > Podpora v jazyce Python není v současné době k dispozici v sadě Visual Studio pro Mac, ale je k dispozici na Mac a Linux pomocí Visual Studio Code. V tématu [otázky a odpovědi](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
@@ -63,11 +64,11 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
     | Možnost | Popis |
     | --- | --- |
     | Distribuce Python | Vyberte libovolnou kombinaci variant 32bitové a 64bitové verze Python 2, Python 3, Anaconda2 a Anaconda3 distribuce, které chcete pracovat. Každý obsahuje překladač distribuci, modulu runtime a knihovny. Anaconda, konkrétně je platforma vědecké účely open data, která obsahuje řadu různých předem nainstalované balíčky. (Můžete vrátit na instalační program sady Visual Studio kdykoli přidat nebo odebrat distribuce.) |
-    | Podpora Cookiecutter šablony | Nainstaluje Cookiecutter grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. V tématu [pomocí rozšíření Cookiecutter](cookiecutter.md). |
-    | Podpora webového Python | Nainstaluje nástroje pro vývoj webů, včetně HTML, CSS a JavaScript úpravy podporu, společně s šablon pro projekty pomocí rozhraní Bottle, Flask a Django. V tématu [Python webové šablony projektů](template-web.md). |
+    | Podpora Cookiecutter šablony | Nainstaluje Cookiecutter grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. V tématu [pomocí rozšíření Cookiecutter](using-python-cookiecutter-templates.md). |
+    | Podpora webového Python | Nainstaluje nástroje pro vývoj webů, včetně HTML, CSS a JavaScript úpravy podporu, společně s šablon pro projekty pomocí rozhraní Bottle, Flask a Django. V tématu [Python webové šablony projektů](python-web-application-project-templates.md). |
     | Podpora Python IoT | Podporuje vývoj jádro IoT Windows používá Python. |
     | Nástroje pro nativní vývoj Python | Nainstaluje kompilátoru C++ a další komponenty potřebné k vývoji nativní rozšíření pro jazyk Python. V tématu [vytváření rozšíření pro C++ pro jazyk Python](working-with-c-cpp-python-in-visual-studio.md). Taky nainstalovat **vývoj aplikací s jazykem C++** zatížení pro plnou podporu C++. |
-    | Základní nástroje Azure Cloud Services | Poskytuje další podporu pro vývojáře Azure Cloud Services v Pythonu. V tématu [Azure cloud service projekty](template-azure-cloud-service.md). |
+    | Základní nástroje Azure Cloud Services | Poskytuje další podporu pro vývojáře Azure Cloud Services v Pythonu. V tématu [Azure cloud service projekty](python-azure-cloud-service-project-template.md). |
 
 1. Po instalaci instalační program poskytuje možnosti změnit, spusťte, opravit nebo odinstalovat Visual Studio. **Upravit** tlačítko se změní na **aktualizace** při instalaci aktualizace Visual Studio jsou aktualizace dostupné pro všechny součásti. (Možnost upravit je pak k dispozici v rozevírací nabídce.) Visual Studio a instalační program z nabídky Start systému Windows můžete také spustit a to vyhledáním "Visual Studio".
 

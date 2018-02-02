@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4616b8df91ce87b8f886deb9143fa1ff55a976d7
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 879b648fa761795efe38e45e1becf0433abf3755
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Krok 2: Psaní a spuštění kódu
 
@@ -44,12 +45,12 @@ Sice Průzkumníku řešení, kde budete spravovat soubory projektu, *editor* ok
     print("Hello, Visual Studio")
     ```
 
-1. Všimněte si, zabarvení syntaxe, která odlišuje příkaz `print` v argumentu `"Hello Visual Studio"`. Navíc dočasně odstranit poslední `"` na řetězce a Všimněte si, jak Visual Studio se zobrazí červený podtržení pro kód který obsahuje syntaktické chyby. Potom můžete nahradit `"` opravit kód.
+1. Všimněte si, zabarvení syntaxe, která odlišuje příkaz `print` v argumentu `"Hello Visual Studio"`. Navíc dočasně odstranit poslední `"` na řetězce a Všimněte si, jak Visual Studio zobrazí červený podtržení pro kód který obsahuje syntaktické chyby. Potom můžete nahradit `"` opravit kód.
 
     ![Barevné zvýrazňování syntaxe IntelliSense a zvýraznění chyby](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Protože jeden pro vývojové prostředí je velmi osobní záležitosti, Visual Studio poskytuje úplnou kontrolu nad vzhled a chování sady Visual Studio. Vyberte **nástroje > Možnosti** nabídky příkazů a zkontrolovat nastavení v části **prostředí** a **textového editoru** karty. Ve výchozím nastavení se zobrazí pouze omezený počet možností; Pokud chcete zobrazit všechny dostupné možnosti pro každou programovací jazyk, vyberte **zobrazit všechna nastavení** v dolní části dialogových oken. 
+    > Protože jeden pro vývojové prostředí je velmi osobní záležitosti, Visual Studio poskytuje úplnou kontrolu nad vzhled a chování sady Visual Studio. Vyberte **nástroje > Možnosti** nabídky příkazů a zkontrolovat nastavení v části **prostředí** a **textového editoru** karty. Ve výchozím nastavení zobrazí pouze omezený počet možností; Pokud chcete zobrazit všechny dostupné možnosti pro každou programovací jazyk, vyberte **zobrazit všechna nastavení** v dolní části dialogových oken. 
 
 1. Spustit kód, který jste zapisovat do tohoto bodu stisknutím Ctrl + F5 nebo výběrem **ladění > Spustit bez ladění** položku nabídky. Visual Studio zobrazí upozornění, pokud máte pořád chyby v kódu.
 
@@ -79,7 +80,7 @@ Sice Průzkumníku řešení, kde budete spravovat soubory projektu, *editor* ok
     ```
 
     > [!Tip]
-    > Dokončování dílčích řetězců pracovat, jako typ, odpovídající části slov, písmena na začátku slova a dokonce přeskočen znaků. V tématu [úpravy kódu - dokončených](code-editing.md#completions) podrobnosti.
+    > Dokončování dílčích řetězců pracovat, jako typ, odpovídající části slov, písmena na začátku slova a dokonce přeskočen znaků. V tématu [úpravy kódu - dokončených](editing-python-code-in-visual-studio.md#completions) podrobnosti.
 
 1. Přidejte trochu další kód tisknout kosinus hodnoty 360 stupňů:
 
@@ -97,7 +98,7 @@ Sice Průzkumníku řešení, kde budete spravovat soubory projektu, *editor* ok
 
 ## <a name="going-deeper"></a>Budete hlubší
 
-- [Úpravy kódu](code-editing.md)
-- [Formátování kódu](code-formatting.md)
-- [Refaktoring kódu](code-refactoring.md)
-- [Použití PyLintu](code-pylint.md)
+- [Úpravy kódu](editing-python-code-in-visual-studio.md)
+- [Formátování kódu](formatting-python-code.md)
+- [Refaktoring kódu](refactoring-python-code.md)
+- [Použití PyLintu](linting-python-code.md)

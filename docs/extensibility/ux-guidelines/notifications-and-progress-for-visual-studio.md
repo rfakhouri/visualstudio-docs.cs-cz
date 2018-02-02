@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0721d0080ec135a8e969cc420dfbb51e81ac4454
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Oznámení a postup pro sadu Visual Studio
 ##  <a name="BKMK_NotificationSystems"></a>Systémy oznámení  
@@ -238,8 +240,6 @@ ms.lasthandoff: 12/22/2017
   
  ![Informační panel uvnitř okna](../../extensibility/ux-guidelines/media/0903-06_infobarinwindow.png "0903 06_InfoBarInWindow")  
   
- **Informační panel uvnitř okna Analýza kódu**  
-  
 ##### <a name="inline"></a>Vložené  
  Vložené průběh indikace může být reprezentovaný jakýkoli z typů zavaděč průběh. Obvykle je indikátor průběhu spárován s zasílání zpráv, ale to není povinné.  
   
@@ -292,7 +292,7 @@ ms.lasthandoff: 12/22/2017
 ### <a name="overview"></a>Přehled  
  Infobars uživateli přidělit, slouží jako ukazatel blízko jejich bodu pozornost a pomocí ovládacího prvku sdílené informační panel zajišťuje konzistenci vzhled a interakce.  
   
- ![Informační panel](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904 01_Infobar")  
+ ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")  
   
  **Infobars v sadě Visual Studio**  
   
@@ -522,6 +522,6 @@ public interface IVsInfoBarUIEvents
 #### <a name="watermarks"></a>Vodoznaky  
  Celý ovládací prvek nebo okno, v některých případech je v chybovém stavu. V této situaci používá se k označení chyba vodoznak.  
   
- ![Vodoznak](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905 07_Watermark")  
+ ![Watermark](../../extensibility/ux-guidelines/media/0905-07_watermark.png "0905-07_Watermark")  
   
  **Ověření pole vodoznak**

@@ -4,21 +4,22 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.graphics.frameanalysis
-ms.assetid: 336c48ba-a1c4-4db9-b2a4-3de4a129cdd6
-caps.latest.revision: "9"
+f1_keywords:
+- vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d15e781445605eb1e236f177669c2fe8041d90d6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 Analýza grafických snímků použijte v sadě Visual Studio Graphics Analyzer k analýze a optimalizace výkonu vykreslování Direct3D – hry nebo aplikace.  
@@ -147,37 +148,32 @@ Analýza grafických snímků použijte v sadě Visual Studio Graphics Analyzer 
 ### <a name="gpu-counters"></a>Čítače GPU  
  Podpora pro čítače GPU hardwaru je závislé na hardwaru.  
   
- Vzhledem k tomu, že žádný počítač GPU aktuálně nabízená Intel, AMD nebo nVidia podporuje GPU hardwaru čítače spolehlivě, není analýza snímků shromažďování čítače z nich. Analýza snímků však shromažďování čítače hardwaru z těchto grafickými procesory, které je spolehlivě podporují:  
+ Vzhledem k tomu, že žádný počítač GPU aktuálně nabízená Intel, AMD nebo nVidia podporuje GPU hardwaru čítače spolehlivě, není analýza snímků shromažďování čítače z nich. Analýza snímků však shromažďování čítače hardwaru z následující grafický procesor, která je spolehlivě podporuje:  
   
--   Qualcomm SOCs, (všechny podporující Windows Phone)  
-  
--   nVidia T40 (Tegra4).  
+-   nVidia T40 (Tegra4)
   
  Žádné jiné platforma, která podporuje analýza snímků shromažďuje GPU hardwaru čítače.  
   
 > [!NOTE]
 >  Protože GPU hardwaru čítače jsou hardwarové prostředky, může trvat několik předává shromážděte kompletní sadu čítače hardwaru pro každý typ vykreslování variant. V důsledku toho neurčené pořadí, ve které GPU se shromažďují čítače.  
   
-### <a name="windows-phone"></a>Windows Phone  
- Časová razítka, NF pásmová dotazů a GPU hardwaru čítače jsou podporovány pouze na mobilní telefony Windows Phone, které byly původně dodány s Windows Phone 8.1 nebo Windows Phone 10. Analýza snímků vyžaduje tyto přehrání, že grafiky souboru protokolu. Mobilní telefony Windows Phone, které byly původně součástí Windows Phone 8 nepodporují analýza snímků, i pro mobilní telefony, které byly aktualizovány na Windows Phone 8.1 nebo Windows Phone 10.  
-  
 ## <a name="unsupported-scenarios"></a>Nepodporované scénáře  
  Některé z mnoha možností použití analýza snímků nejsou podporovány nebo jsou právě vhodné.  
-  
-### <a name="warp"></a>OSNOVA  
- Analýza snímků je určena pro použití profilu a zlepšíte výkon vykreslování na skutečné hardwaru. Analýza snímků systémem OSNOVĚ zařízení není zabránila – emulátoru Windows Phone běží v OSNOVĚ – ale není to obvykle smysl výkonu vzhledem k tomu, že systémem vyšší kategorie procesoru je nižší než i nejmenší podporující moderní grafickými procesory a může lišit v OSNOVĚ výkonu v závislosti na konkrétní zatížení procesoru výrazně je spuštěn na.  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Zaznamená přehrávání horní úrovni funkcí na zařízeních s nižší úrovně  
  V analyzátoru grafiky při přehrávání grafiky protokolového souboru, který používá vyšší úroveň funkce než počítače pro přehrávání podporuje, se automaticky vrátí k OSNOVĚ. V analýza snímků ji explicitně nepřecházely k OSNOVĚ a vygeneruje se chyba – je užitečné pro zkoumání správnost Direct3D – aplikace, ale ne pro zkoumání jeho výkon.  
   
 > [!NOTE]
->  I když je důležité problémy úrovni funkcí mějte na paměti, můžete zachytit a přehrání, že grafiky soubory protokolu na různé konfigurace hardwaru a zařízení. Například můžete zaznamenání grafických informací na Windows Phone a přehrání zpět na stolním počítači a naopak je také podporována. V obou případech může být přehráván protokol grafiky zpět, pokud není soubor protokolu obsahovat rozhraní API nebo použít funkci úrovně, které nejsou podporovány na počítače pro přehrávání.  
+>  I když je důležité problémy úrovni funkcí mějte na paměti, můžete zachytit a přehrání, že grafiky soubory protokolu na různé konfigurace hardwaru a zařízení. Protokol grafiky můžete přehrát zpět, pokud není soubor protokolu obsahovat rozhraní API nebo použít funkci úrovně, které nejsou podporovány na počítače pro přehrávání.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D – 10 a nižší  
  Pokud aplikace zavolá rozhraní API Direct3D – 10, nebude analýza snímků rozpoznat nebo je profil, i když jsou rozpoznána a používá další nástroje Analyzátor grafiky.
   
 > [!NOTE]
 >  To platí pouze pro rozhraní API Direct3D – volání, které používáte, není funkce úrovně.
+
+### <a name="warp"></a>OSNOVA  
+ Analýza snímků je určena pro použití profilu a zlepšíte výkon vykreslování na skutečné hardwaru. Analýza snímků systémem OSNOVĚ zařízení není zabránit, ale není obvykle smysl výkon protože systémem vyšší kategorie procesoru je nižší než i nejmenší podporující moderní grafickými procesory a protože OSNOVĚ výkonu může značně lišit v závislosti na konkrétní procesoru je spuštěn na.  
   
 ##  <a name="Variants"></a>Variant  
  Každé změně, která vytváří analýza snímků pro rámeček je vykreslen při přehrávání způsob je známý jako *variant*. Varianty, které hledá analýza snímků odpovídají na běžné, je poměrně snadné změny, které by mohly zvýšit ke zlepšení výkonu vykreslování nebo visual kvality aplikace – například zmenšení velikosti textury, pomocí textury komprese nebo povolení různé druhy vyhlazení. Variant přepsat obvyklé vykreslování kontextu a parametry vaší aplikace. Zde je souhrn:  
@@ -185,9 +181,9 @@ Analýza grafických snímků použijte v sadě Visual Studio Graphics Analyzer 
 |Variant|Popis|  
 |-------------|-----------------|  
 |**Velikosti zobrazovacího okna 1 × 1**|Snižuje dimenze zobrazení na všechny cíle vykreslování do 1 x 1 pixel.<br /><br /> Další informace najdete v tématu [Variant velikost zobrazení 1 × 1](1x1-viewport-size-variant.md)|  
-|**0 x MSAA**|Zakáže více ukázku vyhlazení (MSAA) na všechny cíle vykreslení.<br /><br /> Další informace najdete v tématu [0 x / 2 x / 4 x MSAA variant](0x-2x-4x-msaa-variants.md)|  
-|**2 x MSAA**|Umožňuje 2 x více ukázku vyhlazení (MSAA) na všechny cíle vykreslení.<br /><br /> Další informace najdete v tématu [0 x / 2 x / 4 x MSAA variant](0x-2x-4x-msaa-variants.md)|  
-|**4 x MSAA**|Umožňuje 4 x více ukázku vyhlazení (MSAA) na všechny cíle vykreslení.<br /><br /> Další informace najdete v tématu [0 x / 2 x / 4 x MSAA variant](0x-2x-4x-msaa-variants.md)|  
+|**0x MSAA**|Zakáže více ukázku vyhlazení (MSAA) na všechny cíle vykreslení.<br /><br /> Další informace najdete v tématu [0 x / 2 x / 4 x MSAA variant](0x-2x-4x-msaa-variants.md)|  
+|**2x MSAA**|Umožňuje 2 x více ukázku vyhlazení (MSAA) na všechny cíle vykreslení.<br /><br /> Další informace najdete v tématu [0 x / 2 x / 4 x MSAA variant](0x-2x-4x-msaa-variants.md)|  
+|**4x MSAA**|Umožňuje 4 x více ukázku vyhlazení (MSAA) na všechny cíle vykreslení.<br /><br /> Další informace najdete v tématu [0 x / 2 x / 4 x MSAA variant](0x-2x-4x-msaa-variants.md)|  
 |**Filtrování bodu textury**|Nastaví režim filtrování `DXD11_FILTER_MIN_MAG_MIP_POINT` (bodu texture filtrování) pro všechny příslušné texture vzorky.<br /><br /> Další informace najdete v tématu [bod, bilineární, Trilinear a volba Texture filtrování variant](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrování bilineární textury**|Nastaví režim filtrování `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (bilineární texture filtrování) pro všechny příslušné texture vzorky.<br /><br /> Další informace najdete v tématu [bod, bilineární, Trilinear a volba Texture filtrování variant](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Filtrování trilinear textury**|Nastaví režim filtrování `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (trilinear texture filtrování) pro všechny příslušné texture vzorky.<br /><br /> Další informace najdete v tématu [bod, bilineární, Trilinear a volba Texture filtrování variant](point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  

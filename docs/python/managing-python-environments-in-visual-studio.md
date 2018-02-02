@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 146e3f80de674e6219d1f7c89ea4186b66ee310f
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="python-environments"></a>Prostředí Python
 
@@ -122,7 +123,7 @@ Poskytuje základní informace a příkazy pro prostředí:
 | --- | --- |
 | Nastavit jako výchozí pro nové projekty toto prostředí | Nastaví active prostředí, které může způsobit, že Visual Studio se stručně přestane reagovat při načítání databázi IntelliSense. Prostředí s mnoha balíčky může být po delší dobu reagovat. |
 | Navštívit webovou stránku distributorovi | Otevře prohlížeč na adresu URL od distribuci jazyka Python. Python 3.x, například přejde k python.org. |
-| Otevřete okno interaktivní | Otevře se [interaktivních okna (REPL)](interactive-repl.md) pro toto prostředí v sadě Visual Studio použití žádné [spouštěcí skripty (viz níže)](#startup-scripts). |
+| Otevřete okno interaktivní | Otevře se [interaktivních okna (REPL)](python-interactive-repl-in-visual-studio.md) pro toto prostředí v sadě Visual Studio použití žádné [spouštěcí skripty (viz níže)](#startup-scripts). |
 | Prozkoumat interaktivní skripty | V tématu [spouštěcí skripty](#startup-scripts). |
 | Použití IPython interaktivním režimu | Pokud nastavíte, otevře se okno interaktivní s IPython ve výchozím nastavení. Tato povoleno vložené ukazuje zeměpisný a rozšířené syntaxe IPython například `name?` chcete zobrazit nápovědu a `!command` pro příkazy prostředí. Tato možnost se doporučuje při použití distribuci Anaconda, jako je vyžaduje další balíčky. Další informace najdete v tématu [pomocí IPython v okně interaktivní](interactive-repl-ipython.md). |
 | Otevřete v prostředí PowerShell | Spustí překladač v příkazové okno prostředí PowerShell. |
@@ -136,7 +137,7 @@ Spouštěcí skripty obsahovat kód, který interaktivních okna načte a spust�
 
 1. Při instalaci prostředí sady Visual Studio vytvoří složku `Documents\Visual Studio 2017\Python Scripts\<environment>` kde &lt;prostředí & gt "odpovídá názvu prostředí. Můžete snadno přejít do složky specifické pro prostředí s **prozkoumat interaktivní skripty** příkaz. Při spuštění interaktivních okna pro prostředí se načítá a spouští ať `.py` se zde nacházejí soubory v abecedním pořadí.
 
-1. **Skripty** řídit ve **nástroje > Možnosti > Python Tools > Interaktivní Windows** karta (najdete v části [možnosti interaktivního windows](options.md#interactive-windows-options)) slouží k určení dalších Složka pro spouštěcí skripty, které jsou načteny a spustit ve všech prostředích. Tato funkce se však v současné době nefunguje.
+1. **Skripty** řídit ve **nástroje > Možnosti > Python Tools > Interaktivní Windows** karta (najdete v části [možnosti interaktivního windows](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) slouží k určení dalších Složka pro spouštěcí skripty, které jsou načteny a spustit ve všech prostředích. Tato funkce se však v současné době nefunguje.
 
 ### <a name="configure-tab"></a>Karta Konfigurace
 
@@ -171,7 +172,7 @@ V takovém případě protože prostředí je umístěný v oblasti chráněnéh
 
 Výběr **vždy zvýšení oprávnění při instalaci nebo odebrání balíčků** dialogu zabraňuje zobrazování pro prostředí. Chcete-li se znovu zobrazí dialogové okno, přejděte na **nástroje > Možnosti > Python Tools > Obecné** a kliknutím na tlačítko, **resetovat všechny trvale skrytá dialogová okna**.
 
-V tom, že stejné možnosti kartě, můžete také vybrat **vždy spustit jako správce pip** o potlačení pro všechna prostředí. V tématu [možnosti - karta Obecné](options.md#general-options).
+V tom, že stejné možnosti kartě, můžete také vybrat **vždy spustit jako správce pip** o potlačení pro všechna prostředí. V tématu [možnosti - karta Obecné](python-support-options-and-settings-in-visual-studio.md#general-options).
 
 ### <a name="intellisense-tab"></a>Karta IntelliSense
 
@@ -231,7 +232,7 @@ Všimněte si, že jednou z nevýhod virtuální prostředí je, že budou obsah
 
 ## <a name="managing-required-packages-requirementstxt"></a>Správa požadované balíčky (requirements.txt)
 
-Pokud jste sdílení projektu s ostatními, použití systému sestavení nebo plánujete [publikování do služby Microsoft Azure](template-azure-cloud-service.md), je třeba zadat externí balíčky, které vyžaduje projekt. Doporučuje se používat [soubor requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) obsahující seznam příkazů pro pip, který nainstaluje požadované verze závislé balíčky.
+Pokud jste sdílení projektu s ostatními, použití systému sestavení nebo plánujete [publikování do služby Microsoft Azure](python-azure-cloud-service-project-template.md), je třeba zadat externí balíčky, které vyžaduje projekt. Doporučuje se používat [soubor requirements.txt](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) obsahující seznam příkazů pro pip, který nainstaluje požadované verze závislé balíčky.
 
 Technicky libovolný název souboru může sloužit k sledování požadavků (pomocí `-r <full path to file>` při instalaci balíčku), ale Visual Studio poskytuje konkrétní podporu pro `requirements.txt`:
 

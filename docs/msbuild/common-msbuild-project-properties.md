@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 01/18/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,16 +19,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-caps.latest.revision: "36"
+caps.latest.revision: 
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c70427c2dd1e2c7ceb071867b876750121445dde
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: 45e4e7c43b43fda63deb9008b35ccc4db4487cf8
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 V následující tabulce jsou uvedeny často používá vlastnosti, které jsou definovány v souborech projektu sady Visual Studio nebo součástí .TARGETS – soubory, které poskytuje nástroje MSBuild.  
@@ -71,7 +73,7 @@ V následující tabulce jsou uvedeny často používá vlastnosti, které jsou 
 |ExcludeDeploymentUrl|[Generatedeploymentmanifest – úloha](../msbuild/generatedeploymentmanifest-task.md) přidá deploymentProvider – značka manifestu nasazení, pokud projekt soubor obsahuje následující prvky:<br /><br /> -   UpdateUrl<br />-InstallUrl<br />-PublishUrl<br /><br /> Pomocí excludedeploymenturl –, ale můžete zabránit deploymentProvider – značka se přidává do manifestu nasazení, i když nejsou zadány žádné z výše uvedených adres URL. K tomu, přidejte do souboru projektu následující vlastnost:<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>`**Poznámka:** excludedeploymenturl – není vystavený v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE a lze nastavit pouze tak, že ručně upravíte soubor projektu. Nastavení této vlastnosti nemá vliv na publikování v rámci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; to znamená, deploymentProvider – značka stále přidá adresa URL zadaná PublishUrl.|  
 |FileAlignment|Určuje, v bajtech, kde chcete-li zarovnat na části výstupní soubor. Platné hodnoty jsou 512, 1024, 2048, 4096, 8192. Tato vlastnost je ekvivalentní `/filealignment` přepínače kompilátoru.|  
 |FrameworkPathOverride|Určuje umístění mscorlib.dll a souboru microsoft.visualbasic.dll. Tento parametr je ekvivalentní `/sdkpath` přepínače kompilátoru vbc.exe.|  
-|GenerateDocumentation|(Visual Basic .NET pouze) Parametr typu boolean, která určuje, zda dokumentace je generován sestavení. Pokud `true`, sestavení generuje dokumentaci informace a vloží ho do souboru .xml společně s název spustitelného souboru nebo knihovny, která sestavení úloha vytvořena.|
+|GenerateDocumentation|(Jenom Visual Basic) Parametr typu boolean, která určuje, zda dokumentace je generován sestavení. Pokud `true`, sestavení generuje dokumentaci informace a vloží ho do souboru .xml společně s název spustitelného souboru nebo knihovny, která sestavení úloha vytvořena.|
 |IntermediateOutputPath|Úplné zprostředkující výstupní cesta odvozené z `BaseIntermediateOutputPath`, pokud není zadána žádná cesta. Například \obj\debug\\. Pokud je tato vlastnost přepsána, potom nastavení `BaseIntermediateOutputPath` nemá žádný vliv.|  
 |KeyContainerName|Název kontejneru klíčů silného názvu.|  
 |KeyOriginatorFile|Název souboru klíče silného názvu.|  

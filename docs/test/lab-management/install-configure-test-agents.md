@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: configure test agents, test lab
+helpviewer_keywords:
+- configure test agents, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 495f14643245f17a2e7fcef1e21d2fc1fe978a46
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 5caa566e15f7f3c4c69f8d33a6c7dd0eead38785
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="install-and-configure-test-agents"></a>Instalace a konfigurace testovacích agentů
 
@@ -66,7 +68,7 @@ Tato instalační programy jsou k dispozici jako soubory ISO (virtuální disk C
 
 Odpověď: Ano, zde jsou kompatibilní a podporované kombinace:
 
-| SADY TFS | Nástroje Microsoft Test Manager s testovacím Center | Řadiče | Agent |
+| TFS | Nástroje Microsoft Test Manager s testovacím Center | Řadiče | Agent |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2015: upgrade z 2013 | 2013 | 2013 |2013 |
 | 2015: nové instalace | 2013 | 2013 | 2013 |
@@ -81,7 +83,7 @@ Následující tabulka uvádí scénáře podporované agenti pro Visual Studio 
 | Scénáře podporované agenti pro Visual Studio 2013 | Alternativní v sadě TFS a TS |
 | --- | --- |
 | Pracovního postupu sestavení-nasazení-testování v sadě Visual Studio | Uživatelé mohou používat [sestavení definice](https://www.visualstudio.com/team-services/continuous-integration/) (ne sestavení XAML) pro sestavení, nasazení a testovací scénáře v sadě TFS. |
-| Zatížení testování (testování výkonu) pomocí místní vzdáleného počítače | Použijte testovací řadiče a testovací agenty 2013 Update 5 ke spuštění zatížení testy na místě. [Další informace](https://msdn.microsoft.com/en-us/library/ff400223.aspx). |
+| Zatížení testování (testování výkonu) pomocí místní vzdáleného počítače | Použijte testovací řadiče a testovací agenty 2013 Update 5 ke spuštění zatížení testy na místě. [Další informace](https://msdn.microsoft.com/library/ff400223.aspx). |
 | Vzdálené spuštění automatizovaných testů z použití testovacího prostředí v nástroji Microsoft Test Manager | Aktuálně neexistuje žádné alternativní pro tento scénář. Doporučujeme použít úlohou pro spuštění funkčních testů v sestavení a verze definice (není v jazyce XAML sestavení) provést testy vzdáleně. |
 | Vývojáři provádění vzdáleného testů v sadě Visual Studio | Již není podporována. |
 

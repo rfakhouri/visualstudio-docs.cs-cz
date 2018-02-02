@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef6b3bddfb90c64872de331c988f10595e179eb8
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-6-working-with-git"></a>Krok 6: Práce s Gitem
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 01/22/2018
 
 Visual Studio poskytuje přímá integrace s místní úložiště Git a ty, které jsou umístěny na služby, jako je Githubu a Visual Studio Team Services. Integrace zahrnuje klonování úložiště, potvrzení změn a správa větve.
 
-Toto téma popisuje vytvoření místní úložiště Git pro existující projekt. Návod pro vytvoření projektu ze vzdáleného úložiště Git najdete v tématu [rychlý start: klonovat úložiště Python kódu v sadě Visual Studio](quickstart-03-project-from-repository.md).
+Toto téma popisuje vytvoření místní úložiště Git pro existující projekt. Návod pro vytvoření projektu ze vzdáleného úložiště Git najdete v tématu [rychlý start: klonovat úložiště Python kódu v sadě Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
 1. S otevřete v sadě Visual Studio, jako je například projekt z projektu [předchozího kroku](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md), klikněte pravým tlačítkem na řešení a vyberte **přidat řešení správy zdrojového kódu**. Visual Studio vytvoří místní úložiště Git, která obsahuje váš kód projektu a ovládací prvky související s Git zobrazí také zobrazí podél dolního okraje okna Visual Studio. Ovládací prvky zobrazení čekající na potvrzení, změny, název úložiště a větev. Podržte ukazatel nad ovládací prvky zobrazíte další informace.
 
@@ -66,6 +67,6 @@ Blahopřejeme k dokončení tohoto kurzu na Python v sadě Visual Studio. V tomt
 Tady prozkoumejte koncepty a návody, včetně následujících:
 
 - [Vytvoření rozšíření C++ pro Python](working-with-c-cpp-python-in-visual-studio.md)
-- [Publikování do služby Azure App Service](publishing-to-azure.md)
-- [Profilace](profiling.md)
-- [Testování jednotek](unit-testing.md)
+- [Publikování do služby Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [Profilace](profiling-python-code-in-visual-studio.md)
+- [Testování jednotek](unit-testing-python-in-visual-studio.md)

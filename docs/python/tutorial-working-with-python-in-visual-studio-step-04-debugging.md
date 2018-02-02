@@ -5,22 +5,23 @@ ms.custom:
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-python
+ms.technology:
+- devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6924f4a4b3c2f0b4319af14ab8518bf01eaab912
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 94ee933b80c92f18fcc47cb8cb8940b48bfe7fc7
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 
@@ -95,7 +96,7 @@ Kromě správy projektů, zajištění s formátováním úpravy prostředí a o
 
 1. Pokračovat v používání Krokovat s vnořením, dokud jste znovu partway do `make_dot_string`. Potom pomocí **Krokovat s Vystoupením** a Všimněte si, že se vrátíte na `for` smyčky. Ladicí program s Krokovat s Vystoupením, spustí zbytek funkce a automaticky pozastaví v volání kódu. To je velmi užitečné, když jste provedl některé část zdlouhavé funkce, kterou chcete ladit, ale nepotřebujete krok procházení zbytku a nebudete chtít nastavit explicitní zarážek v volání kódu.
 
-1. Chcete-li pokračovat, spuštění programu, dokud nebude dosaženo další zarážku, použijte **pokračovat** (F5). Vzhledem k tomu, že máte zarážky ve `for` smyčky, budete rozdělit na další iterace.
+1. Chcete-li pokračovat, spuštění programu, dokud nebude dosaženo další zarážku, použijte **pokračovat** (F5). Vzhledem k tomu, že máte zarážky ve `for` smyčky, rozdělit na další iterace.
 
 1. Procházení stovky iterace smyčky může to být zdlouhavé, takže Visual Studio můžete přidat *podmínku* k zarážky. Ladicí program pak pozastaví programu u zarážky jenom v případě, že je splněna podmínka. Například můžete použít podmínku se zarážkou na `for` prohlášení, které se pozastaví pouze při hodnotě `i` překračuje 1 600. Pokud chcete nastavit tuto podmínku, klikněte pravým tlačítkem na red zarážek tečky a vyberte **podmínky...** (Alt + F9, C). V **nastavení zarážek** překryvné okno zobrazené, zadejte `i > 1600` jako výraz a vyberte **Zavřít**. Stisknutím klávesy F5 pokračovat a pozorovat, že se program spouští mnoho iterací před koncem Další.
 
@@ -113,5 +114,5 @@ Kromě správy projektů, zajištění s formátováním úpravy prostředí a o
 
 ### <a name="going-deeper"></a>Budete hlubší
 
-- [Ladění](debugging.md).
+- [Ladění](debugging-python-in-visual-studio.md)
 - [Ladění v sadě Visual Studio](../debugger/debugger-feature-tour.md) poskytuje úplnou dokumentaci sady Visual Studio je ladění funkcí.

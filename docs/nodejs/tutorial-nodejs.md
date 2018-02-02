@@ -4,20 +4,23 @@ ms.custom:
 ms.date: 11/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 80822e4f323621a97beb453118d7e0836ae9ea92
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
+ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Začínáme s Node.js v sadě Visual Studio
 V tomto kurzu Node.js vývoj pomocí sady Visual Studio pro vytvoříte jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumat některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).  
@@ -25,7 +28,7 @@ V tomto kurzu Node.js vývoj pomocí sady Visual Studio pro vytvoříte jednoduc
 ## <a name="create-a-project"></a>Vytvoření projektu
 Nejdřív vytvoříte projekt Node.js webové aplikace.
 
-1. Otevřete Visual Studio 2017.  
+1. Open Visual Studio 2017.  
 
 2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .  
 
@@ -134,6 +137,8 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Klikněte na tlačítka pro zobrazení různých obrázků.
 
+    ![Aplikace spuštěná v prohlížeči](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+
 1. Otevřete okno interaktivní Node.js výběrem **zobrazení > ostatní okna > Node.js interaktivních okna**.
 
    ![Otevřete okno interaktivní Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
@@ -144,7 +149,7 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Zavřete webový prohlížeč.  
 
-## <a name="publish-to-azure-app-service"></a>Publikování do služby Azure App Service
+## <a name="optional-publish-to-azure-app-service"></a>(Volitelné) Publikování do služby Azure App Service
 
 1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**.
 

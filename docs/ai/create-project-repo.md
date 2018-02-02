@@ -34,7 +34,7 @@ Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), můž
 
     ![První výstup z programu Python MNIST](media\create-project-repo\tensorflow-mnist-running.png)
 
-> Pokud používáte Anaconda a dojde k chybě o chybějící numpy, budete muset změnit prostředí python, budete muset [změnit prostředí python používat Anaconda](https://docs.microsoft.com/visualstudio/python/python-environments) 
+> Pokud používáte Anaconda a dojde k chybě o chybějící numpy, budete muset změnit prostředí python, budete muset [změnit prostředí python používat Anaconda](../python/managing-python-environments-in-visual-studio.md)
 
 11. Můžete vizualizovat průběh s TensorBoard. Klikněte pravým tlačítkem na projekt a klikněte na tlačítko **spustit TensorBoard** poté vyberte adresář výstupu TensorBoard protokoly.
 

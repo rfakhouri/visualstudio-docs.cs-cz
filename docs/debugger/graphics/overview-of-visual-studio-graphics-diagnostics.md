@@ -4,23 +4,23 @@ ms.custom:
 ms.date: 02/09/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ddd429d9-ac70-4ac4-9e69-299c6ea2df09
-caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0fdc6c58f791c06d5f9287400d00bbfce2564e3b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8fb52530cf5a068081ce3af3325675d2167c57a9
+ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Přehled diagnostiky grafiky sady Visual Studio
-Visual Studio *diagnostiky grafiky* je sada nástrojů pro záznam a pak analýza vykreslování a výkonu problémům v Direct3D – aplikace. Diagnostika grafiky lze použít na aplikace, které běží místně na počítači s Windows v emulátoru Windows zařízení nebo na vzdálený počítač nebo zařízení.  
+Visual Studio *diagnostiky grafiky* je sada nástrojů pro záznam a pak analýza vykreslování a výkonu problémům v Direct3D – aplikace. Diagnostika grafiky lze použít na aplikace, které běží místně na vašem počítači s Windows nebo na vzdálený počítač nebo zařízení.  
   
 ## <a name="using-graphics-diagnostics-to-debug-rendering-problems"></a>Použití Diagnostiky grafiky k ladění problémů s vykreslováním  
  Ladění problémů s vykreslováním v aplikaci s bohatou grafikou není tak přímočaré jako spuštění ladicího programu a krokování kódu. V každém snímku jsou produkovány stovky tisíc jedinečných pixelů podle komplexní sady stavu, dat, parametrů a kódu. Z těchto pixelů může problém, který chcete diagnostikovat, vykazovat pouze několik málo pixelů. A aby věci byly ještě složitější, kód, který generuje každý pixel, je spouštěn na specializovaném hardwaru, který paralelně zpracovává stovky pixelů. Tradiční nástroje a techniky ladění, které je obtížné využít i v kódu s malým počtem vláken, jsou v případě velkého množství dat neúčinné.  
@@ -33,10 +33,7 @@ Visual Studio *diagnostiky grafiky* je sada nástrojů pro záznam a pak analýz
 ### <a name="windows-10-and-direct3d-12"></a>Windows 10 a Direct3D – 12  
  Windows 10 zavedená *Direct3D – 12*, které se podstatně liší od Direct3D – 10 a Direct3D 11. Tyto rozdíly navrácení DirectX zarovnaný moderní grafiky hardwaru a unleashing plný výkon, ale také uvést big změny rozhraní API a umístěte větší odpovědnost na programátorů ke správě prostředků životnosti a kolizí. Bez ohledu rozdíly udržuje diagnostiky grafiky s Direct3D – 12 parity funkcí s diagnostikou grafiky s Direct3D – 11.2.
   
- Windows 10 se také zachová podporu pro předchozí verze Direct3D – a hry a aplikace, které závisí na ně. Diagnostika grafiky v sadě Visual Studio i nadále podporuje Direct3D – 10 a 11 Direct3D – ve Windows 10, a také na Windows 8.1.  
-  
-### <a name="windows-81-and-direct3d-112"></a>Windows 8.1 a Direct3D 11.2  
- V [!INCLUDE[win81](../includes/win81_md.md)], DirectX 11.2 zavádí nové funkce, které zahrnují podporu pro zaznamenání grafických informací prostřednictvím jeho runtime. [!INCLUDE[win81](../includes/win81_md.md)]používá nové zachytávání založených na prostředí runtime – označuje jako *robustní zachycení*– výhradně pro všechny verze rozhraní DirectX, [!INCLUDE[win81](../includes/win81_md.md)] podporuje. Robustní zachycení také podporuje nové funkce Direct3D – 11.2.  
+ Windows 10 se také zachová podporu pro předchozí verze Direct3D – a hry a aplikace, které závisí na ně. Diagnostika grafiky v sadě Visual Studio i nadále podporuje Direct3D – 10 a 11 Direct3D – ve Windows 10.
   
 ### <a name="limited-direct2d-support"></a>Omezená podpora rozhraní Direct2D  
  Protože Direct2D uživatelského režimu rozhraní API, které je postavená na Direct3D, můžete diagnostiky grafiky pomáhají ladit vykreslování problémy s aplikací, které používají Direct2D. Protože jsou však zaznamenány pouze základní události rozhraní Direct3D namísto událostí rozhraní Direct2D na vyšší úrovni, události Direct2D se na seznamu událostí grafiky nezobrazí. A protože vztah mezi událostmi rozhraní Direct2D a výslednými událostmi rozhraní Direct3D není vždy jasný, použití Diagnostiky grafiky k ladění problémů s vykreslováním v aplikacích, které používají Direct2D, není vždy přímočaré. Nadále můžete Diagnostiku grafiky použít k získání informací o problémech s vykreslováním na nízké úrovni v aplikacích, které používají rozhraní Direct2D.  
@@ -126,4 +123,4 @@ Visual Studio *diagnostiky grafiky* je sada nástrojů pro záznam a pak analýz
   
 ## <a name="see-also"></a>Viz také  
  [Nástroj příkazového řádku zachycení](command-line-capture-tool.md)   
- [Ladicí program HLSL](hlsl-shader-debugger.md)
+ [HLSL Debugger](hlsl-shader-debugger.md)
