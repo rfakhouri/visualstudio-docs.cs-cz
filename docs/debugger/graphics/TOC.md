@@ -30,7 +30,6 @@
 ## [Návod: Ladění chyb při vykreslování způsobených stínováním](walkthrough-debugging-rendering-errors-due-to-shading.md)
 ## [Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
 ## [Postupy: Změna počítače pro přehrávání diagnostiky grafiky](how-to-change-the-graphics-diagnostics-playback-machine.md)
-## [Postupy: Použití diagnostiky grafiky se zařízením ARM](how-to-use-graphics-diagnostics-with-an-arm-device.md)
 # [Referenční dokumentace (zachytávání prostřednictvím kódu programu)](reference-programmatic-capture.md)
 ## [Třída VsgDbg](vsgdbg-class.md)
 ### [VsgDbg::VsgDbg (konstruktor)](vsgdbg-vsgdbg-constructor.md)

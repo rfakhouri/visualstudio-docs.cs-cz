@@ -24,7 +24,7 @@
 ## Node.js
 ### [Publikování na webu Azure pomocí Nasazení webu](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
 ## Python
-### [Publikování do Azure App Service](/visualstudio/python/publishing-to-azure)
+### [Publikování do Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
 # Návody
 ## [ClickOnce – zabezpečení a nasazení](clickonce-security-and-deployment.md)
 ### [Výběr strategie nasazení ClickOnce](choosing-a-clickonce-deployment-strategy.md)
