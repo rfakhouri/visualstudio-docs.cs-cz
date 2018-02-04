@@ -14,11 +14,11 @@ ms.author: phillee
 manager: sacalla
 ms.workload:
 - multiple
-ms.openlocfilehash: 6db5de6156472e1374075cb602f7ecabc92526e2
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: d8e99965867d5dbc2710d6c56c5b3dc90fc16dc8
+ms.sourcegitcommit: 4b4027244b8de25e30b533148804b87321d3e8a6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a id="top"></a> Bitové kopie sady visual Studio na platformě Azure
 Pomocí sady Visual Studio spuštěné v předkonfigurované Azure virtuálního počítače (VM) je nejjednodušší a nejrychlejší způsob, jak přechod od nic k prostředí vývoj nahoru a spuštěna.  Bitové kopie systému s různými konfiguracemi sady Visual Studio jsou k dispozici v [Azure Marketplace](https://portal.azure.com/). Stačí spustit virtuální počítač a vypnout můžete přejít.
@@ -26,14 +26,14 @@ Pomocí sady Visual Studio spuštěné v předkonfigurované Azure virtuálního
 Nové do Azure? [Vytvořit bezplatný účet Azure](https://azure.microsoft.com/free).
 
 ## <a name="what-configurations-and-versions-are-available"></a>Jaké konfigurace a verzí jsou k dispozici?
-V Azure Marketplace najít Image pro nejnovější hlavní verze: Visual Studio 2017 a Visual Studio 2015.  Pro každou hlavní verzi, uvidíte původně vydaná (neboli "RTW') verze a"nejnovější"aktualizovaných verzí.  Pro každý z těchto různé verze najít edice Visual Studio Enterprise a Visual Studio Community.
+V Azure Marketplace vyhledejte bitové kopie pro nejnovější hlavní verze: Visual Studio 2017 a Visual Studio 2015.  Pro každou hlavní verzi uvidíte původně vydaná (také známa jako Verze 'RTW') a "nejnovější" aktualizovaných verzí.  Pro každý z těchto různé verze najít edice Visual Studio Enterprise a Visual Studio Community.  Tyto Image aktualizujeme zahrnout nejnovější aktualizace Visual Studio a Windows nejméně každý měsíc.  Při názvy imagí zůstávají stejné, obsahuje popis každé bitové kopie verze nainstalovaného produktu a k datu image.
 
-|               Prodejní verze              |        Edice      |    Verze produktu    |
-|:------------------------------------------:|:---------------------:|:---------------------:|
-| Visual Studio 2017 - nejnovější (verze 15,5) | Enterprise, Community |     Verze 15.5.3    |
-|         Visual Studio 2017 - RTW           | Enterprise, Community |     Verze 15.0.7    |
-|   Visual Studio 2015 – nejnovější (Update 3)   | Enterprise, Community | Verze 14.0.25431.01 |
-|         Visual Studio 2015 - RTW           | Žádné           |    Platnost pro obsluhu          |
+|               Prodejní verze              |        Edice       |     Verze produktu     |
+|:------------------------------------------:|:---------------------:|:-----------------------:|
+| Visual Studio 2017 - nejnovější (verze 15,5) | Enterprise, Community |      Verze 15.5.3     |
+|         Visual Studio 2017 - RTW           | Enterprise, Community |      Verze 15.0.7     |
+|   Visual Studio 2015 – nejnovější (Update 3)   | Enterprise, Community |  Verze 14.0.25431.01  |
+|         Visual Studio 2015 - RTW           |         Žádné          | (Jeho platnost pro obsluhu) |
 
 > [!NOTE]
 > V souladu s Microsoft obsluhy zásady, původně vydaná (neboli "RTW') verze sady Visual Studio 2015 vypršela pro obsluhu.  Visual Studio 2015 Update 3 je proto jenom zbývající verze nabízí pro produktovou řadu sady Visual Studio 2015.
@@ -66,7 +66,17 @@ Toto je příkazového řádku, který používáme k instalaci sady Visual Stud
 Pokud obrázky neobsahují funkce sady Visual Studio, kterou požadujete, zadejte tuto zpětnou vazbu prostřednictvím nástroje zpětnou vazbu (pravém horním rohu stránky).
 
 ## <a name="what-size-vm-should-i-choose"></a>Zvolte jakou velikost virtuálního počítače
-Zajištění nového virtuálního počítače je snadné a Azure nabízí celou řadu velikostí virtuálních počítačů.  Stejně jako u jakékoli hardwaru akvizice, budete chtít vyvážit výkonu a nákladů.  Vzhledem k tomu, že Visual Studio je výkonný vícevláknové aplikace, budete chtít velikost virtuálního počítače, který obsahuje alespoň dva procesory a 7 GB paměti.  Další informace o nejnovější velikosti počítačů najdete v tématu [velikosti pro systém Windows virtuálních počítačů v Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes).
+Zajištění nového virtuálního počítače je snadné a Azure nabízí celou řadu velikostí virtuálních počítačů.  Stejně jako u jakékoli hardwaru akvizice, budete chtít vyvážit výkonu a nákladů.  Vzhledem k tomu, že Visual Studio je výkonný vícevláknové aplikace, budete chtít velikost virtuálního počítače, který zahrnuje nejméně 2 procesory a 7 GB paměti. V Azure, který překládá do alespoň tyto velikosti virtuálních počítačů:
+
+   * Standard_D2_v3
+   * Standard_D2s_v3
+   * Standard_D4_v3
+   * Standard_D4s_v3
+   * Standard_D2_v2
+   * Standard_D2S_v2
+   * Standard_D3_v2
+
+Další informace o nejnovější velikosti počítačů najdete v tématu [velikosti pro systém Windows virtuálních počítačů v Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes).
 
 S Azure není neměnné vaše první vybrat – počáteční volbu můžete znovu vyvážit, změna velikosti virtuálního počítače.  Buď můžete zřídit nový virtuální počítač s více odpovídající velikost, nebo můžete změnit velikost vašeho stávajícího virtuálního počítače na jiný základní hardware.  Další informace najdete v tématu [Změna velikosti virtuálního počítače Windows](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/resize-vm).
 
