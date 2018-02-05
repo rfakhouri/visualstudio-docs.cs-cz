@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - bind method [JavaScript]
 - this object [JavaScript]
 ms.assetid: f608f95b-3b9d-437a-a67a-5a4ef8f6c07f
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c49f6e8c5606845f41cc947029ac9405f97665f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d185801cc5bba355751147edb79b9c47d21f8eed
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="using-the-bind-method-javascript"></a>Používání metody bind (JavaScript)
 Jazyk JavaScript `bind` metoda má několik použití. Obvykle se používá k zachování kontextu spuštění pro funkci, která se spouští v jiném kontextu. `bind`Vytvoří novou funkci, která má stejný text jako původní funkce. První argument předaný `bind` Určuje hodnotu `this` – klíčové slovo v svázané funkce. Můžete také předat dalších, volitelných argumentů pro `bind`. Příklady dalších používá, najdete v článku [bind – metoda (Function)](../../javascript/reference/bind-method-function-javascript.md). Příklad použití `bind` částečně funkce, přečtěte si téma [asynchronní programování vzory a tipy v jazyce JavaScript Hilo (pro Windows Store)](http://msdn.microsoft.com/library/windows/apps/jj649740.aspx).  
@@ -59,8 +60,7 @@ function dataReadyHandler() {
 setTimeout(function () {  
     data = [0, 1, 2, 3];  
     document.dispatchEvent(dataReadyEvent);  
-    }, 5000);  
-}  
+    }, 5000);
   
 var dataObj = new DataObject();  
   
@@ -70,7 +70,7 @@ var dataObj = new DataObject();
   
 ```  
   
- Pokud můžete Zakomentovat řádek kódu, který používá `bind`, zrušte komentář u řádku kódu, který volá `addEventListener` bez `bind`a poté znovu spusťte kód, `dataReadyHandler` funkce selže. Například v `dataReadyHander`, `this.name` nedefinované, a `this.data()` způsobí chybu, protože `this` objektu už odkazuje na datový objekt.  
+ Pokud můžete Zakomentovat řádek kódu, který používá `bind`, zrušte komentář u řádku kódu, který volá `addEventListener` bez `bind`a poté znovu spusťte kód, `dataReadyHandler` funkce selže. Například v `dataReadyHandler`, `this.name` nedefinované, a `this.data()` způsobí chybu, protože `this` objektu už odkazuje na datový objekt.  
   
 ## <a name="see-also"></a>Viz také  
- [BIND – metoda (Function)](../../javascript/reference/bind-method-function-javascript.md)
+ [bind – metoda (Function)](../../javascript/reference/bind-method-function-javascript.md)

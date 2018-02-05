@@ -5,25 +5,26 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: language-reference
-f1_keywords: sort
+f1_keywords:
+- sort
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
-helpviewer_keywords: Sort method
-ms.assetid: 9bd8b54a-c838-4806-85c8-62eebe6bc48c
-caps.latest.revision: "15"
+helpviewer_keywords:
+- Sort method
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d098b47591ca7bbb4e3e8da5e5c14f8c0e9b255
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 0462e60e623b99af458beb61eb7ef4215fe8ef41
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="sort-method-array-javascript"></a>sort – metoda (Pole) (JavaScript)
 Řazení `Array`.  
@@ -48,13 +49,13 @@ arrayobj.sort(sortFunction)
 ## <a name="remarks"></a>Poznámky  
  `sort` Metoda řazení `Array` objekt přímo; ne nové `Array` objekt se vytvoří během provádění.  
   
- Pokud zadáte funkce při `sortFunction` argument, musí vracet jednu z následujících hodnot:  
+ `sortFunction`přebírá dva argumenty a musí vrátit jednu z následujících hodnot:  
   
--   Záporná, pokud je první argument předaný menší než druhý argument.  
+-   Záporná (je menší než 0.) Pokud první argument předaný je menší než druhý argument.  První argument je řazen dolní index.
   
--   Nula, pokud odpovídají dva argumenty.  
+-   Nula (0), pokud odpovídají dva argumenty.  Dva argumenty jsou seřazeny s ohledem na další prvky v poli, nikoli však s ohledem na sebe navzájem.
   
--   Kladná hodnota, pokud první argument je větší než druhý argument.  
+-   Kladnou hodnotu (větší než 0.) Pokud první argument je větší než druhý argument.  Druhý argument je řazen dolní index.
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje způsob použití `sort` metoda.  

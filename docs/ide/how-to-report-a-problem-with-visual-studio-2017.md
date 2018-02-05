@@ -11,12 +11,13 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.workload: multiple
-ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ec4618e254a84e6ae0c90b96a4e5a1780b234fbd
+ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Postup nahlásit problém s Visual Studio 2017
 Pokud dojde k potížím s Visual Studio, chceme vědět o něm. Chcete-li nahlásit problém tak, aby jsme diagnostikovat a opravit.  
@@ -24,8 +25,9 @@ Pokud dojde k potížím s Visual Studio, chceme vědět o něm. Chcete-li nahl�
 ## <a name="sign-in-to-visual-studio"></a>Přihlaste se k sadě Visual Studio
 Pokud jste tak již neučinili, přihlaste k sadě Visual Studio před nahlásit problém. Tímto způsobem můžete na něm ohlásit problém, který se má a také hlasovat nebo nastavte jako komentář. Můžete dokonce hlasovat nebo komentář na jiný problém, který se zobrazí příliš odeslány.
 
-1.  Klikněte na tlačítko **přihlásit**; je na pravé straně nástroje, jak je znázorněno na následujícím snímku obrazovky.
-2.  Postupujte podle pokynů na obrazovce přihlášení.
+1.  V sadě Visual Studio, vyberte **pomoci** > **odeslat zpětnou vazbu** > **nahlásit problém**.
+2.  V případě potřeby vyberte **přihlásit**; je na pravé straně nástroje, jak je znázorněno na následujícím snímku obrazovky.
+3.  Postupujte podle pokynů na obrazovce přihlášení.
 
  ![Přihlaste se k nahlásit problém](../ide/media/sign-in-new-ux.png "Přihlaste se k nahlásit problém")  
 
