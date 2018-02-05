@@ -39,6 +39,7 @@
 ### Odkaz
 #### [ID úloh a komponent sady Visual Studio](install/workload-and-component-ids.md)
 #### [Čísla sestavení a data vydání sady Visual Studio](install/visual-studio-build-numbers-and-release-dates.md)
+## [Použití sady Visual Studio z virtuálního počítače Azure](install/using-visual-studio-vm.md)
 ## [Instalace Build Tools do kontejneru](install/build-tools-container.md)
 ### [Rozšířený příklad pro kontejnery](install/advanced-build-tools-container.md)
 ### [Známé problémy s kontejnery](install/build-tools-container-issues.md)
