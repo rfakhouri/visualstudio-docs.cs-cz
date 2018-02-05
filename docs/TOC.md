@@ -1,5 +1,6 @@
 # [Dokumentace k Visual Studiu](ide/index.md)
 # [Přehled](ide/visual-studio-ide.md)
+## [Co je nového](ide/whats-new-in-visual-studio.md)
 # Instalace
 ## [Instalace sady Visual Studio](install/install-visual-studio.md)
 ## [Přihlášení k sadě Visual Studio](ide/signing-in-to-visual-studio.md)
@@ -309,8 +310,7 @@
 #### [Třídy pro globální model Windows Forms a webové formuláře specifické pro jazykovou verzi](ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)
 ### [Vytváření aplikací v obousměrných jazycích](ide/creating-applications-in-bi-directional-languages.md)
 # Odkaz
-## [Co je nového](ide/whats-new-in-visual-studio.md)
-### Šablony projektů a položek
+## Šablony projektů a položek
 ### [Parametry šablony](ide/template-parameters.md)
 ### [Odkaz na schéma šablony (rozšiřitelnost)](extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default)
 ## Obecné prvky uživatelského rozhraní
