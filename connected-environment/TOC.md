@@ -14,7 +14,10 @@
 ###[1. Instalace nástrojů](get-started-netcore-visualstudio-01.md)
 ###[2. Vytvoření webové aplikace na platformě ASP.NET](get-started-netcore-visualstudio-02.md)
 ###[3. Vytvoření vývojového prostředí v Azure](get-started-netcore-visualstudio-03.md)
-###[4. Ladění aplikace](get-started-netcore-visualstudio-04.md)
+###[4. Ladění kontejneru v Kubernetes](get-started-netcore-visualstudio-04.md)
+###[5. Volání jiného kontejneru](get-started-netcore-visualstudio-05.md)
+###[6. Vývoj v týmu](get-started-netcore-visualstudio-06.md)
+###[7. Souhrn](get-started-netcore-visualstudio-07.md)
 
 ##[Node.js (VS Code a rozhraní příkazového řádku)](get-started-nodejs-01.md)
 ###[1. Instalace nástrojů](get-started-nodejs-01.md)
