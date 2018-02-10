@@ -4,22 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: "38"
-author: alexhomer1
-ms.author: ahomer
-manager: douge
-ms.workload: multiple
-ms.openlocfilehash: af3df828a2abc441ce2efb3998b10fb1991e3127
-ms.sourcegitcommit: 11740fed01cc602252ef698aaa11c07987b00570
-ms.translationtype: HT
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 5a8f1a2ff8e5ffc95d885b847a17e6cc16965837
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Přidání příkazů a gest do diagramů závislostí
 Můžete definovat příkazy nabídky kontextu a gesty obslužné rutiny v diagramech závislosti v sadě Visual Studio. Tato rozšíření můžete balíček do Visual Studio integrace rozšíření (VSIX), které můžete distribuovat jiným uživatelům v sadě Visual Studio.  
@@ -89,12 +88,12 @@ Můžete definovat příkazy nabídky kontextu a gesty obslužné rutiny v diagr
   
 |**Referenční informace**|**Co můžete udělat**|  
 |-------------------|------------------------------------|  
-|Program Files\Microsoft Visual Studio [verze] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Vytvářet a upravovat vrstev.|  
+|Program Files\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Vytvářet a upravovat vrstev.|  
 |Microsoft.VisualStudio.Uml.Interfaces|Vytvářet a upravovat vrstev.|  
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Upravit obrazce v diagramech|  
 |System.ComponentModel.Composition|Definování komponent pomocí Managed Extensibility Framework (MEF)|  
-|Microsoft.VisualStudio.Modeling.Sdk. [verze]|Definujte rozšíření modelování|  
-|Microsoft.VisualStudio.Modeling.Sdk.Diagrams. [verze]|Aktualizace tvarů a diagramy|  
+|Microsoft.VisualStudio.Modeling.Sdk.[version]|Definujte rozšíření modelování|  
+|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Aktualizace tvarů a diagramy|  
   
 1.  Upravte soubor – třída v C# projektu knihovny tříd obsahuje kód pro rozšíření. Další informace najdete v jednom z následujících částí:  
   

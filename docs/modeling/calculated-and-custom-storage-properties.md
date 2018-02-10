@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, programming domain properties
+helpviewer_keywords:
+- Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3d8749e87a25cc9243cf7e76a99b027975673ab4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Vypočtené a vlastní vlastnosti úložiště
 Všechny vlastnosti domény v jazyce specifické pro doménu (DSL) lze zobrazit uživateli v diagramu a v Průzkumníku váš jazyk a je přístupný pomocí kódu programu. Vlastnosti se však lišit ve způsobu, jakým jsou uložena jejich hodnoty.  
@@ -23,7 +25,7 @@ Všechny vlastnosti domény v jazyce specifické pro doménu (DSL) lze zobrazit 
 ## <a name="kinds-of-domain-properties"></a>Druhy vlastnosti domény  
  V definici DSL, můžete nastavit **druh** vlastnosti domény, jak je uvedeno v následující tabulce:  
   
-|Typ vlastnosti domény|Popis|  
+|Domain Property Kind|Popis|  
 |--------------------------|-----------------|  
 |**Standardní** (výchozí)|Vlastnost domain, který je uložený v *ukládání* a serializovaných do souboru.|  
 |**Vypočítat**|Vlastnost domény jen pro čtení, není uložen v úložišti, která je vypočtená z jiných hodnot.<br /><br /> Například `Person.Age` vypočítat, z `Person.BirthDate`.<br /><br /> Je nutné zadat kód, který provádí výpočet. Obvykle vypočítat hodnotu od dalších vlastností domény. Můžete však také používat externí prostředky.|  

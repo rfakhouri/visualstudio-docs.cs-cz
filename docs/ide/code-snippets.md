@@ -5,32 +5,43 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.ExpansionManagerImport
 - vs.codesnippetmanager
 helpviewer_keywords:
-- code snippets, replacement parameters
-- code snippets, surround with
-- replacement parameters
-- code snippets, expansion
 - surround with
 - code snippets
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- CSharp
+- VB
+- CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 32aded825454ce53193d488c01e3aad70d9032f8
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 514408ff2dbbde12d243a1458c380a2e17b516cc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="code-snippets"></a>Fragmenty kódu
 
-Fragmenty kódu jsou malé bloky opakovaně použitelný kód, který lze vložit do souboru kódu s použitím příkazu nabídky kontext nebo kombinace klávesových zkratek. Obvykle obsahují bloky kódu se často používá jako je například try-finally – nebo if-else bloky, ale slouží k vložení celé třídy nebo metody.
+Fragmenty kódu jsou malé bloky opakovaně použitelný kód, který lze vložit do souboru kódu s použitím příkazu nabídky kontext nebo kombinace klávesových zkratek. Obvykle obsahují bloky kódu se často používá jako `try-finally` nebo `if-else` bloky, ale slouží k vložení celé třídy nebo metody.
+
+Fragmenty kódu jsou k dispozici pro různé jazyky, včetně C#, C++, Visual Basic, XML a T-SQL, a další. Chcete-li zobrazit všechny dostupné nainstalované fragmenty kódu pro jazyk, otevřete **Správce fragmentů kódu** z **nástroje** nabídky v sadě Visual Studio a zvolte jazyk, z rozevírací nabídky v horní části.
+
+![Dialogové okno Správce fragmentů kódu](media/code-snippets-manager.png)
+
+Fragmenty kódu jsou přístupné obecné takto:
+
+- Na řádku nabídek zvolte **upravit** > **IntelliSense** > **Vložit fragment...**
+
+- V nabídce klikněte pravým tlačítkem nebo kontextu v editoru kódu, zvolte **fragment kódu** > **Vložit fragment...**
+
+- Pomocí klávesnice, stiskněte klávesu **Ctrl**+**tisíc**+**X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Rozšíření fragmenty a obklopit fragmenty
 
@@ -49,9 +60,9 @@ finally
 }
 ```
 
-Kliknutím můžete vložit tento fragment kódu **Vložit fragment** v místní nabídce okně kódu, pak **Visual C#**, pak zadejte `tryf`a potom stiskněte klávesu **kartě**, nebo můžete můžete zadat `tryf` a stiskněte klávesu **kartě** dvakrát.
+Kliknutím můžete vložit tento fragment kódu **Vložit fragment** v místní nabídce okně kódu, pak **Visual C#**, pak zadejte `tryf`a potom stiskněte klávesu **kartě**. Nebo můžete zadat `tryf` a stiskněte klávesu **kartě** dvakrát.
 
-Příkladem fragment obklopit: v jazyce C++ zástupce `if` lze použít jako fragment vložení nebo jako fragment obklopit. Pokud vyberete řádek kódu (například `return FALSE;`) a potom klikněte na **příkazu Obklopit s**, pak **Pokud**, fragmentu je rozšířena kolem řádku:
+Příkladem fragment obklopit: v jazyce C++ zástupce `if` lze použít jako fragment vložení nebo jako fragment obklopit. Pokud vyberete řádek kódu (například `return FALSE;`) a potom zvolte **příkazu Obklopit s** > **Pokud**, fragmentu je rozšířena kolem řádku:
 
 ```cpp
 if (true)
@@ -64,7 +75,11 @@ if (true)
 
 Fragmenty kódu může obsahovat nahrazující parametry, které jsou zástupné symboly, které je třeba nahradit podle přesné kód, který vytváříte. V předchozím příkladu `true` je parametr nahrazení, který by nahraďte vhodné podmínky. Nahrazení, které se opakuje pro každou instanci parametr nahrazení v tomto fragmentu kódu.
 
-Například v jazyce Visual Basic není fragment kódu, která vloží vlastnost. Klikněte na tlačítko **Vložit fragment** v místní nabídce okně kódu, pak **kódu, které vypadají**, pak **vlastnosti, postupy, události**, pak zadejte vlastnosti. Následující kód je vložen:
+Například v jazyce Visual Basic není fragment kódu, která vloží vlastnost. Chcete-li vložit fragment, zvolte **fragment kódu...**   >  **Vložit fragment** v nabídce klikněte pravým tlačítkem nebo kontextu v souboru kódu jazyka Visual Basic. Pak zvolte **kódu, které vypadají** > **vlastnosti, postupy, události** > **definovat vlastnost**.
+
+![Nabídka fragmentu kódu pro definování vlastnosti](media/code-snippets-vb-property.png)
+
+Následující kód je vložen:
 
 ```vb
 Private newPropertyValue As String
@@ -80,18 +95,12 @@ End Property
 
 Pokud změníte `newPropertyValue` k `m_property`, pak všechny instance řetězce `newPropertyValue` se změnilo. Pokud změníte `String` k `Int` v deklarace vlastnosti pak hodnota v set se také změní na `Int`.
 
-## <a name="code-snippet-manager"></a>Správce fragmentů kódu
-
-Zobrazí se všechny fragmenty kódu, které jsou aktuálně nainstalovány a jejich umístění na disku, výběrem **nástroje**, **Správce fragmentů kódu**. Fragmenty kódu jsou zobrazeny podle jazyka.
-
-Můžete přidávat a odebírat fragment kódu adresářů pomocí **přidat** a **odebrat** tlačítka v **Správce fragmentů kódu** dialogové okno. Chcete-li přidat jednotlivé fragmenty kódu, použijte **Import** tlačítko.
-
 ## <a name="see-also"></a>Viz také
 
 [Návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md)  
-[Postupy: Distribuce fragmentů kódu](../ide/how-to-distribute-code-snippets.md)  
-[Doporučené postupy pro používání fragmentů kódu](../ide/best-practices-for-using-code-snippets.md)  
+[Postupy: distribuce fragmentů kódu](../ide/how-to-distribute-code-snippets.md)  
+[Osvědčené postupy pro používání fragmentů kódu](../ide/best-practices-for-using-code-snippets.md)  
 [Řešení potíží s fragmenty kódu](../ide/troubleshooting-snippets.md)  
 [Fragmenty kódu v C#](../ide/visual-csharp-code-snippets.md)  
-[Fragmenty kódu v jazyce Visual C#](../ide/visual-cpp-code-snippets.md)  
+[Fragmenty kódu Visual C++](../ide/visual-cpp-code-snippets.md)  
 [Fragmenty kódu – odkaz schématu](../ide/code-snippets-schema-reference.md)

@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,22 +16,23 @@ helpviewer_keywords:
 - Item Element [MSBuild]
 - <Item> Element [MSBuild]
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e4feedb6f32b1d1fb03ef51468eb50ef1a0aa7a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="item-element-msbuild"></a>Item – prvek (MSBuild)
 Obsahuje uživatelem definovanou položku a jeho metadata. Každá položka, která se používá v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musí být zadány jako podřízená položka `ItemGroup` elementu.  
 
- \<Projekt >  
- \<ItemGroup >  
+ \<Project>  
+ \<ItemGroup>  
  \<Položka >  
 
 ## <a name="syntax"></a>Syntaxe  
@@ -87,7 +88,7 @@ Teď však můžete předat `Version` metadat jako atribut, například v násle
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Itemmetadata –](../msbuild/itemmetadata-element-msbuild.md)|Klíč metadata uživatelem definovanou položku, který obsahuje hodnotu položky metadat. Může být nula nebo více `ItemMetadata` elementů v položku.|  
+|[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Klíč metadata uživatelem definovanou položku, který obsahuje hodnotu položky metadat. Může být nula nebo více `ItemMetadata` elementů v položku.|  
 
 ### <a name="parent-elements"></a>Nadřazené elementy  
 

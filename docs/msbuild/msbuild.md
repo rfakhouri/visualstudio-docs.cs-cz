@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: "59"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e12ce40375bbd4c24cde8fe3bf3e06d268aa1c20
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- multiple
+ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Je platforma pro vytváření aplikací. Tento modul, který je také označován jako MSBuild, poskytuje schéma XML pro soubor projektu, který určuje, jak platformy sestavení zpracuje a vytvoří softwaru. Visual Studio použije nástroje MSBuild, ale není závisí na sadě Visual Studio. Vyvoláním msbuild.exe v souboru projektu nebo řešení můžete orchestraci a sestavení produkty v prostředích, kde není nainstalovaná sada Visual Studio.  
@@ -87,7 +88,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 >  Před stažením projektu určete důvěryhodnosti kódu.  
   
 ##  <a name="BKMK_ProjectFile"></a>Soubor projektu  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]používá formát souborů projektu na základě XML, který je snadný a rozšiřitelný. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Formát souboru projektu umožňuje vývojářům popisují položky, které se má být sestaven, a také způsob jejich má být sestaven pro jiné operační systémy a konfigurace. Kromě toho formát souboru projektu umožňuje vývojářům vytvořit opakovaně použitelný sestavení pravidla, která může být rozdělen do samostatné soubory tak, že sestavení můžete provedeny konzistentně napříč různé projekty v rámci produktu.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používá formát souborů projektu na základě XML, který je snadný a rozšiřitelný. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Formát souboru projektu umožňuje vývojářům popisují položky, které se má být sestaven, a také způsob jejich má být sestaven pro jiné operační systémy a konfigurace. Kromě toho formát souboru projektu umožňuje vývojářům vytvořit opakovaně použitelný sestavení pravidla, která může být rozdělen do samostatné soubory tak, že sestavení můžete provedeny konzistentně napříč různé projekty v rámci produktu.  
   
  Následující části popisují některé základní prvky [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát souboru projektu. Kurz o tom, jak vytvořit základní projekt soubor, najdete v části [návod: vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
@@ -140,7 +141,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Logika spuštění úlohy je zapsané ve spravovaném kódu a mapované na [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pomocí [usingtask –](../msbuild/usingtask-element-msbuild.md) elementu. Můžete napsat vlastní úlohy vytvářením spravovaný typ, který implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Další informace o tom, jak psát úlohy najdete v tématu [zápis úloh](../msbuild/task-writing.md).  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]obsahuje běžné úkoly, které lze upravit podle svých potřeb.  Příklady [kopie](../msbuild/copy-task.md), který zkopíruje soubory, [makedir –](../msbuild/makedir-task.md), vytváří adresáře a [Csc](../msbuild/csc-task.md), který zkompiluje soubory zdrojového kódu Visual C#. Seznam dostupných úloh společně s informace o použití najdete v tématu [– Reference úlohy](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] obsahuje běžné úkoly, které lze upravit podle svých potřeb.  Příklady [kopie](../msbuild/copy-task.md), který zkopíruje soubory, [makedir –](../msbuild/makedir-task.md), vytváří adresáře a [Csc](../msbuild/csc-task.md), který zkompiluje soubory zdrojového kódu Visual C#. Seznam dostupných úloh společně s informace o použití najdete v tématu [– Reference úlohy](../msbuild/msbuild-task-reference.md).  
   
  Úloha se spustí v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubor projektu vytvořením element, který má název úlohy jako podřízenou [cíl](../msbuild/target-element-msbuild.md) elementu. Úlohy jsou obvykle přijmout parametry, které jsou předány jako atributy elementu. Obě [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vlastností a položek lze použít jako parametry. Například následující kód volání [makedir –](../msbuild/makedir-task.md) úkolů a předává je hodnota `BuildDir` vlastnost, která byla definována v předchozího příkladu.  
   
@@ -169,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  Sestavení chyby, upozornění a zprávy se můžou přihlásit na konzole nebo jiné výstupní zařízení. Další informace najdete v tématu [získání sestavení protokoly](../msbuild/obtaining-build-logs-with-msbuild.md) a [protokolování v nástroji MSBuild](../msbuild/logging-in-msbuild.md).  
   
 ##  <a name="BKMK_VisualStudio"></a>Pomocí nástroje MSBuild v sadě Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]používá [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát souboru projektu k uložení sestavení informací o spravovaných projekty. Nastavení, které se přidají nebo změnit pomocí projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozhraní se projeví v. * proj soubor, který se vygeneruje pro každý projekt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]používá hostované instanci [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k vytvoření spravovaného projektů. To znamená, že spravovaný projekt může být součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo na příkazovém řádku (i když [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] není nainstalována), a výsledky musí být stejný.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] používá [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát souboru projektu k uložení sestavení informací o spravovaných projekty. Nastavení, které se přidají nebo změnit pomocí projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozhraní se projeví v. * proj soubor, který se vygeneruje pro každý projekt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]používá hostované instanci [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k vytvoření spravovaného projektů. To znamená, že spravovaný projekt může být součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo na příkazovém řádku (i když [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] není nainstalována), a výsledky musí být stejný.  
   
  Kurz týkající se použití nástroje MSBuild v sadě Visual Studio, najdete v části [návod: použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   

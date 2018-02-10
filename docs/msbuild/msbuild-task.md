@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#MSBuild
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild task [MSBuild]
 - MSBuild, MSBuild task
 ms.assetid: 76577f6c-7669-44ad-a840-363e37a04d34
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 264b5b379b7c3f2fa364d01260e1da825b5d64d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a5ecaef8f384a9597243fbe2026290e65295da8d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-task"></a>MSBuild – úloha
 Sestavení [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty z jiné [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu.  
@@ -65,7 +67,7 @@ Sestavení [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbu
 ## <a name="passing-properties-to-projects"></a>Předávání vlastností do projektů  
  Ve verzích [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] před [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, předávání různých nastaví vlastností do různých projektů, které jsou uvedené v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] položka byla náročná. Pokud jste použili atribut vlastnosti [úlohy nástroje MSBuild](../msbuild/msbuild-task.md), a jeho nastavení se použije na všechny projekty sestavuje, pokud jste zpracovat v dávce [úlohy nástroje MSBuild](../msbuild/msbuild-task.md) a podmíněně poskytuje různé vlastnosti pro každý projekt, v seznamu položek.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]3.5, ale nabízí dvě nové vyhrazené položky metadat, vlastnosti a možnost AdditionalProperties, která umožňují flexibilní způsob, jak předat jiné vlastnosti pro různé projekty vrácení vyvíjené [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, ale nabízí dvě nové vyhrazené položky metadat, vlastnosti a možnost AdditionalProperties, která umožňují flexibilní způsob, jak předat jiné vlastnosti pro různé projekty vrácení vyvíjené [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
 >  Tyto nové položky metadat se vztahují pouze na položek předaných v atributu projekty [úlohy nástroje MSBuild](../msbuild/msbuild-task.md).  

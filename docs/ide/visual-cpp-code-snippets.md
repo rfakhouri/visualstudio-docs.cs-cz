@@ -10,12 +10,15 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- CPP
+ms.workload:
+- cplusplus
+ms.openlocfilehash: b2a8b1c99d1b084a6f8d3c050302e16ea40d64ac
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kódu Visual C++
 
@@ -31,7 +34,7 @@ Pokud chcete vložit fragment kódu, otevřete soubor kódu C++ (sada nebo .h), 
 
 - V **upravit nebo IntelliSense** nabídce vyberte možnost **Vložit fragment kódu**
 
-- Použití klávesových zkratek: **CTRL + K + X**
+- Použití klávesových zkratek: **Ctrl**+**tisíc**+**X**
 
 Zobrazí seznam možností počínaje **#if**. Když vyberete **#if**, měli byste vidět následující kód do souboru přidán:
 
@@ -47,11 +50,11 @@ Pak můžete 0 nahradit správné podmínku.
 
 Chcete-li obklopit vybraný úsek kódu pomocí fragmentu kódu, vyberte řádek (nebo více řádků) a proveďte jednu z následujících:
 
-1. Klikněte pravým tlačítkem a získat v místní nabídce vyberte **příkazu Obklopit s**
+- Chcete-li získat v místní nabídce klikněte pravým tlačítkem a vyberte **příkazu Obklopit s**
 
-2. V **upravit nebo IntelliSense** nabídce vyberte možnost **příkazu Obklopit s**
+- Z **upravit** > **IntelliSense** nabídce vyberte možnost **příkazu Obklopit s**
 
-3. Použití klávesových zkratek: **CTRL + K + S**
+- Použití klávesnice, stiskněte klávesu: **CTRL**+**tisíc**+**S**
 
 Vyberte **#if**. Měli byste vidět zhruba takhle:
 

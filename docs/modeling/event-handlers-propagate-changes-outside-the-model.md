@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 717f61f440414370f3e9a2180e1c1cade7436aeb
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 Vizualizace a modelování SDK, můžete definovat obslužné rutiny událostí úložiště rozšíří změny na prostředky mimo úložiště, jako je například proměnné bez úložiště, soubory, modely v jiných úložišť nebo jiné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření. Obslužné rutiny událostí úložiště jsou spouštěny na konci transakce došlo k aktivační událost. Rovněž jsou prováděna v operaci zpět nebo znovu. Na rozdíl od úložiště pravidla jsou proto je nejvhodnější pro aktualizaci hodnoty, které jsou mimo úložišti události v úložišti. Na rozdíl od událostí rozhraní .NET, jsou obslužné rutiny událostí úložiště zaregistrované pro naslouchání na třídu: nemáte registraci samostatné obslužnou rutinu pro každou instanci. Další informace o tom, jak zvolit různé způsoby zpracování změn najdete v tématu [reakce na a šíření změny](../modeling/responding-to-and-propagating-changes.md).  

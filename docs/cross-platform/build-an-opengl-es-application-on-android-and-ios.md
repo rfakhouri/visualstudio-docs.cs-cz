@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 6378826a090b05a681a4808573eefd95899b9f6a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: af4a0a340589fcedd7121e164ffcd6ec2ed43e70
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Sestavení aplikace OpenGL ES pro Android a iOS
 Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platformy možnost, můžete vytvořit řešení sady Visual Studio a projekty pro aplikace pro iOS a Android aplikace, které sdílejí společný kód. Toto téma vás provede řešení šablonu, která vytvoří aplikace pro jednoduché iOS a Android nativní aktivity aplikace. Aplikací mít C++ – kód společné používané OpenGL ES zobrazíte stejné animovaný rotační datové krychle na každé platformě. ES OpenGL (OpenGL pro Embedded Systems nebo GLES) je 2D a 3D grafické rozhraní API, která je podporována v mnoho mobilních zařízení.  
@@ -76,7 +78,7 @@ Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platfor
   
 2.  V **Průzkumníku řešení**, otevřete místní nabídky pro MyOpenGLESApp.Android.Packaging projekt a zvolte **sestavení**.  
   
-     ![Sestavení projektu Android balení](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")  
+     ![Build Android Packaging Project](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")  
   
      Ve výstupním okně zobrazí výstup procesu sestavení pro systém Android sdílené knihovny a aplikace pro Android.  
   

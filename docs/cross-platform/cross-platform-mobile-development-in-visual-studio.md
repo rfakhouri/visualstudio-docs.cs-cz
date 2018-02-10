@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 12/06/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-caps.latest.revision: "64"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e12acc12559b4295958906fd182c381933bb5d45
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 0f047b143a7d0955d8ac3e2708098a903c73da59
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Mobilní vývoj pro různé platformy v sadě Visual Studio
 Aplikace pro Android, iOS a Windows zařízení můžete vytvořit pomocí sady Visual Studio.  Při navrhování vaší aplikace pomocí nástrojů v sadě Visual Studio můžete snadno přidání připojených služeb, jako je například Office 365, Azure App Service a Application Insights.
@@ -81,7 +82,7 @@ Aplikace pro Android, iOS a Windows zařízení můžete vytvořit pomocí sady 
 |Vyberte, zda se sdílet kódu pomocí sdílených projektů, projektů knihovny přenosných tříd nebo obojí.<br /><br /> [Sdílení kódu napříč platformami](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog na rozhraní .NET Framework)<br /><br /> [Sdílení kódu možnosti](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Kód možnosti sdílení s rozhraním .NET Framework](http://msdn.microsoft.com/library/dn720832.aspx) (Knihovna MSDN)|
 
 ###  <a name="WindowsHTML"></a>Cílová zařízení Windows 10
- ![Zařízení se systémem Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
+ ![Windows Devices](../cross-platform/media/windowsdevices.png "WindowsDevices")
 
  Pokud chcete vytvořit jenom jedna aplikace, která je cílena úplného spektra zařízení s Windows 10, vytvořte univerzální aplikace pro Windows. Budete návrh aplikace pomocí jednoho projektu a vaše stránky se zobrazují správně bez ohledu na to, jaké zařízení se používá k jejich zobrazení.
 
@@ -105,7 +106,7 @@ Aplikace pro Android, iOS a Windows zařízení můžete vytvořit pomocí sady 
 
  Protože tato rozhraní API a platformy, můžete sdílet většina zápisu mezi všechny tři platformy. To snižuje náklady na vývoj a údržba. Je také potřeba začít úplně od začátku. Pokud jste vytvořili jiné typy webových aplikací, můžete tyto soubory sdílet s vaší aplikace Cordova bez nutnosti upravit nebo změnit jejich návrh žádným způsobem.
 
- ![Více & č. 45; zařízení hybridní aplikace](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![Multi&#45;Device Hybrid Apps](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
 
  Pokud chcete začít, nainstalujte Visual Studio 2015 a vybrat **HTML/JavaScript (Apache Cordova)** funkce během instalace. Pokud používáte Visual Studio 2013, nainstalujte Visual Studio Tools for Apache Cordova rozšíření. V obou případech nástroje Cordova automaticky nainstalovat veškerý software třetích stran, které je nutné k sestavení aplikace více platformami.
 

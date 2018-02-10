@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6a03a05dd2d72b6733b0936849f218b3358f15cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: e1de29741f11413d8829902635c1284aa6e5bce6
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-tasks"></a>Úlohy nástroje MSBuild
 Platformy sestavení musí být schopné provést libovolného počtu akcí během procesu vytváření. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]používá *úlohy* k provedení těchto akcí. Úkol je jednotka spustitelný kód, který se používá [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k provádění operací atomic sestavení.  
@@ -39,7 +40,7 @@ Platformy sestavení musí být schopné provést libovolného počtu akcí běh
   
  Chcete-li spustit úlohu v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu, vytvořte prvek s názvem úkolu jako podřízenou `Target` elementu. Pokud úloha přijímá parametry, ty jsou předány jako atributy elementu.  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]položky seznamů a vlastnosti lze použít jako parametry. Například následující kód volání `MakeDir` úkolů a nastaví hodnotu `Directories` vlastnost `MakeDir` objekt rovná hodnotě `BuildDir` vlastnost deklarované v předchozím příkladu.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] položky seznamů a vlastnosti lze použít jako parametry. Například následující kód volání `MakeDir` úkolů a nastaví hodnotu `Directories` vlastnost `MakeDir` objekt rovná hodnotě `BuildDir` vlastnost deklarované v předchozím příkladu.  
   
 ```xml  
 <Target Name="MakeBuildDirectory">  
@@ -63,10 +64,10 @@ Platformy sestavení musí být schopné provést libovolného počtu akcí běh
 ```  
   
 ## <a name="included-tasks"></a>Zahrnuté úlohy  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]se dodává s mnoha úloh, jako [kopie](../msbuild/copy-task.md), který zkopíruje soubory, [makedir –](../msbuild/makedir-task.md), která vytvoří adresáře, a [Csc](../msbuild/csc-task.md), které zkompiluje [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] zdrojové soubory kódu. Úplný seznam dostupných úloh a informace o použití najdete v části [– Reference úlohy](../msbuild/msbuild-task-reference.md).  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] se dodává s mnoha úloh, jako [kopie](../msbuild/copy-task.md), který zkopíruje soubory, [makedir –](../msbuild/makedir-task.md), která vytvoří adresáře, a [Csc](../msbuild/csc-task.md), které zkompiluje [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] zdrojové soubory kódu. Úplný seznam dostupných úloh a informace o použití najdete v části [– Reference úlohy](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="overridden-tasks"></a>Přepsané úlohy  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]Vyhledá úlohy v několika umístěních. V souborech s příponou je první umístění. OverrideTasks uložené v adresáři pro rozhraní .NET Framework. Úlohy v těchto souborech přepsat další úlohy se stejnými názvy, včetně úloh v souboru projektu. Druhé umístění je v souborech s příponou. Úlohy v adresáři pro rozhraní .NET Framework. Pokud úloha nebyla nalezena v některém z těchto umístění, použije se úloha v souboru projektu.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Vyhledá úlohy v několika umístěních. V souborech s příponou je první umístění. OverrideTasks uložené v adresáři pro rozhraní .NET Framework. Úlohy v těchto souborech přepsat další úlohy se stejnými názvy, včetně úloh v souboru projektu. Druhé umístění je v souborech s příponou. Úlohy v adresáři pro rozhraní .NET Framework. Pokud úloha nebyla nalezena v některém z těchto umístění, použije se úloha v souboru projektu.  
   
 ## <a name="see-also"></a>Viz také  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   

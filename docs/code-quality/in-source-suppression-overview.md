@@ -1,5 +1,5 @@
 ---
-title: "Potlačení upozornění analýzy kódu pomocí atributu SuppressMessage v sadě Visual Studio | Microsoft Docs"
+title: "Potlačení upozornění analýzy kódu v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 01/29/2018
 ms.reviewer: 
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd3800e082673e9478eb32c6ae5627eef4d7e81
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="suppressing-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
 
@@ -34,6 +34,9 @@ V jazyce C + +/ CLI, použijte makra certifikační Autority\_POTLAČIT\_zpráva
 
 > [!NOTE]
 > -Source suppressions byste neměli používat u sestavení pro vydání, aby se zabránilo omylem přesouvání metadata potlačení v zdroje. Kromě toho kvůli zpracování náklady potlačení ve zdroje, aplikace může být ke snížení výkonu.
+
+> [!NOTE]
+> Pokud provádíte migraci projektu pro Visual Studio 2017, může vám najednou potýkají s čtenáře počet upozornění analýzy kódu. Pokud jste ještě nejsou připraveny upozornění, a chcete dočasně vypnout analýza kódu, otevřete stránky vlastností projektu (**projektu** > ***projektu* vlastnosti...** ) a přejděte na **analýza kódu** kartě. Zrušte výběr **povolit analýza kódu v sestavení**a pak znovu sestavte projekt. Alternativně můžete vybrat jiný, menší sadu pravidel, která spouštění kódu. Mějte na paměti, chcete-li analýza kódu zpět na když budete chtít opravte upozornění.
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage – atribut
 
@@ -95,7 +98,7 @@ Z důvodů udržovatelnosti vynechání název pravidla se nedoporučuje.
 
 Potlačení atributů může být použitý na metodu, ale nelze vložit do těla metody. To znamená, že jsou všechny porušení konkrétní pravidlo potlačovány Pokud přidáte <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut do metody.
 
-V některých případech můžete chtít potlačit konkrétní instanci porušení zásady, třeba tak, aby budoucí kód není automaticky vyloučení z pravidel nástroje Analýza kódu. Určitých pravidel analýzy kódu umožňují to provést pomocí `MessageId` vlastnost <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut. Obecně platí, starší pravidel pro porušení na konkrétní symbol (místní proměnné nebo parametru) ohledem `MessageId` vlastnost. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) je příkladem takové pravidlo. Ale starší verze pravidla pro porušení na spustitelného kódu (bez symbol) neodpovídají `MessageId` vlastnost. Kromě toho Roslyn analyzátorů neodpovídají `MessageId` vlastnost.
+V některých případech můžete chtít potlačit konkrétní instanci porušení zásady, třeba tak, aby budoucí kód není automaticky vyloučení z pravidel nástroje Analýza kódu. Určitých pravidel analýzy kódu umožňují to provést pomocí `MessageId` vlastnost <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut. Obecně platí, starší pravidel pro porušení na konkrétní symbol (místní proměnné nebo parametru) ohledem `MessageId` vlastnost. [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) je příkladem takové pravidlo. Ale starší verze pravidla pro porušení na spustitelného kódu (bez symbol) neodpovídají `MessageId` vlastnost. Kromě toho nerespektují analyzátorů kompilátoru platformu .NET ("Roslyn") `MessageId` vlastnost.
 
 K potlačení konkrétní symbol porušení pravidel, zadejte název symbolu `MessageId` vlastnost <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut. Následující příklad ukazuje kód, který představuje dva porušení [CA1500:VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;za `name` proměnné a jeden pro `age` proměnné. Pouze porušení pro `age` potlačeno symbol.
 

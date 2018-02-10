@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -30,16 +30,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: "12"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e7eb9e861898c0874388f9acb4f061a8e902fef1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="link-task"></a>Úloha odkazu
 Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí běžné objekt souboru formátu (COFF) objekt souborů a knihoven vytvořit soubor spustitelný soubor (.exe) nebo dynamická knihovna (DLL). Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).  
@@ -75,7 +76,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Volitelné **řetězec** parametr.  
   
-     Seznam možností linkeru jako zadaného na příkazovém řádku. Například **"***/option1 /option2 /option#*". Tento parametr použijte k určení možnosti linkeru, které nejsou reprezentovány jakékoliv **odkaz** parametr úloh.  
+     Seznam možností linkeru jako zadaného na příkazovém řádku. Například **"*** nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možnosti linkeru, které nejsou reprezentovány jakékoliv **odkaz** parametr úloh.  
   
      Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).  
   
@@ -159,9 +160,9 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídající možnosti linkeru.  
   
-    -   **Povolit** - **/CLRSupportLastError**  
+    -   **Enabled** - **/CLRSupportLastError**  
   
-    -   **Zakázané** - **/CLRSupportLastError:NO**  
+    -   **Disabled** - **/CLRSupportLastError:NO**  
   
     -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
   
@@ -175,7 +176,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídající možnosti linkeru.  
   
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: žádné**  
+    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
   
     -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
   
@@ -241,7 +242,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídající možnosti linkeru.  
   
-    -   **NotSet** - *\<žádné >*  
+    -   **NotSet** - *\<none>*  
   
     -   **Ovladač** -   **/Driver**  
   
@@ -303,7 +304,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
-    -   **UndefinedSymbolOnly** -   **/FORCE: NEROZPOZNANÉ**  
+    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
   
      Další informace najdete v tématu [/Force (vynutit výstup souboru)](/cpp/build/reference/force-force-file-output).  
   
@@ -493,7 +494,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **Výchozí** - *\<žádné >*  
   
-    -   **UseLinkTimeCodeGeneration** -   **/ltgc**  
+    -   **UseLinkTimeCodeGeneration** - **/LTCG**  
   
     -   **PGInstrument** - **/LTCG:PGInstrument**  
   
@@ -501,7 +502,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **PGUpdate**  
   
-         \-**/LTCG:PGUpdate**  
+         \- **/LTCG:PGUpdate**  
   
      Další informace najdete v tématu [/ltgc (vytváření kódu v době propojování)](/cpp/build/reference/ltcg-link-time-code-generation).  
   
@@ -669,7 +670,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Další informace najdete v tématu [/ALIGN (zarovnání oddílů)](/cpp/build/reference/align-section-alignment).  
   
--   **Setchecksum –**  
+-   **SetChecksum**  
   
      Volitelné **Boolean** parametr.  
   
@@ -685,9 +686,9 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **NotSet** - *\<žádné >*  
+    -   **NotSet** - *\<none>*  
   
-    -   **LinkVerbose** -   **/VERBOSE**  
+    -   **LinkVerbose** - **/VERBOSE**  
   
     -   **LinkVerboseLib** - **/VERBOSE:Lib**  
   
@@ -747,7 +748,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **NotSet** - *\<žádné >*  
+    -   **NotSet** - *\<none>*  
   
     -   **Konzole** - **/SUBSYSTEM:CONSOLE**  
   
@@ -817,7 +818,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **NotSet** - *\<žádné >*  
+    -   **NotSet** - *\<none>*  
   
     -   **MachineARM** - **/MACHINE:ARM**  
   
@@ -837,9 +838,9 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **MachineTHUMB** - **/MACHINE:THUMB**  
   
-    -   **MachineX64** - **/MACHINE:X 64**  
+    -   **MachineX64** - **/MACHINE:X64**  
   
-    -   **MachineX86** - **/MACHINE:X 86**  
+    -   **MachineX86** - **/MACHINE:X86**  
   
      Další informace najdete v tématu [/MACHINE (zadat cílové platformy)](/cpp/build/reference/machine-specify-target-platform).  
   

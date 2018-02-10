@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +13,17 @@ helpviewer_keywords:
 - MSBuild, targeting a specific .NET framework
 - multitargeting [MSBuild]
 ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
-caps.latest.revision: "30"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7c8658b3c1a39efc24e65845be2ce75eafc4437
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fd43bae37f453ce3ce7ec589815554a6b62dea05
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Sada nástrojů MSBuild (atribut ToolsVersion)
 MSBuild používá sada nástrojů úlohy, cílů a nástrojů pro vytvoření aplikace. Sada nástrojů MSBuild obvykle zahrnuje microsoft.common.tasks souboru, soubor microsoft.common.targets a kompilátory například csc.exe a vbc.exe. Většina modulové lze použít pro kompilaci více než jedna verze rozhraní .NET Framework a více než jedné platformě systému. Sada nástrojů MSBuild 2.0 lze však cílí na rozhraní .NET Framework 2.0.  
@@ -118,4 +119,4 @@ MSBuild používá sada nástrojů úlohy, cílů a nástrojů pro vytvoření a
   
 ## <a name="see-also"></a>Viz také  
  [Konfigurace standardní a vlastní sady nástrojů](../msbuild/standard-and-custom-toolset-configurations.md)   
- [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)
+ [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

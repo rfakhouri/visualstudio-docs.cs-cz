@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9b0f7676baa604ba301a3b600786d3ce6539f57c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 38e6145d351a9c026dd4bb5c4105a3606a71f591
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="configuring-targets-and-tasks"></a>Konfigurace cílů a úloh
 Můžete nakonfigurovat cíle MSBuild a aby úlohy běžely out-of-process pomocí nástroje MSBuild tak, aby můžete určit cílovou kontextů, které se liší od toho, kterou používáte na. Například můžete určit cílovou 32bitová aplikace rozhraní .NET Framework 2.0, když vývojovém počítači běží na operačním systému 64bitová verze rozhraní .NET Framework 4.5. Také můžete vybrat počítače, které spustit v rozhraní .NET Framework 4 nebo starším. Kombinace 32 - bitová nebo 64verze a na konkrétní verzi rozhraní .NET Framework se označuje jako *cílový kontext*.  
@@ -33,4 +34,4 @@ Můžete nakonfigurovat cíle MSBuild a aby úlohy běžely out-of-process pomoc
  Pokud chcete vytvořit vlastní cílový kontext, musíte nastavit tyto argumentů a parametrů správně. Vyhledejte v rozhraní .NET Framework 4.5 Microsoft.Common.targets soubor a soubor Microsoft.Common.Tasks příklady.  Informace o tom, jak vytvořit vlastní úkol, který můžete pracovat s více kontexty cíl nebo jak upravit stávající úlohy najdete v tématu [postupy: konfigurace cílů a úloh](../msbuild/how-to-configure-targets-and-tasks.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)
+ [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)

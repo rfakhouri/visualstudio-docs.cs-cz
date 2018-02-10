@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, tutorial
+helpviewer_keywords:
+- MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: "32"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8d268ac5eb479a680063eabe4d986657c3ec4013
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>Návod: Použití nástroje MSBuild
 MSBuild je platforma sestavení pro Microsoft a Visual Studio. Tento návod vás seznámí s stavební bloky nástroje MSBuild a ukazuje, jak k zápisu, manipulaci a ladění projektů MSBuild. Co se dozvíte o:  
@@ -510,7 +512,7 @@ $(PropertyName)
   
  Všimněte si, jak frázi "Compile.DependentUpon" zobrazuje několikrát. Používání metadat pomocí této syntaxe v rámci cíl způsobí, že "dávkování". Dávkování znamená po provedení úlohy v rámci cíle pro každou hodnotu jedinečný metadat. To je ekvivalentní skriptu MSBuild nejběžnější "smyčka" for programovací konstrukce. Další informace najdete v tématu [Batching](../msbuild/msbuild-batching.md).  
   
-### <a name="well-known-metadata"></a>Metadata známé  
+### <a name="well-known-metadata"></a>Well-Known Metadata  
  Vždy, když je přidat položku do seznamu položek, že položka není přiřazen některé známé metadat. Například %(Filename) vrátí název souboru žádné položky. Úplný seznam známých metadata, najdete v části [Metadata známé položky](../msbuild/msbuild-well-known-item-metadata.md).  
   
 ##### <a name="to-examine-well-known-metadata"></a>K prozkoumání dobře známé metadat  

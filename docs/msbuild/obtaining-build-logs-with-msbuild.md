@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-caps.latest.revision: "27"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 129f9c9235035e828e1825898aac89eaf8cd1388
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a9a2a7989e7b1cd98745d316ff01718653eda48f
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Získávání protokolů o sestavení pomocí nástroje MSBuild
 Pomocí nástroje MSBuild pomocí přepínačů, můžete zadat kolik dat sestavení, které chcete zkontrolovat a zda chcete uložit data sestavení na jeden nebo více souborů. Můžete také zadat vlastní protokolovacího nástroje ke shromažďování dat sestavení. Informace o parametrech příkazového řádku nástroje MSBuild, které nezahrnuje v tomto tématu najdete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  

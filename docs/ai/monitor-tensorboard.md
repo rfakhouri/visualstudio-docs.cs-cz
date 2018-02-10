@@ -1,3 +1,5 @@
+---
+---
 # <a name="monitor-with-tensorboard"></a>Monitorování s TensorBoard
 
 Můžete vizualizovat průběh školení modelu s TensorBoard. 

@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc526231ef92fd1cacd384cd48089fa97c59320
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 0ff4b731f703d8237b338dbce821fa7e00c39e3d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="learn-about-debugger-windows-in-visual-studio"></a>Další informace o ladicího programu v sadě Visual Studio
-Většina ladicího programu můžete otevřít při ladění vašeho programu. Pokud chcete zobrazit seznam ladicího programu, nastavit zarážky a spustit ladění. Po kliknutí na zastaví zarážek a spuštění, klikněte na tlačítko **ladění > Windows**.  
+
+Většina ladicího programu můžete otevřít při ladění vašeho programu. Pokud chcete zobrazit seznam ladicího programu, nastavit zarážky a spustit ladění. Po kliknutí na zastaví zarážek a spuštění, klikněte na tlačítko **ladění > Windows**.
 
 ||||
 |-|-|-|
@@ -39,10 +40,10 @@ Většina ladicího programu můžete otevřít při ladění vašeho programu. 
 |Paralelní zásobníky|PEV.CENU: + SHIFT + D, S|[Použití okna paralelní zásobníky](../debugger/using-the-parallel-stacks-window.md)|
 |Paralelní sledování|PEV.CENU: + SHIFT + D (1, 2, 3, 4)|[Získat spuštění ladění vícevláknové aplikace](../debugger/get-started-debugging-multithreaded-apps.md)|
 |Vlákna|CTRL+ALT+H|[Ladění pomocí okna vláken](../debugger/how-to-use-the-threads-window.md)|
-|Moduly|CTRL+ALT+U|[Postupy: použití okna moduly](../debugger/how-to-use-the-modules-window.md)| 
+|Moduly|CTRL+ALT+U|[Postupy: použití okna moduly](../debugger/how-to-use-the-modules-window.md)|
 |Vlákna GPU|-|[Postupy: použití okna vláken GPU](../debugger/how-to-use-the-gpu-threads-window.md)|
-|Úlohy|PEV.CENU: + SHIFT + D, KB|[Používání okna úloh](../debugger/using-the-tasks-window.md)| 
-|Ladění interaktivní Python|SHIFT+ALT+I|[Začínáme s PTVS: interaktivní Python](../python/python-interactive-repl-in-visual-studio.md)
+|Úlohy|PEV.CENU: + SHIFT + D, KB|[Používání okna úloh](../debugger/using-the-tasks-window.md)|
+|Ladění interaktivní Python|SHIFT+ALT+I|[REPL interaktivní Python](../python/interactive-repl.md)|
 |Konzola jazyka JavaScript|CTRL + ALT + V, C|[Rychlý úvod: Ladění JavaScriptu](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Průzkumník modelu DOM|CTRL+ALT+V, D|[Ladění rozložení pomocí Průzkumníka modelu DOM](../debugger/debug-layout-using-dom-explorer.md)|
 |Za provozu vizuálním stromu|-|[Kontrola vlastností XAML při ladění](../debugger/inspect-xaml-properties-while-debugging.md)|
@@ -52,5 +53,6 @@ Většina ladicího programu můžete otevřít při ladění vašeho programu. 
 |Zpětný překlad|CTRL+ALT+D|[Postupy: použití okna zpětného překladu](../debugger/how-to-use-the-disassembly-window.md)|
 |Zaregistruje|CTRL+ALT+G|[Postupy: použití okna registry](../debugger/how-to-use-the-registers-window.md)|
 
-## <a name="see-also"></a>Viz také  
- [Základy ladicího programu](../debugger/debugger-basics.md)
+## <a name="see-also"></a>Viz také
+
+[Základy ladicího programu](../debugger/debugger-basics.md)

@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - dependency graphs, creating path aliases
@@ -22,12 +21,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3787bea9eccd46104cd48c2bd2cdff27d8aeb872
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: a0000482b34ea3c98ac6467cbebccc83bd8b5a74
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Markup Language (.dgml) mapy. Například můžete upravit prvky k určení vlastních stylů, kategorií a vlastností elementy kódu a odkazy, nebo odkaz dokumenty nebo přiřadit adresy URL elementy kódu nebo odkazy. Další informace o DGML elementy najdete v tématu [odkaz směrované grafů Markup Language (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md).  
@@ -255,9 +256,9 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
   
     -   `TargetType="Node` &#124; `Link | Graph"`  
   
-    -   `GroupLabel="`*NameInLegendBox*`"`  
+    -   `GroupLabel="` *NameInLegendBox* `"`  
   
-    -   `ValueLabel="`*NameInStylePickerBox*`"`  
+    -   `ValueLabel="` *NameInStylePickerBox* `"`  
   
      Pro použití vlastního stylu na všechny cílové typy nepoužívejte podmínku.  
   

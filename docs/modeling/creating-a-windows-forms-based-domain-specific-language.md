@@ -4,22 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2aaa2426d506f9c498c4428bc0e7f4e8134ac1ab
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Vytvoření doménově specifického jazyka založeného na Windows Forms
 Windows Forms můžete použít k zobrazení stavu modelu jazyka domény (DSL), místo použití DSL diagram. Toto téma vás provede procesem vytvoření vazby formuláře Windows DSL, pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK.  
   
- ![DSL & č. 45; WPF & č. 45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
 Instance DSL zobrazující uživatelské rozhraní Windows formuláře a Průzkumníka modelu.  
   
 ## <a name="creating-a-windows-forms-dsl"></a>Vytvoření Windows Forms DSL  
@@ -70,7 +71,7 @@ Instance DSL zobrazující uživatelské rozhraní Windows formuláře a Průzku
 ## <a name="updating-the-dsl-definition"></a>Aktualizaci definice DSL  
  Následující definice DSL se používá v tomto návodu.  
   
- ![DSL & č. 45; WPF & č. 45; 1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
+ ![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png "DSL-Wpf-1")  
   
 #### <a name="to-update-the-dsl-definition"></a>Chcete-li aktualizovat definici DSL  
   
@@ -129,7 +130,7 @@ Instance DSL zobrazující uživatelské rozhraní Windows formuláře a Průzku
   
      V okně zdroje dat se zobrazí vlastnosti a vztahy vaší třídy modelu.  
   
-     ![DslWpf & č. 45; 3](../modeling/media/dslwpf-3.png "DslWpf 3")  
+     ![DslWpf&#45;3](../modeling/media/dslwpf-3.png "DslWpf-3")  
   
 #### <a name="to-connect-your-model-to-a-form"></a>Pro připojení k formuláři modelu  
   
@@ -304,7 +305,7 @@ Schéma odkazů mezi zdroje dat a zobrazení.
   
      Nyní byste měli mít upravit název elementu v zobrazení dat mřížky. Můžete také odstranit ho z ní.  
   
- ![DSL & č. 45; WPF & č. 45; 2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
+ ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png "DSL-Wpf-2")  
   
 ### <a name="about-the-code-to-add-an-element"></a>O kódu k přidání elementu  
  Následující alternativní kód je pro nová tlačítka element mírně jednodušší.  

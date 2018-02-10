@@ -1,3 +1,5 @@
+---
+---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonování úložiště Python kódu v sadě Visual Studio
 
 Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), můžete snadno klonovat úložiště v kódu jazyka Python a vytvořte projekt z něj.

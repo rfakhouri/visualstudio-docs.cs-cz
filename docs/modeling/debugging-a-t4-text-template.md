@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - text templates, troubleshooting
@@ -12,12 +11,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da101fa60d897a56c42b52ebbb8e0cc21a6d7a9f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Ladění textové šablony T4
 Nastavte zarážky v textové šablony. Chcete-li ladit návrhu textové šablony, uložte tento textový soubor šablony a poté zvolte **ladění šablony T4** v místní nabídce souboru v Průzkumníku řešení. Chcete-li ladit spuštění textové šablony, jednoduše ladění aplikace, do které patří.  
@@ -46,7 +47,7 @@ Nastavte zarážky v textové šablony. Chcete-li ladit návrhu textové šablon
 |Cesta {0}' musí být buď místní do tohoto počítače nebo jeho část vaší zóny důvěryhodných serverů.|Nastane, když direktiva nebo – direktiva assembly odkazuje na soubor, který není na místním počítači nebo na vaší síti zóny důvěryhodných serverů.|Se, zda adresář, kde se nachází – direktiva nebo sestavení direktivy ve vaší důvěryhodné zóně. Síťovému adresáři můžete přidat do zóny důvěryhodných prostřednictvím aplikace Internet Explorer.|  
 |Více chyby syntaxe, jako je například "Neplatný token ' catch'" nebo "obor názvů nemůže přímo obsahovat členy"|Příliš mnoho uzavírací složené závorky v kódu šablony. Kompilátor je složitá ho pomocí standardní generování kódu.|Zkontrolujte číslo uzavření složené závorky a hranaté závorky v kódu oddělovače.|  
 |Smyčky nebo podmíněné příkazy není zkompilovat nebo provést správně. Příklad: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Tento kód vždy výstupy hodnotu i. Pouze "číslo:" je podmíněného.|V jazyce C# vždy pomocí složené závorky obklopit text bloků, které jsou součástí řídicí příkazy.|Přidat složené závorky: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
-|"Příliš složitý výraz" při zpracování šablony návrhu nebo kompilování šablonu runtime (předběžně zpracované).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]přestane modul fungovat při pokusu o zkontrolovat kód vygenerovaný šablonu modulu runtime.|Blok textu je příliš dlouhý. T4 převede text bloky výraz zřetězení řetězce s jeden řetězcový literál pro každý řádek šablony. Bloky velmi dlouhý text můžete overstep kompilátoru omezení velikosti.|Rozdělte dlouhý text blok s bloku výraz například:<br /><br /> `<#= "" #>`|  
+|"Příliš složitý výraz" při zpracování šablony návrhu nebo kompilování šablonu runtime (předběžně zpracované).<br /><br /> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] přestane modul fungovat při pokusu o zkontrolovat kód vygenerovaný šablonu modulu runtime.|Blok textu je příliš dlouhý. T4 převede text bloky výraz zřetězení řetězce s jeden řetězcový literál pro každý řádek šablony. Bloky velmi dlouhý text můžete overstep kompilátoru omezení velikosti.|Rozdělte dlouhý text blok s bloku výraz například:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Popis upozornění a opravy  
  Následující tabulka uvádí nejběžnější upozornění společně s opravy, pokud je k dispozici.  

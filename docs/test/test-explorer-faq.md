@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: db3cf85576e6c46aca14897f7244cd0f56d8d5c2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: fd64bb3bce6b6477c0db1c7d0c5a15e518ae71ef
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Průzkumníka testů – nejčastější dotazy
 
@@ -48,11 +48,11 @@ ms.lasthandoff: 01/29/2018
 
 ### <a name="4-tests-now-appear-in-test-explorer-while-i-type-without-having-to-build-my-project-what-changed"></a>4. Testy se teď zobrazují v Průzkumníka testů při psaní, aniž by museli sestavení projektu. Co se změnilo?
 
-  Tato funkce je volána [reálném čase testu zjišťování](https://go.microsoft.com/fwlink/?linkid=862824). Analyzátor Roslyn používá ke zjištění testy a naplnit Průzkumníka testů v reálném čase, aniž by bylo potřeba sestavení projektu. Další informace o chování testu zjišťování pro dynamicky definované testy například teorií nebo vlastní vlastnosti najdete v části Nejčastější dotazy k č. 1.
+  Tato funkce je volána [reálném čase testu zjišťování](https://go.microsoft.com/fwlink/?linkid=862824). Ke zjištění testy a naplnit Průzkumníka testů v reálném čase, aniž by bylo potřeba sestavení projektu používá analyzátor kompilátoru platformu .NET ("Roslyn"). Další informace o chování testu zjišťování pro dynamicky definované testy například teorií nebo vlastní vlastnosti najdete v části Nejčastější dotazy k č. 1.
 
 ### <a name="5-what-languages-and-test-frameworks-can-use-real-time-test-discovery"></a>5. Jaké jazyků a rozhraní test můžete použít zjišťování testování reálném čase?
 
-  [Test zjišťování reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) funguje pouze pro spravované jazyky (C# a Visual Basic), protože je sestaven pomocí Roslyn kompilátoru. Prozatím se reálném čase testu zjišťování funguje výhradně u xUnit, NUnit a Mstestu architektury.
+  [Test zjišťování reálném čase](https://go.microsoft.com/fwlink/?linkid=862824) funguje pouze pro spravované jazyky (C# a Visual Basic), protože je sestaven pomocí kompilátoru .NET ("Roslyn"). Prozatím se reálném čase testu zjišťování funguje výhradně u xUnit, NUnit a Mstestu architektury.
 
 ## <a name="features"></a>Funkce
 

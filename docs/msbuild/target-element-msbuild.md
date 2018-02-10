@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Target
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#Target
 dev_langs:
 - VB
 - CSharp
@@ -17,21 +18,22 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-caps.latest.revision: "34"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e8a444add9d28a79458dabab75b4cf62bf951dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: fe87cf8af6c5c2cbb63153f0d82988bd44800519
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="target-element-msbuild"></a>Target – element (MSBuild)
 Obsahuje sadu úloh pro [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] postupně provést.  
 
- \<Projekt >  
+ \<Project>  
  \<Cíl >  
 
 ## <a name="syntax"></a>Syntaxe  
@@ -77,7 +79,7 @@ Obsahuje sadu úloh pro [!INCLUDE[vstecmsbuild](../extensibility/internals/inclu
 |Prvek|Popis|  
 |-------------|-----------------|  
 |[Úloha](../msbuild/task-element-msbuild.md)|Vytvoří a spustí instanci [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] úloh. Cílem může být nula nebo více úloh.|  
-|[PropertyGroup –](../msbuild/propertygroup-element-msbuild.md)|Obsahuje sadu uživatelem definované `Property` elementy. Od verze rozhraní .NET Framework 3.5 `Target` element může obsahovat `PropertyGroup` elementy.|  
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Obsahuje sadu uživatelem definované `Property` elementy. Od verze rozhraní .NET Framework 3.5 `Target` element může obsahovat `PropertyGroup` elementy.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Obsahuje sadu uživatelem definované `Item` elementy. Od verze rozhraní .NET Framework 3.5 `Target` element může obsahovat `ItemGroup` elementy. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).|  
 |[OnError](../msbuild/onerror-element-msbuild.md)|Způsobí, že jeden nebo více cílů, které mají spustit, pokud `ContinueOnError` atribut je ErrorAndStop (nebo `false`) pro nezdařené úlohy. Může být nula nebo více `OnError` elementů v cíl. Pokud `OnError` obsahují prvky, musí být poslední elementů v `Target` elementu.<br /><br /> Informace o `ContinueOnError` atributů najdete v tématu [Task – Element (MSBuild)](../msbuild/task-element-msbuild.md).|  
 
@@ -85,7 +87,7 @@ Obsahuje sadu úloh pro [!INCLUDE[vstecmsbuild](../extensibility/internals/inclu
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
+|[Project](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
 
 ## <a name="remarks"></a>Poznámky  
  V době běhu je zadán prvního cíle k provedení. Cíle může mít závislosti na jiné cíle. Cíl pro nasazení, například závisí na cíl pro kompilaci. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Modul provádí v pořadí, ve kterém se zobrazí v závislosti `DependsOnTargets` atribut zleva doprava. Další informace najdete v tématu [cíle](../msbuild/msbuild-targets.md).  

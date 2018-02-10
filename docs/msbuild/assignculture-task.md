@@ -4,10 +4,11 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
+f1_keywords:
+- http://schemas.microsoft.com/developer/msbuild/2003#AssignCulture
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, AssignCulture task
 - AssignCulture task [MSBuild]
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
-caps.latest.revision: "10"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 765f74a80e98737b65fb913113b2879ce4609248
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 40fb47caea1b9fcb0d25d45495cf3e3c1d3e04fb
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="assignculture-task"></a>AssignCulture – úloha
 Tato úloha přijímá seznam položek, které mohou obsahovat platný řetězec identifikátor jazykové verze rozhraní .NET jako součást názvu souboru a vytvoří položky, které mají metadata, s názvem `Culture` obsahující odpovídající identifikátor jazykovou verzi. Například má název souboru Form1.fr fr.resx embedded jazykovou verzi identifikátor "fr-fr", takže tato úloha vytvoří položku, která má stejný název souboru s metadaty `Culture` rovna `fr-fr`. Úloha také vytvoří seznam názvů souborů s jazykovou verzi odebrána z název souboru.  

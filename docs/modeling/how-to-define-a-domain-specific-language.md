@@ -4,7 +4,6 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
@@ -18,12 +17,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 972fa76d83c9ecfbe9efb23897a6e0ec5928c35f
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 57ae6465ec8d9fbbe85ff1f040d69b227c6a76fe
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Definovat jazyk specifické pro doménu (DSL), řešení sady Visual Studio vytvořit ze šablony. Klíčovou součástí řešení je diagram definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a obrazců DSL. Po úpravě a přidáte k těmto prvkům, můžete přidat kód programu k přizpůsobení DSL podrobněji.

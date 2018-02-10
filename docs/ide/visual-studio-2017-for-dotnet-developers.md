@@ -7,13 +7,15 @@ manager: ghogen
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
 ms.topic: article
-helpviewer_keywords: editor
-ms.workload: dotnet
-ms.openlocfilehash: db1e944f3ce12369b096c75a7fc12648a2d7e91d
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+helpviewer_keywords:
+- editor
+ms.workload:
+- dotnet
+ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 pro vývojáře .NET
 
@@ -22,7 +24,7 @@ ms.lasthandoff: 01/23/2018
 [Dokumentace: Pomocí IntelliSense](using-intellisense.md)  
 [Dokumentace: Funkce Inteligentní editor](writing-code-in-the-code-and-text-editor.md)
 
-Visual Studio obsahuje hluboké znalosti kódu prostřednictvím kompilátoru Roslyn poskytnout inteligentní úpravy funkcí, jako je zabarvení syntaxe, kód dokončení, kontrola pravopisu chybným proměnné, neimportovaných typu řešení, osnovy, struktura vizualizérech [Codelensu](find-code-changes-and-other-history-with-codelens.md), volání hierarchie, hover možnost rychlé informace, parametr nápovědy, jakož i nástroje pro refaktoring, použití rychlé akce a generování kódu.
+Visual Studio obsahuje hluboké znalosti kódu prostřednictvím kompilátoru .NET ("Roslyn"), kde přinášejí inteligentní úpravy funkcí, jako je zabarvení syntaxe, kód dokončení, kontrola pravopisu chybným proměnné, neimportovaných typu řešení, osnovy, struktura vizualizérech, [Codelensu](find-code-changes-and-other-history-with-codelens.md), volání hierarchie, hover možnost rychlé informace, parametr nápovědy, jakož i nástroje pro refaktoring, použití rychlé akce a generování kódu.
 
 ![Visual Studio editor inteligentní kódu](../ide/media/VSIDE_Productivity_SmartCodeEditor.png "VSIDE_Productivity_SmartCodeEditor")
 

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +13,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-caps.latest.revision: "16"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0bc83d29eb076b70be5c9192acdbe39e301a6f16
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- vssdk
+ms.openlocfilehash: c1a8338f0ebd964e5d039ffa8dff000a441523f8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>Vytvoření ovládacího prvku sady nástrojů WPF
 Ovládací prvek sady nástrojů WPF (Windows Presentation Framework) šablona umožňuje vytvořit ovládacích prvků WPF, které jsou automaticky přidány do **sada nástrojů** při instalaci rozšíření. Toto téma ukazuje, jak vytvořit pomocí šablony **sada nástrojů** ovládací prvek, který distribuujete do jiných uživatelů.  
@@ -61,7 +63,7 @@ Ovládací prvek sady nástrojů WPF (Windows Presentation Framework) šablona u
   
 1.  Otevřete MyToolboxControl.xaml.cs v zobrazení kódu.  
   
-2.  Nalezena třída MyToolboxControl a přejmenujte jej na TestControl. (Nejrychlejší způsob, jak to udělat, je k přejmenování třídy, vyberte **přejmenovat** v místní nabídce a proveďte kroky. (Další informace o **přejmenovat** příkazů najdete v tématu [přejmenovat refaktoring (C#)](../ide/reference/rename-csharp.md).)
+2.  Nalezena třída MyToolboxControl a přejmenujte jej na TestControl. (Nejrychlejší způsob, jak to udělat, je k přejmenování třídy, vyberte **přejmenovat** v místní nabídce a proveďte kroky. (Další informace o **přejmenovat** příkazů najdete v tématu [přejmenovat refaktoring (C#)](../ide/reference/rename.md).)
   
 3.  Přejděte na `ProvideToolboxControl` atribut a změňte hodnotu první parametr **Test**. Toto je název skupiny, která bude obsahovat ovládacího prvku **sada nástrojů**.  
   

@@ -4,23 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: "31"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8f45cf4e58da23ffc0f0470f9d47658e75723552
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 511c0b3990471b9b1e4e8e7e6023db8920360b99
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardní a vlastní konfigurace sady nástrojů
 Sada nástrojů MSBuild obsahuje odkazy na úlohy, cílů a nástroje, které můžete použít pro sestavení projektu aplikace. MSBuild zahrnuje standardní sada nástrojů, ale můžete také vytvořit vlastní modulové. Informace o tom, jak určit nástrojů najdete v tématu [sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -33,7 +34,7 @@ Sada nástrojů MSBuild obsahuje odkazy na úlohy, cílů a nástroje, které m�
 |2.0|*Cesta instalace systému Windows*\Microsoft.Net\Framework\v2.0.50727\|  
 |3.5|*Cesta instalace systému Windows*\Microsoft.NET\Framework\v3.5\|  
 |4.0|*Cesta instalace systému Windows*\Microsoft.NET\Framework\v4.0.30319\|  
-|12.0|*% ProgramFiles %*\MSBuild\12.0\bin|  
+|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
   
  `ToolsVersion` Hodnota určuje, který je používán nástrojů projekt, který generuje Visual Studio. V [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] výchozí hodnota je "12.0" (bez ohledu na to jaké verze zadaná v souboru projektu), ale tento atribut lze přepsat pomocí **/toolsversion** přepnout na příkazovém řádku. Informace o tento atribut a dalších způsobů určení `ToolsVersion`, najdete v části [přepsání nastavení parametru ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   

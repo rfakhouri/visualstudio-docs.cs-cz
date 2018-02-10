@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: UML, modeling architecture
+helpviewer_keywords:
+- UML, modeling architecture
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ce471f2229744c9ee72f16a3b784f9e09823375d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 3d77abff4595502ab27f56be10cb973361eef413
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="model-your-app39s-architecture"></a>Model aplikace & č. 39; architektura s
 K zajištění, že software systému nebo aplikace splňuje vašich uživatelů potřebuje, můžete vytvořit modely v sadě Visual Studio jako součást vaší popis celková struktura a chování softwaru systému nebo aplikace. Použití modelů, můžete také popisují vzorů, které se používají v rámci návrhu. Tyto modely vám pomůžou pochopit stávající architektura, popisují změny a vaše záměry jasně komunikovat.  

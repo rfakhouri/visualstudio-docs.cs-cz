@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
-caps.latest.revision: "23"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cdbe7702711c5196de42d18379d6870ca54f4dcd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5944d549caa45a8a1b7cee335643f857d3ae38f5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-glossary"></a>Slovníček nástroje MSBuild
 Tyto podmínky se používají k popisu Microsoft Build Engine (MSBuild) a jeho komponenty.  
@@ -120,7 +121,7 @@ Tyto podmínky se používají k popisu Microsoft Build Engine (MSBuild) a jeho 
  vlastnost, vyhrazena  
  Vyhrazené vlastnost je pár klíč hodnota, která se používá k řízení procesu sestavení. Rezervované vlastnosti jsou automaticky inicializován s předdefinovanými hodnotami. Další informace najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).  
   
- rozsah projektu  
+ project-scope  
  Rozsah projektu popisuje nástroje MSBuild objektu, například místní vlastnosti, které se zobrazuje jenom v obsahující souboru projektu a na všechny projekty, které se importuje.  
   
  projekt, podřízené  

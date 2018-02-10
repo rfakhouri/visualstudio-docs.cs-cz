@@ -6,23 +6,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: "80025080"
+f1_keywords:
+- "80025080"
 helpviewer_keywords:
 - data [Visual Studio]
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-caps.latest.revision: "100"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: c3777249948ba4be917de4ec6c139e7a15bce0a7
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+ms.workload:
+- data-storage
+ms.openlocfilehash: 7ccee10630a4b5de0aebf361c7acf6cccf8cf49c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -36,7 +38,7 @@ Následující seznamy shrnují jen některé z mnoha systémy databáze a úlo�
 
 ||||
 |-|-|-|
-|Databáze SQL|DocumentDB|Úložiště (objekty BLOB, tabulek, front, souborů)|
+|SQL Database|DocumentDB|Úložiště (objekty BLOB, tabulek, front, souborů)|
 |Datový sklad SQL|SQL Server Stretch Database|Zařízení StorSimple|
 
 a další...
@@ -86,11 +88,9 @@ Pro databáze na použití v ADO.NET, musí mít vlastní *zprostředkovatel dat
 
 V rozhraní .NET máte tři možnosti pro modelování a manipulace s daty v paměti po jejím načtení ze zdroje dat:
 
-[Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md)  
-Upřednostňované technologie Microsoft ORM. Můžete ho programu pro relační data jako první třídy objekty .NET. Pro nové aplikace by mělo být první možnost výchozí, pokud model je potřeba. To vyžaduje vlastní podpory z výchozí zprostředkovatel ADO.NET.
+[Rozhraní Entity Framework](../data-tools/entity-data-model-tools-in-visual-studio.md) upřednostňované technologie Microsoft ORM. Můžete ho programu pro relační data jako první třídy objekty .NET. Pro nové aplikace by mělo být první možnost výchozí, pokud model je potřeba. To vyžaduje vlastní podpory z výchozí zprostředkovatel ADO.NET.
 
-[LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
-Starší generace objekt relační mapper. Funguje dobře pro méně složitých scénářů, ale už v active vývoj.
+[Technologie LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md) k objektu relační mapper starší generace. Funguje dobře pro méně složitých scénářů, ale už v active vývoj.
 
 [Datové sady](../data-tools/dataset-tools-in-visual-studio.md)  
 Nejstarší ze tří technologií modelování. Je určený hlavně pro rychlý vývoj aplikací "forms over data", ve kterých nejsou zpracování obrovské objemy dat nebo provádění složitých dotazů nebo transformací. Objekt datové sady se skládá z DataTable a DataRow objektů, které logicky mnohem víc než objekty .NET vypadat podobně jako objekty databáze SQL. Pro poměrně jednoduché aplikace založené na zdroje dat SQL datové sady stále může být vhodné použít.
@@ -115,39 +115,31 @@ Další informace o připojení k databázím z aplikací C++, najdete v části
 
 ## <a name="python"></a>Python
 
-Nainstalujte [Python Tools pro Visual Studio](http://microsoft.github.io/PTVS/) společně s vaše oblíbené framework Python k vytvoření aplikací CPython nebo IronPython (.NET). Nástroje Python Tools pro Visual Studio web má několik kurzy o připojení k datům, včetně [rozhraní Django a databáze SQL v Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-SQL-Database-on-Azure), [Django a MySQL v Azure](https://github.com/Microsoft/PTVS/wiki/Django-and-MySQL-on-Azure) a [Bottle a MongoDB na Azure](https://github.com/Microsoft/PTVS/wiki/Bottle-and-MongoDB-on-Azure).
+Nainstalujte [Python podporují v sadě Visual Studio](../python/python-in-visual-studio.md) vytvářet aplikace Python. Dokumentace k Azure má několik kurzy o připojení k datům, včetně následujících:
+- [Django a databáze SQL v Azure](/azure/app-service/app-service-web-get-started-python)
+- [Django a MySQL v Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
+- Práce s [objekty BLOB](/azure/storage/blobs/storage-quickstart-blobs-python), [soubory](/azure/storage/files/storage-python-how-to-use-file-storage), [fronty](/azure/storage/queues/storage-python-how-to-use-queue-storage), a [tabulky (DB kosmetický salón)](/azure/cosmos-db/table-storage-how-to-use-python).
 
 ## <a name="related-topics"></a>Související témata
 
-[Data, zařízení a analýzy](https://msdn.microsoft.com/data-and-devices)  
-Poskytuje úvod do inteligentního cloudem Microsoftu, včetně Cortana Analytics Suite a podpora pro Internet věcí.
+[Data, zařízení a analýzy](https://msdn.microsoft.com/data-and-devices) obsahuje úvod do inteligentního cloudem Microsoftu, včetně Cortana Analytics Suite a podpora pro Internet věcí.
 
-[Microsoft Azure Storage](https://azure.microCsoft.com/documentation/services/storage/)  
-Popisuje Azure Storage a jak vytvářet aplikace pomocí Azure BLOB, tabulek, front a soubory.
+[Microsoft Azure Storage](https://azure.microCsoft.com/documentation/services/storage/) popisuje Azure Storage a jak vytvářet aplikace pomocí Azure BLOB, tabulek, front a soubory.
 
-[Databáze Azure SQL](https://azure.microsoft.com/documentation/services/sql-database/)  
-Popisuje, jak se připojit k databázi SQL Azure, relační databáze jako služba.
+[Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/) popisuje, jak se připojit k databázi SQL Azure, relační databáze jako služba.
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
-Popisuje nástroje, které usnadňují návrh, zkoumání, testování a nasazení připojené data aplikací a databází.
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) popisuje nástroje, které usnadňují návrh, zkoumání, testování a nasazení připojené data aplikací a databází.
 
-[ADO.NET](/dotnet/framework/data/adonet/index)  
-Popisuje architekturu ADO.NET a jak pomocí třídy ADO.NET spravovat data aplikací a využívat zdroje dat a XML.
+[ADO.NET](/dotnet/framework/data/adonet/index) popisuje architekturu ADO.NET a jak pomocí třídy ADO.NET spravovat data aplikací a využívat zdroje dat a XML.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)  
-Popisuje postup vytvoření dat aplikací, které umožňují vývojářům programu pro koncepční model místo přímo na relační databázi.
+[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) popisuje postup vytvoření dat aplikací, které umožňují vývojářům programu pro koncepční model místo přímo na relační databázi.
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)  
-Popisuje způsob použití [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] k nasazení služeb dat na webu nebo v intranetu, které implementují [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index) popisuje způsob použití [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] k nasazení služeb dat na webu nebo v intranetu, které implementují [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)  
-Obsahuje odkazy na témata, které vysvětlují, jak fungují data v řešeních pro systém Office. To zahrnuje informace o schématu orientované programování, ukládaní dat do mezipaměti a přístup k datům na serveru.
+[Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md) obsahuje odkazy na témata, které vysvětlují, jak fungují data v řešeních pro systém Office. To zahrnuje informace o schématu orientované programování, ukládaní dat do mezipaměti a přístup k datům na serveru.
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)  
-Popisuje možnosti dotazu, integrované do jazyka C# a Visual Basic a společného modelu pro dotazování relačních databází, dokumentů XML, datové sady a kolekce v paměti.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) jsou popsány možnosti dotazu, integrované do jazyka C# a Visual Basic a společného modelu pro dotazování relačních databází, dokumentů XML, datové sady a kolekce v paměti.
 
-[Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)  
-Popisuje práci s funkcí rozhraní .NET Framework XML data, ladění XSLT, XML a architektura jazyka XML.
+[Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) popisuje práci s funkcí rozhraní .NET Framework XML data, ladění XSLT, XML a architektura jazyka XML.
 
-[Dokumenty a data XML](/dotnet/standard/data/xml/index)  
-Poskytuje přehled globální a integrované sadu tříd, které pracují s dokumenty XML a data v rozhraní .NET Framework.
+[XML – dokumenty a Data](/dotnet/standard/data/xml/index) poskytuje přehled globální a integrované sadu tříd, které pracují s dokumenty XML a data v rozhraní .NET Framework.

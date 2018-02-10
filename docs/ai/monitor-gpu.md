@@ -1,3 +1,5 @@
+---
+---
 # <a name="monitoring-gpu-utilization"></a>Monitorování využití GPU
 Ke sledování využití GPU vzdáleného počítače se systémem Linux:
 

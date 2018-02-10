@@ -1,3 +1,5 @@
+---
+---
 # <a name="create-an-ai-project-from-existing-code"></a>Vytvoření projektu AI z existujícího kódu
 
 Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), je snadné tím existující kód Python, do projektu sady Visual Studio.

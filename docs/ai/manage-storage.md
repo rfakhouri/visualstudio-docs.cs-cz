@@ -1,3 +1,5 @@
+---
+---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Procházet úložiště k ukládání dat nebo stahování modely a protokoly
 
 Můžete procházet všechny úložiště na vzdáleném počítači nebo sdílenou složku Azure umožnit odesílání dat nebo stahování modely a protokoly. Nebo pokud chcete získat přístup, protokoly a úlohy vstupů pro konkrétní úlohy, že které můžete provést také v prohlížeči úlohy

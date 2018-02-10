@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -12,21 +12,23 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords: MSBuild, reserved properties
+helpviewer_keywords:
+- MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-caps.latest.revision: "29"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 136e488f78090211f4c63f685338d61556982b9d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 89610426b944c3b3948c23c246337fd7aa9c1af8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Vyhrazené a známé vlastnosti nástroje MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]poskytuje sadu předdefinovaných vlastností, které obsahují informace o souboru projektu a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] binární soubory. Tyto vlastnosti jsou vyhodnocovány v stejným způsobem jako jiné [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vlastnosti. Chcete-li například použít `MSBuildProjectFile` vlastnost, zadáte `$(MSBuildProjectFile)`.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje sadu předdefinovaných vlastností, které obsahují informace o souboru projektu a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] binární soubory. Tyto vlastnosti jsou vyhodnocovány v stejným způsobem jako jiné [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vlastnosti. Chcete-li například použít `MSBuildProjectFile` vlastnost, zadáte `$(MSBuildProjectFile)`.  
   
  MSBuild používá předdefinovat vyhrazené a známé vlastnosti hodnoty v následující tabulce. Rezervované vlastnosti nelze přepsat, ale dobře známé vlastnosti lze přepsat pomocí vlastnosti stejně jako s názvem prostředí, globální vlastnosti nebo vlastnosti, které jsou deklarované v souboru projektu.  
   
@@ -36,9 +38,9 @@ ms.lasthandoff: 12/22/2017
 |Vlastnost|Popis|Vyhrazené nebo Well-Known|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|Absolutní cesta ke složce kde [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] binární soubory, které jsou právě používány nacházejí (například C:\Windows\Microsoft.Net\Framework\\*Cisloverze*). Tato vlastnost je užitečná, pokud máte k odkazování na soubory v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] adresáře.<br /><br /> Nezahrnujte konečné zpětné lomítko na tuto vlastnost.|Vyhrazené|  
-|`MSBuildExtensionsPath`|Byla zavedená v rozhraní .NET Framework 4: není žádný rozdíl mezi výchozí hodnoty `MSBuildExtensionsPath` a `MSBuildExtensionsPath32`. Můžete nastavit proměnné prostředí `MSBUILDLEGACYEXTENSIONSPATH` na nenulovou hodnotu povolit chování na výchozí hodnotu `MSBuildExtensionsPath` v dřívějších verzích.<br /><br /> V rozhraní .NET Framework 3.5 a starší, výchozí hodnota `MSBuildExtensionsPath` odkazuje na cestu MSBuild podsložku \Program Files\ nebo \Program soubory (x86) složky, v závislosti na počtu bitů aktuálním procesu. Pro 32bitový proces na 64bitový počítač, například tuto vlastnost odkazuje na složce \Program Files (x86). Pro 64bitový proces na 64bitový počítač tato vlastnost odkazuje na složce \Program Files.<br /><br /> Nezahrnujte konečné zpětné lomítko na tuto vlastnost.<br /><br /> Toto umístění je užitečné místo pro soubory vlastní cíl. Cílové soubory například může nainstalovat na \Program Files\MSBuild\MyFiles\Northwind.targets a pak importovat v souborech projektu pomocí tohoto kódu XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Známé|  
-|`MSBuildExtensionsPath32`|Cestu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podsložku \Program soubory nebo složky \Program Files (x86). Tato cesta vždycky směřuje na 32-bit \Program složka souborů na 32bitový počítač a \Program soubory (x86) na 64bitový počítač. Viz také `MSBuildExtensionsPath` a `MSBuildExtensionsPath64`.<br /><br /> Nezahrnujte konečné zpětné lomítko na tuto vlastnost.|Známé|  
-`MSBuildExtensionsPath64`|Cestu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podsložky ve složce \Program Files. Pro 64bitový počítač tato cesta vždycky směřuje na složce \Program Files. Pro 32bitový počítač je tato cesta je prázdná. Viz také `MSBuildExtensionsPath` a `MSBuildExtensionsPath32`.<br /><br /> Nezahrnujte konečné zpětné lomítko na tuto vlastnost.|Známé|  
+|`MSBuildExtensionsPath`|Byla zavedená v rozhraní .NET Framework 4: není žádný rozdíl mezi výchozí hodnoty `MSBuildExtensionsPath` a `MSBuildExtensionsPath32`. Můžete nastavit proměnné prostředí `MSBUILDLEGACYEXTENSIONSPATH` na nenulovou hodnotu povolit chování na výchozí hodnotu `MSBuildExtensionsPath` v dřívějších verzích.<br /><br /> V rozhraní .NET Framework 3.5 a starší, výchozí hodnota `MSBuildExtensionsPath` odkazuje na cestu MSBuild podsložku \Program Files\ nebo \Program soubory (x86) složky, v závislosti na počtu bitů aktuálním procesu. Pro 32bitový proces na 64bitový počítač, například tuto vlastnost odkazuje na složce \Program Files (x86). Pro 64bitový proces na 64bitový počítač tato vlastnost odkazuje na složce \Program Files.<br /><br /> Nezahrnujte konečné zpětné lomítko na tuto vlastnost.<br /><br /> Toto umístění je užitečné místo pro soubory vlastní cíl. Cílové soubory například může nainstalovat na \Program Files\MSBuild\MyFiles\Northwind.targets a pak importovat v souborech projektu pomocí tohoto kódu XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Well-Known|  
+|`MSBuildExtensionsPath32`|Cestu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podsložku \Program soubory nebo složky \Program Files (x86). Tato cesta vždycky směřuje na 32-bit \Program složka souborů na 32bitový počítač a \Program soubory (x86) na 64bitový počítač. Viz také `MSBuildExtensionsPath` a `MSBuildExtensionsPath64`.<br /><br /> Nezahrnujte konečné zpětné lomítko na tuto vlastnost.|Well-Known|  
+`MSBuildExtensionsPath64`|Cestu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podsložky ve složce \Program Files. Pro 64bitový počítač tato cesta vždycky směřuje na složce \Program Files. Pro 32bitový počítač je tato cesta je prázdná. Viz také `MSBuildExtensionsPath` a `MSBuildExtensionsPath32`.<br /><br /> Nezahrnujte konečné zpětné lomítko na tuto vlastnost.|Well-Known|  
 |`MSBuildLastTaskResult`|`true`Pokud předchozí úloha dokončeno bez chyb (i když došlo k upozorněním), nebo `false` Pokud předchozí úloha došlo k chybám. Obvykle když dojde k chybě v úloze, chyba je poslední, co se děje v tomto projektu. Hodnota této vlastnosti je proto nikdy `false`, s výjimkou v těchto scénářích:<br /><br /> – Když `ContinueOnError` atribut [Task – Element (MSBuild)](../msbuild/task-element-msbuild.md) je nastaven na `WarnAndContinue` (nebo `true`) nebo `ErrorAndContinue`.<br /><br /> – Když `Target` má [OnError – Element (MSBuild)](../msbuild/onerror-element-msbuild.md) jako podřízený element.|Vyhrazené|  
 |`MSBuildNodeCount`|Maximální počet souběžných procesů, které se používají při vytváření. Toto je hodnota, která jste zadali pro **/maxcpucount** na příkazovém řádku. Pokud jste zadali **/maxcpucount** bez zadání hodnoty, pak `MSBuildNodeCount` určuje počet procesorů v počítači. Další informace najdete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md) a [sestavování více projektů současně](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).|Vyhrazené|  
 |`MSBuildProgramFiles32`|Umístění složky 32bitový program; například `C:\Program Files (x86)`.<br /><br /> Nezahrnujte konečné zpětné lomítko na tuto vlastnost.|Vyhrazené|  

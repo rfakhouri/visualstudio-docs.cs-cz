@@ -1,40 +1,31 @@
 ---
-title: "Používání atributu IntelliSense | Microsoft Docs"
+title: Visual Studio IntelliSense | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
-- IntelliSense, Complete Word
-- IntelliSense, completion mode
-- parameter information
-- IntelliSense, List Members
-- Quick Info
-- Parameter Info
+- Quick info
+- Parameter info
+- Complete word
+- List members
 - IntelliSense [Visual Studio]
-- IntelliSense, suggestion mode
-- IntelliSense, Parameter Info
-- IntelliSense, customizing
-- Complete Word
-- IntelliSense
-- List Members
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 42e34f5933d06bf9021ff8e0cab5b12f316ef52e
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/09/2018
 ---
-# <a name="using-intellisense"></a>Používání atributu IntelliSense
+# <a name="using-intellisense-in-visual-studio"></a>Používání atributu IntelliSense v sadě Visual Studio
 
 IntelliSense je obecný termín pro několik funkcí: seznamy členů, informace o parametrech, rychlé informace a dokončování slov. Tyto funkce umožňují získat další informace o kódu, který používáte, zachovat si přehled o parametrech, které píšete, a přidávat volání vlastností a metod s pomocí několika klávesových úhozů.
 
@@ -66,7 +57,7 @@ Parametr tučně označuje další parametr, který je vyžadován při zadává
 
 Když opatřujete poznámkami funkce a parametry s komentáři XML dokumentace, komentáře se zobrazí jako informace o parametru. Další informace najdete v tématu [zadávání komentářů ke kódu XML](../ide/supplying-xml-code-comments.md).
 
-Informace o parametrech můžete vyvolat ručně tak, že zvolíte **upravit** > **IntelliSense** > **informace o parametrech**, stisknutím klávesy **Ctrl**   +  **Shift** + **místo**, nebo výběrem **informace o parametrech** tlačítka na panelu nástrojů editoru.
+Informace o parametrech můžete vyvolat ručně tak, že zvolíte **upravit** > **IntelliSense** > **informace o parametrech**, stisknutím klávesy **Ctrl **  +  **Shift** + **místo**, nebo výběrem **informace o parametrech** tlačítka na panelu nástrojů editoru.
 
 ## <a name="quick-info"></a>Rychlé informace
 
@@ -76,7 +67,7 @@ Rychlé informace zobrazí úplnou deklaraci pro libovolný identifikátor ve va
 
 Když vyberete člena z **vypsat členy** pole, se také zobrazí rychlé informace.
 
-![Informace o parametrech v a C &#35; souboru kódu](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![Informace o parametrech v a C & #35; souboru kódu](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
 
 Rychlé informace můžete vyvolat ručně tak, že zvolíte **upravit** > **IntelliSense** > **rychlé informace**, stisknutím klávesy **Ctrl**  +  **I**, nebo výběrem **rychlé informace** tlačítka na panelu nástrojů editoru.
 
@@ -86,7 +77,7 @@ Můžete vypnout rychlé informace pro C++ – kód přechodem na **nástroje** 
 
 ## <a name="complete-word"></a>Dokončit slovo
 
-Dokončení Word dokončí zbytek proměnnou, příkaz nebo název funkce po zadání dostatečný počet znaků k rozlišení termín. Dokončení Word můžete vyvolat výběrem **upravit** > **IntelliSense** > **dokončení Word**, stisknutím klávesy **Ctrl**  +  **Místo**, nebo výběrem **dokončení Word** tlačítka na panelu nástrojů editoru.
+Dokončení Word dokončí zbytek proměnnou, příkaz nebo název funkce po zadání dostatečný počet znaků k rozlišení termín. Dokončení Word můžete vyvolat výběrem **upravit** > **IntelliSense** > **dokončení Word**, stisknutím klávesy **Ctrl** + **Místo**, nebo výběrem **dokončení Word** tlačítka na panelu nástrojů editoru.
 
 ## <a name="intellisense-options"></a>Možnosti technologie IntelliSense
 
@@ -110,7 +101,7 @@ MessageBox( hWnd, "String literal|")
 
 ## <a name="see-also"></a>Viz také
 
-[Specifické pro jazyk Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)  
+[Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)  
 [C# IntelliSense](../ide/visual-csharp-intellisense.md)  
 [JavaScript IntelliSense](../ide/javascript-intellisense.md)  
 [Psaní a refaktoring kódu (C++)](/cpp/ide/writing-and-refactoring-code-cpp)  

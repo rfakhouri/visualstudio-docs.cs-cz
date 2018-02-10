@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e590b0b0451864c69d548bb643ed4e915f08ad96
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus poskytuje metodu pro vytváření odkazů mezi modely a z dalších nástrojů do modelů. Můžete například propojit modely jazyka domény (DSL) a modely UML. Můžete vytvořit integrované sadu DSL, linky.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus poskytuje metodu pro vytváření odkazů mezi modely a z dalších nástrojů do modelů. Můžete například propojit modely jazyka domény (DSL) a modely UML. Můžete vytvořit integrované sadu DSL, linky.  
   
  ModelBus umožňuje vytvořit jedinečný odkaz na modelu nebo na konkrétní prvku v modelu. Tento odkaz může být uložená mimo modelu, například v elementu v jiného modelu. Když při novější příležitosti nástroj chce získat přístup k elementu, bude infrastruktury modelu sběrnice spouštění na odpovídající model a vrátí element. Pokud chcete, můžete zobrazit modelu pro uživatele. Pokud soubor nelze použít v jeho předchozí umístění, bude ModelBus požádat uživatele, aby ji najít. Pokud uživatel vyhledá soubor, ModelBus opraví všechny odkazy na tento soubor.  
   
@@ -66,11 +67,11 @@ ms.lasthandoff: 01/13/2018
  Složka `ModelBusAdapters\bin\*` obsahuje sestavení vytvořené `Dsl` projektu a `ModelBusAdapters` projektu. Chcete-li tento DSL z jiné DSL, měli byste importovat tyto sestavení.  
   
 ### <a name="making-sure-that-elements-can-be-referenced"></a>A ujistěte se, že může být odkazováno elementy  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Adaptéry ModelBus použijte identifikátor guid elementu k určení, ve výchozím nastavení. Tyto identifikátory musí zachovat proto v souboru modelu.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Adaptéry ModelBus použijte identifikátor guid elementu k určení, ve výchozím nastavení. Tyto identifikátory musí zachovat proto v souboru modelu.  
   
 ##### <a name="to-ensure-that-element-ids-are-persisted"></a>Zajistit, že element jsou nastavené jako trvalé ID  
   
-1.  Otevřete DslDefinition.dsl.  
+1.  Open DslDefinition.dsl.  
   
 2.  V Průzkumníku DSL rozbalte **chování serializace Xml**, pak **Data třídy**.  
   
@@ -143,7 +144,7 @@ ms.lasthandoff: 01/13/2018
 3.  V projektu ladění experimentální instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], přidejte soubory, které jsou instancemi třídy každý DSL.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ModelBus můžete řešit pouze odkazy na modely, které jsou položky ve stejné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení. Odkaz na soubor modelu nelze například vytvořit v jiné části systému souborů.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus můžete řešit pouze odkazy na modely, které jsou položky ve stejné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení. Odkaz na soubor modelu nelze například vytvořit v jiné části systému souborů.  
   
 4.  Umožňuje vytvořit některé prvky a odkazy v instanci zveřejněné DSL a uložte jej.  
   

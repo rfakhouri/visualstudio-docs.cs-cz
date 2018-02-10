@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b9a7046930d12ebb940820eb25c4563b0a3213e3
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b72a86f10c6e864406929fdccfb59bdd9393752e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Návod: Konfigurace a používání vlastní sady pravidel
 
@@ -106,7 +106,7 @@ Nyní můžete spustit analýza kódu v projektu RuleSetSample a vyhledejte vše
   
 2.  V okně Seznam chyb, klikněte na **upozornění** a klikněte **popis** záhlaví sloupce seřadíte upozornění alfanumericky.  
   
-     V reálné aplikaci by opravit jakékoli porušení pravidel vhodné v tomto okamžiku opravě nebo volitelně vypnout nebo potlačit pravidlo, je-li určit, že nebylo vhodné řešení. Další informace najdete v tématu [potlačení upozornění s použitím atributu SuppressMessage](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md).  
+     V reálné aplikaci by opravit jakékoli porušení pravidel vhodné v tomto okamžiku opravě nebo volitelně vypnout nebo potlačit pravidlo, je-li určit, že nebylo vhodné řešení. Další informace najdete v tématu [potlačení upozornění](../code-quality/in-source-suppression-overview.md).
   
 3.  Všimněte si CA1704 upozornění. Tato porušení na toto pravidlo znamenat, že "zvažte poskytuje více smysluplný název pro parametry." Může opravte problém v kódu nebo můžete zakázat pravidla, jak je popsáno v dalším postupu.  
   

@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -18,16 +18,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: "21"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 Visual Studio hostitelů [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k načtení a vytvoření spravované projekty. Protože [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zodpovídá za projektu, téměř každý projekt v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] můžete v úspěšně použít formát [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i v případě projektu byla vytvořena pomocí různých nástrojů a má vlastní sestavení proces.  
@@ -53,10 +54,10 @@ Condition=" '$(Configuration)' == 'Release' "
 Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' "  
 ```  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Hledat v podmínky na `PropertyGroup`, `ItemGroup`, `Import`, vlastnost a elementy položky pro tento účel.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Hledat v podmínky na `PropertyGroup`, `ItemGroup`, `Import`, vlastnost a elementy položky pro tento účel.  
   
 ## <a name="additional-build-actions"></a>Další akce sestavení  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Umožňuje změnit název položky typu souboru, do projektu s **akce sestavení** vlastnost [vlastnosti souboru](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) okno. `Compile`, `EmbeddedResource`, `Content`, a `None` názvy typů položek jsou vždy uvedeny v této nabídce společně s žádné jiné položky typu názvy už v projektu. Aby se žádné názvy typů vlastní položky jsou vždy k dispozici v této nabídce, můžete přidat názvy typ položky s názvem `AvailableItemName`. Například přidáním následující k souboru projektu bude přidáte vlastní typ `JScript` do této nabídky pro všechny projekty, které ho importovat:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umožňuje změnit název položky typu souboru, do projektu s **akce sestavení** vlastnost [vlastnosti souboru](http://msdn.microsoft.com/en-us/013c4aed-08d6-4dce-a124-ca807ca08959) okno. `Compile`, `EmbeddedResource`, `Content`, a `None` názvy typů položek jsou vždy uvedeny v této nabídce společně s žádné jiné položky typu názvy už v projektu. Aby se žádné názvy typů vlastní položky jsou vždy k dispozici v této nabídce, můžete přidat názvy typ položky s názvem `AvailableItemName`. Například přidáním následující k souboru projektu bude přidáte vlastní typ `JScript` do této nabídky pro všechny projekty, které ho importovat:  
   
 ```xml  
 <ItemGroup>  
@@ -91,7 +92,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Při sestavování uvnitř [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vlastnost `$(BuildingInsideVisualStudio)` je nastaven na `true`. Tímto lze v souborech projektu nebo .targets způsobí sestavení chovat jinak.  
   
 ## <a name="displaying-properties-and-items"></a>Zobrazení vlastností a položek  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]rozpozná určité názvy a hodnoty vlastností. Například následující vlastnost v projektu způsobí **aplikace Windows** se objeví v **typ aplikace** pole **Návrhář projektu**.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozpozná určité názvy a hodnoty vlastností. Například následující vlastnost v projektu způsobí **aplikace Windows** se objeví v **typ aplikace** pole **Návrhář projektu**.  
   
 ```xml  
 <OutputType>WinExe</OutputType>  
@@ -99,7 +100,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  Hodnota vlastnosti se dá upravit v **Návrhář projektu** a uložit v souboru projektu. -Li tato vlastnost zadána neplatná hodnota tak, že ručně upravíte, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se zobrazit upozornění při načtení projektu a nahraďte neplatná hodnota výchozí hodnotu.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Jste srozuměni s tím výchozí hodnoty pro některé vlastnosti. Tyto vlastnosti nebude do souboru projektu jako trvalý, pokud mají jiné než výchozí hodnoty.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Jste srozuměni s tím výchozí hodnoty pro některé vlastnosti. Tyto vlastnosti nebude do souboru projektu jako trvalý, pokud mají jiné než výchozí hodnoty.  
   
  Vlastnosti s libovolné názvy nejsou zobrazeny v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Chcete-li změnit libovolné vlastnosti v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], musíte v editoru XML otevřete soubor projektu a upravit je ručně. Další informace najdete v tématu [úpravy souborů projektu v sadě Visual Studio](#BKMK_EditingProjects) později v tomto tématu.  
   
@@ -126,7 +127,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Aby bylo možné najít a spustit výstup sestavení a připojit ladicí program, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musí vlastnosti `OutputPath`, `AssemblyName`, a `OutputType` správně definované. Ladicí program se nepodaří připojit, pokud proces vytváření nezpůsobila kompilátoru generovat soubor .pdb.  
   
 ## <a name="design-time-target-execution"></a>Provádění cílů v době návrhu  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]pokusí se provést cílů se některé názvy při jeho načtení projektu. Zahrnout tyto cíle `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, a `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Spustí těmito cíli tak, aby kompilátor jde inicializovat na poskytovat technologii IntelliSense, může být inicializována ladicího programu a odkazy zobrazí v Průzkumníku řešení může být vyřešen. Pokud nejsou k dispozici tyto cíle, projekt bude zatížení a sestavení správně, ale dojde v době návrhu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebude plně funkční.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pokusí se provést cílů se některé názvy při jeho načtení projektu. Zahrnout tyto cíle `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, a `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Spustí těmito cíli tak, aby kompilátor jde inicializovat na poskytovat technologii IntelliSense, může být inicializována ladicího programu a odkazy zobrazí v Průzkumníku řešení může být vyřešen. Pokud nejsou k dispozici tyto cíle, projekt bude zatížení a sestavení správně, ale dojde v době návrhu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebude plně funkční.  
   
 ##  <a name="BKMK_EditingProjects"></a>Úpravy souborů projektu v sadě Visual Studio  
  Chcete-li upravit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu přímo, můžete otevřít soubor projektu v editoru Visual Studio XML.  
@@ -151,7 +152,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Základní [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] typy jsou definované v Microsoft.Build.Core.xsd a běžné typy používané [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jsou definovány v Microsoft.Build.CommonTypes.xsd. Schémata přizpůsobit tak, aby měli funkce IntelliSense a ověřování pro názvy typů vlastní položky, vlastnosti a úloh, můžete upravit Microsoft.Build.xsd nebo vytvořit vlastní schéma, které obsahuje schémata CommonTypes nebo Core. Pokud vytvoříte vlastní schéma, budete muset nasměrovat XML editor najít pomocí **vlastnosti** okno.  
   
 ## <a name="editing-loaded-project-files"></a>Úpravy načtených souborů projektu  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]ukládá do mezipaměti obsah souborů projektu a soubory importovat pomocí souborů projektu. Pokud chcete upravit soubor načíst projekt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vás automaticky vyzve k načtení projektu tak, aby tyto změny začnou platit. Ale pokud chcete upravit soubor importovat pomocí načíst projekt, budou existovat bez opětovného načtení výzvy a je nutné uvolnit a znovu načíst projekt ručně provést změny vstoupí v platnost.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ukládá do mezipaměti obsah souborů projektu a soubory importovat pomocí souborů projektu. Pokud chcete upravit soubor načíst projekt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vás automaticky vyzve k načtení projektu tak, aby tyto změny začnou platit. Ale pokud chcete upravit soubor importovat pomocí načíst projekt, budou existovat bez opětovného načtení výzvy a je nutné uvolnit a znovu načíst projekt ručně provést změny vstoupí v platnost.  
   
 ## <a name="output-groups"></a>Skupiny výstupu  
  Několik cílů, které jsou definované v Microsoft.Common.targets mít názvy končící na `OutputGroups` nebo `OutputGroupDependencies`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]volá tyto cíle, chcete-li získat konkrétní seznam výstupy projektu. Například `SatelliteDllsProjectOutputGroup` cíl vytvoří seznam všech satelitní sestavení vytvoří sestavení. Tyto skupiny výstupu jsou používány funkcí, jako je publikování, nasazení a odkazy na projekt na projekt. Načte a sestavení projektech, které je nedefinují [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale některé funkce nemusí fungovat správně.  

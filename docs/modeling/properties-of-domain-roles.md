@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6a2ae5a5e017980a6f7a5310ea3c76e49253249d
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 49539aea007a14eab68ad3f28d92d2e960618690
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="properties-of-domain-roles"></a>Vlastnosti rolí domény
 Vlastnosti v následující tabulce jsou přidružené k roli domény. Informace o rolích domény najdete v tématu [Principy modely, třídy a vztahy](../modeling/understanding-models-classes-and-relationships.md). Další informace o tom, jak používat tyto vlastnosti najdete v tématu [přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md).  
@@ -37,7 +38,7 @@ Vlastnosti v následující tabulce jsou přidružené k roli domény. Informace
 |Kategorie|Kategorie, pod kterým generovaného vlastnost se zobrazí v **vlastnosti** okno v Návrháři vygenerovaný. Pokud je tato vlastnost prázdná, pak vlastnost generovaného se objeví pod uzlem **různé** kategorie|< žádné\>|  
 |Popis|Popis, který se používá k dokumentu kódu a používá se v uživatelském rozhraní vygenerovaný návrháře.<br /><br /> Popis se zobrazí v popisu tlačítka technologie Intellisense pro vlastnost vygenerovaný na třídě player role.|`Description for`*úplný název role*|  
 |Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro role domény.|Upravená hodnota vlastnosti Name.|  
-|Nápověda – klíčové slovo|Volitelné klíčové slovo, které se používá k indexu F1 – Nápověda pro role domény.|\<žádné >|  
+|Nápověda – klíčové slovo|Volitelné klíčové slovo, které se používá k indexu F1 – Nápověda pro role domény.|\<none>|  
 |Zobrazovaný název vlastnosti|Název, který se zobrazí v Návrháři generovaný pro vlastnost generovaného role.|Upravená hodnota vlastnosti název vlastnosti.|  
   
 > [!NOTE]

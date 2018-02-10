@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,16 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: "6"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="mt-task"></a>MT – úloha
 Zabalí nástroj Microsoft Manifest mt.exe. Další informace najdete v tématu "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
@@ -55,11 +56,11 @@ Zabalí nástroj Microsoft Manifest mt.exe. Další informace najdete v tématu 
 |**EnableDPIAwareness**|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, přidá do manifestu informace, které označí aplikace jako rozlišením DPI. Zápis palec aplikace umožňuje uživatelské rozhraní vypadat dobře, konzistentně napříč celou řadu nastavení zobrazení vysokou hodnotou DPI.<br /><br /> Další informace najdete v tématu "Vysoké DPI" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**GenerateCatalogFiles**|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, generuje soubory katalogu definice (CDF).<br /><br /> Další informace najdete v tématu **/makecdfs** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**GenerateCategoryTags**|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, způsobí, že generování značek kategorie. Pokud tento parametr je `true`, **ManifestFromManagedAssemblyMT** musí být zadaná také parametr úloh.<br /><br /> Další informace najdete v tématu **/category** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
-|**InputResourceManifests**|Volitelné **řetězec** parametr.<br /><br /> Vstup manifestu z prostředku typu RT_MANIFEST, který má zadaný identifikátor. Zadejte prostředek, formuláře,  *\<soubor > [***;** *[***#***] < ID_prostředku >]*, kde nepovinný `resource_id` parametr je číslo záporné, 16 bitů.<br /><br /> Pokud žádné `resource_id` je zadán, bude použita výchozí hodnota CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Další informace najdete v tématu **/inputresource** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
+|**InputResourceManifests**|Volitelné **řetězec** parametr.<br /><br /> Vstup manifestu z prostředku typu RT_MANIFEST, který má zadaný identifikátor. Zadejte prostředek, formuláře,  *\<soubor > [***;*** [***#***] < ID_prostředku >]*, kde nepovinný `resource_id` parametr je číslo záporné, 16 bitů.<br /><br /> Pokud žádné `resource_id` je zadán, bude použita výchozí hodnota CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Další informace najdete v tématu **/inputresource** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**ManifestFromManagedAssembly**|Volitelné **řetězec** parametr.<br /><br /> Generuje manifest ze zadané spravované sestavení.<br /><br /> Další informace najdete v tématu **/managedassemblyname** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**ManifestToIgnore**|Volitelné **řetězec** parametr.<br /><br /> (Nepoužívá.)|  
 |**OutputManifestFile**|Volitelné **řetězec** parametr.<br /><br /> Určuje název manifestu výstup. Pokud je tento parametr vynechán a pouze jeden manifest pracuje na, že manifest se upravují na místě.<br /><br /> Další informace najdete v tématu **/out** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
-|**OutputResourceManifests**|Volitelné **řetězec** parametr.<br /><br /> Výstup manifest prostředku typu RT_MANIFEST, který má zadaný identifikátor. Prostředek je ve formátu,  *\<soubor > [***;** *[***#***] < ID_prostředku >]*, kde nepovinný `resource_id` parametr je číslo záporné, 16 bitů.<br /><br /> Pokud žádné `resource_id` je zadán, bude použita výchozí hodnota CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Další informace najdete v tématu **/outputresource** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
+|**OutputResourceManifests**|Volitelné **řetězec** parametr.<br /><br /> Výstup manifest prostředku typu RT_MANIFEST, který má zadaný identifikátor. Prostředek je ve formátu,  *\<soubor > [***;*** [***#***] < ID_prostředku >]*, kde nepovinný `resource_id` parametr je číslo záporné, 16 bitů.<br /><br /> Pokud žádné `resource_id` je zadán, bude použita výchozí hodnota CREATEPROCESS_MANIFEST_RESOURCE (1).<br /><br /> Další informace najdete v tématu **/outputresource** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**RegistrarScriptFile**|Volitelné **řetězec** parametr.<br /><br /> Určuje název souboru registrátora skript (.) bez registrace manifestu podpora modelu COM pomocí.<br /><br /> Další informace najdete v tématu **/rgs** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**ReplacementsFile**|Volitelné **řetězec** parametr.<br /><br /> Určuje soubor, který obsahuje hodnoty pro replaceable řetězce v souboru registrátora skript (.).<br /><br /> Další informace najdete v tématu **/replacements** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**ResourceOutputFileName**|Volitelné **řetězec** parametr.<br /><br /> Určuje prostředky výstupního souboru použitého pro vložení manifestu do výstupu projektu @.|  

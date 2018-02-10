@@ -13,12 +13,13 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.workload: multiple
-ms.openlocfilehash: 3fa79518b564ca59b560e98bd32860f6d063077f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="common-quick-actions"></a>Běžné rychlé akce
 
@@ -58,7 +59,7 @@ End Function
 
 |  ID chyby | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |
-| CS0103 BC30002 | C# a Visual Basic | Visual Studio 2015 Update 2 |
+| CS0103, BC30002 | C# a Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="resolve-git-merge-conflict"></a>Vyřešte konflikt sloučení git
 
@@ -95,7 +96,7 @@ private void MyMethod()
 
 |  ID chyby | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |
-| CS8300 BC37284  | C# a Visual Basic | Visual Studio 2017 verze 15.3 |
+| CS8300, BC37284  | C# a Visual Basic | Visual Studio 2017 verze 15.3 |
 
 ### <a name="make-method-synchronous"></a>Vytvořte metodu synchronní
 
@@ -133,7 +134,7 @@ End Function
 
 |  ID chyby | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |
-| CS1998 BC42356 | C# a Visual Basic | Visual Studio 2015 Update 2 |
+| CS1998, BC42356 | C# a Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="make-method-asynchronous"></a>Vytvořte asynchronní metodu
 
@@ -171,7 +172,7 @@ End Function
 
 |  ID chyby | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |
-| CS4032 BC37057 | C# a Visual Basic | Visual Studio 2017 |
+| CS4032, BC37057 | C# a Visual Basic | Visual Studio 2017 |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Akce, které odeberte nepotřebné kódu
 
@@ -236,11 +237,11 @@ public MyMethod()
 
 |  ID diagnostiky | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |
-| CS0219 BC42024 | C# a Visual Basic | Visual Studio 2017 verze 15.3 |
+| CS0219, BC42024 | C# a Visual Basic | Visual Studio 2017 verze 15.3 |
 
 ### <a name="remove-type-from-default-value-expression"></a>Odebrat typ z **výchozí** hodnota výrazu
 
-Tato rychlá akce odebere vybraný typ hodnoty z výrazu výchozí hodnotu a používá [ `default` literálu](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) při kompilátor může odvodit typ výrazu.
+Tato rychlá akce odebere vybraný typ hodnoty z výrazu výchozí hodnotu a používá [výchozí literálu](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) při kompilátor může odvodit typ výrazu.
 
 ```csharp
 // Before
@@ -294,7 +295,7 @@ Debug.WriteLine("Hello")
 
 |  ID diagnostiky | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |
-| CS0103 BC30451 | C# a Visual Basic| Visual Studio 2015 Update 2 |
+| CS0103, BC30451 | C# a Visual Basic| Visual Studio 2015 Update 2 |
 
 ### <a name="add-missing-casesdefault-caseboth"></a>Přidejte chybějící případy nebo výchozího nebo obou případu
 
@@ -531,7 +532,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Převést na interpolované řetězce
 
-[Interpolované řetězce](/dotnet/csharp/language-reference/keywords/interpolated-strings) jsou snadný způsob, jak express řetězce s vložené proměnné, podobně jako  **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)**  metoda.  Tato akce rychlé rozpozná případech, kdy jsou řetězce zřetězených, nebo pomocí **String.Format**a změny využití interpolované řetězce.
+[Interpolované řetězce](/dotnet/csharp/language-reference/keywords/interpolated-strings) jsou snadný způsob, jak express řetězce s vložené proměnné, podobně jako ** [String.Format](https://msdn.microsoft.com/library/system.string.format.aspx) ** metoda.  Tato akce rychlé rozpozná případech, kdy jsou řetězce zřetězených, nebo pomocí **String.Format**a změny využití interpolované řetězce.
 
 ```csharp
 // Before
@@ -717,7 +718,7 @@ class MyClass4
 
 |  ID diagnostiky | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |
-| IDE0021 27 | C# 6.0 + | Visual Studio 2017 RTW |
+| IDE0021-27 | C# 6.0 + | Visual Studio 2017 RTW |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>Anonymní funkce převést na místní – funkce
 

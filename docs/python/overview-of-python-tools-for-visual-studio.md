@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4d2033e8912d6010adc8e83108a8b9ece1aa4b0e
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Práce s Python v sadě Visual Studio (Windows)
 
@@ -70,7 +70,7 @@ A. Python je obecně interpretovaný jazyk, se kterým je kód spouštět na vy�
 
 ## <a name="features-matrix"></a>Matice funkce
 
-Podpora v jazyce Python lze nainstalovat v následujících edicích sady Visual Studio, jak je popsáno v [Průvodce instalací](installing-python-support-in-visual-studio.md):
+Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual Studio, jak je popsáno v [Průvodce instalací](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (všechny edice)](https://www.visualstudio.com/vs/)
 - [Visual Studio 2015 (všechny edice)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
@@ -81,7 +81,7 @@ Podpora v jazyce Python lze nainstalovat v následujících edicích sady Visual
 - Visual Studio 2012 (Pro edice nebo vyšší)
 - Visual Studio 2010 SP1 (Pro edice nebo vyšší; vyžaduje .NET 4.5)
 
-Podporované funkce sady Visual Studio verze a edice:
+Funkce jsou plně podporované a udržovat jenom nejnovější verzi sady Visual Studio. Funkce jsou dostupné v starší verze, ale nejsou aktivně spravovány.
 
 | Podpora v jazyce Python | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
@@ -166,6 +166,8 @@ Podporované funkce sady Visual Studio verze a edice:
 | Vzdálené ladění (Windows, Mac OS X, Linux) | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; |
 | Interaktivní okno ladění | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
+
+<a name="matrix-profiling"></a>
 
 | Profilace | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

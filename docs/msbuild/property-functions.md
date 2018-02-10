@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 02/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: MSBuild, property functions
+helpviewer_keywords:
+- MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-caps.latest.revision: "33"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e77803150d747d05d8f6b0002814010c45244282
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d119b5baeccc762411aa8f7db4e4d02ba881c34d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="property-functions"></a>Funkce vlastností
 V rozhraní .NET Framework verze 4 a 4.5 funkce vlastností slouží k vyhodnocení nástroje MSBuild skripty. Funkce vlastností lze použít bez ohledu na vlastnosti se zobrazí. Na rozdíl od úloh funkce vlastností bylo možné použít mimo cíle a vyhodnocují před spuštěním jakékoli cíl.  
@@ -62,7 +64,7 @@ V rozhraní .NET Framework verze 4 a 4.5 funkce vlastností slouží k vyhodnoce
 
 -   System.Char  
 
--   Metodu System.Convert  
+-   System.Convert  
 
 -   System.DateTime  
 
@@ -185,7 +187,7 @@ V rozhraní .NET Framework verze 4 a 4.5 funkce vlastností slouží k vyhodnoce
 |int BitwiseXor (int první, int sekundu)|Provedení bitové operace `XOR` v prvním a druhém (první ^ druhý).|  
 |int BitwiseNot(int first)|Provedení bitové operace `NOT` (~ první).|  
 |BOOL IsOsPlatform (platformString řetězec)|Určete, zda je aktuální platforma operačního systému `platformString`. `platformString`musí být členem skupiny <xref:System.Runtime.InteropServices.OSPlatform>.|
-|BOOL IsOSUnixLike|Hodnota TRUE, pokud aktuální operační systém je v systému Unix.|
+|bool IsOSUnixLike|Hodnota TRUE, pokud aktuální operační systém je v systému Unix.|
 |řetězec NormalizePath (cesta parametry řetězec [])|Získá kanonizovaného úplnou cestu zadaná cesta a zajišťuje, že obsahuje znaků oddělujících správném adresáři pro aktuální operační systém.|
 |řetězec NormalizeDirectory (cesta parametry řetězec [])|Získá kanonizovaného úplnou cestu k adresáři zadaná a zajišťuje obsahuje znaků oddělujících správném adresáři pro aktuální operační systém a zajistit jeho obsahuje koncové lomítko.|
 |řetězec EnsureTrailingSlash(string path)|Pokud zadaná cesta k nemá ho přidat koncové lomítko. Pokud cesta je prázdný řetězec, nebude změněno.|
@@ -203,7 +205,7 @@ V rozhraní .NET Framework verze 4 a 4.5 funkce vlastností slouží k vyhodnoce
 
  Metadata může také zobrazit funkce vnořené vlastnosti. Další informace najdete v tématu [Batching](../msbuild/msbuild-batching.md).  
 
-##  <a name="msbuild-doestaskhostexist"></a>DoesTaskHostExist nástroje MSBuild  
+##  <a name="msbuild-doestaskhostexist"></a>MSBuild DoesTaskHostExist  
  `DoesTaskHostExist` Vlastnost funkce v nástroji MSBuild vrátí, zda hostitel úloh je aktuálně nainstalována zadaných hodnot runtime a architektura.  
 
  Tato vlastnost funkce má následující syntaxi:  
@@ -221,7 +223,7 @@ $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)
 $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 ```  
 
-##  <a name="msbuild-getdirectorynameoffileabove"></a>GetDirectoryNameOfFileAbove nástroje MSBuild  
+##  <a name="msbuild-getdirectorynameoffileabove"></a>MSBuild GetDirectoryNameOfFileAbove  
  MSBuild `GetDirectoryNameOfFileAbove` vlastnost funkce hledá soubor v adresáři vyšší než aktuální adresář v cestě.  
 
  Tato vlastnost funkce má následující syntaxi:  
@@ -236,7 +238,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
 
-##  <a name="msbuild-getpathoffileabove"></a>GetPathOfFileAbove nástroje MSBuild  
+##  <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove  
  `GetPathOfFileAbove` Vlastnost funkce v nástroji MSBuild vrací cestu k souboru, všechny předcházející. Je funkčně odpovídá volání
 
  ```<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />```

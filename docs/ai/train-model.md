@@ -7,15 +7,15 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: how-to article
-ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.workload: azure
-ms.openlocfilehash: af2307638209a54c7ce20df6412a1f95ea51d84d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- azure
+ms.openlocfilehash: 77eb12a8ffa0b40d83bcbe24326fb386eb0a4d9c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>Cvičení AI modely v Azure Batch AI
 
@@ -32,7 +32,7 @@ Je integrovaný s nástroji Visual Studio Tools pro AI tak dynamicky škálovat 
     
     ![Ukázka Galerie](media\train-model\batchai.png)
 
-3. Vyberte **zobrazení > Team Explorer...**  otevřete **Team Explorer** okno, ve kterém můžete připojit k webu GitHub nebo Visual Studio Team Services, nebo klonovat úložiště.
+3. Vyberte **zobrazení > Team Explorer... ** otevřete **Team Explorer** okno, ve kterém můžete připojit k webu GitHub nebo Visual Studio Team Services, nebo klonovat úložiště.
 
     ![Team explorer okno zobrazující Visual Studio Team Services, GitHub a klonování úložiště](media\train-model\team-explorer.png)
 

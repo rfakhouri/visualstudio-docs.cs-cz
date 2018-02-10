@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -22,16 +22,17 @@ helpviewer_keywords:
 - RC task (MSBuild (Visual C++))
 - MSBuild (Visual C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-caps.latest.revision: "10"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5398f3eb1aa140ed53d6734734528d5c89a104c8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="rc-task"></a>RC – úloha
 Zabalí nástroj Microsoft kompilátor prostředků Windows rc.exe. **RC** úloh zkompiluje prostředky, například kurzory, ikony, rastrové obrázky, dialogová okna a písem a do souboru prostředků (.res). Další informace najdete v tématu "Kompilátor prostředků" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
@@ -42,7 +43,7 @@ Zabalí nástroj Microsoft kompilátor prostředků Windows rc.exe. **RC** úloh
 |Parametr|Popis|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Volitelné **řetězec []** parametr.<br /><br /> Přidá do seznamu adresáře, které se vyhledávají zahrnout soubory adresář.<br /><br /> Další informace najdete v tématu **/I** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
-|**AdditionalOptions**|Volitelné **řetězec** parametr.<br /><br /> Seznam například příkazového řádku optionsor **"***/option1 /option2 /option#*". Pomocí tohoto parametru lze zadat parametry příkazového řádku, které nejsou reprezentovány jakékoliv **RC** parametr úloh.<br /><br /> Další informace najdete v tématu Možnosti v [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
+|**AdditionalOptions**|Volitelné **řetězec** parametr.<br /><br /> Seznam například příkazového řádku optionsor **"*** nebo možnost 1 /option2 /option#*". Pomocí tohoto parametru lze zadat parametry příkazového řádku, které nejsou reprezentovány jakékoliv **RC** parametr úloh.<br /><br /> Další informace najdete v tématu Možnosti v [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**Jazyková verze**|Volitelné **řetězec** parametr.<br /><br /> Určuje ID národního prostředí, který představuje jazyková verze použitá v prostředcích.<br /><br /> Další informace najdete v tématu **/l** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**IgnoreStandardIncludePath**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, brání kompilátor prostředků kontrola proměnné prostředí zahrnout při vyhledávání pro soubory hlaviček nebo soubory prostředků.<br /><br /> Další informace najdete v tématu **/x** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**NullTerminateStrings**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, ukončí všechny řetězce v tabulce řetězec hodnotu null.<br /><br /> Další informace najdete v tématu  **/n**  možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  

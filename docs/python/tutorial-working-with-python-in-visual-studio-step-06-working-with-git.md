@@ -7,21 +7,21 @@ ms.reviewer:
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
-ms.topic: get-started-article
-caps.latest.revision: 
+ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ce191ce01a89b7fc743562eaf430656f6952271
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: eb39d8807deb0c08b12b04128365c584d9bd8251
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="step-6-working-with-git"></a>Krok 6: Práce s Gitem
 
@@ -35,7 +35,7 @@ Toto téma popisuje vytvoření místní úložiště Git pro existující proje
 
   ![Další informace se zobrazí, když ukazatele myši na ovládací prvek Git v okně Visual Studio](media/working-with-git-01.png)
 
-1. **Team Explorer** také zobrazí se okno s Git zobrazíte možnosti výběrem hlavičku úložiště. **Synchronizace** podokně, jak je znázorněno, poskytuje možnosti pro publikování do vzdáleného úložiště.
+1. **Team Explorer** také zobrazí se okno s Git zobrazíte možnosti výběrem hlavičku úložiště. **Synchronizace** podokně, jak je znázorněno při výběru **Push** záhlaví, poskytuje možnosti pro publikování do vzdáleného úložiště.
 
   ![Průzkumník týmových projektů v sadě Visual Studio po vytvoření místní úložiště](media/working-with-git-02.png)
 
@@ -47,7 +47,7 @@ Toto téma popisuje vytvoření místní úložiště Git pro existující proje
 
   ![Průzkumník týmových projektů v sadě Visual Studio zobrazující větví](media/working-with-git-04.png)
 
-1. Pokud používáte místní úložiště, potvrzené změny přejděte přímo do úložiště. Pokud jste připojení k Vzdálené úložiště, vyberte **synchronizace** tak, aby nabízel vaše místní potvrzení.
+1. Pokud používáte místní úložiště, potvrzené změny přejděte přímo do úložiště. Pokud jste připojení k Vzdálené úložiště, vyberte záhlaví, vyberte **synchronizace** přepnout do **synchronizace** části a pracovat s uvedených existuje příkazů.
 
 ## <a name="going-deeper"></a>Budete hlubší
 

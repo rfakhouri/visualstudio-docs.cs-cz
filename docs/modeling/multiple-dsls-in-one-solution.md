@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f3c024fc6be841f5329f133ece35ed0ef7517eb3
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: e7b1ef7fc26cb0e46ecaf1853d6c9490016e68a5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Vícesouborové DSL v jediném řešení
 V rámci jedné řešení můžete balíček několik DSL, linky, tak, že jsou nainstalovány společně.  
@@ -45,7 +46,7 @@ V rámci jedné řešení můžete balíček několik DSL, linky, tak, že jsou 
   
 2.  Kombinování VSIX manifesty DSL, linky:  
   
-    1.  Otevřete * YourVsixProject ***\source.extension.manifest**.  
+    1.  Open *YourVsixProject***\source.extension.manifest**.  
   
     2.  Pro každý DSL, zvolte **přidat obsahu** a přidejte:  
   

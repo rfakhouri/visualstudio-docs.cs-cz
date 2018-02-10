@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a5351c359f708eeb1d2a9aa030f5b82337d38d56
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Nasazení DSL v MSI a VSIX
 Jazyk specifické pro doménu můžete nainstalovat na vašem počítači nebo na jiné počítače. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]musí být již nainstalován v cílovém počítači.  
@@ -75,7 +76,7 @@ Jazyk specifické pro doménu můžete nainstalovat na vašem počítači nebo n
   
 1.  Nastavit `InstalledByMsi` v manifestu rozšíření. To brání VSX se instaluje a odinstaluje kromě podle soubor MSI. To je důležité, pokud bude obsahovat další součásti v soubor MSI.  
   
-    1.  Otevřete DslPackage\source.extension.tt  
+    1.  Open DslPackage\source.extension.tt  
   
     2.  Vložte následující řádek před `<SupportedProducts>`:  
   
@@ -101,7 +102,7 @@ Jazyk specifické pro doménu můžete nainstalovat na vašem počítači nebo n
   
 5.  Přidat **CreateMsiSetupProject.tt** do projektu Dsl.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Vytvoří soubor s názvem **CreateMsiSetupProject.vdproj**.  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Vytvoří soubor s názvem **CreateMsiSetupProject.vdproj**.  
   
 6.  V Průzkumníku Windows, zkopírujte Dsl\\*.vdproj do nové složky s názvem instalační program.  
   

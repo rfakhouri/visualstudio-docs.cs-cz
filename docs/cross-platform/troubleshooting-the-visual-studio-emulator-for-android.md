@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: "23"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 02d8a524fd46640d4335140d683d5a0765556681
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 6d99892d42190e64c54213c2b6b9e52fdd22dfd8
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Poradce při potížích s emulátorem sady Visual Studio pro Android
 Toto téma obsahuje informace k řešení problémů, které mohou nastat při použití emulátor sady Visual Studio pro Android.  
@@ -69,7 +70,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
 ##  <a name="NoInstall"></a>Emulátor se instalace nezdaří.  
  Pokud nemáte nainstalovanou technologií Hyper-v., zobrazí se následující zpráva při pokusu o nainstalujte si emulátor. Musí mít počítač, který podporuje Hyper-v a musí být povolena.  
   
- ![Android &#95; Měnové unie &#95; instalace &#95; problém](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")  
+ ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")  
   
 > [!NOTE]
 >  Tato zpráva platí jak pro emulátor sady Visual Studio pro Android a emulátoru Windows Phone. Windows 8.1 a Windows 10 podporovat emulátor.  
@@ -134,7 +135,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
 -   Ve Správci technologie Hyper-V otevřete Správce virtuálních přepínačů a zkontrolujte, že máte dvě síťové přepínače; Ověřte, zda interní přepínač je první a druhý je externí.  
   
-     ![Android &#95; Měnové unie &#95; V &#95; Přepínač &#95; Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")  
+     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")  
   
      Pokud je nesprávné nastavení a používáte Windows 10, může pokusit [přeinstalujte síťová zařízení pomocí příkazu -d netcfg](http://windows.microsoft.com/en-us/windows-10/fix-network-connection-issues) (část 6).  
   
@@ -215,7 +216,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
          Zde se zobrazují vlastnosti adaptéru.  
   
-         ![Vlastnosti virtuálního adaptéru](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+         ![Virtual Adapter Properties](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
     3.  Pro tento adaptér se pouze položky, které je nutné vybrat v rámci **toto připojení používá následující položky** by měl být následující:  
   
@@ -243,7 +244,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
     -   Otevřete Hyper V a přejděte do Správce virtuálního přepínače. Vytvořit virtuální přepínač s názvem "Windows Phone emulátoru interní přepínač" a nastavte její typ připojení na **interní síti**.  
   
-         ![Správce virtuálního přepínače](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+         ![Virtual Switch Manager](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
      Nyní spusťte emulátor. By se měly fungovat.  
   

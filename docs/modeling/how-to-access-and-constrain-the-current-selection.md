@@ -4,18 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: Domain-Specific Language, accessing the current selection
+helpviewer_keywords:
+- Domain-Specific Language, accessing the current selection
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9eaf9d13d6c5bc81153d459dc592b99f9e893733
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 81036e04abc9eac2cbed2879839e95cce52166fc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Postupy: Přístup k aktuálnímu výběru a jeho omezení
 Když píšete příkaz nebo gesto obslužnou rutinu pro váš jazyk specifické pro doménu, můžete určit, jaký element klepli pravým tlačítkem myši uživatele. Některé tvary nebo pole můžete také zabránit ve výběru. Například můžete uspořádat, že když uživatel klikne na ikonu dekoratéra, obrazec, který jej obsahuje místo něho se vybere. Omezíte-výběr tímto způsobem snižuje počet obslužných rutin, které máte k zápisu. Také umožňuje jednodušší pro uživatele, který můžete klikněte kamkoli do tvaru bez nutnosti vyhnout dekoratéra.  

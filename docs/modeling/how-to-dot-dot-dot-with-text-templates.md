@@ -4,17 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fdbed997737b772b22d88b0542d212214e2b808f
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: 47824561813dfc422dfb19460f1c90f7ed78d1ad
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to--with-text-templates"></a>Postupy pro textové šablony
 Textové šablony v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nabízejí praktický způsob generování textu jakéhokoli druhu. Textové šablony můžete použít pro generování textu za běhu v rámci vaší aplikace a v době návrhu k vygenerování některých kódu projektu. Toto téma shrnuje nejčastěji výzva "Jak se dá...?" otázky.  

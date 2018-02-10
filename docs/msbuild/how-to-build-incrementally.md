@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -12,16 +12,17 @@ helpviewer_keywords:
 - incremental builds
 - MSBuild, building incrementally
 ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
-caps.latest.revision: "21"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 73931a8be39933c727225d582bc4e4e35b805d7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 622daf457935514cb1f5a512712be6f70e4e648e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-build-incrementally"></a>Postupy: Přírůstkové sestavování
 Když vytvoříte nový projekt, je důležité, který dříve vytvořené součásti, které jsou stále aktuální nejsou znovu sestavit. Pokud jsou všechny cíle pokaždé, když, bude každé sestavení trvat dlouhou dobu pro dokončení. Chcete-li povolit přírůstkové sestavení (sestavení, ve kterém jsou zastaralé, tyto cíle, které nebyly byla vytvořená před nebo které cílí jenom se znovu sestavit), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) můžete porovnat časová razítka vstupní soubory s časová razítka výstupních souborů a zjistěte, jestli se mají přeskočit, sestavení nebo částečně znovu sestavit cíl. Musí však být mapování 1: 1 mezi vstupy a výstupy. Transformace můžete povolit cíle k identifikaci této přímé mapování. Další informace o transformací najdete v tématu [transformuje](../msbuild/msbuild-transforms.md).  
@@ -39,7 +40,7 @@ Když vytvoříte nový projekt, je důležité, který dříve vytvořené sou�
         Outputs="hello.exe">  
     ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]můžete porovnat časová razítka vstupní soubory s časová razítka výstupních souborů a určení, zda přeskočit, sestavení nebo částečně znovu vytvořit cíl. V následujícím příkladu, pokud žádný soubor v `@(CSFile)` seznamu položek je novější než soubor hello.exe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] spustí cíl; v opačném případě bude přeskočeno:  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] můžete porovnat časová razítka vstupní soubory s časová razítka výstupních souborů a určení, zda přeskočit, sestavení nebo částečně znovu vytvořit cíl. V následujícím příkladu, pokud žádný soubor v `@(CSFile)` seznamu položek je novější než soubor hello.exe [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] spustí cíl; v opačném případě bude přeskočeno:  
   
 ```xml  
 <Target Name="Build"   

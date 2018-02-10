@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -21,16 +21,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CL task
 - CL task (MSBuild (Visual C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-caps.latest.revision: "18"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ffd317643b7ea1bfbf97bce6d533a76fd7bf1509
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5b5609ac97d9322ddf4af5bc5638212a3ccfd045
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="cl-task"></a>CL – úloha
 Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitelné soubory (.exe), dynamická knihovna (DLL) soubory nebo soubory kódu modulu (.netmodule). Další informace najdete v tématu [– možnosti kompilátoru](/cpp/build/reference/compiler-options).  
@@ -106,7 +107,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **UninitializedLocalUsageCheck** - **/RTCu**  
   
-    -   **EnableFastChecks** -                          **RTC1**  
+    -   **EnableFastChecks** -                          **/RTC1**  
   
      Další informace najdete v tématu [/RTC (kontroluje chyby Run-Time)](/cpp/build/reference/rtc-run-time-error-checks).  
   
@@ -150,7 +151,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **Cdecl** - **/Gd**  
   
-    -   **FastCall** -                          **GR**  
+    -   **FastCall** -                          **/Gr**  
   
     -   **StdCall** -                          **/Gz**  
   
@@ -186,7 +187,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **Čistý** -   **/CLR: pure**  
   
-    -   **Bezpečné** -   **/CLR: safe**  
+    -   **Safe** - **/clr:safe**  
   
     -   **OldSyntax** - **/clr:oldSyntax**  
   
@@ -208,7 +209,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **Minuskové** - **/Z7**  
+    -   **OldStyle** - **/Z7**  
   
     -   **ProgramDatabase** - **/Zi**  
   
@@ -270,13 +271,13 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **Žádný** -   **/errorreport: žádné**  
+    -   **None** - **/errorReport:none**  
   
-    -   **Řádku** - **/errorReport:prompt**  
+    -   **Prompt** - **/errorReport:prompt**  
   
-    -   **Fronty** - **/errorReport:queue**  
+    -   **Queue** - **/errorReport:queue**  
   
-    -   **Odeslat** - **/errorReport:send**  
+    -   **Send** - **/errorReport:send**  
   
      Další informace najdete v tématu [/errorreport (sestava interními chybami kompilátoru)](/cpp/build/reference/errorreport-report-internal-compiler-errors).  
   
@@ -290,9 +291,9 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **false** - *\<žádné >*  
   
-    -   **Asynchronní** -   **/EHa**  
+    -   **Async** - **/EHa**  
   
-    -   **Synchronizace** - **/EHsc**  
+    -   **Sync** - **/EHsc**  
   
     -   **SyncCThrow** - **/EHs**  
   
@@ -314,7 +315,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **Ani** - *\<žádné >*  
+    -   **Neither** - *\<none>*  
   
     -   **Velikost** - **/Os**  
   
@@ -338,9 +339,9 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **Přesné** - **/fp: přesné**  
+    -   **Precise** - **/fp:precise**  
   
-    -   **Striktní** - **/fp: striktní**  
+    -   **Strict** - **/fp:strict**  
   
     -   **Rychlé** - **/fp:fast**  
   
@@ -404,7 +405,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **Výchozí** - *\<žádné >*  
   
-    -   **Zakázané** - **/Ob0**  
+    -   **Disabled** - **/Ob0**  
   
     -   **OnlyExplicitInline** - **/Ob1**  
   
@@ -482,13 +483,13 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **Zakázané** - **/Od**  
+    -   **Disabled** - **/Od**  
   
     -   **MinSpace** - **/O1**  
   
-    -   **MaxSpeed** -   **/O2**  
+    -   **MaxSpeed** - **/O2**  
   
-    -   **Úplné** - **/Ox**  
+    -   **Full** - **/Ox**  
   
      Další informace najdete v tématu [/O možnosti (Optimalizace kódu)](/cpp/build/reference/o-options-optimize-code).  
   
@@ -502,7 +503,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **NotUsing** - *\<žádné >*  
   
-    -   **Vytvoření** - **/Yc**  
+    -   **Create** - **/Yc**  
   
     -   **Použití** - **/Yu**  
   
@@ -592,7 +593,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **Vícevláknové** -   **/MT**  
+    -   **MultiThreaded** - **/MT**  
   
     -   **MultiThreadedDebug** - **/MTd**  
   
@@ -648,9 +649,9 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **Výchozí** - **/Zp1**  
+    -   **Default** - **/Zp1**  
   
-    -   **1 bajtů** - **/Zp1**  
+    -   **1Byte** - **/Zp1**  
   
     -   **2Bytes** - **/Zp2**  
   
@@ -754,7 +755,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **EnableAllWarnings** -   **/horní**  
   
-     Další informace najdete v tématu **/W**  *n*  možnost [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, nebo jsme /wo, /Wv, wdn (úroveň upozornění)](/cpp/build/reference/compiler-option-warning-level).  
+     Další informace najdete v tématu **/W *** n* možnost [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, nebo jsme /wo, /Wv, wdn (úroveň upozornění)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   

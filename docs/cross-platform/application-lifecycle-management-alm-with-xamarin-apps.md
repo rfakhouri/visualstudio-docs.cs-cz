@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: "14"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: b72c0a0df85c4c37745faaec4e9d2da269e6c9cd
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- xamarin
+ms.openlocfilehash: e7ee514a3ca121b9259f1c1b5f54b49d58b0ac47
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Správa životního cyklu aplikací (ALM) s aplikacemi Xamarin
 Xamarin umožňuje vytvářet cílené na Android, iOS a Windows pomocí jazyka C# .NET a Visual Studio mobilní aplikace a platformy. Xamarin umožňuje velkou část kódu být sdílen mezi platformami s pouze malým procentem museli být specifické pro platformu. Další informace o Xamarin sám sebe, najdete v části [Visual Studio a Xamarin](../cross-platform/visual-studio-and-xamarin.md).  

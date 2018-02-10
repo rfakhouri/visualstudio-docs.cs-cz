@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 734c7b8a8416503e457f964d74e0a3773cbada2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: d015b927f8ba0fa62244a6cd09ff19efcb46451d
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástroje pro sestavení pomocí iOS
 Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použít k úpravám, ladění a nasazení iOS kódu simulátoru iOS nebo zařízení s iOS, ale kvůli licenční omezení, musí být kód vytvořené a spouštět vzdáleně na macu. Sestavení a spuštění aplikace pro iOS pomocí sady Visual Studio, budete muset nastavit a konfigurovat vzdáleného agenta [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), na vaše Mac. Obslužné rutiny vzdáleného agenta sestavení požadavky ze sady Visual Studio a spustí aplikace na zařízení s iOS připojené k počítači Mac, nebo v simulátoru na Mac. iOS  

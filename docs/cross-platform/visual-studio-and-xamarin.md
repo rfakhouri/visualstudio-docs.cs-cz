@@ -4,20 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
-caps.latest.revision: "10"
+caps.latest.revision: 
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: 272b648b7b7bc27ae2f043a3a3d0541c87822258
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: e550d7f6220d4d555d8427bcb1c2a3e814a4f5c3
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio a Xamarin
 Xamarin je platforma pro vývoj mobilních aplikací pro vytváření nativní aplikace pro iOS, Android a Windows aplikace z běžných C# / .NET code základ, dosažení 75 % na téměř 100 % opětovné použití kódu mezi platformami. Aplikace, které jsou napsané pomocí Xamarinu a C# mají plný přístup k základní platformu rozhraní API a možnost vytvářet nativní uživatelská rozhraní a zkompilovat specifické pro platformu balíčků, je malý vliv na výkon modulu runtime. (Poznámka: Xamarin také podporuje F #, ale tato dokumentace se soustředí pouze na C#. Visual Basic není v současné době podporovaný.)  

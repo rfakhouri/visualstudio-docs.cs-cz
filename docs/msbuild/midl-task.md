@@ -4,7 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,16 +26,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MIDL task
 - MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-caps.latest.revision: "8"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3dc6bcbf4814a05d05aa69a42e8d19f581e78863
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="midl-task"></a>MIDL – úloha
 Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru midl.exe. Další informace najdete v tématu "Reference k příkazovému řádku MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
@@ -55,7 +56,7 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
   
      Volitelné **řetězec** parametr.  
   
-     Seznam možností příkazového řádku. Například **"***/option1 /option2 /option#*". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány jakékoli jiné parametr MIDL úloh.  
+     Seznam možností příkazového řádku. Například **"*** nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány jakékoli jiné parametr MIDL úloh.  
   
      Další informace najdete v tématu "Reference k příkazovému řádku MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
@@ -95,7 +96,7 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
     |-----------|--------------------------|  
     |**Podepsané**|**/ Char podepsané**|  
     |**Bez znaménka**|**/ Char bez znaménka**|  
-    |**ASCII**|**/ Char ascii7**|  
+    |**Ascii**|**/char ascii7**|  
   
      Další informace najdete v tématu **/char** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
@@ -233,7 +234,7 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
   
      Další informace najdete v tématu **/iid** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
--   **Identifikátor národního prostředí**  
+-   **LocaleID**  
   
      Volitelné **int** parametr.  
   
@@ -249,7 +250,7 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
   
      Další informace najdete v tématu **/mktyplib203** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. Viz také "Syntaxe souboru ODL" na webu MSDN.  
   
--   **Výstupnísložka**  
+-   **OutputDirectory**  
   
      Volitelné **řetězec** parametr.  
   
@@ -305,11 +306,11 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<žádné >*|  
-    |**1**|**/ Zp1**|  
-    |**2**|**/ Zp2**|  
-    |**4**|**/ Zp4**|  
-    |**8**|**/ Zp8**|  
+    |**NotSet**|*\<none>*|  
+    |**1**|**/Zp1**|  
+    |**2**|**/Zp2**|  
+    |**4**|**/Zp4**|  
+    |**8**|**/Zp8**|  
   
      Další informace najdete v tématu **/Zp** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. **/Zp** je ekvivalentní **, pack** možnost a starší **/ align** možnost.  
   
@@ -339,10 +340,10 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<žádné >*|  
+    |**NotSet**|*\<none>*|  
     |**Win32**|**win32/env**|  
     |**Itanium**|**/ env ia64**|  
-    |**X64**|**/ env x64**|  
+    |**X64**|**/env x64**|  
   
      Další informace najdete v tématu **/env** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
@@ -411,11 +412,11 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**0**|**/ W0**|  
-    |**1**|**/ W1**|  
-    |**2**|**/ W2**|  
-    |**3**|**/ W3**|  
-    |**4**|**/ W4**|  
+    |**0**|**/W0**|  
+    |**1**|**/W1**|  
+    |**2**|**/W2**|  
+    |**3**|**/W3**|  
+    |**4**|**/W4**|  
   
      Další informace najdete v tématu **/W** možnost v "Příkazového řádku MIDL" [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu. Další informace naleznete **WarnAsError** parametr v této tabulce.  
   

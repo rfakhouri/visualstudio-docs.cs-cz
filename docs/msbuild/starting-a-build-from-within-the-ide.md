@@ -4,27 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: build
+helpviewer_keywords:
+- build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: "5"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3738c9a34ebd346e0757e84716d13785541b767a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 307d05c9f35309d97b3813dfaa4cc4db1cf1f91c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Spuštění sestavení z prostředí IDE
 Musíte použít vlastní projektu systémy <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> spuštění sestavení. Toto téma popisuje důvody této a popisuje postup.  
   
 ## <a name="parallel-builds-and-threads"></a>Paralelní sestavení a vlákna  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]umožňuje paralelní sestavení, které vyžaduje zprostředkování pro přístup k prostředkům běžné. Sestavení projektu systémy můžete spustit asynchronně, ale tyto systémy nesmějí provádět volání funkce sestavení z v rámci volání voláními zajišťuje ke Správci sestavení.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] umožňuje paralelní sestavení, které vyžaduje zprostředkování pro přístup k prostředkům běžné. Sestavení projektu systémy můžete spustit asynchronně, ale tyto systémy nesmějí provádět volání funkce sestavení z v rámci volání voláními zajišťuje ke Správci sestavení.  
   
  Pokud systém projektu upraví proměnné prostředí, je nutné nastavit na OutOfProc NodeAffinity sestavení. To znamená, objekty hostitele, vzhledem k tomu, že vyžadují uzlu vnitroprocesovou nelze použít.  
   

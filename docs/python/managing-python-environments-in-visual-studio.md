@@ -1,27 +1,27 @@
 ---
 title: "Správa prostředí Python v sadě Visual Studio | Microsoft Docs"
-description: "Jak používat prostředí Python oken v sadě Visual Studio ke správě globální a virtuální envrionments, nastavit vlastní prostředí, instalace překladače Python, instalace balíčků, nastavení cesty hledání a správu prostředí pro projekty v sadě Visual Studio."
+description: "Jak používat prostředí Python oken v sadě Visual Studio ke správě globální a virtuální prostředí, nastavit vlastní prostředí, instalace překladače Python, instalace balíčků, nastavení cesty hledání a správu prostředí pro projekty v sadě Visual Studio."
 ms.custom: 
 ms.date: 01/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
-ms.devlang: python
+dev_langs:
+- python
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: 
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0b0195770bde2906ac34f0f4b8a5faf684130899
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 40f901c65872fe593457883c36f0d60bf7e2fd8a
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="python-environments"></a>Prostředí Python
 
@@ -70,13 +70,13 @@ Vývojáři, které chcete přidat nové formuláře detekce prostředí Python,
 
 Chcete-li otevřít okno prostředí Python, vyberte **zobrazení > ostatní okna > prostředí Python** příkazu nabídky nebo klikněte pravým tlačítkem **prostředí Python** uzel pro projekt v Průzkumníku řešení a Vyberte **zobrazení všech prostředí Python**:
 
-    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
+![Zobrazit všechna prostředí příkazu v Průzkumníku řešení](media/environments-view-all.png)
 
 V obou případech se zobrazí okno prostředí Python jako karty na stejné úrovni do Průzkumníka řešení:
 
 ![Okno prostředí Python](media/environments-default-view.png)
 
-Výše uvedený příklad ukazuje, že Python 3.4 (32bitová verze CPython) je nainstalována spolu s 32bitové a 64bitové verze IronPython 2.7. Výchozí prostředí tučným je Python 3.4, který se používá pro všechny nové projekty. Pokud nevidíte žádné prostředí uvedené, znamená to, že jste nainstalovali nástroje Python Tools pro sadu Visual Studio v sadě Visual Studio 2015 nebo dřívější, ale nebyly nainstalovány překladač Pythonu (viz [zvolíte a instalace Python překladače](#selecting-and-installing-python-interpreters) výše). **+ Vlastní...**  příkaz umožňuje [vytvoření prostředí pro existující překladač](#create-an-environment-for-an-existing-interpreter).
+Výše uvedený příklad ukazuje, že Python 3.4 (32bitová verze CPython) je nainstalována spolu s 32bitové a 64bitové verze IronPython 2.7. Výchozí prostředí tučným je Python 3.4, který se používá pro všechny nové projekty. Pokud nevidíte žádné prostředí uvedené, znamená to, že jste nainstalovali nástroje Python Tools pro sadu Visual Studio v sadě Visual Studio 2015 nebo dřívější, ale nebyly nainstalovány překladač Pythonu (viz [zvolíte a instalace Python překladače](#selecting-and-installing-python-interpreters) výše). **+ Vlastní...**  příkaz umožňuje [vytvoření prostředí pro existující překladač](#creating-an-environment-for-an-existing-interpreter).
 
 Napravo od jednotlivých uvedených prostředí je ovládací prvek, které se otevře okno s interaktivní pro prostředí. Může se zobrazit další ovládací prvek se aktualizuje databázi IntelliSense pro prostředí.
 

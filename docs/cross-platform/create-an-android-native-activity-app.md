@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
-caps.latest.revision: "3"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: 910e04d9aafcd549e2192c8d54da87e01abd6d18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: e03fb8fd62e7f9b2e37dfc2efe8f02580c7b32f5
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="create-an-android-native-activity-app"></a>Vytvoření aplikace pro Android nativní aktivity
 Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platformy možnost, Visual Studio 2015 lze vytvářet plně funkční aplikace pro Android nativní aktivity. Android Kit pro nativní vývoj (NDK) je sada nástrojů, který umožňuje implementovat většina aplikací systému Android pomocí čistém kódu C/C++. Nějaký kód Java JNI funguje jako spojovací umožňující kódu C/C++ pro interakci s Android. Android NDK zavedla možnost vytvářet nativní aktivity aplikací s Androidem 9 úroveň rozhraní API. Nativní kód aktivity se používá pro vytváření hraní a grafické náročné aplikace, které používají Unreal Engine nebo OpenGL. Toto téma vás provede vytvoření jednoduché aplikace nativní aktivity, která používá OpenGL. Další témata provede vývojáře životní cyklus úpravy, vytváření, ladění a nasazování kód nativní aktivity.  

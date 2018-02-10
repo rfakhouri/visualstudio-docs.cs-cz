@@ -4,26 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology: msbuild
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-caps.latest.revision: "9"
-author: kempb
-ms.author: kempb
+caps.latest.revision: 
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 68977ca672aae84cd65ca169c4ca13feda6d7887
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4411b82fc5a86e4f3eeae965fefd65e2c38d207e
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="msbuild-batching"></a>Dávkování nástroje MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]má schopnost rozdělení seznamech položek do různých kategorií nebo dávek, na základě položky metadat a spusťte cíl a úloh s jednou jednotlivých dávek.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] má schopnost rozdělení seznamech položek do různých kategorií nebo dávek, na základě položky metadat a spusťte cíl a úloh s jednou jednotlivých dávek.  
   
 ## <a name="task-batching"></a>Dávkování úloh  
  Dávkování úloh, můžete zjednodušit tím, že poskytuje způsob, jak rozdělení seznamech položek do různých dávek a každý z těchto dávek samostatně předat do úlohu soubory projektu. To znamená, že soubor projektu pouze musí mít úlohu a jeho atributy deklarován jednou, i když můžete spustit několikrát.  
@@ -58,7 +59,7 @@ ms.lasthandoff: 12/22/2017
  Dávkování konkrétnější příklady najdete v tématu [Metadata položek v dávkování úloh](../msbuild/item-metadata-in-task-batching.md).  
   
 ## <a name="target-batching"></a>Dávkování cíle  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]kontroluje, pokud vstupy a výstupy cíl jsou aktuální před jeho spuštěním cíl. Pokud jsou aktuální vstupy a výstupy, cíl se přeskočí. Pokud úloha uvnitř cíl používá dávkování, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je potřeba určit, zda je aktuální vstupy a výstupy pro jednotlivé skupiny položek. Jinak hodnota cíle se spustí pokaždé, když je dosaženo.  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] kontroluje, pokud vstupy a výstupy cíl jsou aktuální před jeho spuštěním cíl. Pokud jsou aktuální vstupy a výstupy, cíl se přeskočí. Pokud úloha uvnitř cíl používá dávkování, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je potřeba určit, zda je aktuální vstupy a výstupy pro jednotlivé skupiny položek. Jinak hodnota cíle se spustí pokaždé, když je dosaženo.  
   
  Následující příklad ukazuje `Target` elementu, který obsahuje `Outputs` atribut s %(*ItemMetaDataName*) zápis. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]bude dělit `Example` na základě seznamu položek do dávek `Color` položky metadat a analyzovat časová razítka výstupních souborů pro každou dávku. Pokud výstupy z dávky nejsou aktuální, cíl běží. Cíl, jinak se přeskočí.  
   

@@ -4,19 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords: Domain-Specific Language, element merge directives
+f1_keywords:
+- vs.dsltools.dsldesigner.elementmergedirective
+helpviewer_keywords:
+- Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0310821ab2968f0709b002166d188a4ebc4c2ff4
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.technology: vs-ide-modeling
+ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 Můžete povolit element být přetažen na jiné, z panelu nástrojů nebo v vkládání nebo operace přesunutí. Můžete mít přesunutý elementy propojené s cílových elementů, pomocí vztahy, které zadáte.  
@@ -37,7 +40,7 @@ Můžete povolit element být přetažen na jiné, z panelu nástrojů nebo v vk
   
  Je zodpovědností EMD je k rozhodování o tom, jak objekt nebo skupinu objektů, které by měly být sloučeny do konkrétního umístění v modelu. Konkrétně rozhodne, jaké relace musí být vytvořena instance propojení skupině sloučené do modelu. Můžete také upravit, je možné nastavit vlastnosti a vytvořit další objekty.  
   
- ![DSL & č. 45; EMD &#95; Sloučení](../modeling/media/dsl-emd_merge.png "DSL EMD_Merge")  
+ ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
 Role sloučení direktivu Element  
   
  EMD je vytvořen automaticky, když definujete vnoření vztah. Toto výchozí nastavení EMD vytvoří instance vztahu, když uživatelé přidají nové instance podřízené do nadřazené. Tyto výchozí EMDs, můžete upravit třeba tak, že přidáte vlastní kód.  
@@ -47,7 +50,7 @@ Role sloučení direktivu Element
 ## <a name="defining-an-element-merge-directive"></a>Definování direktivu Element sloučení  
  Element sloučení direktivy můžete přidat do třídy domény, relace domény, tvarů, konektory a diagramy. Můžete přidat nebo je najít v Průzkumníku DSL pod přijímající třídou domény. Přijímající třídy je třída domény elementu, který už v modelu a do které budou sloučeny element nové nebo zkopírovaný.  
   
- ![DSL & č. 45; EMD &#95; podrobnosti](../modeling/media/dsl-emd_details.png "DSL EMD_Details")  
+ ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
  **Indexování třída** je třída domény elementů, které mohou být sloučeny do členy přijímající třídy. Instance podtřídami třídy indexování bude být také sloučit tak, že tento EMD, není-li nastavena **platí pro podtřídy** na hodnotu False.  
   
