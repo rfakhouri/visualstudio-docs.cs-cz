@@ -4,21 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-ide-mobile
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: C++
+dev_langs:
+- C++
 ms.assetid: aaea6b8d-55eb-4427-8185-c050f855c257
-caps.latest.revision: "15"
+caps.latest.revision: 
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.workload: xplat-cplusplus
-ms.openlocfilehash: d677c74d44f1ddc0b250d6763cef4738cd642832
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xplat-cplusplus
+ms.openlocfilehash: b9f87e95a2d4088bb72890ef3f9508d9c5e02abc
+ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalace Visual C++ pro vývoj mobilních pro různé platformy
 [Visual C++ pro vývoj mobilních řešení pro různé platformy](http://go.microsoft.com/fwlink/p/?LinkId=536383) je instalovatelných komponent sady Visual Studio 2015. Zahrnuje šablony sady Visual Studio napříč platformami a nainstaluje nástroje napříč platformami a sady SDK začít rychle, aniž by museli najít, stahování a nakonfigurovat sami. Tyto nástroje můžete v sadě Visual Studio snadno vytvořit, upravit, ladit a testovat projekty napříč platformami. Toto téma popisuje postup instalace nástroje a software jiných výrobců, které jsou potřebné k vývoji aplikací pro různé platformy pomocí sady Visual Studio. Přehled součásti najdete v tématu [Mobile napříč platformami Visual C++](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
@@ -99,7 +101,7 @@ ms.lasthandoff: 12/22/2017
   
      Ve výchozím nastavení převede instalační program nástroje Java v C:\Program Files (x86) \Java.  
   
--   [Sady SDK pro Android](https://developer.android.com/sdk/index.html#Other)  
+-   [Android SDK](https://developer.android.com/sdk/index.html#Other)  
   
      Během instalace aktualizace rozhraní API podle doporučení. Ujistěte se, že aspoň je nainstalována sada SDK pro Android 5.0 typu Lupa (API úrovně 21). Ve výchozím nastavení převede instalační program sady SDK pro Android v C:\Program Files (x86) \Android\android-sdk.  
   
