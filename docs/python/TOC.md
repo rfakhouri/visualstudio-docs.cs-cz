@@ -25,6 +25,7 @@
 ### [Formátování kódu](formatting-python-code.md)
 ### [Refaktoring kódu](refactoring-python-code.md)
 ### [Použití PyLintu](linting-python-code.md)
+## [Definování vlastních příkazů nabídky](defining-custom-python-project-commands.md)
 ## [Interaktivní Python (REPL)](python-interactive-repl-in-visual-studio.md)
 ### [Použití IPythonu REPL](interactive-repl-ipython.md)
 ## [Ladění](debugging-python-in-visual-studio.md)
