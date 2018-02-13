@@ -7,7 +7,7 @@
 ###[3. Vytvoření webové aplikace na platformě ASP.NET](get-started-netcore-03.md)
 ###[4. Ladění kontejneru v Kubernetes](get-started-netcore-04.md)
 ###[5. Volání jiného kontejneru](get-started-netcore-05.md)
-###[6. Vývoj v týmu](get-started-netcore-06.md)
+###[6. Práce ve sdíleném vývojovém prostředí](get-started-netcore-06.md)
 ###[7. Souhrn](get-started-netcore-07.md)
 
 ##[.NET Core (Visual Studio 2017)](get-started-netcore-visualstudio-01.md)
@@ -16,7 +16,7 @@
 ###[3. Vytvoření vývojového prostředí v Azure](get-started-netcore-visualstudio-03.md)
 ###[4. Ladění kontejneru v Kubernetes](get-started-netcore-visualstudio-04.md)
 ###[5. Volání jiného kontejneru](get-started-netcore-visualstudio-05.md)
-###[6. Vývoj v týmu](get-started-netcore-visualstudio-06.md)
+###[6. Práce ve sdíleném vývojovém prostředí](get-started-netcore-visualstudio-06.md)
 ###[7. Souhrn](get-started-netcore-visualstudio-07.md)
 
 ##[Node.js (VS Code a rozhraní příkazového řádku)](get-started-nodejs-01.md)
@@ -25,7 +25,8 @@
 ###[3. Vytvoření webové aplikace na platformě Node.js](get-started-nodejs-03.md)
 ###[4. Ladění kontejneru v Kubernetes](get-started-nodejs-04.md)
 ###[5. Volání jiného kontejneru](get-started-nodejs-05.md)
-###[6. Vývoj v týmu](get-started-nodejs-06.md)
+###[6. Práce ve sdíleném vývojovém prostředí](get-started-nodejs-06.md)
 ###[7. Souhrn](get-started-nodejs-07.md)
 
+# [Řešení potíží](troubleshooting.md)
 
