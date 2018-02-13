@@ -7,16 +7,18 @@ ms.suite:
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords: automated testing, lab management, test lab
+helpviewer_keywords:
+- automated testing, lab management, test lab
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 4dae17012ecf66258d65ff3c200a0dbe8e4c9429
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 25f1007458b691b97f0ea852a1bf0e7325d79d8a
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Použití sestavení a správu verzí místo Lab Management pro automatizované testování
 
@@ -26,7 +28,7 @@ Pokud používáte Microsoft Test Manager (MTM) a Lab Management pro automatizov
 
 * [Samoobslužné služby správu prostředí SCVMM](#managescvmm)
 
-Sestavení a správu verzí nepodporují samoobslužné vytvoření prostředí SCVMM izolované sítě, a neexistují žádné plány, které podporují tento v budoucnu. Existují však některé [navrhované alternativy](#isolatedenvir).
+* [Vytvoření prostředí izolované sítě](#isolatedenvir)
 
 <a name="bdtautomation"></a>
 ## <a name="build-deploy-test-automation"></a>Automatizace sestavení nasazení testování
@@ -74,14 +76,15 @@ Následující tabulka shrnuje typické aktivity, které jste použili k provede
 | Pořízení kontrolního bodu prostředí nebo obnovit prostředí do čistého kontrolní bod. | Otevřete v prohlížeči prostředí testovacího prostředí. Vyberte možnost k pořízení kontrolního bodu nebo k obnovení do předchozího kontrolního bodu. | Pomocí konzoly pro správu SCVMM přímo k provádění těchto operací na virtuálních počítačích. Nebo, proveďte tyto kroky jako součást větší automatizace, zahrňte kontrolního bodu úlohy z [SCVMM integrace rozšíření](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp) v rámci prostředí v definici verze. |
 
 <a name="isolatedenvir"></a>
-## <a name="self-service-creation-of-network-isolated-environments"></a>Samoobslužné vytváření síti izolované prostředí
+## <a name="creation-of-network-isolated-environments"></a>Vytvoření prostředí izolované sítě
 
 Izolované testovací prostředí sítě je skupina SCVMM virtuálních počítačů, které se dají bezpečně klonovat aniž by to způsobilo sítě je v konfliktu. K tomu bylo potřeba v MTM pomocí řady pokyny, které slouží ke konfiguraci virtuálních počítačů ve veřejné síti sada síťových karet ke konfiguraci virtuálních počítačů v privátní síti a další sadu síťových karet.
 
-S vývoj bohatší veřejného a privátního cloudu systémy správy [Microsoft Azure](https://azure.microsoft.com/) a [Microsoft Azure zásobníku](https://azure.microsoft.com/overview/azure-stack/), můžete více spolehnout na nástroje pro správu cloudu přímo pro podobné Možnosti. Neexistuje žádný způsob ekvivalentní k dosažení tohoto cíle v sestavení a správu verzí.
+Ale služby VSTS TFS ve spojení se SCVMM sestavení a úloha nasazení, můžete použít ke správě prostředí SCVMM zřídit izolované virtuální sítě a implementovat scénáře sestavení nasazení testování. Například můžete provádět úlohy:
 
-Doporučujeme, aby zvažte následující možnosti, pokud potřebujete izolace sítě se můžete:
+* Vytvoření, obnovení a odstraňte kontrolní body
+* Vytvoření nových virtuálních počítačů pomocí šablony
+* Spuštění a zastavení virtuálních počítačů
+* Spustit vlastní skripty prostředí PowerShell pro SCVMM
 
-* Jeden motivace pro izolaci sítě bylo snadné konfiguraci více klonech. Každý klonování je repliku přesný původního, názvy počítačů a nastavení konfigurace se zachovají, jako je, a to umožňuje snadno nastavit nové prostředí. Však stejné výhody způsobuje problémy vzniknout později v průběhu životního cyklu (například v produkčním prostředí), protože způsob, jakým jsou nakonec nasazené aplikace není ve stejné. **Místo toho**, zvažte vytvoření nové prostředí stejným způsobem, které jste nastavili produkční a vyhýbat se používání izolace sítě.
-
-* Pomocí infrastruktury veřejného cloudu, jako například [Microsoft Azure](https://azure.microsoft.com/) pro testování potřebuje. Můžete snadno použít [šablon Azure Resource Manageru](https://azure.microsoft.com/documentation/templates/) z [Azure Marketplace](https://azure.microsoft.com/marketplace/) nebo z [Azure rychlý start šablony](https://azure.microsoft.com/documentation/templates/) nastavit skupiny virtuálních počítačů, které jsou připojení prostřednictvím privátní síti a jsou viditelné na veřejné síti jen pomocí proxy serveru nebo jumpbox.
+Další informace najdete v tématu [vytvořit virtuální izolovaného síťového prostředí pro sestavení nasazení testování scénáře](/vsts/build-release/actions/virtual-networks/create-virtual-network).

@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a3eee4abda5783707231332022e1f3f24728e7cc
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="publish-page-project-designer"></a>Publikovat stránku, návrhář projektu
 **Publikovat** stránky **Návrhář projektu** slouží ke konfiguraci vlastností pro ClickOnce – nasazení.  
@@ -34,10 +34,8 @@ ms.lasthandoff: 01/29/2018
   
 ## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
  **Publikování umístění složky**  
- Určuje umístění, kde je aplikace publikována. Může být cesta jednotky (`C:\deploy\myapplication`), sdílené složky (`\\server\myapplication`), FTP server (`ftp://ftp.microsoft.com/myapplication`), nebo na web (`http://www.microsoft.com/myapplication`). Všimněte si, že text musí být součástí **umístění pro publikování** pole v pořadí pro Procházet (**...** ) tlačítko pracovat.  
-  
- Ve výchozím umístění pro publikování je `http://localhost/<projectname>/` Pokud máte službu IIS nainstalovánu, nebo `publish\` adresáře, pokud nemáte nainstalovanou službu IIS. Pokud váš počítač se systémem Windows Vista, výchozí hodnota je vždy `publish\` adresář, bez ohledu na to, jestli máte nainstalovanou službu IIS.  
-  
+ Určuje umístění, kde je aplikace publikována. Může být cesta jednotky (`C:\deploy\myapplication`), sdílené složky (`\\server\myapplication`), nebo FTP server (`ftp://ftp.microsoft.com/myapplication`). Všimněte si, že text musí být součástí **umístění pro publikování** pole v pořadí pro Procházet (**...** ) tlačítko pracovat.  
+   
  **Adresy URL instalace složky**  
  Volitelné. Určuje webu, ke kterému uživatelé instalovat aplikace. To je nezbytné, pouze pokud se liší od **umístění pro publikování**, například když je aplikace publikována na pracovní server.  
   

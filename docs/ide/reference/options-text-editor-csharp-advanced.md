@@ -1,6 +1,5 @@
 ---
 title: "Možnosti, textový Editor, C#, Upřesnit | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
@@ -9,8 +8,6 @@ ms.tgt_pltfrm:
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced
-- VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
 helpviewer_keywords:
 - XML comments
@@ -22,67 +19,96 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 119d6660b476dd025ff8def009369a4e38d09d28
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5d6cf8b655151e9b07111b6ac6fd64b6ad3c845f
+ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="options-text-editor-c-advanced"></a>Možnosti, textový editor, C#, upřesnit
 
-Tento dialog můžete upravit nastavení pro dokumentační komentáře XML, editor formátování a refaktoring kódu pro jazyk C#. Pro přístup k tohoto dialogového okna, klikněte na tlačítko **možnosti** na **nástroje** nabídky, rozbalte **textového editoru** složky, rozbalte položku **C#**a pak klikněte na tlačítko  **Rozšířené**.
+Použití **Upřesnit** stránka Možnosti, chcete-li změnit nastavení pro editor formátování, kódu refaktoringu a dokumentační komentáře XML pro jazyk C#. Chcete-li získat přístup k této stránce Možnosti, zvolte **nástroje** > **možnosti**a potom vyberte **textového editoru** > **C#**  >  **Rozšířené**.
 
 > [!NOTE]
 > Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).
 
+## <a name="analysis"></a>Analýza
+
+- Povolit úplnou analýzu řešení
+
+   Analýza kódu umožňuje u všech souborů v řešení, ne jenom otevřít soubory kódu. Další informace najdete v tématu [úplné analýzy řešení](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+
+- Provedení analýzy funkce editor v externího procesu (experimentální)
+
+## <a name="using-directives"></a>Pomocí direktiv
+
+- Nejprve umístit direktivy "Systém", pokud řazení direktiv Using
+
+- Oddělit pomocí direktivy skupin
+
+- Navrhněte direktiv using pro typy v referenční sestavení
+
+- Navrhněte direktiv using pro typy v balíčků NuGet
+
+## <a name="highlighting"></a>Zvýraznění
+
+- Zvýrazněte odkazy na symbolů v místě kurzoru
+
+   Když kurzor je nastavený uvnitř symbol, nebo když klikněte na symbol, jsou vyznačené všechny instance tohoto symbolu v souboru kódu.
+
+- Zvýrazněte související klíčová slova v místě kurzoru
+
 ## <a name="outlining"></a>Sbalování
 
-Zadejte popisující režimu při otevírání souborů  
-Při výběru automaticky přehled souboru kódu, který vytvoří sbalitelné bloky kódu. Při prvním otevření souboru #regions bloky a bloky kódu neaktivní sbalte.
+- Zadejte popisující režimu při otevírání souborů
+
+   Při výběru automaticky přehled souboru kódu, který vytvoří sbalitelné bloky kódu. Při prvním otevření souboru #regions bloky a bloky kódu neaktivní sbalte.
+
+- Zobrazit postup čáry oddělovače
+
+- Zobrazení osnovy pro úrovně konstrukce deklarace
+
+- Zobrazení osnovy pro úrovně konstrukce kódu
+
+- Zobrazení osnovy pro komentáře a oblastí, preprocesoru
+
+- Sbalit #regions při sbalení do definice
+
+## <a name="fading"></a>Pozvolného vysouvání
+
+- Vykreslit out nepoužitých direktiv Using
+
+- Vykreslit out nedostupný kódu
+
+## <a name="block-structure-guides"></a>Blokovat struktura příručky
+
+- Zobrazit příručky pro úrovně konstrukce deklarace
+
+- Zobrazit příručky pro úrovně konstrukce kódu
 
 ## <a name="editor-help"></a>Nápovědy k editoru
 
-Underline chyby v editoru  
-Identifikuje chyby sestavení v kódu. Když je vybraná tato možnost, zobrazí se podtržení vlnovkami v barev, které mají zvláštní význam:
-  
--   Chyby analýzy jsou red.  
-  
--   Chyby sestavení jsou modrá.  
-  
--   Upozornění sestavení jsou zelená.  
-  
--   Neplatný [upravit a pokračovat](../../debugger/edit-and-continue.md) úpravy jsou fialové.  
-  
-Přesuňte ukazatel přes segment podtržené kódu zobrazíte popisek s informace o této chybě.  
-  
-Zobrazit živé sémantické chyby  
-Identifikuje určitým chybám kompilace bez explicitní kompilace, například deklarování a použití Neznámý typ nebo odkazující na Neznámá vlastnost.  
-  
-Zvýrazněte odkazy na symbolů v místě kurzoru  
-Když kurzor je nastavený uvnitř symbol, nebo když klikněte na symbol, jsou vyznačené všechny instance tohoto symbolu v souboru kódu.  
-  
-## <a name="refactoring"></a>Refaktoring
+- Generovat dokumentační komentáře XML pro / / /
 
-Zkontrolujte výsledky refaktoring  
-Zobrazí **výsledky ověření** dialogové okno při pokusu o refactor kód, který obsahuje chyby sestavení, nebo když refaktoring by způsobilo kód odkaz na vytvořit vazbu na něco jiného než jeho původní vazby.  
+   Pokud vybraná, vloží elementy XML pro dokumentační komentáře XML po zadání `///` Úvod komentář. Další informace o dokumentace XML, najdete v části [dokumentační komentáře XML (C# Průvodce programováním)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
 
-Upozornit na členy s kompilátoru generuje odkazy  
-Při pokusu o Refaktorovat člena, který má stejný název jako odkaz kompilátoru generované, zobrazí se dialog s upozorněním.
+- Vložit \* na začátku nového řádku při zápisu nebo\* \*/ komentáře
 
-## <a name="xml-documentation-comments"></a>Dokumentační komentáře XML
+- Zobrazit náhled pro přejmenování sledování
 
-Generovat dokumentační komentáře XML pro / / /  
-Pokud vybraná, vloží elementy XML pro dokumentační komentáře XML po zadání `///` Úvod komentář. Další informace o dokumentace XML, najdete v části [dokumentační komentáře XML (C# Průvodce programováním)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments).
+- Zadejte rozdělení textové literály v
 
-## <a name="implement-interface"></a>Implementovat rozhraní
+- Sestavy neplatná zástupné symboly v ' řetězec. Formát ' volání
 
-Obklopit s #region generovaného kódu  
-Vloží #region \< *název rozhraní*> člen kolem metody, pokud se použije implementovat rozhraní nebo explicitní implementace rozhraní.
+## <a name="extract-method"></a>extrahování metody
 
-## <a name="organize-usings"></a>Uspořádat Using
+- Nepřidávejte put ref nebo out na vlastní – struktura
 
-Nejprve umístit direktivy "Systém", pokud řazení direktiv Using  
-Při výběru `System` pomocí direktivy zobrazí před ostatními pomocí direktivy. Další informace najdete v tématu direktiv Using uspořádat v [C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation).
+## <a name="implement-interface-or-abstract-class"></a>Implementace rozhraní nebo abstraktní třídy
+
+- Při vkládání vlastnosti, události a metody, umístěte je s ostatními členy stejného druhu nebo na konci
+
+- Při generování vlastnosti, raději vyvolání vlastnosti nebo vhodnější automaticky vlastnosti
 
 ## <a name="see-also"></a>Viz také
 
