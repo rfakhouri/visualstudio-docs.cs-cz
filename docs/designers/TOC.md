@@ -24,7 +24,6 @@
 ### [Začínáme s WPF](getting-started-with-wpf.md)
 #### [Úvod do WPF](introduction-to-wpf.md)
 #### [Návod: Moje první desktopová aplikace WPF](walkthrough-my-first-wpf-desktop-application2.md)
-#### [Vytvoření aplikace WPF s C# nebo Visual Basicem](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [Komunitní materiály pro WPF](wpf-community-resources.md)
 #### [Datová vazba WPF s LINQ to XML](wpf-data-binding-with-linq-to-xml.md)
 ##### [Přehled datové vazby WPF s LINQ to XML](wpf-data-binding-with-linq-to-xml-overview.md)
