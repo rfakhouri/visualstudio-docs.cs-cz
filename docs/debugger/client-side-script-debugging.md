@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,22 +17,23 @@ helpviewer_keywords:
 - debugging [Visual Studio], client-side scripts
 - client-side scripts, debugging
 ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
-caps.latest.revision: "30"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 401ee40e2d296cbef041cb56568b639d05835f04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8f1d0073f1623c96c86f3c43b6992385eca38193
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="client-side-script-debugging"></a>Ladění skriptů na straně klienta
 Ladicí program Visual Studio poskytuje všestranné prostředí pro vyhledávání a opravy chyb v skripty na straně klienta na stránkách ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Otevírání dokumentů skriptu  
- Zobrazí se seznam dokumenty skript na straně serveru a na straně klienta v **Průzkumníku řešení** k zobrazení. Můžete otevřít skript dokumentu z **Průzkumníku řešení**. Další informace najdete v tématu [postupy: zobrazení dokumentů skriptu](../debugger/how-to-view-script-documents.md).  
+Zobrazí se seznam dokumenty skript na straně serveru a na straně klienta v **Průzkumníku řešení** k zobrazení. Můžete otevřít skript dokumentu z **Průzkumníku řešení**. Další informace najdete v tématu [postupy: zobrazení dokumentů skriptu](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Mapování zarážek  
  V sadě Visual Studio nelze přímo ladění kódu na straně serveru, ale můžete nastavit zarážky v souboru na straně serveru. Visual Studio automaticky zarážce se mapuje na odpovídající umístění v souboru na straně klienta a vytvoří mapovaná zarážky v kódu na straně klienta.  

@@ -1,7 +1,7 @@
 ---
 title: "Konfigurace sady nástrojů Standardní a vlastní | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 01/31/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: msbuild
@@ -11,46 +11,42 @@ helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 511c0b3990471b9b1e4e8e7e6023db8920360b99
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 19e01346c8af84faad2ac1877091a395db3fd3ce
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Standardní a vlastní konfigurace sady nástrojů
 Sada nástrojů MSBuild obsahuje odkazy na úlohy, cílů a nástroje, které můžete použít pro sestavení projektu aplikace. MSBuild zahrnuje standardní sada nástrojů, ale můžete také vytvořit vlastní modulové. Informace o tom, jak určit nástrojů najdete v tématu [sada nástrojů (atribut ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
   
 ## <a name="standard-toolset-configurations"></a>Konfigurace standardní sady nástrojů  
- MSBuild 12.0 zahrnuje následující standardní modulové:  
+ MSBuild 15.0 zahrnuje následující standardní modulové:  
   
 |Atribut ToolsVersion|Sada nástrojů cestu (jako je zadaný ve vlastnosti MSBuildToolsPath nebo MSBuildBinPath sestavení)|  
 |------------------|--------------------------------------------------------------------------------------------|  
 |2.0|*Cesta instalace systému Windows*\Microsoft.Net\Framework\v2.0.50727\|  
 |3.5|*Cesta instalace systému Windows*\Microsoft.NET\Framework\v3.5\|  
 |4.0|*Cesta instalace systému Windows*\Microsoft.NET\Framework\v4.0.30319\|  
-|12.0|*%ProgramFiles%*\MSBuild\12.0\bin|  
+|15.0|*Cesta instalace Visual Studio*\MSBuild\15.0\bin|  
   
- `ToolsVersion` Hodnota určuje, který je používán nástrojů projekt, který generuje Visual Studio. V [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] výchozí hodnota je "12.0" (bez ohledu na to jaké verze zadaná v souboru projektu), ale tento atribut lze přepsat pomocí **/toolsversion** přepnout na příkazovém řádku. Informace o tento atribut a dalších způsobů určení `ToolsVersion`, najdete v části [přepsání nastavení parametru ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
+ `ToolsVersion` Hodnota určuje, který je používán nástrojů projekt, který generuje Visual Studio. V aplikaci Visual Studio 2017, výchozí hodnota je "15.0" (bez ohledu na to jaké verze zadaná v souboru projektu), ale tento atribut lze přepsat pomocí **/toolsversion** přepnout na příkazovém řádku. Informace o tento atribut a dalších způsobů určení `ToolsVersion`, najdete v části [přepsání nastavení parametru ToolsVersion](../msbuild/overriding-toolsversion-settings.md).  
   
- Pokud `ToolsVersion` není zadán, klíč registru **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\\< číslo verze\>\DefaultToolsVersion** definuje `ToolsVersion`, což je vždy 2.0.  
-  
- Tyto klíče registru zadejte cestu k instalaci MSBuild.exe.  
+ Visual Studio 2017 nepoužívá klíč registru pro cestu k MSBuild. U verzí nástroje MSBuild před 15.0, které jsou nainstalované s Visual Studio 2017 zadejte následující klíče registru cestu instalace MSBuild.exe.  
   
 |Klíč registru|Název klíče|Hodnotu řetězce klíčů|  
 |------------------|--------------|----------------------|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\2.0\|MSBuildToolsPath|Cesta instalace rozhraní .NET framework 2.0|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\|MSBuildToolsPath|Cesta instalace rozhraní .NET framework 3.5|  
 |\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\|MSBuildToolsPath|Cesta instalace rozhraní .NET framework 4|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\12.0\|MSBuildToolsPath|Cesta instalace nástroje MSBuild|  
   
 ### <a name="sub-toolsets"></a>Sub – modulové  
- Pokud klíč registru v předchozí tabulce obsahuje podklíč, MSBuild se používá k určení, že cesta sady nástrojů dílčí může přepsat cestu, do sady nástrojů nadřazené. Následující podklíč je příklad:  
+ Pokud klíč registru v předchozí tabulce obsahuje podklíč, MSBuild se používá k určení cestu dílčí nástrojů, který přepíše cestu, do sady nástrojů nadřazené. Následující podklíč je příklad:  
   
  \HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\12.0\12.0  
   
@@ -64,24 +60,24 @@ Sada nástrojů MSBuild obsahuje odkazy na úlohy, cílů a nástroje, které m�
 ## <a name="custom-toolset-definitions"></a>Definice vlastní sada nástrojů  
  Když standardní sada nástrojů nesplňuje své požadavky na sestavení, můžete vytvořit vlastní sadu nástrojů. Například můžete mít scénáři testovacího prostředí sestavení, ve kterém musí mít samostatném systému za účelem vytváření [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] projekty. Pomocí vlastních nástrojů můžete přiřadit vlastní hodnoty a `ToolsVersion` atributu při vytváření projektů nebo spustit MSBuild.exe. Tímto způsobem můžete také použít `$(MSBuildToolsPath)` vlastnost k importu .targets souborů z adresáře, jakož i definování vlastní vlastnosti vlastní sady nástrojů, které lze použít pro všechny projekt, který používá tento nástrojů.  
   
- Zadejte vlastní sady nástrojů v konfiguračním souboru pro MSBuild.exe (nebo pro vlastní nástroj, který je hostitelem nástroje MSBuild modul, pokud je to, co používáte). Konfiguračního souboru pro MSBuild.exe může obsahovat třeba následující definici sady nástrojů, pokud jste si přáli přepsat výchozí chování 12.0 parametru ToolsVersion.  
+ Zadejte vlastní sady nástrojů v konfiguračním souboru pro MSBuild.exe (nebo pro vlastní nástroj, který je hostitelem nástroje MSBuild modul, pokud je to, co používáte). Konfiguračního souboru pro MSBuild.exe může obsahovat třeba následující definici sady nástrojů, pokud jste si přáli přepsat výchozí chování 15.0 parametru ToolsVersion.  
   
 ```xml  
-<msbuildToolsets default="12.0">  
-   <toolset toolsVersion="12.0">  
+<msbuildToolsets default="15.0">  
+   <toolset toolsVersion="15.0">  
       <property name="MSBuildToolsPath"   
         value="C:\SpecialPath" />  
    </toolset>  
 </msbuildToolsets>  
 ```  
   
- `<msbuildToolsets>`je také nutné definovat v konfiguračním souboru, následujícím způsobem.  
+ `<msbuildToolsets>` je také nutné definovat v konfiguračním souboru, následujícím způsobem.  
   
 ```xml  
 <configSections>  
    <section name="msbuildToolsets"         
        Type="Microsoft.Build.BuildEngine.ToolsetConfigurationSection,   
-       Microsoft.Build.Engine, Version=12.0.0.0, Culture=neutral,   
+       Microsoft.Build.Engine, Version=15.1.0.0, Culture=neutral,   
        PublicKeyToken=b03f5f7f11d50a3a"  
    </section>  
 </configSections>  
@@ -90,7 +86,7 @@ Sada nástrojů MSBuild obsahuje odkazy na úlohy, cílů a nástroje, které m�
 > [!NOTE]
 >  Čtení správně, `<configSections>` musí být první část v `<configuration>` oddílu.  
   
- `ToolsetConfigurationSection`je vlastní konfigurační oddíl, který lze použít pro vlastní konfigurace pomocí libovolného nástroje MSBuild hostitele. Pokud používáte vlastní sada nástrojů, hostitel nemá žádné akce k chybě při inicializaci modulu sestavení s tím rozdílem, poskytuje konfiguraci položek souboru. Definováním položky v registru můžete zadat celý počítač modulové, které se vztahují k MSBuild.exe, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]a všechny hostitele nástroje MSBuild.  
+ `ToolsetConfigurationSection` je vlastní konfigurační oddíl, který lze použít pro vlastní konfigurace pomocí libovolného nástroje MSBuild hostitele. Pokud používáte vlastní sada nástrojů, hostitel nemá žádné akce k chybě při inicializaci modulu sestavení s tím rozdílem, poskytuje konfiguraci položek souboru. Definováním položky v registru můžete zadat celý počítač modulové, které se vztahují k MSBuild.exe, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]a všechny hostitele nástroje MSBuild.  
   
 > [!NOTE]
 >  Pokud konfigurační soubor systému definuje nastavení `ToolsVersion` který už je definovaný v registru, nejsou sloučit dva definice. Definice v konfiguračním souboru má přednost a nastavení v registru pro tento `ToolsVersion` jsou ignorovány.  
@@ -99,7 +95,7 @@ Sada nástrojů MSBuild obsahuje odkazy na úlohy, cílů a nástroje, které m�
   
 -   **$(MSBuildBinPath)** je nastaven na `ToolsPath` hodnotu, která je určená v registru nebo v konfiguračním souboru kde `ToolsVersion` je definována. `$(MSBuildToolsPath)` Nastavení v registru nebo konfiguračního souboru Určuje umístění klíčové úlohy a cíle. V souboru projektu to mapuje vlastnost $(MSBuildBinPath) a také vlastnost $(MSBuildToolsPath).  
   
--   `$(MSBuildToolsPath)`je vyhrazené vlastnost, která je zadána vlastností MSBuildToolsPath, který je uveden v konfiguračním souboru. (Tato vlastnost nahrazuje `$(MSBuildBinPath)`. Ale `$(MSBuildBinPath)` je přenesené z důvodu kompatibility.) Vlastní sada nástrojů musí definovat buď `$(MSBuildToolsPath)` nebo `$(MSBuildBinPath)` , ale ne pomocí obou, pokud oba mají stejnou hodnotu.  
+-   `$(MSBuildToolsPath)` je vyhrazené vlastnost, která je zadána vlastností MSBuildToolsPath, který je uveden v konfiguračním souboru. (Tato vlastnost nahrazuje `$(MSBuildBinPath)`. Ale `$(MSBuildBinPath)` je přenesené z důvodu kompatibility.) Vlastní sada nástrojů musí definovat buď `$(MSBuildToolsPath)` nebo `$(MSBuildBinPath)` , ale ne pomocí obou, pokud oba mají stejnou hodnotu.  
   
  Můžete také přidat vlastní, specifické pro atribut ToolsVersion vlastnosti do konfiguračního souboru pomocí stejnou syntaxí, který použijete k přidání vlastnosti MSBuildToolsPath. Chcete-li zpřístupnit tyto vlastní vlastnosti souboru projektu, použijte stejný název jako název hodnoty, který je uveden v konfiguračním souboru. V konfiguračním souboru může definovat modulové však není modulové sub.  
   

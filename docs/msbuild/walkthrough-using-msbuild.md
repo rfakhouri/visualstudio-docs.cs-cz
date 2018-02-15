@@ -10,17 +10,16 @@ ms.topic: article
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d268ac5eb479a680063eabe4d986657c3ec4013
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 00775856e57392355b1908d4849f1bbbd836c5f2
+ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>Návod: Použití nástroje MSBuild
 MSBuild je platforma sestavení pro Microsoft a Visual Studio. Tento návod vás seznámí s stavební bloky nástroje MSBuild a ukazuje, jak k zápisu, manipulaci a ladění projektů MSBuild. Co se dozvíte o:  
@@ -62,45 +61,33 @@ MSBuild je platforma sestavení pro Microsoft a Visual Studio. Tento návod vás
      Soubor projektu se zobrazí v editoru kódu.  
   
 ## <a name="targets-and-tasks"></a>Cílů a úloh  
- Soubory projektu jsou soubory formátu XML s kořenového uzlu [projektu](../msbuild/project-element-msbuild.md).  
+Soubory projektu jsou soubory formátu XML s kořenového uzlu [projektu](../msbuild/project-element-msbuild.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
-<Project ToolsVersion="12.0" DefaultTargets="Build"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+<Project ToolsVersion="15.0"  xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- V elementu projektu musíte zadat obor názvů xmlns.  
+V elementu projektu musíte zadat obor názvů xmlns. Pokud `ToolsVersion` je k dispozici v nový projekt, musí být "15.0".
   
- Vytváření aplikace práci s [cíl](../msbuild/target-element-msbuild.md) a [úloh](../msbuild/task-element-msbuild.md) elementy.  
+Vytváření aplikace práci s [cíl](../msbuild/target-element-msbuild.md) a [úloh](../msbuild/task-element-msbuild.md) elementy.  
   
 -   Úloha je nejmenší jednotku práce, jinými slovy, "atom" sestavení. Úlohy jsou nezávislé spustitelné součásti, které mohou mít vstupy a výstupy. Neexistují žádné úlohy aktuálně odkazuje nebo definované v souboru projektu. Přidání úkolů do souboru projektu v následujících částech. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md) tématu.  
   
--   Cíl je pojmenované pořadí úloh. Existují dva cíle na konci souboru projektu, které se aktuálně nacházejí v komentářích HTML: BeforeBuild a AfterBuild.  
+-   Cíl je pojmenované pořadí úloh. Další informace najdete v tématu [cíle](../msbuild/msbuild-targets.md) tématu.  
   
-    ```xml  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
-  
-     Další informace najdete v tématu [cíle](../msbuild/msbuild-targets.md) tématu.  
-  
- Uzel projektu má volitelné defaulttargets – atribut, který vybere výchozí cíl, který má vytvořit, v takovém případě sestavení.  
-  
-```xml  
-<Project ToolsVersion="12.0" DefaultTargets="Build" ...  
-```  
-  
- Sestavení cíl není definován v souboru projektu. Místo toho je importovány ze souboru Microsoft.CSharp.targets pomocí [Import](../msbuild/import-element-msbuild.md) elementu.  
+Výchozí cíl není definován v souboru projektu. Místo toho se vyskytuje v importovaných projekty. [Import](../msbuild/import-element-msbuild.md) element určuje importované projekty. Například v projektu jazyka C#, je výchozí cíl importovány ze souboru Microsoft.CSharp.targets. 
   
 ```xml  
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
 ```  
   
- Importované soubory jsou efektivně vložena do souboru projektu, bez ohledu na jejich odkazují.  
+Importované soubory jsou efektivně vložena do souboru projektu, bez ohledu na jejich odkazují.  
+
+> [!NOTE]
+> Některé typy projektů, jako je například .NET Core pomocí zjednodušené schéma s `Sdk` atribut místo `ToolsVersion`. Tyto projekty mají implicitní importy a různé výchozí hodnoty atributu.
   
- MSBuild sleduje cíle sestavení a zaručuje, že každém cíli vychází více než jednou.  
+MSBuild sleduje cíle sestavení a zaručuje, že každém cíli vychází více než jednou.  
   
 ## <a name="adding-a-target-and-a-task"></a>Přidání cíle a úlohy  
  Přidání cíle do souboru projektu. Přidáte úloha cíl, který vytiskne zprávu.  
@@ -160,9 +147,6 @@ MSBuild je platforma sestavení pro Microsoft a Visual Studio. Tento návod vás
   
  Podle střídavě editoru kódu a příkazové okno, můžete změnit soubor projektu a rychle zobrazit výsledky.  
   
-> [!NOTE]
->  Pokud spustíte msbuild bez příkaz přepínač/t, vytvoří msbuild cíl zadané v atributu DefaultTarget elementu projektu, v tomto případě "Sestavení". Toto sestavení aplikace Windows Forms BuildApp.exe.  
-  
 ## <a name="build-properties"></a>Vlastnosti sestavení  
  Vlastnosti sestavení jsou páry název hodnota, které průvodce sestavení. Několik vlastností sestavení, které jsou již definováni v horní části souboru projektu:  
   
@@ -180,10 +164,10 @@ MSBuild je platforma sestavení pro Microsoft a Visual Studio. Tento návod vás
  Všechny vlastnosti jsou podřízené elementy PropertyGroup elementů. Název vlastnosti je název podřízený element a hodnota vlastnosti je text elementu podřízený element. Například  
   
 ```xml  
-<TargetFrameworkVersion>v12.0</TargetFrameworkVersion>  
+<TargetFrameworkVersion>v15.0</TargetFrameworkVersion>  
 ```  
   
- definuje vlastnost s názvem TargetFrameworkVersion, předá hodnotu řetězce "v12.0".  
+ definuje vlastnost s názvem TargetFrameworkVersion, předá hodnotu řetězce "v15.0".  
   
  Vytvoření vlastnosti může jej předefinovat kdykoli. If  
   
@@ -225,7 +209,7 @@ $(PropertyName)
   
     ```  
     Configuration is Debug  
-    MSBuildToolsPath is C:\Program Files\MSBuild\12.0\bin  
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin  
     ```  
   
 > [!NOTE]
