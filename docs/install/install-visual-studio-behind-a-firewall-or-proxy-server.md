@@ -5,7 +5,8 @@ ms.custom:
 ms.date: 08/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,12 +18,13 @@ ms.assetid:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 3862c6ed49e00ffa3800cccbedb2b846823418ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>Instalaci sady Visual Studio za serverem brány firewall nebo proxy server
 
@@ -30,38 +32,38 @@ Instalační program Visual Studio stáhne soubory z různých domén a jejich s
 
 Pokud je možné pro vaše prostředí, zvažte přidání následujících domén s protokoly HTTP a HTTPS.
 
-## <a name="microsoft-domains"></a>Microsoft domén
-| Domény | Účel |
+## <a name="microsoft-domains"></a>Microsoft domains
+| Domain | Účel |
 | ------ | ------- |
 | go.microsoft.com | Překlad adresy URL instalace |
-| aka.MS | Překlad adresy URL instalace |
-| download.VisualStudio.microsoft.com | Nastavení umístění stahování balíčků |
+| aka.ms | Překlad adresy URL instalace |
+| download.visualstudio.microsoft.com | Nastavení umístění stahování balíčků |
 | download.microsoft.com | Nastavení umístění stahování balíčků |
-| download.VisualStudio.com | Nastavení umístění stahování balíčků |
-| DL.xamarin.com | Nastavení umístění stahování balíčků |
+| download.visualstudio.com | Nastavení umístění stahování balíčků |
+| dl.xamarin.com | Nastavení umístění stahování balíčků |
 | visualstudiogallery.msdn.microsoft.com | Umístění souboru ke stažení rozšíření Visual Studia |
-| www.VisualStudio.com | Umístění dokumentace |
+| www.visualstudio.com | Umístění dokumentace |
 | docs.microsoft.com | Umístění dokumentace |
-| MSDN.microsoft.com | Umístění dokumentace |
+| msdn.microsoft.com | Umístění dokumentace |
 | www.microsoft.com | Umístění dokumentace |
 | *.windows.net | Přihlášení |
 | *.microsoftonline.com | Přihlášení |
 | *.live.com | Přihlášení |
 
 
-## <a name="non-microsoft-domains"></a>Domény od jiných výrobců
-| Domény | Nainstaluje tyto úlohy |
+## <a name="non-microsoft-domains"></a>Non-Microsoft domains
+| Domain | Nainstaluje tyto úlohy |
 | ------ | ------- |
-| Archive.apache.org |  Mobilní vývoj pomocí jazyka JavaScript <br />(Cordova) |
-| cocos2d x.org | Vývoj her s C++ <br />(Kokosové) |
+| archive.apache.org |  Mobilní vývoj pomocí jazyka JavaScript <br />(Cordova) |
+| cocos2d-x.org | Vývoj her s C++ <br />(Kokosové) |
 | download.epicgames.com | Vývoj her s C++ <br />(Unreal Engine) |
-| download.Oracle.com | Mobilní vývoj pomocí jazyka JavaScript <br />(Java SDK) <br /><br />Mobilní vývoj pomocí rozhraní .NET <br />(Java SDK) |
+| download.oracle.com | Mobilní vývoj pomocí jazyka JavaScript <br />(Java SDK) <br /><br />Mobilní vývoj pomocí rozhraní .NET <br />(Java SDK) |
 | download.unity3d.com | Vývoj her s Unity <br />(Unity) |
 | netstorage.unity3d.com | Vývoj her s Unity <br /> (Unity) |
-| DL.Google.com | Mobilní vývoj pomocí jazyka JavaScript <br />(Android SDK a NDK emulátoru) <br /><br />Mobilní vývoj pomocí rozhraní .NET <br />(Android SDK a NDK emulátoru) |
-| www.IncrediBuild.com | Vývoj her s C++ <br />(IncrediBuild) |
-| incredibuildvs2017i.azureedge.NET | Vývoj her s C++ <br />(IncrediBuild) |
-| www.Python.org | Vývoj Python <br />(Python) <br /><br />Vědecké zpracování dat a analytických aplikací <br />(Python) |
+| dl.google.com | Mobilní vývoj pomocí jazyka JavaScript <br />(Android SDK a NDK emulátoru) <br /><br />Mobilní vývoj pomocí rozhraní .NET <br />(Android SDK a NDK emulátoru) |
+| www.incredibuild.com | Vývoj her s C++ <br />(IncrediBuild) |
+| incredibuildvs2017i.azureedge.net | Vývoj her s C++ <br />(IncrediBuild) |
+| www.python.org | Vývoj Python <br />(Python) <br /><br />Aplikace pro datové vědy a analýzy <br />(Python) |
 
 ## <a name="get-support"></a>Získat podporu
 V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

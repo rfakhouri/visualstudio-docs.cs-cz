@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7c81cd0308dc40049e4d067369e3dcacc1f839a3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9236a36e6041cb22f6206c08662cb16be846cf85
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Práce s Python v sadě Visual Studio (Windows)
 
@@ -81,7 +81,8 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 - Visual Studio 2012 (Pro edice nebo vyšší)
 - Visual Studio 2010 SP1 (Pro edice nebo vyšší; vyžaduje .NET 4.5)
 
-Funkce jsou plně podporované a udržovat jenom nejnovější verzi sady Visual Studio. Funkce jsou dostupné v starší verze, ale nejsou aktivně spravovány.
+> [!Important]
+> Funkce jsou plně podporované a udržovat jenom nejnovější verzi sady Visual Studio. Funkce jsou dostupné v starší verze, ale nejsou aktivně spravovány.
 
 | Podpora v jazyce Python | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -93,27 +94,31 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b5353009e2fbfc26898f4163aaad98dd8651c5b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5466d764413283cb3f33525f12d7782c02ce6925
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Zdroje pro řešení potíží obsahovaly chyby vývojového prostředí.
 Ne všechny chybové zprávy mít konkrétní přidružené tématu nápovědy. Informace v chybové zprávě není vám pomůžou vyřešit problém, naleznete další prostředky, například články znalostní báze Knowledge Base, komunity vývojářů nebo technické podpory.  
-  
+
 ## <a name="knowledge-base-articles"></a>Články znalostní báze  
  Ve znalostní bázi (KB) je možné hledat online články týkající se problémů s produktem. Ne všechny problémy mají odpovídající článek ve znalostní bázi, ale chyby, se kterými se setkal velký počet zákazníků, jsou obvykle uvedeny. Články znalostní BÁZE je k dispozici na [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) webu.  
-  
+
 ## <a name="the-developer-community"></a>Komunity vývojářů  
  Fóra umožňují interakci s dalšími vývojáři a také zaměstnanci společnosti Microsoft. Pokud narazíte na chybu, pro kterou nelze nalézt řešení, je možné poslat otázky týkající se problému na fórum. Také je možné prohledat diskusní skupiny a zjistit, zda někdo z ostatních psal o stejném problému.  
-  
+
  Je k dispozici na fóra, blogy, konverzace a dalším prostředkům [technických komunit společnosti Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922) webu.  
-  
+
 ## <a name="product-support"></a>Podpora produktu  
  Pokud stále máte otázky po zkuste jiné prostředky, můžete obrátit podpory společnosti Microsoft navštivte stránky [Microsoft Support](http://go.microsoft.com/fwlink/?linkid=1782) webu. Informace o podpoře produktu ve vaší oblasti najdete v tématu [kontaktujte nás](../../ide/talk-to-us.md).
+
+ ## <a name="see-also"></a>Viz také
+ * [Řešení potíží s chybami proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server#troubleshooting-proxy-errors)

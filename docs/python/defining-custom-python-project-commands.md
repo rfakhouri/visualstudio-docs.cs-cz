@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 24eeb39abdee21d5441c88a3fa253d4818fe61e1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
+ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definování vlastní příkazy pro projektů v jazyce Python
 
@@ -282,7 +282,7 @@ Následující příkaz jednoduše spustí `where` zobrazíte Python souborů, z
 
 ```xml
 <PropertyGroup>
-  <PythonCommands>$(PythonCommands);InstallMyPackage;ShowOutdatedPackages;ShowAllPythonFilesInProject</PythonCommands>
+  <PythonCommands>$(PythonCommands);ShowAllPythonFilesInProject</PythonCommands>
 </PropertyGroup>
 
 <Target Name="ShowAllPythonFilesInProject" Label="Show Python files in project" Returns="@(Commands)">
@@ -296,6 +296,62 @@ Následující příkaz jednoduše spustí `where` zobrazíte Python souborů, z
 ### <a name="run-server-and-run-debug-server-commands"></a>Spusťte server a spusťte ladění příkazy serveru
 
 Prozkoumat jak **počátečního serveru** a **spuštění ladění serveru** příkazy pro webové projekty jsou definovány, zkontrolujte [Microsoft.PythonTools.Web.targets](https://github.com/Microsoft/PTVS/blob/master/Python/Product/BuildTasks/Microsoft.PythonTools.Web.targets) (Githubu).
+
+### <a name="install-package-for-development"></a>Nainstalovat balíček pro vývoj
+
+```xml
+<PropertyGroup>
+  <PythonCommands>PipInstallDevCommand;$(PythonCommands);</PythonCommands>
+</PropertyGroup>
+
+<Target Name="PipInstallDevCommand" Label="Install package for development" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="pip" TargetType="module" Arguments="install --editable $(ProjectDir)"
+        WorkingDirectory="$(WorkingDirectory)" ExecuteIn="Repl:Install package for development">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (Githubu), použít s oprávněním.*
+
+### <a name="generate-windows-installer"></a>Generovat Instalační služby systému Windows
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWinInstCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWinInstCommand" Label="Generate Windows Installer" Returns="@(Commands)">
+    <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+        Arguments="bdist_wininst --user-access-control=force --title &quot;$(InstallerTitle)&quot; --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+        WorkingDirectory="$(WorkingDirectory)" RequiredPackages="setuptools"
+        ExecuteIn="Repl:Generate Windows Installer">
+      <Output TaskParameter="Command" ItemName="Commands" />
+    </CreatePythonCommandItem>
+  </Target>
+```
+
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (Githubu), použít s oprávněním.*
+
+### <a name="generate-wheel-package"></a>Generovat balíček wheel
+
+```xml
+<PropertyGroup>
+  <PythonCommands>$(PythonCommands);BdistWheelCommand;</PythonCommands>
+</PropertyGroup>
+
+<Target Name="BdistWheelCommand" Label="Generate Wheel Package" Returns="@(Commands)">
+
+  <CreatePythonCommandItem Target="$(ProjectDir)setup.py" TargetType="script"
+      Arguments="bdist_wheel --dist-dir=&quot;$(DistributionOutputDir)&quot;"
+      WorkingDirectory="$(WorkingDirectory)" RequiredPackages="wheel;setuptools"
+      ExecuteIn="Repl:Generate Wheel Package">
+    <Output TaskParameter="Command" ItemName="Commands" />
+  </CreatePythonCommandItem>
+</Target>
+```
+
+*Z [fxthomas/Example.pyproj.xml](https://gist.github.com/fxthomas/5c601e3e0c1a091bcf56aed0f2960cfa) (Githubu), použít s oprávněním.*
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 
@@ -329,7 +385,7 @@ Určuje, že obsah `<Target>` nebo `<CreatePythonCommandItem>` prvky jsou nespr�
 - Požadované `Target` atributu je prázdný.
 - Požadované `TargetType` je prázdný nebo obsahuje nerozpoznané hodnotu atributu.
 - Požadované `ExecuteIn` je prázdný nebo obsahuje nerozpoznané hodnotu atributu.
-- `ErrorRegex`nebo `WarningRegex` je zadán bez nastavení `ExecuteIn="output"`.
+- `ErrorRegex` nebo `WarningRegex` je zadán bez nastavení `ExecuteIn="output"`.
 - Nerozpoznaný atributy neexistují v elementu. Například může použili jste `Argumnets` (překlepu) místo `Arguments`.
 
 Hodnoty atributů může být prázdný, pokud jste odkazovat na vlastnost, která není definována. Například pokud použijete token `$(StartupFile)` , ale žádný spouštěcí soubor byla definována v projektu a potom token přeloží na prázdný řetězec. V takových případech můžete chtít definovat výchozí hodnotu. Například **serverem** a **spustit ladění serveru** příkazy definované v Bottle, Flask, a výchozí šablony projektů Django `manage.py` Jestliže není určeno jinak soubor spuštění serveru ve vlastnostech projektu.

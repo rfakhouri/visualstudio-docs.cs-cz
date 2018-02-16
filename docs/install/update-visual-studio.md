@@ -4,7 +4,8 @@ description: "Zjistěte, jak k aktualizaci Visual Studio, krok za krokem."
 ms.date: 12/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,12 +15,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f9e4c2609c6739708437decd581dfdb88f87135d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e61def66e68d7f889349d0e7b7337238e220dce
+ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017 aktualizovat na nejnovější verzi
 Aktualizujeme Visual Studio často rozšiřovat její funkce a opravte problémy hlášené zákazníka. Abyste měli jistotu nejvíce máte [aktuální, optimalizované verze sady Visual Studio](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#release-history), budete chtít aktualizovat. Tady je způsob.
