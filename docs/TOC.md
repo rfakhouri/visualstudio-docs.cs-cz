@@ -23,9 +23,8 @@
 ### Instalace v síti
 #### [Vytvoření síťové instalace sady Visual Studio](install/create-a-network-installation-of-visual-studio.md)
 #### [Aktualizace síťové instalace sady Visual Studio](install/update-a-network-installation-of-visual-studio.md)
-#### [Instalace sady Visual Studio za bránou firewall nebo proxy serverem](install/install-visual-studio-behind-a-firewall-or-proxy-server.md)
-#### [Oprava chyb autorizace proxy serveru](ide/reference/proxy-authorization-required.md)
-#### [Vytvoření seznamu povolených adres URL v soukromé síti](ide/whitelisting-urls-in-a-private-network.md)
+#### [Instalace a používání sady Visual Studio za bránou firewall nebo proxy serverem](install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+##### [Řešení potíží s chybami sítě při instalaci nebo používání sady Visual Studio](install/troubleshooting-network-related-errors-in-visual-studio.md)
 ### Nasazení v podniku
 #### [Automatizace instalace sady Visual Studio souborem odpovědí](install/automated-installation-with-response-file.md)
 #### [Automatické použití kódů Product Key při nasazení sady Visual Studio](install/automatically-apply-product-keys-when-deploying-visual-studio.md)
@@ -188,6 +187,7 @@
 ### [Vývoj pro Office a SharePoint](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [Práce se soubory XML a XSLT](xml-tools/xml-tools-in-visual-studio.md)
 ### Další kurzy
+#### [Vytvoření aplikace WPF s C# nebo Visual Basicem](ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [1. kurz: Vytvoření prohlížeče obrázků (C#)](ide/tutorial-1-create-a-picture-viewer.md)
 ##### [Krok 1: Vytvořte projekt formulářové aplikace Windows](ide/step-1-create-a-windows-forms-application-project.md)
 ##### [Krok 2: Spusťte svůj program](ide/step-2-run-your-program.md)
