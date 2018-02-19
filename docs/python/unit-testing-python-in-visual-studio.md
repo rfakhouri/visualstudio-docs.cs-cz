@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 662ac8a1d8eac3e23d98bd9978a16e286a26d145
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Nastavení pro kód Python testování částí
 
@@ -29,9 +29,11 @@ Testy jednotek jsou části kódu, které testování jiné jednotky kódu v apl
 
 Testování částí Python hojně používá k ověření scénáře při navrhování program. Podpora v jazyce Python v sadě Visual Studio obsahuje zjišťování, provádění a ladění testování částí v kontextu vývojových procesech, aniž by museli testy samostatně.
 
-Toto téma obsahuje stručný obrys možnosti testování v sadě Visual Studio s Pythonem částí. Další informace o obecně testování částí v tématu [jednotky Otestujte svůj kód](../test/unit-test-your-code.md). Také zjistit na video [testování Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567) (Microsoft Virtual Academy, 2m31s).
+Toto téma obsahuje stručný obrys možnosti testování v sadě Visual Studio s Pythonem částí. Další informace o obecně testování částí v tématu [jednotky Otestujte svůj kód](../test/unit-test-your-code.md).
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567]
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) na jednotce testování v Pythonu (2 m 31s). |
 
 ## <a name="discovering-and-viewing-tests"></a>Zjišťování a zobrazení testů
 

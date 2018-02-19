@@ -16,11 +16,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a8e6c800ef036d0f6e8e5affae745e541a276284
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="getting-started-with-nodejs-in-visual-studio"></a>Začínáme s Node.js v sadě Visual Studio
 V tomto kurzu Node.js vývoj pomocí sady Visual Studio pro vytvoříte jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumat některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).  
@@ -37,6 +37,10 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
      Pokud nevidíte **základní Azure Node.js Express 4 aplikační** projektu šablony, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** Dialogové okno. Spustí instalační program Visual Studio. Vyberte **Node.js vývoj** zatížení, zvolte **upravit**. 
 
     Visual Studio vytvoří nové řešení a otevře projektu. **App.js** projektu soubor se otevře v editoru (levé podokno). Pokud nejste obeznámeni s projekty a řešení sady Visual Studio, najdete v části [rychlý start: vytvoření první aplikace Node.js pomocí Visual Studio](../ide/quickstart-nodejs.md).
+
+4. Pokud nemáte runtime Node.js již nainstalována, nainstalujte ji z [Node.js](https://nodejs.org/en/download/) webu.
+
+    Obecně platí Visual Studio automaticky rozpozná nainstalované runtime Node.js. Pokud nezjistí instalované verzi můžete nakonfigurovat projekt tak, aby odkazovaly nainstalovaný modul runtime.
 
 ## <a name="add-some-code"></a>Přidat kód
 
@@ -121,7 +125,7 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
     ![Vyberte cíl ladění](../nodejs/media/tutorial-nodejs-deploy-target.png) 
 
-1. Stiskněte klávesu **Ctrl + F5** ke spuštění aplikace.
+1. Stiskněte klávesu **F5** (**ladění** > **spustit ladění**) ke spuštění aplikace.
 
     Ladicí program se pozastaví u, které můžete nastavit zarážky. Teď si můžete prohlédnout stav vaší aplikace.
 
@@ -129,7 +133,7 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
     ![Zkontrolujte proměnné](../nodejs/media/tutorial-nodejs-inspect-variables.png)
 
-1. Stiskněte klávesu **F5** pokračujte.
+1. Stiskněte klávesu **F5** (**ladění** > **pokračovat**) Chcete-li pokračovat.
 
     Aplikace se otevře v prohlížeči.
 
@@ -139,7 +143,7 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
     ![Aplikace spuštěná v prohlížeči](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Otevřete okno interaktivní Node.js výběrem **zobrazení > ostatní okna > Node.js interaktivních okna**.
+1. Otevřete okno interaktivní Node.js výběrem **zobrazení** > **ostatní okna** > **Node.js interaktivních okna**.
 
    ![Otevřete okno interaktivní Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
 

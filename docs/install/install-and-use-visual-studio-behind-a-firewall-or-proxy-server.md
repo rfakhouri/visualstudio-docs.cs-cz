@@ -20,16 +20,16 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d6e207dbadd7ffdb73cf348213cab7627905c28
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.openlocfilehash: 320b2492d73e0c15d806dac9aac3802bf957f83c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a použití sady Visual Studio a služby Azure za serverem brány firewall nebo proxy server
 Pokud vaše organizace používá bezpečnostní opatření, jako je například Brána firewall nebo proxy server, pak jsou domény adresy URL, které můžete chtít "povolených" a porty a protokoly, které můžete chtít otevřít tak, aby měli dosažení co nejlepších výsledků při instalaci a použití samostatného Visual dio a služby Azure.
 
-* **[Instalaci sady Visual Studio](#install-visual-studio)**: Tato tabulka obsahuje domény adresy URL do seznamu povolených IP adres, aby měli přístup ke všem součásti a úlohy, které chcete.    
+* **[Instalaci sady Visual Studio](#install-visual-studio)**: tyto tabulky obsahují domény adresy URL do seznamu povolených IP adres, aby měli přístup ke všem součásti a úlohy, které chcete.    
 
 * **[Pomocí sady Visual Studio a služby Azure](#use-visual-studio-and-azure-services)**: Tato tabulka obsahuje domény adresy URL do seznamu povolených IP adres a portů a protokolů otevřete tak, aby měli přístup ke všem funkce a služby, které chcete.
 

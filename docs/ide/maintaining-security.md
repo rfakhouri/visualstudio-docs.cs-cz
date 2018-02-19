@@ -1,5 +1,5 @@
 ---
-title: "Správa zabezpečení | Microsoft Docs"
+title: "Zachování zabezpečení aplikací | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,18 +15,19 @@ helpviewer_keywords:
 - MBSA (Microsoft Baseline Security Analyzer)
 - security [.NET Framework], maintaining after deployment
 ms.assetid: 621d10c1-842b-4902-be60-bb9719591751
-caps.latest.revision: "18"
-author: TerryGLee
-ms.author: tglee
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 01c2867c60a3aa7b00462503da08bda0a8ac80fb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3f4b3e958cbf02f09d850ed9c50fb3e248617398
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="maintaining-security"></a>Správa zabezpečení
+
 Často se říká, že cenou zabezpečení je neustálá bdělost. Navzdory maximální pozornosti věnované zabezpečení během navrhování a vývoje vaší aplikace byste měli předpokládat, že se po nasazení objeví určité problémy se zabezpečením. Auditováním aplikace a analýzou protokolů událostí můžete objevit některé dříve skryté závady.  
   
  Musíte být nejen ostražití ve vztahu ke své aplikaci, ale musíte mít také přehled o aktuálních bezpečnostních hrozbách a nedostatcích v případě platformy, na které aplikace běží, a v případě ostatních produktů, na kterých vaše aplikace závisí.  

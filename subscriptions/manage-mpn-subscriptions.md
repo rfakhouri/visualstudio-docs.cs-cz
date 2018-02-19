@@ -9,11 +9,11 @@ Description: Managing Visual Studio subscriptions included with Microsoft Partne
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 9866b018d93e1a7b9612f65107f978ecd15bc9de
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 20c8e0593fa6049a270c8575608d57d59d0c4d2d
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="managing-visual-studio-subscriptions-included-with-microsoft-partner-network-mpn-memberships"></a>Správa předplatných sady Visual Studio, které jsou součástí členství v síti (MPN) Partner společnosti Microsoft
 
@@ -28,7 +28,8 @@ Počet a úroveň odběry Visual Studio se liší podle úrovně členství Micr
 - Microsoft Partner Network [Příručka pro správce Program na Software a Online služby výhody]((https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) )
     - PG 6 - přiřazení role kontaktu a odběry Visual Studio pro akce Pack
 
-      **Poznámka:** technické kontaktujte Role se vyžaduje pro předplatné sady Visual Studio
+> [!NOTE]
+> Technické kontaktujte Role se vyžaduje pro předplatné sady Visual Studio
     - PG 8 – odběry přiřazení Visual Studio pro partnery Competency
 
 

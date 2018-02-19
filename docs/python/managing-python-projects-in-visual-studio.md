@@ -2,7 +2,7 @@
 title: "Správa projektů pro Python aplikace v sadě Visual Studio | Microsoft Docs"
 description: "Vysvětlující účel projekty v sadě Visual Studio, ukazuje, jak vytvořit a spravovat projekty pro kód Python a popisuje jiný projekt šablony dostupné pro jazyk Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9f1cc2abdc78da1279367432741ca30b5885335
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="python-projects"></a>Projektů v jazyce Python
 
@@ -40,11 +40,10 @@ Visual Studio poskytuje řadu šablon projektu Python rychle nastavit počet str
 >
 > Je jednoduché vytvořit projekt sady Visual Studio z existujícího kódu, jak je popsáno v [vytvoření projektu z existujících souborů](#creating-a-project-from-existing-files).
 
-Úvod do projektů v jazyce Python v sadě Visual Studio, najdete v části video [získávání kód Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=iLAv23LWE_3905918567) (Microsoft Virtual Academy, 2m17s).
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567]
-
-Informace v tématu starší video [podrobné informace: Správa zdrojového kódu pomocí projektů v jazyce Python](https://youtu.be/Aq8eqApnugM) (webu youtube.com, 8m55s).
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) Úvod do projektů v jazyce Python (2 m 17s). |
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | Viz také [podrobné informace: Správa zdrojového kódu pomocí projektů v jazyce Python](https://youtu.be/Aq8eqApnugM) (webu youtube.com, 8 m 55s). |
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Přidávání souborů, přiřazení spouštění souborů a nastavení prostředí
 

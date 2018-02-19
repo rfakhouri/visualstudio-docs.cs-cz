@@ -11,6 +11,7 @@ f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
 - MSBuild.ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects
 - MSBuild.ResolveAssemblyReference.FoundConflict
+- MSBuild.ResolveAssemblyRedirects.SuggestedRedirects
 dev_langs:
 - VB
 - CSharp
@@ -26,11 +27,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0003b1f747238467afd4754cb77cc1ac47a07a86
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 91585ea5e72bc2ceebf07d02c2398454f775b5b7
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference – úloha
 Určuje, které jsou závislé na zadaná sestavení ve všech sestaveních. To zahrnuje sekundu a `n`tý pořadí závislostí.  
@@ -53,14 +54,14 @@ Určuje, které jsou závislé na zadaná sestavení ve všech sestaveních. To 
 |`FilesWritten`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje položky zapsat na disk.|  
 |`FindDependencies`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, bude nalezen závislosti. Pouze primární odkazy, jinak hodnota nebyly nalezeny. Výchozí hodnota je `true`.|  
 |`FindRelatedFiles`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, související soubory, jako jsou soubory PDB a soubory .xml bude nalezen. Výchozí hodnota je `true`.|  
-|`FindSatellites`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, bude nalezen satelitní sestavení. Výchozí hodnota je`true.`|  
+|`FindSatellites`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, bude nalezen satelitní sestavení. Výchozí hodnota je `true.`|  
 |`FindSerializationAssemblies`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, potom úlohu vyhledává sestavení serializace. Výchozí hodnota je `true`.|  
 |`FullFrameworkAssemblyTables`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Určuje položky, které mají "FrameworkDirectory" metadata, aby bylo možné přidružit k adresáři konkrétní framework seznam Redistribuce. Pokud není k přidružení, bude zaznamenána chyba. Referenční dokumentace (RAR) logiku sestavení řešení používá cílový framework adresář, pokud není nastaven FrameworkDirectory...|  
 |`FullFrameworkFolders`|Volitelné <xref:System.String?displayProperty=fullName> `[]` parametr.<br /><br /> Určuje sadu složek, které budou obsahovat adresář RedistList. Tento adresář představuje úplné rozhraní pro profil daného klienta, například %programfiles%\reference assemblies\microsoft\framework\v4.0.|  
 |`FullTargetFrameworkSubsetNames`|Volitelné `String[]` parametr.<br /><br /> Obsahuje seznam názvů podmnožina target framework. Pokud název podmnožina v seznamu odpovídá jednomu v `TargetFrameworkSubset` název vlastnosti, pak systém vyloučí tuto konkrétní cílový framework podmnožinu v čase vytvoření buildu.|  
-|`IgnoreDefaultInstalledAssemblyTables`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, potom vyhledá úlohu a používá další nainstalovaný sestavení tabulky (nebo "Redist uvádí"), se nacházejí v adresáři \RedistList pod `TargetFrameworkDirectories`. Výchozí hodnota je`false.`|  
-|`IgnoreDefaultInstalledAssemblySubsetTables`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, potom vyhledá úlohu ve používá další nainstalovaný sestavení podmnožina tabulky (nebo, "Podmnožina uvádí"), se nacházejí v adresáři \SubsetList pod `TargetFrameworkDirectories`. Výchozí hodnota je`false.`|  
-|`InstalledAssemblySubsetTables`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Obsahuje seznam souborů XML, které zadejte sestavení, která se měl v podmnožině cíl.<br /><br /> Jako možnost, položky v tomto seznamu můžete zadat "FrameworkDirectory" metadata pro přidružení`InstalledAssemblySubsetTable`<br /><br /> s konkrétní framework adresář.<br /><br /> Pokud existuje pouze jeden `TargetFrameworkDirectories` element, pak všechny položky v tomto seznamu, které neobsahují metadata "FrameworkDirectory" je zpracován jako jsou nastaveny na jedinečnou hodnotu, která je předána `TargetFrameworkDirectories`.|  
+|`IgnoreDefaultInstalledAssemblyTables`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, potom vyhledá úlohu a používá další nainstalovaný sestavení tabulky (nebo "Redist uvádí"), se nacházejí v adresáři \RedistList pod `TargetFrameworkDirectories`. Výchozí hodnota je `false.`|  
+|`IgnoreDefaultInstalledAssemblySubsetTables`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, potom vyhledá úlohu ve používá další nainstalovaný sestavení podmnožina tabulky (nebo, "Podmnožina uvádí"), se nacházejí v adresáři \SubsetList pod `TargetFrameworkDirectories`. Výchozí hodnota je `false.`|  
+|`InstalledAssemblySubsetTables`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Obsahuje seznam souborů XML, které zadejte sestavení, která se měl v podmnožině cíl.<br /><br /> Jako možnost, položky v tomto seznamu můžete zadat "FrameworkDirectory" metadata pro přidružení `InstalledAssemblySubsetTable`<br /><br /> s konkrétní framework adresář.<br /><br /> Pokud existuje pouze jeden `TargetFrameworkDirectories` element, pak všechny položky v tomto seznamu, které neobsahují metadata "FrameworkDirectory" je zpracován jako jsou nastaveny na jedinečnou hodnotu, která je předána `TargetFrameworkDirectories`.|  
 |`InstalledAssemblyTables`|Volitelné `String` parametr.<br /><br /> Obsahuje seznam souborů XML, které určují, sestavení, která se očekává, nainstalují na cílovém počítači.<br /><br /> Když `InstalledAssemblyTables` není nastaven, starší verze sestavení v seznamu jsou sloučeny do novější verze, které jsou uvedeny v souboru XML. Navíc sestavení, které mají nastavení InGAC = 'true' jsou považovány za požadavky a jsou nastaveny na CopyLocal = "Nepravda", pokud není explicitně přepsána.<br /><br /> Jako možnost, položky v tomto seznamu můžete zadat "FrameworkDirectory" metadata pro přidružení `InstalledAssemblyTable` s adresářem konkrétní framework.  Ale toto nastavení se ignoruje, pokud Redist název začíná na<br /><br /> "Microsoft-Windows-CLRCoreComp".<br /><br /> Pokud existuje pouze jeden `TargetFrameworkDirectories` element, pak všechny položky v tomto seznamu, které neobsahují metadata "FrameworkDirectory" jsou zpracovány jako, pokud jsou nastavená na jedinečnou hodnotu, která je předána<br /><br /> k `TargetFrameworkDirectories`.|  
 |`LatestTargetFrameworkDirectories`|Volitelné `String[]` parametr.<br /><br /> Určuje seznam adresářů, které obsahují seznamy redist pro nejaktuálnější framework, který je možné cílit na počítači. Pokud to není nastaven se používá nejvyšší framework nainstalované na počítači pro danou cílovou framework identifikátor.|  
 |`ProfileName`|Volitelné `String` parametr.<br /><br /> -Určuje název profilu framework jako cíle. Například klienta, Web nebo síti.|  
@@ -73,7 +74,7 @@ Určuje, které jsou závislé na zadaná sestavení ve všech sestaveních. To 
 |`SerializationAssemblyFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupní parametr.<br /><br /> Obsahuje všechny sestavení serializace XML nalezen. Tyto položky jsou označené CopyLocal = true, pokud a pouze v případě, že odkaz nebo závislost, která způsobila tuto položku existovat je CopyLocal = true.<br /><br /> `Boolean` Metadata CopyLocal označuje, zda danému odkazu by se měl zkopírovat do výstupního adresáře.|  
 |`Silent`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, jsou zaznamenány žádné zprávy. Výchozí hodnota je `false`.|  
 |`StateFile`|Volitelné `String` parametr.<br /><br /> Určuje název souboru, která určuje, kam chcete uložit mezilehlých sestavení stavu pro tuto úlohu.|  
-|`SuggestedRedirects`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupní parametr.<br /><br /> Obsahuje jednu položku pro každou odlišné konfliktní sestavení identitu, bez ohledu na hodnotu `AutoUnify` parametr. To zahrnuje každou jazykovou verzi a PKT, která byla nalezena a neměl vhodný bindingRedirect položka v konfiguračním souboru aplikace.<br /><br /> Každá položka volitelně obsahuje následující informace:<br /><br /> -   `Include`Atribut: obsahuje úplný název rodiny sestavení s hodnotou pole verze 0.0.0.0<br />-   `MaxVersion`metadata položek: obsahuje maximální číslo verze.|  
+|`SuggestedRedirects`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupní parametr.<br /><br /> Obsahuje jednu položku pro každou odlišné konfliktní sestavení identitu, bez ohledu na hodnotu `AutoUnify` parametr. To zahrnuje každou jazykovou verzi a PKT, která byla nalezena a neměl vhodný bindingRedirect položka v konfiguračním souboru aplikace.<br /><br /> Každá položka volitelně obsahuje následující informace:<br /><br /> -   `Include` Atribut: obsahuje úplný název rodiny sestavení s hodnotou pole verze 0.0.0.0<br />-   `MaxVersion` metadata položek: obsahuje maximální číslo verze.|  
 |`TargetedRuntimeVersion`|Volitelné `String` parametr.<br /><br /> Určuje verzi modulu runtime pro cíl, například 2.0.57027 nebo v2.0.57027.|  
 |`TargetFrameworkDirectories`|Volitelné `String[]` parametr.<br /><br /> Určuje cestu k adresáři target framework. Tento parametr je potřeba určit stav CopyLocal pro výsledný položky.<br /><br /> Pokud není tento parametr zadán, žádné výsledné položky, bude mít hodnotu CopyLocal `true` explicitně nemají-li `Private` hodnota metadat `true` na jejich Zdrojová položka.|  
 |`TargetFrameworkMoniker`|Volitelné `String` parametr.<br /><br /> TargetFrameworkMoniker ke sledování, pokud existuje. Používá se pro protokolování.|  

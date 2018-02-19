@@ -9,11 +9,11 @@ Description: Learn how to activate the Azure benefit included in your Visual Stu
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 7354f96a441faa587e2f669ee39defcf3ced1ff6
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: a0587e063aa73666a0e97460b8d92f4614b3b116
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>Použití v sadě Visual Studio předplatných Microsoft Azure
 
@@ -68,11 +68,16 @@ Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.vis
 ![Řídicí panel Azure](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>Nejčastější dotazy
-*Kontrola aktualizací*
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Otázka: Jak mohu odeslat technické podpory incidentu z portálu pro Azure?
+Odpověď: odesílání na základě incidentu podpory z portálu Azure je proces třech krocích.
+1. Aktivovat výhody vaší se na technickou podporu a získat ID vašeho přístupu ID smlouvy.
+2. Propojení vaší smlouvě o podpoře k předplatnému Azure. 
+3. Na základě incidentu podpory pro odeslání.
+Navštivte [se na technickou podporu](/visualstudio/subscriptions/vs-tech-support) dokumentace úplné podrobnosti. 
 
 ## <a name="support-resources"></a>Podpora prostředky
 -  Potřebujete pomoc s Azure?  Podívejte se na tyto prostředky:
-    - Technickou podporu: https://azure.microsoft.com/support/options/ 
-    - [Dokumentace](/azure/)
+    - Technickou podporu: [https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
+    - [Dokumentace k Azure](/visualstudio/azure/)
 -  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
 -  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 

@@ -9,11 +9,11 @@ Description: Explore your purchasing options for Visual Studio subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 73d0f1c5016a9ea908d7d280575e297357ba78ba
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 9564af525d0c801e311e42bc9ebe93bb16166147
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-buy-a-subscription"></a>Jak koupit předplatné
 Existují dva hlavní typy odběry Visual Studio, cloudu a standard, které jsou vysvětlené na [Visual Studio stránce s cenami](https://www.visualstudio.com/vs/pricing/).
@@ -26,13 +26,14 @@ Existují dva hlavní typy odběry Visual Studio, cloudu a standard, které jsou
 ## <a name="buy-visual-studio-standard-subscriptions"></a>Kupte si Visual Studio standardní odběrů
 Budete muset požádejte svého prodejce softwaru si zakoupit předplatné standardní sady Visual Studio, nebo přejděte [Microsoft Store](https://www.microsoft.com/store) online.
 
-*   Zaregistrujte si předplatné Azure a kupte si Visual Studio Marketplace, budete potřebovat "osobní" [účtu Microsoft](https://www.microsoft.com/account) nebo ["pracovní nebo školní účet"](/azure/active-directory/sign-up-organization) Pokud jste nákup pro vaši organizaci, a jejich Správa identit s Azure Active Directory (Azure AD).
+
+
+### <a name="buy-visual-studio-cloud-subscriptions"></a>Kupte si cloudové předplatné sady Visual Studio
+
+Zaregistrujte si předplatné Azure a kupte si Visual Studio Marketplace, budete potřebovat "osobní" [účtu Microsoft](https://www.microsoft.com/account) nebo ["pracovní nebo školní účet"](/azure/active-directory/sign-up-organization) Pokud jste nákup pro vaši organizaci, a jejich Správa identit s Azure Active Directory (Azure AD).
 
 > [!WARNING]
 > Používáte-li nákupu předplatných cloudové Visual Studio předplatné Azure, můžete tyto poplatky se zobrazí jako poplatky za použití a nebude započítává vaší Azure peněžních závazků. Další informace o cenách Azure služby [– nejčastější dotazy](/vsts/billing/faq-azure-billing).  
-
-### <a name="buy-subscriptions"></a>Kupte si předplatné
-
 
 1.  Přihlaste se k [sady Visual Studio Marketplace > odběry](https://marketplace.visualstudio.com/subscriptions).
 

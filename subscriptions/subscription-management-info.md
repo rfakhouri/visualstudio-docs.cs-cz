@@ -9,11 +9,11 @@ Description: Find More Information About Subscription Management?
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: ed2b39a7660f7e4307c142b801ba8d43014c4726
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: eca3bbc4c906639e1946776b17537480b816c32f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="where-can-i-find-more-information-about-subscription-management"></a>Kde můžete najít další informace o správě předplatného?
 
@@ -21,5 +21,5 @@ Možnosti správy předplatného jsou dostupné pro zákazníky, kteří si poř
 
 Zadané různé nákupu kanály, je důležité pro správci předplatného vědět, jak byly, můžete využít příslušná oprávnění a uživatelské příručky si opatřili své předplatné. 
 
-Visual Studio odběry týmu nedávno vytvořen "sadě Visual Studio [portálu pro správu předplatných](https://www.visualstudio.com/subscriptions-administration/)".  Cílem tento portál je předplatné správcům rychle pochopit nástroje a možnosti, které chcete přiřadit a spravovat odběry v rámci organizace. 
+Odběry Visual Studio team, vytvořit "sadě Visual Studio [portálu pro správu předplatných](https://www.visualstudio.com/subscriptions-administration/)".  Cílem tento portál je předplatné správcům rychle pochopit nástroje a možnosti, které chcete přiřadit a spravovat odběry v rámci organizace. 
 

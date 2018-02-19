@@ -9,11 +9,11 @@ Description: Compare features and benefits of Visual Studio standard and cloud s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 72492331ed44c55da243960049f1e56d2a3e52f8
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="compare-visual-studio-subscription-options"></a>Porovnejte možnosti odběru sady Visual Studio
 
@@ -39,10 +39,10 @@ Jestli jste student jednotlivých developer, malý tým nebo organizace, je pře
 
 **Programy** – kromě standard a cloudových předplatných, společnost Microsoft nabízí odběry prostřednictvím řady různých speciální programy.
 
-- [Představte si](https://imagine.microsoft.com/en-us/about) – nástroje pro vývojáře pro odborníky v oblasti úrovně a software pro studenty zdarma - vše potřebné pro vytvoření hry, aplikace a weby.
+- [Představte si](https://imagine.microsoft.com/about) – nástroje pro vývojáře pro odborníky v oblasti úrovně a software pro studenty zdarma - vše potřebné pro vytvoření hry, aplikace a weby.
 - [BizSpark](https://bizspark.microsoft.com/About/Offers) -volné produktů a služeb pro startupy.  Členům programu BizSpark mít volný přístup do všech Microsoft vývoj a testování softwaru, včetně Azure, Windows, Visual Studio, Office a SQL Server. 
-- [Microsoft Partner sítě (MPN)](https://partner.microsoft.com/en-us) – v závislosti odpovídající úrovni vašeho v MPN, se může zobrazit předplatná až 10 Enterprise 
-- [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx) – jednoznačně šité na míru zajistit výhradní přístup k prostředkům, které vám pomůžou další vyvíjet technických otázek a dovednosti školení.
+- [Microsoft Partner sítě (MPN)](https://partner.microsoft.com/) – v závislosti odpovídající úrovni vašeho v MPN, se může zobrazit předplatná až 10 Enterprise 
+- [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx) – jednoznačně šité na míru zajistit výhradní přístup k prostředkům, které vám pomůžou další vyvíjet technických otázek a dovednosti školení. MCT Software & služby a MCT vývojáře softwaru a odběry služby, naleznete [webu Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx#item-ID0EFAAAAACA) práva, které jsou součástí vašeho předplatného použijte informace o školení. 
 
 ## <a name="visual-studio-licensing"></a>Správa licencí v sadě Visual Studio
 Visual Studio odběry jsou licencovaná podle jednotlivých uživatelů. Návrh, vývoj, testování nebo předvedení své programy na libovolný počet zařízení, může jeden uživatel pomocí softwaru. Předplatné sady Visual Studio také umožňuje licencovaný uživatel k vyzkoušení softwaru a k simulaci prostředí zákazníků diagnostikovat problémy související s jejich programy.
@@ -62,4 +62,4 @@ Licenci předplatného sady Visual Studio také umožňuje koncovým uživatelů
 
 [Porovnání funkcí Visual Studio IDE](https://www.visualstudio.com/vs/compare/).
 
-MCT Software & služby a MCT vývojáře softwaru a odběry služby, naleznete [webu Microsoft Certified Trainer](https://www.microsoft.com/learning/en-us/mct-certification.aspx#item-ID0EFAAAAACA) práva, které jsou součástí vašeho předplatného použijte informace o školení.  
+ 

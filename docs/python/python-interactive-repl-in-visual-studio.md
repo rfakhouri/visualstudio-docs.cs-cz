@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 995c3d8512c3df9bf2cc40fe962106a95f9d6268
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e41e4af21a524215550c581b1e29efc2261aaa8f
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-the-python-interactive-window"></a>Práce s oknem interaktivní Python
 
@@ -33,16 +33,18 @@ Visual Studio má počet Python REPL režimy zvolit:
 
 | REPL | Popis | Úpravy | Ladění | Obrázky |
 | --- | --- | --- | --- | --- |
-| Standard | Výchozí REPL, rozhovory Python přímo | Standardní úpravy (víceřádkových atd.). | Ano, prostřednictvím`$attach` | Ne |
+| Standard | Výchozí REPL, rozhovory Python přímo | Standardní úpravy (víceřádkových atd.). | Ano, prostřednictvím `$attach` | Ne |
 | Ladit | Výchozí REPL rozhovory vyladěnou procesu Python | Standardní úpravy | Pouze ladění | Ne |
 | IPython | REPL komunikuje se IPython back-end | Příkazy IPython, výhody, které Pylab | Ne | Ano, vložené v REPL |
 | IPython bez Pylab | REPL komunikuje se IPython back-end | Standardní IPython | Ne | Ano, oddělte okna | 
 
 Toto téma popisuje **standardní** a **ladění** REPL režimy. Informace o režimech IPython v [pomocí IPython REPL](interactive-repl-ipython.md).
 
-Podrobný návod s příklady, včetně interakce s editoru, jako je například Ctrl + Enter, najdete v části [kurzu krok 3: použití okna interaktivní REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). Video úvod naleznete v tématu [interaktivní okno Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy, 2m22s).
+Podrobný návod s příklady, včetně interakce s editoru, jako je například Ctrl + Enter, najdete v části [kurzu krok 3: použití okna interaktivní REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) v okně interaktivní (2 m 22s).|
 
 ## <a name="opening-an-interactive-window"></a>Otevření interaktivních okna
 
@@ -79,7 +81,7 @@ Výjimkou je, aby dokončení příkazu, jako např. kdy jsou potřeby další �
 > [!Tip]
 > Okno interaktivní vylepšuje obvyklé Python prostředí příkazového řádku REPL automaticky odsazením příkazy, které patří do okolního oboru. Historii (třeba připomenout s na šipku nahoru) také poskytuje Víceřádkový položek, zatímco příkazového řádku REPL obsahuje pouze jeden řádky.
 
-<a name="meta-commands"></a>Okno interaktivní také podporuje několik meta příkazy. Všechny příkazy meta začínat `$`, a zadat `$help` získáte seznam příkazů meta a `$help <command>` získat podrobnosti o použití pro konkrétní příkaz.
+<a name="meta-commands"></a> Okno interaktivní také podporuje několik meta příkazy. Všechny příkazy meta začínat `$`, a zadat `$help` získáte seznam příkazů meta a `$help <command>` získat podrobnosti o použití pro konkrétní příkaz.
 
 | Meta-příkazu | Popis |
 | --- | --- |

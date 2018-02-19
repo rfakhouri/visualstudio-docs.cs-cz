@@ -9,11 +9,11 @@ Description: Learn how to renew your Visual Studio subscriptions acquired throug
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: f4f2bcdd999a008334a56d95024393d21db15e32
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 1cf92c870521907c90332a9b9d1292b7b297c8d6
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-do-i-renew-a-subscription-purchased-through-microsoft-store"></a>Jak obnovit předplatné zakoupili prostřednictvím Microsoft Store?
 Přehled: Prodejní odběry jsou často zakoupili Microsoft Store a je možné identifikovat jako "Prodejní" podle k dispozici na https://my.visualstudio.com/subscriptions odběry informací. 
@@ -29,7 +29,7 @@ Přehled: Prodejní odběry jsou často zakoupili Microsoft Store a je možné i
 
 
 ## <a name="activate-your-subscription"></a>Aktivace předplatného: 
-Můžete si aktivovat vašem předplatném z vaší platební "Potvrzovací stránku" nebo "Potvrzení e-mailu".  (Pokud nevidíte potvrzení e-mailu, nezapomeňte zkontrolovat vaše složky Nevyžádaná pošta.)   
+Můžete aktivovat předplatné z vaší platební "Potvrzovací stránku" nebo "Potvrzení e-mailu".  (Pokud nevidíte potvrzení e-mailu, nezapomeňte zkontrolovat vaše složky Nevyžádaná pošta.)   
 1. Klikněte na **kliknutím sem se přihlaste**.  Budete přesměrováni na [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs).
 2. Přihlaste se k předplatnému.  (Nápovědu [přihlášení](/visualstudio/subscriptions/signing-in).)
 3. Zadejte informace o "Kód Product Key" dostupné z platby "Potvrzovací stránku" nebo "Potvrzení e-mailu" a klikněte na tlačítko **aktivovat**.

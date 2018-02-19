@@ -9,11 +9,11 @@ Description: Learn how to obtain and manage your product keys in Visual Studio s
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 50143579a4bf9033e54385b81ef365228b2b63cf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Použití kódů Product Key v sadě Visual Studio předplatných
 
@@ -90,7 +90,8 @@ Jak můžete vidět, existuje několik verzí aplikace Visio 2010 uvedené.  Jed
 ### <a name="exporting-your-claimed-keys"></a>Export klíče deklarovaný
 Můžete exportovat seznam všechny klíče, které jste požadovaly, společně s velké výběr statické a dalších klíčů, které jsou automaticky označené jako "vyžádaná" pro vás.  
 
-**Důležité: Pokud vaše předplatné vyprší, bude už nebudete moct deklarace nových klíčů nebo exportovat klíče deklarovaný.** 
+> [!IMPORTANT] 
+> Pokud vaše předplatné vyprší, bude už nebudete moct deklarace nových klíčů nebo exportovat vaší deklarovaný keys.* * 
 
 Chcete-li exportovat klíče, klikněte jednoduše na **exportovat všechny klíče** odkaz na pravé straně kódy Product Key.  Vytvoří se soubor XML s názvem KeysExport.xml a budete mít možnost otevřít nebo uložit soubor.  Musíte se k otevření souboru pomocí aplikace umožňuje zpracovávat soubory XML.  Například můžete otevřít soubor jako sešit v aplikaci Excel jen pro čtení.  
 

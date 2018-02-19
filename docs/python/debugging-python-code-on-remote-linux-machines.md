@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 11e48a67540ff7df665cc044557751be4b1c3be0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Vzdálené ladění kódu jazyka Python v systému Linux
 
@@ -29,9 +29,9 @@ Visual Studio se můžou spouštět a ladění aplikací Python místně i vzdá
 
 Při použití ptvsd, kód Python laděné hostuje ladění serveru, na kterou můžete připojit Visual Studio. Tato hostování vyžaduje malé změny kódu pro import a povolení serveru a může vyžadovat sítě nebo brány firewall konfigurace na vzdáleném počítači povolit připojení TCP.
 
-Úvod do vzdáleného ladění, najdete v části [podrobné informace: vzdálené ladění napříč platformami](https://youtu.be/y1Qq7BrV6Cc) (webu youtube.com, 6m22s), který je použitelný pro Visual Studio 2015 a 2017.
-
-> [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | Úvod do vzdáleného ladění, najdete v části [podrobné informace: vzdálené ladění napříč platformami](https://youtu.be/y1Qq7BrV6Cc) (webu youtube.com, 6m22s), který je použitelný pro Visual Studio 2015 a 2017. |
 
 ## <a name="setting-up-a-linux-computer"></a>Nastavení počítač se systémem Linux
 

@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a73226de18ea2003890c2923641ae65318dbfc1f
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Klávesové zkratky pro Visual Studio
 
@@ -68,7 +68,7 @@ Můžete přejít v sadě Visual Studio snadno pomocí klávesové zkratky v tom
 |Najít v souborech|Ctrl+Shift+F|
 |Nahradit v souborech|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a>Editor kódu
+##  <a name="BKMK_CodeEditor"></a> Editor kódu
 
 |Příkaz|Zástupce|Dostupnost verze|
 |-|-|-|
@@ -84,8 +84,8 @@ Můžete přejít v sadě Visual Studio snadno pomocí klávesové zkratky v tom
 |Výběr bloku|Podržte klávesu Alt a přetáhněte ji myši, kláves Shift + Alt + šipka||
 |Řádek Přesunout nahoru/dolů|ALT + Šipka nahoru nebo Alt + Šipka dolů||
 |Duplicitní řádku|CTRL + E, V|Visual Studio 2017 verze 15,6 operací preview 2|
-|Rozbalte výběr|Ctrl+W|Visual Studio 2017 verze 15,5|
-|Výběr kontraktu|Ctrl+Shift+W|Visual Studio 2017 verze 15,5|
+|Rozbalte výběr|**Posunutí**+**Alt**+**=**|Visual Studio 2017 verze 15,5|
+|Výběr kontraktu|**Posunutí**+**Alt**+**-**|Visual Studio 2017 verze 15,5|
 |Přechod na definici|F12||
 |Funkce Náhled definice|Alt+F12||
 |Přejít na definici zásobníku|Ctrl + Shift + 8 (zpět), Ctrl + Shift + 7 (dál)||
@@ -125,9 +125,9 @@ Můžete přejít v sadě Visual Studio snadno pomocí klávesové zkratky v tom
 
 ## <a name="see-also"></a>Viz také
 
-[Klávesové zkratky (služby VSTS a sady TFS)](/vsts/collaborate/keyboard-shortcuts)  
-[Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)  
-[Visual Studio tipy a triky Blog](http://blogs.msdn.com/b/zainnab)  
-[Sada nástrojů Visual Studio na kanálu 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
-[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
-[Visual Studio připojení chyby](http://connect.microsoft.com/VisualStudio)
+- [Klávesové zkratky (služby VSTS a sady TFS)](/vsts/collaborate/keyboard-shortcuts)
+- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)
+- [Visual Studio tipy a triky Blog](http://blogs.msdn.com/b/zainnab)
+- [Sada nástrojů Visual Studio na kanálu 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
+- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
+- [Visual Studio připojení chyby](http://connect.microsoft.com/VisualStudio)

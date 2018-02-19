@@ -1,6 +1,6 @@
 ---
 title: "Zjistěte, jak k testování kódu s Live jednotkové testování v Visual Studio 2017 | Microsoft Docs | Microsoft Docs"
-ms.date: 2017-08-31
+ms.date: 08/31/2017
 ms.suite: 
 ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
@@ -10,12 +10,13 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: 9034fbbffee2b3883f15be0d724f00cafad8126a
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- dotnet
+ms.openlocfilehash: 2f2c8ba68419b23d2e74b82e23640c68a6f534aa
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Začínáme s Live jednotkové testování v sadě Visual Studio
 
@@ -68,13 +69,13 @@ Teď, když jste vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
-   `StringLibrary`má tři statických metod:
+   `StringLibrary` má tři statických metod:
 
-      - `StartsWithUpper`Vrátí `true` Pokud řetězec začíná velké písmeno; jinak vrátí `false`.
+      - `StartsWithUpper` Vrátí `true` Pokud řetězec začíná velké písmeno; jinak vrátí `false`.
       
       - `StartsWithLower`Vrátí `true` Pokud řetězec začíná malé písmeno; jinak vrátí `false`.
      
-      - `HasEmbeddedSpaces`Vrátí `true` Pokud řetězec obsahuje znak embedded prázdné; jinak vrátí `false`.
+      - `HasEmbeddedSpaces` Vrátí `true` Pokud řetězec obsahuje znak embedded prázdné; jinak vrátí `false`.
     
 1.  Vyberte **sestavení**, **sestavit řešení** nejvyšší úrovně nabídce sady Visual Studio. Visual Studio má úspěšně sestavit knihovnu.
  
@@ -96,13 +97,13 @@ Teď, když jste vytvořili řešení, vytvoříte knihovny tříd s názvem `St
 
    [!code-vb[StringLibrary source code](samples/visual-basic/utilitylibraries/stringlibrary/class1.vb)]
 
-   `StringLibrary`má tři statických metod:
+   `StringLibrary` má tři statických metod:
 
-      - `StartsWithUpper`Vrátí `true` Pokud řetězec začíná velké písmeno; jinak vrátí `false`.
+      - `StartsWithUpper` Vrátí `true` Pokud řetězec začíná velké písmeno; jinak vrátí `false`.
       
       - `StartsWithLower`Vrátí `true` Pokud řetězec začíná malé písmeno; jinak vrátí `false`.
      
-      - `HasEmbeddedSpaces`Vrátí `true` Pokud řetězec obsahuje znak embedded prázdné; jinak vrátí `false`.
+      - `HasEmbeddedSpaces` Vrátí `true` Pokud řetězec obsahuje znak embedded prázdné; jinak vrátí `false`.
     
 1. Klikněte pravým tlačítkem na projekt StringLibrary v **Průzkumníku řešení** a vyberte **vlastnosti**. V **aplikace** kartě, odstraňte text v **kořenový obor názvů** textového pole, jak ukazuje následující obrázek. Kořenového oboru názvů je definována [příkaz Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) ve zdrojovém kódu.
 

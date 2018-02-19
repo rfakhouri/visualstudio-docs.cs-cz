@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
 ms.devlang: javascript
@@ -12,13 +13,15 @@ ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-dev_langs: JavaScript
-ms.workload: nodejs
-ms.openlocfilehash: 12c848797b167038b02106ca3392cac50171f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první aplikace Node.js
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou webovou aplikaci Node.js. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).  
@@ -26,7 +29,7 @@ V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prost
 ## <a name="create-a-project"></a>Vytvoření projektu
 Nejdřív vytvoříte projekt Node.js webové aplikace.
 
-1. Otevřete Visual Studio 2017.  
+1. Open Visual Studio 2017.  
 
 2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .  
 
@@ -37,6 +40,10 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
      ![Node.js zatížení v instalační program VS](../ide/media/quickstart-nodejs-workload.png)  
 
     Visual Studio vytvoří a nového řešení a otevře projektu. **Server.js** otevřen v editoru.
+
+4. Pokud nemáte runtime Node.js již nainstalována, nainstalujte ji z [Node.js](https://nodejs.org/en/download/) webu.
+
+    Obecně platí Visual Studio automaticky rozpozná nainstalované runtime Node.js. Pokud nezjistí instalované verzi můžete nakonfigurovat projekt tak, aby odkazovaly nainstalovaný modul runtime.
 
 ## <a name="explore-the-ide"></a>Prozkoumejte rozhraní IDE  
 

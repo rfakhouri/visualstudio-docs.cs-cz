@@ -18,17 +18,20 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 150f4b1c7e151e0b5d6f802ae40f4b5cf6943937
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Společně ladění Python a C++
 
 Většina regulární ladicí programy Python podporovat ladění pouze Python kódu. V praxi však Python se používá ve spojení s C nebo C++ v scénářům, které vyžadují vysoký výkon nebo možnost přímo volat rozhraní API platformy. (Viz [vytváření rozšíření pro C++ pro jazyk Python](working-with-c-cpp-python-in-visual-studio.md) podrobný.)
 
 Visual Studio poskytuje integrované, souběžných ladění ve smíšeném režimu pro Python a nativní C/C++, za předpokladu, že jste vybrali **Python tools nativní vývoj** možnost pro vývoj Python zatížení v sadě Visual Studio Instalační program.
+
+> [!Note]
+> Ladění ve smíšeném režimu není k dispozici s nástroji Python Tools pro sadu Visual Studio 1.x v sadě Visual Studio 2015 a starší.
 
 Funkce ladění ve smíšeném režimu patří, jak je popsáno v tomto článku:
 
@@ -40,12 +43,9 @@ Funkce ladění ve smíšeném režimu patří, jak je popsáno v tomto článku
 
 ![Ladění ve smíšeném režimu](media/mixed-mode-debugging.png)
 
-Video Úvod do vytváření, testování a ladění nativních modulů C sadou Visual Studio, najdete v části [podrobné informace: vytváření nativní moduly](https://youtu.be/D9RlT06a1EI) (webu youtube.com, 9m9s). Přehrávání videa se vztahuje na Visual Studio 2015 a 2017.
-
-> [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
-
-> [!Note]
-> Ladění ve smíšeném režimu není k dispozici s nástroji Python Tools pro sadu Visual Studio 1.x.
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | Úvod do vytváření, testování a ladění nativních modulů C sadou Visual Studio, najdete v části [podrobné informace: vytváření nativní moduly](https://youtu.be/D9RlT06a1EI) (webu youtube.com, 9 m 09s). Přehrávání videa se vztahuje na Visual Studio 2015 a 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Povolit ladění ve smíšeném režimu v projektu jazyka Python
 

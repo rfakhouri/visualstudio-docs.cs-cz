@@ -9,17 +9,18 @@ Description: Learn how to activate the technical support benefit included with y
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 39d140f83f43d6032119d4a7e84d6f1f091af707
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: 4fb6294d6d70e827bd69544fcc4f07cad72b7c5a
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivace se na technickou podporu výhodou odběry sady Visual Studio
 
-Vyřešte problémy s opravu v testovacím prostředí.  (Poznámka: Benefit až podle aktivaci můžete odeslat žádost o podporu.)  Visual Studio Enterprise standardní a roční Cloudová předplatná přijímat čtyři incidenty, když Visual Studio Professional standardní a roční Cloudová předplatná přijímat dva incidenty.  
+Vyřešte problémy s opravu v testovacím prostředí.  (Benefit musí být aktivována mohli odeslat žádost o podporu.)  Visual Studio Enterprise standardní a roční Cloudová předplatná přijímat čtyři incidenty, když Visual Studio Professional standardní a roční Cloudová předplatná přijímat dva incidenty.  
 
-**Poznámka:** ne všechny odběry na dané úrovni jsou oprávněni přijímat incidentů podpory.  Odběry získané prostřednictvím FTE, NFR, MPN, MCT a další programy neobdrží incidentů podpory.  Pokud vaše předplatné není oprávněni přijímat technické podpory incidentů, se nebude zobrazovat dlaždici technická podpora ve vašem k dispozici výhody. 
+> [!NOTE]
+> Ne všechny odběry na dané úrovni jsou oprávněni přijímat incidentů podpory.  Odběry získané prostřednictvím FTE, NFR, MPN, MCT a další programy neobdrží incidentů podpory.  Pokud vaše předplatné není oprávněni přijímat technické podpory incidentů, se nebude zobrazovat dlaždici technická podpora ve vašem k dispozici výhody. 
 
    ![Dlaždice Benefit se na technickou podporu](_img\vs-tech-support\vs-tech-support-tile.png)
 
@@ -33,7 +34,8 @@ Vyřešte problémy s opravu v testovacím prostředí.  (Poznámka: Benefit až
 
     ![Technickou podporu Benefit najít ID předplatného](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
-**Poznámka:** k aktivaci účtu podpory v jiných jazycích než angličtině, vyberte ve vaší zemi z [tento seznam](http://support.microsoft.com/activatesupport).   
+> [!NOTE]
+> Aktivujte účet podpory v jiných jazycích než angličtině, vyberte ve vaší zemi z [tento seznam](http://support.microsoft.com/activatesupport).   
 
 # <a name="how-to-submit-an-incident"></a>Postup odeslání incidentu
 Jednou máte ID smlouvy a nastavit ID přístupu, v případě, že budete potřebovat podporu zavoláte na číslo technické podpory pro vaši zemi, odeslání na základě incidentu podpory [online](http://support.microsoft.com/oas/), nebo odeslání incidentu prostřednictvím portálu Azure.  Pokud raději získat podporu přes telefon, stále můžete odeslat váš případ online a pracovníka podpory Microsoftu bude zpětné volání.
@@ -85,7 +87,7 @@ Pokud chcete používat vaše zvýhodněné předplatné se na technickou podpor
 1.  Navštivte https://portal.azure.com a přihlášení
 2.  V levém navigačním klikněte na "Pomůže podpora +"
 3.  V části "Podpora" klikněte na tlačítko "Kontraktu podpory odkaz"
-4.  Zadejte zadejte "ID přístupu" a "Obraťte se na ID" součástí #1 výše.
+4.  Zadejte zadejte "ID přístupu" a "ID smlouvy" součástí #1 výše.
 Po dokončení těchto kroků budete moci vybrat plán podpory, které jsou přidružené k vaší zvýhodněné předplatné sady Visual Studio.  (Název plánu může obsahovat "MSDN".)
 
  

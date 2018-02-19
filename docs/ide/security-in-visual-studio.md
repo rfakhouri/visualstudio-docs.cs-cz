@@ -11,18 +11,19 @@ helpviewer_keywords:
 - code access security, coding errors
 - security [.NET Framework], about security
 ms.assetid: 318c34ce-f643-468c-83a1-843196f5d845
-caps.latest.revision: "20"
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 995ac17cd99c395dcf1c69f0d05e1b273ac72f1d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c9d546d4020cb9a8e73efdea77fdb85d77d6146d
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="security-in-visual-studio"></a>Zabezpečení v sadě Visual Studio
+
 Zabezpečení byste měli věnovat pozornost ve všech aspektech vývoje aplikace od návrhu až po nasazení. Spusťte jako bezpečně spuštěním sady Visual Studio. V tématu [oprávnění uživatele](../ide/user-permissions-and-visual-studio.md).  
   
  Abyste mohli efektivně vyvíjet bezpečné aplikace, měli byste znát základní principy konceptů zabezpečení a funkce zabezpečení platforem, pro které vyvíjíte. Také je třeba porozumět bezpečným technikám kódování.  

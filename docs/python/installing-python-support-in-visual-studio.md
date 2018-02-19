@@ -2,7 +2,7 @@
 title: "Instalace podpory Python v sadě Visual Studio | Microsoft Docs"
 description: "Podrobné pokyny k instalaci nástroje Python Tools pro Visual Studio (PTVS) v aplikaci Visual Studio 2017, 2015, 2013, 2012 a 2010, včetně možnosti a umístění instalace."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd0ef5cba2924c33857a8366105bde1f933a1ae9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 32a8e6413fd719bfa4be6296972d39d609eab411
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalace podpory Python v sadě Visual Studio v systému Windows
 
@@ -43,7 +43,7 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017. Je nutné nainstalovat verzi 15.2 a výše a použít Python.
+1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017. Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program sady Visual Studio a přejděte ke kroku 2.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Nainstalovat Visual Studio 2017 Community</a>
@@ -55,7 +55,10 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 
     ![Python vývoj zatížení v instalačním programu sady Visual Studio](media/installation-python-workload.png)
 
-    Volitelné: Pokud pracujete s vědecké zpracování dat, zvažte také **vědecké zpracování dat a analytických aplikací** zatížení (Visual Studio 2017 15.2 a novější). Tato úloha zahrnuje podporu pro Python, jakož i jazyk R a F #. Další informace najdete v tématu [vědecké zpracování dat a aplikací pro uchovávání zatížení](../rtvs/data-science-workload.md).
+    Volitelné: Pokud pracujete s vědecké zpracování dat, zvažte také **vědecké zpracování dat a analytických aplikací** zatížení. Tato úloha zahrnuje podporu pro Python, jakož i jazyk R a F #. Další informace najdete v tématu [vědecké zpracování dat a aplikací pro uchovávání zatížení](../rtvs/data-science-and-analytical-applications-workload.md).
+
+    > [!Note]
+    > Python a vědecké zpracování dat úlohy jsou k dispozici pouze s verzí aplikace Visual Studio 2017 15.2 a novějším.
 
 1. Na pravé straně instalačního programu vyberte v případě potřeby další možnosti. Přeskočte tento krok přijměte výchozí možnosti.
 
@@ -63,7 +66,7 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 
     | Možnost | Popis |
     | --- | --- |
-    | Distribuce Python | Vyberte libovolnou kombinaci variant 32bitové a 64bitové verze Python 2, Python 3, Anaconda2 a Anaconda3 distribuce, které chcete pracovat. Každý obsahuje překladač distribuci, modulu runtime a knihovny. Anaconda, konkrétně je platforma vědecké účely open data, která obsahuje řadu různých předem nainstalované balíčky. (Můžete vrátit na instalační program sady Visual Studio kdykoli přidat nebo odebrat distribuce.) |
+    | Distribuce Python | Vyberte libovolnou kombinaci variant 32bitové a 64bitové verze Python 2, Python 3, Anaconda2 a Anaconda3 distribuce, které chcete pracovat. Každý obsahuje překladač distribuci, modulu runtime a knihovny. Anaconda, konkrétně je platforma vědecké účely open data, která obsahuje řadu různých předem nainstalované balíčky. (Můžete vrátit na instalační program sady Visual Studio kdykoli přidat nebo odebrat distribuce.)  **Poznámka:**: Pokud jste nainstalovali distribuční mimo instalační program sady Visual Studio, je potřeba zkontrolovat ekvivalentní možnost. Visual Studio automaticky rozpozná existující instalace Python. V tématu [prostředí Python](managing-python-environments-in-visual-studio.md). |
     | Podpora Cookiecutter šablony | Nainstaluje Cookiecutter grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. V tématu [pomocí rozšíření Cookiecutter](using-python-cookiecutter-templates.md). |
     | Podpora webového Python | Nainstaluje nástroje pro vývoj webů, včetně HTML, CSS a JavaScript úpravy podporu, společně s šablon pro projekty pomocí rozhraní Bottle, Flask a Django. V tématu [Python webové šablony projektů](python-web-application-project-templates.md). |
     | Podpora Python IoT | Podporuje vývoj jádro IoT Windows používá Python. |
@@ -74,7 +77,9 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 
     ![Spuštění, úprava, úprava nebo odinstalace z instalačního programu sady Visual Studio](media/installation-vs-launch.png)
 
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) k instalaci podpory jazyka Python v sadě Visual Studio.|
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -107,11 +112,11 @@ Pro Visual Studio 2017 zatížení Python je nainstalována v `%ProgramFiles(x86
 Pro Visual Studio 2015 a starší cesty instalace jsou následující:
 
 - 32bitová verze:
-  - Cesta:`%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - Umístění v registru cesty:`HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - Cesta: `%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
+  - Umístění v registru cesty: `HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
 - 64bitová verze:
-  - Cesta:`%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - Umístění v registru cesty:`HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - Cesta: `%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
+  - Umístění v registru cesty: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
 
 kde:
 

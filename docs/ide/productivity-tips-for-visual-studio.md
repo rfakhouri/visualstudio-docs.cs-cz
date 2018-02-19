@@ -10,12 +10,13 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0700f1ba19c9c352aeaafe4dd3a3f9f4a12f864f
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu pro sadu Visual Studio
 
@@ -27,7 +28,7 @@ Informace o běžných klávesových zkratek najdete v tématu [klávesové tipy
 
 Napište kód rychleji pomocí následující funkce.
 
-- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úpravy rychlejší. Například v **Visual Studio 2017 verze 15,6 operací preview 2** a novější, můžete příkaz snadno duplicitní bez nutnosti zkopírujte jej, změnit umístění kurzor a pak ji vložit řádek kódu. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo Sbalit vybraný text tak, že zvolíte **upravit** > **Upřesnit** > **rozbalte výběr** a **Kontrakt výběr**, nebo stisknutím kombinace kláves **Ctrl**+**W** a **Ctrl**+**posunutí**  + **W** (k dispozici v **Visual Studio 2017 verze 15,5** a novější).
+- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úpravy rychlejší. Například v **Visual Studio 2017 verze 15,6 operací preview 2** a novější, můžete příkaz snadno duplicitní bez nutnosti zkopírujte jej, změnit umístění kurzor a pak ji vložit řádek kódu. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo Sbalit vybraný text tak, že zvolíte **upravit** > **Upřesnit** > **rozbalte výběr** nebo **Upravit** > **Upřesnit** > **kontrakt výběr**, nebo stisknutím kombinace kláves **Shift** + **Alt** +  **=**  nebo **Shift**+**Alt** +  **-**  (k dispozici v **Visual Studio 2017 verze 15,5** a novější).
 
 - **Použití prvku IntelliSense**. Při zadávání kódu v editoru, zobrazí se informace technologie IntelliSense, například vypsat členy, informace o parametrech, rychlé informace, podpis pomoci a dokončení Word. Tyto funkce podporují přibližné shody textu; například seznamy výsledky pro členy seznam obsahuje pouze položky, které začínají znaky, zda jste zadali, ale také položky, které obsahují znak kombinace kdekoli v jejich názvy. Další informace najdete v tématu [pomocí IntelliSense](../ide/using-intellisense.md).
 
@@ -73,7 +74,7 @@ Můžete hledat ve IDE pro příkazy, soubory a možnosti, kromě filtrování o
 
     ![Rychlé spuštění výsledky pro 'nový projekt'](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-    **Snadné spuštění** zobrazí odkazy na **nový projekt** dialogové okno, **přidat novou položku** dialogové okno a stránce projekty a řešení v **možnosti** Dialogové okno, mimo jiné. Rychlé spuštění výsledky mohou také obsahovat soubory projektu a nástroje systému windows.
+    **Snadné spuštění** zobrazí odkazy na **nový projekt** dialogové okno, **přidat novou položku** dialogové okno a stránce projekty a řešení v **možnosti** dialogové okno pole, mimo jiné. Rychlé spuštění výsledky mohou také obsahovat soubory projektu a nástroje systému windows.
 
 ## <a name="debugging-code"></a>Ladění kódu
 
@@ -95,7 +96,7 @@ Ladění může využívat velké množství času, ale následující tipy vám
 
      Pokud chcete přidat popis dat, musí být ladicí program v režimu pozastavení. Umístěte kurzor na proměnnou a pak zvolte tlačítko se PIN kód na popis dat, který se zobrazí. Ladění je zastavena, zobrazí se v zdrojový soubor vedle řádek kódu, který obsahuje proměnnou ikonou blue PIN kód. Pokud ukážete blue kódu pin, zobrazí se hodnota proměnné z nejnovější relace ladění.
 
-- **Vymazání hodnot proměnných**. Můžete vymazat obsah [hodnot proměnných](../ide/reference/immediate-window.md) v době návrhu zadáním `>cls` nebo`>Edit.ClearAll`
+- **Vymazání hodnot proměnných**. Můžete vymazat obsah [hodnot proměnných](../ide/reference/immediate-window.md) v době návrhu zadáním `>cls` nebo `>Edit.ClearAll`
 
      Další informace o dalších příkazech najdete v tématu [aliasy příkazů Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
@@ -123,7 +124,7 @@ Současně můžete být práce ve více souborech kódu a přesun mezi několik
 
 ## <a name="see-also"></a>Viz také
 
-[Výchozí klávesové zkratky pro často používané příkazy](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
-[Postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
-[Návod: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Rady a tipy k usnadnění přístupu](../ide/reference/accessibility-tips-and-tricks.md)
+- [Výchozí klávesové zkratky pro často používané příkazy](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+- [Návod: Vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
+- [Rady a tipy k usnadnění přístupu](../ide/reference/accessibility-tips-and-tricks.md)

@@ -21,11 +21,11 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7958724c5909f7738d43bc7f502c03c6146e2f2f
-ms.sourcegitcommit: e5bd950df79175a96fe62b3d4b17a3ef536ec4c3
+ms.openlocfilehash: d4d1e330a6ab378c61876b3f869f88b2a29c35a1
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio
 My jsme řešení nejčastější chyby související s sítě nebo proxy, které se můžete setkat při instalaci nebo použití sady Visual Studio za bránou firewall nebo proxy server.
@@ -34,7 +34,7 @@ My jsme řešení nejčastější chyby související s sítě nebo proxy, kter�
 
 Této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu prostřednictvím proxy serveru a proxy server blokuje volání, které provádí některým síťovým prostředkům v sadě Visual Studio.
 
-#### <a name="to-fix-this-error"></a>Chcete-li vyřešit tuto chybu:
+### <a name="to-fix-this-error"></a>Chcete-li vyřešit tuto chybu:
 
 - Restartujte sadu Visual Studio. By se zobrazit dialogové okno ověřování proxy serveru. Zadejte přihlašovací údaje po zobrazení výzvy v dialogovém okně.
 
@@ -80,7 +80,7 @@ Pokud používáte Visual Studio v privátní síti, která má brána firewall,
 
 Visual Studio používá k připojení k síťovým prostředkům protokol zabezpečení TLS (Transport Layer) 1.2. Zabezpečovací zařízení v některých soukromých sítích blokují některá serverová připojení, když Visual Studio používá TLS 1.2.
 
-#### <a name="to-fix-this-error"></a>Chcete-li vyřešit tuto chybu:
+### <a name="to-fix-this-error"></a>Chcete-li vyřešit tuto chybu:
 
 Povolte připojení pro následující adresy URL:
 
@@ -124,6 +124,6 @@ Tady je několik další možnosti podpory:
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
-* [Instalace a použití sady Visual Studio za serverem brány firewall nebo proxy server](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+* [Instalace a používání sady Visual Studio za bránou firewall nebo proxy serverem](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Nainstalovat Visual Studio 2017](install-visual-studio.md)

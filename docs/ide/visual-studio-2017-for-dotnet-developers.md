@@ -11,18 +11,18 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a834f9781ff51779b2216bd7de9dd3e449c9360a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 pro vývojáře .NET
 
 ## <a name="smart-code-editor"></a>Editor inteligentní kódu
 
-[Dokumentace: Pomocí IntelliSense](using-intellisense.md)  
-[Dokumentace: Funkce Inteligentní editor](writing-code-in-the-code-and-text-editor.md)
+- [Dokumentace: Pomocí IntelliSense](using-intellisense.md)
+- [Dokumentace: Funkce Inteligentní editor](writing-code-in-the-code-and-text-editor.md)
 
 Visual Studio obsahuje hluboké znalosti kódu prostřednictvím kompilátoru .NET ("Roslyn"), kde přinášejí inteligentní úpravy funkcí, jako je zabarvení syntaxe, kód dokončení, kontrola pravopisu chybným proměnné, neimportovaných typu řešení, osnovy, struktura vizualizérech, [Codelensu](find-code-changes-and-other-history-with-codelens.md), volání hierarchie, hover možnost rychlé informace, parametr nápovědy, jakož i nástroje pro refaktoring, použití rychlé akce a generování kódu.
 
@@ -50,14 +50,14 @@ Kromě toho použít kód návrhy další osvědčených postupů, se zakázaný
 
 [Dokumentaci: Testování v sadě Visual Studio částí](../test/improve-code-quality.md)
 
-Spuštění a ladění testů jednotek na základě Mstestu, NUnit nebo XUnit testování architektury pro každou aplikaci cílení na rozhraní .NET Framework, .NET Standard nebo .NET Core. Prozkoumat a zkontrolovat vaše testy *Průzkumníka testů* nebo okamžitě najdete na tom, jak změny kódu ovlivnit testů jednotek v editoru s *Live testování částí* (pouze verzi Enterprise). 
+Spuštění a ladění testů jednotek na základě Mstestu, NUnit nebo XUnit testování architektury pro každou aplikaci cílení na rozhraní .NET Framework, .NET Standard nebo .NET Core. Prozkoumat a zkontrolovat vaše testy *Průzkumníka testů* nebo okamžitě najdete na tom, jak změny kódu ovlivnit testů jednotek v editoru s *Live testování částí* (pouze verzi Enterprise).
 
 ![Live testování v sadě Visual Studio částí](../ide/media/VSIDE_Productivity_LiveUnitTesting.png "VSIDE_Productivity_LiveUnitTesting")
 
 ## <a name="code-consistency-and-style"></a>Kód konzistence a stylu
 
-[Dokumentaci: Možnosti přenosné vlastního editoru](create-portable-custom-editor-options.md)  
-[Dokumentace: EditorConfig kódu stylu nastavení pro rozhraní .NET](editorconfig-code-style-settings-reference.md)
+- [Dokumentaci: Možnosti přenosné vlastního editoru](create-portable-custom-editor-options.md)
+- [Dokumentace: EditorConfig kódu stylu nastavení pro rozhraní .NET](editorconfig-code-style-settings-reference.md)
 
 Visual Studio umožňuje konvence kódování, zjistí kódování porušení stylu a poskytuje rychlé opravy Chcete-li opravit problémy styl s **Ctrl +.** Zástupce. Konfigurace a vynutit vašeho týmu, pojmenování, formátování a stylu pravidla vytváření kódu napříč úložiště – povolení potlačení hodnot na úrovni projektu a souborů – pomocí *EditorConfig*.
 
@@ -107,8 +107,6 @@ Níže jsou uvedeny oblíbených zkratky v sadě Visual Studio. Upozorňujeme, �
 | **Shift+F12** | Najít všechny odkazy | Zobrazit všechny symbol nebo literálu odkazy |
 | **Ctrl+.** (také **Alt + zadejte** v profilu C#) | Rychlé akce a refaktoringy | Zobrazit, jaké kód opravy, akce generování kódu, refaktoring nebo jiných rychlé akce jsou k dispozici na výběr kurzoru pozici nebo kód |
 | **CTRL**+**E**,**V** | Duplicitní řádku | Duplikuje řádek kódu, která kurzor se nachází v (k dispozici v **Visual Studio 2017 verze 15,6 operací preview 2** a novější) |
-| **Ctrl**+**W** | Rozbalte výběr | Aktuální výběr o jednu jednotku strukturální rozšíří (k dispozici v **Visual Studio 2017 verze 15,5**) |
-| **Ctrl**+**Shift**+**W** | Výběr kontraktu | Kontrakty (snižuje) aktuální výběr o jednu jednotku strukturální (k dispozici v **Visual Studio 2017 verze 15,5**) |
 | **Ctrl+Q** | Snadné spuštění | Hledání všechna nastavení sady Visual Studio |
 | **F5** | Spuštění ladění | Spuštění ladění aplikace |
 | **Ctrl+F5** | Spustit bez ladění | Místní spuštění aplikace bez ladění |
