@@ -13,12 +13,13 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.workload: multiple
-ms.openlocfilehash: 71f0837bbc488518204e8b9336339c2d01c21600
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.workload:
+- multiple
+ms.openlocfilehash: c668d454cb4584cbaaa345c0ca00e286526c6aae
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Návod: Můj první grafický subsystém WPF aplikace pracovní plochy
 
@@ -59,7 +60,7 @@ V této části vytvoříte infrastrukturu aplikace, která zahrnuje projektu a 
 
 1. V **vlastnosti** okno, rozbalte **běžné** uzel kategorie a zvolte **název** vlastnost a potom zadejte `ExpenseIt` a stiskněte klávesu **Enter**  klíč.
   
-     Všimněte si, že **název** element v okně XAML změní tak, aby odpovídala nové hodnotě. Můžete upravit vlastnosti XAML v okně XAML nebo **vlastnosti** okno a změny jsou synchronizovány.
+     Všimněte si, že **název** v okně XAML, změní se atribut tak, aby odpovídala nové hodnotě. Můžete upravit vlastnosti XAML v okně XAML nebo **vlastnosti** okno a změny jsou synchronizovány.
 
 1. V okně XAML, nastavte hodnotu **výška** element `375`a nastavte hodnotu **šířka** vlastnost, která má `500`.
   
@@ -115,7 +116,7 @@ V této části přidáte dvě stránky a bitovou kopii do aplikace.
 
 1. V návrháři, vyberte **ExpenseItHome.xaml** kartě, pokud již není aktivní návrháře karty.
 
-1. Vyberte `<Title>` elementu a změňte název na **ExpenseIt – - Domů**.
+1. Vyberte `Title` atribut a změňte jeho hodnotu na **ExpenseIt – - Domů**.
   
      Vaše **ExpenseItHome.xaml** soubor by měl nyní vypadat jako v C#:  
   
@@ -177,7 +178,7 @@ V této části přidáte dvě stránky a bitovou kopii do aplikace.
 
 1. V návrháři, vyberte **ExpenseReportPage.xaml** kartě, pokud již není aktivní návrháře karty.
 
-1. Vyberte `<Title>` elementu a změňte název na **ExpenseIt – - zobrazení výdajů**.
+1. Vyberte `Title` atribut a změňte jeho hodnotu na **ExpenseIt – - zobrazení výdajů**.
   
      Váš soubor ExpenseReportPage.xaml by měl nyní vypadat například takto v jazyce C#:  
   

@@ -4,19 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4ec453e3bec8bbca0e01d0706b43f82fb413d162
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 101d16c647887aced273804fc80a890d5102d22c
+ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 02/20/2018
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Přidání odkazů pomocí nástroje NuGet a sady Extension SDK
 
@@ -66,7 +68,7 @@ Následující tabulka vám pomůže porovnat odkazující funkce sady SDK s odk
 |Můžete vytvořit balíček Symbol pro ladění podpory.|A|Pokud je vyřadit soubory PDB v sadě SDK, soubory získat převzata automaticky.|A||
 |Tento mechanismus podporuje balíček správce automatické aktualizace.|Není k dispozici|Pomocí nástroje MSBuild získá revize sady SDK.|A||
 |Tento mechanismus podporuje lightweight manifestu formátu.|A|SDKManifest.xml podporuje mnoho atributů, ale pouze malou je obvykle potřeba.|A||
-|Tento mechanismus je k dispozici pro všechny edice sady Visual Studio.|A|Sada SDK podporuje všechny verze sady Visual Studio, z Visual Studio Express prostřednictvím [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|A|NuGet podporuje všechny edice sady Visual Studio Express až prostřednictvím [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)].|
+|Tento mechanismus je k dispozici pro všechny edice sady Visual Studio.|A|SDK podporuje všechny edice sady Visual Studio.|A|NuGet podporuje všechny verze sady Visual Studio.|
 |Tento mechanismus je k dispozici pro všechny typy projektů.|N|SDK podporuje [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace počínaje [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)].|N|Můžete zkontrolovat seznam povolených projekty.|
 
 ## <a name="see-also"></a>Viz také
