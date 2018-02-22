@@ -189,7 +189,7 @@
 ## [Postupy: Použití kontextu uživatelského rozhraní založeného na pravidlech pro rozšíření sady Visual Studio](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Postupy: Diagnostika výkonu rozšíření](how-to-diagnose-extension-performance.md)
 ## [Řešení potíží s rozšířením VSPackages](troubleshooting-vspackages.md)
-# [Prostředí shell (integrované nebo izolované)](shell/)
+# [Prostředí shell (integrované nebo izolované)](https://vspartner.com/pages/vsshells)
 # [Odesílání rozšíření sady Visual Studio](shipping-visual-studio-extensions.md)
 ## [Šablona projektu VSIX](vsix-project-template.md)
 ## [Začínáme se šablonou projektu VSIX](getting-started-with-the-vsix-project-template.md)
