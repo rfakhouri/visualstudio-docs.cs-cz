@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 762b56336fa790d57ffa38510aa319e744b5959c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Práce s R v sadě Visual Studio
 
@@ -52,9 +52,9 @@ Potom postupujte podle níže odkazy, které další informace o funkce souvisej
 
 Viz také [nejčastější dotazy](faq.md).
 
-Následující video také poskytuje kontrolu brief (5m 48s) R Nástroje možnosti:
-
-> [!VIDEO https://www.youtube.com/embed/RcSDEfMgUvU]
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (webu youtube.com)](https://www.youtube.com/watch?v=dll3IS1bfWQ) přehled R Tools pro Visual Studio (12 m 36s). Viz také [další nástroje R videa](https://www.youtube.com/results?search_query=R+Tools+for+visual+studio). |
 
 ## <a name="send-us-your-feedback"></a>Pošlete nám svůj názor!
 

@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: c4ca5a7fea1a84c4f4a38396daebd3e01412d9d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 76dc2623edebed6cca48c40c0ad0bc96f783e39d
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Postup instalace R nástrojů pro Visual Studio
 
@@ -44,7 +44,7 @@ RTVS nenainstaluje, pokud máte pouze prostředí sady Visual Studio, který je 
 
 ## <a name="installing-rtvs-in-visual-studio-2017"></a>Instalace RTVS v Visual Studio 2017
 
-1. Spusťte instalační program sady Visual Studio. (Viz [stáhne](https://www.visualstudio.com/downloads/) Pokud ještě nemáte nainstalovanou sadu Visual Studio.) Ve Windows 7, ujistěte se, že se zobrazuje verze sady Visual Studio aktualizuje instalačním programem vaší *15.2 sestavení 26430.12* nebo novější.
+1. Spusťte instalační program sady Visual Studio. (Viz [stáhne](https://www.visualstudio.com/downloads/) Pokud ještě nemáte nainstalovanou sadu Visual Studio.) Ve Windows 7, ujistěte se, že instalačním programem vaší aktualizována na verzi Visual Studio 2017 *15.2 sestavení 26430.12* nebo novější.
 
 1. Vyberte **vědecké zpracování dat a analytických aplikací** zatížení:
 
@@ -75,18 +75,18 @@ Stáhnout aktuální RTVS pro Visual Studio 2015 z [https://aka.ms/rtvs-current]
 > [!Note]
 > Samostatný instalační program RTVS funguje pouze v sadě Visual Studio 2015; s Visual Studio 2017 nainstalovat podporu R prostřednictvím [vědecké zpracování dat a analytických aplikací zatížení](#installing-rtvs-in-visual-studio-2017) jak bylo popsáno výše.
 
-RTVS pro Visual Studio 2015 se instaluje v:`%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
+RTVS pro Visual Studio 2015 se instaluje v: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 
 ## <a name="offline-installation-of-visual-studio-and-rtvs"></a>Offline instalace sady Visual Studio a RTVS
 
 Offline instalace je vhodná pro počítače, které nejsou připojené k Internetu:
 
-1. Postupujte podle pokynů vytvořte offline instalačního programu pro vaši verzi sady Visual Studio: 
+1. Postupujte podle pokynů vytvořte offline instalačního programu pro vaši verzi sady Visual Studio:
 
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. Visual Studio 2015, stáhněte si offline instalační programy RTVS z [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) a [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip). 
+1. Visual Studio 2015, stáhněte si offline instalační programy RTVS z [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) a [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip).
 
 1. Instalace sady Visual Studio a RTVS z offline instalační programy.
 

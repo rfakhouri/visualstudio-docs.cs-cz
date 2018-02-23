@@ -17,11 +17,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 65f34339e4c101818cea9b99095d765d5d417cf4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4733d51d40b0aabffa108a1f99e4e492599b67c2
+ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="working-with-sql-server-and-r"></a>Práce s SQL serverem a R
 
@@ -32,9 +32,9 @@ Visual Studio vynikající podpora pro SQL Server pomáhá data, která vědců 
 > - Visual Studio 2017: Spusťte instalační program sady Visual Studio a vyberte úložiště dat a zpracování úloh, který obsahuje nástroje, dat systému SQL Server.
 > - Visual Studio 2015: podle pokynů na [stáhnout SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
 
-V následujícím videu (3m 03s) poskytuje stručný přehled systému SQL Server a R:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n4AYr0QIwdQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (webu youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) přehled systému SQL Server a R (3 m 03s). |
 
 ## <a name="creating-and-running-sql-queries"></a>Vytváření a spouštění dotazů SQL
 
@@ -65,9 +65,9 @@ RTVS zjednodušuje proces jinak nepraktické a náchylné kombinace kódu SQL a 
 - [Psaní a testování uloženou proceduru SQL](#write-and-test-a-sql-stored-procedure)
 - [Publikování uloženou proceduru SQL](#publish-a-sql-stored-procedure)
 
-V následujícím videu (6m 09s) také poskytuje přehled těchto funkcí:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dFKIT2OitWQ" frameborder="0" allowfullscreen></iframe>
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (webu youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) pro přehled R a SQL uložené procedury (6 m 09s). |
 
 ### <a name="add-a-database-connection"></a>Přidat připojení k databázi
 
@@ -87,7 +87,7 @@ RTVS vytvoří tři soubory pro uložené procedury: `.R` soubor pro váš kód 
 
 ![Průzkumník řešení rozšířit zobrazení SQL uloženou proceduru s R](media/sql-solution-explorer-expanded.png)
 
-`StoredProcedure.R`(v tomto příkladu) je, kde můžete napsat kód R. Výchozí obsah jsou:
+`StoredProcedure.R` (v tomto příkladu) je, kde můžete napsat kód R. Výchozí obsah jsou:
 
 ```R
 # @InputDataSet: input data frame, result of SQL query execution
@@ -109,7 +109,7 @@ Jednoduše řečeno, obdrží kód R dataframe názvem `InputDataSet` a vrátí 
 
 Další generovaný kód (v komentářích) poskytuje testu malých skript, který se používá [RODBC balíček](https://cran.r-project.org/web/packages/RODBC/index.html) k přenosu příkazu jazyka SQL do systému SQL Server, spusťte ji a načíst její sadu výsledků jako R dataframe. Můžete Odkomentujte, že tento kód testovací interaktivně zapsat svůj kód R s výsledek nastaven, můžete získat z SQL serveru.
 
-`StoredProcedure.Query.sql`Určuje, kde zapsat a otestovat dotaz SQL, který generuje data pro `InputDataSet`. Pomocí této `.sql` souboru editoru poskytuje všechny potřebné obvyklé Transact-SQL pro vás.
+`StoredProcedure.Query.sql` Určuje, kde zapsat a otestovat dotaz SQL, který generuje data pro `InputDataSet`. Pomocí této `.sql` souboru editoru poskytuje všechny potřebné obvyklé Transact-SQL pro vás.
 
 Jakmile budete spokojeni s kódu SQL, integrovat do vašeho kódu jazyka R v `StoredProcedure.R` přetažením `.sql` soubor do otevřete editor pro `.R` souboru. Na obrázku níže `StoredProcedure.Query.sql` byla přetáhnout do bodu za desetinnou čárkou v `sqlQuery(channel, )`:
 
