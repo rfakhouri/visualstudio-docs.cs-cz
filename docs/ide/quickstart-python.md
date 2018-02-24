@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 00b9d59ad1736d212dcd9fff3c097e81e0ad2a60
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a9f35a9faf84965de12f9e42c3817b48ad9260c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Rychlý úvod: použijte sadu Visual Studio k vytvoření první webové aplikace Python
 
@@ -71,7 +71,7 @@ V tento rychlý start ale, pomocí knihovny Falcon prostředí proces instalaci 
 
 Další informace o Falcon, navštivte [falconframework.org](https://falconframework.org/).
 
-Všimněte si, že místo instalace knihovny v globální prostředí, vývojáři obvykle vytvoříte "virtuální prostředí" do kterého chcete nainstalovat knihovny pro konkrétní projekt. Zahrnout mnoho Python šablony projektů v sadě Visual Studio `requirements.txt` soubor, který obsahuje seznam knihoven, na kterých závisí šabloně. Vytváření projektů z jednoho z těchto šablon aktivuje vytvoření virtuálního prostředí, do které jsou nainstalovány knihovny. Další informace najdete v tématu [prostředí Python - virtuální prostředí](../python/managing-python-environments-in-visual-studio.md#creating-virtual-environments).
+Všimněte si, že místo instalace knihovny v globální prostředí, vývojáři obvykle vytvoříte "virtuální prostředí" do kterého chcete nainstalovat knihovny pro konkrétní projekt. Zahrnout mnoho Python šablony projektů v sadě Visual Studio `requirements.txt` soubor, který obsahuje seznam knihoven, na kterých závisí šabloně. Vytváření projektů z jednoho z těchto šablon aktivuje vytvoření virtuálního prostředí, do které jsou nainstalovány knihovny. Další informace najdete v tématu [pomocí virtuální prostředí](../python/selecting-a-python-environment-for-a-project.md#using-virtual-environments).
 
 ## <a name="add-a-code-file"></a>Přidání souboru kódu
 

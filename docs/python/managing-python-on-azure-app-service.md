@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: bc9317615edbf49e35aa0ac3d2ff079beab20df5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Správa Python v Azure App Service
 
@@ -130,8 +130,8 @@ FastCGI je rozhraní, které funguje na úrovni požadavku. Služba IIS obdrží
 `<appSettings>` Definované tady jsou k dispozici pro vaše aplikace jako proměnné prostředí:
 
 - Hodnota `PYTHONPATH` volně rozšířeno, ale musí obsahovat kořenu vaší aplikace.
-- `WSGI_HANDLER`musí odkazovat na importovatelné WSGI aplikaci z vaší aplikace.
-- `WSGI_LOG`je volitelné, ale doporučené pro ladění aplikace. 
+- `WSGI_HANDLER` musí odkazovat na importovatelné WSGI aplikaci z vaší aplikace.
+- `WSGI_LOG` je volitelné, ale doporučené pro ladění aplikace. 
 
 V tématu [publikování v Azure](publishing-python-web-applications-to-azure-from-visual-studio.md) další podrobnosti o `web.config` obsah pro Bottle, Flask a Django webové aplikace.
 
@@ -202,7 +202,7 @@ Instalovat balíčky přímo v prostředí serveru, použijte jednu z následuj�
     Pomocí `requirements.txt` je doporučená, protože je snadné reprodukujte vašeho balíčku přesně nastavit lokálně a na serveru. Jenom nezapomeňte, přejděte konzole po nasazení všechny změny `requirements.txt` a spusťte příkaz znovu.
 
 > [!Note]
-> Neexistuje žádné kompilátor jazyka C v App Service, takže je potřeba nainstalovat wheel pro všechny balíčky s rozšíření nativní moduly. Mnoho oblíbených balíčky zadejte vlastní souborů Wheel. Pro balíčky, které nejsou, použijte `pip wheel <package_name>` na místním vývojovém počítači a pak nahrajte kolečka na váš web. Příklad, naleznete v části [Správa požadované balíčky](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt).
+> Neexistuje žádné kompilátor jazyka C v App Service, takže je potřeba nainstalovat wheel pro všechny balíčky s rozšíření nativní moduly. Mnoho oblíbených balíčky zadejte vlastní souborů Wheel. Pro balíčky, které nejsou, použijte `pip wheel <package_name>` na místním vývojovém počítači a pak nahrajte kolečka na váš web. Příklad, naleznete v části [Správa požadované balíčky s requirements.txt](managing-required-packages-with-requirements-txt.md).
 
 ### <a name="kudu-rest-api"></a>Kudu REST API
 

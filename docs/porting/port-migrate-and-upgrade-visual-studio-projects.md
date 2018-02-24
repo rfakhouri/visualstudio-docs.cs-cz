@@ -1,7 +1,7 @@
 ---
 title: "Port, migrace a Upgrade projektů sady Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 02/12/2018
+ms.date: 02/21/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -23,11 +23,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fd23e22024e493256d2ba839998d561e2894a80
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: 035bf2c514988dc65fe5182ad4b5371915dd2dce
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Port, migrace a Upgrade projektů sady Visual Studio
 
@@ -68,7 +68,7 @@ Pokud nevidíte projektu nebo typ souboru tady, by měl být, najdete [Visual St
 | Silverlight | V Visual Studio 2017 nepodporuje projekty Silverlight. Chcete-li udržovat aplikace Silverlight, používejte nadále Visual Studio 2015. |
 | SQL Server Reporting Services a SQL Server Analysis Services (SSRS, rozšíření SSDT, SSAS, účty spravované služby) | Pro tyto typy projektů je poskytována prostřednictvím podpory dvě rozšíření v Galerii Visual Studio: [projekty modelování služby Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) a [Microsoft Reporting Services projekty](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Podpora rozšíření SSDT je také součástí úložiště dat a zpracování úloh ve Visual Studio 2017. |
 | SQL Server Integration Services (SSIS) | Podpora pro Visual Studio 2017 je k dispozici prostřednictvím SQL Server Data Tools (SSDT). Další informace najdete v tématu [SQL Server Integration Services blog](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
-| Visual C++ | Visual Studio 2017 můžete otevřít řešení a projekty, které byly vytvořeny ve Visual Studiu 2015 jako-je. Projekty vytvořené v starší verze sady Visual Studio může vyžadovat upgrade projektu nebo změna orientace na novější nástrojů k sestavení s Visual Studio 2017. Další informace najdete v tématu [průvodce Visual C++ přenosem a upgradováním](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide). |
+| Visual C++ | Visual Studio 2017 můžete použít pro práci v projektech, které byly vytvořeny v dřívějších verzích sady Visual Studio zpět do Visual Studio 2010. Při prvním otevření projektu, máte možnost pro upgrade na nejnovější kompilátoru a sady nástrojů, nebo pokračovat v používání původního. Pokud se rozhodnete používat původního, Visual Studio 2017 neupravuje souboru projektu a používá sada nástrojů z předchozí instalaci sady Visual Studio k sestavení projektu. To znamená, že můžete stále otevřete projekt v původní verzi sady Visual Studio v případě potřeby. Další informace najdete v tématu [pomocí nativní cílení na více v sadě Visual Studio staré projekty sestavení](/cpp/porting/use-native-multi-targeting). |
 | Rozšíření sady Visual Studio nebo VSIX | Deklarovat 15.0 MinimumVersion, což zabrání projektu otevíráte ve starších verzích sady Visual Studio se aktualizují projektů s MinimumVersion 14.0 nebo méně. Chcete-li povolit projektu otevřete v dřívějších verzích, nastavte MinimumVersion `$(VisualStudioVersion)`. Viz také [postup: migrace rozšiřitelnost projektů na Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Můžete použít nástroje Microsoft Test Manager nebo Visual Studio 2010 SP1 a novější otevřete prostředí vytvořena v některém z těchto verzí. Ale pro Visual Studio 2010 SP1 na verzi nástroje Microsoft Test Manager musí shodovat s verzí produktu Team Foundation Server před vytvořením prostředí. |
 | Visual Studio Tools pro Apache Cordova | Projekty lze otevřít v aplikaci Visual Studio 2017, ale nejsou zpětně kompatibilní. Po otevření projektu ze sady Visual Studio 2015, se zobrazí výzva k povolení úprav do projektu. Tato úprava upgraduje projekt, který používá modulové místo `taco.json` souboru ke správě verzí knihovně Cordova, jeho platformy a modulů plug-in, jakož i jeho závislé součásti uzlu nebo npm. Najdete v článku [příručka k migraci](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/first-steps/migrate-from-visual-studio-2015) Další informace. |

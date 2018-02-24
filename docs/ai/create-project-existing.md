@@ -29,4 +29,4 @@ Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), je sn
 
 ## <a name="see-also"></a>Viz také
 
-- [Vytvoření prostředí pro existující překladač Pythonu](../python/managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter)
+- [Ručně Identifikace stávajícího prostředí Python](../python/managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment)

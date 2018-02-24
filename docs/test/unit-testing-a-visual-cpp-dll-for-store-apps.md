@@ -1,7 +1,7 @@
 ---
 title: "Postup testování knihovny DLL Visual C++ pro aplikace UWP | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 8a85bf908b1f0908b8c07a7573306536b9bf78d7
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 02c1e5a2bc4ba10aa1719ace69fc33de79995984
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Postup testování knihovny DLL Visual C++
 
@@ -26,7 +26,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
   
  Toto téma také vytvoří jeden řešení sady Visual Studio a samostatné projekty pro testy částí a knihovnu DLL, kterou chcete testovat. Testy jednotek můžete zahrnout taky přímo v projektu knihovny DLL, nebo můžete vytvořit samostatné řešení pro testování částí a. KNIHOVNY DLL. V tématu [přidání testů částí do stávajících aplikací C++](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) tipy, které struktura používat.
   
-##  <a name="Create_the_solution_and_the_unit_test_project"></a>Vytvoření řešení a projektu testování částí  
+##  <a name="Create_the_solution_and_the_unit_test_project"></a> Vytvoření řešení a projektu testování částí  
   
 1.  Na **soubor** nabídce zvolte **nový** > **nový projekt...** .
   
@@ -50,11 +50,11 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
   
          Když se testy spouštějí, se vytvoří instance třídy každého testu. Test metody jsou volány v neurčené pořadí. Můžete definovat speciální metody, které jsou vyvolány před a po každém modulu, třída nebo metoda. Další informace najdete v tématu [pomocí atributu Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) v knihovně MSDN.  
   
-##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a>Ověřte, zda spustit testy v Průzkumníka testů  
+##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Ověřte, zda spustit testy v Průzkumníka testů  
   
 1.  Vložte některá testovacího kódu:  
   
-    ```cpp  
+    ```cpp
     TEST_METHOD(TestMethod1)  
     {  
         Assert::AreEqual(1,1);  
@@ -69,7 +69,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
   
      ![Test Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="Add_the_DLL_project_to_the_solution"></a>Do řešení přidat projektu knihovny DLL  
+##  <a name="Add_the_DLL_project_to_the_solution"></a> Do řešení přidat projektu knihovny DLL  
   
 1.  V Průzkumníku řešení vyberte název řešení. V místní nabídce vyberte příkaz **přidat**a potom **přidat nový projekt**.  
   
@@ -129,7 +129,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
   
     ```  
   
-##  <a name="make_the_dll_functions_visible_to_the_test_code"></a>Zpřístupněte funkce dll testovacího kódu  
+##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> Zpřístupněte funkce dll testovacího kódu  
   
 1.  Přidejte do projektu RooterLibTests RooterLib.  
   
@@ -182,7 +182,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
   
  Máte nastavení testu a projektů kód a ověřit, že můžete spustit testy, které běží funkce v projektu kódu. Teď můžete začít zapisovat skutečné testy a kódu.  
   
-##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a>Opakované posílení testy a ujistěte se, je předat  
+##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Opakované posílení testy a ujistěte se, je předat  
   
 1.  Přidejte nový test:  
   
@@ -243,7 +243,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 > [!TIP]
 >  Vývoj kódu přidáním testy jeden najednou. Ujistěte se, že všechny testy byly úspěšné po každé iteraci.  
   
-##  <a name="Debug_a_failing_test"></a>Ladění selhání testu  
+##  <a name="Debug_a_failing_test"></a> Ladění selhání testu  
   
 1.  Přidání jiného testu na **unittest1.cpp**:  
   
@@ -313,7 +313,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
   
  ![Všechny testy byly úspěšné](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="Refactor_the_code_without_changing_tests"></a>Refaktorovat kód beze změny testů  
+##  <a name="Refactor_the_code_without_changing_tests"></a> Refaktorovat kód beze změny testů  
   
 1.  Zjednodušení centrální výpočtu v `SquareRoot` funkce:  
   
