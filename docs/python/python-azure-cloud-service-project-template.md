@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f6122e989ce1394f31aab26b3c2eace68e9f3d21
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro jazyk Python
 
@@ -57,8 +57,8 @@ Toto téma obsahuje podrobné informace o šabloně projektů a další podporu 
 
 Skripty prostředí PowerShell v projekt role `bin` složky řízení nasazení této role a může být upravit k přizpůsobení konfigurace:
 
-- `ConfigureCloudService.ps1`je obvykle se používá pro webové a pracovní role nainstalovat a nakonfigurovat závislosti a nastavte verzi jazyka Python.
-- `LaunchWorker.ps1`se používá pouze pro role pracovního procesu a slouží k změnit chování při spuštění, přidejte argumenty příkazového řádku nebo přidat proměnné prostředí.
+- `ConfigureCloudService.ps1` je obvykle se používá pro webové a pracovní role nainstalovat a nakonfigurovat závislosti a nastavte verzi jazyka Python.
+- `LaunchWorker.ps1` se používá pouze pro role pracovního procesu a slouží k změnit chování při spuštění, přidejte argumenty příkazového řádku nebo přidat proměnné prostředí.
 
 Oba soubory obsahují pokyny pro přizpůsobení. Můžete také nainstalovat vlastní verzi jazyka Python přidáním jiná úloha do projektu hlavní cloudové služby `ServiceDefinition.csdef` nastavení souboru `PYTHON` proměnnou jeho nainstalované `python.exe` (nebo ekvivalentního) cestu. Když `PYTHON` je nastavena, Python není nainstalována z NuGet.
 
@@ -93,7 +93,7 @@ Pro cloudové služby `ConfigureCloudService.ps1` skript používá `pip` nainst
 
 Poznámka: instance cloudové služby, musíte zadat všechny knihovny s příponami C nezahrnují kompilátory jazyka C předem zkompilovat binární soubory.
 
-PIP a jeho závislosti, jakož i balíčky v `requirements.txt`, se stáhnou automaticky a může se počítají jako využití fakturovatelné šířky pásma. V tématu [Správa požadované balíčky](managing-python-environments-in-visual-studio.md#managing-required-packages-requirementstxt) podrobnosti o správě `requirements.txt` soubory.
+PIP a jeho závislosti, jakož i balíčky v `requirements.txt`, se stáhnou automaticky a může se počítají jako využití fakturovatelné šířky pásma. V tématu [Správa požadované balíčky](managing-required-packages-with-requirements-txt.md) podrobnosti o správě `requirements.txt` soubory.
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 
@@ -102,7 +102,7 @@ Pokud váš web nebo worker role tak správně, po nasazení, zkontrolujte násl
 - Složka bin\ s zahrnuje projekt Python (aspoň):
 
   - `ConfigureCloudService.ps1`
-  - `LaunchWorker.ps1`(pro role pracovního procesu)
+  - `LaunchWorker.ps1` (pro role pracovního procesu)
   - `ps.cmd`
 
 - Zahrnuje projekt Python `requirements.txt` souborů, výpis všechny závislosti (nebo případně kolekce souborů kolečko).

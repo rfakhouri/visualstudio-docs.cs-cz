@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5124547737405af8309161df90356f607909c0fa
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Přidání rozšíření protokolu jazyk serveru
 
@@ -136,7 +136,7 @@ LSP nezahrnuje specifikace o tom, jak poskytnout zabarvení text pro jazyky. Pok
 
 1. Vytvořte složku s názvem "Gramatika" uvnitř rozšíření (nebo může být jakýkoli název, který zvolíte).
 
-2. V této složce "Gramatika" zahrnout všechny *.tmlanguage nebo *.tmtheme soubory, které byste chtěli, který obsahuje vlastní zabarvení.
+2. V této složce "Gramatika" zahrnují *.tmlanguage, *.plist, *.tmtheme nebo *.json soubory, které byste chtěli, které poskytuje vlastní zabarvení.
 
 3. Klikněte pravým tlačítkem na soubory a vyberte **vlastnosti**. Změňte akci sestavení na **obsahu** a **zahrnout do VSIX** vlastnost na hodnotu true.
 

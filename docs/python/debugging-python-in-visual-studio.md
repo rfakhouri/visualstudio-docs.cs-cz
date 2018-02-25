@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c158397d327e339955efed35f1ccc525028294e3
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="debugging-your-python-code"></a>Ladění kódu jazyka Python
 
@@ -54,7 +54,7 @@ Základní pracovní postup ladění zahrnuje nastavení zarážek, krokování 
 Ladicí relace začíná **ladění > Spustit ladění** příkaz, **spustit** tlačítka na panelu nástrojů nebo klávesy F5. Tyto akce spuštění vašeho projektu po spuštění souboru (ukazuje tučné v Průzkumníku řešení) se aktivního prostředí projektu a argumenty příkazového řádku nebo cesty pro hledání, které bylo zadáno v okně Vlastnosti projektu (najdete v části [ladění projektu možnosti](#project-debugging-options). Pokud z nějakého důvodu nemáte k dispozici po spuštění souboru nastavit, ale výstup – okno Python stručně se zobrazí a zmizí. V takovém případě klikněte pravým tlačítkem na příslušný soubor a vyberte **nastavit jako spouštěcí soubor**.
 
 > [!Note]
-> Ladicí program vždy začíná active prostředí Python pro projekt. Chcete-li změnit prostředí, zkontrolujte různých jednu aktivní, jak je popsáno na [prostředí Python](managing-python-environments-in-visual-studio.md).
+> Ladicí program vždy začíná active prostředí Python pro projekt. Chcete-li změnit prostředí, zkontrolujte různých jednu aktivní, jak je popsáno na [výběr prostředí Python pro projekt](selecting-a-python-environment-for-a-project.md).
 
 ### <a name="breakpoints"></a>Zarážky
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 765d42de00c5fa716cd1445301136d8f7a39c2ec
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 9f5f3edfc536dce9d42d09a099c3f53a8a8ab3c7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Vzdálené ladění kódu jazyka Python v systému Linux
 
@@ -40,7 +40,7 @@ Následující položky jsou potřeba provést tento postup:
 - Vzdálený počítač se systémem Python v operačním systému jako Mac OSX nebo Linux.
 - Port 5678 (příchozí) otevřen v bráně firewall na tento počítač, který je výchozí pro vzdálené ladění.
 
-Můžete snadno vytvořit [virtuální počítače s Linuxem v Azure](/azure/virtual-machines/linux/creation-choices) a [přístup pomocí vzdálené plochy](/azure/virtual-machines/linux/use-remote-desktop) ze systému Windows. Je vhodné Ubuntu pro virtuální počítač, protože Python je nainstalována ve výchozím nastavení; jinak, najdete v seznamu na [nainstalovat překladač Pythonu zvoleného](managing-python-environments-in-visual-studio.md#selecting-and-installing-python-interpreters) pro další Python umístění pro stahování.
+Můžete snadno vytvořit [virtuální počítače s Linuxem v Azure](/azure/virtual-machines/linux/creation-choices) a [přístup pomocí vzdálené plochy](/azure/virtual-machines/linux/use-remote-desktop) ze systému Windows. Je vhodné Ubuntu pro virtuální počítač, protože Python je nainstalována ve výchozím nastavení; jinak, najdete v seznamu na [nainstalovat překladač Pythonu zvoleného](installing-python-interpreters.md) pro další Python umístění pro stahování.
 
 Podrobné informace o vytváření pravidla brány firewall pro virtuální počítač Azure, najdete v části [otevřít porty pro virtuální počítač v Azure pomocí webu Azure portal](/azure/virtual-machines/windows/nsg-quickstart-portal).
 

@@ -1,7 +1,7 @@
 ---
 title: "Jak používat Boost.Test jazyka C++ v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 01/05/2018
+ms.date: 01/29/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-devops-test
@@ -10,12 +10,13 @@ ms.topic: article
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: bdf772be03f6021f499b9bf777922d6d2743e0dc
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak používat Boost.Test jazyka C++ v sadě Visual Studio
 
@@ -33,32 +34,40 @@ Vyžaduje Boost.Test [nárůst](http://www.boost.org/)! Pokud nemáte nárůst n
 
 1. Nainstalujte Boost.Test dynamická nebo statická knihovny:
 
-    - Spustit `vcpkg install boost-test` k instalaci dynamickou knihovnu Boost.Test.
+    - Spustit **vcpkg nainstalovat nárůst testovací** k instalaci dynamickou knihovnu Boost.Test.
     
        -NEBO-
        
-    - Spustit `vcpkg install boost-test:x86-windows-static` k instalaci se statickou knihovnou Boost.Test.
+    - Spustit **vcpkg nainstalovat nárůst-test: x 86-windows-static** k instalaci se statickou knihovnou Boost.Test.
 
-1. Spustit `vcpkg integrate install` konfigurace Visual Studia s knihovnou a musí zahrnovat cest skóre hlavičky a binární soubory.
+1. Spustit **vcpkg integrovat instalace** konfigurace Visual Studia s knihovnou a musí zahrnovat cest skóre hlavičky a binární soubory.
 
-## <a name="create-a-project-for-your-tests"></a>Vytvoření projektu testů
+## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Přidání šablony položky (Visual Studio 2017 verze 15.6 a novější)
 
-> [!NOTE]
-> V aplikaci Visual Studio 2017 verze 15,5 jsou k dispozici pro Boost.Test žádné předem nakonfigurovaná testovacího projektu nebo šablony položek. Proto je nutné vytvořit projekt konzolové aplikace pro uložení testy. Test šablon pro Boost.Test jsou plánované pro zahrnutí v budoucí verzi sady Visual Studio.
+1. Pokud chcete vytvořit soubor sada testů, klikněte pravým tlačítkem na uzel projektu v **Průzkumníku řešení** a zvolte **přidat novou položku**. 
+ 
+![Šablony položky Boost.Test](media/boost_test_item_template.png "Boost.Test šablony položky")
+
+1. Nový soubor obsahuje metodu testovacího vzorku. Sestavení projektu povolit **Průzkumníka testů** metodu zjišťování.
+
+Varianta jedním záhlaví Boost.Test používá šablony položky, ale můžete upravit #include cestu na variant knihovny samostatné. Další informace najdete v tématu [direktivy začlenění přidat](#add_include_directives).
+
+## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Vytvoření projektu testování (Visual Studio 2017 verze 15,5)
+
+V aplikaci Visual Studio 2017 verze 15,5 jsou k dispozici pro Boost.Test žádné předem nakonfigurovaná testovacího projektu nebo šablony položek. Proto musíte vytvořit a nakonfigurovat projekt konzolové aplikace pro uložení testy. 
 
 1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel řešení a zvolte **přidat** > **nový projekt...** .
 
 1. V levém podokně vyberte **Visual C++** > **Windows Desktop**a potom zvolte **konzolové aplikace pro Windows** šablony.
 
 1. Pojmenujte projekt a zvolte **OK**.
+1. Odstranit `main` funkce v souboru. 
 
-## <a name="link-and-configuration-boost-static-library-only"></a>Odkaz a konfigurace (pouze nárůst statické knihovny)
+1. Pokud používáte verzi Boost.Test jedním záhlaví nebo dynamické knihovny, přejděte na [direktivy začlenění přidat](#add_include_directives). Pokud používáte verzi statickou knihovnu, budete muset provést některé další konfigurace:
 
-Konfigurace projektu ke spuštění testů Boost.Test.
+   a. Chcete-li upravit soubor projektu, nejdřív uvolněte ji. V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte možnost **uvolnit projekt**. Potom klikněte pravým tlačítkem na uzel projektu a zvolte **upravit < název\>VCXPROJ**.
 
-1. Chcete-li upravit soubor projektu, nejdřív uvolněte ji. V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte možnost **uvolnit projekt**. Potom klikněte pravým tlačítkem na uzel projektu a zvolte **upravit < název\>VCXPROJ**.
-
-1. Přidejte dva řádky do **Globals** vlastnosti skupiny, jak je vidět tady:
+   b. Přidejte dva řádky do **Globals** vlastnosti skupiny, jak je vidět tady:
 
     ```xml
     <PropertyGroup Label="Globals">
@@ -67,19 +76,17 @@ Konfigurace projektu ke spuštění testů Boost.Test.
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-1. Uložte a zavřete \*VCXPROJ souboru a pak znovu načíst projekt.
+   c. Uložte a zavřete \*VCXPROJ souboru a pak znovu načíst projekt.
 
-1. Chcete-li otevřít **stránky vlastností**, klikněte pravým tlačítkem na uzel projektu a vyberte možnost **vlastnosti**.
+   d. Chcete-li otevřít **stránky vlastností**, klikněte pravým tlačítkem na uzel projektu a vyberte možnost **vlastnosti**.
 
-1. Rozbalte položku **C/C++** > **generování kódu**a potom vyberte **Runtime Library**. Vyberte `/MTd` ladicí statické runtime knihovny nebo `/MT` knihovny statické runtime verze.
+   d. Rozbalte položku **C/C++** > **generování kódu**a potom vyberte **Runtime Library**. Vyberte **/MTd** ladicí statické runtime knihovny nebo **/MT** knihovny statické runtime verze.
 
-1. Rozbalte položku **Linkeru > systému**. Ověřte, že **subsystému** je nastaven na **konzoly**.
+   f. Rozbalte položku **Linkeru > systému**. Ověřte, že **subsystému** je nastaven na **konzoly**.
 
-1. Zvolte **OK** zavřete stránky vlastností.
+   g. Zvolte **OK** zavřete stránky vlastností.
 
 ## <a name="add-include-directives"></a>Přidání direktivy začlenění
-
-1. Pokud dojde `main` fungovat v testovací soubor, odstraňte jej.
 
 1. Testovací soubor, přidejte všechny potřeby `#include` direktivy chcete zviditelnit vašeho programu typy a funkce pro testovací kód. Tento program je obvykle jednu úroveň v hierarchii složek. Pokud zadáte `#include "../"`, zobrazí se okno technologie IntelliSense a umožňuje vybrat úplnou cestu k souboru záhlaví.
 

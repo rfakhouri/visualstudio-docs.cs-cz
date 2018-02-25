@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aafb2259ec4f16341abf514e9496dbb66f3cb95c
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-projects"></a>Projektů v jazyce Python
 
@@ -54,7 +54,7 @@ Každý projekt Python má jeden soubor přiřazené spuštění zobrazeny tučn
 > [!Tip]
 > Když odeberete vybranou spouštěcí soubor z projektu a nevybírejte nový, spuštění projektu výsledky v Python výstup okna zobrazování, ale pak zmizení téměř okamžitě. Pokud narazíte na toto chování, zkontrolujte, že budete mít soubor přiřazené spuštění. Navíc pokud chcete zachovat ve výstupním okně Otevřít v takových případech, klikněte pravým tlačítkem na projekt, vyberte možnost **vlastnosti**, vyberte **ladění** kartě a pak přidejte `-i` k **překladač argumenty** pole. Tento argument způsobí, že překladač uvést do režimu interaktivní po dokončení programu, a tím zprovozní okno Otevřít zadejte Ctrl + Z, zadejte ukončíte.
 
-Nový projekt je vždy přidružen prostředí výchozí globální Python. Chcete-li přidružit projektu do různých prostředí (včetně virtuální prostředí), klikněte pravým tlačítkem na s **prostředí Python** uzlu v projektu, vyberte **prostředí Python přidat nebo odebrat**, a Vyberte ty, které chcete. Chcete-li změnit aktivního prostředí, klikněte pravým tlačítkem na požadované prostředí a vyberte **aktivovat prostředí** jak je uvedeno níže. Další informace najdete v tématu [prostředí Python](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project).
+Nový projekt je vždy přidružen prostředí výchozí globální Python. Chcete-li přidružit projektu do různých prostředí (včetně virtuální prostředí), klikněte pravým tlačítkem **prostředí Python** uzlu v projektu, vyberte **prostředí Python přidat nebo odebrat**, a Vyberte ty, které chcete. Chcete-li změnit aktivního prostředí, klikněte pravým tlačítkem na požadované prostředí a vyberte **aktivovat prostředí** jak je uvedeno níže. Další informace najdete v tématu [výběr prostředí pro projekt](selecting-a-python-environment-for-a-project.md).
 
 ![Aktivace prostředí pro projekt Python](media/projects-activate-environment.png)
 
@@ -71,7 +71,7 @@ Následující tabulka shrnuje šablony dostupné na Visual Studio 2017 (ne vše
 | Šablony | Popis |
 | --- | --- |
 | [Z existujícího kódu jazyka Python](#creating-a-project-from-existing-files) | Projekt sady Visual Studio vytvoří z existujícího kódu Python ve struktuře složek.  |
-| Aplikace Python | Struktura základního projektu pro novou aplikaci Python s jeden, prázdný zdrojového souboru. Ve výchozím projektu spouští v konzole překladač výchozí globální prostředí, které můžete změnit [přiřazení do různých prostředí](managing-python-environments-in-visual-studio.md#selecting-an-environment-for-a-project). |
+| Aplikace Python | Struktura základního projektu pro novou aplikaci Python s jeden, prázdný zdrojového souboru. Ve výchozím projektu spouští v konzole překladač výchozí globální prostředí, které můžete změnit [přiřazení do různých prostředí](selecting-a-python-environment-for-a-project.md). |
 | [Cloudové služby Azure](python-azure-cloud-service-project-template.md) | Projekt pro cloudové služby Azure napsané v Pythonu. |
 | [Webové projekty](python-web-application-project-templates.md) | Projekty pro webové servery založené na různé platformy, včetně charakteristické znaky Bottle, Flask a Django Flask/Jade. |
 | IronPython aplikace | Podobně jako šablona aplikací Python, ale používá IronPython ve výchozí povolení rozhraní .NET spolupráce a ve smíšeném režimu ladění s jazyky rozhraní .NET. |
@@ -136,7 +136,7 @@ Odkaz na `.pyd` souboru umožňuje technologii IntelliSense pro modul vygenerova
 
 Pokud modul rozšíření je kdykoli aktualizovat na disku, Visual Studio znovu analyzovala modul na pozadí. Tato akce nemá žádný vliv na chování za běhu, ale některé dokončených nejsou k dispozici, dokud se nedokončí analýzy.
 
-Také můžete potřebovat pro přidání [cesty pro hledání](managing-python-environments-in-visual-studio.md#search-paths) do složky obsahující modul.
+Také můžete potřebovat pro přidání [cesty pro hledání](search-paths.md) do složky obsahující modul.
 
 ### <a name="net-projects"></a>Projekty rozhraní .NET
 

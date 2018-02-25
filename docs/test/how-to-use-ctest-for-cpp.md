@@ -9,22 +9,39 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: mblome
 manager: ghogen
-ms.workload: cplusplus
+ms.workload:
+- cplusplus
 author: mikeblome
-ms.openlocfilehash: 529e070a3db1e6587989f8d0c55dc04e6db0388c
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: 8ae88a819dca24af504c954a00c4f25a9d61d38c
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>Jak používat CTest jazyka C++ v sadě Visual Studio
-CMake (která zahrnuje CTest) je integrována do prostředí Visual Studio IDE jako součást sady **Develoment plochy s jazykem C++** zatížení. Který jej nainstaluje na váš počítač, spusťte instalační program Visual Studio a najít [CMake nástrojů pro Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) v seznamu součástí pracovního vytížení.
 
-Podpora CMake v sadě Visual Studio nezahrnuje systému projektu sady Visual Studio. Proto zápisu a konfigurace CTest testů, stejně jako v jakémkoli CMake prostředí. V tématu [CMake nástrojů pro Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) pro další informace o používání CMake v sadě Visual Studio.
+CMake (která zahrnuje CTest) je integrována do prostředí Visual Studio IDE ve výchozím nastavení jako součást sady **Develoment plochy s jazykem C++** zatížení. Pokud potřebujete k instalaci na váš počítač, otevřete Visual Studio instalačního programu, klikněte na **upravit** tlačítko a potom zkontrolujte [CMake nástrojů pro Visual C++](/cpp/ide/cmake-tools-for-visual-cpp) v seznamu součástí pracovního vytížení.
 
-**Visual Studio 2017 verze 15,5** CTest není aktuálně integrovat **Průzkumníka testů**. Testy můžete spustit z hlavní nabídky CMake nebo v místní nabídce na **CMakeLists.txt** souboru v **Průzkumníku řešení**. Výsledky testů jsou směrované sady Visual Studio **výstup – okno**.
+## <a name="to-write-tests"></a>Zápis testů
 
-![Testy CTest](media/cpp-cmake-run-tests.png "CTest spustit testy")
+Podpora CMake v sadě Visual Studio nebude zahrnovat systému projektu sady Visual Studio. Proto zápisu a konfigurace CTest testů, stejně jako v jakémkoli CMake prostředí. Další informace o používání CMake v sadě Visual Studio najdete v tématu [CMake nástrojů pro Visual C++](/cpp/ide/cmake-tools-for-visual-cpp). 
+
+## <a name="to-run-tests-visual-studio-2017-version-156"></a>Ke spuštění testů (Visual Studio 2017 verze 15,6 operací)
+
+V aplikaci Visual Studio 2017 verze 15,6 operací, CTest jsou plně integrované s **Průzkumníka testů** a také podporuje testování rozhraní Google i nárůst částí. Tyto architektury jsou zahrnuté ve výchozím nastavení jako komponenty ve **Develoment plochy s jazykem C++** zatížení. Ale pokud provádíte upgrade projektu ze starší verze sady Visual Studio, může musíte nainstalovat tyto architektury pomocí programu Instalační program Visual Studio.
+
+Následující obrázek znázorňuje výsledky CTest, spustí pomocí Google Test framework:
+
+![CTest s Google Test Framework v VS2017 15,6 operací](media/ctest-test-explorer.png "CTest a Google testů v testovací Explorer")
+
+Pokud používáte CTest, ale není Google nebo nárůst adaptérů, zobrazí výsledky na úrovni CTest místo jednotlivých testů metoda úroveň. Můžete ladit a procházení po kroku jen CTest spustitelné soubory, ale trasování zásobníku na jednotlivé testy nejsou podporovány.
+
+## <a name="to-run-tests-visual-studio-2017-version-155"></a>Ke spuštění testů (Visual Studio 2017 verze 15,5)
+
+V **Visual Studio 2017 verze 15,5**, CTest není integrovaná s **Průzkumníka testů**. Testy můžete spustit z hlavní nabídky CMake nebo v místní nabídce na **CMakeLists.txt** souboru v **Průzkumníku řešení**. Výsledky testů jsou směrované sady Visual Studio **výstup – okno**.
+
+![Spuštění testů CTest 15,5 VS2017](media/cpp-cmake-run-tests.png "CTest spuštění testů v 15,5")
 
 ## <a name="see-also"></a>Viz také
+
 [Zápis testů částí pro C/C++](writing-unit-tests-for-c-cpp.md)

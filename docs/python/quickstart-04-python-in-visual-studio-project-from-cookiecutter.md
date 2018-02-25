@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67cf109b0964bcb9eca104ec138f968e273111e9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4b9b7a51436eeeb67634714216f9a583de679a07
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>Rychlý úvod: Vytvořte projekt ze šablony Cookiecutter
 
@@ -55,6 +55,6 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 ## <a name="see-also"></a>Viz také
 
 - [Použití rozšíření Cookiecutter](using-python-cookiecutter-templates.md)
-- [Vytvoření prostředí pro existující překladač Pythonu](managing-python-environments-in-visual-studio.md#creating-an-environment-for-an-existing-interpreter).
+- [Ručně identifikace existující překladač Pythonu](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
 - [Instalace podpory Python v sadě Visual Studio 2015 a starší](installing-python-support-in-visual-studio.md).
 - [Umístění instalace](installing-python-support-in-visual-studio.md#install-locations).

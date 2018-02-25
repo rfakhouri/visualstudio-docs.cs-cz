@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0faae917aba237a85c6a01743d89cf66adf06296
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: c946f9d0fea5192f75d2fd0a9865827b6027ef50
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="profiling-python-code"></a>Profilace kódu jazyka Python
 
@@ -38,6 +38,9 @@ Když vyberete **OK**, profileru spustí a otevře se sestava výkonu, pomocí n
 |   |   |
 |---|---|
 | ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) pro předvedení Python profilace (3 m 00s).|
+
+> [!Note]
+> V současné době podporuje pouze tato úroveň profilace aplikací úplné sadě Visual Studio, ale určitě chceme slyšet váš názor na funkce. Použití [ **váš názor produktu** tlačítko](#feedback) v dolní části této stránky.
 
 ## <a name="profiling-for-ironpython"></a>Profilace pro IronPython
 
