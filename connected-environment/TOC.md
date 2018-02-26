@@ -28,5 +28,8 @@
 ###[6. Práce ve sdíleném vývojovém prostředí](get-started-nodejs-06.md)
 ###[7. Souhrn](get-started-nodejs-07.md)
 
+# Postupy
+##[Sdílení vývojového prostředí](how-to/share-dev-environment.md)
+
 # [Řešení potíží](troubleshooting.md)
 

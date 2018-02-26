@@ -2,7 +2,7 @@
 title: "Úpravy Python kódu v sadě Visual Studio | Microsoft Docs"
 description: "Úpravy Python v sadě Visual Studio poskytuje technologii IntelliSense, fragmenty kódu a vlastnosti navigace, spolu s formátování, linting a refaktoring."
 ms.custom: 
-ms.date: 07/10/2017
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,21 +17,21 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e2bbf7169e7d60d5dac1119f543cbcfe61e922ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="editing-python-code"></a>Úpravy kódu jazyka Python
 
-Vývojáři stráví velkou část doba pro jejich v editoru kódu, takže [Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md) poskytuje funkce, které vám pomohou být produktivnější. Funkce zahrnují IntelliSense zvýraznění syntaxe, automatické doplňování, podpis Nápověda, metoda přepsání, hledání a navigace. 
+Vývojáři stráví velkou část doba pro jejich v editoru kódu, takže [Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md) poskytuje funkce, které vám pomohou být produktivnější. Funkce zahrnují IntelliSense zvýraznění syntaxe, automatické doplňování, podpis Nápověda, metoda přepsání, hledání a navigace.
 
 Editor integrována se interaktivních okna v sadě Visual Studio, což usnadňuje exchange kód mezi nimi. Najdete v části [kurzu krok 3: použití okna interaktivní REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) a [pomocí okna interaktivní - odeslání kódu interaktivního příkazu](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command) podrobnosti.
 
-Úvod k úpravám kód Python, najdete v části [kód Python úpravy](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567) (Microsoft Virtual Academy, 2m30s):
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567]
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) pro předvedení úpravy kódu Python (2 m 30s).|
 
 Obecné dokumentaci na úpravy kódu v sadě Visual Studio najdete v tématu [psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md). Viz také [osnovy v sadě Visual Studio](../ide/outlining.md), což vám usnadní zaměřené na konkrétní části kódu.
 
@@ -39,7 +39,7 @@ Můžete také použít Visual Studio prohlížeče objektů (**zobrazení > ost
 
 ## <a name="intellisense"></a>IntelliSense
 
-Poskytuje IntelliSense [dokončených](#completions), [podpis nápovědy](#signature-help), [rychlé informace](#quick-info), a [barevné zvýrazňování kódu](#code-coloring). Chcete-li zvýšit výkon, IntelliSense závisí na databázi dokončení, který se vygeneruje pro každé prostředí Python ve vašem projektu. Databáze může být potřeba aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze se zobrazuje v **prostředí Python** okno (na stejné úrovni jako Průzkumník řešení) na **IntelliSense** karta (najdete v části [prostředí Python](managing-python-environments-in-visual-studio.md)). 
+Poskytuje IntelliSense [dokončených](#completions), [podpis nápovědy](#signature-help), [rychlé informace](#quick-info), a [barevné zvýrazňování kódu](#code-coloring). Chcete-li zvýšit výkon, IntelliSense závisí na databázi dokončení, který se vygeneruje pro každé prostředí Python ve vašem projektu. Databáze může být potřeba aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze se zobrazuje v **prostředí Python** okno (na stejné úrovni jako Průzkumník řešení) na **IntelliSense** karta (najdete v části [odkaz na okno prostředí Python](python-environments-window-tab-reference.md#intellisense-tab)).
 
 ### <a name="completions"></a>Dokončování
 
