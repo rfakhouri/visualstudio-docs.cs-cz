@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 49b27fcc972cf8b0bb0411f5ee54ea611cdd4d75
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b75aae5811fa2410cf169d3401184b8af7ca381d
+ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="python-web-application-project-templates"></a>Šablony projektu webové aplikace Python
 
@@ -35,7 +35,7 @@ Spuštění projektu vytvořené ze šablony (přístupné prostřednictvím **s
 
 Šablony Bottle, Flask a Django zahrnují výchozí web s některými stránky a statické soubory. Tento kód stačí ke spuštění a ladění serveru místně (kdy některé nastavení je potřeba získat z prostředí) a nasazení do Microsoft Azure (kde [WSGI aplikace](http://www.python.org/dev/peps/pep-3333/) objekt musí být zadán).
 
-Při vytváření projektu ze šablony konkrétní rozhraní, zobrazí se dialogové okno můžete nainstaluje potřebné balíčky pomocí nástroje pip. Doporučujeme také používat [virtuální prostředí](managing-python-environments-in-visual-studio.md#global-and-virtual-environments) pro webové projekty tak, aby se správnými závislostmi jsou zahrnuty při publikování webu:
+Při vytváření projektu ze šablony konkrétní rozhraní, zobrazí se dialogové okno můžete nainstaluje potřebné balíčky pomocí nástroje pip. Doporučujeme také používat [virtuální prostředí](selecting-a-python-environment-for-a-project.md#using-virtual-environments) pro webové projekty tak, aby se správnými závislostmi jsou zahrnuty při publikování webu:
 
 ![Dialog, který nainstaluje potřebné balíčky pro šablony projektu](media/template-web-requirements-txt-wizard.png)
 
@@ -62,7 +62,7 @@ Vlastnosti v **spustit příkaz serveru** a **ladění serveru příkaz** skupin
 - **Prostředí**: obsahuje nový řádek oddělený seznam `NAME=VALUE` páry zadávání proměnných prostředí. Po všechny vlastnosti, které mohou upravit prostředí, například port číslo a hledání cesty a proto může přepsat tyto hodnoty jsou nastaveny tyto proměnné.
 
 Všechny projektu vlastnost nebo prostředí může být zadána proměnná se syntaxí MSBuild, například: `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)`je relativní cesta k souboru spuštění a `{StartupModule}` je importovatelné název souboru spuštění. `$(SERVER_HOST)`a `$(SERVER_PORT)` jsou proměnné normální prostředí, které se nastavují **spustit adresu URL** a **číslo portu** vlastnosti, automaticky, nebo **prostředí** Vlastnost.
+`$(StartupFile)` je relativní cesta k souboru spuštění a `{StartupModule}` je importovatelné název souboru spuštění. `$(SERVER_HOST)` a `$(SERVER_PORT)` jsou proměnné normální prostředí, které se nastavují **spustit adresu URL** a **číslo portu** vlastnosti, automaticky, nebo **prostředí** vlastnost.
 
 > [!Note]
 > Hodnoty v **spustit příkaz serveru** se používají s **ladění > spustit Server** příkaz nebo Ctrl + F5; hodnoty ve **ladění příkaz serveru** skupiny se používají s **Ladění > Spustit ladění serveru** příkaz nebo F5.
@@ -73,11 +73,11 @@ Všechny projektu vlastnost nebo prostředí může být zadána proměnná se s
 
 - **Spusťte příkaz serveru** skupiny:
   - **Příkaz**: `bottle` (modulu)
-  - **Argumenty**:`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Argumenty**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - **Ladění serveru příkaz** skupiny:
   - **Příkaz**: `bottle` (modulu)
-  - **Argumenty**`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Argumenty** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 `--reload` Možnost se nedoporučuje, když pomocí sady Visual Studio pro ladění.
 
@@ -90,11 +90,11 @@ Jehlanový aplikací jsou aktuálně nejlépe vytvořené pomocí `pcreate` nás
 
 - **Spusťte příkaz serveru** skupiny:
   - Příkaz: `..\env\scripts\pserve-script.py` (skript)
-  - Argumenty:`Production.ini`
+  - Argumenty: `Production.ini`
 
 - **Ladění serveru příkaz** skupiny:
     - Příkaz: `..\env\scripts\pserve-script.py` (skript)
-    - Argumenty:`Development.ini`
+    - Argumenty: `Development.ini`
 
 > [!Tip]
 > Pravděpodobně budete muset nakonfigurovat **pracovní adresář** vlastnost projektu protože Pyramid aplikace jsou větší, než horní části stromu zdroje na úrovni obvykle jeden adresář.

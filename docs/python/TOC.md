@@ -1,5 +1,6 @@
 # [Přehled](overview-of-python-tools-for-visual-studio.md)
 # [Instalace](installing-python-support-in-visual-studio.md)
+## [Instalace interpretů Pythonu](installing-python-interpreters.md)
 # Rychlý start
 ## [Vytvoření projektu z existujícího kódu](quickstart-01-project-from-existing.md)
 ## [Vytvoření projektu ze šablony](quickstart-02-python-in-visual-studio-project-from-template.md)
@@ -14,13 +15,17 @@
 ## [5 – Instalace balíčků a správa prostředí Pythonu](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 ## [6 – Práce s úložištěm Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 # Koncepty
-## [Prostředí Pythonu](managing-python-environments-in-visual-studio.md)
 ## [Projekty Pythonu](managing-python-projects-in-visual-studio.md)
 ### [Šablony webových projektů](python-web-application-project-templates.md)
 ### [Šablona webového projektu Django](python-django-web-application-project-template.md)
 ### [Šablona cloudové služby Azure](python-azure-cloud-service-project-template.md)
 ## [Azure SDK pro Python](azure-sdk-for-python.md)
 # Návody
+## [Správa prostředí](managing-python-environments-in-visual-studio.md)
+### [Výběr interpretu pro projekt](selecting-a-python-environment-for-a-project.md)
+### [Používání souboru requirements.txt pro závislosti](managing-required-packages-with-requirements-txt.md)
+### [Cesty pro hledání](search-paths.md)
+### [Okno Environment (Prostředí) – referenční dokumentace](python-environments-window-tab-reference.md)
 ## [Úpravy kódu](editing-python-code-in-visual-studio.md)
 ### [Formátování kódu](formatting-python-code.md)
 ### [Refaktoring kódu](refactoring-python-code.md)

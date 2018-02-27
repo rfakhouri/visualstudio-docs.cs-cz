@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 428dc6346fa39b3939b478d0d2c887b99024dc81
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22c9aa56ab63d0c7c3b342e2c50cf81045580b54
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/19/2018
 ---
 # Jaké možnosti publikování je pro mě nejlepší?
 
@@ -50,6 +50,8 @@ App Service běží na hostovaných v cloudu virtuálních počítačů v Azure,
 - Nepotřebujete žádné úpravy na úrovni počítače na serverech, které jsou hostiteli webové aplikace.
 
 > Pokud chcete používat Azure App Service ve svém vlastním datovém centru nebo jiným počítačům v místě, můžete to udělat tak pomocí [zásobník Azure](https://azure.microsoft.com/overview/azure-stack/).
+
+Další informace o publikování aplikací ASP.NET Core najdete v tématu [publikování webové aplikace ASP.NET Core Azure App Service pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
 ## Azure Virtual Machines
 
@@ -83,7 +85,7 @@ Všimněte si, že pokud z nějakého důvodu (například přístup k počíta�
 - Je nutné pouze místní testovací nasazení.
 - Chcete prozkoumat a upravit soubory aplikace potenciálně nezávisle před jejich odesláním na jiný cíl nasazení.
 
-
+Další informace o nasazení aplikací .NET Core najdete v tématu [.NET Core nasazení aplikace pomocí sady Visual Studio](/dotnet/core/deploying/deploy-with-vs).
 
 ## Vlastní cíle
 
@@ -103,3 +105,5 @@ Můžete vytvořit libovolný počet vlastní profily nasazení v sadě Visual S
 - Cloudové služby používáte na zadejte než Azure, která je přístupná prostřednictvím adresy URL.
 - Chcete nasadit, pomocí přihlašovacích údajů než ty, které používáte v sadě Visual Studio, nebo těch, které přímo navázána na vaše účty Azure.
 - Chcete odstranit soubory z cíle pokaždé, když nasazujete.
+
+Další informace o publikování do služby IIS najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) a [vzdáleného ladění ASP.NET ve vzdáleném počítači IIS](../../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).

@@ -2,7 +2,7 @@
 title: "Přehled podpory Python v sadě Visual Studio (Windows) | Microsoft Docs"
 description: "Souhrn funkcí, které jsou k dispozici pro jazyk Python v sadě Visual Studio (také označované také jako Python Tools pro sadu Visual Studio, PTVS), včetně otázky a odpovědi (FAQ) a matici podpory funkce mezi verzemi sady Visual Studio."
 ms.custom: 
-ms.date: 01/09/2018
+ms.date: 02/15/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9236a36e6041cb22f6206c08662cb16be846cf85
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
+ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Práce s Python v sadě Visual Studio (Windows)
 
@@ -50,9 +50,10 @@ Abyste mohli začít:
 
 Také zahrnuje úlohy Python [Azure SDK pro jazyk Python](azure-sdk-for-python.md), což zjednodušuje použití služby Azure z aplikací systému Windows, Mac OS X a Linux.
 
-Video úvod, najdete v článku krátké [Python Tools pro Visual Studio](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) kurzu na webu Microsoft Virtual Academy (asi 22 minut celkový). 
-
-> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567]
+|   |   |
+|---|---|
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video řady (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) Úvod do jazyka Python v sadě Visual Studio (celkový počet 22 minut). |
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | Také najdete na následující videa na webu Microsoft Virtual Academy:<ul><li>[Úvod do programování s Pythonem](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python Začátečník: Řetězce a funkce](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python základy: Seznam a smyčky](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Otázky nejvyšší Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Otázky a odpovědi
 

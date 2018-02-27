@@ -97,6 +97,7 @@
 ##### [Nahrazení parametrů v šabloně](ide/how-to-substitute-parameters-in-a-template.md)
 #### [Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Vývoj bez projektů nebo řešení (Otevřít složku)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+#### [Přizpůsobení úloh buildování a ladění](ide/customize-build-and-debug-tasks-in-visual-studio.md)
 ### [Psaní kódu v editoru](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Vyhledání a nahrazení textu](ide/finding-and-replacing-text.md)
 ##### [Používání regulárních výrazů](ide/using-regular-expressions-in-visual-studio.md)
