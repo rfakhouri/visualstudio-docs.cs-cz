@@ -1,34 +1,32 @@
 ---
 title: "Postupy: ladění zdroje rozhraní .NET Framework | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 02/23/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
-helpviewer_keywords: debugging, .NET Framework source
+helpviewer_keywords:
+- debugging, .NET Framework source
 ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 46c030a3c81f4b49fc66a06ee55d797dfe9119dc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 75f3665afcf5d4937fae46e2a6871e0f7121b561
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-debug-net-framework-source"></a>Postupy: Ladění zdroje rozhraní .NET Framework
-Nejnovější verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje nové funkce pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ladění. Chcete-li ladit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zdroje, musíte mít přístup k ladění symboly pro kód. Je také nutné povolit zanoříte se do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] zdroje.  
+K ladění .NET Framework – zdroj, musí mít přístup k ladění symboly pro kód. Musíte také povolit zanoříte se do zdroje rozhraní .NET Framework.  
   
- Můžete povolit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] krokování a symbol stahování v **možnosti** dialogové okno. Když povolíte symbol stahování, můžete stáhnout symboly okamžitě nebo Povolit jenom možnost pro stahování později. Pokud jste symboly nestahovat okamžitě, symboly stáhnout při příštím spuštění ladění aplikace. Můžete také provést ruční stažení z **moduly** okno nebo **zásobníkem volání** okno.  
+ Můžete povolit rozhraní .NET Framework krokování a symbol stahování v **možnosti** dialogové okno. Když povolíte symbol stahování, můžete stáhnout symboly okamžitě nebo Povolit jenom možnost pro stahování později. Pokud jste symboly nestahovat okamžitě, symboly stáhnout při příštím spuštění ladění aplikace. Můžete také provést ruční stažení z **moduly** okno nebo **zásobníkem volání** okno.  
   
 ### <a name="to-enable-net-framework-source-debugging"></a>Pokud chcete povolit ladění zdroje rozhraní .NET Framework  
   
@@ -36,7 +34,7 @@ Nejnovější verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] po
   
 2.  V **možnosti** dialogové okno, klikněte **ladění** kategorie.  
   
-3.  V **Obecné** nastavte **povolení rozhraní .NET Framework** zdroje krokování s.  
+3.  V **Obecné** nastavte **povolit .NET Framework – zdroj krokování s.**  
   
     1.  Pokud jste měli pouze můj kód povoleno, dialogové okno upozornění informuje, že pouze můj kód je nyní zakázán. Click **OK**.  
   
@@ -44,17 +42,11 @@ Nejnovější verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] po
   
 4.  V části **ladění** kategorii, klikněte na tlačítko **symboly**.  
   
-5.  Pokud chcete změnit umístění mezipaměti symboly:  
-  
-    1.  Otevřete **ladění** uzlu v poli na levé straně.  
-  
-    2.  V části **ladění** uzel, klikněte na tlačítko **symboly**.  
-  
-    3.  Upravit umístění v **mezipaměti symboly z servery symbolů pro tento adresář** nebo klikněte na tlačítko **Procházet** vyberte jiné umístění.  
+5.  Pokud chcete změnit umístění mezipaměti symboly, upravit umístění v **mezipaměti symboly v tomto adresáři** nebo klikněte na tlačítko **Procházet** vyberte jiné umístění.  
   
 6.  Pokud chcete stáhnout symboly okamžitě, klikněte na tlačítko **zatížení symboly pomocí výše umístění**.  
   
-     Toto tlačítko není k dispozici v režimu návrhu.  
+     Toto tlačítko není k dispozici v režimu návrhu, ale je k dispozici při ladění.  
   
      Pokud nevyberete stáhnout symboly, symboly stáhnou automaticky při příštím spuštění ladění vašeho programu.  
   
@@ -62,15 +54,15 @@ Nejnovější verzi [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] po
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>Chcete-li načíst Framework symboly pomocí okna moduly  
   
-1.  V **moduly** okna, klikněte pravým tlačítkem a modul, u kterého symboly nenačtou. Můžete zadat, pokud se načtou symboly nebo není prohlížením **symboly stav** sloupce.  
+1.  V **moduly** okno (při ladění, zvolte **ladění** > **Windows** > **moduly**), Klikněte pravým tlačítkem na modul, u kterého symboly nenačtou. Můžete zadat, pokud se načtou symboly nebo není prohlížením **symboly stav** sloupce.  
   
-2.  Přejděte na příkaz **načíst symboly z** a klikněte na tlačítko **servery symbolů Microsoft** ke stažení ze serveru Microsoft veřejné symboly symboly nebo **Symbol cesta** načíst z adresáře kde jsou uloženy dříve symboly.  
+2.  Přejděte na příkaz **Symbol nastavení** a klikněte na tlačítko **servery symbolů Microsoft** ke stažení ze serveru Microsoft veřejné symboly symboly. Nebo můžete klikněte pravým tlačítkem na modul a vyberte **načíst symboly** načíst z adresáře, kam jste dřív uložili symboly.  
   
 ### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>Chcete-li načíst Framework symboly pomocí okno zásobník volání  
   
 1.  V **zásobníkem volání** okna, klikněte pravým tlačítkem a rámečku, pro který symboly nenačtou. Limit bude nedostupné rámečku.  
   
-2.  Přejděte na příkaz **zatížení symboly z** a klikněte na tlačítko **servery symbolů Microsoft** nebo **Symbol cesta**.  
+2.  Přejděte na příkaz **Symbol nastavení** a klikněte na tlačítko **servery symbolů Microsoft**, nebo klikněte pravým tlačítkem na modul a vyberte **Symbol cesta**.  
   
 ## <a name="see-also"></a>Viz také  
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   

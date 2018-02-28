@@ -14,11 +14,11 @@ ms.author: ghogen
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dfdd5aee71c74febbeca0b7c9683aaa6be915e6e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Mobilní vývoj pro různé platformy v sadě Visual Studio
 
@@ -34,7 +34,7 @@ Pokud chcete vytvořit aplikaci grafické herní nebo dokonalé, instalace nást
 
 S Xamarinem můžete určit cílovou Android, iOS a Windows ve stejném řešení, sdílení kódu a to i v uživatelském rozhraní.
 
-|Víc se uč|
+|**Víc se uč**|
 |--------------------|
 |[Instalaci sady Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Další informace o Xamarinu ve Visual Studiu](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
@@ -65,7 +65,7 @@ S Xamarinem můžete určit cílovou Android, iOS a Windows ve stejném řešen�
 
  Váš kód můžete sdílet s použitím sdíleného projektu, projektu knihovny přenosných tříd nebo obojí. Je možné, že některé kód pro rozlišení, které nejlépe v sdílený projekt a určitý kód provede další smysl v projektu knihovny přenosných tříd.
 
-|Víc se uč|
+|**Víc se uč**|
 |--------------------|
 |Vyberte, zda se sdílet kódu pomocí sdílených projektů, projektů knihovny přenosných tříd nebo obojí.<br /><br /> [Sdílení kódu napříč platformami](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog na rozhraní .NET Framework)<br /><br /> [Sdílení kódu možnosti](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Kód možnosti sdílení s rozhraním .NET Framework](http://msdn.microsoft.com/library/dn720832.aspx) (Knihovna MSDN)|
 
@@ -78,10 +78,10 @@ S Xamarinem můžete určit cílovou Android, iOS a Windows ve stejném řešen�
 
  Windows 10 je docela nové, takže jsou zde také šablony projektů cílených Windows 8.1. Pokud chcete, aby a vaše aplikace poběží na telefony, tablety a počítače s Windows 10 můžete použít tyto šablony projektu. Všechna zařízení se systémem Windows 8.1 se však zobrazí automatické upgradu na Windows 10, takže pokud nemáte konkrétní důvodů, proč by místo cíle Windows 8.1, doporučujeme používat šablony projektu, které cílí na Windows 10.
 
-|Víc se uč|
+|**Víc se uč**|
 |--------------------|
-|[Další informace o univerzálních aplikací pro Windows](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Centrum vývojářů pro Windows)|
-|[Vytvoření vaší první z nich](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Centrum vývojářů pro Windows)|
+|[Úvod do univerzální platformy Windows](/windows/uwp/get-started/universal-application-platform-guide)|
+|[Vytvoření první aplikace](/windows/uwp/get-started/your-first-app)|
 |[Vývoj aplikací pro Univerzální platformu Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrace aplikací do univerzální platformy Windows (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
@@ -104,7 +104,7 @@ S Xamarinem můžete určit cílovou Android, iOS a Windows ve stejném řešen�
 
  Šablony projektů pro vytváření univerzálních aplikací pro Windows jsou stále k dispozici v sadě Visual Studio tak zaregistrované, můžete je použít, pokud budete chtít cílové jenom zařízení se systémem Windows. Pokud se rozhodnete později cílit Android a iOS, můžete vždy přenesení kódu do projektu Cordova. Existují open-source verze rozhraní API WinJS, takže můžete opakovaně použít kód, který využívá těchto rozhraní API. Ale nutné dodat, pokud budete chtít v budoucnu cíle jiné platformy, doporučujeme spustit pomocí nástrojů Visual Studio pro Apache Cordova.
 
-|Víc se uč|
+|**Víc se uč**|
 |--------------------|
 |[Instalaci sady Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Začínáme s nástroji Visual Studio Tools pro Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
@@ -131,7 +131,7 @@ S Xamarinem můžete určit cílovou Android, iOS a Windows ve stejném řešen�
 
  Při psaní kódu v tyto knihovny, můžete použít technologie IntelliSense a prozkoumejte rozhraní nativní API platformy Android a Windows. Tyto knihovny projekty jsou plně integrované s ladicího programu sady Visual Studio, můžete nastavit zarážky, krokovat kód a najít a opravit problémy s použitím všech pokročilých funkcí ladicího programu.
 
-|Víc se uč|
+|**Víc se uč**|
 |--------------------|
 |[Stáhněte si Visual Studio.](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[Nainstalujte Visual C++ pro nástroje pro vývoj mobilních řešení pro různé platformy.](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) (Knihovna MSDN)|
@@ -151,7 +151,7 @@ S Xamarinem můžete určit cílovou Android, iOS a Windows ve stejném řešen�
 
  Začněte vytvářet vaše hra Unity a Visual Studio Tools for Unity ještě dnes.
 
-|Víc se uč|
+|**Víc se uč**|
 |--------------------|
 |[Další informace o vytváření Unity hry pomocí sady Visual Studio](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
 |[Další informace o Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) (Knihovna MSDN)|

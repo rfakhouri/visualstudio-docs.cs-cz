@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bbce760956dda7c9399d25dd241df26ec0e59644
-ms.sourcegitcommit: b01406355e3b97547b7cbf8ce3960f101b165cec
+ms.openlocfilehash: 3de32ab0b9ded416f57f4699e534b6401c2a483c
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Návod: Zaznamenání grafických informací prostřednictvím kódu
 Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky k prostřednictvím kódu programu zaznamenání grafických informací z aplikace Direct3D.  
@@ -30,7 +30,7 @@ Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] d
   
 -   Volání `CaptureCurrentFrame`při vykreslování problém je obtížné předvídat a zaznamenat v manuálním testováním, ale můžete pomocí informací o stavu aplikace za běhu prostřednictvím kódu programu předpovědět.  
   
-##  <a name="CaptureDX11_2"></a>Zachytávání prostřednictvím kódu programu v systému Windows 10  
+##  <a name="CaptureDX11_2"></a> Zachytávání prostřednictvím kódu programu v systému Windows 10  
  Tato část průvodce ukazuje zachytávání prostřednictvím kódu programu v aplikacích, které používají rozhraní API 11.2 DirectX ve Windows 10, která používá metodu robustní zachycení.
   
  V této části ukazuje, jak provést tyto úlohy:  
@@ -79,7 +79,7 @@ Můžete použít [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] d
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     Nezapomeňte se podívat `HRESULT` vrácený `DXGIGetDebugInterface1` zajistit získat platný rozhraní dříve, než ho použijete:  
+     Nezapomeňte se podívat `HRESULT` vrácený [DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx) zajistit získat platný rozhraní dříve, než ho použijete:  
   
     ```  
     if (FAILED(getAnalysis))  

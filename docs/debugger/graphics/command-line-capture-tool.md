@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
-caps.latest.revision: "4"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 68ea5a718b1a0d1ccff7155f842bc3808d640c21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 4290ccb1184f658d04d6903520f709384e58e837
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="command-line-capture-tool"></a>Nástroj příkazového řádku zachycení
 DXCap.exe je nástroj příkazového řádku pro zachycení diagnostiky grafiky a přehrávání. Podporuje Direct3D – 10 až 12 Direct3D – mezi všechny funkce úrovně.  
@@ -42,12 +44,12 @@ DXCap.exe -info
   
  `-frame``frames`  
  V režimu zachycení `frames` určuje počet snímků, které chcete zaznamenat. První snímek je 1. Můžete zadat více snímků pomocí čárky a rozsahy adres. Například pokud `frames` je `2, 5, 7-9, 15`, pak rámců `2`, `5`, `7`, `8`, `9`, a `15` zaznamenání.  
+
+> [!TIP]
+> Použití `-frame` `manual` k určení, že rámce bude zaznamenat ručně stisknutím klávesy Print Screen. Rámce se dají zachytit při spuštění aplikace; Zastavit sběr rámců, vraťte k rozhraní příkazového řádku a stiskněte klávesu enter.  
   
  `-period``periods`  
  V režimu zachycení `periods` určuje rozsahy dobu v sekundách, během kterých chcete zaznamenat rámce. Můžete zadat více období pomocí čárky a rozsahy adres. Například pokud `periods` je `2.1-5, 7.0-9.3`, pak rámců, které jsou generovány mezi `2.1` a `5` sekund a mezi`7` a `9.3` zaznamenání sekund.  
-  
- `-manual`  
- V režimu zachycení `-manual` Určuje, že rámce bude zaznamenávat ručně po stisknutí klávesy Print Screen. Rámce se dají zachytit při spuštění aplikace; Zastavit sběr rámců, vraťte k rozhraní příkazového řádku a stiskněte klávesu enter.  
   
  `-c` `app` [`args...`]  
  Zaznamenejte režimu. V režimu zachycení `app` Určuje název aplikace, kterou chcete zaznamenání grafických informací z; `args...` Určuje další parametry příkazového řádku pro tuto aplikaci.  
@@ -165,15 +167,15 @@ DXCap.exe -e map
  Výše uvedeného příkazu zobrazí aplikace UWP, které odpovídají "map"; Toto je výstup:  
   
  **Balíček "Microsoft.BingMaps":**  
- **InstallDirectory: Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe C:\Program**  
- **Úplný název: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **InstallDirectory : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Název: Microsoft.BingMaps**  
  **Vydavatel: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
  **Verze: 2.1.2914.1734**  
  **Launchable aplikací:**  
  **ID: AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **Exe  : C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
  **IsWWA: Ne**  
  ** AppSpec (ke spuštění): **DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps*** poslední řádek výstupu u každé výčtové aplikace zobrazí příkaz můžete použít k zaznamenání grafických informací z něj.  
   

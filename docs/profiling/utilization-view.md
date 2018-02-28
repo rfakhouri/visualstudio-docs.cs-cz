@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.cpuutilization
-helpviewer_keywords: Concurrency Visualizer, CPU Utilization View
+f1_keywords:
+- vs.performance.view.cpuutilization
+helpviewer_keywords:
+- Concurrency Visualizer, CPU Utilization View
 ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ee1168865d5827f4536b39b8b0822f1e1d67635e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 36a3d46186d98dbcd3d89ebb97003ba6e24fb3b7
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="utilization-view"></a>Zobrazení využití
-**Zobrazení využití** zobrazí informace o procesoru, GPU a jiné systémové prostředky, které jsou používány aktuální proces. Zobrazuje průměrnou základní využití procesu analyzovaných, nečinného procesu, proces systému a další procesy, které běží na serveru v čase. Nezobrazí, které konkrétní základní je aktivní v daném okamžiku. Například pokud každé dvě jádra jsou spuštěné v 50 procent kapacity pro dané časové období, pak toto zobrazení uvádí jednoho logického jádra využívání. Zobrazení je generován dělení profilování čas na krátkou dobu segmenty. Pro každý segment graf ukazuje zeměpisný průměrný počet vláken procesů, které jsou prováděny logické jader na během tohoto intervalu.  
+**Zobrazení využití** zobrazí informace o procesoru, GPU a jiné systémové prostředky, které jsou používány aktuální proces (zvolte **analyzovat** > **souběžnosti Vizualizér** zahájíte vizualizér souběžnosti). Zobrazuje průměrnou základní využití procesu analyzovaných, nečinného procesu, proces systému a další procesy, které běží na serveru v čase. Nezobrazí, které konkrétní základní je aktivní v daném okamžiku. Například pokud každé dvě jádra jsou spuštěné v 50 procent kapacity pro dané časové období, pak toto zobrazení uvádí jednoho logického jádra využívání. Zobrazení je generován dělení profilování čas na krátkou dobu segmenty. Pro každý segment graf ukazuje zeměpisný průměrný počet vláken procesů, které jsou prováděny logické jader na během tohoto intervalu.  
   
  ![Zobrazení využití procesoru](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")  
   

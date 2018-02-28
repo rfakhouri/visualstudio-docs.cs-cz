@@ -16,11 +16,11 @@ ms.author: corob
 manager: ghogen
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 2ae49bb09d30122297efc66779f808e0c39dd0d7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 10ac98027a4f7e50f66ec27636507e89f64849ee
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>Visual C++ pro vývoj mobilních pro různé platformy
 Můžete vytvářet nativní aplikace C++ pro iOS, Android a Windows zařízení a společný kód sdílené složky v knihovnách vytvořené pro iOS, Android a Windows pomocí Visual C++ pro vývoj mobilních řešení pro různé platformy. Toto je možnost k dispozici ve Visual Studiu 2015, který nainstaluje sady SDK a nástroje, které jsou potřeba pro vývoj pro různé platformy sdílené knihovny a nativní aplikace. Při instalaci, můžete vytvořit kód, který běží na iOS a zařízení se systémem Android a platformy kromě Windows, Windows Phone a Xbox Visual C++.  
@@ -39,7 +39,7 @@ Můžete vytvářet nativní aplikace C++ pro iOS, Android a Windows zařízení
  Visual C++ pro vývoj mobilních řešení pro různé platformy je instalovat možnost, která se dodává s Visual Studio 2015. Požadavky a pokyny k instalaci najdete v tématu [nainstalovat Visual C++ pro vývoj mobilních řešení pro různé platformy](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). K vytvoření kódu pro iOS, potřebujete také do počítače Mac a Apple iOS vývojářský účet. Další informace najdete v tématu [instalaci a konfiguraci nástroje pro sestavení pomocí iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).  
   
 ## <a name="come-up-to-speed"></a>Pocházet urychlit  
- Pokud jste pocházejících z vývoj pro Android nebo iOS, máme některé skvělé materiály o tom, jak začít pracovat. Visual Studio se prostředí výrazovou a umožňující vývoj. Chcete-li zjistit, jak používat, zkuste [Začínáme pro vývojáře v systému Android](https://msdn.microsoft.com/en-us/library/windows/apps/dn275875.aspx) nebo [Začínáme pro vývojáře iOS](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/jj657966.aspx). Tato témata vás seznámí s Visual Studio a koncepty, že budete potřebovat k vývoji aplikací pro různé platformy pro Windows a Windows Phone. Pokud chcete začít, zápis první multiplatformní aplikace pro iOS a Android, najdete v části [sestavení aplikace OpenGL ES pro Android a iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).  
+ Pokud jste pocházejících z vývoj pro Android nebo iOS, máme některé skvělé materiály o tom, jak začít pracovat. Visual Studio se prostředí výrazovou a umožňující vývoj. Chcete-li zjistit, jak používat, zkuste [Začínáme pro vývojáře v systému Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) nebo [Začínáme pro vývojáře iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Tato témata vás seznámí s Visual Studio a koncepty, že budete potřebovat k vývoji aplikací pro různé platformy pro Windows a Windows Phone. Pokud chcete začít, zápis první multiplatformní aplikace pro iOS a Android, najdete v části [sestavení aplikace OpenGL ES pro Android a iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).  
   
  Visual C++ pro vývoj mobilních řešení pro různé platformy obsahuje několik šablon můžete začít pracovat na vašich aplikací:  
   

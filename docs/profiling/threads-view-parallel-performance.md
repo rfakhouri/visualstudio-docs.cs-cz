@@ -4,25 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords: vs.performance.view.threadblocking
-helpviewer_keywords: Concurrency Visualizer, Threads View (Parallel Performance)
+f1_keywords:
+- vs.performance.view.threadblocking
+helpviewer_keywords:
+- Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: "21"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d2245ae466948122cbf39225043125b4feec8579
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="threads-view-parallel-performance"></a>Zobrazení vláken (paralelní výkon)
-Zobrazení vláken je nejvíce podrobnější a bohaté funkce zobrazení v vizualizér souběžnosti. Pomocí tohoto zobrazení, můžete zjistit, jestli jsou vláken provádění nebo blokování z důvodu synchronizace, vstupně-výstupních operací nebo z jiného důvodu.  
+**Zobrazení vláken** je nejvíce bohaté a podrobné zobrazení v Concurrency Visualizer (zvolte **analyzovat** > **vizualizér souběžnosti** spuštění Vizualizér souběžnosti). Pomocí tohoto zobrazení, můžete zjistit, jestli jsou vláken provádění nebo blokování z důvodu synchronizace, vstupně-výstupních operací nebo z jiného důvodu.  
   
  Vizualizér souběžnosti během analýzy profil prověří všechny události přepnutí kontextu operačního systému pro každou aplikaci přístup z více vláken. Kontext přepínače může dojít z mnoha důvodů, například tyto:  
   
@@ -68,7 +72,7 @@ Zobrazení vláken je nejvíce podrobnější a bohaté funkce zobrazení v vizu
   
  Tady je ilustraci zobrazení vláken:  
   
- ![Zobrazení vláken](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![Threads View](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 Zobrazení vláken  
   
  Na začátku posloupnosti jsou řazeny v pořadí, ve kterém jsou vytvořeny, tak, aby se první hlavní vlákno aplikace. Možnost řazení v levém horním rohu zobrazení můžete použít k seřazení vláken podle jiného kritéria (například ve většině provádění práce).  

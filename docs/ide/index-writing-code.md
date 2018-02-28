@@ -3,33 +3,34 @@ layout: LandingPage
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-title: "Zápis a správu kódu pomocí dokumentaci Visual Studio | Microsoft Docs"
+title: "Zápis a správu kódu pomocí sady Visual Studio | Microsoft Docs"
 description: "Další informace o použití editoru kódu a další nástroje v sadě Visual Studio k zápisu, přejděte, spravovat a zlepšit váš kód."
 ms.technology: vs-ide-general
-ms.workload: multiple
-ms.openlocfilehash: 5bc15e4bde117a474034ab4342dc43bc8db8e00f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 88550be8e6d2d7e226d591a5011da5d3affbb511
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="write-and-manage-code-using-visual-studio-documentation"></a>Zápis a správu kódu pomocí dokumentaci Visual Studio
+# <a name="write-and-manage-code-using-visual-studio"></a>Zapsat a spravovat kódu pomocí sady Visual Studio
 
 Další informace o použití editoru kódu a další nástroje v sadě Visual Studio k zápisu, přejděte, spravovat a zlepšit váš kód.
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/visualstudio/ide/writing-code-in-the-code-and-text-editor">
+        <a href="/visualstudio/ide/solutions-and-projects-in-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="" />
+                            <img src="/media/common/i_code-blocks.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Další informace k zápisu kódu a přejděte v editoru kódu</h3>
+                        <h3>Vytvoření řešení a projekty</h3>
                     </div>
                 </div>
             </div>
@@ -37,7 +38,7 @@ Další informace o použití editoru kódu a další nástroje v sadě Visual S
         </a>
     </li>
     <li>
-        <a href="https://youtu.be/4glwwioCVjA?list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK">
+        <a href="/visualstudio/ide/writing-code-in-the-code-and-text-editor">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -47,7 +48,7 @@ Další informace o použití editoru kódu a další nástroje v sadě Visual S
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Upravit a přejděte kódu</h3>
+                        <h3>Použití editoru kódu</h3>
                     </div>
                 </div>
             </div>
@@ -55,89 +56,17 @@ Další informace o použití editoru kódu a další nástroje v sadě Visual S
         </a>
     </li>
     <li>
-        <a href="https://youtu.be/pc9vX_4RGV4?list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK">
+        <a href="/visualstudio/ide/navigating-code">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_git-mark.svg" alt="" />
+                            <img src="/media/common/i_agile.svg" alt="" />
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Otevřete projekt ve správě zdrojového kódu</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://www.visualstudio.com/docs/git/share-your-code-in-git-vs">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_git-mark.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Spravovat kódu pomocí Git pomocí sady Visual Studio</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/ide/code-snippets">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-samples.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Vytvoření fragmenty kódu</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/test/improve-code-quality">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-quality.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Zlepšení kvality kódu</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/visualstudio/ide/refactoring-in-visual-studio">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_code-automate.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Revidování a změny struktury kódu</h3>
+                        <h3>Přejděte kódu</h3>
                     </div>
                 </div>
             </div>
@@ -155,7 +84,43 @@ Další informace o použití editoru kódu a další nástroje v sadě Visual S
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Nechat vygenerovat kód pro vás Visual Studio</h3>
+                        <h3>Generování a opravte kódu</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/develop-code-in-visual-studio-without-projects-or-solutions">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_code-samples.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Použijte sadu Visual Studio bez projekty a řešení</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/vsts/git/share-your-code-in-git-vs-2017">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_git-mark.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Spravovat kódu pomocí Git pomocí sady Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -164,20 +129,117 @@ Další informace o použití editoru kódu a další nástroje v sadě Visual S
     </li>
 </ul>
 
----
+## <a name="get-started-with-programming-languages-in-visual-studio"></a>Začínáme s programovací jazyky v sadě Visual Studio
 
-<h2>Odkaz</h2>
-<ul class="panelContent cardsW">
+Vytvoření první aplikace v sadě Visual Studio.
+
+<ul class="panelContent cardsFTitle">
     <li>
+        <a href="/visualstudio/ide/tutorial-csharp-aspnet-core">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Csharp.svg" alt="" />
+                        </div>
+                    </div>
                     <div class="cardText">
-                        <p><a href="/visualstudio/ide/class-view-and-object-browser-icons">Ikony zobrazení třídy a prohlížeče objektů</a></p>
-                        <p><a href="/visualstudio/ide/reference/visual-studio-reference">Referenční dokumentace sady Visual Studio</a></p>
+                        <h3>Začínáme s C# a ASP.NET v sadě Visual Studio</h3>
                     </div>
                 </div>
             </div>
         </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-cpp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Začínáme s C++ v sadě Visual Studio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-python">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_python.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Začínáme s Pythonem v sadě Visual Studio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-visual-basic-console">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_vb.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Vytvoření konzolové aplikace v jazyce Visual Basic</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-nodejs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_nodejs.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Vytvoření webové aplikace s Node.js</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/rtvs/getting-started-with-r">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_r.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Začínáme s R Tools pro sadu Visual Studio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
     </li>
 </ul>

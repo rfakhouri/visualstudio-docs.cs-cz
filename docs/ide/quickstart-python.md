@@ -17,13 +17,13 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a9f35a9faf84965de12f9e42c3817b48ad9260c7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9b45c694399553dd262a68d821d1757b65ea9600
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/27/2018
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Rychlý úvod: použijte sadu Visual Studio k vytvoření první webové aplikace Python
+# <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první webové aplikace Python
 
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou webovou aplikaci Python. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
 

@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,28 +17,41 @@ helpviewer_keywords:
 - debugging [Visual Studio], optimized code
 - optimized code, debugging
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
-caps.latest.revision: "13"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2c3dcd57568bdfaac3ba0f7aff33cefca8a0ee32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 23de1ec4e053a87c4f91cf7b599f49b8fe318015
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="jit-optimization-and-debugging"></a>Optimalizace a ladění JIT
-Když ladíte spravované aplikace, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] potlačí optimalizace kódu v běhu (JIT) ve výchozím nastavení. Potlačení JIT optimalizace znamená, že ladíte Neaktivní optimalizované kódu. Spuštění kódu je něco o něco pomalejší, protože není optimalizovaná, ale je mnohem důkladnější prostředí ladění. Ladění optimalizovaného kódu je těžší a doporučené pouze, pokud narazíte na chyby, dojde v optimalizovaný kód, ale nelze reprodukovat v verzi Neaktivní optimalizované.  
-  
- Řídí optimalizaci JIT ve [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pomocí **JIT potlačit optimalizaci pro načtení modulu** možnost. Tuto možnost můžete najít na **Obecné** v části **ladění** uzlu **možnosti** dialogové okno.  
-  
- Pokud zrušíte výběr **JIT potlačit optimalizaci pro načtení modulu** možnost, můžete ladit optimalizované za běhu kódu, ale možnost ladění může být omezený, protože optimalizovaný kód neodpovídá zdrojového kódu. V důsledku toho ladicího programu windows, jako **místní hodnoty –** a **automobily** okno nemusí být zobrazeny tolik informací, stejně jako když byly ladění Neaktivní optimalizované kódu.  
-  
- Další důležitý rozdíl obavy ladění pomocí pouze můj kód. Pokud ladění pouze můj kód zvažuje ladicího programu jako jiný uživatel kód, který by se neměly zobrazovat při ladění optimalizovaného kódu. V důsledku toho pokud jsou ladění za běhu optimalizovaného kódu, pravděpodobně chcete vypnout pouze můj kód. Další informace najdete v tématu [omezit zanoříte se pouze můj kód](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code).  
-  
- Nezapomeňte, že **JIT potlačit optimalizaci pro načtení modulu** možnost potlačí optimalizace kódu, pokud se načtou moduly. Pokud jste se připojit k procesu, který je již spuštěn, může obsahovat kód, který je již načíst, kompilována a optimalizované. **JIT potlačit optimalizaci pro načtení modulu** možnost nemá žádný vliv na takový kód, i když bude mít vliv moduly, které jsou načtené po připojení. Kromě toho **JIT potlačit optimalizaci pro načtení modulu** možnost nemá vliv na moduly, například WinForms.dll, které jsou vytvořeny pomocí NGEN.  
-  
+**Jak fungují optimalizace v rozhraní .NET:** Pokud se pokoušíte ladění kódu, je jednodušší při zda kód je **není** optimalizované. Je to proto, že při optimalizaci kódu kompilátoru a prostředí runtime měnit kód emitovaného procesoru, aby rychleji spustí, ale má méně přímé mapování na původní zdrojový kód. To znamená, že jsou často nelze zjistíte hodnotu místní proměnné a kód, krokování ladicí programy a zarážky nemusí fungovat podle očekávání.
+
+Obvykle je konfigurace sestavení verze vytvoří optimalizovaný kód a konfiguraci sestavení ladění neexistuje. `Optimize` MSBuild vlastnost určuje, zda je kompilátor sdělili optimalizovat kód.
+
+V ekosystému .NET kód bude převedena ze zdroje na pokyny procesoru ve dvou krocích: nejdřív kompilátor jazyka C# převede text, který zadáte do formuláře zprostředkující binární názvem MSIL a zapíše tento pro soubory .dll. Modul Runtime rozhraní .NET později, převede tento MSIL pokyny procesoru. Oba kroky můžete optimalizovat do určité míry, ale druhý krok provádí modul Runtime rozhraní .NET provede větších optimalizace.
+
+**Možnost optimalizace potlačit JIT na načtení modulu (pouze spravované):** zpřístupní možnost, která určuje, co se stane, když se načte knihovnu DLL, kterou je kompilovat s povolenými optimalizacemi uvnitř tento cílový proces ladicího programu. Pokud tato možnost je zaškrtnuté políčko (výchozí stav), pak když modul Runtime rozhraní .NET kompilovaný kód MSIL do kódu procesoru, zůstanou povolenými optimalizacemi. Pokud je zaškrtnutí možnost ladicího programu požadavků zakázat optimalizace.
+
+**JIT potlačit optimalizaci pro načtení modulu (pouze spravované)** možnost najdete na **Obecné** v části **ladění** uzel v **možnosti** dialogové okno.
+
+**Pokud by měl zaškrtnete tuto možnost:** zaškrtnete tuto možnost, když jste si stáhli knihovny DLL z jiného zdroje, jako je balíček nuget, a chcete ladit kód v této knihovny DLL. Aby tato možnost fungovala musíte taky najít soubor symbolu (.pdb) pro tuto knihovnu DLL.
+
+Pokud vás zajímá pouze při ladění kódu, který vytváříte místně, je nejlepší nechte nezaškrtnuté, tuto možnost, jak v některých případech, povolením této možnosti bude výrazně zpomalit ladění. Existují dvě důvodem zpomalit:
+
+* Optimalizovaný kód spustí rychleji. Pokud jsou vypnutí optimalizace pro velké množství kódu, můžete dohromady dopad na výkon.
+* Pokud máte pouze můj kód povolené, ladicího programu ani zkuste a načíst symboly pro knihovny DLL, která jsou optimalizována. Hledání symbolů může trvat dlouhou dobu.
+
+**Omezení této možnosti:** dvou případech, kde bude tato možnost **není** fungovat:
+
+1. V situacích, kde připojování ladicí program k již spuštěných procesů tato možnost nebude mít žádný vliv na moduly, které již byly načteny v době, kdy byl připojen ladicí program.
+2. Tato možnost nemá žádný vliv na knihovny DLL, které byly předem zkompilovat (známé jako ngen'ed) do nativního kódu. Můžete však zakázat použití předem zkompilovaný kód od procesu prostředí, ve kterém proměnné 'COMPlus_ZapDisable' nastaven na '1'.
+
 ## <a name="see-also"></a>Viz také  
  [Ladění spravovaného kódu](../debugger/debugging-managed-code.md)   
  [Procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md)   

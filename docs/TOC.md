@@ -46,7 +46,7 @@
 # Rychlý start
 ## [Orientace v sadě Visual Studio](ide/quickstart-ide-orientation.md)
 ## [Projekty a řešení](ide/quickstart-projects-solutions.md)
-## [Psaní kódu v editoru](ide/quickstart-editor.md)
+## [Použití editoru](ide/quickstart-editor.md)
 ## [Přizpůsobení motivu a barev textu](ide/quickstart-personalize-the-ide.md)
 ## [C++: Vytvoření konzolové aplikace](ide/getting-started-with-cpp-in-visual-studio.md)
 ## [Python: Vytvoření webové aplikace](ide/quickstart-python.md)
@@ -98,7 +98,7 @@
 #### [Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio](ide/visual-studio-ide-64-bit-support.md)
 ### [Vývoj bez projektů nebo řešení (Otevřít složku)](ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 #### [Přizpůsobení úloh buildování a ladění](ide/customize-build-and-debug-tasks-in-visual-studio.md)
-### [Psaní kódu v editoru](ide/writing-code-in-the-code-and-text-editor.md)
+### [Použití editoru](ide/writing-code-in-the-code-and-text-editor.md)
 #### [Vyhledání a nahrazení textu](ide/finding-and-replacing-text.md)
 ##### [Používání regulárních výrazů](ide/using-regular-expressions-in-visual-studio.md)
 ##### [Pole Najít/příkaz](ide/find-command-box.md)

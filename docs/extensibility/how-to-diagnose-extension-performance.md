@@ -4,20 +4,22 @@ ms.custom:
 ms.date: 11/08/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
-caps.latest.revision: "1"
+caps.latest.revision: 
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.workload: bertaygu
-ms.openlocfilehash: 1d1034cce8b2fced5af48a0a4bfa8620b56994e4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- bertaygu
+ms.openlocfilehash: ac6044406c4fa065d1e5ed3dcaa8dd998f4232fb
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Měření rozšíření dopad na spuštění
 
@@ -30,6 +32,9 @@ Pomoc uživatelům s porozumění tomuto vlivu, jsme přidali nové funkce v sad
 ![Spravovat performace Visual Studio](media/manage-performance.png)
 
 Cílem tohoto dokumentu je pomoci vývojářům při rozšíření prostřednictvím popisu výpočtu rozšíření dopad a jak lze analyzovat lokálně otestovat, pokud rozšíření se může zobrazit jako rozšíření, které mají vliv výkon.
+
+> [!NOTE]
+> Tento dokument se zaměřuje na dopad rozšíření na spuštění a řešení zatížení. Rozšíření také ovlivnit výkon sady Visual Studio, když způsobí Uživatelském rozhraní přestat reagovat. Další informace v tomto tématu najdete v tématu [postupy: diagnostikování uživatelské rozhraní se zpozdí způsobené rozšíření](how-to-diagnose-ui-delays-caused-by-extensions.md).
 
 ## <a name="how-extensions-can-impact-startup"></a>Jak rozšíření může mít vliv na spuštění
 

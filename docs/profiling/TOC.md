@@ -43,7 +43,6 @@
 #### [Postupy: Shromažďování dat o výkonu pro webovou stránku](how-to-collect-performance-data-for-a-web-site.md)
 #### [Postupy: Ruční vytváření výkonnostních relací](how-to-manually-create-performance-sessions.md)
 #### [Návod: Identifikace problémů s výkonem](walkthrough-identifying-performance-problems.md)
-#### [Ukázka PeopleTrax (nástroje pro profilaci)](peopletrax-sample-profiling-tools.md)
 ### [Konfigurace výkonnostních relací](configuring-performance-sessions.md)
 #### [Postupy: Odkazování na informace o symbolech Windows](how-to-reference-windows-symbol-information.md)
 #### [Postupy: Výběr metod shromažďování](how-to-choose-collection-methods.md)

@@ -188,6 +188,7 @@
 ## [Postupy: Použití AsyncPackage k načtení rozšíření VSPackages na pozadí](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)
 ## [Postupy: Použití kontextu uživatelského rozhraní založeného na pravidlech pro rozšíření sady Visual Studio](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)
 ## [Postupy: Diagnostika výkonu rozšíření](how-to-diagnose-extension-performance.md)
+## [Postupy: Diagnostikování zpoždění uživatelského rozhraní způsobených rozšířeními](how-to-diagnose-ui-delays-caused-by-extensions.md)
 ## [Řešení potíží s rozšířením VSPackages](troubleshooting-vspackages.md)
 # [Prostředí shell (integrované nebo izolované)](https://vspartner.com/pages/vsshells)
 # [Odesílání rozšíření sady Visual Studio](shipping-visual-studio-extensions.md)

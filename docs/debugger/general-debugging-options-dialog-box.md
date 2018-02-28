@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
@@ -18,18 +19,20 @@ dev_langs:
 - FSharp
 - C++
 - JScript
-helpviewer_keywords: Options dialog box, debugging
+helpviewer_keywords:
+- Options dialog box, debugging
 ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
-caps.latest.revision: "46"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c7f6983c2be5604867f729ed006eadb5257c3a43
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: 01c87cfc2beb030b2fd10a4455def65ab139a5f0
+ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Obecné, ladění, dialogové okno Možnosti
 **Nástroje > Možnosti > ladění > Obecné** stránce můžete nastavit následující možnosti:  
@@ -115,7 +118,7 @@ Odešle všechny ladicího programu zprávy, které by obvykle se zobrazí v **v
 Veškerá přizpůsobení zobrazení objektu struktura vypne. Další informace o možnostech přizpůsobení zobrazení najdete v tématu [vytvářet vlastní zobrazení objektů .managed](../debugger/create-custom-views-of-dot-managed-objects.md).  
   
 **Potlačit optimalizaci JIT pro načtení modulu (pouze spravované)**  
-Zakáže optimalizaci JIT spravovaného kódu, když je načten modul a je zkompilovat JIT, je připojen ladicí program. Zakázat optimalizace může usnadnit práci k ladění některé problémy, i když za cenu výkonu. Pokud používáte pouze můj kód, potlačení JIT optimalizace může způsobit bez uživatelského kódu, než se objeví jako uživatel (kód "Moje").
+Zakáže optimalizaci JIT spravovaného kódu, když je načten modul a je zkompilovat JIT, je připojen ladicí program. Zakázat optimalizace může usnadnit práci k ladění některé problémy, i když za cenu výkonu. Pokud používáte pouze můj kód, potlačení JIT optimalizace může způsobit bez uživatelského kódu, než se objeví jako uživatel (kód "Moje"). Další informace najdete v tématu [JIT optimalizace a ladění](../debugger/jit-optimization-and-debugging.md).
 
 **Povolit ladění jazyka JavaScript pro technologii ASP.NET (Chrome a IE)** umožňuje nástroj script debugger pro aplikace ASP.NET. Při prvním použití v prohlížeči Chrome musíte se přihlásit do prohlížeče při prvním použití povolení rozšíření Chrome, které jste nainstalovali. Tuto možnost zakažte vrátit se do starší verze chování.    
 
