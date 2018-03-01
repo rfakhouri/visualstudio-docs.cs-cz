@@ -2,14 +2,17 @@
 title: "Mobilizaci upgradu doprovodné jazyka Visual Basic .net na (VBUC) | Microsoft Docs"
 description: "Mobilizaci .net pro nástroj pro migraci z jazyka Visual Basic 6 .NET jazyka Visual Basic a C#"
 ms.date: 09/05/2017
-ms.technology: devlang-vb
+ms.technology:
+- devlang-vb
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs: visual-basic
+dev_langs:
+- visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.workload: dotnet
+ms.workload:
+- dotnet
 ms.openlocfilehash: b7fa2a16143368b829f29f43a4c8f60536b55c52
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
