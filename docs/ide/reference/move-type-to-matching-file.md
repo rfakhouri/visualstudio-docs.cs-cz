@@ -14,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62187c88fa2d2cf7ecf1b358fa0c03416be449a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 87619c7938afdf92da6ca1b03c3090ad7d72834c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Přesunout typu do odpovídající soubor refaktoring
 
@@ -49,7 +49,7 @@ Tato refaktoring platí pro:
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl +.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte **přesunout typ *TypeName*.cs** z místní okno náhledu, kde *TypeName* je název typu, který jste vybrali.
+     - Stiskněte klávesu **Ctrl**+**.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte **přesunout typ *TypeName*.cs** z místní okno náhledu, kde *TypeName* je název typu, který jste vybrali.
    - **Myš**
      - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídku a vyberte **přesunout typ *TypeName*.cs** z místní okno náhledu, kde  *TypeName* je název typu, který jste vybrali.
 

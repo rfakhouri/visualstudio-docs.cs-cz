@@ -9,40 +9,42 @@ ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 395340bbaaafb1a990590ab50e3b0257c221e355
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 107145ddc607aeb981797c935a9d693a3fd9f9a6
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
-# <a name="train-a-tensorflow-model-locally"></a>Cvičení modelu TensorFlow místně 
+# <a name="train-a-tensorflow-model-locally"></a>Cvičení modelu TensorFlow místně
 
-V tento rychlý start, jsme se trénují podle nich model TensorFlow s [MNIST](http://yann.lecun.com/exdb/mnist/) datovou sadu místně v Visual Studio Tools for AI. Databázi MNIST má sadu 60 000 příklady školení a testovací sadu 10 000 příklady psané číslic. 
+V tento rychlý start, jsme se trénují podle nich model TensorFlow s [MNIST](http://yann.lecun.com/exdb/mnist/) datovou sadu místně v Visual Studio Tools for AI.
+Databázi MNIST má sadu 60 000 příklady školení a testovací sadu 10 000 příklady psané číslic.
 
 ## <a name="prerequisites"></a>Požadavky
 
 Než začnete, ujistěte se, že máte nainstalované tyto položky:
 
-### <a name="google-tensorflow"></a>Google TensorFlow 
+### <a name="google-tensorflow"></a>Google TensorFlow
 
-Spusťte následující příkaz v terminálu. 
+Spusťte následující příkaz v terminálu.
 ```cmd
 C:\>pip.exe install tensorflow
 ```
 
-### <a name="numpy-and-scipy"></a>NumPy a SciPy 
-Nainstalujte [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) a [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy). 
+### <a name="numpy-and-scipy"></a>NumPy a SciPy
+Nainstalujte [NumPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy) a [SciPy](https://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy).
 
 ### <a name="download-sample-code"></a>Stáhněte si ukázkový kód
-Stáhněte si to [úložiště GitHub](https://github.com/Microsoft/samples-for-ai) obsahující ukázky pro zahájení práce s hloubkovým learning napříč TensorFlow, CNTK, Theano a další. 
+Stáhněte si to [úložiště GitHub](https://github.com/Microsoft/samples-for-ai) obsahující ukázky pro zahájení práce s hloubkovým learning napříč TensorFlow, CNTK, Theano a další.
 
 ## <a name="open-solution-and-train-model"></a>Otevřete řešení a cvičení modelu
 
 - Spusťte sadu Visual Studio a vyberte **soubor > Otevřít > projekt nebo řešení**.
 
-- Vyberte **Tensorflow příklady** složky z ukázky úložiště staženy a otevřete **TensorflowExamples.sln** souboru. 
+- Vyberte **Tensorflow příklady** složky z ukázky úložiště staženy a otevřete **TensorflowExamples.sln** souboru.
 
 ![Otevřít projekt](media\tensorflow-local\open-project.png)
 
@@ -50,7 +52,7 @@ Stáhněte si to [úložiště GitHub](https://github.com/Microsoft/samples-for-
 
 - Najít projekt MNIST v **Průzkumníku řešení**, klikněte pravým tlačítkem a vyberte **nastavit jako spouštěný projekt**.
 
-- Klikněte na tlačítko **spustit**. 
+- Klikněte na tlačítko **spustit**.
 
 - Výstup je vytištěna v konzole.
 

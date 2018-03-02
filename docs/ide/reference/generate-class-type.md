@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77b6feef7556950d121e462cb1e8e81e8c4bfe7f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3016df12481da0a7ea81dee1ff895fc5dcbd059d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generovat třídy nebo typu v sadě Visual Studio
 
@@ -51,7 +51,7 @@ Generování kódu platí pro:
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl +.** spuštění **rychlé akce a refaktoring** nabídky.
+     - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídky.
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
      - Pozastavte ukazatel myši nad červenou vlnovkou a klikněte na ![Žárovek](media/bulb-cs.png) ikona, která se zobrazí.
@@ -93,5 +93,5 @@ Třídě nebo struktuře se vytvoří. Pro jazyk C# se také vytvoří konstrukt
 
 ## <a name="see-also"></a>Viz také
 
-[Generování kódu](../code-generation-in-visual-studio.md)  
-[Náhled změn](../../ide/preview-changes.md)
+- [Generování kódu](../code-generation-in-visual-studio.md)
+- [Náhled změn](../../ide/preview-changes.md)

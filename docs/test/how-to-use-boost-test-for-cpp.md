@@ -12,11 +12,11 @@ ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2276c65dd0ed0478003c1e4f2c99683eb88b0ac8
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b91c4dc3cc3bc3550f11bc60c95f1c3ed511cf62
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Jak používat Boost.Test jazyka C++ v sadě Visual Studio
 
@@ -35,18 +35,18 @@ Vyžaduje Boost.Test [nárůst](http://www.boost.org/)! Pokud nemáte nárůst n
 1. Nainstalujte Boost.Test dynamická nebo statická knihovny:
 
     - Spustit **vcpkg nainstalovat nárůst testovací** k instalaci dynamickou knihovnu Boost.Test.
-    
+
        -NEBO-
-       
+
     - Spustit **vcpkg nainstalovat nárůst-test: x 86-windows-static** k instalaci se statickou knihovnou Boost.Test.
 
 1. Spustit **vcpkg integrovat instalace** konfigurace Visual Studia s knihovnou a musí zahrnovat cest skóre hlavičky a binární soubory.
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>Přidání šablony položky (Visual Studio 2017 verze 15.6 a novější)
 
-1. Pokud chcete vytvořit soubor sada testů, klikněte pravým tlačítkem na uzel projektu v **Průzkumníku řešení** a zvolte **přidat novou položku**. 
- 
-![Šablony položky Boost.Test](media/boost_test_item_template.png "Boost.Test šablony položky")
+1. Pokud chcete vytvořit soubor sada testů, klikněte pravým tlačítkem na uzel projektu v **Průzkumníku řešení** a zvolte **přidat novou položku**.
+
+   ![Šablony položky Boost.Test](media/boost_test_item_template.png "Boost.Test šablony položky")
 
 1. Nový soubor obsahuje metodu testovacího vzorku. Sestavení projektu povolit **Průzkumníka testů** metodu zjišťování.
 
@@ -54,14 +54,14 @@ Varianta jedním záhlaví Boost.Test používá šablony položky, ale můžete
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Vytvoření projektu testování (Visual Studio 2017 verze 15,5)
 
-V aplikaci Visual Studio 2017 verze 15,5 jsou k dispozici pro Boost.Test žádné předem nakonfigurovaná testovacího projektu nebo šablony položek. Proto musíte vytvořit a nakonfigurovat projekt konzolové aplikace pro uložení testy. 
+V aplikaci Visual Studio 2017 verze 15,5 jsou k dispozici pro Boost.Test žádné předem nakonfigurovaná testovacího projektu nebo šablony položek. Proto musíte vytvořit a nakonfigurovat projekt konzolové aplikace pro uložení testy.
 
 1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel řešení a zvolte **přidat** > **nový projekt...** .
 
 1. V levém podokně vyberte **Visual C++** > **Windows Desktop**a potom zvolte **konzolové aplikace pro Windows** šablony.
 
 1. Pojmenujte projekt a zvolte **OK**.
-1. Odstranit `main` funkce v souboru. 
+1. Odstranit `main` funkce v souboru.
 
 1. Pokud používáte verzi Boost.Test jedním záhlaví nebo dynamické knihovny, přejděte na [direktivy začlenění přidat](#add_include_directives). Pokud používáte verzi statickou knihovnu, budete muset provést některé další konfigurace:
 
@@ -126,7 +126,7 @@ BOOST_AUTO_TEST_CASE(my\_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>Zápis a spouštění testů
-Nyní jste připraveni k zápisu a testy skóre. Najdete v článku [dokumentaci ke knihovně pro testování nárůst](http://www.boost.org/doc/libs/1_38_0/libs/test/doc/html/index.html) informace o testovací makra. V tématu [spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md) informace o zjišťování, spuštění a seskupení testů pomocí **Průzkumníka testů**.
+Nyní jste připraveni k zápisu a testy skóre. Najdete v článku [dokumentaci ke knihovně pro testování nárůst](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) informace o testovací makra. V tématu [spouštění testů jednotek pomocí Průzkumníka testů](run-unit-tests-with-test-explorer.md) informace o zjišťování, spuštění a seskupení testů pomocí **Průzkumníka testů**.
 
 ## <a name="see-also"></a>Viz také
 [Zápis testů částí pro C/C++](writing-unit-tests-for-c-cpp.md)

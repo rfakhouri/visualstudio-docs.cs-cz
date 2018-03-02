@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 053bd6077fa98142cd74eae58ce3df949291c326
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 pro vývojáře .NET
 
@@ -40,9 +40,9 @@ Rychle přechod do souboru, typu, člen nebo symbol deklarace s přejít kódu .
 
 [Dokumentaci: Refaktoring a rychlé akce](refactoring-code-generation-quick-actions.md)
 
-Visual Studio má diagnostiky kódu za provozu můžete po zjištění chyby a potenciálně problematické kód zvýšení kvality vašeho kódu. Poskytujeme rychlé akce (**Ctrl +.**) k řešení problémů zjištěných napříč dokument, projekt nebo řešení. Povolit *analýzy úplné řešení* najít problémy v celé řešení i v případě, že nemáte ty soubory, otevřete v editoru.
+Visual Studio má diagnostiky kódu za provozu můžete po zjištění chyby a potenciálně problematické kód zvýšení kvality vašeho kódu. Poskytujeme rychlé akce (**Ctrl**+**.**) k řešení problémů zjištěných napříč dokument, projekt nebo řešení. Povolit *analýzy úplné řešení* najít problémy v celé řešení i v případě, že nemáte ty soubory, otevřete v editoru.
 
-Kromě toho použít kód návrhy další osvědčených postupů, se zakázaným inzerováním nebo vygenerování kódu, refactor kódu a použít nové jazykové funkce s **Ctrl +.** Zástupce.
+Kromě toho použít kód návrhy další osvědčených postupů, se zakázaným inzerováním nebo vygenerování kódu, refactor kódu a použít nové jazykové funkce s **Ctrl**+**.** Zástupce.
 
 ![Použít pro rychlé opravy a refaktoring pomocí žárovek nabídky](../ide/media/VSIDE_Productivity_CodeAnalysis.png "VSIDE_Productivity_CodeAnalysis")
 
@@ -59,7 +59,7 @@ Spuštění a ladění testů jednotek na základě Mstestu, NUnit nebo XUnit te
 - [Dokumentaci: Možnosti přenosné vlastního editoru](create-portable-custom-editor-options.md)
 - [Dokumentace: EditorConfig kódu stylu nastavení pro rozhraní .NET](editorconfig-code-style-settings-reference.md)
 
-Visual Studio umožňuje konvence kódování, zjistí kódování porušení stylu a poskytuje rychlé opravy Chcete-li opravit problémy styl s **Ctrl +.** Zástupce. Konfigurace a vynutit vašeho týmu, pojmenování, formátování a stylu pravidla vytváření kódu napříč úložiště – povolení potlačení hodnot na úrovni projektu a souborů – pomocí *EditorConfig*.
+Visual Studio umožňuje konvence kódování, zjistí kódování porušení stylu a poskytuje rychlé opravy Chcete-li opravit problémy styl s **Ctrl**+**.** Zástupce. Konfigurace a vynutit vašeho týmu, pojmenování, formátování a stylu pravidla vytváření kódu napříč úložiště – povolení potlačení hodnot na úrovni projektu a souborů – pomocí *EditorConfig*.
 
 ![Konfigurace a vynutit konvence psaní kódu s EditorConfig](../ide/media/VSIDE_Productivity_CodeStyle.png "VSIDE_Productivity_CodeStyle")
 
@@ -105,7 +105,7 @@ Níže jsou uvedeny oblíbených zkratky v sadě Visual Studio. Upozorňujeme, �
 | **F12** (také **Ctrl + kliknutí**) | Přechod na definici | Přejděte do kterých byla definována symbol |
 | **Ctrl+F12** | Přejít na implementaci | Přejděte do jeho různé implementace ze základní typ nebo člen |
 | **Shift+F12** | Najít všechny odkazy | Zobrazit všechny symbol nebo literálu odkazy |
-| **Ctrl+.** (také **Alt + zadejte** v profilu C#) | Rychlé akce a refaktoringy | Zobrazit, jaké kód opravy, akce generování kódu, refaktoring nebo jiných rychlé akce jsou k dispozici na výběr kurzoru pozici nebo kód |
+| **Ctrl**+**.** (také **Alt + zadejte** v profilu C#) | Rychlé akce a refaktoringy | Zobrazit, jaké kód opravy, akce generování kódu, refaktoring nebo jiných rychlé akce jsou k dispozici na výběr kurzoru pozici nebo kód |
 | **CTRL**+**E**,**V** | Duplicitní řádku | Duplikuje řádek kódu, která kurzor se nachází v (k dispozici v **Visual Studio 2017 verze 15,6 operací preview 2** a novější) |
 | **Ctrl+Q** | Snadné spuštění | Hledání všechna nastavení sady Visual Studio |
 | **F5** | Spuštění ladění | Spuštění ladění aplikace |

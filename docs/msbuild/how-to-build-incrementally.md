@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 622daf457935514cb1f5a512712be6f70e4e648e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: eaebea1fea86339badd7882c7436087ae555b7b5
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="how-to-build-incrementally"></a>Postupy: Přírůstkové sestavování
 Když vytvoříte nový projekt, je důležité, který dříve vytvořené součásti, které jsou stále aktuální nejsou znovu sestavit. Pokud jsou všechny cíle pokaždé, když, bude každé sestavení trvat dlouhou dobu pro dokončení. Chcete-li povolit přírůstkové sestavení (sestavení, ve kterém jsou zastaralé, tyto cíle, které nebyly byla vytvořená před nebo které cílí jenom se znovu sestavit), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) můžete porovnat časová razítka vstupní soubory s časová razítka výstupních souborů a zjistěte, jestli se mají přeskočit, sestavení nebo částečně znovu sestavit cíl. Musí však být mapování 1: 1 mezi vstupy a výstupy. Transformace můžete povolit cíle k identifikaci této přímé mapování. Další informace o transformací najdete v tématu [transformuje](../msbuild/msbuild-transforms.md).  
@@ -72,7 +72,7 @@ Když vytvoříte nový projekt, je důležité, který dříve vytvořené sou�
  Tento projektový soubor obsahuje oba `Convert` a `Build` cíle. `GenerateContentFiles` a `BuildHelp` úlohy jsou umístěny v `Convert` a `Build` cílem v uvedeném pořadí tak, aby každý cíl se dají vytvářet postupně. Pomocí `Output` element, výstupy `GenerateContentFiles` úloh jsou umístěny v `ContentFile` seznamu položek, které můžete použít jako vstupy pro `BuildHelp` úloh. Pomocí `Output` element tímto způsobem automaticky poskytuje výstup z úloh jako vstupy pro jinou úlohu tak, aby nemáte jednotlivé položky seznamu nebo položky seznamů ručně v každé úloze.  
   
 > [!NOTE]
->  I když `GenerateContentFiles` cíl můžete přírůstkové sestavování, všechny výstupy z tohoto cíle se vždy vyžadují jako vstupy pro `BuildHelp` cíl. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]všechny výstupy z jeden cíl automaticky poskytuje jako vstupy pro jiný cíl při použití `Output` elementu.  
+>  I když `GenerateContentFiles` cíl můžete přírůstkové sestavování, všechny výstupy z tohoto cíle se vždy vyžadují jako vstupy pro `BuildHelp` cíl. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] všechny výstupy z jeden cíl automaticky poskytuje jako vstupy pro jiný cíl při použití `Output` elementu.  
   
 ```xml  
 <Project DefaultTargets="Build"  
@@ -80,7 +80,7 @@ Když vytvoříte nový projekt, je důležité, který dříve vytvořené sou�
   
     <ItemGroup>  
         <TXTFile Include="*.txt"/>  
-        <XMLFile Include="\metadata\*.xml"/>  
+        <XMLFiles Include="\metadata\*.xml"/>  
     </ItemGroup>  
   
     <Target Name = "Convert"  
@@ -100,7 +100,7 @@ Když vytvoříte nový projekt, je důležité, který dříve vytvořené sou�
   
         <BuildHelp  
             ContentFiles = "@(ContentFiles)"  
-            MetadataFiles = "@(XMLFile)"  
+            MetadataFiles = "@(XMLFiles)"  
             OutputFileName = "$(MSBuildProjectName).help"/>  
     </Target>  
 </Project>  

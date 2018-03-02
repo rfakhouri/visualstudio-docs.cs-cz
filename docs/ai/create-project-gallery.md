@@ -9,33 +9,34 @@ ms.date: 11/13/2017
 ms.topic: how to article
 ms.devlang: multiple
 ms.service: multiple
+ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b45aa6b2ddfb37b99f7f1d92d4d2b205e905488
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1221459107a807c267583e46b6449dc63be094c1
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 ## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Vytvoření projektu AI z Galerie Azure Machine Learning v sadě Visual Studio
 
-Azure Machine Learning je integrován s Visual Studio Tools pro AI. Můžete ho machine learning úlohy do vzdáleného výpočetní cíle jako virtuální počítače Azure, clustery Spark a další. Další informace o [Azure Machine Learning experimentování](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration) 
+Azure Machine Learning je integrován s Visual Studio Tools pro AI. Můžete ho machine learning úlohy do vzdáleného výpočetní cíle jako virtuální počítače Azure, clustery Spark a další. Další informace o [Azure Machine Learning experimentování](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration)
 
 Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), je snadné vytvořit nový projekt Python použití předem vytvořené recepty v galerii Azure Machine Learning ukázka.
 
-> [!NOTE] 
-> Azure Machine Learning Workbench musí být nainstalován. K její instalaci prosím najdete [rychlý start Azure Machine Learning instalace](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation) 
+> [!NOTE]
+> Azure Machine Learning Workbench musí být nainstalován. K její instalaci prosím najdete [rychlý start Azure Machine Learning instalace](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation)
 
-1. Spusťte sadu Visual Studio. Otevřete **Průzkumníka serveru** otevřením **AI nástroje** nabídky a výběr **vyberte clusteru**  
+1. Spusťte sadu Visual Studio. Otevřete **Průzkumníka serveru** otevřením **AI nástroje** nabídky a výběr **vyberte clusteru**
 
     ![Výběru clusteru](media\create-project-gallery\select-cluster.png)
 
 1. Přihlaste se k předplatnému Azure Machine Learning kliknutím pravým tlačítkem myši **Azure Machine Learning** vyberte uzel v Průzkumníku serveru **přihlášení** a postupujte podle pokynů.
 
     ![přihlášení](media\create-project-gallery\azureml-login.png)
- 
-2. Vyberte **AI nástroje > Azure Machine Learning ukázka Galerie**. 
-    
+
+2. Vyberte **AI nástroje > Azure Machine Learning ukázka Galerie**.
+
     ![Ukázka Galerie](media\create-project-gallery\gallery.png)
 
 1. Tento rychlý start, vyberte "**MNIST pomocí TensorFlow**" ukázkové a klikněte na tlačítko **nainstalovat**. Přináší tyto výhody:
@@ -47,14 +48,14 @@ Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), je sn
  - **Přidat do řešení**: Určuje, zda chcete přidat do vašeho aktuálního řešení Visual Studio nebo vytvoření a otevřete nový řešení
  - **Cesta k projektu**: umístění pro uložení kód
  - **Název projektu**: typ **TensorFlowMNIST**
-   
+
 ![Výsledný projektu při použití šablony aplikace Python](media/create-project-gallery/new-AzureSampleProject.png)
 
 1. Visual Studio vytvoří soubor projektu ( `.pyproj` soubor na disku) společně s další soubory definované v ukázce. Projekt se šablonou "MNIST" obsahuje několik souborů.
 
     ![mnist](media\create-project-gallery\azml-mnist.png)
 
-1. Odeslání úlohy do Azure Machine Learning. 
+1. Odeslání úlohy do Azure Machine Learning.
 
     ![mnist](media\create-project-gallery\submit-azml.png)
 

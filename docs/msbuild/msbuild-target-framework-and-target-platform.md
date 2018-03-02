@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d001e708553e2a4b0ed8ad9ae78eddf5e0b9a0a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e175a534cb35333b1f57c188c62a781f2fd68627
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Cílová architektura a cílová platforma nástroje MSBuild
 Projekt se dají vytvářet ke spuštění na *cílové rozhraní*, což je konkrétní verzi rozhraní .NET Framework a *Cílová platforma*, což je architektura určitého softwaru.  Například můžete určit cílovou aplikaci spustit v rozhraní .NET Framework 2.0 na 32bitové platformě, který je kompatibilní s třídu procesoru 802 x 86 ("x86"). Kombinace Cílová architektura a cílová platforma se označuje jako *cílový kontext*.  
@@ -34,19 +34,21 @@ Projekt se dají vytvářet ke spuštění na *cílové rozhraní*, což je konk
   
 -   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (součástí [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4 (zahrnutá v sadě Visual Studio 2010)  
-  
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5 (součástí [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)])  
-  
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.1 (součástí [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)])  
-  
 -   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2  
   
 -   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (součástí [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])  
+
+-   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1  
+
+-   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2  
+
+-   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7  
+
+-   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1  
   
  Verze rozhraní .NET Framework se liší od sebe navzájem v seznamu sestavení, že každý zpřístupní odkazovat. Nelze například vytvářet aplikace Windows Presentation Foundation (WPF), pokud je cílem vašeho projektu je .NET Framework verze 3.0 nebo vyšší.  
   
- Cílovém Frameworku, který je uveden v `TargetFrameworkVersion` vlastnost v souboru projektu. Pomocí stránky vlastností projektu v sadě Visual Studio integrované vývojové prostředí (IDE) můžete změnit cílový framework projektu. Další informace najdete v tématu [postupy: cílení na verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostupné hodnoty pro `TargetFrameworkVersion` jsou `v2.0`, `v3.0`, `v3.5`, `v4.0`, `v4.5`, `v4.5.1`, `v4.5.2`, a `v4.6`.  
+ Cílovém Frameworku, který je uveden v `TargetFrameworkVersion` vlastnost v souboru projektu. Pomocí stránky vlastností projektu v sadě Visual Studio integrované vývojové prostředí (IDE) můžete změnit cílový framework projektu. Další informace najdete v tématu [postupy: cílení na verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Dostupné hodnoty pro `TargetFrameworkVersion` jsou `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v.4.6.1`, `v4.6.2`, `4.7`, a `4.7.1`.  
   
 ```xml  
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>  
@@ -64,9 +66,9 @@ Projekt se dají vytvářet ke spuštění na *cílové rozhraní*, což je konk
 ## <a name="target-platform"></a>Cílová platforma  
  A *platformy* je kombinace hardwaru a softwaru, který definuje konkrétní běhového prostředí. Například  
   
--   `x86`označí 32bitový operační systém Windows, který běží na procesor Intel 80 x 86 nebo jeho ekvivalent.  
+-   `x86` označí 32bitový operační systém Windows, který běží na procesor Intel 80 x 86 nebo jeho ekvivalent.  
   
--   `Xbox`označí platformou Microsoft Xbox 360.  
+-   `Xbox` označí platformou Microsoft Xbox 360.  
   
  A *Cílová platforma* je konkrétní platformy, na které ke spuštění na sestavení projektu. Cílové platformy je uveden v `Platform` sestavení vlastnost v souboru projektu. Cílové platformy můžete změnit pomocí stránky vlastností projektu nebo **nástroje Configuration Manager** v prostředí IDE.  
   

@@ -13,11 +13,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1048458eb41a5c1f9842c3cfea1b3c8a553fbf20
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 90ea46079e318c09ab62e27f9a75ccdd2452887d
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Odebrat refaktoring nedostupný kódu
 
@@ -40,7 +40,7 @@ Tato refaktoring platí pro:
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl +.** spuštění **rychlé akce a refaktoring** nabídku a vyberte **odebrat nedostupný kód** z okna náhledu – místní nabídka.
+     - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídku a vyberte **odebrat nedostupný kód** z okna náhledu – místní nabídka.
    - **Myš**
      - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídku a vyberte **odebrat nedostupný kód** z okna náhledu – místní nabídka.
 
@@ -67,5 +67,5 @@ private void Method()
 
 ## <a name="see-also"></a>Viz také
 
-[Refactoring](../refactoring-in-visual-studio.md)  
-[Náhled změn](../../ide/preview-changes.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [Náhled změn](../../ide/preview-changes.md)

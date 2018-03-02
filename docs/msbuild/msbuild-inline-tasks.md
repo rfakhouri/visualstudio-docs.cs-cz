@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d0e6ac51448f014e9d37e5e1521c01f3dfc903b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 021107e4048a990c7c207d8d868db581ea0bfd4e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="msbuild-inline-tasks"></a>Vložené úlohy nástroje MSBuild
 Úlohy nástroje MSBuild obvykle vytváří kompilování třídu, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  
@@ -66,7 +66,7 @@ ms.lasthandoff: 02/09/2018
   
 -   `Using` Element uvádí obory názvů, které chcete získat přístup. To se podobá `Using` příkaz v jazyce Visual C#. `Namespace` Atribut určuje obor názvů, které chcete zahrnout.  
   
- `Reference`a `Using` prvky jsou jazykově nezávislého. Vložené úlohy může být napsán v některém z podporovaných jazyků .NET CodeDom, například jazyka Visual Basic nebo Visual C#.  
+ `Reference` a `Using` prvky jsou jazykově nezávislého. Vložené úlohy může být napsán v některém z podporovaných jazyků .NET CodeDom, například jazyka Visual Basic nebo Visual C#.  
   
 > [!NOTE]
 >  Elementů obsažených `Task` element jsou specifické pro úlohy vytváření, v takovém případě objektu pro vytváření úloh kódu.  
@@ -103,7 +103,7 @@ ms.lasthandoff: 02/09/2018
     AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll" >  
     <ParameterGroup />  
     <Task>  
-      <Reference Include="System.Xml.dll"/>  
+      <Reference Include="System.Xml"/>
       <Using Namespace="System"/>  
       <Using Namespace="System.IO"/>  
       <Code Type="Fragment" Language="cs">  
@@ -139,11 +139,11 @@ Log.LogError("Hello, world!");
   
  Parametry může mít jeden nebo více těchto atributů:  
   
--   `Required`je volitelný atribut, který je `false` ve výchozím nastavení. Pokud `true`, pak parametr je povinná a musí být zadána hodnota před voláním úlohu.  
+-   `Required` je volitelný atribut, který je `false` ve výchozím nastavení. Pokud `true`, pak parametr je povinná a musí být zadána hodnota před voláním úlohu.  
   
--   `ParameterType`je volitelný atribut, který je `System.String` ve výchozím nastavení. Může být nastaven na žádný plně kvalifikovaný typ, který je určitá položka nebo hodnotu, která může být převeden do a z řetězce pomocí System.Convert.ChangeType. (Jinými slovy, žádný typ, který se dá předat do a z externí úkolů.)  
+-   `ParameterType` je volitelný atribut, který je `System.String` ve výchozím nastavení. Může být nastaven na žádný plně kvalifikovaný typ, který je určitá položka nebo hodnotu, která může být převeden do a z řetězce pomocí System.Convert.ChangeType. (Jinými slovy, žádný typ, který se dá předat do a z externí úkolů.)  
   
--   `Output`je volitelný atribut, který je `false` ve výchozím nastavení. Pokud `true`, pak parametr musí být zadána hodnota před návratem od Metoda Execute.  
+-   `Output` je volitelný atribut, který je `false` ve výchozím nastavení. Pokud `true`, pak parametr musí být zadána hodnota před návratem od Metoda Execute.  
   
  Například  
   
@@ -157,11 +157,11 @@ Log.LogError("Hello, world!");
   
  definuje tyto tři parametry:  
   
--   `Expression`je povinný vstupní parametr typu System.String.  
+-   `Expression` je povinný vstupní parametr typu System.String.  
   
--   `Files`je požadovaná položka vstupní parametr seznamu.  
+-   `Files` je požadovaná položka vstupní parametr seznamu.  
   
--   `Tally`je výstupní parametr typu System.Int32.  
+-   `Tally` je výstupní parametr typu System.Int32.  
   
  Pokud `Code` má element `Type` atribut `Fragment` nebo `Method`, pak vlastnosti se vytvářejí automaticky pro všechny parametry. Vlastnosti, jinak hodnota musí být explicitně deklarován ve zdrojovém kódu úloh a musí přesně shodovat jejich definicemi parametrů.  
   

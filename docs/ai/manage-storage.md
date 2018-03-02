@@ -1,4 +1,10 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: b941d0ba55c540de4bda1cb0f9c4ed18ceab524f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="browse-storage-to-upload-data-or-download-models-and-logs"></a>Procházet úložiště k ukládání dat nebo stahování modely a protokoly
 
@@ -14,6 +20,6 @@ Můžete procházet všechny úložiště na vzdáleném počítači nebo sdíle
 ## <a name="to-access-job-specific-data-on-the-remote-machine-or-file-share"></a>Pro přístup k datům konkrétní úlohy na vzdáleném počítači nebo soubor sdílet
 1. Otevřete [historie úlohy](job-details.md)
 2. Vyberte úlohu
-3. Klikněte na tlačítko **pracovní složky** nebo klikněte na tlačítko StdOut / Stderr pro rychlý přístup k důležité tyto soubory protokolu 
+3. Klikněte na tlačítko **pracovní složky** nebo klikněte na tlačítko StdOut / Stderr pro rychlý přístup k důležité tyto soubory protokolu
 
     ![úložiště](media\manage-storage\job-workingfolder.png)

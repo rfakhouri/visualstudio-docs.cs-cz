@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c15207a564a63f08d58c4f0164aae703d43daa9a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 339882fadba46dc0a42c6796d135e761a3554e9c
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="calltarget-task"></a>CallTarget – úloha
 Vyvolá zadanou cílů v rámci souboru projektu.  
@@ -36,7 +36,7 @@ Vyvolá zadanou cílů v rámci souboru projektu.
   
 |Parametr|Popis|  
 |---------------|-----------------|  
-|`RunEachTargetSeparately`|Volitelné `Boolean` výstupní parametr.<br /><br /> Pokud `true`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] modul je vyvolána jedenkrát za cíl. Pokud `false`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] modul je jednou volána k sestavení všechny cíle. Výchozí hodnota je `false`.|  
+|`RunEachTargetSeparately`|Volitelné `Boolean` vstupní parametr.<br /><br /> Pokud `true`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] modul je vyvolána jedenkrát za cíl. Pokud `false`, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] modul je jednou volána k sestavení všechny cíle. Výchozí hodnota je `false`.|  
 |`TargetOutputs`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje výstupy všech předdefinovaných cílů.|  
 |`Targets`|Volitelné `String[]` parametr.<br /><br /> Určuje cílový nebo cíle k sestavení.|  
 |`UseResultsCache`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, výsledky uložené v mezipaměti je vrácena, pokud je k dispozici.<br /><br /> **Poznámka:** se spustí při MSBuild – úloha, její výstup se uloží do mezipaměti v oboru (ProjectFileName, GlobalProperties) [TargetNames] jako seznam položek sestavení.|  

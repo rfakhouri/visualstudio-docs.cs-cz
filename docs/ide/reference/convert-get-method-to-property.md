@@ -16,11 +16,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d0a532e2e3e5bb8afa4a3c3dc9720134a1b7e8b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ab91e95d699b4a7fcc27ca1f6bcdf43b51af9c26
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Převést metodu Get pro vlastnost / převést vlastnost na refaktoring Metoda Get
 
@@ -41,7 +41,7 @@ Tyto refaktoring platí pro:
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl +.** k aktivační události **rychlé akce a refaktoring** nabídce a vyberte **metoda nahraďte vlastnost** z okna náhledu – místní nabídka.
+     - Stiskněte klávesu **Ctrl**+**.** k aktivační události **rychlé akce a refaktoring** nabídce a vyberte **metoda nahraďte vlastnost** z okna náhledu – místní nabídka.
    - **Myš**
      - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídce a vyberte **metoda nahraďte vlastnost** z okna náhledu – místní nabídka.
 
@@ -73,7 +73,7 @@ public int MyValue
 
 **Co:** umožňuje převod vlastnosti na metodu Get
 
-**Kdy:** máte vlastnost, která zahrnuje více než okamžitě nastavení a získání hodnotu 
+**Kdy:** máte vlastnost, která zahrnuje více než okamžitě nastavení a získání hodnotu
 
 ### <a name="how-to"></a>Postupy
 
@@ -82,7 +82,7 @@ public int MyValue
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl +.** spuštění **rychlé akce a refaktoring** nabídku a vyberte **vlastnost nahraďte metody** z okna náhledu – místní nabídka.
+     - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídku a vyberte **vlastnost nahraďte metody** z okna náhledu – místní nabídka.
    - **Myš**
      - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídku a vyberte **vlastnost nahraďte metody** z okna náhledu – místní nabídka.
 
@@ -90,5 +90,5 @@ public int MyValue
 
 ## <a name="see-also"></a>Viz také
 
-[Refactoring](../refactoring-in-visual-studio.md)  
-[Náhled změn](../../ide/preview-changes.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [Náhled změn](../../ide/preview-changes.md)

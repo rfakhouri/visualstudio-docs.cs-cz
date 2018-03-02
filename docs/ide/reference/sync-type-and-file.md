@@ -14,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 45cd94161f492ea0326ff08fe40727149a733556
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 29260d2f33c9debfe698cb6af30f711e9617cdd1
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Zadejte název souboru nebo název souboru, do typu refaktoring synchronizace
 
@@ -49,8 +49,8 @@ Tato refaktoring platí pro:
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl +.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte **přejmenování souboru *TypeName*.cs** z místní okno náhledu, kde *TypeName* je název typu, který jste vybrali.
-     - Stiskněte klávesu **Ctrl +.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte **Přejmenovat typ _Filename_**  z místní okno náhledu, kde *Filename* je název aktuálního souboru.
+     - Stiskněte klávesu **Ctrl**+**.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte **přejmenování souboru *TypeName*.cs** z místní okno náhledu, kde *TypeName* je název typu, který jste vybrali.
+     - Stiskněte klávesu **Ctrl**+**.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte **Přejmenovat typ _Filename_**  z místní okno náhledu, kde *Filename* je název aktuálního souboru.
    - **Myš**
      - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídce a vyberte **přejmenování souboru *TypeName*.cs** z místní okno náhledu, kde *TypeName* je název typu, který jste vybrali.
      - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídce a vyberte **Přejmenovat typ _Filename_**  z místní okno náhledu, kde  *Název souboru* je název aktuálního souboru.

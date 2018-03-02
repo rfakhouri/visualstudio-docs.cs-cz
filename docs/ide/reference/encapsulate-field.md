@@ -16,11 +16,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78d2c33002e59eab1b6e8605092a74d9995453a8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 006f161df8128e1d505947a3e2907a01c4d3915e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Zapouzdření pole refaktoring
 
@@ -52,7 +52,7 @@ Tato refaktoring platí pro:
 
    - **Klávesnice**
      - Stiskněte klávesu **Ctrl + R**, pak **Ctrl + E**.  (Všimněte si, že klávesové zkratky se může lišit na základě na profilu, které jste vybrali.)
-     - Stiskněte klávesu **Ctrl +.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte buď **Encapsulate pole** položku z okna náhledu – místní nabídka.
+     - Stiskněte klávesu **Ctrl**+**.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte buď **Encapsulate pole** položku z okna náhledu – místní nabídka.
    - **Myš**
      - Vyberte **Upravit > Refaktorovat > pro zapouzdření polí**.
      - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídku a vyberte buď **Encapsulate pole** položku z okna náhledu – místní nabídka.
@@ -77,5 +77,5 @@ Tato refaktoring platí pro:
 
 ## <a name="see-also"></a>Viz také
 
-[Refactoring](../refactoring-in-visual-studio.md)  
-[Náhled změn](../../ide/preview-changes.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [Náhled změn](../../ide/preview-changes.md)

@@ -1,13 +1,19 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>Klonování úložiště Python kódu v sadě Visual Studio
 
 Jakmile jste [nainstalované Visual Studio Tools pro AI](installation.md), můžete snadno klonovat úložiště v kódu jazyka Python a vytvořte projekt z něj.
 
 1. Pro připojení k úložišť GitHub, spusťte instalační program sady Visual Studio, vyberte **upravit**a vyberte **jednotlivých součástí** kartě. Přejděte dolů k položce **Code nástroje** vyberte **Githubu rozšíření pro Visual Studio**a vyberte **upravit**.
-    
+
     ![Když Githubu rozšíření vyberete v instalačním programu sady Visual Studio](media\create-project-repo\installation-github-extension.png)
-    
+
 2. Spusťte sadu Visual Studio.
 
 3. Vyberte **zobrazení > Team Explorer...**  otevřete **Team Explorer** okno, ve kterém můžete připojit k webu GitHub nebo Visual Studio Team Services, nebo klonovat úložiště.

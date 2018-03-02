@@ -13,11 +13,11 @@ dev_langs:
 - csharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: d19a348ff21abce181f971c798d61cde393f4689
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: a76e6024a2b61bcae08fb8db169483bcee6e5d19
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Přesuňte deklaraci téměř refaktoring odkaz
 
@@ -38,7 +38,7 @@ Tato refaktoring platí pro:
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl +.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte **přesunout deklarace téměř odkaz** z okna náhledu – místní nabídka.
+     - Stiskněte klávesu **Ctrl**+**.** k aktivační události **rychlé akce a refaktoring** nabídku a vyberte **přesunout deklarace téměř odkaz** z okna náhledu – místní nabídka.
    - **Myš**
      - Klikněte pravým tlačítkem na kód, vyberte **rychlé akce a refaktoring** nabídku a vyberte **přesunout deklarace téměř odkaz** z okna náhledu – místní nabídka.
 
@@ -67,5 +67,5 @@ if (condition)
 
 ## <a name="see-also"></a>Viz také
 
-[Refactoring](../refactoring-in-visual-studio.md)  
-[Náhled změn](../../ide/preview-changes.md)
+- [Refactoring](../refactoring-in-visual-studio.md)
+- [Náhled změn](../../ide/preview-changes.md)

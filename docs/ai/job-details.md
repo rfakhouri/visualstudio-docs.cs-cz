@@ -1,11 +1,17 @@
 ---
+ms.technology: vs-ai-tools
+ms.openlocfilehash: f11a66fd06a2b0b3b23d35c3153c5dd26fab282e
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="view-recent-job-performance-and-details"></a>Zobrazit nejnovější úlohy výkon a podrobnosti
 Po odeslání úlohy se zobrazí se seznam úloh, které chcete zobrazit jejich stav, doba trvání a další.
 
-1. V **Průzkumníka serveru** rozbalte konkrétní výpočetní kontextu 
+1. V **Průzkumníka serveru** rozbalte konkrétní výpočetní kontextu
 1. Klikněte dvakrát na **úlohy**
-1. Zobrazí se seznam úlohy, odeslané do tohoto kontextu výpočty. 
+1. Zobrazí se seznam úlohy, odeslané do tohoto kontextu výpočty.
 1. Vyberte konkrétní **úlohy** v seznamu zobrazíte podrobnosti
 
 ![Sledování úloh](media\job-details\monitor-jobs.png)

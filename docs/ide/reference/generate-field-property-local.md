@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8de048928286017d4e6f79bda6aff804b49d3150
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4e5da77f3053aabc2e8e4813c8ef5e7fb3407b5f
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Generovat pole, vlastnost nebo místní proměnné v sadě Visual Studio
 
@@ -47,7 +47,7 @@ Generování kódu platí pro:
 1. Dále proveďte jednu z následujících akcí:
 
    - **Klávesnice**
-     - Stiskněte klávesu **Ctrl +.** spuštění **rychlé akce a refaktoring** nabídky.
+     - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídky.
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
      - Pozastavte ukazatel myši nad červenou vlnovkou a klikněte na ![Žárovek](media/bulb-cs.png) ikona, která se zobrazí.
@@ -72,5 +72,5 @@ Generování kódu platí pro:
 
 ## <a name="see-also"></a>Viz také
 
-[Generování kódu](../code-generation-in-visual-studio.md)  
-[Náhled změn](../../ide/preview-changes.md)
+- [Generování kódu](../code-generation-in-visual-studio.md)
+- [Náhled změn](../../ide/preview-changes.md)

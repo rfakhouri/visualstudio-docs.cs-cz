@@ -4,26 +4,26 @@ ms.custom:
 ms.date: 10/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: tgt-pltfrm-cross-plat
+ms.technology: vs-unity-tools
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
-caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.workload: unity
-ms.openlocfilehash: 7ede7734ec2a8c261cce3f31e06e77f932edd326
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- unity
+ms.openlocfilehash: e3a763c74022f0960dfa11e30038dae1c97295de
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Odstraňování potíží a známé problémy (Visual Studio Tools for Unity)
-V této části najdete řešení pro běžné problémy s nástroji Visual Studio Tools for Unity, popisem známých problémů a zjistěte, jak můžete pomocí Visual Studio Tools for Unity zlepšit zasílání zpráv o chybách.  
+V této části najdete řešení pro běžné problémy s nástroji Visual Studio Tools for Unity, popisem známých problémů a zjistěte, jak můžete pomocí Visual Studio Tools for Unity zlepšit zasílání zpráv o chybách.
 
-## <a name="troubleshooting"></a>Poradce při potížích  
-Chcete-li vyřešit některé běžné problémy s nástroji Visual Studio Tools for Unity, najdete v následujících částech.  
+## <a name="troubleshooting"></a>Poradce při potížích
+Chcete-li vyřešit některé běžné problémy s nástroji Visual Studio Tools for Unity, najdete v následujících částech.
 
 ### <a name="visual-studio-crashes"></a>Visual Studio dojde k chybě
 Může to být kvůli mezipaměť Visual Studio MEF je poškozený.
@@ -74,90 +74,90 @@ Wi-Fi je ale super pomalé rozmanitější ve srovnání s USB z důvodu čekac�
 
 Vyzkoušejte následující pomocí USB zobrazíte otevřené porty na připojené zařízení (s player nahoru a spuštěna, aby mohli zobrazit ladění port, vždy v 56xxx formuláře):
 
-```shell  
+```shell
 adb shell netstat
-```  
+```
 
 Budou předávány port, který se v místním počítači:
 
-```shell  
+```shell
 adb forward tcp:56xxx tcp:56xxx
-```  
+```
 
 Připojte VSTU pomocí 127.0.0.1:56xxx přesměrovaná portu.
 
-### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Migrace z UnityVS na Visual Studio Tools for Unity  
- Pokud se migrace z UnityVS na Visual Studio Tools for Unity, budete muset vygenerovat nové řešení sady Visual Studio pro projekty Unity.  
+### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Migrace z UnityVS na Visual Studio Tools for Unity
+ Pokud se migrace z UnityVS na Visual Studio Tools for Unity, budete muset vygenerovat nové řešení sady Visual Studio pro projekty Unity.
 
-##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Při migraci z UnityVS 1.8 projektu Unity do Visual Studio Tools pro Unity 1.9  
+##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Při migraci z UnityVS 1.8 projektu Unity do Visual Studio Tools pro Unity 1.9
 
-1.  Odstraňte staré řešení a projektu soubory z projektu Unity. V kořenovém adresáři projektu Unity, vyhledejte sadě Visual Studio .sln a. * proj soubory a odstraňte všechny.  
+1.  Odstraňte staré řešení a projektu soubory z projektu Unity. V kořenovém adresáři projektu Unity, vyhledejte sadě Visual Studio .sln a. * proj soubory a odstraňte všechny.
 
-2.  Importujte Visual Studio Tools for Unity balíčku do projektu Unity. Informace o tom, jak importovat balíček VSTU najdete v tématu Konfigurace Visual Studio Tools for Unity na [Začínáme](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) stránky.  
+2.  Importujte Visual Studio Tools for Unity balíčku do projektu Unity. Informace o tom, jak importovat balíček VSTU najdete v tématu Konfigurace Visual Studio Tools for Unity na [Začínáme](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) stránky.
 
-3.  Generovat nové soubory řešení a projektu. Pokud chcete je generovat teď v Unity editoru v hlavní nabídce zvolte **nástroje sady Visual Studio**, **generování souborů projektu**. Jinak můžete tento krok přeskočit, pokud chcete zjistit. Visual Studio Tools for Unity vygeneruje nové soubory automaticky když zvolíte **nástroje sady Visual Studio**, **otevřete v sadě Visual Studio**.  
+3.  Generovat nové soubory řešení a projektu. Pokud chcete je generovat teď v Unity editoru v hlavní nabídce zvolte **nástroje sady Visual Studio**, **generování souborů projektu**. Jinak můžete tento krok přeskočit, pokud chcete zjistit. Visual Studio Tools for Unity vygeneruje nové soubory automaticky když zvolíte **nástroje sady Visual Studio**, **otevřete v sadě Visual Studio**.
 
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>V systému Windows Visual Studio požádá ke stažení cílové rozhraní Unity  
- Visual Studio Tools for Unity vyžaduje rozhraní .net framework 3.5, která není nainstalovaná ve výchozím nastavení v systému Windows 8 nebo 10. Chcete-li tento problém vyřešit, postupujte podle pokynů ke stažení a instalaci rozhraní .net framework 3.5.  
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>V systému Windows Visual Studio požádá ke stažení cílové rozhraní Unity
+ Visual Studio Tools for Unity vyžaduje rozhraní .net framework 3.5, která není nainstalovaná ve výchozím nastavení v systému Windows 8 nebo 10. Chcete-li tento problém vyřešit, postupujte podle pokynů ke stažení a instalaci rozhraní .net framework 3.5.
 
-## <a name="known-issues"></a>Známé problémy  
- Existují známé problémy ve Visual Studio Tools for Unity, které jsou výsledkem jak ladicí program komunikuje s Unity na starší verzi kompilátor jazyka C#. Pracujeme na řešení těchto problémů, ale může mezitím došlo k následujícím problémům:  
+## <a name="known-issues"></a>Známé problémy
+ Existují známé problémy ve Visual Studio Tools for Unity, které jsou výsledkem jak ladicí program komunikuje s Unity na starší verzi kompilátor jazyka C#. Pracujeme na řešení těchto problémů, ale může mezitím došlo k následujícím problémům:
 
--   Při ladění, Unity někdy dojde k chybě.  
+-   Při ladění, Unity někdy dojde k chybě.
 
--   Při ladění, Unity někdy zablokuje.  
+-   Při ladění, Unity někdy zablokuje.
 
--   Krokování do a z metody někdy se chová nesprávně, zejména v iterátory nebo v příkazech switch.  
+-   Krokování do a z metody někdy se chová nesprávně, zejména v iterátory nebo v příkazech switch.
 
-## <a name="reporting-errors"></a>Zasílání zpráv o chybách  
- Pomozte nám vylepšit kvalitu Visual Studio Tools for Unity odesílání zpráv o chybách, když dojde k chybám, zablokuje nebo jiné chyby. To pomáhá nám prozkoumat a opravte problémy v aplikaci Visual Studio Tools for Unity. Děkuju!  
+## <a name="reporting-errors"></a>Zasílání zpráv o chybách
+ Pomozte nám vylepšit kvalitu Visual Studio Tools for Unity odesílání zpráv o chybách, když dojde k chybám, zablokuje nebo jiné chyby. To pomáhá nám prozkoumat a opravte problémy v aplikaci Visual Studio Tools for Unity. Děkuju!
 
-### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Jak vytvářet sestavu chybu, když se zablokuje v sadě Visual Studio  
- Visual Studio v některých případech se zablokuje při ladění s nástroji Visual Studio Tools for Unity sestavy, ale potřebujeme další data tento problém pochopit. Pomůžete nám prozkoumat pomocí následujících kroků.  
+### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>Jak vytvářet sestavu chybu, když se zablokuje v sadě Visual Studio
+ Visual Studio v některých případech se zablokuje při ladění s nástroji Visual Studio Tools for Unity sestavy, ale potřebujeme další data tento problém pochopit. Pomůžete nám prozkoumat pomocí následujících kroků.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Pro sestavu, která se Visual Studio zablokuje při ladění s nástroji Visual Studio Tools for Unity
 
-*V systému Windows:*  
+*On Windows:*
 
 1.  Otevření nové instance sady Visual Studio.
 
-2.  Otevření připojení do dialogového okna procesu. V nové instanci sady Visual Studio v hlavní nabídce zvolte **ladění**, **připojit k procesu**.  
+2.  Otevření připojení do dialogového okna procesu. V nové instanci sady Visual Studio v hlavní nabídce zvolte **ladění**, **připojit k procesu**.
 
-3.  Připojí ladicí program k ukotvené instanci sady Visual Studio. V **připojit k procesu** dialogovém okně, vyberte ukotvené instanci sady Visual Studio z **procesy k dispozici** tabulky, a potom vyberte **Attach** tlačítko.  
+3.  Připojí ladicí program k ukotvené instanci sady Visual Studio. V **připojit k procesu** dialogovém okně, vyberte ukotvené instanci sady Visual Studio z **procesy k dispozici** tabulky, a potom vyberte **Attach** tlačítko.
 
-4.  Pozastavení ladicího programu. V nové instanci sady Visual Studio v hlavní nabídce zvolte **ladění**, **přerušení všech**, nebo stačí stisknout klávesu **Ctrl + Alt + Break**.  
+4.  Pozastavení ladicího programu. V nové instanci sady Visual Studio v hlavní nabídce zvolte **ladění**, **přerušení všech**, nebo stačí stisknout klávesu **Ctrl + Alt + Break**.
 
-5.  Vytvořte výpis přístup z více vláken. V okně příkazového řádku zadejte následující příkaz a stiskněte klávesu **Enter**:  
+5.  Vytvořte výpis přístup z více vláken. V okně příkazového řádku zadejte následující příkaz a stiskněte klávesu **Enter**:
 
-    ```powershell  
-    Debug.ListCallStack /AllThreads /ShowExternalCode  
-    ```  
+    ```powershell
+    Debug.ListCallStack /AllThreads /ShowExternalCode
+    ```
 
-    Budete možná muset udělat **příkaz** okno viditelné první. V sadě Visual Studio v hlavní nabídce zvolte **zobrazení**, **ostatní okna**, **příkazové okno**.  
+    Budete možná muset udělat **příkaz** okno viditelné první. V sadě Visual Studio v hlavní nabídce zvolte **zobrazení**, **ostatní okna**, **příkazové okno**.
 
 *V systému Mac:*
 
 1. Otevřete terminál a získat PID Visual Studio pro Mac:
 
-    ```shell  
+    ```shell
     ps aux | grep "[V]isual Studio.app"
     ```
 
 1. Spuštění ladicího programu lldb:
 
-    ```shell  
+    ```shell
     lldb
     ```
 
 1. Připojení k sadě Visual Studio pro Mac instanci pomocí PID:
 
-    ```shell  
+    ```shell
     process attach --pid THE_PID_OF_THE_VSFM_PROCESS
     ```
 
 1. Načtení trasování zásobníku pro všechna vlákna:
 
-    ```shell  
+    ```shell
     bt all
     ```
 

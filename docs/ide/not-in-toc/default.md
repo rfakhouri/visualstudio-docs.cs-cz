@@ -1,8 +1,6 @@
 ---
 title: "Výchozí stránku pro F1 v sadě Visual Studio | Microsoft Docs"
-ms.date: 01/01/2018
-ms.reviewer: 
-ms.suite: 
+ms.date: 02/28/2018
 ms.topic: article
 robots: noindex,nofollow
 f1_keywords:
@@ -10,17 +8,29 @@ f1_keywords:
 - vs.ambient
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: f4c6e344acba0774a6a6a6f2dfe83bab9ff5ca18
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: 65f5e31060f745adfd5dd18460b0a9984064f660
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 02/28/2018
 ---
 # F1 – Nápověda
 
-Zdá se, můžete tady dostali, je omylem. Pokud hledáte F1 – Nápověda na – klíčové slovo nebo název rozhraní API, ujistěte se, kurzor je nastavený uvnitř nebo do pravé aplikace word před stiskněte **F1**. Pokud to pořád nefunguje, zkuste to prosím na hledání https://docs.microsoft.com.
+Zdá se nám nepodařilo najít, co jste hledali a Omlouváme se. Prosím [Pomozte nám vylepšit](#help-us-improve-f1).
 
-Pokud hledáte pomoc na textový editor, samotné, přečtěte si téma [psaní kódu v editoru](../../ide/writing-code-in-the-code-and-text-editor.md).
+## Pozice kurzoru
+
+Pokud hledáte F1 – Nápověda na – klíčové slovo nebo název rozhraní API, ujistěte se, kurzor je nastavený uvnitř nebo do pravé aplikace word před stiskněte **F1**. Pokud tento stále nebude fungovat, vyberte [užitečné odkazy](#useful-links) seznamu, nebo k hledání ve https://docs.microsoft.com.
+
+## Užitečné odkazy
+
+- Obecné informace o sadě Visual Studio najdete v tématu [přehled Visual Studio](../../ide/visual-studio-ide.md).
+- Nápovědu v textovém editoru Visual Studio najdete v tématu [pomocí editoru kódu](../../ide/writing-code-in-the-code-and-text-editor.md).
+- C# nápovědu najdete v tématu [průvodce v C#](/dotnet/csharp/index).
+- Visual Basic pomoc najdete v tématu [příručka jazyka Visual Basic](/dotnet/visual-basic/).
+- F # nápovědu najdete v tématu [Průvodce F #](/dotnet/fsharp/).
+- Nápovědu Python najdete v tématu [Python v sadě Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
+- C++ pomoc najdete v tématu [C++ v sadě Visual Studio](/cpp/visual-cpp-in-visual-studio).
 
 ## Pomozte nám vylepšit F1
 

@@ -7,16 +7,17 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
-caps.latest.revision: "10"
+ms.technology: vs-ide-mobile
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.workload: xamarin
-ms.openlocfilehash: b4656e98095b9ab7ff5dd5e95dd729c972190720
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- xamarin
+ms.openlocfilehash: 366dd699555cd3eed637687668fc194ba00d5be4
+ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Instalační program, instalace a ověření pro uživatele Mac
 Toto téma je určené výhradně pro vývojáře, kteří pracují hlavně na Macu a kteří volitelně použijte sadu Visual Studio uvnitř virtuálního počítače s Windows v Mac. Pokud jste vývojář pracující hlavně na počítači se systémem Windows a muset nastavit sekundární Mac pro cílení na iOS, přečtěte si téma hlavní [nastavení a instalaci](../cross-platform/setup-and-install.md) tématu.
@@ -33,7 +34,7 @@ Toto téma je určené výhradně pro vývojáře, kteří pracují hlavně na M
 
  Toto téma obsahuje pokyny pro tyto požadavky.  Je spuštěn proces instalace, najdete v tématu [Další informace o pro vývoj mobilních řešení s Xamarinem](../cross-platform/learn-about-mobile-development-with-xamarin.md) ke čtení a podívejte se na pozadí nezbytné materiálů.
 
-##  <a name="mac"></a>Instalační program MAC (Apple ID, Xcode a Xamarin)
+##  <a name="mac"></a> Instalační program MAC (Apple ID, Xcode a Xamarin)
 
 1.  Vytvoření volné Apple ID na [Moje Apple ID](https://appleid.apple.com/) Pokud již nemáte. To je nezbytné pro instalaci a přihlášení k Xcode.
 
@@ -43,7 +44,7 @@ Toto téma je určené výhradně pro vývojáře, kteří pracují hlavně na M
 
 4.  Po dokončení instalace Xamarin v počítačích se systémy Windows a Mac, postupujte podle pokynů [připojení k počítači Mac pomocí XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com), aby mohl pracovat s iOS a Mac ze sady Visual Studio v systému Windows počítač.
 
-##  <a name="windows"></a>Instalační program systému Windows v Parallels (Visual Studio a Xamarin)
+##  <a name="windows"></a> Instalační program systému Windows v Parallels (Visual Studio a Xamarin)
 
 1.  Pomocí plochy Windows, který jste nakonfigurovali v Parallels nebo VMWare, [stáhněte a spusťte instalační program pro všechny edice Visual Studio 2017](https://www.visualstudio.com/downloads/) (Community, Professional a Enterprise). Visual Studio 2017 Community je bezplatná edice; edice Professional a Enterprise můžete použít na základě zkušební verze po dobu 30 dnů.
 
@@ -65,7 +66,7 @@ Toto téma je určené výhradně pro vývojáře, kteří pracují hlavně na M
 
 6.  Po dokončení instalace Xamarin v počítačích se systémy Windows a Mac, postupujte podle pokynů [připojení k počítači Mac pomocí XMA](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com), aby mohl pracovat s iOS ze sady Visual Studio.
 
-##  <a name="verify"></a>Ověřte prostředí
+##  <a name="verify"></a> Ověřte prostředí
  Jakmile jste dokončili instalační programy, věnujte několik minut, ověřte, zda je vše připraveno prostředí vývoj na platformě Xamarin.
 
 ### <a name="xamarin-studio"></a>Xamarin Studio
