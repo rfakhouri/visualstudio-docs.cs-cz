@@ -33,6 +33,8 @@
 #### [Řízení aktualizací nasazení sady Visual Studio](install/controlling-updates-to-visual-studio-deployments.md)
 ### Správa instalací
 #### [Nástroje pro zjišťování a správu instancí sady Visual Studio](install/tools-for-managing-visual-studio-instances.md)
+### Spravovat předplatná
+#### [Předplatná sady Visual Studio: Přehled správce](/visualstudio/subscriptions/admin-responsibilities) 
 ### [Příručka správce Help Vieweru](ide/help-viewer-administrator-guide.md)
 #### [Argumenty příkazového řádku pro Help Content Manager](ide/command-line-arguments-for-the-help-content-manager.md)
 #### [Přepsání voleb Help Content Manageru](ide/help-content-manager-overrides.md)
