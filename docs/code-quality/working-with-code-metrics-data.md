@@ -1,5 +1,5 @@
 ---
-title: "Výsledky metrik v sadě Visual Studio Code | Microsoft Docs"
+title: "Okno výsledků metrik kódu v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 12/12/2017
 ms.reviewer: 
@@ -19,13 +19,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 772533e74b214d48583e5d2dc1d64278416933df
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="working-with-code-metrics-data"></a>Práce s daty metrik kódu
+# <a name="using-the-code-metrics-results-window"></a>Používání okna výsledky metrik kódu
 
 **Výsledky metrik kódu** zobrazují data, která je generován analýza metriky kódu. Další informace o data hodnoty metrik kódu najdete v tématu [hodnoty metrik kódu](../code-quality/code-metrics-values.md).
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 12/22/2017
 
 - Na **analyzovat** nabídce zvolte **Windows** > **výsledky metrik kódu**.
 
-   \-nebo –
+   \- nebo –
 
 - Na **zobrazení** nabídce zvolte **ostatní okna** > **výsledky metrik kódu**.
 
-   **Výsledky metrik kódu** okno se zobrazí, i v případě, že neobsahuje žádné výsledky.
+**Výsledky metrik kódu** okno se zobrazí, i v případě, že neobsahuje žádné výsledky.
 
 ### <a name="to-view-code-metrics-details"></a>Chcete-li zobrazit podrobnosti metriky kódu
 
@@ -73,7 +73,7 @@ Můžete přidat nebo odebrat výsledků sloupců z **výsledky metrik kódu** o
 
 1. Klikněte **přidat nebo odebrat sloupce** tlačítko.
 
-     \-nebo - klikněte pravým tlačítkem na záhlaví libovolného sloupce a pak klikněte na tlačítko **přidat nebo odebrat sloupce**.
+     \- nebo - klikněte pravým tlačítkem na záhlaví libovolného sloupce a pak klikněte na tlačítko **přidat nebo odebrat sloupce**.
 
 1. V **přidat nebo odebrat sloupce** dialogové okno, zrušte zaškrtnutí políčka pro sloupec, který chcete odebrat a pak klikněte na **OK**.
 
@@ -81,7 +81,7 @@ Můžete přidat nebo odebrat výsledků sloupců z **výsledky metrik kódu** o
 
 1. Klikněte **přidat nebo odebrat sloupce** tlačítko.
 
-     \-nebo –
+     \- nebo –
 
      Klikněte pravým tlačítkem na záhlaví libovolného sloupce a potom klikněte na **přidat nebo odebrat sloupce**.
 
@@ -91,7 +91,7 @@ Můžete přidat nebo odebrat výsledků sloupců z **výsledky metrik kódu** o
 
 1. Klikněte **přidat nebo odebrat sloupce** tlačítko.
 
-     \-nebo –
+     \- nebo –
 
      Klikněte pravým tlačítkem na záhlaví libovolného sloupce a potom klikněte na **přidat nebo odebrat sloupce**.
 
@@ -131,5 +131,5 @@ Další informace o služby VSTS pracovní položky, najdete v části [pracovn�
 
 ## <a name="see-also"></a>Viz také
 
-[Hodnoty metrik kódu](../code-quality/code-metrics-values.md)  
-[Postupy: Vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md)
+- [Hodnoty metrik kódu](../code-quality/code-metrics-values.md)
+- [Postupy: vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md)

@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e3a763c74022f0960dfa11e30038dae1c97295de
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Odstraňování potíží a známé problémy (Visual Studio Tools for Unity)
 V této části najdete řešení pro běžné problémy s nástroji Visual Studio Tools for Unity, popisem známých problémů a zjistěte, jak můžete pomocí Visual Studio Tools for Unity zlepšit zasílání zpráv o chybách.
@@ -40,7 +40,7 @@ To by měl opravit příslušný problém. V případě, že se stále setkává
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Problémy s zabarvení VS2015 a Intellisense nebo kódu.
+### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Problémy s zabarvení VS2015 a IntelliSense nebo kódu.
 Pokuste se upgrade vaší Visual Studio 2015 s aktualizací 3.
 
 ### <a name="visual-studio-hangs"></a>Visual Studio přestane reagovat.

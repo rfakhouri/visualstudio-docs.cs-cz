@@ -10,19 +10,22 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: fc42d87dcd32fdc8a96c6295453f755e9623316c
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 95bad7dfdf38b4b8a8f2aa1a307cf7512732ae9c
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="xslt-profiler"></a>Profiler XSLT
 
-Profileru XSLT je nástroj profileru analýzu výkonu, která vám pomůže vyvíjet a ladit XSLT dokumenty. Profileru XSLT umožňuje vývojářům měření a vyhodnocení problémy související s výkonem v kódu XSLT vytvořením podrobné sestavy pro zvýšení výkonu XSLT. Profileru XSLT zahrnuje užitečné pomocné parametry pro XSL a XSLT style sheet optimalizace, které jsou důležité pro XSLT aplikacím, které potřebují maximální výkon.
+Profileru XSLT je nástroj profileru analýzu výkonu, která vám pomůže vyvíjet a ladit XSLT dokumenty. Můžete měřit a vyhodnotit problémy související s výkonem v kódu XSLT vytvořením podrobné sestavy pro zvýšení výkonu XSLT. Profileru XSLT zahrnuje užitečné pomocné parametry pro XSL a XSLT style sheet optimalizace, které jsou důležité pro XSLT aplikacím, které potřebují maximální výkon.
 
 Profileru XSLT je součástí sady Visual Studio a má k dispozici **XML** nabídky.
 
 ![Profiler XSLT](../xml-tools/media/profile-xslt-menu.png)
+
+> [!NOTE]
+> Profileru XSLT je dostupná pouze v edici Enterprise systému Visual Studio 2017.
 
 ## <a name="see-also"></a>Viz také
 

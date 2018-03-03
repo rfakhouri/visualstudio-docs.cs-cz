@@ -15,21 +15,21 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac4f31d1e93ed648bf2065bbff9dac8800c1d4f
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Postupy: Vynucování udržovatelného kódu pomocí zásady vracení se změnami Analýzy kódu
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Postupy: vynucování udržovatelného kódu pomocí zásad vrácení se změnami kódu analýzy
 
-Vývojářům nástroj metriky kódu můžete použít k měření složitosti a udržovatelnosti svůj kód, ale nemohou vyvolat metriky kódu v rámci zásad vrácení se změnami. Můžete ale povolit pravidla analýza kódu, které ověřují dodržování standardů metriky kódu kódu a vynucovat pravidla prostřednictvím zásad vrácení se změnami. Další informace o metriky kódu najdete v tématu [hodnoty metrik kódu](../code-quality/code-metrics-values.md).
+Vývojářům nástroj metriky kódu můžete použít k měření složitosti a udržovatelnosti svůj kód, ale nemohou vyvolat metriky kódu v rámci zásad vrácení se změnami. Můžete ale povolit pravidla analýza kódu, které ověření dodržování standardů metriky kódu kódu a vynutit pravidla prostřednictvím zásad vrácení se změnami. Další informace o metriky kódu najdete v tématu [hodnoty metrik kódu](../code-quality/code-metrics-values.md).
 
 Můžete povolit hloubka dědičnosti, třída spojovací, udržovatelnosti Index a pravidla složitosti vynucování udržovatelného kódu pomocí zásad vrácení se změnami analýzy kódu. Všechny čtyři pravidla nebyly nalezeny v kategorii "Udržovatelnosti pravidla" v editoru zásad analýzy kódu.
 
 Správci verzí pro produkt Team Foundation můžete přidat udržovatelnosti pravidel analýzy kódu pro požadavky zásad vrácení se změnami. Tyto vrácení se změnami, zásady potřeba vývojářům spuštění na základě těchto pravidel změn před zahájením vrácení se změnami analýzy kódu.
 
-## <a name="to-open-the-code-analysis-policy-editor"></a>Otevřete Editor zásad analýzy kódu
+## <a name="to-open-the-code-analysis-policy-editor"></a>Otevřete editor zásad analýzy kódu
 
 1 v **Team Explorer**, klikněte pravým tlačítkem na týmový projekt, klikněte na **nastavení projektu Team**a potom klikněte na **správy zdrojového kódu**.
 

@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 553ed7d6a6fcc2edef436251d720919fe399653a
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="code-metrics-values"></a>Hodnoty metrik kódu
 
@@ -26,9 +26,11 @@ Zvýšená složitosti moderní softwarové aplikace se taky zvýší je obtíž
 
 Vývojářům můžete použít Visual Studio k vygenerování dat metrik kódu, který měření složitosti a udržovatelnosti jejich spravovaného kódu. Daty metrik kódu lze vygenerovat pro celé řešení nebo jeden projekt.
 
+Informace o tom, jak vygenerování dat metrik kódu v sadě Visual Studio najdete v tématu [postupy: vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md).
+
 ## <a name="software-measurements"></a>Měření softwaru
 
-V následujícím seznamu jsou výsledky metrik kódu, který [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vypočítá:
+Následující seznam obsahuje kód výsledky metrik, které počítají Visual Studio:
 
 - **Index udržovatelnosti** -vypočítá index hodnotu mezi 0 a 100 představující relativně snadno Správa kód. Vysoká hodnota znamená vyšší udržovatelnosti. Hodnocení barevně lze rychle identifikovat problémová místa v kódu. Zelená hodnocení je 20 až 100 a znamená, že kód má dobrou udržovatelnosti. Žlutý hodnocení je 10 až 19 a označuje, že je kód mírně udržovatelný. Red hodnocení je hodnocení 0 až 9 a Určuje nízkou udržovatelnosti.
 
@@ -51,3 +53,8 @@ Další informace o způsobu metriky kódu s anonymní metody najdete v tématu 
 Některé softwarové nástroje a kompilátory generování kódu, který se přidá do projektu a že vývojář projektu nezná nebo neměli měnit. Metriky kódu nejčastěji, ignoruje generovaného kódu při výpočtu hodnoty metrik. To umožňuje hodnoty metrik tak, aby odrážela co může vývojář zobrazit a měnit.
 
 Kód generovaný pro Windows Forms není ignorován, protože je kód, který vývojář může zobrazit a měnit.
+
+## <a name="next-steps"></a>Další kroky
+
+- [Postupy: vygenerování dat metrik kódu](../code-quality/how-to-generate-code-metrics-data.md)
+- [Použijte okno výsledků metrik kódu](../code-quality/working-with-code-metrics-data.md)

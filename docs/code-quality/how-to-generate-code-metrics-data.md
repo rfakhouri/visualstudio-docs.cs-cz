@@ -14,12 +14,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3ca031d23d244c3b02cfea1e64685663e4e25a34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 52726b521d3887dee31b74b0ba110aa8d25350e5
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Postupy: vygenerování dat metrik kódu
 
@@ -29,15 +30,15 @@ Výsledky metrik kódu pro celé řešení nebo vybraný projekt můžete vygene
 
 - V řádku nabídek zvolte **analyzovat** > **vypočítat metriky kódu** > **pro řešení**.
 
-   \-nebo –
+   \- nebo –
 
 - V **Průzkumníku řešení**, klikněte pravým tlačítkem na řešení a potom zvolte **vypočítat metriky kódu**.
 
-   \-nebo –
+   \- nebo –
 
 - V **výsledky metrik kódu** okně zvolte **vypočítat metriky kódu pro řešení** tlačítko.
 
-   Výsledky jsou generovány a **výsledky metrik kódu** zobrazí se okno.
+Výsledky jsou generovány a **výsledky metrik kódu** zobrazí se okno.
 
 ## <a name="to-generate-code-metrics-results-for-one-or-more-selected-projects"></a>Generování výsledků metrik kódu pro jeden nebo více vybraných projektů
 
@@ -49,8 +50,9 @@ Výsledky metrik kódu pro celé řešení nebo vybraný projekt můžete vygene
 
 ## <a name="to-view-the-results-details"></a>Chcete-li zobrazit podrobnosti výsledků
 
-- V **výsledky metrik kódu** okno, rozbalte strom v **hierarchie** sloupce.
+V **výsledky metrik kódu** okno, rozbalte strom v **hierarchie** sloupce.
 
 ## <a name="see-also"></a>Viz také
 
-[Hodnoty metrik kódu](../code-quality/code-metrics-values.md)
+- [Použijte okno výsledků metrik kódu](../code-quality/working-with-code-metrics-data.md)
+- [Hodnoty metrik kódu](../code-quality/code-metrics-values.md)

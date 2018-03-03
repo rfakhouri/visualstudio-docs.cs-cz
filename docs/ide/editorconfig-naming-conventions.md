@@ -14,11 +14,11 @@ manager: ghogen
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b6eac818512b6681307e059131992a9ac0f4534
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
+ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
@@ -46,7 +46,7 @@ K popisu druh symboly pro pojmenování pravidlo použít, zadejte vlastnosti v 
 
 V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot oddělených čárkami.
 
-- \*(Tato hodnota slouží k určení všechny symboly)
+- \* (Tato hodnota slouží k určení všechny symboly)
 - třída
 - struct 
 - rozhraní
@@ -66,7 +66,7 @@ Popis úrovní přístupu symbolů má pojmenování pravidlo použít, zadejte 
 
 V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot oddělených čárkami.
 
-- \*(tuto hodnotu použijte k určení všech úrovní přístupu)
+- \* (tuto hodnotu použijte k určení všech úrovní přístupu)
 - public
 - interní nebo friend
 - private
@@ -90,7 +90,7 @@ V následujícím seznamu jsou povolených hodnot, a zadáte více hodnot odděl
 - readonly
 - statické nebo sdílené
 
-`required_modifiers`Vlastnost je volitelná. Pokud ji vynecháte, bude použita pojmenování pravidla pro všechny modifikátory.
+`required_modifiers` Vlastnost je volitelná. Pokud ji vynecháte, bude použita pojmenování pravidla pro všechny modifikátory.
 
 ## <a name="style"></a>Styl
 
@@ -187,5 +187,6 @@ Pokud zavřete a otevřete váš soubor kódu, místo zobrazení návrhu v čás
 
 ## <a name="see-also"></a>Viz také
 
-[Jazyk rozhraní .NET a formátování konvence](../ide/editorconfig-code-style-settings-reference.md)  
-[Vytvoření přenosné vlastního editoru možnosti](../ide/create-portable-custom-editor-options.md)
+- [Jazyk rozhraní .NET a formátování konvence](../ide/editorconfig-code-style-settings-reference.md)
+- [Vytvoření přenosné vlastního editoru možnosti](../ide/create-portable-custom-editor-options.md)
+- [Soubor .editorconfig platformy .NET kompilátoru](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
