@@ -1,5 +1,5 @@
 ---
-title: "Operátor přiřazení numerického zbytku (JavaScript) | Microsoft Docs"
+title: "Remainder – operátor přiřazení (JavaScript) | Microsoft Docs"
 ms.custom: 
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -17,20 +17,20 @@ dev_langs:
 - DHTML
 helpviewer_keywords:
 - '%= operator [JavaScript]'
-- modulus assignment operator [JavaScript]
+- remainder assignment operator [JavaScript]
 - assignment operators, JavaScript
 ms.assetid: 9147ffbc-b598-4c44-b8f3-7b57914f6e9f
 caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c61a0fda53b50146f25a8e9c2e04dba9490c494c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: be7db43931374a71672c42ae059767585a9a5757
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="modulus-assignment-operator--javascript"></a>Operátor přiřazení numerického zbytku (JavaScript)
+# <a name="remainder-assignment-operator--javascript"></a>Operátor přiřazení zbytku (JavaScript)
 Rozdělí hodnoty proměnné hodnotou výrazu a přiřadí zbývající proměnné.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -58,6 +58,6 @@ result = result % expression
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
 ## <a name="see-also"></a>Viz také  
- [Operátor numerického zbytku](../../javascript/reference/modulus-operator-decrementjavascript.md)   
+ [Operátor zbytku](../../javascript/reference/modulus-operator-decrementjavascript.md)   
  [Priorita operátorů](../../javascript/operator-subtractprecedence-javascript.md)   
  [Souhrn operátorů (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

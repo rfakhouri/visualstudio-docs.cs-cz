@@ -1,10 +1,10 @@
 ---
 title: "devenv.exe instalační přepínač | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,11 +14,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93f03de74540d130d66ce123b355691e0828b93e
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: e37fe50eefc36e7b5396f396d2b614851a0bd9cb
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```shell
 devenv /setup
 ```
 
@@ -34,13 +34,14 @@ devenv /setup
 
 Tento přepínač nezadávaly žádné argumenty. `devenv /setup` Příkaz je obvykle zadána jako poslední krok procesu instalace. Použití `/setup` přepínač nespustí Visual Studio.
 
-Je nutné spustit `devenv` jako správce, aby bylo možné používat [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) a [/installvstemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md) přepínače.
+> [!NOTE]
+> Je nutné spustit `devenv` jako správce, aby bylo možné používat `/setup` přepínače.
 
 ## <a name="example"></a>Příklad
 
 Tento příklad ukazuje poslední krok v instalaci verze sady Visual Studio, která zahrnuje VSPackages.
 
-```
+```shell
 devenv /setup
 ```
 

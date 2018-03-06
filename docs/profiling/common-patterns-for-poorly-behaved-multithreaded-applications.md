@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: bd8f389efcde93d9a618fbbac272b0f0b2cf5c75
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Obecné vzory pro vícevláknové aplikace s nevhodným chováním
 
@@ -65,7 +65,7 @@ Při hodnocení tohoto problému je třeba zvážit následující:
 
 ![Inefficient I&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
 
-Nadměrné využití nebo zneužití vstupně-výstupních operací je obvyklou příčinou toho umožňuje zvýšit efektivitu v aplikacích. Vezměte v úvahu na předchozím obrázku. Profil viditelné časové osy ukazuje, že 42 procent času viditelné vlákno spotřebovávají vstupně-výstupní operace. Časová osa ukazuje velké objemy vstupně-výstupních operací, které označuje, že aplikace PROFILOVANÉHO je často blokována vstupně-výstupní operace. Chcete-li zobrazit podrobnosti o typech vstupně-výstupních operací a kde je váš program zablokuje, zvětšení problematických oblastí, zkontrolujte profil viditelné časové osy a klikněte blok konkrétní vstupně-výstupních operací zobrazíte aktuální zásobníky volání.
+Nadměrné využití nebo zneužití vstupně-výstupních operací je obvyklou příčinou toho umožňuje zvýšit efektivitu v aplikacích. Vezměte v úvahu na předchozím obrázku. Profil viditelné časové osy ukazuje, že 44 procent času viditelné vlákno spotřebovávají vstupně-výstupní operace. Časová osa ukazuje velké objemy vstupně-výstupních operací, které označuje, že aplikace PROFILOVANÉHO je často blokována vstupně-výstupní operace. Chcete-li zobrazit podrobnosti o typech vstupně-výstupních operací a kde je váš program zablokuje, zvětšení problematických oblastí, zkontrolujte profil viditelné časové osy a klikněte blok konkrétní vstupně-výstupních operací zobrazíte aktuální zásobníky volání.
 
 ## <a name="lock-convoys"></a>Zámek sestavy
 

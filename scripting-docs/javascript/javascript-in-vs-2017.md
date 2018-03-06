@@ -18,11 +18,11 @@ caps.latest.revision:
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 1771556be69a70c15e2dd4b889c377cea6c2fdc7
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
+ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript ve Visual Studio 2017
 
@@ -147,7 +147,7 @@ Proto větší množství a velikosti souborů, které jsou obsaženy kontextu p
 Z toho důvodu jsou několik výchozí předpokladů, které jsou vytvářeny o váš projekt tvar:
 
 - `package.json` a `bower.json` seznamu závislosti používaných projektu a ve výchozím nastavení jsou zahrnuty v automatické získání typ (ATA)
-- Nejvyšší úrovni `node_modules` složka obsahuje zdrojový kód knihovny a její obsah se vyloučí z kontextu projektu ve výchozím nastavení
+- Na nejvyšší úrovni `node_modules` složka obsahuje zdrojový kód knihovny a její obsah se vyloučí z kontextu projektu ve výchozím nastavení
 - Každý druhý `.js`, `.jsx`, `.ts`, a `.tsx` soubor je pravděpodobně mezi *vlastní* zdrojové soubory a musí být obsaženy v kontextu projektu
 
 Ve většině případů bude moci stačí otevřít projekt a máte skvělé zkušenosti s používáním výchozí konfigurace projektu. Nicméně v projektech, které jsou velké nebo struktury jinou složku, může být žádoucí dále konfigurovat službu jazyk lepší zaměřit pouze na zdrojové soubory.
