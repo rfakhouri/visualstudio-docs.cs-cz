@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 01e6203d7fbef7115ea2e380494735888995e343
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Zobrazení snímky IntelliTrace pomocí zpětným krok v sadě Visual Studio
 
@@ -107,5 +107,7 @@ Dopad na celkový výkon taktování závisí na vaší aplikace. Režijní nák
 
     Alternativní řešení:
     * Vymažte všechny snímky ukončením relace ladění. 
+
+* Při ladění aplikace, jejichž proces má velký počet jedinečných paměti oblastech, jako je například aplikace, která načte velký počet knihoven DLL, krokování s snímků povolené výkon může být ovlivněno. Tento problém bude vyřešen v budoucí verzi systému Windows. Pokud se jedná o tento problém, oslovení nás na adrese stepback@microsoft.com. 
 
 * Při ukládání souboru s **ladění > IntelliTrace > Uložit IntelliTrace relace** v režimu události a snímky další data zaznamenaná ze snímků není k dispozici v souboru .itrace. Na zarážek a krok události zobrazí stejné informace, jako kdyby měl uložili soubor v režimu jen pro události IntelliTrace. 
