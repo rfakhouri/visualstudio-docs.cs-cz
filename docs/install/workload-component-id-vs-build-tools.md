@@ -5,21 +5,23 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 12/01/2017
+ms.date: 03/05/2018
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: 
-ms.technology: vs-acquisition
+ms.technology:
+- vs-acquisition
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
-ms.workload: multiple
-ms.openlocfilehash: 4b41304a893dbee45b7de08edb9a37e07ef8656d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: dba4c71320f00e4e35bc7c8d115aa342eac23de3
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio 2017 nástroje pro sestavení součástí adresáře
 
@@ -43,10 +45,10 @@ Další informace o tom, jak používat tyto identifikátory najdete v tématu [
 
 ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 15.0.27019.1 | Požadováno
-Microsoft.VisualStudio.Component.CoreBuildTools | Základní nástroje sestavení sady Visual Studio | 15.0.27005.2 | Požadováno
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory jazyka C# a Visual Basic Roslyn | 15.0.27019.1 | Požadováno
-Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilátor jazyka F# | 15.0.27019.1 | Nepovinné
+Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Požadováno
+Microsoft.VisualStudio.Component.CoreBuildTools | Základní nástroje sestavení sady Visual Studio | 15.6.27309.0 | Požadováno
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Kompilátory jazyka C# a Visual Basic Roslyn | 15.6.27309.0 | Požadováno
+Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilátor jazyka F# | 15.6.27406.0 | Nepovinné
 
 ## <a name="net-core-build-tools"></a>Nástroje pro sestavení .NET core
 
@@ -58,50 +60,64 @@ Microsoft.VisualStudio.Component.FSharp.MSBuild | kompilátor jazyka F# | 15.0.2
 
 ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
-Microsoft.Net.Core.Component.SDK | Nástroje pro vývoj 1.0 1.1 základní rozhraní .NET | 15.0.26606.0 | Požadováno
+Microsoft.Net.Core.Component.SDK | Nástroje pro vývoj .NET core 2.0 | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet cílů a úloh sestavení | 15.0.26919.1 | Požadováno
-Microsoft.Net.Core.Component.SDK.1x | .NET core 1.0 1.1 vývojových nástrojů pro plochu | 15.0.26919.1 | Nepovinné
+Microsoft.Net.Core.Component.SDK.1x | Nástroje pro vývoj 1.0 1.1 základní rozhraní .NET | 15.6.27406.0 | Nepovinné
 
-## <a name="visual-c-build-tools"></a>Nástroje sestavení sady Visual C++
+## <a name="nodejs-build-tools"></a>Nástroje pro sestavení Node.js
 
-**ID:** Microsoft.VisualStudio.Workload.VCTools
+**ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Popis:** sestavení classic aplikace pro systém Windows pomocí power nástrojů Visual C++, ATL a volitelné funkce, například MFC a C + +/ CLI.
+**Popis:** vytvářet škálovatelné síťové aplikace pomocí Node.js, asynchronní runtime jazyka JavaScript založeného na událostech. 
 
 ### <a name="components-included-by-this-workload"></a>Součásti zahrnuté tímto zatížením
 
 ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.VC.CoreBuildTools | Nástroje sestavení Visual C++ pro základní funkce | 15.0.27005.2 | Požadováno
-Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Aktualizace Visual C++ 2017 Redistributable | 15.0.27019.1 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK | Prostředí Windows Universal C Runtime | 15.0.26621.2 | Požadováno
+Microsoft.VisualStudio.Component.Node.Build | Podpora Node.js | 15.6.27406.0 | Požadováno
+
+## <a name="visual-c-build-tools"></a>Nástroje sestavení sady Visual C++
+
+**ID:** Microsoft.VisualStudio.Workload.VCTools
+
+**Popis:** sestavení aplikací klasické pracovní plochy Windows pomocí sady nástrojů Microsoft C++, ATL a MFC.
+
+### <a name="components-included-by-this-workload"></a>Součásti zahrnuté tímto zatížením
+
+ID součásti | Název | Version | Typ závislosti
+--- | --- | --- | ---
+Microsoft.VisualStudio.Component.VC.CoreBuildTools | Nástroje sestavení Visual C++ pro základní funkce | 15.6.27406.0 | Požadováno
+Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Aktualizace Visual C++ 2017 Redistributable | 15.6.27406.0 | Požadováno
+Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statické analytické nástroje | 15.0.26208.0 | Doporučeno
-Microsoft.VisualStudio.Component.VC.CMake.Project | Nástroje sady Visual C++ pro CMake | 15.0.27019.1 | Doporučeno
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Sada nástrojů v141 VC ++ 2017 (x86, x64) | 15.0.27019.1 | Doporučeno
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) pro plochy C++ [x86 a x64] | 15.0.27128.1 | Doporučeno
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.0.27128.1 | Doporučeno
-Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) pro UPW: C++ | 15.0.27128.1 | Doporučeno
+Microsoft.VisualStudio.Component.VC.CMake.Project | Nástroje sady Visual C++ pro CMake | 15.6.27406.0 | Doporučeno
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Sada nástrojů v141 VC ++ 2017 (x86, x64) | 15.6.27406.0 | Doporučeno
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) pro plochy C++ [x86 a x64] | 15.6.27406.0 | Doporučeno
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.6.27406.0 | Doporučeno
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) pro UPW: C++ | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET a vývoje | 15.0.27005.2 | Doporučeno
-Microsoft.Component.VC.Runtime.UCRTSDK | Sady Windows Universal CRT SDK | 15.0.27019.1 | Nepovinné
-Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 15.0.26621.2 | Nepovinné
-Microsoft.Net.Component.4.6.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.6.1 | 15.0.26621.2 | Nepovinné
-Microsoft.VisualStudio.Component.VC.140 | Sada nástrojů v140 VC ++ 2015.3 pro plochu (x86, x64) | 15.0.27019.1 | Nepovinné
-Microsoft.VisualStudio.Component.VC.ATL | Podpora Visual C++ ATL | 15.0.26823.1 | Nepovinné
-Microsoft.VisualStudio.Component.VC.ATLMFC | Podpora MFC a knihovny ATL (x86 a x64) | 15.0.27005.2 | Nepovinné
-Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2 (experimentální) | 15.0.27019.1 | Nepovinné
-Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI podpory | 15.0.27019.1 | Nepovinné
-Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Moduly pro standardní knihovny (experimentální) | 15.0.27019.1 | Nepovinné
-Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilátory jazyka Visual C++ a knihovny pro ARM | 15.0.27019.1 | Nepovinné
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilátory jazyka Visual C++ a knihovny pro ARM64 | 15.0.27019.1 | Nepovinné
-Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.0.26208.0 | Nepovinné
-Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.0.26208.0 | Nepovinné
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.0.26208.0 | Nepovinné
-Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 SDK (10.0.15063.0) pro plochy C++ [x86 a x64] | 15.0.27128.1 | Nepovinné
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 SDK (10.0.15063.0) pro UPW: C#, VB, JS | 15.0.27128.1 | Nepovinné
-Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 SDK (10.0.15063.0) pro UPW: C++ | 15.0.27128.1 | Nepovinné
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) pro plochy C++ [ARM a ARM64] | 15.0.27128.1 | Nepovinné
-Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.0.26208.0 | Nepovinné
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK a sadu SDK UCRT | 15.0.27019.1 | Nepovinné
+Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | Nepovinné
+Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 15.6.27406.0 | Nepovinné
+Microsoft.Net.Component.4.6.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.6.1 | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.VC.140 | Sada nástrojů v140 VC ++ 2015.3 pro plochu (x86, x64) | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.VC.ATL | Podpora Visual C++ ATL | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.VC.ATLMFC | Podpora MFC a knihovny ATL (x86 a x64) | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.VC.ClangC2 | Clang/C2 (experimentální) | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.VC.CLI.Support | C + +/ CLI podpory | 15.6.27309.0 | Nepovinné
+Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Moduly pro standardní knihovny (experimentální) | 15.6.27309.0 | Nepovinné
+Microsoft.VisualStudio.Component.VC.Tools.ARM | Kompilátory jazyka Visual C++ a knihovny pro ARM | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilátory jazyka Visual C++ a knihovny pro ARM64 | 15.6.27309.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | Windows 10 SDK (10.0.15063.0) pro plochy C++ [x86 a x64] | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | Windows 10 SDK (10.0.15063.0) pro UPW: C#, VB, JS | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | Windows 10 SDK (10.0.15063.0) pro UPW: C++ | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) pro plochy C++ [ARM a ARM64] | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.WinXP | Podpora Windows XP pro C++ | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK a sadu SDK UCRT | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | Podpora Windows XP pro C++ | 15.6.27406.0 | Nepovinné
 
 ## <a name="web-development-build-tools"></a>Nástroje pro sestavení vývoj pro web
 
@@ -113,29 +129,31 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK a sa
 
 ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
-Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 15.0.26621.2 | Požadováno
-Microsoft.Net.Component.4.6.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.6.1 | 15.0.26621.2 | Požadováno
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Nástroje pro vývoj rozhraní .NET framework 4.6.1 | 15.0.27005.2 | Požadováno
-Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Sestavení vývojářských nástrojů WCF | 15.0.27019.1 | Požadováno
-Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Nástroje pro sestavení vývoj pro web | 15.0.26323.1 | Požadováno
-Microsoft.Net.Component.4.5.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.5.1 | 15.0.26621.2 | Doporučeno
-Microsoft.Net.Component.4.5.2.TargetingPack | Cílovou sadu rozhraní .NET framework 4.5.2 | 15.0.26621.2 | Doporučeno
-Microsoft.Net.Component.4.5.TargetingPack | Cílení na pack rozhraní .NET framework 4.5 | 15.0.26621.2 | Doporučeno
-Microsoft.Net.Component.4.6.TargetingPack | Cílení na pack rozhraní .NET framework 4.6. | 15.0.26621.2 | Doporučeno
-Microsoft.Net.Component.4.TargetingPack | Cílení na pack rozhraní .NET framework 4 | 15.0.26621.2 | Doporučeno
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | Nástroje pro vývoj rozhraní .NET framework 4 – 4.6 | 15.0.26606.0 | Doporučeno
-Microsoft.Net.Core.Component.SDK | Nástroje pro vývoj 1.0 1.1 základní rozhraní .NET | 15.0.26606.0 | Doporučeno
+Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 15.6.27406.0 | Požadováno
+Microsoft.Net.Component.4.6.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.6.1 | 15.6.27406.0 | Požadováno
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Nástroje pro vývoj rozhraní .NET framework 4.6.1 | 15.6.27406.0 | Požadováno
+Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Sestavení vývojářských nástrojů WCF | 15.6.27309.0 | Požadováno
+Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Nástroje pro sestavení vývoj pro web | 15.6.27406.0 | Požadováno
+Microsoft.Net.Component.4.5.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.5.1 | 15.6.27406.0 | Doporučeno
+Microsoft.Net.Component.4.5.2.TargetingPack | Cílovou sadu rozhraní .NET framework 4.5.2 | 15.6.27406.0 | Doporučeno
+Microsoft.Net.Component.4.5.TargetingPack | Cílení na pack rozhraní .NET framework 4.5 | 15.6.27406.0 | Doporučeno
+Microsoft.Net.Component.4.6.TargetingPack | Cílení na pack rozhraní .NET framework 4.6. | 15.6.27406.0 | Doporučeno
+Microsoft.Net.Component.4.TargetingPack | Cílení na pack rozhraní .NET framework 4 | 15.6.27406.0 | Doporučeno
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | Nástroje pro vývoj rozhraní .NET framework 4 – 4.6 | 15.6.27406.0 | Doporučeno
+Microsoft.Net.Core.Component.SDK | Nástroje pro vývoj .NET core 2.0 | 15.6.27406.0 | Doporučeno
+Microsoft.VisualStudio.Component.AspNet45 | Pokročilé funkce ASP.NET | 15.6.27428.1 | Doporučeno
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet cílů a úloh sestavení | 15.0.26919.1 | Doporučeno
-Microsoft.Net.Component.3.5.DeveloperTools | Nástroje pro vývoj rozhraní .NET framework 3.5 | 15.0.26621.2 | Nepovinné
-Microsoft.Net.Component.4.6.2.SDK | Rozhraní .NET framework 4.6.2 SDK | 15.0.26208.0 | Nepovinné
-Microsoft.Net.Component.4.6.2.TargetingPack | Cílovou sadu rozhraní .NET framework 4.6.2 | 15.0.26208.0 | Nepovinné
-Microsoft.Net.Component.4.7.1.SDK | Rozhraní .NET framework 4.7.1 SDK | 15.0.27128.1 | Nepovinné
-Microsoft.Net.Component.4.7.1.TargetingPack | Rozhraní .NET framework 4.7.1 cílení pack | 15.0.27019.1 | Nepovinné
-Microsoft.Net.Component.4.7.SDK | Rozhraní .NET framework 4.7 SDK | 15.0.26419.1 | Nepovinné
-Microsoft.Net.Component.4.7.TargetingPack | Rozhraní .NET framework 4.7 cílení pack | 15.0.26621.2 | Nepovinné
-Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Nástroje pro vývoj rozhraní .NET framework 4.6.2 | 15.0.26621.2 | Nepovinné
-Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Nástroje pro vývoj 4.7.1 rozhraní .NET framework | 15.0.27019.1 | Nepovinné
-Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Nástroje pro vývoj 4.7 rozhraní .NET framework | 15.0.27005.2 | Nepovinné
+Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK | 15.0.27406.0 | Doporučeno
+Microsoft.Net.Component.3.5.DeveloperTools | Nástroje pro vývoj rozhraní .NET framework 3.5 | 15.6.27406.0 | Nepovinné
+Microsoft.Net.Component.4.6.2.SDK | Rozhraní .NET framework 4.6.2 SDK | 15.6.27406.0 | Nepovinné
+Microsoft.Net.Component.4.6.2.TargetingPack | Cílovou sadu rozhraní .NET framework 4.6.2 | 15.6.27406.0 | Nepovinné
+Microsoft.Net.Component.4.7.1.SDK | Rozhraní .NET framework 4.7.1 SDK | 15.6.27406.0 | Nepovinné
+Microsoft.Net.Component.4.7.1.TargetingPack | Rozhraní .NET framework 4.7.1 cílení pack | 15.6.27406.0 | Nepovinné
+Microsoft.Net.Component.4.7.SDK | Rozhraní .NET framework 4.7 SDK | 15.6.27406.0 | Nepovinné
+Microsoft.Net.Component.4.7.TargetingPack | Rozhraní .NET framework 4.7 cílení pack | 15.6.27406.0 | Nepovinné
+Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | Nástroje pro vývoj rozhraní .NET framework 4.6.2 | 15.6.27406.0 | Nepovinné
+Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | Nástroje pro vývoj 4.7.1 rozhraní .NET framework | 15.6.27406.0 | Nepovinné
+Microsoft.Net.ComponentGroup.4.7.DeveloperTools | Nástroje pro vývoj 4.7 rozhraní .NET framework | 15.6.27406.0 | Nepovinné
 
 ## <a name="unaffiliated-components"></a>Nezávislou na komponenty
 
@@ -143,7 +161,13 @@ Toto jsou součásti, které nejsou součástí žádné úlohy, ale může být
 
 ID součásti | Název | Version
 --- | --- | ---
-Microsoft.VisualStudio.Component.VC.Tools.14.11 | Sada nástrojů v14.11 verzi 15.4 2017 VC ++ | 15.0.27128.1
+Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.2 | TypeScript 2.2 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.3 | TypeScript 2.3 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.5 | TypeScript 2.5 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.VC.Tools.14.11 | Sada nástrojů v14.11 verzi 15.4 2017 VC ++ | 15.0.27406.0
+Microsoft.VisualStudio.Component.VC.Tools.14.12 | Sada nástrojů v14.12 verze 15,5 2017 VC ++ | 15.0.27406.0
 
 ## <a name="get-support"></a>Získat podporu
 V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).

@@ -16,11 +16,11 @@ ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: 52867e51e158f2e2c2ccbccba7466c1f7246e128
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Řízení, kde běží kód R s nimi
 
@@ -31,17 +31,6 @@ Otevřete **pracovních prostorů** okna, použijte **R nástroje > Windows > pr
 ![Okno pracovní prostory v R Tools pro Visual Studio (VS2017)](media/workspaces-window.png)
 
 V tomto okně na zelenou značku zaškrtnutí označuje active pracovního prostoru, ke kterému je vázán RTVS. Výběr modrou šipkou nastaví active pracovního prostoru. Na ikonu nastavení (ozubené kolečko) vedle každém pracovním prostoru můžete změnit její název, umístění a argumenty příkazového řádku. Červené X odebere ručně přidaná pracovního prostoru.
-
-V tomto tématu:
-
-- [Ukládání a opětovném nastavení pracovního prostoru](#saving-and-resetting-a-workspace)
-- [Místní pracovní prostory](#local-workspaces)
-- [Vzdálené pracovní prostory](#remote-workspaces)
-- [Pracovní prostor vzdálené přihlášení](#remote-workspace-logon)
-- [Přepínání mezi pracovních prostorů](#switching-between-workspaces)
-- [Adresáře na místních i vzdálených počítačů](#directories-on-local-and-remote-computers)
-- [Kopírování souborů projektu pro vzdálené pracovní prostory](#copying-project-files-to-remote-workspaces)
-- [Kopírování souborů ze vzdáleného pracovního prostoru](#copying-files-from-a-remote-workspace)
 
 ## <a name="saving-and-resetting-a-workspace"></a>Ukládání a opětovném nastavení pracovního prostoru
 

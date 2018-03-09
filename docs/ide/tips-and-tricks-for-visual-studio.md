@@ -1,26 +1,26 @@
 ---
 title: "Visual Studio klávesové zkratky | Microsoft Docs"
-ms.custom: 
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
 ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 779867243bc30c26e1fce9260ddf497a9fcf193e
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 81c4c0957642b97b3d6e88107d98b293a5d09328
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="keyboard-tips-for-visual-studio"></a>Klávesové zkratky pro Visual Studio
 
-Můžete přejít v sadě Visual Studio snadno pomocí klávesové zkratky v tomto tématu. Toto téma je jenom podmnožinu dostupných klávesové zkratky. Získat úplný seznam najdete v tématu [výchozí klávesové zkratky v sadě Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). Informace o tom, jak optimalizovat pro usnadnění přístupu sady Visual Studio najdete v tématu [Rady a tipy k usnadnění](../ide/reference/accessibility-tips-and-tricks.md).
+Můžete přejít v sadě Visual Studio snadno pomocí klávesové zkratky v tomto článku.
+
+Zástupce zde uvedené jsou pouze podmnožinu dostupných klávesové zkratky. Získat úplný seznam najdete v tématu [výchozí klávesové zkratky v sadě Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+
+Informace o tom, jak optimalizovat pro usnadnění přístupu sady Visual Studio najdete v tématu [Rady a tipy k usnadnění](../ide/reference/accessibility-tips-and-tricks.md).
 
 ## <a name="window-management"></a>Správa oken
 
@@ -83,7 +83,7 @@ Můžete přejít v sadě Visual Studio snadno pomocí klávesové zkratky v tom
 |Přiblížení editoru|Ctrl + Shift + > (v), Ctrl + Shift + < (Out)||
 |Výběr bloku|Podržte klávesu Alt a přetáhněte ji myši, kláves Shift + Alt + šipka||
 |Řádek Přesunout nahoru/dolů|ALT + Šipka nahoru nebo Alt + Šipka dolů||
-|Duplicitní řádku|CTRL + E, V|Visual Studio 2017 verze 15,6 operací preview 2|
+|Duplicitní řádku|CTRL + E, V|Visual Studio 2017 verze 15,6 operací|
 |Rozbalte výběr|**Posunutí**+**Alt**+**=**|Visual Studio 2017 verze 15,5|
 |Výběr kontraktu|**Posunutí**+**Alt**+**-**|Visual Studio 2017 verze 15,5|
 |Přechod na definici|F12||

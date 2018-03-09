@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a03ba719aa93976713dfdc16c4770aa6ccca3b92
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: f3057ae7cf987c19e87329894249031b3af29806
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Vyhledávání a používání rozšíření Visual Studia
 
@@ -73,7 +73,7 @@ Pokud chcete vypnout automatické aktualizace, můžete zakázat funkci pro vše
 
 Novinka v **Visual Studio 2017 verze 15.3**, Visual Studio vás upozorní, pokud má podezření, že rozšíření byl součástí havárie v předchozí relaci. Když Visual Studio dojde k chybě, ukládá zásobník výjimek. Při příštím spuštění Visual Studio zkontroluje zásobníku, počínaje listu a směřování ve znalostní bázi. Pokud Visual Studio zjistí, že rámeček patří do modul, který je součástí nainstalované a povolené rozšíření, zobrazí oznámení.
 
-Novinka v **Visual Studio 2017 verze 15,6 operací preview 3**, Visual Studio také vás upozorní, pokud se má podezření, že rozšíření způsobuje Uživatelském rozhraní přestal reagovat.
+Novinka v **Visual Studio 2017 verze 15,6 operací**, Visual Studio také vás upozorní, pokud se má podezření, že rozšíření způsobuje Uživatelském rozhraní přestal reagovat.
 
 Když tato oznámení se zobrazují, můžete ignorovat oznámení nebo provést jednu z následujících akcí:
 

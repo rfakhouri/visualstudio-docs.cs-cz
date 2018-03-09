@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60b960a4a8f81f14bbbc2035670e6b9fd80b5312
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 757534638c9e4b2b6cecd75f62997994bf14cc0c
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: Použití okna interaktivní REPL
 
@@ -31,7 +31,7 @@ Visual Studio *interaktivních okna* pro jazyk Python poskytuje prostředí boha
 
 1. Otevřete okno interaktivní kliknutím pravým tlačítkem na prostředí Python projektu v Průzkumníku řešení (například "Python 3.6 (32 bitů)" ukazuje předchozí obrázek) a výběrem **otevřete okno interaktivní**. Případně můžete vybrat **zobrazení > ostatní okna > Windows interaktivní Python** z hlavní nabídky v sadě Visual Studio.
 
-1. Otevře se okno interaktivní níže editor s obvykle `>>>` Python REPL řádku. Často má být interaktivních okna větší, což lze provést tak, že přetáhnete oddělovač mezi dvěma windows:
+1. Otevře se okno interaktivní níže editoru se standardem `>>>` Python REPL řádku. **Prostředí** rozevíracího seznamu můžete vybrat konkrétní překladač pro práci s. Často je také vhodné interaktivní okno větší, což lze provést tak, že přetáhnete oddělovač mezi dvěma windows:
 
     ![Interaktivní okno Python a přetáhnete ke změně velikosti](media/vs-getting-started-python-11-interactive1b.png)
 

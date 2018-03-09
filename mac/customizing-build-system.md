@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6ef9084e5cd571c0f3f2b60e2c08d8d7bb0b8518
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-build-system"></a>Přizpůsobení systému sestavení
 
@@ -18,7 +18,7 @@ MSbuild je modul sestavení vyvinuté společností Microsoft, který umožňuje
 
 **MSbuild** používá primárně u jako systém sestavení pro projekty v sadě Visual Studio for Mac. 
 
-MSBuild funguje tak, že trvá sadu vstupy, jako je například zdrojové soubory a jejich transformuje do výstupů, jako je například spustitelné soubory a dosahuje vyvolání nástroje, jako je kompilátor tento výstup. 
+MSBuild funguje tak, že trvá sadu vstupy, jako je například zdrojové soubory a transformuje je výstupů, jako je například spustitelné soubory. Tento výstup dosahuje vyvolání nástroje, jako je kompilátoru. 
 
 
 ## <a name="msbuild-file"></a>Soubor nástroje MSBuild
@@ -26,17 +26,18 @@ MSBuild funguje tak, že trvá sadu vstupy, jako je například zdrojové soubor
 MSBuild používá soubor XML, názvem souboru projektu, který definuje *položky* které jsou součástí projektu (například obrázek prostředky) a *vlastnosti* potřebné k sestavení projektu. Tento projektový soubor bude mít vždy příponu souboru končí na `proj`, jako například `.csproj` pro projekty C#. 
 
 ### <a name="viewing-the-msbuild-file"></a>Prohlížení souboru nástroje MSBuild
-Tento soubor můžete najít kliknutím pravým tlačítkem myši na název projektu a výběrem **odhalit v hledání**. Bude se zobrazovat všechny soubory a složky související s projektem, včetně `.csproj` souboru, jak je uvedeno dále:
+
+Vyhledejte soubor MSBuild kliknutím pravým tlačítkem myši na název projektu a výběrem **odhalit v hledání**. V okně funkce hledání se zobrazí všechny soubory a složky související s projektem, včetně `.csproj` souboru, jak je znázorněno na následujícím obrázku:
 
 ![](media/customizing-build-system-image1.png)
 
-Můžete také zobrazit `.csproj` na nové záložce v sadě Visual Studio pro Mac, tím pravým tlačítkem myši na název projektu a procházení k **nástroje > Upravit soubor**:
+Chcete-li zobrazit `.csproj` na nové záložce v sadě Visual Studio pro Mac, klikněte pravým tlačítkem na název projektu a přejděte do **nástroje > Upravit soubor**:
 
 ![](media/customizing-build-system-image2.png)
 
 ### <a name="composition-of-the-msbuild-file"></a>Složení souboru nástroje MSBuild
 
-Všechny soubory nástroje MSBuild obsahovat povinné kořenové `Project` elementu, jako je zobrazena níže:
+Všechny soubory nástroje MSBuild obsahovat povinné kořenové `Project` elementu, například takto:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -44,7 +45,7 @@ Všechny soubory nástroje MSBuild obsahovat povinné kořenové `Project` eleme
 </Project>
 ```
 
-Obvykle se také importovat projekt `.targets` souboru, který obsahuje řadu pravidel, které popisují, jak zpracovat a vytvářet různé soubory. To se obvykle objeví směrem k dolní části vaší `proj` souboru, a pro projekty c bude vypadat nějak takto:
+Obvykle se také importovat projekt `.targets` souboru. Tento soubor obsahuje řadu pravidel, které popisují, jak zpracovat a vytvářet různé soubory. Import se obvykle zobrazují směrem k dolní části vaší `proj` souboru, a pro projekty C# vypadat přibližně takto:
 
 ```
 <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
@@ -54,7 +55,7 @@ Soubor cíle je jiného souboru MSBuild. Tento soubor obsahuje MSBuild kód, kte
 
 ### <a name="items-and-properties"></a>Položky a vlastnosti
 
-Existují dva základní datové typy v nástroji MSBuild: *položky* a *vlastnosti*, které jsou vysvětlené podrobněji níže.
+Existují dva základní datové typy v nástroji MSBuild: *položky* a *vlastnosti*, které jsou vysvětlené podrobněji v následujících částech.
 
 #### <a name="properties"></a>Vlastnosti
 
@@ -62,7 +63,7 @@ Vlastnosti jsou páry klíč/hodnota, které se používají k ukládání nasta
 
 Jsou nastavené, použití PropertyGroup a může obsahovat libovolný počet PropertiesGroups, která může obsahovat libovolný počet vlastnosti. 
 
-PropertyGroup – pro jednoduché konzolové aplikace může například vypadat jako následující:
+PropertyGroup – pro jednoduché konzolové aplikace může například vypadat jako následující kód XML:
 
 ```
 <PropertyGroup>
@@ -84,7 +85,7 @@ Položky představují způsob, jak se zabývá vstupy do sestavení systému, j
 
 Položky jsou vytvořené pomocí deklarace `ItemGroup`. Může existovat libovolný počet ItemGroups, která může obsahovat libovolný počet položek. 
 
-Například následující fragment kódu vytvoří iOS spusťte obrazovky. Toto jsou typu `BundleResource`, s specifikace jako cestu k bitové kopii:
+Například následující fragment kódu vytvoří iOS spusťte obrazovky. Spusťte obrazovky mít typ sestavení `BundleResource`, s specifikace jako cestu k bitové kopii:
 
 ```
  <ItemGroup>

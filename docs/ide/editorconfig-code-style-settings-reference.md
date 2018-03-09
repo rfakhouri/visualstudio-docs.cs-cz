@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: ac6c9e79e659a7f7d152541bc5a2d7deea694086
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 53345fa849715a8065b0bf569977393033608caa
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kódování nastavení konvence pro EditorConfig rozhraní .NET
 
@@ -391,8 +391,8 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programova
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + a Visual Basic 15 + | hodnotu true: návrh | První verze |
 | dotnet_style_coalesce_expression | IDE0029 | C# a Visual Basic | hodnotu true: návrh | První verze |
 | dotnet_style_null_propagation | IDE0031 | C# 6.0 + a Visual Basic 14 + | hodnotu true: návrh | První verze |
-| dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + a Visual Basic 15 + | hodnotu true: návrh | 15,6 operací náhled 2 |
-| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# a Visual Basic | hodnotu true: návrh | 15,6 operací náhled 2 |
+| dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + a Visual Basic 15 + | hodnotu true: návrh | 15.6 |
+| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# a Visual Basic | hodnotu true: návrh | 15.6 |
 
 **dotnet\_style\_object_initializer**
 

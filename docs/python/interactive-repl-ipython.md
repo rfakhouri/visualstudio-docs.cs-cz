@@ -17,15 +17,15 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ee982a1068f2ea89299b75ca825f7a7c1c4e6b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1f18ba5e7ce44766262851f68c829c887bfc9581
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="using-ipython-in-the-interactive-window"></a>V okně interaktivní pomocí IPython
 
-Okno interaktivní sady Visual Studio v režimu IPython je pokročilé prostředí ještě uživatelsky přívětivý interaktivní vývoj, které má funkce interaktivní paralelní výpočty. Toto téma vás provede pomocí IPython v sadě Visual Studio interaktivní okna, ve kterém jsou všechny normálního [interaktivních okna](python-interactive-repl-in-visual-studio.md) funkce jsou také k dispozici.
+Okno interaktivní sady Visual Studio v režimu IPython je pokročilé prostředí ještě uživatelsky přívětivý interaktivní vývoj, které má funkce interaktivní paralelní výpočty. Tento článek vás provede pomocí IPython v sadě Visual Studio interaktivní okna, ve kterém jsou všechny normálního [interaktivních okna](python-interactive-repl-in-visual-studio.md) funkce jsou také k dispozici.
 
 Pro účely tohoto postupu byste měli mít [Anaconda](https://www.continuum.io) prostředí nainstalovaná, která zahrnuje IPython a potřebné knihovny.
 
@@ -83,7 +83,7 @@ Pro účely tohoto postupu byste měli mít [Anaconda](https://www.continuum.io)
 
 IPython obsahuje mnoho dalších užitečné funkcí například uvozovací znaky prostředí systému a nahrazení proměnné, zaznamenávání výstup atd. Odkazovat [IPython dokumentace](http://ipython.org/documentation.html) Další informace.
 
-## <a name="related-topics"></a>Související témata
+## <a name="related-articles"></a>Související články
 
 - Chcete-li použít Jupyter snadno a bez instalace, zkuste bezplatnou [poznámkových bloků Azure hostovaná služba](https://notebooks.azure.com/) které vám umožní zachovat a sdílet s ostatními poznámkové bloky.
 

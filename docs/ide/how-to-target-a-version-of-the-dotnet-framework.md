@@ -1,70 +1,69 @@
 ---
-title: "Postupy: cílení na verzi rozhraní .NET Framework | Microsoft Docs"
+title: "Cílová verze rozhraní .NET Framework v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 12/08/2017
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- targeting .NET Framework version [Visual Studio]
-- versions [Visual Studio], targeting .NET Framework version
+- targeting .NET Framework [Visual Studio]
+- .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: da2e236c39cce72670a47212aedabb87afa4d217
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 03d8b734833fad5a47f0d5517b21a7851d9258a6
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: Cílení na verzi rozhraní .NET Framework
+# <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: cílení na verzi rozhraní .NET Framework
 
 Tento dokument popisuje, jak cílení na verzi rozhraní .NET Framework, když vytvoříte projekt a jak změnit cílovou verzi v existující jazyka Visual Basic, C# nebo Visual F # projektu.
 
 > [!IMPORTANT]
 > Informace o tom, jak změnit na cílovou verzi pro projekty C++ najdete v tématu [postupy: Změna cílové architektury a sady nástrojů](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-## <a name="targeting-a-version-when-you-create-a-project"></a>Cílení na určitou verzi při vytváření projektu
+## <a name="to-target-a-version-when-you-create-a-project"></a>Cílení na určitou verzi při vytváření projektu
 
-Šablony, které můžete použít při vytváření projektu, jsou určeny verzí rozhraní .NET Framework, na kterou cílíte.
+Při vytváření projektu, k dispozici verze rozhraní .NET Framework závisí na verzí instalovaných a vybrané šablony **nový projekt** dialogové okno.
 
-### <a name="to-target-a-version-when-you-create-a-project"></a>Cílení na určitou verzi při vytváření projektu
+1. Na řádku nabídek zvolte **soubor** > **nový** > **projektu...** .
 
-1.  Na řádku nabídek zvolte **soubor**, **nový**, **projektu**.
+1. V seznamu nainstalovaných šablon vyberte typ projekt, který chcete vytvořit a zadejte název projektu.
 
-2.  V seznamu v horní části **nový projekt** dialogovém okně vyberte verzi rozhraní .NET Framework, pokud chcete k cíli.
+1. Z **Framework** rozevíracím seznamu v dolní části **nový projekt** dialogovém okně vyberte verzi rozhraní .NET Framework, pokud chcete k cíli.
 
-3.  V seznamu nainstalovaných šablon, vyberte typ projektu, který chcete vytvořit, název projektu a potom zvolte **OK** tlačítko.
+    V seznamu rozhraní jsou uvedeny pouze verze, které platí pro šablonu, kterou jste zvolili. Některé typy projektů, jako je například .NET Core, nevyžadují, aby rozhraní .NET Framework. V takových případech **Framework** rozevíracího seznamu skryt.
 
-    V seznamu šablon jsou uvedeny pouze projekty, které jsou podporovány vámi vybranou verzí rozhraní .NET Framework.
+    ![Framework rozevíracího seznamu v dialogovém okně Nový projekt](media/vside-newproject-framework.png)
 
-## <a name="changing-the-target-version"></a>Změna cílové verze
+1. Vyberte **OK** tlačítko.
+
+## <a name="to-change-the-targeted-version"></a>Změna cílené verze
 
 Pomocí tohoto postupu můžete změnit cílové verze rozhraní .NET Framework v projektu jazyka Visual Basic, C# nebo Visual F #.
 
 Informace o tom, jak změnit na cílovou verzi pro projekty C++ najdete v tématu [postupy: Změna cílové architektury a sady nástrojů](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
 
-### <a name="to-change-the-targeted-version"></a>Změna cílené verze
-
-1.  V **Průzkumníku řešení**, otevřete místní nabídku pro projekt, který chcete změnit a potom vyberte **vlastnosti**.
+1. V **Průzkumníku řešení**, otevřete místní nabídku pro projekt, který chcete změnit a potom vyberte **vlastnosti**.
 
     ![Visual Studio Solution Explorer Properties](../ide/media/vs_slnexplorer_properties.png "vs_slnExplorer_Properties")
 
-2. V levém sloupci okna vlastností, vyberte **aplikace** kartě.
+1. V levém sloupci okna vlastností, vyberte **aplikace** kartě.
 
     ![Visual Studio App Properties Application tab](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
 
     > [!NOTE]
     > Po vytvoření aplikace pro UPW, nelze změnit cílovou verzi systému Windows nebo rozhraní .NET Framework.
 
-3.  V **cílové rozhraní** vyberte verzi, která chcete.
+1. V **cílové rozhraní** vyberte verzi, která chcete.
 
-4.  V dialogovém okně ověření zvolte **Ano** tlačítko.
+1. V dialogovém okně ověření zvolte **Ano** tlačítko.
 
     Projekt se uvolní. Až se znovu načte, bude cílit na verzi rozhraní .NET Framework, kterou jste vybrali.
 

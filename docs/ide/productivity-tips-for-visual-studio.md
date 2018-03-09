@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 48419196050111d12fb149612394fd9ef7935494
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8e91411539f1e511b04fd455b8ee775fa7abccc2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu pro sadu Visual Studio
 
@@ -28,7 +28,7 @@ Informace o běžných klávesových zkratek najdete v tématu [klávesové tipy
 
 Napište kód rychleji pomocí následující funkce.
 
-- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úpravy rychlejší. Například v **Visual Studio 2017 verze 15,6 operací preview 2** a novější, můžete příkaz snadno duplicitní bez nutnosti zkopírujte jej, změnit umístění kurzor a pak ji vložit řádek kódu. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo Sbalit vybraný text tak, že zvolíte **upravit** > **Upřesnit** > **rozbalte výběr** nebo **Upravit** > **Upřesnit** > **kontrakt výběr**, nebo stisknutím kombinace kláves **Shift** + **Alt** +  **=**  nebo **Shift**+**Alt** +  **-**  (k dispozici v **Visual Studio 2017 verze 15,5** a novější).
+- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úpravy rychlejší. Například v **Visual Studio 2017 verze 15,6 operací** a novější, můžete příkaz snadno duplicitní bez nutnosti zkopírujte jej, změnit umístění kurzor a pak ji vložit řádek kódu. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo Sbalit vybraný text tak, že zvolíte **upravit** > **Upřesnit** > **rozbalte výběr** nebo **Upravit** > **Upřesnit** > **kontrakt výběr**, nebo stisknutím kombinace kláves **Shift** + **Alt** +  **=**  nebo **Shift**+**Alt** +  **-**  (k dispozici v **Visual Studio 2017 verze 15,5** a novější).
 
 - **Použití prvku IntelliSense**. Při zadávání kódu v editoru, zobrazí se informace technologie IntelliSense, například vypsat členy, informace o parametrech, rychlé informace, podpis pomoci a dokončení Word. Tyto funkce podporují přibližné shody textu; například seznamy výsledky pro členy seznam obsahuje pouze položky, které začínají znaky, zda jste zadali, ale také položky, které obsahují znak kombinace kdekoli v jejich názvy. Další informace najdete v tématu [pomocí IntelliSense](../ide/using-intellisense.md).
 

@@ -5,31 +5,29 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: a00b4a38c0e1aeaf520ba84278109feb1758f2f0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: e114b0aeca2cdbbbd7dff1dbf68fbe86b4cf6d8a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editor-themes"></a>Editor motivů
-Motivů editoru můžete změnit tak, aby žádný z deset barevná schémata dostupné ve výchozím nastavení v sadě Visual Studio pro Mac pomocí **Visual Studio > Předvolby... > textový Editor > barevné motivy** možností v nabídce:
+Motivů editoru můžete změnit tak, aby žádný z 10 barevná schémata dostupné ve výchozím nastavení v sadě Visual Studio pro Mac pomocí **Visual Studio > Předvolby... > textový Editor > barevné motivy** možností v nabídce:
 
  ![Výběr Barva motivu](media/source-editor-image17.png)
 
 ## <a name="adding-new-themes"></a>Přidání nové motivy
 
-Mohou být přidány nové barevné motivy, předpokladu, že jsou v některém z podporovaných formátů. Jsou to:
+Mohou být přidány nové barevné motivy, předpokladu, že jsou v některém z podporovaných formátů:
 
 * Visual Studio (`.vssettings`)
 * Xamarin Studio (`.json`)
 * TextMate (`.tmTheme`)
 
-Existuje mnoho prostředků zadaný online, vám umožní vytvořit motivu a vytvořit soubor v podporovaném formátu. Existují také mnoho Galerie online poskytující volné přístup k sadě Visual Studio a TextMate motivů.
-
-Jakmile najít nebo vytvořit nový motiv a stáhne do místního počítače, přidejte ho následujícím způsobem:
+Jakmile najít nebo vytvořit nový motiv a stáhne do místního počítače, přidejte ji provedením následujících kroků:
 
 1. Vyberte **přidat** tlačítko v dialogu barev motivů možnost:   
     ![Přidat Barva motivu](media/source-editor-image20.png)
 2. Procházením vyhledejte motiv na místním počítači a stiskněte klávesu **otevřete**.
-3. Tento postup přidá motiv do dolní části seznamu předem nainstalovaná motivů. Chcete-li zobrazit jeho náhled, vyberte ho. Tím dojde k aktualizaci vašeho editor na pozadí: ![náhledu Barva motivu](media/source-editor-image21.png)
-4. Chcete-li použít, stiskněte **nevadí** tlačítko. 
+3. Motiv se přidá do dolní části seznamu předem nainstalovaná motivů. Chcete-li zobrazit náhled motiv, vyberte ho: ![náhledu Barva motivu](media/source-editor-image21.png)
+4. Chcete-li použít motiv, stiskněte **nevadí** tlačítko. 

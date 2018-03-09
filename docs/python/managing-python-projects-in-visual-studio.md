@@ -2,7 +2,7 @@
 title: "Správa projektů pro Python aplikace v sadě Visual Studio | Microsoft Docs"
 description: "Vysvětlující účel projekty v sadě Visual Studio, ukazuje, jak vytvořit a spravovat projekty pro kód Python a popisuje jiný projekt šablony dostupné pro jazyk Python."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 005a3a2ae46154dbf532aacefe5316aacbbaeaf7
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: d996c99104e0a5d6b2e1acdb44273679a3998658
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-projects"></a>Projektů v jazyce Python
 
@@ -52,13 +52,15 @@ Když budete vyvíjet aplikace, musíte obvykle do projektu přidejte nové soub
 Každý projekt Python má jeden soubor přiřazené spuštění zobrazeny tučným v Průzkumníku řešení. Spouštěcí soubor je soubor, který se spustí při spuštění ladění (F5 nebo **ladění > Spustit ladění**) nebo při spuštění projektu v okně interaktivní (Shift + Alt + F5 nebo **ladění > spustit projekt v Pythonu Interaktivní**). Chcete-li ji změnit, klikněte pravým tlačítkem na nový soubor a vyberte **nastavit jako spouštěcí soubor**.
 
 > [!Tip]
-> Když odeberete vybranou spouštěcí soubor z projektu a nevybírejte nový, spuštění projektu výsledky v Python výstup okna zobrazování, ale pak zmizení téměř okamžitě. Pokud narazíte na toto chování, zkontrolujte, že budete mít soubor přiřazené spuštění. Navíc pokud chcete zachovat ve výstupním okně Otevřít v takových případech, klikněte pravým tlačítkem na projekt, vyberte možnost **vlastnosti**, vyberte **ladění** kartě a pak přidejte `-i` k **překladač argumenty** pole. Tento argument způsobí, že překladač uvést do režimu interaktivní po dokončení programu, a tím zprovozní okno Otevřít zadejte Ctrl + Z, zadejte ukončíte.
+> Když odeberete vybranou spouštěcí soubor z projektu a nevybírejte nový, Visual Studio nebude vědět, co Python souboru začínat při pokusu o spuštění projektu. V tomto případě Visual Studio 2017 verze 15.6 a novější zobrazuje chybu; starší verze buď otevřete okno výstup s překladač Pythonu systémem nebo se zobrazí ve výstupním okně se zobrazí, ale pak zmizí téměř okamžitě. Pokud dojde k některé z těchto projevů, zkontrolujte, že budete mít soubor přiřazené spuštění.
+>
+> Pokud chcete nechat otevřené okno výstup z jakéhokoli důvodu, klikněte pravým tlačítkem na projekt, vyberte **vlastnosti**, vyberte **ladění** kartě a pak přidejte `-i` k **překladač argumenty**  pole. Tento argument způsobí, že překladač uvést do režimu interaktivní po dokončení programu, a tím zprovozní okno Otevřít zadejte Ctrl + Z, zadejte ukončíte.
 
 Nový projekt je vždy přidružen prostředí výchozí globální Python. Chcete-li přidružit projektu do různých prostředí (včetně virtuální prostředí), klikněte pravým tlačítkem **prostředí Python** uzlu v projektu, vyberte **prostředí Python přidat nebo odebrat**, a Vyberte ty, které chcete. Chcete-li změnit aktivního prostředí, klikněte pravým tlačítkem na požadované prostředí a vyberte **aktivovat prostředí** jak je uvedeno níže. Další informace najdete v tématu [výběr prostředí pro projekt](selecting-a-python-environment-for-a-project.md).
 
 ![Aktivace prostředí pro projekt Python](media/projects-activate-environment.png)
 
-<a name="project-types"</a>
+<a name="project-types"></a>
 
 ## <a name="project-templates"></a>Šablony projektů
 

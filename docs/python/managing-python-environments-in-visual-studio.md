@@ -2,7 +2,7 @@
 title: "Správa prostředí Python a překladače v sadě Visual Studio | Microsoft Docs"
 description: "Jak používat prostředí Python oken v sadě Visual Studio ke správě globální a virtuální prostředí, nastavit vlastní prostředí, instalace překladače Python, instalace balíčků, nastavení cesty hledání a správu prostředí pro projekty v sadě Visual Studio."
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 570ce6beccf14c9f04fcd3e21b86a8d00a3d607f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 139916cbecd6e0c22062da9221d452c16309a564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Správa prostředí Python v sadě Visual Studio
 
@@ -72,7 +72,7 @@ Na obrázku výše vidíte, že Visual Studio zjistil dvou zařízení Python 3.
 
 Výchozí prostředí tučným je 3.6 Python (v tomto případě část instalace Anaconda), který Visual Studio používá pro všechny nové projekty. Příkazy v dolní části okna platí pro vybraný jazyk Python 3.6 překladač, který jako jste viděli je konkrétní instalace v `C:\Python36-32`. Pokud nevidíte očekáváte, že prostředí, najdete v části [ručně identifikace existující překladač](#manually-identifying-an-existing-interpreter).
 
-Napravo od jednotlivých uvedených prostředí je ovládací prvek, které se otevře okno s interaktivní pro prostředí. Může se zobrazit další ovládací prvek se aktualizuje databázi IntelliSense pro prostředí.
+Napravo od jednotlivých uvedených prostředí je ovládací prvek, které se otevře okno s interaktivní pro prostředí. Další ovládací prvek může se zobrazit se aktualizuje databázi IntelliSense pro prostředí (viz [odkaz na okno prostředí](python-environments-window-tab-reference.md#intellisense-tab) podrobnosti o databázi).
 
 Pod seznamem prostředí je selektor rozevíracího seznamu pro **přehled**, **balíčky**, a **IntelliSense** možnosti popsané v [prostředí Python odkaz na kartě okno](python-environments-window-tab-reference.md). Navíc pokud rozbalíte **prostředí Python** okno dost široké, tyto možnosti se zobrazují jako karet, které možná pohodlnější pro práci s:
 

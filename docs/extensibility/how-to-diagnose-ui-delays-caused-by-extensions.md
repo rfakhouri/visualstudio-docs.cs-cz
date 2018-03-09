@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: 9dede2f30a9d91e94bda3183deaae337e4c556dc
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Postupy: diagnostikování uživatelského rozhraní zpoždění způsobené rozšíření
 
@@ -44,7 +44,7 @@ V následujících částech provedeme tyto kroky podrobněji.
 
 ## <a name="identifying-the-trigger-scenario"></a>Identifikace scénáře aktivace
 
-Při diagnostice ke zpoždění uživatelského rozhraní, musíte nejprve idetify jaké (posloupnost akcí) způsobí, že chcete zobrazit oznámení Visual Studio. Toto je, aby pro vás moct později aktivovat oznámení s zapnout protokolování.
+Při diagnostice ke zpoždění uživatelského rozhraní, musíte nejdřív určit, jaké (posloupnost akcí) způsobí, že chcete zobrazit oznámení Visual Studio. Toto je, aby pro vás moct později aktivovat oznámení s zapnout protokolování.
 
 ## <a name="restarting-vs-with-activity-logging-on"></a>Restartování VS s aktivitou přihlašování
 
@@ -158,3 +158,5 @@ Nástroje PerfView obsahuje podrobné pokyny v nabídce Nápověda, který můž
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
 
+> [!NOTE]
+> Pokud nelze vyřešit absence reagování z důvodu závislosti nemáte řízení přes (například pokud vaše rozšíření má volat synchronní VS služby ve vlákně UI), bychom rádi vědět o něm. Pokud jste členem naší program Visual Studio partnera, kontaktujte nás odesláním žádosti o podporu developer. Jinak hodnota pomocí nástroje "nahlásit problém, odešlete svůj názor a zahrnují `"Extension UI Delay Notifications"` v názvu. Uveďte také podrobný popis analýzy.

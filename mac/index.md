@@ -6,15 +6,15 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: bc836806e1acf33b35604419ac1d6aad41a2d795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d12331bd074f77db83ae4574195b8b6f7e5c452a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Představení Visual Studio pro Mac
 
-Visual Studio pro Mac je moderní, sofistikované IDE s mnoha funkcemi pro vytváření mobilních, plocha a webových aplikací. Podporuje vývoj z následujících akcí:
+Visual Studio pro Mac je moderní, sofistikované IDE s mnoha funkcemi pro vytváření mobilních, plocha a webových aplikací. Podporuje následující vývoj:
 
 * Mobilní s .NET: Android, iOS, tvOS, watchOS
 * Aplikací systému Mac
@@ -22,9 +22,9 @@ Visual Studio pro Mac je moderní, sofistikované IDE s mnoha funkcemi pro vytv�
 * Základní webové aplikace ASP.NET
 * Napříč platformami Unity hry
 
-Zahrnuje a bohatě vybavený editor, ladění, nativní platforma integrace s iOS, Mac a Android a integrované správy zdrojového kódu pro název jen některé z jeho řadu funkcí.
+Zahrnuje funkce, jako je bohatě vybavený editor, ladění, nativní platforma integrace s iOS, Mac a Android a integrované ovládací prvky zdroje.
 
-Toto téma zjišťování různých oddílů sady Visual Studio pro Mac, poskytuje podívejte se na některé z funkcí, které umožňují výkonný nástroj pro vytváření aplikací pro různé platformy.
+Tento článek zjišťování různých oddílů sady Visual Studio pro Mac, poskytuje podívejte se na některé z funkcí, které umožňují výkonný nástroj pro vytváření aplikací pro různé platformy.
 
 ## <a name="installation"></a>Instalace
 
@@ -36,7 +36,7 @@ Visual Studio pro Mac podporuje vývoj v C# a F #, ve výchozím nastavení.
 
 ### <a name="c"></a>C#
 
-C# je nejčastěji používané jazyk pro vytváření aplikací pro různé platformy v sadě Visual Studio for Mac. To zahrnuje plnou podporu všech funkcí jazyka C# 7.
+C# je nejčastěji používané jazyk pro vytváření aplikací pro různé platformy v sadě Visual Studio for Mac. Prostředí IDE má plnou podporu všech funkcí jazyka C# 7.
 
 ### <a name="f"></a>F#
 
@@ -71,11 +71,11 @@ Abyste mohli začít, podívejte se na mobilní aplikace [praktické cvičení](
 
 Visual Studio má svou vlastní integrované Android SDK manager.
 
-Pro aplikace pro Android, Visual Studio pro Mac obsahuje vlastní designer, který funguje s Android `.axml` soubory vizuálně vytvořit uživatelská rozhraní. Visual Studio pro Mac se otevřou tyto soubory v jeho Android designer, jak je uvedeno níže:
+Pro aplikace pro Android, Visual Studio pro Mac obsahuje vlastní designer, který funguje s Android `.axml` soubory vizuálně vytvořit uživatelská rozhraní. Visual Studio pro Mac se otevřou tyto soubory v jeho Android designer, jak je znázorněno na následujícím obrázku:
 
 ![](media/intro-image31.png)
 
-Další informace o Android návrháře najdete [Návrhář přehled](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) dokumentu.
+Další informace o návrháři Android, najdete v článku [Návrhář přehled](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) dokumentu.
 
 ### <a name="ios"></a>iOS
 
@@ -83,7 +83,7 @@ IOS Designer jsou plně integrované s Visual Studio pro Mac a umožňuje úprav
 
 ![](media/intro-image30.png)
 
-Další informace o použití iOS Designer, najdete v části [Návrhář](https://developer.xamarin.com/guides/ios/user_interface/designer) dokumenty.
+Další informace o použití iOS Designer, najdete v článku [Návrhář](https://developer.xamarin.com/guides/ios/user_interface/designer) dokumenty.
 
 ### <a name="mac"></a>Mac
 
@@ -114,12 +114,12 @@ Xamarin Inspector poskytuje interaktivní C# konzole nástroje pro uživatele. P
 
 Skládá se z samostatná aplikace, která poskytuje bohaté C# konzolu, která můžete vybrat různé programovací platformy (Android, iOS, Mac a Windows) a také integraci do ladění pracovní postup vaší IDE.
 
-Další informace najdete v části [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) průvodce.
+Další informace najdete v tématu [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) průvodce.
 
 ## <a name="next-steps"></a>Další kroky
 
-* **Získat velký obrázek** – Pokud chcete získat přehled o řadu hlavní funkce v sadě Visual Studio pro Mac, najdete v sadě Visual Studio pro Mac [IDE prohlídka](~/ide-tour.md).
-* **Instalační program** – Další informace o tom, jak stáhnout a nainstalovat Visual Studio naleznete [instalace](~/installation.md) průvodce.
+* **Získat prohlídku** – Pokud chcete získat přehled o řadu hlavní funkce v sadě Visual Studio pro Mac, najdete v sadě Visual Studio pro Mac [IDE prohlídka](~/ide-tour.md).
+* **Nastavit** – Další informace o tom, jak stáhnout a nainstalovat Visual Studio naleznete [instalace](~/installation.md) průvodce.
 * **Kurzy Xamarin** – Další informace o tom, jak vytvořit kód s Xamarin, přejděte na Xamarin [středisku pro vývojáře](https://developer.xamarin.com).
 * **Videa** – Pokud chcete další informace o dalších funkcích a aspekty sady Visual Studio pro Mac, podívejte se na videa na [Xamarin univerzity](https://university.xamarin.com) webu.
 * **Praktická cvičení** – Pokud chcete začít používat různé úlohy, které jsou zahrnuté v sadě Visual Studio pro Mac, podívejte se [praktická cvičení](https://github.com/Microsoft/vs4mac-labs).

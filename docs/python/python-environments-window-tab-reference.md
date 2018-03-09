@@ -2,7 +2,7 @@
 title: "Odkaz na okno prostředí Python - Visual Studio | Microsoft Docs"
 description: "Údaje na každé kartě, které se zobrazují v okně prostředí Python v sadě Visual Studio."
 ms.custom: 
-ms.date: 02/20/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 92d5014c257cf35e556eca1928e1c5612f4913eb
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 13d84eb160b4ba82d4a03d48fe814cb0d92388b0
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odkaz na prostředí Python okno karty
 
@@ -55,7 +55,7 @@ Interaktivní windows používáte ve svém pracovním postupu každý den, prav
 
 Spouštěcí skripty obsahovat kód, který interaktivních okna načte a spustí automaticky, včetně importy, definice funkcí a oznámena cokoliv jiného. Takové skripty odkazují dvěma způsoby:
 
-1. Při instalaci prostředí sady Visual Studio vytvoří složku `Documents\Visual Studio 2017\Python Scripts\<environment>` kde &lt;prostředí & gt "odpovídá názvu prostředí. Můžete snadno přejít do složky specifické pro prostředí s **prozkoumat interaktivní skripty** příkaz. Při spuštění interaktivních okna pro prostředí se načítá a spouští ať `.py` se zde nacházejí soubory v abecedním pořadí.
+1. Při instalaci prostředí sady Visual Studio vytvoří složku `Documents\Visual Studio 2017\Python Scripts\<environment>` kde &lt;prostředí&gt; odpovídá názvu prostředí. Můžete snadno přejít do složky specifické pro prostředí s **prozkoumat interaktivní skripty** příkaz. Při spuštění interaktivních okna pro prostředí se načítá a spouští ať `.py` se zde nacházejí soubory v abecedním pořadí.
 
 1. **Skripty** řídit ve **nástroje > Možnosti > Python Tools > Interaktivní Windows** karta (najdete v části [možnosti interaktivního windows](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) slouží k určení dalších Složka pro spouštěcí skripty, které jsou načteny a spustit ve všech prostředích. Tato funkce se však v současné době nefunguje.
 
@@ -80,9 +80,17 @@ Pokud je k dispozici, obsahuje podrobnosti, jak je popsáno v následující tab
 
 *Také s označením "pip" v dřívějších verzích.*
 
-Spravuje balíčky nainstalované v prostředí, což umožňuje hledat a instalovat nové (včetně závislostí). Hledání filtry vaší aktuálně nainstalovaných balíčků a [úložiště PyPI](https://pypi.python.org). Můžete také přímo zadat libovolný `pip install` příkaz do vyhledávacího pole, včetně příznaky, jako například `--user` nebo `--no-deps`.
+Spravuje balíčky nainstalované v prostředí, což umožňuje hledat a instalovat nové (včetně závislostí).
 
-![Karta balíčky prostředí Python](media/environments-pip-tab.png)
+Balíčky, které jsou již nainstalovány, zobrazí se ovládacích prvků pro aktualizaci (šipka nahoru) a odinstalovat (X v kruh) balíček:
+
+![Karta balíčky prostředí Python](media/environments-pip-tab-controls.png)
+
+Zadávat filtry hledání termín seznam balíčků nainstalovaných a také balíčky, které lze nainstalovat z úložiště PyPI.
+
+![Karta balíčky prostředí Python s vyhledávání na "num"](media/environments-pip-tab.png)
+
+Můžete také přímo zadat libovolný `pip install` příkaz do vyhledávacího pole, včetně příznaky, jako například `--user` nebo `--no-deps`.
 
 Instalace balíčku vytvoří podsložky v rámci v prostředí `Lib` složku v systému souborů. Například pokud máte Python 3.6, které se instaluje v `c:\Python36`, balíčky jsou nainstalovány v `c:\Python36\Lib`; Pokud máte nainstalovaný v Anaconda3 `c:\Program Files\Anaconda3` pak balíčky jsou nainstalovány v `c:\Program Files\Anaconda3\Lib`.
 
@@ -102,7 +110,9 @@ Ukazuje aktuální stav databáze doplňování IntelliSense:
 
 ![Karta IntelliSense prostředí Python](media/environments-intellisense-tab.png)
 
-Databáze obsahuje metadata pro všechny prostředí knihovny a zvyšuje rychlost IntelliSense a snižuje využití paměti. Když zjistí nového prostředí sady Visual Studio (nebo je přidat jeden), automaticky se začne při kompilaci databáze analýzou zdrojové soubory knihovny. Tento proces může trvat z minutu na hodinu nebo déle v závislosti na tom, co je nainstalované. (Anacondu, například se dodává s mnoha knihovny a při kompilaci databáze nějakou dobu trvá.) Po dokončení můžete získat podrobné IntelliSense a nemusíte znovu aktualizujte databázi (s **aktualizovat DB** tlačítko) až po instalaci dalších knihoven.
+V **Visual Studio 2017 verze 15,5** a starší, dokončování IntelliSense závisí na databázi, která je kompilovaná pro danou knihovnu. Vytváření databáze se provádí na pozadí při knihovny je nainstalován, ale může nějakou dobu trvat a nemusí být kompletní při spuštění psaní kódu. **Visual Studio 2017 verze 15,6 operací** a později použije rychlejší metoda zajistit dokončování operací, které nezávisí na databázi, pokud zvolíte povolit.
+
+Když zjistí nového prostředí sady Visual Studio (nebo je přidat jeden), automaticky se začne při kompilaci databáze analýzou zdrojové soubory knihovny. Tento proces může trvat z minutu na hodinu nebo déle v závislosti na tom, co je nainstalované. (Anacondu, například se dodává s mnoha knihovny a při kompilaci databáze nějakou dobu trvá.) Po dokončení můžete získat podrobné IntelliSense a nemusíte znovu aktualizujte databázi (s **aktualizovat DB** tlačítko) až po instalaci dalších knihoven.
 
 Knihovny, pro které nebyla kompilována data jsou označené **!**; Pokud prostředí s databáze není kompletní, **!** také se zobrazí vedle sebe v seznamu hlavní prostředí.
 
@@ -110,5 +120,5 @@ Knihovny, pro které nebyla kompilována data jsou označené **!**; Pokud prost
 
 - [Správa prostředí Python v sadě Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Výběr interpretu pro projekt](selecting-a-python-environment-for-a-project.md)
-- [Používání souboru requirements.txt pro závislosti](managing-required-packages-with-requirements-txt.md) 
+- [Používání souboru requirements.txt pro závislosti](managing-required-packages-with-requirements-txt.md)
 - [Cesty pro hledání](search-paths.md)

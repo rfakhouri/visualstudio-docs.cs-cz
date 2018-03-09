@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,16 +14,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-caps.latest.revision: "43"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 150252dceaff2d194af8f59d92fdaf39cdae259c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 19bf2ca98c7ba6227e791a7df44b34aa125cc786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Přidání podnabídky do nabídky
 Tento názorný postup je založený na ukázky v [přidání nabídky na panelu nabídek Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) ukazuje, jak přidat podnabídky k **TestMenu** nabídky.  
@@ -38,7 +40,7 @@ Tento názorný postup je založený na ukázky v [přidání nabídky na panelu
   
 1.  Postupujte podle kroků v [přidání nabídky na panelu nabídek Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) vytvoření položky projektu a nabídky. Postup v tomto návodu předpokládá, že je název projektu VSIX `TopLevelMenu`.  
   
-2.  Otevřete TestCommandPackage.vsct. V `<Symbols>` přidejte `<IDSymbol>` element pro podnabídky, jeden pro dílčí skupiny a jeden pro příkaz, ve `<GuidSymbol>` uzel s názvem "guidTopLevelMenuCmdSet." Toto je stejném uzlu, který obsahuje `<IDSymbol>` element nejvyšší úrovně nabídky.  
+2.  Open TestCommandPackage.vsct. V `<Symbols>` přidejte `<IDSymbol>` element pro podnabídky, jeden pro dílčí skupiny a jeden pro příkaz, ve `<GuidSymbol>` uzel s názvem "guidTopLevelMenuCmdSet." Toto je stejném uzlu, který obsahuje `<IDSymbol>` element nejvyšší úrovně nabídky.  
   
     ```xml  
     <IDSymbol name="SubMenu" value="0x1100"/>  
@@ -96,7 +98,7 @@ Tento názorný postup je založený na ukázky v [přidání nabídky na panelu
 2.  Dílčí příkaz přidáte. Přejděte na příkaz konstruktor. Přidejte následující řádky jen po volání `AddCommand` metoda.  
   
     ```csharp  
-    CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
+    CommandID subCommandID = new CommandID(CommandSet, cmdidTestSubCmd);  
     MenuCommand subItem = new MenuCommand(  
         new EventHandler(SubItemCallback), subCommandID);  
     commandService.AddCommand(subItem);  

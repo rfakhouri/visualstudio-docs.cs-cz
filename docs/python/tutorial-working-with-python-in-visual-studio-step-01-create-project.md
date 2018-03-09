@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 17108b8ff993d88d2e5ed179c3167f43d2895d7f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Práce s Python v sadě Visual Studio
 
@@ -30,7 +30,7 @@ Python je oblíbených programovací jazyk, který je spolehlivá, flexibilní, 
 Visual Studio poskytuje prvotřídní podporu pro jazyk Python. Tento kurz vás provede následující kroky:
 
 - [Krok 0: instalace](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
-- [Krok 1: Vytvoření projektu jazyka Python (Toto téma)](#step-1-create-a-new-python-project)
+- [Krok 1: Vytvoření projektu jazyka Python (v tomto článku)](#step-1-create-a-new-python-project)
 - [Krok 2: Zápis a spouštění kódu zobrazíte Visual Studio IntelliSense v práci](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 - [Krok 3: Vytvoření další kód v okně interaktivní REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 - [Krok 4: Spuštění programu dokončené v ladicím programu sady Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

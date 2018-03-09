@@ -6,27 +6,27 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bbc2f70f0d6774269f481cad5571dd9b78bac2da
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="customizing-the-ide"></a>Přizpůsobení integrovaného vývojového prostředí
 
-Visual Studio pro Mac lze přizpůsobit v mnoha různými způsoby, abyste uživatelům povolili vyvíjet aplikace v prostředí, které jim vyhovuje efektivitu a estetiku. Toto téma popisuje různé způsoby, Visual Studio pro Mac lze upravit podle svých potřeb.
+Visual Studio pro Mac lze přizpůsobit v mnoha různými způsoby, abyste uživatelům povolili vyvíjet aplikace v prostředí, které jim vyhovuje efektivitu a estetiku. Tento článek popisuje různé způsoby, Visual Studio pro Mac lze upravit podle svých potřeb.
 
 ## <a name="dark-theme"></a>Tmavý motiv
 
 ![Zobrazení tmavý motiv](media/customizing-the-ide-image7a.png)
 
-Motivy můžete přepnout v sadě Visual Studio pro Mac procházením **Visual Studio > Předvolby... > prostředí > vizuální styl** a výběrem požadovaného motivu z **uživatelské rozhraní motiv** rozevírací seznam, jak ukazuje následující snímek obrazovky:
+Motivy můžete přepnout v sadě Visual Studio pro Mac procházením **Visual Studio > Předvolby... > prostředí > vizuální styl** a výběrem požadovaného motivu z **uživatelské rozhraní motiv** rozevírací seznam, jak je znázorněno na následujícím obrázku:
 
  ![Výběr tmavý motiv](media/customizing-the-ide-image7b.png)
 
 ## <a name="localization"></a>Lokalizace
 
-Visual Studio pro Mac je lokalizovaná v 13 jazycích mu umožní mít přístup k více vývojáři. Jazyky, které jsou aktuálně k dispozici jsou uvedeny níže:
+Visual Studio pro Mac je lokalizovaná v těchto jazycích 13 mu umožní mít přístup k více vývojáři:
 
 * Čínština – Čína
 * Čínština – Tchaj-wan
@@ -42,29 +42,29 @@ Visual Studio pro Mac je lokalizovaná v 13 jazycích mu umožní mít přístup
 * Španělština
 * Turečtina
 
-Chcete-li změnit jazyk zobrazí Visual Studio pro Mac, přejděte do **Visual Studio > Předvolby... > prostředí > vizuální styl** a vyberte požadovaný jazyk z **jazyk uživatelského rozhraní**rozevíracího seznamu, jak ukazuje následující snímek obrazovky:
+Chcete-li změnit jazyk zobrazí Visual Studio pro Mac, přejděte do **Visual Studio > Předvolby... > prostředí > vizuální styl** a vyberte požadovaný jazyk z **jazyk uživatelského rozhraní**rozevíracího seznamu, jak je znázorněno na následujícím obrázku:
 
 
 ![Výběr jazyka](media/customizing-the-ide-image11a.png)
 
 ## <a name="author-information"></a>Informace o autorovi
 
-Panel informace autora umožňuje přidat relevantní informace o sobě, třeba vaše jméno, e-mailovou adresu, vlastník autorských práv k práci, vaší společnosti a známku, jak je uvedeno dále:
+Panel informace autora umožňuje přidat relevantní informace o sobě, třeba vaše jméno, e-mailovou adresu, vlastník autorských právech pro práci, vaší společnosti a ochranné:
 
  ![Upravit informace o autorovi](media/customizing-the-ide-image9a.png)
 
-Tyto informace slouží k naplnění standardní soubor hlavičky, jako je například licenci, která může přidat do nové soubory vytvořené v sadě Visual Studio pro Mac:
+Tyto informace slouží k naplnění standardní soubor hlavičky, jako je například licenci, která může přidat do nové soubory:
 
  ![Standardní možnosti hlaviček](media/customizing-the-ide-image8a.png)
 
 
-Vyplní **název** a **e-mailu** pole se použije k přidání informací do žádné potvrzení změn, které se provádí prostřednictvím správy verzí v sadě Visual Studio for Mac. Pokud nebyly nezadají těchto polí, Visual Studio pro Mac zobrazí výzvu k tomu, při pokusu o použití správy verzí.
+Vyplní **název** a **e-mailu** pole se použije na všechny potvrzení změn, které se provádí prostřednictvím správy verzí v sadě Visual Studio for Mac. Pokud nebyly nezadají těchto polí, Visual Studio pro Mac zobrazí výzvu k tomu, při pokusu o použití správy verzí.
 
 ## <a name="key-bindings"></a>Vazeb klíče
 
 Vazeb klíče umožňují přizpůsobit vývojového prostředí, takže můžete přesunout efektivněji v sadě Visual Studio for Mac. Poskytuje známé vazeb klíče pro mnoho oblíbených integrovaného vývojového prostředí, jako je například Visual Studio (Windows), ReSharper, Visual Studio Code a Xcode.
 
-Vazeb klíče můžete nastavit tak, že přejde k **Visual Studio > Předvolby... > prostředí > vazby klíč**, jak je uvedeno dále:
+Vazeb klíče můžete nastavit tak, že přejde k **Visual Studio > Předvolby... > prostředí > vazby klíč**, jak vidíte na následujícím obrázku:
 
  ![Nastavení klíče vazeb](media/customizing-the-ide-image10a.png)
 
@@ -72,13 +72,13 @@ Odsud můžete hledat kombinace vazbu na klíč, zobrazit konfliktní vazby, př
 
 ## <a name="workspace-layout"></a>Rozložení pracovního prostoru
 
-Visual Studio pro Mac na pracovní prostor se skládá z obklopená bezplatnou oblast hlavní dokumentu (obvykle editoru, plochu návrháře nebo možnosti Soubor), *dotyková zařízení* který obsahovat užitečné informace pro přístup a Správa soubory aplikace, testování a ladění.
+Visual Studio pro Mac na pracovní prostor se skládá z obklopená bezplatnou oblast hlavní dokumentu (obvykle editoru, plochu návrháře nebo možnosti Soubor), *dotyková zařízení* obsahující užitečné informace pro přístup a Správa aplikací soubory, testování a ladění.
 
  ![Rozložení pracovního prostoru](media/customizing-the-ide-image1a.png)
 
 ### <a name="viewing-and-arranging-pads"></a>Zobrazení a uspořádání dotyková zařízení
 
-Při otevření všechny nové řešení nebo souborů v sadě Visual Studio pro Mac, měli byste zaznamenat některé *dotyková zařízení* v pracovním prostoru, včetně řešení Pad, Osnova dokumentu a chyby, jak je uvedeno dále:
+Při otevření všechny nové řešení nebo souborů v sadě Visual Studio pro Mac, měli byste zaznamenat některé *dotyková zařízení* v pracovním prostoru, včetně řešení Pad, Osnova dokumentu a chyby:
 
 ![Řešení dotyková zařízení](media/customizing-the-ide-image2a.png)
 
@@ -101,9 +101,9 @@ Skrytý automaticky dotyková zařízení jsou ukotvena postranní pracovního p
 
 ### <a name="organizing-layouts"></a>Uspořádání rozložení
 
-Dotyková zařízení, které jsou zobrazeny kdykoli jsou závislé na aktuálním kontextu. Například při použití vizuálního návrháře, nástrojů a vlastnost mřížky dotyková zařízení jsou nejdůležitější; Při ladění, je užitečné používat dotyková zařízení ladicí program pro zobrazení zásobníku a místní hodnoty.
+Dotyková zařízení, které se zobrazují kdykoli jsou závislé na aktuálním kontextu. Například při použití vizuálního návrháře, nástrojů a vlastnost mřížky dotyková zařízení jsou nejdůležitější; Při ladění, je užitečné používat dotyková zařízení ladicí program pro zobrazení zásobníku a místní hodnoty.
 
-Stav otevřete dotyková zařízení je reprezentována *rozložení*. Rozložení je možné přepnout ručně pomocí nabídky zobrazit, jak je uvedeno níže, nebo ho bude přepnout automaticky při provedení akce, například ladění nebo otevírání scénáře:
+Stav otevřete dotyková zařízení je reprezentována *rozložení*. Rozložení je možné přepnout ručně pomocí nabídky zobrazit, jak je znázorněno na následujícím obrázku, nebo je při provedení akce, například ladění nebo otevírání scénáře automaticky přepnuta:
 
 ![Výběr nového rozložení](media/customizing-the-ide-image6b.png)
 
@@ -118,7 +118,7 @@ Je však možné vytvořit nové rozložení pomocí **zobrazení > Uložit aktu
 
 Visual Studio pro Mac můžete otevřít textové editory-souběžného nebo tak, aby měl editoru jako odpojit plovoucího okna.
 
-režim 2 sloupce lze povolit prostřednictvím položky nabídky zobrazit výběrem **zobrazení > Editor sloupce > 2 sloupce**, nebo přetažením karta editor na jednu z okrajů oblasti editor, jak je uvedeno níže:
+režim 2 sloupce lze povolit prostřednictvím položky nabídky zobrazit výběrem **zobrazení > Editor sloupce > 2 sloupce**, nebo přetažením kartu editor na jednu z okrajů oblasti editoru:
 
  ![Režim vedle sebe dva sloupce](media/customizing-the-ide-sbs.png)
 

@@ -16,12 +16,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 945eb6e905613d3d068321e2d5993f4506036963
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 2bc0d66ff5cd225cba0cd6bd931f242b576b9f23
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="view-type-and-member-definitions"></a>Definice zobrazení typu a členu
 
@@ -70,7 +71,7 @@ Například pokud spustíte **přejít k definici** příkazu pro <xref:System.C
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Zobrazit definice decompiled zdrojů místo metadata (C#)
 
-Novinka v **Visual Studio 2017 verze 15,6 operací preview 2**, můžete nastavit možnost zobrazíte decompiled zdrojového kódu při zobrazení definice jazyka C# typ nebo člen kdo má zdrojový kód je k dispozici. Chcete-li tuto funkci zapnout, vyberte **nástroje** > **možnosti** z řádku nabídek. Potom rozbalte **textového editoru** > **C#** > **Upřesnit**a vyberte **přepínat na decompiled zdroje**.
+Novinka v **Visual Studio 2017 verze 15,6 operací**, můžete nastavit možnost zobrazíte decompiled zdrojového kódu při zobrazení definice jazyka C# typ nebo člen kdo má zdrojový kód je k dispozici. Chcete-li tuto funkci zapnout, vyberte **nástroje** > **možnosti** z řádku nabídek. Potom rozbalte **textového editoru** > **C#** > **Upřesnit**a vyberte **přepínat na decompiled zdroje**.
 
 ![Zobrazení decompiled definice](media/go-to-definition-decompiled-sources.png)
 
@@ -79,5 +80,5 @@ Novinka v **Visual Studio 2017 verze 15,6 operací preview 2**, můžete nastavi
 
 ## <a name="see-also"></a>Viz také
 
-[Navigace v kódu](../ide/navigating-code.md)  
-[Postupy: Zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+[Navigace v kódu](../ide/navigating-code.md)
+[postupy: zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

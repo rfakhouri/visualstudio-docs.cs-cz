@@ -1,13 +1,14 @@
 ---
 layout: HubPage
-hide_bc: True
+hide_bc: 
 title: "Dokumentace k sadě Visual Studio | Microsoft Docs"
 description: "Další informace o použití Visual Studio 2017 pro vývoj aplikací, služeb a nástrojů v jazyce, platformy a zařízení."
-ms.openlocfilehash: 3875594d51eeb54322eed2fbe423f045c6aa1d4a
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.topic: hub-page
+ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -263,7 +264,7 @@ ms.lasthandoff: 12/15/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Data</h3>
-                                                    <p>Vytvořit data aplikací, které se připojují k jakékoli databázi nebo službu a odkudkoli &#8212; místní nebo cloudové. </p>
+                                                    <p>Vytvořit data aplikace, které se připojují k některé z databází nebo služby a odkudkoli&#8212;místní nebo cloudové. </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -535,7 +536,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Úložiště dat a zpracování</h3>
+                                                    <h3>Ukládání a zpracování dat</h3>
                                                     <p>Nástroje a rozhraní pro vývoj a testování pomocí serveru SQL Server, Azure Data Lake nebo Hadoop řešení data.</p>
                                                 </div>
                                             </div>
@@ -554,7 +555,7 @@ ms.lasthandoff: 12/15/2017
                                         </div>
                                         </div>
                                           <div class="cardText">
-                                            <h3>Vědecké zpracování dat a analytických aplikací</h3>
+                                            <h3>Aplikace pro datové vědy a analýzy</h3>
                                             <p>Jazyky a nástrojů pro vytváření dat vědecké účely aplikací, včetně Python, R a F #.</p>
                                         </div>
                                       </div>
@@ -769,7 +770,7 @@ ms.lasthandoff: 12/15/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Vývoj rozšíření pro Visual Studio</h3>
+                                                    <h3>Vývoj rozšíření sady Visual Studio</h3>
                                                     <p>Vytváření doplňků, které rozšiřují Visual Studio, například příkazy, analyzátorů kódu a nástroje systému windows.</p>
                                                 </div>
                                             </div>
@@ -825,19 +826,19 @@ ms.lasthandoff: 12/15/2017
         <h2>Sledujte nás</h2>
         <ul class="links">
            <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833100">Blog</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> Blog </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833101">Služby Twitter.</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Služby Twitter. </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833103">Přetečení zásobníku</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Přetečení zásobníku </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833104">Hlášení problémů</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833104"> Hlášení problémů </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833105">Hlas uživatele</a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833105"> Hlas uživatele </a>
             </li>
         </ul>
     </div>

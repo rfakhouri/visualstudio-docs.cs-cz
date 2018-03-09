@@ -8,15 +8,15 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c0808635d0cd471f0fdaeb00e970ffde94a279c6
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: f10870096697341081904c4dac9540d72823e52f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek pomocí *.runsettings* souboru
 
-Testování částí v sadě Visual Studio můžete nakonfigurovat pomocí *.runsettings* souboru. Například můžete změnit verzi rozhraní .NET Framework jsou testu, adresáři, kde jsou dodávány výsledky testů, nebo data, která se shromažďují během testu spustit.
+Testování částí v sadě Visual Studio můžete nakonfigurovat pomocí *.runsettings* souboru. Například můžete změnit verzi rozhraní .NET Framework, na kterém testy spouštějí, adresář pro výsledky testů nebo data shromážděná během spuštění testu.
 
 > [!NOTE]
 > Název souboru není důležité, tak dlouho, dokud používáte rozšíření '.runsettings'.
@@ -57,6 +57,10 @@ Toto je typické *.runsettings* souboru. Každý prvek souboru je volitelný, pr
 
     <!-- Path to Test Adapters -->
     <TestAdaptersPaths>%SystemDrive%\Temp\foo;%SystemDrive%\Temp\bar</TestAdaptersPaths>
+  
+     <!--TestSessionTimeout is only available with Visual Studio 2017 version 15.5 and higher -->
+     <!-- Specify timeout in milliseconds. A valid value should be greater than 0 -->
+     <TestSessionTimeout>10000</TestSessionTimeout>
   </RunConfiguration>
 
   <!-- Configurations for data collectors -->
@@ -129,6 +133,7 @@ V následujících podrobností elementy *.runsettings* souboru.
 |`TreatTestAdapterErrorsAsWarnings`|false|false, true|
 |`TestAdaptersPaths`||Jednu nebo více cest k adresáři, kde se nachází TestAdapters|
 |`MaxCpuCount`|1|Tato nastavení ovládacích prvků stupeň spuštění paralelní testu při testování částí spuštěné, pomocí jader dostupných na počítači. Spouštěcí modul testu se spustí jako odlišné proces v každém dostupné core a poskytuje každý základní kontejner s testy ke spuštění. Kontejner může být sestavení, knihovny DLL nebo relevantní artefaktů. Kontejner testů je plánování jednotka. V jednotlivých kontejnerech testy se spouštějí podle rozhraní test. Pokud existují mnoho kontejnerů, pak jako zpracovává dokončit provádění testů v kontejneru, jsou uvedeny další dostupné kontejneru.<br /><br /> MaxCpuCount může být:<br /><br /> n, kde 1 < = n < = počet jader: až n procesy bude spuštěna<br /><br /> n, kde n = jakoukoli jinou hodnotu: počet procesy spuštění bude až až k dispozici jádra na počítači|
+|`TestSessionTimeout`||Umožňuje uživatelům ukončení relace testu, pokud se překročí daného časového limitu. Nastavení, které zajistí vypršení časového limitu a spotřebování prostředky a testovací relace jsou omezené na nastavte čas. Toto nastavení je k dispozici v **Visual Studio 2017 verze 15,5** a novější.
 
 ### <a name="diagnostic-data-adapters-data-collectors"></a>Adaptéry diagnostických dat (sběrače dat)
 
@@ -140,7 +145,7 @@ Kolektor dat pokrytí kódu vytvoří protokol uvádějící, které části kó
 
 #### <a name="video-data-collector"></a>Sběrač dat video
 
-Kolekce video dat zaznamená obrazovky, zaznamenávání při spuštění testů. Tento záznam je užitečná pro řešení potíží s testy uživatelského rozhraní. Kolekce video dat je k dispozici v **Visual Studio 2017 verze 15,5** a vyšší.
+Kolekce video dat zaznamená obrazovky, zaznamenávání při spuštění testů. Tento záznam je užitečná pro řešení potíží s testy uživatelského rozhraní. Kolekce video dat je k dispozici v **Visual Studio 2017 verze 15,5** a novější.
 
 Chcete-li přizpůsobit jakýkoli jiný typ adaptéru diagnostických dat, musíte použít soubor s nastavením testu. Další informace najdete v tématu [zadání nastavení testu pro testy Visual Studia](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests).
 

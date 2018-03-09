@@ -2,7 +2,7 @@
 title: "Úpravy Python kódu v sadě Visual Studio | Microsoft Docs"
 description: "Úpravy Python v sadě Visual Studio poskytuje technologii IntelliSense, fragmenty kódu a vlastnosti navigace, spolu s formátování, linting a refaktoring."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e1e592d6fdb8fd7deb1e702513a932297a60e6ac
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: aae28ff5634dc59f2481140918b7ee19c29c4e1e
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="editing-python-code"></a>Úpravy kódu jazyka Python
 
@@ -39,7 +39,11 @@ Můžete také použít Visual Studio prohlížeče objektů (**zobrazení > ost
 
 ## <a name="intellisense"></a>IntelliSense
 
-Poskytuje IntelliSense [dokončených](#completions), [podpis nápovědy](#signature-help), [rychlé informace](#quick-info), a [barevné zvýrazňování kódu](#code-coloring). Chcete-li zvýšit výkon, IntelliSense závisí na databázi dokončení, který se vygeneruje pro každé prostředí Python ve vašem projektu. Databáze může být potřeba aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze se zobrazuje v **prostředí Python** okno (na stejné úrovni jako Průzkumník řešení) na **IntelliSense** karta (najdete v části [odkaz na okno prostředí Python](python-environments-window-tab-reference.md#intellisense-tab)).
+Poskytuje IntelliSense [dokončených](#completions), [podpis nápovědy](#signature-help), [rychlé informace](#quick-info), a [barevné zvýrazňování kódu](#code-coloring).
+
+Pro zlepšení výkonu, IntelliSense v **Visual Studio 2017 verze 15,5** a dříve závisí na dokončení databáze, který se vygeneruje pro každé prostředí Python ve vašem projektu. Databáze může být potřeba aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze se zobrazuje v **prostředí Python** okno (na stejné úrovni jako Průzkumník řešení) na **IntelliSense** karta (najdete v části [odkaz na okno prostředí](python-environments-window-tab-reference.md#intellisense-tab)).
+
+**Visual Studio 2017 verze 15,6 operací** a později se používá jiný způsob k poskytnutí dokončování IntelliSense, které nejsou závislé na databázi.
 
 ### <a name="completions"></a>Dokončování
 
@@ -110,15 +114,41 @@ Chcete-li přizpůsobit barvy, přejděte na **nástroje > Možnosti > prostřed
 
 ## <a name="code-snippets"></a>Fragmenty kódu
 
-Fragmenty kódu jsou fragmenty kódu, kterou lze vložit do souborů zadáním zástupce a stisknutím klávesy Tab nebo pomocí **Upravit > IntelliSense > Vložit fragment kódu** **příkazu Obklopit s** příkazy. Například zadáním `class` a kartou, vygeneruje klíč rest třídy. Přepište název a základů seznamu přesun mezi zvýrazněná pole s kartě, stiskněte klávesu Enter pro zadávání textu.
+Fragmenty kódu jsou fragmenty kódu, kterou lze vložit do souborů zadáním zástupce a stisknutím klávesy Tab nebo pomocí **Upravit > IntelliSense > Vložit fragment kódu** a **příkazu Obklopit s** příkazy, Výběr **Python**, pak výběrem požadované fragment kódu.
 
-![Fragmenty kódu](media/code-editing-code-snippets.png)
+Například `class` je zkratkou pro fragment kódu, která vloží definici třídy. Zobrazí fragmentu zobrazí v seznamu Automatické doplňování, když zadáte `class`:
 
-Můžete zobrazit fragmenty kódu k dispozici ve Správci fragmentů kódu (**nástroje > Správce fragmentů kódu**), vyberete **Python** jako jazyk:
+![Fragment kódu zástupce – třída](media/code-editing-code-snippet-class.png)
+
+Stisknutím klávesy Tab generuje rest třídy. Můžete pak typ přes seznamu název a základů přesun mezi zvýrazněná pole s kartě, stiskněte klávesu Enter pro zadávání textu.
+
+![Označuje na oblasti fragmentu kódu pro dokončení](media/code-editing-code-snippets.png)
+
+### <a name="menu-commands"></a>Příkazy nabídky
+
+Při použití **Upravit > IntelliSense > Vložit fragment kódu** příkaz nabídky, vyberte "Python" a pak vyberte fragment:
+
+![Výběr fragmentu kódu pomocí příkazu Insert fragmentu kódu](media/code-editing-code-snippet-insert.png)
+
+**Upravit > IntelliSense > příkazu Obklopit s** příkazu podobně umístí aktuální výběr v textovém editoru uvnitř zvolené strukturální elementu. Předpokládejme například, že jste měli bit kódu podobně jako tento:
+
+```python
+sum = 0
+for x in range(1, 100):
+    sum = sum + x
+```
+
+Výběrem tohoto kódu a zvolením **příkazu Obklopit s** příkaz zobrazí seznam dostupných fragmenty. Výběr `def` z míst seznamu vybraný úsek kódu v definici funkce a můžete pomocí klávesy Tab umožňují přecházet mezi jednotlivými název zvýrazněný funkce a argumenty:
+
+![Použití příkazu Obklopit s pro fragmenty kódu](media/code-editing-code-snippet-surround-with.png)
+
+### <a name="examine-available-snippets"></a>Zkontrolujte dostupné fragmenty kódu
+
+Můžete zobrazit fragmenty kódu k dispozici ve Správci fragmenty kódu v aplikaci otevřít **nástroje > Správce fragmentů kódu** příkazu v nabídce a výběrem **Python** jako jazyk:
 
 ![Správce fragmentů kódu](media/code-editing-code-snippets-manager.png)
 
-Pokud chcete vytvořit vlastní fragmenty, najdete v části [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md). 
+Pokud chcete vytvořit vlastní fragmenty, najdete v části [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md).
 
 Pokud píšete fragment skvělé kódu, který chcete sdílet, klidně odeslat v gist a [dejte nám vědět](https://github.com/Microsoft/PTVS/issues). Jsme pravděpodobně možné zahrnout do budoucích vydání sady Visual Studio.
 

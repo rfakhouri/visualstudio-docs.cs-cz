@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
-ms.openlocfilehash: ba92cd9a0e9ca28d132116f65fd41758bce1a1f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 925c928e171b76af76304074e736fd8962158564
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="refactoring"></a>Refaktoring
 
-Refaktoring kódu je způsob, jak změnit uspořádání, změny struktury a vysvětlení existující kód při současném zajištění, že celkový chování kód nezmění.
+Refaktoring kódu je způsob, jak změnit uspořádání, změny struktury a vysvětlení, a zajistit existující kód, který nemění celkové chování kód.
 
-Vyvolá zdravějších základu kódu, což mnohem lepší funkční, čtení a údržba pro jste nebo ostatní vývojáře nebo uživatele, který může získáte pomocí kódu.
+Refaktoring vytvoří zdravějších základu kódu, což funkční, čtení a udržovatelný pro jste nebo ostatní vývojáře nebo uživatele, který může získáte pomocí kódu.
 
-Visual Studio pro Mac pro integraci s Roslyn, platforma kompilátoru .NET s otevřeným zdrojem společnosti Microsoft, umožňuje více refaktoring operací a také plně podporuje nejnovější verzi jazyka C#.
+Visual Studio pro Mac pro integraci s Roslyn, platformy Microsoft open source .NET kompilátoru umožňuje pro další operace refaktoringu.
 
 ## <a name="renaming"></a>Přejmenování 
 

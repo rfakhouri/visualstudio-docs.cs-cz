@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e68fff14ea51816ae45a29410d09cb6633689534
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95ef8e1c5be39119574f838df93d067a7404f7f5
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="formatting-python-code"></a>Formátování kódu jazyka Python
 
@@ -30,9 +30,13 @@ Visual Studio vám umožní rychle přeformátovat kód tak, aby odpovídala př
 - Chcete-li formátovat výběr: vyberte **Upravit > Upřesnit > Výběr formátu** nebo stiskněte klávesu Ctrl + E, F.
 - K formátování celý soubor: vyberte **Upravit > Upřesnit > Formátovat dokument** nebo stiskněte klávesu Ctrl + E, D.
 
-Možnosti se konfigurují pomocí **nástroje > Možnosti > textový Editor > Python > formátování** a jeho vnořené karty a ve výchozím nastavení jsou nastavené tak, aby odpovídaly nadmnožinou [průvodci správným stylem období 8](http://www.python.org/dev/peps/pep-0008/). **Obecné** karta určuje, kdy je použit formátování; nastavení tři karty jsou popsaná v tomto tématu.
+Možnosti se konfigurují pomocí **nástroje > Možnosti > textový Editor > Python > formátování** a jeho vnořené karty. Je nutné vybrat **zobrazit všechna nastavení** pro tyto možnosti se objeví:
 
-[Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md) také přidá užitečné [zadejte komentář odstavce](#fill-comment-paragraph-command) příkaz **Upravit > Upřesnit** nabídky, jak je popsáno následujících.
+![Python formátování možnosti v sadě Visual Studio](media/options-editor-formatting.png)
+
+Možnosti formátování ve výchozím nastavení jsou nastavené tak, aby odpovídaly nadmnožinou [průvodci správným stylem období 8](http://www.python.org/dev/peps/pep-0008/). **Obecné** karta určuje, kdy je použit formátování; nastavení pro tři karty jsou popsané v tomto článku.
+
+[Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md) také přidá užitečné [zadejte komentář odstavce](#fill-comment-paragraph-command) příkaz **Upravit > Upřesnit** nabídky, jak je popsáno v další části.
 
 ## <a name="spacing"></a>Mezery
 

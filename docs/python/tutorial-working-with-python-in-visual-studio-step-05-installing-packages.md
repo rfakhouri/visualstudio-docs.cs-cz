@@ -2,7 +2,7 @@
 title: "Práce v sadě Visual Studio, krok 5, instalace balíčků Python | Microsoft Docs"
 description: "Krok 5 základní kurz pro práci s Pythonem v sadě Visual Studio, ukázka funkcích nástroje Visual Studio pro správu balíčků v prostředí Python."
 ms.custom: 
-ms.date: 01/16/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb0890d5f9433e1f73039e4036b884d7bfcb7933
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86068e56013bc62adad59e403c1e4a16c2cdfee9
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalace balíčků ve vašem prostředí Python
 
@@ -39,17 +39,19 @@ Komunity vývojářů Python má vytvořeného tisíce užitečné balíčky, kt
 
   ![Balíčky nainstalované v prostředí](media/environments-installed-packages-blue.png)
 
-1. Nainstalujte `matplotlib` zadáním názvu do pole hledání vyberte`pip install`
+1. Nainstalujte `matplotlib` zadáním názvu do pole hledání vyberte `pip install`
 
   ![Instalace matplotlib v prostředí](media/environments-add-matplotlib1.png)
 
 1. Pokud se zobrazí výzva k tomu svůj souhlas pro zvýšení oprávnění.
- 
-1. Po instalaci balíčku se zobrazí v okně prostředí Python. **X** napravo od balíček odinstaluje ho. 
+
+1. Po instalaci balíčku se zobrazí v okně prostředí Python. **X** napravo od balíček odinstaluje ho.
 
   ![Dokončení instalace matplotlib v prostředí](media/environments-add-matplotlib2.png)
 
   Malé indikátor průběhu pod prostředí označuje, že Visual Studio vytváří svou databázi IntelliSense pro nově nainstalovaný balíček. **IntelliSense** kartě také ukazuje podrobnější informace. Všimněte si, že až do dokončení této databáze, IntelliSense funkce, jako jsou automatické doplňování a kontrolu syntaxe nebudou v editoru pro tento balíček aktivní.
+
+  Všimněte si, že **Visual Studio 2017 verze 15,6 operací** a později používá jiné a rychlejší metody pro práci s IntelliSense a zobrazí zprávu za tímto účelem on **IntelliSense** kartě.
 
 1. Vytvoření nového projektu s **soubor > Nový > projekt**, výběrem šablony "Aplikace Python". Do souboru kódu, který se zobrazí vložte následující kód, který vytvoří kosinus wave jako v předchozích krocích kurz pouze v tomto případě vykreslí graficky:
 

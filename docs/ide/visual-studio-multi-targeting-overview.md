@@ -1,10 +1,11 @@
 ---
 title: "Cílení na rozhraní .NET Framework v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 01/18/2018
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: e4b68e5d7b7e63e76a2291eba6d81eb581756845
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.workload:
+- dotnet
+ms.openlocfilehash: e78f77993c510a223056696c0beac27147d18d5a
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled cílení na více Visual Studio
 
@@ -48,7 +50,7 @@ Cílení na Framework zahrnuje následující funkce:
 
 Pokud pracujete na projektu, jehož cílem dřívější verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], Visual Studio dynamicky změní vývojového prostředí, následujícím způsobem:
 
-- Filtruje položky v **nový projekt** dialogové okno, **přidat novou položku** dialogové okno, **přidat nový odkaz** dialogové okno a **přidat odkaz na službu** dialogové okno Možnosti, které nejsou k dispozici v cílové verzi vynechat.
+- Filtruje položky v **přidat novou položku** dialogové okno, **přidat nový odkaz** dialogové okno a **přidat odkaz na službu** dialogové okno vynechat volby, které nejsou k dispozici v Cílová verze.
 
 - Filtruje vlastní ovládací prvky v **sada nástrojů** odeberte ty, které nejsou k dispozici v cílové verzi a zobrazit pouze nejnovější ovládacích prvků, když jsou k dispozici více ovládacích prvků.
 
@@ -65,7 +67,11 @@ Pokud pracujete na projektu, jehož cílem dřívější verzi [!INCLUDE[dnprdns
 
 ## <a name="selecting-a-target-framework-version"></a>Výběr cílové verze framework
 
-Když vytvoříte projekt, vyberte cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi v **nový projekt** dialogové okno. V seznamu šablon projektu k dispozici je filtrovaná podle výběru. V existujícího projektu, můžete změnit cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [postupy: cílení na verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Když vytvoříte projekt, vyberte cílová verze rozhraní .NET Framework v **nový projekt** dialogové okno. Seznam dostupných rozhraní obsahuje verze nainstalované framework, které platí pro typ vybrané šablony. Pro typy šablon, které nevyžadují rozhraní .NET Framework, například .NET Core šablony, **Framework** rozevíracího seznamu skryt.
+
+![Framework rozevíracího seznamu v dialogovém okně Nový projekt](media/vside-newproject-framework.png)
+
+V existujícího projektu, můžete změnit cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [postupy: cílení na verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Řešení systému a uživatel odkazy na sestavení
 

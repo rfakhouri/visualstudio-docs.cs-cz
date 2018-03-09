@@ -18,20 +18,20 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e5d5cbc856a6af44941d690119f2a15a8acc3d41
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Správa Python v Azure App Service
 
 [Aplikační služba Azure](https://azure.microsoft.com/services/app-service/) je nabídku platforma jako služba pro webové aplikace, jestli jsou weby přístupných prostřednictvím prohlížeče, REST API, které používají vlastní klienti nebo událost aktivuje zpracování. App Service plně podporuje použití Python k implementaci aplikace.
 
-Přizpůsobitelné podpora Python ve službě Azure App Service je k dispozici jako sada App Service *lokality rozšíření* , každý obsahovat na konkrétní verzi modulu runtime jazyka Python. Můžete nainstalovat všechny požadované balíčky přímo do prostředí, jak je popsáno v tomto tématu. Přizpůsobením prostředí v samotné aplikaci služby nemusíte udržovat balíčků ve vašich projektů webové aplikace nebo odešlete kódem aplikace.
+Přizpůsobitelné podpora Python ve službě Azure App Service je k dispozici jako sada App Service *lokality rozšíření* , každý obsahovat na konkrétní verzi modulu runtime jazyka Python. Můžete nainstalovat všechny požadované balíčky přímo do prostředí, jak je popsáno v tomto článku. Přizpůsobením prostředí v samotné aplikaci služby nemusíte udržovat balíčků ve vašich projektů webové aplikace nebo odešlete kódem aplikace.
 
 > [!Tip]
-> I když služby App Service ve výchozím nastavení má Python 2.7 a Python 3.4 nainstalované v kořenové složky na serveru, nelze upravit ani instalovat balíčky v těchto prostředích, ani by měl záviset na jejich přítomnosti. Se místo toho spoléhají na rozšíření lokality, kterou řídíte, jak je popsáno v tomto tématu.
+> I když služby App Service ve výchozím nastavení má Python 2.7 a Python 3.4 nainstalované v kořenové složky na serveru, nelze upravit ani instalovat balíčky v těchto prostředích, ani by měl záviset na jejich přítomnosti. Se místo toho spoléhají na rozšíření lokality, kterou řídíte, jak je popsáno v tomto článku.
 
 > [!Important]
 > Postupů popsaných v tomto poli se mohou změnit a to především při zlepšování. Odesílány zpět změny [Python Engineering v blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).

@@ -6,21 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: abf772f1e00239b3a66e01c95dd827a392a12902
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>Kompilaci a sestavování v sadě Visual Studio pro Mac
 
 Visual Studio pro Mac slouží k vytváření aplikací a vytváření sestavení během vývoje projektu. Je důležité pro zkompilování a vybuildování kódu včas a často, aby mohli identifikovat neshody typu a dalších chyb kompilace.
 
-## <a name="choosing-a-build-method"></a>Výběr metody sestavení:
+## <a name="building-from-the-ide"></a>Sestavení v prostředí IDE
 
-### <a name="using-the-ide"></a>Používání prostředí IDE
-
-Pomocí sady Visual Studio pro Mac umožňuje vytvořit a spustit sestavení okamžitě, přitom stále poskytuje ovládat funkce sestavení. Visual Studio pro Mac MSBuild používá jako podkladový systém sestavení.
+Pomocí sady Visual Studio pro Mac umožňuje vytvářet a spustit okamžitě, vytvoří při stále a ovládat funkce sestavení. Visual Studio pro Mac MSBuild používá jako podkladový systém sestavení.
 
 Všechny projekty a řešení vytvořená v prostředí IDE bude mít výchozí konfigurace sestavení, která definuje kontext pro sestavení. Tyto konfigurace se dá upravit nebo vytvořit vlastní. Vytvoření nebo úprava tyto konfigurace se automaticky aktualizuje soubor projektu, který je následně používán MSBuild k sestavení projektu.  
 
@@ -40,13 +38,13 @@ Visual Studio pro Mac lze také provést následující akce:
 
     ![Přidat vlastní příkazy](media/compiling-and-building-image6.png)
 
-### <a name="building-from-command-line"></a>Sestavování z příkazového řádku
+## <a name="building-from-command-line"></a>Sestavování z příkazového řádku
 
 Můžete vytvářet aplikace pomocí příkazového řádku nástroje MSBuild Build Engine.
 
 Najdete v článku [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild) obsahu pro další informace o použití nástroje MSBuild.
 
-### <a name="using-visual-studio-team-services"></a>Pomocí sady Visual Studio Team Services
+## <a name="building-from-visual-studio-team-services"></a>Sestavování z Visual Studio Team Services
 
 * [Sestavení vaší aplikace Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [Průběžnou integraci s funkcí Xamarin](https://developer.xamarin.com/guides/cross-platform/ci/)

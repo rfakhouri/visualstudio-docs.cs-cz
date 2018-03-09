@@ -18,11 +18,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f87e5ac67a547a45b8c7519c96131623686a0866
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Vytváření rozšíření pro C++ pro jazyk Python
 
@@ -231,7 +231,7 @@ Existují dva způsoby, jak zpřístupnit knihovnu DLL jazyka Python.
 
 První metoda funguje v případě, že Python projekt a projekt C++ jsou ve stejném řešení. Přejděte do Průzkumníka řešení klikněte pravým tlačítkem myši **odkazy** uzlu v projektu jazyka Python a potom vyberte **přidat odkaz na**. V dialogovém okně se zobrazí, vyberte **projekty** vyberte **superfastcode** projektu (nebo ať název je používáte) a potom **OK**.
 
-Alternativní metody popsané v následujících krocích se nainstaluje modul v globální prostředí Python zpřístupnění do jiných Python projektů. (Takže obvykle to vyžaduje, můžete obnovit databázi doplňování IntelliSense pro prostředí. Aktualizace je také nezbytné při odebírání modulu z prostředí.)
+Alternativní metody popsané v následujících krocích se nainstaluje modul v globální prostředí Python zpřístupnění do jiných Python projektů. (Takže obvykle to vyžaduje, můžete obnovit databázi doplňování IntelliSense pro prostředí v aplikaci Visual Studio 2017 15,5 a starší verze. Aktualizace je také nezbytné při odebírání modulu z prostředí.)
 
 1. Pokud používáte Visual Studio 2017, spusťte instalační program sady Visual Studio, vyberte **upravit**, vyberte **jednotlivých součástí > kompilátory, sestavení nástroje a moduly runtime > Sada nástrojů Visual C++ 2015.3 v140**. Tento krok je nezbytný, protože Python (pro Windows) je sám vytvořené s nástroji Visual Studio 2015 (verze 14.0) a očekává, že tyto nástroje jsou k dispozici při sestavování rozšíření pomocí metody popsané v tomto poli. (Všimněte si, že budete muset nainstalovat 32bitovou verzi jazyka Python a cíle DLL Win32 a není x64.)
 

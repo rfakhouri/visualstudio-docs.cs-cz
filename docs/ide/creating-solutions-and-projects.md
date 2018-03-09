@@ -1,7 +1,7 @@
 ---
 title: "Vytvoření řešení a projektů v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 06/16/2017
+ms.date: 02/06/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -13,7 +13,6 @@ f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
 - SolutionItemsProject
 helpviewer_keywords:
-- solutions [Visual Studio], deleting
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
 author: gewarren
@@ -21,11 +20,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b92558a7838646ff7cfde88bffd9f709a997137a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-solutions-and-projects"></a>Vytvoření řešení a projekty
 
@@ -46,7 +45,7 @@ Který výše uvedeného, projekty a řešení není nutné vývoj aplikací v s
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Vytvoření projektu ze šablony projektu
 
-1. Chcete-li vytvořit nový projekt v sadě Visual Studio několika způsoby. Na stránce Start zadejte název šablony projektu v **vyhledávání šablony projektů** pole, nebo zvolte **vytvořit nový projekt** odkazu k otevření **nový projekt** dialogové okno. Můžete také **soubor**, **nový**, **projektu...**  v nabídce panelu, nebo zvolte **nový projekt** tlačítka na panelu nástrojů.
+1. Chcete-li vytvořit nový projekt v sadě Visual Studio několika způsoby. Na stránce Start zadejte název šablony projektu v **vyhledávání šablony projektů** pole, nebo zvolte **vytvořit nový projekt** odkazu k otevření **nový projekt** dialogové okno. Můžete také **soubor** > **nový** > **projektu...**  v nabídce panelu, nebo zvolte **nový projekt** tlačítka na panelu nástrojů.
 
   ![Úvodní stránka](./media/vside-newproject1.png)
 
@@ -59,9 +58,9 @@ Který výše uvedeného, projekty a řešení není nutné vývoj aplikací v s
 
 1. Zobrazit seznam šablon pro programovací jazyk, který chcete použít tak, že zvolíte trojúhelníček vedle název jazyka a poté zvolte typ projektu.
 
-  Následující příklad ukazuje šablon projektu, který je k dispozici pro webové projekty Visual C#.
+  Následující příklad ukazuje šablon projektu, který je k dispozici pro projekty Visual C# .NET Core.
 
-  ![Šablony projektů](./media/vside-newproject-projects-list.png)
+  ![Šablony projektů](./media/new-project-dialog-net-core.png)
 
 1. Zadejte název pro nový projekt v **název** pole. Můžete uložit projektu ve výchozím umístění ve vašem systému, nebo zvolte **Procházet** tlačítko Najít jiné umístění.
 
@@ -69,13 +68,13 @@ Který výše uvedeného, projekty a řešení není nutné vývoj aplikací v s
 
 1. Vyberte **OK** tlačítko pro vytvoření řešení a projektu.
 
-1. Pokud chcete do řešení přidat další projekt, vyberte uzel řešení v Průzkumníku řešení a potom na panelu nabídek vyberte **projektu**, **přidat novou položku**.
+1. Pokud chcete do řešení přidat další projekt, vyberte uzel řešení v Průzkumníku řešení a potom na panelu nabídek vyberte **projektu** > **přidat novou položku**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Vytvoření projektu z existujících souborů kódu
 
 Pokud máte kolekci soubory zdrojového kódu, můžete je snadno přidat k projektu.
 
-1. V nabídce zvolte **soubor**, **nový**, **projekt z existujícího kódu**.
+1. V nabídce zvolte **soubor** > **nový** > **projekt z existujícího kódu**.
 
 1. V **vytvoření projektu z existujících souborů kódu** průvodce, zvolte typ projektu, které mají být v **jaký typ projektu chcete vytvořit?** rozevíracího seznamu pole a potom vyberte **další**  tlačítko.
 
@@ -86,21 +85,16 @@ Pokud máte kolekci soubory zdrojového kódu, můžete je snadno přidat k proj
 
 ## <a name="add-files-to-a-solution"></a>Přidání souborů do řešení
 
-Pokud máte soubor, který se vztahuje na více projektů, jako je soubor readme pro řešení, nebo jiné soubory, které logicky patří na úrovni řešení spíše než v rámci konkrétní projekt, pak můžete přidat je do řešení sám sebe. Postup přidání položky do řešení, v nabídce kontextu (klikněte pravým tlačítkem) uzlu řešení v **Průzkumníku řešení**, zvolte **přidat**, **nová položka**, nebo **přidat**, **Existující položka**.
+Pokud máte soubor, který se vztahuje na více projektů, jako je soubor readme pro řešení, nebo jiné soubory, které logicky patří na úrovni řešení spíše než v rámci konkrétní projekt, pak můžete přidat je do řešení sám sebe. Postup přidání položky do řešení, v nabídce kontextu (klikněte pravým tlačítkem) uzlu řešení v **Průzkumníku řešení**, zvolte **přidat** > **nová položka**, nebo **Přidat** > **existující položka**.
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Vytvoření projektu rozhraní .NET, která je cílena na konkrétní verzi rozhraní .NET Framework
 
-Když vytvoříte projekt, můžete zadat konkrétní verzi rozhraní .NET Framework, který chcete projekt, který používá. K určení verze rozhraní .NET framework, vyberte **rozhraní .NET Framework** verze rozevírací nabídky v **nový projekt** dialogové okno.
+Když vytvoříte projekt, můžete zadat konkrétní verzi rozhraní .NET Framework, který chcete projekt, který používá. K určení verze rozhraní .NET framework, vyberte **Framework** v rozevírací nabídce **nový projekt** dialogové okno.
 
-![Selektor verze rozhraní .NET framework](./media/vside-newproject-framework.png)
+![Framework rozevíracího seznamu v dialogovém okně Nový projekt](./media/vside-newproject-framework.png)
 
 > [!NOTE]
-> Pokud vytváříte projekt ze šablony .NET Core, verzi rozhraní .NET Framework, kterou vyberete v rozevíracím seznamu se ignoruje.
-
-> [!TIP]
-> Pokud jste nastavili verzi rozhraní .NET Framework před výběrem šablony projektu, pak Visual Studio se zobrazí, jen šablony, které jsou kompatibilní s danou verzi rozhraní .NET Framework.
-
-Musíte mít rozhraní .NET Framework 3.5 v systému nainstalovány pro přístup k rozhraní .NET Framework verze starší než rozhraní .NET Framework 4.
+> Musíte mít rozhraní .NET Framework 3.5 v systému nainstalovány pro přístup k rozhraní .NET Framework verze starší než rozhraní .NET Framework 4.
 
 ## <a name="create-empty-solutions"></a>Vytvořit prázdný řešení
 
@@ -108,9 +102,9 @@ Můžete také vytvořit prázdný řešení, které mají žádné projekty. To
 
 ### <a name="to-create-an-empty-solution"></a>Vytvoření prázdného řešení
 
-1. V nabídce zvolte **soubor**, **nový**, **projektu...** .
+1. V nabídce zvolte **soubor** > **nový** > **projektu...** .
 
-1. V levém (**šablony**) podokně vyberte **jiné typy projektů**, **řešení sady Visual Studio** v seznamu rozšířené.
+1. V levém (**šablony**) podokně vyberte **jiné typy projektů** > **řešení sady Visual Studio** v seznamu rozšířené.
 
 1. V prostředním podokně vyberte **prázdného řešení**.
 
@@ -124,7 +118,7 @@ Jak už bylo zmíněno dříve, můžete také otevřít soubory kódu bez nutno
 
 Pokud vytvoříte. Na základě NET projekt bez zadání umístění na disku, je dočasný projekt. Dočasné projekty umožňují experimentovat s projekty rozhraní .NET. Kdykoliv při práci s projektem dočasné, můžete ho uložte nebo zahoďte ho.
 
-Chcete-li vytvořit dočasný projekt, nejprve přejděte na **nástroje**, **možnosti**, **projekty a řešení**, **Obecné**a zrušte zaškrtnutí políčka **Uložit nové projekty při vytvoření** zaškrtávací políčko. Otevřete **nový projekt** dialogu jako obvykle.
+Chcete-li vytvořit dočasný projekt, nejprve přejděte na **nástroje** > **možnosti** > **projekty a řešení**  >   **Obecné**a zrušte zaškrtnutí políčka **uložit nové projekty při vytvoření** zaškrtávací políčko. Otevřete **nový projekt** dialogu jako obvykle.
 
 ## <a name="delete-a-solution-project-or-item"></a>Odstranit řešení, projekt nebo položky
 
@@ -146,4 +140,4 @@ Chcete-li vytvořit dočasný projekt, nejprve přejděte na **nástroje**, **mo
 [Projekty a řešení](../ide/solutions-and-projects-in-visual-studio.md)  
 [Úložiště s otevřeným zdrojem společnosti Microsoft na Githubu](https://github.com/Microsoft)  
 [Ukázky sady Visual Studio](../ide/visual-studio-samples.md)  
-[Ukázky kódu vývojáře](https://code.msdn.microsoft.com/)  
+[Ukázky kódu vývojáře](https://code.msdn.microsoft.com/)

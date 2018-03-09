@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: f8ed008df50eaa2c82686e67cf47461c14d491e0
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro jazyk Python
 
@@ -30,7 +30,7 @@ Visual Studio poskytuje šablony vám pomohou začít vytvářet Azure Cloud Ser
 
 A [Cloudová služba](http://go.microsoft.com/fwlink/?LinkId=306052) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každá provádí koncepčně samostatná úloha, ale můžete samostatně replikaci Visual počítače podle potřeby pro škálování. Webové role poskytují hostování pro front-end webové aplikace. Python jsou obavy, všechny webové rozhraní, které podporuje WSGI můžete použít pro zapsání takové aplikace (podporuje [šablona projektu webové](python-web-application-project-templates.md)). Role pracovního procesu jsou určeny k dlouho běžící procesy, které není komunikovat přímo s uživateli. Obvykle provádění použití [data](http://go.microsoft.com/fwlink/?LinkId=401571) a [služby app service](http://go.microsoft.com/fwlink/?LinkId=401572) knihovny, které mohou být nainstalovány s [ `pip install azure` ](http://pypi.org/project/azure).
 
-Toto téma obsahuje podrobné informace o šabloně projektů a další podporu Visual Studio 2017 (starší verze jsou podobné, ale některé rozdíly). Další informace o práci s Azure z Python, přejděte [Azure střediska pro vývojáře Python](http://go.microsoft.com/fwlink/?linkid=254360).
+Tento článek obsahuje podrobné informace o šabloně projektů a další podporu Visual Studio 2017 (starší verze jsou podobné, ale některé rozdíly). Další informace o práci s Azure z Python, přejděte [Azure střediska pro vývojáře Python](http://go.microsoft.com/fwlink/?linkid=254360).
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 

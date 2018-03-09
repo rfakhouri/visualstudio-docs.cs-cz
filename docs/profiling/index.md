@@ -2,12 +2,13 @@
 layout: LandingPage
 title: "Profilace aplikací pomocí sady Visual Studio | Microsoft Docs"
 description: "Zjistěte, jak používat Visual Studio 2017 profilu výkon vaší aplikací, služeb a nástrojů v jazyk podle vašeho výběru."
+ms.topic: landing-page
 ms.technology: vs-ide-debug
-ms.openlocfilehash: fa5b65a11a1275f805644efbc6a210d51c18292d
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 1f63e9a5a42a7a64ae69f50694668030c5421872
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="profiling-in-visual-studio"></a>Profilace v sadě Visual Studio
 
@@ -169,7 +170,7 @@ Profilování a diagnostických nástrojů pomoci diagnostikovat paměť a využ
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>V tématu Co & č. 39; s nového v nástrojích pro profilaci</h3>
+                        <h3>Zjistit, jaká&#39;s nového v nástrojích pro profilaci</h3>
                     </div>
                 </div>
             </div>

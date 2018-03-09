@@ -1,14 +1,15 @@
 ---
 layout: HubPage
-hide_bc: True
+hide_bc: 
 title: "Dokumentace k sadě Visual Studio | Microsoft Docs"
 description: "Další informace o použití Visual Studio 2017 pro vývoj aplikací, služeb a nástrojů v jazyce, platformy a zařízení."
-searchScope: 
-ms.openlocfilehash: 38ea7dc20884fe5d70cbfa483805364e43a62801
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.topic: landing-page
+searchScope: []
+ms.openlocfilehash: 910dc9db4ebdd1e2a5c9d5743b471a95ab15d407
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -78,7 +79,7 @@ ms.lasthandoff: 01/13/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="/visualstudio/mac" title="Visual Studio pro Mac">
+                                <a href="/visualstudio/mac" title="Visual Studio for Mac">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -97,7 +98,7 @@ ms.lasthandoff: 01/13/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.microsoft.com/appcenter" title="Centrum aplikace Visual Studio">
+                                <a href="https://docs.microsoft.com/appcenter" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -107,7 +108,7 @@ ms.lasthandoff: 01/13/2018
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Centrum aplikace Visual Studio</h3>
+                                                    <h3>Visual Studio App Center</h3>
                                                     <p>Průběžnou integraci, distribuci a learning pro aplikace Android, iOS, systému macOS a systému Windows. Dodávat 5 hvězdičkami, kvalitnější aplikace rychleji a s jistotou.</p>
                                                 </div>
                                             </div>
@@ -116,7 +117,7 @@ ms.lasthandoff: 01/13/2018
                                 </a>
                             </li>
                             <li>
-                                <a href="https://aka.ms/vs-subscriptions" title="Centrum aplikace Visual Studio">
+                                <a href="https://aka.ms/vs-subscriptions" title="Visual Studio App Center">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">

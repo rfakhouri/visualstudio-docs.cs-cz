@@ -10,11 +10,11 @@ Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a7768be8726fe38ade6857993b67c1c32f8611aa
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-subscriptions"></a>Předplatná sady Visual Studio
 Visual Studio odběrů je komplexní sadu prostředků můžete vytvářet, nasazovat a spravovat kvalitních aplikací na upřednostňované platformy a zařízení, včetně systému Windows, iOS, Android a Linux.  Výhody odběry zahrnovat přístup do nástroje pro vývojáře, cloudových služeb a softwaru, cvičení a podporu pro vývoj a testování potřebám.
@@ -137,7 +137,7 @@ Odběratelé Přihlaste se k [https://my.visualstudio.com](https://my.visualstud
 ---
 
 <h2>Výhody</h2>
-<ul class="panelContent cardsW">
+<ul class="cardsD cols cols3">
     <li>
         <div class="cardSize">
             <div class="cardPadding">

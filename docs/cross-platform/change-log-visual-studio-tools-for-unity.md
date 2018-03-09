@@ -13,14 +13,107 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 40356c5d80ee8572b4e5a6e468b9abf2919524de
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: f80e5eb1d82fab7167e86550739faaaa19000786
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>Protokol změn (Visual Studio Tools for Unity)
 Visual Studio Tools for Unity změnit protokolu.
+
+## <a name="3604"></a>3.6.0.4
+ Vydaná 2018-03-05
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Generování projektu:**
+
+    -   Detekce pevné Mono verze.
+
+-   **Integrace:**
+
+    -   Pevné problémy načasování s 2018.1 a aktivaci modulu plug-in.
+
+## <a name="3603"></a>3.6.0.3
+ Vydaná 2018-02-23
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Generování projektu:**
+
+    -   Přidání podpory pro rozhraní .net standardní.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Generování projektu:**
+
+    -   Opravené Unity cílový framework detekce.
+
+-   **Ladicí program:**
+
+    -   Opravené narušující na výjimky, které jsou vyvolány mimo usercode.
+
+## <a name="3602"></a>3.6.0.2
+ Vydaná 2018-02-07
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Integrace:**
+
+    -   Aktualizujte plochy UnityMessage API pro 2017.3.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Znovu načte pouze projektů externí změn (pomocí omezení).
+ 
+## <a name="3601"></a>3.6.0.1
+ Vydaná 2018-01-24
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Opravené automatické pdb do mdb ladění symbol převodu.
+    
+    -   Opravené nepřímé volání EditorPrefs.GetBool při pokusu změnit velikost pole, které mají vliv inspector.
+ 
+## <a name="3600"></a>3.6.0.0
+ Vydaná 2018-01-10
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Generování projektu:**
+
+    -   Přidaná podpora pro 2018.1 MonoIsland referenčního modelu.
+
+-   **Vyhodnocení:**
+
+    -   Přidaná podpora pro $exception identifikátor.
+
+-   **Ladicí program:**
+
+    -   Byla přidána podpora pro atributy DebuggerHidden/DebuggerStepThrough se nový modul runtime Unity.
+    
+-   **Průvodci:**
+
+    -   Zavést 'Nejnovější' verze pro průvodce.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Generování projektu:**
+
+    -   Opravené projektu výpočetní identifikátor guid pro projekty přehrávač.
+
+-   **Ladicí program:**
+
+    -   Pevné soupeření při zpracování události ukončování řádků.
+    
+-   **Průvodci:**
+
+    -   Před vložením metoda aktualizujte roslyn kontext.
 
 ## <a name="3503"></a>3.5.0.3
  Vydaná 2018-01-09

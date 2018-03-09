@@ -1,7 +1,7 @@
 ---
 title: "Removeduplicates – úloha | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 03/01/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology: msbuild
@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b735b706ec7c258e168c75dcfd8b456df23a021e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ce3271b84d4d6bbb4f7905294d0c9fad678c1b8f
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates – úloha
 Odebere duplicitní položky z kolekce zadanou položku.  
@@ -38,7 +38,7 @@ Odebere duplicitní položky z kolekce zadanou položku.
   
 |Parametr|Popis|  
 |---------------|-----------------|  
-|`Filtered`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje kolekci položky s všechny duplicitní položky odebrat.|  
+|`Filtered`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` výstupní parametr.<br /><br /> Obsahuje kolekci položky s všechny duplicitní položky odebrat. Pořadí vstupních položek je zachovaná, udržování první instance každé duplicitní položky.|  
 |`Inputs`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Odeberte duplicitní položky z kolekce položek.|  
   
 ## <a name="remarks"></a>Poznámky  
@@ -70,7 +70,30 @@ Odebere duplicitní položky z kolekce zadanou položku.
     </Target>  
 </Project>  
 ```  
+
+ Následující příklad ukazuje, že `RemoveDuplicates` zachovává jeho vstupní pořadí úkolů. Po dokončení úlohy `FilteredItems` kolekce položek obsahuje položky "MyFile2.cs", "MyFile1.cs" a "MyFile3.cs" v tomto pořadí.  
   
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+  
+    <ItemGroup>  
+        <MyItems Include="MyFile2.cs"/>  
+        <MyItems Include="MyFile1.cs" />  
+        <MyItems Include="MyFile3.cs" />  
+        <MyItems Include="myfile1.cs"/>  
+    </ItemGroup>  
+  
+    <Target Name="RemoveDuplicateItems">  
+        <RemoveDuplicates  
+            Inputs="@(MyItems)">  
+            <Output  
+                TaskParameter="Filtered"  
+                ItemName="FilteredItems"/>  
+        </RemoveDuplicates>  
+    </Target>  
+</Project>  
+```  
+
 ## <a name="see-also"></a>Viz také  
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   

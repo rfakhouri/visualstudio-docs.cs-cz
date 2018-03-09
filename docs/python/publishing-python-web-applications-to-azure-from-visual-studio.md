@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 79036afd66d9c8c23ffb6351d6fd5329004479f9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 73e82e70733e12116250e47850bbcf1edff13a6d
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Publikování do služby Azure App Service
 
@@ -74,7 +74,7 @@ Vytvořte dočasnou služby App Service bez předplatného Azure následujícím
 
 ## <a name="configure-python-on-azure-app-service"></a>Konfigurace Python v Azure App Service
 
-Jakmile je aplikační službu s prázdnou webová aplikace spuštěná, (buď v rámci vašeho předplatného nebo na lokalitu volné), nainstalujte zvolené verzi jazyka Python, jak je popsáno [Správa Python ve službě Azure App Service](managing-python-on-azure-app-service.md). Publikování z Visual Studio 2017 záznam přesnou cestu k překladač Pythonu nainstalované s příponou lokality, jak je popsáno v tomto tématu.
+Jakmile je aplikační službu s prázdnou webová aplikace spuštěná, (buď v rámci vašeho předplatného nebo na lokalitu volné), nainstalujte zvolené verzi jazyka Python, jak je popsáno [Správa Python ve službě Azure App Service](managing-python-on-azure-app-service.md). Publikování z Visual Studio 2017 záznam přesnou cestu k překladač Pythonu nainstalované s příponou lokality, jak je popsáno v tomto článku.
 
 V případě potřeby můžete taky nainstalovat `bottle` balíček pomocí procesu v těchto pokynech, protože tento balíček je nainstalován jako součást další kroky v tomto návodu.
 

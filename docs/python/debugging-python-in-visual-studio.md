@@ -2,7 +2,7 @@
 title: "Ladění kódu jazyka Python v sadě Visual Studio | Microsoft Docs"
 description: "Návod funkce ladění v sadě Visual Studio speciálně pro kód Python, včetně nastavení zarážek, krokování, zkontrolujte hodnoty, prohlížení výjimky a ladění v okně interaktivní."
 ms.custom: 
-ms.date: 02/15/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,17 +17,17 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a34ef14b1c966a8685497875d32563add635917b
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 52beda8ff0eb81b7f9a78545e264a2fcaee6ca92
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="debugging-your-python-code"></a>Ladění kódu jazyka Python
 
 Visual Studio nabízí komplexní ladění prostředí Python, včetně připojení ke spuštěným procesům, vyhodnocení výrazů v hodinek a příkazy v nebo na více systémů nebo přes, nastavit další krok okamžitou windows, místní proměnné, zarážky, kontroly Příkaz a další.
 
-Také najdete v následujících tématech ladění konkrétní scénáře:
+Také najdete v následujících článcích ladění konkrétní scénáře:
 
 - [Linux vzdálené ladění](debugging-python-code-on-remote-linux-machines.md)
 - [Vzdálené ladění Azure](debugging-remote-python-code-on-azure.md)
@@ -51,7 +51,7 @@ Také najdete v následujících tématech ladění konkrétní scénáře:
 
 Základní pracovní postup ladění zahrnuje nastavení zarážek, krokování kódu, zkontrolujte hodnoty a zpracování výjimek, jak je popsáno v následujících částech. Kompletní informace o ladicího programu sady Visual Studio, najdete v části [ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md).
 
-Ladicí relace začíná **ladění > Spustit ladění** příkaz, **spustit** tlačítka na panelu nástrojů nebo klávesy F5. Tyto akce spuštění vašeho projektu po spuštění souboru (ukazuje tučné v Průzkumníku řešení) se aktivního prostředí projektu a argumenty příkazového řádku nebo cesty pro hledání, které bylo zadáno v okně Vlastnosti projektu (najdete v části [ladění projektu možnosti](#project-debugging-options). Pokud z nějakého důvodu nemáte k dispozici po spuštění souboru nastavit, ale výstup – okno Python stručně se zobrazí a zmizí. V takovém případě klikněte pravým tlačítkem na příslušný soubor a vyberte **nastavit jako spouštěcí soubor**.
+Ladicí relace začíná **ladění > Spustit ladění** příkaz, **spustit** tlačítka na panelu nástrojů nebo klávesy F5. Tyto akce spuštění vašeho projektu po spuštění souboru (ukazuje tučné v Průzkumníku řešení) se aktivního prostředí projektu a argumenty příkazového řádku nebo cesty pro hledání, které bylo zadáno v okně Vlastnosti projektu (najdete v části [ladění projektu možnosti](#project-debugging-options). **Visual Studio 2017 verze 15,6 operací** a později vás upozorní, pokud nemáte spuštění souboru nastavit; dřívějších verzí může otevřete okno výstup s překladač Pythonu spuštěna, nebo ve výstupním okně stručně se zobrazí a zmizí. V každém případě klikněte pravým tlačítkem na příslušný soubor a vyberte **nastavit jako spouštěcí soubor**.
 
 > [!Note]
 > Ladicí program vždy začíná active prostředí Python pro projekt. Chcete-li změnit prostředí, zkontrolujte různých jednu aktivní, jak je popsáno na [výběr prostředí Python pro projekt](selecting-a-python-environment-for-a-project.md).
@@ -131,7 +131,7 @@ V tomto okamžiku si můžete prohlédnout stav programu, včetně zásobníku v
 
 Zaškrtávací políčko pro každý ovládací prvky výjimka zda ladicího programu *vždy* dělí, když je aktivována. Toto políčko zaškrtněte, pokud chcete rozdělit častěji pro konkrétní výjimku.
 
-Ve výchozím nastavení většina výjimek přerušení při obslužné rutiny výjimek nenašel ve zdrojovém kódu. Toto chování změnit, klikněte pravým tlačítkem na jakékoli výjimky a zaškrtněte nebo zrušte zaškrtnutí **pokračovat v případě neošetřené v uživatelském kódu**. Pokud chcete rozdělit méně často pro výjimku, zrušte zaškrtnutí tohoto políčka.
+Ve výchozím nastavení většina výjimek přerušení při obslužnou rutinu výjimky nebyl nalezen ve zdrojovém kódu. Toto chování změnit, klikněte pravým tlačítkem na jakékoli výjimky a zaškrtněte nebo zrušte zaškrtnutí **pokračovat v případě neošetřené v uživatelském kódu**. Pokud chcete rozdělit méně často pro výjimku, zrušte zaškrtnutí tohoto políčka.
 
 Chcete-li konfigurovat výjimku, které nejsou uvedené v tomto seznamu, klikněte na tlačítko **přidat** tlačítko Přidat. Název musí odpovídat názvu úplné výjimky.
 
@@ -160,13 +160,13 @@ Ve výchozím nastavení spustí ladicí program vašeho programu standardní Sp
 | Překladač cesta | Přepíše cesta přidružená aktuální prostředí.  Hodnota může být užitečné pro spouštění vašeho skriptu s nestandardní překladač. |
 | Proměnné prostředí | V tomto poli víceřádkový text, přidat položky ve formátu `NAME=VALUE`. Protože toto nastavení je použito jako poslední, v horní části všechny stávající globální proměnné a po `PYTHONPATH` je nastaven podle nastavení cesty hledání ji umožňuje ručně přepsat všechny z nich jiné proměnné. |
 
-<a name="the-debug-interactive-window"</a>
+<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>Okamžité a interaktivní windows
 
 Existují dvě interaktivní windows můžete během relace ladění: okno Standardní okamžitou Visual Studio a Python ladění interaktivních okna.
 
-Příkazové podokno (**ladění > Windows > Immediate**) slouží k přiřazení proměnných v rámci spuštěným programem nebo rychlé vyhodnocení výrazů jazyka Python a kontroly. Najdete v části Obecné [hodnot proměnných](../ide/reference/immediate-window.md) tématu podrobnosti.
+Příkazové podokno (**ladění > Windows > Immediate**) slouží k přiřazení proměnných v rámci spuštěným programem nebo rychlé vyhodnocení výrazů jazyka Python a kontroly. Najdete v části Obecné [hodnot proměnných](../ide/reference/immediate-window.md) článku.
 
 Okno Python ladění interaktivní (**ladění > Windows > Python ladění interaktivní**) je širší, protože umožňuje kompletní [interaktivní REPL](python-interactive-repl-in-visual-studio.md) dojde k dispozici při ladění, včetně zápis a spuštění kódu. Automaticky připojí se k žádné proces spuštěný v ladicím programu pomocí standardní Python Spouštěče (včetně procesy připojená prostřednictvím **ladění > připojit k procesu**). Není, ale k dispozici při použití ladění ve smíšeném režimu C/C++.
 

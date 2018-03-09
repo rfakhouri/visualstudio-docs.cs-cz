@@ -6,28 +6,28 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: bf27e89b6a1a606b2a7430fc7d4394b8c5ab22bc
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="understanding-build-configurations"></a>Principy konfigurací sestavení
 
 ## <a name="project-build-configurations"></a>Konfigurace sestavení projektu 
 
-Projekty může mít víc konfigurací a přepínání mezi nimi umožňuje různých výstupy v čase vytvoření buildu. Například pokud použijete konfiguraci ladění, výstup bude obsahovat ladění symboly, což umožňuje ladicí program přeložit názvy funkcí, parametrů nebo proměnné z trasování zásobníku chyb aplikace. Použijete konfiguraci ladění, ale za následek zvýšeným velikost a tak nebude ideální pro aplikaci určených pro distribuci.
+Projekty mívají k více konfigurací a přepínání mezi nimi umožňuje různých výstupy v čase vytvoření buildu. Například výstup konfiguraci ladění symboly pro ladění, což ladicí program přeložit názvy funkcí, parametrů nebo proměnné z trasování zásobníku chyb aplikace. Pokud tyto další informace jsou užitečné při vývoji, vede k velikost zvýšeným souboru a není vhodné pro distribuci.
 
-Každá platforma bude mít konkrétní konfigurace pro jeho sestavení. Vývoj pro Xamarin.Android bude mít vždy pouze konfiguraci verze nebo verze pro ladění. Xamarin.iOS má další konfigurace. Projekty budou mít pouze novější iOS ladění a vydání konfigurace, ale ty lze nastavit pro všechny nainstalované simulátoru nebo zařízení.
+Každá platforma má konkrétní konfigurace pro jeho sestavení. 
 
 ## <a name="solution-configurations"></a>Konfigurace řešení
 
-Konfigurace řešení se podobají konfigurace projektu použít k vytvoření vlastní konfigurace pro celý projekt. Pomocí **konfigurace mapování** v části **sestavení > Konfigurace** položky, můžete přiřadit konfigurace cílového pro každou položku řešení, jak je uvedeno dále:
+Konfigurace řešení se podobají konfigurace projektu použít k vytvoření vlastní konfigurace pro celý projekt. Pomocí **konfigurace mapování** v části **sestavení > Konfigurace** položky, můžete přiřadit konfigurace cílového pro každou položku řešení, jak je znázorněno na následujícím obrázku:
 
 
  ![Možnosti konfigurace mapování](media/projects-and-solutions-image3.png)
 
-Další informace najdete v části [nástroje Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) video od James Montemagno.
+Další informace o konfiguracích najdete v tématu [nástroje Configuration Manager](https://www.youtube.com/watch?v=tjSdkqYh5Vg) video od James Montemagno.
 
 ## <a name="run-configuration"></a>Spuštění nástroje Konfigurace
 

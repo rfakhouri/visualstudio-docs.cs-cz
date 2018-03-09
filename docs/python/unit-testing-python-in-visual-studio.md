@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ac44ade848b4e423c1fcb253cf1867937f371719
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 94b37ef77e60db9c2040f74142155857fe2e60c6
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Nastavení pro kód Python testování částí
 
@@ -29,7 +29,7 @@ Testy jednotek jsou části kódu, které testování jiné jednotky kódu v apl
 
 Testování částí Python hojně používá k ověření scénáře při navrhování program. Podpora v jazyce Python v sadě Visual Studio obsahuje zjišťování, provádění a ladění testování částí v kontextu vývojových procesech, aniž by museli testy samostatně.
 
-Toto téma obsahuje stručný obrys možnosti testování v sadě Visual Studio s Pythonem částí. Další informace o obecně testování částí v tématu [jednotky Otestujte svůj kód](../test/unit-test-your-code.md).
+Tento článek poskytuje stručný obrys možnosti testování v sadě Visual Studio s Pythonem částí. Další informace o obecně testování částí v tématu [jednotky Otestujte svůj kód](../test/unit-test-your-code.md).
 
 |   |   |
 |---|---|

@@ -2,7 +2,7 @@
 title: "Možnosti a nastavení pro jazyk Python v sadě Visual Studio | Microsoft Docs"
 description: "Referenční dokumentace pro různá nastavení v sadě Visual Studio, které se vztahují na kód Python a projekty."
 ms.custom: 
-ms.date: 02/21/2018
+ms.date: 03/05/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,6 +16,7 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
 - VS.ToolsOptionsPages.Python_Tools.Diagnostics
+- VS.ToolsOptionsPages.Python_Tools.Experimental
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
@@ -24,11 +25,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25e0540c376017bfc3f3a64d23bbc6963942bb5c
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 9bb1316d46f252721230ce4ac1b14f4304693445
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Možnosti pro jazyk Python v sadě Visual Studio
 
@@ -36,19 +37,21 @@ Chcete-li zobrazit možnosti Python, použijte **nástroje > Možnosti** nabídk
 
 ![Dialogové okno Možnosti Python, karta Obecné](media/options-general.png)
 
-Existují také další možnosti specifické pro Python na **textový Editor > Python > Upřesnit** kartě.
+Existují také další možnosti specifické pro Python na **textový Editor > Python > Upřesnit** kartě a na **prostředí > písma a barev** kartě ve skupině "textového editoru".
 
 > [!Note]
 > **Experimentální** skupina obsahuje možnosti pro funkce, které jsou stále ve vývoji a nejsou zde popsány. Že jsou často popsané v příspěvcích na [inženýrství Python v blogu Microsoft](https://blogs.msdn.microsoft.com/pythonengineering/).
 
 ## <a name="general-options"></a>Obecné možnosti
 
+(**Nástroje > Možnosti > Python** karta.)
+
 | Možnost | Výchozí | Popis |
 | --- | --- | --- |
 | Zobrazí okno výstup, při vytváření virtuálního prostředí| On | Zrušením zabránit zobrazování okně výstupu. |
 | Zobrazí okno výstup při instalaci nebo odebrání balíčků | On | Zrušením zabránit zobrazování okně výstupu. |
 | Vždy spustit jako správce pip | Off | Vždy zvyšuje `pip install` operací pro všechna prostředí. Při instalaci balíčků, Visual Studio vyzve k zadání oprávnění správce, pokud prostředí je umístěný v oblasti chráněného systému souborů, jako `c:\Program Files`. V této výzvy můžete vždy zvýšení oprávnění `pip install` pro právě jeden prostředí. V tématu [balíčky karta](python-environments-window-tab-reference.md#packages-tab). |
-| Automaticky generovat dokončení DB při prvním použití | On | Pro [dokončování IntelliSense](editing-python-code-in-visual-studio.md#intellisense) fungovat pro knihovnu, musíte Visual Studio vygenerovat dokončení databáze pro tuto knihovnu. Vytváření databáze se provádí na pozadí při knihovny je nainstalovaná, ale nemusí být kompletní při spuštění psaní kódu. Tuto možnost Visual Studio upřednostňuje dokončení databáze pro knihovnu při psaní kódu, která jej používá. |
+| Automaticky generovat dokončení DB při prvním použití | On | *Při použití databáze IntelliSense, platí pro Visual Studio 2017 15,5 a starší verze a novějších verzích.* Upřednostňuje dokončení databáze pro knihovnu při psaní kódu, která jej používá. Další informace najdete v tématu [odkaz na okno prostředí – karta Intellisense](python-environments-window-tab-reference.md). |
 | Ignorovat systémové PYTHONPATH proměnné | On | PYTHONPATH ve výchozím nastavení se ignoruje, protože Visual Studio poskytuje více přímé prostředky ke specifikaci cest hledání v prostředích a projektů. V tématu [cesty hledání](search-paths.md) podrobnosti. |
 | Cesty hledání aktualizací při přidání připojené soubory | On | Je-li nastaven, přidání [připojený soubor](managing-python-projects-in-visual-studio.md#linked-files) do projektu aktualizace [cesty hledání](search-paths.md) tak, aby IntelliSense můžete zahrnout obsah složky připojený soubor ve své databázi dokončení. Zrušte zaškrtnutí tohoto políčka vyloučit takový obsah z databáze dokončení. |
 | Upozornit, pokud importovat modul nebyl nalezen. | On | Zrušte této volby potlačení upozornění, když víte importovaného modulu není v současné době dostupné, ale neovlivní jinak operaci kódu. |
@@ -59,6 +62,8 @@ Existují také další možnosti specifické pro Python na **textový Editor > 
 ![Dialogové okno Možnosti Python, karta Obecné](media/options-general.png)
 
 ## <a name="debugging-options"></a>Možnosti ladění
+
+(**Nástroje > Možnosti > Python > ladění** karta.)
 
 | Možnost | Výchozí | Popis |
 | --- | --- | --- |
@@ -72,6 +77,8 @@ Existují také další možnosti specifické pro Python na **textový Editor > 
 
 ## <a name="diagnostics-options"></a>Možnosti diagnostiky
 
+(**Nástroje > Možnosti > Python > diagnostiky** karta.)
+
 | Možnost | Výchozí | Popis |
 | --- | --- | --- |
 | Zahrnout analýzy protokolů | On | Obsahuje podrobné protokoly týkající se analýza nainstalované prostředí Python při ukládání diagnostiku do souboru nebo jejich kopírování do schránky. pomocí tlačítka. Tato možnost může výrazně zvýšit velikost vygenerovaný soubor, ale je často potřeba diagnostikovat problémy IntelliSense. |
@@ -81,6 +88,8 @@ Existují také další možnosti specifické pro Python na **textový Editor > 
 ![Dialogové okno Možnosti Python, karta Diagnostika](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>Interaktivní možnosti Windows
+
+(**Nástroje > Možnosti > Python > Interaktivní Windows** karta.)
 
 | Možnost | Výchozí | Popis |
 | --- | --- | --- |
@@ -92,6 +101,8 @@ Existují také další možnosti specifické pro Python na **textový Editor > 
 ![Dialogové okno, karta interaktivních okna Možnosti Python](media/options-interactive-windows.png)
 
 ## <a name="advanced-python-editor-options"></a>Rozšířené možnosti editoru Python
+
+(**Nástroje > Možnosti > textový Editor > Python > Upřesnit** karta.)
 
 ### <a name="completion-results"></a>Dokončení výsledky
 
@@ -105,7 +116,7 @@ Existují také další možnosti specifické pro Python na **textový Editor > 
 
 | Možnost | Výchozí | Popis |
 | --- | --- | --- |
-| Potvrzené zadáním následujících znaků | {}[]().,:;+-*/%&&#124;^~=<>#@\ | Tyto znaky obvykle podle identifikátor, který jeden může vybrat ze seznamu dokončení, takže je vhodné potvrdit dokončení jednoduše tak, že zadáte znak. Můžete odebrat nebo přidat konkrétní znaků do seznamu podle potřeby.  |
+| Potvrzené zadáním následujících znaků | `{}[]().,:;+-*/%&&#124;^~=<>#@\` | Tyto znaky obvykle podle identifikátor, který jeden může vybrat ze seznamu dokončení, takže je vhodné potvrdit dokončení jednoduše tak, že zadáte znak. Můžete odebrat nebo přidat konkrétní znaků do seznamu podle potřeby.  |
 | Zadejte aktuální dokončení potvrzení | On | Pokud nastavíte, klávesy Enter vybere a použije aktuálně vybrané dokončení stejně jako u výše uvedených znaků (ale samozřejmě není k dispozici znak pro Enter tak ho nebylo možné přejít do tohoto seznamu přímo!). |
 | Přidejte nový řádek na zadejte na konci plně typu aplikace word | Off | Ve výchozím nastavení Pokud zadáte celá slova, která se zobrazí v automaticky otevřeném okně dokončení a stiskněte klávesu Enter, potvrzení tohoto dokončení. Pomocí této možnosti můžete efektivně potvrdit dokončených po dokončení zápisu identifikátor, tak, aby Enter vloží nový řádek. |
 
@@ -118,3 +129,11 @@ Existují také další možnosti specifické pro Python na **textový Editor > 
 | Na základě typů názvy barev | On | Umožňuje v kódu jazyka Python zvýrazňování syntaxe. |
 
 ![Dialogu Možnosti editoru Python, karta Upřesnit](media/options-editor-advanced.png)
+
+## <a name="fonts-and-colors-options"></a>Možnosti písma a barev
+
+(**Prostředí > písma a barev** kartě ve skupině "textového editoru".)
+
+Názvy možností Python jsou všechny s předponou "Python" a není potřeba vysvětlovat. Výchozí písmo pro všechny sady Visual Studio barevné motivy je 10 b Consolas regular (není tučně). Výchozí barvy se liší podle motivu. Obvykle změníte písmo nebo barvu Pokud se vám najít obtížné čtení textu s výchozím nastavením.
+
+![Možnosti písma a barvy Python](media/options-fonts-and-colors.png)

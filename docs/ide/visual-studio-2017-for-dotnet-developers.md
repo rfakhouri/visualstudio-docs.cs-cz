@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: f15239ed045185449735ec3b5e0bcdc514fa786d
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: be14af66f5aa5389e9e701eb79dc68ee733c6068
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>Visual Studio 2017 pro vývojáře .NET
 
@@ -106,7 +106,7 @@ Níže jsou uvedeny oblíbených zkratky v sadě Visual Studio. Upozorňujeme, �
 | **Ctrl+F12** | Přejít na implementaci | Přejděte do jeho různé implementace ze základní typ nebo člen |
 | **Shift+F12** | Najít všechny odkazy | Zobrazit všechny symbol nebo literálu odkazy |
 | **Ctrl**+**.** (také **Alt + zadejte** v profilu C#) | Rychlé akce a refaktoringy | Zobrazit, jaké kód opravy, akce generování kódu, refaktoring nebo jiných rychlé akce jsou k dispozici na výběr kurzoru pozici nebo kód |
-| **CTRL**+**E**,**V** | Duplicitní řádku | Duplikuje řádek kódu, která kurzor se nachází v (k dispozici v **Visual Studio 2017 verze 15,6 operací preview 2** a novější) |
+| **CTRL**+**E**,**V** | Duplicitní řádku | Duplikuje řádek kódu, která kurzor se nachází v (k dispozici v **Visual Studio 2017 verze 15,6 operací** a novější) |
 | **Ctrl+Q** | Snadné spuštění | Hledání všechna nastavení sady Visual Studio |
 | **F5** | Spuštění ladění | Spuštění ladění aplikace |
 | **Ctrl+F5** | Spustit bez ladění | Místní spuštění aplikace bez ladění |

@@ -1,16 +1,16 @@
 ---
-title: "Projekty a řešení"
-description: "Tento dokument obsahuje přehled projekty a řešení v Xamarin Studio."
+title: "Projekty a řešení v sadě Visual Studio pro Mac | Microsoft Docs"
+description: "Tento dokument obsahuje přehled projekty a řešení v sadě Visual Studio for Mac."
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: 366e2c0df83a3e04f5f226a2a24ddced8c85dd2b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 1e3662fb45d91dfe5d7e2bb883dbf6918d0fd252
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="projects-and-solutions"></a>Projekty a řešení
 
@@ -18,11 +18,11 @@ Visual Studio pro Mac poskytuje _řešení Pad_ zobrazíte stromovou strukturu c
 
 ## <a name="using-projects-and-solutions"></a>Pomocí projekty a řešení
 
-Pokud chcete vytvořit nový projekt nebo řešení, najdete [vytváření nové projekty a řešení](~/create-new-projects.md) tématu.
+Pokud chcete vytvořit nový projekt nebo řešení, najdete [vytváření nové projekty a řešení](~/create-new-projects.md) článku.
 
 ## <a name="project-and-solution-options"></a>Možnosti řešení a projektu
 
-Vlastnosti projekty a řešení můžete spravovat buď dvojitým kliknutím na název projekt nebo řešení, nebo kliknutím pravým tlačítkem myši a přejděte na **možnosti**. Další informace o těchto možnostech jsou součástí [řešení pro správu a vlastnosti projektu](~/managing-solutions-and-project-properties.md) tématu.
+Vlastnosti projekty a řešení můžete spravovat buď dvojitým kliknutím na název projekt nebo řešení, nebo kliknutím pravým tlačítkem myši a přejděte na **možnosti**. Další informace o těchto možnostech najdete v [řešení pro správu a vlastnosti projektu](~/managing-solutions-and-project-properties.md) článku.
 
 
 

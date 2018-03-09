@@ -6,19 +6,19 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 2f6c06ff640007f28cfaed6512fdedc5dcb16e65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
+ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Nastavení úložiště Git
 
 Git je distribuovaný systém správy verzí umožňující týmy pro práci na stejné dokumenty současně. To znamená, že je jeden server, který obsahuje všechny soubory, ale vždy, když úložiště je rezervována z tohoto centrální zdroje, úložišti celý místně naklonována k vašemu počítači.
 
-Existuje mnoho vzdáleným hostitelům, které umožňují pracovat s Gitem pro správu verzí, ale nejběžnější z nich je Githubu. Následující příklad používá hostitel Githubu, ale můžete použít libovolného hostitele Git pro správu verzí v sadě Visual Studio for Mac.
+Existuje mnoho vzdáleným hostitelům, které umožňují pracovat s Gitem pro správu verzí, ale nejběžnější hostitel je Githubu. Následující příklad používá hostitel Githubu, ale můžete použít libovolného hostitele Git pro správu verzí v sadě Visual Studio for Mac.
 
-Pokud chcete použít Githubu, ujistěte se, že máte účet vytvořený a nakonfigurovaný před následujících kroků. 
+Pokud chcete použít Githubu, ujistěte se, že máte účet vytvořený a nakonfigurovaný před podle kroků v tomto článku. 
 
 ## <a name="creating-a-remote-repo-on-github"></a>Vytváření vzdálené úložišti na Githubu
 
@@ -34,20 +34,22 @@ Pokud chcete nastavit úložiště Git, spusťte následující kroky:
 
     ![Podrobnosti o sadě úložiště git](media/version-control-git2.png)
 
-3. V dalším místě získáte možnost zobrazit a zkopírujte adresu protokol HTTPS nebo SSH k úložišti, které jste právě vytvořili:
+3. Na další stránku vám dává možnost zobrazení a zkopírujte adresu protokol HTTPS nebo SSH k úložišti, které jste vytvořili:
 
-    ![zobrazení a zkopírování adresy](media/version-control-git3.png) potřebujete adresu HTTPS pro bod Visual Studio pro Mac do tohoto úložiště.
+    ![zobrazení a zkopírování adresy](media/version-control-git3.png)
+
+  Budete potřebovat adresu HTTPS pro bod Visual Studio pro Mac do tohoto úložiště.
 
 
 ## <a name="publishing-an-existing-project"></a>Publikování existujícího projektu
 
 4. Vrátit do projektu otevřete v sadě Visual Studio for Mac. 
 
-5. V panelu nabídek vyberte **verzí > Publikovat ve správě verzí...** :
+5. V panelu nabídek vyberte **verzí > Publikovat ve správě verzí...** Chcete-li zobrazit **vyberte úložiště** dialogové okno:
 
     ![Spuštění najdete v článku věnovaném v sadě Visual Studio pro Mac](media/version-control-git4-sml.png)
 
-6. Bude se zobrazovat **vyberte úložiště** dialogové okno. Vyberte **zaregistrován úložiště** kartě a stiskněte klávesu **přidat** tlačítko:
+6. Vyberte **zaregistrován úložiště** kartě a stiskněte klávesu **přidat** tlačítko:
 
     ![](media/version-control-git5.png)
 
@@ -57,23 +59,23 @@ Pokud chcete nastavit úložiště Git, spusťte následující kroky:
 
     Všimněte si, že je také možné se připojit k Git prostřednictvím SSH.
 
-8. K pokusu o publikování aplikace do Git, vyberte úložiště právě vytvořili a ujistěte se, že oba **název modulu** a **zpráva** dokončení textová pole:
+8. K pokusu o publikování aplikace do Git, vyberte úložiště a ujistěte se, že oba **název modulu** a **zpráva** dokončení textová pole:
 
     ![Pokus o publikování projektu git](media/version-control-git7.png)
 
 9. Klikněte na tlačítko **nevadí**a potom **publikovat** z dialogového okna výstrah.
 
-10. Pokud jste již nezadali přihlašovacích údajů Git v sadě Visual Studio pro Mac předvolby, zadejte je. Nejprve musíte vytvořit přístupu k tokenu, který se používá místo hesla. Postupujte podle kroků v Gitu [tokenu přístupu](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) dokumentace k tomu.
+10. Pokud jste již nezadali přihlašovacích údajů Git v sadě Visual Studio pro Mac předvolby, zadejte je. Nejprve musíte vytvořit přístupu k tokenu, který se používá místo hesla. Pokud jste dosud nevytvořili přístupový token, postupujte podle kroků v Gitu [tokenu přístupu](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) dokumentaci.
 
 11. Zadejte uživatelské jméno a osobní tokenu přístupu a stiskněte klávesu **nevadí**:
 
     ![Zadejte uživatelské jméno a heslo pro git](media/version-control-git9-sml.png)
 
-12. Za několik sekund je nutné ji publikovat řešení s jeho počáteční potvrzení. To potvrďte procházením položku nabídky verzí, který by měl nyní možné naplnit mnoho možností: 
+12. Za několik sekund je nutné ji publikovat řešení s jeho počáteční potvrzení. Potvrďte, že publikování procházením položku nabídky verzí, který by měl nyní možné naplnit mnoho možností: 
 
     ![Verze ovládacího prvku nabídka](media/version-control-git10.png)
 
-13. Jakmile začnete provést další změny vyberte **Push změny...**  tak, aby nabízel změny **vzdáleného** úložiště. To vám umožní všem odpovídající uživatelům zobrazit na webu github.com: 
+13. Jakmile začnete udělat další změny, vyberte **Push změny...**  tak, aby nabízel změny **vzdáleného** úložiště. To vám umožní všem odpovídající uživatelům zobrazit na webu github.com: 
 
     ![Doručte změny do vzdáleného úložiště](media/version-control-git11.png)
 
