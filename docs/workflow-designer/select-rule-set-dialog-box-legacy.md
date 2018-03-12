@@ -1,53 +1,49 @@
 ---
 title: "Vyberte dialogové okno nastavit pravidlo (zastaralé) | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
 - Select Rule Set dialog box
 ms.assetid: cb2bc3f9-7730-4fb2-9f7b-303a9d9f0c8e
-caps.latest.revision: 
-author: ErikRe
-ms.author: erikre
-manager: erikre
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: ae62202bc1762cfcf893586291ee735af69d813c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: df8d8675d7a3a94aa9bc4e72da6c52de65df3545
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Dialogové okno nastavit vyberte pravidlo (zastaralé)
-Toto téma popisuje, jak používat **vyberte pravidlo nastavené** dialogovém okně pro starší verze [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
-  
- **Vyberte pravidlo nastavené** dialogové okno slouží k výběru sadu pravidel, můžete použít s [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) aktivity. Informace o tom, jak získat přístup **vyberte pravidlo nastavené** dialogové okno, najdete v části [postupy: vytvoření aktivitě PolicyActivity pravidlo sady (zastaralé)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
-  
- Následující tabulka popisuje prvky uživatelského rozhraní (UI) **vyberte pravidlo nastavené** dialogové okno.  
-  
-|Prvek uživatelského rozhraní (UI)|Popis|  
-|----------------|-----------------|  
-|**Nové...**|Kliknutím otevřete [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) vytvořit novou podmínku pravidla.|  
-|**Upravit...**|Kliknutím otevřete [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) upravit vybrané pravidlo podmínku.|  
-|**Přejmenování...**|Kliknutím otevřete dialogové okno používá k přejmenování sadu vybrané pravidlo.|  
-|**Odstranit**|Klikněte na Odstranit sadu vybrané pravidlo.|  
-|**Náhled sady pravidel**|Zobrazuje pravidla v sadě vybrané pravidlo.|  
-|**OK**|Klikněte na tlačítko Přiřadit vybrané sady pravidel **aktivitě PolicyActivity** aktivity.|  
-  
- Další informace o tom, jak vytvářet a upravovat sady pravidel najdete v tématu [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
-  
+Toto téma popisuje, jak používat **vyberte pravidlo nastavené** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+
+ **Vyberte pravidlo nastavené** dialogové okno slouží k výběru sadu pravidel, můžete použít s [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) aktivity. Informace o tom, jak získat přístup **vyberte pravidlo nastavené** dialogové okno, najdete v části [postupy: vytvoření aktivitě PolicyActivity pravidlo sady (zastaralé)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+
+ Následující tabulka popisuje prvky uživatelského rozhraní (UI) **vyberte pravidlo nastavené** dialogové okno.
+
+|Prvek uživatelského rozhraní (UI)|Popis|
+|----------------|-----------------|
+|**Nové...**|Kliknutím otevřete [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) vytvořit novou podmínku pravidla.|
+|**Edit...**|Kliknutím otevřete [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) upravit vybrané pravidlo podmínku.|
+|**Přejmenování...**|Kliknutím otevřete dialogové okno používá k přejmenování sadu vybrané pravidlo.|
+|**Odstranit**|Klikněte na Odstranit sadu vybrané pravidlo.|
+|**Náhled sady pravidel**|Zobrazuje pravidla v sadě vybrané pravidlo.|
+|**OK**|Klikněte na tlačítko Přiřadit vybrané sady pravidel **aktivitě PolicyActivity** aktivity.|
+
+ Další informace o tom, jak vytvářet a upravovat sady pravidel najdete v tématu [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
+
 > [!WARNING]
->  Pravidla editoru starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] používané cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] nepodporuje cílení na více verzí.  
-  
- Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://go.microsoft.com/fwlink?LinkID=65009).  
-  
-## <a name="see-also"></a>Viz také  
- [Aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   
- [Pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)   
- [Pomocí aktivity aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004)   
- [Pomocí podmínek v pracovních postupech](http://go.microsoft.com/fwlink?LinkID=65009)
+> Pravidla editoru starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] používané cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] nepodporuje cílení na více verzí.
+
+ Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://go.microsoft.com/fwlink?LinkID=65009).
+
+## <a name="see-also"></a>Viz také
+
+- [Aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)
+- [Dialogové okno Editor sad pravidel (starší verze)](../workflow-designer/rule-set-editor-dialog-box-legacy.md)
+- [Pomocí aktivity aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004)
+- [Pomocí podmínek v pracovních postupech](http://go.microsoft.com/fwlink?LinkID=65009)

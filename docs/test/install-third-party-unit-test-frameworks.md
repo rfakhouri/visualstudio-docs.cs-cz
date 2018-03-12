@@ -9,13 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 author: gewarren
-ms.openlocfilehash: 57a33ce473cd82fcb6fb8517d7003c8772c1d4da
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: c0cd7853c65d5501213076cb7ccb533c5134c9f4
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalace systémů testů jednotek od třetích stran
 Testování Průzkumníka Visual Studio můžete spustit test rozhraní, které vyvinula adaptéru rozhraní pro aplikaci Explorer žádné jednotky. Instalační program rozhraní Framework nainstalují binární soubory a přidá šablony projektů Visual Studio pro jazyky, které podporuje. Když vytvoříte pomocí šablony projektu, rozhraní je zaregistrován pomocí Průzkumníka testů. Řešení sady Visual Studio může obsahovat projektů testů jednotek, které používají různé architektury a které se budou zaměřovat na různé jazyky. Průzkumníka testů spouští je všechny.  
@@ -56,7 +57,24 @@ Testování Průzkumníka Visual Studio můžete spustit test rozhraní, které 
   
 3.  V **kategorie** seznamu (označené jako **zobrazující**), rozbalte **nástroje** uzel a potom zvolte **testování**.  
   
-4.  Zvolte rozhraní v seznamu výsledků přejít na stránku Visual Studio Marketplace pro nástroj.  
-  
-## <a name="see-also"></a>Viz také  
- [Testování částí kódu](../test/unit-test-your-code.md)
+4.  Zvolte rozhraní v seznamu výsledků přejít na stránku Visual Studio Marketplace pro nástroj. 
+
+## <a name="update-to-the-latest-test-adapters"></a>Aktualizovat na nejnovější adaptéry testu
+
+Aktualizace na nejnovější stabilní testovací adaptér, který má lepší prostředí otestovat zjišťování a spouštění. Další informace o aktualizacích Mstestu, NUnit a xUnit testovací adaptéry, najdete v článku [blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/11/16/test-experience-improvements/).
+
+### <a name="to-update-to-the-latest-stable-test-adapter-version"></a>Aktualizace na verzi adaptér nejnovější stabilní testu
+
+1. Otevřete Správce balíčků Nuget pro řešení přechodem na **nástroje > Správce balíčků NuGet > Správa balíčků NuGet pro řešení...**
+
+2. Klikněte na **aktualizace** kartě a vyhledejte NUnit nebo xUnit testovací adaptéry, které jsou nainstalovány.
+
+3. Vyberte každý adaptér testu a pak v rozevírací nabídce vyberte nejnovější stabilní verze.
+
+4. Vyberte **nainstalovat** tlačítko.
+
+![Testování upgradu adaptéru](media/installadapter-upgrade.png)
+
+## <a name="see-also"></a>Viz také
+
+- [Testování částí kódu](../test/unit-test-your-code.md)

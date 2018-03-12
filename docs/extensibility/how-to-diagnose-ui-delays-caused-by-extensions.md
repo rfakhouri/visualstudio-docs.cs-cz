@@ -12,11 +12,11 @@ author: PooyaZv
 ms.author: pozandev
 manager: ghogen
 ms.workload: multiple
-ms.openlocfilehash: dffc67e550cb57f9f089e180ff399f27c817d253
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 714d047cda7a167045983f5068a425d0d82823ea
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Postupy: diagnostikování uživatelského rozhraní zpoždění způsobené rozšíření
 
@@ -157,6 +157,8 @@ Nástroje PerfView obsahuje podrobné pokyny v nabídce Nápověda, který můž
 
 * [https://aka.ms/vsthreading](https://aka.ms/vsthreading)
 * [https://aka.ms/vsthreadingcookbook](https://aka.ms/vsthreadingcookbook)
+
+Můžete použít také novou statickou analyzátorů Visual Studio pro rozšíření (balíček NuGet [sem](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)), které poskytují pokyny na osvědčené postupy pro psaní efektivní rozšíření. Podívejte se do seznamu [VS SDK analyzátorů](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) a [dělení na vlákna analyzátorů](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md).
 
 > [!NOTE]
 > Pokud nelze vyřešit absence reagování z důvodu závislosti nemáte řízení přes (například pokud vaše rozšíření má volat synchronní VS služby ve vlákně UI), bychom rádi vědět o něm. Pokud jste členem naší program Visual Studio partnera, kontaktujte nás odesláním žádosti o podporu developer. Jinak hodnota pomocí nástroje "nahlásit problém, odešlete svůj názor a zahrnují `"Extension UI Delay Notifications"` v názvu. Uveďte také podrobný popis analýzy.

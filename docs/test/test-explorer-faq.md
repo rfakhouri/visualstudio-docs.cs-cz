@@ -18,11 +18,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 63c1b25ad597dc3d56dfc398ec9c6c463aec200d
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: d06c02e651dd4acdcaebf05448282f26c20e3a75
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Průzkumníka testů – nejčastější dotazy
 
@@ -64,9 +64,15 @@ ms.lasthandoff: 02/12/2018
 
 ### <a name="8-how-does-sorting-test-results-work-in-the-hierarchy-view"></a>8. Jak funguje řazení výsledků testů v zobrazení hierarchie?
 
-  Zobrazení hierarchie seřadí testy abecedně jako naproti tomu mají podle výsledek. Jiné skupiny nastavením normálně seřadit výsledky testů výsledek a pak podle abecedy. Níže jsou uvedeny různé Seskupit podle možností pro porovnání. Můžete poskytnout zpětnou vazbu návrh [v potíže Githubu](https://github.com/Microsoft/vstest/issues/1425).
+  Zobrazení hierarchie seřadí testy abecedně jako naproti tomu mají podle výsledek. Jiné skupiny nastavením normálně seřadit výsledky testů výsledek a pak podle abecedy. Pomocí možností na následujícím obrázku pro porovnání najdete v jiné skupině. Můžete poskytnout zpětnou vazbu návrh [v potíže Githubu](https://github.com/Microsoft/vstest/issues/1425).
 
   ![SortingExamples](media/testex-sortingex.png)
+
+### <a name="9-in-the-hierarchy-view-there-are-passed-failed-skipped-and-not-run-icons-next-to-the-project-namespace-and-class-groupings-what-do-these-icons-mean"></a>9. V zobrazení hierarchie existuje jsou předány, selhalo, bylo vynecháno a není spuštění ikonami vedle projektu, Namespace a třída seskupení. Co znamenají tyto ikony?
+
+  Ikony vedle seskupení projektu, Namespace a třída odrážející stav testů v rámci tohoto seskupení. Najdete v následující tabulce.
+
+  ![Ikony hierarchie Průzkumníka testů](media/testex-hierarchyicons.png)
 
 ## <a name="features"></a>Funkce
 

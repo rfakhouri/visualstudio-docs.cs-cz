@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 94b37ef77e60db9c2040f74142155857fe2e60c6
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 55b99e2f572b075c1e9ab1658c8a02b3fdd5ea88
+ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Nastavení pro kód Python testování částí
 
@@ -43,16 +43,16 @@ Podle konvence, Visual Studio identifikuje testů jsou jako metody, jejichž ná
 
 1. Tato akce vytvoří `test1.py` soubor s kódem, který importuje standardní `unittest` modulu, odvozená třída testu z `unittest.TestCase`a vyvolá `unittest.main()` Pokud spustíte skript přímo:
 
-  ```python
-  import unittest
+    ```python
+    import unittest
 
-  class Test_test1(unittest.TestCase):
-      def test_A(self):
-          self.fail("Not implemented")
+    class Test_test1(unittest.TestCase):
+        def test_A(self):
+            self.fail("Not implemented")
 
-  if __name__ == '__main__':
-      unittest.main()
-  ```
+    if __name__ == '__main__':
+        unittest.main()
+    ```
 
 1. Uložte soubor v případě potřeby a pak otevřete Průzkumníka testů pomocí **testovací > Windows > Průzkumníka testů** příkazu nabídky.
 
