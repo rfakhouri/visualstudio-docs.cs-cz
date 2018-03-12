@@ -1,5 +1,6 @@
 ---
-title: "Rychlý úvod: Vytvoření prostředí Windows Forms aplikace v sadě Visual Studio s jazykem Visual Basic | Microsoft Docs"
+title: "Vytvoření Windows Forms aplikace v sadě Visual Studio s jazykem Visual Basic | Microsoft Docs"
+description: "Zjistěte, jak vytvořit aplikaci Windows Forms v sadě Visual Studio s jazykem Visual Basic, krok za krokem."
 ms.custom: 
 ms.date: 12/04/2017
 ms.reviewer: 
@@ -7,7 +8,7 @@ ms.suite:
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: 
-ms.topic: quickstart
+ms.topic: article
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
@@ -16,14 +17,14 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ecab13523c5d2ae362a58527f8c15ce1f26dd225
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 592ad202ca41792c6a73a77b7c01bab71fdbcdc7
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="quickstart-create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Rychlý úvod: Vytvoření prostředí Windows Forms aplikace v sadě Visual Studio s jazykem Visual Basic
-V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou aplikaci jazyka Visual Basic, která má založené na Windows uživatelské rozhraní (UI).
+# <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Vytvoření Windows Forms aplikace v sadě Visual Studio s jazykem Visual Basic
+Tento stručný úvod v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou aplikaci jazyka Visual Basic, která má založené na Windows uživatelské rozhraní (UI).
 
 Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
 

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 757534638c9e4b2b6cecd75f62997994bf14cc0c
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 598aa6332d69f7818f9f67134c3207a9bd365757
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: Použití okna interaktivní REPL
 
@@ -100,7 +100,7 @@ Visual Studio *interaktivních okna* pro jazyk Python poskytuje prostředí boha
 > [!div class="nextstepaction"]
 > [Spuštěním kódu v ladicím programu](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
-### <a name="going-deeper"></a>Budete hlubší
+## <a name="going-deeper"></a>Budete hlubší
 
 - [Pomocí interaktivních okna](python-interactive-repl-in-visual-studio.md)
 - [Použití IPythonu REPL](interactive-repl-ipython.md)

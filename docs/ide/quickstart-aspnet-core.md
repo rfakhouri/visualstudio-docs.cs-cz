@@ -7,23 +7,25 @@ ms.suite:
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 66017b65e3d1201e02272447cbd3ec1c33c8a5d6
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.openlocfilehash: ba3c6655401501edf1f71e04f2aa249a6a001dda
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první webové aplikace ASP.NET Core
 
-V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou webovou aplikaci ASP.NET Core C#. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
+V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou webovou aplikaci ASP.NET Core C#.
+
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
@@ -86,6 +88,5 @@ Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se naučili
 
 ## <a name="see-also"></a>Viz také
 
-[Začínáme s C# a ASP.NET v sadě Visual Studio](tutorial-csharp-aspnet-core.md)  
-[Začínáme s C# a Visual Basic pomocí sady Visual Studio](getting-started-with-visual-csharp-and-visual-basic.md)  
-[Začínáme s stránky Razor v ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
+* [Začínáme s C# a ASP.NET v sadě Visual Studio](tutorial-csharp-aspnet-core.md)
+* [Začínáme s stránky Razor v ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)

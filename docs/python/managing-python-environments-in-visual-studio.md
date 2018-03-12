@@ -16,11 +16,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 139916cbecd6e0c22062da9221d452c16309a564
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 558ce58461b27bc9a86906278602d00d96377c63
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="managing-python-environments-in-visual-studio"></a>Správa prostředí Python v sadě Visual Studio
 
@@ -70,7 +70,7 @@ V obou případech **prostředí Python** okno se zobrazí jako karty na stejné
 
 Na obrázku výše vidíte, že Visual Studio zjistil dvou zařízení Python 3.6 (32 bitů) společně s Anaconda 5.0.0.
 
-Výchozí prostředí tučným je 3.6 Python (v tomto případě část instalace Anaconda), který Visual Studio používá pro všechny nové projekty. Příkazy v dolní části okna platí pro vybraný jazyk Python 3.6 překladač, který jako jste viděli je konkrétní instalace v `C:\Python36-32`. Pokud nevidíte očekáváte, že prostředí, najdete v části [ručně identifikace existující překladač](#manually-identifying-an-existing-interpreter).
+Výchozí prostředí tučným je 3.6 Python (v tomto případě část instalace Anaconda), který Visual Studio používá pro všechny nové projekty. Příkazy v dolní části okna platí pro vybraný jazyk Python 3.6 překladač, který jako jste viděli je konkrétní instalace v `C:\Python36-32`. Pokud nevidíte očekáváte, že prostředí, najdete v části [ručně Identifikace stávajícího prostředí](#manually-identifying-an-existing-environment).
 
 Napravo od jednotlivých uvedených prostředí je ovládací prvek, které se otevře okno s interaktivní pro prostředí. Další ovládací prvek může se zobrazit se aktualizuje databázi IntelliSense pro prostředí (viz [odkaz na okno prostředí](python-environments-window-tab-reference.md#intellisense-tab) podrobnosti o databázi).
 

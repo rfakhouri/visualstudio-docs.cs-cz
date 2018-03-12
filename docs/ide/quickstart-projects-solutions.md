@@ -10,16 +10,19 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 74ac22508ea00a59dc4b29806253b4a041994c54
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Rychlý úvod: Projekty a řešení
 
 V tento rychlý start 10 minut jsme budete zjistit, co znamená vytvoření řešení a projektu v sadě Visual Studio. Podíváme vlastnosti projektu a některé soubory, které může obsahovat. Také vytvoříme odkaz na druhý projekt.
+
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
 
 > [!TIP]
 > Jsme budete jako výukových cvičení porozumět koncepci projektu vytváření řešení a projektu od začátku v tento rychlý start. V obecné používání sady Visual Studio pravděpodobně použijete mnoho šablony projektů, které Visual Studio nabízí při vytváření nového projektu.

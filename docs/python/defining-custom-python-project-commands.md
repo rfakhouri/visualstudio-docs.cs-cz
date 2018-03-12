@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1fa4c68b1d7dc89452376d6efc47e047f75d52d6
-ms.sourcegitcommit: 06cdc1651aa7f45e03d260080da5a623d6258661
+ms.openlocfilehash: ec06764bb898888657a144f682827896f52ce223
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definování vlastní příkazy pro projektů v jazyce Python
 
@@ -154,7 +154,7 @@ Všechny hodnoty atributů jsou velká a malá písmena.
 | Arguments | Nepovinné | Určuje řetězec argumentů umožnit k cíli (pokud existuje). Upozorňujeme, že pokud je TargetType `script`, argumenty, které uvedeny k programu Python, není `python.exe`. U ignoruje `code` TargetType. |
 | ExecuteIn | Ano | Určuje prostředí, ve kterém se má spustit příkaz:<ul><li>**konzole**: (výchozí) spustí, cíl a argumenty jako jejich zadání přímo na příkazovém řádku. Příkazové okno se zobrazí, když cíl běží, pak je automaticky uzavřeny.</li><li>**consolepause**: stejné konzoly, ale čeká keypress před jeho zavřením okna.</li><li>**výstup**: cíl spustí a zobrazí její výsledky v okně výstupu v sadě Visual Studio. Pokud TargetType "pip", Visual Studio Target používá jako název balíčku a připojí argumenty.</li><li>**REPL**: cíl běží v [interaktivní okno Python](interactive-repl.md); volitelný zobrazovaný název se používá pro nadpis okna.</li><li>**žádný**: se chová stejně jako konzola.</li></ul>|
 | WorkingDirectory | Nepovinné | Složka, ve kterém se má spustit příkaz. |
-| ErrorRegex<br>WarningRegEx | Nepovinné | Použít pouze, pokud je ExecuteIn `output`. Obě hodnoty, zadejte jako regulární výraz, pomocí kterého Visual Studio analyzuje výstupu příkazu v okně Seznam chyb zobrazit chyby a upozornění. Pokud není zadaný, neovlivňuje příkazu v okně Seznam chyb. Další informace, na jaké sadě Visual Studio očekává, najdete v části [skupiny pojmenované zachycení](#named-capture-groups-for-regular-expression). |
+| ErrorRegex<br>WarningRegEx | Nepovinné | Použít pouze, pokud je ExecuteIn `output`. Obě hodnoty, zadejte jako regulární výraz, pomocí kterého Visual Studio analyzuje výstupu příkazu v okně Seznam chyb zobrazit chyby a upozornění. Pokud není zadaný, neovlivňuje příkazu v okně Seznam chyb. Další informace, na jaké sadě Visual Studio očekává, najdete v části [skupiny pojmenované zachycení](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Nepovinné | Seznam požadavků balíčku pro příkaz, který používá stejný formát jako [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Spustit PyLint** příkaz, například určuje `pylint>=1.0.0`. Před spuštěním příkazu, Visual Studio kontroluje, zda jsou nainstalovány všechny balíčky v seznamu. Visual Studio použije pip nainstalovat všechny chybějící balíčky. |
 | Prostředí | Nepovinné | Řetězec proměnné prostředí k definování před spuštěním příkazu. Každá proměnná se používá ve formátu název = hodnota v případě více proměnných oddělené středníky. Proměnné s více hodnotami musí být součástí jedné nebo dvojité uvozovky, jako v ' NAME = VALUE1; HODNOTA2 '. |
 

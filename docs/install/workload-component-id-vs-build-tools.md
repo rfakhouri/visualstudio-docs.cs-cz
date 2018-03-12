@@ -17,11 +17,11 @@ ms.technology:
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: dba4c71320f00e4e35bc7c8d115aa342eac23de3
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4da292ede647539182b6b1f2e8aa6c843d2f0985
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio 2017 nástroje pro sestavení součástí adresáře
 
@@ -86,12 +86,12 @@ Microsoft.VisualStudio.Component.Node.Build | Podpora Node.js | 15.6.27406.0 | P
 
 ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statické analytické nástroje | 15.0.26208.0 | Požadováno
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Nástroje sestavení Visual C++ pro základní funkce | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Aktualizace Visual C++ 2017 Redistributable | 15.6.27406.0 | Požadováno
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Sada nástrojů v141 VC ++ 2017 (x86, x64) | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | Požadováno
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statické analytické nástroje | 15.0.26208.0 | Doporučeno
 Microsoft.VisualStudio.Component.VC.CMake.Project | Nástroje sady Visual C++ pro CMake | 15.6.27406.0 | Doporučeno
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Sada nástrojů v141 VC ++ 2017 (x86, x64) | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) pro plochy C++ [x86 a x64] | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) pro UPW: C++ | 15.6.27406.0 | Doporučeno

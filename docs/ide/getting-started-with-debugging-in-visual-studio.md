@@ -4,23 +4,27 @@ ms.custom:
 ms.date: 12/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: "5"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c75b5508cd23a2131bcdd64cf52aacc1486d2713
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.workload:
+- multiple
+ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
+ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Začínáme s laděním v sadě Visual Studio
 Visual Studio poskytuje výkonnou sadu integrované sestavení projektu a nástroje pro ladění. V tomto tématu zjistěte, jak začít používat sadu nejzákladnější ladění funkcí uživatelského rozhraní.  
+
+Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio"></a>Vlastní kód nefunguje. Pomozte mi, Visual Studio  
  Takže jste započítáno out editoru a vytvoříte nějaký kód. Nyní budete chtít spustit ladění tento kód. V sadě Visual Studio, stejně jako u většiny integrovaného vývojového prostředí, existují dvě fáze k ladění: vytváření kódu zachytit a vyřešit chyby projektu a kompilátoru; a spuštění tohoto kódu v prostředí zachytit a řešení chyb při běhu a dynamické.  
@@ -55,7 +59,7 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
 
  Chyba je identifikována red "klikatá" podtržítka. Pozastavte ukazatel myši nad jeho další podrobnosti. Proveďte opravu a jeho zmizí, i když může znamenat nové chyby s oprava. (To se nazývá "regrese".)  
 
- ![Visual Studio chyba hover](../ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
+ ![Visual Studio error hover](../ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
 
  Provede v seznamu chyb a vyřešte všechny chyby v kódu.  
 
@@ -77,7 +81,7 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
 
  Zobrazí se seznam možných opravy nebo refactors, které můžete provést u tohoto řádku kódu.  
 
- ![Visual Studio žárovky preview](../ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
+ ![Visual Studio Light Bulb preview](../ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
 
  Žárovek lze použít bez ohledu na analyzátorů kódu určit, že je možnost pro opravu, refactor, nebo vylepšení vašeho kódu. Klikněte na každý řádek kódu, pravým tlačítkem a otevřete kontextu nabídku a vyberte **rychlé akce** (nebo znovu, pokud dáváte přednost efektivitu, stiskněte **Ctrl +**.). Pokud jsou k dispozici refaktoring nebo zlepšování možností, budou zobrazena; v opačném zpráva `No quick options available here` se zobrazí v lůžkem levém dolním rohu okna IDE.  
 
@@ -101,7 +105,7 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
 
  Zarážku kliknutím v úplně okraj řádku místo rozdělení dojít nebo stiskněte klávesu **F9** nastavit zarážky na aktuálním řádku kódu. Při spuštění kódu se pozastaví (nebo *zalomení*) předtím, než se spustí pokyny pro tento řádek kódu.  
 
- ![Visual Studio zarážek](../ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")   
+ ![Visual Studio breakpoint](../ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")   
 
  Mezi běžná použití pro zarážky patří:  
 
@@ -118,15 +122,15 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
 ### <a name="inspect-your-code-at-run-time"></a>Kontrola kódu v době běhu  
  Při spuštění kódu dotkne boru přerušení a pozastaví, nebyl ještě provést řádek kódu označena žlutě (aktuální příkaz). V tomto okamžiku můžete provést aktuální příkaz a zkontrolujte změněné hodnoty. Můžete použít několik *krok* příkazů pro spuštění kódu v ladicím programu. Pokud je označen jako kód volání metody, můžete do ní krok stisknutím **F11**. Můžete také *krok přes* řádek kódu stisknutím **F10**. Další příkazy a podrobnosti o tom, jak procházet kód, přečtěte si [přejděte kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
 
- ![Visual Studio spustit & č. 45; hodnota kontroly času](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value") 
+ ![Visual Studio spustit&#45;čas hodnota kontroly](../ide/media/vs_ide_gs_debug_hit_breakpoint.PNG "vs_ide_gs_debug_inspect_value")
 
  V předchozí ilustraci postoupíte ladicí program jeden příkaz stisknutím buď **F10** nebo **F11** (vzhledem k tomu, že není zde žádná volání metody, jak příkazy mají stejný výsledek).
 
  Při ladicího programu je pozastavena, můžou kontrolovat proměnných a k určení, co se děje zásobníky volání. Hodnoty jsou v oblastech, které byste měli vidět? Jsou volání určené ve správném pořadí?  
 
- ![Visual Studio spustit & č. 45; hodnota kontroly času](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
+ ![Visual Studio spustit&#45;čas hodnota kontroly](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
- Podržte ukazatel nad proměnné zobrazíte hodnoty a odkazy, které aktuálně obsahuje. Pokud se zobrazí hodnota, kterou by neměl být, pravděpodobně chyby v předchozích nebo volání řádků kódu.  Podrobnější informace [Další](../debugger/getting-started-with-the-debugger.md) o používání ladicího programu. 
+ Podržte ukazatel nad proměnné zobrazíte hodnoty a odkazy, které aktuálně obsahuje. Pokud se zobrazí hodnota, kterou by neměl být, pravděpodobně chyby v předchozích nebo volání řádků kódu.  Podrobnější informace [Další](../debugger/getting-started-with-the-debugger.md) o používání ladicího programu.
 
  Kromě toho Visual Studio zobrazí okno diagnostické nástroje, kde můžete sledovat vaše aplikace CPU a využití paměti v čase. Později ve vývoji vaší aplikace můžete tyto nástroje Pokud chcete vyhledat neočekávané velkou využití nebo paměť přidělení procesoru. Použít ve spojení s **sledovat** okno a zarážky pro příčinu neočekávané velkou využití nebo nevydané prostředky.  Další informace najdete v tématu [profilace prohlídka funkce](../profiling/profiling-feature-tour.md).
 
