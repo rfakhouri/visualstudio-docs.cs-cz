@@ -1,4 +1,4 @@
-# [Představení sady Visual Studio pro Mac](index.md)
+# [Představení Visual Studia pro Mac](index.md)
 ## [Výhody sady Visual Studio pro Mac oproti Xamarin Studiu](benefits-vsmac-over-xs.md)
 # [Prohlídka integrovaného vývojového prostředí (IDE)](ide-tour.md)
 
@@ -8,7 +8,7 @@
 
 # [Uživatelské účty](user-accounts.md)
 ## [Přihlášení](signing-in.md)
-## [Aktivace](activation.md)
+## [Povolení předplatného](activation.md)
 
 # [Přizpůsobení integrovaného vývojového prostředí (IDE)](customizing-the-ide.md)
 ## [Rozšíření sady Visual Studio pro Mac](extending-visual-studio-mac.md)
