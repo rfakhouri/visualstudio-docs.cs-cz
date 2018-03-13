@@ -4,7 +4,8 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-general
+ms.technology:
+- vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -14,11 +15,12 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-caps.latest.revision: "11"
+caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 0f71cca51a27c8ed9d6467d99425d4d3b721d195
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -26,7 +28,7 @@ ms.contentlocale: cs-CZ
 ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Dialogové okno Snadné spuštění, Prostředí, Možnosti
-Můžete použít **Snadné spuštění** k rychlému vyhledání a provádět akce u prostředků IDE jako možnosti, šablony, nabídky. Nemůžete použít **Snadné spuštění** vyhledávání kódu a symboly. **Snadné spuštění** vyhledávacího pole je umístěna v pravém horním rohu panelu nabídek a je přístupný výběrem kombinace kláves Ctrl + Q klíče. Do pole zadejte hledaný řetězec. K vyhledání řetězce, které obsahují @, použijte ' @@'.  
+Můžete použít **Snadné spuštění** k rychlému vyhledání a provádět akce u prostředků IDE jako možnosti, šablony, nabídky. Nemůžete použít **Snadné spuštění** vyhledávání kódu a symboly. **Snadné spuštění** vyhledávacího pole je umístěna v pravém horním rohu panelu nabídek a je přístupný výběrem kombinace kláves Ctrl + Q klíče. Do pole zadejte hledaný řetězec. K vyhledání řetězce, které obsahují @, použijte ”@@”.   
   
  **Snadné spuštění** je ve výchozím nastavení povolené při instalaci sady Visual Studio. V řádku nabídek, můžete zobrazit nebo skrýt **Snadné spuštění** výběrem **nástroje**, **možnosti**. Rozbalte **prostředí** uzel a potom zvolte **Snadné spuštění**. Vyberte nebo zrušte **povolit rychlé spuštění** zaškrtávací políčko. Můžete také povolit nebo zakázat kategorie vyhledávání na této stránce.  
   
