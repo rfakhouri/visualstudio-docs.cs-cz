@@ -4,20 +4,22 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-debug
+ms.technology:
+- vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
-caps.latest.revision: "8"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cfe16da805ec8a43af8bed0c7e112e589d060bc4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.workload:
+- multiple
+ms.openlocfilehash: 2324c857807f2f15762ce36539df3d7c2ad01b4b
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 Když potřebujete prozkoumat problémy s výkonem v aplikaci, je vhodné oddělení na zahájení pochopení, jak používá procesoru. **Využití procesoru** nástroj ukazuje, kde je procesoru výdaje čas provádění Visual C++, Visual C# nebo Visual Basic a kód jazyka JavaScript. Od verze Visual Studio 2015 Update 1, můžete zobrazit rozpis podle funkce využití procesoru bez opuštění ladicího programu. Můžete zapnout procesoru profilace zapnout a vypnout při ladění a zobrazit výsledky při spuštění je zastaveno, například zarážky.  
@@ -25,8 +27,11 @@ Když potřebujete prozkoumat problémy s výkonem v aplikaci, je vhodné odděl
 Máte několik možností pro spouštění a správu relace diagnostiky. Například můžete spustit **využití procesoru** nástroj na místních nebo vzdálených počítačích nebo na v simulátoru nebo emulátor. Můžete analyzovat výkon otevřít projekt v sadě Visual Studio, připojený k spuštěné aplikaci, nebo můžete spustit aplikaci, která je nainstalované ze služby Microsoft Store. Další informace najdete v tématu [spustit nástrojích pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
 Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi sestavení. Analýza využití procesoru při ladění, najdete v tématu [začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md). 
+
+> [!NOTE]
+> Pro .NET Core a ASP.NET Core nástroje využití CPU aktuálně neposkytuje přesné výsledky s přenosné PBDs. Místo toho použijte úplný soubory PDB.
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a>Shromažďování údajů o využití procesoru  
+##  <a name="BKMK_Collect_CPU_usage_data"></a> Shromažďování údajů o využití procesoru  
   
 1.  V sadě Visual Studio, nastavte konfiguraci řešení na **verze** a vyberte cíl nasazení.  
   
@@ -58,10 +63,10 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analýza využití procesoru sestavy  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a>Využití procesoru stromu volání  
+###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Využití procesoru stromu volání  
  Pokud chcete začít, vysvětlení volání stromu informace, vyberte znovu `GetMaxNumberButton_Click` segmentovat a podívejte se na podrobnosti o stromu hovoru.  
   
-####  <a name="BKMK_Call_tree_structure"></a>Struktura stromu volání  
+####  <a name="BKMK_Call_tree_structure"></a> Struktura stromu volání  
  ![GetMaxNumberButton&#95;Click call tree](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -71,7 +76,7 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
 |![Step 3](../profiling/media/procguid_3.png "ProcGuid_3")|Podřízené objekty daného uzlu druhé úrovně jsou metody uživatelského kódu a asynchronní rutiny, které jsou volány, nebo vytvořené druhé úrovně systému a framework kódu.|  
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Podřízené uzly metody obsahovat data jen pro volání metody nadřazené. Když **zobrazit externí kód** je zakázaná, metody aplikace může také obsahovat **[externí kód]** uzlu.|  
   
-####  <a name="BKMK_External_Code"></a>Externí kódu  
+####  <a name="BKMK_External_Code"></a> Externí kódu  
  Externí kódu jsou funkcí v systému a framework komponenty, provedený kód napíšete. Externí kód zahrnují funkce, které spuštění a zastavení aplikace, vykreslení uživatelského rozhraní, řídit vlákna a poskytují jiných nízké úrovně služeb k aplikaci. Ve většině případů nebude zájem o externí kód, a tak využití procesoru volání stromu shromáždí externí funkce metody uživatele do jedné **[externí kód]** uzlu.  
   
  Pokud chcete zobrazit cesty volání externí kódu, zvolte **zobrazit externí kód** z **filtrovat zobrazení** seznamu a potom zvolte **použít**.  
@@ -86,7 +91,7 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
   
  ![Vyhledávání pro vnořené externí kód](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a>Volání stromu datové sloupce  
+###  <a name="BKMK_Call_tree_data_columns"></a> Volání stromu datové sloupce  
   
 |||  
 |-|-|  
@@ -96,7 +101,7 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
 |**Self CPU (ms)**|Počet milisekund, po stráví ve volání funkce v vybraný časový rozsah a funkce, které byly volá funkci.|  
 |**Modul**|Název modul, který obsahuje funkce, nebo počet modulů obsahující funkce v uzlu služby [externí kód].|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a>Asynchronní funkce ve využití procesoru stromu volání  
+###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchronní funkce ve využití procesoru stromu volání  
  Když kompilátor narazí asynchronní metodu, vytvoří třídu skrytá k řízení provádění metody. Třída je koncepčně, stav počítač, který obsahuje seznam generované kompilátorem funkce, které volají operace původní metody asynchronně, a zpětná volání, Plánovač a iterátory potřeba správně spustit. Při původní metoda je volána metodou nadřazeného, modulu runtime odebere metodu z nadřazeného objektu kontextu spuštění a spustí metody třídy skryté v kontextu systému a framework kód, který řídí spuštění aplikace. Asynchronní metody jsou často, ale ne vždy provést na jeden nebo více různých vláknech. Tento kód se zobrazí ve stromové struktuře využití procesoru volání jako podřízené objekty **[externí kód]** uzlu bezprostředně pod na nejvyšší uzel stromu.  
   
  Pokud chcete zobrazit tento v našem příkladu, znovu vyberte `GetMaxNumberAsyncButton_Click` segmentu v časovou osu.  
@@ -107,8 +112,8 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
   
  ![Expanded GetMaxNumberAsyncButton&#95;Click call tree](../profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click`nemá velmi málo; spravuje seznam hodnot úloh, vypočítá maximální počet výsledků a zobrazí výstup.  
+-   `MainPage::GetMaxNumberAsyncButton_Click` nemá velmi málo; spravuje seznam hodnot úloh, vypočítá maximální počet výsledků a zobrazí výstup.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext`ukazuje, aktivity, které jsou potřebné k naplánování a spuštění 48 úlohy, které balí volání `GetNumberAsync`.  
+-   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` ukazuje, aktivity, které jsou potřebné k naplánování a spuštění 48 úlohy, které balí volání `GetNumberAsync`.  
   
--   `MainPage::<GetNumberAsync>b__b`ukazuje aktivitu úlohy, které volají `GetNumber`.
+-   `MainPage::<GetNumberAsync>b__b` ukazuje aktivitu úlohy, které volají `GetNumber`.

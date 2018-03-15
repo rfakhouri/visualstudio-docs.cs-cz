@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8808fca81da991727fa439aae10d0e3541e81389
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2520d0b7b5aba982f3e9ca228ad6de85f6890d7f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Vytvoření kódu v procesu sestavení
 [Transformace textu](../modeling/code-generation-and-t4-text-templates.md) nelze vyvolat v rámci [proces sestavení](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení. Některé úlohy sestavení se specializují na transformaci textu. Úlohy sestavení T4 spouštějí textové šablony návrhu a rovněž kompilují textové šablony běhu (předzpracované).  
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/09/2018
   
  To znamená, že nelze přístup věcmi, jako jsou názvy souborů projektu stejným způsobem, když vytvoříte šablonu text v nástroji MSBuild. Můžete však [předání informací o prostředí do textové šablony a procesory direktiv pomocí parametrů sestavení](#parameters).  
   
-##  <a name="buildserver"></a>Konfigurace vašich počítačů  
+##  <a name="buildserver"></a> Konfigurace vašich počítačů  
  Chcete-li úlohami sestavení ve svém vývojovém počítači, nainstalujte modelování SDK pro Visual Studio.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -66,7 +66,7 @@ ms.lasthandoff: 02/09/2018
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`  
   
- \-nebo –  
+ \- nebo –  
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`  
   
@@ -131,7 +131,7 @@ ms.lasthandoff: 02/09/2018
   
  Pokud chcete určit, že se soubory určené jen pro čtení mají přepisovat, vložte tuto vlastnost:  
   
- `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
+ `<OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
  Dokud tento krok následného zpracování neupravíte, při přepsání souboru se do seznamu chyb zaprotokoluje upozornění.  
   
@@ -172,7 +172,7 @@ ms.lasthandoff: 02/09/2018
 </ItemGroup>  
 ```  
   
- Je užitečné složku pro přesměrování`$(IntermediateOutputPath).`  
+ Je užitečné složku pro přesměrování `$(IntermediateOutputPath).`  
   
  Zadáte-li název výstupního souboru, bude mít přednost před příponou zadanou v direktivě output v šablonách.  
   
@@ -208,7 +208,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="parameters"></a>Předat data kontextu sestavení do šablony  
+##  <a name="parameters"></a> Předat data kontextu sestavení do šablony  
  Hodnoty parametru lze nastavit v souboru projektu. Například můžete předat [sestavení](../msbuild/msbuild-properties.md) vlastnosti a [proměnné prostředí](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
@@ -240,9 +240,9 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```  
   
 > [!NOTE]
->  `ResolveParameterValue`získá data z `T4ParameterValues` pouze při použití nástroje MSBuild. Při transformaci šablony pomocí sady Visual Studio budou mít parametry výchozí hodnoty.  
+>  `ResolveParameterValue` získá data z `T4ParameterValues` pouze při použití nástroje MSBuild. Při transformaci šablony pomocí sady Visual Studio budou mít parametry výchozí hodnoty.  
   
-##  <a name="msbuild"></a>Pomocí vlastnosti projektu v sestavení a direktivy začlenění  
+##  <a name="msbuild"></a> Pomocí vlastnosti projektu v sestavení a direktivy začlenění  
  Visual Studio makra jako $(solutiondir) – nefungují v nástroji MSBuild. Místo toho můžete použít vlastnosti projektu.  
   
  Úpravou souboru .csproj nebo .vbproj definujte vlastnost projektu. Tento příklad definuje vlastnost s názvem `myLibFolder`:  

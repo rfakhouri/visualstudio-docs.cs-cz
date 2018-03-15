@@ -17,16 +17,16 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccc9b014a3d31fef4e3f491da394cdf1e9fb3ecb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d2a38a2c0830b701796b8417c69a75582c5b2f89
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-provide-a-service"></a>Postupy: poskytování služby
 VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskytování služeb, musí VSPackage Zaregistrujte službu pomocí sady Visual Studio a přidání služby.  
   
- <xref:Microsoft.VisualStudio.Shell.Package> Třída implementuje obě <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> a <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer>obsahuje metody zpětného volání, které poskytují služby na vyžádání.  
+ <xref:Microsoft.VisualStudio.Shell.Package> Třída implementuje obě <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> a <xref:System.ComponentModel.Design.IServiceContainer>. <xref:System.ComponentModel.Design.IServiceContainer> obsahuje metody zpětného volání, které poskytují služby na vyžádání.  
   
  Další informace o službách najdete v tématu [služby Essentials](../extensibility/internals/service-essentials.md) .  
   
@@ -35,7 +35,7 @@ VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskyt
   
 #### <a name="implementing-a-service"></a>Implementace služby  
   
-1.  Vytvoření projektu VSIX (**soubor > Nový > Projekt > Visual C# > Extensiblity > Projekt VSIX**).  
+1.  Vytvoření projektu VSIX (**soubor > Nový > Projekt > Visual C# > Rozšíření > Projekt VSIX**).  
   
 2.  Do projektu přidejte VSPackage. Vyberte uzel projektu v **Průzkumníku řešení** a klikněte na tlačítko **Přidat > novou položku > Visual C# položky > Rozšíření > Balíček Visual Studio**.  
   
@@ -47,7 +47,7 @@ VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskyt
   
     -   Třída, která implementuje rozhraní služby a služby.  
   
-     Následující příklad ukazuje velmi základní implementaci všech tří typů. V konstruktoru třídy služeb, musíte nastavit poskytovatele služeb.  
+     Následující příklad ukazuje základní implementaci všech tří typů. V konstruktoru třídy služeb, musíte nastavit poskytovatele služeb.  
   
     ```csharp  
     public class MyService : SMyService, IMyService  
@@ -117,7 +117,7 @@ VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskyt
     private object CreateService(IServiceContainer container, Type serviceType)  
     {  
         if (typeof(SMyService) == serviceType)  
-            return new SMyService(this);  
+            return new MyService(this);  
         return null;  
     }  
     ```  
@@ -125,7 +125,7 @@ VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskyt
     > [!NOTE]
     >  Visual Studio můžete odmítnout žádost o poskytovat služby. Dělá to tak, pokud jiné VSPackage již poskytuje službu.  
   
-3.  Teď můžete získat službu a použít její metody. Ukážeme to inicializátoru, ale můžete získat službu kdekoli chcete používat službu.  
+3.  Teď můžete získat službu a použít její metody. Následující příklad ukazuje použití služby v inicializátoru, ale můžete získat službu kdekoli chcete používat službu.  
   
     ```csharp  
     protected override void Initialize()  
@@ -136,7 +136,7 @@ VSPackage poskytuje služby, které můžete použít jiné VSPackages. K poskyt
   
         MyService myService = (MyService) this.GetService(typeof(SMyService));  
         myService.Hello();  
-        string helloString = myService.myString;  
+        string helloString = myService.Goodbye();  
   
         base.Initialize();  
     }  

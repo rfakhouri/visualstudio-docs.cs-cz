@@ -1,5 +1,6 @@
 ---
 title: "Rychlý úvod: použijte sadu Visual Studio k vytvoření první aplikace Node.js | Microsoft Docs"
+description: "V tento rychlý start můžete vytvořit aplikaci Node.js v sadě Visual Studio"
 ms.custom: 
 ms.date: 11/15/2017
 ms.reviewer: 
@@ -17,11 +18,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 89ecece1701520bf9e88221b2d3961a631d66ca0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 8597d7ee61820afdd8fcfdbff9cdb5be8dfaa61c
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-nodejs-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první aplikace Node.js
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou webovou aplikaci Node.js. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).  
@@ -29,21 +30,21 @@ V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prost
 ## <a name="create-a-project"></a>Vytvoření projektu
 Nejdřív vytvoříte projekt Node.js webové aplikace.
 
+1. Pokud nemáte runtime Node.js již nainstalována, nainstalovat verzi LTS [Node.js](https://nodejs.org/en/download/) webu.
+
+    Obecně platí Visual Studio automaticky rozpozná nainstalované runtime Node.js. Pokud nezjistí instalované verzi můžete nakonfigurovat projekt tak, aby odkazovaly nainstalovaný modul runtime.
+
 1. Open Visual Studio 2017.  
 
-2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .  
+1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .  
 
-3. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, zvolte **Node.js**. V prostředním podokně vyberte **prázdné Node.js webové aplikace**, zvolte **OK**.   
+1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, zvolte **Node.js**. V prostředním podokně vyberte **prázdné Node.js webové aplikace**, zvolte **OK**.   
 
      Pokud nevidíte **prázdné Node.js webové aplikace** projektu šablony, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí instalační program Visual Studio. Vyberte **Node.js vývoj** zatížení, zvolte **upravit**.  
 
      ![Node.js zatížení v instalační program VS](../ide/media/quickstart-nodejs-workload.png)  
 
-    Visual Studio vytvoří a nového řešení a otevře projektu. **Server.js** otevřen v editoru.
-
-4. Pokud nemáte runtime Node.js již nainstalována, nainstalujte ji z [Node.js](https://nodejs.org/en/download/) webu.
-
-    Obecně platí Visual Studio automaticky rozpozná nainstalované runtime Node.js. Pokud nezjistí instalované verzi můžete nakonfigurovat projekt tak, aby odkazovaly nainstalovaný modul runtime.
+    Visual Studio vytvoří a nového řešení a otevře projektu. *Server.js* se otevře v editoru v levém podokně.
 
 ## <a name="explore-the-ide"></a>Prozkoumejte rozhraní IDE  
 
@@ -61,11 +62,11 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
    ![Node.js příkazového řádku](../ide/media/quickstart-nodejs-command-prompt.png) 
 
-1. V **server.js** souboru v editoru (levé podokno), zvolte `http.createServer` a potom stiskněte klávesu **F12** nebo zvolte **přejít k definici** z nabídky kontextu (klikněte pravým tlačítkem). Tento příkaz má definici `createServer` funkce v index.d.ts.  
+1. V *server.js* souboru v editoru (levé podokno), zvolte `http.createServer` a potom stiskněte klávesu **F12** nebo zvolte **přejít k definici** z nabídky kontextu (klikněte pravým tlačítkem). Tento příkaz má definici `createServer` funkce v index.d.ts.  
 
    ![Přejít k definici kontextové nabídky](../ide/media/quickstart-nodejs-gotodefinition.png)  
 
-1. V tomto řádku kódu, umístěte kurzor na konci řetězce `res.end('Hello World\n');`a upravit ji tak, aby vypadá takto:
+1. Získali zpět do *server.js*, pak v tomto řádku kódu, umístěte kurzor na konci řetězce `res.end('Hello World\n');`a upravit ji tak, aby vypadá takto:
 
     `res.end('Hello World\n' + res.connection.`
 
@@ -88,6 +89,5 @@ Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se naučili
 
 ## <a name="next-steps"></a>Další kroky 
 
-- Projděte [kurzu Node.js](../nodejs/tutorial-nodejs.md)  
-- Další informace o [Visual Studio IDE](../ide/visual-studio-ide.md)  
-- Další informace o [Node.js Tools pro Visual Studio](https://github.com/Microsoft/nodejstools/wiki)
+- Projděte [kurzu Node.js a Express](../nodejs/tutorial-nodejs.md)  
+- Projděte [kurzu Node.js a reagují](../nodejs/tutorial-nodejs-with-react-and-jsx.md)  

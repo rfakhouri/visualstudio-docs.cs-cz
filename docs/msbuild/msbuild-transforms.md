@@ -17,32 +17,29 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 670465059f86e7dd5ccbe725bc0d86aed2fc97b1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: b02c8b6c16bf0d1ffd75ee52d34d72446a06ed25
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="msbuild-transforms"></a>Transformace nástroje MSBuild
 Transformace je 1: 1 převod jednu položku seznamu do jiného. Kromě povolení projektu převést položek seznamů, umožňuje transformace cíl k identifikaci přímého mapování mezi jeho vstupů a výstupů. Toto téma vysvětluje, transformace a jak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je používá k vytvoření projektů efektivněji.  
   
 ## <a name="transform-modifiers"></a>Modifikátory transformace  
- Transformace nejsou libovolný, ale mají omezenou speciální syntaxi, ve kterém všechny modifikátory transformace musí být ve formátu %(*ItemMetaDataName*). Veškerá metadata položky můžete použít jako modifikátoru transformace. To zahrnuje metadata známé položky, přiřazený každá položka při jeho vytvoření. Seznam známá metadata položky, naleznete v části [Metadata známé položky](../msbuild/msbuild-well-known-item-metadata.md).  
+Transformace nejsou libovolný, ale mají omezenou speciální syntaxi, ve kterém všechny modifikátory transformace musí být ve formátu %(*ItemMetaDataName*). Veškerá metadata položky můžete použít jako modifikátoru transformace. To zahrnuje metadata známé položky, přiřazený každá položka při jeho vytvoření. Seznam známá metadata položky, naleznete v části [Metadata známé položky](../msbuild/msbuild-well-known-item-metadata.md).  
   
- V následujícím příkladu seznam souborů RESX transformována do seznamu .resources souborů. Modifikátor transformace %(filename) určuje, že každý soubor .resources má stejný název jako odpovídající soubor RESX.  
+V následujícím příkladu, seznam *RESX* soubory transformována do seznamu *.resources* soubory. Modifikátor transformace %(filename) určuje, aby se každý *.resources* soubor má stejný název jako odpovídající *RESX* souboru.  
   
 ```  
 @(RESXFile->'%(filename).resources')  
-```  
-  
+```
+
+Například, pokud jsou položky v seznamu položek @(RESXFile) *Form1.resx*, *Form2.resx*, a *Form3.resx*, bude výstupy v seznamu transformovaných  *Form1.Resources*, *Form2.resources*, a *Form3.resources*.  
+
 > [!NOTE]
->  Stejným způsobem zadejte oddělovač pro standardní položky seznamu můžete zadat vlastní oddělovače transformovaných položky seznamu. Například samostatné seznam transformovaných položky oddělte čárkou (,) namísto výchozí středníkem (;), použijte následující kód XML.  
-  
-```  
-@(RESXFile->'Toolset\%(filename)%(extension)', ',')  
-```  
-  
- Například, pokud jsou položky v seznamu položek @(RESXFile) `Form1.resx`, `Form2.resx`, a `Form3.resx`, bude výstupy v seznamu transformovaných `Form1.resources`, `Form2.resources`, a `Form3.resources`.  
+>  Stejným způsobem zadejte oddělovač pro standardní položky seznamu můžete zadat vlastní oddělovače transformovaných položky seznamu. Například samostatné seznam transformovaných položky oddělte čárkou (,) namísto výchozí středníkem (;), použijte následující kód XML:  
+> `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
   
 ## <a name="using-multiple-modifiers"></a>Použití více modifikátory  
  Výraz transformace může obsahovat více modifikátory, které mohou být kombinovány v libovolném pořadí a lze je opakovat. V následujícím příkladu se změnil název adresáře, který obsahuje soubory, ale soubory zachovat původní přípona názvu název a souboru.  
@@ -51,12 +48,12 @@ Transformace je 1: 1 převod jednu položku seznamu do jiného. Kromě povolení
 @(RESXFile->'Toolset\%(filename)%(extension)')  
 ```  
   
- Například, pokud položky, které jsou součástí `RESXFile` seznamu položek jsou `Project1\Form1.resx`, `Project1\Form2.resx`, a `Project1\Form3.text`, výstupy v seznamu transformovaných bude `Toolset\Form1.resx`, `Toolset\Form2.resx`, a `Toolset\Form3.text`.  
+ Například, pokud položky, které jsou součástí `RESXFile` seznamu položek jsou *Project1\Form1.resx*, *Project1\Form2.resx*, a *Project1\Form3.text*, výstupy v seznamu transformovaných bude *Toolset\Form1.resx*, *Toolset\Form2.resx*, a *Toolset\Form3.text*.  
   
 ## <a name="dependency-analysis"></a>Analýza závislostí  
  Transformace zaručit mapování 1: 1 mezi transformovaných položky seznamu a původní seznam položek. Proto v případě, že cíl vytvoří výstupů, které jsou transformací vstupních hodnot, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] můžete analyzovat časová razítka vstupy a výstupy a rozhodnout, zda chcete přeskočit, sestavení nebo částečně znovu sestavit cíl.  
   
- V [úlohy kopie](../msbuild/copy-task.md) v následujícím příkladu každý soubor v `BuiltAssemblies` seznamu položek mapy do souboru v cílové složce úlohy, při použití transformace v zadat `Outputs` atribut. Pokud soubor v `BuiltAssemblies` položky seznamu změny `Copy` úloha se spustí pouze pro změněný soubor a všechny ostatní soubory bude přeskočeno. Další informace o detekci závislosti a o používání transformace najdete v tématu [postupy: sestavení postupně](../msbuild/how-to-build-incrementally.md).  
+ V [úlohy kopie](../msbuild/copy-task.md) v následujícím příkladu každý soubor v `BuiltAssemblies` seznamu položek mapy do souboru v cílové složce úlohy, při použití transformace v zadat `Outputs` atribut. Pokud soubor v `BuiltAssemblies` položky seznamu změny `Copy` úkolů spouští pouze pro změněný soubor a všechny ostatní soubory se přeskočí. Další informace o detekci závislosti a o používání transformace najdete v tématu [postupy: sestavení postupně](../msbuild/how-to-build-incrementally.md).  
   
 ```xml  
 <Target Name="CopyOutputs"  
@@ -97,7 +94,7 @@ Transformace je 1: 1 převod jednu položku seznamu do jiného. Kromě povolení
 ```  
   
 ### <a name="comments"></a>Komentáře  
- Tento příklad vytvoří následující výstup.  
+ Tento příklad vytvoří následující výstup:  
   
 ```  
 rootdir: C:\  

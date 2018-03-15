@@ -5,7 +5,8 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology: devlang-javascript
+ms.technology:
+- devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - prototype [JavaScript]
 - prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
-caps.latest.revision: "6"
+caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 200ca757e72b2eec8f09fd48a841cc8eb816c85d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>Prototypy a jejich dědičnost
 V jazyce JavaScript `prototype` je vlastnost funkce a objekty, které jsou vytvořené pomocí funkce konstruktoru. Prototypem funkce je objekt. Nejčastěji se využívá, když se funkce použije jako konstruktor.  
@@ -80,9 +81,12 @@ var bicycle = Object.create(Object.getPrototypeOf(Vehicle), {
  `bicycle` Objekt má vlastnosti `wheels`, `engine`, `color`, a `pedals`, a jeho prototypu `Vehicle.prototype`. Najde modul JavaScript `pedals` vlastnost `bicycle`, a dojde k vyhledání řetězce prototypu pro vyhledání `wheels`, `engine`, a `color` vlastnosti `Vehicle`.  
   
 ### <a name="changing-an-objects-prototype"></a>Změna prototypu objektu  
- V aplikaci Internet Explorer 11, můžete nahradit interní prototyp objektu nebo funkce prototyp nové pomocí [__proto\_ \_ ](../../javascript/reference/proto-property-object-javascript.md) vlastnost. Když použijete tuto vlastnost, zdědíte vlastnosti a metody nového prototypu společně se všemi ostatními vlastnostmi a metodami v jejím řetězci prototypu.  
+V aplikaci Internet Explorer 11, můžete nahradit interní prototyp objektu nebo funkce prototyp nové pomocí [ __proto –__ ](../../javascript/reference/proto-property-object-javascript.md) vlastnost. Když použijete tuto vlastnost, zdědíte vlastnosti a metody nového prototypu společně se všemi ostatními vlastnostmi a metodami v jejím řetězci prototypu.  
+
+> [!WARNING]
+> `__proto__` Vlastnost je starší verze funkce. Použití [Object.getprototypeof –](../reference/object-getprototypeof-function-javascript.md) místo.
   
- Následující příklad ukazuje, jak lze změnit prototyp objektu. Tento příklad ukazuje, jak se změní zděděné vlastnosti objektu při změně jeho prototypu.  
+Následující příklad ukazuje, jak lze změnit prototyp objektu. Tento příklad ukazuje, jak se změní zděděné vlastnosti objektu při změně jeho prototypu.  
   
 ```JavaScript  
 function Friend() {  

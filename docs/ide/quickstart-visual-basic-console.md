@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 2573e1a2344b858b721fb234d6b228b421a36550
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: a531582b2474305d7c286f936e29a7bc9804d7bf
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Rychlý úvod: Vytvoření první aplikace konzoly v sadě Visual Studio s jazykem Visual Basic
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou aplikaci jazyka Visual Basic, která běží na konzole.
@@ -30,7 +30,7 @@ Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio st
 ## <a name="create-a-project"></a>Vytvoření projektu
 Nejdřív vytvoříte projekt aplikace Visual Basic. Typ projektu se dodává s všechny soubory šablony, které budete potřebovat, než jste přidali i nic!
 
-1. Otevřete Visual Studio 2017.
+1. Open Visual Studio 2017.
 
 2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
 
@@ -81,9 +81,8 @@ Přidejme nějaký kód pozastavení aplikace a pak požádejte na vstup uživat
 
    ![Okně zobrazující Hello, World konzoly a stisknutím libovolné klávesy pokračujte](../ide/media/vb-console-hello-world-press-any-key.png)
 
-Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se dozvěděli, chvíli o jazyka Visual Basic a Visual Studio IDE. Pokud chcete pustíte hlubší, pokračujte prosím se v kurzu **kurzy** části obsahu.
+## <a name="next-steps"></a>Další kroky
+Blahopřejeme k dokončení tento rychlý start! Věříme, že jste se dozvěděli, chvíli o jazyka Visual Basic a Visual Studio IDE. Další informace najdete v následujícím kurzu pokračujte.
 
-## <a name="see-also"></a>Viz také
-* [Rychlý úvod: Vytvoření "Hello World" Windows Forms aplikace v jazyce Visual Basic pomocí sady Visual Studio](quickstart-visual-basic-winforms.md)
-* [Kurz: Začínáme s jazykem Visual Basic v sadě Visual Studio](tutorial-visual-basic-console.md)
-* [IntelliSense pro soubory s kódem jazyka Visual Basic](visual-basic-specific-intellisense.md)
+> [!div class="nextstepaction"]
+> [Začínáme s jazykem Visual Basic v sadě Visual Studio](tutorial-visual-basic-console.md)

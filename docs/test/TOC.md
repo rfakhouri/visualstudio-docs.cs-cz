@@ -50,7 +50,6 @@
 ### [Spouštění testů jednotek pro aplikace pro UPW](run-unit-tests-for-store-apps-in-visual-studio.md)
 ## [Určení rozsahu testovaného kódu pomocí pokrytí kódu](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 ### [Přizpůsobení analýzy pokrytí kódu](customizing-code-coverage-analysis.md)
-### [Analýza pokrytí kódu v ověřovacích testech sestavení](analyzing-code-coverage-in-build-verification-tests.md)
 ### [Řešení problémů s pokrytím kódu](troubleshooting-code-coverage.md)
 ## [Izolace testů jednotek aplikací pro SharePoint 2010 pomocí emulátorů](using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md)
 # [Živé testování částí](live-unit-testing-intro.md)

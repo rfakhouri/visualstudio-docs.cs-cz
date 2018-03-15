@@ -17,11 +17,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c4d67a57063854f859a766068084d63902ba038e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a24ccbcecc2d5bd4d5799ada048fee0004514f7
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-c-and-aspnet-in-visual-studio"></a>Začínáme s C# a ASP.NET v sadě Visual Studio
 V tomto kurzu pro vývoj C# pomocí ASP.NET Core pomocí sady Visual Studio budete vytvořit webovou aplikaci ASP.NET Core C#, přidejte do ní kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace.
@@ -43,7 +43,7 @@ Jste připravení začít vyvíjet? Jdeme!
 ### <a name="create-a-project"></a>Vytvoření projektu
 Nejdřív vytvoříte projekt ASP.NET Core. Typ projektu se dodává s všechny soubory šablony, které budete potřebovat, než jste přidali i nic.
 
-1. Otevřete Visual Studio 2017.
+1. Open Visual Studio 2017.
 
 2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
 
@@ -167,12 +167,9 @@ Vzor MVC pomáhá vytvářet aplikace, které se snadněji testování a aktuali
 
  ![Klikněte na tlačítko Zastavit ladění na panelu nástrojů](../ide/media/csharp-aspnet-stop-debugging.png)
 
+## <a name="next-steps"></a>Další kroky
 
-Blahopřejeme k dokončení tohoto kurzu!
+Blahopřejeme k dokončení tohoto kurzu! Věříme, že jste se dozvěděli, chvíli o C#, ASP.NET Core a Visual Studio IDE. I více informací naleznete v následujícím kurzu pokračujte.
 
-## <a name="see-also"></a>Viz také
-* [Začínáme s ASP.NET MVC jádra a sady Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
-* [Začínáme s stránky Razor v ASP.NET Core](/aspnet/core/tutorials/razor-pages/razor-pages-start)
-* [Co je nového v jazyce C#](/dotnet/csharp/whats-new)
-* [Referenční dokumentace jazyka C#](/dotnet/csharp/language-reference/index)
-* [Základy C# pro začátečníky absolutní](https://mva.microsoft.com/en-US/training-courses/c-fundamentals-for-absolute-beginners-16169) video kurzu
+ > [!div class="nextstepaction"]
+ > [Začínáme s ASP.NET MVC jádra a sady Visual Studio](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)

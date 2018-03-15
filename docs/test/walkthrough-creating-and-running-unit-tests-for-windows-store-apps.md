@@ -1,5 +1,5 @@
 ---
-title: "Návod: Vytváření a spouštění testování částí pro aplikace UWP | Microsoft Docs"
+title: "Vytváření a spouštění testování částí pro aplikace UWP v sadě Visual Studio | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -14,139 +14,101 @@ helpviewer_keywords:
 - unit tests, running
 ms.author: gewarren
 manager: ghogen
-ms.workload: uwp
+ms.workload:
+- uwp
 author: gewarren
-ms.openlocfilehash: 82ba9f9419964d9c626a81f78cf7f8ccace57320
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: bb69f8e8012fecef683f5b95bc4dd9aef7e26a3c
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>Návod: Vytváření a spouštění testování částí pro aplikace UWP
-Visual Studio zahrnuje podporu pro testování částí spravované [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace a obsahuje šablony knihoven testů jednotek pro Visual C#, Visual Basic a Visual C++.  
-  
+# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Návod: Vytváření a spouštění testování částí pro aplikace UWP
+
+Visual Studio zahrnuje podporu pro jednotku testování aplikací pro univerzální platformu Windows (UWP). Obsahuje šablony projektů testů jednotek pro Visual C#, Visual Basic a Visual C++.
+
 > [!TIP]
->  Další informace o vývoji [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace, najdete v části [Začínáme s aplikací UWP](http://go.microsoft.com/fwlink/?LinkID=241410).  
-  
- Visual Studio poskytuje testování funkce následujících částí:  
-  
--   [Vytváření projektů testování částí](#CreateAndRunUnitTestWin8Tailored_Create)  
-  
--   [Upravte Manifest pro projektu testování částí](#CreateAndRunUnitTestWin8Tailored_Manifest)  
-  
--   [Programování testu jednotek](#CreateAndRunUnitTestWin8Tailored_Code)  
-  
--   [Spouštění testování částí](#CreateAndRunUnitTestWin8Tailored_Run)  
-  
- Následující postupy popisují postup vytvoření, spuštění a ladění testování částí pro spravovaný Windows 8 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace.  
-  
-## <a name="prerequisites"></a>Požadavky  
- Visual Studio  
-  
-##  <a name="CreateAndRunUnitTestWin8Tailored_Create"></a>Vytváření projektů testování částí  
-  
-#### <a name="to-create-a-unit-test-project-for-a-uwp-app"></a>Vytvoření projektu testů jednotek pro aplikace UWP  
-  
-1.  Z **soubor** nabídce zvolte **nový projekt**.  
-  
-     Zobrazí se dialogové okno Nový projekt.  
-  
-2.  V části šablony, vyberte programovací jazyk, který chcete vytvořit testování částí v a pak zvolte přidruženého [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] knihovny test jednotky. Například vyberte **Visual C#** , zvolte **univerzální pro Windows**a potom zvolte **knihovny Test jednotky (Universal Windows)**.  
-  
+> Další informace o vývoji aplikací UWP najdete v tématu [Začínáme s aplikací UWP](/windows/uwp/get-started/).
+
+Následující postupy popisují postup vytvoření, spuštění a ladění testy částí pro aplikace pro UPW.
+
+## <a name="create-a-unit-test-project-for-a-uwp-app"></a>Vytvoření projektu testů jednotek pro aplikace UWP
+
+1.  Z **soubor** nabídce zvolte **nový projekt**.
+
+     Zobrazí se dialogové okno Nový projekt.
+
+2.  V části šablony vyberte programovací jazyk, který chcete vytvořit testování částí v a potom vyberte, že přidružené univerzální pro Windows jednotkové testování knihovny. Například vyberte **Visual C#** , zvolte **univerzální pro Windows**a potom zvolte **knihovny Test jednotky (Universal Windows)**.
+
+3.  (Volitelné) V **název** textovému poli, zadejte název, kterou chcete použít pro projekt.
+
+4.  (Volitelné) Změňte cestu, kde chcete vytvořit projekt tak, že ho v **umístění** textovému poli, nebo výběrem **Procházet** tlačítko.
+
+5.  (Volitelné) V **řešení** název textového pole, zadejte tento název, kterou chcete použít pro vaše řešení.
+
+6.  Ponechte **vytvořit adresář pro řešení** možnost vybrána a vyberte **OK** tlačítko.
+
+     ![Přizpůsobit knihovny Test jednotky](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")
+
+     Průzkumník řešení je naplněna projektu testování částí UWP a editoru kódu zobrazí výchozí testu jednotek s názvem UnitTest1.
+
+     ![Nový projekt test šité na míru jednotky](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")
+
+## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Úprava souboru manifestu aplikace UWP projektu testování částí
+
+1.  V Průzkumníku řešení klikněte pravým tlačítkem myši *Package.appxmanifest* souboru a zvolte **otevřete**.
+
+     Návrhář manifestu zobrazí pro úpravy.
+
+2.  V Návrháři Manifest zvolte **možnosti** kartě.
+
+3.  V seznamu v části **možnosti**, vyberte možnosti, je nutné, vaše testování částí a kód to tak, aby měl testování. Vyberte například **Internet** zaškrtávací políčko, pokud jednotkové testování vyžaduje a kód je testování musí mít možnost přístupu k Internetu.
+
     > [!NOTE]
-    >  Visual Studio obsahuje šablony knihoven testů jednotek pro Visual C#, Visual Basic a Visual C++.  
-  
-3.  (Volitelné) V **název** textovému poli, zadejte název, kterou chcete použít pro [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]projektu testování částí.  
-  
-4.  (Volitelné) Změňte cestu, kde chcete vytvořit projekt tak, že ho v **umístění** textovému poli, nebo výběrem položky **Procházet** tlačítko.  
-  
-5.  (Volitelné) V **řešení** název textového pole, zadejte tento název, kterou chcete použít pro vaše řešení.  
-  
-6.  Ponechte **vytvořit adresář pro řešení** možnost vybrána a vyberte **OK** tlačítko.  
-  
-     ![Přizpůsobit knihovny Test jednotky](../test/media/unit_test_win8_1.png "Unit_Test_Win8_1")  
-  
-     Průzkumník řešení je naplněna s nové [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]projektu testování částí a editoru kódu zobrazí výchozí testu jednotek s názvem UnitTest1.  
-  
-     ![Nový projekt test šité na míru jednotky](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png "Unit_Test_Win8_UnitTestExplorer_NewProjectCreated")  
-  
-##  <a name="CreateAndRunUnitTestWin8Tailored_Manifest"></a>Upravte Manifest pro projektu testování částí  
- Může být nutné upravit manifest pro projektu testů jednotek k poskytování požadované možnosti a spusťte aplikaci.  
-  
-#### <a name="to-edit-the-unit-test-projects-uwp-application-manifest-file"></a>Chcete-li upravit souboru manifestu aplikace UWP projektu testování částí  
-  
-1.  V Průzkumníku řešení v novém [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projektu testů jednotek, klikněte pravým tlačítkem na soubor Package.appxmanifest a zvolte **otevřete**.  
-  
-     Návrhář manifestu zobrazí pro úpravy.  
-  
-2.  V Návrháři Manifest zvolte **možnosti** kartě.  
-  
-3.  V seznamu v části **možnosti**, vyberte možnosti, je nutné, vaše testování částí a kód to tak, aby měl testování. Vyberte například **Internet** zaškrtávací políčko, pokud jednotkové testování vyžaduje a kód je testování musí mít možnost přístupu k Internetu.  
-  
+    > Možnosti, kterou vyberete by zahrnovat pouze možnosti, které jsou nezbytné pro testování částí, aby správně fungoval.
+
+     ![Manifest testů jednotek](../test/media/unit_test_win8_.png)
+
+## <a name="code-the-unit-test-for-a-uwp-app"></a>Programování testu jednotek pro aplikace UWP
+
+V editoru kódu upravit testování částí a přidat vyhodnotí a logiku potřebnou pro svůj test.
+
+## <a name="run-unit-tests"></a>Spouštění testování částí
+
+### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>Sestavení řešení a spuštění testování částí pomocí Průzkumníka testů
+
+1.  Na **Test** nabídce zvolte **Windows**a potom zvolte **Průzkumníka testů**.
+
+     Testování Explorer zobrazí bez svůj test se uvedené.
+
+2.  Z **sestavení** nabídce zvolte **sestavit řešení**.
+
+     Test jednotky je nyní obsažena.
+
     > [!NOTE]
-    >  Možnosti vyberete by zahrnovat pouze možnosti, které jsou nezbytné, aby [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] testů jednotek, aby správně fungoval. Možnosti nikdy nemusí zahrnovat funkce, které nejsou součástí [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplikace se otestovány a obecně by měl být podmnožinou možnosti zadané pro [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]aplikace v rámci testu.  
-  
-     Další informace o návrháře manifestu najdete v tématu [nakonfigurovat balíček aplikace pro Windows 8.1 pomocí návrháře manifestu](http://msdn.microsoft.com/Library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
-  
-     ![Manifest Test jednotky](../test/media/unit_test_win8_.png "Unit_Test_Win8_")  
-  
-##  <a name="CreateAndRunUnitTestWin8Tailored_Code"></a>Programování testu jednotek  
-  
-#### <a name="to-code-the-unit-test-for-a-uwp-app"></a>K programování testu jednotek pro aplikace UWP  
-  
-1.  V editoru kódu upravit testování částí a přidat vyhodnotí a logiku potřebnou pro svůj test.  
-  
-     Další informace najdete v tématu v [používání tříd Assert](http://go.microsoft.com/fwlink/?LinkID=224991) v knihovně MSDN.  
-  
-##  <a name="CreateAndRunUnitTestWin8Tailored_Run"></a>Spouštění testování částí  
-  
-#### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>Sestavení řešení a spuštění testování částí pomocí Průzkumníka testů  
-  
-1.  Na **Test** nabídce zvolte **Windows**a potom zvolte **Průzkumníka testů**.  
-  
-     Testování Explorer zobrazí bez svůj test se uvedené.  
-  
-2.  Z **sestavení** nabídce zvolte **sestavit řešení**.  
-  
-     Test jednotky je nyní obsažena.  
-  
-    > [!NOTE]
-    >  Musíte sestavit řešení Chcete-li aktualizovat seznam testů jednotek v Průzkumníka testů.  
-  
-    > [!WARNING]
-    >  Visual Studio známý problém: než začnete vytvářet k testovacímu projektu, musíte otevřít Průzkumníka testů.  
-  
-3.  V Průzkumníku otestovat zvolte testování částí, které jste vytvořili.  
-  
+    > Musíte sestavit řešení Chcete-li aktualizovat seznam testů jednotek v Průzkumníka testů.
+
+3.  V Průzkumníku otestovat zvolte testování částí, které jste vytvořili.
+
     > [!TIP]
-    >  Průzkumníka testů obsahuje odkaz na zdrojový kód do **zdroj:**.  
-  
-4.  Zvolte **spustit všechny**.  
-  
-     ![Průzkumníka testů jednotek & č. 45; spuštění testování částí](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
-  
+    > Průzkumníka testů obsahuje odkaz na zdrojový kód do **zdroj:**.
+
+4.  Zvolte **spustit všechny**.
+
+     ![Průzkumníka testů jednotek &#45; spuštění testování částí](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
+
     > [!TIP]
-    >  Vyberte jeden nebo více testů částí uvedených v Průzkumníku, klikněte pravým tlačítkem a zvolte **spuštění testů vybrané**.  
-    >   
-    >  Kromě toho můžete **ladění vybrané testy**, **otevřete testovací**a použít **vlastnosti** možnost.  
-    >   
-    >  ![Průzkumníka testů jednotek & č. 45; UNI testovací kontextovou nabídku](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")  
-  
-     Jednotka test spustí. Po dokončení testování Explorer zobrazí stav testu, uplynulý čas a obsahuje odkaz na zdroj.  
-  
-     ![Průzkumníka testů jednotek & č. 45; Test byl dokončen](../test/media/unit_test_win8_unittestexplorer_done.png "Unit_Test_Win8_UnitTestExplorer_Done")  
-  
-## <a name="external-resources"></a>Externí zdroje  
-  
-### <a name="videos"></a>Videa  
- [Channel 9: Testování aplikace UWP vyvíjené v XAML částí](http://go.microsoft.com/fwlink/?LinkId=226285)  
-  
-### <a name="forums"></a>Diskuzní fóra  
- [Testování částí sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)  
-  
-### <a name="msdn-library"></a>Knihovna MSDN  
- [Knihovna MSDN – vytváření a spouštění testování částí pro existujícího kódu (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
-  
-## <a name="see-also"></a>Viz také  
- [Testování aplikací pro UPW pomocí sady Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Vytvoření a testování aplikací UWP pomocí Team Foundation Build](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+    > Vyberte jeden nebo více testů částí uvedených v Průzkumníku, klikněte pravým tlačítkem a zvolte **spuštění testů vybrané**.
+    >
+    >  Kromě toho můžete **ladění vybrané testy**, **otevřete testovací**a použít **vlastnosti** možnost.
+    >
+    >  ![Unit Test Explorer &#45; uni test context menu](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+
+    Jednotka test spustí. Po dokončení testování Explorer zobrazí stav testu, uplynulý čas a obsahuje odkaz na zdroj.
+
+    ![Průzkumníka testů jednotek &#45; test byla dokončena](../test/media/unit_test_win8_unittestexplorer_done.png)
+
+## <a name="see-also"></a>Viz také
+
+- [Testování aplikací pro UWP se sadou Visual Studio](../test/testing-store-apps-with-visual-studio.md)
+- [Vytvoření a testování aplikací UWP](/vsts/build-release/apps/windows/universal?tabs=vsts)

@@ -1,11 +1,12 @@
 ---
-title: "Začínáme s Node.js v sadě Visual Studio | Microsoft Docs"
+title: "Vytvoření aplikace Node.js a Express - sady Visual Studio | Microsoft Docs"
+description: "V tomto kurzu vytvoříte aplikaci Node.js a Express v sadě Visual Studio"
 ms.custom: 
-ms.date: 11/30/2017
+ms.date: 03/13/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-acquisition
+- vs-nodejs
 ms.tgt_pltfrm: 
 ms.topic: tutorial
 ms.devlang: javascript
@@ -16,35 +17,63 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d91d46b20f82a1700c2d20639b3a8827c92bcb0
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/15/2018
 ---
-# <a name="getting-started-with-nodejs-in-visual-studio"></a>Začínáme s Node.js v sadě Visual Studio
-V tomto kurzu Node.js vývoj pomocí sady Visual Studio pro vytvoříte jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumat některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).  
+# <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a expresní aplikaci v sadě Visual Studio
+V tomto kurzu pro vývoj sady Visual Studio pomocí Node.js a Express vytvořit jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).  
+
+V tomto kurzu zjistíte, jak:
+> [!div class="checklist"]
+> * Vytvoření projektu Node.js
+> * Přidat kód
+> * Použití prvku IntelliSense
+> * Spuštění aplikace
+> * Stiskněte tlačítko zarážky
+
+## <a name="prerequisites"></a>Požadavky
+
+* Musíte mít nainstalovanou sadu Visual Studio a zatížení vývoj Node.js.
+
+    Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
+
+    Pokud potřebujete nainstalovat zatížení, ale už máte Visual Studio, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** dialogové okno. Spustí instalační program Visual Studio. Vyberte **Node.js vývoj** zatížení, zvolte **upravit**.
+
+* Musíte mít nainstalován modul runtime Node.js.
+
+    Pokud nemáte nainstalováno, nainstalovat verzi LTS [Node.js](https://nodejs.org/en/download/) webu. Obecně platí Visual Studio automaticky rozpozná nainstalované runtime Node.js. Pokud je nainstalovaný modul runtime nerozpozná, můžete nakonfigurovat tak, aby odkazovaly nainstalovaný modul runtime na stránce vlastností projektu (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **vlastnosti**).
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Open Visual Studio 2017.  
 
-2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .  
+1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .  
 
-3. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**, zvolte **Node.js**. V prostředním podokně vyberte **základní Azure Node.js Express 4 aplikační**, zvolte **OK**.   
+1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**a potom zvolte **Node.js**. V prostředním podokně vyberte **základní Azure Node.js Express 4 aplikační**a potom zvolte **OK**.   
 
-     Pokud nevidíte **základní Azure Node.js Express 4 aplikační** projektu šablony, klikněte na tlačítko **otevřete instalační program Visual Studio** odkaz v levém podokně **nový projekt** Dialogové okno. Spustí instalační program Visual Studio. Vyberte **Node.js vývoj** zatížení, zvolte **upravit**. 
+     Pokud nevidíte **základní Azure Node.js Express 4 aplikační** šablony projektu, je nutné nainstalovat **Node.js vývoj** zatížení první. 
 
-    Visual Studio vytvoří nové řešení a otevře projektu. **App.js** projektu soubor se otevře v editoru (levé podokno). Pokud nejste obeznámeni s projekty a řešení sady Visual Studio, najdete v části [rychlý start: vytvoření první aplikace Node.js pomocí Visual Studio](../ide/quickstart-nodejs.md).
+    Visual Studio vytvoří nové řešení a otevře projektu. *App.js* projektu soubor se otevře v editoru (levé podokno).
 
-4. Pokud nemáte runtime Node.js již nainstalována, nainstalujte ji z [Node.js](https://nodejs.org/en/download/) webu.
+    - Zvýrazněná tučným písmem je váš projekt pomocí názvu, který jste zadali **nový projekt** dialogové okno. V systému souborů je reprezentována tento projekt *.njsproj* soubor ve složce projektu. Můžete nastavit vlastnosti a proměnných prostředí přidružený k projektu pravým tlačítkem na projekt a zvolením **vlastnosti**. Odezvy pomocí jiných nástrojů pro vývoj, můžete provést, protože soubor projektu neprovede vlastní změny ke zdroji projekt Node.js.
 
-    Obecně platí Visual Studio automaticky rozpozná nainstalované runtime Node.js. Pokud nezjistí instalované verzi můžete nakonfigurovat projekt tak, aby odkazovaly nainstalovaný modul runtime.
+    - Na nejvyšší úrovni je řešení, které ve výchozím nastavení má stejný název jako projektu. Řešení, reprezentována *.sln* souboru na disku, je kontejner pro jeden nebo více souvisejících projekty.
+
+    - Uzel npm zobrazuje všechny balíčky nainstalované npm. Pravým tlačítkem na uzel npm vyhledat a nainstalovat balíčky npm pomocí dialogového okna.
+
+    - Soubory, jako projektu *app.js* zobrazí na uzel projektu. *app.js* je spuštění souboru projektu.
+
+1. Otevřete **npm** uzlu a ujistěte se, že všechny požadované npm balíčky jsou k dispozici.
+
+    Pokud některý chybí (ikona vykřičník), kliknete pravým tlačítkem **npm** uzel a zvolte **nainstalovat chybějící balíčky npm**.
 
 ## <a name="add-some-code"></a>Přidat kód
 
-1. V Průzkumníku řešení (pravé podokno) otevřete složku, zobrazení a potom otevřete index.pug.
+1. V Průzkumníku řešení (pravé podokno), otevřete složku, zobrazení a pak otevřete *index.pug*.
 
 1. Nahraďte obsah následující kód.
 
@@ -68,7 +97,7 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-1. Ve složce trasy otevřete index.js.
+1. Ve složce trasy, otevřete *index.js*.
 
 1. Přidejte následující kód před voláním `router.get`:
 
@@ -91,7 +120,11 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
     });
     ```
 
-1. Po `data`, typ `: get` a IntelliSense zobrazí funkce getData. Vyberte `getData`.
+## <a name="use-intellisense"></a>Použití prvku IntelliSense
+
+1. V *index.js*, přejděte na řádek obsahující kód `res.render`.
+
+1. Po `data` řetězce, zadejte `: get` a IntelliSense si ukážeme `getData` funkce. Vyberte `getData`.
 
     ![Použití prvku IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
 
@@ -111,7 +144,7 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 ## <a name="set-a-breakpoint"></a>Nastavit zarážky
 
-1. V index.js klikněte v levém oddělovací mezery před následující řádek kódu pro nastavení zarážky:
+1. V *index.js*, klikněte v levém oddělovací mezery před následující řádek kódu pro nastavení zarážky:
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
@@ -143,14 +176,6 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
     ![Aplikace spuštěná v prohlížeči](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
 
-1. Otevřete okno interaktivní Node.js výběrem **zobrazení** > **ostatní okna** > **Node.js interaktivních okna**.
-
-   ![Otevřete okno interaktivní Node.js](../nodejs/media/tutorial-nodejs-interactive-window.png)  
-
-    Okno interaktivní podporuje všechno, co můžete provést v kódu, včetně použití `require()` příkazy. Kód na následujícím snímku obrazovky definuje proměnnou a zobrazuje umístění překladač Node.js.
-
-   ![Interaktivní okno Node.js](../nodejs/media/tutorial-nodejs-interactive-window-example.png)  
-
 1. Zavřete webový prohlížeč.  
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Volitelné) Publikování do služby Azure App Service
@@ -175,5 +200,7 @@ Blahopřejeme k dokončení tohoto kurzu!
 
 ## <a name="next-steps"></a>Další kroky 
 
-- Další informace o [Node.js Tools pro Visual Studio](https://github.com/Microsoft/nodejstools/wiki)  
-- Další informace o [Visual Studio IDE](../ide/visual-studio-ide.md)  
+V tomto kurzu jste zjistili, jak pro vytvoření a spuštění aplikace Node.js pomocí expresního a stiskněte tlačítko zarážku používání ladicího programu.
+
+> [!div class="nextstepaction"]
+> [Node.js Tools for Visual Studio](https://github.com/Microsoft/nodejstools)

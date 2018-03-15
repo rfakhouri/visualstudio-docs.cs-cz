@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f3d2385fa1023637081b787c8d938ae42f79b4
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 7b1a6d953128317e89672d5d9b175ce7acc1b63f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Postupy: vynucování udržovatelného kódu pomocí zásad vrácení se změnami kódu analýzy
 
@@ -31,21 +31,21 @@ Správci verzí pro produkt Team Foundation můžete přidat udržovatelnosti pr
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>Otevřete editor zásad analýzy kódu
 
-1 v **Team Explorer**, klikněte pravým tlačítkem na týmový projekt, klikněte na **nastavení projektu Team**a potom klikněte na **správy zdrojového kódu**.
+1. V **Team Explorer**, klikněte pravým tlačítkem na týmový projekt, klikněte na **nastavení projektu Team**a potom klikněte na **správy zdrojového kódu**.
 
-     The **Source Control** dialog box appears.
+     **Správy zdrojového kódu** zobrazí se dialogové okno.
 
-2.Kliknutím na **zásad vrácení se změnami** a klikněte na **přidat**.
+2. Na **zásad vrácení se změnami** a klikněte na **přidat**.
 
-     The **Add Check-in Policy** dialog box appears.
+     **Přidání zásad vrácení se změnami** zobrazí se dialogové okno.
 
-3 ve **zásad vrácení se změnami** seznamu, vyberte **analýza kódu** zaškrtněte políčko a potom klikněte na **OK**.
+3. V **zásad vrácení se změnami** seznamu, vyberte **analýza kódu** zaškrtněte políčko a potom klikněte na **OK**.
 
-     The **Code Analysis Policy Editor** dialog box appears.
+     **Editor zásad analýzy kódu** zobrazí se dialogové okno.
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>Chcete-li povolit udržovatelnosti pravidel analýzy kódu
 
-1 v **Editor zásad analýzy kódu** dialogovém **nastavení pravidla**, rozbalte **udržovatelnosti pravidla** uzlu.
+1. V **Editor zásad analýzy kódu** dialogovém **nastavení pravidla**, rozbalte **udržovatelnosti pravidla** uzlu.
 
 2. Zaškrtněte políčka pro následující pravidla:
 
@@ -59,9 +59,9 @@ Správci verzí pro produkt Team Foundation můžete přidat udržovatelnosti pr
 
     Kromě toho, pokud chcete pravidlo porušení aby úspěšném sestavení, vyberte **považovat upozornění jako chyba** zaškrtněte políčko vedle popis pravidla.
 
-3 klikněte na tlačítko **OK**. Nová zásada vrácení se změnami nyní platí pro budoucí vrácení se změnami.
+3. Click **OK**. Nová zásada vrácení se změnami nyní platí pro budoucí vrácení se změnami.
 
 ## <a name="see-also"></a>Viz také
 
-[Hodnoty metrik kódu](../code-quality/code-metrics-values.md)
-[vytváření a používání zásad vrácení se změnami analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Hodnoty metrik kódu](../code-quality/code-metrics-values.md)
+- [Vytváření a používání zásad vrácení se změnami analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

@@ -1,10 +1,6 @@
 ---
 title: "Přístup k datům v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - "80025080"
@@ -13,18 +9,17 @@ helpviewer_keywords:
 - data access [Visual Studio]
 - data [C#]
 - ADO.NET, data access
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ccee10630a4b5de0aebf361c7acf6cccf8cf49c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e7c4c9aada390259d4abd57484c20d25728ef91f
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -66,17 +61,17 @@ a další...
 Mnoho dodavatelů databáze a třetím stranám podporují integrace sady Visual Studio pomocí balíčků NuGet. Nabídky můžete prozkoumat v nuget.org nebo prostřednictvím Správce balíčků NuGet v sadě Visual Studio (**nástroje** > **Správce balíčků NuGet** > **spravovat balíčky NuGet Balíčky pro řešení**). Další produkty databáze integrovat s Visual Studio jako rozšíření. Můžete procházet nabídky těchto v Visual Studio Marketplace přechodem na **nástroje**, **rozšíření a aktualizace** a potom vyberete **Online** v levém podokně Dialogové okno. Další informace najdete v tématu [databázi kompatibilní se systémy pro sadu Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
-> Rozšířené podpory pro SQL Server 2005 skončila 12. dubna 2016. Není zaručeno, že data nástroje v sadě Visual Studio 2015 a novější bude pokračovat v práci s SQL Server 2005 po tomto datu. Další informace najdete v tématu [oznámení koncovým podpory pro SQL Server 2005](https://www.microsoft.com/server-cloud/products/sql-server-2005/).
+> Rozšířené podpory pro SQL Server 2005 skončila 12. dubna 2016. Není zaručeno, že data nástroje v sadě Visual Studio 2015 a novější bude pokračovat v práci s SQL Server 2005 po tomto datu. Další informace najdete v tématu [oznámení koncovým podpory pro SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Jazyky rozhraní .NET
 
 Všechny .NET přístup k datům, včetně v .NET Core je založena na technologii ADO.NET, sadu třídy, která definuje rozhraní pro přístup k libovolného typu zdroje dat, relačních i nerelačních. Visual Studio obsahuje několik nástrojů a návrhářů, které pracují s ADO.NET za účelem připojení k databázím, zpracovaly data a data k dispozici pro uživatele. V dokumentaci v této části popisuje, jak pomocí těchto nástrojů. Můžete také programu přímo u objektů příkazu ADO.NET. Další informace o přímé volání rozhraní API technologie ADO.NET naleznete v tématu [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Přístup k datům dokumentaci konkrétně související s technologií ASP.NET najdete v tématu [práci s daty](http://www.asp.net/web-forms/overview/presenting-and-managing-data) na webu technologie ASP.NET. Kurz použití rozhraní Entity Framework s architekturou ASP.NET MVC, najdete v části [Začínáme s Entity Framework 6 Code First pomocí MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Přístup k datům dokumentaci konkrétně související s technologií ASP.NET najdete v tématu [práci s daty](http://www.asp.net/web-forms/overview/presenting-and-managing-data) na webu technologie ASP.NET. Kurz použití rozhraní Entity Framework s architekturou ASP.NET MVC, najdete v části [Začínáme s Entity Framework 6 Code First pomocí MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 Univerzální platformu Windows (UWP) aplikace v C# nebo Visual Basic můžete použít Microsoft Azure SDK pro .NET pro přístup k Azure Storage a jinými službami Azure. Třída Windows.Web.HttpClient umožňuje komunikaci s jakoukoli službu, RESTful. Další informace najdete v tématu [jak se připojit k serveru HTTP pomocí Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
-Doporučený postup pro ukládání dat v místním počítači, je použití SQLite, který se spouští v rámci jednoho procesu jako aplikace. Pokud vrstva relační objekt mapování (ORM) je potřeba, můžete použít rozhraní Entity Framework. Další informace najdete v tématu [přístup k datům](https://msdn.microsoft.com/windows/uwp/data-access/index) v Centrum vývojářů pro Windows.
+Doporučený postup pro ukládání dat v místním počítači, je použití SQLite, který se spouští v rámci jednoho procesu jako aplikace. Pokud vrstva relační objekt mapování (ORM) je potřeba, můžete použít rozhraní Entity Framework. Další informace najdete v tématu [přístup k datům](/windows/uwp/data-access/index) v Centrum vývojářů pro Windows.
 
 Pokud se připojujete ke službám Azure, je nutné stáhnout nejnovější [Azure SDK tools](https://azure.microsoft.com/downloads/).
 
@@ -92,8 +87,7 @@ V rozhraní .NET máte tři možnosti pro modelování a manipulace s daty v pam
 
 [Technologie LINQ to SQL](../data-tools/linq-to-sql-tools-in-visual-studio2.md) k objektu relační mapper starší generace. Funguje dobře pro méně složitých scénářů, ale už v active vývoj.
 
-[Datové sady](../data-tools/dataset-tools-in-visual-studio.md)  
-Nejstarší ze tří technologií modelování. Je určený hlavně pro rychlý vývoj aplikací "forms over data", ve kterých nejsou zpracování obrovské objemy dat nebo provádění složitých dotazů nebo transformací. Objekt datové sady se skládá z DataTable a DataRow objektů, které logicky mnohem víc než objekty .NET vypadat podobně jako objekty databáze SQL. Pro poměrně jednoduché aplikace založené na zdroje dat SQL datové sady stále může být vhodné použít.
+[Datové sady](../data-tools/dataset-tools-in-visual-studio.md) nejstarší ze tří technologií modelování. Je určený hlavně pro rychlý vývoj aplikací "forms over data", ve kterých nejsou zpracování obrovské objemy dat nebo provádění složitých dotazů nebo transformací. Objekt datové sady se skládá z DataTable a DataRow objektů, které logicky mnohem víc než objekty .NET vypadat podobně jako objekty databáze SQL. Pro poměrně jednoduché aplikace založené na zdroje dat SQL datové sady stále může být vhodné použít.
 
 Není nutné k používání některé z těchto technologií. V některých scénářích, zejména v případě, že výkonu je velmi důležité, jednoduše můžete DataReader – objekt ke čtení z databáze a zkopírujte hodnoty, které je třeba do objektu kolekce, jako je například seznam\<T >.
 
@@ -116,30 +110,31 @@ Další informace o připojení k databázím z aplikací C++, najdete v části
 ## <a name="python"></a>Python
 
 Nainstalujte [Python podporují v sadě Visual Studio](../python/python-in-visual-studio.md) vytvářet aplikace Python. Dokumentace k Azure má několik kurzy o připojení k datům, včetně následujících:
+
 - [Django a databáze SQL v Azure](/azure/app-service/app-service-web-get-started-python)
 - [Django a MySQL v Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
 - Práce s [objekty BLOB](/azure/storage/blobs/storage-quickstart-blobs-python), [soubory](/azure/storage/files/storage-python-how-to-use-file-storage), [fronty](/azure/storage/queues/storage-python-how-to-use-queue-storage), a [tabulky (DB kosmetický salón)](/azure/cosmos-db/table-storage-how-to-use-python).
 
 ## <a name="related-topics"></a>Související témata
 
-[Data, zařízení a analýzy](https://msdn.microsoft.com/data-and-devices) obsahuje úvod do inteligentního cloudem Microsoftu, včetně Cortana Analytics Suite a podpora pro Internet věcí.
+[Platforma Microsoft AI](https://azure.microsoft.com/overview/ai-platform/?v=17.42w)&mdash;obsahuje úvod do inteligentního cloudem Microsoftu, včetně Cortana Analytics Suite a podpora pro Internet věcí.
 
-[Microsoft Azure Storage](https://azure.microCsoft.com/documentation/services/storage/) popisuje Azure Storage a jak vytvářet aplikace pomocí Azure BLOB, tabulek, front a soubory.
+[Microsoft Azure Storage](/azure/storage/)&mdash;popisuje Azure Storage a jak vytvářet aplikace pomocí Azure BLOB, tabulek, front a soubory.
 
-[Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/) popisuje, jak se připojit k databázi SQL Azure, relační databáze jako služba.
+[Azure SQL Database](/azure/sql-database/)&mdash;popisuje, jak se připojit k databázi SQL Azure, relační databáze jako služba.
 
-[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt) popisuje nástroje, které usnadňují návrh, zkoumání, testování a nasazení připojené data aplikací a databází.
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)&mdash;popisuje nástroje, které usnadňují návrh, zkoumání, testování a nasazení připojené data aplikací a databází.
 
-[ADO.NET](/dotnet/framework/data/adonet/index) popisuje architekturu ADO.NET a jak pomocí třídy ADO.NET spravovat data aplikací a využívat zdroje dat a XML.
+[ADO.NET](/dotnet/framework/data/adonet/index)&mdash;popisuje architekturu ADO.NET a jak pomocí třídy ADO.NET spravovat data aplikací a využívat zdroje dat a XML.
 
-[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) popisuje postup vytvoření dat aplikací, které umožňují vývojářům programu pro koncepční model místo přímo na relační databázi.
+[ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef)&mdash;popisuje postup vytvoření dat aplikací, které umožňují vývojářům programu pro koncepční model místo přímo na relační databázi.
 
-[WCF Data Services 4.5](/dotnet/framework/data/wcf/index) popisuje způsob použití [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] k nasazení služeb dat na webu nebo v intranetu, které implementují [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index)&mdash;popisuje způsob použití [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] k nasazení služeb dat na webu nebo v intranetu, které implementují [Open Data Protocol (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
 
-[Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md) obsahuje odkazy na témata, které vysvětlují, jak fungují data v řešeních pro systém Office. To zahrnuje informace o schématu orientované programování, ukládaní dat do mezipaměti a přístup k datům na serveru.
+[Data v řešeních pro systém Office](../vsto/data-in-office-solutions.md)&mdash;obsahuje odkazy na témata, které vysvětlují, jak fungují data v řešeních pro systém Office. To zahrnuje informace o schématu orientované programování, ukládaní dat do mezipaměti a přístup k datům na serveru.
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/) jsou popsány možnosti dotazu, integrované do jazyka C# a Visual Basic a společného modelu pro dotazování relačních databází, dokumentů XML, datové sady a kolekce v paměti.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;jsou popsány možnosti dotazu, integrované do jazyka C# a Visual Basic a společného modelu pro dotazování relačních databází, dokumentů XML, datové sady a kolekce v paměti.
 
-[Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md) popisuje práci s funkcí rozhraní .NET Framework XML data, ladění XSLT, XML a architektura jazyka XML.
+[Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;popisuje práci s funkcí rozhraní .NET Framework XML data, ladění XSLT, XML a architektura jazyka XML.
 
-[XML – dokumenty a Data](/dotnet/standard/data/xml/index) poskytuje přehled globální a integrované sadu tříd, které pracují s dokumenty XML a data v rozhraní .NET Framework.
+[XML – dokumenty a Data](/dotnet/standard/data/xml/index)&mdash;poskytuje přehled globální a integrované sadu tříd, které pracují s dokumenty XML a data v rozhraní .NET Framework.

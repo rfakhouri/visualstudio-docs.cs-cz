@@ -14,11 +14,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 763a16c4de3d3d087b813322af2fcd8518506863
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 12dada9592f9bf0f838d967c654a5223460000fd
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Vytvořte jednotky zástupných procedur metoda test pomocí příkazu Vytvořit testování částí
 
@@ -32,7 +32,7 @@ Visual Studio **vytvořit testování částí** příkaz nabízí možnost vytv
 
 * Podporuje pouze C# kód, který cílí rozhraní .NET Framework.
 
-* Je [extensible](#extend-framework)a podporuje generování testů v Mstestu, Mstestu V2, NUnit, xUnit formátu.
+* Rozšiřitelný a podporuje generování testů v Mstestu, Mstestu V2, NUnit, xUnit formátu.
 
 ## <a name="get-started"></a>Začínáme
 
@@ -42,15 +42,16 @@ Abyste mohli začít, vyberte v editoru kódu v projektu, které chcete testovat
 
 ## <a name="setting-unit-test-traits"></a>Nastavení vlastnosti testů jednotek
 
-Pokud plánujete spouštět tyto testy je součást automatizace procesu test, můžete zvážit s testovací vytvořené v jiné testovacího projektu (druhá možnost v dialogovém okně výše) a nastavení jednotkové testování vlastnosti pro testování částí. To vám umožní snadno zahrnout nebo vyloučit tyto konkrétní testy v rámci průběžnou integraci nebo průběžné nasazování kanálu. Jsou vlastnosti se nastavují přidáním metadata do testu jednotek přímo, jak je uvedeno níže. 
+Pokud plánujete spouštět tyto testy je součást automatizace procesu test, můžete zvážit s testovací vytvořené v jiné testovacího projektu (druhá možnost v dialogovém okně výše) a nastavení jednotkové testování vlastnosti pro testování částí. To vám umožní snadno zahrnout nebo vyloučit tyto konkrétní testy v rámci průběžnou integraci nebo průběžné nasazování kanálu. Jsou vlastnosti se nastavují přidáním metadata do testu jednotek přímo, jak je uvedeno níže.
 
 ![Nastavení vlastnosti testů jednotek](media/createunittest.png)
 
-<a name="extend-framework"></a>
 ## <a name="using-third-party-unit-test-frameworks"></a>Použití systémů testů jednotek třetích stran
 
-Pomocí sady Visual Studio můžete snadno mít testování částí vytvořená pomocí libovolnou architekturu testu. Chcete-li nainstalovat přidat jiných systémů testů, zvolte **nástroje | Rozšíření a aktualizace**.
-Rozbalte položku **Online**, **Galerie sady Visual Studio**, **nástroje**a zvolte **testování**. 
+Pomocí sady Visual Studio můžete snadno mít testování částí vytvořená pomocí libovolnou architekturu testu. Chcete-li nainstalovat přidat jiných systémů testů:
+
+1. Zvolte **nástroje** > **rozšíření a aktualizace**.
+2. Rozbalte položku **Online** > **Visual Studio Marketplace** > **nástroje**a potom zvolte **testování**.
 
 ![Pomocí rozhraní test třetích stran](media/createunittestfx.png)
 
@@ -63,9 +64,9 @@ Test framework – rozšíření jsou k dispozici ve Visual Studio Marketplace:
 
 Tuto funkci použít vždy, když je potřeba vytvářet testy částí, ale konkrétně při testování existující kód s velmi málo nebo žádné pokrytí test a žádná dokumentace. Jinými slovy kde je kód omezenou nebo žádnou specifikaci. Efektivně implementuje podobná přístup [inteligentní testování částí](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/19/introducing-smart-unit-tests.aspx) který charakterizovat zjištěnou chování kód.
 
-Tato funkce je však rovněž na situaci, kdy vývojář spustí napsáním nějakého kódu a použije ho k bootstrap testování disciplíně částí. V rámci toku kódování vývojář chtít rychle vytvořit jednotku testovací metoda zástupnou proceduru (s třídu vhodné testovací a vhodný testovacího projektu) pro konkrétní kód. 
+Tato funkce je však rovněž na situaci, kdy vývojář spustí napsáním nějakého kódu a použije ho k bootstrap testování disciplíně částí. V rámci toku kódování vývojář chtít rychle vytvořit jednotku testovací metoda zástupnou proceduru (s třídu vhodné testovací a vhodný testovacího projektu) pro konkrétní kód.
 
 ## <a name="see-also"></a>Viz také
 
-[Vytváření testů jednotek zástupných procedur metoda s testování částí"vytvoření"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)  
-[Příspěvky blogu testování částí](https://blogs.msdn.microsoft.com/visualstudioalm/tag/unit-testing/)
+- [Vytváření testů jednotek zástupných procedur metoda s testování částí"vytvoření"](https://blogs.msdn.microsoft.com/visualstudioalm/2015/03/06/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Příspěvky blogu testování částí](https://blogs.msdn.microsoft.com/devops/?s=unit+testing)

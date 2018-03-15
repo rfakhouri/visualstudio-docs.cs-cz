@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d97e1f37c1e60c3ec5bb122a6b3f26c2fb086f9
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 2ea735e5e300d2b2cde301a4cf52424cabbba934
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prerequisites-dialog-box"></a>Dialogové okno Požadavky
 
@@ -49,7 +49,7 @@ Požadované součásti, které se zobrazují v **požadavky** dialogové okno m
 |**Rozhraní .NET framework 3.5 SP1**|Tento balíček nainstaluje následující:<br /><br /> -Rozhraní .NET framework verze 2.0, 3.0 a 3.5.<br />-Podpora pro všechny verze rozhraní .NET Framework na 32bitové (x86) a (x64) 64bitové operační systémy.<br />-Jazykové sady pro každou verzi rozhraní .NET Framework, která se instaluje se balíček.<br />-Služba sady pro rozhraní .NET Framework 2.0 a 3.0.<br /><br /> Rozhraní .NET framework 3.0 je součástí systému Windows Vista a rozhraní .NET Framework 3.5 je součástí [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Rozhraní .NET framework 3.5 je vyžadována pro všechny projekty Visual Basic a C#, kompilovaná pro 32bitové operační systémy a pro který cílovém Frameworku, který je nastaven na **rozhraní .NET Framework 3.5**a pro projekty Visual Basic a C# zkompilovat pro 64bitové prostředí operační systémy. (IA64 není podporována.) Všimněte si, že jsou projekty Visual Basic a C# zkompilovaném pro všechny architektura procesoru ve výchozím nastavení. Další informace najdete v tématu [přehled cílení na více Visual Studio](../../ide/visual-studio-multi-targeting-overview.md) a [nasazení požadovaných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md).<br /><br /> Ve výchozím nastavení je vybraná tato položka.|
 |**Rozhraní Microsoft .NET Framework 4.x**|Tento balíček nainstaluje rozhraní .NET Framework 4.x pro x86 a x64 platformy.|
 |**Microsoft System CLR Types pro SQL Server 2014 (x64 a x86)**|Tento balíček nainstaluje Microsoft System CLR Types pro SQL Server 2014 pro x64 nebo x86.|
-|**SQL Server 2008 R2 Express**|Tento balíček nainstaluje Microsoft SQL Server 2008 R2 Express, bezplatná edice systému Microsoft SQL Server 2008 R2, databázi ideální pro malé webové, server nebo aplikací klasické pracovní plochy. Může sloužit zdarma pro vývoj a produkci. Bezplatný [registrace](http://go.microsoft.com/fwlink/?LinkId=130380) je vyžadována pro distribuci SQL Server 2008 R2 Express s aplikací.|
+|**SQL Server 2008 R2 Express**|Tento balíček nainstaluje Microsoft SQL Server 2008 R2 Express, bezplatná edice systému Microsoft SQL Server 2008 R2, databázi ideální pro malé webové, server nebo aplikací klasické pracovní plochy. Může sloužit zdarma pro vývoj a produkci.|
 |**SQL Server 2012 Express**|Tento balíček nainstaluje Microsoft SQL Server 2012 Express.|
 |**SQL Server 2012 Express LocalDB**|Tento balíček nainstaluje Microsoft SQL Server 2012 Express LocalDB.|
 |**"14" Runtime knihoven Visual C++ (ARM)**|Tento balíček nainstaluje běhové knihovny jazyka Visual C++ pro architekturu Itanium, které poskytují rutiny pro programování pro operační systém Microsoft Windows. Tyto rutiny automatizovat mnoho běžných programovacích úloh, které nejsou k dispozici jazyky C a C++.<br /><br /> Další informace najdete v tématu [referenční dokumentace knihoven C Run-Time](/cpp/c-runtime-library/c-run-time-library-reference).|
@@ -58,7 +58,7 @@ Požadované součásti, které se zobrazují v **požadavky** dialogové okno m
 
 ## <a name="see-also"></a>Viz také
 
-[Stránka Publikovat, Návrhář projektu](../../ide/reference/publish-page-project-designer.md)  
-[Nezbytné součásti nasazení aplikace](../../deployment/application-deployment-prerequisites.md)  
-[Nasazení nezbytných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md)  
-[Přehled cílení na více verzí sady Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+- [Stránka Publikovat, Návrhář projektu](../../ide/reference/publish-page-project-designer.md)
+- [Nezbytné součásti nasazení aplikace](../../deployment/application-deployment-prerequisites.md)
+- [Nasazení nezbytných součástí pro 64bitové aplikace](../../deployment/deploying-prerequisites-for-64-bit-applications.md)
+- [Přehled cílení na více verzí sady Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)

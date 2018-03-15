@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 284c99c9e9c1ed2e84b05070bbf6d9991c025f94
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: f8845ab2de127b511b9180bebbe201b777c23455
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Rychlý úvod: Projekty a řešení
 
@@ -185,10 +185,10 @@ Blahopřejeme k dokončení tento rychlý start! Potom můžete prozkoumávat n�
 
 ## <a name="see-also"></a>Viz také
 
-[Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
-[Rychlý úvod: Přizpůsobení Visual Studio IDE a editor](../ide/quickstart-personalize-the-ide.md)  
-[Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)  
-[Správa vlastností projektů a řešení](../ide/managing-project-and-solution-properties.md)  
-[Správa odkazů v projektu](../ide/managing-references-in-a-project.md)  
-[Vývoj kódu v sadě Visual Studio bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
-[Přehled Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)
+- [Rychlý úvod: Přizpůsobení Visual Studio IDE a editor](../ide/quickstart-personalize-the-ide.md)
+- [Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)
+- [Správa vlastností projektů a řešení](../ide/managing-project-and-solution-properties.md)
+- [Správa odkazů v projektu](../ide/managing-references-in-a-project.md)
+- [Vývoj kódu v sadě Visual Studio bez projektů nebo řešení](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
+- [Přehled Visual Studio IDE](../ide/visual-studio-ide.md)

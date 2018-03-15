@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f6d1ebe9838102b383353ed8c7d4d9c15fadaf9
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 2098540adda6de1ab003a6a9d526519d1d753730
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Rychlý úvod: Přizpůsobení Editor a Visual Studio – sada IDE
 
@@ -29,22 +29,22 @@ Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio st
 
 Výchozí motiv barvu pro Visual Studio 2017 nazývá **Blue**. Nyní změníme jeho **tmavý**.
 
-1. Na řádku nabídek zvolte **nástroje**, **možnosti**.
+1. Na řádku nabídek zvolte **nástroje** > **možnosti**.
 
-1. Na **prostředí**, **Obecné** stránka Možnosti, změny **barevný motiv** výběr **tmavý**a potom zvolte **OK** .
+1. Na **prostředí** > **Obecné** stránka Možnosti, změny **barevný motiv** výběr **tmavý**a potom vyberte **OK**.
 
    Barva motivu pro celý IDE se změní na **tmavý**.
 
    ![VS v tmavý motiv](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
-> Můžete nainstalovat další předdefinované motivy nainstalováním **Visual Studio barvu motivu editoru** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2017ColorThemeEditor). Po instalaci tohoto nástroje se zobrazí další barevné motivy v rozevíracím seznamu Barva motivu.
+> Můžete nainstalovat další předdefinované motivy nainstalováním **Visual Studio barvu motivu editoru** z [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Po instalaci tohoto nástroje se zobrazí další barevné motivy v rozevíracím seznamu Barva motivu.
 
 ## <a name="change-text-color"></a>Změna barvy textu
 
 Nyní jsme budete přizpůsobit některé barvy textu pro Editor. První otevřete soubor XML a zobrazí se výchozí barvy.
 
-1. V řádku nabídek zvolte **soubor**, **nový**, **souboru...** .
+1. V řádku nabídek zvolte **soubor** > **nový** > **souboru...** .
 
 1. V **nový soubor** dialogovém **Obecné** kategorie, zvolte **souboru XML**a potom zvolte **otevřete**.
 
@@ -80,7 +80,7 @@ Nyní jsme budete přizpůsobit některé barvy textu pro Editor. První otevře
 
    ![Barvy písma souboru XML](media/quickstart-personalize-xml-file.png)
 
-1. Chcete-li otevřít **možnosti** dialogové okno, z řádku nabídek zvolte **nástroje**, **možnosti**.
+1. Chcete-li otevřít **možnosti** dialogové okno Vyberte **nástroje** > **možnosti** z řádku nabídek.
 
 1. V části **prostředí**, vyberte **písma a barev** kategorie.
 
@@ -102,9 +102,9 @@ Jsme prozkoumali jenom několik způsobů přizpůsobení barev v sadě Visual S
 
 ## <a name="see-also"></a>Viz také
 
-[Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)  
-[Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)  
-[Rychlý úvod: Projekty a řešení](../ide/quickstart-projects-solutions.md)  
-[Přizpůsobení sady Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)  
-[Vlastní nastavení editoru](../ide/customizing-the-editor.md)  
-[Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)
+- [Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)
+- [Rychlý úvod: Kódování v editoru](../ide/quickstart-editor.md)
+- [Rychlý úvod: Projekty a řešení](../ide/quickstart-projects-solutions.md)
+- [Přizpůsobení sady Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Vlastní nastavení editoru](../ide/customizing-the-editor.md)
+- [Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)

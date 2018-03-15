@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: a55b2a12c9a45c5a3952e3e6f4e1627bec8ba520
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 37963e1ee5b7eeb0d07c36e0abe42c98eb6436fe
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 03/15/2018
 ---
 1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **publikovat** (pro webové formuláře **publikování webové aplikace**).
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 10/27/2017
 5. Kopírování adresáři projektu ASP.NET z počítače, Visual Studio do místního adresáře konfigurovat pro aplikace ASP.NET (v tomto příkladu **C:\Publish**) v počítači Windows serveru. V tomto návodu předpokládáme kopírujete ručně, ale můžete použít jiné nástroje, například prostředí PowerShell, Xcopy nebo Robocopy.
 
     > [!CAUTION]
-    >  Pokud potřebujete provést změny kódu nebo opětovné sestavení, musíte znovu publikovat a opakujte tento krok. Spustitelný soubor, který jste zkopírovali ke vzdálenému počítači se musí přesně shodovat místního zdroje a symboly.
+    >  Pokud potřebujete provést změny kódu nebo opětovné sestavení, musíte znovu publikovat a opakujte tento krok. Spustitelný soubor, který jste zkopírovali ke vzdálenému počítači se musí přesně shodovat místního zdroje a symboly.    Pokud neprovedete tento obdržíte `cannot find or open the PDB file` upozornění v sadě Visual Studio, při pokusu o ladění proces.
 
 6. V systému Windows Server ověřte, zda aplikace spustit správně otevřením aplikace v prohlížeči.
 

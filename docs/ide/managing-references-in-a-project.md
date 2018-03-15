@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fbb9ddfd53210f460b5035f1f83159e46b5aa1
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="managing-references-in-a-project"></a>Správa odkazů v projektu
 
@@ -39,7 +39,7 @@ Než psát kód pro místní externí komponenta nebo připojené služby, proje
 
 Chcete-li přidat odkaz, klikněte pravým tlačítkem na uzel odkazy v Průzkumníku řešení a zvolte **přidat odkaz na**. Další informace najdete v tématu [postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Přidat odkaz ve Visual C & č. 43; & č. 43; ] (../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Přidat odkaz v jazyce Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
 
 Můžete nastavit odkaz na následující typy součástmi a službami:
 
@@ -108,7 +108,7 @@ Ve výchozím nastavení <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectR
 
 Můžete vytvořit aplikace, které odkazují na projekty nebo sestavení, které jinou verzi rozhraní .NET Framework. Například můžete vytvořit aplikace s cílem [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)], který odkazuje na sestavení, která je cílena [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Pokud vytvoříte projekt, který se zaměřuje na starší verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], nemůžete nastavit odkaz v tomto projektu projekt nebo sestavení, která je cílena na novější verzi.
 
-Další informace najdete v tématu [cílení na konkrétní verzi rozhraní .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).
+Další informace najdete v tématu [přehled cílení na více](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Projekt do odkazů projektu
 
@@ -125,5 +125,5 @@ Odkazy na soubory jsou přímé odkazy na sestavení mimo kontext projekt sady V
 
 ## <a name="see-also"></a>Viz také
 
-[Řešení potíží s poškozenými odkazy](../ide/troubleshooting-broken-references.md)  
-[Postupy: Přidání nebo odebrání odkazů pomocí správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+[Řešení potíží s poškozenými odkazy](../ide/troubleshooting-broken-references.md)
+[postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

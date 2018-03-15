@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac60dbd14b16491f9de841f168cd5bf725c340d
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: c2a96315d7610e665ed32b669bea45f9318cffdb
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="unit-test-basics"></a>Testování částí
 
@@ -30,13 +30,13 @@ Můžete rychle vytvořit projektů testování a zkušební metody z vašeho k�
 
 Průzkumníka testů můžete také spouštět třetích stran s otevřeným zdrojem systémů testů jednotek, které jste implementovali rozhraní rozšíření Průzkumníka testů. Můžete přidat řadu tyto architektury prostřednictvím Správce rozšíření Visual Studio a Galerii Visual Studio. V tématu [instalace systémů testů jednotek třetích stran](../test/install-third-party-unit-test-frameworks.md)
 
-## <a name="quick-starts"></a>Rychlé starty
+## <a name="getting-started"></a>Začínáme
 
 Úvod do testování částí, které přejdete přímo do kódování najdete v jednom z těchto témat:
 
 - [Návod: Vytváření a spouštění testů částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
-- [Rychlý začátek: Vývoj řízený testy s použitím Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)
+- [Rychlý úvod: Testování vývoj řízený testy pomocí Průzkumníka testů](../test/quick-start-test-driven-development-with-test-explorer.md)
 
 - [Zápis testů částí pro C/C++ v sadě Visual Studio](../test/writing-unit-tests-for-c-cpp.md)
 
@@ -92,7 +92,7 @@ Teď, když máme nějaký kód, je čas pro testování.
 
 2.  Klikněte na tlačítko OK potvrďte výchozí nastavení k vytvoření testů jednotek nebo změně hodnoty používané k vytvoření a název jednotka testování projektu a testování částí. Můžete vybrat kód, který je ve výchozím nastavení do metody test jednotky.
 
-     ![P & č. 45; klikněte v editoru a zvolte Vytvořit testování částí](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
+     ![Pravé&#45;klikněte v editoru a zvolte Vytvořit testování částí](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")
 
 3.  Zástupných procedur test jednotky jsou vytvořené v nového projektu testů jednotek pro všechny metody ve třídě.
 
@@ -221,7 +221,7 @@ Panel nástrojů Průzkumníka testů umožňuje zjistit, organizovat a spustit 
 
  Můžete zvolit **spustit všechny** spustit všechny testy, nebo zvolte **spustit** vybrat podmnožinu testů ke spuštění. Po spuštění sada testů se zobrazí souhrn testovacím běhu v dolní části okna Průzkumníka testů. Vyberte testovací Chcete-li zobrazit podrobnosti o testu v dolním podokně. Zvolte **otevřete testovací** z místní nabídky (klávesnice: F12) Chcete-li zobrazit zdrojový kód pro vybrané test.
 
- Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE &#95; parallelicon & č. 45; malá](../test/media/ute_parallelicon-small.png "UTE_parallelicon malá") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
+ Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
 
 ### <a name="run-tests-after-every-build"></a>Spouštění testů po každé sestavení
 

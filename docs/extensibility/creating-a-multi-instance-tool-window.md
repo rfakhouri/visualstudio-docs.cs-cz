@@ -4,28 +4,30 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology: vs-ide-sdk
+ms.technology:
+- vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - multi
 - tool windows
 ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
-caps.latest.revision: "12"
+caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0cb73a5e5f40d21a5b17faae9602e40f7cd39d48
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: e13fb299d513f045c4c7c339a9c6602890079e40
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Vytvoření okna nástroj s více instancemi
 Okno nástroje můžete naprogramovat tak, aby více instancí může být otevřena současně. Ve výchozím nastavení nástroj windows může mít pouze jednu instanci otevřete.  
   
- Pokud použijete nástroj okno s více instancemi, můžete zobrazit několik související zdroje informací ve stejnou dobu. Můžete například zadat více řádků <xref:System.Windows.Forms.TextBox> tak, aby několik fragmenty kódu jsou současně dostupné během relace programovací řízení v okně nástroje s více instancemi. Také například můžete zadat <xref:System.Windows.Forms.DataGrid> řízení a rozevíracího seznamu pole v okně nástroje s více instancemi tak, aby několik zdrojů dat v reálném čase lze sledovat současně.  
+ Pokud použijete nástroj okno s více instancemi, můžete zobrazit několik související zdroje informací ve stejnou dobu. Můžete například zadat více řádků <xref:System.Windows.Forms.TextBox> tak, aby několik fragmenty kódu jsou současně dostupné během relace programovací řízení v okně nástroje s více instancemi. Například může taky <xref:System.Windows.Forms.DataGrid> řízení a rozevíracího seznamu pole v okně nástroje s více instancemi tak, aby několik zdrojů dat v reálném čase lze sledovat současně.  
   
 ## <a name="creating-a-basic-single-instance-tool-window"></a>Vytvoření okna Nástroj Basic (Single-Instance)  
   
@@ -36,14 +38,14 @@ Okno nástroje můžete naprogramovat tak, aby více instancí může být otev�
   
 ## <a name="making-a-tool-window-multi-instance"></a>Provedení nástroj s více instancemi okna  
   
-1.  Otevřete **MIToolWindowPackage.cs** souboru a najděte `ProvideToolWindow` atribut. a `MultiInstances=true` parametr, jak je znázorněno v následujícím příkladu.  
+1.  Otevřete **MIToolWindowPackage.cs** souboru a najděte `ProvideToolWindow` atribut. a `MultiInstances=true` parametr, jak je znázorněno v následujícím příkladu:  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
         [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
         [ProvideMenuResource("Menus.ctmenu", 1)]  
         [ProvideToolWindow(typeof(MultiInstanceToolWindow.MIToolWindow), MultiInstances = true)]  
-        [Guid(MIToolWindowPackageGuids.PackageGuidString)]  
+        [Guid(MIToolWindowPackage.PackageGuidString)]  
         public sealed class MIToolWindowPackage : Package  
     {. . .}  
     ```  
@@ -52,7 +54,7 @@ Okno nástroje můžete naprogramovat tak, aby více instancí může být otev�
   
 3.  Chcete-li vytvořit instanci okno nástroj, volejte <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> metoda a sadu jeho `id` na k dispozici hodnotu a jeho `create` příznak, který `true`.  
   
-     Výchozí hodnota `id` parametr <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> je metoda `0`. Díky tomu okno nástroj jedné instance. Pro více než jednu instanci pro hostování každé instance musí mít svůj vlastní jedinečný `id`.  
+     Výchozí hodnota `id` parametr <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> je metoda `0`. Tato hodnota je okno nástroj jedné instance. Pro více než jednu instanci pro hostování každé instance musí mít svůj vlastní jedinečný `id`.  
   
 4.  Volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> metodu <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objekt, který je vrácen <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> vlastnost instance okno nástroje.  
   

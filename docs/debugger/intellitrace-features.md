@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 273f7f94127929a3939d21414bd8da5c12abc83e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 01515701b6aeecc1166551c6376bfd6823e73976
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="intellitrace-features"></a>Funkce IntelliTrace
 
@@ -55,7 +55,7 @@ Pokud ladíte, zastavte ladění. Přejděte na **nástroje > Možnosti > Intell
 
 Tato možnost není povolena ve výchozím nastavení, ale IntelliTrace můžete zachycení snímků vaší aplikace na každý krok události zarážek a ladicí program a tato snímky si můžete prohlédnout v historické ladicí relace. Snímek nabízí zobrazení stavu vaší celou aplikaci. Chcete-li povolit zachytávání snímků, přejděte na **nástroje > Možnosti > IntelliTrace > Obecné**a vyberte **IntelliTrace události a snímky**. Další informace najdete v tématu [zobrazit snímky pomocí zpětný krok IntelliTrace](../debugger/how-to-use-intellitrace-step-back.md)
 
-Snímky jsou k dispozici v aplikaci Visual Studio Enterprise 2017 verze 15,5 a vyšší a vyžaduje Windows 10 Anniversary Update nebo vyšší.  Snímky nejsou momentálně k dispozici pro aplikace .NET Core a ASP.NET Core.
+Snímky jsou k dispozici v aplikaci Visual Studio Enterprise 2017 verze 15,5 a vyšší a vyžaduje Windows 10 Anniversary Update nebo vyšší.  Pro aplikace .NET Core a ASP.NET Core je požadovaná verze Visual Studio Enterprise 2017 15.7 preview 1.
 
 ## <a name="GoingFurther"></a> Shromáždit události IntelliTrace a informace o voláních
 

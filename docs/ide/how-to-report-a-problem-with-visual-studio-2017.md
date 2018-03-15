@@ -1,7 +1,7 @@
 ---
 title: "Postup nahlásit problém s Visual Studio 2017 | Microsoft Docs"
 ms.custom: 
-ms.date: 02/26/2018
+ms.date: 03/11/2018
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,11 +13,11 @@ manager: ghogen
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e5e01abeb45e7cfdefebb7d6fd3d63320e1e31
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 6fa988ce97968949036a74ff473cfe11dd3b669e
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Postup nahlásit problém s Visual Studio 2017
 
@@ -69,7 +69,7 @@ Trasování a haldy souborů výpisu paměti jsou užitečné v pomáhá nám di
 
  Vyberte **odeslání** tlačítko k odeslání zprávy, spolu s všechny Image a trasování nebo odkládacích souborů. (Pokud **odeslání** tlačítko je zobrazeno šedě, ujistěte se, že jste zadali název a popis pro sestavu.)
 
-## Alternativní vytváření sestav <a name="alternate_reporting"></a>
+## Generování sestav alternativy <a name="alternate_reporting"></a>
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Nahlásit problém s použitím instalační program Visual Studio
 
@@ -77,9 +77,9 @@ Pokud nemůžete dokončit instalaci sady Visual Studio nebo nelze využít nás
 
  ![Můžete klikněte na tlačítko poskytnout zpětnou vazbu v instalačním programu Visual Studio otevřete nástroj zpětné vazby](../install/media/report-a-problem.png)
 
-### <a name="report-a-problem-directly-to-the-visual-studio-developer-community"></a>Nahlásit problém přímo do komunity vývojářů Visual Studio
+### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Vyhledejte problémy a řešení pomocí sady Visual Studio komunity vývojářů
 
-Pokud nechcete nebo nemůže používat Visual Studio k nahlásit problém, můžete nahlásit problém místo přímo do komunity vývojářů Visual Studio. Další informace najdete v tématu [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/) stránky.
+Pokud nechcete nebo nemůže používat Visual Studio k nahlásit problém, existuje riziko, že problém již oznámen a řešení ve Visual Studio community vývojáře odeslány. Další informace najdete v tématu [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/) stránky.
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>Poskytnutí zpětné vazby produktu nebo zlepšení
 

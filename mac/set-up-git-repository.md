@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: a8e32df2248f53a2b46a971b025b1138abba5101
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 3eb3e0874cfc46fc98209113cf60a32cdb92787d
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="setting-up-a-git-repository"></a>Nastavení úložiště Git
 
@@ -43,11 +43,15 @@ Pokud chcete nastavit úložiště Git, spusťte následující kroky:
 
 ## <a name="publishing-an-existing-project"></a>Publikování existujícího projektu
 
-4. Vrátit do projektu otevřete v sadě Visual Studio for Mac. 
+Pokud máte stávající projekt, který _není_ již ve správě verzí, použijte následující kroky a nastavte jej v úložišti Git:
+
+4.  Vyberte název řešení z panelu pro řešení v sadě Visual Studio for Mac. 
 
 5. V panelu nabídek vyberte **verzí > Publikovat ve správě verzí...** Chcete-li zobrazit **vyberte úložiště** dialogové okno:
 
     ![Spuštění najdete v článku věnovaném v sadě Visual Studio pro Mac](media/version-control-git4-sml.png)
+
+    Pokud tuto položku nabídky se zobrazí šedě v nabídce, ujistěte se, že jste vybrali název řešení.  
 
 6. Vyberte **zaregistrován úložiště** kartě a stiskněte klávesu **přidat** tlačítko:
 

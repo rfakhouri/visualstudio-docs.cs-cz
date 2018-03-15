@@ -16,11 +16,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: b1de10c76d6a974280bfe016490a7567d0807675
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: 3df1f9c2f7fc2af97bc5541d313df58da5907cea
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Začínáme s jazykem Visual Basic v sadě Visual Studio
 V tomto kurzu pro Visual Basic (VB) budete používat Visual Studio k vytvoření a spuštění aplikace několik různých konzoly a prozkoumat některé funkce sady Visual Studio [integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
@@ -125,9 +125,9 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
 
     ![Okno konzoly zobrazující CaluculateThis aplikaci, která zahrnuje dotazování na jaké akce lze provést.](../ide/media/vb-console-calculate-this.png)
 
-Blahopřejeme k dokončení tohoto kurzu!
+## <a name="next-steps"></a>Další kroky
+Blahopřejeme k dokončení tohoto kurzu! Další i informace o jazyka Visual Basic a Visual Studio IDE, najdete na následujících stránkách.
 
-## <a name="see-also"></a>Viz také
 * [Průvodce jazykem Visual Basic](/dotnet/visual-basic/index)
 * [Co je nového v jazyce Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
 * [IntelliSense pro soubory s kódem jazyka Visual Basic](visual-basic-specific-intellisense.md)

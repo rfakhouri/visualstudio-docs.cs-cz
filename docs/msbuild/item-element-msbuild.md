@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e490ad25535cddf20a2693c2f3b9b7642f0c46e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c57923c75d1ae62b45b6ac288e75ef4e34a2f742
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="item-element-msbuild"></a>Item – prvek (MSBuild)
 Obsahuje uživatelem definovanou položku a jeho metadata. Každá položka, která se používá v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu musí být zadány jako podřízená položka `ItemGroup` elementu.  
@@ -75,7 +75,7 @@ Teď však můžete předat `Version` metadat jako atribut, například v násle
 
 |Atribut|Popis|  
 |---------------|-----------------|  
-|`Include`|Požadovaný atribut.<br /><br /> Soubor nebo zástupný znak pro zahrnutí do seznamu položek.|  
+|`Include`|Nepovinný atribut.<br /><br /> Soubor nebo zástupný znak pro zahrnutí do seznamu položek.|  
 |`Exclude`|Nepovinný atribut.<br /><br /> Soubor nebo zástupných znaků, které chcete vyloučit ze seznamu položek.|  
 |`Condition`|Nepovinný atribut.<br /><br /> Podmínku, která má být vyhodnocen. Další informace najdete v tématu [podmínky](../msbuild/msbuild-conditions.md).|  
 |`Remove`|Nepovinný atribut.<br /><br /> Soubor nebo zástupný znak odebrat ze seznamu položek.<br /><br />|  
@@ -97,7 +97,7 @@ Teď však můžete předat `Version` metadat jako atribut, například v násle
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Element seskupení položek.|  
 
 ## <a name="remarks"></a>Poznámky  
- `Item`elementy definovat vstupy do systému sestavení a jsou seskupené do kolekce položky, které jsou založené na jejich názvy uživatelem definované kolekci. Tyto položky kolekce se dají použít jako parametry pro [úlohy](../msbuild/msbuild-tasks.md), který pomůže jednotlivé položky v kolekci podle kroků procesu sestavení. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).  
+ `Item` elementy definovat vstupy do systému sestavení a jsou seskupené do kolekce položky, které jsou založené na jejich názvy uživatelem definované kolekci. Tyto položky kolekce se dají použít jako parametry pro [úlohy](../msbuild/msbuild-tasks.md), který pomůže jednotlivé položky v kolekci podle kroků procesu sestavení. Další informace najdete v tématu [položky](../msbuild/msbuild-items.md).  
 
  Pomocí zápisu `@(` *myType* `)` umožňuje kolekce položek typu *myType* být rozšířena do seznam řetězců oddělených středníky, a předaný parametr. Pokud je parametr typu `string`, je hodnota parametru seznamu elementů, oddělené středníky. Pokud je parametr pole řetězců (`string[]`), pak každý prvek budou vložena do pole na základě umístění středníky. Pokud je úloha parametr typu <xref:Microsoft.Build.Framework.ITaskItem> `[]`, hodnota bude obsah kolekce položek spolu s veškerá metadata, připojit. Pro každou položku vymezení pomocí znaků než středníkem, použijte syntaxi `@(` *myType*`, '`*oddělovače*`')`.  
 

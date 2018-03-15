@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43955eedc5d7149396b3ad6dc7c380298b631d9e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: b4662b1e498303bd7a4e09acd78db43519c142b1
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="profiling-feature-tour"></a>Prohlídka funkce profilace
 
@@ -154,18 +154,21 @@ Pokud potřebujete například instrumentace funkce, které nejsou aktuálně na
 
 Tady je tabulku, která obsahuje seznam různých nástrojů, které nabízí Visual Studio a typy jiný projekt můžete například vytvořit pomocí:
   
-|Nástroj výkon|Windows desktop|UWP|ASP.NET/ASP.NET jádra|  
-|----------------------|---------------------|------------------------------|-------------|  
-|[Využití paměti](../profiling/memory-usage.md)|Ano|Ano|Ano|  
-|[Využití procesoru](../profiling/cpu-usage.md)|Ano|Ano|Ano (ne pro .NET Core/ASP.NET Core)|  
-|[Využití GPU](../debugger/gpu-usage.md)|Ano|Ano|Ne|  
-|[Časová osa aplikace](../profiling/application-timeline.md)|Ano|Ano|Ne|  
-|[PerfTips](../profiling/perftips.md)|Ano|Ano pro jazyk XAML, ne pro HTML|Ano|  
-|[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ano|Ne|Ano (ne pro ASP.NET Core)|  
-|[IntelliTrace](../debugger/intellitrace.md)|Rozhraní .NET a Visual Studio Enterprise pouze|Rozhraní .NET a Visual Studio Enterprise pouze|Rozhraní .NET a Visual Studio Enterprise pouze|
-|[Využití sítě](../profiling/network-usage.md)|Ne|Ano|Ne| 
-|[Rychlost odezvy HTML UI](../profiling/html-ui-responsiveness.md)|Ne|Ano pro HTML, ne pro jazyk XAML|Ne|  
-|[Paměť jazyka JavaScript](../profiling/javascript-memory.md)|Ne|Ano pro HTML, ne pro jazyk XAML|Ne|  
+|Nástroj výkon|Windows desktop|UWP|ASP.NET/ASP.NET jádra| 
+|----------------------|---------------------|-------------|-------------|  
+|[Využití paměti](../profiling/memory-usage.md)|Ano|Ano|Ano| 
+|[Využití procesoru](../profiling/cpu-usage.md)|Ano (viz poznámka)|Ano|Ano (viz poznámka)|
+|[Využití GPU](../debugger/gpu-usage.md)|Ano|Ano|Ne| 
+|[Časová osa aplikace](../profiling/application-timeline.md)|Ano|Ano|Ne|
+|[PerfTips](../profiling/perftips.md)|Ano|Ano pro jazyk XAML, ne pro HTML|Ano|
+|[Prohlížeč výkonu](../profiling/performance-explorer.md)|Ano|Ne|Ano|
+|[IntelliTrace](../debugger/intellitrace.md)|Rozhraní .NET pomocí sady Visual Studio Enterprise pouze|Rozhraní .NET pomocí sady Visual Studio Enterprise pouze|Rozhraní .NET pomocí sady Visual Studio Enterprise pouze|
+|[Využití sítě](../profiling/network-usage.md)|Ne|Ano|Ne|
+|[Rychlost odezvy HTML UI](../profiling/html-ui-responsiveness.md)|Ne|Ano pro HTML, ne pro jazyk XAML|Ne| 
+|[Paměť jazyka JavaScript](../profiling/javascript-memory.md)|Ne|Ano pro HTML, ne pro jazyk XAML|Ne|
+
+> [!NOTE]
+> Pro .NET Core a ASP.NET Core nástroje využití CPU aktuálně neposkytuje přesné výsledky s přenosné PBDs. Místo toho použijte úplný soubory PDB.
 
 ## <a name="see-also"></a>Viz také  
  [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md)

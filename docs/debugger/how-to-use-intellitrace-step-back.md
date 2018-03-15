@@ -1,13 +1,13 @@
 ---
 title: "Zobrazit snímek pomocí kroku IntelliTrace-back - Visual Studio | Microsoft Docs"
-ms.custom: 
+ms.custom: mvc
 ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 caps.latest.revision: 
 author: mikejo5000
@@ -15,27 +15,34 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8f7343ceea2510c6ba8835c90bcb80b946fe91
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e99b1bd44705a5a50c4138379a87a0ff8315ea29
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Zobrazení snímky IntelliTrace pomocí zpětným krok v sadě Visual Studio
 
 Zpětný krok IntelliTrace automaticky vytvoří snímek vaší aplikace v každé zarážek a ladicí program krok události. Zaznamenaná snímky umožňují přejděte zpět na předchozí zarážky nebo kroky a zobrazení stavu aplikace, stejně jako tomu bylo v minulosti. IntelliTrace zpětný krok vám může ušetřit čas když chcete zobrazit předchozí stav aplikace, ale nechcete, aby se znovu spustit ladění nebo znovu vytvořte stav požadované aplikace.
 
-Zpětný krok IntelliTrace je k dispozici od Visual Studio Enterprise 2017 verze 15,5 a vyšší a vyžaduje Windows 10 Anniversary Update nebo vyšší. Tato funkce se aktuálně podporuje pro ladění ASP.NET, WinForms, WPF, aplikace spravované konzoly a spravované třídy knihovny. Ladění aplikací ASP.NET Core, .NET Core nebo UWP není aktuálně podporován. 
+Zpětný krok IntelliTrace je k dispozici od Visual Studio Enterprise 2017 verze 15,5 a vyšší a vyžaduje Windows 10 Anniversary Update nebo vyšší. Tato funkce se aktuálně podporuje pro ladění ASP.NET, WinForms, WPF, aplikace spravované konzoly a spravované třídy knihovny. Od verze Visual Studio 2017 Enterprise 15.7 preview 1, funkce je také podporována pro ASP.NET Core a .NET Core. Ladění aplikací UWP není aktuálně podporován.
+
+V tomto kurzu provedete následující:
+
+> [!div class="checklist"]
+> * Povolit události Intellitrace a snímky
+> * Přejděte pomocí příkazů zpětný krok a dalšího kroku události
+> * Zobrazení událostí snímky
   
 ## <a name="enable-intellitrace-events-and-snapshots-mode"></a>Povolit režim události a snímky IntelliTrace 
 
-1. V sadě Visual Studio Enterprise, přejděte do **nástroje > Možnosti > IntelliTrace** nastavení a vyberte možnost **IntelliTrace události a snímky**. 
+1. Otevřete projekt ve Visual Studio Enterprise.
+
+1. Přejděte na **nástroje > Možnosti > IntelliTrace** nastavení a vyberte možnost **IntelliTrace události a snímky**. 
 
     ![Povolit režim události IntelliTrace a snímky](../debugger/media/intellitrace-enable-snapshots.png "režim povolit události IntelliTrace a snímky")
 
-2. Otevřete projekt v sadě Visual Studio.
-
-3. Nastavte jeden nebo více zarážky ve vašem projektu a spusťte ladění (stiskněte **F5**), nebo spuštění ladění procházení kódu (**F10** nebo **F11**).
+1. Nastavte jeden nebo více zarážky ve vašem projektu a spusťte ladění (stiskněte **F5**), nebo spuštění ladění procházení kódu (**F10** nebo **F11**).
 
     IntelliTrace pořídí snímek proces aplikace na každý ladicí program krok a zarážek událostí. Tyto události se zaznamenávají do **události** ve **diagnostické nástroje** okno, společně s další události IntelliTrace. Chcete-li otevřít toto okno, zvolte **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
@@ -49,7 +56,7 @@ Zpětný krok IntelliTrace je k dispozici od Visual Studio Enterprise 2017 verze
 
 1. Přecházet mezi jednotlivými události pomocí **krok zpět (Alt + [)** a **krok dál (Alt +])** tlačítek na panelu nástrojů ladění.
 
-    Tato tlačítka přejděte události, které se zobrazují v **události** ve **okno diagnostické nástroje**. Krokování zpětně nebo dopředu na událost automaticky aktivuje historické ladění na vybrané události.
+    Tato tlačítka přejděte události, které se zobrazují v **události** ve **okno diagnostické nástroje**. Krokování zpětně nebo dopředu na událost automaticky aktivuje [historické ladění](../debugger/historical-debugging.md) na vybrané události.
 
     ![Krok zpět a předávat tlačítka](../debugger/media/intellitrace-step-back-icons-description.png "tlačítka krok zpět a krok vpřed")
 
@@ -73,9 +80,7 @@ Zpětný krok IntelliTrace je k dispozici od Visual Studio Enterprise 2017 verze
 
     ![Přehled zpětný krok IntelliTrace](../debugger/media/intellitrace-step-back-overview.png "přehled nástroje IntelliTrace krok zpět")
 
-## <a name="next-steps"></a>Další kroky  
- Informace o tom, chcete-li prověřit proměnné v sadě Visual Studio, najdete v části [prohlídka funkce ladicího programu](../debugger/debugger-feature-tour.md)  
- Přehled historické ladění najdete v tématu [historické ladění](../debugger/historical-debugging.md).  
+    Další informace o tom, jak zkontrolovat proměnné v sadě Visual Studio najdete v tématu [prohlídka funkce ladicího programu](../debugger/debugger-feature-tour.md)  
 
 ## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 
@@ -111,3 +116,10 @@ Dopad na celkový výkon taktování závisí na vaší aplikace. Režijní nák
 * Při ladění aplikace, jejichž proces má velký počet jedinečných paměti oblastech, jako je například aplikace, která načte velký počet knihoven DLL, krokování s snímků povolené výkon může být ovlivněno. Tento problém bude vyřešen v budoucí verzi systému Windows. Pokud se jedná o tento problém, oslovení nás na adrese stepback@microsoft.com. 
 
 * Při ukládání souboru s **ladění > IntelliTrace > Uložit IntelliTrace relace** v režimu události a snímky další data zaznamenaná ze snímků není k dispozici v souboru .itrace. Na zarážek a krok události zobrazí stejné informace, jako kdyby měl uložili soubor v režimu jen pro události IntelliTrace. 
+
+## <a name="next-steps"></a>Další kroky
+
+V tomto kurzu jste zjistili, jak používat zpětný krok IntelliTrace. Chcete další informace o dalších funkcích IntelliTrace.
+
+> [!div class="nextstepaction"]
+> [Funkce IntelliTrace](../debugger/intellitrace-features.md)
