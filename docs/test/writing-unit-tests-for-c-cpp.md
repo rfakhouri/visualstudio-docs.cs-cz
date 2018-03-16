@@ -12,11 +12,11 @@ manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 25a5d358ce8c9b36286929232a42dad48099cff5
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 2152c5be13ca29da03d482aebc444b1ce30c1b97
+ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů částí pro C/C++ v sadě Visual Studio
 
@@ -36,12 +36,11 @@ Kromě nainstalované rozhraní můžete napsat vlastní test adaptéru pro libo
 
 **Visual Studio 2017 verze 15,5**
 
-1) **Adaptér testovací Google** je dodávána jako součást výchozí **vývoj plochy s jazykem C++** zatížení. Má šablona projektu, který můžete přidat do řešení pomocí **přidat nový projekt** kontextové nabídky na uzlu řešení v **Průzkumníku řešení**a možnosti můžete nakonfigurovat přes **nástroje | Možnosti**. Další informace najdete v tématu [postupy: použití Google testu v sadě Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Adaptér testovací Google** je dodávána jako součást výchozí **vývoj aplikací s jazykem C++** zatížení. Má šablona projektu, který můžete přidat do řešení pomocí **přidat nový projekt** kontextové nabídky na uzlu řešení v **Průzkumníku řešení**a možnosti můžete nakonfigurovat přes **nástroje | Možnosti**. Další informace najdete v tématu [postupy: použití Google testu v sadě Visual Studio](how-to-use-google-test-for-cpp.md).
 
-2) **Boost.Test** je dodávána jako součást výchozí **vývoj plochy s jazykem C++** zatížení. Je integrován se **Průzkumníka testů** ale v současné době není šablona projektu, proto je nutné jej ručně nakonfigurovat. Další informace najdete v tématu [postupy: použití Boost.Test v sadě Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** je dodávána jako součást výchozí **vývoj aplikací s jazykem C++** zatížení. Je integrován se **Průzkumníka testů** ale v současné době není šablona projektu, proto je nutné jej ručně nakonfigurovat. Další informace najdete v tématu [postupy: použití Boost.Test v sadě Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-3) **CTest** podpora je součástí [CMake Tools pro Visual Studio](/cpp/ide/cmake-tools-for-cpp) komponenta, která je součástí z **vývoj plochy s C++** zatížení. Ale CTest není ještě plně integrovaná s **Průzkumníka testů**. Další informace najdete v tématu [postupy: použití CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
-
+- **CTest** podpora je součástí [CMake Tools pro Visual Studio](/cpp/ide/cmake-tools-for-cpp) komponenta, která je součástí systému **vývoj aplikací s jazykem C++** zatížení. Ale CTest není ještě plně integrovaná s **Průzkumníka testů**. Další informace najdete v tématu [postupy: použití CTest v sadě Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 a starší**
 
@@ -96,16 +95,16 @@ Můžete přidat *vlastnosti* k testování metody k určení testovací vlastn�
 
 ### <a name="run-the-tests"></a>Spouštění testů
 
-1.  Na **Test** nabídce zvolte **Windows**, **Průzkumníka testů**. Následující obrázek znázorňuje testovacího projektu, jehož testy dosud nebyly spuštěny.
+1. Na **Test** nabídce zvolte **Windows** > **Průzkumníka testů**. Následující obrázek znázorňuje testovacího projektu, jehož testy dosud nebyly spuštěny.
 
-![Testování Explorer před spuštěním testů](media/cpp-test-explorer.png "C++ Průzkumníka testů")
+   ![Testování Explorer před spuštěním testů](media/cpp-test-explorer.png "C++ Průzkumníka testů")
 
-> [!NOTE]
-> CTest integrace s **Průzkumníka testů** dosud nejsou k dispozici. Spusťte testy CTest z hlavní nabídky CMake.
+   > [!NOTE]
+   > CTest integrace s **Průzkumníka testů** dosud nejsou k dispozici. Spusťte testy CTest z hlavní nabídky CMake.
 
-2. Pokud všechny testy nejsou zobrazeny v okně, sestavte projekt test kliknutím pravým tlačítkem na jeho uzlu v **Průzkumníku řešení** a výběr **sestavení** nebo **znovu sestavit**.
+1. Pokud všechny testy nejsou zobrazeny v okně, sestavte projekt test kliknutím pravým tlačítkem na jeho uzlu v **Průzkumníku řešení** a výběr **sestavení** nebo **znovu sestavit**.
 
-3.  V Průzkumníku testu zvolte **spustit všechny**, nebo vyberte konkrétní testy, kterou chcete spustit. Klikněte pravým tlačítkem myši na test pro další možnosti, včetně spuštění v režimu ladění se zarážkami povolena. Okně se zobrazí po spuštění všechny testy, které testy předán a ty, které se nezdařilo:
+1. V Průzkumníku testu zvolte **spustit všechny**, nebo vyberte konkrétní testy, kterou chcete spustit. Klikněte pravým tlačítkem myši na test pro další možnosti, včetně spuštění v režimu ladění se zarážkami povolena. Okně se zobrazí po spuštění všechny testy, které testy předán a ty, které se nezdařilo:
 
 ![Po spuštění testů vyzkoušet Explorer](media/cpp-test-explorer-passed.png "C++ Průzkumníka testů po spuštění testů")
 

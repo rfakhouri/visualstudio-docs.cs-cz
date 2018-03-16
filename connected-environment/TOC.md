@@ -30,6 +30,7 @@
 
 # Postupy
 ##[Sdílení vývojového prostředí](how-to/share-dev-environment.md)
+##[Použití kubectl s propojeným prostředím sady Visual Studio](how-to/use-kubectl-with-vsce.md)
 
 # [Řešení potíží](troubleshooting.md)
 
