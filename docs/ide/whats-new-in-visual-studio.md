@@ -19,14 +19,14 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a41d683701b4d8e0ca9cb973486a1e07216ea894
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.openlocfilehash: 90d6ef6132f8844343388f35a441386c66b838c6
+ms.sourcegitcommit: 6871148ce356977b057febdb4d5a7655e7c295bf
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="what39s-new-in-visual-studio-2017"></a>Jaký & č. 39; s nové v Visual Studio 2017
-#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aktualizováno pro [15,5 verze](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+# <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s nové v Visual Studio 2017
+#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aktualizováno pro [15.6 verze](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Hledáte upgrade z předchozí verze sady Visual Studio? Tady je co Visual Studio 2017 nabízejí jste: bezkonkurenční produktivitu pro všechny vývojáře, všechny aplikace a libovolnou platformu. Použijte Visual Studio 2017 k vývoji aplikací pro Android, iOS, Windows, Linux, web a cloud. Svůj kód můžete rychle psát, snadno ladit a diagnostikovat, často testovat a bez obav vydávat. Navíc si můžete sadu Visual Studio rozšířit a přizpůsobit pomocí svých vlastních rozšíření. Použití správy verzí, být agilní a efektivně spolupracovat s touto verzí!
 
 Zde je podrobný rekapitulace změny, které jsme provedli jsme od předchozí verze sady Visual Studio 2015:
@@ -140,7 +140,7 @@ Když pracujete s projektem v sadě Visual Studio, můžete nastavit a rychle po
 #### <a name="experience-improved-navigation-controls"></a>Ovládací prvky pro navigaci vylepšené prostředí
 Navigace prostředí můžete získat z A a B s větší jistotou rušeni aktualizována.
 
-* **Nové v 15.4**: **přejít k definici (Ctrl + klikněte na tlačítko nebo F12)** &ndash; myši uživatelé mají snadný způsob, jak přejít k definici člena stisknutím **Ctrl** a kliknete člen. Stisknutím **Ctrl** a ukazatele myši na symbol kód bude underline ho a zapnout na odkaz. V tématu [přejít k definici a prohlížení definice](../ide/go-to-and-peek-definition.md) Další informace.  
+* **Novinka v 15.4**: **přejít k definici (Ctrl + klikněte na tlačítko nebo F12)** &ndash; myši uživatelé mají snadný způsob, jak přejít k definici člena stisknutím **Ctrl** a pak levým na člena . Stisknutím **Ctrl** a ukazatele myši na symbol kód bude underline ho a zapnout na odkaz. V tématu [přejít k definici a prohlížení definice](../ide/go-to-and-peek-definition.md) Další informace.  
 
 * **Přejít na implementaci (Ctrl + F12)** &ndash; přejde z jakékoli základní typ nebo člen na její různé implementace.
 
@@ -245,7 +245,7 @@ Další informace najdete v tématu [Visual Studio a Xamarin](../cross-platform/
 
 ![Animace pár Xamarin Live Player, nasazení a režimy provozu úpravy](../ide/media/xamarinliveplayer.gif)
 
-### <a name="visual-studio-app-center"></a>Centrum aplikace Visual Studio
+### <a name="visual-studio-app-center"></a>Visual Studio App Center
 **Nové v 15,5**: Centrum aplikace Visual Studio&mdash;tedy nyní obecně dostupné pro Android, iOS, Windows a systému macOS aplikace&mdash;obsahuje všechno, co musíte provést správu životního cyklu aplikací, včetně automatizovaných sestaveních testování v reálném zařízení v cloudu, distribuci do beta testery a obchody s aplikacemi a z reálného využití prostřednictvím havárií a analýzy dat monitorování. Aplikace napsané v Objective-C, Swift, Java, C#, Xamarin a reagovat nativní jsou podporovány v rámci všech funkcí.
 
   ![Centrum aplikace Visual Studio testovacího prostředí](../ide/media/app-center-test-env.png)
