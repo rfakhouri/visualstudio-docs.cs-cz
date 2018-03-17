@@ -13,11 +13,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e99f3e626487381639d0c76f94ceb6eac99084af
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 2e223132196d40c0418eb7869b36d20a3d15a235
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Používání sady Visual Studio Tools for Unity
 V této části se dozvíte, jak používat Visual Studio Tools for Unity na integrace a funkce produktivitu a používání ladicího programu sady Visual Studio pro vývoj Unity.
@@ -134,6 +134,12 @@ V této části se dozvíte, jak používat Visual Studio Tools for Unity na int
 
 > [!IMPORTANT]
 >  Protože Visual Studio Tools for Unity a Unity instance komunikují přes síť soket UDP, brána firewall může požádat o něm. V takovém případě budete muset autorizovat připojení, aby mohl komunikovat VSTU a Unity.
+
+### <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Řešení potíží s připojení mezi Unity a Visual Studio
+
+#### <a name="confirm-editor-attaching-is-enabled"></a>Potvrďte, že Editor připojení je povoleno
+
+V nabídce Unity vyberte **Upravit > Předvolby** a pak vyberte **externích nástrojů** kartě. Potvrďte, že **Editor připojení** zaškrtávací políčko je aktivní. Další informace naleznete [Unity předvolby dokumentaci](https://docs.unity3d.com/Manual/Preferences.html).
 
 ###  <a name="debugging-your-project-in-a-unity-player"></a> Ladění projektu v přehrávač Unity
  Visual Studio Tools for Unity můžete připojit přímo do aplikace Unity spuštěním v samostatné player, když nejsou spuštěné Unity Editor nebo pro ladění problémů, které jsou specifických pro platformu.

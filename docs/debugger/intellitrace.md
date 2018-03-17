@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 07afad8b464e266477c4edbb97ffc3eb3d8436e4
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 8f4edf6c446bdcd35585a60d97965d2d6ee21ad1
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -57,8 +57,8 @@ Můžete vytvořit IntelliTrace ve Visual Studio Enterprise edition (ale ne edic
 
 |||
 |-|-|
-|Podporované|– Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br/>Můžete ladit většina aplikace, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, pracovní postup prostředí Windows, SharePoint 2010, SharePoint 2013 a 64bitová verze aplikace.<br/>K ladění aplikací služby SharePoint s použitím technologie IntelliTrace, najdete v části [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Chcete-li ladit aplikace Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění je publikována Cloudová služba se IntelliTrace a Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
-|**Omezená podpora**|-.NET core a ASP.NET Core aplikace podporované pro pouze události<br />-F # aplikace jako pokusné<br />-Aplikace UWP podporované pro pouze události|
+|**Podporované**|– Visual Basic a Visual C# aplikace, které používají rozhraní .NET Framework 2.0 nebo vyšší verze.<br/>Můžete ladit většina aplikace, včetně ASP.NET, Microsoft Azure, Windows Forms, WCF, WPF, pracovní postup prostředí Windows, SharePoint 2010, SharePoint 2013 a 64bitová verze aplikace.<br/>K ladění aplikací služby SharePoint s použitím technologie IntelliTrace, najdete v části [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md).<br/> Chcete-li ladit aplikace Microsoft Azure s použitím technologie IntelliTrace, přečtěte si téma [ladění je publikována Cloudová služba se IntelliTrace a Visual Studio](/azure/vs-azure-tools-intellitrace-debug-published-cloud-services).|
+|**Omezená podpora**|-.NET core a ASP.NET Core aplikace podporována pro určité pouze události (řadiče MVC, ADO.NET a HTTPClicent událostí) v místní ladění. Samostatné kolekce není podporována pro .NET Core a ASP.NET Core aplikací.<br />-F # aplikace jako pokusné<br />-Aplikace UWP podporované pro pouze události|
 |**Nepodporuje se**|-C++, jiných jazyků a skriptu<br />-Služby systému Windows, Silverlight, Xbox, nebo [!INCLUDE[winmobile](../debugger/includes/winmobile_md.md)] aplikace|
 
 > [!NOTE]

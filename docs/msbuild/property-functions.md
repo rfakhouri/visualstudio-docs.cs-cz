@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: d119b5baeccc762411aa8f7db4e4d02ba881c34d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c3bd5d35e3d996a1507a5ce14d40fbb59c24cbdb
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="property-functions"></a>Funkce vlastností
 V rozhraní .NET Framework verze 4 a 4.5 funkce vlastností slouží k vyhodnocení nástroje MSBuild skripty. Funkce vlastností lze použít bez ohledu na vlastnosti se zobrazí. Na rozdíl od úloh funkce vlastností bylo možné použít mimo cíle a vyhodnocují před spuštěním jakékoli cíl.  
@@ -182,18 +182,18 @@ V rozhraní .NET Framework verze 4 a 4.5 funkce vlastností slouží k vyhodnoce
 |dlouho Modulo (dlouho, long b)|Modulo dva dlouhé.|  
 |řetězec Escape(string unescaped)|Ukončení řetězce podle MSBuild útěku pravidel.|  
 |řetězec Unescape (řetězec uvozený)|Unescape – řetězec podle MSBuild útěku pravidel.|  
-|int BitwiseOr (int první, int sekundu)|Provedení bitové operace `OR` v prvním a druhém (první &#124; sekundu).|  
+|int BitwiseOr (int první, int sekundu)|Provedení bitové operace `OR` v prvním a druhém (první &#124; druhý).|  
 |int BitwiseAnd (int první, int sekundu)|Provedení bitové operace `AND` na první a druhé (první a druhý).|  
 |int BitwiseXor (int první, int sekundu)|Provedení bitové operace `XOR` v prvním a druhém (první ^ druhý).|  
 |int BitwiseNot(int first)|Provedení bitové operace `NOT` (~ první).|  
-|BOOL IsOsPlatform (platformString řetězec)|Určete, zda je aktuální platforma operačního systému `platformString`. `platformString`musí být členem skupiny <xref:System.Runtime.InteropServices.OSPlatform>.|
+|BOOL IsOsPlatform (platformString řetězec)|Určete, zda je aktuální platforma operačního systému `platformString`. `platformString` musí být členem skupiny <xref:System.Runtime.InteropServices.OSPlatform>.|
 |bool IsOSUnixLike|Hodnota TRUE, pokud aktuální operační systém je v systému Unix.|
 |řetězec NormalizePath (cesta parametry řetězec [])|Získá kanonizovaného úplnou cestu zadaná cesta a zajišťuje, že obsahuje znaků oddělujících správném adresáři pro aktuální operační systém.|
 |řetězec NormalizeDirectory (cesta parametry řetězec [])|Získá kanonizovaného úplnou cestu k adresáři zadaná a zajišťuje obsahuje znaků oddělujících správném adresáři pro aktuální operační systém a zajistit jeho obsahuje koncové lomítko.|
 |řetězec EnsureTrailingSlash(string path)|Pokud zadaná cesta k nemá ho přidat koncové lomítko. Pokud cesta je prázdný řetězec, nebude změněno.|
 |řetězec GetPathOfFileAbove (soubor řetězec, řetězec startingDirectory)|Vyhledá soubor na základě umístění aktuální soubor sestavení nebo na základě `startingDirectory`, je-li zadána.|
 |GetDirectoryNameOfFileAbove (startingDirectory řetězec, řetězec fileName)|Vyhledejte soubor v zadaný adresář nebo umístění struktury adresářů výše tohoto adresáře.|
-|řetězec MakeRelative (basePath řetězec, řetězec cesty)|Díky `path` vzhledem k `basePath`. `basePath`musí být absolutní adresáře. Pokud `path` nesmí být vytvářeny relativní, je vrácen typu verbatim. Podobně jako `Uri.MakeRelativeUri`.|
+|řetězec MakeRelative (basePath řetězec, řetězec cesty)|Díky `path` vzhledem k `basePath`. `basePath` musí být absolutní adresáře. Pokud `path` nesmí být vytvářeny relativní, je vrácen typu verbatim. Podobně jako `Uri.MakeRelativeUri`.|
 |řetězec ValueOrDefault (conditionValue řetězec, řetězec defaultValue)|Vrátí řetězec v parametru 'defaultValue' pouze v případě, že parametr 'conditionValue' je prázdný, jinak, vrátí hodnotu conditionValue.|
 
 ##  <a name="nested-property-functions"></a>Vnořené vlastnosti funkce  
@@ -211,7 +211,7 @@ V rozhraní .NET Framework verze 4 a 4.5 funkce vlastností slouží k vyhodnoce
  Tato vlastnost funkce má následující syntaxi:  
 
 ```  
-$[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
+$([MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture))
 ```  
 
 ##  <a name="msbuild-ensuretrailingslash"></a>EnsureTrailingSlash nástroje MSBuild  
@@ -229,7 +229,7 @@ $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
  Tato vlastnost funkce má následující syntaxi:  
 
 ```  
-$[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)  
+$([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 ```  
 
  Následující kód je příkladem této syntaxe.  
@@ -246,7 +246,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
  Tato vlastnost funkce má následující syntaxi:  
 
 ```  
-$([MSBuild]::GetPathOfFileAbove(dir.props)  
+$([MSBuild]::GetPathOfFileAbove(dir.props))  
 ```  
 
 ##  <a name="msbuild-getregistryvalue"></a>GetRegistryValue nástroje MSBuild  
@@ -292,7 +292,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
  Tato vlastnost funkce má následující syntaxi:  
 
 ```  
-$[MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2))  
+$([MSBuild]::MakeRelative($(FileOrFolderPath1), $(FileOrFolderPath2)))
 ```  
 
  Následující kód je příkladem této syntaxe.  

@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3cc0b6b99dd76a531ed3e99dcac8ae5d438d7e63
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: faa901c14bd5d115aa3e7384a5d3b63c0410b64b
+ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalace podpory Python v sadě Visual Studio v systému Windows
 
@@ -43,7 +43,7 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017. Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program sady Visual Studio a přejděte ke kroku 2.
+1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017. Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program sady Visual Studio, vyberte **upravit** možnosti (v tématu [upravit Visual Studio](../install/modify-visual-studio.md)) a přejděte ke kroku 2.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Nainstalovat Visual Studio 2017 Community</a>
