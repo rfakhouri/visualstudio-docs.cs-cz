@@ -1,11 +1,7 @@
 ---
 title: "Vytváření a spouštění testování částí pro aplikace UWP v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - unit tests, creating
@@ -17,11 +13,11 @@ manager: ghogen
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: bb69f8e8012fecef683f5b95bc4dd9aef7e26a3c
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ec857cb2bf0aa8e5453180249ddeccf47236dcf1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Návod: Vytváření a spouštění testování částí pro aplikace UWP
 
@@ -100,9 +96,9 @@ V editoru kódu upravit testování částí a přidat vyhodnotí a logiku potř
     > [!TIP]
     > Vyberte jeden nebo více testů částí uvedených v Průzkumníku, klikněte pravým tlačítkem a zvolte **spuštění testů vybrané**.
     >
-    >  Kromě toho můžete **ladění vybrané testy**, **otevřete testovací**a použít **vlastnosti** možnost.
+    > Kromě toho můžete **ladění vybrané testy**, **otevřete testovací**a použít **vlastnosti** možnost.
     >
-    >  ![Unit Test Explorer &#45; uni test context menu](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
+    > ![Unit Test Explorer &#45; uni test context menu](../test/media/unit_test_win8_unittestexplorer_contextmenu.png "Unit_Test_Win8_UnitTestExplorer_ContextMenu")
 
     Jednotka test spustí. Po dokončení testování Explorer zobrazí stav testu, uplynulý čas a obsahuje odkaz na zdroj.
 

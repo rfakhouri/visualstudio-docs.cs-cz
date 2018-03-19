@@ -1,7 +1,7 @@
 ---
 title: "ASP.NET – ladění, Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: c740265220f844b24ba9b4eeb133de185773a7a0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0c6f3b0d074957ba8fabd93707e9a76f0dcd46e1
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-aspnet-with-the-visual-studio-debugger"></a>Ladění technologie ASP.NET pomocí ladicího programu sady Visual Studio
 
@@ -94,19 +94,19 @@ A *zarážek* je značku, která určuje, kde by měl Visual Studio pozastavení
     ![Stiskněte tlačítko zarážky](../debugger/media/dbg-qs-hit-breakpoint-aspnet.png)
 
     > [!TIP]
-    > Pokud máte zarážka v smyčky nebo rekurze, nebo pokud máte spoustu zarážky, které často krok prostřednictvím, použijte [podmíněného zarážek](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) a ujistěte se, že kód pozastaven jenom v případě, že jsou splněny určité podmínky. To šetří čas a můžete také usnadňují ladění problémů, které se těžko reprodukovat.
+    > Pokud máte zarážka v smyčky nebo rekurze, nebo pokud máte mnoho zarážky, které často krok prostřednictvím, použijte [podmíněného zarážek](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) a ujistěte se, že kód pozastaven jenom v případě, že jsou splněny určité podmínky. To šetří čas a můžete také usnadňují ladění problémů, které se těžko reprodukovat.
 
 ## <a name="navigate-code"></a>Přejděte kódu
 
 Existují jiné příkazy dáte pokyn, aby ladicí program pokračovat. Ukážeme příkaz navigační užitečné kód, který je nového ve Visual Studio 2017.
 
-- Při pozastavena u zarážky, najeďte myší na příkaz `return c2` dokud zeleným **spustit a klikněte na tlačítko** tlačítko ![spustit kliknutím](../debugger/media/dbg-tour-run-to-click.png) se zobrazí a potom stiskněte klávesu **spustit a klikněte na tlačítko** tlačítko.
+Při pozastavena u zarážky, najeďte myší na příkaz `return c2` dokud zeleným **spustit a klikněte na tlačítko** tlačítko ![spustit kliknutím](../debugger/media/dbg-tour-run-to-click.png) se zobrazí a potom stiskněte klávesu **spustit a klikněte na tlačítko** tlačítko.
 
-    ![Spustit a klikněte na](../debugger/media/dbg-qs-run-to-click-aspnet.png)
+![Spustit a klikněte na](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
-    Aplikace pokračuje v provádění a pozastaví na řádek kódu, kde kliknutí na tlačítko.
+Aplikace pokračuje v provádění a pozastaví na řádek kódu, kde kliknutí na tlačítko.
 
-    Běžné příkazy klávesnice umožňuje zahrnout krok prostřednictvím kódu **F10** a **F11**. Další podrobné pokyny najdete v tématu [začátečníka](../debugger/getting-started-with-the-debugger.md).
+Běžné příkazy klávesnice umožňuje zahrnout krok prostřednictvím kódu **F10** a **F11**. Další podrobné pokyny najdete v tématu [začátečníka](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Zkontrolujte proměnné v datového tipu
 
@@ -136,9 +136,7 @@ Další informace o používání upravit a pokračovat a na omezení funkcí na
 
 ## <a name="next-steps"></a>Další kroky
 
-- Další informace o ladicího programu, najdete v části [spuštění ladicího programu a přejděte kód](../debugger/getting-started-with-the-debugger.md).
-- Další informace o zarážky, najdete v tématu [použití zarážek](../debugger/using-breakpoints.md).
+V tomto kurzu když jste se naučili postup spuštění ladicího programu, krok prostřednictvím kódu a zkontrolovat proměnné. Chcete získat přehled funkcí ladicího programu spolu s odkazy na další informace.
 
-## <a name="see-also"></a>Viz také  
- [Ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)

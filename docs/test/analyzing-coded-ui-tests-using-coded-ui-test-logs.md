@@ -1,74 +1,64 @@
 ---
-title: "Analýza programových testů uživatelského rozhraní pomocí protokolů z těchto testů | Microsoft Docs"
+title: "Analýza programových testů uživatelského rozhraní programového testu uživatelského rozhraní pomocí protokolů v sadě Visual Studio | Microsoft Docs"
 ms.date: 11/04/2016
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 00c68941b86435f726833d60452518946832aadd
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: a2dcc590dfa6cb6c7a9d4b61acba1178295f8405
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analýza programových testů uživatelského rozhraní pomocí protokolů z těchto testů
 
-Programových filtru protokoly testu uživatelského rozhraní a záznam, který spouští důležité informace o vaší programového testu uživatelského rozhraní.
+Programových filtru protokoly testu uživatelského rozhraní a záznam, který spouští důležité informace o vaší programového testu uživatelského rozhraní. Protokoly jsou uvedené ve formátu, který umožňuje rychle ladění problémů.
 
- **Požadavky**
+## <a name="step-1-enable-logging"></a>Krok 1: Povolení protokolování
 
-- Visual Studio Enterprise
+V závislosti na scénáři Povolte protokol pomocí jedné z následujících metod:
 
-## <a name="why-should-i-do-this"></a>Proč to mám udělat?
+- Cílové rozhraní .NET Framework verze 4 bez *App.config* souboru nacházejí v projektu testu:
 
-Protokoly jsou uvedené ve formátu, který umožňuje rychle ladění problémů.
+   1. Otevřete **QTAgent32_40.exe.config** souboru. Ve výchozím nastavení je tento soubor umístěný ve *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-## <a name="how-do-i-do-this"></a>Jak to dělat?
+   2. Změňte hodnotu pro EqtTraceLevel na požadovanou úroveň protokolu.
 
-### <a name="step-1-enable-logging"></a>Krok 1: Povolení protokolování
+   3. Uložte soubor.
 
-V závislosti na scénáři Povolte protokol pomocí jedné z následujících metod.
+- Cílové rozhraní .NET Framework verze 4.5 bez *App.config* souboru nacházejí v projektu testu:
 
-- Cílové verze rozhraní .NET Framework 4 se nacházejí v projektu testovací soubor App.config
+   1. Otevřete **QTAgent32.exe.config** souboru. Ve výchozím nastavení je tento soubor umístěný ve *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-    - Otevřete **QTAgent32_40.exe.config** souboru.
+   2. Změníte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.
 
-         Ve výchozím nastavení je tento soubor umístěný ve  **\<drvie >: \Program soubory (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.
+   3. Uložte soubor.
 
-         Změňte hodnotu pro EqtTraceLevel na požadovanou úroveň protokolu.
+- *App.config* souboru se nacházejí v projektu testu:
 
-         Uložte soubor.
+    - Otevřete *App.config* v projektu soubor a přidejte následující kód v uzlu Konfigurace:
 
-- Cílové verze rozhraní .NET Framework 4.5 se nacházejí v projektu testovací soubor App.config
+      ```xml
+      <system.diagnostics>
+        <switches>
+          <add name="EqtTraceLevel" value="4" />
+        </switches>
+      </system.diagnostics>`
+      ```
 
-    - Otevřete **QTAgent32.exe.config** souboru.
+- Povolte protokolování z samotný kód testu:
 
-         Ve výchozím nastavení je tento soubor umístěný ve  **\<drvie >: \Program soubory (x86) \Microsoft Visual Studio 12.0\Common7\IDE**.
+   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
 
-         Změníte hodnotu EqtTraceLevel na požadovanou úroveň protokolu.
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Spuštění vaší programového testu uživatelského rozhraní a zobrazit protokol
 
-         Uložte soubor.
+Při spuštění programového testu uživatelského rozhraní se změny **QTAgent32.exe.config** soubor na místě, uvidíte výstup odkaz ve výsledcích testování Explorer. Soubory protokolu se produkují, ne jenom v případě, test nezdaří, ale i pro úspěšné testů, pokud je úroveň trasování nastavena na "verbose."
 
-- Soubor App.config nacházejí v projektu testu
-
-    - Otevřete soubor App.config v projektu.
-
-         Přidejte následující kód v uzlu Konfigurace:
-
-         `<system.diagnostics>     <switches>       <add name="EqtTraceLevel" value="4" />     </switches>  </system.diagnostics>`
-
-- Povolit protokolování z samotný kód testu
-
-    - <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
-
-### <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Krok 2: Spuštění vaší programového testu uživatelského rozhraní a zobrazit protokol
-
- Při spuštění programového testu uživatelského rozhraní se změny **QTAgent32.exe.config** soubor na místě, uvidíte výstup odkaz ve výsledcích testování Explorer. Soubory protokolu se produkují, ne jenom v případě, test nezdaří, ale i pro úspěšné testů, pokud je úroveň trasování nastavena na "verbose."
-
-1.  Na **TEST** nabídce zvolte **Windows** a pak vyberte **Průzkumníka testů**.
+1.  Na **Test** nabídce zvolte **Windows** a pak vyberte **Průzkumníka testů**.
 
 2.  Na **sestavení** nabídce zvolte **sestavit řešení**.
 
@@ -77,7 +67,7 @@ V závislosti na scénáři Povolte protokol pomocí jedné z následujících m
      Automatizované testy spustit a pokud předaná nebo se nezdařilo.
 
     > [!TIP]
-    >  K zobrazení Průzkumníka testů z **testovací nabídky**, přejděte na příkaz **Windows** a potom zvolte **Průzkumníka testů**.
+    > Chcete-li zobrazit Průzkumníka testů, zvolte **Test** > **Windows**a potom zvolte **Průzkumníka testů**.
 
 4.  Vyberte **výstup** odkaz ve výsledcích Průzkumníka testů.
 
@@ -92,20 +82,6 @@ V závislosti na scénáři Povolte protokol pomocí jedné z následujících m
      Protokol se zobrazí ve webovém prohlížeči.
 
      ![Programové uživatelského rozhraní testovací soubor protokolu](../test/media/cuit_htmlactionlog3.png "CUIT_HTMLActionLog3")
-
-## <a name="q--a"></a>Dotazy a odpovědi
-
-### <a name="q-what-happened-to-the-enablehtmllogger-key"></a>Otázka: co se stalo s EnableHtmlLogger klíč?
-
-V předchozích verzích sady Visual Studio nebyly dva další nastavení konfigurace pro povolení protokoly ve formátu Html v programového testu uživatelského rozhraní:
-
-```xml
-<add key="EnableHtmlLogger" value="true"/>
-
-<add key="EnableSnapshotInfo" value="true"/>
-```
-
-Obě tato nastavení jsou zastaralé od verze sady Visual Studio 2012. EqtTraceLevel se jenom nastavení, které je potřeba upravit tak, aby povolit HtmlLogger.
 
 ## <a name="see-also"></a>Viz také
 

@@ -1,9 +1,7 @@
 ---
 title: "Nejčastější dotazy k testování částí Live | Microsoft Docs"
 ms.date: 2017-10-03
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
@@ -12,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2437a138e9e83d3b723971b53dac413ad0ea4151
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: c9a4628d6c2b0d842d57711f1204fbe15f88fac9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live testování částí nejčastější dotazy
 
@@ -25,7 +23,6 @@ ms.lasthandoff: 02/21/2018
 **Odpověď:**
 
 Další informace o nových funkcích a vylepšeních, které byly provedeny na Live testování částí od verze Visual Studio 2017 verze 15.3 najdete v tématu [co je nového v za provozu testování částí](live-unit-testing-whats-new.md).
-
 
 ## <a name="what-test-frameworks-does-live-unit-testing-support-and-what-are-the-minimum-supported-versions"></a>Jaké systémů testování podporuje Live testování částí podporu a jaké jsou minimální podporované verze?
 
@@ -58,14 +55,13 @@ Za provozu testování částí funguje s tři architektury testování oblíben
 
 Pokud máte starší Mstestu na základě testovací projekty tento odkaz `Microsoft.VisualStudio.QualityTools.UnitTestFramework` a můžete si jej nepřejete přesunout do novější balíčky NuGet Mstestu, upgradujte na verzi Visual Studio 2017 verzi 15.4.
 
-V některých případech budete muset explicitně obnovování balíčků NuGet odkazuje projekty v řešení v pořadí pro Live testování částí pro práci. Musíte buď pomocí tohoto postupu explicitní sestavení řešení (vyberte **sestavení**, **znovu sestavit řešení** nejvyšší úrovně nabídce sady Visual Studio) nebo obnovují se balíčky v řešení (klikněte pravým tlačítkem na řešení a vyberte **obnovení balíčků NuGet**) před povolením testování částí životností.
-
+V některých případech budete muset explicitně obnovování balíčků NuGet odkazuje projekty v řešení v pořadí pro Live testování částí pro práci. Balíčky můžete obnovit buď pomocí tohoto postupu explicitní sestavení řešení (vyberte **sestavení**, **znovu sestavit řešení** nejvyšší úrovně nabídce sady Visual Studio), nebo kliknutím pravým tlačítkem na řešení a Výběr **obnovení balíčků NuGet** před povolením testování částí životností.
 
 ## <a name="does-live-unit-testing-work-with-net-core"></a>Live testování částí funguje s .NET Core?
 
 **Odpověď:**
 
-Ano. Za provozu testování částí funguje s .NET Core a rozhraní .NET Framework. Ve Visual Studio 2017 verze 15.3 byla nedávno přidána podpora pro .NET Core. Proveďte upgrade na tuto verzi sady Visual Studio, pokud chcete, podpora živé testování částí pro .NET Core.
+Ano. Za provozu testování částí funguje s .NET Core a rozhraní .NET Framework. Ve Visual Studio 2017 verze 15.3 byla nedávno přidána podpora pro .NET Core. Upgrade na tuto verzi sady Visual Studio, pokud chcete, podpora živé testování částí pro .NET Core.
 
 ## <a name="why-doesnt-live-unit-testing-work-when-i-turn-it-on"></a>Proč Live testování částí nefunguje, pokud zapnutím?
 
@@ -73,11 +69,11 @@ Ano. Za provozu testování částí funguje s .NET Core a rozhraní .NET Framew
 
 **Výstup – okno** (Pokud je vybrán Live testování částí rozevíracího seznamu) by měl zjistit, proč Live jednotkové testování není funkční. Testování částí za provozu, nemusí fungovat pro jednu z následujících důvodů:
 
-- Pokud se balíčky NuGet odkazuje projekty v řešení nebyly obnoveny, Live testování částí nebude fungovat. To explicitní sestavení řešení nebo při obnovování balíčků NuGet v řešení před zapnutím Live testování částí v by měl tento problém vyřešit.
+- Pokud se balíčky NuGet odkazuje projekty v řešení nebyly obnoveny, Live testování částí nebude fungovat. To explicitní sestavení řešení nebo při obnovování balíčků NuGet v řešení před zapnutím v za provozu jednotkové testování by měla vyřešit tento problém.
 
-- Pokud používáte na základě Mstestu testů ve svých projektech, ujistěte se, že odeberte odkaz na `Microsoft.VisualStudio.QualityTools.UnitTestFramework`a přidejte odkazy na nejnovější balíčky NuGet Mstestu, `MSTest.TestAdapter` (je vyžadována minimální verzi 1.1.11) a `MSTest.TestFramework` (minimální verze 1.1.11 je vyžadována). Další informace najdete v části "Systémů podporované testování" [použití Live jednotkové testování v aplikaci Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks) tématu.
+- Pokud používáte na základě Mstestu testů ve svých projektech, ujistěte se, že odeberte odkaz na `Microsoft.VisualStudio.QualityTools.UnitTestFramework`a přidejte odkazy na nejnovější balíčky NuGet Mstestu, `MSTest.TestAdapter` (je vyžadována minimální verzi 1.1.11) a `MSTest.TestFramework` (minimální verze 1.1.11 je vyžadována). Další informace najdete v části "Systémů podporované testování" [použití Live jednotkové testování v aplikaci Visual Studio 2017 Enterprise Edition](live-unit-testing.md#supported-test-frameworks) článku.
 
-- Alespoň jeden projekt ve vašem řešení by měl mít buď NuGet odkaz, nebo přímý odkaz na xUnit, NUnit nebo Mstestu test framework. Tento projekt by měl odkazovat také odpovídající balíček NuGet sady Visual Studio test adaptéry. Adaptér testovací sady Visual Studio lze také odkazovat prostřednictvím `.runsettings` souboru. `.runsettings` Soubor musí mít položka podobná té následující:
+- Alespoň jeden projekt ve vašem řešení by měl mít buď NuGet odkaz, nebo přímý odkaz na xUnit, NUnit, nebo Mstestu test framework. Tento projekt by měl odkazovat také odpovídající balíček NuGet sady Visual Studio test adaptéry. Adaptér testovací sady Visual Studio lze také odkazovat prostřednictvím `.runsettings` souboru. `.runsettings` Soubor musí mít položku jako v následujícím příkladu:
 
    ```xml
     <RunSettings>
@@ -85,7 +81,7 @@ Ano. Za provozu testování částí funguje s .NET Core a rozhraní .NET Framew
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
        </RunConfiguration>
     </RunSettings>
-   ``` 
+   ```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>Proč Live testování částí zobrazuje nesprávné pokrytí po upgradu testovací adaptér odkazovaný ve vašem projektů sady Visual Studio podporovanou verzi?
 
@@ -174,7 +170,7 @@ Existuje několik rozdílů:
 
 **Odpověď:**
 
-Najdete v části "zahrnutí a vyloučení testování projektů a testování metod" [použití Live jednotkové testování v aplikaci Visual Studio 2017 Enterprise Edition](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) téma pro uživatelská nastavení. To je velmi užitečné, když chcete spustit konkrétní sadu testů pro relaci úpravy konkrétní nebo zachovat vlastní osobní preference.
+Najdete v části "zahrnutí a vyloučení testování projektů a testování metod" [použití Live jednotkové testování v aplikaci Visual Studio 2017 Enterprise Edition](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods) článku uživatelská nastavení. To je užitečné, když chcete spustit konkrétní sadu testů pro relaci úpravy konkrétní nebo zachovat vlastní osobní preference.
  
 Pro nastavení pro konkrétní řešení, můžete použít <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> atribut prostřednictvím kódu programu pro vyloučení metody, vlastnosti, třídy a struktury z se instrumentovány Live testování jednotky. Kromě toho můžete také nastavit `<ExcludeFromCodeCoverage>` vlastnost `true` v souboru projektu z se instrumentovány vyloučit celý projekt. Za provozu testování částí bude i nadále spustit testy, které nebyly byla instrumentována, ale nebude vizualizovat jejich pokrytí.
 
@@ -203,7 +199,7 @@ public class Class1
 
 **Odpověď:**
 
-Tento problém vyřešen a v neexistuje ve Visual Studio 2017 verze 15.3. Proveďte upgrade na tuto verzi sady Visual Studio.
+Tento problém vyřešen a v aplikaci Visual Studio 2017 verze 15.3 neexistuje. Upgrade na tuto verzi sady Visual Studio.
 
 Pro starší verze aplikace Visual Studio 2017 je známého problému, který může mít za následek Live testování částí sestavení chybě pro vložení následující data záhlaví PE Win32:
 
@@ -227,7 +223,7 @@ Testování částí za provozu spustí sestavení vždy, když zjistí, že do�
 
 **Odpověď:**
 
-Testování částí za provozu není aktuálně fungují dobře u zatížení funkci lightweight řešení. Funguje pouze po nejméně jedna z projektů testování načtení. Do té doby nebudou fungovat, protože za provozu testování částí je závislá na alespoň jeden z projektů testování odkazující na testovací adaptér (Mstestu, xUnit nebo NUnit) načítá.
+Testování částí za provozu není aktuálně fungují dobře u zatížení funkci lightweight řešení. Funguje pouze po nejméně jedna z projektů testování načtení. Do té doby se nebude fungovat, protože za provozu testování částí je závislá na alespoň jeden z projektů testování odkazující na testovací adaptér (Mstestu, xUnit nebo NUnit) načítá.
 
 > [!NOTE]
 > Prosté řešení zatížení již není k dispozici ve verzi Visual Studio 2017 15,5 a novějším. V aplikaci Visual Studio 2017 verze 15,5 a novější velkých řešení, které obsahují spravované kód zatížení mnohem rychleji než dřív, i bez zatížení lightweight řešení.

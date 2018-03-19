@@ -1,20 +1,20 @@
 ---
 title: "Používání členů oboru názvů Microsoft.VisualStudio.TestTools.UnitTesting při testování částí | Microsoft Docs"
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7c841210c41e7b2b9870c80cc148006f3e63290d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 1ae1f1bd4deb81b92ffc7a38c82164e5824b4d76
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-the-mstest-framework-in-unit-tests"></a>Pomocí rozhraní Mstestu při testech jednotek
+# <a name="use-the-mstest-framework-in-unit-tests"></a>Použití Mstestu framework při testech jednotek
 
 [Mstestu](<xref:Microsoft.VisualStudio.TestTools.UnitTesting>) framework podporuje jednotky testování v sadě Visual Studio. Používání tříd a členové <xref:Microsoft.VisualStudio.TestTools.UnitTesting> obor názvů při programování testování částí. Můžete taky je při jsou upřesnění testů jednotek, která byla vygenerována z kódu.
 

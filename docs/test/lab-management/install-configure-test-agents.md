@@ -1,7 +1,7 @@
 ---
-title: "Instalace a konfigurace testovacích agentů v sadě Visual Studio | Microsoft Docs"
+title: "Nainstalujte testovacích agentů a testovací kontrolery pro sadu Visual Studio | Microsoft Docs"
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - configure test agents, test lab
@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e29676ec67bc3fd22313debe70ba8dbcd7fd76
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4eaba4be128042776382d63d1b0198a48cecef94
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="install-and-configure-test-agents"></a>Instalace a konfigurace testovacích agentů
+# <a name="install-test-agents-and-test-controllers"></a>Nainstalujte testovacích agentů a testovací kontrolery
 
 Testovací scénáře, které používají Visual Studio a Visual Studio Team Services (VSTS) nebo Team Foundation Server (TFS) není nutné testovací kontroler. Agenti pro sadu Visual Studio zpracování orchestration komunikaci s služby VSTS nebo TFS. Scénáři může být spuštění průběžné testů pro sestavení a verze pracovních postupů v služby VSTS nebo TFS.
 
@@ -32,7 +32,9 @@ Také můžete zvážit, pokud je vhodnější použít [sestavení nebo Správa
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Nainstalujte testovací kontrolery a testovací agenti
 
-Můžete si stáhnout agentů pro Visual Studio 2017 z [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Vyhledejte *agentů pro Visual Studio 2017* a vyberte buď *agenta* nebo *řadič*. Agenty si můžete stáhnout pro Visual Studio 2015 a Visual Studio 2013 z [starší stahování](https://www.visualstudio.com/vs/older-downloads/) stránky.
+Můžete si stáhnout agentů pro Visual Studio 2017 z [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents). Přejděte do dolní části stránky a vyhledejte *agentů pro Visual Studio 2017*. Vyberte buď *agenta* nebo *řadič*a potom zvolte *Stáhnout*. Spusťte stažený spustitelný soubor instalace zařízení nebo testovacího agenta.
+
+Agenty si můžete stáhnout pro Visual Studio 2015 a Visual Studio 2013 z [starší stahování](https://www.visualstudio.com/vs/older-downloads/) stránky.
 
 Tato instalační programy jsou k dispozici jako soubory ISO Snadná instalace na virtuálních počítačích.
 
@@ -59,10 +61,6 @@ Následující tabulka uvádí scénáře podporované agentů pro Visual Studio
 | Scénáře podporované agenti pro Visual Studio 2013 | Alternativní v sadě TFS a služby VSTS |
 | --- | --- |
 | Pracovního postupu sestavení-nasazení-testování v sadě Visual Studio | Uživatelé mohou používat [sestavení definice](/vsts/build-release/) (ne sestavení XAML) pro sestavení, nasazení a testovací scénáře v sadě TFS. |
-| Zatížení testování (testování výkonu) pomocí místní vzdáleného počítače | Použití testovacího Kontroléru a testovací agenty 2013 Update 5 spustit zatížení testy místně. Další informace najdete v tématu [pomocí testovací kontrolery a testovací agenti v zátěžovém testu](https://msdn.microsoft.com/library/ff400223.aspx). |
+| Zatížení testování (testování výkonu) pomocí místní vzdáleného počítače | Použití testovacího Kontroléru a testovací agenty 2013 Update 5 spustit zatížení testy místně. |
 | Vzdálené spuštění automatizovaných testů z použití testovacího prostředí v nástroji Microsoft Test Manager | Aktuálně neexistuje žádné alternativní pro tento scénář. Doporučujeme použít úlohou pro spuštění funkčních testů v sestavení a verze definice (není v jazyce XAML sestavení) provést testy vzdáleně. |
 | Vývojáři provádění vzdáleného testů v sadě Visual Studio | Již není podporována. |
-
-## <a name="see-also"></a>Viz také
-
-* [Nastavení počítačů a shromažďování diagnostických informací](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)

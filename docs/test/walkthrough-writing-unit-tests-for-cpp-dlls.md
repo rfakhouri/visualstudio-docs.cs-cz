@@ -1,22 +1,18 @@
 ---
 title: "Postupy: zápis testů částí pro knihovny DLL C++ | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9c1f7d3794bbb614b4879cb323d03cfb810c7934
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 40ec25b25c3aefd6cc5e759c70362cf7e5f1855e
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Postupy: zápis testů částí pro C++ – knihovny DLL
 
@@ -184,9 +180,9 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
     ```
 
     > [!TIP]
-    >  Doporučujeme neměnit testy, které uplynuly. Místo toho přidejte nový test, aktualizujte kód tak, aby test bude provedeno úspěšně a poté přidejte jiného testu, a tak dále.
+    > Doporučujeme neměnit testy, které uplynuly. Místo toho přidejte nový test, aktualizujte kód tak, aby test bude provedeno úspěšně a poté přidejte jiného testu, a tak dále.
     >
-    >  Pokud vaši uživatelé změnit jejich požadavky, zakažte testy, které již nejsou správné. Zápis nových testů a jejich fungování jeden po druhém, stejným způsobem jako přírůstkové.
+    > Pokud vaši uživatelé změnit jejich požadavky, zakažte testy, které již nejsou správné. Zápis nových testů a jejich fungování jeden po druhém, stejným způsobem jako přírůstkové.
 
 2.  Sestavte řešení a potom vyberte v Průzkumníku Test **spustit všechny**.
 
@@ -195,7 +191,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
      ![Selhání RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
-    >  Ověřte, že každý test se nezdaří, ihned po jeho jste napsali. To umožňuje vyhnout se snadno chybu zápisu testu, který nikdy selže.
+    > Ověřte, že každý test se nezdaří, ihned po jeho jste napsali. To umožňuje vyhnout se snadno chybu zápisu testu, který nikdy selže.
 
 3.  Vylepšení kódu knihovnu DLL tak, aby nový test předá:
 
@@ -223,7 +219,7 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
      ![Průzkumníka testů jednotek &#45; rozsah Test proběhl](../test/media/utecpp12.png "UteCpp12")
 
     > [!TIP]
-    >  Vývoj kódu přidáním testy jeden najednou. Ujistěte se, že všechny testy byly úspěšné po každé iteraci.
+    > Vývoj kódu přidáním testy jeden najednou. Ujistěte se, že všechny testy byly úspěšné po každé iteraci.
 
 ##  <a name="debug"></a> Ladění selhání testu
 
@@ -314,9 +310,9 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
 2.  Sestavte řešení a zvolte **spustit všechny**, abyste měli jistotu, že nebyla zavedena k chybě.
 
     > [!TIP]
-    >  Dobrý sadu testů jednotek poskytuje jistotu, že nebyla zavedena chyby při změně kódu.
+    > Dobrý sadu testů jednotek poskytuje jistotu, že nebyla zavedena chyby při změně kódu.
     >
-    >  Zachovat refaktoring oddělené od dalších změn.
+    > Zachovat refaktoring oddělené od dalších změn.
 
 ## <a name="next-steps"></a>Další kroky
 

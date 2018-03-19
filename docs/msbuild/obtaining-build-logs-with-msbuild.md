@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a2a7989e7b1cd98745d316ff01718653eda48f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ba20e37e9a984512e2d63de882d434b4f034120d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Získávání protokolů o sestavení pomocí nástroje MSBuild
 Pomocí nástroje MSBuild pomocí přepínačů, můžete zadat kolik dat sestavení, které chcete zkontrolovat a zda chcete uložit data sestavení na jeden nebo více souborů. Můžete také zadat vlastní protokolovacího nástroje ke shromažďování dat sestavení. Informace o parametrech příkazového řádku nástroje MSBuild, které nezahrnuje v tomto tématu najdete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  
@@ -45,7 +45,7 @@ Pomocí nástroje MSBuild pomocí přepínačů, můžete zadat kolik dat sestav
 ```  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
-  
+
 ## <a name="saving-the-build-log-to-a-file"></a>Uložení protokolu sestavení do souboru  
  Můžete použít **/fileLogger** (**fl**) přepínače k uložení dat sestavení do souboru. Následující příklad uloží data sestavení do souboru, který je pojmenován `msbuild.log`.  
   
@@ -72,7 +72,19 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 ```  
   
  Další informace najdete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  
-  
+
+## <a name="saving-a-binary-log"></a>Ukládání binární protokol
+
+V protokolu můžete uložit v komprimované, binární formát pomocí **/binaryLogger** (**blokovaných**) přepínače. Tento protokol obsahuje podrobný popis procesu sestavení a mohou být přečteny určité nástrojů pro analýzu protokolu.
+
+V následujícím příkladu se vytvoří binární soubor protokolu s názvem `binarylogfilename`.
+
+```  
+/bl:binarylogfilename.binlog
+``` 
+ 
+Další informace najdete v tématu [Reference k příkazovému řádku](../msbuild/msbuild-command-line-reference.md).  
+
 ## <a name="using-a-custom-logger"></a>Používání vlastního protokolovacího nástroje  
  Můžete napsat vlastní protokoly vytvářením spravovaný typ, který implementuje <xref:Microsoft.Build.Framework.ILogger> rozhraní. Můžete například použít vlastní protokoly, odešlete chyby sestavení v e-mailu, přihlaste se k databázi nebo protokolu je do souboru XML. Další informace najdete v tématu [Protokolovací nástroje sestavení](../msbuild/build-loggers.md).  
   

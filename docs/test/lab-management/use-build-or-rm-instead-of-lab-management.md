@@ -1,7 +1,7 @@
 ---
 title: "Použití sestavení nebo Release Management pro automatizované testování v sadě Visual Studio | Microsoft Docs"
 ms.date: 03/02/2018
-ms.technology: vs-devops-test
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - automated testing, lab management, test lab
@@ -10,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b12bffb6f2e5df0209fd3dfe3ea5fd005897d58d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5596dbbe65dc57dcb1862b74ed6379d1e2c080cf
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>Použití sestavení a správu verzí místo Lab Management pro automatizované testování
 
@@ -43,7 +43,7 @@ Mezi výhody používání sestavení nebo Release Management pro tento scéná�
 
 ## <a name="self-service-management-of-scvmm-environments"></a>Samoobslužné služby správu prostředí SCVMM
 
-[Center testovacího prostředí v nástroji Microsoft Test Manager](https://msdn.microsoft.com/library/dd997438.aspx) podporuje možnost spravovat knihovny šablon prostředí a také zřízení prostředí na vyžádání pomocí [SCVMM server](/system-center/vmm/overview?view=sc-vmm-1801).
+[Testovací Center v nástroji Microsoft Test Manager](/vsts/manual-test/mtm/guidance-mtm-usage) podporuje možnost spravovat knihovny šablon prostředí a také zřízení prostředí na vyžádání pomocí [SCVMM server](/system-center/vmm/overview?view=sc-vmm-1801).
 
 Samoobslužné zřizování funkce testovacího prostředí centra mít dva odlišné cíle:
 

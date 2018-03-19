@@ -1,7 +1,8 @@
 ---
-title: "Další informace k ladění pomocí sady Visual Studio | Microsoft Docs"
-ms.custom: H1HackMay2017
-ms.date: 10/11/2017
+title: "Další informace k ladění – Visual Studio | Microsoft Docs"
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+ms.custom: mvc
+ms.date: 03/16/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +18,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: a09e0c54f1d7f0e49f08ddf65afbeb030a7087f1
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: e0686a4138fc2489c8a63b207e98cf7780477782
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="learn-to-debug-using-visual-studio"></a>Další informace k ladění pomocí sady Visual Studio
 
@@ -34,6 +35,15 @@ Můžete buď si přečíst podél zobrazíte funkce ladicího programu nebo mů
 |  ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video")  |    [Přehrát video,](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171) ladění, který ukazuje podobným způsobem. |
 
 I když ukázkovou aplikaci C#, funkce se vztahuje na C++, Visual Basic, JavaScript a dalších jazyků – podpora Visual Studio (Pokud není uvedeno jinak).
+
+V tomto kurzu provedete následující:
+
+> [!div class="checklist"]
+> * Spuštění ladicího programu a stiskněte tlačítko zarážky.
+> * Další příkazy, které krok prostřednictvím kódu v ladicím programu
+> * Zkontrolujte proměnné v datových tipech a ladicího programu
+> * Prozkoumat zásobník volání
+> * Použití pomocníka výjimka
 
 ## <a name="start-the-debugger"></a>Spuštění ladicího programu!
 
@@ -82,11 +92,11 @@ Chcete-li ladit, spusťte aplikaci pomocí ladicího programu připojit k proces
 
 ## <a name="restart-your-app-quickly"></a>Restartujte aplikace rychle
 
-1. Klikněte **restartujte** ![restartujte aplikace](../debugger/media/dbg-tour-restart.png "RestartApp") tlačítka na panelu nástrojů Debug (Ctrl + Shift + F5).
+Klikněte **restartujte** ![restartujte aplikace](../debugger/media/dbg-tour-restart.png "RestartApp") tlačítka na panelu nástrojů Debug (Ctrl + Shift + F5).
 
-    Po stisknutí klávesy **restartujte**, ho šetří čas a zastavení aplikace a restartování ladicího programu. Ladicí program se pozastaví u první zarážky, který je dosáhl spuštěním kódu.
+Po stisknutí klávesy **restartujte**, ho šetří čas a zastavení aplikace a restartování ladicího programu. Ladicí program se pozastaví u první zarážky, který je dosáhl spuštěním kódu.
 
-    Ladicí program zastaví znovu u zarážky v nastavíte `MainWindow` konstruktor.
+Ladicí program zastaví znovu u zarážky v nastavíte `MainWindow` konstruktor.
 
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Přejděte kódu v ladicím programu pomocí příkazů krok
 
@@ -148,20 +158,20 @@ Většinou, klávesové zkratky tady používáme, protože je dobrý způsob, j
 
 ## <a name="examine-the-call-stack"></a>Prozkoumat zásobník volání
 
-- Při pozastavena v `Update` metoda, klikněte na tlačítko **zásobníkem volání** okno, které je ve výchozím nastavení otevřít v pravém dolním podokně.
+Při pozastavena v `Update` metoda, klikněte na tlačítko **zásobníkem volání** okno, které je ve výchozím nastavení otevřít v pravém dolním podokně.
 
-     ![Prozkoumat zásobník volání](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+![Prozkoumat zásobník volání](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
 
-    **Zásobníkem volání** okno zobrazuje pořadí, ve kterém jsou získávání volat metody a funkce. Na začátek řádku ukazuje aktuální funkci ( `Update` metoda v aplikaci prohlídka). Druhý řádek ukazuje, že `Update` byla volána z `Path.set` vlastnost a tak dále.
+**Zásobníkem volání** okno zobrazuje pořadí, ve kterém jsou získávání volat metody a funkce. Na začátek řádku ukazuje aktuální funkci ( `Update` metoda v aplikaci prohlídka). Druhý řádek ukazuje, že `Update` byla volána z `Path.set` vlastnost a tak dále.
 
-    >  [!NOTE]
-    > **Zásobníkem volání** okno se podobá ladění perspektivy v některé integrovaného vývojového prostředí jako Eclipse.
+>  [!NOTE]
+> **Zásobníkem volání** okno se podobá ladění perspektivy v některé integrovaného vývojového prostředí jako Eclipse.
 
-    V zásobníku volání je dobrý způsob, jak prozkoumat a lépe pochopit tok spuštění aplikace.
+V zásobníku volání je dobrý způsob, jak prozkoumat a lépe pochopit tok spuštění aplikace.
 
-    Poklepáním na řádek kódu přejít, podívejte se na tomto zdrojovém kódu, která také změní aktuální obor ke kontrole pomocí ladicího programu. Tato akce není posunutí ladicího programu.
+Poklepáním na řádek kódu přejít, podívejte se na tomto zdrojovém kódu, která také změní aktuální obor ke kontrole pomocí ladicího programu. Tato akce není posunutí ladicího programu.
 
-    Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volání** okno provádět další akce. Například můžete vložit zarážky do určených funkcí, zálohy pomocí ladicího programu **spustit ke kurzoru**a přejděte zkontrolujte zdrojového kódu. Další informace najdete v tématu [postup: prozkoumat zásobník volání](../debugger/how-to-use-the-call-stack-window.md).
+Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volání** okno provádět další akce. Například můžete vložit zarážky do určených funkcí, zálohy pomocí ladicího programu **spustit ke kurzoru**a přejděte zkontrolujte zdrojového kódu. Další informace najdete v tématu [postup: prozkoumat zásobník volání](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="step-out"></a>Krok
 
@@ -283,7 +293,9 @@ Většinou, klávesové zkratky tady používáme, protože je dobrý způsob, j
 
 Další informace o funkcích ladicího programu najdete v tématu [ladicí program tipy a triky](../debugger/debugger-tips-and-tricks.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="next-steps"></a>Další kroky
 
-[Ladění v sadě Visual Studio](../debugger/index.md)  
-[Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)
+V tomto kurzu když jste se naučili postup spuštění ladicího programu, krok prostřednictvím kódu a zkontrolovat proměnné. Chcete získat přehled funkcí ladicího programu spolu s odkazy na další informace.
+
+> [!div class="nextstepaction"]
+> [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)

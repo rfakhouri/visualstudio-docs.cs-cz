@@ -1,11 +1,7 @@
 ---
-title: "Testování částí | Microsoft Docs"
-ms.custom: 
+title: "Testování částí v sadě Visual Studio | Microsoft Docs"
 ms.date: 2016-01-07
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -14,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a96315d7610e665ed32b669bea45f9318cffdb
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 939cbaa6cd99cbcc5f011a873f46c4e873c22543
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="unit-test-basics"></a>Testování částí
 
@@ -113,7 +109,7 @@ Teď, když máme nějaký kód, je čas pro testování.
 3.  Chcete-li použít jeden z systémů testování částí Microsoft, zvolte **projektu testování částí** ze seznamu šablon projektu. Jinak zvolte šablonu projektu jednotky test framework, který chcete použít. K testování `Accounts` projektu našem příkladu by název projektu `AccountsTests`.
 
     > [!WARNING]
-    >  Ne všechny systémů testů jednotek třetích stran s otevřeným zdrojem zadejte šablona projektu sady Visual Studio. Informace o vytvoření projektu naleznete v dokumentu framework.
+    > Ne všechny systémů testů jednotek třetích stran s otevřeným zdrojem zadejte šablona projektu sady Visual Studio. Informace o vytvoření projektu naleznete v dokumentu framework.
 
 4.  Ve vašem projektu testování částí přidáte odkaz na projekt kódu testovaného v našem příkladu do projektu účty.
 

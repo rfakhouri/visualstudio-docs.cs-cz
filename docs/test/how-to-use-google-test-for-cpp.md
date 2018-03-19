@@ -1,22 +1,18 @@
 ---
 title: "Jak používat testovací Google jazyka C++ v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ed765134ebdbff2f7ea7b98736d5e57d62bb87fb
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 35cc31bbe7a1d83270035217dc36fce5f3a8ab6d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>Jak používat testovací Google jazyka C++ v sadě Visual Studio
 V **Visual Studio 2017 verze 15,5** a novější, je Google Test integrována do prostředí Visual Studio IDE jako součást výchozí **Develoment plochy s jazykem C++** zatížení. Pokud chcete ověřit, že je nainstalovaný na počítači, spusťte instalační program Visual Studio a najděte Google Test v seznamu součástí úlohy:

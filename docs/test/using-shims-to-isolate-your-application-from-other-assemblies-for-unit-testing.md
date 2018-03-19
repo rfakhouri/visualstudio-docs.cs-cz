@@ -1,24 +1,20 @@
 ---
-title: "Izolace aplikace od ostatních sestavení pro testování částí pomocí překrytí | Microsoft Docs"
-ms.custom: 
+title: "Pomocí překrytí izolovat aplikace pro testování v sadě Visual Studio částí | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e282fc834bddf961f11384db1ca0efd74db5e65e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: b2f096e7fafcebf5e30903590b569abfe564d9f9
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Izolace aplikace od ostatních sestavení pomocí překrytí za účelem testování částí
+# <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Izolace aplikace od ostatních sestavení pro testování částí pomocí překrytí
 
 **Kód Shim typy** jsou jedním z dvě technologie, které systém Fakes Microsoft použije k vám umožní snadno izolovat součásti testovaného z prostředí. Překrytí přesměrovat volání konkrétní metody kód, který zapisuje jako součást svůj test. Mnoho způsobů vrátí odlišné výsledky závislé na externí podmínkách, ale doplňkový kód je pod kontrolou svůj test a konzistentní výsledky při každém volání můžete vrátit. Jednodušší testů k zápisu.
 

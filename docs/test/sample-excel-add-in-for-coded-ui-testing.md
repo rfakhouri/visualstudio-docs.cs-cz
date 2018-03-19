@@ -1,11 +1,7 @@
 ---
 title: "Ukázka doplňku Excel pro programové testování uživatelského rozhraní | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - coded UI tests, Excel Add-in sample
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0842ecffff4624e4b3cd7c88fa9231ff71c364e6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: a81fd5d3d10c15d58671e7e65fae2259824afbe4
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Ukázka doplňku Excel pro programové testování uživatelského rozhraní
 Tato ukázka Add-In pro [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] je navržený speciálně pro podporu listů programových testů uživatelského rozhraní aplikace Excel, které jsou zaznamenány a spustit v Visual Studio Enterprise. Doplněk je vytvořená pomocí Visual Studio Tools pro sadu Office.

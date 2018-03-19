@@ -1,11 +1,7 @@
 ---
 title: "Ukázka rozšíření programového testu UI pro Excel | Microsoft Docs"
-ms.custom: 
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - coded UI tests, extensions for Excel
@@ -14,11 +10,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a446fbf087441be9e02c54314d05845ce759e47b
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 7102a5810ceb1c04becce088325852d4baaec747
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="sample-coded-ui-test-extension-for-excel"></a>Ukázka rozšíření programového testu UI pro Excel
 Komponenta rozšíření vzorku spuštěna v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proces programového testu uživatelského rozhraní a je poněkud hierarchické s `ExtensionPackage` třída na bázi. `TechnologyManager`, `ActionFilter`, A `PropertyProvider` třídy jsou v dalším úrovni, se ovládací prvky na nejvyšší úrovni.

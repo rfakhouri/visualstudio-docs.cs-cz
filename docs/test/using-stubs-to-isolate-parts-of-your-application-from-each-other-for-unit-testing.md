@@ -1,24 +1,21 @@
 ---
-title: "Pomocí zástupných procedury za izolace částí aplikace od sebe navzájem pro testování částí | Microsoft Docs"
-ms.custom: 
+title: "Pomocí zástupných procedury za izolace částí aplikace pro testování v sadě Visual Studio částí | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 21db86d03ca5963978a1057a03f451441d3c73b2
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 5639fd12180e77bd1ac9011745311c03f1d9abfe
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Vzájemná izolace částí aplikace pomocí zástupných procedury za účelem testování částí
+# <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Izolace částí aplikace od sebe navzájem pro testování částí pomocí zástupných procedur
+
 *Zóny se zakázaným inzerováním* jsou jedním z dvě technologie, které poskytuje umožňují snadno izolovat součást testujete z ostatních komponent, které zavolá rozhraní Microsoft Fakes. Zástupná procedura představuje malou část kódu, která během testování zaujímá místo jiné součásti. Výhodou použití zástupné procedury je to, že vrací konzistentní výsledky, čímž usnadňuje psaní testu. A testy můžete spustit i v případě, že ostatní součásti ještě nefungují.
 
  Přehled a rychlé spuštění Průvodce Fakes, najdete v části [izolace kódu v rámci testu s Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
@@ -470,10 +467,6 @@ StubBehaviors.Current =
     BehavedBehaviors.DefaultValue;
 ```
 
-## <a name="external-resources"></a>Externí zdroje
-
-### <a name="guidance"></a>Doprovodné materiály
- [Testování pro nastavené průběžné doručování s Visual Studio 2012 – kapitoly 2: testování částí: testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)
-
 ## <a name="see-also"></a>Viz také
- [Izolace testovaného kódu pomocí zástupného rozhraní Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)
+
+- [Izolace testovaného kódu pomocí zástupného rozhraní Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)

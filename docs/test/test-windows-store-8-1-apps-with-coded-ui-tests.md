@@ -1,22 +1,21 @@
 ---
-title: "Testování pomocí programových testů uživatelského rozhraní Windows aplikace UWP | Microsoft Docs"
-ms.custom: 
+title: "Testování aplikací UWP pro Windows pomocí programových testů uživatelského rozhraní v sadě Visual Studio | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: dd2ed23bbfacf1bfec1cc7cb531c1e0a0f9e20c4
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 889e29926d638e4e160c323e8d2673d858ab5c22
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>Testování pomocí programových testů uživatelského rozhraní Windows aplikace UWP
 
@@ -60,7 +59,7 @@ Pomocí tohoto průvodce použijte pro vytvoření testů uživatelského rozhra
     End Class
     ```
 
-5.  Stisknutím klávesy F5 spusťte svoji aplikaci pro UPW.
+5.  Zvolte **F5** ke spouštění vaší aplikace UWP.
 
 ## <a name="create-and-run-a-coded-ui-test-for-the-uwp-app"></a>Vytvoření a spuštění programového testu uživatelského rozhraní pro aplikace UWP
 
@@ -104,16 +103,16 @@ Pomocí tohoto průvodce použijte pro vytvoření testů uživatelského rozhra
 
 10. **Visual C#**
 
-     V Průzkumníku řešení otevřete soubor UIMap.Designer.cs zobrazíte přidaného kódu pro metodu vyhodnocení a ovládací prvky.
+     V Průzkumníku řešení otevřete *UIMap.Designer.cs* soubor a zobrazte přidaného kódu pro metodu vyhodnocení a ovládací prvky.
 
      **Visual Basic**
 
-     V Průzkumníku řešení otevřete soubor CodedUITest1.vb a v kódu metoda CodedUITestMethod1() testu, klikněte pravým tlačítkem na volání metody kontrolní výraz, který byl automaticky přidán `Me.UIMap.AssertMethod1()` a zvolte **přejít k definici**. Otevře se soubor UIMap.Designer.vb v editoru kódu, můžete zobrazit zobrazení přidaného kódu pro metodu vyhodnocení a ovládací prvky.
+     V Průzkumníku řešení otevřete *CodedUITest1.vb* souborů a v kódu metoda CodedUITestMethod1() testu, klikněte pravým tlačítkem na volání metody kontrolní výraz, který byl automaticky přidán `Me.UIMap.AssertMethod1()` a zvolte **přejít na Definice**. Otevře se *UIMap.Designer.vb* souboru v editoru kódu, aby se dala zobrazit zobrazení přidaného kódu pro metodu vyhodnocení a ovládací prvky.
 
     > [!WARNING]
-    >  Neprovádějte žádné změny souboru UIMap.designer.cs nebo UIMap.Designer.vb přímo. Pokud to uděláte, budou změny provedené v souboru přepsány pokaždé, když se vygeneruje test.
+    > Nelze změnit *UIMap.designer.cs* nebo *UIMap.Designer.vb* souboru přímo. Pokud to uděláte, budou změny provedené v souboru přepsány pokaždé, když se vygeneruje test.
 
-     **Assert – metoda**
+    **Assert – metoda**
 
     ```csharp
     public void AssertMethod1()
@@ -136,7 +135,7 @@ Pomocí tohoto průvodce použijte pro vytvoření testů uživatelského rozhra
     End Sub
     ```
 
-     **Ovládací prvky**
+    **Ovládací prvky**
 
     ```csharp
     #region Properties
@@ -244,7 +243,7 @@ Pomocí tohoto průvodce použijte pro vytvoření testů uživatelského rozhra
         Me.UIMap.AssertMethod1()
         ```
 
-     Po přidání kód, metodu CodedUITestMethod1 testů se zobrazí následující:
+    Po přidání kód, metodu CodedUITestMethod1 testů se zobrazí následující:
 
     ```csharp
     [TestMethod]
@@ -296,20 +295,20 @@ Pomocí tohoto průvodce použijte pro vytvoření testů uživatelského rozhra
 
 ## <a name="q--a"></a>Dotazy a odpovědi
 
-#### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Otázka: Proč se nezobrazí možnost zaznamenat Moje programového testu uživatelského rozhraní v generování kódu pro dialogové okno programových testů uživatelského rozhraní? **
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Otázka: Proč nevidíte možnost zaznamenat Moje programového testu uživatelského rozhraní v generování kódu pro dialogové okno programových testů uživatelského rozhraní
 
 **A**: pro aplikace UWP není podporována možnost záznam.
 
-#### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Otázka: je možné vytvořit programového testu uživatelského rozhraní pro Moje aplikace UWP podle WinJS? **
+### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>Otázka: je možné vytvořit programového testu uživatelského rozhraní pro Moje aplikace UWP podle WinJS?
 
 **A**: Ne, jsou podporovány pouze na základě XAML aplikace.
 
-#### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Otázka: je možné vytvořit programové testy uživatelského rozhraní pro Moje aplikace UWP v systému, který není systémem Windows 8.1 nebo Windows 10? **
+### <a name="q-can-i-create-coded-ui-tests-for-my-uwp-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Otázka: je možné vytvořit programové testy uživatelského rozhraní pro Moje aplikace UWP v systému, který není systémem Windows 8.1 nebo Windows 10?
 
 **A**: Ne, programového uživatelského rozhraní testovacího projektu šablony jsou dostupné jenom na Windows 8.1 a Windows 10. Pokud chcete vytvořit automatizace pro univerzální platformu Windows (UWP) aplikace, budete potřebovat Windows 10.
 
 <a name="uwpapps"></a>
-#### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>Otázka: jak vytvářet programové testy uživatelského rozhraní pro aplikace pro univerzální platformu Windows (UWP)? **
+### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>Otázka: jak vytvořit programové testy uživatelského rozhraní pro aplikace pro univerzální platformu Windows (UWP)?
 
 **A**: v závislosti na platformě, kde vaše aplikace pro UPW testujete, vytvoření projektu programových testů uživatelského rozhraní v jednom z těchto způsobů:
 
@@ -319,7 +318,7 @@ Pomocí tohoto průvodce použijte pro vytvoření testů uživatelského rozhra
 
 Po vytvoření projektu, vytváření testu zůstává stejná jako předtím.
 
-#### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Otázka: Proč nelze změnit kód v souboru UIMap.Designer? **
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Otázka: Proč nelze změnit kód v souboru UIMap.Designer?
 
 **A**: změny kódu provedené v souboru UIMapDesigner.cs budou přepsány pokaždé, když generování kódu pomocí zdroje UIMap - Tvůrce programového testu uživatelského rozhraní. Pokud je třeba změnit zaznamenanou metodu, musíte ji zkopírovat do souboru UIMap.cs a přejmenovat ji. Soubor UIMap.cs lze použít k přepsání metod a vlastností v souboru UIMapDesigner.cs. Je třeba odebrat odkaz na původní metodu v kódovaném souboru UITest.cs a nahradit ji názvem přejmenované metody.
 

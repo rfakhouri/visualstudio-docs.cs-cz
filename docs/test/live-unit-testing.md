@@ -1,21 +1,20 @@
 ---
 title: "Live jednotky testování v sadě Visual Studio | Microsoft Docs"
 ms.date: 2017-03-07
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.workload: dotnet
-ms.openlocfilehash: 725b9e31e725106dcd9e461a8f5d3749230fd5c9
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.workload:
+- dotnet
+ms.openlocfilehash: 7ab19350529e4bd1c7edf914a8a8ca049ace6054
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Testování částí pomocí Visual Studio 2017 za provozu
 
@@ -37,7 +36,7 @@ Za provozu testování částí funguje s tři architektury testování oblíben
 </tr>
 <tr>
    <td>xUnit.net</td>
-   <td> 2.2.0-beta3-build1187 xunit.Runner.VisualStudio verze</td>
+   <td> xunit.runner.visualstudio version 2.2.0-beta3-build1187</td>
    <td>xunit 1.9.2</td> 
 </tr>
 <tr>
@@ -179,9 +178,9 @@ Můžete použít <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageA
 
 Můžete také následující atributy z Live testování částí vyloučit jednotlivé metody:
 
-- Pro xUnit:`[Trait("Category", "SkipWhenLiveUnitTesting")]`
-- Pro NUnit:`[Category("SkipWhenLiveUnitTesting")]`
-- Pro Mstestu:`[TestCategory("SkipWhenLiveUnitTesting")]` 
+- Pro xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
+- Pro NUnit: `[Category("SkipWhenLiveUnitTesting")]`
+- Pro Mstestu: `[TestCategory("SkipWhenLiveUnitTesting")]` 
  
 ## <a name="see-also"></a>Viz také
 

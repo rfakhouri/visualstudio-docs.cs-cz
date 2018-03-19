@@ -1,22 +1,18 @@
 ---
-title: "Testování UWP aplikace Windows a 8.1 Phone pomocí programových testů uživatelského rozhraní | Microsoft Docs"
-ms.custom: 
+title: "Testování UWP aplikace Windows a 8.1 Phone pomocí programových testů uživatelského rozhraní v sadě Visual Studio | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: ba0366ce882d1a4c2b715e621343dcbc0db6f457
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 60515eb6d7dde34562895d357a7802592c20aecb
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testování UWP aplikace Windows a 8.1 Phone pomocí programových testů uživatelského rozhraní
 
@@ -127,7 +123,7 @@ Pomocí tohoto průvodce použijte pro vytvoření testů uživatelského rozhra
      V Průzkumníku řešení otevřete soubor CodedUITest1.vb. V CodedUITestMethod1() testování metoda kódu, klikněte pravým tlačítkem na volání metody kontrolní výraz, který byl automaticky přidán `Me.UIMap.AssertMethod1()` a zvolte **přejít k definici**. Otevře se soubor UIMap.Designer.vb v editoru kódu, můžete zobrazit kód, který jste přidali pro metodu vyhodnocení a ovládací prvky.
 
     > [!WARNING]
-    >  Neprovádějte žádné změny souboru UIMap.designer.cs nebo UIMap.Designer.vb přímo. Pokud to uděláte, budou změny provedené v souboru přepsány pokaždé, když se vygeneruje test.
+    > Neprovádějte žádné změny souboru UIMap.designer.cs nebo UIMap.Designer.vb přímo. Pokud to uděláte, budou změny provedené v souboru přepsány pokaždé, když se vygeneruje test.
 
      **Assert – metoda**
 
@@ -389,4 +385,5 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  Správa životního cyklu aplikací Visual Studio Microsoft blog: [pomocí programových uživatelského rozhraní k testování aplikací založených na XAML Windows Phone](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)
 
 ## <a name="see-also"></a>Viz také
- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)
+
+- [Použití automatizace uživatelského rozhraní k testování kódu](../test/use-ui-automation-to-test-your-code.md)

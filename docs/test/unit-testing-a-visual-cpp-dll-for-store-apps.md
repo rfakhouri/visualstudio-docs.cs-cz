@@ -1,22 +1,18 @@
 ---
-title: "Postup testování knihovny DLL Visual C++ pro aplikace UWP | Microsoft Docs"
-ms.custom: 
+title: "Postup testování knihovny DLL Visual C++ pro aplikace UWP v sadě Visual Studio | Microsoft Docs"
 ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: mblome
 manager: ghogen
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: eeece55fa36a7fa4077a814142698288b395c01b
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: c92e8a1b362bf6593897de526ef1791603292a29
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Postup testování knihovny DLL Visual C++
 
@@ -186,7 +182,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 1.  Přidejte nový test:
 
-    ```
+    ```cpp
     TEST_METHOD(RangeTest)
     {
         CRooterLib rooter;
@@ -198,13 +194,12 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
             Assert::AreEqual(expected, actual, tolerance);
         }
     };
-
     ```
 
     > [!TIP]
-    >  Doporučujeme neměnit testy, které uplynuly. Místo toho přidejte nový test, aktualizujte kód tak, aby test bude provedeno úspěšně a poté přidejte jiného testu, a tak dále.
+    > Doporučujeme neměnit testy, které uplynuly. Místo toho přidejte nový test, aktualizujte kód tak, aby test bude provedeno úspěšně a poté přidejte jiného testu, a tak dále.
     >
-    >  Pokud vaši uživatelé změnit jejich požadavky, zakažte testy, které již nejsou správné. Zápis nových testů a jejich fungování jeden po druhém, stejným způsobem jako přírůstkové.
+    > Pokud vaši uživatelé změnit jejich požadavky, zakažte testy, které již nejsou správné. Zápis nových testů a jejich fungování jeden po druhém, stejným způsobem jako přírůstkové.
 
 2.  V Průzkumníku testu zvolte **spustit všechny**.
 
@@ -213,7 +208,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
      ![Selhání RangeTest](../test/media/ute_cpp_testexplorer_rangetest_fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")
 
     > [!TIP]
-    >  Ověřte, že každý test se nezdaří, ihned po jeho jste napsali. To umožňuje vyhnout se snadno chybu zápisu testu, který nikdy selže.
+    > Ověřte, že každý test se nezdaří, ihned po jeho jste napsali. To umožňuje vyhnout se snadno chybu zápisu testu, který nikdy selže.
 
 4.  Vylepšení testovaného kódu tak, aby nový test předá. Přidejte následující **RooterLib.cpp**:
 
@@ -317,17 +312,16 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 1.  Zjednodušení centrální výpočtu v `SquareRoot` funkce:
 
-    ```
+    ```csharp
     // old code
     //result = result - (result*result - v)/(2*result);
     // new code
     result = (result + v/result) / 2.0;
-
     ```
 
 2.  Zvolte **spustit všechny** test refactored metody a ujistěte se, že nebyla zavedena regrese.
 
     > [!TIP]
-    >  Stabilní sadu testů pro funkční jednotku poskytuje jistotu, že nebyla zavedena chyby při změně kódu.
+    > Stabilní sadu testů pro funkční jednotku poskytuje jistotu, že nebyla zavedena chyby při změně kódu.
     >
-    >  Zachovat refaktoring oddělené od dalších změn.
+    > Zachovat refaktoring oddělené od dalších změn.

@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: e175a534cb35333b1f57c188c62a781f2fd68627
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: d8ee86a969279c3bdb8b09a0a0d2c9160d7691e0
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Cílová architektura a cílová platforma nástroje MSBuild
 Projekt se dají vytvářet ke spuštění na *cílové rozhraní*, což je konkrétní verzi rozhraní .NET Framework a *Cílová platforma*, což je architektura určitého softwaru.  Například můžete určit cílovou aplikaci spustit v rozhraní .NET Framework 2.0 na 32bitové platformě, který je kompatibilní s třídu procesoru 802 x 86 ("x86"). Kombinace Cílová architektura a cílová platforma se označuje jako *cílový kontext*.  
@@ -67,14 +67,16 @@ Projekt se dají vytvářet ke spuštění na *cílové rozhraní*, což je konk
  A *platformy* je kombinace hardwaru a softwaru, který definuje konkrétní běhového prostředí. Například  
   
 -   `x86` označí 32bitový operační systém Windows, který běží na procesor Intel 80 x 86 nebo jeho ekvivalent.  
+
+-   `x64` označí 64-bit operačního systému Windows, který běží na procesor Intel x64 nebo ekvivalentní.
   
 -   `Xbox` označí platformou Microsoft Xbox 360.  
   
- A *Cílová platforma* je konkrétní platformy, na které ke spuštění na sestavení projektu. Cílové platformy je uveden v `Platform` sestavení vlastnost v souboru projektu. Cílové platformy můžete změnit pomocí stránky vlastností projektu nebo **nástroje Configuration Manager** v prostředí IDE.  
+ A *Cílová platforma* je konkrétní platformy, na které ke spuštění na sestavení projektu. Cílové platformy je uveden v `PlatformTarget` sestavení vlastnost v souboru projektu. Cílové platformy můžete změnit pomocí stránky vlastností projektu nebo **nástroje Configuration Manager** v prostředí IDE.  
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
 </PropertyGroup>  
   
 ```  
@@ -83,7 +85,7 @@ Projekt se dají vytvářet ke spuštění na *cílové rozhraní*, což je konk
   
 ```xml  
 <PropertyGroup>  
-   <Platform>x86</Platform>  
+   <PlatformTarget>x86</PlatformTarget>  
    <Configuration>Debug</Configuration>  
 <PropertyGroup>  
   

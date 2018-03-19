@@ -14,11 +14,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5a4721eea178e4a9ab5766760ccf1405589684
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 17b3b0a107d263a213746a625ec5a65419695b4d
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Instalace sady Visual Studio SDK
 Visual Studio SDK je volitelná funkce v instalačním programu sady Visual Studio. VS SDK můžete také nainstalovat později.  
@@ -35,6 +35,6 @@ Visual Studio SDK je volitelná funkce v instalačním programu sady Visual Stud
  ![SolutionExplorerInstall](../extensibility/media/solutionexplorerinstall.png "SolutionExplorerInstall")  
   
 ## <a name="installing-the-visual-studio-sdk-from-the-command-line"></a>Instalace sady Visual Studio SDK z příkazového řádku  
-Stejně jako u zatížení Visual Studio nebo součásti, můžete také nainstalovat položku z příkazového řádku. V tématu [používání parametrů příkazového řádku pro instalaci sady Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) podrobnosti o přepínače příslušný příkazový řádek a jak určit identifikátory zatížení nebo součást.
+Protože se zatížení Visual Studio nebo součásti, můžete taky nainstalovat **vývoj rozšíření pro Visual Studio** zatížení (ID: Microsoft.VisualStudio.Workload.VisualStudioExtension) z příkazového řádku. V tématu [používání parametrů příkazového řádku pro instalaci sady Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) podrobné informace o přepínačích příslušný příkazový řádek a obecné pokyny o určení zatížení nebo součást identifikátory.
   
  Všimněte si, že je nutné použít instalační program sady Visual Studio, který odpovídá nainstalovanou verzí sady Visual Studio. Například pokud máte Visual Studio Enterprise nainstalován v počítači, musíte spustit instalační program Visual Studio Enterprise (vs_enterprise.exe).

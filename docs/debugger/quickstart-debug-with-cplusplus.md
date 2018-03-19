@@ -1,7 +1,7 @@
 ---
 title: "Ladění s jazykem C++ pomocí ladicího programu sady Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 12/06/2017
+ms.date: 03/18/2018
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddf6aadc6b2debcb7423df589fb11739039c6476
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fce20f8c17b52b109b469bd439905e0edd66c9d3
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="debug-with-c-using-the-visual-studio-debugger"></a>Ladění s jazykem C++ pomocí ladicího programu sady Visual Studio
 
@@ -92,7 +92,7 @@ A *zarážek* je značku, která určuje, kde by měl Visual Studio pozastavení
     Ladicí program zastaví, kde nastavit bod přerušení. Příkaz, kde je pozastaven spuštění ladicího programu a aplikace je indikován žlutý šipku. Souladu se zásadami `doWork` volání funkce ještě nebyla spuštěna.
 
     > [!TIP]
-    > Pokud máte zarážka v smyčky nebo rekurze, nebo pokud máte spoustu zarážky, které často krok prostřednictvím, použijte [podmíněného zarážek](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) a ujistěte se, že kód pozastaven jenom v případě, že jsou splněny určité podmínky. To šetří čas a můžete také usnadňují ladění problémů, které se těžko reprodukovat.
+    > Pokud máte zarážka v smyčky nebo rekurze, nebo pokud máte mnoho zarážky, které často krok prostřednictvím, použijte [podmíněného zarážek](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) a ujistěte se, že kód pozastaven jenom v případě, že jsou splněny určité podmínky. Podmíněné zarážky šetří čas a můžete také usnadňují ladění problémů, které se těžko reprodukovat.
 
     Při pokusu o ladění chyby související s pamětí v jazyce C++, můžete taky zarážky kontrola hodnoty adres (podívejte se na hodnotu NULL) a odkazovat na počty. 
 
@@ -100,13 +100,13 @@ A *zarážek* je značku, která určuje, kde by měl Visual Studio pozastavení
 
 Existují jiné příkazy dáte pokyn, aby ladicí program pokračovat. Ukážeme příkaz navigační užitečné kód, který je nového ve Visual Studio 2017.
 
-- Při pozastavena u zarážky, najeďte myší na příkaz `c1.push_back(20)` dokud zeleným **spustit a klikněte na tlačítko** tlačítko ![spustit kliknutím](../debugger/media/dbg-tour-run-to-click.png "RunToClick") se zobrazí a potom stiskněte klávesu **Spustit a klikněte na tlačítko** tlačítko.
+Při pozastavena u zarážky, najeďte myší na příkaz `c1.push_back(20)` dokud zeleným **spustit a klikněte na tlačítko** tlačítko ![spustit kliknutím](../debugger/media/dbg-tour-run-to-click.png "RunToClick") se zobrazí a potom stiskněte klávesu **Spustit a klikněte na tlačítko** tlačítko.
 
-    ![Spustit a klikněte na tlačítko](../debugger/media/dbg-qs-run-to-click.png "spustit a klikněte na")
+![Spustit a klikněte na tlačítko](../debugger/media/dbg-qs-run-to-click.png "spustit a klikněte na")
 
-    Aplikace pokračuje v provádění volání `doWork`a pozastaví na řádek kódu, kde kliknutí na tlačítko.
+Aplikace pokračuje v provádění volání `doWork`a pozastaví na řádek kódu, kde kliknutí na tlačítko.
 
-    Běžné příkazy klávesnice umožňuje zahrnout krok prostřednictvím kódu **F10** a **F11**. Další podrobné pokyny najdete v tématu [začátečníka](../debugger/getting-started-with-the-debugger.md).
+Běžné příkazy klávesnice umožňuje zahrnout krok prostřednictvím kódu **F10** a **F11**. Další podrobné pokyny najdete v tématu [začátečníka](../debugger/getting-started-with-the-debugger.md).
 
 ## <a name="inspect-variables-in-a-datatip"></a>Zkontrolujte proměnné v datového tipu
 
@@ -136,9 +136,7 @@ Další informace o používání upravit a pokračovat a na omezení funkcí na
 
 ## <a name="next-steps"></a>Další kroky
 
-- Další informace o ladicího programu, najdete v části [spuštění ladicího programu a přejděte kód](../debugger/getting-started-with-the-debugger.md).
-- Další informace o zarážky, najdete v tématu [použití zarážek](../debugger/using-breakpoints.md).
+V tomto kurzu když jste se naučili postup spuštění ladicího programu, krok prostřednictvím kódu a zkontrolovat proměnné. Chcete získat přehled funkcí ladicího programu spolu s odkazy na další informace.
 
-## <a name="see-also"></a>Viz také  
- [Ladění v sadě Visual Studio](../debugger/index.md)  
- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)
+> [!div class="nextstepaction"]
+> [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)

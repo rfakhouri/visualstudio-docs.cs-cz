@@ -1,37 +1,34 @@
 ---
-title: "Vytváření, kompilace a konvence pojmenování ve Microsoft Fakes kódu | Microsoft Docs"
-ms.custom: 
+title: "Kód vytváření, kompilace a konvence pojmenování ve Microsoft Fakes Visual Studio | Microsoft Docs"
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 06fa4fba2d812d8d1628d42248bce60f231dd14c
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: f4990bd430f4a413bf3aafe3190656642b949d92
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft
 
-Toto téma popisuje možnosti a problémy v generování kódu v napodobeniny a kompilace a popisuje konvence pro typy Fakes generované, členů a parametry.
+Tento článek popisuje možnosti a problémy v generování kódu v napodobeniny a kompilace a popisuje konvence pro typy Fakes generované, členů a parametry.
 
- **Požadavky**
+**Požadavky**
 
 -   Visual Studio Enterprise
 
-##  <a name="BKMK_Code_generation_and_compilation"></a> Vytváření a kompilování kódu
+## <a name="code-generation-and-compilation"></a>Vytváření a kompilování kódu
 
-###  <a name="BKMK_Configuring_code_generation_of_stubs"></a> Konfigurace kódu generování zástupných procedur
- Generování zástupných procedur typy je nakonfigurován v souboru XML, který má příponu souboru .fakes. Rozhraní framework Fakes integruje v procesu sestavení pomocí vlastní úlohy nástroje MSBuild a zjistí těchto souborů v čase vytvoření buildu. Generátor kódu Fakes kompilovaný typy se zakázaným inzerováním do sestavení a přidá odkaz na projekt.
+### <a name="configure-code-generation-of-stubs"></a>Konfigurovat kód generování zástupných procedur
 
- Následující příklad ilustruje se zakázaným inzerováním typy definované v FileSystem.dll:
+Generování zástupných procedur typy je nakonfigurován v souboru XML, který má příponu souboru .fakes. Rozhraní framework Fakes integruje v procesu sestavení pomocí vlastní úlohy nástroje MSBuild a zjistí těchto souborů v čase vytvoření buildu. Generátor kódu Fakes kompilovaný typy se zakázaným inzerováním do sestavení a přidá odkaz na projekt.
+
+Následující příklad ilustruje se zakázaným inzerováním typy definované v FileSystem.dll:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -39,10 +36,11 @@ Toto téma popisuje možnosti a problémy v generování kódu v napodobeniny a 
 </Fakes>
 ```
 
-###  <a name="BKMK_Type_filtering"></a> Filtrování typů
- Filtry lze nastavit v souboru .fakes omezit, které typy by měla být prázdná. Můžete přidat bez vazby počet zaškrtnutí, přidat, odebrat elementů v rámci elementu StubGeneration na seznam vybraných typů.
+### <a name="type-filtering"></a>Filtrování typů
 
- Například tento soubor .fakes generuje zástupných procedur pro typy v oborech názvů systému a System.IO, ale nezahrnuje žádný typ, který obsahuje "Zpracování" v systému:
+Filtry lze nastavit v souboru .fakes omezit, které typy by měla být prázdná. Můžete přidat bez vazby počet zaškrtnutí, přidat, odebrat elementů v rámci elementu StubGeneration na seznam vybraných typů.
+
+Například následující soubor .fakes generuje zástupných procedur pro typy v oborech názvů systému a System.IO, ale nezahrnuje žádný typ, který obsahuje "Zpracování" v systému:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -58,7 +56,7 @@ Toto téma popisuje možnosti a problémy v generování kódu v napodobeniny a 
 </Fakes>
 ```
 
- Řetězcích filtrů definovat, jak shody by mělo být provedeno pomocí jednoduché gramatika:
+Řetězcích filtrů definovat, jak shody by mělo být provedeno pomocí jednoduché gramatika:
 
 -   Filtry, nerozlišují se ve výchozím nastavení; filtry provést porovnávání podřetězců:
 
@@ -80,8 +78,9 @@ Toto téma popisuje možnosti a problémy v generování kódu v napodobeniny a 
 
      `el;wo` odpovídá "text hello" a "world"
 
-###  <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> Stubbing konkrétní třídy a metody virtuální
- Ve výchozím nastavení se zakázaným inzerováním typy jsou generovány pro všechny třídy, není zapečetěná. Je možné omezit se zakázaným inzerováním typy, které mají abstraktní třídy pomocí konfiguračního souboru .fakes:
+### <a name="stub-concrete-classes-and-virtual-methods"></a>Konkrétní třídy se zakázaným inzerováním a virtuální metody
+
+Ve výchozím nastavení se zakázaným inzerováním typy jsou generovány pro všechny třídy, není zapečetěná. Je možné omezit se zakázaným inzerováním typy, které mají abstraktní třídy pomocí konfiguračního souboru .fakes:
 
 ```xml
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">
@@ -97,8 +96,9 @@ Toto téma popisuje možnosti a problémy v generování kódu v napodobeniny a 
 </Fakes>
 ```
 
-###  <a name="BKMK_Internal_types"></a> Vnitřní typy
- Generátor kódu Fakes generuje shim typy a typy se zakázaným inzerováním pro typy, které jsou viditelné pro generovaný sestavení Fakes. Ke zviditelnění interní typy shimmed sestavení Fakes a vaše testovací sestavení, přidejte <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atributy pro shimmed sestavení kód, který nabízí přehled vygenerované Fakes sestavení a testů sestavení. Tady je příklad:
+### <a name="internal-types"></a>Vnitřní typy
+
+Generátor kódu Fakes generuje shim typy a typy se zakázaným inzerováním pro typy, které jsou viditelné pro generovaný sestavení Fakes. Ke zviditelnění interní typy shimmed sestavení Fakes a vaše testovací sestavení, přidejte <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atributy pro shimmed sestavení kód, který nabízí přehled vygenerované Fakes sestavení a testů sestavení. Tady je příklad:
 
 ```csharp
 // FileSystem\AssemblyInfo.cs
@@ -122,7 +122,7 @@ Toto téma popisuje možnosti a problémy v generování kódu v napodobeniny a 
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-Pokud shimmed sestavení silným názvem, rozhraní Fakes podepíše automaticky důrazně vygenerované sestavení Fakes. Budete muset silné podepsání sestavení testu. V tématu [vytváření a používání sestavení se silným názvem](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).
+Pokud shimmed sestavení silným názvem, rozhraní Fakes podepíše automaticky důrazně vygenerované sestavení Fakes. Budete muset silné podepsání sestavení testu. V tématu [sestavení se silným názvem](/dotnet/framework/app-domains/strong-named-assemblies).
 
 Rozhraní framework Fakes používá stejný klíč k podepsání všechny generované sestavení, aby tento fragment kódu můžete použít jako počáteční bod přidat **InternalsVisibleTo** atribut pro sestavení fakes shimmed sestavení kódu.
 
@@ -151,10 +151,11 @@ Pak budete muset použít veřejný klíč alternativní **.snk** souboru jako d
 
 V příkladu výše, hodnoty `Alternate_public_key` a `Test_assembly_public_key` může být stejné.
 
-###  <a name="BKMK_Optimizing_build_times"></a> Optimalizace sestavení časy
- Kompilace sestavení Fakes může výrazně zvýšit vaši čase vytvoření buildu. Můžete minimalizovat čas sestavení vygenerováním Fakes sestavení pro sestavení .NET systému a sestavení třetích stran v samostatných centralizované projektu. Protože takové sestavení zřídka změnit na počítači, můžete opakovaně použít generovaného Fakes sestavení v jiné projekty.
+### <a name="optimize-build-times"></a>Optimalizace sestavení časy
 
- Z vaší projektů testování částí přidáte odkaz na kompilované Fakes sestavení, které jsou umístěny v části FakesAssemblies ve složce projektu.
+Kompilace sestavení Fakes může výrazně zvýšit vaši čase vytvoření buildu. Můžete minimalizovat čas sestavení vygenerováním Fakes sestavení pro sestavení .NET systému a sestavení třetích stran v samostatných centralizované projektu. Protože takové sestavení zřídka změnit na počítači, můžete opakovaně použít generovaného Fakes sestavení v jiné projekty.
+
+Z vaší projektů testování částí přidáte odkaz na kompilované Fakes sestavení, které jsou umístěny v části FakesAssemblies ve složce projektu.
 
 1.  Vytvořte nové knihovny tříd s verze rozhraní .NET runtime odpovídající testovací projekty. Umožňuje volání Fakes.Prebuild. Odstraňte soubor class1.cs z projektu, není potřeba.
 
@@ -166,12 +167,13 @@ V příkladu výše, hodnoty `Alternate_public_key` a `Test_assembly_public_key`
 
     -   Ujistěte se, že máte odkaz na knihovnu DLL modulu runtime Fakes:
 
-         C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll
+         *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
     -   Pro každé sestavení, které jste vytvořili Fakes pro, přidejte odkaz na odpovídající soubor knihovny DLL ve složce Fakes.Prebuild\FakesAssemblies projektu.
 
-###  <a name="BKMK_Avoiding_assembly_name_clashing"></a> Zamezení s konfliktními název sestavení
- V prostředí Team Build jsou sloučit všechny výstupy sestavení do jednoho adresáře. Pokud více projektů pomocí zástupného rozhraní, může dojít, Fakes sestavení z jiné verze přepsat navzájem. Například TestProject1 fakes mscorlib.dll z rozhraní .NET Framework 2.0 a TestProject2 fakes mscorlib.dll pro rozhraní .NET Framework 4 by yield na mscorlib. Sestavení Fakes.dll Fakes.
+### <a name="avoid-assembly-name-clashing"></a>Vyhněte se s konfliktními název sestavení
+
+V prostředí Team Build jsou sloučit všechny výstupy sestavení do jednoho adresáře. Pokud více projektů pomocí zástupného rozhraní, může dojít, Fakes sestavení z různých verzí přepsat navzájem. Například TestProject1 fakes mscorlib.dll z rozhraní .NET Framework 2.0 a TestProject2 fakes mscorlib.dll pro rozhraní .NET Framework 4 by yield na mscorlib. Sestavení Fakes.dll Fakes.
 
  K tomuto problému vyhnout, by měl Fakes automaticky vytvoří verzi kvalifikovaný Fakes názvy sestavení pro odkazy na jiný projekt, při přidávání souborů .fakes. Verze kvalifikovaný název sestavení Fakes vloží číslo verze, když vytvoříte Fakes název sestavení:
 
@@ -185,12 +187,12 @@ attribute of the Assembly element in the .fakes:
   <Assembly Name="MyAssembly" Version="1.2.3.4" />
   ...
 </Fakes>
-
 ```
 
-##  <a name="BKMK_Fakes_naming_conventions"></a> Fakes konvence vytváření názvů
+## <a name="fakes-naming-conventions"></a>Fakes konvence vytváření názvů
 
-###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Shim typu a se zakázaným inzerováním zadejte zásady vytváření názvů
+### <a name="shim-type-and-stub-type-naming-conventions"></a>Shim typu a se zakázaným inzerováním zadejte zásady vytváření názvů
+
  **Obory názvů**
 
 -   . Přidá do oboru názvů přípona fakes.
@@ -215,8 +217,9 @@ attribute of the Assembly element in the .fakes:
 
 -   Vnořené typy struktura zkopírován pro typy shim.
 
-###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Shim vlastnost nebo se zakázaným inzerováním delegáta pole delegáta konvence vytváření názvů
- **Základní pravidla** pro pole názvy, od prázdný název:
+### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>Shim vlastnost nebo se zakázaným inzerováním delegáta pole delegáta konvence vytváření názvů
+
+**Základní pravidla** pro pole názvy, od prázdný název:
 
 -   Název metody je připojen.
 
@@ -239,15 +242,12 @@ attribute of the Assembly element in the .fakes:
 |Například: + – operátor|`op_Add`|`AddOp`|
 |Pro **operátor převodu**, návratový typ se připojí.|`T op_Implicit`|`ImplicitOpT`|
 
- **Poznámky**
+> [!NOTE]
+> - **Mechanismy získání a nastavení indexery** jsou zpracovávány podobně pro vlastnost. Výchozí název indexeru je `Item`.
+> - **Typ parametru** názvy jsou transformovat a zřetězených.
+> - **Návratový typ** se ignoruje, pokud je to nejednoznačnost přetížení. Pokud dojde přetížení amiguity, připojí se návratový typ na konci názvu.
 
--   **Mechanismy získání a nastavení indexery** jsou zpracovávány podobně pro vlastnost. Výchozí název indexeru je `Item`.
-
--   **Typ parametru** názvy jsou transformovat a zřetězených.
-
--   **Návratový typ** se ignoruje, pokud je to nejednoznačnost přetížení. Pokud je to tento případ, návratový typ je přidán na konec názvu
-
-###  <a name="BKMK_Parameter_type_naming_conventions"></a> Parametr typu zásady vytváření názvů
+### <a name="parameter-type-naming-conventions"></a>Parametr typu zásady vytváření názvů
 
 |Zadané|Řetězec připojení je...|
 |-----------|-------------------------|
@@ -262,17 +262,14 @@ attribute of the Assembly element in the .fakes:
 |A **obecná metoda argument** `!!i` metody `M<MMethod>`|`Mi`|
 |A **vnořené typu**`N.T`|`N` se připojí, pak `T`|
 
-###  <a name="BKMK_Recursive_rules"></a> Rekurzivní pravidla
- Následující pravidla jsou rekurzivně:
+### <a name="recursive-rules"></a>Rekurzivní pravidla
+
+Následující pravidla jsou rekurzivně:
 
 -   Protože Fakes používá C# k vygenerování Fakes sestavení, je uvozena libovolný znak, který byste mohli vytvořit neplatný token C# k "_" (podtržítko).
 
 -   Pokud výsledný název je v konfliktu s kteréhokoli člena deklarující typ, použije se schéma číslování připojením letopočty čítač, začínající od 01.
 
-##  <a name="BKMK_External_resources"></a> Externí zdroje
-
-###  <a name="BKMK_Guidance"></a> Pokyny
- [Testování pro nastavené průběžné doručování s Visual Studio 2012 – kapitoly 2: testování částí: testování uvnitř](http://go.microsoft.com/fwlink/?LinkID=255188)
-
 ## <a name="see-also"></a>Viz také
- [Izolace testovaného kódu pomocí zástupného rozhraní Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)
+
+- [Izolace testovaného kódu pomocí zástupného rozhraní Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md)
