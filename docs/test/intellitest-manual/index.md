@@ -1,11 +1,7 @@
 ---
 title: "IntelliTest referenční příručce | Testovací nástroje Microsoft Developer | Microsoft Docs"
-ms.custom: 
 ms.date: 05/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-test
 ms.topic: article
 helpviewer_keywords:
 - IntelliTest Reference Manual, IntelliTest
@@ -14,18 +10,18 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 30c23fc51f136d7fc3dcfeca191f5c469fb1e331
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 8216d8b4f27bb1211bc90d829233602edc915e43
+ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="intellitest-reference-manual"></a>IntelliTest referenční příručce
 
 ## <a name="contents"></a>Obsah
 
 * **[Přehled IntelliTest](introduction.md)**
-  - [Hello World z IntelliTest](introduction.md#hello-world)
+  - [Hello World z IntelliTest](introduction.md#the-hello-world-of-intellitest)
   - [Omezení](introduction.md#limitations)
     * [Nondeterminism](introduction.md#nondeterminism)
     * [Souběžnost](introduction.md#concurrency)
@@ -33,13 +29,13 @@ ms.lasthandoff: 01/09/2018
     * [Platforma](introduction.md#platform)
     * [Jazyk](introduction.md#language)
     * [Symbolický reasoning](introduction.md#symbolic-reasoning)
-    * [Trasování zásobníku nesprávný](introduction.md#incorrect-stack)
+    * [Trasování zásobníku nesprávný](introduction.md#incorrect-stack-traces)
   - [Další čtení](introduction.md#further-reading)<p>&nbsp;</p>
 
 * **[Začínáme s IntelliTest](getting-started.md)**
   - [Důležité atributy](getting-started.md#important-attributes)
   - [Důležité statické pomocné třídy](getting-started.md#helper-classes)<p>&nbsp;</p>
- 
+
 * **[Generování testů](test-generation.md)**
   - [Test generátory](test-generation.md#test-generators)
   - [Parametrizované testování částí](test-generation.md#parameterized-unit-testing)
@@ -107,12 +103,12 @@ ms.lasthandoff: 01/09/2018
 
 * **[Upozornění a chyb](warnings-and-errors.md)**
   - [MaxBranches překročen](warnings-and-errors.md#maxbranches-exceeded)
-  - [MaxConstraintSolverTime překročen](warnings-and-errors.md#maxconstraintsolvertime-exceeded)
+  - [MaxConstraintSolverTime exceeded](warnings-and-errors.md#maxconstraintsolvertime-exceeded)
   - [MaxConditions překročen](warnings-and-errors.md#maxconditions-exceeded)
   - [MaxCalls překročen](warnings-and-errors.md#maxcalls-exceeded)
   - [MaxStack překročen](warnings-and-errors.md#maxstack-exceeded)
   - [MaxRuns překročen](warnings-and-errors.md#maxruns-exceeded)
-  - [MaxRunsWithoutNewTests překročen](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
+  - [MaxRunsWithoutNewTests exceeded](warnings-and-errors.md#maxrunswithoutnewtests-exceeded)
   - [Nelze upřesnění řešení](warnings-and-errors.md#cannot-concretize-solution)
   - [Potřebujete pomoc při sestavování objektu](warnings-and-errors.md#help-construct)
   - [Potřebujete další pomoc k vyhledání typů](warnings-and-errors.md#help-types)
