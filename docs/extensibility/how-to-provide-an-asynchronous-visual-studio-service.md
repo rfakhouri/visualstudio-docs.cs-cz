@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aac446e9ed71b6e6b0c86ea64068af7a6184767
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: ea22a30d6f31099ca5d69d9cd8178188577febfe
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Postupy: poskytování služby asynchronní Visual Studio
 Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, doporučujeme vytvoření služby asynchronní a načíst balíček na vlákna na pozadí. Pro tento účel můžete použít <xref:Microsoft.VisualStudio.Shell.AsyncPackage> ne <xref:Microsoft.VisualStudio.Shell.Package>a přidejte službu s asynchronní balíček speciální asynchronních metod.
@@ -38,7 +38,7 @@ Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, 
   
 4.  K implementaci služby, musíte vytvořit tři typy:  
   
-    -   Rozhraní, které popisuje službu. Mnoho z těchto rozhraní je prázdný, to znamená, že mají žádné metody.  
+    -   Rozhraní, které identifikují službu. Mnoho z těchto rozhraní jsou prázdné, to znamená, že mají žádné metody i se používají jenom pro dotaz na službu.
   
     -   Rozhraní, které popisuje rozhraní služby. Toto rozhraní obsahuje metody k implementaci.  
   
@@ -52,7 +52,9 @@ Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, 
     using System.Threading;  
     using System.Threading.Tasks;  
     using System.Runtime.CompilerServices;  
-    using System.IO;  
+    using System.IO;
+    using IAsyncServiceProvider = Microsoft.VisualStudio.Shell.IAsyncServiceProvider;
+    using Task = System.Threading.Tasks.Task;
     ```  
   
 7.  Zde je implementace asynchronní služby. Všimněte si, že je nutné nastavit na poskytovatele asynchronní služby spíše než poskytovateli synchronní služby v konstruktoru:  
@@ -60,39 +62,58 @@ Pokud chcete získat službu bez blokování vlákna uživatelského rozhraní, 
     ```csharp
     public class TextWriterService : STextWriterService, ITextWriterService  
     {  
-        private Microsoft.VisualStudio.Shell.IAsyncServiceProvider serviceProvider;  
-        public TextWriterService(Microsoft.VisualStudio.Shell.IAsyncServiceProvider provider)  
-        {  
-            serviceProvider = provider;  
-        }  
-        public async System.Threading.Tasks.Task WriteLineAsync(string path, string line)  
+        private IAsyncServiceProvider asyncServiceProvider;  
+        
+        public TextWriterService(IAsyncServiceProvider provider)  
+        {
+            // constructor should only be used for simple initialization
+            // any usage of Visual Studio service, expensive background operations should happen in the
+            // asynchronous InitializeAsync method for best performance
+            asyncServiceProvider = provider;  
+        }
+        
+        public async Task InitializeAsync(CancellationToken cancellationToken)
+        {
+            // We have to use JoinableTaskFactory as code will switch to main thread in some parts
+            await ThreadHelper.JoinableTaskFactory.RunAsync(async () =>
+            {
+                await TaskScheduler.Default;
+                // do background operations that involve IO or other async methods
+                
+                await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync(cancellationToken);               
+                // query Visual Studio services on main thread unless they are documented as free threaded explicitly.
+                // The reason for this is the final cast to service interface (such as IVsShell) may involve COM operations to add/release references.
+                
+                IVsShell vsShell = this.asyncServiceProvider.GetServiceAsync(typeof(SVsShell)) as IVsShell;
+                // use Visual Studio services to continue initialization
+            });
+        }
+        
+        public async Task WriteLineAsync(string path, string line)  
         {  
             StreamWriter writer = new StreamWriter(path);  
             await writer.WriteLineAsync(line);  
             writer.Close();  
         }  
-        public TaskAwaiter GetAwaiter()  
-        {  
-            return new TaskAwaiter();  
-        }  
     }  
+
     public interface STextWriterService  
     {  
     }  
+    
     public interface ITextWriterService   
     {  
         System.Threading.Tasks.Task WriteLineAsync(string path, string line);  
-        TaskAwaiter GetAwaiter();  
     }  
     ```  
   
 ## <a name="registering-a-service"></a>Registrace služby  
- Chcete-li zaregistrovat službu, přidejte <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> k balíčku, který poskytuje službu. Existují dva rozdíly registraci synchronní služby:  
+ Chcete-li zaregistrovat službu, přidejte <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> k balíčku, který poskytuje službu. Různé registraci synchronní služby, je nutné zajistěte, aby balíček a služba podporuje asynchronní načítání:
   
--   Pokud jste autoloading balíčku, je nutné přidat <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags> BackgroundLoad hodnotu pro atribut. Další informace o autoloading VSPackages najdete v tématu [načítání VSPackages](../extensibility/loading-vspackages.md).  
+-   Je nutné přidat **AllowsBackgroundLoading = true** do <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> pro zajištění balíčku můžete další informace o PackageRegistrationAttribute inicializují asynchronně, naleznete v [registrace a Zrušení registrace VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
   
--   Je nutné přidat **AllowsBackgroundLoading = true** do <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>. Další informace o PackageRegistrationAttribute najdete v tématu [registrace a zrušení registrace VSPackages](../extensibility/registering-and-unregistering-vspackages.md).  
-  
+-   Je nutné přidat **IsAsyncQueryable = true** do <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> zajistit instance služby můžete inicializují asynchronně.
+
  Tady je příklad AsyncPackage s registraci asynchronní služby:
   
 ```csharp  
@@ -109,11 +130,10 @@ public sealed class TestAsyncPackage : AsyncPackage
 1.  V TestAsyncPackage.cs, odebrat `Initialize()` metoda a přepsání `InitializeAsync()` metoda. Přidání služby a přidejte metody zpětného volání k vytvoření služby. Tady je příklad asynchronní inicializátoru přidání služby:  
   
     ```csharp
-    protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
+    protected override async Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
-        this.AddService(typeof(STextWriterService), CreateService);  
-  
         await base.InitializeAsync(cancellationToken, progress);  
+        this.AddService(typeof(STextWriterService), CreateTextWriterService);
     }  
   
     ```  
@@ -123,14 +143,11 @@ public sealed class TestAsyncPackage : AsyncPackage
 3.  Metoda zpětného volání implementujte jako asynchronní metody, které vytváří a vrátí službu.  
   
     ```csharp  
-    public async System.Threading.Tasks.Task<object> CreateService(IAsyncServiceContainer container, CancellationToken cancellationToken, Type serviceType)  
+    public async Task<object> CreateTextWriterService(IAsyncServiceContainer container, CancellationToken cancellationToken, Type serviceType)  
     {  
-        STextWriterService service = null;  
-        await System.Threading.Tasks.Task.Run(() => {  
-                    service = new TextWriterService(this);  
-             });  
-  
-        return service;  
+        TextWriterService service = new TextWriterService(this);  
+        await service.InitializeAsync(cancellationToken);
+        return service;
     }  
   
     ```  
@@ -143,13 +160,13 @@ public sealed class TestAsyncPackage : AsyncPackage
     ```csharp  
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
-        this.AddService(typeof(STextWriterService), CreateService);  
+        await base.InitializeAsync(cancellationToken, progress);  
+        this.AddService(typeof(STextWriterService), CreateTextWriterService);  
   
         ITextWriterService textService = await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
         await textService.WriteLineAsync(<userpath>), "this is a test");  
   
-        await base.InitializeAsync(cancellationToken, progress);  
     }  
   
     ```  
@@ -175,17 +192,16 @@ public sealed class TestAsyncPackage : AsyncPackage
   
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
-        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
-        TestAsyncCommand.Initialize(this);    
-  
-        this.AddService(typeof(STextWriterService), CreateService);  
-  
+        await base.InitializeAsync(cancellationToken, progress);  
+        this.AddService(typeof(STextWriterService), CreateTextWriterService);  
+
         ITextWriterService textService =   
            await this.GetServiceAsync(typeof(STextWriterService)) as ITextWriterService;  
   
         await textService.WriteLineAsync((<userpath>, "this is a test");  
   
-        await base.InitializeAsync(cancellationToken, progress);  
+        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
+        TestAsyncCommand.Initialize(this);
     }  
   
     ```  
@@ -200,14 +216,16 @@ public sealed class TestAsyncPackage : AsyncPackage
     using System.IO;  
     ```  
   
-6.  Přidat asynchronní metodu s názvem `GetAsyncService()`, který získá službu a používá jeho metody:  
+6.  Přidat asynchronní metodu s názvem `UseTextWriterAsync()`, který získá službu a používá jeho metody:  
   
     ```csharp  
-    private async System.Threading.Tasks.Task GetAsyncService()  
+    private async System.Threading.Tasks.Task UseTextWriterAsync()  
     {  
+        // Query text writer service asynchronously to avoid a blocking call.
         ITextWriterService textService =   
-           this.ServiceProvider.GetService(typeof(STextWriterService))  
+           await AsyncServiceProvider.GlobalProvider.GetServiceAsync(typeof(STextWriterService))  
               as ITextWriterService;  
+
         // don't forget to change <userpath> to a local path  
         await textService.WriteLineAsync((<userpath>),"this is a test");  
        }  
@@ -219,7 +237,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
-        GetAsyncService();  
+        UseTextWriterAsync();  
     }  
   
     ```  

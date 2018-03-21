@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 03/13/2018
+ms.date: 03/19/2018
 ms.topic: article
 helpviewer_keywords: 
 ms.technology:
@@ -13,11 +13,11 @@ ms.technology:
 ms.service: 
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfb24548b10ac968f2b6186f373ae504161f884
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 4fb2238d8a0afb8334a05585bf040931da81d66a
+ms.sourcegitcommit: a80e7ef2f0a0f6d906a44f4d696aeb208bc1ad70
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/21/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 čísla sestavení a verze kalendářních dat
 
@@ -25,7 +25,10 @@ Následující tabulka uvádí kalendářních dat pro čísla a uvolnění sest
 
 | **Verze**| **Channel** | **Datum vydání** | **Verze sestavení** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.6.3 | Vydaná verze | 19. března 2018 | 15.6.27428.2011 |
 | 15.7.0 Preview 1.0 | Náhled | 13. března 2018 | 15.7.27512.0 |
+| 15.6.2 | Vydaná verze | 13. března 2018 | 15.6.27428.2005 |
+| 15.0.11 | Vydaná verze | 13. března 2018 | 15.0.26228.29 |
 | 15.6.1 | Vydaná verze | 8 března 2018 | 15.6.27428.2002 |
 | 15.6.1 náhled 1.0 | Náhled | 8 března 2018 | 15.6.27428.2002 |
 | 15.6.0 | Vydaná verze | 5. března 2018 | 15.6.27428.1 |
