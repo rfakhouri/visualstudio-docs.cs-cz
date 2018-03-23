@@ -1,8 +1,9 @@
-# [Předplatná sady Visual Studio](index.md) 
+# [Předplatná sady Visual Studio](index.md)
 ## Prostředí pro předplatitele
 ### [Použití Portálu pro předplatitele](using-the-subscriber-portal.md)
 #### [Aktivace maloobchodních předplatných](activate-store-subscriptions.md)
 #### [Přihlášení](signing-in.md)
+#### [Alternativní identity](vs-alternate-identity.md)
 ##### [Přihlášení pomocí aliasů](aliasing.md)
 #### [Správa vašich předplatných](manage-vs-subscriptions.md)
 ### [Stahování softwaru](subscriber-downloads.md)
@@ -14,9 +15,9 @@
 ### [Výhody pro předplatitele](subscriber-benefits.md)
 ## Využití výhod pro předplatitele
 ### Nástroje
-#### [Integrované vývojové prostředí sady Visual Studio](vs-ide-benefit.md) 
+#### [Integrované vývojové prostředí sady Visual Studio](vs-ide-benefit.md)
 #### [Visual Studio Team Services](vs-vsts.md)
-#### [Kredit Azure](vs-azure.md) 
+#### [Kredit Azure](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft](vs-parasoft.md)
 #### [WhiteSource Bolt](vs-whitesource.md)
@@ -61,15 +62,17 @@
 #### [Předplatná po konci platnosti](handle-expired-license.md)
 #### [Předplatitelé s přihlášením pomocí osobního e-mailu](personal-email-sign-ins.md)
 ## Získání předplatných sady Visual Studio
-### [Porovnání předplatných](compare-subscriptions.md)
+### [Porovnání možností předplatného](https://www.visualstudio.com/vs/pricing)
 ### Nákup cloudových předplatných
 #### [Přehled](vscloud-overview.md)
-#### [První nákup](vscloud-first-purchase.md)
-#### [Prodloužení](vscloud-renewals.md)
-#### [Nákup dalších](vscloud-buy-more.md)
-#### [Zrušení](vscloud-cancel.md)
+#### [Časté otázky k fakturaci](vscloud-billing-faq.md)
+#### [Nákup pro poskytovatele CSP](vscloud-csp.md)
+### Předplatná nabízená přes programy
+#### [Microsoft Partner Network](program-mpn.md)
+#### [Správa předplatných pro MPN](manage-mpn-subscriptions.md)
+#### [Microsoft pro startupy](program-startups.md)
 ## Prostředky
 ### [Licenční podmínky pro Visual Studio](vs-license-terms.md)
-### [White paper k licencování sady Visual Studio](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
+### [White paper k licencování sady Visual Studio](http://aka.ms/vslicensing)
 ### [Porovnání možností a cen předplatného](https://www.visualstudio.com/vs/pricing)
 ### [Porovnání funkcí integrovaných vývojových prostředí (IDE) sady Visual Studio](https://www.visualstudio.com/vs/compare)
