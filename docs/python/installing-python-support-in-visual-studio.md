@@ -1,15 +1,15 @@
 ---
-title: "Instalace podpory Python v sadě Visual Studio | Microsoft Docs"
-description: "Podrobné pokyny k instalaci nástroje Python Tools pro Visual Studio (PTVS) v aplikaci Visual Studio 2017, 2015, 2013, 2012 a 2010, včetně možnosti a umístění instalace."
-ms.custom: 
+title: Instalace podpory Python v sadě Visual Studio | Microsoft Docs
+description: Podrobné pokyny k instalaci nástroje Python Tools pro Visual Studio (PTVS) v aplikaci Visual Studio 2017, 2015, 2013, 2012 a 2010, včetně možnosti a umístění instalace.
+ms.custom: ''
 ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: faa901c14bd5d115aa3e7384a5d3b63c0410b64b
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 8a6bf78c0f0abcef9158bfdb753f5c8ea4050c33
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalace podpory Python v sadě Visual Studio v systému Windows
 
@@ -43,7 +43,7 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017. Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program sady Visual Studio, vyberte **upravit** možnosti (v tématu [upravit Visual Studio](../install/modify-visual-studio.md)) a přejděte ke kroku 2.
+1. Stáhněte a spusťte nejnovější verzi instalačního programu Visual Studio 2017. Pokud máte už nainstalovanou sadu Visual Studio, spusťte instalační program Visual Studio, vyberte **upravit** možnost (najdete v části [upravit Visual Studio](../install/modify-visual-studio.md)) a přejděte ke kroku 2.
 
     > [!div class="nextstepaction"]
     > <a target="frameTarget" href="https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Nainstalovat Visual Studio 2017 Community</a>

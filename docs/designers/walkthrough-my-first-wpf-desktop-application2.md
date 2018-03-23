@@ -1,11 +1,11 @@
 ---
-title: "Návod: Můj první grafický subsystém WPF Desktopová aplikace | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Můj první grafický subsystém WPF Desktopová aplikace | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -15,11 +15,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c239e811ea47158dd63660e761f943b8f22e8e23
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95c35eae16f50b6fa8c0a8c86fa0d93732512a88
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Návod: Můj první grafický subsystém WPF aplikace pracovní plochy
 
@@ -136,7 +136,7 @@ V této části přidáte dvě stránky a bitovou kopii do aplikace.
     </Page>
     ```
 
-    V jazyce Visual Basic, bude první řádek podle mírně odlišný:
+    V jazyce Visual Basic se jemně liší první řádek:
 
     ```xaml
     <Page x:Class="ExpenseItHome"
@@ -160,7 +160,7 @@ V této části přidáte dvě stránky a bitovou kopii do aplikace.
     </NavigationWindow>
     ```
 
-    V jazyce Visual Basic, bude první řádek podle mírně odlišný:
+    V jazyce Visual Basic se jemně liší první řádek:
 
     ```xaml
     <NavigationWindow x:Class="MainWindow"
@@ -320,7 +320,7 @@ Rozložení poskytuje seřazené způsob, jak umístit elementy a také spravuje
 
     1. Vyhledejte řádek `<Button Grid.Column="0" Grid.Row="2" Margin="0,10,0,0" Width="125"`. Změnit `Grid.Column="0"` k `Grid.Column="1"` a změňte `Grid.Row="2"` k `Grid.Row="3"`.
 
-1. Těsně před `<Border` element přidejte následující kód XAML zobrazit název:
+1. Těsně před `<Border` elementu, přidejte následující kód XAML zobrazit název:
 
     ```xaml
     <Label Grid.Column="1" VerticalAlignment="Center" FontFamily="Trebuchet MS"
@@ -573,7 +573,7 @@ Rozložení poskytuje seřazené způsob, jak umístit elementy a také spravuje
 
     -   `listHeaderTextStyle`: K formátování záhlaví seznamu **popisek**.
 
-    -   `buttonStyle`: K formátování `Button` na **ExpenseItHome.xaml** pppage.
+    -   `buttonStyle`: K formátování `Button` na **ExpenseItHome.xaml** stránky.
 
 1. Otevřete **ExpenseItHome.xaml** a nahraďte všechno mezi `<Grid>` a `</Grid>` prvky s následující XAML:
 
@@ -674,7 +674,7 @@ Rozložení poskytuje seřazené způsob, jak umístit elementy a také spravuje
 
 ### <a name="to-bind-data-to-a-control"></a>K vytvoření vazby dat k ovládacímu prvku
 
-1. Otevřete **ExpenseItHome.xaml** a zvolte `<Grid>` element...
+1. Otevřete **ExpenseItHome.xaml** a zvolte `<Grid>` elementu.
 
 1. Přidejte následující kód XAML:
 

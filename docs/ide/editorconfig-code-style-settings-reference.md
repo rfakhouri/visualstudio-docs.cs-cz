@@ -1,5 +1,5 @@
 ---
-title: "Kódování nastavení konvence pro EditorConfig v sadě Visual Studio .NET | Microsoft Docs"
+title: Kódování nastavení konvence pro EditorConfig v sadě Visual Studio .NET | Microsoft Docs
 ms.date: 02/28/2018
 ms.topic: article
 dev_langs:
@@ -17,11 +17,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 53345fa849715a8065b0bf569977393033608caa
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
+ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kódování nastavení konvence pro EditorConfig rozhraní .NET
 
@@ -77,10 +77,11 @@ V následujícím seznamu jsou povolená jazyk pravidla konvence:
         - dotnet\_style\_object_initializer
         - DotNet\_styl\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
-        - dotnet\_style\_coalesce_expression
-        - dotnet\_style\_null_propagation
         - dotnet\_prefer\_inferred\_tuple_names
         - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
+    - ["Null" Kontrola předvolby](#null_checking)
+        - dotnet\_style\_coalesce_expression
+        - dotnet\_style\_null_propagation
 - Nastavení stylu kódu C#
     - [Implicitní a explicitní typy](#var)
         - CSharp\_styl\_var\_pro\_vytvořené\_in_types
@@ -102,7 +103,7 @@ V následujícím seznamu jsou povolená jazyk pravidla konvence:
         - csharp\_prefer\_simple\_default_expression
         - csharp\_style\_deconstructed\_variable_declaration
         - csharp\_style\_pattern\_local\_over\_anonymous_function
-    - ["Null" Kontrola předvolby](#null_checking)
+    - ["Null" Kontrola předvolby](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
     - [Předvolby blok kódu](#code_block)
@@ -380,7 +381,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 #### <a name="expression_level">Předvolby úrovni výrazu</a>
 
-Pravidla stylu v této části se týkají výraz úrovni předvolby, včetně použití inicializátory objektů, Inicializátory kolekcí, názvy explicitní řazené kolekce členů, null slučování výrazy porovnání ternární operátory a operátor podmíněného hodnotu null.
+Styl pravidla v této části problém výraz úrovni předvolby, včetně použití inicializátory objektů, Inicializátory kolekcí, názvy explicitní nebo vyvozen řazené kolekce členů a anonymní typy odvodit.
 
 Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programovacích jazyků, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
@@ -389,10 +390,8 @@ Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programova
 | dotnet_style_object_initializer | IDE0017 | C# a Visual Basic | hodnotu true: návrh | První verze |
 | dotnet_style_collection_initializer | IDE0028 | C# a Visual Basic | hodnotu true: návrh | První verze |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + a Visual Basic 15 + | hodnotu true: návrh | První verze |
-| dotnet_style_coalesce_expression | IDE0029 | C# a Visual Basic | hodnotu true: návrh | První verze |
-| dotnet_style_null_propagation | IDE0031 | C# 6.0 + a Visual Basic 14 + | hodnotu true: návrh | První verze |
-| dotnet_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + a Visual Basic 15 + | hodnotu true: návrh | 15.6 |
-| dotnet_prefer_inferred_anonymous_type_member_names | IDE0037 | C# a Visual Basic | hodnotu true: návrh | 15.6 |
+| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + a Visual Basic 15 + | hodnotu true: návrh | 15.6 |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# a Visual Basic | hodnotu true: návrh | 15.6 |
 
 **dotnet\_style\_object_initializer**
 
@@ -475,6 +474,60 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
+**dotnet\_style\_prefer\_inferred\_tuple_names**
+
+- Když je toto pravidlo nastavená na **true**, raději názvy elementů odvozené řazené kolekce členů.
+- Když je toto pravidlo nastavená na **false**, raději názvy elementů explicitní řazené kolekce členů.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_prefer_inferred_tuple_names = true
+var tuple = (age, name);
+
+// dotnet_style_prefer_inferred_tuple_names = false
+var tuple = (age: age, name: name);
+```
+
+**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
+
+- Když je toto pravidlo nastavená na **true**, raději názvy člen vyvozen anonymního typu.
+- Když je toto pravidlo nastavená na **false**, dáváte přednost explicitní anonymního typu názvy členů.
+
+Příklady kódu:
+
+```csharp
+// dotnet_style_prefer_inferred_anonymous_type_member_names = true
+var anon = new { age, name };
+
+// dotnet_style_prefer_inferred_anonymous_type_member_names = false
+var anon = new { age = age, name = name };
+
+```
+
+Tato pravidla může zobrazit v souboru .editorconfig takto:
+
+```EditorConfig
+# CSharp and Visual Basic code style settings:
+[*.{cs,vb}]
+dotnet_style_object_initializer = true:suggestion
+dotnet_style_collection_initializer = true:suggestion
+dotnet_style_explicit_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_tuple_names = true:suggestion
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
+```
+
+#### <a name="null_checking">Kontrola Null předvolby</a>
+
+Pravidla stylu v této části se týkají předvolby kontrola hodnotu null.
+
+Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programovacích jazyků, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
+
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| --------- | ------- | -------------------- | ----------------------| ---- |
+| dotnet_style_coalesce_expression | IDE0029 | C# a Visual Basic | hodnotu true: návrh | První verze |
+| dotnet_style_null_propagation | IDE0031 | C# 6.0 + a Visual Basic 14 + | hodnotu true: návrh | První verze |
+
 **dotnet\_style\_coalesce_expression**
 
 - Když je toto pravidlo nastavená na **true**, raději null slučování výrazy Ternární operátor kontrola.
@@ -525,49 +578,13 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-**dotnet\_prefer\_inferred\_tuple_names**
-
-- Když je toto pravidlo nastavená na **true**, raději názvy elementů odvozené řazené kolekce členů.
-- Když je toto pravidlo nastavená na **false**, raději názvy elementů explicitní řazené kolekce členů.
-
-Příklady kódu:
-
-```csharp
-// dotnet_style_prefer_inferred_tuple_names = true
-var tuple = (age, name);
-
-// dotnet_style_prefer_inferred_tuple_names = false
-var tuple = (age: age, name: name);
-```
-
-**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
-
-- Když je toto pravidlo nastavená na **true**, raději názvy člen vyvozen anonymního typu.
-- Když je toto pravidlo nastavená na **false**, dáváte přednost explicitní anonymního typu názvy členů.
-
-Příklady kódu:
-
-```csharp
-// dotnet_style_prefer_inferred_anonymous_type_member_names = true
-var anon = new { age, name };
-
-// dotnet_style_prefer_inferred_anonymous_type_member_names = false
-var anon = new { age = age, name = name };
-
-```
-
 Tato pravidla může zobrazit v souboru .editorconfig takto:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
 [*.{cs,vb}]
-dotnet_style_object_initializer = true:suggestion
-dotnet_style_collection_initializer = true:suggestion
-dotnet_style_explicit_tuple_names = true:suggestion
 dotnet_style_coalesce_expression = true:suggestion
 dotnet_style_null_propagation = true:suggestion
-dotnet_style_prefer_inferred_tuple_names = true:suggestion
-dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
 ### <a name="c-code-style-settings"></a>Nastavení stylu kódu C#
@@ -960,7 +977,7 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking">"Null" Kontrola předvolby</a>
+#### <a name="null_checking_csharp">"Null" Kontrola předvolby</a>
 
 Tyto potíže pravidla styl syntaxe kolem `null` kontrola, včetně použití `throw` výrazy nebo `throw` příkazy a zda chcete provést kontrolu hodnotu null nebo použít podmíněný operátor slučování (`?.`) při vyvolání [výrazu lambda](/dotnet/csharp/lambda-expressions).
 
@@ -1545,7 +1562,7 @@ MyMethod(argument);
 
 **csharp_space_between_parentheses**
 
-Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:
+Toto pravidlo je možné zadat jednu nebo více hodnot v následující tabulce:
 
 | Hodnota | Popis |
 | ----- |:------------|
@@ -1553,14 +1570,16 @@ Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijím
 | výrazy | Umístěte mezery mezi závorkách výrazů |
 | type_casts | Umístěte mezery mezi závorkami v přetypování typu |
 
+Pokud vynecháte toto pravidlo, nebo použít hodnotu s jinými než `control_flow_statements`, `expressions`, nebo `type_casts`, není použita nastavení.
+
 Příklady kódu:
 
 ```csharp
 // csharp_space_between_parentheses = control_flow_statements
-for( int i;i<x;i++ ) { ... }
+for ( int i = 0; i < 10; i++ ) { }
 
 // csharp_space_between_parentheses = expressions
-var z = ( x * y ) - ( ( y - x ) * 3);
+var z = ( x * y ) - ( ( y - x ) * 3 );
 
 // csharp_space_between_parentheses = type_casts
 int y = ( int )x;
