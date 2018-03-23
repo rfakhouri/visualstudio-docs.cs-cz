@@ -1,24 +1,24 @@
 ---
-title: "Řešení potíží s emulátor sady Visual Studio pro Android | Microsoft Docs"
-ms.custom: 
+title: Řešení potíží s emulátor sady Visual Studio pro Android | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: 
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
+caps.latest.revision: ''
+author: mgmclemore
+ms.author: mamcle
+manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d99892d42190e64c54213c2b6b9e52fdd22dfd8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7d333295461617eb8a85f0970bc82e33f5a2ec68
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Poradce při potížích s emulátorem sady Visual Studio pro Android
 Toto téma obsahuje informace k řešení problémů, které mohou nastat při použití emulátor sady Visual Studio pro Android.  
@@ -62,12 +62,12 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
 -   [Podpora prostředky](#Support)  
   
-##  <a name="BeforeYouStart"></a>Než začnete  
+##  <a name="BeforeYouStart"></a> Než začnete  
  Než začnete řešit potíže, může být užitečné v následujících tématech:  
   
 -   [Systémové požadavky pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
-##  <a name="NoInstall"></a>Emulátor se instalace nezdaří.  
+##  <a name="NoInstall"></a> Emulátor se instalace nezdaří.  
  Pokud nemáte nainstalovanou technologií Hyper-v., zobrazí se následující zpráva při pokusu o nainstalujte si emulátor. Musí mít počítač, který podporuje Hyper-v a musí být povolena.  
   
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")  
@@ -77,7 +77,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
  Pokud se zobrazí tato zpráva, podívejte se [systémové požadavky pro emulátor sady Visual Studio pro Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) zobrazíte, zda lze spustit emulátor.  
   
-##  <a name="DomainNetwork"></a>Nelze se připojit k síti cíle v doméně nebo v podnikové síti  
+##  <a name="DomainNetwork"></a> Nelze se připojit k síti cíle v doméně nebo v podnikové síti  
  Emulátor sady Visual Studio pro Android se zobrazí jako samostatné zařízení pomocí jeho vlastní IP adresy v síti. Není připojen k doméně systému Windows a nesdílí přihlašovací údaje domény nebo pracovní skupiny s hostitelským počítačem.  
   
  Pokud síť vyžaduje ověření, domény nebo pracovní skupiny pro základní síť a připojení k Internetu, obraťte se na správce IT pro výjimku. Tato výjimka umožňuje vývojovém počítači, která bude sloužit jako počítač hranic a tak, aby přijímal připojení z domény nepřipojená síťová zařízení jako emulátor.  
@@ -94,7 +94,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
 4.  Na stránce sítě vyhledejte fyzickou adresu položky.  
   
-##  <a name="ManualNetworkConfig"></a>Nelze se připojit k síti cíle při vyžadují ruční konfiguraci nastavení sítě  
+##  <a name="ManualNetworkConfig"></a> Nelze se připojit k síti cíle při vyžadují ruční konfiguraci nastavení sítě  
  Pro připojení k síti cíle z emulátoru, musí vaše síť splňovat následující požadavky:  
   
 -   DHCP. Emulátor vyžaduje DHCP, protože se konfiguruje jako samostatné zařízení v síti s vlastní IP adresu.  
@@ -103,7 +103,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
  Pokud síť vyžaduje ručně nakonfigurované nastavení, obraťte se na správce IT k určení, jak můžete povolit připojení k síti pro emulátor.  
   
-##  <a name="SlowStart"></a>Emulátor spouští pomalu, nepodaří spustit z důvodu vypršení časového limitu nebo dojde k selhání nasazení aplikace  
+##  <a name="SlowStart"></a> Emulátor spouští pomalu, nepodaří spustit z důvodu vypršení časového limitu nebo dojde k selhání nasazení aplikace  
  Za určitých podmínek emulátoru trvá několik minut, spustit nebo nepodaří spustit z důvodu vypršení časového limitu. Když na emulátoru se nepodaří spustit, zobrazí se následující zpráva: `App deployment failed. Please try again`. Tato chyba může způsobit následující podmínky.  
   
 -   Spuštění emulátor sady Visual Studio pro Android z spouštěcí virtuální pevný disk. Tato konfigurace není podporována.  
@@ -118,7 +118,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
 -   Obecně platí všechny faktor, který je přispívání do nízký výkon systému. Begin – řešení potíží s komponentou, který má nejnižší skóre v indexu prostředí systému Windows, kterou najdete na stránce informace o výkonu a nástrojů v Ovládacích panelech.  
   
-##  <a name="NoStart2"></a>Emulátor nepodaří spustit  
+##  <a name="NoStart2"></a> Emulátor nepodaří spustit  
  Pokud je emulátor byl dříve funguje, ale teď nefunguje, projít následující úlohy. Pokud používáte emulátor poprvé, přečtěte si téma [emulátoru nepodaří spustit (první použití)](#NoStart) před provedením těchto kroků.  
   
 -   Odeberte všechny ostatní instance technologie Hyper-V emulátoru.  
@@ -141,7 +141,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
 -   Pokud tyto kroky problém nevyřeší, přečtěte si téma [emulátoru nepodaří spustit (první použití)](#NoStart) informace o 3. stran software, který může vadit pomocí emulátoru.  
   
-##  <a name="NoStart"></a>Emulátor nepodaří spustit (první použití)  
+##  <a name="NoStart"></a> Emulátor nepodaří spustit (první použití)  
  Pokud není možné spustit v emulátoru, projít následující úkoly a identifikovat a opravit potíže.  
   
 -   Ujistěte se, že jsou splněny minimální požadavky na hardware a správnost nastavení systému BIOS.  
@@ -212,7 +212,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
     2.  Pro adaptér vEthernet (interní Port Windows Phone emulátoru interní přepínač Ethernet), zvolte **vlastnosti** v místní nabídce.  
   
-         ![Virtuální adaptér používá Hyper & č. 45; V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+         ![Virtuální adaptér používá Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
          Zde se zobrazují vlastnosti adaptéru.  
   
@@ -248,7 +248,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
      Nyní spusťte emulátor. By se měly fungovat.  
   
-##  <a name="NoBoot"></a>Počítač se nepodaří spustit po instalaci v emulátoru  
+##  <a name="NoBoot"></a> Počítač se nepodaří spustit po instalaci v emulátoru  
  Tomuto problému může dojít, když jsou splněné následující podmínky:  
   
 -   V počítači je základní desky gigabajt.  
@@ -259,7 +259,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
  Další informace najdete v následujícím článku znalostní báze Knowledge Base: [spouštěcí selhání po instalaci role Hyper-V v systémech gigabajt](https://support.microsoft.com/en-us/kb/2693144).  
   
-##  <a name="ADB"></a>Visual Studio vázne pokusu o nasazení aplikace na emulátoru nebo emulátoru se nezobrazí jako cíl ladění v jiných integrovaného vývojového prostředí  
+##  <a name="ADB"></a> Visual Studio vázne pokusu o nasazení aplikace na emulátoru nebo emulátoru se nezobrazí jako cíl ladění v jiných integrovaného vývojového prostředí  
  Pokud emulátoru běží, ale nezobrazí k připojení k ADB (Android ladění mostu) nebo v nástroje pro Android, které využívají ADB (například Android Studio nebo Eclipse) nezobrazí, můžete upravit, kde emulátoru hledá ADB. Emulátor používá k určení základní umístění Android SDK klíč registru a hledá soubor \platform-tools\adb.exe v tomto adresáři. Úprava cesta k Android SDK používaná emulátorem:  
   
 -   Otevřete Editor registru tak, že vyberete **spustit** z místní nabídky Start tlačítka zadáním `regedit` v dialogovém okně a výběr **OK**.  
@@ -270,7 +270,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
  Restartujte emulátoru a byste měli nyní uvidí emulátor připojen k ADB a související nástroje pro Android.  
   
-##  <a name="XamarinPlayer"></a>Emulátor přestane reagovat, protože nemohla nastavit UDP port  
+##  <a name="XamarinPlayer"></a> Emulátor přestane reagovat, protože nemohla nastavit UDP port  
  Tento problém z důvodu nekompatibility s nástrojem Xamarin Player může dojít. Pokud se zobrazí emulátor přestane reagovat nebo pokud se zobrazí tato chybová zpráva "nelze se připojit k operační systém zařízení je emulátor: nemohla nastavit UDP port.  Může se zakázat některé funkce", může se jednat tento problém. Proveďte následující kroky.  
   
 1.  Odinstalujte Xamarin Player.  
@@ -281,7 +281,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
 4.  Můžete zkusit odinstalovat nebo přeinstalovat technologie Hyper-V po odebrání všech jiných fyzických síťových adaptérech.  
   
-##  <a name="Skylake"></a>Nelze připojit ladicí program k projektu Xamarin  
+##  <a name="Skylake"></a> Nelze připojit ladicí program k projektu Xamarin  
  Pokud používáte Windows 10 s procesory Intel Skylake, aplikace Xamarin se nemusí podařit spustit v emulátoru nebo ladicího programu sady Visual Studio nemusí připojit k nim. To je kvůli problému s technologií Hyper-V a Skylake procesory. Jako alternativní řešení proveďte následující kroky.  
   
 1.  Otevřete Správce technologie Hyper-V a vyberte virtuální počítač pro emulátor profilu, který vaše jsou pomocí.  
@@ -296,22 +296,22 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
 6.  Restartujte službu (v části **akce**) a zkuste to znovu.  
   
-##  <a name="GooglePlay"></a>Emulátor nepodaří spustit aplikaci, která používá služby Google Play  
+##  <a name="GooglePlay"></a> Emulátor nepodaří spustit aplikaci, která používá služby Google Play  
  Emulátor se nedodává s knihovny služby Google Play. Emulátor však podporuje přetahování myší instalaci si zip souborů.  
   
-##  <a name="DragAndDrop"></a>Přetažení souboru, APK nebo soubor zip si nefunguje  
+##  <a name="DragAndDrop"></a> Přetažení souboru, APK nebo soubor zip si nefunguje  
  Emulátor používá ADB.exe usnadňuje přenos souborů, když jste přetažení soubor na obrazovku. Pokud dojde k chybě při pokusu o přetažení soubor, pravděpodobně označuje, že je emulátor není připojen k ADB.exe. Pokud chcete vyřešit, postupujte podle kroků v [Visual Studio vázne pokusu o nasazení aplikace na emulátoru nebo emulátoru se nezobrazí jako cíl ladění v jiných integrovaného vývojového prostředí](#ADB).  
   
-##  <a name="Resolution"></a>Řešení – snímek obrazovky je nesprávný  
+##  <a name="Resolution"></a> Řešení – snímek obrazovky je nesprávný  
  Pokud pořídíte snímek pomocí kartě – snímek obrazovky v **další nástroje** okno a výsledný obraz má neočekávanou velikost, budete muset upravit úroveň přiblížení obrazovky před volbou **zaznamenat**. Emulátor načítá snímky obrazovky na rozlišení obrazovky na monitoru počítače hostitele.  
   
-##  <a name="OpenGL"></a>Emulátor selže k vykreslení obsahu OpenGL  
+##  <a name="OpenGL"></a> Emulátor selže k vykreslení obsahu OpenGL  
  Emulátor vykreslí obsah OpenGL pomocí GPU hostitelský počítač a používá projektu úhel k převedení těchto volání z rozhraní DirectX. Pokud vaše aplikace vykreslí správně na zařízení ale nesprávně v emulátoru, je pravděpodobné, že zařízení je zmírnění nesprávné volání OpenGL (například pomocí shaderu proměnné, které neodpovídají).  
   
-##  <a name="Multitouch"></a>Emulátor neodpovídá na více touch gesta  
+##  <a name="Multitouch"></a> Emulátor neodpovídá na více touch gesta  
  V některých případech emulátoru spustí a nereaguje na více touch buď přes přímé interakce z dotykového displeje nebo pomocí nástroje více Touch na panelu nástrojů emulátor. Pokud je to tento případ, vyberte **otočit** tlačítka na panelu nástrojů emulátoru a pokus o použití více touch znovu. Pokud problém přetrvává, přečtěte si [emulátoru selže k vykreslení obsahu OpenGL](#OpenGL) problém.  
   
-##  <a name="Support"></a>Podpora prostředky  
+##  <a name="Support"></a> Podpora prostředky  
  Pokud hostitelský počítač splňuje požadavky na systém a narazíte na problém nejsou zahrnuté v této příručce pro řešení potíží:  
   
 -   Zeptejte se na StackOverflow pomocí [emulátoru android](http://stackoverflow.com/questions/tagged/android-emulator) a visual studio.  

@@ -1,24 +1,24 @@
 ---
-title: "Správa životního cyklu aplikací (ALM) s aplikacemi Xamarin | Microsoft Docs"
-ms.custom: 
+title: Správa životního cyklu aplikací (ALM) s aplikacemi Xamarin | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: ''
+author: conceptdev
+ms.author: crdun
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: e7ee514a3ca121b9259f1c1b5f54b49d58b0ac47
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f6eea5a99245249a244dbb7cd31e61799f7c0103
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Správa životního cyklu aplikací (ALM) s aplikacemi Xamarin
 Xamarin umožňuje vytvářet cílené na Android, iOS a Windows pomocí jazyka C# .NET a Visual Studio mobilní aplikace a platformy. Xamarin umožňuje velkou část kódu být sdílen mezi platformami s pouze malým procentem museli být specifické pro platformu. Další informace o Xamarin sám sebe, najdete v části [Visual Studio a Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
@@ -32,7 +32,7 @@ Xamarin umožňuje vytvářet cílené na Android, iOS a Windows pomocí jazyka 
  Následující tabulky identifikuje funkce, které Visual Studio ALM můžete předpokládat fungují dobře u projektu Xamarin, a ty, které mají omezení. Naleznete v dokumentaci propojené podrobnosti o funkce sami.  
   
 ## <a name="agile-tools"></a>Nástroje pro agilní  
- Použití odkazu:  **[pracovní](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (pomocí Visual Studio Team Services nebo sady TFS, včetně Team Explorer Everywhere)  
+ Použití odkazu: **[pracovní](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (pomocí Visual Studio Team Services nebo sady TFS, včetně Team Explorer Everywhere)  
   
  Obecný komentář: všechny plánování a sledování funkce jsou nezávislé na kódování v jazycích jazyky a typu projektu.  
   

@@ -1,24 +1,24 @@
 ---
-title: "Mobilní vývoj pro různé platformy v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Mobilní vývoj pro různé platformy v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 12/06/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
-caps.latest.revision: 
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+caps.latest.revision: ''
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ace464f11d16f1498022cb1a0673b294a6ec408b
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 855ded366433f6ab3193d1046d9d5047449bd204
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Mobilní vývoj pro různé platformy v sadě Visual Studio
 
@@ -111,7 +111,7 @@ S Xamarinem můžete určit cílovou Android, iOS a Windows ve stejném řešen�
 |[Další informace o emulátor sady Visual Studio pro Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> Vytvoření aplikace pro Android a Windows (C++)
- ![Pomocí C & č. 43; & č. 43; k sestavení pro Android, iOS a Windows](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+ ![Použití jazyka C&#43; &#43; k sestavení pro Android, iOS a Windows](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
  Nejdřív Nainstalujte Visual Studio 2015 a Visual C++ pro nástroje pro vývoj pro různé platformy Mobile. Potom můžete vytvořit nativní aktivity aplikace pro Android nebo aplikaci, která je cílem Windows. C++ šablony, které cílí iOS ještě nejsou k dispozici. Můžete určit cílovou Android a Windows ve stejném řešení, pokud chcete a potom sdílet kód mezi nimi pomocí napříč platformami statickou nebo dynamickou sdílenou knihovnu.
 

@@ -1,23 +1,23 @@
 ---
-title: "Správa životního cyklu aplikací (ALM) s aplikacemi Unity | Microsoft Docs"
-ms.custom: 
+title: Správa životního cyklu aplikací (ALM) s aplikacemi Unity | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
-author: conceptdev
-ms.author: crdun
+author: dantogno
+ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2cba5891c42a229c3186b2709382f3b3cf44f1fc
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 05196d7c9e6b1b441db61f599dcfe39c4d5cba56
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) s aplikacemi Unity
 Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než právě psaní kódu. Tyto aktivity, označuje jako DevOps (vývoj + operations) span úplný životní cyklus aplikace a zahrnují plánování a sledování práce, navrhování a implementace kódu, Správa úložiště zdrojového kódu spuštění sestavení, Správa nepřetržité integrace nasazení, testování (včetně testování částí a testy uživatelského rozhraní), spuštěné různé formy diagnostiky v vývoj a provozní prostředí a monitorování výkonu a uživatel chování aplikace v reálném čase pomocí telemetrie a analýzy.
@@ -27,7 +27,7 @@ Vývoj aplikací pro moderní platformy zahrnuje mnoho další aktivity než pr�
  Následující tabulky identifikuje způsob, jakým Visual Studio ALM funkce použít nebo nechcete použít při práci s Unity. Naleznete v dokumentaci propojené podrobnosti o funkce sami.
 
 ## <a name="agile-tools"></a>Nástroje pro agilní
- Použití odkazu:  **[pracovní](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (pomocí Visual Studio Team Services nebo sady TFS, včetně Team Explorer Everywhere)
+ Použití odkazu: **[pracovní](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (pomocí Visual Studio Team Services nebo sady TFS, včetně Team Explorer Everywhere)
 
  Obecný komentář: všechny plánování a sledování funkce jsou nezávislé na kódování v jazycích jazyky a typu projektu.
 

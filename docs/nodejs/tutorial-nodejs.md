@@ -1,13 +1,13 @@
 ---
-title: "Vytvoření aplikace Node.js a Express - sady Visual Studio | Microsoft Docs"
-description: "V tomto kurzu vytvoříte aplikaci Node.js a Express v sadě Visual Studio"
-ms.custom: 
+title: Vytvoření aplikace Node.js a Express - sady Visual Studio | Microsoft Docs
+description: V tomto kurzu vytvoříte aplikaci Node.js a Express v sadě Visual Studio
+ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-nodejs
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 05e10e6016c4a6791b5bc80ba6a05616c1edb0f6
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 1ababcbc0903d474c2992b68e3571a71c4e88d99
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a expresní aplikaci v sadě Visual Studio
 V tomto kurzu pro vývoj sady Visual Studio pomocí Node.js a Express vytvořit jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).  
@@ -46,12 +46,14 @@ V tomto kurzu zjistíte, jak:
 
     Pokud nemáte nainstalováno, nainstalovat verzi LTS [Node.js](https://nodejs.org/en/download/) webu. Obecně platí Visual Studio automaticky rozpozná nainstalované runtime Node.js. Pokud je nainstalovaný modul runtime nerozpozná, můžete nakonfigurovat tak, aby odkazovaly nainstalovaný modul runtime na stránce vlastností projektu (po vytvoření projektu klikněte pravým tlačítkem na uzel projektu a zvolte **vlastnosti**).
 
+    V tomto kurzu byla testována s Node.js 8.10.0.
+
 ## <a name="create-a-project"></a>Vytvoření projektu
 Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Open Visual Studio 2017.  
 
-1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .  
+1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...**.  
 
 1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**a potom zvolte **Node.js**. V prostředním podokně vyberte **základní Azure Node.js Express 4 aplikační**a potom zvolte **OK**.   
 
@@ -119,6 +121,8 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
         res.render('index', { title: 'Express', "data" });
     });
     ```
+
+    Dojde k chybě v řádku kódu obsahující `res.render`. Je potřeba opravit před spuštěním aplikace. Chybu opravte v další části.
 
 ## <a name="use-intellisense"></a>Použití prvku IntelliSense
 

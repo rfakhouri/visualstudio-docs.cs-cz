@@ -1,23 +1,23 @@
 ---
-title: "Ověřte prostředí Xamarin | Microsoft Docs"
-ms.custom: 
+title: Ověřte prostředí Xamarin | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 03b5723ca0cbc3e6b8864bd49d2301e0485ff451
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 28983dc88e4259fce783ee3e2d502d30ec0712d8
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="verify-your-xamarin-environment"></a>Ověřte prostředí Xamarin
 Po dokončení instalační programy (viz [nastavení a instalaci](../cross-platform/setup-and-install.md)), věnovat několik minut, ověřte, zda je vše připraveno prostředí vývoj na platformě Xamarin.  
@@ -33,7 +33,7 @@ Po dokončení instalační programy (viz [nastavení a instalaci](../cross-plat
   
  Pak vytvořte nové řešení Xamarin v sadě Visual Studio pomocí **soubor > Nový projekt**, pak v dialogovém okně rozbalte **šablony > jiné jazyky > Visual C# > napříč platformami**, vyberte  **Prázdná aplikace (nativní přenosné)**a klikněte na tlačítko OK. Tím se vytvoří řešení s projektu knihovny přenosných tříd sdílené a jednotlivých projektů pro Android, iOS a Windows:  
   
- ![Výsledky vytvoření nového projektu z prázdnou aplikaci &#40; Nativní přenositelností &#41; Šablona](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin ověřte 1")  
+ ![Výsledky vytvoření nového projektu z prázdné aplikace &#40;nativní přenosné&#41; šablony](../cross-platform/media/crossplat-xamarin-verify-1.png "CrossPlat Xamarin ověřte 1")  
   
 > [!NOTE]
 >  Pokud nejsou šablony došlo, najdete v [jsou šablony projektu Xamarin chybí? Zkuste to](#missing) v dolní části této stránky.  
