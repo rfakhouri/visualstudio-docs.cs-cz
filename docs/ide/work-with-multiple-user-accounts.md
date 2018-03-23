@@ -1,22 +1,22 @@
 ---
-title: "Práce s několika uživatelskými účty | Microsoft Docs"
-ms.custom: 
+title: Práce s několika uživatelskými účty | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology: vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: def8b9347ec5c74cf369972602416c992dff39c7
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 535b01f8f0ef5840543013509d40b4b8393fa7f6
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 
@@ -24,7 +24,7 @@ Pokud máte více účty Microsoft nebo pracovní nebo školní účty, můžete
 
 Po přidání více účtů na jednom počítači, bude tuto sadu účtů přemístit s vámi, při přihlášení k sadě Visual Studio na jiném počítači. Je důležité si uvědomit, že i když dojde k přemístění názvy účtů, není provádět přihlašovací údaje. Proto zobrazí se výzva k zadání přihlašovacích údajů pro tyto další účty poprvé pokusí použít jejich prostředky na nový počítač.
 
-Tento návod ukazuje, jak přidat více účtů pro Visual Studio, a jak zjistit, že prostředky přístupné z těchto účtů se projeví v umístí, jako **přidat připojení službě** dialogu **Průzkumníka serveru** , a **Team Explorer**.
+Tento návod ukazuje, jak přidat více účtů pro Visual Studio, a jak zjistit, že prostředky přístupné z těchto účtů se projeví v umístí, jako **přidat připojení službě** dialogu **Průzkumníka serveru**, a **Team Explorer**.
 
 ## <a name="sign-in-to-visual-studio"></a>Přihlaste se k sadě Visual Studio
 
@@ -51,9 +51,9 @@ Otevření Průzkumníka serveru, zobrazí se prostředky pro tento odběry.
 1. Zvolte uzel projektu v Průzkumníku řešení a potom zvolte **přidat, připojení službě**. **Přidat připojení službě** průvodce se zobrazí a zobrazí seznam služeb v účtu Azure, která souvisí s vaším ID sady Visual Studio přihlášení. Všimněte si, že nemáte samostatně přihlaste k Azure. Však nutné se přihlásit k jiné účty při prvním pokusu o přístup k jejich prostředkům z jednoho počítače.
 
     > [!WARNING]
-    > Pokud je to poprvé vytvoříte aplikaci UWP v sadě Visual Studio v určitém počítači, zobrazí se výzva tak, aby vaše zařízení pro režimu pro vývoj přechodem na **nastavení &#124;  Aktualizace a zabezpečení &#124; Pro vývojáře** ve vašem počítači. Další informace najdete v tématu [povolit zařízení pro vývoj](/windows/uwp/get-started/enable-your-device-for-development).
+    > Pokud je to poprvé vytvoříte aplikaci UWP v sadě Visual Studio v určitém počítači, zobrazí se výzva tak, aby vaše zařízení pro režimu pro vývoj přechodem na **nastavení &#124; aktualizace a zabezpečení &#124; pro vývojáře** na váš počítač. Další informace najdete v tématu [povolit zařízení pro vývoj](/windows/uwp/get-started/enable-your-device-for-development).
 
-### <a name="access_azure"></a>Přístup k Azure Active Directory ve webovém projektu
+### <a name="access_azure"></a> Přístup k Azure Active Directory ve webovém projektu
 
 Azure AD umožňuje podporu pro koncového uživatele jednom přihlášení do webových aplikací ASP.NET MVC nebo ověřování AD v webového rozhraní API služby. Ověřování v doméně se liší od účtu ověřování jednotlivých uživatelů; Uživatelé, kteří mají přístup k vaší doméně služby Active Directory můžete použít své stávající účty Azure AD pro připojení k vaší webové aplikace. Aplikace Office 365 můžete také použít ověřování v doméně. Toto zobrazíte v akci vytvoření webové aplikace (**souboru, nový projekt C#, cloudu, webové aplikace ASP.NET**). V dialogovém okně Nový projekt ASP.NET zvolte **změna ověřování**. Průvodce ověřování se zobrazí a umožní vám vybrat jaký typ ověřování pro použití ve vaší aplikaci.
 

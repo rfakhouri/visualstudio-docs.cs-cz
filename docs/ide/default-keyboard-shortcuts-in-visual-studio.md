@@ -1,11 +1,12 @@
 ---
-title: "Výchozí klávesové zkratky v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Výchozí klávesové zkratky v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 06/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -16,12 +17,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bfb22343acd98edf2a010a3f5462dde84d85bbcc
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- multiple
+ms.openlocfilehash: 715f07f64e730eda13537d50061af0089d18b958
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Výchozí klávesové zkratky v sadě Visual Studio
 Další informace o usnadnění klávesnice najdete v tématu [Rady a tipy k usnadnění](../ide/reference/accessibility-tips-and-tricks.md) a [postupy: použití klávesnice výhradně](../ide/reference/how-to-use-the-keyboard-exclusively.md).
@@ -59,22 +61,22 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |[Zobrazení návrhu HTML Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[Návrhář sestav](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[Editor akcelerátorů VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[Editor souborů XML (Text)](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|  
 |[Zobrazení zdroje HTML Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[Diagram pořadí](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[Editor dialogových oken VC](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[Návrhář schémat XML](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|  
 
-##  <a name="bkmk_global"></a>Globální
+##  <a name="bkmk_global"></a> Globální
 
-###  <a name="bkmk_analyze"></a>Analýza
+###  <a name="bkmk_analyze"></a> Analýza
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
 |Analyze.NavigateBackward|Shift+Alt+3|  
 |Analyze.NavigateForward|Shift+Alt+4|  
 
-###  <a name="bkmk_architecture"></a>Architektura
+###  <a name="bkmk_architecture"></a> Architektura
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
 |Architecture.NewDiagram|Ctrl+\\, Ctrl+N|  
 
-###  <a name="bkmk_build"></a>Sestavení
+###  <a name="bkmk_build"></a> Sestavení
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -83,7 +85,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Build.Compile|Ctrl+F7|  
 |Build.RunCodeAnalysisonSolution|Alt+F11|  
 
-###  <a name="bkmk_classview"></a>Třídy zobrazení kontextové nabídky
+###  <a name="bkmk_classview"></a> Třídy zobrazení kontextové nabídky
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -157,7 +159,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Debug.Watch3|Ctrl + Alt + W, 3|  
 |Debug.Watch4|Ctrl + Alt + W, 4|  
 
-###  <a name="bkmk_debugger"></a>Ladicí program kontextové nabídky
+###  <a name="bkmk_debugger"></a> Ladicí program kontextové nabídky
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -165,7 +167,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9, A|  
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9, S|  
 
-###  <a name="bkmk_diagnostics"></a>Centrum diagnostiky
+###  <a name="bkmk_diagnostics"></a> Centrum diagnostiky
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
@@ -230,7 +232,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Edit.SurroundWith|Ctrl+K, Ctrl+S|  
 |Edit.Undo|Ctrl+Z<br /><br /> or<br /><br /> Alt+Backspace|  
 
-###  <a name="bkmk_editorContext"></a>Editor kontextové nabídky
+###  <a name="bkmk_editorContext"></a> Editor kontextové nabídky
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -241,7 +243,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K, Ctrl+O|  
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K, Ctrl+T<br /><br /> or<br /><br /> Ctrl+K, T|  
 
-###  <a name="bkmk_file"></a>Soubor
+###  <a name="bkmk_file"></a> Soubor
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -257,7 +259,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |File.SaveSelectedItems|Ctrl+S|  
 |File.ViewinBrowser|Ctrl+Shift+W|  
 
-###  <a name="bkmk_help"></a>Pomoc
+###  <a name="bkmk_help"></a> Pomoc
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -266,19 +268,19 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Help.ViewHelp|Ctrl+F1|  
 |Help.WindowHelp|Shift+F1|  
 
-###  <a name="bkmk_loadtest"></a>Zátěžový Test
+###  <a name="bkmk_loadtest"></a> Zátěžový Test
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |LoadTest.JumpToCounterPane|Ctrl+R, Q|  
 
-###  <a name="bkmk_otherContext"></a>Další kontextové nabídky
+###  <a name="bkmk_otherContext"></a> Další kontextové nabídky
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insert|  
 
-###  <a name="bkmk_project"></a>Projekt
+###  <a name="bkmk_project"></a> Projekt
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -290,14 +292,14 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Project.Publishselectedfiles|Alt+;, Alt+P|  
 |Project.Replaceselectedfilesfromserver|Alt+;, Alt+R|  
 
-###  <a name="bkmk_projectContext"></a>Projekt a řešení kontextové nabídky
+###  <a name="bkmk_projectContext"></a> Projekt a řešení kontextové nabídky
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt + šipka dolů|  
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt + šipka nahoru|  
 
-###  <a name="bkmk_refactor"></a>Refaktorovat
+###  <a name="bkmk_refactor"></a> Refaktorovat
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -308,7 +310,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Refactor.Rename|Ctrl+R, Ctrl+R|  
 |Refactor.ReorderParameters|Ctrl+R, Ctrl+O|  
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a>Průzkumník řešení
+###  <a name="bkmk_solutionexplorerGLOBAL"></a> Průzkumník řešení
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -316,7 +318,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |SolutionExplorer.PendingChangesFilter|Ctrl+[, P<br /><br /> or<br /><br /> Ctrl+[, Ctrl+P|  
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[, S<br /><br /> or<br /><br /> Ctrl+[, Ctrl+S|  
 
-###  <a name="bkmk_team"></a>Tým
+###  <a name="bkmk_team"></a> Tým
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -325,7 +327,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Team.Git.GoToGitCommits|Ctrl+0, Ctrl+O<br /><br /> or<br /><br /> Ctrl+0, O|  
 |Team.TeamExplorerSearch|Ctrl+'|  
 
-###  <a name="bkmk_TFcontext"></a>Team Foundation kontextové nabídky
+###  <a name="bkmk_TFcontext"></a> Team Foundation kontextové nabídky
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -347,7 +349,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Test.UseCodedUITestBuilder|Ctrl+\\, Ctrl+C|  
 |Test.UseExistingActionRecording|Ctrl+\\, Ctrl+A|  
 
-###  <a name="bkmk_testexplorerGLOBAL"></a>Průzkumníka testů
+###  <a name="bkmk_testexplorerGLOBAL"></a> Průzkumník testů
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -357,7 +359,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |TestExplorer.RunAllTests|Ctrl+R, A|  
 |TestExplorer.RunAllTestsInContext|Ctrl+R, T|  
 
-###  <a name="bkmk_tools"></a>Nástroje  
+###  <a name="bkmk_tools"></a> Nástroje  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -366,7 +368,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Tools.ForceGC|Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12|  
 |Tools.GoToCommandLine|Ctrl+/|  
 
-###  <a name="bkmk_view"></a>Zobrazení  
+###  <a name="bkmk_view"></a> Zobrazení  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -415,7 +417,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |View.ZoomIn|Ctrl+Shift+.|  
 |View.ZoomOut|Ctrl+Shift+,|  
 
-###  <a name="bkmk_window"></a>Okno  
+###  <a name="bkmk_window"></a> Okno  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -446,14 +448,14 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Window.SolutionExplorerSearch|Ctrl+;|  
 |Window.WindowSearch|Alt+`|  
 
-###  <a name="bkmk_windowsazure"></a>Azure  
+###  <a name="bkmk_windowsazure"></a> Azure  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
 |WindowsAzure.RetryMobileServiceScriptOperation|Ctrl+Num *, Ctrl+R|  
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|Ctrl+Num *, Ctrl+D|  
 
-##  <a name="bkmk_ADONET"></a>Návrhář modelů EDM Model ADO.NET Entity Data  
+##  <a name="bkmk_ADONET"></a> Návrhář modelů EDM Model ADO.NET Entity Data  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -468,7 +470,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |View.EntityDataModelBrowser|Ctrl+1|  
 |View.EntityDataModelMappingDetails|Ctrl+2|  
 
-##  <a name="bkmk_classDiagram"></a>Diagram – třída  
+##  <a name="bkmk_classDiagram"></a> Diagram – třída  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -480,7 +482,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Edit.RemovefromDiagram|Odstranit|  
 |View.ViewCode|Enter|  
 
-##  <a name="bkmk_codedUItest"></a>Editor programového testu UI  
+##  <a name="bkmk_codedUItest"></a> Editor programového testu UI  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -491,14 +493,14 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |OtherContextMenus.UITestEditorContextMenu.Movecode|Ctrl+Alt+C|  
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|Ctrl+Shift+T|  
 
-##  <a name="bkmk_dataset"></a>Editor datové sady  
+##  <a name="bkmk_dataset"></a> Editor datové sady  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
 |OtherContextMenus.ColumnContext.InsertColumn|Insert|  
 |OtherContextMenus.DbTableContext.Add.Column|Ctrl+L|  
 
-##  <a name="bkmk_diff"></a>Rozdíl prohlížeč  
+##  <a name="bkmk_diff"></a> Rozdíl prohlížeč  
 
 |||  
 |-|-|  
@@ -515,7 +517,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |EditorContextMenus.CodeWindow.AddComment|Ctrl+Shift+K|  
 |EditorContextMenus.CodeWindow.EditLocalFile|Ctrl+Shift+P|  
 
-##  <a name="bkmk_DOM"></a>Průzkumník modelu DOM  
+##  <a name="bkmk_DOM"></a> Průzkumník modelu DOM  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -523,13 +525,13 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |DOMExplorer.SelectElement|Ctrl+B|  
 |DOMExplorer.ShowLayout|Ctrl+Shift+I|  
 
-##  <a name="bkmk_FSharp"></a>F # interaktivní  
+##  <a name="bkmk_FSharp"></a> F # interaktivní  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|Ctrl+Break|  
 
-##  <a name="bkmk_graphDoc"></a>Editor dokumentu grafu  
+##  <a name="bkmk_graphDoc"></a> Editor dokumentu grafu  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -541,7 +543,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|Odstranit|  
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|F2|  
 
-##  <a name="bkmk_graphicsDebugger"></a>Diagnostika grafiky  
+##  <a name="bkmk_graphicsDebugger"></a> Diagnostika grafiky  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -561,7 +563,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |-------------|-----------------------|  
 |OtherContextMenus.HTMLContext.GoToController|Ctrl+M, Ctrl+G|  
 
-##  <a name="bkmk_HTMLeditorDesign"></a>Zobrazení návrhu HTML Editor  
+##  <a name="bkmk_HTMLeditorDesign"></a> Zobrazení návrhu HTML Editor  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -584,7 +586,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |View.ViewMarkup|Shift+F7|  
 |Window.PreviousTab|Ctrl+PgUp|  
 
-##  <a name="bkmk_HTMLeditorSource"></a>Zobrazení zdroje HTML Editor  
+##  <a name="bkmk_HTMLeditorSource"></a> Zobrazení zdroje HTML Editor  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -594,13 +596,13 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |View.ViewDesigner|Shift+F7|  
 |Window.PreviousTab|Ctrl+PgUp|  
 
-##  <a name="bkmk_layerDiagram"></a>Diagram vrstev  
+##  <a name="bkmk_layerDiagram"></a> Diagram vrstev  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |Edit.Delete|Shift+Delete|  
 
-##  <a name="bkmk_managedResources"></a>Editor spravované prostředky  
+##  <a name="bkmk_managedResources"></a> Editor spravované prostředky  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -615,7 +617,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Resources.Other|Ctrl+6|  
 |Resources.Strings|Ctrl+1|  
 
-##  <a name="bkmk_MergeEditor"></a>Sloučení okno editoru  
+##  <a name="bkmk_MergeEditor"></a> Sloučení okno editoru  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -623,7 +625,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|Alt+2|  
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|Alt+3|  
 
-##  <a name="bkmk_SchemaCompare"></a>Microsoft SQL Server Data Tools, porovnat schématu  
+##  <a name="bkmk_SchemaCompare"></a> Microsoft SQL Server Data Tools, porovnat schématu  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -634,7 +636,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |SQL.SSDTSchemaCompareStop|Alt+Break|  
 |SQL.SSDTSchemaCompareWriteUpdates|Shift+Alt+U|  
 
-##  <a name="bkmk_TableDesigner"></a>Microsoft SQL Server Data Tools, Návrháře tabulky  
+##  <a name="bkmk_TableDesigner"></a> Microsoft SQL Server Data Tools, Návrháře tabulky  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -645,7 +647,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |SQL.Rename|F2<br /><br /> or<br /><br /> Ctrl+R, R<br /><br /> or<br /><br /> Ctrl+R, Ctrl+R|  
 |ViewFileInScriptPanel|Shift+Alt+PgDn|  
 
-##  <a name="bkmk_TSQLeditor"></a>Microsoft SQL Server Data Tools, Editor T-SQL  
+##  <a name="bkmk_TSQLeditor"></a> Microsoft SQL Server Data Tools, Editor T-SQL  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -666,7 +668,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |TSqlEditorCloneQuery|Ctrl+Alt+N|  
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|  
 
-##  <a name="bkmk_linkfix"></a>Microsoft SQL Server Data Tools, Editor PDW T-SQL  
+##  <a name="bkmk_linkfix"></a> Microsoft SQL Server Data Tools, Editor PDW T-SQL  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -681,13 +683,13 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |TSqlEditorCloneQuery|Ctrl+Alt+N|  
 |TSqlEditorDatabaseCombo|Shift+Alt+PgDn|  
 
-##  <a name="bkmk_PageInspector"></a>Nástroj Page Inspector  
+##  <a name="bkmk_PageInspector"></a> Nástroj Page Inspector  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |PageInspector.Minimize|F12|  
 
-##  <a name="bkmk_QueryDesigner"></a>Návrhář dotazů  
+##  <a name="bkmk_QueryDesigner"></a> Návrhář dotazů  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -700,7 +702,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |QueryDesigner.Results|Ctrl+4|  
 |QueryDesigner.SQL|Ctrl+3|  
 
-##  <a name="bkmk_QueryResults"></a>Výsledky dotazu  
+##  <a name="bkmk_QueryResults"></a> Výsledky dotazu  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -708,7 +710,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |SQL.QueryResultsRefresh|Shift+Alt+R|  
 |SQL.QueryResultsStop|Alt+Break|  
 
-##  <a name="bkmk_ReportDesigner"></a>Návrhář sestav  
+##  <a name="bkmk_ReportDesigner"></a> Návrhář sestav  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -734,14 +736,14 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Edit.TabLeft|Shift+Tab|  
 |View.ReportData|Ctrl+Alt+D|  
 
-##  <a name="bkmk_SequenceDiagram"></a>Diagram pořadí  
+##  <a name="bkmk_SequenceDiagram"></a> Diagram pořadí  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
 |ArchitectureDesigner.Sequence.NavigateToCode|F12|  
 |Edit.Delete|Shift+Del|  
 
-##  <a name="bkmk_SettingsDesigner"></a>Nastavení návrháře  
+##  <a name="bkmk_SettingsDesigner"></a> Nastavení návrháře  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -750,13 +752,13 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Edit.SelectionCancel|Esc|  
 |View.ViewCode|F7|  
 
-##  <a name="bkmk_SolutionExplorer"></a>Průzkumník řešení  
+##  <a name="bkmk_SolutionExplorer"></a> Průzkumník řešení  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|Ctrl+K, Ctrl+G|  
 
-##  <a name="bkmk_TeamExplorer"></a>Průzkumník týmových projektů  
+##  <a name="bkmk_TeamExplorer"></a> Team Explorer  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
@@ -781,19 +783,19 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|Shift+Alt+L|  
 |View.Refresh|F5|  
 
-##  <a name="bkmk_TFBuild"></a>Team Foundation Build podrobností Editoru  
+##  <a name="bkmk_TFBuild"></a> Team Foundation Build podrobností Editoru  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |View.Refresh|F5|  
 
-##  <a name="bkmk_TestExplorer"></a>Průzkumníka testů  
+##  <a name="bkmk_TestExplorer"></a> Průzkumník testů  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |TestExplorer.OpenTest|F12|  
 
-##  <a name="bkmk_TextEditor"></a>Textový Editor  
+##  <a name="bkmk_TextEditor"></a> Textový Editor  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -903,38 +905,38 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion|Alt+PgDn|  
 |TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion|Alt+PgUp|  
 
-##  <a name="bkmk_UMLactivityDiagram"></a>Diagram činnosti UML  
+##  <a name="bkmk_UMLactivityDiagram"></a> Diagram činnosti UML  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |Edit.Delete|Shift+Del|  
 
-##  <a name="bkmk_UMLclassDiagram"></a>Diagramu tříd UML  
+##  <a name="bkmk_UMLclassDiagram"></a> Diagramu tříd UML  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |Edit.DeleteFromModel|Shift+Del|  
 
-##  <a name="bkmk_UMLcomponentDiagram"></a>Diagram komponent UML  
+##  <a name="bkmk_UMLcomponentDiagram"></a> Diagram komponent UML  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |Edit.DeleteFromModel|Shift+Del|  
 
-##  <a name="bkmk_UMLusecaseDiagram"></a>Diagram případů použití UML  
+##  <a name="bkmk_UMLusecaseDiagram"></a> Diagram případů použití UML  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |Edit.DeleteFromModel|Shift+Del|  
 
-##  <a name="bkmk_vcaccelerator"></a>Editor akcelerátorů VC  
+##  <a name="bkmk_vcaccelerator"></a> Editor akcelerátorů VC  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
 |Edit.NewAccelerator|Insert|  
 |Edit.NextKeyTyped|Ctrl+W|  
 
-##  <a name="bkmk_vcdialogeditor"></a>Editor dialogových oken VC  
+##  <a name="bkmk_vcdialogeditor"></a> Editor dialogových oken VC  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -968,7 +970,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Format.TestDialog|Ctrl+T|  
 |Format.ToggleGuides|Ctrl+G|  
 
-##  <a name="bkmk_vcimageeditor"></a>Editor obrázků VC  
+##  <a name="bkmk_vcimageeditor"></a> Editor obrázků VC  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -1010,13 +1012,13 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Image.ZoomIn|Ctrl+Shift+.<br /><br /> or<br /><br /> Ctrl + šipka nahoru|  
 |Image.ZoomOut|Ctrl+Shift+,<br /><br /> or<br /><br /> Ctrl + šipka dolů|  
 
-##  <a name="bkmk_vcstringeditor"></a>Editor řetězce VC  
+##  <a name="bkmk_vcstringeditor"></a> Editor řetězce VC  
 
 |Příkaz|Klávesová zkratka|  
 |-------------|-----------------------|  
 |Edit.NewString|Insert|  
 
-##  <a name="bkmk_viewDesigner"></a>Návrhář zobrazení  
+##  <a name="bkmk_viewDesigner"></a> Návrhář zobrazení  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -1035,7 +1037,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |-------------|-----------------------|  
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|Ctrl+1|  
 
-##  <a name="bkmk_wfdesigner"></a>Návrhář formulářů Windows  
+##  <a name="bkmk_wfdesigner"></a> Návrhář formulářů Windows  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -1064,7 +1066,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Edit.SizeControlUp|Ctrl + Shift + šipka nahoru|  
 |Edit.TabLeft|Shift+Tab|  
 
-##  <a name="bkmk_workItemEditor"></a>Pracovní položky editoru  
+##  <a name="bkmk_workItemEditor"></a> Pracovní položky editoru  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -1072,7 +1074,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Edit.RefreshWorkItem|F5|  
 |Team.NewLinkedWorkItem|Shift+Alt+L|  
 
-##  <a name="bkmk_WIqueryview"></a>Zobrazení dotazu pracovních položek  
+##  <a name="bkmk_WIqueryview"></a> Zobrazení dotazu pracovních položek  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -1083,7 +1085,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Team.Refresh|F5|  
 |Window.Toggle|Shift+Alt+V|  
 
-##  <a name="bkmk_WIresultsview"></a>Zobrazení výsledků pracovních položek  
+##  <a name="bkmk_WIresultsview"></a> Zobrazení výsledků pracovních položek  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -1096,7 +1098,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Team.Refresh|F5|  
 |Window.Toggle|Shift+Alt+V|  
 
-##  <a name="bkmk_workflowdesigner"></a>Návrhář postupu provádění  
+##  <a name="bkmk_workflowdesigner"></a> Návrhář postupu provádění  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -1124,7 +1126,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |WorkflowDesigner.ZoomIn|Ctrl+Num +|  
 |WorkflowDesigner.ZoomOut|Ctrl+Num -|  
 
-##  <a name="bkmk_xamluidesigner"></a>Návrhář XAML uživatelského rozhraní  
+##  <a name="bkmk_xamluidesigner"></a> Návrhář XAML uživatelského rozhraní  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
@@ -1132,6 +1134,7 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |Design.ShowHandles|F9|  
 |Design.ZoomIn|Ctrl+Alt+=|  
 |Design.ZoomOut|Ctrl+Alt+-|  
+|Návrhář možnosti|Ctrl+Shift+;|  
 |Format.EditText|F2|  
 |Format.ResetLayout.All|Ctrl+Shift+R|  
 |Spuštění kódu projektu|Ctrl+F9|  
@@ -1145,14 +1148,14 @@ Každý oddíl v následující tabulce obsahuje příkazy, pro které jsou klá
 |View.EdgeRightMoveRight|Ctrl+Shift+Alt+.|  
 |View.ShowPropertyMarkerMenu|Ctrl + mezerník|  
 
-##  <a name="bkmk_xmlTextEditor"></a>Editor souborů XML (Text)  
+##  <a name="bkmk_xmlTextEditor"></a> Editor souborů XML (Text)  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  
 |XML.StartXSLTDebugging|Alt+F5|  
 |XML.StartXSLTWithoutDebugging|Ctrl+Alt+F5|  
 
-##  <a name="bkmk_xmlSchemaDesigner"></a>Návrhář schématu XML  
+##  <a name="bkmk_xmlSchemaDesigner"></a> Návrhář schématu XML  
 
 |Příkazy|Klávesové zkratky|  
 |--------------|------------------------|  

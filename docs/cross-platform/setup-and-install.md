@@ -1,23 +1,23 @@
 ---
 title: Nainstalovat Xamarin pro Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/13/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 ms.technology: vs-ide-mobile
-author: ghogen
-ms.author: ghogen
-manager: ghogen
+author: asb3993
+ms.author: amburns
+manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: bcaa49552c0e904b07cc90f3ae7e44aaa58a3895
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: a935ab3768d5e900aea681b392e920763cb53016
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="setup-and-install"></a>Nastavení a instalaci
 
@@ -32,7 +32,7 @@ Vytvářet nativní aplikace pro iOS, Android a Windows aplikace z běžných C#
 Pokud máte problémy s Xamarin po provedení tohoto nastavení a instalaci, vystavte tady svůj dotaz na [forums.xamarin.com](http://forums.xamarin.com/).
 
 > [!NOTE]
-> Jak je 31. března 2016, všechny Xamarin je zahrnutá v všechny edice sady Visual Studio bez jakýchkoli nákladů a nemusí samostatné licence. Xamarin Studio Community Mac jsou rovněž bezplatná pro studenty, vývojáři operačních systémů a malé týmy. Poznámka: pro existující instalace sady Visual Studio, které jsou nakonfigurovány s dřívější licence Xamarin, musíte aktualizovat Xamarin verzi 4.0.3.214 nebo vyšší. Chcete-li to provést, přejděte na **nástroje > Možnosti > Xamarin > jiných**, klikněte na tlačítko **Zkontrolovat nyní** odkaz a stáhnout 4.0.3.214 aktualizovat. Při dalším spuštění Visual Studio, přejděte na **nástroje > Xamarin účtu...**  a měli byste vidět aktualizovaný stav.
+> Jak je 31. března 2016, všechny Xamarin je zahrnutá v všechny edice sady Visual Studio bez jakýchkoli nákladů a nemusí samostatné licence. Xamarin Studio Community Mac jsou rovněž bezplatná pro studenty, vývojáři operačních systémů a malé týmy. Poznámka: pro existující instalace sady Visual Studio, které jsou nakonfigurovány s dřívější licence Xamarin, musíte aktualizovat Xamarin verzi 4.0.3.214 nebo vyšší. Chcete-li to provést, přejděte na **nástroje > Možnosti > Xamarin > jiných**, klikněte na tlačítko **Zkontrolovat nyní** odkaz a stáhnout 4.0.3.214 aktualizovat. Při dalším spuštění Visual Studio, přejděte na **nástroje > Xamarin účtu...** a měli byste vidět aktualizovaný stav.
 
 ##  <a name="prereq"></a> Předpoklady
 
@@ -82,9 +82,9 @@ Pokud máte problémy s Xamarin po provedení tohoto nastavení a instalaci, vys
 
 ##  <a name="mac"></a> Instalační program MAC (Apple ID, Xcode a Xamarin)
 
-1.  Vytvoření volné Apple ID na [https://appleid.apple.com](https://appleid.apple.com/) Pokud již nemáte. To je nezbytné pro instalaci a přihlášení k Xcode.
+1.  Vytvoření volné Apple ID na [ https://appleid.apple.com ](https://appleid.apple.com/) Pokud již nemáte. To je nezbytné pro instalaci a přihlášení k Xcode.
 
-2.  Stáhněte a nainstalujte Xcode z [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/), a přidejte Apple ID, jak je popsáno na [přidání si účet na XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
+2.  Stáhněte a nainstalujte Xcode z [ https://developer.apple.com/xcode/ ](https://developer.apple.com/xcode/), a přidejte Apple ID, jak je popsáno na [přidání si účet na XCode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 
 3.  Stáhněte a nainstalujte podle pokynů Xamarin [instalace a konfigurace Xamarin.iOS](http://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
 

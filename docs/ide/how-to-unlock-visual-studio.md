@@ -1,23 +1,24 @@
 ---
 title: 'Postupy: odemknout Visual Studio | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 07/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
-caps.latest.revision: "8"
-author: gewarren
-ms.author: gewarren
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 87d937c456b875afa5234b61b57edb21ba32baf6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3bbdab7001ba8724c888b9fc20291ef253f73d4c
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>Postupy: odemknout Visual Studio
 
@@ -69,9 +70,8 @@ Pokud není znovu zadat přihlašovací údaje, token začne přejděte zastaral
 
 ### <a name="update-expired-licenses"></a>Aktualizovat vypršela platnost licence
 
- Pokud vypršela platnost předplatného úplně a již nemáte přístupová práva k sadě Visual Studio, musíte obnovit předplatné nebo přidat jiný účet, který má předplatné. Chcete-li zobrazit další informace o licenci, kterou používáte, přejděte na **soubor**, **nastavení účtu** a prohlédněte si informace o licenci na pravé straně dialogového okna. Pokud máte jiné předplatné přidružený k jinému účtu, tento účet přidejte do **všechny účty** seznamu na levé straně dialogového okna tak, že vyberete **přidat účet...**  odkaz.
+ Pokud vypršela platnost předplatného úplně a již nemáte přístupová práva k sadě Visual Studio, musíte obnovit předplatné nebo přidat jiný účet, který má předplatné. Chcete-li zobrazit další informace o licenci, kterou používáte, přejděte na **soubor**, **nastavení účtu** a prohlédněte si informace o licenci na pravé straně dialogového okna. Pokud máte jiné předplatné přidružený k jinému účtu, tento účet přidejte do **všechny účty** seznamu na levé straně dialogového okna tak, že vyberete **přidat účet...** odkaz.
 
 ## <a name="see-also"></a>Viz také
 
 * [Přihlášení k sadě Visual Studio](../ide/signing-in-to-visual-studio.md)
- 

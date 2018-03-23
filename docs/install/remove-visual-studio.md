@@ -1,12 +1,13 @@
 ---
-title: "Odebrání Visual Studio 2017 | Microsoft Docs"
-description: "Zjistěte, jak odebrat Visual Studio, krok za krokem."
-ms.custom: 
+title: Odebrání Visual Studio 2017 | Microsoft Docs
+description: Zjistěte, jak odebrat Visual Studio, krok za krokem.
+ms.custom: ''
 ms.date: 09/12/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - uninstall
@@ -19,16 +20,17 @@ f1_keywords:
 - clean up Visual Studio
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: heaths
-ms.author: heaths
-manager: erickn
-ms.workload: multiple
-ms.openlocfilehash: a08a24be4f3f9e915a93c9beac7cf5e5c28eb7ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.author: tglee
+manager: ghogen
+ms.workload:
+- multiple
+ms.openlocfilehash: 409a1c83f0acbb32848a46e9df2f7eb2b3750e24
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="remove-visual-studio"></a>Odebrání Visual Studio
+# <a name="remove-visual-studio"></a>Remove Visual Studio
 
 Pokud dojde k závažné chybě a nelze opravit nebo odinstalovat Visual Studio, můžete spustit `InstallCleanup.exe` nástroj pro odebrání instalační soubory a informace o produktu. Spuštění tohoto nástroje je potřeba udělat jako poslední možnost, pokud opravit nebo odinstalovat služeb při selhání a může odinstalovat funkce z jiné instalace sady Visual Studio nebo jiné produkty, které je třeba opravit.
 
@@ -62,6 +64,6 @@ Tady je několik další možnosti podpory:
 
 ## <a name="see-also"></a>Viz také
 * [Nainstalovat Visual Studio 2017](install-visual-studio.md)
-* [Aktualizace Visual Studio 2017](update-visual-studio.md)
+* [Update Visual Studio 2017](update-visual-studio.md)
 * [Upravit Visual Studio 2017](modify-visual-studio.md)
 * [Odinstalace Visual Studio 2017](uninstall-visual-studio.md)

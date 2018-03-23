@@ -1,22 +1,24 @@
 ---
-title: "Instalace nástroje sestavení do kontejneru | Microsoft Docs"
-ms.custom: 
+title: Instalace nástroje sestavení do kontejneru | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 95f9c69ebca7dbdc7e576279b4e1ad3f17d2be25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 95b60369350ad099e53b143ff85adbcef250b8b9
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace nástroje sestavení do kontejneru
 
@@ -54,9 +56,9 @@ Pokud používáte Windows 10, můžete stáhnout a nainstalovat [Docker Communi
 
 Visual Studio nástroje - sestavení a ve větší míře Visual Studio – vyžadovat velké množství místa na disku pro všechny nástroje, které budou instalovány. Přestože v našem příkladu soubor Docker zakážete mezipaměť balíčku, velikost disku kontejner imagí musí skutečnost zohlednit zvýšením požadované místo. Aktuálně v systému Windows, můžete pouze zvýšit velikost disku změnou konfigurace Docker.
 
-**V systému Windows 10**:
+**On Windows 10**:
 
-1. [Rick, klikněte na ikonu Docker pro systém Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na hlavním panelu a klikněte na **nastavení...** .
+1. [Rick, klikněte na ikonu Docker pro systém Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na hlavním panelu a klikněte na **nastavení...**.
 2. [Klikněte na démon](https://docs.docker.com/docker-for-windows/#docker-daemon) části.
 3. [Přepnutí **základní** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) tlačítko pro **Upřesnit**.
 4. Přidejte následující pole JSON vlastnost zvýšit místa na disku pro 120GB (víc než dost pro nástroje sestavení s místo pro růst).
@@ -85,7 +87,7 @@ Visual Studio nástroje - sestavení a ve větší míře Visual Studio – vyž
 
 5. Klikněte na tlačítko **použít**.
 
-**V systému Windows Server 2016**:
+**On Windows Server 2016**:
 
 1. Zastavte službu "docker":
 

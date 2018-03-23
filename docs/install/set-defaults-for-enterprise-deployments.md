@@ -1,11 +1,12 @@
 ---
-title: "Nastavit výchozí hodnoty pro nasazení v podnicích sady Visual Studio | Microsoft Docs"
-description: "Zásady domény a další konfigurace operace pro podnikové nasazení sady Visual Studio."
+title: Nastavit výchozí hodnoty pro nasazení v podnicích sady Visual Studio | Microsoft Docs
+description: Zásady domény a další konfigurace operace pro podnikové nasazení sady Visual Studio.
 ms.date: 05/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - gpo
@@ -15,14 +16,15 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 ms.assetid: 9B7B4608-7A3F-4FF4-BDCE-42D9F7CE6DBA
 author: heaths
-ms.author: heaths
+ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f269e9c719ee685567161fbf8d5edb05b17ea9cd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: cf2d25dad750e9d3ff1010ab65d44bde8518b9b4
+ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Výchozí nastavení pro nasazení v podnicích sady Visual Studio
 
@@ -40,7 +42,7 @@ Existuje několik umístění, kde můžete nastavit výchozí hodnoty enterpris
 
 1. `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup`
 2. `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\Setup`
-3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup`(na 64bitové operační systémy)
+3. `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\VisualStudio\Setup` (na 64bitové operační systémy)
 
 > [!IMPORTANT]
 > Pokud není nastaveno `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\Setup` klíče a místo toho nastavte jednu z jiných klíčů, byste měli nastavit i jiné klíče na 64bitové operační systémy. Tento problém je vyřešen v budoucí aktualizace.
@@ -51,9 +53,9 @@ Můžete nastavit následující hodnoty registru:
 
 | **Jméno** | **Typ** | **Default** | **Popis** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ`nebo`REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Jsou uložené adresáři, kde balíček manifesty a volitelně datové části. Najdete v návodu k [zakázat nebo přesunout do mezipaměti balíček](disable-or-move-the-package-cache.md) Další informace. |
+| `CachePath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Jsou uložené adresáři, kde balíček manifesty a volitelně datové části. Najdete v návodu k [zakázat nebo přesunout do mezipaměti balíček](disable-or-move-the-package-cache.md) Další informace. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Datové části balíčku zachovat i po jejich instalaci. Hodnota můžete kdykoli změnit. Zakázání zásady odebere všechny uložené v mezipaměti balíček datových částí pro instanci opravit nebo změnit. Najdete v návodu k [zakázat nebo přesunout do mezipaměti balíček](disable-or-move-the-package-cache.md) Další informace. |
-| `SharedInstallationPath` | `REG_SZ`nebo`REG_EXPAND_SZ` | % ProgramFiles (x86) %\Microsoft Visual Studio\Shared | Adresář, kde jsou nainstalovány některé balíčky sdílené mezi verzemi instancí sady Visual Studio. Hodnota dají kdykoli měnit, ale mají vliv jenom budoucí nainstaluje. Všechny produkty již nainstalována do původního umístění nesmí být přesunuta, nebo se nemusí správně fungovat. |
+| `SharedInstallationPath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Adresář, kde jsou nainstalovány některé balíčky sdílené mezi verzemi instancí sady Visual Studio. Hodnota dají kdykoli měnit, ale mají vliv jenom budoucí nainstaluje. Všechny produkty již nainstalována do původního umístění nesmí být přesunuta, nebo se nemusí správně fungovat. |
 
 > [!IMPORTANT]
 > Pokud změníte `CachePath` registru zásad po všech instaluje, je nutné přesunout do stávajícího balíčku mezipaměti do nového umístění a ujistěte se, zda je zabezpečená, aby `SYSTEM` a `Administrators` mít úplnou kontrolu a `Everyone` má přístup pro čtení.
