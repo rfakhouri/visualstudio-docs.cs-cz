@@ -1,14 +1,14 @@
 ---
 title: Nainstalovat Visual Studio 2017 | Microsoft Docs
 description: Informace o instalaci sady Visual Studio, krok za krokem.
-ms.custom: 
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.about
 helpviewer_keywords:
@@ -22,11 +22,11 @@ ms.author: tglee
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b37b998347618ea346c3d4e7993d5192c1c82a8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ee1291e2ca304ed770eeee28c4996f68d2d07adb
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-visual-studio-2017"></a>Nainstalovat Visual Studio 2017
 Vítá vás nový způsob instalaci sady Visual Studio! V našem nejnovější verzi jsme provedli jsme je snazší pro vás k výběru a instalaci součástí, které potřebujete. Také jsme jste snížení nároků sady Visual Studio tak, aby nainstaloval rychleji a s menšími dopady na systém než kdy dřív.
@@ -64,9 +64,9 @@ Potom spusťte soubor zaváděcího nástroje nainstalovat Instalační program 
 
 1.  Z vaší **stáhne** složku, klikněte dvakrát na zavaděč, který odpovídá nebo podobný jedné z následujících souborů:
 
-  * **vs_enterprise.exe** pro Visual Studio Enterprise
-  * **vs_professional.exe** pro sadu Visual Studio Professional
-  * **vs_community.exe** pro Visual Studio Community  <br><br>
+  * **vs_enterprise.exe** for Visual Studio Enterprise
+  * **vs_professional.exe** for Visual Studio Professional
+  * **vs_community.exe** for Visual Studio Community  <br><br>
 
   Pokud se zobrazí oznámení o řízení uživatelských účtů, klikněte na tlačítko **Ano**.
 
@@ -141,7 +141,7 @@ Tady je několik další možnosti podpory:
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
-* [Aktualizace Visual Studio 2017](update-visual-studio.md)
+* [Update Visual Studio 2017](update-visual-studio.md)
 * [Upravit Visual Studio 2017](modify-visual-studio.md)
 * [Odinstalace Visual Studio 2017](uninstall-visual-studio.md)
 * [Vytvoření offline instalace Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)

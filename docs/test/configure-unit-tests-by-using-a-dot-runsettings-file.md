@@ -1,5 +1,5 @@
 ---
-title: "Konfigurace testů jednotek v sadě Visual Studio s souboru .runsettings | Microsoft Docs"
+title: Konfigurace testů jednotek v sadě Visual Studio s souboru .runsettings | Microsoft Docs
 ms.date: 02/28/2018
 ms.technology: vs-ide-test
 ms.topic: article
@@ -8,11 +8,11 @@ manager: ghogen
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94bcd0bc473a87246feb3b5e790ed060b615b4be
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 813a2c003923159b6805280ab3a7f5c3c0559f13
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Konfigurace testů jednotek pomocí *.runsettings* souboru
 
@@ -147,7 +147,7 @@ Kolektor dat pokrytí kódu vytvoří protokol uvádějící, které části kó
 
 Kolekce video dat zaznamená obrazovky, zaznamenávání při spuštění testů. Tento záznam je užitečná pro řešení potíží s testy uživatelského rozhraní. Kolekce video dat je k dispozici v **Visual Studio 2017 verze 15,5** a novější.
 
-Chcete-li přizpůsobit jakýkoli jiný typ adaptéru diagnostických dat, musíte použít soubor s nastavením testu.
+Chcete-li přizpůsobit jiný typ adaptéru diagnostických dat, je nutné použít [soubor s nastavením testu](../test/collect-diagnostic-information-using-test-settings.md).
 
 ### <a name="testrunparameters"></a>TestRunParameters
 

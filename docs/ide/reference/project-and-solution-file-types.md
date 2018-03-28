@@ -1,11 +1,11 @@
 ---
-title: "Typy souborů projektu a řešení | Microsoft Docs"
-ms.custom: 
+title: Typy souborů projektu a řešení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - File Properties.CopyToOutputDirectory
@@ -26,12 +26,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d05b7b5f1510777c758998572e78757c47148fa1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d239a5e129f12c4521ba190674d84430f8f2e646
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="project-and-solution-file-types"></a>Typy souborů projektu a řešení
 
@@ -50,7 +51,7 @@ Visual Studio používá dva typy souborů (.sln a .suo) k uložení nastavení 
 
 Projekty mohou obsahovat mnoho typů jiný soubor. Například mít soubory kódu C# **.cs** rozšíření a mít soubory C++ **sada** rozšíření. Prostředky jsou uloženy v **RESX** soubory a XAML v **XAML** soubory. [App.config](../../ide/managing-application-settings-dotnet.md) soubory obsahují informace o aplikaci, která by neměly být obsažené v kódu aplikace&mdash;například připojovací řetězce.
 
-Další informace o typech souborů v projektech C++ najdete v tématu [typy souborů vytvořené pro projekty Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects) a [kódování Unicode v Microsoft Foundation Class Library](/cpp/mfc/unicode-in-mfc)
+Další informace o typech souborů v projektech C++ najdete v tématu [typy souborů vytvořené pro projekty Visual C++](/cpp/ide/file-types-created-for-visual-cpp-projects).
 
 ## <a name="see-also"></a>Viz také
 

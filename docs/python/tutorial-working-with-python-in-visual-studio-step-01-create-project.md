@@ -1,15 +1,15 @@
 ---
-title: "Práce s Python v sadě Visual Studio, krok 1, vytvoření projektu | Microsoft Docs"
-description: "Krok 1 ze základní kurz pro práci s Python v sadě Visual Studio, osnovy celé kurzu, popisuje požadavky a proces vytvoření nového projektu Python s návodem."
-ms.custom: 
+title: Práce s Python v sadě Visual Studio, krok 1, vytvoření projektu | Microsoft Docs
+description: Krok 1 ze základní kurz pro práci s Python v sadě Visual Studio, osnovy celé kurzu, popisuje požadavky a proces vytvoření nového projektu Python s návodem.
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 469494b2c0c4704ac1eab42d36934657adc2313d
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 22588c1e8221375f05b9fb62870662d9aa3d2f5e
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Práce s Python v sadě Visual Studio
 
@@ -71,7 +71,7 @@ V tomto kurzu začnete s Jednoduchý projekt obsahující soubor jeden, prázdn�
 
     (3) v rámci projektu najdete zdrojových souborů, v tomto případě jediným `.py` souboru. V okně vlastností výběr soubor zobrazí jeho vlastnosti. Dvojitým kliknutím soubor otevře v jakémkoli způsob je vhodný pro tento soubor.
 
-    (4) v rámci projektu je také **prostředí Python** uzlu. Pokud rozšiřovat, uvidíte dostupné překladače Python, které jsou k dispozici. Rozbalte uzel překladač zobrazíte knihovny, které jsou nainstalovány do prostředí (5).
+    (4) v rámci projektu je také **prostředí Python** uzlu. Po rozbalení zobrazí překladače Python, které jsou k dispozici. Rozbalte uzel překladač zobrazíte knihovny, které jsou nainstalovány do prostředí (5).
 
     Klikněte pravým tlačítkem na libovolný uzel nebo položky v Průzkumníku řešení pro přístup k nabídce použít příkazy. Například **přejmenovat** příkaz umožňuje změnit název libovolný uzel nebo položky, včetně projektu a řešení.
 
