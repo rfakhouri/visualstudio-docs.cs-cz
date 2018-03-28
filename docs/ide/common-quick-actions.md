@@ -1,11 +1,11 @@
 ---
-title: "Běžné rychlé akce | Microsoft Docs"
-ms.custom: 
+title: Běžné rychlé akce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/30/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 author: kuhlenh
 ms.author: kaseyu
@@ -15,11 +15,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ea7ecb89ed732af828fb4ca26d123d131f6d1918
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e8a0bf2e0dffa4e1cd5793f8cd638623288bbfa8
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="common-quick-actions"></a>Běžné rychlé akce
 
@@ -176,7 +176,7 @@ End Function
 
 ## <a name="actions-that-remove-unnecessary-code"></a>Akce, které odeberte nepotřebné kódu
 
-### <a name="remove-unnecesary-usingsimports"></a>Odeberte zbytečně vysokou úrovní direktiv using nebo importuje
+### <a name="remove-unnecessary-usingsimports"></a>Odebrání nepotřebných direktiv using nebo importuje
 
 **Odeberte nepotřebné direktiv using nebo importuje** rychlé akce odebere všechny nepoužívané `using` a `Import` příkazů pro aktuální soubor.  Když vyberete tuto položku, importy oboru názvů nepoužívané okamžitě odeberou.
 
@@ -239,7 +239,7 @@ public MyMethod()
 | ------- | -------------------- | ----------------  |
 | CS0219, BC42024 | C# a Visual Basic | Visual Studio 2017 verze 15.3 |
 
-### <a name="remove-type-from-default-value-expression"></a>Odebrat typ z **výchozí** hodnota výrazu
+### <a name="remove-type-from-default-value-expression"></a>Odebrání výchozí hodnota výrazu typu
 
 Tato rychlá akce odebere vybraný typ hodnoty z výrazu výchozí hodnotu a používá [výchozí literálu](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference) při kompilátor může odvodit typ výrazu.
 
@@ -475,7 +475,7 @@ private static int thisFieldIsPublic;
 
 ## <a name="code-transformations"></a>Transformace kódu
 
-### <a name="convert-if-construct-to-switch"></a>Převést **Pokud** vytvořit k **přepínače**
+### <a name="convert-if-construct-to-switch"></a>Převést konstrukce 'if', ' přepínat.
 
 Tato rychlá akce lze převést **if potom else** vytvořit na **přepínače** vytvořit.
 
@@ -532,7 +532,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Převést na interpolované řetězce
 
-[Interpolované řetězce](/dotnet/csharp/language-reference/keywords/interpolated-strings) jsou snadný způsob, jak express řetězce s vložené proměnné, podobně jako ** [String.Format](https://msdn.microsoft.com/library/system.string.format.aspx) ** metoda.  Tato akce rychlé rozpozná případech, kdy jsou řetězce zřetězených, nebo pomocí **String.Format**a změny využití interpolované řetězce.
+[Interpolované řetězce](/dotnet/csharp/language-reference/keywords/interpolated-strings) jsou snadný způsob, jak express řetězce s vložené proměnné, podobně jako **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** metoda.  Tato akce rychlé rozpozná případech, kdy jsou řetězce zřetězených, nebo pomocí **String.Format**a změny využití interpolované řetězce.
 
 ```csharp
 // Before
@@ -741,7 +741,7 @@ int fibonacci(int n)
 }
 ```
 
-### <a name="convert-referenceequals-to-is-null"></a>Převést `ReferenceEquals` na`is null`
+### <a name="convert-referenceequals-to-is-null"></a>Převést 'ReferenceEquals' má hodnotu null
 
 |  ID diagnostiky | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |

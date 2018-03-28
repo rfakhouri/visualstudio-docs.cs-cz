@@ -1,26 +1,26 @@
 ---
-title: "Ukázkové projekty pro R nástroje pro sadu Visual Studio | Microsoft Docs"
-description: "Index kolekce ukázky začít pracovat s R a Visual Studio."
-ms.custom: 
+title: Ukázkové projekty pro R nástroje pro sadu Visual Studio | Microsoft Docs
+description: Index kolekce ukázky začít pracovat s R a Visual Studio.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - data-science
-ms.openlocfilehash: f8bf96d4fcfdb29fdaf79fa5adba9b99375aaddd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d09999f8dd0e53dc8ae3ae61537eb182eaeb6d4
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools pro Visual Studio ukázkové projekty
 
@@ -36,11 +36,11 @@ Tato kolekce ukázek získá vám pomohou s R, R nástrojů pro Visual Studio (R
 
 Tato ukázka obsahuje podrobný Úvod do R prostřednictvím rozsáhlé komentáře ve dvou zdrojové soubory. Pro nejlepší prostředí, umístěte kurzor na začátek souboru a stiskněte klávesu Ctrl + Enter k odeslání kódu řádku podle polohu na **R interaktivní** okno. (Řádky, které instalují balíčky může trvat minutu nebo dvě k dokončení.)
 
-- `1-Getting Started with R.R`Popisuje mnoho základy R, včetně použití balíčků, načítání a analýza dat a vykreslení.
+- `1-Getting Started with R.R` Popisuje mnoho základy R, včetně použití balíčků, načítání a analýza dat a vykreslení.
 
     ![Příklad výstupu z 1 – Začínáme s ukázkou R.R](media/samples-getting-started-output.png)
 
-- `2-Introduction to ggplot2.R`představuje grafické balíček ggplot2 známé pro jeho přitažlivé pozemcích a jednoduché syntaxe. Tento příklad vizualizuje zemětřesení data z Fiji.
+- `2-Introduction to ggplot2.R` představuje grafické balíček ggplot2 známé pro jeho přitažlivé pozemcích a jednoduché syntaxe. Tento příklad vizualizuje zemětřesení data z Fiji.
 
     ![Příklad výstupu z 2úvod k ggplot2. Ukázka R](media/samples-ggplot-output.png)
 
@@ -50,25 +50,25 @@ Tato kolekce příklady ukazuje, jak používat R k vytváření modelů machine
 
 Jako s všechny příklady, otevřete soubor, přesuňte kurzor na začátek a poté procházet kód řádek po řádku s Ctrl + Enter. Soubory markdown v každé složky také obsahují další podrobnosti.
 
-- `Benchmarks`Získá počet algebra lineární náročné, paralelní výpočty zobrazíte výkonu, které spouští je možné prostřednictvím Microsoft R otevřené a knihovny pro jádra matematické Intel (MKL). Simulované daty srovnávací testy konkrétně porovnat výpočty matice na jedno vlákno versus dva.
+- `Benchmarks` Získá počet algebra lineární náročné, paralelní výpočty zobrazíte výkonu, které spouští je možné prostřednictvím Microsoft R otevřené a knihovny pro jádra matematické Intel (MKL). Simulované daty srovnávací testy konkrétně porovnat výpočty matice na jedno vlákno versus dva.
 
     ![Příklad srovnávacího testu vykreslení.](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS`Vytvoří model vyžádání předpovědi pro kolo pronájem na základě historických dat sady, používat R Server společnosti Microsoft. 
+- `Bike_Rental_Estimation_with_MRS` Vytvoří model vyžádání předpovědi pro kolo pronájem na základě historických dat sady, používat R Server společnosti Microsoft. 
 
-- `Data_Exploration`obsahuje tři skriptů:
+- `Data_Exploration` obsahuje tři skriptů:
 
-  - `Import Data from URL.R`ukazuje, jak načíst adresa URL identifikuje data do R.
-  - `Import Data from URL to xdf.R`ukazuje, jak načíst adresa URL identifikuje data do Microsoft R Server jako xdf. (Requires MRS.)
-  - `Using ggplot2.R`je rozšířením `A First Look at R/2-Introduction to ggplot2.R` vzorku, s rozsáhlejší prohlídku funkcí na ggplot2 včetně interaktivní 3D vykreslení.
+  - `Import Data from URL.R` ukazuje, jak načíst adresa URL identifikuje data do R.
+  - `Import Data from URL to xdf.R` ukazuje, jak načíst adresa URL identifikuje data do Microsoft R Server jako xdf. (Requires MRS.)
+  - `Using ggplot2.R` je rozšířením `A First Look at R/2-Introduction to ggplot2.R` vzorku, s rozsáhlejší prohlídku funkcí na ggplot2 včetně interaktivní 3D vykreslení.
 
       ![Výstup pomocí ggplot2. Příklad R](media/samples-3d-interactive.png)
 
-- `Datasets`obsahuje tři `.csv` soubory používané Další ukázky
-- `Flight_Delays_Prediction_with_R`a `Flight_Delays_Prediction_with_MRS` ukazuje, jak k předvídání zpoždění letů pomocí machine learning, která, počasí data a historie výkonu na čas a R. 
-- `Machine learning`obsahuje tři ukázky kurzů k předvídání zpoždění letů, ustájení ceny a pronájem kolo. Společně tyto ukázky ukazují použití R a paní skutečných problémů. Budou také ukazují, jak můžete použít několik oblíbených machine learning modely a nasadit jako k webové služby Azure pomocí [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) pracovního prostoru.
+- `Datasets` obsahuje tři `.csv` soubory používané Další ukázky
+- `Flight_Delays_Prediction_with_R` a `Flight_Delays_Prediction_with_MRS` ukazuje, jak k předvídání zpoždění letů pomocí machine learning, která, počasí data a historie výkonu na čas a R. 
+- `Machine learning` obsahuje tři ukázky kurzů k předvídání zpoždění letů, ustájení ceny a pronájem kolo. Společně tyto ukázky ukazují použití R a paní skutečných problémů. Budou také ukazují, jak můžete použít několik oblíbených machine learning modely a nasadit jako k webové služby Azure pomocí [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/) pracovního prostoru.
 
-- `R_MRO_MRS_Comparison`je součástí půl porovnání, které se zobrazuje podobnosti a rozdíly mezi R, Microsoft R otevřete a Microsoft R Server příkazy, syntaxe, konstrukce a výkonu.
+- `R_MRO_MRS_Comparison` je součástí půl porovnání, které se zobrazuje podobnosti a rozdíly mezi R, Microsoft R otevřete a Microsoft R Server příkazy, syntaxe, konstrukce a výkonu.
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-r-server"></a>Co je speciální o Microsoft R otevřete a Microsoft R Server?
 

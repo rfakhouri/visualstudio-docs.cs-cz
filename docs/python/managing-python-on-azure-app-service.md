@@ -1,16 +1,16 @@
 ---
-title: "Instalace jazyka Python překladače a knihovny v Azure App Service | Microsoft Docs"
-description: "Postup instalace překladač Pythonu a knihovny v Azure App Service a konfiguraci webové aplikace správně odkazovat na tento překladač."
-ms.custom: 
+title: Instalace jazyka Python překladače a knihovny v Azure App Service | Microsoft Docs
+description: Postup instalace překladač Pythonu a knihovny v Azure App Service a konfiguraci webové aplikace správně odkazovat na tento překladač.
+ms.custom: ''
 ms.date: 09/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 0f0910459fecb01573b7282137949acbfd5dcb32
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: f48a8040203f50970aa16d511f94222bf1578bb1
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="managing-python-on-azure-app-service"></a>Správa Python v Azure App Service
 
@@ -217,4 +217,4 @@ Místo použití konzole Kudu prostřednictvím portálu Azure, můžete spustit
 
 Informace o příkazech a ověřování najdete v tématu [Kudu dokumentaci](https://github.com/projectkudu/kudu/wiki/REST-API).
 
-Můžete také zjistit pomocí přihlašovacích údajů `az webapp deployment list-publishing-profiles` příkaz prostřednictvím rozhraní příkazového řádku Azure (v tématu [az webapp nasazení](/cli/azure/webapp/deployment?view=azure-cli-latest#az_webapp_deployment_list_publishing_profiles)). Pomocné knihovny pro publikování Kudu příkazy je k dispozici na [Githubu](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+Můžete také zjistit pomocí přihlašovacích údajů `az webapp deployment list-publishing-profiles` příkaz prostřednictvím rozhraní příkazového řádku Azure (v tématu [az webapp nasazení](/cli/azure/webapp/deployment?view=azure-cli-latest#az-webapp-deployment-list-publishing-profiles)). Pomocné knihovny pro publikování Kudu příkazy je k dispozici na [Githubu](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).

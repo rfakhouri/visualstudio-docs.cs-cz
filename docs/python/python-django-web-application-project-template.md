@@ -1,26 +1,26 @@
 ---
-title: "Šablona projektu webového rozhraní Django pro jazyk Python v sadě Visual Studio | Microsoft Docs"
-description: "Přehled šablony sady Visual Studio pro webové aplikace napsané v Pythonu pomocí rozhraní Django."
-ms.custom: 
+title: Šablona projektu webového rozhraní Django pro jazyk Python | Microsoft Docs
+description: Přehled šablony sady Visual Studio pro webové aplikace napsané v Pythonu pomocí rozhraní Django.
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 25a2d92d5d61850f0f4928de437d9040d8953dd2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 941ec5191e440be95d66da983508de36cef6d4fd
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="django-web-project-template"></a>Šablona projektu webového rozhraní Django
 

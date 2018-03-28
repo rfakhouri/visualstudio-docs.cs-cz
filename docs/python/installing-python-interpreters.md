@@ -1,26 +1,26 @@
 ---
-title: "Výběr a instalace překladače Python | Microsoft Docs"
-description: "Úplný seznam překladače Python, které jsou podporovány v sadě Visual Studio s stručné pokyny k vyhledávání jejich instalační programy."
-ms.custom: 
+title: Výběr a instalace překladače Python | Microsoft Docs
+description: Úplný seznam překladače Python, které jsou podporovány v sadě Visual Studio s stručné pokyny k vyhledávání jejich instalační programy.
+ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1bdec69c45cbd6ebb7943ce38853fd2207000a0f
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="installing-python-interpreters"></a>Instalace překladače Python
 
@@ -28,7 +28,7 @@ Ve výchozím nastavení instalaci zatížení vývoj Python ve Visual Studio 20
 
 Můžete také ručně nainstalovat všechny překladače uvedené v následující tabulce mimo instalační program sady Visual Studio. Například pokud jste nainstalovali Anaconda 3 před instalací sady Visual Studio, nemusíte jej znovu nainstalujte pomocí instalačního programu sady Visual Studio.
 
-Pro Visual Studio 2015 a starší je nutné mezi překladače nainstalovat ručně.
+Pro **Visual Studio 2015 a starší**, je nutné ručně nainstalovat jeden z překladače.
 
 Visual Studio (všechny verze) automaticky rozpozná všechny nainstalované překladač Pythonu a jeho prostředí kontrolou registru (následující [období 514 - Python registrace v registru Windows](https://www.python.org/dev/peps/pep-0514/)).
 

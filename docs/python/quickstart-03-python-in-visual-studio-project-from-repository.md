@@ -1,15 +1,15 @@
 ---
-title: "Rychlý start - klonování úložiště Python kódu v sadě Visual Studio | Microsoft Docs"
-description: "Rychle začněte s používáním Pythonu klonováním Python koans úložiště pomocí sady Visual Studio Team Explorer."
-ms.custom: 
-ms.date: 09/25/2017
-ms.reviewer: 
-ms.suite: 
+title: Rychlý start - klonování úložiště Python kódu v sadě Visual Studio | Microsoft Docs
+description: Rychle začněte s používáním Pythonu klonováním Python koans úložiště pomocí sady Visual Studio Team Explorer.
+ms.custom: ''
+ms.date: 03/21/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a7ddd0f7cf24805eef529d08bf0e37b19fc6a8bc
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: ae304db62a9ec17c0fe6359bbd315d628cbd5261
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Rychlý úvod: klonovat úložiště Python kódu v sadě Visual Studio
 
@@ -31,49 +31,51 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 
 2. Spusťte sadu Visual Studio.
 
-3. Vyberte **zobrazení > Team Explorer...**  otevřete **Team Explorer** okno, ve kterém můžete připojit k webu GitHub nebo Visual Studio Team Services, nebo klonovat úložiště.
+3. Vyberte **zobrazení > Team Explorer...**  otevřete **Team Explorer** okno, ve kterém můžete připojit k webu GitHub nebo Visual Studio Team Services, nebo klonovat úložiště. (Pokud se nezobrazí **připojit** stránky uvedená níže, vyberte ikonu moduly na horním panelu nástrojů, které přejdete na této stránce.)
 
     ![Team explorer okno zobrazující Visual Studio Team Services, GitHub a klonování úložiště](media/team-explorer.png)
 
-4. Do pole Adresa URL v části **místní úložiště Git**, zadejte `https://github.com/gregmalcolm/python_koans`, zadejte složku pro klonovaný soubory a vyberte **klon**.
+4. V části **místní úložiště Git**, vyberte **klon** příkaz a potom zadejte `https://github.com/gregmalcolm/python_koans` v poli Adresa URL zadejte složku pro klonovaný soubory a vyberte **klon** tlačítko.
 
     > [!Tip]
-    > Složky, kterou zadáte v Team Explorer je konkrétní složky přijímat klonovaný soubory. Na rozdíl od `git clone` příkazu vytvoříte klon v Team Exploreru nevytvoří automaticky podsložku s názvem úložiště.
+    > Složky, kterou zadáte v Team Explorer je přesný složka přijímat klonovaný soubory. Na rozdíl od `git clone` příkazu vytvoříte klon v Team Exploreru nevytvoří automaticky podsložku s názvem úložiště.
 
-5. Po dokončení klonování dvakrát klikněte na složku úložiště v dolní části Team Explorer a přejděte na řídicí panel úložiště. V části **řešení**, vyberte **nový...** .
+5. Po dokončení klonování se zobrazí název úložiště v **místní úložiště Git** seznamu. Dvakrát klikněte na tento název přejděte na řídicím panelu úložiště v **Team Explorer**.
+
+6. V části **řešení**, vyberte **nový...** .
 
     ![Okno Průzkumníka týmu, vytvoření nového projektu z klonu](media/team-explorer-new-project.png)
 
-6. V **nový projekt** dialog, který se zobrazí, vyberte "Z existující kód Python", zadejte název projektu, nastavte **umístění** do stejné složky jako úložiště a vyberte **OK**. V průvodci, který se zobrazí, vyberte **Dokončit**.
+7. V **nový projekt** dialog, který se zobrazí, přejděte na jazyk Python (nebo vyhledávání v "Python"), vyberte "Z existující kód Python", zadejte název projektu, nastavte **umístění** do stejné složky jako úložiště a vyberte **OK**. V průvodci, který se zobrazí, vyberte **Dokončit**.
 
-7. Vyberte **zobrazení > Průzkumníku řešení** z nabídky.
+8. Vyberte **zobrazení > Průzkumníku řešení** z nabídky.
 
-8. V Průzkumníku řešení rozbalte `python3` uzel, klikněte pravým tlačítkem na `contemplate_koans.py`a vyberte **nastavit jako spouštěcí soubor**. Tento krok informuje soubor, který se má používat při spuštění projektu sady Visual Studio.
+9. V **Průzkumníku řešení**, rozbalte `python3` uzel, klikněte pravým tlačítkem na `contemplate_koans.py`a vyberte **nastavit jako spouštěcí soubor**. Tento krok informuje soubor, který se má používat při spuštění projektu sady Visual Studio.
 
-9. Vyberte **Projekt > vlastnosti** v nabídce vyberte **Obecné** kartě a nastavte **pracovní adresář** na "python3". To je nezbytné, protože ve výchozím nastavení sady Visual Studio nastavuje pracovní adresář na kořenu projektu a nikoli umístění souboru spuštění (`python3\contemplate_koans.py`, který se zobrazí ve vlastnostech projektu). Kód programu hledá soubor `koans.txt` pracovní složku, takže bez změnou této hodnoty se zobrazuje chyba za běhu.
+10. Vyberte **Projekt > Vlastnosti Koans...**  v nabídce vyberte **Obecné** kartě a nastavte **pracovní adresář** na "python3". Tento krok je nezbytný, protože ve výchozím nastavení sady Visual Studio nastavuje pracovní adresář na kořenu projektu a nikoli umístění souboru spuštění (`python3\contemplate_koans.py`, který se zobrazí ve vlastnostech projektu). Kód programu hledá soubor `koans.txt` pracovní složku, takže bez změnou této hodnoty se zobrazuje chyba za běhu.
 
     ![Nastavení pracovní adresář pro projekt Python](media/projects-set-working-directory.png)
 
-10. Stiskněte klávesy Ctrl + F5 nebo vyberte **ladění > Spustit bez ladění** ke spuštění programu. Pokud se zobrazí `FileNotFoundError` pro `koans.txt`, znovu zkontrolujte pracovní adresář nastavení v předchozím kroku.
+11. Stiskněte klávesy Ctrl + F5 nebo vyberte **ladění > Spustit bez ladění** ke spuštění programu. Pokud se zobrazí `FileNotFoundError` pro `koans.txt`, zkontrolujte pracovní adresář nastavení popsané v předchozím kroku.
 
-11. Když se program spouští úspěšně, zobrazí chybu kontrolní výraz na řádku 17 `python3/koans/about_asserts.py`. To je úmyslné: program navrženy tak, aby Python tak, že jste opravte všechny chyby záměrné. (Další informace najdete na [Ruby Koans](http://rubykoans.com/), které daly podnět Python Koans.)
+12. Když se program spouští úspěšně, zobrazí chybu kontrolní výraz na řádku 17 `python3/koans/about_asserts.py`. To je úmyslné: program navrženy tak, aby Python tak, že jste opravte všechny chyby záměrné. (Další informace najdete na [Ruby Koans](http://rubykoans.com/), které daly podnět Python Koans.)
 
     ![První výstup z programu koans Python](media/koans-output.png)
 
-12. Otevřete `python3/koans/about_asserts.py` tak, že přejdete k němu v Průzkumníku řešení a dvojitým kliknutím na soubor. Všimněte si, že čísla řádků se nezobrazí ve výchozím nastavení v editoru. Chcete-li toto nastavení změnit, vyberte **nástroje > Možnosti**, vyberte **zobrazit všechna nastavení** v dolní části dialogového okna, pak přejděte do **textový Editor > Python > Obecné** a vyberte **Čísla řádků**:
+13. Otevřete `python3/koans/about_asserts.py` tak, že přejdete k němu v Průzkumníku řešení a dvojitým kliknutím na soubor. Všimněte si, že čísla řádků se nezobrazí ve výchozím nastavení v editoru. Chcete-li toto nastavení změnit, vyberte **nástroje > Možnosti**, vyberte **zobrazit všechna nastavení** v dolní části dialogového okna, pak přejděte do **textový Editor > Python > Obecné** a vyberte **Čísla řádků**:
 
     ![Zapnutí číslo řádku pro soubory Python](media/options-general-line-numbers.png)
 
-13. Opravte chybu tak, že změníte `False` argument na řádek 17 `True`. Na řádku, vypadat takto:
+14. Opravte chybu tak, že změníte `False` argument na řádek 17 `True`. Na řádku, vypadat takto:
 
     ```python
     self.assertTrue(True) # This should be True
     ```
 
-14. Spusťte program zjistíte, že první kontrola předá a program se zastaví v další koan. Pokračujte, opravte chyby a opětovné spuštění programu, jak chcete.
+15. Spusťte program znovu. Pokud Visual Studio zobrazí upozornění o chybách, odpoví **Ano** pokračovat v provozu kód. Pak uvidíte, že předá první kontrola a program se zastaví v další koan. Pokračovat, opravte chyby a program znovu tak, jak chcete.
 
 > [!Important]
-> Ve tento rychlý start, kterou jste vytvořili přímé klon *python_koans* úložišti na Githubu. Takové úložiště je chráněný autorem z přímé změny, takže pokus o potvrzení změn do úložiště se nezdaří. V praxi vývojáři místo rozvětvit úložiště k tomuto účtu GitHub, ujistěte se, že změny a vytvořte žádosti o přijetí změn se odeslat tyto změny do původní úložiště. Tyto kroky jsou popsané v [kurzu kroku 6 – práce s Gitem](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md).
+> Ve tento rychlý start, kterou jste vytvořili přímé klon *python_koans* úložišti na Githubu. Takové úložiště je chráněný autorem z přímé změny, takže pokus o potvrzení změn do úložiště se nezdaří. V praxi vývojáři místo rozvětvit úložiště k tomuto účtu GitHub, ujistěte se, že změny a vytvořte žádosti o přijetí změn se odeslat tyto změny do původní úložiště. Až budete mít vlastní rozvětvení, použijte místo původní adresu URL úložiště použít dříve jeho adresu URL.
 
 ## <a name="next-steps"></a>Další kroky
 

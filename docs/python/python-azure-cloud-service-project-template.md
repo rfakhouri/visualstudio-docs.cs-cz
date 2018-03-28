@@ -1,16 +1,16 @@
 ---
-title: "Šablona projektu Azure cloud service pro jazyk Python v sadě Visual Studio | Microsoft Docs"
-description: "Přehled šablony sady Visual Studio pro cloudové služby Azure napsané v Pythonu včetně nasazení role, závislosti a řešení potíží."
-ms.custom: 
+title: Šablona projektu Azure cloud service pro jazyk Python | Microsoft Docs
+description: Přehled šablony sady Visual Studio pro cloudové služby Azure napsané v Pythonu včetně nasazení role, závislosti a řešení potíží.
+ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
@@ -18,17 +18,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e2c2fffddba8746ff2f5696a1eaccf701b83f314
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: b8e12d8823d3246da7c607ca63c056d1927b97d0
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro jazyk Python
 
 Visual Studio poskytuje šablony vám pomohou začít vytvářet Azure Cloud Services používá Python.
 
-A [Cloudová služba](http://go.microsoft.com/fwlink/?LinkId=306052) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každá provádí koncepčně samostatná úloha, ale můžete samostatně replikaci Visual počítače podle potřeby pro škálování. Webové role poskytují hostování pro front-end webové aplikace. Python jsou obavy, všechny webové rozhraní, které podporuje WSGI můžete použít pro zapsání takové aplikace (podporuje [šablona projektu webové](python-web-application-project-templates.md)). Role pracovního procesu jsou určeny k dlouho běžící procesy, které není komunikovat přímo s uživateli. Obvykle provádění použití [data](http://go.microsoft.com/fwlink/?LinkId=401571) a [služby app service](http://go.microsoft.com/fwlink/?LinkId=401572) knihovny, které mohou být nainstalovány s [ `pip install azure` ](http://pypi.org/project/azure).
+A [Cloudová služba](http://go.microsoft.com/fwlink/?LinkId=306052) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každá provádí koncepčně samostatná úloha, ale můžete samostatně replikaci podle potřeby pro škálování virtuálních počítačů. Webové role poskytují hostování pro front-end webové aplikace. Python jsou obavy, všechny webové rozhraní, které podporuje WSGI můžete použít pro zapsání takové aplikace (podporuje [šablona projektu webové](python-web-application-project-templates.md)). Role pracovního procesu jsou určeny k dlouho běžící procesy, které není komunikovat přímo s uživateli. Obvykle provádění použití [data](http://go.microsoft.com/fwlink/?LinkId=401571) a [služby app service](http://go.microsoft.com/fwlink/?LinkId=401572) knihovny, které mohou být nainstalovány s [ `pip install azure` ](http://pypi.org/project/azure).
 
 Tento článek obsahuje podrobné informace o šabloně projektů a další podporu Visual Studio 2017 (starší verze jsou podobné, ale některé rozdíly). Další informace o práci s Azure z Python, přejděte [Azure střediska pro vývojáře Python](http://go.microsoft.com/fwlink/?linkid=254360).
 

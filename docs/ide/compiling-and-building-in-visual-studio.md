@@ -1,26 +1,28 @@
 ---
-title: "Kompilaci a sestavování v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Kompilaci a sestavování v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: "28"
+caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 29101e8e82fa9babf553be17414f1330cd6f7e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: d8ae644ee96bdad6520661414d101eede86cf180
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Kompilaci a sestavování v sadě Visual Studio
 
@@ -42,7 +44,7 @@ Dokumentaci v této části přejde na další informace o procesu sestavení na
 
 ## <a name="overview-of-building-from-the-ide"></a>Přehled vytváření z prostředí IDE  
 
-Při vytváření projektu sady Visual Studio vytvoří výchozí konfigurace sestavení projektu a řešení, které obsahuje projektu.  Tyto konfigurace definovat, jak jsou vytvořené a nasazené řešení a projekty. Konfigurace projektu zejména jsou jedinečné pro cílové platformy (například Windows pr Linux) a vytvořit typ (například ladění nebo verze). Můžete upravit tyto konfigurace však a můžete také vytvořit vlastní konfigurace, podle potřeby.
+Při vytváření projektu sady Visual Studio vytvoří výchozí konfigurace sestavení projektu a řešení, které obsahuje projektu.  Tyto konfigurace definovat, jak jsou vytvořené a nasazené řešení a projekty. Konfigurace projektu zejména jsou jedinečné pro cílové platformy (například Windows nebo Linux) a vytvořit typ (například ladění nebo verze). Můžete upravit tyto konfigurace však a můžete také vytvořit vlastní konfigurace, podle potřeby.
 
 První Úvod do vytváření v prostředí IDE, najdete v části [návod: vytváření aplikace](walkthrough-building-an-application.md).  
 
@@ -58,4 +60,4 @@ Odtud můžete prozkoumat celou řadu dalších úloh:
   
 ## <a name="see-also"></a>Viz také  
 
-- [Vytvoření (kompilace) webové projekty](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
+- [Vytvoření (kompilace) projektů webu](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   

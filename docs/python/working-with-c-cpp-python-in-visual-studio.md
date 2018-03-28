@@ -1,28 +1,28 @@
 ---
-title: "Práce s C++ a Python v sadě Visual Studio | Microsoft Docs"
-description: "Kroky amd zpracování napsat modul nebo rozšíření C++ pro Python v sadě Visual Studio"
-ms.custom: 
+title: Práce s C++ a Python | Microsoft Docs
+description: Kroky amd zpracování napsat modul nebo rozšíření C++ pro Python v sadě Visual Studio
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: tutorial
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b2f570a75be94c3bff4b38a6d0641e3ecbce2f2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 12309747949e9f541c69fad64584e86627252907
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="creating-a-c-extension-for-python"></a>Vytváření rozšíření pro C++ pro jazyk Python
 
@@ -50,6 +50,8 @@ Další informace najdete v tématu [instalaci podpory jazyka Python pro Visual 
 ## <a name="create-the-python-application"></a>Vytvoření aplikace Python
 
 1. Vytvořte nový projekt Python v sadě Visual Studio výběrem **soubor > Nový > projekt**. Vyhledejte "Python", vyberte **aplikace Python** šablony, poskytněte vhodný název a umístění a vyberte **OK**.
+
+1. Práce s C++ vyžaduje použití překladač Pythonu 32-bit (Python 3.6 doporučené). V **Průzkumníku řešení** okno sady Visual Studio, rozbalte uzel projektu a potom rozbalte položku **prostředí Python** uzlu. Pokud nevidíte 32-bit prostředí jako výchozí (buď v tučné a s popiskem "globální výchozí"), postupujte podle pokynů [výběr prostředí Python pro projekt](selecting-a-python-environment-for-a-project.md). Pokud nemáte k dispozici 32bitová verze překladač, nainstalovat, přečtěte si téma [instalaci Python překladače](installing-python-interpreters.md).
 
 1. V projektu `.py` souboru, vložte následující kód, který benchmarks výpočet hyperbolický tangens (implementována bez použití knihovny math pro snazší porovnání). Můžete zadat kód ručně, aby některé z prostředí [Python úpravy funkce](editing-python-code-in-visual-studio.md).
 
@@ -208,7 +210,7 @@ Chcete-li C++ DLL do rozšíření pro jazyk Python, nejdřív změnit exportova
     };
     ```
 
-1. Přidejte metodu, která volá Python, pokud ho načte modul, který musí mít název `PyInit_<module-name>`, kde  *&lt;module_name&gt;*  přesně odpovídá projektu C++ **Obecné > název cílové** vlastnost (to znamená, odpovídá název souboru `.pyd` sestavený projektem).
+1. Přidejte metodu, která volá Python, pokud ho načte modul, který musí mít název `PyInit_<module-name>`, kde *&lt;module_name&gt;* přesně odpovídá projektu C++ **Obecné > název cílové** vlastnost (to znamená, odpovídá název souboru `.pyd` sestavený projektem).
 
     ```cpp
     PyMODINIT_FUNC PyInit_superfastcode() {

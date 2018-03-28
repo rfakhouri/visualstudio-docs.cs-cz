@@ -1,11 +1,11 @@
 ---
-title: "Osvědčené postupy pro používání fragmentů kódu | Microsoft Docs"
-ms.custom: 
+title: Osvědčené postupy pro používání fragmentů kódu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 31951001512578446c4a3ab05efe3ade99223068
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6d5ac19f3caa795fc309b77d0845db0d412e1ccb
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Osvědčené postupy pro používání fragmentů kódu
 
@@ -33,7 +33,7 @@ Obvykle fragment kódu Try... Catch – bloky catch a opětovné všechny výjim
 
 Pokud se vaše aplikace přizpůsobit umístění souborů, musí si myslíte o následující:
 
-- Hledání na dostupném místě. Uživatelé nemusí mít přístup ke složce Program Files počítače, tak ukládání souborů s souborů aplikace nemusí fungovat.
+- Hledání na dostupném místě. Uživatelé nemusí mít přístup k *Program Files* počítače, takže ukládání souborů s aplikací soubory pravděpodobně není pracovní složky.
 
 - Hledání v zabezpečeném umístění. Ukládání souborů v kořenové složce (*C:\\*) není zabezpečený. Pro data aplikací, doporučujeme, abyste *Data aplikací* složky. Pro jednotlivé uživatele data, aplikace můžete vytvořit soubor pro každého uživatele v *dokumenty* složky.
 
@@ -73,6 +73,6 @@ Nainstalovat Visual Studio IntelliSense – fragmenty kódu nejsou v samotných 
 
 ## <a name="see-also"></a>Viz také
 
-[Fragmenty kódu technologie IntelliSense v jazyce Visual Basic](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
-[Zabezpečování aplikací](../ide/securing-applications.md)  
+[Visual Basic IntelliSense – fragmenty kódu](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)  
+[Zabezpečení aplikací](../ide/securing-applications.md)  
 [Fragmenty kódu](../ide/code-snippets.md)

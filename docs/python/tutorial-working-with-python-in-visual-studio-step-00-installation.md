@@ -1,15 +1,15 @@
 ---
-title: "Práce s Python v sadě Visual Studio, krok 0, instalace | Microsoft Docs"
-description: "Krok 0 (požadavky) základní kurz pro práci s Pythonem v sadě Visual Studio, který po sobě zakrývá instalaci podpory jazyka Python v sadě Visual Studio."
-ms.custom: 
+title: Práce s Python, krok 0, instalace | Microsoft Docs
+description: Krok 0 (požadavky) základní kurz pro práci s Pythonem v sadě Visual Studio, který po sobě zakrývá instalaci podpory jazyka Python v sadě Visual Studio.
+ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 30e3341db1543690d39f5144ed67894b1fb65c4d
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: af6bfa2e1739e60e6c0a5eca625f358b528ebd85
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="install-python-support-in-visual-studio"></a>Instalace podpory Python v sadě Visual Studio
 

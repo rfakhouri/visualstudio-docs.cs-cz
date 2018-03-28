@@ -1,28 +1,28 @@
 ---
-title: "Ladění ve smíšeném režimu pro jazyk Python v sadě Visual Studio | Microsoft Docs"
-description: "Postup ladění současně C++ a Python v sadě Visual Studio, včetně krokování mezi prostředí, zobrazení hodnoty a evaluting výrazy."
-ms.custom: 
+title: Ladění ve smíšeném režimu pro jazyk Python | Microsoft Docs
+description: Postup ladění současně C++ a Python v sadě Visual Studio, včetně krokování mezi prostředí, zobrazení hodnoty a evaluting výrazy.
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
 - C++
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33e4d15e9d0de5c3aa35354dd1c8840d0ed9bd2
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 4f555e24c1328a4d784e3f8c5b2d0f1a7c590f8b
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="debugging-python-and-c-together"></a>Společně ladění Python a C++
 
@@ -66,7 +66,7 @@ Funkce ladění ve smíšeném režimu patří, jak je popsáno v tomto článku
 
 1. Když začnete ladění ve smíšeném režimu poprvé, může se zobrazit **Python symboly požadované** dialogové okno (najdete v části [symboly pro ladění ve smíšeném režimu](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Musíte nainstalovat jenom jednou symboly pro jakékoli dané prostředí Python. Symboly jsou automaticky zahrnuty, pokud instalujete podporu Python prostřednictvím Visual Studio 2017 Instalační služby.
 
-1. Zkontrolujte zdrojový kód pro standardní Python, sám o sobě dostupný při ladění, navštivte [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), stáhněte archivu vhodné pro vaši verzi a rozbalte ho do složky. Budete pak bodu aplikace Visual Studio pro konkrétní soubory v této složce v ať bod výzvu.
+1. Zkontrolujte zdrojový kód pro standardní Python, sám o sobě dostupný při ladění, navštivte [ https://www.python.org/downloads/source/ ](https://www.python.org/downloads/source/), stáhněte archivu vhodné pro vaši verzi a rozbalte ho do složky. Budete pak bodu aplikace Visual Studio pro konkrétní soubory v této složce v ať bod výzvu.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Povolit ladění ve smíšeném režimu v projektu C/C++
 

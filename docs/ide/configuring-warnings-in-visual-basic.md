@@ -1,32 +1,34 @@
 ---
-title: "Konfigurace upozornění v jazyce Visual Basic | Microsoft Docs"
-ms.custom: 
+title: Konfigurace upozornění v jazyce Visual Basic | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: "35"
+caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurace upozornění v jazyce Visual Basic
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilátoru zahrnuje sadu upozornění na kód, který může způsobit chyby spuštění. Tyto informace můžete použít k zápisu čisticí, rychlejší a lepší kódu s menším počtem chyb. Například bude kompilátor vytvořit upozornění, když se uživatel pokusí o volají člena nepřiřazené objektové proměnné, vrátit z funkce bez nastavení návratovou hodnotu, nebo spuštění `Try` bloku s chybami v logika pro zachycení výjimky.  
   
- Někdy kompilátor poskytuje další logiku jménem uživatele, aby se uživatel může soustředit na na prováděné úloze, nikoli na předvídání možných chyb. V předchozích verzích [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `Option Strict` byla použita k omezení další logiku, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] poskytuje kompilátoru. Konfigurace upozornění umožňuje omezit tuto logiku podrobnější způsobem na úrovni jednotlivých upozornění.  
+ Někdy kompilátor poskytuje další logiku jménem uživatele, aby se uživatel může soustředit na na prováděné úloze, nikoli na předvídání možných chyb. V předchozích verzích [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], **možnost striktní** byla použita k omezení další logiku, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] poskytuje kompilátoru. Konfigurace upozornění umožňuje omezit tuto logiku podrobnější způsobem na úrovni jednotlivých upozornění.  
   
  Můžete přizpůsobit projektu a vypnout některé upozornění není vztahujících se k aplikaci při vypnutí některé upozornění na chyby. Tato stránka vysvětluje, jak zapnout jednotlivých upozornění zapnout a vypnout.  
   
@@ -70,22 +72,22 @@ ms.lasthandoff: 12/22/2017
   
  ID: 42016  
   
-### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Pozdní vazba volání metody a upozornění rozlišení přetížení  
+### <a name="late-bound-method-invocation-and-overload-resolution-warning"></a>Rozpoznání s pozdní vázán volání metody a přetížení řešení upozornění  
  Vygenerovaný pro instance dynamické vazby. Výchozí pro nové projekty je vypnutý.  
   
  ID: 42017  
   
-### <a name="operands-of-type-object-warnings"></a>Operandy typu objektu upozornění  
- Generuje při operandy typu `Object` dojít k chybě, by vytvořit `Option Strict On`. Výchozí pro nové projekty je zapnuto.  
+### <a name="operands-of-type-object-warnings"></a>Operandy typu upozornění, objektu.  
+ Generuje při operandy typu `Object` dojít k chybě, by vytvořit **možnost striktní na**. Výchozí pro nové projekty je zapnuto.  
   
  ID: 42018 a 42019  
   
 ### <a name="declarations-require-as-clause-warnings"></a>Deklarace vyžadovat jako upozornění – klauzule  
- Vygeneruje, když proměnné, funkce nebo postrádá vlastnost deklarace `As` klauzule by vytvořila chybu s `Option Strict On`. Proměnné, které nemají typ přiřazenou jsou považovány za typ `Object`. Výchozí pro nové projekty je zapnuto.  
+ Vygeneruje, když proměnné, funkce nebo postrádá vlastnost deklarace `As` klauzule by vytvořila chybu s **možnost striktní na**. Proměnné, které nemají typ přiřazenou jsou považovány za typ `Object`. Výchozí pro nové projekty je zapnuto.  
   
  ID: 42020 (deklarace proměnných), 42021 (deklarace funkcí) a 42022 (deklarace vlastnosti).  
   
-### <a name="possible-null-reference-exception-warnings"></a>Upozornění výjimka možné odkazu s hodnotou Null  
+### <a name="possible-null-reference-exception-warnings"></a>Upozornění výjimka možné odkazu s hodnotou null  
  Generuje při předtím, než byl přiřazen hodnotu proměnné. Výchozí pro nové projekty je zapnuto.  
   
  ID: 42104, 42030  
@@ -95,17 +97,17 @@ ms.lasthandoff: 12/22/2017
   
  ID: 42024  
   
-### <a name="access-of-shared-member-through-instance-variable-warning"></a>Přístup sdíleného člena prostřednictvím Instance upozornění pro proměnné  
+### <a name="access-of-shared-member-through-instance-variable-warning"></a>Přístup sdíleného člena prostřednictvím instance upozornění pro proměnné  
  Generuje při přístupu k sdíleného člena prostřednictvím instance může mít vedlejší účinky, nebo když přístup sdíleného člena prostřednictvím instance proměnné není pravé straně výrazu nebo je předáván jako parametr. Výchozí pro nové projekty je zapnuto.  
   
  ID: 42025  
   
-### <a name="recursive-operator-or-property-access-warnings"></a>Rekurzivní operátor nebo upozornění pro vlastnosti  
+### <a name="recursive-operator-or-property-access-warnings"></a>Rekurzivní operátor nebo vlastnost přístup upozornění  
  Generovány, pokud text rutinu, která používá stejnou operátor nebo vlastnost, kterou je definována v. Výchozí pro nové projekty je zapnuto.  
   
  ID: 42004 (operátor), 42026 (vlastnost)  
   
-### <a name="function-or-operator-without-return-value-warning"></a>Funkce nebo operátor bez upozornění návratová hodnota  
+### <a name="function-or-operator-without-return-value-warning"></a>Funkce nebo operátor bez vrátit hodnotu upozornění  
  Generovány, pokud funkce nebo operátor nemá návratovou hodnotu zadat. To zahrnuje vynechání `Set` implicitní místní proměnné se stejným názvem jako funkce. Výchozí pro nové projekty je zapnuto.  
   
  ID: 42105 (funkce), 42016 (operátor)  
@@ -115,7 +117,7 @@ ms.lasthandoff: 12/22/2017
   
  ID: 42028  
   
-### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Duplicitní nebo překrývající se Catch – bloky upozornění  
+### <a name="duplicate-or-overlapping-catch-blocks-warnings"></a>Duplicitní nebo překrývající se catch – bloky upozornění  
  Vygeneruje, když `Catch` bloku je přístupný z důvodu jeho vztahu k jiné `Catch` bloky, které byly definovány. Výchozí pro nové projekty je zapnuto.  
   
  ID: 42029, 42031  
@@ -123,7 +125,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="see-also"></a>Viz také  
  [Typy chyb](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [Try... Catch... Finally – příkaz](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
- [/ nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
- [/ warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
+ [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
+ [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
  [Stránka kompilovat, Návrhář projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Upozornění kompilátoru, která jsou ve výchozím natavení vypnutá](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
+ [Upozornění kompilátoru, která jsou ve výchozím nastavení vypnuté](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)
