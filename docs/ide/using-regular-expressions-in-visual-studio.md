@@ -1,12 +1,8 @@
 ---
-title: "Používání regulárních výrazů v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Používání regulárních výrazů v sadě Visual Studio | Microsoft Docs
+ms.custom: 03/26/2018
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -21,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 43d566472a71b19ba9588a4564724d1ec8f5d933
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
-ms.translationtype: MT
+ms.openlocfilehash: cd7da9b9993f2a3ae2d1eb94cad18e99f5281fde
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>Používání regulárních výrazů v sadě Visual Studio
 
@@ -33,7 +29,9 @@ Visual Studio použije [regulární výrazy rozhraní .NET Framework](/dotnet/st
 
 ## <a name="replacement-patterns"></a>Vzory pro nahrazování
 
-Informace o regulárních výrazech, které se používají v vzory pro nahrazování najdete v tématu [nahrazení v regulárních výrazech (Průvodce .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions). Chcete-li použít skupinu číslovaných zachycení, syntaxe je `$1` k určení číslem skupiny, a `(x)` k určení dané skupiny. Například seskupené regulární výraz `(\d)([a-z])` najde čtyři odpovídá v následující řetězec: **1a 2b 3c 4d**. Náhradní řetězec `z$1` převede tento řetězec k **z1 z2 z3 z4**.
+Chcete-li použít skupinu číslovaných zachycení, uzavřete skupiny v závorkách v regulární výraz. Použití `$number`, kde `number` je celé číslo od 1, zadat konkrétní, číslem skupiny vzorek pro nahrazení. Například seskupené regulární výraz `(\d)([a-z])` definuje dvě skupiny: první skupinu jednu číslici desítkové soustavy a druhé skupině obsahuje jeden znak mezi **a** a **z**. Výraz najde čtyři odpovídá v následující řetězec: **1a 2b 3c 4d**. Náhradní řetězec `z$1` odkazuje na první skupinu pouze a převede řetězec na **z1 z2 z3 z4**.
+
+Informace o regulárních výrazech, které se používají v vzory pro nahrazování najdete v tématu [nahrazení v regulárních výrazech (Průvodce .NET)](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
 ## <a name="regular-expression-examples"></a>Příklady regulárních výrazů
 
@@ -52,7 +50,7 @@ Následuje několik příkladů:
 |Ukotvení shodu řetězce na konec řádku|\r?$|`End\r?$` odpovídá "end" pouze když zobrazí se na konci řádku.|
 |Nahradit libovolný znak v sadě|[abc]|`b[abc]` odpovídá "ba", "bb" a "bc".|
 |Porovná libovolný znak v rozsah znaků|[a-f]|`be[n-t]` odpovídá "tipu" v "mezi", "ben" v "pod" a "bes" v "vedle", ale ne "níže".|
-|Zaznamenání a implicitně číslo výraz obsažené v závorky|()|`([a-z])X\1` odpovídá "aXa" a "bXb", ale ne "aXb". ". "\1" odkazuje na první skupinu výraz "[a-z]".|
+|Zaznamenání a implicitně číslo výraz obsažené v závorky|()|`([a-z])X\1` odpovídá "aXa" a "bXb", ale ne "aXb". "\1" odkazuje na první skupinu výraz "[a-z]".|
 |Zrušení platnosti shody|(?!abc)|`real (?!ity)` odpovídá "Skutečná" v "nemovitosti" a "skutečně", ale ne v "skutečností." Vyhledá také druhý "reálné" (ale ne první "skutečné") v "realityreal".|
 |Porovná libovolný znak, který není v dané sadě znaků|[^abc]|`be[^n-t]` odpovídá "bef" v "před", "Bá" v "za" a "bel" v "níže", ale ne "pod".|
 |Odpovídat výrazu před nebo po symbol jeden.|&#124;|`(sponge&#124;mud) bath` odpovídá "houba lázně" a "bláta lázeň."|

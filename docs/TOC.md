@@ -1,6 +1,5 @@
 # [Dokumentace k Visual Studiu](ide/index.md)
 # [Přehled](ide/visual-studio-ide.md)
-## [Co je nového](ide/whats-new-in-visual-studio.md)
 # Instalace
 ## [Instalace sady Visual Studio](install/install-visual-studio.md)
 ## [Přihlášení k sadě Visual Studio](ide/signing-in-to-visual-studio.md)
@@ -449,6 +448,17 @@
 ### [Instalace řešení Dotfuscator CE](ide/dotfuscator/install.md)
 ### [Upgrade řešení Dotfuscator CE](ide/dotfuscator/upgrades.md)
 # Prostředky
+## [Co je nového](ide/whats-new-in-visual-studio.md)
+## Zpráva k vydání verze a požadavky na systém
+### [Aktuální zpráva k vydání verze](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
+### [Zpráva k vydání verze Preview](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default)
+### [Historie zpráv k vydání verzí](/visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default)
+### [Frekvence vydávání nových verzí](/visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default)
+### [Požadavky na systém](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+### [Kompatibilita platforem](/visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default)
+### [Licencování](https://www.visualstudio.com/license-terms/)
+### [Distribuovatelný kód](/visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default)
+### [Životní cyklus podpory a aktualizace](/visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default)
 ## [Postup ohlášení problému se sadou Visual Studio](ide/how-to-report-a-problem-with-visual-studio-2017.md)
 ## [Prostředky pro odstraňování chyb integrovaného vývojové prostředí (IDE)](ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)
 ## [Kontaktujte nás](ide/talk-to-us.md)

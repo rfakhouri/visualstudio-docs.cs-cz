@@ -1,11 +1,12 @@
 ---
-title: "Návod: Ladění paralelní aplikace | Microsoft Docs"
+title: 'Návod: Ladění paralelní aplikace | Microsoft Docs'
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.date: 03/22/2018
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -21,16 +22,17 @@ helpviewer_keywords:
 - parallel applications, debugging [Visual Basic]
 - parallel applications, debugging [C#]
 ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
-caps.latest.revision: "28"
+caps.latest.revision: ''
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b05192c2d57c280cef970d4b8887ff7eadbb27b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: af74685428f15cebdcaf0992ae3ad529f2dd41b8
+ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>Návod: Ladění paralelní aplikace v sadě Visual Studio
 Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní zásobníky** windows k ladění paralelní aplikace. Tyto windows vám pomůžou pochopit a ověřit modul runtime chování kód, který používá [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) nebo [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime). Tento názorný postup obsahuje ukázkový kód, který má integrovanou zarážky. Po kód dělí, Průvodce ukazuje způsob použití **paralelních úloh** a **paralelní zásobníky** windows a zkontrolujte ji.  
@@ -103,13 +105,11 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
      ![Zobrazení v okně paralelní zásobníky vláken](../debugger/media/pdb_walkthrough_1.png "PDB_Walkthrough_1")  
   
-     Zásobník volání hlavní vlákno, zobrazí se v jedné a zásobníky volání pro jiné čtyři vlákna jsou seskupené v jiné pole. Čtyři vláken jsou seskupeny dohromady, protože jejich rámce zásobníku sdílet stejnou metodu kontexty; To znamená, že jsou ve stejné metody: `A`, `B`, a `C`. K zobrazení ID vlákna a názvy vláken, které sdílejí stejné pole, najeďte myší na záhlaví (**4 vláken**). Zobrazí se aktuální vlákno v bold, jak je znázorněno na následujícím obrázku.  
+     Zásobník volání hlavní vlákno, zobrazí se v jedné a zásobníky volání pro jiné čtyři vlákna jsou seskupené v jiné pole. Čtyři vláken jsou seskupeny dohromady, protože jejich rámce zásobníku sdílet stejnou metodu kontexty; To znamená, že jsou ve stejné metody: `A`, `B`, a `C`. K zobrazení ID vlákna a názvy vláken, které sdílejí stejné pole, najeďte myší do tohoto pole hlavičky (**4 vláken**). Aktuální vlákno je zobrazená tučným písmem.  
   
      ![Popisek, který ukazuje názvy a ID vlákna](../debugger/media/pdb_walkthrough_1a.png "PDB_Walkthrough_1A")  
   
-     Žlutá šipka označuje active zásobníku aktuálního vlákna. Chcete-li získat další informace, při přechodu  
-  
-     ![Popis tlačítka na rámec zásobníku active](../debugger/media/pdb_walkthrough_1b.png "PDB_Walkthrough_1B")  
+     Žlutá šipka označuje active zásobníku aktuálního vlákna.
   
      Můžete nastavit, kolik podrobností o zobrazíte pro rámce zásobníku (**názvy modulů**, **typy parametrů**, **názvy parametrů**, **hodnoty parametrů**, **Čísla řádků** a **posun bajtů**) kliknutím pravým tlačítkem myši v **zásobníkem volání** okno.  
   
@@ -127,7 +127,7 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
      Můžete ukazatel myši přesunete pole záhlaví, například **1 vlákno** nebo **2 vláknech**, zobrazíte vlákno ID vláken. Pozastavte ukazatel myši nad rámec zásobníku zobrazíte vlákno ID plus další podrobnosti rámce. Modré zvýraznění označuje aktuální vlákno a žlutá šipka označuje active zásobníku aktuálního vlákna.  
   
-     Ikona hadřík vláken (překrývající se modré a červené waved řádky) označují rámce zásobníku active fixní vláken. V **zásobníkem volání** okna, klikněte dvakrát na S.B přepnout rámce. **Paralelní zásobníky** okno označuje aktuální rámec zásobníku aktuálního vlákna pomocí ikony zelenou zakřivenou šipkou.  
+     Ikona hadřík vláken (interweaved řádky) znamenat rámce zásobníku active fixní vláken. V **zásobníkem volání** okna, klikněte dvakrát na S.B přepnout rámce. **Paralelní zásobníky** okno označuje aktuální rámec zásobníku aktuálního vlákna pomocí ikony zelenou zakřivenou šipkou.  
   
      V **vláken** okně přepínat mezi vláken a všimněte zobrazení v **paralelní zásobníky** okno se aktualizuje.  
   
@@ -141,11 +141,13 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
      Když metoda kontextu je přidružen pouze jeden zásobníku, zobrazí pole hlavičky **1 vlákno** a můžete přepnout do ní dvojitým kliknutím na soubor. Pokud dvakrát kliknete na metoda kontext, který má přidruženo více než 1 rámečkem, pak v nabídce automaticky objeví. Když najedete kontexty metoda, Všimněte si černý trojúhelník vpravo. Kliknutím na tento trojúhelník také zobrazí v místní nabídce.  
   
-     Pro velké aplikace, které mají velký počet vláken můžete se zaměřit na pouze podmnožinu vláken. **Paralelní zásobníky** okno může zobrazit zásobníky volání pouze pro označení vlákna. Na panelu nástrojů klikněte **zobrazit jenom příznakem** tlačítko vedle pole se seznamem.  
-  
-     ![Prázdné okno Paralelní zásobníky a popis](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
-  
-     Vedle **vláken** okně příznak vláken jeden po druhém najdete v části Jak se zobrazují v jejich zásobníky volání **paralelní zásobníky** okno. Chcete-li příznak vláken, použijte místní nabídky nebo první buňky vlákna. Klikněte **zobrazit jenom příznakem** tlačítka panelu nástrojů znovu zobrazíte všechna vlákna.  
+     Pro velké aplikace, které mají velký počet vláken můžete se zaměřit na pouze podmnožinu vláken. **Paralelní zásobníky** okno může zobrazit zásobníky volání pouze pro označení vlákna. Chcete-li příznak vláken, použijte místní nabídky nebo první buňky vlákna. 
+
+     Na panelu nástrojů klikněte **zobrazit jenom příznakem** tlačítko vedle pole se seznamem.  
+
+     ![Paralelní zásobníky okno a popis tlačítka](../debugger/media/pdb_walkthrough_3a.png "PDB_Walkthrough_3A")  
+
+     Pouze s příznakem vlákno se zobrazí v **paralelní zásobníky** okno.
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Chcete-li pokračovat v provádění až třetí zarážek  
   
@@ -157,7 +159,7 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
      Všimněte si, že je S.L tučné do dalších polí, aby mohli zobrazit, kde jinak se zobrazí. Pokud chcete zobrazit rámce, který volání do S.L a které rámců, se volání, klikněte **přepnout metoda zobrazení** tlačítka na panelu nástrojů. Následující obrázek znázorňuje metoda zobrazení **paralelní zásobníky** okno.  
   
-     ![Zobrazení metody v okně paralelní zásobníky](../debugger/media/pdw_walkthrough_4.png "PDW_Walkthrough_4")  
+     ![Zobrazení metody v okně paralelní zásobníky](../debugger/media/pdb_walkthrough_4.png "PDW_Walkthrough_4")  
   
      Všimněte si, jak diagram seskupit na vybrané metodě a umístěný v jeho vlastní pole uprostřed zobrazení. Se zobrazí v horní a dolní volané a volající. Klikněte na tlačítko **přepnout metoda zobrazení** tlačítko nechte tento režim.  
   
@@ -165,17 +167,17 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
     -   **Hexadecimální zobrazení** přepíná čísla v popisech mezi desetinných míst a šestnáctkové číslo.  
   
-    -   **Symbolů načíst informace o** a **Symbol nastavení** otevřete příslušných dialogových oken.  
+    -   **Symbolů nastavení** otevřete příslušných dialogových oken.  
   
-    -   **Přejděte do zdrojového kódu** a **přejděte k zpětný překlad** přejděte v editoru pro vybranou metodu.  
+    -   **Zobrazit vláken ve zdroji** Přepíná zobrazení značek přístup z více vláken ve zdrojovém kódu, který ukazuje umístění vláken ve zdrojovém kódu.
   
     -   **Zobrazit externí kód** zobrazí všechny snímky, i když nejsou v uživatelského kódu. Vyzkoušejte podívejte se na diagram rozšířit, aby odpovídala další snímky (které může být neaktivní, protože nemáte symboly pro ně).  
+
+2.  V **paralelní zásobníky** okna, ujistěte se, že **automaticky přejít na aktuální rámec zásobníku** na panelu nástrojů zobrazí tlačítko je na.  
+
+     Pokud máte velké diagramy a krok na další zarážku, může být vhodné zobrazení tak, aby automaticky posuňte active zásobníku aktuální vlákno; To znamená, vlákno, které nejprve průchodu zarážkou.
   
-     Pokud máte velké diagramy a krok na další zarážku, může být vhodné zobrazení tak, aby automaticky posuňte active zásobníku aktuální vlákno; To znamená, vlákno, které nejprve průchodu zarážkou. V **paralelní zásobníky** okna, ujistěte se, že **automaticky přejít na aktuální rámec zásobníku** na panelu nástrojů zobrazí tlačítko je na.  
-  
-     ![Automatické procházení v okna paralelní zásobníky](../debugger/media/pdb_walkthrough_4a.png "PDB_Walkthrough_4A")  
-  
-2.  Než budete pokračovat, v **paralelní zásobníky** okno, posuňte všechny způsobem, jak levé straně a úplně dolů.  
+3.  Než budete pokračovat, v **paralelní zásobníky** okno, posuňte všechny způsobem, jak levé straně a úplně dolů.  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Chcete-li pokračovat v provádění dokud čtvrtý zarážek  
   
@@ -183,17 +185,15 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
      Všimněte si jak autoscrolled zobrazení na místě. Přepínač vláken v **vláken** Přijaté rámce zásobníku okno nebo přepínač **zásobníkem volání** okno a Všimněte si, jak zobrazení vždy autoscrolls na správný snímek. Vypnout **automaticky přejít na aktuální snímek nástroj** možnost a zobrazit rozdíl.  
   
-     **Pohled z ptačí perspektivy** také pomáhá s velkých diagramů v **paralelní zásobníky** okno. Můžete zobrazit **pohled z ptačí perspektivy** kliknutím na tlačítko mezi posuvníky v pravém dolním rohu okna, jak je znázorněno na následujícím obrázku.  
+     **Pohled z ptačí perspektivy** také pomáhá s velkých diagramů v **paralelní zásobníky** okno. Ve výchozím nastavení **pohled z ptačí perspektivy** zapnutý. Ale můžete přepnout ho kliknutím na tlačítko mezi posuvníky v pravém dolním rohu okna, jak je znázorněno na následujícím obrázku.  
   
-     ![Ptačí perspektivy na & č. 45; oka zobrazit v okně paralelní zásobníky](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
+     ![Ptačí perspektivy na&#45;oční zobrazení v okně paralelní zásobníky](../debugger/media/pdb_walkthrough_5.png "PDB_Walkthrough_5")  
   
-     Rámeček pro rychle posouvání zobrazení diagramu se můžete přesunout.  
+     V pohled z ptačí perspektivy je možné přesunout rámeček k rychlému posouvání zobrazení diagramu.  
   
      Klikněte na prázdnou oblast diagramu a přetáhněte ji na požadované místo je jiný způsob, jak přesunout diagram vede libovolným směrem.  
   
      Chcete-li oddálit diagramu, stiskněte a podržte klávesu CTRL a přesunout kolečko myši. Případně klikněte na tlačítko přiblížení na panelu nástrojů a pak použít nástroj Lupa.  
-  
-     ![Možnosti zásobníky v okně paralelní zásobníky](../debugger/media/pdb_walkthrough_5a.png "PDB_Walkthrough_5A")  
   
      Můžete také zobrazit zásobníky shora dolů směrem místo zdola nahoru, kliknutím **nástroje** nabídce kliknete na **možnosti**a potom vyberte nebo zrušte zaškrtnutí políčka v části **ladění** uzlu.  
   
@@ -208,13 +208,13 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
 2.  Na **ladění** nabídky, přejděte na příkaz **Windows** a pak klikněte na **vláken**. Ukotvení **vláken** okna v dolní části sady Visual Studio.  
   
-3.  Na **ladění** nabídky, přejděte **Windows** a klikněte na tlačítko **zásobníkem volání.**. Ukotvení **zásobníkem volání** okno dole v sadě Visual Studio.  
+3.  Na **ladění** nabídky, přejděte **Windows** a klikněte na tlačítko **zásobníkem volání**. Ukotvení **zásobníkem volání** okno dole v sadě Visual Studio.  
   
 4.  Klikněte dvakrát na vlákno v **vláken** okna je aktuální. Aktuální vláken obsahovat žlutou šipku. Když změníte aktuální vlákno, jsou aktualizovány jiných systému windows. V dalším kroku vyzkoušíme úlohy.  
   
-5.  Na **ladění** nabídky, přejděte na příkaz **Windows** a pak klikněte na **paralelní úlohy**. Následující obrázek ukazuje **úlohy** okno.  
+5.  Na **ladění** nabídky, přejděte na příkaz **Windows**a potom klikněte na **úlohy**. Následující obrázek ukazuje **úlohy** okno.  
   
-     ![Čtyři spuštění úloh v okně úlohy](../debugger/media/pdw_walkthrough_6.png "PDW_Walkthrough_6")  
+     ![Čtyři spuštění úloh v okně úlohy](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")  
   
      Pro každý úkol spuštěný si můžete přečíst jeho ID, která je vrácena vlastnost se stejným názvem, ID a název vlákno, které spouští, jeho umístění (ukazatele myši na tento zobrazí popisek, který má zásobníku volání celou). Také v části **úloh** sloupce, zobrazí se metoda, která byla předána do úlohy; jinými slovy, výchozím bodem.  
   
@@ -228,13 +228,13 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
 1.  Chcete-li pokračovat v provádění dokud druhý zarážek přístupů, na **ladění** nabídky, klikněte na tlačítko **pokračovat**.  
   
-     Dříve **stav** sloupec vám ukázal všechny úlohy, jako spuštěná, ale teď dvě úlohy čekají. Úlohy mohou být blokovány mnoha různých důvodů. V **stav** sloupce, při přechodu na úlohu čekání na další informace, proč je blokovaný. Na následujícím obrázku je například úloha 3 čekání na úloha 4.  
+     Dříve **stav** sloupec vám ukázal všechny úlohy, jako aktivní, ale teď dvě úlohy jsou zablokované. Úlohy mohou být blokovány mnoha různých důvodů. V **stav** sloupce, při přechodu na úlohu čekání na další informace, proč je blokovaný. Na následujícím obrázku je například úloha 3 čekání na úloha 4.  
   
      ![Dvě čekání úlohy v okně úlohy](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")  
   
-     Úloha 4, pak čeká na monitorování vlastníkem vlákno přiřazen k úloze 2.  
+     Úloha 4, pak čeká na monitorování vlastníkem vlákno přiřazen k úloze 2. (Klikněte pravým tlačítkem myši na záhlaví a zvolte **sloupce** > **vlákno přiřazení** zobrazíte hodnotu přiřazení vlákno pro úloha 2).
   
-     ![Čeká se na úlohy a popisu tlačítka v okně úlohy](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")  
+     ![Čeká se na úlohy a popisu tlačítka v okně úlohy](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
   
      Úlohu můžete označit příznakem, kliknete na příznak v první sloupec **úlohy** okno.  
   
@@ -242,13 +242,11 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
      Pokud jste použili **paralelní zásobníky** okno dříve, můžete zobrazit vláken aplikace. Zobrazení **paralelní zásobníky** znovu okno, ale tentokrát zobrazit úlohy aplikace. To provedete zaškrtnutím **úlohy** do pole v levé horní části. Následující obrázek znázorňuje zobrazení úloh.  
   
-     ![Zobrazení v okně paralelní zásobníky vláken](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
+     ![Úlohy zobrazení v okně paralelní zásobníky](../debugger/media/pdb_walkthrough_8.png "PDB_Walkthrough_8")  
   
      Vláken, která nejsou aktuálně provádění úlohy nejsou zobrazeny v zobrazení úlohy **paralelní zásobníky** okno. Navíc pro vlákna, které se spouští úlohy, některé rámce zásobníku, které nejsou relevantní pro úlohy jsou filtrovány z horní a dolní části zásobníku.  
   
      Zobrazení **úlohy** znovu okno. Klikněte pravým tlačítkem na libovolné záhlaví sloupce zobrazíte místní nabídku pro sloupec.  
-  
-     ![Místní nabídky zobrazení v okně úlohy](../debugger/media/pdb_walkthrough_8a.png "PDB_Walkthrough_8A")  
   
      Místní nabídky můžete přidat nebo odebrat sloupce. Například není vybraný sloupec AppDomain; Proto se nezobrazí v seznamu. Klikněte na tlačítko **nadřazené**. **Nadřazené** bez hodnot pro všechny čtyři úlohy, zobrazí se sloupec.  
   
@@ -258,11 +256,11 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
      Nový úkol, úloha 5, je nyní spuštěna a nyní čeká úloha 4. Uvidíte, proč podržením ukazatele nad čekání úlohy v **stav** okno. V **nadřazené** sloupce, Všimněte si, že úloha 4 je nadřazená úloha 5.  
   
-     Pro lepší vizualizaci relaci nadřazený podřízený, klikněte pravým tlačítkem myši **nadřazené** záhlaví sloupce a pak klikněte na tlačítko **nadřazeného a podřízeného prvku**. Měli byste vidět na následujícím obrázku.  
+     Pro lepší vizualizaci relaci nadřazený podřízený, klikněte pravým tlačítkem myši na záhlaví sloupce a potom klikněte na **nadřazeného a podřízeného prvku**. Měli byste vidět na následujícím obrázku.  
   
-     ![Nadřazené & č. 45; podřízené zobrazení v okně úlohy](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
+     ![Nadřazené&#45;podřízené zobrazení v okně úlohy](../debugger/media/pdb_walkthrough_9.png "PDB_Walkthrough_9")  
   
-     Všimněte si, že úloha 4 a 5 úloha běží ve stejném vlákně. Tyto informace se nezobrazí v **vláken** období; zobrazuje, zde je Další výhodou **úlohy** okno. Chcete-li to ověřit, podívejte se **paralelní zásobníky** okno. Ujistěte se, že jsou zobrazeny **úlohy**. Vyhledejte úlohy 4 a 5 poklepáním na tyto v **úlohy** okno. Když to uděláte, modré zvýraznění **paralelní zásobníky** okno se aktualizuje. Můžete také vyhledat úlohy 4 a 5 naskenováním popisky tlačítek na **paralelní zásobníky** okno.  
+     Všimněte si, že úloha 4 a 5 úloha běží ve stejném vlákně (Zobrazit **vlákno přiřazení** sloupce, pokud je skrytý). Tyto informace se nezobrazí v **vláken** období; zobrazuje, zde je Další výhodou **úlohy** okno. Chcete-li to ověřit, podívejte se **paralelní zásobníky** okno. Ujistěte se, že jsou zobrazeny **úlohy**. Vyhledejte úlohy 4 a 5 poklepáním na tyto v **úlohy** okno. Když to uděláte, modré zvýraznění **paralelní zásobníky** okno se aktualizuje. Můžete také vyhledat úlohy 4 a 5 naskenováním popisky tlačítek na **paralelní zásobníky** okno.  
   
      ![Úlohy zobrazení v okně paralelní zásobníky](../debugger/media/pdb_walkthrough_9a.png "PDB_Walkthrough_9A")  
   
@@ -278,9 +276,9 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
      ![Čtyři úkolů stavů v okna paralelní zásobníky](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")  
   
-     Protože dokončení úlohy 5, je již zobrazen. Pokud se nejedná o tento případ ve vašem počítači a k zablokování není zobrazený, krok stisknutím klávesy F11 jednou.  
+     Protože dokončení úlohy 5, je již zobrazen. Pokud se nejedná o tento případ ve vašem počítači a k zablokování není zobrazený, krok jednou stisknutím **F11**.  
   
-     Úloha 3 a úloha 4 nyní čekají na sobě navzájem a jsou zablokována. Existují také 5 nové úlohy, které jsou podřízené úloha 2 a je nyní naplánováno. Naplánované úlohy jsou úlohy, které byly spuštěny v kódu, ale ještě nebyl spuštěn. Proto jejich **umístění** a **vláken přiřazení** sloupce jsou prázdné.  
+     Úloha 3 a 4 úloh jsou nyní čeká na sobě navzájem a jsou zablokované. Existují také 5 nové úlohy, které jsou podřízené úloha 2 a je nyní naplánováno. Naplánované úlohy jsou úlohy, které byly spuštěny v kódu, ale ještě nebyl spuštěn. Proto jejich **umístění** a **vláken přiřazení** sloupce jsou prázdné.  
   
      Zobrazení **paralelní zásobníky** znovu okno. Hlavička každé pole obsahuje popis, který ukazuje názvy a ID vlákna. Umožňuje přepnout do zobrazení úlohy v **paralelní zásobníky** okno. Pozastavte ukazatel myši nad hlavičku zobrazíte ID úkolu a název a stav úlohy, jak je znázorněno na následujícím obrázku.  
   
@@ -290,13 +288,9 @@ Tento návod ukazuje, jak používat **paralelních úloh** a **paralelní záso
   
      ![Seskupené úlohy v okně úlohy](../debugger/media/pdb_walkthrough_12.png "PDB_Walkthrough_12")  
   
-     Můžete taky Seskupit podle jiné sloupce. Seskupování úlohami můžete se zaměřit na podmnožinu úlohy. Každá skupina sbalitelné obsahuje počet položek, které jsou seskupeny dohromady. Všechny položky ve skupině můžete také rychle příznak kliknutím **příznak** tlačítko napravo **sbalit** tlačítko.  
-  
-     ![Seskupené zásobníky v okně paralelní zásobníky](../debugger/media/pdb_walkthrough_12a.png "PDB_Walkthrough_12A")  
+     Můžete taky Seskupit podle jiné sloupce. Seskupování úlohami můžete se zaměřit na podmnožinu úlohy. Každá skupina sbalitelné obsahuje počet položek, které jsou seskupeny dohromady.
   
      Poslední funkci **úlohy** okno prozkoumat je místní nabídky, která se zobrazí, když kliknete pravým tlačítkem na úlohu.  
-  
-     ![Místní nabídky v okně úlohy](../debugger/media/pdb_walkthrough_12b.png "PDB_Walkthrough_12B")  
   
      Místní nabídky zobrazí jiné příkazy, v závislosti na stavu úlohy. Příkazy může zahrnovat **kopie**, **Vybrat vše**, **hexadecimální zobrazení**, **přepnout úloh**, **Freeze – přiřazené Přístup z více vláken**, **Freeze všechna vlákna, to ale**, a **odblokování přiřazené vlákno**, a **příznak**.  
   
