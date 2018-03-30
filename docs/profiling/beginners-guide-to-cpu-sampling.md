@@ -1,13 +1,13 @@
 ---
-title: "Průvodce začátečníka vzorkování procesoru v sadě Visual Studio | Microsoft Docs"
+title: Průvodce začátečníka vzorkování procesoru v sadě Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - performance tools, wizard
 - Performance Wizard
 ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
-caps.latest.revision: 
+caps.latest.revision: 1
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 69bc0ae15a33cd3f7fd9b06a25a34f7dc88c083c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d3113a04ba6f6f893c285cf02f6f23cb5979dad1
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Průvodce začátečníka procesoru vzorkování
 Nástroje pro profilaci sady Visual Studio můžete použít k analýze problémy s výkonem v aplikaci. Tento postup ukazuje, jak používat **vzorkování** data.
@@ -42,7 +42,7 @@ Nástroje pro profilaci sady Visual Studio můžete použít k analýze problém
 > [!TIP]
 >  Pokud kód, který volá funkce systému Windows, profilu, měli byste si ověřit, že máte nejnovější soubory PDB. Bez těchto souborů v zobrazeních sestav zobrazí seznam názvů funkce Windows, které jsou jako nesrozumitelné a vzhledem k. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [postupy: odkaz na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
-##  <a name="Step1"></a>Vytvoření a spuštění výkonnostní relace  
+##  <a name="Step1"></a> Vytvoření a spuštění výkonnostní relace  
  Pokud chcete získat data, která potřebujete analyzovat, musíte nejprve vytvořit relaci výkonu a spusťte relaci. **Průvodce výkonu** umožňuje proveďte obojí.  
   
  Pokud nejsou profilace aplikace na ploše systému Windows nebo aplikace ASP.NET, musí používat jednu z dalších nástrojů pro profilaci. V tématu [nástroje pro profilaci](../profiling/profiling-tools.md).  
@@ -68,7 +68,7 @@ Nástroje pro profilaci sady Visual Studio můžete použít k analýze problém
   
      Po spuštění aplikace, **Souhrn** v hlavním okně Visual Studio se zobrazí zobrazení data profilování a ikonu pro novou relaci v **prohlížeč výkonu** okno.  
   
-##  <a name="Step2"></a>Krok 2: Analýza dat vzorkování  
+##  <a name="Step2"></a> Krok 2: Analýza dat vzorkování  
  Po dokončení spuštění výkonnostní relace **Souhrn** profilování sestavy se zobrazí v hlavním okně v sadě Visual Studio.  
   
  Doporučujeme začít analýza dat tak, že prověří **aktivní trase,** pak seznam funkcí, které jsou nejvíce pracuje a nakonec pomocí zaměřené na jiných funkcí s použitím **časová osa Souhrn** . Můžete také zobrazit profilování návrhy a upozornění v **seznam chyb** okno.  
@@ -83,7 +83,7 @@ Nástroje pro profilaci sady Visual Studio můžete použít k analýze problém
   
 1.  V **Souhrn** zobrazení, **aktivní trase** ukazuje větev stromu volání aplikace s nejvyšší ukázky (včetně). Je to cesta ke spuštění, který byl nejvíce aktivní, pokud data nebyla shromážděna. Vysoká (včetně). hodnoty můžou značit, že algoritmus, který generuje stromu volání lze optimalizovat. Najít funkce ve vašem kódu, který je nejnižší v cestě. Všimněte si, že cesta může také obsahovat funkce systému nebo funkce v modulech externí.  
   
-     ![Cesta profileru](../profiling/media/profiler_hotpath.png "Profiler_HotPath")  
+     ![Profiler Hot Path](../profiling/media/profiler_hotpath.png "Profiler_HotPath")  
   
     1.  **Včetně ukázky** určit, kolik práce se provádí funkce a všechny funkce je volána. Vysoké počty (včetně). přejděte na funkce, které jsou nejnákladnější celkové.  
   
@@ -113,7 +113,7 @@ Nástroje pro profilaci sady Visual Studio můžete použít k analýze problém
   
     -   Chcete-li zobrazit podrobné informace o upozornění, klikněte pravým tlačítkem na chybu a pak klikněte na **zobrazit nápovědu k chybě**  
   
-##  <a name="Step3"></a>Krok 3: Zkontrolovat kód a znovu spusťte relaci  
+##  <a name="Step3"></a> Krok 3: Zkontrolovat kód a znovu spusťte relaci  
  Po najít a optimalizovat jednu nebo více funkcí, můžete opakovat profilování spustit a porovnávání dat rozdíl, která provedla změny na výkon vaší aplikace.  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Chcete-li zkontrolovat kód a znovu spusťte profileru  

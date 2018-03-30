@@ -1,27 +1,27 @@
 ---
-title: "Rychlý start - vytvoření projektu jazyka Python v sadě Visual Studio z existujícího kódu | Microsoft Docs"
-description: "Rychle začněte s používáním Pythonu tak, že vytvoříte projekt sady Visual Studio z existujícího kódu, pomocí vhodného šablony."
-ms.custom: 
+title: Rychlý start - vytváření Python projekt z existujícího kódu | Microsoft Docs
+description: Tento rychlý start vytvoříte projekt sady Visual Studio pro jazyk Python ze složky, pomocí vhodného šablony.
+ms.custom: mvc
 ms.date: 01/08/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e8e57fb97b5e792375cefb344306a9bdc71836be
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: b31cda03c2ca233e90e1ba0194d83845805e28f3
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Rychlý úvod: vytvoření projektu jazyka Python z existujícího kódu
 

@@ -1,7 +1,7 @@
 ---
-title: Rychlý start - vytvoření projektu jazyka Python v sadě Visual Studio pomocí šablony | Microsoft Docs
-description: Rychle začněte s používáním Pythonu tak, že vytvoříte projekt sady Visual Studio pomocí předdefinované šablony pro základní aplikaci Flask.
-ms.custom: ''
+title: Rychlý start - vytvořit pomocí šablony projektu Python | Microsoft Docs
+description: Tento rychlý start vytvoříte projekt sady Visual Studio pro jazyk Python pomocí předdefinované šablony pro základní aplikaci Flask.
+ms.custom: mvc
 ms.date: 03/22/2018
 ms.reviewer: ''
 ms.suite: ''
@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 41b677dc41202012ba09908edf3110961139f416
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 2d4d81676d9f63751455f4f51ae5993c46dd0f04
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Rychlý úvod: Vytvořte projekt Python ze šablony v sadě Visual Studio
 

@@ -1,32 +1,32 @@
 ---
-title: "Začínáme s ladicím programem v sadě Visual Studio | Microsoft Docs"
+title: Začínáme s ladicím programem v sadě Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 0b3138c4-b840-446a-a15c-10ed8e2dd050
-caps.latest.revision: 
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 171b07d453c81883354848f70458bab39daa313e
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Začínáme s ladicím programu sady Visual Studio
 Ladicí program Visual Studio je snadno použitelný v libovolném jazyce. Zde ukážeme postup ladění jednoduché programu v C#, ale můžete použít stejný postup na kód v jiných jazycích, jako je například C++ a JavaScript.
 
 Pokud chcete přehrát video, zobrazující podobné funkce, najdete v části [Začínáme s ladicím programem](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a>Ladění projektu pro základní C#  
+##  <a name="BKMK_Start_debugging_a_VS_project"></a> Ladění projektu pro základní C#  
  Začněme s jednoduchou aplikaci konzoly C# (**soubor > Nový > projekt**, pak vyberte **Visual C#** a potom **konzolové aplikace**). Pokud jste nikdy práce pomocí sady Visual Studio před, přečtěte si téma [návod: vytvoření jednoduché aplikace](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). **Hlavní** metoda právě přidá 1 do proměnná typu integer 10krát a vytiskne výsledek do konzoly:  
   
 ```csharp  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Další informace o zarážkách najdete v tématu [pomocí zarážek](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a>Zkontrolujte proměnné  
+##  <a name="BKMK_Inspect_Variables"></a> Zkontrolujte proměnné  
  Ladění často zahrnuje hledání proměnné, které neobsahují hodnoty, které očekáváte, že na určitém místě. Ukážeme některé způsoby, si můžete prohlédnout proměnné.  
   
  Ladění spusťte znovu. Spuštění zastaví před `Console.WriteLine` kód spustí. Může být spuštěna pomocí procházení dopředu způsobit (klikněte na tlačítko **ladění > Krokovat s přeskočením** nebo **F10**). V takovém případě může zvolili jste **Krokovat s vnořením** (**F11**) a že podmínky stejného výsledku; vysvětlíme rozdíl později. Řádek s poslední složené závorky metody by měla mít zapnuta žlutý. Podívejte se na v okně konzoly. Měli byste vidět **10**.  

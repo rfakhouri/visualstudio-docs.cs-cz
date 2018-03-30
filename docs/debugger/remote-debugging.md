@@ -1,13 +1,13 @@
 ---
-title: "Vzdálené ladění v sadě Visual Studio | Microsoft Docs"
+title: Vzdálené ladění v sadě Visual Studio | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -19,17 +19,17 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
+caps.latest.revision: 65
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 21867feae0d313c3ac5f93e51cf85ebe14bbba0b
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: ddba7e3d75f796ed0667dc39efc08555034e2a59
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 Můžete ladit aplikace z Visual Studia, která byla nasazena do jiného počítače. K tomu použít vzdáleného ladicího programu sady Visual Studio.
@@ -52,7 +52,7 @@ Pokud jste právě chcete stáhnout a nainstalovat vzdáleného ladicího progra
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
-### <a name="fileshare_msvsmon"></a>(Volitelné) Ke spuštění vzdáleného ladicího programu ze sdílené složky
+### <a name="fileshare_msvsmon"></a> (Volitelné) Ke spuštění vzdáleného ladicího programu ze sdílené složky
 
 Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači s Visual Studio Community, Professional nebo Enterprise již nainstalován. V některých případech je nejjednodušší způsob, jak nastavení vzdáleného ladění spuštění vzdáleného ladicího programu (msvsmon.exe) ze sdílené složky. Omezení využití najdete v části stránky nápovědy vzdáleného ladicího programu (**pomoci > využití** v vzdáleného ladicího programu).
 
@@ -69,7 +69,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
 > [!TIP] 
 > Instalace pomocí příkazového řádku a odkaz na příkazový řádek najdete v tématu na stránce nápovědy pro **msvsmon.exe** zadáním ``msvsmon.exe /?`` v příkazovém řádku na počítači s nainstalovanou sadu Visual Studio (nebo na **pomoci > využití**v vzdáleného ladicího programu).
   
-## <a name="requirements_msvsmon"></a>Požadavky
+## <a name="requirements_msvsmon"></a> Požadavky
 
 [!INCLUDE [remote-debugger-requirements](../debugger/includes/remote-debugger-requirements.md)]
   
@@ -77,7 +77,7 @@ Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-### <a name="configure_msvsmon"></a>Konfigurovat vzdálený ladicí program  
+### <a name="configure_msvsmon"></a> Konfigurovat vzdálený ladicí program  
 Po prvním spuštění ho můžete změnit některé aspekty konfigurace vzdáleného ladicího programu.
   
 -   Pokud potřebujete přidat oprávnění pro ostatní uživatele, který chcete připojit k vzdáleného ladicího programu, zvolte **nástroje > oprávnění**. K udělení nebo odebrání oprávnění je potřeba mít oprávnění správce.
@@ -94,7 +94,7 @@ Po prvním spuštění ho můžete změnit některé aspekty konfigurace vzdále
      > [!WARNING]
      >  Můžete také spustit nástroje Remote Tools v režimu bez ověřování, ale tento režim se rozhodně nedoporučuje. Při spuštění v tomto režimu není žádné zabezpečení sítě. Vyberte režim ověřování ne jenom v případě, že jste si jisti, že síť není riziku škodlivý nebo nepřátelských přenosů.
 
-##  <a name="bkmk_configureService"></a>(Volitelné) Konfigurovat vzdálený ladicí program jako služby
+##  <a name="bkmk_configureService"></a> (Volitelné) Konfigurovat vzdálený ladicí program jako služby
 Pro ladění v technologii ASP.NET a dalších prostředích s serveru, se musí spustit vzdáleného ladicího programu jako správce nebo, je vždy spuštěn, chcete-li spuštěn jako služba vzdáleného ladicího programu.
   
  Pokud chcete konfigurovat vzdálený ladicí program jako službu, postupujte podle těchto kroků.  

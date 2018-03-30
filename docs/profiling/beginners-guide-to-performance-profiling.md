@@ -1,13 +1,13 @@
 ---
-title: "Profil výkonu aplikací v sadě Visual Studio | Microsoft Docs"
+title: Profil výkonu aplikací v sadě Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
 helpviewer_keywords:
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 
+caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 83268e1c7e4c4672caf17b6852cbf3fd38ea31b1
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 392bae77ffa2333fa9360dcda7f25b156e1601bc
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profil výkonu aplikací v sadě Visual Studio
 Nástroje pro profilaci sady Visual Studio můžete použít k analýze problémy s výkonem v aplikaci. Tento postup ukazuje, jak používat **využití procesoru** kartě diagnostické nástroje získat údaje o výkonu pro vaši aplikaci. Diagnostické nástroje jsou podporované pro .NET – vývoj v sadě Visual Studio, včetně ASP.NET a pro vývoj nativní/C++.
@@ -43,6 +43,12 @@ V tomto tématu probereme analýza využití procesoru v normálním pracovním 
 
 > [!NOTE]
 > Pro .NET Core a ASP.NET Core nástroje využití CPU aktuálně neposkytuje přesné výsledky s přenosné PBDs. Místo toho použijte úplný soubory PDB.
+
+V tomto kurzu provedete následující:
+
+> [!div class="checklist"]
+> * Shromažďování údajů o využití procesoru
+> * Analyzovat data o využití procesoru
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Shromáždění data profilování 
   
@@ -155,9 +161,10 @@ Použijte pole hledání najít uzel, který hledáte, potom použijte vodorovn�
 
 > [!TIP]
 > Pokud je profil externí kód, který volá funkce systému Windows, měli byste si ověřit, že máte nejnovější soubory PDB. Bez těchto souborů v zobrazeních sestav zobrazí seznam názvů funkce Windows, které jsou jako nesrozumitelné a vzhledem k. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [zadejte symbolu (.pdb) a zdrojových souborů v ladicím programu](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
-  
-## <a name="see-also"></a>Viz také  
- [Využití paměti](../profiling/memory-usage.md)  
- [Využití procesoru](../profiling/cpu-usage.md)  
- [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)
+
+## <a name="next-steps"></a>Další kroky
+
+V tomto kurzu jste zjistili, jak shromažďovat a analyzovat data o využití procesoru. Pokud jste již dokončili [prohlídka profileru](../profiling/profiling-feature-tour.md), můžete chtít získat rychlý přehled o tom, jak analyzovat využití paměti ve svých aplikacích.
+
+> [!div class="nextstepaction"]
+> [Analýza využití paměti](../profiling/memory-usage.md) 

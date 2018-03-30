@@ -1,25 +1,27 @@
 ---
-title: "Instalace certifikátů vyžadovaných pro instalaci offline sady Visual Studio | Microsoft Docs"
-description: "Popisuje kroky potřebné k instalaci certifikátů pro offline instalaci sady Visual Studio"
+title: Instalace certifikátů vyžadovaných pro instalaci offline sady Visual Studio | Microsoft Docs
+description: Popisuje kroky potřebné k instalaci certifikátů pro offline instalaci sady Visual Studio
 ms.date: 08/30/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4d462120e7b51551ca7f15cc2d23387824a1f9f1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: a1ffca50b849a273b4ab49955eaf92e4e637cfbb
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalace certifikátů vyžadovaných pro instalaci offline sady Visual Studio
 

@@ -1,7 +1,7 @@
 ---
 title: 'Rychlý úvod: použijte sadu Visual Studio k vytvoření první webové aplikace Python | Microsoft Docs'
-description: Stručný přehled používá Python v sadě Visual Studio, který sestaví jednoduché webové aplikace pomocí rozhraní Flask.
-ms.custom: ''
+description: V tento rychlý start použijete k vytvoření jednoduché webové aplikace ve Python Flask framework pomocí sady Visual Studio.
+ms.custom: mvc
 ms.date: 03/21/2018
 ms.reviewer: ''
 ms.suite: ''
@@ -13,15 +13,15 @@ dev_langs:
 - python
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fe5620bc764b421e22364ebdadb770c81831e7e2
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první webové aplikace Python
 

@@ -1,29 +1,31 @@
 ---
-title: "Analýza využití paměti v sadě Visual Studio | Microsoft Docs"
+title: Analýza využití paměti v sadě Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d6fc25c3a9d7306332c704453f22073df4e76546
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.workload:
+- multiple
+ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Profil využití paměti v sadě Visual Studio
 Najít nevracení paměti a neefektivní paměti při ladění pomocí integrované ladicí program **využití paměti** nástroj pro diagnostiku. Umožňuje nástroj využití paměti, proveďte jeden nebo více *snímky* spravovaná a nativní paměti haldy pro lepší porozumění tomu dopad využití paměti typy objektů. Můžete shromažďovat snímky .NET, nativní nebo smíšený režim (.NET a nativní) aplikace.  
   
  Následující grafické ukazuje **diagnostické nástroje** okno (k dispozici ve Visual Studiu 2015 Update 1 nebo novější):  
   
- ![DiagnosticTools & č. 45; Aktualizaci1](../profiling/media/diagnostictools-update1.png "DiagnosticTools aktualizaci1")  
+ ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
  I když můžete shromažďovat snímky paměti v kdykoli **využití paměti** nástroj ladicího programu sady Visual Studio můžete použít k řízení, jak se aplikace spustí při zkoumání problémů s výkonem. Nastavení zarážek krokování, přerušení všech akcí a další ladicí program můžete zaměřit vaši vyšetřování výkonu na cesty kódu, které jsou nejdůležitější. Provedení těchto akcí, když aplikace běží, můžete eliminovat šumu z kód, který není vás zajímají a může výrazně snížit dobu potřebnou k diagnostikovat problém.  
   
@@ -33,6 +35,12 @@ Najít nevracení paměti a neefektivní paměti při ladění pomocí integrova
 >  **Vlastní podporu Allocator** nativní paměti profileru funguje tak, že shromažďování přidělení [trasování událostí pro Windows](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) událostí datech vysílaných za běhu.  Alokátorů v CRT a sady Windows SDK mít byla poznámky na úrovni zdroje. tak, aby jejich přidělení data se dají zachytit.  Pokud píšete vlastní alokátorů, pak všechny funkce, které vrací ukazatel do nově přidělených halda paměti může být doplněny pomocí [__declspec](/cpp/cpp/declspec)(allocator), jak je vidět v tomto příkladu pro myMalloc:  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
+
+V tomto kurzu provedete následující:
+
+> [!div class="checklist"]
+> * Udělat snímky paměti
+> * Analyzovat data o využití paměti
 
 ## <a name="collect-memory-usage-data"></a>Shromažďování údajů o využití paměti
 
@@ -108,7 +116,7 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
 ### <a name="managed-types-reports"></a>Spravované typy sestav  
  Vyberte aktuální odkaz **objekty (rozdílové)** nebo **přidělení (rozdílové)** buňku v tabulce shrnutí, využití paměti.  
   
- ![Ladicí program spravovaný typ sestavy & č. 45; Cesty, které se kořenový](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Ladicího programu spravovaný typ sestavy &#45; cest k kořenové](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
  Horní podokno zobrazuje počet a velikost typy ve snímku, včetně velikosti všech objektů, které se odkazuje typ (**(včetně). velikost**).  
   
@@ -127,7 +135,7 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
 ### <a name="native-type-reports"></a>Nativní typ sestavy  
  Vyberte aktuální odkaz **přidělení (rozdílové)** nebo **velikost haldy (rozdílové)** buňky v souhrnné tabulce využití paměti **diagnostické nástroje** okno.  
   
- ![Nativní typ zobrazení](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")  
+ ![Native Type View](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")  
   
  **Typy zobrazení** zobrazí počet a velikost typy ve snímku.  
   
@@ -135,17 +143,17 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
   
      **Instance** zobrazení zobrazí každou instanci daného typu. Výběr instance zobrazí, jejichž výsledkem vytvoření instance v zásobníku volání **přidělení zásobníku volání** podokně.  
   
-     ![Zobrazení instancí](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")  
+     ![Instances view](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")  
   
 -   Zvolte **zásobníky zobrazení** v **režimu zobrazení** seznamu zobrazíte přidělení zásobníku pro vybraný typ.  
   
-     ![Balíků zobrazení](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
+     ![Stacks View](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
 ### <a name="change-diff-reports"></a>Změnit sestavy (rozdílové)  
   
 -   Vyberte odkaz změnit v buňce souhrnné tabulky **využití paměti** na kartě **diagnostické nástroje** okno.  
   
-     ![Zvolte změnu &#40; dif &#41; f sestavy](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+     ![Zvolte změn &#40;dif&#41;f sestavy](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
 -   Zvolte snímku v **porovnat k** seznam spravovaným nebo nativním sestavy.  
   
@@ -153,7 +161,7 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
   
  Sestava změn přidá sloupce (označené jako **(rozdílové)**) základní sestavy, které tento rozdíl mezi hodnotou základní snímku a porovnání snímku. Zde je, jak může vypadat sestavy rozdílové nativní typ zobrazení:  
   
- ![Nativní typy rozdílové Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+ ![Native Types Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogy a videa  
 
@@ -165,6 +173,9 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
   
  [Visual C++ Blog: Profilace paměti ve Visual C++ 2015](https://blogs.msdn.microsoft.com/vcblog/2015/10/21/memory-profiling-in-visual-c-2015/)  
 
-## <a name="see-also"></a>Viz také
- [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)
+## <a name="next-steps"></a>Další kroky
+
+V tomto kurzu jste zjistili, jak shromažďovat a analyzovat data o využití paměti. Pokud jste již dokončili [prohlídka profileru](../profiling/profiling-feature-tour.md), můžete chtít získat rychlý přehled o tom, jak analyzovat využití procesoru ve svých aplikacích.
+
+> [!div class="nextstepaction"]
+> [Analýza využití procesoru](../profiling/beginners-guide-to-performance-profiling.md) 

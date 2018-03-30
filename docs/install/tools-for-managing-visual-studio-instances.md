@@ -1,25 +1,27 @@
 ---
-title: "Nástroje pro zjišťování a správu instancí sady Visual Studio | Microsoft Docs"
-description: "{{ZÁSTUPNÝ SYMBOL}}"
+title: Nástroje pro zjišťování a správu instancí sady Visual Studio | Microsoft Docs
+description: '{{ZÁSTUPNÝ SYMBOL}}'
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: timsneath
+author: tglee
 ms.author: tglee
 manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ad0dfcdaf353d94b7d0ea255def0839069b0a39e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1931866f15f1902de659fcd8a43f05c82affc832
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Nástroje pro zjišťování a správu instancí sady Visual Studio
 
@@ -33,7 +35,7 @@ Provedli jsme k dispozici několik nástrojů, které vám pomohou zjistit a spr
 Kromě toho [API pro konfiguraci nastavení](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) poskytuje rozhraní pro vývojáře, kteří chtějí vytvářet své vlastní nástroje pro dotazem instance Visual Studio.
 
 ## <a name="using-vswhereexe"></a>Pomocí vswhere.exe
-`vswhere.exe`je automaticky zahrnuty v aplikaci Visual Studio 2017 verze 15.2 nebo vyšší, nebo můžete ho stáhnout z [stránce vydání](https://github.com/Microsoft/vswhere/releases). Použití `vswhere -?` získat pomoc informace o nástroji. Jako příklad tento příkaz zobrazí všechny verze sady Visual Studio, včetně starší verze produktu a předběžné a výsledky ve formátu JSON:
+`vswhere.exe` je automaticky zahrnuty v aplikaci Visual Studio 2017 verze 15.2 nebo vyšší, nebo můžete ho stáhnout z [stránce vydání](https://github.com/Microsoft/vswhere/releases). Použití `vswhere -?` získat pomoc informace o nástroji. Jako příklad tento příkaz zobrazí všechny verze sady Visual Studio, včetně starší verze produktu a předběžné a výsledky ve formátu JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
@@ -57,7 +59,7 @@ Protože tyto položky nejsou uložené v registru globální, existují zvláš
    ```
 
 > [!NOTE]
-> `<config>`odpovídá instanci Visual Studia, která chcete procházet.
+> `<config>` odpovídá instanci Visual Studia, která chcete procházet.
 
 Zobrazí se výzva k zadání názvu hive, který se stane název vaší izolované hive. Po tak učiníte, mělo být možné procházet registru pod izolované hive, kterou jste vytvořili.
 

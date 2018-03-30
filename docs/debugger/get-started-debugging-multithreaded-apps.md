@@ -1,13 +1,13 @@
 ---
-title: "Začínáme ladění vícevláknových aplikací | Microsoft Docs"
+title: Začínáme ladění vícevláknových aplikací | Microsoft Docs
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 
+caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2766a394c88d2040a8f062c33add4e3f7af019
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 48e912fdd04e25f9ad8f7babcf565afb5b739f05
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Začínáme ladění vícevláknové aplikace v sadě Visual Studio
 Visual Studio poskytuje několik nástrojů a prvky uživatelského rozhraní pro ladění vícevláknové aplikace. Tento kurz ukazuje, jak používat značky přístup z více vláken **paralelní zásobníky** okně **paralelního sledování** oken, podmíněné zarážky a filtr zarážky. V tomto kurzu trvá jenom pár minut, ale jeho dokončení vás seznámí s funkcemi pro ladění vícevláknové aplikace.
@@ -319,7 +319,7 @@ Můžete označit příznakem vláken, které chcete udělit zvláštní pozorno
 
 K odstranění označení vlákna, kliknete pravým tlačítkem na jeden nebo více označení vláken v **paralelního sledování** okna a zvolte **Unflag**.
 
-## <a name="bkmk_freeze"></a>Zmrazení a uvolnění provádění vlákna 
+## <a name="bkmk_freeze"></a> Zmrazení a uvolnění provádění vlákna 
 
 > [!TIP]
 > Lze ukotvit a uvolnit (pozastavení a obnovení) vláken určit pořadí, ve kterém vláken práci. To vám může pomoct vyřešit potíže se souběžností například blokování a stavy soupeření.
@@ -340,7 +340,7 @@ K odstranění označení vlákna, kliknete pravým tlačítkem na jeden nebo v�
 
     Aplikace může také vytvořit instanci některé nové vláken. Všimněte si, že žádné nové podprocesy bez příznaku a nejsou pozastaveny.
 
-## <a name="bkmk_follow_a_thread"></a>Postupujte podle jednoho vlákna pomocí podmíněné zarážky
+## <a name="bkmk_follow_a_thread"></a> Postupujte podle jednoho vlákna pomocí podmíněné zarážky
 
 V některých případech může být užitečné sledovat provádění z jednoho vlákna v ladicím programu. Můžete to udělat jedním ze způsobů je zmrazení vláken, která vás zajímá není, ale v některých případech můžete chtít podle jedním vláknem a bez zmrazení jiná vlákna (pro konkrétní chyb, například zkopírujte). Podle vlákno bez zmrazení jiná vlákna, se musí vyhnout rozdělení do kódu s výjimkou na vlákno, které vás zajímají. To provedete nastavením [podmíněného zarážek](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 

@@ -1,58 +1,37 @@
 ---
-title: "Nasazení aplikací, služeb a komponent | Microsoft Docs"
-ms.custom: 
+title: Přehled nasazení – Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 07/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: ''
+ms.topic: overview
 dev_langs:
 - FSharp
 - VB
 - CSharp
 - C++
-helpviewer_keywords:
-- .NET applications, deploying
-- components [Visual Studio], deploying
-- installers
-- publishing
-- deploying applications [Visual Studio]
-- deploying applications [Visual Studio], about deploying applications
-- components [.NET Framework], deploying
-ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
-caps.latest.revision: "33"
-author: stevehoag
-ms.author: shoag
+author: mikejo5000
+ms.author: mikejo
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: cbb1f96a7432b90cae725d88c1fcbc8a990494d4
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.workload:
+- multiple
+ms.openlocfilehash: 60e0717be3f9544ed49bdecf0b9cda2d55fa3e44
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/30/2018
 ---
-# <a name="deploying-applications-services-and-components"></a>Nasazení aplikací, služeb a komponent
+# <a name="overview-of-deployment-in-visual-studio"></a>Přehled nasazení v sadě Visual Studio
 
-Nasazením aplikace, služby nebo komponenty ji budete distribuovat pro instalaci na dalších počítačích, zařízeních, serverech nebo v cloudu. V sadě Visual Studio můžete zvolit vhodnou metodu pro potřebný typ nasazení.  
-  
-Následující tabulka popisuje různé scénáře nasazení a poskytuje odkazy na další informace pro jednotlivé scénáře.  
+Nasazením aplikace, služby nebo komponenty ji budete distribuovat pro instalaci na dalších počítačích, zařízeních, serverech nebo v cloudu. V sadě Visual Studio můžete zvolit vhodnou metodu pro potřebný typ nasazení. 
 
-Informace o možnosti, jak vytvořit konfigurace prostředí pro aplikace pro Windows, najdete v části [plochy pro univerzální platformu Windows (UWP) most](/windows/uwp/porting/desktop-to-uwp-root#convert).
+Pro mnoho běžných typů aplikací můžete nasadit vaše právo aplikace v Průzkumníku řešení v sadě Visual Studio.
 
- 
-## <a name="in-this-section"></a>V tomto oddílu  
-  
-| Scénář nasazení | Podpůrný obsah |
-| --- | --- |  
-| **Publikovat do cloudu:** můžete zpřístupnit aplikací, služeb a dat z odkudkoli pomocí sady Visual Studio nasadit do Microsoft Azure.|[Publikování aplikací do Microsoft Azure](/azure/#pivot=products) |
-| **Publikování aplikace UWP:** můžete snadno vytvářet, odeslání a prodeje aplikace z Microsoft Store zákazníkům po celém světě. |[Publikování aplikace pro Windows](https://developer.microsoft.com/store/publish-apps) |
-| **Nasazení aplikace ASP.NET nebo služby:** aplikací a služeb ASP.NET můžete nasadit v několika různými způsoby.|[Nasazení webové aplikace ASP.NET a služeb](http://www.asp.net/aspnet/overview/deployment) |
-| **Publish-in pro aplikaci Office:** můžete publikovat doplňku pro Office v sadě Visual Studio. | [Nasazení a publikování tohoto doplňku Office](https://dev.office.com/docs/add-ins/publish/publish) |
-| **Nasazení služby WCF nebo OData:** jiné aplikace můžete použít WCF RIA services, které nasazujete na webový server. | [Vývoj a nasazení služby WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **Nasazení aplikace:** pomocí ClickOnce – nasazení, můžete publikovat aplikace na webovém serveru nebo síťové sdílené složky. Uživatelé pak mohou aplikaci nainstalovat jediným kliknutím. | [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md) |
-| **Nasazení aplikace Visual C++:** modulu runtime Visual C++ pomocí aplikace můžete nasadit pomocí Centrální nasazení, místní nasazení nebo statické propojení. | [Nasazení nativních aplikací klasické pracovní plochy (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp) |
-| **Instalační program vytvořit:** instalační program na základě MSI WiX lze vytvořit pomocí [WiX Toolset 2017 rozšíření sady Visual Studio](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Všimněte si, že InstallShield Limited Edition je už součástí sady Visual Studio; Obraťte se na [Flexera softwaru](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) o dostupnosti pro Visual Studio 2017. |
-| **Nasazení aplikace pro testování:** můžete povolit složitější vývoj a testování nasazení vaší aplikace do virtuálního prostředí.|[Testování v testovacím prostředí](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) | 
-| **Instalace požadovaných součástí:** nakonfigurováním obecný instalační program, který se označuje jako zaváděcí nástroj můžete nainstalovat požadované součásti pro aplikací klasické pracovní plochy.|[Nezbytné součásti nasazení aplikace](../deployment/application-deployment-prerequisites.md) |
-| **Nasazení služby nebo aplikace LightSwitch:** již není podporována v Visual Studio 2017 LightSwitch, ale mohou být nasazeny stále ze sady Visual Studio 2015 a starší. | [Nasazování aplikací LightSwitch](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |  
+![Vyberte možnost publikování](../deployment/media/quickstart-publish-iis-ftp.png)
+
+## <a name="next-steps"></a>Další kroky
+
+* Stručný přehled možnosti nasazení v prostředí Visual Studio IDE, najdete v části [první pohled na nasazení](../deployment/deploying-applications-services-and-components.md).

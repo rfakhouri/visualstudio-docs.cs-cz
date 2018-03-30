@@ -1,10 +1,10 @@
 ---
-title: "Začínáme s C++ v sadě Visual Studio | Microsoft Docs"
+title: Začínáme s C++ v sadě Visual Studio | Microsoft Docs
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
+ms.tgt_pltfrm: ''
+ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
 manager: ghogen
@@ -12,11 +12,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e0e0709b8a1737e3f78268ec324d4481dac285a
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
+ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/30/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 
@@ -32,7 +32,7 @@ Pokud chcete sledovat, musíte kopie Visual Studio 2017 verze 15.3 nebo novějš
 
 Pokud ještě není spuštěná, spusťte Visual Studio.
 
-![IDE s Visual C & č. 43; & č. 43; nastavení použitá](../ide/media/get-started-cpp-ide-layout.png "IDE s Visual C & č. 43; & č. 43; nastavení")
+![IDE s Visual C&#43; &#43; nastavení](../ide/media/get-started-cpp-ide-layout.png "IDE s Visual C&#43; &#43; nastavení")
 
 Po otevření sady Visual Studio, zobrazí se tři základní součásti rozhraní IDE: nástroj windows, nabídek a panelů nástrojů a místo hlavní okno. Nástroje systému windows jsou ukotveno na levé a pravé straně okna aplikace. **Snadné spuštění** pole řádku nabídek a standardním panelu nástrojů se nacházejí v horní části. Obsahuje centru okna **– úvodní stránka**. Když otevřete řešení nebo projektu, editory a návrhářů, zobrazí se v tento prostor. Při vývoji aplikace je většinu času stráví v této oblasti centrální.
 
