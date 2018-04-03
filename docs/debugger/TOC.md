@@ -1,7 +1,7 @@
 # [Dokumentace k ladicímu programu](index.md)
-# Přehled
-## [Prohlídka funkcí ladicího programu](debugger-feature-tour.md)
+# [Přehled](debugger-overview.md)
 # Rychlý start
+## [První seznámení s ladicím programem](debugger-feature-tour.md)
 ## [Ladění spravované aplikace](quickstart-debug-with-managed.md)
 ## [Ladění nativní aplikace](quickstart-debug-with-cplusplus.md)
 ## [Ladění aplikace ASP.NET](quickstart-debug-aspnet.md)
@@ -26,9 +26,6 @@
 ### [Zobrazení hodnoty řetězců ve vizualizéru](string-visualizer-dialog-box.md)
 ### [Zobrazit zpětný překlad kódu](how-to-use-the-disassembly-window.md)
 #### [Postupy: O stránku nahoru nebo dolů v paměti](how-to-page-up-or-down-in-memory.md)
-### [Zobrazení zásobníku volání](how-to-use-the-call-stack-window.md)
-#### [Smíšený kód a chybějící informace v okně Zásobník volání](mixed-code-and-missing-information-in-the-call-stack-window.md)
-#### [Postupy: Vystoupení ze spravovaného kódu, pokud v okně Zásobník volání chybějí nativní rámce.](how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md)
 ### [Zobrazení hodnot registru](how-to-use-the-registers-window.md)
 #### [Informace o okně Registr](debugging-basics-registers-window.md)
 #### [Postupy: Zobrazení a skrytí nabídky Registrovat skupiny](how-to-display-and-hide-register-groups.md)

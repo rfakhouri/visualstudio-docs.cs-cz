@@ -1,8 +1,8 @@
 
 # [Dokumentace profilace](index.md)
 # Přehled
-## [Průvodce funkcí profilování](profiling-feature-tour.md)
 # Rychlý start
+## [První seznámení s profilací](profiling-feature-tour.md)
 ## [Analýza využití procesoru (spravovaný)](quickstart-cpu-usage-managed.md)
 ## [Analýza využití procesoru (nativní)](quickstart-cpu-usage-native.md)
 ## [Analýza využití procesoru (ASP.NET)](quickstart-cpu-usage-aspnet.md)

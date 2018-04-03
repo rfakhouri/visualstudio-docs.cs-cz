@@ -1,7 +1,8 @@
 # [Dokumentace k nasazení](index.md)
 # Přehled
-## [Přehled nasazení](deploying-applications-services-and-components.md)
+## [Přehled nasazování](deploying-applications-services-and-components-resources.md)
 # Rychlý start
+## [První seznámení s nasazováním](deploying-applications-services-and-components.md)
 ## [Nasazení do místní složky](quickstart-deploy-to-local-folder.md)
 ## [Nasazení na web](quickstart-deploy-to-a-web-site.md)
 ## [Nasazení do Azure](quickstart-deploy-to-azure.md)
@@ -131,6 +132,4 @@
 #### [<Signature> – element (nasazení ClickOnce)](signature-element-clickonce-deployment.md)
 #### [<customErrorReporting> – element (nasazení ClickOnce)](customerrorreporting-element-clickonce-deployment.md)
 ### [Referenční dokumentace nespravovaného rozhraní API ClickOnce](clickonce-unmanaged-api-reference.md)
-# Prostředky
-## [Nasazení aplikací, služeb a komponent](deploying-applications-services-and-components-resources.md)
 
