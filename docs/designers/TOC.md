@@ -20,6 +20,7 @@
 #### [Produkty a služby pro usnadnění (Blend)](accessibility-products-and-services-blend.md)
 ### [Klávesové zkratky pro Návrháře XAML](keyboard-shortcuts-for-xaml-designer.md)
 ### [Ladění nebo zakázání kódu projektu v Návrháři XAML](debugging-or-disabling-project-code-in-xaml-designer.md)
+### [Chyby a upozornění XAML](xaml-errors-warnings.md)
 ## [Vytvoření moderních desktopových aplikací pomocí Windows Presentation Foundation](create-modern-desktop-applications-with-windows-presentation-foundation.md)
 ### [Začínáme s WPF](getting-started-with-wpf.md)
 #### [Úvod do WPF](introduction-to-wpf.md)
