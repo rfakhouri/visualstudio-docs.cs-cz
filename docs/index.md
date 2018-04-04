@@ -1,8 +1,8 @@
 ---
 layout: HubPage
-hide_bc: 
-title: "Dokumentace k sadě Visual Studio | Microsoft Docs"
-description: "Další informace o použití Visual Studio 2017 pro vývoj aplikací, služeb a nástrojů v jazyce, platformy a zařízení."
+hide_bc: true
+title: Dokumentace k sadě Visual Studio | Microsoft Docs
+description: Další informace o použití Visual Studio 2017 pro vývoj aplikací, služeb a nástrojů v jazyce, platformy a zařízení.
 ms.topic: hub-page
 ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
 ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
