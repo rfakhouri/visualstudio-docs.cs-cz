@@ -11,11 +11,11 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2dac5f48f69ce00ae914929638f08cf35f5a96ac
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 produktivitu Příručka pro vývojáře .NET
 
@@ -31,12 +31,7 @@ Pokud jsou pocházejících z jiného IDE nebo kódování prostředí, může s
 - [HotKeys for Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-![Galerie rozšíření sady Visual Studio](../ide/media/VSIDE_Productivity_Extensibility.png)
-
-Níže jsou uvedeny oblíbených zkratky v sadě Visual Studio. 
-
-> [!NOTE]
-> Některá rozšíření odpojení klíčových vazeb výchozí sady Visual Studio, takže je nutné obnovit používat následující příkazy. Obnovit vaše klíčových vazeb na výchozí hodnoty v sadě Visual Studio na webu: **nástroje > Import a Export nastavení > Obnovit nastavení** nebo **nástroje > Možnosti > klávesnice > resetovat**.
+Tady jsou oblíbených zkratky v sadě Visual Studio: 
 
 | Zástupce (všechny profily) | Příkaz | Popis |
 |-|-|-|
@@ -52,6 +47,9 @@ Níže jsou uvedeny oblíbených zkratky v sadě Visual Studio.
 | **Ctrl+F5** | Spustit bez ladění | Místní spuštění aplikace bez ladění |
 | **CTRL + K, D** (výchozí profil) nebo **Ctrl + E, D** (C# profil) | Formátovat dokument | Vyčistí formátování porušení v souboru na základě vašeho znaky, mezery a nastavení odsazení |
 | **CTRL +\\, E** (výchozí profil) nebo **Ctrl + W, E** (C# profil) | Seznam chyb zobrazit | Zobrazit všechny chyby v dokument, projekt nebo řešení |
+
+> [!NOTE]
+> Některá rozšíření odpojení klíčových výchozí sady Visual Studio vazeb. Pokud chcete použít následující příkazy, obnovit výchozí nastavení v sadě Visual Studio vaší klíčových vazeb přechodem na **nástroje > Import a Export nastavení > Obnovit nastavení** nebo **nástroje > Možnosti > klávesnice > resetovat**.
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>Potřebuji způsob, jak rychle přejděte na soubory nebo typy.
 Visual Studio 2017 má funkci _přejděte na všechny_ (**Ctrl + T**). Přejděte na všechny umožňuje rychle přejít do souboru, typu, člen nebo symbol deklarace.

@@ -1,28 +1,30 @@
 ---
-title: "Automatické použití kódů product key při nasazení sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Automatické použití kódů product key při nasazení sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3fbea34afa4e82ea360a0dfefe4f18dc74d11f19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e9bfd9f72162d354d7e606d65146f602393d286
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatické použití kódů product key při nasazení sady Visual Studio
 Můžete použít kód product key prostřednictvím kódu programu jako součást skript, který slouží k automatizaci nasazení sady Visual Studio. Můžete nastavit kód product key na zařízení prostřednictvím kódu programu buď při instalaci sady Visual Studio nebo po dokončení instalace.
 
 ## <a name="apply-the-license-after-installation"></a>Použít licence, které jsou po instalaci
- Nainstalovaná verze sady Visual Studio s kódem product key můžete aktivovat pomocí `StorePID.exe` nástroj na cílových počítačích, v bezobslužném režimu. `StorePID.exe`je nástroj pro program, který se instaluje s Visual Studio 2017 v následujícím výchozím umístění: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
+ Nainstalovaná verze sady Visual Studio s kódem product key můžete aktivovat pomocí `StorePID.exe` nástroj na cílových počítačích, v bezobslužném režimu. `StorePID.exe` je nástroj pro program, který se instaluje s Visual Studio 2017 v následujícím výchozím umístění: <br> `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE`
 
  Spustit `StorePID.exe` se zvýšenými oprávněními, buď pomocí agenta System Center nebo příkazového řádku se zvýšenými oprávněními. Po ní následuje kód product key a kód produktu Microsoft (MPC).
 

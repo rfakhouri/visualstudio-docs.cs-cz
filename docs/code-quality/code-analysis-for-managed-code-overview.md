@@ -1,12 +1,8 @@
 ---
-title: "Analýza kódu pro spravovaný kód přehled | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+title: Analýza pro spravovaný kód v sadě Visual Studio kódu | Microsoft Docs
+ms.date: 03/26/2018
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.projectpropertypages.codeanalysis
 helpviewer_keywords:
@@ -17,13 +13,15 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5d30f84194ef7a48de106698c9ad4569e947923c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="code-analysis-for-managed-code-overview"></a>Analýza kódu pro spravovaný kód – přehled
+# <a name="overview-of-code-analysis-for-managed-code"></a>Přehled analýzy kódu pro spravovaný kód
+
+Visual Studio 2017 analyzuje spravovaného kódu dvěma způsoby: pomocí starší verze *FxCop* statické analýzy spravovaných sestavení a s platformou .NET kompilátoru *analyzátorů*. Toto téma popisuje analýza FxCop statické kódu. Další informace o analýze kódu pomocí analyzátorů kompilátoru platformy .NET najdete v tématu [přehled Roslyn analyzátorů](../code-quality/roslyn-analyzers-overview.md).
 
 Analýza kódu pro spravovaný kód analyzuje spravovaná sestavení a hlásí informace o sestavení, jako je například porušení programování a pravidla návrhu podle pokynů pro návrh rozhraní Microsoft .NET Framework.
 
@@ -76,5 +74,6 @@ Integrované funkce systém sestavení můžete spustit nástroj pro analýzu v 
 
 ## <a name="see-also"></a>Viz také
 
-[Použití sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
-[Postupy: povolení a zákaz automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Přehled Roslyn analyzátory](../code-quality/roslyn-analyzers-overview.md)
+- [Použití sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
+- [Postupy: povolení a zákaz automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

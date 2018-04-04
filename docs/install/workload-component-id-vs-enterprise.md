@@ -1,27 +1,27 @@
 ---
-title: "ID úlohy a součást Visual Studio Enterprise 2017 | Microsoft Docs"
-description: "Pomocí úloh a ID součástí k instalaci sady Visual Studio pomocí příkazového řádku nebo zadejte v závislosti na manifestu VSIX"
-keywords: 
+title: ID úlohy a součást Visual Studio Enterprise 2017 | Microsoft Docs
+description: Pomocí úloh a ID součástí k instalaci sady Visual Studio pomocí příkazového řádku nebo zadejte v závislosti na manifestu VSIX
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ac85cd7a19270692e7b997144f6235fd480bef
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 771a5484d59289dbdd0692385b3f8c3efac818fc
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 součástí adresáře
 
@@ -719,7 +719,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID:** Microsoft.VisualStudio.Workload.Node
 
-**Popis:** vytvářet škálovatelné síťové aplikace pomocí Node.js, asynchronní runtime jazyka JavaScript založeného na událostech. 
+**Popis:** vytvářet škálovatelné síťové aplikace pomocí Node.js, asynchronní runtime jazyka JavaScript založeného na událostech.
 
 ### <a name="components-included-by-this-workload"></a>Součásti zahrnuté tímto zatížením
 

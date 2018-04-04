@@ -1,12 +1,13 @@
 ---
-title: "Používání parametrů příkazového řádku pro instalaci sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Používání parametrů příkazového řádku pro instalaci sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/17/2018
 ms.reviewer: tims
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - command-line parameters
 - switches
@@ -14,13 +15,14 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 41e66e9fabd84bac7ed7e413d51f08e55ef93a6e
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku
 Když instalujete Visual Studio 2017 z příkazového řádku, můžete řídit nebo upravit instalaci různých parametry příkazového řádku. Z příkazového řádku můžete provádět následující akce:
@@ -38,14 +40,14 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 ## <a name="list-of-command-line-parameters"></a>Seznam parametrů příkazového řádku  
  Parametry příkazového řádku Visual Studio jsou velká a malá písmena.
 
-> Syntaxe:`vs_enterprise.exe [command] <options>...`
+> Syntaxe: `vs_enterprise.exe [command] <options>...`
 
 (Nahraďte `vs_enterprise.exe` podle potřeby pro edici produktu instalujete.)
 
 >[!TIP]
 > Další příklady použití příkazového řádku pro instalaci Visual Studio 2017 najdete v tématu [příklady parametr příkazového řádku](command-line-parameter-examples.md) stránky.)
 
-| **Příkaz** | **Popis** |
+| **příkaz** | **Popis** |
 | ----------------------- | --------------- |
 | (prázdný) | Nainstaluje produkt. |
 | `modify` | Upravuje nainstalovaný produkt. |
@@ -124,7 +126,7 @@ Seznam úloh a ID součástí, které jsou seřazené podle produktu Visual Stud
 ## <a name="error-codes"></a>Kódy chyb
 V závislosti na výsledku operace `%ERRORLEVEL%` proměnné prostředí se nastaví na jednu z následujících hodnot:
 
-| **Hodnota** | **Výsledek** |
+| **Hodnota** | **výsledek** |
 | --------- | ---------- |
 | 0 | Operace byla úspěšně dokončena |
 | 1602 | Operace byla zrušena |

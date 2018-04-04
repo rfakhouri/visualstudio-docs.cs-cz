@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio Průzkumníka testů – nejčastější dotazy | Microsoft Docs"
+title: Visual Studio Průzkumníka testů – nejčastější dotazy | Microsoft Docs
 ms.date: 1/15/2018
 ms.technology: vs-ide-test
 ms.topic: article
@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: ghogen
-ms.openlocfilehash: 1ca63ce299cb95546100e7f7ce7f98eb1c1616c2
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 9e64528b6b0669a0403188b540a90e9b921bfb34
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Průzkumníka testů – nejčastější dotazy
 
@@ -70,6 +70,10 @@ ms.lasthandoff: 03/19/2018
   Ikony vedle seskupení projektu, Namespace a třída odrážející stav testů v rámci tohoto seskupení. Najdete v následující tabulce.
 
   ![Ikony hierarchie Průzkumníka testů](media/testex-hierarchyicons.png)
+  
+### <a name="10-there-is-no-longer-a-file-path-filter-in-the-test-explorer-search-box"></a>10. Do vyhledávacího pole Průzkumníka testů již není filtr "Cesta k souboru".
+
+Filtr cesta k souboru v **Průzkumníka testů** vyhledávacího pole odebral ve verzi Visual Studio 2017 15.7 verzi preview 3. Tato funkce měla nízkou využití a Průzkumníka testů můžete načíst testovací metody rychlejší tak, že s výjimkou této funkce. Pokud tuto změnu přerušení vaší vývoj toku, dejte nám vědět, odesláním zpětnou vazbu na [komunity vývojářů](https://developercommunity.visualstudio.com/).
 
 ## <a name="features"></a>Funkce
 

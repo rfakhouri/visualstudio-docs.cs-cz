@@ -1,12 +1,13 @@
 ---
-title: "Proměnné (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Proměnné (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
@@ -16,15 +17,15 @@ helpviewer_keywords:
 - coercion
 - case sensitivity, JavaScript variable name
 ms.assetid: 12a450e5-4818-4a09-9878-cd7c6cd2a248
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f30946899ad35286dfb1e786cf903d58f5c98cb6
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: c1d09f634bd4901e4015766bf55f272926a0a31c
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="variables-javascript"></a>Proměnné (JavaScript)
 V [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], proměnná obsahuje hodnotu, jako je například "hello" nebo 5. Pokud použijete proměnnou, odkazujete na data je představuje, například `NumberOfDaysLeft = EndDate - TodaysDate`.  
@@ -46,9 +47,9 @@ var count = 0, amount = 100;
  Pokud není inicializovat vaše proměnná v `var` příkaz automaticky trvá na hodnotě `undefined`.  
   
 ## <a name="naming-variables"></a>Názvy proměnných  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]je malá a velká písmena jazyk. To znamená, že název proměnné, jako **Můjčítač** se liší od názvu proměnné **Můjčítač**. Názvy proměnných může být o libovolné délce. Pravidla pro vytváření právní názvy proměnných jsou následující:  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] je malá a velká písmena jazyk. To znamená, že název proměnné, jako **Můjčítač** se liší od názvu proměnné **Můjčítač**. Názvy proměnných může být o libovolné délce. Pravidla pro vytváření právní názvy proměnných jsou následující:  
   
--   První znak musí být k písmenu ASCII (velká nebo malá písmena) nebo znakem podtržítka (_). Všimněte si, že číslo nelze použít jako první znak.  
+-   První znak musí být ASCII písmeno (velká nebo malá písmena), písmenem, která odpovídá proměnné konvence pojmenování ve formátu Unicode nebo znakem podtržítka (_). Všimněte si, že číslo nelze použít jako první znak.  
   
 -   Následující znaky musí být písmena, čísla nebo podtržítka (_).  
   
@@ -103,7 +104,7 @@ var area = length * width;
 ```  
   
 ## <a name="coercion"></a>Převod  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)]je volného typu jazyk, oproti silného typu jazyky jako C++. To znamená, že proměnné JavaScript mají žádný předem určený typ. Typ proměnné místo toho je typ jeho hodnoty. Toto chování umožňuje považovat hodnotu, jako by šlo jiného typu.  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] je volného typu jazyk, oproti silného typu jazyky jako C++. To znamená, že proměnné JavaScript mají žádný předem určený typ. Typ proměnné místo toho je typ jeho hodnoty. Toto chování umožňuje považovat hodnotu, jako by šlo jiného typu.  
   
  V [!INCLUDE[javascript](../javascript/includes/javascript-md.md)], aniž by došlo k výjimce můžete provádět operace na hodnoty různých typů. [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] Překladač implicitně převede, nebo *převede*, jeden dat typy do druhé a pak provede operaci. Pravidla pro převod řetězce, počet a logické hodnoty jsou následující:  
   

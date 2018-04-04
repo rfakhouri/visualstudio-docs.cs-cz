@@ -1,7 +1,7 @@
 ---
 title: Spustit TensorFlow model v cloudu
-description: "Spusťte tensorflow model v azure hloubkové učení virtuálních počítačů"
-keywords: "AI, visual studio, hloubkové učení virtuálního počítače"
+description: Spusťte tensorflow model v azure hloubkové učení virtuálních počítačů
+keywords: AI, visual studio, hloubkové učení virtuálního počítače
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -12,15 +12,15 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f02a03ca314138715b46e098416c7eef49e6d72
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 7006802f38076283221b9351ba9660448e64a696
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Cvičení modelu TensorFlow v cloudu
 
-V tomto kurzu jsme se trénování modelu TensorFlow pomocí [datovou sadu MNIST](http://yann.lecun.com/exdb/mnist/) v Azure [hloubkové Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) virtuálního počítače.
+V tomto kurzu jsme se trénování modelu TensorFlow pomocí [datovou sadu MNIST](http://yann.lecun.com/exdb/mnist/) na Azure [hloubkové Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview) virtuálního počítače.
 
 Databázi MNIST má sadu 60 000 příklady školení a testovací sadu 10 000 příklady psané číslic.
 
@@ -42,7 +42,7 @@ echo -e ". /etc/profile\n$(cat ~/.bashrc)" > ~/.bashrc
 
 ### <a name="download-sample-code"></a>Stáhněte si ukázkový kód
 
-Stáhněte si to [úložiště GitHub](https://github.com/Microsoft/samples-for-ai) obsahující ukázky pro zahájení práce s hloubkovým learning napříč TensorFlow, CNTK, Theano a další.
+Stáhněte si to [úložiště GitHub](https://github.com/Microsoft/samples-for-ai) obsahující ukázky pro zahájení práce s hloubkovým learning na TensorFlow, CNTK, Theano a další.
 
 ## <a name="open-project"></a>Otevřít projekt
 

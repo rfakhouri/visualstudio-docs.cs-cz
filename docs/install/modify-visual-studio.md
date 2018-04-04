@@ -1,13 +1,14 @@
 ---
 title: Upravit Visual Studio 2017 | Microsoft Docs
-description: "Zjistěte, jak upravit sadu Visual Studio, krok za krokem."
+description: Zjistěte, jak upravit sadu Visual Studio, krok za krokem.
 ms.custom: H1Hack27Feb2017
 ms.date: 11/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -16,13 +17,14 @@ helpviewer_keywords:
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8278b138e8cf7a8780ad83d591a823fdb85f2b08
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 597da9be2ce4c6d22beaa6fc5fc419ef785ece94
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="modify-visual-studio-2017-by-adding-or-removing-workloads-and-components"></a>Visual Studio 2017 upravit přidáním nebo odebráním úlohy a součásti
 Ne jenom jsme provedli je snazší pro vás k přizpůsobení Visual Studio úlohám chcete dosáhnout, také jsme provedli ho usnadňují příliš přizpůsobit Visual Studio. Žádné další hledání v Ovládacích panelech Uděláte to tak; Místo toho začněte nového instalačního programu Visual Studio a proveďte požadované změny.
@@ -42,7 +44,7 @@ Tady je způsob.
      ![Instalační program sady Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "vyhledejte instalační program Microsoft Visual Studio")
 
      >[!NOTE]
-     V některých počítačích může instalační program Visual Studio uvedené v části písmeno **"M"** jako **Microsoft Visual Studio, instalační program**.<br/><br/> Alternativně můžete najít instalační program Visual Studio v následujícím umístění:`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     V některých počítačích může instalační program Visual Studio uvedené v části písmeno **"M"** jako **Microsoft Visual Studio, instalační program**.<br/><br/> Alternativně můžete najít instalační program Visual Studio v následujícím umístění: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2.  Klikněte nebo klepněte sem a můžete spustit instalační program a potom vyberte **upravit**.  
 
@@ -71,5 +73,5 @@ Tady je několik další možnosti podpory:
 
 ## <a name="see-also"></a>Viz také
 * [Nainstalovat Visual Studio 2017](install-visual-studio.md)
-* [Aktualizace Visual Studio 2017](update-visual-studio.md)
+* [Update Visual Studio 2017](update-visual-studio.md)
 * [Odinstalace Visual Studio 2017](uninstall-visual-studio.md)

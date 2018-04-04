@@ -7,18 +7,18 @@ ms.suite: ''
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: heaths
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95b60369350ad099e53b143ff85adbcef250b8b9
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 50a63b954c87e6b5308e499be2422948fa865964
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalace nástroje sestavení do kontejneru
 
@@ -58,7 +58,7 @@ Visual Studio nástroje - sestavení a ve větší míře Visual Studio – vyž
 
 **On Windows 10**:
 
-1. [Rick, klikněte na ikonu Docker pro systém Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na hlavním panelu a klikněte na **nastavení...**.
+1. [Rick, klikněte na ikonu Docker pro systém Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na hlavním panelu a klikněte na **nastavení...** .
 2. [Klikněte na démon](https://docs.docker.com/docker-for-windows/#docker-daemon) části.
 3. [Přepnutí **základní** ](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) tlačítko pro **Upřesnit**.
 4. Přidejte následující pole JSON vlastnost zvýšit místa na disku pro 120GB (víc než dost pro nástroje sestavení s místo pro růst).

@@ -1,31 +1,31 @@
 ---
-title: "Řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio | Microsoft Docs"
-description: 
-ms.custom: 
+title: Řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio | Microsoft Docs
+description: ''
+ms.custom: ''
 ms.date: 02/12/2018
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
-ms.assetid: 
+ms.assetid: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d1e330a6ab378c61876b3f869f88b2a29c35a1
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: fc5f1c07f709c1cdb8e20704dbea9cb5550b14b3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio
 My jsme řešení nejčastější chyby související s sítě nebo proxy, které se můžete setkat při instalaci nebo použití sady Visual Studio za bránou firewall nebo proxy server.
@@ -38,7 +38,7 @@ Této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu pr
 
 - Restartujte sadu Visual Studio. By se zobrazit dialogové okno ověřování proxy serveru. Zadejte přihlašovací údaje po zobrazení výzvy v dialogovém okně.
 
-- Pokud restartování sady Visual Studio není problém vyřešen, může to být proxy server nezobrazí výzvu pro přihlašovací údaje pro protokol http: &#47; &#47;go.microsoft.com adresy, ale nebude tak &#42;. visualStudio.com adresy. Pro tyto servery zvažte vytvoření seznamu povolených následující adresy URL odblokování všech scénářích přihlášení v sadě Visual Studio:
+- Pokud restartování sady Visual Studio není problém vyřešen, může to být proxy server nezobrazí výzvu pro přihlašovací údaje pro protokol http:&#47;&#47;go.microsoft.com adresy, ale nebude tak &#42;. visualStudio.com adresy. Pro tyto servery zvažte vytvoření seznamu povolených následující adresy URL odblokování všech scénářích přihlášení v sadě Visual Studio:
 
     - &#42;.windows.net
 
@@ -50,7 +50,7 @@ Této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu pr
 
     - &#42;.live.com
 
-- V opačném případě můžete odebrat http: &#47; &#47;go.microsoft.com adresní ze seznamu povolených serverů, aby se objeví dialogové okno ověřování proxy serveru pro službu protokolu http: &#47; &#47;go.microsoft.com adresy a koncové body serveru, pokud je v sadě Visual Studio restartovat.
+- V opačném případě můžete odebrat http:&#47;&#47;go.microsoft.com adresní ze seznamu povolených serverů, aby se objeví dialogové okno ověřování proxy serveru pro službu protokolu http:&#47;&#47;go.microsoft.com adresy a koncové body serveru, pokud je v sadě Visual Studio restartovat.
 
     NEBO
 
@@ -98,13 +98,13 @@ Povolte připojení pro následující adresy URL:
 
 - https:&#47;&#47;app.vsspsext.visualstudio.com
 
-- &#42;. azurewebsites.NET (pro Azure připojení)
+- &#42;. azurewebsites.net (pro Azure připojení)
 
 - &#42;.visualstudio.com
 
 - CDN.vsassets.IO (sítě pro doručování obsahu hostitele nebo CDN, obsah)
 
-- &#42;. gallerycdn.vsassets.IO (rozšíření hostitele služby VSTS)
+- &#42;. gallerycdn.vsassets.io (rozšíření hostitele služby VSTS)
 
 - static2.sharepointonline.com (hostuje prostředky, které Visual Studio používá v sadě Office uživatelského rozhraní Fabric kit, jako je například písem)
 

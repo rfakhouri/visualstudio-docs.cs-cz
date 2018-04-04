@@ -13,17 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: b16c0627fbebf13566726a7f4bfb56ecb2e6a64a
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 273f67b997da80b27c124d3119ec0871f0a061b8
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/03/2018
 ---
 1.  Na zařízení nebo server počítač, který chcete ladit (spíše než počítač spuštění sady Visual Studio) získáte správnou verzi nástrojů pro vzdálenou.
 
     |Version|Odkaz|Poznámky|
     |-|-|-|
-    |Visual Studio 2017 (nejnovější verze)|[Nástroje pro vzdálenou](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|Vždy stáhněte verzi odpovídající operační systém zařízení (x86 nebo x64). Pokud je povolený režim rozšířené zabezpečení (Windows Server), musíte přidat nový důvěryhodných serverů po zobrazení výzvy.|
+    |Visual Studio 2017 (nejnovější verze)|[Nástroje pro vzdálenou](https://www.visualstudio.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|Vždy stáhněte verzi odpovídající operační systém zařízení (x86 nebo x64). Pokud je povolený režim rozšířené zabezpečení (Windows Server), musíte přidat nový důvěryhodných serverů po zobrazení výzvy.|
     |Visual Studio 2017 (starší)|[Nástroje pro vzdálenou](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Nástroje pro vzdálenou pro dřívější verze Visual Studio 2017 jsou dostupné z My.VisualStudio.com. Pokud se zobrazí výzva, spojení skupině volné Essentials vývojáře Visual Studio nebo Přihlaste se pomocí vašeho předplatného sady Visual Studio ID. Pokud je povolený režim rozšířené zabezpečení (Windows Server), musíte přidat nový důvěryhodných serverů po zobrazení výzvy.|
     |Visual Studio 2015 Update 3|[Nástroje pro vzdálenou](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, spojení skupině volné Essentials vývojáře Visual Studio nebo Přihlaste se pomocí vašeho předplatného sady Visual Studio ID. Pokud je povolený režim rozšířené zabezpečení (Windows Server), musíte přidat nový důvěryhodných serverů po zobrazení výzvy.|
     |Visual Studio 2015 (starší)|[Nástroje pro vzdálenou](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Pokud se zobrazí výzva, spojení skupině volné Essentials vývojáře Visual Studio nebo Přihlaste se pomocí vašeho předplatného sady Visual Studio ID. Pokud je povolený režim rozšířené zabezpečení (Windows Server), musíte přidat nový důvěryhodných serverů po zobrazení výzvy.|

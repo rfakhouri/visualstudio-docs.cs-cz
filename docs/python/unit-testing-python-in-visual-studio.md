@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d68b2b8a4060d3c77bed996aa0b20054d989487b
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: eee1ec05a46050c5a994aa2d774a5be0090171f3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="setting-up-unit-testing-for-python-code"></a>Nastavení pro kód Python testování částí
 
@@ -37,7 +37,7 @@ Tento článek poskytuje stručný obrys možnosti testování v sadě Visual St
 
 ## <a name="discovering-and-viewing-tests"></a>Zjišťování a zobrazení testů
 
-Podle konvence, Visual Studio identifikuje testů jsou jako metody, jejichž názvy začínají `test`. Pokud chcete zobrazit toto chování, postupujte takto:
+Podle konvence, Visual Studio identifikuje testy jako metody, jejichž názvy začínají `test`. Pokud chcete zobrazit toto chování, postupujte takto:
 
 1. Otevřete [projekt Python](managing-python-projects-in-visual-studio.md) načíst v sadě Visual Studio, klikněte pravým tlačítkem na projekt, vyberte **Přidat > novou položku...** , pak vyberte **testování částí Python** následuje **přidat**.
 

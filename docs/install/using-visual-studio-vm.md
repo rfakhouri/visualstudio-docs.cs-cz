@@ -1,24 +1,24 @@
 ---
-title: "Na virtuálním počítači Azure pomocí sady Visual Studio | Microsoft Docs"
-description: "Další informace o použití sady Visual Studio na virtuální počítač Azure"
+title: Na virtuálním počítači Azure pomocí sady Visual Studio | Microsoft Docs
+description: Další informace o použití sady Visual Studio na virtuální počítač Azure
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - azure services
 - virtual machine; VM
 - installation
 - visual studio
 author: PhilLee-MSFT
-ms.author: phillee
-manager: sacalla
+ms.author: tglee
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4492a35c7d58aa92c2c3e86de5bd6be8f8ad9eca
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a id="top"> </a> Visual Studio bitové kopie v Azure
 V předkonfigurovaných Azure virtuálního počítače (VM) pomocí sady Visual Studio je rychlý a snadný způsob, jak přechod od nic k prostředí vývoj nahoru a spuštěna. Bitové kopie systému s různými konfiguracemi sady Visual Studio jsou k dispozici v [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1).
@@ -28,12 +28,13 @@ Nové do Azure? [Vytvořit bezplatný účet Azure](https://azure.microsoft.com/
 ## <a name="what-configurations-and-versions-are-available"></a>Jaké konfigurace a verzí jsou k dispozici?
 Bitové kopie pro nejnovější hlavní verze, Visual Studio 2017 a Visual Studio 2015, najdete v Azure Marketplace. Pro každou hlavní verzi uvidíte, původně vydaná verze (RTW) a nejnovější aktualizovaných verzí. Každý z těchto verzí nabízí Visual Studio Enterprise a edice Visual Studio Community. Tyto bitové kopie se aktualizovaly nejméně každý měsíc, aby obsahovaly nejnovější aktualizace Visual Studio a systému Windows. Při názvy imagí zůstávají stejné, obsahuje popis každé bitové kopie verze nainstalovaného produktu a datum "od" image.
 
-| Prodejní verze              | Edice            | Verze produktu     |
-|:-----------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: Nejnovější (verze 15,6 operací) |    Enterprise, Community     |      Verze 15.6.0     |
-|         Visual Studio 2017: RTW           |    Enterprise, Community     |      Verze 15.0.10    |
-|   Visual Studio 2015: Nejnovější (Update 3)   |    Enterprise, Community     |  Verze 14.0.25431.01  |
-|         Visual Studio 2015: RTW           |             Žádné             | (Jeho platnost pro obsluhu) |
+| Prodejní verze                                              | Edice                     |     Verze produktu     |
+|:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
+| Visual Studio 2017: Nejnovější (verze 15,6 operací)                    |    Enterprise, Community     |      Verze 15.6.4     |
+| Visual Studio 2017: Nejnovější verze Preview (verze 15.7 Preview 3) |    Enterprise, Community     |      Verze 15.7.0     |
+|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Verze 15.0.10    |
+|   Visual Studio 2015: Nejnovější (Update 3)                      |    Enterprise, Community     |  Verze 14.0.25431.01  |
+|         Visual Studio 2015: RTW                              |             Žádné             | (Jeho platnost pro obsluhu) |
 
 > [!NOTE]
 > V souladu s Microsoft obsluhy zásad původně vydaná verze (RTW) sady Visual Studio 2015 vypršela pro obsluhu. Visual Studio 2015 Update 3 je jediný zbývající verze nabízí pro produktovou řadu sady Visual Studio 2015.
@@ -54,7 +55,7 @@ Jsme k instalaci sady Visual Studio, při vytváření bitové kopie použijte n
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
        add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^ 
+       add Microsoft.Net.Component.4.7.TargetingPack ^
        add Microsoft.Net.Component.4.6.2.SDK ^
        add Microsoft.Net.Component.4.6.2.TargetingPack ^
        add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
@@ -75,14 +76,14 @@ Azure nabízí celou řadu velikostí virtuálních počítačů. Protože Visua
    * Standard_D2_v2
    * Standard_D2S_v2
    * Standard_D3_v2
-    
+
 Další informace o nejnovější velikosti počítačů najdete v tématu [velikosti pro systém Windows virtuálních počítačů v Azure](/azure/virtual-machines/windows/sizes).
 
 S Azure můžete znovu vyvážit počáteční volbu změnou velikosti virtuálního počítače. Můžete zřídit nový virtuální počítač s více odpovídající velikost, nebo změnit velikost vašeho stávajícího virtuálního počítače na jiný základní hardware. Další informace najdete v tématu [změnit velikost virtuálního počítače Windows](/azure/virtual-machines/windows/resize-vm).
 
 ## <a name="after-the-vm-is-running-whats-next"></a>Jakmile je virtuální počítač spuštěný, co je další?
 Visual Studio odpovídá modelu "přineste vlastní licence" v Azure. Stejně jako u instalace na speciální hardware, jeden z první kroků je licencování instalace Visual Studia. Odemknout Visual Studio, buď:
-- Přihlaste se pomocí účtu Microsoft, který je spojen s předplatným Visual Studio 
+- Přihlaste se pomocí účtu Microsoft, který je spojen s předplatným Visual Studio
 - Odemknout Visual Studio s kódem product key, které byly dodány s počátečním nákupu
 
 Další informace najdete v tématu [Přihlaste se k sadě Visual Studio](../ide/signing-in-to-visual-studio.md) a [jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md).

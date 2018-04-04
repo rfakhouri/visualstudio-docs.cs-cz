@@ -1,27 +1,27 @@
 ---
-title: "Visual Studio 2017 nástroje pro sestavení pracovního vytížení a součást ID | Microsoft Docs"
-description: "Použít identifikátory pracovního vytížení a součást Visual Studio k vytvoření aplikace klasické založené na systému Windows"
-keywords: 
+title: Visual Studio 2017 nástroje pro sestavení pracovního vytížení a součást ID | Microsoft Docs
+description: Použít identifikátory pracovního vytížení a součást Visual Studio k vytvoření aplikace klasické založené na systému Windows
+keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.date: 03/05/2018
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: 
+ms.service: ''
 ms.technology:
 - vs-acquisition
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da292ede647539182b6b1f2e8aa6c843d2f0985
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 415ad88d9ef51a5002c7e64dcd4abf76f97167c3
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="visual-studio-build-tools-2017-component-directory"></a>Visual Studio 2017 nástroje pro sestavení součástí adresáře
 
@@ -68,7 +68,7 @@ Microsoft.Net.Core.Component.SDK.1x | Nástroje pro vývoj 1.0 1.1 základní ro
 
 **ID:** Microsoft.VisualStudio.Workload.NodeBuildTools
 
-**Popis:** vytvářet škálovatelné síťové aplikace pomocí Node.js, asynchronní runtime jazyka JavaScript založeného na událostech. 
+**Popis:** vytvářet škálovatelné síťové aplikace pomocí Node.js, asynchronní runtime jazyka JavaScript založeného na událostech.
 
 ### <a name="components-included-by-this-workload"></a>Součásti zahrnuté tímto zatížením
 

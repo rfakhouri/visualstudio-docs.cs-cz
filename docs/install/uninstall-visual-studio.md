@@ -1,26 +1,28 @@
 ---
 title: Odinstalace Visual Studio 2017 | Microsoft Docs
-description: "Další informace o odinstalaci Visual Studio, krok za krokem."
-ms.custom: 
+description: Další informace o odinstalaci Visual Studio, krok za krokem.
+ms.custom: ''
 ms.date: 08/16/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-acquisition
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3f2d472d5fc4b6581a9e94e1c2efacc2299eaca0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c6ce572e621e8e49159ce0bd204539cb3fc38a45
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="uninstall-visual-studio"></a>Odinstalace Visual Studio
 Tato stránka provede odinstalace Visual Studio, naše integrovaná sada nástrojů produktivitu pro vývojáře.  
@@ -32,7 +34,7 @@ Tato stránka provede odinstalace Visual Studio, naše integrovaná sada nástro
      ![Instalační program sady Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "vyhledejte instalační program Microsoft Visual Studio")
 
      >[!NOTE]
-     V některých počítačích může instalační program Visual Studio uvedené v části písmeno **"M"** jako **Microsoft Visual Studio, instalační program**.<br/><br/> Alternativně můžete najít instalační program Visual Studio v následujícím umístění:`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     V některých počítačích může instalační program Visual Studio uvedené v části písmeno **"M"** jako **Microsoft Visual Studio, instalační program**.<br/><br/> Alternativně můžete najít instalační program Visual Studio v následujícím umístění: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2.  Kliknutím na spustit instalační program, klikněte na ![podrobnosti ikonu](media/vs2017uninstall-UninstallIcon.png "vyberte ikonu Možnosti") ikonu a pak klikněte na tlačítko **odinstalovat**.  
 

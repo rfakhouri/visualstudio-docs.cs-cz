@@ -1,9 +1,6 @@
 ---
-title: "Potlačení upozornění analýzy kódu v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Potlačení upozornění analýzy kódu v sadě Visual Studio | Microsoft Docs
 ms.date: 01/29/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
 ms.topic: article
 helpviewer_keywords:
@@ -18,13 +15,13 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 5862b164c72c8f07c78db8948face95edfde357c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ef69462dc9b51fbd92da11bc5adb1bfa61e8a792
+ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/03/2018
 ---
-# <a name="suppressing-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
+# <a name="suppress-code-analysis-warnings"></a>Potlačení upozornění analýzy kódu
 
 Je často užitečné k označení, že upozornění se nevztahuje. To znamená členům týmu, zda kód je zkontrolovat, a zda lze potlačit upozornění. Zdroj potlačení (ISS) používá <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut k potlačení upozornění. Atribut se může blízko segment kódu, který vygeneroval upozornění. Můžete přidat <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut ke zdrojovému souboru zadáním, nebo můžete použít na upozornění v místní nabídce **seznam chyb** automatické přidání.
 
@@ -94,7 +91,7 @@ Pokud existují striktní výkonu důvody pro minimalizaci metadata potlačení 
 
 Z důvodů udržovatelnosti vynechání název pravidla se nedoporučuje.
 
-## <a name="suppressing-selective-violations-within-a-method-body"></a>Potlačení selektivní porušení v textu – metoda
+## <a name="suppress-selective-violations-within-a-method-body"></a>Potlačit selektivní porušení v textu – metoda
 
 Potlačení atributů může být použitý na metodu, ale nelze vložit do těla metody. To znamená, že jsou všechny porušení konkrétní pravidlo potlačovány Pokud přidáte <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atribut do metody.
 
@@ -160,7 +157,7 @@ Globální úrovni suppressions jsou jedině k potlačení zprávy, které odkaz
 `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`
 
 > [!NOTE]
-> `Target`vždy obsahuje položku plně kvalifikovaný název.
+> `Target` vždy obsahuje položku plně kvalifikovaný název.
 
 ## <a name="global-suppression-file"></a>Globální potlačení souboru
 
@@ -168,4 +165,5 @@ Soubor globální potlačení udržuje suppressions, které jsou globální úro
 
 ## <a name="see-also"></a>Viz také
 
-<xref:System.Diagnostics.CodeAnalysis>
+- <xref:System.Diagnostics.CodeAnalysis>
+- [Použití Roslyn analyzátory](../code-quality/use-roslyn-analyzers.md)
