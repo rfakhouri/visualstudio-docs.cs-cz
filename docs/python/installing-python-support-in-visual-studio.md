@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 33b9a56d88b4f64c4253126dafa5e3515aa498c6
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 6276c70cebd8f4d71e056142258422645c50cdfa
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalace podpory Python v sadě Visual Studio v systému Windows
 
@@ -80,6 +80,16 @@ Chcete-li rychle otestování podpory Python po provedení kroků instalace, ote
 |   |   |
 |---|---|
 | ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) k instalaci podpory jazyka Python v sadě Visual Studio.|
+
+### <a name="troubleshooting"></a>Poradce při potížích
+
+Pokud narazíte na potíže instalaci nebo spuštění Python v sadě Visual Studio, zkuste následující postup:
+
+- Určení, zda dochází ke stejné chybě pomocí rozhraní příkazového řádku jazyka Python, který je, spuštěná `python.exe` z příkazového řádku.
+- Použití [opravit možnosti v instalačním programu sady Visual Studio](../install/repair-visual-studio.md).
+- Opravit nebo znovu nainstalovat Python prostřednictvím **Nastavení > aplikace a funkce** v systému Windows.
+
+**Příklad chyba**: Nepodařilo se spustit proces interaktivní: System.ComponentModel.Win32Exception (0x80004005): Neznámá chyba (0xc0000135) na Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext().
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 

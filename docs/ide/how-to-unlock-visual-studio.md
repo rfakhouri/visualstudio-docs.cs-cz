@@ -7,18 +7,18 @@ ms.suite: ''
 ms.technology:
 - vs-acquisition
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bbdab7001ba8724c888b9fc20291ef253f73d4c
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 8e08831347c09d80427d1fba38c926f7d1b227f4
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="how-to-unlock-visual-studio"></a>Postupy: odemknout Visual Studio
 
@@ -70,7 +70,7 @@ Pokud není znovu zadat přihlašovací údaje, token začne přejděte zastaral
 
 ### <a name="update-expired-licenses"></a>Aktualizovat vypršela platnost licence
 
- Pokud vypršela platnost předplatného úplně a již nemáte přístupová práva k sadě Visual Studio, musíte obnovit předplatné nebo přidat jiný účet, který má předplatné. Chcete-li zobrazit další informace o licenci, kterou používáte, přejděte na **soubor**, **nastavení účtu** a prohlédněte si informace o licenci na pravé straně dialogového okna. Pokud máte jiné předplatné přidružený k jinému účtu, tento účet přidejte do **všechny účty** seznamu na levé straně dialogového okna tak, že vyberete **přidat účet...** odkaz.
+ Pokud vypršela platnost předplatného úplně a již nemáte přístupová práva k sadě Visual Studio, musíte obnovit předplatné nebo přidat jiný účet, který má předplatné. Chcete-li zobrazit další informace o licenci, kterou používáte, přejděte na **soubor**, **nastavení účtu** a prohlédněte si informace o licenci na pravé straně dialogového okna. Pokud máte jiné předplatné přidružený k jinému účtu, tento účet přidejte do **všechny účty** seznamu na levé straně dialogového okna tak, že vyberete **přidat účet...**  odkaz.
 
 ## <a name="see-also"></a>Viz také
 

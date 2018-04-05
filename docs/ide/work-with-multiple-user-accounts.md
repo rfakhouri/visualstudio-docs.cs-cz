@@ -6,17 +6,17 @@ ms.reviewer: ''
 ms.suite: ''
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 535b01f8f0ef5840543013509d40b4b8393fa7f6
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 73b3ae67cc4396a7fc9041cb5074c84ffa2aa73a
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 
@@ -24,7 +24,7 @@ Pokud máte více účty Microsoft nebo pracovní nebo školní účty, můžete
 
 Po přidání více účtů na jednom počítači, bude tuto sadu účtů přemístit s vámi, při přihlášení k sadě Visual Studio na jiném počítači. Je důležité si uvědomit, že i když dojde k přemístění názvy účtů, není provádět přihlašovací údaje. Proto zobrazí se výzva k zadání přihlašovacích údajů pro tyto další účty poprvé pokusí použít jejich prostředky na nový počítač.
 
-Tento návod ukazuje, jak přidat více účtů pro Visual Studio, a jak zjistit, že prostředky přístupné z těchto účtů se projeví v umístí, jako **přidat připojení službě** dialogu **Průzkumníka serveru**, a **Team Explorer**.
+Tento návod ukazuje, jak přidat více účtů pro Visual Studio, a jak zjistit, že prostředky přístupné z těchto účtů se projeví v umístí, jako **přidat připojení službě** dialogu **Průzkumníka serveru** , a **Team Explorer**.
 
 ## <a name="sign-in-to-visual-studio"></a>Přihlaste se k sadě Visual Studio
 
