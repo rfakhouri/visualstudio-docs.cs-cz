@@ -1,23 +1,25 @@
 ---
-title: "Vytváření sad pravidel analýzy vlastního kódu | Microsoft Docs"
-ms.custom: 
+title: Vytváření sad pravidel analýzy vlastního kódu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-code-analysis
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 88db3a0a-1b92-496d-9fae-b2bb980f5933
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 18f527f30afe21678874f3555b539ce9d60bd816
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>Vytváření vlastních sad pravidel Analýzy kódu
 Použijete pravidel analýzy kódu pro spravovaný projekt kódu zadáním sadu pravidel, která obsahuje jeden nebo více pravidel. Standardní pravidla sady Microsoft zadejte skupiny pravidel, která jsou uspořádána podle funkce a hloubka. Pravidla pro pokynů základní návrhu a pravidla pokynů návrhu pro rozšířené Microsoft například obsahovat pravidla, které soustředit na použitelnost a jeho udržovatelnost problémy s přidané důraz na pravidla pojmenování v sadě pravidel Extended.  

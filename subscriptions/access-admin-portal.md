@@ -1,5 +1,5 @@
 ---
-title: "Přístup k portálu správce | Visual Studio Marketplace"
+title: Přístup k portálu správce | Visual Studio Marketplace
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,10 +10,10 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 41bee30e54411a3b9bcaed6c72be3909f2d1cfab
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>Přístup k portálu správce předplatných sady Visual Studio
 ## <a name="for-mpsa"></a>Pro MPSA
@@ -35,22 +35,22 @@ Pokud potřebujete informace o tom, jak nastavit správce, prosím sledovat [tot
 Pokud jste již byla nastavili jako správce, pak můžete přejít přímo na Visual Studio odběry [portálu správce](https://manage.visualstudio.com).
 
 ## <a name="for-cloud-subscriptions"></a>Pro Cloudová předplatná
-Pokud si koupíte Visual Studio Cloudová předplatná, jsou automaticky nastavíte jako správce pro těchto předplatných.  Pokud jste už zakoupili, je, je můžete spravovat v [https://manage.visualstudio.com](https://manage.visualstudio.com).
+Pokud si koupíte Visual Studio Cloudová předplatná, jsou automaticky nastavíte jako správce pro těchto předplatných.  Pokud jste už zakoupili, je, je můžete spravovat v [ https://manage.visualstudio.com ](https://manage.visualstudio.com).
 
-Chcete-li zakoupit Visual Studio Cloudová předplatná, navštivte Visual Studio Marketplace v [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscriptions).
+Chcete-li zakoupit Visual Studio Cloudová předplatná, navštivte Visual Studio Marketplace v [ https://marketplace.visualstudio.com/subscriptions ](https://marketplace.visualstudio.com/subscriptions).
 
 
 ## <a name="for-programs-subscriptions"></a>Pro předplatné programy
 
 ### <a name="microsoft-bizspark"></a>Microsoft BizSpark
-Pokud jste správcem Microsoft BizSpark, můžete spravovat odběry Visual Studio vaší organizace v **Moje BizSpark** po přihlášení na: [https://bizspark.microsoft.com/my/index](https://bizspark.microsoft.com/my/index).
+Pokud jste správcem Microsoft BizSpark, můžete spravovat odběry Visual Studio vaší organizace v **Moje BizSpark** po přihlášení na: [ https://bizspark.microsoft.com/my/index ](https://bizspark.microsoft.com/my/index).
 
-Další informace o programu Microsoft BizSpark [https://bizspark.microsoft.com](https://bizspark.microsoft.com).
+Další informace o programu Microsoft BizSpark [ https://bizspark.microsoft.com ](https://bizspark.microsoft.com).
 
 
 ### <a name="imagine"></a>Představte si
-Pokud jste správce a Microsoft Imagine, navštivte [https://imagine.microsoft.com/institutions/index](https://imagine.microsoft.com/institutions/index).
+Pokud jste správce a Microsoft Imagine, navštivte [ https://imagine.microsoft.com/institutions/index ](https://imagine.microsoft.com/institutions/index).
 
 
 ### <a name="partner"></a>Partner
-Další informace o předplatných Microsoft Partner sítě (MPN) Visual Studio, podívejte se na tomto článku vám pomohou zakoupit a spravovat prostředky: [https://support.microsoft.com/help/4013871/ Microsoft-Partner-Network-MPN-Visual-Studio-subscriptions](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).
+Další informace o předplatných Microsoft Partner sítě (MPN) Visual Studio, podívejte se na tomto článku vám pomohou zakoupit a spravovat prostředky: [ https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions ](https://support.microsoft.com/help/4013871/microsoft-partner-network-mpn-visual-studio-subscriptions).

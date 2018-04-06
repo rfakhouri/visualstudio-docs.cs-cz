@@ -1,5 +1,5 @@
 ---
-title: "Správa oprávnění správce na portálu správce předplatných sady Visual Studio"
+title: Správa oprávnění správce na portálu správce předplatných sady Visual Studio
 Author: evanwindom
 Ms.author: jaunger
 Manager: evelynp
@@ -10,15 +10,15 @@ Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
 ms.openlocfilehash: 83bf27d5aaa99c2095ad8a1fafd7541df90f316b
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/05/2018
 ---
 # <a name="managing-administrator-rights-in-the-visual-studio-subscriptions-administrator-portal"></a>Správa oprávnění správce na portálu správce předplatných sady Visual Studio
 
 ## <a name="overview"></a>Přehled 
-V aplikaci Visual Studio odběry portálu správce (https://manage.visualstudio.com) existují dvě role správy:
+Na portálu správce předplatných Visual Studio (https://manage.visualstudio.com), existují dvě role správy:
 
 **Super Admins:** při prvním nastavení organizace, bude primární server nebo obraťte se na oznámení super admin ve výchozím nastavení. Kontakt primární nebo oznámení můžete přiřadit další super admins nebo administrators. Kromě správy předplatného u jednotlivých odběratelů, super správce můžete přidávat a odebírat Další správci a správci superuživatele. Pokud v systému existuje více než dva super admins, super admin odstranit všechny kromě poslední dva pro zabezpečení. 
 
