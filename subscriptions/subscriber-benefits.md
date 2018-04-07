@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio odběry - výhody pro předplatitele"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 2/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the benefits included in your Visual Studio subscription
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b42d4f826d6bc589ecf16db2d1d4eddb98d81ff9
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Visual Studio odběry - výhody pro předplatitele
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 02/12/2018
+ms.topic: Get-Started-Article
+description: Informace o výhodách, které jsou součástí vašeho předplatného sady Visual Studio
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Výhody, které jsou součástí vašeho předplatného sady Visual Studio
 
@@ -22,9 +22,9 @@ Visual Studio odběry nabízejí nejvíce komplexní sadu prostředků můžete 
 Výhody jsou seskupené do tří kategorií:
 
 ## <a name="tools"></a>Nástroje
-Kategorie nástrojů poskytuje přístup k celou řadu výhod, včetně nejdůležitějšího výhody, jako [Visual Studio IDE](/vs-ide-benefit), [Visual Studio Team Services](/vs-vsts), a [Azure](/vs-azure) .  V závislosti na úrovni vašeho předplatného dozvíte se taky, Windows a Office 365 vývojáře účty, Center aplikace Visual Studio a výhody od partnerů, jako je například WhiteSource Bolt a ModernRequirements.
+Kategorie nástrojů poskytuje přístup k celou řadu výhod, včetně nejdůležitějšího výhody, jako [Visual Studio IDE](/vs-ide-benefit/), [Visual Studio Team Services](/vs-vsts/), a [Azure](/vs-azure/) .  V závislosti na úrovni vašeho předplatného dozvíte se taky, Windows a Office 365 vývojáře účty, Center aplikace Visual Studio a výhody od partnerů, jako je například WhiteSource Bolt a ModernRequirements.
 
-## <a name="professional-development"></a>Vývoj pro odborníky v oblasti
+## <a name="professional-development"></a>Profesionální vývoj
 Chcete-li jste průběžné zvýšit vaši skillset a přečtěte si nejnovější technologie, jsme poskytovat přístup k některé z nejlépe k dispozici online školení z vedoucími. Příklady skvělé obsah k dispozici:
 - Přehled aplikace Azure a Azure Cosmos DB podle Opsgility
 - Napříč platformami mobilních vývojáře podle univerzity Xamarin

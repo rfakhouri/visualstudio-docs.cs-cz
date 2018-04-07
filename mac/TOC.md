@@ -50,6 +50,8 @@
 
 # [Úlohy](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+## [Azure](azure-workload.md)
+### [Připojené služby](connected-services.md)
 ## [Vývoj her pro Unity](unity-tools.md)
 ### [Instalace a nastavení](setup-vsmac-tools-unity.md)
 ### [Používání nástrojů Unity](using-vsmac-tools-unity.md)

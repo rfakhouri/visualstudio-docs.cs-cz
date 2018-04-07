@@ -1,13 +1,8 @@
 ---
-title: "Postupy: vytvoření vlastní sady pravidel | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Vytvoření pravidel nástroje Analýza kódu vlastní nastavení v sadě Visual Studio | Microsoft Docs
+ms.date: 04/04/2018
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
@@ -17,35 +12,25 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 3095d5eff59506f3d7681f61f11f73d37258647d
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: a094b6c59eb4e1d95949dc35a5c0479edb4d5a76
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="how-to-create-a-custom-rule-set"></a>Postupy: Vytvoření vlastní sady pravidel
+# <a name="custom-rule-sets"></a>Vlastních sad pravidel
 
-V sadě Visual Studio, můžete vytvořit a upravit vlastní *sadu pravidel* podle potřeb konkrétní projekt přidružené analýza kódu. Chcete-li vytvořit vlastní pravidlo nastavit, otevřete ho nebo více standardní pravidlo nastaví v editoru sadu pravidel. Potom můžete přidat nebo odebrat konkrétní pravidla a akce, která nastane, když analýza kódu určuje, že došlo k porušení pravidlo můžete změnit.
+Můžete vytvořit vlastní *sadu pravidel* podle potřeb konkrétní projekt pro analýzu kódu.
 
- Chcete-li vytvořit nové vlastní pravidlo nastavte, ukládáte ji pomocí nový název souboru. Sadu vlastních pravidel se automaticky přiřadí do projektu.
+## <a name="create-a-custom-rule-set"></a>Vytvoření vlastní sady pravidel
 
-## <a name="opening-the-rule-set-editor"></a>Otevírání pravidlo s editorem sad
+Chcete-li vytvořit vlastní pravidlo nastavte, můžete otevřít předdefinované pravidlo nastavené v **s editorem sad pravidel**. Odtud můžete přidat nebo odebrat konkrétní pravidla a můžete změnit akci, která nastane při porušení pravidlo&mdash;například zobrazit upozornění nebo chybu.
 
-### <a name="to-open-an-empty-rule-set-file-in-the-rule-set-editor"></a>Otevřete prázdnou pravidlo nastavené souboru v editoru sadu pravidel
+1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a pak vyberte **vlastnosti**.
 
-1. Na **soubor** nabídky [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], přejděte na příkaz **nový** a pak klikněte na **soubor**.
+2. Na **vlastnosti** stránky, vyberte **analýza kódu** kartě.
 
-2. V **nový soubor** dialogové okno, klikněte na tlačítko **Obecné** v **nainstalovaných šablonách** seznamu a pak vyberte **sady pravidel analýzy kódu**.
-
-3. Zobrazí se editor sadu pravidel. Žádná pravidla jsou vybrány v seznamu editor.
-
-### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Chcete-li vytvořit vlastní pravidlo z jednoho existující sady pravidel
-
-1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a potom vyberte **vlastnosti**.
-
-2. Na **vlastnosti** , klikněte na **analýza kódu**.
-
-3. V **pravidlo nastavené** rozevíracího seznamu, proveďte jednu z následujících akcí:
+3. V **spuštění této sady pravidel** rozevíracího seznamu, proveďte jednu z následujících akcí:
 
     - Vyberte sadu pravidel, který chcete přizpůsobit.
 
@@ -53,67 +38,48 @@ V sadě Visual Studio, můžete vytvořit a upravit vlastní *sadu pravidel* pod
 
     - Vyberte  **\<Procházet... >** k určení nastavení existující pravidlo, které se nenachází v seznamu.
 
-4. Klikněte na tlačítko **otevřete** zobrazíte pravidla v editoru sadu pravidel.
+4. Vyberte **otevřete** zobrazíte pravidla v editoru sadu pravidel.
 
-### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>Chcete-li vytvořit vlastní pravidlo nastavte z více sad existující pravidlo
+Můžete také vytvořit nový soubor sady pravidel z **nový soubor** dialogové okno:
+
+1. Vyberte **soubor** > **nový** > **soubor**, nebo stiskněte klávesu **Ctrl**+**N**.
+
+2. V **nový soubor** dialogové okno, vyberte **Obecné** kategorie na levé straně a potom vyberte **sady pravidel analýzy kódu**.
+
+3. Vyberte **otevřete**.
+
+   Nové *analýza* soubor se otevře v editoru sadu pravidel.
+
+### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Vytvoření vlastního pravidla nastavit z více sad pravidel
 
 1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a potom vyberte **vlastnosti**.
 
-2. Na **vlastnosti** , klikněte na **analýza kódu**.
+2. Na **vlastnosti** stránky, vyberte **analýza kódu** kartě.
 
 3. Vyberte  **\<zvolte více pravidlo nastaví... >** z **spuštění této sady pravidel**.
 
-4. V **přidat nebo odebrat pravidlo nastaví** dialogové okno, vyberte pravidlo nastaví na který chcete základní vaší nové sady pravidel a pak klikněte na **OK**.
+4. V **přidat nebo odebrat pravidlo nastaví** dialogové okno, vyberte pravidlo sad, které chcete zahrnout do vaší nové sady pravidel.
 
-5. Uložte novou sadu pravidel.
+   ![Přidat nebo odebrat dialogové okno sady pravidel](media/add-remove-rule-sets.png)
 
-     Název nové sady pravidel je vybrána v **spuštění této sady pravidel** seznamu. Můžete změnit zobrazovaný název pravidla nastavit v dalším kroku.
+5. Vyberte **uložit jako**, zadejte název *analýza* souboru a potom vyberte **Uložit**.
 
-6. (Volitelné) Chcete změnit zobrazovaný název sadu pravidel, na **zobrazení** nabídky, klikněte na tlačítko **vlastnosti – okno**. Zadejte název zobrazení **název** pole.
+   Nové sady pravidel je vybraný v **spuštění této sady pravidel** seznamu.
 
-7. Pokud chcete přidat, odebrat, nebo upravit pravidel analýzy konkrétního kódu v sadě nové pravidel, klikněte na **otevřete**.
+6. Vyberte **otevřete** otevřít nové pravidlo nastavené v editoru sadu pravidel.
 
-## <a name="modifying-a-rule-set"></a>Úprava sady pravidel
+## <a name="name-and-description"></a>Název a popis
 
-### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Chcete-li upravit pravidlo nastavte v editoru sadu pravidel
+Pokud chcete změnit zobrazovaný název sadu pravidel, která je otevřen v editoru, otevřete **vlastnosti** okno výběrem **zobrazení** > **vlastnosti – okno** v řádku nabídek. Zadejte zobrazovaný název v **název** pole. Můžete také zadat popis pro sadu pravidel.
 
-- Chcete změnit zobrazovaný název sadu pravidel, na **zobrazení** nabídky, klikněte na tlačítko **vlastnosti – okno**. Zadejte zobrazovaný název v **název** pole. Všimněte si, že zobrazovaný název se může lišit od názvu souboru.
+## <a name="next-steps"></a>Další kroky
 
-- Pokud chcete přidat do vlastní sady pravidel všechna pravidla skupiny, zaškrtněte políčko skupiny. Chcete-li odebrat všechna pravidla skupiny, zrušte zaškrtnutí políčka.
+Teď, když máte sadu pravidel, dalším krokem je přidání nebo odebrání pravidla nebo úpravou závažnost porušení pravidel přizpůsobit pravidla.
 
-- Chcete-li přidat konkrétní pravidlo do sady vlastní pravidlo, zaškrtněte políčko pravidla. Chcete-li odebrat pravidlo ze sady pravidel, zrušte zaškrtnutí políčka.
-
-- Chcete-li změnit akce při porušení pravidlo v analýza kódu, klikněte na tlačítko v **akce** pole pro pravidlo a pak vyberte jednu z následujících hodnot:
-
-     **Upozornit** – vygeneruje upozornění.
-
-     **Chyba** -, vygeneruje se chyba.
-
-     **Žádný** – zakáže pravidlo. Tato akce je stejná jako odebrání pravidlo ze sady pravidel.
-
-## <a name="changing-the-rule-set-editor-display"></a>Změna pravidla nastavit editor zobrazení
-
-### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Chcete-li skupinu, filtrovat nebo změňte pole v editoru sadu pravidla pomocí pravidla nastavte panelu nástrojů editoru
-
-- Rozšířit pravidla ve všech skupinách, klikněte na tlačítko **Rozbalit vše**.
-
-- Sbalit pravidla v všechny skupiny, klepněte na **sbalit všechny**.
-
-- Chcete-li změnit pravidla se seskupují podle pole, vyberte pole ze seznamu **Group By** seznamu. Chcete-li zobrazit neseskupení pravidla, vyberte  **\<žádné >**.
-
-- Chcete-li přidat nebo odebrat pole ve sloupcích pravidlo, klikněte na tlačítko **sloupec možnosti**.
-
-- Chcete-li skrýt pravidla, která se nevztahují k aktuálnímu řešení **skrýt pravidla, která se nevztahují k aktuálnímu řešení**.
-
-- Chcete-li přepnout mezi zobrazení a skrytí pravidla, které jsou přiřazeny akce chyby, klikněte na tlačítko **zobrazit pravidla, která může způsobit chyby analýzy kódu**.
-
-- Chcete-li přepnout mezi zobrazení a skrytí pravidla, které jsou přiřazeny akce upozornění, klikněte na tlačítko **zobrazit pravidla, která může generovat upozornění analýzy kódu**.
-
-- Pro přepínání zobrazení a skrytí pravidla, které jsou přiřazeny **žádné** akce, klikněte na tlačítko **zobrazit pravidla, která nejsou povolené**.
-
-- Chcete-li přidat nebo odebrat Microsoft výchozí pravidlo nastaví aktuální sady pravidel, klikněte na tlačítko **přidat nebo odebrat sady pravidel podřízené**.
+> [!div class="nextstepaction"]
+> [Změňte pravidla, v editoru sadu pravidel](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
 ## <a name="see-also"></a>Viz také
 
-[Postupy: Konfigurace analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
-[referenční dokumentace sady pravidel nástroje Analýza kódu](../code-quality/code-analysis-rule-set-reference.md)
+- [Postupy: Konfigurace Analýzy kódu pro spravovaný projekt kódu](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+- [Referenční dokumentace sady pravidel nástroje Analýza kódu](../code-quality/rule-set-reference.md)

@@ -1,23 +1,22 @@
 ---
-title: "Použití kódů Product Key | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to obtain and manage your product keys in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 2ed935a5d254f57f4e643013704159c2fc90c8f5
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+title: Použití kódů Product Key | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Zjistěte, jak získat a spravovat vaše kódy product key v sadě Visual Studio předplatných.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 2d3ca72182c26e2e43bcdf97ea6277a4dd1375f0
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="using-product-keys-in-visual-studio-subscriptions"></a>Použití kódů Product Key v sadě Visual Studio předplatných
+# <a name="using-product-keys-in-visual-studio-subscriptions"></a>Použití kódů product key v sadě Visual Studio předplatných
 
-## <a name="product-keys-overview"></a>Přehled produktu klíče
 Visual Studio odběry poskytnout přístup k produkty Microsoft široký rozsah pro navrhování, vývoj, testování a představujících aplikace. Některé z těchto produktů vyžadují kódy product key během instalace a některé z nich vyžaduje aktivaci.
 
 Visual Studio odběry obvykle zahrnují pět kódy product key pro aktuální verze systému Windows a Office produkty a tři klíče pro starší verze.
@@ -48,7 +47,7 @@ Naše research ukazuje většina Odběratelé, kteří jsou předmětem počet s
 ## <a name="locating-and-claiming-product-keys"></a>Vyhledání a deklaraci identity kódy product key
 Chcete-li zobrazit product key, musíte být přihlášeni k předplatnému Visual Studio. Jednotlivých kódů product key se nacházejí výběrem modrý **získat klíč** odkaz pro konkrétní produkt na [stáhne](https://my.visualstudio.com/downloads) stránky, jak je uvedeno níže.  Všechny klíče jsou také k dispozici v agregace na [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) stránky. Pokud pro jeden produkt existuje více klíčů, poznámky se zobrazí na sloupci poznámky ke stažení pro snazší identifikaci, který klíč by měl použít.
 
-![Získat klíč ze stránky stahování](_img/product-keys/download-get-key.png)
+   ![Získat klíč ze stránky stahování](_img/product-keys/download-get-key.png)
 
 Některé produkty sady víc edicí produktu do jednoho stahování. V těchto případech určuje zadaný kód product key, které vydání produktu je nainstalováno.
 Některé klíče jsou poskytovány automaticky, jako je například "statická" klíčů, které můžete použít jako podle potřeby, protože aktivace se nevyžaduje. Jiných klíčů musí být požadována výběrem **získat klíč** odkaz pro produkt.
@@ -82,7 +81,7 @@ Chcete-li nárokovat kód product key:
 1.  Přihlaste se k předplatnému Visual Studio.  Musí být přihlášený ke stažení produktů nebo deklarací kódy product key. 
 2.  Klikněte na [kódy Product Key](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) kartě.
 3.  Kódy Product Key se abecední podle názvu produktu.  Můžete buď přejděte dolů na název požadované produktu nebo vyhledejte ji pomocí panelu Hledat v horní části stránky.  
-![Vyhledejte kód Product Key](_img\product-keys\visio-product-key-cropped.png)
+    ![Vyhledejte kód Product Key](_img\product-keys\visio-product-key-cropped.png)
 
 V tomto příkladu jsme jste panelu Hledat používaná k nalezení kód product key pro Visio 2010.
 Jak můžete vidět, existuje několik verzí aplikace Visio 2010 uvedené.  Jeden klíč už byl vyžádaný Visio Standard 2010 a Visio Premium 2010 a mohou mít zbývající čtyři klíče.  Klíčů, které byly vyžádaná jsou oba klíče maloobchodní a zobrazují na stránce.  Všimněte si, že můžete zaznamenat stručné zprávy o nárocích vznášených klíči v **poznámky** sloupce.  Můžete to použít ve spojení s datum v **Claimed** sloupec ke sledování jste vyžádaná klíče.  Může například provedete poznámky při aktivaci instalace produktu pomocí klíče.  
@@ -91,7 +90,7 @@ Jak můžete vidět, existuje několik verzí aplikace Visio 2010 uvedené.  Jed
 Můžete exportovat seznam všechny klíče, které jste požadovaly, společně s velké výběr statické a dalších klíčů, které jsou automaticky označené jako "vyžádaná" pro vás.  
 
 > [!IMPORTANT] 
-> Pokud vaše předplatné vyprší, bude už nebudete moct deklarace nových klíčů nebo exportovat vaší deklarovaný keys.* * 
+> Pokud vaše předplatné vyprší, budete moci deklarace nových klíčů nebo exportovat klíče deklarovaný. 
 
 Chcete-li exportovat klíče, klikněte jednoduše na **exportovat všechny klíče** odkaz na pravé straně kódy Product Key.  Vytvoří se soubor XML s názvem KeysExport.xml a budete mít možnost otevřít nebo uložit soubor.  Musíte se k otevření souboru pomocí aplikace umožňuje zpracovávat soubory XML.  Například můžete otevřít soubor jako sešit v aplikaci Excel jen pro čtení.  
 

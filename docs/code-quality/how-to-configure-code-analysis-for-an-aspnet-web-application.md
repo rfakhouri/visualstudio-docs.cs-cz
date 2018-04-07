@@ -1,12 +1,7 @@
 ---
-title: "Postupy: Konfigurace analýzy kódu pro webovou aplikaci ASP.NET | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Konfigurace analýzy kódu pro webovou aplikaci ASP.NET v sadě Visual Studio | Microsoft Docs'
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
-ms.tgt_pltfrm: 
+ms.technology: vs-ide-code-analysis
 ms.topic: article
 f1_keywords:
 - vs.codeanalysis.propertypages.asp
@@ -15,11 +10,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0f2aaf85128bd34f4e80a7b29763506b17d77911
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 075382db550fae1198b0eca239be8efd1bfadff6
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Postupy: Konfigurace Analýzy kódu pro webovou aplikaci ASP.NET
 
@@ -45,4 +40,4 @@ V sadě Visual Studio, můžete vybrat ze seznamu analýza kódu *sad pravidel* 
 
     - Vyberte  **\<procházet >** zadat existující vlastní pravidlo nastavit, který se nenachází v seznamu.
 
-    - Definujte vlastní sady pravidel. Další informace najdete v tématu [vytváření vlastní sady pravidel](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    - Definování [vlastní sady pravidel](../code-quality/how-to-create-a-custom-rule-set.md).

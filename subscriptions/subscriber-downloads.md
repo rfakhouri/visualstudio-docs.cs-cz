@@ -1,19 +1,19 @@
 ---
-title: "Pomocí odběratele soubory ke stažení na Vizuály Studio předplatná | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to locate and download Microsoft products included with your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4c49ae8b6c51f261abc6ea95d27d200706da18ce
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Pomocí odběratele soubory ke stažení na Vizuály Studio předplatná | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Zjistěte, jak vyhledat a stáhnout produkty společnosti Microsoft, které jsou součástí vašeho předplatného sady Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele stáhne v sadě Visual Studio předplatných
 Jako součást výhody pro předplatitele máte přístup k široké škále stažení softwaru.  
@@ -34,7 +34,7 @@ Tady je několik důvodů, proč nemusí být k dispozici pro odběratele konkr�
 ## <a name="what-do-i-get"></a>Co lze získat?
 Počet a typ stahování závisí na vaše předplatné úroveň a program členství.  Odběratelé s Visual Studio Enterprise standardní odběry, například může mít různé soubory ke stažení pro ně k dispozici než Odběratelé, kteří získají svoje předplatné prostřednictvím odběru programu Microsoft Partner Network nebo BizSpark.  Další informace o tom, jaké soubory ke stažení jsou k dispozici pro každou úroveň předplatného, stáhněte si seznam [produkty ve zvýhodnění úroveň](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
 
-Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Jak najít soubory ke stažení na portálu odběratele? 
 Pouze stahování, které jsou součástí vašeho předplatného se zobrazují pro vás na [stáhne](https://my.visualstudio.com/downloads/featured) stránky.  Pokud máte více než jedno předplatné nebo členství v programu, soubory ke stažení ukazuje budou **nejvyšší předplatné** podržíte, i když se právě nacházíte jiný odběr.  Například pokud máte předplatné Visual Studio Professional a Visual Studio Dev Essentials členství i spojené se stejným ID přihlášení, soubory ke stažení ukazuje bude ty součástí předplatného úrovni Professional, i když jste aktuálně zobrazení vaší výhody Dev Essentials.  

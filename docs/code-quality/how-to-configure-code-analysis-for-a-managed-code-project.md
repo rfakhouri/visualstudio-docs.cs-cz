@@ -1,10 +1,11 @@
 ---
-title: 'Postupy: Konfigurace analýzy kódu pro spravovaný projekt kódu | Microsoft Docs'
-ms.date: 11/04/2016
+title: Konfigurace analýzy kódu v sadě Visual Studio | Microsoft Docs
+ms.date: 04/04/2018
 ms.technology: vs-ide-code-analysis
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.csvb
+- vs.codeanalysis.propertypages.solution
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 46d41b09f0f6639195613c8a4d9a08f952c79525
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: daac3af3a6d5d5fba4d6e8dbb652821583769762
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Postupy: Konfigurace Analýzy kódu pro spravovaný projekt kódu
 
@@ -49,9 +50,28 @@ V sadě Visual Studio, můžete ze seznamu analýza kódu *sad pravidel* chcete 
 
     - Vyberte  **\<Procházet... >** najít existující vlastní pravidlo nastavit, který se nenachází v seznamu.
 
-    - Definujte vlastní sady pravidel. Další informace najdete v tématu [vytváření vlastní sady pravidel](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    - Definování [vlastní sady pravidel](../code-quality/how-to-create-a-custom-rule-set.md).
+
+## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Zadejte sad pravidel pro více projektů v určitém řešení
+
+Ve výchozím nastavení, jsou přiřazeny všechny spravované projekty řešení *Microsoft Minimální doporučená pravidla* code analysis sady pravidel. Sady pravidel, které jsou přiřazeny k projekty v řešení, můžete změnit **vlastnosti** dialogové okno pro řešení.
+
+1. Otevřete řešení v sadě Visual Studio.
+
+2. Na **analyzovat** nabídce vyberte možnost **konfigurace analýzy kódu pro řešení**.
+
+3. V případě potřeby rozbalte **společných vlastností**a potom vyberte **nastavení analýzy kódu**.
+
+4. Můžete určit sadu pravidel pro jednoho nebo několika projektů:
+
+    - Pokud chcete zadat sadu pravidel pro jednotlivé projekt, vyberte název projektu.
+
+    - Chcete-li zadat sadu pravidel pro více projektů, podržte klávesu **Ctrl** a vyberte názvy projektů.
+
+    - Chcete-li zadat všechny projekty v řešení, podržte klávesu **Shift** a klikněte na projekt v okně.
+
+5. Vyberte **pravidlo nastavené** pole projektu a pak vyberte název pravidla nastavit, kterou chcete použít.
 
 ## <a name="see-also"></a>Viz také
 
-- [Návod: Konfigurace a používání vlastní sady pravidel](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)
 - [Postupy: Konfigurace Analýzy kódu pro webovou aplikaci ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

@@ -1,23 +1,23 @@
 ---
-title: "Přihlášení k sadě Visual Studio odběry může selhat s aliasy | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/2/2018
-Ms.topic: Get-Started-Article
-Description: Sign-in may fail if aliases or friendly names are used.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 8c07bc8d3cf674d86c2152ff80f20e4fac003fc3
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Přihlášení k sadě Visual Studio odběry může selhat, pokud používáte aliasy | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/02/2018
+ms.topic: Get-Started-Article
+description: Přihlášení může selhat v případě aliasy nebo popisné názvy se používají.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
-# <a name="signing-in-to-visual-studio-subscriptions-may-fail-with-aliases"></a>Přihlášení k sadě Visual Studio odběry může selhat s aliasy
+# <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Přihlášení k sadě Visual Studio odběry může selhat, pokud používáte aliasy
 
-V závislosti na typu účet použili k přihlášení, dostupných předplatných, se nemusí zobrazit správně při přihlašování k [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Jedna z možných příčin je použití "aliases" nebo "popisné názvy" místo identity přihlášení ke kterému se předplatné přiřadí. Tomu se říká "aliasy". 
+V závislosti na typu účet použili k přihlášení, dostupných předplatných, se nemusí zobrazit správně při přihlašování k [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Jedna z možných příčin je použití "aliases" nebo "popisné názvy" místo identity přihlášení ke kterému se předplatné přiřadí. Tomu se říká "aliasy". 
 
 ## <a name="what-is-aliasing"></a>Co je aliasy?
 
@@ -27,9 +27,9 @@ Aliasy můžete došlo, pokud má společnost Microsoft Online Service pro jejic
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>Jako správce Jaké mám možnosti?
 
-Jako správce, existují dvě možnosti pro zajištění vaší Odběratelé, kteří mají úspěšné možností přihlašování na [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs). 
-1. První možnost (doporučeno), je využít účet directory jako přiřazenou adresu v webu Volume Licensing Service Center (VLSC). Odkazovat na [přiřazení Odběratelé účet Directory](#assigning-subscribers-to-a-directory-account) v tomto článku Další podrobnosti.
-2. Druhá možnost (méně bezpečné), je umožnit zákazníků a přidružit e-mailové adresy "Pracovní nebo školní" na "Osobní" účet (také známa jako Účet Microsoft nebo účtu spravované služby). Odkazovat na [definování pracovní nebo školní účet jako účet osobní ](#defining-a-work-or-school-account-as-a-personal-account ) v tomto článku Další podrobnosti.
+Jako správce, existují dvě možnosti pro zajištění vaší Odběratelé, kteří mají úspěšné možností přihlašování na [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs). 
+- První možnost (doporučeno), je využít účet directory jako přiřazenou adresu v webu Volume Licensing Service Center (VLSC). Odkazovat na [přiřazení Odběratelé účet Directory](#assigning-subscribers-to-a-directory-account) v tomto článku Další podrobnosti.
+- Druhá možnost (méně bezpečné), je umožnit zákazníků a přidružit e-mailové adresy "Pracovní nebo školní" na "Osobní" účet (také známa jako Účet Microsoft nebo účtu spravované služby). Odkazovat na [definování pracovní nebo školní účet jako účet osobní ](#defining-a-work-or-school-account-as-a-personal-account ) v tomto článku Další podrobnosti.
 
 > [!NOTE]
 > Jakmile je vaše společnost migrovat na nové odběry v sadě Visual Studio [portálu pro správu](https://manage.visualstudio.com), bude možné využívat nové prostředí správy, která umožňuje adresář a e-mailové adresy poskytované v rámci profil odběratele.  Další informace o [migrace](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
@@ -99,7 +99,7 @@ Vzhledem k tomu, že Uvítacího e-mailu nebudou úspěšně dostat vaší odbě
 
 Hello %SUBSCRIBER NAME%
 
-Jste byli přiřazeni předplatné sady Visual Studio.  Navštivte https://my.visualstudio.com a přihlaste se pomocí % DIRECTORY adresu % adresu pro aktivaci a přístup k předplatnému. 
+Jste byli přiřazeni předplatné sady Visual Studio.  Navštivte https://my.visualstudio.coma přihlaste se pomocí % % adresu umístění adresáře pro aktivaci a přístup k předplatnému. 
 
 Pokud máte problémy, kontaktujte prosím tým podpory (https://www.visualstudio.com/subscriptions/support/).
 
@@ -120,9 +120,9 @@ Prosím využít podle pokynů v tématu [přiřazení Odběratelé účet Direc
 > Společnost Microsoft nedoporučuje kombinace identity "Pracovní nebo školní" s "Osobní" identity.  Tato akce způsobí ztrátu vlastnictví a řízení účtu organizace a jednotlivých zaměstnanců může získat přístup k určité produkty nebo služby, i po opouští společnost.  Prosím tento odkaz [příspěvku na blogu](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/15/cleaning-up-the-azure-ad-and-microsoft-account-overlap/), od týmu Microsoft Identity, další informace.
 
 ### <a name="defining-an-email-address-as-a-personal-account"></a>Definování e-mailovou adresu jako osobní účet
-Po předplatné je přiřazen k odběrateli, obdrží e-mail s žádostí o navštivte https://my.visualstudio.com využívat výhod své předplatné.  Při pokusu o přihlášení, přihlášení odběru Visual Studio se nezdaří s chyba oznamující, že účet nebyl rozpoznán.  Před protokolování do https://my.visualstudio.com prostředí, zeptejte se vaše odběratel postupujte podle následujících pokynů.  Pokud třeba, můžete to [šablony](#notifying-your-subscribers-using-personal-accounts) oznámit vaše odběratele po přiřazení předplatné.
+Po předplatné je přiřazen k odběrateli, obdrží e-mail s žádostí o navštivte https://my.visualstudio.com využívat výhod své předplatné.  Při pokusu o přihlášení, přihlášení odběru Visual Studio se nezdaří s chyba oznamující, že účet nebyl rozpoznán.  Před přihlášením se do https://my.visualstudio.com prostředí, zeptejte se vaše odběratel postupujte podle následujících pokynů.  Pokud třeba, můžete to [šablony](#notifying-your-subscribers-using-personal-accounts) oznámit vaše odběratele po přiřazení předplatné.
 
-1. Přejděte na https://my.visualstudio.com a klikněte na tlačítko **vytvořit nový účet Microsoft**.
+1. Přejděte na https://my.visualstudio.coma klikněte na tlačítko **vytvořit nový účet Microsoft**.
 
 2. Vyplňte pole:
     - Zadejte e-mailovou adresu, který obdržel Uvítacího e-mailu v Someone@example.com pole
@@ -145,7 +145,7 @@ Ve scénáři uvedených výše vaše odběratele obdrží "Uvítací E-mail", a
 Hello %SUBSCRIBER NAME%
 
 Byly přiřazeny předplatné sady Visual Studio a byl přesměrován k přihlášení do https://my.visualstudio.com podle Uvítacího e-mailu.  I když jde o správný webu pro použití výhody, naší organizace vyžaduje, abyste si před přístupem k webu provést několik kroků navíc.  Postupujte podle následující pokyny vám pomůže vytvořit "Account Microsoft", který je vázaný na našich podnikových e-mailovou adresu.  Po dokončení těchto kroků se použije pro přístup ke výhody odběr e-mailovou adresu.
-1. Visit https://my.visualstudio.com
+1. Navštivte https://my.visualstudio.com
 
 2. Klikněte na tlačítko Vytvořit nový Account Microsoft na pravé straně
 

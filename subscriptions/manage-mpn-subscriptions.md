@@ -1,23 +1,22 @@
 ---
 title: Visual Studio Spravovat odběry nabízí prostřednictvím sítě Microsoft Partner (MPN) | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 12/11/2017
-Ms.topic: Get-Started-Article
-Description: How to assign Visual Studio subscriptions to your end users, for MPN partners.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 308b682215556c645eeaf0257292e40fba35a9c1
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 12/11/2017
+ms.topic: Get-Started-Article
+description: Jak přiřadit Visual Studio odběry koncovým uživatelům, pro partnery MPN.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: a81cf891a58a8c6bf206b057b883d133d92b0a85
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Správa předplatných Visual Studio nabízí prostřednictvím sítě Microsoft Partner (MPN)
 
-## <a name="overview"></a>Přehled
 Partneři, kdo vám competency nebo který nákupu Pack akce v MPN se mohou pomocí sady Visual Studio odběry. Tyto odběry licenci na uživatele a jsou platné v případě přiřazení ke konkrétní uživatelé, kteří pracují pro partnerskou společnost s názvem pouze.
 
 V tématu [nabízené odběry Visual Studio pro partnery v síti Microsoft Partner (MPN)](program-mpn.md) podrobnosti.

@@ -17,11 +17,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4a6a16f2e67c2e50b46109142d95db4ba07fcfaf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a reagují v sadě Visual Studio
 Visual Studio můžete snadno vytvořit projekt Node.js a využívat funkce IntelliSense a jiné integrované funkce, které podporují Node.js. V tomto kurzu pro sadu Visual Studio vytvořte projekt webové aplikace Node.js ze šablony sady Visual Studio. Pak vytvoříte jednoduchou aplikaci pomocí reagují. 
@@ -349,11 +349,20 @@ V předchozím oddílu připojit ladicí program ke kódu Node.js na straně ser
 
     Víte, že když Průzkumníka modelu DOM a konzoly pro JavaScript otevřete v sadě Visual Studio má správně připojen ladicí program. Tyto nástroje ladění jsou podobná Chrome Developer Tools a nástroje F12 pro okraj.
 
+    > [!NOTE]
+    > Pokud není připojit ladicí program a zobrazí se zpráva "nelze se připojit k procesu. Operace není právní v aktuálním stavu." pak pomocí Správce úloh zavřete všechny instance Chrome před zahájením Chrome v režimu ladění. Rozšíření Chrome může spuštění a zabráněním režimu úplné ladění.
+
 1. Protože kód se zarážkou již spuštěn, aktualizujte stránku prohlížeče narazí zarážku.
 
     Při pozastavena v ladicím programu, můžete zkontrolovat stav vaší aplikace přesunutím ukazatele myši proměnné a pomocí ladicího programu. Ladicí program postoupíte podle krokování kódu (**F5**, **F10**, a **F11**).
 
-    Můžete narazit zarážka v buď aplikace bundle.js nebo její namapované umístění v app.tsx, v závislosti na vašem prostředí a prohlížeč stavu. V obou případech můžete krok prostřednictvím kódu a prozkoumat proměnné. (Pokud potřebujete rozdělit na kód *.tsx* souborů a nelze provést, použijte `debugger;` příkaz nebo nastavit zarážky v Chrome Developer Tools.)
+    Můžete narazit zarážek buď *aplikace bundle.js* nebo její namapované umístění v *app.tsx*, v závislosti na vašem prostředí a prohlížeč stavu. V obou případech můžete krok prostřednictvím kódu a prozkoumat proměnné.
+
+    * Pokud potřebujete rozdělit na kód v *app.tsx* a nelze provést, použijte **připojit k procesu** popsané v předchozích krocích připojit ladicí program. Otevřete dynamicky generovaném *app.tsx* soubor v Průzkumníku řešení otevřením **dokumentů skriptu** > **app.tsx**zarážku a aktualizovat stránku v prohlížeči.
+
+        Případně pokud potřebujete rozdělit na kód v *app.tsx* a nelze provést, použijte `debugger;` příkaz v *app.tsx*, nebo místo toho nastavte zarážky v Chrome Developer Tools.
+
+    * Pokud potřebujete rozdělit na kód v *aplikace bundle.js* a nelze provést, odstraňte daný soubor zdrojového mapování *aplikace bundle.js.map*.
 
     > [!TIP]
     > Po připojení k procesu poprvé pomocí následujících kroků, můžete rychle opět připojit do stejného procesu v aplikaci Visual Studio 2017 výběrem **ladění** > **připojte k procesu**.

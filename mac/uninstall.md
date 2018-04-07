@@ -1,17 +1,17 @@
 ---
 title: Odinstalace Visual Studio pro Mac | Microsoft Docs
-description: "Pokyny k odinstalaci Visual Studio pro Mac a související nástroje."
+description: Pokyny k odinstalaci Visual Studio pro Mac a související nástroje.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 193856ca96395db9a5b3bd494a5b8f1f7331f702
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: 985905c81acc5816c2b7a37debb4f5af3d93e94f
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Odinstalace Visual Studio pro Mac
 
@@ -158,12 +158,12 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 Pro starší verze budete muset ručně odstranit následující artefakty:
 
-* Odstranit aplikaci sešity v`"/Applications/Xamarin Workbooks.app"`
-* Odstranit aplikaci Inspector ve`"Applications/Xamarin Inspector.app"`
-* Odstranit doplňky: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` a`"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
-* Odstraňte Inspector a podpůrné soubory. zde: `/Library/Frameworks/Xamarin.Interactive.framework` a`/Library/Frameworks/Xamarin.Inspector.framework`
+* Odstranit aplikaci sešity v `"/Applications/Xamarin Workbooks.app"`
+* Odstranit aplikaci Inspector ve `"Applications/Xamarin Inspector.app"`
+* Odstranit doplňky: `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` a `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
+* Odstraňte Inspector a podpůrné soubory. zde: `/Library/Frameworks/Xamarin.Interactive.framework` a `/Library/Frameworks/Xamarin.Inspector.framework`
 
-# <a name="uninstall-the-xamarin-profiler"></a>Odinstalace Xamarin profileru
+## <a name="uninstall-the-xamarin-profiler"></a>Odinstalace Xamarin profileru
 
 ```bash
 sudo rm -rf "/Applications/Xamarin Profiler.app"

@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: ghogen
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8209e17985ef7f9924fc677b91b5cfe539977cb9
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 6d654cb3a7f0d0e952b447337603718c20eaee3e
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>Přehled analýzy kódu pro spravovaný kód
 
@@ -33,11 +33,11 @@ Analýza kódu v projektu můžete spustit ručně nebo automaticky.
 
 Chcete-li spuštění analýzy kódu pokaždé, když vytváříte projekt, vyberte **povolit analýza kódu v sestavení** na stránce vlastností projektu. Další informace najdete v tématu [postupy: povolení a zákaz automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Chcete-li ruční spuštění analýzy kódu v projektu, z řádku nabídek zvolte **analyzovat** > **spuštění analýzy kódu** > **spuštění analýzy kódu na <project>** . Další informace najdete v tématu [postupy: povolení a zákaz automatické analýzy kódu](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Ruční spuštění analýzy kódu v projektu, z řádku nabídek zvolte **analyzovat** > **spuštění analýzy kódu** > **spuštění analýzy kódu na \<projektu >**.
 
 ## <a name="rule-sets"></a>Sady pravidel
 
-Pravidel analýzy kódu pro spravovaný kód jsou seskupené do *sad pravidel*. Můžete použít jednu standardní pravidla sad Microsoft, nebo můžete vytvořit vlastní sadu pravidel, která splnit konkrétní potřebu. Další informace najdete v tématu [pomocí sad pravidel k seskupování pravidel analýzy kódu](../code-quality/using-rule-sets-to-group-code-analysis-rules.md).
+Pravidel analýzy kódu pro spravovaný kód jsou seskupené do [sad pravidel](../code-quality/using-rule-sets-to-group-code-analysis-rules.md). Můžete použít jednu standardní pravidla sad Microsoft, nebo můžete [vytvoření vlastní sady pravidel](../code-quality/how-to-create-a-custom-rule-set.md) splnit konkrétní potřebu.
 
 ## <a name="suppress-warnings"></a>Potlačení upozornění
 
@@ -56,7 +56,7 @@ Public class MyClass
 Další informace najdete v tématu [potlačení upozornění](../code-quality/in-source-suppression-overview.md).
 
 > [!NOTE]
-> Pokud provádíte migraci projektu pro Visual Studio 2017, může vám najednou potýkají s čtenáře počet upozornění analýzy kódu. Pokud jste ještě nejsou připraveny upozornění, a chcete dočasně vypnout analýza kódu, otevřete stránky vlastností projektu (**projektu** > ***projektu* vlastnosti...** ) a přejděte na **analýza kódu** kartě. Zrušte výběr **povolit analýza kódu v sestavení**a pak znovu sestavte projekt. Alternativně můžete vybrat jiný, menší sadu pravidel, která spouštění kódu. Mějte na paměti, chcete-li analýza kódu zpět na když budete chtít opravte upozornění.
+> Pokud provádíte migraci projektu pro Visual Studio 2017, může vám najednou potýkají s velkým počtem upozornění analýzy kódu. Pokud jste ještě nejsou připraveny upozornění a chtějí být produktivní hned, můžete *směrného plánu* analysis stav projektu. Z **analyzovat** nabídce vyberte možnost **spuštění analýzy kódu a potlačit aktivní problémy**.
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>Spuštění v rámci zásad vrácení se změnami analýzy kódu
 

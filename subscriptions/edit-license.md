@@ -1,25 +1,28 @@
 ---
-title: "Upravit předplatná v portálu správce | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how administrators can edit subscription assignments.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 120bf87ddbaf50efa1abe59bac1c2e4616db7737
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Upravit předplatná v portálu správce | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Zjistěte, jak správci můžete upravit přiřazení předplatného.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Úpravy přiřazení předplatné sady Visual Studio
 
+Jako správce předplatného máte možnost provést změny odběry přiřazeny uživatelům v rámci vaší organizace.  Tento článek popisuje typy změny, které můžete provést a poskytuje potřebné kroky. 
+
 ## <a name="making-changes-to-subscriber-information"></a>Provádění změn informace o odběru
 Můžete upravit informace odběratele opravte chyby nebo aktualizovat informace. 
-**Upozorňujeme, že úpravy e-mailovou adresu odběratele způsobí, že všechny stávající výhody resetování.**
+> [!NOTE]
+> Úpravy e-mailovou adresu odběratele způsobí, že všechny stávající výhody resetování.
 
 Chcete-li upravit odběratele, vyberte na výpustky (...), které se zobrazují vedle e-mailová adresa odběratele, při přesunutí ukazatele myši nad ním. Zobrazí se rozevírací seznam.  Vyberte **upravit** upravit podrobnosti odběratele. Můžete také dvakrát klikněte na řádek odběratele v mřížce a otevřete okno Upravit.
 
@@ -53,7 +56,7 @@ Můžete upravit více odběrateli najednou procesem hromadné úpravy. Tato fun
 
     ![Úpravy licenci - hromadné upravuje nahrávání souborů](_img\edit-license\edit-license-bulk-file-upload1.png)
 
-5.  Jakmile jste odeslali soubor, zobrazí se oznámení umožňují vědět, že byla úspěšná. 
+5.  Jakmile jste odeslali soubor, zobrazí se oznámení umožňují vědět, že byla úspěšná. V tomto okamžiku provedené úpravy se projeví v informace o odběrateli. 
 
     ![Úpravy licenci - dokončení nahrávání provede hromadné úpravy](_img\edit-license\edit-license-bulk-upload-complete.png)
 

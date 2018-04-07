@@ -2,17 +2,17 @@
 title: Vytvoření prostředí pro vývoj .NET Core s kontejnery pomocí Kubernetes v instalaci nástroje cloud – krok 1 – | Microsoft Docs
 author: johnsta
 ms.author: johnsta
-ms.date: 02/20/2018
+ms.date: 04/05/2018
 ms.topic: get-started-article
 ms.technology: vsce-kubernetes
 description: Rychlý vývoj Kubernetes s kontejnery a mikroslužeb v Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, kontejnery
 manager: ghogen
-ms.openlocfilehash: 4de3395b7ce6a9b8b8ed308d304c8e0bfb47fb08
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: d3a646f7cb226d33379730c8711fcccafcc73bdc
+ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core"></a>Začínáme v připojeném prostředí s .NET Core
 
