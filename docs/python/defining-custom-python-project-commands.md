@@ -17,11 +17,11 @@ manager: ghogen
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 755313a85c96c826335d390235477d76d68cd17f
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definování vlastní příkazy pro projektů v jazyce Python
 
@@ -50,7 +50,7 @@ Každý vlastního příkazu mohou odkazovat na soubor Python, modul Python, vlo
 
 Seznamte se s vlastní příkazy, provede v této části jednoduchý příklad, který spouští přímo pomocí python.exe souboru spuštění projektu. (Takové příkaz je efektivně stejná jako **ladění > Spustit bez ladění**.)
 
-1. Vytvoření nového projektu s názvem "Python-CustomCommands" pomocí šablony "Aplikace Python". (Viz [rychlý start: Vytvořte projekt Python ze šablony](quickstart-02-project-from-template.md) pokyny, pokud ještě nejste obeznámeni s procesem.)
+1. Vytvoření nového projektu s názvem "Python-CustomCommands" pomocí šablony "Aplikace Python". (Viz [rychlý start: Vytvořte projekt Python ze šablony](quickstart-02-python-in-visual-studio-project-from-template.md) pokyny, pokud ještě nejste obeznámeni s procesem.)
 
 1. V `Python_CustomCommands.py`, přidejte kód `print("Hello custom commands")`.
 
@@ -152,7 +152,7 @@ Všechny hodnoty atributů jsou velká a malá písmena.
 | TargetType | Ano | Určuje, co obsahuje atribut Target a jak se používá spolu s atribut argumenty:<ul><li>**spustitelný soubor**: spuštění spustitelného souboru s názvem v cíli, připojením hodnoty v argumentech, jako kdyby zadali přímo na příkazovém řádku. Hodnota musí obsahovat jenom název program bez argumentů.</li><li>**skript**: Spusťte `python.exe` s názvem souboru v cíli, a potom s hodnotou v argumentech.</li><li>**modul**: Spusťte `python -m` následuje název modulu v cíli, a potom s hodnotou v argumentech.</li><li>**kód**: spuštění kódu vloženého obsažené v cíli. Argumenty hodnota je ignorována.</li><li>**PIP**: Spusťte `pip` pomocí příkazu na cíli, za nímž následuje argumenty; je ExecuteIn nastavena na "výstupní", ale předpokládá pip `install` příkazů a používá cíl jako název balíčku.</li></ul> |
 | cíl | Ano | Název souboru, název modulu, kódu nebo příkaz pip používat, v závislosti na TargetType. |
 | Arguments | Nepovinné | Určuje řetězec argumentů umožnit k cíli (pokud existuje). Upozorňujeme, že pokud je TargetType `script`, argumenty, které uvedeny k programu Python, není `python.exe`. U ignoruje `code` TargetType. |
-| ExecuteIn | Ano | Určuje prostředí, ve kterém se má spustit příkaz:<ul><li>**konzole**: (výchozí) spustí, cíl a argumenty jako jejich zadání přímo na příkazovém řádku. Příkazové okno se zobrazí, když cíl běží, pak je automaticky uzavřeny.</li><li>**consolepause**: stejné konzoly, ale čeká keypress před jeho zavřením okna.</li><li>**výstup**: cíl spustí a zobrazí její výsledky v okně výstupu v sadě Visual Studio. Pokud TargetType "pip", Visual Studio Target používá jako název balíčku a připojí argumenty.</li><li>**REPL**: cíl běží v [interaktivní okno Python](interactive-repl.md); volitelný zobrazovaný název se používá pro nadpis okna.</li><li>**žádný**: se chová stejně jako konzola.</li></ul>|
+| ExecuteIn | Ano | Určuje prostředí, ve kterém se má spustit příkaz:<ul><li>**konzole**: (výchozí) spustí, cíl a argumenty jako jejich zadání přímo na příkazovém řádku. Příkazové okno se zobrazí, když cíl běží, pak je automaticky uzavřeny.</li><li>**consolepause**: stejné konzoly, ale čeká keypress před jeho zavřením okna.</li><li>**výstup**: cíl spustí a zobrazí její výsledky v okně výstupu v sadě Visual Studio. Pokud TargetType "pip", Visual Studio Target používá jako název balíčku a připojí argumenty.</li><li>**REPL**: cíl běží v [interaktivní okno Python](python-interactive-repl-in-visual-studio.md); volitelný zobrazovaný název se používá pro nadpis okna.</li><li>**žádný**: se chová stejně jako konzola.</li></ul>|
 | WorkingDirectory | Nepovinné | Složka, ve kterém se má spustit příkaz. |
 | ErrorRegex<br>WarningRegEx | Nepovinné | Použít pouze, pokud je ExecuteIn `output`. Obě hodnoty, zadejte jako regulární výraz, pomocí kterého Visual Studio analyzuje výstupu příkazu v okně Seznam chyb zobrazit chyby a upozornění. Pokud není zadaný, neovlivňuje příkazu v okně Seznam chyb. Další informace, na jaké sadě Visual Studio očekává, najdete v části [skupiny pojmenované zachycení](#named-capture-groups-for-regular-expressions). |
 | RequiredPackages | Nepovinné | Seznam požadavků balíčku pro příkaz, který používá stejný formát jako [requirements.txt](https://pip.readthedocs.io/en/1.1/requirements.html) (pip.readthedocs.io). **Spustit PyLint** příkaz, například určuje `pylint>=1.0.0`. Před spuštěním příkazu, Visual Studio kontroluje, zda jsou nainstalovány všechny balíčky v seznamu. Visual Studio použije pip nainstalovat všechny chybějící balíčky. |

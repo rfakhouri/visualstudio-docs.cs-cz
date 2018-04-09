@@ -53,6 +53,7 @@
 ## [Python: Vytvoření webové aplikace](ide/quickstart-python.md)
 ## [Node.js: Vytvoření webové aplikace](ide/quickstart-nodejs.md)
 ## [C#: Vytvoření webové aplikace](ide/quickstart-aspnet-core.md)
+## [C#: Vytvoření aplikace pro UPW](ide/quickstart-uwp-csharp.md)
 ## [Visual Basic: Vytvoření konzolové aplikace](ide/quickstart-visual-basic-console.md)
 # Kurzy
 ## [C++ v sadě Visual Studio...](/cpp/build/vscpp-step-0-installation)

@@ -1,65 +1,165 @@
 ---
-title: "Přehled podpory Python v sadě Visual Studio (Windows) | Microsoft Docs"
-description: "Souhrn funkcí, které jsou k dispozici pro jazyk Python v sadě Visual Studio (také označované také jako Python Tools pro sadu Visual Studio, PTVS), včetně otázky a odpovědi (FAQ) a matici podpory funkce mezi verzemi sady Visual Studio."
-ms.custom: 
-ms.date: 02/15/2018
-ms.reviewer: 
-ms.suite: 
+title: Přehled podpory Python v sadě Visual Studio v systému Windows | Microsoft Docs
+description: Souhrn funkcí v sadě Visual Studio, takže je nejlepší Python IDE v systému Windows (také označované také jako Python Tools pro sadu Visual Studio, PTVS)
+ms.custom: ''
+ms.date: 04/06/2018
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.tgt_pltfrm: ''
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8693e876d56a30b31cd873861c37dbef486e7284
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Práce s Python v sadě Visual Studio (Windows)
 
 Python je oblíbených programovací jazyk, který je spolehlivá, flexibilní, usnadňuje další, bez použití na všech operačních systémech a nepodporuje komunity silné vývojářů a mnoho volné knihovny. Python podporuje všechny způsobů vývoje, včetně webových aplikací, webové služby, aplikace klasické pracovní plochy, skriptování a vědecké výpočty a používá mnoho vysoké školy, vědců, běžné vývojáři a profesionální vývojáře agentem. Další informace o jazyce na [python.org](https://www.python.org) a [Python pro začátečníky](https://www.python.org/about/gettingstarted/).
 
-Visual Studio v systému Windows poskytuje [open-source](https://github.com/Microsoft/ptvs) podporu pro jazyk Python prostřednictvím vývoj Python a vědecké zpracování dat úlohy (Visual Studio 2017) a volné Python Tools pro Visual Studio rozšíření (Visual Studio 2015 a starší). Python v současné době nepodporuje v sadě Visual Studio pro Mac, ale je k dispozici na Mac a Linux pomocí Visual Studio Code (viz [otázky a odpovědi](#questions-and-answers)).
+Visual Studio je výkonný IDE Python v systému Windows. Visual Studio poskytuje [open-source](https://github.com/Microsoft/ptvs) podporu pro jazyk Python prostřednictvím úlohy vývoj Python a vědecké zpracování dat (Visual Studio 2017) a volné Python Tools pro Visual Studio rozšíření (Visual Studio 2015 a dříve).
+
+Python v současné době nepodporuje v sadě Visual Studio pro Mac, ale je k dispozici na Mac a Linux pomocí Visual Studio Code (viz [otázky a odpovědi](#questions-and-answers)).
 
 Abyste mohli začít:
 
-- Postupujte podle [pokyny k instalaci](installing-python-support-in-visual-studio.md) nastavit zatížení Python
-- Přejděte prostřednictvím jednoho nebo více Quickstarts k vytvoření projektu. Pokud si nejste jisti, začínat [vytvořte projekt ze šablony](quickstart-02-python-in-visual-studio-project-from-template.md).
+- Postupujte podle [pokyny k instalaci](installing-python-support-in-visual-studio.md) nastavit zatížení Python.
+- Seznamte se s možnostmi Python sady Visual Studio prostřednictvím části v tomto článku. Můžete také [přehrát video řady (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) Úvod do jazyka Python v sadě Visual Studio (celkový počet 22 minut).
+- Přejděte prostřednictvím jednoho nebo více Quickstarts k vytvoření projektu. Pokud si nejste jisti, začínat [vytvořit webovou aplikaci s Flask](../ide/quickstart-python.md?context=visualstudio/python/default).
 - Postupujte podle [práce s Python v sadě Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) kurz prostředí úplného začátku do konce.
-- Potom pomocí odkazů v následující tabulce a prozkoumejte Python související funkce a možnosti sady Visual Studio, sám sebe.
 
-| Funkce | Popis | Dokumentaci obecné Visual Studio |
-| --- | --- | --- |
-| [Systém projektu Visual Studio](managing-python-projects-in-visual-studio.md) | Implicitně vybere si strukturu složek Python kódu současně explicitní řízení k identifikaci kódu aplikace, testovacího kódu sestavení webové stránky, JavaScript, skripty atd. | [Řešení a projekty v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Šablony projektů](managing-python-projects-in-visual-studio.md#project-templates) | Rychle vytvoří strukturu projektu pro konzolu, web, Azure, vědecké zpracování dat a jiné typy projektů | [Šablony sady Visual Studio](../ide/creating-project-and-item-templates.md#visual-studio-templates) |
-| Podpora více překladač | Podporuje různé verze CPython a IronPython. | není k dispozici |
-| Podpora IPython | Zahrnuje podporu pro IPython/Jupyter v REPL pro vložené pozemků, rozhraní .NET a Windows Presentation Foundation (WPF). | není k dispozici |
-| [Bohaté úpravy, IntelliSense a pochopení kódu](editing-python-code-in-visual-studio.md) | Zahrnuje zvýrazňování syntaxe, automatické doplňování kódu a knihovny, [kódu, formátování](formatting-python-code.md), podpis nápovědy, zobrazení tříd, přejděte na definice, najít všechny odkazy, fragmenty kódu [refaktoring](refactoring-python-code.md), [ PyLint](linting-python-code.md)a další. | [Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md) |
-| [Interaktivní okno](python-interactive-repl-in-visual-studio.md) | Poskytuje rychlý prostředí REPL možnost snadno zvýrazněte část kódu a odeslat ho do okna interaktivní pro jazyk Python. | není k dispozici |
-| [Plnohodnotné ladění](debugging-python-in-visual-studio.md) | Ladění lze provést s nebo bez projekt sady Visual Studio, včetně možnosti ladění spustitelného existující [ladění ve smíšeném režimu Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md), [vzdáleného ladění na Linux](debugging-python-code-on-remote-linux-machines.md) do systému Windows nebo Linux / Mac, [vzdáleného ladění na Azure](debugging-remote-python-code-on-azure.md)a ladění interaktivních okna. | [Ladění v sadě Visual Studio](../debugger/debugging-in-visual-studio.md) |
-| [Nástroje pro profilaci s komplexní vytváření sestav](profiling-python-code-in-visual-studio.md) | Popisuje, jak je právě čas strávený v rámci vaší aplikace, včetně možnosti porovnat výkon mezi různé profilování spustí. | [Nástroje pro profilaci](../profiling/profiling-tools.md) (ne všechny funkce profilace aplikace Visual Studio jsou dostupné pro jazyk Python) |
-| [Nástroje pro testování částí](unit-testing-python-in-visual-studio.md) | Zjistit, spustit a správu testů v testovací Průzkumníka Visual Studio a snadno ladění testování částí. | [Testování částí kódu](../test/unit-test-your-code.md) |
+## <a name="support-for-multiple-interpreters"></a>Podpora pro více překladače
 
-Také zahrnuje úlohy Python [Azure SDK pro jazyk Python](azure-sdk-for-python.md), což zjednodušuje použití služby Azure z aplikací systému Windows, Mac OS X a Linux.
+Visual Studio **prostředí Python** okno (zobrazené dole v zobrazení široké, rozšířená) poskytuje jednotné místo ke správě všech globální prostředí Python, conda prostředí a virtuální prostředí. Visual Studio automaticky rozpozná instalace jazyka Python ve standardní umístění a umožňuje nakonfigurovat vlastní instalace. S každou prostředí můžete snadno spravovat balíčky, otevřete okno s interaktivní pro prostředí a přístup ke složkám prostředí.
+
+![Rozšířené zobrazení okna prostředí Python](media/environments-expanded-view.png)
+
+Další informace:
+
+- Video (2m 35s): [správu prostředí Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
+- Dokumenty: [prostředí Python Správa](managing-python-environments-in-visual-studio.md)
+- Dokumenty: [odkaz na okno prostředí Python](python-environments-window-tab-reference.md)
+
+## <a name="rich-editing-intellisense-and-code-comprehension"></a>Bohaté úpravy, IntelliSense a pochopení kódu
+
+Visual Studio poskytuje prvotřídní editor Python, včetně syntaxe zvýrazňování, automatické doplňování kódu a knihovny, formátování kódu, podpis nápovědy, refaktoring, pomocné parametry typu a linting (linting jsou uvedeny níže). Visual Studio také poskytuje jedinečné funkce, například zobrazení tříd, přejděte na definice, najít všechny odkazy a fragmenty kódu. Přímá integrace s [interaktivních okna](#interactive-window) vám pomůže rychle vytvořit kód Python, který je už uložený v souboru.
+
+![Dokončování kódu pro kód Python v sadě Visual Studio](media/code-editing-completions-simple.png)
+
+Další informace:
+
+- Video (2m 30s): [Python úpravy kódu](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
+- Dokumenty: [Python úpravy kódu](editing-python-code-in-visual-studio.md)
+- Dokumenty: [kódu, formátování](formatting-python-code.md)
+- Dokumenty: [refaktoring](refactoring-python-code.md)
+- Dokumenty: [Linting](linting-python-code.md)
+- Funkce dokumentace obecné Visual Studio: [psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md)
+
+## <a name="interactive-window"></a>Interaktivní okno
+
+Pro každé prostředí Python, ví, že Visual Studio můžete snadno otevřít stejné interaktivní prostředí (REPL) pro překladač Pythonu přímo v sadě Visual Studio, nikoli pomocí samostatných příkazového řádku. Můžete snadno přepínat mezi prostředími také.
+
+![Interaktivní okno Python v sadě Visual Studio](media/interactive-window.png)
+
+Visual Studio také poskytuje úzkou integraci mezi editoru kódu jazyka Python a interaktivních okna. **Ctrl + Enter** klávesové zkratky pohodlně odešle do okna interaktivní aktuálního řádku v editoru kódu (nebo blok kódu) a pak přesune na další řádek (nebo bloku). **Ctrl + Enter** vám umožní snadno krok prostřednictvím kódu bez nutnosti spuštění ladicího programu. Můžete také odeslat vybraný úsek kódu interaktivní okno s stejné klávesu a snadno vložit do editoru kódu pomocí interaktivních okna. Tyto možnosti společně umožňují pracovní si podrobnosti o segment kódu v okně interaktivní a snadno uložit výsledky do souboru v editoru.
+
+Visual Studio také podporuje IPython/Jupytr v REPL, včetně vložené pozemků, rozhraní .NET a Windows Presentation Foundation (WPF).
+
+Další informace:
+
+- Video (2m 22s: [okno interaktivní Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567)
+- Dokumenty: [interaktivních okna](python-interactive-repl-in-visual-studio.md)
+- Dokumenty: [IPython v sadě Visual Studio](interactive-repl-ipython.md)
+
+## <a name="project-system-and-project-and-item-templates"></a>Systém projektů a šablon projektů a položek
+
+Visual Studio můžete spravovat složitost projektu růstem v čase. Projekt je mnohem víc než strukturu složek: obsahuje k pochopení jak různých souborů se používají a jak se vztahují k sobě navzájem. Visual Studio umožňuje rozlišit kód aplikace, testovací kód, webové stránky, JavaScript, skripty sestavení a tak dále, které povolíte souboru příslušné funkce. Řešení sady Visual Studio navíc umožňuje správu více souvisejících projektů, jako je například Python projektů a rozšíření projektu jazyka C++.
+
+![Řešení sady Visual Studio obsahující projekty Python a C++](media/projects-solution-explorer-two-projects.png)
+
+Šablony projektů a položek automatizovat proces nastavení různé typy projektů a souborů, ušetřit hodně času a kerberosu můžete ve správě komplikované a náchylné podrobnosti. Visual Studio poskytuje šablony pro webové, Azure, vědecké zpracování dat, konzoly a jiné typy projektů, společně s šablon pro soubory, jako jsou třídy Python, testy částí, Azure webové konfigurace, HTML a i aplikace Django.
+
+[![Python šablon projektů a položek v sadě Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+
+Další informace:
+
+- Dokumenty: [Python Správa projektů](managing-python-projects-in-visual-studio.md)
+- Dokumenty: [Python šablony projektu](managing-python-projects-in-visual-studio.md#project-templates)
+- Dokumenty: [práce s C++ a Python](working-with-c-cpp-python-in-visual-studio.md)
+- Funkce dokumentace obecné Visual Studio: [šablon projektů a položek](../ide/creating-project-and-item-templates.md#visual-studio-templates)
+- Funkce dokumentace obecné Visual Studio: [řešení a projektů v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md)
+
+## <a name="full-featured-debugging"></a>Plnohodnotné ladění
+
+Jedním z Visual Studio síly je jeho výkonný ladicí program. Pro jazyk Python na konkrétní sadě Visual Studio zahrnuje Python/C++ ladění ve smíšeném režimu, vzdálené ladění na systému Linux, vzdáleného ladění na Azure, ladění interaktivních okna a ladění testování částí Python.
+
+![Ladicí program Visual Studio pro jazyk Python zobrazující místní výjimky](media/debugging-exception-popup.png)
+
+Další informace:
+
+- Video: [ladění 3 m 32s Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=Ep5dp5LWE_3805918567)
+- Dokumenty: [ladění Python](debugging-python-in-visual-studio.md)
+- Dokumenty: [ladění ve smíšeném režimu Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- Dokumenty: [vzdáleného ladění na systému Linux](debugging-python-code-on-remote-linux-machines.md)
+- Dokumenty: [vzdáleného ladění na Azure](debugging-remote-python-code-on-azure.md)
+- Funkce dokumentace obecné Visual Studio: [prohlídka funkce ladicí program Visual Studio](../debugger/debugger-feature-tour.md)
+
+## <a name="profiling-tools-with-comprehensive-reporting"></a>Nástroje pro profilaci s komplexní vytváření sestav
+
+Profilace prozkoumá, jak je právě čas strávený v rámci vaší aplikace. Visual Studio podporuje profilace s na základě CPython překladače a zahrnuje možnost k porovnání výkonu mezi různé profilování spustí.
+
+[![Visual Studio profiler výsledky pro projekt Python](media/profiling-results.png)](media/profiling-results.png)
+
+Další informace:
+
+- Video: [profilace 3 m 00s Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=s6FoC6LWE_1005918567)
+- Dokumenty: [Python nástroje pro profilaci](profiling-python-code-in-visual-studio.md)
+- Funkce dokumentace obecné Visual Studio: [profilace prohlídka funkce](../profiling/profiling-feature-tour.md). (Ne všechny funkce profilace aplikace Visual Studio jsou dostupné pro jazyk Python).
+
+## <a name="unit-testing-tools"></a>Nástroje pro testování částí
+
+Zjistit, spustit a správu testů v testovací Průzkumníka Visual Studio a snadno ladění testování částí.
+
+![Ladění jazyka Python testů jednotek v sadě Visual Studio](media/unit-test-debugging.png)
+
+Další informace:
+
+- Video: [testování 2 m 31s Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=hb46k6LWE_405918567)
+- Dokumenty: [testování nástroje pro jazyk Python částí](unit-testing-python-in-visual-studio.md)
+- Funkce dokumentace obecné Visual Studio: [jednotky Otestujte svůj kód](../test/unit-test-your-code.md).
+
+## <a name="publishing-to-azure-and-azure-sdk-for-python"></a>Publikování do Azure a Azure SDK pro jazyk Python
+
+Visual Studio poskytuje integrovanou podporu pro publikování webových aplikací a cloudové služby Azure. Visual Studio obsahuje nezbytné `web.config` šablon pro obsah dynamických a statických položek. Zatížení Python také obsahuje sadu Azure SDK pro Python, která zjednodušuje využívání služeb Azure z Windows, Mac OS X a Linux aplikace.
+
+![Publikování aplikace do Azure Python v sadě Visual Studio](media/azure-publish-dialog.png)
+
+Další informace:
+
+- Dokumenty: [publikování v Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- Dokumenty: [Azure SDK pro Python](azure-sdk-for-python.md)
+
+## <a name="python-training-on-microsoft-virtual-academy"></a>Python školení na webu Microsoft Virtual Academy
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video řady (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121) Úvod do jazyka Python v sadě Visual Studio (celkový počet 22 minut). |
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | Také najdete na následující videa na webu Microsoft Virtual Academy:<ul><li>[Úvod do programování s Pythonem](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python Začátečník: Řetězce a funkce](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python základy: Seznam a smyčky](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Otázky nejvyšší Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | <ul><li>[Úvod do programování s Pythonem](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python Začátečník: Řetězce a funkce](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python základy: Seznam a smyčky](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Otázky nejvyšší Python](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>Otázky a odpovědi
 
 **Q. Je k dispozici v sadě Visual Studio pro Mac podporu Python?**
 
-A. Není v tuto chvíli, když na vyžádání na [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Visual Studio pro Mac](/visualstudio/mac/) dokumentace identifikuje aktuální typy vývoj, které podporují. Do té doby, Visual Studio Code v systému Windows, Mac a Linux [pracuje s Python prostřednictvím dostupná rozšíření](https://code.visualstudio.com/docs/languages/python).
+A. Není v současné době ale můžete až hlasovat požadavek [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac). [Visual Studio pro Mac](/visualstudio/mac/) dokumentace identifikuje aktuální typy vývoj, které podporují. Do té doby, Visual Studio Code v systému Windows, Mac a Linux [pracuje s Python prostřednictvím dostupná rozšíření](https://code.visualstudio.com/docs/languages/python).
 
 **Q. Co je můžete použít k vytvoření uživatelského rozhraní s Pythonem?**
 
@@ -74,7 +174,7 @@ A. Python je obecně interpretovaný jazyk, se kterým je kód spouštět na vy�
 Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual Studio, jak je popsáno v [Průvodce instalací](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (všechny edice)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (všechny edice)] (https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
+- [Visual Studio 2015 (všechny edice)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express pro Web, Update 2 nebo vyšší
 - Visual Studio 2013 Express pro plochu, Update 2 nebo vyšší
@@ -87,7 +187,7 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 
 | Podpora v jazyce Python | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
-| Správu několika překladače | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
+| Správa více překladače | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Automaticky rozpoznat oblíbených překladače | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Přidat vlastní překladače | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Virtuální prostředí | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |

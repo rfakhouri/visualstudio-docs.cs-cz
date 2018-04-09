@@ -15,11 +15,11 @@ manager: ghogen
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f99c01ec5f10909e8236d6986836603553b4008d
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 82717e8b0eb8b4b751fc8c5ed983695ff6b6fc4a
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -109,7 +109,7 @@ Další informace o připojení k databázím z aplikací C++, najdete v části
 
 ## <a name="python"></a>Python
 
-Nainstalujte [Python podporují v sadě Visual Studio](../python/python-in-visual-studio.md) vytvářet aplikace Python. Dokumentace k Azure má několik kurzy o připojení k datům, včetně následujících:
+Nainstalujte [Python podporují v sadě Visual Studio](../python/overview-of-python-tools-for-visual-studio.md) vytvářet aplikace Python. Dokumentace k Azure má několik kurzy o připojení k datům, včetně následujících:
 
 - [Django a databáze SQL v Azure](/azure/app-service/app-service-web-get-started-python)
 - [Django a MySQL v Azure](/azure/app-service-web/web-sites-python-ptvs-django-mysql)
