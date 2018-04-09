@@ -7,7 +7,7 @@
 ## [Ladění aplikace ASP.NET](quickstart-debug-aspnet.md)
 # Kurzy
 ## [Další informace k ladění pomocí sady Visual Studio](getting-started-with-the-debugger.md)
-## [Spouštění kódu Python v ladicím programu](../python/vs-tutorial-01-04.md)
+## [Spouštění kódu Python v ladicím programu](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Ladění živé aplikace Azure](debug-live-azure-applications.md)
 ## [Zobrazení snímků pomocí zpětného kroku IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Návody
