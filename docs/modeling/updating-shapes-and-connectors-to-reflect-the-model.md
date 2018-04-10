@@ -1,9 +1,9 @@
 ---
-title: "Aktualizace tvarů a konektory tak, aby odrážela modelu | Microsoft Docs"
-ms.custom: 
+title: Aktualizace tvarů a konektory tak, aby odrážela modelu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 6d50d0258a44553451deed68a8ccf17c60d88965
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Aktualizace obrazců a konektorů k vyjádření modelu
 V jazyce specifické pro doménu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], můžete provést vzhled obrazce odpovídal stavu základní model.  
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
   
  Tuto metodu můžete použít pro vlastnosti domény i bez úložiště funkce, jako je například velikost tvaru.  
   
-##  <a name="OnAssociatedProperty"></a>Použít AssociateValueWith() k aktualizaci dalších funkcí obrazce  
+##  <a name="OnAssociatedProperty"></a> Použít AssociateValueWith() k aktualizaci dalších funkcí obrazce  
  Pro některé funkce obrazce, jako je například, jestli má stín nebo styl šipky konektoru neexistuje žádné předdefinované metoda vystavení funkce jako vlastnost domain.  Změny na tyto funkce nejsou pod kontrolou transakcí systému. Proto není vhodné k jejich aktualizaci pomocí pravidel, protože pravidla nejsou volána, když uživatel provede příkaz Undo.  
   
  Místo toho, funkce, můžete aktualizovat pomocí <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. V následujícím příkladu styl šipky konektoru řídí hodnotu vlastnosti domény v relaci, která zobrazuje konektor:  
@@ -154,6 +154,6 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()`by měla být volána jednou pro každou vlastnost domény, který chcete zaregistrovat. Poté, co byla volána, všechny změny zadanou vlastnost zavolá `OnAssociatedPropertyChanged()` ve všech tvarů, která představují element vlastnosti modelu.  
+ `AssociateValueWith()` by měla být volána jednou pro každou vlastnost domény, který chcete zaregistrovat. Poté, co byla volána, všechny změny zadanou vlastnost zavolá `OnAssociatedPropertyChanged()` ve všech tvarů, která představují element vlastnosti modelu.  
   
  Není nutné volat `AssociateValueWith()` pro každou instanci. I když InitializeResources je metoda instance, je volána, pouze jednou pro každou třídu tvaru.

@@ -1,11 +1,11 @@
 ---
-title: "Updatemanifestforbrowserapplication – úloha | Microsoft Docs"
-ms.custom: 
+title: Updatemanifestforbrowserapplication – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - building XBAP projects [WPF MSBuild]
 - UpdateManifestForBrowserApplication task [WPF MSBuild], parameters
 ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
-caps.latest.revision: 
+caps.latest.revision: 8
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: fcc1c9fe8b28b2055c73cad626cc02ef8a56aa98
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication – úloha
 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> Spuštění úlohy Přidat  **\<hostinbrowser – / >** element manifest aplikace (*projectname*. exe.manifest) při [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] sestavení projektu.  
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/09/2018
 |`HostInBrowser`|Požadované **Boolean** parametr.<br /><br /> Určuje, zda chcete upravit manifest aplikace zahrnout  **\<hostinbrowser – / >** element. Pokud **true**, nový `<` **hostinbrowser – / >** element je součástí  **\<entryPoint / >** element. Všimněte si, že element zahrnutí je kumulativní: Pokud  **\<hostinbrowser – / >** element již existuje, není odebrat nebo přepsat. Místo toho další  **\<hostinbrowser – / >** element je vytvořen. Pokud **false**, manifest aplikace se nemění.|  
   
 ## <a name="remarks"></a>Poznámky  
- [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] spustit pomocí [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] nasazení a proto musí pomocí publikování s podpora manifesty nasazení a aplikací. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)]používá [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) úloh vygenerovat manifest aplikace.  
+ [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] spustit pomocí [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] nasazení a proto musí pomocí publikování s podpora manifesty nasazení a aplikací. [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] používá [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) úloh vygenerovat manifest aplikace.  
   
  Potom pro konfiguraci aplikace pro hostování v prohlížeči na další prvek  **\<hostinbrowser – / >** musí být přidaný do manifestu aplikace, jak je vidět v následujícím příkladu:  
   
@@ -78,7 +78,7 @@ ms.lasthandoff: 02/09/2018
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [WPF MSBuild – Reference](../msbuild/wpf-msbuild-reference.md)   
+ [WPF MSBuild Reference](../msbuild/wpf-msbuild-reference.md)   
  [Referenční dokumentace úlohy](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild – Reference](../msbuild/msbuild-reference.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   

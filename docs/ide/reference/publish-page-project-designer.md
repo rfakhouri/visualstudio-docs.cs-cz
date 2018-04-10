@@ -1,12 +1,12 @@
 ---
-title: "Publikovat stránku, Návrhář projektu | Microsoft Docs"
-ms.custom: 
+title: Publikovat stránku, Návrhář projektu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -19,10 +19,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: d9f050662ed38814920e17b36f77bf6795aabfa9
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="publish-page-project-designer"></a>Publikovat stránku, návrhář projektu
 **Publikovat** stránky **Návrhář projektu** slouží ke konfiguraci vlastností pro ClickOnce – nasazení.  
@@ -50,7 +50,7 @@ ms.lasthandoff: 02/12/2018
  **Požadavky**  
  Otevře dialogové okno požadavky, které slouží k určení požadovaných součástí, jako je rozhraní .NET Framework, společně s aplikace nainstalována.  
   
- **Updates**  
+ **Aktualizace**  
  Otevře dialogové okno aktualizace aplikace, které slouží k určení chování aktualizací pro danou aplikaci. Nejsou k dispozici při **aplikace je k dispozici pouze online** je vybrána.  
   
  **Možnosti**  

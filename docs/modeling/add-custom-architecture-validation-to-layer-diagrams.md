@@ -1,9 +1,9 @@
 ---
-title: "Přidání ověřování vlastní architektury do diagramů závislostí | Microsoft Docs"
-ms.custom: 
+title: Přidání ověřování vlastní architektury do diagramů závislostí | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7679398e5acfc2f23d51ea7f943e35d0d82e500e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Přidání ověřování vlastní architektury do diagramů závislostí
 V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu proti model vrstvy, aby můžete ověřit, že zdrojový kód odpovídá závislosti v diagramu závislostí. Je algoritmus standardní ověřování, ale můžete definovat vlastní rozšíření ověření.  
@@ -120,7 +120,7 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
   
      Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
-##  <a name="programming"></a>Ověření programování  
+##  <a name="programming"></a> Ověření programování  
  Můžete definovat rozšíření pro ověření vrstev, můžete definovat třídu, která má následující vlastnosti:  
   
 -   Celkové formu deklaraci vypadá takto:  
@@ -189,7 +189,7 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
   
  Odkazy z vrstvy na elementy v kódu mají kategorii "Představuje".  
   
-##  <a name="debugging"></a>Ladění ověření  
+##  <a name="debugging"></a> Ladění ověření  
  Chcete-li ladit ověření rozšíření vrstvy, stiskněte CTRL + F5. Otevře se experimentální instanci sady Visual Studio. V tomto případě otevřít nebo vytvořit model vrstvy. Tento model musí být přidružený kód a musí mít alespoň jeden závislostí.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Testování pomocí řešení, které obsahuje závislosti  
@@ -216,7 +216,7 @@ V sadě Visual Studio můžete uživatele ověřit zdrojového kódu v projektu 
 ### <a name="deploying-a-validation-extension"></a>Nasazení rozšíření ověření  
  K instalaci rozšíření ověření v počítači, na kterém je nainstalován vhodný verze sady Visual Studio, otevřete soubor VSIX na cílovém počítači. K instalaci na počítači, na který [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] je nainstalován, je nutné ručně extrahovat VSIX obsah do složky rozšíření. Další informace najdete v tématu [nasazení rozšíření pro modelování vrstev](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a>Příklad kódu  
+##  <a name="example"></a> Příklad kódu  
   
 ```csharp  
 using System;  

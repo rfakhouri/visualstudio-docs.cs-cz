@@ -1,13 +1,13 @@
 ---
-title: "@setPříkaz (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: '@set Příkaz (JavaScript) | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - '@set_JavaScriptKeyword'
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - '@set statement'
 - conditional compilation, variables
 ms.assetid: 36f15926-3e69-422d-82a2-d186dc088203
-caps.latest.revision: 
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 10f74a1d57a61d78897b660812a6fd8078244b6b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/10/2018
 ---
-# <a name="set-statement-javascript"></a>@setPříkaz (JavaScript)
+# <a name="set-statement-javascript"></a>@set Statement (JavaScript)
 Vytvoří proměnné používané s příkazy podmíněné kompilace.  
   
 > [!WARNING]
@@ -81,7 +81,7 @@ Vytvoří proměnné používané s příkazy podmíněné kompilace.
   
 -   `&& | |`  
   
- Pokud proměnná se používá předtím, než byla definována, jeho hodnota může být `NaN`. `NaN`můžete zkontrolovat pomocí `@if` příkaz:  
+ Pokud proměnná se používá předtím, než byla definována, jeho hodnota může být `NaN`. `NaN` můžete zkontrolovat pomocí `@if` příkaz:  
   
 ```JavaScript  
 @if (@newVar != @newVar)  
@@ -96,5 +96,5 @@ Vytvoří proměnné používané s příkazy podmíněné kompilace.
 ## <a name="see-also"></a>Viz také  
  [Podmíněná kompilace](../../javascript/advanced/conditional-compilation-javascript.md)   
  [Proměnné podmíněné kompilace](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_onPříkaz](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@ifPříkaz](../../javascript/reference/at-if-statement-javascript.md)
+ [@cc_on Příkaz](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [@if – příkaz](../../javascript/reference/at-if-statement-javascript.md)

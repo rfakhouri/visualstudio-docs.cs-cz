@@ -1,9 +1,9 @@
 ---
-title: "Postupy: přístup k a omezit aktuální výběr | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: přístup k a omezit aktuální výběr | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 81036e04abc9eac2cbed2879839e95cce52166fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>Postupy: Přístup k aktuálnímu výběru a jeho omezení
 Když píšete příkaz nebo gesto obslužnou rutinu pro váš jazyk specifické pro doménu, můžete určit, jaký element klepli pravým tlačítkem myši uživatele. Některé tvary nebo pole můžete také zabránit ve výběru. Například můžete uspořádat, že když uživatel klikne na ikonu dekoratéra, obrazec, který jej obsahuje místo něho se vybere. Omezíte-výběr tímto způsobem snižuje počet obslužných rutin, které máte k zápisu. Také umožňuje jednodušší pro uživatele, který můžete klikněte kamkoli do tvaru bez nutnosti vyhnout dekoratéra.  
@@ -33,14 +33,14 @@ Když píšete příkaz nebo gesto obslužnou rutinu pro váš jazyk specifické
   
     |Člen|Popis|  
     |------------|-----------------|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A>– Metoda|Vrátí `true` Pokud je některý elementů vybrané v Návrháři modelu prostředí obrazce; jinak `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A>– Metoda|Vrátí `true` Pokud diagramu je vybraný v Návrháři modelu, jinak hodnota `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A>– Metoda|Vrátí `true` Pokud přesně jeden element je vybraný v Návrháři modelu, jinak hodnota `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A>– Metoda|Vrátí `true` Pokud přesně jeden element je vybraný v okně aktivní, jinak hodnota `false`.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A>Vlastnost|Získá kolekci elementů vybrané v Návrháři model jen pro čtení.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A>Vlastnost|Získá kolekci elementů vybraný v aktivní okno jen pro čtení.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A>Vlastnost|Získá prvek primární výběru v Návrháři modelu.|  
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A>Vlastnost|Získá prvek primární výběru aktivního okna.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> – Metoda|Vrátí `true` Pokud je některý elementů vybrané v Návrháři modelu prostředí obrazce; jinak `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> – Metoda|Vrátí `true` Pokud diagramu je vybraný v Návrháři modelu, jinak hodnota `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> – Metoda|Vrátí `true` Pokud přesně jeden element je vybraný v Návrháři modelu, jinak hodnota `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> – Metoda|Vrátí `true` Pokud přesně jeden element je vybraný v okně aktivní, jinak hodnota `false`.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> Vlastnost|Získá kolekci elementů vybrané v Návrháři model jen pro čtení.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> Vlastnost|Získá kolekci elementů vybraný v aktivní okno jen pro čtení.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> Vlastnost|Získá prvek primární výběru v Návrháři modelu.|  
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> Vlastnost|Získá prvek primární výběru aktivního okna.|  
   
 2.  <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A> Vlastnost <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> třída poskytuje přístup k <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> objekt, který reprezentuje okně návrháře modelu a poskytuje další přístup vybrané elementy v Návrháři modelu.  
   

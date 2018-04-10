@@ -1,9 +1,9 @@
 ---
 title: Visual Studio IntelliSense | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: vs-ide-general
 ms.topic: article
 f1_keywords:
@@ -20,10 +20,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-intellisense-in-visual-studio"></a>Používání atributu IntelliSense v sadě Visual Studio
 
@@ -39,7 +39,7 @@ Po výběru položky, můžete jej přidat do vašeho kódu stisknutím **kartě
 
 V seznamu členů ikona vlevo představuje typ členu, například obor názvů, třídu, funkci nebo proměnnou. Seznam ikon, naleznete v části [zobrazení tříd a ikony v prohlížeči objekt](../ide/class-view-and-object-browser-icons.md). V seznamu může být poměrně dlouho, můžete stisknout **PgUp** a **Page Down** přesunout nahoru nebo dolů v seznamu.
 
-![Seznam členů v sadě Visual Studio](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Visual Studio Member List](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
 
 Můžete vyvolat **vypsat členy** funkce ručně zadáním **CTRL** + **J**, výběrem možnosti **upravit**  >  **IntelliSense** > **vypsat členy**, nebo výběrem **vypsat členy** tlačítka na panelu nástrojů editoru. Při vyvolání na prázdném řádku nebo mimo podporovaný rozsah zobrazí seznam symboly v globálním oboru názvů.
 
@@ -57,7 +57,7 @@ Parametr tučně označuje další parametr, který je vyžadován při zadává
 
 Když opatřujete poznámkami funkce a parametry s komentáři XML dokumentace, komentáře se zobrazí jako informace o parametru. Další informace najdete v tématu [zadávání komentářů ke kódu XML](../ide/supplying-xml-code-comments.md).
 
-Informace o parametrech můžete vyvolat ručně tak, že zvolíte **upravit** > **IntelliSense** > **informace o parametrech**, stisknutím klávesy **Ctrl **  +  **Shift** + **místo**, nebo výběrem **informace o parametrech** tlačítka na panelu nástrojů editoru.
+Informace o parametrech můžete vyvolat ručně tak, že zvolíte **upravit** > **IntelliSense** > **informace o parametrech**, stisknutím klávesy **Ctrl**   +  **Shift** + **místo**, nebo výběrem **informace o parametrech** tlačítka na panelu nástrojů editoru.
 
 ## <a name="quick-info"></a>Rychlé informace
 
@@ -67,7 +67,7 @@ Rychlé informace zobrazí úplnou deklaraci pro libovolný identifikátor ve va
 
 Když vyberete člena z **vypsat členy** pole, se také zobrazí rychlé informace.
 
-![Informace o parametrech v a C & #35; souboru kódu](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
+![Informace o parametrech v a C&#35; souboru kódu](../ide/media/vs2015_paraminfo.png "VS2015_ParamInfo")
 
 Rychlé informace můžete vyvolat ručně tak, že zvolíte **upravit** > **IntelliSense** > **rychlé informace**, stisknutím klávesy **Ctrl**  +  **I**, nebo výběrem **rychlé informace** tlačítka na panelu nástrojů editoru.
 

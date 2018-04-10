@@ -1,11 +1,11 @@
 ---
-title: "AL (Linker sestavení) – úloha | Microsoft Docs"
-ms.custom: 
+title: AL (Linker sestavení) – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: 
+caps.latest.revision: 22
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="al-assembly-linker-task"></a>AL (linker sestavení) – úloha
 AL úloha zabalí AL.exe, nástroj, který je distribuován s [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Tento nástroj Linker sestavení slouží k vytvoření sestavení s manifestu z jeden nebo více souborů, které jsou buď moduly nebo soubory prostředků. Kompilátory a vývojových prostředích může již poskytují tyto funkce, je často není potřeba přímo pomocí této úlohy. Linker sestavení je velmi užitečné pro vývojáře, která potřebuje k vytvoření jednoho sestavení z více souborů součásti, jako jsou ty, které může být vytvářeny z vývojového smíšený jazyk. Tato úloha není moduly zkombinovat do jednoho sestavení souboru; jednotlivé moduly musí být stále distribuované a k dispozici v pořadí pro výsledný sestavení správně načíst. Další informace o AL.exe najdete v tématu [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).  
@@ -44,7 +44,7 @@ AL úloha zabalí AL.exe, nástroj, který je distribuován s [!INCLUDE[winsdklo
 |`Configuration`|Volitelné `String` parametr.<br /><br /> Určuje řetězec pro `Configuration` pole v sestavení. Další informace najdete v dokumentaci pro `/config[uration]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Copyright`|Volitelné `String` parametr.<br /><br /> Určuje řetězec pro `Copyright` pole v sestavení. Další informace najdete v dokumentaci pro `/copy[right]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Culture`|Volitelné `String` parametr.<br /><br /> Určuje řetězec jazykové verze přidružený k sestavení. Další informace najdete v dokumentaci pro `/c[ulture]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
-|`DelaySign`|Volitelné `Boolean` parametr.<br /><br /> `true`umístit pouze veřejný klíč v sestavení; `false` k plně podepsání sestavení. Další informace najdete v dokumentaci pro `/delay[sign]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
+|`DelaySign`|Volitelné `Boolean` parametr.<br /><br /> `true` umístit pouze veřejný klíč v sestavení; `false` k plně podepsání sestavení. Další informace najdete v dokumentaci pro `/delay[sign]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`Description`|Volitelné `String` parametr.<br /><br /> Určuje řetězec pro `Description` pole v sestavení. Další informace najdete v dokumentaci pro `/descr[iption]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`EmbedResources`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Vloží zadané prostředky v bitové kopii, která obsahuje manifest sestavení. Tato úloha zkopíruje obsah souboru prostředků do bitové kopie. Volitelná metadata připojené k je volána, mohou mít položky předané do tohoto parametru `LogicalName` a `Access`. `LogicalName` Metadata slouží k určení interní identifikátor pro prostředek.  `Access` Metadata může být nastaven na `private` aby prostředku nejsou viditelné v rámci jiné sestavení. Další informace najdete v dokumentaci pro `/embed[resource]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  
 |`EvidenceFile`|Volitelné `String` parametr.<br /><br /> Vloží zadaný soubor v sestavení s názvem prostředku `Security.Evidence`.<br /><br /> Nemůžete použít `Security.Evidence` běžných prostředků. Tento parametr odpovídá `/e[vidence]` možnost [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).|  

@@ -1,9 +1,9 @@
 ---
-title: "Vytváření jazyk specifické pro doménu formulářů Windows | Microsoft Docs"
-ms.custom: 
+title: Vytváření jazyk specifické pro doménu formulářů Windows | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb6bc6542350439250ace3dbaa7f2ba920e93ed
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Vytvoření doménově specifického jazyka založeného na Windows Forms
 Windows Forms můžete použít k zobrazení stavu modelu jazyka domény (DSL), místo použití DSL diagram. Toto téma vás provede procesem vytvoření vazby formuláře Windows DSL, pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK.  
@@ -53,9 +53,9 @@ Instance DSL zobrazující uživatelské rozhraní Windows formuláře a Průzku
   
  Hlavní instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], Všimněte si následujících bodů DSL řešení:  
   
--   `DslDefinition.dsl`neobsahuje žádné elementy diagramu. Je to proto nebude DSL diagramy slouží k zobrazení instance modely tento DSL. Místo toho vytvoří vazbu formuláře Windows k modelu a prvky na formuláři se zobrazí modelu.  
+-   `DslDefinition.dsl` neobsahuje žádné elementy diagramu. Je to proto nebude DSL diagramy slouží k zobrazení instance modely tento DSL. Místo toho vytvoří vazbu formuláře Windows k modelu a prvky na formuláři se zobrazí modelu.  
   
--   Kromě `Dsl` a `DslPackage` projekty, řešení obsahuje třetí projektu s názvem `UI.` **uživatelského rozhraní** projekt obsahuje definici ovládacího prvku Windows Forms. `DslPackage`závisí na `UI`, a `UI` závisí na `Dsl`.  
+-   Kromě `Dsl` a `DslPackage` projekty, řešení obsahuje třetí projektu s názvem `UI.` **uživatelského rozhraní** projekt obsahuje definici ovládacího prvku Windows Forms. `DslPackage` závisí na `UI`, a `UI` závisí na `Dsl`.  
   
 -   V `DslPackage` projektu `UI\DocView.cs` obsahuje kód, který zobrazí ovládacího prvku Windows Forms, který je definován v `UI` projektu.  
   
@@ -88,9 +88,9 @@ Instance DSL zobrazující uživatelské rozhraní Windows formuláře a Průzku
   
 4.  Použití **třída s názvem domény** nástroj k vytváření tříd následující domény:  
   
-    -   `Field`-Zadejte to o další domény vlastnost s názvem `Size`.  
+    -   `Field` -Zadejte to o další domény vlastnost s názvem `Size`.  
   
-    -   `Animal`– V okně Vlastnosti nastavte **dědičnosti modifikátor** k **abstraktní**.  
+    -   `Animal` – V okně Vlastnosti nastavte **dědičnosti modifikátor** k **abstraktní**.  
   
 5.  Použití **domény třída** nástroj vytvořit následující třídy:  
   
@@ -148,7 +148,7 @@ Instance DSL zobrazující uživatelské rozhraní Windows formuláře a Průzku
   
      Sadu ovládacích prvků se zobrazí, jeden pro každou vlastnost. Vlastnosti vztahu negenerují ovládací prvky.  
   
-5.  Odstranit **farmBindingNavigator**. To je také automaticky generovány v `FarmControl` designer, ale není vhodný pro tuto aplikaci.  
+5.  Delete **farmBindingNavigator**. To je také automaticky generovány v `FarmControl` designer, ale není vhodný pro tuto aplikaci.  
   
 6.  Pomocí sady nástrojů, vytvořte dvě instance **DataGridView**a název je `AnimalGridView` a `FieldGridView`.  
   
@@ -223,7 +223,7 @@ Schéma odkazů mezi zdroje dat a zobrazení.
   
 3.  V **FarmApp Explorer**, otevřete v místní nabídce **farmy** kořenový uzel a vyberte **přidat nové koz**.  
   
-     `Goat1`Zobrazí se v **zvířat** zobrazení.  
+     `Goat1` Zobrazí se v **zvířat** zobrazení.  
   
     > [!WARNING]
     >  Je nutné použít místní nabídky na **farmy** uzlu není **zvířat** uzlu.  

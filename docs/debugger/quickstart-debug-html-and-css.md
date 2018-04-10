@@ -1,12 +1,12 @@
 ---
-title: "Ladění kódu HTML a CSS v aplikacích pro UPW | Microsoft Docs"
-ms.custom: 
+title: Ladění kódu HTML a CSS v aplikacích pro UPW | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.DomExplorer
@@ -17,17 +17,17 @@ helpviewer_keywords:
 - debugging, HTML
 - debugging, JavaScript [UWP apps]
 - DOM Explorer [UWP apps]
-caps.latest.revision: 
+caps.latest.revision: 101
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - uwp
 ms.openlocfilehash: bb410c6279b2910dfcb1af98ff75293d60a7e3e7
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Ladění kódu HTML a CSS v aplikacích pro UPW v sadě Visual Studio
   
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
  Informace o dalších JavaScript ladění funkcí, například pomocí okna konzoly jazyka JavaScript a nastavení zarážek, najdete v části [rychlý úvod: ladění jazyka JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) a [ladění aplikací v sadě Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a>Probíhá kontrola za provozu DOM  
+##  <a name="InspectingDOM"></a> Probíhá kontrola za provozu DOM  
  Průzkumník modelu DOM se dozvíte, zobrazení vykreslené stránky a Průzkumníka modelu DOM můžete změnit hodnoty a okamžitě zobrazit výsledky. To umožňuje testovat změny bez zastavení a spuštění ladicího programu. Pokud při práci s stránku pomocí této metody nezmění zdrojového kódu v projektu, až najdete požadované kód opravy, provedete změny vašeho zdrojového kódu.  
   
 > [!TIP]
@@ -235,7 +235,7 @@ ms.lasthandoff: 01/19/2018
   
      Další informace o funkci aktualizace najdete v tématu [aktualizace aplikace (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a>Výběr elementy  
+##  <a name="SelectingElements"></a> Výběr elementy  
  Při ladění aplikace, můžete vybrat elementů modelu DOM třemi způsoby:  
   
 -   Kliknutím na elementy přímo v okně Průzkumníka modelu DOM (nebo pomocí klávesy se šipkami).  

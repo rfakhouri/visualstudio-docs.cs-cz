@@ -1,28 +1,28 @@
 ---
-title: "Více-procesorů protokolovacích nástrojů pro zápis | Microsoft Docs"
-ms.custom: 
+title: Více-procesorů protokolovacích nástrojů pro zápis | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - msbuild, multi-proc aware loggers
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-caps.latest.revision: 
+caps.latest.revision: 12
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: f01842f0b194a2e8ee426944fc361c10d5bfb7ea
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Zápis protokolovacích nástrojů pro více procesorů
 Schopnost [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] chcete využít výhod více procesorů, může snížit čas sestavení projektu, ale také přidá složitost tak, aby sestavení protokolování událostí. V prostředí s jedním procesorem událostí, zprávy, upozornění a chyby přicházejí na protokolovacího nástroje předvídatelný, sekvenční způsobem. V prostředí s více procesory, můžete však události z různých zdrojů dorazí, ve stejnou dobu nebo mimo pořadí. Zajistit pro to, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje více-procesorů podporující protokolovacího nástroje a nový model protokolování a umožňuje vám vytvořit vlastní "předávání protokolovacích nástrojů."  
@@ -38,7 +38,7 @@ Schopnost [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbui
 ### <a name="central-logging-model"></a>Model centrálního protokolování  
  V modelu s centrální protokolování jednu instanci MSBuild.exe funguje jako "centrální uzel" a podřízené instance centrálního uzlu (dále jen "sekundární uzly") připojení k centrální uzlu pomáhají provádět úlohy sestavení.  
   
- ![Model centrálního protokolovacího nástroje](../msbuild/media/centralnode.png "CentralNode")  
+ ![Central Logger Model](../msbuild/media/centralnode.png "CentralNode")  
   
  Protokolovací nástroje různých typů, které připojit k centrálního uzlu se označují jako "centrální protokolovačů." Jenom jednu instanci každého typu protokolovacího nástroje lze připojit k uzlu centrální ve stejnou dobu.  
   

@@ -1,11 +1,11 @@
 ---
-title: "Mergelocalizationdirectives – úloha | Microsoft Docs"
-ms.custom: 
+title: Mergelocalizationdirectives – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MergeLocalizationDirectives task [WPF MSBuild]
 - moving localization comments and attributes to a separate file [WPF MSBuild]
 ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
-caps.latest.revision: 
+caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: b8e53bcb94c753659848b336be243a2c582fc0c2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives – úloha
 <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> Úloh sloučí atributů lokalizace a komentáře jednoho nebo více [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] binární formát souborů do jediného souboru pro celou sestavení.  
@@ -60,7 +60,7 @@ ms.lasthandoff: 02/09/2018
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [WPF MSBuild – Reference](../msbuild/wpf-msbuild-reference.md)   
+ [WPF MSBuild Reference](../msbuild/wpf-msbuild-reference.md)   
  [Referenční dokumentace úlohy](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild – Reference](../msbuild/msbuild-reference.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)   

@@ -1,11 +1,11 @@
 ---
-title: "Formatversion – úloha | Microsoft Docs"
-ms.custom: 
+title: Formatversion – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -13,17 +13,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
-caps.latest.revision: 
+caps.latest.revision: 5
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 468d5e60b2107118cdc2cf0e17b3e78b1133cc1c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="formatversion-task"></a>FormatVersion – úloha
 Číslo revize se připojí k číslo verze.  
@@ -39,7 +39,7 @@ ms.lasthandoff: 02/09/2018
   
 |Parametr|Popis|  
 |---------------|-----------------|  
-|`FormatType`|Volitelné `String` parametr.<br /><br /> Určuje typ formátu.<br /><br /> -   "Version" = version.<br />-"Cesta"nahraďte ="." s "_";|  
+|`FormatType`|Volitelné `String` parametr.<br /><br /> Určuje typ formátu.<br /><br /> -"Verze" = verze.<br />-"Cesta"nahraďte ="." s "_";|  
 |`OutputVersion`|Volitelné `String` výstupní parametr.<br /><br /> Určuje výstup verze, která obsahuje číslo revize.|  
 |`Revision`|Volitelné `Int32` parametr.<br /><br /> Určuje revizi připojit k verzi.|  
 |`Version`|Volitelné `String` parametr.<br /><br /> Určuje řetězec, číslo verze k formátování.|  

@@ -1,27 +1,27 @@
 ---
 title: MSBuild | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: 
+caps.latest.revision: 59
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Je platforma pro vytváření aplikací. Tento modul, který je také označován jako MSBuild, poskytuje schéma XML pro soubor projektu, který určuje, jak platformy sestavení zpracuje a vytvoří softwaru. Visual Studio použije nástroje MSBuild, ale není závisí na sadě Visual Studio. Vyvoláním msbuild.exe v souboru projektu nebo řešení můžete orchestraci a sestavení produkty v prostředích, kde není nainstalovaná sada Visual Studio.  
@@ -75,7 +75,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [Multitargeting](#BKMK_Multitargeting)  
   
-##  <a name="BKMK_CommandPrompt"></a>Pomocí nástroje MSBuild v příkazovém řádku  
+##  <a name="BKMK_CommandPrompt"></a> Pomocí nástroje MSBuild v příkazovém řádku  
  Ke spuštění [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] na příkazovém řádku, předat soubor projektu do MSBuild.exe, společně s možnosti příkazového řádku. Možnosti příkazového řádku umožňují nastavit vlastnosti, provést určité cíle a nastavte další možnosti, které řídí procesu sestavení. Třeba, použijte následující syntaxi příkazového řádku k vytvoření souboru `MyProj.proj` s `Configuration` vlastnost nastavena na hodnotu `Debug`.  
   
 ```  
@@ -87,12 +87,12 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 > [!IMPORTANT]
 >  Před stažením projektu určete důvěryhodnosti kódu.  
   
-##  <a name="BKMK_ProjectFile"></a>Soubor projektu  
+##  <a name="BKMK_ProjectFile"></a> Soubor projektu  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používá formát souborů projektu na základě XML, který je snadný a rozšiřitelný. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Formát souboru projektu umožňuje vývojářům popisují položky, které se má být sestaven, a také způsob jejich má být sestaven pro jiné operační systémy a konfigurace. Kromě toho formát souboru projektu umožňuje vývojářům vytvořit opakovaně použitelný sestavení pravidla, která může být rozdělen do samostatné soubory tak, že sestavení můžete provedeny konzistentně napříč různé projekty v rámci produktu.  
   
  Následující části popisují některé základní prvky [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát souboru projektu. Kurz o tom, jak vytvořit základní projekt soubor, najdete v části [návod: vytvoření souboru projektu MSBuild od začátku](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).  
   
-###  <a name="BKMK_Properties"></a>Vlastnosti  
+###  <a name="BKMK_Properties"></a> Vlastnosti  
  Vlastnosti představují páry klíč/hodnota, které můžete použít ke konfiguraci sestavení. Vlastnosti jsou deklarovány vytvořením element, který má název vlastnosti jako podřízenou [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) elementu. Například následující kód vytvoří vlastnost s názvem `BuildDir` , má hodnotu `Build`.  
   
 ```xml  
@@ -111,7 +111,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Další informace o vlastnostech najdete v tématu [vlastnosti nástroje MSBuild](../msbuild/msbuild-properties.md).  
   
-###  <a name="BKMK_Items"></a>Položky  
+###  <a name="BKMK_Items"></a> Položky  
  Položky jsou vstupy do systému sestavení a obvykle představují soubory. Položky jsou seskupeny do typů položek, na základě názvů uživatelem definovanou položku. Tyto typy položek můžete použít jako parametry pro úlohy, které používají jednotlivé položky k provedení kroků procesu sestavení.  
   
  Položky jsou deklarované v souboru projektu vytvořením element, který má název typu položky jako podřízenou [ItemGroup](../msbuild/itemgroup-element-msbuild.md) element. Například následující kód vytvoří typ položky s názvem `Compile`, což zahrnuje dva soubory.  
@@ -136,7 +136,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Položky lze deklarovat pomocí zástupných znaků a může obsahovat další metadata pro pokročilejší scénáře sestavení. Další informace o položkách najdete v tématu [položky](../msbuild/msbuild-items.md).  
   
-###  <a name="BKMK_Tasks"></a>Úlohy  
+###  <a name="BKMK_Tasks"></a> Úlohy  
  Úlohy jsou jednotky spustitelného kódu, který [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty používají k provádění operací sestavení. Úloha může být například kompilaci vstupní soubory nebo spuštění externího nástroje. Úlohy lze znovu použít, a je může sdílet různé vývojáři v různých projektů.  
   
  Logika spuštění úlohy je zapsané ve spravovaném kódu a mapované na [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pomocí [usingtask –](../msbuild/usingtask-element-msbuild.md) elementu. Můžete napsat vlastní úlohy vytvářením spravovaný typ, který implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Další informace o tom, jak psát úlohy najdete v tématu [zápis úloh](../msbuild/task-writing.md).  
@@ -153,7 +153,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Další informace o úlohách najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  
   
-###  <a name="BKMK_Targets"></a>Cíle  
+###  <a name="BKMK_Targets"></a> Cíle  
  Cíle seskupíte úlohy v určitém pořadí a vystavit části souboru projektu jako vstupní body do procesu sestavení. Cíle jsou často seskupeny do logických částí zvýšit čitelnost a povolit pro rozšíření. Rozdělení kroky sestavení do cíle umožňuje volání jednu část procesu sestavení z jiné cíle bez kopírování této části kódu do každé cílové. Například pokud několik vstupní body do procesu sestavení vyžadují odkazy, které má být sestaven, můžete vytvořit cíl, který odkazuje na sestavení a pak spusťte cílených z každé vstupního bodu, kde je to požadováno.  
   
  Cíle jsou deklarované v souboru projektu pomocí [cíl](../msbuild/target-element-msbuild.md) elementu. Například následující kód vytvoří cíl s názvem `Compile`, který potom volá [Csc](../msbuild/csc-task.md) úlohu, která má seznamu položku, která byla definována v předchozího příkladu.  
@@ -166,15 +166,15 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  V pokročilejší scénáře cíle lze popsat vztahy mezi sebou a provádět analýzy závislost tak, aby celý části procesu sestavení mohou být přeskočeny, pokud tento cíl je aktuální. Další informace o cílech najdete v tématu [cíle](../msbuild/msbuild-targets.md).  
   
-##  <a name="BKMK_BuildLogs"></a>Sestavení protokoly  
+##  <a name="BKMK_BuildLogs"></a> Sestavení protokoly  
  Sestavení chyby, upozornění a zprávy se můžou přihlásit na konzole nebo jiné výstupní zařízení. Další informace najdete v tématu [získání sestavení protokoly](../msbuild/obtaining-build-logs-with-msbuild.md) a [protokolování v nástroji MSBuild](../msbuild/logging-in-msbuild.md).  
   
-##  <a name="BKMK_VisualStudio"></a>Pomocí nástroje MSBuild v sadě Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] používá [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát souboru projektu k uložení sestavení informací o spravovaných projekty. Nastavení, které se přidají nebo změnit pomocí projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozhraní se projeví v. * proj soubor, který se vygeneruje pro každý projekt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]používá hostované instanci [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k vytvoření spravovaného projektů. To znamená, že spravovaný projekt může být součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo na příkazovém řádku (i když [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] není nainstalována), a výsledky musí být stejný.  
+##  <a name="BKMK_VisualStudio"></a> Pomocí nástroje MSBuild v sadě Visual Studio  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] používá [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] formát souboru projektu k uložení sestavení informací o spravovaných projekty. Nastavení, které se přidají nebo změnit pomocí projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozhraní se projeví v. * proj soubor, který se vygeneruje pro každý projekt. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] používá hostované instanci [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k vytvoření spravovaného projektů. To znamená, že spravovaný projekt může být součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo na příkazovém řádku (i když [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] není nainstalována), a výsledky musí být stejný.  
   
  Kurz týkající se použití nástroje MSBuild v sadě Visual Studio, najdete v části [návod: použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
-##  <a name="BKMK_Multitargeting"></a>Cílení na více verzí  
+##  <a name="BKMK_Multitargeting"></a> Multitargeting  
  Pomocí sady Visual Studio můžete zkompilovat aplikace pro spuštění na libovolném několik verzí rozhraní .NET Framework. Například můžete zkompilovat aplikaci spustit v rozhraní .NET Framework 2.0 na 32bitové platformě a zkompilujete stejnou aplikaci spustit v rozhraní .NET Framework 4.5 na 64bitové platformě. Možnost zkompilovat více než jeden Framework jmenuje cílení na více verzí.  
   
  Toto jsou některé z výhod cílení na více verzí:  

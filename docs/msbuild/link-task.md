@@ -1,11 +1,11 @@
 ---
-title: "Propojení úkolů | Microsoft Docs"
-ms.custom: 
+title: Propojení úkolů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
@@ -30,17 +30,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: 
+caps.latest.revision: 12
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="link-task"></a>Úloha odkazu
 Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí běžné objekt souboru formátu (COFF) objekt souborů a knihoven vytvořit soubor spustitelný soubor (.exe) nebo dynamická knihovna (DLL). Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).  
@@ -146,7 +146,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
-    -   **ForcePureILImage** - **/CLRIMAGETYPE: PURE**  
+    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
@@ -160,7 +160,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídající možnosti linkeru.  
   
-    -   **Enabled** - **/CLRSupportLastError**  
+    -   **Povolit** - **/CLRSupportLastError**  
   
     -   **Disabled** - **/CLRSupportLastError:NO**  
   
@@ -304,7 +304,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
   
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
+    -   **UndefinedSymbolOnly** -   **/FORCE: NEROZPOZNANÉ**  
   
      Další informace najdete v tématu [/Force (vynutit výstup souboru)](/cpp/build/reference/force-force-file-output).  
   
@@ -450,7 +450,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **NoErrorReport** -   **/errorreport: žádné**  
+    -   **NoErrorReport** - **/ERRORREPORT:NONE**  
   
     -   **PromptImmediately** - **/ERRORREPORT:PROMPT**  
   
@@ -596,7 +596,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Další informace najdete v tématu `REF` argument [/OPT (optimalizace)](/cpp/build/reference/opt-optimizations).  
   
--   **Výstupní soubor**  
+-   **OutputFile**  
   
      Volitelné **řetězec** parametr.  
   
@@ -624,7 +624,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Další informace najdete v tématu [/ALLOWBIND (zabránit DLL vazby)](/cpp/build/reference/allowbind-prevent-dll-binding).  
   
--   **Profil**  
+-   **Profile**  
   
      Volitelné **Boolean** parametr.  
   
@@ -740,7 +740,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Další informace najdete v tématu [/PDBSTRIPPED (Odstranit privátní symboly)](/cpp/build/reference/pdbstripped-strip-private-symbols).  
   
--   **Subsystém**  
+-   **SubSystem**  
   
      Volitelné **řetězec** parametr.  
   
@@ -762,7 +762,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **ROZHRANÍ EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
   
-    -   **Modul Runtime rozhraní EFI** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
     -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
   
@@ -838,9 +838,9 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **MachineTHUMB** - **/MACHINE:THUMB**  
   
-    -   **MachineX64** - **/MACHINE:X64**  
+    -   **MachineX64** - **/MACHINE:X 64**  
   
-    -   **MachineX86** - **/MACHINE:X86**  
+    -   **MachineX86** - **/MACHINE:X 86**  
   
      Další informace najdete v tématu [/MACHINE (zadat cílové platformy)](/cpp/build/reference/machine-specify-target-platform).  
   

@@ -1,27 +1,27 @@
 ---
-title: "Návod: Vytvoření vložené úlohy | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření vložené úlohy | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, tutorial
 - MSBuild, tasks
 ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
-caps.latest.revision: 
+caps.latest.revision: 14
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: fb08d3f4774f0d21c44a29414955f30509456757
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Návod: Vytvoření vložené úlohy
 Úlohy nástroje MSBuild obvykle vytváří kompilování třídu, která implementuje <xref:Microsoft.Build.Framework.ITask> rozhraní. Od verze rozhraní .NET Framework verze 4, můžete vytvořit úlohy vložené v souboru projektu. Chcete-li vytvořit samostatné sestavení pro hostování úlohy nemáte. Další informace najdete v tématu [vložené úlohy](../msbuild/msbuild-inline-tasks.md).  
@@ -234,11 +234,11 @@ ms.lasthandoff: 02/09/2018
   
  Tento kód definuje vložené úlohy, který má název RegX a tyto tři parametry:  
   
--   `Expression`je vstupní parametr požadované řetězec, který má hodnotu, která je regulární výraz odpovídat. V tomto příkladu odpovídá výraz slova "veřejná" nebo "chráněné".  
+-   `Expression` je vstupní parametr požadované řetězec, který má hodnotu, která je regulární výraz odpovídat. V tomto příkladu odpovídá výraz slova "veřejná" nebo "chráněné".  
   
--   `Files`je vstupní parametr požadovaná položka seznamu, který má hodnotu, která je seznam souborů, které má být vyhledán shody. V tomto příkladu `Files` je nastaven na `Compile` položky, které zobrazí zdrojové soubory projektu.  
+-   `Files` je vstupní parametr požadovaná položka seznamu, který má hodnotu, která je seznam souborů, které má být vyhledán shody. V tomto příkladu `Files` je nastaven na `Compile` položky, které zobrazí zdrojové soubory projektu.  
   
--   `Result`je výstupní parametr, který má hodnotu, která je seznam souborů, které mají obsah, které odpovídají regulárnímu výrazu.  
+-   `Result` je výstupní parametr, který má hodnotu, která je seznam souborů, které mají obsah, které odpovídají regulárnímu výrazu.  
   
  Když cíl TestBuild vyvolá úloha RegX jsou nastavena hodnota vstupní parametry. Úloha RegX přečte každý soubor a vrátí seznam souborů, které odpovídají regulárnímu výrazu. Tento seznam se vrátí jako `Result` výstupní parametr, který je vygenerované jako položky nástroje MSBuild `MatchedFiles`.  
   

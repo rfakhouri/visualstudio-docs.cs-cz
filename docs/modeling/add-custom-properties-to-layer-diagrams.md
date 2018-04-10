@@ -1,9 +1,9 @@
 ---
-title: "Přidání vlastních vlastností do diagramů závislostí | Microsoft Docs"
-ms.custom: 
+title: Přidání vlastních vlastností do diagramů závislostí | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f05c5f5a16b0d44794bf6fdcc6990a206dec30f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Přidání vlastních vlastností do diagramů závislostí
 Při psaní kódu rozšíření pro závislosti diagramy, můžete ukládat hodnoty s libovolný element v diagramu závislostí. Hodnoty se uchová po uložení a znovu otevřít diagram. Také může mít tyto vlastnosti se zobrazí v **vlastnosti** okna tak, aby správci zobrazit a upravit je. Například může umožní uživatelům zadat regulární výraz pro každou vrstvu a napsat kód pro ověřování k ověření, že názvy tříd v každé vrstvě shodují se vzorem zadaným uživatelem.  
@@ -31,7 +31,7 @@ Při psaní kódu rozšíření pro závislosti diagramy, můžete ukládat hodn
 > [!IMPORTANT]
 >  Chcete-li zobrazit vlastnosti, musí provést následující změnu na každém počítači, kam chcete vlastnosti vrstvy, které mají být zobrazeny.  
 >   
->  1.  Spusťte program Poznámkový blok pomocí **spustit jako správce**. Otevřete`%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>  1.  Spusťte program Poznámkový blok pomocí **spustit jako správce**. Otevřete `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
 > 2.  Uvnitř `Content` elementu, přidejte:  
 >   
 >     ```xml  
@@ -65,11 +65,11 @@ public class MyProperty
   
  Můžete definovat vlastnosti na <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> ani v žádné z odvozené třídy, které zahrnují:  
   
--   `ILayerModel`-modelu  
+-   `ILayerModel` -modelu  
   
--   `ILayer`-jednotlivé úrovně  
+-   `ILayer` -jednotlivé úrovně  
   
--   `ILayerDependencyLink`-propojení mezi vrstvami  
+-   `ILayerDependencyLink` -propojení mezi vrstvami  
   
 -   `ILayerComment`  
   

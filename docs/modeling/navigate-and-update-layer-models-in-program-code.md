@@ -1,9 +1,9 @@
 ---
-title: "Procházení a aktualizace modelů vrstev v programovém kódu | Microsoft Docs"
-ms.custom: 
+title: Procházení a aktualizace modelů vrstev v programovém kódu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - layer models, navigating in program code
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: e79479e97efd953c1366348454eee70773faf07a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Procházení a aktualizace modelů vrstev v programovém kódu
 Toto téma popisuje elementů a vztahů v modelech vrstvy, které můžete procházení a aktualizace pomocí kódu programu. Další informace o diagramy závislost z hlediska uživatele najdete v tématu [diagramy závislost: referenční dokumentace](../modeling/layer-diagrams-reference.md) a [diagramy závislost: pokyny](../modeling/layer-diagrams-guidelines.md).  
@@ -94,12 +94,12 @@ IEnumerable<ILayerComment> comments =
   
  <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Vlastnost kategorií určuje, jaký druh artefaktů se odkazuje, jako jsou třídy, spustitelný soubor nebo sestavení. Kategorie určuje, jak identifikátor identifikuje artefaktů cíl.  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A>Vytvoří odkaz na artefaktů z <xref:EnvDTE.Project> nebo <xref:EnvDTE.ProjectItem>. Toto je asynchronní operace. Proto obvykle nabízejí zpětného volání, která je volána po dokončení vytvoření.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> Vytvoří odkaz na artefaktů z <xref:EnvDTE.Project> nebo <xref:EnvDTE.ProjectItem>. Toto je asynchronní operace. Proto obvykle nabízejí zpětného volání, která je volána po dokončení vytvoření.  
   
  Vrstvu odkazů artefaktu Nezaměňovat s artefakty diagramy případů použití.  
   
 ## <a name="shapes-and-diagrams"></a>Tvarů a diagramy  
- Dva objekty se používají k vyjádření každý prvek ve model vrstvy: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>a <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` Představuje umístění a velikost tvaru v diagramu. V modely vrstev každých `ILayerElement` má jeden `IShape`a každou `IShape` na závislost jeden má diagram `ILayerElement`. `IShape`také se používá pro modely UML. Proto nemusí být vždy `IShape` má element vrstvy.  
+ Dva objekty se používají k vyjádření každý prvek ve model vrstvy: <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>a <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. `IShape` Představuje umístění a velikost tvaru v diagramu. V modely vrstev každých `ILayerElement` má jeden `IShape`a každou `IShape` na závislost jeden má diagram `ILayerElement`. `IShape` také se používá pro modely UML. Proto nemusí být vždy `IShape` má element vrstvy.  
   
  Stejným způsobem <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> se zobrazí na jednom <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>.  
   
@@ -122,7 +122,7 @@ public void ... (...)
   
  ![Každý ILayerElement je předkládán IShape. ] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>a <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> se taky používají k zobrazení modely UML. 
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> a <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> se taky používají k zobrazení modely UML. 
   
 ## <a name="see-also"></a>Viz také  
  [Přidání příkazů a gest do diagramů závislostí](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   

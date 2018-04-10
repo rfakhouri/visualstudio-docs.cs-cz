@@ -1,9 +1,9 @@
 ---
-title: "Přístup k modely z textové šablony | Microsoft Docs"
-ms.custom: 
+title: Přístup k modely z textové šablony | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - text templates, accessing models
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 Pomocí textových šablon můžete vytvořit sestavu soubory, soubory zdrojového kódu a další textové soubory, které jsou založeny na modely jazyka domény. Základní informace o textové šablony najdete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v režimu experimentální při ladění vaší DSL a bude fungovat i v počítači, na kterém jste nasadili DSL.  
@@ -64,7 +64,7 @@ Here is a list of elements in the model:
   
 -   I když je jazyk, ve kterém jsou zapsány fragmenty kódu C#, můžete vygenerovat text jakéhokoli druhu. Případně můžete napsat kód [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] přidáním vlastnost `language="VB"` k `template` – direktiva.  
   
--   Chcete-li ladit šablony, přidejte `debug="true"` k `template` – direktiva. Tato šablona se otevře v jiné instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Pokud dojde k výjimce. Pokud chcete přejít k ladicímu v určitém bodě v kódu, vložte příkaz`System.Diagnostics.Debugger.Break();`  
+-   Chcete-li ladit šablony, přidejte `debug="true"` k `template` – direktiva. Tato šablona se otevře v jiné instanci [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Pokud dojde k výjimce. Pokud chcete přejít k ladicímu v určitém bodě v kódu, vložte příkaz `System.Diagnostics.Debugger.Break();`  
   
      Další informace najdete v tématu [ladění textové šablony T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -99,7 +99,7 @@ Here is a list of elements in the model:
   
  Pokud je nalezena chyba, se ohlásí v okně chyby a bude výsledný soubor obsahovat chybovou zprávu.  
   
-##  <a name="Multiple"></a>Přístup k více modelů z textové šablony  
+##  <a name="Multiple"></a> Přístup k více modelů z textové šablony  
   
 > [!NOTE]
 >  Tato metoda umožňuje číst více modelů do stejné šablony, ale nepodporuje ModelBus odkazy. Modely, které jsou vzájemně propojena podle ModelBus odkazů najdete v tématu [pomocí Visual Studio ModelBus v textové šablony](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
@@ -177,7 +177,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
 ```  
   
- `LoopSplitter.tt`Vyvolá `LoopTemplate.t4`a následně rozdělí výsledný soubor na jeho segmenty. Všimněte si, protože není pro čtení model nemá tato šablona jako šablonu modelování.  
+ `LoopSplitter.tt` Vyvolá `LoopTemplate.t4`a následně rozdělí výsledný soubor na jeho segmenty. Všimněte si, protože není pro čtení model nemá tato šablona jako šablonu modelování.  
   
 ```  
 <#@ template hostspecific="true" language="C#" #>  

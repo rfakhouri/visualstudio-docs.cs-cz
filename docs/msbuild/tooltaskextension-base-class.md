@@ -1,11 +1,11 @@
 ---
-title: "Tooltaskextension – základní třída | Microsoft Docs"
-ms.custom: 
+title: Tooltaskextension – základní třída | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
@@ -15,17 +15,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
-caps.latest.revision: 
+caps.latest.revision: 4
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: f17c22a4f93be23ba5f29c8a225eef5bdd555c30
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension – základní třída
 Dědí celou řadu úloh <xref:Microsoft.Build.Tasks.ToolTaskExtension> třídy, která dědí z <xref:Microsoft.Build.Utilities.ToolTask> třída, které dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Tento řetězec dědičnosti přidá do úlohy, které jsou odvozeny od nich několik parametrů. Tyto parametry jsou uvedeny v tomto dokumentu.  

@@ -1,9 +1,9 @@
 ---
-title: "Vlastnosti diagramů | Microsoft Docs"
-ms.custom: 
+title: Vlastnosti diagramů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 f1_keywords:
 - vs.dsltools.dsldesigner.dsldiagram
@@ -16,10 +16,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c00ec651510da84594c370e312112c50bc545606
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="properties-of-diagrams"></a>Vlastnosti diagramů
 Můžete nastavit vlastnosti, které určují, jak diagramy se zobrazí v Návrháři vygenerovaný. Můžete například zadat výchozí barvu textu v diagramu.  

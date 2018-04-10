@@ -1,27 +1,27 @@
 ---
-title: "Vytvoření stránky Možnosti | Microsoft Docs"
-ms.custom: 
+title: Vytvoření stránky Možnosti | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-caps.latest.revision: 
+caps.latest.revision: 62
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: d0888a584e31c26c9f64cdcff70cc2f5dc8a1453
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="creating-an-options-page"></a>Vytvoření stránky Možnosti
 Tento návod vytvoří jednoduchý nástroje/Možnosti stránky, která používá mřížkou vlastností sloužící ke zkoumání a nastavte vlastnosti.  
@@ -246,7 +246,7 @@ Tento návod vytvoří jednoduchý nástroje/Možnosti stránky, která použív
   
     ```  
   
-     Tento kód zavolá <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> vytvořit nebo načíst `OptionPageGrid` instance. `OptionPageGrid`volání <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> načíst její možnosti, které jsou veřejné vlastnosti.  
+     Tento kód zavolá <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> vytvořit nebo načíst `OptionPageGrid` instance. `OptionPageGrid` volání <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> načíst její možnosti, které jsou veřejné vlastnosti.  
   
 2.  Nyní přidejte šablonu a vlastní příkaz položka s názvem **MyToolsOptionsCommand** zobrazení hodnoty. V **přidat novou položku** dialogové okno, přejděte na **Visual C# nebo rozšíření** a vyberte **vlastní příkaz**. V **název** pole v dolní části okna, změňte název souboru příkaz **MyToolsOptionsCommand.cs**.  
   

@@ -1,9 +1,9 @@
 ---
-title: "V sadě Visual Studio ModelBus textové šablony | Microsoft Docs"
-ms.custom: 
+title: V sadě Visual Studio ModelBus textové šablony | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Použití prvku Visual Studio ModelBus v textové šabloně
 Pokud píšete textové šablony, které čtou model, který obsahuje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus odkazuje, můžete chtít vyřešte reference pro přístup k cílové modelů. V takovém případě je nutné přizpůsobit textové šablony a odkazované jazyky specifické pro doménu (DSL, linky):  
@@ -78,7 +78,7 @@ Pokud píšete textové šablony, které čtou model, který obsahuje [!INCLUDE[
   
          Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
   
-4.  V AdapterManager.tt:  
+4.  In AdapterManager.tt:  
   
     -   Změňte deklaraci AdapterManagerBase tak, aby dědila z <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.  
   
@@ -263,7 +263,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 1.  Vytvoření nové DSL pomocí šablony řešení minimální jazyk. Název jazyka MBConsumer a nastavit příponu názvu souboru do ".consume".  
   
-2.  V projektu DSL přidáte odkaz na sestavení MBProvider DSL. Klikněte pravým tlačítkem na `MBConsumer\Dsl\References` a pak klikněte na **přidat odkaz na**. V **Procházet** najděte`MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
+2.  V projektu DSL přidáte odkaz na sestavení MBProvider DSL. Klikněte pravým tlačítkem na `MBConsumer\Dsl\References` a pak klikněte na **přidat odkaz na**. V **Procházet** najděte `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`  
   
      To umožňuje vytvářet kód, který používá jiné DSL. Pokud chcete vytvořit odkazy na několik DSL, linky, přidejte je také.  
   

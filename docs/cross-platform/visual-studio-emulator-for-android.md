@@ -15,10 +15,10 @@ manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 4caa011bb0c7cdea3f9a1eed9e2eeb4adb089eb4
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulátor sady Visual Studio pro Android
 Emulátor sady Visual Studio pro Android je plochy aplikace, která emuluje zařízení se systémem Android. Poskytuje virtualizované prostředí, ve kterém můžete ladění a testování aplikací pro Android bez fyzického zařízení. Poskytuje také izolované prostředí pro prototypy vaší aplikace.  

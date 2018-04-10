@@ -1,27 +1,27 @@
 ---
-title: "Transformace nástroje MSBuild | Microsoft Docs"
-ms.custom: 
+title: Transformace nástroje MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
-caps.latest.revision: 
+caps.latest.revision: 13
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: b02c8b6c16bf0d1ffd75ee52d34d72446a06ed25
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-transforms"></a>Transformace nástroje MSBuild
 Transformace je 1: 1 převod jednu položku seznamu do jiného. Kromě povolení projektu převést položek seznamů, umožňuje transformace cíl k identifikaci přímého mapování mezi jeho vstupů a výstupů. Toto téma vysvětluje, transformace a jak [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] je používá k vytvoření projektů efektivněji.  

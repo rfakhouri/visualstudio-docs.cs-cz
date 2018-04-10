@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reserved properties
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
-caps.latest.revision: ''
+caps.latest.revision: 29
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 9eafd9de132e2fa71ddfb4016115d84ef222db26
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Vyhrazené a známé vlastnosti nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje sadu předdefinovaných vlastností, které obsahují informace o souboru projektu a [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] binární soubory. Tyto vlastnosti jsou vyhodnocovány v stejným způsobem jako jiné [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] vlastnosti. Chcete-li například použít `MSBuildProjectFile` vlastnost, zadáte `$(MSBuildProjectFile)`.  

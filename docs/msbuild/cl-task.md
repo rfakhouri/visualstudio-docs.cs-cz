@@ -1,11 +1,11 @@
 ---
-title: "CL – úloha | Microsoft Docs"
-ms.custom: 
+title: CL – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCCLCompilerTool.UseUnicodeForAssemblerListing
@@ -21,17 +21,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), CL task
 - CL task (MSBuild (Visual C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b5609ac97d9322ddf4af5bc5638212a3ccfd045
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="cl-task"></a>CL – úloha
 Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitelné soubory (.exe), dynamická knihovna (DLL) soubory nebo soubory kódu modulu (.netmodule). Další informace najdete v tématu [– možnosti kompilátoru](/cpp/build/reference/compiler-options).  
@@ -183,7 +183,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **false** - *\<žádné >*  
   
-    -   **Hodnota TRUE,** -   **/CLR**  
+    -   **true** - **/clr**  
   
     -   **Čistý** -   **/CLR: pure**  
   
@@ -315,7 +315,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **Neither** - *\<none>*  
+    -   **Ani** - *\<žádné >*  
   
     -   **Velikost** - **/Os**  
   
@@ -341,9 +341,9 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **Precise** - **/fp:precise**  
   
-    -   **Strict** - **/fp:strict**  
+    -   **Striktní** - **/fp: striktní**  
   
-    -   **Rychlé** - **/fp:fast**  
+    -   **Fast** - **/fp:fast**  
   
      Další informace najdete v tématu [/fp (zadejte Floating-Point chování)](/cpp/build/reference/fp-specify-floating-point-behavior).  
   
@@ -405,7 +405,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **Výchozí** - *\<žádné >*  
   
-    -   **Disabled** - **/Ob0**  
+    -   **Zakázané** - **/Ob0**  
   
     -   **OnlyExplicitInline** - **/Ob1**  
   
@@ -413,7 +413,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Další informace najdete v tématu [/Ob (rozbalení vložené funkce)](/cpp/build/reference/ob-inline-function-expansion).  
   
--   **Intrinsicfunctions –**  
+-   **IntrinsicFunctions**  
   
      Volitelné `Boolean` parametr.  
   
@@ -475,7 +475,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Další informace najdete v tématu [/OpenMP (povolit podporu OpenMP 2.0)](/cpp/build/reference/openmp-enable-openmp-2-0-support).  
   
--   **Optimalizace**  
+-   **Optimization**  
   
      Volitelné **řetězec** parametr.  
   
@@ -483,13 +483,13 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **Disabled** - **/Od**  
+    -   **Zakázané** - **/Od**  
   
     -   **MinSpace** - **/O1**  
   
     -   **MaxSpeed** - **/O2**  
   
-    -   **Full** - **/Ox**  
+    -   **Úplné** - **/Ox**  
   
      Další informace najdete v tématu [/O možnosti (Optimalizace kódu)](/cpp/build/reference/o-options-optimize-code).  
   
@@ -503,7 +503,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **NotUsing** - *\<žádné >*  
   
-    -   **Create** - **/Yc**  
+    -   **Vytvoření** - **/Yc**  
   
     -   **Použití** - **/Yu**  
   
@@ -753,7 +753,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **Level4** - **/W4**  
   
-    -   **EnableAllWarnings** -   **/horní**  
+    -   **EnableAllWarnings** - **/Wall**  
   
      Další informace najdete v tématu **/W *** n* možnost [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, nebo jsme /wo, /Wv, wdn (úroveň upozornění)](/cpp/build/reference/compiler-option-warning-level).  
   

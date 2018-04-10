@@ -1,11 +1,11 @@
 ---
-title: "RC – úloha | Microsoft Docs"
-ms.custom: 
+title: RC – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCResourceCompilerTool.UndefineProcessorDefinitions
@@ -22,17 +22,17 @@ helpviewer_keywords:
 - RC task (MSBuild (Visual C++))
 - MSBuild (Visual C++), RC task
 ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
-caps.latest.revision: 
+caps.latest.revision: 10
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="rc-task"></a>RC – úloha
 Zabalí nástroj Microsoft kompilátor prostředků Windows rc.exe. **RC** úloh zkompiluje prostředky, například kurzory, ikony, rastrové obrázky, dialogová okna a písem a do souboru prostředků (.res). Další informace najdete v tématu "Kompilátor prostředků" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
@@ -46,7 +46,7 @@ Zabalí nástroj Microsoft kompilátor prostředků Windows rc.exe. **RC** úloh
 |**AdditionalOptions**|Volitelné **řetězec** parametr.<br /><br /> Seznam například příkazového řádku optionsor **"*** nebo možnost 1 /option2 /option#*". Pomocí tohoto parametru lze zadat parametry příkazového řádku, které nejsou reprezentovány jakékoliv **RC** parametr úloh.<br /><br /> Další informace najdete v tématu Možnosti v [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**Jazyková verze**|Volitelné **řetězec** parametr.<br /><br /> Určuje ID národního prostředí, který představuje jazyková verze použitá v prostředcích.<br /><br /> Další informace najdete v tématu **/l** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**IgnoreStandardIncludePath**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, brání kompilátor prostředků kontrola proměnné prostředí zahrnout při vyhledávání pro soubory hlaviček nebo soubory prostředků.<br /><br /> Další informace najdete v tématu **/x** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
-|**NullTerminateStrings**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, ukončí všechny řetězce v tabulce řetězec hodnotu null.<br /><br /> Další informace najdete v tématu  **/n**  možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
+|**NullTerminateStrings**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, ukončí všechny řetězce v tabulce řetězec hodnotu null.<br /><br /> Další informace najdete v tématu **/n** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**PreprocessorDefinitions**|Volitelné **řetězec []** parametr.<br /><br /> Zadejte jeden nebo více preprocesoru symboly pro kompilátor prostředků. Zadejte seznam makro symboly.<br /><br /> Další informace najdete v tématu **/d** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN. Viz také **UndefinePreprocessorDefinitions** v této tabulce.|  
 |**ResourceOutputFileName**|Volitelné **řetězec** parametr.<br /><br /> Určuje název souboru prostředků. Zadejte název souboru prostředků.<br /><br /> Další informace najdete v tématu **/fo** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**ShowProgress**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, zobrazuje zprávy, které hlásit průběh kompilátoru.<br /><br /> Další informace najdete v tématu **/v** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  

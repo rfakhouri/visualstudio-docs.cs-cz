@@ -1,12 +1,12 @@
 ---
-title: "Specifikátory v ladicím programu (C++) formátu | Microsoft Docs"
-ms.custom: 
+title: Specifikátory v ladicím programu (C++) formátu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug
@@ -28,17 +28,17 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
-caps.latest.revision: 
+caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5b7efb90e6f2a2489fffb890c664393252021e6f
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory formátu v jazyce C++ v ladicím programu sady Visual Studio
 Formát, ve kterém je zobrazená hodnota v lze změnit **sledovat** okno použití specifikátorů formátu.  
@@ -75,7 +75,7 @@ int main() {
 |o|osmičkové celé číslo bez znaménka|0x00000066|000000000146|  
 |x<br /><br /> **h**|hexadecimální celé číslo|102|0xcccccccc|  
 |X<br /><br /> **H**|hexadecimální celé číslo|102|0xCCCCCCCC|  
-|c|jeden znak|0x0065, c|101 "e"|  
+|c|jeden znak|0x0065, c|101 'e'|  
 |s|const char * řetězce|\<umístění > "hello, world"|"hello, world"|  
 |**sb**|const char * řetězec (bez uvozovek)|\<umístění > "hello, world"|Ahoj světe|  
 |s8|Řetězec ve formátu UTF-8|\<umístění > "Toto je â˜• Šálek kávy UTF-8"|"Toto je ☕ Šálek kávy UTF-8"|
@@ -83,16 +83,16 @@ int main() {
 |su|Řetězec znaků Unicode (kódování UTF-16)|\<umístění > L "hello, world"|L "hello, world"<br /><br /> U "hello world"|  
 |Sub –|Řetězec znaků Unicode (kódování UTF-16) (bez uvozovek)|\<umístění > L "hello, world"|Ahoj světe|  
 |bstr|Řetězce BSTR|\<umístění > L "hello, world"|L "hello, world"|  
-|env|Blok prostředí (ukončenou řetězec dvojitou hodnotu null)|\<umístění > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Blok prostředí (ukončenou řetězec dvojitou hodnotu null)|\<umístění > L "=:: =::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|Řetězec ve formátu UTF-32|\<umístění > U "hello world"|U "hello world"|  
 |**s32b**|Znakové sady UTF-32 řetězec (bez uvozovek)|\<umístění > U "hello world"|Ahoj světe|  
 |**en**|enum|Saturday(6)|Sobota|  
 |**hv**|Typ ukazatele – označuje, že hodnota ukazatele ke kontrole je výsledek přidělení haldy pole, například `new int[3]`.|\<umístění > {\<první člen >}|\<umístění > {\<první člen >, \<druhý člen >,...}|  
 |**na**|Potlačí adresa paměti ukazatele na objekt.|\<umístění >, {člen = hodnota...}|{{člen = hodnota...}|  
 |**ND**|Zobrazí pouze základní třída informace, ignoruje odvozené třídy|`(Shape*) square` obsahuje základní třída a odvozené informace o třídě|Zobrazí pouze základní informace o třídě|  
-|personální oddělení|Kód chyby HRESULT nebo Win32. (Ladicí program nyní dekóduje hodnoty HRESULT automaticky, takže tento specifikátor nevyžaduje v těchto případech.|S_OK|S_OK|  
+|hr|Kód chyby HRESULT nebo Win32. (Ladicí program nyní dekóduje hodnoty HRESULT automaticky, takže tento specifikátor nevyžaduje v těchto případech.|S_OK|S_OK|  
 |wc|Příznak okno – třída|0x0010|WC_DEFAULTCHAR|  
-|wm|Čísla zpráv Windows|16|FUNKCE WM_CLOSE BUDE|  
+|wm|Čísla zpráv Windows|16|WM_CLOSE|  
 |!|formátu RAW, ignoruje veškerá přizpůsobení zobrazení typu dat|\<přizpůsobit reprezentace >|4|  
   
 > [!NOTE]
@@ -120,14 +120,14 @@ int main() {
 |**f**|podepsané plovoucí desetinné čárky|(3./2.), f|1.500000|  
 |**e**|podepsaného vědecká notace|(3.0/2.0)|1.500000e + 000|  
 |**g**|podepsané plovoucí desetinnou čárkou nebo podepsané exponenciální notace, podle toho, co je kratší|(3.0/2.0)|1.5|  
-|c|jeden znak|\<umístění >|101 "e"|  
+|c|jeden znak|\<umístění >|101 'e'|  
 |s|const char *|\<umístění >|"hello, world"|  
-|su|Const wchar_t *<br /><br /> Const char16_t\*|\<umístění >|L "hello, world"|  
-|Sub –|Const wchar_t *<br /><br /> Const char16_t\*|\<umístění >|Ahoj světe|  
+|su|const wchar_t*<br /><br /> Const char16_t\*|\<umístění >|L "hello, world"|  
+|Sub –|const wchar_t*<br /><br /> Const char16_t\*|\<umístění >|Ahoj světe|  
 |s8|const char *|\<umístění >|"hello, world"|  
-|personální oddělení|Kód chyby HRESULT nebo Win32. (Ladicí program nyní dekóduje hodnoty HRESULT automaticky, takže tento specifikátor nevyžaduje v těchto případech.|S_OK|S_OK|  
+|hr|Kód chyby HRESULT nebo Win32. (Ladicí program nyní dekóduje hodnoty HRESULT automaticky, takže tento specifikátor nevyžaduje v těchto případech.|S_OK|S_OK|  
 |wc|Okno třída příznak.|0x00000040,|WC_DEFAULTCHAR|  
-|wm|Čísla zpráv Windows|0x0010|FUNKCE WM_CLOSE BUDE|  
+|wm|Čísla zpráv Windows|0x0010|WM_CLOSE|  
 |!|formátu RAW, ignoruje veškerá přizpůsobení zobrazení typu dat|\<přizpůsobit reprezentace >|4|  
   
 ###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formátování specifikátory umístění v paměti v spolupráce ladění pomocí C + +/ CLI  
@@ -135,9 +135,9 @@ int main() {
   
 |Symbol|Formát|Původní hodnotu sledování|Zobrazené hodnoty|  
 |------------|------------|--------------------------|---------------------|  
-|**ma**|64 znaků ASCII|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|16 bajtů šestnáctkových číslic, za nímž následuje 16 znaků ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mb**|16 bajtů šestnáctkových číslic, za nímž následuje 16 znaků ASCII|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**ma**|64 znaků ASCII|0x0012ffac|0x0012ffac. 4... 0... ". 0W &... 1T &.0.:W... 1... ".. 1. JO &.1.2.. ".. 1... 0y... 1|  
+|**m**|16 bajtů šestnáctkových číslic, za nímž následuje 16 znaků ASCII|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
+|**mb**|16 bajtů šestnáctkových číslic, za nímž následuje 16 znaků ASCII|0x0012ffac|0X0012FFAC B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00. 4... 0... ". 0W &...|  
 |**mw**|8 slova|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
 |**md**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
 |**mq**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
@@ -148,4 +148,4 @@ int main() {
   
 |Specifikátor|Formát|Výraz|Zobrazené hodnoty|  
 |---------------|------------|----------------|---------------------|  
-|n|desítkové celé číslo|pBuffer[32]|Zobrazí `pBuffer` jako 32 element pole.|
+|n|desítkové celé číslo|pBuffer [32]|Zobrazí `pBuffer` jako 32 element pole.|

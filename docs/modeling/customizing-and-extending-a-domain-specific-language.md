@@ -1,9 +1,9 @@
 ---
-title: "Přizpůsobení a rozšíření jazyka domény | Microsoft Docs"
-ms.custom: 
+title: Přizpůsobení a rozšíření jazyka domény | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7617deb73ecaec835b0100d243b75bc26fd54a17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Přizpůsobení a rozšíření jazyka specifického pro doménu
 Visual Studio modelování a vizualizace SDK (VMSDK) poskytuje několik úrovní, ve kterém můžete definovat modelování nástroje:  
@@ -33,7 +33,7 @@ Visual Studio modelování a vizualizace SDK (VMSDK) poskytuje několik úrovní
 > [!NOTE]
 >  Po aktualizaci souborů definic DSL, nezapomeňte znovu klikněte na tlačítko **transformaci všech šablon** na panelu nástrojů Průzkumníka řešení, než znovu sestavit vaše řešení.  
   
-##  <a name="customShapes"></a>V této části  
+##  <a name="customShapes"></a> V této části  
   
 |K dosažení tohoto efektu|Najdete v tomto tématu|  
 |----------------------------|-------------------------|  
@@ -55,7 +55,7 @@ Visual Studio modelování a vizualizace SDK (VMSDK) poskytuje několik úrovní
 |Povolit kopírování, vyjímání a vkládání|Nastavte **povolit kopírování vkládání** vlastnost **Editor** uzlu v Průzkumníku DSL.|  
 |Zkopírujte referenční odkazy a jejich cíle vždy, když se zkopíruje elementu. Zkopírujte například komentáře připojené k položce.|Nastavte **rozšíří kopie** vlastnost zdroje role (představované řádku na jedné straně relace domény v diagramu definice DSL).<br /><br /> Psaní kódu pro přepsání ProcessOnCopy k dosažení složitější účinky.<br /><br /> V tématu [přizpůsobení chování kopie](../modeling/customizing-copy-behavior.md).|  
 |Odstranit, Nadřadit nebo znovu připojit související prvky, když se odstraní. element.|Nastavte **rozšíří odstranit** hodnotu vztah role. Pro složitější důsledky přepíší `ShouldVisitRelationship` a `ShouldVisitRolePlayer` metody v `MyDslDeleteClosure` třídy, které jsou definované v **DomainModel.cs**<br /><br /> V tématu [přizpůsobení chování při odstranění](../modeling/customizing-deletion-behavior.md)|  
-|Zachovejte tvar rozložení a vzhled na kopírování a přetáhněte jej.|Přidat konektory a obrazců do zkopírovaný `ElementGroupPrototype`. Je nejvhodnější metodu pro přepsání`ElementOperations.CreateElementGroupPrototype()`<br /><br /> V tématu [přizpůsobení chování kopie](../modeling/customizing-copy-behavior.md).|  
+|Zachovejte tvar rozložení a vzhled na kopírování a přetáhněte jej.|Přidat konektory a obrazců do zkopírovaný `ElementGroupPrototype`. Je nejvhodnější metodu pro přepsání `ElementOperations.CreateElementGroupPrototype()`<br /><br /> V tématu [přizpůsobení chování kopie](../modeling/customizing-copy-behavior.md).|  
 |Vkládání obrazců do zvoleného umístění, jako je například aktuálním umístěním kurzoru.|Přepsání `ClipboardCommandSet.ProcessOnCopy()` používat konkrétní umístění verzi `ElementOperations.Merge().` najdete v části [přizpůsobení chování kopie](../modeling/customizing-copy-behavior.md).|  
 |Vytvořte další odkazy na vložení|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
 |Povolit přetažení z tohoto diagramu, ostatní DSL, linky a Windows elementy|V tématu [postupy: přidání obslužné rutiny a přetažení](../modeling/how-to-add-a-drag-and-drop-handler.md)|  

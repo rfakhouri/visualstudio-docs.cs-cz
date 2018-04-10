@@ -1,12 +1,12 @@
 ---
-title: "Postupy: Správa aktualizací pro aplikaci ClickOnce | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Správa aktualizací pro aplikaci ClickOnce | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.Update
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - updating data, ClickOnce
 - application updates
 ms.assetid: a3f23f05-e7f1-4620-b23c-2d68f9643684
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: f239f13a7dcefe0ce6f2bf8c12c641e97a48ce26
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Postupy: Správa aktualizací pro aplikaci ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikace můžete vyhledat aktualizace automaticky nebo prostřednictvím kódu programu. Jako vývojář máte spoustu flexibilitu při určení, kdy a jak se provádí kontroly aktualizací, zda jsou povinné aktualizace a které aplikace by měla vyhledat aktualizace.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace můžete vyhledat aktualizace automaticky nebo prostřednictvím kódu programu. Jako vývojář máte spoustu flexibilitu při určení, kdy a jak se provádí kontroly aktualizací, zda jsou povinné aktualizace a které aplikace by měla vyhledat aktualizace.  
   
  Můžete nakonfigurovat aplikaci vyhledat aktualizace automaticky před spuštěním aplikace nebo v nastavených intervalech po spuštění aplikace. Kromě toho můžete zadat minimální požadovaná verze; Pokud verze uživatele je nižší než požadovaná verze je tedy instalována aktualizace.  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  V **aktualizace aplikace** dialogové okno pole, ujistěte se, že **aplikace by měla vyhledat aktualizace** je zaškrtnuté políčko.  
   
-5.  V **aktualizovat umístění** pole, zadejte umístění aktualizace s plně kvalifikovanou adresu URL, pomocí formátu http://Hostname/ApplicationName nebo cestu UNC pomocí formátu \\\Server\ApplicationName, nebo klikněte na tlačítko **Procházet** tlačítko procházení pro aktualizaci umístění.  
+5.  V **aktualizovat umístění** pole, zadejte umístění aktualizace s plně kvalifikovanou adresu URL ve formátu http://Hostname/ApplicationName, nebo cestu UNC pomocí formátu \\\Server\ApplicationName nebo klikněte na **Procházet** a vyhledejte umístění aktualizace.  
   
 ### <a name="to-check-for-updates-programmatically"></a>Ke kontrole aktualizací prostřednictvím kódu programu  
   
@@ -105,7 +105,7 @@ ms.lasthandoff: 12/22/2017
   
 4.  V **aktualizace aplikace** dialogové okno pole, ujistěte se, že **aplikace by měla vyhledat aktualizace** zaškrtnutí políčka. (Můžete volitelně vybrat toto políčko, chcete-li kontrolovat aktualizace prostřednictvím kódu programu a také nechat ClickOnce aktualizace vyhledávat automaticky.)  
   
-5.  V **aktualizovat umístění** pole, zadejte umístění aktualizace s plně kvalifikovanou adresu URL, pomocí formátu http://Hostname/ApplicationName nebo cestu UNC pomocí formátu \\\Server\ApplicationName, nebo klikněte na tlačítko **Procházet** tlačítko procházení pro aktualizaci umístění. Aktualizace umístění je, kde bude aplikace vyhledávat aktualizovaná verze sám sebe.  
+5.  V **aktualizovat umístění** pole, zadejte umístění aktualizace s plně kvalifikovanou adresu URL ve formátu http://Hostname/ApplicationName, nebo cestu UNC pomocí formátu \\\Server\ApplicationName nebo klikněte na **Procházet** a vyhledejte umístění aktualizace. Aktualizace umístění je, kde bude aplikace vyhledávat aktualizovaná verze sám sebe.  
   
 6.  Vytvoření tlačítka, položku nabídky nebo jinou položku uživatelského rozhraní na formuláři, který budou uživatelé vybírat ke kontrole aktualizací. Z obslužné rutiny této položky volejte metodu pro kontrolu a instalaci aktualizací. Ukázkový kód jazyka Visual Basic a Visual C# můžete najít pro takovou metodu v [postup: vyhledejte aplikaci aktualizace programově pomocí rozhraní API nasazení ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).  
   

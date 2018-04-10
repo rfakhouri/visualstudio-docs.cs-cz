@@ -1,9 +1,9 @@
 ---
-title: "Integrace modelů pomocí Visual Studio Modelbus | Microsoft Docs"
-ms.custom: 
+title: Integrace modelů pomocí Visual Studio Modelbus | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 92be17ab117a1c76456180cbb40a9b1d77f9181c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrace modelů pomocí Visual Studio Modelbus
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus poskytuje metodu pro vytváření odkazů mezi modely a z dalších nástrojů do modelů. Můžete například propojit modely jazyka domény (DSL) a modely UML. Můžete vytvořit integrované sadu DSL, linky.  
@@ -29,14 +29,14 @@ ms.lasthandoff: 02/09/2018
   
 -   [Postupy: Přidání obslužné rutiny operace přetažení myší](../modeling/how-to-add-a-drag-and-drop-handler.md)  
   
--   [Modelování SDK pro Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)  
+-   [Modeling SDK for Visual Studio](http://www.microsoft.com/download/details.aspx?id=40754)  
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
-##  <a name="provide"></a>Zajištění přístupu k DSL  
+##  <a name="provide"></a> Zajištění přístupu k DSL  
  Před vytvořením ModelBus odkazy na model nebo jeho prvky, je nutné zadat ModelBusAdapter pro DSL. Nejjednodušším způsobem je použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] přípony sběrnice modelu, který přidá příkazy do DSL návrháře.  
   
-###  <a name="expose"></a>Aby se zveřejnily definici DSL sběrnice modelu  
+###  <a name="expose"></a> Aby se zveřejnily definici DSL sběrnice modelu  
   
 1.  Stáhnout a nainstalovat rozšíření pro Visual Studio modelu sběrnice, pokud jste ho už nainstalovali. Další informace najdete v tématu [vizualizace a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Přepsání `ResolveElementReference` najít správný element ze sběrnice modelu odkaz.  
   
-##  <a name="editRef"></a>Přístup k DSL z jiné DSL  
+##  <a name="editRef"></a> Přístup k DSL z jiné DSL  
  Můžete uložit model sběrnice odkazy ve vlastnosti domény v DSL, a můžete napsat vlastní kód, který používá je. Můžete taky umožnit uživatel může vytvořit odkaz na sběrnici modelu výběrem soubor modelu a element v něm.  
   
  K povolení DSL použití odkazů na jiné DSL, měli byste nejdřív si ho *příjemce* modelu sběrnice odkazy.  
@@ -383,7 +383,7 @@ ModelBusReference elementReferenceRestored =
   
  V hlavním spouštěcím záznamu je deserializovat ve dvou fázích:  
   
--   `ModelBusReferencePropertySerializer`je standardní serializátoru, který přistupuje k hlavičce MBR. Používá standardní DSL `SerializationContext` balík vlastností, která je uložena v `ReferenceContext` pomocí klíče `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. Konkrétně `SerializationContext` by měl obsahovat instanci `ModelBus`.  
+-   `ModelBusReferencePropertySerializer` je standardní serializátoru, který přistupuje k hlavičce MBR. Používá standardní DSL `SerializationContext` balík vlastností, která je uložena v `ReferenceContext` pomocí klíče `ModelBusReferencePropertySerializer.ModelBusLoadContextKey`. Konkrétně `SerializationContext` by měl obsahovat instanci `ModelBus`.  
   
 -   Váš ModelBus adaptér se zabývá konkrétní adaptér součástí hlavního spouštěcího záznamu. Další informace uložené v ReferenceContext z hlavního spouštěcího záznamu může použít. Jednoduché na základě souborů adaptér udržuje kořenové cesty k souborům pomocí klíče `FilePathLoadContextKey` a `FilePathSaveContextKey`.  
   
@@ -506,7 +506,7 @@ private const string INVALID_REF_FORMAT =
   
 -   Nový projekt `ModelBusAdapter` je přidán do řešení.  
   
--   Odkaz na `ModelBusAdapter` je přidán do `DslPackage` projektu. `ModelBusAdapter`obsahuje odkaz na `Dsl` projektu.  
+-   Odkaz na `ModelBusAdapter` je přidán do `DslPackage` projektu. `ModelBusAdapter` obsahuje odkaz na `Dsl` projektu.  
   
 -   V **DslPackage\source.extention.tt**, `|ModelBusAdapter|` se přidá jako součást MEF.  
   

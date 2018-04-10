@@ -1,11 +1,11 @@
 ---
-title: "Resolvecomreference – úloha | Microsoft Docs"
-ms.custom: 
+title: Resolvecomreference – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveComReference
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - MSBuild, ResolveCOMReference task
 - ResolveCOMReference task [MSBuild]
 ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
-caps.latest.revision: 
+caps.latest.revision: 26
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 07381c84ec7213fe17aabb1db91cc1ab3be6188d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference – úloha
 Přebírá seznam jeden nebo více názvy knihovny typů, nebo soubory .tlb a řeší tyto knihoven typů do umístění na disku.  
@@ -58,7 +58,7 @@ Přebírá seznam jeden nebo více názvy knihovny typů, nebo soubory .tlb a ř
   
 ## <a name="remarks"></a>Poznámky  
   
-## <a name="typelibnames-item-metadata"></a>TypeLibNames Item Metadata  
+## <a name="typelibnames-item-metadata"></a>Metadata položky TypeLibNames  
  Následující tabulka popisuje dostupné položky metadat pro předaný položky `TypeLibNames` parametr.  
   
 |Metadata|Popis|  

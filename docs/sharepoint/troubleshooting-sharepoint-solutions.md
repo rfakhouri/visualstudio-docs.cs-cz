@@ -1,12 +1,12 @@
 ---
-title: "Řešení potíží s řešeními služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: Řešení potíží s řešeními služby SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - Microsoft.VisualStudio.Tools.SharePoint.Errors.Debugging
@@ -23,10 +23,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 6f03f8fd1fd5609f93d4fae22a7a694e61b1c80c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="troubleshooting-sharepoint-solutions"></a>Řešení potíží s řešeními služby SharePoint
   S těmito problémy nebo výstrahy může dojít při ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicí program. Další informace najdete v tématu [ladění řešení pracovního postupu služby SharePoint 2007](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -179,7 +179,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Centrální správa SharePoint 2010. Další informace najdete v tématu [správu modelu služby BDC](http://go.microsoft.com/fwlink/?LinkID=181472) na webu Microsoft TechNet Web.  
   
--   Prostředí Windows PowerShell. Odstraněním modelu zadáním následujícího příkazu na příkazovém řádku: **odebrat SPBusinessDataCatalogModel**. Další informace najdete v tématu [obecné rutiny (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) na webu Microsoft TechNet Web.  
+-   Windows PowerShell. Odstraněním modelu zadáním následujícího příkazu na příkazovém řádku: **odebrat SPBusinessDataCatalogModel**. Další informace najdete v tématu [obecné rutiny (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) na webu Microsoft TechNet Web.  
   
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Objeví se chyba při pokusu o zobrazení Visual webové části služby SharePoint  
  K tomuto problému dochází při **cesta** vlastnost uživatelského ovládacího prvku nezačíná řetězec "CONTROLTEMPLATES\\".  
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/10/2018
  K tomuto problému dochází, pokud přejmenovat importovanou seznamu instance a spustíte ho v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 ### <a name="error-message"></a>Chybová zpráva  
- Chyba sestavení: došlo k chybě v kroku nasazení 'aktivovat funkce: soubor Template\Features\\[*Importovat projekt**funkce**název*] \Files\Lists \\[*staré**název seznamu*] \Schema.xml neexistuje.  
+ Chyba sestavení: došlo k chybě v kroku nasazení 'aktivovat funkce: soubor Template\Features\\[*Importovat projekt**funkce**název*] \Files\Lists\\[*staré ** název seznamu*] \Schema.xml neexistuje.  
   
 ### <a name="resolution"></a>Rozlišení  
  Při importu seznamu instance atributu s názvem CustomSchema se přidá do souboru Elements.xml instance seznamu. Elements.XML obsahuje cestu vlastní schema.xml pro instanci seznamu. Pokud přejmenujete instanci seznamu v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cesta nasazení pro vlastní schema.xml změny, ale cesta hodnota atributu CustomSchema neaktualizuje. Instance seznamu v důsledku toho nemůže najít soubor schema.xml v původní cestě, která je určené atributem CustomSchema, pokud je zapnuta.  
@@ -280,7 +280,7 @@ ms.lasthandoff: 01/10/2018
  Nepodařilo se načíst konfigurační soubor Web.config. Zkontrolujte soubor pro všechny nesprávně vytvořené elementy XML a zkuste to znovu. Došlo k následující chybě: nebyl nalezen ve slovníku zadaný klíč.  
   
 ### <a name="resolution"></a>Rozlišení  
- Chcete-li vyřešit tento problém, ujistěte se, že adresa URL webu hodnota vlastnosti projektu služby SharePoint v sadě Visual Studio odpovídá adrese URL, kterému je přiřazen výchozí pásmo pro mapování alternativních adres URL webové aplikace. Chyba nelze vyřešit pomocí jiné zóně, jako je například Intranet, pro adresu URL. Lokality adresu URL pro projekt a adresu URL v zóně výchozí musí shodovat. Pro přístup k mapování alternativních adres URL, otevřete nástroj Centrální správa SharePoint 2010, zvolte **Správa aplikací** odkaz a pak v části **webových aplikací**, vyberte ** Konfigurace mapování alternativních adres URL** odkaz. Další informace najdete v tématu [vytvořit zóny pro webové aplikace](http://go.microsoft.com/fwlink/?LinkId=192274).  
+ Chcete-li vyřešit tento problém, ujistěte se, že adresa URL webu hodnota vlastnosti projektu služby SharePoint v sadě Visual Studio odpovídá adrese URL, kterému je přiřazen výchozí pásmo pro mapování alternativních adres URL webové aplikace. Chyba nelze vyřešit pomocí jiné zóně, jako je například Intranet, pro adresu URL. Lokality adresu URL pro projekt a adresu URL v zóně výchozí musí shodovat. Pro přístup k mapování alternativních adres URL, otevřete nástroj Centrální správa SharePoint 2010, zvolte **Správa aplikací** odkaz a pak v části **webových aplikací**, vyberte  **Konfigurace mapování alternativních adres URL** odkaz. Další informace najdete v tématu [vytvořit zóny pro webové aplikace](http://go.microsoft.com/fwlink/?LinkId=192274).  
   
 ## <a name="see-also"></a>Viz také  
  [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)   

@@ -1,11 +1,11 @@
 ---
-title: "MT – úloha | Microsoft Docs"
-ms.custom: 
+title: MT – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
@@ -24,17 +24,17 @@ helpviewer_keywords:
 - MSBUILD (Visual C++), MT task
 - MT task (MSBuild (Visual C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-caps.latest.revision: 
+caps.latest.revision: 6
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a9bdfcd391a6377abf1d750330bb1a0dbd8bf80
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="mt-task"></a>MT – úloha
 Zabalí nástroj Microsoft Manifest mt.exe. Další informace najdete v tématu "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
@@ -49,7 +49,7 @@ Zabalí nástroj Microsoft Manifest mt.exe. Další informace najdete v tématu 
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|Volitelné **řetězec []** parametr.<br /><br /> Určuje název jeden nebo více souborů manifestu.<br /><br /> Další informace najdete v tématu **/manifest** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**AdditionalOptions**|Volitelné **řetězec** parametr.<br /><br /> Seznam možností příkazového řádku. Například "*/option1 /option2 /option#*". Pomocí tohoto parametru lze zadat parametry příkazového řádku, které nejsou reprezentovány jakékoliv **MT** parametr úloh.<br /><br /> Další informace najdete v tématu "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
-|**AssemblyIdentity –**|Volitelné **řetězec** parametr.<br /><br /> Určuje hodnoty atributu **assemblyIdentity** element manifestu. Zadejte seznam s položkami oddělenými čárkou, kde je první součást hodnota `name` atribut, za nímž následuje jeden nebo více dvojic název hodnota, které mají formuláře,  *\<název atributu > = < attribute_value >*.<br /><br /> Další informace najdete v tématu **/identity** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
+|**assemblyIdentity –**|Volitelné **řetězec** parametr.<br /><br /> Určuje hodnoty atributu **assemblyIdentity** element manifestu. Zadejte seznam s položkami oddělenými čárkou, kde je první součást hodnota `name` atribut, za nímž následuje jeden nebo více dvojic název hodnota, které mají formuláře,  *\<název atributu > = < attribute_value >*.<br /><br /> Další informace najdete v tématu **/identity** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**ComponentFileName**|Volitelné **řetězec** parametr.<br /><br /> Určuje název knihovny DLL, kterou máte v úmyslu vytvořit ze souborů .rgs nebo .tlb. Tento parametr je povinný, pokud zadáte **RegistrarScriptFile** nebo **TypeLibraryFile** MT parametry úlohy.<br /><br /> Další informace najdete v tématu **/dll** možnost "Mt.exe" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.|  
 |**DependencyInformationFile**|Volitelné **řetězec** parametr.<br /><br /> Určuje soubor informace závislostí použít Visual Studio ke sledování informací o závislostech sestavení pro nástroj manifestu.|  
 |**EmbedManifest**|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, vloží souboru manifestu v sestavení. Pokud `false`, vytvoří jako samostatný soubor manifestu.|  

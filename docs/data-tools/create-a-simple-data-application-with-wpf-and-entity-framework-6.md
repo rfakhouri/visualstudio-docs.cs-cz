@@ -1,10 +1,10 @@
 ---
-title: "Vytvoření jednoduché datové aplikace pomocí grafického subsystému WPF a Entity Framework 6 | Microsoft Docs"
-ms.custom: 
+title: Vytvoření jednoduché datové aplikace pomocí grafického subsystému WPF a Entity Framework 6 | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - CSharp
@@ -15,10 +15,10 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace pomocí grafického subsystému WPF a Entity Framework 6
 
@@ -52,11 +52,11 @@ Tento příklad používá SQL Server Express LocalDB a ukázková databáze Nor
   
 2.  Další přidáme balíček NuGet pro Entity Framework 6. V Průzkumníku řešení vyberte uzel projektu. V hlavní nabídce zvolte **projektu**, **spravovat balíčky NuGet...**  
   
-     ![Spravovat balíčky NuGet položky nabídky](../data-tools/media/raddata_vs2015_manage_nuget_packages.png "raddata_vs2015_manage_nuget_packages")  
+     ![Manage NuGet Packages menu item](../data-tools/media/raddata_vs2015_manage_nuget_packages.png "raddata_vs2015_manage_nuget_packages")  
   
 3.  V Správce balíčků NuGet, klikněte na **Procházet** odkaz. Horní balíčku v seznamu je pravděpodobně rozhraní Entity Framework. Klikněte na tlačítko **nainstalovat** v pravém podokně a postupujte podle pokynů. Ve výstupním okně zjistíte po dokončení instalace.  
   
-     ![Balíček NuGet Entity Framework](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
+     ![Entity Framework NuGet Package](../data-tools/media/raddata_vs2015_nuget_ef.png "raddata_vs2015_Nuget_EF")  
   
 4.  Visual Studio jsme teď můžete použít k vytvoření modelu založenému na databázi Northwind.  
   
@@ -118,7 +118,7 @@ Je možné napsat vlastní kód datové vazby, ale je mnohem snazší nechte ná
         </Grid.RowDefinitions>
     ```
 
-5.  Nyní otevřete MainWindow.xaml tak, aby si prohlížíte v návrháři. To způsobí, že okna zdroje dat, než se objeví jako možnost v sadě Visual Studio okno okraji vedle panel nástrojů. Klikněte na kartu a otevřete okno nebo jinak stiskněte **Shift + Alt + D** nebo zvolte **zobrazení &#124; Další Windows &#124; Zdroje dat**. Nyní klikněte na Zobrazit každou vlastnost v třídě zákazníkům vlastní jednotlivých textového pole. Nejprve klikněte na šipku v poli se seznamem zákazníků a zvolte **podrobnosti**. Pak přetáhněte uzel na střední část návrhovou plochu, tak, aby návrháře ví, že se má přejít v prostředním řádku.  Pokud někam nezaložili ho, můžete zadat řádek ručně později v XAML. Ve výchozím nastavení ovládací prvky jsou umístěny ve svislém směru v prvku mřížky, ale v tuto chvíli můžete uspořádat je ale chcete ve formuláři.  Například může mít smysl pro umístění textového pole název v horní části výše adresu. Ukázkové aplikace pro tohoto článku změní pole a jejich Přeuspořádá do dvou sloupců.  
+5.  Nyní otevřete MainWindow.xaml tak, aby si prohlížíte v návrháři. To způsobí, že okna zdroje dat, než se objeví jako možnost v sadě Visual Studio okno okraji vedle panel nástrojů. Klikněte na kartu a otevřete okno nebo jinak stiskněte **Shift + Alt + D** nebo zvolte **zobrazení &#124; ostatní okna &#124; zdroje dat**. Nyní klikněte na Zobrazit každou vlastnost v třídě zákazníkům vlastní jednotlivých textového pole. Nejprve klikněte na šipku v poli se seznamem zákazníků a zvolte **podrobnosti**. Pak přetáhněte uzel na střední část návrhovou plochu, tak, aby návrháře ví, že se má přejít v prostředním řádku.  Pokud někam nezaložili ho, můžete zadat řádek ručně později v XAML. Ve výchozím nastavení ovládací prvky jsou umístěny ve svislém směru v prvku mřížky, ale v tuto chvíli můžete uspořádat je ale chcete ve formuláři.  Například může mít smysl pro umístění textového pole název v horní části výše adresu. Ukázkové aplikace pro tohoto článku změní pole a jejich Přeuspořádá do dvou sloupců.  
   
      ![Zákazníci data zdrojová vazba na jednotlivé ovládací prvky](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png "raddata zákazníkům datového zdroje vazby ke jednotlivých ovládacích prvků")  
   

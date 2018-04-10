@@ -1,9 +1,9 @@
 ---
-title: "Postupy: přidání příkazu do místní nabídky | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: přidání příkazu do místní nabídky | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 Příkazy nabídky můžete přidat do jazyka specifické pro doménu (DSL) tak, aby vaši uživatelé můžete provádět úlohy, které jsou specifické pro vaše DSL. Při kliknutí pravým tlačítkem myši v diagramu se zobrazují příkazy v nabídce kontextu (místní). Příkaz můžete definovat, aby se zobrazí pouze v nabídce v konkrétních situacích. Například můžete provést příkaz viditelná jenom v případě, že uživatel klikne na konkrétní typy elementu nebo elementů v konkrétní stavy.  
@@ -51,8 +51,8 @@ Příkazy nabídky můžete přidat do jazyka specifické pro doménu (DSL) tak,
   
  Jinak zvažte použití metodu MEF definovat příkazy. Další informace najdete v tématu [rozšíření vaší DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
-##  <a name="VSCT"></a>Declare – příkaz do Commands.Vsct  
- Příkazy nabídky jsou deklarované v DslPackage\Commands.vsct. Tyto definice zadat popisky položek nabídky a jejich umístění v nabídkách.  
+##  <a name="VSCT"></a> Declare – příkaz do Commands.Vsct  
+ Menu commands are declared in DslPackage\Commands.vsct. Tyto definice zadat popisky položek nabídky a jejich umístění v nabídkách.  
   
  Soubor, který chcete upravit, Commands.vsct, naimportuje definice z několika souborů .h, které jsou umístěné v adresáři *Visual Studio SDK instalační cesty*\VisualStudioIntegration\Common\Inc. Zahrnuje také GeneratedVsct.vsct, která se generují z vaší DSL definice.  
   
@@ -131,7 +131,7 @@ Příkazy nabídky můžete přidat do jazyka specifické pro doménu (DSL) tak,
   
     -   `My Context Menu Command`  
   
-##  <a name="version"></a>Aktualizovat číslo verze balíčku v Package.tt  
+##  <a name="version"></a> Aktualizovat číslo verze balíčku v Package.tt  
  Kdykoli můžete přidat nebo změnit příkaz, aktualizovat `version` parametr <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> který se použije k třídě balíčku před vydání nové verze jazyka specifické pro doménu.  
   
  Protože třída balíčku je definováno v to generovaný soubor, aktualizujte atribut v textovém souboru šablony, který generuje soubor Package.cs.  
@@ -146,7 +146,7 @@ Příkazy nabídky můžete přidat do jazyka specifické pro doménu (DSL) tak,
   
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
-##  <a name="CommandSet"></a>Zadejte chování příkazu  
+##  <a name="CommandSet"></a> Zadejte chování příkazu  
  Vaše DSL již některé příkazy, které jsou implementované v částečné třídu, která je deklarován v DslPackage\GeneratedCode\CommandSet.cs. Pokud chcete přidat nové příkazy, musíte rozšířit tato třída tak, že vytvoříte nový soubor, který obsahuje deklaraci částečné stejné třídy. Název třídy je obvykle  *\<YourDslName >*`CommandSet`. Je vhodné, začněte tím, že ověření název třídy a zkontrolujete jeho obsah.  
   
  Příkaz set – třída je odvozený od <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -224,15 +224,15 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
   
 -   `this.CurrentSelection`. Obrazec, který uživatel klepli pravým tlačítkem myši je vždy zahrnuté v tomto seznamu. Pokud uživatel klikne na prázdnou část diagramu, diagramu je pouze členem seznamu.  
   
--   `this.IsDiagramSelected()` - `true`Pokud uživatel klikne na prázdnou část diagramu.  
+-   `this.IsDiagramSelected()` - `true` Pokud uživatel klikne na prázdnou část diagramu.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`-uživatel nevybrali více objektů  
+-   `this.IsSingleSelection()` -uživatel nevybrali více objektů  
   
--   `this.SingleSelection`-tvar nebo diagram, který klepli pravým tlačítkem myši uživatele  
+-   `this.SingleSelection` -tvar nebo diagram, který klepli pravým tlačítkem myši uživatele  
   
--   `shape.ModelElement as MyLanguageElement`-element modelu reprezentována obrazce.  
+-   `shape.ModelElement as MyLanguageElement` -element modelu reprezentována obrazce.  
   
  V rámci obecných pokynů, zkontrolujte `Visible` vlastnost závisí na výběr a ujistěte se, `Enabled` vlastnost závisí na stav vybrané elementy.  
   
@@ -299,7 +299,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 >  Pokud změníte části symboly souboru VSCT, musíte změnit taky tyto deklarace tak, aby odpovídaly. By se měl také zvýšit číslo verze v Package.tt  
   
- Zaregistrujte vaše příkazy nabídky jako součást sady tento příkaz. `GetMenuCommands()`je volána po při inicializaci diagramu:  
+ Zaregistrujte vaše příkazy nabídky jako součást sady tento příkaz. `GetMenuCommands()` je volána po při inicializaci diagramu:  
   
 ```  
 protected override IList<MenuCommand> GetMenuCommands()  

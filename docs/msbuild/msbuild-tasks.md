@@ -1,30 +1,30 @@
 ---
-title: "Úlohy nástroje MSBuild | Microsoft Docs"
-ms.custom: 
+title: Úlohy nástroje MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: 
+caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: e1de29741f11413d8829902635c1284aa6e5bce6
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="msbuild-tasks"></a>Úlohy nástroje MSBuild
-Platformy sestavení musí být schopné provést libovolného počtu akcí během procesu vytváření. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]používá *úlohy* k provedení těchto akcí. Úkol je jednotka spustitelný kód, který se používá [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k provádění operací atomic sestavení.  
+Platformy sestavení musí být schopné provést libovolného počtu akcí během procesu vytváření. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používá *úlohy* k provedení těchto akcí. Úkol je jednotka spustitelný kód, který se používá [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k provádění operací atomic sestavení.  
   
 ## <a name="task-logic"></a>Úloha logiky  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] Formát souboru XML projektu nelze provést plně sestavení operací na svůj vlastní, takže logiku úloh, musí být implementována mimo souboru projektu.  
@@ -71,6 +71,6 @@ Platformy sestavení musí být schopné provést libovolného počtu akcí běh
   
 ## <a name="see-also"></a>Viz také  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [Nástroje MSBuild](../msbuild/msbuild.md)   
+ [MSBuild](../msbuild/msbuild.md)   
  [Zápis úloh](../msbuild/task-writing.md)   
  [Vložené úlohy](../msbuild/msbuild-inline-tasks.md)

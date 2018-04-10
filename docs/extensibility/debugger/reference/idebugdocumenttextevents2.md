@@ -1,29 +1,29 @@
 ---
 title: IDebugDocumentTextEvents2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - IDebugDocumentTextEvents2
 helpviewer_keywords:
 - IDebugDocumentTextEvents2 interface
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
-caps.latest.revision: 
+caps.latest.revision: 14
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb9e284435cdf8a5905e068b0044cd118a1621c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 Toto rozhraní se používá k oznamování změny ve zdrojovém dokumentu, které doplní ladění modul aplikace Visual Studio.  
@@ -38,7 +38,7 @@ IDebugDocumentTextEvents2 : IUnknown
  DE implementuje toto rozhraní pro podporu změn ke zdrojovému kódu. Toto rozhraní je implementováno obvykle na stejný objekt, který implementuje [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]získá toto rozhraní prostřednictvím volání <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> metoda. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Rozhraní se získávají z volání <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> metoda. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Rozhraní se získá voláním [QueryInterface](/cpp/atl/queryinterface) metodu [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] získá toto rozhraní prostřednictvím volání <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> metoda. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> Rozhraní se získávají z volání <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> metoda. <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer> Rozhraní se získá voláním [QueryInterface](/cpp/atl/queryinterface) metodu [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) rozhraní.  
   
 ## <a name="methods-in-vtable-order"></a>Metody v tabulce Vtable pořadí  
  Následující tabulka uvádí metody `IDebugDocumentTextEvents2`.  
@@ -56,11 +56,11 @@ IDebugDocumentTextEvents2 : IUnknown
  Pouze ladění strojů, které zadat své vlastní dokumenty by využívat výhod `IDebugDocumentTextEvent2` rozhraní. Příkladem může být skriptovací stroj ladění. Probíhá interpretace skripty, nové zdrojový kód lze vygenerovat, není k dispozici v žádném souboru disk a je zřejmé, pouze je DE.  
   
 ## <a name="requirements"></a>Požadavky  
- Záhlaví: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   

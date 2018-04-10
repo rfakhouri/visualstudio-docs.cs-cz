@@ -1,12 +1,12 @@
 ---
-title: "&lt;nasazení&gt; – Element (ClickOnce – nasazení) | Microsoft Docs"
-ms.custom: 
+title: '&lt;nasazení&gt; – Element (ClickOnce – nasazení) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#subscription
@@ -22,17 +22,17 @@ dev_langs:
 helpviewer_keywords:
 - <deployment> element [ClickOnce deployment manifest]
 ms.assetid: 4fafa9c2-97a0-4cea-b8fd-9746dca33af4
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 0caff13f84208152b3fa2ff4e56a7a2c7f0b6dd7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;nasazení&gt; – Element (ClickOnce – nasazení)
 Identifikuje atributy použité pro nasazení aktualizací a vystavení systému.  
@@ -70,7 +70,7 @@ Identifikuje atributy použité pro nasazení aktualizací a vystavení systému
 |---------------|-----------------|  
 |`install`|Požadováno. Určuje, zda tato aplikace definuje přítomnost na Windows **spustit** nabídky a v Ovládacích panelech **přidat nebo odebrat programy** aplikace. Platné hodnoty jsou `true` a `false`. Pokud `false`, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nejnovější verzi této aplikace bude vždy spouštět ze sítě a nerozpozná `subscription` elementu.|  
 |`minimumRequiredVersion`|Volitelné. Určuje minimální verzi této aplikace, které můžete spustit na straně klienta. Pokud je číslo verze aplikace je menší než číslo verze zadané v manifestu nasazení, aplikace se nespustí. Čísla verzí je třeba zadat ve formátu `N.N.N.N`, kde `N` je celé číslo bez znaménka. Pokud `install` atribut je `false`, `minimumRequiredVersion` nesmí být nastavený.|  
-|`mapFileExtensions`|Volitelné. Použije se výchozí hodnota `false`. Pokud `true`, všechny soubory v nasazení musí mít příponu .deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Toto rozšíření mimo tyto soubory budou pruhu, jakmile je stáhne z webového serveru. Pokud je publikovat aplikace pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], automaticky přidá toto rozšíření pro všechny soubory. Tento parametr umožňuje všechny soubory v rámci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení ke stažení z webového serveru, které blokuje přenos souborů, které končí na "nebezpečnými" příponami .exe.|  
+|`mapFileExtensions`|Volitelné. Použije se výchozí hodnota `false`. Pokud `true`, všechny soubory v nasazení musí mít příponu .deploy. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Toto rozšíření mimo tyto soubory budou pruhu, jakmile je stáhne z webového serveru. Pokud je publikovat aplikace pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], automaticky přidá toto rozšíření pro všechny soubory. Tento parametr umožňuje všechny soubory v rámci [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení ke stažení z webového serveru, které blokuje přenos souborů, které končí na "nebezpečnými" příponami .exe.|  
 |`disallowUrlActivation`|Volitelné. Použije se výchozí hodnota `false`. Pokud `true`, zabraňuje aplikace nainstalované z spuštění kliknutím na adresu URL nebo zadáním adresy URL do aplikace Internet Explorer. Pokud `install` atribut není k dispozici, tento atribut je ignorován.|  
 |`trustURLParameters`|Volitelné. Použije se výchozí hodnota `false`. Pokud `true`umožňuje adresu URL tak, aby obsahovala parametrů řetězce dotazu, které se předávají do aplikace, mnoho like argumenty příkazového řádku jsou předány aplikace příkazového řádku. Další informace najdete v tématu [postupy: načtení informací řetězce dotazu v Online aplikace ClickOnce](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md).<br /><br /> Pokud `disallowUrlActivation` atribut je `true`, `trustUrlParameters` musí být vyloučeny z manifestu, nebo explicitně nastavit na `false`.|  
   
@@ -79,16 +79,16 @@ Identifikuje atributy použité pro nasazení aktualizací a vystavení systému
 ## <a name="subscription"></a>Předplatné  
  Volitelné. Obsahuje `update` elementu. `subscription` Element nemá žádné atributy. Pokud `subscription` element neexistuje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace nebude nikdy kontrolovat aktualizace. Pokud `install` atribut `deployment` element je `false`, `subscription` element je ignorován, protože [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, který se spustí ze sítě, vždy používá nejnovější verze.  
   
-## <a name="update"></a>Aktualizace  
- Požadováno. Tento element je podřízená `subscription` elementu a obsahuje buď `beforeApplicationStartup` nebo `expiration` elementu. `beforeApplicationStartup`a `expiration` nemůže být zároveň zadaná ve stejném manifestu nasazení.  
+## <a name="update"></a>update  
+ Požadováno. Tento element je podřízená `subscription` elementu a obsahuje buď `beforeApplicationStartup` nebo `expiration` elementu. `beforeApplicationStartup` a `expiration` nemůže být zároveň zadaná ve stejném manifestu nasazení.  
   
  `update` Element nemá žádné atributy.  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
- Volitelné. Tento element je podřízená `update` elementu a nemá žádné atributy. Když `beforeApplicationStartup` existuje element, aplikace bude blokované při [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vyhledávat aktualizace, pokud je klient online. Pokud tento element neexistuje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nejprve vyhledá aktualizace podle hodnoty zadané pro `expiration` elementu. `beforeApplicationStartup`a `expiration` nemůže být zároveň zadaná ve stejném manifestu nasazení.  
+ Volitelné. Tento element je podřízená `update` elementu a nemá žádné atributy. Když `beforeApplicationStartup` existuje element, aplikace bude blokované při [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vyhledávat aktualizace, pokud je klient online. Pokud tento element neexistuje, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nejprve vyhledá aktualizace podle hodnoty zadané pro `expiration` elementu. `beforeApplicationStartup` a `expiration` nemůže být zároveň zadaná ve stejném manifestu nasazení.  
   
 ## <a name="expiration"></a>vypršení platnosti  
- Volitelné. Tento element je podřízená `update` elementu, a nemá žádné podřízené objekty. `beforeApplicationStartup`a `expiration` nemůže být zároveň zadaná ve stejném manifestu nasazení. Když dojde k kontrolu aktualizací a je zjištěn aktualizovanou verzi, nové verze ukládá do mezipaměti průběhu existující verzi. Při příštím spuštění systému pak instalaci nové verze [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
+ Volitelné. Tento element je podřízená `update` elementu, a nemá žádné podřízené objekty. `beforeApplicationStartup` a `expiration` nemůže být zároveň zadaná ve stejném manifestu nasazení. Když dojde k kontrolu aktualizací a je zjištěn aktualizovanou verzi, nové verze ukládá do mezipaměti průběhu existující verzi. Při příštím spuštění systému pak instalaci nové verze [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.  
   
  `expiration` Element podporuje následující atributy.  
   

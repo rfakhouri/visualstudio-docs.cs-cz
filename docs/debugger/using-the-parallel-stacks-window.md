@@ -1,12 +1,12 @@
 ---
-title: "Zobrazit použití okna paralelní zásobníky vlákna | Microsoft Docs"
-ms.custom: 
+title: Zobrazit použití okna paralelní zásobníky vlákna | Microsoft Docs
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - vs.debug.parallelstacks
@@ -18,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - debugger, parallel tasks window
 ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
-caps.latest.revision: 
+caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 72c7c38dece8924f48298c0b7b661f564f9b1afc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Zobrazení vláken a úloh pomocí okna paralelní zásobníky
 **Paralelní zásobníky** je užitečná při ladění vícevláknové aplikace. Jeho **zobrazení vláken** zobrazí informace v zásobníku volání pro všechna vlákna ve vaší aplikaci. Umožňuje vám přecházet mezi vláken a rámce zásobníku na těchto vláken. Ve spravovaném kódu **zobrazení úlohy** ukáže zásobníky z volání <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty. V nativním kódu **zobrazení úlohy** ukáže zásobníky z volání [úkolů skupiny](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralelní algoritmy](/cpp/parallel/concrt/parallel-algorithms), [asynchronních agentů](/cpp/parallel/concrt/asynchronous-agents)a [prosté úlohy](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  
@@ -43,7 +43,7 @@ ms.lasthandoff: 12/22/2017
 |Písmeno popisku|Název elementu|Popis|  
 |--------------------|------------------|-----------------|  
 |OBJEKT|Uzel nebo Segment zásobník volání|Obsahuje řadu metody pro jeden nebo více vláken. Pokud uzel nemá žádné řádky šipku připojeny, pak představuje cestu celý volání pro podprocesy.|  
-|B|Modré zvýraznění|Určuje cestu volání aktuálního vlákna.|  
+|B|Blue Highlight|Určuje cestu volání aktuálního vlákna.|  
 |C|Šipka řádky|Připojte uzly a společně tvoří celá volání cestu pro podprocesy.|  
 |D|Popis tlačítka na záhlaví uzlu|Zobrazí ID a uživatelské jméno každé vlákno, jehož cesta volání sdílí tento uzel.|  
 |E|Metoda|Reprezentuje jeden nebo více rámce zásobníku v stejnou metodu.|  
@@ -83,7 +83,7 @@ ms.lasthandoff: 12/22/2017
 |---------------|-----------------|  
 |Příznak|Označí vybrané položky.|  
 |Odstranění označení|Unflags vybranou položku.|  
-|Zablokování|Zablokuje vybranou položku.|  
+|Freeze|Zablokuje vybranou položku.|  
 |Odblokování|Thaws vybranou položku.|  
 |Přejděte k úloze (přístup z více vláken)|Provede stejnou funkci jako pole se seznamem na panelu nástrojů, ale zachová stejné rámce zásobníku zvýrazněná.|  
 |Přejít do zdrojového kódu|Umožňuje přejít do umístění ve zdrojovém kódu, která odpovídá rámce zásobníku, který uživatel klepli pravým tlačítkem myši.|  

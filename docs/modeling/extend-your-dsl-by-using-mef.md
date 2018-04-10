@@ -1,9 +1,9 @@
 ---
-title: "Rozšíření vaší DSL pomocí MEF | Microsoft Docs"
-ms.custom: 
+title: Rozšíření vaší DSL pomocí MEF | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 735de60d18bc5cbca7dc2ba509372d81622038be
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Rozšíření vašeho DSL pomocí MEF
 Jazyka specifické pro doménu (DSL) můžete rozšířit pomocí Managed Extensibility Framework (MEF). Vy nebo jiní vývojáři budou moci zapsat rozšíření pro DSL beze změny definice DSL a kód programu. Taková rozšíření zahrnují příkazy nabídky, obslužné rutiny přetahování myší a ověření. Budou uživatelé moci nainstalovat vaší DSL a volitelně nainstalovat rozšíření pro ni.  
@@ -28,7 +28,7 @@ Jazyka specifické pro doménu (DSL) můžete rozšířit pomocí Managed Extens
   
 1.  Vytvořte novou složku s názvem **MefExtension** uvnitř **DslPackage** projektu. Přidejte do ní následující soubory:  
   
-     Název souboru:`CommandExtensionVSCT.tt`  
+     Název souboru: `CommandExtensionVSCT.tt`  
   
     > [!IMPORTANT]
     >  Nastavit identifikátor GUID v tomto souboru, aby byla stejná jako CommandSetId identifikátor GUID, který je definován v DslPackage\GeneratedCode\Constants.tt  
@@ -44,21 +44,21 @@ Jazyka specifické pro doménu (DSL) můžete rozšířit pomocí Managed Extens
     <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
     ```  
   
-     Název souboru:`CommandExtensionRegistrar.tt`  
+     Název souboru: `CommandExtensionRegistrar.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
     ```  
   
-     Název souboru:`ValidationExtensionEnablement.tt`  
+     Název souboru: `ValidationExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
     ```  
   
-     Název souboru:`ValidationExtensionRegistrar.tt`  
+     Název souboru: `ValidationExtensionRegistrar.tt`  
   
      Pokud chcete přidat tento soubor, musíte povolit ověření ve vašem DSL pomocí alespoň jeden z parametrů v **EditorValidation** v Průzkumníku DSL.  
   
@@ -67,7 +67,7 @@ Jazyka specifické pro doménu (DSL) můžete rozšířit pomocí Managed Extens
     <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
     ```  
   
-     Název souboru:`PackageExtensionEnablement.tt`  
+     Název souboru: `PackageExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -76,21 +76,21 @@ Jazyka specifické pro doménu (DSL) můžete rozšířit pomocí Managed Extens
   
 2.  Vytvořte novou složku s názvem **MefExtension** uvnitř **Dsl** projektu. Přidejte do ní následující soubory:  
   
-     Název souboru:`DesignerExtensionMetaDataAttribute.tt`  
+     Název souboru: `DesignerExtensionMetaDataAttribute.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
     ```  
   
-     Název souboru:`GestureExtensionEnablement.tt`  
+     Název souboru: `GestureExtensionEnablement.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
     <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
     ```  
   
-     Název souboru:`GestureExtensionController.tt`  
+     Název souboru: `GestureExtensionController.tt`  
   
     ```  
     <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -176,7 +176,7 @@ Jazyka specifické pro doménu (DSL) můžete rozšířit pomocí Managed Extens
 ### <a name="menu-commands"></a>Příkazy nabídky  
  Zápis příkazu nabídky, definice třídy, která implementuje <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> a předpony třída tímto atributem, která je definována v vaší DSL, s názvem *YourDsl*`CommandExtension`. Můžete napsat více než jednu třídu příkaz nabídky.  
   
- `QueryStatus()`je volána, když kliknutí pravým tlačítkem na obrázku. Doporučujeme zkontrolovat aktuální výběr a nastavit `command.Enabled` k označení, když je použít příkaz.  
+ `QueryStatus()` je volána, když kliknutí pravým tlačítkem na obrázku. Doporučujeme zkontrolovat aktuální výběr a nastavit `command.Enabled` k označení, když je použít příkaz.  
   
 ```  
 using System.ComponentModel.Composition;  

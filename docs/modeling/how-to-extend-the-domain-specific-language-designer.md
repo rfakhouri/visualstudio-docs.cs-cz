@@ -1,9 +1,9 @@
 ---
-title: "Postupy: rozšíření návrháře jazyka domény | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: rozšíření návrháře jazyka domény | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Postupy: Rozšíření návrháře jazyka specifického pro doménu
 Můžete provést rozšíření návrháře, který slouží k úpravám DSL definice. Typy rozšíření, které můžete provést zahrnují přidání příkazy nabídky, přidání obslužné rutiny pro přetažení a dvakrát klikněte na gesta a pravidel, které jsou aktivované, když konkrétní typy hodnot nebo vztahy změnit. Rozšíření můžete zabalené jako Visual Studio integrace rozšíření (VSIX) a distribuovat do jiných uživatelů.  

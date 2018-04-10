@@ -1,12 +1,12 @@
 ---
-title: "Postupy: vystavení kódu do VBA v projektu jazyka Visual C# | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vystavení kódu do VBA v projektu jazyka Visual C# | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - VB
@@ -22,10 +22,10 @@ manager: ghogen
 ms.workload:
 - office
 ms.openlocfilehash: 1b750137a52d30688f69c825f83f72c7cbeebe45
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>Postupy: Vystavení kódu v projektu jazyka Visual C# pro jazyk VBA
   Můžete vystavení kódu v jazyce Visual C# projektu do jazyka Visual Basic pro aplikace (VBA) kód, pokud chcete, aby dva typy kódu dojít ke vzájemné interakci.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="exposing-code-in-a-visual-c-project"></a>Vystavení kódu v projektu jazyka Visual C#  
  Pokud chcete povolit VBA kód pro volání kódu v projektu jazyka Visual C#, změnit kód tak, aby byl viditelný pro COM a nastavte **ReferenceAssemblyFromVbaProject** vlastnost, která má **True** v návrháři.  
   
- Návod, který ukazuje, jak volat metodu z jazyka VBA v projektu jazyka Visual C#, najdete v části [návod: volání kódu z jazyka VBA v Visual C &#35; Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+ Návod, který ukazuje, jak volat metodu z jazyka VBA v projektu jazyka Visual C#, najdete v části [návod: volání kódu z jazyka VBA v Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
   
 #### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>K vystavení kódu v projektu jazyka Visual C# pro jazyk VBA  
   
@@ -109,7 +109,7 @@ ms.lasthandoff: 02/09/2018
  [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [Kombinování VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md)   
- [Návod: Volání kódu z jazyka VBA v Visual C &#35; Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Návod: Volání kódu z jazyka VBA v Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Postupy: Vystavení kódu v projektu jazyka Visual Basic pro jazyk VBA](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

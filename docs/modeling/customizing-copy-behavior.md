@@ -1,9 +1,9 @@
 ---
-title: "Přizpůsobení chování kopie | Microsoft Docs"
-ms.custom: 
+title: Přizpůsobení chování kopie | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 author: gewarren
 ms.author: gewarren
@@ -12,10 +12,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: f8eba726c35b402e93bd1fd1b50048b8dce4bf2b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="customizing-copy-behavior"></a>Přizpůsobení chování kopírování
 V jazyce specifické pro doménu (DSL) vytvořené pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK, můžete změnit, co se stane, když uživatel zkopíruje a vloží elementy.  
@@ -54,7 +54,7 @@ V jazyce specifické pro doménu (DSL) vytvořené pomocí [!INCLUDE[vsprvs](../
  **Zkopírováním a vložením rychle duplicitní prvky.** Za normálních okolností je stále vybrali položku, kterou jste právě zkopírovali, a nelze vložit stejný typ elementu na něj.  
  Sloučení direktivu Element přidejte do třídy domény a nastavte ji na dopředného sloučení k nadřazené třídy. To bude mít stejný účinek na operací přetažení. Další informace najdete v tématu [přizpůsobení Element vytváření a přesun](../modeling/customizing-element-creation-and-movement.md).  
   
- \-nebo –  
+ \- nebo –  
   
  Před vložením prvků, přepsáním vyberte diagram `ClipboardCommandSet.ProcessOnPasteCommand()`. Přidejte tento kód do vlastního souboru v projektu DslPackage:  
   
@@ -79,7 +79,7 @@ partial class MyDslClipboardCommandSet
  **Když uživatel vloží do vybraných cílových, vytvořte další odkazy.** Například pokud je pole komentář vložen do elementu, odkaz se provádí mezi nimi.  
  Přidat direktivu Element sloučení k třídě cíle domény a nastavte ji zpracovat sloučení přidáním odkazy. To bude mít stejný účinek na operací přetažení. Další informace najdete v tématu [přizpůsobení Element vytváření a přesun](../modeling/customizing-element-creation-and-movement.md).  
   
- \-nebo –  
+ \- nebo –  
   
  Přepsání `ClipboardCommandSet.ProcessOnPasteCommand()` po volání metody základní vytvářet další odkazy.  
   
@@ -216,10 +216,10 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Umožní uživateli přetažení elementy.**  
  V tématu [postupy: přidání obslužné rutiny a přetažení](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a>Přizpůsobení chování Kopírovat odkaz  
+##  <a name="customizeLinks"></a> Přizpůsobení chování Kopírovat odkaz  
  Když uživatel kopie elementu, standardní chování je, že jsou všechny vložené prvky také zkopírován. Standardní chování kopírování, můžete upravit. V definici DSL vybrat roli na jedné straně relace a v sadě okno Vlastnosti **rozšíří kopie** hodnotu.  
   
- ![Rozšíří vlastnost kopírování role domény](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
+ ![Propagates Copy property of domain role](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
   
  Existují tři hodnoty:  
   
@@ -229,7 +229,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
 -   Rozšíří kopie propojení a opačným role player - zkopírovaný skupina obsahuje kopii elementu na druhém konci odkazu.  
   
- ![Účinek kopírování s PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
+ ![Effect of copying with PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
   
  Elementy a bitovou kopii, která se zkopírují, bude mít vliv změny, které provedete.  
   
@@ -290,12 +290,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  Definujte dvě metody ve třídě ElementOperations:  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`který určuje, zda může být source element přetáhli cíl tvaru, konektoru nebo diagram.  
+-   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` který určuje, zda může být source element přetáhli cíl tvaru, konektoru nebo diagram.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`source element který spojuje do cílové.  
+-   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` source element který spojuje do cílové.  
   
 ### <a name="canmerge"></a>CanMerge()  
- `CanMerge()`je volána k určení zpětnou vazbu, která má být poskytnut uživateli při pohybu myší v diagramu. Parametry metody jsou element, za které je ukazatele myši a data o zdroj, ze které byla provedena operace přetažení. Uživatele můžete přetáhnout z kdekoli na obrazovce. Zdrojový objekt proto může být mnoho různých typů a může být serializována v různých formátech. Pokud je zdroj DSL nebo UML modelu, parametr dat je serializaci <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Operace přetažení, kopírování a sady nástrojů pomocí ElementGroupPrototypes znázornit fragmenty modelů.  
+ `CanMerge()` je volána k určení zpětnou vazbu, která má být poskytnut uživateli při pohybu myší v diagramu. Parametry metody jsou element, za které je ukazatele myši a data o zdroj, ze které byla provedena operace přetažení. Uživatele můžete přetáhnout z kdekoli na obrazovce. Zdrojový objekt proto může být mnoho různých typů a může být serializována v různých formátech. Pokud je zdroj DSL nebo UML modelu, parametr dat je serializaci <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Operace přetažení, kopírování a sady nástrojů pomocí ElementGroupPrototypes znázornit fragmenty modelů.  
   
  Prototypu skupiny Element může obsahovat libovolný počet elementů a odkazy. Typy prvků lze identifikovat podle identifikátorů GUID. Identifikátor GUID je obrazec, který byl přetáhli, není základní element modelu. V následujícím příkladu `CanMerge()` vrátí hodnotu true, pokud je třída tvaru z diagramu UML přetáhli tohoto diagramu.  
   

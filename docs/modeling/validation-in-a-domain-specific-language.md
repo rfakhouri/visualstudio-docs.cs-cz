@@ -1,9 +1,9 @@
 ---
-title: "Ověření v jazyce specifické pro doménu | Microsoft Docs"
-ms.custom: 
+title: Ověření v jazyce specifické pro doménu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, constraints
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 7eb2e734bd94608584ca700223fb75387eb484fb
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Ověřování v jazyce specifickém pro doménu
 Jako autor jazyka specifické pro doménu (DSL) můžete definovat omezení ověřování, abyste ověřili smysluplný model vytvořený uživatelem. Pokud vaše DSL umožňuje uživatelům kreslení rodiny strom osoby a jejich nadřazených, můžete například napsat omezení, které zajistí, že podřízené položky data narození po svých nadřazených složek.  
@@ -142,7 +142,7 @@ public partial class ParentsHaveChildren
   
  V příkladu platí pro následující modelu domény. Relace ParentsHaveChildren má role, které jsou s názvem podřízenými a nadřazenými.  
   
- ![Diagram DSL definice & č. 45; Rodina stromu modelu](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![Diagram DSL definice &#45; rodiny stromu modelu](../modeling/media/familyt_person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>Ověření kategorie  
  V <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> atribut, zadejte v případě, že metodu ověřování, kterou se má provést.  
@@ -303,7 +303,7 @@ namespace Company.FamilyTree
   
  Obslužné rutiny se také nazývají po zpět nebo znovu operace, které ovlivňují odkazy nebo elementy.  
   
-##  <a name="custom"></a>Kategorie vlastního ověřování  
+##  <a name="custom"></a> Kategorie vlastního ověřování  
  Kromě standardní ověření kategorie, jako jsou nabídky a otevřete můžete definovat vlastní kategorie. Můžete vyvolat těchto kategorií z kódu programu. Uživatele nelze vyvolat je přímo.  
   
  Typické použití pro vlastní kategorie je definovat kategorie, která ověřuje, zda model splňuje předpoklady konkrétní nástroje.  
@@ -331,7 +331,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a>Alternativy k ověření  
+##  <a name="alternatives"></a> Alternativy k ověření  
  Omezení ověřování zprávy o chybách, ale neměňte modelu. Pokud místo toho chcete zabránit vzniku neplatný model, můžete vytvořit další techniky.  
   
  Tyto postupy však nejsou doporučené. Je obvykle lepší nechat uživatele rozhodnout, jak chybu opravit model neplatný.  
@@ -341,7 +341,7 @@ validationController.ValidateCustom
  **Pokud dojde k pokusu o neplatný změnu vrátit zpět transakci.** Můžete také definovat pravidla pro tento účel, ale v některých případech je možné přepsat obslužnou rutinu vlastnost **OnValueChanging()**, nebo jako přepsat metodu `OnDeleted().` vrácení transakce, použijte `this.Store.TransactionManager.CurrentTransaction.Rollback().` Další informace informace najdete v tématu [domény obslužné rutiny změnit hodnotu vlastnosti](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Ujistěte se, že uživatel zná, tato změna byla upravena nebo vrácena zpět. Operátor`System.Windows.Forms.MessageBox.Show("message").`  
+>  Ujistěte se, že uživatel zná, tato změna byla upravena nebo vrácena zpět. Operátor `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Viz také  
  [Navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md)   

@@ -1,11 +1,11 @@
 ---
-title: "Generateapplicationmanifest – úloha | Microsoft Docs"
-ms.custom: 
+title: Generateapplicationmanifest – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-caps.latest.revision: 
+caps.latest.revision: 24
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 76a2fc5e184b566e0c9783f6f64beecc7ca882a2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest – úloha
 Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace nebo nativní manifestu. Nativní manifestu popisuje součást definováním jedinečnou identitu pro součást a určíte všechny sestavení a soubory, které tvoří součásti. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace rozšiřuje nativní manifestu definovaných vstupní bod aplikace a zadání úroveň zabezpečení aplikace.  
@@ -81,7 +81,7 @@ Generuje [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manif
 |Název metadat|Popis|  
 |-------------------|-----------------|  
 |`DependencyType`|Určuje, jestli závislost je publikována a nainstalovaný s předpokladem nebo aplikace. Tato metadata jsou platné pro všechny závislosti, ale nepoužívá pro soubory. Dostupné hodnoty pro tato metadata jsou:<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Instalace je výchozí hodnota.|  
-|`AssemblyType`|Určuje, jestli závislost je spravované nebo nativní sestavení. Tato metadata jsou platné pro všechny závislosti, ale nepoužívá pro soubory. Dostupné hodnoty pro tato metadata jsou:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified`je výchozí hodnotu, která určuje, zda generátor manifestu automaticky určí typ sestavení.|  
+|`AssemblyType`|Určuje, jestli závislost je spravované nebo nativní sestavení. Tato metadata jsou platné pro všechny závislosti, ale nepoužívá pro soubory. Dostupné hodnoty pro tato metadata jsou:<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` je výchozí hodnotu, která určuje, zda generátor manifestu automaticky určí typ sestavení.|  
 |`Group`|Označuje skupinu pro stahování další soubory na vyžádání. Název skupiny je definován aplikací a může být libovolný řetězec. Prázdný řetězec znamená, že soubor není součástí skupiny stahování, což je výchozí hodnota. Soubory nejsou ve skupině jsou součástí stažení počáteční aplikace. Soubory ve skupině jsou staženy pouze v případě explicitně požadavku aplikace pomocí <xref:System.Deployment.Application>.<br /><br /> Tato metadata jsou platné pro všechny soubory kde `IsDataFile` je `false` a všechny závislosti kde `DependencyType` je `Install`.|  
 |`TargetPath`|Určuje, jak je nutné definovat cestu v vygenerovaný manifest. Tento atribut je platný pro všechny soubory. Pokud tento atribut nezadá, použije se specifikace položky. Tento atribut je platný pro všechny soubory a závislosti s `DependencyType` hodnotu `Install`.|  
 |`IsDataFile`|A `Boolean` metadata hodnotu, která určuje, zda je soubor datový soubor. Datový soubor je speciální v tom, že nedojde k migraci mezi aktualizacemi aplikací. Tato metadata jsou platná pouze pro soubory. `False` je výchozí hodnota.|  

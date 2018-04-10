@@ -1,9 +1,9 @@
 ---
-title: "Postupy: úprava příkazu standardní nabídky v jazyce specifické pro doménu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: úprava příkazu standardní nabídky v jazyce specifické pro doménu | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
@@ -15,10 +15,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: c11a559fb8ef3cc6eb951950d8779691ad20c3b5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Postupy: Úprava příkazu standardní nabídky v jazyce specifickém pro doménu
 Můžete změnit chování některé standardní příkazy, které jsou definovány automaticky ve vašem DSL. Například může změnit **Vyjmout** tak, aby se vyloučí citlivé informace. K tomuto účelu přepsání metody v příkazu set – třída. Tyto třídy jsou definovány v souboru CommandSet.cs v projektu DslPackage a jsou odvozené z <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
@@ -36,7 +36,7 @@ Můžete změnit chování některé standardní příkazy, které jsou definov�
 > [!NOTE]
 >  Pokud chcete vytvořit vlastní příkazy nabídky, přečtěte si téma [postupy: přidání příkazu do místní nabídky](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
-##  <a name="what"></a>Jaké příkazy můžete upravit?  
+##  <a name="what"></a> Jaké příkazy můžete upravit?  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>Pokud chcete zjistit, co jste příkazy můžete upravit  
   
@@ -53,7 +53,7 @@ Můžete změnit chování některé standardní příkazy, které jsou definov�
     > [!NOTE]
     >  Obvykle byste neměli upravovat soubory, které byly vytvořeny. Veškeré úpravy budou ztraceny při příštím spuštění se generují soubory.  
   
-##  <a name="extend"></a>Rozšíření příslušný příkaz set – třída  
+##  <a name="extend"></a> Rozšíření příslušný příkaz set – třída  
  Vytvořte nový soubor, který obsahuje deklaraci částečné třídy příkazu set.  
   
 #### <a name="to-extend-the-command-set-class"></a>Rozšíření třídy sady příkazů  
@@ -78,7 +78,7 @@ Můžete změnit chování některé standardní příkazy, které jsou definov�
   
      **Poznámka:** Pokud šablona souboru třídy jste použili k vytvoření nového souboru, je nutné opravit obor názvů a název třídy.  
   
-##  <a name="override"></a>Přepsání metody příkaz  
+##  <a name="override"></a> Přepsání metody příkaz  
  Většina příkazů mít dvě související metody: jako metodu s názvem `ProcessOnStatus`... Určuje, zda příkaz by měla být viditelné a povolené. Ho je volána, když kliknutí pravým tlačítkem na obrázku a by měla provést rychle a beze změn. `ProcessOnMenu`... je volána, když uživatel klikne na příkaz a proveďte funkce příkazu. Můžete chtít přepsat jedno nebo obě tyto metody.  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>Chcete-li změnit, pokud příkaz je zobrazen v nabídce  
@@ -137,15 +137,15 @@ protected override void ProcessOnMenuDeleteCommand()
   
 -   `this.CurrentSelection`. Obrazec, který uživatel klepli pravým tlačítkem myši je vždy součástí tohoto seznamu tvarů a konektory. Pokud uživatel klikne na prázdnou část diagramu, diagramu je pouze členem seznamu.  
   
--   `this.IsDiagramSelected()` - `true`Pokud uživatel klikne na prázdnou část diagramu.  
+-   `this.IsDiagramSelected()` - `true` Pokud uživatel klikne na prázdnou část diagramu.  
   
 -   `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()`-uživatel nevybrali více obrazců  
+-   `this.IsSingleSelection()` -uživatel nevybrali více obrazců  
   
--   `this.SingleSelection`-tvar nebo diagram, který klepli pravým tlačítkem myši uživatele  
+-   `this.SingleSelection` -tvar nebo diagram, který klepli pravým tlačítkem myši uživatele  
   
--   `shape.ModelElement as MyLanguageElement`-element modelu reprezentována obrazce.  
+-   `shape.ModelElement as MyLanguageElement` -element modelu reprezentována obrazce.  
   
  Další informace o tom, jak přejít z elementu a o tom, jak vytvořit objekty a propojení najdete v tématu [navigace a aktualizace modelu v programovém kódu](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   

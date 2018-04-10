@@ -1,11 +1,11 @@
 ---
-title: "MIDL – úloha | Microsoft Docs"
-ms.custom: 
+title: MIDL – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VC.Project.VCMidlTool.ServerStubFile
@@ -26,17 +26,17 @@ helpviewer_keywords:
 - MSBuild (Visual C++), MIDL task
 - MIDL task (MSBuild (Visual C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-caps.latest.revision: 
+caps.latest.revision: 8
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="midl-task"></a>MIDL – úloha
 Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru midl.exe. Další informace najdete v tématu "Reference k příkazovému řádku MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
@@ -306,7 +306,7 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<none>*|  
+    |**NotSet**|*\<žádné >*|  
     |**1**|**/Zp1**|  
     |**2**|**/Zp2**|  
     |**4**|**/Zp4**|  
@@ -340,7 +340,7 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
   
     |Hodnota|Možnost příkazového řádku|  
     |-----------|--------------------------|  
-    |**NotSet**|*\<none>*|  
+    |**NotSet**|*\<žádné >*|  
     |**Win32**|**win32/env**|  
     |**Itanium**|**/ env ia64**|  
     |**X64**|**/env x64**|  

@@ -1,11 +1,11 @@
 ---
-title: "CSC – úloha | Microsoft Docs"
-ms.custom: 
+title: CSC – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
@@ -18,17 +18,17 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-caps.latest.revision: 
+caps.latest.revision: 26
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.workload:
 - multiple
 ms.openlocfilehash: a74f8c43d35104957b62fb3da93d2acbf6a9a303
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="csc-task"></a>Csc – úloha
 Zabalí CSC.exe a vytvoří spustitelné soubory (soubory .exe), dynamické knihovny (soubory .dll) nebo moduly kódu (.netmodule soubory). Další informace o CSC.exe najdete v tématu [možnosti kompilátoru C#](/dotnet/csharp/language-reference/compiler-options/index).  
@@ -45,7 +45,7 @@ Zabalí CSC.exe a vytvoří spustitelné soubory (soubory .exe), dynamické knih
 |`BaseAddress`|Volitelné `String` parametr.<br /><br /> Určuje upřednostňovaná základní adresa, na které se mají načíst knihovnu DLL. Výchozí základní adresy knihovny DLL se nastavuje pomocí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] modul common language runtime. Další informace najdete v tématu [/BaseAddress (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).|  
 |`CheckForOverflowUnderflow`|Volitelné `Boolean` parametr.<br /><br /> Určuje, zda celé číslo aritmetické, která přesahuje hranice typu dat, způsobí výjimku za běhu. Další informace najdete v tématu [/ checked (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).|  
 |`CodePage`|Volitelné `Int32` parametr.<br /><br /> Určuje znakovou stránku pro všechny soubory zdrojového kódu v kompilace. Další informace najdete v tématu [/codepage (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option).|  
-|`DebugType`|Volitelné `String` parametr.<br /><br /> Určuje typ ladění. `DebugType`může být `full` nebo `pdbonly`. Výchozí hodnota je `full`, což umožňuje ladicí program připojí se k spuštěným programem. Určení `pdbonly` umožňuje zdroje ladění kódu, když program se spustil v ladicím programu, ale pouze zobrazí assembleru, když se spuštěným programem je připojen k ladicího programu.<br /><br /> Tento parametr přepíše `EmitDebugInformation` parametr.<br /><br /> Další informace najdete v tématu [/Debug (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).|  
+|`DebugType`|Volitelné `String` parametr.<br /><br /> Určuje typ ladění. `DebugType` může být `full` nebo `pdbonly`. Výchozí hodnota je `full`, což umožňuje ladicí program připojí se k spuštěným programem. Určení `pdbonly` umožňuje zdroje ladění kódu, když program se spustil v ladicím programu, ale pouze zobrazí assembleru, když se spuštěným programem je připojen k ladicího programu.<br /><br /> Tento parametr přepíše `EmitDebugInformation` parametr.<br /><br /> Další informace najdete v tématu [/Debug (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).|  
 |`DefineConstants`|Volitelné `String` parametr.<br /><br /> Definuje preprocesoru symboly. Další informace najdete v tématu [/ define (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option).|  
 |`DelaySign`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, určuje, že má plně podepsané sestavení. Pokud `false`, určuje, že chcete pouze umístit veřejný klíč v sestavení.<br /><br /> Tento parametr nemá žádný vliv, pokud není použita s buď `KeyFile` nebo `KeyContainer` parametr.<br /><br /> Další informace najdete v tématu [/delaysign (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option).|  
 |`DisabledWarnings`|Volitelné `String` parametr.<br /><br /> Určuje seznam upozornění se zakáže. Další informace najdete v tématu [/nowarn (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).|  
@@ -57,7 +57,7 @@ Zabalí CSC.exe a vytvoří spustitelné soubory (soubory .exe), dynamické knih
 |`KeyContainer`|Volitelné `String` parametr.<br /><br /> Určuje název kontejneru kryptografických klíčů. Další informace najdete v tématu [/keycontainer (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/keycontainer-compiler-option).|  
 |`KeyFile`|Volitelné `String` parametr.<br /><br /> Určuje název souboru obsahujícího kryptografický klíč. Další informace najdete v tématu [/keyfile (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/keyfile-compiler-option).|  
 |`LangVersion`|Volitelné `String` parametr.<br /><br /> Určuje verzi jazyka. Další informace najdete v tématu [/langversion (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).|  
-|`LinkResources`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Vytvoří odkaz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] prostředků ve výstupním souboru; souboru prostředků není umístěn ve výstupním souboru.<br /><br /> Položky předaný do tento parametr může mít volitelná metadata položky s názvem `LogicalName` a `Access`. `LogicalName`odpovídá `identifier` parametr `/linkresource` přepínače, a `Access` odpovídá `accessibility-modifier` parametr. Další informace najdete v tématu [/linkresource (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option).|  
+|`LinkResources`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Vytvoří odkaz [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] prostředků ve výstupním souboru; souboru prostředků není umístěn ve výstupním souboru.<br /><br /> Položky předaný do tento parametr může mít volitelná metadata položky s názvem `LogicalName` a `Access`. `LogicalName` odpovídá `identifier` parametr `/linkresource` přepínače, a `Access` odpovídá `accessibility-modifier` parametr. Další informace najdete v tématu [/linkresource (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/linkresource-compiler-option).|  
 |`MainEntryPoint`|Volitelné `String` parametr.<br /><br /> Určuje umístění `Main` metoda. Další informace najdete v tématu [/Main (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option).|  
 |`ModuleAssemblyName`|Volitelné `String` parametr.<br /><br /> Určuje název sestavení, které tento modul bude součástí.|  
 |`NoConfig`|Volitelné `Boolean` parametr.<br /><br /> Pokud `true`, určuje kompilátor není kompilovat bez souboru csc.rsp. Další informace najdete v tématu [/noconfig (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option).|  
@@ -70,7 +70,7 @@ Zabalí CSC.exe a vytvoří spustitelné soubory (soubory .exe), dynamické knih
 |`PdbFile`|Volitelné `String` parametr.<br /><br /> Určuje název souboru ladicích informací. Výchozí název je název výstupního souboru s příponou PDB.|  
 |`Platform`|Volitelné `String` parametr.<br /><br /> Určuje platformu procesoru, které se zaměřují výstupní soubor. Tento parametr může mít hodnotu `x86`, `x64`, nebo `anycpu`. Výchozí hodnota je `anycpu`. Další informace najdete v tématu [/Platform (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).|  
 |`References`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Způsobí, že úloha import informace veřejného typu ze zadaných položek do aktuálního projektu. Další informace najdete v tématu [/Reference (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Můžete zadat [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] alias v odkazu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru přidáním metadata `Aliases` k původní položce "Odkaz". Chcete-li například nastavit alias "LS1" v příkazovém řádku následující CSC:<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> měli byste použít:<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  
-|`Resources`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Vloží [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] prostředků do výstupního souboru.<br /><br /> Položky předaný do tento parametr může mít volitelná metadata položky s názvem `LogicalName` a `Access`. `LogicalName`odpovídá `identifier` parametr `/resource` přepínače, a `Access` odpovídá `accessibility-modifier` parametr. Další informace najdete v tématu [/Resource (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
+|`Resources`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Vloží [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] prostředků do výstupního souboru.<br /><br /> Položky předaný do tento parametr může mít volitelná metadata položky s názvem `LogicalName` a `Access`. `LogicalName` odpovídá `identifier` parametr `/resource` přepínače, a `Access` odpovídá `accessibility-modifier` parametr. Další informace najdete v tématu [/Resource (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option).|  
 |`ResponseFiles`|Volitelné `String` parametr.<br /><br /> Určuje soubor odpovědí, který obsahuje příkazy pro tuto úlohu. Další informace najdete v tématu [@ (určení souboru odezvy)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option).|  
 |`Sources`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` parametr.<br /><br /> Určuje jeden nebo více [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] zdrojové soubory.|  
 |`TargetType`|Volitelné `String` parametr.<br /><br /> Určuje formát souboru výstupního souboru. Tento parametr může mít hodnotu `library`, vytváří knihovny kódu `exe`, která vytvoří konzolovou aplikaci, `module`, která vytvoří modul, nebo `winexe`, vytváří programu systému Windows. Výchozí hodnota je `library`. Další informace najdete v tématu [/Target (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option).|  

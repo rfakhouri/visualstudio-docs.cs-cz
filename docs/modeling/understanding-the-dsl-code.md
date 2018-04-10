@@ -1,9 +1,9 @@
 ---
-title: "Pochopení kódu DSL | Microsoft Docs"
-ms.custom: 
+title: Pochopení kódu DSL | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language, generated code
@@ -14,10 +14,10 @@ ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 41cf1f19e03c1197c6266b5057af993b677c9c53
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/10/2018
 ---
 # <a name="understanding-the-dsl-code"></a>Porozumění kódu DSL
 Jazyk specifické pro doménu DSL řešení generuje rozhraní API, které můžete použít ke čtení a aktualizovat instance DSL v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Toto rozhraní API je definována v kód, který se vygeneruje z definice DSL. Toto téma popisuje generovaného rozhraní API.  
@@ -59,7 +59,7 @@ Jazyk specifické pro doménu DSL řešení generuje rozhraní API, které můž
 ## <a name="generated-files-in-dsl"></a>Generované soubory v Dsl  
  Následující soubory generované se zobrazí v **Dsl** projektu.  
   
- *YourDsl*`Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
  Schéma pro soubory, který obsahuje instance vaší DSL. Tento soubor se zkopíruje do kompilace (**bin**) adresáře. Když instalujete vaší DSL, můžete zkopírovat tento soubor do **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** tak, aby soubory modelu může být ověřen. Další informace najdete v tématu [nasazení řešení jazyk specifické pro doménu](../modeling/deploying-domain-specific-language-solutions.md).  
   
@@ -85,7 +85,7 @@ Jazyk specifické pro doménu DSL řešení generuje rozhraní API, které můž
   
  `Connectors.cs`  
   
- Obsahuje třídy pro konektory, které jsou elementy diagramu, které obvykle představují referenčních relací. Každá třída se generují z jeden konektor v definici DSL. Každá třída konektoru je odvozený od<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>  
+ Obsahuje třídy pro konektory, které jsou elementy diagramu, které obvykle představují referenčních relací. Každá třída se generují z jeden konektor v definici DSL. Každá třída konektoru je odvozený od <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>  
   
  Chcete-li barvu a některé další funkce proměnnou styl za běhu, klikněte pravým tlačítkem na třídu v diagramu DSL definice a přejděte na **přidat zveřejněné**.  
   
@@ -180,7 +180,7 @@ Jazyk specifické pro doménu DSL řešení generuje rozhraní API, které můž
   
  Chcete-li barvu a některé další funkce proměnnou styl za běhu, klikněte pravým tlačítkem na třídu v diagramu DSL definice a přejděte na **přidat zveřejněné**.  
   
- Chcete-li další styl funkce proměnné v době běhu, najdete v části například <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> a<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>  
+ Chcete-li další styl funkce proměnné v době běhu, najdete v části například <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> a <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>  
   
  `ToolboxHelper.cs`  
   
@@ -197,7 +197,7 @@ Jazyk specifické pro doménu DSL řešení generuje rozhraní API, které můž
   
  `Constants.cs`  
   
- GUIDs.  
+ Identifikátory GUID.  
   
  `DocData.cs`  
   
