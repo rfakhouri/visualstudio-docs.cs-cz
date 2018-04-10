@@ -1,17 +1,17 @@
 ---
 title: 'Postupy: Zadejte kontext pro editory | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
-caps.latest.revision: 
+caps.latest.revision: 17
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
