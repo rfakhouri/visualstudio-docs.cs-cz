@@ -1,21 +1,23 @@
 ---
-title: "Postupy: reakce na ladicí program za běhu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: reakce na ladicí program za běhu | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/23/17
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.workload: multiple
+ms.workload:
+- multiple
 ms.openlocfilehash: 8c954cd95da7b6dd2ba0c2938852b939ae396525
 ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
@@ -36,7 +38,7 @@ Můžete provést kroky, aby se zabránilo pouze v době ladicí program dialogo
 
 1. (Webové aplikace) Pokud se pokoušíte spustit webovou aplikaci, můžete zakázat ladění skriptů.
 
-    Pro Internet Explorer nebo Edge zakážete ladění skriptů v dialogovém okně Možnosti Internetu. Z těchto nastavení můžete přejít **ovládací panely** > **síť a Internet** > **Možnosti Internetu** (přesný postup závisí na vaší verze systému Windows a prohlížeč).
+    Pro Internet Explorer nebo Microsoft Edge zakážete ladění skriptů v dialogovém okně Možnosti Internetu. Z těchto nastavení můžete přejít **ovládací panely** > **síť a Internet** > **Možnosti Internetu** (přesný postup závisí na vaší verze systému Windows a prohlížeč).
 
     ![JITInternetOptions](../debugger/media/jitinternetoptions.png "JITInternetOptions")
 
