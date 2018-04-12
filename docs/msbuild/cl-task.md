@@ -755,7 +755,7 @@ Zabalí nástroj kompilátoru Visual C++ cl.exe. Kompilátor vytvoří spustitel
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     Další informace najdete v tématu **/W *** n* možnost [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, nebo jsme /wo, /Wv, wdn (úroveň upozornění)](/cpp/build/reference/compiler-option-warning-level).  
+     Další informace najdete v tématu **/W***n* možnost [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, nebo jsme /wo, /Wv, wdn (úroveň upozornění)](/cpp/build/reference/compiler-option-warning-level).  
   
 -   **WholeProgramOptimization**  
   
