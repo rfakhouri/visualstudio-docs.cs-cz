@@ -38,7 +38,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
 ---
@@ -76,7 +76,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Volitelné **řetězec** parametr.  
   
-     Seznam možností linkeru jako zadaného na příkazovém řádku. Například **"*** nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možnosti linkeru, které nejsou reprezentovány jakékoliv **odkaz** parametr úloh.  
+     Seznam možností linkeru jako zadaného na příkazovém řádku. Například **"***nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možnosti linkeru, které nejsou reprezentovány jakékoliv **odkaz** parametr úloh.  
   
      Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).  
   

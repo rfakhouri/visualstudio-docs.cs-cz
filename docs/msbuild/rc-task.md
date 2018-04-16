@@ -30,7 +30,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a785ae38f76f58c20baec6a0705d68feb9cbbf2
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
 ---
@@ -43,7 +43,7 @@ Zabalí nástroj Microsoft kompilátor prostředků Windows rc.exe. **RC** úloh
 |Parametr|Popis|  
 |---------------|-----------------|  
 |**AdditionalIncludeDirectories**|Volitelné **řetězec []** parametr.<br /><br /> Přidá do seznamu adresáře, které se vyhledávají zahrnout soubory adresář.<br /><br /> Další informace najdete v tématu **/I** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
-|**AdditionalOptions**|Volitelné **řetězec** parametr.<br /><br /> Seznam například příkazového řádku optionsor **"*** nebo možnost 1 /option2 /option#*". Pomocí tohoto parametru lze zadat parametry příkazového řádku, které nejsou reprezentovány jakékoliv **RC** parametr úloh.<br /><br /> Další informace najdete v tématu Možnosti v [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
+|**AdditionalOptions**|Volitelné **řetězec** parametr.<br /><br /> Seznam například příkazového řádku optionsor **"***nebo možnost 1 /option2 /option#*". Pomocí tohoto parametru lze zadat parametry příkazového řádku, které nejsou reprezentovány jakékoliv **RC** parametr úloh.<br /><br /> Další informace najdete v tématu Možnosti v [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**Jazyková verze**|Volitelné **řetězec** parametr.<br /><br /> Určuje ID národního prostředí, který představuje jazyková verze použitá v prostředcích.<br /><br /> Další informace najdete v tématu **/l** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**IgnoreStandardIncludePath**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, brání kompilátor prostředků kontrola proměnné prostředí zahrnout při vyhledávání pro soubory hlaviček nebo soubory prostředků.<br /><br /> Další informace najdete v tématu **/x** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  
 |**NullTerminateStrings**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, ukončí všechny řetězce v tabulce řetězec hodnotu null.<br /><br /> Další informace najdete v tématu **/n** možnost [pomocí RC (The RC příkazového řádku)](http://go.microsoft.com/fwlink/?LinkId=155730) na webu MSDN.|  

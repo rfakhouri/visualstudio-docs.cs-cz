@@ -27,7 +27,7 @@ ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="unterminated-comment"></a>Neukončený komentář
-Začal blok víceřádkových komentářů, ale není správně ho ukončit. Víceřádkový komentáře začínají "/ *" kombinace a konec s naopak "\*/" kombinaci. Následuje příklad:  
+Začal blok víceřádkových komentářů, ale není správně ho ukončit. Víceřádkový komentáře začínají "/\*" kombinace a konec s naopak "\*/" kombinaci. Následuje příklad:  
   
 ```JavaScript  
 /* This is a comment  
@@ -36,7 +36,7 @@ This is another part of the same comment.*/
   
 ### <a name="to-correct-this-error"></a>Oprava této chyby  
   
--   Ujistěte se, zda jste ukončení komentáře Víceřádkový s "* /".  
+-   Ujistěte se, zda jste ukončení komentáře Víceřádkový s "*/".  
   
 ## <a name="see-also"></a>Viz také  
  [Příkazy komentářů](../../javascript/reference/comment-statements-javascript.md)

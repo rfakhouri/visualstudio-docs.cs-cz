@@ -16,12 +16,12 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: ad2bc2a049a0a96a8093289af4648f077f2d1478
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Návod: Vytvoření vlastního hostitele textových šablon
-A *textové šablony ** hostitele* poskytuje prostředí, které umožňuje *text šablony transformační modul* ke spuštění. Tento hostitel se stará o interakce stroje se systémem souborů. Modul nebo *procesoru direktiv* potřebného soubor nebo sestavení může požádat o prostředku z hostitele. Hostitel pak může požadovaný prostředek najít prohledáním adresáře a globální mezipaměti sestavení (GAC). Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).  
+A *textové šablony**hostitele* poskytuje prostředí, které umožňuje *text šablony transformační modul* ke spuštění. Tento hostitel se stará o interakce stroje se systémem souborů. Modul nebo *procesoru direktiv* potřebného soubor nebo sestavení může požádat o prostředku z hostitele. Hostitel pak může požadovaný prostředek najít prohledáním adresáře a globální mezipaměti sestavení (GAC). Další informace najdete v tématu [proces transformace textových šablon](../modeling/the-text-template-transformation-process.md).  
   
  Můžete napsat vlastního hostitele. Pokud chcete použít *transformace textu šablony* funkce z mimo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebo pokud chcete integrovat do vlastních nástrojů této funkce. Vytvoření vlastního hostitele, je nutné vytvořit třídu, která dědí z <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Dokumentaci jednotlivých metod najdete v tématu <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   

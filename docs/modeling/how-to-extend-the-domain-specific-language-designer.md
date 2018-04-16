@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: efcd1d354705fefcaeb0fbfbec0622ff2f06c331
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
 ---
@@ -70,7 +70,7 @@ Můžete provést rozšíření návrháře, který slouží k úpravám DSL def
   
  Nasazení rozšíření do hlavní [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]a do jiných počítačů, postupujte takto:  
   
-1.  V projektu VSIX v přihrádce najít instalační soubor VSIX\\*\\\*VSIX  
+1.  V projektu VSIX v přihrádce najít instalační soubor VSIX\\*\*\\\*.VSIX  
   
 2.  Tento soubor zkopírovat na cílový počítač a pak v Průzkumníku Windows (nebo v Průzkumníku souborů), klikněte dvakrát na jeho.  
   

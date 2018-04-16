@@ -33,7 +33,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 13b6ceb908e45cf98f32f89605bf48f8e747b7aa
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
 ---
@@ -47,7 +47,7 @@ Zabalí nástroj Microsoft 32bitový Správce knihovny lib.exe. Správce knihovn
 |---------------|-----------------|  
 |**AdditionalDependencies**|Volitelné **řetězec []** parametr.<br /><br /> Určuje další položek, které chcete přidat do příkazového řádku.|  
 |**AdditionalLibraryDirectories**|Volitelné **řetězec []** parametr.<br /><br /> Přepíše danou cestu knihovny prostředí. Zadejte název adresáře.<br /><br /> Další informace najdete v tématu [/Libpath (další proměnná Libpath)](/cpp/build/reference/libpath-additional-libpath).|  
-|**AdditionalOptions**|Volitelné **řetězec** parametr.<br /><br /> Seznam možností lib.exe jako zadaného na příkazovém řádku. Například **"*** nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možností lib.exe, které nejsou reprezentovány jakékoliv **LIB** parametr úloh.<br /><br /> Další informace najdete v tématu [systémem LIB](/cpp/build/reference/running-lib).|  
+|**AdditionalOptions**|Volitelné **řetězec** parametr.<br /><br /> Seznam možností lib.exe jako zadaného na příkazovém řádku. Například **"***nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možností lib.exe, které nejsou reprezentovány jakékoliv **LIB** parametr úloh.<br /><br /> Další informace najdete v tématu [systémem LIB](/cpp/build/reference/running-lib).|  
 |**DisplayLibrary**|Volitelné **řetězec** parametr.<br /><br /> Zobrazí informace o knihovně výstup. Zadejte název souboru pro přesměrování informace do souboru. Zadejte "CON" nebo nic k přesměrování informace ke konzole.<br /><br /> Tento parametr odpovídá **/seznamu** možnost lib.exe.|  
 |**ErrorReporting**|Volitelné **řetězec** parametr.<br /><br /> Určuje, jak k odeslání společnosti Microsoft informace o interní chybě, pokud se nezdaří lib.exe za běhu.<br /><br /> Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.<br /><br /> -   **NoErrorReport** - **/ERRORREPORT:NONE**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** - **/ERRORREPORT:SEND**<br /><br /> Další informace najdete v tématu **/errorreport** možnost příkazového řádku na [systémem LIB](/cpp/build/reference/running-lib).|  
 |**ExportNamedFunctions**|Volitelné **řetězec []** parametr.<br /><br /> Určuje jeden nebo více funkcí pro export.<br /><br /> Tento parametr odpovídá **/EXPORT:** možnost lib.exe.|  

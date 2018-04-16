@@ -13,7 +13,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: de6b219610908503f37658ff977f042363fb8663
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
 ---
@@ -104,7 +104,7 @@ Jazyk specifické pro doménu můžete nainstalovat na vašem počítači nebo n
   
      [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Vytvoří soubor s názvem **CreateMsiSetupProject.vdproj**.  
   
-6.  V Průzkumníku Windows, zkopírujte Dsl\\*.vdproj do nové složky s názvem instalační program.  
+6.  V Průzkumníku Windows, zkopírujte Dsl\\\*.vdproj do nové složky s názvem instalační program.  
   
      (Pokud chcete, můžete nyní vyloučit CreateMsiSetupProject.tt z projektu Dsl.)  
   

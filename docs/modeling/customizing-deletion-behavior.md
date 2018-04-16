@@ -17,7 +17,7 @@ ms.workload:
 ms.technology: vs-ide-modeling
 ms.openlocfilehash: 12f2a1690a4d68f6900006b10a699c23c83c8c2a
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
 ---
@@ -79,7 +79,7 @@ Odstraňování element obvykle způsobí, že související prvky také odstran
 >  Pokud chcete přidat programovém kódu do vaší definice DSL, vytvořte soubor samostatné kódu v **Dsl** projektu a zápis částečné definice k posílení třídy ve složce vygenerovat kód. Další informace najdete v tématu [psaní kódu jazyka domény sestavit si](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ##  <a name="closure"></a> Definování odstranění uzavření  
- Operace odstranění používá třídu *YourModel *** DeleteClosure** k určení prvky, které chcete odstranit, zadaný počáteční výběr. Zavolá `ShouldVisitRelationship()` a `ShouldVisitRolePlayer()` opakovaného proti grafu relací. Můžete přepsat tyto metody. ShouldVisitRolePlayer je k dispozici s identitou odkaz a prvek na jednu z rolí na odkaz. Měla by vrátit jednu z následujících hodnot:  
+ Operace odstranění používá třídu *YourModel***DeleteClosure** k určení prvky, které chcete odstranit, zadaný počáteční výběr. Zavolá `ShouldVisitRelationship()` a `ShouldVisitRolePlayer()` opakovaného proti grafu relací. Můžete přepsat tyto metody. ShouldVisitRolePlayer je k dispozici s identitou odkaz a prvek na jednu z rolí na odkaz. Měla by vrátit jednu z následujících hodnot:  
   
 -   **VisitorFilterResult.Yes**– element měla by být odstraněna a walkera by měly pokračovat a zkuste to elementu je další odkazy.  
   

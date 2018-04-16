@@ -34,7 +34,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 51ed6c8c34fd5aa37eebffabcda077ca8554c498
 ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
 ms.lasthandoff: 04/10/2018
 ---
@@ -56,7 +56,7 @@ Zabalí nástroj Microsoft rozhraní Definition Language (MIDL) kompilátoru mid
   
      Volitelné **řetězec** parametr.  
   
-     Seznam možností příkazového řádku. Například **"*** nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány jakékoli jiné parametr MIDL úloh.  
+     Seznam možností příkazového řádku. Například **"***nebo možnost 1 /option2 /option#*". Tento parametr použijte k určení možnosti příkazového řádku, které nejsou reprezentovány jakékoli jiné parametr MIDL úloh.  
   
      Další informace najdete v tématu "Reference k příkazovému řádku MIDL" na [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) webu.  
   
