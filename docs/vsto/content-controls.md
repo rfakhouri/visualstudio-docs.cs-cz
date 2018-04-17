@@ -1,12 +1,10 @@
 ---
-title: "Ovládací prvky obsahu | Microsoft Docs"
-ms.custom: 
+title: Ovládací prvky obsahu | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.DropDownListContentControl
 - VST.Toolbox.RichTextContentControl
@@ -40,13 +38,14 @@ helpviewer_keywords:
 - BuildingBlockGalleryContentControl class
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e06075c0e748aab34c4a1df425f95592856217db
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a1c56b7e48ce42699330e8eb40595d9cc761736e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-controls"></a>Ovládací prvky obsahu
   Ovládací prvky obsahu poskytnout způsob, jak vám na dokumentech návrhu a šablony, které mají tyto funkce:  
@@ -128,7 +127,7 @@ ms.lasthandoff: 01/10/2018
 |Po přidání ovládacího prvku obsahu v dokumentu v důsledku znovu spustit kód nebo operace vrácení zpět.|Zpracování <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> události ovládacího prvku.|  
 |Spusťte kód bezprostředně před obsah ovládacího prvku se odstraní z dokumentu.|Zpracování <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> události ovládacího prvku.|  
   
-##  <a name="Protection"></a>Ochrana částí dokumentů pomocí ovládacích prvků obsahu  
+##  <a name="Protection"></a> Ochrana částí dokumentů pomocí ovládacích prvků obsahu  
  Když chráníte část dokumentu, můžete zabránit uživatelům ve měnit nebo odstraňovat obsah v této části dokumentu. Existuje několik způsobů částí dokumentu, můžete chránit pomocí ovládacích prvků obsahu.  
   
  Pokud je oblast, kterou chcete chránit uvnitř ovládací prvek obsahu, můžete zabránit uživatelům ve úpravy nebo odstranění ovládacího prvku vlastností ovládacího prvku obsahu:  
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
  Další informace o tom, jak Ochrana částí dokumentů pomocí ovládacích prvků obsahu najdete v tématu [postupy: ochrana částí z dokumentů pomocí ovládacích prvků obsahu](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
   
-##  <a name="DataBinding"></a>Vazba dat na ovládací prvky obsahu  
+##  <a name="DataBinding"></a> Vazba dat na ovládací prvky obsahu  
  Data můžete zobrazit v dokumentech pomocí vytvoření vazby ovládacího prvku obsahu ke zdroji dat. Při aktualizaci zdroje dat, obsah ovládacího prvku odráží změny. Také můžete uložit změny zpět do zdroje dat.  
   
  Ovládací prvky obsahu poskytují následující možnosti vazby dat:  
@@ -166,7 +165,7 @@ ms.lasthandoff: 01/10/2018
 |---------------|-----------------------------|----------------------------------------------------------------|  
 |<xref:System.Boolean><br /><br /> <xref:System.Byte><br /><br /> <xref:System.Char><br /><br /> <xref:System.Double><br /><br /> <xref:System.Enum><br /><br /> <xref:System.Guid><br /><br /> <xref:System.Int16><br /><br /> <xref:System.Int32><br /><br /> <xref:System.Int64><br /><br /> <xref:System.SByte><br /><br /> <xref:System.Single><br /><br /> <xref:System.String><br /><br /> <xref:System.TimeSpan><br /><br /> <xref:System.UInt16><br /><br /> <xref:System.UInt32><br /><br /> <xref:System.UInt64>|<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.DatePickerContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|  
-|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte>pole|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Žádné|  
+|<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> Pole|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|Žádné|  
   
  Na úrovni dokumentu a projekty doplňku VSTO lze vázat ovládací prvek obsahu ke zdroji dat prostřednictvím kódu programu pomocí <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metodu <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> vlastností ovládacího prvku. Pokud to uděláte, předejte v řetězci **Text** k *propertyName* parametr <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> metoda. **Text** je výchozí vlastnost vazby dat ovládacích prvků obsahu.  
   
@@ -231,7 +230,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
   
  Pokud chcete zjistit, když uživatel upravuje obsah ovládacího prvku typu obsahu, můžete vytvořit vazbu ovládacího prvku na vlastní část XML a pak zpracována <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> událostí. Tato událost se vyvolá, když uživatel změní obsah ovládacího prvku, který je vázaný na vlastní část XML. Návod, který ukazuje, jak vytvořit vazbu ovládacího prvku obsahu na vlastní část XML, najdete v části [návod: vytvoření vazby ovládacích prvků obsahu do vlastní části XML](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
   
-###  <a name="checkbox"></a>Ovládací prvky obsahu zaškrtněte políčko v projekty aplikace Word  
+###  <a name="checkbox"></a> Ovládací prvky obsahu zaškrtněte políčko v projekty aplikace Word  
  Word 2010 zavedl nový typ obsahu ovládacího prvku, který představuje zaškrtávací políčko. Ale [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] neposkytuje odpovídající typ CheckBoxContentControl budete moci použít v projektech Office. Vytvořit obsahu ovládací prvek zaškrtávací políčko v [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo Wordu 2010, project, použijte <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> metodu pro vytvoření <xref:Microsoft.Office.Tools.Word.ContentControl> objektu a předat <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> hodnota metodě pro určení obsahu ovládací prvek zaškrtávací políčko. Následující příklad kódu ukazuje, jak to udělat.  
   
  [!code-vb[Trin_ContentControlReference#800](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb#800)]

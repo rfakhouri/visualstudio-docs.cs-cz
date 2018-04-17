@@ -1,12 +1,10 @@
 ---
-title: "Návod: Volání kódu v doplňku VSTO z jazyka VBA | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Volání kódu v doplňku VSTO z jazyka VBA | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - calling code from VBA
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 677ddfef196c79d1dd696889fd16dcfa0300ccff
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 74ca5c12acf7b3bde5a009d5a45d4741451b1760
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-code-in-a-vsto-add-in-from-vba"></a>Postup: Volání kódu v doplňku VSTO z jazyka VBA
   Tento návod ukazuje, jak vystavit objekt VSTO Add-in do jiných řešení pro Microsoft Office, včetně Visual Basic for Applications (VBA) a doplňků COM VSTO.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Vytvoření projektu doplňku VSTO pro Excel s názvem **ExcelImportData**, pomocí šablony projektu doplňku VSTO v Excelu. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otevře se **ThisAddIn.cs** nebo **ThisAddIn.vb** kód soubor a přidá **ExcelImportData** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se **ThisAddIn.cs** nebo **ThisAddIn.vb** kód soubor a přidá **ExcelImportData** projektu do **Průzkumníku řešení**.  
   
 ## <a name="defining-a-class-that-you-can-expose-to-other-office-solutions"></a>Definování třídu, která můžete vystavit do jiných řešení pro systém Office  
  Účelem tohoto návodu je volání do `ImportData` metoda třídy s názvem `AddInUtilities` v doplňku VSTO z jazyka VBA kód. Tato metoda zapíše řetězec do buňky A1 aktivního listu.  

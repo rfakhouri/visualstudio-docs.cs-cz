@@ -1,5 +1,5 @@
 ---
-title: "Zpoždění Návrhář aktivity | Microsoft Docs"
+title: Zpoždění Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cddf4be42d05ebfc3c2df3e64f011b93673eead6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 7159330588151d4845184fcb6688b20f8d13afd0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="delay-activity-designer"></a>Návrhář aktivity zpoždění
 **Zpoždění** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Delay> aktivity.
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.Activities.Statements.Delay> aktivity. Výchozí hodnota je zpoždění. I když <xref:System.Activities.Activity.DisplayName%2A> hodnota není nezbytně nutné, je osvědčeným postupem použít.|
-|<xref:System.Activities.Statements.Delay.Duration%2A>|True|Množství času zpoždění pracovní postup. Tato vlastnost je nastavena v tabulce vlastností. Zadejte buď literál <xref:System.TimeSpan> ve formátu 00:00:00 nebo výraz jazyka Visual Basic k určení množství času.|
+|<xref:System.Activities.Statements.Delay.Duration%2A>|Hodnota TRUE|Množství času zpoždění pracovní postup. Tato vlastnost je nastavena v tabulce vlastností. Zadejte buď literál <xref:System.TimeSpan> ve formátu 00:00:00 nebo výraz jazyka Visual Basic k určení množství času.|
 
 ## <a name="see-also"></a>Viz také
 

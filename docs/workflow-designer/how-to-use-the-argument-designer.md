@@ -1,5 +1,5 @@
 ---
-title: "Postupy: používání Argument Designer | Microsoft Docs"
+title: 'Postupy: používání Argument Designer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe9e4f7a3f4bc603d3f2661b91c5807bea8e4a6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: b5f4af6e06bbebe3f543deed68ff85f4cd0a39be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-argument-designer"></a>Postupy: používání Argument Designer
 Ve srovnání s předchozí verzí technologie [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], argument designer usnadňuje povolit datový tok do a z aktivity. Návrhář přistupuje kliknutím **argumenty** tlačítko v levém horním rohu na plátno návrhu. Návrhář obsahuje seznam argumentů, které jsou uvedeny ve formě tabulky a lze seřadit podle jednotlivých záhlaví sloupců, s výjimkou **výchozí hodnota** sloupce. Všechny argumenty obsahuje název, směr v nebo na více systémů/v – out nebo vlastnost, typ a výchozí hodnota výrazu (pokud existuje). Název a výchozí hodnota výrazu jsou upravitelných textových polí a typu a směr jsou rozevírací seznamy. Další informace najdete v tématu [proměnné a argumenty (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).

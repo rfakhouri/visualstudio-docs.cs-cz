@@ -1,30 +1,26 @@
 ---
-title: "CA2102: Zachycujte výjimky bez CLSCompliant v obecné obslužné rutině | Microsoft Docs"
-ms.custom: 
+title: 'CA2102: Zachycujte výjimky bez CLSCompliant v obecné obslužné rutině | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - CA2102
 - CatchNonClsCompliantExceptionsInGeneralHandlers
 helpviewer_keywords:
 - CA2102
 ms.assetid: bf2df68f-d386-4379-ad9e-930a2c2e930d
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 17238e140f8672e9d2d5a67594eb26b415c0b8d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cff8d36cd80a31cf05ca461730d51703afc106ee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Zachycujte výjimky bez CLSCompliant v obecné obslužné rutině
 |||  
@@ -40,9 +36,9 @@ ms.lasthandoff: 12/22/2017
 ## <a name="rule-description"></a>Popis pravidla  
  Blok catch, která zpracovává <xref:System.Exception> zachytí všechny výjimky kompatibilní specifikace CLS (Common Language). Nezachytí však kompatibilní výjimky specifikací CLS. Non-specifikací CLS kompatibilní výjimky může být vyvolána z nativního kódu nebo ze spravovaného kódu, který byl vygenerován Microsoft mezilehlé jazyk MSIL Assembler. Všimněte si, že jazyka C# a [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] kompilátory neumožňují bez podpory CLS kompatibilní výjimky vyvolání a [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nezachytí výjimky kompatibilní-specifikací CLS. Pokud je záměrem bloku catch – zpracování všech výjimek, použijte následující syntaxi bloku catch Obecné.  
   
--   C#:`catch {}`  
+-   C#: `catch {}`  
   
--   C++: `catch(...) {}` nebo`catch(Object^) {}`  
+-   C++: `catch(...) {}` nebo `catch(Object^) {}`  
   
  Kompatibilní výjimku neošetřené neodpovídající specifikaci CLS bude problém zabezpečení, když se odeberou dřív povolené oprávnění v bloku catch. Vzhledem k tomu, že nejsou kompatibilní s výjimky specifikací CLS zachyceny, může se zvýšenými oprávněními spustit škodlivý metodu, která předpisy výjimky v důsledku jiných specifikací CLS.  
   

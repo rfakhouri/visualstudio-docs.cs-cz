@@ -1,12 +1,10 @@
 ---
-title: "Návod: Změna mezipaměti Data v sešitu na serveru | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Změna mezipaměti Data v sešitu na serveru | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fcea73cfbd87a4e541654b91463091b08c47b8c0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d9303c165b0c04d36a873ee2ff2aae22365b24e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-changing-cached-data-in-a-workbook-on-a-server"></a>Návod: Změna dat uložených v mezipaměti sešitu na serveru
   Tento návod ukazuje, jak upravit datovou sadu, která se uloží do mezipaměti v sešitu aplikace Microsoft Office Excel bez spuštění aplikace Excel pomocí <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy.  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **AdventureWorksDataSet** projektu do **Průzkumníku řešení** a otevře **Class1.cs** nebo **Class1.vb** souboru kódu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **AdventureWorksDataSet** projektu do **Průzkumníku řešení** a otevře **Class1.cs** nebo **Class1.vb** souboru kódu.  
   
 9. V **Průzkumníku řešení**, klikněte pravým tlačítkem na **Class1.cs** nebo **Class1.vb**a potom klikněte na **odstranit**. Tento soubor není nutné v tomto návodu.  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Ujistěte se, že **vytvoříte nový textový dokument** je vybrána a klikněte na tlačítko **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otevře se **AdventureWorksReport** sešitu v návrháři a přidá **AdventureWorksReport** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se **AdventureWorksReport** sešitu v návrháři a přidá **AdventureWorksReport** projektu do **Průzkumníku řešení**.  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Přidání datovou sadu do zdroje dat v projektu sešitu aplikace Excel  
  Než budete moci zobrazit datovou sadu v sešitu aplikace Excel, je nejprve nutno přidat datovou sadu ke zdrojům dat v projektu sešitu aplikace Excel.  
@@ -239,7 +238,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **DataWriter** projektu do **Průzkumníku řešení** a otevře **Program.cs** nebo **Module1.vb** souboru kódu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **DataWriter** projektu do **Průzkumníku řešení** a otevře **Program.cs** nebo **Module1.vb** souboru kódu.  
   
 ## <a name="changing-data-in-the-cached-dataset-by-using-the-console-application"></a>Změna dat v datové sady v mezipaměti pomocí konzolové aplikace  
  Použití <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> – třída v konzolové aplikaci k načtení dat do místní `AdventureWorksLTDataSet` objektu, úpravě tato data a ukládat ho zpátky do datové sady v mezipaměti.  

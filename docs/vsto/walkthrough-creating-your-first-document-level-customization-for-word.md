@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d37dde0027e33af16bdb6c146ec74076c686cf6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9bb85c10b2a66741bf0405d4a1313fb2343a708b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-word"></a>Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Word
   Tento úvodní návod ukazuje, jak vytvořit přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Word. Funkce, které vytvoříte v tento druh řešení jsou k dispozici jenom v případě, že je otevřený konkrétní dokument. Nelze použít přizpůsobení na úrovni dokumentu provést změny celou aplikaci, například zobrazení novou kartu pásu karet v otevřeném dokumentu.  
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Vyberte **vytvoříte nový textový dokument**a klikněte na tlačítko **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]vytvoří **FirstDocumentCustomization** projektu a přidá **FirstDocumentCustomization** ThisDocument souboru kódu na projekt a dokumentů. **FirstDocumentCustomization** dokumentu se automaticky otevře v návrháři.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstDocumentCustomization** projektu a přidá **FirstDocumentCustomization** ThisDocument souboru kódu na projekt a dokumentů. **FirstDocumentCustomization** dokumentu se automaticky otevře v návrháři.  
   
 ## <a name="closing-and-reopening-the-document-in-the-designer"></a>Zavřete a znovu otevřete dokument v Návrháři  
  Pokud jste úmyslně nebo neúmyslně zavřete dokument v Návrháři při vývoji projektu, můžete ho znovu otevřít.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **ThisDocument** kód soubor a klikněte na tlačítko **Návrhář zobrazení**.  
   
-     \-nebo –  
+     \- nebo –  
   
      V **Průzkumníku řešení**, dvakrát klikněte **ThisDocument** souboru kódu.  
   
@@ -158,7 +157,7 @@ ms.lasthandoff: 01/10/2018
 -   Nasazení přizpůsobení na úrovni dokumentu ve Wordu: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Přehled vývoje řešení pro systém Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Řešení aplikace Word](../vsto/word-solutions.md)   
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)   
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   

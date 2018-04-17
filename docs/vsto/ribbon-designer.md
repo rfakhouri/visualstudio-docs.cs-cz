@@ -1,13 +1,10 @@
 ---
-title: "Návrhář pásu karet | Microsoft Docs"
-ms.custom: 
+title: Návrhář pásu karet | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Designer_Microsoft.VisualStudio.Tools.Office.Ribbon.Design.RibbonDesigner
 dev_langs:
@@ -29,14 +26,14 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cab4a223f8e2d33185f37bc6ad90397ace1d56e1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c1ab841be09122a3a9e1680bf2ae3ae1c6df9aac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ribbon-designer"></a>Návrhář pásu karet
   Návrhář pásu karet je plátno visual návrhu. Chcete-li přidat vlastní karty, skupiny a ovládacích prvků na pásu karet z aplikace Microsoft Office pomocí Návrháře pásu karet.  
@@ -69,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
  Pokud již máte **pásu karet (vizuálního návrháře)** položky z jiného projektu, můžete opakovaně použít jej v aktuálním projektu pomocí **přidat existující položku** dialogové okno.  
   
-##  <a name="DesigningRibbonLayout"></a>Navrhování pásu karet  
+##  <a name="DesigningRibbonLayout"></a> Navrhování pásu karet  
  Existují tři způsoby, jak otevřít Návrhář pásu karet:  
   
 -   V **Průzkumníku**, poklikejte na soubor kódu pásu karet.  
@@ -103,7 +100,7 @@ ms.lasthandoff: 01/10/2018
   
  Ovládací prvky nelze přetáhnout z jedné karty na jiný na pásu karet. Pokud chcete přesunout ovládacího prvku na jinou kartu, je nutné použít **Vyjmout** příkazu k odebrání ovládacího prvku z jedné karty a potom vložte ovládacího prvku na jiné kartě. Pokud vyjmutí ovládacího prvku a vložení, obslužné rutiny události přestane fungovat. Obslužné rutiny událostí v se můžete připojit **vlastnosti** okno. Další informace najdete v tématu [vlastnosti – okno](/visualstudio/ide/reference/properties-window).  
   
-###  <a name="AddTabToRibbon"></a>Přidání vlastní karty na pásu karet  
+###  <a name="AddTabToRibbon"></a> Přidání vlastní karty na pásu karet  
  Existují tři způsoby, jak přidat vlastní karty na pásu karet:  
   
 -   Přidat na kartě z **sada nástrojů**.  
@@ -137,10 +134,10 @@ ms.lasthandoff: 01/10/2018
   
  Podrobnosti o tom, jak Přizpůsobení předdefinované karty najdete v tématu [postupy: Přizpůsobení předdefinované karty](../vsto/how-to-customize-a-built-in-tab.md).  
   
-###  <a name="AddGroupsToTab"></a>Přidání skupin na kartě  
+###  <a name="AddGroupsToTab"></a> Přidání skupin na kartě  
  Skupiny logicky uspořádat ovládacích prvků na pásu karet. Přidání skupin na karty. Všechny ostatní ovládací prvky přidáte do skupiny.  
   
-###  <a name="AddControlsToGroups"></a>Přidání ovládacích prvků do skupiny  
+###  <a name="AddControlsToGroups"></a> Přidání ovládacích prvků do skupiny  
  Přidejte jeden nebo více ovládacích prvků do skupiny. Následující tabulka popisuje každý ovládací prvek.  
   
 |Ovládací prvek|Popis|  
@@ -157,9 +154,9 @@ ms.lasthandoff: 01/10/2018
 |**Nabídka**|Rozevíracího seznamu, která může obsahovat následující prvky:<br /><br /> – Tlačítko<br />-Zaškrtávací políčko<br />-Galerie<br />-Nabídky<br />– Tlačítko rozdělení<br />-Přepínací tlačítko<br />-Oddělovače<br /><br /> Přidání ovládacího prvku do nabídky v Návrháři pásu karet, klikněte na šipku dolů v nabídce vystavit povrchu návrháře nabídky. Potom můžete přetáhnout ovládacích prvků pásu karet z **sada nástrojů** na v nabídce. K uspořádání ovládacích prvků, přetáhněte je na požadované místo.<br /><br /> Přidání ovládacích prvků do <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> po pásu karet je načten do aplikace Office, je nutné nastavit <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> vlastnost **true** před načtením na pásu karet. Informace o tom, jak to udělat najdete v tématu [přehled modelu objektů pásu karet](../vsto/ribbon-object-model-overview.md).|  
 |**Oddělovač**|Dynamické panelu slouží k oddělení položky v seznamu. Při přidání do skupiny, na panelu je svislý. Při přidání do nabídky, panelu je vodorovné.|  
 |**Tlačítko rozdělení**|Tlačítko s nabídky připojit. Tlačítko rozdělení může obsahovat žádné z následujících ovládacích prvků:<br /><br /> – Tlačítko<br />-Zaškrtávací políčko<br />-Galerie<br />-Nabídky<br />– Tlačítko rozdělení<br />-Přepínací tlačítko<br />-Oddělovače<br /><br /> Stejně jako v nabídce tlačítko rozdělení má svou vlastní návrhovou plochu. Ale na rozdíl od nabídku lze aktualizovat pouze položky v tlačítko rozdělení před načtením na pásu karet do aplikací Office. Informace o aktualizaci položky v tlačítko rozdělení najdete v tématu [přehled modelu objektů pásu karet](../vsto/ribbon-object-model-overview.md).|  
-|**Přepínací tlačítko**|Tlačítko, které se zobrazí stisknutí nebo nebyla stisknuta klávesa.|  
+|**ToggleButton**|Tlačítko, které se zobrazí stisknutí nebo nebyla stisknuta klávesa.|  
   
-##  <a name="HandleEventsSetProperties"></a>Zpracování událostí a nastavení vlastností  
+##  <a name="HandleEventsSetProperties"></a> Zpracování událostí a nastavení vlastností  
  Návrhář pásu karet umožňuje nastavit vlastnosti ovládacích prvků v době návrhu pomocí **vlastnosti** okno. Kromě toho na pásu karet zpřístupňuje model silného typu objektu, který můžete použít k získání a nastavení vlastností ovládacích prvků pásu karet za běhu.  
   
  Dvakrát klikněte na libovolný ovládací prvek v designeru otevřete obslužné rutiny události pro výchozí událost ovládacího prvku. Obslužné rutiny události pro všechny ostatní události ovládacího prvku můžete vytvořit pomocí **vlastnosti** okno.  
@@ -168,7 +165,7 @@ ms.lasthandoff: 01/10/2018
   
  Informace o zpracování událostí pásu karet a nastavení vlastností ovládacích prvků pásu karet za běhu najdete v tématu [přehled modelu objektů pásu karet](../vsto/ribbon-object-model-overview.md).  
   
-##  <a name="CustomizingMicrosoftOfficeButton"></a>Přizpůsobení zobrazení Backstage  
+##  <a name="CustomizingMicrosoftOfficeButton"></a> Přizpůsobení zobrazení Backstage  
  Návrhář pásu karet můžete použít k přidávání ovládacích prvků do nabídky, které se otevře po kliknutí **souboru** kartě. Tato nabídka je volána zobrazení Backstage.  
   
  Před nebo po integrované ovládací prvky nelze umisťování ovládacích prvků pomocí Návrháře pásu karet. Předdefinované řízení je ovládací prvek, který se již nachází v zobrazení Backstage. Pokud chcete umisťování ovládacích prvků před nebo po integrované ovládací prvky, musíte použít XML pásu karet. Další informace o **pásu karet (XML)**, najdete v části [XML karet](../vsto/ribbon-xml.md). Další informace o přizpůsobení zobrazení Backstage najdete v tématu [Úvod do zobrazení Backstage Office 2010 pro vývojáře](http://go.microsoft.com/fwlink/?LinkId=182189) a [přizpůsobení zobrazení Backstage Office 2010 pro vývojáře](http://go.microsoft.com/fwlink/?LinkId=182188).  
@@ -177,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
  Informace o tom, jak přidání ovládacích prvků do zobrazení Backstage najdete v tématu [postupy: Přidání ovládacích prvků do zobrazení Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).  
   
-##  <a name="Accessibility"></a>Usnadnění přístupu v Návrháři pásu karet  
+##  <a name="Accessibility"></a> Usnadnění přístupu v Návrháři pásu karet  
  Klávesové zkratky můžete přesunout ovládací prvky v Návrháři pásu karet. Některé klávesové zkratky platí pro všechny ovládací prvky a některé platí pouze pro ovládací prvky, které mají nabídky.  
   
  Klávesové zkratky, které platí pro všechny ovládací prvky jsou uvedené v následující tabulce.  

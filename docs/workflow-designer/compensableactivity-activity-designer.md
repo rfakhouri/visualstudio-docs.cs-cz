@@ -1,5 +1,5 @@
 ---
-title: "Návrhář aktivity CompensableActivity | Microsoft Docs"
+title: Návrhář aktivity CompensableActivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c45a0f2638a3d1fc5b6f4dc536cf051751c9c897
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: b8f9fcf62b727ef3c8b607b503b3305508921e30
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compensableactivity-activity-designer"></a>Návrhář aktivity CompensableActivity
 **CompensableActivity** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.CompensableActivity> aktivity.
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/12/2018
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Volitelné popisný název <xref:System.Activities.Statements.CompensableActivity> aktivity. Výchozí hodnota je CompensableActivity.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Určuje, vrátí hodnotu, která <xref:System.Activities.Statements.CompensableActivity>. Tato vlastnost je nutné upravit v tabulce vlastností.|
-|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|True|Určuje aktivitu, pro který je k dispozici logice kompenzace, zrušení a potvrzení. Chcete-li přidat <xref:System.Activities.Statements.CompensableActivity.Body%2A> aktivity, vyřaďte aktivitu z **sada nástrojů** do **textu** pole na **CompensableActivity** Návrhář aktivity s textem pomocný parametr "rozevírací aktivity sem".|
+|<xref:System.Activities.Statements.CompensableActivity.Body%2A>|Hodnota TRUE|Určuje aktivitu, pro který je k dispozici logice kompenzace, zrušení a potvrzení. Chcete-li přidat <xref:System.Activities.Statements.CompensableActivity.Body%2A> aktivity, vyřaďte aktivitu z **sada nástrojů** do **textu** pole na **CompensableActivity** Návrhář aktivity s textem pomocný parametr "rozevírací aktivity sem".|
 |<xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>|False|Určuje aktivity, která se spustí v případě zrušení. Chcete-li přidat aktivitu, vyřaďte jeho designer z **sada nástrojů** do **CancellationHandler** pole na **CompensableActivity** Návrhář aktivity s textem pomocný parametr "rozevírací Aktivity sem".|
 |<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|Určuje aktivity budou spuštěny při kompenzace <xref:System.Activities.Statements.CompensableActivity.Body%2A> aktivity. Tuto obslužnou rutinu nelze explicitně vyvolat pomocí <xref:System.Activities.Statements.Compensate> aktivity.<br /><br /> Chcete-li přidat aktivitu, vyřaďte jeho Návrhář aktivity z **sada nástrojů** do **CompensationHandler** pole na **CompensableActivity** Návrhář aktivity s textem pomocný parametr " Aktivity sem umístěte".|
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|Určuje aktivity budou spuštěny při potvrzení <xref:System.Activities.Statements.CompensableActivity.Body%2A> aktivity. Tuto obslužnou rutinu nelze explicitně vyvolat pomocí <xref:System.Activities.Statements.Confirm> aktivity.<br /><br /> Chcete-li přidat aktivitu, vyřaďte jeho Návrhář aktivity z **sada nástrojů** do **ConfirmationHandler** pole na **CompensableActivity** Návrhář aktivity s textem pomocný parametr " Aktivity sem umístěte".|

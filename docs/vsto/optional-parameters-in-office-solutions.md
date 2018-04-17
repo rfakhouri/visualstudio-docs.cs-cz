@@ -1,12 +1,10 @@
 ---
-title: "Volitelné parametry v řešeních pro systém Office | Microsoft Docs"
-ms.custom: 
+title: Volitelné parametry v řešeních pro systém Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,20 +18,21 @@ helpviewer_keywords:
 - parameters [Office development in Visual Studio], optional
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe40b6bc0af9df294408079c8a27dfac42df97b0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d417b5126989736c6126ae7c80bfcbc86f336a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Volitelné parametry v řešeních pro systém Office
   Mnoho z metod v objektové modely z aplikace Microsoft Office přijmout volitelné parametry. Pokud používáte Visual Basic pro vývoj řešení Office v sadě Visual Studio, nemáte předat hodnotu pro volitelné parametry, protože se automaticky použijí výchozí hodnoty pro každý parametr chybí. Ve většině případů můžete vypustit volitelné parametry v projektech Visual C#. Však nemůžete vynechat volitelné **ref** parametry `ThisDocument` třídy v projekty na úrovni dokumentu aplikace Word.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Další informace o práci s volitelné parametry v projektech Visual C# a Visual Basic najdete v tématu [pojmenované a nepovinné argumenty &#40; C &#35; Průvodce programováním &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) a [volitelné parametry &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
+ Další informace o práci s volitelné parametry v projektech Visual C# a Visual Basic najdete v tématu [pojmenované a nepovinné argumenty &#40;C&#35; Průvodce programováním&#41; ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) a [volitelné parametry &#40;Jazyka Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters).  
   
 > [!NOTE]  
 >  V dřívějších verzích sady Visual Studio musíte zadat hodnotu pro všechny volitelné parametry v projektech Visual C#. Pro větší pohodlí si tyto projekty zahrnout globální proměnné s názvem `missing` , pokud chcete použít výchozí hodnotu parametru, je můžete předat do volitelný parametr. Projekty Visual C# pro Office v sadě Visual Studio v nich zahrnuta `missing` proměnné, ale obvykle není nutné ho použít při vývoji řešení pro systém Office v [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], s výjimkou při volání metody s volitelné **ref** Parametry v `ThisDocument` třídy v projekty na úrovni dokumentu ve Wordu.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- Další informace o parametrech hodnota a odkaz na typ najdete v tématu [předávání argumentů podle hodnoty a podle Reference &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pro Visual Basic) a [předávání parametry &#40; C &#35; Průvodce programováním &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
+ Další informace o parametrech hodnota a odkaz na typ najdete v tématu [předávání argumentů podle hodnoty a podle Reference &#40;jazyka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pro Visual Basic) a [předávání parametry &#40;C&#35; Průvodce programováním&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).  
   
 ## <a name="see-also"></a>Viz také  
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   

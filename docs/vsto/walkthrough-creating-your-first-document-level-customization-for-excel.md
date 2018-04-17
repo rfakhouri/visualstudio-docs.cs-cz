@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 656486b691c030839fbb2f0d0ebb568d72ca36e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f1a8335c301d8eba2ec170c9b1b462d09364904f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-document-level-customization-for-excel"></a>Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel
   Tento úvodní návod ukazuje, jak vytvořit přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pouze v případě, že konkrétní sešitu je otevřený. Nelze použít přizpůsobení na úrovni dokumentu celou aplikaci změnit, například zobrazení novou kartu pásu karet v otevřeném žádné sešitu.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 ## <a name="creating-the-project"></a>Vytvoření projektu  
   
@@ -72,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Vyberte **vytvoříte nový textový dokument**a klikněte na tlačítko **OK**.  
   
-    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]vytvoří **FirstWorkbookCustomization** projektu a přidá následující soubory do projektu.  
+    -   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstWorkbookCustomization** projektu a přidá následující soubory do projektu.  
   
     -   *FirstWorkbookCustomization*XLSX - představuje sešitu aplikace Excel v projektu. Obsahuje všechny listy a grafy.  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **Sheet1** kód soubor a klikněte na tlačítko **Návrhář zobrazení**.  
   
-     \-nebo –  
+     \- nebo –  
   
      V **Průzkumníku řešení**, dvakrát klikněte **Sheet1** souboru kódu.  
   
@@ -170,7 +169,7 @@ ms.lasthandoff: 01/10/2018
 -   Nasazení přizpůsobení na úrovni dokumentu pro Excel: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Přehled vývoje řešení pro systém Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Řešení pro aplikaci Excel](../vsto/excel-solutions.md)   
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)   
  [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)   

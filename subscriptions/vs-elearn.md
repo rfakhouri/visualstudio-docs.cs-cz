@@ -1,53 +1,27 @@
 ---
-title: "Výhodou studijní Microsoft Visual Studio předplatná | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Get started using Microsoft E-learning courses included in selected Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b5db9111203da5e4bd47c7b7439c6eb6be8ca3bf
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Výhodou studijní Microsoft Visual Studio předplatná | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Začněte používat Microsoft elektronické kurzy součástí vybrané předplatné sady Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 8f0f3c79fbeba38ab2bcd5c7e572e9a51dd7dd81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-#  <a name="the-microsoft-e-learning-benefit-in-visual-studio-subscriptions"></a>Výhodou studijní Microsoft Visual Studio odběrů
+#  <a name="the-microsoft-e-learning-benefit-in-visual-studio-subscriptions"></a>Výhodou Microsoft E-learning odběry Visual Studio
 
-## <a name="overview"></a>Přehled
 Další technologie, vyšší úrovně znalostí nebo train pro Microsoft Certification zkoušek pro aplikaci.  Počet kolekcí kurzu, máte přístup závisí na úrovni vašeho předplatného sady Visual Studio.  Ne všechny odběry zahrnují této výhody. 
 
-## <a name="eligibility"></a>Podmínky
-| Úrovni předplatného / Program                                                  | Výhody               | Obnovitelných?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 2 postupu kolekce  |  Ano                                                               |
-| Visual Studio Enterprise roční                                               | 2 postupu kolekce  |  Ano                                                               |
-| Visual Studio Enterprise každý měsíc                                              | Není k dispozici         |                                                                    |
-| Visual Studio Professional Standard                                           | 1 postupu kolekce   |  Ano                                                               |
-| Visual Studio Professional roční                                             | 1 postupu kolekce   |  Ano                                                               | 
-| Visual Studio Professional každý měsíc                                            | Není k dispozici         |                                                                    |
-| Visual Studio Test Pro                                                        | 1 postupu kolekce   |  Ano                                                               |
-| MSDN platformy                                                                | 1 postupu kolekce   |  Ano                                                               |
-| Visual Studio Dev Essentials                                                  | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 2 postupu kolekce  |  Ano                                                               |
-| Visual Studio Enterprise - FTE                                                | 2 postupu kolekce  |  Ano                                                               |
-| Visual Studio Enterprise – Microsoft Partner Network                          | 2 postupu kolekce  |  Ano                                                               |
-| Visual Studio Professional - Microsoft Partner Network                        | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – Představte si (Premium)                                  | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | 2 postupu kolekce  |  Ano                                                               |
-| Microsoft Certified Trainer - Software a služby                             | Není k dispozici         |                                                                    |
-| Microsoft Certified Trainer - softwaru & vývojářů Services                   | Není k dispozici         |                                                                    |
-
-<sup>1</sup>*zahrnuje není pro prodej (NFR), cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP)*   
-
-Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
 
 ## <a name="activation-steps"></a>Postup aktivace
-1.  Přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Najděte dlaždici Microsoft E-learning v části vývoj Professional na stránce výhody a klikněte na **získat kód** odkaz v dolní části dlaždici výhody.
 
@@ -78,8 +52,25 @@ Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.vis
 
     ![Portál Microsoft studijní výhody](_img\vs-elearn\vs-elearn-portal.png)
 
-## <a name="faq"></a>Nejčastější dotazy
-*Kontrola aktualizací*
+
+## <a name="eligibility"></a>Podmínky
+
+| Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardní, roční cloud)   | VL, Azure, prodejní, NFR<sup>1</sup>  | 2 postupu kolekce      |  Ano           |
+| Visual Studio Professional (standardní<sup>2</sup> , roční cloudu) | VL, Azure, maloobchodní                                       | 1 postupu kolekce                                                            |  Ano             |
+| Visual Studio Test Professional (standardní)                         | VL, prodejní                                              | 1 postupu kolekce                                             |  Ano             |
+| MSDN platformy (standardní)                                          | VL, prodejní                                              | 1 postupu kolekce                                              |  Ano             |
+| Visual Studio Dev Essentials | Není k dispozici  | Není k dispozici | Není k dispozici
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud)  | Azure |Není k dispozici  | Není k dispozici |
+
+
+<sup>1</sup>*zahrnuje: není pro prodej (NFR) FTE, Microsoft s hodnotou partnera (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP), BizSpark.    Vyloučí: Představte si, Microsoft Certified Trainer (MCT)*
+
+<sup>2</sup>*vyloučí: Microsoft Partner Network (MPN)* 
+
+Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+
 
 ## <a name="support-resources"></a>Podpora prostředky
 -  Máte dotaz Microsoft E-learning?  Podívejte se na tyto prostředky:

@@ -1,7 +1,7 @@
 ---
-title: "Oprava nedetekovatelných dynamických parametrů v testu výkonnosti webu v sadě Visual Studio | Microsoft Docs"
+title: Oprava nedetekovatelných dynamických parametrů v testu výkonnosti webu v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs, load tests
 - load tests, walkthroughs
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: dc92b65ba26b11fe65919fd94ac16c8480427f6b
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: a696f03e715e2b3bede34f45bce90596a14897aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Oprava nedetekovatelných dynamických parametrů v testu výkonnosti webu
 
@@ -41,7 +41,7 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
 3.  V návrhovém zobrazení přetáhněte ji HiddenField na stránku a v pak změňte hodnotu pro vlastnost (ID) pro HiddenFieldSessionID.
 
-     ![Add a HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png "Web_Test_DynamicParameter_HiddenField")
+     ![Přidat HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png "Web_Test_DynamicParameter_HiddenField")
 
 4.  Změnit zobrazení zdroje pro stránku řetězce dotazu a přidejte že následující zvýrazněnou kódu ASP.NET a JavaScript sloužící ke generování dynamických parametrů ID imitované relace:
 
@@ -86,7 +86,7 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
      ![Upravit vlastnosti NavigateURL](../test/media/web_test_dynamicparameter_hyperlink_navurl.png "Web_Test_DynamicParameter_Hyperlink_NavURL")
 
-     Select Querystring.aspx.
+     Vyberte Querystring.aspx.
 
      ![Vyberte adresu URL jako Querystring.aspx](../test/media/web_test_dynamicparameter_hyperlink_navurl2.png "Web_Test_DynamicParameter_Hyperlink_NavURL2")
 
@@ -211,7 +211,7 @@ K předvedení rozpoznat a nedetekovatelných dynamických parametrů, vytvoří
 
 6.  Protože máme opravit dynamický parametr v původním záznamu, vyberte na panelu nástrojů zaznamenaná výsledek.
 
-     ![Choose recorded result](../test/media/web_test_dynamicparameter_recordedresult.png "Web_Test_DynamicParameter_RecordedResult")
+     ![Zvolte zaznamenaná výsledek](../test/media/web_test_dynamicparameter_recordedresult.png "Web_Test_DynamicParameter_RecordedResult")
 
 7.  Ve výsledcích zaznamenaná vyberte třetí požadavku, což je stejný Querystringrequest.aspx požadavek, který izolované v testovacím běhu výsledky.
 

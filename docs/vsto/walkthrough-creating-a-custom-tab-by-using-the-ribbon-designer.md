@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Custom tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: cdbbd7ee286c97a986e89ccdb5bdcfdde4ef7578
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7fdae2b6a867b6d87c6579fc1d24f9d0ebd07cf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer"></a>Návod: Vytvoření vlastní karty pomocí návrháře pásu karet
   Pomocí Návrháře pásu karet, můžete vytvořit vlastní karty a pak přidejte a umisťování ovládacích prvků na něm.  
@@ -59,7 +58,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio otevře do nového sešitu v návrháři a přidá **MyExcelRibbon** projektu do **Průzkumníku řešení**.  
   
-##  <a name="BKMK_CreateActionsPanes"></a>Vytváření podokna akcí  
+##  <a name="BKMK_CreateActionsPanes"></a> Vytváření podokna akcí  
  Do projektu přidejte dvě podokna vlastní akce. Později přidáte tlačítek, zobrazení a skrytí podokna těchto akcí na vlastní kartě.  
   
 #### <a name="to-create-actions-panes"></a>Chcete-li vytvořit podokna akcí  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Opakujte kroky 1 až 5 vytvořte druhý podokna akce a popisku. Nastavte **Text** vlastnost druhý štítek, který chcete **2 podokna akce**.  
   
-##  <a name="BKMK_CreateCustomTab"></a>Vytvoření vlastní karty  
+##  <a name="BKMK_CreateCustomTab"></a> Vytvoření vlastní karty  
  Jedním z pokynů pro návrh aplikace Office je, že uživatelé by měli mít vždy řízení aplikace Office uživatelského rozhraní. Pokud chcete přidat tuto možnost u podokna akcí, můžete přidat tlačítek, zobrazení a skrytí podokna každé akce z vlastní karty na pásu karet. Chcete-li vytvořit vlastní karty, přidejte **pásu karet (vizuálního návrháře)** položku do projektu. Návrháře umožňuje přidat a umístěte ovládací prvky, nastavení vlastností ovládacího prvku a zpracování události ovládacího prvku.  
   
 #### <a name="to-create-a-custom-tab"></a>K vytvoření vlastní karty  
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
 14. Nastavte **popisek** vlastnost **skrytí podokna akce**.  
   
-##  <a name="BKMK_HideShowActionsPane"></a>Skrytí a pomocí tlačítka na kartě Vlastní zobrazení podokna akcí  
+##  <a name="BKMK_HideShowActionsPane"></a> Skrytí a pomocí tlačítka na kartě Vlastní zobrazení podokna akcí  
  Posledním krokem je přidání kódu, který reaguje na uživatele. Přidání obslužných rutin událostí pro <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> události pro dvě tlačítka a <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> událostí přepínací tlačítko. Přidávání kódu do těchto obslužných rutin událostí Povolit skrytí a zobrazení podokna akcí.  
   
 #### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>Skrýt a zobrazit pomocí tlačítka na vlastní kartě podokna akcí  

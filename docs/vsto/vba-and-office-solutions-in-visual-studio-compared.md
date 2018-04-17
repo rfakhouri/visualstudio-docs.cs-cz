@@ -1,12 +1,10 @@
 ---
-title: "VBA a řešení pro systém Office v sadě Visual Studio porovnání | Microsoft Docs"
-ms.custom: 
+title: VBA a řešení pro systém Office v sadě Visual Studio porovnání | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,18 +13,19 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], VBA compared to
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d6b2fd1cbf3ad2d58575b22b55f7ec1dc40b6ed4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a5a92727f08729fc7f8a871d0528c9e652d92f8a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Srovnání řešení VBA a řešení pro systém Office v sadě Visual Studio
   Microsoft Visual Basic for Applications (VBA) používá nespravovaného kódu, který je úzce integrovaná s aplikací Office. Projekty aplikace Microsoft Office, které jsou vytvořené pomocí sady Visual Studio umožňují využít výhod rozhraní .NET Framework a nástrojů Visual Studio návrhu.  
   
- Informace o typech řešení pro systém Office, můžete vytvořit pomocí sady Visual Studio najdete v tématu [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Informace o typech řešení pro systém Office, můžete vytvořit pomocí sady Visual Studio najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="comparison"></a>Srovnání  
  Následující tabulka uvádí základní srovnání řešení VBA a řešení pro systém Office v sadě Visual Studio.  
@@ -49,12 +48,12 @@ ms.lasthandoff: 01/10/2018
  VBA kód můžete volat z Office řešení vytvořená pomocí sady Visual Studio a můžete také volání kódu v řešeních pro systém Office vytvořené pomocí sady Visual Studio z jazyka VBA. Konkrétní postup se liší v závislosti na tom, jestli je vaše řešení Office doplňku VSTO nebo přizpůsobení na úrovni dokumentu. Další informace najdete v tématu [volání kódu v doplňcích VSTO z jiných řešení pro systém Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) a [kombinování VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Přehled vývoje řešení pro systém Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Volání kódu v doplňcích VSTO z jiných řešení pro systém Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Kombinování VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md)   
  [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)   
- [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
   
   

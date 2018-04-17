@@ -1,12 +1,10 @@
 ---
-title: "Data v návody řešení Office | Microsoft Docs"
-ms.custom: 
+title: Data v návody řešení Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ff2d79e0be978295ab6ad3228f8d576e0bce82cd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0a30280c2e47a5beac99c52eefb61fcbc7fbbdea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Návody pro data v řešeních pro systém Office
   Následující postupy ukazují, jak pracovat s daty v přizpůsobeních na úrovni dokumentu a doplňků VSTO pro aplikace Microsoft Office Word a Microsoft Office Excel.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
  [Návody pro přizpůsobení uživatelského rozhraní sady Office](../vsto/office-ui-customization-walkthroughs.md)   
  [Zabezpečení a návody pro nasazení](../vsto/security-and-deployment-walkthroughs.md)   
  [Ukázky vývoje pro Office](../vsto/office-development-samples.md)   
- [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Běžné úlohy při programování pro Office](../vsto/common-tasks-in-office-programming.md)   
  [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
   

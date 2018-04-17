@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1 | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1 | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2266fc715322c024625e5f52f83805d0d582416b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 535d5d32771a7be2eacca575f0735548ff2926ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1
   Projekty SharePoint jsou kontejnery pro jednu nebo více položek projektu služby SharePoint. Vytváření vlastních typů položek projektu služby SharePoint a poté je přidružení pomocí šablony projektu můžete rozšířit systému projektu služby SharePoint v sadě Visual Studio. V tomto návodu se definování typu položky projektu pro vytvoření sloupce webu a pak vytvoříte projekt šablonu, která slouží k vytvoření nového projektu, který obsahuje položky projektu sloupce webu.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
  Toto je samostatné návod. Po dokončení tohoto postupu můžete vylepšit položka projektu přidáním průvodce do šablony projektu. Další informace najdete v tématu [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Můžete si stáhnout ukázku, která obsahuje dokončené projekty, kódu a další soubory v tomto návodu z následujícího umístění: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Můžete si stáhnout ukázku, která obsahuje dokončené projekty, kódu a další soubory v tomto návodu z následujícího umístění: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Požadavky  
  Následující součásti na vývojovém počítači k dokončení tohoto názorného postupu potřebujete:  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  V **název** zadejte **SiteColumnProjectItem**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **SiteColumnProjectItem** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **SiteColumnProjectItem** projektu do **Průzkumníku řešení**.  
   
 #### <a name="to-create-the-project-template-project"></a>Vytvoření projektu šablony projektu  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  V **název** zadejte **SiteColumnProjectTemplate**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **SiteColumnProjectTemplate** projektu k řešení.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **SiteColumnProjectTemplate** projektu k řešení.  
   
 6.  Odstraňte soubor kódu Class1 z projektu.  
   
@@ -126,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  V **název** zadejte **ProjectItemTypeDefinition** a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **ProjectItemTypeDefinition** projektu a řešení a otevře soubor výchozího kódu Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **ProjectItemTypeDefinition** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
 5.  Odstraňte soubor kódu Class1 z projektu.  
   
@@ -171,9 +170,9 @@ ms.lasthandoff: 01/10/2018
   
 4.  Uložte projekt a pak zavřete druhou instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-5.  V instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , otevřete řešení SiteColumnProjectItem, má v **Průzkumníku řešení**, otevřete místní nabídku pro **SiteColumnProjectTemplate** uzel projektu, zvolte ** Přidat**a potom zvolte **existující položka**.  
+5.  V instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] , otevřete řešení SiteColumnProjectItem, má v **Průzkumníku řešení**, otevřete místní nabídku pro **SiteColumnProjectTemplate** uzel projektu, zvolte  **Přidat**a potom zvolte **existující položka**.  
   
-6.  V **přidat existující položku** dialogové okno, otevřete seznam přípon souborů a potom zvolte **všechny soubory (\*.\*) **.  
+6.  V **přidat existující položku** dialogové okno, otevřete seznam přípon souborů a potom zvolte **všechny soubory (\*.\*)** .  
   
 7.  V adresáři, který obsahuje BaseSharePointProject projekt, vyberte soubor key.snk a potom zvolte **přidat** tlačítko.  
   
@@ -216,7 +215,7 @@ ms.lasthandoff: 01/10/2018
     </VSTemplate>  
     ```  
   
-     `OutputSubPath` Element určuje další složky v cestě, pod kterým je vytvořena šablona projektu při sestavování projektu. Zde určené složky zajistí, že šablona projektu bude k dispozici jenom v případě, že zákazníci otevřete **nový projekt** dialogové okno, rozbalte seznam **SharePoint** uzel a potom vyberte **2010 ** uzlu.  
+     `OutputSubPath` Element určuje další složky v cestě, pod kterým je vytvořena šablona projektu při sestavování projektu. Zde určené složky zajistí, že šablona projektu bude k dispozici jenom v případě, že zákazníci otevřete **nový projekt** dialogové okno, rozbalte seznam **SharePoint** uzel a potom vyberte **2010**  uzlu.  
   
 5.  Soubor uložte a zavřete.  
   
@@ -434,7 +433,7 @@ ms.lasthandoff: 01/10/2018
   
     -   Přidá `ProjectItem` prvky pro každý filethat je součástí každá instance projektu.  
   
-    -   Používá obor názvů "http://schemas.microsoft.com/developer/vstemplate/2005". Ostatní soubory projektu v tomto řešení použít obor názvů "http://schemas.microsoft.com/developer/msbuild/2003". Proto se budou generovat zprávy upozornění schématu XML, ale je v tomto návodu můžete ignorovat.  
+    -   Používá obor názvů "http://schemas.microsoft.com/developer/vstemplate/2005". Ostatní soubory projektu v tomto řešení "http://schemas.microsoft.com/developer/msbuild/2003" oboru názvů. Proto se budou generovat zprávy upozornění schématu XML, ale je v tomto návodu můžete ignorovat.  
   
      Další informace o obsahu soubory .vstemplate najdete v tématu [Visual Studio odkaz na schéma šablon](/visualstudio/extensibility/visual-studio-template-schema-reference).  
   

@@ -1,12 +1,10 @@
 ---
-title: "Spravovaný odkaz (vývoj pro Office v sadě Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Spravovaný odkaz (vývoj pro Office v sadě Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,17 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3304d104a0ccf308c02a770f3e79fb08f6d06049
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5b0b6d7b6fdbb55030088f33fc235429d0b6142e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Spravovaný odkaz (vývoj pro Office v sadě Visual Studio)
-  Tato část obsahuje referenční dokumentace rozhraní API pro obory názvů a typy, které se používají v Office projektů cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Referenční dokumentace rozhraní API o obory názvů a typy, které se používají v projektech Office cílených na rozhraní .NET Framework 3.5, najdete v následující části odkaz v dokumentaci sady Visual Studio: [http://go.microsoft.com/fwlink/? LinkId = 160658](http://go.microsoft.com/fwlink/?LinkId=160658).  
+  Tato část obsahuje referenční dokumentace rozhraní API pro obory názvů a typy, které se používají v Office projektů cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Referenční dokumentace rozhraní API o obory názvů a typy, které se používají v projektech Office cílených na rozhraní .NET Framework 3.5, najdete v následující části odkaz v dokumentaci sady Visual Studio: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
 > [!NOTE]  
 >  Máte zájem o vývoji řešení, které rozšiřují Office prostředí napříč [více platforem](https://dev.office.com/add-in-availability)? Podívejte se na [Office Add in modelu](https://dev.office.com/docs/add-ins/overview/office-add-ins). Doplňky Office mají malé nároky ve srovnání s doplňků VSTO a řešení a můžete je vytvořit pomocí téměř jakoukoli webové programování technologie, jako je například HTML5, JavaScript, CSS3 a XML.  
@@ -65,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Viz také  
  [Visual Studio Tools for Office Runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
- [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)   
  [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
   

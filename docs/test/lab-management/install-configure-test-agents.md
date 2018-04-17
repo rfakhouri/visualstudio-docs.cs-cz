@@ -1,20 +1,20 @@
 ---
-title: "Nainstalujte testovacích agentů a testovací kontrolery pro sadu Visual Studio | Microsoft Docs"
+title: Nainstalujte testovacích agentů a testovací kontrolery pro sadu Visual Studio | Microsoft Docs
 ms.date: 03/02/2018
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eaba4be128042776382d63d1b0198a48cecef94
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0bc5790ef520e86bf853cee6086bd6c8739cc23a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Nainstalujte testovacích agentů a testovací kontrolery
 
@@ -45,8 +45,8 @@ Podle následující tabulky můžete kombinovat různé verze sady TFS, Microso
 | TFS | MTM s testovacím Center | Řadiče | Agent |
 | --- | -------------------------------------- | ---------- | ----- |
 | 2017: upgrade z 2015 nebo s novou instalací | 2017 | 2017 | 2017 |
-| 2017: upgrade z 2015 nebo s novou instalací | 2017 | 2013 Update 5 | 2013 Update 5 |
-| 2017: upgrade z 2015 nebo s novou instalací | 2015 | 2013 Update 5 | 2013 Update 5 |
+| 2017: upgrade z 2015 nebo s novou instalací | 2017 | 2013 s aktualizací update 5 | 2013 s aktualizací update 5 |
+| 2017: upgrade z 2015 nebo s novou instalací | 2015 | 2013 s aktualizací update 5 | 2013 s aktualizací update 5 |
 | 2015: upgrade z 2013 | 2013 | 2013 |2013 |
 | 2015: nové instalace | 2013 | 2013 | 2013 |
 | 2015: upgrade z 2013 nebo s novou instalací | 2015 | 2013 | 2013 |

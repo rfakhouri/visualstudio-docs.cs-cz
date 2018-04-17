@@ -1,12 +1,10 @@
 ---
-title: "Programování doplňků VSTO | Microsoft Docs"
-ms.custom: 
+title: Programování doplňků VSTO | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.Addin
 - VST.ProjectItem.AddinProject
@@ -34,13 +32,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 58b6d40e2da962587b44e4b73c8331b3fba5590f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 192b366b4d41fed0baf0cca4af8e57fa00dc249a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-vsto-add-ins"></a>Programování doplňků VSTO
   Když rozšíříte tak, že vytvoříte doplňku VSTO aplikace Microsoft Office, můžete napsat kód přímo na `ThisAddIn` třídy ve vašem projektu. Tato třída slouží k provádění úloh, jako je přístup k modelu objektu hostitelské aplikace Microsoft Office, přizpůsobení uživatelského rozhraní (UI) aplikace a vystavení objektů v doplňku VSTO pro jiné řešení pro Office.  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Některé aspekty psaní kódu v doplňku VSTO projekty se liší od ostatních typů projektů v sadě Visual Studio. Řadu tyto rozdíly jsou příčinou způsob Office – objektové modely jsou umístěny do spravovaného kódu. Další informace najdete v tématu [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).  
   
- Obecné informace o doplňků VSTO a dalších typů řešení, která můžete vytvořit pomocí nástroje pro vývoj pro Office v sadě Visual Studio najdete v tématu [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Obecné informace o doplňků VSTO a dalších typů řešení, která můžete vytvořit pomocí nástroje pro vývoj pro Office v sadě Visual Studio najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-thisaddin-class"></a>Pomocí ThisAddIn – třída  
  Psaní kódu doplňku VSTO v můžete spustit `ThisAddIn` třídy. Visual Studio automaticky generuje této třídy v ThisAddIn.vb (v [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) nebo ThisAddIn.cs (v jazyku C#) souboru kódu v projektu doplňku VSTO. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Pro vás automaticky vytvoří tato třída při načtení aplikace Microsoft Office vaší doplňku VSTO.  
@@ -108,7 +107,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
   
 -   [Přehled modelu objektů aplikace Visio](../vsto/visio-object-model-overview.md)  
   
-###  <a name="AccessingDocuments"></a>Přístup k dokumentu, při spuštění aplikace Office  
+###  <a name="AccessingDocuments"></a> Přístup k dokumentu, při spuštění aplikace Office  
  Ne všechny [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplikace automaticky otevře při spuštění je a žádný z dokumentu [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplikace otevřete dokument, při jejich spuštění. Proto nepřidáte kód `ThisAdd-In_Startup` obslužné rutiny události, pokud kód vyžaduje, aby dokument otevřen. Místo toho přidejte tento kód na událost, která vyvolává aplikaci Office, když uživatel vytvoří nebo otevře dokument. Tímto způsobem může zaručit, že dokument je otevřen před kódu provádí operace na něm.  
   
  Následující příklad kódu funguje s dokumentem v aplikaci Word jenom v případě, že uživatel vytvoří dokument nebo otevře existující dokument.  

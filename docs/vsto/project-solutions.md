@@ -1,12 +1,10 @@
 ---
-title: "Projekt řešení | Microsoft Docs"
-ms.custom: 
+title: Projekt řešení | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,18 +17,19 @@ helpviewer_keywords:
 - solutions [Office development in Visual Studio], Project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 39ee63d84ef0c7830da9c218a6e4c7b25f7bac99
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8c30cb52c446268f96229e5665d8c5d1dcdb33b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-solutions"></a>Projektová řešení
-  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]poskytuje šablony projektů, které můžete použít k vytvoření doplňků VSTO pro aplikaci Microsoft Office Project. Doplňků VSTO můžete automatizovat projektu, rozšířit funkce projektu nebo si přizpůsobit projektu uživatelské rozhraní (UI).  
+  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] poskytuje šablony projektů, které můžete použít k vytvoření doplňků VSTO pro aplikaci Microsoft Office Project. Doplňků VSTO můžete automatizovat projektu, rozšířit funkce projektu nebo si přizpůsobit projektu uživatelské rozhraní (UI).  
   
- Další informace o doplňků VSTO najdete v tématu [získávání VSTO spuštění programování doplňků](../vsto/getting-started-programming-vsto-add-ins.md) a [architektura VSTO doplňky](../vsto/architecture-of-vsto-add-ins.md). Pokud jste ještě programování s Microsoft Office, najdete v části [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
+ Další informace o doplňků VSTO najdete v tématu [získávání VSTO spuštění programování doplňků](../vsto/getting-started-programming-vsto-add-ins.md) a [architektura VSTO doplňky](../vsto/architecture-of-vsto-add-ins.md). Pokud jste ještě programování s Microsoft Office, najdete v části [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md).  
   
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]  
   
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  Pro přístup k modelu objektu projekt z doplňku VSTO, použijte `Application` pole z `ThisAddIn` třídy ve vašem projektu. `Application` Pole vrátí objekt Microsoft.Office.Interop.MsProject.Application, který představuje aktuální instanci projektu. Další informace najdete v tématu [programování doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
   
- Při volání do modelu objektu projektu použijete typy, které jsou uvedeny v primární spolupracující sestavení pro projekt. Primární spolupracující sestavení pracuje jako most mezi spravovaného kódu v doplňku VSTO a objektového modelu COM v projektu. Všechny typy v sestavení primární spolupráce projektu jsou definovány v oboru názvů Microsoft.Office.Interop.MSProject. Další informace o primární spolupracující sestavení najdete v tématu [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) a [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).  
+ Při volání do modelu objektu projektu použijete typy, které jsou uvedeny v primární spolupracující sestavení pro projekt. Primární spolupracující sestavení pracuje jako most mezi spravovaného kódu v doplňku VSTO a objektového modelu COM v projektu. Všechny typy v sestavení primární spolupráce projektu jsou definovány v oboru názvů Microsoft.Office.Interop.MSProject. Další informace o primární spolupracující sestavení najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [primární zprostředkovatel komunikace s objekty sestavení sady Office](../vsto/office-primary-interop-assemblies.md).  
   
 ## <a name="using-the-project-object-model-documentation"></a>Pomocí dokumentace projektu objekt modelu  
  Úplné informace o projektu objektový model najdete odkaz na projekt VBA objektu modelu. Reference jazyka VBA objektu modelu dokumenty objektový model projektu, jako je zpřístupněné pro Visual Basic pro aplikace (VBA) kód. Další informace najdete v tématu [odkaz na objekt modelu projektu 2010](http://go.microsoft.com/fwlink/?LinkId=199771).  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Viz také  
  [Návod: Vytvoření vašeho prvního doplňku VSTO pro projekt](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)   
  [Začínáme programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
- [Přehled vývoje řešení pro systém Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   

@@ -1,20 +1,20 @@
 ---
-title: "Stav Návrhář aktivity | Microsoft Docs"
+title: Stav Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c2942b8973dadd0d9f04b0bf9738661f4ec44703
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 117479e00c8b27617c33a2cce422afe5ab3124aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="state-activity-designer"></a>Návrhář stavu aktivity
 A <xref:System.Activities.Statements.State> představuje stavu, ve kterém může být stav stavového stroje v.

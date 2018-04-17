@@ -1,5 +1,5 @@
 ---
-title: "Vyberte dialogové okno nastavit pravidlo (zastaralé) | Microsoft Docs"
+title: Vyberte dialogové okno nastavit pravidlo (zastaralé) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ helpviewer_keywords:
 ms.assetid: cb2bc3f9-7730-4fb2-9f7b-303a9d9f0c8e
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df8d8675d7a3a94aa9bc4e72da6c52de65df3545
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Dialogové okno nastavit vyberte pravidlo (zastaralé)
 Toto téma popisuje, jak používat **vyberte pravidlo nastavené** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -28,7 +28,7 @@ Toto téma popisuje, jak používat **vyberte pravidlo nastavené** dialogové o
 |Prvek uživatelského rozhraní (UI)|Popis|
 |----------------|-----------------|
 |**Nové...**|Kliknutím otevřete [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) vytvořit novou podmínku pravidla.|
-|**Edit...**|Kliknutím otevřete [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) upravit vybrané pravidlo podmínku.|
+|**Upravit...**|Kliknutím otevřete [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) upravit vybrané pravidlo podmínku.|
 |**Přejmenování...**|Kliknutím otevřete dialogové okno používá k přejmenování sadu vybrané pravidlo.|
 |**Odstranit**|Klikněte na Odstranit sadu vybrané pravidlo.|
 |**Náhled sady pravidel**|Zobrazuje pravidla v sadě vybrané pravidlo.|

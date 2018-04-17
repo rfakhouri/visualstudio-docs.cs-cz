@@ -1,5 +1,5 @@
 ---
-title: "Přepínač&lt;T&gt; Návrhář aktivity | Microsoft Docs"
+title: Přepínač&lt;T&gt; Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 18a6c96e-49a9-4356-ab61-fbd7e3ab44bb
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d3a29e16409dff09d7ed50f4dbfa14f8ce9505
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2bfdcc86531105e3b2c743a8aa0f88cda844efc7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="switchlttgt-activity-designer"></a>Přepínač&lt;T&gt; Návrhář aktivity
 <xref:System.Activities.Statements.Switch%601> Aktivita vyhodnotí zadaný výraz a provádí aktivity z kolekce aktivit, jejichž přidružené klíč odpovídá hodnotě získané z vyhodnocení.
@@ -35,7 +35,7 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje popisný název <xref:System.Activities.Statements.Switch%601> Návrhář aktivity. Výchozí hodnota je přepínač < Int32\>. Hodnotu lze upravit v **vlastnosti** okno nebo přímo v hlavičce návrháře.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> striktně nevyžaduje, je osvědčeným postupem použít.|
-|<xref:System.Activities.Statements.Switch%601.Expression%2A>|True|Určuje výraz použit k porovnání s klíči v kolekci případů k určení takovém případě provést.|
+|<xref:System.Activities.Statements.Switch%601.Expression%2A>|Hodnota TRUE|Určuje výraz použit k porovnání s klíči v kolekci případů k určení takovém případě provést.|
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Určuje aktivity provést, pokud není nalezena žádná shoda. Klikněte na tlačítko **přidat aktivitu** tlačítko v návrháři otevřít **výchozí** pole, kde může být přetažen aktivity.|
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||Určuje případů k vyhodnocení. Chcete-li přidat případu, klikněte na tlačítko **přidat nového případu** tlačítko v dolní části **přepínač\<T >** designer. Tlačítko se změní na textové pole (Pokud obecného typu vybrali při přidávání přepínač pole se seznamem\<T > je řetězec nebo výčtu). Po přidání klíče v **případ hodnota** pole rozšíří oblasti případu a aktivity můžete vyřadit, kde text nápovědy "Zde rozevírací aktivita" k definování logiku spouštění pro případ.|
 

@@ -1,13 +1,10 @@
 ---
-title: "Nasazování rozšíření pro nástroje služby SharePoint v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Nasazování rozšíření pro nástroje služby SharePoint v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80cc884e45d9db10f6552fa44e611e87b7b4f801
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 7c49e12b7357cc8f3aa6ce9f7cbdcd02294cc253
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Nasazování rozšíření pro nástroje služby SharePoint v aplikaci Visual Studio
   Chcete-li nasadit rozšíření nástrojů SharePoint, vytvořte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] balíček rozšíření (VSIX), který obsahuje sestavení rozšíření a další soubory, které chcete distribuovat s rozšířením. Balíčku VSIX je komprimovaný soubor, který následuje standardní otevřete balení konvence OPC (). VSIX balíčky mít příponu VSIX.  
@@ -132,7 +129,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  V **Průzkumníku řešení**, otevřete místní nabídky projektu šablony nebo šablony položek projektu a zvolte **uvolnit projekt**.  
   
-7.  Znovu otevřete místní nabídku pro uzel projektu a zvolte **upravit***YourTemplateProjectName***.csproj** nebo **upravit**  *YourTemplateProjectName***.vbproj**.  
+7.  Znovu otevřete místní nabídku pro uzel projektu a zvolte **upravit***YourTemplateProjectName***.csproj** nebo **upravit***YourTemplateProjectName***. vbproj**.  
   
 8.  Vyhledejte následující `VSTemplate` element v souboru projektu.  
   

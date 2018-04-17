@@ -1,12 +1,9 @@
 ---
 title: Integrace sady Visual Studio (MSBuild) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, reference resolution
 - MSBuild, well-known target names
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1495fa1ae7408874f2c1cfcede2ed495fea3f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 13a278a2206d7d2c5791a441552f30f196e925e2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 Visual Studio hostitelů [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k načtení a vytvoření spravované projekty. Protože [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zodpovídá za projektu, téměř každý projekt v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] můžete v úspěšně použít formát [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i v případě projektu byla vytvořena pomocí různých nástrojů a má vlastní sestavení proces.  
@@ -38,7 +34,7 @@ Visual Studio hostitelů [!INCLUDE[vstecmsbuild](../extensibility/internals/incl
  Informace o projekty C++ najdete v tématu [soubory projektu](/cpp/ide/project-files).  
   
 ## <a name="project-file-name-extensions"></a>Přípony názvů souborů projektu  
- MSBuild.exe rozpozná všechny příponu názvu souboru projektu odpovídající vzoru. * proj. Ale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozpozná pouze podmnožinu tyto projektu přípony názvů souborů, které určují konkrétní jazyk projektu systém, který načte projektu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]nemá jazykově neutrální [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] na základě systému projektu.  
+ MSBuild.exe rozpozná všechny příponu názvu souboru projektu odpovídající vzoru. * proj. Ale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozpozná pouze podmnožinu tyto projektu přípony názvů souborů, které určují konkrétní jazyk projektu systém, který načte projektu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nemá jazykově neutrální [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] na základě systému projektu.  
   
  Například [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] systému projektu načte .csproj soubory, ale [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nemůže načíst soubor .xxproj. Soubor projektu pro zdrojové soubory v libovolné jazyce musí používat stejnou příponu jako [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nebo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] soubory pro otevření v projektu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
@@ -46,7 +42,7 @@ Visual Studio hostitelů [!INCLUDE[vstecmsbuild](../extensibility/internals/incl
  Kliknutím **sestavení** v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] výchozí cíl, budou spuštěny v projektu. Často je také s názvem Tento cíl `Build`. Výběr **znovu sestavit** nebo **Vyčistit** příkaz se pokusí spustit cíl se stejným názvem v projektu. Kliknutím na tlačítko **publikovat** provede cíl s názvem `PublishOnly` v projektu.  
   
 ## <a name="configurations-and-platforms"></a>Konfigurace a platformy  
- Konfigurace jsou reprezentována v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty podle vlastností seskupeny v rámci `PropertyGroup` elementu, který obsahuje `Condition` atribut. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Chcete-li vytvořit seznam platformy k zobrazení a konfigurace projektu vypadá na tyto podmínky. Tento seznam úspěšná extrakce, podmínky musí mít formát, který je podobný následujícímu:  
+ Konfigurace jsou reprezentována v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projekty podle vlastností seskupeny v rámci `PropertyGroup` elementu, který obsahuje `Condition` atribut. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Chcete-li vytvořit seznam platformy k zobrazení a konfigurace projektu vypadá na tyto podmínky. Tento seznam úspěšná extrakce, podmínky musí mít formát, který je podobný následujícímu:  
   
 ```  
 Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' "  
@@ -127,9 +123,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Aby bylo možné najít a spustit výstup sestavení a připojit ladicí program, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] musí vlastnosti `OutputPath`, `AssemblyName`, a `OutputType` správně definované. Ladicí program se nepodaří připojit, pokud proces vytváření nezpůsobila kompilátoru generovat soubor .pdb.  
   
 ## <a name="design-time-target-execution"></a>Provádění cílů v době návrhu  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pokusí se provést cílů se některé názvy při jeho načtení projektu. Zahrnout tyto cíle `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, a `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Spustí těmito cíli tak, aby kompilátor jde inicializovat na poskytovat technologii IntelliSense, může být inicializována ladicího programu a odkazy zobrazí v Průzkumníku řešení může být vyřešen. Pokud nejsou k dispozici tyto cíle, projekt bude zatížení a sestavení správně, ale dojde v době návrhu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebude plně funkční.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pokusí se provést cílů se některé názvy při jeho načtení projektu. Zahrnout tyto cíle `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`, a `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Spustí těmito cíli tak, aby kompilátor jde inicializovat na poskytovat technologii IntelliSense, může být inicializována ladicího programu a odkazy zobrazí v Průzkumníku řešení může být vyřešen. Pokud nejsou k dispozici tyto cíle, projekt bude zatížení a sestavení správně, ale dojde v době návrhu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nebude plně funkční.  
   
-##  <a name="BKMK_EditingProjects"></a>Úpravy souborů projektu v sadě Visual Studio  
+##  <a name="BKMK_EditingProjects"></a> Úpravy souborů projektu v sadě Visual Studio  
  Chcete-li upravit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] projektu přímo, můžete otevřít soubor projektu v editoru Visual Studio XML.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Uvolnění projektu a jeho úprava v sadě Visual Studio  
@@ -155,10 +151,10 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ukládá do mezipaměti obsah souborů projektu a soubory importovat pomocí souborů projektu. Pokud chcete upravit soubor načíst projekt [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vás automaticky vyzve k načtení projektu tak, aby tyto změny začnou platit. Ale pokud chcete upravit soubor importovat pomocí načíst projekt, budou existovat bez opětovného načtení výzvy a je nutné uvolnit a znovu načíst projekt ručně provést změny vstoupí v platnost.  
   
 ## <a name="output-groups"></a>Skupiny výstupu  
- Několik cílů, které jsou definované v Microsoft.Common.targets mít názvy končící na `OutputGroups` nebo `OutputGroupDependencies`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]volá tyto cíle, chcete-li získat konkrétní seznam výstupy projektu. Například `SatelliteDllsProjectOutputGroup` cíl vytvoří seznam všech satelitní sestavení vytvoří sestavení. Tyto skupiny výstupu jsou používány funkcí, jako je publikování, nasazení a odkazy na projekt na projekt. Načte a sestavení projektech, které je nedefinují [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale některé funkce nemusí fungovat správně.  
+ Několik cílů, které jsou definované v Microsoft.Common.targets mít názvy končící na `OutputGroups` nebo `OutputGroupDependencies`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] volá tyto cíle, chcete-li získat konkrétní seznam výstupy projektu. Například `SatelliteDllsProjectOutputGroup` cíl vytvoří seznam všech satelitní sestavení vytvoří sestavení. Tyto skupiny výstupu jsou používány funkcí, jako je publikování, nasazení a odkazy na projekt na projekt. Načte a sestavení projektech, které je nedefinují [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ale některé funkce nemusí fungovat správně.  
   
 ## <a name="reference-resolution"></a>Překlad odkazů  
- Překlad odkazů je proces, pomocí položky odkaz uložené v souboru projektu zjistit skutečný sestavení. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]překlad odkazů, chcete-li zobrazit podrobné vlastnosti pro každý odkaz v musí aktivovat **vlastnosti** okno. Následující seznam popisuje tři typy odkazů a způsob jejich řešení.  
+ Překlad odkazů je proces, pomocí položky odkaz uložené v souboru projektu zjistit skutečný sestavení. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] překlad odkazů, chcete-li zobrazit podrobné vlastnosti pro každý odkaz v musí aktivovat **vlastnosti** okno. Následující seznam popisuje tři typy odkazů a způsob jejich řešení.  
   
 -   Odkazy na sestavení:  
   

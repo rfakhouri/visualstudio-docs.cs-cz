@@ -1,12 +1,10 @@
 ---
-title: "Vytvoření webové části pro službu SharePoint | Microsoft Docs"
-ms.custom: 
+title: Vytvoření webové části pro službu SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Microsoft.SharePoint.WebControls.DateTimeControl
 - Microsoft.SharePoint.WebControls.CssLink
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d0c5acfac06702894f67a8bfc1547462a0069e15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 52f35f095c91422f8882724074c54ad48edd88f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-web-parts-for-sharepoint"></a>Vytváření webových částí pro službu SharePoint
   Pomocí webové části můžete upravit obsah, vzhled a chování stránek webu služby SharePoint pomocí prohlížeče. Webové části jsou serverové ovládací prvky, které běží v stránku webové části: jsou stavební bloky stránek, které se zobrazují na web služby SharePoint. V tématu [stavebním blokem: webové části](http://go.microsoft.com/fwlink/?LinkID=182097).  
@@ -105,7 +104,7 @@ ms.lasthandoff: 01/10/2018
  Další informace o řešení v izolovaném prostoru najdete v tématu [rozdíly mezi řešeními v izolovaném prostoru a řešení ve farmách](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).  
   
 ## <a name="creating-older-style-sharepoint-based-web-parts"></a>Vytváření webových částí staršího stylu pro SharePoint  
- Šablony v sadě Visual Studio můžete použít k vytvoření vlastních [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] webových částí služby SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)]webové části je postavený na [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruktura webové části a jsou doporučené typ pro nové projekty.  
+ Šablony v sadě Visual Studio můžete použít k vytvoření vlastních [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] webových částí služby SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] webové části je postavený na [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infrastruktura webové části a jsou doporučené typ pro nové projekty.  
   
  Ve velmi málo případů může mít k vytvoření webové části pomocí starší styl založený na Sharepointu webové části. Visual Studio můžete vytvořit tyto typy webových částí, ale Visual Studio neposkytuje žádné šablony, které jsou určeny konkrétně pro vám pomůže vytvořit je.  
   

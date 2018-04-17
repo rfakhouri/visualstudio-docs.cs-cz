@@ -1,26 +1,23 @@
 ---
-title: "Vzdálené pracovní prostory s R Tools pro sadu Visual Studio | Microsoft Docs"
-description: "Jak nastavit vzdálené pracovní prostory R a připojte se k němu ze sady Visual Studio."
-ms.custom: 
+title: Vzdálené pracovní prostory pro R
+description: Jak nastavit vzdálené pracovní prostory R a připojte se k němu ze sady Visual Studio.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 52122b3b3a92ff7df292764e75175070e0b6b1db
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2534bc3d437737062d2731c81b0997f77209bca9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="setting-up-remote-workspaces"></a>Nastavení vzdálené pracovní prostory
 
@@ -89,7 +86,7 @@ Pokud chcete nainstalovat certifikát na vzdáleném počítači, spusťte `cert
 
 ### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>Udělení oprávnění ke čtení privátní klíč certifikátu SSL
 
-Jakmile je certifikát importován, udělte `NETWORK SERVICE` účet oprávnění ke čtení privátní klíč, jak je popsáno v následujících pokynech. `NETWORK_SERVICE`slouží ke spouštění zprostředkovatel služby R, což je služba, která ukončí příchozí připojení SSL k počítači serveru k účtu.
+Jakmile je certifikát importován, udělte `NETWORK SERVICE` účet oprávnění ke čtení privátní klíč, jak je popsáno v následujících pokynech. `NETWORK_SERVICE` slouží ke spouštění zprostředkovatel služby R, což je služba, která ukončí příchozí připojení SSL k počítači serveru k účtu.
 
 1. Spustit `certlm.msc` (Správce certifikátů) z příkazového řádku správce.
 1. Rozbalte položku **osobní > Certifikáty**, klikněte pravým tlačítkem na certifikát a vyberte **všechny úlohy > Spravovat privátní klíče**.

@@ -1,12 +1,10 @@
 ---
-title: "Návod: Svázání dat s ovládacími prvky v podokně akcí aplikace Word | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Svázání dat s ovládacími prvky v podokně akcí aplikace Word | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c53c8ba65c07f2c488f33835cb045524069e3285
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d84c42e2b51d55cbbb73a7f26d6d6853ff7a3392
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-data-to-controls-on-a-word-actions-pane"></a>Návod: Vazba dat s ovládacími prvky v podokně akcí aplikace Word
   Tento návod ukazuje vazba dat s ovládacími prvky v podokně akcí aplikace Word. Ovládací prvky ukazují hlavní a podrobný vztah mezi tabulkami v databázi systému SQL Server.  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
 -   Přístup na server s ukázková databáze Northwind SQL Server.  
   

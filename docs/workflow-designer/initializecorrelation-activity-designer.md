@@ -1,5 +1,5 @@
 ---
-title: "Návrhář aktivity InitializeCorrelation | Microsoft Docs"
+title: Návrhář aktivity InitializeCorrelation | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f39f25e7a4cf589b43fcf3b3f84b9784241961
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 72778ac3757cc259019df5fb5616115f41ce0c34
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="initializecorrelation-activity-designer"></a>Návrhář aktivity InitializeCorrelation
 **InitializeCorrelation** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.InitializeCorrelation> aktivity, která se používá k navázání korelace mezi zprávy před odesílání nebo přijímání je.
@@ -43,7 +43,7 @@ ms.lasthandoff: 03/12/2018
 ## <a name="see-also"></a>Viz také
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [Receive](../workflow-designer/receive-activity-designer.md)
+- [Přijímat](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - [Odeslat](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: "Přijímat Návrhář aktivity | Microsoft Docs"
+title: Přijímat Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8058b13dd488ddca2237056048673529c379256
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 900cf704dd29c78a1ddc8de7dce4940d8ba09fae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="receive-activity-designer"></a>Přijímat Návrhář aktivity
 **Receive** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.Receive> aktivity. A <xref:System.ServiceModel.Activities.Receive> aktivitu, která obdrží zprávu, která může být buď předdefinovaný typ, jako je aktivita <xref:System.ServiceModel.Channels.Message>, <xref:System.IO.Stream> nebo <xref:System.Xml.Linq.XElement>, nebo kontrakt dat definované aplikací, kontrakt zprávy nebo XML třídu, která může serializovat.
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje popisný název <xref:System.ServiceModel.Activities.Receive> aktivity. Výchozí hodnota je Receive.<br /><br /> I když používání jiné než výchozí hodnota popisný <xref:System.Activities.Activity.DisplayName%2A> striktně nevyžaduje, je osvědčeným postupem použít tuto hodnotu.|
-|<xref:System.ServiceModel.Activities.Receive.OperationName%2A>|True|Určuje název služby operace implementované to <xref:System.ServiceModel.Activities.Receive> aktivity. Tato vlastnost se používá pro konstrukci výchozí hodnota **akce** vlastnost Pokud **akce** není explicitně nastavena vlastnost.|
+|<xref:System.ServiceModel.Activities.Receive.OperationName%2A>|Hodnota TRUE|Určuje název služby operace implementované to <xref:System.ServiceModel.Activities.Receive> aktivity. Tato vlastnost se používá pro konstrukci výchozí hodnota **akce** vlastnost Pokud **akce** není explicitně nastavena vlastnost.|
 |<xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A>|False|Určuje název kontraktu služby. Tato vlastnost slouží k operacím služby skupiny do kontrakty jednotlivých služeb. Všechny <xref:System.ServiceModel.Activities.Receive> aktivity, které mají stejnou <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> jsou seskupené do stejné kontrakt služby (WSDL Port typ). Výchozí hodnota je plně kvalifikovaný název CLR aktivity nejvyšší úrovně (uživatel root).|
 |<xref:System.ServiceModel.Activities.Receive.Content%2A>|False|Určuje obsah zprávy nebo parametr přijímat. Může být buď <xref:System.ServiceModel.Activities.ReceiveMessageContent> aktivity nebo <xref:System.ServiceModel.Activities.ReceiveParametersContent> aktivity. Upravit tuto vlastnost tak, že kliknete na tlačítko se třemi tečkami vedle položky **obsahu** pole nebo vlastnost mřížky kliknutím na **definovat...**  tlačítko vedle položky **obsahu** v popisek **Receive** aktivity plochu návrháře. Obě zobrazení **obsahu definice** dialogové okno. Další informace o tom, jak pomocí tohoto políčka, najdete v článku [dialogové okno obsahu definice](../workflow-designer/content-definition-dialog-box.md) tématu.|
 |<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>|False|Určuje korelací mezi <xref:System.ServiceModel.Activities.Receive> aktivity v operací služby pracovního postupu s <xref:System.ServiceModel.MessageQuerySet> objektu. Klikněte na tlačítko se třemi tečkami vedle <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> vlastnost v mřížce vlastnosti otevřete **CorrelatesOn definice** dialogové okno. Další informace o použití tohoto dialogového okna najdete v tématu [dialogové okno obsahu definice](../workflow-designer/content-definition-dialog-box.md) tématu.|
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/12/2018
 |<xref:System.ServiceModel.Activities.Receive.KnownTypes%2A>|False|Určuje kolekci známé typy pro operace služby, které jsou implementované to <xref:System.ServiceModel.Activities.Receive> aktivity. Tato vlastnost by měla používá ve spojení s <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> vlastnost nastavena na hodnotu <xref:System.Runtime.Serialization.DataContractSerializer>. Je ignorována, pokud <xref:System.Xml.Serialization.XmlSerializer> se používá.<br /><br /> Klikněte na tlačítko se třemi tečkami vedle položky **KnownTypes** pole v mřížce vlastnosti se zobrazí **Editor kolekce typ** dialogové, pomocí kterého můžete přidat relevantní typy. Další informace o použití tohoto políčka, najdete v článku [dialogové okno Editor kolekcí typu](../workflow-designer/type-collection-editor-dialog-box.md) tématu.|
 |<xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A>|False|Určuje, <xref:System.Net.Security.ProtectionLevel> pro zprávu.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> znamená jenom ověřování.<br />2. <xref:System.Net.Security.ProtectionLevel> znamená podepisování dat. k zajištění integrity dat přenášených.<br />3. <xref:System.Net.Security.ProtectionLevel> znamená šifrování a podepisování dat k zajištění důvěrnosti a integrity dat přenášených.|
 |<xref:System.ServiceModel.Activities.Receive.SerializerOption%2A>|False|Určuje typ serializátoru pro operace služby, které jsou implementované <xref:System.ServiceModel.Activities.Receive> aktivity. Výchozí hodnota je <xref:System.Runtime.Serialization.DataContractSerializer>, který serializuje a deserializuje instance typu do datového proudu XML nebo dokument, který používá zadaný datový kontrakt. <xref:System.Xml.Serialization.XmlSerializer> Lze také pokud přes XML je potřeba další řízení.|
-|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Určuje akci záhlaví zprávy. Pokud není explicitně nastavena, jeho výchozí hodnota je: https://tempuri.org/ {obor názvů kontraktu služby} / {název kontraktu služby} / {operaci name}.|
+|<xref:System.ServiceModel.Activities.Receive.Action%2A>|False|Určuje akci záhlaví zprávy. Pokud není explicitně nastavena, jeho výchozí hodnota je: https://tempuri.org/{service smlouvy obor názvů} / {název kontraktu služby} / {operaci name}.|
 
 ## <a name="see-also"></a>Viz také
 

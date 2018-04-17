@@ -1,13 +1,10 @@
 ---
-title: "Visual Studio Tools for Office Runtime instalace scénáře | Microsoft Docs"
-ms.custom: 
+title: Visual Studio Tools for Office Runtime instalace scénáře | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, installation scenarios
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9c63f5e4cef88ed927326b69f1fa389e34b06c8b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: f5671f078d6650842c704437ce04a625a4fcb944
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Scénáře instalace nástrojů Visual Studio Tools for Office runtime
   Můžete nainstalovat sadu Visual Studio 2010 Tools for Office Runtime třemi způsoby:  
@@ -40,10 +37,10 @@ ms.lasthandoff: 01/10/2018
   
  V následující tabulce jsou součástí modulu runtime, které jsou nainstalované ve výchozím nastavení v každém scénáři instalace modulu runtime. Další informace o scénářích se zobrazí později.  
   
-|Scénáře instalace modulu runtime|Zavaděč řešení Office|Rozšíření Office pro rozhraní .NET Framework 3.5|Office rozšíření pro[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Office rozšíření pro[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
+|Scénáře instalace modulu runtime|Zavaděč řešení Office|Rozšíření Office pro rozhraní .NET Framework 3.5|Office rozšíření pro [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Office rozšíření pro [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|  
 |-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
 |S [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] a novější|Ano|Ano, pokud rozhraní .NET Framework 3.5 je již nainstalován.|Ano|Ano|  
-|S[!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Ano|Ano, pokud rozhraní .NET Framework 3.5 je již nainstalován.|Ne|Ne|  
+|S [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Ano|Ano, pokud rozhraní .NET Framework 3.5 je již nainstalován.|Ne|Ne|  
 |Office 2010 Service Pack 1 (SP1) nebo novější|Ano|Ano, pokud rozhraní .NET Framework 3.5 je již nainstalován.|Ano, pokud [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] je již nainstalován.|Ne|  
 |S modulem runtime redistributable|Ano|Ano, pokud rozhraní .NET Framework 3.5 je již nainstalován.|Ano, pokud [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] je již nainstalován.|Ano, pokud [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] je již nainstalován.|  
   

@@ -1,26 +1,23 @@
 ---
-title: "Výhodou Azure komunity předplatné sady Visual Studio | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/8/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Azure Community benefit included in selected Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: fb8c318d665c5c8b25a245ff304c5b2b9341a1ef
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Výhodou Azure komunity předplatné sady Visual Studio | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/08/2018
+ms.topic: Get-Started-Article
+description: Další informace o benefitech Azure komunity součástí vybrané odběry Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 76384697d6bc0b56f8d7a1664b0c9fa72812f280
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-community"></a>Azure komunity  
 
-## <a name="overview"></a>Přehled 
-Nápovědu přímo od týmu Azure v rámci vyberte fóra podpory prostřednictvím Azure komunity.
-
-Výhodou komunity Azure poskytuje přístup ke kolekci fóra zaměřené na témata související s Azure.  
+Nápovědu přímo od týmu Azure v rámci vyberte fóra podpory prostřednictvím Azure komunity.  Výhodou komunity Azure poskytuje přístup ke kolekci fóra zaměřené na témata související s Azure.  
 
 |                                       |                                                    |                                      |
 |---------------------------------------|----------------------------------------------------|--------------------------------------|
@@ -29,38 +26,14 @@ Výhodou komunity Azure poskytuje přístup ke kolekci fóra zaměřené na tém
 | [Azure Storage](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuredata&filter=alltypes&sort=lastpostdesc)                         | [Azure API Management](https://social.msdn.microsoft.com/Forums/home?forum=azureapimgmt&filter=alltypes&sort=lastpostdesc)                               | [Azure DevTest Labs](https://social.msdn.microsoft.com/forums/home?forum=AzureDevTestLabs&filter=alltypes&sort=lastpostdesc)                   |
 | [Azure HDInsight](https://social.msdn.microsoft.com/Forums/azure/home?forum=hdinsight&filter=alltypes&sort=lastpostdesc)                       | [Weby Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazurewebsitespreview&filter=alltypes&sort=lastpostdesc)                                     | [Azure Mobile Apps](https://social.msdn.microsoft.com/forums/home?forum=azuremobile&filter=alltypes&sort=lastpostdesc)                    |
 | [Azure Multi-Factor Authentication](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazureactiveauthentication&filter=alltypes&sort=lastpostdesc)     | [Ceny a fakturace](https://social.msdn.microsoft.com/Forums/azure/home?forum=windowsazurepurchasing&filter=alltypes&sort=lastpostdesc)                                | [Azure skriptování a nástroje příkazového řádku](https://social.msdn.microsoft.com/forums/home?forum=azurescripting&filter=alltypes&sort=lastpostdesc) |
-| [Portál pro správu Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Azure Backup](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure zásobníku](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
+| [Portál pro správu Azure](https://social.msdn.microsoft.com/Forums/home?forum=windowsazuremanagement&filter=alltypes&sort=lastpostdesc)               | [Zálohování Azure](https://social.msdn.microsoft.com/forums/home?forum=windowsazureonlinebackup&filter=alltypes&sort=lastpostdesc)                                       | [Azure zásobníku](https://social.msdn.microsoft.com/forums/home?forum=AzureStack&filter=alltypes&sort=lastpostdesc)                          |
 | [Virtuální počítače Azure](https://social.msdn.microsoft.com/Forums/home?forum=WAVirtualMachinesforWindows&filter=alltypes&sort=lastpostdesc)                | [Azure Site Recovery](https://social.msdn.microsoft.com/forums/home?forum=hypervrecovmgr&filter=alltypes&sort=lastpostdesc)                                | [Azure Marketplace](https://social.msdn.microsoft.com/forums/home?forum=DataMarket&filter=alltypes&sort=lastpostdesc)                    |
 
-### <a name="eligibility"></a>Podmínky
-| Úrovni předplatného / Program                                 | Výhody               | Obnovitelných?                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise roční                              | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise každý měsíc                             | Není k dispozici         |                                                                    |
-| Visual Studio Professional Standard                          | Zahrnuté              | Ano                                                                |
-| Visual Studio Professional roční                            | Zahrnuté              | Ano                                                                |
-| Visual Studio Professional každý měsíc                           | Není k dispozici         |                                                                    |
-| Visual Studio Test Pro                                       | Zahrnuté              | Ano                                                                |
-| MSDN platformy                                               | Zahrnuté              | Ano                                                                |
-| Visual Studio Dev Essentials                                 | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise - FTE                               | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise - MPN                               | Není k dispozici         |                                                                    |
-| Visual Studio Professional - MPN                             | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – MVP/VP                            | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – Představte si (Premium)                 | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – BizSpark                          | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – MCT Software a služby           | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – MCT softwaru & vývojářů Services | Není k dispozici         |                                                                    |
-<sup>1</sup>*zahrnuje není pro prodej (NFR), cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP)*   
 
-Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
 
 ## <a name="activation-steps"></a>Postup aktivace
 Začínáme s Azure komunity je snadné.  
-1. Přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Najděte dlaždici komunity Azure v části Podpora a klikněte na **získání nápovědy** odkaz. 
 
@@ -74,8 +47,21 @@ Začínáme s Azure komunity je snadné.
 
    ![Příklad Azure komunity](_img/vs-azure-community/vs-azure-community-example.png)
 
-## <a name="faq"></a>Nejčastější dotazy
-*Kontrola aktualizací*
+## <a name="eligibility"></a>Podmínky
+Dostupnost benefitu komunity Azure závisí na úrovni vašeho předplatného, jak je uvedeno níže:
+
+| Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardní, roční cloud)   | VL, Azure, maloobchodní   | Jeden rok      |  Ano          |
+| Visual Studio Professional (standardní, roční cloud)  | VL, Azure, maloobchodní                                      | Jeden rok                                                           |  Ano          |
+| Visual Studio Test Professional (standardní)                         | VL, prodejní                                              | Jeden rok                                             |  Ano          |
+| MSDN platformy (standardní)                                          | VL, prodejní                                              |Jeden rok                                              |  Ano          |
+| Visual Studio Enterprise (měsíční cloudu), Visual Studio Professional (měsíční cloudu), NFR<sup>1</sup>                                          | Všechny                                              |Není k dispozici                                              |  Ne          |
+| Visual Studio Dev Essentials                                        | Není k dispozici                                              |Není k dispozici                                              |  Ne          |
+|
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft FTE, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP), BizSpark, představte si, Microsoft Certified Trainer (MCT)* 
+
+Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
 
 ## <a name="support-resources"></a>Podpora prostředky
 -  Další zdroje informací komunity Azure naleznete na adrese komunitou Azure [stránku podpory](https://azure.microsoft.com/support/forums/).

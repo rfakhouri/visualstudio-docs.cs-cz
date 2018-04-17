@@ -1,13 +1,10 @@
 ---
-title: "Aktualizace vlastních nastavení pásu karet v projektech Office při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5 | Microsoft Docs"
-ms.custom: 
+title: Aktualizace vlastních nastavení pásu karet v projektech Office při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d3c2e834b3a618bf033ef7f37ca8bbac7d0efcf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 98c5dee34fd40506289cf4a9f31488c3acc710ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Aktualizace vlastních nastavení pásu karet v projektech Office při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Pokud projekt obsahuje přizpůsobení pásu karet, která byla vytvořena pomocí **pásu karet (vizuálního návrháře)** položek projektu, pokud rozhraní target framework se změní na, je třeba provést následující změny do projektu kódu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo později.  
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  V projektech Visual Basic, vyhledejte `ThisRibbonCollection` třída na konci souboru. Upravte deklaraci této třídy tak, aby ho už nebude dědit z Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection.  
   
-##  <a name="ribboncontrols"></a>Vytváření instancí ovládacích prvků pásu karet  
+##  <a name="ribboncontrols"></a> Vytváření instancí ovládacích prvků pásu karet  
  Je třeba upravit kód, který dynamicky vytvoří ovládacích prvků pásu karet. V projektech cílených pro rozhraní .NET Framework 3.5 ovládacích prvků pásu karet jsou třídy, které můžete vytvořit instanci přímo v některých scénářích. V projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, jsou tyto prvky rozhraní, které nelze vytvořit instanci přímo. Ovládací prvky musí vytvořit pomocí metody, které jsou poskytovány <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objektu.  
   
  Existují dva způsoby pro přístup <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objektu:  
@@ -151,14 +148,14 @@ ms.lasthandoff: 01/10/2018
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|  
   
-##  <a name="ribbonevents"></a>Zpracování událostí pásu karet  
+##  <a name="ribbonevents"></a> Zpracování událostí pásu karet  
  Je třeba upravit kód, který zpracovává události ovládacích prvků pásu karet. V projektech cílených pro rozhraní .NET Framework 3.5, tyto události jsou zpracovávány obecná <xref:System.EventHandler%601> delegovat. V projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, tyto události se teď požádat o další delegáti.  
   
  Následující tabulka uvádí události pásu karet a delegáti, které jsou spojeny s nimi v projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější.  
   
 |Událost|Delegát pro použití v [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a novější projekty|  
 |-----------|---------------------------------------------------------------------------------------------------|  
-|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>událost v generovaná třída pásu karet|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
+|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> událost v generovaná třída pásu karet|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|  
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|  
   

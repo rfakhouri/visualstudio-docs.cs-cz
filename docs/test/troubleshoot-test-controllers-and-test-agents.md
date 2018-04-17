@@ -1,7 +1,7 @@
 ---
-title: "Řešení potíží s testovacích Kontrolérů a testovacích agentů v sadě Visual Studio | Microsoft Docs"
+title: Řešení potíží s testovacích Kontrolérů a testovacích agentů v sadě Visual Studio | Microsoft Docs
 ms.date: 10/20/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 37ff6e82c61e55dc162287ce944008cc09e37204
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie řešení potíží s testovacími kontroléry a testovacími agenty v zátěžových testech
 
@@ -69,7 +69,7 @@ Tento článek popisuje některé běžné problémy, ke kterým může dojít p
 
 -   **QTController.exe.config** Conttoller služby
 
--   **QTAgentService.exe.config** Agent service
+-   **QTAgentService.exe.config** Služba agenta
 
 -   **QTDCAgent (32).exe.config** proces adaptér dat agenta pro 32bitové architektury.
 
@@ -137,4 +137,4 @@ Tento článek popisuje některé běžné problémy, ke kterým může dojít p
 
 ## <a name="see-also"></a>Viz také
 
-- [Testovací kontrolery a testovací agenti](../test/configure-test-agents-and-controllers-for-load-tests.md)
+- [Kontrolery testů a testovací agenti](../test/configure-test-agents-and-controllers-for-load-tests.md)

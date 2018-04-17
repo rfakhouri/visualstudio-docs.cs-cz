@@ -1,28 +1,26 @@
 ---
-title: "Výběr a měny v prostředí IDE | Microsoft Docs"
-ms.custom: 
+title: Výběr a měny v prostředí IDE | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
 - selection, Visual Studio IDE
 - IDE, currency
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
-caps.latest.revision: "14"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e46c18f424130a29085aaccad19328c9f86682f6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf8c58cb08f82b10970424600843b0fedcf477fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Výběr a měny v prostředí IDE
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) udržuje informace o uživatelů aktuálně vybrané objekty pomocí výběr *kontextu*. S kontextem výběr VSPackages lze použít při měna sledování dvěma způsoby:  
@@ -38,7 +36,7 @@ ms.lasthandoff: 12/22/2017
 |-------------|-----------------|  
 |Aktuální hierarchie|Obvykle aktuálním projektu. hierarchie aktuální hodnota NULL znamená, že je aktuální řešení jako celek.|  
 |Aktuální ItemID|Vybrané položky v rámci aktuální hierarchii; Pokud existuje více výběrů, v okně projektu, může být více aktuální položky.|  
-|Aktuální`SelectionContainer`|Obsahuje jeden nebo více objektů, pro které by měl v okně Vlastnosti zobrazí vlastnosti.|  
+|Aktuální `SelectionContainer`|Obsahuje jeden nebo více objektů, pro které by měl v okně Vlastnosti zobrazí vlastnosti.|  
   
  Kromě toho prostředí udržuje dva globálních seznamů:  
   

@@ -1,12 +1,10 @@
 ---
-title: "Návod: Zobrazení vlastních podoken úloh s e-mailových zpráv v aplikaci Outlook | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Zobrazení vlastních podoken úloh s e-mailových zpráv v aplikaci Outlook | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], displaying with e-mail messages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ad77a685f3100533f790ec6ae82cd11201128902
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e1fd5acf3ea2c4c6d12931b04f6360ada697378f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook"></a>Návod: Zobrazení vlastních podoken úloh s e-mailovými zprávami v aplikaci Outlook
   Tento návod ukazuje, jak zobrazit jedinečný instanci vlastního podokna úloh s každou e-mailová zpráva, která je vytvořit nebo otevřít. Uživatele můžete zobrazit nebo skrýt podokno úloh pomocí tlačítka na pásu karet každou e-mailové zprávy.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Vytvoření **doplněk aplikace Outlook** projektu s názvem **OutlookMailItemTaskPane**. Použití **doplněk aplikace Outlook** šablona projektu. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otevře se **ThisAddIn.cs** nebo **ThisAddIn.vb** kód soubor a přidá **OutlookMailItemTaskPane** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se **ThisAddIn.cs** nebo **ThisAddIn.vb** kód soubor a přidá **OutlookMailItemTaskPane** projektu do **Průzkumníku řešení**.  
   
 ## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Návrh uživatelského rozhraní vlastního podokna úloh  
  Neexistuje žádné vizuálního návrháře pro vlastní podokna úloh, ale můžete navrhnout uživatelského ovládacího prvku pomocí uživatelského rozhraní mají. V podokně úloh v této doplňku VSTO má jednoduchého uživatelského rozhraní, která obsahuje <xref:System.Windows.Forms.TextBox> ovládacího prvku. Dále v tomto návodu přidáte vlastního podokna úloh uživatelského ovládacího prvku.  

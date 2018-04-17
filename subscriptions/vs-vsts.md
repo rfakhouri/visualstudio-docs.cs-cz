@@ -1,19 +1,19 @@
 ---
 title: Služby VSTS výhody pro předplatitele sady Visual Studio | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Understand how you can use Visual Studio Team Services (VSTS) as a Visual Studio subscriber.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 7fbfdd5a23196afeeb24b2ce380fce44d457fb99
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Pochopte, jak můžete použít Visual Studio Team Services (VSTS) jako odběratel Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio Team Services (služby VSTS) výhody pro předplatitele sady Visual Studio
 
@@ -26,12 +26,14 @@ Při přihlašování do služby VSTS buď pomocí identity, která jste použil
 ## <a name="eligibility"></a>Podmínky
 | Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (standardní, roční cloud, měsíční cloudu)   | VL, Azure, Retail, MPN, BizSpark, NFR<sup>1</sup>, FTE  | Základní, nástroje Test Manager správy balíčků hostovanou na vlastním CI/CD       |  Ano          |
-| Visual Studio Professional (standardní, roční cloud, měsíční cloudu) | VL, Azure, maloobchodní                                       | Základní                                                            |  Ano          |
-| Visual Studio Test Professional (Standard)                         | VL, prodejní                                              | Basic, nástroje Test Manager                                              |  Ano          |
+| Visual Studio Enterprise (standardní, roční cloud, měsíční cloudu)   | VL, Azure, prodejní, vybrané NFR<sup>1</sup>, FTE  | Základní, nástroje Test Manager správy balíčků hostovanou na vlastním CI/CD       |  Ano          |
+| Visual Studio Professional (standardní, roční cloud, měsíční cloudu) | VL, Azure, prodejní,                                        | Základní                                                            |  Ano          |
+| Visual Studio Test Professional (standardní)                         | VL, prodejní                                              | Basic, nástroje Test Manager                                              |  Ano          |
 | MSDN platformy (standardní)                                          | VL, prodejní                                              | Basic, nástroje Test Manager                                              |  Ano          |
 
-<sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft s hodnotou partnera (MVP), oblast ředitel (RD) a Visual Studio Industry Partner (VSIP)*
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Microsoft s hodnotou partnera (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), BizSpark, MCT softwaru a služeb Developer.   Vyloučí: MCT softwaru a služeb, představte si.*
+
+
 
 Další informace o funkcích služby VSTS:
 - [Základy](https://www.visualstudio.com/team-services/compare-features/)

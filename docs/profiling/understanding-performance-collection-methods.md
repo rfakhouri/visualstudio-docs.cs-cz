@@ -1,27 +1,24 @@
 ---
-title: "Principy metody kolekce údajů o výkonu | Microsoft Docs"
-ms.custom: 
+title: Principy metody kolekce údajů o výkonu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.wizard.methodpage
 helpviewer_keywords:
 - Profiling Tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be2057813b08c702fb6f4ca3c18f9bf28c07409f
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 9950f5a750a60c2f8c9e2c17da98a0e7da56358b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-performance-collection-methods"></a>Principy metody kolekce údajů o výkonu
 
@@ -40,7 +37,7 @@ Nástroje pro profilaci sady Visual Studio poskytují pět metod, které můžet
 
 Pomocí některé z metod profilace můžete shromažďovat další data, například čítače výkonu softwaru a hardwaru. Další informace najdete v tématu [shromažďování další údaje o výkonu](../profiling/collecting-additional-performance-data.md).
 
-## <a name="sampling">Vzorkování</a>
+## <a name="sampling"></a> Vzorkování
 
 Metoda profilování vzorkování shromažďuje statistická data o práci, kterou aplikace provede během spuštění profilace. Metoda vzorkování je nenáročná a má malý vliv na provádění metod aplikace.
 

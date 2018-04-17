@@ -1,23 +1,21 @@
 ---
-title: "Vytvoření sestavy z příkazového řádku profilaci Basic | Microsoft Docs"
-ms.custom: 
+title: Vytvoření sestavy z příkazového řádku profilaci Basic | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8915f71d4dcb84a481c0223a64afbddf9b0c722a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 23f807892e769e56cbc1caf6f9a6371ed5116924
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Vytváření základních sestav profilace z příkazového řádku
 Toto téma popisuje základní vsperfreport – příkazy, které generování sestav hodnot oddělených čárkami (.csv) z .vsp nebo .vsps profilace datový soubor. Popis všech možností sestav najdete v tématu [vsperfreport –](../profiling/vsperfreport.md).  
@@ -45,7 +43,7 @@ Toto téma popisuje základní vsperfreport – příkazy, které generování s
 |**Counter**|Seznamy profilace značky a hodnoty čítače výkonu systému Windows, které byly shromážděny během vytváření profilu spustit.|-   [Zobrazení značek](../profiling/marks-view.md)|  
 |**IP**|Seznamy profilace dat podle instrukcí.|-   [Vzorkování dat](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Data kolizí](../profiling/instruction-pointers-ips-view-contention-data.md)|  
 |**Životnosti**|Uvádí dobu trvání přidělené objektů.|-   [Zobrazení doby života objektu](../profiling/object-lifetime-view.md)|  
-|**Řádek**|Seznamy profilace datový zdroj kódu řádku.|-   [Vzorkování dat](../profiling/lines-view-sampling-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Data kolizí](../profiling/lines-view-contention-data.md)|  
+|**řádek**|Seznamy profilace datový zdroj kódu řádku.|-   [Vzorkování dat](../profiling/lines-view-sampling-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Data kolizí](../profiling/lines-view-contention-data.md)|  
 |**Záhlaví**|Profilace informaci hlavičky dat souboru.|Konkrétní do souboru.|  
 |**Mark**|Profilace značky se shromažďují v profilaci spustit.|-   [Zobrazení značek](../profiling/marks-view.md)|  
 |**Modul**|Seznamy profilace data pro moduly.|-   [Vzorkování dat](../profiling/modules-view-sampling-data.md)<br />-   [Data instrumentace](../profiling/modules-view-instrumentation-data.md)<br />-   [Data vzorkování paměti .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Data instrumentace paměti .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Data kolizí](../profiling/modules-view-contention-data.md)|  

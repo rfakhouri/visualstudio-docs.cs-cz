@@ -1,24 +1,23 @@
 ---
-title: "Vytváření doplňků VSTO pro Office pomocí sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Vytváření doplňků VSTO pro Office pomocí sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9a1b95c057163f3a90c8277744d1ec39a2f24cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 76a81b61c585c0a35b5b535988e559f5e045da13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Vytváření doplňků VSTO pro Office s použitím sady Visual Studio
   Sada Microsoft Office developer tools v sadě Visual Studio slouží k vytvoření aplikace rozhraní .NET Framework, které rozšiřují Office. Tyto aplikace se také nazývají *řešení pro systém Office*.  
@@ -35,7 +34,7 @@ ms.lasthandoff: 01/10/2018
 -   [Microsoft Office Developer Center](http://go.microsoft.com/fwlink/?LinkId=83467) obsahuje odkazy na technické články, ukázky kódu, soubory ke stažení, komunity informace, podpory a další dokumentaci o přizpůsobení Office a obchodních aplikací Office (OBAs ).  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Obsahuje odkazy na informace o tom, jak nakonfigurovat vývojovém počítači k vytvoření řešení pro systém Office, jak začít vytváření řešení pro systém Office a co je nového pro vývoj pro Office v sadě Visual Studio.  
   
  [Upgrade a migrace řešení pro systém Office](../vsto/upgrading-and-migrating-office-solutions.md)  
@@ -86,13 +85,13 @@ ms.lasthandoff: 01/10/2018
  [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)  
  Obsahuje odkazy na témata, které poskytují podrobné pokyny pro provádění běžných úloh a ukázkové aplikace.  
   
- [Obecné referenční informace &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Obecné referenční informace &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
  Obsahuje odkazy na podrobné informace o primární zprostředkovatel komunikace s objekty sestavení sady Office, manifesty, prvky uživatelského rozhraní a chybové zprávy.  
   
- [Spravovaný odkaz &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
+ [Řízené Reference &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
  Poskytuje odkazy na informace o rozhraní API obory názvů a typy, které se používají v Office projektů cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Referenční dokumentace rozhraní API o obory názvů a typy, které se používají v projektech Office cílených na rozhraní .NET Framework 3.5, najdete v následující části odkaz v dokumentaci k sadě Visual Studio 2008: [2007 Reference spravované systému](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
- [Referenční dokumentace nespravovaného rozhraní API &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
+ [Nespravovaná referenční dokumentace rozhraní API &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  Obsahuje odkazy na informace o rozhraní modelu COM, které můžete použít k provedení takových akcí jako zatížení a uvolnit spravovaný doplňků VSTO v aplikacích Office.  
   
 ## <a name="related-sections"></a>Související oddíly  

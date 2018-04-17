@@ -1,12 +1,10 @@
 ---
-title: "Office Ukázky a návody vývoje | Microsoft Docs"
-ms.custom: 
+title: Office Ukázky a návody vývoje | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - examples [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: d13c91bebf92632e0c53f4eda9d2b771f37f1949
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f70b2f786453bf194a6287d7254363d45c41c49b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Ukázky a návody k vývoji pro systém Office
   Tato část obsahuje ukázkové aplikace, příklad kódu a podrobné návody, které ilustrují syntaxi, struktura a techniky sloužící k vytvoření řešení Microsoft Office.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 |Téma|Popis|  
 |-----------|-----------------|  
-|[Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Obsahuje odkazy na informace o instalaci, šablony projektů, primární spolupracující sestavení Office a co je nového v vývoj pro Office.|  
+|[Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Obsahuje odkazy na informace o instalaci, šablony projektů, primární spolupracující sestavení Office a co je nového v vývoj pro Office.|  
 |[Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Popisuje jak spravovaného kódu pracovní řešení Office z pohledu vývojáře a koncového uživatele a obsahuje informace o tom, jak spravované kód funguje s dokumenty Office a aplikace.|  
 |[Běžné úlohy při programování pro systém Office](../vsto/common-tasks-in-office-programming.md)|Uvádí nejčastější dotazy k programování s vývoj pro Office v sadě Visual Studio a nabízí odkazy na témata, která pomůžou řešit běžné problémy.|  
 |[Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)|Obsahuje odkazy na informace o tom, jak vytvářet řešení systému Microsoft Office a o roli sestavení v řešení.|  

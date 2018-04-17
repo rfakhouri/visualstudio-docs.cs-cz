@@ -1,12 +1,10 @@
 ---
-title: "Postupy: aktualizace textu záložek prostřednictvím kódu programu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: aktualizace textu záložek prostřednictvím kódu programu | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Bookmark control, updating contents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: af3252f87bd3c7d6a6c6e75ae85cea4cd75bd1e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d041ff303a27d4eefee4f36776d5c5eda7c16b32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Postupy: Aktualizace textu záložek prostřednictvím kódu programu
   Můžete vložit text do záložku zástupný symbol v dokumentu aplikace Microsoft Office Word tak, aby text můžete načíst později, nebo nahrazení textu v záložky. Pokud vyvíjíte přizpůsobení na úrovni dokumentu, můžete také aktualizovat v text <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek, který je vázaný na data. Další informace najdete v tématu [vazby dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md).  
@@ -33,11 +32,11 @@ ms.lasthandoff: 01/10/2018
   
 -   A <xref:Microsoft.Office.Tools.Word.Bookmark> hostování ovládacího prvku.  
   
-     <xref:Microsoft.Office.Tools.Word.Bookmark>ovládací prvky rozšíření nativní <xref:Microsoft.Office.Interop.Word.Bookmark> objekty povolením datové vazby a vystavení události. Další informace o hostitelských ovládacích prvcích najdete v tématu [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  
+     <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvky rozšíření nativní <xref:Microsoft.Office.Interop.Word.Bookmark> objekty povolením datové vazby a vystavení události. Další informace o hostitelských ovládacích prvcích najdete v tématu [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  
   
 -   Nativní <xref:Microsoft.Office.Interop.Word.Bookmark> objektu.  
   
-     <xref:Microsoft.Office.Interop.Word.Bookmark>objekty nemají vazby funkcí události nebo data.  
+     <xref:Microsoft.Office.Interop.Word.Bookmark> objekty nemají vazby funkcí události nebo data.  
   
  Přiřadíte-li text na záložku, chování se liší <xref:Microsoft.Office.Interop.Word.Bookmark> a <xref:Microsoft.Office.Tools.Word.Bookmark>. Další informace najdete v tématu [ovládacího prvku záložek](../vsto/bookmark-control.md).  
   

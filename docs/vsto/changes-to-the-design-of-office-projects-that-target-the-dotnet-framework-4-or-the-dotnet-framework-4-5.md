@@ -1,12 +1,10 @@
 ---
-title: "Změny v návrhu projektů Office cílených rozhraní .NET Framework 4 nebo .NET Framework 4.5 | Microsoft Docs"
-ms.custom: 
+title: Změny v návrhu projektů Office cílených rozhraní .NET Framework 4 nebo .NET Framework 4.5 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - what's new [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 059d259b669e63c26759782010be7ff78691ffc3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2c6f050e98665d55c7a64261131cef7ba31c684f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>Změny v návrhu projektů Office cílených na rozhraní .NET Framework 4 nebo .NET Framework 4.5
   Počínaje [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)], Visual Studio zavedená některé změny v návrhu projektů Office cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější. Pokud jste obeznámeni s projekty Office v předchozích verzích sady Visual Studio, byste měli mít věděli o těchto změnách před vyvíjet projektech Office cílených rozhraní .NET Framework 4.0 nebo novější verzí. Ve výchozím nastavení všechny projekty, které vytvoříte pomocí sady Visual Studio 2013 nebo novější cílové rozhraní .NET Framework 4.0 nebo novější.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
 |Došlo ke změně syntaxe getvstoobject – a hasvstoobject – metody|Při přístupu na nativní objekty z primární spolupracující sestavení (PIA) nebo dostanete tyto metody na objekt, který je vrácen vlastností Globals.Factory ve vašem projektu, je nutné předat objekt Globals.Factory do těchto metod. Další informace najdete v tématu [aktualizace projektů Excel a Word, při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Události obsahu ovládací prvky aplikace Word jsou přidruženy k nové delegáti.|Je třeba upravit kód, který zpracovává události obsahu ovládací prvky aplikace Word k určení nového delegáti. Další informace najdete v tématu [aktualizace projektů Excel a Word, při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
 |Objekt OLE a OLEControl třídy byly přejmenovány.|Je třeba upravit kód, který používá instancemi těchto tříd používat <xref:Microsoft.Office.Tools.Excel.ControlSite> nebo <xref:Microsoft.Office.Tools.Word.ControlSite> objekty místo. Další informace najdete v tématu [aktualizace projektů Excel a Word, při migraci na rozhraní .NET Framework 4 nebo .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).|  
-|Hostování tříd položek, jako například `ThisWorkbook`, `Sheet`  *n* , `ThisDocument`, a `ThisAddIn`, nadále poskytovat žádné metody Dispose, které můžete přepsat.|Musíte přesunout žádný kód v přepsání metody Dispose k obslužné rutině událostí vypnutí ve třídě hostitele položky, například `ThisAddIn_Shutdown`a odeberte přepsání metody Dispose z vaší třídy položky hostitele.|  
+|Hostování tříd položek, jako například `ThisWorkbook`, `Sheet` *n*, `ThisDocument`, a `ThisAddIn`, nadále poskytovat žádné metody Dispose, které můžete přepsat.|Musíte přesunout žádný kód v přepsání metody Dispose k obslužné rutině událostí vypnutí ve třídě hostitele položky, například `ThisAddIn_Shutdown`a odeberte přepsání metody Dispose z vaší třídy položky hostitele.|  
   
 ## <a name="see-also"></a>Viz také  
  [Migrace řešení Office na rozhraní .NET Framework 4 nebo novější](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)   

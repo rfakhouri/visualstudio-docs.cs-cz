@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vložení dat do sešitu na serveru | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vložení dat do sešitu na serveru | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - workbooks [Office development in Visual Studio], inserting data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 389252ed9457935c86dcaca0ce8a9a5733202d94
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7257094aa0fb29c1b03878f5ac39c3d4f4864022
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-inserting-data-into-a-workbook-on-a-server"></a>Návod: Vložení dat do sešitu na serveru
   Tento návod ukazuje, jak pro vložení dat do datovou sadu, která se uloží do mezipaměti v sešitu aplikace Microsoft Office Excel bez spuštění aplikace Excel pomocí <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídy.  
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 -   Přístup k spuštěnou instanci Microsoft SQL Server nebo Microsoft SQL Server Express, která obsahuje ukázkové databáze AdventureWorksLT k němu připojen. Si můžete stáhnout z databáze AdventureWorksLT [webu CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Další informace o připojení databáze najdete v následujících tématech:  
   
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 8.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **AdventureWorksDataSet** projektu do **Průzkumníku řešení** a otevře **Class1.cs** nebo **Class1.vb** souboru kódu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **AdventureWorksDataSet** projektu do **Průzkumníku řešení** a otevře **Class1.cs** nebo **Class1.vb** souboru kódu.  
   
 9. V **Průzkumníku řešení**, klikněte pravým tlačítkem na **Class1.cs** nebo **Class1.vb**a potom klikněte na **odstranit**. Tento soubor není nutné v tomto návodu.  
   
@@ -144,7 +143,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Ujistěte se, že **vytvoříte nový textový dokument** je vybrána a klikněte na tlačítko **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otevře se **AdventureWorksReport** sešitu v návrháři a přidá **AdventureWorksReport** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se **AdventureWorksReport** sešitu v návrháři a přidá **AdventureWorksReport** projektu do **Průzkumníku řešení**.  
   
 ## <a name="adding-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>Přidání datovou sadu do zdroje dat v projektu sešitu aplikace Excel  
  Než budete moci zobrazit datovou sadu v sešitu aplikace Excel, je nejprve nutno přidat datovou sadu ke zdrojům dat v projektu sešitu aplikace Excel.  
@@ -221,7 +220,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **DataWriter** projektu do **Průzkumníku řešení** a otevře **Program.cs** nebo **Module1.vb** souboru kódu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **DataWriter** projektu do **Průzkumníku řešení** a otevře **Program.cs** nebo **Module1.vb** souboru kódu.  
   
 ## <a name="adding-data-to-the-cached-dataset-by-using-the-console-application"></a>Přidání dat do datové sady v mezipaměti pomocí konzolové aplikace  
  Použití <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> – třída v konzolové aplikaci k naplnění datové sady v mezipaměti v sešitu s daty.  

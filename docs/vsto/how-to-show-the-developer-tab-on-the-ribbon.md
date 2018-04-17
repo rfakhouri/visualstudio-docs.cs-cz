@@ -1,12 +1,10 @@
 ---
-title: "Postupy: zobrazení karty Vývojář na pásu karet | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: zobrazení karty Vývojář na pásu karet | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Developer tab [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b0a4793de32956e3aa3de2965eef15623785716d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 9921c10d8a886eb4051b3d5f3d8392ddc77c2da7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Postupy: Zobrazení karty Vývojář na pásu karet
   Abyste měli přístup **vývojáře** karty na pásu karet aplikace Office, je nutné nakonfigurovat ji zobrazit tuto kartu, protože se zobrazí ve výchozím nastavení. Například musíte zobrazit dané kartě Pokud chcete přidat <xref:Microsoft.Office.Tools.Word.GroupContentControl> k přizpůsobení na úrovni dokumentu ve Wordu.  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
   
      ![Tlačítko Možnosti můžete v aplikaci Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "možnosti tlačítko v aplikaci Outlook 2013 Preview")  
   
-3.  V *ApplicationName***možnosti** dialogovém okně vyberte **přizpůsobení pásu karet** tlačítko.  
+3.  V *ApplicationName *** možnosti** dialogové okno, vyberte **přizpůsobení pásu karet** tlačítko.  
   
      Následující obrázek ukazuje **možnosti** dialogové okno a **přizpůsobení pásu karet** tlačítko v aplikaci Excel 2010. Umístění toto tlačítko je podobný v všechny ostatní aplikace uvedené v části "Platí pro" v horní části tohoto tématu.  
   

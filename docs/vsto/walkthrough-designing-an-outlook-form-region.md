@@ -1,13 +1,10 @@
 ---
-title: "Postupy: Návrh oblasti formuláře aplikace Outlook | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Návrh oblasti formuláře aplikace Outlook | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afe17d19ebe87d34ae4857b1477be6cb3e894bb7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 22d67ffe14b261911d220dfeb64a0204a6a16032
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-designing-an-outlook-form-region"></a>Návod: Návrh oblasti formuláře aplikace Outlook
   Oblasti formuláře vlastní rozšířit standardní nebo vlastní formuláře aplikace Microsoft Office Outlook. V tomto návodu se navrhnout vlastní formulář oblasti, která se zobrazí jako nová stránka v okně Inspector kontaktní položky. Této oblasti formuláře zobrazí mapu každou adresu, která je uvedena získáte, posílejte informace o adresy na Windows Live místní vyhledávací web. Informace o oblasti formuláře najdete v tématu [vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md).  
@@ -49,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)]nebo [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+-   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] nebo [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") video verzi tohoto tématu naleznete v části [Video postupy: Návrh oblasti formuláře aplikace Outlook](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
@@ -159,7 +156,7 @@ ms.lasthandoff: 01/10/2018
     |Typ adresy|Adresa|  
     |------------------|-------------|  
     |**Firmy**|**Svatý hlavní 4567 Buffalo, NY**|  
-    |**Domovské**|**Svatý severní 1234 Buffalo, NY**|  
+    |**domácí**|**Svatý severní 1234 Buffalo, NY**|  
     |**Jiné**|**Svatý hlavní 3456 Seattle, WA**|  
   
 4.  Uložte a zavřete položky kontaktu.  

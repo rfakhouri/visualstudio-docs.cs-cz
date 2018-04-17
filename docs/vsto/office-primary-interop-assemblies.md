@@ -1,12 +1,10 @@
 ---
-title: "Primární spolupracující sestavení Office | Microsoft Docs"
-ms.custom: 
+title: Primární spolupracující sestavení Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office primary interop assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 906100a572170f218a23b1887ab7fddee37251b9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2ab565dfbc4fec21c646aa72b54f3694d99e6a1f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-primary-interop-assemblies"></a>Sestavení primární spolupráce sady Office
   Pokud chcete používat funkce aplikace Microsoft Office z projektu aplikace Office, musíte použít primární spolupracující sestavení (PIA) pro aplikaci. PRIMÁRNÍ povoluje spravovaného kódu k interakci s modelem COM na objekt z aplikace Microsoft Office.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  Další informace o primární spolupracující sestavení najdete v tématu [primární zprostředkovatel komunikace s objekty sestavení](http://msdn.microsoft.com/en-us/b977a8be-59a0-40a0-a806-b11ffba5c080).  
   
-##  <a name="separateassemblies"></a>Jednotlivé primární spolupracující sestavení pro vytváření a spouštění projektů  
+##  <a name="separateassemblies"></a> Jednotlivé primární spolupracující sestavení pro vytváření a spouštění projektů  
  Visual Studio využívá různé sady PIA na vývojovém počítači. Tyto různé sady sestavení jsou v následujících umístěních:  
   
 -   Do složky v adresáři program files.  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
  PIA Office nejsou na počítačích koncových uživatelů se vyžaduje spuštění řešení pro systém Office. Další informace najdete v tématu [návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).  
   
-##  <a name="usingfeatures"></a>Pomocí funkce více aplikace Microsoft Office v jednom projektu  
+##  <a name="usingfeatures"></a> Pomocí funkce více aplikace Microsoft Office v jednom projektu  
  Šablona projektu každých Office v sadě Visual Studio je navržen pro práci s jednu aplikaci Microsoft Office. Použití funkcí v několika aplikace Microsoft Office, nebo chcete používat funkce aplikace nebo součásti, která nemá na projekt v sadě Visual Studio, je nutné přidat odkaz na požadované PIA.  
   
  Ve většině případů měli byste přidat odkazy na PIA, které jsou nainstalované ve Visual Studio v části %ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools pro Office\PIA\ adresář. Tyto verze sestavení se zobrazí na **Framework** kartě **Manager odkaz** dialogové okno. Další informace najdete v tématu [postup: cíl aplikací prostřednictvím primární zprostředkovatel komunikace s objekty sestavení sady Office](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Některá sestavení se přidají do projektu automaticky při přidání sestavení, které na ně odkazuje. Odkazy na sestavení Office.dll a Microsoft.Vbe.Interop.dll například se automaticky přidá, když přidáte odkaz na sestavení aplikace Word, Excel, Outlook, Microsoft Forms nebo grafu.  
   
-##  <a name="pialist"></a>Primární spolupracující sestavení pro aplikace Microsoft Office  
+##  <a name="pialist"></a> Primární spolupracující sestavení pro aplikace Microsoft Office  
  Následující tabulka uvádí primární spolupracující sestavení, které jsou k dispozici pro [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] a [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].  
   
 |Aplikace Office nebo součást|Název sestavení primární spolupráce|  
@@ -118,6 +117,6 @@ ms.lasthandoff: 01/10/2018
  [Projektová řešení](../vsto/project-solutions.md)   
  [Přehled modelu objektů aplikace Visio](../vsto/visio-object-model-overview.md)   
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   
- [Obecné referenční informace &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
+ [Obecné referenční informace &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
   
   

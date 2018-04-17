@@ -1,12 +1,10 @@
 ---
-title: "Návod: Volání kódu z jazyka VBA v projektu jazyka Visual C# | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Volání kódu z jazyka VBA v projektu jazyka Visual C# | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 109ae2e89cf30078c910ff313ea203c576906037
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8fa0edceac7ca98e958419efe4a70acf278857da
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-code-from-vba-in-a-visual-c-project"></a>Návod: Volání kódu z jazyka VBA v projektu jazyka Visual C#
   Tento návod ukazuje, jak volat metodu přizpůsobení na úrovni dokumentu pro aplikaci Microsoft Office Excel z jazyka Visual Basic pro aplikace (VBA) kód do sešitu. Postup zahrnuje tři základní kroky: Přidejte metodu k `Sheet1` položky třída hostitele, vystavit metodu VBA pro vytváření kódu v sešitu a potom volejte metodu z kódu jazyka VBA v sešitu.  
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Klikněte na tlačítko **Dokončit**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otevře se **WorkbookWithVBA** sešitu v návrháři a přidá **CallingCodeFromVBA** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se **WorkbookWithVBA** sešitu v návrháři a přidá **CallingCodeFromVBA** projektu do **Průzkumníku řešení**.  
   
 ## <a name="trusting-the-location-of-the-workbook"></a>Důvěřující umístění sešitu  
  Před kódu můžete vystavit ve vašem řešení VBA pro vytváření kódu v sešitu, musí důvěřovat VBA v sešitu ke spuštění. Chcete-li to provést několika způsoby. V tomto návodu se podle důvěřující umístění sešit v provedení této úlohy **Centrum zabezpečení** v aplikaci Excel.  
@@ -185,7 +184,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]generuje nové rozhraní s názvem `ISheet1`, a upravuje definice `Sheet1` třídy tak, aby se implementuje `ISheet1` rozhraní. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otevře také **ISheet1.cs** souboru v editoru kódu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] generuje nové rozhraní s názvem `ISheet1`, a upravuje definice `Sheet1` třídy tak, aby se implementuje `ISheet1` rozhraní. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře také **ISheet1.cs** souboru v editoru kódu.  
   
 5.  V **ISheet1.cs** souboru, nahraďte `ISheet1` rozhraní deklarace s následujícím kódem. Tento kód má `ISheet1` veřejné rozhraní, a to se vztahuje <xref:System.Runtime.InteropServices.ComVisibleAttribute> atribut zpřístupněte rozhraní COM.  
   
@@ -253,6 +252,6 @@ ms.lasthandoff: 01/10/2018
  [Kombinování VBA pro vytváření a úpravy na úrovni dokumentů](../vsto/combining-vba-and-document-level-customizations.md)   
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)   
  [Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Postupy: vystavení kódu do VBA v Visual C &#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Postupy: vystavení kódu do VBA v Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)  
   

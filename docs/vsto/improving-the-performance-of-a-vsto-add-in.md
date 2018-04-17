@@ -1,24 +1,23 @@
 ---
-title: "Zvýšení výkonu doplňku VSTO | Microsoft Docs"
-ms.custom: 
+title: Zvýšení výkonu doplňku VSTO | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: be5ec0d8e4654ad9d383278e5d0d60c7fa2e34c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17fbb8d0d1bdb2c3924645f494d8bd5eccd457a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="improving-the-performance-of-a-vsto-add-in"></a>Zvýšení výkonu doplňku VSTO
   Můžete uživatelům poskytovat lepší pomocí optimalizace doplňků VSTO vytvořených pro Office aplikace tak, aby rychle začít, vypnout, otevřete položky a provádět další úlohy. Pokud vaše doplňku VSTO pro Outlook, můžete také snížit pravděpodobnost, že vaše doplňku VSTO bude zakázána z důvodu snížený výkon. Může zvýšit výkon vaší doplňku VSTO implementací následujících strategií:  
@@ -33,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
  Další informace o tom, jak optimalizovat doplňku VSTO pro Outlook najdete v tématu [výkonu kritéria pro zachování doplňků VSTO povoleno](http://go.microsoft.com/fwlink/?LinkID=266503).  
   
-##  <a name="Load"></a>Zatížení doplňků VSTO na vyžádání  
+##  <a name="Load"></a> Zatížení doplňků VSTO na vyžádání  
  Můžete nakonfigurovat Add-in VSTO načíst jenom v následujících případech:  
   
 -   Při prvním uživatel spustí aplikaci, která po instalaci doplňku VSTO.  
@@ -82,11 +81,11 @@ ms.lasthandoff: 01/10/2018
   
     ```  
   
-     Informace o tom, jak vytvořit události po sestavení v projektu C# najdete v tématu [postupy: určení událostí sestavení &#40; C &#35; &#41; ](/visualstudio/ide/how-to-specify-build-events-csharp).  
+     Informace o tom, jak vytvořit události po sestavení v projektu C# najdete v tématu [postupy: určení událostí sestavení &#40;C&#35;&#41;](/visualstudio/ide/how-to-specify-build-events-csharp).  
   
-     Informace o tom, jak vytvořit události po sestavení v projektu jazyka Visual Basic najdete v tématu [postupy: určení událostí sestavení &#40; Visual Basic &#41; ](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
+     Informace o tom, jak vytvořit události po sestavení v projektu jazyka Visual Basic najdete v tématu [postupy: určení událostí sestavení &#40;jazyka Visual Basic&#41;](/visualstudio/ide/how-to-specify-build-events-visual-basic).  
   
-##  <a name="Publish"></a>Publikovat řešení pro systém Office pomocí Instalační služby systému Windows  
+##  <a name="Publish"></a> Publikovat řešení pro systém Office pomocí Instalační služby systému Windows  
  Pokud publikujete řešení pomocí Instalační služby systému Windows, Visual Studio 2010 Tools for Office Runtime obchází následující kroky, až se načte doplňku VSTO.  
   
 -   Ověření manifestu schématu.  
@@ -100,7 +99,7 @@ ms.lasthandoff: 01/10/2018
   
  Další informace najdete v tématu [nasazení řešení Office pomocí Instalační služba systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Bypass"></a>Reflexe nepoužívat pásu karet  
+##  <a name="Bypass"></a> Reflexe nepoužívat pásu karet  
  Pokud vytvoříte řešení pomocí [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], ujistěte se, že uživatelé nainstalovali nejnovější verzi sady Visual Studio 2010 Tools for Office Runtime při nasazení řešení. Starší verze tohoto modulu runtime projeví sestavení řešení najít vlastních nastavení pásu karet. Tento proces může způsobit doplňku VSTO načíst pomaleji.  
   
  Jako alternativu můžete zabránit v libovolné verzi sady Visual Studio 2010 Tools for Office Runtime pomocí reflexe k identifikaci vlastních nastavení pásu karet. Chcete-li provést tuto strategii, přepište `CreateRibbonExtensibility` metoda a objekty explicitně návratový pásu karet. Pokud vaše doplňku VSTO neobsahuje žádné vlastních nastavení pásu karet, vrátí `null` uvnitř metody.  
@@ -110,7 +109,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
  [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-##  <a name="Perform"></a>V samostatné prováděcí vlákno provádět nákladné operace  
+##  <a name="Perform"></a> V samostatné prováděcí vlákno provádět nákladné operace  
  Vezměte v úvahu provádění časově náročné úkoly (například dlouhotrvající úlohy, připojení databáze nebo jiné typy volání sítě) v samostatných vlákna. Další informace najdete v tématu [dělení na vlákna podporu Office](../vsto/threading-support-in-office.md).  
   
 > [!NOTE]  

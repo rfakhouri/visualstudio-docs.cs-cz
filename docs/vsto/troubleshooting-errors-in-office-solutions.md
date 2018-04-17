@@ -1,13 +1,10 @@
 ---
-title: "Řešení potíží s chybami v řešeních pro systém Office | Microsoft Docs"
-ms.custom: 
+title: Řešení potíží s chybami v řešeních pro systém Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.DesignerDisabled
 - VST.Designer.CannotActivate
@@ -23,14 +20,14 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6a077949de07d89adad76c6fc68754d2018fa461
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 1166f183e49bfc01592a645916ce12c1148ec8de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Řešení potíží s chybami v řešeních pro systém Office
   Při provádění následujících úloh při vývoji řešení pro systém Office v sadě Visual Studio se můžete setkat s problémy:  
@@ -45,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Ladění projektů](#debugging)  
   
-##  <a name="creating"></a>Vytváření, upgrade a otevírání projektů  
+##  <a name="creating"></a> Vytváření, upgrade a otevírání projektů  
  Při vytváření nebo otevírání projektů Office, může dojít k následujícím chybám.  
   
 ### <a name="the-project-cannot-be-created"></a>Projekt nelze vytvořit.  
@@ -89,7 +86,7 @@ ms.lasthandoff: 01/10/2018
   
  Po dokončení upgradu na projekt, můžete odinstalovat sadu Visual Studio 2005 Tools for Office Runtime druhý edici z vývojovém počítači Pokud není používán pomocí jiných řešení pro Office.  
   
-##  <a name="designers"></a>Pomocí návrháře  
+##  <a name="designers"></a> Pomocí návrháře  
  Při práci s dokument, sešitu nebo listu Návrhář v projekty na úrovni dokumentu, může dojít k následujícím chybám.  
   
 ### <a name="designer-failed-to-load-correctly"></a>Načtení správně Designer se nezdařilo.  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Příkaz Insert klip obrázky se nic nestane. v návrháři Visual Studio  
  Pokud aplikace Excel nebo Word je otevřen v návrháři Visual Studio, kliknutím na tlačítko **Clip Art** na tlačítko **ilustrace** nelze otevřít kartu na pásu karet **Clip Art** podokna úloh. Přidat klip obrázky, otevřete kopii sešitu nebo dokument, který je ve složce hlavní projekt (nelze zkopírovat, který je ve složce \bin) mimo Visual Studio, přidejte jej do galerie a potom uložte sešit nebo dokumentu.  
   
-##  <a name="code"></a>Psaní kódu  
+##  <a name="code"></a> Psaní kódu  
  Při psaní kódu v projektech Office, může dojít k následujícím chybám.  
   
 ### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Některé události objektů Office nejsou dostupné, když pomocí jazyka C#  
@@ -128,7 +125,7 @@ ms.lasthandoff: 01/10/2018
   
  Další informace o události rozhraní PIA Office, najdete v části [přehled třídy a rozhraní v primární zprostředkovatel komunikace s objekty sestavení sady Office](http://msdn.microsoft.com/en-us/da92dc3c-8209-44de-8095-a843659368d5).  
   
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Neodkazují na Office PIA – třídy v projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-includenetv40shortsharepointincludesnet-v40-short-mdmd-or-the-includenetv45vstoincludesnet-v45-mdmd"></a>Neodkazují na Office PIA – třídy v projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
  V projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], nebude ve výchozím nastavení kompilace kódu, který odkazuje na třídu, která je definována v PIA – Office. Použít zásady vytváření názvů tříd v PIA *objectname*třídy, jako například <xref:Microsoft.Office.Interop.Word.DocumentClass> a <xref:Microsoft.Office.Interop.Excel.WorkbookClass>. Například nebude Zkompilujte následující kód z projektu doplňku VSTO pro Word.  
   
 ```vb  
@@ -175,7 +172,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
   
  I když jste importovali Word či Excel obor názvů a získat přístup k všechny třídy je uvnitř, musí k plnému určení všech typů s Word či Excel k odebrání oboru názvů nejednoznačnosti.  
   
-##  <a name="building"></a>Vytváření projektů  
+##  <a name="building"></a> Vytváření projektů  
  Při sestavování projektů Office, může dojít k následujícím chybám.  
   
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Nelze vytvořit projekt na úrovni dokumentu, který je založen na dokument s omezenými oprávněními  
@@ -188,7 +185,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Po odstranění ovládacího prvku NamedRange dojít k chybám kompilátoru  
  Pokud odstraníte <xref:Microsoft.Office.Tools.Excel.NamedRange> řízení z listu, která není v aktivním listu v Návrháři automaticky vygenerovaný kód nemusí odeberou z projektu a může dojít k chybám kompilátoru. Pokud chcete mít jistotu, kód se odebere, byste měli vždy vybrat listu, který obsahuje <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvek, aby bylo před odstraněním ovládací prvek aktivního listu. Pokud automaticky vygenerovaný kód není odstraněna při odstranění ovládacího prvku, může způsobit návrháře odstranit kód tak, že aktivace listu a změnu tak, aby listu bude označena jako upravená. Pokud projekt znovu sestavte, odebere se kód.  
   
-##  <a name="debugging"></a>Ladění projektů  
+##  <a name="debugging"></a> Ladění projektů  
  Při ladění projektů Office, může dojít k následujícím chybám.  
   
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>Výzva k odinstalaci se zobrazí, když je publikování a nainstalovat řešení na vývojovém počítači  

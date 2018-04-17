@@ -1,12 +1,10 @@
 ---
-title: "Vlastní podokna úloh | Microsoft Docs"
-ms.custom: 
+title: Vlastní podokna úloh | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], about custom task panes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6a99fd7cc89190a8360341684dee91a7cf93f0e0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: acbe91b0a7150ac3a04f9a0b33c8b95d371caf53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-task-panes"></a>Vlastní podokna úloh
   Podokna úloh jsou panely uživatelského rozhraní, které jsou obvykle ukotven na jedné straně okna v aplikaci Microsoft Office. Vlastní podokna úloh poskytují způsob, jak vytvořit vlastní podokna úloh a uživatelům poskytnout známé rozhraní pro přístup k funkcím vaše řešení. Rozhraní může například obsahovat ovládacích prvků, které kód upravovat dokumenty nebo zobrazovat data ze zdroje dat spustit.  
@@ -129,7 +128,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Automaticky vyčistí prostředky využívané třídou vlastního podokna úloh po doplňku VSTO odpojen. Nevolejte <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> nebo <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> metody v `ThisAddIn_Shutdown` obslužné rutiny události ve vašem projektu. Tyto metody vyvolá výjimku <xref:System.ObjectDisposedException>, protože [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vyčistí prostředky používané <xref:Microsoft.Office.Tools.CustomTaskPane> objekt před `ThisAddIn_Shutdown` je volána. Další informace o `ThisAddIn_Shutdown`, najdete v části [události v projektech pro systém Office](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a>Správa vlastních podoken úloh v více oken aplikace  
+##  <a name="Managing"></a> Správa vlastních podoken úloh v více oken aplikace  
  Když vytvoříte vlastního podokna úloh v aplikaci, která používá více oken pro zobrazení dokumentů a dalších položkách, budete muset provést další kroky k zajištění, že v podokně úloh je zobrazena, pokud uživatel očekává, že se.  
   
  Vlastní podokna úloh ve všech aplikací jsou přidruženy k rámce okna dokumentu, který se uživateli zobrazí zobrazení dokumentu nebo položce. V podokně úloh je viditelná jenom v případě, že okno přidružené je viditelné. Ale ne všechny aplikace pomocí okna s rámečkem v dokumentu stejným způsobem.  
@@ -142,7 +141,7 @@ ms.lasthandoff: 01/10/2018
   
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: Spravovat podokna úloh v doplňků VSTO pro Word?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
-##  <a name="Outlook"></a>Aplikace Outlook  
+##  <a name="Outlook"></a> Aplikace Outlook  
  Když vytvoříte vlastního podokna úloh pro aplikaci Outlook, je přidružen konkrétní okno Průzkumníka nebo Inspector vlastního podokna úloh. Průzkumníci jsou windows, které zobrazovat obsah složky a kontroly systému windows, které zobrazí položky jako e-mailové zprávě nebo úlohu.  
   
  Pokud chcete zobrazit vlastního podokna úloh s více nástroj Inspector nebo Průzkumníka windows, budete muset vytvořit novou instanci vlastního podokna úloh, když se otevře okno s Průzkumníka nebo Inspector. K tomu zpracovat událost, která se vyvolá, když se vytvoří okno s Průzkumníka nebo Inspector a vytvořte v podokně úloh v obslužné rutině. Můžete také zpracovat události Průzkumníka a Inspector ke skrytí nebo zobrazení podokna úloh v závislosti na tom, které okno se zobrazí.  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
  Pokud vlastního podokna úloh není explicitně odebrat, Outlook windows se může zobrazit více instancí vlastního podokna úloh. Outlook někdy recykluje windows a windows recykluje zachovat odkazy na všechny vlastní podokna úloh, která byla připojena k nim.  
   
-##  <a name="WordAndInfoPath"></a>Word, PowerPoint a InfoPath  
+##  <a name="WordAndInfoPath"></a> Word, PowerPoint a InfoPath  
  Word, PowerPoint a InfoPath zobrazí v okně s rámečkem jiného dokumentu každého dokumentu. Když vytvoříte vlastního podokna úloh pro tyto aplikace, je přidruženo pouze konkrétní dokumentu vlastního podokna úloh. Pokud uživatel otevře do jiného dokumentu, vlastního podokna úloh je skryté, dokud starší dokumentu se znovu nezobrazí.  
   
  Pokud chcete zobrazit vlastního podokna úloh s více dokumenty, vytvořte novou instanci třídy vlastního podokna úloh, když uživatel vytvoří nový dokument nebo otevře existující dokument. K tomuto účelu zpracování událostí, které se vyvolá, když je vytvořit nebo otevřít dokument a pak ve obslužné rutiny událostí vytvořit v podokně úloh. Můžete také zpracovat události dokumentu ke skrytí nebo zobrazení podokna úloh v závislosti na tom, který dokument je viditelná.  

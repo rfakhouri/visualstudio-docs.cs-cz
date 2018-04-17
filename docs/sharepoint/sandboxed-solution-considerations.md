@@ -1,12 +1,10 @@
 ---
-title: "Aspekty řešení v izolovaném prostoru | Microsoft Docs"
-ms.custom: 
+title: Aspekty řešení v izolovaném prostoru | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.SandboxedSolutions
 - VS.SharePointTools.Security.SandboxedSolutions
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - farm solutions [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0b510097dc21c385f67a9358eaca3997cbdc2316
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sandboxed-solution-considerations"></a>Aspekty řešení v izolovaném prostoru
   *Řešení v izolovaném prostoru* jsou funkcí v produktu Microsoft SharePoint 2010, která umožní uživatelům kolekce lokality nahrát vlastní řešení vlastní kód. Běžné řešení v izolovaném prostoru je uživatelé nahrání vlastní webové části.  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
  V izolovaném prostoru aplikace SharePoint běží v zabezpečené, monitorovaného procesu, který má přístup k omezené součástí webové farmy. Microsoft SharePoint 2010 používá kombinaci funkcí, galerie řešení, řešení pro monitorování a ověření rozhraní povolit řešení v izolovaném prostoru.  
   
 ## <a name="specifying-project-trust-level"></a>Určení úrovně důvěryhodnosti projektu  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]podporuje řešení v izolovaném prostoru prostřednictvím vlastnosti projektu logická hodnota volána *řešení v izolovaném prostoru*. Tuto vlastnost lze nastavit na libovolný čas v projektu, nebo můžete zadat, když vytvoříte projekt v **Průvodce vlastním nastavením SharePoint**.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] podporuje řešení v izolovaném prostoru prostřednictvím vlastnosti projektu logická hodnota volána *řešení v izolovaném prostoru*. Tuto vlastnost lze nastavit na libovolný čas v projektu, nebo můžete zadat, když vytvoříte projekt v **Průvodce vlastním nastavením SharePoint**.  
   
 > [!NOTE]  
 >  Změna *řešení v izolovaném prostoru* vlastnosti projektu po vytvoření může dojít k chybám ověření.  
@@ -74,7 +73,7 @@ ms.lasthandoff: 01/10/2018
  V WSS 3.0 řešení může být nasazený jenom na úrovni farmy. Vynutila si, že potenciálně škodlivého nebo destabilizing řešení může být nasazený ovlivňující celou webové farmy a všechny ostatní kolekce webů a aplikací, které běží v něm. Pomocí řešení v izolovaném prostoru však můžete nasadit řešení na podoblasti farmy, určité kolekci webů. Zajistit další ochranu na řešení sestavení není načtena do hlavní [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] proces (w3wp.exe). Místo toho je načten do samostatného procesu (SPUCWorkerProcess.exe). Tento proces je monitorována a implementuje kvóty a omezení pro ochranu farmy z řešení v izolovaném prostoru, které provádějí škodlivých aktivit, jako je například spuštění úzkou cykly, které využívají cyklů procesoru.  
   
 ## <a name="site-collection-solution-gallery"></a>Galerie řešení kolekce webů  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)]2010 obsahuje funkce, která se označuje jako "galerii kolekce webů řešení." Tuto funkci můžete přistupovat na stránce Centrální správa SharePoint 2010 nebo otevřením **Akce webu** nabídce Výběr **nastavení lokality**a pak vyberete **řešení** v části **galerií** na webu služby SharePoint. Galerie řešení jsou úložiště řešení, které umožňují správci kolekce webů ke správě řešení v jejich kolekce webů.  
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 obsahuje funkce, která se označuje jako "galerii kolekce webů řešení." Tuto funkci můžete přistupovat na stránce Centrální správa SharePoint 2010 nebo otevřením **Akce webu** nabídce Výběr **nastavení lokality**a pak vyberete **řešení** v části **galerií** na webu služby SharePoint. Galerie řešení jsou úložiště řešení, které umožňují správci kolekce webů ke správě řešení v jejich kolekce webů.  
   
  Galerie řešení je knihovna dokumentů uložená v kořenovém webovou stránku služby SharePoint. Galerie řešení nahrazuje šablony webů a podporuje balíčků řešení. Při odeslání souboru balíčku (WSP) řešení služby SharePoint, je zpracován jako řešení v izolovaném prostoru.  
   
@@ -120,7 +119,7 @@ ms.lasthandoff: 01/10/2018
   
 -   SPWebEventReceiver  
   
--   Podpora pro všechny webové části, které jsou odvozeny od`System.Web.UI.WebControls.WebParts.WebPart`  
+-   Podpora pro všechny webové části, které jsou odvozeny od `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   Webové části  
   

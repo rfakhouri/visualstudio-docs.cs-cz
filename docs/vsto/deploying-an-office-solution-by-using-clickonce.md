@@ -1,12 +1,10 @@
 ---
-title: "Nasazení řešení Office s použitím technologie ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Nasazení řešení Office s použitím technologie ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], deploying solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a989fe2bc88d25ad81238b65bf8ecd775c39bc35
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-clickonce"></a>Nasazení řešení Office s použitím technologie ClickOnce
   Pokud používáte ClickOnce, můžete nasadit řešení pro Office v méně kroků. Když publikujete aktualizace, vaše řešení je automaticky rozpozná a nainstaluje. Technologie ClickOnce ale vyžaduje, aby bylo řešení nainstalováno zvlášť pro každého uživatele počítače. Proto byste měli zvážit použití Instalační služby systému Windows (souboru .msi), pokud vaše řešení bude používat více než jeden uživatel ve stejném počítači.  
@@ -48,8 +47,8 @@ ms.lasthandoff: 01/10/2018
   
  Další informace o nasazení řešení Office tak, že vytvoříte soubor Instalační služby systému Windows najdete v tématu [nasazení řešení Office pomocí Instalační služba systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Publish"></a>Publikování řešení  
- Řešení můžete publikovat pomocí **Průvodci publikováním** nebo **Návrhář projektu**. V tomto postupu budete používat **Návrhář projektu** protože poskytuje kompletní sadu možnosti publikování. V tématu [publikování průvodce &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+##  <a name="Publish"></a> Publikování řešení  
+ Řešení můžete publikovat pomocí **Průvodci publikováním** nebo **Návrhář projektu**. V tomto postupu budete používat **Návrhář projektu** protože poskytuje kompletní sadu možnosti publikování. V tématu [Průvodce publikováním &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
 #### <a name="to-publish-the-solution"></a>Publikování řešení  
   
@@ -136,12 +135,12 @@ ms.lasthandoff: 01/10/2018
   
 14. Zkopírujte soubory řešení do umístění instalace, které jste zadali v předchozím kroku tohoto postupu.  
   
-##  <a name="Trust"></a>Rozhodněte, jak chcete udělit vztah důvěryhodnosti k řešení  
+##  <a name="Trust"></a> Rozhodněte, jak chcete udělit vztah důvěryhodnosti k řešení  
  Aby bylo možné řešení spustit v počítačích uživatelů, musíte buď zajistit jeho důvěryhodnost, nebo uživatelé musejí při instalaci řešení reagovat na výzvu k potvrzení jeho důvěryhodnosti. Pokud chcete zajistit důvěryhodnost řešení, podepište manifesty pomocí certifikátu, který určuje známého a důvěryhodného vydavatele. V tématu [důvěřující řešení pomocí podepisování aplikace a nasazení manifesty](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
  Pokud nasazujete přizpůsobení na úrovni dokumentu a chcete vložit dokument do složky v počítači uživatele nebo zpřístupnit dokument na webu služby SharePoint, ujistěte se, že Office důvěřuje umístění dokumentu. V tématu [udělení důvěry dokumentům](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="Helping"></a>Pomoc uživatelům s instalací řešení  
+##  <a name="Helping"></a> Pomoc uživatelům s instalací řešení  
  Uživatelé mohou řešení nainstalovat tak, že spustí instalační program, otevřou manifest nasazení nebo, v případě přizpůsobení na úrovni dokumentu, přímo otevřou dokument. Osvědčeným postupem je instalace řešení pomocí instalačního programu. Tyto dva přístupy nemáte zkontrolujte, zda je nainstalovaný požadovaný software. Pokud uživatelé chtějí otevřít dokument z umístění instalace, musejí jej přidat do seznamu důvěryhodných umístění v Centru zabezpečení aplikace Office.  
   
 ### <a name="opening-the-document-of-a-document-level-customization"></a>Otevření dokumentu přizpůsobení na úrovni dokumentu  
@@ -190,7 +189,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Následně je nutné vyprázdnit diskovou mezipaměť prohlížeče. Poté zkuste soubor .vsto znovu otevřít.  
   
-##  <a name="Put"></a>Vložit dokument řešení do počítače koncového uživatele (pouze úpravy na úrovni dokumentů)  
+##  <a name="Put"></a> Vložit dokument řešení do počítače koncového uživatele (pouze úpravy na úrovni dokumentů)  
  Vytvořením akce po nasazení můžete zkopírovat dokumentu vašeho řešení do počítače koncového uživatele pro ně. Tímto způsobem uživatel nemá k dokumentu ručně zkopírovat z umístění instalace se svými počítači po instalaci vaše řešení. Budete muset vytvořit třídu, která definuje akce po nasazení, sestavení a publikování řešení, upravte manifest aplikace a manifest aplikace a nasazení znovu podepsat.  
   
  Následující postup předpokládá, že je název projektu **ExcelWorkbook** a publikování řešení, aby **C:\publish** adresář ve vašem počítači.  
@@ -309,7 +308,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Zkopírujte soubor ExcelWorkbook.vsto **c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ adresáře.  
   
-##  <a name="SharePoint"></a>Vložit dokument řešení na serveru se systémem SharePoint (pouze úpravy na úrovni dokumentů)  
+##  <a name="SharePoint"></a> Vložit dokument řešení na serveru se systémem SharePoint (pouze úpravy na úrovni dokumentů)  
  Přizpůsobení na úrovni dokumentu můžete pro koncové uživatele publikovat pomocí služby SharePoint. Když uživatelé přejdou na web služby SharePoint a dokument otevřou, modul runtime automaticky nainstaluje řešení ze sdílené síťové složky do místního počítače uživatele. Jakmile je řešení nainstalováno místně, bude přizpůsobení nadále fungovat i v případě, že je dokument zkopírován do jiného umístění, například na plochu.  
   
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>Umístění dokumentu na server, na kterém je spuštěna služba SharePoint  
@@ -338,7 +337,7 @@ ms.lasthandoff: 01/10/2018
   
              Když uživatelé otevřou dokument z webu služby SharePoint, dokument se otevře a nainstaluje se přizpůsobení. Uživatelé mohou dokument zkopírovat na svou plochu. Přizpůsobení bude stále možné spustit, protože vlastnosti v dokumentu odkazují na síťové umístění dokumentu.  
   
-##  <a name="Custom"></a>Vytvořit vlastní instalační program  
+##  <a name="Custom"></a> Vytvořit vlastní instalační program  
  Můžete vytvořit vlastní instalační program pro řešení Office, místo použití instalačního programu, který je pro vás vytvořen při publikování řešení. Můžete například spustit instalaci pomocí přihlašovacího skriptu nebo můžete řešení nainstalovat pomocí dávkového souboru bez zásahu uživatele. Tyto scénáře fungují nejlépe, pokud jsou požadované součásti již nainstalovány v počítačích koncových uživatelů.  
   
  Jako součást procesu vlastní instalace volejte instalační nástroj pro řešení pro Office (VSTOInstaller.exe), který je ve výchozím nastavení nainstalován v následujícím umístění:  
@@ -372,12 +371,12 @@ ms.lasthandoff: 01/10/2018
 |-401|Nelze odinstalovat, řešení.|  
 |-500|Operace byla zrušena, protože řešení nelze nainstalovat nebo odinstalovat nebo nelze stáhnout manifest nasazení.|  
   
-##  <a name="Update"></a>Publikování aktualizace  
+##  <a name="Update"></a> Publikování aktualizace  
  Pokud chcete aktualizovat řešení, je publikovat ho znovu pomocí **Návrhář projektu** nebo **Průvodci publikováním**, a poté zkopírujte aktualizované řešení do umístění instalace. Při kopírování souborů do umístění instalace je nutné přepsat předchozí soubory.  
   
  Při příštím spuštění ověří řešení pro aktualizaci, ho budete najít a načíst nové verze automaticky.  
   
-##  <a name="Location"></a>Změna umístění instalace řešení  
+##  <a name="Location"></a> Změna umístění instalace řešení  
  Po publikování řešení můžete přidat nebo změnit cestu instalace. Změnit cestu instalace může být vhodné z některého z následujících důvodů:  
   
 -   Instalační program byl zkompilován ještě předtím, než byla známa cesta instalace.  
@@ -435,7 +434,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  Nainstalujte řešení do zadaného umístění tak, že spustíte instalační program bez parametru /url.  
   
-##  <a name="Roll"></a>Vrácení řešení starší verze  
+##  <a name="Roll"></a> Vrácení řešení starší verze  
  Když vrátíte řešení zpět, budou uživatelé opět používat předchozí verzi tohoto řešení.  
   
 #### <a name="to-roll-back-a-solution"></a>Vrácení řešení zpět  

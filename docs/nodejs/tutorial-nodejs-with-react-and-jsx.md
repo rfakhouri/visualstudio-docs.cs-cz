@@ -3,28 +3,24 @@ title: Vytvoření aplikace Node.js a reagují - sady Visual Studio | Microsoft 
 description: V tomto kurzu vytvoříte aplikaci Node.js a reagují v sadě Visual Studio
 ms.custom: mvc
 ms.date: 02/19/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f99b1bef93fcbe968f23f0bb63653d825235385e
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 21debd24f69b79cb2dbbf9e9ceea928ac9dd851e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Kurz: Vytvoření aplikace Node.js a reagují v sadě Visual Studio
-Visual Studio můžete snadno vytvořit projekt Node.js a využívat funkce IntelliSense a jiné integrované funkce, které podporují Node.js. V tomto kurzu pro sadu Visual Studio vytvořte projekt webové aplikace Node.js ze šablony sady Visual Studio. Pak vytvoříte jednoduchou aplikaci pomocí reagují. 
+Visual Studio můžete snadno vytvořit projekt Node.js a využívat funkce IntelliSense a jiné integrované funkce, které podporují Node.js. V tomto kurzu pro sadu Visual Studio vytvořte projekt webové aplikace Node.js ze šablony sady Visual Studio. Pak vytvoříte jednoduchou aplikaci pomocí reagují.
 
 V tomto kurzu zjistíte, jak:
 > [!div class="checklist"]
@@ -51,17 +47,17 @@ V tomto kurzu zjistíte, jak:
 ## <a name="create-a-project"></a>Vytvoření projektu
 Nejprve vytvořte projekt webové aplikace Node.js.
 
-1. Open Visual Studio 2017.  
+1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .  
+1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
 
-1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**a potom zvolte **Node.js**. V prostředním podokně vyberte **prázdnou webovou aplikaci Node.js**, zadejte název **NodejsWebAppBlank**a potom zvolte **OK**.   
+1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**a potom zvolte **Node.js**. V prostředním podokně vyberte **prázdnou webovou aplikaci Node.js**, zadejte název **NodejsWebAppBlank**a potom zvolte **OK**.
 
-     Pokud nevidíte **prázdnou webovou aplikaci Node.js** šablony projektu, je nutné nejprve nainstalovat zatížení vývoj Node.js. 
+     Pokud nevidíte **prázdnou webovou aplikaci Node.js** šablony projektu, je nutné nejprve nainstalovat zatížení vývoj Node.js.
 
     Visual Studio vytvoří nové řešení a otevře projektu.
 
-    ![Projekt Node.js v Průzkumníku řešení](../nodejs/media/tutorial-nodejs-react-project-structure.png)  
+    ![Projekt Node.js v Průzkumníku řešení](../nodejs/media/tutorial-nodejs-react-project-structure.png)
 
     - Zvýrazněná tučným písmem je váš projekt pomocí názvu, který jste zadali **nový projekt** dialogové okno. V systému souborů je reprezentována tento projekt *.njsproj* soubor ve složce projektu. Můžete nastavit vlastnosti a proměnných prostředí přidružený k projektu pravým tlačítkem na projekt a zvolením **vlastnosti**. Můžete provést odezvy pomocí jiných nástrojů pro vývoj, protože soubor projektu neprovede vlastní změny ke zdroji projekt Node.js.
 
@@ -117,7 +113,7 @@ Tato aplikace vyžaduje počet moduly npm správné fungování.
 
     Tady jsou moduly npm, jak se zobrazují v Průzkumníku řešení po jejich instalaci.
 
-    ![balíčky npm](../nodejs/media/tutorial-nodejs-react-npm-modules.png) 
+    ![balíčky npm](../nodejs/media/tutorial-nodejs-react-npm-modules.png)
 
     > [!NOTE]
     > Pokud ale chcete-li instalovat balíčky npm pomocí příkazového řádku, klikněte pravým tlačítkem na uzel projektu a zvolte **sem otevřete příkazový řádek**. Standardní příkazy Node.js použijte k instalaci balíčků.
@@ -171,7 +167,7 @@ Pro tuto aplikaci jednoduché přidáte nové soubory projektu v kořenu projekt
 
     ```javascript
     declare var require: any
-    
+
     var React = require('react');
     var ReactDOM = require('react-dom');
 
@@ -267,7 +263,7 @@ V předchozích krocích jste přidali *webpack config.js* do projektu. Dál př
 
     Okno příkazového řádku zobrazuje výsledek.
 
-    ![Spustit webpack](../nodejs/media/tutorial-nodejs-react-run-webpack.png) 
+    ![Spustit webpack](../nodejs/media/tutorial-nodejs-react-run-webpack.png)
 
     Pokud se zobrazí chyby místo tento výstup, je nutné před odstranit vaše aplikace bude fungovat. Pokud vaše verze balíčku npm se liší od verze uvedené v tomto kurzu, který může být zdrojem chyb. Jeden způsob, jak opravit chyby, je použití přesné verze uvedené v dřívějších krocích. Navíc pokud jeden nebo více z těchto verzí balíčku je zastaralá a vede k chybě, můžete k instalaci novější verze a opravte chyby.
 
@@ -279,7 +275,7 @@ V předchozích krocích jste přidali *webpack config.js* do projektu. Dál př
 
 1. Pokud se zobrazí výzva k znovu načíst externě změněné soubory, klikněte na tlačítko **Ano všem**.
 
-    ![Načíst změněné soubory](../nodejs/media/tutorial-nodejs-react-reload-files.png) 
+    ![Načíst změněné soubory](../nodejs/media/tutorial-nodejs-react-reload-files.png)
 
 Pokaždé, když provedete změny *app.tsx*, je třeba znovu spustit příkaz webpack.
 
@@ -287,7 +283,7 @@ Pokaždé, když provedete změny *app.tsx*, je třeba znovu spustit příkaz we
 
 1. Ujistěte se, že Chrome je nastaven jako aktuální cíl ladění.
 
-    ![Vyberte Chrome jako cíl ladění](../nodejs/media/tutorial-nodejs-react-debug-target.png)  
+    ![Vyberte Chrome jako cíl ladění](../nodejs/media/tutorial-nodejs-react-debug-target.png)
 
 1. Chcete-li spustit aplikaci, stiskněte **F5** (**ladění** > **spustit ladění**) nebo na tlačítko zelenou šipku.
 
@@ -295,7 +291,7 @@ Pokaždé, když provedete změny *app.tsx*, je třeba znovu spustit příkaz we
 
     Visual Studio se spustí aplikace spuštěním souboru spuštění *server.js*.
 
-    ![V prohlížeči spustit reagují](../nodejs/media/tutorial-nodejs-react-running-react.png) 
+    ![V prohlížeči spustit reagují](../nodejs/media/tutorial-nodejs-react-running-react.png)
 
 1. Zavřete okno prohlížeče.
 
@@ -305,9 +301,9 @@ Pokaždé, když provedete změny *app.tsx*, je třeba znovu spustit příkaz we
 
 1. V *server.js*, klikněte do mřížky nalevo od `staticPath` deklarace pro nastavení zarážky:
 
-    ![Nastavit zarážky](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png) 
+    ![Nastavit zarážky](../nodejs/media/tutorial-nodejs-react-set-breakpoint.png)
 
-    Zarážky jsou nejvíce základní a základní funkci spolehlivé ladění. Zarážku Určuje, kde by měl Visual Studio pozastavit spuštěním kódu, můžete si prohlédněte hodnoty proměnných nebo chování paměti, nebo zda získávání větev kódu běží. 
+    Zarážky jsou nejvíce základní a základní funkci spolehlivé ladění. Zarážku Určuje, kde by měl Visual Studio pozastavit spuštěním kódu, můžete si prohlédněte hodnoty proměnných nebo chování paměti, nebo zda získávání větev kódu běží.
 
 1. Chcete-li spustit aplikaci, stiskněte **F5** (**ladění** > **spustit ladění**).
 
@@ -333,7 +329,7 @@ V předchozím oddílu připojit ladicí program ke kódu Node.js na straně ser
 
 1. Přepněte do sady Visual Studio a nastavit zarážky *aplikace bundle.js* kód na `render()` fungovat, jak je znázorněno na následujícím obrázku:
 
-    ![Nastavit zarážky](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png) 
+    ![Nastavit zarážky](../nodejs/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
 1. Chrome vybrat jako cíl ladění v sadě Visual Studio, stiskněte klávesu **kombinaci kláves Ctrl + F5** (**ladění** > **spustit bez ladění**) a spusťte aplikaci v prohlížeči.
 
@@ -345,7 +341,7 @@ V předchozím oddílu připojit ladicí program ke kódu Node.js na straně ser
 
 1. Vyberte proces Chrome s hostitelem správný port (1337 v tomto příkladu) a klikněte na **Attach**.
 
-    ![Připojit k procesu](../nodejs/media/tutorial-nodejs-react-attach-to-process.png) 
+    ![Připojit k procesu](../nodejs/media/tutorial-nodejs-react-attach-to-process.png)
 
     Víte, že když Průzkumníka modelu DOM a konzoly pro JavaScript otevřete v sadě Visual Studio má správně připojen ladicí program. Tyto nástroje ladění jsou podobná Chrome Developer Tools a nástroje F12 pro okraj.
 
@@ -367,7 +363,7 @@ V předchozím oddílu připojit ladicí program ke kódu Node.js na straně ser
     > [!TIP]
     > Po připojení k procesu poprvé pomocí následujících kroků, můžete rychle opět připojit do stejného procesu v aplikaci Visual Studio 2017 výběrem **ladění** > **připojte k procesu**.
 
-## <a name="next-steps"></a>Další kroky 
+## <a name="next-steps"></a>Další kroky
 
 V tomto kurzu jste zjistili, jak vytvořit aplikaci Node.js a reagují, transpile JSX a ladění. Další informace o Node.js Tools pro sadu Visual Studio, naleznete na stránce wikiwebu.
 

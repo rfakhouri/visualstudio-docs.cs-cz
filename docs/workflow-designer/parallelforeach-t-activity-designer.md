@@ -1,5 +1,5 @@
 ---
-title: "ParallelForEach&lt;T&gt; Návrhář aktivity | Microsoft Docs"
+title: ParallelForEach&lt;T&gt; Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d8a46b2535c976bbfe490f85fc5cc5fd6082bc7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 62d86499296c72f48d1ffcad932e9f1ff4d2fef1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parallelforeachlttgt-activity-designer"></a>ParallelForEach&lt;T&gt; Návrhář aktivity
 <xref:System.Activities.Statements.ParallelForEach%601> Aktivity zobrazí prvky kolekce a spouští příkazu embedded pro každý prvek kolekce souběžně, což je asynchronně ve stejném vlákně. Pomocí této aktivity toku řízení místo <xref:System.Activities.Statements.Sequence> aktivitu, pokud se očekává, že podřízené aktivity této aktivity přejděte nečinnosti.
@@ -40,8 +40,8 @@ ms.lasthandoff: 03/12/2018
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje popisný Zobrazovaný název Návrhář aktivity v hlavičce. Výchozí hodnota je **ParallelForEach\<Int32 >**. Hodnota může volitelně upravena v **vlastnosti** mřížky nebo přímo v hlavičce Návrhář aktivity.|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|Aktivita provést pro každou položku v kolekci. Chcete-li přidat <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> aktivity, vyřaďte aktivitu z panelu nástrojů do **textu** pole na **ParallelForEach\<T >** Návrhář aktivity s text nápovědy "Aktivity Sem přetáhněte".|
-|**TypeArgument**|True|Typ položky v <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> kolekce určeného obecný parametr *T*. Ve výchozím nastavení **TypeArgument** je nastaven na **Int32**. Chcete-li změnit typ T v **ParallelForEach < T\>**  Návrhář aktivity, změňte hodnotu **TypeArgument** – pole se seznamem v tabulce vlastností.|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|Kolekce položek, které mají iterace. Chcete-li nastavit <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, zadejte [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] výrazu v **hodnoty** pole na **ForEach < T\>**  Návrhář aktivity do pole s textem pomocný parametr "Zadejte výraz VB" nebo v **Hodnoty** pole na **vlastnosti** okno.|
+|**TypeArgument**|Hodnota TRUE|Typ položky v <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> kolekce určeného obecný parametr *T*. Ve výchozím nastavení **TypeArgument** je nastaven na **Int32**. Chcete-li změnit typ T v **ParallelForEach < T\>**  Návrhář aktivity, změňte hodnotu **TypeArgument** – pole se seznamem v tabulce vlastností.|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|Hodnota TRUE|Kolekce položek, které mají iterace. Chcete-li nastavit <xref:System.Activities.Statements.ParallelForEach%601.Values%2A>, zadejte [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] výrazu v **hodnoty** pole na **ForEach < T\>**  Návrhář aktivity do pole s textem pomocný parametr "Zadejte výraz VB" nebo v **Hodnoty** pole na **vlastnosti** okno.|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||Vyhodnocení po každé iteraci dokončení. Pokud je vyhodnocen jako true, pak plánované čekající na vyřízení došlo ke zrušení iterací. Pokud není tato vlastnost nastavena, všechny naplánované příkazy spustit až do dokončení.|
 
  Ve výchozím nastavení iterace smyčky názvem položky. Můžete změnit název proměnné iterator v **ForEach** pole **ParallelForEach\<T >** Návrhář aktivity. Iterator smyčky lze použít ve výrazech v podřízených prvků <xref:System.Activities.Statements.ParallelForEach%601> aktivity.
@@ -49,5 +49,5 @@ ms.lasthandoff: 03/12/2018
 ## <a name="see-also"></a>Viz také
 
 - [Pořadí](../workflow-designer/sequence-activity-designer.md)
-- [Parallel](../workflow-designer/parallel-activity-designer.md)
+- [Paralelní](../workflow-designer/parallel-activity-designer.md)
 - [Tok řízení](../workflow-designer/control-flow-activity-designers.md)

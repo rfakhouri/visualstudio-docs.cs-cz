@@ -1,8 +1,8 @@
 ---
-title: "Podpora příkaz jazyka Visual Basic 6.0 | Microsoft Docs"
+title: Podpora příkaz jazyka Visual Basic 6.0 | Microsoft Docs
 ms.date: 08/28/2017
 ms.technology: devlang-vb
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -13,11 +13,11 @@ author: paulyuk
 ms.author: paulyuk
 ms.workload:
 - paulyuk
-ms.openlocfilehash: cb25f85be6c77dfbef6969435d14f2cae61debf2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cc55dec5960717e3807602bc76031f7502ec90c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-statement-for-visual-basic-60-on-windows"></a>Podpora příkaz jazyka Visual Basic 6.0 v systému Windows
 
@@ -33,7 +33,7 @@ Týmem jazyka Visual Basic je potvrzena pro "Prostě to funguje" kompatibilitu a
 - Windows Server 2012 R2 včetně
 - Windows Server 2008 R2 včetně
 
-Tým jazyka Visual Basic cílem je, že aplikace Visual Basic 6.0 dál běžet podporované verze systému Windows. Podle popisu v tomto dokumentu budou na Visual Basic 6.0 core runtime podporované pro úplné životnost podporované verze systému Windows, což je pět let všeobecně podporovaných následuje pět let rozšířené podpory (http://support.microsoft.com/gp/lifepolicy). Na panelu podporu bude omezeno na závažnou regresí a problémy se zabezpečením kritické pro existující aplikace.
+Tým jazyka Visual Basic cílem je, že aplikace Visual Basic 6.0 dál běžet podporované verze systému Windows. Podle popisu v tomto dokumentu, budou podporované na Visual Basic 6.0 core runtime pro úplné životnost podporované verze systému Windows, což je pět let všeobecně podporovaných následuje pět let rozšířené podpory (http://support.microsoft.com/gp/lifepolicy). Na panelu podporu bude omezeno na závažnou regresí a problémy se zabezpečením kritické pro existující aplikace.
 
 ## <a name="technical-summary"></a>Technické souhrn
 
@@ -61,7 +61,7 @@ Modul runtime je rozdělené do tří skupin:
 
 - Podporované soubory modulu runtime –-rozšířené soubory k distribuci s vaší aplikací
 
-   Tento rozšířený seznam se skládá z klíče ovládací prvky, knihovny a nástroje, které jsou nainstalované z média IDE nebo z webu Microsoft.com k počítači vývojáře. VB6 IDE obvykle nainstalovány tyto ovládací prvky pro vývojáře počítače ve výchozím nastavení. Vývojář se ještě potřeba znovu distribuovat tyto soubory s aplikací. Podporovaná verze systému souborů je k dispozici online na webu Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkID=142927).
+   Tento rozšířený seznam se skládá z klíče ovládací prvky, knihovny a nástroje, které jsou nainstalované z média IDE nebo z webu Microsoft.com k počítači vývojáře. VB6 IDE obvykle nainstalovány tyto ovládací prvky pro vývojáře počítače ve výchozím nastavení. Vývojář se ještě potřeba znovu distribuovat tyto soubory s aplikací. Podporované verze souborů je k dispozici online na webu Microsoft Download Center (http://go.microsoft.com/fwlink/?LinkID=142927).
 
 - Soubory modulu runtime nepodporované
 
@@ -73,8 +73,8 @@ Konkrétní podrobnosti na soubory obsažené v každé skupině podpory najdete
 
 Podpora nebo přesouvání binární soubory modulu runtime Visual Basic 6.0 na podporované verze systému Windows se nemění zásady podpory pro Visual Studio 6.0 IDE na Visual Basic 6.0 IDE jako celek. Tyto produkty přesunout mimo rozšířené podpory na 8. dubna 2008.
 
-Podrobnosti o životní cyklus podpory produktů společnosti Microsoft naleznete na http://support.microsoft.com/gp/lifepolicy. Jako součást tohoto životního cyklu podpory Microsoft dál podporovat runtime jazyka Visual Basic 6.0 na podporované verze systému Windows pro životního cyklu podpory těchto operačních systémů. To znamená, například, že modul runtime jazyka Visual Basic 6.0 budou podporované v systému Windows Server 2003 až do června, 2008 pro všeobecná podpora a červen 2013 pro rozšířené podpory.
-Další podrobnosti na životní cyklus podpory nebo informace o další možnosti podpory navštivte naše stránky podpory v http://www.microsoft.com/support.
+Podrobnosti o životní cyklus podpory produktů společnosti Microsoft najdete na http://support.microsoft.com/gp/lifepolicy. Jako součást tohoto životního cyklu podpory Microsoft dál podporovat runtime jazyka Visual Basic 6.0 na podporované verze systému Windows pro životního cyklu podpory těchto operačních systémů. To znamená, například, že modul runtime jazyka Visual Basic 6.0 budou podporované v systému Windows Server 2003 až do června, 2008 pro všeobecná podpora a červen 2013 pro rozšířené podpory.
+Pro další podrobnosti na životní cyklus podpory nebo informace o další možnosti podpory prosím najdete na naší stránce podpory v http://www.microsoft.com/support.
 
 ## <a name="64-bit-windows"></a>64bitová verze Windows
 
@@ -149,7 +149,7 @@ Tato část obsahuje další informace o operačních systémech, které nabíze
 
 
 > [!NOTE]
-> &#42;  Podpora modulu runtime VB6 je omezena životní cyklus podpory systému Windows.  Například pokud je cílový operační systém v rozšířené podpory, VB6 nemůže mít vyšší úroveň podpory než rozšířené podpory.  [Windows podporují životního cyklu fakt list](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) obsahuje životního cyklu Další informace o aktuální a předchozí verze Windows.
+> &#42;Podpora modulu runtime VB6 je omezena životní cyklus podpory systému Windows.  Například pokud je cílový operační systém v rozšířené podpory, VB6 nemůže mít vyšší úroveň podpory než rozšířené podpory.  [Windows podporují životního cyklu fakt list](https://support.microsoft.com/en-us/help/13853/windows-lifecycle-fact-sheet) obsahuje životního cyklu Další informace o aktuální a předchozí verze Windows.
 
 ## <a name="visual-basic-60-runtime-usage-inside-vba-and-office"></a>Použití modulu runtime Visual Basic 6.0 uvnitř VBA a Office
 
@@ -186,7 +186,7 @@ Pokud zjistíte problém s vaší aplikací Visual Basic 6.0 spuštěn v jednom 
 |dbnmpntw.dll|    msader15.dll|    msvcrt40.dll|   oledb32.dll|
 |dcomcnfg.exe|    msado15.dll|     mtxdm.dll|      oledb32r.dll|
 |dllhost.exe|     msador15.dll|    mtxoci.dll|     oledlg.dll|
-|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   olepro32.dll|
+|ds16gt.dll|      msadrh15.dll|    odbc16gt.dll|   Olepro32.dll|
 |ds32gt.dll|      mscpxl32.dll|    odbc32.dll|     olethk32.dll|
 |expsrv.dll|      msdadc.dll|      odbc32gt.dll|   regsvr32.exe|
 |hh.exe|          msdaenum.dll|    odbcad32.exe|   rpcns4.dll|
@@ -201,7 +201,7 @@ Pokud zjistíte problém s vaší aplikací Visual Basic 6.0 spuštěn v jednom 
 |msadce.dll|      msdatsrc.tlb|    oddbse32.dll|   Storage.dll|
 |msadcer.dll|     msdatt.dll|      odexl32.dll|    vbajet32.dll|
 |msadcf.dll|      msdfmap.dll|     odfox32.dll|    vfpodbc.dll|
-|msadcfr.dll|     msdfmap.ini|     odpdx32.dll|                |
+|msadcfr.dll|     msdfmap.ini|     Odpdx32.dll|                |
 |msadco.dll|      msjtes40.dll|    odtext32.dll|               |
 
 ## <a name="supported-runtime-files-to-distribute-with-your-application"></a>Soubory podporované modulu runtime pro distribuci s vaší aplikací
@@ -248,7 +248,7 @@ Následující binární soubory jsou nezbytné pro podporu jazyka Visual Basic 
 
 ### <a name="supported-runtime-files-to-distribute-with-your-application"></a>Soubory podporované modulu runtime pro distribuci s vaší aplikací
 
-|JPN|KOR|CHT|CHS|
+|JPN|KOR|CHT|SADA CHS|
 |---|---|---|---|
 |mfc42jpn.dll|  mfc42kor.dll|  mfc42cht.dll|  mfc42chs.dll|
 |scrrnjp.dll|   scrrnko.dll|   scrrncht.dll|  scrrnchs.dll|

@@ -1,23 +1,21 @@
 ---
-title: "Podporované edice sady Visual Studio pro vizualizaci &amp; modelování SDK | Microsoft Docs"
-ms.custom: 
+title: Podporované edice sady Visual Studio pro vizualizaci &amp; modelování SDK | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 359bb9864532f2f3fbeb4fecca28c54ea0a96e17
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f62f4710a6991e9a551bfd6bf4569d87f1ba5fab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Verze Visual Studia podporované pro Visualization &amp; Modeling SDK
 Seznam edice sady Visual Studio, které jsou podporovány jsou následující [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] v prostředí pro tvorbu a nasazení. Další informace o těchto edicích naleznete v tématu Microsoft [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [středisku pro vývojáře](http://go.microsoft.com/fwlink/?LinkId=75628).  

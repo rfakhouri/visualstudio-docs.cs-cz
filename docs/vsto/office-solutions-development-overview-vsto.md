@@ -1,12 +1,10 @@
 ---
-title: "Přehled vývoje řešení pro systém Office (VSTO) | Microsoft Docs"
-ms.custom: 
+title: Přehled vývoje řešení pro systém Office (VSTO) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 53ff49eb204eda28174344b44d58e236bde24c64
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f36b75b8c8c3cde4441520819ab566696d1d9066
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Přehled vývoje řešení pro systém Office (VSTO)
   Pomocí aplikace Microsoft Office jako front-endu řešení můžete využít výhod známé Microsoft Office uživatelská rozhraní a nástroje, jako je funkce zpracování textu v aplikaci Word, funkce analýzy dat aplikace Excel a funkcím pro správu e-mailu aplikace Outlook . Můžete vyvinout řešení v sadě Visual Studio k přizpůsobení aplikace Office a přidání specifické funkce, které jsou potřeba pro své obchodní procesy. Například můžete zapnout Word do generátor kontrakt, který sestaví kontrakty se existující částí, které lze upravovat nebo ne upravovat. V aplikaci Excel můžete vytvořit listu aplikace automatizované nároky přizpůsobené pro různé projekty. Vaši uživatelé můžete taky využít řešení pro systém office do offline režimu, které umožňuje komplexní řešení praktičtější, než by se použily, pokud používáte architekturu založenou na web.  
@@ -29,7 +28,7 @@ ms.lasthandoff: 01/10/2018
  Toto téma obsahuje přehled typů řešení pro systém Office, které můžete vytvořit pomocí sady Visual Studio Tools pro sadu Office (VSTO) šablony dostupné v Office developer tools v sadě Visual Studio. Obecné informace o tom, jak vyvíjet s Office, najdete v článku [Office Developer Center](https://dev.office.com/).  
   
 ## <a name="choosing-an-office-project-type"></a>Vybrat typ projektu Office  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]poskytuje následující typy šablon projektu pro vývoj pro Office na základě VSTO:  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] poskytuje následující typy šablon projektu pro vývoj pro Office na základě VSTO:  
   
 -   **Úpravy na úrovni dokumentů** konkrétní dokumentu nejsou přidruženy.  
   
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="document-level-customizations"></a>Přizpůsobení na úrovni dokumentu  
  Úpravy na úrovni dokumentů obsahovat sestavení, které souvisí s jedním dokumentem, sešitu nebo šablony v aplikaci Microsoft Office Word nebo Microsoft Office Excel. Sestavení je načten při přidružené dokumentu. Funkce úpravy, které vytvoříte jsou k dispozici pouze při otevřené přidružené dokumentu. Přizpůsobení nelze provádět změny celou aplikaci, například zobrazení novou kartu položku nebo pásu karet nabídky v otevřeném dokumentu.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]obsahuje nástroje, které vám pomůžou vytvořit úpravy na úrovni dokumentů. Dokument, který upravíte je umístěn jako návrhové ploše v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], což umožňuje návrh dokumentu pomocí přetahování a vkládání ovládacích prvků na něj. Mnoho dalších [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkce jsou dostupné v projektech na úrovni dokumentu, jako jsou ovládací prvky Windows Forms, přetažení myší datové vazby a integrované ladicí program.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obsahuje nástroje, které vám pomůžou vytvořit úpravy na úrovni dokumentů. Dokument, který upravíte je umístěn jako návrhové ploše v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], což umožňuje návrh dokumentu pomocí přetahování a vkládání ovládacích prvků na něj. Mnoho dalších [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkce jsou dostupné v projektech na úrovni dokumentu, jako jsou ovládací prvky Windows Forms, přetažení myší datové vazby a integrované ladicí program.  
   
  Další informace o přizpůsobení najdete v následujících tématech:  
   
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="vsto-add-ins"></a>Doplňků VSTO  
  Doplňků VSTO obsahovat sestavení, které je přidružen k aplikaci Microsoft Office. Obvykle doplňku VSTO spustí při spuštění v přidružené aplikaci, i když uživatelé můžete také načíst doplňků VSTO po aplikace je již spuštěna. Funkce doplňků VSTO vytvořených jsou k dispozici pro aplikaci samostatně, bez ohledu na to, které jsou otevřené dokumenty.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]obsahuje nástroje, které vám pomůžou vytvořit doplňků VSTO. Doplněk projekty patří automaticky generované třídy, která představuje doplňku VSTO. Tato třída poskytuje vlastnosti a události, které můžete použít pro přístup k modelu objektu hostitelské aplikace a spuštění kódu při doplňku VSTO načíst a vypnout. Mnoho dalších [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkce jsou dostupné v doplňku VSTO projektech, jako jsou Windows Forms a integrované ladicí program.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obsahuje nástroje, které vám pomůžou vytvořit doplňků VSTO. Doplněk projekty patří automaticky generované třídy, která představuje doplňku VSTO. Tato třída poskytuje vlastnosti a události, které můžete použít pro přístup k modelu objektu hostitelské aplikace a spuštění kódu při doplňku VSTO načíst a vypnout. Mnoho dalších [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] funkce jsou dostupné v doplňku VSTO projektech, jako jsou Windows Forms a integrované ladicí program.  
   
  Další informace o doplňků VSTO najdete v následujících tématech:  
   
@@ -89,7 +88,7 @@ ms.lasthandoff: 01/10/2018
  Zabezpečení pro řešení pro systém Office VSTO je vynucené řadu kontroluje, zda [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vytvoří při instalaci a načte řešení. Tyto kontroly zahrnují ověření, zda umístění manifestu nasazení je důvěryhodný, nebo zda je důvěryhodný certifikát použitý k podepsání manifestu nasazení. Další informace najdete v tématu [zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)   
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)   
  [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   

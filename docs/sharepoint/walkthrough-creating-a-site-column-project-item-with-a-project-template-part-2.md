@@ -1,25 +1,24 @@
 ---
-title: "Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2 | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2 | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f0472688f9f36d2b14c89cc904bf6ce4badd6ca6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružit ho pomocí šablony projektu v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce vám pomůže shromažďovat informace od uživatelů, když používat šablony pro vytvoření nového projektu, který obsahuje položky projektu. Informace, které slouží k inicializaci položky projektu.  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
 -   Ladění a testování průvodce.  
   
 > [!NOTE]  
->  Můžete si stáhnout ukázku, která obsahuje dokončené projekty, kódu a další soubory v tomto návodu z následujícího umístění: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Můžete si stáhnout ukázku, která obsahuje dokončené projekty, kódu a další soubory v tomto návodu z následujícího umístění: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li provést tento postup, musíte nejdřív vytvořit řešení SiteColumnProjectItem provedením [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Sloupce webu ve službě SharePoint. Další informace najdete v tématu [sloupce](http://go.microsoft.com/fwlink/?LinkId=183547).  
   
-##  <a name="wizardcomponents"></a>Seznámení se s komponentami Průvodce  
+##  <a name="wizardcomponents"></a> Seznámení se s komponentami Průvodce  
  Průvodce, který je ukázáno v tomto návodu obsahuje několik komponent. Následující tabulka popisuje tyto součásti.  
   
 |Součást|Popis|  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  V seznamu šablon projektu, zvolte **knihovny ovládací prvek WPF uživatelského**, název projektu **ProjectTemplateWizard**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **ProjectTemplateWizard** projektu a řešení a otevře výchozí UserControl1.xaml soubor.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **ProjectTemplateWizard** projektu a řešení a otevře výchozí UserControl1.xaml soubor.  
   
 6.  Odstraňte soubor UserControl1.xaml z projektu.  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Vyberte **knihovny tříd** projektu šablony, název projektu **SharePointCommands**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **SharePointCommands** projektu a řešení a otevře soubor výchozího kódu Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **SharePointCommands** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
 5.  Odstraňte soubor kódu Class1 z projektu.  
   
@@ -163,7 +162,7 @@ ms.lasthandoff: 01/10/2018
   
 13. Pokud vyvíjíte projekt Visual Basic, importujte obor názvů ProjectTemplateWizard do projektu pomocí **Návrhář projektu**.  
   
-     Další informace najdete v tématu [postupy: Přidání nebo odebrání oborů názvů importovaný &#40; Visual Basic &#41; ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+     Další informace najdete v tématu [postupy: Přidání nebo odebrání oborů názvů importovaný &#40;jazyka Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
 #### <a name="to-configure-the-sharepointcommands-project"></a>Ke konfiguraci projektu SharePointCommands  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Vyberte šipku vedle položky **přidat** tlačítko a potom vyberte **přidat jako odkaz** v nabídce, která se zobrazí.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá do souboru kódu **SharePointCommands** projektu jako odkazu. Kód soubor je umístěný ve **ProjectTemplateWizard** projektu, ale kód v souboru také kompiluje v **SharePointCommands** projektu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá do souboru kódu **SharePointCommands** projektu jako odkazu. Kód soubor je umístěný ve **ProjectTemplateWizard** projektu, ale kód v souboru také kompiluje v **SharePointCommands** projektu.  
   
 5.  V **SharePointCommands** projekt, přidejte jiný kód soubor s názvem příkazy.  
   
@@ -406,7 +405,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Další informace o `WizardExtension` elementu, najdete v části [WizardExtension – Element &#40; Šablony sady Visual Studio &#41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Další informace o `WizardExtension` elementu, najdete v části [WizardExtension – Element &#40;šablony sady Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Soubor uložte a zavřete.  
   

@@ -1,12 +1,10 @@
 ---
-title: "Navrhování modelu připojení obchodních dat | Microsoft Docs"
-ms.custom: 
+title: Navrhování modelu připojení obchodních dat | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], designing a model
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe3de196219091478a30ff07d6c2f5916d423f15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6f34a754562674aacf989c294ff2662ca4f8f28f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-a-business-data-connectivity-model"></a>Navrhování modelu připojení obchodních dat
   Přidáním entity a metody pro soubor modelu můžete vyvinout model pro službu Business Data Connectivity (BDC). Entity popisuje kolekci datová pole. Například entita může představovat tabulky v databázi. Metoda provede úlohu například přidání, odstranění nebo aktualizace dat reprezentována entity. Další informace najdete v tématu [integrace obchodních dat do služby SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio umožňuje kopírování popisovače typu mezi parametry v modelu. Například můžete třeba definovat popisovač typu s názvem `CustomerTD` pro návratový parametr `GetCustomer` metoda. Můžete zkopírovat `CustomerTD` zadejte popisovač **Průzkumník modelu BDC**a potom vložte tento popisovač typu pro vstupní parametr `CreateCustomer` metoda. Předchází se tak nutnosti stejné popisovač typu zadat více než jednou.  
   
-##  <a name="MethodInstances"></a>Instance metody  
+##  <a name="MethodInstances"></a> Instance metody  
  Když vytvoříte metodu, Visual Studio přidá výchozí metoda instance. Instance metody je odkaz na metodu, plus výchozí hodnoty pro parametry. Jediná metoda může mít více instancí metoda. Každá instance je kombinací podpis metody a sadu výchozích hodnot. Další informace najdete v tématu [postupy: definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
  Když spouštíte projekt, zobrazit instance metoda v rozevíracím seznamu výše seznamu služby SharePoint. Uživatelé mohou metoda instance, které chcete zobrazit data.  

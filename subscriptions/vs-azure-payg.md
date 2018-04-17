@@ -1,24 +1,24 @@
 ---
-title: "Výhody Azure srážek daně ze MZDY"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to set up your Azure Pay-As-You-Go account.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4add5862ba05a588a3320b3f2530787ff153c974
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+title: Výhody Azure srážek daně ze MZDY
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Informace o nastavení vašeho účtu Azure průběžnými platbami.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: cd1b545e4b3f6300431c6bfd7c28c9998572dacf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="setting-up-azure-devtest-pay-as-you-go-subscription"></a>Nastavení předplatného Azure pro vývoj/testování průběžné platby
+# <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Nastavení předplatného služby Azure pro vývoj/testování průběžné platby
 Spolupracujte se svým týmem v cloudu.  Vytvořte více vývojářů a testovací průběžné platby odběry, povolení spolupráce s další odběratele a zároveň poskytuje izolaci mezi týmy a prostředí.  Obdrží výhradní hodinové zvýhodněné sazby pro vývojové a testovací a cloudu práv na používání pro vaše předplatné softwaru v Azure.
 
-1.  Chcete-li používat vaše zvýhodněné předplatné Azure průběžné platby, klikněte na **aktivovat** odkaz v dolní části dlaždici výhody.   
+1.  Pokud chcete používat vaše zvýhodněné předplatné Azure průběžné platby, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) a klikněte na **aktivovat** odkaz v dolní části dlaždici výhody.   
 
     ![Azure srážek daně ze MZDY dlaždice](_img\vs-azure-payg\vs-azure-payg-tile.png) 
 

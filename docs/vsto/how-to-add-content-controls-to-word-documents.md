@@ -1,12 +1,10 @@
 ---
-title: "Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], restricted permissions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b1dd59fc777c012f92baaf96302f7cf031ad151c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6edddf79bea7c3d4cd3cd5ef762dd9757509c754
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word
   V aplikaci Word projekty na úrovni dokumentu můžete přidat ovládací prvky obsahu v dokumentu ve vašem projektu, v době návrhu nebo za běhu. V projektu doplňku VSTO pro Word můžete přidat ovládací prvky obsahu pro všechny otevřené dokumenty v době běhu.  
@@ -51,7 +50,7 @@ ms.lasthandoff: 01/10/2018
   
  Informace o ovládacích prvcích obsahu najdete v tématu [ovládací prvky obsahu](../vsto/content-controls.md).  
   
-##  <a name="designtime"></a>Přidání ovládacích prvků obsahu v době návrhu  
+##  <a name="designtime"></a> Přidání ovládacích prvků obsahu v době návrhu  
  Přidání ovládacích prvků obsahu v dokumentu v projektech na úrovni dokumentu v době návrhu několika způsoby:  
   
 -   Přidání obsahu ovládacího prvku z **ovládací prvky aplikace Word** kartě **sada nástrojů**.  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  V **ovládací prvky** skupiny, klepněte na ikonu pro ovládací prvek obsahu, který chcete přidat.  
   
-##  <a name="runtimedoclevel"></a>Přidání ovládacích prvků obsahu za běhu v projektech na úrovni dokumentu  
+##  <a name="runtimedoclevel"></a> Přidání ovládacích prvků obsahu za běhu v projektech na úrovni dokumentu  
  Přidáním ovládací prvky obsahu prostřednictvím kódu programu do dokumentu za běhu pomocí metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnost `ThisDocument` třídy ve vašem projektu. Každá z metod má tři přetížení, které můžete použít k přidání obsahu ovládacího prvku následujícím způsobem:  
   
 -   Přidání ovládacího prvku v aktuálním výběru.  
@@ -138,7 +137,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_ContentControlReference#702](../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/RichText.cs#702)]
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]  
   
-##  <a name="runtimeaddin"></a>Přidání ovládacích prvků obsahu za běhu v projektu doplňku VSTO  
+##  <a name="runtimeaddin"></a> Přidání ovládacích prvků obsahu za běhu v projektu doplňku VSTO  
  Můžete přidat ovládací prvky obsahu programově pro všechny otevřené dokumenty v době běhu pomocí doplňku VSTO. Chcete-li to provést, vygenerovat <xref:Microsoft.Office.Tools.Word.Document> hostitelem položku, která je založená na dokument otevřít a potom pomocí metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnosti této položky hostitele. Každá z metod má tři přetížení, které můžete použít k přidání obsahu ovládacího prvku následujícím způsobem:  
   
 -   Přidání ovládacího prvku v aktuálním výběru.  

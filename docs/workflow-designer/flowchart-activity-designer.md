@@ -1,5 +1,5 @@
 ---
-title: "Vývojový diagram Návrhář aktivity | Microsoft Docs"
+title: Vývojový diagram Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,14 +9,14 @@ f1_keywords:
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bd8875fe9215f3ee8f0f187b84c0d38833764e3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: f7db449f538f09a247bc3c67ee26f487a6c81eb0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="flowchart-activity-designer"></a>Vývojový diagram Návrhář aktivity
 <xref:System.Activities.Statements.Flowchart> Aktivita se používá k vytváření pracovních postupů, které definovat a spravovat komplexní tok ovládací prvky. A <xref:System.Activities.Statements.Flowchart> může být vytvořené v kódu nebo pomocí [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Toto téma dokumenty [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostředí. Návrhář aktivity pracovního postupu Návrháře pracovního postupu systému Windows umožňuje vývojářům pro vytváření pracovních postupů přirozené způsobem.
@@ -45,4 +45,4 @@ ms.lasthandoff: 03/12/2018
 
 - [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)
 - [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)
-- [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)
+- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)

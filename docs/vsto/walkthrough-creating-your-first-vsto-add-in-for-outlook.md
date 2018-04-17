@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Outlook | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3f92c898b6eb8ba0f143e0a2069e35c70cc6e6b2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7d748ef190ef60de5ae7f7300051bb1b524462d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-outlook"></a>Postup: Vytvoření prvního doplňku VSTO pro Outlook
-  Tento návod ukazuje, jak vytvořit doplňku VSTO pro aplikaci Microsoft Office Outlook. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro aplikace, samostatně, bez ohledu na to, který je otevřete položku aplikace Outlook. Další informace najdete v tématu [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+  Tento návod ukazuje, jak vytvořit doplňku VSTO pro aplikaci Microsoft Office Outlook. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro aplikace, samostatně, bez ohledu na to, který je otevřete položku aplikace Outlook. Další informace najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]vytvoří **FirstOutlookAddIn** projektu a otevře **ThisAddIn** souboru kódu v editoru.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstOutlookAddIn** projektu a otevře **ThisAddIn** souboru kódu v editoru.  
   
 ## <a name="writing-code-that-adds-text-to-each-new-mail-message"></a>Psaní kódu, který přidává Text pro každou novou e-mailovou zprávu  
  Dál přidejte kód do souboru kódu ThisAddIn. Nový kód používá objektový model aplikace Outlook k přidání textu do každé nové e-mailovou zprávu. Ve výchozím nastavení soubor ThisAddIn kód obsahuje následující generovaný kód:  

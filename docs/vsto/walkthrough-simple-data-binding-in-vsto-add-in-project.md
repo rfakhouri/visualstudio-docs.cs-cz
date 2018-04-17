@@ -1,12 +1,10 @@
 ---
-title: "Návod: Jednoduché datové vazby v VSTO doplňku projekt | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Jednoduché datové vazby v VSTO doplňku projekt | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], simple binding data
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 8d3f9d4f097d33f08133af4d1c42c140a6b7c04a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7288cf17f7870747399116a1b779c2fa3b67205f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Návod: Jednoduché datové vazby v projektu doplňku VSTO
   Data můžete vázat na hostiteli a ovládacích prvků Windows Forms v projekty doplňku VSTO. Tento návod ukazuje, jak přidání ovládacích prvků do dokumentu aplikace Microsoft Office Word a vytvoření vazby ovládacích prvků k datům v době běhu.  
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
 -   Přístup k spuštěnou instanci systému SQL Server 2005 nebo SQL Server 2005 Express, která má `AdventureWorksLT` ukázkové databáze, které jsou k němu připojen. Si můžete stáhnout `AdventureWorksLT` databáze z [webu CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Další informace o připojení databáze najdete v následujících tématech:  
   

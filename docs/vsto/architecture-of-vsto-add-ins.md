@@ -1,12 +1,10 @@
 ---
-title: "Architektura doplňků VSTO | Microsoft Docs"
-ms.custom: 
+title: Architektura doplňků VSTO | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], architecture
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a8abb77978731a9fa5cd43acdcb4928944c605b1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 94c8a9fa83cd4a37918c22ae0e38ab23c3ca94d7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architektura doplňků VSTO
   Doplňků VSTO vytvořené pomocí doplňku Office developer tools v sadě Visual Studio mít architektury funkce, které zdůraznil stability a zabezpečení a umožňuje jim úzce spolupracovat s Microsoft Office. Toto téma popisuje následující aspekty doplňků VSTO:  
@@ -37,19 +36,19 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- Obecné informace o vytváření doplňků VSTO najdete v tématu [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md) a [Začínáme programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md).  
+ Obecné informace o vytváření doplňků VSTO najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) a [získávání VSTO spuštění programování doplňků](../vsto/getting-started-programming-vsto-add-ins.md).  
   
-##  <a name="UnderstandingAddIns"></a>Principy doplňků VSTO  
+##  <a name="UnderstandingAddIns"></a> Principy doplňků VSTO  
  Když používáte Office developer tools v sadě Visual Studio k vytvoření doplňku VSTO, můžete vytvořit sestavení spravovaného kódu, které je načtena aplikace Microsoft Office. Po načíst sestavení doplňku VSTO může reagovat na události, které jsou vyvolány v aplikaci (například když uživatel klikne položku nabídky). Doplňku VSTO můžete také volání do modelu objektu automatizovat a rozšířit aplikace a může použít jakékoli třídy v [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
- Sestavení komunikuje s komponentami aplikace modelu COM pomocí primární spolupracující sestavení aplikace. Další informace najdete v tématu [primární zprostředkovatel komunikace s objekty sestavení sady Office](../vsto/office-primary-interop-assemblies.md) a [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Sestavení komunikuje s komponentami aplikace modelu COM pomocí primární spolupracující sestavení aplikace. Další informace najdete v tématu [primární zprostředkovatel komunikace s objekty sestavení sady Office](../vsto/office-primary-interop-assemblies.md) a [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Pokud více doplňků VSTO jsou nainstalovány pro aplikaci, načíst je každý doplňku VSTO v doméně jinou aplikaci. To znamená, že jeden VSTO Add-in, který se chová nesprávně nemohou způsobit další doplňků VSTO selhání. Pomáhá také zajistěte, aby při ukončení aplikace všechny doplňku VSTO sestavení uvolněn z paměti. Další informace o doménách aplikací najdete v tématu [aplikační domény](/dotnet/framework/app-domains/application-domains).  
   
 > [!NOTE]  
 >  Doplňků VSTO vytvořené pomocí doplňku Office developer tools v sadě Visual Studio jsou určeny k použití jenom v případě, že se koncový uživatel spustí hostitele aplikace Microsoft Office. Pokud je aplikace spuštěna prostřednictvím kódu programu (například pomocí automatizace), doplňku VSTO nemusí fungovat podle očekávání.  
   
-##  <a name="AddinComponents"></a>Součástí doplňků VSTO  
+##  <a name="AddinComponents"></a> Součástí doplňků VSTO  
  Přestože je sestavení doplňku VSTO hlavní součásti, existuje několik komponent, které hraje důležitou roli v tom, jak aplikace Microsoft Office zjišťovat a načíst doplňků VSTO.  
   
 ### <a name="registry-entries"></a>Položky registru  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
  Další informace najdete v tématu [Visual Studio Tools for Office Runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-##  <a name="HowAddinsWork"></a>Jak fungují doplňků VSTO pomocí aplikace Microsoft Office  
+##  <a name="HowAddinsWork"></a> Jak fungují doplňků VSTO pomocí aplikace Microsoft Office  
  Pokud uživatel spustí aplikaci Microsoft Office, aplikace použije manifest nasazení a manifest aplikace pro vyhledání a načtení nejaktuálnější verzi sestavení doplňku VSTO. Následující obrázek znázorňuje základní architektura těchto doplňků VSTO.  
   
  ![Architektura doplňku office 2007](../vsto/media/office07addin.png "architektura doplňku Office 2007")  

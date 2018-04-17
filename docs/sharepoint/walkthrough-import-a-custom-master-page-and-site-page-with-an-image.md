@@ -1,12 +1,10 @@
 ---
-title: "Návod: Import vlastní stránky předlohy a stránky webu s bitovou kopii | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Import vlastní stránky předlohy a stránky webu s bitovou kopii | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 544c3c727046fdcabcde90f221f4b630c11cf29f
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f90f85e7f22cf3bdecf90aaf6f8d61af3f399a68
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Návod: Import vlastní stránky předlohy a stránky webu s obrázkem
   Tento návod ukazuje, jak importovat SharePoint stránky předlohy a stránky webu, který obsahuje bitovou kopii do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projektu služby SharePoint.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Požadavky  
  Musíte mít následující součásti pro dokončení tohoto návodu:  
   
--   Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] a služby SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] a služby SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   Visual Studio.  
   
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Otevřete web služby SharePoint k zobrazení nasazené položky.  
   
- Alternativní způsob k importu souborů do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a nasadit je do služby SharePoint je na přidání souborů do modulů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Postupy: Import stránky předlohy nebo motivu](../sharepoint/how-to-import-a-master-page-or-theme.md) a [vložené soubory v řešení pomocí modulů](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
+ Alternativní způsob k importu souborů do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a nasadit je do služby SharePoint je na přidání souborů do modulů v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Postupy: Import stránky předlohy nebo motivu](../sharepoint/how-to-import-a-master-page-or-theme.md) a [vložené soubory v řešení pomocí modulů](../sharepoint/using-modules-to-include-files-in-the-solution.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Import položek z existující stránky SharePoint](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)   

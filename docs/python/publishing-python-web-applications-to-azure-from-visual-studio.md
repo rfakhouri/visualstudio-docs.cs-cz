@@ -1,28 +1,25 @@
 ---
-title: Publikování aplikace Python do Azure App Service | Microsoft Docs
+title: Publikování aplikace Python do Azure App Service
 description: Postup publikování webové aplikace Python přímo do služby Azure App Service ze sady Visual Studio, včetně potřeby obsahu pro soubor web.config.
 ms.custom: ''
 ms.date: 09/27/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 110ae4660f81766b5e9fb93afc96f606b0549ec3
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: f2aeaa9b9b7b0f6370ec7590bd2eb754b893aa2c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Publikování do služby Azure App Service
 

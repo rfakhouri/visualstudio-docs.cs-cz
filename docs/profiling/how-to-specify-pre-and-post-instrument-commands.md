@@ -1,13 +1,10 @@
 ---
-title: "Postupy: Zadejte příkazy před a po instrumentaci | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Zadejte příkazy před a po instrumentaci | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.instrument
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - events [Visual Studio], pre-instrument
 - pre-instrument events, performance tools
 ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 641b03b0740cc05275135753eb525fde271239e9
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: e49f0214bc83b91ea3c0fbfb1042c9625489e7a3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Postupy: Určení příkazů k provedení před instrumentací a po instrumentaci
 
@@ -49,7 +45,7 @@ Na 64bitových počítačích zadejte cestu podle cílové platformy PROFILOVAN�
 
 - Pro 64bitové aplikace je výchozí adresář profiler nástrojů:
 
-     *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     *Jednotka*\Program soubory (x86) \Microsoft Visual Studio 10.0\Team nástroje Tools\x64
 
 ## <a name="to-specify-pre-instrument-commands"></a>Chcete-li určit příkazy před instrumentací
 

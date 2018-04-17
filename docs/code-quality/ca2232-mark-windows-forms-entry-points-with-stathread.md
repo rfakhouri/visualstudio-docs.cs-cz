@@ -1,12 +1,10 @@
 ---
-title: "CA2232: Označte Windows Forms vstupní body pomocí STAThread | Microsoft Docs"
-ms.custom: 
+title: 'CA2232: Označte Windows Forms vstupní body pomocí STAThread | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - MarkWindowsFormsEntryPointsWithStaThread
 - CA2232
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2232
 - MarkWindowsFormsEntryPointsWithStaThread
 ms.assetid: a3c95130-8e7f-4419-9fcd-b67d077e8efb
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fe12ce5947a22414aaf07c59945fd667b106101f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2d28300d33d02fa4ca11ee1b7110a10a677b64bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232: Označte vstupní bod modelu Windows Forms pomocí STAThread
 |||  
@@ -37,10 +35,10 @@ ms.lasthandoff: 12/22/2017
  Sestavení odkazuje <xref:System.Windows.Forms> obor názvů a jeho vstupní bod není označen atributem <xref:System.STAThreadAttribute?displayProperty=fullName> atribut.  
   
 ## <a name="rule-description"></a>Popis pravidla  
- <xref:System.STAThreadAttribute>Označuje, že COM model pro aplikaci vláken je single-threaded apartment. Tento atribut musí být přítomen u vstupního bodu jakékoliv aplikace, která používá model Windows Forms. Pokud je vynechán, nemusí součásti systému Windows pracovat správně. Pokud atribut neexistuje, aplikace používá model více vláken typu apartment, což není podporováno pro Windows Forms.  
+ <xref:System.STAThreadAttribute> Označuje, že COM model pro aplikaci vláken je single-threaded apartment. Tento atribut musí být přítomen u vstupního bodu jakékoliv aplikace, která používá model Windows Forms. Pokud je vynechán, nemusí součásti systému Windows pracovat správně. Pokud atribut neexistuje, aplikace používá model více vláken typu apartment, což není podporováno pro Windows Forms.  
   
 > [!NOTE]
->  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]projekty, které používají rozhraní není nutné označit **hlavní** metoda pomocí STAThread. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilátoru dělá automaticky.  
+>  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projekty, které používají rozhraní není nutné označit **hlavní** metoda pomocí STAThread. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilátoru dělá automaticky.  
   
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Chcete-li opravit porušení toto pravidlo, přidejte <xref:System.STAThreadAttribute> atribut vstupní bod. Pokud <xref:System.MTAThreadAttribute?displayProperty=fullName> atribut je k dispozici, odeberte ji.  

@@ -1,23 +1,21 @@
 ---
-title: "Postupy: vytvoření dokumentu XML na základě schématu XSD | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytvoření dokumentu XML na základě schématu XSD | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 63ce40fb765d3aab4cb91ebff8a3552f69d92586
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 042b5d2975468cbaa8260d830235381904dad7e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Postupy: vytvoření dokumentu XML na základě schématu XSD
 **Generovat XML ukázka** funkce generuje ukázkový soubor XML založené na souboru schématu XML (XSD).  
@@ -34,7 +32,7 @@ Tato funkce se obvykle vygeneruje platný dokumentů XML. Ale pokud schéma obsa
   
 -   `xs:key`, `xs:keyref`, A `xs:unique` omezení identity.  
   
--   `xs:pattern`omezující vlastnosti.  
+-   `xs:pattern` omezující vlastnosti.  
   
 -   Výčty `xs:QName` typu.  
   

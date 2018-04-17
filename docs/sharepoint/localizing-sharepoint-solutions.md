@@ -1,12 +1,10 @@
 ---
-title: "Lokalizace řešení služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: Lokalizace řešení služby SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.GlobalAndFeatureResource
 - VS.SharePoint.Project.AddResourceDialog
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a1ca2b08bda0a3336b573da7df910872e13470b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 86ffb2795d5e2a9b9583360146c4bb1d2556b9a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-sharepoint-solutions"></a>Lokalizace řešení služby SharePoint
   Příprava aplikace tak, aby bylo možné po celém světě proces se označuje jako lokalizace. Lokalizace je překlad prostředků do konkrétní jazykové verze. Další informace najdete v tématu [Globalizing a lokalizace aplikací](/visualstudio/ide/globalizing-and-localizing-applications). Toto téma poskytuje přehled o tom, jak lokalizace řešení služby SharePoint.  
@@ -113,7 +112,7 @@ $Resources:String ID
 ### <a name="localizing-code"></a>Lokalizace kódu  
  Kromě lokalizace funkce řetězce a [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] značek, máte také k lokalizaci řetězce zpráv a chyba řetězce, které jsou v řešení kódu. Lokalizované informační a chybové zprávy jsou obsaženy v satelitní sestavení. Satelitní sestavení obsahovat řetězce, které jsou viditelné pro uživatele, jako například [!INCLUDE[TLA2#tla_ui](../sharepoint/includes/tla2sharptla-ui-md.md)] zprávy text a výstup jako výjimky.  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]používá standardní model hvězdicové rozhraní .NET Framework. Rozbočovače nebo sestavení hlavní aplikace obsahuje výchozí jazyk prostředky. Koncových nebo satelitní sestavení obsahují prostředky pro specifický jazyk. Další informace najdete v tématu [balení a nasazení prostředků](http://go.microsoft.com/fwlink/?LinkId=179280). Satelitní sestavení se kompilují ze souborů prostředků (RESX). Když přidáte soubory prostředků pro specifický jazyk do projektu a řešení balíčku, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zkompiluje soubory prostředků do satelitní sestavení s názvem *název projektu*. resources.dll.  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] používá standardní model hvězdicové rozhraní .NET Framework. Rozbočovače nebo sestavení hlavní aplikace obsahuje výchozí jazyk prostředky. Koncových nebo satelitní sestavení obsahují prostředky pro specifický jazyk. Další informace najdete v tématu [balení a nasazení prostředků](http://go.microsoft.com/fwlink/?LinkId=179280). Satelitní sestavení se kompilují ze souborů prostředků (RESX). Když přidáte soubory prostředků pro specifický jazyk do projektu a řešení balíčku, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zkompiluje soubory prostředků do satelitní sestavení s názvem *název projektu*. resources.dll.  
   
  Stejně jako u značek ASPX, lokalizace kódu aplikace SharePoint přidáním položky projektu samostatný soubor prostředků do projektu; jeden pro výchozí jazyk a jeden pro jednotlivé lokalizované jazyk. Ale jak je uvedeno nahoře, pokud již máte soubory prostředků pro lokalizace značek ASPX, můžete opakovaně použít je pro lokalizace kódu. Pokud potřebujete vytvořit soubory prostředků, zadejte název zvoleného spolu s příponou RESX souboru prostředků jazyka výchozí. Název soubory lokalizovaný prostředek se stejným názvem, spolu s jazykovou verzi pro specifický jazyk [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Nastavte vlastnost Akce sestavení každého souboru prostředků na vložený prostředek a umožňují tak vytváření satelitních sestavení prostředků.  
   

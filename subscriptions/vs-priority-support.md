@@ -1,26 +1,27 @@
 ---
-title: "Výhodou podpora priority předplatné sady Visual Studio | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/16/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the Priority Support benefit included in Visual Studio subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: b62a60207f306c623d53f67fbe7e473c5ee8164d
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Výhodou podpora priority předplatné sady Visual Studio | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/16/2018
+ms.topic: Get-Started-Article
+description: Další informace o benefitech Priority nepodporují zahrnuté v sadě Visual Studio předplatných.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: e2cad13b3904779bfaca86f7d3e66ac5dbbcfbb8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Podpora priority v sadě Visual Studio předplatných
 
-## <a name="overview"></a>Přehled 
 Výhody podporují prioritu poskytuje přístup k různým podporu komunitní fóra, kde můžete vyhledat existující příspěvcích nebo požádá nové dotazy.  Pokud váš dotaz není odpověděli komunitou do dvou dnů, tým podpory společnosti Microsoft vám poskytne odpověď.  
 
 Odběratelé s vybrané odběry Visual Studio jsou oprávněni přijímat priority nepodporují prostřednictvím velký počet fóra pokrývajících různá témata.
+
+## <a name="included-forums"></a>Zahrnuté fóra
 
 ### <a name="net-framework"></a>.NET Framework
    - Instalace rozhraní .NET framework a údržba 
@@ -45,7 +46,7 @@ Odběratelé s vybrané odběry Visual Studio jsou oprávněni přijímat priori
    - Ukázkové aplikace Windows Forms 
 
 
-### <a name="windows-universal-apps"></a>Windows Universal Apps
+### <a name="windows-universal-apps"></a>Univerzální aplikace pro Windows
    - Vývoj univerzálních aplikací pro Windows 
 
 ### <a name="internet-of-things-iot"></a>Internet věcí (IoT)
@@ -75,9 +76,9 @@ Odběratelé s vybrané odběry Visual Studio jsou oprávněni přijímat priori
 ### <a name="sql-server"></a>SQL Server
    - Začínáme s SQL serverem 
 
-   - SQL Server Data Access 
+   - Přístup k datům SQL serveru 
 
-   - SQL Server Database Engine 
+   - Databázový stroj systému SQL Server 
 
    - SQL Server datového skladu 
 
@@ -93,13 +94,13 @@ Odběratelé s vybrané odběry Visual Studio jsou oprávněni přijímat priori
 
    - Replikace SQL serveru 
 
-   - SQL Server Security 
+   - Zabezpečení SQL serveru 
 
    - Instalační program SQL serveru a Upgrade 
 
    - Nástroje systému SQL Server pro obecné 
 
-   - SQL Service Broker 
+   - Služby SQL Service Broker 
 
    - SQL Server Compact 
 
@@ -130,7 +131,7 @@ Odběratelé s vybrané odběry Visual Studio jsou oprávněni přijímat priori
 
    - SharePoint 2010 – pomocí návrháře služby SharePoint, InfoPath a jiných úprav 
 
-   - SharePoint 2010 - Search 
+   - SharePoint 2010 – hledání 
 
 ### <a name="visual-studio"></a>Visual Studio
    - Visual Studio Obecné otázky 
@@ -141,7 +142,7 @@ Odběratelé s vybrané odběry Visual Studio jsou oprávněni přijímat priori
 
    - Testování pomocí Visual Studio Test Manager (MTM) 
 
-   - Visual Studio Unit Testing 
+   - Testování částí sady Visual Studio 
 
 ### <a name="visual-studio-team-foundation-server"></a>Visual Studio Team Foundation Server
    - Sady TFS – nastavení a Správa 
@@ -194,37 +195,9 @@ Odběratelé s vybrané odběry Visual Studio jsou oprávněni přijímat priori
    - Systému SQL Server XML 
 
 
-
-### <a name="eligibility"></a>Podmínky
-| Úrovni předplatného / Program                                 | Výhody               | Obnovitelných?                                                         |
-|--------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise roční                              | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise každý měsíc                             | Není k dispozici         |                                                                    |
-| Visual Studio Professional Standard                          | Zahrnuté              | Ano                                                                |
-| Visual Studio Professional roční                            | Zahrnuté              | Ano                                                                | 
-| Visual Studio Professional každý měsíc                           | Není k dispozici         |                                                                    |
-| Visual Studio Test Pro                                       | Zahrnuté              | Ano                                                                |
-| MSDN platformy                                               | Zahrnuté              | Ano                                                                |
-| Visual Studio Dev Essentials                                 | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise - NFR<sup>1</sup>                               | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise - FTE                               | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise - MPN                               | Není k dispozici         |                                                                    |
-| Visual Studio Professional - MPN                             | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – MVP/VP                            | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise – Představte si (Premium)                 | Zahrnuté              | Ano                                                                |
-| Visual Studio Enterprise – BizSpark                          | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – MCT Software a služby           | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – MCT softwaru & vývojářů Services | Není k dispozici         |                                                                    |
-<sup>1</sup>*zahrnuje není pro prodej (NFR), cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP)*   
-
-Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
-
-
 ## <a name="activation-steps"></a>Postup aktivace
 Získávání přístupu k předchozí podporu je velmi jednoduchý. 
-1. Přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1. Přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. V části podpora vyhledejte dlaždici Priority nepodporují.  Klikněte na **nápovědu**.
 
@@ -238,8 +211,20 @@ Získávání přístupu k předchozí podporu je velmi jednoduchý.
 
     ![Příklad podpora priority](_img/vs-priority-support/vs-priority-support-example.png)
 
-## <a name="faq"></a>Nejčastější dotazy
-*Kontrola aktualizací*
+## <a name="eligibility"></a>Podmínky
+| Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardní, roční cloud)   | VL, Azure, prodejní, vybrané NFR<sup>1</sup> | Zahrnuté       |  Ano          |
+| Visual Studio Professional (standardní, roční cloud) | VL, Azure, maloobchodní                                       | Zahrnuté                                                            |Ano |
+| Visual Studio Test Professional (standardní)                         | VL, prodejní                                              | Zahrnuté                                                            |Ano |
+| MSDN platformy (standardní)                                          | VL, prodejní                                              | Zahrnuté                                                            |Ano |
+| Visual Studio Dev Essentials | NÁ  | Zahrnuté                                                            |Ano |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NÁ|
+
+<sup>1</sup>*zahrnuje: Ne pro prodej (NFR), představte si FTE, Visual Studio Industry Partner (VSIP).    Vyloučí: Microsoft Partner Network (MPN), MCT softwaru & služby, MCT softwaru a služeb Developer, BizSpark, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD).*
+
+Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
+
 
 ## <a name="support-resources"></a>Podpora prostředky
 -  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).

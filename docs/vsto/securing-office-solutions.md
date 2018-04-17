@@ -1,12 +1,10 @@
 ---
-title: "Zabezpečení řešení pro systém Office | Microsoft Docs"
-ms.custom: 
+title: Zabezpečení řešení pro systém Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - security [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 271aad509d5ad2adb764b55f93fa65a8178424bd
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a587534406d128655f9c24c9195902afb8e8817b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="securing-office-solutions"></a>Zabezpečení řešení pro systém Office
   Model zabezpečení pro řešení pro systém Office zahrnuje několik technologií: [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], v Centru zabezpečení v Microsoft Office a zónu lokalit s omezeným přístupem aplikace Internet Explorer. Následující části popisují, jak fungují funkce různých zabezpečení:  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-##  <a name="GrantingTrustToSolutions"></a>Udělení důvěry pro řešení pro systém Office  
+##  <a name="GrantingTrustToSolutions"></a> Udělení důvěry pro řešení pro systém Office  
  Udělení vztah důvěryhodnosti řešení pro systém Office znamená úprava zásady zabezpečení jednotlivých koncových uživatelů tak, aby důvěřoval řešení Office podle následujících informací:  
   
 -   Certifikát použitý k podepsání manifestu nasazení.  
@@ -50,22 +49,22 @@ ms.lasthandoff: 01/10/2018
   
  Další informace najdete v tématu [udělení vztah důvěryhodnosti s řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md).  
   
-##  <a name="GrantingTrustToDocuments"></a>Udělení důvěry dokumentům  
+##  <a name="GrantingTrustToDocuments"></a> Udělení důvěry dokumentům  
  Přizpůsobení na úrovni dokumentu vyžaduje, aby v adresáři, který je určený jako důvěryhodné umístění dokumentu. Další informace najdete v tématu [udělení vztah důvěryhodnosti s dokumenty](../vsto/granting-trust-to-documents.md).  
   
-##  <a name="GrantingTrustWindowsInstaller"></a>Udělení důvěry při použití Instalační služby systému Windows  
+##  <a name="GrantingTrustWindowsInstaller"></a> Udělení důvěry při použití Instalační služby systému Windows  
  Instalační služba systému Windows můžete použít k vytvoření souboru MSI instalace řešení pro systém Office do adresář Program Files, který vyžaduje oprávnění správce. Řešení Office v adresáři Program Files Visual Studio 2010 Tools for Office Runtime zvažuje těchto řešení pro systém Office být důvěryhodné a nezobrazuje vztahu důvěryhodnosti ClickOnce.  
   
-##  <a name="Security"></a>Specifické aspekty zabezpečení pro řešení Office  
+##  <a name="Security"></a> Specifické aspekty zabezpečení pro řešení Office  
  Funkce zabezpečení poskytované [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], a aplikace Microsoft Office může pomoct chránit proti celou řadu možných bezpečnostních hrozeb v řešeních pro systém Office. Další informace najdete v tématu [specifické aspekty zabezpečení pro řešení Office](../vsto/specific-security-considerations-for-office-solutions.md).  
   
-##  <a name="SecurityDuringDeployment"></a>Zabezpečení během vývoje  
+##  <a name="SecurityDuringDeployment"></a> Zabezpečení během vývoje  
  Visual Studio pro usnadnění vývojových procesech nastaví zásady zabezpečení, které jsou potřeba ke spuštění a ladění řešení ve vašem počítači pokaždé, když vytváříte projekt. V některých scénářích může být nutné provést další bezpečnostní kroky k vývoji projektu.  
   
 ### <a name="document-level-solutions"></a>Řešení na úrovni dokumentu  
  Plně kvalifikovaná cesta dokumentu musí přidat do seznamu důvěryhodných lokalit v aplikaci Microsoft Office, pokud vyvíjíte následující typy projektů:  
   
--   Řešení, které jsou v síťové sdílené složky, například na úrovni dokumentu * \\\servername\sharename*.  
+-   Řešení, které jsou v síťové sdílené složky, například na úrovni dokumentu  *\\\servername\sharename*.  
   
 -   Úrovni dokumentu řešení pro aplikaci Word používající DOC nebo DOCM soubory.  
   
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/10/2018
   
  Po chvíli se může být velký počet certifikátů dočasné, byste měli vymazat, někdy dočasné certifikáty.  
   
-##  <a name="VisualStudioToolsForOfficeRuntime"></a>Visual Studio Tools for Office Runtime  
+##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools for Office Runtime  
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Funkce k ověření identity vydavatele a oprávnění, kterým je uděleno oprávnění k přizpůsobení. Ověří, tato oprávnění prostřednictvím sekvenci kontroly zabezpečení.  
   
 ### <a name="security-during-customization-loading"></a>Zabezpečení během načítání přizpůsobení  

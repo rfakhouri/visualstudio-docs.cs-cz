@@ -1,8 +1,8 @@
 ---
-title: "Live jednotky testování v sadě Visual Studio | Microsoft Docs"
+title: Live jednotky testování v sadě Visual Studio | Microsoft Docs
 ms.date: 2017-03-07
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
 - Live Unit Testing
@@ -10,11 +10,11 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7ab19350529e4bd1c7edf914a8a8ca049ace6054
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 2f3eced8d8aba9adb0da652e285a594cf32711ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Testování částí pomocí Visual Studio 2017 za provozu
 
@@ -36,7 +36,7 @@ Za provozu testování částí funguje s tři architektury testování oblíben
 </tr>
 <tr>
    <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio version 2.2.0-beta3-build1187</td>
+   <td> 2.2.0-beta3-build1187 xunit.Runner.VisualStudio verze</td>
    <td>xunit 1.9.2</td> 
 </tr>
 <tr>

@@ -1,12 +1,10 @@
 ---
-title: "Postupy: vytváření obslužných rutin událostí v projektech Office | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytváření obslužných rutin událostí v projektech Office | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: c392d365ca14daeb204f4ee2f331bb1fe86ad304
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 833e41979d1dac9def7e647b396161d0ac5e2b67
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Postupy: Vytváření obslužných rutin událostí v projektech pro systém Office
   Existuje několik způsobů vytvoření obslužné rutiny událostí v jazyce Visual Basic a C#. V návrhovém zobrazení můžete vytvořit výchozí obslužné rutiny události pro ovládací prvky poklepáním na ovládací prvek nebo pomocí podokna události **vlastnosti** okno pro vytvoření obslužné rutiny pro všechny události v ovládacím prvku. Pokud jste v zobrazení kódu, nemusí ale chcete přepnout do zobrazení návrhu a vytvořit obslužnou rutinu události.  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
 ### <a name="to-create-an-event-handler-in-c"></a>Pro vytvoření obslužné rutiny událostí v jazyce C#  
   
-1.  Vytvoření delegát události v **spuštění** událostí třídy zadáním názvu kvalifikovaný události následované mezerou a zadáním  **+=**  bez mezery později. Příklad:  
+1.  Vytvoření delegát události v **spuštění** událostí třídy zadáním názvu kvalifikovaný události následované mezerou a zadáním **+=** bez mezery později. Příklad:  
   
      `this.<object name>.<event name> +=`  
   

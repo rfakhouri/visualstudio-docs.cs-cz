@@ -1,12 +1,10 @@
 ---
-title: "Programování přizpůsobení na úrovni dokumentu | Microsoft Docs"
-ms.custom: 
+title: Programování přizpůsobení na úrovni dokumentu | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - Sheet3
 - thisWorkbook
@@ -29,13 +27,14 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a614173fc33547c3512c031b7e0bd8a5575e7cb2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5f44b7d5a283d6e2946eb26e5036f47b09729de8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-document-level-customizations"></a>Programování přizpůsobení na úrovni dokumentu
   Když rozšíříte aplikace Microsoft Office Word nebo Microsoft Office Excel pomocí přizpůsobení na úrovni dokumentu, můžete provádět následující úlohy:  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
   
  Některé aspekty psaní kódu v projekty na úrovni dokumentu se liší od ostatních typů projektů v sadě Visual Studio. Řadu tyto rozdíly jsou příčinou způsob Office – objektové modely jsou umístěny do spravovaného kódu. Další informace najdete v tématu [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).  
   
- Obecné informace o přizpůsobení na úrovni dokumentu a dalších typů řešení, která můžete vytvořit pomocí nástroje pro vývoj pro Office v sadě Visual Studio najdete v tématu [přehled vývoje řešení pro systém Office & #40; VSTO & #41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Obecné informace o přizpůsobení na úrovni dokumentu a dalších typů řešení, která můžete vytvořit pomocí nástroje pro vývoj pro Office v sadě Visual Studio najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 ## <a name="using-the-generated-classes-in-document-level-projects"></a>Použití generované třídy v projekty na úrovni dokumentu  
  Když vytvoříte projekt na úrovni dokumentu a, Visual Studio automaticky vygeneruje třídu v projektu, který můžete zahájit zápis kódu. Visual Studio vytváří různé třídy pro Word a Excel:  
@@ -82,7 +81,7 @@ ms.lasthandoff: 01/10/2018
   
 -   `ThisWorkbook`: odvozuje od <xref:Microsoft.Office.Tools.Excel.WorkbookBase>.  
   
--   `Sheet`* n *: odvozuje od <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
+-   `Sheet` *n*: odvozuje od <xref:Microsoft.Office.Tools.Excel.WorksheetBase>.  
   
  Tyto základní třídy přesměrovat všechna volání do jejich členové interních implementací rozhraní odpovídající položky hostitele v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Například, pokud zavoláte <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> metodu `ThisDocument` třídy, <xref:Microsoft.Office.Tools.Word.DocumentBase> třída přesměruje toto volání na interní implementaci <xref:Microsoft.Office.Tools.Word.Document> rozhraní v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].  
   

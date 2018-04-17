@@ -1,12 +1,10 @@
 ---
-title: "Návod: Rozšiřování typu položky projektu služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Rozšiřování typu položky projektu služby SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e2f39fc15d73b2019e739d7695f40cf0e3fd0940
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ed2c425af4127af443254bfdc269d58c653bb3c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-a-sharepoint-project-item-type"></a>Návod: Rozšiřování typu položky projektu SharePoint
   Můžete použít **modelu připojení obchodních dat** položka projektu pro vytvoření modelu pro službu Business Data Connectivity (BDC) ve službě SharePoint. Ve výchozím nastavení když vytvoříte model pomocí této položky projektu data v modelu se uživatelům nezobrazí. Musíte taky vytvořit externího seznamu ve službě SharePoint umožňuje uživatelům zobrazit data.  
@@ -80,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  V **název** zadejte **GenerateExternalDataLists**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **GenerateExternalDataLists** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **GenerateExternalDataLists** projektu do **Průzkumníku řešení**.  
   
 7.  Pokud soubor source.extension.vsixmanifest automaticky neotevře, otevřete jeho místní nabídky v projektu GenerateExternalDataLists a potom zvolte **otevřete**  
   
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  V **název** zadejte **BdcProjectItemExtension**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **BdcProjectItemExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **BdcProjectItemExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
 6.  Odstraňte soubor kódu Class1 z projektu.  
   

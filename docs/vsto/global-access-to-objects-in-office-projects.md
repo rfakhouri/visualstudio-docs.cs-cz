@@ -1,12 +1,10 @@
 ---
-title: "Globální přístup k objektům v projektech Office | Microsoft Docs"
-ms.custom: 
+title: Globální přístup k objektům v projektech Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - ThisAddIn_Shutdown
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bdfc9b62e6dc94560693c072526e1f2989ddec15
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fda3dee12cdea7442d0f92a2ba794551d76b14cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Globální přístup k objektům v projektech pro systém Office
   Když vytvoříte projekt Office, Visual Studio automaticky vygeneruje třídy s názvem `Globals` v projektu. Můžete použít `Globals` třídy pro přístup k několika jiný projekt položky v době běhu z jakékoli kódu v projektu.  
@@ -46,9 +45,9 @@ ms.lasthandoff: 01/10/2018
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ## <a name="how-to-use-the-globals-class"></a>Jak používat Globals – třída  
- `Globals`je statická třída, která uchovává odkazy na některé položky ve vašem projektu. Pomocí `Globals` třída, dostanete následující položky z jakékoli kódu v projektu v době běhu:  
+ `Globals` je statická třída, která uchovává odkazy na některé položky ve vašem projektu. Pomocí `Globals` třída, dostanete následující položky z jakékoli kódu v projektu v době běhu:  
   
--   `ThisWorkbook` a `Sheet`  *n*  třídy v sešitu nebo šablony projektu aplikace Excel. Máte přístup k těmto objektům pomocí `Globals.ThisWorkbook` a `Sheet`  *n*  vlastnosti.  
+-   `ThisWorkbook` a `Sheet` *n* třídy v sešitu nebo šablony projektu aplikace Excel. Máte přístup k těmto objektům pomocí `Globals.ThisWorkbook` a `Sheet` *n* vlastnosti.  
   
 -   `ThisDocument` – Třída v dokumentu nebo šablony projektu aplikace Word. Máte přístup k tomuto objektu pomocí `Globals.ThisDocument` vlastnost.  
   

@@ -1,19 +1,19 @@
 ---
 title: Visual Studio cloudové předplatné nákupu pro poskytovatele cloudových služeb
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/15/2018
-Ms.topic: Get-Started-Article
-Description: Information for Cloud Solution Providers on how to buy and manage Visual Studio cloud subscriptions for your customers.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: e6bbaa7e84da44b53bc7cea0d0b0746e4680caf2
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/15/2018
+ms.topic: Get-Started-Article
+description: Informace pro poskytovatele cloudových řešení, o tom, jak zakoupit a spravovat odběry cloudových Visual Studio pro vaše zákazníky.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Zakoupit a spravovat odběry cloudových Visual Studio pro vaše zákazníky
 
@@ -78,7 +78,7 @@ Zde je postup interpretovat zobrazené na této tabulky:
 Nabízíme slevu 5 % 6. jednotce, které můžete zakoupit (pro danou zákazníka) každý měsíc každé předplatné sady Visual Studio. Proto se zobrazí dva řádky pro jednotlivé možnosti odběru. Jeden řádek ukazuje "Minimální hodnotu" 0, který by měl interpretovat jako základní ceny pro jednotky 1 až 5. Druhý řádek ukazuje "Minimální hodnotu" 5, takže bude 5 % sleva, která se vztahuje na jednotky 6 a vyšší.
 
 
-## <a name="faq"></a>Nejčastější dotazy
+## <a name="frequently-asked-questions"></a>Nejčastější dotazy
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>Otázka: jak jsou **měsíční** cloudové předplatné poplatky zpracovat?
 Odpověď: na první nákup vám účtujeme poměrné množství tak, aby pokrývalo zbývající počet dnů do aktuálního měsíce. Například pokud zakoupení 10 Cloudová předplatná měsíční Visual Studio Professional byl proveden v dubnu 15, pak jsme se účtují 5 jednotky, protože nejsou k dispozici left 15 dní v měsíci 30 dnů nebo 50 % a nám prorate jednotky poplatky z 50 %. Na první může a každý měsíc po tomto datu až do zrušení, úplné 10 jednotek bude účtován.
 

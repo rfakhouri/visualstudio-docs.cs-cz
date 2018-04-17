@@ -1,12 +1,10 @@
 ---
-title: "Správa dokumentů na serveru s použitím třídy ServerDocument | Microsoft Docs"
-ms.custom: 
+title: Správa dokumentů na serveru s použitím třídy ServerDocument | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - ServerDocument class, managing documents on server
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2120e7c70abaddd4f51c0214a2c5ae517cf955cc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ef676de4ff352a557019f68037203364a97834d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-documents-on-a-server-by-using-the-serverdocument-class"></a>Správa dokumentů na serveru s použitím třídy ServerDocument
   Použitím třídy ServerDocument v [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] spravovat několik aspektů přizpůsobení na úrovni dokumentu, i když nejsou nainstalované aplikace Microsoft Office Word a Microsoft Office Excel. Můžete provádět následující úlohy:  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Pokud máte starší verzi aplikace, která používá třídy ServerDocument ve Visual Studio Tools pro systém Office (verze 3.0 Runtime), sady Visual Studio Tools for Office system (verze 3.0 Runtime) musí být nainstalován v počítačích se systémem aplikace. Tyto aplikace nelze spustit sadu Visual Studio 2010 Tools for Office Runtime.  
   
-##  <a name="CachedData"></a>Práce s Data uložená v mezipaměti v dokumentu  
+##  <a name="CachedData"></a> Práce s Data uložená v mezipaměti v dokumentu  
  Třídy ServerDocument poskytuje členů, které můžete použít pro práci s mezipamětí dat ve vlastní dokumenty. Další informace o data uložená v mezipaměti najdete v tématu [ukládání dat do mezipaměti](../vsto/caching-data.md) a [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).  
   
  Následující tabulka uvádí členy, které můžete použít pro práci s data uložená v mezipaměti.  
@@ -53,7 +52,7 @@ ms.lasthandoff: 01/10/2018
 |Chcete-li zjistit, jestli má dokument datové mezipaměti.|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.IsCacheEnabled%2A> Metoda.|  
 |Pro přístup k data uložená v mezipaměti v dokumentu.<br /><br /> Další informace najdete v tématu [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> Vlastnost.|  
   
-##  <a name="CustomizationInfo"></a>Správa přizpůsobení dokumentu  
+##  <a name="CustomizationInfo"></a> Správa přizpůsobení dokumentu  
  Členy třídy ServerDocument můžete použít ke správě přizpůsobení sestavení, která je přidružena k dokumentu. Například můžete programově odebrat přizpůsobení z dokumentu tak, aby dokument je už součástí přizpůsobení.  
   
  Následující tabulka uvádí členy, které můžete použít ke správě přizpůsobení sestavení.  

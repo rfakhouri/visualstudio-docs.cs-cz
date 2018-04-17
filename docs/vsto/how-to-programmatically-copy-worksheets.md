@@ -1,12 +1,10 @@
 ---
-title: "Postupy: kopírování listů prostřednictvím kódu programu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: kopírování listů prostřednictvím kódu programu | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], copying worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fe8b289dd30ea44331a2ae0c63dd451da8969369
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8fc3252c314a2f9529c5372b1388639057b3c019
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>Postupy: Kopírování listů prostřednictvím kódu programu
   Můžete vytvořit kopii sešitu a vložit tento list před nebo po existujícího listu v sešitu. Pokud nezadáte, kam chcete vložit listu, bude vytvořen nový sešit tak, aby obsahovala nového listu.  

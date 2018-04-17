@@ -1,7 +1,7 @@
 ---
-title: "Určení typů virtuálních sítí ve scénáři zátěžového testu v sadě Visual Studio | Microsoft Docs"
+title: Určení typů virtuálních sítí ve scénáři zátěžového testu v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, adding networks
@@ -11,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: c301a8d72228ed450479fd39b010db5682ae6adc
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: f40c1d26d1b8f28fd72bbcc5eb4842724e2d1e89
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Určení typů virtuálních sítí ve scénáři zátěžového testu
 
@@ -93,9 +93,9 @@ Skutečné emulace sítě s lze vývojáři aplikací založených na síti a te
 > [!WARNING]
 > **Distribuovat** tlačítko přepíše všechny položky, které jsou zamčené.
 
- Je také možné zadejte procentní hodnoty přímo do  **%**  sloupec místo pomocí posuvníků. Pokud zadáte hodnotu v procentech přímo, nebude automaticky upravte ostatní položky.
+ Je také možné zadejte procentní hodnoty přímo do **%** sloupec místo pomocí posuvníků. Pokud zadáte hodnotu v procentech přímo, nebude automaticky upravte ostatní položky.
 
 > [!NOTE]
-> Posuvníků jsou zakázané, když celkové nepřidá až o 100 %, nebo při procentní hodnoty do  **%**  sloupce jsou desetinných míst.
+> Posuvníků jsou zakázané, když celkové nepřidá až o 100 %, nebo při procentní hodnoty do **%** sloupce jsou desetinných míst.
 
 Když ručně zadáte procentní hodnoty, měli byste si ověřit, že součet všech položek je 100 %. Při ukládání kombinaci, pokud součet není 100 %, vyzve tak, aby přijímal procentuální hodnoty, jako jsou, nebo se vrátit a jejich nastavení. Pokud zvolíte možnost je přijmout, protože se jedná o, bude poměrně rozložen na 100 %.  Například pokud máte dvě položky a je ručně nastavte na 80 % a 40 %, první položka bude nastavena pro 66.67 % (80 dělený 120) a druhá položka bude nastavena pro 33,33 % (40 dělený 120).

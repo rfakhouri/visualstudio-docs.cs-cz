@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření vazby ovládacích prvků obsahu s vlastními částmi XML | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření vazby ovládacích prvků obsahu s vlastními částmi XML | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1a8c8eff138e2c736750040dc896e610975c25ab
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7ca9c3e049d29874419327ec4ac7d71e0537466c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Návod: Vazba ovládacích prvků obsahu s vlastními částmi XML
   Tento návod ukazuje, jak vazby ovládacích prvků obsahu přizpůsobení na úrovni dokumentu ve Wordu na data XML, který je uložený v dokumentu.  
@@ -64,7 +63,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Vytvoření projektu dokumentu aplikace Word s názvem **EmployeeControls**. Vytvořte nový dokument pro řešení. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otevře nový dokument aplikace Word v návrháři a přidá **EmployeeControls** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře nový dokument aplikace Word v návrháři a přidá **EmployeeControls** projektu do **Průzkumníku řešení**.  
   
 ## <a name="adding-content-controls-to-the-document"></a>Přidání ovládacích prvků obsahu do dokumentu  
  Vytvořte tabulku, která obsahuje tři různé typy obsahu ovládacích prvků, které může uživatel zobrazit nebo upravit informace o zaměstnanec.  

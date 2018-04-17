@@ -1,12 +1,10 @@
 ---
-title: "Návrh a vytváření řešení pro systém Office | Microsoft Docs"
-ms.custom: 
+title: Návrh a vytváření řešení pro systém Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f5a0163d422e5bb04e3c43b5455cc94dde06f09
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e43824ed3fa34a7cd22b98fb25f946f36cb8eab6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="designing-and-creating-office-solutions"></a>Navrhování a tvorba řešení pro systém Office
   Visual Studio poskytuje šablony projektů, které můžete použít k vytvoření několika různých typů řešení pro systém Office. Tato část dokumentace popisuje šablony projektů a poskytuje pokyny k vytváření projektů Office. Informace o tom, jak implementovat kódu a uživatelské rozhraní přizpůsobení po vytvoření projektu najdete v tématu [vývoj řešení pro systém Office](../vsto/developing-office-solutions.md).  
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
  Pokud Visual Studio změny cílového rozhraní .NET Framework pro váš projekt a používáte ClickOnce k nasazení řešení, ujistěte se také vyberte odpovídající verzi rozhraní .NET Framework v **požadavky** dialogové okno. Tento výběr nezmění automaticky, když změnit cílový framework projektu. Další informace najdete v tématu [postupy: instalace požadavky v počítačích koncových uživatelů pro spuštění řešení pro systém Office](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).  
   
 > [!NOTE]  
->  Možné vybrat jako cíl rozhraní .NET Framework 3.5 nebo starší v projektech Office, které vytvoříte pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty Office, které vytvoříte pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] vyžadují funkce, která byla poprvé představena v[!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+>  Možné vybrat jako cíl rozhraní .NET Framework 3.5 nebo starší v projektech Office, které vytvoříte pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projekty Office, které vytvoříte pomocí [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] vyžadují funkce, která byla poprvé představena v [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
 ### <a name="understanding-when-the-office-pias-are-required-on-end-user-computers"></a>Principy při PIA Office, je nutné počítače koncového uživatele  
  Ve výchozím nastavení, primární spolupracující sestavení sady Office (PIA) není potřeba nainstalovat na počítače koncového uživatele, pokud **vložit zprostředkovatel komunikace s objekty typy** každý Office PIA odkazu v projektu je nastavena na **True**, které je to výchozí hodnota. V tomto scénáři informací o typu pro PIA – typy, které se používají ve vašem řešení vložené do sestavení řešení při sestavování projektu. V době běhu informace o vložených typu použít místo PIA pro volání do modelu COM na objekt z aplikace Office. Další informace o tom, jak jsou typy z PIA vkládat do řešení najdete v tématu [ekvivalence typů a vložené typy zprostředkovatel komunikace s objekty](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).  

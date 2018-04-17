@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Excel | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: de2b241cd44adebecd91ee097ebf8f8875915937
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6c68bd90f1a0a106771bd011e9baf91552678ac6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>Postup: Vytvoření prvního doplňku VSTO pro Excel
   Tento úvodní návod ukazuje, jak vytvořit úrovni aplikace Add-in pro aplikaci Microsoft Office Excel. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro vlastní, bez ohledu na to, které jsou otevřené sešity aplikace.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] nebo [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
 ## <a name="creating-the-project"></a>Vytvoření projektu  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]vytvoří **FirstExcelAddIn** projektu a otevře soubor ThisAddIn kódu v editoru.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstExcelAddIn** projektu a otevře soubor ThisAddIn kódu v editoru.  
   
 ## <a name="writing-code-to-add-text-to-the-saved-workbook"></a>Psaní kódu přidat Text do uloženého sešitu  
  Dál přidejte kód do souboru kódu ThisAddIn. Nový kód používá objektový model aplikace Excel k vložení často používaný text v prvním řádku aktivního listu. Aktivního listu je listu, která je otevřená, když uživatel uloží do sešitu. Ve výchozím nastavení soubor ThisAddIn kód obsahuje následující generovaný kód:  
@@ -134,7 +133,7 @@ ms.lasthandoff: 01/10/2018
 -   Nasazení doplňků VSTO pro Excel: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Přehled vývoje řešení pro systém Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Řešení pro aplikaci Excel](../vsto/excel-solutions.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md)   

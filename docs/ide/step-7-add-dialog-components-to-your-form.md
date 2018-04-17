@@ -1,30 +1,28 @@
 ---
-title: "Krok 7: Přidejte do svého formuláře komponenty dialogových oken | Microsoft Docs"
-ms.custom: 
+title: 'Krok 7: Přidejte do svého formuláře komponenty dialogových oken | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
-caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: da81862b736605b93d4429e0e574ca5558a529c9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a395ffd1e0e25cbafa31a765d74d130e8f7d6485
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Krok 7: Přidejte do svého formuláře komponenty dialogových oken
 Chcete-li povolit program otevřít soubory obrázků a zvolit barvu pozadí v tomto kroku přidáte **OpenFileDialog** součásti a **ColorDialog** součásti do svého formuláře.  
   
  Komponenta je jako ovládacího prvku určitým způsobem. Přidejte součást do svého formuláře pomocí sady nástrojů a nastavit jeho vlastnosti, pomocí **vlastnosti** okno. Ale na rozdíl od řízení, přidání do svého formuláře komponenty nepřidá viditelnou položku, kterou uživatel uvidí na formuláři. Namísto toho poskytuje určitého chování, které můžete aktivovat pomocí kódu. Je součástí, které se otevře **otevření souboru** dialogové okno.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) nebo [kurzu 1: vytvoření prohlížeče obrázků v C# - Video 3](http://go.microsoft.com/fwlink/?LinkId=205202). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+ ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# – Video 3](http://go.microsoft.com/fwlink/?LinkId=205202). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-add-dialog-components-to-your-form"></a>Chcete-li přidat do svého formuláře komponenty dialogových oken  
   

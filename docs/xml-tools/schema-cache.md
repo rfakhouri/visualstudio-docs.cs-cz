@@ -1,23 +1,21 @@
 ---
-title: "Mezipaměti schématu | Microsoft Docs"
-ms.custom: 
+title: Mezipaměti schématu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9315fdeeb336ac262f59df31b941c05ca3101b3b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3a7a089e799c2480f667eb000d39c3036220d02e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="schema-cache"></a>Mezipaměti schématu
 Nabízí XML Editor umístěný v adresáři %InstallRoot%\Xml\Schemas mezipaměti schématu. Mezipaměti schématu je globální pro všechny uživatele ve vašem počítači a obsahuje standardní schémat XML, které se používají pro ověřování dokumentu IntelliSense a XML.  
@@ -41,10 +39,10 @@ Nabízí XML Editor umístěný v adresáři %InstallRoot%\Xml\Schemas mezipamě
 |xenc.xsd|Schéma XML – šifrování http://www.w3.org/2000/09/xmldsig#.|  
 |XHTML.xsd|Schéma pro XHTML http://www.w3.org/1999/xhtml.|  
 |XLINK.xsd|Schéma pro XLink1.0, http://www.w3.org/1999/xlink.|  
-|XML.xsd|XSD, popisujících XML: Space a atributy XML: lang, http://www.w3.org/XML/1998/namespace.|  
+|XML.xsd|XSD, popisující atributy XML: Space a XML: lang, http://www.w3.org/XML/1998/namespace.|  
 |xmlsig.xsd|Schéma XML – digitální podpisy, http://www.w3.org/2000/09/xmldsig#.|  
-|xsdschema.xsd|Schéma XSD popisující, samotné, http://www.w3.org/2001/XMLSchema.|  
-|XSLT.xsd|Schéma XML transformuje http://www.w3.org/1999/XSL/Transform.|  
+|xsdschema.xsd|Schéma XSD, popisující http://www.w3.org/2001/XMLSchema.|  
+|XSLT.xsd|Schéma XML transformuje, http://www.w3.org/1999/XSL/Transform.|  
   
 ## <a name="updating-schemas-in-the-cache"></a>Aktualizace schémat v mezipaměti  
  Editor načte adresář mezipaměti schématu, když je načíst balíček editoru XML a sleduje změny při spuštění. Pokud schéma byly přidány, je automaticky načten do indexu v paměti známými schématy. Pokud schéma byla odebrána, automaticky se odebere z indexu v paměti. Pokud se schéma aktualizovalo, se automaticky zruší platnost mezipaměti v paměti Toto schéma.  

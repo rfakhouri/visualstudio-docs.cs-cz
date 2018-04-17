@@ -2,11 +2,8 @@
 title: Profil výkonu aplikací v sadě Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 392bae77ffa2333fa9360dcda7f25b156e1601bc
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: e19b88e5031222f45f0d5f71167c13ef5ef65d7e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>Profil výkonu aplikací v sadě Visual Studio
 Nástroje pro profilaci sady Visual Studio můžete použít k analýze problémy s výkonem v aplikaci. Tento postup ukazuje, jak používat **využití procesoru** kartě diagnostické nástroje získat údaje o výkonu pro vaši aplikaci. Diagnostické nástroje jsou podporované pro .NET – vývoj v sadě Visual Studio, včetně ASP.NET a pro vývoj nativní/C++.
@@ -136,7 +132,7 @@ Doporučujeme začít analýza dat kontrolou seznamu funkcí podle využití pro
 |-|-|
 |![Krok 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|Uzel na nejvyšší úrovni ve stromech volání využití procesoru je pseudo uzel|  
 |![Krok 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Ve většině aplikací když [zobrazit externí kód](#BKMK_External_Code) možnost je vypnuta, je uzel druhé úrovně **[externí kód]** uzlu, který obsahuje systém a architektura kód, který spustí a ukončí aplikaci a nevykresluje uživatelského rozhraní, ovládací prvky plánování vláken a poskytuje jiných nízké úrovně služeb k aplikaci.|  
-|![Step 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Podřízené objekty daného uzlu druhé úrovně jsou metody uživatelského kódu a asynchronní rutiny, které jsou volány, nebo vytvořené druhé úrovně systému a framework kódu.|
+|![Krok 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Podřízené objekty daného uzlu druhé úrovně jsou metody uživatelského kódu a asynchronní rutiny, které jsou volány, nebo vytvořené druhé úrovně systému a framework kódu.|
 |![Krok 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Podřízené uzly metody obsahovat data jen pro volání metody nadřazené. Když **zobrazit externí kód** je zakázaná, metody aplikace může také obsahovat **[externí kód]** uzlu.|
 
 Zde je další informace o hodnoty ve sloupcích:

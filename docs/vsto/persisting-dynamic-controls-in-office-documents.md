@@ -1,12 +1,10 @@
 ---
-title: "Zachování dynamické ovládacích prvků do dokumentů Office | Microsoft Docs"
-ms.custom: 
+title: Zachování dynamické ovládacích prvků do dokumentů Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], persisting in the document
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 10f5840b085ce55485734c9287972a743859c3ef
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 220a6e2c0b7e4633f91e7391448d27dddb5895c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-dynamic-controls-in-office-documents"></a>Uchování dynamických ovládacích prvků v dokumentech systému Office
   Ovládací prvky, které jsou přidány za běhu nejsou trvalé, když je uložit a zavřít tento dokument nebo sešitu. Přesné chování se liší pro hostitele a ovládacích prvků Windows Forms. V obou případech můžete přidat kód pro vaše řešení se znovu vytvořit ovládacích prvků, když uživatel znovu otevře dokument.  
@@ -75,9 +74,9 @@ ms.lasthandoff: 01/10/2018
   
 1.  Uložení informací o velikosti, umístění a stavu ovládacích prvků, když je dokument uložit nebo uzavřený. V přizpůsobení na úrovni dokumentu můžete uložit tato data do mezipaměti data v dokumentu. V VSTO doplňku můžete tato data uložit na vlastní část XML v dokumentu.  
   
-2.  Ovládací prvky v událost, která se vyvolá, když je dokument otevřít znovu vytvořte. V projektech na úrovni dokumentu, můžete k tomu `Sheet`  *n*  `_Startup` nebo `ThisDocument_Startup` obslužné rutiny událostí. Na projekty doplňku VSTO lze provádět v tomto událostí obslužné rutiny <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> nebo <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> události.  
+2.  Ovládací prvky v událost, která se vyvolá, když je dokument otevřít znovu vytvořte. V projektech na úrovni dokumentu, můžete k tomu `Sheet` *n* `_Startup` nebo `ThisDocument_Startup` obslužné rutiny událostí. Na projekty doplňku VSTO lze provádět v tomto událostí obslužné rutiny <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> nebo <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> události.  
   
-###  <a name="removingActiveX"></a>Odebírání obálky ActiveX v doplňku  
+###  <a name="removingActiveX"></a> Odebírání obálky ActiveX v doplňku  
  Když přidáte dynamických ovládacích prvků Windows Forms do dokumentů pomocí doplňku VSTO, můžete obálky ActiveX ovládacích prvků zabránit zobrazování v dokumentu, při příštím otevření následujícími způsoby.  
   
 #### <a name="removing-activex-wrappers-when-the-document-is-opened"></a>Odebrání ActiveX obálky při otevření dokumentu  

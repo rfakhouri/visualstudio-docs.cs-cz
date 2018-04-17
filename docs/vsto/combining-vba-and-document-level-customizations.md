@@ -1,12 +1,10 @@
 ---
-title: "Kombinování VBA pro vytváření a úpravy na úrovni dokumentů | Microsoft Docs"
-ms.custom: 
+title: Kombinování VBA pro vytváření a úpravy na úrovni dokumentů | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.VBAInterop.InvalidAssemblyVersion
 - VST.VBAInterop.ProjectLoadFailure
@@ -26,13 +24,14 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 63f316d3ac6fefbef37735cddc8fb7a87a8d4bfb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 01870498522ce138925fdaaf4c6ada9b13961f76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>Kombinování přizpůsobení na úrovních VBA a dokumentu
   Můžete vytvořit jazyka Visual Basic pro aplikace (VBA) kód v dokumentu, který je součástí přizpůsobení na úrovni dokumentu pro aplikace Microsoft Office Word nebo Microsoft Office Excel. VBA kód můžete volat v dokumentu z sestavení vlastní nastavení, nebo můžete nakonfigurovat projekt povolit VBA kód v dokumentu pro volání kódu v sestavení vlastní nastavení.  
@@ -118,7 +117,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
     3.  Nastavte **ReferenceAssemblyFromVbaProject** vlastnost třídy položky všechny hostitele v projektu na **True**. To vloží knihovny typů přizpůsobení sestavení do sestavení a přidá odkaz na knihovnu typů projektu VBA v dokumentu.  
   
- Podrobné pokyny najdete v tématu [postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) a [postupy: vystavení kódu do VBA v Visual C &#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Podrobné pokyny najdete v tématu [postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md) a [postupy: vystavení kódu do VBA v Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
   
  **EnableVbaCallers** a **ReferenceAssemblyFromVbaProject** vlastnosti jsou k dispozici pouze v **vlastnosti** okno v době návrhu; nelze je použít za běhu . Chcete-li zobrazit vlastnosti, otevřete návrháře pro položku hostitele v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace o konkrétní úlohy, které Visual Studio provádí při nastavení těchto vlastností najdete v tématu [úlohy prováděné vlastnosti položky hostitele](#PropertyTasks).  
   
@@ -146,7 +145,7 @@ Sub MyMacro()
 End Sub  
 ```  
   
- Tato vlastnost je pohodlnější způsob, jak provádět volání do sestavení přizpůsobení než při použití `GetManagedClass` metoda přímo. `CallVSTOAssembly`Vrátí objekt, který představuje hostitele pro jazyk VBA třída položek, který je zveřejněný. Členy a parametry metody vráceného objektu se zobrazí v technologii IntelliSense.  
+ Tato vlastnost je pohodlnější způsob, jak provádět volání do sestavení přizpůsobení než při použití `GetManagedClass` metoda přímo. `CallVSTOAssembly` Vrátí objekt, který představuje hostitele pro jazyk VBA třída položek, který je zveřejněný. Členy a parametry metody vráceného objektu se zobrazí v technologii IntelliSense.  
   
  `CallVSTOAssembly` Vlastnost obsahuje deklaraci, která je podobná následující kód. Tento kód předpokládá, že máte vystavení `Sheet1` třída položky v projektu sešitu aplikace Excel s názvem hostitele `ExcelWorkbook1` pro jazyk VBA.  
   
@@ -177,7 +176,7 @@ GetManagedClass(pdispInteropObject Object) As Object
   
  Tato metoda vrátí objekt, který představuje třídu, která je vystavený pro jazyk VBA. Členy a parametry metody vráceného objektu se zobrazí v technologii IntelliSense.  
   
-##  <a name="Guidelines"></a>Pokyny pro přidání VBA kód do dokumentu  
+##  <a name="Guidelines"></a> Pokyny pro přidání VBA kód do dokumentu  
  Existuje několik různých kopie dokumentu kterém můžete přidat VBA kód, který volá do přizpůsobení na úrovni dokumentu.  
   
  Při vývoji a testování řešení, můžete napsat kód VBA v dokumentu, které se otevře při ladění a spustit projekt v sadě Visual Studio (tedy dokumentu v zadané výstupní složce sestavení). Ale kód jazyka VBA, které přidáte k tomuto dokumentu budou přepsány příštím sestavení projektu, protože Visual Studio nahradí kopii dokumentu ze složky hlavní projektu dokumentu do výstupní složky sestavení.  
@@ -204,7 +203,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 ### <a name="on-the-end-user-computer"></a>Na počítači koncového uživatele  
  Pokud koncoví uživatelé jsou VBA vývojáře, kteří jsou volání do služby, které zadáte v přizpůsobení na úrovni dokumentu, můžete zadat, je způsob, jak volat kódu pomocí `CallVSTOAssembly` vlastnost nebo `GetManagedClass` metoda v jejich kopie dokumentu. Při publikování aktualizace řešení VBA kód v dokumentu na počítači koncového uživatele nedojde k přepsání, protože není upraveny dokumentu publikovat aktualizace.  
   
-##  <a name="PropertyTasks"></a>Úlohy prováděné vlastnosti položky hostitele  
+##  <a name="PropertyTasks"></a> Úlohy prováděné vlastnosti položky hostitele  
  Při použití **EnableVbaCallers** a **ReferenceAssemblyFromVbaProject** vlastnosti, Visual Studio provádí různé skupiny úloh.  
   
 ### <a name="enablevbacallers"></a>EnableVbaCallers  
@@ -254,9 +253,9 @@ GetManagedClass(pdispInteropObject Object) As Object
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: vystavení kódu do VBA v projektu jazyka Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)   
- [Postupy: vystavení kódu do VBA v Visual C &#35; Projekt](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
+ [Postupy: vystavení kódu do VBA v Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [Návod: Volání kódu z jazyka VBA v Visual C &#35; Projekt](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [Návod: Volání kódu z jazyka VBA v Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
  [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
  [VBA a řešení pro systém Office v sadě Visual Studio porovnání](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
  [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)  

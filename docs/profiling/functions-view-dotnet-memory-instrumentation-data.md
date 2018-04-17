@@ -1,27 +1,23 @@
 ---
-title: "Zobrazení funkcí – Data instrumentace paměti .NET | Microsoft Docs"
-ms.custom: 
+title: Zobrazení funkcí – Data instrumentace paměti .NET | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 457652b39ce788e5960e5531002628a3dea27cf6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fbc9b3940a64c510ed362f80f0c3ee535d689794
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Zobrazení funkcí – Data instrumentace paměti .NET
 Zobrazení funkcí rozhraní .NET paměti přidělení profilování dat, která nebyla shromážděna pomocí metody instrumentace obsahuje seznam funkcí, které přidělené paměti při spuštění profilování. Řádek funkce sestav, velikost a počet přidělování a dat časování pro funkci.  

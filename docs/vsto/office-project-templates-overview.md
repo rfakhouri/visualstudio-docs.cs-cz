@@ -1,12 +1,10 @@
 ---
-title: "Přehled šablon projektů Microsoft Office | Microsoft Docs"
-ms.custom: 
+title: Přehled šablon projektů Microsoft Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -32,13 +30,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], project templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 634ebd13d214f2d354e150b47f9dd50757bd2817
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c8b82da48e04e9c38f16af3cdcc504f7c1fd070f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-project-templates-overview"></a>Přehled šablon projektů Microsoft Office Project
   Sada Microsoft Office developer tools v sadě Visual Studio zahrnují šablony projektů pro vytvoření následující typy řešení pro systém Office:  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Doplňků VSTO](#AppLevel)  
   
- Podrobné porovnání těchto typů řešení pro systém Office, najdete v části [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Podrobné porovnání těchto typů řešení pro systém Office, najdete v části [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Šablony projektů Office jsou k dispozici v **nový projekt** dialogovém **Office** uzlu **Visual C#** a **jazyka Visual Basic**jazyk uzly. Každá šablona generuje projekt s odpovídající konfigurací pro cílovou aplikaci, včetně odkazů na sestavení a nastavení ladění.  
   
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Nástroje pro vývoj pro Office jsou součástí určitých edicí sady Visual Studio. Další informace najdete v tématu [Konfigurace počítače pro vývoj řešení pro Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
   
-##  <a name="DocLevel"></a>Úpravy na úrovni dokumentů  
+##  <a name="DocLevel"></a> Úpravy na úrovni dokumentů  
  **Office** uzlu **nový projekt** dialogové okno obsahuje následující šablony projektů, které vám pomůžou zahájeno vytváření přizpůsobení na úrovni dokumentu pro Word a Excel:  
   
 -   **Sešit Wordu 2013 a 2016 VSTO**  
@@ -94,7 +93,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Návod: Vytvoření prvního přizpůsobení na úrovni dokumentu pro Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
-##  <a name="AppLevel"></a>Doplňků VSTO  
+##  <a name="AppLevel"></a> Doplňků VSTO  
  **Office/SharePoint** uzlu **nový projekt** dialogové okno obsahuje následující šablony projektů, které vám pomůžou zahájeno vytváření doplňků VSTO.  
   
 -   **Doplněk Excelu 2013 a 2016 VSTO**  
@@ -160,7 +159,7 @@ ms.lasthandoff: 01/10/2018
 |Uživatelé mohou dokument otevřít a upravit, pokud není nastaven jen pro čtení. Jakékoli uložené změny se uchovávají v originálu dokumentu.|Uživatelé mohou šablonu otevřít a vytvořit pomocí ní místní kopii jako nový dokument. Nemohou originál upravovat, pokud jim neudělíte speciální oprávnění.|  
 |Po otevření dokumentu vyvolá <xref:Microsoft.Office.Tools.Word.Document.Open> událostí.|Po otevření šablony vyvolá <xref:Microsoft.Office.Tools.Word.Document.New> událostí.|  
   
-##  <a name="Limitations"></a>Omezení globální šablony a doplňky aplikace Excel (soubory XLA)  
+##  <a name="Limitations"></a> Omezení globální šablony a doplňky aplikace Excel (soubory XLA)  
  Dokumentům, sešitům a šablony nemusí fungovat správně jako globální šablony nebo doplňků VSTO pro Excel (soubory XLA).  
   
 ## <a name="word-templates"></a>Šablony aplikace Word  

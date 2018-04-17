@@ -1,12 +1,10 @@
 ---
-title: "Automatizace v aplikaci Excel s použitím rozšířených objektů | Microsoft Docs"
-ms.custom: 
+title: Automatizace v aplikaci Excel s použitím rozšířených objektů | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], Excel host controls
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 85f1d3b869d98f12bff1c7bb3ca1be5d2ea0a090
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 63c200a3d3a6a64dfc100cc9365f142a8dddae4c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automating-excel-by-using-extended-objects"></a>Automatizace v aplikaci Excel s použitím rozšířených objektů
   Při vývoji řešení pro aplikaci Excel v sadě Visual Studio, můžete použít *hostitele položky* a *hostování ovládacího prvku*s v řešení. Jedná se o objekty, které rozšiřují určité běžně používané objekty ve model objektů aplikace Excel (tedy model objektu zveřejněného prostřednictvím primární spolupracující sestavení pro aplikaci Excel), jako například <xref:Microsoft.Office.Interop.Excel.Worksheet> a <xref:Microsoft.Office.Interop.Excel.Range> objekty. Rozšířené objekty chovají jako objekty aplikace Excel, které jsou založené na, ale jejich přidat další funkce, například nové události a možnosti vazby dat k objektům.  

@@ -1,23 +1,21 @@
 ---
-title: "Model zobrazení obsahu | Microsoft Docs"
-ms.custom: 
+title: Model zobrazení obsahu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 582082504b713988039af609d59150715f75ecfe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1ee6860702fe672df5bebca38002ff7a8388cddd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="content-model-view"></a>Zobrazení obsahu modelu
 Zobrazení obsahu modelu poskytuje grafické reprezentace místní a globální schématu uzlů a jejich komponent, včetně jednoduché a komplexní typy, elementy, skupiny modelů, atributy a skupin atributů. XML – komentáře a pokyny pro zpracování nelze zobrazit v zobrazení obsahu modelu. Zobrazení modelu obsahu obsahuje dva panely: **prostoru** panel, který obsahuje seznam uzlů v [prostoru Návrhář schématu XML](../xml-tools/xml-schema-designer-workspace.md)a na návrhovou plochu, kde se můžete podívat modelu obsahu schématu uzly, které jsou vybrány v **prostoru** panelu. Zobrazení obsahu modelu zahrnuje taky panelu nástrojů Návrhář schématu XML a navigačního panelu.  

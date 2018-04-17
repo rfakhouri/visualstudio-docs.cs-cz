@@ -1,12 +1,10 @@
 ---
-title: "Visual Studio Tools for Office Runtime přehled | Microsoft Docs"
-ms.custom: 
+title: Visual Studio Tools for Office Runtime přehled | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +26,14 @@ helpviewer_keywords:
 - runtime [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: ed9f3657fcb49a7b39ee41d2ce9b73dddda7fd93
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f357e593c7fe1e3dc5e4803b93ac515911ed9f75
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Přehled nástrojů Visual Studio Tools for Office runtime
   Ke spuštění řešení, které jsou vytvořené pomocí nástroje Microsoft Office developer tools v sadě Visual Studio, Visual Studio 2010 Tools for Office Runtime musí nainstalovat do počítačů koncových uživatelů. Další informace najdete v tématu [postupy: instalace sady Visual Studio Tools pro sadu Office Runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Modul Visual Studio 2010 Tools for Office Runtime se skládá ze dvou hlavních součástí:  
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/10/2018
   
  K dispozici je několik různých možností, jak nainstalovat modul runtime. V závislosti na konfiguraci počítače jsou při instalaci modulu runtime nainstalovány jeho různé součásti. Další informace najdete v tématu [Visual Studio Tools for Office Runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
   
-##  <a name="officeextensions"></a>Principy Office rozšíření pro rozhraní .NET Framework  
+##  <a name="officeextensions"></a> Principy Office rozšíření pro rozhraní .NET Framework  
  Visual Studio 2010 Tools for Office Runtime zahrnuje Office rozšíření pro rozhraní .NET Framework 3.5 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a novější. Řešení, která cílí na jednotlivé verze rozhraní .NET Framework, používají příslušné rozšíření pro danou verzi.  
   
  Tato rozšíření jsou tvořena sestaveními, pomocí nichž mohou vaše řešení automatizovat a rozšířit aplikace Office. Když vytvoříte projekt pro Office, sada Visual Studio automaticky přidá odkazy na sestavení, která se používají pro zvolený typ projektu a cílové rozhraní .NET Framework projektu. Další informace o sestavení v Office rozšíření najdete v tématu [sestavení sady Visual Studio Tools for Office Runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).  
@@ -77,7 +76,7 @@ ms.lasthandoff: 01/10/2018
   
  Když projekt po provedení této změny sestavíte, budou informace o typech pro všechny typy modulu runtime používané projektem vloženy do sestavení řešení. Řešení pak bude za běhu používat tyto vložené informace o typech namísto informací o typech v odkazovaných sestaveních.  
   
-##  <a name="UnmanagedLoader"></a>Principy zavaděč řešení Office  
+##  <a name="UnmanagedLoader"></a> Principy zavaděč řešení Office  
  Visual Studio Tools for Office runtime zahrnuje několik nespravované knihoven DLL, které používají aplikace Office načíst modul runtime a řešení pro systém Office. I když by nikdy nemělo být nutné pracovat s těmito knihovnami DLL přímo, znalost účelu těchto knihoven DLL vám může pomoci lépe porozumět architektuře řešení pro Office.  
   
  Informace o tom, jak tyto součásti jsou používány během procesu načítání, najdete v článku [architektura z úpravy na úrovni dokumentů](../vsto/architecture-of-document-level-customizations.md) a [architektura VSTO doplňky](../vsto/architecture-of-vsto-add-ins.md).  
@@ -98,7 +97,7 @@ ms.lasthandoff: 01/10/2018
   
  VSTOLoader.dll také provede několik věcí, které jsou specifické pro doplňky VSTO:  
   
--   Implementuje <xref:Extensibility.IDTExtensibility2> rozhraní. <xref:Extensibility.IDTExtensibility2>je rozhraní modelu COM, které se musí implementovat všech doplňků VSTO pro aplikace Microsoft Office. Toto rozhraní definuje metody, které aplikace volá ke komunikaci s doplňku VSTO.  
+-   Implementuje <xref:Extensibility.IDTExtensibility2> rozhraní. <xref:Extensibility.IDTExtensibility2> je rozhraní modelu COM, které se musí implementovat všech doplňků VSTO pro aplikace Microsoft Office. Toto rozhraní definuje metody, které aplikace volá ke komunikaci s doplňku VSTO.  
   
 -   Imanagedaddin – rozhraní implementuje. Toto rozhraní je používány aplikací Office za účelem načtení doplňků VSTO. Další informace najdete v tématu [imanagedaddin – rozhraní](../vsto/imanagedaddin-interface.md).  
   

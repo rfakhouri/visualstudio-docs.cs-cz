@@ -1,18 +1,18 @@
 ---
-title: "Ukázka rozšíření aplikace Excel: Třídy Element | Microsoft Docs"
+title: 'Ukázka rozšíření aplikace Excel: Třídy Element | Microsoft Docs'
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 91f3e3055d2ba98052ec2fd368db9aea08b81971
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1dce9745db1acf031c67d5221f6a176d94fb6f77
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>Ukázka rozšíření Excel: Třídy Element
 Používá rozšíření třídy, které jsou odvozeny od <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> a představují listu ovládací prvky a buňky v [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].

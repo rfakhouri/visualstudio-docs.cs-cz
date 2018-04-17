@@ -1,13 +1,10 @@
 ---
-title: "Procházení připojení služby SharePoint pomocí Průzkumníka serveru | Microsoft Docs"
-ms.custom: 
+title: Procházení připojení služby SharePoint pomocí Průzkumníka serveru | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SharePointExplorer.SharePointConnection
 dev_langs:
@@ -21,14 +18,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5ea474f2439b6da519563f08ffe4ddc2f6dcef30
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: ca6e7ff8d046ae94d6016c01b346bce592b2fcf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="browsing-sharepoint-connections-using-server-explorer"></a>Procházení připojení služby SharePoint pomocí průzkumníka serveru
   Nyní je možné procházet místní připojení služby SharePoint v **Průzkumníka serveru**. Pomocí tohoto postupu lze procházet součástí webu služby SharePoint ve vašem systému. Součástí webu SharePoint, např. seznam definic a typy obsahu, se zobrazí v uzlu, který je pojmenován **připojení služby SharePoint** v zobrazení stromu **Průzkumníka serveru**. Chcete-li zobrazit **Průzkumníka serveru**, na řádku nabídek zvolte **zobrazení**, **Průzkumníka serveru**. Kromě zobrazení lokality součásti služby SharePoint, můžete odebrat položky, zobrazit jejich vlastnosti nebo aktualizujte zobrazení stromu pomocí příkazů v místní nabídce.  

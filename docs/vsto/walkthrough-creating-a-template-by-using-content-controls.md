@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření šablony s použitím ovládacích prvků obsahu | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření šablony s použitím ovládacích prvků obsahu | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - content controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6d221b9374bf71df3d66400289c50310263c2e9e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8c7f5026d4cbe8b7c38b8163ce00d893e1e406f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-template-by-using-content-controls"></a>Návod: Vytvoření šablony s použitím ovládacích prvků obsahu
   Tento návod ukazuje, jak vytvořit přizpůsobení na úrovni dokumentu používá ovládací prvky obsahu k vytváření strukturovaných a opakovaně použitelný obsah do šablony aplikace Microsoft Office Word.  
@@ -61,7 +60,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Vytvoření projektu šablony aplikace Word s názvem **MyBuildingBlockTemplate**. V průvodci vytvořte nový dokument v řešení. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otevře se nové šablony aplikace Word v návrháři a přidá **MyBuildingBlockTemplate** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se nové šablony aplikace Word v návrháři a přidá **MyBuildingBlockTemplate** projektu do **Průzkumníku řešení**.  
   
 ## <a name="creating-the-employee-table"></a>Vytvoření tabulky zaměstnanců  
  Vytvořte tabulku, která obsahuje čtyři různé typy ovládacích prvků obsahu kde uživatele můžete zadat informace o zaměstnanec.  

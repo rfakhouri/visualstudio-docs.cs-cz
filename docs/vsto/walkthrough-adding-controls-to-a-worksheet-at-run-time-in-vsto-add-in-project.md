@@ -1,12 +1,10 @@
 ---
-title: "Návod: Přidání ovládacích prvků na list za běhu VSTO doplňku projekt | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Přidání ovládacích prvků na list za běhu VSTO doplňku projekt | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - worksheets, adding controls at run time
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: f32db4aa6b547f1555fbccc9cb03c00998169eaa
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 47c647e2b3af6941f7b4a4d6f28eccfac2b31e2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>Návod: Přidání ovládacích prvků na list za běhu v projektu doplňku VSTO
   Ovládací prvky můžete přidat do listu všechny otevřené pomocí doplňku VSTO v Excelu. Tento návod ukazuje, jak používat na pásu karet k umožnění uživatelům přidat <xref:Microsoft.Office.Tools.Excel.Controls.Button>, <xref:Microsoft.Office.Tools.Excel.NamedRange>a <xref:Microsoft.Office.Tools.Excel.ListObject> do listu. Informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  

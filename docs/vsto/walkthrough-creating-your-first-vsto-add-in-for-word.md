@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření vašeho prvního doplňku VSTO pro Word | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření vašeho prvního doplňku VSTO pro Word | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3452bd5e550ab724dc6c236515579869814a9237
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: d7bddcf43d275dc30b0f3825fbb2dbe665e46025
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Návody: Vytvoření prvního doplňku VSTO pro Word
   Tento úvodní návod ukazuje, jak vytvořit doplňku VSTO pro aplikaci Microsoft Office Word. Funkce, které vytvoříte v tento druh řešení jsou k dispozici pro aplikace, samostatně, bez ohledu na to, které jsou otevřené dokumenty.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]vytvoří **FirstWordAddIn** projektu a otevře soubor ThisAddIn kódu v editoru.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří **FirstWordAddIn** projektu a otevře soubor ThisAddIn kódu v editoru.  
   
 ## <a name="writing-code-to-add-text-to-the-saved-document"></a>Psaní kódu přidat Text do uložený dokument  
  Dál přidejte kód do souboru kódu ThisAddIn. Nový kód používá k přidání často používaný text do každého dokumentu uloženého v objektovém modelu aplikace Word. Ve výchozím nastavení soubor ThisAddIn kód obsahuje následující generovaný kód:  
@@ -137,7 +136,7 @@ ms.lasthandoff: 01/10/2018
 -   Nasazení doplňků VSTO pro Word: [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Přehled vývoje řešení pro systém Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Řešení aplikace Word](../vsto/word-solutions.md)   
  [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Přehled modelu objektů aplikace Word](../vsto/word-object-model-overview.md)   

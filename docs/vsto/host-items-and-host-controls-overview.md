@@ -1,12 +1,10 @@
 ---
-title: "Přehled ovládacích prvků hostitele hostitelských položek a | Microsoft Docs"
-ms.custom: 
+title: Přehled ovládacích prvků hostitele hostitelských položek a | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -38,13 +36,14 @@ helpviewer_keywords:
 - host controls [Office development in Visual Studio], deleting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1512b4774efea9639f01135932ad076f6630ea12
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 84e0b2cf74eb8c0d3faca8d1c28d3bea91c87f76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="host-items-and-host-controls-overview"></a>Přehled hostitelských položek a hostitelských ovládacích prvků
   Hostitelských položek a hostitelských ovládacích prvků jsou typy, které pomáhají zajistit programovací model pro řešení Office, které jsou vytvořené pomocí nástroje pro vývoj pro Office v sadě Visual Studio. Hostitelských položek a hostitelských ovládacích prvků zkontrolujte interakci s objektové modely aplikace Microsoft Office Word a Microsoft Office Excel, které jsou založené na modelu COM, více jako interakci s spravovaných objektů, jako je Windows Forms – ovládací prvky.  
@@ -77,7 +76,7 @@ ms.lasthandoff: 01/10/2018
   
  <xref:Microsoft.Office.Tools.Excel.Workbook> Hostitelská položka není slouží jako kontejner pro ovládací prvky, které mají uživatelské rozhraní. Místo toho návrháře pro tuto položku hostitele funguje jako součást panelu, který umožňuje přetáhněte součást, například <xref:System.Data.DataSet>, na jeho návrhovou plochu. Další informace najdete v tématu [hostitelská položka Workbook](../vsto/workbook-host-item.md).  
   
- Hostitelské položky nelze vytvořit, v projektech na úrovni dokumentů prostřednictvím kódu programu. Místo toho použijte `ThisDocument`, `ThisWorkbook`, nebo `Sheet`  *n*  třídy, které Visual Studio se automaticky vytvoří ve vašem projektu v době návrhu. Tyto generované třídy odvozeny od hostitelských položek a poskytují vstupní bod pro kód. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
+ Hostitelské položky nelze vytvořit, v projektech na úrovni dokumentů prostřednictvím kódu programu. Místo toho použijte `ThisDocument`, `ThisWorkbook`, nebo `Sheet` *n* třídy, které Visual Studio se automaticky vytvoří ve vašem projektu v době návrhu. Tyto generované třídy odvozeny od hostitelských položek a poskytují vstupní bod pro kód. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
   
 ### <a name="understanding-host-items-in-vsto-add-in-projects"></a>Principy hostitelské položky v projekty doplňku VSTO  
  Když vytvoříte doplňku VSTO, nemají přístup k položkám všechny hostitele ve výchozím nastavení. Však můžete vygenerovat <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, a <xref:Microsoft.Office.Tools.Excel.Worksheet> hostitele položek v aplikaci Word a doplňků VSTO pro Excel za běhu.  

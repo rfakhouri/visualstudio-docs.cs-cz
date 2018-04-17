@@ -1,18 +1,18 @@
 ---
-title: "Postupy: vytvoření knihovna aktivit | Microsoft Docs"
+title: 'Postupy: vytvoření knihovna aktivit | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 1eeebe74-7303-4345-8a83-fe37a26bc84b
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e3f84636273de253937ebf5c91cff066b9f85
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: faa7c593d27474c0980e7c7df7bf932bd2d5431d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-an-activity-library"></a>Postupy: vytvoření knihovna aktivit
 Vlastní aktivity se používají pro modelování konkrétní firemních procesů v pracovním postupu. Knihovna aktivit šablony [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] bylo zadáno umožnit vytvoření takové vlastní aktivity vizuálně pomocí Návrháře pracovního postupu systému Windows.
@@ -36,7 +36,7 @@ Vlastní aktivity se používají pro modelování konkrétní firemních proces
 7.  V **řešení** pole, zadejte popisný název pro vaše řešení a pak klikněte na tlačítko **OK**.
 
     > [!NOTE]
-    > Pokud chcete přidat do existujícího řešení pracovního postupu konzolovou aplikaci, otevřete toto řešení v [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], klikněte pravým tlačítkem na řešení v **Průzkumníku řešení**a vyberte **přidat**, pak  **Nový projekt...**  otevřete **nový projekt** dialogové okno. Pokračujte, jak je popsáno výše v tomto postupu.
+    > Pokud chcete přidat do existujícího řešení pracovního postupu konzolovou aplikaci, otevřete toto řešení v [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], klikněte pravým tlačítkem na řešení v **Průzkumníku řešení**a vyberte **přidat**, pak **Nový projekt...** otevřete **nový projekt** dialogové okno. Pokračujte, jak je popsáno výše v tomto postupu.
 
 8.  Šablona projektu vytvoří definici aktivity v jazyce XAML. Návrháři pracovních postupů Windows se zobrazí na plátno vlastní aktivity.
 

@@ -1,7 +1,7 @@
 ---
-title: "Doba odezvy stránky v zátěžovém testu v sadě Visual Studio | Microsoft Docs"
+title: Doba odezvy stránky v zátěžovém testu v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, response times
 - response times in load tests
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 055bb9b9ae369cd6b62741f7d23295c34b7d1d32
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 42cde7bda2c97d0e64589d0679b14a93d97c66cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Postupy: Zobrazení doby odezvy webové stránky v zátěžovém testu pomocí analyzéru zátěžového testu
 
@@ -48,7 +48,7 @@ Pokud spustíte testu výkonu webu zátěži v zátěžovém testu, budete schop
     |**Stránka**|Název webové stránky.|
     |**Scénář**|Název tohoto scénáře. Důležité: Pokud máte více než jeden scénář v testu výkonnosti webu.|
     |**Test**|Název testu výkonnosti webu. Důležité: Pokud máte více než jeden testu výkonnosti webu v zátěžovém testu.|
-    |**Network**|Typ sítě.<br /><br /> Ve výchozím nastavení nejsou shromažďovány tato data. Shromažďovat tato data v **editoru zátěžových testů**v části **spustit nastavení** uzlu, vyberte uzel spuštění nastavení změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **AllIndividualDetails**.|
+    |**Sítě**|Typ sítě.<br /><br /> Ve výchozím nastavení nejsou shromažďovány tato data. Shromažďovat tato data v **editoru zátěžových testů**v části **spustit nastavení** uzlu, vyberte uzel spuštění nastavení změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **AllIndividualDetails**.|
     |**Celkový počet**|Celkový počet požadavků, které byly provedeny pro webovou stránku. Toto je celkový počet pro všechny iterace v zátěžovém testu.|
     |**Průměr**|Doba odezvy průměrná stránky.<br /><br /> Ve výchozím nastavení nejsou shromažďovány tato data. Shromažďovat tato data v **editoru zátěžových testů**v části **spustit nastavení** uzlu, vyberte uzel spuštění nastavení změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **AllIndividualDetails**.|
     |**Min.**|Doba odezvy minimální stránky.<br /><br /> Ve výchozím nastavení nejsou shromažďovány tato data. Shromažďovat tato data v **editoru zátěžových testů**v části **spustit nastavení** uzlu, vyberte uzel spuštění nastavení změnit. V **vlastnosti** okně pro **úložiště podrobností časování** vlastnosti, vyberte **AllIndividualDetails**.|

@@ -1,12 +1,10 @@
 ---
-title: "Návod: Profilace aplikace SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Profilace aplikace SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 91952e2f10f025568d356149f63bff63e0c0b1fc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f6eb4e9f78a9defaafb774551e301d6101cc40d0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Postupy: Profilace aplikace SharePoint
   Tento návod ukazuje způsob použití nástrojů pro profilaci k optimalizaci výkonu aplikace SharePoint v sadě Visual Studio. Ukázková aplikace je příjemce událostí funkce služby SharePoint, obsahující nečinné smyčky, která snižuje výkon přijímače událostí funkcí. Visual Studio profiler umožňuje nalézt a eliminovat nejnákladnější (nejpomalejší provádění) součástí projektu, také známé jako *aktivní trase*.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
   
--   Podporované edice systému Microsoft Windows a služby SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému Microsoft Windows a služby SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Vyberte **Dokončit** tlačítko. Projekt se objeví v **Průzkumníku řešení**.  
   
-##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a>Přidání funkce a příjemce událostí funkce  
+##  <a name="BKMK_AddFtrandFtrEvntReceiver"></a> Přidání funkce a příjemce událostí funkce  
  Funkce v dalším kroku přidejte do projektu spolu s přijímače událostí pro funkci. Tento příjemce událostí bude obsahovat kód, který se profilovaným.  
   
 #### <a name="to-add-a-feature-and-feature-event-receiver"></a>Chcete-li přidat funkce a příjemce událostí funkce  
@@ -191,7 +190,7 @@ ms.lasthandoff: 01/10/2018
   
 9. Uložte projekt.  
   
-##  <a name="BKMK_ConfigSharePointApp"></a>Konfigurace a nasazení aplikace SharePoint  
+##  <a name="BKMK_ConfigSharePointApp"></a> Konfigurace a nasazení aplikace SharePoint  
  Teď, když projektu služby SharePoint je připraveno, ho nakonfigurovat a nasadit server služby SharePoint.  
   
 #### <a name="to-configure-and-deploy-the-sharepoint-application"></a>Umožňuje nakonfigurovat a nasadit aplikace SharePoint  
@@ -214,7 +213,7 @@ ms.lasthandoff: 01/10/2018
   
      Průvodce umožňuje profilace aplikací na serveru, zobrazí **prohlížeč výkonu** okna a potom sestavení nasadí a spouští aplikace SharePoint.  
   
-##  <a name="BKMK_RunSPApp"></a>Spuštění aplikace SharePoint  
+##  <a name="BKMK_RunSPApp"></a> Spuštění aplikace SharePoint  
  Aktivovat funkci ve službě SharePoint, která aktivuje `FeatureActivation` událostí kód pro spuštění.  
   
 #### <a name="to-run-the-sharepoint-application"></a>Ke spuštění aplikace SharePoint  
@@ -235,7 +234,7 @@ ms.lasthandoff: 01/10/2018
   
      Po ukončení služby SharePoint, profileru vytvoří a zobrazí zprávu o ukázka profilace a uloží ji jako soubor .vsp v **ProfileTest** složce projektu.  
   
-##  <a name="BKMK_ViewResults"></a>Zobrazení a interpretací výsledků profilace  
+##  <a name="BKMK_ViewResults"></a> Zobrazení a interpretací výsledků profilace  
  Teď, když máte spustit a profilovaným aplikace SharePoint, zobrazíte výsledky testů.  
   
 #### <a name="to-view-and-interpret-the-profiling-results"></a>K zobrazení a interpretovat výsledky profilace  

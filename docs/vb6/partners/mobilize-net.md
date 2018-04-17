@@ -1,11 +1,10 @@
 ---
-title: "Mobilizaci upgradu doprovodné jazyka Visual Basic .net na (VBUC) | Microsoft Docs"
-description: "Mobilizaci .net pro nástroj pro migraci z jazyka Visual Basic 6 .NET jazyka Visual Basic a C#"
+title: Mobilizaci upgradu doprovodné jazyka Visual Basic .net na (VBUC) | Microsoft Docs
+description: Mobilizaci .net pro nástroj pro migraci z jazyka Visual Basic 6 .NET jazyka Visual Basic a C#
 ms.date: 09/05/2017
 ms.technology:
 - devlang-vb
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - visual-basic
 author: rpetrusha
@@ -13,11 +12,11 @@ ms.author: ronpet
 manager: wpickett
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7fa2a16143368b829f29f43a4c8f60536b55c52
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d80fa0e2f00ec9ea834483e8dd2c5c262a5eea0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobilizenets-visual-basic-upgrade-companion-vbuc"></a>Mobilizaci upgradu doprovodné jazyka Visual Basic .net na (VBUC)
 
@@ -87,7 +86,7 @@ Toto jsou některé jedinečné charakteristiky doprovodné upgradovat Visual Ba
 Seznam funkcí aktualizované, podrobnější, navštivte [technické lokality na VBUC](http://www.vbtonet.com/?msdn).
 
 ## <a name="learn-more-and-try-it-for-yourself"></a>Další informace a můžete vyzkoušet
-Další informace o VBUC, přečíst Zákaznické případové studie, dokumenty white paper přístup, videa a webová vysílání nebo stáhnout bezplatnou zkušební verzi na http://www.mobilize.net/solution/msdn.
+Další informace o VBUC, přečíst Zákaznické případové studie, přístup k bílé dokumenty Paper, videa a webová vysílání nebo stažení bezplatné zkušební verze na http://www.mobilize.net/solution/msdn.
 
 ## <a name="additional-resources"></a>Další prostředky
 

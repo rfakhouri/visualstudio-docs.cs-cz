@@ -1,13 +1,10 @@
 ---
-title: "Příkazové podokno | Microsoft Docs"
-ms.custom: 
+title: Příkazové podokno | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 f1_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 026223f89822f2d76aa1185da8691c538b15ee62
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 400032e381cbca164334e5f142d8ab08b8cfece0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="immediate-window"></a>Příkazové podokno
 **Immediate** okno slouží k ladění a vyhodnocení výrazů, spusťte příkazy, vytisknout hodnoty proměnných a tak dále. Umožňuje zadejte výrazy pro vyhodnocení nebo provedený jazyk vývoj během ladění. K zobrazení **Immediate** okno, otevřete projekt, a pak vyberte **Windows** z **ladění** nabídku a vyberte **Immediate**, nebo stiskněte kombinaci kláves CTRL + ALT + I.  

@@ -1,12 +1,10 @@
 ---
-title: "Postupy: při vytváření oblastí prostřednictvím kódu programu vyloučení značek odstavů | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: při vytváření oblastí prostřednictvím kódu programu vyloučení značek odstavů | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - paragraphs, controlling structure
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 37af64898686da4f09730f5b46fbbfa0936ddd0e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1a12d041c82be2be2ebfc6facc97bb769675555e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Postupy: Vyloučení značek odstavů při vytváření oblastí prostřednictvím kódu programu
   Vždy, když vytvoříte <xref:Microsoft.Office.Interop.Word.Range> objekt v závislosti na odstavce, všechny netisknutelné znaky, jako je například značky odstavce, jsou zahrnuty v rozsahu. Chcete vložit text ze zdroje odstavce do cílového odstavce. Pokud nechcete rozdělení cílového odstavce na samostatné odstavce, pak je nutné nejprve odstranit značku odstavce z odstavce zdroje. Navíc vzhledem k tomu, že informace o formátování odstavce je uložena v rámci značku odstavce, nemusí chcete být při vložení rozsahu do existujícího odstavce.  

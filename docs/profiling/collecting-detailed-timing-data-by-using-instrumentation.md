@@ -1,26 +1,24 @@
 ---
-title: "Shromažďování podrobných dat časování pomocí instrumentace | Microsoft Docs"
-ms.custom: 
+title: Shromažďování podrobných dat časování pomocí instrumentace | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,instrumentation method
 - instrumentation profiling method
 ms.assetid: e9deb370-c459-45ac-84d3-14d646590d05
-caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7bc5b81349c64c3b3422fb16b9cf578d0b8496ea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11f16376ca9fe86dcb7d68cc7a0ca7e4f2d36db2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Shromažďování podrobných dat časování pomocí instrumentace
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Metody instrumentace v nástrojích pro profilaci vloží profilování kód do kopie modulu. Kód zaznamenává každou položku, ukončení a volání funkce funkce v modulu během profilace spustit. Metoda instrumentace je užitečný při shromažďování časování podrobné informace o části kódu a porozumění vlivu vstupních a výstupních operací na výkon aplikace.  
@@ -34,11 +32,11 @@ ms.lasthandoff: 12/22/2017
 -   Na **Obecné** stránky dialogové okno Vlastnosti výkonnostní relace, vyberte **instrumentace**.  
   
 ## <a name="common-tasks"></a>Obecné úlohy  
- Můžete zadat další možnosti v *výkonnostní relace***stránky vlastností** dialogové okno relace výkonu. Chcete-li otevřít toto dialogové okno:  
+ Můžete zadat další možnosti v *výkonnostní relace *** stránky vlastností** dialogové okno relace výkonu. Chcete-li otevřít toto dialogové okno:  
   
 -   V **prohlížeč výkonu**, klikněte pravým tlačítkem na název relace výkonu a pak klikněte na tlačítko **vlastnosti**.  
   
- Úkoly v následující tabulce popisují možnosti, které můžete zadat v *výkonnostní relace***stránky vlastností** dialogové okno když profilu pomocí metody instrumentace.  
+ Úkoly v následující tabulce popisují možnosti, které můžete zadat v *výkonnostní relace *** stránky vlastností** dialogové okno když profilu pomocí metody instrumentace.  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  

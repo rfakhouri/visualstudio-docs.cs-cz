@@ -1,7 +1,7 @@
 ---
-title: "Časových limitů pro testovací Kontroléry a testovací agenty v sadě Visual Studio | Microsoft Docs"
+title: Časových limitů pro testovací Kontroléry a testovací agenty v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - agents, configuring
 - agetns, timeouts
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a8d6f48502aa60cd92c0a941ce3d9aaca04dfea
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 067dee39ade864cd0e0211ed8fd27d8f8fd3d9c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Postupy: Nastavení časových limitů pro testovací kontroléry a testovací agenty
 
@@ -33,7 +33,7 @@ Testovací kontroler a agenta test mít několik nastavení časového limitu, k
     |AgentInitializeTimeout|Počet sekund pro čekání, pro všechny agenty a jejich sběrače dat k chybě při inicializaci na začátku testu spustit před ukončením testovacím běhu. Tato hodnota by měla být přiměřeně velká, pokud používáte dat.|"n" sekund. Výchozí hodnota: "120" (dvou minut).|
     |AgentCleanupTimeout|Počet sekund pro čekání, pro všechny agenty a jejich sběrače dat vymazání, před dokončením test spustit. Tato hodnota by měla být přiměřeně velká, pokud používáte dat.|"n" sekund. Výchozí hodnota: "120" (dvou minut).|
 
--   Test Agent: QTAgentService.exe.config
+-   Testovací Agent: QTAgentService.exe.config
 
     |Název klíče|Popis|Hodnota|
     |--------------|-----------------|-----------|

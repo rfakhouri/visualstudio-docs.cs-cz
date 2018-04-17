@@ -1,20 +1,20 @@
 ---
-title: "Přidání kontextových parametrů k Zátěžovému testu spusťte nastavení v sadě Visual Studio | Microsoft Docs"
+title: Přidání kontextových parametrů k Zátěžovému testu spusťte nastavení v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 03db08b701574a4e910b96c843d0f2638e71a4f7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0d563adc5e6b43aa5371fe08f410880a6aba0a09
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Postupy: Přidání kontextových parametrů k parametrům spuštění zátěžového testu
 
@@ -34,9 +34,9 @@ Pokud přiřadíte hodnotu parametru kontextu webový_server1 `http://CorporateS
 
 Kromě toho přiřazením různé hodnoty na parametr kontextu za použití stejného názvu v nastavení testu různé zatížení můžete spustit zátěžový test pomocí různých prostředích:
 
--   Podnikový Web Server pracovní spustit nastavení: kontext parametru, který je pojmenován Webový_server1 = http://CorporateStagingWebServer
+-   Podnikový Web Server pracovní spustit nastavení: kontext parametru, který je pojmenován Webový_server1 =http://CorporateStagingWebServer
 
--   Nastavení spuštění podnikové produkční webový Server: Parametr kontextu, který je s názvem Webový_server1 = http://CorporateProductionWebServer
+-   Nastavení spuštění podnikové produkční webový Server: Parametr kontextu, který je s názvem Webový_server1 =http://CorporateProductionWebServer
 
  **Změna nastavení spuštění z příkazového řádku**
 
@@ -46,7 +46,7 @@ Kromě toho přiřazením různé hodnoty na parametr kontextu za použití stej
 
  - a -
 
- **mstest /testcontainer:loadtest1.loadtest**
+ **/testcontainer:loadtest1.loadtest mstestu**
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Chcete-li přidat parametr kontextu k parametrům spuštění
 

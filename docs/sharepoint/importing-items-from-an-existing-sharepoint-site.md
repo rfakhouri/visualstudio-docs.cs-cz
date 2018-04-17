@@ -1,12 +1,10 @@
 ---
-title: "Import položek z existující stránky SharePoint | Microsoft Docs"
-ms.custom: 
+title: Import položek z existující stránky SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.WSPImport.SelectionDependency
 - VS.SharepointTools.WSPImport.SpecifyProjectSource
@@ -22,24 +20,25 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a542a74bf162c4fc2bb2fe2c725b02742d568547
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b5a4f282923b073a87307d88f0c3e3b4365d1057
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="importing-items-from-an-existing-sharepoint-site"></a>Import položek z existující stránky SharePoint
   Šablona projektu Import balíčku řešení služby SharePoint můžete znovu použít elementů, jako jsou typy obsahu a pole z existujících webů služby SharePoint v nové [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] řešení služby SharePoint. I když můžete spustit nejvíce importované řešení bez jakýchkoli úprav, existují určitá omezení a které byste měli zvážit, zejména v případě, že po importu upravíte všechny položky.  
   
 > [!NOTE]  
->  Provést import znovu použitelné pracovní postupy, použijte šablonu projektu Import opakovaně použitelného pracovního postupu. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Pokyny pro import znovu použitelné pracovní postupy](../sharepoint/guidelines-for-importing-reusable-workflows.md).  
+>  Provést import znovu použitelné pracovní postupy, použijte šablonu projektu Import opakovaně použitelného pracovního postupu. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Pokyny pro import znovu použitelné pracovní postupy](../sharepoint/guidelines-for-importing-reusable-workflows.md).  
   
 ## <a name="supported-sharepoint-solutions"></a>Řešení podporované služby SharePoint  
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]plně podporuje import řešení vytvořená v [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] a [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] plně podporuje import řešení vytvořená v [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] a [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].  
   
- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]nepodporuje import řešení vytvořená v následujících aplikacích:  
+ [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] nepodporuje import řešení vytvořená v následujících aplikacích:  
   
 -   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
  Například při importu definice seznamu ExpenseForms, definice seznamu s tímto názvem se zobrazí pod **seznam definic** složky v **Průzkumníku řešení** společně s jeho Elements.xml a Schema.XML soubory. Však možné umístit přidruženy formuláře ASPX a HTML ve složce s názvem **ExpenseForms** pod **ostatní soubory importovat** složky. K dokončení importu, přesunutí těchto souborů v rámci definice seznamu ExpenseForms v **Průzkumníku řešení** a změňte **DeploymentType** vlastnost pro každý soubor z **NoDeployment** k **ElementFile**.  
   
- Při importu přijímače událostí, je Elements.xml soubor zkopírován do správného umístění, ale je nutné ručně zahrnout sestavení balíčku řešení tak, aby se nasadí do řešení. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)]jak to udělat, najdete v části [postupy: Přidání a odebrání dalších sestavení](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
+ Při importu přijímače událostí, je Elements.xml soubor zkopírován do správného umístění, ale je nutné ručně zahrnout sestavení balíčku řešení tak, aby se nasadí do řešení. [!INCLUDE[crabout](../sharepoint/includes/crabout-md.md)] jak to udělat, najdete v části [postupy: Přidání a odebrání dalších sestavení](../sharepoint/how-to-add-and-remove-additional-assemblies.md).  
   
  Při importu pracovní postupy, formuláře aplikace InfoPath se zkopírují do **ostatní soubory importovat** složky. Pokud soubor WSP obsahuje šablony, je nastaven jako spouštěcí stránku v **Průzkumníku řešení**.  
   
@@ -112,13 +111,13 @@ ms.lasthandoff: 01/10/2018
  Při importu řešení, jsou vynechány některých atributů volitelná funkce z manifestu importované funkce. Pokud chcete obnovit tyto atributy v souboru nové funkce, identifikovat chybějící atributy tak, že porovnáte původní soubor funkce k manifestu nové funkce a postupujte podle pokynů v tématu [postupy: přizpůsobení funkce služby SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>Zjišťování konfliktů nasazení provádí není na seznam předdefinovaných instancí  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]neprovádí zjišťování konfliktů nasazení na seznam předdefinovaných instance (to znamená, výchozí seznam instancí, které jsou součástí služby SharePoint). Aby nedošlo k přepsání seznam předdefinovaných instance na webu služby SharePoint se provádí není provádění zjišťování konfliktů. Seznam předdefinovaných, instancí jsou stále nasadit nebo aktualizovat, ale jsou nikdy odstranit nebo přepsat. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] neprovádí zjišťování konfliktů nasazení na seznam předdefinovaných instance (to znamená, výchozí seznam instancí, které jsou součástí služby SharePoint). Aby nedošlo k přepsání seznam předdefinovaných instance na webu služby SharePoint se provádí není provádění zjišťování konfliktů. Seznam předdefinovaných, instancí jsou stále nasadit nebo aktualizovat, ale jsou nikdy odstranit nebo přepsat. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Řešení potíží s balení a nasazení SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).  
   
 ## <a name="importing-sharepoint-server-2010-workflows"></a>Import pracovních postupů služby SharePoint Server 2010  
- Pokud importujete pracovní postup vytvořený v [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], nebude po jeho nasazení správně fungovat. Pracovní postup se nefunguje správně, protože chybí některé sestavení a [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] pracovní postupy obsahují InfoPath formulářů, které nejsou aktuálně podporované ve [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] řešení pracovního postupu. Však importovat [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] pracovní postupy můžete provést po opravě některé položky, jako je například přidávání odkazů na fungovala správně [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] sestavení a opětovné připojení InfoPath formuláře. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Import pracovních postupů služby SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=182226).  
+ Pokud importujete pracovní postup vytvořený v [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)], nebude po jeho nasazení správně fungovat. Pracovní postup se nefunguje správně, protože chybí některé sestavení a [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] pracovní postupy obsahují InfoPath formulářů, které nejsou aktuálně podporované ve [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] řešení pracovního postupu. Však importovat [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] pracovní postupy můžete provést po opravě některé položky, jako je například přidávání odkazů na fungovala správně [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] sestavení a opětovné připojení InfoPath formuláře. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Import pracovních postupů služby SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=182226).  
   
 ## <a name="item-name-character-limit"></a>Položka Název Limit pro počet znaků  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]limit 260 celkový počet znaků pro projekt a názvy položek projektu, včetně cesty je. Při importu řešení, pokud název položky překračuje tento limit, dojde k chybě:  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] limit 260 celkový počet znaků pro projekt a názvy položek projektu, včetně cesty je. Při importu řešení, pokud název položky překračuje tento limit, dojde k chybě:  
   
  **Zadaná cesta a název souboru jsou příliš dlouhé. Plně kvalifikovaný název souboru musí být méně než 260 znaků a název adresáře musí být méně než 248 znaků.**  
   

@@ -1,5 +1,5 @@
 ---
-title: "Návrhář aktivity CancellationScope | Microsoft Docs"
+title: Návrhář aktivity CancellationScope | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 406e46ccc3f8d0fd70b185a0e5f02151592e85d4
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 3231d62d5c961e63fa2a72374d5a1adcf50288f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cancellationscope-activity-designer"></a>Návrhář aktivity CancellationScope
 **CancellationScope** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.CancellationScope> aktivity.
@@ -33,8 +33,8 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Volitelné popisný název <xref:System.Activities.Statements.CancellationScope> aktivity. Výchozí hodnota je CancellationScope. I když <xref:System.Activities.Activity.DisplayName%2A> hodnota není nezbytně nutné, je osvědčeným postupem použít.|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|Určuje aktivity, pro které zrušení logiku poskytnuty. Chcete-li přidat <xref:System.Activities.Statements.CancellationScope.Body%2A> aktivity, vyřaďte aktivitu z **sada nástrojů** do **textu** pole na **CancellationScope** Návrhář aktivity s textem pomocný parametr "rozevírací Aktivity sem".|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|Určuje aktivity, která se spustí v případě zrušení. Chcete-li přidat <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> aktivity, vyřaďte aktivitu z **sada nástrojů** do **CancellationHandler** pole na **CancellationScope** Návrhář aktivity s pomocným parametrem text "Aktivity Sem přetáhněte".|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|Hodnota TRUE|Určuje aktivity, pro které zrušení logiku poskytnuty. Chcete-li přidat <xref:System.Activities.Statements.CancellationScope.Body%2A> aktivity, vyřaďte aktivitu z **sada nástrojů** do **textu** pole na **CancellationScope** Návrhář aktivity s textem pomocný parametr "rozevírací Aktivity sem".|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|Hodnota TRUE|Určuje aktivity, která se spustí v případě zrušení. Chcete-li přidat <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> aktivity, vyřaďte aktivitu z **sada nástrojů** do **CancellationHandler** pole na **CancellationScope** Návrhář aktivity s pomocným parametrem text "Aktivity Sem přetáhněte".|
 
 ## <a name="see-also"></a>Viz také
 

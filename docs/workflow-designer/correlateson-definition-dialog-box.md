@@ -1,5 +1,5 @@
 ---
-title: "Dialogové okno Definice CorrelatesOn | Microsoft Docs"
+title: Dialogové okno Definice CorrelatesOn | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 386d27e96ad1b3a04b9cdb8f76f96ee5e2ad6a46
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 930f291f68e62e70c4d2a03f490f84fd8d36f657
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="correlateson-definition-dialog-box"></a>Dialogové okno Definice CorrelatesOn
 **CorrelatesOn** dialogové okno se používá v Návrháři pracovních postupů Windows upravit <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> vlastnost <xref:System.ServiceModel.Activities.Receive> aktivity. Další informace najdete v tématu [Receive](../workflow-designer/receive-activity-designer.md) tématu.

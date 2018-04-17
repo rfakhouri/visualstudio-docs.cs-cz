@@ -1,5 +1,5 @@
 ---
-title: "Na kartě systém. Výběr položek sady nástrojů – dialogové okno | Microsoft Docs"
+title: Na kartě systém. Výběr položek sady nástrojů – dialogové okno | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07da20e7d412fc9904b6af1f36406afc9c35a9e8
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2da5aafcc684c9af71aebc094d817c64f579d0ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>Na kartě systém. Výběr položek sady nástrojů – dialogové okno
 Na této kartě z **výběr položek sady nástrojů** dialogové okno zobrazí seznam [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aktivit, šablony a dostupné položky. Chcete-li zobrazit tento seznam, vyberte **výběr položek sady nástrojů** z **nástroje** nabídky nebo kliknutím pravým tlačítkem **sada nástrojů** a výběrem **zvolit položky**zobrazíte **výběr položek sady nástrojů** dialogové okno a potom vyberte jeho **systém.** kartě. Předinstalované seznam obsahuje aktivity pracovního postupu z systém, System.ServiceModel.Activities a System.Activities.Core.Presentation sestavení; ale pouze poskytované systémem vidět a aktivity, které jsou přidány prostřednictvím ostatních sestavení se zobrazí v **sada nástrojů** jsou ve výchozím nastavení zaškrtnuto. Nedávno přidané aktivity jsou automaticky zkontrolovány a zobrazují v **sada nástrojů** když kliknete na tlačítko **OK** v dialogovém okně. Tyto položky nezobrazí, v **sada nástrojů** pod novou kategorii, která odpovídá do oboru názvů, které se nachází aktivity či položky nebo šablonu.

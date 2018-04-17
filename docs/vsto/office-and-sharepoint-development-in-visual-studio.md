@@ -1,12 +1,10 @@
 ---
-title: "Office a vývoj pro SharePoint v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Office a vývoj pro SharePoint v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - Office, development with Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b0692b0320a8741351391f82b694089910bae4f8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 03863489f17672e1d72074633d353b041e022b78
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Vývoj pro Office a SharePoint ve Visual Studiu
   Můžete rozšířit vytvoření jednoduché aplikace Microsoft Office a SharePoint nebo doplňku, uživatelé stáhnout z [Office úložiště](https://store.office.com/) nebo organizační katalogu nebo vytvořením řešení založené na rozhraní .NET Framework, kterou můžou uživatelé instalovat na počítač.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Vytvoření řešení služby SharePoint](#Solutions)  
   
-##  <a name="Apps"></a>Vytváření doplňků pro Office a SharePoint  
+##  <a name="Apps"></a> Vytváření doplňků pro Office a SharePoint  
  Office 2013 a SharePoint 2013 zavést nový doplňku model, který vám pomůže vytvořit, distribuci a monetizovat doplňky, které rozšiřují Office a SharePoint.  Tyto doplňky můžete spustit v Office nebo SharePoint Online, a mohou uživatelé komunikovat s nimi z mnoha zařízení.  
   
  Zjistěte, jak používat nové [model doplňku Office](https://msdn.microsoft.com/library/office/jj220082.aspx) rozšíření prostředí Office pro uživatele.  
@@ -92,7 +91,7 @@ ms.lasthandoff: 01/10/2018
 |Vyberte, zda chcete vytvořit doplněk SharePoint nebo řešení služby SharePoint.|[Při rozhodování o tom mezi doplňky SharePoint a řešení služby SharePoint](https://msdn.microsoft.com/library/office/jj163114.aspx)|  
 |Další informace o vývojových nástrojů Napa Office 365.|[Nástroje pro vývoj pro Office 365 Napa](https://msdn.microsoft.com/library/dn974046.aspx)|  
   
-##  <a name="Add-ins"></a>Vytvoření doplňku VSTO  
+##  <a name="Add-ins"></a> Vytvoření doplňku VSTO  
  Vytvořte doplňku VSTO pro Office 2007 nebo Office 2010 nebo rozšířit Office 2013 a Office 2016 dále, než je možné pomocí doplňků Office. Doplňků VSTO spustit pouze na ploše. Uživatelé mají k instalaci doplňků VSTO, tak, aby obvykle obtížnější k nasazení a podporu.  Ale tohoto doplňku VSTO dá integrovat přesněji Office. Například ho přidejte karet a ovládacích prvků na pásu karet Office a provést pokročilé automatizace například slučování dokumenty nebo úprava grafy. Můžete využít rozhraní .NET Framework a interakci s objekty Office pomocí jazyka C# a Visual Basic.  
   
  Tady je příklad můžete provést co doplňku VSTO. Doplňku VSTO přidá do aplikace PowerPoint ovládacích prvků pásu karet, vlastního podokna úloh a dialogové okno.  
@@ -106,7 +105,7 @@ ms.lasthandoff: 01/10/2018
 |Porovnání způsobů, ve kterém můžete rozšířit Office a rozhodnout, zda byste měli používat doplňku VSTO nebo doplňku Office.|[Plán pro Office doplňků VSTO a VBA](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
 |Vytvoření doplňku VSTO.|[Doplňků VSTO sestavení pomocí sady Visual Studio](https://msdn.microsoft.com/library/jj620922.aspx)|  
   
-##  <a name="Solutions"></a>Vytvoření řešení služby SharePoint  
+##  <a name="Solutions"></a> Vytvoření řešení služby SharePoint  
  Vytvořte řešení služby SharePoint cílové SharePoint Foundation 2010 a SharePoint Server 2010 nebo SharePoint 2013 a SharePoint 2016 rozšířit způsoby dále, než je možné pomocí doplňku služby SharePoint.  
   
  Řešení služby SharePoint vyžadují místní servery ve farmě služby SharePoint. Správci musí nainstalovat, a protože řešení provést ve službě SharePoint, mohou ovlivnit výkon serveru. Řešení však poskytuje hlubší přístup k objektům služby SharePoint. Navíc při sestavování řešení služby SharePoint, můžete využít rozhraní .NET Framework a interakci s objekty služby SharePoint pomocí jazyka C# a Visual Basic.  

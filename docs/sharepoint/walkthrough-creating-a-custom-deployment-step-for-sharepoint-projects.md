@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 036f8d135e535547e9e5f790135186bf1f5728bc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1538e68d29667eb7a1b3f0c976ddc5d77dab825b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Návod: Vytvoření vlastního kroku nasazení pro projekty SharePoint
   Při nasazení projektu služby SharePoint, Visual Studio provede sérii kroků nasazení v určitém pořadí. Visual Studio zahrnuje mnoho kroků předdefinované nasazení, ale můžete taky vytvořit svoje vlastní.  
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Vyberte **projektu VSIX** šablony, název projektu **UpgradeDeploymentStep**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **UpgradeDeploymentStep** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **UpgradeDeploymentStep** projektu do **Průzkumníku řešení**.  
   
 #### <a name="to-create-the-extension-project"></a>Vytvoření projektu rozšíření  
   
@@ -95,7 +94,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Vyberte **knihovny tříd** projektu šablony, název projektu **DeploymentStepExtension**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **DeploymentStepExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **DeploymentStepExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
 5.  Odstraňte soubor kódu Class1 z projektu.  
   
@@ -271,7 +270,7 @@ ms.lasthandoff: 01/10/2018
   
 7.  Vyberte **Dokončit** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Vytvoří EmployeesListDefinition projekt.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Vytvoří EmployeesListDefinition projekt.  
   
 8.  Otevřete místní nabídky projektu EmployeesListDefinition, zvolte **přidat**a potom zvolte **novou položku**.  
   
@@ -289,7 +288,7 @@ ms.lasthandoff: 01/10/2018
   
     3.  **Výchozí (prázdný)** je vybrán v **vytvořit seznam přizpůsobitelné na základě:** seznamu.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]vytvoří položku seznamu zaměstnanci s sloupec názvu a jedné prázdnou instanci a otevře návrháře seznamu.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoří položku seznamu zaměstnanci s sloupec názvu a jedné prázdnou instanci a otevře návrháře seznamu.  
   
 12. V Návrháři seznamu na **sloupce** , zvolte **zadejte název nové nebo existující sloupec** řádek a poté přidejte následující sloupce ve **zobrazovaný název sloupce** seznamu:  
   
@@ -433,7 +432,7 @@ ms.lasthandoff: 01/10/2018
   
      Otevře se Editor nebo návrháře vlastnosti.  
   
-4.  Na **zobrazení** , zvolte **e-mailu** sloupce a potom zvolte  **<**  klíč, přesuňte tento sloupec z **vybrané sloupce**se seznam **dostupné sloupce** seznamu.  
+4.  Na **zobrazení** , zvolte **e-mailu** sloupce a potom zvolte **<** klíč, přesuňte tento sloupec z **vybrané sloupce**se seznam **dostupné sloupce** seznamu.  
   
      Tato akce odebere z výchozí zobrazení těchto polí **zaměstnanci** seznamu na web služby SharePoint.  
   

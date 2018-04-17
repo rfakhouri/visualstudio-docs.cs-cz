@@ -1,5 +1,5 @@
 ---
-title: "Vyberte podmínku dialogové (zastaralé) | Microsoft Docs"
+title: Vyberte podmínku dialogové (zastaralé) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,21 +9,21 @@ helpviewer_keywords:
 ms.assetid: fe3b415c-cb55-4295-b853-3f40765b28d0
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd6239e9032521fb178e8e1b6e4a0920af77e0e0
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 2c5a48e423a012d9b69bc4d8f5ef990f3e937498
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Dialogové okno Vyberte podmínku (zastaralé)
 Toto téma popisuje, jak používat **vyberte podmínku** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
  **Vyberte podmínku** dialogové okno slouží k výběru deklarativní pravidlo podmínku, kterou chcete přiřadit k vlastnosti stavu aktivity. Tyto podmínky pravidla jsou zveřejněné jako vlastnosti na následujících out-of-box aktivit programovacího modelu Windows Workflow Foundation:
 
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+-   [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
 -   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
 
@@ -38,7 +38,7 @@ Toto téma popisuje, jak používat **vyberte podmínku** dialogové okno v Náv
 |Prvek uživatelského rozhraní (UI)|Popis|
 |----------------|-----------------|
 |**Nové...**|Kliknutím otevřete [dialogové okno pravidla podmínku Editor (zastaralé)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) vytvořit novou podmínku pravidla.|
-|**Edit...**|Kliknutím otevřete [dialogové okno pravidla podmínku Editor (zastaralé)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) upravit vybrané pravidlo podmínku.|
+|**Upravit...**|Kliknutím otevřete [dialogové okno pravidla podmínku Editor (zastaralé)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) upravit vybrané pravidlo podmínku.|
 |**Přejmenování...**|Kliknutím otevřete dialogové okno používá k přejmenování podmínka pro vybrané pravidlo.|
 |**Odstranit**|Klikněte na tlačítko Odstranit vybrané pravidlo podmínku.|
 |**Náhled podmínky**|Zobrazí výraz podmínky pro vybrané pravidlo podmínku.|

@@ -1,5 +1,5 @@
 ---
-title: "Potvrďte Návrhář aktivity | Microsoft Docs"
+title: Potvrďte Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1350bd57b2792140a6e54e7d4252899d2498bb93
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 0b0414c45b57a112528aad8488f4c1f69fdf641f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="confirm-activity-designer"></a>Potvrďte Návrhář aktivity
 **Potvrdit** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Confirm> aktivity.
@@ -35,7 +35,7 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje nepovinné popisný název <xref:System.Activities.Statements.CancellationScope> aktivity. Výchozí hodnota je potvrdit.|
-|<xref:System.Activities.Statements.Confirm.Target%2A>|True|Určuje, <xref:System.Activities.InArgument%601> obsahující <xref:System.Activities.Statements.CompensationToken> pro tento <xref:System.Activities.Statements.Confirm> aktivity.|
+|<xref:System.Activities.Statements.Confirm.Target%2A>|Hodnota TRUE|Určuje, <xref:System.Activities.InArgument%601> obsahující <xref:System.Activities.Statements.CompensationToken> pro tento <xref:System.Activities.Statements.Confirm> aktivity.|
 
 ## <a name="see-also"></a>Viz také
 

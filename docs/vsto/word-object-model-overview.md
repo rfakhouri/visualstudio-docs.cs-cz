@@ -1,12 +1,10 @@
 ---
-title: "Přehled modelu objektů aplikace Word | Microsoft Docs"
-ms.custom: 
+title: Přehled modelu objektů aplikace Word | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a6f9163543272d784b0f8347acf275f74023ccf8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: aae1d5648b2db72a4e5ddd6b792f2b3aed846e76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="word-object-model-overview"></a>Přehled modelu objektů aplikace Word
   Při vývoji řešení aplikace Word v sadě Visual Studio komunikovat s model objektů aplikace Word. Tento objektový model se skládá z třídy a rozhraní, které jsou uvedeny v primární spolupracující sestavení pro aplikaci Word a jsou definovány v <xref:Microsoft.Office.Interop.Word> oboru názvů.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Práce s tabulkami](../vsto/working-with-tables.md)  
   
-##  <a name="understanding"></a>Principy Model objektů aplikace Word  
+##  <a name="understanding"></a> Principy Model objektů aplikace Word  
  Word poskytuje stovky objekty, se kterými můžete pracovat. Tyto objekty jsou uspořádány do hierarchie, která přesně dodržuje uživatelské rozhraní. V horní části hierarchie <xref:Microsoft.Office.Interop.Word.Application> objektu. Tento objekt představuje aktuální instanci aplikace Word. <xref:Microsoft.Office.Interop.Word.Application> Objekt obsahuje <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, a <xref:Microsoft.Office.Interop.Word.Range> objekty. Každý z těchto objektů má mnoho metody a vlastnosti, které dostanete pracovat a manipulovat s daným objektem.  
   
  Následující obrázek znázorňuje jedno zobrazení těchto objektů v hierarchii model objektů aplikace Word.  
@@ -112,13 +111,13 @@ ms.lasthandoff: 01/10/2018
   
 -   Záložka můžete pojmenovat v době návrhu.  
   
--   <xref:Microsoft.Office.Interop.Word.Bookmark>objekty se ukládají s dokumentu a proto nebudou odstraněny, pokud kód zastaví nebo dokumentu je uzavřený.  
+-   <xref:Microsoft.Office.Interop.Word.Bookmark> objekty se ukládají s dokumentu a proto nebudou odstraněny, pokud kód zastaví nebo dokumentu je uzavřený.  
   
 -   Záložky můžete skrytý nebo viditelný provedené nastavení <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> vlastnost <xref:Microsoft.Office.Interop.Word.View> do objektu **false** nebo **true**.  
   
  Visual Studio rozšiřuje <xref:Microsoft.Office.Interop.Word.Bookmark> objekt tím, že poskytuje <xref:Microsoft.Office.Tools.Word.Bookmark> hostování ovládacího prvku. <xref:Microsoft.Office.Tools.Word.Bookmark> Hostitelského ovládacího prvku se chová jako nativní <xref:Microsoft.Office.Interop.Word.Bookmark>, ale má další události a možnosti pro datové vazby. Data lze vázat k ovládacímu prvku záložek na dokument stejným způsobem, že vázat data na textové pole ve formuláři Windows. Další informace najdete v tématu [ovládacího prvku záložek](../vsto/bookmark-control.md).  
   
-##  <a name="WordOMDocumentation"></a>Pomocí dokumentace modelu objektů aplikace Word  
+##  <a name="WordOMDocumentation"></a> Pomocí dokumentace modelu objektů aplikace Word  
  Úplné informace o model objektů aplikace Word najdete odkaz na aplikaci Word primární spolupracující sestavení (PIA) a Visual Basic for Applications (VBA) odkaz na objekt modelu.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odkaz sestavení primární spolupráce  

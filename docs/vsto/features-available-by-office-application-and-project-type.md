@@ -1,12 +1,10 @@
 ---
-title: "Dostupné funkce podle aplikace Office a typu projektu | Microsoft Docs"
-ms.custom: 
+title: Dostupné funkce podle aplikace Office a typu projektu | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: b79c7a913e8ce06b1d833f78aad9e8565d54aff2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff8128f9c142193d9fcde2f139e29a3fb4f3326e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Dostupné funkce podle aplikací systému Office a typů projektu
   Visual Studio obsahuje několik typů šablon projektů, které podporují různé obchodní scénáře pro aplikace Microsoft Office, včetně následujících typů:  
@@ -36,7 +35,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Doplňků VSTO.  
   
- Ne všechny aplikace mohou používat každý typ projektu. Například projekty na úrovni dokumentu jsou k dispozici pouze pro aplikace Microsoft Office Word a Microsoft Office Excel. Podobně některé funkce jsou dostupné pouze pro určité typy projektů nebo aplikace. Například v podokně Akce je dostupná jenom v projektech na úrovni dokumentu a jsou dostupná jenom pro některé aplikace pásu karet rozšíření. Další informace o typech jiný projekt, najdete v části [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Ne všechny aplikace mohou používat každý typ projektu. Například projekty na úrovni dokumentu jsou k dispozici pouze pro aplikace Microsoft Office Word a Microsoft Office Excel. Podobně některé funkce jsou dostupné pouze pro určité typy projektů nebo aplikace. Například v podokně Akce je dostupná jenom v projektech na úrovni dokumentu a jsou dostupná jenom pro některé aplikace pásu karet rozšíření. Další informace o typech jiný projekt, najdete v části [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
 > [!NOTE]  
 >  Šablony projektů Office jsou k dispozici pouze v některých edicích [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [Konfigurace počítače pro vývoj řešení pro Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).  
@@ -69,8 +68,8 @@ ms.lasthandoff: 01/10/2018
 |Návrhář Visual dokumentu.|Projekty na úrovni dokumentu.|[Projekty pro systém Office v prostředí Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   
 ## <a name="see-also"></a>Viz také  
- [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Přehled vývoje řešení pro systém Office &#40; VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Přehled podokna akcí](../vsto/actions-pane-overview.md)   
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
  [Vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md)   

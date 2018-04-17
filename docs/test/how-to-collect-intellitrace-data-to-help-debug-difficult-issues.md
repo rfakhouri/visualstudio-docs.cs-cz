@@ -1,7 +1,7 @@
 ---
-title: "Dat technologie Intellitrace v sadě Visual Studio | Microsoft Docs"
+title: Dat technologie Intellitrace v sadě Visual Studio | Microsoft Docs
 ms.date: 10/13/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTrace, configuring test settings
 - Diagnostic Data Adapter, InteliTrace
@@ -10,13 +10,13 @@ helpviewer_keywords:
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04c4c1cd4429228ffa90e06ac9675901602c3cd0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: e1f36aefaad2e43d8875c9c0164ac938b004999d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: Shromáždění dat technologie IntelliTrace pro snazší ladění složitých problémů
 
@@ -111,4 +111,4 @@ Před provedením kroků v tomto postupu, je nutné otevřít nastavení testu z
 - [Shromažďování diagnostických dat při testování (VSTS)](/vsts/manual-test/collect-diagnostic-data)
 - [Shromažďování diagnostických dat v manuálních testech (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
 - [Shromažďování diagnostických informací s použitím nastavení testu](../test/collect-diagnostic-information-using-test-settings.md)
-- [Shromáždění dat technologie IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)
+- [Shromažďování dat IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

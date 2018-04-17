@@ -1,12 +1,10 @@
 ---
-title: "&lt;postactions –&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: '&lt;postactions –&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - <postActions> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbe0708ce97eb6410f006b6dcdc8d8194907b9c1
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2c4dafa1c5ac7ef296ba388ecdfd93d00afef708
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postactions –&gt; – Element (vývoj pro Office v sadě Visual Studio)
   `postActions` Element `vstav3` obor názvů obsahuje všechny `postAction` prvky, které popisují akce po nasazení, které se spustit po instalaci řešení pro systém Office.  
@@ -45,10 +44,10 @@ ms.lasthandoff: 01/10/2018
   
  `postActions` Element nemá žádné atributy.  
   
- `postActions`má následující element.  
+ `postActions` má následující element.  
   
 ### <a name="postaction"></a>postAction  
- Volitelné. Role `postAction` element v `vstav3` obor názvů je definován v [& č. 60; postAction & č. 62; Element &#40; vývoj pro Office v sadě Visual Studio &#41; ](../vsto/postaction-element-office-development-in-visual-studio.md).  
+ Volitelné. Role `postAction` element v `vstav3` obor názvů je definován v [ &#60;postAction&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>Příklad akce po nasazení  
   

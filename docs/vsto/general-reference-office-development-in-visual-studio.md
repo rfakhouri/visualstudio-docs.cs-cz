@@ -1,13 +1,10 @@
 ---
-title: "Obecné referenční informace (vývoj pro Office v sadě Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Obecné referenční informace (vývoj pro Office v sadě Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb41929716fe89e6723f55ce7b87c8dcc7a78bcc
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a1bc2816f696d72fd8d574c452701698cc6b655d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Obecný odkaz (vývoj pro Office v sadě Visual Studio)
   Tato část obsahuje technické podrobnosti o projektů Microsoft Office v sadě Visual Studio.  
@@ -40,14 +37,14 @@ ms.lasthandoff: 01/10/2018
  [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)  
  Popisuje, jak manifesty nasazení jsou použité řešení pro systém Office.  
   
- [Reference k uživatelskému rozhraní &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
+ [Reference k uživatelskému rozhraní &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/user-interface-reference-office-development-in-visual-studio.md)  
  Seznam témat, která popisují možnosti, které se zobrazují v různých dialogových oken, windows a další uživatelská rozhraní.  
   
- [Chybové zprávy &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
+ [Chybové zprávy &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/error-messages-office-development-in-visual-studio.md)  
  Seznam témat, která popisují chybové zprávy pro projekty Office.  
   
 ## <a name="related-sections"></a>Související oddíly  
- [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Obsahuje odkazy na informace o instalaci, šablony projektů, primární spolupracující sestavení Office a co je nového v vývoj pro Office.  
   
  [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)  

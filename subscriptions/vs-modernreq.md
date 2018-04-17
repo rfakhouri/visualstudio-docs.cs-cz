@@ -1,54 +1,27 @@
 ---
-title: "Výhodou MODERNRequirements v sadě Visual Studio předplatných | Microsoft Docs"
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 1/12/2018
-Ms.topic: Get-Started-Article
-Description: Learn about the ModernRequirements suite of products included in selected Visual Studio Enterprise subscriptions.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4ff6c7db66547bc2d4da05bf9aec087113c64cbe
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+title: Výhodou MODERNRequirements v sadě Visual Studio předplatných | Microsoft Docs
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 01/12/2018
+ms.topic: Get-Started-Article
+description: Další informace o sadě ModernRequirements produktů, které jsou součástí vybrané odběry Visual Studio Enterprise.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: c16033488db6e23e935f355183db7d7049690ba5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Výhodou MODERNRequirements4TFS odběry sady Visual Studio
-
-## <a name="overview"></a>Přehled
+# <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Výhodou MODERNRequirements4TFS odběry Visual Studio
 
 Vybrané předplatné sady Visual Studio zahrnují odběr pro MODERNRequirements SmartOffice 4TFS a ModernRequirements4TFS šesti měsíců.  MODERNRequirements SmartOffice4TFS rozšiřuje možnosti sady TFS nebo Visual Studio Team Services s formátovaným textem rychlý, zjednodušené vytváření a zobrazení pro generování sestav Microsoft.  ModernRequirements4TFS poskytuje možnosti simulace HTML5 a pracovní položka monitorování standardních hodnot.  
 
-## <a name="eligibility"></a>Podmínky
-| Úrovni předplatného / Program                                                  | Výhody               | Obnovitelných?                                                         |
-|-------------------------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|
-| Visual Studio Enterprise Standard                                             | 6 měsíců              |  Ano                                                               |
-| Visual Studio Enterprise roční                                               | 6 měsíců              |  Ano                                                               |
-| Visual Studio Enterprise každý měsíc                                              | Není k dispozici         |                                                                    |
-| Visual Studio Professional Standard                                           | Není k dispozici         |                                                                    |
-| Visual Studio Professional roční                                             | Není k dispozici         |                                                                    | 
-| Visual Studio Professional každý měsíc                                            | Není k dispozici         |                                                                    |
-| Visual Studio Test Pro                                                        | Není k dispozici         |                                                                    |
-| MSDN platformy                                                                | Není k dispozici         |                                                                    |
-| Visual Studio Dev Essentials                                                  | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise - NFR<sup>1</sup>                                               | 6 měsíců              |  Ano                                                               |
-| Visual Studio Enterprise - FTE                                                | 6 měsíců              |  Ano                                                               |
-| Visual Studio Enterprise – Microsoft Partner Network                          | 6 měsíců              |  Ano                                                               |
-| Visual Studio Professional - Microsoft Partner Network                        | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – Imagine (Standard)                                 | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – Představte si (Premium)                                  | Není k dispozici         |                                                                    |
-| Visual Studio Enterprise – BizSpark                                           | Není k dispozici         |                                                                    |
-| Microsoft Certified Trainer - Software a služby                             | Není k dispozici         |                                                                    |
-| Microsoft Certified Trainer - softwaru & vývojářů Services                   | Není k dispozici         |                                                                    |
-
-<sup>1</sup>*zahrnuje není pro prodej (NFR), cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP)*   
-
-Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
 
 ## <a name="activation-steps"></a>Postup aktivace
-1.  Pokud chcete používat vaše MODERNRequirementsTFS výhody, přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Pokud chcete používat vaše MODERNRequirementsTFS výhody, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2.  Najděte dlaždici MODERNRequirements4TFS v části nástroje a klikněte na **získat kód** odkaz v levém dolním rohu na dlaždici.   
 
     ![Výhody ModernRequirements dlaždice](_img\vs-modernreq\vs-modernreq-tile.png)
@@ -109,8 +82,19 @@ Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.vis
 
 22. Když aplikace Word se otevře, uvidíte, že byl přidán na kartě SmartWord4TFS. Klikněte na kartu zobrazíte SmartWord4TFS nástrojů. 
 
-## <a name="faq"></a>Nejčastější dotazy
-*Kontrola aktualizací*
+## <a name="eligibility"></a>Podmínky
+| Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardní, roční cloud)   | VL, Azure, prodejní, vybrané NFR<sup>1</sup> | 6 měsíců       |  Ne.  K dispozici pouze nové odběratele          |
+| Visual Studio Professional (standardní, roční cloud) | VL, Azure, maloobchodní                                       | Není k dispozici                                                          |NÁ     |
+| Visual Studio Test Professional (standardní)                         | VL, prodejní                                              | Není k dispozici                                                          |NÁ     |
+| MSDN platformy (standardní)                                          | VL, prodejní                                              | Není k dispozici                                                          |NÁ     |
+| Visual Studio Dev Essentials | NÁ  |Není k dispozici                                                          |NÁ     |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NÁ|
+
+<sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (Enterprise), FTE.    Vyloučí: Microsoft Partner Network (Professional), MCT softwaru a služeb Developer, BizSpark, představte si, cenná partnera Microsoftu (MVP), oblast ředitel (RD).  MCT softwaru a služeb.*
+
+Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
 
 ## <a name="support-resources"></a>Podpora prostředky
 -  Potřebujete pomoc s produkty ModernRequirements?  Navštivte https://www.modernrequirements.com/support-2/.

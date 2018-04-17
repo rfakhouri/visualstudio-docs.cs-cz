@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytváření místních nabídek pro záložky | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytváření místních nabídek pro záložky | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9af7c7dd4a4c56cbd872b757704d64afd22c6101
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6d54d23330c6d5fab836f168a291b15b90379117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-shortcut-menus-for-bookmarks"></a>Návod: Vytváření místních nabídek pro záložky
   Tento návod ukazuje, jak vytvořit místní nabídky pro <xref:Microsoft.Office.Tools.Word.Bookmark> ovládacích prvků v přizpůsobení na úrovni dokumentu ve Wordu. Když uživatel klikne pravým tlačítkem myši textu v záložku, místní nabídky se zobrazí a poskytuje možnosti uživatele pro formátování textu.  
@@ -47,9 +46,9 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]nebo[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] Nebo [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]  
   
-##  <a name="BKMK_CreateProject"></a>Vytvoření projektu  
+##  <a name="BKMK_CreateProject"></a> Vytvoření projektu  
  Prvním krokem je vytvoření projektu dokumentu aplikace Word v sadě Visual Studio.  
   
 #### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
      Visual Studio otevře nový dokument aplikace Word v návrháři a přidá **Moje záložku místní nabídky** projektu do **Průzkumníku řešení**.  
   
-##  <a name="BKMK_addtextandbookmarks"></a>Přidávání textu a záložky do dokumentu  
+##  <a name="BKMK_addtextandbookmarks"></a> Přidávání textu a záložky do dokumentu  
  Přidat do dokumentu nějaký text a pak přidejte dva překrývající se záložky.  
   
 #### <a name="to-add-text-to-your-document"></a>Chcete-li přidat text do dokumentu  
@@ -75,18 +74,18 @@ ms.lasthandoff: 01/10/2018
   
 2.  Vyberte slova "Vytvoření místní nabídky, když kliknete pravým tlačítkem na text" a potom klikněte na **OK**.  
   
-     `bookmark1`se přidá do dokumentu.  
+     `bookmark1` se přidá do dokumentu.  
   
 3.  Přidejte další <xref:Microsoft.Office.Tools.Word.Bookmark> řídit k slova "klikněte pravým tlačítkem na text v záložku".  
   
-     `bookmark2`se přidá do dokumentu.  
+     `bookmark2` se přidá do dokumentu.  
   
     > [!NOTE]  
     >  Slova "klikněte pravým tlačítkem na text" jsou v obou `bookmark1` a `bookmark2`.  
   
  Když přidáte záložku na dokument v době návrhu <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek je vytvořen. Můžete ovládat několik událostí záložky. Můžete napsat kód ve <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick> událostí záložky tak, aby při kliknutí pravým tlačítkem textu v záložku, zobrazí místní nabídka.  
   
-##  <a name="BKMK_AddCmndsShortMenu"></a>Přidání příkazů na místní nabídky  
+##  <a name="BKMK_AddCmndsShortMenu"></a> Přidání příkazů na místní nabídky  
  Přidání tlačítka do místní nabídky, která se zobrazí, když kliknete pravým tlačítkem na dokument.  
   
 #### <a name="to-add-commands-to-a-shortcut-menu"></a>Přidání příkazů do místní nabídky  
@@ -146,7 +145,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
      [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]  
   
-##  <a name="BKMK_formattextbkmk"></a>Formátování textu v záložkách  
+##  <a name="BKMK_formattextbkmk"></a> Formátování textu v záložkách  
   
 #### <a name="to-format-the-text-in-the-bookmark"></a>K formátování textu v záložkách  
   

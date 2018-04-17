@@ -1,18 +1,18 @@
 ---
-title: "Použít Microsoft jednotka testování Framework pro C++ v sadě Visual Studio | Microsoft Docs"
+title: Použít Microsoft jednotka testování Framework pro C++ v sadě Visual Studio | Microsoft Docs
 ms.date: 11/15/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a8d9ee2c53ba012f977c283eb3d7b81dbb3a9267
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: a2d0998185a7b550b22d0cbfaad43477bb036ad7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Použít Microsoft jednotka testování Framework pro C++ v sadě Visual Studio
 
@@ -28,7 +28,7 @@ V některých případech, například při testování-exportované funkce v kn
 
     1.  V Průzkumníku řešení klikněte pravým tlačítkem na uzel projektu pro program, testování a pak vyberte **vlastnosti | Vlastnosti konfigurace | Adresáře VC ++**.
 
-    3.  Klikněte na šipku dolů ve následující řádky a zvolte  **<Edit>**  :
+    3.  Klikněte na šipku dolů ve následující řádky a zvolte **<Edit>** :
 
         |||
         |-|-|
@@ -82,7 +82,7 @@ TEST_METHOD(Method1)
 ### <a name="c-trait-attribute-macros"></a>Makra atribut znak C++
   Následující předdefinované vlastnosti, které se nacházejí v `CppUnitTest.h`. Další informace najdete v tématu [The Microsoft Unit Testing Framework pro C++ referenční dokumentace rozhraní API](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Macro|Popis|
+|– Makro|Popis|
 |-----------|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Makro TEST_METHOD_ATTRIBUTE použijte k definování výšku.|
 |`TEST_OWNER(ownerAlias)`|Pomocí předdefinovaných znak vlastníka můžete určit vlastníka zkušební metody.|

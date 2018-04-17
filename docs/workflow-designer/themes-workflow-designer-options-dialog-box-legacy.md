@@ -1,5 +1,5 @@
 ---
-title: "Dialogové okno Možnosti motivy, Návrháře pracovního postupu (zastaralé) | Microsoft Docs"
+title: Dialogové okno Možnosti motivy, Návrháře pracovního postupu (zastaralé) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 ms.assetid: 71150631-4674-4568-bce8-570bef3780ad
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47916c854c2d0e30173442188419c723e5d170a3
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 95bda5a08871dd89b3600dd48b54f14e92f6640a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Dialogové okno Možnosti motivy, Návrháře pracovního postupu (zastaralé)
 Toto téma popisuje, jak používat **motivy, Návrháře pracovního postupu možností** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
@@ -28,8 +28,8 @@ Toto téma popisuje, jak používat **motivy, Návrháře pracovního postupu mo
 
 |Prvek uživatelského rozhraní (UI)|Popis|
 |----------------|-----------------|
-|**New**|Kliknutím otevřete [dialogové okno Konfigurace motiv (zastaralé)](../workflow-designer/theme-configuration-dialog-box-legacy.md) vytvořit nový motiv.|
-|**Modify...**|Kliknutím otevřete [dialogové okno Konfigurace motiv (zastaralé)](../workflow-designer/theme-configuration-dialog-box-legacy.md) k úpravě vybraného motivu.|
+|**Nový**|Kliknutím otevřete [dialogové okno Konfigurace motiv (zastaralé)](../workflow-designer/theme-configuration-dialog-box-legacy.md) vytvořit nový motiv.|
+|**Upravte...**|Kliknutím otevřete [dialogové okno Konfigurace motiv (zastaralé)](../workflow-designer/theme-configuration-dialog-box-legacy.md) k úpravě vybraného motivu.|
 |**Procházet**|Klikněte na tlačítko Procházet a najít soubor motiv pracovního postupu, který používá příponu názvu souboru .wtm.|
 |**Vyberte motiv**|Záhlaví sloupce název motivu seznamu motivů. Vyberte motiv ze seznamu, klikněte na **upravit** upravit, nebo kliknutím na tlačítko **OK** použít vybraný motiv pro pracovní postup.|
 |**Popis**|Záhlaví sloupce motiv popis seznamu motivů.|

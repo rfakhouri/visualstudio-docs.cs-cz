@@ -1,18 +1,18 @@
 ---
-title: "Postup testování knihovny DLL Visual C++ pro aplikace UWP v sadě Visual Studio | Microsoft Docs"
+title: Postup testování knihovny DLL Visual C++ pro aplikace UWP v sadě Visual Studio | Microsoft Docs
 ms.date: 02/15/2018
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: c92e8a1b362bf6593897de526ef1791603292a29
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 56bd0acf242f0fac4ccb2d73063e8ee73d234a0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Postup testování knihovny DLL Visual C++
 
@@ -63,7 +63,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
      K testovacímu projektu vytvoří a spustí. Zobrazí se okno Průzkumníka testů a testovací je uveden v části **předán testy**. Souhrn panelu v dolní části okna poskytuje další informace o vybrané testu.
 
-     ![Test Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
+     ![Testování Explorer](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")
 
 ##  <a name="Add_the_DLL_project_to_the_solution"></a> Do řešení přidat projektu knihovny DLL
 
@@ -174,7 +174,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
 5.  V Průzkumníku testu zvolte **spustit všechny**.
 
-     ![Basic Test passed](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
+     ![Základní Test proběhl](../test/media/ute_cpp_testexplorer_basictest.png "UTE_Cpp_TestExplorer_BasicTest")
 
  Máte nastavení testu a projektů kód a ověřit, že můžete spustit testy, které běží funkce v projektu kódu. Teď můžete začít zapisovat skutečné testy a kódu.
 
@@ -276,7 +276,7 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
 
      Test se nezdaří. Zvolte název testu v Průzkumníku otestovat. Je označený selhání kontrolního výrazu. Zpráva o neúspěšném zpracování je zobrazen v podokně podrobností Průzkumníka testů.
 
-     ![NegativeRangeTests failed](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
+     ![NegativeRangeTests se nezdařilo](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")
 
 3.  Chcete-li zjistit, proč test se nezdaří, kroku prostřednictvím funkce:
 

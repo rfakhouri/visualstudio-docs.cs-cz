@@ -1,12 +1,10 @@
 ---
-title: "Návod: Import oblasti formuláře navržené v aplikaci Outlook | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Import oblasti formuláře navržené v aplikaci Outlook | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], importing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8a6abfd5c09194fe9fb37f05a50d874c0239cde
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7823284096894dce54d0ba83b4aec0027a76fe97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-importing-a-form-region-that-is-designed-in-outlook"></a>Návod: Import oblasti formuláře navržené v aplikaci Outlook
   Tento návod ukazuje, jak návrh oblasti formuláře v aplikaci Microsoft Office Outlook a pak import oblasti formuláře do projektu doplňku VSTO pro Outlook pomocí **nové oblasti formuláře** průvodce. Návrh oblasti formuláře v aplikaci Outlook umožňuje můžete přidat nativní ovládací prvky aplikace Outlook do oblasti formuláře, který vytvoření vazby na data Outlooku. Po importu oblasti formuláře může zpracovávat události každý ovládací prvek.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)]nebo [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
+-   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] nebo [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
 > [!NOTE]  
 >  Váš počítač může v následujících pokynech zobrazovat odlišné názvy nebo umístění některých prvků uživatelského rozhraní sady Visual Studio. Tyto prvky jsou určeny edicí sady Visual Studio a použitým nastavením. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  

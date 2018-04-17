@@ -7,15 +7,15 @@ f1_keywords:
 - System.Activities.Statements.InvokeDelegate.UI
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 717e9bec58c1eed248c868144ad72aae55948636
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 93e41d98b156b6314158a1cc99e368092b0cf494
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 **InvokeDelegate** designer se používá k vytvoření a konfigurace <xref:System.Activities.Statements.InvokeDelegate> aktivity.
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.Activities.Statements.InvokeDelegate> aktivity. Výchozí hodnota je InvokeDelegate.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> striktně nevyžaduje, je osvědčeným postupem použít.|
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|Název <xref:System.Activities.ActivityDelegate> volána, když aktivita provede. Tuto vlastnost lze upravit na plochu návrháře. Toto je povinná vlastnost.|
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|Hodnota TRUE|Název <xref:System.Activities.ActivityDelegate> volána, když aktivita provede. Tuto vlastnost lze upravit na plochu návrháře. Toto je povinná vlastnost.|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|Argument kolekce volaný delegát. Klíče jsou názvy objektů parametr na <xref:System.Activities.ActivityDelegate> a hodnoty jsou argumenty, jejichž výrazy jsou vyhodnotit a přiřadit k objektům odpovídající parametr. V tabulce vlastností klikněte na tlačítko se třemi tečkami v **DelegateArguments** pole, zobrazuje **DelegateArguments** dialogové okno, abyste mohli tuto vlastnost nastavit. Klikněte **vytvořit Argument** pole, které chcete přidat argumenty.|
 
 ## <a name="see-also"></a>Viz také

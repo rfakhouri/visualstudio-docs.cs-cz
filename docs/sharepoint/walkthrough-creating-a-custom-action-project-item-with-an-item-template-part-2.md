@@ -1,25 +1,24 @@
 ---
-title: "Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2 | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2 | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating template wizards
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 55794f7976e90e34ba24654400f755de9244e13e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružit ho pomocí šablony položky v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce vám pomůže shromažďovat informace od uživatelů při použití šablony přidat novou instanci položky projektu do projektu. Informace, které slouží k inicializaci položky projektu.  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Vyberte **knihovny ovládací prvek WPF uživatelského** projektu šablony, název projektu **ItemTemplateWizard**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **ItemTemplateWizard** projektu k řešení.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **ItemTemplateWizard** projektu k řešení.  
   
 6.  Odstraňte položku UserControl1 z projektu.  
   
@@ -178,7 +177,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Na **podpisování** vyberte **podepsání sestavení** zaškrtávací políčko.  
   
-3.  V **vyberte soubor klíče se silným názvem** vyberte ** \<nová... >**.  
+3.  V **vyberte soubor klíče se silným názvem** vyberte  **\<nová... >**.  
   
 4.  V **vytvořit klíč se silným názvem** dialogovém okně zadejte název, zrušte **chránit Moje soubor klíče s heslem** zaškrtněte políčko a potom vyberte **OK** tlačítko.  
   
@@ -209,7 +208,7 @@ ms.lasthandoff: 01/10/2018
     </WizardExtension>  
     ```  
   
-     Další informace o `WizardExtension` elementu, najdete v části [WizardExtension – Element & #40; Šablony sady Visual Studio & #41; ](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     Další informace o `WizardExtension` elementu, najdete v části [WizardExtension – Element &#40;šablony sady Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
 3.  Soubor uložte a zavřete.  
   
@@ -327,7 +326,7 @@ ms.lasthandoff: 01/10/2018
   
      **Nastavení seznamu** se zobrazí stránka.  
   
-4.  V části **komunikace** záhlaví v horní části stránky, vyberte **SharePoint Developer Center** propojit, ověřte, že prohlížeči se otevře http://msdn.microsoft.com/sharepoint/ webu default.aspx a pak zavřete prohlížeč.  
+4.  V části **komunikace** záhlaví v horní části stránky, vyberte **SharePoint Developer Center** propojit, ověřte, že prohlížeči se otevře web http://msdn.microsoft.com/sharepoint/default.aspxa pak zavřete prohlížeč.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Čištění vývojovém počítači  
  Po dokončení testování položky projektu odeberte položku Šablona projektu z experimentální instanci sady Visual Studio.  

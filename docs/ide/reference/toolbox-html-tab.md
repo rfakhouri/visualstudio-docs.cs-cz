@@ -1,12 +1,9 @@
 ---
-title: "Sada nástrojů, Karta HTML | Microsoft Docs"
-ms.custom: 
+title: Sada nástrojů, Karta HTML | Microsoft Docs
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.toolbox.html
 helpviewer_keywords:
@@ -15,16 +12,16 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc52ea4ce28c7fac6f7318eac8e835efc0f11cb1
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: ff609631cec69e0d32cb74e5857cd3bb8df5ab94
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="toolbox-html-tab"></a>Toolbox, HTML tab
+# <a name="toolbox-html-tab"></a>Sada nástrojů, Karta HTML
 
 **HTML** karty z panelu nástrojů poskytuje součásti, které jsou užitečné pro webové stránky a webové formuláře. Pokud chcete zobrazit na této kartě, poprvé otevřete dokument pro úpravy v Návrháři HTML. Na **zobrazení** nabídky, klikněte na tlačítko **sada nástrojů**a pak klikněte na tlačítko **HTML** karty z panelu nástrojů.
 
@@ -66,7 +63,7 @@ Při přetažení **vstup (Reset)** na návrhovou plochu zobrazení, je značka 
 
 **Vstup (Odeslat)**
 
-![HTMLpageToolbarSubmitButton screenshot](../../ide/reference/media/vxsubmit.gif "vxSubmit")
+![HTMLpageToolbarSubmitButton – snímek obrazovky](../../ide/reference/media/vxsubmit.gif "vxSubmit")
 
 Vloží `input` element `type="submit"`. Chcete-li změnit text, který se zobrazí, upravte `name` vlastnost. Ve výchozím nastavení `id="Submit1"` je vložen pro první tlačítko odeslání `id="Submit2"` sekundu a tak dále.
 
@@ -93,7 +90,7 @@ Při přetažení **vstup (Text)** na návrhovou plochu zobrazení, je značka j
 
 **Vstup (soubor)**
 
-![HTML page File Field](../../ide/reference/media/vxfilefield.gif "vxFilefield")
+![Stránky HTML pole souboru](../../ide/reference/media/vxfilefield.gif "vxFilefield")
 
 Vloží `input` element `type="file"` v dokumentu. Ve výchozím nastavení `id="File1"` je vložen pro první pole souboru `id="File2"` sekundu a tak dále.
 
@@ -135,7 +132,7 @@ Při přetažení **vstup (zaškrtávací políčko)** na návrhovou plochu zobr
 
 **Vstup (přepínač)**
 
-![VisualStudioHTMLpageRadioButton screenshot](../../ide/reference/media/vxradio.gif "vxRadio")
+![VisualStudioHTMLpageRadioButton – snímek obrazovky](../../ide/reference/media/vxradio.gif "vxRadio")
 
 Vloží `input` element `type="radio"`. Chcete-li změnit text, který se zobrazí, upravte `name` vlastnost. Ve výchozím nastavení `id="Radio1"` je vložen pro první přepínač `id="Radio2"` sekundu a tak dále.
 
@@ -159,7 +156,7 @@ Při přetažení **vstup (skryté)** na návrhovou plochu zobrazení, je značk
 
 **Textarea**
 
-![HTMLpage Toolbar Text Area](../../ide/reference/media/vxtextarea.gif "vxTextarea")
+![Stránka HTML – nástrojů textová oblast](../../ide/reference/media/vxtextarea.gif "vxTextarea")
 
 Vloží `textarea` elementu. Můžete změnit velikost textová oblast nebo používat jeho posuvníky Chcete-li zobrazit text, který rozšiřuje nad rámec jeho oblast zobrazení. Chcete-li změnit výchozí text, který se zobrazí, upravte `value` atribut. Ve výchozím nastavení `id="textarea1"` je první textová oblast, Vložit `id=" textarea 2"` sekundu a tak dále.
 
@@ -222,7 +219,7 @@ Při přetažení **vodorovné pravítko** na návrhovou plochu zobrazení, je z
 <hr width="100%" size=1>
 ```
 
-**Div**
+**div**
 
 ![Stránky HTML Label](../../ide/reference/media/vxlabel.gif "vxLabel")
 

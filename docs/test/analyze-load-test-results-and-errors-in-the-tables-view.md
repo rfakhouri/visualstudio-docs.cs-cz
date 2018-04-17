@@ -1,7 +1,7 @@
 ---
-title: "Analýza výsledků zátěžových testů a chyb v sadě Visual Studio | Microsoft Docs"
+title: Analýza výsledků zátěžových testů a chyb v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.pageresult
 - vs.test.load.dialog.column
@@ -20,13 +20,13 @@ helpviewer_keywords:
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: f2757f5a09e3abbcc924f94ccdcb008f671a3a8d
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 1ef22fcdfeb1b3ccf0005940ca2f7201545482f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů a chyb v tabulkovém zobrazení analyzéru zátěžového testu
 
@@ -76,7 +76,7 @@ Většina číselných hodnot, které se zobrazují v tabulce pro čítače výk
 |**Scénář**|Název tohoto scénáře.|Ano|
 |**Test**|Název testu.|Ano|
 |**Celkový počet**|Celkový počet tento webový požadavek test výkonu vydán během zátěžového testu spustit. Celkový počet zahrnuje předaný a k selhání požadavků, ale nezahrnuje požadavky uložené v mezipaměti, protože nejsou vydány na webový server.|Ano|
-|**Passed**|Počet přístupů žádosti byl vydán a předán.|Ne|
+|**Předaný**|Počet přístupů žádosti byl vydán a předán.|Ne|
 |**Se nezdařilo**|Počet přístupů žádosti byl vydán a se nezdařilo. Položky v tomto sloupci se zobrazí jako hypertextové odkazy. Můžete vybrat libovolný hypertextový odkaz zobrazíte seznam jednotlivé chyby v **chyby testu zatížení** dialogové okno. Další informace najdete v tématu [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Ano|
 |**V mezipaměti**|Celkový počet časy, kdy již do mezipaměti žádosti.|Ne|
 |**Počet požadavků za sekundu**|Rychlost za sekundu požadavku během spuštění zátěžového testu.|Ne|
@@ -97,9 +97,9 @@ Většina číselných hodnot, které se zobrazují v tabulce pro čítače výk
 |**Test**|Název testu.|Ano|
 |**Scénář**|Název tohoto scénáře.|Ano|
 |**Celkový počet**|Celkový počet spuštění testu ve scénáři. To zahrnuje kolikrát test předán a se nezdařilo.|Ano|
-|**Passed**|Počet přístupů test byl spuštění ve scénáři s.|Ano|
+|**Předaný**|Počet přístupů test byl spuštění ve scénáři s.|Ano|
 |**Se nezdařilo**|Počet přístupů test byl spustit v tomto scénáři a selhal. Položky v tomto sloupci se zobrazí jako hypertextové odkazy. Můžete vybrat libovolný hypertextový odkaz zobrazíte seznam jednotlivé chyby v **chyby testu zatížení** dialogové okno. Další informace najdete v tématu [Analýza výsledků zátěžových testů](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|Ano|
-|**Tests/Sec**|Rychlost za sekundu během zátěžového testu, spuštění testu.|Ano|
+|**Testy za sekundu**|Rychlost za sekundu během zátěžového testu, spuštění testu.|Ano|
 |**Předaný za sekundu**|Rychlost za sekundu během zátěžového testu, spuštění pro instance tohoto testu, který předává tento test.|Ne|
 |**Za sekundu**|Rychlost, jakou za sekundu tento test během zátěžového testu spusťte pro instance tohoto testu, který selhal.|Ne|
 |**Testovacího času**|Průměrná doba k provedení testu během spuštění zátěžového testu. Jednotky jsou sekund.|Ano|
@@ -206,7 +206,7 @@ Pokud je povolené trasování SQL, soubor se vytvoří během zátěžového te
 
     - Čas spuštění
 
-    - EndTime
+    - čas ukončení
 
    Pokud chcete trasovat události SQL než data v těchto sloupcích identifikovat, můžete nastavit vlastní vlastní trasování SQL pomocí nástroje SQL Profiler samostatné ze sady Visual Studio.
 

@@ -1,13 +1,10 @@
 ---
-title: "Port, migrace a Upgrade projektů sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Port, migrace a Upgrade projektů sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Win8ExpressDesktopBlock
 - w8trefactor
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - projects, conversion
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65d1a8edac3de969528b6d27ed540d791d3d08f6
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: 40b0e68d269599d88831c3a9af1240a56ea02bd1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Port, migrace a Upgrade projektů sady Visual Studio
 
@@ -67,7 +64,7 @@ Pokud nevidíte projektu nebo typ souboru tady, by měl být, najdete [Visual St
 | SharePoint 2016 | Add-In služby SharePoint projektů vytvořených v Office Developer Tools Preview 2 nelze otevřít ve Visual Studio 2017. Chcete-li toto omezení obejít, aktualizujte `MinimumVisualStudioVersion` k 12.0 a `MinimumOfficeToolsVersion` k 12.2 v souboru vbproj csproj. |
 | Silverlight | V Visual Studio 2017 nepodporuje projekty Silverlight. Chcete-li udržovat aplikace Silverlight, používejte nadále Visual Studio 2015. |
 | SQL Server Reporting Services a SQL Server Analysis Services (SSRS, rozšíření SSDT, SSAS, účty spravované služby) | Pro tyto typy projektů je poskytována prostřednictvím podpory dvě rozšíření v Galerii Visual Studio: [projekty modelování služby Microsoft Analysis Services](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects) a [Microsoft Reporting Services projekty](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio). Podpora rozšíření SSDT je také součástí úložiště dat a zpracování úloh ve Visual Studio 2017. |
-| SQL Server Integration Services (SSIS) | Podpora pro Visual Studio 2017 je k dispozici prostřednictvím SQL Server Data Tools (SSDT). Další informace najdete v tématu [SQL Server Integration Services blog](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
+| SQL Server Integration Services (služby SSIS) | Podpora pro Visual Studio 2017 je k dispozici prostřednictvím SQL Server Data Tools (SSDT). Další informace najdete v tématu [SQL Server Integration Services blog](https://blogs.msdn.microsoft.com/ssis/2017/08/23/ssis-designer-is-now-available-for-visual-studio-2017/). |
 | Visual C++ | Visual Studio 2017 můžete použít pro práci v projektech, které byly vytvořeny v dřívějších verzích sady Visual Studio zpět do Visual Studio 2010. Při prvním otevření projektu, máte možnost pro upgrade na nejnovější kompilátoru a sady nástrojů, nebo pokračovat v používání původního. Pokud se rozhodnete používat původního, Visual Studio 2017 neupravuje souboru projektu a používá sada nástrojů z předchozí instalaci sady Visual Studio k sestavení projektu. Zachovat původní znamená možnosti můžete stále otevřít projekt v původní verzi sady Visual Studio v případě potřeby. Další informace najdete v tématu [pomocí nativní cílení na více v sadě Visual Studio staré projekty sestavení](/cpp/porting/use-native-multi-targeting). |
 | Rozšíření sady Visual Studio nebo VSIX | Deklarovat 15.0 MinimumVersion, což zabrání projektu otevíráte ve starších verzích sady Visual Studio se aktualizují projektů s MinimumVersion 14.0 nebo méně. Chcete-li povolit projektu otevřete v dřívějších verzích, nastavte MinimumVersion `$(VisualStudioVersion)`. Viz také [postup: migrace rozšiřitelnost projektů na Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md). |
 | Visual Studio Lab Management | Můžete použít nástroje Microsoft Test Manager nebo Visual Studio 2010 SP1 a novější otevřete prostředí vytvořena v některém z těchto verzí. Ale pro Visual Studio 2010 SP1 na verzi nástroje Microsoft Test Manager musí shodovat s verzí produktu Team Foundation Server před vytvořením prostředí. |

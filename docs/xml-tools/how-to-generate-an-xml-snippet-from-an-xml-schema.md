@@ -1,23 +1,21 @@
 ---
-title: "Postupy: generování fragmentu kódu XML z schématu XML | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: generování fragmentu kódu XML z schématu XML | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e8b30c782cea694fdc400cd84047f7ab1add823b
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 68e306cfcc967c169622b8a02903fcde22c5c0c9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: generování fragmentu kódu XML z schématu XML
 Editor souborů XML má možnost k vygenerování XML fragmenty ze schématu schématu XML definition language (XSD). Například jako vytváření souboru XML, zatímco umístěný vedle názvu elementu, stisknete klávesu TAB k naplnění element s daty XML vygenerovat z informace o schématu pro daný element.  
@@ -36,7 +34,7 @@ Editor souborů XML má možnost k vygenerování XML fragmenty ze schématu sch
   
 -   Kurzor musí být umístěné vpravo název elementu.  
   
-Vygenerovaný fragment kódu obsahuje všechny povinné atributy a prvky. Pokud `minOccurs` je větší než jeden požadované minimální počet instancí tohoto prvku je zahrnuta v tomto fragmentu kódu, až do maximálního počtu instancí 100. Všechny pevné hodnoty zjištěné v výsledek schématu v pevné hodnoty v tomto fragmentu kódu. `xsd:any`a `xsd:anyAttribute` elementy jsou ignorovány a mít za následek žádná další fragment konstrukce.  
+Vygenerovaný fragment kódu obsahuje všechny povinné atributy a prvky. Pokud `minOccurs` je větší než jeden požadované minimální počet instancí tohoto prvku je zahrnuta v tomto fragmentu kódu, až do maximálního počtu instancí 100. Všechny pevné hodnoty zjištěné v výsledek schématu v pevné hodnoty v tomto fragmentu kódu. `xsd:any` a `xsd:anyAttribute` elementy jsou ignorovány a mít za následek žádná další fragment konstrukce.  
   
 Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Pokud schéma určí výchozí hodnotu, tato výchozí hodnota se používá. Ale pokud schéma výchozí hodnota je řetězec prázdný, editor generuje výchozí hodnoty následujícím způsobem:  
   

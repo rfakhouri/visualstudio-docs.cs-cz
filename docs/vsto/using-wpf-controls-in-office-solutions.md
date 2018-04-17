@@ -1,13 +1,10 @@
 ---
-title: "Použití ovládacích prvků grafického subsystému WPF v řešeních pro systém Office | Microsoft Docs"
-ms.custom: 
+title: Použití ovládacích prvků grafického subsystému WPF v řešeních pro systém Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - WPF [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74ee8c574f6f654aca166844d85a30f2d3d9d4c3
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: d4aa0fce1700f6608d36231a3ab38db97e5ce826
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-wpf-controls-in-office-solutions"></a>Použití ovládacích prvků WPF v řešeních pro systém Office
   I když řešení vytvořená pomocí nástrojů pro vývoj pro Office v sadě Visual Studio jsou navrženy pro práci s přímo s Windows Forms – ovládací prvky, které můžete použít ovládacích prvků WPF v řešeních. Windows Presentation Foundation (WPF) představuje alternativu k Windows Forms pro návrh uživatelského rozhraní. WPF pomocí značek jazyka nazývaného rozšiřitelné aplikace Markup Language (XAML) poskytuje nové techniky zařadit uživatelského rozhraní, média a dokumenty. Další informace najdete v tématu [Úvod k použití WPF v sadě Visual Studio 2015](/dotnet/framework/wpf/getting-started/introduction-to-wpf-in-vs).  

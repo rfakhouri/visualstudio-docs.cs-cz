@@ -1,12 +1,10 @@
 ---
-title: "Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru | Microsoft Docs"
-ms.custom: 
+title: Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 879d34828e4619ac9a538f9db7cf1acef7b830b0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0eabca43f604d92ecab78dccae281a450f7c0400
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-sharepoint-connections-node-in-server-explorer"></a>Rozšíření uzlu připojení služby SharePoint v průzkumníku serveru
   V sadě Visual Studio, můžete připojení na místní weby služby SharePoint na vývojovém počítači pomocí **připojení služby SharePoint** uzel v**Průzkumníka serveru** okno. Tento uzel zobrazuje mnoho součásti místních webů služby SharePoint v hierarchickém stromovém zobrazení. Můžete například zobrazit seznamy, knihovny dokumentů a typy obsahu na místních serverech. Další informace o používání **Průzkumníka serveru** Pokud chcete připojit k místní weby služby SharePoint, najdete v části [procházení SharePoint připojení pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).  

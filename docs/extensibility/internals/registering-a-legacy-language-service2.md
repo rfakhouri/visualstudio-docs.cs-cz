@@ -1,27 +1,25 @@
 ---
-title: "Registrace starší verze jazyka Service2 | Microsoft Docs"
-ms.custom: 
+title: Registrace starší verze jazyka Service2 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
 - registry, language services
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
-caps.latest.revision: "24"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 364b17e6759d0ca337b69c89c51dfba8d26f3e32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6cb7750f55bd9175c552aa765d21b1334f5f1dfe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrace služby jazyk starší verze
 V následujících částech najdete seznam položky registru pro různé jazyky možnosti služby, které jsou k dispozici v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
@@ -33,9 +31,9 @@ V následujících částech najdete seznam položky registru pro různé jazyky
   
 |Název|Typ|Rozsah|Popis|  
 |----------|----------|-----------|-----------------|  
-|(Výchozí)|REG_SZ|*\<IDENTIFIKÁTOR GUID >*|Identifikátor GUID služby jazyk.|  
+|(Výchozí)|REG_SZ|*\<IDENTIFIKÁTOR GUID &GT;*|Identifikátor GUID služby jazyk.|  
 |LangResID|REG_DWORD|0x0 0xffff|Řetězec resource identifier (ResID) textu název jazyka.|  
-|Balíček|REG_SZ|*\<IDENTIFIKÁTOR GUID >*|Identifikátor GUID VSPackage.|  
+|Balíček|REG_SZ|*\<IDENTIFIKÁTOR GUID &GT;*|Identifikátor GUID VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Určuje, zda **dokončování** možnosti v **možnosti** jsou povoleny dialogové okno.|  
 |ShowSmartIndent|REG_DWORD|0-1|Určuje, zda možnost vybrat **inteligentní** odsazení v **možnosti** dialogové okno je povoleno.|  
 |RequestStockColors|REG_DWORD|0-1|Určuje, zda vlastní nebo výchozí barvy se používají k barvu klíčová slova.|  
@@ -90,8 +88,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Název|Typ|Rozsah|Popis|  
 |----------|----------|-----------|-----------------|  
 |(Výchozí)|REG_SZ|resID|Lokalizované zobrazovaný název této stránky možnost. Název může být literál text nebo #`nnn`, kde `nnn` je řetězec ID prostředku v satelitní knihovny DLL z zadaný VSPackage.|  
-|Balíček|REG_SZ|*IDENTIFIKÁTOR GUID*|Identifikátor GUID VSPackage, který implementuje tuto stránku možnosti.|  
-|Stránka|REG_SZ|*IDENTIFIKÁTOR GUID*|Identifikátor GUID stránku vlastností požadovat od VSPackage voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metoda. Pokud tato položka registru neexistuje, popisuje klíč registru uzlu, ne stránku.|  
+|Balíček|REG_SZ|*GUID*|Identifikátor GUID VSPackage, který implementuje tuto stránku možnosti.|  
+|Stránka|REG_SZ|*GUID*|Identifikátor GUID stránku vlastností požadovat od VSPackage voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> metoda. Pokud tato položka registru neexistuje, popisuje klíč registru uzlu, ne stránku.|  
   
 ### <a name="example"></a>Příklad  
   
@@ -123,7 +121,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Název|Typ|Rozsah|Popis|  
 |----------|----------|-----------|-----------------|  
-|(Výchozí)|REG_SZ|*IDENTIFIKÁTOR GUID*|Identifikátor GUID služby pro službu výchozí jazyk pro tento typ příponu názvu souboru.|  
+|(Výchozí)|REG_SZ|*GUID*|Identifikátor GUID služby pro službu výchozí jazyk pro tento typ příponu názvu souboru.|  
   
 ### <a name="example"></a>Příklad  
   
@@ -144,8 +142,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|Název karty sada nástrojů, aby výchozí, když je aktivní editor.|  
 |displayName|REG_SZ|resID|Název zobrazený v **otevřít v** dialogové okno. Název je ID prostředku řetězec nebo název ve standardním formátu.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Použít pro **otevřít v** příkazu nabídky. Pokud nechcete seznamu textového editoru výchozí v seznamu dostupných editory pro určitý typ souboru, nastavte tuto hodnotu na 1.|  
-|LinkedEditorGUID|REG_SZ|*\<IDENTIFIKÁTOR GUID >*|Použít pro všechny jazykové služby, můžete otevřít soubor s podporou kódové stránky. Například pokud otevřete soubor s příponou .txt pomocí **otevřete s** příkazů, možnosti jsou k dispozici pro použití editoru zdrojového kódu a bez kódování.<br /><br /> Zadaný název podklíč identifikátor GUID je pro objekt factory editoru codepage; zadaný v tomto klíči registru konkrétní propojené identifikátor GUID je pro objekt pro vytváření pravidelných editor. Účelem této položky je, že pokud IDE nelze otevřít soubor pomocí editoru výchozí, rozhraní IDE pokusí se použít další editor v seznamu. Tohoto další editoru by neměl být objekt factory editoru kódové stránky, protože tento objekt factory editoru je v podstatě stejný jako objekt factory editoru, který selhal.|  
-|Balíček|REG_SZ|*\<IDENTIFIKÁTOR GUID >*|Identifikátor GUID VSPackage pro ResID zobrazovaný název.|  
+|LinkedEditorGUID|REG_SZ|*\<IDENTIFIKÁTOR GUID &GT;*|Použít pro všechny jazykové služby, můžete otevřít soubor s podporou kódové stránky. Například pokud otevřete soubor s příponou .txt pomocí **otevřete s** příkazů, možnosti jsou k dispozici pro použití editoru zdrojového kódu a bez kódování.<br /><br /> Zadaný název podklíč identifikátor GUID je pro objekt factory editoru codepage; zadaný v tomto klíči registru konkrétní propojené identifikátor GUID je pro objekt pro vytváření pravidelných editor. Účelem této položky je, že pokud IDE nelze otevřít soubor pomocí editoru výchozí, rozhraní IDE pokusí se použít další editor v seznamu. Tohoto další editoru by neměl být objekt factory editoru kódové stránky, protože tento objekt factory editoru je v podstatě stejný jako objekt factory editoru, který selhal.|  
+|Balíček|REG_SZ|*\<IDENTIFIKÁTOR GUID &GT;*|Identifikátor GUID VSPackage pro ResID zobrazovaný název.|  
   
 ### <a name="example"></a>Příklad  
   
@@ -166,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Název|Typ|Rozsah|Popis|  
 |----------|----------|-----------|-----------------|  
 |(Výchozí)|REG_SZ||Nepoužívá se.|  
-|*\<IDENTIFIKÁTOR GUID >*|REG_SZ|""|Klíč k logické zobrazení podporováno. Můžete mít jako mnoho z těchto podle potřeby. Název položky registru je, co je důležité, není hodnotu, která je vždy prázdný řetězec.|  
+|*\<IDENTIFIKÁTOR GUID &GT;*|REG_SZ|""|Klíč k logické zobrazení podporováno. Můžete mít jako mnoho z těchto podle potřeby. Název položky registru je, co je důležité, není hodnotu, která je vždy prázdný řetězec.|  
   
 ### <a name="example"></a>Příklad  
   

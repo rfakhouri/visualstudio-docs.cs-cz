@@ -1,5 +1,5 @@
 ---
-title: "Návrhář aktivity spolupráce | Microsoft Docs"
+title: Návrhář aktivity spolupráce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ddc9cddbd8101932860bd2a2525186ff9ff36b6
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: bbac122e2e12844249be8dad37d6bed65b90ddc3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="interop-activity-designer"></a>Návrhář aktivity spolupráce
 **Zprostředkovatel komunikace s objekty** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Interop> aktivity.
@@ -41,7 +41,7 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Popisný název <xref:System.Activities.Statements.Interop> aktivity. Výchozí hodnota je zprostředkovatel komunikace s objekty. I když zobrazovaný název není nezbytně nutné, je osvědčeným postupem použít zobrazovaný název.|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|Určuje typ aktivity obsažených <xref:System.Activities.Statements.Interop> aktivity. Tento typ zadaný musí být odvozeny od <xref:System.Workflow.ComponentModel.Activity>.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|Hodnota TRUE|Určuje typ aktivity obsažených <xref:System.Activities.Statements.Interop> aktivity. Tento typ zadaný musí být odvozeny od <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Viz také
 

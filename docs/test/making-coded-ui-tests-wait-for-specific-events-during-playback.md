@@ -1,18 +1,18 @@
 ---
-title: "Proveďte testy čekání programových uživatelského rozhraní pro konkrétní události v sadě Visual Studio | Microsoft Docs"
+title: Proveďte testy čekání programových uživatelského rozhraní pro konkrétní události v sadě Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f533233ccf95be8ffb1e60ed82f7adec445bb9f1
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 5c288958ba2864c9db962b050ad3139dbb4f7ccf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Zajištění čekání programových testů UI na konkrétní události při přehrávání
 
@@ -25,7 +25,7 @@ V programových přehrávání testu uživatelského rozhraní můžete určit, 
 > [!TIP]
 >  Můžete také přidat zpoždění před akce pomocí editoru programových testů uživatelského rozhraní. Další informace najdete v tématu [postupy: vložení zpoždění před uživatelského rozhraní akce pomocí editoru programových testů UI](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0).
 
- **UITestControl.WaitForControlXXX() Methods**
+ **UITestControl.WaitForControlXXX() metody**
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlReady%2A>
 

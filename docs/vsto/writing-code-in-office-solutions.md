@@ -1,13 +1,10 @@
 ---
-title: "Psaní kódu v řešeních pro systém Office | Microsoft Docs"
-ms.custom: 
+title: Psaní kódu v řešeních pro systém Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Project.RefactoringCancelled
 dev_langs:
@@ -36,14 +33,14 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e9670bb35023b2a2cf4147d3d30008243203c9c8
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: c6119db86fdd67079b63434a6bb494cb04cd31d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-code-in-office-solutions"></a>Psaní kódu v řešeních pro systém Office
   Existují některé aspekty psaní kódu v projektech Office, které se liší od ostatních typů projektů v sadě Visual Studio. Mnoho z těchto rozdílů souvisí s způsob, jakým Office – objektové modely jsou umístěny do spravovaného kódu. Další rozdíly se vztahují k návrhu projektů Office.  
@@ -88,7 +85,7 @@ ms.lasthandoff: 01/10/2018
  Další informace najdete v tématu [globální přístup k objektům v projektech Office](../vsto/global-access-to-objects-in-office-projects.md).  
   
 ### <a name="namespace-considerations-in-office-solutions"></a>Aspekty Namespace v řešeních pro systém Office  
- Nelze změnit *výchozí obor názvů* (nebo *kořenový obor názvů* v jazyce Visual Basic) ze Microsoft Office project po vytvoření projektu. Výchozí obor názvů bude vždy odpovídat název projektu, který jste zadali při vytváření projektu. Pokud přejmenujete projektu, výchozí obor názvů se nezmění. Další informace o výchozí obor názvů v projektech najdete v tématu [stránka aplikace, Návrhář projektu &#40; C &#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) a [stránka aplikace, Návrhář projektu &#40; Visual Basic &#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
+ Nelze změnit *výchozí obor názvů* (nebo *kořenový obor názvů* v jazyce Visual Basic) ze Microsoft Office project po vytvoření projektu. Výchozí obor názvů bude vždy odpovídat název projektu, který jste zadali při vytváření projektu. Pokud přejmenujete projektu, výchozí obor názvů se nezmění. Další informace o výchozí obor názvů v projektech najdete v tématu [stránka aplikace, Návrhář projektu &#40;C&#35; &#41; ](/visualstudio/ide/reference/application-page-project-designer-csharp) a [stránka aplikace, Návrhář projektu &#40;jazyka Visual Basic&#41; ](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  
   
 ### <a name="changing-the-namespace-of-host-item-classes-in-c-projects"></a>Změna Namespace tříd položky hostitele v projektů C#  
  Hostování tříd položek (například `ThisAddIn`, `ThisWorkbook`, nebo `ThisDocument` třídy) mají své vlastní obory názvů v projektech Visual C# Office. Ve výchozím nastavení odpovídá obor názvů pro hostitele položky ve vašem projektu název projektu, který jste zadali při vytváření projektu.  
@@ -110,7 +107,7 @@ ms.lasthandoff: 01/10/2018
 |Funkce|Popis|Podpora jazyka Visual Basic|Visual C# podpora|  
 |-------------|-----------------|--------------------------|------------------------|  
 |Volitelné parametry|Mnoho metody Microsoft Office mají parametry, které nejsou povinné při volání metody. Pokud pro parametr není předána žádná hodnota, je použita výchozí hodnota.|Visual Basic podporuje volitelné parametry.|Visual C# podporuje volitelné parametry ve většině případů. Další informace najdete v tématu [volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md).|  
-|Předávání parametrů odkazem|Volitelné parametry ve většině primární spolupracující sestavení aplikace Microsoft Office může být předán podle hodnoty. Některé primární spolupracující sestavení, musí být předán volitelné parametry, které přijímají odkazové typy odkazem.<br /><br /> Další informace o parametrech hodnota a odkaz na typ najdete v tématu [předávání argumentů podle hodnoty a podle Reference &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pro Visual Basic) a [předávání parametry &#40; C &#35; Průvodce programováním &#41; ](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Žádné další kroky je potřeba k předat parametry odkazem. Visual Basic – kompilátor automaticky předá parametry odkazem, pokud je to nezbytné.|Ve většině případů kompilátor Visual C# automaticky předá parametry odkazem, pokud je to nezbytné. Další informace najdete v tématu [volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md).|  
+|Předávání parametrů odkazem|Volitelné parametry ve většině primární spolupracující sestavení aplikace Microsoft Office může být předán podle hodnoty. Některé primární spolupracující sestavení, musí být předán volitelné parametry, které přijímají odkazové typy odkazem.<br /><br /> Další informace o parametrech hodnota a odkaz na typ najdete v tématu [předávání argumentů podle hodnoty a podle Reference &#40;jazyka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) (pro Visual Basic) a [předávání parametry &#40;C&#35; Průvodce programováním&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters).|Žádné další kroky je potřeba k předat parametry odkazem. Visual Basic – kompilátor automaticky předá parametry odkazem, pokud je to nezbytné.|Ve většině případů kompilátor Visual C# automaticky předá parametry odkazem, pokud je to nezbytné. Další informace najdete v tématu [volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md).|  
 |Parametrizované vlastnosti|Některé vlastnosti přijmout parametry a fungovat jako funkce jen pro čtení.|Visual Basic podporuje vlastnosti, které přijímají parametry.|Visual C# podporuje vlastnosti, které přijímají parametry.|  
 |Pozdní vazba|Pozdní vazba zahrnuje určení vlastnosti objektů za běhu, místo proměnných přetypování na typ objektu v době návrhu.|Visual Basic provede pozdní vazby při **možnost striktní** je vypnutý. Když **možnost striktní** je, je nutné explicitně převést objekty a použití typů v <xref:System.Reflection> obor názvů pro přístup ke členům pozdní vazbou. Další informace najdete v tématu [pozdní vazba v řešeních pro systém Office](../vsto/late-binding-in-office-solutions.md).|Visual C# provede pozdní vazby v projektech cílených [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Další informace najdete v tématu [pozdní vazba v řešeních pro systém Office](../vsto/late-binding-in-office-solutions.md).|  
   
@@ -119,7 +116,7 @@ ms.lasthandoff: 01/10/2018
   
 |Funkce|Popis|Podpora jazyka Visual Basic a Visual C#|  
 |-------------|-----------------|-----------------------------------------|  
-|Indexy pole|Dolní mez pole kolekcí v aplikacích Microsoft Office začíná 1. Visual Basic a Visual C# pomocí pole založené na 0. Další informace najdete v tématu [pole &#40; C &#35; Průvodce programováním &#41; ](/dotnet/csharp/programming-guide/arrays/index) a [pole v jazyce Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Pro přístup k první položka v kolekci v modelu objektů aplikace Microsoft Office, použijte index 1 místo 0.|  
+|Indexy pole|Dolní mez pole kolekcí v aplikacích Microsoft Office začíná 1. Visual Basic a Visual C# pomocí pole založené na 0. Další informace najdete v tématu [pole &#40;C&#35; Průvodce programováním&#41; ](/dotnet/csharp/programming-guide/arrays/index) a [pole v jazyce Visual Basic](/dotnet/visual-basic/programming-guide/language-features/arrays/index).|Pro přístup k první položka v kolekci v modelu objektů aplikace Microsoft Office, použijte index 1 místo 0.|  
   
 ## <a name="see-also"></a>Viz také  
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)   

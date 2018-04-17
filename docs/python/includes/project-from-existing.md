@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 5423ccf6f441c5eca61e7994c2579e6dc068a38f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 04/16/2018
+---
 1. Spusťte sadu Visual Studio a vyberte **soubor > Nový > projekt**.
 
 1. V **nový projekt** dialogové okno, vyhledejte "Python", vyberte šablonu, "Z kódu existující Python", název a umístění poskytnout projektu a vyberte **OK**.

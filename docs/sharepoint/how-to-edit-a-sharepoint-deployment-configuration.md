@@ -1,13 +1,10 @@
 ---
-title: "Postupy: Úprava konfigurace nasazení služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Úprava konfigurace nasazení služby SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.DeploymentConfig
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e5e65e82910239b596e4b19f2ea1fa1f357266c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 97f6851b3d9aefee969851f355552373e7ecc7ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Postupy: Úprava konfigurace nasazení služby SharePoint
   Můžete vytvořit konfiguraci nasazení nebo změnit existující konfiguraci nasazení. Například můžete spustit jeden krok nebo změnit pořadí kroků v procesu nasazení. Můžete k vytvoření nebo úprava konfigurace nasazení, protože nejde změnit konfiguraci předdefinované a přidané prostřednictvím kódu programu.  
@@ -35,7 +32,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>Pro vytvoření konfigurace nasazení služby SharePoint  
   
-1.  V **Průzkumníku řešení**, zvolte projektu služby SharePoint a potom na řádku nabídek zvolte **projektu**, *ProjectName***vlastnosti**.  
+1.  V **Průzkumníku řešení**, zvolte projektu služby SharePoint a potom na řádku nabídek zvolte **projektu**, * ProjectName ***vlastnosti**.  
   
 2.  Na **SharePoint** , zvolte **nový** tlačítko.  
   
@@ -52,7 +49,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-change-the-active-deployment-configuration"></a>Chcete-li změnit konfiguraci aktivní nasazení  
   
-1.  V **Průzkumníku řešení**, zvolte projektu služby SharePoint a potom na řádku nabídek zvolte **projektu**, *ProjectName***vlastnosti**.  
+1.  V **Průzkumníku řešení**, zvolte projektu služby SharePoint a potom na řádku nabídek zvolte **projektu**, * ProjectName ***vlastnosti**.  
   
 2.  Vyberte **SharePoint** kartě.  
   

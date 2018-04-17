@@ -1,55 +1,28 @@
 ---
 title: Professional plochy Benefit Parasoft Virtualizovat v SOAtest | Microsoft Docs
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 10/3/2017
-Ms.topic: Get-Started-Article
-Description: Learn how to activate the Parasoft Virtualize/SOA Test Professional subscription included in your Visual Studio subscription.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 4468cc99db6437606570d70cdb7ece31a53ca3a3
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 10/03/2017
+ms.topic: Get-Started-Article
+description: Postup aktivace předplatného Parasoft virtualizaci/SOA Test Professional, které jsou součástí vašeho předplatného sady Visual Studio.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 75ce02de0f7d534154ac075462484b2fc40f9328
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualizovat v SOAtest odborníky v oblasti plochy v sadě Visual Studio předplatných
-
-## <a name="overview"></a>Přehled
+# <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft virtualizaci/SOAtest Professional plochy v sadě Visual Studio odběrů
 
 Testovat dříve a častěji.  Simulaci a kontrolu chování není k dispozici vývoji aplikací a systémů.  Vaše benefit zahrnuje bezplatné předplatné šesti měsíců.  Na konci šestiměsíční předplatné budete získání, slevy 25 % na cenu roční předplatné.  
 
-## <a name="eligibility"></a>Podmínky
-
-| Úrovni předplatného / Program                                 | Výhody                     | Obnovitelných?                                                   |
-|--------------------------------------------------------------|-----------------------------|--------------------------------------------------------------|
-| Visual Studio Enterprise Standard                            | 6 měsíců                    |   Ano                                                        |
-| Visual Studio Enterprise roční                              | 6 měsíců                    |   Ano                                                        |
-| Visual Studio Enterprise každý měsíc                             | Není k dispozici               |                                                              |
-| Visual Studio Professional Standard                          | Není k dispozici               |                                                              |
-| Visual Studio Professional roční                            | Není k dispozici               |                                                              | 
-| Visual Studio Professional každý měsíc                           | Není k dispozici               |                                                              |
-| Visual Studio Test Pro                                       | Není k dispozici               |                                                              |
-| MSDN platformy                                               | Není k dispozici               |                                                              |
-| Visual Studio Dev Essentials                                 | Není k dispozici               |                                                              |
-| Visual Studio Enterprise - NFR*                              | Není k dispozici               |                                                              |
-| Visual Studio Enterprise - FTE                               | Není k dispozici               |                                                              |
-| Visual Studio Enterprise – Microsoft Partner Network         | 6 měsíců                    |   Ano                                                        |
-| Visual Studio Professional - Microsoft Partner Network       | Není k dispozici               |                                                              |
-| Visual Studio Enterprise – Imagine (Standard)                | Není k dispozici               |                                                              |
-| Visual Studio Enterprise – Představte si (Premium)                 | Není k dispozici               |                                                              |
-| Visual Studio Enterprise – BizSpark                          | Není k dispozici               |                                                              |
-| Visual Studio Enterprise – MCT Software a služby           | Není k dispozici               |                                                              |
-| Visual Studio Enterprise – MCT softwaru & vývojářů Services | Není k dispozici               |                                                              |
-* Zahrnuje není pro prodej (NFR), cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Visual Studio Industry Partner (VSIP)  
-
-Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
 
 ## <a name="activation-steps"></a>Postup aktivace
 
-1.  Pokud chcete používat vaše plocha Professional virtualizaci/SOAtest Parasoft výhody, přihlaste se k [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+1.  Pokud chcete používat vaše plocha Professional virtualizaci/SOAtest Parasoft výhody, přihlaste se k [ https://my.visualstudio.com/benefits ](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2.  Najděte dlaždici Parasoft v části nástroje a klikněte na **získat kód** odkaz v dolní části dlaždici výhody.   Obdržíte oznámení, že kód byla úspěšně načtena.  Klikněte na tlačítko **aktivovat**.
 
@@ -98,12 +71,23 @@ Nejste si jistí jaké předplatné používáte?  Připojení k [https://my.vis
 
 17. Po dokončení instalace klikněte na tlačítko **Dokončit**. Nyní jste připraveni začít používat vaše plocha Professional virtualizaci/SOAtest Parasoft benefit!
 
-## <a name="faq"></a>Nejčastější dotazy
-*Kontrola aktualizací*
- 
+## <a name="eligibility"></a>Podmínky
+| Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardní, roční cloud)   | VL, Azure, prodejní, vybrané NFR<sup>1</sup> | 6 měsíců       |  Ano       |
+| Visual Studio Professional (standardní, roční cloud) | VL, Azure, maloobchodní                                       | Není k dispozici                                                           |NÁ         |
+| Visual Studio Test Professional (standardní)                         | VL, prodejní                                              | Není k dispozici                                                           |NÁ         |
+| MSDN platformy (standardní)                                          | VL, prodejní                                              | Není k dispozici                                                           |NÁ         |
+| Visual Studio Dev Essentials | NÁ  | Není k dispozici|NÁ |
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NÁ|
+
+<sup>1</sup>*zahrnuje: Microsoft Partner Network (Enterprise).    Vyloučí: Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT softwaru a služeb Developer, BizSpark, představte si, cenná partnera Microsoftu (MVP), oblast ředitel (RD).  MCT softwaru a služeb.*
+
+
+
 ## <a name="support-resources"></a>Podpora prostředky
 -  Potřebujete pomoc s produkty Parasoft?  Podívejte se na tyto prostředky:
-    - Technickou podporu: https://www.parasoft.com/support/ 
-    - Centrum zdrojů Parasoft: https://www.parasoft.com/resources/ 
+    - Technické podpory:  https://www.parasoft.com/support/ 
+    - Parasoft Resource Center:  https://www.parasoft.com/resources/ 
 -  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
 -  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 

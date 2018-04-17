@@ -1,5 +1,5 @@
 ---
-title: "Postupy: použití návrháře proměnné | Microsoft Docs"
+title: 'Postupy: použití návrháře proměnné | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d23307cc40084cdd455b6aaf8eee8ce675d8656d
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: c5ea858c6ebe448b7faf77533395a044bcc2fb32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-variable-designer"></a>Postupy: použití návrháře proměnné
 Proměnné návrháře se používá k vytvoření proměnné pro použití v scénáře datových vazeb a podmíněné příkazy. Návrhář přistupuje kliknutím **proměnné** tlačítko v levém horním rohu na plátno návrhu. Návrhář obsahuje seznam proměnných, které jsou uvedeny ve formě tabulky a lze seřadit podle jednotlivých záhlaví sloupců, s výjimkou **výchozí** sloupce. Každá proměnná obsahuje název, typ proměnné, oboru a výchozí hodnota (pokud existuje). Název a výchozí hodnotou jsou upravitelných textových polí a typu a rozsahu rozevírací seznamy. Rozsah je aktivita, která byla vybrána, když byl vyvolán návrháře proměnné. Pokud proměnnou nelze vytvořit v rámci oboru výběru, bude výchozí oboru pro nejbližší nadřazený aktivitu výběru, která umožňuje proměnné, které chcete vytvořit ve svém oboru. Další informace najdete v tématu [proměnné a argumenty (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).

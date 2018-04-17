@@ -1,13 +1,10 @@
 ---
-title: "NamedRange – ovládací prvek | Microsoft Docs"
-ms.custom: 
+title: NamedRange – ovládací prvek | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Toolbox.Range
 dev_langs:
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - NamedRange control
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22adc003c10e95de0e701eb3f382d9e530b28acf
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 5273baec024da8eb339e8f3d12541fc6e98e97c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="namedrange-control"></a>NamedRange – ovládací prvek
   <xref:Microsoft.Office.Tools.Excel.NamedRange> Řízení je rozsah, který se má jedinečný název, zpřístupní události a mohou být vázány na data. Další informace najdete v tématu [přehled modelu objektů aplikace Excel](../vsto/excel-object-model-overview.md).  
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/10/2018
 > [!NOTE]  
 >  Ve výchozím nastavení, nejsou trvalé dynamicky vytvořený pojmenované oblasti v listu jako umisťování ovládacích prvků při uzavření listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- <xref:Microsoft.Office.Tools.Excel.NamedRange>ovládací prvky může obsahovat jenom na konkrétní listy rozsahů. <xref:Microsoft.Office.Tools.Excel.NamedRange>ovládací prvky nemohou mít relativních názvů, které platí pro všechny listy a nesmí se skládat z rozsahů, které jsou rozmístěny dva nebo víc listů v sešitech (3D rozsahy).  
+ <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvky může obsahovat jenom na konkrétní listy rozsahů. <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvky nemohou mít relativních názvů, které platí pro všechny listy a nesmí se skládat z rozsahů, které jsou rozmístěny dva nebo víc listů v sešitech (3D rozsahy).  
   
 ## <a name="binding-data-to-the-control"></a>Vazba dat k ovládacímu prvku  
  Pojmenované oblasti zdají být vhodným kandidátem pro rozšířené datové vazby, protože může mít velké množství buněk; rozsah je však pouze o sadu buněk, které nelze mapovat snadno na konkrétní sloupce z datové sady. Proto <xref:Microsoft.Office.Tools.Excel.NamedRange> ovládací prvky podporují jenom jednoduché datové vazby. <xref:Microsoft.Office.Tools.Excel.ListObject> Řízení lze použít pro rozšířené datové vazby. Další informace najdete v tématu [ListObject – ovládací prvek](../vsto/listobject-control.md).  

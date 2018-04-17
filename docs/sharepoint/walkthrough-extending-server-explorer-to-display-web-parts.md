@@ -1,12 +1,10 @@
 ---
-title: "Návod: Rozšíření Průzkumníka serveru pro zobrazení webové části | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Rozšíření Průzkumníka serveru pro zobrazení webové části | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e8b613f19a23bdb60452b50cf927af08b399d180
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Návod: Rozšíření průzkumníka serveru pro zobrazení částí webu
   V sadě Visual Studio, můžete použít **připojení služby SharePoint** uzlu **Průzkumníka serveru** zobrazíte součásti na webech služby SharePoint. Ale **Průzkumníka serveru** nezobrazí některé součásti ve výchozím nastavení. V tomto návodu budete rozšíříte **Průzkumníka serveru** tak, aby zobrazil galerii webových částí na každý z nich připojený web služby SharePoint.  
@@ -84,7 +83,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  Vyberte **projektu VSIX** šablony, název projektu **WebPartNode**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **WebPartNode** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **WebPartNode** projektu do **Průzkumníku řešení**.  
   
 #### <a name="to-create-the-extension-project"></a>Vytvoření projektu rozšíření  
   
@@ -96,7 +95,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  V seznamu šablon projektu, zvolte **knihovny tříd**, název projektu **WebPartNodeExtension**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **WebPartNodeExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **WebPartNodeExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
 5.  Odstraňte soubor kódu Class1 z projektu.  
   
@@ -112,7 +111,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  V seznamu šablon projektu, zvolte **knihovny tříd**, název projektu **WebPartCommands**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **WebPartCommands** projektu a řešení a otevře soubor výchozího kódu Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **WebPartCommands** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
 6.  Odstraňte soubor kódu Class1 z projektu.  
   
@@ -159,7 +158,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Vyberte šipku vedle položky **přidat** tlačítko a potom vyberte **přidat jako odkaz** v nabídce, která se zobrazí.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá soubory kódu do projektu WebPartCommands jako odkazy. V důsledku toho se kód soubory nacházejí v projektu WebPartNodeExtension, ale také kompilované kódu v souborech v projektu WebPartCommands.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá soubory kódu do projektu WebPartCommands jako odkazy. V důsledku toho se kód soubory nacházejí v projektu WebPartNodeExtension, ale také kompilované kódu v souborech v projektu WebPartCommands.  
   
 5.  Otevřete místní nabídku pro **WebPartCommands** projekt znovu a vyberte **přidat odkaz na**.  
   
@@ -188,7 +187,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Vyberte **prostředky** a pak klikněte na příkaz **tohoto projektu neobsahuje výchozí soubor prostředků. Kliknutím sem vytvoříte jeden** odkaz.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Vytvoří soubor prostředků a otevře ji v návrháři.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Vytvoří soubor prostředků a otevře ji v návrháři.  
   
 4.  V horní části návrháře, vyberte na šipku vedle položky **přidat prostředek** nabídky příkaz a potom vyberte **přidat novou ikonu** v nabídce, která se zobrazí.  
   
@@ -378,6 +377,6 @@ ms.lasthandoff: 01/10/2018
  [Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Návod: Volání do objektového modelu klienta pro SharePoint v rozšíření Průzkumníka serveru](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
  [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons)   
- [Vytvoření ikony nebo jiného obrázku &#40; Editor obrázků pro ikony &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Vytvoření ikony nebo jiného obrázku &#40;Editor obrázků pro ikony&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

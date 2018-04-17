@@ -1,12 +1,10 @@
 ---
-title: "Pozdní vazba v řešeních pro systém Office | Microsoft Docs"
-ms.custom: 
+title: Pozdní vazba v řešeních pro systém Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - casting, object to specific type
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 430c10ffa5f79be45282d637b48772943be638e9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 7e205874e1c5c4e5de639e28768d6369b43c1e1a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="late-binding-in-office-solutions"></a>Pozdní vazba v řešeních pro systém Office
   Některé typy v objektové modely aplikací Office poskytují funkce, které jsou k dispozici prostřednictvím funkce pozdní vazba. Například některé metody a vlastnosti, může vracet různé typy objektů v závislosti na kontextu aplikace Office a některé typy můžou zpřístupnit různé metody nebo vlastnosti v různých kontextech.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
   
  Ve většině případů referenční dokumentaci k nástroji uvádí možné typy návratovou hodnotu pro člena, který vrátí <xref:System.Object>. Převádění nebo přetypování objekt umožňuje technologii IntelliSense pro objekt v editoru kódu.  
   
- Informace o převodu v jazyce Visual Basic najdete v tématu [implicitní a explicitní převody &#40; Visual Basic &#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) a [CType – funkce &#40; Visual Basic &#41; ](/dotnet/visual-basic/language-reference/functions/ctype-function).  
+ Informace o převodu v jazyce Visual Basic najdete v tématu [implicitní a explicitní převody &#40;jazyka Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) a [CType – funkce &#40;jazyka Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
 ### <a name="examples"></a>Příklady  
  Následující příklad kódu ukazuje, jak převést objekt na určitý typ v projektu jazyka Visual Basic kde **možnost striktní** zapnutý. V tomto typu projektu musíte explicitně přetypovat <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> vlastnosti <xref:Microsoft.Office.Interop.Excel.Range>. Tento příklad vyžaduje projekt aplikace Excel na úrovni dokumentu a s listu třídy s názvem `Sheet1`.  
@@ -67,7 +66,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="see-also"></a>Viz také  
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
  [Volitelné parametry v řešeních pro systém Office](../vsto/optional-parameters-in-office-solutions.md)   
- [Použití typu dynamic &#40; C &#35; Průvodce programováním &#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+ [Použití typu dynamic &#40;C&#35; Průvodce programováním&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict – příkaz](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
  [Reflexe (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
  [Reflexe (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
