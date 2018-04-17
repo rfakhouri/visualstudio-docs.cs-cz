@@ -1,13 +1,10 @@
 ---
-title: "Vytvořit vlastní Vizualizérech dat | Microsoft Docs"
-ms.custom: 
+title: Vytvořit vlastní Vizualizérech dat | Microsoft Docs
+ms.custom: ''
 ms.date: 06/19/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
 dev_langs:
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - debugger, visualizers
 - visualizers
 ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23985c56ba61e5a788232523611a48cfde902335
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dac2fd507936ffc3b305e8d1339000def3e00e2a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-custom-visualizers-of-data"></a>Vytvořit vlastní Vizualizérech dat
  Vizualizérech jsou součástí [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] ladicí program uživatelské rozhraní. A *vizualizér* vytvoří dialogové okno nebo jiné rozhraní k zobrazení proměnné nebo objekt způsobem, který je vhodný pro jeho datového typu. Například HTML vizualizér interpretuje řetězec HTML a výsledek zobrazí, jako by se zobrazí v okně prohlížeče; Vizualizér rastrový obrázek interpretuje strukturu rastrového obrázku a zobrazí obrázek, který představuje. Některé vizualizérech umožňují upravit a také zobrazit data.

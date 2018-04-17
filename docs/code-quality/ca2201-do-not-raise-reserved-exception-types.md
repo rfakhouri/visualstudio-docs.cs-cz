@@ -1,12 +1,10 @@
 ---
-title: "CA2201: Není vyvolat vyhrazené typy výjimek | Microsoft Docs"
-ms.custom: 
+title: 'CA2201: Není vyvolat vyhrazené typy výjimek | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - DoNotRaiseReservedExceptionTypes
 - CA2201
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA2201
 - DoNotRaiseReservedExceptionTypes
 ms.assetid: dd14ef5c-80e6-41a5-834e-eba8e2eae75e
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: cd95bedc273a14d9b3d455db5fd25eac1cf74aa4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: Nevyvolávejte vyhrazené typy výjimek
 |||  
@@ -67,19 +65,19 @@ ms.lasthandoff: 12/22/2017
   
 |Popis parametru|Výjimka|  
 |---------------------------|---------------|  
-|`null`referenční dokumentace|<xref:System.ArgumentNullException?displayProperty=fullName>|  
+|`null` Referenční dokumentace|<xref:System.ArgumentNullException?displayProperty=fullName>|  
 |Mimo povolený rozsah hodnot (například index pro kolekci nebo seznamu)|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  
 |Neplatný `enum` hodnota|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|  
 |Obsahuje formátu, který nesplňuje specifikace parametru metody (například řetězec formátu pro `ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|  
 |Jinak neplatných|<xref:System.ArgumentException?displayProperty=fullName>|  
   
- Když je neplatný pro aktuálního stavu k objektu throw operace<xref:System.InvalidOperationException?displayProperty=fullName>  
+ Když je neplatný pro aktuálního stavu k objektu throw operace <xref:System.InvalidOperationException?displayProperty=fullName>  
   
- Při provádění operace v objektu, který byl zlikvidován throw<xref:System.ObjectDisposedException?displayProperty=fullName>  
+ Při provádění operace v objektu, který byl zlikvidován throw <xref:System.ObjectDisposedException?displayProperty=fullName>  
   
- Pokud není podporována operace (například v překryté **Stream.Write** v datovém proudu otevřít pro čtení) throw<xref:System.NotSupportedException?displayProperty=fullName>  
+ Pokud není podporována operace (například v překryté **Stream.Write** v datovém proudu otevřít pro čtení) throw <xref:System.NotSupportedException?displayProperty=fullName>  
   
- Při převodu z by způsobilo přetečení (například na přetížení operátoru explicitní přetypování) throw<xref:System.OverflowException?displayProperty=fullName>  
+ Při převodu z by způsobilo přetečení (například na přetížení operátoru explicitní přetypování) throw <xref:System.OverflowException?displayProperty=fullName>  
   
  U všech jiných situacích zvažte vytvoření vlastního typu, která je odvozena od <xref:System.Exception> a která výjimku.  
   

@@ -1,11 +1,8 @@
 ---
-title: "Vytvoření vazby ovládacích prvků WPF služby WCF data Service | Microsoft Docs"
-ms.custom: 
+title: Vytvoření vazby ovládacích prvků WPF služby WCF data Service | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a10ce63d969f67c12197f13f0ab285bc05e258cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Vytvoření vazby ovládacích prvků WPF služby WCF data Service
 V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky vázané na data. Ovládací prvky jsou vázány na záznamy o zákaznících, které jsou zapouzdřené v [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]. Taky se přidá tlačítka, které zákazníci mohou používat k zobrazení a aktualizaci záznamů.  
@@ -247,11 +244,11 @@ Pomocí objektu proxy služby načíst prodejní data ze služby. Vrácená data
      [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
   
 ## <a name="navigate-sales-records"></a>Přejděte prodeje záznamů  
-Přidejte kód, který umožňuje uživatelům procházet prodeje záznamů pomocí  **\<**  a  **>**  tlačítka.  
+Přidejte kód, který umožňuje uživatelům procházet prodeje záznamů pomocí **\<** a **>** tlačítka.  
   
 #### <a name="to-enable-users-to-navigate-sales-records"></a>Chcete-li povolit uživatelům procházet prodeje záznamy  
   
-1.  V návrháři, dvakrát klikněte  **<**  tlačítko na povrchu okno.  
+1.  V návrháři, dvakrát klikněte **<** tlačítko na povrchu okno.  
   
      Visual Studio otevře soubor kódu a vytvoří novou `backButton_Click` obslužné rutiny události pro <xref:System.Windows.Controls.Primitives.ButtonBase.Click> událostí.  
   
@@ -260,7 +257,7 @@ Přidejte kód, který umožňuje uživatelům procházet prodeje záznamů pomo
      [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
      [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
   
-3.  Vrátíte do návrháře a dvakrát klikněte na  **>**  tlačítko.  
+3.  Vrátíte do návrháře a dvakrát klikněte na **>** tlačítko.  
   
      Visual Studio otevře soubor kódu a vytvoří novou `nextButton_Click` obslužné rutiny události pro <xref:System.Windows.Controls.Primitives.ButtonBase.Click> událostí.  
   
@@ -302,7 +299,7 @@ Sestavte a spusťte aplikaci ověřte, že můžete zobrazit a aktualizovat záz
   
     -   Do textových polí zobrazit různá pole dat z první položky prodeje, který má ID prodejní objednávky **71774**.  
   
-    -   Můžete kliknout na  **>**  nebo  **<**  tlačítka Procházet další prodeje záznamy.  
+    -   Můžete kliknout na **>** nebo **<** tlačítka Procházet další prodeje záznamy.  
   
 5.  V jednom z prodeje záznamy, zadejte text v **komentář** pole a pak klikněte na **uložit změny**.  
   

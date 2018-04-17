@@ -1,21 +1,19 @@
 ---
-title: "CA3076: Spuštění skriptu nezabezpečené XSLT | Microsoft Docs"
-ms.custom: 
+title: 'CA3076: Spuštění skriptu nezabezpečené XSLT | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 66d415b792558dce91de0205ee688fecb5caa182
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9793d0af1c2207b5201cb9e0e7bebe0d7bf4ef1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Spuštění skriptu nezabezpečené XSLT
 
@@ -34,11 +32,11 @@ Pokud spustíte předlohy se styly transformace XSLT (Extensible Language) v apl
 
 **XSLT** je standard World Wide Web Consortium (W3C) transformace dat XML. XSLT se obvykle používá k zápisu šablony stylů transformace dat XML do jiných formátů, jako je například HTML, pevná délka textu, text oddělený čárkami nebo do jiného formátu XML. I když zakázané ve výchozím nastavení, můžete ji povolit pro váš projekt.
 
-Aby se zajistilo, nejsou vystavení prostor pro útoky, toto pravidlo aktivuje vždy, když XslCompiledTransform. <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> obdrží nezabezpečené kombinace instancí <xref:System.Xml.Xsl.XsltSettings> a <xref:System.Xml.XmlResolver>, což umožňuje zpracování škodlivým skriptem.
+Aby se zajistilo, nejsou vystavení prostor pro útoky, toto pravidlo aktivuje vždy, když XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> obdrží nezabezpečené kombinace instancí <xref:System.Xml.Xsl.XsltSettings> a <xref:System.Xml.XmlResolver>, což umožňuje zpracování škodlivým skriptem.
 
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
 
-- Nahraďte nezabezpečené argument XsltSettings XsltSettings. <xref:System.Xml.Xsl.XsltSettings.Default%2A> nebo instanci, která se vypne provádění dokumentu funkce a skript.
+- Nahraďte nezabezpečené argument XsltSettings XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> nebo s instancí, zakázal spuštění funkce a skript dokumentu.
 
 - Nahraďte <xref:System.Xml.XmlResolver> argument s hodnotou null nebo <xref:System.Xml.XmlSecureResolver> instance.
 
@@ -48,7 +46,7 @@ Pokud si nejste jisti, že vstup se označuje jako z důvěryhodného zdroje, ne
 
 ## <a name="pseudo-code-examples"></a>Příklady pseudo kódu
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Violation&mdash;uses XsltSettings.TrustedXslt
+### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>Porušení&mdash;používá XsltSettings.TrustedXslt
 
 ```csharp
 using System.Xml;  

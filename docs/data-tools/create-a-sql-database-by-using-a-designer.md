@@ -1,27 +1,24 @@
 ---
-title: "Vytvoření souboru databáze a použití Návrháře tabulky v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Vytvoření souboru databáze a použití Návrháře tabulky v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-caps.latest.revision: "49"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 99f5c341df6ca04c25abf325146c4dac961bafc7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Vytvoření databáze a přidání tabulek v sadě Visual Studio
 Visual Studio můžete použít k vytváření a aktualizaci místního databázového souboru v SQL serveru Express LocalDB. Můžete také vytvořit databázi spuštěním příkazů Transact-SQL v **Průzkumník objektů systému SQL Server** okno nástroje v sadě Visual Studio. V tomto tématu jsme vytvoříte soubor MDF a přidání tabulek a klíče pomocí Návrháře tabulky.

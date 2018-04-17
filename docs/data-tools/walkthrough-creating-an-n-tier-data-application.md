@@ -1,11 +1,8 @@
 ---
-title: "Návod: Vytvoření víceúrovňové datové aplikace | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření víceúrovňové datové aplikace | Microsoft Docs'
+ms.custom: ''
 ms.date: 09/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
-caps.latest.revision: "48"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 9e513fc346991912dcc91e9a56062e49760d9779
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+ms.workload:
+- data-storage
+ms.openlocfilehash: a22ba174310aa9fc3f7e2676c140d164911d5bf4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Návod: Vytvoření víceúrovňové datové aplikace
 *N-vrstvá* data aplikace jsou aplikace, které přístup k datům a jsou rozdělené do několika logických vrstev, nebo *vrstev*. Rozdělit součásti aplikace do diskrétní úrovní zvyšuje udržovatelnosti a škálovatelnost aplikace. Dělá to tím, že umožňuje snazší přijetí nové technologie, které mohou být použity k jedné vrstvě, aniž by bylo potřeba změnit návrh celého řešení. N-vrstvá architektura obsahuje prezentační vrstvy, střední vrstvy, a datové vrstvy. Střední vrstva obvykle zahrnuje vrstva přístupu k datům, vrstvy obchodní logiky a sdílené komponenty, například ověřování a ověřování. Datová vrstva obsahuje relační databáze. Vícevrstvé aplikace obvykle uložit citlivé informace vrstva přístupu k datům ze střední vrstvě udržovat izolace koncovým uživatelům, kteří přistupují k prezentační vrstvy. Další informace najdete v tématu [vícevrstvé datové aplikace přehled](../data-tools/n-tier-data-applications-overview.md).  

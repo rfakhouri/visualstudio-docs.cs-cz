@@ -1,11 +1,8 @@
 ---
-title: "Přidání vlastních ovládacích prvků do okna zdroje dat | Microsoft Docs"
-ms.custom: 
+title: Přidání vlastních ovládacích prvků do okna zdroje dat | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
@@ -16,18 +13,17 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d00e818c0cfaa2659f55e5eb8bb8e4e4a87e8abc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Přidání vlastních ovládacích prvků do okna zdroje dat
 Když přetáhnete položky z **zdroje dat** okna návrhové ploše k vytvoření ovládacího prvku vázané na data, můžete vybrat typ ovládacího prvku, který vytvoříte. Každá položka v okně má rozevíracího seznamu, který zobrazuje ovládacích prvků, které můžete vybrat z. Sadu ovládacích prvků, které jsou spojené s každou položku je určen podle datový typ položky. Pokud ovládací prvek, který chcete vytvořit v seznamu nezobrazí, můžete podle pokynů v tomto tématu Přidání ovládacího prvku do seznamu.  
@@ -37,7 +33,7 @@ Když přetáhnete položky z **zdroje dat** okna návrhové ploše k vytvořen�
 > [!NOTE]
 >  Dialogová okna a příkazy nabídky, které vidíte, se může lišit od těch popsaných v nápovědě, v závislosti na aktivním nastavení nebo edici. Chcete-li změnit nastavení, na **nástroje** nabídce vyberte možnost **nastavení importu a exportu**. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-##  <a name="customizinglist"></a>Přizpůsobení seznamu vazbu ovládacích prvků pro datový typ  
+##  <a name="customizinglist"></a> Přizpůsobení seznamu vazbu ovládacích prvků pro datový typ  
  Přidat nebo odebrat ze seznamu dostupných ovládacích prvků pro položky v ovládacích prvcích **zdroje dat** okno, které mají určitý datový typ, proveďte následující kroky.  
   
 #### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>Vyberte ovládací prvky uvedené pro datový typ  
@@ -71,7 +67,7 @@ Když přetáhnete položky z **zdroje dat** okna návrhové ploše k vytvořen�
   
      Ovládací prvky, které jste vybrali v **související ovládací prvky** pole se nyní zobrazí v rozevírací nabídce pro položku.  
   
-##  <a name="addingcontrols"></a>Přidání ovládacích prvků do seznamu přidružených ovládacích prvcích pro datový typ  
+##  <a name="addingcontrols"></a> Přidání ovládacích prvků do seznamu přidružených ovládacích prvcích pro datový typ  
  Pokud chcete přiřadit ovládací prvek s datovým typem, ale ovládací prvek v nezobrazí **související ovládací prvky** pole ovládacího prvku musíte přidat do seznamu. Ovládací prvek musí být umístěn v aktuálním řešení nebo v odkazované sestavení. Také musí být k dispozici v **sada nástrojů**, a atribut, který určuje chování vazby dat ovládacího prvku.  
   
 #### <a name="to-add-controls-to-the-list-of-associated-controls"></a>K přidávání ovládacích prvků do seznamu přidružených ovládacích prvcích  

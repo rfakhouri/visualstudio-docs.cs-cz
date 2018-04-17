@@ -1,27 +1,25 @@
 ---
-title: "Postupy: přizpůsobení slovníku analýzy kódu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: přizpůsobení slovníku analýzy kódu | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis dictionary
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b2d60b2a187b7fccf4d5f564d9554badd5da9dec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Postupy: Přizpůsobení slovníku Analýzy kódu
 Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kódu chyby v pravopisu, gramaticky případ a jiné zásady vytváření názvů služby [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pokyny. Můžete vytvořit vlastní slovník soubor Xml pro přidat, odebrat nebo změnit podmínky, zkratky a zkratky do slovníku předdefinované.  
@@ -75,7 +73,7 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
 -   [Slovník nebo režim/CasingExceptions nebo zkratce](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)  
   
-###  <a name="BKMK_DictionaryWordsRecognizedWord"></a>Slovník nebo slova nebo rozpoznán nebo Word  
+###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> Slovník nebo slova nebo rozpoznán nebo Word  
  Zahrnout termín seznam termínů, které identifikují analýza kódu jako správně napsán, přidejte jako vnitřní text prvku slovníku nebo slova nebo Recognized nebo Word termín. Podmínky v elementy slovníku nebo slova nebo Recognized nebo Word nerozlišují malá a velká písmena.  
   
  **Příklad**  
@@ -110,7 +108,7 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
 -   [CA2204: Literály by měly být zadány správně](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a>Slovník nebo slova nebo nerozpoznaný nebo Word  
+###  <a name="BKMK_DictionaryWordsUnrecognizedWord"></a> Slovník nebo slova nebo nerozpoznaný nebo Word  
  Termín vyloučíte ze seznamu podmínek, které identifikují analýza kódu jako správně napsán, přidejte termín vyloučit jako vnitřní text prvku slovníku a slova nebo neznámá nebo aplikace Word. Podmínky v elementy slovníku nebo slova nebo neznámá nebo Word nerozlišují malá a velká písmena.  
   
  **Příklad**  
@@ -145,7 +143,7 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
 -   [CA2204: Literály by měly být zadány správně](../code-quality/ca2204-literals-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a>Slovník nebo slova nebo zastaralé nebo termín [@PreferredAlternate]  
+###  <a name="BKMK_DictionaryWordsDeprecatedTermPreferredAlternate"></a> Slovník nebo slova nebo zastaralé nebo termín [@PreferredAlternate]  
  Zahrnout termín seznam termínů, které identifikují analýza kódu jako zastaralé, přidejte jako vnitřní text prvku slovníku nebo slova nebo zastaralé funkce nebo termín termín. Nepoužívané termín je slovo, které je napsán správně, ale by se neměla používat.  
   
  Zahrnout navrhovaná alternativní termín upozornění, zadejte alternativní v atributu PreferredAlternate elementu termín. Hodnota atributu můžete ponechat prázdné, pokud nechcete navrhovat náhradní.  
@@ -182,7 +180,7 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
 -   [CA1726: Použijte upřednostňované výrazy](../code-quality/ca1726-use-preferred-terms.md)  
   
-###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a>Slovník nebo slova nebo složené nebo termín [@CompoundAlternate]  
+###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> Slovník nebo slova nebo složené nebo termín [@CompoundAlternate]  
  Předdefinované slovníku identifikuje některé podmínky jako jeden, diskrétní podmínky, nikoli složené termín. Zahrnout termín seznam termínů, které analýza kódu identifikuje jako složené word a zadejte správné rozlišených podmínek, přidejte jako vnitřní text prvku slovníku nebo slova nebo složené nebo termín termín. V atributu CompoundAlternate elementu termín zadejte jednotlivé slova, která tvoří složené termín využitím první písmena jednotlivých slov (pascalcase). Všimněte si, že výraz zadaný v vnitřní text se automaticky přidá do slovníku nebo slova nebo DiscreteExceptions seznamu.  
   
 -   Nepoužívané termín ve slovníku nebo slova/zastaralé funkce nebo termín element není malá a velká písmena.  
@@ -215,7 +213,7 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
 -   [CA1704: Identifikátory by měly být zadány správně](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)  
   
-###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a>Slovník nebo slova nebo DiscreteExceptions nebo termín  
+###  <a name="BKMK_DictionaryWordsDiscreteExceptionsTerm"></a> Slovník nebo slova nebo DiscreteExceptions nebo termín  
  Vyloučit termín, který se v seznamu podmínek, které identifikují analýza kódu jako jeden, přidejte diskrétní word při kontrole termín pravidly malá a velká písmena složených slov, termín jako vnitřní text prvku slovníku nebo slova nebo DiscreteExceptions nebo termín. Termín v elementu slovník nebo slova nebo DiscreteExceptions nebo termín není malá a velká písmena.  
   
  **Příklad**  
@@ -240,7 +238,7 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
 -   [CA1702: Malá a velká písmena složených slov by měla být použita správně](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)  
   
-###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Slovník nebo režim/CasingExceptions nebo zkratce  
+###  <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a> Slovník nebo režim/CasingExceptions nebo zkratce  
  Zahrnout zkratka seznam termínů, které analýza kódu identifikuje jako správně zadané a určit, jak se používá zkratka při kontrole termín podle malá a velká písmena pravidel pro složených slov, přidejte termín jako vnitřní text slovník nebo režim/CasingExceptions / Acronym element. Zkratka v elementu slovník nebo režim/CasingExceptions nebo zkratku rozlišuje velká a malá písmena.  
   
  **Příklad**  
@@ -263,7 +261,7 @@ Analýza kódu pomocí integrovaného slovníku kontroluje identifikátory v kó
   
 -   [CA1709: Malá a velká písmena identifikátorů by měla být použita správně](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
-##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a>Chcete-li použít vlastní slovník do projektu  
+##  <a name="BKMK_ToApplyACustomDictionaryToAProject"></a> Chcete-li použít vlastní slovník do projektu  
   
 1.  V **Průzkumníku**, použijte jednu z následujících postupů:  
   

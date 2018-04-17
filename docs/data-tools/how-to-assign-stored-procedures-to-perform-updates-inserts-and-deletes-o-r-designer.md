@@ -1,23 +1,20 @@
 ---
-title: "Pomocí uložené procedury provést aktualizaci, insert a delete v technologii Linq to SQL Návrhář relací objektů | Microsoft Docs"
-ms.custom: 
+title: Pomocí uložené procedury provést aktualizaci, insert a delete v technologii Linq to SQL Návrhář relací objektů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 20669a4ec19865e99a9498e87e896aa645321257
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 69071f0a49b5e2a8b0261aaf64b97cefaeb9aa9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Postupy: přiřazení uložené procedury k provedení aktualizací, vložení a odstranění (Návrhář relací objektů)
 Uložené procedury mohou být přidány do Návrhář relací objektů a provedeny jako obvyklé <xref:System.Data.Linq.DataContext> metody. Můžete také používají přepsat výchozí nastavení [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] modul runtime chování, které provádí vložení, aktualizace a odstraní se po uložení změn z tříd entit k databázi (například při volání metody <xref:System.Data.Linq.DataContext.SubmitChanges%2A> metoda).  
@@ -26,7 +23,7 @@ Uložené procedury mohou být přidány do Návrhář relací objektů a proved
 >  Pokud uložená procedura vrací hodnoty, které mají být odesílány zpět do klienta (například výpočtu hodnot v uložené proceduře), vytvořte výstupní parametry v uložené procedury. Pokud nemůžete použít výstupní parametry, zapsat implementace částečné metody aniž byste museli spoléhat na přepsání generované Návrhář relací objektů. Členy generované hodnoty musí být nastavena na odpovídající hodnoty po úspěšném dokončení operace INSERT nebo UPDATE. Další informace najdete v tématu [odpovědnosti vývojáře v přepsání výchozí chování](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).  
   
 > [!NOTE]
->  [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]obslužné rutiny generované hodnoty automaticky identity (automatického přírůstku), rowguidcol (generované GUID) a sloupce časového razítka. Generované hodnoty v jiné typy sloupců povede neočekávaně hodnotu null. K návratu hodnot generované databáze, měli byste ručně nastavit <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> k `true` a <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jednu z následujících: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, nebo <xref:System.Data.Linq.Mapping.AutoSync>.  
+>  [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] obslužné rutiny generované hodnoty automaticky identity (automatického přírůstku), rowguidcol (generované GUID) a sloupce časového razítka. Generované hodnoty v jiné typy sloupců povede neočekávaně hodnotu null. K návratu hodnot generované databáze, měli byste ručně nastavit <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> k `true` a <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> na jednu z následujících: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, nebo <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>Konfigurace chování aktualizace třídu Entity  
  Ve výchozím nastavení logiku aktualizace databáze (vložení, aktualizace a odstranění) změny, které byly provedeny na data v [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] tříd entit zajišťuje [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] modulu runtime. Modul runtime vytvoří výchozí příkazy INSERT, UPDATE a DELETE, které jsou založeny na schéma tabulky (sloupec a informace o primárním klíči). Pokud není výchozí chování žádoucí, můžete provádět konfiguraci chování aktualizace přiřazením konkrétní uložené procedury pro provádění nezbytné vložení, aktualizace a odstranění potřebné k manipulaci s daty v tabulce. Můžete také k tomu generování výchozí chování není, například pokud vaše třídy entity mapování na zobrazení. Nakonec můžete přepsat výchozí chování aktualizace, pokud databáze vyžaduje přístup k tabulce prostřednictvím uložených procedur.  

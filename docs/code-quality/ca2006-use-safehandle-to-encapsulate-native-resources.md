@@ -1,12 +1,10 @@
 ---
-title: "CA2006: Použijte SafeHandle pro zapouzdření nativních prostředků | Microsoft Docs"
-ms.custom: 
+title: 'CA2006: Použijte SafeHandle pro zapouzdření nativních prostředků | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2006
 - UseSafeHandleToEncapsulateNativeResources
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - UseSafeHandleToEncapsulateNativeResources
 - CA2006
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: d70c453e502dd0a7f4eda2e9247dbc3ec3229ebe
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 0fdef78fdad92eb08012a474afff5c4c8c4d7ab8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006: Použijte SafeHandle pro zapouzdření nativních prostředků
 |||  
@@ -41,7 +39,7 @@ ms.lasthandoff: 12/22/2017
   
  V takových případech problémům se zabezpečením nebo spolehlivost bude také existovat, pokud je povolen vícevláknové přístup k `IntPtr` a způsob uvolnění prostředků, která je reprezentována `IntPtr` je k dispozici. Tyto problémy zahrnují recyklace `IntPtr` hodnota na uvolnění prostředků při souběžné používání prostředku se provádí na jiné vlákno. To může způsobit konflikty časování kde jedno vlákno můžou číst nebo zapisovat data, který je přidružen nesprávný prostředků. Pokud váš typ uloží popisovač operačního systému, jako například `IntPtr` a umožňuje uživatelům volání obě **Zavřít** a kterákoli metoda, která používá tento popisovač současně a bez nějaký druh synchronizace, kódu má popisovač recyklace došlo k potížím.  
   
- Tento popisovač recyklace problém může způsobit poškození dat a často, ohrožení zabezpečení. `SafeHandle`a třída jeho na stejné úrovni <xref:System.Runtime.InteropServices.CriticalHandle> poskytují mechanismus pro zapouzdření nativních popisovač pro prostředek tak, aby se takovým problémům vláken vyhnout. Kromě toho můžete použít `SafeHandle` a její na stejné úrovni jako třída `CriticalHandle` pro další vláken problémy, například k pečlivě řízení životnost spravovaných objektů, které obsahují kopii nativní popisovač prostřednictvím volání do nativního metod. V takovém případě můžete často eliminovat volání `GC.KeepAlive`. Režijní získána výkonu dojít při použití `SafeHandle` a v menší míře `CriticalHandle`, lze omezit často pečlivě návrhu.  
+ Tento popisovač recyklace problém může způsobit poškození dat a často, ohrožení zabezpečení. `SafeHandle` a třída jeho na stejné úrovni <xref:System.Runtime.InteropServices.CriticalHandle> poskytují mechanismus pro zapouzdření nativních popisovač pro prostředek tak, aby se takovým problémům vláken vyhnout. Kromě toho můžete použít `SafeHandle` a její na stejné úrovni jako třída `CriticalHandle` pro další vláken problémy, například k pečlivě řízení životnost spravovaných objektů, které obsahují kopii nativní popisovač prostřednictvím volání do nativního metod. V takovém případě můžete často eliminovat volání `GC.KeepAlive`. Režijní získána výkonu dojít při použití `SafeHandle` a v menší míře `CriticalHandle`, lze omezit často pečlivě návrhu.  
   
 ## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
  Převést `IntPtr` využití pro `SafeHandle` pro bezpečnou správu přístupu k prostředkům nativní. Najdete v článku <xref:System.Runtime.InteropServices.SafeHandle> referenční téma pro příklady.  

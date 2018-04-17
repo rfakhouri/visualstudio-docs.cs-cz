@@ -1,11 +1,8 @@
 ---
-title: "Aktualizace dat pomocí TableAdapter | Microsoft Docs"
-ms.custom: 
+title: Aktualizace dat pomocí TableAdapter | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,17 +14,17 @@ helpviewer_keywords:
 - data [Visual Studio], updating
 - saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 4968eab5e1d355543a8658e72540bc66fa2543b9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: c5188f56e440f7ec00f7537602aff10723441c3a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Aktualizace dat pomocí TableAdapter
 Poté, co byla upravena a ověřit data v datovou sadu, můžete odeslat aktualizovaná data zpět na databázi zavoláním `Update` metodu [TableAdapter](../data-tools/create-and-configure-tableadapters.md). `Update` Metoda aktualizace do jedné tabulky datového a spustí příkaz správný (INSERT, UPDATE nebo DELETE) na základě <xref:System.Data.DataRow.RowState%2A> z každý řádek dat v tabulce. Když datovou sadu s související tabulky, Visual Studio generuje TableAdapterManager třídy, které můžete použít k provedení aktualizace. Třída TableAdapterManager zajistí, že jsou ve správném pořadí podle omezení cizího klíče, které jsou definovány v databázi provedeny aktualizace. Pokud používáte ovládací prvky vázané na data, vytvoří architektuře vazby dat členské proměnné volané tableAdapterManager TableAdapterManager třídy. 

@@ -1,11 +1,8 @@
 ---
-title: "Uložit data zpět do databáze | Microsoft Docs"
-ms.custom: 
+title: Uložit data zpět do databáze | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - datasets [Visual Basic], validating data
 - data validation, datasets
@@ -19,17 +16,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 733a495c7f6865e9973f5288c9c324baef7f1d8e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1e7d2b27f0d90677d99d3f0fbc434493fdc7da83
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="save-data-back-to-the-database"></a>Uložit data zpět do databáze
 Datová sada je kopie v paměti data. Pokud změníte data, je dobrým zvykem uložit tyto změny zpět do databáze. Můžete to udělat jedním ze tří způsobů:  
@@ -158,7 +155,7 @@ V následující tabulce jsou možné hodnoty <xref:System.Data.DataRowVersion> 
   
  Můžete vytvořit podmnožiny změněné záznamy pomocí `GetChanges` metoda tabulky dat (<xref:System.Data.DataTable.GetChanges%2A>) nebo datové sady (<xref:System.Data.DataSet.GetChanges%2A>) sám sebe. Když zavoláte metodu pro tabulku dat, vrátí kopii tabulky se pouze změněné záznamy. Podobně když zavoláte metodu na datovou sadu, získáte novou datovou sadu s pouze změněné záznamy v ní.  
   
- `GetChanges`samostatně vrátí všechny změněné záznamy. Naproti tomu předáním požadovanou <xref:System.Data.DataRowState> jako parametr, který se `GetChanges` metodu, můžete zadat jaké podmnožinu změněné záznamy, které chcete: nově záznamů, záznamy, které jsou označené k odstranění, odpojit záznamy k přidání nebo úpravě záznamů.  
+ `GetChanges` samostatně vrátí všechny změněné záznamy. Naproti tomu předáním požadovanou <xref:System.Data.DataRowState> jako parametr, který se `GetChanges` metodu, můžete zadat jaké podmnožinu změněné záznamy, které chcete: nově záznamů, záznamy, které jsou označené k odstranění, odpojit záznamy k přidání nebo úpravě záznamů.  
   
  Získávání podmnožinu změněné záznamy je užitečné, pokud chcete odeslat záznamy do jiné součásti pro zpracování. Místo odesílání celou datovou sadu, můžete snížit režii při komunikaci s komponentou jiných získáním pouze záznamy, které potřebuje komponentu.   
   

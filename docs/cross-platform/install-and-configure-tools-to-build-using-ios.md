@@ -1,26 +1,22 @@
 ---
-title: "Instalace a konfigurace nástroje pro sestavení pomocí iOS | Microsoft Docs"
-ms.custom: 
+title: Instalace a konfigurace nástroje pro sestavení pomocí iOS | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d015b927f8ba0fa62244a6cd09ff19efcb46451d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5374001e63f83f13e0956314e9af88808d624dae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástroje pro sestavení pomocí iOS
 Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použít k úpravám, ladění a nasazení iOS kódu simulátoru iOS nebo zařízení s iOS, ale kvůli licenční omezení, musí být kód vytvořené a spouštět vzdáleně na macu. Sestavení a spuštění aplikace pro iOS pomocí sady Visual Studio, budete muset nastavit a konfigurovat vzdáleného agenta [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), na vaše Mac. Obslužné rutiny vzdáleného agenta sestavení požadavky ze sady Visual Studio a spustí aplikace na zařízení s iOS připojené k počítači Mac, nebo v simulátoru na Mac. iOS  
@@ -44,7 +40,7 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
   
  [Konfigurace vzdáleného agenta na Mac](#ConfigureMac)  
   
-##  <a name="Prerequisites"></a>Požadavky  
+##  <a name="Prerequisites"></a> Požadavky  
  K instalaci a použití vzdáleného agenta k vývoji kódu pro iOS, musíte nejprve mít tyto požadavky:  
   
 -   Počítač Mac se systémem OS X Mavericks nebo novější  
@@ -79,12 +75,12 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
   
      `sudo npm install -g npm@latest`  
   
-##  <a name="Install"></a>Instalace vzdáleného agenta pro iOS  
+##  <a name="Install"></a> Instalace vzdáleného agenta pro iOS  
  Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platformy, Visual Studio může komunikovat s [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), vzdáleného agenta spuštěného na počítači Mac, k přenosu souborů, sestavit a spustit aplikaci s iOS a odesílání příkazů ladění.  
   
  Než nainstalujete vzdáleného agenta, ujistěte se, jste splnili [požadavky](#Prerequisites) a nainstalován [Visual C++ pro vývoj mobilních řešení pro různé platformy](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools).  
   
-###  <a name="DownloadInstall"></a>Stažení a instalace vzdáleného agenta  
+###  <a name="DownloadInstall"></a> Stažení a instalace vzdáleného agenta  
   
 -   Z terminálu aplikace na počítači Mac zadejte:  
   
@@ -95,14 +91,14 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
      Během instalace vcremote je nainstalován a režim vývojáře je aktivováno na vaše Mac. [Homebrew](http://brew.sh/) a jsou dva balíčky pro npm, vcremote-lib a vcremote utils, nainstalovány také.  
   
     > [!NOTE]
-    >  Pokud chcete nainstalovat Homebrew, musí mít sudo (správce) přístup. Pokud potřebujete nainstalovat vcremote bez sudo, můžete ručně nainstalovat Homebrew v umístění usr/místní a přidat jeho složky Bin přejít na cestu k. Další informace najdete v tématu [Homebrew dokumentaci](https://github.com/Homebrew/homebrew/wiki/Installation). Ručně povolit režim vývojáře, zadejte tento příkaz v terminálu aplikaci:`DevToolsSecurity -enable`  
+    >  Pokud chcete nainstalovat Homebrew, musí mít sudo (správce) přístup. Pokud potřebujete nainstalovat vcremote bez sudo, můžete ručně nainstalovat Homebrew v umístění usr/místní a přidat jeho složky Bin přejít na cestu k. Další informace najdete v tématu [Homebrew dokumentaci](https://github.com/Homebrew/homebrew/wiki/Installation). Ručně povolit režim vývojáře, zadejte tento příkaz v terminálu aplikaci: `DevToolsSecurity -enable`  
   
  Pokud je aktualizovat na novou verzi sady Visual Studio, musíte aktualizovat na aktuální verzi vzdáleného agenta. Pokud chcete aktualizovat vzdáleného agenta, opakujte kroky ke stažení a instalace vzdáleného agenta.  
   
-##  <a name="Start"></a>Spuštění vzdáleného agenta  
+##  <a name="Start"></a> Spuštění vzdáleného agenta  
  Vzdáleného agenta musí být spuštěn pro sadu Visual Studio k vytvoření a spuštění kódu iOS. Visual Studio musí být spárována s vzdáleného agenta předtím, než může komunikovat. Ve výchozím nastavení vzdáleného agenta spustí v režimu zabezpečené připojení, který vyžaduje PIN kódu spárujte pomocí sady Visual Studio.  
   
-###  <a name="RemoteAgentStartServer"></a>Spuštění vzdáleného agenta  
+###  <a name="RemoteAgentStartServer"></a> Spuštění vzdáleného agenta  
   
 -   Z terminálu aplikace na počítači Mac zadejte:  
   
@@ -138,7 +134,7 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
   
 -   V terminálu okno vcremote běží v, zadejte `Control+C`.  
   
-##  <a name="ConfigureVS"></a>Konfigurace vzdáleného agenta v sadě Visual Studio  
+##  <a name="ConfigureVS"></a> Konfigurace vzdáleného agenta v sadě Visual Studio  
  Chcete-li připojit k vzdáleného agenta ze sady Visual Studio, musíte zadat konfigurace vzdáleného v možnostech nástroje Visual Studio.  
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Konfigurace vzdáleného agenta ze sady Visual Studio  
@@ -174,7 +170,7 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
   
  Visual Studio použije stejné informace pro připojení k vzdáleného agenta na počítači Mac pokaždé, když ji používáte. Není nutné pár Visual Studio se vzdáleným agentem znovu vygenerovat nový certifikát zabezpečení na počítači Mac, resp. její název hostitele nebo IP adresa změny.  
   
-##  <a name="GeneratePIN"></a>Vygenerování nového zabezpečení PIN kódu  
+##  <a name="GeneratePIN"></a> Vygenerování nového zabezpečení PIN kódu  
  Při prvním spuštění vzdáleného agenta vygenerovaný PIN kód je platný po omezenou dobu – ve výchozím nastavení 10 minut. Pokud nemáte spárujte Visual Studio se vzdáleným agentem, před vypršením doby, musíte vygenerovat nový kód PIN.  
   
 #### <a name="to-generate-a-new-pin"></a>Chcete-li vygenerovat nový kód PIN  
@@ -187,7 +183,7 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
   
      Vzdáleného agenta generuje nový dočasný PIN kód. Visual Studio spárovat s použitím nový kód PIN, opakujte kroky v [konfigurace vzdáleného agenta v sadě Visual Studio](#ConfigureVS).  
   
-##  <a name="GenerateCert"></a>Vygenerovat nový certifikát serveru  
+##  <a name="GenerateCert"></a> Vygenerovat nový certifikát serveru  
  Z bezpečnostních důvodů certifikáty serveru tuto dvojici Visual Studio se vzdáleným agentem, jsou svázané s IP adresu nebo název hostitele vašeho Mac. Pokud tyto hodnoty změnit, musíte vygenerovat nový certifikát serveru a potom znovu nakonfigurovat Visual Studio s novými hodnotami.  
   
 #### <a name="to-generate-a-new-server-certificate"></a>Pro vytvoření nového certifikátu serveru  
@@ -208,7 +204,7 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
   
 5.  Visual Studio spárovat s použitím nový kód PIN, opakujte kroky v [konfigurace vzdáleného agenta v sadě Visual Studio](#ConfigureVS).  
   
-##  <a name="ConfigureMac"></a>Konfigurace vzdáleného agenta na Mac  
+##  <a name="ConfigureMac"></a> Konfigurace vzdáleného agenta na Mac  
  Můžete nakonfigurovat vzdáleného agenta použití různých možností příkazového řádku. Můžete například zadat port pro naslouchání požadavkům na sestavení a určete maximální počet sestavení pro zachování v systému souborů. Výchozí limit je 10 sestavení. Vzdáleného agenta dojde k odebrání sestavení, které překračují maximální na vypnutí.  
   
 #### <a name="to-configure-the-remote-agent"></a>Konfigurace vzdáleného agenta  

@@ -1,11 +1,8 @@
 ---
-title: "Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio – část 1 | Microsoft Docs"
-ms.custom: 
+title: Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio – část 1 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [WPF], displaying
 - WPF, data binding in Visual Studio
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 77c56d70c6fc3dd3dac9a563c146d8bab2c6f699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 4c059013703a73a83a9a6f35b3c89f7b27c523d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio
 Data můžete zobrazit uživatelům vaší aplikace pomocí vytvoření vazby dat [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] ovládací prvky. Chcete-li vytvořit tyto ovládací prvky vázané na data, můžete přetáhnout položky z **zdroje dat** okna do [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Toto téma popisuje některé z nejčastějších úloh, nástroje a třídy, které můžete použít k vytvoření vázané na data [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] aplikace.  
@@ -64,7 +61,7 @@ Data můžete zobrazit uživatelům vaší aplikace pomocí vytvoření vazby da
   
 -   Vytvoří datové vazby pro ovládací prvek. Pokud přetáhnete položku na existující ovládací prvek v návrháři, XAML naváže ovládací prvek na položku. Pokud přetáhnete položky do kontejneru, XAML vytvoří ovládací prvek, který byl vybrán pro taženou položku a ovládacího prvku se váže k položce. Ovládací prvek je vytvořit uvnitř nový <xref:System.Windows.Controls.Grid>.  
   
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]také provede tyto změny do souboru kódu na pozadí:  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] také provede tyto změny do souboru kódu na pozadí:  
   
 -   Vytvoří <xref:System.Windows.FrameworkElement.Loaded> obslužné rutiny události pro [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] elementu, který obsahuje ovládací prvek. Obslužné rutiny události do tabulky s daty, načte vyplní <xref:System.Windows.Data.CollectionViewSource> z kontejneru prostředků a pak díky první datové položky s aktuální položkou. Pokud <xref:System.Windows.FrameworkElement.Loaded> obslužné rutiny události již existuje, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] přidá tento kód do stávající obslužné rutiny události.  
   
@@ -96,7 +93,7 @@ Sada Visual Studio rovněž provede následující změny v souboru s kódem n
 > [!NOTE]
 >  Vlastní třídy musí být veřejné a ve výchozím nastavení, mít konstruktor bez parametrů. Jejich can'tbe vnořené tříd, které mají "tečku" v jejich syntaxi. Další informace najdete v tématu [XAML a vlastní třídy pro grafický subsystém WPF](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf).  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , provede následující akce:  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generuje [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] , provede následující akce:  
   
 -   Přidá nový <xref:System.Windows.Data.CollectionViewSource> kontejneru, který jste přetáhli položka, která má na prostředky. <xref:System.Windows.Data.CollectionViewSource> Je objekt, který můžete použít k přejděte a zobrazení dat v objektu.  
   
