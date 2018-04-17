@@ -1,12 +1,10 @@
 ---
-title: "Příprava na ladění: Projekty konzoly | Microsoft Docs"
-ms.custom: 
+title: 'Příprava na ladění: Projekty konzoly | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - debugging console applications
 - console applications, debugging
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
-caps.latest.revision: "26"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9e1ade672c3abd81f4f71d1e48a39560e17e1465
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0adeb1954620313bc482b2ff461036840723cc5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-preparation-console-projects"></a>Příprava ladění: projekty konzoly
 Příprava na ladění projektu pro konzoly je podobná Příprava na ladění projektu pro Windows, se některé další aspekty. Další informace najdete v tématu [aplikacích Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), a [Příprava ladění: Windows Forms aplikace (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Z důvodu podobnosti všechny aplikace konzoly Toto téma obsahuje následující typy projektů:  

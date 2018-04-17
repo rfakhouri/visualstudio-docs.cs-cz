@@ -1,26 +1,24 @@
 ---
 title: Registrace do programu | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: eb61257b80e3f8b4a09819b2b037f342e2ecbee0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: febc798888cc046e514db4013edb077e25f5aaca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-the-program"></a>Registrace do programu
 Po modul ladění získal port, reprezentována [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní, je dalším krokem při povolování program, který chcete ladit a zaregistrujte ho pomocí portu. Po registraci programu je k dispozici pro ladění pomocí jedné z těchto způsobů:  
@@ -35,7 +33,7 @@ Po modul ladění získal port, reprezentována [IDebugPort2](../../extensibilit
   
 1.  Volání [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) metoda implementované port.  
   
-     `IDebugPortNotify2::AddProgramNode`ukazatel na vyžaduje [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) rozhraní.  
+     `IDebugPortNotify2::AddProgramNode` ukazatel na vyžaduje [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) rozhraní.  
   
      Obvykle když operační systém nebo běhové prostředí načte program, vytvoří uzlu programu. Pokud modul ladění (DE) se zobrazí výzva k načtení program DE vytvoří a zaregistruje uzlu programu.  
   

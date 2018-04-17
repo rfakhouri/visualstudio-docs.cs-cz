@@ -1,29 +1,25 @@
 ---
-title: "Enablelocationbrowsebutton – Element (šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Enablelocationbrowsebutton – Element (šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#EnableLocationBrowseButton
 helpviewer_keywords:
 - EnableLocationBrowseButton [Visual Studio project templates]
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 538dfce45136b6a8d55c9c3c8aab1931b3a6df27
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7d3573a1359cf7cc6347ede28b5361b01bbb7efb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton – element (šablony sady Visual Studio)
 Určuje, zda **Procházet** tlačítko je k dispozici v **nový projekt** dialogovém tak, aby uživatelé mohli snadno upravovat výchozí adresář, kde je uložena nový projekt.  
@@ -59,7 +55,7 @@ Určuje, zda **Procházet** tlačítko je k dispozici v **nový projekt** dialog
  Text musí být buď `true` nebo `false`, která určuje, zda se má zobrazit **Procházet** na tlačítko **nový projekt** dialogové okno.  
   
 ## <a name="remarks"></a>Poznámky  
- `EnableLocationBrowseButton`je volitelný element. Výchozí hodnota je `true`, které zobrazí **Procházet** v tlačítko **nový projekt** dialogové okno.  
+ `EnableLocationBrowseButton` je volitelný element. Výchozí hodnota je `true`, které zobrazí **Procházet** v tlačítko **nový projekt** dialogové okno.  
   
  V **nový projekt** dialogové okno, **umístění** textového pole určuje adresář, kde je uložena nový projekt. **Procházet** tlačítko umožňuje upravit tento adresář zobrazením **umístění projektu** dialogové okno, které umožňují snadno přejít do jiného adresáře, který je dostupný z vašeho počítače, a Zvolte jej jako adresář, kde je uložena nový projekt.  
   

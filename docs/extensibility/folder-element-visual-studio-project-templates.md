@@ -1,36 +1,32 @@
 ---
-title: "Folder – Element (šablony projektů Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Folder – Element (šablony projektů Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c561564f75d4e5557c64f94adfb9caed6abce83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c2ecf9c2973a5fb09cf1a217bd700882dce41626
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Element složky (šablony projektů sady Visual Studio)
 Určuje složku, který bude přidán do projektu.  
   
  \<VSTemplate >  
  \<TemplateContent >  
- \<Projekt >  
+ \<Project>  
  \<Složka >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -56,7 +52,7 @@ Určuje složku, který bude přidán do projektu.
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|`Folder`|Určuje složku pro přidání do projektu. `Folder`prvky mohou obsahovat podřízené `Folder` elementy.|  
+|`Folder`|Určuje složku pro přidání do projektu. `Folder` prvky mohou obsahovat podřízené `Folder` elementy.|  
 |[ProjectItem –](../extensibility/projectitem-element-visual-studio-item-templates.md)|Určuje soubor, který chcete přidat do projektu.|  
   
 ### <a name="parent-elements"></a>Nadřazené elementy  
@@ -66,7 +62,7 @@ Určuje složku, který bude přidán do projektu.
 |[Projekt](../extensibility/project-element-visual-studio-templates.md)|Volitelný podřízený prvek [TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md).|  
   
 ## <a name="remarks"></a>Poznámky  
- `Folder`je volitelné podřízeným `Project`.  
+ `Folder` je volitelné podřízeným `Project`.  
   
  Můžete použít některou z následujících metod k uspořádání položek projektu do složky v šabloně:  
   

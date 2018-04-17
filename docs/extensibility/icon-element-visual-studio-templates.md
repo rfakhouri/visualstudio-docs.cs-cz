@@ -1,29 +1,25 @@
 ---
-title: "Element ikony (šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Element ikony (šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Icon
 helpviewer_keywords:
 - Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b2fb918d7545655b70a20629ff71427e66030b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4cc1c64e6347f7ea5183efa013504c9e672f5010
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="icon-element-visual-studio-templates"></a>Element ikony (šablony sady Visual Studio)
 Určuje cestu a název souboru bitové kopie, který slouží jako ikonu, která se zobrazí v některém **nový projekt** nebo **přidat novou položku** dialogové okno, šablony.  
@@ -69,7 +65,7 @@ Určuje cestu a název souboru bitové kopie, který slouží jako ikonu, která
  Text obsahuje název a cesta k souboru šablony ikonu, která se objeví v **nový projekt** dialogové okno.  
   
 ## <a name="remarks"></a>Poznámky  
- `Icon`je požadovaný podřízený element `TemplateData`.  
+ `Icon` je požadovaný podřízený element `TemplateData`.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje metadata pro šablona projektu pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikace.  

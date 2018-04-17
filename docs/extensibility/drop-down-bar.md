@@ -1,27 +1,23 @@
 ---
-title: "Rozevírací seznam panelu | Microsoft Docs"
-ms.custom: 
+title: Rozevírací seznam panelu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - drop-down bar
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7058c0b93cd0ff4afb2a13b625cd7ef034b03699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0cf01e8a416407c570076812bf18aa6b21c21583
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="drop-down-bar"></a>Panel rozevíracího seznamu
 Panelu rozevíracího seznamu je k dispozici v horní části okna kódu a obsahuje dva rozevírací seznamy.  
@@ -29,7 +25,7 @@ Panelu rozevíracího seznamu je k dispozici v horní části okna kódu a obsah
 ## <a name="drop-down-bar-interfaces"></a>Rozhraní panelu rozevíracího seznamu  
  V [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], například panelu rozevírací seznam obsahuje seznamy pro [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] položky a [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] položky členské funkce, jak je znázorněno na následujícím obrázku.  
   
- ![Vyřaďte & č. 45; dolů řádky](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
+ ![Vyřaďte&#45;dolů řádky](../extensibility/media/vsdropdown_bar.gif "vsDropdown_bar")  
 Panel rozevíracího seznamu  
   
  Při implementaci panelu rozevíracího seznamu, existují čtyři rozhraní pro primární význam:  

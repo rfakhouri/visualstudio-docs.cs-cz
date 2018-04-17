@@ -1,12 +1,10 @@
 ---
-title: "&lt;soubor&gt; – Element (aplikace ClickOnce) | Microsoft Docs"
-ms.custom: 
+title: '&lt;soubor&gt; – Element (aplikace ClickOnce) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - http://www.w3.org/2000/09/xmldsig#Transform
 - urn:schemas-microsoft-com:asm.v2#file
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - <file> element [ClickOnce application manifest]
 - manifests [ClickOnce], file element
 ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
-caps.latest.revision: "24"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 9e3e6429f32c8939960816e576f9aabefd4763e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 9575fd84a5bd17777aaf540c72bfff62c27adf15
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;soubor&gt; – Element (ClickOnce aplikace)
 Identifikuje všechny nesestavené soubory stáhli a používá je aplikace.  
@@ -95,7 +93,7 @@ Identifikuje všechny nesestavené soubory stáhli a používá je aplikace.
 |`name`|Požadováno. Určuje název souboru.|  
 |`size`|Požadováno. Určuje velikost v bajtech souboru.|  
 |`group`|Volitelné, pokud `optional` atribut není zadaný, nebo nastavte `false`; požadováno pokud `optional` je `true`. Název skupiny, do které tento soubor patří. Název může být libovolná hodnota řetězce Unicode zvolený vývojářem a slouží pro stahování souborů na vyžádání pomocí <xref:System.Deployment.Application.ApplicationDeployment> třídy.|  
-|`optional`|Volitelné. Určuje, zda tento soubor musí spustit stahování, když je aplikace první, nebo zda soubor by měl být umístěn pouze na serveru dokud aplikace požaduje na vyžádání. Pokud `false` nebo undefined, soubor se stáhne, při prvním spuštění nebo instalaci aplikace. Pokud `true`, `group` pro manifest aplikace platná musí být zadána. `optional`nemůže být true, pokud `writeableType` je zadán s hodnotou `applicationData`.|  
+|`optional`|Volitelné. Určuje, zda tento soubor musí spustit stahování, když je aplikace první, nebo zda soubor by měl být umístěn pouze na serveru dokud aplikace požaduje na vyžádání. Pokud `false` nebo undefined, soubor se stáhne, při prvním spuštění nebo instalaci aplikace. Pokud `true`, `group` pro manifest aplikace platná musí být zadána. `optional` nemůže být true, pokud `writeableType` je zadán s hodnotou `applicationData`.|  
 |`writeableType`|Volitelné. Určuje, zda je tento soubor datový soubor. Aktuálně je jedinou platnou hodnotou `applicationData`.|  
   
 ## <a name="typelib"></a>knihovny typů  
@@ -160,7 +158,7 @@ Identifikuje všechny nesestavené soubory stáhli a používá je aplikace.
 ## <a name="hash"></a>hash  
  `hash` Element je volitelným podřízeným `file` elementu. `hash` Element nemá žádné atributy.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]používá algoritmické hodnotu hash všech souborů v aplikaci jako kontrolu zabezpečení, ujistěte se, že žádné soubory byly změněny po nasazení. Pokud `hash` element neuvedete, nebude provedena kontrola. Proto vynechání `hash` element se nedoporučuje.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] používá algoritmické hodnotu hash všech souborů v aplikaci jako kontrolu zabezpečení, ujistěte se, že žádné soubory byly změněny po nasazení. Pokud `hash` element neuvedete, nebude provedena kontrola. Proto vynechání `hash` element se nedoporučuje.  
   
  Pokud manifestu obsahuje soubor, který není s použitím algoritmu hash, že manifest nemůže být digitálně podepsané, protože uživatelé nemůže ověřit obsah souboru bez otisku.  
   

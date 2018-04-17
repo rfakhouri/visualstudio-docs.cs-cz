@@ -1,30 +1,28 @@
 ---
-title: "Vystavení typy vizuální nástroje | Microsoft Docs"
-ms.custom: 
+title: Vystavení typy vizuální nástroje | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - types [Visual Studio SDK], exposing to visual designers
 - designers [Visual Studio SDK], exposing types
 - custom tools, exposing types to visual designers
 ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a85648a95a6651ff62f50b2361b07feba9a58b47
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 28dcc17c74a5b5ef3c9784fafe972beb6f170d90
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exposing-types-to-visual-designers"></a>Vystavení typy vizuální nástroje
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]aby bylo možné zobrazit vizuálního návrháře musí mít přístup k definice tříd a typů v době návrhu. Třídy jsou načteny z předdefinovanou sadu sestavení, které obsahují sadu dokončení závislostí v aktuálním projektu (odkazy a jejich závislosti). Může být také nutné pro vizuální nástroje přístup tříd a typů, které jsou definovány v soubory generované vlastních nástrojů.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] aby bylo možné zobrazit vizuálního návrháře musí mít přístup k definice tříd a typů v době návrhu. Třídy jsou načteny z předdefinovanou sadu sestavení, které obsahují sadu dokončení závislostí v aktuálním projektu (odkazy a jejich závislosti). Může být také nutné pro vizuální nástroje přístup tříd a typů, které jsou definovány v soubory generované vlastních nástrojů.  
   
  [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] a [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projektu systémy poskytují podporu pro přístup k generované třídy a typů prostřednictvím dočasné přenositelností spustitelné soubory (dočasný PEs). Všechny soubory generované vlastní nástroj mohou být zkompilovány do dočasné sestavení tak, aby typy může načíst z těchto sestavení a viditelné na Designer. Výstup každé vlastní nástroj je zkompilovat do samostatné dočasné PE a úspěch nebo neúspěch toto dočasný kompilace závisí pouze na tom, zda mohou být zkompilovány vygenerovaný soubor. I když na projekt nemusí pracovat jako celek, mohou jednotlivé dočasné PEs stále k dispozici pro Designer.  
   
@@ -35,7 +33,7 @@ ms.lasthandoff: 12/22/2017
   
  Vlastní nástroje, které využít dočasné podporu PE musí splňovat následující pravidla:  
   
--   `GeneratesDesignTimeSource`musí být nastavena na hodnotu 1 v registru.  
+-   `GeneratesDesignTimeSource` musí být nastavena na hodnotu 1 v registru.  
   
      Spustitelný soubor kompilace žádné program probíhá bez tohoto nastavení.  
   

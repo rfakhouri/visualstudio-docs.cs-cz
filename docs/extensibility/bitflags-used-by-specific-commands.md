@@ -1,27 +1,23 @@
 ---
-title: "Bitové příznaky používané určité příkazy | Microsoft Docs"
-ms.custom: 
+title: Bitové příznaky používané určité příkazy | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be102b5eaf39db2fc7495c62c456e35e54ffd0f3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3bc59c79e0f047cc7880332c4c23643ab2136c86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitové příznaky, které používá konkrétní příkazy
 Chování počet funkcí v rozhraní API ovládacího prvku Plug-in zdroje můžete upravit nastavení jeden nebo více bitů jedinou hodnotu. Tyto hodnoty jsou označovány jako bitové příznaky. Různé bitové příznaky používá rozhraní API ovládacího prvku Plug-in zdroje jsou podrobně popsané tady seskupených podle funkce, která je používá.  
@@ -40,7 +36,7 @@ Chování počet funkcí v rozhraní API ovládacího prvku Plug-in zdroje můž
 |----------|-----------|-----------------|  
 |`SCC_FILETYPE_AUTO`|0x00|Modul plug-in zdrojového kódu se očekává automaticky zjistí, zda je soubor textu nebo binárních.|  
 |`SCC_FILETYPE_TEXT`|0x01|Typ souboru je text.|  
-|`SCC_FILETYPE_BINARY`|0x04|Typ souboru není binární. **Poznámka:** `SCC_FILETYPE_TEXT` a `SCC_FILETYPE_BINARY` se vzájemně vylučují. Nastavte právě jeden nebo ani jeden z nich.|  
+|`SCC_FILETYPE_BINARY`|0x04|Typ souboru není binární. **Poznámka:** `SCC_FILETYPE_TEXT` a `SCC_FILETYPE_BINARY` se vzájemně vylučují.   Nastavte právě jeden nebo ani jeden z nich.|  
 |`SCC_ADD_STORELATEST`|0x02|Uložit pouze nejnovější verzi (žádné rozdíly).|  
   
 ## <a name="diff-flags"></a>Diff příznaky  

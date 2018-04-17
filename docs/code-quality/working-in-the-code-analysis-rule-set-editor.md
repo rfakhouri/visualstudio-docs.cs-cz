@@ -8,14 +8,14 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c861a6beda6b0196ec03987915b1503f4cc55a19
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: ab1a49cd8f0376a8a144f1a6f889bac0c5963b6e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Použití, které s editorem sad pravidel nástroje Analýza kódu
 
@@ -70,7 +70,7 @@ Následující tabulka popisuje pole sadu pravidel:
 |**ID**|Identifikátor pravidla.|
 |**Kategorie**|Kromě jejich členství v sadách pravidel jsou také pravidel analýzy kódu seskupené podle kategorie. Další informace najdete v tématu [upozornění analýzy kódu](../code-quality/code-analysis-for-managed-code-warnings.md).|
 |**Jméno**|Název pravidla.|
-|**Namespace**|Obor názvů pravidla.|
+|**obor názvů**|Obor názvů pravidla.|
 |**Cílový typ**|Určuje, zda pravidlo je pro nativní, spravovat nebo databáze kódu.|
 |**Akce**|Akce prováděné při porušení pravidlo analýzou kódu spustit. Můžete upravit **akce** pole.|
 |**Zdrojové sady pravidel**|Sada pravidel, který obsahuje pravidlo.|

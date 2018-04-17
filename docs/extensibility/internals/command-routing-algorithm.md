@@ -1,26 +1,24 @@
 ---
-title: "Příkaz směrování algoritmus | Microsoft Docs"
-ms.custom: 
+title: Příkaz směrování algoritmus | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, routing
 - command routing
 ms.assetid: 998b616b-bd08-45cb-845f-808efb8c33bc
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e1463fe22d4b08933112ca1ad0cf28f38a4e102c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: aba7ddcdda4dd4eabbb9266e0fa89c916bb028f6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-routing-algorithm"></a>Příkaz směrování algoritmus
 Příkazy v sadě Visual Studio jsou zpracovávány několik různých komponent. Příkazy jsou směrovány z nejvnitřnější kontextu, která je založena na aktuálním výběrem, kontext nejkrajnější (také označované jako globální). Další informace najdete v tématu [dostupnosti](../../extensibility/internals/command-availability.md).  

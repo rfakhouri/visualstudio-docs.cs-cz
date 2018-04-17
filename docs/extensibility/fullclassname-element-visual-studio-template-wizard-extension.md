@@ -1,29 +1,25 @@
 ---
-title: "Fullclassname – Element (rozšíření Průvodce pro šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Fullclassname – Element (rozšíření Průvodce pro šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
 helpviewer_keywords:
 - FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9df7004767641b9693745b2250eef4948d9e908d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: adc76c12570191e8b7b4635b8963f16aa4d21c13
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName – element (rozšíření průvodce pro šablony sady Visual Studio)
 Plně kvalifikovaný název třídy, která implementuje `IWizard` rozhraní.  
@@ -60,7 +56,7 @@ Plně kvalifikovaný název třídy, která implementuje `IWizard` rozhraní.
  Tento text určuje třídu, která implementuje `IWizard` rozhraní. Pro zadanou třídu, musí existovat v sestavení určeného [sestavení](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) elementu.  
   
 ## <a name="remarks"></a>Poznámky  
- `FullClassName`je požadovaný podřízený element `WizardExtension`.  
+ `FullClassName` je požadovaný podřízený element `WizardExtension`.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ilustruje metadata pro standardní projektu šablony pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikací systému Windows.  

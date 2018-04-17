@@ -1,13 +1,10 @@
 ---
-title: "Ladění ve smíšeném režimu aplikací | Microsoft Docs"
-ms.custom: 
+title: Ladění ve smíšeném režimu aplikací | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - debugging managed code, mixed code
 - mixed-mode debugging, call stack
 ms.assetid: 60e34477-ae4e-48c7-9093-3e37f72e1bc3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c67953db7daa9575fe30108f8772de550ed5b19d
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 8f79f288c04265a8fac722e9981a8798003ab4d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-mixed-mode-applications"></a>Ladění aplikací ve smíšeném režimu
 Aplikace pracující v kombinovaném režimu je libovolná aplikace, která kombinuje nativní kód (jazyk C++) se spravovaným kódem (například jazyk Visual Basic, Visual C# nebo C++, který běží na modulu CLR). Ladění aplikací ve smíšeném režimu je z velké části transparentní v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; není příliš odlišný od ladění aplikace výhradním režimu. Existuje však několik důležitých informací.  

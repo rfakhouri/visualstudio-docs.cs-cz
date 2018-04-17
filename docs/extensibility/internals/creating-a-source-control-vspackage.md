@@ -1,26 +1,24 @@
 ---
-title: "Vytvoření ovládacího prvku VSPackage zdroje | Microsoft Docs"
-ms.custom: 
+title: Vytvoření ovládacího prvku VSPackage zdroje | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], creating source control packages
 - source control packages
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c3fac86583126e94bcfaea65a82c7cf923275769
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8eb34efef22510d1d8f83590a6bdb7960d70ce49
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-source-control-vspackage"></a>Vytvoření ovládacího prvku VSPackage zdroje
 Tato dokumentace obsahuje odkazy na přehled architektury správy zdroje balíčku integrovat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], rozhraní API, která je definována rozhraní k implementaci a služby, který se má používat a vzorku, který znázorňuje jednoduché zdroj řízení implementace balíčku.  

@@ -1,31 +1,29 @@
 ---
-title: "Konfigurace projektu pro správu nasazení | Microsoft Docs"
-ms.custom: 
+title: Konfigurace projektu pro správu nasazení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, managing deployment
 - projects [Visual Studio SDK], configuration for managing deployment
 ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4859e47f8a7ade34a920e4d8e2fac3be58508de3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 723edd078636eb324fc2d5dfca2ae81ef3249a43
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Konfigurace projektu pro správu nasazení
 Nasazení je v rámci fyzickým přesunutím položky výstup z procesu sestavení do očekávaného umístění pro ladění a instalaci. Například webové aplikace může vytvořené v místním počítači a pak umístit na serveru.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]podporuje dva způsoby, jak projekty může být součástí nasazení:  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje dva způsoby, jak projekty může být součástí nasazení:  
   
 -   Jako předmět procesu nasazení.  
   

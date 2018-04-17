@@ -1,28 +1,25 @@
 ---
-title: "Databáze projekty – projekty serveru a DAC projekty v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Databáze projekty – projekty serveru a DAC projekty v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - managing change, databases
 - database features of Visual Studio, managing change
 - databases, managing change
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: baca17712d6cf39753dab51c60fee901c0ea08ca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>Databázové projekty a aplikace na datové vrstvě v sadě Visual Studio  
 Databázové projekty můžete použít k vytvoření nové databáze nové aplikace na datové vrstvě (DAC) a k aktualizaci existující databáze a aplikace na datové vrstvě. Databázové projekty i DAC projekty umožňují použít techniky verze řízení a projekt správy pro váš vývojový program databáze na mnohem stejným způsobem, že použijete tyto techniky spravovaným nebo nativním kódem. Vám může pomoci váš vývojový tým vytvoříte spravovat změny databáze a databázové servery *DAC projektu*, *projekt databáze*, nebo *serverový projekt* a umístit ho v části Správa verzí. Členy týmu prohlížet soubory a ujistěte se, vytvářet a testovat změny v *izolované vývojového prostředí*, nebo izolovaného prostoru, než je sdílet s týmem. K zajištění kvality kódu, můžete váš tým dokončit a otestovat všechny změny pro konkrétní verzi databáze v testovacím prostředí, před nasazením změny do produkčního prostředí.  

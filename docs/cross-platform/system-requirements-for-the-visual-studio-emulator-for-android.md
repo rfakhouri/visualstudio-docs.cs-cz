@@ -1,24 +1,20 @@
 ---
-title: "Systémové požadavky pro emulátor sady Visual Studio pro Android | Microsoft Docs"
-ms.custom: 
+title: Systémové požadavky pro emulátor sady Visual Studio pro Android | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: def17f215bd157da8d0e31f400e6b353a4d38f12
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: 42415e1a8814de8b7a9872bf619d0ae3a000fc69
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Systémové požadavky pro emulátor sady Visual Studio pro Android
 Visual Studio Emulator for Android běží jako virtuální počítač s technologií Hyper-V, technologie virtualizace pro Windows 8 a novější verze. Pokud chcete spustit v emulátoru, počítač musí splňovat požadavky na spuštění technologie Hyper-V, jak je popsáno v tomto tématu.  
@@ -88,7 +84,7 @@ Visual Studio Emulator for Android běží jako virtuální počítač s technol
   
  ![Ověřte požadavky na systém](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")  
   
-##  Požadavky sítě  
+##  <a name="Network"></a> Požadavky sítě  
  Musí vaše síť splňovat následující požadavky:  
   
 -   DHCP  
@@ -103,7 +99,7 @@ Visual Studio Emulator for Android běží jako virtuální počítač s technol
   
 -   [Poradce při potížích s emulátorem sady Visual Studio pro Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
-##  Požadavky technologie Hyper-V  
+##  <a name="HyperV"></a> Požadavky technologie Hyper-V  
  Požadavky technologie Hyper-V v systému BIOS  
   
  Systém BIOS počítače musí podporovat následující požadavky, a musí být povolena:  
@@ -132,7 +128,7 @@ Visual Studio Emulator for Android běží jako virtuální počítač s technol
 > [!IMPORTANT]
 >  Po připojení k skupině, odhlášení nebo počítač restartovat, aby se změna projeví.  
   
- ![Připojení technologie Hyper & č. 45; Skupiny zabezpečení Správci V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
+ ![Připojení Hyper&#45;skupiny zabezpečení Správci V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")  
   
  Chcete-li sami ručně přidat do skupiny, otevřete místní uživatelé a skupiny modulu snap-in. Další informace najdete v tématu [přidání uživatelského účtu do skupiny](http://windows.microsoft.com/en-us/windows/add-user-account-to-group#1TC=windows-7). (V tomto tématu Windows 7 platí i pro Windows 8.)  
   
@@ -146,9 +142,9 @@ Visual Studio Emulator for Android běží jako virtuální počítač s technol
   
 -   %localappdata%\Microsoft\XDE  
   
--   C:\Program Files (x86)\Microsoft Emulator Manager  
+-   Správce emulátorů \Microsoft soubory (x86) C:\Program  
   
--   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
+-   C:\Program soubory (x86) \Microsoft Visual Studio Emulator pro Android  
   
 -   %localappdata%\Microsoft\VisualStudioEmulator  
   

@@ -1,12 +1,10 @@
 ---
-title: "Přístup k místním i vzdáleným datům v aplikacích ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Přístup k místním i vzdáleným datům v aplikacích ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,24 +13,24 @@ helpviewer_keywords:
 - ClickOnce deployment, data
 - data access, ClickOnce applications
 ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
-caps.latest.revision: "21"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d22180b0e48a875eaef3ab9e3b8ceac35b1fa6ef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: ffa0ebae820e5f7c62dc60e3d9bde06b206ed29b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Přístup k lokálním a vzdáleným datům v aplikacích ClickOnce
-Většina aplikací spotřebovávají nebo tvoří data. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]poskytuje celou řadu možností pro čtení a zápis dat, místně i vzdáleně.  
+Většina aplikací spotřebovávají nebo tvoří data. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] poskytuje celou řadu možností pro čtení a zápis dat, místně i vzdáleně.  
   
 ## <a name="local-data"></a>Místní Data  
  S [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], můžete načíst a ukládat data místně pomocí jedné z následujících metod:  
   
--   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Datový adresář  
+-   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Datový adresář  
   
 -   Izolované úložiště  
   
@@ -67,9 +65,9 @@ Většina aplikací spotřebovávají nebo tvoří data. [!INCLUDE[ndptecclick](
  Manipulace s další typy souborů může vyžadovat další oprávnění. Například pokud chcete používat soubor Access databáze (.mdb), aplikace musí uplatnit úplný vztah důvěryhodnosti pro použití příslušných <xref:System.Data> třídy.  
   
 #### <a name="data-directory-and-application-versions"></a>Datový adresář a verze aplikace  
- Každá verze aplikace má vlastní datový adresář, který je izolován od ostatních verzí. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]vytvoří tento adresář bez ohledu na to, jestli jsou všechny datové soubory zahrnuté v nasazení tak, že aplikace má umístění pro vytvoření nové datové soubory v době běhu. Při instalaci nové verze aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zkopíruje všechny existující soubory data z předchozí verze datového adresáře do adresáře dat novou verzi – jestli byly zahrnuty do původního nasazení nebo vytvořený aplikace.  
+ Každá verze aplikace má vlastní datový adresář, který je izolován od ostatních verzí. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vytvoří tento adresář bez ohledu na to, jestli jsou všechny datové soubory zahrnuté v nasazení tak, že aplikace má umístění pro vytvoření nové datové soubory v době běhu. Při instalaci nové verze aplikace [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zkopíruje všechny existující soubory data z předchozí verze datového adresáře do adresáře dat novou verzi – jestli byly zahrnuty do původního nasazení nebo vytvořený aplikace.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]nahradí starší verzi souboru novější verzi serveru datový soubor má hodnotu hash různých v předchozí verzi aplikace jako novou verzi. Navíc pokud starší verzi aplikace vytvořila nový soubor, který má stejný název jako soubor součástí nasazení nové verze, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] přepíše soubor staré verze pomocí nového souboru. V obou případech staré soubory zahrnuty v podadresáři uvnitř do adresáře dat s názvem `.pre`, takže aplikace nepřijdou o přístup stará data pro účely migrace.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nahradí starší verzi souboru novější verzi serveru datový soubor má hodnotu hash různých v předchozí verzi aplikace jako novou verzi. Navíc pokud starší verzi aplikace vytvořila nový soubor, který má stejný název jako soubor součástí nasazení nové verze, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] přepíše soubor staré verze pomocí nového souboru. V obou případech staré soubory zahrnuty v podadresáři uvnitř do adresáře dat s názvem `.pre`, takže aplikace nepřijdou o přístup stará data pro účely migrace.  
   
  Pokud potřebujete citlivější přenesení dat, můžete použít [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] rozhraní API nasazení k provedení vlastní migrace z původního datového adresáře do nového adresáře Data. Budete muset otestovat dostupnost stažení pomocí <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A>, stáhnout aktualizace pomocí <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> nebo <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>, a provést vlastní migrace dat fungovat vlastní po aktualizaci po dokončení.  
   

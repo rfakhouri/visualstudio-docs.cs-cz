@@ -1,29 +1,25 @@
 ---
-title: "Skrytý Element (šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Skrytý Element (šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Hidden
 helpviewer_keywords:
 - Hidden element [Visual Studio project template]
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa824571b682d2c5654a4909becb0374bf987df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b41005dc789cf464973b225c76b2845db5565772
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Skrytý element (šablony sady Visual Studio)
 Určuje, zda se šablony zobrazí buď **nový projekt** nebo **přidat novou položku** dialogové okno.  
@@ -59,7 +55,7 @@ Určuje, zda se šablony zobrazí buď **nový projekt** nebo **přidat novou po
  Text musí být buď `true` nebo `false`, která udává, jestli se šablony zobrazí v **nový projekt** nebo **přidat novou položku** dialogová okna.  
   
 ## <a name="remarks"></a>Poznámky  
- `Hidden`je volitelný element.  
+ `Hidden` je volitelný element.  
   
  -Li zadána, bez jiných podřízených elementů `TemplateData` element jsou povinné.  
   

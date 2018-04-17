@@ -1,27 +1,23 @@
 ---
-title: "Postupy: odstraňování potíží se službami | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: odstraňování potíží se službami | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, troubleshooting
 ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71ac3cda8e3df935ab743fed7aa94a5152c152a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9efe3c1c7032f1db41272a03cf689e015a79522
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-troubleshoot-services"></a>Postupy: odstraňování potíží se službami
 Existuje několik běžné problémy, ke kterým dochází při pokusu získat službu:  
@@ -62,7 +58,7 @@ if (log == null) return;
   
     2.  Žádný identifikátor GUID je explicitně přiřazena rozhraní. Proto systém vytvoří výchozí identifikátor GUID pro objekt podle potřeby.  
   
-3.  Ujistěte se, že má byla umístěný VSPackage žádají o službu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]poté, co je vytvořen a před voláním lokality VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+3.  Ujistěte se, že má byla umístěný VSPackage žádají o službu. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poté, co je vytvořen a před voláním lokality VSPackage <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
      Pokud máte kód v VSPackage konstruktor, který vyžaduje službu, můžete ho přesunete do metoda Initialize.  
   

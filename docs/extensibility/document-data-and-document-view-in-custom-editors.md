@@ -1,27 +1,23 @@
 ---
-title: "Data dokumentu a dokument zobrazit vlastní editorů | Microsoft Docs"
-ms.custom: 
+title: Data dokumentu a dokument zobrazit vlastní editorů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c7e24ed2db4538ab0fd38dbb85930452611f0ee
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bb445ca70ac74cf2601e9f1035549bb686fca798
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Data dokumentu a zobrazení dokumentu vlastní editorů
 Vlastní editor se skládá ze dvou částí: objekt dat dokumentu a objekt zobrazení dokumentu. Jako názvy naznačují, dokumentu datový objekt představuje textových dat, který se má zobrazit, a objekt zobrazení dokumentu (nebo "Zobrazit") představuje jeden nebo více windows, ve kterém chcete zobrazit data objektu dokumentu.  
@@ -29,9 +25,9 @@ Vlastní editor se skládá ze dvou částí: objekt dat dokumentu a objekt zobr
 ## <a name="document-data-object"></a>Datový objekt dokumentu  
  Datový objekt dokumentu je znázornění dat textu v textová vyrovnávací paměť. Je objekt COM, který ukládá text dokumentu a další informace, zpracovává trvalost dokumentu a umožňuje více zobrazení jeho data. Další informace naleznete v tématu  
   
- <xref:EnvDTE80.Window2.DocumentData%2A>a [dokumentu Windows](../extensibility/internals/document-windows.md).  
+ <xref:EnvDTE80.Window2.DocumentData%2A> a [dokumentu Windows](../extensibility/internals/document-windows.md).  
   
- Vlastní editory a návrhářů, se můžete rozhodnout pro použití <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objekt nebo vlastní vlastní vyrovnávací paměti. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>Následuje zjednodušené vnoření modelu pro standardní editor, podporuje více zobrazení a poskytuje rozhraní událostí, které se používají ke správě více zobrazení.  
+ Vlastní editory a návrhářů, se můžete rozhodnout pro použití <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objekt nebo vlastní vlastní vyrovnávací paměti. <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> Následuje zjednodušené vnoření modelu pro standardní editor, podporuje více zobrazení a poskytuje rozhraní událostí, které se používají ke správě více zobrazení.  
   
 ## <a name="document-view-object"></a>Objekt zobrazení dokumentu  
  Okno, které zobrazí kódu a další text se označuje jako dokument zobrazení nebo zobrazení. Když vytvoříte editoru, můžete jednoho zobrazení, ve kterém text se zobrazuje v okně jednoho nebo více zobrazení, ve kterém se zobrazí text ve více než jeden interval. Výběr závisí na vaší aplikace. Například pokud potřebujete úpravy vedle sebe, vyberte více zobrazení. Každé zobrazení je přidružená položce v integrovaném vývojovém prostředí na (IDE) spuštěna dokumentu tabulky (r...). Zobrazení windows patří do projektu nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objektu.  
