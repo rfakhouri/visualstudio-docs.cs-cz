@@ -1,29 +1,25 @@
 ---
-title: "Přidání kódu do datových sad ve víceúrovňových aplikacích | Microsoft Docs"
-ms.custom: 
+title: Přidání kódu do datových sad ve víceúrovňových aplikacích | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
 - n-tier applications, extending datasets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 775c03583a2fac35f2b62525bf5a18a67f250cef
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fadbd8e8c95559e0e38fd507bad3fe9affba4217
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Přidání kódu do datových sad ve víceúrovňových aplikacích
 Vytvoření souboru třídu pro datovou sadu a přidání kódu k němu můžete rozšířit funkce datové sady (místo přidávání kódu do *DatasetName*. Soubor Dataset.Designer). Částečné třídy povolit kód pro určité třídy rozdělit mezi několik fyzických souborů. Další informace najdete v tématu [částečné](/dotnet/visual-basic/language-reference/modifiers/partial) nebo [částečné třídy a metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).  

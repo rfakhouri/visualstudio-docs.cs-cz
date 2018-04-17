@@ -1,28 +1,25 @@
 ---
-title: "Přizpůsobení, jak Visual Studio vytváří titulky pro ovládací prvky vázané na data | Microsoft Docs"
-ms.custom: 
+title: Přizpůsobení, jak Visual Studio vytváří titulky pro ovládací prvky vázané na data | Microsoft Docs
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 031301edc2fbf0c9acc08f92d3324160dd5383cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Přizpůsobení, jak Visual Studio vytváří titulky pro ovládací prvky vázané na data
 Když přetáhnete položky z [okno zdroje dat](add-new-data-sources.md) do návrháře, obzvláštní pozornost stává play: názvy sloupců v záhlaví popisky jsou naformátována do více čitelných řetězců, pokud dvě nebo více slova se zjistí zřetězen dohromady. Můžete upravit způsob, ve kterém jsou tyto popisky vytvořili, a nastavení **SmartCaptionExpression**, **SmartCaptionReplacement**, a **SmartCaptionSuffix** hodnoty v **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designer** klíč registru.  
@@ -44,14 +41,14 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
   
 |Položky registru|Výchozí hodnota|Vysvětlení|  
 |-------------------|-------------------|-----------------|  
-|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124; _ +|Odpovídá malé písmeno a velké písmeno nebo podtržítko.|  
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu})&#124;_ +|Odpovídá malé písmeno a velké písmeno nebo podtržítko.|  
 |**SmartCaptionReplacement**|$1 $2|$1 představuje znaky shodná v závorkách první výraz a $2 představuje znaky shodná v druhé závorkách. Pokud chcete nahrazení je na první shodu, mezeru a druhý shody.|  
-|**SmartCaptionSuffix**|:|Představuje znak připojenou k vrácený řetězec. Například, pokud je titulek `Company Name`, přípona umožňuje`Company Name:`|  
+|**SmartCaptionSuffix**|:|Představuje znak připojenou k vrácený řetězec. Například, pokud je titulek `Company Name`, přípona umožňuje `Company Name:`|  
   
 > [!CAUTION]
 > Měli byste být velmi opatrní při provádění nic v editoru registru. Před úpravou ji zálohujte registru. Pokud Editor registru používán správně, můžete způsobit vážné problémy, které mohou vyžadovat přeinstalaci operačního systému. Microsoft nezaručuje, že lze vyřešit problémy, které způsobí nesprávně pomocí Editoru registru. Editor registru používáte na vlastní nebezpečí.  
 >   
->  Obsahuje pokyny pro zálohování, úpravy a obnovení registru v následujícím článku Knowledge Base: [Popis registru systému Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb;en-us; 256986)  
+>  Obsahuje pokyny pro zálohování, úpravy a obnovení registru v následujícím článku Knowledge Base: [Popis registru systému Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)  
   
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Chcete-li upravit inteligentní titulků chování okna zdroje dat  
   

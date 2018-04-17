@@ -1,13 +1,10 @@
 ---
-title: "Ladění balíček nainstalovanou aplikaci (UWP) | Microsoft Docs"
+title: Ladění balíček nainstalovanou aplikaci (UWP) | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.installedapppackagelauncher
 - vs.debug.remote.connection
@@ -20,17 +17,16 @@ dev_langs:
 helpviewer_keywords:
 - app package, debug
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 16f4b69fa25861d893471a161fdb7c1a6bba34e5
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 9c1406637b6d1dce312b0574cfba3c9a4f7356e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>Ladění balíček nainstalovanou aplikaci v aplikaci Visual Studio (UWP)
 
@@ -62,7 +58,7 @@ Další informace o těchto funkcích najdete v příspěvku blogu na aktualizac
 > [!NOTE]
 > Visual Studio můžete taky přiložit všech spuštěných procesů aplikace UWP výběrem **ladění**a potom **připojit k procesu**. Připojení k spuštěných procesů nevyžaduje původní projekt Visual Studio, ale načítání procesu symboly pomůže výrazně při procesu, který nemáte původní kód pro ladění.
   
-## <a name="remote"></a>Ladění aplikace nainstalován nebo není spuštěn ve vzdáleném počítači 
+## <a name="remote"></a> Ladění aplikace nainstalován nebo není spuštěn ve vzdáleném počítači 
 
 Když ladíte balíčku aplikace nainstalované ve vzdáleném počítači poprvé, Visual Studio nainstaluje správnou verzi nástrojů pro vzdálenou pro cílové zařízení. Cílové zařízení musí být v počítači Windows 10, XBox, HoloLens a IoT zařízení.
 

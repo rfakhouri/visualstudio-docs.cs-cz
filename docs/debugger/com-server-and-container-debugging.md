@@ -1,13 +1,10 @@
 ---
-title: "COM Server a ladění kontejneru | Microsoft Docs"
-ms.custom: 
+title: COM Server a ladění kontejneru | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -22,29 +19,28 @@ helpviewer_keywords:
 - ActiveX controls, debugging
 - COM [Visual Studio], debugging
 ms.assetid: b7ce8696-ebb8-4354-a767-f76b8ada4ac1
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1e4ec34b55e9e24c33157446cd74262a640d4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aa27c3d63a21bf3a1cad31bb705df6532eed873c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="com-server-and-container-debugging"></a>Ladění serveru a kontejneru modelu COM
 Aplikace modelu COM provést určité úlohy mimo pro programátory přímou kontrolu. Komunikace mezi knihovny DLL, využití počítá na objekty a operace se schránkou je uvedeno několik z oblastí, kde může dojít k neočekávanému chování. Pokud k tomu dojde, je prvním krokem sledovat zdroj problému.  
   
  Ladicí program Visual Studio podporuje krokování s napříč a do kontejnery a servery. To zahrnuje možnost krok napříč vzdálených volání procedur (RPC).  
   
-##  <a name="BKMK_COMServerandContainerintheSameSolution"></a>Ladění kontejneru ve stejném řešení a COM Server  
+##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> Ladění kontejneru ve stejném řešení a COM Server  
  Můžete ladit COM server a kontejneru pomocí dva projekty v řešení bude stejné. Nastavte zarážky příslušné v každém projektu a ladění. Když kontejneru provede volání do serveru, který dotkne zarážku, kontejner bude čekat, dokud serverový kód vrátí (to znamená, dokud nedokončíte, ladění).  
   
  Ladění kontejnerů COM je podobná ladění standardní program. Jeden rozdíl je při ladění událost, která generuje zpětné volání (například přetahování dat prostřednictvím aplikací kontejneru). V takovém případě musíte nastavit zarážky ve funkci zpětného volání.  
   
-##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a>Ladění aplikace serveru bez informace o kontejneru  
+##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Ladění aplikace serveru bez informace o kontejneru  
  Pokud nemají nebo nechcete použít informace o ladění pro aplikace kontejneru, spouštění k ladění aplikací serveru je proces třech krocích:  
   
 1.  Spusťte ladění serveru jako normální aplikace.  
@@ -53,7 +49,7 @@ Aplikace modelu COM provést určité úlohy mimo pro programátory přímou kon
   
 3.  Spusťte aplikaci kontejneru.  
   
-##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a>Ladění serveru a aplikace (SDI) izolace domény  
+##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Ladění serveru a aplikace (SDI) izolace domény  
  Pokud ladíte aplikace serveru SDI, je nutné zadat `/Embedding` nebo `/Automation` v **argumenty příkazového řádku** vlastnost *projektu* dialogové okno stránky vlastností pro C/C++, C#, nebo Projekty Visual Basic.  
   
  S těmito argumenty příkazového řádku můžete ladicí program spustit serverové aplikace, jako by se měla spustit z kontejneru. Kontejner od programu Správce nebo správce souborového způsobí kontejneru pro použití instance serveru spuštěna v ladicím programu.  

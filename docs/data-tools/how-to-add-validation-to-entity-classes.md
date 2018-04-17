@@ -1,26 +1,23 @@
 ---
-title: "Postupy: přidávání ověření do tříd entit | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: přidávání ověření do tříd entit | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 1ff8eb04ae9b5009aff13dc8588633b34d4d72dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: df0f97994fd5144f9fff7cf9a5ce90fc43249476
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Postupy: přidávání ověření do tříd entit
 *Ověřování* tříd entit je proces ověření, že hodnot zadaných do datových objektů v souladu s omezeními ve schématu objektu a také pravidel stanovených pro aplikaci. Ověřování dat, ještě před odesláním aktualizací do základní databáze je dobrým zvykem, která snižuje chyby. Také snižuje potenciální počet odezev mezi aplikace a databáze.  

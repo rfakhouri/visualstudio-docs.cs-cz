@@ -1,23 +1,21 @@
 ---
-title: "Nastavení pravidel základní pravidla správnosti pro spravovaný kód | Microsoft Docs"
-ms.custom: 
+title: Nastavení pravidel základní pravidla správnosti pro spravovaný kód | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 011773ab8a1f4436313b318a13bde637c91b055a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 3b40f8844b76f7c5fafcadff6c3c20ac9b607dd0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Sada pravidel Základní pravidla správnosti pro spravovaný kód
 Sada pravidel základní pravidla správnosti se zaměřuje na logických a běžných chyb využití Framework rozhraní API. Základní pravidla správnosti zahrnují pravidla v sadě pravidel minimální doporučená pravidla. Další informace najdete v tématu [sada pravidel spravovaná doporučená pravidla pro spravovaný kód](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) by měla obsahovat toto pravidlo nastavit rozšíření seznam upozornění, že minimální doporučená pravidla sestavy.  

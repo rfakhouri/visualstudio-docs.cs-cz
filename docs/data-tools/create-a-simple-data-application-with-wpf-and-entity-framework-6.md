@@ -2,23 +2,20 @@
 title: Vytvoření jednoduché datové aplikace pomocí grafického subsystému WPF a Entity Framework 6 | Microsoft Docs
 ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 394dbf9aba422f8fbf16857d6980a53b353e931a
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 420b0999709f7e419c6c05df18bd03d7a1475b57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Vytvoření jednoduché datové aplikace pomocí grafického subsystému WPF a Entity Framework 6
 
@@ -52,7 +49,7 @@ Tento příklad používá SQL Server Express LocalDB a ukázková databáze Nor
   
 2.  Další přidáme balíček NuGet pro Entity Framework 6. V Průzkumníku řešení vyberte uzel projektu. V hlavní nabídce zvolte **projektu**, **spravovat balíčky NuGet...**  
   
-     ![Manage NuGet Packages menu item](../data-tools/media/raddata_vs2015_manage_nuget_packages.png "raddata_vs2015_manage_nuget_packages")  
+     ![Spravovat balíčky NuGet položky nabídky](../data-tools/media/raddata_vs2015_manage_nuget_packages.png "raddata_vs2015_manage_nuget_packages")  
   
 3.  V Správce balíčků NuGet, klikněte na **Procházet** odkaz. Horní balíčku v seznamu je pravděpodobně rozhraní Entity Framework. Klikněte na tlačítko **nainstalovat** v pravém podokně a postupujte podle pokynů. Ve výstupním okně zjistíte po dokončení instalace.  
   

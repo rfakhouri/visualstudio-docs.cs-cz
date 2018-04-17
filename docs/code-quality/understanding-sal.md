@@ -1,23 +1,21 @@
 ---
-title: "Porozumění SAL | Microsoft Docs"
-ms.custom: 
+title: Porozumění SAL | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: deb1825bb514afec4db3bf705ac787aadb88cc11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understanding-sal"></a>Porozumění SAL
 Poznámky jazyk zdrojového kódu Microsoft (SAL) poskytuje sadu poznámky, které lze použít k popisu, jak funkce používá jeho parametrů, předpokladů, které umožňuje o nich a záruky, které umožňuje po dokončení. Poznámky jsou definovány v záhlaví souboru `<sal.h>`. Visual Studio analýzy kódu pro jazyk C++ používá poznámek SAL k úpravě jeho analýzu funkce. Další informace o SAL 2.0 ovladače pro vývoj pro Windows najdete v tématu [poznámky SAL 2.0 pro Windows ovladače](http://go.microsoft.com/fwlink/?LinkId=250979).  
@@ -47,7 +45,7 @@ void * memcpy(
   
  Dokumentace obsahuje několik bits informace, které naznačují, že má váš kód k udržování určité vlastnosti zajistit správnost program:  
   
--   `memcpy`kopie `count` bajty z vyrovnávací paměti zdrojové a cílové vyrovnávací paměti.  
+-   `memcpy` kopie `count` bajty z vyrovnávací paměti zdrojové a cílové vyrovnávací paměti.  
   
 -   Cílová vyrovnávací paměť musí být alespoň tak velké, jaká zdrojová vyrovnávací paměť.  
   
@@ -131,9 +129,9 @@ wchar_t * wmemcpy(
   
 -   Volající musí poskytnout vyrovnávací paměti a provést jeho inicializaci.  
   
--   `_In_`Určuje "jen pro čtení". Obvyklou chybou, je použít `_In_` parametr, který by měl být `_Inout_` poznámky místo.  
+-   `_In_` Určuje "jen pro čtení". Obvyklou chybou, je použít `_In_` parametr, který by měl být `_Inout_` poznámky místo.  
   
--   `_In_`je povolen, ale ignorovat analyzátor na jiný ukazatel skalárních hodnot.  
+-   `_In_` je povolen, ale ignorovat analyzátor na jiný ukazatel skalárních hodnot.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  
@@ -161,7 +159,7 @@ void BadInCaller()
  Pokud používáte Visual Studio analýza kódu v tomto příkladu, ověřuje, že volající předat inicializovaného velikost vyrovnávací paměti pro ukazatel nesmí být nulová `pInt`. V takovém případě `pInt` ukazatel nemůže mít hodnotu NULL.  
   
 ### <a name="example-the-inopt-annotation"></a>Příklad: _In_opt\_ – Poznámka  
- `_In_opt_`je stejný jako `_In_`kromě toho, že vstupní parametr může mít hodnotu NULL, a proto měli zkontrolovat funkce pro tento.  
+ `_In_opt_` je stejný jako `_In_`kromě toho, že vstupní parametr může mít hodnotu NULL, a proto měli zkontrolovat funkce pro tento.  
   
 ```cpp  
   
@@ -189,7 +187,7 @@ void InOptCaller()
  Analýza kódu Visual Studio ověří, že funkce vyhledává NULL před přistupuje k vyrovnávací paměti.  
   
 ### <a name="example-the-out-annotation"></a>Příklad: _Out\_ – Poznámka  
- `_Out_`podporuje běžný scénář, ve kterém je ukazatel jinou hodnotu než NULL, který odkazuje na element vyrovnávací paměť předaná a funkce inicializuje elementu. Volající nemá k chybě při inicializaci vyrovnávací paměti před voláním; Umožňuje provést jeho inicializaci předtím, než se vrátí, nabízí volaná funkce.  
+ `_Out_` podporuje běžný scénář, ve kterém je ukazatel jinou hodnotu než NULL, který odkazuje na element vyrovnávací paměť předaná a funkce inicializuje elementu. Volající nemá k chybě při inicializaci vyrovnávací paměti před voláním; Umožňuje provést jeho inicializaci předtím, než se vrátí, nabízí volaná funkce.  
   
 ```cpp  
   
@@ -216,7 +214,7 @@ void OutCaller()
  Visual Studio nástroj pro analýzu kódu ověří, že volající předá do vyrovnávací paměti pro jinou hodnotu než NULL ukazatel `pInt` a že vyrovnávací paměť se inicializuje pomocí funkce před vrátí.  
   
 ### <a name="example-the-outopt-annotation"></a>Příklad: _Out_opt\_ – Poznámka  
- `_Out_opt_`je stejný jako `_Out_`kromě toho, že je parametr povoleno na hodnotu NULL, a proto by zkontrolujte funkce, pro tento.  
+ `_Out_opt_` je stejný jako `_Out_`kromě toho, že je parametr povoleno na hodnotu NULL, a proto by zkontrolujte funkce, pro tento.  
   
 ```cpp  
   
@@ -244,7 +242,7 @@ void OutOptCaller()
  Analýza kódu Visual Studio ověří, že tato funkce zkontroluje NULL před `pInt` je přímo odkázat a pokud `pInt` nemá hodnotu NULL, že vyrovnávací paměť se inicializuje pomocí funkce před vrátí.  
   
 ### <a name="example-the-inout-annotation"></a>Příklad: _inout –\_ – Poznámka  
- `_Inout_`slouží k přidání poznámek ke ukazatel parametr, který může být změněna funkce. Ukazatele musí odkazovat na platný inicializovaného data před voláním a i když se změní, musí mít platnou hodnotu stále na vrátit. Poznámka Určuje, že funkce může volně číst z a zapsat do vyrovnávací paměti jeden element. Volající musí poskytnout vyrovnávací paměti a provést jeho inicializaci.  
+ `_Inout_` slouží k přidání poznámek ke ukazatel parametr, který může být změněna funkce. Ukazatele musí odkazovat na platný inicializovaného data před voláním a i když se změní, musí mít platnou hodnotu stále na vrátit. Poznámka Určuje, že funkce může volně číst z a zapsat do vyrovnávací paměti jeden element. Volající musí poskytnout vyrovnávací paměti a provést jeho inicializaci.  
   
 > [!NOTE]
 >  Jako `_Out_`, `_Inout_` se musí vztahovat na upravitelnými hodnotu.  
@@ -276,7 +274,7 @@ void BadInOutCaller()
  Visual Studio Code Analysis ověří, že volající předat inicializovaného velikost vyrovnávací paměti pro jinou hodnotu než NULL ukazatel `pInt`a že před return `pInt` stále není prázdné a vyrovnávací paměť je inicializován.  
   
 ### <a name="example-the-inoutopt-annotation"></a>Příklad: _Inout_opt\_ – Poznámka  
- `_Inout_opt_`je stejný jako `_Inout_`kromě toho, že vstupní parametr může mít hodnotu NULL, a proto měli zkontrolovat funkce pro tento.  
+ `_Inout_opt_` je stejný jako `_Inout_`kromě toho, že vstupní parametr může mít hodnotu NULL, a proto měli zkontrolovat funkce pro tento.  
   
 ```cpp  
   
@@ -306,7 +304,7 @@ void InOutOptCaller()
  Analýza kódu Visual Studio ověří, že tato funkce zkontroluje NULL před přistupuje k vyrovnávací paměť a pokud `pInt` nemá hodnotu NULL, že vyrovnávací paměť se inicializuje pomocí funkce před vrátí.  
   
 ### <a name="example-the-outptr-annotation"></a>Příklad: _Outptr\_ – Poznámka  
- `_Outptr_`slouží k přidání poznámek ke parametr, který se má vrátit ukazatel.  Parametr samotné nesmí mít hodnotu NULL a volaná funkce vrátí ukazatel jinou hodnotu než NULL a tento ukazatel odkazuje na inicializovaného data.  
+ `_Outptr_` slouží k přidání poznámek ke parametr, který se má vrátit ukazatel.  Parametr samotné nesmí mít hodnotu NULL a volaná funkce vrátí ukazatel jinou hodnotu než NULL a tento ukazatel odkazuje na inicializovaného data.  
   
 ```cpp  
   
@@ -337,7 +335,7 @@ void OutPtrCaller()
  Analýza kódu Visual Studio ověří, že volající předá ukazatel jinou hodnotu než NULL `*pInt`, a že vyrovnávací paměť se inicializuje pomocí funkce před vrátí.  
   
 ### <a name="example-the-outptropt-annotation"></a>Příklad: _Outptr_opt\_ – Poznámka  
- `_Outptr_opt_`je stejný jako `_Outptr_`kromě toho, že se jedná o volitelný parametr – volající můžete předat ukazatele s hodnotou NULL pro parametr.  
+ `_Outptr_opt_` je stejný jako `_Outptr_`kromě toho, že se jedná o volitelný parametr – volající můžete předat ukazatele s hodnotou NULL pro parametr.  
   
 ```cpp  
   

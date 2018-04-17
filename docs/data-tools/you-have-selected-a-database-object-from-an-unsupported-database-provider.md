@@ -1,23 +1,20 @@
 ---
-title: "Výběru objektu databáze od poskytovatele Nepodporovaná databáze | Microsoft Docs"
-ms.custom: 
+title: Výběru objektu databáze od poskytovatele Nepodporovaná databáze | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 85a8e5883a8d78297336016ac295f9b5d76ce337
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 5dfb475cdb1b63e4dfcaaebcda4b5d2dc3a7f070
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Od poskytovatele Nepodporovaná databáze výběru objektu databáze
 Návrhář relací objektů podporuje pouze zprostředkovatele dat .NET Framework pro SQL Server (<xref:System.Data.SqlClient>). I když můžete kliknout na **OK** a pokračovat v práci s objekty od poskytovatelů Nepodporovaná databáze, může dojít k neočekávanému chování za běhu.  

@@ -1,12 +1,10 @@
 ---
-title: "CA1018: Označte atributy pomocí AttributeUsageAttribute | Microsoft Docs"
-ms.custom: 
+title: 'CA1018: Označte atributy pomocí AttributeUsageAttribute | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2b94cb7c11c803e713609036db12c47e2027cb61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3d40b97ee7637b5f742caee71b23cd9d384a1ecc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Označte atributy pomocí AttributeUsageAttribute
 |||  
@@ -48,7 +46,7 @@ ms.lasthandoff: 12/22/2017
  Problém byste měli odstranit narušení místo zprávu s výjimkou tohoto pravidla. I v případě, že atribut dědí <xref:System.AttributeUsageAttribute>, atribut by měl být k dispozici pro zjednodušení kód údržby.  
   
 ## <a name="example"></a>Příklad  
- V následujícím příkladu definuje dva atributy. `BadCodeMaintainerAttribute`nesprávně vynechá <xref:System.AttributeUsageAttribute> příkaz, a `GoodCodeMaintainerAttribute` správně implementuje atribut, který je popsán výše v této části. Všimněte si, že vlastnost `DeveloperName` je požadované pro pravidlo návrhu [CA1019: Definujte přístupové objekty pro argumenty atributu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) a je zahrnuté pro úplnost.  
+ V následujícím příkladu definuje dva atributy. `BadCodeMaintainerAttribute` nesprávně vynechá <xref:System.AttributeUsageAttribute> příkaz, a `GoodCodeMaintainerAttribute` správně implementuje atribut, který je popsán výše v této části. Všimněte si, že vlastnost `DeveloperName` je požadované pro pravidlo návrhu [CA1019: Definujte přístupové objekty pro argumenty atributu](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) a je zahrnuté pro úplnost.  
   
  [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
  [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]  

@@ -1,27 +1,23 @@
 ---
-title: "Řešení potíží s nástroji kvality | Microsoft Docs"
-ms.custom: 
+title: Řešení potíží s nástroji kvality | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM, developing the application
 ms.assetid: 535b9e67-ce9e-4a3e-8d28-9365f257036e
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 683e5588a9d0d7355af4efd531e6e3889f943c03
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d361de253d264ef2016d99c39e3439877a10bab9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-quality-tools"></a>Řešení potíží s nástroji kvality
 Pokud máte problémy při spuštění nástrojů sady Visual Studio kvality, témata v této části vám může pomoct diagnostikovat a opravit potíže.  

@@ -1,23 +1,20 @@
 ---
-title: "Postupy: vypnutí pluralizační a zapnutí (Návrhář O-R) | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vypnutí pluralizační a zapnutí (Návrhář O-R) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9b693bc3-303a-40a9-97ee-9cef5ca3ae81
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: a78f38d4b02311a164e0858744b70fbc5fb0ddaa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 6340946491ebaa8fa6bec395632e7d7943b4935e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Postupy: vypnutí pluralizační a zapnutí (Návrhář relací objektů)
 Ve výchozím nastavení při přetažení databázové objekty, které mají názvy končící na s nebo ho bloku z **Průzkumníka serveru**/**Průzkumník databáze** na [technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), jsou názvy tříd generovaného entit změněn z množném čísle na jednotném čísle. Důvodem je skutečnost, že třída vytvořenou instanci entity se mapuje na jeden záznam dat přesněji představují. Například přidání zákazníkům tabulka, která se [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] má za následek třídu entity s názvem zákazníka, protože třída budou uložena data pro jednoho zákazníka.  
