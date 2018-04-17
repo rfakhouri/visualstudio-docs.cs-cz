@@ -1,10 +1,7 @@
 ---
-title: "Optimalizace výkonu v sadě Visual Studio | Microsoft Docs"
+title: Zlepšení doba spuštění sady Visual Studio | Microsoft Docs
 ms.date: 11/15/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup time [Visual Studio]
 - optimizing performance [Visual Studio]
@@ -12,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - vs.performancecenter
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 403bbfff74cfe969a26e12aeb1f4b54ef0473195
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: ab8098e52f0045c913495dce81d5005772eac836
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="optimize-visual-studio-performance"></a>Optimalizace výkonu v sadě Visual Studio
+# <a name="optimize-visual-studio-startup-time"></a>Optimalizace času spuštění sady Visual Studio
 
 Visual Studio slouží ke spuštění jako rychle a efektivně míře. Však určitá rozšíření Visual Studia a nástroje systému windows může nepříznivě ovlivnit čas spuštění, když jsou načteny. Můžete řídit chování pomalé rozšíření a nástroje systému windows v **Správa výkonu Visual Studio** dialogové okno. Další Obecné tipy pro zlepšení výkonu, najdete v části [Rady a tipy pro zvýšení výkonu sady Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md).
 
@@ -32,17 +29,17 @@ Visual Studio slouží ke spuštění jako rychle a efektivně míře. Však ur�
 
 Abyste se vyhnuli rozšíření čas spuštění, načte Visual Studio 2017 rozšířením s využitím _na vyžádání_ přístup. Toto chování znamená, že rozšíření neotevřou okamžitě po spuštění sady Visual Studio, ale na podle potřeby. Protože nástroj windows ponechány otevřené v předchozí relaci sady Visual Studio může zpomalit spuštění, Visual Studio otevře nástroj windows inteligentnější způsobem, aby se zabránilo čas spuštění, které mají vliv.
 
-Pokud Visual Studio zjistí pomalé spuštění, zobrazí se místní zpráva výstrahy upozorňující na okno rozšíření nebo nástroj, který je příčinou zpomalení. Zpráva obsahuje odkaz **Správa výkonu Visual Studio** dialogové okno. Tohoto dialogového okna můžete také přejít pomocí výběr **pomoci**, **Správa výkonu Visual Studio** z řádku nabídek.
+Pokud Visual Studio zjistí pomalé spuštění, zobrazí se místní zpráva výstrahy upozorňující na okno rozšíření nebo nástroj, který je příčinou zpomalení. Zpráva obsahuje odkaz **Správa výkonu Visual Studio** dialogové okno. Tohoto dialogového okna můžete také přejít pomocí výběr **pomoci** > **Správa výkonu Visual Studio** z řádku nabídek.
 
 ![Správa výkonu Visual Studio – místní čtení ' zaznamenali jsme rozšíření... je zpomalení Visual Studio.](../ide/media/vside_perfdialog_popup.png)
 
 Dialogové okno obsahuje seznam rozšíření a nástroje systému windows, které mají vliv na výkon při spouštění. Můžete změnit nastavení okno rozšíření a nástroj pro zlepšení výkonu při spuštění.
 
-## <a name="to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a>Chcete-li změnit nastavení rozšíření ke zlepšení spuštění, řešení zatížení a zadáním výkonu
+## <a name="a-nameextensions-to-change-extension-settings-to-improve-startup-solution-load-and-typing-performance"></a><a name="extensions" />Chcete-li změnit nastavení rozšíření ke zlepšení spuštění, řešení zatížení a zadáním výkonu
 
-1. Otevřete **Správa výkonu Visual Studio** dialogové okno a vybrat **pomoci**, **Správa výkonu Visual Studio** z řádku nabídek.
+1. Otevřete **Správa výkonu Visual Studio** dialogové okno a vybrat **pomoci** > **Správa výkonu Visual Studio** z řádku nabídek.
 
-    Pokud je rozšíření zpomalení spuštění sady Visual Studio, řešení načítání, nebo zadáním, rozšíření se zobrazí v **Správa výkonu Visual Studio** dialogové okno pod **rozšíření**,  **Spuštění** (nebo **řešení zatížení** nebo **zadáním**).
+    Pokud je rozšíření zpomalení spuštění sady Visual Studio, řešení načítání, nebo zadáním, rozšíření se zobrazí v **Správa výkonu Visual Studio** dialogové okno pod **rozšíření**  >   **Spuštění** (nebo **řešení zatížení** nebo **zadáním**).
 
     ![Správa výkonu sady Visual Studio – rozšíření zobrazení](../ide/media/vside_perfdialog_extensions.png)
 
@@ -50,11 +47,11 @@ Dialogové okno obsahuje seznam rozšíření a nástroje systému windows, kter
 
 Můžete vždy znovu povolit rozšíření pro budoucí relace pomocí Správce rozšíření nebo dialogové okno Správa výkonu Visual Studio.
 
-## <a name="to-change-tool-window-settings-to-improve-startup-time"></a>Chcete-li změnit nastavení okna nástroj ke zlepšení spuštění
+## <a name="a-nametool-windows-to-change-tool-window-settings-to-improve-startup-time"></a><a name="tool-windows" />Chcete-li změnit nastavení okna nástroj ke zlepšení spuštění
 
-1. Otevřete **Správa výkonu Visual Studio** dialogové okno a vybrat **pomoci**, **Správa výkonu Visual Studio** z řádku nabídek.
+1. Otevřete **Správa výkonu Visual Studio** dialogové okno a vybrat **pomoci** > **Správa výkonu Visual Studio** z řádku nabídek.
 
-    Pokud okno nástroje je zpomalení spuštění sady Visual Studio, zobrazí se okno nástroje v **Správa výkonu Visual Studio** dialogové okno pod **nástroj Windows**, **spuštění**.
+    Pokud okno nástroje je zpomalení spuštění sady Visual Studio, zobrazí se okno nástroje v **Správa výkonu Visual Studio** dialogové okno pod **nástroj Windows** > **spuštění**.
 
 2. Zvolte panel nástrojů, kterou chcete změnit chování.
 
@@ -73,4 +70,6 @@ Můžete vždy znovu povolit rozšíření pro budoucí relace pomocí Správce 
 
 ## <a name="see-also"></a>Viz také
 
+- [Optimalizace výkonu v sadě Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Rady a tipy pro zvýšení výkonu Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
+- [Visual Studio blog - zatížení řešení rychlejší s Visual Studio 2017 verze 15,6 operací](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

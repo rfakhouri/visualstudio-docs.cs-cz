@@ -1,27 +1,25 @@
 ---
-title: "Přidání naposledy použité seznamu podnabídky | Microsoft Docs"
-ms.custom: 
+title: Přidání naposledy použité seznamu podnabídky | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - MRU lists
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-caps.latest.revision: "46"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 087faaae07c4c240b53830ee238cee4f9065d21f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 67eb08feff5d8edd1251c8fcff09d8f148b51b96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Přidání většina nedávno používá seznamu podnabídky
 Tento názorný postup je založený na ukázky v [přidání podnabídky do nabídky](../extensibility/adding-a-submenu-to-a-menu.md)a ukazuje, jak přidat do podnabídky dynamického seznamu. Dynamické seznamu je základem pro vytvoření seznamu naposledy (použitých).  
@@ -45,7 +43,7 @@ Tento názorný postup je založený na ukázky v [přidání podnabídky do nab
   
 ## <a name="creating-a-dynamic-item-list-command"></a>Vytváření příkazu pro dynamické položky seznamu  
   
-1.  Otevřete TestCommandPackage.vsct.  
+1.  Open TestCommandPackage.vsct.  
   
 2.  V `Symbols` v části `GuidSymbol` uzel s názvem guidTestCommandPackageCmdSet, přidejte symbol pro `MRUListGroup` skupiny a `cmdidMRUList` příkaz následujícím způsobem.  
   

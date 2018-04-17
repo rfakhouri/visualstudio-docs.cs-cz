@@ -2,11 +2,8 @@
 title: Propojení úkolů | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
 - VC.Project.VCLinkerTool.LinkStatus
@@ -30,17 +27,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), Link task
 - Link task (MSBuild (Visual C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-caps.latest.revision: 12
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c92a6faa558445bf85637f2e51ab7fb0e7a856
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
-ms.translationtype: HT
+ms.openlocfilehash: f8fb520b1582c14c629c28cb0822cc825f303c49
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="link-task"></a>Úloha odkazu
 Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí běžné objekt souboru formátu (COFF) objekt souborů a knihoven vytvořit soubor spustitelný soubor (.exe) nebo dynamická knihovna (DLL). Další informace najdete v tématu [možnosti Linkeru](/cpp/build/reference/linker-options).  
@@ -146,7 +142,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
   
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
+    -   **ForcePureILImage** - **/CLRIMAGETYPE: PURE**  
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
@@ -162,7 +158,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **Povolit** - **/CLRSupportLastError**  
   
-    -   **Disabled** - **/CLRSupportLastError:NO**  
+    -   **Zakázané** - **/CLRSupportLastError:NO**  
   
     -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
   
@@ -176,7 +172,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídající možnosti linkeru.  
   
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
+    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE: žádné**  
   
     -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
   
@@ -418,7 +414,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Další informace najdete v tématu [/keycontainer (zadat kontejner klíče pro podepsání sestavení)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Další informace naleznete **KeyFile** parametr v této tabulce.  
   
--   **KeyFile**  
+-   **keyFile**  
   
      Volitelné **řetězec** parametr.  
   
@@ -450,7 +446,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Zadejte jednu z následujících hodnot, z nichž každý odpovídá možnosti příkazového řádku.  
   
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**  
+    -   **NoErrorReport** -   **/errorreport: žádné**  
   
     -   **PromptImmediately** - **/ERRORREPORT:PROMPT**  
   
@@ -596,7 +592,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Další informace najdete v tématu `REF` argument [/OPT (optimalizace)](/cpp/build/reference/opt-optimizations).  
   
--   **OutputFile**  
+-   **Výstupní soubor**  
   
      Volitelné **řetězec** parametr.  
   
@@ -624,7 +620,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Další informace najdete v tématu [/ALLOWBIND (zabránit DLL vazby)](/cpp/build/reference/allowbind-prevent-dll-binding).  
   
--   **Profile**  
+-   **Profil**  
   
      Volitelné **Boolean** parametr.  
   
@@ -670,7 +666,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Další informace najdete v tématu [/ALIGN (zarovnání oddílů)](/cpp/build/reference/align-section-alignment).  
   
--   **SetChecksum**  
+-   **Setchecksum –**  
   
      Volitelné **Boolean** parametr.  
   
@@ -740,7 +736,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
      Další informace najdete v tématu [/PDBSTRIPPED (Odstranit privátní symboly)](/cpp/build/reference/pdbstripped-strip-private-symbols).  
   
--   **SubSystem**  
+-   **Subsystém**  
   
      Volitelné **řetězec** parametr.  
   
@@ -762,7 +758,7 @@ Zabalí nástroj linkeru jazyka Visual C++ link.exe. Nástroj linkeru propojí b
   
     -   **ROZHRANÍ EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
   
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+    -   **Modul Runtime rozhraní EFI** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
     -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
   

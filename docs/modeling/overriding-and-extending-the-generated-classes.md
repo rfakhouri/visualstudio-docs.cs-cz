@@ -1,23 +1,21 @@
 ---
-title: "Přepsání a rozšíření generované třídy | Microsoft Docs"
-ms.custom: 
+title: Přepsání a rozšíření generované třídy | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f86600b6fd4bb272ece4454e9a94032ed05f3af1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 80dd80a88b0244008efde9b10a1706ff18ba6136
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Přepisování a rozšiřování vygenerovaných tříd
 DSL Definition je platforma, ve kterém můžete vytvořit výkonnou sadu nástrojů, které jsou založené na jazyce specifické pro doménu. Mnoho rozšíření a přizpůsobení můžete provést pomocí přepsání a rozšíření třídy, které se generují z definice DSL. Tyto třídy zahrnují nejen třídy domény, které jste definovali explicitně v diagramu definice DSL, ale také další třídy, které definují sada nástrojů, Průzkumník, serializace a tak dále.  

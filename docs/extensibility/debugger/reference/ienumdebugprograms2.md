@@ -1,29 +1,25 @@
 ---
 title: IEnumDebugPrograms2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugPrograms2
 helpviewer_keywords:
 - IEnumDebugPrograms2
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b52c4f28f1f027648674f2be561fc11d7117b6f4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e1e95996a0548dcf81957dad60c3e6f73b3424c8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Toto rozhraní zobrazí aplikace spuštěné v aktuální relaci ladění.  
@@ -48,7 +44,7 @@ IEnumDebugPrograms2 : IUnknown
 |[Next](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|Načte zadaný počet programy v posloupnosti výčtu.|  
 |[Přeskočit](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|Přeskočí zadaný počet programy v posloupnosti výčtu.|  
 |[Resetování](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[Klonování](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
+|[klonování](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
 |[GetCount –](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|Získá počet programů v enumerátor.|  
   
 ## <a name="remarks"></a>Poznámky  
@@ -67,7 +63,7 @@ IEnumDebugPrograms2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

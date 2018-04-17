@@ -1,21 +1,18 @@
 ---
-title: "Postupy: použití kontextu založený na pravidlech uživatelského rozhraní pro rozšíření Visual Studia | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: použití kontextu založený na pravidlech uživatelského rozhraní pro rozšíření Visual Studia | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-ms.workload: vssdk
-ms.openlocfilehash: 92166106c1470aaf1af7198a133495dba333c121
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8597c413c899b54e61e848649c3c524cbdb20724
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Postupy: použití kontextu založený na pravidlech uživatelského rozhraní pro rozšíření Visual Studia
 Visual Studio umožňuje načítání VSPackages při určitých známých <xref:Microsoft.VisualStudio.Shell.UIContext>s aktivují. Tyto kontexty uživatelského rozhraní nejsou velmi dobře podrobných, ponechat autorům rozšíření žádný výběr ale vybrat kontextu k dispozici uživatelské rozhraní, která aktivuje před bodem VSPackage načíst ve skutečnosti chtěli. Seznam známých kontexty uživatelského rozhraní, naleznete v části <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
@@ -137,7 +134,7 @@ Visual Studio umožňuje načítání VSPackages při určitých známých <xref
 |ConfigSettingsStoreQuery:\<dotaz >|"dotaz" představuje úplnou cestu do úložiště nastavení konfigurace, které se musí vyhodnotit na hodnotu nula. Dotaz je rozdělená do "kolekce" a "propertyName" v poslední lomítko.|  
 |ActiveProjectFlavor:\<projectTypeGuid >|Termín bude hodnotu true, vždy, když je specifického pro aktuálně vybrané projektu (agregovat) a má příchuť, odpovídající daný projekt typu GUID.|  
 |ActiveEditorContentType:\<contentType >|Termín bude true, pokud je vybraný dokument s daným typem obsahu textového editoru.|  
-|ActiveProjectCapability:\<výraz >|Výraz hodnotu true, když funkce aktivního projektu odpovídá zadaného výrazu. Výraz může být něco jako VB &#124; CSharp|  
+|ActiveProjectCapability:\<výraz >|Výraz hodnotu true, když funkce aktivního projektu odpovídá zadaného výrazu. Výraz může být přibližně VB &#124; CSharp|  
 |SolutionHasProjectCapability:\<výraz >|Podobá se výše, ale výraz hodnotu true při řešení má všechny načíst projekt, který odpovídá výrazu.|  
 |SolutionHasProjectFlavor:\<projectTypeGuid >|Termín bude mít hodnotu true, vždy, když má projekt, který je specifického (agregovat) řešení a příchuť, odpovídající daný projekt typu GUID.|
 

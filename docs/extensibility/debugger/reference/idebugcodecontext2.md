@@ -1,29 +1,25 @@
 ---
 title: IDebugCodeContext2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugCodeContext2
 helpviewer_keywords:
 - IDebugCodeContext2 interface
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75403c0597b2285aa9117f3ffb51acd01c967f3d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5b46ec36a93ac91647a3f17aac28187519ca2447
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Toto rozhraní představuje počáteční pozici instrukce kódu. Pro většinu architektury Runtime v současné době kontext kódu můžete představit jako adresu v datovém proudu spuštění programu.  
@@ -49,14 +45,14 @@ IDebugCodeContext2 : IDebugMemoryContext2
 |[GetLanguageInfo](../../../extensibility/debugger/reference/idebugcodecontext2-getlanguageinfo.md)|Získá jazyk informace pro tento kontext kódu.|  
   
 ## <a name="remarks"></a>Poznámky  
- Klíčovým rozdílem mezi `IDebugCodeContext2` rozhraní a [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) rozhraní je, že `IDebugCodeContext2` je vždy instrukce zarovnaný. To znamená, že `IDebugCodeContext2` vždy ukazovat na začátku instrukce, zatímco `IDebugMemoryContext2` může vést k jakékoli bajtů paměti v architektuře běhu. `IDebugCodeContext2`se zvýší podle pokynů, a nikoli velikost základní úložiště (obvykle bajtů).  
+ Klíčovým rozdílem mezi `IDebugCodeContext2` rozhraní a [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) rozhraní je, že `IDebugCodeContext2` je vždy instrukce zarovnaný. To znamená, že `IDebugCodeContext2` vždy ukazovat na začátku instrukce, zatímco `IDebugMemoryContext2` může vést k jakékoli bajtů paměti v architektuře běhu. `IDebugCodeContext2` se zvýší podle pokynů, a nikoli velikost základní úložiště (obvykle bajtů).  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   

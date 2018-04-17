@@ -2,23 +2,21 @@
 title: 'Postupy: přidání příkazu do místní nabídky | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4f65964e1d7fd4221746d8ec17a498cf9ee3a354
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 2317f41b3361bdffc0a9549ab920c0b3509b2d64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Postupy: Přidání příkazu do místní nabídky
 Příkazy nabídky můžete přidat do jazyka specifické pro doménu (DSL) tak, aby vaši uživatelé můžete provádět úlohy, které jsou specifické pro vaše DSL. Při kliknutí pravým tlačítkem myši v diagramu se zobrazují příkazy v nabídce kontextu (místní). Příkaz můžete definovat, aby se zobrazí pouze v nabídce v konkrétních situacích. Například můžete provést příkaz viditelná jenom v případě, že uživatel klikne na konkrétní typy elementu nebo elementů v konkrétní stavy.  
@@ -52,7 +50,7 @@ Příkazy nabídky můžete přidat do jazyka specifické pro doménu (DSL) tak,
  Jinak zvažte použití metodu MEF definovat příkazy. Další informace najdete v tématu [rozšíření vaší DSL pomocí MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ##  <a name="VSCT"></a> Declare – příkaz do Commands.Vsct  
- Menu commands are declared in DslPackage\Commands.vsct. Tyto definice zadat popisky položek nabídky a jejich umístění v nabídkách.  
+ Příkazy nabídky jsou deklarované v DslPackage\Commands.vsct. Tyto definice zadat popisky položek nabídky a jejich umístění v nabídkách.  
   
  Soubor, který chcete upravit, Commands.vsct, naimportuje definice z několika souborů .h, které jsou umístěné v adresáři *Visual Studio SDK instalační cesty*\VisualStudioIntegration\Common\Inc. Zahrnuje také GeneratedVsct.vsct, která se generují z vaší DSL definice.  
   

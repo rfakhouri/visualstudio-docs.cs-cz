@@ -1,27 +1,25 @@
 ---
-title: "Vytváření opakovaně použitelných skupin tlačítek | Microsoft Docs"
-ms.custom: 
+title: Vytváření opakovaně použitelných skupin tlačítek | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - button groups, creating in VSPackages
 - VSPackages, creating reusable button groups
 - buttons, creating reusable groups
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
-caps.latest.revision: "44"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c2ac175d2fd267500f19e9f22cd46d88dcc9f314
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 97ee7cc2ec63a94036472ccce07b1dc9fa736504
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Vytváření opakovaně použitelných skupin tlačítek
 Skupina příkazu je kolekce příkazy, které se vždy zobrazují společně v nabídce nebo na panelu nástrojů. Všechny skupiny pro příkaz znovu lze přiřazením do jiné nadřazené nabídek v části CommandPlacements .vsct souboru.  
@@ -46,7 +44,7 @@ Skupina příkazu je kolekce příkazy, které se vždy zobrazují společně v 
     </GuidSymbol>  
     ```  
   
-     Ve výchozím nastavení, šablony položky příkaz vytvoří skupinu s názvem **MyGroup** a tlačítko, které má název, který jste zadali, spolu s IDSymbol záznam pro každý.  
+     Ve výchozím nastavení, šablony položky příkaz vytvoří skupinu s názvem **MyMenuGroup** a tlačítko, které má název, který jste zadali, spolu s IDSymbol záznam pro každý.  
   
 5.  V části skupiny vytvořte skupinového elementu, který má stejný identifikátor GUID a ID atributy jako ty, které jsou uvedeny v části symboly. Můžete také použít stávající skupinu nebo použít položku, která zajišťuje šabloně příkaz jako v následujícím příkladu. Této skupiny se zobrazí na **nástroje** nabídky  
   

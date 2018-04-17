@@ -1,33 +1,29 @@
 ---
-title: "Vlastnosti – okno tlačítka | Microsoft Docs"
-ms.custom: 
+title: Vlastnosti – okno tlačítka | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 950b9f0a7b0f38689042877a42499e23253e6486
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 361333fdfceda28ecd78dc54145fded716ee81eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-buttons"></a>Tlačítka Vlastnosti – okno
 V závislosti na vývoj jazyk a typ produktu, zobrazí se určité tlačítka na panelu nástrojů pro ve výchozím nastavení **vlastnosti** okno. Ve všech případech **Categorized**, **Alphabetized**, **vlastnosti**, a **stránky vlastností** tlačítka se zobrazí. V jazyce Visual C# a Visual Basic **události** tlačítko se zobrazí také. V některých projektech Visual C++ **VC ++ zprávy** a **přepsání VC** tlačítka se zobrazí. Může se zobrazit další tlačítka pro jiné typy projektů. Další informace o tlačítka v **vlastnosti** okně najdete v části [vlastnosti – okno](../../ide/reference/properties-window.md).  
   
 ## <a name="implementation-of-properties-window-buttons"></a>Implementace tlačítek vlastnosti – okno  
- Když kliknete **Categorized** tlačítko, volání Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> rozhraní na objekt, který má právě fokus k seřazení jeho vlastnosti podle kategorií. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>se implementuje na `IDispatch` objekt, který se zobrazí na **vlastnosti** okno.  
+ Když kliknete **Categorized** tlačítko, volání Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> rozhraní na objekt, který má právě fokus k seřazení jeho vlastnosti podle kategorií. <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> se implementuje na `IDispatch` objekt, který se zobrazí na **vlastnosti** okno.  
   
  Existují 11 předdefinované vlastnosti kategorie, které mají záporné hodnoty. Můžete definovat vlastní kategorie, ale doporučujeme vám, že je třeba je přiřadit kladné hodnoty. abychom je odlišili od předdefinovaným kategoriím.  
   

@@ -1,12 +1,10 @@
 ---
-title: "CA2116: Metody APTCA by měly volat pouze metody APTCA | Microsoft Docs"
-ms.custom: 
+title: 'CA2116: Metody APTCA by měly volat pouze metody APTCA | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: a3a7818c3d758e8e92724af37dfe955f9a466746
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52e757e2e83974a532a4dc16ce7075105606b1ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Metody APTCA by měly volat pouze metody APTCA
 |||  
@@ -41,9 +39,9 @@ ms.lasthandoff: 12/22/2017
   
  Když je atribut APTCA na plně důvěryhodný pro sestavení a sestavení spustí kód v jiném sestavení, který neumožňuje částečně důvěryhodné volající, je možné zneužití zabezpečení. Pokud dvě metody `M1` a `M2` splňovat následující podmínky, škodlivými úmysly můžete použít metodu `M1` obejít požadavek propojení implicitní úplný vztah důvěryhodnosti, který chrání `M2`:  
   
--   `M1`je veřejná metoda deklarována ve plně důvěryhodný pro sestavení, který má atribut APTCA.  
+-   `M1` je veřejná metoda deklarována ve plně důvěryhodný pro sestavení, který má atribut APTCA.  
   
--   `M1`volá metodu `M2` mimo `M1`na sestavení.  
+-   `M1` volá metodu `M2` mimo `M1`na sestavení.  
   
 -   `M2`pro sestavení nemá atribut APTCA a proto by neměl být spouštěn nebo jeho jménem volající, které jsou částečně důvěryhodné.  
   

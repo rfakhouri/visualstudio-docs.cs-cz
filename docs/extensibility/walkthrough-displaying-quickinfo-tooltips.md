@@ -1,27 +1,23 @@
 ---
-title: "Návod: Zobrazení popisů tlačítek QuickInfo | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Zobrazení popisů tlačítek QuickInfo | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cd3e9d5e10e6946b4cae8ce02a5a39511e4baaf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 81974967094d238f12141ad7cd31bcc8015b9633
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>Návod: Zobrazení QuickInfo popisy tlačítek
 QuickInfo je funkce technologie IntelliSense, která zobrazuje metoda podpisy a popisy, když se uživatel přesune ukazatel myši název metody. Funkce založené na jazyce jako třeba QuickInfo můžete implementovat definováním identifikátory, pro které byste chtěli poskytnout QuickInfo popisy, a pak vytvořit popisek ve kterém chcete zobrazit obsah. Můžete definovat QuickInfo v kontextu služby jazyk, nebo můžete definovat typ vlastního souboru název rozšíření a obsahu a zobrazit QuickInfo právě tohoto typu nebo můžete zobrazit QuickInfo pro existující typ obsahu (například "text"). Tento návod ukazuje, jak má být zobrazen pro typ obsahu "text" QuickInfo.  

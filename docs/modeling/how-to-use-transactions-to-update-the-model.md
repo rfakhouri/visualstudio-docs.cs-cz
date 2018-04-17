@@ -2,20 +2,18 @@
 title: 'Postupy: použití transakcí k aktualizaci modelu | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ecd9645bfb202d83bf672d03d3c6903a889677f9
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 25c70adf3f8219bf67181183bf4c1a2b822f6424
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Postupy: Používání transakcí k aktualizaci modelu
 Transakce, ujistěte se, že změny, které byly provedeny do úložiště jsou považovány za skupinu. Změny, které jsou seskupené, může být potvrzena nebo vrácena zpět jako na jednu jednotku.  

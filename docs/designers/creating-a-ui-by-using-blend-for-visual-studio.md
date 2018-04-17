@@ -1,24 +1,21 @@
 ---
-title: "Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a087af717e60eab3b9a1091ae46b9263e7342887
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+ms.openlocfilehash: bd36d0cc4a3aba697e7c9b54e1a73c5404f7fcbb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí nástroje Blend for Visual Studio
 
@@ -41,11 +38,11 @@ Můžete použít **nástroje** panely v programu Blend for Visual Studio k vytv
 
 |||||
 |-|-|-|-|
-|![](../designers/media/b1_1.png "B1_1")|**Nástroje výběru** vyberte objekty a cesty.<br /><br /> Použití **přímý výběr** nástroj pro výběr vnořených objektů a segmenty cesty.|![Callout A](../designers/media/b5_label_a.png "b5_label_A")|**Nástroje pro barevný přechod a štětce**|
+|![](../designers/media/b1_1.png "B1_1")|**Nástroje výběru** vyberte objekty a cesty.<br /><br /> Použití **přímý výběr** nástroj pro výběr vnořených objektů a segmenty cesty.|![Popisek A](../designers/media/b5_label_a.png "b5_label_A")|**Nástroje pro barevný přechod a štětce**|
 |![](../designers/media/b1_2.png "B1_2")|**Zobrazení nástroje** upravit zobrazení návrhové plochy, například pro posouvání a přibližování.|![Callout B](../designers/media/b5_label_b.png "b5_label_B")|**Cesta nástroje**|
 |![](../designers/media/b1_3.png "B1_3")|**Zdokonalit nástroje** pracovat s visual atributy objektu, například transformace štětce, vykreslování objekt nebo vybrat atributy jeden objekt, který chcete použít je k jinému objektu.|![Callout C](../designers/media/b5_label_c.png "b5_label_C")|**Nástroje pro kreslení tvarů**|
-|![](../designers/media/b1_4.png "B1_4")|**Objekt nástroje** kreslení nejběžnější objekty v návrhové plochy, jako je například cesty, tvarů, panelů rozložení, text a ovládací prvky.|![Callout D](../designers/media/b5_label_d.png "b5_label_D")|**Panelů rozložení**|
-|![](../designers/media/b1_5.png "B1_5")|**Nástroje pro Asset** přístup **prostředky** panelu a zobrazíte naposledy použít asset z knihovny.|![Callout E](../designers/media/b5_label_e.png "b5_label_E")|**Ovládacích prvků textu**|
+|![](../designers/media/b1_4.png "B1_4")|**Objekt nástroje** kreslení nejběžnější objekty v návrhové plochy, jako je například cesty, tvarů, panelů rozložení, text a ovládací prvky.|![Popisek D](../designers/media/b5_label_d.png "b5_label_D")|**Panelů rozložení**|
+|![](../designers/media/b1_5.png "B1_5")|**Nástroje pro Asset** přístup **prostředky** panelu a zobrazíte naposledy použít asset z knihovny.|![Popisek E](../designers/media/b5_label_e.png "b5_label_E")|**Ovládacích prvků textu**|
 |||![Callout F](../designers/media/b5_label_f.png "b5_label_F")|**Běžné ovládací prvky**|
 
 **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panelu nástrojů](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
@@ -87,7 +84,7 @@ Použijte tento panel pro uspořádání objektů na vaše návrhové plochy a, 
 |![](../designers/media/b1_13.png "B1_13")|**Nastavit časové osy klíčových snímků** změnit hodnotu vlastnosti v určitém bodě v čase.|
 |![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe")|**Změna pořadí objektů** nastavit pořadí zobrazení objektů. Kliknutím na toto tlačítko umožňuje uspořádat objekty v zobrazení struktura pořadí vykreslování (přední zpátky) nebo podle pořadí značek (pořadí, ve kterém se zobrazí v **XAML** zobrazení).|
 |![](../designers/media/b1_15.png "B1_15")|**Časová osa přiblížení** nastavení přiblížení rozlišení časové osy. Přiblížení umožňuje upravovat animaci s více detaily a oddálení zobrazení ukáže větší přehled o tom, co se děje během delšího časového období. Pokud přiblížíte, ale nemůžete nastavit klíčový snímek na pozici v čase, který chcete, ověřte, zda je hodnota rozlišení intervalu klíčových snímků dostatečně vysoká.|
-|![Callout 16](../designers/media/b5_label_16.png "b5_label_16")|**Časová osa složení oblasti** zobrazení časové osy a pohyb klíčových snímků je přetáhnete nebo pomocí jejich místních nabídek.|
+|![Popisek 16](../designers/media/b5_label_16.png "b5_label_16")|**Časová osa složení oblasti** zobrazení časové osy a pohyb klíčových snímků je přetáhnete nebo pomocí jejich místních nabídek.|
 
 ## <a name="tour-of-the-properties-panel"></a>Prohlídka panelu Vlastnosti
 
@@ -114,7 +111,7 @@ Použijte tento panel k zobrazení a úprava vlastností objektu. Můžete je ta
 |![](../designers/media/b1_13.png "B1_13")|**Alfa kanálu** pomocí editoru číslo vedle položky změňte hodnotu alfa **A**.|
 |![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe")|**Barva převést prostředek** převést vybrané barvy na barvu prostředků. Barva prostředky jsou k dispozici po kliknutí na kartě prostředky barvu.|
 |![](../designers/media/b1_15.png "B1_15")|**Šestnáctková hodnota** zobrazit šestnáctkové hodnoty barev zobrazí.|
-|![Callout 16](../designers/media/b5_label_16.png "b5_label_16")|**Přechodu posuvníku** se zobrazí jenom v případě, že je vybraná štětce přechodu.|
+|![Popisek 16](../designers/media/b5_label_16.png "b5_label_16")|**Přechodu posuvníku** se zobrazí jenom v případě, že je vybraná štětce přechodu.|
 |![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8")|**Zobrazit upřesňující vlastnosti** kategorií vlastnosti, které jsou méně často používány zobrazení.|
 
 **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [panel vlastnosti](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).

@@ -1,12 +1,10 @@
 ---
-title: "Spuštění dokumentu tabulky | Microsoft Docs"
-ms.custom: 
+title: Spuštění dokumentu tabulky | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - running document table (RDT), edit locks
 - document data objects, running document table
 ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 41a9fc5a2b364ecc0c9037980c3ef2804a6808d8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4a49a5267fcccbde60e194e3fc58b0f6b6ea7552
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="running-document-table"></a>Spuštěné tabulce dokumentu
 Prostředí IDE udržuje seznam všechny aktuálně otevřené dokumenty v interní strukturu názvem spuštěné tabulce dokumentu (r...). Tento seznam obsahuje všechny otevřené dokumenty v paměti, bez ohledu na to, jestli tyto dokumenty jsou aktuálně Upravovaný. Dokument je libovolnou položku, která je trvalý, včetně souborů v projektu nebo hlavní soubor projektu (například soubor VCXPROJ).  
@@ -36,7 +34,7 @@ Prostředí IDE udržuje seznam všechny aktuálně otevřené dokumenty v inter
 |Přezdívka dokumentu|Řetězec, který jednoznačně identifikuje datový objekt dokumentu. To může být absolutní cestu k souboru projektu systému, který spravuje soubory (například C:\MyProject\MyFile). Tento řetězec se používá také pro projekty, které jsou uloženy v úložištích než systémy souborů, jako je například uložené procedury v databázi. V takovém případě může systém projektu skladová jedinečného řetězce, který může rozpoznat a pravděpodobně analyzovat určit, jak k uložení dokumentů.|  
 |Vlastník hierarchie|Objekt hierarchie, který vlastní dokumentu, reprezentovaná <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> rozhraní.|  
 |ID položky|Identifikátor položky pro konkrétní položku v hierarchii. Tato hodnota je jedinečný mezi všechny dokumenty v hierarchii, které vlastní tento dokument, ale tato hodnota nemusí být jedinečný v rámci různých hierarchiích.|  
-|Datový objekt dokumentu|Minimálně, jedná se`IUnknown`<br /><br /> objekt. Prostředí IDE nevyžaduje žádné konkrétní rozhraní nad rámec `IUnknown` rozhraní pro vlastní editor dokumentu datový objekt. Pro standardní editor, ale editoru provádění <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> rozhraní vyžadovaná ke zpracování souborů trvalost volání z projektu. Další informace najdete v tématu [ukládání standardní dokumentu](../../extensibility/internals/saving-a-standard-document.md).|  
+|Datový objekt dokumentu|Minimálně, jedná se `IUnknown`<br /><br /> objekt. Prostředí IDE nevyžaduje žádné konkrétní rozhraní nad rámec `IUnknown` rozhraní pro vlastní editor dokumentu datový objekt. Pro standardní editor, ale editoru provádění <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> rozhraní vyžadovaná ke zpracování souborů trvalost volání z projektu. Další informace najdete v tématu [ukládání standardní dokumentu](../../extensibility/internals/saving-a-standard-document.md).|  
 |Příznaky|Příznaky, které řídí, zda je uložen v dokumentu, zda je použita zámek pro čtení nebo úpravy a tak dále, lze zadat po přidání položek r.... Další informace najdete v tématu <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> výčtu.|  
 |Upravit počet zámků|Počet upravit zamkne. Zámek upravit znamená, že některé editor má dokument otevřít pro úpravy. Pokud počet zámků upravit přejde na hodnotu nula, bude uživatel vyzván k uložení dokumentu, pokud se změnila. Například při každém otevření dokumentu v editoru pomocí **nové okno** příkaz, přidá se pro tento dokument v r... zámek upravit. Aby zámek upravit nastavení musí mít hierarchii nebo položky ID dokumentu|  
 |Počet zámek pro čtení|Počet čtení zámky. Zámek pro čtení označuje, že dokument je načítán přes některé mechanismus například Průvodce. Zámek pro čtení obsahuje dokument v r... živá při indikující, že dokument nelze upravit. Zámek pro čtení můžete nastavit i v případě, že dokument nemá hierarchii nebo položky ID. Tato funkce umožňuje otevření dokumentu v paměti a zadejte ho r... bez dokumentu se vlastníkem žádné hierarchie. Tato funkce slouží jen zřídka.|  

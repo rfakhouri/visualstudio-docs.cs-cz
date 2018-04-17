@@ -1,24 +1,24 @@
 ---
 title: Barva hodnotu odkazu pro sadu Visual Studio | Microsoft Docs
-description: "Referenční dokumentace: Šestnáctkově kódy pro vytvoření nové tokeny barva Visual Studio"
-keywords: "Barva, šestnáctkový kód, hue, motivu uživatelského rozhraní, motivů"
+description: 'Referenční dokumentace: Šestnáctkově kódy pro vytvoření nové tokeny barva Visual Studio'
+keywords: Barva, šestnáctkový kód, hue, motivu uživatelského rozhraní, motivů
 author: brickgeorge
 ms.author: v-brickg
 ms.date: 08/04/2017
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: 
+ms.custom: ''
 ms.reviewer: Jamie.Young
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-manager: ghogen
-ms.workload: v-brickg
-ms.openlocfilehash: 001e9db65209f8ae60cd070d5d68b9f72ef62672
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.technology:
+- vs-ide-sdk
+manager: douge
+ms.workload:
+- v-brickg
+ms.openlocfilehash: 421fca16db2ed2792a539ead2ab46d325cee3a11
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Barva hodnotu odkazu pro sadu Visual Studio
 Toto téma je odkaz pro vytvoření nové tokeny barev. Při vytváření nové uživatelské rozhraní, můžete vybrat barvy pro každou hlavní motiv a název barvy systému pro daný element pro vysoký kontrast motivy podobné barvy z existující uživatelského rozhraní. 
@@ -162,9 +162,9 @@ Pokud používáte tato referenční příručka, mějte na paměti:
 | Pozadí: stisknutí tlačítka | ![#FF007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "vzorníku #FF007ACC")<br />`#FF007ACC` | ![#FF007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "vzorníku #FF007ACC")<br />`#FF007ACC` | ![#FF007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "vzorníku #FF007ACC")<br />`#FF007ACC` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
 | Popředí: zakázáno | ![#FFA2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "vzorníku #FFA2A4A5")<br />`#FFA2A4A5` | ![#FF656565 vzorníku](../../extensibility/ux-guidelines/media/656565.png "vzorníku #FF656565")<br />`#FF656565` | ![#FFA2A4A5 vzorníku](../../extensibility/ux-guidelines/media/A2A4A5.png "vzorníku #FFA2A4A5")<br />`#FFA2A4A5` | ![GrayText vzorníku](../../extensibility/ux-guidelines/media/HCGrayText.png "GrayText vzorníku")<br />`GrayText` |
 | Pozadí: zakázáno | ![#FFF5F5F5 vzorníku](../../extensibility/ux-guidelines/media/F5F5F5.png "vzorníku #FFF5F5F5")<br />`#FFF5F5F5` | ![#FF252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "vzorníku #FF252526")<br />`#FF252526` | ![#FFF6F6F6 vzorníku](../../extensibility/ux-guidelines/media/F6F6F6.png "vzorníku #FFF6F6F6")<br />`#FFF6F6F6` | ![Okno vzorníku](../../extensibility/ux-guidelines/media/HCWindow.png "vzorníku okna")<br />`Window` |
-| Ohraničení: hover | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "vzorníku #FFC9DEF5")<br />`#FFC9DEF5` | ![#FF3E3E40 vzorníku](../../extensibility/ux-guidelines/media/3E3E40.png "vzorníku #FF3E3E40")<br />`#FF3E3E40` |![#FFFEFEFE vzorníku](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE vzorníku")<br /> `#FFFEFEFE` | ![HighlightText vzorníku](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
-| Ohraničení: stisknutí tlačítka | ![#FF007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "vzorníku #FF007ACC")<br />`#FF007ACC` | ![#FF007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "vzorníku #FF007ACC")<br />`#FF007ACC` |![#FF007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "vzorníku #FF007ACC")<br /> `#FF007ACC` | ![HighlightText vzorníku](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
-| Ohraničení: zakázáno | ![#FFCCCEDB vzorníku](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB vzorníku")<br />`#FFCCCEDB` | ![#FF434346 vzorníku](../../extensibility/ux-guidelines/media/434346.png "vzorníku #FF434346")<br />`#FF434346` | ![#FFC6C6C6 vzorníku](../../extensibility/ux-guidelines/media/C6C6C6.png "vzorníku #FFC6C6C6")<br />`#FFC6C6C6` | ![Okenní rám vzorníku](../../extensibility/ux-guidelines/media/HCWindowFrame.png "Okenní rám vzorníku")<br />`WindowFrame` |
+| Ohraničení: hover | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "vzorníku #FFC9DEF5")<br />`#FFC9DEF5` | ![ #FF3E3E40 vzorníku](../../extensibility/ux-guidelines/media/3E3E40.png "vzorníku #FF3E3E40")<br />`#FF3E3E40` |![#FFFEFEFE vzorníku](../../extensibility/ux-guidelines/media/FEFEFE.png "#FFFEFEFE vzorníku")<br /> `#FFFEFEFE` | ![HighlightText vzorníku](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
+| Ohraničení: stisknutí tlačítka | ![#FF007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "vzorníku #FF007ACC")<br />`#FF007ACC` | ![ #FF007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "vzorníku #FF007ACC")<br />`#FF007ACC` |![#FF007ACC vzorníku](../../extensibility/ux-guidelines/media/007ACC.png "vzorníku #FF007ACC")<br /> `#FF007ACC` | ![HighlightText vzorníku](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
+| Ohraničení: zakázáno | ![#FFCCCEDB vzorníku](../../extensibility/ux-guidelines/media/CCCEDB.png "#FFCCCEDB vzorníku")<br />`#FFCCCEDB` | ![ #FF434346 vzorníku](../../extensibility/ux-guidelines/media/434346.png "vzorníku #FF434346")<br />`#FF434346` | ![#FFC6C6C6 vzorníku](../../extensibility/ux-guidelines/media/C6C6C6.png "vzorníku #FFC6C6C6")<br />`#FFC6C6C6` | ![Okenní rám vzorníku](../../extensibility/ux-guidelines/media/HCWindowFrame.png "Okenní rám vzorníku")<br />`WindowFrame` |
 
 ## <a name="properties-grid-control-elements"></a>Ovládací prvky mřížky vlastností
 
@@ -309,7 +309,7 @@ Pokud používáte tato referenční příručka, mějte na paměti:
 | Popředí (text): hover | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "vzorníku #FF1E1E1E")<br />`#FF1E1E1E` | ![#FFFFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![#FF1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "vzorníku #FF1E1E1E")<br />`#FF1E1E1E` | ![HighlightText vzorníku](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
 | Pozadí: hover | ![#FFC9DEF5 vzorníku](../../extensibility/ux-guidelines/media/C9DEF5.png "vzorníku #FFC9DEF5")<br />`#FFC9DEF5` | ![#FF606060 vzorníku](../../extensibility/ux-guidelines/media/606060.png "vzorníku #FF606060")<br />`#FF606060` | ![#FFFDF4BF vzorníku](../../extensibility/ux-guidelines/media/FDF4BF.png "vzorníku #FFFDF4BF")<br />`#FFFDF4BF` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
 | Popředí (text): stisknutí tlačítka | ![#FFFFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![#FFFFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![#FFFFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![HighlightText vzorníku](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
-| Pozadí: stisknutí tlačítka | ![#FF3399FF vzorníku](../../extensibility/ux-guidelines/media/3399FF.png "vzorníku #FF3399FF")<br />`#FF3399FF` | ![#FF3399FF vzorníku](../../extensibility/ux-guidelines/media/3399FF.png "vzorníku #FF3399FF")<br />`#FF3399FF` | ![#FF3399FF vzorníku](../../extensibility/ux-guidelines/media/3399FF.png "vzorníku #FF3399FF")<br />`#FF3399FF` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
+| Pozadí: stisknutí tlačítka | ![#FF3399FF vzorníku](../../extensibility/ux-guidelines/media/3399FF.png "vzorníku #FF3399FF")<br />`#FF3399FF` | ![ #FF3399FF vzorníku](../../extensibility/ux-guidelines/media/3399FF.png "vzorníku #FF3399FF")<br />`#FF3399FF` | ![#FF3399FF vzorníku](../../extensibility/ux-guidelines/media/3399FF.png "vzorníku #FF3399FF")<br />`#FF3399FF` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
 | Popředí (text): vybrané | ![#FFFFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![#FFFFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![#FFFFFFFF vzorníku](../../extensibility/ux-guidelines/media/FFFFFF.png "#FFFFFFFF vzorníku")<br />`#FFFFFFFF` | ![HighlightText vzorníku](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText vzorníku")<br />`HighlightText` |
 | Pozadí: vybrané | ![#FF3399FF vzorníku](../../extensibility/ux-guidelines/media/3399FF.png "vzorníku #FF3399FF")<br />`#FF3399FF` | ![#FF3399FF vzorníku](../../extensibility/ux-guidelines/media/3399FF.png "vzorníku #FF3399FF")<br />`#FF3399FF` | ![#FF3399FF vzorníku](../../extensibility/ux-guidelines/media/3399FF.png "vzorníku #FF3399FF")<br />`#FF3399FF` | ![Zvýrazněte vzorníku](../../extensibility/ux-guidelines/media/HCHighlight.png "zvýraznění vzorníku")<br />`Highlight` |
 
@@ -398,7 +398,7 @@ Pokud používáte tato referenční příručka, mějte na paměti:
 | Pozadí | ![#FEFEFE vzorníku](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE vzorníku")<br />`#FEFEFE` | ![#252526 vzorníku](../../extensibility/ux-guidelines/media/252526.png "vzorníku #252526")<br />`#252526` | ![#FEFEFE vzorníku](../../extensibility/ux-guidelines/media/FEFEFE.png "#FEFEFE vzorníku")<br />`#FEFEFE` | ![Ovládací prvek vzorníku](../../extensibility/ux-guidelines/media/HCControl.png "vzorníku ovládací prvek")<br />`Control` |
 | Ohraničení | ![#717171 vzorníku](../../extensibility/ux-guidelines/media/717171.png "vzorníku #717171")<br />`#717171` | ![#999999 vzorníku](../../extensibility/ux-guidelines/media/999999.png "#999999 vzorníku")<br />`#999999` | ![#717171 vzorníku](../../extensibility/ux-guidelines/media/717171.png "vzorníku #717171")<br />`#717171` | ![ControlDark vzorníku](../../extensibility/ux-guidelines/media/HCControlDark.png "ControlDark vzorníku")<br />`ControlDark` |
 | Text | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "vzorníku #1E1E1E")<br />`#1E1E1E` | ![#F1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "vzorníku #F1F1F1")<br />`#F1F1F1` | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "vzorníku #1E1E1E")<br />`#1E1E1E` | ![ControlText vzorníku](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
-| Glyfy | ![vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "vzorníku #1E1E1E")<br />`#1E1E1E` | ![#F1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "vzorníku #F1F1F1")<br />`#F1F1F1` | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "vzorníku #1E1E1E")<br />`#1E1E1E` | ![ControlText vzorníku](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
+| Glyfy | ![ vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "vzorníku #1E1E1E")<br />`#1E1E1E` | ![#F1F1F1 vzorníku](../../extensibility/ux-guidelines/media/F1F1F1.png "vzorníku #F1F1F1")<br />`#F1F1F1` | ![#1E1E1E vzorníku](../../extensibility/ux-guidelines/media/1E1E1E.png "vzorníku #1E1E1E")<br />`#1E1E1E` | ![ControlText vzorníku](../../extensibility/ux-guidelines/media/HCControlText.png "ControlText vzorníku")<br />`ControlText` |
 
 ### <a name="disabled"></a>zakázáno
 

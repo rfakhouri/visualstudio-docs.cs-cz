@@ -1,12 +1,10 @@
 ---
-title: "Informace o parametrech v Service1 jazyk starší verze | Microsoft Docs"
-ms.custom: 
+title: Informace o parametrech v Service1 jazyk starší verze | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, method tips
 - method tips
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsMethodData interface
 - Parameter Info (IntelliSense)
 ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
-caps.latest.revision: "11"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 70f6a24a8d5a3d516286efe01cffc6e1d3514e18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 50450d1968c626e0a5b32dee4c6f03d005d6ede9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informace o parametrech ve službě jazyk starší verze
 Informace o parametrech IntelliSense popisek poskytuje uživatelům nápovědu, jak tam, kde jsou v konstrukce jazyka.  
@@ -40,7 +38,7 @@ Informace o parametrech IntelliSense popisek poskytuje uživatelům nápovědu, 
   
  Popisy tlačítek informace o parametrech zahájili služba jazyka prostřednictvím příkazu zachycení. Zachytávat uživatele znaků, musí implementovat objekt služby váš jazyk <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> rozhraní a předejte textového zobrazení ukazatele na vaše <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> implementace voláním <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> metoda v <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní. Příkaz filtru zachytí příkazy, které zadáte do okna kódu. Sledování informací o příkazu vědět, kdy se mají zobrazit informace o parametrech uživateli. Stejný filtr příkaz můžete použít pro dokončování příkazů, chyba značky a tak dále.  
   
- Klíčové slovo, pro kterou služba jazyka může poskytovat, pak službu jazyka, vytvoří <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objekt a volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metoda v <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní oznámit IDE zobrazíte nápovědu. Vytvořte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> pomocí `VSLocalCreateInstance` a zadání coclass `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance`je funkci definovanou v vsdoc.h záhlaví souboru, který volá `QueryService` místním registru a volání `CreateInstance` na tomto objektu pro `CLSID_VsMethodTipWindow`.  
+ Klíčové slovo, pro kterou služba jazyka může poskytovat, pak službu jazyka, vytvoří <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> objekt a volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateTipWindow%2A> metoda v <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> rozhraní oznámit IDE zobrazíte nápovědu. Vytvořte <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> pomocí `VSLocalCreateInstance` a zadání coclass `CLSID_VsMethodTipWindow`. `VsLocalCreateInstance` je funkci definovanou v vsdoc.h záhlaví souboru, který volá `QueryService` místním registru a volání `CreateInstance` na tomto objektu pro `CLSID_VsMethodTipWindow`.  
   
 ## <a name="providing-a-method-tip"></a>Poskytnutí Tip – metoda  
  Zajistit tip metoda volání <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow.SetMethodData%2A> metoda v <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow> rozhraní, předání vaši implementaci <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> rozhraní.  

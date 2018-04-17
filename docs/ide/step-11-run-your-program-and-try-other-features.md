@@ -1,30 +1,28 @@
 ---
-title: "Krok 11: Spusťte svůj Program a vyzkoušejte jiné funkce | Microsoft Docs"
-ms.custom: 
+title: 'Krok 11: Spusťte svůj Program a vyzkoušejte jiné funkce | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
-caps.latest.revision: "12"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c53c542741cc64c0d60a94116acf7de4ff7f61ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b089ca2c295f8128dadc9f0650540e5fef5f239a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Krok 11: Spusťte svůj Program a vyzkoušejte jiné funkce
 Váš program je připraven ke spuštění a dokončení. Můžete spustit program a nastavení barvy pozadí PictureBox. Další informace, pokuste se program zlepšit Změna barvy formuláře, přizpůsobení tlačítka a zaškrtávací políčko a změna vlastností formuláře.  
   
  Si můžete stáhnout dokončené verzi příkladu [kurz ukázka dokončení Prohlížeč obrázků](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurzu 1: vytvoření prohlížeče obrázků v C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+ ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-run-your-program-and-set-the-background-color"></a>Chcete-li spustit program a nastavení barvy pozadí  
   

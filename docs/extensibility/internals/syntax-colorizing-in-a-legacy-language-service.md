@@ -1,28 +1,26 @@
 ---
-title: "Syntaxe barevné ve službě jazyk starší | Microsoft Docs"
-ms.custom: 
+title: Syntaxe barevné ve službě jazyk starší | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], syntax highlighting
 - colorization, supporting in language services [managed package framework]
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8ec6641859653d9f16137353ee2571006ae592c0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1d82a85958fd979a3d9d44375656b08356ef09d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Syntaxe barevné ve službě jazyk starší verze
 Zabarvení syntaxe je funkce, která způsobí, že různé prvky programovací jazyk, který se má zobrazit ve zdrojovém souboru v jiné barvy a styly. Chcete-li tuto funkci podporovat, budete muset zadat analyzátor nebo skener, který můžete identifikovat typy lexikální elementy nebo tokenů v souboru. Mnoho jazyků existenci klíčová slova, oddělovače (například závorkách nebo složené závorky) a komentáře barevné je různými způsoby.  

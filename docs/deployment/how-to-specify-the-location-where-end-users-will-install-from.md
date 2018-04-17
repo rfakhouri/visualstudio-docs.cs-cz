@@ -1,12 +1,10 @@
 ---
-title: "Postupy: určení umístění, kde budou koncoví uživatelé instalovat z | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: určení umístění, kde budou koncoví uživatelé instalovat z | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - installation, specifying installation an URL
 - Installation URL property
 ms.assetid: 04a804bf-ed55-4a7a-a1e6-f63ed99c0276
-caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a3a2770933f4a9f600b12a2d601deca855de3a94
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3161cfb36c09f78911a762347f9c9ec6d125ee39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Postupy: Určení umístění, z něhož mohou instalovat koncoví uživatelé
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, umístění, kde uživatelé ke stažení a instalaci aplikace není nutně umístění, kde jste původně publikovali aplikace. Například v některých organizacích může vývojář publikovat aplikaci na pracovní server a poté by správce přesuňte aplikace na webový server.  
@@ -43,7 +41,7 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
   
 2.  Klikněte **publikovat** kartě.  
   
-3.  Do pole adresy URL instalace zadejte umístění instalace pomocí plně kvalifikovanou adresu URL pomocí formátu http://www.microsoft.com/ApplicationName nebo cestu UNC pomocí formátu \\\Server\ApplicationName.  
+3.  Do pole adresy URL instalace zadejte umístění instalace pomocí plně kvalifikovanou adresu URL ve formátu http://www.microsoft.com/ApplicationName, nebo cestu UNC pomocí formátu \\\Server\ApplicationName.  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: Zadejte, kde zkopíruje soubory v sadě Visual Studio](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

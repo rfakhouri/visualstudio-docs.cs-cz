@@ -1,13 +1,10 @@
 ---
-title: "Nativní Run-Time kontroluje přizpůsobení | Microsoft Docs"
-ms.custom: 
+title: Nativní Run-Time kontroluje přizpůsobení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
 dev_langs:
@@ -23,17 +20,16 @@ helpviewer_keywords:
 - customizing CRT error checking
 - native run-time checks, customizing
 ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9483983b6cbd5644827af8f647425cce61502ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 2c0318a5a711fd99338fb3d4e812cb3b07c449fc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="native-run-time-checks-customization"></a>Přizpůsobení nativních kontrol za běhu
 Když kompilujete s **/RTC** (spuštění kontroly) nebo pomocí `runtime_checks` – Direktiva pragma, běhové knihovny jazyka C poskytuje nativních kontrol za běhu. V některých případech můžete chtít přizpůsobit spuštění kontroly:  
@@ -58,7 +54,7 @@ Když kompilujete s **/RTC** (spuštění kontroly) nebo pomocí `runtime_checks
  Pokud používáte vlastní funkci vytváření sestav, použijte `_RTC_SetErrorType` pro přidružení k chybě typu sestavy.  
   
 ## <a name="query-for-information-about-run-time-checks"></a>Dotaz na informace o kontroly runtime  
- `_RTC_NumErrors`Vrátí počet typů chyb zjištěný Kontrola chyb za běhu. Získat stručný popis každé chybě, můžete opakování od 0 do návratová hodnota `_RTC_NumErrors`, předávání iterace hodnota, která má `_RTC_GetErrDesc` na každou smyčku. Další informace najdete v tématu [_rtc_numerrors –](/cpp/c-runtime-library/reference/rtc-numerrors) a [_rtc_geterrdesc –](/cpp/c-runtime-library/reference/rtc-geterrdesc).  
+ `_RTC_NumErrors` Vrátí počet typů chyb zjištěný Kontrola chyb za běhu. Získat stručný popis každé chybě, můžete opakování od 0 do návratová hodnota `_RTC_NumErrors`, předávání iterace hodnota, která má `_RTC_GetErrDesc` na každou smyčku. Další informace najdete v tématu [_rtc_numerrors –](/cpp/c-runtime-library/reference/rtc-numerrors) a [_rtc_geterrdesc –](/cpp/c-runtime-library/reference/rtc-geterrdesc).  
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: použití nativních kontrol za běhu](../debugger/how-to-use-native-run-time-checks.md)   

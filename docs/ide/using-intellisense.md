@@ -2,10 +2,8 @@
 title: Visual Studio IntelliSense | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
@@ -16,14 +14,14 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ee47502d0aa15e391155cae918c8e579e72194
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: d6e87113f8c8a703a6eb4d893c0ca54a90bfb8d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-intellisense-in-visual-studio"></a>Používání atributu IntelliSense v sadě Visual Studio
 
@@ -39,7 +37,7 @@ Po výběru položky, můžete jej přidat do vašeho kódu stisknutím **kartě
 
 V seznamu členů ikona vlevo představuje typ členu, například obor názvů, třídu, funkci nebo proměnnou. Seznam ikon, naleznete v části [zobrazení tříd a ikony v prohlížeči objekt](../ide/class-view-and-object-browser-icons.md). V seznamu může být poměrně dlouho, můžete stisknout **PgUp** a **Page Down** přesunout nahoru nebo dolů v seznamu.
 
-![Visual Studio Member List](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
+![Seznam členů v sadě Visual Studio](../ide/media/vs2015_intellisense.png "vs2015_Intellisense")
 
 Můžete vyvolat **vypsat členy** funkce ručně zadáním **CTRL** + **J**, výběrem možnosti **upravit**  >  **IntelliSense** > **vypsat členy**, nebo výběrem **vypsat členy** tlačítka na panelu nástrojů editoru. Při vyvolání na prázdném řádku nebo mimo podporovaný rozsah zobrazí seznam symboly v globálním oboru názvů.
 

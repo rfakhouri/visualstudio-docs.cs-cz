@@ -1,12 +1,10 @@
 ---
-title: "Vnitřní funkce | Microsoft Docs"
-ms.custom: 
+title: Vnitřní funkce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _String_length_
 - _Param_
@@ -15,16 +13,16 @@ f1_keywords:
 - _Nullterm_length_
 - _Inexpressible_
 ms.assetid: adf29f8c-89fd-4a5e-9804-35ac83e1c457
-caps.latest.revision: "7"
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c25c76ba43c983a6029c8d50e183ccf839ef08bd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 932d034fb1510a1e73d439d62ad3129c78841bed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intrinsic-functions"></a>Vnitřní funkce
 Výraz v SAL může být výraz C/C++, za předpokladu, že je výraz, který nemá vedlejší účinky – například ++,--a volání funkce v tomto kontextu jsou vybavené vedlejší účinky.  SAL však poskytuje některé funkce jako objekty a některé vyhrazené znaky, které můžete použít ve výrazech SAL. Tyto jsou označovány jako *vnitřní funkce*.  
@@ -36,9 +34,9 @@ Výraz v SAL může být výraz C/C++, za předpokladu, že je výraz, který ne
 |----------------|-----------------|  
 |`_Curr_`|Synonymum pro objekt, který je aktuálně poznámkou.  Když `_At_` poznámky se používá, `_Curr_` je stejný jako první parametr `_At_`.  Jinak je parametr nebo celý funkce/návratová hodnota, ke kterému je poznámka lexikálně přiřazeno.|  
 |`_Inexpressible_(expr)`|Nevyjadřuje situaci, kde velikost vyrovnávací paměti je příliš složité pomocí výrazu poznámky – například když je počítaný prohledáním vstupní datové sady a pak počítání vybrané členy.|  
-|`_Nullterm_length_(param)`|`param`je počet elementů ve vyrovnávací paměti než, ale není včetně zakončením hodnotu null. Lze ji použít na všechny vyrovnávací paměti typu neagregačními, není void.|  
+|`_Nullterm_length_(param)`|`param` je počet elementů ve vyrovnávací paměti než, ale není včetně zakončením hodnotu null. Lze ji použít na všechny vyrovnávací paměti typu neagregačními, není void.|  
 |`_Old_(expr)`|Vyhodnocena v předběžnou podmínku, `_Old_` vrátí vstupní hodnotu `expr`.  Při vyhodnocování v po podmínka, vrátí hodnotu `expr` jako jeho by byly vyhodnoceny v předběžnou podmínku.|  
-|`_Param_(n)`|`n`Tý parametr funkce, počítáno od 1 do `n`, a `n` literálu integrální konstanta. Pokud je parametr, tato anotace je stejný jako při přístupu ke parametr podle názvu. **Poznámka:** `n` mohou odkazovat na poziční parametry, které jsou definované za tři tečky nebo mohou být použity v prototypy funkcí nejsou-li použity názvy.|  
+|`_Param_(n)`|`n`Tý parametr funkce, počítáno od 1 do `n`, a `n` literálu integrální konstanta. Pokud je parametr, tato anotace je stejný jako při přístupu ke parametr podle názvu. **Poznámka:** `n` mohou odkazovat na poziční parametry, které jsou definované za tři tečky nebo mohou být použity v prototypy funkcí nejsou-li použity názvy.  |  
 |`return`|C/C++ vyhrazené – klíčové slovo `return` lze použít ve výrazu SAL k označení návratovou hodnotu funkce.  Hodnota je k dispozici pouze ve stavu post; je chyba syntaxe pro použití v předběžné stavu.|  
   
 ## <a name="string-specific"></a>Konkrétní řetězec  
@@ -46,9 +44,9 @@ Výraz v SAL může být výraz C/C++, za předpokladu, že je výraz, který ne
   
 |Poznámka|Popis|  
 |----------------|-----------------|  
-|`_String_length_(param)`|`param`je počet elementů v řetězec, který se má ale není včetně zakončením hodnotu null. Tato anotace je vyhrazený pro typy řetězec znaků.|  
-|`strlen(param)`|`param`je počet elementů v řetězec, který se má ale není včetně zakončením hodnotu null. Tato anotace je vyhrazený pro použití na znak polí a vypadá takto: funkce C Runtime [strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|  
-|`wcslen(param)`|`param`je počet elementů v řetězci až do (s výjimkou) zakončením hodnotu null. Tato anotace je vyhrazený pro použití na široká znaková polí a vypadá takto: funkce C Runtime [wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|  
+|`_String_length_(param)`|`param` je počet elementů v řetězec, který se má ale není včetně zakončením hodnotu null. Tato anotace je vyhrazený pro typy řetězec znaků.|  
+|`strlen(param)`|`param` je počet elementů v řetězec, který se má ale není včetně zakončením hodnotu null. Tato anotace je vyhrazený pro použití na znak polí a vypadá takto: funkce C Runtime [strlen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|  
+|`wcslen(param)`|`param` je počet elementů v řetězci až do (s výjimkou) zakončením hodnotu null. Tato anotace je vyhrazený pro použití na široká znaková polí a vypadá takto: funkce C Runtime [wcslen()](/cpp/c-runtime-library/reference/strlen-wcslen-mbslen-mbslen-l-mbstrlen-mbstrlen-l).|  
   
 ## <a name="see-also"></a>Viz také  
  [Použití poznámek SAL k snížení míry výskytu závad kódu C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

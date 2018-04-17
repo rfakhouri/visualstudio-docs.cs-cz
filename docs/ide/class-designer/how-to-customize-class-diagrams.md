@@ -1,28 +1,26 @@
 ---
-title: "Postupy: přizpůsobení diagramů tříd (návrhář tříd) | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: přizpůsobení diagramů tříd (návrhář tříd) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
 - shapes, removing type from class diagrams
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ab6776ccdf8f3abe98190855ec41dc226677db61
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5a2f58626008ba50f436f7836fe13ca92fcce155
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Postupy: Přizpůsobení diagramů tříd (návrhář tříd)
 Můžete změnit způsob, jak diagramy tříd zobrazují informace. Můžete přizpůsobit celý diagram nebo jednotlivé typy na ploše návrhu.  
@@ -54,7 +52,7 @@ Můžete například upravit úroveň zvětšení celého diagramu tříd, změn
   
 -   [Odstranit obrazce typu a jeho základní kódu](how-to-customize-class-diagrams.md#DeleteTypeShapeAndCode)  
   
-##  <a name="ZoomInOut"></a>Oddálit diagramu tříd  
+##  <a name="ZoomInOut"></a> Oddálit diagramu tříd  
   
 1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
@@ -67,7 +65,7 @@ Můžete například upravit úroveň zvětšení celého diagramu tříd, změn
     > [!NOTE]
     >  Změna úrovně přiblížení neovlivní měřítko výtisku vašeho diagramu tříd.  
   
-##  <a name="CustomizeGroupingSorting"></a>Přizpůsobení seskupování a řazení členy typu  
+##  <a name="CustomizeGroupingSorting"></a> Přizpůsobení seskupování a řazení členy typu  
   
 1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
@@ -81,7 +79,7 @@ Můžete například upravit úroveň zvětšení celého diagramu tříd, změn
   
     3.  **Seřadit podle abecedy** zobrazí položky, které tvoří entitu jako jeden abecední seznam. Seznam je seřazen vzestupně.  
   
-##  <a name="HideCompartments"></a>Skrýt přihrádky pro typ  
+##  <a name="HideCompartments"></a> Skrýt přihrádky pro typ  
   
 1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
@@ -91,7 +89,7 @@ Můžete například upravit úroveň zvětšení celého diagramu tříd, změn
   
      Vybraný oddíl zmizí z kontejneru typu.  
   
-##  <a name="HideMembers"></a>Skrýt jednotlivé členy typu  
+##  <a name="HideMembers"></a> Skrýt jednotlivé členy typu  
   
 1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
@@ -101,7 +99,7 @@ Můžete například upravit úroveň zvětšení celého diagramu tříd, změn
   
      Vybraný člen zmizí z kontejneru typu.  
   
-##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a>Zobrazit skrytá přihrádky a členy typu  
+##  <a name="DisplayHiddenCompartmentsAndMemberrs"></a> Zobrazit skrytá přihrádky a členy typu  
   
 1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
@@ -111,7 +109,7 @@ Můžete například upravit úroveň zvětšení celého diagramu tříd, změn
   
      Všechny skryté oddíly a členy se zobrazí v kontejneru typu.  
   
-##  <a name="HideAssociationAndInheritance"></a>Skrýt relace  
+##  <a name="HideAssociationAndInheritance"></a> Skrýt relace  
   
 1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
@@ -123,7 +121,7 @@ Můžete například upravit úroveň zvětšení celého diagramu tříd, změn
   
      Všechny skryté oddíly a členy se zobrazí v kontejneru typu.  
   
-##  <a name="DisplayAssociationAndInheritance"></a>Zobrazit skrytá relace  
+##  <a name="DisplayAssociationAndInheritance"></a> Zobrazit skrytá relace  
   
 1.  Otevřete a vyberte soubor diagramu tříd v Návrháři tříd.  
   
@@ -131,7 +129,7 @@ Můžete například upravit úroveň zvětšení celého diagramu tříd, změn
   
  Klikněte na tlačítko **zobrazit všechny členy** pro Asociační čáry a klikněte na **zobrazit základní třída** nebo **Zobrazit odvozené třídy** pro dědičnosti řádky.  
   
-##  <a name="RemoveCodeAndShape"></a>Odstranění obrazce z diagramu – třída  
+##  <a name="RemoveCodeAndShape"></a> Odstranění obrazce z diagramu – třída  
 Můžete odebrat tvar typu z diagramu tříd bez ovlivnění základního kódu typu. Odebrání tvarů typu z diagramu tříd ovlivní pouze tento diagram: základní kód definující typ a ostatní diagramy, které typ zobrazují, ovlivněny nejsou.  
   
 1.  V diagramu tříd vyberte tvar typu, který chcete z diagramu odebrat.  
@@ -140,7 +138,7 @@ Můžete odebrat tvar typu z diagramu tříd bez ovlivnění základního kódu 
   
      Tvar typu a čáry přidružení nebo dědičnosti spojené s tvarem se již v diagramu nezobrazí.  
   
-##  <a name="DeleteTypeShapeAndCode"></a>Odstranit obrazce typu a jeho základní kódu  
+##  <a name="DeleteTypeShapeAndCode"></a> Odstranit obrazce typu a jeho základní kódu  
   
 1.  Klikněte pravým tlačítkem myši na tvar na návrhové ploše.  
   

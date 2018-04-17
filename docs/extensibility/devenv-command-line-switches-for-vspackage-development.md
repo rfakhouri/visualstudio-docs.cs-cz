@@ -1,12 +1,10 @@
 ---
-title: "Přepínače příkazového řádku nástroje DEVENV pro vývoj VSPackage | Microsoft Docs"
-ms.custom: 
+title: Přepínače příkazového řádku nástroje DEVENV pro vývoj VSPackage | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - /setup command line switch
 - /resetskippkgs command line switch
@@ -17,19 +15,19 @@ helpviewer_keywords:
 - command line, switches
 - Visual Studio SDK, command-line switches
 ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 18c531bb849793de184f3797067dceff4bd10199
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b6ad615048255452fc5642f8680b586d69587db5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Přepínače příkazového řádku nástroje DEVENV pro vývoj VSPackage
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]umožňuje vývojářům k automatizaci úloh z příkazového řádku při provádění devenv.exe, soubor, který spustí integrované vývojové prostředí (IDE) sady Visual Studio.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] umožňuje vývojářům k automatizaci úloh z příkazového řádku při provádění devenv.exe, soubor, který spustí integrované vývojové prostředí (IDE) sady Visual Studio.  
   
  Úkoly patří:  
   
@@ -40,7 +38,7 @@ ms.lasthandoff: 12/22/2017
 -   Načítání IDE v konkrétní konfigurace z mimo prostředí IDE. Kromě toho můžete přizpůsobit IDE při spuštění.  
   
 ## <a name="guidelines-for-switches"></a>Pokyny pro přepínače  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]dokumentace popisuje příkazového řádku DEVENV úrovni uživatele. Další informace najdete v tématu [příkazového řádku DEVENV](../ide/reference/devenv-command-line-switches.md). DEVENV podporuje také další přepínače příkazového řádku, které jsou užitečné s VSPackage vývoj, nasazení a ladění.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dokumentace popisuje příkazového řádku DEVENV úrovni uživatele. Další informace najdete v tématu [příkazového řádku DEVENV](../ide/reference/devenv-command-line-switches.md). DEVENV podporuje také další přepínače příkazového řádku, které jsou užitečné s VSPackage vývoj, nasazení a ladění.  
   
 |Přepínač příkazového řádku|Popis|  
 |--------------------------|-----------------|  

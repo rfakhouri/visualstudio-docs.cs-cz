@@ -1,21 +1,19 @@
 ---
-title: "Návod: Vytváření aplikace | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytváření aplikace | Microsoft Docs'
+ms.custom: ''
 ms.date: 09/25/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 485c8445f24dbd0aaec501649885df50d173347a
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: b94f9b9ba60279c359ce7c6cc3c9646bfbbe7c5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-building-an-application"></a>Postupy: Sestavení aplikace
 
@@ -87,7 +85,7 @@ Dále budete zavedeme některé kód, který způsobí, že má být vygenerová
 
 ![Výstup – okno jazyka Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
 
-![Výstup – okno Visual C &#35; ] (../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![Výstup – okno Visual C&#35;](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
 
 Můžete dočasně skrýt některé zprávy upozornění během sestavení místo kliknul zbytečných souborů až výstupu sestavení.
 
@@ -109,7 +107,7 @@ Můžete dočasně skrýt některé zprávy upozornění během sestavení míst
   
      **Výstup** okně zobrazí pouze souhrnné informace o sestavení.
   
-     ![Output Window, Visual C&#35; Build Warnings](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")  
+     ![Okno výstup, Visual C&#35; sestavení upozornění](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")  
   
 ### <a name="to-suppress-all-visual-basic-build-warnings"></a>Chcete-li potlačit všech upozornění sestavení jazyka Visual Basic
 

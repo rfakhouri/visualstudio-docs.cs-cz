@@ -1,12 +1,10 @@
 ---
-title: "Postupy: registrace pomocí správce objekt knihovny | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: registrace pomocí správce objekt knihovny | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - libraries, registering with object manager
 - IVsLibrary2 interface, registering library with object manager
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - IVsObjectManager2 interface, registering library with object manager
 - libraries, symbol-browsing tools
 ms.assetid: f124dd05-cb0f-44ad-bb2a-7c0b34ef4038
-caps.latest.revision: "26"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 4ecb20a39657fd9a1e668321654dd2a293807adf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 30bf2775c358b107fe299f0d60bc00a2030465e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Postupy: registrace knihovny pomocí Správce objektu
 Procházení symboly nástrojů, jako je například **zobrazení tříd**, **Prohlížeč objektů**, **volání prohlížeče** a **Najít výsledky Symbol**, vám umožní zobrazit symboly v projektu nebo v externích součástí. Symboly zahrnují obory názvů, třídy, rozhraní, metod a další elementy jazyka. Sledování těchto symbolů do knihoven a umístěte je do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] správce objektů, které naplňuje nástroje s daty.  

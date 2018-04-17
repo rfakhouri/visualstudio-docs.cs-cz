@@ -1,23 +1,21 @@
 ---
-title: "AppliesTo – Element (šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: AppliesTo – Element (šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 35e11a53b2b9b63a71aab2858151721cfdfd7f9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo – element (šablony sady Visual Studio)
 Určuje volitelný výraz, který musí odpovídat jedné nebo více možnostem (viz <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>). Možnosti jsou vystavené typy projektů prostřednictvím hierarchie jako vlastnost <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>. Tímto způsobem může šablony sdílet více typů projektů, které mají společné příslušné schopnosti.  
@@ -56,9 +54,9 @@ Určuje volitelný výraz, který musí odpovídat jedné nebo více možnostem 
   
  Platná syntaxe výrazu je definována takto:  
   
--   Výraz funkce, jako je například "(VisualC &#124; CSharp) + (Mstestu &#124; NUnit) ".  
+-   Výraz funkce, jako například "(VisualC &#124; CSharp) + (Mstestu &#124; NUnit)".  
   
--   "&#124;" je operátor OR.  
+-   "&#124;" Je operátor OR.  
   
 -   "A" a "+" znaky jsou obě a operátory.  
   
@@ -68,10 +66,10 @@ Určuje volitelný výraz, který musí odpovídat jedné nebo více možnostem 
   
 -   Hodnota null nebo prázdný výraz jsou vyhodnoceny jako shoda.  
   
--   Možnosti projektu může být jakémukoli znaku kromě těchto vyhrazené znaky: "" :;,+-*/\\! ~ &#124; & %$@^()={} <> []? \t\b\n\r  
+-   Možnosti projektu může být jakémukoli znaku kromě těchto vyhrazené znaky: "" :;,+-*/\\! ~&#124;& %$@^()={} <> []? \t\b\n\r  
   
 ## <a name="example"></a>Příklad  
- Následující příklad ukazuje tři různé šablony. `Template1`buď pro všechny typy projektů jazyka C# nebo jakýkoli jiný typ projektu, který podporuje se vztahuje `WindowsAppContainer` schopností. `Template2`platí pro všechny projekty c jakéhokoli druhu. `Template3`platí pro projekty C#, které nejsou `WindowsAppContainer` projekty.  
+ Následující příklad ukazuje tři různé šablony. `Template1` buď pro všechny typy projektů jazyka C# nebo jakýkoli jiný typ projektu, který podporuje se vztahuje `WindowsAppContainer` schopností. `Template2` platí pro všechny projekty c jakéhokoli druhu. `Template3` platí pro projekty C#, které nejsou `WindowsAppContainer` projekty.  
   
 ```xml  
 <!--  Template 1 -->  

@@ -1,10 +1,8 @@
 ---
-title: "Přizpůsobení map kódu úpravou souborů DGML | Microsoft Docs"
-ms.custom: 
+title: Přizpůsobení map kódu úpravou souborů DGML | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency graphs, creating path aliases
 - dependency graphs, linking items to nodes
@@ -20,15 +18,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0000482b34ea3c98ac6467cbebccc83bd8b5a74
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2a23bc9b82941fda5a771f49a2aaf5c944a210bf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Přizpůsobení map kódu úpravou souborů DGML
 Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Markup Language (.dgml) mapy. Například můžete upravit prvky k určení vlastních stylů, kategorií a vlastností elementy kódu a odkazy, nebo odkaz dokumenty nebo přiřadit adresy URL elementy kódu nebo odkazy. Další informace o DGML elementy najdete v tématu [odkaz směrované grafů Markup Language (DGML)](../modeling/directed-graph-markup-language-dgml-reference.md).  
@@ -38,14 +36,14 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
 > [!NOTE]
 >  Pokud chcete vytvořit map kódu, musí mít Visual Studio Enterprise. Pokud upravujete Mapa kódu v sadě Visual Studio, ho vyčistí všechny nepoužívané DGML elementy a atributy odstraněním je při uložení souboru .dgml. Vytvoří také elementy kódu automaticky při ručně přidáte nové odkazy. Při ukládání souboru .dgml mohou být všechny atributy, které byly přidány do prvku, uspořádány podle abecedy.  
   
-##  <a name="OrganizeNodes"></a>Elementy kódu skupiny  
+##  <a name="OrganizeNodes"></a> Elementy kódu skupiny  
  Můžete přidat nové skupiny nebo převést stávající uzly do skupiny.  
   
 1.  Otevřete soubor .dgml v textovém editoru nebo editoru XML.  
   
 2.  Chcete-li převést element kódu do skupiny, vyhledejte `<Node/>` element pro tento element kódu.  
   
-     \-nebo –  
+     \- nebo –  
   
      Chcete-li přidat novou skupinu, vyhledejte `<Nodes>` části. Přidejte nový `<Node/>` elementu.  
   
@@ -79,7 +77,7 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
   
      Další informace o `Category` atributů najdete v tématu [kategorie přiřadit elementy kódu a odkazy](#AssignCategories).  
   
-##  <a name="ChangeGraphStyle"></a>Umožňuje změnit styl mapy  
+##  <a name="ChangeGraphStyle"></a> Umožňuje změnit styl mapy  
  Barva pozadí a barvu ohraničení mapy můžete změnit úpravou souboru .dgml mapy. Chcete-li změnit styl elementy kódu a odkazy, [změnit styl elementy kódu a odkazy](#Highlight).  
   
 1.  Otevřete soubor .dgml v textovém editoru nebo editoru XML.  
@@ -107,7 +105,7 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
     </DirectedGraph>  
     ```  
   
-##  <a name="Highlight"></a>Umožňuje změnit styl elementy kódu a odkazy  
+##  <a name="Highlight"></a> Umožňuje změnit styl elementy kódu a odkazy  
   
 ###  <a name="CreateCustomStyles"></a>   
  Vlastní styly můžete aplikovat na následující elementy kódu:  
@@ -294,7 +292,7 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
   
      <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>  
   
-     <Operator>:: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "nebo" &#124; "a" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
+     <Operator> :: = "<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "! =" &#124; "nebo" &#124; "a" &#124; "+" &#124; "*" &#124; "/" &#124; "-"  
   
      <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>  
   
@@ -302,15 +300,15 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
   
      <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"  
   
-     <PropertyGet>:: = Identifikátor  
+     <PropertyGet> :: = Identifikátor  
   
      <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>  
   
      <Identifier> ::= [^. ]*  
   
-     <Literal>:: = jednoduchá nebo dvojité uvozovky řetězcový literál  
+     <Literal> :: = jednoduchá nebo dvojité uvozovky řetězcový literál  
   
-     <Number>:: = řetězec číslic potřeby s desetinnou  
+     <Number> :: = řetězec číslic potřeby s desetinnou  
   
      Můžete určit více `<Condition/>` prvky, které musí být hodnota true, má-li použít styl.  
   
@@ -437,7 +435,7 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
 </DirectedGraph>  
 ```  
   
-##  <a name="AssignProperties"></a>Vlastnosti přiřadit elementy kódu a odkazy  
+##  <a name="AssignProperties"></a> Vlastnosti přiřadit elementy kódu a odkazy  
  Elementy kódu a odkazy můžete uspořádat přiřazením vlastnosti. Můžete například vybrat elementy kódu, které mají specifické vlastnosti, takže můžete seskupovat je, změnit jejich styl nebo je skrýt.  
   
 #### <a name="to-assign-a-property-to-a-code-element"></a>Přiřazení vlastnosti na element kódu  
@@ -482,7 +480,7 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
     </Properties>  
     ```  
   
-##  <a name="AssignCategories"></a>Přiřaďte kategorie k elementy kódu a odkazy  
+##  <a name="AssignCategories"></a> Přiřaďte kategorie k elementy kódu a odkazy  
  Následující části ukazují, jak můžete uspořádat elementy kódu přiřazením kategorií a jak můžete vytvořit hierarchické kategorií, které vám pomůžou uspořádání elementy kódu a přidání atributů do kategorií podřízené s použitím dědičnosti.  
   
 #### <a name="to-assign-a-category-to-a-code-element"></a>K přiřazení do kategorií na element kódu  
@@ -553,7 +551,7 @@ Chcete-li přizpůsobit Mapa kódu, můžete upravit soubor směrované grafu Ma
   
      V tomto příkladu pozadí `MyFirstNode` zelený protože jeho `Category` dědí atribut `Background` atribut `MyParentCategory`.  
   
-##  <a name="AddReferences"></a>Dokumenty nebo adresy URL propojit elementy kódu a odkazy  
+##  <a name="AddReferences"></a> Dokumenty nebo adresy URL propojit elementy kódu a odkazy  
  Můžete propojit dokumenty nebo adresy URL elementy kódu nebo odkazy úprav souboru .dgml mapy a přidáním `Reference` atribut `<Node/>` element pro element kódu nebo `<Link/>` element pro připojení. Pak můžete otevřít a zobrazit tento obsah z element kódu nebo odkaz. `Reference` Atribut určuje cestu k obsahu. To může být cesta relativní k umístění souboru .dgml nebo absolutní cesta.  
   
 > [!CAUTION]

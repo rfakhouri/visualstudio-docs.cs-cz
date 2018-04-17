@@ -1,26 +1,24 @@
 ---
-title: "Vlastní uživatelské rozhraní (Zdroj ovládacího prvku VSPackage) | Microsoft Docs"
-ms.custom: 
+title: Vlastní uživatelské rozhraní (Zdroj ovládacího prvku VSPackage) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interface, source control packages
 - source control packages, user interface
 ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
-caps.latest.revision: "28"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3d3c223b45d0228781779a73f057ef3518374344
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ebd2361e94e9b1430f5bac99f2e71dc53a02ebf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>Vlastní uživatelské rozhraní (Zdroj ovládacího prvku VSPackage)
 VSPackage deklaruje jeho položek nabídky a jejich výchozí stavy prostřednictvím soubor Visual Studio příkaz tabulky (.vsct). [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) zobrazí položek nabídky v jejich výchozí stavy, dokud VSPackage je načtena. Následně <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> metoda je volána k povolení nebo zakázání položky nabídky.  
@@ -49,7 +47,7 @@ VSPackage deklaruje jeho položek nabídky a jejich výchozí stavy prostřednic
   
  Požadované <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>, a také všechny volitelné rozhraní přidružené k správě zdrojového kódu, nejsou volána, když se správa zdrojového kódu VSPackage je neaktivní.  
   
- Když [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spustí IDE, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nastaví kontext příkaz uživatelského rozhraní na ID aktuálního zdrojového kódu pro výchozí VSPackage ID. To způsobí, že rozhraní statické prvku aktivní zdrojová VSPackage se objeví v prostředí IDE bez ve skutečnosti načítání VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]pozastaví pro VSPackage při registraci s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> před umožňuje volání VSPackage.  
+ Když [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] spustí IDE, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nastaví kontext příkaz uživatelského rozhraní na ID aktuálního zdrojového kódu pro výchozí VSPackage ID. To způsobí, že rozhraní statické prvku aktivní zdrojová VSPackage se objeví v prostředí IDE bez ve skutečnosti načítání VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pozastaví pro VSPackage při registraci s [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider> před umožňuje volání VSPackage.  
   
  Následující tabulka popisuje konkrétní podrobnosti o tom, jak [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE skryje různé položky uživatelského rozhraní.  
   

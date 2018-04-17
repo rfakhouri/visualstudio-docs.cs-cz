@@ -1,29 +1,25 @@
 ---
-title: "Createnewfolder – Element (šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Createnewfolder – Element (šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#CreateNewFolder
 helpviewer_keywords:
 - CreateNewFolder element [Visual Studio project templates]
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dab5b47904360fbc87b6799affe290cd3ab94398
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0897a5fdd160abf42e28ba6f36755822172fa743
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder – element (šablony sady Visual Studio)
 Určuje, jestli se má zkontrolovat, že cílový adresář, kde má být vytvořen projekt neexistuje. Pokud adresář neexistuje, lze vytvořit nový adresář pro projekt. Toto nastavení je obvykle přepsat `NewProjectRequiresNewFolder(VsTemplate)` příznak registru (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`), všechny běžné typy projektů použít k určení, zda se k vytvoření nového projektu do nového adresáře.  
@@ -64,7 +60,7 @@ Určuje, jestli se má zkontrolovat, že cílový adresář, kde má být vytvo�
  Text musí být buď `true` nebo `false`, která udává, jestli by měl být vytvořena nová složka kontejneru při vytváření projektu ze šablony.  
   
 ## <a name="remarks"></a>Poznámky  
- `CreateNewFolder`je volitelný element. Výchozí hodnota je `true`.  
+ `CreateNewFolder` je volitelný element. Výchozí hodnota je `true`.  
   
  Hodnota zadaná v `CreateNewFolder` element je pouze berou v úvahu [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pokud ji podporuje základní systému projektu.  
   

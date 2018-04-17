@@ -1,31 +1,29 @@
 ---
-title: "Zpráva enumerátor | Microsoft Docs"
-ms.custom: 
+title: Zpráva enumerátor | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6a24db9c50bd298f068c23af0b6bad5755ec252d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: bc945908ac61a0eaa4df49c76725b2291686eac3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="message-enumerator"></a>Enumerátor zpráv
 Následující příznaky se používají pro `TEXTOUTPROC` funkci, která je funkce zpětného volání, která poskytuje rozhraní IDE při volání [SccOpenProject](../extensibility/sccopenproject-function.md) (najdete v části [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) podrobnosti o zpětné volání funkce).  
   
- Pokud IDE se zobrazí výzva k proces zrušit, ale může získat zpráv Storno. V takovém případě zdroj řízení modulu plug-in používá `SCC_MSG_STARTCANCEL` požádat IDE pro zobrazení **zrušit** tlačítko. Potom může být odeslán libovolnou sadu normální zprávy. Pokud platí jedna z těchto vrátí `SCC_MSG_RTN_CANCEL`, pak modul plug-in ukončí operaci a vrátí. Modul plug-in taky dotazuje `SCC_MSG_DOCANCEL` pravidelně k určení, pokud uživatel operaci zrušil. Pokud všechny operace se provádějí, nebo pokud uživatel zrušil, modul plug-in odešle `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, a SCC_MSG_ERROR typy se používají pro zprávy, které se nezobrazí v posouvání seznam zpráv. `SCC_MSG_STATUS`je speciální typ, který označuje, že text by měl zobrazí v stavový řádek nebo dočasné oblasti. Není trvale zůstanou v seznamu.  
+ Pokud IDE se zobrazí výzva k proces zrušit, ale může získat zpráv Storno. V takovém případě zdroj řízení modulu plug-in používá `SCC_MSG_STARTCANCEL` požádat IDE pro zobrazení **zrušit** tlačítko. Potom může být odeslán libovolnou sadu normální zprávy. Pokud platí jedna z těchto vrátí `SCC_MSG_RTN_CANCEL`, pak modul plug-in ukončí operaci a vrátí. Modul plug-in taky dotazuje `SCC_MSG_DOCANCEL` pravidelně k určení, pokud uživatel operaci zrušil. Pokud všechny operace se provádějí, nebo pokud uživatel zrušil, modul plug-in odešle `SCC_MSG_STOPCANCEL`. `SCC_MSG_INFO`, SCC_MSG_WARNING, a SCC_MSG_ERROR typy se používají pro zprávy, které se nezobrazí v posouvání seznam zpráv. `SCC_MSG_STATUS` je speciální typ, který označuje, že text by měl zobrazí v stavový řádek nebo dočasné oblasti. Není trvale zůstanou v seznamu.  
   
 ## <a name="syntax"></a>Syntaxe  
   

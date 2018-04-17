@@ -1,25 +1,22 @@
 ---
-title: "Vědecké zpracování dat a analytických aplikací úloh v sadě Visual Studio | Microsoft Docs"
-description: "Zatížení vědecké zpracování dat a analytických aplikací v sadě Visual Studio spojuje Python, R, F # a jejich odpovídajících runtime distribuce, včetně Anaconda."
-ms.custom: 
+title: Vědecké zpracování dat a analytických aplikací pracovního vytížení
+description: 'Zatížení vědecké zpracování dat a analytických aplikací v sadě Visual Studio spojuje Python, R, F # a jejich odpovídajících runtime distribuce, včetně Anaconda.'
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 - devlang-python
-ms.tgt_pltfrm: 
-ms.topic: landing-page
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 3c84e2f3f79d49596ccd24f9f99da06eecc04351
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5b2a1eccfbf90784d19ded18667e8b336d920892
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-science-and-analytical-applications-workload"></a>Vědecké zpracování dat a analytických aplikací pracovního vytížení
 
@@ -45,7 +42,7 @@ Ve výchozím nastavení nainstaluje zatížení následující možnosti, kter�
   - Podpora jazyka Python
   - [Anaconda3 64-bit](https://www.continuum.io) (distro A Python, která obsahuje překladač Pythonu a vědecké účely knihovny rozsáhlého datového)
   - Podpora webového Python
-  - - Podpora Cookiecutter šablony
+  - Podpora Cookiecutter šablony
 - R:
   - Podpora jazyka R
   - Podpora modulu runtime pro nástroje pro vývoj R

@@ -1,12 +1,10 @@
 ---
-title: "Postupy: Kontrola aktualizací aplikace programově pomocí rozhraní API nasazení ClickOnce | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Kontrola aktualizací aplikace programově pomocí rozhraní API nasazení ClickOnce | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - application updates
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
-caps.latest.revision: "9"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 02e6a4c0b69bf9e9d6170175b4324ccb226854e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 2812a12541d71d29beff453c66344f85be904f5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Postupy: Programová kontrola aktualizací aplikace pomocí rozhraní API nasazení ClickOnce
 ClickOnce nabízí dva způsoby, jak se aktualizace aplikace po nasazení. V metodě první můžete nakonfigurovat nasazení ClickOnce automaticky vyhledávat aktualizace v určitých intervalech. V druhé metody můžete napsat kód, který používá <xref:System.Deployment.Application.ApplicationDeployment> třídy ke kontrole aktualizací založené na události, jako je například požadavek uživatele.  
@@ -50,7 +48,7 @@ ClickOnce nabízí dva způsoby, jak se aktualizace aplikace po nasazení. V met
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Použití Mage.exe k nasazení aplikace, která kontroluje aktualizace prostřednictvím kódu programu  
   
--   Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je popsáno v [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Při volání Mage.exe pro generování manifestu nasazení, nezapomeňte použít přepínač příkazového řádku `providerUrl`a chcete zadat adresu URL, kde by měla ClickOnce vyhledat aktualizace. Pokud vaše aplikace bude z aktualizovat [http://www.adatum.com/MyApp](http://www.adatum.com/MyApp), například volání ke generování manifestu nasazení může vypadat například takto:  
+-   Postupujte podle pokynů pro nasazení aplikace pomocí Mage.exe, jak je popsáno v [návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Při volání Mage.exe pro generování manifestu nasazení, nezapomeňte použít přepínač příkazového řádku `providerUrl`a chcete zadat adresu URL, kde by měla ClickOnce vyhledat aktualizace. Pokud vaše aplikace bude z aktualizovat [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), například volání ke generování manifestu nasazení může vypadat například takto:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  

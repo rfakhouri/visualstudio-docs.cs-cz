@@ -1,27 +1,23 @@
 ---
-title: "Projekt podtypů návrhu | Microsoft Docs"
-ms.custom: 
+title: Projekt podtypů návrhu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, design
 ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 126bee146d1f53233db3c14672f80da4c0d60e9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6a931d6509b5a8a90f371986f4ddb8955c64387d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-subtypes-design"></a>Návrh podtypů projektu
 Projekt podtypů umožní VSPackages rozšířit projekty založené na Microsoft Build Engine (MSBuild). Použití agregace, můžete znovu použít hromadné implementované v systému projektu jádro spravované [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ještě stále přizpůsobit chování pro konkrétní scénář.  
@@ -63,7 +59,7 @@ Podtyp víceúrovňové projektu
  Podtypem agregace víceúrovňovou projektu se skládá ze tří úrovní základní projektu, který je agregaci podtypem projektu a pak další agregaci podtypem pokročilé projektu. Obrázek se zaměřuje na některé podpůrné rozhraní, které jsou k dispozici jako součást [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projektu dílčí architektura.  
   
 ##### <a name="deployment-mechanisms"></a>Mechanismy nasazení  
- Mezi mnoha systému základní projektu jsou funkce vylepšit určením podtypem projektu nasazení mechanismy. Podtyp projekt vliv nasazení mechanismy implementací rozhraní pro konfiguraci (například <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>), se načítají pomocí volání QueryInterface na <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. Ve scénáři, kde dílčí projektu a dílčí pokročilé projektu přidejte jinou konfiguraci implementace, základní projekt volá `QueryInterface` na dílčí pokročilé projektu `IUnknown`. Pokud dílčí vnitřní projekt obsahuje implementace konfigurace, který základní projekt se žádostí o pokročilé projektu dílčí delegáty pro implementaci poskytované dílčí vnitřní projektu. Jako mechanismus pro zachování stavu z úrovně jeden agregace, všechny úrovně projektu podtypů implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> udržení bez sestavení související XML data do souborů projektu. Další informace najdete v tématu [uchování dat v souboru projektu nástroje MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider>je implementovaný jako mechanismus pro načtení automatizace Extender z podtypů projektu.  
+ Mezi mnoha systému základní projektu jsou funkce vylepšit určením podtypem projektu nasazení mechanismy. Podtyp projekt vliv nasazení mechanismy implementací rozhraní pro konfiguraci (například <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>), se načítají pomocí volání QueryInterface na <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider>. Ve scénáři, kde dílčí projektu a dílčí pokročilé projektu přidejte jinou konfiguraci implementace, základní projekt volá `QueryInterface` na dílčí pokročilé projektu `IUnknown`. Pokud dílčí vnitřní projekt obsahuje implementace konfigurace, který základní projekt se žádostí o pokročilé projektu dílčí delegáty pro implementaci poskytované dílčí vnitřní projektu. Jako mechanismus pro zachování stavu z úrovně jeden agregace, všechny úrovně projektu podtypů implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> udržení bez sestavení související XML data do souborů projektu. Další informace najdete v tématu [uchování dat v souboru projektu nástroje MSBuild](../../extensibility/internals/persisting-data-in-the-msbuild-project-file.md). <xref:EnvDTE80.IInternalExtenderProvider> je implementovaný jako mechanismus pro načtení automatizace Extender z podtypů projektu.  
   
  Na následujícím obrázku se zaměřuje na implementace rozšiřujícího objektu automatizace, procházet objekt konfigurace projektu na konkrétní používané podtypů projektu rozšíření systému základní projektu.  
   

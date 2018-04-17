@@ -1,29 +1,25 @@
 ---
 title: IDebugDocument2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugDocument2
 helpviewer_keywords:
 - IDebugDocument2 interface
 ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175be5f50b03573b13df8a8c0d2a9a0e1e921cc7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 36ac127e6cd6e25fd42c4859e723c883ecaffa82
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 Toto rozhraní představuje zdrojový dokument.  
@@ -35,7 +31,7 @@ IDebugDocument2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]obvykle toto rozhraní implementuje. Modul ladění (DE) můžete také implementovat toto rozhraní je nutné ho zadat zdrojový kód a zdroj neexistuje na disku.  V takových případech by také implementovat DE [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) a [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) rozhraní, jakož i některé další metody na [ IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) a [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) rozhraní.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] obvykle toto rozhraní implementuje. Modul ladění (DE) můžete také implementovat toto rozhraní je nutné ho zadat zdrojový kód a zdroj neexistuje na disku.  V takových případech by také implementovat DE [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) a [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md) rozhraní, jakož i některé další metody na [ IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) a [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) rozhraní.  
   
 ## <a name="notes-for-callers"></a>Poznámky pro volající  
  Metody `IDebugDocumentContext2`, `IDebugDisassemblyStream2`, `IDebugDocumentPosition2`, a `IDebugActivateDocumentEvent2` rozhraní vrátit toto rozhraní.  
@@ -56,7 +52,7 @@ IDebugDocument2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [IsPositionInDocument](../../../extensibility/debugger/reference/idebugdocumentposition2-ispositionindocument.md)   

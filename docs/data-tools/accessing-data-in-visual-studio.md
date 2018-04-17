@@ -1,7 +1,7 @@
 ---
 title: Přístup k datům v sadě Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - "80025080"
 helpviewer_keywords:
@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 82717e8b0eb8b4b751fc8c5ed983695ff6b6fc4a
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: ef1c833cb44d05a910cb3c042c295c372c9b4b06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
@@ -33,7 +33,7 @@ Následující seznamy shrnují jen některé z mnoha systémy databáze a úlo�
 
 ||||
 |-|-|-|
-|SQL Database|Azure Cosmos DB|Úložiště (objekty BLOB, tabulek, front, souborů)|
+|Databáze SQL|Azure Cosmos DB|Úložiště (objekty BLOB, tabulek, front, souborů)|
 |Datový sklad SQL|SQL Server Stretch Database|Zařízení StorSimple|
 
 a další...

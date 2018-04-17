@@ -1,12 +1,10 @@
 ---
 title: -Znovu sestavit (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Devenv, /rebuild switch
 - rebuild Devenv switch (/rebuild)
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - /rebuild Devenv switch
 - applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 957e987854aae91b72c5cd6109e279253a5772b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0daaba0ddb30b2fe277d2ef1b51ee4c82ff50366
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 Vyčistí a potom vytvoří Zadaná konfigurace řešení.  
@@ -41,10 +39,10 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
  `SolutionName`  
  Požadováno. Úplná cesta a název souboru, řešení.  
   
- / Project`ProjName`  
+ / Project `ProjName`  
  Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z `SolutionName` složku pro soubor projektu nebo projektu zobrazovaný název, nebo úplnou cestu a název souboru projektu.  
   
- / projectconfig –`ProjConfigName`  
+ / projectconfig – `ProjConfigName`  
  Volitelné. Konfigurace, který se má použít při opětovném sestavování sestavení název projektu `/project` s názvem.  
   
 ## <a name="remarks"></a>Poznámky  

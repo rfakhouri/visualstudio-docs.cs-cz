@@ -1,13 +1,8 @@
 ---
-title: "Správa odkazů v projektu | Microsoft Docs"
-ms.custom: 
-ms.date: 10/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Správa odkazů v projektu
+ms.date: 04/11/2018
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
 - cs.ProjectPropertiesReferencePaths
@@ -24,24 +19,24 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ede31cadef7048b2f75ca652efea9b01716351e
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: ef62d3ab0436ff8b20766f2ffe88506d73c8f03b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="managing-references-in-a-project"></a>Správa odkazů v projektu
+# <a name="manage-references-in-a-project"></a>Správa odkazů v projektu
 
 Než psát kód pro místní externí komponenta nebo připojené služby, projektu musí nejprve obsahovat odkaz na jeho. Odkaz je v podstatě položku v souboru projektu, který obsahuje informace, že Visual Studio se musí vyhledat daná komponenta nebo služba.
 
-Chcete-li přidat odkaz, klikněte pravým tlačítkem na uzel odkazy v Průzkumníku řešení a zvolte **přidat odkaz na**. Další informace najdete v tématu [postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
+Přidat odkaz, klikněte pravým tlačítkem na **odkazy** nebo **závislosti** uzlu v **Průzkumníku řešení** a zvolte **přidat odkaz na**. Můžete také kliknout pravým tlačítkem na uzel projektu a vyberte **přidat** > **odkaz**. Další informace najdete v tématu [postupy: Přidání nebo odebrání odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md).
 
-![Přidat odkaz v jazyce Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png "vs2015_cpp_add_reference")
+![Přidat odkaz v jazyce Visual C&#43;&#43;](../ide/media/vs2015_cpp_add_reference.png)
 
-Můžete nastavit odkaz na následující typy součástmi a službami:
+Můžete přidat odkaz na následující typy součástmi a službami:
 
 - Knihovna tříd rozhraní .NET framework nebo sestavení
 
@@ -81,11 +76,11 @@ Pokud zjistíte, že rozšíření sady SDK, se na ně odkazovat aplikace není 
 
 1. Restartujte Visual Studio a otevřete v aplikaci.
 
-1. Klikněte pravým tlačítkem na **odkazy** uzlu v projektu, který způsobil chybu a zvolte **přidat odkaz na**.
+1. Klikněte pravým tlačítkem na **odkazy** nebo **závislosti** uzlu v projektu, který způsobil chybu a zvolte **přidat odkaz na**.
 
 1. Klikněte na tlačítko **Windows** kartu a potom **rozšíření** dílčí, poté zrušte zaškrtnutí políček pro původní sady SDK rozšíření a zkontrolujte políček pro nové sady SDK rozšíření. Click **OK**.
 
-## <a name="adding-a-reference-at-design-time"></a>Přidání odkazu na v době návrhu
+## <a name="add-a-reference-at-design-time"></a>Přidat odkaz v době návrhu
 
 Když do projektu odkaz na sestavení, Visual Studio vyhledává sestavení v následujících umístěních:
 
@@ -94,7 +89,9 @@ Když do projektu odkaz na sestavení, Visual Studio vyhledává sestavení v n�
 - Další adresáře projektu ve stejném řešení. (Tyto sestavení můžete najít na **projekty** karta.)
 
 > [!NOTE]
-> Všechny projekty obsahují implicitní odkaz na mscorlib. Projekty Visual Basic obsahují implicitní odkaz na `Microsoft.VisualBasic`. Všechny projekty obsahují implicitní odkaz na `System.Core`i v případě `System.Core` se odebere ze seznamu odkazů.
+> - Všechny projekty obsahují implicitní odkaz na mscorlib.
+> - Všechny projekty obsahují implicitní odkaz na `System.Core`i v případě `System.Core` se odebere ze seznamu odkazů.
+> - Projekty Visual Basic obsahují implicitní odkaz na `Microsoft.VisualBasic`.
 
 ## <a name="references-to-shared-components-at-run-time"></a>Odkazy na sdílené komponenty v době běhu
 
@@ -104,9 +101,9 @@ Pokud nasadíte aplikaci, která obsahuje odkaz na komponentu vlastní, které j
 
 Ve výchozím nastavení <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> je nastavena na **False** Pokud sestavení nebo součást je v globální mezipaměti sestavení nebo komponentu prostředí. Jinak je hodnota nastavená **True**. Odkazy na projekt na projekt jsou vždy nastavená **True**.
 
-## <a name="referencing-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Odkazování na projekt nebo sestavení, které jinou verzi rozhraní .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Odkaz na projekt nebo sestavení, které jinou verzi rozhraní .NET Framework
 
-Můžete vytvořit aplikace, které odkazují na projekty nebo sestavení, které jinou verzi rozhraní .NET Framework. Například můžete vytvořit aplikace s cílem [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)], který odkazuje na sestavení, která je cílena [!INCLUDE[dnprdnext](../ide/includes/dnprdnext_md.md)]. Pokud vytvoříte projekt, který se zaměřuje na starší verzi [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], nemůžete nastavit odkaz v tomto projektu projekt nebo sestavení, která je cílena na novější verzi.
+Můžete vytvořit aplikace, které odkazují na projekty nebo sestavení, které jinou verzi rozhraní .NET Framework. Například můžete vytvořit aplikace s cílem rozhraní .NET Framework 4.6, které odkazuje na sestavení, která je cílena rozhraní .NET Framework 4.5. Pokud vytvoříte projekt, který se zaměřuje na starší verzi rozhraní .NET Framework, nemůžete nastavit odkaz v tomto projektu projekt nebo sestavení, která je cílena na novější verzi.
 
 Další informace najdete v tématu [přehled cílení na více](../ide/visual-studio-multi-targeting-overview.md).
 
@@ -125,5 +122,5 @@ Odkazy na soubory jsou přímé odkazy na sestavení mimo kontext projekt sady V
 
 ## <a name="see-also"></a>Viz také
 
-[Řešení potíží s poškozenými odkazy](../ide/troubleshooting-broken-references.md)
-[postupy: Přidání nebo odebrání odkazů pomocí Správce odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+- [Řešení potíží s poškozenými odkazy](../ide/troubleshooting-broken-references.md)
+- [Postupy: Přidání nebo odebrání odkazů](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)

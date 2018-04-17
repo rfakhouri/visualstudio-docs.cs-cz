@@ -1,27 +1,23 @@
 ---
-title: "Glosář sady Visual Studio SDK | Microsoft Docs"
-ms.custom: 
+title: Glosář sady Visual Studio SDK | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0f7eaed09df717eb0746076715f9c780464df1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0a08985c4977896e35fa8cd94014385ac32dd8bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glosář sady Visual Studio SDK
 Tento glosář poskytuje definice podmínek, které se používají v [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] dokumentaci.  
@@ -76,7 +72,7 @@ Tento glosář poskytuje definice podmínek, které se používají v [!INCLUDE[
  Lze obecně naleznete v dokumentu jako celku – jak `DocData` a `DocView`. Například DocumentFrame obsahuje `DocView`, ale také zachová odkaz na `DocData` pro zpracování trvalost.  
   
  DocView  
- DocObject, vkládání objektů nebo WindowPane, pomocí kterého uživatel pracuje k zobrazení a manipulaci s základní `DocData`. Všimněte si, uživatelé nemusí provádět žádné výhod Document/View – oddělení, který je součástí `DocObject` rozhraní návrhu. Uživatelé používat celý DocObject tak, aby fungoval jako zobrazení místo použití více abstraktní (a méně formalizovanou) hodnoty základní dat označuje jako `DocData`. `DocView`objekty jsou vždy integrované s objekty rámce dokumentu (podřízených oken MDI) rozhraní IDE.  
+ DocObject, vkládání objektů nebo WindowPane, pomocí kterého uživatel pracuje k zobrazení a manipulaci s základní `DocData`. Všimněte si, uživatelé nemusí provádět žádné výhod Document/View – oddělení, který je součástí `DocObject` rozhraní návrhu. Uživatelé používat celý DocObject tak, aby fungoval jako zobrazení místo použití více abstraktní (a méně formalizovanou) hodnoty základní dat označuje jako `DocData`. `DocView` objekty jsou vždy integrované s objekty rámce dokumentu (podřízených oken MDI) rozhraní IDE.  
   
  DTE  
  `DTE` Objektu (rozšíření nástrojů vývoj) je nejvyšší přístupový bod v sadě Visual Studio automatizace modelu, který umožňuje prostřednictvím kódu programu automatizovat a rozšířit rozhraní IDE.  

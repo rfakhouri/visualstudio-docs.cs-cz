@@ -1,23 +1,21 @@
 ---
-title: "Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage | Microsoft Docs"
-ms.custom: 
+title: 'Nejčastější dotazy: Převádění doplňků na rozšíření VSPackage | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 43376b304637ffe59d443ee82350d5492133db2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daec495ee71bf27bc40174b74cd95a6df47c247f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Nejčastější dotazy: Převádění doplňků na VSPackage rozšíření
 Doplňky jsou nyní zastaralé. Chcete-li nové rozšíření sady Visual Studio, potřebujete vytvořit VSIX rozšíření. Tady najdete odpovědi na některé nejčastější dotazy o tom, jak převést přidat v sadě Visual Studio na VSIX rozšíření.  
@@ -41,7 +39,7 @@ Doplňky jsou nyní zastaralé. Chcete-li nové rozšíření sady Visual Studio
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Můžete převést Moje v projektu doplňku do projektu VSIX?  
  O projekt nelze převést přímo do projektu VSIX, protože mechanismy VSIX projekty nejsou stejná jako v doplňku projekty. Šablona projektu VSIX plus šablony položek projektu správné značnou kód, který je poměrně snadné ke zprovoznění a spuštěná jako rozšíření VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a>Jak spustit vývoje rozšíření VSIX?  
+##  <a name="BKMK_StartDeveloping"></a> Jak spustit vývoje rozšíření VSIX?  
  Zde je, jak provedete VSIX, který má příkaz nabídky:  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Chcete-li rozšíření VSIX, který má příkaz nabídky  
@@ -56,7 +54,7 @@ Doplňky jsou nyní zastaralé. Chcete-li nové rozšíření sady Visual Studio
   
      Na **nástroje** nabídky (v experimentální instanci) byste měli vidět tlačítko s názvem **název Moje příkazu**. Pokud toto tlačítko, by se zobrazit zpráva: **uvnitř TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a>Jak můžete spustit vlastního kódu doplňku v VSPackage?  
+##  <a name="BKMK_RunAddin"></a> Jak můžete spustit vlastního kódu doplňku v VSPackage?  
  Kódu doplňku obvykle běží v jednom ze dvou způsobů:  
   
 -   Aktivuje příkazu nabídky (kód je v `IDTCommandTarget.Exec` metoda)  

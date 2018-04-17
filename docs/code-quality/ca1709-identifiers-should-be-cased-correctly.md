@@ -1,12 +1,10 @@
 ---
-title: "CA1709: Identifikátory by měla být použita správně | Microsoft Docs"
-ms.custom: 
+title: 'CA1709: Identifikátory by měla být použita správně | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
 - CA1709
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - CA1709
 - IdentifiersShouldBeCasedCorrectly
 ms.assetid: f633d1a7-4ca4-40ae-b207-ec571c5fb083
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f563ca87212b6f4af45f68987469b0c1370a7a18
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 5c010019c2ae5d1044d11c02c22428dda4197fcd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Malá a velká písmena identifikátorů by měla být použita správně
 |||  
@@ -36,11 +34,11 @@ ms.lasthandoff: 12/22/2017
 ## <a name="cause"></a>příčina  
  Název identifikátoru není použita správně.  
   
- \-nebo –  
+ \- nebo –  
   
  Název identifikátoru obsahuje zkratku dvoupísmenným a druhé písmeno je malá písmena.  
   
- \-nebo –  
+ \- nebo –  
   
  Název identifikátoru obsahuje zkratka tři nebo více velkých písmen.  
   

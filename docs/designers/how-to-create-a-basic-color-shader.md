@@ -1,23 +1,21 @@
 ---
-title: "Postupy: vytvoření základní barva shaderu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytvoření základní barva shaderu | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
-caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7c0992b8db46155a709f58714dfd427882674d2f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 762b9076e36b53102abc89284ca06da2e6cdf56b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Postupy: Vytvoření shaderu základní barvy
 Tento dokument ukazuje, jak vytvořit plochý barevný shaderu pomocí návrháře shaderu a jazyk shaderu grafu (DGSL) přesměruje. Tento shaderu nastaví barvu konečné na konstantní hodnotu barva RGB.  
@@ -54,7 +52,7 @@ Tento dokument ukazuje, jak vytvořit plochý barevný shaderu pomocí návrhá�
 > [!NOTE]
 >  Na obrázku oranžovou barvu zadaná lépe předvedení účinek shaderu.  
   
- ![Graf shaderu a jeho výsledek a 3 &#45; D modelu](../designers/media/digit-flat-color-effect.png "číslice dvojrozměrném barevný efekt")  
+ ![Graf shaderu a jeho výsledek a 3&#45;D modelu](../designers/media/digit-flat-color-effect.png "číslice dvojrozměrném barevný efekt")  
   
  Určité tvarů může poskytovat lepší verze Preview pro některé shadery. Další informace o tom, jak zobrazit náhled shadery v Návrháři shaderu najdete v tématu [shaderu Návrhář](../designers/shader-designer.md).  
   

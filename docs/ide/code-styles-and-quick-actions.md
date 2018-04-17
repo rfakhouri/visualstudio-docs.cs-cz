@@ -1,24 +1,22 @@
 ---
-title: "Visual Studio kódu stylu předvoleb | Microsoft Docs"
-ms.custom: 
+title: Visual Studio kódu stylu předvoleb | Microsoft Docs
+ms.custom: ''
 ms.date: 03/10/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-ms.workload: multiple
-ms.openlocfilehash: 741df95afdd7c7e8b6f0ba2de75c1465cd35cc97
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+ms.workload:
+- multiple
+ms.openlocfilehash: 4898a2e4a55f5c11179ae5a00e46c87a44519a7b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-style-preferences"></a>Kód stylu předvoleb
 
@@ -30,7 +28,7 @@ Pro každou položku, můžete nastavit **předvoleb** a **závažnost** hodnoty
 
 Kód nastavení stylů pro rozhraní .NET můžete také spravovat pomocí [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) souboru. V takovém případě nastavení v souboru EditorConfig mají přednost před možnosti vybrané v **možnosti** dialogové okno. Soubor EditorConfig slouží k vynucení a nakonfigurovat stylu psaní kódu pro celý úložišti nebo projektu.
 
-## <a name="see-also"></a>Viz také
+### <a name="see-also"></a>Viz také
 
 [Rychlé akce](../ide/quick-actions.md)  
 [Kódování nastavení konvence pro EditorConfig rozhraní .NET](../ide/editorconfig-code-style-settings-reference.md)

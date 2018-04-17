@@ -2,11 +2,8 @@
 title: Co je nového ve Visual Studio 2017 | Microsoft Docs
 ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,14 +13,14 @@ helpviewer_keywords:
 ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bddaec413e1a0b0a9e2096a614d7b5a574e0e7e
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: c7c2ce39143bbc4be2e7dc2e077d93ee7a1fff52
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s nové v Visual Studio 2017
 #### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aktualizováno pro [15.6 verze](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -245,7 +242,7 @@ Další informace najdete v tématu [Visual Studio a Xamarin](../cross-platform/
 
 ![Animace pár Xamarin Live Player, nasazení a režimy provozu úpravy](../ide/media/xamarinliveplayer.gif)
 
-### <a name="visual-studio-app-center"></a>Visual Studio App Center
+### <a name="visual-studio-app-center"></a>Centrum aplikace Visual Studio
 **Nové v 15,5**: Centrum aplikace Visual Studio&mdash;tedy nyní obecně dostupné pro Android, iOS, Windows a systému macOS aplikace&mdash;obsahuje všechno, co musíte provést správu životního cyklu aplikací, včetně automatizovaných sestaveních testování v reálném zařízení v cloudu, distribuci do beta testery a obchody s aplikacemi a z reálného využití prostřednictvím havárií a analýzy dat monitorování. Aplikace napsané v Objective-C, Swift, Java, C#, Xamarin a reagovat nativní jsou podporovány v rámci všech funkcí.
 
   ![Centrum aplikace Visual Studio testovacího prostředí](../ide/media/app-center-test-env.png)

@@ -1,29 +1,25 @@
 ---
-title: "Rozšířené dialogové okno nastavení sestavení (C#) | Microsoft Docs"
-ms.custom: 
+title: Rozšířené dialogové okno nastavení sestavení (C#) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/20/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44694e84fc0ab83ca4caf7bf80535dcae50a636f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 406b25a3130b69b94486e866479e819dc68e70a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Dialogové okno Upřesnit nastavení sestavení (C#)
 
@@ -71,7 +67,7 @@ Použití **Upřesnit nastavení sestavení** dialogové okno s **Návrhář pro
 - **pdbonly**
 
   Umožňuje zdrojového kódu, ladění, když program běží v ladicím programu, ale zobrazí jenom assembleru po spuštěným programem k ladicího programu.
-- **přenosná**
+- **Přenositelností**
 
   Vytváří. Soubor PDB, soubor platformy konkrétní, přenosné symbol, který poskytuje jiných nástrojů, zejména ladicí programy, informace o tom, co je v hlavní spustitelný soubor a jak bylo vytvořeno. V tématu [přenosné PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) Další informace.
 

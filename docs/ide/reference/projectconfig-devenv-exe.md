@@ -1,12 +1,10 @@
 ---
 title: -ProjectConfig (devenv.exe) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - /projectconfig Devenv switch
 - configurations, rebuilding
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - projects [Visual Studio], cleaning
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6069ed9b15ed49f2f7c7a5113f1377cebdd031fc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 26883d4149047df980763da8bdda764f8ad802b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 Určuje, který bude použit při sestavení, vyčistit, znovu sestavit nebo nasazení projektu s názvem v konfigurace sestavení projektu `/project` argument.  
@@ -59,10 +57,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
  `SolutionName`  
  Požadováno. Úplná cesta a název souboru, řešení.  
   
- / Project`ProjName`  
+ / Project `ProjName`  
  Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z `SolutionName` složku pro soubor projektu nebo projektu zobrazovaný název, nebo úplnou cestu a název souboru projektu.  
   
- / projectconfig –`ProjConfigName`  
+ / projectconfig – `ProjConfigName`  
  Volitelné. Konfigurace, které má být použita pro sestavení název projektu `/project` s názvem.  
   
 ## <a name="remarks"></a>Poznámky  

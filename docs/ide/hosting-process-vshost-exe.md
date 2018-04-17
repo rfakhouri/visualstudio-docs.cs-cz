@@ -1,32 +1,30 @@
 ---
-title: "Proces hostování (vshost.exe) | Microsoft Docs"
-ms.custom: 
+title: Proces hostování (vshost.exe) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - vshost.exe
 - hosting process
 ms.assetid: c6b9e2be-f18d-4d75-ac52-56d55784734b
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 716d19362495fccf475a068a28a9fe2acbe27b53
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9f11bed43a9595a3ce0034555f05a18f7a9dfa7d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hosting-process-vshostexe"></a>Proces hostování (vshost.exe)
-Proces hostování je funkce v sadě Visual Studio, který zlepšuje ladění, povolí ladění na částečné důvěryhodnosti a umožňuje vyhodnocení výrazu doby návrhu. Hostitelský proces soubory obsahují vshost v názvu souboru a jsou umístěny v zadané výstupní složce projektu. Další informace najdete v tématu [ladění a proces hostování](../debugger/debugging-and-the-hosting-process.md).  
+Proces hostování je funkce v sadě Visual Studio, který zlepšuje ladění, povolí ladění na částečné důvěryhodnosti a umožňuje vyhodnocení výrazu doby návrhu. Hostitelský proces soubory obsahují *vshost* v souboru název a jsou umístěny v zadané výstupní složce projektu. Další informace najdete v tématu [ladění a proces hostování](../debugger/debugging-and-the-hosting-process.md).  
   
 > [!NOTE]
->  Hostování zpracování souborů (. vshost.exe) je pro použití v sadě Visual Studio a nesmí být spustit přímo nebo nasazení s vaší aplikací.  
+>  Hostování zpracovat soubory (*. vshost.exe*) je pro použití v sadě Visual Studio a nesmí být spustit přímo nebo nasazení s vaší aplikací.  
   
 ## <a name="improved-debugging-performance"></a>Vylepšení ladění výkonu  
  Proces hostování domény aplikace vytvoří a přidruží ladicího programu s aplikací. Provádění těchto úkolů můžou vést významnému zpoždění mezi ladění v době spuštění a čas aplikace zahájí spuštění. Proces hostování pomáhá zvýšit výkon pomocí vytváření domény aplikace a přidružení v ladicím programu na pozadí a ukládání domény aplikace a stav ladicí program mezi spustí aplikace. Další informace o aplikační domény najdete v tématu [aplikační domény](/dotnet/framework/app-domains/application-domains).  

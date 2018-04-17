@@ -1,13 +1,10 @@
 ---
-title: "Správa výjimek pomocí ladicího programu sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Správa výjimek pomocí ladicího programu sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -33,17 +30,16 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 978c78ba68460a2f038d85afb92246275acfb9ef
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 063f4581a741325ce34022b731322cf0a4e37e39
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Správa výjimek pomocí ladicího programu v sadě Visual Studio
 
@@ -145,7 +141,7 @@ Pokud jste vybrali k výjimce v **nastavení výjimky** okně spuštění ladic�
   
  ![Obnovit výchozí nastavení v nastavení výjimky](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a>Řekněte ladicí program na pokračovat při výjimkách neošetřených uživatelem  
+##  <a name="BKMK_UserUnhandled"></a> Řekněte ladicí program na pokračovat při výjimkách neošetřených uživatelem  
  Pokud ladíte .NET nebo JavaScript kód s [pouze můj kód](../debugger/just-my-code.md), se dá zjistit ladicího programu není na přerušení na výjimky, které nejsou zpracovány v uživatelském kódu, ale jsou zpracovávány jinde.  
   
 1.  V **nastavení výjimky** okno, otevřete v místní nabídce kliknete pravým tlačítkem do okna a potom výběrem **zobrazit sloupce**. (Pokud jste vypnuli **pouze můj kód**, tento příkaz nezobrazí.)  
@@ -156,7 +152,7 @@ Pokud jste vybrali k výjimce v **nastavení výjimky** okně spuštění ladic�
   
  Například webové aplikace ASP.NET zpracování výjimek převedením na stavový kód HTTP 500 ([zpracování výjimek v rozhraní API ASP.NET](http://www.asp.net/web-api/overview/error-handling/exception-handling)), který nemusí vám pomůže určit zdroj výjimky. V následujícím příkladu uživatelský kód zavolá `String.Format()` , vyvolá <xref:System.FormatException>. Provádění dělí takto:  
   
- ![zalomení na uživatele & č. 45; výjimka unhanlded](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![dělí na uživatele&#45;unhanlded výjimka](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ## <a name="add-and-delete-exceptions"></a>Přidávání a odstraňování výjimek  
  Můžete přidat a odstranit výjimky. Odstraněním libovolného typu výjimka kategorie výjimka výběrem a kliknutím na **odstranit** na tlačítko (znaménka minus) **nastavení výjimky** panelu nástrojů nebo kliknete pravým tlačítkem na výjimku a Výběr **odstranit** v místní nabídce. Odstraňování výjimku má stejný účinek jako s výjimkou není zaškrtnuto, což je, že nebudou porušovat ladicí program, když je vyvolána.  
@@ -190,7 +186,7 @@ public class GenericException<T> : Exception
 Můžete nastavit podmínky, na výjimky v **nastavení výjimky** dialogové okno. Aktuálně podporované podmínky zahrnují názvy modulu pro zahrnutí nebo vyloučení pro výjimku. Nastavením názvy modulů jako podmínky můžete rozdělit pro výjimky pouze na konkrétní kódové moduly nebo se můžete vyhnout narušující na konkrétní moduly.
 
 > [!NOTE]
-> Přidání podmínek do výjimku je nového v[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> Přidání podmínek do výjimku je nového v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Chcete-li přidat podmíněného výjimky, zvolte **upravit podmínky** ikona v dialogovém okně Nastavení výjimky nebo klikněte pravým tlačítkem na výjimku a zvolte **upravit podmínky**.
 

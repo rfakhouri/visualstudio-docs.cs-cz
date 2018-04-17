@@ -1,12 +1,10 @@
 ---
-title: "Programování s nástroji Visual Studio Tools for Unity a Azure | Microsoft Docs"
-ms.custom: 
+title: Programování s nástroji Visual Studio Tools for Unity a Azure | Microsoft Docs
+ms.custom: ''
 ms.date: 12/18/2017
 ms.reviewer: crdun
-ms.suite: 
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
 author: dantogno
 ms.author: v-davian
@@ -14,11 +12,11 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: e7fab0df3f8f957c5c2b35fcf64c2e717358148f
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5230ecda1c817ec5be51019f6db793210a3d7a5d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="programming-with-unity-and-azure"></a>Programování s Unity a Azure
 
@@ -35,7 +33,7 @@ Navštivte [Sandbox](/sandbox/) pokusit následující experimentální Azure SD
 * [Centra událostí Azure SDK for Unity](https://aka.ms/azeventhubsgamedev)
 * [Azure SDK mobilních aplikací pro Unity](https://aka.ms/azmobileappsgamedev)
 
-## <a name="azure-sdk-sample"></a>Azure SDK Sample
+## <a name="azure-sdk-sample"></a>Azure SDK – ukázka
 
 K dispozici je také [jednoduchého ukázkového herní](https://aka.ms/azmobileappsracer) pomocí Azure snadno tabulky SDK a Unity. Úložiště dat snadno tabulky Azure herní používá ke sledování vysokou žebříček stanovení skóre a ukládání telemetrie ve hře a je k dispozici pro [stáhnout z webu GitHub](https://aka.ms/azsamples-unity).
 

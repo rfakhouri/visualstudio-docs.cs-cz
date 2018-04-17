@@ -1,27 +1,23 @@
 ---
-title: "Přidávání položek do pro přidání nové položky dialogových oken | Microsoft Docs"
-ms.custom: 
+title: Přidávání položek do pro přidání nové položky dialogových oken | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7058d097ab3eb6faeb8acf96b98ae6346887361
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>Přidávání položek do pro přidání nové položky dialogových oken
 Proces přidávání položek do **přidat novou položku** dialogové okno začíná klíče registru. Jak ukazuje následující položky registru, obsahuje cestu a název adresáře, ve které položky k dispozici v části AddItemTemplates **přidat novou položku** daly dialogové okno.  
@@ -69,7 +65,7 @@ Proces přidávání položek do **přidat novou položku** dialogové okno zač
  V projektu jazyka Visual Basic, můžete například mít webové projekty a klientského projektu. Webové formuláře nejsou užitečné položek, které chcete přidat do projektu klienta a windows forms nejsou užitečné položek, které chcete přidat do projektu webového serveru. Proto můžete vytvořit jeden adresář šablony, která obsahuje všechny soubory pro oba typy projektu. Potom implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>, můžete skrýt, položky, které by se neměly zobrazovat, v závislosti na typu projektu nebo nastavení projektu v projektu.  
   
 ## <a name="filtering-project-items"></a>Filtrování položek projektu  
- `IVsFilterAddProjectItemDlg2`poskytuje pro filtrování elementů ve stromu (levé podokno) a soubory projektu (pravé podokno) následujícím způsobem:  
+ `IVsFilterAddProjectItemDlg2` poskytuje pro filtrování elementů ve stromu (levé podokno) a soubory projektu (pravé podokno) následujícím způsobem:  
   
 -   Lokalizované názvy (titulky zobrazí v dialogovém okně, které jsou obsaženy v projektový soubor), které poskytuje `IVsFilterAddProjectItemDlg`.  
   

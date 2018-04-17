@@ -1,35 +1,31 @@
 ---
 title: IDebugReference2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugReference2
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30f3b8351789adbb52651909cf9ff3b669934d66
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb5d5d8b3ab6e608a2454847fc9ec27e384777bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Toto rozhraní představuje odkaz na vlastnost rámce zásobníku nebo některé jiné vlastnosti.  
   
 > [!NOTE]
->  `IDebugReference2`je vyhrazeno pro budoucí použití a všechny její metody by měla vrátit `E_NOTIMPL`.  
+>  `IDebugReference2` je vyhrazeno pro budoucí použití a všechny její metody by měla vrátit `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,7 +52,7 @@ IDebugReference2 : IUnknown
 |[GetDerivedMostReference](../../../extensibility/debugger/reference/idebugreference2-getderivedmostreference.md)|Získá odkaz na většinou odvozených tohoto odkazu.|  
 |[GetMemoryBytes](../../../extensibility/debugger/reference/idebugreference2-getmemorybytes.md)|Získá počet bajtů paměti, na které odkazuje tento odkaz.|  
 |[GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)|Získá kontext paměti u tohoto odkazu.|  
-|[Getsize –](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Získá velikost v bajtech tohoto odkazu.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugreference2-getsize.md)|Získá velikost v bajtech tohoto odkazu.|  
 |[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)|Nastaví tento typ odkazu.|  
 |[Porovnání](../../../extensibility/debugger/reference/idebugreference2-compare.md)|Porovná tento odkaz s jinou.|  
   
@@ -76,7 +72,7 @@ IDebugReference2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

@@ -2,23 +2,19 @@
 title: Vývoj aplikací s nativní uživatelského rozhraní v sadě Visual Studio pomocí Xamarin | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
-caps.latest.revision: 31
 author: charlespetzold
 ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 0ec6529e6a9c41d1b9a4fa99a79d756754df1f45
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Vývoj aplikací s nativní uživatelského rozhraní pomocí Xamarinu v sadě Visual Studio
 
@@ -252,11 +248,11 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**text**|**Vyhledávání podle PSČ**|  
+    |**Text**|**Vyhledávání podle PSČ**|  
     |**id**|`@+id/ZipCodeSearchLabel`|  
     |**layout_marginStart**|`10dp`|  
-    |**textColor**|`@android:color/white`|  
-    |**textStyle**|`bold`|  
+    |**TextColor**|`@android:color/white`|  
+    |**stylu písma**|`bold`|  
   
     > [!TIP]
     >  Všimněte si, že mnoho vlastností nesmí obsahovat rozevírací seznam hodnot, které můžete vybrat.  Může být obtížné uhodnout jaké řetězcovou hodnotu pro danou vlastnost. Návrhy, zkuste vyhledávání pro název vlastnosti v [R.attr](http://developer.android.com/reference/android/R.attr.html) třídy stránky.  
@@ -283,11 +279,11 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
   
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
-    |**text**|**PSČ**|  
+    |**Text**|**PSČ**|  
     |**id**|`@+id/ZipCodeLabel`|  
     |**layout_marginStart**|`10dp`|  
     |**layout_marginTop**|`6dp`|  
-    |**textColor**|`@android:color/white`|  
+    |**TextColor**|`@android:color/white`|  
   
     Tady je jak kód **zdroj** zobrazení by měl vypadat:  
   
@@ -310,8 +306,8 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
     |**id**|`@+id/zipCodeEntry`|  
     |**layout_marginStart**|`10dp`|  
     |**layout_marginBottom**|`10dp`|  
-    |**width**|`165dp`|  
-    |**textColor**|`@android:color/white`|  
+    |**Šířka**|`165dp`|  
+    |**TextColor**|`@android:color/white`|  
   
     **Číslo** ovládací prvek je, kde bude uživatel zadat kód zip Spojených států pět číslic. Zde je kód, který odpovídá u daného ovládacího prvku:  
   
@@ -333,10 +329,10 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
     |Vlastnost|Hodnota|  
     |--------------|-----------|  
     |**id**|`@+id/weatherBtn`|  
-    |**text**|**Získat informace o počasí**|  
+    |**Text**|**Získat informace o počasí**|  
     |**layout_marginStart**|`20dp`|  
     |**layout_alignBottom**|`@id/zipCodeEntry`|  
-    |**width**|`165dp`|  
+    |**Šířka**|`165dp`|  
   
     ```xml  
     <Button

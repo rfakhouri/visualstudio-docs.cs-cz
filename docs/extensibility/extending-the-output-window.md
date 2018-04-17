@@ -1,27 +1,23 @@
 ---
-title: "Rozšíření ve výstupním okně | Microsoft Docs"
-ms.custom: 
+title: Rozšíření ve výstupním okně | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa99e2c741d11c79cb41226e3958b04d0265621
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8b9a8b260c1a3cab126d19f0cedc0c1e5362cf81
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-output-window"></a>Rozšíření ve výstupním okně
 **Výstup** okno je sada podokna text pro čtení a zápis. Visual Studio má tyto předdefinované podokna: **sestavení**, v projekty, které komunikují zprávy o sestavení a **Obecné**, ve kterém [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] komunikuje zprávy o rozhraní IDE. Projekty získat odkaz na **sestavení** podokně automaticky pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> metody rozhraní a Visual Studio nabízí přímý přístup k **Obecné** podokně prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> Služba. Kromě předdefinovaných podokna můžete vytvořit a spravovat vlastní vlastního podokna.  

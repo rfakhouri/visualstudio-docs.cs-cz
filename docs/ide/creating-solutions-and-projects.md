@@ -1,12 +1,9 @@
 ---
-title: "Vytvoření řešení a projektů v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Vytvoření řešení a projektů v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - projects [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e91f8c5908efb4eed942a9c2556de7778fda92
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4bb984c1a6947438df663e228bb21bda4eea763c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-solutions-and-projects"></a>Vytvoření řešení a projekty
 
@@ -32,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 ![Hierarchie řešení nebo projektu](./media/vside-proj-soln.png)
 
-Projekty a řešení můžete zobrazit v okně nástroje názvem **Průzkumníku řešení**. Následující snímek obrazovky ukazuje příklad řešení v Průzkumníku řešení (BikeSharing.Xamarin-UWP), který obsahuje dva projekty: BikeSharing.Clients.Core a BikeSharing.Clients.Windows. Každý projekt obsahuje více souborů, složek a odkazy. Název projektu tučným písmem je *spouštěný projekt*; to znamená, projekt, který se spustí při spuštění aplikace. Můžete určit, který projekt je projekt po spuštění.
+Projekty a řešení můžete zobrazit v okně nástroje názvem **Průzkumníku řešení**. Následující snímek obrazovky ukazuje příklad řešení s v **Průzkumníku řešení** (**BikeSharing.Xamarin UWP**) obsahující dva projekty: **BikeSharing.Clients.Core** a **BikeSharing.Clients.Windows**. Každý projekt obsahuje více souborů, složek a odkazy. Název projektu tučným písmem je *spouštěný projekt*; to znamená, projekt, který se spustí při spuštění aplikace. Můžete určit, který projekt je projekt po spuštění.
 
 ![Průzkumník řešení se projekty](./media/vside-solution-explorer-projects.png)
 
@@ -45,7 +42,7 @@ Který výše uvedeného, projekty a řešení není nutné vývoj aplikací v s
 
 ## <a name="to-create-a-project-from-a-project-template"></a>Vytvoření projektu ze šablony projektu
 
-1. Chcete-li vytvořit nový projekt v sadě Visual Studio několika způsoby. Na stránce Start zadejte název šablony projektu v **vyhledávání šablony projektů** pole, nebo zvolte **vytvořit nový projekt** odkazu k otevření **nový projekt** dialogové okno. Můžete také **soubor** > **nový** > **projektu...**  v nabídce panelu, nebo zvolte **nový projekt** tlačítka na panelu nástrojů.
+1. Chcete-li vytvořit nový projekt v sadě Visual Studio několika způsoby. Na **– úvodní stránka**, zadejte název šablony projektu v **vyhledávání šablony projektů** pole, nebo zvolte **vytvořit nový projekt** odkazu k otevření **nový Projekt** dialogové okno. Můžete také **soubor** > **nový** > **projektu...**  v nabídce panelu, nebo zvolte **nový projekt** tlačítka na panelu nástrojů.
 
   ![Úvodní stránka](./media/vside-newproject1.png)
 
@@ -68,7 +65,7 @@ Který výše uvedeného, projekty a řešení není nutné vývoj aplikací v s
 
 1. Vyberte **OK** tlačítko pro vytvoření řešení a projektu.
 
-1. Pokud chcete do řešení přidat další projekt, vyberte uzel řešení v Průzkumníku řešení a potom na panelu nabídek vyberte **projektu** > **přidat novou položku**.
+1. Pokud chcete přidat další projekt k řešení, vyberte uzel řešení v **Průzkumníku řešení**a potom na panelu nabídek vyberte **projektu** > **přidat novou položku**.
 
 ## <a name="create-a-project-from-existing-code-files"></a>Vytvoření projektu z existujících souborů kódu
 
@@ -122,10 +119,10 @@ Chcete-li vytvořit dočasný projekt, nejprve přejděte na **nástroje** > **m
 
 ## <a name="delete-a-solution-project-or-item"></a>Odstranit řešení, projekt nebo položky
 
-Řešení a jejich obsah můžete odstranit trvale, ale nikoli pomocí prostředí Visual Studio IDE. Odstraňování položek v sadě Visual Studio pouze odebere z aktuální řešení nebo projektu. Pokud chcete trvale odstranit z vašeho systému řešení nebo jiné součásti, pomocí Průzkumníka souborů můžete odstranit složku, která obsahuje soubory .sln a .suo řešení. Před odstraněním trvale řešení, ale doporučujeme zálohovat všechny projekty nebo souborů v případě potřeby znovu.
+Řešení a jejich obsah můžete odstranit trvale, ale nikoli pomocí prostředí Visual Studio IDE. Odstraňování položek v sadě Visual Studio pouze odebere z aktuální řešení nebo projektu. Pokud chcete trvale odstranit z vašeho systému řešení nebo jiné součásti, pomocí Průzkumníka souborů můžete odstranit složku, která obsahuje *.sln* a *.suo* soubory řešení. Před odstraněním trvale řešení, ale doporučujeme zálohovat všechny projekty nebo souborů v případě potřeby znovu.
 
 > [!NOTE]
-> Soubor .suo je skrytý soubor, který se nezobrazí ve výchozím nastavení Průzkumníka souborů. K zobrazení skrytých souborů na **zobrazení** nabídky v Průzkumníku souborů, vyberte **skryté položky** zaškrtávací políčko.
+> *.Suo* souboru je skrytý soubor, který se nezobrazí ve výchozím nastavení Průzkumníka souborů. K zobrazení skrytých souborů na **zobrazení** nabídky v Průzkumníku souborů, vyberte **skryté položky** zaškrtávací políčko.
 
 ### <a name="to-permanently-delete-a-solution"></a>Trvale odstranit řešení
 
@@ -139,5 +136,5 @@ Chcete-li vytvořit dočasný projekt, nejprve přejděte na **nástroje** > **m
 
 [Projekty a řešení](../ide/solutions-and-projects-in-visual-studio.md)  
 [Úložiště s otevřeným zdrojem společnosti Microsoft na Githubu](https://github.com/Microsoft)  
-[Ukázky sady Visual Studio](../ide/visual-studio-samples.md)  
+[Visual Studio – ukázky](../ide/visual-studio-samples.md)  
 [Ukázky kódu vývojáře](https://code.msdn.microsoft.com/)

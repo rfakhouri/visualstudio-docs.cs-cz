@@ -1,28 +1,26 @@
 ---
-title: "-Nasazení (devenv.exe) | Microsoft Docs"
-ms.custom: 
+title: -Nasazení (devenv.exe) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Devenv, /deploy switch
 - deploy Devenv switch
 - deploying applications [Visual Studio], after build
 - /deploy Devenv switch
 ms.assetid: e47c8723-df08-4645-aa2d-0c956e7ccca2
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2f7697217d59d430e2b4661548b7f922f8fd8c95
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dee247f9c948ae5a5d0ac6926679b7849c4c1fbc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 Nasadí řešení po sestavení nebo opětovném sestavení. Týká jenom projektů spravovaného kódu.  
@@ -40,10 +38,10 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
  `SolutionName`  
  Požadováno. Úplná cesta a název souboru, řešení.  
   
- / Project`ProjName`  
+ / Project `ProjName`  
  Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z `SolutionName` složku pro soubor projektu nebo projektu zobrazovaný název, nebo úplnou cestu a název souboru projektu.  
   
- / projectconfig –`ProjConfigName`  
+ / projectconfig – `ProjConfigName`  
  Volitelné. Konfigurace, který se má použít při vytváření sestavení název projektu `/project` s názvem.  
   
 ## <a name="remarks"></a>Poznámky  

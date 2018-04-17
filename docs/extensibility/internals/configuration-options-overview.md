@@ -1,26 +1,24 @@
 ---
-title: "Možnosti konfigurace přehled | Microsoft Docs"
-ms.custom: 
+title: Možnosti konfigurace přehled | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 0edfe84e26a9331b8c40ec24b00387768bdbba82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 85ee328b278ef9eb1d81acfc5a8299920a221e59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuration-options-overview"></a>Přehled možností konfigurace
 Projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] může podporovat víc konfigurací, které mohou být vytvořeny, vyladěnou, spuštění nebo nasazené. Konfigurace je typu sestavení popsané s pojmenovanou sadu vlastností, obvykle přepínače kompilátoru a umístění souborů. Ve výchozím nastavení nová řešení obsahovat dvě konfigurace Debug a Release. Tyto konfigurace provádět pomocí obnoveno výchozí nastavení, nebo upravit tak, aby splňovaly vaše konkrétní požadavky řešení a projektu. Některé balíčky se dají vytvářet dvěma způsoby: jako ActiveX editor nebo jako součást na místě. Projekty pro podporu více konfigurací, ale není nutné. Pokud je dostupný pouze jednu konfiguraci, tato konfigurace je namapována na všechny konfigurace řešení.  
@@ -57,15 +55,15 @@ Konfigurace rozhraní
   
  Několik poznámek k předchozímu diagramu:  
   
--   `IDispatch`je označená jako volitelná v objektu konfigurace. Konkrétně je volitelný tak, aby měl rozhraní konfigurace v objektu Procházet.  
+-   `IDispatch` je označená jako volitelná v objektu konfigurace. Konkrétně je volitelný tak, aby měl rozhraní konfigurace v objektu Procházet.  
   
--   `IVsDebuggableProjectCfg`je označen jako volitelný v objekt konfigurace, ale je nutná pro ladění podpory.  
+-   `IVsDebuggableProjectCfg` je označen jako volitelný v objekt konfigurace, ale je nutná pro ladění podpory.  
   
--   `IVsProjectCfg2`je označen jako volitelný v objekt konfigurace, ale je nutný pro výstup seskupování podpory.  
+-   `IVsProjectCfg2` je označen jako volitelný v objekt konfigurace, ale je nutný pro výstup seskupování podpory.  
   
 -   `Config Provider` Objekt je označen jako objekt volitelné, ale je možnost, kdy k implementaci. Objekt může implementovat na objekt projektu nebo na samostatném objektu.  
   
--   `IVsCfgProvider2`je potřeba pro podporu platformy a úpravu konfigurace. `IVsCfgProvider`Stačí, pokud není implementací této funkce.  
+-   `IVsCfgProvider2` je potřeba pro podporu platformy a úpravu konfigurace. `IVsCfgProvider` Stačí, pokud není implementací této funkce.  
   
 -   Některé z těchto objektů na obrázku znázorněné jako samostatné objekty lze spojovat do stejné třídy, kde je to praktické podle požadavků na konkrétní návrh. V dalších tématech v této části ale objekty a rozhraní přidružené k těmto objektům probereme podle scénáře uvedené v diagramu.  
   

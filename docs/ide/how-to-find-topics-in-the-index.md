@@ -1,12 +1,10 @@
 ---
-title: "Použití sady Visual Studio help viewer index | Microsoft Docs"
-ms.custom: 
+title: Použití sady Visual Studio help viewer index | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 helpviewer_keywords:
 - Index tab [Help Viewer]
 - Help Viewer, using the index
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - index filtering [Help Viewer]
 - Help Viewer, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7bc1b096a161ebca394abe4626c42db2ced883c4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finding-topics-by-using-the-help-viewer-index"></a>Témata týkající se hledání pomocí indexu Help Viewer
 Index obsahuje seznam klíčových slov, které jsou spojeny s tématy v nainstalované obsahu. Každého tématu může mít více než jeden – klíčové slovo přidruženo a každý – klíčové slovo může být přidružen k více než jedno téma. Pomocí tohoto indexu stejným způsobem jako v podobě knihy indexu.  

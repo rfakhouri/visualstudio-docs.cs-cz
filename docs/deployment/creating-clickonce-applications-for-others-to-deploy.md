@@ -1,12 +1,10 @@
 ---
-title: "Vytváření aplikací ClickOnce pro ostatní nasadit | Microsoft Docs"
-ms.custom: 
+title: Vytváření aplikací ClickOnce pro ostatní nasadit | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - ClickOnce applications, deployed by others
 - ClickOnce applications, previous .NET Framework
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: d3a9762872f74b39d8cef387703488c01647dbcc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c3cd93353cd20ac52f95d7852c306124561cdf0e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Vytváření aplikací ClickOnce k implementaci dalšími osobami
 Ne všechny vývojáře, kteří jsou vytvoření nasazení ClickOnce v plánu nasadit aplikace samotné. Řada z nich právě balíček své aplikace s použitím technologie ClickOnce a pak předá soubory na zákazníka, jako je například velké korporace. Zákazník bude ten, který je zodpovědný za hostování aplikace ve své síti. Toto téma popisuje některé potíže spočívající v takovýchto nasazeních ve verzích rozhraní .NET Framework verze 3.5. Popisuje pak zadaný v rozhraní .NET Framework 3.5 pomocí nové funkce "použití manifest pro vztah důvěryhodnosti" nové řešení. Nakonec dojde s doporučenou strategie pro vytvoření nasazení ClickOnce pro zákazníky, kteří stále používají starší verze rozhraní .NET Framework.  

@@ -1,23 +1,21 @@
 ---
-title: "Postupy: vytvoření přechodu shaderu na základě geometrie | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytvoření přechodu shaderu na základě geometrie | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6ec140a434ebee19eb64292d38216d567a60d8bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Postupy: Vytvoření přechodu shaderu založeného na geometrii
 Tento dokument ukazuje, jak vytvořit na základě geometrie přechodu shaderu pomocí návrháře shaderu a jazyk směrované shaderu grafu. Tato shaderu škáluje konstantní hodnotu barva RGB podle výšky každého bodu objektu v prostoru world.  
@@ -68,7 +66,7 @@ Tento dokument ukazuje, jak vytvořit na základě geometrie přechodu shaderu p
   
  Následující obrázek znázorňuje shaderu, který je popsaný v tomto dokumentu použít pro 3D scény, která je znázorněna v [postup: Model 3D geologické struktury](../designers/how-to-model-3-d-terrain.md). Intenzita barvy se zvyšuje s výšky bodu v celém světě.  
   
- ![Přechodu vliv u a 3 &#45; D geologické struktury modelu](../designers/media/digit-gradient-effect-result.png "číslice přechodu vliv výsledek")  
+ ![Přechodu vliv u a 3&#45;D geologické struktury modelu](../designers/media/digit-gradient-effect-result.png "číslice přechodu vliv výsledek")  
   
  Další informace o tom, jak používat shaderu 3D modelu najdete v tématu [postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   

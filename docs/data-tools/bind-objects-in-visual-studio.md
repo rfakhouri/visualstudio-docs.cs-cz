@@ -1,11 +1,8 @@
 ---
-title: "Vazby objektů v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Vazby objektů v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,17 +12,17 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 64031303545f293d9274158eeb1527ba26676751
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 71922f3fb6dffb63c1a6c5ed1b12e5cbce402323
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-objects-in-visual-studio"></a>Vazby objektů v sadě Visual Studio
 Visual Studio poskytuje nástroje pro návrh pro práci s vlastní objekty jako zdroj dat v aplikaci. Když chcete k ukládání dat z databáze v objektu, který vytvoření vazby ovládacích prvků uživatelského rozhraní, o doporučený postup je použití rozhraní Entity Framework pro generování třídu nebo třídy. Rozhraní Entity Framework automaticky generuje všechny standardní sledování změn kód, což znamená, že všechny změny na místní objekty jsou automaticky trvalé do databáze při jste DbSet objektu volejte metodu AcceptChanges. Další informace najdete v tématu [Entity Framework dokumentaci](https://ef.readthedocs.org/en/latest/).  

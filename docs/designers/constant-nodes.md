@@ -1,23 +1,21 @@
 ---
-title: "Konstantní uzly | Microsoft Docs"
-ms.custom: 
+title: Konstantní uzly | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1edbe90bf9f1002392374a17b8dd85270ec2fef5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1b3d9858605beb52c7a242f7589d4045e423a54b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="constant-nodes"></a>Uzly konstanty
 V Návrháři shaderu konstantní uzly představují literálových hodnot a interpolované vrchol atributy ve výpočtech shaderu pixelů. Protože vrchol atributy interpolace – a tedy se liší pro každý pixelů – každá instance pixelů shaderu obdrží jinou verzi konstanta. To dává jedinečný vzhled každý pixelů.  

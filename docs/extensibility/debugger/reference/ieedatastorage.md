@@ -1,29 +1,25 @@
 ---
 title: IEEDataStorage | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEEDataStorage
 helpviewer_keywords:
 - IEEDataStorage interface
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a28b738c757924f2a3c588d52ea896dc6301384
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aeb98c4c4d3b544616412b3cf5cf8a162fddbd6b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Toto rozhraní představuje pole bajtů.  
@@ -46,7 +42,7 @@ IEEDataStorage : IUnknown
 |Metoda|Popis|  
 |------------|-----------------|  
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|Načte zadaný počet bajtů dat, které mají poskytnutá vyrovnávací paměť.|  
-|[Getsize –](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Získá počet bajtů dat, které jsou k dispozici.|  
+|[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|Získá počet bajtů dat, které jsou k dispozici.|  
   
 ## <a name="remarks"></a>Poznámky  
  Toto rozhraní se používá podle typu vizualizér pro přístup k data ukládaná společností určitý objekt. Data, je zpracovaná jako pole bajtů, což vizualizér typ k manipulaci s ním v jakémkoli způsob, jak je potřeba ho k dispozici pro uživatele.  
@@ -58,7 +54,7 @@ IEEDataStorage : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

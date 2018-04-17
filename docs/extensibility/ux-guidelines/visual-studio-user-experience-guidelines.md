@@ -1,23 +1,21 @@
 ---
-title: "Prostředí pro práci uživatelů sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Prostředí pro práci uživatelů sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
-caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d2d6326f08276da60a3e901912bfb579428680d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: aa7e90e04cc81443a38cb1c6cbc06644e2426499
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Prostředí pro práci uživatelů sady Visual Studio
 Visual Studio prostředí pro práci uživatelů jsou určené pro ty, kteří návrhu nové funkce pro sadu Visual Studio. Tyto pokyny obsahují informace o běžných modely uživatele a interakce vzory tak, aby návrháři nové uživatelské rozhraní (UI) můžete vytvořit uživatelského prostředí, které jsou snadné a konzistentní v rámci vývojového prostředí.  

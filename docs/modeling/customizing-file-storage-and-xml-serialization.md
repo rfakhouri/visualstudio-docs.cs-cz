@@ -1,25 +1,23 @@
 ---
-title: "Přizpůsobení souboru úložiště a serializace XML | Microsoft Docs"
-ms.custom: 
+title: Přizpůsobení souboru úložiště a serializace XML | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a15a331d465c2450f0f1e6230eac3415106e860b
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 2ca1b9f8e6261ae04217b0d74e13073a3683915c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Přizpůsobení souborového úložiště a serializace XML
 Když uživatel uloží instanci, nebo *modelu*, jazyka specifické pro doménu (DSL) v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], soubor XML se vytvoří nebo aktualizuje. Soubor můžete znovu k opětovnému vytvoření modelu v úložišti.  
@@ -53,7 +51,7 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifické pro doménu 
 ## <a name="the-default-serialization-scheme"></a>Výchozí schéma serializace  
  Pokud chcete vytvořit příklad pro toto téma, byl použit následující definice DSL.  
   
- ![Diagram DSL definice & č. 45; Rodina stromu modelu](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![Diagram DSL definice &#45; rodiny stromu modelu](../modeling/media/familyt_person.png "FamilyT_Person")  
   
  Tato DSL byl použit pro vytvoření modelu, který má následující vzhled na obrazovce.  
   
@@ -144,13 +142,13 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifické pro doménu 
   
     2.  V okně Vlastnosti nastavte **je klíč Přezdívka** k `true`.  
   
--   \-nebo –  
+-   \- nebo –  
   
      Vytvořit nové třídy domény pomocí **třída s názvem domény** nástroj.  
   
      Tento nástroj vytvoří novou třídu, která má vlastnost domény s názvem název. **Název elementu, který je** a **je klíč Přezdívka** vlastností této vlastnosti domény jsou inicializována tak, aby `true`.  
   
--   \-nebo –  
+-   \- nebo –  
   
      Vytvořte vztah dědičnosti ze třídy domény k jiné třídy, která má klíčovou vlastnost přezdívka.  
   
@@ -273,9 +271,9 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifické pro doménu 
 |Vlastnost|Popis|  
 |Má schéma vlastního elementu.|V případě hodnoty True znamená, že má třída domény schéma vlastního elementu.|  
 |Je vlastní|Tuto možnost nastavíte na **True** Pokud chcete napsat vlastní serializace a deserializace kód pro tuto třídu domény.<br /><br /> Sestavte řešení a zjistěte chyby chcete zjistit podrobné pokyny.|  
-|Domain Class|Třída domény, pro kterou platí tato třída datový uzel. Jen pro čtení.|  
+|Domény – třída|Třída domény, pro kterou platí tato třída datový uzel. Jen pro čtení.|  
 |Název elementu|Název uzlu XML elementů této třídy. Výchozí hodnota je malá verzi třída názvu domény.|  
-|Název atributu Přezdívka|Atribut použitý v elementech Přezdívka obsahovat odkaz na název. Pokud pole prázdné, použije se název klíčové vlastnosti nebo id.<br /><br /> V tomto příkladu je "name":`<personMoniker name="/Mike Nash"/>`|  
+|Název atributu Přezdívka|Atribut použitý v elementech Přezdívka obsahovat odkaz na název. Pokud pole prázdné, použije se název klíčové vlastnosti nebo id.<br /><br /> V tomto příkladu je "name":  `<personMoniker name="/Mike Nash"/>`|  
 |Název elementu Přezdívka|Název elementu xml pro zástupných názvů, které odkazují na elementy této třídy.<br /><br /> Výchozí hodnota je malá verzi na konci "Přezdívka" název třídy. Například `personMoniker`.|  
 |Název typu Přezdívka|Název typu xsd vygenerované monikery na elementy této třídy. XSD je v **Dsl\Generated kód\\\*Schema.xsd**|  
 |Serialize – Id|V případě hodnoty True identifikátoru GUID elementu je součástí souboru. Toto musí být hodnota true, pokud není žádná vlastnost, která je označena **je klíč Přezdívka** a DSL definuje referenčních relací pro tuto třídu.|  
@@ -288,11 +286,11 @@ Když uživatel uloží instanci, nebo *modelu*, jazyka specifické pro doménu 
 |||  
 |-|-|  
 |Vlastnost|Popis|  
-|Domain Property|Vlastnost, pro kterou platí konfigurační data serializace xml. Jen pro čtení.|  
+|Vlastnost Domain|Vlastnost, pro kterou platí konfigurační data serializace xml. Jen pro čtení.|  
 |Je přezdívka klíč|V případě hodnoty True, vlastnost se používá jako klíč pro vytvoření zástupných názvů, které odkazují na instance této třídy domény.|  
 |Je přezdívka kvalifikátor|V případě hodnoty True, vlastnost slouží k vytváření kvalifikátor v zástupných názvů. Pokud je hodnota false, a pokud SerializeId není pro tuto třídu domény na hodnotu true, jsou monikery kvalifikovaný Přezdívka nadřazeného elementu ve stromové struktuře vnoření.|  
 |Reprezentace|Pokud je atribut vlastnost serializovanou jako atribut xml; Pokud Element, jde serializovat jako element; Pokud ignorovat, nejde serializovat.|  
-|Xml Name|Název použité pro atribut xml nebo element reprezentující vlastnost. Ve výchozím nastavení to je malá verze vlastnost názvu domény.|  
+|Název XML|Název použité pro atribut xml nebo element reprezentující vlastnost. Ve výchozím nastavení to je malá verze vlastnost názvu domény.|  
 |Poznámky|Neformální poznámky související s tímto elementem|  
   
 ### <a name="xml-role-data"></a>Data XML Role  

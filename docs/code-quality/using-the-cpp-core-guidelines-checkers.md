@@ -1,22 +1,19 @@
 ---
-title: "Pomocí C++ základní pokyny programy | Microsoft Docs"
-ms.custom: 
+title: Pomocí C++ základní pokyny programy | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 97ada4fa2abd8975bd728b48fc24b9e3e9e2af41
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 6c745a1ff473b2e9b7917a45fda1e077de76ec42
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Pomocí kameny základní pokyny pro C++
 Základní pokyny C++ jsou přenosné sadu pokyny, pravidla a osvědčené postupy o kódování v jazyce C++ vytvořené odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu tato pravidla v rámci jeho nástrojů pro analýzu kódu pro jazyk C++. Kameny platí základní jsou nainstalované ve výchozím nastavení v Visual Studio 2017 a [k dispozici jako balíčku NuGet pro Visual Studio 2015](#vs2015_corecheck).
@@ -164,7 +161,7 @@ Tyto makra odpovídají sady pravidel a rozšířit seznam upozornění čísel 
 
  Můžete použít možnost příkazového řádku k dočasnému zakázání všechny analýzy kódu pro soubor zadáním `/analyze-`. Tímto se vytvoří upozornění *D9025 přepsání '/ analyzovat' s ' / analyze – '*, která upozorní znovu zapnout analýza kódu. později.
 
- ## <a name="corecheck_per_file"></a>Povolení kontrolu C++ základní pokyny na soubory konkrétní projektu
+ ## <a name="corecheck_per_file"></a> Povolení kontrolu C++ základní pokyny na soubory konkrétní projektu
 V některých případech může být užitečné proveďte zaměřené analýzy kódu a stále používání prostředí Visual Studio IDE. Následující vzorový scénář lze použít pro rozsáhlých projektů ušetřit čas sestavení a usnadňují výsledky filtru:
 
 1.  V příkazovém okně nastavený `esp.extension` a `esp.annotationbuildlevel` proměnné prostředí.
@@ -172,7 +169,7 @@ V některých případech může být užitečné proveďte zaměřené analýzy
 3.  Načtení projektu a otevřete jeho vlastnosti.
 4.  Povolit analýza kódu, vyberte příslušné pravidlo sady, ale není rozšíření analýzy kódu.
 5.  Přejděte na soubor, který chcete analyzovat pomocí kontrolu C++ základní pokyny a otevřete jeho vlastnosti.
-6.  Zvolte **C / C++ \Command možnosti řádku** a přidejte`/analyze:plugin EspXEngine.dll`
+6.  Zvolte **C / C++ \Command možnosti řádku** a přidejte `/analyze:plugin EspXEngine.dll`
 7.  Zakázat použití předkompilovaných hlaviček (**C / C++ \Precompiled hlavičky**). To je nezbytné, protože modul rozšíření může pokus o čtení jeho interní informace z předkompilovaných hlaviček (PCH); Pokud PCH kompilovat s výchozí možnosti projektu, nebude kompatibilní.
 8.  Znovu sestavte projekt. Běžné PREFast kontroly měly být spuštěny na všechny soubory. Protože nástroj pro kontrolu C++ základní pokyny součástí není povolen ve výchozím nastavení, měli spustit pouze v souboru, který je konfigurován pro použití.
 
@@ -218,22 +215,22 @@ Pokud používáte systém sestavení, která není závisí na MSBuild pořád 
 Budete muset nastavit pár proměnných prostředí a použít správné možnosti příkazového řádku pro kompilátor. Je lepší, aby fungovaly v prostředí "nativní nástroje příkazového řádku" tak, že nemáte k vyhledání konkrétních cest pro kompilátor, zahrnout adresáře atd.
 
 1.  **Proměnné prostředí**
-  - `set esp.extensions=cppcorecheck.dll`Tato hodnota informuje modul načíst modul C++ základní pokyny.
-  - `set esp.annotationbuildlevel=ignore`To zakáže logiku, která zpracovává poznámek SAL. Poznámky neovlivňuje analýza kódu v kontrola C++ základní pokyny, ale jejich zpracování trvá určitou dobu (někdy dlouhou dobu). Toto nastavení je volitelný, ale důrazně doporučujeme.
-  - `set caexcludepath=%include%`Důrazně doporučujeme zakázat upozornění, které na standardní hlavičky. Můžete přidat více cest zde, například cestu k společné hlavičky ve vašem projektu.
+  - `set esp.extensions=cppcorecheck.dll` Tato hodnota informuje modul načíst modul C++ základní pokyny.
+  - `set esp.annotationbuildlevel=ignore` To zakáže logiku, která zpracovává poznámek SAL. Poznámky neovlivňuje analýza kódu v kontrola C++ základní pokyny, ale jejich zpracování trvá určitou dobu (někdy dlouhou dobu). Toto nastavení je volitelný, ale důrazně doporučujeme.
+  - `set caexcludepath=%include%` Důrazně doporučujeme zakázat upozornění, které na standardní hlavičky. Můžete přidat více cest zde, například cestu k společné hlavičky ve vašem projektu.
 2.  **Možnosti příkazového řádku**
-  - `/analyze`Analýza kódu umožňuje (zvažte taky použití / analyze: pouze a / analyze: quiet).
-  - `/analyze:plugin EspXEngine.dll`Tato možnost načte modul rozšíření analýzy kódu do nástroj PREfast. Tento modul se pak načte kontrolu C++ základní pokyny.
+  - `/analyze`  Analýza kódu umožňuje (zvažte taky použití / analyze: pouze a / analyze: quiet).
+  - `/analyze:plugin EspXEngine.dll` Tato možnost načte modul rozšíření analýzy kódu do nástroj PREfast. Tento modul se pak načte kontrolu C++ základní pokyny.
 
 
 
 ## <a name="use-the-guideline-support-library"></a>V knihovně obecné zásady podpory  
- Knihovna podpory platí usnadňuje postupujte podle pokynů jádra. GSL obsahuje definice, které umožňují náchylné konstrukce nahraďte bezpečnějších alternativ. Například můžete nahradit `T*, length` pár parametrů s `span<T>` typu. Je k dispozici na GSL [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). Knihovny je open source, takže můžete zobrazit zdroje, zadávání komentářů nebo přispívat. Projekt naleznete na adrese [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+ Knihovna podpory platí usnadňuje postupujte podle pokynů jádra. GSL obsahuje definice, které umožňují náchylné konstrukce nahraďte bezpečnějších alternativ. Například můžete nahradit `T*, length` pár parametrů s `span<T>` typu. Je k dispozici na GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Knihovny je open source, takže můžete zobrazit zdroje, zadávání komentářů nebo přispívat. Projekt naleznete na adrese [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a>Postupujte podle pokynů zkontrolujte základní C++ v projektech Visual Studio 2015  
-  Pokud používáte Visual Studio 2015, sad pravidel C++ základní zkontrolujte analýzy kódu ve výchozím nastavení nenainstalují. Než můžete povolit C++ základní zkontrolujte nástrojů pro analýzu kódu v sadě Visual Studio 2015, musíte provést další kroky. Společnost Microsoft poskytuje podporu pro projekty Visual Studio 2015 pomocí balíčku Nuget. Balíček je s názvem Microsoft.CppCoreCheck a je k dispozici na [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Tento balíček vyžaduje, že abyste měli aspoň nainstalovanou sadu Visual Studio 2015 s Update 1.  
+ ## <a name="vs2015_corecheck"></a> Postupujte podle pokynů zkontrolujte základní C++ v projektech Visual Studio 2015  
+  Pokud používáte Visual Studio 2015, sad pravidel C++ základní zkontrolujte analýzy kódu ve výchozím nastavení nenainstalují. Než můžete povolit C++ základní zkontrolujte nástrojů pro analýzu kódu v sadě Visual Studio 2015, musíte provést další kroky. Společnost Microsoft poskytuje podporu pro projekty Visual Studio 2015 pomocí balíčku Nuget. Balíček je s názvem Microsoft.CppCoreCheck a je k dispozici na [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Tento balíček vyžaduje, že abyste měli aspoň nainstalovanou sadu Visual Studio 2015 s Update 1.  
   
- Balíček nainstaluje taky jiný balíček jako závislost, pouze záhlaví platí podpora knihovny (GSL). GSL je také k dispozici na webu GitHub na [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).  
+ Balíček nainstaluje taky jiný balíček jako závislost, pouze záhlaví platí podpora knihovny (GSL). GSL je také k dispozici na webu GitHub na [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).  
 
  Kvůli způsobu, kterým jsou načtena pravidel analýzy kódu je nutné nainstalovat balíček Microsoft.CppCoreCheck NuGet do každého projektu C++, který chcete zkontrolovat v sadě Visual Studio 2015.  
   

@@ -1,37 +1,33 @@
 ---
-title: "Element sestavení (rozšíření Průvodce pro šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Element sestavení (rozšíření Průvodce pro šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
 helpviewer_keywords:
 - Assembly element [Visual Studio Template Wizard Extension]
 - <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80a8185961e53222b2aa9b71cd397b96c9368048
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1610df76bfce303bd13c69cb8298ac62106fd7e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Element sestavení (rozšíření průvodce pro šablony sady Visual Studio)
 Určuje název nebo silný název sestavení, které implementuje `IWizard` rozhraní.  
   
  \<VSTemplate >  
 \<WizardExtension >  
-\<Sestavení >  
+\<sestavení >  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -60,7 +56,7 @@ Určuje název nebo silný název sestavení, které implementuje `IWizard` rozh
  Tento text určuje sestavení, které implementuje `IWizard` rozhraní. Tento název sestavení musí být zadán jako název úplné sestavení. Například `MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`.  
   
 ## <a name="remarks"></a>Poznámky  
- `Assembly`je požadovaný podřízený element `WizardExtension`.  
+ `Assembly` je požadovaný podřízený element `WizardExtension`.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ilustruje metadata pro standardní projektu šablony pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikací systému Windows.  

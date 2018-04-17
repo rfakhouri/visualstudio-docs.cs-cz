@@ -1,36 +1,32 @@
 ---
-title: "Zobrazení zpráv | Microsoft Docs"
-ms.custom: 
+title: Zobrazení zpráv | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
 - Messages view
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c421b7c22bed32e6c60d30098b2c19e0d71a0af3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 206c0197d73e3bb95975309bdce84887dee283e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="messages-view"></a>Zobrazení zpráv
 Každé okno má datového proudu k přidružených zpráv. Okno zobrazení zprávy zobrazí tento datový proud zpráv. Popisovač okna, kód zprávy a zpráva se zobrazí. Můžete vytvořit zobrazení zprávy pro přístup z více vláken nebo proces stejně. To vám umožní zobrazit zprávy odeslané do vlastní konkrétní proces nebo podproces, který je obzvláště užitečné pro zaznamenání zprávy oken inicializace všechny systémy windows.  
   
  Typické okno zobrazení zprávy, zobrazí se dole. Všimněte si, že první sloupec popisovač okna a druhý sloupec obsahuje kód zprávy (podrobně [kódy zpráv](../debugger/message-codes.md)). Dekódované zpráva parametry a návratové hodnoty jsou na pravé straně.  
   
- ![Spy & č. 43; & č. 43; Zobrazení zpráv](../debugger/media/spy--_messagesview.png "nástroje Spy ++ _MessagesView")  
+ ![Spy&#43; &#43; zobrazení zpráv](../debugger/media/spy--_messagesview.png "nástroje Spy ++ _MessagesView")  
 Zobrazení zpráv nástroje Spy ++  
   
 ## <a name="procedures"></a>Procedury  

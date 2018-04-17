@@ -1,27 +1,23 @@
 ---
-title: "Vlastnosti – okno pole a rozhraní | Microsoft Docs"
-ms.custom: 
+title: Vlastnosti – okno pole a rozhraní | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, fields and interfaces
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f238cceb189723e3ec10fbf8db4abbd9675ae21
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a286d8cc782305b746789f56af431d7a62f8e2fd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Vlastnosti – okno pole a rozhraní
 Model pro výběr k určení, které informace se zobrazují v **vlastnosti** okno je založena na okno, který má právě fokus v prostředí IDE. Objekt kontextu jeho výběru nabídnutých do kontextu globální výběr mohou mít každý okno a objekt v rámci vybrané okno. Při toto okno je aktivní prostředí aktualizuje kontext globální výběr hodnotami z rámce okna. Když se změní fokus, takže nemá kontext výběr.  
@@ -49,7 +45,7 @@ Model pro výběr k určení, které informace se zobrazují v **vlastnosti** ok
   
  Nakonec dolní části **vlastnosti** okno obsahuje také popis vybraném v poli **vlastnosti** okno mřížky. Další informace najdete v tématu [získávání popisy pole v okně Vlastnosti](#getting-field-descriptions-from-the-properties-window).  
   
-## <a name="updating-property-values-in-the-properties-window"></a>Aktualizace hodnoty vlastností v okně vlastností
+## <a name="updating-property-values-in-the-properties-window"></a> Aktualizace hodnoty vlastností v okně vlastností
 Existují dva způsoby, jak udržovat **vlastnosti** okno synchronizována s změn hodnot vlastností. První je volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> rozhraní, která poskytuje přístup k základní oddílová funkce, včetně přístupu k a vytvoření oken nástroj a dokument poskytuje prostředí. Následující kroky popisují proces synchronizace.  
   
 ### <a name="updating-property-values-using-ivsuishell"></a>Aktualizace hodnoty vlastností pomocí IVsUIShell  
@@ -67,7 +63,7 @@ Existují dva způsoby, jak udržovat **vlastnosti** okno synchronizována s zm�
   
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Aspekty v jeho implementaci rozhraní připojení IConnection  
   
-1.  `IConnection`poskytuje přístup k dílčí objekt enumerator s <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> rozhraní. Také poskytuje přístup ke všem připojení bodu dílčí objektům, každý z které implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní.  
+1.  `IConnection` poskytuje přístup k dílčí objekt enumerator s <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> rozhraní. Také poskytuje přístup ke všem připojení bodu dílčí objektům, každý z které implementuje <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní.  
   
 2.  Jakýkoli objekt procházet zodpovídá za implementaci <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> událostí. **Vlastnosti** okno bude poradit pro události, nastavte prostřednictvím `IConnection`.  
   
@@ -75,9 +71,9 @@ Existují dva způsoby, jak udržovat **vlastnosti** okno synchronizována s zm�
   
 4.  Klienta můžete volat `IConnection` rozhraní se získat přístup k dílčí objekt enumerator s <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> rozhraní. <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> Rozhraní může být volána výčet spojovacích bodů odchozích rozhraní ID (IID).  
   
-5.  `IConnection`nelze volat také se získat přístup k připojení bodu dílčí objekty s <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní pro každý odchozí IID. Prostřednictvím <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní, klient spustí nebo ukončí smyčky poradní s objekt umožňující připojení a synchronizace klienta vlastní. Klienta můžete také zavolat <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní získat objekt enumerator s <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> rozhraní pro připojení, která bude vědět o zobrazení výčtu.  
+5.  `IConnection` nelze volat také se získat přístup k připojení bodu dílčí objekty s <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní pro každý odchozí IID. Prostřednictvím <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní, klient spustí nebo ukončí smyčky poradní s objekt umožňující připojení a synchronizace klienta vlastní. Klienta můžete také zavolat <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> rozhraní získat objekt enumerator s <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> rozhraní pro připojení, která bude vědět o zobrazení výčtu.  
   
-## <a name="getting-field-descriptions-from-the-properties-window"></a>Získávání popisy pole v okně Vlastnosti
+## <a name="getting-field-descriptions-from-the-properties-window"></a> Získávání popisy pole v okně Vlastnosti
 V dolní části **vlastnosti** okně oblasti popis zobrazí informace související s vybranou vlastnost pole. Tato funkce je zapnutá ve výchozím nastavení. Pokud chcete skrýt pole popisu, klikněte pravým tlačítkem **vlastnosti** a klikněte na **popis**. Také zrušeno zaškrtnutí políčka vedle **popis** název v okně nabídky. Toto pole můžete zobrazit znovu podle stejných kroků k přepnutí **popis** zpět na.  
   
  Informace v poli Popis pocházejí z <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>. Každý metoda, rozhraní, třída typu coclass a tak dále může mít nelokalizované `helpstring` atribut v knihovně typů. **Vlastnosti** okno načte řetězec, ze <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>.  

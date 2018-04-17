@@ -1,30 +1,28 @@
 ---
-title: "Zdroj ovládacího prvku integrace Essentials | Microsoft Docs"
-ms.custom: 
+title: Zdroj ovládacího prvku integrace Essentials | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Source Control Integration, essentials
 - Source Control Integration,overview
 - essentials, Source Control Integration
 ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
-caps.latest.revision: "9"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5d474e00186cf2110dd8e701d980a1a4562beb8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0c3e93eb86fdc252f162331033207db5bdaa1569
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-essentials"></a>Zdroj ovládacího prvku integrace Essentials
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]podporuje dva typy integrace ovládacích prvků zdrojového: ovládací prvek zdroje modul plug-in, poskytuje základní funkce a je sestaven pomocí rozhraní API modulu Plugin zdroj ovládacího prvku (dříve označované jako rozhraní API MSSCCI) a integrace řešení řízení na základě VSPackage zdroje, poskytuje robustnější funkce.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje dva typy integrace ovládacích prvků zdrojového: ovládací prvek zdroje modul plug-in, poskytuje základní funkce a je sestaven pomocí rozhraní API modulu Plugin zdroj ovládacího prvku (dříve označované jako rozhraní API MSSCCI) a integrace řešení řízení na základě VSPackage zdroje, poskytuje robustnější funkce.  
   
 ## <a name="source-control-plug-in"></a>Modul Plug-in správy zdrojového kódu  
  Plug-in řízení zdroj je zapsána jako knihovny DLL, která implementuje rozhraní API ovládacího prvku Plug-in zdroje. Registrace a zdroj funkce integrace ovládací prvek je zajišťováno prostřednictvím rozhraní API. Tento přístup je jednodušší než Správa zdrojového kódu VSPackage implementace a používá [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] uživatelské rozhraní (UI) pro většinu operací řízení zdroje.  

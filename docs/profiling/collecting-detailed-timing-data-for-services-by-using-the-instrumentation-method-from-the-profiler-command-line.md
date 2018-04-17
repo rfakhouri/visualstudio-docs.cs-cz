@@ -1,23 +1,21 @@
 ---
-title: "Shromažďování podrobných dat časování pro službu pomocí metody instrumentace z příkazového řádku profileru | Microsoft Docs"
-ms.custom: 
+title: Shromažďování podrobných dat časování pro službu pomocí metody instrumentace z příkazového řádku profileru | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1c32a2008fa18f7edf8d50b95104c35c6b1b2058
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b00f190b34ecee171881ad85ef8624b329fc23ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Shromažďování podrobných dat časování pro službu pomocí metody instrumentace z příkazového řádku profileru
 Tato část popisuje postupy a možnosti pro podrobné výkonu shromažďování dat pro služby systému Windows pomocí metody instrumentace z příkazového řádku.  
@@ -45,7 +43,7 @@ Tato část popisuje postupy a možnosti pro podrobné výkonu shromažďování
 |Úloha|Související obsah|  
 |----------|---------------------|  
 |**Profil aplikace samostatné (klient)**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line.md)|  
-|**Profil webových aplikací ASP.NET**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line.md)|  
+|**Profil webových aplikací ASP.NET**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method.md)|  
   
 ### <a name="analyzing-instrumentation-data-views-and-reports"></a>Analýza dat instrumentace zobrazeních a sestavách  
  [Zobrazení dat metody instrumentace](../profiling/instrumentation-method-data-views.md)

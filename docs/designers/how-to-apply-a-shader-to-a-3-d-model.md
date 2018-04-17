@@ -1,23 +1,21 @@
 ---
-title: "Postupy: použití shaderu 3D modelu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: použití shaderu 3D modelu | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 852baa1c8a2b627e5426411d8c156ab28d5c6614
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6af4b0cc0c86acbb53e93c6ced4a4b7291e7de03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Postupy: Použití shaderu na 3D model
 Tento dokument ukazuje, jak použít editoru modelů pro aplikaci shaderu směrované grafu shaderu jazyk (DGSL) na 3D modelu.  
@@ -39,7 +37,7 @@ Tento dokument ukazuje, jak použít editoru modelů pro aplikaci shaderu směro
   
  Tady je model, který má za následek základní barvu na něho použít:  
   
- ![3 &#45; scény D, který ukazuje základní barevný efekt](../designers/media/digit-3d-model-effect.png "číslice 3D modelu vliv")  
+ ![3&#45;scény D, který ukazuje základní barevný efekt](../designers/media/digit-3d-model-effect.png "číslice 3D modelu vliv")  
   
  Po instalaci shaderu k modelu, můžete otevřít ho v Návrháři shaderu výběrem modelu a pak v **vlastnosti** okno v **(rozšířené)** vlastnost **vliv**skupina vlastností, výběr se třemi tečkami (**...** ) tlačítko.  
   

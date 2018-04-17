@@ -1,29 +1,25 @@
 ---
 title: Funkce SccQueryInfo | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
 - SccQueryInfo function
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bda59c3bf674354e38fa306abe1fbb673f40e19
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5e2838709d7c2c2ad6e6b1eeef36c2cc0018a1a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo – funkce
 Tato funkce získává informace o stavu pro určitou sadu vybraných souborů ve správě zdrojového kódu.  
@@ -69,11 +65,11 @@ SCCRTN SccQueryInfo(
   
  Při použití této funkce rezervovat soubory, vezměte na vědomí následující `MSSCCI` požadavky na stav:  
   
--   `SCC_STATUS_OUTBYUSER`je nastavena, pokud má aktuální uživatel je rezervována soubor.  
+-   `SCC_STATUS_OUTBYUSER` je nastavena, pokud má aktuální uživatel je rezervována soubor.  
   
--   `SCC_STATUS_CHECKEDOUT`Nelze nastavit, pokud `SCC_STATUS_OUTBYUSER` nastavena.  
+-   `SCC_STATUS_CHECKEDOUT` Nelze nastavit, pokud `SCC_STATUS_OUTBYUSER` nastavena.  
   
--   `SCC_STATUS_CHECKEDOUT`je nastavený pouze, pokud soubor je rezervován do určené pracovní adresář.  
+-   `SCC_STATUS_CHECKEDOUT` je nastavený pouze, pokud soubor je rezervován do určené pracovní adresář.  
   
 -   Pokud soubor je rezervován podle aktuálního uživatele do adresáře než pracovní adresář `SCC_STATUS_OUTBYUSER` nastavená, ale `SCC_STATUS_CHECKEDOUT` není.  
   

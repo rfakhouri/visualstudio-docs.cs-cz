@@ -1,24 +1,22 @@
 ---
-title: "Modelování uživatelských požadavků | Microsoft Docs"
-ms.custom: 
+title: Modelování uživatelských požadavků | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1401328b53f03d6ff1121e93ac7e56ebba0e585e
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3837c6876c8eb1beecea13fb501a78c764555d9e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-user-requirements"></a>Modelování uživatelských požadavků
 
@@ -59,7 +57,7 @@ Můžete vytvořit několik různých zobrazení požadavků uživatelů.  Každ
   
  Všimněte si, že většinu typů diagramu lze použít pro jiné účely. Přehled typů diagramu najdete v tématu [vytváření modelů pro aplikaci](../modeling/create-models-for-your-app.md).
   
-##  <a name="BusinessRules"></a>Zobrazuje obchodní pravidla
+##  <a name="BusinessRules"></a> Zobrazuje obchodní pravidla
 
 Obchodní pravidlo je požadavek, který není spojen s případu konkrétní použití a má být dodržen v celém systému.  
   
@@ -79,7 +77,7 @@ Obchodní pravidlo je požadavek, který není spojen s případu konkrétní po
 |--------------------|----------|  
 |Jak vyvíjet kód, který dodržuje obchodní pravidla|[Modelování architektury aplikace](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a>Popisující kvality služeb požadavky
+##  <a name="QoSRequirements"></a> Popisující kvality služeb požadavky
 
 Existuje několik kategorií kvality požadavek na službu. Zahrnují následující:  
   

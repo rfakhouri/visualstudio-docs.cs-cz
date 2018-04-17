@@ -1,23 +1,20 @@
 ---
 title: Visual C++ IntelliSense | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d375ebccd96f6b8e987bd74f229abd70bfa9ab6
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: bfebee340a880cdef1b8721bd5f57e3be5db8e47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -39,7 +36,7 @@ Když začnete psát klíčové slovo, typ, funkce, název proměnné nebo jiné
 
 Seznam ikony a jejich významy, naleznete v části [zobrazení tříd a ikony v prohlížeči objekt](../ide/class-view-and-object-browser-icons.md).
 
-![Visual C&#43;&#43; Complete Word window](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
+![Visual C&#43; &#43; dokončení Word okno](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
 Při prvním vyvolání seznam členů pouze zobrazuje členy, které jsou dostupné pro aktuální kontext. Pokud vyberete **Ctrl**+**J** po, který se zobrazí všechny členy, bez ohledu na usnadnění přístupu. Pokud vyvolání ho třetí čas, zobrazí se i širší seznam prvky programu. Můžete vypnout seznam členů v **možnosti** dialogovém **textového editoru** > **C/C++** > **Obecné**  >  **Automatický seznam členů**.
 
@@ -61,13 +58,13 @@ Když najedete myší do proměnné, zobrazí se vložené, která obsahuje info
 
 Podtržení vlnovkou pod element programu (proměnné, – klíčové slovo, složené závorce, název typu a tak dále) volání pozornost chyba nebo potenciální chyby v kódu. Zelená vlnovku se zobrazí, když napíšete dopředného deklarace, a tak poznáte, že stále nutné zapsat implementace. Fialové vlnovku se zobrazí v sdílený projekt když dojde k chybě v kódu, který není aktuálně aktivní, třeba když pracují v kontextu systému Windows, ale něco zadat, která by byla v kontextu Android chybu. Červenou vlnovkou označuje kompilátoru chyby nebo upozornění v active kód, který je potřeba řešit.
 
-![Visual C & č. 43; & č. 43; podtržení vlnovkou chyba](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
+![Visual C&#43; &#43; podtržení vlnovkou chyba](../ide/media/vs2015_cpp_error_quiggles.png "vs2015_cpp_error_quiggles")
 
 ### <a name="code-colorization-and-fonts"></a>Kód zabarvení a písem
 
 Výchozí barev a písem lze změnit v **možnosti** dialogovém **prostředí** > **písma a barev**. Můžete změnit písmo pro mnoho uživatelského rozhraní windows tady, ne jenom editoru. Nastavení, které jsou specifické pro C++ začínat řetězcem "C++"; ostatní nastavení jsou pro všechny jazyky.
 
-### <a name="cross-platform-intellisense"></a>Cross-platform IntelliSense
+### <a name="cross-platform-intellisense"></a>Napříč platformami IntelliSense
 
 V projektu sdíleného kódu některé funkce IntelliSense, jako je například podtržení vlnovkou jsou k dispozici i v případě, že pracujete v kontextu systému Android. Pokud píšete některé kód, který by mělo za následek chybu v projektu na neaktivní, IntelliSense stále zobrazuje podtržení vlnovkou, ale jsou v barvu než podtržení vlnovkou chyby v aktuálním kontextu.
 
@@ -99,7 +96,7 @@ Všimněte si následujících akcí:
 
 Když otevřete jeden soubor mimo žádného projektu, se stále objevuje IntelliSense. Můžete povolit nebo zakázat konkrétní funkce IntelliSense **možnosti** dialogovém **textového editoru** > **C/C++**  >  **Rozšířené**. Konfigurace technologie IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **IntelliSense a procházení pro soubory bez projektu** části.
 
-![Visual C & č. 43; & č. 43; jeden soubor intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
+![Visual C&#43; &#43; jeden soubor intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
 Ve výchozím nastavení jedním souborem IntelliSense pouze používá standardní zahrnují adresáře, které chcete najít soubory hlaviček. Pokud chcete přidat další adresáře, otevřete místní nabídce na uzlu řešení a přidejte do adresáře **ladění zdrojového kódu** seznamu, jak ukazuje následující obrázek:
 

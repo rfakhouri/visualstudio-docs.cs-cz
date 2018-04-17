@@ -1,13 +1,10 @@
 ---
-title: "Stránka aplikace, Návrhář projektu (C#) | Microsoft Docs"
-ms.custom: 
+title: Stránka aplikace, Návrhář projektu (C#) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
 - cs.ProjectPropertiesApplication
@@ -16,14 +13,14 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7f9b348ad39b26b22e1678e76a1310e2c3f9b863
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 4ea0e0f38b96f7ba48a8a88ebf41986350fe73f5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-page-project-designer-c"></a>Stránka Aplikace, návrhář projektu (C#)
 
@@ -39,7 +36,7 @@ Pro přístup k **aplikace** vyberte uzel projektu (ne **řešení** uzel) v **P
  **Název sestavení**  
  Určuje název výstupního souboru, který bude obsahovat manifest sestavení. Změna této vlastnosti se také změní **název výstupu** vlastnost. Můžete provést také tuto změnu z příkazového řádku pomocí [/out (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option). Přístup prostřednictvím kódu programu naleznete v tématu <xref:VSLangProj.ProjectProperties.AssemblyName%2A>.  
   
- **Výchozí obor názvů**  
+ **výchozí obor názvů**  
  Určuje základní obor názvů pro soubory k projektu nepřidají.  
   
  V tématu [obor názvů](/dotnet/csharp/language-reference/keywords/namespace) pro další informace o vytváření oborů názvů v kódu.  

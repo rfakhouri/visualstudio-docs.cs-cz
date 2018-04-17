@@ -1,23 +1,21 @@
 ---
-title: "Kreslení tvarů a cest | Microsoft Docs"
-ms.custom: 
+title: Kreslení tvarů a cest | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c51f7217942f755eee45c4901cf0f8eecdbac605
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ee1b56019d6a633a37435420dfd2f7d8a02504fe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="draw-shapes-and-paths"></a>Kreslení tvarů a cest
 V Návrháři XAML *tvar* právě co byste očekávali. Příklad: obdélníku, kruh nebo třemi tečkami. A *cesta* je flexibilnější verze obrazce. Můžete provést akce, jako je změna tvaru nebo v kombinaci společně pro nové obrazce formuláře.  
@@ -38,7 +36,7 @@ V Návrháři XAML *tvar* právě co byste očekávali. Příklad: obdélníku, 
   
 -   [Vytvoření cesty výstřižek](#Clipping)  
   
-##  <a name="Shape"></a>Kreslení obrazce  
+##  <a name="Shape"></a> Kreslení obrazce  
  Obrazce v najdete **prostředky** panelu.  
   
  ![Kategorie tvarů na panelu prostředky](../designers/media/b4_shapes_assetspanel.png "b4_Shapes_AssetsPanel")  
@@ -47,7 +45,7 @@ V Návrháři XAML *tvar* právě co byste očekávali. Příklad: obdélníku, 
   
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")  
   
-##  <a name="Path"></a>Kreslení cesty  
+##  <a name="Path"></a> Kreslení cesty  
  Cestu je řadu připojené čar a křivek. Použijte cestu k vytvoření zajímavé tvarů, které nejsou k dispozici v **prostředky** panelu.  
   
  Cestu můžete nakreslit pomocí řádku, pera nebo tužky. Můžete najít v těchto nástrojů **nástroje** panelu.  
@@ -97,12 +95,12 @@ V Návrháři XAML *tvar* právě co byste očekávali. Příklad: obdélníku, 
   
  Použití **výběr** nástroj ![ ] (../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") vyberte cestu. Použití **pera** nástroj ![ ] (../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") klikněte na libovolné místo v cestě, ve které chcete přidat bod.  
   
-##  <a name="Convert"></a>Převést obrazce na cestu  
+##  <a name="Convert"></a> Převést obrazce na cestu  
  K úpravě obrazce stejným způsobem, že změníte cestu, převeďte na cestu tvaru.  
   
  **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práce s cesty: převést obrazce na cestu](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
   
-##  <a name="Combine"></a>Kombinovat cesty  
+##  <a name="Combine"></a> Kombinovat cesty  
  Zkombinováním cesty a obrazců do jednu cestu.  
   
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-A338-4ef4-96c5-dae51cc1ca8a")  
@@ -115,7 +113,7 @@ V Návrháři XAML *tvar* právě co byste očekávali. Příklad: obdélníku, 
   
  **Podívejte se na krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práce s cesty: Kombinovat cesty](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
   
-##  <a name="Compound"></a>Vytvoření složené cesty  
+##  <a name="Compound"></a> Vytvoření složené cesty  
  Při vytváření složené cesty všechny protínající částí cesty je odečten od výsledek a výsledné cesty získá visual vlastnosti nejspodnějších cesty.  
   
  Musíte můžete rozdělit složené cesty kdykoli po jejím vytvoření.  
@@ -124,7 +122,7 @@ V Návrháři XAML *tvar* právě co byste očekávali. Příklad: obdélníku, 
   
  **Shlédnout krátké video:** ![nakonfigurovat nainstalované funkce](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [práce s cesty: Vytvoření složeného cesty](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   
-##  <a name="Clipping"></a>Vytvoření cesty výstřižek  
+##  <a name="Clipping"></a> Vytvoření cesty výstřižek  
  Výstřižek cesta je cesta nebo tvar, který se použije k jinému objektu, skrytí části maskovaného objektu, které spadal mimo výstřižek cestu.  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-A841-4f39-a3ef-36090cf5a625")  

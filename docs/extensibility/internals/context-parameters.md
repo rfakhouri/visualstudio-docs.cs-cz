@@ -1,26 +1,24 @@
 ---
-title: "Kontextové parametry | Microsoft Docs"
-ms.custom: 
+title: Kontextové parametry | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - wizards, context parameters
 - context parameters
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45c05f738086cad87d204e1421513da54a01e211
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb6646e917b4cb94b4cd0534b513d148490cf69d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="context-parameters"></a>Kontextové parametry
 V [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE), můžete přidat průvodce, aby **nový projekt**, **přidat novou položku**, nebo **přidat projekt dílčí** dialogová okna. Průvodci přidané jsou k dispozici na **soubor** nabídky nebo kliknutím pravým tlačítkem na projekt v **Průzkumníku řešení**. Prostředí IDE předá kontextových parametrů k provádění průvodce. Kontextové parametry definovat stav projektu, pokud rozhraní IDE volá průvodce.  

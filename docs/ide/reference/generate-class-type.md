@@ -1,14 +1,12 @@
 ---
-title: "Generovat třídy nebo typu v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Generovat třídy nebo typu v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 f1_keywords:
 - vsl.GenerateFromUsage
 dev_langs:
@@ -16,11 +14,11 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3016df12481da0a7ea81dee1ff895fc5dcbd059d
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 030c4736eea942432175d0320d020a6b45888517
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generovat třídy nebo typu v sadě Visual Studio
 
@@ -55,7 +53,7 @@ Generování kódu platí pro:
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
      - Pozastavte ukazatel myši nad červenou vlnovkou a klikněte na ![Žárovek](media/bulb-cs.png) ikona, která se zobrazí.
-     - Klikněte ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
+     - Klikněte na ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
 
     ![Vytvoření náhledu – třída](media/class-preview-cs.png)
 

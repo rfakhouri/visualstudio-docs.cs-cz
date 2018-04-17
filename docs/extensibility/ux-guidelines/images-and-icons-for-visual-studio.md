@@ -1,25 +1,21 @@
 ---
-title: "Bitové kopie a ikony pro sadu Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Bitové kopie a ikony pro sadu Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 164a450ca346fe2bd7b267d951ce522d27f14160
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 3fae6a5350d5204219edcb14732c7686984035e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Bitové kopie a ikony pro sadu Visual Studio
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> Použití bitové kopie v sadě Visual Studio  
@@ -95,7 +91,7 @@ ms.lasthandoff: 03/13/2018
   
 |||  
 |-|-|  
-|**"Vyhledat"**|**"Zoom"**|  
+|**"Vyhledat"**|**"Přiblížení"**|  
 |![Ikonu hledání](../../extensibility/ux-guidelines/media/0404-09_search.png "0404 09_Search")|![Ikona přiblížení](../../extensibility/ux-guidelines/media/0404-10_zoom.png "0404 10_Zoom")|  
   
  Ve stromové zobrazení, nepoužívejte ikonou složky a modifikační. Pokud je k dispozici, použijte pouze modifikátor.  
@@ -276,9 +272,9 @@ ms.lasthandoff: 03/13/2018
   
 |Použití|Název|Hodnota (motiv světlý)|Vzorníku|Příklad|  
 |-----------|----------|---------------------------|------------|-------------|  
-|Pozadí nebo tmavý|VS BG|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Příklad základní palety](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
-|Popředí/lehký|VS FG|F0EFF1 / 240,239,241|![Swatch F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
-|Obrys|VS Out|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
+|Pozadí nebo tmavý|VS BG|424242 / 66,66,66|![Vzorníku 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|![Příklad základní palety](../../extensibility/ux-guidelines/media/0405-02_basepaletteexample.png "0405 02_BasePaletteExample")|  
+|Popředí/lehký|VS FG|F0EFF1 / 240,239,241|![Vzorníku F0EFF1](../../extensibility/ux-guidelines/media/0405_f0eff1.png "0405_F0EFF1")||  
+|Obrys|VS Out|F6F6F6 / 246,246,246|![Vzorníku F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")||  
   
  Kromě základní barvy každá ikona může obsahovat jeden další barvu z rozšířené palety.  
   
@@ -289,9 +285,9 @@ ms.lasthandoff: 03/13/2018
   
 |Použití|Název|Hodnota (všechny motivy)|Vzorníku|  
 |-----------|----------|--------------------------|------------|  
-|Kladné|Zelená akce VS|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|Záporný|Akce Red VS|A1260D / 161,38,13|![Swatch A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
-|Neutrální|Modrá akce VS|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|Kladné|Zelená akce VS|388A34 / 56,138,52|![Vzorníku 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Záporný|Akce Red VS|A1260D / 161,38,13|![Vzorníku A1260D](../../extensibility/ux-guidelines/media/0405_a1260d.png "0405_A1260D")|  
+|Neutrální|Modrá akce VS|00539C / 0,83,156|![Vzorníku 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
 |Vytvořit nový|Oranžová akce VS|C27D1A / 194,156,26|![Vzorníku C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
   
 ##### <a name="examples"></a>Příklady  
@@ -332,7 +328,7 @@ ms.lasthandoff: 03/13/2018
   
 |Použití|Název|Hodnota (všechny motivy)|Vzorníku|Příklad|  
 |-----------|----------|--------------------------|------------|-------------|  
-|Složky|Folder|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Barva ikonou složky](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|  
+|Složky|Folder|DCB67A / 220,182,122|![Vzorníku DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Barva ikonou složky](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "0405 23_FolderColor")|  
   
 #### <a name="visual-studio-languages"></a>Jazyky Visual Studio  
  Každý běžné jazyky nebo platformy, které jsou k dispozici v sadě Visual Studio má přidružené barev. Tyto barvy se používají na ikonu základní nebo na modifikátory jazyk, které se zobrazují v pravém horním rohu složené ikony.  
@@ -340,21 +336,21 @@ ms.lasthandoff: 03/13/2018
 |Použití|Název|Hodnota (všechny motivy)|Vzorníku|  
 |-----------|----------|--------------------------|------------|  
 |ASP, HTML, WPF|Modrá ASP HTML WPF|0095D 7 / 0,149,215|![Swatch 0095D7](../../extensibility/ux-guidelines/media/0405_0096d7.png "0405_0096D7")|  
-|C++|CPP Fialová|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
-|C#|CS zelený (zelený VS akce)|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|CSS|Red šablon stylů CSS|BD1E2D / 189,30,45|![Swatch BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
-|F#|Fialová služby FS|672878 / 103,40,120|![Swatch 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
+|C++|CPP Fialová|9B4F96 / 155,79,150|![Vzorníku 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
+|C#|CS zelený (zelený VS akce)|388A34 / 56,138,52|![Vzorníku 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|CSS|Red šablon stylů CSS|BD1E2D / 189,30,45|![Vzorníku BD1E2D](../../extensibility/ux-guidelines/media/0405_bd1e2d.png "0405_BD1E2D")|  
+|F#|Fialová služby FS|672878 / 103,40,120|![Vzorníku 672878](../../extensibility/ux-guidelines/media/0405_672878.png "0405_672878")|  
 |JavaScript|JS oranžová|F16421 / 241,100,33|![Swatch F16421](../../extensibility/ux-guidelines/media/0405_f16421.png "0405_F16421")|  
-|VB|VB Blue (modrá VS akce)|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|TypeScript|Oranžová TS|E04C06 / 224,76,6|![Swatch E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
+|VB|VB Blue (modrá VS akce)|00539C / 0,83,156|![Vzorníku 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|TypeScript|Oranžová TS|E04C06 / 224,76,6|![Vzorníku E04C06](../../extensibility/ux-guidelines/media/0405_e04c06.png "0405_E04C06")|  
 |Python|PY zelená|879636 / 135,150,54|![Swatch 879636](../../extensibility/ux-guidelines/media/0405_879636.png "0405_879636")|  
   
 ##### <a name="examples-of-icons-with-language-modifiers"></a>Příklady ikony s modifikátory jazyk  
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Ikona jazyka Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; icon](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405-26_CSharp")<br />C#|![C&#43;&#43; icon](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405-27_CPlusPlus")<br />C++|![F&#35; icon](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405-28_FSharp")<br />F#|![Ikona JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Ikona Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
-|![Ikona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![WPF icon](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405-32_WPF")<br />WPF|![Ikona ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![Ikona šablon stylů CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![TypeScript icon](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405-35_TypeScript")<br />TypeScript||  
+|![Ikona jazyka Visual Basic](../../extensibility/ux-guidelines/media/0405-25_vb.png "0405 25_VB")<br />VB|![C&#35; ikonu](../../extensibility/ux-guidelines/media/0405-26_csharp.png "0405 26_CSharp")<br />C#|![C&#43; &#43; ikonu](../../extensibility/ux-guidelines/media/0405-27_cplusplus.png "0405 27_CPlusPlus")<br />C++|![F&#35; ikonu](../../extensibility/ux-guidelines/media/0405-28_fsharp.png "0405 28_FSharp")<br />F#|![Ikona JavaScript](../../extensibility/ux-guidelines/media/0405-29_javascript.png "0405 29_JavaScript")<br />JavaScript|![Ikona Python](../../extensibility/ux-guidelines/media/0405-30_python.png "0405 30_Python")<br />Python|  
+|![Ikona HTML](../../extensibility/ux-guidelines/media/0405-31_html.png "0405 31_HTML")<br />HTML|![Ikona WPF](../../extensibility/ux-guidelines/media/0405-32_wpf.png "0405 32_WPF")<br />WPF|![Ikona ASP](../../extensibility/ux-guidelines/media/0405-33_asp.png "0405 33_ASP")<br />ASP|![Ikona šablon stylů CSS](../../extensibility/ux-guidelines/media/0405-34_css.png "0405 34_CSS")<br />CSS|![Ikona typeScript](../../extensibility/ux-guidelines/media/0405-35_typescript.png "0405 35_TypeScript")<br />TypeScript||  
   
 #### <a name="intellisense"></a>IntelliSense  
  IntelliSense ikony použít výhradní (barevná paleta). Tyto barvy se používají k pomáhají uživatelům rychle rozlišit mezi různé položky v seznamu místní IntelliSense.  
@@ -362,10 +358,10 @@ ms.lasthandoff: 03/13/2018
 |Použití|Název|Hodnota (všechny motivy)|Vzorníku|  
 |-----------|----------|--------------------------|------------|  
 |Třída, události|Oranžová akce VS|C27D1A / 194,125,26|![Vzorníku C27D1A](../../extensibility/ux-guidelines/media/0405_c27d1a.png "0405_C27D1A")|  
-|Metody rozšíření, metoda, modul, delegát|Akce Fialová VS|652D 90 / 101,45,144|![Swatch 652D90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
-|Pole, položka výčtu, makro, struktura, typ Union hodnoty, operátor, rozhraní|Modrá akce VS|00539C / 0,83,156|![Swatch 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
-|Objekt|Zelená akce VS|388A34 / 56,138,52|![Swatch 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
-|Konstantní, výjimky, položka výčtu, Map, položka mapování, Namespace, šablony, definice typu|Pozadí (VS BG)|424242 / 66,66,66|![Swatch 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
+|Metody rozšíření, metoda, modul, delegát|Akce Fialová VS|652D 90 / 101,45,144|![Vzorníku 652D 90](../../extensibility/ux-guidelines/media/0405_652d90.png "0405_652D90")|  
+|Pole, položka výčtu, makro, struktura, typ Union hodnoty, operátor, rozhraní|Modrá akce VS|00539C / 0,83,156|![Vzorníku 00539C](../../extensibility/ux-guidelines/media/0405_00539c.png "0405_00539C")|  
+|Objekt|Zelená akce VS|388A34 / 56,138,52|![Vzorníku 388A34](../../extensibility/ux-guidelines/media/0405_388a34.png "0405_388A34")|  
+|Konstantní, výjimky, položka výčtu, Map, položka mapování, Namespace, šablony, definice typu|Pozadí (VS BG)|424242 / 66,66,66|![Vzorníku 424242](../../extensibility/ux-guidelines/media/0405_424242.png "0405_424242")|  
   
 ##### <a name="examples-of-intellisense-icons"></a>Příklady ikony IntelliSense  
   
@@ -381,10 +377,10 @@ ms.lasthandoff: 03/13/2018
 |-----------|----------|--------------------------|------------|  
 |Stav: neutrální|Oznámení Blue (modrá VS)|1BA1E2 / 27,161,226|![Swatch 1BA1E2](../../extensibility/ux-guidelines/media/0405_1ba1e2.png "0405_1BA1E2")|  
 |Stav: kladné|Oznámení zelený (VS zelený)|339933 / 51,153,51|![Swatch 339933](../../extensibility/ux-guidelines/media/0405_339933.png "0405_339933")|  
-|Stav: záporná|Oznámení červený (VS červený)|E51400 / 229,20,0|![Swatch E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
+|Stav: záporná|Oznámení červený (VS červený)|E51400 / 229,20,0|![Vzorníku E51400](../../extensibility/ux-guidelines/media/0405_e51400.png "0405_E51400")|  
 |Stav: upozornění|Oznámení žlutý (VS oranžová)|FFCC00 / 255,204,0|![Vzorníku FFCC00](../../extensibility/ux-guidelines/media/0405_ffcc00.png "0405_FFCC00")|  
 |Výplně popředí|Oznámení černé (černé)|000000 / 0,0,0|![Vzorníku &#35;000000](../../extensibility/ux-guidelines/media/0405_000000.png "0405_000000")|  
-|Výplně popředí|Oznámení prázdné (prázdný)|FFFFFF / 255,255,255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|Výplně popředí|Oznámení prázdné (prázdný)|FFFFFF / 255,255,255|![Vzorníku FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
   
 #### <a name="examples-of-notification-icons"></a>Příklady ikony oznámení  
   
@@ -397,30 +393,30 @@ ms.lasthandoff: 03/13/2018
   
 |Skupina|Použití|Název|Hodnota (všechny motivy)|Vzorníku|  
 |-----------|-----------|----------|--------------------------|------------|  
-|TFS|Pozadí|TFSO BG|656565/ 101, 101, 101|![Swatch 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
-|TFS|Obrys|TFSO OUT|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|Napa|Pozadí|prázdné|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|Monaco|Pozadí|prázdné|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|F12|Pozadí|prázdné|FFFFFF / 255, 255, 255|![Swatch FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
-|F12|Normální|F12 Grey_Primary|555555 / 85, 85, 85|![Swatch 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
-|F12|Pozastavte ukazatel myši|F12 Blue_Hover|2279BF / 34,121,191|![Swatch 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
-|F12|zakázáno|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Swatch ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
-|F12|Najeďte pozadí|Najeďte bg|D9EBF7 / 217,235,247|![Swatch D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
+|TFS|Pozadí|TFSO BG|656565/ 101, 101, 101|![Vzorníku 656565](../../extensibility/ux-guidelines/media/0405_656565.png "0405_656565")|  
+|TFS|Obrys|TFSO OUT|FFFFFF / 255, 255, 255|![Vzorníku FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|Napa|Pozadí|prázdné|FFFFFF / 255, 255, 255|![Vzorníku FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|Monaco|Pozadí|prázdné|FFFFFF / 255, 255, 255|![Vzorníku FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|F12|Pozadí|prázdné|FFFFFF / 255, 255, 255|![Vzorníku FFFFFF](../../extensibility/ux-guidelines/media/0405_ffffff.png "0405_FFFFFF")|  
+|F12|Normální|F12 Grey_Primary|555555 / 85, 85, 85|![Vzorníku 555555](../../extensibility/ux-guidelines/media/0405_555555.png "0405_555555")|  
+|F12|Pozastavte ukazatel myši|F12 Blue_Hover|2279BF / 34,121,191|![Vzorníku 2279BF](../../extensibility/ux-guidelines/media/0405_2279bf.png "0405_2279BF")|  
+|F12|zakázáno|F12 LtGrey_Disabled|ABABAC / 171,171,172|![Vzorníku ABABAC](../../extensibility/ux-guidelines/media/0405_ababac.png "0405_ABABAC")|  
+|F12|Najeďte pozadí|Najeďte bg|D9EBF7 / 217,235,247|![Vzorníku D9EBF7](../../extensibility/ux-guidelines/media/0405_d9ebf7.png "0405_D9EBF7")|  
 |F12|Při stisknutí tlačítka pozadí|Při stisknutí tlačítka bg|B2D7F0 / 178,215,240|![Swatch B2D7F0](../../extensibility/ux-guidelines/media/0405_b2d7f0.png "0405_B2D7F0")|  
-|F12|Obrys|VS OUT|F6F6F6 / 246,246,246|![Swatch F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
+|F12|Obrys|VS OUT|F6F6F6 / 246,246,246|![Vzorníku F6F6F6](../../extensibility/ux-guidelines/media/0405_f6f6f6.png "0405_F6F6F6")|  
 |F12|Informace o|Informace o|00BCF2 / 0,188,242|![Swatch 00BCF2](../../extensibility/ux-guidelines/media/0405_00bcf2.png "0405_00BCF2")|  
-|F12|Upozornění|Upozornění|F28300 / 242,131,0|![Swatch F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
-|F12|Chyba / záporná|Error_Negative|E81123 / 232,17,35|![Swatch E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
+|F12|Upozornění|Upozornění|F28300 / 242,131,0|![Vzorníku F28300](../../extensibility/ux-guidelines/media/0405_f28300.png "0405_F28300")|  
+|F12|Chyba / záporná|Error_Negative|E81123 / 232,17,35|![Vzorníku E81123](../../extensibility/ux-guidelines/media/0405_e81123.png "0405_E81123")|  
 |F12|Start / kladné|Start_Positive|009E49 / 0,158,73|![Swatch 009E49](../../extensibility/ux-guidelines/media/0405_009e49.png "0405_009E49")|  
-|F12|Typ ukončení|Typ ukončení|9B4F96 / 155,79,150|![Swatch 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
+|F12|Typ ukončení|Typ ukončení|9B4F96 / 155,79,150|![Vzorníku 9B4F96](../../extensibility/ux-guidelines/media/0405_9b4f96.png "0405_9B4F96")|  
 |F12|Označit událostí|Označit událostí|A51F00 / 165,31,0|![Vzorníku A51F00](../../extensibility/ux-guidelines/media/0405_a51f00.png "0405_A51F00")|  
-|F12|Značky uživatele|Značky uživatele|F16220 / 241,98,32|![Swatch F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
+|F12|Značky uživatele|Značky uživatele|F16220 / 241,98,32|![Vzorníku F16220](../../extensibility/ux-guidelines/media/0405_f16220.png "0405_F16220")|  
   
 #### <a name="examples-of-visual-studio-online-icons"></a>Příklady Visual Studio Online ikony  
   
-|TFS Online||||  
+|Online sady TFS||||  
 |----------------|-|-|-|  
-|![TFS Online team icon](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405-49_TFSOnlineTeam")<br />Online Team|![Informační ikona, která TFS](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405 50_TFSInformation")<br />Informace o|![Ikona historie TFS](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405 51_TFSHistory")<br />Historie|![Ikona větve sady TFS](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405 52_TFSBranch")<br />Větvení.|  
+|![Ikona sady TFS Online team](../../extensibility/ux-guidelines/media/0405-49_tfsonlineteam.png "0405 49_TFSOnlineTeam")<br />Tým online|![Informační ikona, která TFS](../../extensibility/ux-guidelines/media/0405-50_tfsinformation.png "0405 50_TFSInformation")<br />Informace o|![Ikona historie TFS](../../extensibility/ux-guidelines/media/0405-51_tfshistory.png "0405 51_TFSHistory")<br />Historie|![Ikona větve sady TFS](../../extensibility/ux-guidelines/media/0405-52_tfsbranch.png "0405 52_TFSBranch")<br />Větvení.|  
   
 |Napa||||  
 |----------|-|-|-|  

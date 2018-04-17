@@ -1,28 +1,26 @@
 ---
-title: "Krok 1: Vytvořte projekt Formulářové aplikace Windows | Microsoft Docs"
-ms.custom: 
+title: 'Krok 1: Vytvořte projekt Formulářové aplikace Windows | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
-caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 4714399d1ea7b17f1d79858185157e9c11902d7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b455fbbd5474d03e61827cdee74cdd586bc2024b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Krok 1: Vytvořte projekt formulářové aplikace Windows
 Když vytvoříte Prohlížeč obrázků, prvním krokem je vytvoření projektu aplikace Windows Forms.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) nebo [kurzu 1: vytvoření prohlížeče obrázků v C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+ ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# – Video 1](http://go.microsoft.com/fwlink/?LinkId=205199). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-create-a-windows-forms-application-project"></a>Vytvoření projektu aplikace Windows Forms  
   

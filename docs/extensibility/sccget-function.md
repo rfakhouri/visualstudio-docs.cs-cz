@@ -1,29 +1,25 @@
 ---
 title: Funkce SccGet | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccGet
 helpviewer_keywords:
 - SccGet function
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73f5c55b39d855eb084206ef27e2254d50377b86
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fb793eb5c35c4ca9ee22a58496ebe175b83c68e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccget-function"></a>SccGet – funkce
 Tato funkce načte kopii jeden nebo více souborů pro zobrazování a kompilování, ale ne pro úpravy. Ve většině systémů jsou soubory označené jako jen pro čtení.  
@@ -81,7 +77,7 @@ SCCRTN SccGet(
  `SCC_GET_ALL` Příznak mohou být kombinovány s `SCC_GET_RECURSIVE` příznak načíst všechny soubory v adresáři pro danou a také všechny podadresáře.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE`mají být předány nikdy bez `SCC_GET_ALL`. Všimněte si také, že pokud adresářů C:\A a C:\A\B obě předaná na rekurzivního získat, C:\A\B a všechny jeho podadresáře se ve skutečnosti načíst dvakrát. Prostředí IDE odpovídá – a není zdroji řídit plug-in – zajistit, aby byly průběžně duplicitní položky, jako je tato mimo pole.  
+>  `SCC_GET_RECURSIVE` mají být předány nikdy bez `SCC_GET_ALL`. Všimněte si také, že pokud adresářů C:\A a C:\A\B obě předaná na rekurzivního získat, C:\A\B a všechny jeho podadresáře se ve skutečnosti načíst dvakrát. Prostředí IDE odpovídá – a není zdroji řídit plug-in – zajistit, aby byly průběžně duplicitní položky, jako je tato mimo pole.  
   
  Nakonec i v případě, že zdroj řízení modulu plug-in zadaný `SCC_CAP_GET_NOUI` příznak při inicializaci, která určuje, že nemá uživatelské rozhraní pro příkaz Get, tuto funkci lze volat stále zařízení IDE se budou načítat soubory. Příznak jednoduše znamená, že rozhraní IDE nezobrazí položku nabídky Get a že modulu plug-in se očekává poskytování uživatelské rozhraní.  
   

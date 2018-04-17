@@ -2,23 +2,19 @@
 title: Řešení potíží s emulátor sady Visual Studio pro Android | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
-caps.latest.revision: ''
 author: mgmclemore
 ms.author: mamcle
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d333295461617eb8a85f0970bc82e33f5a2ec68
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: ae4478b711581e332c8da980ddac9fd4d369d8e7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Poradce při potížích s emulátorem sady Visual Studio pro Android
 Toto téma obsahuje informace k řešení problémů, které mohou nastat při použití emulátor sady Visual Studio pro Android.  
@@ -216,7 +212,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
          Zde se zobrazují vlastnosti adaptéru.  
   
-         ![Virtual Adapter Properties](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+         ![Vlastnosti virtuálního adaptéru](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
     3.  Pro tento adaptér se pouze položky, které je nutné vybrat v rámci **toto připojení používá následující položky** by měl být následující:  
   
@@ -244,7 +240,7 @@ Toto téma obsahuje informace k řešení problémů, které mohou nastat při p
   
     -   Otevřete Hyper V a přejděte do Správce virtuálního přepínače. Vytvořit virtuální přepínač s názvem "Windows Phone emulátoru interní přepínač" a nastavte její typ připojení na **interní síti**.  
   
-         ![Virtual Switch Manager](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+         ![Správce virtuálního přepínače](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
      Nyní spusťte emulátor. By se měly fungovat.  
   

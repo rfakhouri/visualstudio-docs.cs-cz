@@ -1,23 +1,21 @@
 ---
-title: "Úložiště počítaný a vlastní vlastnosti | Microsoft Docs"
-ms.custom: 
+title: Úložiště počítaný a vlastní vlastnosti | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1b5d89a621c0f325fd20dbff47c30975f760a6f8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 153ff58e5ace618fbf9e6f0e3bb25614d21fc98a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Vypočtené a vlastní vlastnosti úložiště
 Všechny vlastnosti domény v jazyce specifické pro doménu (DSL) lze zobrazit uživateli v diagramu a v Průzkumníku váš jazyk a je přístupný pomocí kódu programu. Vlastnosti se však lišit ve způsobu, jakým jsou uložena jejich hodnoty.  
@@ -25,7 +23,7 @@ Všechny vlastnosti domény v jazyce specifické pro doménu (DSL) lze zobrazit 
 ## <a name="kinds-of-domain-properties"></a>Druhy vlastnosti domény  
  V definici DSL, můžete nastavit **druh** vlastnosti domény, jak je uvedeno v následující tabulce:  
   
-|Domain Property Kind|Popis|  
+|Typ vlastnosti domény|Popis|  
 |--------------------------|-----------------|  
 |**Standardní** (výchozí)|Vlastnost domain, který je uložený v *ukládání* a serializovaných do souboru.|  
 |**Vypočítat**|Vlastnost domény jen pro čtení, není uložen v úložišti, která je vypočtená z jiných hodnot.<br /><br /> Například `Person.Age` vypočítat, z `Person.BirthDate`.<br /><br /> Je nutné zadat kód, který provádí výpočet. Obvykle vypočítat hodnotu od dalších vlastností domény. Můžete však také používat externí prostředky.|  
@@ -84,7 +82,7 @@ Všechny vlastnosti domény v jazyce specifické pro doménu (DSL) lze zobrazit 
   
 10. Otestujte vlastnost. Ujistěte se, že zkusíte **vrátit zpět** a **vrátit**.  
   
-##  <a name="setters"></a>Transakce a vlastní nastavení  
+##  <a name="setters"></a> Transakce a vlastní nastavení  
  Metoda Set vlastnost vlastní úložiště nemáte otevřete transakci, protože metoda je volána obvykle v rámci aktivní transakce.  
   
  Však může být sada metoda volána také pokud uživatel vyvolá zpět nebo znovu, nebo pokud transakce je vrácena zpět. Když <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> má hodnotu true, metodu Set měl chovat následujícím způsobem:  

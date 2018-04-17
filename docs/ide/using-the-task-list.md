@@ -1,12 +1,10 @@
 ---
-title: "Používání seznamu úkolů | Microsoft Docs"
-ms.custom: 
+title: Používání seznamu úkolů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - TaskListWindow
 - VS.TaskList
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Visual Studio, task list
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 282d9a70470686af71120887ee18bb2b6a899f78
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ef9b3904ce06c498518d55b0d62b8e9393c75239
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-task-list"></a>Používání seznamu úloh
 
@@ -74,7 +73,7 @@ Komentáře v kódu před sebou značku komentáře a předdefinované token se 
 
 Protože `TODO` je i předdefinovanou tokenu, tento komentář se zobrazí jako `TODO` úloh v seznamu.
 
-###  <a name="customTokens"></a>Vlastní tokeny
+###  <a name="customTokens"></a> Vlastní tokeny
 
 Ve výchozím nastavení, sada Visual Studio obsahuje následující klíčová slova: HACKERSKÝ TODO, UNDONE, Poznámka. Tyto nejsou velká a malá písmena.
 
@@ -94,7 +93,7 @@ Nebo lze také vytvořit vlastní tokeny.
 
 4. V **s prioritou** rozevíracího seznamu vyberte výchozí prioritu pro nový token. Vyberte **přidat** tlačítko.
 
-###  <a name="cppComments"></a>Komentáře C++ TODO
+###  <a name="cppComments"></a> Komentáře C++ TODO
 
 Standardně se zobrazují komentáře C++ TODO v **seznam úkolů** okno. Toto chování, můžete změnit.
 

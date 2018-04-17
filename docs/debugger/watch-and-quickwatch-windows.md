@@ -1,13 +1,10 @@
 ---
-title: "Nastavovat sledování na proměnné v sadě Visual Studio | Microsoft Docs"
+title: Nastavovat sledování na proměnné v sadě Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 helpviewer_keywords:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - debugging [Visual Studio], expression evaluation
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 454dacc7d3b785cf290823b38275a8e441950d8a
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 264ac3f21dd7799bc4aa1f36909801eac854b755
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Nastavovat sledování na proměnné pomocí sledování a QuickWatch Windows v sadě Visual Studio
 Při ladění, můžete použít **sledovat** a **QuickWatch** windows si chcete přehrát proměnné a výrazy.  Rozdíl je, že **sledovat** okno může zobrazit několika proměnných, při **QuickWatch** okno zobrazí jednu proměnnou najednou. 
@@ -59,7 +56,7 @@ static void Main(string[] args)
 
     Měli byste vidět proměnnou v **hodnoty** okno s hodnotou 1.
 
-    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
+    ![Výraz QuickWatch](../debugger/media/watchexpression.png "QuickWatchExpression")  
 
     Pokud chcete vyhodnotit výraz pomocí proměnné, přidejte výraz například `a + b` k **výraz** a klikněte na **přehodnocovat**. 
   
@@ -116,13 +113,13 @@ int main()
   
  Například pokud máte kód uvedené v předchozí části, můžete získat průměr ze tří hodnot takto:  
   
- ![Watch Expression](../debugger/media/watchexpression.png "WatchExpression")  
+ ![Podívejte se na výrazu](../debugger/media/watchexpression.png "WatchExpression")  
   
  Obecně platí, pravidla pro vyhodnocení výrazů v **sledovat** okna jsou stejné jako pravidla pro vyhodnocení výrazů v jazyce kódování. Pokud výraz obsahuje chybu syntaxe, můžete očekávat ke stejné chybě kompilátoru, která zobrazí se v editoru kódu. Tady je příklad:  
   
- ![Watch Expression Error](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
+ ![Podívejte se na chyby výrazu](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a>Aktualizace hodnot sledování, které jsou zastaralé.  
+##  <a name="bkmk_refreshWatch"></a> Aktualizace hodnot sledování, které jsou zastaralé.  
  V některých případech může zobrazit aktualizace ikona (šipka cyklické) Pokud je výrazu vyhodnoceného v **sledovat** okno.  Například, pokud máte vyhodnocení vlastnosti vypnutý (**nástroje > Možnosti > ladění > povolit vyhodnocení vlastnosti a jiná volání funkce implicitní**), a máte následující kód:  
   
 ```csharp  
@@ -153,7 +150,7 @@ static void Main(string[] args)
   
  Pokud se zobrazí ikona, která je kruh dvě vlnovkami, které se podobají vláken, tento výraz nebyl vyhodnocen z důvodu potenciální závislosti mezi vlákny. Jinými slovy vyhodnocení kód vyžaduje jiná vlákna v dočasně spuštění vaší aplikace. Pokud jste v režimu pozastavení, zastaví se obvykle všechna vlákna ve vaší aplikaci. Povolení dalších podprocesů pro spuštění dočasně může mít neočekávané dopad na stav vašeho programu a způsobí, že ladicí program na události, jako je například zarážky a výjimky vydané v těchto vláknech ignorovat.  
   
-##  <a name="bkmk_sideEffects"></a>Vedlejší efekty a výrazy  
+##  <a name="bkmk_sideEffects"></a> Vedlejší efekty a výrazy  
  Hodnocení některých výrazů může změnit hodnotu proměnné nebo jinak ovlivnit stav programu. Například následující výraz vyhodnocení změní hodnotu `var1`:  
   
 ```  
@@ -168,7 +165,7 @@ var1 = var2
   
  Při vyhodnocení vlastnosti nebo volání funkce implicitní je vypnutý, můžete vynutit vyhodnocení pomocí **ac** formátu – modifikátor (pro jazyk C# pouze). V tématu [specifikátory v jazyce C# formátu](../debugger/format-specifiers-in-csharp.md).  
   
-## <a name="bkmk_objectIds"></a>Pomocí ID objektů v okně sledovat (C# a Visual Basic)  
+## <a name="bkmk_objectIds"></a> Pomocí ID objektů v okně sledovat (C# a Visual Basic)  
 
  Existují situace, kdy chcete pozorovat chování určitého objektu. Můžete například chtít sledovat objekt odkazuje místní proměnné po tuto proměnnou byla mimo rozsah. V jazyce C# a Visual Basic můžete vytvořit ID pro určité instance odkazové typy objektů a použít je v okně sledovat a v zarážek podmínky. ID objektu je generované common language runtime (CLR) ladění služeb a přidružená k objektu.  
   
@@ -217,7 +214,7 @@ public class Program
   
 2.  Spuštění ladění a při spuštění, zastavení v zarážce, najděte proměnné v **místní hodnoty –** okně pravým tlačítkem a vyberte **Zkontrolujte ID objektu**.  
   
-3.  Měli byste vidět  **$**  plus číslo **místní hodnoty –** okna, která reprezentuje ID objektu.  
+3.  Měli byste vidět **$** plus číslo **místní hodnoty –** okna, která reprezentuje ID objektu.  
   
 4.  Přidejte do okna kukátka ID objektu.  
   

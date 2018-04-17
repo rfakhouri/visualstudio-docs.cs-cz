@@ -1,12 +1,10 @@
 ---
-title: "&lt;závislost&gt; – Element (aplikace ClickOnce) | Microsoft Docs"
-ms.custom: 
+title: '&lt;závislost&gt; – Element (aplikace ClickOnce) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - manifests [ClickOnce], dependency element
 - <dependency> element [ClickOnce application manifest]
 ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
-caps.latest.revision: "34"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 7c3319661a4c0df298cd844c4d71c6855cad818c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: be31fafb64b44d6d98917edb11f82a69fbc41c76
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;závislost&gt; – Element (ClickOnce aplikace)
 Identifikuje závislostí platformu nebo sestavení, která je vyžadována pro aplikace.  
@@ -98,7 +96,7 @@ Identifikuje závislostí platformu nebo sestavení, která je vyžadována pro 
 ### <a name="dependentos"></a>dependentOS  
  Volitelné. Obsahuje `osVersionInfo` elementu. `dependentOS` a `dependentAssembly` elementy se vzájemně vylučují: jeden z nich musí existovat `dependency` elementu, ale ne obojí.  
   
- `dependentOS`podporuje následující atributy.  
+ `dependentOS` podporuje následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
@@ -124,7 +122,7 @@ Identifikuje závislostí platformu nebo sestavení, která je vyžadována pro 
 ### <a name="dependentassembly"></a>dependentAssembly –  
  Volitelné. Obsahuje `assemblyIdentity` elementu. `dependentOS` a `dependentAssembly` elementy se vzájemně vylučují: jeden z nich musí existovat `dependency` elementu, ale ne obojí.  
   
- `dependentAssembly`má následující atributy.  
+ `dependentAssembly` má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
@@ -140,7 +138,7 @@ Identifikuje závislostí platformu nebo sestavení, která je vyžadována pro 
 |Atribut|Popis|  
 |---------------|-----------------|  
 |`name`|Požadováno. Určuje název aplikace.|  
-|`version`|Požadováno. Určuje číslo verze aplikace v následujícím formátu:`major.minor.build.revision`|  
+|`version`|Požadováno. Určuje číslo verze aplikace v následujícím formátu: `major.minor.build.revision`|  
 |`publicKeyToken`|Volitelné. Určuje řetězec šestnáctkových 16 znaků, který představuje posledních 8 bajtů `SHA-1` hash hodnotu veřejný klíč, pod kterým je podepsaná aplikace nebo sestavení. Veřejný klíč používaný k podepisování katalogu musí být 2 048 bitů nebo více.|  
 |`processorArchitecture`|Volitelné. Určuje procesor. Platné hodnoty jsou `x86` pro 32bitový systém Windows a `I64` pro 64bitový systém Windows.|  
 |`language`|Volitelné. Určuje kódy jazyků dvě části, třeba cs-cz, sestavení.|  
@@ -148,7 +146,7 @@ Identifikuje závislostí platformu nebo sestavení, která je vyžadována pro 
 ### <a name="hash"></a>hash  
  `hash` Element je volitelným podřízeným `assemblyIdentity` elementu. `hash` Element nemá žádné atributy.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]používá algoritmické hodnotu hash všech souborů v aplikaci jako kontrolu zabezpečení, ujistěte se, že žádné soubory byly změněny po nasazení. Pokud `hash` element neuvedete, nebude provedena kontrola. Proto vynechání `hash` element se nedoporučuje.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] používá algoritmické hodnotu hash všech souborů v aplikaci jako kontrolu zabezpečení, ujistěte se, že žádné soubory byly změněny po nasazení. Pokud `hash` element neuvedete, nebude provedena kontrola. Proto vynechání `hash` element se nedoporučuje.  
   
 ### <a name="dsigtransforms"></a>dsig:TRANSFORMS  
  `dsig:Transforms` Je požadovaný podřízený element `hash` elementu. `dsig:Transforms` Element nemá žádné atributy.  

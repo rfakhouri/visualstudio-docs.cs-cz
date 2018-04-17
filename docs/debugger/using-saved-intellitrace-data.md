@@ -1,13 +1,10 @@
 ---
-title: "Pomocí uložit dat technologie IntelliTrace | Microsoft Docs"
-ms.custom: 
+title: Pomocí uložit dat technologie IntelliTrace | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.norepro
 helpviewer_keywords:
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - IntelliTrace log files
 - .iTrace files
 ms.assetid: 9f2cce86-345a-4e22-84ba-91542d81e67a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c4c82dc3edb1abcad9dc212040864155deb1a6
-ms.sourcegitcommit: 7ae502c5767a34dc35e760ff02032f4902c7c02b
+ms.openlocfilehash: 2a39531134d4c2f041c170d328c79d157fd74a0d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-saved-intellitrace-data"></a>Pomocí uložených dat technologie IntelliTrace
 Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejděte na určité místo spuštění vaší aplikace. Tento soubor může obsahovat události výkonu, výjimky, vláken, testovací kroky, moduly a jiné informace systému, aby záznamy IntelliTrace při vaše aplikace běží.  
@@ -45,7 +41,7 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
     |Relace testování v Microsoft Test Manager. Tento soubor .iTrace připojí k pracovní položce Team Foundation Server.|[Shromažďování více diagnostických dat v manuálních testech](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
     |Microsoft Monitoring Agent, buď samostatně nebo pomocí System Center 2012 R2 Operations Manager pro technologii ASP.NET webové aplikace a služby SharePoint aplikace běžící v nasazení|-   [Diagnostika problémů po nasazení](../debugger/diagnose-problems-after-deployment.md)<br />-   [Co je nového pro System Center 2012 R2 Operations Manager](http://technet.microsoft.com/library/dn249700.aspx)|  
   
-##  <a name="GetStarted"></a>Co chcete udělat?  
+##  <a name="GetStarted"></a> Co chcete udělat?  
   
 -   [Otevřete protokol nástroje IntelliTrace](#Open)  
   
@@ -53,25 +49,25 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
   
 -   [Spuštění ladění z protokolu IntelliTrace](#StartDebugging)  
   
-##  <a name="Open"></a>Otevřete protokol nástroje IntelliTrace  
+##  <a name="Open"></a> Otevřete protokol nástroje IntelliTrace  
  Na počítači s Visual Studio Enterprise otevřete soubor .iTrace.  
   
 -   Poklikejte na soubor .iTrace mimo Visual Studio, nebo otevřít soubor z v sadě Visual Studio.  
   
-     \-nebo –  
+     \- nebo –  
   
 -   Pokud soubor .iTrace je připojen k pracovní položce Team Foundation Server, postupujte podle těchto kroků v rámci pracovní položky:  
   
     -   V části **všechny odkazy**, najít soubor .iTrace. Otevřete ji.  
   
-         \-nebo –  
+         \- nebo –  
   
     -   V části **zkopírujte kroky**, vyberte **IntelliTrace** odkaz.  
   
 > [!TIP]
 >  Pokud jste zavřeli souboru nástroje IntelliTrace během ladění, můžete ho znovu otevřít snadno. Přejděte na **ladění** nabídce zvolte **IntelliTrace**, **zobrazit souhrn protokolu**. Můžete také **zobrazit souhrn protokolu** v **IntelliTrace** okno. Toto je k dispozici pouze při ladění pomocí technologie IntelliTrace.  
   
-##  <a name="Understand"></a>Pochopení protokolu IntelliTrace  
+##  <a name="Understand"></a> Pochopení protokolu IntelliTrace  
  Některé z těchto částí v souboru .iTrace zobrazí pouze v případě, že jste shromáždili data z určitého zdroje, například z nástroje Test Manager nebo z aplikací služby SharePoint.  
   
 |**Část**|**Obsahuje**|**Zdroj kolekce**|  
@@ -95,9 +91,9 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
   
      `Description:slow`  
   
-##  <a name="StartDebugging"></a>Spuštění ladění z protokolu IntelliTrace  
+##  <a name="StartDebugging"></a> Spuštění ladění z protokolu IntelliTrace  
   
-###  <a name="Performance"></a>Narušení výkonu  
+###  <a name="Performance"></a> Narušení výkonu  
  Zkontrolujte události výkonu, které byly zaznamenány pro vaši aplikaci. Můžete skrýt, události, které nejsou často dojít.  
   
 ##### <a name="to-start-debugging-from-a-performance-event"></a>Spustit ladění z události výkonu.  
@@ -128,7 +124,7 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
   
      Teď můžete zkontrolovat ostatní zaznamenaná hodnoty, zásobník volání krokovat kód, nebo použijte **IntelliTrace** okna [přesunout zpětné nebo dopředný "v čase" mezi jiné metody](../debugger/intellitrace.md) byly během volat Tato událost výkonu.  
   
-###  <a name="ExceptionData"></a>Data výjimky  
+###  <a name="ExceptionData"></a> Data výjimky  
  Zkontrolujte výjimky, které byly vyvolány a zaznamenává pro vaši aplikaci. Můžete seskupit výjimky, které mají stejného typu a, abyste viděli pouze poslední výjimka zásobník volání.  
   
 ##### <a name="to-start-debugging-from-an-exception"></a>Spustit ladění z výjimku  
@@ -154,7 +150,7 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
     |**Nejnovější čas události** nebo **čas události**|Časové razítko zaznamenávají, když byla vyvolána výjimka|  
     |**Zásobník volání**|Volání zásobníku pro výjimku.<br /><br /> Zásobník volání najdete v seznamu vyberte výjimku. Zásobník volání se zobrazí pod seznamu výjimek.|  
   
-###  <a name="Analysis"></a>Analýza  
+###  <a name="Analysis"></a> Analýza  
  Diagnostikovat problémy s aplikací SharePoint 2010 a SharePoint 2013 pomocí služby SharePoint korelační ID nebo zkontrolujte všechny neošetřené výjimky, které nalezen agenta Microsoft Monitoring Agent.  
   
 -   Pomocí ID korelace SharePoint najít jeho odpovídající webové žádosti a události. Vyberte události a pak spusťte ladění v místě, kde a kdy k události došlo.  
@@ -167,11 +163,11 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
   
      Příklad:  
   
-     ![IntelliTrace & č. 45; Chyba SharePoint & č. 45; ID korelace](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
+     ![IntelliTrace &#45; chybu služby SharePoint &#45; ID korelace](../debugger/media/sharepointerror_intellitrace.png "SharePointError_IntelliTrace")  
   
 2.  Otevřete soubor .iTrace a potom přejděte na **Analysis** a zadejte ID korelace SharePoint ke kontrole odpovídající webový požadavek a zaznamenává události.  
   
-     ![Protokolu IntelliTrace & č. 45; Zadejte ID korelace SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![Protokolu IntelliTrace &#45; ID korelace zadejte SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  V části **žádosti o události**, zkontrolujte události. Od horní, události se zobrazí v pořadí, že při jejich vzniku.  
   
@@ -179,7 +175,7 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
   
     2.  Zvolte **spustit ladění** spustit ladění – v okamžiku, kdy k události došlo.  
   
-     ![Soubor protokolu IntelliTrace & č. 45; Zobrazit webový požadavek & č. 43; události](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+     ![Soubor protokolu IntelliTrace &#45; zobrazení webové žádosti &#43; události](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
  Zobrazí se tyto druhy událostí SharePoint společně s události IntelliTrace:  
   
@@ -194,7 +190,7 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
     |**Pole IntelliTrace**|**Pole ULS služby SharePoint**|  
     |----------------------------|------------------------------|  
     |**ID**|**ID události**|  
-    |**Úroveň**|**Úroveň**|  
+    |**úroveň**|**úroveň**|  
     |**Kategorie Id**|**Kategorie Id**|  
     |**Kategorie**|**Kategorie**|  
     |**Oblasti**|**Produktu**|  
@@ -209,11 +205,11 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
   
 3.  Zvolte **ladění výjimka** spustit ladění – v místě, kde a kdy došlo k výjimce.  
   
-     ![Protokolu IntelliTrace & č. 45; SharePoint neošetřené výjimky](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+     ![Protokolu IntelliTrace &#45; SharePoint neošetřené výjimky](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
  Podrobný postup najdete v části [návod: ladění aplikace SharePoint pomocí IntelliTrace pomocí](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md). Pro různé druhy dat, která najdete v části záznamy agent [funkce IntelliTrace](../debugger/intellitrace-features.md).  
   
-###  <a name="ThreadsList"></a>Seznam vláken  
+###  <a name="ThreadsList"></a> Seznam vláken  
  Zkontrolujte zaznamenaná vláken, které byly spuštěny v tento cílový proces. Můžete spustit ladění z první platný události IntelliTrace ve vybrané vlákno.  
   
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>Spustit ladění z konkrétní vlákna  
@@ -233,7 +229,7 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
 |**Čas spuštění**|Čas vytvoření vlákna|  
 |**Koncový čas**|Čas, kdy vlákno bylo dokončeno.|  
   
-###  <a name="TestData"></a>Testovacích dat  
+###  <a name="TestData"></a> Testovacích dat  
  Zkontrolujte dat technologie IntelliTrace, který nástroje Test Manager poznamenali při testování vaší aplikace.  
   
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>Spustit ladění z kroku specifický test  
@@ -252,10 +248,10 @@ Při spuštění ladění ze souboru protokolu (.iTrace) IntelliTrace, přejdět
 |**Testovacího případu**|Testovacích případů z relace vybrané testu. Tento seznam je prázdný, pokud testovací data byla vytvořena pomocí ruční nahodilého testu.|  
 |**Testovací kroky mřížky**|Kroky, které byly zapsány s výsledků testů průchodu testů nebo selhání|  
   
-###  <a name="SystemInfo"></a>Informace o systému  
+###  <a name="SystemInfo"></a> Informace o systému  
  Tato část uvádí podrobnosti o systému, který hostuje aplikaci, například hardwaru, operačního systému, informace o prostředí a specifické pro proces.  
   
-###  <a name="Modules"></a>Moduly  
+###  <a name="Modules"></a> Moduly  
  Tato část uvádí moduly, které tento cílový proces načíst. Moduly se zobrazí v pořadí, ve kterém budou načteny.  
   
 |**Sloupec**|**Zobrazuje**|  

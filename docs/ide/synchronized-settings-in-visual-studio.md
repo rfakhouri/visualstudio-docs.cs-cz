@@ -1,27 +1,23 @@
 ---
-title: "Synchronizovat nastavení v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Synchronizovat nastavení v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef4179c5bc0fb80e2fb65d54885c342ca49bce3b
-ms.sourcegitcommit: 03a74d29a1e0584ff4808ce6c9e812b51e774905
+ms.openlocfilehash: d0f289fb10cfdbd79a639247a3d14a5a8ced6c10
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>Synchronizovat nastavení v sadě Visual Studio
 
@@ -33,7 +29,7 @@ Ve výchozím nastavení jsou synchronizovány následující nastavení.
 
 - Nastavení pro vývoj (musíte vybrat sadu nastavení při prvním spuštění sady Visual Studio, ale můžete změnit výběr kdykoli. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).)
 
-- Následující možnosti v **nástroje &#124; Možnosti** stránky:
+- Následující možnosti v **nástroje &#124; možnosti** stránky:
 
     - **Motiv** a nabídky panelu velká a malá písmena nastavení, na **prostředí**, **Obecné** stránka Možnosti
 
@@ -51,11 +47,11 @@ Ve výchozím nastavení jsou synchronizovány následující nastavení.
 
 - Aliasy příkazů definovaný uživatelem. Další informace o tom, jak definovat aliasy příkazů najdete v tématu [aliasy příkazů Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-- Rozložení oken uživatelem definované v **okno &#124; Spravovat rozložení oken** stránky
+- Rozložení oken uživatelem definované v **okno &#124; spravovat rozložení oken** stránky
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Vypnout synchronizovaná nastavení v určitém počítači
 
-Synchronizovaná nastavení pro sadu Visual Studio jsou ve výchozím nastavení zapnuté. Synchronizovaná nastavení v počítači můžete vypnout přechodem na **nástroje &#124; Možnosti &#124; Prostředí &#124; Účty** stránku a po zrušení zaškrtnutí políčka.  Například pokud se rozhodnete nechcete synchronizovat nastavení sady Visual Studio v počítači A jakékoli změny nastavení v počítači provedeny proveďte, nejsou zobrazeny na počítačích B nebo počítač C. počítačích B a C bude pokračovat k synchronizaci mezi sebou, ale není s počítačem A.
+Synchronizovaná nastavení pro sadu Visual Studio jsou ve výchozím nastavení zapnuté. Synchronizovaná nastavení v počítači můžete vypnout přechodem na **nástroje &#124; možnosti &#124; prostředí &#124; účty** stránku a po zrušení zaškrtnutí políčka.  Například pokud se rozhodnete nechcete synchronizovat nastavení sady Visual Studio v počítači A jakékoli změny nastavení v počítači provedeny proveďte, nejsou zobrazeny na počítačích B nebo počítač C. počítačích B a C bude pokračovat k synchronizaci mezi sebou, ale není s počítačem A.
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchronizovat nastavení v sadě Visual Studio rodiny produktů a verzí
 

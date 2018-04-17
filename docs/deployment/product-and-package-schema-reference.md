@@ -1,12 +1,10 @@
 ---
-title: "Referenční schéma balíčku a Product | Microsoft Docs"
-ms.custom: 
+title: Referenční schéma balíčku a Product | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.GenerateBootstrapper.CircularIncludes
 - MSBuild.ResolveManifestFiles.PublishFileNotFound
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - package files [ClickOnce]
 - Windows Installer, bootstrapper elements
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
-caps.latest.revision: "7"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 149dd62b38bdcb0863d30f4280b35950361f58cb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c4df5288f05f14c146c934c8d9d5b916a4bb2fc4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="product-and-package-schema-reference"></a>Referenční schéma balíčku a produktu
 A *souboru produktu* je manifestu XML, který popisuje všechny externí závislosti požadované [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Příklady vnější závislosti [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] a Microsoft Data Access Components (MDAC). Soubor balíčku je podobná soubor produktu, ale se používá k instalaci součásti závislých na jazykové verzi závislosti, jako je například lokalizované sestavení, licenční smlouvy a dokumentaci.  
@@ -54,7 +52,7 @@ A *souboru produktu* je manifestu XML, který popisuje všechny externí závisl
 ## <a name="remarks"></a>Poznámky  
  Schéma balíčku je spotřebovávána Setup.exe, programem generovaným pomocí MS Build samozaváděcí úloha, která obsahuje malé pevně logiku své vlastní. Schéma ovládá všechny aspekty procesu instalace.  
   
- `InstallChecks`testy této setup.exe proveďte existenci daného balíčku. `PackageFiles`Zobrazí seznam všech balíčků, které by mohly mít instalačního procesu instalace, má daný test selhat. Každé zadání příkazu příkazy spustí jeden z testů popsaných pomocí `InstallChecks`a určuje, které `PackageFile` ke spuštění by měl test nezdaří. Můžete použít `Strings` element lokalizovat názvy produktů a chybových zpráv, tak, aby jeden binární instalační můžete použít k instalaci vaší aplikace pro libovolný počet jazyků.  
+ `InstallChecks` testy této setup.exe proveďte existenci daného balíčku. `PackageFiles` Zobrazí seznam všech balíčků, které by mohly mít instalačního procesu instalace, má daný test selhat. Každé zadání příkazu příkazy spustí jeden z testů popsaných pomocí `InstallChecks`a určuje, které `PackageFile` ke spuštění by měl test nezdaří. Můžete použít `Strings` element lokalizovat názvy produktů a chybových zpráv, tak, aby jeden binární instalační můžete použít k instalaci vaší aplikace pro libovolný počet jazyků.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu ukazuje soubor dokončení produktu pro instalaci [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  

@@ -1,23 +1,21 @@
 ---
-title: "CA5351 Nepoužívejte porušený kryptografické algoritmy | Microsoft Docs"
-ms.custom: 
+title: CA5351 Nepoužívejte porušený kryptografické algoritmy | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
-caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: fd9959fe67097b815a4a86b81b5cf78e468281a5
-ms.sourcegitcommit: 49aa031cbebdd9c7ec070c713afb1a97d1ecb701
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 663460f61a689e105520e94d82f3d4aeb08a4f07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 Nepoužívejte porušený kryptografické algoritmy
 |||  
@@ -40,9 +38,9 @@ ms.lasthandoff: 01/23/2018
   
  Pro šifrovací algoritmy:  
   
--   <xref:System.Security.Cryptography.DES>šifrování obsahuje malá velikost klíče, které by mohly být hrubou silou za méně než jeden den.  
+-   <xref:System.Security.Cryptography.DES> šifrování obsahuje malá velikost klíče, které by mohly být hrubou silou za méně než jeden den.  
   
--   <xref:System.Security.Cryptography.RC2>šifrování je ohrožena útoky založenými na útok související s klíčem, zjistí-li útočník matematickém vztahy mezi všechny klíčové hodnoty.  
+-   <xref:System.Security.Cryptography.RC2> šifrování je ohrožena útoky založenými na útok související s klíčem, zjistí-li útočník matematickém vztahy mezi všechny klíčové hodnoty.  
   
  Toto pravidlo spustí, když se některé z výše uvedených kryptografické funkce vyhledá ve zdrojovém kódu a vyvolá upozornění pro uživatele.  
   

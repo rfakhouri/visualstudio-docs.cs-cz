@@ -1,23 +1,21 @@
 ---
-title: "Návod: Chybějící objekty z důvodu použití funkce Vertex Shading | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Chybějící objekty z důvodu použití funkce Vertex Shading | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
-caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f374bbbdf30a80bdea70b789da5d5febbeee7a82
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 226f6177b98aae8159de10f752cde37632dca901
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Návod: Chybějící objekty z důvodu použití funkce vertex shading
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky nástrojům pro zkoumání objekt, který nebyl nalezen z důvodu chyby, ke kterému dochází během fáze shaderu vrchol.  
@@ -124,7 +122,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
   
  Chcete-li problém vyřešit, je přesunout na řádek kódu, který nastaví hodnotu `m_marbleConstantBufferData.projection` po řádek, který inicializuje hodnoty místní proměnné `projection`.  
   
- ![Opravené C & č. 43; & č. 43; zdrojový kód](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
+ ![Opravené C&#43; &#43; zdrojový kód](media/gfx_diag_demo_missing_object_shader_step_10.png "gfx_diag_demo_missing_object_shader_step_10")  
   
  Po opravě kód, můžete ho znovu sestavte a spusťte aplikaci znovu a zjistit, že se vyřešit problém vykreslování:  
   

@@ -1,27 +1,25 @@
 ---
-title: "Pomocí sady Visual Studio spolupráce – sestavení | Microsoft Docs"
-ms.custom: 
+title: Pomocí sady Visual Studio spolupráce – sestavení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, interop assemblies
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d579755190eaf51448ef2b1b855c087bcad358
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ca0ff9a75d72bc723b767a43f12123094a520644
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Pomocí sady Visual Studio spolupráce – sestavení
 Visual Studio sestavení vzájemné spolupráce povolit spravované aplikace pro přístup k rozhraní modelu COM, která zajistí možnosti rozšíření sady Visual Studio. Existují určité rozdíly mezi přímých rozhraní COM a jejich vzájemné spolupráce verze. Hodnoty HRESULT jsou obecně vyjádřené hodnoty int a je nutné zacházet stejným způsobem jako výjimky a parametry (zejména výstupní parametry) jsou zpracovávat odděleně.  
@@ -32,7 +30,7 @@ Visual Studio sestavení vzájemné spolupráce povolit spravované aplikace pro
  Ve výchozím nastavení <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> vyvolá výjimku, vždy, když je předán HRESULT, který má hodnotu menší než nula. V případě přípustné hodnoty jsou tyto hodnoty HRESULT a by měl být vyvolána žádná výjimka, by měla být předána hodnoty další hodnoty HRESULT <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> po otestování hodnoty. Pokud HRESULT testuje odpovídá žádné hodnoty HRESULT explicitně předaný <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, nedojde k výjimce.  
   
 > [!NOTE]
->  <xref:Microsoft.VisualStudio.VSConstants> Třída obsahuje konstanty pro běžné hodnoty HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.S_OK> a <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hodnoty HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> a <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants>také poskytuje <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> a <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metody, které odpovídají úspěšné a NEÚSPĚŠNÉ makra v modelu COM.  
+>  <xref:Microsoft.VisualStudio.VSConstants> Třída obsahuje konstanty pro běžné hodnoty HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.S_OK> a <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hodnoty HRESULT, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> a <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> také poskytuje <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> a <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> metody, které odpovídají úspěšné a NEÚSPĚŠNÉ makra v modelu COM.  
   
  Zvažte například následující volání funkce, ve kterém <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> je přijatelné návratovou hodnotu, ale jiné HRESULT menší než nula. představuje chybu.  
   
@@ -47,7 +45,7 @@ Visual Studio sestavení vzájemné spolupráce povolit spravované aplikace pro
 ## <a name="returning-hresults-to-com-from-managed-code"></a>Hodnoty HRESULT vrácením COM ze spravovaného kódu  
  Pokud dojde k žádná výjimka, spravovaný kód vrátí <xref:Microsoft.VisualStudio.VSConstants.S_OK> funkce COM, která je volána. Zprostředkovatel komunikace s objekty COM podporuje společné výjimky, které jsou silného typu ve spravovaném kódu. Například metoda, která přijímá nepřijatelné `null` argument vyvolává <xref:System.ArgumentNullException>.  
   
- Pokud si nejste jistí které výjimkou výjimku, ale znáte hodnota HRESULT chcete vrátit do modelu COM, můžete použít <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metodu pro příslušné výjimku. Tento postup funguje i s nestandardní chybu, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>pokusy o mapování hodnota HRESULT předán do ní silného typu výjimka. Pokud ne, vyvolá k obecné výjimce modelu COM. místo. Konečným výsledkem je, že hodnota HRESULT předáte <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> ze spravovaného kódu, které se vrátí do funkce COM, která je volána.  
+ Pokud si nejste jistí které výjimkou výjimku, ale znáte hodnota HRESULT chcete vrátit do modelu COM, můžete použít <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> metodu pro příslušné výjimku. Tento postup funguje i s nestandardní chybu, například <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> pokusy o mapování hodnota HRESULT předán do ní silného typu výjimka. Pokud ne, vyvolá k obecné výjimce modelu COM. místo. Konečným výsledkem je, že hodnota HRESULT předáte <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> ze spravovaného kódu, které se vrátí do funkce COM, která je volána.  
   
 > [!NOTE]
 >  Snížit výkon, výjimky, které slouží k označení neobvyklého podmínky. Podmínky, které dochází často, by měly být zpracovávaný vložené, místo vyvolaná výjimka.  

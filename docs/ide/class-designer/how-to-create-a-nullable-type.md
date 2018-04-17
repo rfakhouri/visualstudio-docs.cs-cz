@@ -1,28 +1,24 @@
 ---
-title: "Postupy: vytvoření typu s povolenou hodnotou Null (návrhář tříd) | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytvoření typu s povolenou hodnotou Null (návrhář tříd) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fcef9fc80bbc55b07cd9dad68e217c9982a3b1f7
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: cd01d0fd62e37ddca915caf367777b62a0aa6246
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Postupy: Vytváření typů s povolenou hodnotou Null (návrhář tříd)
 Některé typy hodnot vždy nějaké (nebo potřebujete) definovanou hodnotu. Toto je běžnou praxí v databázích, kde některá pole nemusí být přiřazeny žádnou hodnotu. Například můžete do pole databáze do označují, že je ještě nebyly přiřazeny hodnotu přiřadit hodnotu null.  
@@ -31,9 +27,9 @@ A *typ s možnou hodnotou Null* je typ hodnoty, které rozšířit tak, aby trv�
   
 Typy s možnou hodnotou Null jsou instancemi třídy <xref:System.Nullable%601> struktura. Každá instance typu s povolenou hodnotou Null má dvě veřejné vlastnosti jen pro čtení `HasValue` a `Value`:  
   
--   `HasValue`je typu `bool` a určuje, zda proměnná obsahuje hodnotu definované. `True`znamená, že proměnná obsahuje hodnotu než null. Pro hodnotu definovanou můžete otestovat pomocí příkazu `if (x.HasValue)` nebo `if (y != null)`.  
+-   `HasValue` je typu `bool` a určuje, zda proměnná obsahuje hodnotu definované. `True` znamená, že proměnná obsahuje hodnotu než null. Pro hodnotu definovanou můžete otestovat pomocí příkazu `if (x.HasValue)` nebo `if (y != null)`.  
   
--   `Value`je stejného typu jako nadřazený typ. Pokud `HasValue` je `True`, `Value` obsahuje hodnotu smysluplný. Pokud `HasValue` je `False`, přístupu k `Value` vyvolá výjimku neplatná operace.  
+-   `Value` je stejného typu jako nadřazený typ. Pokud `HasValue` je `True`, `Value` obsahuje hodnotu smysluplný. Pokud `HasValue` je `False`, přístupu k `Value` vyvolá výjimku neplatná operace.  
   
 Ve výchozím nastavení, když deklarovat proměnnou jako typ s možnou hodnotou Null, má žádné definované hodnoty (`HasValue` je `False`), jiné než výchozí hodnotu její základní typ hodnoty.  
   

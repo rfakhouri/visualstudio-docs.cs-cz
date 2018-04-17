@@ -1,27 +1,25 @@
 ---
-title: "Odkaz na schéma šablon sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Odkaz na schéma šablon sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - VSTEMPLATE files
 - Visual Studio templates, schema
 - .vstemplate files
 ms.assetid: 6f74a2d5-3811-43d6-8b10-eb5823ad8995
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: fb289f6ca65887433cbdb7dee65333ea31060097
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 08e0758638bbb73cb999fb6b8aba2f195b603b42
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-template-schema-reference"></a>Odkaz na schéma šablon sady Visual Studio
 Tento oddíl obsahuje informace o elementech XML v souborech .vstemplate, což jsou soubory, do nichž se ukládají metadata pro šablony projektů, šablony položek a úvodní sady.  
@@ -45,7 +43,7 @@ Tento oddíl obsahuje informace o elementech XML v souborech .vstemplate, což j
 |[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|--|--|  
 |[Složka](../extensibility/folder-element-visual-studio-project-templates.md)|ProjectItem<br /><br /> Folder|Název|  
 ||[zastaralé]|--|  
-|[Fullclassname –](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|  
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|--|--|  
 |[Skryté](../extensibility/hidden-element-visual-studio-templates.md)|--|--|  
 |[Ikona](../extensibility/icon-element-visual-studio-templates.md)|--|Balíček<br /><br /> ID|  
 |[Locationfield –](../extensibility/locationfield-element-visual-studio-project-templates.md)|--|--|  

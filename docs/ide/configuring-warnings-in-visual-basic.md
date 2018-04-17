@@ -2,28 +2,24 @@
 title: Konfigurace upozornění v jazyce Visual Basic | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Basic], warnings
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65e290734a906f006f283bf3462d07389876375c
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 265d86365c9084dac9d75a04df1e1ea243b3b585
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Konfigurace upozornění v jazyce Visual Basic
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Kompilátoru zahrnuje sadu upozornění na kód, který může způsobit chyby spuštění. Tyto informace můžete použít k zápisu čisticí, rychlejší a lepší kódu s menším počtem chyb. Například bude kompilátor vytvořit upozornění, když se uživatel pokusí o volají člena nepřiřazené objektové proměnné, vrátit z funkce bez nastavení návratovou hodnotu, nebo spuštění `Try` bloku s chybami v logika pro zachycení výjimky.  
@@ -125,7 +121,7 @@ ms.lasthandoff: 03/28/2018
 ## <a name="see-also"></a>Viz také  
  [Typy chyb](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [Try... Catch... Finally – příkaz](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
- [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
- [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
+ [/ nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   
+ [/ warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)   
  [Stránka kompilovat, Návrhář projektu (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Upozornění kompilátoru, která jsou ve výchozím nastavení vypnuté](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

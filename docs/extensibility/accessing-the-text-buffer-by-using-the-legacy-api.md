@@ -2,26 +2,22 @@
 title: Přístup k textová vyrovnávací paměť s použitím rozhraní API starší | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffers
 ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
-caps.latest.revision: 15
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77002e095690da85e73f1a79d405cb5174b96851
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 84bf79ea19fc0867643ce3e8ee6db0a645d9a0dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>Přístup k textová vyrovnávací paměť s použitím rozhraní API starší verze
 Text je zodpovědný za správu textové datové proudy a soubor trvalost. I když vyrovnávací paměti můžou číst nebo zapisovat dalších formátů, všechny běžné komunikace s vyrovnávací paměti se provádí pomocí kódování Unicode. Ve starší verzi rozhraní API textovou vyrovnávací paměť můžete použít jeden – nebo dvourozměrná souřadnicový systém můžete určit umístění znaku ve vyrovnávací paměti.  
@@ -29,7 +25,7 @@ Text je zodpovědný za správu textové datové proudy a soubor trvalost. I kdy
 ## <a name="one--and-two-dimension-coordinate-systems"></a>Jedna a dvě dimenze koordinaci systémy  
  Jednorozměrná souřadnice polohy je založena na znak na pozici od prvního znaku ve vyrovnávací paměti, jako je například 147. Můžete použít <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> rozhraní přistupovat k jednorozměrné umístění ve vyrovnávací paměti. Dvourozměrná souřadnicový systém vychází z dvojice řádku a indexu. Například znak ve vyrovnávací paměti na 43, by být 5 na řádku 43, pět znaků napravo od první znak v daného řádku. Přístup dvourozměrná umístění do vyrovnávací paměti pomocí <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> rozhraní. Jak <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream> rozhraní jsou implementované objekt textové vyrovnávací paměti (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>) a je přístupný pomocí od sebe navzájem `QueryInterface`. Následující diagram znázorňuje těchto a dalších klíče rozhraní na <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>.  
   
- ![Text Buffer Object](../extensibility/media/vstextbuffer.gif "vsTextBuffer")  
+ ![Objekt vyrovnávací paměti textu](../extensibility/media/vstextbuffer.gif "vsTextBuffer")  
 Objekt textové vyrovnávací paměti  
   
  I když buď souřadnicový systém funguje v textová vyrovnávací paměť, je optimalizován pro používání dvourozměrná souřadnic. Jednorozměrná souřadnicový systém můžete vytvořit nároky na výkon. Proto používejte dvourozměrná souřadnicový systém kdykoli je to možné.  

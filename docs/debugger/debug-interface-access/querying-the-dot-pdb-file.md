@@ -1,30 +1,26 @@
 ---
-title: "Dotazování. Soubor PDB | Microsoft Docs"
-ms.custom: 
+title: Dotazování. Soubor PDB | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - PDB files
 - .pdb files, querying
 ms.assetid: 8da07d1c-2712-45f9-8fbf-f34040408a8a
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da12d0cde9e8dae0d291985bc8bf88931ab35ec5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b2f4e6c153cb7f2729e95137c07198858dd4bfa7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="querying-the-pdb-file"></a>Dotazování na soubor .Pdb
 Soubor databáze programu (rozšíření .pdb) je binární soubor, který obsahuje typ a symbolické ladicí informace shromážděné v průběhu kompilace a propojení projektu. Soubor PDB se vytvoří při kompilace programu C/C++ s **/ZI** nebo **/Zi** nebo [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], nebo [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programu s **/debug** možnost. Soubory objektů obsahují odkazy, do souboru PDB informace o ladění. Další informace o soubory pdb najdete v tématu [soubory PDB](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f). DIA aplikace můžete použít následující obecné kroky k získání podrobností o různé symboly, objektů a dat elementů v rámci spustitelné bitové kopie.  

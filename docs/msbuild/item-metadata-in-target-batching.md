@@ -1,31 +1,27 @@
 ---
-title: "Metadata položek v dávkování cíle | Microsoft Docs"
-ms.custom: 
+title: Metadata položek v dávkování cíle | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, target batching
 - target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c15870bb47d1f53f1943882ed0685c222e82b326
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4d96b90ecb4cbc79ffabb7ae3a6c69a34c60ed94
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadata položek v dávkování cíle
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] má schopnost provádět analýzy závislost na vstupy a výstupy cíl sestavení. Pokud je zjištěno, že vstupní nebo výstupní cíle jsou aktuální, cíl budou přeskočeny, a sestavení bude pokračovat. `Target`použít prvky `Inputs` a `Outputs` atributy a určete položky, chcete-li prověřit během analýzy závislostí.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] má schopnost provádět analýzy závislost na vstupy a výstupy cíl sestavení. Pokud je zjištěno, že vstupní nebo výstupní cíle jsou aktuální, cíl budou přeskočeny, a sestavení bude pokračovat. `Target` použít prvky `Inputs` a `Outputs` atributy a určete položky, chcete-li prověřit během analýzy závislostí.  
   
  Pokud obsahuje úlohu, která používá dávkové položky jako vstupní nebo výstupní, cíl `Target` element cíle by měl používat dávkování v jeho `Inputs` nebo `Outputs` atributy povolit [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tak, aby přeskočil dávky položky, které jsou již aktuální.  
   

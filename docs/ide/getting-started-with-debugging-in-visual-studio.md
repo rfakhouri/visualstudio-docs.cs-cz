@@ -1,25 +1,21 @@
 ---
-title: "Začínáme s laděním v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Začínáme s laděním v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 12/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e858d24a37fec49468981b44d450212ba2fa3654
-ms.sourcegitcommit: 3285243d6c0521266053340fe06505885d12178b
+ms.openlocfilehash: 085ea00f95124eb6ae2ed7ccc96eed692be0d649
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-debugging-in-visual-studio"></a>Začínáme s laděním v sadě Visual Studio
 Visual Studio poskytuje výkonnou sadu integrované sestavení projektu a nástroje pro ladění. V tomto tématu zjistěte, jak začít používat sadu nejzákladnější ladění funkcí uživatelského rozhraní.  
@@ -49,7 +45,7 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
 
  ![Výstup sady Visual Studio a seznam chyb](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
- Klikněte na řádek chyby ve **seznam chyb** okno a přechod na řádek v dojde k chybě. (Nebo zapnout čísla řádků kliknutím v **Snadné spuštění** panel v pravém horním, zadejte "čísla řádků" do ní a stisknutím klávesy Enter. Toto je nejrychlejší způsob, jak získat k **možnosti** položka okno, kde můžete zapnout čísla řádků. Naučte se používat **Snadné spuštění** panel a ušetřit spoustu kliknutí uživatelského rozhraní!)  
+ Klikněte na řádek chyby ve **seznam chyb** okno a přechod na řádek v dojde k chybě. (Nebo zapnout čísla řádků kliknutím v **Snadné spuštění** panel v pravém horním, zadáním "čísla řádků" do ní a klávesy **Enter**. Toto je nejrychlejší způsob, jak získat k **možnosti** položka okno, kde můžete zapnout čísla řádků. Naučte se používat **Snadné spuštění** panel a ušetřit spoustu kliknutí uživatelského rozhraní!)  
 
  ![Visual Studio editor s čísla řádků](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
@@ -59,7 +55,7 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
 
  Chyba je identifikována red "klikatá" podtržítka. Pozastavte ukazatel myši nad jeho další podrobnosti. Proveďte opravu a jeho zmizí, i když může znamenat nové chyby s oprava. (To se nazývá "regrese".)  
 
- ![Visual Studio error hover](../ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
+ ![Visual Studio chyba hover](../ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
 
  Provede v seznamu chyb a vyřešte všechny chyby v kódu.  
 
@@ -77,17 +73,17 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
 ### <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Pomocí žárovek opravíte nebo Refaktorovat kódu  
  Žárovek jsou nová funkce pro Visual Studio, která vám umožní Refaktorovat vloženého kódu. Jsou snadný způsob, jak opravit běžné upozornění rychle a efektivně. Chcete-li přistupovat k nim, klikněte pravým tlačítkem na upozornění vlnovku (nebo stiskněte klávesu **Ctrl +**. Při ukazatele myši vlnovka) a potom vyberte **rychlé akce**.  
 
- ![Rychlé možnosti aplikace Visual Studio žárovky](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
+ ![Žárovky rychlé možnosti aplikace Visual Studio](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
 
  Zobrazí se seznam možných opravy nebo refactors, které můžete provést u tohoto řádku kódu.  
 
- ![Visual Studio Light Bulb preview](../ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
+ ![Visual Studio žárovky preview](../ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
 
  Žárovek lze použít bez ohledu na analyzátorů kódu určit, že je možnost pro opravu, refactor, nebo vylepšení vašeho kódu. Klikněte na každý řádek kódu, pravým tlačítkem a otevřete kontextu nabídku a vyberte **rychlé akce** (nebo znovu, pokud dáváte přednost efektivitu, stiskněte **Ctrl +**.). Pokud jsou k dispozici refaktoring nebo zlepšování možností, budou zobrazena; v opačném zpráva `No quick options available here` se zobrazí v lůžkem levém dolním rohu okna IDE.  
 
- ![Visual Studio žárovky žádná možnost text](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
+ ![Visual Studio žárovky light – žádná možnost text](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
 
- V prostředí, můžete rychle použít klávesy se šipkami a **Ctrl +**. pro kontrolu rychlé možnost refaktoring příležitostí a vyčistit kódu!  
+ V prostředí, můžete rychle použít klávesy se šipkami a **Ctrl +**. pro kontrolu rychlé možnosti refaktoring příležitostí a vyčistit kódu!  
 
  Další informace o žárovek číst [rychlé akce pomocí žárovek](../ide/perform-quick-actions-with-light-bulbs.md).  
 
@@ -117,7 +113,7 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
 
 4.  Pokud jsou psaní kódu jazyka C nebo C++, použijte zarážky pro zastavení kód, takže si můžete prohlédnout hodnoty adres (podívejte se na hodnotu NULL) a počty odkazů při ladění chyby související s pamětí.  
 
- Další informace o použití zarážek, najdete v tématu [pomocí zarážek](../debugger/using-breakpoints.md).  
+ Další informace o použití zarážek, najdete v tématu [použití zarážek](../debugger/using-breakpoints.md).  
 
 ### <a name="inspect-your-code-at-run-time"></a>Kontrola kódu v době běhu  
  Při spuštění kódu dotkne boru přerušení a pozastaví, nebyl ještě provést řádek kódu označena žlutě (aktuální příkaz). V tomto okamžiku můžete provést aktuální příkaz a zkontrolujte změněné hodnoty. Můžete použít několik *krok* příkazů pro spuštění kódu v ladicím programu. Pokud je označen jako kód volání metody, můžete do ní krok stisknutím **F11**. Můžete také *krok přes* řádek kódu stisknutím **F10**. Další příkazy a podrobnosti o tom, jak procházet kód, přečtěte si [přejděte kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
@@ -132,14 +128,14 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
 
  Podržte ukazatel nad proměnné zobrazíte hodnoty a odkazy, které aktuálně obsahuje. Pokud se zobrazí hodnota, kterou by neměl být, pravděpodobně chyby v předchozích nebo volání řádků kódu.  Podrobnější informace [Další](../debugger/getting-started-with-the-debugger.md) o používání ladicího programu.
 
- Kromě toho Visual Studio zobrazí okno diagnostické nástroje, kde můžete sledovat vaše aplikace CPU a využití paměti v čase. Později ve vývoji vaší aplikace můžete tyto nástroje Pokud chcete vyhledat neočekávané velkou využití nebo paměť přidělení procesoru. Použít ve spojení s **sledovat** okno a zarážky pro příčinu neočekávané velkou využití nebo nevydané prostředky.  Další informace najdete v tématu [profilace prohlídka funkce](../profiling/profiling-feature-tour.md).
+ Kromě toho Visual Studio zobrazí **diagnostické nástroje** okno, kde můžete sledovat využití procesoru a paměti vaší aplikace v čase. Později ve vývoji vaší aplikace můžete tyto nástroje Pokud chcete vyhledat neočekávané velkou využití nebo paměť přidělení procesoru. Použít ve spojení s **sledovat** okno a zarážky pro příčinu neočekávané velkou využití nebo nevydané prostředky.  Další informace najdete v tématu [profilace prohlídka funkce](../profiling/profiling-feature-tour.md).
 
 ### <a name="run-unit-tests"></a>Spouštění testování částí  
  Testování částí se vaše první linií obrany před kódu chyby proto, že pokud jsou správně provedené, testují jedné "jednotka" kódu, obvykle jednu funkci a jsou obvykle mnohem snazší ladit než ladění vašeho úplné programu. Visual Studio nainstaluje rozhraní testování částí Microsoft pro spravovaná a nativní kód. Použijte testování framework částí vytvářet testy částí, spustit je a ohlásí výsledky tyto testy. Testování částí spusťte při provádění změn pro testování, aby váš kód stále funguje správně. Pokud používáte Visual Studio Enterprise edition, můžete spustit testy automaticky po každé sestavení.  
 
  Chcete-li začít, přečtěte si [generování testů částí kódu s IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).  
 
- Další informace o testování částí v sadě Visual Studio a jak se vám pomůžou vytvořit lepší kvality kódu, přečtěte si [testování částí](../test/unit-test-basics.md).  
+ Další informace o testování částí v sadě Visual Studio a jak se vám pomůžou vytvořit lepší kvality kódu, přečtěte si [jednotkové testování Základy](../test/unit-test-basics.md).  
 
 ### <a name="perform-static-code-analysis"></a>Provedení analýzy statické kódu  
  "Analýza kódu statických" je zvláštní způsob oznámením "automaticky zkontrolujte vlastní kód pro běžné problémy, které může vést k běhové chyby nebo problémy ve správě kódu". Získání v která podporují jejího spuštění, když jste odstranili zřejmé chyby brání sestavení a nějakou dobu adres, které může vytvořit upozornění. Můžete budete uložit sami některé hlavu dolů na cestách, jakož i další pár techniky styl kódu.  
@@ -157,5 +153,5 @@ Nejjednodušší způsob, jak sestavit projekt je ke stisknutí **F7**, ale mů�
  ![Visual Studio Code Analysis upozornění hover](../ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
 
 ## <a name="see-also"></a>Viz také  
- [Prohlídka funkce ladicí program](../debugger/debugger-feature-tour.md)  
+ [Prohlídka funkcí ladicího programu](../debugger/debugger-feature-tour.md)  
  [Další informace o používání ladicího programu](../debugger/getting-started-with-the-debugger.md)

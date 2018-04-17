@@ -1,26 +1,24 @@
 ---
-title: "Zpracování specializovaná nasazení | Microsoft Docs"
-ms.custom: 
+title: Zpracování specializovaná nasazení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploying applications [Visual Studio SDK]
 - specialized deployment
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
-caps.latest.revision: "32"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3744f9022ef1ef0fb435ac98d7e63d9cff717f32
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d777c66657d69d24e1cbc3d6d4b3ea5a5d143a27
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="handling-specialized-deployment"></a>Zpracování specializuje nasazení
 Nasazení je volitelné operace pro projekty. Webového projektu, například podporuje nasazení umožníte projektu aktualizovat webový server. Podobně **Smart Device** projektu podporuje nasazení zkopírovat integrované aplikace cílového zařízení. Projekt podtypů můžete zadat chování specializovaná nasazení implementací <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> rozhraní. Toto rozhraní definuje kompletní sadu operace nasazení:  

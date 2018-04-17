@@ -1,12 +1,10 @@
 ---
-title: "Návod: Zápis Vizualizéru v jazyce Visual Basic | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Zápis Vizualizéru v jazyce Visual Basic | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - visualizers, writing
 - walkthroughs [Visual Studio], visualizers
 ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
-caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7ad673736334daec79860b9832a056c17781a082
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 7076e85701551e884c3126c7acd235b45a81aff5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Návod: Zápis vizualizéru v jazyce Visual Basic
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Vizualizér, které vytvoříte v tomto návodu zobrazí obsah řetězce pomocí Windows Forms okno se zprávou. Tento jednoduchý řetězec vizualizér je základní příklad zobrazit, jak můžete vytvořit vizualizérech pro jiné datové typy hodí víc do vašich projektů.  
@@ -58,7 +56,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
 2.  Změňte název na něco smysluplného, například DebuggerSide.vb z Class1.vb.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automaticky změní deklaraci třídy v DebuggerSide.vb tak, aby odpovídaly nový název souboru.  
+    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticky změní deklaraci třídy v DebuggerSide.vb tak, aby odpovídaly nový název souboru.  
   
 3.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na **Můj první vizualizér**a v místní nabídce klikněte na tlačítko **přidat odkaz na**.  
   
@@ -90,7 +88,7 @@ Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprv
     Inherits DialogDebuggerVisualizer  
     ```  
   
- `DialogDebuggerVisualizer`má jeden abstraktní metodu `Show`, který je nutné přepsat.  
+ `DialogDebuggerVisualizer` má jeden abstraktní metodu `Show`, který je nutné přepsat.  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>Přepsat metodu DialogDebuggerVisualizer.Show  
   

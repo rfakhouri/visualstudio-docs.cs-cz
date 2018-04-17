@@ -1,11 +1,8 @@
 ---
-title: "Úpravy dat v datových sadách | Microsoft Docs"
-ms.custom: 
+title: Úpravy dat v datových sadách | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -13,17 +10,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: afb484c1d3bfdd705c5a28f150e4631048ead49d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: a72949ad06b9140faa3e5013a8fd07e98b4db172
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-data-in-datasets"></a>Úpravy dat v datových sadách
 Můžete upravit dat v datových tabulkách jako upravovat data v tabulce v některé z databází. Tento proces může obsahovat vkládání, aktualizaci a odstraňování záznamů v tabulce. Ve formuláři vázané na data můžete zadat pole, která budou uživatele nelze upravit. V takových případech infrastruktury vazby dat zpracovává všechny sledování změn, aby změny může být odeslána zpět do databáze později. Pokud provedete úpravy prostřednictvím kódu programu k datům, a chcete odeslat tyto změny zpět do databáze, musíte použít objekty a metody, které provádějí sledování změn pro vás.  

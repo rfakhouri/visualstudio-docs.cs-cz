@@ -3,19 +3,19 @@ title: Visual Studio 2017 pro vývojáře .NET | Microsoft Docs
 description: Přehled funkcí Visual Studio 2017 můžete napsat kód lepší .NET rychlejší.
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc37a3185224a66fbe0533c615737de7e0124dcf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 31291814c2158c9aeb8d48b1b7b3073a4ccbcaf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 produktivitu Příručka pro vývojáře .NET
 
@@ -28,7 +28,7 @@ Postupujte podle tohoto průvodce k optimalizaci produktivitu.
 Pokud jsou pocházejících z jiného IDE nebo kódování prostředí, může se stát, některou z následujících přípon užitečné instalaci:
 
 - [EMACS emulace](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
-- [HotKeys for Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+- [Klávesové zkratky pro Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
 Tady jsou oblíbených zkratky v sadě Visual Studio: 
@@ -39,8 +39,8 @@ Tady jsou oblíbených zkratky v sadě Visual Studio:
 | **F12** (také **Ctrl + kliknutí**) | Přechod na definici | Přejděte do kterých byla definována symbol |
 | **Ctrl+F12** | Přejít na implementaci | Přejděte do jeho různé implementace ze základní typ nebo člen |
 | **Shift+F12** | Najít všechny odkazy | Zobrazit všechny symbol nebo literálu odkazy |
-| **Ctrl**+**.** (také **Alt + zadejte** v profilu C#) | Rychlé akce a refaktoringy | Zobrazit, jaké kód opravy, akce generování kódu, refaktoring nebo jiných rychlé akce jsou k dispozici na výběr kurzoru pozici nebo kód |
-| **Ctrl**+**D** | Duplicitní řádku | Duplikuje řádek kódu, která kurzor se nachází v (k dispozici v **Visual Studio 2017 verze 15,6 operací** a novější) |
+| **CTRL**+**.** (také **Alt + zadejte** v profilu C#) | Rychlé akce a refaktoringy | Zobrazit, jaké kód opravy, akce generování kódu, refaktoring nebo jiných rychlé akce jsou k dispozici na výběr kurzoru pozici nebo kód |
+| **CTRL**+**D** | Duplicitní řádku | Duplikuje řádek kódu, která kurzor se nachází v (k dispozici v **Visual Studio 2017 verze 15,6 operací** a novější) |
 | **Posunutí**+**Alt**+**+**/**-** | Rozbalit/smlouvy výběr | Rozšiřuje nebo zužuje aktuální výběr v editoru (k dispozici v **Visual Studio 2017 verze 15,5** a novější) |
 | **Ctrl+Q** | Snadné spuštění | Hledání všechna nastavení sady Visual Studio |
 | **F5** | Spuštění ladění | Spuštění ladění aplikace |
@@ -84,7 +84,7 @@ Visual Studio 2017 se dodává s velkým množstvím refaktoring, kód generová
 - Psát vlastní kód nebo refaktoring opravy s [Roslyn analyzátorů](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix). 
 - Několik členy komunity vytvořilo *volné* rozšíření, které přidat další kód kontroly: 
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
-  - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
+  - [SonarLint pro sadu Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
 ![Refaktoring v sadě Visual Studio](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
@@ -97,7 +97,7 @@ Visual Studio 2017 obsahuje mnoho funkcí pro usnadnění hledání a přejděte
 | Najít všechny odkazy | **Shift+F12**| Výsledky jsou obarvené a lze seskupovat podle projektu, definice atd. Je také možné "zamknout" výsledky. |
 | Přejít na implementaci | **Ctrl+F12** | Můžete přejít k definici na `override` – klíčové slovo a přejděte do přepsaného člena |
 | Přechod na definici | **F12** nebo **Ctrl + kliknutí**| Podržte **Ctrl** při kliknutí na k navgiate na definici | 
-| Funkce Náhled definice | **Alt+F12** | Vložené zobrazení definice |
+| Funkce Náhled definice | **ALT + F12** | Vložené zobrazení definice |
 | Struktura Vizualizéru | Šedé, s tečkami čáry mezi složené závorky | Pozastavte ukazatel myši zobrazíte strukturu kódu |
 | Navigace na decompiled sestavení | **F12** nebo **Ctrl + kliknutí** | Přejděte na externí zdroj (decompiled s ILSpy) povolením funkce: **nástroje > Možnosti > textový Editor > C# > Upřesnit > povolení navigace na decompiled zdroje**. |
 

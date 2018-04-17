@@ -1,12 +1,10 @@
 ---
-title: "Ladění projektů knihovny DLL | Microsoft Docs"
-ms.custom: 
+title: Ladění projektů knihovny DLL | Microsoft Docs
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - DLLs, debugging
 - debugging [Visual Studio], DLLs
 ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
-caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 7b43d7c5fb8d66e758a44b86d4918f04599d6147
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b7e897b69770f42bac9757f061f96a67fc9b99f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>Ladění projektů knihovny DLL ze sady Visual Studio
 Následující šablony sady Visual Studio vytvořte knihovny DLL:  
@@ -43,17 +41,17 @@ Následující šablony sady Visual Studio vytvořte knihovny DLL:
      Ladění knihovnu ovládacích prvků Windows Forms je podobná ladění projektu knihovny tříd. Ve většině případů bude volat ovládacího prvku Windows z jiného projektu. Při ladění projektu pro volání, kroku do kódu ovládacího prvku systému Windows, nastavit zarážky a provádění dalších operací ladění. Další informace najdete v tématu [ovládacích prvků Windows Forms](/dotnet/framework/winforms/controls/index).  
 
   
-##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a>Sestavení ladicí verze  
+##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Sestavení ladicí verze  
  Bez ohledu na to, jak spustit ladění Ujistěte se, nejprve sestavení ladicí verze knihovny DLL a ujistěte se, že ladicí verze je v umístění, kde se předpokládá, že aplikace ji najít. Toto se může zdát zřejmé, ale pokud zapomenete tento krok, může aplikace najít jinou verzi knihovny DLL a načíst. Program pak bude spuštěna, zatímco vás zajímat, proč byl vaší zarážce nikdy vybrán. Při ladění, můžete ověřit, které knihovny DLL vašeho programu načetl otevřením ladicího programu **moduly** okno. **Moduly** okno uvádí každý DLL nebo EXE načíst v procesu, kterou ladíte. Další informace najdete v tématu [postupy: použití okna moduly](../debugger/how-to-use-the-modules-window.md).  
  V ladicím programu pro připojení k kód napsaný v jazyce C++, musí emitování kód `DebuggableAttribute`. Můžete přidat to kódu automaticky pomocí propojení s [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) – možnost linkeru.  
   
-##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a>Ladění ve smíšeném režimu  
+##  <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Ladění ve smíšeném režimu  
  Volající aplikace, která volá knihovny DLL lze zapsat ve spravovaném kódu nebo nativního kódu. Pokud vaše spravovaná knihovna DLL je volána metodou nativního kódu a chcete ladit obě, spravovaná a nativní ladicí programy obě povoleny. Můžete vybrat v  **\<Projekt > stránky vlastností** nebo dialogovém okně. Tento postup závisí na tom, jestli spuštění ladění z projektu knihovny DLL nebo volání projekt aplikace. Další informace najdete v tématu [postupy: ladění ve smíšeném režimu](../debugger/how-to-debug-in-mixed-mode.md).  
   
-##  <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a>Změna výchozí konfigurace  
+##  <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Změna výchozí konfigurace  
  Při vytváření projektu konzolové aplikace pomocí šablony projektu, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticky vytvoří požadované nastavení pro konfiguraci ladění a vydání. V případě potřeby můžete změnit tato nastavení. Další informace najdete v tématu [nastavení projektu pro konfiguraci ladění C++](../debugger/project-settings-for-a-cpp-debug-configuration.md), [nastavení projektu pro ladění konfigurace C#](../debugger/project-settings-for-csharp-debug-configurations.md), [nastavení projektu pro konfiguraci ladění jazyka Visual Basic ](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), a [postupy: Konfigurace sady ladění a verzí](../debugger/how-to-set-debug-and-release-configurations.md).  
   
-##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a>Způsoby, jak ladit knihovny DLL  
+##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Způsoby, jak ladit knihovny DLL  
  Všechny projekty v této části vytvoří knihovnu DLL. Nelze spustit knihovnu DLL přímo; musí být voláno aplikací, obvykle EXE. Další informace najdete v tématu [vytváření a správa projekty Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects). Volající aplikace může podle některého z následujících kritérií:  
   
 -   Aplikace vytvořené v jiném projektu ve stejné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] řešení, které obsahuje knihovnu tříd.  
@@ -64,7 +62,7 @@ Následující šablony sady Visual Studio vytvořte knihovny DLL:
   
 -   Webové aplikace, které obsahuje webové stránky, která vloží knihovnu DLL.  
   
-###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a>Ladění volající aplikace  
+###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Ladění volající aplikace  
 Chcete-li ladit knihovny DLL, spusťte ladění volající aplikace, obvykle buď EXE nebo webovou aplikaci. Existuje několik způsobů k ladění ho.  
   
 -   Pokud máte projekt pro volající aplikace, můžete otevřít daného projektu a spusťte provádění z **ladění** nabídky. Další informace najdete v tématu [Začínáme s ladicím programem](../debugger/getting-started-with-the-debugger.md).  
@@ -77,7 +75,7 @@ Chcete-li ladit knihovny DLL, spusťte ladění volající aplikace, obvykle bu�
   
 Než začnete ladění volající aplikace, obvykle můžete nastavit zarážky v knihovně tříd. Další informace najdete v tématu [pomocí zarážek](../debugger/using-breakpoints.md). Když je průchodu zarážkou, můžete krokovat kód, sledování akce na každém řádku až izolovat daný problém. Další informace najdete v tématu [přejděte kódu v ladicím programu](../debugger/navigating-through-code-with-the-debugger.md).
   
-###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a>Příkazové podokno  
+###  <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Příkazové podokno  
  Funkce nebo metody v knihovně DLL můžete vyhodnotit bez nutnosti volající aplikace. Proveďte ladění v době návrhu a použít **Immediate** okno. Chcete-li ladit tímto způsobem, proveďte tyto kroky při projektu knihovny DLL těchto kroků je otevřený:  
   
 1.  Otevřete ladicího programu **Immediate** okno.  
@@ -106,7 +104,7 @@ Než začnete ladění volající aplikace, obvykle můžete nastavit zarážky 
   
      Bude dosaženo zarážce a bude moct jednotlivé kroky `Test`. Po spuštění opustil `Test`, ladicího programu bude zpátky v režimu návrhu.
 
-## <a name="vxtskdebuggingdllprojectsexternal"></a>Ladění externí knihovny DLL z projektu jazyka C++
+## <a name="vxtskdebuggingdllprojectsexternal"></a> Ladění externí knihovny DLL z projektu jazyka C++
 
 Pokud ladíte externí knihovny DLL do projektu, k dispozici (například procházení kódu) funkce ladění bude záviset na [konfiguraci ladění knihovny DLL](#vxtskdebuggingdllprojectsbuildingadebugversion) při byla vytvořena a zda [soubor .pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) a dalších požadovaných souborů pro knihovnu DLL, které jsou k dispozici.
 

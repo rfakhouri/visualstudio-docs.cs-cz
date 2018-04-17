@@ -1,27 +1,23 @@
 ---
-title: "Text značky pomocí starší verze rozhraní API | Microsoft Docs"
-ms.custom: 
+title: Text značky pomocí starší verze rozhraní API | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c889bc1bc128a941f726348781a633799475de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Text značky pomocí starší verze rozhraní API
 Text značky je plovoucí rozsah textu ve vyrovnávací paměť, která může mít vliv na zobrazení a chování oblasti textu. Značky zahrnují zarážky, záložky, podtržení vlnovkami a oblasti jen pro čtení. Text značky jsou v podstatě liší od barevné zvýrazňování syntaxe. Barevné zvýrazňování syntaxe je rychlý způsob, jak sdělit syntaxe jazyka, který je přidružené k oblasti textu. Barevné zvýrazňování syntaxe je obecně požadovány při Windows překreslí obrazovky, když je důležité rychlost. Barevné zvýrazňování syntaxe změní barvu textu. Text značek můžete změnit mnoho dalších vlastností text. Text značek můžete "float" a použít zvláštní chování barevné zvýrazňování.  

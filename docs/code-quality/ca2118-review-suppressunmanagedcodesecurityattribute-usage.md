@@ -1,12 +1,10 @@
 ---
-title: "CA2118: Revize použití SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs"
-ms.custom: 
+title: 'CA2118: Revize použití SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - ReviewSuppressUnmanagedCodeSecurityUsage
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
-caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 6a6c5e60ed84a79e6e81d4cd066d75b1270bdb71
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8d862f285efa3487c428aed2e5aed3a67c3baef6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Revize použití SuppressUnmanagedCodeSecurityAttribute
 |||  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
  Veřejné nebo chráněného typ nebo člen má <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atribut.  
   
 ## <a name="rule-description"></a>Popis pravidla  
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>Změní výchozí chování systému zabezpečení pro členy, které jsou spouštěny pomocí COM zprostředkovatel komunikace s objekty nebo platformy, volání nespravovaného kódu. Obecně platí, umožňuje systém [Data a modelování](/dotnet/framework/data/index) oprávnění pro nespravovaný kód. Tomuto požadavku dojde v době běhu pro každé vyvolání člena a kontroluje všechny volajícího v zásobníku volání pro oprávnění. Pokud je přítomen atribut, díky systému [požadavky propojení](/dotnet/framework/misc/link-demands) pro oprávnění: oprávnění bezprostředního volajícího jsou zaškrtnutá políčka, pokud má volající kompilována.  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Změní výchozí chování systému zabezpečení pro členy, které jsou spouštěny pomocí COM zprostředkovatel komunikace s objekty nebo platformy, volání nespravovaného kódu. Obecně platí, umožňuje systém [Data a modelování](/dotnet/framework/data/index) oprávnění pro nespravovaný kód. Tomuto požadavku dojde v době běhu pro každé vyvolání člena a kontroluje všechny volajícího v zásobníku volání pro oprávnění. Pokud je přítomen atribut, díky systému [požadavky propojení](/dotnet/framework/misc/link-demands) pro oprávnění: oprávnění bezprostředního volajícího jsou zaškrtnutá políčka, pokud má volající kompilována.  
   
  Tento atribut slouží především ke zvýšení výkonu, ačkoliv nárůst výkonu může být spojen s významnými riziky zabezpečení. Pokud jste na veřejné členy, které volají metody nativní atribut, volající v zásobníku volání (jiné než bezprostředního volajícího) není nutné nespravovaného kódu oprávnění k provedení nespravovaného kódu. V závislosti na veřejné člen akce a zpracování vstupních se může povolit nedůvěryhodným volajícím funkce přístupu obvykle omezené na důvěryhodného kódu.  
   

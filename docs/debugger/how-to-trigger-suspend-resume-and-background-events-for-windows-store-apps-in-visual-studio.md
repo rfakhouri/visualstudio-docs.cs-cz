@@ -1,13 +1,10 @@
 ---
-title: "Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikace UWP | Microsoft Docs"
-ms.custom: 
+title: Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikace UWP | Microsoft Docs
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.background_task_activate_failure
 dev_langs:
@@ -15,17 +12,16 @@ dev_langs:
 - VB
 - FSharp
 - C++
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 036362ec392e6deba9bed1ef185c602d508d4da4
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: 33958dd97c4ca8958c4f96ebe84697f2953afa9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Jak aktivovat pozastavení, obnovení a události na pozadí při ladění aplikace UWP v sadě Visual Studio
 Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) řídí stav spuštění aplikace – spuštění, pozastavení, obnovení a ukončení aplikace v odpovědi na akce uživatelů a stavu zařízení. Při ladění, systém Windows vypíná tyto aktivační události. Toto téma popisuje, jak má provést tyto události v ladicím programu.  
@@ -34,7 +30,7 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
   
  Další informace o úlohách správy životního cyklu procesu a pozadí najdete v části [spuštění, obnovení a multitasking](/windows/uwp/launch-resume/index).  
   
-##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a>Události správu životního cyklu proces spuštění  
+##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Události správu životního cyklu proces spuštění  
  Windows můžete pozastavit vaší aplikace, když uživatel přepíná směrem od nebo když Windows vstupuje do stavu snížené spotřeby energie. Může reagovat `Suspending` události uložení příslušné aplikace a uživatelská data do trvalého úložiště a k uvolnění prostředků. Když je aplikace byl obnoven z **pozastaveno** stavu, přejde **systémem** stavu a bude pokračovat, kde bylo při bylo pozastaveno. Může reagovat `Resuming` událostí obnovte nebo aktualizujte stav aplikace a uvolnit prostředky.  
   
  I když se Windows pokusí mějte na paměti nejdříve tolik pozastavenou aplikace, můžete Windows ukončit vaší aplikace, pokud nejsou k dispozici dostatek prostředků, aby v paměti. Uživatele můžete také explicitně zavřít aplikaci. Neexistuje žádná speciální událost označující, že uživatel zavřel aplikace.  
@@ -51,7 +47,7 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
   
      Všimněte si, že **pozastavení a ukončení** aplikace se zavře a ukončení relace ladění.  
   
-##  <a name="BKMK_Trigger_background_tasks"></a>Aktivační události úlohy na pozadí  
+##  <a name="BKMK_Trigger_background_tasks"></a> Aktivační události úlohy na pozadí  
  Jakékoli aplikaci, můžete zaregistrovat úlohy na pozadí reagovat na určité události systému, i když není aplikace spuštěna. Úlohy na pozadí nelze spustit kód, který přímo aktualizuje rozhraní; Místo toho se zobrazují informace pro uživatele s dlaždice aktualizace, aktualizace oznámení "BADGE" a informační zprávy. Další informace najdete v tématu [podpora vaší aplikace pomocí úlohy na pozadí](http://msdn.microsoft.com/en-us/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
   
  Můžete aktivovat události, které začínají ladicího programu úlohy na pozadí pro aplikaci.  
@@ -61,7 +57,7 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
   
  Nejvíce realistické způsob, jak můžete aktivovat události úlohy na pozadí je, pokud aplikace není spuštěna. Nicméně aktivuje událost ve standardní relaci ladění je také podporována.  
   
-###  <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a>Aktivační událost úloh na pozadí z standardní ladicí relace  
+###  <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Aktivační událost úloh na pozadí z standardní ladicí relace  
   
 1.  Nastavte zarážky v kódu úloh pozadí, kterou chcete ladit.  
   
@@ -71,7 +67,7 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
   
      ![Pozastavit, pokračovat, ukončete a úlohy na pozadí](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-###  <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a>Aktivují úlohy na pozadí, když není aplikace spuštěna  
+###  <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Aktivují úlohy na pozadí, když není aplikace spuštěna  
   
 1.  Nastavte zarážky v kódu úloh pozadí, kterou chcete ladit.  
   
@@ -83,11 +79,11 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
   
     -   Projekty Visual C# a Visual Basic, zvolte **nespouštějí, ale po jeho spuštění ladění vlastního kódu**  
   
-         ![C &#35; &#47; Vlastnosti aplikace spuštění ladění jazyka Visual Basic](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
+         ![C&#35;&#47;vlastnosti aplikace spuštění ladění jazyka Visual Basic](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
     -   Projekty Visual C++ a používání jazyka JavaScript, zvolte **ne** z **spuštění aplikace** seznamu.  
   
-         ![C & č. 43; & č. 43; &#47; Spusťte VB vlastnosti ladění aplikace](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
+         ![C&#43;&#43;&#47;spusťte VB vlastnosti ladění aplikace](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
 4.  Stiskněte klávesu **F5** uvést aplikace v režimu ladění. Poznámka: **proces** na seznamu **ladění umístění** panelu nástrojů zobrazí název balíčku aplikace k označení, že jste v režimu ladění.  
   
@@ -97,12 +93,12 @@ Pokud jste nejsou ladění, Windows **správu životního cyklu procesu** (PLM) 
   
      ![Pozastavit, pokračovat, ukončete a úlohy na pozadí](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a>Aktivovat události procesu správy životního cyklu a úlohy z aplikace nainstalované na pozadí  
+##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Aktivovat události procesu správy životního cyklu a úlohy z aplikace nainstalované na pozadí  
  Použití **ladění nainstalován balíček aplikace** dialogové okno načíst aplikaci, která je již nainstalován do ladicího programu. Může například ladění aplikace nainstalovaná z Microsoft Store nebo ladění aplikace, když máte zdrojové soubory pro aplikace, ale ne projekt Visual Studio pro aplikaci. **Ladění nainstalován balíček aplikace** dialogové okno umožňuje spuštění aplikace v režimu ladění v sadě Visual Studio počítači nebo na vzdáleném zařízení, nebo chcete-li nastavit aplikaci spustit v režimu ladění, ale nespustí se. Další informace najdete v tématu [ladění balíček nainstalovanou aplikaci](../debugger/debug-installed-app-package.md).
   
  Jakmile aplikace je načten do ladicího programu, můžete použít některý z výše popsaných postupů.  
   
-##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a>Diagnostika chyb aktivace úlohy pozadí  
+##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnostika chyb aktivace úlohy pozadí  
  Diagnostické protokoly v prohlížeči událostí systému Windows pro infrastrukturu pozadí obsahuje podrobné informace, které můžete použít při diagnostice a řešení chyb úlohy pozadí. Chcete-li zobrazit protokol:  
   
 1.  Otevřete Prohlížeč událostí aplikace.  

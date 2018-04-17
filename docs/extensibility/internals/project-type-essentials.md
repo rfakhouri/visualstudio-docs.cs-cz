@@ -1,30 +1,26 @@
 ---
 title: Projekt typu Essentials | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899d2758be1561d9b5fbda3280230333cc0ac8a3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: aff6cc669d7df46acaa2cbcb129a6b13b7261d9b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-type-essentials"></a>Essentials typ projektu
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obsahuje několik typů projekt pro jazyky, jako například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] nebo [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Umožňuje taky vytvořit vlastní typy projektů.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsahuje několik typů projekt pro jazyky, jako například [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] nebo [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Umožňuje taky vytvořit vlastní typy projektů.  
   
  Pokud chcete přidat vlastní příkazy, editory nebo nástroj windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], můžete to provést bez vytvoření nového projektu typu. Další informace naleznete v následujících tématech:  
   
@@ -62,11 +58,11 @@ ms.lasthandoff: 12/22/2017
   
 -   Typy projektů může podporovat dat než typické zdrojové soubory sestavení do sestavení .exe nebo .dll. Například [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] databázové projekty obsahovat odkazy na skript a dotaz soubory uložené na disku a přidat příkazy **Průzkumníku řešení** spuštění skriptů a dotazy na databázi, ale projektů nepodporují sestavení chování. Další informace najdete v tématu [otevírání a ukládání položky projektu](../../extensibility/internals/opening-and-saving-project-items.md).  
   
--   Typ projektu nemá vůbec používat soubory. Typ projektu může například uložit všechna jeho data v databázi. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]typy projektů poskytuje úplnou kontrolu nad jak jejich zachování dat pro projekty a položky projektu. Další informace najdete v tématu [rozhodnutí o návrhu projektu typu](../../extensibility/internals/project-type-design-decisions.md).  
+-   Typ projektu nemá vůbec používat soubory. Typ projektu může například uložit všechna jeho data v databázi. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] typy projektů poskytuje úplnou kontrolu nad jak jejich zachování dat pro projekty a položky projektu. Další informace najdete v tématu [rozhodnutí o návrhu projektu typu](../../extensibility/internals/project-type-design-decisions.md).  
   
 -   Musíte zadat typy projektů *vytváření projektu*, což je objekt, který vytvoří instanci projektu zadejte vždy, když [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je vás vyzval k otevření nebo vytvořit projekt, který je založen na typu projektu. Další informace najdete v tématu [vytváření instancí podle pomocí projektu objekty pro vytváření projektů](../../extensibility/internals/creating-project-instances-by-using-project-factories.md).  
   
--   Typy projektů se musí zadat šablon projektů a položek projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]používá šablony, když uživatelé vytvářet nové projekty a přidání nových položek do existující projekty. Další informace najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
+-   Typy projektů se musí zadat šablon projektů a položek projektů. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] používá šablony, když uživatelé vytvářet nové projekty a přidání nových položek do existující projekty. Další informace najdete v tématu [přidání projektů a šablon položek projektu](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
 -   Typy projektů může podporovat víc konfigurací, jako je ladění a vydání. Uživatelé mohou změnit různé konfigurace projektu pomocí stránky vlastností, které zadáte. Další informace najdete v tématu [Správa možnosti konfigurace](../../extensibility/internals/managing-configuration-options.md).  
   

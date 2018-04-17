@@ -1,27 +1,25 @@
 ---
-title: "Jak přidat VSPackages prvky uživatelského rozhraní | Microsoft Docs"
-ms.custom: 
+title: Jak přidat VSPackages prvky uživatelského rozhraní | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-caps.latest.revision: "60"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 142e2a24f866db7e3ae20217b60b1ea0c201c749
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 930ab9e741b2fd5bbc0ca2954192fe5e2c4313d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Jak přidat VSPackages prvky uživatelského rozhraní
 VSPackage můžete přidávat prvky uživatelského rozhraní (UI, například nabídky panely nástrojů) a nástroje systému windows pro Visual Studio prostřednictvím .vsct souboru.  
@@ -64,7 +62,7 @@ VSPackage můžete přidávat prvky uživatelského rozhraní (UI, například n
 </Symbols>  
 ```  
   
- Element nejvyšší úrovně z `Symbols` je oddíl [GuidSymbol Element](../../extensibility/guidsymbol-element.md). `GuidSymbol`Elementy mapování názvů pro identifikátory GUID, které používají rozhraní IDE pro identifikaci balíčky a jejich části.  
+ Element nejvyšší úrovně z `Symbols` je oddíl [GuidSymbol Element](../../extensibility/guidsymbol-element.md). `GuidSymbol` Elementy mapování názvů pro identifikátory GUID, které používají rozhraní IDE pro identifikaci balíčky a jejich části.  
   
 > [!NOTE]
 >  Identifikátory GUID automaticky generované šabloně balíček Visual Studio. Kliknutím můžete také vytvořit jedinečný identifikátor GUID **vytvořit GUID** na **nástroje** nabídky.  
@@ -195,11 +193,11 @@ priority="0x0100" type="Menu">
 |Prvek|Definované v této části tabulky příkaz|Mohou být obsaženy (jako nadřazená nebo umístění v `CommandPlacements` oddílu, nebo obojí)|Může obsahovat (označované jako nadřízenou položku.)|  
 |-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
 |Skupina|[Groups – Element](../../extensibility/groups-element.md), IDE, ostatní VSPackages|Z nabídky, skupinu, samotné položky|Nabídky, skupiny a příkazy|  
-|Nabídka|[Element nabídky](../../extensibility/menus-element.md), IDE, ostatní VSPackages|1  *n*  skupiny|0  *n*  skupiny|  
-|Panel nástrojů|[Element nabídky](../../extensibility/menus-element.md), IDE, ostatní VSPackages|Samotnou položku|0  *n*  skupiny|  
-|Položka nabídky|[Tlačítka Element](../../extensibility/buttons-element.md), IDE, ostatní VSPackages|1  *n*  skupin, samotné položky|-0  *n*  skupiny|  
-|Tlačítko|[Tlačítka Element](../../extensibility/buttons-element.md), IDE, ostatní VSPackages|1  *n*  skupin, samotné položky||  
-|Pole se seznamem|[Element kláves](../../extensibility/combos-element.md), IDE, ostatní VSPackages|1  *n*  skupin, samotné položky||  
+|Nabídka|[Element nabídky](../../extensibility/menus-element.md), IDE, ostatní VSPackages|1 *n* skupiny|0 *n* skupiny|  
+|Panel nástrojů|[Element nabídky](../../extensibility/menus-element.md), IDE, ostatní VSPackages|Samotnou položku|0 *n* skupiny|  
+|Položka nabídky|[Tlačítka Element](../../extensibility/buttons-element.md), IDE, ostatní VSPackages|1 *n* skupin, samotné položky|-0 *n* skupiny|  
+|Tlačítko|[Tlačítka Element](../../extensibility/buttons-element.md), IDE, ostatní VSPackages|1 *n* skupin, samotné položky||  
+|Pole se seznamem|[Element kláves](../../extensibility/combos-element.md), IDE, ostatní VSPackages|1 *n* skupin, samotné položky||  
   
 ### <a name="menu-command-and-group-placement"></a>Nabídky, příkazu a umístění skupiny  
  Nabídky, skupinu nebo příkaz můžete zobrazit na více než jednom místě v prostředí IDE. Pro položku, kterou chcete jsou zobrazeny na několika místech, musí být přidaný do `CommandPlacements` části jako [CommandPlacement Element](../../extensibility/commandplacement-element.md). Všechny nabídky, skupinu nebo příkaz se dá přidat jako příkaz umístění. Panely nástrojů nelze však umístit tímto způsobem, protože nelze vložit do víc kontextová umístění.  
@@ -214,7 +212,7 @@ priority="0x0100" type="Menu">
 ##### <a name="visibility-constraints"></a>Omezení viditelnosti  
  Omezení viditelnosti je nastaven jako [VisibilityItem Element](../../extensibility/visibilityitem-element.md) v `VisibilityConstraints` oddílu. Omezení viditelnosti definuje konkrétní kontexty uživatelského rozhraní, ve kterých je cílová položka viditelné. Nabídky nebo příkazu, který je zahrnut v této části je viditelná jenom v případě, že jedna z definovaných kontexty je aktivní. Pokud nabídky nebo příkaz není odkazy v této části, je vždy viditelné ve výchozím nastavení. Tato část se nevztahuje na skupiny.  
   
- `VisibilityItem`elementy musí mít tři atributy takto: `guid` a `id` prvku uživatelského rozhraní, a `context`. `context` Určuje atribut, když cílová položka se bude zobrazovat a trvá jakýkoli platný kontext uživatelského rozhraní jako jeho hodnotu. Konstanty kontextu uživatelského rozhraní pro sadu Visual Studio jsou členy <xref:Microsoft.VisualStudio.VSConstants> třídy. Každý `VisibilityItem` element může trvat kontextu pouze jednu hodnotu. Druhý kontextu použít, vytvořte druhý `VisibilityItem` element, který odkazuje na položku stejné, jak je znázorněno v následujícím příkladu.  
+ `VisibilityItem` elementy musí mít tři atributy takto: `guid` a `id` prvku uživatelského rozhraní, a `context`. `context` Určuje atribut, když cílová položka se bude zobrazovat a trvá jakýkoli platný kontext uživatelského rozhraní jako jeho hodnotu. Konstanty kontextu uživatelského rozhraní pro sadu Visual Studio jsou členy <xref:Microsoft.VisualStudio.VSConstants> třídy. Každý `VisibilityItem` element může trvat kontextu pouze jednu hodnotu. Druhý kontextu použít, vytvořte druhý `VisibilityItem` element, který odkazuje na položku stejné, jak je znázorněno v následujícím příkladu.  
   
 ```xml  
 <VisibilityConstraints>  
@@ -233,24 +231,24 @@ priority="0x0100" type="Menu">
  AlwaysCreate  
  I když nemá žádné skupiny nebo tlačítek, vytvoří se nabídky.  
   
- Platné pro:`Menu`  
+ Platné pro: `Menu`  
   
  CommandWellOnly  
  Použít tento příznak Pokud příkaz nezobrazí v nabídce nejvyšší úrovně a chcete, aby byl k dispozici pro přizpůsobení další prostředí, například vazbu klíče. Po instalaci VSPackage uživatele můžete přizpůsobit tyto příkazy otevřením **možnosti** dialogové okno a potom úpravy příkaz umístění v rámci **klávesnice prostředí** kategorie. Nemá vliv na umístění v místní nabídky, panely nástrojů, nabídky řadiče nebo dílčích.  
   
- Platná pro: `Button`,`Combo`  
+ Platná pro: `Button`, `Combo`  
   
  DefaultDisabled  
  Ve výchozím nastavení příkaz vypnutá, pokud VSPackage, který implementuje příkaz není načten nebo nebyla zavolána metoda QueryStatus.  
   
- Platná pro: `Button`,`Combo`  
+ Platná pro: `Button`, `Combo`  
   
  DefaultInvisible  
  Ve výchozím nastavení je příkaz Pokud VSPackage, který implementuje příkaz není načten nebo nebyla zavolána metoda QueryStatus neviditelná.  
   
  Měly být spojeny s `DynamicVisibility` příznak.  
   
- Platná pro: `Button`, `Combo`,`Menu`  
+ Platná pro: `Button`, `Combo`, `Menu`  
   
  DynamicVisibility  
  Viditelnost příkazu můžete změnit pomocí metody QueryStatus nebo kontextu identifikátor GUID, který je součástí `VisibilityConstraints` části.  
@@ -261,12 +259,12 @@ priority="0x0100" type="Menu">
   
  Měly být spojeny s `DefaultInvisible` příznak.  
   
- Platná pro: `Button`, `Combo`,`Menu`  
+ Platná pro: `Button`, `Combo`, `Menu`  
   
  NoShowOnMenuController  
  Pokud je příkaz, který má tento příznak nastavený na řadiči nabídky, příkaz se v rozevíracím seznamu nezobrazí.  
   
- Platné pro:`Button`  
+ Platné pro: `Button`  
   
  Další informace o příkazu příznaky najdete v tématu [Element Command příznak](../../extensibility/command-flag-element.md) dokumentaci.  
   
@@ -291,7 +289,7 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Vzhled elementu rozhraní  
  Důležité informace pro výběr a umístění prvků příkazu jsou následující:  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]nabízí mnoho prvky uživatelského rozhraní, které se zobrazují odlišně v závislosti na umístění.  
+-   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nabízí mnoho prvky uživatelského rozhraní, které se zobrazují odlišně v závislosti na umístění.  
   
 -   Prvku uživatelského rozhraní, která je definována pomocí `DefaultInvisible` příznak se nezobrazí v prostředí IDE, pokud je buď zobrazí jeho implementace VSPackage <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> metoda, nebo ve spojení s konkrétní kontext uživatelského rozhraní v `VisibilityConstraints` části.  
   

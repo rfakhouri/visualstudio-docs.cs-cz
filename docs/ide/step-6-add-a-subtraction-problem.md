@@ -1,25 +1,21 @@
 ---
-title: "Krok 6: Přidejte problém odečtení | Microsoft Docs"
-ms.custom: 
+title: 'Krok 6: Přidejte problém odečtení | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d13e5a8e7bb1e15b1eef57fc6bcff55ef21cc729
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 4660d4b1ad5f4aa5200fb8c64cfa24f6a02d49a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Krok 6: Přidejte problém odečtení
 V šesté části tohoto kurzu budete přidejte problém odečtení a zjistěte, jak provádět následující úlohy:
@@ -59,7 +55,7 @@ V šesté části tohoto kurzu budete přidejte problém odečtení a zjistěte,
 
      Zobrazí popisek **(+ 2 overload(s))**, což znamená, že můžete volat `Next()` metoda dva další způsoby. Přetížení obsahovat různý počet nebo různé typy argumentů, tak, aby fungovaly trochu jinak od sebe navzájem. Například metoda může trvat celé číslo jeden argument a jeden z jeho přetížení může trvat celé číslo a řetězec. Zvolíte správné přetížení založené na co chcete udělat. Když přidáte kód, který `StartTheQuiz()` metoda, další informace se zobrazí v okně IntelliSense při zadání `randomizer.Next(`. Chcete-li procházení přetížení, vyberte klávesy šipka nahoru a Šipka dolů, jak je znázorněno na následujícím obrázku:
 
-     ![Přetížení pro další &#40; &#41; Metoda IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") přetížení metody Next() v IntelliSense
+     ![Přetížení pro další&#40; &#41; metoda IntelliSense](../ide/media/express_nextoverload.png "Express_NextOverload") přetížení metody Next() v IntelliSense
 
      V takovém případě budete chtít zvolte poslední přetížení, protože můžete zadat minimální a maximální hodnoty.
 

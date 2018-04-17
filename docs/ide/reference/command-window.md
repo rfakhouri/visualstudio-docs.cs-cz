@@ -1,13 +1,10 @@
 ---
-title: "Příkaz okno | Microsoft Docs"
-ms.custom: 
+title: Příkaz okno | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.CommandWindow
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3b1de69c905757c8d28922cd09eadd5abf7d05e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5093c409a86e4488ef7c572c9f4f847bd803bbfd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="command-window"></a>Příkazové okno
 **Příkaz** okno se používá k provedení příkazy nebo přímo v aliasy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které se nezobrazí na žádné nabídky. K zobrazení **příkaz** okně zvolte **ostatní okna** z **zobrazení** nabídce a vyberte **příkazové okno**.  
@@ -60,7 +56,7 @@ ms.lasthandoff: 12/22/2017
   
 |Akce|Umístění kurzoru|Keybinding|  
 |------------|---------------------|----------------|  
-|Procházet seznam dříve zadaných příkazů.|Vstupní řádku|ŠIPKA & DOLŮ ŠIPKA NAHORU|  
+|Procházet seznam dříve zadaných příkazů.|Vstupní řádku|ŠIPKA &AMP; DOLŮ ŠIPKA NAHORU|  
 |Přejděte do okna.|Obsah příkazového okna|CTRL + ŠIPKA NAHORU|  
 |Posuňte se dolů okna.|Obsah příkazového okna|Šipka dolů nebo CTRL + ŠIPKA DOLŮ|  
   
@@ -86,13 +82,13 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  V tomto příkladu  
   
--   `Edit.ReplaceInFiles`je příkaz  
+-   `Edit.ReplaceInFiles` je příkaz  
   
--   `/case`a `/pattern:regex` přepínače (kterými symbolem [/])  
+-   `/case` a `/pattern:regex` přepínače (kterými symbolem [/])  
   
--   `regex`je hodnota `/pattern` přepínač; `/case` přepínač nemá žádnou hodnotu  
+-   `regex` je hodnota `/pattern` přepínač; `/case` přepínač nemá žádnou hodnotu  
   
--   `var[1-3]+`a `oldpar` jsou parametry  
+-   `var[1-3]+` a `oldpar` jsou parametry  
   
     > [!NOTE]
     >  Příkaz, parametr, přepínače nebo hodnotu, která obsahuje mezery, musí mít dvojitých uvozovek nahoře na obou stranách.  

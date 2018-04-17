@@ -1,26 +1,24 @@
 ---
-title: "Nové generace projektu: Pod pokličkou, první část | Microsoft Docs"
-ms.custom: 
+title: 'Nové generace projektu: Pod pokličkou, první část | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 158340ad82829338bb39709573ce9e025332341a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ac31f2866c6b69587f70775d5ed1245b1a2bb0a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nové generace projektu: Pod pokličkou, první část
 Někdy představit o tom, jak vytvořit vlastní typ projektu? Zajímat, co se ve skutečnosti stane, když vytvoříte nový projekt? Umožňuje provést funkce Náhled pod pokličkou a zjistěte, co se skutečně děje.  

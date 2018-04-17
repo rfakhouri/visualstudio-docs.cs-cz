@@ -1,23 +1,21 @@
 ---
-title: "Sada pravidel základní pravidla obecných zásad návrhu pro spravovaný kód | Microsoft Docs"
-ms.custom: 
+title: Sada pravidel základní pravidla obecných zásad návrhu pro spravovaný kód | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: dotnet
-ms.openlocfilehash: 769ff8468bc2f8ea90201678c85351706b8a4652
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- dotnet
+ms.openlocfilehash: 3ae77ad6aad6b0300cd96061198086831ee61cde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Sada pravidel Základní pravidla obecných zásad návrhu pro spravovaný kód
 Můžete použít sadu a zaměřit se na snadněji pochopit a používat váš kód pravidel základní pravidla obecných zásad návrhu společnosti Microsoft. Toto pravidlo nastavte, pokud projekt obsahuje kód knihovny, nebo pokud chcete vynutit osvědčené postupy pro kód, který se snadnou údržbou by měla obsahovat.  

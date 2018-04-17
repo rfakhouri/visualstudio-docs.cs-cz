@@ -1,12 +1,10 @@
 ---
-title: "Server a problémy s konfigurací klienta v nasazeních ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Server a problémy s konfigurací klienta v nasazeních ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, troubleshooting
 - Windows applications, ClickOnce deployments
 ms.assetid: 929e5fcc-dd56-409c-bb57-00bd9549b20b
-caps.latest.revision: "33"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b50dbe51f58af79b8c1074c592f98abccbe8ba7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 11cc26689b20f989cb449f67387052caf3096811
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problémy s konfigurací serveru a klienta v nasazeních ClickOnce
 Pokud používáte Internetové informační služby (IIS) v systému Windows Server a nasazení obsahuje typ souboru, který nebyl rozpoznán Windows, jako je soubor aplikace Microsoft Word, služba IIS odmítne přenos souboru a nasazení se nezdaří.  
@@ -51,9 +49,9 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
  A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace bude pracovat správně přes protokol SSL, s výjimkou případů, kdy aplikace Internet Explorer vyvolává dotaz o certifikátu SSL. Řádku může být vyvolána v případě, že problém se certifikát, například když názvy lokalit neodpovídají nebo certifikátu vypršela. Chcete-li [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fungovat přes připojení SSL, ujistěte se, že certifikát je aktuální a že data certifikátu odpovídá data lokality.  
   
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce a ověření proxy serverem  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]poskytuje podporu pro integrované ověřování systému Windows proxy od verze rozhraní .NET Framework 3.5. Žádné zvláštní směrnice machine.config jsou povinné. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]neposkytuje podporu pro jiné protokoly ověřování, jako je například základní nebo Digest.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] poskytuje podporu pro integrované ověřování systému Windows proxy od verze rozhraní .NET Framework 3.5. Žádné zvláštní směrnice machine.config jsou povinné. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] neposkytuje podporu pro jiné protokoly ověřování, jako je například základní nebo Digest.  
   
- Můžete také použít opravu hotfix pro rozhraní .NET Framework 2.0 tuto funkci povolíte. Další informace najdete v tématu http://go.microsoft.com/fwlink/?LinkId=158730.  
+ Můžete také použít opravu hotfix pro rozhraní .NET Framework 2.0 tuto funkci povolíte. Další informace naleznete v tématu http://go.microsoft.com/fwlink/?LinkId=158730.  
   
  Další informace najdete v tématu [ \<defaultProxy – > elementu (nastavení sítě)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings).  
   
@@ -96,7 +94,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
  Pokud používáte Visual Studio k publikování aplikace ClickOnce, nelze zadat mapované jednotky jako umístění instalace. Můžete však upravit aplikaci ClickOnce pro instalaci z mapované jednotky pomocí generátoru manifestu a editoru (Mage.exe a MageUI.exe). Další informace najdete v tématu [Mage.exe (generování manifestu a nástroj pro úpravy)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool) a [MageUI.exe (generování manifestu a nástroj pro úpravy, grafický klient)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client).  
   
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protokol FTP není podporován pro instalaci aplikací  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]podporuje instalaci aplikací z jakéhokoliv HTTP 1.1 webového serveru nebo souborového serveru. FTP, protokol, není podporován pro instalaci aplikace. K publikování aplikací pouze pomocí funkce FTP. Následující tabulka shrnuje tyto rozdíly:  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] podporuje instalaci aplikací z jakéhokoliv HTTP 1.1 webového serveru nebo souborového serveru. FTP, protokol, není podporován pro instalaci aplikace. K publikování aplikací pouze pomocí funkce FTP. Následující tabulka shrnuje tyto rozdíly:  
   
 |Typ adresy URL|Popis|  
 |--------------|-----------------|  
@@ -122,7 +120,7 @@ Pokud používáte Internetové informační služby (IIS) v systému Windows Se
   
 -   Pokud vytvoříte typ MIME s příponou "*" a typ MIME "application/octet-stream", bude možné typ odblokuje souborů ke stažení. (Však zablokovány soubor, který typy například .aspx a .asmx nelze stáhnout.)  
   
- Podrobné pokyny ke konfiguraci typů standardu MIME v systému Windows Server, nahlédněte do znalostní báze Microsoft Knowledge Base KB326965, "IIS 6.0 nemá není sloužit neznámé typy MIME" v [http://support.microsoft.com/default.aspx?scid=kb;en-us;326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
+ Podrobné pokyny ke konfiguraci typů standardu MIME v systému Windows Server, nahlédněte do znalostní báze Microsoft Knowledge Base KB326965, "IIS 6.0 nemá není sloužit neznámé typy MIME" v [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).  
   
 ## <a name="content-type-mappings"></a>Mapování typu obsahu  
  Při publikování přes protokol HTTP, typ obsahu (také označované jako typ MIME) pro soubor .application by měla být "application/x-ms-application." Pokud máte [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] nainstalovaná na serveru, se nastaví pro vás automaticky. Pokud to není nainstalován, pak budete muset vytvořit přidružení typu MIME pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vroot aplikace (nebo celý server).  

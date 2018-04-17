@@ -1,13 +1,10 @@
 ---
-title: "Seznam paměť – příkaz | Microsoft Docs"
-ms.custom: 
+title: Seznam paměť – příkaz | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listmemory
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - ListMemory command
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6780ffc846d3710b78bbfa994ca3e73d14209e0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 141754e9b298885266aee6d90850b4f0a5c159aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-memory-command"></a>Listovat paměť – příkaz
 Zobrazí obsah zadaný rozsah paměti.  
@@ -42,7 +38,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  Volitelné. Adresa paměti, od kterého má začít zobrazení paměti.  
   
 ## <a name="switches"></a>Přepínače  
- / ANSI &#124; Kódování Unicode  
+ / ANSI&#124;kódování Unicode  
  Volitelné. Paměť se zobrazí jako znaků odpovídající počet bajtů paměti, ANSI nebo Unicode.  
   
  / Počet:`number`  
@@ -51,7 +47,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
  / Formát:`formattype`  
  Volitelné. Typ formátu pro zobrazení informací o paměti v **paměti** okno; může být OneByte, TwoBytes, FourBytes, EightBytes, Float (32bitová verze), nebo dvakrát (64 bitů). Pokud se používá OneByte `/Unicode` není k dispozici.  
   
- /Hex &#124; Podepsané &#124; Bez znaménka  
+ / Šestnáctkových&#124;podepsané&#124;bez znaménka  
  Volitelné. Určuje formát pro zobrazení čísla: jako podepsaný držitelem, bez znaménka nebo hexadecimální.  
   
 ## <a name="remarks"></a>Poznámky  

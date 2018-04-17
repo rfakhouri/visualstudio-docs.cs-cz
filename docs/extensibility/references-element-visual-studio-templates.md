@@ -1,30 +1,26 @@
 ---
-title: "Odkazuje na Element (šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Odkazuje na Element (šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#References
 helpviewer_keywords:
 - <References> element [Visual Studio Templates]
 - References element [Visual Studio Templates]
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceee0091dc20938f9098985c2609f0a3d239c699
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8e758bb0bc493086d9e8090c14eaca744129c277
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="references-element-visual-studio-templates"></a>Element odkazů (šablony sady Visual Studio)
 Skupiny odkazy na sestavení, které šablona se přidá do projektů.  
@@ -62,7 +58,7 @@ Skupiny odkazy na sestavení, které šablona se přidá do projektů.
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Určuje obsah šablony.|  
   
 ## <a name="remarks"></a>Poznámky  
- `References`představuje volitelný podřízený prvek `TemplateContent`.  
+ `References` představuje volitelný podřízený prvek `TemplateContent`.  
   
  `Reference` a `References` elementy lze použít pouze v souborech .vstemplate, které mají `Type` hodnotu atributu `Item`.  
   

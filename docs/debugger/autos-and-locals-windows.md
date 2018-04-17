@@ -1,13 +1,10 @@
 ---
-title: "Zkontrolujte proměnné v automobily a místní hodnoty – Windows | Microsoft Docs"
+title: Zkontrolujte proměnné v automobily a místní hodnoty – Windows | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugger, variable windows
 - debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 763a079ec8da8c2c1e9e7d7864fc4d0cee6197ed
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: 2b3bad753a18352ebbf68bef5f398a8039a9c4dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Zkontrolovat proměnné v automobily a místní hodnoty – Windows v sadě Visual Studio
 **Automobily** okno (při ladění, **CTRL + ALT + V, A**, nebo **ladění > Windows > automobily**) a **místní hodnoty –** okno (při ladění **CTRL + ALT + V, L**, nebo **ladění > Windows > místní hodnoty –**) jsou velmi užitečné, pokud chcete zobrazit hodnoty proměnné při ladění. **Místní hodnoty –** okno zobrazí proměnné, které jsou definovány v místní obor, což je obecně funkce nebo metoda, která je aktuálně spouštěna. **Automobily** okno se zobrazí proměnné používá kolem aktuálního řádku (místo, kde je zastavena ladicího programu). Přesně které proměnné zobrazení v tomto okně se liší v různých jazycích. V tématu [proměnné, které se zobrazí v okně automobily?](#bkmk_whatvariables) níže.  
@@ -37,7 +33,7 @@ Pole a objekty jsou zobrazeny v systému windows automobily a místní hodnoty j
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
-## <a name="bkmk_whatvariables"></a>Jaké proměnné se zobrazí v okně Automatické hodnoty?  
+## <a name="bkmk_whatvariables"></a> Jaké proměnné se zobrazí v okně Automatické hodnoty?  
  Můžete použít **automobily** okno v kódu jazyka C#, Visual Basic a C++. **Automobily** okno nepodporuje jazyk JavaScript a F #.  
   
  V jazyce C# a Visual Basic **automobily** okně se zobrazí všechny proměnné použít na aktuální nebo předchozí řádek. Pokud například deklarovat čtyři proměnné a jejich nastavení následujícím způsobem:
@@ -81,7 +77,7 @@ Pole a objekty jsou zobrazeny v systému windows automobily a místní hodnoty j
   
  Zobrazí se také návratové hodnoty funkce a metody za určitých okolností. V tématu [zobrazení návratových hodnot volání metod](#bkmk_returnValue) níže.  
   
-##  <a name="bkmk_returnValue"></a>Zobrazení návratových hodnot volání metod  
+##  <a name="bkmk_returnValue"></a> Zobrazení návratových hodnot volání metod  
  V rozhraní .NET a C++ kódu můžete zkontrolovat návratové hodnoty, když krok přes nebo mimo volání metody. Tato funkce je užitečná, pokud výsledek volání metody není uložen v místní proměnné, třeba když metoda se používá jako parametr nebo jako návratová hodnota jinou metodu.  
   
  Následující kód C# přidá vrácené hodnoty dvě funkce:  

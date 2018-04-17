@@ -1,27 +1,25 @@
 ---
-title: "V sadě Visual Studio SDK | Microsoft Docs"
-ms.custom: 
+title: V sadě Visual Studio SDK | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - roadmap, Visual Studio integration SDK
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: "30"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e8b1374b6934e09bbf3ce1012d551dab2831292c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: fff6b720c11f3342a5894489186f57d397dd91b5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Práce se sadou Visual Studio SDK
 Tato část obsahuje podrobné informace o rozšíření sady Visual Studio, včetně architektura sady Visual Studio, součásti, služeb, schémata, nástroje a podobně.  
@@ -94,7 +92,7 @@ Zobecněný pohled na architekturu Visual Studio
   
  Další informace najdete v tématu [projekty](../../extensibility/internals/projects.md) a [řešení](../../extensibility/internals/solutions.md).  
   
-## <a name="project-and-item-templates"></a>Šablon projektů a položek  
+## <a name="project-and-item-templates"></a>Šablony projektů a položek  
  Visual Studio obsahuje předem definovaných šablon projektu a šablony položek projektu. Můžete také vytvářet vlastní šablony nebo získat šablony od komunity a pak je integrovat do sady Visual Studio. [Galerie kódů MSDN](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) je místo, kde přejděte šablon a rozšíření.  
   
  Šablony obsahují projektu strukturu a základní soubory, které jsou nutné k vytvoření konkrétní typ aplikace, ovládací prvek, knihovny nebo třídy. Když chcete k vývoji softwaru, který vypadá takto: jednu z šablon, vytvořit projekt, který je založený na šabloně a potom upravte soubory v tomto projektu.  

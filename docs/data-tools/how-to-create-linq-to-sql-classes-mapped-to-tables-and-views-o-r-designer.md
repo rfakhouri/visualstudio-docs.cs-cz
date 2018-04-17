@@ -1,26 +1,23 @@
 ---
-title: "Postupy: vytvoření LINQ na třídy SQL, které jsou namapované na tabulky a zobrazení (Návrhář O-R) | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytvoření LINQ na třídy SQL, které jsou namapované na tabulky a zobrazení (Návrhář O-R) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
-caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 3d295cc9527aae2f566f5ec4d1ba92a2b129fbd4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: cc3c70ca70170de630dc28a10ff5d1352a610bfb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Postupy: vytvoření LINQ na třídy SQL, které jsou namapované na tabulky a zobrazení (Návrhář relací objektů)
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]třídy, které jsou namapované na databázových tabulek a zobrazení, se nazývají *tříd entit*. Třídy entita se mapuje na záznam, kdežto jednotlivé vlastnosti třídy entity mapování na jednotlivé sloupce, které tvoří záznam. Vytváření tříd entit, které jsou založeny na databázových tabulek nebo zobrazení tak, že přetáhnete tabulky a zobrazení z **Průzkumníka serveru**/**Průzkumník databáze** na [technologie LINQ to SQL nástrojů v Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Vygeneruje třídy a použije konkrétní [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atributy povolit [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funkce (datové komunikace a možnosti Úpravy <xref:System.Data.Linq.DataContext>). Podrobné informace o [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] třídách naleznete v tématu [technologii LINQ to SQL objektový Model](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] třídy, které jsou namapované na databázových tabulek a zobrazení, se nazývají *tříd entit*. Třídy entita se mapuje na záznam, kdežto jednotlivé vlastnosti třídy entity mapování na jednotlivé sloupce, které tvoří záznam. Vytváření tříd entit, které jsou založeny na databázových tabulek nebo zobrazení tak, že přetáhnete tabulky a zobrazení z **Průzkumníka serveru**/**Průzkumník databáze** na [technologie LINQ to SQL nástrojů v Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Vygeneruje třídy a použije konkrétní [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] atributy povolit [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] funkce (datové komunikace a možnosti Úpravy <xref:System.Data.Linq.DataContext>). Podrobné informace o [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] třídách naleznete v tématu [technologii LINQ to SQL objektový Model](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model).  
   
 > [!NOTE]
 >  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] Je relační mapper jednoduchého objektu, protože ji podporuje jenom relace 1:1 mapování. Jinými slovy třídu entity může mít pouze vztah mapování 1:1 s databázové tabulky nebo zobrazení. Komplexní mapování, jako je například k několika tabulkám, mapování třídu entity není podporována. Však můžete namapovat třídu entity zobrazení, které spojuje více souvisejících tabulek.  

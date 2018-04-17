@@ -1,27 +1,23 @@
 ---
-title: "Návod: Přidání funkce do vlastního editoru | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Přidání funkce do vlastního editoru | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c207b80686a66d9a06b8c50321b4dce2257ada
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Návod: Přidání funkce do vlastního editoru
 Po vytvoření vlastního editoru do něj může přidat další funkce.  
@@ -148,7 +144,7 @@ Po vytvoření vlastního editoru do něj může přidat další funkce.
   
 -   Pokud chcete zabránit příkazu nabídky nakupení v uživatelském rozhraní, používejte existující příkazy v prostředí IDE před inventing nové příkazy. Sdílené příkazy jsou definovány v SharedCmdDef.vsct a ShellCmdDef.vsct. Tyto soubory jsou nainstalovány ve výchozím nastavení v podadresáři VisualStudioIntegration\Common\Inc vaše [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] instalace.  
   
--   `ISelectionContainer`Výběr jednoho a víc můžete express. Každý vybraný objekt je implementovaný jako `IDispatch` objektu.  
+-   `ISelectionContainer` Výběr jednoho a víc můžete express. Každý vybraný objekt je implementovaný jako `IDispatch` objektu.  
   
 -   Implementuje rozhraní IDE `IOleUndoManager` jako přístupný ze služby <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> nebo jako objekt, který se dá vytvořit instance prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>. Vaše editor implementuje `IOleUndoUnit` rozhraní pro každou `Undo` akce.  
   

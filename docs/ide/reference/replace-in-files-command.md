@@ -1,13 +1,10 @@
 ---
-title: "Nahradit v souborech – příkaz | Microsoft Docs"
-ms.custom: 
+title: Nahradit v souborech – příkaz | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - edit.replaceinfiles
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - Replace In Files command
 - ReplaceInFiles command
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb81bffa6845e4e644294916a508820445da263
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: fcf12ba2c439e9ecb77aeecf47e7fe4fc535b4aa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="replace-in-files-command"></a>Nahradit v souborech – příkaz
 Nahradí text v souborech pomocí podmnožinu dostupných v možnostech **nahradit v souborech** kartě **najít a nahradit** okno.  
@@ -52,13 +48,13 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  /Case nebo /c  
  Volitelné. Odpovídá dojít pouze v případě, kdy velká a malá písmena přesně shodovat platformám zadaným v `findwhat` argument.  
   
- /ext:`extensions`  
+ /ext: `extensions`  
  Volitelné. Určuje příponám souborů pro soubory, které chcete vyhledávat.  
   
  /Keep nebo /k  
  Volitelné. Určuje, že všechny změněné soubory jsou ponechány otevřené.  
   
- /lookin:`searchpath`  
+ /lookin: `searchpath`  
  Volitelné. Adresář pro vyhledávání. Pokud cesta obsahuje mezery, uzavřete celý cesty do uvozovek.  
   
  / Options nebo/t.  

@@ -1,11 +1,8 @@
 ---
-title: "Hierarchická aktualizace | Microsoft Docs"
-ms.custom: 
+title: Hierarchická aktualizace | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,17 +17,17 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b02ef945136297287d18c2b29ea2d3afab1b3683
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 1b374ac0b062069e11a5fa9b15822a4146cbaebf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="hierarchical-update"></a>Hierarchická aktualizace
 *Hierarchická aktualizace* odkazuje na proces ukládání aktualizovaná data (z datové sady s dvou nebo více souvisejících tabulek) zpět do databáze při zachování pravidla referenční integrity. *Referenční integrity* odkazuje na pravidla konzistence poskytované omezení v databázi, která řídí chování vkládání, aktualizaci a odstraňování souvisejících záznamů. Například je referenční integrity, který vynutí vytvoření záznamu zákazníka před povolením objednávky vytvoření tohoto zákazníka.  Další informace o vztahy v datových sadách najdete v tématu [vztahy v datových sadách](../data-tools/relationships-in-datasets.md)  
@@ -116,10 +113,10 @@ Kromě potvrzení změn v tabulce souvisejících podřízených před uložení
   
 |Člen|Popis|  
 |------------|-----------------|  
-|`UpdateAll`– Metoda|Uloží všechna data ze všech tabulek, data.|  
-|`BackUpDataSetBeforeUpdate`Vlastnost|Určuje, jestli se mají vytvořit si záložní kopii datovou sadu před spuštěním `TableAdapterManager.UpdateAll` metoda. Logická hodnota.|  
+|`UpdateAll` – Metoda|Uloží všechna data ze všech tabulek, data.|  
+|`BackUpDataSetBeforeUpdate` Vlastnost|Určuje, jestli se mají vytvořit si záložní kopii datovou sadu před spuštěním `TableAdapterManager.UpdateAll` metoda. Logická hodnota.|  
 |*Název tabulky* `TableAdapter` vlastnost|Představuje `TableAdapter`. Generovaný objekt `TableAdapterManager` obsahuje vlastnost pro každý `TableAdapter` spravuje. Například je generována datovou sadu s tabulkou Zákazníci a objednávky `TableAdapterManager` obsahující `CustomersTableAdapter` a `OrdersTableAdapter` vlastnosti.|  
-|`UpdateOrder`Vlastnost|Určuje pořadí jednotlivých insert, update a delete příkazy. Tuto možnost nastavíte na jednu z hodnot v `TableAdapterManager.UpdateOrderOption` výčtu.<br /><br /> Ve výchozím nastavení `UpdateOrder` je nastaven na **InsertUpdateDelete**. To znamená, které vloží, pak aktualizací a poté se odstraní se pro všechny tabulky v datové sadě.|  
+|`UpdateOrder` Vlastnost|Určuje pořadí jednotlivých insert, update a delete příkazy. Tuto možnost nastavíte na jednu z hodnot v `TableAdapterManager.UpdateOrderOption` výčtu.<br /><br /> Ve výchozím nastavení `UpdateOrder` je nastaven na **InsertUpdateDelete**. To znamená, které vloží, pak aktualizací a poté se odstraní se pro všechny tabulky v datové sadě.|  
   
 ## <a name="see-also"></a>Viz také  
  [Ukládání dat zpět do databáze](../data-tools/save-data-back-to-the-database.md)

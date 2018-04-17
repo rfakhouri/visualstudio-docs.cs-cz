@@ -1,27 +1,23 @@
 ---
-title: "Modelu služby jazyk starší | Microsoft Docs"
-ms.custom: 
+title: Modelu služby jazyk starší | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc652f9eb4428e1d4d7297ed8b588c7f81a07b2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 943f0f013045e3082af3069ed4d45aaed1096869
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="model-of-a-legacy-language-service"></a>Model služby jazyk starší verze
 Služba jazyka definuje elementy a funkce pro konkrétní jazyk a slouží k poskytování editoru informace specifické pro daný jazyk. Například editoru musí vědět, elementy a klíčová slova jazyka za účelem podpory barevné zvýrazňování syntaxe.  
@@ -52,7 +48,7 @@ Základní jazyk modelu služby
 |Kódu – okno|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|Okna dokumentu, který obsahuje jedno nebo více zobrazení textu. Když [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je v režimu rozhraní více dokumentů (MDI), v okně kód je podřízeným MDI.|  
 |Zobrazení textu|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|Okno, které umožňuje uživateli přejděte a zobrazit text pomocí klávesnice a myši. Zobrazení textu se uživateli zobrazí jako editor. Můžete vytvořit zobrazení textu v systému windows obyčejnou editor, ve výstupním okně a hodnot proměnných. Kromě toho můžete nakonfigurovat jeden nebo více zobrazení textu v rámci časového období kódu.|  
 |Textový správce|Spravuje <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> služby, ze kterého můžete získat <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> ukazatele|Komponenta, která udržuje běžných informací o sdílí všechny součásti, které jsou popsané.|  
-|Služba jazyka|Implementace závislé; implementuje<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Objekt, který poskytuje informace pro konkrétní jazyk například zvýraznění syntaxe, dokončování a odpovídající složené závorce editoru.|  
+|Služba jazyka|Implementace závislé; implementuje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|Objekt, který poskytuje informace pro konkrétní jazyk například zvýraznění syntaxe, dokončování a odpovídající složené závorce editoru.|  
   
 ## <a name="see-also"></a>Viz také  
  [Data dokumentu a zobrazení dokumentu ve vlastních editorech](../../extensibility/document-data-and-document-view-in-custom-editors.md)

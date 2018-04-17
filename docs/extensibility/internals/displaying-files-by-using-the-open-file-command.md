@@ -1,27 +1,25 @@
 ---
-title: "Zobrazení souborů pomocí příkaz pro otevření souboru | Microsoft Docs"
-ms.custom: 
+title: Zobrazení souborů pomocí příkaz pro otevření souboru | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project types, supporting Open File command
 - Open File command
 - persistence, supporting Open File command
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 75d714399f851aa479f398064e576790c793fffa
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6b84992dc1803f1eee4fc36d477db1708eb90904
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="displaying-files-by-using-the-open-file-command"></a>Zobrazení souborů pomocí příkaz pro otevření souboru
 Následující kroky popisují, jak rozhraní IDE zpracovává **otevření souboru** příkaz, který je k dispozici na **soubor** nabídky v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Kroky také popisují, jak mají projekty reagovat na volání, které pocházejí z tohoto příkazu.  

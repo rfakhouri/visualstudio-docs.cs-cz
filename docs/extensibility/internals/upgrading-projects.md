@@ -1,27 +1,25 @@
 ---
-title: "Upgrade projektů | Microsoft Docs"
-ms.custom: 
+title: Upgrade projektů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 060823a04127480ef8de387200425a34c6ef1178
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: cb64d71a50cb59a3c981dd87695bbb685f793761
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="upgrading-projects"></a>Upgrade projektů
 Změny do projektu modelu z jedné verze nástroje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] na další může vyžadovat, aby projekty a řešení upgradovat tak, aby mohly běžet na novější verzi. [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Poskytuje rozhraní, které lze použít k implementaci upgradu podporu ve vašich vlastních projektů.  
@@ -57,7 +55,7 @@ Změny do projektu modelu z jedné verze nástroje [!INCLUDE[vsprvs](../../code-
   
  Další informace o zálohování a upgrade projektů naleznete v tématu komentáře IVsProjectUpgrade v vsshell2.idl.  
   
-## <a name="upgrading-custom-projects"></a>Upgrade vlastních projektů
+## <a name="upgrading-custom-projects"></a> Upgrade vlastních projektů
 Pokud změníte informace jako trvalý v souboru projektu mezi různými verzemi sady Visual Studio produktu a potom budete potřebovat k podpoře upgrade souboru projektu ze starého na nové verze. Pro podporu upgradu, který umožňuje účastnit **Průvodce převodu Visual Studio**, implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> rozhraní. Toto rozhraní obsahuje pouze mechanismus k dispozici pro upgrade kopírování. Upgrade projektu se stane, jako součást řešení otevře. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> Rozhraní je implementováno modulem objektu pro vytváření projektu nebo by měla být dosažitelný alespoň z objektu pro vytváření projektu.  
   
  Původní mechanismus, který používá <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> rozhraní se pořád podporuje, ale koncepčně upgraduje projektu systém jako součást otevřít projekt. <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> Rozhraní proto volá [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí, i když <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> rozhraní je volána nebo implementovat. Tento přístup umožňuje používat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> k implementaci kopie a pouze části upgrade projektu a delegovat zbývající práce provést na místě (případně na nové umístění) pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> rozhraní.  
@@ -92,7 +90,7 @@ Pokud změníte informace jako trvalý v souboru projektu mezi různými verzemi
   
 5.  Použít metody třídy <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> odeslat upgrade související zprávy pro uživatele pomocí Průvodce migrací Visual Studio.  
   
-6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade>rozhraní se používá k implementaci jakýkoli druh upgrade souboru, který je potřeba v rámci upgradu projektu. Toto rozhraní není volat z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ale je zadaná jako mechanismus pro upgrade soubory, které jsou součástí systému projektu, ale hlavní projekt systému nemusí být přímo vědět. Například této situaci může dojít, pokud kompilátor související soubory a vlastnosti nejsou zpracovány pomocí stejné vývojový tým, který zpracovává zbytek systému projektu.  
+6.  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileUpgrade> rozhraní se používá k implementaci jakýkoli druh upgrade souboru, který je potřeba v rámci upgradu projektu. Toto rozhraní není volat z <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory>, ale je zadaná jako mechanismus pro upgrade soubory, které jsou součástí systému projektu, ale hlavní projekt systému nemusí být přímo vědět. Například této situaci může dojít, pokud kompilátor související soubory a vlastnosti nejsou zpracovány pomocí stejné vývojový tým, který zpracovává zbytek systému projektu.  
   
 ### <a name="ivsprojectupgrade-implementation"></a>Implementace IVsProjectUpgrade  
  Pokud váš systém projektu implementuje <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> pouze se nemůže účastnit **Průvodce převodu Visual Studio**. Ale i v případě, že budete implementovat <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> rozhraní, můžete stále delegovat upgrade souboru na <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> implementace.  

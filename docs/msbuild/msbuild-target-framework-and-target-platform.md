@@ -1,24 +1,20 @@
 ---
-title: "MSBuild Cílová architektura a cílová platforma | Microsoft Docs"
-ms.custom: 
+title: MSBuild Cílová architektura a cílová platforma | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ee86a969279c3bdb8b09a0a0d2c9160d7691e0
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: fec736106d55d97e8df4ec71407b0e01af319b88
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Cílová architektura a cílová platforma nástroje MSBuild
 Projekt se dají vytvářet ke spuštění na *cílové rozhraní*, což je konkrétní verzi rozhraní .NET Framework a *Cílová platforma*, což je architektura určitého softwaru.  Například můžete určit cílovou aplikaci spustit v rozhraní .NET Framework 2.0 na 32bitové platformě, který je kompatibilní s třídu procesoru 802 x 86 ("x86"). Kombinace Cílová architektura a cílová platforma se označuje jako *cílový kontext*.  
@@ -92,4 +88,4 @@ Projekt se dají vytvářet ke spuštění na *cílové rozhraní*, což je konk
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Multitargeting](../msbuild/msbuild-multitargeting-overview.md)
+ [Cílení na více verzí](../msbuild/msbuild-multitargeting-overview.md)

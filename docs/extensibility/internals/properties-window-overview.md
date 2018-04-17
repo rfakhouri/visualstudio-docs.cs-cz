@@ -1,27 +1,23 @@
 ---
-title: "Vlastnosti – okno Přehled | Microsoft Docs"
-ms.custom: 
+title: Vlastnosti – okno Přehled | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f766fe903df4f7a7ea36fb4ec1654b889457f65
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e255795a52064723477eda4e1aca532adedb6be1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-window-overview"></a>Přehled vlastností okna
 **Vlastnosti** okno se používá k zobrazení vlastností objektů vybraných v dva hlavní typy k dispozici v systému windows [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Jsou tyto dva typy systému windows:  
@@ -44,7 +40,7 @@ ms.lasthandoff: 12/22/2017
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Obsahuje seznam kategorií, které **vlastnosti** okno a každé vlastnosti se mapuje na kategorie.|  
 |[IDispatch – rozhraní](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx)|Poskytuje metody a vlastnosti, které chcete programování nástroje a další aplikace, které podporují automatizace objektu.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Obsahuje znak výpustky (...) tlačítka názvem *počítačů* , otevřete modálních dialogových oken implementované samotného objektu. Použít, když hodnota není snadno zadaný uživatelem v textovém poli. Například se může použít k otevření volby barev, které určuje hodnoty RGB pro vás.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Poskytuje přístup k objektům použít k aktualizaci informací zobrazených v **vlastnosti** okno. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>je implementováno modulem VSPackages pro každé okno, který obsahuje vybrat objekty s souvisejících vlastností, který se má zobrazit.|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Poskytuje přístup k objektům použít k aktualizaci informací zobrazených v **vlastnosti** okno. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> je implementováno modulem VSPackages pro každé okno, který obsahuje vybrat objekty s souvisejících vlastností, který se má zobrazit.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Poskytuje informace o typu objektu, například metody rozhraní a pole do struktury.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Umožňuje VSPackages přijímat oznámení o události výběr a načíst informace o aktuální projekt hierarchii, položky, hodnota elementu a kontext uživatelského rozhraní příkazů.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Poskytuje prostředí s přístupem k více výběrů.|  

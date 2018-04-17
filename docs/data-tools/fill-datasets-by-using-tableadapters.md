@@ -1,11 +1,8 @@
 ---
-title: "Vyplnění datové sady s použitím TableAdapters | Microsoft Docs"
-ms.custom: 
+title: Vyplnění datové sady s použitím TableAdapters | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,17 +15,17 @@ helpviewer_keywords:
 - data [Visual Studio], retrieving
 - data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: efd40aa9e702ce855438e29f65e5bcd221bae9a5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datové sady s použitím objektů TableAdapters
 Součást TableAdapter doplní datové sady daty z databáze, na základě jednoho nebo více dotazy nebo uložené procedury, které zadáte. Můžete také provést TableAdapters přidání, aktualizace a odstranění v databázi k zachování změn, které můžete provést na datovou sadu. Mohou také vystavovat globální příkazy, které se nevztahují žádné konkrétní tabulky.  
@@ -120,10 +117,10 @@ Součást TableAdapter doplní datové sady daty z databáze, na základě jedno
   
 |Člen|Popis|  
 |------------|-----------------|  
-|`UpdateAll`– Metoda|Uloží všechna data ze všech tabulek, data.|  
-|`BackUpDataSetBeforeUpdate`Vlastnost|Určuje, jestli se mají vytvořit si záložní kopii datovou sadu před spuštěním `TableAdapterManager.UpdateAll` metoda. Logická hodnota.|  
+|`UpdateAll` – Metoda|Uloží všechna data ze všech tabulek, data.|  
+|`BackUpDataSetBeforeUpdate` Vlastnost|Určuje, jestli se mají vytvořit si záložní kopii datovou sadu před spuštěním `TableAdapterManager.UpdateAll` metoda. Logická hodnota.|  
 |*Název tabulky* `TableAdapter` vlastnost|Představuje `TableAdapter`. Generovaný objekt `TableAdapterManager` obsahuje vlastnost pro každý `TableAdapter` spravuje. Například je generována datovou sadu s tabulkou Zákazníci a objednávky `TableAdapterManager` obsahující `CustomersTableAdapter` a `OrdersTableAdapter` vlastnosti.|  
-|`UpdateOrder`Vlastnost|Určuje pořadí jednotlivých insert, update a delete příkazy. Tuto možnost nastavíte na jednu z hodnot v `TableAdapterManager.UpdateOrderOption` výčtu.<br /><br /> Ve výchozím nastavení `UpdateOrder` je nastaven na **InsertUpdateDelete**. To znamená, které vloží, pak aktualizací a poté se odstraní se pro všechny tabulky v datové sadě.|
+|`UpdateOrder` Vlastnost|Určuje pořadí jednotlivých insert, update a delete příkazy. Tuto možnost nastavíte na jednu z hodnot v `TableAdapterManager.UpdateOrderOption` výčtu.<br /><br /> Ve výchozím nastavení `UpdateOrder` je nastaven na **InsertUpdateDelete**. To znamená, které vloží, pak aktualizací a poté se odstraní se pro všechny tabulky v datové sadě.|
 
 ## <a name="security"></a>Zabezpečení  
 Při použití datové příkazy s vlastnost CommandType nastavena na <xref:System.Data.CommandType.Text>, pečlivě zkontrolujte informace, které se odesílá z klienta před jeho odesláním k vaší databázi. Uživatelé se zlými úmysly může pokusu o odeslání (Vložit) upraveném nebo další příkazy SQL ve snaze o získání neoprávněného přístupu nebo dojít k poškození databáze. Před přenosem vstupu uživatele na databázi vždy zkontrolujte, že je platný. Osvědčeným postupem je vždy nutné použít parametrických dotazů nebo uložené procedury, pokud je to možné.  

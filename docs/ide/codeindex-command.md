@@ -1,31 +1,27 @@
 ---
-title: "Codeindex – příkaz | Microsoft Docs"
-ms.custom: 
+title: Codeindex – příkaz | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line tools [Team Foundation Server]
 - TFSConfig
 - CodeIndex command [Team Foundation Server]
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 350708309cdc7a65b8c991454704dc9212f20ef8
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 6a5b01214a4b7283eefb92b3ce4f85687e813721
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="codeindex-command"></a>CodeIndex – příkaz
+# <a name="codeindex-command"></a>Codeindex – příkaz
 Použití **codeindex –** příkaz ke správě kódu indexování na Team Foundation Server. Například můžete chtít obnovit index pro opravu Codelensu informace nebo vypnout indexování prozkoumat problémy s výkonem serveru.  
   
  **Požadovaná oprávnění**  
@@ -52,15 +48,15 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Možnost**|**Popis**|  
 |----------------|---------------------|  
 |**/indexingStatus**|Zobrazení stavu a konfiguraci služby indexování kódu.|  
-|**/setIndexing:**[na &#124; vypnutí &#124; keepupOnly]|-   **na**: spuštění indexování všech změn.<br />-   **vypnout**: Zastavit indexování všech změn.<br />-   **keepupOnly**: Zastavit indexování dříve vytvořenou změn a spustit indexování pouze nové sady změn.|  
-|**/ignoreList:**[Přidat &#124; odebrat &#124; removeAll &#124; zobrazení]`ServerPath`<br /><br /> Při spuštění, end nebo oba konce cestu na serveru, můžete použít zástupný znak (*).|Určuje seznam soubory kódu a jejich cesty, které nechcete použít indexované.<br /><br /> -   **Přidat**: přidání souboru, který nechcete, aby indexována, aby seznam ignorovaných souborů.<br />-   **Odebrat**: odstranění souboru, který chcete indexované ze seznamu ignorovaných souboru.<br />-   **removeAll**: Vymazat seznam ignorovaných souborů a začít indexování všechny soubory.<br />-   **zobrazení**: Zobrazit všechny soubory, které nejsou probíhá indexování.|  
+|**/setIndexing:**[na &#124; vypnout &#124; keepupOnly]|-   **na**: spuštění indexování všech změn.<br />-   **vypnout**: Zastavit indexování všech změn.<br />-   **keepupOnly**: Zastavit indexování dříve vytvořenou změn a spustit indexování pouze nové sady změn.|  
+|**/ignoreList:**[Přidat &#124; odebrat &#124; removeAll &#124; zobrazení] `ServerPath`<br /><br /> Při spuštění, end nebo oba konce cestu na serveru, můžete použít zástupný znak (*).|Určuje seznam soubory kódu a jejich cesty, které nechcete použít indexované.<br /><br /> -   **Přidat**: přidání souboru, který nechcete, aby indexována, aby seznam ignorovaných souborů.<br />-   **Odebrat**: odstranění souboru, který chcete indexované ze seznamu ignorovaných souboru.<br />-   **removeAll**: Vymazat seznam ignorovaných souborů a začít indexování všechny soubory.<br />-   **zobrazení**: Zobrazit všechny soubory, které nejsou probíhá indexování.|  
 |**/listLargeFiles [/ fileCount:** `FileCount` **/minSize:** `MinSize`]|Zobrazuje zadaný počet souborů, který je delší než zadaná velikost v KB. Pak můžete použít **/ignoreList** možnost vyloučit tyto soubory z indexování.|  
 |**/reindexAll**|Vymažte dříve indexovaná data a restartujte indexování.|  
 |**/destroyCodeIndex [/noPrompt]**|Odstranit kód index a odeberte všechny indexovaná data. Nevyžaduje potvrzení, pokud použijete **/noPrompt** možnost.|  
 |**/temporaryDataSizeLimit**: [zobrazení &#124; <`SizeInGBs`> &#124; zakázat]|Určit, kolik dočasná data, která vytvoří Codelensu při zpracování změn. Výchozí limit je 2 GB.<br /><br /> -   **zobrazení**: Zobrazit aktuální limit velikosti.<br />-   `SizeInGBs`: Změňte omezení velikosti.<br />-   **Zakázat**: odeberte omezení velikosti.<br /><br /> Tento limit je zaškrtnuta možnost než Codelensu zpracuje novou sadu změn. Pokud dočasná data, která překračuje tento limit, bude Codelensu pozastavit zpracování po sady změn, není nové. Codelensu se restartuje po dat je vyčištěna a klesne pod tento limit zpracování. Čištění se spustí automaticky jednou denně. To znamená, že dočasná data, která může překročí toto omezení, dokud nebude vyčištění spuštění.|  
 |**/indexHistoryPeriod**: [zobrazení &#124; všechny &#124; <`NumberOfMonths`>]|Ovládací prvek, jak dlouho chcete indexu historii změn. To ovlivní, kolik historie Codelensu ukazuje. Výchozí limit je 12 měsíců. To znamená Codelensu Zobrazí historii změn z jenom za posledních 12 měsíců.<br /><br /> -   **zobrazení**: Zobrazit aktuální počet měsíců.<br />-   **všechny**: Index veškerou historii změn.<br />-   `NumberOfMonths`: Počet měsíců, používá k historii změn index změňte.|  
-|**/collectionName:**`CollectionName`|Určuje název kolekce týmového projektu, na který se má spustit **codeindex –** příkaz. Vyžaduje, pokud nepoužíváte **/CollectionId**.|  
-|**/collectionId:**`CollectionId`|Určuje identifikační číslo kolekce týmového projektu, na který se má spustit **codeindex –** příkaz. Vyžaduje, pokud nepoužíváte **/CollectionName**.|  
+|**/collectionName:** `CollectionName`|Určuje název kolekce týmového projektu, na který se má spustit **codeindex –** příkaz. Vyžaduje, pokud nepoužíváte **/CollectionId**.|  
+|**/collectionId:** `CollectionId`|Určuje identifikační číslo kolekce týmového projektu, na který se má spustit **codeindex –** příkaz. Vyžaduje, pokud nepoužíváte **/CollectionName**.|  
   
 ## <a name="examples"></a>Příklady  
   

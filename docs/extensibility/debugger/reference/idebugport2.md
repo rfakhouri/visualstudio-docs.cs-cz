@@ -2,28 +2,24 @@
 title: IDebugPort2 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugPort2
 helpviewer_keywords:
 - IDebugPort2 interface
 ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
-caps.latest.revision: 13
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91ee83167c681b713ea7d7a51a38d45b05fba4d2
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: d1811ad7e46865d00eed2066d061daec78d7ab2b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Toto rozhraní představuje port ladění na počítači.  
@@ -58,7 +54,7 @@ IDebugPort2 : IUnknown
  Místní port poskytuje přístup ke všem procesy a programy spuštěné v místním počítači. Další porty může představovat sériový kabel připojení k zařízení se systémem Windows CE nebo síťové připojení k počítači bez modelu DCOM. `IDebugPort2` Rozhraní se používá k najít název a identifikátor portu, výčet všech procesů spuštěných na port a zadejte svá zařízení pro spuštění a ukončení procesů na portu.  
   
 ## <a name="requirements"></a>Požadavky  
- Header: msdbg.h  
+ Záhlaví: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

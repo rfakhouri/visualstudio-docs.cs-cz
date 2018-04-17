@@ -1,22 +1,19 @@
 ---
-title: "Tipy pro vyšší produktivitu pro sadu Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Tipy pro vyšší produktivitu pro sadu Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e91411539f1e511b04fd455b8ee775fa7abccc2
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: e6b79f7d36358a875b45b7a705674060b05969cc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu pro sadu Visual Studio
 
@@ -28,7 +25,7 @@ Informace o běžných klávesových zkratek najdete v tématu [klávesové tipy
 
 Napište kód rychleji pomocí následující funkce.
 
-- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úpravy rychlejší. Například v **Visual Studio 2017 verze 15,6 operací** a novější, můžete příkaz snadno duplicitní bez nutnosti zkopírujte jej, změnit umístění kurzor a pak ji vložit řádek kódu. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo Sbalit vybraný text tak, že zvolíte **upravit** > **Upřesnit** > **rozbalte výběr** nebo **Upravit** > **Upřesnit** > **kontrakt výběr**, nebo stisknutím kombinace kláves **Shift** + **Alt** +  **=**  nebo **Shift**+**Alt** +  **-**  (k dispozici v **Visual Studio 2017 verze 15,5** a novější).
+- **Pomocí příkazů pohodlí**. Visual Studio obsahuje různé příkazy můžete provádět běžné úlohy úpravy rychlejší. Například v **Visual Studio 2017 verze 15,6 operací** a novější, můžete příkaz snadno duplicitní bez nutnosti zkopírujte jej, změnit umístění kurzor a pak ji vložit řádek kódu. Zvolte **upravit** > **duplicitní** nebo stiskněte klávesu **Ctrl**+**E**,**V**. Můžete také rychle rozbalit nebo Sbalit vybraný text tak, že zvolíte **upravit** > **Upřesnit** > **rozbalte výběr** nebo **Upravit** > **Upřesnit** > **kontrakt výběr**, nebo stisknutím kombinace kláves **Shift** + **Alt** + **=** nebo **Shift**+**Alt** + **-** (k dispozici v **Visual Studio 2017 verze 15,5** a novější).
 
 - **Použití prvku IntelliSense**. Při zadávání kódu v editoru, zobrazí se informace technologie IntelliSense, například vypsat členy, informace o parametrech, rychlé informace, podpis pomoci a dokončení Word. Tyto funkce podporují přibližné shody textu; například seznamy výsledky pro členy seznam obsahuje pouze položky, které začínají znaky, zda jste zadali, ale také položky, které obsahují znak kombinace kdekoli v jejich názvy. Další informace najdete v tématu [pomocí IntelliSense](../ide/using-intellisense.md).
 

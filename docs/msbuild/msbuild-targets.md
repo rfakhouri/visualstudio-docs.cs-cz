@@ -1,26 +1,22 @@
 ---
-title: "Cíle MSBuild | Microsoft Docs"
-ms.custom: 
+title: Cíle MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, targets
 ms.assetid: 8060b4d2-e4a9-48cf-a437-852649ceb417
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d72a820b4d733d7736ca356ebd71198b9252dcf8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d9ab9a367352ddf7980394f8cb87823f7d163ed1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-targets"></a>Cíle nástroje MSBuild
 Cíle seskupíte úlohy v určitém pořadí a umožněte proces sestavení se promítnou do menších jednotek. Jeden cíl může například odstranit všechny soubory v adresáři výstup přípravy na sestavení, zatímco jiné zkompiluje vstupy pro projekt a umístí je do prázdného adresáře. Další informace o úlohách najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  
@@ -58,7 +54,7 @@ Cíle seskupíte úlohy v určitém pořadí a umožněte proces sestavení se p
   
 -   Cílové závislosti  
   
--   `BeforeTargets`a `AfterTargets` (MSBuild 4.0)  
+-   `BeforeTargets` a `AfterTargets` (MSBuild 4.0)  
   
  Cíl se nikdy spouští dvakrát během jednoho sestavení, i když na něm závisí následující cíl v sestavení. Jakmile se spustí na cíl, jeho příspěvkem k sestavení je dokončena.  
   

@@ -1,34 +1,30 @@
 ---
-title: "Služba Essentials | Microsoft Docs"
-ms.custom: 
+title: Služba Essentials | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - services, essentials
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4db5404ed4cb307064d9d913c240b16051c25977
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c5a9858109c9fe0d8af0d00621b717417a0c0e53
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="service-essentials"></a>Služba Essentials
-Služba je smlouva mezi dvěma VSPackages. Jeden VSPackage poskytuje konkrétní sadu rozhraní pro jiné VSPackage využívat. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]je kolekce VSPackages, která poskytuje služby do jiných VSPackages.  
+Služba je smlouva mezi dvěma VSPackages. Jeden VSPackage poskytuje konkrétní sadu rozhraní pro jiné VSPackage využívat. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] je kolekce VSPackages, která poskytuje služby do jiných VSPackages.  
   
  Například můžete použít službu SVsActivityLog získat rozhraní IVsActivityLog, který můžete použít k zápisu do protokolu činnosti. Další informace najdete v tématu [postupy: použití protokolu činnosti](../../extensibility/how-to-use-the-activity-log.md).  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]poskytuje také některé integrované služby, které nejsou registrované. VSPackages můžete nahradit předdefinované nebo jiných služeb tím, že poskytuje přepsání služby. Pouze jedna služba přepsání je povoleno pro všechny služby.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poskytuje také některé integrované služby, které nejsou registrované. VSPackages můžete nahradit předdefinované nebo jiných služeb tím, že poskytuje přepsání služby. Pouze jedna služba přepsání je povoleno pro všechny služby.  
   
  Služby mají žádné možnosti rozpoznání. Proto musíte znát identifikátor služby (SID) služby, který chcete používat, a musíte znát rozhraní, která poskytuje. Tyto informace jsou uvedeny v dokumentaci odkaz pro danou službu.  
   
@@ -70,7 +66,7 @@ Někdy může musíte získat službu z okna nástroje nebo řízení kontejneru
   
 Většina služeb sady Visual Studio můžete získat voláním statických <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> metoda.  
   
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>závisí na službě, uložené v mezipaměti je umístěný zprostředkovatele, který je inicializován poprvé žádné VSPackage odvozené z balíčku. Musí zaručit, že tato podmínka je splněna, jinak připravit null služby.  
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> závisí na službě, uložené v mezipaměti je umístěný zprostředkovatele, který je inicializován poprvé žádné VSPackage odvozené z balíčku. Musí zaručit, že tato podmínka je splněna, jinak připravit null služby.  
   
 Naštěstí <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> ve většině případů funguje správně.  
   

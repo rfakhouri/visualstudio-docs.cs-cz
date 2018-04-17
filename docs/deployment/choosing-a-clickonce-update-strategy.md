@@ -1,12 +1,10 @@
 ---
-title: "Výběr strategie aktualizace ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Výběr strategie aktualizace ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,19 +14,19 @@ helpviewer_keywords:
 - updates, ClickOnce
 - ClickOnce deployment, update strategies
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a056b8d7d7581b63941fb952def0892c25382b44
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c1099ea3a37491e28929e3452c6364a904aee4d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Výběr strategie aktualizace ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]můžete zadat automatické aktualizace aplikace. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pravidelně čte soubor manifestu nasazení, zda jsou k dispozici aktualizace pro aplikaci. Pokud je k dispozici nová verze aplikace, je stažena a spuštěna. Z důvodu efektivity budou staženy pouze soubory, které byly změněny.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] můžete zadat automatické aktualizace aplikace. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pravidelně čte soubor manifestu nasazení, zda jsou k dispozici aktualizace pro aplikaci. Pokud je k dispozici nová verze aplikace, je stažena a spuštěna. Z důvodu efektivity budou staženy pouze soubory, které byly změněny.  
   
  Při navrhování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, budete muset určit, jaká strategie aplikace bude používat ke kontrole aktualizací k dispozici. Můžete použít tři základní strategie: kontrolu aktualizací při spuštění aplikace, kontrolu aktualizací po spuštění aplikace (spuštěno jako vlákno na pozadí) nebo poskytnutí uživatelského rozhraní pro aktualizace.  
   
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/22/2017
  Můžete taky zablokovat kontrolu aktualizace odebráním `<Subscription>` značky z manifestu nasazení.  
   
 ## <a name="permission-elevation-and-updates"></a>Zvýšení úrovně oprávnění a aktualizace  
- Pokud nové verze [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace vyžaduje vyšší úroveň důvěryhodnosti pro spuštění než předchozí verze, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vyzve uživatele, pokud chce aplikaci udělit tato vyšší úroveň důvěryhodnosti. Pokud uživatel odmítne udělit vyšší úroveň důvěryhodnosti, nebude aktualizace nainstalována. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]vyzve uživatele k instalaci aplikace znovu při dalším restartování. Pokud uživatel v tomto kroku odmítne udělit vyšší úroveň důvěryhodnosti a aktualizace není označena jako povinná, bude spuštěna starší verze aplikace. Pokud je však aktualizace vyžadována, aplikace se nespustí, dokud uživatel nepřijme vyšší úroveň důvěryhodnosti.  
+ Pokud nové verze [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace vyžaduje vyšší úroveň důvěryhodnosti pro spuštění než předchozí verze, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vyzve uživatele, pokud chce aplikaci udělit tato vyšší úroveň důvěryhodnosti. Pokud uživatel odmítne udělit vyšší úroveň důvěryhodnosti, nebude aktualizace nainstalována. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vyzve uživatele k instalaci aplikace znovu při dalším restartování. Pokud uživatel v tomto kroku odmítne udělit vyšší úroveň důvěryhodnosti a aktualizace není označena jako povinná, bude spuštěna starší verze aplikace. Pokud je však aktualizace vyžadována, aplikace se nespustí, dokud uživatel nepřijme vyšší úroveň důvěryhodnosti.  
   
  Pokud použijete nasazení důvěryhodné aplikace, nebude tato výzva týkající se úrovně důvěryhodnosti zobrazena. Další informace najdete v tématu [Přehled nasazení důvěryhodných aplikací](../deployment/trusted-application-deployment-overview.md).  
   

@@ -1,29 +1,25 @@
 ---
 title: IDebugExpressionEvaluator | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugExpressionEvaluator
 helpviewer_keywords:
 - IDebugExpressionEvaluator interface
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0dad3317c3566051144bb7f3c335be9574103c4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d5a4b7061b5de50162bd04e033a983987ab4f35f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -48,7 +44,7 @@ IDebugExpressionEvaluator : IUnknown
   
 |Metoda|Popis|  
 |------------|-----------------|  
-|[Analyzovat](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Převede řetězec výraz analyzovaný výrazu.|  
+|[analyzovat](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|Převede řetězec výraz analyzovaný výrazu.|  
 |[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|Získá místní proměnné, argumentů a další vlastnosti metody.|  
 |[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|Převede metoda umístění a posun na adresu paměti.|  
 |[Setlocale –](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|Určuje jazyk, který chcete použít k vytvoření tiskových výsledky.|  
@@ -64,7 +60,7 @@ IDebugExpressionEvaluator : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje, jak vytvořit instanci vyhodnocovací filtr výrazů daného symbolu zprostředkovatele a adresu ve zdrojovém kódu. Tento příklad používá funkce, `GetEEMetric`, z [SDK pomocníci pro ladění](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) knihovny, dbgmetric.lib.  

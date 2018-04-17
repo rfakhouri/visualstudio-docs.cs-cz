@@ -1,8 +1,8 @@
 ---
-title: "Visual Studio příkazového řádku DEVENV | Microsoft Docs"
+title: Visual Studio příkazového řádku DEVENV | Microsoft Docs
 ms.date: 02/28/2018
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - switches, Devenv
 - command-line switches, Devenv
@@ -11,14 +11,14 @@ helpviewer_keywords:
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b507ff8710e3257f2da61a32baa81a18441c3aff
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 3adde520b76de347da025c819ec39dce50660f2b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="devenv-command-line-switches"></a>Přepínače příkazového řádku nástroje devenv
 
@@ -69,7 +69,7 @@ Následující přepínače příkazového řádku zobrazit rozhraní IDE a popi
 |[/ UseEnv](../../ide/reference/useenv-devenv-exe.md)|Způsobí, že rozhraní IDE, má-li použít CESTU, zahrnout a LIB proměnné prostředí pro kompilaci C++, namísto nastavení zadané v části adresáře VC ++ **projekty** možnosti v **možnosti** dialogové okno. Tento přepínač. je nainstalovaná se systémem **vývoj aplikací s jazykem C++** zatížení. Další informace najdete v tématu [nastavení cesty a proměnných prostředí pro sestavení příkazového řádku](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 |[Či upravit](../../ide/reference/edit-devenv-exe.md)|Zadané soubory se otevře v spuštěné instance této aplikace. Pokud nejsou žádné spuštěné instance, spustí novou instanci s rozložení zjednodušené okna.|
 |[/ SafeMode](../../ide/reference/safemode-devenv-exe.md)|Visual Studio se spustí v nouzovém režimu a načte výchozí prostředí a služeb a dodává verze balíčků třetích stran.|
-|[/ResetSkipPkgs](../../ide/reference/resetskippkgs-devenv-exe.md)|Vymaže všechny SkipLoading značky, které byly přidány do VSPackages uživatelé, kteří chtějí předejít přetížení problém VSPackages.|
+|[/ Resetskippkgs –](../../ide/reference/resetskippkgs-devenv-exe.md)|Vymaže všechny SkipLoading značky, které byly přidány do VSPackages uživatelé, kteří chtějí předejít přetížení problém VSPackages.|
 |[Nebo instalační program](../../ide/reference/setup-devenv-exe.md)|Vynutí Visual Studio sloučit prostředků metadata, která popisuje nabídek, panely nástrojů a příkaz skupin, ze všech VSPackages k dispozici. Tento příkaz musí spustit jako správce.|
 
 Následující přepínače příkazového řádku nezobrazují rozhraní IDE.
@@ -86,7 +86,7 @@ Následující přepínače příkazového řádku nezobrazují rozhraní IDE.
 |[/ProjectConfig](../../ide/reference/projectconfig-devenv-exe.md)|Určuje projekt konfiguraci sestavení nebo nasadit. Tento přepínač lze použít pouze v případě, že jste zadali také přepínač/Project.|
 |[/ Rebuild](../../ide/reference/rebuild-devenv-exe.md)|Vyčistí a potom vytvoří zadaného řešení nebo projektu závislosti na konfiguraci zadaného řešení.|
 |[/ Resetsettings –](../../ide/reference/resetsettings-devenv-exe.md)|Obnoví výchozí nastavení sady Visual Studio. Volitelně obnoví nastavení .vssettings zadaný soubor.|
-|[/Upgrade](../../ide/reference/upgrade-devenv-exe.md)|Upgraduje aktuální formátech Visual Studio pro tyto soubory soubor zadaný řešení a všechny jeho soubory projektu nebo soubor zadaný projekt.|
+|[/ Upgrade](../../ide/reference/upgrade-devenv-exe.md)|Upgraduje aktuální formátech Visual Studio pro tyto soubory soubor zadaný řešení a všechny jeho soubory projektu nebo soubor zadaný projekt.|
 
 ## <a name="see-also"></a>Viz také
 

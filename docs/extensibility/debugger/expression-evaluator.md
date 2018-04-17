@@ -1,27 +1,25 @@
 ---
-title: "Vyhodnocovací filtr výrazů | Microsoft Docs"
-ms.custom: 
+title: Vyhodnocovací filtr výrazů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expressions [Debugging SDK]
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-caps.latest.revision: "19"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 55aaa595c49d0c50cff5f874d1b322c3adbb9729
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8dd2cc4409dbdb7650454715e133fd76dda5b780
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator"></a>Vyhodnocení výrazu
 Vyhodnocovače výrazů (EE) zkontrolujte syntaxi jazyka analyzovat a vyhodnocovat proměnné a výrazy v době běhu, což jim umožní jde zobrazit uživatele, když prostředí IDE je v režimu pozastavení.  
@@ -33,7 +31,7 @@ Vyhodnocovače výrazů (EE) zkontrolujte syntaxi jazyka analyzovat a vyhodnocov
   
 2.  Získá balíček ladění `IDebugExpressionContext2` objektu z [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) rozhraní a pak zavolá `IDebugStackFrame2::ParseText` metoda na něm získat [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objektu.  
   
-3.  Volání balíček ladění [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metoda nebo [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) metoda má být získána hodnota výrazu. `IDebugExpression2::EvaluateAsync`je volána z okna příkazu/Immediate. Všechny ostatní součásti uživatelského rozhraní volání `IDebugExpression2::EvaluateSync`.  
+3.  Volání balíček ladění [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) metoda nebo [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) metoda má být získána hodnota výrazu. `IDebugExpression2::EvaluateAsync` je volána z okna příkazu/Immediate. Všechny ostatní součásti uživatelského rozhraní volání `IDebugExpression2::EvaluateSync`.  
   
 4.  Výsledkem vyhodnocení výrazu je [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objekt, který obsahuje název, typ a hodnotu výsledkem vyhodnocení výrazu.  
   

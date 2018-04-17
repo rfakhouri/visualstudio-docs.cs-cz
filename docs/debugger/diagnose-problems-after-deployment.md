@@ -1,23 +1,21 @@
 ---
-title: "Diagnostika problémů po nasazení | Microsoft Docs"
-ms.custom: 
-ms.date: 06/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+title: Diagnostika problémů po nasazení | Microsoft Docs
+ms.custom: ''
+ms.date: 04/10/2018
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
-caps.latest.revision: "60"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 562222296ca79a568a3b68aac55a879c8f2f51b1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dc5ffb60e10f28fc33654a78f3f8486e42a2ed85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="diagnose-problems-after-deployment"></a>Diagnostika problémů po nasazení
 Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazení s použitím technologie IntelliTrace, obsahovat informace o sestavení s vaší verzí umožníte Visual Studio automaticky vyhledá správné zdrojové soubory a soubory symbolů, které jsou nutné k ladění protokolu IntelliTrace.  
@@ -34,18 +32,14 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
 -   Visual Studio Enterprise (ale ne edice Professional nebo komunity) ke kontrole diagnostických dat a ladění kódu s použitím technologie IntelliTrace  
 
-##  <a name="SetUpBuild"></a>Krok 1: Zahrnují informace s vaší verzí sestavení  
+##  <a name="SetUpBuild"></a> Krok 1: Zahrnují informace s vaší verzí sestavení  
  Nastavte vaše procesu sestavení pro vytvoření manifestu sestavení (soubor BuildInfo.config) pro webový projekt a zahrnout tento manifest s vaší verzí. Tento manifest obsahuje informace o projektu, Správa zdrojového kódu a sestavení systém, který jste použili k vytvoření konkrétní sestavení. Tyto informace pomáhají najít odpovídající zdroj a symboly po otevření protokolu IntelliTrace, který chcete ověřit zaznamenané události sady Visual Studio.  
 
-###  <a name="AutomatedBuild"></a>Vytvoření manifestu sestavení automatizované sestavení pomocí serveru Team Foundation Server  
-
- Podle těchto kroků, zda používáte správy verzí Team Foundation nebo Git.
-  
- **Krok 2:** [krok 2: verze aplikace](#DeployRelease)  
+###  <a name="AutomatedBuild"></a> Vytvoření manifestu sestavení automatizované sestavení pomocí serveru Team Foundation Server  
   
  Podle těchto kroků, zda používáte správy verzí Team Foundation nebo Git.  
  
- ####  <a name="TFS2017"></a>Team Foundation Server 2017
+ ####  <a name="TFS2017"></a> Team Foundation Server 2017
 
  Nastavte svou definici sestavení přidat umístění zdroje, sestavení a symboly k sestavení manifestu (soubor BuildInfo.config). Team Foundation Build automaticky vytvoří tento soubor a vloží ho do výstupní složky vašeho projektu.
   
@@ -55,7 +49,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
   
 2.  Pokud vytvoříte novou šablonu, zvolte šablonu ASP.NET Core (rozhraní .NET Framework). 
   
-     ![Výběr šablony procesu sestavení & č. 45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+     ![Výběr šablony procesu sestavení &#45; TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
 3.  Určení místa k uložení souboru symboly (PDB) tak, aby váš zdroj je indexovaný automaticky.  
   
@@ -72,8 +66,10 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
      Tato místa v manifestu sestavení obsah uvidí kdokoliv, kdo má přístup k webovému serveru. Ujistěte se, že váš zdrojový server je bezpečné.
   
 6.  Spusťte nové sestavení.  
+  
+    Přejděte na [krok 2: verze aplikace](#DeployRelease)  
 
-####  <a name="TFS2013"></a>Team Foundation Server 2013  
+####  <a name="TFS2013"></a> Team Foundation Server 2013  
  Nastavte svou definici sestavení přidat umístění zdroje, sestavení a symboly k sestavení manifestu (soubor BuildInfo.config). Team Foundation Build automaticky vytvoří tento soubor a vloží ho do výstupní složky vašeho projektu.  
 
 1.  [Upravte svou definici sestavení nebo vytvořte novou definici sestavení.](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
@@ -82,7 +78,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
 2.  Zvolte výchozí šablonu (TfvcTemplate.12.xaml) nebo vlastní šablonu.  
 
-     ![Výběr šablony procesu sestavení & č. 45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+     ![Výběr šablony procesu sestavení &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
 
 3.  Určení místa k uložení souboru symboly (PDB) tak, aby váš zdroj je indexovaný automaticky.  
 
@@ -116,9 +112,9 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
 6.  Spusťte nové sestavení.  
 
- **Krok 2:** [krok 2: verze aplikace](#DeployRelease)  
+    Přejděte na [krok 2: verze aplikace](#DeployRelease)  
 
-####  <a name="TFS2012_2010"></a>Team Foundation Server 2012 nebo 2010  
+####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 nebo 2010  
  Postupujte podle těchto kroků pro automatické vytvoření manifestu sestavení (soubor BuildInfo.config) pro svůj projekt a umístit soubor do výstupní složky vašeho projektu. Soubor se zobrazí jako "*ProjectName*. BuildInfo.config"v zadané výstupní složce, ale je přejmenován"BuildInfo.config"ve složce nasazení po publikování aplikace.  
 
 1.  Nainstalujte Visual Studio 2013 (všechny edice) na serveru Team Foundation build.  
@@ -141,9 +137,9 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
 4.  Spusťte nové sestavení.  
 
- **Krok 2:** [krok 2: verze aplikace](#DeployRelease)  
+    Přejděte na [krok 2: verze aplikace](#DeployRelease)  
 
-###  <a name="ManualBuild"></a>Vytvoření manifestu sestavení pro ruční sestavení pomocí sady Visual Studio  
+###  <a name="ManualBuild"></a> Vytvoření manifestu sestavení pro ruční sestavení pomocí sady Visual Studio  
  Postupujte podle těchto kroků pro automatické vytvoření manifestu sestavení (soubor BuildInfo.config) pro svůj projekt a umístit soubor do výstupní složky vašeho projektu. Soubor se zobrazí jako "*ProjectName*. BuildInfo.config"v zadané výstupní složce, ale je přejmenován"BuildInfo.config"ve složce nasazení po publikování aplikace.  
 
 1.  V **Průzkumníku**, uvolnit webového projektu.  
@@ -168,9 +164,9 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
 4.  Spusťte nové sestavení.  
 
- **Krok 2:** [krok 2: verze aplikace](#DeployRelease)  
+    Přejděte na [krok 2: verze aplikace](#DeployRelease)  
 
-###  <a name="MSBuild"></a>Vytvoření manifestu sestavení pro ruční sestavení pomocí MSBuild.exe  
+###  <a name="MSBuild"></a> Vytvoření manifestu sestavení pro ruční sestavení pomocí MSBuild.exe  
  Přidáte že tyto sestavení argumenty při spuštění sestavení:  
 
  **/p:GenerateBuildInfoConfigFile = true**  
@@ -179,7 +175,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
  **/p:BuildSymbolStorePath =**\<*cesta k symbolům*>  
 
-##  <a name="DeployRelease"></a>Krok 2: Verze aplikace  
+##  <a name="DeployRelease"></a> Krok 2: Verze aplikace  
  Pokud použijete [Web.Deploy balíček](http://msdn.microsoft.com/library/dd394698.aspx) , byla vytvořena procesem sestavení k nasazení své aplikace, manifest sestavení je automaticky přejmenován ze "*ProjectName*. BuildInfo.config"na"BuildInfo.config"a je umístěn ve stejné složce pomocí souboru Web.config vaší aplikace na vašem webovém serveru.  
 
  Pokud používáte jiné metody k nasazení své aplikace, ujistěte se, zda manifest sestavení je přejmenován ze "*ProjectName*. BuildInfo.config"na"BuildInfo.config"a je umístěn ve stejné složce pomocí souboru Web.config vaší aplikace na webovém serveru.  
@@ -187,7 +183,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 ## <a name="step-3-monitor-your-app"></a>Krok 3: Sledování vaší aplikace  
  Nastavte monitorování výkonu aplikací na webovém serveru, aby mohli sledování aplikace problémů, záznamů diagnostických událostí a uložit tyto události do souboru protokolu IntelliTrace. V tématu [monitorování vaší verze pro nasazení problémy](../debugger/using-the-intellitrace-stand-alone-collector.md).  
 
-##  <a name="InvestigateEvents"></a>Krok 4: Najít problém  
+##  <a name="InvestigateEvents"></a> Krok 4: Najít problém  
  Visual Studio Enterprise musíte na svém vývojovém počítači nebo do jiného počítače ke kontrole zaznamenané události a ladění kódu pomocí IntelliTrace. Můžete použít také nástroje, například Codelensu, mapy ladicího programu a map kódu k diagnostice problému.  
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Otevření protokolu nástroje IntelliTrace a odpovídajícího řešení  
@@ -208,7 +204,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
      V opačném případě zvolte jiný pracovní prostor nebo vytvořte nový pracovní prostor. Sada Visual Studio bude mapovat celou větev na tento pracovní prostor.  
 
-     ![Otevřete od správy zdrojového kódu & č. 45; Vytvořit nový pracovní prostor](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
+     ![Otevřete od správy zdrojového kódu &#45; vytvořit nový pracovní prostor](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")  
 
      Chcete-li vytvořit pracovní prostor s konkrétní mapování nebo s názvem, který není názvu vašeho počítače, zvolte **spravovat**.  
 
@@ -254,26 +250,26 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
      Teď můžete zkontrolovat ostatní zaznamenaná hodnoty, zásobník volání, nebo můžete použít **IntelliTrace** okna [přesunout zpětné nebo dopředný "v čase" mezi další zaznamenané události](../debugger/intellitrace.md), související kód a zaznamenají na hodnoty Tyto body v čase. [Co je všechny tyto další události a informace v protokolu IntelliTrace?](../debugger/using-saved-intellitrace-data.md)  
 
-###  <a name="WhatElse"></a>Co můžete dělat z tohoto umístění?  
+###  <a name="WhatElse"></a> Co můžete dělat z tohoto umístění?  
 
 -   [Další informace o tomto kódu](../ide/find-code-changes-and-other-history-with-codelens.md). Najít odkazy na tento kód, jeho historie změn, související chyby, pracovních položek, recenze kódu nebo testy jednotek – vše bez opuštění editoru – pomocí Codelensu indikátory v editoru.  
 
-     ![Codelensu & č. 45; Zobrazovat odkazy na tento kód](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
+     ![Codelensu &#45; zobrazovat odkazy na tento kód](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")  
 
-     ![Codelensu & č. 45; Zobrazení historie pro tento kód změn](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
+     ![Codelensu &#45; zobrazení historie pro tento kód změn](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")  
 
 -   [Při ladění, namapujte vaše místní v kódu.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Chcete-li vizuálně sledovat metody, které byly volány během relace ladění, namapujte zásobník volání.  
 
      ![Mapování zásobníku volání při ladění](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")  
 
-###  <a name="FAQ"></a>MODUL OTÁZKY A ODPOVĚDI  
+###  <a name="FAQ"></a> Q & A  
 
-####  <a name="WhyInclude"></a>Otázka: Proč obsahují informace o projektu, Správa zdrojového kódu, sestavení a symboly Moje verze?  
+####  <a name="WhyInclude"></a> Otázka: Proč obsahují informace o projektu, Správa zdrojového kódu, sestavení a symboly Moje verze?  
  Visual Studio použije tyto informace se najít odpovídající řešení a zdroj pro tuto verzi, který se pokoušíte ladění. Po otevření protokolu IntelliTrace a vyberte událost spustit ladění, Visual Studio použije symboly najít a zobrazí kód kdy k události došlo. Potom můžete podívejte se na hodnoty, které nebyly zaznamenány a dopředný nebo zpětné pohyb spouštění vašeho kódu.  
 
  Pokud používáte sady TFS a tyto informace se v sestavení manifestu (soubor BuildInfo.config), vypadá Visual Studio pro odpovídající zdroj a symboly na vaše aktuálně připojené sady TFS. Pokud Visual Studio nemůže najít správný sady TFS nebo odpovídající zdroj, budete vyzváni k výběru jiné sady TFS.  
 
-####  <a name="InvalidConfigFile"></a>Otázka: v protokolu IntelliTrace chybí informace o mé nasazené aplikace. Proč tomu? Co mám udělat?  
+####  <a name="InvalidConfigFile"></a> Otázka: v protokolu IntelliTrace chybí informace o mé nasazené aplikace. Proč tomu? Co mám udělat?  
  To může dojít v případě nasazení z vývojovém počítači nebo nejsou připojené do sady TFS během nasazení.  
 
 1.  Přejděte do složky pro váš projekt nasazení.  
@@ -282,7 +278,7 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
 3.  Ujistěte se, zda že má soubor požadované informace:  
 
--   **Název projektu**  
+-   **ProjectName**  
 
      Název projektu v sadě Visual Studio. Příklad:  
 
@@ -377,17 +373,17 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
         </Build>  
         ```  
 
-####  <a name="IneligibleWorkspace"></a>Otázka: Proč Visual Studio říká, že je pracovní prostor vybrané není vhodná?  
+####  <a name="IneligibleWorkspace"></a> Otázka: Proč Visual Studio říká, že je pracovní prostor vybrané není vhodná?  
  **Odpověď:** vybraný pracovní prostor nemá žádné mapování mezi zdrojové složce řízení a do místní složky. Chcete-li vytvořit mapování pro tento pracovní prostor, zvolte **spravovat**. V opačném případě zvolte již namapovaný pracovní prostor nebo vytvořte nový pracovní prostor.  
 
  ![Otevřete od správy zdrojového kódu se žádné namapované prostoru](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")  
 
-####  <a name="ChooseTeamProject"></a>Otázka: Proč nemůže pokračovat dokud zvolit kolekci týmových nebo jinou kolekci?  
+####  <a name="ChooseTeamProject"></a> Otázka: Proč nemůže pokračovat dokud zvolit kolekci týmových nebo jinou kolekci?  
  **Odpověď:** k tomu může dojít z některého z těchto důvodů:  
 
 -   Sada Visual Studio není připojena k serveru TFS.  
 
-     ![Otevřete od správy zdrojového kódu & č. 45; není připojeno](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
+     ![Otevřete od správy zdrojového kódu &#45; Nepřipojeno](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")  
 
 -   Sada Visual Studio nenašla řešení nebo projekt v aktuální kolekci týmu.  
 
@@ -397,12 +393,12 @@ Chcete-li diagnostikovat problémy ve vaší webové aplikaci ASP.NET po nasazen
 
      Zadaný server TFS nemusí již mít odpovídající nebo dokonce existující zdroj. Možným důvodem je, že jste migrovali na nový server TFS. Pokud zadaný server TFS neexistuje, může přibližně po minutě vypršet časový limit sady Visual Studio a poté budete vyzváni k připojení do jiné kolekce. Chcete-li pokračovat, připojte se ke správnému serveru TFS.  
 
-     ![Otevřete od správy zdrojového kódu & č. 45; migrovat](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
+     ![Otevřete od správy zdrojového kódu &#45; migrovat](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
-####  <a name="WhatWorkspace"></a>Otázka: co je pracovního prostoru?  
+####  <a name="WhatWorkspace"></a> Otázka: co je pracovního prostoru?  
  **Odpověď:** vaše [prostoru ukládá kopie zdroje](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) vám umožní vývoj a testování samostatně před zahájením kontroly v práci. Pokud ještě nemáte pracovní prostor, který je přímo namapován na nalezené řešení nebo projekt, pak vás sada Visual Studio vyzve k výběru dostupného pracovního prostoru nebo k vytvoření nového pracovního prostoru s názvem vašeho počítače jako výchozím názvem pracovního prostoru.  
 
-####  <a name="UntrustedSymbols"></a>Otázka: Proč se zobrazí tato zpráva o nedůvěryhodné symboly?  
+####  <a name="UntrustedSymbols"></a> Otázka: Proč se zobrazí tato zpráva o nedůvěryhodné symboly?  
  ![Ladění s cestou nedůvěryhodné symboly? ] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **Odpověď:** tato zpráva se zobrazí, když symboly cestu v souboru manifestu sestavení (\<*ProjectName*>. BuildInfo.config) není zahrnutý v seznamu důvěryhodných symbol cest. Cestu můžete přidat do seznamu cest symbolů v možnostech ladicího programu.

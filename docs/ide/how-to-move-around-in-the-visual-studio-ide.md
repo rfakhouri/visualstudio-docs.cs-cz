@@ -1,12 +1,10 @@
 ---
-title: "Postupy: pohyb v sadě Visual Studio IDE | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: pohyb v sadě Visual Studio IDE | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
 - documents [Visual Studio], navigating
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - Window.NextDocumentWindowNav
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
-caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 175a22ecb56f8c41d76512309df2b0443a7481b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 90b10759ac6eead46ef9c131c98bcbed7a835c2b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Návody: Pohyb v integrovaném vývojovém prostředí sady Visual Studio
 Integrované vývojové prostředí (IDE) byl navrženou můžete přesunout z okna a souboru do souboru několika různými způsoby v závislosti na požadavcích vaší předvolbu nebo projektu. Můžete procházet soubory lze otevřít v editoru nebo procházení všechny aktivní nástroj windows v prostředí IDE. Také můžete přepnout přímo na všechny soubor otevřete v editoru, bez ohledu na pořadí, ve kterém posledního použití. Tato funkce může pomoct zvýšit produktivitu při práci v prostředí IDE.  
@@ -57,7 +55,7 @@ Také můžete přepnout konkrétní soubor otevřete v editoru, bez ohledu na t
   
 ![Visual Studio IDE Navigátor](../ide/media/vs2015_ide_navigator.png "VS2015_IDE_Navigator")  
   
-`Window.PreviousDocumentWindowNav`Umožňuje přesunout do posledního přístupu k souboru a `Window.NextDocumentWindowNav` umožňuje přesunout v obráceném pořadí. Obecná nastavení vývoj přiřadí **Shift**+**Alt**+**F7** k `Window.PreviousDocumentWindowNav` a **Alt** + **F7** k `Window.NextDocumentWindowNav`.
+`Window.PreviousDocumentWindowNav` Umožňuje přesunout do posledního přístupu k souboru a `Window.NextDocumentWindowNav` umožňuje přesunout v obráceném pořadí. Obecná nastavení vývoj přiřadí **Shift**+**Alt**+**F7** k `Window.PreviousDocumentWindowNav` a **Alt** + **F7** k `Window.NextDocumentWindowNav`.
   
 > [!NOTE]
 > Pokud používáte kombinaci nastavení ještě nemá kombinaci kláves zástupce, který je přiřazen tento příkaz, můžete přiřadit vlastní pomocí vlastního příkazu **klávesnice** stránky **možnosti** dialogové okno pole. Další informace najdete v tématu [identifikuje a přizpůsobení klávesových zkratek](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
@@ -69,18 +67,18 @@ Také můžete přepnout konkrétní soubor otevřete v editoru, bez ohledu na t
     > [!TIP]
     >  Pořadí, ve kterém můžete projít **Active soubory** seznamu, podržte klávesu **Ctrl**+**Shift** klíče a stiskněte klávesu **kartě**.  
   
-    \-nebo –  
+    \- nebo –  
   
 -   V pravém horním rohu editoru zvolte **Active soubory** tlačítko a pak vyberte ze seznamu přepnout do souboru.  
   
-    \-nebo –  
+    \- nebo –  
   
 -   Na řádku nabídek zvolte **okno**, **Windows**.  
   
 -   V seznamu, vyberte soubor, který chcete zobrazit a potom zvolte **aktivovat**.  
   
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>Navigace mezi nástrojů v prostředí IDE  
-**IDE Navigátor** také umožňuje cyklicky nástroj windows, je nutné otevřít v prostředí IDE. Můžete buď dva příkazy pro přístup **IDE Navigátor** cyklicky nástroj windows, v závislosti na pořadí, ve kterém chcete procházet. `Window.PreviousToolWindowNav`Umožňuje přesunout do posledního přístupu k souboru a `Window.NextToolWindowNav` umožňuje přesunout v obráceném pořadí. Obecná nastavení vývoj přiřadí **Shift**+**Alt**+**F7** k `Window.PreviousDocumentWindowNav` a **Alt** + **F7** k `Window.NextDocumentWindowNav`.
+**IDE Navigátor** také umožňuje cyklicky nástroj windows, je nutné otevřít v prostředí IDE. Můžete buď dva příkazy pro přístup **IDE Navigátor** cyklicky nástroj windows, v závislosti na pořadí, ve kterém chcete procházet. `Window.PreviousToolWindowNav` Umožňuje přesunout do posledního přístupu k souboru a `Window.NextToolWindowNav` umožňuje přesunout v obráceném pořadí. Obecná nastavení vývoj přiřadí **Shift**+**Alt**+**F7** k `Window.PreviousDocumentWindowNav` a **Alt** + **F7** k `Window.NextDocumentWindowNav`.
   
 > [!NOTE]
 > Pokud používáte kombinaci nastavení ještě nemá kombinaci kláves zástupce, který je přiřazen tento příkaz, můžete přiřadit vlastní pomocí vlastního příkazu **klávesnice** stránky **možnosti** dialogové okno pole. Další informace najdete v tématu [identifikuje a přizpůsobení klávesových zkratek](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  

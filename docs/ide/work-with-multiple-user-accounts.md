@@ -2,21 +2,18 @@
 title: Práce s několika uživatelskými účty | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 73b3ae67cc4396a7fc9041cb5074c84ffa2aa73a
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: b93a57592ae87daa8d60d5a4d5e7166d26cfe61f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="work-with-multiple-user-accounts"></a>Práce s několika uživatelskými účty
 
@@ -73,7 +70,7 @@ Klikněte na šipku dolů vedle vašeho jména uživatele v horním rohu sady Vi
 
 Postupujte podle pokynů zadejte nová pověření pro účet. Následující obrázek znázorňuje správce účtu po jeho Contoso.com pracovní účet k přidání uživatele.
 
-![Account Manager](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")
+![Účet správce](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>Pokroku Průvodce přidáním připojených služeb a Průzkumníka serveru
 

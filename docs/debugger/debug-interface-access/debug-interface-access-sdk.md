@@ -1,13 +1,10 @@
 ---
-title: "Přístup k rozhraní SDK ladění | Microsoft Docs"
-ms.custom: 
+title: Přístup k rozhraní SDK ladění | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,17 +12,16 @@ helpviewer_keywords:
 - debugger [DIA SDK]
 - DIA SDK
 ms.assetid: 4c0abe53-11d3-4b7a-bdc7-b054f85aaf40
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd84741d006304f7dfefe8ee4a1060ba64ffdb8b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ae5afe3b5eacaad31ae7b4fcd6aeb092aa37300c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-interface-access-sdk"></a>Přístup k rozhraní ladění SDK
 Microsoft ladění rozhraní přístup Software Development Kit (DIA SDK) poskytuje přístup k ladění informace uložené v souborech databáze (.pdb) program generované postcompiler nástroje společnosti Microsoft. Vzhledem k tomu, že formát souboru PDB generované nástroji postcompiler zde nevyskytlo konstantní revize, vystavení formát je nepraktické. Pomocí rozhraní API DIA, můžete vyvíjet aplikace, které vyhledávání a procházení ladicí informace uložené v souboru pdb. Tyto aplikace může například sestavy informace zpětným trasování zásobníku a analýza dat výkonu.  

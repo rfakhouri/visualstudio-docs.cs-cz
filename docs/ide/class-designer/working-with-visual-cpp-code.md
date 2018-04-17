@@ -1,13 +1,10 @@
 ---
-title: "Práce s kódem jazyka Visual C++ (návrhář tříd) | Microsoft Docs"
-ms.custom: 
+title: Práce s kódem jazyka Visual C++ (návrhář tříd) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
@@ -19,17 +16,16 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0861f6e97ea5cc2321befce8cdf6c460c7ec6cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 490ab617e52e78681f6fdd427548c5e1cbd59957
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Práce s kódem jazyka Visual C++ (návrhář tříd)
 Návrhář tříd zobrazí návrhové ploše názvem *diagramu tříd* , který poskytuje vizuální reprezentace elementy kódu v projektu. Diagramy tříd můžete použít k návrhu a vizualizovat třídami a ostatními typy v projektu.  
@@ -87,7 +83,7 @@ Chyba se nejpravděpodobněji najdete v části řešení problému typ je **kó
 ### <a name="troubleshooting-other-error-messages"></a>Řešení potíží s další chybové zprávy  
 Pomoc při řešení potíží chyby a upozornění můžete najít ve veřejné fórech Microsoft Developer Network (MSDN). Najdete v článku [návrháře fórum sady Visual Studio – třída](http://go.microsoft.com/fwlink/?linkid=160754).  
 
-##  <a name="limitations"></a>Omezení pro elementy kódu C++  
+##  <a name="limitations"></a> Omezení pro elementy kódu C++  
 
 -   Když je načten projektu Visual C++, návrhář tříd funguje způsobem, jen pro čtení. Můžete změnit diagramu tříd, ale nemůže uložit změny z diagramu tříd zpátky do zdrojového kódu.  
 

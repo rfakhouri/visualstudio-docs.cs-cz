@@ -1,23 +1,21 @@
 ---
 title: VsgDbg::VsgDbg (konstruktor) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 670651e6-5e79-4845-b0c2-671beb7055a8
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 095fb9d8477a649c72204c018f28fe6636a3903f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 336fd55ddd4cd85daed7cebc9cadab321b50c189
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg (konstruktor)
 Vytvoří instanci objektu `VsgDbg` třídy s nebo bez Příprava v aplikaci součást diagnostiky grafiky aktivně zaznamenání a zaznamenání grafických informací ve výchozím nastavení, na základě zadaného parametru logická hodnota.  
@@ -32,7 +30,7 @@ VsgDbg(
   
 #### <a name="parameters"></a>Parametry  
  `bDefaultInit`  
- `true`k určení, že je v aplikaci součást diagnostiky grafiky jako připravené k aktivně zachycení a zaznamenání grafických informací; `false` k určení, že aplikace nesmí připravte se na aktivním zachycení a zaznamenání grafických informací v tuto chvíli.  
+ `true` k určení, že je v aplikaci součást diagnostiky grafiky jako připravené k aktivně zachycení a zaznamenání grafických informací; `false` k určení, že aplikace nesmí připravte se na aktivním zachycení a zaznamenání grafických informací v tuto chvíli.  
   
 ## <a name="remarks"></a>Poznámky  
  Při volání konstruktoru s `bDefaultInit` nastavena na `true`, název souboru souboru protokolu grafika je dáno jak `DONT_SAVE_VSGLOG_TO_TEMP` a `VSG_DEFAULT_RUN_FILENAME` preprocesoru značky jsou definovány před `vsgcapture.h` je součástí vaší aplikace.  

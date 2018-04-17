@@ -1,29 +1,27 @@
 ---
 title: Implementace a registrace dodavatele Port | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
-caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1c05dc0bd15dc5c1959024327396d848cd0b1112
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 54d6a4ab90b5ad169c5c940f52322dfd9b4974a4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementace a registrace dodavatele portu
-Role dodavatele portu je sledovat a zadejte porty, které pak spravovat procesy. V době, kdy port musí být vytvořen dodavatele portu je vytvořena instance pomocí CoCreate s identifikátorem GUID port dodavatele (Správce ladicí relace [SDM] použije port dodavatele vybraného uživatele nebo dodavatele port zadaný v projektu systému). Pak zavolá SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) zobrazíte mohou být přidány žádné porty. Pokud lze přidat na port, nový port je požadované voláním [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) a předání [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) port, který popisuje. `AddPort`vrátí nový port reprezentována [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní.  
+Role dodavatele portu je sledovat a zadejte porty, které pak spravovat procesy. V době, kdy port musí být vytvořen dodavatele portu je vytvořena instance pomocí CoCreate s identifikátorem GUID port dodavatele (Správce ladicí relace [SDM] použije port dodavatele vybraného uživatele nebo dodavatele port zadaný v projektu systému). Pak zavolá SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) zobrazíte mohou být přidány žádné porty. Pokud lze přidat na port, nový port je požadované voláním [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) a předání [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) port, který popisuje. `AddPort` vrátí nový port reprezentována [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) rozhraní.  
   
 ## <a name="discussion"></a>Diskusní  
  Port je vytvořen dodavatele port, který je pak přidruženo k serveru počítače nebo verze pro ladění. Server můžete vytvořit výčet její dodavatelé port prostřednictvím[EnumPortSuppliers](../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md) metoda a port dodavatele můžete vytvořit výčet jeho porty prostřednictvím [EnumPorts](../../extensibility/debugger/reference/idebugportsupplier2-enumports.md) metoda.  

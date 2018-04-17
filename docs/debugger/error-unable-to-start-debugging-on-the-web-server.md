@@ -1,12 +1,9 @@
 ---
-title: "Chyba: Nelze spustit ladění na webovém serveru | Microsoft Docs"
-ms.custom: 
+title: 'Chyba: Nelze spustit ladění na webovém serveru | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/23/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
@@ -27,17 +24,16 @@ helpviewer_keywords:
 - errors [debugger], unable to start debugging
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4160726f808a2f456bb52390839c34dc308e2
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 459df1ca9ffed246116c71adac8a38039b6602ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Chyba: Nepodařilo se zahájit ladění na webovém serveru.
 
@@ -59,32 +55,32 @@ Této chybě dochází často, protože k chybě nebo konfigurace došlo ke změ
 - [Ladicí program nemůže připojit ke vzdálenému počítači](#cannot_connect)
 - [V tématu nápovědy pro běžné chyby konfigurace. Spuštěná na webovou stránku mimo ladicí program může poskytnout další informace.](#see_help)
 
-## <a name="IISlist"></a>Služba IIS není uveden web, který odpovídá spuštění adresy url
+## <a name="IISlist"></a> Služba IIS není uveden web, který odpovídá spuštění adresy url
 
 - Restartujte Visual Studio jako správce a opakujte ladění. (Některé scénáře ladění ASP.NET vyžadují zvýšená oprávnění).
 
     Chcete-li vždy spustit jako správce kliknutím pravým tlačítkem myši na ikonu zástupce sady Visual Studio, Visual Studio můžete nakonfigurovat výběr **vlastnosti > Upřesnit**a potom se rozhodnete vždy spustit jako správce.
 
-## <a name="web_server_config"></a>Webový server není správně nakonfigurován.
+## <a name="web_server_config"></a> Webový server není správně nakonfigurován.
 
 - V tématu [Chyba: webový server není nakonfigurován správně](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
-## <a name="unabletoconnect"></a>Nelze se připojit k webovém serveru
+## <a name="unabletoconnect"></a> Nelze se připojit k webovém serveru
 
 - Jste si spuštění sady Visual Studio a webový server na stejném počítači a ladění pomocí **F5** (místo **připojit k procesu**)? Otevřete vlastnosti projektu a ujistěte se, že projekt je konfigurován pro připojení k webovému serveru správná a spustit adresu URL. (Otevřete **vlastnosti > Web > servery** nebo **vlastnosti > ladění** v závislosti na typu vašeho projektu. Pro projekt webové formuláře, otevřete **stránky vlastností > Možnosti spuštění > serveru**.)
 
 - Jinak restartujte fond aplikací a pak restartujte službu IIS. Další informace najdete v tématu [Zkontrolujte konfiguraci služby IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="webservertimeout"></a>Webový server neodpovídá včas
+## <a name="webservertimeout"></a> Webový server neodpovídá včas
 
 - Resetování služby IIS a opakujte ladění. Více instancí ladicí program může připojit k procesu služby IIS. provést obnovení ukončí je. Další informace najdete v tématu [Zkontrolujte konfiguraci služby IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="msvsmon"></a>Microsoft visual studio vzdálené ladění monitor(msvsmon.exe) nezdá se být spuštěn ve vzdáleném počítači
+## <a name="msvsmon"></a> Microsoft visual studio vzdálené ladění monitor(msvsmon.exe) nezdá se být spuštěn ve vzdáleném počítači
 
 - Pokud ladíte ve vzdáleném počítači, ujistěte se, máte [nainstalovaná a spuštěná vzdáleného ladicího programu](../debugger/remote-debugging.md). Pokud zpráva uvádí brána firewall, ujistěte se, [opravte porty v bráně firewall](../debugger/remote-debugger-port-assignments.md) jsou otevřené, zvlášť pokud používáte firewall od jiného výrobce.
-- Pokud používáte souboru HOSTITELŮ, ujistěte se, zda že je správně nakonfigurována. Například, pokud ladění pomocí **F5** (místo **připojit k procesu**), hostitele soubor musí obsahovat stejnou adresu URL projektu jako vlastnosti projektu, **vlastnosti > Web > servery**  nebo **vlastnosti > ladění**, v závislosti na typu vašeho projektu.
+- Pokud používáte souboru HOSTITELŮ, ujistěte se, zda že je správně nakonfigurována. Například, pokud ladění pomocí **F5** (místo **připojit k procesu**), hostitele soubor musí obsahovat stejnou adresu URL projektu jako vlastnosti projektu, **vlastnosti > Web > servery ** nebo **vlastnosti > ladění**, v závislosti na typu vašeho projektu.
 
-## <a name="server_error"></a>Vzdálený server vrátil chybu
+## <a name="server_error"></a> Vzdálený server vrátil chybu
 
 Zkontrolujte vaše [souboru protokolu služby IIS](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0) dílčí kódy chyb a další informace a tuto službu IIS 7 [příspěvku na blogu](https://blogs.iis.net/tomkmvp/troubleshoot-a-403).
 
@@ -93,24 +89,24 @@ Kromě toho se tady jsou některé běžné kódy chyb a několik návrhů.
 - (503) server není k dispozici. Fond aplikací může mít zastavená kvůli změně chyby nebo konfigurace. Restartujte fond aplikací.
 - (404) nebyl nalezen. Ujistěte se, že fond aplikací je nakonfigurován pro správnou verzi technologie ASP.NET.
 
-## <a name="aspnet"></a>Nelze spustit ladění ASP.NET
+## <a name="aspnet"></a> Nelze spustit ladění ASP.NET
 
 - Restartujte fond aplikací a obnovení služby IIS. Další informace najdete v tématu [Zkontrolujte konfiguraci služby IIS](#vxtbshttpservererrorsthingstocheck).
 - Při provádění přepíše adresu URL, otestovat základní web.config s přepisů žádné adresy URL. Najdete v článku **Poznámka** o adrese URL přepisování modulu v [Zkontrolujte konfiguraci služby IIS](#vxtbshttpservererrorsthingstocheck).
 
-## <a name="cannot_connect"></a>Ladicí program nemůže připojit ke vzdálenému počítači
+## <a name="cannot_connect"></a> Ladicí program nemůže připojit ke vzdálenému počítači
 
 Pokud ladíte místně, této chybě může dojít, protože Visual Studio je 32bitová aplikace, takže používá 64bitové verze vzdáleného ladicího programu k ladění 64bitových aplikací. Otevřete vlastnosti projektu a ujistěte se, že projekt je nakonfigurován pro připojení správné webový server a adresy URL. (Otevřete **vlastnosti > Web > servery** nebo **vlastnosti > ladění** v závislosti na typu vašeho projektu.)
 
 Pokud používáte souboru HOSTITELŮ, ujistěte se také, zda že je správně nakonfigurována. Například soubor HOSTITELŮ musí obsahovat stejnou adresu URL projektu jako vlastnosti projektu, **vlastnosti > Web > servery** nebo **vlastnosti > ladění**, v závislosti na typu vašeho projektu.
 
-## <a name="see_help"></a>V tématu nápovědy pro běžné chyby konfigurace. Spuštěná na webovou stránku mimo ladicí program může poskytnout další informace.
+## <a name="see_help"></a> V tématu nápovědy pro běžné chyby konfigurace. Spuštěná na webovou stránku mimo ladicí program může poskytnout další informace.
 
 - Pracujete s Visual Studio a webový server na stejném počítači? Otevřete vlastnosti projektu a ujistěte se, že projekt je konfigurován pro připojení k webovému serveru správná a spustit adresu URL. (Otevřete **vlastnosti > Web > servery** nebo **vlastnosti > ladění** v závislosti na typu vašeho projektu.)
 
 - Pokud to nepomůže, nebo vzdáleně ladíte, postupujte podle kroků v [Zkontrolujte konfiguraci služby IIS](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a>Zkontrolujte konfiguraci služby IIS
+##  <a name="vxtbshttpservererrorsthingstocheck"></a> Zkontrolujte konfiguraci služby IIS
 
 Po převzetí kroky popsané v tomto poli se problém vyřešit a před dalším pokusem o ladění můžete také obnovit službu IIS. Můžete to udělat tak, že otevřete příkazový řádek se zvýšenými oprávněními a zadáním `iisreset`. 
 
@@ -125,7 +121,7 @@ Po převzetí kroky popsané v tomto poli se problém vyřešit a před dalším
 
     Fond aplikací může být nakonfigurován pro verzi technologie ASP.NET, která neodpovídá projektu sady Visual Studio. Aktualizovat verzi technologie ASP.NET ve fondu aplikací a restartujte ji. Podrobné informace najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-    Navíc pokud se změnila oprávnění hesla, musíte je aktualizovat v fond aplikací nebo Web.  Ve fondu aplikací, aktualizujte přihlašovací údaje v **Upřesnit nastavení > Model procesu > Identity**. Pro webový server, aktualizujte přihlašovací údaje v **základní nastavení > připojte se jako...** . Restartujte fond aplikací.
+    Navíc pokud se změnila oprávnění hesla, musíte je aktualizovat v fond aplikací nebo Web.  Ve fondu aplikací, aktualizujte přihlašovací údaje v **Upřesnit nastavení > Model procesu > Identity**. Pro webový server, aktualizujte přihlašovací údaje v **základní nastavení > připojte se jako... **. Restartujte fond aplikací.
     
 * Zkontrolujte, že složce webové aplikace má správná oprávnění.
 

@@ -2,11 +2,8 @@
 title: 'Rychlý úvod: Vytvoření první aplikace konzoly v sadě Visual Studio s jazykem Visual Basic | Microsoft Docs'
 ms.custom: ''
 ms.date: 12/10/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
@@ -16,11 +13,11 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 13d8084effd5057d20f7fc5d4f72d4e27d5b857b
-ms.sourcegitcommit: a0a49cceb0fdc1465ddf76d131c6575018b628b8
+ms.openlocfilehash: 39e7b9f03a5ef0a37594dad015084648eaa2bade
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>Rychlý úvod: Vytvoření první aplikace konzoly v sadě Visual Studio s jazykem Visual Basic
 V tento úvod 5 až 10 minut v sadě Visual Studio integrované vývojové prostředí (IDE) vytvoříte jednoduchou aplikaci jazyka Visual Basic, která běží na konzole.
@@ -30,7 +27,7 @@ Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio st
 ## <a name="create-a-project"></a>Vytvoření projektu
 Nejdřív vytvoříte projekt aplikace Visual Basic. Typ projektu se dodává s všechny soubory šablony, které budete potřebovat, než jste přidali i nic!
 
-1. Open Visual Studio 2017.
+1. Otevřete Visual Studio 2017.
 
 2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
 

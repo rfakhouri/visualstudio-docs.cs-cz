@@ -1,32 +1,30 @@
 ---
-title: "Příručka správce Help Vieweru | Microsoft Docs"
-ms.custom: 
+title: Příručka správce Prohlížeč nápovědy | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
-caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: dfd290d4395daa6576f4e86d55cdf358a0cf3b5b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-viewer-administrator-guide"></a>Příručka správce Help Viewer
 Help Viewer umožňuje spravovat místní instalace nápovědy pro sítě v prostředích s nebo bez připojení k Internetu. Místní obsah nápovědy je konfigurováno na základě na počítač. Ve výchozím nastavení uživatelé musí mít práva správce k jejich místní Nápověda instalace aktualizace.  
   
-Pokud vaše síťové prostředí umožňuje klientům přístup k Internetu, můžete použít Správce obsahu nápovědy spustitelný soubor pro nasazení obsahu místní nápovědu z Internetu. Další informace o HlpCtntMgr.exe syntaxe příkazového řádku najdete v tématu [argumenty příkazového řádku pro správce obsahu nápovědy](../ide/command-line-arguments-for-the-help-content-manager.md).
+Pokud vaše síťové prostředí umožňuje klientům přístup k Internetu, můžete použít **správce obsahu nápovědy** spustitelný soubor pro nasazení obsahu místní nápovědu z Internetu. Další informace o *HlpCtntMgr.exe* řádku syntaxe příkazu najdete v tématu [argumenty příkazového řádku pro správce obsahu nápovědy](../ide/command-line-arguments-for-the-help-content-manager.md).
 
 Informace o vytváření obsahu, vytvoří koncový bod služby intranetu a podobné typy aktivit, najdete v článku [pomoci SDK prohlížeč](../extensibility/internals/microsoft-help-viewer-sdk.md).  
   
-Pokud nemají přístup k Internetu v síťovém prostředí, Prohlížeč nápovědy můžete nasadit místního obsahu nápovědy z intranetu nebo sdílené síťové složce. Nápověda k sadě Visual Studio IDE možnosti lze zakázat i pomocí [klíč registru přepsání](../ide/help-content-manager-overrides.md) pro funkce, jako:
+Pokud nemáte přístup k Internetu v síťovém prostředí, můžete nasadit Help Viewer místního obsahu nápovědy z intranetu nebo sdílené síťové složce. Nápověda k sadě Visual Studio IDE možnosti lze zakázat i pomocí [klíč registru přepsání](../ide/help-content-manager-overrides.md) pro funkce, jako:
 
 - online a offline nápovědy
 
@@ -37,21 +35,22 @@ Pokud nemají přístup k Internetu v síťovém prostředí, Prohlížeč nápo
 - Správa obsahu 
   
 ## <a name="deploying-local-help-content-from-the-internet"></a>Nasazení místního obsahu nápovědy z Internetu  
-Pomůže obsah Manager (HlpCtntMgr.exe) můžete použít k nasazení místního obsahu nápovědy z Internetu do klientských počítačů. Použijte následující syntaxi:  
+Můžete použít **správce obsahu nápovědy** (*HlpCtntMgr.exe*) k nasazení místního obsahu nápovědy z Internetu do klientských počítačů. Použijte následující syntaxi:  
   
 ```
 \\%ProgramFiles(x86)%\Microsoft Help Viewer\v2.3\HlpCtntmgr.exe /operation \<*name*> /catalogname \<*catalog name*> /locale \<*locale*>
 ```
   
-Další informace o HlpCtntMgr.exe syntaxe příkazového řádku najdete v tématu [argumenty příkazového řádku pro správce obsahu nápovědy](../ide/command-line-arguments-for-the-help-content-manager.md).  
+Další informace o *HlpCtntMgr.exe* řádku syntaxe příkazu najdete v tématu [argumenty příkazového řádku pro správce obsahu nápovědy](../ide/command-line-arguments-for-the-help-content-manager.md).  
   
 Požadavky:  
   
 -   Klientské počítače musí mít přístup k Internetu.  
   
 -   Uživatelé musí mít oprávnění správce k aktualizaci, přidat nebo odebrat místní obsah nápovědy, co byla nainstalována.  
-  
- Upozornění:  
+
+
+Upozornění:  
   
 -   Zdroj výchozího nápovědy bude stále online.
   
@@ -64,7 +63,7 @@ Následující příklad nainstaluje anglickou obsah pro sadu Visual Studio ke k
   
 2.  Zadejte následující příkaz:  
   
-     C:\Program soubory (x86) \Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation nainstalovat /catalogname VisualStudio15 /locale en-us  
+     `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`  
   
 3.  Stiskněte klávesu **zadejte**.  
   
@@ -78,7 +77,7 @@ Požadavky:
 -   Uživatelé musí mít oprávnění správce k aktualizaci, přidat nebo odebrat místní obsah nápovědy, co byla nainstalována.  
   
     > [!TIP]
-    >  Pokud uživatelé nemají oprávnění správce, doporučujeme zakázat kartě Správa obsahu v okně nápovědy. Další informace najdete v tématu [pomoci správce obsahu přepsání](../ide/help-content-manager-overrides.md).  
+    >  Pokud uživatelé nemají oprávnění správce, doporučujeme zakázat **spravovat obsah** kartě v okně nápovědy. Další informace najdete v tématu [přepsání správce obsahu nápovědy](../ide/help-content-manager-overrides.md).  
   
 Upozornění:
   
@@ -97,7 +96,7 @@ Před vytvořením základní sady obsahu, musíte nejprve odinstalovat všechny
   
 4.  Zvolte **aktualizace** odinstalovat.
   
-5.  %ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15 a ověřte, že složka obsahuje pouze catalogType.xml souboru.  
+5.  Přejděte do *%ProgramData%\Microsoft\HelpLibrary2\Catalogs\VisualStudio15* a ověřte, že složka obsahuje pouze soubor *catalogType.xml*.  
   
  Odebraný všechny dříve nainstalované místní Visual Studio obsahu nápovědy budete chtít stáhnout základní sady obsahu.  
   
@@ -108,22 +107,23 @@ Před vytvořením základní sady obsahu, musíte nejprve odinstalovat všechny
 2.  V části **doporučená dokumentaci** nebo **dostupnou dokumentaci**, přejděte do dokumentace sad, které chcete stáhnout a potom zvolte **přidat**.  
   
 3.  Zvolte **aktualizace**.  
-  
- Dále musíte balíčku obsahu, aby se dala nasadit do klientských počítačů.  
+
+
+Dále musíte balíčku obsahu, aby se dala nasadit do klientských počítačů.  
   
 #### <a name="to-package-the-content"></a>Balíček obsahu  
   
-1.  Vytvořte složku pro kopírování obsahu pro pozdější nasazení. Příklad: C:\VSHelp.  
+1.  Vytvořte složku pro kopírování obsahu pro pozdější nasazení. Příklad: *C:\VSHelp*.  
   
-2.  Otevřete cmd.exe s oprávněními správce.  
+2.  Otevřete *cmd.exe* s oprávněními správce.  
   
 3.  Přejděte do složky, kterou jste vytvořili v kroku 1.  
   
 4.  Zadejte následující příkaz:  
   
-     Xcopy %ProgramData%\Microsoft\HelpLibrary2 \< *název_složky*> \ /y /e /k /o  
+     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o ` 
   
-     Například:`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`  
+     Například: `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`  
   
 ### <a name="deploying-the-content"></a>Nasazení obsahu  
   
@@ -131,9 +131,9 @@ Před vytvořením základní sady obsahu, musíte nejprve odinstalovat všechny
   
 1.  Vytvoření sdílené síťové složky a zkopírujte obsah nápovědy k umístění.  
   
-     Například kopírovat obsah C:\VSHelp k \\\myserver\VSHelp.  
+     Například kopírovat obsah *C:\VSHelp* k  *\\\myserver\VSHelp*.  
   
-2.  Vytvořte soubor .bat tak, aby obsahovala skript nasazení pro obsah nápovědy. Vzhledem k tomu, že klienta pravděpodobně by mohly mít zámek pro čtení na některý ze souborů odstraňuje jako součást nabízeného oznámení, měli byste vypnout před vkládání aktualizací klienta. Příklad:  
+2.  Vytvoření *.bat* soubor obsahuje skript nasazení pro obsah nápovědy. Vzhledem k tomu, že klienta pravděpodobně by mohly mít zámek pro čtení na některý ze souborů odstraňuje jako součást nabízeného oznámení, měli byste vypnout před vkládání aktualizací klienta. Příklad:  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -141,10 +141,10 @@ Před vytvořením základní sady obsahu, musíte nejprve odinstalovat všechny
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```  
   
-3.  Spusťte soubor .bat na místní počítače, které chcete nainstalovat na obsah nápovědy.  
+3.  Spustit *.bat* soubor na místní počítače, které chcete nainstalovat na obsah nápovědy.  
   
 ## <a name="see-also"></a>Viz také
-[Argumenty příkazového řádku pro Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Přepsání voleb Help Content Manageru](../ide/help-content-manager-overrides.md)  
+[Argumenty příkazového řádku pro správce obsahu nápovědy](../ide/command-line-arguments-for-the-help-content-manager.md)  
+[Přepsání Help Content Manager](../ide/help-content-manager-overrides.md)  
 [Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)  
 [Prohlížeč nápovědy sady SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

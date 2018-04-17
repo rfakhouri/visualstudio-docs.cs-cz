@@ -1,29 +1,25 @@
 ---
 title: Funkce SccSetOption | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccSetOption
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70fe624984adce58191ee7d354185eac0bb527ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 916378ea594d14c9493535b3a28e72ea49ed4733
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccsetoption-function"></a>SccSetOption – funkce
 Tato funkce se nastaví možnosti, které řídí chování modulu plug-in zdrojového kódu.  
@@ -75,7 +71,7 @@ SCCRTN SccSetOption(
  Pokud `nOption` je `SCC_OPT_EVENTQUEUE`, rozhraní IDE zakázání (nebo opětovné povolení) zpracování na pozadí. Během kompilace, například rozhraní IDE může vyzvat modulu plug-in zastavit zpracování při nečinnosti libovolného typu zdrojového kódu. Po kompilace ho by znovu povolit zpracování na pozadí aktualizovat moduly v doplňku na fronty událostí. Odpovídající `SCC_OPT_EVENTQUEUE` hodnotu `nOption`, existují dvě možné hodnoty pro `dwVal`, konkrétně, `SCC_OPT_EQ_ENABLE` a `SCC_OPT_EQ_DISABLE`.  
   
 ## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- Pokud hodnota `nOption` je `SCC_OPT_HASCANCELMODE`, rozhraní IDE umožňuje uživatelům zrušit dlouhá operace. Nastavení `dwVal` k `SCC_OPT_HCM_NO` (výchozí) znamená, že rozhraní IDE má žádný režim Storno. Správa zdrojového kódu modul plug-in musí nabízejí vlastní tlačítko Zrušit, pokud chce uživatel moct zrušit. `SCC_OPT_HCM_YES`Označuje, že rozhraní IDE poskytuje schopnost zrušte operace, takže není nutné zobrazit svou vlastní tlačítko Zrušit SCC modulu plug-in. Pokud je nastaví prostředí IDE `dwVal` k `SCC_OPT_HCM_YES`, je připraveno reagovat na `SCC_MSG_STATUS` a `DOCANCEL` zprávy odeslané do `lpTextOutProc` funkce zpětného volání (najdete v části [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Pokud IDE Tato proměnná nenastaví, by neměl modul plug-in odeslat těchto dvou zprávách.  
+ Pokud hodnota `nOption` je `SCC_OPT_HASCANCELMODE`, rozhraní IDE umožňuje uživatelům zrušit dlouhá operace. Nastavení `dwVal` k `SCC_OPT_HCM_NO` (výchozí) znamená, že rozhraní IDE má žádný režim Storno. Správa zdrojového kódu modul plug-in musí nabízejí vlastní tlačítko Zrušit, pokud chce uživatel moct zrušit. `SCC_OPT_HCM_YES` Označuje, že rozhraní IDE poskytuje schopnost zrušte operace, takže není nutné zobrazit svou vlastní tlačítko Zrušit SCC modulu plug-in. Pokud je nastaví prostředí IDE `dwVal` k `SCC_OPT_HCM_YES`, je připraveno reagovat na `SCC_MSG_STATUS` a `DOCANCEL` zprávy odeslané do `lpTextOutProc` funkce zpětného volání (najdete v části [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). Pokud IDE Tato proměnná nenastaví, by neměl modul plug-in odeslat těchto dvou zprávách.  
   
 ## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
  Pokud nOption je nastaven na `SCC_OPT_NAMECHANGEPFN`a jak zdroj modul plug-in správy a rozhraní IDE povolit, modul plug-in můžete ve skutečnosti přejmenovat nebo přesunout do souboru během operace řízení zdroje. `dwVal` Bude nastavena pro ukazatel na funkci typu [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). Během operace řízení zdroje modul plug-in můžete volat tuto funkci předávání v tři parametry. Jedná se o starý název (s plně kvalifikovanou cestu) souboru, nový název (s plně kvalifikovanou cestu) souboru a odkaz na informace, která má vztah k rozhraní IDE. Prostředí IDE odešle v tento poslední ukazatel voláním `SccSetOption` s `nOption` nastavena na `SCC_OPT_USERDATA`, s `dwVal` odkazující na data. Podpora pro tuto funkci je volitelné. VSSCI plug-, používá tato schopnost musí inicializovat jeho funkce ukazatel a uživatel datových proměnných na `NULL`, a pokud ji nebyla zadána jedna ho nesmí volání funkce přejmenování. Je také je třeba připravit pro uložení byla zadána hodnota, nebo ho můžete změnit v reakci na nové volání na `SccSetOption`. Tím nedojde k ní uprostřed operaci příkaz správy zdrojů, ale k tomu může dojít mezi příkazy.  

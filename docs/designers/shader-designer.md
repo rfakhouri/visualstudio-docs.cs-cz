@@ -1,26 +1,24 @@
 ---
-title: "Návrhář shaderu | Microsoft Docs"
-ms.custom: 
+title: Návrhář shaderu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c8d0f7a2ee52930a74566e0f7b4ddc10747204ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 9aeef6cb38643dd8c1bbf862a396f8632d2630df
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shader-designer"></a>Návrhář shaderů
 Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shaderu návrháři k vytváření, úpravě a exportovat vlastní vizuálních efektů, které jsou známé jako *shadery*.  
@@ -70,7 +68,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
 |Položka na panelu nástrojů|Popis|  
 |------------------|-----------------|  
 |**Vyberte**|Umožňuje interakci s uzly a okraje v grafu. V tomto režimu můžete vybrat uzly a přesunout nebo je odstranit, a můžete vytvořit okraje nebo je rozdělit.|  
-|**Pan**|Umožňuje přesun graf shaderu relativně k rámce okna. Posunete zobrazení, vyberte bod na návrhovou plochu a přesunout ji.<br /><br /> V **vyberte** režimu, stiskněte a podržte klávesu Ctrl k aktivaci **Panoramování** dočasně režimu.|  
+|**Posouvání**|Umožňuje přesun graf shaderu relativně k rámce okna. Posunete zobrazení, vyberte bod na návrhovou plochu a přesunout ji.<br /><br /> V **vyberte** režimu, stiskněte a podržte klávesu Ctrl k aktivaci **Panoramování** dočasně režimu.|  
 |**Přiblížení**|Umožňuje zobrazení více nebo méně shaderu grafu podrobností relativně k rámce okna. V **zvětšení** režimu, vyberte bod na návrhovou plochu a potom přesunout doprava dolů na přiblížit nebo doleva nebo až přiblížení out.<br /><br /> V **vyberte** režimu, můžete stiskněte a podržte klávesu Ctrl zvětšit nebo zmenšit pomocí kolečko myši.|  
 |**Nejlepší přiblížení**|Zobrazí graf úplné shaderu v rámce okna.|  
 |**Režim vykreslování v reálném čase**|Pokud je povolena v reálném čase vykreslování, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ho překreslí na návrhovou plochu, i když je provedena žádná akce uživatele. Tento režim je užitečný při práci se shadery, které se mění v průběhu času.|  
@@ -116,7 +114,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
   
 -   Na **shaderu Návrhář režimy** nástrojů vyberte obrazec, který chcete.  
   
-####  <a name="WWS_MaterialParameters"></a>Podstatným parametry a textury  
+####  <a name="WWS_MaterialParameters"></a> Podstatným parametry a textury  
  Mnohé shadery spoléhají na textury a vlastnosti materiálu k vytvoření jedinečné vzhled pro každý typ objektu ve vaší aplikaci. Pokud chcete zobrazit, co bude vaše shaderu vypadat ve vaší aplikaci, můžete nastavit textury a podstatným vlastnosti, které se použijí k vykreslení ve verzi preview tak, aby odpovídaly textury a parametry, které můžete použít ve vaší aplikaci.  
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Svázat různé texture texture registrace, nebo upravte ostatní podstatným parametry  

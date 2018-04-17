@@ -1,24 +1,22 @@
 ---
-title: "Ladění textové šablony T4 | Microsoft Docs"
-ms.custom: 
+title: Ladění textové šablony T4 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8408cfca0df02a903e4b6394e2b60dcffcfb2904
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 86d8bb0fafefab8a0273012ed8e45b44c31eac47
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-a-t4-text-template"></a>Ladění textové šablony T4
 Nastavte zarážky v textové šablony. Chcete-li ladit návrhu textové šablony, uložte tento textový soubor šablony a poté zvolte **ladění šablony T4** v místní nabídce souboru v Průzkumníku řešení. Chcete-li ladit spuštění textové šablony, jednoduše ladění aplikace, do které patří.  
@@ -72,7 +70,7 @@ Nastavte zarážky v textové šablony. Chcete-li ladit návrhu textové šablon
 |Direktiva include pro soubor: {0} způsobí, že nekonečné smyčce.|Zobrazí v případě, že direktivy začlenění na kruhový zadávají (například soubor A obsahuje soubor B, který obsahuje soubor A).|Nezadávejte žádné cyklické direktivy začlenění.|  
 |Spuštění transformace:|Přidá všechny chyby nebo upozornění, které jsou generovány při spuštění pro transformaci tento řetězec.|Nelze použít.|  
 |Počáteční nebo koncový byl nalezen neočekávaný v rámci bloku. Ujistěte se, že nebylo nemá zadáno počáteční nebo koncové značky a zda neobsahuje žádné vnořené bloky v šabloně.|Zobrazí, když máte neočekávanou \<# nebo #>. To znamená pokud máte \<# po jiné otevřete značky, který ještě nebyl uzavřen, nebo můžete mít #> Pokud není žádná uzavřené otevřete značka před ním. Zpráva poskytuje číslo řádku neodpovídající značky.|Buď odeberte neodpovídající počáteční nebo koncové značky, nebo použijte řídicí znak.|  
-|Direktivu byl zadán nesprávný formát. Direktiva budou ignorovány. Zadejte prosím direktiva ve formátu`<#@ name [parametername="parametervalue"]*  #>`|Zobrazit analyzátorem, pokud není zadán direktivu ve správném formátu. Zpráva poskytuje číslo nesprávné direktivu.|Ujistěte se, všechna direktivy jsou ve tvaru `<#@ name [parametername="parametervalue"]*  #>`. Další informace najdete v tématu [direktivy textových šablon T4](../modeling/t4-text-template-directives.md).|  
+|Direktivu byl zadán nesprávný formát. Direktiva budou ignorovány. Zadejte prosím direktiva ve formátu `<#@ name [parametername="parametervalue"]*  #>`|Zobrazit analyzátorem, pokud není zadán direktivu ve správném formátu. Zpráva poskytuje číslo nesprávné direktivu.|Ujistěte se, všechna direktivy jsou ve tvaru `<#@ name [parametername="parametervalue"]*  #>`. Další informace najdete v tématu [direktivy textových šablon T4](../modeling/t4-text-template-directives.md).|  
 |Nepodařilo se načíst sestavení '{0}' pro registrované procesoru direktiv objekt {1}.<br /><br /> {2}|Nastane, když procesoru direktiv nebylo možné načíst pro hostitele. Zpráva identifikuje sestavení, zadaná pro procesoru direktiv a název procesoru direktiv.|Ujistěte se, že je procesoru direktiv správně zaregistrován a zda existuje sestavení.|  
 |Nepodařilo se najít typ {0}' v sestavení objekt {1}' pro registrované procesoru direktiv '{2}.<br /><br /> {3}|Nastane, když typ procesoru direktiv nelze načíst z jeho sestavení. Zpráva obsahuje název typu, sestavení a procesoru direktiv.|Vshost vyhledá procesoru direktiv informace (název, sestavení a typ) v registru. Ujistěte se, že je procesoru direktiv správně zaregistrován a zda typ existuje v sestavení.|  
 |Došlo k potížím při načítání sestavení {0}.|Nastane, když dojde k potížím při načítání sestavení. Zpráva obsahuje název sestavení.|Můžete zadat sestavení, které mají být načtena v \<@# assembly #> direktivy a procesory direktiv. Chybová zpráva, která následuje tento řetězec by měl poskytovat více dat na proč načtení sestavení se nezdařilo.|  

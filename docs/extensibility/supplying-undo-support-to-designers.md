@@ -1,27 +1,23 @@
 ---
-title: "Poskytnutí vrátit zpět na podporu, aby návrháři | Microsoft Docs"
-ms.custom: 
+title: Poskytnutí vrátit zpět na podporu, aby návrháři | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98243c15f5f69a9aecba589b966d56a68201ab2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 5fc289426c2560e978819efcd8eaf17e56b224a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supplying-undo-support-to-designers"></a>Poskytuje podporu vrácení zpět, aby Designer
 Návrháře, jako je editory, obvykle musí podporovat operace vrácení zpět tak, aby uživatelé mohou provádět jejich poslední změny při úpravě element kódu.  
@@ -30,7 +26,7 @@ Návrháře, jako je editory, obvykle musí podporovat operace vrácení zpět t
   
  Návrhář implementace, které je třeba zajistit podporu pro funkci vrácení zpět:  
   
--   Poskytování správy vrácení zpět implementací abstraktní základní třída<xref:System.ComponentModel.Design.UndoEngine>  
+-   Poskytování správy vrácení zpět implementací abstraktní základní třída <xref:System.ComponentModel.Design.UndoEngine>  
   
 -   Dodávky trvalosti a CodeDOM podporují implementací <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> a <xref:System.ComponentModel.Design.IComponentChangeService> třídy.  
   
@@ -73,7 +69,7 @@ Návrháře, jako je editory, obvykle musí podporovat operace vrácení zpět t
   
  Sada SDK prostředí poskytuje podporu CodeDOM a trvalost zadáním:  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>jako implementace<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+-   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> jako implementace <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
  A <xref:System.ComponentModel.Design.IComponentChangeService> poskytované [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]s hostiteli návrhu.  
   
@@ -100,7 +96,7 @@ Návrháře, jako je editory, obvykle musí podporovat operace vrácení zpět t
   
 -   Vlastnost změn prostřednictvím <xref:System.ComponentModel.TypeDescriptor> objektu.  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService>události se generují ručně při vrátit změna se potvrdí.  
+-   <xref:System.ComponentModel.Design.IComponentChangeService> události se generují ručně při vrátit změna se potvrdí.  
   
 -   Úprava v Návrháři byl vytvořen v kontextu <xref:System.ComponentModel.Design.DesignerTransaction>.  
   

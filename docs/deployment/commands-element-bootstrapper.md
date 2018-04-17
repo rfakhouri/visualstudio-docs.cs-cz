@@ -1,13 +1,10 @@
 ---
-title: "&lt;Příkazy&gt; prvek (zavaděče) | Microsoft Docs"
-ms.custom: 
+title: '&lt;Příkazy&gt; prvek (zavaděče) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <Commands> element [bootstrapper]
 ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 67bbb7cbec1df53a8481acf26273cc371f92bb40
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9d886d7fa7ea2ab6cb8c04810ab404a29898cd02
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Příkazy&gt; – Element (zaváděcího nástroje)
 `Commands` Element implementuje testy popsané prvky pod `InstallChecks` elementu a deklaruje balíčky, které [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] zaváděcího nástroje měli nainstalovat, pokud se test nezdaří.  
@@ -96,7 +92,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="bypassif"></a>BypassIf  
  `BypassIf` Element je podřízená `InstallConditions` elementu a popisuje pozitivní podmínky, pod kterým by neměl být příkaz provést. Každý `InstallConditions` element může obsahovat nula nebo více `BypassIf` elementy.  
   
- `BypassIf`má následující atributy.  
+ `BypassIf` má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
@@ -108,7 +104,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="failif"></a>FailIf  
  `FailIf` Element je podřízená `InstallConditions` elementu a popisuje pozitivní podmínky, pod kterým bude instalace zastavena. Každý `InstallConditions` element může obsahovat nula nebo více `FailIf` elementy.  
   
- `FailIf`má následující atributy.  
+ `FailIf` má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
@@ -119,10 +115,10 @@ ms.lasthandoff: 12/22/2017
 |`Schedule`|Volitelné. Název `Schedule` značku, která definuje, kdy by mělo být vyhodnoceno toto pravidlo.|  
   
 ## <a name="exitcodes"></a>ExitCodes  
- `ExitCodes` Element je podřízená `Command` elementu. `ExitCodes` Element obsahuje jeden nebo více `ExitCode` elementy, které určují, co dělat v reakci na ukončovací kód z balíčku instalace. Může být jedna volitelné `ExitCode` element pod `Command` elementu. `ExitCodes`nemá žádné atributy.  
+ `ExitCodes` Element je podřízená `Command` elementu. `ExitCodes` Element obsahuje jeden nebo více `ExitCode` elementy, které určují, co dělat v reakci na ukončovací kód z balíčku instalace. Může být jedna volitelné `ExitCode` element pod `Command` elementu. `ExitCodes` Nemá žádné atributy.  
   
 ## <a name="exitcode"></a>exitCode  
- `ExitCode` Element je podřízená `ExitCodes` elementu. `ExitCode` Element určuje, co by měla provést instalaci v reakci na ukončovací kód z balíčku. `ExitCode`neobsahuje žádné podřízené prvky a má následující atributy.  
+ `ExitCode` Element je podřízená `ExitCodes` elementu. `ExitCode` Element určuje, co by měla provést instalaci v reakci na ukončovací kód z balíčku. `ExitCode` neobsahuje žádné podřízené prvky a má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  

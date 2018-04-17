@@ -1,12 +1,10 @@
 ---
-title: "Požadavky na nasazení aplikací | Microsoft Docs"
-ms.custom: 
+title: Požadavky na nasazení aplikací | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - prerequisites, ClickOnce
 - dependencies, ClickOnce
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
-caps.latest.revision: "51"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4060933a904a5cb842a7c319b3ef5da645e4119e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 5fdeb1d5e543216e0cbb9cab72ecd98001caff3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="application-deployment-prerequisites"></a>Nezbytné součásti nasazení aplikace
 Zajistit, že vaše aplikace bude nainstalovat a úspěšně spuštěn, je nutné nejprve zajistit, že jsou na cílovém počítači již nainstalovány všechny součásti, na kterých je závislá vaše aplikace. Například většina aplikací vytvořených pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jsou závislé na [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]; správnou verzi modulu CLR musí být na cílovém počítači před instalací aplikace.  
@@ -48,7 +46,7 @@ Zajistit, že vaše aplikace bude nainstalovat a úspěšně spuštěn, je nutn�
   
 -   Minimální verze všech sestavení, které musí být předinstalován v globální mezipaměti sestavení (GAC), jako je specifikováno na základě deklarace závislost sestavení v manifestu sestavení.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]může zjistit chybějící požadované součásti a požadavky můžete nainstalovat pomocí zaváděcí nástroj. Další informace najdete v tématu [postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] může zjistit chybějící požadované součásti a požadavky můžete nainstalovat pomocí zaváděcí nástroj. Další informace najdete v tématu [postupy: instalace předpokladů s aplikací ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
 >  Ke změně hodnot v manifestech generované nástroje, jako [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a MageUI.exe, budete muset upravit manifest aplikace v textovém editoru a pak se znovu přihlaste manifestů aplikace a nasazení. Další informace najdete v tématu [postupy: opakované podepsání aplikace a manifesty nasazení](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
@@ -78,9 +76,9 @@ Zajistit, že vaše aplikace bude nainstalovat a úspěšně spuštěn, je nutn�
 |---------------------------|-----------------|  
 |**-?, -h, – Nápověda**|Zobrazí dialogové okno nápovědy.|  
 |**-adresu url, - componentsurl**|Zobrazí uložené adresy URL a adresy url komponent pro toto nastavení.|  
-|**-Adresa url =**`location`|Nastaví adresu URL, kde bude hledat Setup.exe [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.|  
-|**-componentsurl =**`location`|Nastaví adresu URL, kde Setup.exe bude vypadat závislosti, jako [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
-|**-homesite =** `true` **&#124;**`false`|Když `true`, stáhne závislosti z upřednostňovaných umístění na webu dodavatele. Přepíše **- componentsurl** nastavení. Když `false`, stáhne závislosti z adresu URL zadanou v **- componentsurl**.|  
+|**-Adresa url =** `location`|Nastaví adresu URL, kde bude hledat Setup.exe [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace.|  
+|**-componentsurl =** `location`|Nastaví adresu URL, kde Setup.exe bude vypadat závislosti, jako [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].|  
+|**-homesite =** `true`**&#124;** `false`|Když `true`, stáhne závislosti z upřednostňovaných umístění na webu dodavatele. Přepíše **- componentsurl** nastavení. Když `false`, stáhne závislosti z adresu URL zadanou v **- componentsurl**.|  
   
 ## <a name="operating-system-support"></a>Podpora operačního systému  
  Zaváděcího nástroje Visual Studio není podporována v systému Windows Server 2008 Server Core nebo Windows Server 2008 R2 jádra serveru, který poskytuje nízká údržba serveru prostředí s omezenou funkčností. Možnost instalace jádra serveru podporuje například pouze do profilu rozhraní .NET Framework 3.5 Server Core, takže funkce sady Visual Studio, které závisí na celý rozhraní .NET Framework nelze spustit.  

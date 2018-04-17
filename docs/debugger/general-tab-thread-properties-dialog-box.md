@@ -1,26 +1,24 @@
 ---
-title: "Karta Obecné, dialogové okno vlastností vláken | Microsoft Docs"
-ms.custom: 
+title: Karta Obecné, dialogové okno vlastností vláken | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - threading [Visual Studio], thread properties
 - thread properties
 ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
-caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d8d53c373c58e31f2a2719df8afa6dd0da9cd3c6
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11163da022c14eccd0ed886155bba5228cc01658
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>Karta Obecné, dialogové okno vlastností vlákna
 Další informace o konkrétní vlákno pomocí tohoto dialogového okna. K zobrazení tohoto dialogového okna, přesunout fokus [zobrazení vláken](../debugger/threads-view.md) okno nebo otevřete [zobrazení zpráv](../debugger/messages-view.md) a rozbalte zprávu. Vyberte libovolný uzel přístup z více vláken ve stromové struktuře, a potom vyberte **vlastnosti** z **zobrazení** nabídky.  

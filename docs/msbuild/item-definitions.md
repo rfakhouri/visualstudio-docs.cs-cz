@@ -1,26 +1,22 @@
 ---
-title: "Položka definice | Microsoft Docs"
-ms.custom: 
+title: Položka definice | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 080ed4c1076bd85579eb3d7b01404c677dfafb37
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d75af412e3b5f9d1329ea0304cd33725ec7c9b3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="item-definitions"></a>Definice položek
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 umožňuje statické deklaraci položky v souborech projektu pomocí [ItemGroup](../msbuild/itemgroup-element-msbuild.md) element. Však metadat lze přidat pouze na úrovni položek, i když je stejný pro všechny položky metadat. Počínaje [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, element projektu s názvem [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) překonává toto omezení. *ItemDefinitionGroup* umožňuje definovat sadu definice položek, které přidat výchozí hodnoty metadata pro všechny položky v typu s názvem položky.  

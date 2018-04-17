@@ -1,23 +1,21 @@
 ---
-title: "Použití služby Microsoft Monitoring Agent. | Microsoft Docs"
-ms.custom: 
+title: Použití služby Microsoft Monitoring Agent. | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3e5963568eac26e7f88acf3ba07466fd1261eed1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e1a0bb0567b4ff76bd6dfac1c28fe1eccd7f48c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Použití služby Microsoft Monitoring Agent
 Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a služby SharePoint 2010 nebo 2013 aplikací pro chyby, problémy s výkonem nebo jiné problémy pomocí **agenta Microsoft Monitoring Agent**. Diagnostické události od agenta můžete uložit do souboru protokolu (.iTrace) IntelliTrace. V protokolu pak můžete otevřít ve Visual Studio Enterprise (ale ne edice Professional nebo komunity) pro ladění problémů s všechny diagnostické nástroje sady Visual Studio. Může taky shromažďovat diagnostická data IntelliTrace a metoda data spuštěním agenta v **trasování** režimu. Microsoft Monitoring Agent lze integrovat s [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) a [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent změnit prostředí cílového systému, když je nainstalovaná.  
@@ -35,10 +33,10 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
 3.  [Krok 3: Uložení zaznamenané události](#SaveEvents)  
   
-##  <a name="SetUpMonitoring"></a>Krok 1: Nastavení agenta Microsoft Monitoring Agent  
+##  <a name="SetUpMonitoring"></a> Krok 1: Nastavení agenta Microsoft Monitoring Agent  
  Nastavení agenta samostatné na vašem webovém serveru k provedení místní monitorování beze změny aplikace. Pokud používáte System Center 2012, najdete v části [instalaci agenta Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465156.aspx).  
   
-###  <a name="SetUpStandaloneMMA"></a>Nastavte samostatnou agenta  
+###  <a name="SetUpStandaloneMMA"></a> Nastavte samostatnou agenta  
   
 1.  Ujistěte se, že:  
   
@@ -67,7 +65,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
 ### <a name="q--a"></a>Dotazy a odpovědi  
   
-####  <a name="PowerShell2"></a>Otázka: Co když je nutné prostředí Windows PowerShell 2.0?  
+####  <a name="PowerShell2"></a> Otázka: Co když je nutné prostředí Windows PowerShell 2.0?  
  **Odpověď:** důrazně doporučujeme použít PowerShell 3.0. Jinak budete muset importovat rutin prostředí PowerShell agenta monitorování Microsoft pokaždé, když spustit prostředí PowerShell. Také nebudete mít přístup k dispozici ke stažení obsahu nápovědy.  
   
 1.  Otevřete **prostředí Windows PowerShell** nebo **Windows PowerShell ISE** okno příkazového řádku jako správce.  
@@ -78,7 +76,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
 3.  [Navštivte TechNet](http://technet.microsoft.com/systemcenter/default) získat nejaktuálnějšího obsahu nápovědy.  
   
-####  <a name="FullPermissionsITLog"></a>Otázka: Jak mám nastavit oprávnění pro fond aplikací?  
+####  <a name="FullPermissionsITLog"></a> Otázka: Jak mám nastavit oprávnění pro fond aplikací?  
  **Odpověď:** použití Windows **icacls** příkaz nebo pomocí Průzkumníka Windows (nebo Průzkumníka souborů). Příklad:  
   
 -   Nastavit oprávnění s Windows **icacls** příkaz:  
@@ -109,7 +107,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
     7.  Ověřte, zda fond aplikací má **čtení & Spustit** oprávnění.  
   
-##  <a name="MonitorEvents"></a>Krok 2: Spuštění monitorování aplikace  
+##  <a name="MonitorEvents"></a> Krok 2: Spuštění monitorování aplikace  
  Pomocí prostředí Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) příkaz ke spuštění monitorování vaší aplikace. Pokud používáte System Center 2012, najdete v části [monitorování webových aplikací pomocí agenta Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
   
 1.  Na vašem webovém serveru, otevřete **prostředí Windows PowerShell** nebo **Windows PowerShell ISE** okno příkazového řádku jako správce.  
@@ -148,7 +146,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
 ### <a name="q--a"></a>Dotazy a odpovědi  
   
-####  <a name="Minimizing"></a>Otázka: Jak získat většinu dat bez zpomalení mé aplikace?  
+####  <a name="Minimizing"></a> Otázka: Jak získat většinu dat bez zpomalení mé aplikace?  
  **Odpověď:** agenta Microsoft Monitoring Agent může shromažďovat velké množství dat a ovlivňuje výkon vaší aplikace v závislosti na data, která chcete shromažďovat a jak shromáždit. Tady jsou některé způsoby, jak získat většinu dat bez zpomalení aplikace:  
   
 -   Pro webové aplikace a aplikací služby SharePoint agent zaznamenává data pro každou aplikaci, která sdílí zadaný fond aplikací. Může dojít ke zpomalení jakékoli aplikaci, která sdílí stejný fond aplikací, i když můžete omezit kolekce modulů pro jednu aplikaci. Abyste se vyhnuli zpomalením z jiných aplikací, hostitel každou aplikaci ve vlastním fondu aplikací.  
@@ -229,7 +227,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
  Agent zaznamenává hodnoty pro `id`, `Employee.Id`, `Employee.Name` a `Employee` objekt vrácený `AlterEmployee` metoda. Však není agent zaznamenejte informace o `Address` objektu, než bez ohledu na jeho, jestli byla null. Agent také nezaznamená data o místní proměnné v `AlterEmployee` metoda Pokud jiné metody použít tyto místní proměnné jako parametry v tomto okamžiku se zaznamenávají jako parametry metody.  
   
-##  <a name="SaveEvents"></a>Krok 3: Uložení zaznamenané události  
+##  <a name="SaveEvents"></a> Krok 3: Uložení zaznamenané události  
  Při najdete chybu nebo problém s výkonem, uložte zaznamenaná události do protokolu IntelliTrace. Agent vytvoří protokol pouze v případě, že se zaznamenávají události. Pokud používáte System Center 2012, najdete v části [monitorování webových aplikací pomocí agenta Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465157.aspx).  
   
 ### <a name="save-recorded-events-but-continue-monitoring"></a>Uložení zaznamenané události, ale pokračovat v monitorování  
@@ -241,7 +239,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
      **Checkpoint-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \-nebo –  
+     \- nebo –  
   
      **Checkpoint-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
@@ -271,7 +269,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
      **Příkaz Stop-WebApplicationMonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \-nebo –  
+     \- nebo –  
   
      **Příkaz Stop-WebApplicationMonitoring "IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
@@ -283,7 +281,7 @@ Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a
   
      **PS C:\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   
-     \-nebo –  
+     \- nebo –  
   
      **PS C:\\> Stop-WebApplicationMonitoring "IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   

@@ -1,25 +1,22 @@
 ---
 title: IntelliSense C# | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9da494eaf71a02f7b46ce68b1cf9f781fe32e716
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 1a443258d7f3b71c8f14cb967fc37090f80b5ad5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -146,11 +143,11 @@ V editoru kódu technologie IntelliSense můžete spojit metody (obslužné ruti
 
 Pokud zadáte `+=` operátor po na pole událostí v souboru .cs IntelliSense zobrazí výzvu s možností stiskněte **kartě** klíč. Vloží novou instanci třídy delegáta, který odkazuje na metodu zpracování události.
 
-![Button Auto Hook Up](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![Tlačítko automaticky háku až](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
 Pokud vyberete **kartě**, IntelliSense automaticky dokončení příkazu a odkazu na obslužnou rutinu události se zobrazí jako vybraný text v editoru kódu. K dokončení automatického událostí spojení, IntelliSense vyzváni ke stisknutí tlačítka **kartě** klíč znovu a vytvořit prázdný se zakázaným inzerováním obslužné rutiny událostí.
 
-![Generate Event Handler](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![Generovat obslužné rutiny události](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
 
 > [!NOTE]
 > Pokud nové delegáta, který je vytvořen pomocí IntelliSense odkazuje stávající obslužné rutiny události, IntelliSense komunikuje tyto informace v popisu tlačítka. Poté můžete upravit tento odkaz; text je již vybrána v editoru kódu. Jinak automatické událostí spojení je dokončena v tomto okamžiku.

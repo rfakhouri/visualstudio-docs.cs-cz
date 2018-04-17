@@ -1,26 +1,23 @@
 ---
-title: "Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (Návrhář O-R) | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (Návrhář O-R) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: b6e255492f0859689b41723657338140ffee5931
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 8a0c6702a965ae2733d2461cf30f5fd91f27dba3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Návod: Vytvoření třídy LINQ to SQL s použitím dědičnosti jedné tabulky (Návrhář relací objektů)
 [Technologie LINQ to SQL nástroje v sadě Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) podporuje jedno tabulková dědičnost obvykle je implementované v relačním systémech. Tento názorný postup jejich rozšířením obecné kroky uvedené v [postupy: Konfigurace dědičnosti pomocí Návrhář relací objektů](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) tématu a poskytuje některé reálná data za účelem ukázky použití dědičnosti v [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
@@ -57,8 +54,8 @@ ms.lasthandoff: 12/22/2017
     |-----------------|---------------|-----------------|  
     |**ID**|**int**|**False**|  
     |**Typ**|**int**|**Hodnota TRUE**|  
-    |**FirstName**|**nvarchar(200)**|**False**|  
-    |**Příjmení**|**nvarchar(200)**|**False**|  
+    |**FirstName**|**Nvarchar(200)**|**False**|  
+    |**LastName**|**Nvarchar(200)**|**False**|  
     |**Správce**|**int**|**Hodnota TRUE**|  
   
 3.  Sloupec ID nastavte jako primární klíč.  
@@ -76,7 +73,7 @@ ms.lasthandoff: 12/22/2017
   
     ||||||  
     |-|-|-|-|-|  
-    |**ID**|**Typ**|**FirstName**|**Příjmení**|**Správce**|  
+    |**ID**|**Typ**|**FirstName**|**LastName**|**Správce**|  
     |**1**|**1**|**Dana**|**Wallace**|**HODNOTU NULL**|  
     |**2**|**1**|**Carlosi**|**Grilo**|**HODNOTU NULL**|  
     |**3**|**1**|**Yael**|**Peled**|**HODNOTU NULL**|  

@@ -1,29 +1,25 @@
 ---
 title: BP_LOCATION_TYPE | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - BP_LOCATION_TYPE
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 919cef75834c6606cf4980b3a0e861302f29b73a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: db35e354b2cfbe91b9c6041dc6239d2dfd2531f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Určuje umístění druh Breakpoint – pro žádost o zarážek.  
@@ -122,14 +118,14 @@ public enum enum_BP_LOCATION_TYPE {
   
  Typ umístění zarážek se skládá z typu zarážek a typ umístění. To znamená, že typu zarážek umístění se nikdy právě typu zarážek (například `BPT_CODE`) nebo typ umístění (například `BPLT_FILE_LINE`). Předdefinované konstanty pro všechny typy zarážek umístění aktuálně podporované jsou součástí tento výčet (`BPLT_CODE_FILE_LINE` prostřednictvím `BPLT_DATA_STRING`).  
   
- `BPT_CODE`a `BPT_DATA` jsou členy [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) výčtu.  
+ `BPT_CODE` a `BPT_DATA` jsou členy [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) výčtu.  
   
 ## <a name="requirements"></a>Požadavky  
  Záhlaví: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Výčty](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   

@@ -1,30 +1,26 @@
 ---
-title: "Postupy: Změna písma a barev v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Změna písma a barev v sadě Visual Studio | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b5d03f67edc604a7c2dd7e4cd32620a52812e09
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 65aa95f5e4178805bc1b6d9cddbcd15fc9159c99
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Postupy: Změna písma a barev v sadě Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Postupy: Změna písma a barev v sadě Visual Studio
 
 Můžete přizpůsobit barvu IDE rámec a nástroj windows v sadě Visual Studio několika způsoby.
 
@@ -33,9 +29,9 @@ Můžete přizpůsobit barvu IDE rámec a nástroj windows v sadě Visual Studio
 
 ## <a name="change-the-color-theme-of-the-ide"></a>Změnit barvu motivu rozhraní IDE
 
-1. Na řádku nabídek zvolte **nástroje**, **možnosti**.
+1. Na řádku nabídek zvolte **nástroje** > **možnosti**.
 
-1. V seznamu možnosti vyberte **prostředí**, **Obecné**.
+1. V seznamu možnosti vyberte **prostředí** > **Obecné**.
 
 1. V **barevný motiv** vyberte buď výchozí **Blue** motiv, **tmavý** nebo **Light**.
 
@@ -58,9 +54,9 @@ Můžete změnit velikost písma a text pro všechna okna a dialogová okna v pr
 
 ### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Chcete-li změnit písmo a velikost veškerého textu v prostředí IDE
 
-1. Na řádku nabídek zvolte **nástroje**, **možnosti**.
+1. Na řádku nabídek zvolte **nástroje** > **možnosti**.
 
-1. V seznamu možnosti vyberte **prostředí**, **písma a barev**.
+1. V seznamu možnosti vyberte **prostředí** > **písma a barev**.
 
 1. V **zobrazit nastavení pro** vyberte **prostředí písma**.
 

@@ -2,20 +2,18 @@
 title: V sadě Visual Studio ModelBus textové šablony | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0184e3b543e509d0e523504c0ea07f6fcc36775f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 9a3cca1ed96cc2190ace1c8e1ece0423221f59f0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>Použití prvku Visual Studio ModelBus v textové šabloně
 Pokud píšete textové šablony, které čtou model, který obsahuje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus odkazuje, můžete chtít vyřešte reference pro přístup k cílové modelů. V takovém případě je nutné přizpůsobit textové šablony a odkazované jazyky specifické pro doménu (DSL, linky):  
@@ -78,7 +76,7 @@ Pokud píšete textové šablony, které čtou model, který obsahuje [!INCLUDE[
   
          Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
   
-4.  In AdapterManager.tt:  
+4.  V AdapterManager.tt:  
   
     -   Změňte deklaraci AdapterManagerBase tak, aby dědila z <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.  
   
@@ -215,7 +213,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
   
 7.  V `T4ModelBusAdapter` projekt, přidejte odkaz na: **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**  
   
-8.  Open T4ModelBusAdapter\AdapterManager.tt:  
+8.  Otevřete T4ModelBusAdapter\AdapterManager.tt:  
   
     1.  Změňte základní třídu AdapterManagerBase k <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>. Tato část souboru, teď vypadá přibližně takto.  
   

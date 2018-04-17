@@ -1,12 +1,10 @@
 ---
-title: "Nespravovaná referenční dokumentace rozhraní API ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Nespravovaná referenční dokumentace rozhraní API ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,19 +16,19 @@ helpviewer_keywords:
 - CleanOnlineAppCacheW interface [ClickOnce unmanaged]
 - GetDeploymentDataFromManifest [ClickOnce unmanaged]
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
-caps.latest.revision: "6"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: cplusplus
-ms.openlocfilehash: 392ada2288adcc229834f617c2f6284bb2e7ed0f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- cplusplus
+ms.openlocfilehash: 8463976825d38c5ff5e8cb910df153737da9eeee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>Referenční dokumentace nespravovaného rozhraní API ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Nespravovaná veřejné rozhraní API z dfshim.dll.  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Nespravovaná veřejné rozhraní API z dfshim.dll.  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache zapne  
  Čistí nebo odinstaluje všechny online aplikace z [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mezipaměť aplikací.  
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/22/2017
  V případě úspěchu vrátí S_OK; Vrátí, jinak hodnota HRESULT představující selhání. Vrátí HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER), pokud vyrovnávací paměť je příliš malá.  
   
 ### <a name="remarks"></a>Poznámky  
- Ukazatele nesmí mít hodnotu null. `pcwzActivationUrl`a `pcwzPathToDeploymentManifest` nesmí být prázdný.  
+ Ukazatele nesmí mít hodnotu null. `pcwzActivationUrl` a `pcwzPathToDeploymentManifest` nesmí být prázdný.  
   
  Je zodpovědností volajícího vyčistěte adrese URL pro aktivaci. Přidání řídicí znaky například, pokud jsou potřeba nebo odebrání řetězec dotazu.  
   

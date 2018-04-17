@@ -1,26 +1,24 @@
 ---
-title: "Spouštění vyvíjet rozšíření Visual Studia | Microsoft Docs"
-ms.custom: 
+title: Spouštění vyvíjet rozšíření Visual Studia | Microsoft Docs
+ms.custom: ''
 ms.date: 09/18/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Visual Studio integration
 - Visual Studio, integration
 ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7bc03568465efa022981ade059b0de68019a5978
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 44403b5d60fc13666ffc6ec00558b80ef3a50ea9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>Spouštění vyvíjet rozšíření Visual Studia
 Pokud jste nikdy zapsána rozšíření sady Visual Studio před, pravděpodobně máte nějaké otázky. Jsme některé z nejběžnějších těm, které jsou tady uvedené. Pokud nevidíte informace, které hledáte, použijte tlačítka zpětnou vazbu (**byly užitečné tuto stránku?** v dolní části obrazovky) a požádejte o co chcete použít.  
@@ -60,7 +58,7 @@ Pokud jste nikdy zapsána rozšíření sady Visual Studio před, pravděpodobn�
   
 -   [Izolované prostředí sady Visual Studio](../extensibility/visual-studio-isolated-shell.md)  
   
-##  <a name="BKMK_ProjectTemplate"></a>Jaké šablony projektů jsou poskytovány VSSDK?  
+##  <a name="BKMK_ProjectTemplate"></a> Jaké šablony projektů jsou poskytovány VSSDK?  
  Dva hlavní typy rozšíření jsou VSPackages a MEF rozšíření. VSPackage rozšíření se obecně používají pro rozšíření, které používají nebo rozšířit příkazy, nástroje systému windows a projekty. Rozšíření MEF se používají k rozšíření nebo přizpůsobit editoru Visual Studio.  
   
  Pro rozšíření Visual C# a Visual Basic poskytuje VSSDK prázdná šablona projektu VSIX, který můžete použít společně s nové šablony položek, které vytvořit příkazy nabídky okna nástrojů a rozšíření editorů. Tuto šablonu šablony projektů balíčku, fragmenty kódu a artefaktů můžete použít také pro distribuci ostatním uživatelům.  

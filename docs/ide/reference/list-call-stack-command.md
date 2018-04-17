@@ -1,30 +1,26 @@
 ---
-title: "Seznam zásobník volání – příkaz | Microsoft Docs"
-ms.custom: 
+title: Seznam zásobník volání – příkaz | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listcallstack
 helpviewer_keywords:
 - list call stack command
 - Debug.ListCallStack command
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71095bd7ec4b856c5fbee73e13be27dcd9abdaf4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f3b9a0f9c466325d476c01d4acf9b825193fb175
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-call-stack-command"></a>Listovat zásobník volání – příkaz
 Zobrazí aktuální zásobníku volání.  
@@ -49,28 +45,28 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  / Počet:`number` [nebo] / c:`number`  
  Volitelné. Maximální počet zásobníky volání k zobrazení. Výchozí hodnota neomezená.  
   
- / ShowTypes:`yes`&#124;`no` [nebo] / t:`yes`&#124;`no`  
+ / ShowTypes:`yes` &#124; `no` [nebo] / t:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se má zobrazit typy parametrů. Výchozí hodnota je `yes`.  
   
- / ShowNames:`yes`&#124;`no` [nebo] / n:`yes`&#124;`no`  
+ / ShowNames:`yes` &#124; `no` [nebo] / n:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se má zobrazit názvy parametrů. Výchozí hodnota je `yes`.  
   
- / ShowValues:`yes`&#124;`no` [nebo] / v:`yes`&#124;`no`  
+ / ShowValues:`yes` &#124; `no` [nebo] / v:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se mají zobrazovat hodnoty parametrů. Výchozí hodnota je `yes`.  
   
- / ShowModule:`yes`&#124;`no` [nebo] / m:`yes`&#124;`no`  
+ / ShowModule:`yes` &#124; `no` [nebo] / m:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se má zobrazit na název modulu. Výchozí hodnota je `yes`.  
   
- / ShowLineOffset:`yes`&#124;`no` [nebo] /#:`yes`&#124;`no`  
+ / ShowLineOffset:`yes` &#124; `no` [nebo] /#:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se má zobrazit posun řádku. Výchozí hodnota je `no`.  
   
- / ShowByteOffset:`yes`&#124;`no` [nebo] / b:`yes`&#124;`no`  
+ / ShowByteOffset:`yes` &#124; `no` [nebo] / b:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se má zobrazit posun bajtů. Výchozí hodnota je `no`.  
   
- / ShowLanguage:`yes`&#124;`no` [nebo] l:`yes`&#124;`no`  
+ / ShowLanguage:`yes` &#124; `no` [nebo] l:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se má zobrazit jazyk. Výchozí hodnota je `no`.  
   
- / IncludeCallsAcrossThreads:`yes`&#124;`no` [nebo] / i:`yes`&#124;`no`  
+ / IncludeCallsAcrossThreads:`yes` &#124; `no` [nebo] / i:`yes`&#124;`no`  
  Volitelné. Určuje, jestli zahrnují volání do nebo z jiných vláken. Výchozí hodnota je `no`.  
   
  / ShowExternalCode:`yes`&#124;`no`  

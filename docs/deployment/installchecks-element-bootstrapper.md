@@ -1,13 +1,10 @@
 ---
-title: "&lt;InstallChecks&gt; prvek (zavaděče) | Microsoft Docs"
-ms.custom: 
+title: '&lt;InstallChecks&gt; prvek (zavaděče) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -16,17 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - <InstallChecks> element [bootstrapper]
 ms.assetid: ad329c87-b0ad-4304-84de-ae9496514c42
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 787134277f27e901c6afe6a8e9c41d224431a122
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: dfd01eb4aa67af9e23a7c8c348bcacb263ccb6f6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; – Element (zaváděcího nástroje)
 `InstallChecks` Element podporuje spouštění různých testů na místním počítači a ujistěte se, že byly nainstalovány všechny příslušné požadavky pro aplikaci.  
@@ -88,9 +84,9 @@ ms.lasthandoff: 12/22/2017
 |`ProcessorArchitecture`|Volitelné. Procesor počítače, který je cílem této instalace. Výchozí hodnota je `msil`.|  
   
 ## <a name="externalcheck"></a>ExternalCheck  
- Tento element je volitelný podřízený prvek `InstallChecks`. Pro každou instanci `ExternalCheck`, zaváděcí nástroj spustit s názvem externí program v samostatném procesu a uloží jeho ukončovací kód ve vlastnosti indikován `Property`. `ExternalCheck`je užitečná pro implementaci složitých závislostí, nebo pokud je jediným způsobem, jak kontrolovat existenci součást vytvoří instanci.  
+ Tento element je volitelný podřízený prvek `InstallChecks`. Pro každou instanci `ExternalCheck`, zaváděcí nástroj spustit s názvem externí program v samostatném procesu a uloží jeho ukončovací kód ve vlastnosti indikován `Property`. `ExternalCheck` je užitečná pro implementaci složitých závislostí, nebo pokud je jediným způsobem, jak kontrolovat existenci součást vytvoří instanci.  
   
- `ExternalCheck`neobsahuje žádné elementy a má následující atributy.  
+ `ExternalCheck` neobsahuje žádné elementy a má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
@@ -101,7 +97,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="filecheck"></a>FileCheck  
  Tento element je volitelný podřízený prvek `InstallChecks`. Pro každou instanci `FileCheck`, zaváděcí nástroj určí, zda existuje uvedeného souboru a vrátí číslo verze souboru. Pokud soubor nemá číslo verze, zaváděcí nástroj nastaví vlastnost s názvem v `Property` na hodnotu 0. Pokud soubor neexistuje, `Property` není nastavený na žádnou hodnotu.  
   
- `FileCheck`neobsahuje žádné elementy a má následující atributy.  
+ `FileCheck` neobsahuje žádné elementy a má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
@@ -114,7 +110,7 @@ ms.lasthandoff: 12/22/2017
 ## <a name="msiproductcheck"></a>MsiProductCheck  
  Tento element je volitelný podřízený prvek `InstallChecks`. Pro každou instanci `MsiProductCheck`, zaváděcí nástroj zkontroluje, jestli má zadanou instalaci Instalační služby systému Windows spustit, dokud nebude dokončena. Hodnota vlastnosti je nastavena v závislosti na stavu nainstalovaného produktu. Kladné celé číslo označuje, že je nainstalován produkt, 0 nebo -1 označuje není nainstalována. (Podrobnosti viz funkce sady SDK Instalační služby systému Windows MsiQueryFeatureState Další informace.) . Pokud není nainstalována Instalační služba systému Windows v počítači, `Property` není nastaven.  
   
- `MsiProductCheck`neobsahuje žádné elementy a má následující atributy.  
+ `MsiProductCheck` neobsahuje žádné elementy a má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
@@ -125,24 +121,24 @@ ms.lasthandoff: 12/22/2017
 ## <a name="registrycheck"></a>RegistryCheck  
  Tento element je volitelný podřízený prvek `InstallChecks`. Pro každou instanci `RegistryCheck`, zaváděcí nástroj zkontroluje, zda zadaný klíč registru existuje, nebo jestli má uvedenou hodnotu.  
   
- `RegistryCheck`neobsahuje žádné elementy a má následující atributy.  
+ `RegistryCheck` neobsahuje žádné elementy a má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
 |`Property`|Požadováno. Název vlastnosti k ukládání výsledků. Tuto vlastnost lze odkazovat z testu pod `InstallConditions` element, který je podřízená z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Požadováno. Název klíče registru.|  
-|`Value`|Volitelné. Název hodnoty registru k načtení. Ve výchozím nastavení se vrátí text výchozí hodnota. `Value`musí být řetězec nebo typu DWORD.|  
+|`Value`|Volitelné. Název hodnoty registru k načtení. Ve výchozím nastavení se vrátí text výchozí hodnota. `Value` musí být řetězec nebo typu DWORD.|  
   
 ## <a name="registryfilecheck"></a>RegistryFileCheck  
  Tento element je volitelný podřízený prvek `InstallChecks`. Pro každou instanci `RegistryFileCheck`, zaváděcí nástroj načte verze zadaného souboru, nejprve se pokouší načíst cestu k souboru ze zadaného klíče registru. To je zvlášť užitečné, pokud chcete vyhledat soubor v adresáři, zadaný jako hodnota v registru.  
   
- `RegistryFileCheck`neobsahuje žádné elementy a má následující atributy.  
+ `RegistryFileCheck` neobsahuje žádné elementy a má následující atributy.  
   
 |Atribut|Popis|  
 |---------------|-----------------|  
 |`Property`|Požadováno. Název vlastnosti k ukládání výsledků. Tuto vlastnost lze odkazovat z testu pod `InstallConditions` element, který je podřízená z `Command` elementu. Další informace najdete v tématu [ \<příkazy > Element](../deployment/commands-element-bootstrapper.md).|  
 |`Key`|Požadováno. Název klíče registru. Jeho hodnota je interpretována jako cesta k souboru, pokud `File` nastavený atribut. Pokud tento klíč neexistuje, `Property` není nastaven.|  
-|`Value`|Volitelné. Název hodnoty registru k načtení. Ve výchozím nastavení se vrátí text výchozí hodnota. `Value`musí být řetězec.|  
+|`Value`|Volitelné. Název hodnoty registru k načtení. Ve výchozím nastavení se vrátí text výchozí hodnota. `Value` musí být řetězec.|  
 |`FileName`|Volitelné. Název souboru. -Li zadána, hodnota získaná z klíče registru se předpokládá, že jako cestu k adresáři a tento název je připojen k němu. Pokud není zadaný, předpokládá se, že hodnota vrácená z registru je být úplná cesta k souboru.|  
 |`SearchDepth`|Volitelné. Hloubka pro prohledání dílčí složky s názvem souboru. Hledání je nejprve v úrovni. Výchozí hodnota je 0, který omezuje vyhledávání na složku nejvyšší úrovně určená hodnotou klíče registru.|  
   

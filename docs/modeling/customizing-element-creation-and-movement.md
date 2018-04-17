@@ -2,24 +2,22 @@
 title: Přizpůsobení Element vytváření a přesun | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.elementmergedirective
 helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ac29f7b745c9698f6051bce6a7b54a1476bf8a7c
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 900011925ff92e5994cd3a82ece621386d63c85b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-element-creation-and-movement"></a>Přizpůsobení vytvoření a přesunutí elementu
 Můžete povolit element být přetažen na jiné, z panelu nástrojů nebo v vkládání nebo operace přesunutí. Můžete mít přesunutý elementy propojené s cílových elementů, pomocí vztahy, které zadáte.  
@@ -50,7 +48,7 @@ Role sloučení direktivu Element
 ## <a name="defining-an-element-merge-directive"></a>Definování direktivu Element sloučení  
  Element sloučení direktivy můžete přidat do třídy domény, relace domény, tvarů, konektory a diagramy. Můžete přidat nebo je najít v Průzkumníku DSL pod přijímající třídou domény. Přijímající třídy je třída domény elementu, který už v modelu a do které budou sloučeny element nové nebo zkopírovaný.  
   
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
+ ![DSL&#45;EMD&#95;podrobnosti](../modeling/media/dsl-emd_details.png "DSL EMD_Details")  
   
  **Indexování třída** je třída domény elementů, které mohou být sloučeny do členy přijímající třídy. Instance podtřídami třídy indexování bude být také sloučit tak, že tento EMD, není-li nastavena **platí pro podtřídy** na hodnotu False.  
   

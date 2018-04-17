@@ -1,26 +1,24 @@
 ---
-title: "Příznaky příkazového řádku kompilátoru VSCT | Microsoft Docs"
-ms.custom: 
+title: Příznaky příkazového řádku kompilátoru VSCT | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
-caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d33c0e1bc54ee0c1abab736ba24ce76fbf710fdc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6e2e1045adb451c7f4dd06b888fca356d26b7ff3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Příznaky příkazového řádku kompilátoru VSCT
 Kompilátor Visual Studio příkaz tabulky (VSCT) poskytuje přepínače příkazového řádku k zajištění úspěšné kompilace .vsct souborů.  
@@ -63,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Zadejte jakékoli další definované symboly.|  
 |-I|Označuje, že další zahrnout cesty, které se mají použít při rozpoznávání odkazů na soubor.|  
 |-L|Zadejte <xref:System.Globalization.CultureInfo> název jazykové verze, například "en US".|  
-|-E|Emitování objekty jazyka C# v určeném oboru názvů pro příkaz položky, za nímž následuje [C &#124; H &#124; N]:*filename*kde C = C#, H = C++ záhlaví, N = oboru názvů. Obor názvů je vyžadována pro C#.|  
+|-E|Emitování objekty jazyka C# v určeném oboru názvů pro příkaz položky, za nímž následuje [C&#124;H&#124;N]:*filename*kde C = C#, H = C++ záhlaví, N = oboru názvů. Obor názvů je vyžadována pro C#.|  
 |-v|Podrobný výstup.|  
   
  -L přepínač dá pokyn kompilátoru chcete vybrat skupinu řetězců za účelem vytvoření .cto binární soubor, který odpovídá danou <xref:System.Globalization.CultureInfo> název jazykové verze. Zadaná jazyková verze název by měl odpovídat atributu jazyk jednoho nebo více [řetězce Element](../../extensibility/strings-element.md) v souboru .vsct. Pokud element řetězce nemá žádné atributy jazyk, je zděděn z obsahující [CommandTable Element](../../extensibility/commandtable-element.md).  

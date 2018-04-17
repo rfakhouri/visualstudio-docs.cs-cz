@@ -1,25 +1,23 @@
 ---
-title: "Zápis textové šablony T4 | Microsoft Docs"
-ms.custom: 
+title: Zápis textové šablony T4 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: e640583f42154497ffe5bd25d3c6860fb9d20ca8
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 140e49af62b2ea1a9bb43b7cf3fb95ccc7b257e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-a-t4-text-template"></a>Tvorba textové šablony T4
 Textová šablona obsahuje text, který z ní bude vygenerován. Například bude obsahovat šablonu, která vytvoří webovou stránku "\<html >..." a všechny ostatní standardní části na stránce HTML. Vložit do šablony jsou *řízení bloky*, které jsou fragmenty kódu programu. Řídicí bloky poskytují různé hodnoty a umožňují, aby části textu byly podmíněné a opakované.  
@@ -211,7 +209,7 @@ private void WriteSquareLine(int i)
   
  Další informace najdete v tématu [T4 – Direktiva Import](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a>Včetně kódu a text.  
+###  <a name="Include"></a> Včetně kódu a text.  
  Direktiva `include` vloží text z jiného souboru šablony. Tato direktiva například vloží obsah souboru `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -241,7 +239,7 @@ private void WriteSquareLine(int i)
   
  **Načíst soubor jako navigaci model**. Výkonnější metodou je načíst data jako model, kterým kód textové šablony může procházet. Lze například načíst soubor XML a procházet jím pomocí výrazů XPath. Můžete také použít [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) vytvořit sadu tříd, pomocí kterých můžete číst XML data.  
   
- **Upravte soubor modelu v diagramu nebo formuláře.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]poskytuje nástroje, které umožňují upravit model jako diagram nebo formuláře Windows. Můžete tak tento model snáze prodiskutovat s uživateli generované aplikace. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] také vytvoří sadu typově silných tříd, které odrážejí strukturu modelu. Další informace najdete v tématu [generování kódu z jazyka domény](../modeling/generating-code-from-a-domain-specific-language.md).  
+ **Upravte soubor modelu v diagramu nebo formuláře.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] poskytuje nástroje, které umožňují upravit model jako diagram nebo formuláře Windows. Můžete tak tento model snáze prodiskutovat s uživateli generované aplikace. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] také vytvoří sadu typově silných tříd, které odrážejí strukturu modelu. Další informace najdete v tématu [generování kódu z jazyka domény](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ### <a name="relative-file-paths-in-design-time-templates"></a>Relativní cesty k souborům v návrhových šablonách  
  V [návrhu textové šablony](../modeling/design-time-code-generation-by-using-t4-text-templates.md), pokud chcete odkazovat na soubor v umístění relativně k šabloně text použití `this.Host.ResolvePath()`. Je také nutné nastavit hodnotu `hostspecific="true"` v direktivě `template`:  

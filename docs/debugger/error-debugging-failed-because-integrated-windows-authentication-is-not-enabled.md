@@ -1,12 +1,9 @@
 ---
-title: "Chyba: Ladění se nezdařilo, protože integrované ověřování systému Windows není povoleno. | Microsoft Docs"
-ms.custom: 
+title: 'Chyba: Ladění se nezdařilo, protože integrované ověřování systému Windows není povoleno. | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_ntlm_authn_not_enabled
@@ -18,17 +15,16 @@ dev_langs:
 - aspx
 helpviewer_keywords:
 - debugger, Web application errors
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3d66a2892378f04061907e383965c6c02096bf1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 7181642b0a1f05a3eae252393e8daeefe5947d05
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Chyba: Ladění se nezdařilo, protože integrované ověřování systému Windows není povoleno.
 Ověření uživatele, který požadovaný ladění zabránily chyby ověřování. Tato situace může nastat, když zkusíte krok do webové aplikace nebo webové služby XML. Jeden příčinu této chyby je, že integrované ověřování systému Windows není povoleno. Ho Pokud chcete zapnout, postupujte podle kroků v "K povolení integrované ověřování systému Windows."  

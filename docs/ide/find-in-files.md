@@ -1,12 +1,9 @@
 ---
-title: "Hledání v souborech | Microsoft Docs"
-ms.custom: 
+title: Hledání v souborech | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
@@ -21,13 +18,14 @@ helpviewer_keywords:
 - Find in Files tab, Find and Replace window
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e87022cb3159e48a92e35ee07987bef6ce68f9e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e7e181883fff125349949f081826157f2a3aa36f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-in-files"></a>Najít v souborech
 
@@ -37,7 +35,7 @@ K zobrazení můžete použít některou z následujících metod **hledání v 
 
 ## <a name="to-display-find-in-files"></a>Chcete-li zobrazit najít v souborech
 
-1. Na řádku nabídek zvolte **upravit**, **najít a nahradit**.
+1. Na řádku nabídek zvolte **upravit** > **najít a nahradit**.
 
 1. Zvolte **hledání v souborech**.
 
@@ -71,16 +69,20 @@ Určuje, že podsložky **naleznete v** prohledá složku.
 
 Můžete rozbalit nebo sbalit **najít možnosti** části. Následující možnosti může být vybrána nebo vymazána:
 
-Rozlišovat velikost písmen  
+**Malá a velká písmena**  
+
 Při výběru **Najít výsledky** hledání bude malá a velká písmena
 
-Celá slova  
+**Celá slova**  
+
 Při výběru, **Najít výsledky** windows vrátí jenom celá slova odpovídá.
 
-Použití regulárních výrazů  
+**Používání regulárních výrazů**  
+
 Pokud je toto políčko zaškrtnuto, můžete použít speciální zápisy zadat textovou tak, aby odpovídaly v **najít** nebo **nahraďte** textových polí. Seznam těchto zápisy, naleznete v části [pomocí regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-Podívejte se na tyto typy souborů  
+**Podívejte se na tyto typy souborů**  
+
 Tento seznam uvádí typy souborů, pokud chcete hledat v **Hledat v** adresáře. Pokud je tato pole prázdná, všechny soubory v **Hledat v** prohledávaných adresářů.
 
 Vyberte libovolnou položku v seznamu a zadejte předkonfigurované vyhledávací řetězec, který zjistí tyto konkrétní typy souborů.
@@ -89,16 +91,20 @@ Vyberte libovolnou položku v seznamu a zadejte předkonfigurované vyhledávac�
 
 Můžete rozbalit nebo sbalit **způsobit možnosti** části. Následující možnosti může být vybrána nebo vymazána:
 
-Najít okno výsledků 1  
+**Najít okno výsledků 1**  
+
 Pokud vybraná, výsledky hledání aktuální nahradí obsah **najít 1 výsledky** okno. Toto okno se automaticky otevře a zobrazí výsledky hledání. Otevřete toto okno ručně, vyberte **ostatní okna** z **zobrazení** nabídky a zvolte **najít 1 výsledky**.
 
-Najít okno výsledků 2  
+**Najít okno výsledků 2**
+
 Pokud vybraná, výsledky hledání aktuální nahradí obsah **najít 2 výsledky** okno. Toto okno se automaticky otevře a zobrazí výsledky hledání. Otevřete toto okno ručně, vyberte **ostatní okna** z **zobrazení** nabídky a zvolte **najít 2 výsledky**.
 
-Zobrazit pouze názvy souborů  
+**Zobrazit pouze názvy souborů**
+
 Zobrazí seznam souborů obsahující hledání odpovídá místo zobrazení hledání odpovídá sami.
 
-Append – výsledky  
+**Append – výsledky**
+
 Připojí výsledků vyhledávání do předchozí výsledky hledání.
 
 ## <a name="see-also"></a>Viz také

@@ -1,12 +1,9 @@
 ---
-title: "BscMake – úloha | Microsoft Docs"
-ms.custom: 
+title: BscMake – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vc.task.bscmake
 - VC.Project.VCBscMakeTool.PreserveSBR
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - MSBuild (Visual C++), tasks
 - BscMake task (MSBuild (Visual C++))
 ms.assetid: bb98fc67-cad8-43a7-9598-60df6d734db2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 011ac0344326b7b45d266717c9bdc7d823d93140
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5bdf1cc5370a126eb09a8af1fa05c25134bedf77
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bscmake-task"></a>BscMake – úloha
 > [!IMPORTANT]
@@ -45,7 +41,7 @@ ms.lasthandoff: 02/09/2018
 |---------------|-----------------|  
 |**AdditionalOptions**|Volitelné **řetězec** parametr.<br /><br /> Seznam možností jako zadaného na příkazovém řádku. Například "/*možnost 1* /*option2* /*možnost #*". Tento parametr použijte k určení možnosti, které nejsou reprezentovány jakékoliv **BscMake** parametr úloh.<br /><br /> Další informace najdete v tématu Možnosti v [možnosti BSCMAKE](/cpp/build/reference/bscmake-options).|  
 |**Výstupní soubor**|Volitelné **řetězec** parametr.<br /><br /> Určuje název souboru, který přepíše výchozí název výstupního souboru.<br /><br /> Další informace najdete v tématu **/o** možnost [možnosti BSCMAKE](/cpp/build/reference/bscmake-options).|  
-|**PreserveSBR**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, vynutí nonincremental sestavení. Bez ohledu na to, jestli souboru BSC existuje a zabrání ke zkrácení soubory .sbr dojde k úplné, nonincremental sestavení.<br /><br /> Další informace najdete v tématu  **/n**  možnost [možnosti BSCMAKE](/cpp/build/reference/bscmake-options).|  
+|**PreserveSBR**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, vynutí nonincremental sestavení. Bez ohledu na to, jestli souboru BSC existuje a zabrání ke zkrácení soubory .sbr dojde k úplné, nonincremental sestavení.<br /><br /> Další informace najdete v tématu **/n** možnost [možnosti BSCMAKE](/cpp/build/reference/bscmake-options).|  
 |**Zdroje**|Volitelné **[ITaskItem]** parametr.<br /><br /> Definuje pole MSBuild zdrojového souboru položek, které je možné využívat a vygenerované úlohami.|  
 |**SuppressStartupBanner**|Volitelné **Boolean** parametr.<br /><br /> Pokud `true`, zabraňuje zobrazení číslo zprávy o autorských právech a verzi, po spuštění úlohy.<br /><br /> Další informace najdete v tématu **/nologo** možnost [možnosti BSCMAKE](/cpp/build/reference/bscmake-options).|  
 |**TrackerLogDirectory**|Volitelné **řetězec** parametr.<br /><br /> Určuje adresář pro protokol sledovací modul.|  

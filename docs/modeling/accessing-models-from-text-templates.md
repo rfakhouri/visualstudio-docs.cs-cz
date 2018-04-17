@@ -2,22 +2,20 @@
 title: Přístup k modely z textové šablony | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3162350a9afbe7972c4e593049141f533517bdc3
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: da230b9b5da994a123aff04b1f588d9761c9820e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessing-models-from-text-templates"></a>Přístup k modelům z textových šablon
 Pomocí textových šablon můžete vytvořit sestavu soubory, soubory zdrojového kódu a další textové soubory, které jsou založeny na modely jazyka domény. Základní informace o textové šablony najdete v tématu [generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md). Textové šablony budou fungovat v režimu experimentální při ladění vaší DSL a bude fungovat i v počítači, na kterém jste nasadili DSL.  

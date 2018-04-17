@@ -3,20 +3,19 @@ title: Začínáme s C++ v sadě Visual Studio | Microsoft Docs
 ms.custom: mvc
 ms.date: 12/04/2017
 ms.technology: vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: corob-msft
 ms.author: tglee
-manager: ghogen
+manager: douge
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce0d48a4390ee1c008f889e45760fcef92538cb2
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: ec0ab12b1df5a36c81a394406610c16fe184f0d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Začínáme s C++ v sadě Visual Studio
 
@@ -52,7 +51,7 @@ Visual Studio použije *projekty* k uspořádání kódu pro aplikace, a *řeše
 
 1. Vyberte **OK** tlačítko vytvořte projekt aplikace a řešení.
 
-   HelloApp projektu a řešení, se základní soubory pro konzolovou aplikaci systému Windows, se vytváří a automaticky načíst do **Průzkumníku řešení**. Soubor HelloApp.cpp je otevřen v editoru kódu. Tyto položky se zobrazí v **Průzkumníku řešení**:
+   HelloApp projektu a řešení, se základní soubory pro konzolovou aplikaci systému Windows, se vytváří a automaticky načíst do **Průzkumníku řešení**. *HelloApp.cpp* otevření souboru v editoru kódu. Tyto položky se zobrazí v **Průzkumníku řešení**:
 
    ![Soubory v Průzkumníku řešení](../ide/media/get-started-cpp-solution-explorer.png "soubory v Průzkumníku řešení")
 
@@ -62,7 +61,7 @@ Dál přidejte kód, který zobrazí slovo "Hello" v okně konzoly.
 
 ### <a name="to-edit-code-in-the-editor"></a>Chcete-li upravit kód v editoru
 
-1. V souboru HelloApp.cpp zadejte prázdný řádek před řádek `return 0;` a pak zadejte tento kód:
+1. V *HelloApp.cpp* souboru, zadejte prázdný řádek před řádek `return 0;` a pak zadejte tento kód:
 
    ```cpp
    cout << "Hello\n";
@@ -76,16 +75,16 @@ Dál přidejte kód, který zobrazí slovo "Hello" v okně konzoly.
 
    ![Došlo k chybě v okně Seznam chyb](../ide/media/get-started-cpp-error-list.png "došlo k chybě v okně Seznam chyb")
 
-   Váš kód chybí deklarace pro [std::cout](/cpp/standard-library/iostream), který se nachází v \<iostream > soubor hlaviček.
+   Váš kód chybí deklarace pro [std::cout](/cpp/standard-library/iostream), který se nachází v  *\<iostream >* soubor hlaviček.
 
-1. Chcete-li zahrnout hlavičku iostream, zadejte tento kód po `#include "stdafx.h"`:
+1. Zahrnout *iostream* záhlaví, zadejte tento kód po `#include "stdafx.h"`:
 
    ```cpp
    #include <iostream>
    using namespace std;
    ```
 
-   Pravděpodobně si všimli, že se nezobrazují pole jako jste zadali kód. Toto pole obsahuje návrhy automatické dokončování znaků, které zadáte. To je součástí C++ IntelliSense, která poskytuje kódování výzvy, včetně členů třídy nebo rozhraní a informace o parametrech. Můžete taky fragmenty kódu, které jsou předdefinované bloky kódu. Další informace najdete v tématu [pomocí IntelliSense](../ide/using-intellisense.md) a [fragmenty kódu](../ide/code-snippets.md).
+   Pravděpodobně si všimli, že se nezobrazují pole jako jste zadali kód. Toto pole obsahuje návrhy automatické dokončování znaků, které zadáte. To je součástí C++ IntelliSense, která poskytuje kódování výzvy, včetně členů třídy nebo rozhraní a informace o parametrech. Můžete taky fragmenty kódu, které jsou předdefinované bloky kódu. Další informace najdete v tématu [pomocí IntelliSense](../ide/using-intellisense.md) a [výstřižky kódu](../ide/code-snippets.md).
 
    ![Opravené kódu v editoru](../ide/media/get-started-cpp-cout-fix.png "pevné kódu v editoru")
 
@@ -105,11 +104,11 @@ Můžete ladit HelloApp zobrazíte, zda se v okně konzoly zobrazí slovo "Hello
 
 ### <a name="to-debug-the-app"></a>K ladění aplikace
 
-1. Chcete-li spuštění ladicího programu, zvolte **ladění > Spustit ladění** v řádku nabídek.
+Chcete-li spuštění ladicího programu, zvolte **ladění > Spustit ladění** v řádku nabídek.
 
-   ![Spuštění ladění příkazu v nabídce ladění](../ide/media/get-started-cpp-start-debugging-menu.png "spustit ladění příkazu v nabídce ladění")
+![Spuštění ladění příkazu v nabídce ladění](../ide/media/get-started-cpp-start-debugging-menu.png "spustit ladění příkazu v nabídce ladění")
 
-   Ladicí program spustí a spouští kód. V okně konzoly (samostatném okně, které vypadá příkazového řádku) se zobrazí na několik sekund, ale zavře rychle, když se zastaví ladicí program. Chcete-li zobrazit text, musíte nastavit zarážky pro zastavení spuštění programu.
+Ladicí program spustí a spouští kód. V okně konzoly (samostatném okně, které vypadá příkazového řádku) se zobrazí na několik sekund, ale zavře rychle, když se zastaví ladicí program. Chcete-li zobrazit text, musíte nastavit zarážky pro zastavení spuštění programu.
 
 ### <a name="to-add-a-breakpoint"></a>Chcete-li přidat zarážky
 
@@ -129,7 +128,7 @@ Můžete ladit HelloApp zobrazíte, zda se v okně konzoly zobrazí slovo "Hello
 
 1. Chcete-li zastavit, ladění, stiskněte **Shift + F5**.
 
-Další informace o ladění projektu v konzole najdete v tématu [projekty konzoly](../debugger/debugging-preparation-console-projects.md).
+Další informace o ladění projektu v konzole najdete v tématu [konzole projekty](../debugger/debugging-preparation-console-projects.md).
 
 ## <a name="build-a-release-version-of-the-app"></a>Sestavení prodejní verze aplikace
 
@@ -153,8 +152,8 @@ Blahopřejeme k dokončení tento rychlý start! Pokud chcete prozkoumat další
 
 ## <a name="see-also"></a>Viz také
 
-[Použití prostředí IDE sady Visual Studio pro vývoj aplikací klasické pracovní plochy v jazyce C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
+[Pomocí prostředí Visual Studio IDE pro vývoj aplikací C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
 [Návod: Vytvoření jednoduché aplikace s C# nebo Visual Basic](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[Tipy pro vyšší produktivitu v sadě Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
-[Ukázky sady Visual Studio](../ide/visual-studio-samples.md)  
-[Začínáme s vývojem pomocí jazyka Visual C++](../ide/get-started-developing-with-visual-studio.md)
+[Tipy pro vyšší produktivitu pro sadu Visual Studio](../ide/productivity-tips-for-visual-studio.md)  
+[Visual Studio – ukázky](../ide/visual-studio-samples.md)  
+[Začít s vývojem pomocí sady Visual Studio](../ide/get-started-developing-with-visual-studio.md)

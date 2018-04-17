@@ -1,23 +1,21 @@
 ---
-title: "Krok 5: Přidejte odkazy na jmenovky | Microsoft Docs"
-ms.custom: 
+title: 'Krok 5: Přidejte odkazy na jmenovky | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
-caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: f353693fe407600b7ed009e611600a8b42c7713d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 31590d8443b1482056ca85be1aea04fe181ec15f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-5-add-label-references"></a>Krok 5: Přidejte odkazy na jmenovky
 Program potřebuje udržovat přehled o tom, který ovládací prvek popisku hráč zvolil. Nyní program zobrazí všechny popisky, které hráč zvolí. Ale to změníme. Po výběru prvního popisku by program měl zobrazit ikonu popisku. Po výběru druhého popisku by program měl krátce zobrazit obě ikony a pak je opět skrýt. Váš program bude nyní uchovávání informací o které popisek – ovládací prvek je zvolen nejprve a který je zvolen sekundu pomocí *referenční proměnné*.  

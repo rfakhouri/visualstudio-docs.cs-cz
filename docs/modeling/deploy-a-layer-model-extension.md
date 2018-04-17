@@ -1,24 +1,22 @@
 ---
-title: "Nasazení rozšíření pro modelování vrstev | Microsoft Docs"
-ms.custom: 
+title: Nasazení rozšíření pro modelování vrstev | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, deploying extensions
 - layer models, deploying extensions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 311add860016c914aab232ffad6e3a4efadb15c9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 95cfb5fa4764c53c14e5884cf41165f61a063337
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-a-layer-model-extension"></a>Nasazení rozšíření pro modelování vrstev
 Ostatní uživatelé sady Visual Studio můžete nainstalovat vrstvy modelování rozšíření, které vytvoříte pomocí sady Visual Studio.  
@@ -53,7 +51,7 @@ Ostatní uživatelé sady Visual Studio můžete nainstalovat vrstvy modelován�
   
     -   Instalace pro všechny uživatele a služby:  
   
-         %ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft  
+         \Common7\IDE\Extensions\Microsoft %ProgramFiles%\Microsoft visual Studio [verze]  
   
     -   Chcete-li nainstalovat pouze pro síťovou službu, který spouští [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)]:  
   

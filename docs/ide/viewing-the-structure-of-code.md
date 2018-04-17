@@ -1,12 +1,10 @@
 ---
-title: "Zobrazení struktury kódu v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Zobrazení struktury kódu v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -27,13 +25,14 @@ helpviewer_keywords:
 - object browser
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 9a92948bf03cbe712d28962e82ac1840a5aafae7
-ms.sourcegitcommit: f89ed5fc2e5078213e30a6ade4604e34df48181f
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 52c924b56a1f33c0e1cbfef567442dd521db79e8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-the-structure-of-code"></a>Zobrazení struktury kódu
 
@@ -63,7 +62,7 @@ Zobrazení tříd nástrojů obsahuje následující příkazy.
 |||
 |-|-|
 |**Nová složka**|Vytvoří virtuální složku nebo podsložku, ve kterém můžete uspořádat často používané elementy. Jsou uloženy v aktivním řešení (.suo) souboru. Po přejmenování nebo odstranění elementu v kódu, se může objevit ve složce virtuální jako uzel k chybě. Pokud chcete tento problém opravit, odstraňte uzlu chyby. Pokud jste přejmenovali element, můžete jej přesunout z hierarchie projektu do složky znovu.|
-|**Zpět**|Přejde na dříve vybranou položku.|
+|**zpět**|Přejde na dříve vybranou položku.|
 |**Předat dál**|Přejde na další vybranou položku.|
 |**Zobrazení diagramu tříd** (spravovaných jenom projekty kódu)|K dispozici po vyberte obor názvů nebo zadejte v **zobrazení tříd**. Pokud je vybraný obor názvů, třídy diagram zobrazuje všechny typy v ní. Když vyberete typ diagramu tříd zobrazuje pouze typu.|
 
@@ -128,7 +127,7 @@ V místní nabídce **hierarchie volání** okno obsahuje následující příka
 |**Kopírování**|Zkopíruje vybraný uzel (ale ne jeho dílčí uzly).|
 |**Aktualizace**|Aktualizuje informace.|
 
-## <a name="BKMK_ObjectBrowser"></a>Prohlížeč objektů
+## <a name="BKMK_ObjectBrowser"></a> Prohlížeč objektů
 
 **Prohlížeč objektů** okno zobrazí popisy kódu v projektech.
 
@@ -208,7 +207,7 @@ V místní nabídce **definice kódu** okno může obsahovat následující př�
 |**Ladění testů**||
 |**Zarážek**|Vloží zarážku (nebo tracepoint).|
 |**Spustit ke kurzoru**|Spustí program v režimu ladění na pozici kurzoru.|
-|**Fragment kódu**||
+|**fragment kódu**||
 |**Vyjmout**, **kopie**, **vložení**||
 |**Poznámka**||
 |**Sbalení**|Standardní popisující příkazy.|

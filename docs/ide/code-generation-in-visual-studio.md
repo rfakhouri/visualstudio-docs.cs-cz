@@ -1,21 +1,19 @@
 ---
-title: "Kód generování funkce v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Kód generování funkce v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/11/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33a2d18615885fea10f3fd64077b2f9438097a7d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 83b222d0c6318b1664b28e3c0259c2ff6de9b00e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Funkce generování kódu v sadě Visual Studio
 
@@ -30,9 +28,9 @@ Existuje mnoho způsobů, které Visual Studio můžete vygenerovat, opravte a R
 > [!NOTE]
 > Každý služba jazyka v sadě Visual Studio poskytuje vlastní kód, možnosti generování tak, aby některé funkce jsou dostupné jenom v C# a některé jsou k dispozici v jak C# a Visual Basic.
 
-## <a name="see-also"></a>Viz také
+### <a name="see-also"></a>Viz také
 
 [Fragmenty kódu](../ide/code-snippets.md)  
 [Rychlé akce](../ide/quick-actions.md)  
 [Refactoring](../ide/refactoring-in-visual-studio.md)  
-[Vytvoření kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md)
+[Generování kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md)

@@ -1,27 +1,25 @@
 ---
-title: "Přidávání a odebírání stránky vlastností | Microsoft Docs"
-ms.custom: 
+title: Přidávání a odebírání stránky vlastností | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
 - property pages, removing
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
-caps.latest.revision: "29"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 98d6edf4da8b7f0275a7b361f5492f4f49a1f747
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8a8130056437bf35a1617544ae7d1ecfb9068946
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-and-removing-property-pages"></a>Přidávání a odebírání stránky vlastností
 Návrhář projektu poskytuje centralizované umístění pro správu vlastnosti projektu, nastavení a prostředky v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Zobrazí se jako v jednom okně systému [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) a obsahuje počet podokna na pravé straně, které jsou přístupné prostřednictvím karet na levé straně. Podokna (často označované jako stránky vlastností) v Návrháři projektu se liší podle typu projektu a jazyk. Návrhář projektu lze přistupovat pomocí **vlastnosti** příkaz na **projektu** nabídky.  

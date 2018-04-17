@@ -1,13 +1,10 @@
 ---
-title: "Návod: Vytvoření fragmentu kódu | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření fragmentu kódu | Microsoft Docs'
+ms.custom: ''
 ms.date: 10/27/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
 - code snippets, shortcut
@@ -16,19 +13,18 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 59aff5d84f81b1e9dea9cd3e4c08527b14dc7f34
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Návod: Vytvoření fragmentu kódu
 Fragment kódu můžete vytvořit pomocí pouhých několika krocích. Všechny, které musíte udělat je vytvořte soubor XML, vyplňte příslušná elementy a přidejte do ní váš kód. Můžete také přidat odkazy a nahrazující parametry do vašeho kódu. Můžete přidat fragment k instalaci sady Visual Studio pomocí tlačítka Import na Správce fragmentů kódu (**nástroje**, **Správce fragmentů kódu...** ).  
@@ -87,7 +83,7 @@ Fragment kódu můžete vytvořit pomocí pouhých několika krocích. Všechny,
   
 6.  Otestujte fragment otevřením projektu jazyka Visual Basic a otevření souboru kódu. V souboru zvolte **fragmenty**, **Vložit fragment** z kontextové nabídky, pak **Moje fragmenty kódu**. Měli byste vidět fragment s názvem **Moje fragment kódu jazyka Visual Basic**. Dvojím kliknutím.  
   
-    `Console.WriteLine("Hello, World!")`je vložen do souboru kódu.  
+    `Console.WriteLine("Hello, World!")` je vložen do souboru kódu.  
   
 ### <a name="adding-description-and-shortcut-fields"></a>Přidání zástupce pole a popis  
   

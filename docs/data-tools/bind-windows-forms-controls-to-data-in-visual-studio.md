@@ -1,11 +1,8 @@
 ---
-title: "Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/03/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - data [Windows Forms], data sources
 - Windows Forms, data binding
@@ -16,17 +13,17 @@ helpviewer_keywords:
 - displaying data, Windows Forms
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 7ade7aa6e103a8637d26b10029faabc434ce3a83
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f60b3318ef6e38ba444a157feee07f173443540c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio
 Data můžete zobrazit uživatelům vaší aplikace pomocí vytvoření vazby dat do formulářů Windows. Chcete-li vytvořit tyto ovládací prvky vázané na data, můžete přetáhnout položky z **zdroje dat** okna do Windows Forms designerem v sadě Visual Studio.

@@ -1,12 +1,10 @@
 ---
-title: "Hledání nevrácené paměti pomocí knihovny CRT | Microsoft Docs"
-ms.custom: 
+title: Hledání nevrácené paměti pomocí knihovny CRT | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -29,16 +27,16 @@ helpviewer_keywords:
 - _CRTDBG_MAP_ALLOC
 - _CrtSetDbgFlag
 ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
-caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0e67f3c3b8cc10e6aa3e7c9b996cd1c608d893eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c02fea4639d130840f3f5dbbd9e77693c676d304
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Hledání nevrácené paměti pomocí knihovny CRT
 Nevracení paměti definován jako selhání se správně zrušit přidělení paměti, které již bylo přiděleno, patří mezi nejvíce jemně a pevné zjištění chyby v aplikací C/C++. Nevracení paměti nemusí být si všimli v první, ale v čase, progresivní paměť způsobit příznaky rozsahu snížený výkon k selhání, když je aplikace spuštěná nedostatek paměti. Horší unikající aplikace, která používá všechny dostupnou paměť může způsobit jiná aplikace došlo k chybě, vytváření nejasnostem, která je zodpovědná aplikace. Nevracení paměti neškodné může být i zdánlivě symptomatických z jiných problémů, které by měly být opraveny.  
@@ -190,7 +188,7 @@ Znamená to, že bylo na řádku 20 debug_new.cpp uniklé přidělení.
   
 3.  V **sledovat** zadejte `_crtBreakAlloc` v v **název** sloupce.  
   
-     Pokud používáte vícevláknové knihovny DLL verze knihovny CRT (/MD možnost), zahrnují kontext operátor:`{,,ucrtbased.dll}_crtBreakAlloc`  
+     Pokud používáte vícevláknové knihovny DLL verze knihovny CRT (/MD možnost), zahrnují kontext operátor: `{,,ucrtbased.dll}_crtBreakAlloc`  
   
 4.  Stiskněte klávesu **vrátit**.  
   
@@ -223,7 +221,7 @@ _CrtMemCheckpoint( &s1 );
   
 ```  
   
- `_CrtMemCheckpoint`vyplní struktura s snímek aktuální stav paměti.  
+ `_CrtMemCheckpoint` vyplní struktura s snímek aktuální stav paměti.  
   
  K vypsání obsah **_crtmemstate –** struktury, předat k strukturu `_ CrtMemDumpStatistics` funkce:  
   
@@ -232,7 +230,7 @@ _CrtMemDumpStatistics( &s1 );
   
 ```  
   
- `_ CrtMemDumpStatistics`výstupy výpis stavu paměti, které vypadá takto:  
+ `_ CrtMemDumpStatistics` výstupy výpis stavu paměti, které vypadá takto:  
   
 ```  
 0 bytes in 0 Free Blocks.  
@@ -256,7 +254,7 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
    _CrtMemDumpStatistics( &s3 );  
 ```  
   
- `_CrtMemDifference`porovná stavy paměti `s1` a `s2` a vrátí výsledek v (`s3`) tedy rozdíl `s1` a `s2`.  
+ `_CrtMemDifference` porovná stavy paměti `s1` a `s2` a vrátí výsledek v (`s3`) tedy rozdíl `s1` a `s2`.  
   
  Jeden postup pro vyhledání nevrácené paměti začne tím, že umístíte `_CrtMemCheckpoint` volání na začátku a konci aplikace, pak pomocí `_CrtMemDifference` porovnání výsledků. Pokud `_CrtMemDifference` ukazuje nevrácenou pamětí, můžete přidat více `_CrtMemCheckpoint` volání k rozdělení váš program pomocí binární vyhledávání, dokud zdroj nevracení paměti mají izolované.  
   

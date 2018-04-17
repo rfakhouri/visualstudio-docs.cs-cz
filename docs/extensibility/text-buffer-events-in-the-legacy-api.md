@@ -1,27 +1,23 @@
 ---
-title: "Textové vyrovnávací paměti události v rozhraní API starší | Microsoft Docs"
-ms.custom: 
+title: Textové vyrovnávací paměti události v rozhraní API starší | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text buffer events
 ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e7847cdca2065cadd6adaf0d4b3e6ea10444725
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ab2812d30c0f02063e9ed3672e9b01855c77da22
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>Textové vyrovnávací paměti události v rozhraní API starší verze
 Objekt vyrovnávací paměti textu vysílá několik různých událostí, které vám umožní reagovat na různé situace.  
@@ -52,8 +48,8 @@ Objekt vyrovnávací paměti textu vysílá několik různých událostí, kter�
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamEvents>|Oznamuje klientům změny základní textová vyrovnávací paměť v jednorozměrné souřadnice.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>|Oznamuje klientům změny základní textová vyrovnávací paměť v dvourozměrná souřadnice.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserDataEvents>|Oznamuje klientům změny dat uživatele.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Upozorní klientům poslední gesto potvrzení aktivovat události a poskytuje řadu změněného textu. `IVsPreliminaryTextChangeCommitEvents` Rozhraní není aktivováno v reakci na vrácení nebo opakování příkazy. Události platit pouze pro vyrovnávací paměti, které mají manager vrácení zpět. `IVsPreliminaryTextChangeCommitEvents`je vyvolána před další události, jako je například velmi výpis, pokud chcete mít jistotu, že ostatní události, nijak nemění text, než se změny potvrzeny. Vaše VSPackage třeba sledovat buď `IVsPreliminaryTextChangeCommitEvents` rozhraní nebo `IVsFinalTextChangeCommitEvents` rozhraní, ale ne obojí.|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Upozorní klientům poslední gesto potvrzení aktivovat události a poskytuje řadu změněného textu. `IVsFinalTextChangeCommitEvents` Rozhraní není aktivováno v reakci na vrácení nebo opakování příkazy. Události platit pouze pro vyrovnávací paměti, které mají manager vrácení zpět. `IVsFinalTextChangeCommitEvents`je určená pro použití pouze jazyk služby nebo jiné objekty, které mají úplnou kontrolu nad úpravy. Vaše VSPackage třeba sledovat buď `IVsPreliminaryTextChangeCommitEvents` rozhraní nebo `IVsFinalTextChangeCommitEvents` rozhraní, ale ne obojí.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPreliminaryTextChangeCommitEvents>|Upozorní klientům poslední gesto potvrzení aktivovat události a poskytuje řadu změněného textu. `IVsPreliminaryTextChangeCommitEvents` Rozhraní není aktivováno v reakci na vrácení nebo opakování příkazy. Události platit pouze pro vyrovnávací paměti, které mají manager vrácení zpět. `IVsPreliminaryTextChangeCommitEvents` je vyvolána před další události, jako je například velmi výpis, pokud chcete mít jistotu, že ostatní události, nijak nemění text, než se změny potvrzeny. Vaše VSPackage třeba sledovat buď `IVsPreliminaryTextChangeCommitEvents` rozhraní nebo `IVsFinalTextChangeCommitEvents` rozhraní, ale ne obojí.|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFinalTextChangeCommitEvents>|Upozorní klientům poslední gesto potvrzení aktivovat události a poskytuje řadu změněného textu. `IVsFinalTextChangeCommitEvents` Rozhraní není aktivováno v reakci na vrácení nebo opakování příkazy. Události platit pouze pro vyrovnávací paměti, které mají manager vrácení zpět. `IVsFinalTextChangeCommitEvents` je určená pro použití pouze jazyk služby nebo jiné objekty, které mají úplnou kontrolu nad úpravy. Vaše VSPackage třeba sledovat buď `IVsPreliminaryTextChangeCommitEvents` rozhraní nebo `IVsFinalTextChangeCommitEvents` rozhraní, ale ne obojí.|  
   
 ## <a name="see-also"></a>Viz také  
  [Přístup k textová vyrovnávací paměť s použitím rozhraní API starší verze](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   

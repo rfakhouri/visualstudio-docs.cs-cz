@@ -1,13 +1,10 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9fb212d7908d32bc9d9d14d7e8f4786089bc5f89
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 235d98ba6a5ca665857b8a18db5ca823ecc0c7c1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 Když uživatel provede operaci zdroj ovládacího prvku z uvnitř integrované vývojové prostředí (IDE), může modul plug-in správy zdroje mají být umístěny chyba nebo stavové zprávy týkající se operace. Modul plug-in seznam můžete zobrazit svůj vlastní okna zpráv pro tento účel. Ale pro další bezproblémovou integraci, modul plug-in můžete předat řetězce integrovaného vývojového prostředí, které zobrazí je v jeho nativní způsob zobrazení informací o stavu. Mechanismus pro toto je `LPTEXTOUTPROC` – ukazatel na funkci. Prostředí IDE implementuje tuto funkci (podrobněji popsané v následující) pro zobrazení stavů a chyb.  
@@ -75,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>Struktury  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a>SccMsgDataIsCancelled  
+###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp  
 typedef struct {  
@@ -85,7 +81,7 @@ typedef struct {
   
  Tato struktura je odeslána s `SCC_MSG_BACKGROUND_IS_CANCELLED` zprávy. Použije se pro komunikaci ID operace na pozadí, které bylo zrušeno.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a>SccMsgDataOnBeforeGetFile  
+###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp  
 typedef struct {  
@@ -96,7 +92,7 @@ typedef struct {
   
  Tato struktura je odeslána s `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` zprávy. Použije se název souboru o mají být načteny a ID operace na pozadí, který provádí načítání komunikace.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a>SccMsgDataOnAfterGetFile  
+###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp  
 typedef struct {  
@@ -108,7 +104,7 @@ typedef struct {
   
  Tato struktura je odeslána s `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` zprávy. Použije se pro komunikaci výsledek načítání zadaný soubor, jakož i ID operace na pozadí, která nebyla načítání. Návratové hodnoty pro najdete [SccGet](../extensibility/sccget-function.md) pro co lze zadat v důsledku.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a>SccMsgDataOnMessage  
+###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  

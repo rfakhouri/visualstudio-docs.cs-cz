@@ -1,23 +1,21 @@
 ---
-title: "Návod: Vytvoření sady SDK, pomocí jazyka C# nebo Visual Basic | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření sady SDK, pomocí jazyka C# nebo Visual Basic | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a8b0b8452fb20b9b6da4e8ad58c221010f23c9ed
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2106c26e8320e64a641197528c6b91223ef20342
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>Návod: Vytvoření sady SDK, pomocí jazyka C# nebo Visual Basic
 V tomto návodu dozvíte, jak vytvořit jednoduché SDK knihovny Math pomocí Visual C# a pak balíček sady SDK jako Visual Studio rozšíření (VSIX). Budete proveďte následující postupy:  
@@ -31,7 +29,7 @@ V tomto návodu dozvíte, jak vytvořit jednoduché SDK knihovny Math pomocí Vi
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li provést tento postup, je nutné nainstalovat sadu Visual Studio SDK. Další informace najdete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createClassLibrary"></a>Chcete-li vytvořit komponentu SimpleMath Windows Runtime  
+##  <a name="createClassLibrary"></a> Chcete-li vytvořit komponentu SimpleMath Windows Runtime  
   
 1.  Na řádku nabídek zvolte **soubor**, **nový**, **nový projekt**.  
   
@@ -59,7 +57,7 @@ V tomto návodu dozvíte, jak vytvořit jednoduché SDK knihovny Math pomocí Vi
   
 9. V **Průzkumníku řešení**, otevřete místní nabídku pro **SimpleMath** uzel projektu a potom zvolte **sestavení**.  
   
-##  <a name="createVSIX"></a>Vytvoření projektu rozšíření SimpleMathVSIX  
+##  <a name="createVSIX"></a> Vytvoření projektu rozšíření SimpleMathVSIX  
   
 1.  V místní nabídce pro **řešení 'SimpleMath'** uzlu, zvolte **přidat**, **nový projekt**.  
   
@@ -154,7 +152,7 @@ V tomto návodu dozvíte, jak vytvořit jednoduché SDK knihovny Math pomocí Vi
   
 30. Vyberte **nainstalovat** tlačítko, počkejte na dokončení instalace a potom restartujte Visual Studio.  
   
-##  <a name="createSample"></a>K vytvoření ukázkové aplikace, která používá knihovnu tříd  
+##  <a name="createSample"></a> K vytvoření ukázkové aplikace, která používá knihovnu tříd  
   
 1.  Na řádku nabídek zvolte **soubor**, **nový**, **nový projekt**.  
   
@@ -168,7 +166,7 @@ V tomto návodu dozvíte, jak vytvořit jednoduché SDK knihovny Math pomocí Vi
   
 6.  V podokně podrobností vyberte **jednoduché matematické SDK** rozšíření.  
   
-     Zobrazí se další informace o vaší SDK. Můžete **více informací** odkazu k otevření http://www.msdn.microsoft.com, jako jste zadali v souboru SDKManifest.xml dříve v tomto návodu.  
+     Zobrazí se další informace o vaší SDK. Můžete **více informací** odkazu k otevření http://www.msdn.microsoft.com, jak jste zadali v souboru SDKManifest.xml dříve v tomto návodu.  
   
 7.  V **správce odkazů** dialogové okno, vyberte **jednoduché matematické SDK** zaškrtněte políčko a potom vyberte **OK** tlačítko.  
   
@@ -237,7 +235,7 @@ V tomto návodu dozvíte, jak vytvořit jednoduché SDK knihovny Math pomocí Vi
   
 12. Zvolte klávesy F5 a spusťte aplikaci.  
   
-13. V aplikaci zadejte jakékoli dvě čísla, zvolte operace a pak  **=**  tlačítko.  
+13. V aplikaci zadejte jakékoli dvě čísla, zvolte operace a pak **=** tlačítko.  
   
      Se zobrazí správný výsledek.  
   

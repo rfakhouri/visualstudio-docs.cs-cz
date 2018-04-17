@@ -1,10 +1,8 @@
 ---
-title: "Přizpůsobení nástrojů a sady nástrojů | Microsoft Docs"
-ms.custom: 
+title: Přizpůsobení nástrojů a sady nástrojů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -13,15 +11,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 160c1c27ab9d01dc76d6a5c76feb07179f7966b9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0644aa33d0e091fc3a2ff856109fe9661e2dc805
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Přizpůsobení nástrojů a panelu nástrojů
 Je nutné zadat položek sady nástrojů pro prvky, které chcete, aby mohli uživatelé přidat do jejich modely. Existují dva typy nástrojů: element nástroje a nástroje pro připojení. V Návrháři generovaného uživatele můžete vybrat nástroj na element přetáhněte obrazců do diagramu a můžete vybrat nástroj pro připojení k vykreslení odkazy mezi obrazce. Obecně platí nástroje pro element uživatelům přidání instancí třídy domény do jejich modely a nástroje připojení k zajištění jejich přidání instancí vztahů mezi doménami.  
@@ -36,7 +34,7 @@ Je nutné zadat položek sady nástrojů pro prvky, které chcete, aby mohli už
   
 -   [Přizpůsobení nástroje připojení k](#connections)  
   
-##  <a name="ToolboxDef"></a>Jak je definována v panelu nástrojů  
+##  <a name="ToolboxDef"></a> Jak je definována v panelu nástrojů  
  V Průzkumníku DSL rozbalte uzel Editor a jeho podřízené uzly. Obvykle se zobrazí hierarchie, která vypadá takto:  
   
 ```  
@@ -93,7 +91,7 @@ Editor
   
      Pokud nástroj nezobrazí, zastavte experimentální [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. V systému Windows **spustit** nabídce Spustit **resetovat instanci Microsoft Visual Studio 2010 experimentální**. Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **sestavení** nabídky, klikněte na tlačítko **znovu sestavit řešení**. Pak vyzkoušejte DSL znovu.  
   
-##  <a name="customizing"></a>Přizpůsobení nástroje – Element  
+##  <a name="customizing"></a> Přizpůsobení nástroje – Element  
  Ve výchozím nastavení nástroj vytvoří jednu instanci zadané třídy, ale může to lišit dvěma způsoby:  
   
 -   Definujte Element sloučení direktivy jiné třídy, tím jim umožníte přijímat nové instance této třídy a tím jim umožníte vytvořit další odkazy, při vytváření nového elementu. Například může povolit uživatelům vyřadit komentář na jiný element a tak vytvářet použití odkazu mezi nimi.  
@@ -104,7 +102,7 @@ Editor
   
 -   Napište kód pro přizpůsobit nástroj tak, aby ji můžete vytvořit skupiny elementů. Tento nástroj se inicializuje pomocí metody v ToolboxHelper.cs, který můžete přepsat. Další informace najdete v tématu [vytváření skupin z elementy z nástroje](#groups).  
   
-##  <a name="groups"></a>Vytváření skupin elementů z nástroje  
+##  <a name="groups"></a> Vytváření skupin elementů z nástroje  
  Každý element nástroj obsahuje prototyp prvky, které by měl být vytvořen. Ve výchozím nastavení každý element nástroj vytvoří jeden prvek, ale je také možné vytvořit skupinu souvisejících objektů, které se nástroj. K tomuto účelu inicializaci nástroje s <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> obsahující související položky.  
   
  Následující příklad je převzat ze DSL, ve kterém je typ tranzistorové. Každý tranzistorové má tři pojmenované terminály. Nástroj element pro tranzistory ukládá prototyp obsahující čtyři prvků modelu a tři vztah odkazy. Když uživatel nastavuje tažením nástroj do diagramu, prototyp je vytvořena instance a propojí s kořenem modelu.  
@@ -154,7 +152,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a>Přizpůsobení nástroje připojení k  
+##  <a name="connections"></a> Přizpůsobení nástroje připojení k  
  Obvykle můžete vytvořit nástroj na element, když vytvoříte novou třídu konektor. Alternativně můžete použít přetížení nástroj tím, že se typy dva elementy end určit typ vztahu. Můžete třeba definovat připojení nástroj, který může vytvořit osoba osoba vztahy a vztahy městě osoby.  
   
  Vyvolání nástroje připojení k připojení počítačů. Použijte připojení počítačů k určení, jak mohou uživatelé propojení prvků v Návrháři vygenerovaný. Připojení počítačů zadejte prvky, které lze propojit a druh odkazu, který se vytvoří mezi nimi.  

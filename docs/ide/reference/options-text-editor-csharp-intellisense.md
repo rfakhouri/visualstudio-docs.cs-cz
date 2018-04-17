@@ -1,10 +1,8 @@
 ---
-title: "Možnosti, textový Editor, C#, IntelliSense | Microsoft Docs"
+title: Možnosti, textový Editor, C#, IntelliSense | Microsoft Docs
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Intellisense
 helpviewer_keywords:
@@ -16,14 +14,14 @@ helpviewer_keywords:
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78763e0257334065b1fdbcbcab5f106face20dee
-ms.sourcegitcommit: 238cd48787391aa0ed1eb684f3f04e80f7958705
+ms.openlocfilehash: 37640cd6bd2928a2e2261afb3ed9e859830d0225
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-text-editor-c-intellisense"></a>Možnosti, textový editor, C#, IntelliSense
 
@@ -76,11 +74,11 @@ Použití **IntelliSense** stránka možnosti změnit nastavení, které ovlivň
 
    `else`
 
-   `|`(kurzor umístění)
+   `|` (kurzor umístění)
 
    Ale pokud zadáte pouze `el` a potom stiskněte klávesu **Enter**, v editoru se zobrazí následující:
 
-   `else|`(kurzor umístění)
+   `else|` (kurzor umístění)
 
 - Vždy přidejte nový řádek na zadejte
 

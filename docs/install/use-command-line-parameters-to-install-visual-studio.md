@@ -3,10 +3,8 @@ title: Používání parametrů příkazového řádku pro instalaci sady Visual
 ms.custom: ''
 ms.date: 01/17/2018
 ms.reviewer: tims
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -18,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 348634224d76b3a7f51246f2be49720173ab8cd3
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: e3b347d257e5eeb5b5672223fc06941f5513583b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku
 Když instalujete Visual Studio 2017 z příkazového řádku, můžete řídit nebo upravit instalaci různých parametry příkazového řádku. Z příkazového řádku můžete provádět následující akce:
@@ -111,9 +109,9 @@ Seznam úloh a ID součástí, které jsou seřazené podle produktu Visual Stud
 | cs-CZ | Čeština |
 | de-DE | Němčina |
 | en US | Angličtina |
-| es-ES | Španělština |
+| ES-ES | Španělština |
 | fr-FR | Francouzština |
-| it-IT | Italština |
+| IT-IT | Italština |
 | ja-JP | Japonština |
 | ko-KR | Korejština |
 | pl-PL | Polština |

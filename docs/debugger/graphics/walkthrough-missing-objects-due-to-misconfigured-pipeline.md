@@ -1,23 +1,21 @@
 ---
-title: "Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8b6809f3238c4d239d6d07f0df35d9b4a035d945
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 172effd2abffd6a7467a2fcb3490e39331910d4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Návod: Chybějící objekty z důvodu nesprávné konfigurace zřetězení
 Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnostiky grafiky nástrojům pro zkoumání objekt, který je chybějící z důvodu shaderu nenastavené pixelů.  
@@ -88,7 +86,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
 1.  Najít `PSSetShader` volání, která odpovídá chybějícím objektu. V **seznam událostí grafiky** okno, zadejte "kreslení; PSSetShader"v **vyhledávání** pole v pravém horním rohu **seznam událostí grafiky** okno. Tento filtrování seznamu tak, aby obsahoval pouze "PSSetShader" události a události, které mají "Kreslení" v jejich názvy. Zvolte první `PSSetShader` volání, které se zobrazí před voláním kreslení chybějící objektu.  
   
     > [!NOTE]
-    >  `PSSetShader`se nebude zobrazovat na **seznam událostí grafiky** okno, pokud během tohoto rámce nebyl nastaven. Obvykle k tomu dochází pouze v případě, že pouze jeden pixelů shaderu se používá pro všechny objekty, nebo pokud `PSSetShader` volání přeskočila neúmyslně během tohoto snímku. V obou případech doporučujeme hledání aplikace zdrojového kódu pro `PSSetShader` volání a použijte tradiční techniky ladění prozkoumat chování těchto volání.  
+    >  `PSSetShader` se nebude zobrazovat na **seznam událostí grafiky** okno, pokud během tohoto rámce nebyl nastaven. Obvykle k tomu dochází pouze v případě, že pouze jeden pixelů shaderu se používá pro všechny objekty, nebo pokud `PSSetShader` volání přeskočila neúmyslně během tohoto snímku. V obou případech doporučujeme hledání aplikace zdrojového kódu pro `PSSetShader` volání a použijte tradiční techniky ladění prozkoumat chování těchto volání.  
   
 2.  Otevřete **zásobník volání událostí grafiky** okno. Na **diagnostiky grafiky** nástrojů vyberte **zásobník volání událostí grafiky**.  
   
@@ -101,7 +99,7 @@ Tento návod ukazuje, jak používat [!INCLUDE[vsprvs](../../code-quality/includ
   
  Chcete-li problém vyřešit, přiřaďte shaderu správné pixelů pomocí první parametr `ID3D11DeviceContext::PSSetShader` volání rozhraní API.  
   
- ![Opravené C & č. 43; & č. 43; zdrojový kód](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
+ ![Opravené C&#43; &#43; zdrojový kód](media/gfx_diag_demo_misconfigured_pipeline_step_6.png "gfx_diag_demo_misconfigured_pipeline_step_6")  
   
  Po opravě kód, můžete ho znovu sestavte a spusťte aplikaci znovu k ověření, že se vyřešit problém vykreslování:  
   

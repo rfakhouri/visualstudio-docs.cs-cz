@@ -1,23 +1,21 @@
 ---
-title: "Složené vzory pro sadu Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Složené vzory pro sadu Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a751bcc54fe53f9c9582dab71e2f393e885d1480
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6515b5aefc0536ea92f09a92b1a17050b820008d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Složené vzory pro sadu Visual Studio
 Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích. Mezi nejdůležitější složené vzory v sadě Visual Studio s ohledem na konzistence patří:  
@@ -32,7 +30,7 @@ Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích.
   
 -   [Dotykové ovládání](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)  
   
-##  <a name="BKMK_DataVisualization"></a>Vizualizace dat  
+##  <a name="BKMK_DataVisualization"></a> Vizualizace dat  
   
 ### <a name="overview"></a>Přehled  
  Grafy jsou vizuální způsob, jak agregovat a vizualizaci dat za účelem zvýšení rozhodnutí. Můžou pomoct potýkají s velkým množstvím dat, ale malé znamená, co si zaslouží pozornost a co může být nutné akce uživatele.  
@@ -85,7 +83,7 @@ Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích.
 |![Vzorníku 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|  
 |![Vzorníku B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|  
   
-##  <a name="BKMK_OnObjectUI"></a>Na objekt uživatelského rozhraní a prohlížení  
+##  <a name="BKMK_OnObjectUI"></a> Na objekt uživatelského rozhraní a prohlížení  
  Tato část poskytuje kontext k prohlížení, také známé jako zobrazení funkce Náhled kódu, typ-object uživatelského rozhraní pro Visual Studio jedinečné.  
   
 ### <a name="overview"></a>Přehled  
@@ -251,7 +249,7 @@ Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích.
   
 -   **Nikdy** zobrazit obsah při přechodu, který se zdá být upravovat nebo vyzývá interakci s uživatelem. Toto chování může frustrovat uživatele, pokud se uživatel pokusí přesuňte kurzor na podrobnosti o obsahu, jako je standardní chování pro popisek okamžitě zrušíte, pokud se ukazatel už přes hlavní obsah, který ho vytvořil.  
   
-##  <a name="BKMK_SelectionModels"></a>Výběr modely  
+##  <a name="BKMK_SelectionModels"></a> Výběr modely  
   
 ### <a name="overview"></a>Přehled  
  Výběr modelu je mechanismus používaný k označení a potvrďte operací na jeden nebo více objektů zájmu v rámci uživatelského rozhraní. Toto téma popisuje vzory interakce výběr v sadě Visual Studio dokumentu editory: textové editory, návrhové ploše a modelování ploch.  
@@ -309,7 +307,7 @@ Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích.
 #### <a name="region-selection-box-selection"></a>Výběr oblasti (Výběr pole)  
  Visual Studio podporuje výběr oblasti v textovém editoru a tento postup se nazývá výběr pole. Výběr pole umožňuje uživateli vybrat oblasti text, který neodpovídá pravidlům pro datový proud běžný text. Stejně jako u standardního textového výběru, musí být spojití výběr. Výběr pole inicializuje podržíte stisknutou klávesu Alt při přetahování myší. Výběr pole lze také zahájit podržením klávesy Alt a klávesy Shift a pomocí klávesy se šipkami k označení oblasti výběru. Výběr pole zobrazuje kurzor bod vložení blikat na konci oblasti pro výběr a využívá zvýraznění normální výběr.  
   
- ![Místní &#40; pole &#41; Výběr v sadě Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
+ ![Místní &#40;pole&#41; výběr v sadě Visual Studio](../../extensibility/ux-guidelines/media/0713-04_boxselection.png "0713 04_BoxSelection")  
   
  **Výběr oblasti (pole) v sadě Visual Studio**  
   
@@ -394,19 +392,19 @@ Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích.
   
  **Primární výběr dva sekundární výběr**  
   
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a>Vzhled výběr grafického objektu  
+####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Vzhled výběr grafického objektu  
  Výběr popisovače jsou čtverce v obdélníková vzoru kolem pole ohraničující objektu. Následující graf zobrazuje příklady různé stavy, které grafické objekt může mít s popisovač, velikosti a úpravy vzhledu na místě. Velikost obslužné rutiny pro zpracování by měl být vázáno okraje okna a hraniční metriky pomocí **GetSystemMetrics** rozhraní API.  
   
 |Stav|Vzhled|Podrobnosti o Visual|  
 |-----------|----------------|--------------------|  
 |**Nezaškrtnuté**|Výchozí|![Výchozí tlačítko stavu](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState")||  
-|**Primární výběr**|S možností změny velikosti|![Úchyty pro změnu velikosti primární výběr](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Primární výběr změnit velikost popisovače &#40; možnosti &#41; ] (../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
-|**Primární výběr**|Není s možností změny velikosti|![Úchyty pro změnu velikosti primární výběr bez](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Primární výběr bez změnit velikost popisovače &#40; možnosti &#41; ] (../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
-|**Primární výběr**|Uzamčení|![Primární výběr uzamčení](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Primární výběr uzamčení &#40; možnosti &#41; ] (../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
-|**Sekundární výběr**|S možností změny velikosti|![Úchyty pro změnu velikosti sekundární výběr](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Sekundární výběr změnit velikost popisovače &#40; možnosti &#41; ] (../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
-|**Sekundární výběr**|Není s možností změny velikosti|![Úchyty pro změnu velikosti sekundární výběr bez](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Sekundární výběr bez změny velikosti &#40; možnosti &#41; ] (../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
-|**Sekundární výběr**|Uzamčení|![Sekundární výběr uzamčení](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Sekundární výběr uzamčení &#40; možnosti &#41; ] (../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
-|**Aktivní uživatelského rozhraní**|Výchozí|![Stav uživatelského rozhraní active](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Uživatelské rozhraní aktivním stavu &#40; možnosti &#41; ] (../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
+|**Primární výběr**|S možností změny velikosti|![Úchyty pro změnu velikosti primární výběr](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize")|![Úchyty pro změnu velikosti primární výběr &#40;možnosti&#41;](../../extensibility/ux-guidelines/media/0713-12_primaryresizezoom.png "0713 12_PrimaryResizeZoom")|  
+|**Primární výběr**|Není s možností změny velikosti|![Úchyty pro změnu velikosti primární výběr bez](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize")|![Úchyty pro změnu velikosti primární výběr bez &#40;možnosti&#41;](../../extensibility/ux-guidelines/media/0713-14_primarynoresizezoom.png "0713 14_PrimaryNoResizeZoom")|  
+|**Primární výběr**|Uzamčení|![Primární výběr uzamčení](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked")|![Primární výběr uzamčení &#40;možnosti&#41;](../../extensibility/ux-guidelines/media/0713-16_primarylockedzoom.png "0713 16_PrimaryLockedZoom")|  
+|**Sekundární výběr**|S možností změny velikosti|![Úchyty pro změnu velikosti sekundární výběr](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize")|![Úchyty pro změnu velikosti sekundární výběr &#40;možnosti&#41;](../../extensibility/ux-guidelines/media/0713-18_secondaryresizezoom.png "0713 18_SecondaryResizeZoom")|  
+|**Sekundární výběr**|Není s možností změny velikosti|![Úchyty pro změnu velikosti sekundární výběr bez](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize")|![Sekundární výběr bez změny velikosti &#40;možnosti&#41;](../../extensibility/ux-guidelines/media/0713-20_secondarynoresizezoom.png "0713 20_SecondaryNoResizeZoom")|  
+|**Sekundární výběr**|Uzamčení|![Sekundární výběr uzamčení](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked")|![Sekundární výběr uzamčení &#40;možnosti&#41;](../../extensibility/ux-guidelines/media/0713-22_secondarylockedzoom.png "0713 22_SecondaryLockedZoom")|  
+|**Aktivní uživatelského rozhraní**|Výchozí|![Stav uživatelského rozhraní active](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive")|![Stav uživatelského rozhraní active &#40;možnosti&#41;](../../extensibility/ux-guidelines/media/0713-24_uiactivezoom.png "0713 24_UIActiveZoom")|  
   
 ### <a name="view-selection-models"></a>Modely výběr zobrazení  
   
@@ -475,7 +473,7 @@ Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích.
   
 -   F2 klíč aktivuje úpravy v místě pro aktuálně vybrané buňky.  
   
-##  <a name="BKMK_PersistenceAndSavingSettings"></a>Trvalosti a ukládá se nastavení  
+##  <a name="BKMK_PersistenceAndSavingSettings"></a> Trvalosti a ukládá se nastavení  
   
 ### <a name="overview"></a>Přehled  
  Sice obvykle zodpovědná za vlastní stavu a trvalost jednotlivých součástí softwaru v sadě Visual Studio, Visual Studio automaticky uloží nastavení v některých případech, například s okno velikosti a pozice. Následující tabulka je kombinací nastavení automaticky uloží a nastavení, které vyžadují explicitní uživatele nebo naprogramovaný tak provést akci.  
@@ -510,7 +508,7 @@ Složené vzory kombinovat interakce a prvky návrhu v různých konfiguracích.
 #### <a name="profile-specific-layouts"></a>Jednotlivé profily rozložení  
  Každý profil obsahuje nástroj rozložení oken, uspořádání pro vývojáře konkrétní osoby (Visual C++ vývojáři měli vidět **Průzkumníku řešení** na levé straně rozhraní IDE, zatímco C# vývojáři měli vidět  **Průzkumník řešení** na pravé straně). Rozložení oken jednotlivé profily se načítají, až uživatel vybere profil při spuštění. Autora balíčku měli určit rozložení okna, která je nejvhodnější pro prostředí zákazníka, zároveň budete vědět, že se změny, které uživatel provede konfiguraci okna pak natrvalo.  
   
-##  <a name="BKMK_TouchInput"></a>Dotykové ovládání  
+##  <a name="BKMK_TouchInput"></a> Dotykové ovládání  
  Uživatelé stále používají vývoj produkty společnosti Microsoft na dotyková zařízení. Existují však překážky, které činit obtížné pomocí nástrojů pro vývoj na dotyková zařízení. Uživatelé se očekávají, že naše produkty a poskytuje spolehlivé a přesné touch prostředí. Účelem těchto pokynů je informovat rozhodnutí o jaké funkce dotykového ovládání, abyste zapracovali a podporovat konzistentní dotykového ovládání v sadě Visual Studio a souvisejících produktů.  
   
 ### <a name="levels-of-experience"></a>Úrovně prostředí  

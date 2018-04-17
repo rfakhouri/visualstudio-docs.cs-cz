@@ -1,23 +1,21 @@
 ---
-title: "Dynamické vlastnosti třídy XElement | Microsoft Docs"
-ms.custom: 
+title: Dynamické vlastnosti třídy XElement | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a9795dba-2afc-45f7-9b53-c6c67a23c40b
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5c2583014552cffacaa3e2f9760fd61ead0af605
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 31720ca312e350bf5f5216cbacf403b38a0ed237
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xelement-class-dynamic-properties"></a>Dynamické vlastnosti XElement – třída
 Tato část popisuje dynamických vlastností <xref:System.Xml.Linq.XElement?displayProperty=fullName> třídy.  
@@ -31,7 +29,7 @@ Tato část popisuje dynamických vlastností <xref:System.Xml.Linq.XElement?dis
 |[Elements](../designers/elements-xelement-dynamic-property.md)|Získá indexeru. používá se k načtení podřízených elementů aktuálního elementu, které odpovídají zadaným rozšířené názvem.|  
 |[Následníky](../designers/descendants-xelement-dynamic-property.md)|Získá indexeru. používá se k načtení všechny následné prvky aktuálního elementu odpovídající zadaným rozšířené názvem.|  
 |[Hodnota](../designers/value-xelement-dynamic-property.md)|Získá nebo nastaví obsah elementu.|  
-|[XML](../designers/xml-xelement-dynamic-property.md)|Získá neformátovaný reprezentaci XML elementu.|  
+|[Xml](../designers/xml-xelement-dynamic-property.md)|Získá neformátovaný reprezentaci XML elementu.|  
   
 ## <a name="see-also"></a>Viz také  
  <xref:System.Xml.Linq.XElement?displayProperty=fullName>   

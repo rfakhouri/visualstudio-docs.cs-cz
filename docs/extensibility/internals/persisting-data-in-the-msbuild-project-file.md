@@ -1,27 +1,23 @@
 ---
-title: "Zachování dat v souboru projektu nástroje MSBuild | Microsoft Docs"
-ms.custom: 
+title: Zachování dat v souboru projektu nástroje MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - project files, persisting data in
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2bb73602a6cba07fe9cbde4ddae4219f5a2b350
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 324f9dfd4e381e9580e4940f06f652ef64d9d3ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Zachování dat v souboru projektu nástroje MSBuild
 Podtyp projektu chtít zachovat data specifická pro dílčí do souboru projektu pro pozdější použití. Podtypem projektu používá trvalost soubor projektu do splňovat následující požadavky:  
@@ -45,7 +41,7 @@ Podtyp projektu chtít zachovat data specifická pro dílčí do souboru projekt
 ## <a name="persisting-build-related-information"></a>Uložením informace týkající se sestavení  
  Trvalost dat užitečné pro sestavení projektu je prováděna pomocí nástroje MSBuild. Systém MSBuild uchovává hlavní tabulku informace týkající se sestavení. Projekt podtypů jsou zodpovědní za přístup k těmto datům k získání a nastavení hodnot vlastností. Projekt podtypů můžete také posílení tabulky dat souvisejících s sestavení přidáním další vlastnosti, které chcete nastavit jako trvalý a proto nejsou nastavené jako trvalé, a to odebráním vlastnosti.  
   
- Chcete-li upravit MSBuild data, podtypem projektu zodpovídá za načítání objektu vlastnosti nástroje MSBuild ze systému základní projektu prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>je rozhraní implementované v projektu systém jádra a totožný dílčí dotazy projektu pro něj spuštěním `QueryInterface`.  
+ Chcete-li upravit MSBuild data, podtypem projektu zodpovídá za načítání objektu vlastnosti nástroje MSBuild ze systému základní projektu prostřednictvím <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>. <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> je rozhraní implementované v projektu systém jádra a totožný dílčí dotazy projektu pro něj spuštěním `QueryInterface`.  
   
  Následující postup popisuje kroky pro odebrání vlastnosti pomocí <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>.  
   

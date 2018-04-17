@@ -2,24 +2,20 @@
 title: Písma a formátování pro sadu Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83c1d4e20dd372d3b76362b9f06ee894b045333c
-ms.sourcegitcommit: fb1fede41d8c5e459dd222755b0497b9d361bc51
+ms.openlocfilehash: 22e765916a19caeff643e25f97f4d0d4f91669c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Písma a formátování pro sadu Visual Studio
 ##  <a name="BKMK_TheEnvironmentFont"></a> Písmo prostředí
@@ -328,7 +324,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>První písmeno velké  
  První písmeno velké je styl, ve kterém jsou použita velká písmena první písmena většinu nebo všechny slova v rámci frázi. V sadě Visual Studio první písmeno velké slouží pro mnoho položek, včetně:  
   
--   **Tooltips.** Příklad: "Preview vybraných položek"  
+-   **Popisy tlačítek.** Příklad: "Preview vybraných položek"  
   
 -   **Záhlaví sloupců.** Příklad: "systému odpověď"  
   
@@ -345,7 +341,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 |Všechny zájmena|Včetně přivlastňovacího pádu "Jeho" také jako "Je," zmenšení zastupovat "jej" a příkaz "je"|  
 |První a poslední slova, bez ohledu na části řeči||  
 |Předložky, které jsou součástí příkaz fráze|"Zavírání na všechny systémy Windows" nebo "Vypnutí systému"|  
-|Všechna písmena zkratka|HTML, XML, URL, IDE, RGB|  
+|Všechna písmena zkratka|HTML, XML, ADRESA URL, IDE, RGB|  
 |Druhá aplikace word v složeného slova, pokud je to podstatné jméno nebo přídavných jmen správné, nebo pokud slova nemají stejnou hodnotu|Přístup pro čtení a zápis křížových odkazů, Software před společnosti Microsoft, běhu|  
   
 |Malá|Příklady|  

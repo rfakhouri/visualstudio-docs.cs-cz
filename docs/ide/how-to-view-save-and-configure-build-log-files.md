@@ -1,23 +1,21 @@
 ---
-title: "Postupy: zobrazení, uložit a konfigurace souborů protokolu sestavení | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: zobrazení, uložit a konfigurace souborů protokolu sestavení | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 1a57911b8736af27caf0bd9ba30e9e03bdebed2d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 21d10bd4edb8d6335d2f559cfcacd1a45e518173
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení
 Jakmile vytvoříte projekt sady Visual Studio IDE, můžete zobrazit informace o toto sestavení v **výstup** okno. Pomocí těchto informací můžete, například řešit selhání sestavení. Pro projekty C++ můžete také zobrazit stejné informace v souboru .txt, který má vytvořili a uložili automaticky. Pro projekty spravovaného kódu, můžete zkopírovat a vkládat informace z **výstup** okno na .txt souboru a uložte ho sami. Prostředí IDE můžete také použít k určení toho, jaké typy informací, které chcete zobrazit o každé sestavení.  

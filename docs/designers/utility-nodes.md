@@ -1,23 +1,21 @@
 ---
-title: "Nástroj uzly | Microsoft Docs"
-ms.custom: 
+title: Nástroj uzly | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e2920642c46aa3f6cdf85f4f80c2334d18095718
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d4ac731f86dc4586a4e8f4d43362059687ae9583
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="utility-nodes"></a>Uzly nástroje
 V Návrháři shaderu nástroj uzly představují běžné, užitečné shaderu výpočty, které se nehodí přehledně do jiné kategorie. Některé uzly nástroj provádějí jednoduché operace, například připojování vektory společně nebo podmíněně výběr výsledky a ostatní provádět komplexní operace například computing osvětlení příspěvky podle oblíbených osvětlení modelů.  
@@ -26,9 +24,9 @@ V Návrháři shaderu nástroj uzly představují běžné, užitečné shaderu 
   
 |Uzel|Podrobnosti|Vlastnosti|  
 |----------|-------------|----------------|  
-|**Připojit vektoru**|Vytvoří vektor připojením zadané vstupy společně.<br /><br /> **Vstup:**<br /><br /> `Vector`: `float`, `float2`, nebo`float3`<br /> Hodnoty k připojení k.<br /><br /> `Value to Append`: `float`<br /> Hodnota pro připojení.<br /><br /> **Výstup:**<br /><br /> `Output`: `float2`, `float3`, nebo `float4` v závislosti na typu vstupu`Vector`<br /> Nové vektoru.|Žádné|  
+|**Připojit vektoru**|Vytvoří vektor připojením zadané vstupy společně.<br /><br /> **Vstup:**<br /><br /> `Vector`: `float`, `float2`, nebo `float3`<br /> Hodnoty k připojení k.<br /><br /> `Value to Append`: `float`<br /> Hodnota pro připojení.<br /><br /> **Výstup:**<br /><br /> `Output`: `float2`, `float3`, nebo `float4` v závislosti na typu vstupu `Vector`<br /> Nové vektoru.|Žádné|  
 |**Fresnel**|Vypočítá podzim – vypnuté Fresnel podle zadaného prostor normální.<br /><br /> Fresnel poklesu hodnota vyjadřuje, jak přesně shoduje s vektoru zobrazení článku prostor normální z aktuální pixelů. Když je zarovnán vektory, je výsledkem funkce 0; výsledek zvyšuje vektory jsou méně podobné a dosáhne maximálního po ortogonální vektory. Můžete to být vyšší nebo nižší zřejmá vliv na základě vztahu mezi orientaci aktuální pixelů a kamera.<br /><br /> **Vstup:**<br /><br /> `Surface Normal`: `float3`<br /> Prostor normální aktuální pixelů, definované v prostoru tečný aktuální pixelů. To vám pomůže perturb zřejmá prostor normální, stejně jako normální mapování.<br /><br /> **Výstup:**<br /><br /> `Output`: `float`<br /> Odrazivostí aktuální pixelů.|**Exponent**<br /> Exponent, na který se používá k výpočtu patří – vypnuté Fresnel.|  
-|**Pokud**|Podmíněná zvolí jeden z tři potenciální výsledky podle součásti. Podmínka je definována vztah mezi dvěma zadané vstupy.<br /><br /> Pro každou součást výsledku odpovídající součást jednu ze tří potenciální výsledků jste vybrali, na základě vztahu mezi odpovídající součástí první dva vstupy.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo`float4`<br /> Na levé straně hodnoty k porovnání.<br /><br /> `Y`: stejný typ jako vstup`X`<br /> Pravé straně hodnoty k porovnání.<br /><br /> `X > Y`: stejný typ jako vstup`X`<br /> Hodnoty, které je možné zvolit při `X` je větší než `Y`.<br /><br /> `X = Y`: stejný typ jako vstup`X`<br /> Hodnoty, které je možné zvolit při `X` rovná `Y`.<br /><br /> `X < Y`: stejný typ jako vstup`X`<br /> Hodnoty, které je možné zvolit při `X` je menší než `Y`.<br /><br /> **Výstup:**<br /><br /> `Output`: `float3`<br /> Zvolený způsobit za součást.|Žádné|  
+|**Pokud**|Podmíněná zvolí jeden z tři potenciální výsledky podle součásti. Podmínka je definována vztah mezi dvěma zadané vstupy.<br /><br /> Pro každou součást výsledku odpovídající součást jednu ze tří potenciální výsledků jste vybrali, na základě vztahu mezi odpovídající součástí první dva vstupy.<br /><br /> **Vstup:**<br /><br /> `X`: `float`, `float2`, `float3`, nebo `float4`<br /> Na levé straně hodnoty k porovnání.<br /><br /> `Y`: stejný typ jako vstup `X`<br /> Pravé straně hodnoty k porovnání.<br /><br /> `X > Y`: stejný typ jako vstup `X`<br /> Hodnoty, které je možné zvolit při `X` je větší než `Y`.<br /><br /> `X = Y`: stejný typ jako vstup `X`<br /> Hodnoty, které je možné zvolit při `X` rovná `Y`.<br /><br /> `X < Y`: stejný typ jako vstup `X`<br /> Hodnoty, které je možné zvolit při `X` je menší než `Y`.<br /><br /> **Výstup:**<br /><br /> `Output`: `float3`<br /> Zvolený způsobit za součást.|Žádné|  
 |**Společnost Lambert**|Vypočítá barva aktuální pixelů podle modelu osvětlení společnost Lambert, pomocí zadané prostor normální.<br /><br /> Tato barva je součet hodnot vedlejším barvy a rozptýlených osvětlení příspěvky za přímé osvětlení. Okolní barva blíží celkový příspěvek nepřímého osvětlení, ale vypadá plochý a matné bez pomoci další osvětlení. Rozptýlené osvětlení pomáhá přidat tvar a hloubku k objektu.<br /><br /> **Vstup:**<br /><br /> `Surface Normal`: `float3`<br /> Prostor normální aktuální pixelů, definované v prostoru tečný aktuální pixelů. To vám pomůže perturb zřejmá prostor normální, stejně jako normální mapování.<br /><br /> `Diffuse Color`: `float3`<br /> Rozptýlené barva aktuální pixelů, obvykle **bodu barva**. Pokud je k dispozici žádný vstup, výchozí hodnota je bílé.<br /><br /> **Výstup:**<br /><br /> `Output`: `float3`<br /> Rozptýlené barva aktuální pixelů.|Žádné|  
 |**Maska vektoru**|Masek součástí zadaný vektoru.<br /><br /> Můžete to odebrání kanály konkrétní barev hodnotu barvu nebo zabránit konkrétní součásti mají vliv na následné výpočty.<br /><br /> **Vstup:**<br /><br /> `Vector`: `float4`<br /> Vektoru k maskování.<br /><br /> **Výstup:**<br /><br /> `Output`: `float4`<br /> Maskované vektoru.|**Red / X**<br /> **False** k maskování na komponentu červený (x); jinak **True**.<br /><br /> **Zelená / Y**<br /> **False** k maskování na komponentu zelený (y); jinak **True**.<br /><br /> **Modrá nebo Z**<br /> **False** k maskování na komponentu blue (z); jinak **True**.<br /><br /> **Alpha / W**<br /> **False** k maskování na komponentu alpha (w); jinak **True**.|  
 |**Vektor reflexe**|Vypočítá vektoru reflexe pro aktuální pixelů v tečný prostoru, na základě pozice fotoaparát.<br /><br /> Můžete použít k výpočtu odrazů, cubemap souřadnice a zrcadlová osvětlení příspěvky<br /><br /> **Vstup:**<br /><br /> `Tangent Space Surface Normal`: `float3`<br /> Prostor normální aktuální pixelů, definované v prostoru tečný aktuální pixelů. To vám pomůže perturb zřejmá prostor normální, stejně jako normální mapování.<br /><br /> **Výstup:**<br /><br /> `Output`: `float3`<br /> Reflexe vektoru.|Žádné|  

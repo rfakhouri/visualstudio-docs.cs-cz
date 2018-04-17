@@ -1,12 +1,10 @@
 ---
-title: "Postupy: výhradní používání klávesnice | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: výhradní používání klávesnice | Microsoft Docs'
+ms.custom: ''
 ms.date: 08/22/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
 - shortcut keys [Visual Studio]
@@ -17,19 +15,20 @@ helpviewer_keywords:
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 882a21dbace4197d93a3a3c985a58a0c938e4f2a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 351170b59b9b02c1059bd20fe7ad21981b280aee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Postupy: Výhradní používání klávesnice
 > [!TIP]
 > Další informace o nejnovějších aktualizacích usnadnění přístupu najdete v tématu [vylepšení přístupnosti v Visual Studio 2017 verze 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) příspěvku na blogu.
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]poskytuje mnoho výchozí kombinace klávesových zkratek, které snadno přejděte a kódu v rámci integrované vývojové prostředí (IDE). Úplný seznam klávesových zkratek používaných v sadě Visual Studio naleznete v tématu [výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informace o klávesové zkratky, které jsou k dispozici pro další produkty společnosti Microsoft najdete v tématu [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poskytuje mnoho výchozí kombinace klávesových zkratek, které snadno přejděte a kódu v rámci integrované vývojové prostředí (IDE). Úplný seznam klávesových zkratek používaných v sadě Visual Studio naleznete v tématu [výchozí klávesové zkratky](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Informace o klávesové zkratky, které jsou k dispozici pro další produkty společnosti Microsoft najdete v tématu [ http://www.microsoft.com/enable/products/keyboard.aspx ](http://go.microsoft.com/fwlink/?LinkID=40400).  
 
 > [!NOTE]
 >  Dialogová okna a příkazy nabídek, které vidíte, se mohou lišit od těch popsaných v nápovědě v závislosti na aktivních nastaveních nebo edici. Chcete-li změnit nastavení, zvolte **nastavení importu a exportu** na **nástroje** nabídky. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  

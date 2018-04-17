@@ -1,27 +1,23 @@
 ---
-title: "Práce s 3D prostředky pro hry a aplikace | Microsoft Docs"
-ms.custom: 
+title: Práce s 3D prostředky pro hry a aplikace | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics
 ms.assetid: 910d673b-c884-4eeb-9928-0e89f3d38cb6
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4b0cc6e7105f91a4192d2c079854c8953736eaf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e3b110f5f1a5ecc16d8cafe5f80630da05ed29b8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Práce s 3D prostředky pro hry a aplikace
 Tento dokument popisuje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástroje, které můžete použít k vytvoření nebo úpravě 3D modely, textury a shadery pro založené na rozhraní DirectX hry a aplikace.  
@@ -50,7 +46,7 @@ Tento dokument popisuje [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)
 >  Další informace o tom, jak začít s programováním DirectX najdete v tématu [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Další informace o tom, jak ladění aplikace založené na rozhraní DirectX najdete v tématu [Diagnostika grafiky (ladění grafiky DirectX)](../debugger/visual-studio-graphics-diagnostics.md).  
   
 ## <a name="directx-version-compatibility"></a>Kompatibilita verzí DirectX  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]využívá rozhraní DirectX k vykreslení 2D a 3D prostředky. Můžete vybrat zobrazovací jednotky DirectX 11 nebo vykreslovací software Windows Advanced Rasterizační platformy (Osnova). Zobrazovací jednotky DirectX 11 poskytuje vysoce výkonné, accelerated hardwaru vykreslování na DirectX 11 a grafickými procesory DirectX 10. Zobrazovací jednotky OSNOVĚ pomáhá, ujistěte se, že vaše prostředky fungovat s širokou škálu počítače – to zahrnuje počítače, které nemají moderní grafiky hardwaru a počítače, které mají integrované grafiky hardwaru. Další informace o OSNOVĚ najdete v tématu [Windows Advanced Rasterizační platformy (Osnova) průvodce](http://go.microsoft.com/fwlink/p/?LinkId=224634).  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] využívá rozhraní DirectX k vykreslení 2D a 3D prostředky. Můžete vybrat zobrazovací jednotky DirectX 11 nebo vykreslovací software Windows Advanced Rasterizační platformy (Osnova). Zobrazovací jednotky DirectX 11 poskytuje vysoce výkonné, accelerated hardwaru vykreslování na DirectX 11 a grafickými procesory DirectX 10. Zobrazovací jednotky OSNOVĚ pomáhá, ujistěte se, že vaše prostředky fungovat s širokou škálu počítače – to zahrnuje počítače, které nemají moderní grafiky hardwaru a počítače, které mají integrované grafiky hardwaru. Další informace o OSNOVĚ najdete v tématu [Windows Advanced Rasterizační platformy (Osnova) průvodce](http://go.microsoft.com/fwlink/p/?LinkId=224634).  
   
 ## <a name="related-topics"></a>Související témata  
   

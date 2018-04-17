@@ -1,13 +1,10 @@
 ---
-title: "Postupy: shromažďování dat o výkonu pro webový server | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: shromažďování dat o výkonu pro webový server | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -20,14 +17,14 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db9cefe31201a3b67ba176a56fed58bbe155bcf0
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 5d98bb70bcd02b90f978122f752757b3231564b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Postupy: shromažďování dat o výkonu pro webový server
 
@@ -86,7 +83,7 @@ Můžete použít **Průvodce výkonu** ke shromažďování dat výkonu pro [!I
 
     - Pro soubor na základě webu, zadejte cestu, například souboru / / /**c:\WebSites\MySite\default.aspx**. To způsobí, že [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace umístěné v c:\webSites\MySite k být profilovaným a stránky http://localhost:nnnn/MySite/default.aspx spustit v aplikaci Internet Explorer spusťte relaci.
 
-    - Pro externí servery, které chcete shromažďovat JavaScript data zadejte adresu URL, například http://www.contoso.com.
+    - Pro externí lokality, které chcete shromažďovat JavaScript data na, zadejte adresu URL, například http://www.contoso.com.
 
      Další informace, zobrazení stránek vlastností pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] cílový binární soubor.
 

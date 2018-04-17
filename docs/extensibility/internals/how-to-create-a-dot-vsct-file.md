@@ -1,27 +1,23 @@
 ---
-title: "Postupy: vytvoření. Soubor Vsct | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytvoření. Soubor Vsct | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b64d9b35030a18a6258de52ed0f12f9796044ba5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: c6456b0b866f08956862fa197719354bedf0ecf6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-vsct-file"></a>Postupy: vytvoření. Soubor Vsct  
   
@@ -102,9 +98,9 @@ Můžete vytvořit soubor .vsct na základě XML z existujícího souboru binár
   
 3.  V aplikaci Visual Studio příkazovém řádku přejděte do adresáře, který obsahuje soubory .cto a .ctsym.  
   
-4.  Typ **vsct.exe** *ctofilename***.cto** *vsctfilename***.vsct -S**  *symfilename***.ctsym**.  
+4.  Typ **vsct.exe** *ctofilename *** .cto** * vsctfilename***.vsct -S***symfilename ***.ctsym**.  
   
-     `ctofilename`je název souboru .cto `vsctfilename` je název souboru vsct, kterou chcete vytvořit, a `symfilename` je název souboru .ctsym.  
+     `ctofilename` je název souboru .cto `vsctfilename` je název souboru vsct, kterou chcete vytvořit, a `symfilename` je název souboru .ctsym.  
   
      Tento proces vytvoří novou tabulku kompilátoru soubor příkaz XML .vsct. Můžete upravit a kompilaci souboru s vsct.exe, vsct kompilátoru, stejně jako jakýkoli jiný soubor .vsct.  
   

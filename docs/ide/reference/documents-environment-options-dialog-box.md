@@ -1,12 +1,10 @@
 ---
-title: "Dokumenty, prostředí, dialogové okno Možnosti | Microsoft Docs"
-ms.custom: 
+title: Dokumenty, prostředí, dialogové okno Možnosti | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - VS.Environment.Documents
 - VS.ToolsOptionsPages.Environment.Documents
@@ -32,16 +30,16 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0c89e8b018fa0979fe4c73f5cd9e0db95efd88d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 49ac0d5aa5d621e7f6b833827057aeebba9a5181
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="documents-environment-options-dialog-box"></a>Dokumenty, prostředí, dialogové okno Možnosti
 Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazení dokumentů v integrované vývojové prostředí (IDE) a spravovat externí změny dokumentů a souborů. Tohoto dialogového okna můžete přejít pomocí kliknutím na tlačítko **možnosti** na **nástroje** nabídce a potom vyberete **dokumenty** v **prostředí** uzlu. Pokud **dokumenty** nejsou uvedené v seznamu vyberte **zobrazit všechna nastavení** v **možnosti** dialogové okno.  
@@ -78,7 +76,7 @@ Pomocí této stránky **možnosti** dialogové okno pro řízení zobrazení do
 > [!NOTE]
 >  Vyberte tuto možnost, chcete-li povolit **zobrazit v prohlížeči** příkaz na **souboru** nabídku pro webových dokumentů není součástí active webové aplikace.  
   
- **\<** *n*  **> položky uložené v projektu ostatní soubory**  
+ **\<** *n* **> položky uložené v projektu ostatní soubory**  
  Určuje počet souborů pro uchování v **MiscellaneousFiles** složky **Průzkumníku řešení**. Tyto soubory jsou uvedené i v případě, že je již otevřen v editoru. Můžete zadat všechny celé číslo od 0 do 256. Výchozí hodnota je 0.  
   
  Například pokud se tato možnost nastavena na 5 a máte 10 různé soubory otevřené po zavření všech 10 souborů, první 5 stále v zobrazí **různé soubory** složky.  

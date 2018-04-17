@@ -1,23 +1,20 @@
 ---
-title: "Řešení potíží a známé problémy (Visual Studio Tools for Unity) | Microsoft Docs"
-ms.custom: 
-ms.date: 10/25/2017
-ms.reviewer: 
-ms.suite: 
+title: Řešení potíží a známé problémy (Visual Studio Tools for Unity) | Microsoft Docs
+ms.custom: ''
+ms.date: 04/10/2018
 ms.technology: vs-unity-tools
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8f5db192-8d78-4627-bd07-dbbc803ac554
 author: conceptdev
 ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 95d1724561886e1bcfa9a870bdf3bdadb787f9e8
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 03329be39ba94984424999c2878b060f01ccd6de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Odstraňování potíží a známé problémy (Visual Studio Tools for Unity)
 V této části najdete řešení pro běžné problémy s nástroji Visual Studio Tools for Unity, popisem známých problémů a zjistěte, jak můžete pomocí Visual Studio Tools for Unity zlepšit zasílání zpráv o chybách.
@@ -51,6 +48,17 @@ Pro FMOD, je alternativní řešení, můžete předat FMOD_STUDIO_INIT_SYNCHRON
 ### <a name="incompatible-project-in-visual-studio"></a>Nekompatibilní projektu v sadě Visual Studio
 Nejdřív zkontrolujte, že Visual Studio je nastaven jako externího skriptu editoru Unity (upravit/předvolby/externí nástroje). Potom zkontrolujte, že modul plug-in sady Visual Studio je nainstalován ve Unity (Nápověda/o musí zobrazí zprávu, jako je Microsoft Visual Studio Tools for Unity povoleno v dolní části). Potom zkontrolujte, zda rozšíření je správně nainstalován v sadě Visual Studio (Nápověda/o).
 
+### <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Navíc zavážky nebo Visual Studio došlo ke ztrátě všech otevřených oken
+Ujistěte se, že nikdy touch soubory projektu přímo z procesor asset nebo jakýkoli jiný nástroj. Pokud skutečně potřebujete k manipulaci s souboru projektu, zveřejňujeme rozhraní API pro tento. Zkontrolujte, zda [sestavení odkazuje na problémy části](#Assembly-reference-issues).
+
+Pokud zaznamenáte navíc zavážky nebo pokud je ztráta Visual Studio všechna otevřená okna na znovu načíst, ujistěte se, zda máte správné .NET cílení nainstalovány sady. Zkontrolujte následující část o rozhraní pro další informace.
+
+
+### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>V systému Windows Visual Studio požádá ke stažení cílové rozhraní Unity
+Visual Studio Tools for Unity vyžaduje rozhraní .NET framework 3.5, která není nainstalovaná ve výchozím nastavení v systému Windows 8 nebo 10. Chcete-li tento problém vyřešit, postupujte podle pokynů ke stažení a instalaci rozhraní .NET framework 3.5.
+
+Pokud používáte nový modul runtime Unity, .NET cílení balíčky verze 4.6 a 4.7.1 vyžadují se i. Je možné použít instalační program VS2017 k rychlému instalaci (Upravit VS2017 instalace, jednotlivé komponenty, kategorie .NET, vyberte všechny 4.x cílení Pack).
+
 ### <a name="assembly-reference-issues"></a>Potíže s odkazy sestavení
 Pokud je váš projekt komplexní reference-wise nebo pokud chcete lépe kontrolovat, tento krok generace, můžete použít naše [rozhraní API](../cross-platform/customize-project-files-created-by-vstu.md) pro manipulaci s generovaného obsahu projekt nebo řešení. Můžete také použít [soubory odezvy](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) ve vašem Unity projektu a my vám jejich zpracování.
 
@@ -58,7 +66,7 @@ Pokud je váš projekt komplexní reference-wise nebo pokud chcete lépe kontrol
 Pokud Visual Studio se nepodařilo najít umístění zdroje pro konkrétní zarážek uvidíte okolo vaší zarážce upozornění. Zkontrolujte, jestli chování, které používáte správně načíst nebo použít v aktuální scény Unity.
 
 ### <a name="breakpoints-not-hit"></a>Není zarážky
- Zkontrolujte, jestli chování, které používáte správně načíst nebo použít v aktuální scény Unity. Ukončení Visual Studio a Unity pak odstraňte všechny generované soubory (*.csproj, *.sln) a celou složku knihovny.
+Zkontrolujte, jestli chování, které používáte správně načíst nebo použít v aktuální scény Unity. Ukončení Visual Studio a Unity pak odstraňte všechny generované soubory (*.csproj, *.sln) a celou složku knihovny.
 
 ### <a name="unable-to-attach"></a>Nelze připojit
 -   Pokuste se dočasně zakázat váš antivirový nebo vytvořit pravidla vyloučení pro VS a Unity.
@@ -69,22 +77,9 @@ Pokud Visual Studio se nepodařilo najít umístění zdroje pro konkrétní zar
 ### <a name="unable-to-debug-android-players"></a>Nelze k ladění Android přehrávače
 Můžeme použít vícesměrové vysílání pro zjišťování player, (což je výchozí mechanismus používaný Unity), ale poté používáme regulární připojení TCP připojit ladicí program. Fáze zjišťování je hlavní problém pro zařízení s Androidem.
 
-USB je extrémně rychlého pro ladění, ale není kompatibilní s mechanismus Unity player zjišťování.
-Wi-Fi je ale super pomalé rozmanitější ve srovnání s USB z důvodu čekací doby. Jsme viděli chybějících správné podpora vícesměrového vysílání pro některé směrovače nebo zařízení (Nexus řady nejsou dobře známé pro tento).
+Wi-Fi je univerzální ale super pomalé ve srovnání s USB z důvodu čekací doby. Jsme viděli chybějících správné podpora vícesměrového vysílání pro některé směrovače nebo zařízení (Nexus řady nejsou dobře známé pro tento).
 
-Vyzkoušejte následující pomocí USB zobrazíte otevřené porty na připojené zařízení (s player nahoru a spuštěna, aby mohli zobrazit ladění port, vždy v 56xxx formuláře):
-
-```shell
-adb shell netstat
-```
-
-Budou předávány port, který se v místním počítači:
-
-```shell
-adb forward tcp:56xxx tcp:56xxx
-```
-
-Připojte VSTU pomocí 127.0.0.1:56xxx přesměrovaná portu.
+Je extrémně rychlého pro ladění USB a Visual Studio Tools for Unity je teď možné zjistit zařízení USB a komunikovat se serverem adb správně předávat porty pro ladění.
 
 ### <a name="migrating-from-unityvs-to-visual-studio-tools-for-unity"></a>Migrace z UnityVS na Visual Studio Tools for Unity
  Pokud se migrace z UnityVS na Visual Studio Tools for Unity, budete muset vygenerovat nové řešení sady Visual Studio pro projekty Unity.
@@ -96,9 +91,6 @@ Připojte VSTU pomocí 127.0.0.1:56xxx přesměrovaná portu.
 2.  Importujte Visual Studio Tools for Unity balíčku do projektu Unity. Informace o tom, jak importovat balíček VSTU najdete v tématu Konfigurace Visual Studio Tools for Unity na [Začínáme](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) stránky.
 
 3.  Generovat nové soubory řešení a projektu. Pokud chcete je generovat teď v Unity editoru v hlavní nabídce zvolte **nástroje sady Visual Studio**, **generování souborů projektu**. Jinak můžete tento krok přeskočit, pokud chcete zjistit. Visual Studio Tools for Unity vygeneruje nové soubory automaticky když zvolíte **nástroje sady Visual Studio**, **otevřete v sadě Visual Studio**.
-
-### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>V systému Windows Visual Studio požádá ke stažení cílové rozhraní Unity
- Visual Studio Tools for Unity vyžaduje rozhraní .net framework 3.5, která není nainstalovaná ve výchozím nastavení v systému Windows 8 nebo 10. Chcete-li tento problém vyřešit, postupujte podle pokynů ke stažení a instalaci rozhraní .net framework 3.5.
 
 ## <a name="known-issues"></a>Známé problémy
  Existují známé problémy ve Visual Studio Tools for Unity, které jsou výsledkem jak ladicí program komunikuje s Unity na starší verzi kompilátor jazyka C#. Pracujeme na řešení těchto problémů, ale může mezitím došlo k následujícím problémům:
@@ -117,7 +109,7 @@ Připojte VSTU pomocí 127.0.0.1:56xxx přesměrovaná portu.
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>Pro sestavu, která se Visual Studio zablokuje při ladění s nástroji Visual Studio Tools for Unity
 
-*On Windows:*
+*V systému Windows:*
 
 1.  Otevření nové instance sady Visual Studio.
 

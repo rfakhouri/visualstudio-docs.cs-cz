@@ -1,27 +1,23 @@
 ---
-title: "Postupy: hostování editoru jiného editoru | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: hostování editoru jiného editoru | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - host a nested editor
 ms.assetid: 2b0eb705-fe94-4ca8-93e0-9dbd8ce61a44
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 685ad1d619fdf9f04fe1a9cd1122a9e6ed3ba025
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 351d66a9ab9b24c53dac4ed070c80f0e51e5e31f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-host-an-editor-in-another-editor"></a>Postupy: hostování editoru jiného editoru
 V sadě Visual Studio můžete hostovat jeden editor uvnitř jiné zadáním okno hostování jako nadřazeného okna. Chcete-li tak učinit, nastavit parametry <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> a <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID2> na rámec okna podřízené.  

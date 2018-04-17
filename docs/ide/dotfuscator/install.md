@@ -2,9 +2,10 @@
 title: Nainstalujte Dotfuscatoru Community Edition (CE) | Microsoft Docs
 ms.date: 2017-06-22
 ms.devlang: dotnet
-ms.technology: vs-ide-general
-ms.topic: article
-keywords: "Dotfuscatoru, Dotfuscatoru CE, preemptivní, preemptivní řešení preemptivní ochrana, ochrana, edice community, maskováním, .NET, volná, Visual Studio 2017 instalace"
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
+keywords: Dotfuscatoru, Dotfuscatoru CE, preemptivní, preemptivní řešení preemptivní ochrana, ochrana, edice community, maskováním, .NET, volná, Visual Studio 2017 instalace
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - install Dotfuscator
 - installing Dotfuscator
 - set up Dotfuscator
-description: "Informace o instalaci bezplatná edice Community Dotfuscatoru součástí Visual Studio 2017."
+description: Informace o instalaci bezplatná edice Community Dotfuscatoru součástí Visual Studio 2017.
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
-manager: ghogen
-ms.openlocfilehash: 6e3151a7ce26fcc998df7fbce1cefda54249a384
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 871ec8c98bac4477ef95c85688484011027e2d20
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Nainstalujte Dotfuscatoru Community Edition (CE)
 
@@ -35,7 +36,7 @@ Je však snadno nainstalovat Dotfuscatoru CE i v případě, že jste již nains
 
 > [!NOTE]
 > Kromě verze Dotfuscatoru CE dodávané s verzemi sady Visual Studio preemptivní řešení taky pravidelně nabízí aktualizované verze na jeho Web.
-> Pokud chcete stáhnout **nejnovější verzi** přímo místo instalace ze sady Visual Studio,  **[kliknutím sem přejděte na stránku stahování Dotfuscatoru] [ download]** .
+> Pokud chcete stáhnout **nejnovější verzi** přímo místo instalace ze sady Visual Studio, **[kliknutím sem přejděte na stránku stahování Dotfuscatoru] [ download]**.
 
 ## <a name="within-visual-studio"></a>V sadě Visual Studio
 

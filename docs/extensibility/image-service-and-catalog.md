@@ -1,22 +1,19 @@
 ---
-title: "Bitové kopie služby a katalog | Microsoft Docs"
-ms.custom: 
+title: Bitové kopie služby a katalog | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6f5d31e28c47dbcd4f17f7f1e1bc0ac6a8755d5b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d9b393d9dcf732d9042338dc0786d824351deca3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-service-and-catalog"></a>Bitové kopie služby a katalog
 Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí Visual Studio Service bitovou kopii a bitovou kopii katalogu byla zavedená v sadě Visual Studio 2015.  
@@ -108,7 +105,7 @@ Tato kuchařka obsahuje pokyny a osvědčené postupy pro přijetí Visual Studi
 |||  
 |-|-|  
 |**Dílčí element**|**Definice**|  
-|Import|Importuje symboly daném souboru manifestu pro použití v aktuální manifestu|  
+|Importovat|Importuje symboly daném souboru manifestu pro použití v aktuální manifestu|  
 |Identifikátor GUID|Symbol reprezentuje identifikátor GUID a musí odpovídat identifikátoru GUID formátování|  
 |ID|Symbol reprezentuje ID a musí být nezáporné celé číslo|  
 |String|Symbol představuje hodnotu libovolný řetězec|  
@@ -660,7 +657,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 ### <a name="samples"></a>Ukázky kódu  
  Některé Visual Studio – ukázky na webu GitHub se aktualizovaly v rámci ukazují, jak používat službu bitové kopie v rámci různých bodů rozšiřitelnosti Visual Studio.  
   
- Zkontrolujte [http://github.com/Microsoft/VSSDK-Extensibility-Samples](http://github.com/Microsoft/VSSDK-Extensibility-Samples) nejnovější ukázek.  
+ Zkontrolujte [ http://github.com/Microsoft/VSSDK-Extensibility-Samples ](http://github.com/Microsoft/VSSDK-Extensibility-Samples) nejnovější ukázek.  
   
 ### <a name="tooling"></a>Nástrojů  
  Sadu nástrojů podpory pro službu bitové kopie byl vytvořen, které pomáhají při vytváření nebo aktualizace uživatelského rozhraní, která spolupracuje se službou bitové kopie. Další informace o nástroji pro každý naleznete v dokumentaci, která se dodává s nástroje. Nástroje, které jsou součástí [Visual Studio 2015 SDK.](http://msdn.microsoft.com/library/bb166441.aspx)  

@@ -1,26 +1,23 @@
 ---
-title: "Vítá vás R Tools pro Visual Studio | Microsoft Docs"
-description: "Souhrnné informace pro vývojáře, kteří nainstalovali R nástrojů pro Visual Studio."
-ms.custom: 
+title: Vítá vás R Tools pro Visual Studio
+description: Souhrnné informace pro vývojáře, kteří nainstalovali R nástrojů pro Visual Studio.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0314bd144cc43fc6a1bf2589c4ae407258076d3d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0871380a91b18bd6f14c305b83f455d75e890a80
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Vítá vás R Tools pro Visual Studio
 

@@ -1,28 +1,26 @@
 ---
-title: "Přidání přepínače příkazového řádku | Microsoft Docs"
-ms.custom: 
+title: Přidání přepínače příkazového řádku | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - command-line switches, adding
 - command-line switches, retrieving
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d686e7b68e790c419679bf495bf08ad4cd4807e2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: daef07d0b8dd02f6823717b0c0cb5d68d837ccde
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-command-line-switches"></a>Přidání přepínače příkazového řádku
 Můžete přidat přepínače příkazového řádku, která se týkají vašeho VSPackage při devenv.exe. Použití <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> deklarovat název přepínač a jeho vlastnosti. V tomto příkladu se přidá MySwitch přepínač pro podtřídou třídy s názvem VSPackage **AddCommandSwitchPackage** bez argumentů a s VSPackage automaticky načíst.  

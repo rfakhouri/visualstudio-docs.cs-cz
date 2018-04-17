@@ -2,24 +2,21 @@
 title: 'Návod: Můj první grafický subsystém WPF Desktopová aplikace | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - csharp
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 95c35eae16f50b6fa8c0a8c86fa0d93732512a88
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 26ab7672095c518c0204491472695e1e04a2dcdb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Návod: Můj první grafický subsystém WPF aplikace pracovní plochy
 

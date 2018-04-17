@@ -1,26 +1,24 @@
 ---
-title: "Výběr objektů kontextu | Microsoft Docs"
-ms.custom: 
+title: Výběr objektů kontextu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: d97dd10661beb5acb28b464a8bc0d88ba5946924
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 04ccc4a57ac7af144c134761119433b7533e9bec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="selection-context-objects"></a>Výběr objektů kontextu
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Integrované vývojové prostředí (IDE) používá k určení, co má být zobrazena v prostředí IDE objekt kontextu globální výběr. Každý okna v prostředí IDE může mít svůj vlastní objekt kontextu výběr nabídnutých do kontextu globální výběr. Prostředí IDE aktualizuje kontext globální výběr hodnoty z okna při toto okno je aktivní. Další informace najdete v tématu [zpětnou vazbu pro uživatele](../../extensibility/internals/feedback-to-the-user.md).  

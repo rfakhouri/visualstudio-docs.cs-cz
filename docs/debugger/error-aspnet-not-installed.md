@@ -1,12 +1,9 @@
 ---
-title: "Chyba: Prostředí ASP.NET není nainstalováno | Microsoft Docs"
-ms.custom: 
+title: 'Chyba: Prostředí ASP.NET není nainstalováno | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.error.http_not_supported
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - debugger, Web application errors
 - error messages, ASP.NET
 - ASP.NET, installation error messages
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 36930db142821b11ed83edf846ccd3f65fd81d1d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 41d2804ce3cab18acf697333ee9950b4717f9500
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="error-aspnet-not-installed"></a>Chyba: Prostředí ASP.NET není nainstalováno.
 Tato chyba nastane, když [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] není správně nainstalován v počítači, který se pokoušíte ladění. To může znamenat, že [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nebyl nikdy nainstalovaný nebo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] byla nainstalována jako první a služba IIS byla nainstalována později.  

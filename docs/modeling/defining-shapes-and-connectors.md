@@ -1,26 +1,24 @@
 ---
-title: "Definování tvarů a konektory | Microsoft Docs"
-ms.custom: 
+title: Definování tvarů a konektory | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a1a1043515afb8d7567459e1adae23f1d4fcfde9
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d915487a9cbddb9678a6b9aa37d990e7b70527e1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-shapes-and-connectors"></a>Definování obrazců a konektorů
 Existuje několik typů základní tvary, které můžete použít k zobrazení informací v diagramu v jazyce specifické pro doménu (DSL).  
   
-##  <a name="shapeTypes"></a>Základní typy tvarů a konektory  
+##  <a name="shapeTypes"></a> Základní typy tvarů a konektory  
  DSL diagram zobrazuje kolekce *tvarů* vzájemně propojena linkami nebo *konektory*.  Obvykle, ale ne vždy:  
   
 -   Obrazce jsou viditelné reprezentace prvků modelu.  
@@ -44,5 +42,5 @@ Existuje několik typů základní tvary, které můžete použít k zobrazení 
 |Plaveckých drah|Plaveckých drah oddílu diagram na vodorovné nebo svislé segmenty. Dráha stále pod ostatním tvarům v diagramu.<br /><br /> Obvykle jsou elementy modelu dráha nadřazena v kořenovém adresáři modelu a další elementy jsou nadřazena na ně. Příklad vytvořte DSL ze šablony řešení tok úkolů.|  
 |Konektory|Řádky vykreslovat mezi tvary obvykle představují referenčních relací. Můžete nastavit možnosti aby konektor přímá nebo lomené a mít různé typy šipku.|  
   
-##  <a name="shapeInheritance"></a>Tvar dědičnosti  
+##  <a name="shapeInheritance"></a> Tvar dědičnosti  
  Obrazce může dědit vlastnosti z jiného tvaru. Obrazce však musí být stejného druhu. Například pouze geometrické obrazce dědit z geometrické obrazce. Zděděné obrazce mají přihrádky a dekorátory jejich základní tvaru. Konektory lze dědit z konektorů.

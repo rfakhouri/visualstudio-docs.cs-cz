@@ -1,21 +1,19 @@
 ---
-title: "Generovat konstruktor v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Generovat konstruktor v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0767b47fcf4456e1ac198674ece6c9de31850279
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 8ab26fd6ccc8359c2699154ae6fa5821040ce9ec
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Generovat konstruktor v sadě Visual Studio
 
@@ -51,7 +49,7 @@ Generování kódu platí pro:
      - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídky.
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
-     - Klikněte ![Žárovek](media/bulb-cs.png) ikona, která se zobrazí na levém okraji, pokud již text kurzor na prázdný řádek ve třídě.
+     - Klikněte na ![Žárovek](media/bulb-cs.png) ikona, která se zobrazí na levém okraji, pokud již text kurzor na prázdný řádek ve třídě.
 
    ![Vytvoření náhledu – konstruktor](media/constructor1-preview-cs.png)
 
@@ -82,7 +80,7 @@ Generování kódu platí pro:
      - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídky.
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
-     - Klikněte ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s výběrem.
+     - Klikněte na ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s výběrem.
 
      ![Vytvoření náhledu – konstruktor](media/constructor2-preview-cs.png)
 
@@ -111,7 +109,7 @@ Generování kódu platí pro:
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
      - Pozastavte ukazatel myši nad červenou vlnovkou a klikněte na ![Žárovek](media/bulb-cs.png) ikona, která se zobrazí.
-     - Klikněte ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
+     - Klikněte na ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
 
     ![Vytvoření náhledu – konstruktor](media/constructor-preview-cs.png)
 
@@ -145,7 +143,7 @@ Generování kódu platí pro:
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
      - Pozastavte ukazatel myši nad červenou vlnovkou a klikněte na ![Žárovek](media/bulb-cs.png) ikona, která se zobrazí.
-     - Klikněte ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
+     - Klikněte na ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
 
     ![Vytvoření náhledu – konstruktor](media/constructor4-preview-cs.png)
 
@@ -169,7 +167,7 @@ Generování kódu platí pro:
      - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídky.
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
-     - Klikněte ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s parametrem přidané.
+     - Klikněte na ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s parametrem přidané.
 
    ![Vytvoření náhledu – konstruktor](media/constructor5-preview-cs.png)
 

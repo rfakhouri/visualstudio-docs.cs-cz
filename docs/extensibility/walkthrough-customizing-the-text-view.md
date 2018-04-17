@@ -1,27 +1,23 @@
 ---
-title: "Návod: Přizpůsobení textového zobrazení | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Přizpůsobení textového zobrazení | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - customizing the view
 ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ecbf5e3bed5ba506278f00b2b5b0b76f8f02850a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4fb4762a422102b91c44d755d387168ab0572f2a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Návod: Přizpůsobení zobrazení textu
 Textového zobrazení můžete přizpůsobit úpravou některý z následujících vlastností v jeho mapy editor formátu:  
@@ -60,9 +56,9 @@ Textového zobrazení můžete přizpůsobit úpravou některý z následující
   
 3.  Deklarace třídy s názvem `TestViewCreationListener` který dědí z <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>. Exportujte tuto třídu s následujícími atributy:  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>Chcete-li určit typ obsahu, pro kterou platí tato naslouchací proces.  
+    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> Chcete-li určit typ obsahu, pro kterou platí tato naslouchací proces.  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>Chcete-li určit roli této naslouchacího procesu.  
+    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> Chcete-li určit roli této naslouchacího procesu.  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]  

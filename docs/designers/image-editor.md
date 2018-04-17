@@ -1,26 +1,24 @@
 ---
-title: "Editor obrázků | Microsoft Docs"
-ms.custom: 
+title: Editor obrázků | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
 ms.assetid: fc71d502-c548-4863-8afc-12a1d3ec90d4
-caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df78a45b5bc5dded132b58cb37b87d4198ad1e7e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 80dbd85aff0fa673297ad5899ca96abbc11d2510
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="image-editor"></a>Editor obrázků
 Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Editor obrázků pro zobrazení a úpravám prostředků texture a bitové kopie.  
@@ -104,7 +102,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
 |**Vyberte**|Umožňuje výběr obdélníkovou oblast bitové kopie. Po výběru oblasti, můžete můžete vyjmout, kopírovat, přesunout, škálovat, otočit, překlopit nebo odstranit. Když je aktivní výběr, nástrojů pro kreslení ovlivní pouze vybrané oblasti.|  
 |**Nestandardní výběr**|Umožňuje výběr oblast nestandardní bitové kopie. Po výběru oblasti, můžete můžete vyjmout, kopírovat, přesunout, škálovat, otočit, překlopit nebo odstranit. Když je aktivní výběr, nástrojů pro kreslení ovlivní pouze vybrané oblasti.|  
 |**Výběr hůlka**|Umožňuje výběr podobně barevných oblasti obrázku. *Tolerance*– to znamená, maximální rozdíl mezi sousedních barev v rámci které jsou považovány za podobné – lze nakonfigurovat, aby zahrnout menší nebo širší škálu podobné barev. Po výběru oblasti, můžete můžete vyjmout, kopírovat, přesunout, škálovat, otočit, překlopit nebo odstranit. Když je aktivní výběr, nástrojů pro kreslení ovlivní pouze vybrané oblasti.|  
-|**Pan**|Umožňuje přesun bitové kopie relativně k rámce okna. V **Panoramování** režimu, vyberte bod obrázku a pak pohyb.<br /><br /> Můžete dočasně aktivovat **Panoramování** režimu tak, že stisknete a podržíte klávesu Ctrl.|  
+|**Posouvání**|Umožňuje přesun bitové kopie relativně k rámce okna. V **Panoramování** režimu, vyberte bod obrázku a pak pohyb.<br /><br /> Můžete dočasně aktivovat **Panoramování** režimu tak, že stisknete a podržíte klávesu Ctrl.|  
 |**Přiblížení**|Umožňuje zobrazení více nebo méně image podrobností relativně k rámce okna. V **zvětšení** režimu, vyberte bod obrázku a pak přesunout doprava dolů na přiblížit nebo doleva nebo až přiblížení out.<br /><br /> Můžete zvětšit nebo zmenšit podržíte a Ctrl můžete použít kolečko myši nebo stiskněte klávesu znaménko Plus (+) nebo Minus (-).|  
 |**Na skutečnou velikost**|Zobrazí bitovou kopii pomocí vztahu 1:1 mezi pixelů bitové kopie a pixelů na obrazovce.|  
 |**Nejlepší přiblížení**|Zobrazí úplnou bitovou kopii v rámce okna.|  
@@ -126,10 +124,10 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
 |Položka na panelu nástrojů|Popis|  
 |------------------|-----------------|  
 |**Tužky**|Výběr active barva se použije k vykreslení tahu alias. Můžete nastavit barvy a tloušťky tahu v **vlastnosti** okno.|  
-|**Štětce**|Výběr active barva se použije k vykreslení tahu vyhlazené. Můžete nastavit barvy a tloušťky tahu v **vlastnosti** okno.|  
+|**štětce**|Výběr active barva se použije k vykreslení tahu vyhlazené. Můžete nastavit barvy a tloušťky tahu v **vlastnosti** okno.|  
 |**Rozprašovač**|Výběr active barva se použije k vykreslení tahu vyhlazené, který smíchá společně s bitovou kopii a že bude sytější jako funkce čas. Můžete nastavit barvy a tloušťky tahu v **vlastnosti** okno.|  
 |**Kapátko**|Nastaví aktivní barva výběr barvy vybraných pixelů.|  
-|**Vyplnění**|Výběr active barva se použije k vyplnění oblasti obrázku. Ovlivněné oblast je definován jako pixelů, kdy se používá výplň, společně s každou pixelů, který je připojený ke svému pixelů stejné barvy a který je stejné barvy sám sebe. Výplň je použit v rámci aktivní výběr, je omezené oblasti ovlivněný výběrem.<br /><br /> Ve výchozím nastavení je spolu s ovlivněných oblast bitovou kopii podle jeho alfa součást smíšení active barva výběru. Pokud chcete přepsat oblasti ovlivněných pomocí active barva výběru, stiskněte a podržte klávesu Shift při použití nástroje výplně.|  
+|**výplně**|Výběr active barva se použije k vyplnění oblasti obrázku. Ovlivněné oblast je definován jako pixelů, kdy se používá výplň, společně s každou pixelů, který je připojený ke svému pixelů stejné barvy a který je stejné barvy sám sebe. Výplň je použit v rámci aktivní výběr, je omezené oblasti ovlivněný výběrem.<br /><br /> Ve výchozím nastavení je spolu s ovlivněných oblast bitovou kopii podle jeho alfa součást smíšení active barva výběru. Pokud chcete přepsat oblasti ovlivněných pomocí active barva výběru, stiskněte a podržte klávesu Shift při použití nástroje výplně.|  
 |**Mazání**|Nastaví pixelů na plně průhlednou barvu, pokud bitovou kopii podporuje kanálu alfa. Barva pozadí aktivní, jinak hodnota nastaví pixelů.|  
 |**Řádek**, **obdélníku**, **zaoblený obdélník**, **třemi tečkami**|Kreslení obrazce na bitovou kopii. Můžete nastavit barvy a Tloušťka obrysu v **vlastnosti** okno.<br /><br /> Kreslení na primitivní, který má stejné šířky a výšky, stiskněte a podržte stisknutou klávesu Shift při kreslení.|  
 |**Text**|Kreslení textu pomocí výběr barev popředí. Barva pozadí je určen podle výběr barvu pozadí. Alfa hodnota výběru barva pozadí pro průhledné pozadí, musí být 0. Při oblasti textu je aktivní, můžete nastavit, zda text vykreslením s tahu vyhlazené a můžete nastavit text **hodnotu**, **písma**, **velikost**a stylu –**Bold**, **Italics**, nebo **podtržené**– v **vlastnosti** okno. Obsah a vzhled textu je dokončené, když je již aktivní oblasti textu.|  
@@ -144,10 +142,10 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
   
 |Nástroj|Popis|  
 |----------|-----------------|  
-|**Tužky**, **štětce**, **rozprašovač**, **řádku**, **obdélníku**, **zaoblený obdélník**, **Elipsy**, **textu**|A přizpůsobte active barva výběru společně s bitovou kopii, v **vlastnosti** okno, rozbalte **kanály** skupinu vlastností a sadu **kreslení** zaškrtávací políčko je na  **Alpha** kanálu a pak kreslení normálně.<br /><br /> Kreslení pomocí active barva výběr a ponechejte alfa bitové kopie na místě, zrušte **kreslení** políčko z **Alpha** kanálu a pak kreslení normálně.|  
-|**Vyplnění**|A přizpůsobte active barva výběru společně s bitovou kopii, vyberte právě oblasti k vyplnění.<br /><br /> Použít active barva výběru – včetně hodnotu alfa kanálu – přepsat bitovou kopii, stiskněte a podržte stisknutou klávesu Shift a potom zvolte oblasti k vyplnění.|  
+|**Tužky**, **štětce**, **rozprašovač**, **řádku**, **obdélníku**, **zaoblený obdélník** , **Elipsy**, **textu**|A přizpůsobte active barva výběru společně s bitovou kopii, v **vlastnosti** okno, rozbalte **kanály** skupinu vlastností a sadu **kreslení** zaškrtávací políčko je na  **Alpha** kanálu a pak kreslení normálně.<br /><br /> Kreslení pomocí active barva výběr a ponechejte alfa bitové kopie na místě, zrušte **kreslení** políčko z **Alpha** kanálu a pak kreslení normálně.|  
+|**výplně**|A přizpůsobte active barva výběru společně s bitovou kopii, vyberte právě oblasti k vyplnění.<br /><br /> Použít active barva výběru – včetně hodnotu alfa kanálu – přepsat bitovou kopii, stiskněte a podržte stisknutou klávesu Shift a potom zvolte oblasti k vyplnění.|  
   
-###  <a name="ImageProperties"></a>Vlastnosti bitové kopie  
+###  <a name="ImageProperties"></a> Vlastnosti bitové kopie  
  Můžete použít **vlastnosti** okno zadat různé vlastnosti bitové kopie. Například můžete nastavit vlastnosti Šířka a výška obrázku.  
   
  Následující tabulka popisuje vlastnosti bitové kopie.  
@@ -208,7 +206,7 @@ Tento dokument popisuje, jak pracovat [!INCLUDE[vsprvs](../code-quality/includes
 |CTRL|||Zkopíruje a poté změní obsah vybrané oblasti.|  
 |CTRL|Posunutí||Zkopíruje a úměrně změní obsah vybrané oblasti.|  
   
-####  <a name="ToolProperties"></a>Vlastnosti nástroje  
+####  <a name="ToolProperties"></a> Vlastnosti nástroje  
  Nástroj je vybráno, můžete použít **vlastnosti** okna zadejte podrobnosti o tom, jak ovlivňuje bitovou kopii. Například můžete nastavit tloušťka **tužky** nástroje nebo barvu **štětce** nástroj.  
   
  Můžete nastavit barvu popředí a barvu pozadí. Obě podporují alfa kanálu zajistit krytí definovaný uživatelem. Nastavení budou platit pro všechny nástroje. Pokud používáte myši, levým tlačítkem myši odpovídá barvu popředí a odpovídá pravým tlačítkem myši na barvu pozadí.  

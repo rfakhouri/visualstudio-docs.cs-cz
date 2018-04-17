@@ -1,13 +1,10 @@
 ---
-title: "Vzdálené ladění jazyka C# nebo projektu jazyka Visual Basic v sadě Visual Studio | Microsoft Docs"
+title: Vzdálené ladění jazyka C# nebo projektu jazyka Visual Basic v sadě Visual Studio | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 - FSharp
@@ -17,17 +14,16 @@ dev_langs:
 helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: a9753fbb-e7f4-47f0-9dbe-9de90c6c8457
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6546e58139b4c427f6bbc4343faf64bdd655b63e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a7c6892eb43191c69608e66b05f8177777e3e006
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Vzdálené ladění projektu C# nebo Visual Basic v sadě Visual Studio
 K ladění aplikace z Visual Studia, která byla nasazena do jiného počítače, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace, nakonfigurujete svůj projekt pro připojení ke vzdálenému počítači ze sady Visual Studio a pak spusťte aplikaci.
@@ -50,14 +46,14 @@ Vzdáleného ladicího programu je podporována v systému Windows 7 nebo nověj
 > [!TIP]
 > V některých případech může být nejúčinnější ke spuštění vzdáleného ladicího programu ze sdílené složky. Další informace najdete v tématu [spuštění vzdáleného ladicího programu ze sdílené složky](../debugger/remote-debugging.md#fileshare_msvsmon).
   
-## <a name="BKMK_setup"></a>Nastavení vzdáleného ladicího programu
+## <a name="BKMK_setup"></a> Nastavení vzdáleného ladicího programu
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Pokud potřebujete přidat oprávnění pro všechny další uživatele, změna režimu ověřování, nebo číslo portu pro vzdáleného ladicího programu, najdete v části [konfigurovat vzdálený ladicí program](../debugger/remote-debugging.md#configure_msvsmon).
   
-## <a name="remote_csharp"></a>Vzdálené ladění projektu
+## <a name="remote_csharp"></a> Vzdálené ladění projektu
 Ladicí program nemůže nasadit Visual C# nebo Visual Basic aplikací klasické pracovní plochy ke vzdálenému počítači, ale stále je může vzdáleně následujícím způsobem ladění. Následující postup předpokládá, že chcete ladění na počítači s názvem **MJO DL**, jak je znázorněno na obrázku níže.
   
 1.  Vytvoření projektu WPF s názvem **MyWpf**.  
@@ -97,7 +93,7 @@ Ladicí program nemůže nasadit Visual C# nebo Visual Basic aplikací klasické
   
 13. Pokud se zobrazí výzva, zadejte přihlašovací údaje k síti pro připojení ke vzdálenému počítači.  
   
-     Požadovaná pověření se liší v závislosti na konfiguraci zabezpečení vaší sítě. V počítači domény, můžete například zadat název domény a heslo. Na počítači nepřipojená k doméně, můžete zadat název počítače a platné uživatelské jméno účtu, jako je třeba  **MJO-DL\name@something.com** , společně s správné heslo.
+     Požadovaná pověření se liší v závislosti na konfiguraci zabezpečení vaší sítě. V počítači domény, můžete například zadat název domény a heslo. Na počítači nepřipojená k doméně, můžete zadat název počítače a platné uživatelské jméno účtu, jako je třeba **MJO-DL\name@something.com**, společně s správné heslo.
 
      Měli byste vidět, že je hlavní okno aplikace WPF otevřít na vzdáleném počítači.
   

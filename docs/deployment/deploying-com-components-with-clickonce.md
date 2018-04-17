@@ -1,12 +1,10 @@
 ---
-title: "Nasazování komponent COM s ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Nasazování komponent COM s ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,23 +16,23 @@ helpviewer_keywords:
 - deploying applications [ClickOnce], COM components
 - components, deploying
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
-caps.latest.revision: "12"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: a63073e86c3584253e67bf4d77f43006104de075
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: c735eff8e33a8eb8a363e97a9621abc6f06c18e6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Nasazování komponent COM s ClickOnce
 Nasazení komponent COM starší verze tradičně bylo snadné. Součásti musí být globálně registrované a to může způsobit nežádoucí vedlejší účinky mezi překrývající se aplikace. Tato situace se obecně nejedná o problém v aplikacích rozhraní .NET Framework protože součásti jsou naprosto izolované aplikace nebo jsou kompatibilní vedle sebe. Visual Studio umožňuje nasadit izolované komponenty modelu COM v systému Windows XP nebo novější operační systém.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]poskytuje snadný a bezpečný mechanismus pro nasazení aplikací .NET. Ale pokud aplikace používají starší verze komponenty modelu COM, musíte provést další kroky k jejich nasazení. Toto téma popisuje, jak nasadit izolované součásti COM a referenční nativní součásti (například z Visual Basic 6.0 nebo Visual C++).  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] poskytuje snadný a bezpečný mechanismus pro nasazení aplikací .NET. Ale pokud aplikace používají starší verze komponenty modelu COM, musíte provést další kroky k jejich nasazení. Toto téma popisuje, jak nasadit izolované součásti COM a referenční nativní součásti (například z Visual Basic 6.0 nebo Visual C++).  
   
- Další informace o nasazení izolované komponenty modelu COM, najdete v části "zjednodušení nasazení aplikací s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a COM bez registrace" v [http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
+ Další informace o nasazení izolované komponenty modelu COM, najdete v části "zjednodušení nasazení aplikací s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a COM bez registrace" v [ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx).  
   
 ## <a name="registration-free-com"></a>COM bez registrace  
  COM bez registrace je novou technologií pro nasazení a aktivaci izolované komponenty modelu COM. Je založena na vložení všechny součásti knihovny typů a informace o registraci, který je obvykle nainstalován do systémového registru do souboru XML nazývaného manifest, uložené ve stejné složce jako aplikace.  
@@ -44,7 +42,7 @@ Nasazení komponent COM starší verze tradičně bylo snadné. Součásti musí
  Pokud generátor manifestu setká s izolovaným odkazem COM, zobrazí všechny `CoClass` položek v součásti knihovny typů, odpovídající každé položky s jeho odpovídající registrační data a generování manifestu definice pro všechny knihovny COM třídy v souboru typu knihovna.  
   
 ## <a name="deploying-registration-free-com-components-using-clickonce"></a>Nasazování komponent COM bez registrace pomocí ClickOnce  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]technologie nasazení je vhodná pro nasazení izolované komponenty modelu COM, protože obě [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a COM bez registrace vyžadují, aby součást měla manifest pro nasazení.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] technologie nasazení je vhodná pro nasazení izolované komponenty modelu COM, protože obě [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] a COM bez registrace vyžadují, aby součást měla manifest pro nasazení.  
   
  Autor součásti by měl obvykle poskytovat manifestu. Pokud ne, ale je schopen generování manifestu automaticky pro komponenty modelu COM Visual Studio. Generování manifestu je provedeno během [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] publikování procesu; Další informace najdete v tématu [publikování aplikací ClickOnce](../deployment/publishing-clickonce-applications.md). Tato funkce také umožňuje využít starší verzi součásti, které jsou vytvořené v dřívějších vývojových prostředí, jako je například Visual Basic 6.0.  
   

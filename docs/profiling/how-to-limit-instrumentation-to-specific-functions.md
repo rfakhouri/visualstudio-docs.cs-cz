@@ -1,27 +1,23 @@
 ---
-title: "Postupy: omezení instrumentace na konkrétní funkce | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: omezení instrumentace na konkrétní funkce | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cc476dc43562e5226ebd6564dfb2733f1d57ae
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: a7c5cc56dec707fadc30602fb1b912d17f1dc8f9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Postupy: Omezení instrumentace na konkrétní funkce
 Instrumentace a shromažďování dat pro jednu nebo více funkcí můžete omezit nastavením možností v **Upřesnit** stránky **výkonnostní relace** nebo cílení binární vlastnosti stránky:  
@@ -45,9 +41,9 @@ Instrumentace a shromažďování dat pro jednu nebo více funkcí můžete omez
   
 3.  V **dalších možností instrumentace** textové pole, použijte tuto syntaxi a zadejte název funkce, které chcete nástrojích:  
   
-     **/ include:** `FuncSpec` **[;** `FuncSpec` **]**`...`  
+     **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-     `FuncSpec`je název oboru názvů a funkce. Má formát `Namespace` **::**`FunctionName`. K oddělení více funkcí použijte středník. Pomocí hvězdičky (\*) k určení zástupný znak pro jeden nebo více znaků. Například **/ include: MyNS::\***  Určuje všechny funkce v oboru názvů MyNS.  
+     `FuncSpec` je název oboru názvů a funkce. Má formát `Namespace` **::**`FunctionName`. K oddělení více funkcí použijte středník. Pomocí hvězdičky (\*) k určení zástupný znak pro jeden nebo více znaků. Například **/ include: MyNS::\***  Určuje všechny funkce v oboru názvů MyNS.  
   
     > [!NOTE]
     >  Pro zobrazení seznamu funkcí v binární, otevřete okno příkazového řádku v nástrojích pro profilaci instalační adresář (obvykle adresáře nástroje \Team Tools\Performance pod [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] instalační adresář) a pak zadejte **vsinstr – / DumpFuncs**  
@@ -64,9 +60,9 @@ Instrumentace a shromažďování dat pro jednu nebo více funkcí můžete omez
   
 4.  V **dalších možností instrumentace** textové pole, použijte tuto syntaxi a zadejte název funkce, které chcete nástrojích:  
   
-     **/ include:** `FuncSpec` **[;** `FuncSpec` **]**`...`  
+     **/ include:** `FuncSpec` **[;** `FuncSpec` **]** `...`  
   
-     `FuncSpec`je název oboru názvů a funkce. Má formát `Namespace` **::**`FunctionName`. K oddělení více funkcí použijte středník. Pomocí hvězdičky (\*) k určení zástupný znak pro jeden nebo více znaků. Například **/ include: MyNS::\***  Určuje všechny funkce v oboru názvů MyNS.  
+     `FuncSpec` je název oboru názvů a funkce. Má formát `Namespace` **::**`FunctionName`. K oddělení více funkcí použijte středník. Pomocí hvězdičky (\*) k určení zástupný znak pro jeden nebo více znaků. Například **/ include: MyNS::\***  Určuje všechny funkce v oboru názvů MyNS.  
   
     > [!NOTE]
     >  Pro zobrazení seznamu funkcí v binární, otevřete okno příkazového řádku v nástrojích pro profilaci instalační adresář (obvykle adresáře nástroje \Team Tools\Performance pod [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] instalační adresář) a pak zadejte **vsinstr – / DumpFuncs**  

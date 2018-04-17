@@ -1,12 +1,10 @@
 ---
-title: "Vytváření aplikací ClickOnce z příkazového řádku | Microsoft Docs"
-ms.custom: 
+title: Vytváření aplikací ClickOnce z příkazového řádku | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - publishing
 - publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-caps.latest.revision: "23"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 39a64737c3e34b7e0c4d89824b22f169d60d4fd0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 183cb81798841c6640ea1b17d8db3820e0229769
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Vytváření aplikací ClickOnce z příkazového řádku
 V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], můžete vytvořit projekty z příkazového řádku, i když jsou vytvořeny v integrované vývojové prostředí (IDE). Ve skutečnosti můžete znovu sestavit projekt s [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] na jiném počítači, který je k dispozici pouze [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] nainstalována. To umožňuje reprodukci sestavení pomocí automatizovaného procesu, například v Centrální sestavení testovacího prostředí nebo pomocí pokročilých skriptovacích technik nad rámec sestavení projektu sám sebe.  
@@ -110,9 +108,9 @@ V [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)],
 msbuild /target:publish /property:BootstrapperEnabled=false  
 ```  
   
- Vlastnosti publikování jsou řízeny v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] z **publikovat**, **zabezpečení**, a **podpisování** stránek vlastností **Návrhář projektu** . Níže je uveden popis publikování vlastností spolu s údajem o každé nastavení na různých stránkách vlastnosti návrháře aplikací:  
+ Vlastnosti publikování jsou řízeny v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] z **publikovat**, **zabezpečení**, a **podpisování** stránek vlastností **Návrhář projektu **. Níže je uveden popis publikování vlastností spolu s údajem o každé nastavení na různých stránkách vlastnosti návrháře aplikací:  
   
--   `AssemblyOriginatorKeyFile`Určuje soubor klíče používaný k podepisování vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestů aplikace. Stejný klíč lze také přiřadit vaše sestavení silným názvem. Tato vlastnost nastavena na **podpisování** stránky **Návrhář projektu**.  
+-   `AssemblyOriginatorKeyFile` Určuje soubor klíče používaný k podepisování vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestů aplikace. Stejný klíč lze také přiřadit vaše sestavení silným názvem. Tato vlastnost nastavena na **podpisování** stránky **Návrhář projektu**.  
   
  Následující vlastnosti jsou nastaveny na **zabezpečení** stránky:  
   
@@ -122,41 +120,41 @@ msbuild /target:publish /property:BootstrapperEnabled=false
   
  Následující vlastnosti jsou nastaveny na **publikovat** stránky:  
   
--   `PublishUrl`je umístění, kde aplikace bude publikována v prostředí IDE. Je vložen do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace, pokud `InstallUrl` nebo `UpdateUrl` je zadána vlastnost.  
+-   `PublishUrl` je umístění, kde aplikace bude publikována v prostředí IDE. Je vložen do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifest aplikace, pokud `InstallUrl` nebo `UpdateUrl` je zadána vlastnost.  
   
--   `ApplicationVersion`Určuje verzi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Toto je verze čtyřmístné číslo. Pokud je poslední číslice "*", pak se `ApplicationRevision` je nahrazena hodnotou vloženou do manifestu v čase vytvoření buildu.  
+-   `ApplicationVersion` Určuje verzi [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace. Toto je verze čtyřmístné číslo. Pokud je poslední číslice "*", pak se `ApplicationRevision` je nahrazena hodnotou vloženou do manifestu v čase vytvoření buildu.  
   
--   `ApplicationRevision`Určuje revizi. Toto je celé číslo, které zvýší pokaždé, když publikujete v prostředí IDE. Všimněte si, že není automaticky zvýšen pro sestavení prováděná v příkazovém řádku.  
+-   `ApplicationRevision` Určuje revizi. Toto je celé číslo, které zvýší pokaždé, když publikujete v prostředí IDE. Všimněte si, že není automaticky zvýšen pro sestavení prováděná v příkazovém řádku.  
   
--   `Install`Určuje, zda je nainstalovaná aplikace nebo spustit z webové aplikace.  
+-   `Install` Určuje, zda je nainstalovaná aplikace nebo spustit z webové aplikace.  
   
--   `InstallUrl`(není vidět) je umístění, kde budou uživatelé instalovat aplikace z. -Li zadána, tato hodnota je zapsaný do zaváděcího nástroje setup.exe, pokud `IsWebBootstrapper` vlastnost povolena. Je rovněž vložen do manifestu aplikace, pokud `UpdateUrl` není zadán.  
+-   `InstallUrl` (není vidět) je umístění, kde budou uživatelé instalovat aplikace z. -Li zadána, tato hodnota je zapsaný do zaváděcího nástroje setup.exe, pokud `IsWebBootstrapper` vlastnost povolena. Je rovněž vložen do manifestu aplikace, pokud `UpdateUrl` není zadán.  
   
--   `SupportUrl`(není vidět) je umístění propojené v **přidat nebo odebrat programy** dialogové okno pro nainstalované aplikace.  
+-   `SupportUrl` (není vidět) je umístění propojené v **přidat nebo odebrat programy** dialogové okno pro nainstalované aplikace.  
   
  Následující vlastnosti jsou nastaveny **aktualizace aplikace** dialogové okno, k němu přistupovat z **publikovat** stránky.  
   
--   `UpdateEnabled`Určuje, zda by měla aplikace vyhledat aktualizace.  
+-   `UpdateEnabled` Určuje, zda by měla aplikace vyhledat aktualizace.  
   
--   `UpdateMode`Určuje aktualizace na popředí nebo pozadí aktualizace.  
+-   `UpdateMode` Určuje aktualizace na popředí nebo pozadí aktualizace.  
   
--   `UpdateInterval`Určuje, jak často by měla aplikace vyhledat aktualizace.  
+-   `UpdateInterval` Určuje, jak často by měla aplikace vyhledat aktualizace.  
   
--   `UpdateIntervalUnits`Určuje, zda `UpdateInterval` hodnota je jednotek hodiny, dny nebo týdny.  
+-   `UpdateIntervalUnits` Určuje, zda `UpdateInterval` hodnota je jednotek hodiny, dny nebo týdny.  
   
--   `UpdateUrl`(není vidět) je umístění, ze kterého bude aplikace přijímat aktualizace. -Li zadána, tato hodnota je vložen do manifestu aplikace.  
+-   `UpdateUrl` (není vidět) je umístění, ze kterého bude aplikace přijímat aktualizace. -Li zadána, tato hodnota je vložen do manifestu aplikace.  
   
 -   Následující vlastnosti jsou nastaveny **možnosti publikování** dialogové okno, k němu přistupovat z **publikovat** stránky.  
   
--   `PublisherName`Určuje název vydavatele zobrazený ve výzvě zobrazené při instalaci nebo spuštění aplikace. V případě instalované aplikace, je také použít k zadání názvu složky na **spustit** nabídky.  
+-   `PublisherName` Určuje název vydavatele zobrazený ve výzvě zobrazené při instalaci nebo spuštění aplikace. V případě instalované aplikace, je také použít k zadání názvu složky na **spustit** nabídky.  
   
--   `ProductName`Určuje název produktu zobrazený ve výzvě zobrazené při instalaci nebo spuštění aplikace. V případě instalované aplikace, je také použít k zadání názvu odkazu na **spustit** nabídky.  
+-   `ProductName` Určuje název produktu zobrazený ve výzvě zobrazené při instalaci nebo spuštění aplikace. V případě instalované aplikace, je také použít k zadání názvu odkazu na **spustit** nabídky.  
   
 -   Následující vlastnosti jsou nastaveny **požadavky** dialogové okno, k němu přistupovat z **publikovat** stránky.  
   
--   `BootstrapperEnabled`Určuje, jestli se má generovat zavaděč setup.exe.  
+-   `BootstrapperEnabled` Určuje, jestli se má generovat zavaděč setup.exe.  
   
--   `IsWebBootstrapper`Určuje, zda zaváděcí nástroj setup.exe funguje na webu nebo v režimu založené na disku.  
+-   `IsWebBootstrapper` Určuje, zda zaváděcí nástroj setup.exe funguje na webu nebo v režimu založené na disku.  
   
 ## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL, SupportUrl, PublishURL a UpdateURL  
  Následující tabulka znázorňuje čtyři možnosti adresu URL pro ClickOnce – nasazení.  

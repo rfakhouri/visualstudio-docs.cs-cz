@@ -1,28 +1,26 @@
 ---
-title: "-Sestavení (devenv.exe) | Microsoft Docs"
-ms.custom: 
+title: -Sestavení (devenv.exe) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - builds [Team System], command-line
 - /build Devenv switch
 - Devenv, /build switch
 - build Devenv switch
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 8eba6684167e4b60f02512e9b0fc1c7dc514a614
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1cc01dac34723f2a587e76461d41a60361a72091
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 Sestavení řešení pomocí konfiguračního souboru zadaného řešení.  
@@ -40,10 +38,10 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
  `SolnConfigName`  
  Požadováno. Název konfigurace řešení, který se použije k vytvoření řešení s názvem v `SolutionName`.  
   
- / Project`ProjName`  
+ / Project `ProjName`  
  Volitelné. Cesta a název souboru projektu v rámci řešení. Můžete zadat relativní cestu z `SolutionName` složku pro soubor projektu nebo projektu zobrazovaný název, nebo úplnou cestu a název souboru projektu.  
   
- / projectconfig –`ProjConfigName`  
+ / projectconfig – `ProjConfigName`  
  Volitelné. Konfigurace, který se má použít při vytváření sestavení název projektu `/project` s názvem.  
   
 ## <a name="remarks"></a>Poznámky  

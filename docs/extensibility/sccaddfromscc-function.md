@@ -1,29 +1,25 @@
 ---
 title: Funkce SccAddFromScc | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccAddFromScc
 helpviewer_keywords:
 - SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f92950bc833c2d2658c3e13cd7e800e877b32de9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: ce2d9d179fd46bcc63340c911437486e1a459195
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc – funkce
 Tato funkce umožňuje uživatelům procházet soubory, které jsou již v systému správy zdrojového kódu a následně Zkontrolujte tyto soubory součástí aktuálního projektu. Například můžete tuto funkci získat běžné hlavičkový soubor do aktuálního projektu bez kopírování souboru. Pole návratový souborů, `lplpFileNames`, obsahuje seznam souborů, které chce uživatel přidat do projektu IDE.  
@@ -66,9 +62,9 @@ SCCRTN SccAddFromScc (
   
  Při volání `SccAddFromScc` funkce vrátí, modul plug-in jeho přiřazení hodnoty k `lpnFiles` a `lplpFileNames`, přidělování paměti pro pole název souboru podle potřeby (Všimněte si, že toto přidělení nahrazuje ukazatel v `lplpFileNames`). Správa zdrojového kódu modul plug-in je zodpovědný za umístění všech souborů do adresáře uživatele nebo ve složce zadané označení. Prostředí IDE potom přidá soubory do projektu IDE.  
   
- Nakonec IDE volání této funkce podruhé, předávání v `NULL` pro `lpnFiles`. To je interpretovat jako speciální signál k uvolnění je paměť přidělená pro pole název souboru v modulu plug-in zdrojového kódu`lplpFileNames``.`  
+ Nakonec IDE volání této funkce podruhé, předávání v `NULL` pro `lpnFiles`. To je interpretovat jako speciální signál k uvolnění je paměť přidělená pro pole název souboru v modulu plug-in zdrojového kódu `lplpFileNames``.`  
   
- `lplpFileNames`je `char ***` ukazatel. Modul plug-in správy zdroje umístí ukazatel na pole ukazatele na názvy souborů, proto předávání seznamu v standardním způsobem pro toto rozhraní API.  
+ `lplpFileNames` je `char ***` ukazatel. Modul plug-in správy zdroje umístí ukazatel na pole ukazatele na názvy souborů, proto předávání seznamu v standardním způsobem pro toto rozhraní API.  
   
 > [!NOTE]
 >  Počáteční verze rozhraní API VSSCI neposkytnul způsob, jak vyjádřit cíl projektu přidané soubory. Pro uložení tohoto sémantika `lplpFIleNames` parametr vylepšené a nastavit jej jako vstup/výstup parametru spíše než výstupní parametr. Pokud jenom jeden soubor je zadán, který je hodnota na kterou odkazuje `lpnFiles` = 1, pak první prvek `lplpFileNames` obsahuje cílové složky. Použít tyto nové sémantiku IDE volání `SccSetOption` fungovat s `nOption`parametr nastaven na `SCC_OPT_SHARESUBPROJ`. Pokud modul plug-in správy zdroje nepodporuje sémantiky, vrátí `SCC_E_OPTNOTSUPPORTED`. Díky tomu tak zakáže použití **přidat od správy zdrojového kódu** funkce. Pokud modul plug-in podporuje **přidat od správy zdrojového kódu** funkce (`SCC_CAP_ADDFROMSCC`), pak musí podporovat nové sémantiku a vrátí `SCC_I_SHARESUBPROJOK`.  

@@ -1,28 +1,26 @@
 ---
-title: "Rozložení pro sadu Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Rozložení pro sadu Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
-caps.latest.revision: "2"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ef3c590a82fc3a7b89d21684ffe2e4b0f216ca98
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2e26caa6e47f0f2ee2a20611cf12e166832e007b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="layout-for-visual-studio"></a>Rozložení pro sadu Visual Studio
 Většina dialogová okna v sadě Visual Studio je [rozložení dialogové okno nástroj](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), které jsou unthemed tento standard postupujte podle kroků v dialogových oknech [Windows Desktop dialogové okno rozložení Principy](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742499\(v=vs.85\).aspx). Při přesunu Visual Studio k aktualizaci jeho uživatelském rozhraní, některé výraznější dialogová okna mají nový návrh, který stanoví je jako produktu definování prostředí. Tyto [motivu dialogové okno rozložení](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) vzhled motivu.  
   
-##  <a name="BKMK_UtilityDialogLayout"></a>Dialogové okno nástroj rozložení  
+##  <a name="BKMK_UtilityDialogLayout"></a> Dialogové okno nástroj rozložení  
   
 -   Všechny ovládací prvky v dialogovém okně Nástroj začínat v horní části levého a toku dolů.  
   
@@ -104,7 +102,7 @@ Většina dialogová okna v sadě Visual Studio je [rozložení dialogové okno 
   
 -   Délka řádku by měla být možnost šířku pro uživatele, pro analýzu a číst. Střední dialogové okno by měl být delší než 550 pixelů.  
   
-####  <a name="BKMK_InteriorCommandButtons"></a>Vnitřní příkazová tlačítka  
+####  <a name="BKMK_InteriorCommandButtons"></a> Vnitřní příkazová tlačítka  
  V dialogových oknech složitější pravděpodobně ovládacího prvku interní vlastní související tlačítka, které by mohly ovlivnit, kde se nachází dialogové okno potvrzení tlačítka.  
   
 -   Svislé zarovnání (sloupec) interior tlačítka při použití **OK**/**zrušit** jsou orientovány vodorovně v pravém dolním rohu.  
@@ -124,7 +122,7 @@ Většina dialogová okna v sadě Visual Studio je [rozložení dialogové okno 
 #### <a name="browse-button"></a>[Procházet...] tlačítko  
  **[Procházet...]**  tlačítka, které budou následovat v textovém poli by se "Procházet..." pravopisu v úplné, včetně se třemi tečkami. Pokud je na úzkou místa nebo je více **[Procházet...]**  tlačítka v dialogovém okně tlačítko se může snížit na právě se třemi tečkami.  
   
-##  <a name="BKMK_ThemedDialogLayout"></a>Rozložení motivu dialogové okno  
+##  <a name="BKMK_ThemedDialogLayout"></a> Rozložení motivu dialogové okno  
  Motivu dialogová okna v sadě Visual Studio světlejší vzhled a nabízí další prázdné znaky. Typografie poskytuje další zvýraznění a zájmu, nabízí více otevřete mezery mezi řádky a změnu velikosti písem a váhu. Kde je to možné, byly chrome a název řádky snížit nebo odebrat. Rozložení tyto dialogy postupujte podle tohoto vzoru základní:  
   
 1.  Je bílé pozadí dialogového okna.  

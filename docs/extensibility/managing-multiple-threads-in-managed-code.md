@@ -1,23 +1,21 @@
 ---
-title: "Postupy: Správa více vláken ve spravovaném kódu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Správa více vláken ve spravovaném kódu | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 84d59a626fbe745532d0e2499d7ba9a4c3105f5e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: c0888a0f65f36d624deffac60ceee032d3f3d13a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>Postupy: Správa více vláken ve spravovaném kódu
 Pokud máte spravované VSPackage rozšíření, které volá asynchronní metody, nebo se operace, které jsou spouštěny na vláken než vlákna uživatelského rozhraní Visual Studio, postupujte podle níže uvedených pokynů. Vlákna uživatelského rozhraní můžete zachovat reakce, protože není třeba čekat pro práci na jiné vlákno k dokončení. Můžete provést kódu efektivnější, protože nemáte navíc vláken, které zabírají prostor v zásobníku, a je možné provádět spolehlivější a snazší ladění, protože se vyhnout blokování a zablokování.  

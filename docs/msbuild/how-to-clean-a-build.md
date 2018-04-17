@@ -1,29 +1,25 @@
 ---
-title: "Postupy: Vyčištění sestavení | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Vyčištění sestavení | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, cleaning a build
 - directories [.NET Framework], for output items
 - output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a459733e94657a711e6b28a0ae00952afae0543
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 556aa4593165513d5dedf266f9d18a5481c852a1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-clean-a-build"></a>Postupy: Vyčištění sestavení
 Při čištění sestavení se odstraní všechny zprostředkující a výstupní soubory, ponechat pouze soubory projektu a součást. Ze souborů projektu a součást nové instance třídy mezilehlých a výstupní soubory pak se dají vytvářet. Knihovny běžných úloh, které je k dispozici s [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zahrnuje [Exec](../msbuild/exec-task.md) úlohu, která můžete použít ke spuštění příkazů systému. Další informace o knihovně úlohy najdete v tématu [– Reference úlohy](../msbuild/msbuild-task-reference.md).  
@@ -55,7 +51,7 @@ Při čištění sestavení se odstraní všechny zprostředkující a výstupn�
 ## <a name="example"></a>Příklad  
  Následující kód například projekt obsahuje nový cíl, `Clean`, která používá `RemoveDir` úloha odstranění adresáře a všechny soubory a adresáře, které obsahuje. Také v tomto příkladu `Compile` cíl vytvoří samostatné adresář pro výstupní položky, které jsou odstraněny při sestavení byla vyčištěna.  
   
- `Compile`je definován jako výchozí cíl a je proto použít automaticky Pokud zadáte jiný cíl nebo cíle. Použijte přepínač příkazového řádku **/target** k zadejte jiný cíl. Příklad:  
+ `Compile` je definován jako výchozí cíl a je proto použít automaticky Pokud zadáte jiný cíl nebo cíle. Použijte přepínač příkazového řádku **/target** k zadejte jiný cíl. Příklad:  
   
  `msbuild <file name>.proj /target:Clean`  
   

@@ -1,10 +1,8 @@
 ---
-title: "Generování textu běhu pomocí textových šablon T4 | Microsoft Docs"
-ms.custom: 
+title: Generování textu běhu pomocí textových šablon T4 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -15,15 +13,15 @@ helpviewer_keywords:
 - text templates, generating files at run time
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f3900a9f42791f4b71ef221bbeb1f010d1785917
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 30956435c321a45a3a1ee32a305080d35b073293
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generování textu za běhu pomocí textových šablon T4
 
@@ -440,4 +438,4 @@ Spuštění šablony lze použít v jakékoli aplikaci určeným šablony a jeji
 
 - [Vytvoření kódu a textové šablony T4](../modeling/code-generation-and-t4-text-templates.md)
 - [Zápis textové šablony T4](../modeling/writing-a-t4-text-template.md)
-- [T4 Toolbox](http://olegsych.com/T4Toolbox/)
+- [Sada nástrojů T4](http://olegsych.com/T4Toolbox/)

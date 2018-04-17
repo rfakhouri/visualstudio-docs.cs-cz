@@ -3,11 +3,8 @@ title: Nainstalovat Visual Studio 2017 | Microsoft Docs
 description: Informace o instalaci sady Visual Studio, krok za krokem.
 ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -22,11 +19,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f6acdd338b0ae8d23fba338c8564d2bd95ad45
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 84aff338342d00c173176493b5509372e3a868c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-visual-studio-2017"></a>Nainstalovat Visual Studio 2017
 Vítá vás nový způsob instalaci sady Visual Studio! V našem nejnovější verzi jsme provedli jsme je snazší pro vás k výběru a instalaci součástí, které potřebujete. Také jsme jste snížení nároků sady Visual Studio tak, aby nainstaloval rychleji a s menšími dopady na systém než kdy dřív.
@@ -64,9 +61,9 @@ Potom spusťte soubor zaváděcího nástroje nainstalovat Instalační program 
 
 1.  Z vaší **stáhne** složku, klikněte dvakrát na zavaděč, který odpovídá nebo podobný jedné z následujících souborů:
 
-  * **vs_enterprise.exe** for Visual Studio Enterprise
+  * **vs_enterprise.exe** pro Visual Studio Enterprise
   * **vs_professional.exe** for Visual Studio Professional
-  * **vs_community.exe** for Visual Studio Community  <br><br>
+  * **vs_community.exe** pro Visual Studio Community  <br><br>
 
   Pokud se zobrazí oznámení o řízení uživatelských účtů, klikněte na tlačítko **Ano**.
 

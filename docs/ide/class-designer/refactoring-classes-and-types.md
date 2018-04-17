@@ -1,13 +1,10 @@
 ---
-title: "Refaktoring tříd a typů (návrhář tříd) | Microsoft Docs"
-ms.custom: 
+title: Refaktoring tříd a typů (návrhář tříd) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
 helpviewer_keywords:
@@ -20,17 +17,16 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bdf6237fdbfb6e15df0d58835c260252cd8efdb
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: d9f84c0b6fe661b480f13f03221360c8f7bc6583
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoring tříd a typů (návrhář tříd)
 
@@ -47,7 +43,7 @@ Při zrefaktorujete kódu, které usnadňují pochopit, údržbu a efektivnějš
 |**Práce s rozhraní:** v Návrháři tříd můžete implementovat rozhraní v diagramu tříd propojením na třídu, která obsahuje kód pro metodu rozhraní.|-   [Postupy: implementace rozhraní](how-to-implement-an-interface.md)|  
 |**Refaktoring typy, členy typu a parametry:** pomocí návrháře tříd můžete přejmenovat typy, přepsat členy typu nebo přesunuty z jednoho typu do jiného. Můžete také vytvořit typy s možnou hodnotou Null.|-   [Přejmenování typy a členy typu](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Přesunutí členy typu ze jeden typ](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [Postupy: vytvoření typu s povolenou hodnotou Null](how-to-create-a-nullable-type.md)|  
   
-###  <a name="RenamingTypesAndMembers"></a>Přejmenování typy a členy typu  
+###  <a name="RenamingTypesAndMembers"></a> Přejmenování typy a členy typu  
 V Návrháři tříd můžete přejmenovat typ nebo člen typu v diagramu tříd nebo v okně Vlastnosti. V okně podrobností třídy můžete změnit název člena, ale není typu. Přejmenování typ nebo člen typu rozšíří na všechny windows a kód umístění, kde se objevil starý název.  
   
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Chcete-li přejmenovat název v Návrháři tříd  
@@ -81,7 +77,7 @@ V Návrháři tříd můžete přejmenovat typ nebo člen typu v diagramu tříd
   
      Nový název rozšíří na všechny windows a kód umístění v aktuálním projektu, kde se objevil starý název.  
   
-###  <a name="MovingTypeMembers"></a>Přesunutí členy typu ze jeden typ  
+###  <a name="MovingTypeMembers"></a> Přesunutí členy typu ze jeden typ  
 Pomocí **návrhář tříd**, můžete přesunout člena typu jeden typ na jiný typ, pokud jsou obě viditelné v aktuální diagramu tříd.  
   
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>K přesunutí člena typu ze jeden typ  

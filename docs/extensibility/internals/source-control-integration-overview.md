@@ -1,33 +1,29 @@
 ---
-title: "Zdroj – Přehled ovládacího prvku integrace | Microsoft Docs"
-ms.custom: 
+title: Zdroj – Přehled ovládacího prvku integrace | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd7b6a48b00e8bef62ff801519fc35cdc163902d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 19d75936e21729729dfeafaa041d800acbe01caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-integration-overview"></a>Přehled integrace správy zdrojového kódu
 Tato část porovná dva způsoby, jak integrovat do zdrojového kódu pro Visual Studio; Správa zdrojového kódu modulů Plug-in a VSPackage, která poskytuje řešením pro řízení zdrojového a označuje nové funkce správy zdrojového. Visual Studio umožňuje ruční přepínání mezi VSPackages zdrojového kódu a modulů plug-in programu zdroj ovládacího prvku a také automatického přepínání na základě řešení.  
   
 ## <a name="source-control-integration"></a>Integrace ovládacích prvků zdrojového  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]podporuje dva typy možností integrace zdroj ovládacího prvku. Ve všech verzích [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], stále můžete integrovat na zdroj ovládacího prvku Plug-in volání rozhraní API (dříve také označovány jako MSSCCI rozhraní API), která poskytuje funkce správy základní zdrojového při použití sady Visual Studio zdroj ovládacího prvku uživatelského rozhraní (na základě typu modulu plug-in UŽIVATELSKÉ ROZHRANÍ). Správa zdrojového kódu VSPackage na druhé straně poskytuje nové, hluboká integrace [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] cesty vhodné pro integrace ovládacích prvků zdrojového, která požaduje vysokou úroveň vyspělosti a nezávislé ve model řízení její zdroj.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje dva typy možností integrace zdroj ovládacího prvku. Ve všech verzích [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], stále můžete integrovat na zdroj ovládacího prvku Plug-in volání rozhraní API (dříve také označovány jako MSSCCI rozhraní API), která poskytuje funkce správy základní zdrojového při použití sady Visual Studio zdroj ovládacího prvku uživatelského rozhraní (na základě typu modulu plug-in UŽIVATELSKÉ ROZHRANÍ). Správa zdrojového kódu VSPackage na druhé straně poskytuje nové, hluboká integrace [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] cesty vhodné pro integrace ovládacích prvků zdrojového, která požaduje vysokou úroveň vyspělosti a nezávislé ve model řízení její zdroj.  
   
  ![Zdroj – Přehled ovládacího prvku](../../extensibility/internals/media/sourcectnrloverview.gif "SourceCtnrlOverview")  
   
@@ -61,7 +57,7 @@ Tato část porovná dva způsoby, jak integrovat do zdrojového kódu pro Visua
 -   Je jednodušší implementaci ovládacího prvku zdroj modulu plug-in než VSPackage Správa zdrojového kódu.  
   
 ## <a name="source-control-vspackage"></a>VSPackage zdroj ovládacího prvku  
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]Umožňuje těsná integrace do sady Visual Studio s plnou kontrolu nad funkce správy zdrojového a úplné nahrazení uživatelského rozhraní pro řízení zdrojového poskytované sadě Visual Studio. Správa zdrojového kódu VSPackage je zaregistrován pomocí sady Visual Studio a poskytuje funkce správy zdrojového. I když několik zdrojového kódu VSPackages lze registrovat pomocí sady Visual Studio, pouze jedna z nich můžou být aktivní v daném okamžiku. Správa zdrojového kódu VSPackage má plnou kontrolu nad funkce správy zdrojového a vzhled v sadě Visual Studio, i když je aktivní. Všechny ostatní zdrojového kódu VSPackages zaregistrované v systému nejsou aktivní a které nezobrazí žádné uživatelské rozhraní vůbec.  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] Umožňuje těsná integrace do sady Visual Studio s plnou kontrolu nad funkce správy zdrojového a úplné nahrazení uživatelského rozhraní pro řízení zdrojového poskytované sadě Visual Studio. Správa zdrojového kódu VSPackage je zaregistrován pomocí sady Visual Studio a poskytuje funkce správy zdrojového. I když několik zdrojového kódu VSPackages lze registrovat pomocí sady Visual Studio, pouze jedna z nich můžou být aktivní v daném okamžiku. Správa zdrojového kódu VSPackage má plnou kontrolu nad funkce správy zdrojového a vzhled v sadě Visual Studio, i když je aktivní. Všechny ostatní zdrojového kódu VSPackages zaregistrované v systému nejsou aktivní a které nezobrazí žádné uživatelské rozhraní vůbec.  
   
  Implementace Správa zdrojového kódu VSPackage vyžaduje strategie "všechny nebo nic". Tvůrce zdrojového kódu VSPackage musí investovat významné množství úsilí v jeho implementaci počet rozhraní pro řízení zdrojového a nové prvky uživatelského rozhraní (dialogových oken, nabídek a panelů nástrojů) tak, aby pokrývalo funkci řízení celý zdrojový. V tématu [vytváření VSPackage řízení zdroj](../../extensibility/internals/creating-a-source-control-vspackage.md) další podrobnosti.  
   

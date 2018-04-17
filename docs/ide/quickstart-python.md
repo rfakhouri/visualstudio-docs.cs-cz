@@ -1,13 +1,10 @@
 ---
-title: 'Rychlý úvod: použijte sadu Visual Studio k vytvoření první webové aplikace Python | Microsoft Docs'
+title: 'Rychlý úvod: použijte sadu Visual Studio k vytvoření první webové aplikace Python'
 description: V tento rychlý start použijete k vytvoření jednoduché webové aplikace ve Python Flask framework pomocí sady Visual Studio.
 ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 dev_langs:
 - python
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71501e113bc744f430c6935dbf20bfd2ec533758
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 0666fa6fcb169ada6cb2a495e1c91290b127ce24
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-python-web-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první webové aplikace Python
 
@@ -33,7 +30,7 @@ Pokud jste ještě nenainstalovali Visual Studio, přejděte na [Visual Studio s
 
 Následujících kroků vytvořte prázdnou *projektu* který slouží jako kontejner pro aplikaci:
 
-1. Open Visual Studio 2017.
+1. Otevřete Visual Studio 2017.
 
 1. Z panelu horní nabídce zvolte **soubor > Nový > projekt...** .
 
@@ -121,7 +118,7 @@ Nyní jste připraveni přidat kousek kód Python implementovat minimální webo
 
 **Otázka: Kde I Další informace o Flask?**
 
-**Odpověď**: naleznete v dokumentaci Flask, počínaje [rychlý start Flask](https://flask.pocoo.org/docs/0.12/quickstart/) (flask.pocoo.org).
+**Odpověď**: naleznete v dokumentaci Flask, počínaje [rychlý start Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart) (flask.pocoo.org).
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 

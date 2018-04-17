@@ -1,12 +1,10 @@
 ---
-title: "Postupy: Přidání důvěryhodného vydavatele ke klientskému počítači pro aplikace ClickOnce | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Přidání důvěryhodného vydavatele ke klientskému počítači pro aplikace ClickOnce | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - ClickOnce deployment, install without prompting
 - trusted application deployment, Trusted Publishers
 ms.assetid: 35fe324c-45a1-4509-b7be-5c18b4b1b4ab
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 758bf6b7b12d8c32a1985b5c07ba5c66f3937415
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 659d0c53a0784439fdb6721070de736f4cf8e98c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Postupy: Přidání důvěryhodného vydavatele na klientskou stanici pro aplikace ClickOnce
 Nasazení důvěryhodné aplikace, můžete nakonfigurovat klientské počítače tak, aby vaše [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace spouštět s vyšší úrovní důvěryhodnosti bez výzvy pro uživatele. Následující postupy ukazují, jak pomocí nástroje příkazového řádku CertMgr.exe přidání certifikátu vydavatele do úložiště důvěryhodných vydavatelů v klientském počítači.  

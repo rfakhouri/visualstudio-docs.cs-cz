@@ -1,13 +1,10 @@
 ---
-title: "Techniky ladění MFC | Microsoft Docs"
-ms.custom: 
+title: Techniky ladění MFC | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - AfxEnableMemoryTracking
 - CMemoryState
@@ -26,23 +23,22 @@ dev_langs:
 helpviewer_keywords:
 - debugging [MFC]
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c4acfcd6cf289eae8f8abc58f589b2743b56a40
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f7f0dd5511640fe9ebb95dbdfb213ce7f37f6c8c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mfc-debugging-techniques"></a>Techniky ladění MFC
 Pokud ladíte aplikaci MFC, může být užitečné tyto techniky ladění.  
   
-##  <a name="BKMK_In_this_topic"></a>V tomto tématu  
- [AfxDebugBreak](#BKMK_AfxDebugBreak)  
+##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
+ [Afxdebugbreak –](#BKMK_AfxDebugBreak)  
   
  [Makro trasování](#BKMK_The_TRACE_macro)  
   
@@ -66,7 +62,7 @@ Pokud ladíte aplikaci MFC, může být užitečné tyto techniky ladění.
   
     -   [Vytvoření aplikace MFC s informace o ladění pro vybrané moduly](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
-##  <a name="BKMK_AfxDebugBreak"></a>Afxdebugbreak –  
+##  <a name="BKMK_AfxDebugBreak"></a> Afxdebugbreak –  
  Knihovna MFC poskytuje speciální [afxdebugbreak –](/cpp/mfc/reference/diagnostic-services#afxdebugbreak) funkce pro pevně kódováno zarážky ve zdrojovém kódu:  
   
 ```  
@@ -86,7 +82,7 @@ _asm int 3
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_TRACE_macro"></a>Makro trasování  
+##  <a name="BKMK_The_TRACE_macro"></a> Makro trasování  
  Chcete-li zobrazit zprávy z vaší aplikace v ladicím programu [výstup – okno](../ide/reference/output-window.md), můžete použít [ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) makro nebo knihovny MFC [trasování](http://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) – makro. Jako [kontrolní výrazy](../debugger/c-cpp-assertions.md), makra trasování jsou aktivní pouze ve verzi ladění vašeho programu a při zkompilovat ve verzi zmizí.  
   
  Následující příklady ukazují způsoby, kterými můžete **trasování** makro. Jako `printf`, **trasování** makro dokáže zpracovat počet argumentů.  
@@ -119,10 +115,10 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Memory_leak_detection_in_MFC"></a>Zjišťování nevracení paměti v prostředí MFC  
+##  <a name="BKMK_Memory_leak_detection_in_MFC"></a> Zjišťování nevracení paměti v prostředí MFC  
  Knihovna MFC poskytuje třídy a funkce pro zjišťování paměti, která je přidělena, ale nikdy navrácena.  
   
-###  <a name="BKMK_Tracking_memory_allocations"></a>Přidělení paměti pro sledování  
+###  <a name="BKMK_Tracking_memory_allocations"></a> Přidělení paměti pro sledování  
  V prostředí MFC, můžete použít makro [debug_new –](http://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) místě **nové** nevracení operátor pro usnadnění vyhledání paměti. V ladicí verze vašeho programu `DEBUG_NEW` uchovává informace o číslo, pro každý objekt, který přiděluje název a řádek souboru. Když zkompilujete verzi vašeho programu `DEBUG_NEW` přeloží na jednoduchý **nové** operaci bez název a řádek číslo informací o souboru. Tedy platit žádné snížení rychlosti ve verzi vašeho programu.  
   
  Pokud nechcete přepsání celý váš program používat `DEBUG_NEW` místě **nové**, toto makro můžete definovat ve zdrojových souborech:  
@@ -137,7 +133,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Enabling_memory_diagnostics"></a>Povolení diagnostiky paměti  
+###  <a name="BKMK_Enabling_memory_diagnostics"></a> Povolení diagnostiky paměti  
  Než budete moct použít zařízení diagnostiky paměti, je nutné povolit diagnostické trasování.  
   
  **K povolení nebo zakázání diagnostiky paměti**  
@@ -150,7 +146,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
     |Hodnota|Popis|  
     |-----------|-----------------|  
-    |**allocMemDF**|Zapněte přidělení diagnostiky paměti (výchozí).|  
+    |**allocmemdf –**|Zapněte přidělení diagnostiky paměti (výchozí).|  
     |**delayFreeMemDF**|Zpoždění při volání metody uvolnění paměti `delete` nebo `free` až do konce programu. To způsobí, že je váš program přidělit maximální množství paměti.|  
     |**checkAlwaysMemDF**|Volání [afxcheckmemory –](/cpp/mfc/reference/diagnostic-services#afxcheckmemory) pokaždé, když je paměti přidělené nebo vydání.|  
   
@@ -162,7 +158,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_memory_snapshots"></a>Pořizování snímků paměti  
+###  <a name="BKMK_Taking_memory_snapshots"></a> Pořizování snímků paměti  
   
 1.  Vytvoření [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) objekt a volání [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) – členská funkce. Tím se vytvoří první snímku paměti.  
   
@@ -199,7 +195,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Viewing_memory_statistics"></a>Zobrazení statistiky paměti  
+###  <a name="BKMK_Viewing_memory_statistics"></a> Zobrazení statistiky paměti  
  [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) funkce porovná dva objekty stav paměti a zjišťuje všechny objekty, které není zrušeno přidělení haldy mezi stavy začátek a konec. Poté, co jste pořídili snímky paměti a porovná je s pomocí `CMemoryState::Difference`, můžete volat [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) získat informace o objektech, které nebyly bylo zrušeno.  
   
  Podívejte se na následující příklad:  
@@ -228,14 +224,14 @@ Total allocations: 67 bytes
   
  Bloky non-object zahrnout pole a struktury přidělený `new`. V takovém případě čtyři bloky jiný objekt byly přiděleny na haldě, ale není navrácena.  
   
- `Largest number used`poskytuje maximální množství paměti používané program kdykoli.  
+ `Largest number used` poskytuje maximální množství paměti používané program kdykoli.  
   
- `Total allocations`poskytuje celkovém množství paměti, které program.  
+ `Total allocations` poskytuje celkovém množství paměti, které program.  
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_object_dumps"></a>Vezme objekt výpisy paměti  
- V aplikaci MFC můžete použít [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) vypsat popis všech objektů v haldě, které nebyly bylo zrušeno. `DumpAllObjectsSince`Vypíše všechny objekty přidělené od minulého [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint). Pokud žádné `Checkpoint` volání neproběhla, `DumpAllObjectsSince` vypíše všechny objekty a nonobjects aktuálně v paměti.  
+###  <a name="BKMK_Taking_object_dumps"></a> Vezme objekt výpisy paměti  
+ V aplikaci MFC můžete použít [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) vypsat popis všech objektů v haldě, které nebyly bylo zrušeno. `DumpAllObjectsSince` Vypíše všechny objekty přidělené od minulého [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint). Pokud žádné `Checkpoint` volání neproběhla, `DumpAllObjectsSince` vypíše všechny objekty a nonobjects aktuálně v paměti.  
   
 > [!NOTE]
 >  Než budete moct použít MFC vypsání objektu, musíte [zapnout diagnostické trasování](#BKMK_Enabling_Memory_Diagnostics).  
@@ -280,7 +276,7 @@ Phone #: 581-0215
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Interpreting_memory_dumps"></a>Interpretace paměti výpisy paměti  
+####  <a name="BKMK_Interpreting_memory_dumps"></a> Interpretace paměti výpisy paměti  
  Podívejte se na tento objekt výpisu podrobněji:  
   
 ```  
@@ -307,7 +303,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` Konstruktor přijímá tři argumenty, které jsou ukazatele na `char`, které se používají k inicializaci `CString` proměnné členů. V výpis stavu paměti, se zobrazí `CPerson` objekt spolu s tři nonobject bloky (3, 4 a 5). Tyto znaky pro uložení `CString` členské proměnné a nebude možné odstranit, když `CPerson` destruktoru objektu je volána.  
   
- Blok číslo 2 je `CPerson` samotného objektu. `$51A4`představuje adresu bloku a následuje obsah objektu, které byly výstupem `CPerson`::`Dump` při volání [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince).  
+ Blok číslo 2 je `CPerson` samotného objektu. `$51A4` představuje adresu bloku a následuje obsah objektu, které byly výstupem `CPerson`::`Dump` při volání [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince).  
   
  Snadno uhodnout je přidružen blok číslo 1 `CString` proměnné rámce z důvodu jeho pořadové číslo a velikost, která odpovídá počet znaků v rámečku `CString` proměnné. Proměnné přidělené rámec jsou automaticky zrušeno při rámečku ocitne mimo rozsah.  
   
@@ -363,7 +359,7 @@ Phone #: 581-0215
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Customizing_object_dumps"></a>Přizpůsobení objektu výpisy paměti  
+####  <a name="BKMK_Customizing_object_dumps"></a> Přizpůsobení objektu výpisy paměti  
  Pokud odvodíte třídu od [CObject](/cpp/mfc/reference/cobject-class), můžete přepsat `Dump` – členská funkce můžete poskytnout dodatečné informace, pokud používáte [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) k výpisu objekty, které se [Výstup – okno](../ide/reference/output-window.md).  
   
  `Dump` Funkce zapíše textovou reprezentaci objektu členské proměnné na kontext výpisu ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). Kontext výpisu je podobný datovému proudu vstupně-výstupních operací. Můžete použít operátor připojení (**<<**) pro odesílání dat na `CDumpContext`.  
@@ -418,7 +414,7 @@ pMyPerson->Dump( afxDump );
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a>Zmenšení velikosti sestavení pro ladění MFC  
+##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Zmenšení velikosti sestavení pro ladění MFC  
  Informace o ladění pro rozsáhlé aplikace MFC může trvat až velké množství místa na disku. Jeden z následujících postupů můžete použít ke snížení velikosti:  
   
 1.  Opětovné sestavení knihovny MFC pomocí [/Z7, / zi, /ZI (formát informace ladění)](/cpp/build/reference/z7-zi-zi-debug-information-format) možnost, místo **/Z7**. Tyto možnosti vytvořit soubor databáze (PDB) jeden program, který obsahuje informace o ladění pro celou knihovnu, snižuje redundance a ukládání místa.  
@@ -429,7 +425,7 @@ pMyPerson->Dump( afxDump );
   
  [V tomto tématu](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a>Vytvoření aplikace MFC s informace o ladění pro vybrané moduly  
+###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Vytvoření aplikace MFC s informace o ladění pro vybrané moduly  
  Vytváření vybraného modulů s ladění knihovny MFC umožňuje použití krokování a jiných ladění zařízení v těchto modulů. Tento postup využívá obou ladění a vydání režimy makefile Visual C++, proto očekávání změn popsaných v následující kroky (a také využívajícího "znovu vytvořit všechny" nezbytné, pokud je potřeba úplné sestavení pro vydání).  
   
 1.  V Průzkumníku řešení vyberte projekt.  

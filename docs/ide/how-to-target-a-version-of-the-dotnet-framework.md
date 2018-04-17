@@ -1,25 +1,22 @@
 ---
-title: "Cílová verze rozhraní .NET Framework v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Cílová verze rozhraní .NET Framework v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/06/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - .NET Framework version [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 03d8b734833fad5a47f0d5517b21a7851d9258a6
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 73cec2f27bfc2e29b9b9faa34c9c24ca2273210e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: cílení na verzi rozhraní .NET Framework
 
@@ -56,7 +53,7 @@ Informace o tom, jak změnit na cílovou verzi pro projekty C++ najdete v témat
 
 1. V levém sloupci okna vlastností, vyberte **aplikace** kartě.
 
-    ![Visual Studio App Properties Application tab](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
+    ![Visual Studio aplikace vlastnosti aplikace karta](../ide/media/vs_slnexplorer_properties_applicationtab.png "vs_slnExplorer_Properties_ApplicationTab")
 
     > [!NOTE]
     > Po vytvoření aplikace pro UPW, nelze změnit cílovou verzi systému Windows nebo rozhraní .NET Framework.

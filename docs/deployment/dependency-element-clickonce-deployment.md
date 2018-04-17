@@ -1,13 +1,10 @@
 ---
-title: "&lt;závislost&gt; – Element (ClickOnce – nasazení) | Microsoft Docs"
-ms.custom: 
+title: '&lt;závislost&gt; – Element (ClickOnce – nasazení) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -26,17 +23,16 @@ dev_langs:
 helpviewer_keywords:
 - <dependency> element [ClickOnce deployment manifest]
 ms.assetid: 9b4d2082-0347-4922-ac70-85f11b913039
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 8716da20c989a1a8d1e36d9e071e9802a06219bf
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8ffea3e279ba894f9990991ea620baaa50b3997d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;závislost&gt; – Element (ClickOnce – nasazení)
 Určuje verzi aplikace k instalaci a umístění manifestu aplikace.  
@@ -98,7 +94,7 @@ Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
 |Atribut|Popis|  
 |---------------|-----------------|  
 |`Name`|Požadováno. Určuje název aplikace.|  
-|`Version`|Požadováno. Určuje číslo verze aplikace, v následujícím formátu:`major.minor.build.revision`|  
+|`Version`|Požadováno. Určuje číslo verze aplikace, v následujícím formátu: `major.minor.build.revision`|  
 |`publicKeyToken`|Požadováno. Určuje řetězec šestnáctkových 16 znaků, který představuje posledních 8 bajtů hodnotu hash SHA-1 veřejný klíč, pod kterým je podepsaná aplikace nebo sestavení. Veřejný klíč používaný k podepisování musí být 2048 bitů nebo vyšší.|  
 |`processorArchitecture`|Požadováno. Určuje procesor. Platné hodnoty jsou `x86` pro 32bitový systém Windows a `IA64` pro 64bitový systém Windows.|  
 |`Language`|Volitelné. Identifikuje dvě součásti kódu jazyka sestavení. Například EN-US, což je zkratka pro angličtinu (US). Výchozí hodnota je `neutral`. Tento element má `asmv2` oboru názvů.|  
@@ -107,7 +103,7 @@ Určuje verzi aplikace k instalaci a umístění manifestu aplikace.
 ## <a name="hash"></a>hash  
  `hash` Element je volitelným podřízeným `file` elementu. `hash` Element nemá žádné atributy.  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]Ujistěte se, že žádné soubory byly změněny po nasazení používá algoritmické hodnotu hash všech souborů v aplikaci jako kontrolu zabezpečení. Pokud `hash` element neuvedete, nebude provedena kontrola. Proto vynechání `hash` element se nedoporučuje.  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Ujistěte se, že žádné soubory byly změněny po nasazení používá algoritmické hodnotu hash všech souborů v aplikaci jako kontrolu zabezpečení. Pokud `hash` element neuvedete, nebude provedena kontrola. Proto vynechání `hash` element se nedoporučuje.  
   
 ## <a name="dsigtransforms"></a>dsig:TRANSFORMS  
  `dsig:Transforms` Je požadovaný podřízený element `hash` elementu. `dsig:Transforms` Element nemá žádné atributy.  

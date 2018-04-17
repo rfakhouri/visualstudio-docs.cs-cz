@@ -1,12 +1,10 @@
 ---
-title: "Návod: Stahování satelitních sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Stahování satelitních sestavení na vyžádání pomocí nasazení ClickOnce pomocí návrháře rozhraní API | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - ClickOnce deployment, localization
 - walkthroughs, localization
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: b96665bb2d9e6395d32d85344e2fe2cdabc21951
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 3ee36095e0bd6945f4f382531ee114da3ac50c41
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce pomocí Návrháře
 Aplikace Windows Forms lze nakonfigurovat pro více jazykových verzí prostřednictvím satelitní sestavení. A *satelitní sestavení* je sestavení obsahující prostředky aplikace pro jazykovou verzi než výchozí jazykovou verzi aplikace.  

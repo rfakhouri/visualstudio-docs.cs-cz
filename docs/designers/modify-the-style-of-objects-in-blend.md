@@ -1,21 +1,18 @@
 ---
-title: "Úpravy stylu objektů v Blendu | Microsoft Docs"
-ms.custom: 
+title: Úpravy stylu objektů v Blendu
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3073255564f81273fb6c6001538abf98d78766f7
-ms.sourcegitcommit: 69b898d8d825c1a2d04777abf6d03e03fefcd6da
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 627e2c3f6d81eed00923b6fc15fef453ae7634ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Úpravy stylu objektů v Blendu
 
@@ -26,8 +23,6 @@ Pokud chcete znovu použít nastavení nebo skupiny nastavení, vytvořte opakov
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Štětce: Upravit vzhled objektu
 
 Použití štětce k objektu, pokud chcete změnit její vzhled.
-
-**Podívejte se na krátké video:** ![tlačítko Přehrát akci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [štětce Editor](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).
 
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Malovat opakující se bitovou kopii nebo vzor objektu
 
@@ -47,8 +42,6 @@ Vytvořte visual štětce z ovládací prvek tlačítko. Následující ilustrac
 
 ![Visual štětce](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png) ![Visual štětce vedle sebe](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png)
 
-**Podívejte se na krátké video:** ![tlačítko Přehrát akci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [dlaždice štětce](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).
-
 ## <a name="styles-and-templates-create-a-consistent-look-and-feel-across-controls"></a>Styly a šablony: vytvoření konzistentní vzhled a chování napříč ovládací prvky
 
 Můžete navrhnout vzhled a chování ovládacího prvku jednou a jiných ovládacích prvků použití tohoto návrhu tak, aby je nemuseli individuálně, zachovat.
@@ -59,7 +52,7 @@ Můžete navrhnout vzhled a chování ovládacího prvku jednou a jiných ovlád
 
 ### <a name="create-a-template-or-style"></a>Vytvořit šablonu ani styl
 
-Není k dispozici dva způsoby, jak vytvořit šablonu. Jakýkoli objekt můžete převést na vaše návrhové plochy do ovládacího prvku nebo šablony můžete založit na existujícího ovládacího prvku.
+Už existuje dva způsoby, jak vytvořit šablonu. Jakýkoli objekt můžete převést na vaše návrhové plochy do ovládacího prvku nebo šablony můžete založit na existujícího ovládacího prvku.
 
 Převést na šablonu řízení všech objektů, vyberte objekt a pak na **nástroje** nabídce zvolte **zkontrolujte do ovládacího prvku**.
 
@@ -81,7 +74,7 @@ V **vytvořit prostředek stylu** dialogové okno, můžete buď pojmenovat styl
 
 > [!NOTE]
 > Nelze vytvořit styly nebo šablon pro každý typ ovládacího prvku. Pokud je nepodporuje ovládacího prvku, se nezobrazí tlačítko s popisem cesty výše návrhové plochy.
-> Chcete-li vrátit úpravy rozsahu hlavního dokumentu, klikněte na tlačítko **vrátit obor** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Chcete-li vrátit úpravy rozsahu hlavního dokumentu, klikněte na tlačítko **vrátit obor** ![vrátit obor ikonu](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Použít styl nebo šablony do ovládacího prvku
 
@@ -91,7 +84,7 @@ Klikněte pravým tlačítkem na objekt v [objekty a časový horizont](../desig
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Obnovit výchozí styl nebo šablony ovládacího prvku
 
-Vyberte ovládací prvek a v [vlastnosti](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) panelu, vyhledejte **styl** nebo **šablony** vlastnost. Zvolte **rozšířené možnosti** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png)a potom klikněte na **resetovat** v místní nabídce.
+Vyberte ovládací prvek a v [vlastnosti](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel) panelu, vyhledejte **styl** nebo **šablony** vlastnost. Zvolte **rozšířené možnosti**a potom klikněte na **resetovat** v místní nabídce.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Visual stavy: Změna vzhledu ovládacího prvku na základě jeho stavu
 
@@ -101,13 +94,11 @@ Ovládací prvky může mít různé visual vzhledy na základě interakcí uži
 
 **Podívejte se na krátké video:** ![tlačítko Přehrát akci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Správa stavu ovládacích prvků WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
-##  <a name="Resources"></a>Prostředky: Vytvoření barvy, styly a šablony a opakovaném
+## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Prostředky: Vytvoření barvy, styly a šablony a opakovaném
 
 Můžete převést jakoukoli ve vašem projektu a prostředek. Prostředek se právě objekt, který můžete opakovaně použít na různých místech v aplikaci. Můžete například vytvořit barvu jednou, nastavte ho prostředku a potom použít na několik objektů. Chcete-li změnit barvu všech těchto objektů, právě změňte barvu prostředků.
 
 ![Převést barvu pro tlačítko prostředků](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Vytvořit prostředek barev – dialogové okno](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
-
-**Podívejte se na krátké video:** ![tlačítko Přehrát akci](../designers/media/bldadminconsoleinitialconfigicon.PNG) [stručný touch na prostředcích](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).
 
 ## <a name="see-also"></a>Viz také
 

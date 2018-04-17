@@ -1,26 +1,24 @@
 ---
 title: MSSCCPRJ. Soubor SCC | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-caps.latest.revision: "15"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 90a21ba6aafa0c5d06565c66531e2a6779aa419f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Soubor SCC
 Při řešení sady Visual Studio nebo projektu je umístěn ve správě zdrojového kódu pomocí rozhraní IDE, rozhraní IDE obdrží dvě důležité informace od správy zdrojového kódu ve formě řetězce modulu plug-in. Tyto řetězce "AuxPath" a "ProjName", jsou neprůhledné IDE, ale používají se modul plug-in provede najít řešení nebo projektu ve správě verzí. Prostředí IDE obvykle obdrží tyto řetězce první voláním [SccGetProjPath](../extensibility/sccgetprojpath-function.md), a je pak uloží do souboru řešení nebo produktu project pro budoucí volání [SccOpenProject](../extensibility/sccopenproject-function.md). Když vložen soubory řešení a projektu, řetězce "AuxPath" a "ProjName" se neaktualizují automaticky, když uživatel větví, větve, nebo zkopíruje soubory řešení a projektu, které jsou ve správě verzí. Abyste měli jistotu, že soubory řešení a projektu ukazují jejich správné umístění ve správě verzí, uživatelé musí ručně aktualizovat řetězce. Vzhledem k tomu, že řetězce mají být neprůhledné, nemusí být vždy zrušte způsob jejich aktualizace.  
@@ -46,23 +44,23 @@ Při řešení sady Visual Studio nebo projektu je umístěn ve správě zdrojov
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Obrázek MSSCCPRJ. Formát souboru SCC  
  Následuje ukázka MSSCCPRJ. Formát souboru SCC (čísla řádků jsou k dispozici pouze jako vodítko a by neměly být obsažené v těle souboru):  
   
- [Řádku 1]`SCC = This is a Source Code Control file`  
+ [Řádku 1] `SCC = This is a Source Code Control file`  
   
  [Řádek 2]  
   
- [Řádku 3]`[TestApp.sln]`  
+ [Řádku 3] `[TestApp.sln]`  
   
- [Řádek 4]`SCC_Aux_Path = "\\server\vss\"`  
+ [Řádek 4] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Řádku 5]`SCC_Project_Name = "$/TestApp"`  
+ [Řádku 5] `SCC_Project_Name = "$/TestApp"`  
   
  [Řádku 6]  
   
- [Řádku 7]`[TestApp.csproj]`  
+ [Řádku 7] `[TestApp.csproj]`  
   
- [Řádku 8]`SCC_Aux_Path = "\\server\vss\"`  
+ [Řádku 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Řádku 9]`SCC_Project_Name = "$/TestApp"`  
+ [Řádku 9] `SCC_Project_Name = "$/TestApp"`  
   
  První řádek stavy účel souboru a slouží jako signaturu pro všechny soubory tohoto typu. Tento řádek by se zobrazit úplně stejně jako v všechny MSSCCPRJ. SCC soubory:  
   

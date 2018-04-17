@@ -1,29 +1,25 @@
 ---
 title: Funkce SccInitialize | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccInitialize
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bf217218dcc1830cc2acf2833aa7e31e85745d9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccinitialize-function"></a>SccInitialize – funkce
 Tato funkce inicializuje modul plug-in zdrojového kódu a poskytuje možnosti a omezení na integrované vývojové prostředí (IDE).  
@@ -85,7 +81,7 @@ SCCRTN SccInitialize (
   
  `lpCallerName` a `lpSccName` parametry povolit IDE a modul plug-in zdrojového kódu pro výměnu názvy. Názvy těchto může být použit k rozlišení mezi více instancí, nebo může ve skutečnosti se v nabídkách a dialogových oknech.  
   
- `lpAuxPathLabel` Parametr je použit jako komentář k identifikaci cesty pomocného projektu, který je uložený v souboru řešení a předaný zdrojového kódu ve volání modulu plug-in řetězec [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]použije řetězec "projektu SourceSafe:"; Další zdroje řízení moduly plug-in neměly by pomocí tohoto konkrétního řetězce.  
+ `lpAuxPathLabel` Parametr je použit jako komentář k identifikaci cesty pomocného projektu, který je uložený v souboru řešení a předaný zdrojového kódu ve volání modulu plug-in řetězec [SccOpenProject](../extensibility/sccopenproject-function.md). [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] použije řetězec "projektu SourceSafe:"; Další zdroje řízení moduly plug-in neměly by pomocí tohoto konkrétního řetězce.  
   
  `lpSccCaps` Parametr dává zdrojového kódu modulu plug-in místo pro uložení bitové příznaky označující plug v na možnosti. (Úplný seznam bitové příznaky schopností najdete v tématu [schopností příznaky](../extensibility/capability-flags.md)). Například pokud modul plug-in plány zapsat výsledky do funkce zpětného volání zadaný volajícího, modul plug-in byste měli nastavit možnosti bit SCC_CAP_TEXTOUT. To by signál IDE vytvoření okna pro ovládací prvek výsledků verze.  
   

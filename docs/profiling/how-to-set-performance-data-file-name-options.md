@@ -1,25 +1,21 @@
 ---
-title: "Postupy: nastavení možností názvu datového souboru výkonu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: nastavení možností názvu datového souboru výkonu | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 07aecd8c21c97fd84ea7c286abade06b3e9de84e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 089732f39d4bbe4d27ae3665872af9239613f138
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Postupy: nastavení možností názvu datového souboru výkonu
 
@@ -31,10 +27,10 @@ Pro relaci, výkon, můžete změnit libovolný pojmenování parametr na strán
 
 |||
 |-|-|
-|*Path*|Adresář, který obsahuje sestavu. Výchozí umístění je složka řešení nebo výchozí umístění pro projekty a řešení pro uživatele.|
-|*VSP-File*|Název datového souboru profilování. Výchozí název je název řešení nebo spustitelného souboru, je profilovaným.|
+|*Cesta*|Adresář, který obsahuje sestavu. Výchozí umístění je složka řešení nebo výchozí umístění pro projekty a řešení pro uživatele.|
+|*VSP – soubor*|Název datového souboru profilování. Výchozí název je název řešení nebo spustitelného souboru, je profilovaným.|
 |*RRMMDD*|Razítka data, který ukazuje rok, měsíc a den, která nebyla shromážděna profilování data.|
-|*(N)*|Pokud existuje více než jeden profilování datový soubor, zvýšena číslo se přidá k názvu souboru mezi závorky.|
+|*(NE)*|Pokud existuje více než jeden profilování datový soubor, zvýšena číslo se přidá k názvu souboru mezi závorky.|
 
 ## <a name="to-change-the-naming-syntax-of-the-profiling-data-files-of-a-performance-session"></a>Chcete-li změnit pojmenování syntaxe datových souborů profilace výkonnostní relace
 

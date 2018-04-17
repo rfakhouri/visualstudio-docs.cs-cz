@@ -1,11 +1,8 @@
 ---
-title: "Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -34,26 +31,26 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 898cdbd15367aef6ac48d35a44b1ccb4a3deded9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 2e1e44eeff16277b21a530bf4c5debcb02de7633
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio
 Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation (WCF) a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], technologiích společnosti Microsoft pro vytvoření distribuované aplikace. Toto téma obsahuje úvod do služby od [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] perspektivy. Úplnou dokumentaci najdete v tématu [WCF Data Services 4.5](/dotnet/framework/data/wcf/index).  
   
 ## <a name="what-is-wcf"></a>Co je WCF?  
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]je jednotná architektura pro vytváření zabezpečeným, spolehlivým, zpracovaných a umožňuje vzájemnou spolupráci distribuované aplikace. Nahradí starší meziprocesová komunikace technologie, jako je například ASMX webové služby, .NET Remoting, podnikové služby (DCOM) a služby MSMQ. WCF spojuje funkce všech těchto technologií v rámci jednotný programovací model. Tato funkce zjednodušuje možnosti vývoje distribuovaných aplikací.  
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] je jednotná architektura pro vytváření zabezpečeným, spolehlivým, zpracovaných a umožňuje vzájemnou spolupráci distribuované aplikace. Nahradí starší meziprocesová komunikace technologie, jako je například ASMX webové služby, .NET Remoting, podnikové služby (DCOM) a služby MSMQ. WCF spojuje funkce všech těchto technologií v rámci jednotný programovací model. Tato funkce zjednodušuje možnosti vývoje distribuovaných aplikací.  
   
 #### <a name="what-are-wcf-data-services"></a>Jaké jsou součásti WCF Data Services  
- [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]je standardní implementace protokolu (OData Open Data).  Služby WCF Data Services umožňuje vystavit tabulková data v sadu rozhraní REST API, což vám umožní vrátit data pomocí standardních operací protokolu HTTP, jako třeba GET, POST, PUT nebo odstranit. Na straně serveru, jsou služby WCF Data Services nahrazená [rozhraní ASP.NET Web API](http://www.asp.net/web-api) pro vytvoření nové služby OData. Klientská knihovna služby WCF Data Services je stále dobrou volbou pro použití služby OData v aplikacích .NET ze sady Visual Studio (**projektu &#124; Přidat odkaz na službu**). Další informace najdete v tématu [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).  
+ [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] je standardní implementace protokolu (OData Open Data).  Služby WCF Data Services umožňuje vystavit tabulková data v sadu rozhraní REST API, což vám umožní vrátit data pomocí standardních operací protokolu HTTP, jako třeba GET, POST, PUT nebo odstranit. Na straně serveru, jsou služby WCF Data Services nahrazená [rozhraní ASP.NET Web API](http://www.asp.net/web-api) pro vytvoření nové služby OData. Klientská knihovna služby WCF Data Services je stále dobrou volbou pro použití služby OData v aplikacích .NET ze sady Visual Studio (**projektu &#124; přidat odkaz na službu**). Další informace najdete v tématu [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).  
   
 ### <a name="wcf-programming-model"></a>Model programování WCF  
  Programovací model WCF je založen na komunikaci mezi dvěma entitami: služby WCF a klienta WCF. Programovací model je zapouzdřený v <xref:System.ServiceModel> oboru názvů v [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
@@ -86,7 +83,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
  [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
   
 ## <a name="wcf-tools-in-visual-studio"></a>Nástroje pro WCF v sadě Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]poskytuje nástroje, které vám pomůžou vytvořit služby WCF a klienti WCF. Návod, která demonstruje nástroje najdete v tématu [návod: vytvoření jednoduché služby WCF ve Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje nástroje, které vám pomůžou vytvořit služby WCF a klienti WCF. Návod, která demonstruje nástroje najdete v tématu [návod: vytvoření jednoduché služby WCF ve Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
   
 ### <a name="creating-and-testing-wcf-services"></a>Vytvoření a testování služby WCF  
  Můžete použít WCF [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] šablony jako základ k rychlému vytvoření vlastní služby. Potom můžete automaticky hostitel služby WCF a testovacího klienta WCF ladit a testovat službu. Tyto nástroje společně poskytují rychlý a pohodlný ladění a testování cyklu a eliminovat požadavky na zápis k hostování modelu včas.  
@@ -113,7 +110,7 @@ Visual Studio poskytuje nástroje pro práci s Windows Communication Foundation 
  Další informace o testovacího klienta WCF najdete v tématu [testovacího klienta WCF (WcfTestClient.exe)](/dotnet/framework/wcf/wcf-test-client-wcftestclient-exe).  
   
 ### <a name="accessing-wcf-services-in-visual-studio"></a>Přístup ke službám WCF v sadě Visual Studio  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]zjednodušuje vytváření klientů WCF, automatické generování proxy server a koncový bod pro služby, které můžete přidat pomocí **přidat odkaz na službu** dialogové okno. Všechny potřebné informace o konfiguraci se přidá do souboru app.config. Většinu času, všechno, co musíte udělat je vytvořit instanci služby, aby bylo možné ho použít.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] zjednodušuje vytváření klientů WCF, automatické generování proxy server a koncový bod pro služby, které můžete přidat pomocí **přidat odkaz na službu** dialogové okno. Všechny potřebné informace o konfiguraci se přidá do souboru app.config. Většinu času, všechno, co musíte udělat je vytvořit instanci služby, aby bylo možné ho použít.  
   
  **Přidat odkaz na službu** dialogové okno umožňuje zadat adresu služby nebo vyhledávání pro službu, která je definována v řešení. Dialogové okno vrátí seznam hodnot operace poskytují tyto služby a služby. Také umožňuje definovat obor názvů, pomocí kterého budete odkazovat služby v kódu.  
   

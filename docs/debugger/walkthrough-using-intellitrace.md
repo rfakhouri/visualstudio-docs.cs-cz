@@ -1,32 +1,28 @@
 ---
-title: "Zobrazení událostí s použitím technologie IntelliTrace | Microsoft Docs"
-ms.custom: 
+title: Zobrazení událostí s použitím technologie IntelliTrace | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: e1c9c91a-0009-4c4e-9b4f-c9ab3a6022a7
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc3067ea154c8b9a5f6e180f397c5421f2be470
-ms.sourcegitcommit: 9a2f937e42305db6e3eaa7aadc235b0ba9aafc83
+ms.openlocfilehash: bb117eeaf972788118b9b7284bfd2ae6aca44936
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio"></a>Zobrazení událostí s použitím technologie IntelliTrace v sadě Visual Studio
 Můžete shromáždit informace o určité události nebo kategorie události nebo o volání jednotlivých funkcí kromě události IntelliTrace. Následující postupy ukazují, jak to udělat.  
   
  Ve Visual Studio Enterprise edition, ale není edice Professional nebo komunity můžete IntelliTrace.  
   
-##  <a name="GettingStarted"></a>Konfigurace Intellitrace  
+##  <a name="GettingStarted"></a> Konfigurace Intellitrace  
  Můžete zkusit ladění pomocí právě události IntelliTrace. Události IntelliTrace jsou události ladicí program, výjimky, rozhraní .NET Framework události a dalších událostí systému. Měli zapnout nebo vypnout určité události řídit události tohoto IntelliTrace záznamy před zahájením ladění. Další informace najdete v tématu [funkce IntelliTrace](../debugger/intellitrace-features.md).  
   
  - Zapněte události IntelliTrace pro přístup k souborům. Přejděte na **nástroje > Možnosti > IntelliTrace > události IntelliTrace** stránky a rozbalte **souboru** kategorie. Zkontrolujte **souboru** kategorie události. To způsobí, že všechny souboru události (Zavřít, přístup, odstraňte) ke kontrole.
@@ -53,7 +49,7 @@ Můžete shromáždit informace o určité události nebo kategorie události ne
     }  
     ```  
   
-3.  Nastavit zarážky`Console.WriteLine("done");`  
+3.  Nastavit zarážky `Console.WriteLine("done");`  
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>Spuštění ladění a zobrazit události IntelliTrace
   

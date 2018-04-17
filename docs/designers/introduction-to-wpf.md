@@ -1,26 +1,24 @@
 ---
-title: "Úvod k použití WPF | Microsoft Docs"
-ms.custom: 
+title: Úvod k použití WPF | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - csharp
 - vb
-ms.workload: multiple
-ms.openlocfilehash: a756b7a0cbc69e02c530ffc95d776aefbc96afa3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 79cfea8d70f068fc0b24bc6cc1b92735d0c19cd0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-wpf"></a>Úvod do WPF
 Windows Presentation Foundation (WPF) umožňuje vytvářet aplikace pro Windows klient plochy s vizuálně omráčení koncových uživatelů.  
@@ -31,12 +29,12 @@ Windows Presentation Foundation (WPF) umožňuje vytvářet aplikace pro Windows
   
  Tento přehled je určen pro nové uživatele a popisuje klíčové funkce a koncepty WPF.  
   
-##  <a name="Programming_with_WPF"></a>Programování v grafickém subsystému WPF  
+##  <a name="Programming_with_WPF"></a> Programování v grafickém subsystému WPF  
  WPF existuje jako podmnožinu rozhraní .NET Framework typů, které se nacházejí ve většině případů ve <xref:System.Windows> oboru názvů. Pokud jste dříve vytvořili aplikace v rozhraní .NET Framework pomocí spravovaného technologie, jako je technologie ASP.NET a Windows Forms, základní WPF programovací prostředí měli seznámit; vytváření instancí třídy, nastavte vlastnosti, volání metod a popisovač události, všechny pomocí vašeho oblíbeného rozhraní .NET programovací jazyk, například C# nebo Visual Basic.  
   
  WPF zahrnuje další programovací konstrukce, které zlepšují vlastností a událostí: [vlastností závislostí](/dotnet/framework/wpf/advanced/dependency-properties-overview) a [směrované události](/dotnet/framework/wpf/advanced/routed-events-overview).  
   
-##  <a name="Markup_And_Codebehind"></a>Značek a kódu  
+##  <a name="Markup_And_Codebehind"></a> Značek a kódu  
  WPF umožňuje vyvíjet aplikace pomocí obou *značek* a *kódu*, prostředí, které by měl být obeznámeni s vývojáře využívající technologii ASP.NET. Pomocí značek XAML obecně implementovat vzhled aplikace při použití spravovaných programovací jazyky (kódu) k implementaci své chování. Toto rozdělení vzhled a chování má následující výhody:  
   
 -   Náklady na vývoj a údržba jsou snížit, protože specifické vzhled značek není pevně spojená s kódu pro konkrétní chování.  
@@ -141,13 +139,13 @@ End Namespace
   
 ```  
   
- V tomto příkladu modelu code-behind implementuje třídu odvozenou z <xref:System.Windows.Window> třídy. `x:Class` Atribut se používá k přidružit třídu kódem v pozadí značky. `InitializeComponent`je volána z konstruktoru třídy kódu sloučit uživatelského rozhraní, která je definována v kódu pomocí třídy kódu. (`InitializeComponent` se vygeneruje pro vás, když vaše aplikace je sestavena, proto není nutné implementovat ručně.) Kombinace `x:Class` a `InitializeComponent` zkontrolujte vaší implementace je vždy, když je vytvořen správně inicializovat. Třída kódu také implementuje obslužné rutiny události pro tlačítka <xref:System.Windows.Controls.Primitives.ButtonBase.Click> událostí. Při kliknutí na tlačítko obslužné rutiny události zobrazí okno se zprávou voláním <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> metoda.  
+ V tomto příkladu modelu code-behind implementuje třídu odvozenou z <xref:System.Windows.Window> třídy. `x:Class` Atribut se používá k přidružit třídu kódem v pozadí značky. `InitializeComponent` je volána z konstruktoru třídy kódu sloučit uživatelského rozhraní, která je definována v kódu pomocí třídy kódu. (`InitializeComponent` se vygeneruje pro vás, když vaše aplikace je sestavena, proto není nutné implementovat ručně.) Kombinace `x:Class` a `InitializeComponent` zkontrolujte vaší implementace je vždy, když je vytvořen správně inicializovat. Třída kódu také implementuje obslužné rutiny události pro tlačítka <xref:System.Windows.Controls.Primitives.ButtonBase.Click> událostí. Při kliknutí na tlačítko obslužné rutiny události zobrazí okno se zprávou voláním <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> metoda.  
   
  Následující obrázek znázorňuje výsledek při kliknutí na tlačítko.  
   
  ![MessageBox](../designers/media/wpfintrofigure25.png "WPFIntroFigure25")  
   
-##  <a name="Controls"></a>Ovládací prvky  
+##  <a name="Controls"></a> ovládací prvky  
  Činnosti koncových uživatelů, které jsou doručovány prostřednictvím modelu aplikací jsou sestavené ovládací prvky. V grafickém subsystému WPF "řízení" je také souhrnný název, který se vztahuje na kategorii WPF třídy, které jsou hostované v okně nebo na stránce, mít uživatelské rozhraní a implementovat některé chování.  
   
  Další informace najdete v tématu [ovládací prvky](/dotnet/framework/wpf/controls/index).  
@@ -169,7 +167,7 @@ End Namespace
   
 -   **Vstup**: <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>, a <xref:System.Windows.Controls.PasswordBox>.  
   
--   **Rozložení**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>,  <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window>, a <xref:System.Windows.Controls.WrapPanel>.  
+-   **Rozložení**: <xref:System.Windows.Controls.Border>, <xref:System.Windows.Controls.Primitives.BulletDecorator>, <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Expander>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridSplitter>, <xref:System.Windows.Controls.GroupBox>, <xref:System.Windows.Controls.Panel>, <xref:System.Windows.Controls.Primitives.ResizeGrip>, <xref:System.Windows.Controls.Separator>, <xref:System.Windows.Controls.Primitives.ScrollBar>, <xref:System.Windows.Controls.ScrollViewer>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.Primitives.Thumb>, <xref:System.Windows.Controls.Viewbox>, <xref:System.Windows.Controls.VirtualizingStackPanel>, <xref:System.Windows.Window>, a <xref:System.Windows.Controls.WrapPanel>.  
   
 -   **Média**: <xref:System.Windows.Controls.Image>, <xref:System.Windows.Controls.MediaElement>, a <xref:System.Windows.Controls.SoundPlayerAction>.  
   
@@ -181,12 +179,12 @@ End Namespace
   
 -   **Informace o uživateli**: <xref:System.Windows.Controls.AccessText>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Primitives.Popup>, <xref:System.Windows.Controls.ProgressBar>, <xref:System.Windows.Controls.Primitives.StatusBar>, <xref:System.Windows.Controls.TextBlock>, a <xref:System.Windows.Controls.ToolTip>.  
   
-##  <a name="Input_And_Commanding"></a>Vstup a tvorba příkazů  
+##  <a name="Input_And_Commanding"></a> Vstup a tvorba příkazů  
  Ovládací prvky nejčastěji zjistit a reagovat na vstup uživatele. [WPF vstupní systému](/dotnet/framework/wpf/advanced/input-overview) používá přímé i směrované události pro podporu zadávání textu, správu fokusu a myš umístění.  
   
  Aplikace mají často složité vstupní požadavky. Poskytuje WPF [příkaz systému](/dotnet/framework/wpf/advanced/commanding-overview) který odděluje vstupní akcí uživatele z kódu, který reaguje na tyto akce.  
   
-##  <a name="Layout"></a>Rozložení  
+##  <a name="Layout"></a> Rozložení  
  Při vytváření uživatelského rozhraní, je uspořádat vaše ovládací prvky podle umístění a velikost na formuláři rozložení. Klíčovým požadavkem žádné rozložení je přizpůsobit na změny v velikost okna a zobrazení nastavení. Místo psaní kódu pro přizpůsobení rozložení za těchto okolností vynucení, poskytuje WPF systém první třídy, extensible rozložení pro vás.  
   
  Kamenem systému rozložení je relativní umístění, což zvyšuje schopnost přizpůsobit změnou okno a zobrazit podmínky. Kromě toho rozložení systému spravuje vyjednávání mezi ovládacími prvky k určení rozložení. Vyjednávání je dvoustupňový proces: nejdřív ovládacího prvku informuje nadřazené jaké umístění a velikost vyžaduje; druhý nadřazený říká ovládacímu prvku místo, jaké může mít.  
@@ -218,7 +216,7 @@ End Namespace
   
  ![Stránka DockPanel](../designers/media/wpfintrofigure11.png "WPFIntroFigure11")  
   
-##  <a name="Data_Binding"></a>Datová vazba  
+##  <a name="Data_Binding"></a> Datová vazba  
  Většina aplikací jsou vytvořeny uživatelům poskytnout způsob, jak zobrazit a upravit data. Pro aplikace WPF práci při ukládání a přístup k datům už poskytuje pro technologie, jako je například SQL Server a ADO .NET. Jakmile je přístupu k datům a načtena do aplikace spravované objekty, začne náročné práce pro aplikace WPF. V podstatě to zahrnuje dvě věci:  
   
 1.  Kopírování dat do ovládacích prvků, kde můžete zobrazit a upravit data ze spravovaných objektů.  
@@ -257,7 +255,7 @@ End Namespace
   
  Další informace najdete v tématu [přehled vazby dat](/dotnet/framework/wpf/data/data-binding-overview).  
   
-##  <a name="Graphics"></a>Grafika  
+##  <a name="Graphics"></a> Grafika  
  WPF zavádí rozsáhlé, škálovatelná a flexibilní sadu grafických funkcí, které mají následující výhody:  
   
 -   **Nezávislé na řešení a nezávislé na zařízení grafiky**. Základní jednotka měření grafika systému WPF je nezávislé pixelů zařízení, která je 1/96 palce, bez ohledu na to, skutečné rozlišení obrazovky a poskytuje základ pro vykreslování nezávislé na řešení a nezávislé na zařízení. Každý pixelů nezávislé na zařízení automaticky přizpůsobí tak, aby odpovídaly nastavení bodů na palec (dpi), který se vykreslí v systému.  
@@ -282,16 +280,16 @@ End Namespace
   
  Následující obrázek znázorňuje, co je produkovaný předchozí kód.  
   
- ![Okno s textem "kliknuli jste na tlačítko se třemi tečkami & č. 33;" ] (../designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
+ ![Okno s textem "kliknuli jste na tlačítko se třemi tečkami&#33;"](../designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
   
  Další informace najdete v tématu [tvarů a základní kreslení v přehledu WPF](/dotnet/framework/wpf/data/data-binding-overview).  
   
 ### <a name="2-d-geometries"></a>2D geometrie  
  2D obrazce poskytované WPF zahrnují standardní sadu základních tvarů. Potřebujete však vytvořit vlastní tvary usnadňuje návrh přizpůsobené uživatelské rozhraní. Pro tento účel WPF poskytuje geometrie. Následující obrázek ukazuje použití geometrie vytvořit vlastní tvar, který můžete vykresluje přímo, použít jako štětce nebo použít na jiných tvarů a ovládacích prvků v případě potřeby upraví.  
   
- <xref:System.Windows.Shapes.Path>objekty lze použít k vykreslení uzavřené nebo otevřít, více tvarů nebo i zakřivené.  
+ <xref:System.Windows.Shapes.Path> objekty lze použít k vykreslení uzavřené nebo otevřít, více tvarů nebo i zakřivené.  
   
- <xref:System.Windows.Media.Geometry>objekty lze použít pro výstřižek, stiskněte klávesu testování a grafické datech pro vykreslení 2-D.  
+ <xref:System.Windows.Media.Geometry> objekty lze použít pro výstřižek, stiskněte klávesu testování a grafické datech pro vykreslení 2-D.  
   
  ![Různé použití cesty](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
   
@@ -311,20 +309,20 @@ End Namespace
   
  Další informace najdete v tématu [3D přehled grafiky](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview).  
   
-##  <a name="Animation"></a>Animace  
+##  <a name="Animation"></a> Animace  
  Umožňuje podporu animace WPF provedené ovládací prvky růst, zatřesením, typu číselník a objevování, chcete-li vytvořit zajímavé stránky přechody a další. Můžete animace Většina tříd WPF, dokonce i vlastní třídy. Následující obrázek znázorňuje jednoduchý animace v akci.  
   
  ![Bitové kopie animovaný datové krychle](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
  Další informace najdete v tématu [animace přehled](/dotnet/framework/wpf/graphics-multimedia/animation-overview).  
   
-##  <a name="Media"></a>Média  
+##  <a name="Media"></a> Média  
  Je možné vyjádřit bohaté obsah prostřednictvím audiovizuální média. WPF poskytuje speciální podporu pro obrázky, videa a zvuku.  
   
 ### <a name="images"></a>Obrázky  
  Bitové kopie jsou společné pro většinu aplikací a WPF poskytuje několik způsobů, jak je používat. Následující obrázek znázorňuje uživatelské rozhraní s pole se seznamem, který obsahuje obrázky miniatur. Pokud je vybrána na miniaturu, se zobrazí obrázek plné velikosti.  
   
- ![Obrázky miniatur a úplné & č. 45; velikost obrázku](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
+ ![Obrázky miniatur a úplné&#45;velikost obrázku](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
   
  Další informace najdete v tématu [Imaging přehled](/dotnet/framework/wpf/graphics-multimedia/imaging-overview).  
   
@@ -339,7 +337,7 @@ End Namespace
   
  Další informace najdete v tématu [grafika a multimédia](/dotnet/framework/wpf/graphics-multimedia).  
   
-##  <a name="Text_and_Typography"></a>Text a typografii  
+##  <a name="Text_and_Typography"></a> Text a typografii  
  Pro usnadnění vykreslování vysokou kvalitu textu, WPF nabízí následující funkce:  
   
 -   Podpora písem OpenType.  
@@ -358,7 +356,7 @@ End Namespace
   
  Další informace najdete v tématu [typografii v systému Windows Presentation Foundation](/dotnet/framework/wpf/advanced/typography-in-wpf).  
   
-##  <a name="WPF_Customization"></a>Přizpůsobení aplikace WPF  
+##  <a name="WPF_Customization"></a> Přizpůsobení aplikace WPF  
  V tomto okamžiku jste se seznámili WPF základní stavební bloky pro vývoj aplikací. Aplikační model použijete k hostování a doručovat obsah aplikace, která je tvořena především ovládací prvky. Pro zjednodušení uspořádání ovládacích prvků v uživatelském rozhraní a k Ujistěte se, že se při krátkodobém změny velikosti okna udržuje uspořádání a nastavení zobrazit, použijete systém rozložení WPF. Vzhledem k tomu, že většina aplikací mít uživatelé povolenou interakci s daty, použijete datové vazby k snížit pracovní integrace uživatelské rozhraní s daty. K vylepšení vzhled vaší aplikace, použijte komplexní rozsah podpora grafiky, animace a média poskytované WPF.  
   
  Často ale základy nejsou dost pro vytváření a správu skutečně odlišné a vizuálně omráčení činnost koncového uživatele. Standardní ovládacích prvků WPF nebude možné integrovat požadovaný vzhled vaší aplikace. Data se nemusí zobrazit v jedním z nejúčinnějších způsobů. Celkové uživatelské prostředí aplikace nemusí být vhodné pro výchozí vzhled a chování motivy systému Windows. V mnoha směrech technologie prezentace musí visual rozšiřitelnost co nejvíc jakýkoli jiný druh rozšíření.  
@@ -631,7 +629,7 @@ End Namespace
   
  Další informace o vlastních ovládacích prvcích najdete v tématu [vytváření – Přehled ovládacího prvku](/dotnet/framework/wpf/controls/control-authoring-overview).  
   
-##  <a name="WPF_Best_Practices"></a>Osvědčené postupy WPF  
+##  <a name="WPF_Best_Practices"></a> Osvědčené postupy WPF  
  Stejně jako u jakékoli platformě vývoj WPF lze v různých způsobů, jak dosáhnout požadovaného výsledku. Jako způsob zajistit, aby vaše WPF aplikace zadejte požadované uživatelské prostředí a obecně splňovat požadavky na cílovou skupinu, jsou doporučené osvědčené postupy pro usnadnění, globalizace a lokalizace a výkonu. Najdete následující informace:  
   
 -   [Usnadnění – doporučené postupy](/dotnet/framework/ui-automation/accessibility-best-practices)usnadnění – doporučené postupy  
@@ -642,7 +640,7 @@ End Namespace
   
 -   [Zabezpečení systému Windows Presentation Foundation](/dotnet/framework/wpf/security-wpf)  
   
-##  <a name="Summary"></a>Souhrn  
+##  <a name="Summary"></a> Souhrn  
  WPF je komplexní prezentace technologie pro vytváření širokou škálu vizuálně omráčení klientské aplikace. Tento úvod poskytl podívejte se na klíčové funkce WPF.  
   
  Dalším krokem je vytvoření aplikace WPF!  

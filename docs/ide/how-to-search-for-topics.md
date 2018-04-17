@@ -1,23 +1,21 @@
 ---
-title: "Postupy: vyhledávání témat | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vyhledávání témat | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-help-viewer
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: e76a1e87da99d8504620ed2881dcc60b8ce99a57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-search-for-topics"></a>Postupy: vyhledávání témat
 Najít všechna témata, které obsahují určité slovo můžete použít funkci fulltextového vyhledávání. Také můžete upřesnit a přizpůsobit hledání pomocí zástupných znaků výrazy, logické operátory a operátory rozšířeného vyhledávání.  
@@ -69,7 +67,7 @@ Vyhledávací algoritmus platí určitá kritéria, můžete pořadí výsledky 
   
 3.  Obsah, který obsahuje vyšší hustotu hledaná slova je vyšší než obsah, který má nižší hustotu hledaná slova seřazeny.  
   
-### <a name="stopwords">Slova ignorovat ve vyhledávání (stop slov)</a>
+### <a name="stopwords"> Slova ignorovat ve vyhledávání (stop slov) </a>
 Nejčastěji se vyskytující slova nebo čísel, které se někdy označují jako stop slov, jsou automaticky ignorovat během fulltextového vyhledávání. Například pokud hledání pro frázi "průchod prostřednictvím" zobrazí výsledky hledání témata obsahující slovo "průchodu" však není "až".  
   
 ## <a name="see-also"></a>Viz také

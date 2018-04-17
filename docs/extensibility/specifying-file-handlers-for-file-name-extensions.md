@@ -1,27 +1,23 @@
 ---
-title: "Určení souboru obslužné rutiny pro přípony názvu souboru | Microsoft Docs"
-ms.custom: 
+title: Určení souboru obslužné rutiny pro přípony názvu souboru | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5db7a218a718e27f584abbf350b49907b56fb17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0d0086f8badb32431c85f16e1f74fe8f186c9b2e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Určení souboru obslužné rutiny pro přípony názvu souboru
 Existuje několik způsobů, jak zjistit, která zpracovává soubor, který má příponu souboru konkrétní aplikace. Příkazy OpenWithList a OpenWithProgids jsou dva způsoby, jak zadat soubor obslužných rutin pod položkou registru pro příponu souboru.  
@@ -53,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Můžete zaregistrovat jiné aplikace, které jsou možné otevřít konkrétní příponu přidáním verzí ProgID jako hodnoty HKEY_CLASSES_ROOT\\*\<rozšíření >*\OpenWithProgids klíč. Tento klíč registru, obsahuje seznam alternativní ProgID přidružené k příponě souboru. Aplikace přidružené k uvedené ProgID zobrazeny **otevřít v***název produktu* podnabídky. Pokud stejná aplikace je zadána v obou `OpenWithList` a `OpenWithProgids` slučuje duplicitní hodnoty klíče, operační systém.  
+ Můžete zaregistrovat jiné aplikace, které jsou možné otevřít konkrétní příponu přidáním verzí ProgID jako hodnoty HKEY_CLASSES_ROOT\\*\<rozšíření >*\OpenWithProgids klíč. Tento klíč registru, obsahuje seznam alternativní ProgID přidružené k příponě souboru. Aplikace přidružené k uvedené ProgID zobrazeny **otevřít v *** název produktu* podnabídky. Pokud stejná aplikace je zadána v obou `OpenWithList` a `OpenWithProgids` slučuje duplicitní hodnoty klíče, operační systém.  
   
 > [!NOTE]
 >  `OpenWithProgids` Klíčů je podporovaná jen v systému Windows XP. Protože jinými operačními systémy Ignorovat tento klíč, nepoužívejte ho jako pouze registrace pro obslužné rutiny souborů. Tento klíč použijte zajistit lepší uživatelské prostředí v systému Windows XP.  

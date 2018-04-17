@@ -2,26 +2,22 @@
 title: MSBuild | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-caps.latest.revision: 59
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7fd044ccc50d5c988ae121a66a362158a750e17
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 970eb8f942a2a9bdd04b0bd5cf823ddba2f74931
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] Je platforma pro vytváření aplikací. Tento modul, který je také označován jako MSBuild, poskytuje schéma XML pro soubor projektu, který určuje, jak platformy sestavení zpracuje a vytvoří softwaru. Visual Studio použije nástroje MSBuild, ale není závisí na sadě Visual Studio. Vyvoláním msbuild.exe v souboru projektu nebo řešení můžete orchestraci a sestavení produkty v prostředích, kde není nainstalovaná sada Visual Studio.  
@@ -73,7 +69,7 @@ ms.lasthandoff: 04/10/2018
   
 -   [Pomocí nástroje MSBuild v sadě Visual Studio](#BKMK_VisualStudio)  
   
--   [Multitargeting](#BKMK_Multitargeting)  
+-   [Cílení na více verzí](#BKMK_Multitargeting)  
   
 ##  <a name="BKMK_CommandPrompt"></a> Pomocí nástroje MSBuild v příkazovém řádku  
  Ke spuštění [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] na příkazovém řádku, předat soubor projektu do MSBuild.exe, společně s možnosti příkazového řádku. Možnosti příkazového řádku umožňují nastavit vlastnosti, provést určité cíle a nastavte další možnosti, které řídí procesu sestavení. Třeba, použijte následující syntaxi příkazového řádku k vytvoření souboru `MyProj.proj` s `Configuration` vlastnost nastavena na hodnotu `Debug`.  
@@ -174,7 +170,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  Kurz týkající se použití nástroje MSBuild v sadě Visual Studio, najdete v části [návod: použití nástroje MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
-##  <a name="BKMK_Multitargeting"></a> Multitargeting  
+##  <a name="BKMK_Multitargeting"></a> Cílení na více verzí  
  Pomocí sady Visual Studio můžete zkompilovat aplikace pro spuštění na libovolném několik verzí rozhraní .NET Framework. Například můžete zkompilovat aplikaci spustit v rozhraní .NET Framework 2.0 na 32bitové platformě a zkompilujete stejnou aplikaci spustit v rozhraní .NET Framework 4.5 na 64bitové platformě. Možnost zkompilovat více než jeden Framework jmenuje cílení na více verzí.  
   
  Toto jsou některé z výhod cílení na více verzí:  

@@ -1,22 +1,22 @@
 ---
-title: "Vytvoření jednoduché datové aplikace pomocí ADO.NET v sadě Visual Studio | Microsoft Docs"
+title: Vytvoření jednoduché datové aplikace pomocí ADO.NET v sadě Visual Studio | Microsoft Docs
 ms.date: 08/23/2017
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab9c63e3601fb58bd2c25f84cf7ac8cda34f5b91
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 8bde01870a4511b261759cc7dd5dca04b211f2bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Vytvoření jednoduché datové aplikace pomocí ADO.NET
 
@@ -86,8 +86,8 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 
 |Ovládací prvky pro daný formulář navigace|Vlastnosti|
 |--------------------------------------|----------------|
-|Tlačítko|Name = btnGoToAdd|
-|Tlačítko|Name = btnGoToFillOrCancel|
+|Tlačítko|Název = btnGoToAdd|
+|Tlačítko|Název = btnGoToFillOrCancel|
 |Tlačítko|Název = btnExit|
 
  **Nový zákazník formuláře**
@@ -96,13 +96,13 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 
 |Ovládací prvky pro nový zákazník formulář|Vlastnosti|
 |---------------------------------------|----------------|
-|TextBox|Name = txtCustomerName|
-|TextBox|Name = txtCustomerID<br /><br /> Jen pro čtení = True|
-|Tlačítko|Name = btnCreateAccount|
+|TextBox|Název = txtCustomerName|
+|TextBox|Název = txtCustomerID<br /><br /> Jen pro čtení = True|
+|Tlačítko|Název = btnCreateAccount|
 |NumericUpdown|Počet desetinných míst = 0<br /><br /> Maximální = 5000<br /><br /> Název = numOrderAmount|
-|DateTimePicker|Formát krátkého =<br /><br /> Name = dtpOrderDate|
-|Tlačítko|Name = btnPlaceOrder|
-|Tlačítko|Name = btnAddAnotherAccount|
+|DateTimePicker|Formát krátkého =<br /><br /> Název = dtpOrderDate|
+|Tlačítko|Název = btnPlaceOrder|
+|Tlačítko|Název = btnAddAnotherAccount|
 |Tlačítko|Název = btnAddFinish|
 
  **FillOrCancel formuláře**
@@ -111,13 +111,13 @@ Vytvoření ukázkové databáze pomocí následujících kroků:
 
 |Ovládací prvky pro daný formulář FillOrCancel|Vlastnosti|
 |----------------------------------------|----------------|
-|TextBox|Name = txtOrderID|
+|TextBox|Název = txtOrderID|
 |Tlačítko|Název = btnFindByOrderID|
-|DateTimePicker|Formát krátkého =<br /><br /> Name = dtpFillDate|
+|DateTimePicker|Formát krátkého =<br /><br /> Název = dtpFillDate|
 |DataGridView|Název = dgvCustomerOrders<br /><br /> Jen pro čtení = True<br /><br /> RowHeadersVisible = False|
 |Tlačítko|Název = btnCancelOrder|
 |Tlačítko|Název = btnFillOrder|
-|Tlačítko|Name = btnFinishUpdates|
+|Tlačítko|Název = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>Připojovací řetězec uložit
  Když se aplikace pokusí otevřít připojení k databázi, aplikace musí mít přístup k připojovací řetězec. Abyste se vyhnuli, zadáte řetězec ručně na každý formulář, řetězec uložit v souboru App.config ve vašem projektu a vytvoření metody, která vrátí řetězec, pokud metoda je volána z libovolného formuláře v aplikaci.

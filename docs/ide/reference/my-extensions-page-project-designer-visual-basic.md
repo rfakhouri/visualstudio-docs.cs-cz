@@ -1,33 +1,29 @@
 ---
-title: "Stránka Moje rozšíření, Návrhář (Visual Basic) projektu | Microsoft Docs"
-ms.custom: 
+title: Stránka Moje rozšíření, Návrhář (Visual Basic) projektu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesMyExtensions
 helpviewer_keywords:
 - Project Designer, My Extensions page
 - My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18817d7fd6af26c5e1ce9d021afc37d1e9da8f34
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4a9c877f0a387fb0a0552f1e7c47e81155eb72ab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Stránka Moje rozšíření, návrhář projektu (Visual Basic)
-Použití **Moje rozšíření** stránky **Návrhář projektu** ke správě `My` rozšíření oboru názvů ve vašem projektu. `My`rozšíření oboru názvů umožňují přizpůsobit `My` obor názvů přidání vlastní členů. Informace o vytváření vlastních `My` rozšíření oboru názvů, najdete v části [rozšíření My Namespace v jazyce Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).  
+Použití **Moje rozšíření** stránky **Návrhář projektu** ke správě `My` rozšíření oboru názvů ve vašem projektu. `My` rozšíření oboru názvů umožňují přizpůsobit `My` obor názvů přidání vlastní členů. Informace o vytváření vlastních `My` rozšíření oboru názvů, najdete v části [rozšíření My Namespace v jazyce Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).  
   
  Pro přístup k **Moje rozšíření** klikněte dvakrát **Můj projekt** pro váš projekt uzel v **Průzkumníku řešení**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **Moje rozšíření** kartě.  
   

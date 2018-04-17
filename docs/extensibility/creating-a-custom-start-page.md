@@ -1,23 +1,21 @@
 ---
-title: "Vytváření vlastní úvodní stránku | Microsoft Docs"
-ms.custom: 
+title: Vytváření vlastní úvodní stránku | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f1ce8112adffabcee835d7adf598e73d327ca3b6
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 71892262d98b175b111218068a02d03ad3d04caa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-custom-start-page"></a>Vytváření vlastní úvodní stránky
 Můžete vytvořit vlastní úvodní stránku podle kroků v tomto dokumentu.  
@@ -73,7 +71,7 @@ Můžete vytvořit vlastní úvodní stránku podle kroků v tomto dokumentu.
   
 1.  Kopírování souboru XAML a všechny podpůrné textových souborů nebo značek souborů do **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  složky.  
   
-2.  Pokud všechny ovládací prvky nebo typy v sestavení, které nejsou nainstalované Visual Studio, odkazuje na úvodní stránky, zkopírujte sestavení a vložte je do *instalační složka nástroje Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
+2.  Pokud všechny ovládací prvky nebo typy v sestavení, které nejsou nainstalované Visual Studio, odkazuje na úvodní stránky, zkopírujte sestavení a vložte je do * sady Visual Studio instalační složky ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  Na příkazovém řádku Visual Studio, zadejte **devenv /rootsuffix Exp** otevřete experimentální instanci sady Visual Studio.  
   

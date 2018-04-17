@@ -1,12 +1,9 @@
 ---
-title: "Postupy: referenční projektu MSBuild SDK | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: referenční projektu MSBuild SDK | Microsoft Docs'
+ms.custom: ''
 ms.date: 01/25/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: jeffkl
@@ -14,11 +11,11 @@ ms.author: jeffkl
 manager: angerlic
 ms.workload:
 - multiple
-ms.openlocfilehash: 28027b21d3f562e3eda94dc91de16ddb38362d3c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: e3a05f650a6547c9b855049f66e8e57e8d1c2c43
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Postupy: použití sady SDK projektu nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 zaveden koncept "projektu SDK", což zjednodušuje použití software development Kit, které vyžadují vlastnosti a cíle určených k importu.
@@ -83,7 +80,7 @@ Během testování projektu [!INCLUDE[vstecmsbuild](../extensibility/internals/i
    Při použití `<Import/>` elementu, můžete zadat volitelný `Version` také atribut.  Například můžete zadat `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
 ## <a name="how-project-sdks-are-resolved"></a>Způsob řešení projektu sady SDK
-Při vyhodnocování importu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dynamicky přeloží cestu k projektu SDK podle názvu a verze, které jste zadali.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]také obsahuje seznam registrovaných překladačů SDK, které jsou zásuvné moduly, které najít projekt sady SDK na váš počítač.  Tyto moduly plug-in patří:
+Při vyhodnocování importu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] dynamicky přeloží cestu k projektu SDK podle názvu a verze, které jste zadali.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] také obsahuje seznam registrovaných překladačů SDK, které jsou zásuvné moduly, které najít projekt sady SDK na váš počítač.  Tyto moduly plug-in patří:
 
 1. Překladač na základě NuGet, který se dotazuje vašeho nakonfigurované balíčku informační kanály pro balíčky NuGet, které odpovídají ID a verzi sady SDK, které jste zadali.<br/>
    Tento překladač je aktivní, pouze pokud jste zadali ve verzi volitelné a lze použít pro všechny vlastní projekt SDK.  

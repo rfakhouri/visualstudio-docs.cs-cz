@@ -1,23 +1,21 @@
 ---
 title: Microsoft Help Viewer SDK | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
-caps.latest.revision: "33"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 7c15956bc861f9eb20267dc97446cf5ea49cae31
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: e3ddc23ab56df017ef0a37c56cd5b0a81ee33a07
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 Tento článek obsahuje následující úlohy pro Visual Studio Help Viewer integrátorem:  
@@ -134,17 +132,17 @@ Příklad metadata části:
   
 Text (včetně není v záhlaví a zápatí) v tématu bude obsahovat odkazů na stránky, části Poznámka, sbalitelné oblasti, fragment kódu a část textu pro konkrétní jazyk.  Najdete v části značky informace o těchto oblastem vidění tématu.  
   
-1.  Přidání značky název tématu:`<div class="title">Contoso Topic 4</div>`  
+1.  Přidání značky název tématu:  `<div class="title">Contoso Topic 4</div>`  
   
-2.  Přidáte oddíl Poznámka:`<div class="alert"> add your table tag and text </div>`  
+2.  Přidáte oddíl Poznámka: `<div class="alert"> add your table tag and text </div>`  
   
-3.  Přidejte sbalitelné oblasti:`<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`  
+3.  Přidejte sbalitelné oblasti:  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`  
   
-4.  Přidáte fragment kódu:`<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`  
+4.  Přidáte fragment kódu:  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`  
   
 5.  Přidat kód jazyka konkrétní text: `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Všimněte si, že devLangnu = můžete zadat další jazyky. Například devLangnu = "Fortran" zobrazí Fortran při fragmentu kódu DisplayLanguage = Fortran  
   
-6.  Přidání odkazů na stránky:`<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`  
+6.  Přidání odkazů na stránky: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`  
   
 > [!NOTE]
 >  Poznámka: pro nepodporovaný nové "zobrazovaný jazyk" (F #, Cobol, Fortran třeba) zabarvení kódu ve fragmentu kódu bude černobílý tisk.  
@@ -354,20 +352,20 @@ V následující tabulce je libovolný řetězec, který se zobrazí v hranatýc
   
 |Vlastnost (HTML reprezentace)|Popis|  
 |--------------------------------------|-----------------|  
-|\<obsah meta name="Microsoft.Help.Locale" = "[– kód jazyka]" / >|Nastaví národní prostředí pro toto téma. Pokud tato značka se používá v tématu, musí být použit pouze jednou a musí být vložený výše jiné značky Microsoft Help. Pokud tato značka se nepoužívá, základní text tohoto tématu je indexovaný pomocí dělení slov, která souvisí s národním prostředí produktu, pokud je zadán; jinak en-us se používá pro dělení slov. Tato značka vyhovuje ISOC RFC 4646. Aby se zajistilo, že Microsoft Help funguje správně, tuto vlastnost použijte místo obecné atributu jazyk.|  
-|\<obsah meta name="Microsoft.Help.TopicLocale" = "[– kód jazyka]" / >|Národní prostředí pro toto téma nastavuje, když se také používají jiným národním prostředím. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Použijte tuto značku, pokud katalog obsahuje obsah ve více než jednom jazyku. Několika témat v katalogu může mít stejné ID, ale každý musíte zadat jedinečné TopicLocale. Téma, které určuje TopicLocale, odpovídajícímu národnímu katalogu se téma, které se zobrazí v obsahu. Všechny jazykové verze tohoto tématu se však zobrazí ve výsledcích hledání.|  
-|\<title > [název] \< /title >|Určuje název tohoto tématu. Tato značka je vyžadován a musí být použit pouze jednou v tématu. Pokud text tématu neobsahuje název \<div > části, tento název se zobrazí v tomto tématu a v obsahu.|  
-|\<Meta name = "Microsoft.Help.Keywords" obsah = "[aKeywordPhrase]" / >|Určuje text odkazu, který se zobrazí v podokně indexu nápovědy. Při kliknutí na odkaz, zobrazí se téma. Můžete zadat několik klíčových slov index pro téma nebo tuto značku můžete vynechat, pokud nechcete, aby se odkazy na toto téma se objeví v indexu. Klíčová slova "K" z dřívějších verzí nápovědy lze převést na tuto vlastnost.|  
-|\<obsah meta name="Microsoft.Help.Id" = "[TopicID]" / >|Nastaví identifikátor pro toto téma. Tato značka je vyžadován a musí být použit pouze jednou v tématu. ID musí být jedinečný mezi témata v katalogu, které mají stejné nastavení národního prostředí. V jiné téma můžete vytvořit odkaz na toto téma pomocí číslem ID této.|  
-|\<Meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|Určuje klíčové slovo F1 pro toto téma. Můžete zadat několik klíčových slov F1 pro téma nebo tuto značku můžete vynechat, pokud nechcete, aby se v tomto tématu, který se má zobrazit při aplikaci stisknutí klávesy F1. Obvykle je zadán pouze jeden F1 – klíčové slovo pro téma. Klíčová slova "F" z dřívějších verzí nápovědy lze převést na tuto vlastnost.|  
-|\<Meta name = "Popis" content = "[tématu Popis]" / >|Poskytuje krátký souhrn obsahu v tomto tématu. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Tato vlastnost přistupuje přímo knihovně dotazu; nejsou uložena v souboru indexu.|  
+|\< obsah meta name="Microsoft.Help.Locale" = "[– kód jazyka]" / >|Nastaví národní prostředí pro toto téma. Pokud tato značka se používá v tématu, musí být použit pouze jednou a musí být vložený výše jiné značky Microsoft Help. Pokud tato značka se nepoužívá, základní text tohoto tématu je indexovaný pomocí dělení slov, která souvisí s národním prostředí produktu, pokud je zadán; jinak en-us se používá pro dělení slov. Tato značka vyhovuje ISOC RFC 4646. Aby se zajistilo, že Microsoft Help funguje správně, tuto vlastnost použijte místo obecné atributu jazyk.|  
+|\< obsah meta name="Microsoft.Help.TopicLocale" = "[– kód jazyka]" / >|Národní prostředí pro toto téma nastavuje, když se také používají jiným národním prostředím. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Použijte tuto značku, pokud katalog obsahuje obsah ve více než jednom jazyku. Několika témat v katalogu může mít stejné ID, ale každý musíte zadat jedinečné TopicLocale. Téma, které určuje TopicLocale, odpovídajícímu národnímu katalogu se téma, které se zobrazí v obsahu. Všechny jazykové verze tohoto tématu se však zobrazí ve výsledcích hledání.|  
+|\< title > [název] \< /title >|Určuje název tohoto tématu. Tato značka je vyžadován a musí být použit pouze jednou v tématu. Pokud text tématu neobsahuje název \<div > části, tento název se zobrazí v tomto tématu a v obsahu.|  
+|\< Meta name = "Microsoft.Help.Keywords" obsah = "[aKeywordPhrase]" / >|Určuje text odkazu, který se zobrazí v podokně indexu nápovědy. Při kliknutí na odkaz, zobrazí se téma. Můžete zadat několik klíčových slov index pro téma nebo tuto značku můžete vynechat, pokud nechcete, aby se odkazy na toto téma se objeví v indexu. Klíčová slova "K" z dřívějších verzí nápovědy lze převést na tuto vlastnost.|  
+|\< obsah meta name="Microsoft.Help.Id" = "[TopicID]" / >|Nastaví identifikátor pro toto téma. Tato značka je vyžadován a musí být použit pouze jednou v tématu. ID musí být jedinečný mezi témata v katalogu, které mají stejné nastavení národního prostředí. V jiné téma můžete vytvořit odkaz na toto téma pomocí číslem ID této.|  
+|\< Meta name="Microsoft.Help.F1" content="[System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator]"/ >|Určuje klíčové slovo F1 pro toto téma. Můžete zadat několik klíčových slov F1 pro téma nebo tuto značku můžete vynechat, pokud nechcete, aby se v tomto tématu, který se má zobrazit při aplikaci stisknutí klávesy F1. Obvykle je zadán pouze jeden F1 – klíčové slovo pro téma. Klíčová slova "F" z dřívějších verzí nápovědy lze převést na tuto vlastnost.|  
+|\< Meta name = "Popis" content = "[tématu Popis]" / >|Poskytuje krátký souhrn obsahu v tomto tématu. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Tato vlastnost přistupuje přímo knihovně dotazu; nejsou uložena v souboru indexu.|  
  obsah meta name="Microsoft.Help.TocParent" = "[parent_Id]" / >|Určuje nadřazené téma v tomto tématu v obsahu. Tato značka je vyžadován a musí být použit pouze jednou v tématu. Hodnota je Microsoft.Help.Id nadřazeného objektu. Téma může mít jenom jeden umístění v tabulce obsahu. "-1" je považován za ID tématu pro kořenový obsah. V [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)], že stránka je prohlížeč nápovědy domovské stránky. Toto je ze stejného důvodu, že přidáme konkrétně TocParent =-1 do některá témata zajistit, že se zobrazí v horní úrovni. Prohlížeč nápovědy domovské stránky je stránka systému a proto není výměnná. Pokud VSP se pokusí přidat stránku s ID-1, může se přidají do sady obsahu, ale prohlížeč nápovědy vždycky použijí na stránce systém – Domovská stránka prohlížeč nápovědy|  
-|\<obsah meta name="Microsoft.Help.TocOrder" = "[kladné celé číslo]" / >|Určuje, kde v obsahu Toto téma se zobrazí relativně k jeho rovnocenná témata. Tato značka je vyžadován a musí být použit pouze jednou v tématu. Hodnota je celé číslo. Téma, které určuje nižší hodnota celé číslo se zobrazí nad téma, které určuje celé číslo vyšší hodnotu.|  
-|\<obsah meta name="Microsoft.Help.Product" = "[kód produktu]" / >|Určuje produkt, který toto téma popisuje. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Tyto informace můžete také zadat jako parametr, který je předán indexeru pomoci.|  
-|\<obsah meta name="Microsoft.Help.ProductVersion" = "[číslo verze]" / >|Určuje verzi produktu, který toto téma popisuje. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Tyto informace můžete také zadat jako parametr, který je předán indexeru pomoci.|  
-|\<obsah meta name="Microsoft.Help.Category" = "[řetězec]" / >|Produkty používá k identifikaci témata obsahu. Můžete určit více témata pro téma nebo tuto značku můžete vynechat, pokud nechcete, aby odkazy k identifikaci žádné témata. Tato značka se používá k ukládání atributy pro TargetOS a TargetFrameworkMoniker při převodu téma ze starší verze nápovědy. Formát obsahu je AttributeName:AttributeValue.|  
-|\<obsah name="Microsoft.Help.TopicVersion meta ="[tématu číslo verze]"/ >|Určuje této verzi tohoto tématu, když existuje více verzí v katalogu. Protože Microsoft.Help.Id není musí být jedinečný, tato značka je požadován při více než jedna verze téma existuje v katalogu, například když katalog obsahuje téma pro rozhraní .NET Framework 3.5 a téma pro rozhraní .NET Framework 4 a mají stejné Micro logicky. Help.Id.|  
-|\<Meta name = "SelfBranded" content = "[hodnotu TRUE nebo FALSE]" / >|Určuje, zda v tomto tématu používá balíček brandingu spuštění Správce knihovny nápovědy nebo brandingu balíček, který je specifická pro téma. Tato značka musí být buď TRUE nebo FALSE. Pokud je hodnota TRUE, pak brandingu balíčku pro přidružené tématu přepsání značce balíček, který je nastaven při spuštění Správce knihovny nápovědy tak, aby tématu je vykreslen tak, jak má i v případě, že se liší od vykreslování jiný obsah. Pokud je FALSE, není v aktuálním tématu vykreslován podle značky balíček, který je nastaven při spuštění Správce knihovny nápovědy. Ve výchozím nastavení předpokládá samoobslužné brandingu měla hodnotu false, pokud proměnnou SelfBranded je deklarován jako TRUE; Správce knihovny nápovědy proto není nutné deklarovat \<meta name = "SelfBranded" content = "FALSE" / >.|  
+|\< obsah meta name="Microsoft.Help.TocOrder" = "[kladné celé číslo]" / >|Určuje, kde v obsahu Toto téma se zobrazí relativně k jeho rovnocenná témata. Tato značka je vyžadován a musí být použit pouze jednou v tématu. Hodnota je celé číslo. Téma, které určuje nižší hodnota celé číslo se zobrazí nad téma, které určuje celé číslo vyšší hodnotu.|  
+|\< obsah meta name="Microsoft.Help.Product" = "[kód produktu]" / >|Určuje produkt, který toto téma popisuje. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Tyto informace můžete také zadat jako parametr, který je předán indexeru pomoci.|  
+|\< obsah meta name="Microsoft.Help.ProductVersion" = "[číslo verze]" / >|Určuje verzi produktu, který toto téma popisuje. Pokud tato značka se používá v tématu, musíte ho použít pouze jednou. Tyto informace můžete také zadat jako parametr, který je předán indexeru pomoci.|  
+|\< obsah meta name="Microsoft.Help.Category" = "[řetězec]" / >|Produkty používá k identifikaci témata obsahu. Můžete určit více témata pro téma nebo tuto značku můžete vynechat, pokud nechcete, aby odkazy k identifikaci žádné témata. Tato značka se používá k ukládání atributy pro TargetOS a TargetFrameworkMoniker při převodu téma ze starší verze nápovědy. Formát obsahu je AttributeName:AttributeValue.|  
+|\< obsah name="Microsoft.Help.TopicVersion meta ="[tématu číslo verze]"/ >|Určuje této verzi tohoto tématu, když existuje více verzí v katalogu. Protože Microsoft.Help.Id není musí být jedinečný, tato značka je požadován při více než jedna verze téma existuje v katalogu, například když katalog obsahuje téma pro rozhraní .NET Framework 3.5 a téma pro rozhraní .NET Framework 4 a mají stejné Micro logicky. Help.Id.|  
+|\< Meta name = "SelfBranded" content = "[hodnotu TRUE nebo FALSE]" / >|Určuje, zda v tomto tématu používá balíček brandingu spuštění Správce knihovny nápovědy nebo brandingu balíček, který je specifická pro téma. Tato značka musí být buď TRUE nebo FALSE. Pokud je hodnota TRUE, pak brandingu balíčku pro přidružené tématu přepsání značce balíček, který je nastaven při spuštění Správce knihovny nápovědy tak, aby tématu je vykreslen tak, jak má i v případě, že se liší od vykreslování jiný obsah. Pokud je FALSE, není v aktuálním tématu vykreslován podle značky balíček, který je nastaven při spuštění Správce knihovny nápovědy. Ve výchozím nastavení předpokládá samoobslužné brandingu měla hodnotu false, pokud proměnnou SelfBranded je deklarován jako TRUE; Správce knihovny nápovědy proto není nutné deklarovat \<meta name = "SelfBranded" content = "FALSE" / >.|  
   
 ### <a name="creating-a-branding-package"></a>Vytváření vlastní balíček  
 Verze Visual Studio zahrnuje několik různých produktů Visual Studio, včetně izolované a integrované prostředí pro partnery, Visual Studio.  Každý z těchto produktů vyžaduje určitý stupeň obsahu na základě téma nápovědy branding podpory, které jsou jedinečné pro produkt.  Témata týkající se sady Visual Studio například musí být konzistentní brand prezentací, zatímco SQL Studio, který zabalí ISO prostředí, vyžaduje svůj vlastní jedinečný nápovědy obsahu branding pro každého tématu.  Partnerem integrované prostředí může být vhodné jejich témata nápovědy, které se v rámci nadřazené obsahu nápovědy produktu Visual Studio při zachování vlastní branding tématu.  
@@ -559,22 +557,22 @@ Značky balíček obsahuje sadu souborů HTM, které podporují scénáře pro k
 |-|-|-|  
 |**Soubor**|**Použití**|**Zobrazí zdroje obsahu**|  
 |domovskastranka.htm|Toto je stránka, která zobrazuje obsah aktuálně nainstalovaný a jakoukoli jinou zprávu vhodné pro uživatele o jejich obsahu.  Tento soubor má další obsah meta data atribut "Microsoft.Help.Id" = "-1" který nahradí to obsahu v horní části místní obsahu obsah.||  
-||< META_HOME_PAGE_TITLE_ADD / >|Branding.XML, značka \<HomePageTitle >|  
-||< HOME_PAGE_INTRODUCTION_SECTION_ADD / >|Branding.XML, značka \<HomePageIntroduction >|  
-||< HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / >|Branding.XML, značka \<HomePageContentInstallText >|  
-||< HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / >|Záhlaví části značky Branding.xml\<HomePageInstalledBooks >, data vygenerovaná aplikací, \<HomePageNoBooksInstalled > když jsou nainstalovány žádné knihy.|  
-||< HOME_PAGE_SETTINGS_SECTION_ADD / >|Záhlaví části značky Branding.xml \<HomePageHelpSettings >, část textu \<HomePageHelpSettingsText >.|  
+||&LT; META_HOME_PAGE_TITLE_ADD / &GT;|Branding.XML, značka \<HomePageTitle >|  
+||&LT; HOME_PAGE_INTRODUCTION_SECTION_ADD / &GT;|Branding.XML, značka \<HomePageIntroduction >|  
+||&LT; HOME_PAGE_CONTENT_INSTALL_SECTION_ADD / &GT;|Branding.XML, značka \<HomePageContentInstallText >|  
+||&LT; HOME_PAGE_BOOKS_INSTALLED_SECTION_ADD / &GT;|Záhlaví části značky Branding.xml\<HomePageInstalledBooks >, data vygenerovaná aplikací, \<HomePageNoBooksInstalled > když jsou nainstalovány žádné knihy.|  
+||&LT; HOME_PAGE_SETTINGS_SECTION_ADD / &GT;|Záhlaví části značky Branding.xml \<HomePageHelpSettings >, část textu \<HomePageHelpSettingsText >.|  
 |topiccorrupted.htm|Pokud téma existuje v sadě místní, ale pro z nějakého důvodu nelze zobrazit (poškozený obsah).||  
-||< META_TOPIC_CORRUPTED_TITLE_ADD / >|Branding.XML, značka \<TopicCorruptedTitle >|  
-||< TOPIC_CORRUPTED_SECTION_ADD / >|Branding.XML, značka \<TopicCorruptedViewOnlineText >|  
+||&LT; META_TOPIC_CORRUPTED_TITLE_ADD / &GT;|Branding.XML, značka \<TopicCorruptedTitle >|  
+||&LT; TOPIC_CORRUPTED_SECTION_ADD / &GT;|Branding.XML, značka \<TopicCorruptedViewOnlineText >|  
 |topicnotfound.htm|Pokud téma nebyl nalezen v místní obsah nastavte, ani není k dispozici online||  
-||< META_TOPIC_NOT_FOUND_TITLE_ADD / >|Branding.XML, značka \<TopicNotFoundTitle >|  
-||< META_TOPIC_NOT_FOUND_ID_ADD / >|Branding.XML, značka \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|  
-||< TOPIC_NOT_FOUND_SECTION_ADD / >|Branding.XML, značka \<TopicNotFoundText >|  
+||&LT; META_TOPIC_NOT_FOUND_TITLE_ADD / &GT;|Branding.XML, značka \<TopicNotFoundTitle >|  
+||&LT; META_TOPIC_NOT_FOUND_ID_ADD / &GT;|Branding.XML, značka \<TopicNotFoundViewOnlineText > + \<TopicNotFoundDownloadContentText >|  
+||&LT; TOPIC_NOT_FOUND_SECTION_ADD / &GT;|Branding.XML, značka \<TopicNotFoundText >|  
 |contentnotinstalled.htm|Pokud neexistuje žádný místní obsah pro produkt nainstalována.||  
-||< META_CONTENT_NOT_INSTALLED_TITLE_ADD / >|Branding.XML, značka \<ContentNotInstalledTitle >|  
-||< META_CONTENT_NOT_INSTALLED_ID_ADD / >|Branding.XML, značka \<ContentNotInstalledDownloadContentText >|  
-||< CONTENT_NOT_INSTALLED_SECTION_ADD / >|Branding.XML, značka \<ContentNotInstalledText >|  
+||&LT; META_CONTENT_NOT_INSTALLED_TITLE_ADD / &GT;|Branding.XML, značka \<ContentNotInstalledTitle >|  
+||&LT; META_CONTENT_NOT_INSTALLED_ID_ADD / &GT;|Branding.XML, značka \<ContentNotInstalledDownloadContentText >|  
+||&LT; CONTENT_NOT_INSTALLED_SECTION_ADD / &GT;|Branding.XML, značka \<ContentNotInstalledText >|  
   
 **Soubory šablon stylů CSS**  
   
@@ -737,7 +735,7 @@ Vytváření rozšíření izolované prostředí:
   
 1.  V sadě Visual Studio v části **soubor**, zvolte **nový projekt**v části **jiné typy projektů** zvolte **rozšiřitelnost**a potom zvolte  **Izolované prostředí Visual Studio**. Název projektu `ContosoHelpShell`) k vytvoření projektu rozšíření založený na šabloně izolované prostředí sady Visual Studio.  
   
-2.  V Průzkumníku řešení v projektu ContosoHelpShellUI ve složce soubory prostředků, otevřete ApplicationCommands.vsct. Ujistěte se, že tento řádek je označeno jako komentář (vyhledejte "No_Help"):`<!-- <define name="No_HelpMenuCommands"/> -->`  
+2.  V Průzkumníku řešení v projektu ContosoHelpShellUI ve složce soubory prostředků, otevřete ApplicationCommands.vsct. Ujistěte se, že tento řádek je označeno jako komentář (vyhledejte "No_Help"): `<!-- <define name="No_HelpMenuCommands"/> -->`  
   
 3.  Zvolte klávesy F5 zkompilování a spuštění **ladění**. V experimentální instance izolované prostředí IDE, zvolte **pomoci** nabídky. Ujistěte se, že **zobrazit nápovědu**, **přidat a odebrat pomůže obsahu**, a **nastavit předvolby pomoci** zobrazí příkazy.  
   
@@ -802,7 +800,7 @@ Abyste to mohli otestovat jakoby nasazení:
   
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15  
   
-     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]Integrované prostředí:  
+     [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)] Integrované prostředí:  
   
      C:ProgramDataMicrosoftHelpLibrary2CatalogsVisualStudio15en-USA  
   
@@ -833,4 +831,4 @@ Chcete-li získat další pomoc, zkuste [fórech MSDN dokumentaci pro vývojář
   
 Aktualizace na nejnovější problém, naleznete [Readme Prohlížeč nápovědy](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   
-Obraťte se na tým pomoct PM prohlížeč přímo, pošlete e-mail nahlpfdbk@microsoft.com
+Obraťte se na tým pomoct PM prohlížeč přímo, pošlete e-mail na hlpfdbk@microsoft.com

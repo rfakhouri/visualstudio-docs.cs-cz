@@ -1,23 +1,21 @@
 ---
-title: "Roslyn analyzátory a podporou kód knihovny pro ImmutableArrays | Microsoft Docs"
-ms.custom: 
+title: Roslyn analyzátory a podporou kód knihovny pro ImmutableArrays | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 6870f1733d507f2cf46d196b2bba027b998b5ba4
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 6ebafdd09e6fca0e1266c4eb03c4f6cb66554d06
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn analyzátory a podporou kód knihovny pro ImmutableArrays
 
@@ -28,8 +26,8 @@ ms.lasthandoff: 12/22/2017
 Následující sestavení v tomto příkladu potřebujete:
 
 * Visual Studio 2015 (není edice Express) nebo novější verze.  Můžete použít bezplatnou [Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
-* [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Můžete také při instalaci sady Visual Studio, zkontrolovat Visual Studio Extensibility Tools v rámci běžných nástrojů k instalaci sady SDK ve stejnou dobu.  Pokud jste již nainstalovali Visual Studio, můžete taky nainstalovat tuto sadu SDK tak, že přejdete do hlavní nabídky **soubor &#124; Nové &#124; Projekt...** , výběr jazyka C# v levém navigačním podokně a pak vyberete rozšíření.  Pokud vyberete "**nainstalovat Visual Studio Extensibility Tools**" šablony projektu s popisem cesty, budete vyzváni ke stažení a instalace sady SDK.
-* [Kompilátoru platformu .NET ("Roslyn") SDK](http://aka.ms/roslynsdktemplates).  Tuto sadu SDK můžete taky nainstalovat tak, že přejdete do hlavní nabídky **soubor &#124; Nové &#124; Projekt...** , výběrem možnosti **C#** v levém navigačním podokně a pak vyberete **rozšiřitelnost**.  Pokud vyberete "**stáhnout sadu SDK platformy .NET kompilátoru**" šablony projektu s popisem cesty, budete vyzváni ke stažení a instalace sady SDK.  Tato sada SDK zahrnuje [Roslyn syntaxe vizualizér](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Tato velmi užitečné nástroj pomáhá můžete zjistit, jaké typy modelu kódu je vhodné vyhledat ve vašem analyzátor.  Analyzátor infrastruktury volání do kódu pro konkrétní kód modelu typy, tak, aby váš kód pouze provede, když je to nutné a zaměřit pouze na Analýza relevantní kódu.
+* [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  Můžete také při instalaci sady Visual Studio, zkontrolovat Visual Studio Extensibility Tools v rámci běžných nástrojů k instalaci sady SDK ve stejnou dobu.  Pokud jste již nainstalovali Visual Studio, můžete taky nainstalovat tuto sadu SDK tak, že přejdete do hlavní nabídky **soubor &#124; nový &#124;projektu...** , výběr jazyka C# v levém navigačním podokně a pak vyberete rozšíření.  Pokud vyberete "**nainstalovat Visual Studio Extensibility Tools**" šablony projektu s popisem cesty, budete vyzváni ke stažení a instalace sady SDK.
+* [Kompilátoru platformu .NET ("Roslyn") SDK](http://aka.ms/roslynsdktemplates).  Tuto sadu SDK můžete taky nainstalovat tak, že přejdete do hlavní nabídky **soubor &#124; nový &#124; projektu...** , výběrem možnosti **C#** v levém navigačním podokně a pak vyberete **rozšiřitelnost**.  Pokud vyberete "**stáhnout sadu SDK platformy .NET kompilátoru**" šablony projektu s popisem cesty, budete vyzváni ke stažení a instalace sady SDK.  Tato sada SDK zahrnuje [Roslyn syntaxe vizualizér](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer).  Tato velmi užitečné nástroj pomáhá můžete zjistit, jaké typy modelu kódu je vhodné vyhledat ve vašem analyzátor.  Analyzátor infrastruktury volání do kódu pro konkrétní kód modelu typy, tak, aby váš kód pouze provede, když je to nutné a zaměřit pouze na Analýza relevantní kódu.
 
 ## <a name="whats-the-problem"></a>Co je problém?
 
@@ -59,13 +57,13 @@ Chyba s Inicializátory kolekcí se stane, protože metoda ImmutableArray.Add vr
 
 ## <a name="finding-relevant-syntax-node-types-to-trigger-your-analyzer"></a>Hledání typy uzlů relevantní syntaxe pro aktivaci vaší analyzátor
 
- Pokud chcete začít vytvářet nástroje analyzer, nejprve rozmyslete si, jaký typ SyntaxNode, budete muset vyhledat. Spusťte vizualizér syntaxe z nabídky **zobrazení &#124; Další Windows &#124; Vizualizér Roslyn syntaxe**.
+ Pokud chcete začít vytvářet nástroje analyzer, nejprve rozmyslete si, jaký typ SyntaxNode, budete muset vyhledat. Spusťte vizualizér syntaxe z nabídky **zobrazení &#124; ostatní okna &#124; Roslyn syntaxe vizualizér**.
 
 Umístit editor vsuvka na řádek, který deklaruje `b1`.  Zobrazí se syntaxe vizualizér zobrazuje se v `LocalDeclarationStatement` uzel stromu syntaxe.  Tento uzel má `VariableDeclaration`, která naopak má `VariableDeclarator`, která naopak má `EqualsValueClause`a nakonec dojde `ObjectCreationExpression`.  Jako kliknete ve stromu syntaxe vizualizér uzlů, syntaxe v okně editoru označuje tak, aby zobrazovalo kód představuje tento uzel.  Názvy typů dílčí SyntaxNode odpovídat názvů používaných v gramatika C#.
 
 ## <a name="creating-the-analyzer-project"></a>Vytvoření projektu analyzátor
 
-Z hlavní nabídky zvolte **soubor &#124; Nové &#124; Projekt...** .  V **nový projekt** dialogové okno, v části **C#** projekty v levém navigačním panelu zvolte rozšiřitelnost a v pravém podokně **analyzátor s opravte kód** projektu Šablona.  Zadejte název a potvrďte dialogové okno.
+Z hlavní nabídky zvolte **soubor &#124; nový &#124; projektu...** .  V **nový projekt** dialogové okno, v části **C#** projekty v levém navigačním panelu zvolte rozšiřitelnost a v pravém podokně **analyzátor s opravte kód** projektu Šablona.  Zadejte název a potvrďte dialogové okno.
 
 Šablona se otevře soubor DiagnosticAnalyzer.cs.  Zvolte tohoto editoru karta vyrovnávací paměti.  Tento soubor má třídu analyzátoru (vytvořen z názvu dáte projekt), je odvozena z `DiagnosticAnalyzer` (typ Roslyn rozhraní API).  Má novou třídu `DiagnosticAnalyzerAttribute` deklarace vaší Analyzátor je relevantní pro jazyk C#, aby kompilátor vyhledá a načte vaše analyzátor.
 

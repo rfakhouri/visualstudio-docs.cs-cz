@@ -1,13 +1,10 @@
 ---
-title: "Globalizace a lokalizace aplikací | Microsoft Docs"
-ms.custom: 
+title: Globalizace a lokalizace aplikací | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Visual Studio]
 - Visual Basic code, international applications
@@ -16,27 +13,25 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c687a7513356a086a231a6b13a1f16112d7d5eea
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 7886b9dfa08882efd372c7c915a1fc2e444e8691
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalizace a lokalizace aplikací
 
 Pokud máte v plánu na distribuci aplikace mezinárodní cílovou skupinu, budete muset zachovat několik věcí, nezapomeňte během fáze návrhu a vývoj. I v případě, že nemáte k dispozici tyto plány, malé úsilí předem můžete usnadnily podstatně by se měl plánu změnit v budoucích verzích vaší aplikace. Služby, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usnadňují vývoj jednu aplikaci, která se může přizpůsobit různá národní prostředí spravovaný vývoj pomocí sady Visual Studio.  
   
- Visual Studio byla navržena od začátku tak, aby vývoji pro mezinárodní cílovou skupinu snadno provedením výhod služeb, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Na následujících stránkách pomůže vám představí internacionalizace funkce integrovaná v sadě Visual Studio.  
+ Visual Studio byla navržena od začátku tak, aby vývoji pro mezinárodní cílovou skupinu snadno provedením výhod služeb, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. V následujících článcích pomůže vám představí internacionalizace funkce integrovaná v sadě Visual Studio.  
   
-## <a name="in-this-section"></a>V tomto oddílu
 
- [Představení mezinárodních aplikací založených na prostředí .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
+ [Úvod do mezinárodních aplikací založených na rozhraní .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Seznámíte se základními pojmy související s vývojem softwaru pro mezinárodní trh pomocí sady Visual Studio a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
  [Lokalizace aplikací](../ide/localizing-applications.md)  
@@ -45,9 +40,9 @@ Pokud máte v plánu na distribuci aplikace mezinárodní cílovou skupinu, bude
  [Globalizace aplikací](../ide/globalizing-applications.md)  
  Obsahuje odkazy na stránky o vytváření aplikací, které podporují více jazykových verzí.  
   
-## <a name="related-sections"></a>Související oddíly
+### <a name="see-also"></a>Viz také
   
- [Doporučené postupy pro vývoj aplikací připravených k použití](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Osvědčené postupy pro vývoj aplikací připravených](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Obsahuje základní informace o programování pro mezinárodní cílovou skupinu.  
   
  [Přehled knihovny tříd](/dotnet/standard/class-library-overview)  

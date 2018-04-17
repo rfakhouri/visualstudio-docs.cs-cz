@@ -1,28 +1,25 @@
 ---
-title: "Doporučené postupy a příklady (poznámky SAL) | Microsoft Docs"
-ms.custom: 
+title: Doporučené postupy a příklady (poznámky SAL) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c6f505d5e44aec47f88a7955b5b5d98b2699e4
-ms.sourcegitcommit: bfa26fd7426af0d065cb2eef3d6827b5d6f7986c
+ms.openlocfilehash: d8910c9b5d36cecec82bf0e386e294759113c76e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="best-practices-and-examples-sal"></a>Doporučené postupy a příklady (poznámky SAL)
 Tady jsou některé způsoby maximum mimo zdrojového kódu poznámky jazyk (SAL) a vyhnout se některé běžné problémy.
 
-## <a name="in"></a>\_In\_
+## <a name="in"></a>\_V\_
 
 Pokud funkce by měla k zápisu do elementu, použijte `_Inout_` místo `_In_`. To je zvlášť důležité v případech automatizované převod starší makra SAL. Před SAL, používá mnoho programátorů makra jako komentáře – makra, které byly pojmenovány `IN`, `OUT`, `IN_OUT`, nebo variant tyto názvy. Doporučujeme převést tyto makra SAL, ale také doporučujeme vám buďte opatrní, když je převést protože kód byl změněn, protože původní prototypu byla zapsána a už může staré makro odrážet, co kód dělá. Buďte opatrní hlavně o `OPTIONAL` komentář makro, protože je často umístěn nesprávně – například na nesprávný straně čárkou.
 
@@ -47,7 +44,7 @@ void Func2(_Inout_ PCHAR p1)
 }
 ```
 
-## <a name="opt"></a>\_opt\_
+## <a name="opt"></a>\_OPT\_
 
 Pokud má volající není povoleno předávat ukazatele null, použijte `_In_` nebo `_Out_` místo `_In_opt_` nebo `_Out_opt_`. To platí i pro funkci, která ověří jeho parametry a vrátí chybu, pokud má hodnotu NULL, pokud by neměl být. I když s funkcí zkontrolovat její parametr neočekávanou hodnotu NULL a elegantně vrátí je vhodné Obranným kódování, neznamená to, že parametr poznámky můžou být nepovinné typu (`_*Xxx*_opt_`).
 

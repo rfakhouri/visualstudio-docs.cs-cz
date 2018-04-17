@@ -1,27 +1,23 @@
 ---
 title: V editoru | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 585da54c691bda21a363dfe1308c6ed229a024ca
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="inside-the-editor"></a>V editoru
 Editor se skládá z několika různé subsystémy, které jsou navržené tak, aby editoru samostatné modelu text z textového zobrazení a uživatelské rozhraní.  
@@ -50,7 +46,7 @@ Editor se skládá z několika různé subsystémy, které jsou navržené tak, 
   
 -   [IntelliSense](../extensibility/inside-the-editor.md#intellisense)  
   
-##  <a name="overview"></a>Přehled subsystémů  
+##  <a name="overview"></a> Přehled subsystémů  
   
 ### <a name="text-model-subsystem"></a>Text modelu subsystému  
  Subsystém modelu textu je zodpovědná za představující text a povolení jeho zpracování. Subsystém modelu text obsahuje <xref:Microsoft.VisualStudio.Text.ITextBuffer> rozhraní, které popisuje posloupnost znaků, který se má zobrazovat v editoru. Tento text můžete upravit, sledovat a jinak s nimi manipulovat, mnoha různými způsoby. Text model také obsahuje typy pro následující aspekty:  
@@ -80,7 +76,7 @@ Editor se skládá z několika různé subsystémy, které jsou navržené tak, 
   
 ## <a name="a-closer-look-at-the-text-model-and-the-text-view"></a>Bližší pohled na modelu Text a textového zobrazení  
   
-###  <a name="textmodel"></a>Model textu  
+###  <a name="textmodel"></a> Model textu  
  Subsystém modelu text se skládá z různých seskupení typ textu. Mezi ně patří textovou vyrovnávací paměť, text snímky a text rozpětí.  
   
 #### <a name="text-buffers-and-text-snapshots"></a>Textové vyrovnávací paměti a snímky textu  
@@ -135,7 +131,7 @@ abXefYj
   
  Pouze jeden <xref:Microsoft.VisualStudio.Text.ITextEdit> objektu může být vytvořena instance pro textovou vyrovnávací paměť kdykoli a všechny úpravy textu je potřeba provést na vlákno, které vlastní textová vyrovnávací paměť (pokud vlastnictví byl vyžádaný). Upravit text může být opuštěny v rámci volání jeho `Cancel` metoda nebo jeho `Dispose` metoda.  
   
- <xref:Microsoft.VisualStudio.Text.ITextBuffer>také poskytuje `Insert()`, `Delete()`, a `Replace()` metody, které je podobných najít na <xref:Microsoft.VisualStudio.Text.ITextEdit> rozhraní. Volání metody tyto stejného efektu jako vytváření má <xref:Microsoft.VisualStudio.Text.ITextEdit> objekt, vytvořit podobné volání a potom se použijí úpravy.  
+ <xref:Microsoft.VisualStudio.Text.ITextBuffer> také poskytuje `Insert()`, `Delete()`, a `Replace()` metody, které je podobných najít na <xref:Microsoft.VisualStudio.Text.ITextEdit> rozhraní. Volání metody tyto stejného efektu jako vytváření má <xref:Microsoft.VisualStudio.Text.ITextEdit> objekt, vytvořit podobné volání a potom se použijí úpravy.  
   
 #### <a name="tracking-points-and-tracking-spans"></a>Sledování body a sledování rozpětí  
  <xref:Microsoft.VisualStudio.Text.ITrackingPoint> Představuje pozice znaku v textové vyrovnávací paměti. Pokud vyrovnávací paměť je upravit tak, aby způsobí, že pozice znaku se posunou, bodem sledování posune s ním. Například pokud bod sledování určuje pozici 10 ve vyrovnávací paměti a vloženo pět znaků od začátku vyrovnávací paměti, bodem sledování pak odkazuje na pozici 15. Pokud se vložení stane na přesněji pozici odlišené bodem sledování, je dáno jeho chování jeho <xref:Microsoft.VisualStudio.Text.PointTrackingMode>, což může být buď `Positive` nebo `Negative`. Pokud je režim sledování kladné, že bodem sledování odkazuje na stejný znak, který je teď na konci vložení; Pokud je režim sledování záporná, bodem sledování odkazuje na první znak vložené na původní pozici. Je-li znak na pozici, která je reprezentována bod sledování odstraněna, bodem sledování posune na první znak, který následuje odstraněného rozsahu. Například pokud bod sledování odkazuje na znak na pozici 5 a znaky v místech 3 až 6 jsou odstraněny, bodem sledování odkazuje na znak na pozici 3.  
@@ -153,7 +149,7 @@ abXefYj
   
  Vývojářům můžete definovat vlastní typy obsahu a registrujte je pomocí <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>. Mnoho funkcí editoru lze definovat s ohledem na konkrétní typ obsahu pomocí <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>. Například okraje editoru, vylepšení a obslužné rutiny myši můžete definovat tak, že se vztahují pouze na editory, které zobrazí konkrétní typy obsahu.  
   
-###  <a name="textview"></a>Zobrazení textu  
+###  <a name="textview"></a> Zobrazení textu  
  Část zobrazení vzoru model view controller (MVC) definuje textového zobrazení, formátování zobrazení, grafické prvky, jako jsou například posuvník a bez vynechávání. Všechny prvky prezentace, které editoru Visual Studio jsou založené na WPF.  
   
 #### <a name="text-views"></a>Zobrazení textu  
@@ -181,7 +177,7 @@ abXefYj
 #### <a name="formatted-text"></a>Formátovaný Text  
  Text, který se zobrazí v zobrazení textu se skládá z <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> objekty. Každý řádek textového zobrazení odpovídá jeden řádek text v zobrazení textu. Dlouhé řádky v základní textová vyrovnávací paměť může být buď částečně vyznačených (Pokud není povoleno zalamování řádků) nebo rozdělen do více řádků textu zobrazení. <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> Rozhraní obsahuje metody a vlastnosti pro mapování mezi souřadnice a znaky a vylepšení, které může být přidružený k řádku.  
   
- <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine>objekty jsou vytvořeny pomocí <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> rozhraní. Pokud jste právě zajímá text, který je aktuálně zobrazený v zobrazení, můžete ignorovat zdroji formátování. Pokud vás zajímá ve formátu textu, který není v zobrazení (například pro podporu vyjmutí formátovaného textu a vložte), můžete použít <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> formátování textu v textové vyrovnávací paměti.  
+ <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> objekty jsou vytvořeny pomocí <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> rozhraní. Pokud jste právě zajímá text, který je aktuálně zobrazený v zobrazení, můžete ignorovat zdroji formátování. Pokud vás zajímá ve formátu textu, který není v zobrazení (například pro podporu vyjmutí formátovaného textu a vložte), můžete použít <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> formátování textu v textové vyrovnávací paměti.  
   
  Zobrazení textu formáty jeden <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> najednou.  
   
@@ -202,7 +198,7 @@ abXefYj
   
 -   IntelliSense  
   
-###  <a name="tagsandclassifiers"></a>Značky a třídění  
+###  <a name="tagsandclassifiers"></a> Značky a třídění  
  Značky jsou značky, které jsou přidruženy rozpětí textu. Umožňují prezentaci různými způsoby, například pomocí barevné zvýrazňování textu, podtržení, grafiky nebo automaticky otevíraná okna. Třídění se jeden typ značky.  
   
  Jiné druhy značky jsou <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> pro zvýraznění textu <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> pro práci s přehledy, a <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> chyby kompilace.  
@@ -234,14 +230,14 @@ abXefYj
   
  <xref:Microsoft.VisualStudio.Text.Classification.IClassificationFormatMap> Je mapování z typu klasifikace na sadu vlastností pro formátování textu. Implementace Mapa formátu v editoru zpracovává všechny exporty klasifikace formátů.  
   
-###  <a name="adornments"></a>Vylepšení  
+###  <a name="adornments"></a> Vylepšení  
  Vylepšení jsou grafické účinky, které přímo nesouvisejí s písma a barev znaků v zobrazení textu. Například je, že podtržení červenou vlnovkou, který slouží k označení-kompilování kódu v řadě programovacích jazyků embedded dalších úprav a popisy tlačítek se automaticky otevírané okno vylepšení. Vylepšení, které jsou odvozeny od <xref:System.Windows.UIElement> a implementovat <xref:Microsoft.VisualStudio.Text.Tagging.ITag>. Jsou dva speciální typy dalších úprav značky <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>, pro vylepšení, které na stejném místě jako text v zobrazení, a <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>, pro vlnovku podtržení.  
   
  Vložené vylepšení jsou obrázky, které tvoří součást zobrazení formátovaný text. Že jsou uspořádány do různých vrstev pořadí Z-order. Existují tři předdefinované vrstvy, následujícím způsobem: text, pomocí kurzoru a výběr. Vývojáři však můžete definovat další vrstvy a seřadit je podle s ohledem na sebe navzájem. Tři druhy embedded vylepšení jsou vylepšení relativního text, (které přesunout, pokud se přesune text a jsou odstraněna při odstranění text), vylepšení relativního zobrazení, (která mají udělat s částmi jiné textové zobrazení) a řídí vlastník vylepšení (na Vývojář musí spravovat jejich umístění).  
   
  Automaticky otevírané okno vylepšení jsou obrázky, které se zobrazují v malém okně výše textového zobrazení, například popisy tlačítek.  
   
-###  <a name="projection"></a>Projekce  
+###  <a name="projection"></a> Projekce  
  Projekce je technika pro vytváření jiný druh textovou vyrovnávací paměť, která není ve skutečnosti ukládání textu, ale místo toho kombinuje text z jiných textové vyrovnávací paměti. Například vyrovnávací paměť projekce lze řetězení text ze dvou dalších vyrovnávací paměti a zobrazí výsledky, pokud je v pouze jednu vyrovnávací paměti, nebo skrýt části textu v jedné vyrovnávací paměti. Vyrovnávací paměť projekce může fungovat jako zdrojová vyrovnávací paměť do vyrovnávací paměti jiné projekce. Sadu vyrovnávací paměti, které jsou spojené projekce konstruovat ke změně uspořádání text v mnoha různými způsoby. (Takové sady je také označován jako *vyrovnávací paměti grafu*.) Funkce osnovy text sady Visual Studio je implementována pomocí vyrovnávací paměť projekce skrytí sbaleného textu a editoru Visual Studio pro stránky ASP.NET používá projekce pro podporu embedded jazyků, například Visual Basic a C#.  
   
  <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBuffer> Je vytvořená pomocí <xref:Microsoft.VisualStudio.Text.Projection.IProjectionBufferFactoryService>. Projekce vyrovnávací paměť je reprezentována seřazená posloupnost <xref:Microsoft.VisualStudio.Text.ITrackingSpan> objekty, které se označují jako *zdroje rozsahy*. Obsah tyto rozsahy jsou uvedené jako posloupnost znaků. Vyrovnávací paměti text, ze kterých se mají vykreslovat zdroj rozsahy jsou pojmenované *zdroje vyrovnávací paměti*. Klienti vyrovnávací paměti projekce nemají potřeba mít na paměti, že se liší od vyrovnávací paměť běžného textu.  
@@ -275,18 +271,18 @@ P: ABCDEvwxyz
 ##### <a name="events-and-projection-buffers"></a>Události a projekce vyrovnávací paměti  
  Pokud projekce vyrovnávací paměť je změněn, změny jsou odesílány z vyrovnávací paměti projekce vyrovnávací paměti, které na ní závisí. Po změně všechny vyrovnávací paměti, jsou vyvolány události změny vyrovnávací paměti, počínaje nejhlubší vyrovnávací paměti.  
   
-###  <a name="outlining"></a>Osnova  
+###  <a name="outlining"></a> Osnova  
  Osnova je schopnost rozbalit nebo sbalit různé bloky textu v textovém zobrazení. Osnova je definována jako typ z <xref:Microsoft.VisualStudio.Text.Tagging.ITag>, v stejným způsobem, jak jsou definovány vylepšení. A <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> je značku, která definuje oblast text, který můžete rozbalit nebo sbalit. Chcete-li použít osnovy, je nutné importovat <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManagerService> získat <xref:Microsoft.VisualStudio.Text.Outlining.IOutliningManager>. Osnovy správce vytvoří výčet, sbalí a rozšiřuje jinou bloků, které jsou reprezentovány jako <xref:Microsoft.VisualStudio.Text.Outlining.ICollapsible> objekty a odpovídajícím způsobem vyvolává události.  
   
-###  <a name="mousebindings"></a>Vazby myši  
+###  <a name="mousebindings"></a> Vazby myši  
  Vazby myši propojit jiné příkazy pohyb myši. Vazby myš jsou definované za použití <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessorProvider>, a vazeb klíče jsou definované za použití <xref:Microsoft.VisualStudio.Text.Editor.IKeyProcessorProvider>. <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> Automaticky vytvoří všechny vazby a připojí je k události myši v zobrazení.  
   
  <xref:Microsoft.VisualStudio.Text.Editor.IMouseProcessor> Rozhraní obsahuje předem proces a po zpracování obslužné rutiny události různých myši. K popisovači některá z událostí, můžete přepsat některé metody v <xref:Microsoft.VisualStudio.Text.Editor.MouseProcessorBase>.  
   
-###  <a name="editoroperations"></a>Operace editoru  
+###  <a name="editoroperations"></a> Operace editoru  
  Editor operace můžete použít k automatizaci interakci s editoru pro skriptování nebo jiné účely. Můžete importovat <xref:Microsoft.VisualStudio.Text.Operations.IEditorOperationsFactoryService> pro operace přístupu na danou <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Pak můžete tyto objekty změnit výběr, posuňte zobrazení nebo přesunout znak do různých částí zobrazení.  
   
-###  <a name="intellisense"></a>IntelliSense  
+###  <a name="intellisense"></a> IntelliSense  
  IntelliSense podporuje dokončování příkazů, podpis nápovědy (také označované jako informace o parametrech), rychlé informace a žárovek.  
   
  Dokončování poskytuje rozbalovací seznam potenciální dokončených pro názvy metod, elementů XML a další elementy kódování nebo značek. Obecně platí vyvolá gesto uživatele relaci dokončení. Relace zobrazí seznam potenciální dokončených, a uživatel může vybrat jednu nebo zavření v seznamu. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> Je odpovědná za vytváření a spouštění <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession>. <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> Vypočítá <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> dokončení položek pro relaci.  

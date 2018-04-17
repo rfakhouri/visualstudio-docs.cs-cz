@@ -2,26 +2,22 @@
 title: Vytvoření kategorie nastavení | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-caps.latest.revision: 39
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bdf3231f2df8b3700c7865fa53e60003b814a5f
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 22a625466dd8a94ba1dbe67ef6f05bec68954d2c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-settings-category"></a>Vytvoření kategorie nastavení
 V tomto názorném postupu vytvořit kategorii nastavení sady Visual Studio a používat k uložení hodnot a obnovení hodnoty z nastavení souboru. Kategorie nastavení je skupina souvisejících vlastností, které se zobrazují jako "bod vlastní nastavení;" To znamená jako zaškrtávací políčko v **Import a export nastavení** průvodce. (Najdete na **nástroje** nabídky.) Nastavení jsou uložena ani obnoveny v kategorii a jednotlivých nastavení nezobrazují v průvodci. Další informace najdete v tématu [přizpůsobení prostředí Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  

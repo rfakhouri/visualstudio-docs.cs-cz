@@ -1,12 +1,10 @@
 ---
-title: "Rozšíření vlastnosti, seznam úkolů, výstupní a možnosti Windows | Microsoft Docs"
-ms.custom: 
+title: Rozšíření vlastnosti, seznam úkolů, výstupní a možnosti Windows | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - properties pane
 - task list
@@ -15,16 +13,16 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
-caps.latest.revision: "37"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 631c336d0350fdf8a43d747eb6bda7b01e9d1eba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4db9bb9101bd06921814132856fab0335a4a2530
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Rozšíření vlastnosti, seznam úkolů, výstupní a možnosti Windows
 Žádné okno nástroje v sadě Visual Studio můžete přistupovat. Tento návod ukazuje, jak integrovat do nové informace o vaší okno nástroje **možnosti** stránky a nové nastavení na **vlastnosti** stránky a také jak k zápisu do **seznam úkolů** a **výstup** systému windows.  
@@ -150,7 +148,7 @@ ms.lasthandoff: 12/22/2017
   
      Pokud okno nástroje jsou k dispozici uživatelům, položky v seznamu budou odpovídat TodoItems. Když uživatel vybere jeden z těchto položek v ovládacím prvku rozevíracího seznamu, **vlastnosti** okně se zobrazí informace o položce.  
   
-     Jak zpřístupnit data v **vlastnosti** okně zapnout data do veřejné vlastnosti, které mají dva speciální atributy `Description` a `Category`. `Description`je text, který se zobrazí v dolní části **vlastnosti** okno. `Category`Určuje, kde, vlastnost by se měla objevit, když **vlastnosti** okno se zobrazí v **Categorized** zobrazení. Na následujícím obrázku **vlastnosti** je okno **Categorized** zobrazení, **název** vlastnost v **ToDo pole** kategorie vybrané a popis **název** vlastnosti se zobrazí v dolní části okna.  
+     Jak zpřístupnit data v **vlastnosti** okně zapnout data do veřejné vlastnosti, které mají dva speciální atributy `Description` a `Category`. `Description` je text, který se zobrazí v dolní části **vlastnosti** okno. `Category` Určuje, kde, vlastnost by se měla objevit, když **vlastnosti** okno se zobrazí v **Categorized** zobrazení. Na následujícím obrázku **vlastnosti** je okno **Categorized** zobrazení, **název** vlastnost v **ToDo pole** kategorie vybrané a popis **název** vlastnosti se zobrazí v dolní části okna.  
   
      ![Vlastnosti – okno](../extensibility/media/t5properties.png "T5Properties")  
   

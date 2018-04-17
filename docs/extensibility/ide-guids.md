@@ -3,22 +3,21 @@ title: Identifikátory GUID IDE | Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
 ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9732fa16d3c51fc5b413f4e116d9182fe7ab540f
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ide-guids"></a>Identifikátory GUID IDE
 
@@ -71,7 +70,7 @@ ms.lasthandoff: 03/28/2018
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>|adfc4e60-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-fdadf150da82|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11D1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
 
 ## <a name="output-pane"></a>V podokně výstupu
@@ -106,7 +105,7 @@ ms.lasthandoff: 03/28/2018
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCheckedTasks>|18802036-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCommentTasks>|18802034-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCompilerTasks>|18802033-fc20-11d2-8bb1-00c04f8ec28c|
-|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCurrentFileTasks>|18802035-fc20-11d2-8bb1-00c04f8ec28c|
+|<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewCurrentFileTasks>|18802035-fc20-11D2-8BB1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewHTMLTasks>|36ac1c0d-fe86-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewShortcutTasks>|18802030-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsTaskListViewUncheckedTasks>|18802037-fc20-11d2-8bb1-00c04f8ec28c|

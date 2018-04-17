@@ -1,13 +1,10 @@
 ---
-title: "Formátování specifikátory v ladicím programu (C#) | Microsoft Docs"
-ms.custom: 
+title: Formátování specifikátory v ladicím programu (C#) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -26,17 +23,16 @@ helpviewer_keywords:
 - format specifiers, debugger
 - debugger, format specifiers recognized by
 ms.assetid: 345c8589-5f36-4d34-a58c-e56271687dd6
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fee9e4c355c83ae44cf6147084c95a3b213bce5a
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: c4b238833ecf96a80c66d6751b9a9afa772e2fee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory formátu v jazyce C# v ladicím programu sady Visual Studio
 Formát, ve kterém je zobrazená hodnota v lze změnit **sledovat** okno použití specifikátorů formátu. Můžete také použít specifikátory formátu v **Immediate** okně **příkaz** okno v [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)a to i v systému windows zdroje. Pokud přesunutí ukazatele myši na výrazu v těchto windows, zobrazí se v datového tipu výsledek. Datatips – bude odrážet specifikace formátu v popis dat zobrazení.  
@@ -67,7 +63,7 @@ Formát, ve kterém je zobrazená hodnota v lze změnit **sledovat** okno použi
 |d|desítkové celé číslo|0x0065|101|  
 |dynamické odkazy|Zobrazí zadaný objekt pomocí dynamického zobrazení|Zobrazí všechny členy objektu, včetně dynamického zobrazení|Zobrazí pouze dynamického zobrazení|  
 |h|hexadecimální celé číslo|61541|0x0000F065|  
-|nq|řetězec s žádné uvozovky|"Řetězec"|Moje řetězec|  
+|NQ|řetězec s žádné uvozovky|"Řetězec"|Moje řetězec|  
 |hidden|Zobrazí všechny veřejné a jiné veřejné členy|Zobrazí veřejné členy|Zobrazí všechny členy|  
 |Nezpracovaná|Zobrazí položky, jak se zobrazí v uzlu nezpracované položky. Na objekty proxy pouze platná.|Slovník\<T >|Nezpracovaná zobrazení slovník\<T >|  
 |výsledky|Použít s proměnnou typ, který implementuje rozhraní IEnumerable nebo rozhraní IEnumerable\<T >, obvykle výsledek výrazu dotazu. Zobrazí pouze členové, které obsahují výsledku dotazu.|Zobrazí všechny členy.|Zobrazí členy splňují podmínky dotazu.|  

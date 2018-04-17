@@ -1,27 +1,25 @@
 ---
-title: "Přidání ovládacího prvku uživatele na úvodní stránce | Microsoft Docs"
-ms.custom: 
+title: Přidání ovládacího prvku uživatele na úvodní stránce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - start page dll
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 448eba0d13a9501c328da79fa31fa66f4376d5df
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2bec2b4ab834eb55bd34a80f9e6a30931e3cd325
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Přidání uživatelského ovládacího prvku do úvodní stránky
 Tento návod ukazuje, jak přidat odkaz na stránku vlastní spuštění knihovny DLL. V příkladu přidáme sestavení uživatelského ovládacího prvku uživatelského ovládacího prvku k řešení a pak odkazuje na sestavení vytvořené ze souboru XAML – úvodní stránka. Novou kartu hostitelem uživatelského ovládacího prvku, který funguje jako základní webový prohlížeč.  
@@ -178,7 +176,7 @@ Tento návod ukazuje, jak přidat odkaz na stránku vlastní spuštění knihovn
   
 1.  Kopírování souboru XAML a všechny podpůrné textových souborů nebo značek souborů do **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  složky.  
   
-2.  Pokud všechny ovládací prvky nebo typy v sestavení, které nejsou nainstalované Visual Studio, odkazuje na úvodní stránky, zkopírujte sestavení a vložte je do *instalační složka nástroje Visual Studio***\Common7\IDE\ PrivateAssemblies\\**.  
+2.  Pokud všechny ovládací prvky nebo typy v sestavení, které nejsou nainstalované Visual Studio, odkazuje na úvodní stránky, zkopírujte sestavení a vložte je do * sady Visual Studio instalační složky ***\Common7\IDE\PrivateAssemblies\\** .  
   
 3.  Na příkazovém řádku Visual Studio, zadejte **devenv /rootsuffix Exp** otevřete experimentální instanci sady Visual Studio.  
   

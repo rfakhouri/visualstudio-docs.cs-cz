@@ -1,21 +1,19 @@
 ---
-title: "Začínáme s jazyky specifické pro doménu | Microsoft Docs"
-ms.custom: 
+title: Začínáme s jazyky specifické pro doménu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 68b750735c8f5d5f6bd7f1497565692c8836914c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 791686b948c5a0541cbe8f8cb420f38ef885c9d3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Začínáme s jazyky specifickými pro doménu
 Toto téma vysvětluje základní koncepce při definování a používání jazyka specifické pro doménu (DSL) vytvořené pomocí sady SDK modelování pro sadu Visual Studio.
@@ -102,7 +100,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
 -   **Projekt DslPackage** tento projekt obsahuje kód, který umožňuje instancí DSL otevřít a upravovat v sadě Visual Studio.  
   
-##  <a name="Debugging"></a>Spuštění DSL  
+##  <a name="Debugging"></a> Spuštění DSL  
  Řešení DSL můžete spustit ihned po jeho vytvoření. Později můžete upravit definici DSL postupně, spuštění řešení znovu po každé změně.  
   
 #### <a name="to-experiment-with-the-dsl"></a>A experimentovat s DSL  
@@ -120,7 +118,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
 3.  V experimentální instanci sady Visual Studio otevřete soubor modelu s názvem **Test** z **Průzkumníku řešení**.  
   
-     \-nebo –  
+     \- nebo –  
   
      Klikněte pravým tlačítkem na projekt ladění, přejděte na **přidat**a potom klikněte na **položky**. V **přidat položku** dialogové okno, vyberte typ souboru vaše DSL.  
   
@@ -170,7 +168,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
 3.  Klikněte na tlačítko **transformaci všech šablon** na panelu nástrojů **Průzkumníku řešení**.  
   
-     \-nebo –  
+     \- nebo –  
   
      Klikněte pravým tlačítkem na šablony, které chcete obnovit a pak klikněte na tlačítko **spustit nástroj pro vlastní**.  
   
@@ -198,7 +196,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
 1.  V diagramu DslDefinition přejmenovat **ExampleModel** k **FamilyTreeModel**, **ExampleElement** k **osoba**,  **Cíle** k **nadřazené položky**, a **zdroje** k **podřízené objekty**. Můžete kliknout na každý popisek ho změnit.  
   
-     ![Diagram DSL definice & č. 45; Rodina stromu modelu](../modeling/media/familyt_person.png "FamilyT_Person")  
+     ![Diagram DSL definice &#45; rodiny stromu modelu](../modeling/media/familyt_person.png "FamilyT_Person")  
   
 2.  Přejmenování elementu a konektor nástroje.  
   
@@ -391,7 +389,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
  Další informace najdete v tématu [nasazení řešení jazyk specifické pro doménu](../modeling/deploying-domain-specific-language-solutions.md).  
   
-##  <a name="Reset"></a>Odebrání starého experimentální DSL, linky  
+##  <a name="Reset"></a> Odebrání starého experimentální DSL, linky  
  Pokud jste vytvořili experimentální DSL, které již nechcete linky, můžete je odebrat z počítače resetováním Visual Studio experimentální instanci.  
   
  Tato akce odebere z počítače všechny experimentální DSL, linky a další experimentální rozšíření sady Visual Studio. Jedná se o rozšíření, které byly provedeny v režimu ladění.  

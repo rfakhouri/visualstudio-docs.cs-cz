@@ -1,12 +1,9 @@
 ---
-title: "Stránka služby, Návrhář projektu | Microsoft Docs"
-ms.custom: 
+title: Stránka služby, Návrhář projektu | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -14,14 +11,14 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 218f75c57d27cd424324eff8987561e9bee25e93
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+ms.openlocfilehash: f37d6b448ea7ce3a8662d0372cf61b35363f4648
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="services-page-project-designer"></a>Stránka Služby, návrhář projektu
 
@@ -56,7 +53,7 @@ Pro přístup k **služby** vyberte uzel projektu v **Průzkumníku řešení**a
  Použít pouze s ověřování pomocí formulářů. Určuje umístění ověřovací služby.  
   
  **Volitelné: Přihlašovací údaje poskytovatele**  
- Použít pouze s ověřování pomocí formulářů. Určuje, <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementace, který ověřovací služby bude používat pro zobrazit dialogové okno přihlášení, kdy aplikace volá `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metoda a předává prázdné řetězce nebo `null` pro parametry. Když toto pole ponecháte prázdné, je nutné předat platné uživatelské jméno a heslo k <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metoda. Jako název sestavení kvalifikovaný typ musíte zadat přihlašovací údaje poskytovatele. Další informace najdete v tématu <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> a [názvy sestavení](/dotnet/framework/app-domains/assembly-names). V nejjednodušší podobě název sestavení kvalifikovaný typ vypadá podobně jako v následujícím příkladu:`MyNamespace.MyLoginClass, MyAssembly`  
+ Použít pouze s ověřování pomocí formulářů. Určuje, <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> implementace, který ověřovací služby bude používat pro zobrazit dialogové okno přihlášení, kdy aplikace volá `static` <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metoda a předává prázdné řetězce nebo `null` pro parametry. Když toto pole ponecháte prázdné, je nutné předat platné uživatelské jméno a heslo k <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> metoda. Jako název sestavení kvalifikovaný typ musíte zadat přihlašovací údaje poskytovatele. Další informace najdete v tématu <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> a [názvy sestavení](/dotnet/framework/app-domains/assembly-names). V nejjednodušší podobě název sestavení kvalifikovaný typ vypadá podobně jako v následujícím příkladu: `MyNamespace.MyLoginClass, MyAssembly`  
   
  **Umístění služby role**  
  Určuje umístění služby rolí.  

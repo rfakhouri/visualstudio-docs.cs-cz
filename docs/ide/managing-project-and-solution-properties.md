@@ -1,21 +1,19 @@
 ---
-title: "Správa vlastností projektů a řešení | Microsoft Docs"
-ms.custom: 
+title: Správa vlastností projektů a řešení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5315dd07ab0c791cc9a349c08431ceb4a9b5c797
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2a68cc558a52f7c8d66f76600cd68309ad67769c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-project-and-solution-properties"></a>Správa vlastností projektů a řešení
 
@@ -46,7 +44,7 @@ Informace o jednotlivých stránek vlastností v Návrháři projektu najdete v 
 
 Projekty C++ a JavaScript mít různé uživatelské rozhraní pro správu vlastnosti projektu. Tento obrázek ukazuje stránce vlastností projektu C++ (stránky JavaScript jsou podobné):
 
-![Visual C & č. 43; & č. 43; Vlastnosti projektu](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
+![Visual C&#43; &#43; projektu vlastnosti](../ide/media/vs2015_projprops_cpp.png "VS2015_ProjProps_cpp")
 
 Informace o vlastnosti projektu C++ najdete v tématu [práce s vlastností projektu (C++)](/cpp/ide/working-with-project-properties). Další informace o vlastnostech JavaScript, najdete v části [stránky vlastností, JavaScript](../ide/reference/property-pages-javascript.md).
 

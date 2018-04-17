@@ -1,27 +1,23 @@
 ---
-title: "Seznam událostí grafiky | Microsoft Docs"
-ms.custom: 
+title: Seznam událostí grafiky | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.eventlist
 ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 601fc4eb47e89a4035f14722793169a76d73f520
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 244f7dd8c89eb1dcb15b81bcb20c0db9cb6cf617
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-event-list"></a>Seznam událostí grafiky
 Použijte seznam událostí grafiky ve Visual Studio Graphics Analyzer prozkoumat Direct3D – události, které nebyly zaznamenány při vykreslování rámce hry nebo aplikace.  
@@ -75,8 +71,8 @@ Použijte seznam událostí grafiky ve Visual Studio Graphics Analyzer prozkouma
 |----------|-----------------------|  
 |(bez ikony)|Obecné události<br /> Libovolnou událost, který není uživatelem definované události, uživatelem definované události skupiny nebo kreslení událostí.|  
 |![Ikona událostí kreslení](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Draw – událost<br /> Označí kreslení událostí, které došlo v průběhu zaznamenané rámečku.|  
-|![Uživatel & č. 45; ikonu značky definované událost](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Uživatelem definované události skupiny<br /> Skupiny související události, jak jsou definovány pomocí aplikace.|  
-|![Uživatel & č. 45; ikonu značky definované událost](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Uživatelem definované události značky<br /> Označuje konkrétní umístění, podle definice aplikace.|  
+|![Uživatel&#45;definované ikonu značky událost](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Uživatelem definované události skupiny<br /> Skupiny související události, jak jsou definovány pomocí aplikace.|  
+|![Uživatel&#45;definované ikonu značky událost](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Uživatelem definované události značky<br /> Označuje konkrétní umístění, podle definice aplikace.|  
   
 ## <a name="marking-user-defined-events-in-your-app"></a>Označování událostí definovaných uživatelem v aplikaci  
  Uživatelem definované události jsou specifické pro vaši aplikaci. Můžete je používat ke korelaci významné události, které nastaly v aplikaci s událostmi v seznamu událostí grafiky. Například můžete vytvořit uživatelem definované události skupiny pro uspořádání související události, jako jsou ty, které vykreslení uživatelského rozhraní – do skupiny nebo hierarchie tak, aby můžete snadno procházet seznam událostí, nebo můžete vytvořit značky při druhy objektů jsou vykresluje, takže budete moci snadno najít, že jejich událostí grafiky v seznamu událostí.  
@@ -106,7 +102,7 @@ Použijte seznam událostí grafiky ve Visual Studio Graphics Analyzer prozkouma
 
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
-##Visual Studio pro prostředek historie 2017 a větší obsahovat **historie prostředků** okno.  Výběr ikona sledování ![ikona sledování](media/gfx_watch.png) vedle záznamu v **seznam událostí** se otevře okno **historie prostředků** okno vidíte níže:
+## Visual Studio pro prostředek historie 2017 a větší obsahovat **historie prostředků** okno.  Výběr ikona sledování ![ikona sledování](media/gfx_watch.png) vedle záznamu v **seznam událostí** se otevře okno **historie prostředků** okno vidíte níže:
 
 ![Historie prostředků](media/gfx_diag_resource_history.png)
 

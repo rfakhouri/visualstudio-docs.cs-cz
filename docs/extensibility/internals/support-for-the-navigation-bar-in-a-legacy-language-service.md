@@ -1,26 +1,24 @@
 ---
-title: "Podpora pro navigační panel ve službě jazyk starší | Microsoft Docs"
-ms.custom: 
+title: Podpora pro navigační panel ve službě jazyk starší | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-caps.latest.revision: "16"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5e2d7ddfd4904923cbdea415fa5a0d2086cc071f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5d4dd17f3bb1bd50a97b24b42cf40edc27bf51db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Podpora pro navigační panel ve službě jazyk starší verze
 Navigační panel v horní části editoru zobrazení zobrazí typy a členy v souboru. V levém rozevíracího seznamu jsou uvedeny typy a členy se zobrazují v pravém rozevíracího seznamu. Když uživatel vybere typ, pomocí kurzoru je umístěn na prvním řádku typu. Když uživatel vybere člena, pomocí kurzoru je umístěn na definici tohoto člena. Rozevírací seznamy jsou aktualizovány tak, aby odrážela aktuální umístění pomocí kurzoru.  

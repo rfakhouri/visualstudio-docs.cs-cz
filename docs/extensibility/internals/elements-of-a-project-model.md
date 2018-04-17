@@ -1,27 +1,25 @@
 ---
 title: Prvky modelu projekt | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], implementation considerations
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-caps.latest.revision: "18"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c5f230da41efa8dd2fa522a5f86ae1402991b2cc
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 4933e73df93c1f8a3bcf62e03b6883c0096f1d8f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="elements-of-a-project-model"></a>Prvky modelu projektu
 Rozhraní a implementace všechny projekty v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sdílet základní strukturu: model projektu pro typ vašeho projektu. V projektu modelu, který je VSPackage vyvíjíte, můžete vytvořit objekty, které splňují svoje rozhodnutí o návrhu a fungují společně s globální funkce poskytované službou rozhraní IDE. I když můžete řídit, jak je trvalý položka projektu, například nebudete řídit oznámení, že soubor musí zachovat. Když uživatel umístí fokus na položku otevřít projekt a vybere **Uložit** na **soubor** nabídce [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] nabídky panelu, musí váš kód typ projektu intercept příkazu z prostředí IDE, zachovat soubor, a odešlete oznámení zpět do integrovaného vývojového prostředí už změny souboru.  

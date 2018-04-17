@@ -1,26 +1,24 @@
 ---
-title: "Běžné vzory ovládacích prvků pro sadu Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Běžné vzory ovládacích prvků pro sadu Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: ded7ed6dd843a7879100704276766bfcb528b6f7
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8383537a7e9d49f79e98da4dd95a3474803315d8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Běžné vzory ovládacích prvků pro sadu Visual Studio
-##  <a name="BKMK_CommonControls"></a>Běžné ovládací prvky  
+##  <a name="BKMK_CommonControls"></a> Běžné ovládací prvky  
   
 ### <a name="overview"></a>Přehled  
 Běžné ovládací prvky tvoří většinu uživatelského rozhraní v sadě Visual Studio. Postupujte podle většiny běžných ovládacích prvků používaná v sadě Visual Studio rozhraní [pokyny pro interakci Windows Desktop](https://msdn.microsoft.com/library/windows/desktop/dn742399.aspx). Toto téma je specifické pro Visual Studio a zahrnuje zvláštní situace nebo podrobnosti, které posílení tyto pokyny pro Windows.  
@@ -52,10 +50,10 @@ První věc vzít v úvahu při styly ovládacích prvků je, jestli ovládací 
   
 -   **Nástroje systému windows, editory dokumentu, návrhové ploše a motivu dialogová okna:** používat specializované vzhled a motivy pomocí služby barev.  
   
-###  <a name="BKMK_Scrollbars"></a>Posuvníky  
+###  <a name="BKMK_Scrollbars"></a> Posuvníky  
  Postupujte podle posuvníky [obecné vzory interakce pro Windows posuvníky](https://msdn.microsoft.com/en-us/library/windows/desktop/bb787527\(v=vs.85\).aspx) Pokud jste se rozšířit o informace o obsahu, jako například v editoru kódu.  
   
-###  <a name="BKMK_InputFields"></a>Vstupní pole  
+###  <a name="BKMK_InputFields"></a> Vstupní pole  
  Chování typické interakce, postupujte podle [Windows Desktop pokyny pro textová pole](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742442\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Vizuální styl  
@@ -78,7 +76,7 @@ První věc vzít v úvahu při styly ovládacích prvků je, jestli ovládací 
   
      ![Opravte vstupní pole Délka: vstupní pole je možné logicky šířku pro očekávaný obsah. ] (../../extensibility/ux-guidelines/media/0707-02_correctinputfieldcontrol.png "0707 02_CorrectInputFieldControl")<br />Opravte vstupní pole Délka: vstupní pole je možné logicky šířku pro očekávaný obsah.
   
-###  <a name="BKMK_ComboBoxesAndDropDowns"></a>Pole se seznamem a rozevírací seznamy  
+###  <a name="BKMK_ComboBoxesAndDropDowns"></a> Pole se seznamem a rozevírací seznamy  
 Chování typické interakce, postupujte podle [Windows Desktop pokyny pro rozevírací seznamy a pole se seznamem](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742404\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Vizuální styl  
@@ -94,7 +92,7 @@ Pole se seznamem a rozevírací seznamy by měly mít velikost podle obsahu, nen
   
 ![Správné: z rozevírací nabídky je velikost povolit pro překlad růst, ale není zbytečně dlouhé. ] (../../extensibility/ux-guidelines/media/0707-04_correctdropdownlayout.png "0707 04_CorrectDropDownLayout")<br />Správné: z rozevírací nabídky je velikost povolit pro překlad růst, ale není zbytečně dlouhé. 
   
-###  <a name="BKMK_CheckBoxes"></a>Zaškrtávací políčka  
+###  <a name="BKMK_CheckBoxes"></a> Zaškrtávací políčka  
 Chování typické interakce, postupujte podle [Windows Desktop pokyny pro zaškrtávací políčka](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742401\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Vizuální styl  
@@ -113,7 +111,7 @@ Chování typické interakce, postupujte podle [Windows Desktop pokyny pro zašk
   
      ![Správné: políčko je zarovnán s prvním řádkem textu. ] (../../extensibility/ux-guidelines/media/0707-06_correctcheckboxalign.png "0707 06_CorrectCheckBoxAlign")<br />Správné: políčko je zarovnán s prvním řádkem textu.
   
-###  <a name="BKMK_RadioButtons"></a>Přepínací tlačítka  
+###  <a name="BKMK_RadioButtons"></a> Přepínací tlačítka  
 Chování typické interakce, postupujte podle [Windows Desktop pokyny pro přepínací tlačítka](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742436\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Vizuální styl  
@@ -122,7 +120,7 @@ V dialogových oknech nástroj to není styl přepínače. Použijte styl zákla
 #### <a name="specialized-interactions"></a>Specializované interakce  
 Není nutné k použití rámečku skupiny zavřít přepínač volby, pokud je třeba spravovat skupiny rozdíl v úzkou rozložení.  
   
-###  <a name="BKMK_GroupFrames"></a>Skupiny rámce  
+###  <a name="BKMK_GroupFrames"></a> Skupiny rámce  
 Chování typické interakce, postupujte podle [Windows Desktop pokyny pro skupiny rámce](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742405\(v=vs.85\).aspx).  
   
 #### <a name="visual-style"></a>Vizuální styl  
@@ -136,7 +134,7 @@ V dialogových oknech nástroj nemusíte stylů skupiny rámce. Použijte styl z
   
 -   Někdy se dá použít vodorovné pravítko místo kontejner skupiny rámce.  
   
-##  <a name="BKMK_TextControls"></a>Ovládacích prvků textu
+##  <a name="BKMK_TextControls"></a> Ovládacích prvků textu
 
 ### <a name="static-text-fields"></a>Statické textové pole
 
@@ -217,7 +215,7 @@ Dynamický text může být použít jeden ze dvou způsobů v dialogovém okně
 
 Pokud chcete, aby uživatelé měli možnost Kopírovat informace, které, dynamické text by měl být v jen pro čtení textové pole.
   
-##  <a name="BKMK_ButtonsAndHyperlinks"></a>Tlačítka a hypertextové odkazy  
+##  <a name="BKMK_ButtonsAndHyperlinks"></a> Tlačítka a hypertextové odkazy  
   
 ### <a name="overview"></a>Přehled  
 Ovládací prvky tlačítek a odkaz (hypertextové odkazy) byste měli postupovat podle [základní pokyny Windows Desktop na hypertextové odkazy](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742406\(v=vs.85\).aspx) pro použití, formulaci, změny velikosti a mezer.  
@@ -331,11 +329,11 @@ Postupujte podle [Windows Desktop pokyny pro text v uživatelském rozhraní](ht
   
 -   Podtržení by se neměla při přechodu myší. Místo toho zpětnou vazbu pro uživatele, že odkaz je aktivní je změna mírné barvy a příslušný odkaz kurzor.  
   
-##  <a name="BKMK_TreeViews"></a>Zobrazení stromu  
+##  <a name="BKMK_TreeViews"></a> Zobrazení stromu  
   
 Zobrazení stromu poskytují způsob, jak uspořádat komplexní uvádí do nadřízených a podřízených skupin. Uživatele můžete rozbalit nebo sbalit nadřazené skupiny odhalit nebo skrytí základní podřízené položky. Poskytnout další akce lze vybrat každou položku v zobrazení stromu.  
   
-###  <a name="BKMK_TreeViewVisualStyle"></a>Vizuální styl zobrazení stromu  
+###  <a name="BKMK_TreeViewVisualStyle"></a> Vizuální styl zobrazení stromu  
   
 #### <a name="expanders"></a>Rozšíření, která jsou  
 Ovládací prvky stromového zobrazení by měl odpovídat expander návrh používá systém Windows a Visual Studio. Každý uzel používá ovládací prvek expander odhalit nebo skryjete základní položky. Použití ovládacího prvku expander poskytuje konzistence pro uživatele, kteří setkat jiného stromu zobrazení v systému Windows Server a Visual Studio.  
@@ -359,7 +357,7 @@ Posuvníky by být vždy skrytý, pokud se obsah vejde do ovládacího prvku zob
   
 ![Protože obsah překročil omezení stromové zobrazení, zobrazí se i svislého a vodorovného posuvníky. ] (../../extensibility/ux-guidelines/media/070705-4_scrollbars.png "070705 4_Scrollbars")<br />Protože obsah překročil omezení stromové zobrazení, zobrazí se i svislého a vodorovného posuvníky.
   
-###  <a name="BKMK_TreeViewInteractions"></a>Interakce zobrazení stromu  
+###  <a name="BKMK_TreeViewInteractions"></a> Interakce zobrazení stromu  
   
 #### <a name="context-menus"></a>Kontextové nabídky  
 Zobrazení uzlu stromu může odhalit dílčí možnosti v kontextové nabídce. Obvykle k tomu dochází, když uživatel má klepli pravým tlačítkem myši položku nebo stisknutím klávesy nabídky na klávesnici Windows obsahující vybrané položky. Je důležité, aby uzlu získá fokus a je vybraná. To pomáhá identifikovat které položku podnabídky patří do uživatele.  

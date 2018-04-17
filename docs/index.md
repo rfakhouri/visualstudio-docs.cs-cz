@@ -4,11 +4,11 @@ hide_bc: true
 title: Dokumentace k sadě Visual Studio | Microsoft Docs
 description: Další informace o použití Visual Studio 2017 pro vývoj aplikací, služeb a nástrojů v jazyce, platformy a zařízení.
 ms.topic: hub-page
-ms.openlocfilehash: dfd72526fc24ae3b0a33014b8b8ac23e350fb6cf
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 4dcf3ff02db54d1a0d6b2e45d3418caf1d908783
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -265,6 +265,25 @@ ms.lasthandoff: 03/08/2018
                                                 <div class="cardText">
                                                     <h3>Data</h3>
                                                     <p>Vytvořit data aplikace, které se připojují k některé z databází nebo služby a odkudkoli&#8212;místní nebo cloudové. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://go.microsoft.com/fwlink/?linkid=872032">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="./images/live-share.svg" src="./images/live-share.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Spolupráce</h3>
+                                                    <p>Sdílenou složku, upravit a ladění kódu v prostředí s spolupráci, v reálném čase. </p>
                                                 </div>
                                             </div>
                                         </div>

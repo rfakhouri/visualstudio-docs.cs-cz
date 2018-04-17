@@ -1,27 +1,23 @@
 ---
-title: "Zdrojová architektura modulu Plug-in Řízení | Microsoft Docs"
-ms.custom: 
+title: Zdrojová architektura modulu Plug-in Řízení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22929c34d656fb4f163076ca0b5dfb498d44c884
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 498f3aeb87855a0dac5afacc1baa7e2e816375f2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="source-control-plug-in-architecture"></a>Modul Plug-in architektury zdroje
 Můžete přidat podporu zdroj ovládacího prvku [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) pomocí implementace a připojení modulu plug-in Správa zdrojového kódu. Prostředí IDE se připojí k modulu plug-in přes dobře definované API Plug-In zdroj řízení zdrojového kódu. Prostředí IDE zpřístupní funkcí správy zdrojového kódu pro řízení verze tím, že poskytuje uživatelské rozhraní (UI), která se skládá z panely nástrojů a příkazy nabídky. Modul plug-in správy zdroje implementuje funkce správy zdrojů.  

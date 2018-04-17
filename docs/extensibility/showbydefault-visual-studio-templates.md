@@ -1,30 +1,26 @@
 ---
-title: "ShowByDefault (šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: ShowByDefault (šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ShowByDefault
 helpviewer_keywords:
 - <ShowByDefault> element [Visual Studio Templates]
 - ShowByDefault element [Visual Studio Templates]
 ms.assetid: 7be783f6-0ef6-42bc-924a-df9a2eba7781
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b0622f2a264baf73ccfeb832c3f049f8ec6fef8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: bc9b2f1f0f44439a87bef13063d694490b1c84d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="showbydefault-visual-studio-templates"></a>ShowByDefault (šablony sady Visual Studio)
 Pokud `false`, určuje, že se zobrazí pouze šablony pod zadaným [templategroupid –](../extensibility/templategroupid-element-visual-studio-templates.md).  
@@ -60,7 +56,7 @@ Pokud `false`, určuje, že se zobrazí pouze šablony pod zadaným [templategro
  Text musí být buď `true` nebo `false`. V případě hodnoty true, určuje, že se zobrazí šablonu pro všechny typy projektů. Pokud hodnotu false, šablona se zobrazí pouze tehdy pod zadaným `TemplateGroupID`.  
   
 ## <a name="remarks"></a>Poznámky  
- `ShowByDefault`je volitelný element. Výchozí hodnota je `true`.  
+ `ShowByDefault` je volitelný element. Výchozí hodnota je `true`.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ilustruje metadata pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] šablony.  

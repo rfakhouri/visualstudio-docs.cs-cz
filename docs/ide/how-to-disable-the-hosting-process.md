@@ -1,28 +1,24 @@
 ---
-title: "Postupy: zákaz procesu hostování | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: zákaz procesu hostování | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - hosting process, disabling
 - vshost.exe, disabling the hosting process
 ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b43e285c35601cb0d50536a5f4c499d09ae9bbad
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 8b5dc19a094e4e5aac8fe1777b3794f100e3f1cb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Postupy: Zákaz procesu hostování
 Je-li povolen hostitelský proces, mohou být volání určitých rozhraní API ovlivněna. V těchto případech je pro vrácení správných výsledků nutné hostitelský proces zakázat.  

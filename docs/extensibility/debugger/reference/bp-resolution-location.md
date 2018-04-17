@@ -1,29 +1,25 @@
 ---
 title: BP_RESOLUTION_LOCATION | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - BP_RESOLUTION_LOCATION
 helpviewer_keywords:
 - BP_RESOLUTION_LOCATION structure
 ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a85c6c097867aea17be4b4aeca1431a05c74903a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 032228596773d4a5a164f904c1caae161b693f64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Určuje strukturu zarážek umístění řešení.  
@@ -84,7 +80,7 @@ public struct BP_RESOLUTION_LOCATION {
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
 |`BPT_CODE`|[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)|-|-|-|  
-|`BPT_DATA`|`string`(výraz data)|`string`(název funkce)|`string`(název bitové kopie)|`enum_BP_RES_DATA_FLAGS`|  
+|`BPT_DATA`|`string` (výraz data)|`string` (název funkce)|`string` (název bitové kopie)|`enum_BP_RES_DATA_FLAGS`|  
   
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje, jak interpretovat `BP_RESOLUTION_LOCATION` struktury v jazyku C#.  
@@ -121,7 +117,7 @@ namespace MyPackage
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Struktury a sjednocení](../../../extensibility/debugger/reference/structures-and-unions.md)   

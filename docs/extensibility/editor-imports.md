@@ -2,26 +2,22 @@
 title: Editor importy | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
-caps.latest.revision: 19
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 937bf977090699f5d3bf52414f57f6066dd55a17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: f01567efa411187bede4f6daf15012da81c2331f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editor-imports"></a>Editor importy
 Počet služeb editor, objekty Factory a zprostředkovatelé, které poskytují rozšíření s různými druhy přístup do editoru jádra, můžete importovat. Například můžete importovat <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> poskytnout vám <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> pro daný typ obsahu. (Tento Navigátor umožňuje provádět různé druhy hledání na textovou vyrovnávací paměť).  
@@ -75,11 +71,11 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="services"></a>Služby  
  Editor služby jsou obecně jednotlivých entit, které poskytují služby a jsou sdíleny více součástí.  
   
-|Import|Poskytuje|  
+|Importovat|Poskytuje|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Utilities.IFileExtensionRegistryService>|Vztah mezi přípony souborů a <xref:Microsoft.VisualStudio.Utilities.IContentType> objekty.|  
 |<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>|Kolekce <xref:Microsoft.VisualStudio.Utilities.IContentType> objekty.|  
-|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation>objekty|  
+|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformationService>|<xref:Microsoft.VisualStudio.Editor.IVsFontsAndColorsInformation> Objekty|  
 |<xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>|Mnoho objektů adaptér editoru:<br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBufferCoordinator><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>|  
 |<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearchFactoryService>|<xref:Microsoft.VisualStudio.Text.IncrementalSearch.IIncrementalSearch> Objekt pro zadaný text zobrazení.|  
 |<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>|<xref:Microsoft.VisualStudio.Text.ITextBuffer>.|  
@@ -117,7 +113,7 @@ internal SVsServiceProvider ServiceProvider = null;
 ## <a name="other-imports"></a>Další importy  
  Objekty Factory zprostředkovatelů a zprostředkovatelé jsou obecně entit, které může mít více instancí v několika součástí.  
   
-|Import|Poskytuje|  
+|Importovat|Poskytuje|  
 |------------|--------------|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.IErrorProviderFactory>|<xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> Typu <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>) pro dané vyrovnávací paměti.|  
 |<xref:Microsoft.VisualStudio.Text.Adornments.ITextMarkerProviderFactory>|Tagger značky text ( <xref:Microsoft.VisualStudio.Text.Tagging.SimpleTagger%601> typu <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>).|  

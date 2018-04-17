@@ -1,25 +1,22 @@
 ---
-title: "Grafika rámce analýzy | Microsoft Docs"
-ms.custom: 
+title: Grafika rámce analýzy | Microsoft Docs
+ms.custom: ''
 ms.date: 02/09/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frameanalysis
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3af414b5d59ec49ed6e042d6a656d322fe8a38
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: 95544a030870feaace585d62a8027c17dbc56c64
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="graphics-frame-analysis"></a>Analýza grafických snímků
 Analýza grafických snímků použijte v sadě Visual Studio Graphics Analyzer k analýze a optimalizace výkonu vykreslování Direct3D – hry nebo aplikace.  
@@ -75,7 +72,7 @@ Analýza grafických snímků použijte v sadě Visual Studio Graphics Analyzer 
 #### <a name="timeline"></a>Časová osa  
  Časovou osu zobrazuje přehled volání kreslení časování relativně k jinému. Protože větší řádky odpovídají delší doby kreslení, můžete ji rychle vyhledat nejnákladnější volání kreslení v rámečku. Když zaznamenané rámečku obsahuje velký počet volání kreslení, kreslení více kreslení, které jsou volání zkombinované do jednoho panelu jehož délka je součtem těchto volání.  
   
- ![Časová osa ukazuje kreslení & č. 45; volání náklady. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![Časová osa ukazuje kreslení&#45;volání náklady. ] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  Na panelu zobrazíte která kreslení volání událost odpovídá panelu, přesuňte ukazatel. Výběr panelu způsobí, že seznam událostí na tuto událost synchronizovat.  
   
@@ -137,7 +134,7 @@ Analýza grafických snímků použijte v sadě Visual Studio Graphics Analyzer 
   
  Analýza snímků omezuje počet opakování do 10. Pokud vaši platformu řízení spotřeby agresivní nebo prostřednictvím brány hodiny, může způsobit analýza snímků služeb při selhání a zobrazovat chyby, protože se překročil limit opakování. Bude pravděpodobně možné zmírnění tohoto problému resetováním vaši platformu řízení spotřeby a taktovací omezování rychlosti být méně agresivní, pokud ji povolí platformu.  
   
-##  <a name="HardwareSupport"></a>Podporu hardwaru  
+##  <a name="HardwareSupport"></a> Podporu hardwaru  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Časová razítka a NF pásmová dotazy  
  Časová razítka jsou podporovány ve všech platformách, které podporují analýza snímků. Hloubka NF pásmová dotazy – požadované pro čítač Occluded pixelů – jsou podporovány na platformách, které podporují funkce úrovní 9.2 nebo vyšší.  
@@ -175,7 +172,7 @@ Analýza grafických snímků použijte v sadě Visual Studio Graphics Analyzer 
 ### <a name="warp"></a>OSNOVA  
  Analýza snímků je určena pro použití profilu a zlepšíte výkon vykreslování na skutečné hardwaru. Analýza snímků systémem OSNOVĚ zařízení není zabránit, ale není obvykle smysl výkon protože systémem vyšší kategorie procesoru je nižší než i nejmenší podporující moderní grafickými procesory a protože OSNOVĚ výkonu může značně lišit v závislosti na konkrétní procesoru je spuštěn na.  
   
-##  <a name="Variants"></a>Variant  
+##  <a name="Variants"></a> Variant  
  Každé změně, která vytváří analýza snímků pro rámeček je vykreslen při přehrávání způsob je známý jako *variant*. Varianty, které hledá analýza snímků odpovídají na běžné, je poměrně snadné změny, které by mohly zvýšit ke zlepšení výkonu vykreslování nebo visual kvality aplikace – například zmenšení velikosti textury, pomocí textury komprese nebo povolení různé druhy vyhlazení. Variant přepsat obvyklé vykreslování kontextu a parametry vaší aplikace. Zde je souhrn:  
   
 |Variant|Popis|  

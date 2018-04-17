@@ -2,24 +2,20 @@
 title: Barvy a styly pro sadu Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 07/31/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-caps.latest.revision: ''
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af9522d5773fd74eabcd3b7fce84b7bd56e0cd2a
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: 5cee3ec1308ee103d279a0d77ded4092e4ccf9b4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Barvy a styly pro sadu Visual Studio
 ## <a name="using-color-in-visual-studio"></a>Pomocí barev v sadě Visual Studio
@@ -312,7 +308,7 @@ Barvy s vysokým kontrastem definované máte mnoho běžných prvků uživatels
 | MenuText | -Rozevírací nabídce ohraničení<br />-Značky zaškrtnutí<br />-Glyfů nabídky<br />– Text rozevírací nabídky<br />-Vybrané ikony ohraničení |
 | ScrollBar | -Posuňte panelu a posuvník šipku pozadí, všechny stavy |
 | Okno | Automaticky skrýt karta pozadí<br />-Nabídky panelu a příkaz police pozadí<br />-Pozadí karta okna dokumentu nezaostřená nebo nezaškrtnuté a ohraničení dokumentu pro otevřené a předběžná karty<br />-Pozadí panelu nadpis okna nezaostřená nástroj<br />-Nástroj okno Karta pozadí, vybrané i zrušit |
-| WindowFrame | -IDE ohraničení |
+| Okenní rám | -IDE ohraničení |
 | WindowText | -Automaticky skrýt karta popředí<br />-Vybraného nástroje okno Karta popředí<br />-Karta okna nezaostřená dokumentu a nezaostřená nebo nezaškrtnuté předběžné karta popředí<br />-Popředí výchozí zobrazení a strom hover přes nezaškrtnuté glyfy<br />– Okraj vybraná karta okna nástroj<br />-Posuvníku jezdec pozadí, ohraničení a glyfy |
 
 ##  <a name="BKMK_ExposingColorsForEndUsers"></a> Vystavení barvy pro koncové uživatele

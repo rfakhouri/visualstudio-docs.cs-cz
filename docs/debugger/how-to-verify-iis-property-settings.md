@@ -1,12 +1,10 @@
 ---
-title: "Postupy: ověření nastavení vlastnosti služby IIS | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: ověření nastavení vlastnosti služby IIS | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - Web applications, setting properties
 - properties [debugger], setting with IIS administration tool
 ms.assetid: 9efc50bf-02fb-4750-9b3e-f03c38f10d8b
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5a9bda1bdf3fadffedc71873ddec6733b68651a1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2b351f45d8e45116894d08f4a813e7c427f4cb5c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Postupy: Ověření nastavení vlastnosti služby IIS
 Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu služby IIS. Tyto vlastnosti musí být správně nastavené pro aplikaci spustit, tak ověření těchto nastavení je často nezbytným krokem při řešení potíží.  
@@ -64,7 +62,7 @@ Můžete nastavit vlastnosti pro webovou aplikaci pomocí nástroje pro správu 
   
 5.  Pro aplikaci ATL Server ověřte, že je příkaz DEBUG přidružené rozšíření ISAPI. Další informace najdete v tématu [postup: přidružení ladění operaci s rozšířením](http://msdn.microsoft.com/en-us/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
-6.  Pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace, zajistěte, aby virtuální složky pro aplikace, má název aplikace nastavit **Správce Internetové informační služby (IIS)**, **Správce služeb Internetu** nebo  **Internetová informační služba**.  
+6.  Pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace, zajistěte, aby virtuální složky pro aplikace, má název aplikace nastavit **Správce Internetové informační služby (IIS)**, **Správce služeb Internetu** nebo ** Internetová informační služba**.  
   
     1.  Ve webové aplikaci **vlastnosti** vyberte **Directory** kartě, pokud je aplikace ve virtuálním adresáři, nebo **domovský adresář** kartě, pokud je aplikace Webové stránky.  
   

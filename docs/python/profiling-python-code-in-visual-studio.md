@@ -1,27 +1,24 @@
 ---
-title: Měření výkonu Python kódu v sadě Visual Studio | Microsoft Docs
+title: Měření výkonu kód Python
 description: Jak používat Visual Studio profiler zkontrolovat výkon jazyka Python kódu, kdy usnig na základě CPython překladače.
 ms.custom: ''
 ms.date: 01/09/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4faa050056296b7dde625268c7ff1112b2c0c6c0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: be39e1b9f8c30447ac227a1dcc86890afad9701c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profiling-python-code"></a>Profilace kódu jazyka Python
 

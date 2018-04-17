@@ -1,32 +1,30 @@
 ---
-title: "Implementace barevné zvýrazňování syntaxe | Microsoft Docs"
-ms.custom: 
+title: Implementace barevné zvýrazňování syntaxe | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax coloring, implementing
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 5c05bbabc77de22edc71fb05a5962138a78d11a9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 5502bd30378130e5977d427acb9df5b73226a05b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="implementing-syntax-coloring"></a>Implementace barevné zvýrazňování syntaxe
-Když služba jazyka poskytuje zabarvení syntaxe, analyzátor převede na řádku textu do pole colorable položek a vrátí odpovídající tyto colorable položky pro typy tokenů. Analyzátor by měl vrátit typy tokenů, které patří do colorable položek seznamu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Zobrazuje každou colorable položku v okně kód podle atributy přiřazené objektem colorizer odpovídající typ tokenu.  
+Když služba jazyka poskytuje zabarvení syntaxe, analyzátor převede na řádku textu do pole colorable položek a vrátí odpovídající tyto colorable položky pro typy tokenů. Analyzátor by měl vrátit typy tokenů, které patří do colorable položek seznamu. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Zobrazuje každou colorable položku v okně kód podle atributy přiřazené objektem colorizer odpovídající typ tokenu.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]neurčuje analyzátor rozhraní, a analyzátor implementace je zcela na vás. Výchozí implementaci analyzátor však je k dispozici v projektu jazyka balíček Visual Studio. Pro spravovaný kód rozhraní spravované balíčku (MPF) podporuje dokončení barevné text.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] neurčuje analyzátor rozhraní, a analyzátor implementace je zcela na vás. Výchozí implementaci analyzátor však je k dispozici v projektu jazyka balíček Visual Studio. Pro spravovaný kód rozhraní spravované balíčku (MPF) podporuje dokončení barevné text.  
   
  Starší verze jazyka služby jsou implementovány jako součást VSPackage, ale novější způsob implementace funkce služby jazyk je použití MEF rozšíření. Další informace o nový způsob implementace zvýrazňování syntaxe, najdete v tématu [návod: zvýraznění textu](../../extensibility/walkthrough-highlighting-text.md).  
   

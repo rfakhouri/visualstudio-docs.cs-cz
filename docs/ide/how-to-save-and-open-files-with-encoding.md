@@ -1,28 +1,26 @@
 ---
-title: "Postupy: ukládání a otevírání souborů s kódováním | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: ukládání a otevírání souborů s kódováním | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Unicode, bi-directional language support
 - files, encoding
 - bi-directional language support, encoded files
 - file encoding, bi-directional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 25ec36e6b124f47c4bb13be8f7affd9b7ee54553
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c6375852a76da633707c90538945339e438aac4a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Postupy: Ukládání a otevírání souborů se šifrováním
 Soubory lze ukládat s konkrétní znakem kódování pro podporu obousměrných jazycích. Můžete také zadat kódování při otevírání souboru, takže Visual Studio zobrazí soubor správně.  

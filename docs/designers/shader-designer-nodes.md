@@ -1,23 +1,21 @@
 ---
-title: "Uzly návrháře shaderu | Microsoft Docs"
-ms.custom: 
+title: Uzly návrháře shaderu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
-caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: bff905ae4f280d106eea34d513af35ee3de663b2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8b02b701a7efc32756a4cfb4c519682dcdd6c835
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shader-designer-nodes"></a>Uzly návrháře shaderů
 Články v této části dokumentace obsahují informace o různých shaderu Návrhář uzly, které můžete použít k vytvoření grafiky účinky.  

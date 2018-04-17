@@ -2,23 +2,20 @@
 title: Pracovní prostor sestavení v sadě Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 02/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 813f7a5e-f298-4469-9f4c-a5bddf5a6e14
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 258a64794712da92b881f3798255efc60cfdbe5c
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: f7415c99c68436519f9bab721fe88a48f750fa1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="workspace-build"></a>Pracovní prostor sestavení
 
@@ -106,7 +103,7 @@ Alternativně můžete rozšíření přímo komunikovat s **seznam chyb** nebo 
 - <xref:Microsoft.VisualStudio.Workspace.Build.IBuildConfigurationContext> poskytuje podrobnosti o konfiguraci sestavení.
 - <xref:Microsoft.VisualStudio.Workspace.Build.IBuildMessageService> Zobrazuje <xref:Microsoft.VisualStudio.Workspace.Build.BuildMessage>s uživatelům.
 
-## <a name="tasksvsjson-and-launchvsjson"></a>tasks.vs.json and launch.vs.json
+## <a name="tasksvsjson-and-launchvsjson"></a>Tasks.vs.JSON a launch.vs.json
 
 Informace o vytváření souboru tasks.vs.json nebo launch.vs.json, najdete v části [přizpůsobení sestavení a ladění úloh](../ide/customize-build-and-debug-tasks-in-visual-studio.md).
 

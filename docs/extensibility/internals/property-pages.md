@@ -1,27 +1,25 @@
 ---
-title: "Stránky vlastností | Microsoft Docs"
-ms.custom: 
+title: Stránky vlastností | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - configuration options, changing properties
 - property pages
 - property pages, changing configuration options
 ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
-caps.latest.revision: "12"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: cedf021321b66c47690450823a7da92cd19888eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 1b08e210a57388d77859600c02c0e6a30a404884
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-pages"></a>Stránky vlastností
 Uživatelé mohou zobrazit a změnit vlastnosti závislá na konfiguraci a - nezávislé projektu pomocí stránky vlastností. A **stránky vlastností** tlačítko je k dispozici v **vlastnosti** okno nebo na panelu nástrojů Průzkumníku řešení pro objekty, které poskytují zobrazení stránky vlastnosti vybraného objektu. Stránky vlastností jsou vytvořené pomocí prostředí a jsou dostupné pro projekty a řešení. Mohou, ale být k dispozici pro položky projektu, které používají závislá na konfiguraci vlastností. Tato funkce může použít, pokud soubory v rámci projektu vyžadují různé kompilátoru přepínač nastavení k vytvoření správně.  
@@ -50,7 +48,7 @@ Dialogové okno stránky vlastností projektu s pole formátu a stromové strukt
   
  Každá kategorie se zobrazí v rámci kategorií nejvyšší úrovně představuje samostatný vlastnost stránku. Určuje kategorii a podkategorie položky k dispozici v dialogovém okně vaši implementaci `ISpecifyPropertyPages` a `IVsPropertyPage`.  
   
- `IDispatch`objekty pro položky v kontejneru výběru, které mají vlastnosti, který se má zobrazit na vlastnost stránky implementace `ISpecifyPropertyPages` se vytvořit výčet seznamu ID tříd. ID třídy jsou předány jako proměnné, které chcete `ISpecifyPropertyPages` a slouží k vytvoření instance stránky vlastností. Seznam ID tříd také předaný `IVsPropertyPage` vytvoření stromové struktury nalevo od dialogové okno. Stránky vlastností pak předejte informace zpět do `IDispatch` objekt, který implementuje `ISpecifyPropertyPages` a výplní informace na každé stránce.  
+ `IDispatch` objekty pro položky v kontejneru výběru, které mají vlastnosti, který se má zobrazit na vlastnost stránky implementace `ISpecifyPropertyPages` se vytvořit výčet seznamu ID tříd. ID třídy jsou předány jako proměnné, které chcete `ISpecifyPropertyPages` a slouží k vytvoření instance stránky vlastností. Seznam ID tříd také předaný `IVsPropertyPage` vytvoření stromové struktury nalevo od dialogové okno. Stránky vlastností pak předejte informace zpět do `IDispatch` objekt, který implementuje `ISpecifyPropertyPages` a výplní informace na každé stránce.  
   
  Vlastnosti objektu Procházet se načítají pomocí `IDispatch` pro každý objekt v kontejneru výběr.  
   
@@ -73,11 +71,11 @@ Dialogové okno stránky vlastností s mřížky vlastností
   
      Můžete zadat projektu nebo projekty, na stránce vlastností na řešení, který bude spuštěn, když uživatel stiskne klávesu F5 nebo vybere spustit z nabídky sestavení. Toto funguje ve staré aktivní projekt v tom smyslu, že její název se zobrazí v Průzkumníku řešení s tučným písmem podobným způsobem.  
   
-     Můžete načíst projekt po spuštění jako vlastnost v modelu automatizace voláním `DTE.Solution.SolutionBuild.StartupProjects`. Ve VSPackage zavoláte <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metody. `IVsSolutionBuildManager`je k dispozici jako služby pomocí `QueryService` na SID_SVsSolutionBuildManager. Další informace najdete v tématu [objekt konfigurace projektu](../../extensibility/internals/project-configuration-object.md) a [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
+     Můžete načíst projekt po spuštění jako vlastnost v modelu automatizace voláním `DTE.Solution.SolutionBuild.StartupProjects`. Ve VSPackage zavoláte <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> nebo <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> metody. `IVsSolutionBuildManager` je k dispozici jako služby pomocí `QueryService` na SID_SVsSolutionBuildManager. Další informace najdete v tématu [objekt konfigurace projektu](../../extensibility/internals/project-configuration-object.md) a [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
   
 -   Konfigurace sestavení řešení Active  
   
-     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]má aktivní řešení konfigurace k dispozici v modelu automatizace implementací `DTE.Solution.SolutionBuild.ActiveConfiguration`. Konfigurace řešení je kolekce, která obsahuje jednu konfiguraci projektu pro každý projekt v řešení (každý projekt, může mít víc konfigurací ve více platformách s odlišnými názvy). Další informace týkající se stránky vlastností na řešení, najdete v části [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
+     [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] má aktivní řešení konfigurace k dispozici v modelu automatizace implementací `DTE.Solution.SolutionBuild.ActiveConfiguration`. Konfigurace řešení je kolekce, která obsahuje jednu konfiguraci projektu pro každý projekt v řešení (každý projekt, může mít víc konfigurací ve více platformách s odlišnými názvy). Další informace týkající se stránky vlastností na řešení, najdete v části [konfigurace řešení](../../extensibility/internals/solution-configuration.md).  
   
 -   Projekt aktuálně vybraný.  
   

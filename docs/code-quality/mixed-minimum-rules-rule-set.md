@@ -1,23 +1,21 @@
 ---
-title: "Sady pravidel smíšená minimální pravidla | Microsoft Docs"
-ms.custom: 
+title: Sady pravidel smíšená minimální pravidla | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-code-analysis
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 430984d0f34c7596e78408d4138cd7506fdc7ba3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 783e88e22456f4babffa8d6f1748385c6dac819e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Sada pravidel Smíšená minimální pravidla
 Microsoft smíšená minimální pravidla se zaměřit na nejdůležitější problémy ve vašich projektů C++, které podporují modul Common Language Runtime, včetně potenciální bezpečnostní díry a dojde k chybě aplikace. Toto pravidlo nastavit v žádné sadě vlastní pravidlo, že které vytvoříte pro projekty jazyka C++, které podporují modul Common Language Runtime by měla obsahovat.  

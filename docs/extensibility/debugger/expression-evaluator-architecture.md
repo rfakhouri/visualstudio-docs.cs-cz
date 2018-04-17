@@ -1,27 +1,25 @@
 ---
-title: "Architektura vyhodnocování výrazu | Microsoft Docs"
-ms.custom: 
+title: Architektura vyhodnocování výrazu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
 - expression evaluators, architecture
 - debugging [Debugging SDK], expression evaluators
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
-caps.latest.revision: "13"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 3ccfca52bb4fe2190837202342915e248dbd6167
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 7fdcdfef67531af40027a2dfe8c731fe9ba5128f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="expression-evaluator-architecture"></a>Architektura vyhodnocování výrazu
 > [!IMPORTANT]
@@ -39,7 +37,7 @@ ms.lasthandoff: 12/22/2017
  DE vytvoří objekt, který implementuje [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) rozhraní, PUT `IDebugParsedExpression` objektu do `IDebugExpression2` objekt a vrátí `IDebugExpression2` objektu z `IDebugExpressionContext2::ParseText`.  
   
 ### <a name="evaluating-the-expression"></a>Vyhodnocení výrazu  
- Visual Studio zavolá buď [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) nebo [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) při vyhodnocování výrazu Analyzovaná. Obě tyto metody volání [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` volá metodu okamžitě, při `IDebugExpression2::EvaluateAsync` volá metodu prostřednictvím vlákna na pozadí) vyhodnocování výrazu Analyzovaná a vrátíte se [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) rozhraní, které představuje hodnotu a typ Analyzovaná výrazu. `IDebugParsedExpression::EvaluateSync`používá zadaný SH, adresa a vazač převést Analyzovaná výraz na skutečnou hodnotu, reprezentována `IDebugProperty2` rozhraní.  
+ Visual Studio zavolá buď [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) nebo [EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) při vyhodnocování výrazu Analyzovaná. Obě tyto metody volání [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) (`IDebugExpression2::EvaluateSync` volá metodu okamžitě, při `IDebugExpression2::EvaluateAsync` volá metodu prostřednictvím vlákna na pozadí) vyhodnocování výrazu Analyzovaná a vrátíte se [ IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) rozhraní, které představuje hodnotu a typ Analyzovaná výrazu. `IDebugParsedExpression::EvaluateSync` používá zadaný SH, adresa a vazač převést Analyzovaná výraz na skutečnou hodnotu, reprezentována `IDebugProperty2` rozhraní.  
   
 ### <a name="for-example"></a>Například  
  Po zarážku je dosáhl v spuštěným programem, uživatel vybere možnost zobrazit proměnnou v **QuickWatch** dialogové okno. Toto dialogové okno zobrazí název proměnné, jeho hodnotu a její typ. Uživatel může změnit obvykle hodnota.  

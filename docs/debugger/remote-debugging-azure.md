@@ -1,26 +1,23 @@
 ---
-title: "Vzdálené ladění jádra ASP.NET na IIS a Azure | Microsoft Docs"
+title: Vzdálené ladění jádra ASP.NET na IIS a Azure | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 22b7724a6eee2c31de1bf64f12a040e042972e96
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 021b9c9fe0e4e921e339db432fdf6d248624c92c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění jádra ASP.NET ve službě IIS v Azure v Visual Studio 2017
 
@@ -63,7 +60,7 @@ Mezi dvěma počítači připojené prostřednictvím proxy serveru se nepodporu
 
 4. Otevřete soubor About.cshtml.cs a nastavte zarážky `OnGet` – metoda (v starší šablony, otevřete místo nich HomeController.cs a nastavit bod přerušení `About()` metoda).
 
-## <a name="remote_debug_azure_app_service"></a>Vzdálené ladění ASP.NET Core v Azure App Service
+## <a name="remote_debug_azure_app_service"></a> Vzdálené ladění ASP.NET Core v Azure App Service
 
 Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela zřizované instance služby IIS. Ale je přednastavení konfiguraci služby IIS a si nemůžete přizpůsobit. Další podrobné pokyny naleznete v tématu [nasazení webové aplikace ASP.NET Core do Azure pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). (Pokud potřebujete vlastní nastavení služby IIS, vyzkoušejte ladění na [virtuálního počítače Azure](#BKMK_azure_vm).) 
 
@@ -83,7 +80,7 @@ Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela z�
 
     Je to! Další kroky v tomto tématu se týkají vzdáleného ladění na virtuální počítač Azure.
 
-## <a name="remote_debug_azure_vm"></a>Vzdálené ladění ASP.NET Core ve virtuálním počítači Azure
+## <a name="remote_debug_azure_vm"></a> Vzdálené ladění ASP.NET Core ve virtuálním počítači Azure
 
 Můžete vytvořit virtuální počítač Azure pro Windows Server a pak nainstalovat a nakonfigurovat službu IIS a ostatní součásti požadovaný software. To trvá déle než nasazení Azure App Service a vyžaduje proveďte zbývající kroky v tomto kurzu.
 
@@ -109,15 +106,15 @@ Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke
 1. Nainstalujte [hostování v rozhraní .NET Core systému Windows Server](https://aka.ms/dotnetcore-2-windowshosting) sady v hostitelském systému. Sady nainstaluje rozhraní .NET Core Runtime, knihovny .NET Core a modulu jádra ASP.NET. Další podrobné pokyny najdete v tématu [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration).
 
     > [!NOTE]
-    > Pokud systém nemá připojení k Internetu, získejte a nainstalujte  *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)*  před instalací sady hostování v rozhraní .NET Core systému Windows Server.
+    > Pokud systém nemá připojení k Internetu, získejte a nainstalujte *[Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)* před instalací sady hostování v rozhraní .NET Core systému Windows Server.
 
 3. Restartování systému (nebo spuštění **net stop byl /y** následuje **net start w3svc** z příkazového řádku a pokračovat tam ke změně systému cesta).
 
-### <a name="BKMK_install_webdeploy"></a>(Volitelné) Nasazení webu instalace 3.6 v systému Windows Server
+### <a name="BKMK_install_webdeploy"></a> (Volitelné) Nasazení webu instalace 3.6 v systému Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
-### <a name="BKMK_deploy_asp_net"></a>Konfigurace webu ASP.NET na počítač s Windows serverem
+### <a name="BKMK_deploy_asp_net"></a> Konfigurace webu ASP.NET na počítač s Windows serverem
 
 1. Otevřete **Správce Internetové informační služby (IIS)** a přejděte na **lokality**.
 
@@ -129,7 +126,7 @@ Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke
 
     Pokud nevidíte jeden z těchto uživatelů s přístupem, projít kroky k přidání IUSR jako uživatel s právy ke čtení a spouštění.
 
-### <a name="bkmk_webdeploy"></a>(Volitelné) Publikujte a nasaďte aplikace pomocí nasazení webu ze sady Visual Studio
+### <a name="bkmk_webdeploy"></a> (Volitelné) Publikujte a nasaďte aplikace pomocí nasazení webu ze sady Visual Studio
 
 Pokud jste nainstalovali, nasazení webu pomocí služby instalace webové platformy, můžete nasadit aplikace přímo ze sady Visual Studio.
 
@@ -169,18 +166,18 @@ Pokud nepoužíváte nasazení webu, musíte publikovat a nasazení aplikace pom
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
-### <a name="BKMK_msvsmon"></a>Stáhněte a nainstalujte nástroje pro vzdálenou v systému Windows Server
+### <a name="BKMK_msvsmon"></a> Stáhněte a nainstalujte nástroje pro vzdálenou v systému Windows Server
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Nastavení vzdáleného ladicího programu v systému Windows Server
+### <a name="BKMK_setup"></a> Nastavení vzdáleného ladicího programu v systému Windows Server
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
 > Pokud potřebujete přidat oprávnění pro všechny další uživatele, změna režimu ověřování, nebo číslo portu pro vzdáleného ladicího programu, najdete v části [konfigurovat vzdálený ladicí program](../debugger/remote-debugging.md#configure_msvsmon).
 
-### <a name="BKMK_attach"></a>Připojení k aplikaci ASP.NET z počítače, Visual Studio
+### <a name="BKMK_attach"></a> Připojení k aplikaci ASP.NET z počítače, Visual Studio
 
 1. Otevřete v sadě Visual Studio počítači, **MyASPApp** řešení.
 2. V sadě Visual Studio, klikněte na tlačítko **ladění > připojit k procesu** (Ctrl + Alt + P).
@@ -211,7 +208,7 @@ Pokud nepoužíváte nasazení webu, musíte publikovat a nasazení aplikace pom
 
     Zarážce by měl být dosáhl v sadě Visual Studio.
 
-### <a name="bkmk_openports"></a>Řešení potíží: Otevřete požadované porty v systému Windows Server
+### <a name="bkmk_openports"></a> Řešení potíží: Otevřete požadované porty v systému Windows Server
 
 Ve většině nastavení jsou otevřené požadované porty při instalaci ASP.NET a vzdáleného ladicího programu. Ale Pokud řešíte problémy při nasazení a aplikace se nachází za bránou firewall, musíte ověřit, že jsou otevřené správné porty.
 

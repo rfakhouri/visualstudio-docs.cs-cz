@@ -1,23 +1,21 @@
 ---
-title: "Krok 9: Zkontrolujte, okomentujte a otestujte svůj kód | Microsoft Docs"
-ms.custom: 
+title: 'Krok 9: Zkontrolujte, okomentujte a otestujte svůj kód | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
-caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: af541817ec73cf81aa339f9a57a584286e843e46
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b46e51ac48ffab06bf17508f6c99ccc2fd7fa7c3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Krok 9: Zrevidujte, okomentujte a otestujte svůj kód
 Dále přidejte komentář k vašeho kódu. Komentář je poznámka, která nelze změnit způsob, který se chová program. Umožňuje jednodušší někomu, kdo je čtení kód a co provádí. Přidávání komentářů do kódu je dobré která podporují nahrát do. V jazyce Visual C# dvě lomítka (/ /) označení řádku jako komentář. V jazyce Visual Basic jednoduché uvozovky (') slouží k označení řádku jako komentář. Po přidání komentáře otestujete váš program. Je vhodné spustit a otestovat kód často při práci na projekty, aby bylo možné zachytit a opravili všechny problémy před kód získá složitější. To se označuje jako *iterativnější testování,*.  
@@ -46,7 +44,7 @@ Dále přidejte komentář k vašeho kódu. Komentář je poznámka, která nelz
   
      Příkazy jsou, ujistěte se, co vaše programy provádět akce. V jazyce Visual C# příkaz vždy končí středníkem. V jazyce Visual Basic je konci řádku konec příkazu. (Žádný středník není třeba v jazyce Visual Basic). Předchozí příkaz sděluje vaše `PictureBox` řízení se načíst soubor, který uživatel vybral s **OpenFileDialog** součásti.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurzu 1: vytvoření prohlížeče obrázků v C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+ ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 5](http://go.microsoft.com/fwlink/?LinkId=205216) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# – Video 5](http://go.microsoft.com/fwlink/?LinkId=205206). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-add-comments"></a>K přidání komentářů  
   

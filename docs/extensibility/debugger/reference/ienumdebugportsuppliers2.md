@@ -1,29 +1,25 @@
 ---
 title: IEnumDebugPortSuppliers2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IEnumDebugPortSuppliers2
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fff85e5cb76293327138bf6382c8e0f4da06c25
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: b330be8efb77119d6d78c1478555c9ee5bd6aabc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Toto rozhraní zobrazí dodavatelé portu.  
@@ -48,7 +44,7 @@ IEnumDebugPortSuppliers2 : IUnknown
 |[Next](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-next.md)|Načte zadaný počet dodavatelé portu v posloupnosti výčtu.|  
 |[Přeskočit](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-skip.md)|Zadané číslo portu dodavatelů v posloupnosti – výčet přeskočí.|  
 |[Resetování](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-reset.md)|Návrat na začátek v sekvenci výčtu.|  
-|[Klonování](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
+|[klonování](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-clone.md)|Vytvoří enumerátor, který obsahuje stav výčtu jako aktuální enumerátor.|  
 |[GetCount –](../../../extensibility/debugger/reference/ienumdebugportsuppliers2-getcount.md)|Získá počet portů dodavatelů v enumerátor.|  
   
 ## <a name="remarks"></a>Poznámky  
@@ -59,7 +55,7 @@ IEnumDebugPortSuppliers2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

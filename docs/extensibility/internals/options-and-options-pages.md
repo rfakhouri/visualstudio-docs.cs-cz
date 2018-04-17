@@ -1,12 +1,10 @@
 ---
-title: "Možnosti a možnosti stránky | Microsoft Docs"
-ms.custom: 
+title: Možnosti a možnosti stránky | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], layouts
 - Tools Options pages [Visual Studio SDK], attributes
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
-caps.latest.revision: "34"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 1177a9a4df1f07c93540fa039117c5fa81289e17
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d85b900779a5df8af077b292b2e2f70b0592e35c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-and-options-pages"></a>Možnosti a možnosti stránky
 Kliknutím na tlačítko **možnosti** na **nástroje** otevře se nabídka **možnosti** dialogové okno. Možnosti v tomto dialogovém se souhrnně označují jako možnosti stránky. V navigačním podokně ovládacího prvku strom zahrnuje možnosti kategorií a každou kategorii má možnosti stránky. Když vyberete na stránce, v pravém podokně zobrazí jeho možnosti. Tyto stránek umožňují změnit hodnoty možnosti, které určují stav VSPackage.  
@@ -56,11 +54,11 @@ Kliknutím na tlačítko **možnosti** na **nástroje** otevře se nabídka **mo
 ## <a name="option-attributes-and-layout"></a>Možnost atributy a rozložení  
  Uživatelské rozhraní (UI), které poskytuje stránce určuje vzhled možnosti na stránce vlastní možnosti. Rozložení, označování a popis možnosti na stránce Obecné možnosti jsou určeny následující atributy:  
   
--   <xref:System.ComponentModel.CategoryAttribute>Určuje kategorii možnost.  
+-   <xref:System.ComponentModel.CategoryAttribute> Určuje kategorii možnost.  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>Určuje zobrazovaný název možnosti.  
+-   <xref:System.ComponentModel.DisplayNameAttribute> Určuje zobrazovaný název možnosti.  
   
--   <xref:System.ComponentModel.DescriptionAttribute>Určuje popis možnosti.  
+-   <xref:System.ComponentModel.DescriptionAttribute> Určuje popis možnosti.  
   
     > [!NOTE]
     >  Ekvivalentní atributy, SRCategory, LocDisplayName a SRDescription, používat prostředky řetězce pro lokalizaci a jsou definovány v [spravovaný projekt ukázka](http://go.microsoft.com/fwlink/?LinkId=122774).  

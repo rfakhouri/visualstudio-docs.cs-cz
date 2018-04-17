@@ -1,28 +1,26 @@
 ---
-title: "Spuštění aplikace UWP ve vzdáleném počítači | Microsoft Docs"
-ms.custom: 
+title: Spuštění aplikace UWP ve vzdáleném počítači | Microsoft Docs
+ms.custom: ''
 ms.date: 01/05/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
-caps.latest.revision: "43"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: f9d538cbc650de2d704c885a8eff6a897c9ef68e
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: 6ba0edc3c94ae3586615086d668df2c3bf9eaddf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Spuštění aplikace UWP ve vzdáleném počítači v sadě Visual Studio
   
@@ -36,7 +34,7 @@ V některých scénářích nástrojů pro vzdálenou automaticky nainstaluje, k
 
 Pro počítače s Windows 10 pre-Creator aktualizace verzí systému Windows nainstalujte nástroje pro vzdálenou ve vzdáleném počítači ručně předtím, než můžete ladit. Postupujte podle pokynů v tomto tématu. 
   
-##  <a name="BKMK_Prerequisites"></a>Požadavky  
+##  <a name="BKMK_Prerequisites"></a> Požadavky  
  Ladění na vzdáleném zařízení:  
   
 - Vzdálené zařízení a počítače Visual Studio musí být připojené přes síť, nebo připojené přímo pomocí kabelu USB nebo sítě Ethernet. Ladění po Internetu není podporováno.  
@@ -45,17 +43,17 @@ Pro počítače s Windows 10 pre-Creator aktualizace verzí systému Windows nai
   
 - Pro počítače s Windows 10 s verzí systému Windows 10 starší než Windows 10 Creator aktualizace, je nutné [instalaci a spuštění vzdáleného ladění součásti](#BKMK_download).
   
-##  <a name="BKMK_Security"></a>Zabezpečení  
+##  <a name="BKMK_Security"></a> Zabezpečení  
 Ve výchozím nastavení **Universal (nešifrovaného protokolu)** se používá ve Windows 10. Tuto protokolu lze používat pouze v důvěryhodných sítích. Ladění připojení je zranitelný vůči uživateli se zlými úmysly kteří může zachytávat a měnit data, které jsou předávány mezi vývoj a vzdáleného počítače.
   
 > [!WARNING]
 >  Neexistuje žádné zabezpečení sítě, když nastavíte režim ověřování na **Universal (nešifrovaného protokolu)** nebo **žádné**. Zvolte těchto režimech pouze v případě, že jste si jisti, že síť není hrozí od provozu škodlivý nebo k tomuto účelu.  
   
-##  <a name="BKMK_DirectConnect"></a>Jak se připojit přímo pomocí kabelu USB 
+##  <a name="BKMK_DirectConnect"></a> Jak se připojit přímo pomocí kabelu USB 
 
 Ve Windows 10, můžete nasadit do zařízení připojená k portu USB výběrem **zařízení** místo **vzdáleného počítače** jako cíl nasazení (můžete to provést **standardní** panelu nástrojů nebo na stránce vlastností ladění).
 
-##  <a name="BKMK_ConnectVS"></a>Konfigurace projektu Visual Studia pro vzdálené ladění  
+##  <a name="BKMK_ConnectVS"></a> Konfigurace projektu Visual Studia pro vzdálené ladění  
  Zadejte vzdálené zařízení pro připojení k ve vlastnostech projektu. Postup se liší v závislosti na programovací jazyk. Můžete zadat síťový název vzdáleného zařízení nebo můžete vybrat z **vzdáleného připojení** dialogové okno.  
   
  ![Dialogové okno Vyberte připojení vzdáleného ladicího programu](../debugger/media/vsrun_selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")  
@@ -65,7 +63,7 @@ Ve Windows 10, můžete nasadit do zařízení připojená k portu USB výběrem
 > [!TIP]
 >  Pokud máte potíže s připojením ke vzdálené zařízení, zkuste zadat IP adresu zařízení. Pokud chcete určit IP adresu zařízení, otevřete okno příkazového řádku a zadejte **ipconfig**. IP adresa je uveden jako **IPv4 adresu**.  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a>Vyberte vzdálené zařízení pro projekty C# a Visual Basic  
+###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Vyberte vzdálené zařízení pro projekty C# a Visual Basic  
   
 1.  Vyberte název projektu v Průzkumníku řešení a potom zvolte **vlastnosti** z místní nabídky.  
   
@@ -77,7 +75,7 @@ Ve Windows 10, můžete nasadit do zařízení připojená k portu USB výběrem
 
     ![Spravovat vlastnosti projektu pro vzdálené ladění](../debugger/media/vsrun_managed_projprop_remote.png "VSRUN_Managed_ProjProp_Remote")  
   
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a>Vyberte vzdálené zařízení pro projekty JavaScript a C++  
+###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Vyberte vzdálené zařízení pro projekty JavaScript a C++  
   
 1.  Vyberte název projektu v Průzkumníku řešení a potom zvolte **vlastnosti** z místní nabídky.  
   
@@ -87,19 +85,19 @@ Ve Windows 10, můžete nasadit do zařízení připojená k portu USB výběrem
   
 4.  Zadejte název vzdáleného zařízení v síti **název počítače** pole nebo zvolte na šipku dolů do pole vybrat ze zařízení **vyberte připojení vzdáleného ladicího programu** dialogové okno.  
 
-    ![C & č. 43; & č. 43; vlastnosti pro vzdálené ladění projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
+    ![C&#43; &#43; projektu vlastnosti pro vzdálené ladění](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
   
-## <a name="BKMK_download"></a>Stáhněte a nainstalujte nástroje pro vzdálenou (předběžné Creators aktualizace)
+## <a name="BKMK_download"></a> Stáhněte a nainstalujte nástroje pro vzdálenou (předběžné Creators aktualizace)
 
 Pokud používáte pre-Creator aktualizace verze systému Windows 10, postupujte podle těchto pokynů. Jinak můžete tuto část přeskočit.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
-### <a name="BKMK_setup"></a>Nastavení vzdáleného ladicího programu
+### <a name="BKMK_setup"></a> Nastavení vzdáleného ladicího programu
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]  
   
-##  <a name="BKMK_RunRemoteDebug"></a>Spustit relaci vzdáleného ladění  
+##  <a name="BKMK_RunRemoteDebug"></a> Spustit relaci vzdáleného ladění  
  Spuštění, zastavení a přechod na relaci vzdáleného ladění stejným způsobem jako místní relace. Na verze pre-Creator aktualizace systému Windows 10 zkontrolujte, zda že je spuštěna Remote Debugging Monitor na vzdáleném zařízení.  
   
  Zvolte **spustit ladění** na **ladění** nabídky (klávesové: F5). Projekt je překompilovat, pak nasazené a spustit na vzdáleném zařízení. Ladicí program pozastaví spuštění na zarážkách a můžete krok do, přes a z vašeho kódu. Zvolte **Zastavte ladění** ukončete svou relaci ladění a zavřete vzdálené aplikace.

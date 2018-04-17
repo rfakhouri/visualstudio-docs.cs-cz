@@ -2,11 +2,8 @@
 title: AL (Linker sestavení) – úloha | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#AL
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - AL task [MSBuild]
 - MSBuild, AL task
 ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
-caps.latest.revision: 22
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d9d3b433e7ae14603a41b7ad802ff386c7aac52
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 0d0fce71e472e006ae23069d6e146cc365e25aa6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="al-assembly-linker-task"></a>AL (linker sestavení) – úloha
 AL úloha zabalí AL.exe, nástroj, který je distribuován s [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Tento nástroj Linker sestavení slouží k vytvoření sestavení s manifestu z jeden nebo více souborů, které jsou buď moduly nebo soubory prostředků. Kompilátory a vývojových prostředích může již poskytují tyto funkce, je často není potřeba přímo pomocí této úlohy. Linker sestavení je velmi užitečné pro vývojáře, která potřebuje k vytvoření jednoho sestavení z více souborů součásti, jako jsou ty, které může být vytvářeny z vývojového smíšený jazyk. Tato úloha není moduly zkombinovat do jednoho sestavení souboru; jednotlivé moduly musí být stále distribuované a k dispozici v pořadí pro výsledný sestavení správně načíst. Další informace o AL.exe najdete v tématu [Al.exe (Linker sestavení)](/dotnet/framework/tools/al-exe-assembly-linker).  

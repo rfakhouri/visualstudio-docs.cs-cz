@@ -1,25 +1,21 @@
 ---
-title: "Přidání rozšíření protokolu jazyk serveru | Microsoft Docs"
-ms.custom: 
+title: Přidání rozšíření protokolu jazyk serveru | Microsoft Docs
+ms.custom: ''
 ms.date: 11/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea93ddee9c47f80322db2403aeecc0fb7dddb209
-ms.sourcegitcommit: c0a2385a16cc4f47d2e1ff23d35c4da40f5605e0
+ms.openlocfilehash: bb6c82eab6878e99c9840ed593d9b9993056d391
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-a-language-server-protocol-extension"></a>Přidání rozšíření protokolu jazyk serveru
 
@@ -55,7 +51,7 @@ Inicializace | Ano
 inicializovat | Ano
 vypnutí | Ano
 Ukončení | Ano
-$/cancelRequest | Ano
+$/ cancelRequest | Ano
 okno nebo showMessage | Ano
 okno nebo showMessageRequest | Ano
 okno nebo logMessage | Ano
@@ -63,8 +59,8 @@ telemetrie/událost |
 Klient nebo registerCapability |
 Klient nebo unregisterCapability |
 pracovní prostor nebo didChangeConfiguration | Ano
-workspace/didChangeWatchedFiles | Ano
-workspace/symbol | Ano
+pracovní prostor nebo didChangeWatchedFiles | Ano
+pracovní prostor nebo symbol | Ano
 pracovní prostor nebo executeCommand | Ano
 pracovní prostor nebo applyEdit | Ano
 textDocument/publishDiagnostics | Ano
@@ -86,10 +82,10 @@ textDocument/rangeFormatting | Ano
 textDocument/onTypeFormatting |
 textDocument a definic | Ano
 textDocument/codeAction | Ano
-textDocument/codeLens |
+textDocument/Codelensu |
 Codelensu nebo řešení |
 textDocument/documentLink |
-documentLink/resolve |
+documentLink nebo řešení |
 textDocument nebo přejmenování | Ano
 
 ## <a name="getting-started"></a>Začínáme
@@ -117,7 +113,7 @@ Vytvoření nové závislosti takto:
 * **Identifier**: Microsoft.VisualStudio.LanguageServer.Client.Preview
 * **Rozsah verze**: [1.0,2.0)
 * **Jak je vyřešit závislosti**: nainstalovaná uživatelem
-* **Download URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
+* **Adresa URL pro stažení**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
 
 > [!NOTE]
 > **Stáhnout URL** musí být vyplněna, takže uživatelé, kteří instalují rozšíření vědět, jak nainstalovat požadované závislosti.
@@ -252,7 +248,7 @@ Klikněte na tlačítko Nový vytvořit nového prostředku:
 
 ![definování MEF asset](media/lsp-define-asset.png)
 
-* **Type**: Microsoft.VisualStudio.MefComponent
+* **Typ**: Microsoft.VisualStudio.MefComponent
 * **Zdroj**: na projekt v aktuálním řešení
 * **Projekt**: [projektu]
 
@@ -336,7 +332,7 @@ Pomocí těchto kroků-li přidat podporu pro nastavení služby linky LSP jazyk
 
   ![Upravit prostředek vspackage](media/lsp-add-vspackage-asset.png)
 
-  * **Type**: Microsoft.VisualStudio.VsPackage
+  * **Typ**: Microsoft.VisualStudio.VsPackage
   * **Zdroj**: souboru v systému souborů
   * **Cesta**: [cesta k souboru pkgdef]
 

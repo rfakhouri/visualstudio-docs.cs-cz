@@ -1,12 +1,9 @@
 ---
-title: "Šablony sady Visual Studio pro projekty a soubory | Microsoft Docs"
-ms.custom: 
+title: Šablony sady Visual Studio pro projekty a soubory | Microsoft Docs
+ms.custom: ''
 ms.date: 01/02/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - templates [Visual Studio], project
 - templates [Visual Studio], item
@@ -14,12 +11,12 @@ helpviewer_keywords:
 - project templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3959b01fdfc0ff77bdd5a3ffa0c96366b9da87d7
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+manager: douge
+ms.openlocfilehash: 900b750df391029a1bed15b2da003f94c085148a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-and-item-templates"></a>Šablony projektů a položek
 
@@ -27,21 +24,21 @@ ms.lasthandoff: 01/05/2018
 
 ## <a name="visual-studio-templates"></a>šablony sady Visual Studio
 
-Několik předdefinovaných projektů a šablon položek je nainstalováno pomocí sady Visual Studio. Například Visual Basic a C# **aplikace pro Windows Forms** a **knihovny tříd** šablony, které jsou zobrazeny v **nový projekt** dialogové okno jsou šablony projektů. Šablony položek se zobrazují v **přidat novou položku** dialogové okno pole a zahrnout položek, jako jsou soubory kódu, soubory XML, stránky HTML a stylů.
+Několik předdefinovaných projektů a šablon položek je nainstalováno pomocí sady Visual Studio. Například Visual Basic a C# **aplikace pro Windows Forms** a **knihovny tříd** šablony, které jsou zobrazeny v **nový projekt** dialogové okno jsou šablony projektů. Položky zobrazit šablony v **přidat novou položku** dialogové okno pole a zahrnout položek, jako jsou soubory kódu, soubory XML, stránky HTML a stylů.
 
-Tyto šablony představují výchozí bod pro uživatele zahájíte vytváření projektů nebo rozšířit existující projekty. Šablony projektů poskytují soubory, které jsou požadovány pro konkrétní typ projektu, zahrnují standardní odkazy na sestavení a nastavují výchozí vlastnosti projektu a možnosti kompilátoru. Šablony položek může pohybovat složitost z jedné prázdný soubor, který má určitá příponu souboru, položku více soubory, které obsahuje, například, soubory zdrojového kódu, které mají se zakázaným inzerováním kód, informace o návrháři souborů a vložené prostředky.
+Tyto šablony představují výchozí bod pro uživatele zahájíte vytváření projektů nebo rozšířit existující projekty. Šablony projektů poskytují soubory, které jsou požadovány pro konkrétní typ projektu, zahrnují standardní odkazy na sestavení a nastavují výchozí vlastnosti projektu a možnosti kompilátoru. Šablony položek může pohybovat složitost z jedné prázdný soubor, který má příponou, k více soubory zdrojového kódu se zakázaným inzerováním kód, informace o návrháři souborů a vložené prostředky.
 
-Kromě nainstalovaných šablon v **nový projekt** a **přidat novou položku** dialogových oken, můžete vytvořit vlastní šablony, nebo stažení a použití šablony vytvořené komunitou. Další informace najdete v tématu [postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md) a [postupy: vytváření šablon položek](../ide/how-to-create-item-templates.md).
+Můžete použít nainstalovaných šablon v **nový projekt** a **přidat novou položku** dialogových oken, vytvářet vlastní šablony, nebo stažení a použití šablony vytvořené komunitou. Další informace najdete v tématu [postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md) a [postupy: vytváření šablon položek](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Obsah šablony
 
 Všechny šablony projektů a položek, ať už nainstalované s Visual Studio nebo vytvořené vámi, funkce pomocí stejné zásady a mají podobný obsah. Všechny šablony obsahují následující položky:
 
-- Soubory, které mají být vytvořeny při použití této šablony. To zahrnuje zdrojové soubory, vložené prostředky, soubory projektu a tak dále.
+- Soubory, které mají být vytvořeny při použití této šablony. Tyto soubory zahrnují soubory zdrojového kódu, vložené prostředky, soubory projektu a tak dále.
 
-- Jeden soubor .vstemplate. Tento soubor obsahuje metadata, která poskytuje informace potřebné k zobrazení šablony **nový projekt** a **přidat novou položku** dialogových oken a vytvořte projekt nebo položku ze šablony. Další informace o soubory .vstemplate najdete v tématu [parametry šablony](../ide/template-parameters.md).
+- Jeden *.vstemplate* soubor obsahující metadata potřebná k zobrazení šablony v **nový projekt** a **přidat novou položku** dialogových oken a vytvoření projektu nebo položky z Šablona. Další informace o *.vstemplate* soubory, najdete v části [parametry šablony](../ide/template-parameters.md).
 
-Když tyto soubory jsou komprimované do souboru ZIP a put ve správné složce, Visual Studio automaticky zobrazí na těchto místech:
+Když jsou tyto soubory do komprimované *.zip* souboru a put ve správné složce, Visual Studio automaticky zobrazí je v následujících umístěních:
 
 - Šablony projektu se zobrazí v **nový projekt** dialogové okno.
 
@@ -51,7 +48,7 @@ Další informace o složkách šablony najdete v tématu [postupy: hledání a 
 
 ## <a name="starter-kits"></a>startovní sady
 
-Startovní sady jsou zdokonalené šablony, které lze veřejně sdílet s ostatními členy komunity. Startovní sada obsahuje ukázky kódu s kompilací, dokumentaci a další prostředky, které mají za úkol pomoci uživatelům naučit se nové nástroje a programovací techniky, aby mohli tvořit užitečné a opravdové aplikace. Základní obsah a postupy pro startovní sady jsou stejné jako pro šablony. Další informace najdete v tématu [postupy: vytváření Startovních sad](../ide/how-to-create-starter-kits.md).
+Startovní sady jsou zdokonalené šablony, které lze veřejně sdílet s ostatními členy komunity. Startovní sady zahrnují ukázky kódů, dokumentace a dalším prostředkům pomoci uživatelům s další nové nástroje a programovací techniky při sestavování užitečné a reálného aplikace. Základní obsah a postupy pro Startovní sady jsou stejné jako šablony. Další informace najdete v tématu [postupy: vytváření Startovních sad](../ide/how-to-create-starter-kits.md).
 
 ## <a name="see-also"></a>Viz také
 

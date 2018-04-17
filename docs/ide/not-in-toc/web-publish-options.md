@@ -3,31 +3,28 @@ title: Jaké možnosti publikování je pro mě nejlepší? | Microsoft Docs
 ms.custom: ''
 ms.date: 03/09/2017
 ms.reviewer: riande
-ms.suite: ''
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
-caps.latest.revision: 1
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e9eb5423b33fbdd27921afcd6ae6f5758bfc910
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 5927986b8c89a2e86fcecf874eae35ac016805f3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # Jaké možnosti publikování je pro mě nejlepší?
 
 Z Visual Studia, webové aplikace lze publikovat přímo na následující cíle:
 
-- [Azure App Service](#azure-app-service)
+- [Aplikační služba Azure](#azure-app-service)
 - [Virtuální počítače Azure](#azure-virtual-machines)
 - [Systém souborů](#file-system)
 - [Vlastní cíle (služby IIS, FTP, atd.) ](#custom-targets), který zahrnuje všechny libovolné webové servery.
@@ -53,7 +50,7 @@ App Service běží na hostovaných v cloudu virtuálních počítačů v Azure,
 
 Další informace o publikování aplikací ASP.NET Core najdete v tématu [publikování webové aplikace ASP.NET Core Azure App Service pomocí sady Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs).
 
-## Azure Virtual Machines
+## Virtuální počítače Azure
 
 [Virtuální počítače Azure (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) umožňují vytvářet a spravovat libovolný počet výpočetních prostředků v cloudu. Za předpokladu, odpovědnost za všechny softwaru a aktualizací na virtuálních počítačích, můžete je upravit tolik, kolik požadovaného podle požadavků vaší webové aplikaci. Virtuální počítače můžete přistupovat přímo prostřednictvím vzdálené plochy, a také požadovaných každé z nich budou udržovat přiřazená IP adresa.
 

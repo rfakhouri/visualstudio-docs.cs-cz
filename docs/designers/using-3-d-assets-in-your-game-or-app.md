@@ -1,12 +1,10 @@
 ---
-title: "Pomocí 3D prostředky v hry nebo aplikace | Microsoft Docs"
-ms.custom: 
+title: Pomocí 3D prostředky v hry nebo aplikace | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -15,16 +13,16 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5f1e8888461026f734ac08c5ec3f23b10f310174
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 0e5d8625ab7925327a773bdab3183834f7af1117
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Používání 3D prostředků ve hře nebo aplikaci
 Tento článek popisuje, jak můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ke zpracování 3D prostředky a zahrnout je ve vašich sestaveních.  
@@ -32,7 +30,7 @@ Tento článek popisuje, jak můžete použít [!INCLUDE[vsprvs](../code-quality
  Po použití nástrojů v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vytvořit 3D prostředky, dalším krokem je jejich použití ve vaší aplikaci. Ale před použitím je, vaše prostředky musí být uvedeny ve formátu, který můžete porozumět DirectX. Při transformaci vaše prostředky [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje sestavení vlastní nastavení pro jednotlivé typy asset, který může vytvořit. Zahrnout prostředky buildu, všechny, které musíte udělat, je nakonfigurujete svůj projekt použijte vlastní nastavení sestavení, přidat prostředky do projektu a nakonfigurovat prostředky používat vlastní nastavení správná sestavení. Potom můžete načíst prostředky do vaší aplikace a použít je pomocí vytvoření a naplnění DirectX prostředky stejně jako v jakékoli jiné DirectX aplikaci.  
   
 ## <a name="configuring-your-project"></a>Konfigurace projektu  
- Před nasazením vaše 3D prostředky jako součást sestavení, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se chcete dozvědět o typech prostředků, které chcete nasadit. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]již ví o mnoho běžné typy souborů, ale protože pouze určité typy aplikací, použijte 3D prostředky [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] není předpokládá, že projektu budete stavět tyto typy souborů. Se dá zjistit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , vaše aplikace používá tyto typy prostředků pomocí *přizpůsobení sestavení*– soubory, které informují [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] postupy zpracování různých typů souborů užitečným způsobem – které jsou k dispozici pro každý typ prostředku. Protože tato přizpůsobení budou použita na jednotlivých projektů, je všechny, které musíte udělat, do projektu přidejte příslušné úpravy.  
+ Před nasazením vaše 3D prostředky jako součást sestavení, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] se chcete dozvědět o typech prostředků, které chcete nasadit. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] již ví o mnoho běžné typy souborů, ale protože pouze určité typy aplikací, použijte 3D prostředky [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] není předpokládá, že projektu budete stavět tyto typy souborů. Se dá zjistit [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , vaše aplikace používá tyto typy prostředků pomocí *přizpůsobení sestavení*– soubory, které informují [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] postupy zpracování různých typů souborů užitečným způsobem – které jsou k dispozici pro každý typ prostředku. Protože tato přizpůsobení budou použita na jednotlivých projektů, je všechny, které musíte udělat, do projektu přidejte příslušné úpravy.  
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Chcete-li přidat přizpůsobením sestavení do projektu  
   

@@ -1,21 +1,19 @@
 ---
-title: "T4 – Direktiva Include | Microsoft Docs"
-ms.custom: 
+title: T4 – Direktiva Include | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0de398b381cd1e45ff43b3eb1df79c9becd829c4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 4cfa7742a75b24288ef3617d8195a75e13d8e817
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="t4-include-directive"></a>T4 – direktiva Include
 V šabloně text v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mohou zahrnovat text z jiného souboru pomocí `<#@include#>` – direktiva. Můžete umístit `include` direktivy kdekoli v textové šablony před první třídy funkce bloku `<#+ ... #>`. Zahrnuté soubory může také obsahovat `include` direktivy a další direktivy. Díky tomu můžete kód šablony a často používaný text sdílet mezi šablonami.  
@@ -26,13 +24,13 @@ V šabloně text v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mo
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath`může být absolutní, nebo relativně k aktuální soubor šablony.  
+-   `filePath` může být absolutní, nebo relativně k aktuální soubor šablony.  
   
      Kromě toho konkrétní [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření můžete určit jejich vlastní adresáře pro vyhledávání zahrnout soubory. Například pokud jste nainstalovali vizualizace a modelování SDK (DSL Tools), do následující složky se přidá do seznamu zahrnout: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.  
   
-     Tyto další složky vkládaných souborů mohou záviset na příponě vkládaného souboru. Patří například nástroje DSL složky je k dispozici pouze pro včetně souborů, které mají příponu souboru`.tt`  
+     Tyto další složky vkládaných souborů mohou záviset na příponě vkládaného souboru. Patří například nástroje DSL složky je k dispozici pouze pro včetně souborů, které mají příponu souboru `.tt`  
   
--   `filePath`může obsahovat proměnné prostředí oddělené s "%". Příklad:  
+-   `filePath` může obsahovat proměnné prostředí oddělené s "%". Příklad:  
   
     ```  
     <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
@@ -111,7 +109,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a>Pomocí vlastnosti projektu nástroje MSBuild a Visual Studio  
+##  <a name="msbuild"></a> Pomocí vlastnosti projektu nástroje MSBuild a Visual Studio  
  I když používáte Visual Studio makra jako $(solutiondir) – v direktivu nepodporují se v nástroji MSBuild. Chcete-li transformovat šablony v sestavovacím počítači, je nutné místo toho použít vlastnosti projektu.  
   
  Úpravou souboru .csproj nebo .vbproj definujte vlastnost projektu. Tento příklad definuje vlastnost s názvem `myIncludeFolder`:  

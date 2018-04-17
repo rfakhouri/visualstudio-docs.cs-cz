@@ -1,27 +1,23 @@
 ---
-title: "Vytváření obsahu. Soubory Vsct | Microsoft Docs"
-ms.custom: 
+title: Vytváření obsahu. Soubory Vsct | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa274c807aaa1ed212a7b283a35e510615561eb5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 65fc62d5685ca7c81b3ebb7f524db3cdbebe72c7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="authoring-vsct-files"></a>Vytváření obsahu. Vsct soubory
 Tento dokument ukazuje, jak vytvořit soubor .vsct k přidání položky nabídky, panely nástrojů a další prvky uživatelského rozhraní (UI) v sadě Visual Studio integrované vývojové prostředí (IDE). Tyto kroky použijte, když přidáte prvky uživatelského rozhraní pro Visual Studio balíček (VSPackage), který ještě nemá soubor .vsct.  
@@ -234,7 +230,7 @@ Tento dokument ukazuje, jak vytvořit soubor .vsct k přidání položky nabídk
  Některé typy nabídky a tlačítko zahrnovat specializovaná chování. Následující tabulka popisuje některé speciální nabídky a typy tlačítko. Pro ostatní typy podívejte `types` atribut popisy v [Menu Element](../../extensibility/menu-element.md), [Button Element](../../extensibility/button-element.md), a [Element pole se seznamem](../../extensibility/combo-element.md).  
   
  Pole se seznamem  
- Pole se seznamem je rozevíracího seznamu, který lze použít na panelu nástrojů. Chcete-li přidat pole se seznamem do uživatelského rozhraní, vytvořte [kláves](../../extensibility/combos-element.md) element v `Commands` elementu. Pak přidejte do `Combos` elementu `Combo` element pro každé pole se seznamem přidat. `Combo`elementy mají stejné atributy a podřízené položky jako `Button` elementy a také mít `DefaultWidth` a `idCommandList` atributy. `DefaultWidth` Atribut Nastaví šířku v pixelech a `idCommandList` atribut body ID příkazu, který se používá k vyplnění pole se seznamem. Další informace najdete v tématu `Combo` element dokumentaci.  
+ Pole se seznamem je rozevíracího seznamu, který lze použít na panelu nástrojů. Chcete-li přidat pole se seznamem do uživatelského rozhraní, vytvořte [kláves](../../extensibility/combos-element.md) element v `Commands` elementu. Pak přidejte do `Combos` elementu `Combo` element pro každé pole se seznamem přidat. `Combo` elementy mají stejné atributy a podřízené položky jako `Button` elementy a také mít `DefaultWidth` a `idCommandList` atributy. `DefaultWidth` Atribut Nastaví šířku v pixelech a `idCommandList` atribut body ID příkazu, který se používá k vyplnění pole se seznamem. Další informace najdete v tématu `Combo` element dokumentaci.  
   
  MenuController  
  Řadič nabídky je tlačítko, které má šipka vedle sebe. Klikněte na šipku otevřete seznam. Chcete-li přidat řadič nabídky do uživatelského rozhraní, vytvořte `Menu` elementu a sadu jeho `type` atribut **MenuController** nebo **MenuControllerLatched**, v závislosti na chování, které chcete. K naplnění řadič nabídky, nastavte ji jako nadřazený prvek `Group` elementu. Řadičem nabídky se zobrazí všechny podřízené objekty dané skupiny v rozevíracím seznamu.  

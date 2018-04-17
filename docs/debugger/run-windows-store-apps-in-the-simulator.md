@@ -1,28 +1,26 @@
 ---
-title: "Spuštění aplikace UWP v simulátoru | Microsoft Docs"
-ms.custom: 
+title: Spuštění aplikace UWP v simulátoru | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
-caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 40cdfaf430483d68744e4ec9535c2546e75d4470
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: b3ec07f7bf36ba606e9f1ddb45bdcde75d570a32
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Spuštění aplikace UWP v simulátoru
 Visual Studio simulátor pro aplikace UWP je aplikace pracovní plochy, která simuluje aplikace UPW. Obvykle budete chtít ladění na místním počítači, připojeného zařízení nebo vzdáleném počítači. V některých scénářích, můžete však použít simulátoru Visual Studio k emulaci různých fyzických velikost a rozlišení obrazovky. Můžete také simulace událostí otočení a běžné touch a simulovat vlastnosti síťového připojení.
@@ -34,12 +32,12 @@ Visual Studio simulátor pro aplikace UWP je aplikace pracovní plochy, která s
 > [!IMPORTANT]
 >  Visual Studio 2015 simulátor nezahrnuje tlačítko informace o zeměpisné poloze. To je proto simulátoru Windows 10 nezahrnuje informace o zeměpisné poloze simulace.
   
-##  <a name="BKMK_Set_the_simulator_as_the_target"></a>Simulátor nastavenou jako cíl  
+##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Simulátor nastavenou jako cíl  
  Ke spouštění vaší aplikace UWP v simulátoru, vyberte **simulátoru** z rozevíracího seznamu vedle položky **spustit ladění** tlačítko ladicí program **standardní** panelu nástrojů. Tato možnost je k dispozici, pouze pokud vaše aplikace **cílové platformy Min. Verze** je menší než nebo rovna operační systém na vývojovém počítači. 
   
  ![Spuštění v simulátoru](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")  
   
-##  <a name="BKMK_Choose_an_interaction_mode"></a>Vyberte režim interakci  
+##  <a name="BKMK_Choose_an_interaction_mode"></a> Vyberte režim interakci  
  Můžete vybrat následující režimy interakce  
   
 -   ![Tlačítko režimu myši](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") myši režimu: Nastaví režim interakce na gesta myši. Zahrnout myši gesta kliknutí na poklikáním a drags.  
@@ -78,10 +76,10 @@ Visual Studio simulátor pro aplikace UWP je aplikace pracovní plochy, která s
   
     -   Stiskněte tlačítko levé a otočit kolečka myši směrem vpřed (od sebe) otočení objektu po směru hodinových ručiček.  
   
-##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a>Povolit nebo zakázat vždy na začátek režimu  
+##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Povolit nebo zakázat vždy na začátek režimu  
  Můžete nastavit okno simulátoru a vždy je nutné popředí. **Přepnout nejhornější okno** tlačítko povolí nebo zakáže **vždy nahoře** režimu okna simulátoru.  
   
-##  <a name="BKMK_Change_the_device_orientation"></a>Změna orientace zařízení  
+##  <a name="BKMK_Change_the_device_orientation"></a> Změna orientace zařízení  
  Orientace zařízení mezi na výšku a šířku můžete přepnout otočením simulátoru 90 stupňů vede libovolným směrem.  
   
 > [!NOTE]
@@ -90,7 +88,7 @@ Visual Studio simulátor pro aplikace UWP je aplikace pracovní plochy, která s
 > [!NOTE]
 >  Při otočení simulátoru tak, aby jeden okraj simulátoru je větší než, které se zobrazí na obrazovce, simulátoru se automaticky přizpůsobí v rámci obrazovky. Simulátor není původní velikost ke změně velikosti, pokud znovu otočit.  
   
-##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a>Změnit velikost simulované obrazovky a řešení  
+##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Změnit velikost simulované obrazovky a řešení  
  Chcete-li změnit velikost simulované obrazovky a řešení, vyberte **změnit řešení** tlačítko na paletě a ze seznamu vyberte novou velikost a řešení.  
   
  Velikost obrazovky a řešení jsou uvedeny jako *palce šířka obrazovky, pixelů šířka a výška pixelů*. Všimněte si, simulated velikosti obrazovky a rozlišení. Souřadnice umístění v simulátoru jsou převedeny na souřadnice velikost vybrané zařízení a řešení.  
@@ -98,7 +96,7 @@ Visual Studio simulátor pro aplikace UWP je aplikace pracovní plochy, která s
 > [!NOTE]
 >  Škálovat verzích rastrové obrázky můžete uložit ve vaší aplikaci a systém Windows načte správné bitové kopie pro aktuální měřítka. Další informace najdete v tématu [návrhu a uživatelského rozhraní ÚVOD](/windows/uwp/layout/design-and-ui-intro). Nicméně pokud změníte simulátoru řešení, které systém Windows vybere jinou bitovou kopii podle řešení, budete muset zastavit a restartovat relaci ladění zobrazíte novou bitovou kopii.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Vytvoření snímku obrazovky aplikace pro odeslání Microsoft Store  
+##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Vytvoření snímku obrazovky aplikace pro odeslání Microsoft Store  
  Při odesílání aplikace do Microsoft Store, musíte zahrnout snímky obrazovky aplikace.  
   
 > [!NOTE]
@@ -110,7 +108,7 @@ Visual Studio simulátor pro aplikace UWP je aplikace pracovní plochy, která s
   
      ![Snímek obrazovky nastavení kontextovou nabídku](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
-##  <a name="BKMK_Simulate_network_connection_properties"></a>Simulovat vlastnosti síťového připojení  
+##  <a name="BKMK_Simulate_network_connection_properties"></a> Simulovat vlastnosti síťového připojení  
  Může pomoci spravovat údržbu povědomí o síťové připojení náklady nebo data plán změny stavu a povolením vaši aplikaci tyto informace používat účtovány dodatečné poplatky pro roaming nebo vyšší než náklady na měřeném připojení k síti uživatelé vaší aplikace Zadaná data limit přenosu. [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) rozhraní API umožňuje reagovat na [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) a [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) události, které přihlásit. V tématu [rychlý start: Správa sítí s měřením dat náklady omezení](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  K ladění a testování ohledem na náklady kódu sítě, můžete simulátoru napodobovat vlastnosti sítě, které jsou k dispozici prostřednictvím [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) objekt vrácený [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
@@ -147,7 +145,7 @@ Visual Studio simulátor pro aplikace UWP je aplikace pracovní plochy, která s
   
  [Jak aktivovat pozastavení, obnovení a události na pozadí v aplikacích pro UWP](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
-##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a>Přejděte simulátoru pomocí klávesnice  
+##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Přejděte simulátoru pomocí klávesnice  
  Můžete přejít simulátoru nástrojů stisknutím klávesy **kombinaci kláves CTRL + ALT + Šipka nahoru** přejděte fokus z okna simulátoru na panelu nástrojů simulátoru. Použití **šipka nahoru** a **šipka dolů** přecházet mezi tlačítka panelu nástrojů.  
   
  Simulátor můžete vypnout stisknutím **CTRL + ALT + F4**.  

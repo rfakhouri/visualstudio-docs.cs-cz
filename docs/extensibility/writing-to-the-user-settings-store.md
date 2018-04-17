@@ -1,23 +1,21 @@
 ---
-title: "Zápis do úložiště uživatelských nastavení | Microsoft Docs"
-ms.custom: 
+title: Zápis do úložiště uživatelských nastavení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
-caps.latest.revision: "3"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: a461a255920cc8a01282d2c93b9ba7fd5b38df75
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 0e205fa8850bdd5ee664f66c6d6bb7bf86195bfd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="writing-to-the-user-settings-store"></a>Zápis do úložiště uživatelských nastavení
 Uživatelská nastavení jsou zapisovatelné nastavení, jako jsou v **Nástroje / možnosti** dialogové okno Vlastnosti windows a určitých dialogových oken. Rozšíření pro Visual Studio může použít k uložení malé množství dat. Tento návod ukazuje, jak přidat Poznámkový blok pro Visual Studio jako externího nástroje, čtení a zápis do úložiště uživatelských nastavení.  

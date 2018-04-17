@@ -1,13 +1,10 @@
 ---
-title: "Použití zarážek v ladicím programu v sadě Visual Studio | Microsoft Docs"
+title: Použití zarážek v ladicím programu v sadě Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 02/07/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -35,17 +32,16 @@ f1_keywords:
 helpviewer_keywords:
 - breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95c6f87e120cd8a62aa3959548f968b70c820d39
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 755b167d49aed33aee30f4a616b7609bf2cd0d6c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Použití zarážek v ladicím programu sady Visual Studio
 Pokud chcete zastavit provádění ladicí program, případně zobrazíte stav proměnných kódu nebo pro zobrazení v zásobníku volání, můžete nastavit zarážky. Jsou jedním z nejdůležitějších techniky ladění v sadě nástrojů pro vývojáře.  
@@ -197,7 +193,7 @@ Pokud chcete zastavit provádění ladicí program, případně zobrazíte stav 
   
 2.  Spuštění ladění a při spuštění, zastavení v zarážce, najděte zarážka v **místní hodnoty –** okně pravým tlačítkem a vyberte **Zkontrolujte ID objektu**.  
   
-     Měli byste vidět  **$**  plus číslo **místní hodnoty –** okno. Toto je ID objektu.  
+     Měli byste vidět **$** plus číslo **místní hodnoty –** okno. Toto je ID objektu.  
   
 3.  Přidáte nové podmíněné zarážky v bodě, že který chcete prozkoumat, například pokud má být přidán do kolekce objektu.  
   

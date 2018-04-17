@@ -1,23 +1,21 @@
 ---
-title: "Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
-caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ef73c45b39c638b2dfc1f88be3323d083efa8493
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4498f819dae42c1f010fa97891511253624d7b97
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Návod: Použití diagnostiky grafiky k ladění výpočetního shaderu
 Tento návod ukazuje, jak používat nástroje Visual Studio diagnostiky grafiky k prošetření výpočetního shaderu, který generuje nesprávné výsledky.  
@@ -56,7 +54,7 @@ Tento návod ukazuje, jak používat nástroje Visual Studio diagnostiky grafiky
   
 2.  Zkontrolujte **seznam událostí grafiky** pro kreslení událost, která vykreslí datovou sadu. Chcete-li usnadnit tuto činnost, zadejte `Draw` v **vyhledávání** pole v pravém horním rohu **seznam událostí grafiky** okno. Tento filtrování seznamu tak, aby obsahoval jenom události, které mají "Kreslení" v jejich názvy. V tomto scénáři zjistíte, že tyto kreslení události došlo k chybě:  
   
-     ![Seznam událostí &#40; EL &#41; ukazuje zakreslit události. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
+     ![Seznam událostí &#40;EL&#41; ukazuje kreslení události. ] (media/gfx_diag_demo_compute_shader_fluid_step_2.png "gfx_diag_demo_compute_shader_fluid_step_2")  
   
 3.  Pohyb jednotlivých událostí kreslení při sledování cíl vykreslení na kartě grafiky protokolu dokumentu.  
   
@@ -102,11 +100,11 @@ Tento návod ukazuje, jak používat nástroje Visual Studio diagnostiky grafiky
   
 6.  Zkontrolujte výpočetního shaderu zdrojový kód pro krok výpočtu force. V tomto scénáři zjistíte, že zdroji této chyby je tady.  
   
-     ![Ladění ForceCS &#95; Jednoduché výpočetního shaderu. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![Ladění ForceCS&#95;jednoduchý výpočetní shaderu. ] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
  Po určení umístění k chybě, můžete ukončit ladění a upravit zdrojový kód výpočetního shaderu správně vypočítat vzdálenost mezi vzájemně komunikující částice. V tomto scénáři právě změňte řádek `float2 diff = N_position + P_position;` k `float2 diff = N_position - P_position;`:  
   
- ![Opravené výpočetní & č. 45; shaderu kódu. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+ ![Opravené výpočetní&#45;shaderu kódu. ] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
  V tomto scénáři protože výpočetní shadery kompilované za běhu, můžete právě restartovat aplikaci po provedení změn, abyste viděli, jak ovlivňují simulace. Nemáte k opětovnému sestavení aplikace. Při spuštění aplikace, zjistíte simulaci teď chovat správně.  
   

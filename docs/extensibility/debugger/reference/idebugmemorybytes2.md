@@ -1,29 +1,25 @@
 ---
 title: IDebugMemoryBytes2 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - IDebugMemoryBytes2
 helpviewer_keywords:
 - IDebugMemoryBytes2 interface
 ms.assetid: d7647575-0e06-4190-88f5-ca40b82209a4
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a6377ff5ba61427269df683b34a20292c441632
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1a7c7dbc966c6c2747de4c969975ef8455cf6b0e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 Toto rozhraní představuje bajtů paměti.  
@@ -47,7 +43,7 @@ IDebugMemoryBytes2 : IUnknown
 |------------|-----------------|  
 |[ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md)|Načte sekvenci bajtů, počínaje daného umístění.|  
 |[WriteAt](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md)|Zapíše `dwCount` bajtů, počínaje `pStartContext`.|  
-|[Getsize –](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|Získá velikost v bajtech, paměti, která je reprezentována toto rozhraní.|  
+|[GetSize](../../../extensibility/debugger/reference/idebugmemorybytes2-getsize.md)|Získá velikost v bajtech, paměti, která je reprezentována toto rozhraní.|  
   
 ## <a name="remarks"></a>Poznámky  
  Pro vlastnosti [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) poskytuje rozhraní představující pole `IDebugMemoryBytes2` rozhraní pro přístup k hodnotám v tomto poli.  
@@ -59,7 +55,7 @@ IDebugMemoryBytes2 : IUnknown
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Sestavení: Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>Viz také  
  [Základní rozhraní](../../../extensibility/debugger/reference/core-interfaces.md)   

@@ -1,27 +1,23 @@
 ---
-title: "Ladění modul | Microsoft Docs"
-ms.custom: 
+title: Ladění modul | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70e572b73f8474f77a17989c790f2e7336f9d7a5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 1816d19425897a2f63fa7e5cbe30771bd5eac3d4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-engine"></a>Ladění modulu
 Modul ladění (DE) pracuje s překladač nebo operačního systému, k poskytování ladění služby, jako je například spouštění řízení, zarážky a výraz vyhodnocení. DE je odpovědná za monitorování stavu laděné programu. K tomu je DE používá jakékoli metody je dostupné v podporovaných modulu runtime, zda z procesoru nebo z rozhraní API dodané modulem runtime.  
@@ -37,7 +33,7 @@ Modul ladění (DE) pracuje s překladač nebo operačního systému, k poskytov
 > [!NOTE]
 >  Přestože jsou samostatné implementace DE Transact-SQL a [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript a [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] sdílet jeden DE.  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]ladění umožňuje ladění moduly spustit jedním ze dvou způsobů: buď v rámci jednoho procesu, jako [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí shell, nebo v rámci jednoho procesu jako cíl programu laděné. Druhé formuláře obvykle dojde, pokud proces laděné je ve skutečnosti skript spuštěn pod překladač a ladění modul musí mít dokonalou znalosti překladač, aby monitorování skriptu. Všimněte si, že v tomto případě překladač je ve skutečnosti runtime; ladění moduly jsou pro konkrétní runtime implementace. Kromě toho můžete rozdělit provádění jedné DE napříč hranicemi procesů a počítače (například vzdálené ladění).  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění umožňuje ladění moduly spustit jedním ze dvou způsobů: buď v rámci jednoho procesu, jako [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prostředí shell, nebo v rámci jednoho procesu jako cíl programu laděné. Druhé formuláře obvykle dojde, pokud proces laděné je ve skutečnosti skript spuštěn pod překladač a ladění modul musí mít dokonalou znalosti překladač, aby monitorování skriptu. Všimněte si, že v tomto případě překladač je ve skutečnosti runtime; ladění moduly jsou pro konkrétní runtime implementace. Kromě toho můžete rozdělit provádění jedné DE napříč hranicemi procesů a počítače (například vzdálené ladění).  
   
  DE zpřístupňuje [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ladění v rozhraní. Veškerá komunikace je prostřednictvím modelu COM. Jestli je DE je zavedený v procesu, mimo proces nebo na jiném počítači, nemá vliv součást komunikace.  
   

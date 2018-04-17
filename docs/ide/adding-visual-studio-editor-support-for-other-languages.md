@@ -2,10 +2,7 @@
 title: Přidání podpory editoru Visual Studio pro jiné jazyky | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - syntax colorization
 - IntelliSense
@@ -15,19 +12,18 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-caps.latest.revision: ''
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology:
 - vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 885563b456ca27c319e8b1eafb1963e77d9d1cfa
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 8082a2d52929b8ec03d904bd365f15f143448037
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Přidání podpory editoru Visual Studio pro jiné jazyky
 Další informace o tom, jak editoru Visual Studio podporuje čtení a procházení jazyky jiný počítač a jak můžete přidat podporu editoru Visual Studio pro jiné jazyky.  
@@ -42,11 +38,11 @@ Další informace o tom, jak editoru Visual Studio podporuje čtení a procháze
 |||||||  
 |-|-|-|-|-|-|  
 |A. bat|F#|Java|Markdownu|Rzivosti|Visual Basic|  
-|Clojure|Přejděte|JavaDoc|Objective-C|ShaderLab|C#|  
+|Clojure|Přejděte|JavaDoc|Jazyka Objective-C|ShaderLab|C#|  
 |CMake|Groovy|FORMÁT JSON|Perl|ShellScript|Visual C++|  
 |CoffeeScript|HTML|MENŠÍ|Python|SQL|VBNet|  
 |CSS|INI|LUA|R|Kód SWIFT|XML|  
-|Docker|Jade|Make|Ruby|TypeScript|YAML|  
+|Docker|Jade|Ujistěte se|Ruby|TypeScript|YAML|  
   
  Kromě zabarvení syntaxe a dokončování basic, Visual Studio má taky funkci [přejít na](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Tato funkce umožňuje rychle vyhledat soubory kódu, cesty k souborům a kód symboly. Visual Studio poskytuje přejít na podporu pro následující jazyky.  
   
@@ -83,7 +79,7 @@ Všechny tyto typy souborů mají funkce popsané dříve i když podpora pro da
 |*\Syntaxes*|Gramatika složka. Obsahuje gramatiky *.json* soubory pro daný jazyk, jako například *Matlab.json*.|  
 |*\Snippets*|Fragmenty kódu složka. Obsahuje fragmenty kódu pro jazyk.|  
   
- V systému Windows *% userprofile %* přeloží cestu: *c:\Users\\*\<uživatelské jméno >*.* Pokud v systému neexistuje složky rozšíření, musíte se k jeho vytvoření. Pokud daná složka již existuje, bude ho skrytá.  
+ V systému Windows *% userprofile %* přeloží cestu: *c:\Users\\\<uživatelské jméno >*. Pokud v systému neexistuje složky rozšíření, musíte se k jeho vytvoření. Pokud daná složka již existuje, bude ho skrytá.  
   
  Podrobnosti o tom, jak vytvořit TextMate gramatika najdete v tématu [TextMate – Úvod do gramatika jazyka: vložené tom, jak přidat zvýraznění syntaxe zdrojového kódu ve formátu HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) a [poznámky o tom, jak vytvořit gramatika jazyka a vlastní Motiv pro sady Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).  
   

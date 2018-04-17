@@ -1,7 +1,7 @@
 ---
 title: Kódování nastavení konvence pro EditorConfig v sadě Visual Studio .NET | Microsoft Docs
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - formatting conventions [EditorConfig]
 author: kuhlenh
 ms.author: kaseyu
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e69d7e291d1b13a5205aa4798c78c6a4e337db50
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: b313271e29bba660af1aa48654bfdfefb81e39f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Kódování nastavení konvence pro EditorConfig rozhraní .NET
 
@@ -62,47 +62,47 @@ V následujícím seznamu jsou povolená jazyk pravidla konvence:
 
 - Nastavení stylu kódu rozhraní .NET
     - ["This." a kvalifikátory "mě."](#this_and_me)
-        - dotnet\_style\_qualification\_for_field
+        - DotNet\_styl\_kvalifikace\_for_field
         - dotnet\_style\_qualification\_for_property
         - DotNet\_styl\_kvalifikace\_for_method
-        - dotnet\_style\_qualification\_for_event
+        - DotNet\_styl\_kvalifikace\_for_event
     - [Klíčová slova jazyka namísto názvů typu framework pro odkazy na typ](#language_keywords)
-        - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
-        - dotnet\_style\_predefined\_type\_for\_member_access
+        - DotNet\_styl\_předdefinované\_typ\_pro\_místní hodnoty –\_parameters_members
+        - DotNet\_styl\_předdefinované\_typ\_pro\_member_access
     - [Předvolby – modifikátor](#normalize_modifiers)
-        - dotnet\_style\_require\_accessibility_modifiers
+        - DotNet\_styl\_vyžadují\_accessibility_modifiers
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
     - [Předvolby úrovni výrazu](#expression_level)
-        - dotnet\_style\_object_initializer
+        - DotNet\_styl\_object_initializer
         - DotNet\_styl\_collection_initializer
-        - dotnet\_style\_explicit\_tuple_names
-        - dotnet\_prefer\_inferred\_tuple_names
-        - dotnet\_prefer\_inferred\_anonymous\_type\_member_names
+        - DotNet\_styl\_explicitní\_tuple_names
+        - DotNet\_přednost\_odvodit\_tuple_names
+        - DotNet\_přednost\_odvodit\_anonymní\_typ\_member_names
     - ["Null" Kontrola předvolby](#null_checking)
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
 - Nastavení stylu kódu C#
     - [Implicitní a explicitní typy](#var)
         - CSharp\_styl\_var\_pro\_vytvořené\_in_types
-        - csharp\_style\_var\_when\_type\_is_apparent
+        - CSharp\_styl\_var\_při\_typ\_is_apparent
         - csharp\_style\_var_elsewhere
     - [Členové tvoření výrazy](#expression_bodied_members)
-        - csharp\_style\_expression\_bodied_methods
+        - CSharp\_styl\_výraz\_bodied_methods
         - csharp\_style\_expression\_bodied_constructors
         - csharp\_style\_expression\_bodied_operators
         - csharp\_style\_expression\_bodied_properties
         - csharp\_style\_expression\_bodied_indexers
         - csharp\_style\_expression\_bodied_accessors
     - [Shoda vzoru](#pattern_matching)
-        - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
-        - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
+        - CSharp\_styl\_vzor\_odpovídající\_přes\_je\_s\_cast_check
+        - CSharp\_styl\_vzor\_odpovídající\_přes\_jako\_s\_null_check
     - [Vložená deklarace proměnných](#inlined_variable_declarations)
-        - csharp\_style\_inlined\_variable_declaration
+        - CSharp\_styl\_vložená\_variable_declaration
     - [Předvolby úrovni výrazu](#expression_level_csharp)
         - csharp\_prefer\_simple\_default_expression
-        - csharp\_style\_deconstructed\_variable_declaration
-        - csharp\_style\_pattern\_local\_over\_anonymous_function
+        - CSharp\_styl\_deconstructed\_variable_declaration
+        - CSharp\_styl\_vzor\_místní\_přes\_anonymous_function
     - ["Null" Kontrola předvolby](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
@@ -113,7 +113,7 @@ V následujícím seznamu jsou povolená jazyk pravidla konvence:
 
 Pravidla stylu v této části platí pro obě C# a Visual Basic. Pokud chcete zjistit, příklady kódu v preferovaný programovací jazyk, vyberte v rozevíracím seznamu **jazyk** nabídce v pravém horním rohu okna prohlížeče.
 
-#### <a name="this_and_me">"This." a kvalifikátory "mě."</a>
+#### <a name="this_and_me"></a>"This." a "Me." kvalifikátory.
 
 Toto pravidlo stylu (pravidel ID IDE0003 a IDE0009) můžete použít pro pole, vlastnosti, metody nebo události. Hodnota **true** znamená přednost kódu symbol, který má být uvedena `this.` v jazyce C# nebo `Me.` v jazyce Visual Basic. Hodnota **false** znamená přednost code element _není_ k být uvedena `this.` nebo `Me.`.
 
@@ -126,7 +126,7 @@ Následující tabulka uvádí názvy pravidel, použít programovací jazyky a 
 | dotnet_style_qualification_for_method | C# a Visual Basic | FALSE: žádné |
 | dotnet_style_qualification_for_event | C# a Visual Basic | FALSE: žádné |
 
-**dotnet\_style\_qualification\_for_field**
+**DotNet\_styl\_kvalifikace\_for_field**
 
 - Když je toto pravidlo nastavená na **true**, raději polí, která mají být uvedena `this.` v jazyce C# nebo `Me.` v jazyce Visual Basic.
 - Když je toto pravidlo nastavená na **false**, raději pole _není_ k být uvedena `this.` nebo `Me.`.
@@ -195,7 +195,7 @@ Me.Display()
 Display()
 ```
 
-**dotnet\_style\_qualification\_for_event**
+**DotNet\_styl\_kvalifikace\_for_event**
 
 - Když je toto pravidlo nastavená na **true**, raději události, které mají být uvedena `this.` v jazyce C# nebo `Me.` v jazyce Visual Basic.
 - Když je toto pravidlo nastavená na **false**, raději události _není_ k být uvedena `this.` nebo `Me.`.
@@ -218,7 +218,7 @@ AddHandler Me.Elapsed, AddressOf Handler
 AddHandler Elapsed, AddressOf Handler
 ```
 
-Tato pravidla může zobrazit v souboru .editorconfig takto:
+Tato pravidla mohou být zobrazeny v *.editorconfig* následujícím způsobem:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -229,18 +229,18 @@ dotnet_style_qualification_for_method = false:suggestion
 dotnet_style_qualification_for_event = false:suggestion
 ```
 
-#### <a name="language_keywords">Klíčová slova jazyka namísto názvů typu framework pro odkazy na typ</a>
+#### <a name="language_keywords"></a>Klíčová slova jazyka namísto názvů typu framework pro odkazy na typ
 
 Lokální proměnné, parametry metody a členy třídy, nebo jako samostatné pravidlo na typ člen přístup výrazy, může být použito toto pravidlo stylu. Hodnota **true** znamená přednost klíčové slovo jazyka (například `int` nebo `Integer`) místo názvu typu (například `Int32`) pro typy, které mají klíčové slovo představující je. Hodnota **false** znamená přednost název typu místo klíčové slovo jazyka.
 
 Následující tabulka uvádí názvy pravidel, ID pravidla, použít programovací jazyky a výchozí hodnoty:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
 | dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 a IDE0014 | C# a Visual Basic | hodnotu true: žádné |
 | dotnet_style_predefined_type_for_member_access | IDE0013 a IDE0015 | C# a Visual Basic | hodnotu true: žádné |
 
-**dotnet\_style\_predefined\_type\_for\_locals\_parameters_members**
+**DotNet\_styl\_předdefinované\_typ\_pro\_místní hodnoty –\_parameters_members**
 
 - Když je toto pravidlo nastavená na **true**, raději klíčové slovo jazyka pro místní proměnné, parametry metody a členy, místo název typu pro typy, které mají klíčové slovo je zastupovat třídy.
 - Když je toto pravidlo nastavená na **false**, raději název typu pro místní proměnné, parametry metody a členy, místo klíčové slovo jazyka třídy.
@@ -263,7 +263,7 @@ Private _member As Integer
 Private _member As Int32
 ```
 
-**dotnet\_style\_predefined\_type\_for\_member_access**
+**DotNet\_styl\_předdefinované\_typ\_pro\_member_access**
 
 - Když je toto pravidlo nastavená na **true**, raději klíčové slovo jazyka pro člen přístup výrazy, místo název typu pro typy, které mají klíčové slovo představující je.
 - Když je toto pravidlo nastavená na **false**, raději název typu pro člen přístup výrazy, místo klíčové slovo jazyka.
@@ -286,7 +286,7 @@ Dim local = Integer.MaxValue
 Dim local = Int32.MaxValue
 ```
 
-Tato pravidla může zobrazit v souboru .editorconfig takto:
+Tato pravidla mohou být zobrazeny v *.editorconfig* následujícím způsobem:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -295,19 +295,19 @@ dotnet_style_predefined_type_for_locals_parameters_members = true:suggestion
 dotnet_style_predefined_type_for_member_access = true:suggestion
 ```
 
-#### <a name="normalize_modifiers">Předvolby – modifikátor</a>
+#### <a name="normalize_modifiers"></a>Předvolby – modifikátor
 
 Pravidla stylu v této části problém modifikátor předvolby včetně nutnosti modifikátory dostupnosti a určení požadované modifikátor pořadí řazení.
 
 Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programovacích jazyků, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | dotnet_style_require_accessibility_modifiers | IDE0040 | C# a Visual Basic | for_non_interface_members:none | 15.5 |
 | csharp_preferred_modifier_order | IDE0036 | C# | veřejné, privátní, chráněné, interní, statické, extern, nové, virtuální, abstraktní a uzavřené, přepsání, jen pro čtení, unsafe, volatile, asynchronní: žádné | 15.5 |
 | visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial, výchozí, privátní, chráněný, veřejné, přítele, NotOverridable, přepisovatelné, MustOverride, přetížení, přepsání, MustInherit, NotInheritable, statické, sdílené, stínů, jen pro čtení, WriteOnly, dimenze, Const, WithEvents, rozšíření, zužující, vlastní, Asynchronní: žádné | 15.5 |
 
-**dotnet\_style\_require\_accessibility_modifiers**
+**DotNet\_styl\_vyžadují\_accessibility_modifiers**
 
 Toto pravidlo nepřijímá **true** nebo **false** hodnoty; místo toho přijímá hodnotu z v následující tabulce:
 
@@ -363,7 +363,7 @@ Public Class MyClass
 End Class
 ```
 
-Tato pravidla může zobrazit v souboru .editorconfig takto:
+Tato pravidla mohou být zobrazeny v *.editorconfig* následujícím způsobem:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -379,21 +379,21 @@ csharp_preferred_modifier_order = public,private,protected,internal,static,exter
 visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
 ```
 
-#### <a name="expression_level">Předvolby úrovni výrazu</a>
+#### <a name="expression_level"></a>Předvolby úrovni výrazu
 
 Styl pravidla v této části problém výraz úrovni předvolby, včetně použití inicializátory objektů, Inicializátory kolekcí, názvy explicitní nebo vyvozen řazené kolekce členů a anonymní typy odvodit.
 
 Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programovacích jazyků, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | --------- | ------- | -------------------- | ----------------------| ---- |
 | dotnet_style_object_initializer | IDE0017 | C# a Visual Basic | hodnotu true: návrh | První verze |
 | dotnet_style_collection_initializer | IDE0028 | C# a Visual Basic | hodnotu true: návrh | První verze |
 | dotnet_style_explicit_tuple_names | IDE0033 | C# 7.0 + a Visual Basic 15 + | hodnotu true: návrh | První verze |
-| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + a Visual Basic 15 + | hodnotu true: návrh | 15.6 |
-| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# a Visual Basic | hodnotu true: návrh | 15.6 |
+| dotnet_style_prefer_inferred_tuple_names | IDE0037 | C# 7.1 + a Visual Basic 15 + | hodnotu true: návrh | 15,6 operací |
+| dotnet_style_prefer_inferred_anonymous_type_member_names | IDE0037 | C# a Visual Basic | hodnotu true: návrh | 15,6 operací |
 
-**dotnet\_style\_object_initializer**
+**DotNet\_styl\_object_initializer**
 
 - Když je toto pravidlo nastavená na **true**, raději objekty, které se inicializovat pomocí inicializátory objektů, pokud je to možné.
 - Když je toto pravidlo nastavená na **false**, raději objekty, které se *není* být inicializována pomocí inicializátory objektů.
@@ -418,7 +418,7 @@ Dim c = New Customer()
 c.Age = 21
 ```
 
-**dotnet\_style\_collection_initializer**
+**DotNet\_styl\_collection_initializer**
 
 - Když je toto pravidlo nastavená na **true**, raději kolekcí, aby bylo možné inicializována pomocí Inicializátory kolekcí, pokud je to možné.
 - Když je toto pravidlo nastavená na **false**, raději kolekce a *není* být inicializována pomocí Inicializátory kolekcí.
@@ -447,7 +447,7 @@ list.Add(2)
 list.Add(3)
 ```
 
-**dotnet\_style\_explicit\_tuple_names**
+**DotNet\_styl\_explicitní\_tuple_names**
 
 - Když je toto pravidlo nastavená na **true**, přednost ItemX vlastnosti názvy řazené kolekce členů.
 - Když je toto pravidlo nastavená na **false**, přednost ItemX vlastnosti názvy řazené kolekce členů.
@@ -474,7 +474,7 @@ Dim customer As (name As String, age As Integer) = GetCustomer()
 Dim name = customer.Item1
 ```
 
-**dotnet\_style\_prefer\_inferred\_tuple_names**
+**DotNet\_styl\_přednost\_odvodit\_tuple_names**
 
 - Když je toto pravidlo nastavená na **true**, raději názvy elementů odvozené řazené kolekce členů.
 - Když je toto pravidlo nastavená na **false**, raději názvy elementů explicitní řazené kolekce členů.
@@ -489,7 +489,7 @@ var tuple = (age, name);
 var tuple = (age: age, name: name);
 ```
 
-**dotnet\_style\_prefer\_inferred\_anonymous\_type\_member_names**
+**DotNet\_styl\_přednost\_odvodit\_anonymní\_typ\_member_names**
 
 - Když je toto pravidlo nastavená na **true**, raději názvy člen vyvozen anonymního typu.
 - Když je toto pravidlo nastavená na **false**, dáváte přednost explicitní anonymního typu názvy členů.
@@ -505,7 +505,7 @@ var anon = new { age = age, name = name };
 
 ```
 
-Tato pravidla může zobrazit v souboru .editorconfig takto:
+Tato pravidla mohou být zobrazeny v *.editorconfig* následujícím způsobem:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -517,13 +517,13 @@ dotnet_style_prefer_inferred_tuple_names = true:suggestion
 dotnet_style_prefer_inferred_anonymous_type_member_names = true:suggestion
 ```
 
-#### <a name="null_checking">Kontrola Null předvolby</a>
+#### <a name="null_checking"></a>Kontrola Null předvolby
 
 Pravidla stylu v této části se týkají předvolby kontrola hodnotu null.
 
 Následující tabulka uvádí názvy pravidel, pravidlo ID, použít programovacích jazyků, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | --------- | ------- | -------------------- | ----------------------| ---- |
 | dotnet_style_coalesce_expression | IDE0029 | C# a Visual Basic | hodnotu true: návrh | První verze |
 | dotnet_style_null_propagation | IDE0031 | C# 6.0 + a Visual Basic 14 + | hodnotu true: návrh | První verze |
@@ -578,7 +578,7 @@ Dim v = If(o Is Nothing, Nothing, o.ToString()) ' or
 Dim v = If(o IsNot Nothing, o.ToString(), Nothing)
 ```
 
-Tato pravidla může zobrazit v souboru .editorconfig takto:
+Tato pravidla mohou být zobrazeny v *.editorconfig* následujícím způsobem:
 
 ```EditorConfig
 # CSharp and Visual Basic code style settings:
@@ -591,19 +591,19 @@ dotnet_style_null_propagation = true:suggestion
 
 Pravidla stylu v této části jsou jenom pro C#.
 
-#### <a name="var">Implicitní a explicitní typy</a>
+#### <a name="var"></a>Implicitní a explicitní typy
 
 Pravidla stylu v této části (pravidel ID IDE0007 a IDE0008) se týkají použití [var](/dotnet/csharp/language-reference/keywords/var) – klíčové slovo versus explicitního typu v deklarace proměnné. Toto pravidlo můžete použít samostatně a vestavěné typy, když je typ zřejmá jinde.
 
 Následující tabulka uvádí názvy pravidel, použít programovací jazyky a výchozí hodnoty:
 
-| Název pravidla | Použitelné jazyky | Výchozí sady Visual Studio |
+| Název pravidla | Použitelné jazyky | Výchozí Visual Studio |
 | ----------- | -------------------- | ----------------------|
 | csharp_style_var_for_built_in_types | C# | hodnotu true: žádné |
 | csharp_style_var_when_type_is_apparent | C# | hodnotu true: žádné |
 | csharp_style_var_elsewhere | C# | hodnotu true: žádné |
 
-**csharp\_style\_var\_for\_built\_in_types**
+**CSharp\_styl\_var\_pro\_vytvořené\_in_types**
 
 - Když je toto pravidlo nastavená na **true**, raději `var` se používá k deklaraci proměnné pomocí předdefinovaného systémového typy, jako `int`.
 - Když je toto pravidlo nastavená na **false**, přednost explicitní typ přes `var` deklarovat proměnné pomocí předdefinovaného systémového typy, jako `int`.
@@ -648,7 +648,7 @@ var f = this.Init();
 bool f = this.Init();
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -658,13 +658,13 @@ csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = true:suggestion
 ```
 
-#### <a name="expression_bodied_members">Členové tvoření výrazy</a>
+#### <a name="expression_bodied_members"></a>Výraz vozidlo členy
 
 Pravidla stylu v této části se týkají použití [výraz vozidlo členy](/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members) při logiku se skládá z jednoho výrazu. Metody, konstruktory, operátory, vlastnosti, indexery a přístupových objektů může být použito toto pravidlo.
 
 Následující tabulka uvádí názvy pravidel, pravidlo ID, příslušné jazykové verze, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_style_expression_bodied_methods | IDE0022 | C# 6.0 + | FALSE: žádné | 15.3 |
 | csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0 + | FALSE: žádné | 15.3 |
@@ -795,7 +795,7 @@ public int Age { get => _age; set => _age = value; }
 public int Age { get { return _age; } set { _age = value; } }
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -808,18 +808,18 @@ csharp_style_expression_bodied_indexers = true:suggestion
 csharp_style_expression_bodied_accessors = true:suggestion
 ```
 
-#### <a name="pattern_matching">Shoda vzoru</a>
+#### <a name="pattern_matching"></a>Shoda vzoru
 
 Pravidla stylu v této části se týkají použití [porovnávání vzorů](/dotnet/csharp/pattern-matching) v jazyce C#.
 
 Následující tabulka uvádí názvy pravidel, pravidlo ID, příslušné jazykové verze a výchozí hodnoty:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
 | csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# 7.0 + | hodnotu true: návrh |
 | csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# 7.0 + | hodnotu true: návrh |
 
-**csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check**
+**CSharp\_styl\_vzor\_odpovídající\_přes\_je\_s\_cast_check**
 
 - Když je toto pravidlo nastavená na **true**, raději shoda vzoru místo `is` výrazy s typ přetypování.
 - Když je toto pravidlo nastavená na **false**, raději `is` výrazy s přetypování typu místo porovnávání vzorů.
@@ -850,7 +850,7 @@ var s = o as string;
 if (s != null) {...}
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -859,17 +859,17 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 ```
 
-#### <a name="inlined_variable_declarations">Vložená deklarace proměnných</a>
+#### <a name="inlined_variable_declarations"></a>Vložená deklarace proměnných
 
 Tento styl jestli pravidlo obavy `out` proměnné jsou deklarovány vložené nebo ne. Spuštění v C# 7, můžete [deklarovat proměnnou mimo v seznamu argumentů volání metody](/dotnet/csharp/language-reference/keywords/out-parameter-modifier#calling-a-method-with-an-out-argument), a nikoli v samostatných deklarace proměnné.
 
 Následující tabulka uvádí název pravidla, ID pravidla, příslušné jazykové verze a výchozí hodnoty:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio |
 | --------- | -------- | -------------------- | ----------------------|
 | csharp_style_inlined_variable_declaration | IDE0018 | C# 7.0 + | hodnotu true: návrh |
 
-**csharp\_style\_inlined\_variable_declaration**
+**CSharp\_styl\_vložená\_variable_declaration**
 
 - Když je toto pravidlo nastavená na **true**, raději `out` proměnné deklarovat vložené v seznamu argumentů volání metody, pokud je to možné.
 - Když je toto pravidlo nastavená na **false**, raději `out` proměnné deklarovat před volání metody.
@@ -885,7 +885,7 @@ int i;
 if (int.TryParse(value, out i) {...}
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -893,13 +893,13 @@ Příklad souboru .editorconfig:
 csharp_style_inlined_variable_declaration = true:suggestion
 ```
 
-#### <a name="expression_level_csharp">Předvolby úrovni výrazu</a>
+#### <a name="expression_level_csharp"></a>Předvolby úrovni výrazu
 
 Pravidla stylu v této části se týkají výraz úrovni předvolby, včetně použití [výchozí výrazy](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference), deconstructed proměnné a místní funkce přes anonymní funkce.
 
 Následující tabulka uvádí název pravidla, ID pravidla, příslušné jazykové verze, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1 + | hodnotu true: návrh | 15.3 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0 + | hodnotu true: návrh | 15.5 |
@@ -922,7 +922,7 @@ void DoWork(CancellationToken cancellationToken = default) { ... }
 void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
 ```
 
-**csharp\_style\_deconstructed\_variable_declaration**
+**CSharp\_styl\_deconstructed\_variable_declaration**
 
 - Když je toto pravidlo nastavená na **true**, raději deconstructed deklarace proměnné.
 - Když je toto pravidlo nastavená na **false**, není dáváte přednost deconstruction v deklarace proměnných.
@@ -945,7 +945,7 @@ Console.WriteLine($"{person.name} {person.age}");
 Console.WriteLine($"{point.x} {point.y}");
 ```
 
-**csharp\_style\_pattern\_local\_over\_anonymous_function**
+**CSharp\_styl\_vzor\_místní\_přes\_anonymous_function**
 
 - Když je toto pravidlo nastavená na **true**, raději lokální funkce přes anonymní funkce.
 - Když je toto pravidlo nastavená na **false**, raději anonymní funkce přes místní funkce.
@@ -967,7 +967,7 @@ fibonacci = (int n) =>
 };
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -977,13 +977,13 @@ csharp_style_deconstructed_variable_declaration = true:suggestion
 csharp_style_pattern_local_over_anonymous_function = true:suggestion
 ```
 
-#### <a name="null_checking_csharp">"Null" Kontrola předvolby</a>
+#### <a name="null_checking_csharp"></a>"Null" Kontrola předvolby
 
 Tyto potíže pravidla styl syntaxe kolem `null` kontrola, včetně použití `throw` výrazy nebo `throw` příkazy a zda chcete provést kontrolu hodnotu null nebo použít podmíněný operátor slučování (`?.`) při vyvolání [výrazu lambda](/dotnet/csharp/lambda-expressions).
 
 Následující tabulka uvádí názvy pravidel, pravidlo ID, příslušné jazykové verze a výchozí hodnoty:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio |
 | --------- | ------- | -------------------- | ----------------------|
 | csharp_style_throw_expression | IDE0016 | C# 7.0 + | hodnotu true: návrh |
 | csharp_style_conditional_delegate_call | IDE0041 | C# 6.0 + | hodnotu true: návrh |
@@ -1019,7 +1019,7 @@ func?.Invoke(args);
 if (func != null) { func(args); }
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1028,13 +1028,13 @@ csharp_style_throw_expression = true:suggestion
 csharp_style_conditional_delegate_call = false:suggestion
 ```
 
-#### <a name="code_block">Předvolby blok kódu</a>
+#### <a name="code_block"></a>Předvolby blok kódu
 
 Toto pravidlo stylu týká použití složené závorky `{ }` k obklopit bloky kódu.
 
 Následující tabulka uvádí název pravidla, ID pravidla, příslušné jazykové verze, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | ID pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_braces | IDE0011 | C# | hodnotu true: žádné | 15.3 |
 
@@ -1053,7 +1053,7 @@ if (test) { this.Display(); }
 if (test) this.Display();
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp code style settings:
@@ -1074,7 +1074,7 @@ V následujícím seznamu jsou k dispozici v sadě Visual Studio pravidla formá
 - Nastavení formátování rozhraní .NET
     - [Uspořádat Using](#usings)
         - dotnet_sort_system_directives_first
-- Formátování nastavení jazyka C#
+- Nastavení formátování C#
     - [Možnosti pro nový řádek](#newline)
         - csharp_new_line_before_open_brace
         - csharp_new_line_before_else
@@ -1101,13 +1101,13 @@ V následujícím seznamu jsou k dispozici v sadě Visual Studio pravidla formá
 
 Pravidla formátování v této části se vztahují na C# a Visual Basic.
 
-#### <a name="usings">Uspořádat Using</a>
+#### <a name="usings"></a>Uspořádat Using
 
 Toto pravidlo formátování týká umístění System.* pomocí direktiv s ohledem na jiné pomocí direktivy.
 
 Následující tabulka uvádí název pravidla, použitelné jazyky, výchozí hodnota a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | dotnet_sort_system_directives_first |  C# a Visual Basic | true | 15.3  |
 
@@ -1130,7 +1130,7 @@ using Octokit;
 using System.Threading.Tasks;
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # .NET formatting settings:
@@ -1142,13 +1142,13 @@ dotnet_sort_system_directives_first = true
 
 Pravidla formátování v této části se vztahují pouze na kód C#.
 
-#### <a name="newline">Možnosti pro nový řádek</a>
+#### <a name="newline"></a>Možnosti pro nový řádek
 
 Tato pravidla formátování týkají použití nové řádky k formátování kódu.
 
 V následující tabulce jsou uvedeny "nový řádek" názvy pravidel, použitelné jazyky, výchozí hodnoty a nejprve podporovaná verze sady Visual Studio:
 
-| Název pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_new_line_before_open_brace |  C# | všechny | 15.3  |
 | csharp_new_line_before_else |  C# | true | 15.3  |
@@ -1327,7 +1327,7 @@ var q = from a in e from b in e
         select a * b;
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1341,13 +1341,13 @@ csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 ```
 
-#### <a name="indent">Možnosti odsazení</a>
+#### <a name="indent"></a>Možnosti odsazení
 
 Tato pravidla formátování týkají použití odsazení formát kódu.
 
 Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_indent_case_contents |  C# | true | 15.3  |
 | csharp_indent_switch_labels |  C# | true | 15.3  |
@@ -1476,7 +1476,7 @@ class C
 }
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1486,13 +1486,13 @@ csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 ```
 
-#### <a name="spacing">Možnosti mezery</a>
+#### <a name="spacing"></a>Možnosti mezery
 
 Tato pravidla formátování týkají znaky místa k formátování kódu.
 
 Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_space_after_cast |  C# | false | 15.3  |
 | csharp_space_after_keywords_in_control_flow_statements |  C# | true | 15.3  |
@@ -1585,7 +1585,7 @@ var z = ( x * y ) - ( ( y - x ) * 3 );
 int y = ( int )x;
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp formatting settings:
@@ -1597,13 +1597,13 @@ csharp_space_between_method_call_parameter_list_parentheses = true
 csharp_space_between_parentheses = control_flow_statements, type_casts
 ```
 
-#### <a name="wrapping">Možnosti zabalení</a>
+#### <a name="wrapping"></a>Možnosti zabalení
 
 Tato pravidla formátování týkají použití jedné řádky versus samostatné řádky pro příkazy a bloky kódu.
 
 Následující tabulka uvádí názvy pravidel, použitelné jazyky, výchozí hodnoty a první podporovanou verzi sady Visual Studio:
 
-| Název pravidla | Použitelné jazyky | Výchozí sady Visual Studio | Visual Studio 2017 verze |
+| Název pravidla | Použitelné jazyky | Výchozí Visual Studio | Visual Studio 2017 verze |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_preserve_single_line_statements |  C# | true | 15.3  |
 | csharp_preserve_single_line_blocks |  C# | true | 15.3  |
@@ -1642,7 +1642,7 @@ public int MyProperty
 }
 ```
 
-Příklad souboru .editorconfig:
+Příklad *.editorconfig* souboru:
 
 ```EditorConfig
 # CSharp formatting settings:

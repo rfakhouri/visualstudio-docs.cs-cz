@@ -1,23 +1,21 @@
 ---
 title: Essentials UX pro sadu Visual Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f9d04da421b3b59609269b4f91a487d22adc80e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 52081c5a7f88a39ab25cf868164bd0258dd37885
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Essentials UX pro sadu Visual Studio
 ## <a name="best-practices"></a>Doporučené postupy  
@@ -108,7 +106,7 @@ ms.lasthandoff: 12/22/2017
 Chcete-li přinutit uživatele ke čtení vysvětlující text před zavření uživatelského rozhraní je proti vzor v sadě Visual Studio. Odkazy správně navrženou, videa by měl zobrazí popisek s dalšími informacemi na hover a kliknutím na "&times;" by měl zavřete zprávu, bez nutnosti další interakce.
 
 
- ![Vysvětlující text anti & č. 45; vzor & č. 45; nesprávný](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Vzor nesprávné video propojení
+ ![Vysvětlující text anti&#45;vzor &#45; nesprávné](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Vzor nesprávné video propojení
   
 #### <a name="result"></a>Výsledek  
  Místo jednoduché tlačítko Zavřít (jedním kliknutím) a uživatel bude muset používat dvě klikne na tlačítko se jednoduše zavřít uživatelského rozhraní v každé místo, které zobrazí video odkazy.  
@@ -116,7 +114,7 @@ Chcete-li přinutit uživatele ke čtení vysvětlující text před zavření u
 #### <a name="alternatives"></a>Alternativy  
  Správné návrhu v tomto případě bude postupovat podle vzoru běžné aplikace Internet Explorer, Office a Visual Studio: při přechodu myší, uživatel uvidí popis popisek a jedním kliknutím skryje uživatelské rozhraní.  
   
- ![Vysvětlující text anti & č. 45; vzor & č. 45; správné](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "opravte vzor Explanatorytextanti")<br />Vzor správné video odkaz
+ ![Vysvětlující text anti&#45;vzor &#45; správné](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "opravte vzor Explanatorytextanti")<br />Vzor správné video odkaz
   
 ### <a name="using-command-bars-for-settings"></a>Použití pro nastavení panely příkazů  
  **Obrázek A** představuje tento vzor proti: vložení nastavení pod příkazového tlačítka, které se vztahují k více než jen příkazu. V této nákresu jsou příkazy kromě spustit ladění – jako zobrazení v prohlížeči, spustit bez ladění a Krokovat s vnořením –, bude respektovat nastavení vybrané.  

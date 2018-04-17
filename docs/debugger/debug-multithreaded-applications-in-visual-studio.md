@@ -1,13 +1,10 @@
 ---
-title: "Ladění vícevláknových aplikací v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Ladění vícevláknových aplikací v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 09/05/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.gputthreads
 dev_langs:
@@ -22,17 +19,16 @@ helpviewer_keywords:
 - multithreaded debugging
 - high-performance debugging
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b32134abff19965edac150ac5f69db25640ee08
-ms.sourcegitcommit: 9357209350167e1eb7e50b483e44893735d90589
+ms.openlocfilehash: 276263f870337031cabbe466711e0a125b42a51c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Ladění vícevláknových aplikací v sadě Visual Studio
 Vlákno je posloupnost pokyny, které operační systém přiděluje času procesoru. Každý proces, který běží v operačním systému se skládá z nejméně jedno vlákno. Procesy, které mají více než jedno vlákno se nazývají s více vlákny.  

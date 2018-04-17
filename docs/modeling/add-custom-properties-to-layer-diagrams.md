@@ -2,22 +2,20 @@
 title: Přidání vlastních vlastností do diagramů závislostí | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f05c5f5a16b0d44794bf6fdcc6990a206dec30f5
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: fbdf0587b6bba938ddc178842939c14c9079a2a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Přidání vlastních vlastností do diagramů závislostí
 Při psaní kódu rozšíření pro závislosti diagramy, můžete ukládat hodnoty s libovolný element v diagramu závislostí. Hodnoty se uchová po uložení a znovu otevřít diagram. Také může mít tyto vlastnosti se zobrazí v **vlastnosti** okna tak, aby správci zobrazit a upravit je. Například může umožní uživatelům zadat regulární výraz pro každou vrstvu a napsat kód pro ověřování k ověření, že názvy tříd v každé vrstvě shodují se vzorem zadaným uživatelem.  

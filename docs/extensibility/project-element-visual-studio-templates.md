@@ -1,37 +1,33 @@
 ---
-title: "Project – Element (šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Project – Element (šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Project
 helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fd8881d484f35a0183d83d1b540fc2249e9c4f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3ef09516237ad30a18f9790ddae40260d834af21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="project-element-visual-studio-templates"></a>Element projektu (šablony sady Visual Studio)
 Určuje soubory nebo adresáře, které chcete přidat do projektu.  
   
  \<VSTemplate >  
  \<TemplateContent >  
- \<Projekt >  
+ \<Project>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -71,13 +67,13 @@ Určuje soubory nebo adresáře, které chcete přidat do projektu.
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|Požadovaný element.|  
   
 ## <a name="remarks"></a>Poznámky  
- `Project`představuje volitelný podřízený prvek `TemplateContent`.  
+ `Project` představuje volitelný podřízený prvek `TemplateContent`.  
   
  `Project` Element se používá k zadejte projektu a proto je platná pouze v rámci šablon projektu.  
   
- `Project`může mít elementy [složky](../extensibility/folder-element-visual-studio-project-templates.md) podřízené elementy nebo [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) podřízených elementů, ale není kombinaci těchto dvou možností `Folder` a `ProjectItem` podřízené elementy.  
+ `Project` může mít elementy [složky](../extensibility/folder-element-visual-studio-project-templates.md) podřízené elementy nebo [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) podřízených elementů, ale není kombinaci těchto dvou možností `Folder` a `ProjectItem` podřízené elementy.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Název souboru projektu na základě zadaného uživatelem, v názvu automaticky přejmenuje **nový projekt** dialogové okno. Použití `TargetFileName` atribut, pokud chcete zadejte název souboru alternativní souborů projektu vytvořených pomocí šablony.  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Název souboru projektu na základě zadaného uživatelem, v názvu automaticky přejmenuje **nový projekt** dialogové okno. Použití `TargetFileName` atribut, pokud chcete zadejte název souboru alternativní souborů projektu vytvořených pomocí šablony.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ukazuje metadata pro šablona projektu pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplikace.  

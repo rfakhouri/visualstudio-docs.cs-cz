@@ -1,21 +1,19 @@
 ---
-title: "Generovat metody v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Generovat metody v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 29405c25e404d0183409fc00b7107888dba23541
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 492c61661ad72b1a2207ce06fef4266930da9ebd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="generate-a-method-in-visual-studio"></a>Generovat metody v sadě Visual Studio
 
@@ -50,7 +48,7 @@ Generování kódu platí pro:
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
      - Pozastavte ukazatel myši nad červenou vlnovkou a klikněte na ![Žárovek](media/bulb-cs.png) ikona, která se zobrazí.
-     - Klikněte ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
+     - Klikněte na ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
 
     ![Vytvoření náhledu – metoda](media/method-preview-cs.png)
 

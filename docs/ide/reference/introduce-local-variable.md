@@ -1,21 +1,19 @@
 ---
-title: "Zavést místní proměnné v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Zavést místní proměnné v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a100cd5dfef6dcb36f6ce845000db31d82173a2d
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: b7af958e923c6af7929b8e4a9309c210dbf8ced5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Zavést místní proměnné v sadě Visual Studio
 
@@ -49,7 +47,7 @@ Generování kódu platí pro:
      - Stiskněte klávesu **Ctrl**+**.** spuštění **rychlé akce a refaktoring** nabídky.
    - **Myš**
      - Klikněte pravým tlačítkem a vyberte **rychlé akce a refaktoring** nabídky.
-     - Klikněte ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
+     - Klikněte na ![Žárovek](media/bulb-cs.png) ikonu, která se zobrazí na levém okraji, pokud je text kurzor již na ose s červenou vlnovkou.
 
    ![Zavést místní náhled](media/local-preview-cs.png)
 

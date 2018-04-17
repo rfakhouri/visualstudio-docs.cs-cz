@@ -1,30 +1,28 @@
 ---
-title: "Soubory .NET pojmenování konvence pro EditorConfig | Microsoft Docs"
-ms.custom: 
+title: Soubory .NET pojmenování konvence pro EditorConfig | Microsoft Docs
+ms.custom: ''
 ms.date: 11/20/2017
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ca33a9dfa2eb4d0eb8250df2d99337ab4d550938
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 14b284c797add9545efdd291b06ce62b0b75cf03
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Zásady vytváření názvů .NET pro EditorConfig
 
-Zásady vytváření názvů se týkají pojmenování elementy kódu, jako jsou třídy, vlastnosti a metody. Například můžete zadat, že veřejné členy nutné velkými písmeny nebo asynchronní metody musí končit "Asynchronní". Tato pravidla můžete vynutit zadáním je [.editorconfig soubor](../ide/create-portable-custom-editor-options.md). Pojmenování porušení pravidel zobrazit buď v seznamu chyb nebo jako návrh pod názvem, v závislosti na závažnosti můžete zvolit pravidla. Není nutné pro sestavení projektu chcete-li zobrazit narušení.
+Zásady vytváření názvů se týkají pojmenování elementy kódu, jako jsou třídy, vlastnosti a metody. Například můžete zadat, že veřejné členy nutné velkými písmeny nebo asynchronní metody musí končit "Asynchronní". Tato pravidla můžete vynutit zadáním je [.editorconfig soubor](../ide/create-portable-custom-editor-options.md). Pojmenování porušení pravidel zobrazit buď v **seznam chyb** nebo jako návrh pod názvem, v závislosti na závažnosti můžete zvolit pravidla. Není nutné pro sestavení projektu chcete-li zobrazit narušení.
 
-Zásady vytváření názvů by měla být seřazena z specifické pro většinu nejmenší na konkrétní v souboru .editorconfig. Je první pravidlo došlo k, který lze použít pouze pravidlo, které je použito.
+Zásady vytváření názvů by měla být seřazena z specifické pro většinu nejmenší na konkrétní v *.editorconfig* souboru. Je první pravidlo došlo k, který lze použít pouze pravidlo, které je použito.
 
 Pro každé zásady vytváření názvů je nutné zadat symboly, které se vztahuje na, pojmenování styl a závažnost pro vynucení konvence, pomocí vlastností popsaných níže. Vlastnosti pořadí není důležité.
 
@@ -128,7 +126,7 @@ Povolené hodnoty pro tuto vlastnost jsou:
 
 - pascal_case
 - camel_case
-- first\_word_upper
+- první\_word_upper
 - všechny\_horní
 - all_lower
 
@@ -147,15 +145,15 @@ Závažnost | Efekt
 ------------ | -------------
 žádná nebo tichou | Když tento styl nedodržíte, nezobrazuje nic uživateli; automaticky generovaný kód však následuje tento styl.
 Návrh | Pokud se tento styl nedodržíte, zobrazit uživateli jako návrh, jako základní tečky na první dva znaky. V době kompilace nemá žádný vliv.
-upozornění | Při tomto stylu nedodržíte, zobrazovat upozornění kompilátoru v seznamu chyb.
-Chyba | Když tento styl nedodržíte, zobrazit chyba kompilátoru v seznamu chyb.
+upozornění | Při tomto stylu nedodržíte, zobrazovat upozornění kompilátoru v **seznam chyb**.
+Chyba | Když tento styl nedodržíte, zobrazit chyba kompilátoru v **seznam chyb**.
 
 > [!NOTE]
-> Nemáte k sestavení projektu chcete-li zobrazit názvy porušení pravidel. Zobrazí se jako upravovat kód, v seznamu chyb nebo jako návrh.
+> Nemáte k sestavení projektu chcete-li zobrazit názvy porušení pravidel. Zobrazují se jako kód upravíte, buď v **seznam chyb** nebo jako návrh.
 
 ## <a name="example"></a>Příklad
 
-Následující soubor .editorconfig obsahuje zásady vytváření názvů, který určuje, že veřejné vlastnosti, metody, pole, události a delegáti musí být velkými písmeny. Všimněte si, že tyto zásady vytváření názvů určuje více druhů symbol, který chcete použít pravidlo, pomocí oddělte hodnoty čárkami.
+Následující *.editorconfig* soubor obsahuje zásady vytváření názvů, který určuje, že veřejné vlastnosti, metody, pole, události a delegáti musí být velkými písmeny. Všimněte si, že tyto zásady vytváření názvů určuje více druhů symbol, který chcete použít pravidlo, pomocí oddělte hodnoty čárkami.
 
 ```EditorConfig
 # Public members must be capitalized (public_members_must_be_capitalized)
@@ -171,7 +169,7 @@ dotnet_naming_style.first_word_upper_case_style.capitalization = first_word_uppe
 dotnet_naming_rule.public_members_must_be_capitalized.severity = suggestion
 ```
 
-Následující snímek obrazovky ukazuje účinku zásad vytváření názvů v editoru. Dvě veřejné proměnné, které byly pojmenovány bez použití velkých písmen v první písmeno. Jedna je `const`, a jedna je `readonly`. Vzhledem k tomu, že pojmenování pravidlo se vztahuje pouze na *jen pro čtení* symboly pouze `readonly` proměnná ukazuje pojmenování návrhu pravidlo.
+Následující snímek obrazovky ukazuje účinku zásad vytváření názvů v editoru. Dvě veřejné proměnné, které byly pojmenovány bez použití velkých písmen v první písmeno. Jedna je `const`, a jedna je `readonly`. Vzhledem k tomu, že pojmenování pravidlo se vztahuje pouze na `readonly` symboly pouze `readonly` proměnná ukazuje pojmenování návrhu pravidlo.
 
 ![Pojmenování pravidlo návrhu](media/editorconfig-naming-rule-suggestion.png)
 
@@ -181,7 +179,7 @@ Nyní změníme závažnost porušení na `warning`:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Pokud zavřete a otevřete váš soubor kódu, místo zobrazení návrhu v části název porušení, zobrazí zelená vlnovkou a upozornění v seznamu chyb:
+Pokud zavřete a otevřete váš soubor kódu, místo zobrazení návrhu v části název porušení, zobrazí zelená vlnovkou a upozornění v **seznam chyb**:
 
 ![Pojmenování pravidlo upozornění](media/editorconfig-naming-rule-warning.png)
 

@@ -1,27 +1,24 @@
 ---
-title: Použití PyLint pro linting kód Python | Microsoft Docs
+title: Použití PyLint pro linting kód Python
 description: Jak používat PyLint v sadě Visual Studio Zkontrolujte problémy v kódu jazyka Python.
 ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5ef665ae866709aaa39d4b7856434b8fd6ea5af0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 8eec20736bbd6d39edaa2dfb8d9e6026690322bc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-pylint-to-check-python-code"></a>Použití PyLint ke kontrole kód Python
 

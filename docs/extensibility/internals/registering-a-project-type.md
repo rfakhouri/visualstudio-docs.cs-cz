@@ -1,27 +1,25 @@
 ---
 title: Registrace typu projektu | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-caps.latest.revision: "21"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: f60cf3fc8b4db7d33523e4583ab3da4f4596b1af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 8e6c91f2c92dd121cd135aef4291c7f7983206ff
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="registering-a-project-type"></a>Registrace typu projektu
 Když vytvoříte nový typ projektu, musíte vytvořit položky registru, které umožňují [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] rozpoznat a pracovat s typ vašeho projektu. Obvykle vytvoříte tyto položky registru pomocí souboru registru skript (.).  
@@ -85,7 +83,7 @@ Když vytvoříte nový typ projektu, musíte vytvořit položky registru, kter�
   
 |Název|Typ|Data|Popis|  
 |----------|----------|----------|-----------------|  
-|`@`(Výchozí)|REG_SZ|`FigPrj Project VSPackage`|Lokalizovatelný název tohoto zaregistrovat VSPackage (typ projektu).|  
+|`@` (Výchozí)|REG_SZ|`FigPrj Project VSPackage`|Lokalizovatelný název tohoto zaregistrovat VSPackage (typ projektu).|  
 |`InprocServer32`|REG_SZ|`%MODULE%`|Cesta typu projektu knihovny DLL. Prostředí IDE načte této knihovny DLL a předá CLSID VSPackage k `DllGetClassObject` získat <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> vytvořit <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objektu.|  
 |`CompanyName`|REG_SZ|`Microsoft`|Název společnosti, který vyvinul typ projektu.|  
 |`ProductName`|REG_SZ|`Figure Project Sample`|Název pro typ projektu.|  

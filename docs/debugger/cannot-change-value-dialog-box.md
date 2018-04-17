@@ -1,12 +1,9 @@
 ---
-title: "Nelze změnit hodnotu – dialogové | Microsoft Docs"
-ms.custom: 
+title: Nelze změnit hodnotu – dialogové | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
 ms.topic: reference
 f1_keywords:
 - vs.debug.variables.failededit
@@ -19,21 +16,20 @@ helpviewer_keywords:
 - Cannot Change Value dialog box
 - variables [debugger], editing
 ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6b5cc2c1a5317009225d8e86fd497dc4367787
-ms.sourcegitcommit: 9e6ff74da1afd8bd2f0e69387ce81f2a74619182
+ms.openlocfilehash: 40bcc1eb26ded43f092d89e62cd6f74b2f4dda73
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="cannot-change-value-dialog-box"></a>Dialogové okno Nelze změnit hodnotu
 ## <a name="error"></a>Chyba  
- `The value of this variable cannot be changed`&#124; `The name` *název* `does not exist in the current context` &#124; *různé další zprávy*  
+ `The value of this variable cannot be changed` &#124;`The name` *název* `does not exist in the current context` &#124; *různé další zprávy*  
   
  Při pokusu o změnu obsahu proměnné na neplatnou hodnotu v okně ladicí program (automobily, sledovat nebo místní hodnoty – windows) nebo v dialogovém okně QuickWatch, zobrazí se toto okno se zprávou. Například pokud se pokusíte nastavit hodnotu na celé číslo proměnnou na řetězec znaků, zobrazí se toto okno se zprávou.  
   
