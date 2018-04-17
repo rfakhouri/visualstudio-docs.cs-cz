@@ -2,7 +2,7 @@
 title: Použití automatizace uživatelského rozhraní k testování kódu v sadě Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
 - vs.codedUITest.recorder
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - coded UI test
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4424db170240714ad3a74c84107e7a794a9dad54
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 9235cf218ab5eed64140f4ae1dc6e4d54ea73e1b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Použití automatizace uživatelského rozhraní k testování kódu
 
@@ -120,7 +120,7 @@ Další informace o tom, které jsou podporovány platformy a konfigurace pomoc�
 
 7. Upravte podrobnosti akcí testů a kontrolní výrazy.
 
-     Open UIMap.uitest. Tento soubor se otevře v programových uživatelského rozhraní editoru testu, kde vám může upravit všechny posloupnost akcí, které jste si poznamenali, stejně jako upravit vaše kontrolní výrazy.
+     Otevřete UIMap.uitest. Tento soubor se otevře v programových uživatelského rozhraní editoru testu, kde vám může upravit všechny posloupnost akcí, které jste si poznamenali, stejně jako upravit vaše kontrolní výrazy.
 
      ![Programový Editor testu uživatelského rozhraní](../test/media/cuit_editor_edit.png "CUIT_Editor_edit")
 
@@ -220,7 +220,7 @@ Za určitých okolností konkrétní ovládací prvek, který se používá v pr
 
 Při provádění vaší programového testu uživatelského rozhraní, najeďte myší řízení. Stiskněte a podržte klávesu Ctrl, a stisknutím a podržením klávesy Shift a R na klávesnici. Uvolnění klíče. Pomocí Tvůrce programového testu UT se zaznamená událost hover myši.
 
-![CodedUI&#95;Hover](../test/media/codedui_hover.png "CodedUI_Hover")
+![CodedUI&#95;najeďte](../test/media/codedui_hover.png "CodedUI_Hover")
 
 Po vygenerování testu metoda, podobně jako v následujícím příkladu kódu budou přidány do souboru UIMap.Desinger.cs:
 

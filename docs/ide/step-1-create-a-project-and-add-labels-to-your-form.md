@@ -1,25 +1,21 @@
 ---
-title: "Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky | Microsoft Docs"
-ms.custom: 
+title: 'Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab50592e345a54853e9cfbd95d0b9bd1bc86d794
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 992541fe80067a6255ae0909edba0bf8f239c004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky
 Jako první kroky při vývoji tento kvízu s časovým limitem můžete vytvořit projekt a přidejte popisky, tlačítka a jiných ovládacích prvků na formuláři. Můžete také nastavit vlastnosti pro každý ovládací prvek, který přidáte. Projekt bude obsahovat formulář, ovládací prvky a (dále v tomto kurzu) kódu. Tlačítko spustí kvízu, popisky zobrazit kvízu s časovým limitem problémy, a jiných ovládacích prvků zobrazit kvízu s časovým limitem odpovědi a čas, který zbývá k dokončení kvízu.  
@@ -104,11 +100,11 @@ Velikost písma zobrazuje vlastnosti – okno
   
      Oddělovací čáry můžete místo nich a zarovnejte je.  
   
-11. Nastavte hodnotu druhý popisku **Text** vlastnost  **+**  (znaménko plus).  
+11. Nastavte hodnotu druhý popisku **Text** vlastnost **+** (znaménko plus).  
   
 12. Nastavte hodnotu třetí popisku **(název)** vlastnost **plusRightLabel**.  
   
-13. Nastavte hodnotu čtvrté popisku **Text** vlastnost  **=**  (rovná).  
+13. Nastavte hodnotu čtvrté popisku **Text** vlastnost **=** (rovná).  
   
 14. Přidat **NumericUpDown** z panelu nástrojů, nastavte jeho velikost písma **18**a nastavte šířku na **100**.  
   
@@ -133,7 +129,7 @@ První řádek matematického kvízu
   
      Oddělovací čáry můžete poskytnout dostatek vzdálenost mezi dva řádky.  
   
-3.  Změňte hodnotu **Text** vlastnosti pro druhý štítek, který chcete  **-**  (znaménka minus).  
+3.  Změňte hodnotu **Text** vlastnosti pro druhý štítek, který chcete **-** (znaménka minus).  
   
 4.  Název první popisek otazník **minusLeftLabel**.  
   

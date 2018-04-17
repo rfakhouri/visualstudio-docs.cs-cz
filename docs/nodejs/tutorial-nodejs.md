@@ -3,28 +3,24 @@ title: Vytvoření aplikace Node.js a Express - sady Visual Studio | Microsoft D
 description: V tomto kurzu vytvoříte aplikaci Node.js a Express v sadě Visual Studio
 ms.custom: ''
 ms.date: 03/13/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7d0774753178c9cb0dbcae1800da6b00ab02a0e
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 47bf06fabba9197029831382b6ad6e9068e7829c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a expresní aplikaci v sadě Visual Studio
-V tomto kurzu pro vývoj sady Visual Studio pomocí Node.js a Express vytvořit jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).  
+V tomto kurzu pro vývoj sady Visual Studio pomocí Node.js a Express vytvořit jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
 
 V tomto kurzu zjistíte, jak:
 > [!div class="checklist"]
@@ -51,13 +47,13 @@ V tomto kurzu zjistíte, jak:
 ## <a name="create-a-project"></a>Vytvoření projektu
 Nejdřív vytvoříte projekt Node.js webové aplikace.
 
-1. Open Visual Studio 2017.  
+1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .  
+1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
 
-1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**a potom zvolte **Node.js**. V prostředním podokně vyberte **základní Azure Node.js Express 4 aplikační**a potom zvolte **OK**.   
+1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**a potom zvolte **Node.js**. V prostředním podokně vyberte **základní Azure Node.js Express 4 aplikační**a potom zvolte **OK**.
 
-     Pokud nevidíte **základní Azure Node.js Express 4 aplikační** šablony projektu, je nutné nainstalovat **Node.js vývoj** zatížení první. 
+     Pokud nevidíte **základní Azure Node.js Express 4 aplikační** šablony projektu, je nutné nainstalovat **Node.js vývoj** zatížení první.
 
     Visual Studio vytvoří nové řešení a otevře projektu. *App.js* projektu soubor se otevře v editoru (levé podokno).
 
@@ -130,11 +126,11 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Po `data` řetězce, zadejte `: get` a IntelliSense si ukážeme `getData` funkce. Vyberte `getData`.
 
-    ![Použití prvku IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png) 
+    ![Použití prvku IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
 1. Odstraňte čárku (`,`) před `"data"` a zobrazí zvýraznění syntaxe zelená na výrazu. Podržte ukazatel nad zvýraznění syntaxe.
 
-    ![Chyba syntaxe zobrazení](../nodejs/media/tutorial-nodejs-syntax-checking.png) 
+    ![Chyba syntaxe zobrazení](../nodejs/media/tutorial-nodejs-syntax-checking.png)
 
     Poslední řádek této zprávy vás informuje, že překladač JavaScript čárkou (`,`).
 
@@ -152,15 +148,15 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
     `res.render('index', { title: 'Express', "data": getData() });`
 
-    Zarážky jsou nejvíce základní a základní funkci spolehlivé ladění. Zarážku Určuje, kde by měl Visual Studio pozastavit spuštěním kódu, můžete si prohlédněte hodnoty proměnných nebo chování paměti, nebo zda získávání větev kódu běží. 
+    Zarážky jsou nejvíce základní a základní funkci spolehlivé ladění. Zarážku Určuje, kde by měl Visual Studio pozastavit spuštěním kódu, můžete si prohlédněte hodnoty proměnných nebo chování paměti, nebo zda získávání větev kódu běží.
 
-    ![Nastavit zarážky](../nodejs/media/tutorial-nodejs-set-breakpoint.png) 
+    ![Nastavit zarážky](../nodejs/media/tutorial-nodejs-set-breakpoint.png)
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 
 1. Vyberte cíl ladění na panelu nástrojů ladění.
 
-    ![Vyberte cíl ladění](../nodejs/media/tutorial-nodejs-deploy-target.png) 
+    ![Vyberte cíl ladění](../nodejs/media/tutorial-nodejs-deploy-target.png)
 
 1. Stiskněte klávesu **F5** (**ladění** > **spustit ladění**) ke spuštění aplikace.
 
@@ -178,15 +174,15 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Klikněte na tlačítka pro zobrazení různých obrázků.
 
-    ![Aplikace spuštěná v prohlížeči](../nodejs/media/tutorial-nodejs-running-in-browser.png)  
+    ![Aplikace spuštěná v prohlížeči](../nodejs/media/tutorial-nodejs-running-in-browser.png)
 
-1. Zavřete webový prohlížeč.  
+1. Zavřete webový prohlížeč.
 
 ## <a name="optional-publish-to-azure-app-service"></a>(Volitelné) Publikování do služby Azure App Service
 
 1. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**.
 
-   ![Publikování do služby Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)  
+   ![Publikování do služby Azure App Service](../nodejs/media/tutorial-nodejs-publish-to-azure.png)
 
 1. Zvolte **služby Microsoft Azure App Service**.
 
@@ -198,11 +194,11 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
     Na úspěšné nasazení aplikace otevře v prohlížeči spuštění v Azure App Service. Klikněte na tlačítko Zobrazit bitovou kopii.
 
-   ![Aplikaci spuštěnou ve službě Azure App Service](../nodejs/media/tutorial-nodejs-running-in-azure.png)  
+   ![Aplikaci spuštěnou ve službě Azure App Service](../nodejs/media/tutorial-nodejs-running-in-azure.png)
 
 Blahopřejeme k dokončení tohoto kurzu!
 
-## <a name="next-steps"></a>Další kroky 
+## <a name="next-steps"></a>Další kroky
 
 V tomto kurzu jste zjistili, jak pro vytvoření a spuštění aplikace Node.js pomocí expresního a stiskněte tlačítko zarážku používání ladicího programu.
 

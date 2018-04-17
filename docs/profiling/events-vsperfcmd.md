@@ -1,23 +1,21 @@
 ---
-title: "Události (VSPerfCmd) | Microsoft Docs"
-ms.custom: 
+title: Události (VSPerfCmd) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
-caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3cfbeaa9c11bdb24b561e0dfdc10e8ab2a10053a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c3f7201c65a6ac3b5c7b58c547898589ffdcba9d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="events-vsperfcmd"></a>Události (VSPerfCmd)
 VSPerfCmd.exe **události** možnost řídí protokolování trasování událostí pro Windows (ETW). Data trasování událostí pro Windows je uložena na soubor .etl, která je oddělená od datový soubor profileru. Data lze zobrazit v sestavě pomocí [vsperfreport –](../profiling/vsperfreport.md) /summary:etw příkaz.  
@@ -31,7 +29,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 ```  
   
 #### <a name="parameters"></a>Parametry  
- **Na**&#124; **Vypnout**  
+ **Na**&#124;**vypnuto**  
  Spuštění nebo zastavení shromažďování dat událostí.  
   
  `Guid`  
@@ -44,7 +42,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  "0 x"-předponu hexadecimální příznaky hodnotu, která je definována zprostředkovatelem událostí.  
   
  `Level`  
- Určuje množství dat shromažďovaných. `Level`Definuje zprostředkovatele událostí.  
+ Určuje množství dat shromažďovaných. `Level` Definuje zprostředkovatele událostí.  
   
  **Události** možnost jste srozuměni s tím následující jádra klíčová slova jako názvy zprostředkovatele:  
   
@@ -57,7 +55,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Obrázek**  
  Bitovou kopii zatížení a uvolnit události  
   
- **Disk**  
+ **disk**  
  Vstupně-výstupní diskové události  
   
  **Soubor**  

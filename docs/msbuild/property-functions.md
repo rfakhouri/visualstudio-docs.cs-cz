@@ -1,26 +1,22 @@
 ---
-title: "Funkce vlastností | Microsoft Docs"
-ms.custom: 
+title: Funkce vlastností | Microsoft Docs
+ms.custom: ''
 ms.date: 02/21/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3bd5d35e3d996a1507a5ce14d40fbb59c24cbdb
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: b02591886ae1d140efb2239361ce13ee43727df7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="property-functions"></a>Funkce vlastností
 V rozhraní .NET Framework verze 4 a 4.5 funkce vlastností slouží k vyhodnocení nástroje MSBuild skripty. Funkce vlastností lze použít bez ohledu na vlastnosti se zobrazí. Na rozdíl od úloh funkce vlastností bylo možné použít mimo cíle a vyhodnocují před spuštěním jakékoli cíl.  
@@ -238,7 +234,7 @@ $([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
 
-##  <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove  
+##  <a name="msbuild-getpathoffileabove"></a>GetPathOfFileAbove nástroje MSBuild  
  `GetPathOfFileAbove` Vlastnost funkce v nástroji MSBuild vrací cestu k souboru, všechny předcházející. Je funkčně odpovídá volání
 
  ```<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />```

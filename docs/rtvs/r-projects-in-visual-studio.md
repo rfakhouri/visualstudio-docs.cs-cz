@@ -1,26 +1,23 @@
 ---
-title: Projekty v R Tools pro Visual Studio | Microsoft Docs
-description: "Postup vytvoření správce R projekty v sadě Visual Studio, včetně vlastnosti, příkazy projektu a šablony."
-ms.custom: 
+title: Projekty R
+description: Postup vytvoření správce R projekty v sadě Visual Studio, včetně vlastnosti, příkazy projektu a šablony.
+ms.custom: ''
 ms.date: 06/29/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 230e3a1d9241a26bd39cda6cb5f88a9ed180d6e2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 1c24677ca645484141973cea67bdb29aa11880be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-r-projects-in-visual-studio"></a>Vytváření projektů R v sadě Visual Studio
 
@@ -31,7 +28,7 @@ Projekty jsou vždy spravované v rámci sady Visual Studio *řešení*, která 
 ## <a name="creating-a-new-r-project"></a>Vytvoření nového projektu R
 
 1. Spuštění sady Visual Studio.
-1. Zvolte **soubor > Nový > projekt...** (Ctrl+Shift+N)
+1. Zvolte **soubor > Nový > projekt...** (Ctrl + Shift + N)
 1. Vyberte z v části "R projekt" **šablony > R**, název a umístění poskytnout projekt a vyberte **OK**:
 
     ![Dialogové okno Nový projekt pro R v sadě Visual Studio (RTVS v VS2017)](media/getting-started-01-new-project.png)

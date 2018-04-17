@@ -1,26 +1,23 @@
 ---
-title: Výběr a instalace překladače Python | Microsoft Docs
+title: Výběr a instalace překladače Python
 description: Úplný seznam překladače Python, které jsou podporovány v sadě Visual Studio s stručné pokyny k vyhledávání jejich instalační programy.
 ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b8d1bf4f0ac6c66222f86e73b7c18cfdceb3354
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: f60d8cde8e729745bb8efd4a5df9f41ade15752a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="installing-python-interpreters"></a>Instalace překladače Python
 

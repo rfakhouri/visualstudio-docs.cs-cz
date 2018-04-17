@@ -1,13 +1,10 @@
 ---
-title: "Postupy: vytvoření přidružení mezi typy (návrhář tříd) | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytvoření přidružení mezi typy (návrhář tříd) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
 helpviewer_keywords:
@@ -17,17 +14,16 @@ helpviewer_keywords:
 - associations, types
 - association lines
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa4c994ffadf04c3205762d0018d18ad14ffd6c5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 4d81e2f3bb671f5c88b08bf1cb26db42a6c4383a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Postupy: vytvoření přidružení mezi typy (návrhář tříd)
 Asociační čáry v Návrháři tříd zobrazují vztah tříd v diagramu. Asociační čára představuje třídu, která je typem vlastnosti nebo pole jiné třídy ve vašem projektu. Asociační čáry obecně slouží ke znázornění nejdůležitějších vztahů mezi třídami v projektu.  
@@ -49,7 +45,7 @@ Ačkoli můžete zobrazit všechna pole a vlastnosti jako přidružení, je vhod
   
 -   Na ploše diagramu klikněte na popisek asociační linky a upravte jej.  
   
- \-nebo –  
+ \- nebo –  
   
 1.  Klikněte na tvar, který obsahuje vlastnost zobrazenou jako přidružení.  
   

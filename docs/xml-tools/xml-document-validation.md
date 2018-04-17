@@ -1,23 +1,21 @@
 ---
-title: "Ověření XML dokumentu | Microsoft Docs"
-ms.custom: 
+title: Ověření XML dokumentu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c4be3c2f5428b7b2c246c1649a73ae8584ffe28e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8e226590b31a7b6b96755199bdb93cd95d438f08
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="xml-document-validation"></a>Ověření dokumentu XML
 Editor souborů XML kontroluje syntaxe XML 1.0 a také provádí ověřování dat během psaní. Editor můžete ověřit pomocí definice typu dokumentu (DTD) nebo schéma. Červené podtržení vlnovkou zvýrazněte všechny chyby ve správném formátu XML 1.0. Modré podtržení vlnovkami Zobrazit sémantické chyby podle ověření DTD nebo schéma. Jednotlivé chyby má související záznam v seznamu chyb. Můžete také zobrazit chybová zpráva ponecháte myši nad vlnovkou.  

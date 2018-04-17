@@ -1,12 +1,10 @@
 ---
-title: "Postupy: podepisování řešení pro systém Office | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: podepisování řešení pro systém Office | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - signing manifests [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2883f75c6ca75e1875621f9c6779db09722d6945
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 31b5e1fc3c78aecf518af0941a4a2dd0ab7e57c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-sign-office-solutions"></a>Postupy: Podepisování řešení pro systém Office
   Pokud podepíšete řešení, můžete udělit vztah důvěryhodnosti k řešení pomocí certifikátu jako důkaz. Můžete použít stejný certifikát pro více řešení a všechna řešení budou důvěryhodné s žádné další bezpečnostní aktualizace zásad.  
@@ -38,7 +37,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>K podepisování řešení Office s použitím certifikátu  
   
-1.  Na **projektu** nabídky, klikněte na tlačítko *název řešení SolutionName***vlastnosti**.  
+1.  Na **projektu** nabídky, klikněte na tlačítko * název řešení SolutionName ***vlastnosti**.  
   
 2.  Klikněte **podpisování** kartě.  
   

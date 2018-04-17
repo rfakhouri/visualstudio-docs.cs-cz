@@ -1,5 +1,5 @@
 ---
-title: "Odpovídajícím způsobem Návrhář aktivity | Microsoft Docs"
+title: Odpovídajícím způsobem Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aee48f5fa8b8452b5e80bd53002fe3c6f7f2fe7
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: ef289304338ea64a72c073711a287612d39bd1a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compensate-activity-designer"></a>Odpovídajícím způsobem Návrhář aktivity
 **Compensate** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Compensate> aktivity.
@@ -35,7 +35,7 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje nepovinné popisný název <xref:System.Activities.Statements.Compensate> aktivity. Výchozí hodnota je Compensate.|
-|<xref:System.Activities.Statements.Compensate.Target%2A>|True|Určuje, <xref:System.Activities.InArgument%601> obsahující <xref:System.Activities.Statements.CompensationToken> pro tento <xref:System.Activities.Statements.Compensate> aktivity.|
+|<xref:System.Activities.Statements.Compensate.Target%2A>|Hodnota TRUE|Určuje, <xref:System.Activities.InArgument%601> obsahující <xref:System.Activities.Statements.CompensationToken> pro tento <xref:System.Activities.Statements.Compensate> aktivity.|
 
 ## <a name="see-also"></a>Viz také
 

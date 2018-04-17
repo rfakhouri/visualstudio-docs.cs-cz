@@ -1,12 +1,10 @@
 ---
-title: "Postupy: Změna velikosti ovládacích prvků ListObject | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Změna velikosti ovládacích prvků ListObject | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - ListObject control, resizing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e018ed60e60c63dd47b5d56b599ea0f0499f561c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 12a81e6bb4a0484b79ad42b8fbab77db97ea82c0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-resize-listobject-controls"></a>Postupy: Změna velikosti ovládacích prvků ListObject
   Nastavení velikosti <xref:Microsoft.Office.Tools.Excel.ListObject> řízení, pokud ho přidáte do sešitu aplikace Microsoft Office Excel; však můžete chtít jeho velikost na později. Můžete například změnit seznam dvou sloupců na tři sloupce.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/10/2018
   
  ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: Přidat sloupce do seznamu objekt vázané na Data v době běhu?](http://go.microsoft.com/fwlink/?LinkID=130318).  
   
-##  <a name="designtime"></a>Změna velikosti ovládacího prvku ListObject v době návrhu  
+##  <a name="designtime"></a> Změna velikosti ovládacího prvku ListObject v době návrhu  
  Ke změně velikosti seznamu, můžete klikněte na tlačítko a přetáhněte jeden úchyt, nebo můžete změnit její velikost v definici **změnit velikost seznamu** dialogové okno.  
   
 #### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Ke změně velikosti seznamu pomocí dialogu změnit velikost seznamu  
@@ -58,7 +57,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Click **OK**.  
   
-##  <a name="runtimedoclevel"></a>Změna velikosti ovládacího prvku ListObject za běhu v projektech na úrovni dokumentu  
+##  <a name="runtimedoclevel"></a> Změna velikosti ovládacího prvku ListObject za běhu v projektech na úrovni dokumentu  
  Můžete změnit velikost <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku za běhu pomocí <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> metoda. Pomocí této metody nelze přesunout <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacího prvku do nového umístění v listu. Záhlaví musí zůstat ve stejném řádku a změněnou velikostí <xref:Microsoft.Office.Tools.Excel.ListObject> řízení musí překrývat původní objekt seznamu. Změněnou <xref:Microsoft.Office.Tools.Excel.ListObject> řízení musí obsahovat řádek záhlaví a alespoň jeden řádek dat.  
   
 #### <a name="to-resize-a-list-object-programmatically"></a>Ke změně velikosti objekt seznamu prostřednictvím kódu programu  
@@ -73,7 +72,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]  
   
-##  <a name="runtimeaddin"></a>Změna velikosti ListObject za běhu v projektu doplňku VSTO  
+##  <a name="runtimeaddin"></a> Změna velikosti ListObject za běhu v projektu doplňku VSTO  
  Můžete změnit velikost <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek v jakékoli otevřete list za běhu. Další informace o tom, jak přidat <xref:Microsoft.Office.Tools.Excel.ListObject> řídit do listu pomocí doplňku VSTO najdete v tématu [postupy: Přidání ovládacích prvků ListObject do listů](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
 #### <a name="to-resize-a-list-object-programmatically"></a>Ke změně velikosti objekt seznamu prostřednictvím kódu programu  

@@ -1,13 +1,10 @@
 ---
-title: "Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VST.Bookmark.Dialog
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2ebe8536887f2f60876b64407ffb96cdaf4618c9
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: a33160ba534a1ee6bd56238cffaa2064e4332ec1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word
   Projekty na úrovni dokumentu, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvky v dokumentu ve vašem projektu v době návrhu nebo za běhu. Projekty doplňku VSTO, můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvky pro všechny otevřené dokumenty v době běhu.  
@@ -43,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
  Další informace o <xref:Microsoft.Office.Tools.Word.Bookmark> najdete v části ovládací prvky, [ovládacího prvku záložek](../vsto/bookmark-control.md).  
   
-##  <a name="designtime"></a>Přidání ovládacích prvků záložek v době návrhu  
+##  <a name="designtime"></a> Přidání ovládacích prvků záložek v době návrhu  
  Existuje několik způsobů, jak přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvky v dokumentu v projektech na úrovni dokumentu v době návrhu:  
   
 -   Ze sady Visual Studio **sada nástrojů**.  
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  V **záložku** dialogové okno, zadejte název nové záložky a klikněte na tlačítko **přidat**.  
   
-##  <a name="runtimedoclevel"></a>Přidání ovládacích prvků záložek za běhu v projektech na úrovni dokumentu  
+##  <a name="runtimedoclevel"></a> Přidání ovládacích prvků záložek za běhu v projektech na úrovni dokumentu  
  Můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> řídí prostřednictvím kódu programu do dokumentu za běhu pomocí metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnost `ThisDocument` třídy ve vašem projektu. Existují dvě přetížení metody, které můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> řízení následujícími způsoby:  
   
 -   Přidat <xref:Microsoft.Office.Tools.Word.Bookmark> v zadaném rozsahu.  
@@ -101,7 +98,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Pokud chcete vytvořit <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvek z existující <xref:Microsoft.Office.Interop.Word.Bookmark>, použijte <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> metoda a předejte jí existující <xref:Microsoft.Office.Interop.Word.Bookmark>.  
   
-##  <a name="runtimeaddin"></a>Přidání ovládacích prvků záložek za běhu v projektu doplňku VSTO  
+##  <a name="runtimeaddin"></a> Přidání ovládacích prvků záložek za běhu v projektu doplňku VSTO  
  Můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> ovládací prvky prostřednictvím kódu programu pro všechny otevřené dokumenty v době běhu pomocí doplňku VSTO. Chcete-li to provést, vygenerovat <xref:Microsoft.Office.Tools.Word.Document> hostitelem položku, která je založená na dokument otevřít a potom pomocí metody <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> vlastnosti této položky hostitele. Existují dvě přetížení metody, které můžete přidat <xref:Microsoft.Office.Tools.Word.Bookmark> řízení následujícími způsoby:  
   
 -   Přidat <xref:Microsoft.Office.Tools.Word.Bookmark> v zadaném rozsahu.  

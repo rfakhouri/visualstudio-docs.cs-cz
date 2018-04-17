@@ -1,28 +1,25 @@
 ---
-title: Azure SDK pro Python | Microsoft Docs
+title: Azure SDK pro Python
 description: Sada Azure SDK pro Python snadno využívat služby Microsoft Azure z Python aplikací běžících na jakékoli platformě.
 ms.custom: ''
 ms.date: 01/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 3f03ca08dddb90f6eb86a439f7f92307df3b4335
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 56ccd85dd5dfd9ce6f82a68ef18df303631987b1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK pro Python
 
@@ -42,7 +39,7 @@ Můžete také provést [instalaci Pythonu a sady SDK](https://docs.microsoft.co
 
 ## <a name="documentation"></a>Dokumentace
 
-Dokumentaci můžete najít na [azure sdk pro python.readthedocs.org](http://azure-sdk-for-python.readthedocs.org/en/latest/index.html).
+Dokumentaci můžete najít na [azure sdk pro python.readthedocs.org](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 
 [Azure SDK pro středisku pro vývojáře Python](http://azure.microsoft.com/develop/python/) má také počet užitečné zdroje, včetně počtu kurzy:
 

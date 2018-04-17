@@ -1,12 +1,10 @@
 ---
-title: "&lt;formregions –&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: '&lt;formregions –&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <formRegions> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: eb7008f86dd552eac2b8a6ba9b227884270c8694
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: c51b626c104d5342c00dbd45a2c565315c9c2225
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formregions –&gt; – Element (vývoj pro Office v sadě Visual Studio)
   `formRegions` Element `vstov4` obor názvů obsahuje oblastí formulářů aplikace Microsoft Office Outlook, které jsou spojeny s doplňku VSTO.  
@@ -46,7 +45,7 @@ ms.lasthandoff: 01/10/2018
  `formRegions` Element má následující element.  
   
 ### <a name="formregion"></a>formRegion  
- Vyžaduje se pro aplikaci Outlook doplňků VSTO obsahující oblasti formulářů. `formRegion` Element je definována v [& č. 60; formRegion & č. 62; Element &#40; vývoj pro Office v sadě Visual Studio &#41; ](../vsto/formregion-element-office-development-in-visual-studio.md).  
+ Vyžaduje se pro aplikaci Outlook doplňků VSTO obsahující oblasti formulářů. `formRegion` Element je definována v [ &#60;formRegion&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Příklad doplňku VSTO  
   

@@ -1,7 +1,7 @@
 ---
-title: "Vzory zátěže testování v sadě Visual Studio zátěže | Microsoft Docs"
+title: Vzory zátěže testování v sadě Visual Studio zátěže | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 - load tests, scenarios
@@ -9,13 +9,13 @@ helpviewer_keywords:
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 986b2e263a5beedf7f40ed36526365735b3ba17f
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Úpravy vzorů zatížení pro modelování aktivit virtuálních uživatelů
 
@@ -65,7 +65,7 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzorů de
 
  Tato nastavení, spusťte zátěžový test 30 minut (1 800 sekund) na uživatele načte 100, 200, 300 a až 2 000 uživatelů. **Čas doběhu kroku** vlastnost je vhodné zvláštní pozornost, protože je jenom jedna z těchto vlastností, která není k dispozici pro výběr v Průvodci novým testu zatížení. Tato vlastnost umožňuje zvýšení z jednoho kroku na další (například ze 100 až 200 uživatelů) dojde k postupně místo okamžitě. V příkladu zatížení uživatele by být zvýšena od 100 na 200 uživatelů po dobu 20 sekundu (zvýšení pět uživatelů za sekundu). Další informace najdete v tématu [postupy: určení vlastnosti doby doběhu kroku pro vzor zatížení kroku](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
-### <a name="goal-based"></a>Goal-Based
+### <a name="goal-based"></a>Na základě cíle
 
  Vzor na základě cílem zatížení vypadá takto: krok vzor ale upraví zatížení uživatele na základě prahových hodnot čítače výkonu a úpravy zatížení pravidelné uživatele. Cílem na základě zatížení jsou užitečné pro celou řadu různých účely:
 

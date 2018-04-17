@@ -1,26 +1,25 @@
 ---
-title: "Analyzovat data o využití procesoru (C++) | Microsoft Docs"
-ms.custom: 
+title: Analyzovat data o využití procesoru (C++) | Microsoft Docs
+ms.custom: ''
 ms.date: 12/05/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
+ms.technology:
+- vs-ide-debug
 ms.topic: quickstart
-f1_keywords: 
+f1_keywords:
+- ''
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
-caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: cplusplus
-ms.openlocfilehash: 7540203c395d51d6372aad908ec028180f41bd7c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- cplusplus
+ms.openlocfilehash: ebe10dbcf5b03288ae4d0e6d2fb93444abe1064a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-cpu-usage-data-in-visual-studio-c"></a>Analyzovat data o využití procesoru v aplikaci Visual Studio (C++)
 
@@ -111,7 +110,7 @@ Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat r
     }
     ```
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>Krok 1: Shromáždění data profilování 
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Shromáždění data profilování 
   
 1.  Nejdřív nastavit zarážky ve vaší aplikaci tento řádek kódu `main` funkce:
 
@@ -150,7 +149,7 @@ Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat r
 
      V tomto okamžiku můžete začít analyzovat data.
 
-## <a name="Step2"></a>Krok 2: Analyzovat data o využití procesoru
+## <a name="Step2"></a> Krok 2: Analyzovat data o využití procesoru
 
 Doporučujeme začít analýza dat kontrolou seznamu funkcí podle využití procesoru, určení funkcí, které pracujeme na maximum a pak trvá bližší pohled na každé z nich.
 

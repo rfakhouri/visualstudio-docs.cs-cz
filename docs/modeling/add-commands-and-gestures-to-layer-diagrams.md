@@ -1,24 +1,22 @@
 ---
-title: "Přidání příkazů a gest do diagramů závislostí | Microsoft Docs"
-ms.custom: 
+title: Přidání příkazů a gest do diagramů závislostí | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5a8f1a2ff8e5ffc95d885b847a17e6cc16965837
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 276098a2c288f98441e8a111ed8807e22d5cfda2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Přidání příkazů a gest do diagramů závislostí
 Můžete definovat příkazy nabídky kontextu a gesty obslužné rutiny v diagramech závislosti v sadě Visual Studio. Tato rozšíření můžete balíček do Visual Studio integrace rozšíření (VSIX), které můžete distribuovat jiným uživatelům v sadě Visual Studio.  
@@ -109,7 +107,7 @@ Můžete definovat příkazy nabídky kontextu a gesty obslužné rutiny v diagr
   
      Chcete-li ho odinstalovat, použijte **rozšíření a aktualizace** na **nástroje** nabídky.  
   
-##  <a name="command"></a>Definování příkazu nabídky  
+##  <a name="command"></a> Definování příkazu nabídky  
  Další definice příkaz nabídky můžete přidat do existující gesto nebo příkaz projektu. Každý příkaz je definováno třídu, která má následující vlastnosti:  
   
 -   Třída je deklarovaná následujícím způsobem:  
@@ -124,11 +122,11 @@ Můžete definovat příkazy nabídky kontextu a gesty obslužné rutiny v diagr
   
 -   Metody, které implementují `ICommandExtension` jsou následující:  
   
-    -   `string Text {get;}`-Štítek, který se zobrazí v nabídce.  
+    -   `string Text {get;}` -Štítek, který se zobrazí v nabídce.  
   
-    -   `void QueryStatus(IMenuCommand command)`-volána, když uživatel klikne na diagramu pravým tlačítkem myši a určuje, zda příkaz by měla být viditelné a povolené pro aktuální výběr uživatele.  
+    -   `void QueryStatus(IMenuCommand command)` -volána, když uživatel klikne na diagramu pravým tlačítkem myši a určuje, zda příkaz by měla být viditelné a povolené pro aktuální výběr uživatele.  
   
-    -   `void Execute(IMenuCommand command)`-volána, když uživatel vybere příkaz.  
+    -   `void Execute(IMenuCommand command)` -volána, když uživatel vybere příkaz.  
   
 -   Pokud chcete zjistit aktuální výběr, můžete importovat `IDiagramContext`:  
   
@@ -214,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a>Definování obslužné rutiny gest  
+##  <a name="gesture"></a> Definování obslužné rutiny gest  
  Obslužné rutiny gest odpoví, když uživatel nastavuje tažením položky do diagramu závislostí a při poklepání kdekoli v diagramu.  
   
  Chcete existující příkaz nebo gesto obslužná rutina VSIX projektu můžete přidat soubor kód, který definuje obslužné rutiny gest:  

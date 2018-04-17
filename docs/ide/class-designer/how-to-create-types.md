@@ -1,13 +1,10 @@
 ---
-title: "Postupy: vytváření typů pomocí návrháře tříd | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytváření typů pomocí návrháře tříd | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
 helpviewer_keywords:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db46a4fa0faa568597deccddb528d8765e048e22
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 22260ee75a1c64de842da41b292fbeebeb6cf6ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Postupy: Vytváření typů pomocí návrháře tříd
 Návrh nové typy pro C# a Visual Basic, projekty, vytvořte je v diagramu tříd. Existující typy najdete v sekci [postupy: zobrazení existujících typů](how-to-view-existing-types.md).  
@@ -39,19 +35,19 @@ Návrh nové typy pro C# a Visual Basic, projekty, vytvořte je v diagramu tří
   
 -   [Použít vlastní atribut u člena typu](#CustAttributeMember)  
   
-##  <a name="CreateType"></a>Vytvoření nového typu  
+##  <a name="CreateType"></a> Vytvoření nového typu  
   
 1.  V sadě nástrojů v nabídce Návrhář tříd přetáhněte jeden z nich do diagramu tříd:  
   
     -   **Třída** nebo **abstraktní třídy**  
   
-    -   **Výčet**  
+    -   **výčet**  
   
     -   **Rozhraní**  
   
     -   **Struktura** (VB) nebo **struktura** (C#)  
   
-    -   **Delegate**  
+    -   **Delegát**  
   
     -   **Modul** (pouze pro jazyka Visual Basic)  
   
@@ -78,7 +74,7 @@ Návrh nové typy pro C# a Visual Basic, projekty, vytvořte je v diagramu tří
   
      V tématu [vytváření členů](creating-and-configuring-type-members.md#CreateMembers).  
   
-##  <a name="CustAttributeType"></a>Použít vlastní atribut typu  
+##  <a name="CustAttributeType"></a> Použít vlastní atribut typu  
   
 1.  Klikněte na tvar typu v diagramu tříd.  
   
@@ -88,7 +84,7 @@ Návrh nové typy pro C# a Visual Basic, projekty, vytvořte je v diagramu tří
   
      Až skončíte, uživatelské atributy se použijí na typ.  
   
-##  <a name="CustAttributeMember"></a>Použít vlastní atribut u člena typu  
+##  <a name="CustAttributeMember"></a> Použít vlastní atribut u člena typu  
   
 1.  Klikněte na název člena ve tvaru jeho typu v diagramu tříd nebo na jeho řádku v okně Detaily třídy.  
   

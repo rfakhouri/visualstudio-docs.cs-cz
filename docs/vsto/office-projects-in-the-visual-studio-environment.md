@@ -1,12 +1,10 @@
 ---
-title: "Projekty Office v prostředí Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Projekty Office v prostředí Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectItem.WordDocument
 - VST.ProjectItem.ExcelWorkbook
@@ -43,13 +41,14 @@ helpviewer_keywords:
 - VST.Designer.ExcelVST.Designer.Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a937f98a11ab9c8cb9723637be902808dce86563
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 80a8f866cb43eb6279cca45bebc94c54af898eab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projekty pro systém Office v prostředí Visual Studio
   Projekty pro Microsoft Office nabízejí vývojové prostředí, které se podobá jiným typům projektů v sadě Visual Studio, například projektům modelu Windows Forms. Při vytvoření nebo otevření projektu aplikace Office, zobrazí se položky projektu v **Průzkumníku řešení**. V případě projektů na úrovni dokumentu se dokument (tzn. dokument aplikace Word nebo sešit aplikace Excel) otevře v sadě Visual Studio a dokument se chová jako vizuální návrhář.  
@@ -76,7 +75,7 @@ ms.lasthandoff: 01/10/2018
 ### <a name="temporary-certificates"></a>Dočasné certifikáty  
  Projekty Office také zahrnovat dočasné certifikát s názvem *název projektu*_TemporaryKey.pfx. Tento certifikát umožňuje podepsat během vývoje projektu manifest aplikace a nasazení. Další informace najdete v tématu [udělení vztah důvěryhodnosti s řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md) a [zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md).  
   
-###  <a name="hiddenfiles"></a>Soubory skrytá projektu  
+###  <a name="hiddenfiles"></a> Soubory skrytá projektu  
  Některé soubory projektu jsou ve výchozím nastavení skryté. Tyto soubory jsou vygenerovány sadou Visual Studio a liší se podle typu projektu. Chcete-li zobrazit skryté soubory, klikněte na tlačítko **zobrazit všechny soubory** v **Průzkumníku řešení**.  
   
  Neupravujte skryté soubory projektu. Přímé změny v těchto souborech nejsou podporovány a mohou způsobit poškození projektu. Skryté soubory projektu jsou znovu vygenerovány pokaždé, když v dokumentu dojde k určitým změnám. Pokud skrytý soubor projektu ručně změníte, budou provedené změny při opětovném vygenerování souboru ztraceny.  

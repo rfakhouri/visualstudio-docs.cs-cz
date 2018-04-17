@@ -1,22 +1,22 @@
 ---
-title: "Úpravy programových testů uživatelského rozhraní v sadě Visual Studio | Microsoft Docs"
+title: Úpravy programových testů uživatelského rozhraní v sadě Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77aa1fd259d671e4ba97eaa6eef29bbff87c18bf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 942d532aa2ee370b65ae8dfb81a5a383b8c68cc2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Úpravy programových testů uživatelského rozhraní pomocí Editoru programových testů uživatelského rozhraní
 Editor programového testu uživatelského rozhraní lze snadno upravit programových testů uživatelského rozhraní. Pomocí editoru testování uživatelského rozhraní programového, můžete vyhledat, zobrazit a upravit vlastnosti testovací metody a akcí uživatelského rozhraní. Kromě toho můžete použít ovládací prvek mapy uživatelského rozhraní zobrazení a jejich odpovídající ovládacích prvcích pro úpravy.
@@ -28,7 +28,7 @@ Editor programového testu uživatelského rozhraní lze snadno upravit programo
 ## <a name="why-should-i-do-this"></a>Proč to mám udělat?
  Pomocí editoru testování uživatelského rozhraní programového je rychlejší a efektivnější než úpravy kódu v vaše programové metody testu uživatelského rozhraní pomocí editoru kódu. S programového uživatelského rozhraní editoru testu, nástrojů a v místní nabídky můžete použít k rychlému vyhledání a upravte hodnoty vlastností, které jsou spojené s akcí uživatelského rozhraní a ovládací prvky. Například programového uživatelského rozhraní editoru testu na panelu nástrojů můžete provést následující příkazy:
 
- ![UI Test Edito](../test/media/uitesteditor.png "UITestEditor")
+ ![Edito testu uživatelského rozhraní](../test/media/uitesteditor.png "UITestEditor")
 
 1.  [Najít](../ide/finding-and-replacing-text.md) pomáhá při hledání akcí uživatelského rozhraní a ovládací prvky.
 
@@ -71,7 +71,7 @@ Používáte verzi Visual Studio Enterprise před 2012. Editor programového tes
 
  Postup úpravy vlastností akce uživatelského rozhraní v **akci uživatelského rozhraní** podokně rozbalte testovací metody, která obsahuje akci uživatelského rozhraní, kterou chcete upravit vlastnosti, vyberte akci uživatelského rozhraní a potom upravte vlastnosti pomocí okna Vlastnosti.
 
- Například pokud server není k dispozici, a máte akci uživatelského rozhraní související s webovým prohlížečem, který stavy **přejděte na webové stránky 'http://Contoso1/default.aspx'**, můžete změnit adresu URL `'http://Contoso2/default.aspx'`.
+ Například pokud server není k dispozici, a máte akci uživatelského rozhraní související s webovým prohlížečem, který stavy **přejděte na webovou stránku sehttp://Contoso1/default.aspx'**, můžete změnit adresu URL `'http://Contoso2/default.aspx'`.
 
  ![Vlastnosti ovládacího prvku](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")
 

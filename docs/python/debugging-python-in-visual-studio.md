@@ -1,27 +1,24 @@
 ---
-title: Ladění kódu Python | Microsoft Docs
+title: Ladění kódu jazyka Python
 description: Návod funkce ladění v sadě Visual Studio speciálně pro kód Python, včetně nastavení zarážek, krokování, zkontrolujte hodnoty, prohlížení výjimky a ladění v okně interaktivní.
 ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 850fb940b35e3fe988b8ecf8dc483ed489f985db
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 4434a854bf2b7da12ca1a05b9996593abd94660e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-your-python-code"></a>Ladění kódu jazyka Python
 

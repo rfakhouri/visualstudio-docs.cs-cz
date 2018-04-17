@@ -1,37 +1,30 @@
 ---
-title: "Rady a tipy pro zvýšení výkonu sady Visual Studio | Microsoft Docs"
+title: Rady a tipy pro zvýšení výkonu sady Visual Studio | Microsoft Docs
 ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- debugger
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a48166490cb48870e9e6341b0cba6dfc9f668fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9182abea676958891afb789217a056f16ff1c11e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="visual-studio-performance-tips-and-tricks"></a>Rady a tipy pro zvýšení výkonu sady Visual Studio
+# <a name="visual-studio-performance-tips-and-tricks"></a>Rady a tipy pro zvýšení výkonu Visual Studio
 
 Visual Studio výkonu doporučení jsou určené pro situace, nedostatek paměti, které může dojít ve výjimečných případech. V těchto situacích můžete optimalizovat určité funkce sady Visual Studio, které nemusí používat. Následující tipy nejsou určeny jako obecná doporučení.
 
 > [!NOTE]
-> Pokud máte potíže s používáním produktu z důvodu problémů s pamětí, dejte nám vědět prostřednictvím nástroje zpětnou vazbu.
+> Pokud máte potíže s používáním produktu z důvodu problémů s pamětí, dejte nám vědět prostřednictvím [zpětnou vazbu nástroj](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
 
 ## <a name="optimize-your-environment"></a>Optimalizace prostředí
 
-- **Použít 64bitová verze operačního systému**
+- **Použít 64bitová verze OS**
 
     Pokud upgradujete systém z 32bitové verze systému Windows na 64bitovou verzi, rozbalte velikost virtuální paměti, které jsou k dispozici pro Visual Studio z 2 GB do 4 GB. To umožňuje sadě Visual Studio pro zpracování podstatně větší zatížení, i když je 32bitový proces.
 
@@ -86,7 +79,7 @@ Některé nástroje nebo rozšíření může vypnuté ke zlepšení výkonu.
 
 ### <a name="managed-language-services-roslyn"></a>Jazyk spravované služby (Roslyn)
 
-Informace o aspektech týkajících se výkonu kompilátoru platformu .NET ("Roslyn") najdete v tématu [důležité informace o výkonu pro velká řešení] (https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Informace o aspektech týkajících se výkonu kompilátoru platformu .NET ("Roslyn") najdete v tématu [důležité informace o výkonu pro velká řešení](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
 - **Zakázat úplnou analýzu řešení**
 
@@ -108,7 +101,7 @@ Informace o aspektech týkajících se výkonu kompilátoru platformu .NET ("Ros
 
     Rozšíření jsou další softwarové součásti přidat do sady Visual Studio, které přinášejí nové funkce nebo rozšířit stávající funkce. Rozšíření může být často zdroj problémy prostředků paměti. Pokud dojde k potížím s prostředky paměti, zkuste zakázat rozšíření jeden současně zobrazíte jak ovlivňuje pro scénáře nebo pracovní postup.
 
-    Pokud chcete zakázat rozšíření, přejděte na **nástroje | Rozšíření a aktualizace**a konkrétní rozšíření zakázat.
+    Pokud chcete zakázat rozšíření, přejděte na **nástroje** > **rozšíření a aktualizace**a konkrétní rozšíření zakázat.
 
 - **Zakázat Návrhář XAML**
 
@@ -128,8 +121,9 @@ Chcete-li vynutit uvolnění paměti, použijte klávesová zkratka: **Ctrl + Al
 
 Pokud vynucení uvolňování paměti spolehlivě provede váš scénář fungovat, soubor sestavy pomocí nástroje Visual Studio zpětnou vazbu, jak toto chování je pravděpodobné, že chyby.
 
-Podrobný popis garbage collector v CLR, najdete v části [základní z kolekce paměti](/dotnet/standard/garbage-collection/fundamentals).
+Podrobný popis garbage collector v CLR, najdete v části [základy uvolnění paměti](/dotnet/standard/garbage-collection/fundamentals).
 
 ## <a name="see-also"></a>Viz také
 
-[Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
+- [Optimalizace výkonu v sadě Visual Studio](../ide/optimize-visual-studio-performance.md)
+- [Visual Studio blog - zatížení řešení rychlejší s Visual Studio 2017 verze 15,6 operací](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

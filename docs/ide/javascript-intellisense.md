@@ -1,12 +1,10 @@
 ---
 title: JavaScript IntelliSense | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/28/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -26,24 +24,25 @@ helpviewer_keywords:
 - XML documentation comments [JavaScript]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: c958958ca3b0621a4e348ebcbc4cffaf35d3cce9
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eb4d95dcc53926f7ae8b0b295b7552185a4a934c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]poskytuje výkonný JavaScript prostředí okamžitě po nasazení pro úpravy. Používá technologii služby TypeScript na základě jazyka, Visual Studio nabízí širší technologii IntelliSense, podporu pro moderní funkce JavaScript, a zvýšení produktivity funkce, například přechod na definici, refaktoring a další.
+[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] poskytuje výkonný JavaScript prostředí okamžitě po nasazení pro úpravy. Používá technologii služby TypeScript na základě jazyka, Visual Studio nabízí širší technologii IntelliSense, podporu pro moderní funkce JavaScript, a zvýšení produktivity funkce, například přechod na definici, refaktoring a další.
 
 > [!NOTE]
 > Služba jazyka JavaScript v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] používá nový modul pro službu jazyka (nazývané "Salsa"). Podrobnosti jsou uvedené v tomto tématu a také si můžete přečíst to [příspěvku na blogu](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc). Nové prostředí úpravy také většinou platí pro Visual Studio Code. Najdete v článku [dokumentace VS Code](https://code.visualstudio.com/docs/languages/javascript) Další informace.
 
 Další informace o funkci IntelliSense obecné sady Visual Studio najdete v tématu [pomocí IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového ve službě jazyka JavaScript v[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového ve službě jazyka JavaScript v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
 Počínaje [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], JavaScript IntelliSense zobrazí mnohem víc informace uvedené v seznamech parametr a člen.
 Toto nové informace jsou poskytovány služba jazyka TypeScript, který používá statické analysis pozadí v době pro lepší pochopení vašeho kódu.
@@ -90,7 +89,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
-### <a name="JsDoc"></a>IntelliSense podle JSDoc
+### <a name="JsDoc"></a> IntelliSense podle JSDoc
 
 Kde odvození typu neposkytuje informace o požadovaného typu (nebo na podporu dokumentace), informace o typu mohou být k dispozici explicitně prostřednictvím poznámky JSDoc.  Umožnit objekt částečně deklarované konkrétního typu, například můžete použít `@type` značky, jak je uvedeno níže:
 
@@ -116,7 +115,7 @@ function Foo(param1) {
 
 V tématu [tento doc](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) pro poznámky JsDoc aktuálně podporované.
 
-### <a name="TsDeclFiles"></a>Na základě souborů deklarace TypeScript IntelliSense
+### <a name="TsDeclFiles"></a> Na základě souborů deklarace TypeScript IntelliSense
 
 JavaScript a TypeScript jsou nyní založená na stejnou službu jazyk, budou se moci pracovat způsobem, bohatší. Například JavaScript IntelliSense lze zadat pro hodnoty deklarované v `.d.ts` souboru ([více informací o](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), a typy, jako je například rozhraní a třídy, které jsou deklarované v TypeScript jsou k dispozici pro použití jako typy v komentářů JsDoc. 
 
@@ -124,7 +123,7 @@ Níže ukážeme jednoduchý příklad TypeScript definiční soubor, který pos
 
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
-### <a name="Auto"></a>Automatické získání definice typu
+### <a name="Auto"></a> Automatické získání definice typu
 
 Na světě TypeScript nejoblíbenější knihovny JavaScript mají příslušných rozhraní API popsaného `.d.ts` soubory a nejběžnější úložiště pro tyto definice je na [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 

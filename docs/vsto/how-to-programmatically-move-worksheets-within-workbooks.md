@@ -1,12 +1,10 @@
 ---
-title: "Postupy: přesouvání listů v sešitech prostřednictvím kódu programu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: přesouvání listů v sešitech prostřednictvím kódu programu | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - workbooks, moving worksheets in
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f0869ad6a63e4a499d9fdca2cbaa538d11eef0d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5b34374b7795422aef83c7f79fe49931b1b69acc
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Postupy: Přesouvání listů v sešitech prostřednictvím kódu programu
   Prostřednictvím kódu programu můžete změnit umístění listů relativně k jiné listy v sešitu. Pokud nezadáte umístění pro přesunutý listu, bude vytvořen nový sešit tak, aby obsahovala ho.  

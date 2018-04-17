@@ -1,13 +1,10 @@
 ---
-title: "Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Ladění aplikace SharePoint s použitím technologie IntelliTrace | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - IntelliTrace
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d9f3e5ae5997f7ae4f7c7f94bc61dc526404f144
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 173dbc74a24166f69ca97da6d5f68332345b90ea
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Postupy: Ladění aplikace SharePoint s použitím technologie IntelliTrace
 
@@ -58,7 +55,7 @@ K dokončení tohoto návodu budete potřebovat následující komponenty:
 
 - Visual Studio Enterprise.
 
-## <a name="BKMK_CreateReceiver">Vytvoření příjemce funkce</a>
+## <a name="BKMK_CreateReceiver"></a> Vytvoření příjemce funkce
 
 Nejprve je třeba vytvořit prázdný projektu služby SharePoint, který má příjemce funkce.
 
@@ -76,7 +73,7 @@ Nejprve je třeba vytvořit prázdný projektu služby SharePoint, který má p�
 
 4. Otevřete místní nabídku pro Feature1.feature a potom zvolte **přidat příjemce událostí** přidat modul kódu s funkcí.
 
-## <a name="BKMK_AddCode">Přidejte kód k příjemce funkce</a>
+## <a name="BKMK_AddCode"></a> Přidejte kód k příjemce funkce
 
 Dál přidejte kód pro dvě metody v příjemce funkce: `FeatureActivated` a `FeatureDeactivating`. Tyto metody se aktivuje vždy, když je funkce aktivace nebo deaktivace ve službě SharePoint, v uvedeném pořadí.
 
@@ -250,7 +247,7 @@ Dál přidejte kód pro dvě metody v příjemce funkce: `FeatureActivated` a `F
     }
     ```
 
-## <a name="BKMK_Test1">Testování projektu</a>
+## <a name="BKMK_Test1"></a> Testování projektu
 
 Teď, když kód se přidá k příjemce funkce a data collector běží, nasadit a provozovat řešení služby SharePoint a otestovat, jestli správně funguje.
 
@@ -277,7 +274,7 @@ Teď, když kód se přidá k příjemce funkce a data collector běží, nasadi
 
      Obslužné rutiny události FeatureDeactivating() vrátí chybu.
 
-## <a name="BKMK_CollectDiagnosticData">Shromáždění dat technologie IntelliTrace pomocí agenta Microsoft Monitoring Agent</a>
+## <a name="BKMK_CollectDiagnosticData"></a> Shromáždění dat technologie IntelliTrace pomocí agenta Microsoft Monitoring Agent
 
 Pokud instalujete agenta Microsoft Monitoring Agent na počítači se systémem SharePoint, můžete ladit řešení služby SharePoint pomocí dat, která jsou podrobnější než obecné informace, které se vrátí IntelliTrace. Agent funguje mimo Visual Studio pomocí rutin prostředí PowerShell umožňuje zaznamenat informace o ladění při vaší spustí řešení služby SharePoint.
 
@@ -300,9 +297,9 @@ Pokud instalujete agenta Microsoft Monitoring Agent na počítači se systémem 
 
 3. V okně prostředí PowerShell, spusťte [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) příkaz pro vytvoření souboru .iTrace, zastavení, monitorování a restartování řešení služby SharePoint.
 
-     **Stop-WebApplicationMonitoring**  *"\<SharePointSite>\\<SharePointAppName\>"*
+     **Příkaz Stop-WebApplicationMonitoring***"\<SharePointSite >\\< SharePointAppName\>"* 
 
-## <a name="BKMK_DebugSolution">Ladění a opravte řešení služby SharePoint</a>
+## <a name="BKMK_DebugSolution"></a> Ladění a opravte řešení služby SharePoint
 
 Nyní můžete zobrazit soubor protokolu IntelliTrace v sadě Visual Studio můžete najít a opravte chybu v řešení služby SharePoint.
 

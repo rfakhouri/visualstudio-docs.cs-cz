@@ -1,13 +1,10 @@
 ---
-title: "&lt;aplikace&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: '&lt;aplikace&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f20c4c8e6d44c62282f68173ce980f650da2692
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 8550b5374bde5d18d3f645c08f89902250ae5f2d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;aplikace&gt; – Element (vývoj pro Office v sadě Visual Studio)
   `application` Element `vstav3` obor názvů zabalí popis řešení pro systém Office. Podřízené elementy se liší pro přizpůsobení na úrovni dokumentu a doplňků VSTO.  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  `application` Element má následující element.  
   
 ### <a name="customization"></a>přizpůsobení  
- Role `customization` element v `vstov3` obor názvů je definován v [& č. 60; přizpůsobení & č. 62; Element &#40; vývoj pro Office v sadě Visual Studio &#41; ](../vsto/customization-element-office-development-in-visual-studio.md).  
+ Role `customization` element v `vstov3` obor názvů je definován v [ &#60;přizpůsobení&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md).  
   
 ## <a name="document-level-customization-example"></a>Příklad přizpůsobení na úrovni dokumentu  
   

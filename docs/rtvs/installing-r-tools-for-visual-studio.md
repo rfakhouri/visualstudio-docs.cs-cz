@@ -1,26 +1,23 @@
 ---
-title: "Instalace nástrojů R pro sadu Visual Studio | Microsoft Docs"
-description: "Postup instalace R nástrojů pro Visual Studio ve Visual Studio 2017 a Visual Studio 2015, včetně offline instalace."
-ms.custom: 
+title: Instalace nástrojů R
+description: Postup instalace R nástrojů pro Visual Studio ve Visual Studio 2017 a Visual Studio 2015, včetně offline instalace.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
-ms.tgt_pltfrm: 
 dev_langs:
 - R
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bb8f380ce17242f7ac9953226db7ad683c17a2de
-ms.sourcegitcommit: 236c250bb97abdab99d00c6525d106fc0035d7d0
+ms.openlocfilehash: e996add7a17a60673fe5e6323be9c13e4b0fb785
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Postup instalace R nástrojů pro Visual Studio
 

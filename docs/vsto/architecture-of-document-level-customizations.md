@@ -1,13 +1,10 @@
 ---
-title: "Architektura přizpůsobení na úrovni dokumentu | Microsoft Docs"
-ms.custom: 
+title: Architektura přizpůsobení na úrovni dokumentu | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,17 +19,17 @@ helpviewer_keywords:
 - architecture [Office development in Visual Studio], document-level customizations
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 09a8700086ec8a718e14764f807e57fcb1f882f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 659950fee0e292a0e0c37a82bb8a18fe2783824d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architektura přizpůsobení na úrovni dokumentu
-  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]zahrnuje projekty pro vytvoření úpravy na úrovni dokumentů pro Microsoft Office Word a Microsoft Office Excel. Toto téma popisuje následující aspektů přizpůsobení na úrovni dokumentu:  
+  [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] zahrnuje projekty pro vytvoření úpravy na úrovni dokumentů pro Microsoft Office Word a Microsoft Office Excel. Toto téma popisuje následující aspektů přizpůsobení na úrovni dokumentu:  
   
 -   [Principy přizpůsobení](#UnderstandingCustomizations)  
   
@@ -42,14 +39,14 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- Obecné informace o vytváření úpravy na úrovni dokumentů najdete v tématu [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md), [Začínáme programování přizpůsobení na úrovni dokumentu ve Wordu](../vsto/getting-started-programming-document-level-customizations-for-word.md), a [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
+ Obecné informace o vytváření úpravy na úrovni dokumentů najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [získávání spuštění programování úpravy na úrovni dokumentů aplikace Word ](../vsto/getting-started-programming-document-level-customizations-for-word.md), a [Začínáme s programováním přizpůsobení na úrovni dokumentu pro Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).  
   
-##  <a name="UnderstandingCustomizations"></a>Principy přizpůsobení  
+##  <a name="UnderstandingCustomizations"></a> Principy přizpůsobení  
  Když používáte Office developer tools v sadě Visual Studio k vytvoření přizpůsobení na úrovni dokumentu, můžete vytvořit sestavení spravovaného kódu, který je přidružen konkrétní dokumentu. Dokument nebo sešitu s propojené sestavení se říká, že jste nahráli rozšíření kódu. Další informace najdete v tématu [návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).  
   
  Když uživatel otevře dokument, je načíst sestavení v aplikaci Microsoft Office. Po načíst sestavení přizpůsobení můžete reakce na události dokumentu je otevřen. Přizpůsobení můžete také volání do modelu objektu automatizovat a rozšířit aplikace, když je otevřený v dokumentu, a může použít jakékoli třídy v [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].  
   
- Sestavení komunikuje s komponentami aplikace modelu COM pomocí primární spolupracující sestavení aplikace. Další informace najdete v tématu [primární zprostředkovatel komunikace s objekty sestavení sady Office](../vsto/office-primary-interop-assemblies.md) a [přehled vývoje řešení pro systém Office &#40; VSTO &#41; ](../vsto/office-solutions-development-overview-vsto.md).  
+ Sestavení komunikuje s komponentami aplikace modelu COM pomocí primární spolupracující sestavení aplikace. Další informace najdete v tématu [primární zprostředkovatel komunikace s objekty sestavení sady Office](../vsto/office-primary-interop-assemblies.md) a [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
   
  Pokud uživatel otevře více přizpůsobení na úrovni dokumentu ve stejnou dobu, je v doméně jinou aplikaci načíst každé sestavení. To znamená, že jedno řešení, které se chová nesprávně nemohou způsobit jiných řešení selhání. Úpravy na úrovni dokumentů jsou navrženy pro práci s jedním dokumentem v jediné doméně aplikace. Nejsou určeny pro komunikaci mezi dokumenty. Další informace o doménách aplikací najdete v tématu [aplikační domény](/dotnet/framework/app-domains/application-domains).  
   
@@ -102,7 +99,7 @@ ms.lasthandoff: 01/10/2018
   
  Pokud chcete, aby vaši koncoví uživatelé používat vlastní nastavení v těchto formátů souboru, vytvořit a nasadit vlastní nastavení, která používá jednu z podporovaných formátů, zadaný v předchozí tabulce. Po instalaci přizpůsobení, koncoví uživatelé mohou uložte dokument do Wordového dokumentu XML (* xml) formátu nebo dokument aplikace Word 2003 XML (\*xml) formát a přizpůsobení budou nadále fungovat podle očekávání.  
   
-##  <a name="Components"></a>Součásti přizpůsobení  
+##  <a name="Components"></a> Součásti přizpůsobení  
  Hlavní součástí přizpůsobení jsou dokumentu a sestavení. Kromě těchto součástí existuje několik dalších částí, které hraje důležitou roli v tom, jak aplikace Microsoft Office zjišťovat a načíst přizpůsobení.  
   
 ### <a name="deployment-manifest-and-application-manifest"></a>Manifest nasazení a Manifest aplikace  
@@ -113,7 +110,7 @@ ms.lasthandoff: 01/10/2018
   
  Další informace najdete v tématu [Visual Studio Tools for Office Runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-##  <a name="HowCustomizationsWork"></a>Jak fungují přizpůsobení pomocí aplikace Microsoft Office  
+##  <a name="HowCustomizationsWork"></a> Jak fungují přizpůsobení pomocí aplikace Microsoft Office  
  Když uživatel otevře dokument, který je součástí přizpůsobení aplikace Microsoft Office, aplikace použije manifestu nasazení, který k dokumentu pro vyhledání a načtení nejaktuálnější verzi sestavení vlastní nastavení. V dokumentu vlastní vlastnost s názvem _AssemblyLocation je uloženo umístění manifestu nasazení. Řetězec, který identifikuje toto umístění se vloží do vlastnost při sestavování řešení.  
   
  Nasazení manifestu body do manifestu aplikace, které pak odkazuje na nejnovější sestavení. Další informace najdete v tématu [aplikace a manifesty nasazení v řešeních pro systém Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).  

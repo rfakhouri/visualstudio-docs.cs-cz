@@ -1,12 +1,10 @@
 ---
-title: "Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu | Microsoft Docs"
-ms.custom: 
+title: Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - HasVstoObject method
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5cd29d7de596704087eb1326791e4fc9df9921a6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 0f95c7cb0dfa5fb867807e32366157839725db85
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>Rozšíření wordových dokumentů a excelových sešitů v doplňcích VSTO za běhu
   Doplňku VSTO můžete použít k přizpůsobení dokumentů aplikace Word a sešitů aplikace Excel následujícími způsoby:  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
-##  <a name="AddControls"></a>Přidání spravované ovládací prvky k dokumentům a listů  
+##  <a name="AddControls"></a> Přidání spravované ovládací prvky k dokumentům a listů  
  Po vygenerování <xref:Microsoft.Office.Tools.Word.Document> nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>, můžete přidat ovládací prvky v dokumentu nebo listu, která tyto rozšířené objekty představují. K tomu použít vlastnost ovládacích prvků <xref:Microsoft.Office.Tools.Word.Document> nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
  Můžete přidat ovládací prvky Windows Forms nebo *hostování ovládacích prvků*. Řízení hostitele je ovládací prvek poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] který zabalí odpovídající ovládacího prvku v Word či Excel primární spolupracující sestavení. Řízení hostitele zpřístupní všechny chování podkladového objektu nativní Office, ale také vyvolá události a mohou být vázány na data pomocí vazby modelu Windows Forms data. Další informace najdete v tématu [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  
@@ -116,7 +115,7 @@ ms.lasthandoff: 01/10/2018
  [!code-vb[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]  
   
-##  <a name="HasVstoObject"></a>Určení, zda bylo rozšířeno objekt sady Office  
+##  <a name="HasVstoObject"></a> Určení, zda bylo rozšířeno objekt sady Office  
  Pokud chcete zjistit, zda objekt rozšířené už je vygenerovaný pro konkrétní objekt nativní Office, použijte metodu hasvstoobject –. Tato metoda vrátí hodnotu **true** Jestliže rozšířené objekt již byl vygenerován; jinak vrátí **false**.  
   
  Použijte metodu Globals.Factory.HasVstoMethod. Předat do nativní Word či Excel objektu, například <xref:Microsoft.Office.Interop.Word.Document> nebo <xref:Microsoft.Office.Interop.Excel.Worksheet>, který chcete testovat pro objekt rozšířené.  

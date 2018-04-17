@@ -1,15 +1,12 @@
 ---
-title: Přehled podpory Python v sadě Visual Studio v systému Windows | Microsoft Docs
+title: Přehled podpory Python v sadě Visual Studio v systému Windows
 description: Souhrn funkcí v sadě Visual Studio, takže je nejlepší Python IDE v systému Windows (také označované také jako Python Tools pro sadu Visual Studio, PTVS)
 ms.custom: ''
 ms.date: 04/06/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b76c83db283a2cb0940d8817c04e6052157ada4
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 799476fa7e9506ecb1a078e349ccb44c7426a944
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Práce s Python v sadě Visual Studio (Windows)
 
@@ -174,7 +171,7 @@ A. Python je obecně interpretovaný jazyk, se kterým je kód spouštět na vy�
 Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual Studio, jak je popsáno v [Průvodce instalací](installing-python-support-in-visual-studio.md):
 
 - [Visual Studio 2017 (všechny edice)](https://www.visualstudio.com/vs/)
-- [Visual Studio 2015 (všechny edice)](https://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs)
+- Visual Studio 2015 (všechny edice)
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express pro Web, Update 2 nebo vyšší
 - Visual Studio 2013 Express pro plochu, Update 2 nebo vyšší
@@ -182,10 +179,12 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 - Visual Studio 2012 (Pro edice nebo vyšší)
 - Visual Studio 2010 SP1 (Pro edice nebo vyšší; vyžaduje .NET 4.5)
 
+Jsou k dispozici v sadě Visual Studio 2015 a starší [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/).
+
 > [!Important]
 > Funkce jsou plně podporované a udržovat jenom nejnovější verzi sady Visual Studio. Funkce jsou dostupné v starší verze, ale nejsou aktivně spravovány.
 
-| Podpora v jazyce Python | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Podpora v jazyce Python | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Správa více překladače | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Automaticky rozpoznat oblíbených překladače | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -194,7 +193,7 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 | PIP, snadná instalace | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Systém projektu | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Systém projektu | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Nový projekt z existujícího kódu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Zobrazit všechny soubory | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -202,7 +201,7 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 | Integrace Gitu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004;<sup>1</sup> | &#10007; |
 <br/>
 
-| Úpravy | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Úpravy | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | zvýraznění syntaxe | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Automatické dokončování | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -221,20 +220,20 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 | PyLint | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Interaktivní okno | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Interaktivní okno | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Interaktivní okno | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | IPython vložené grafů | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Desktop | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Desktop | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Aplikace konzoly a Windows | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | WPF IronPython (pomocí návrháře XAML) | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | IronPython Windows Forms | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Web | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Web | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Webový projekt Django | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Bottle webového projektu | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -242,7 +241,7 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 | Obecné webového projektu | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Azure | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Azure | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Nasazení do webové stránky | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004;<sup>2</sup> |
 | Nasazení do webové role | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> | &#10007; |
@@ -252,14 +251,14 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 | Připojit v Průzkumníku serveru | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> | &#10007; | &#10007; |
 <br/>
 
-| Django šablony | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Django šablony | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Ladění | &#10004; | &#10004; | &#10004; | &#10007; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Automatické dokončování | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004; | &#10004; |
 | Automatické dokončování šablon stylů CSS a JavaScript | &#10004; | &#10004; | &#10004; | &#10007; | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007; | &#10007; |
 <br/>
 
-| Ladění | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Ladění | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Ladění | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Ladění bez projektu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
@@ -271,12 +270,12 @@ Funkce jazyka Python lze nainstalovat v následujících edicích sady Visual St
 
 <a name="matrix-profiling"></a>
 
-| Profilace | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Profilace | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Profilace | &#10004; | &#10004; | &#10004; | &#10007; | &#10007; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Test | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 Web | 2013 pro + | 2012 pro + | 2010 SP1 Pro+ |
+| Test | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Průzkumníka testů | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 | Spuštění testu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |

@@ -1,12 +1,10 @@
 ---
-title: "Postupy: mezipaměti Data v dokumentu chráněném heslem | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: mezipaměti Data v dokumentu chráněném heslem | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 240debad9945c397290375f1931f4bce9ffa1f34
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 71ce65cd253ea6473a07a98542449a1e47ae9d7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Postupy: Ukládání dat do mezipaměti v dokumentu chráněném heslem
   Pokud přidáte data do mezipaměti data v dokumentu nebo sešitu, který je chráněný heslem, změny data uložená v mezipaměti nejsou uloženy automaticky. Změny můžete uložit data uložená v mezipaměti přepsáním dvě metody ve vašem projektu.  
@@ -57,7 +56,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Ukládat data do mezipaměti v sešitu aplikace Excel, který je chráněný heslem  
   
-1.  V `ThisWorkbook` třídy nebo některé z `Sheet`  *n*  třídy, označte veřejné pole nebo vlastnost ukládat do mezipaměti. Další informace najdete v tématu [ukládání dat do mezipaměti](../vsto/caching-data.md).  
+1.  V `ThisWorkbook` třídy nebo některé z `Sheet` *n* třídy, označte veřejné pole nebo vlastnost ukládat do mezipaměti. Další informace najdete v tématu [ukládání dat do mezipaměti](../vsto/caching-data.md).  
   
 2.  Přepsání <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> metoda v `ThisWorkbook` třídy a odebrat ochranu ze sešitu.  
   

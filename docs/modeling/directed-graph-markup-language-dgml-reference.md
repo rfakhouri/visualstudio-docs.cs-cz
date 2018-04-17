@@ -1,21 +1,19 @@
 ---
-title: "Řízené reference jazyka značení grafů (DGML) | Microsoft Docs"
-ms.custom: 
+title: Řízené reference jazyka značení grafů (DGML) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cfa143669f757a3a71ddb89ea731ffbfc5059d24
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 49ae2e854908afa6b7decb7ea94cca63b4203fbe
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referenční dokumentace jazyka přímého značení grafů (DGML)
 Přímé, že jazyk značení grafů (DGML) popisuje informace, které slouží pro vizualizaci a provádět analýzu složitost a je formát použitý k zachování map kódu v sadě Visual Studio. K popisu cyklické i Acyklické grafy směrovanou používá jednoduchý XML. Orientovaný graf je sada uzlů, které jsou propojeny pomocí propojení neboli hran. Uzly a propojení mohou být použity pro reprezentaci síťových struktur, jako jsou například prvky v softwarovém projektu.  
@@ -25,7 +23,7 @@ Přímé, že jazyk značení grafů (DGML) popisuje informace, které slouží 
 > [!NOTE]
 >  Při úpravách souboru .dgml usnadňuje technologie IntelliSense určení atributů, které jsou k dispozici pro každý prvek, a jejich hodnot. Pro určení barvy v atributu použijte názvy pro běžné barvy, například „Blue“ (modrá) nebo šestnáctkové hodnoty ARGB, jako je například „#ffa0b1c3“. Jazyk DGML používá malou podmnožinu formátů definice barev Windows Presentation Foundation (WPF). Další informace najdete v tématu [barvy třída](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a>Syntaxe DGML  
+##  <a name="DGML"></a> Syntaxe DGML  
  Následující tabulka popisuje typy elementů, které se používají v DGML:  
   
 -   `<DirectedGraph></DirectedGraph>`  
@@ -34,15 +32,15 @@ Přímé, že jazyk značení grafů (DGML) popisuje informace, které slouží 
   
      Následující seznam popisuje volitelné atributy, které lze vložit:  
   
-     `Background`-Barva pozadí map  
+     `Background` -Barva pozadí map  
   
-     `BackgroundImage`-Umístění soubor obrázku, který chcete použít jako pozadí map.  
+     `BackgroundImage` -Umístění soubor obrázku, který chcete použít jako pozadí map.  
   
-     `GraphDirection`– Když je nastavená mapy na strom rozložení (`Sugiyama`), uspořádání uzlů tak, aby Většina odkazů toku v zadaném směru: `TopToBottom`, `BottomToTop`, `LeftToRight`, nebo `RightToLeft`. V tématu [Změna rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `GraphDirection` – Když je nastavená mapy na strom rozložení (`Sugiyama`), uspořádání uzlů tak, aby Většina odkazů toku v zadaném směru: `TopToBottom`, `BottomToTop`, `LeftToRight`, nebo `RightToLeft`. V tématu [Změna rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `Layout`– Nastavte mapy na následující rozložení: `None`, `Sugiyama` (stromu rozložení), `ForceDirected` (rychlé clustery), nebo `DependencyMatrix`. V tématu [Změna rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `Layout` – Nastavte mapy na následující rozložení: `None`, `Sugiyama` (stromu rozložení), `ForceDirected` (rychlé clustery), nebo `DependencyMatrix`. V tématu [Změna rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
-     `NeighborhoodDistance`-Pokud mapy je nastaven na rozložení stromu nebo rozložení rychlé clustery, zobrazit pouze uzly, které jsou zadané číslo (1-7) odkazů mimo vybrané uzly. V tématu [Změna rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
+     `NeighborhoodDistance` -Pokud mapy je nastaven na rozložení stromu nebo rozložení rychlé clustery, zobrazit pouze uzly, které jsou zadané číslo (1-7) odkazů mimo vybrané uzly. V tématu [Změna rozložení mapy](../modeling/browse-and-rearrange-code-maps.md#Selecting).  
   
      Příklad:  
   
@@ -91,23 +89,23 @@ Přímé, že jazyk značení grafů (DGML) popisuje informace, které slouží 
   
      Tento prvek musí obsahovat následující atributy:  
   
-     `Id`-Jedinečný název uzlu a výchozí hodnota `Label` atribut, pokud žádné samostatné `Label` zadán atribut. Tento název se musí shodovat `Source` nebo `Target` atribut odkaz, který odkazuje.  
+     `Id` -Jedinečný název uzlu a výchozí hodnota `Label` atribut, pokud žádné samostatné `Label` zadán atribut. Tento název se musí shodovat `Source` nebo `Target` atribut odkaz, který odkazuje.  
   
      Následující seznam popisuje některé volitelné atributy, které lze vložit:  
   
-     `Label`-Zobrazovaný název uzlu.  
+     `Label` -Zobrazovaný název uzlu.  
   
      Atributy stylu. V tématu [mapuje přizpůsobit kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     `Category`-Název kategorie, která identifikuje elementy, které sdílejí tento atribut. Další informace najdete v tématu `<Category/>` elementu.  
+     `Category` -Název kategorie, která identifikuje elementy, které sdílejí tento atribut. Další informace najdete v tématu `<Category/>` elementu.  
   
-     `Property`-Název vlastnosti, která identifikuje prvky, které mají stejnou hodnotu vlastnosti. Další informace najdete v tématu `<Property/>` elementu.  
+     `Property` -Název vlastnosti, která identifikuje prvky, které mají stejnou hodnotu vlastnosti. Další informace najdete v tématu `<Property/>` elementu.  
   
-     `Group`– Pokud uzel obsahuje jiné uzly, nastavte tento atribut na `Expanded` nebo `Collapsed` zobrazit nebo skrýt její obsah. Musí existovat `<Link/>` element, který obsahuje `Category="Contains"` atribut a Určuje nadřazený uzel jako zdrojový uzel a podřízený uzel jako cílový uzel. V tématu [skupiny elementy kódu](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
+     `Group` – Pokud uzel obsahuje jiné uzly, nastavte tento atribut na `Expanded` nebo `Collapsed` zobrazit nebo skrýt její obsah. Musí existovat `<Link/>` element, který obsahuje `Category="Contains"` atribut a Určuje nadřazený uzel jako zdrojový uzel a podřízený uzel jako cílový uzel. V tématu [skupiny elementy kódu](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).  
   
-     `Visibility`– Nastavte tento atribut na `Visible`, `Hidden`, nebo `Collapsed`. Používá `System.Windows.Visibility`. V tématu [skrytí nebo zobrazení uzlů a odkazy](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
+     `Visibility` – Nastavte tento atribut na `Visible`, `Hidden`, nebo `Collapsed`. Používá `System.Windows.Visibility`. V tématu [skrytí nebo zobrazení uzlů a odkazy](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).  
   
-     `Reference`– Nastavte tento atribut propojení dokumentu nebo adresa URL. V tématu [dokumenty nebo adresy URL propojit elementy kódu a odkazy](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
+     `Reference` – Nastavte tento atribut propojení dokumentu nebo adresa URL. V tématu [dokumenty nebo adresy URL propojit elementy kódu a odkazy](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).  
   
      Příklad:  
   
@@ -154,19 +152,19 @@ Přímé, že jazyk značení grafů (DGML) popisuje informace, které slouží 
   
      Tento prvek musí obsahovat následující atributy:  
   
-     `Source`-Zdrojový uzel odkazu  
+     `Source` -Zdrojový uzel odkazu  
   
-     `Target`-Cílový uzel odkazu  
+     `Target` -Cílový uzel odkazu  
   
      Následující seznam popisuje některé volitelné atributy, které lze vložit:  
   
-     `Label`-Zobrazovaný název odkazu  
+     `Label` -Zobrazovaný název odkazu  
   
      Atributy stylu. V tématu [mapuje přizpůsobit kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-     `Category`-Název kategorie, která identifikuje elementy, které sdílejí tento atribut. Další informace najdete v tématu `<Category/>` elementu.  
+     `Category` -Název kategorie, která identifikuje elementy, které sdílejí tento atribut. Další informace najdete v tématu `<Category/>` elementu.  
   
-     `Property`-Název vlastnosti, která identifikuje prvky, které mají stejnou hodnotu vlastnosti. Další informace najdete v tématu `<Property/>` elementu.  
+     `Property` -Název vlastnosti, která identifikuje prvky, které mají stejnou hodnotu vlastnosti. Další informace najdete v tématu `<Property/>` elementu.  
   
      Příklad:  
   
@@ -209,13 +207,13 @@ Přímé, že jazyk značení grafů (DGML) popisuje informace, které slouží 
   
      Tento prvek musí obsahovat následující atributy:  
   
-     `Id`-Jedinečný název kategorie a výchozí hodnota `Label` atribut, pokud žádné samostatné `Label` zadán atribut.  
+     `Id` -Jedinečný název kategorie a výchozí hodnota `Label` atribut, pokud žádné samostatné `Label` zadán atribut.  
   
      Následující seznam popisuje některé volitelné atributy, které lze vložit:  
   
-     `Label`-A čtečky popisný název pro kategorii.  
+     `Label` -A čtečky popisný název pro kategorii.  
   
-     `BasedOn`-Nadřazené kategorie, ze kterého `<Category/>` aktuálního elementu dědí.  
+     `BasedOn` -Nadřazené kategorie, ze kterého `<Category/>` aktuálního elementu dědí.  
   
      V příkladu pro tento element `FailedTest` kategorie dědí jeho `Stroke` atribut z `PassedTest` kategorie. Najdete v části "postup vytvoření hierarchické kategorie" v [mapuje přizpůsobit kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
@@ -266,9 +264,9 @@ Přímé, že jazyk značení grafů (DGML) popisuje informace, které slouží 
   
      Tento prvek musí obsahovat následující atributy:  
   
-    -   `Id`-Jedinečný název vlastnosti a výchozí hodnota `Label` atribut, pokud žádné samostatné `Label` zadán atribut.  
+    -   `Id` -Jedinečný název vlastnosti a výchozí hodnota `Label` atribut, pokud žádné samostatné `Label` zadán atribut.  
   
-    -   `DataType`-Typ dat uložených vlastností  
+    -   `DataType` -Typ dat uložených vlastností  
   
      Pokud chcete, aby vlastnost zobrazí v **vlastnosti** okna, použijte `Label` vlastnosti k určení, zobrazovaný název vlastnosti.  
   
@@ -301,7 +299,7 @@ Přímé, že jazyk značení grafů (DGML) popisuje informace, které slouží 
     </DirectedGraph>  
     ```  
   
-###  <a name="AddAlias"></a>Aliasy pro běžně používané cesty  
+###  <a name="AddAlias"></a> Aliasy pro běžně používané cesty  
  Nahrazení běžně používaných cest aliasy pomáhá zmenšit velikost souboru .dgml a snižuje čas potřebný k načtení nebo uložení souboru. Chcete-li vytvořit alias, přidejte `<Paths></Paths>` na konci souboru .dgml. V této části, přidejte `<Path/>` elementu, který chcete definovat alias pro cestu:  
   
 ```xml  

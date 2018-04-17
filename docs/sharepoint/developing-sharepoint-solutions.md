@@ -1,13 +1,10 @@
 ---
-title: "Vývoj řešení služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: Vývoj řešení služby SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.Project.ProjectProperties
 - VS.SharePointTools.Project.ProjectItemProperties
@@ -18,14 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, overview
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 848ddab54dd9e7617cce7758fa06d939700f2c3b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: cf4e6f10d76b29c5bf70ce01d99a2103672ae213
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="developing-sharepoint-solutions"></a>Vývoj řešení služby SharePoint
   Několik šablon typ projektu služby SharePoint jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pro vytváření webů služby SharePoint a prvky webu. Seznam dostupné typy projektů, naleznete v části [projektu služby SharePoint a šablony položek projektu](../sharepoint/sharepoint-project-and-project-item-templates.md). Následuje popis elementy a vlastnosti projektu služby SharePoint.  
@@ -56,7 +53,7 @@ ms.lasthandoff: 01/10/2018
  Pokud funkce přidá do projektu služby SharePoint, zobrazí se v **Průzkumníku řešení** jako uzel s výchozím názvem funkce*x*.feature, kde *x* je jedinečné číslo. Po nasazení funkce na server služby SharePoint, Správce služby SharePoint můžete aktivovat, zpřístupnění uživatele webů služby SharePoint.  
   
 #### <a name="package-node"></a>Uzel balíčku  
- **Balíček** uzel obsahuje jeden soubor, který slouží jako mechanismus distribuce pro projektu služby SharePoint. Tento soubor, označuje jako *řešení**balíček*, je. Na základě souboru CAB s. WSP rozšíření. Balíček řešení je nasadit, opakovaně použitelný soubor, který obsahuje sadu funkcí, definice webů a sestavení, která platí pro weby služby SharePoint a která můžete povolit nebo zakázat jednotlivě. **Balíček** uzel obsahuje také vždy souboru, který je pojmenován Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] definiční soubor balíčku. Jakmile balíček je nasazen na serveru se systémem SharePoint, Správce služby SharePoint můžete ho nainstalovat a aktivovat jeho funkce.  
+ **Balíček** uzel obsahuje jeden soubor, který slouží jako mechanismus distribuce pro projektu služby SharePoint. Tento soubor, označuje jako *řešení ** balíček*, je. Na základě souboru CAB s. WSP rozšíření. Balíček řešení je nasadit, opakovaně použitelný soubor, který obsahuje sadu funkcí, definice webů a sestavení, která platí pro weby služby SharePoint a která můžete povolit nebo zakázat jednotlivě. **Balíček** uzel obsahuje také vždy souboru, který je pojmenován Package.wspdef, [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] definiční soubor balíčku. Jakmile balíček je nasazen na serveru se systémem SharePoint, Správce služby SharePoint můžete ho nainstalovat a aktivovat jeho funkce.  
   
  Můžete zobrazit nebo změnit obsah balíčku v Návrháři balíček dvojitým kliknutím na uzel balíček nebo otevřením jeho místní nabídky a pak vyberete **otevřete**. Další informace najdete v tématu [vytváření balíčků řešení služby SharePoint](../sharepoint/creating-sharepoint-solution-packages.md).  
   
@@ -132,10 +129,10 @@ ms.lasthandoff: 01/10/2018
 |[Postupy: Přidání a odebrání mapovaných složek](../sharepoint/how-to-add-and-remove-mapped-folders.md)|Popisuje, jak mapované složky lze přidat do projektu vám umožňuje snadnější přístup k prostředkům služby SharePoint.|  
 |[Aspekty řešení v izolovaném prostoru](../sharepoint/sandboxed-solution-considerations.md)|Popisuje problémy související s řešení v izolovaném prostoru.|  
 |[Zabezpečení pro řešení služby SharePoint](../sharepoint/security-for-sharepoint-solutions.md)|Popisuje důležité informace o zabezpečení pro vývoj řešení služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|  
-|[Dialogové okno pro výběr adresy URL &#40; Vývoj pro SharePoint v sadě Visual Studio &#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Popisuje dialogové okno, které můžete použít k přidání odkazů na cestu k prostředkům ve vašem projektu nebo na místním serveru SharePoint.|  
+|[Dialogové okno pro výběr adresy URL &#40;vývoj pro SharePoint v sadě Visual Studio&#41;](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|Popisuje dialogové okno, které můžete použít k přidání odkazů na cestu k prostředkům ve vašem projektu nebo na místním serveru SharePoint.|  
   
 ## <a name="see-also"></a>Viz také  
- [Začínáme &#40; Vývoj pro SharePoint v sadě Visual Studio &#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
+ [Začínáme &#40;vývoj pro SharePoint v sadě Visual Studio&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)   
  [Procházení připojení služby SharePoint pomocí Průzkumníka serveru](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [Sestavování a ladění řešení služby SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [Balení a nasazení řešení služby SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  

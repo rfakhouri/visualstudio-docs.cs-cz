@@ -1,13 +1,10 @@
 ---
-title: "Vytváření oblastí formulářů aplikace Outlook | Microsoft Docs"
-ms.custom: 
+title: Vytváření oblastí formulářů aplikace Outlook | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - MICROSOFT.OFFICE.TOOLS.OUTLOOK.FORMREGION
 dev_langs:
@@ -19,14 +16,14 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], form regions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 86f325784fdd175b5b449eb4d55d920a3f9df2d4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 550514444e7931b188951bbf05f8d371bc361aca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-outlook-form-regions"></a>Vytváření oblastí formulářů aplikace Outlook
   Oblasti formuláře můžete použít k přizpůsobení formulářů aplikace Microsoft Office Outlook. Visual Studio poskytuje pokročilé nástroje, které bylo snazší pro vás k návrhu, vývoji a ladění oblasti formuláře.  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Nasazení oblasti formuláře](#Deploying)  
   
-##  <a name="Enhance"></a>Výhody používání oblasti formuláře  
+##  <a name="Enhance"></a> Výhody používání oblasti formuláře  
  Oblasti formuláře nabízí mnoho vylepšení přes tradiční vývoje formulářů aplikace Outlook:  
   
 -   Úprava výchozí stránky všechny standardní formuláře.  
@@ -64,10 +61,10 @@ ms.lasthandoff: 01/10/2018
   
  Další informace najdete v tématu [přizpůsobení stránky formuláře a oblasti formuláře](http://msdn.microsoft.com/library/office/ff869060.aspx).  
   
-##  <a name="Adding"></a>Přidání oblasti formuláře aplikace Outlook do projektu  
+##  <a name="Adding"></a> Přidání oblasti formuláře aplikace Outlook do projektu  
  Můžete použít **nové oblasti formuláře aplikace Outlook** Průvodce návrhu nové oblasti formuláře nebo import oblasti formuláře, který byl navržen v aplikaci Outlook. Navíc pokud máte oblasti formuláře, který jste použili v jiném projektu doplňku VSTO pro Outlook, můžete opakovaně použít vaše stávající oblasti formuláře.  
   
-###  <a name="CreatingFormRegion"></a>Pomocí Průvodce vytvořením nové oblasti formuláře  
+###  <a name="CreatingFormRegion"></a> Pomocí Průvodce vytvořením nové oblasti formuláře  
  Chcete-li vytvořit oblasti formuláře, přidejte **oblasti formuláře aplikace Outlook** položku do projektu doplňku VSTO v Outlooku. Tím se spustí **nové oblasti formuláře aplikace Outlook** průvodce.  
   
  Použijte průvodce k označení, zda chcete návrhu nové oblasti formuláře nebo import oblasti formuláře, který byl navržen v aplikaci Outlook. Další informace o návrhu nové oblasti formuláře najdete v tématu [pomocí návrháře oblasti formuláře](#UsingFormRegionDesigner). Další informace o používání oblasti formuláře navržené v aplikaci Outlook najdete v tématu [import navržené oblasti formuláře v aplikaci Outlook](#UsingFormRegionDesignedOutlook).  
@@ -106,12 +103,12 @@ ms.lasthandoff: 01/10/2018
   
  Většina třídu objektů factory oblasti formuláře je implementovaná v souboru návrháře oblasti formuláře. Ale `FormRegionInitializing` obslužné rutiny události vystavený v souboru kódu oblasti formuláře. Tuto obslužnou rutinu události můžete použít k určení, zda má aplikace Outlook zobrazit oblasti formuláře. Další informace najdete v tématu [zpracování události oblasti formuláře](#HandlingFormRegionEvents).  
   
-###  <a name="AddingExistingFormRegion"></a>Přidání existující oblasti formuláře do projektu  
+###  <a name="AddingExistingFormRegion"></a> Přidání existující oblasti formuláře do projektu  
  Pokud máte oblasti formuláře aplikace Outlook, který jste použili v jiném projektu aplikace Outlook, můžete opakovaně použít jej v aktuálním projektu doplňku VSTO pro Outlook pomocí **přidat existující položku** dialogové okno.  
   
  Existující oblasti formuláře musí mít soubor kódu (vb nebo .cs); Nelze přidat úložiště formuláře aplikace Outlook (.ofs) souborů pomocí **přidat existující položku** dialogové okno. Můžete však vytvořit novou oblasti formuláře importováním souboru úložiště formuláře aplikace Outlook. Další informace najdete v tématu [postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
-##  <a name="UsingFormRegionDesigner"></a>Pomocí návrháře oblasti formuláře  
+##  <a name="UsingFormRegionDesigner"></a> Pomocí návrháře oblasti formuláře  
  Návrhář oblasti formuláře umožňuje návrh rozložení a vzhled oblasti formuláře. Přetáhněte spravované ovládací prvky na plochu návrháře, dvakrát klikněte na ovládací prvky pro otevření obslužné rutiny událostí a v nastavit vlastnosti **vlastnosti** okno.  
   
 > [!NOTE]  
@@ -129,7 +126,7 @@ ms.lasthandoff: 01/10/2018
   
  Návrhář podporuje oblasti formuláře pouze spravovaných ovládacích prvků. Nelze přidat nativní ovládací prvky aplikace Outlook.  
   
-##  <a name="UsingFormRegionDesignedOutlook"></a>Import oblasti formuláře navržené v aplikaci Outlook  
+##  <a name="UsingFormRegionDesignedOutlook"></a> Import oblasti formuláře navržené v aplikaci Outlook  
  Při návrhu v aplikaci Outlook, můžete přidat nativní ovládací prvky aplikace Outlook k oblasti formuláře. Nativní ovládací prvky aplikace Outlook umožňují vázat na data Outlooku v době návrhu. Spravované ovládací prvky přidat nebo změnit návrh oblasti formuláře však nelze pak použít Návrháře oblasti formuláře.  
   
  Oblasti formuláře do projektu doplňku VSTO v Outlooku můžete importovat pomocí **nové oblasti formuláře aplikace Outlook** průvodce. Na **vyberte způsob vytvoření oblasti formuláře** vyberte **importovat soubor úložiště formuláře aplikace Outlook (.ofs)**. Vyhledejte umístění souboru úložiště formuláře aplikace Outlook souboru (.ofs). (Oblastí formulářů aplikace outlook uloží jako soubory .ofs.)  
@@ -138,7 +135,7 @@ ms.lasthandoff: 01/10/2018
   
  Zpracování událostí v projektu jazyka Visual Basic, vyberte ze seznamu Metoda název v horní části editoru kódu událost.  
   
- Zpracování událostí v projektu C#, se přihlásit k odběru události ovládacího prvku v <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> metoda. Další informace najdete v tématu [postupy: přihlášení a odhlášení odběru událostí &#40; C &#35; Průvodce programováním &#41; ](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
+ Zpracování událostí v projektu C#, se přihlásit k odběru události ovládacího prvku v <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> metoda. Další informace najdete v tématu [postupy: přihlášení a odhlášení odběru událostí &#40;C&#35; Průvodce programováním&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events).  
   
  Můžete změnit vlastnosti oblasti formuláře v `InitializeManifest` metoda třídu objektů factory oblasti formuláře.  
   
@@ -148,12 +145,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="updating-an-imported-form-regions-design"></a>Aktualizace návrhu oblast importované formuláře  
  Můžete přidat, odebrat ani změnit ovládacích prvků na oblasti formuláře. Než to uděláte, zálohujte žádný kód, který jste přidali do souboru kódu oblasti formuláře. Potom otevřete souboru .ofs v aplikaci Outlook, upravit oblasti formuláře a potom uložte změny. Použití **nové oblasti formuláře aplikace Outlook** Průvodce pro import souboru .ofs upravené. Potom můžete vložit kódu do nového souboru kód oblasti formuláře.  
   
-##  <a name="AddingCustomCode"></a>Přidání vlastního kódu do oblasti formuláře  
+##  <a name="AddingCustomCode"></a> Přidání vlastního kódu do oblasti formuláře  
  <xref:Microsoft.Office.Tools.Outlook> Obor názvů umožňuje přístup k tříd, které představují oblasti formuláře, se zobrazí oblasti formuláře položku aplikace Outlook a další užitečné položky. **Oblasti formuláře aplikace Outlook** položky automaticky přidá odkaz na toto sestavení v projektu a vloží odpovídající **pomocí** nebo **importy** příkaz v horní části soubor kód oblasti formuláře.  
   
  Tříd, metod a vlastností v oboru názvů Microsoft.Office.Interop.Outlook můžete použít k provádění většiny úloh programování vaší aplikace Outlook. Další informace o modelu objektů aplikace Outlook najdete v tématu [přehled modelu objektů aplikace Outlook](../vsto/outlook-object-model-overview.md). Příklady typických úkolů, které tvoří použít modelu objektů aplikace Outlook, najdete v části [řešení pro aplikaci Outlook](../vsto/outlook-solutions.md).  
   
-###  <a name="HandlingFormRegionEvents"></a>Zpracování událostí oblasti formuláře  
+###  <a name="HandlingFormRegionEvents"></a> Zpracování událostí oblasti formuláře  
  **Oblasti formuláře aplikace Outlook** následující obslužné rutiny událostí tři položky automaticky přidá do souboru kódu oblasti formuláře.  
   
 |Událost|Popis|  
@@ -162,7 +159,7 @@ ms.lasthandoff: 01/10/2018
 |FormRegionShowing|Vyvolá se po vytvoření instance oblasti formuláře, ale před zobrazením této oblasti.|  
 |FormRegionClosed|Vyvolá se před uzavřením oblasti formuláře.|  
   
-##  <a name="Building"></a>Sestavení projektu  
+##  <a name="Building"></a> Sestavení projektu  
  Při sestavování projektu doplňku VSTO pro Outlook, která obsahuje oblasti formuláře, Visual Studio přidá do registru následující informace:  
   
 -   Klíč pro každou třídu zpráv, který je přidružen jeden nebo více oblastí formulářů.  
@@ -171,12 +168,12 @@ ms.lasthandoff: 01/10/2018
   
  Outlook používá tyto informace načíst oblasti formuláře.  
   
-##  <a name="Debugging"></a>Ladění oblasti formuláře  
+##  <a name="Debugging"></a> Ladění oblasti formuláře  
  Můžete ladit aplikace Outlook VSTO doplněk obsahující oblasti formuláře stejně, jako by ladění dalších [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projekty. Při prvním spuštění [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicí program, Visual Studio automaticky spustí aplikaci Outlook.  
   
  K zobrazení oblasti formuláře, je nutné otevřít příslušnou položku aplikace Outlook. Například pokud oblast sousedících formuláře se připojí k dolnímu okraji položku e-mailu, otevřete položku e-mailu.  
   
-##  <a name="Deploying"></a>Nasazení oblasti formuláře  
+##  <a name="Deploying"></a> Nasazení oblasti formuláře  
  Oblasti formuláře se nasazují automaticky pomocí přidružené Add-in VSTO pro Outlook. Proto nemáte žádné zvláštní úkoly nasazení oblasti formuláře. Další informace o nasazení doplňků VSTO najdete v tématu [nasazení řešení Office](../vsto/deploying-an-office-solution.md).  
   
 ## <a name="related-topics"></a>Související témata  

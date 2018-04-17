@@ -1,23 +1,24 @@
 ---
-title: "Vývoj osvědčených postupů pro COM, VSTO a VBA doplňky v sadě Office | Microsoft Docs"
-ms.custom: 
+title: Vývoj osvědčených postupů pro COM, VSTO a VBA doplňky v sadě Office | Microsoft Docs
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: 
-helpviewer_keywords: 
+ms.technology:
+- office-development
+ms.topic: conceptual
+dev_langs:
+- ''
+helpviewer_keywords:
+- ''
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 2a1b6b9270207b3d0f8d415655231af4456e61b4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Vývoj osvědčené postupy pro COM, VSTO a VBA doplňky v Office
   Pokud vyvíjíte COM, postupujte podle VSTO nebo VBA pro vytváření doplňků pro Office, vývoj osvědčené postupy, které jsou popsané v tomto článku.   To pomůže zajistit:
@@ -62,7 +63,7 @@ Zákazníci žádáme ISV poskytnout příkazy podpory pro jejich COM, VSTO VBA 
 
 Pokud chcete zadat příkazy podpory pro klientské aplikace sady Office (například Word nebo Excel), nejdřív ověřte, zda doplňky spustit v aktuální verzi Office a pak potvrzení poskytovat aktualizace, pokud vaše doplněk dělí v budoucí verzi. Nemáte k testování doplňků při vydání nového sestavení nebo aktualizace Office. Microsoft zřídka mění rozšiřitelnost platformy COM, VSTO a VBA v Office a tyto změny budou dobře zdokumentovat.
 
->Důležité: Microsoft udržuje seznam podporovaných doplňky pro připravenosti sestavy a ISV kontaktní informace. Doplněk uvedené získáte v tématu [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Důležité: Microsoft udržuje seznam podporovaných doplňky pro připravenosti sestavy a ISV kontaktní informace. Doplněk uvedené získáte v tématu [ https://aka.ms/readyforwindows ](https://aka.ms/readyforwindows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Použijte nástroj Sledování procesu pomáhají ladit instalace nebo načítání problémy
 Pokud vaše doplněk má problémy s kompatibilitou při instalaci nebo zatížení, mohou být s problémy s přístupem k souborům a registru. Použití [monitorování procesu](/sysinternals/downloads/procmon) nebo podobné ladicí nástroj protokolování a porovnání chování proti pracovního prostředí, aby bylo možné identifikovat problém.

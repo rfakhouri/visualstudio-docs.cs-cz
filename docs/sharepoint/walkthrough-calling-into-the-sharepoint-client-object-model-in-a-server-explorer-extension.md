@@ -1,12 +1,10 @@
 ---
-title: "Návod: Volání do objektového modelu klienta pro SharePoint v rozšíření Průzkumníka serveru | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Volání do objektového modelu klienta pro SharePoint v rozšíření Průzkumníka serveru | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68836c8e95d7a9a53a1e1c2b90f7ee48e91106e6
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4951d9960a3027e8d72bb0fbc72d551f123993ce
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Návod: Volání do modelu klientského objektu služby SharePoint v rozšíření průzkumníka serveru
   Tento návod ukazuje, jak volat objektového modelu klienta služby SharePoint z rozšíření pro **připojení služby SharePoint** uzlu v **Průzkumníka serveru**. Další informace o tom, jak pomocí objektového modelu klienta služby SharePoint, naleznete v části [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).  
@@ -82,7 +81,7 @@ Znalost následující koncepty je užitečné, ale není nutné k dokončení p
   
 6.  V **název** zadejte **WebPartNode**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **WebPartNode** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **WebPartNode** projektu do **Průzkumníku řešení**.  
   
 #### <a name="to-create-the-extension-project"></a>Vytvoření projektu rozšíření  
   
@@ -96,7 +95,7 @@ Znalost následující koncepty je užitečné, ale není nutné k dokončení p
   
 5.  V **název** zadejte **WebPartNodeExtension**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **WebPartNodeExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **WebPartNodeExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
 6.  Odstraňte soubor kódu Class1 z projektu.  
   
@@ -287,6 +286,6 @@ Znalost následující koncepty je užitečné, ale není nutné k dokončení p
  [Rozšíření uzlu připojení služby SharePoint v Průzkumníku serveru](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [Návod: Rozšíření Průzkumníka serveru pro zobrazení webové části](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
  [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons)   
- [Vytvoření ikony nebo jiného obrázku &#40; Editor obrázků pro ikony &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Vytvoření ikony nebo jiného obrázku &#40;Editor obrázků pro ikony&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

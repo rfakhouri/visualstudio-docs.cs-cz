@@ -1,20 +1,20 @@
 ---
-title: "Emulace reálného využití webové stránky pro zatížení testování v sadě Visual Studio | Microsoft Docs"
+title: Emulace reálného využití webové stránky pro zatížení testování v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b5df4fe7db024ea7d958494faf4f332fc1a30db5
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 0458135040209f79648ca299bc56ba3acae21908
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>Emulovat očekávaného reálného využití webové stránky nebo aplikace v zátěžovém testu s použitím modelů kombinace testů
 
@@ -42,7 +42,7 @@ Určete jednu z následujících možností model kombinace testů pro vaše sc�
 
 -   TestA (50%)
 
--   TestB (35%)
+-   TestB (35 %)
 
 -   TestC (15%)
 

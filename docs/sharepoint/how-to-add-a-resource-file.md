@@ -1,12 +1,10 @@
 ---
-title: "Postupy: Přidání zdrojového souboru | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Přidání zdrojového souboru | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, resource files
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 47cae5fac3ddbcbc34535176701d0293ae4f66ba
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 132a5b5933b1bc96244238570091e522f8af91d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-resource-file"></a>Postupy: Přidání zdrojového souboru
   Příkazy pro přidání souborů prostředků je v místní nabídce uzlu řešení a funkce uzlů v Průzkumníku řešení. Další informace najdete v tématu [lokalizace řešení služby SharePoint](../sharepoint/localizing-sharepoint-solutions.md).  
@@ -41,7 +40,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  V **přidat prostředek** dialogovém okně vyberte jazykovou verzi pro soubor prostředků, jako je angličtina (Spojené státy).  
   
-     Tento krok přidává globální soubor prostředků pro vaše řešení ve formátu, prostředků*x***.** *jazykovou verzi***.** resx, jako je například Resource1.en-US.resx.  
+     Tento krok přidává globální soubor prostředků pro vaše řešení ve formátu, prostředků * x***.*** jazyková verze ***.** resx, jako je například Resource1.en-US.resx.  
   
 5.  Když **Editor prostředků** se otevře v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], přidat prostředky do souboru prostředků.  
   
@@ -51,7 +50,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  V **Průzkumníku řešení**, otevřete místní nabídku pro název funkce v rámci **funkce** uzel a potom zvolte **přidat prostředek funkce**.  
   
-     Tento krok přidává funkce ve formátu souboru prostředků *ResourceFileName***.** *jazykovou verzi***.** resx, jako je například Feature1.en-US.resx.  
+     Tento krok přidává funkce ve formátu souboru prostředků * ResourceFileName***.*** jazyková verze ***.** resx, jako je například Feature1.en-US.resx.  
   
 3.  Když **Editor prostředků** se otevře v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], přidat prostředky do souboru prostředků.  
   

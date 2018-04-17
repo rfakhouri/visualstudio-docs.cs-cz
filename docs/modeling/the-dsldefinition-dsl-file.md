@@ -1,23 +1,21 @@
 ---
 title: Soubor DslDefinition.dsl | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92bd27f1590aae455c0d5bba540720421338b63c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 361f723997f898091b05a80cfb55c9cc5680ceb3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Soubor DslDefinition.dsl
 Toto téma popisuje strukturu souboru DslDefinition.dsl v projektu Dsl [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] řešení, který definuje *jazyka domény*. Soubor DslDefinition.dsl popisuje třídy a vztahy jazyka specifické pro doménu, společně s diagramu, tvarů, konektory, formát serializace a **sada nástrojů** jazyka specifické pro doménu a jeho Nástroje pro úpravy. V řešení jazyka domény je generována kód, který definuje tyto nástroje podle informací v souboru DslDefinition.dsl.  
@@ -38,7 +36,7 @@ Toto téma popisuje strukturu souboru DslDefinition.dsl v projektu Dsl [!INCLUDE
  Tento oddíl definuje každý vztah v modelu. Zdroj a cíl představují sociálními relace.  
   
  Typy  
- Tento oddíl definuje každý typ a jeho oboru názvů. Vlastnosti domény mají dva typy. `DomainEnumerations`jsou definované v modelu a generovat typy do DomainModel.cs. `ExternalTypes`odkazovat na typy, které jsou definovány jinde (například `String` nebo `Int32`) a není nic generování.  
+ Tento oddíl definuje každý typ a jeho oboru názvů. Vlastnosti domény mají dva typy. `DomainEnumerations` jsou definované v modelu a generovat typy do DomainModel.cs. `ExternalTypes` odkazovat na typy, které jsou definovány jinde (například `String` nebo `Int32`) a není nic generování.  
   
  Obrazce  
  Tento oddíl definuje tvarů, které popisují, jak se zobrazí v Návrháři modelu. Tyto geometrické obrazce jsou namapované na třídy v modelu v části diagramu.  
@@ -135,7 +133,7 @@ Toto téma popisuje strukturu souboru DslDefinition.dsl v projektu Dsl [!INCLUDE
 </DomainClass>  
 ```  
   
- `NamedElement`je základem řadu jiné třídy, jako `Component`, která má své vlastní vlastnosti kromě `Name` vlastnosti, která je zděděn od `NamedElement`. Baseclass – podřízený uzel obsahuje odkaz na přezdívka. Protože odkazovaná třídy se o stejný obor názvů, je vyžadován pouze jeho název v Přezdívka:  
+ `NamedElement` je základem řadu jiné třídy, jako `Component`, která má své vlastní vlastnosti kromě `Name` vlastnosti, která je zděděn od `NamedElement`. Baseclass – podřízený uzel obsahuje odkaz na přezdívka. Protože odkazovaná třídy se o stejný obor názvů, je vyžadován pouze jeho název v Přezdívka:  
   
 ```  
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">  
@@ -473,7 +471,7 @@ Toto téma popisuje strukturu souboru DslDefinition.dsl v projektu Dsl [!INCLUDE
       <XmlClassData ...>...</XmlClassData>  
 ```  
   
--   ConnectorHasDecorators se vnoření vztah mezi `Connector` a `Decorator`. `UseFullForm`byla nastavena tak, aby název relace se zobrazí s její seznam vlastností pro každý odkaz z objektu konektoru. Ale `OmitElement` má také nastavit tak, aby žádné `RoleElementName` uzavře více odkazů, která jsou vložena do `Connector`:  
+-   ConnectorHasDecorators se vnoření vztah mezi `Connector` a `Decorator`. `UseFullForm` byla nastavena tak, aby název relace se zobrazí s její seznam vlastností pro každý odkaz z objektu konektoru. Ale `OmitElement` má také nastavit tak, aby žádné `RoleElementName` uzavře více odkazů, která jsou vložena do `Connector`:  
   
 ```  
 <Connector Name="AssociationLink" ...>  
@@ -489,7 +487,7 @@ Toto téma popisuje strukturu souboru DslDefinition.dsl v projektu Dsl [!INCLUDE
 ## <a name="shapes-and-connectors"></a>Konektory a obrazců  
  Definice tvar a konektor dědí z třídy domény, kromě těchto atributů a jeho podřízené uzly:  
   
--   `Color`a `Line``Style` atributy.  
+-   `Color` a `Line``Style` atributy.  
   
 -   **ExposesFillColorAsProperty** a několika atributů, podobně jako. Tyto logické atributy zkontrolujte proměnnou odpovídající vlastnost uživatelem. Obecně platí, když jazyk kliknutí obrazce v diagramu, vlastnosti, zobrazí se v **vlastnosti** okna jsou instance třídy domény, ke které je mapován tvaru. Pokud `ExposesFillColorAsProperty` je nastaven na hodnotu true, vlastnost tvar samotný taky se zobrazí.  
   

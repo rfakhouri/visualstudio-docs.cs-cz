@@ -1,15 +1,12 @@
 ---
-title: Rychlý start - klonování úložiště kód Python | Microsoft Docs
+title: Rychlý start - klonování úložiště Python kódu
 description: V tento rychlý start vytvořte projekt Python v sadě Visual Studio klonováním Python koans úložiště pomocí sady Visual Studio Team Explorer.
 ms.custom: mvc
 ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -17,11 +14,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9acad900f31d3579156cd266ebc10c244a1de39c
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 80b840e14332498e86f7136f19ea6b7b106812b6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Rychlý úvod: klonovat úložiště Python kódu v sadě Visual Studio
 

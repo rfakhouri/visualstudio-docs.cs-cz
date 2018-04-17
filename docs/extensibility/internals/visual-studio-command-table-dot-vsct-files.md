@@ -1,26 +1,24 @@
 ---
-title: "Visual Studio příkaz tabulky (. Soubory Vsct) | Microsoft Docs"
-ms.custom: 
+title: Visual Studio příkaz tabulky (. Soubory Vsct) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, overview
 - Visual Studio command table configuration files (VSCT), overview
 ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
-caps.latest.revision: "22"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 71a202bdb71469e4d6b46eb537147092b1ea9013
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 3407c21f242cf45337ddad2ff19993d9e0130fbf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio příkaz tabulky (. Soubory Vsct)
 Příkaz tabulky konfigurační soubor je textový soubor, který popisuje sadu příkazů, které obsahuje VSPackage. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Příkaz tabulky (VSCT) kompilátoru kompilovaný konfiguraci na základě XML (soubory .vsct) do binární příkaz tabulky výstupní (.cto) soubory. Výsledná .cto soubory jsou stejné jako ty, které jsou vytvořené pomocí kompilátoru tabulky (CTC) příkaz zkompilovat .ctc konfigurační soubory. Soubory formátu XML .vsct však má několik výhod, jako je například editoru XML a XML IntelliSense.  

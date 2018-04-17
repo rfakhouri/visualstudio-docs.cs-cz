@@ -1,23 +1,21 @@
 ---
-title: "Postupy: určení umístění souboru se symboly z příkazového řádku | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: určení umístění souboru se symboly z příkazového řádku | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
-caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 319d828991cff85987108cc193498b14438e5c62
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: b62048cdc0bacfc94c855d8397d6be93ba72c524
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Postupy: Určení umístění souboru se symboly z příkazového řádku
 Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbolu například názvy funkcí a čísla řádků, vyžaduje přístup k souborům symbolu (.pdb) PROFILOVANÉHO složek a souborů systému Windows. Symbol soubory se vytvoří při kompilaci komponentu. Další informace najdete v tématu [vsperfreport –](../profiling/vsperfreport.md). Vsperfreport – automaticky vyhledá soubory symbolů v následujících umístěních:  
@@ -49,7 +47,7 @@ Vsperfreport – nástroj příkazového řádku k zobrazení informací o symbo
   
 2.  Použijte následující syntaxi nastavit **_NT_SYMBOL_PATH** proměnné prostředí nebo možnost /SymbolPath vsperfreport –:  
   
-     **SRV\***  *LocalStore*  **\*http://msdl.microsoft.com/downloads/symbols**  
+     **SRV\***  *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
      kde *LocalStore* je cesta místní adresář, který jste vytvořili.  
   

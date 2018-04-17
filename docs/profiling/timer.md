@@ -1,23 +1,21 @@
 ---
-title: "Časovač | Microsoft Docs"
-ms.custom: 
+title: Časovač | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1971868e-89fa-4452-8ee7-76e4daf31b66
-caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: decf24e945f0673bc801b18d4c0438e186098687
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 4b5998f90aeee14d903fdaa972166d61b0d2478c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="timer"></a>Časovač
 VSPerfCmd.exe **časovače** možnost nastaví profilování událost, která je vzorkovat hodinových cyklů procesoru a volitelně změní počet cyklů v intervalu vzorkování z výchozí hodnotu 10 000 000. 10 000 000 hodinových cyklů procesoru (jeden GHz) 1GH, je přibližně 100 ukázky za sekundu. Minimální počet cykly, které lze zadat je 50 000.  
@@ -41,10 +39,10 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
 ## <a name="required-options"></a>Požadované možnosti  
  **Časovač** lze zadat pouze na příkazový řádek, který obsahuje jeden z následujících možností.  
   
- **Spuštění:**`AppName`  
+ **Spusťte:** `AppName`  
  Spustí profileru a aplikace určeného `AppName`.  
   
- **Připojení:**`PID`  
+ **Připojení:** `PID`  
  Připojí profileru k proces zadaný pomocí ID procesu (`PID`).  
   
 ## <a name="invalid-options"></a>Neplatné možnosti  
@@ -59,7 +57,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /Timer[:Cycles] [Options]
  **Čítač**[**:**`Name,Reload,FriendlyName`]  
  Nastaví událostí vzorkování na výkon procesoru čítač určeného `Name` a nastaví interval vzorkování na `Reload`.  
   
- **Globální Katalog**[**:**{**přidělení**&#124; **Doba platnosti**}]  
+ **Globální Katalog**[**:**{**přidělení**&#124;**životnost**}]  
  Shromažďuje data paměti .NET. Ve výchozím nastavení (**přidělení**), data jsou shromažďována v každé události přidělení paměti. Když **životnost** je zadán parametr, data jsou shromažďována také v každé události kolekce paměti.  
   
 ## <a name="example"></a>Příklad  

@@ -1,26 +1,23 @@
 ---
-title: Jak Python cesty hledání se použijí | Microsoft Docs
+title: Jak se používají cesty pro hledání Python
 description: Přehled používání Python cesty hledání v prostředí a projektů v sadě Visual Studio.
 ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ebb5ac043253db76cc9613ac67e5d980d911bd3
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 22e28431d22229e6096dc05d21decd88c3d0782d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Používání cesty pro hledání Python v sadě Visual Studio
 

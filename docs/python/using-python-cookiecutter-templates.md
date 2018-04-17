@@ -1,29 +1,26 @@
 ---
-title: CookieCutter rozšíření pro jazyk Python | Microsoft Docs
+title: CookieCutter rozšíření pro jazyk Python
 description: Visual Studio podporuje grafické rozšíření Cookiecutter ke zjištění šablony pro kód Python a vytváření projektů z těchto šablon.
 ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d70a6a4041892166b383574730ac1814a19ad39a
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: e9eb0f4c00392d24c79a22de26ca317425c9638f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="using-the-cookiecutter-extension"></a>Pomocí rozšíření Cookiecutter
+# <a name="using-the-cookiecutter-extension"></a>Použití rozšíření Cookiecutter
 
 [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) poskytuje grafické uživatelské rozhraní k zjištění šablony, zadejte možnosti šablony a vytváření projektů a soubory. To je součástí Visual Studio 2017 a je možné nainstalovat odděleně v dřívějších verzích sady Visual Studio.
 

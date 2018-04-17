@@ -1,12 +1,10 @@
 ---
-title: "Použití funkcí systému Office v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Použití funkcí systému Office v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office functionality inside Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fa848d522096b5df12db113cf0c7272ab61c80be
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 5927c9b3288755efc8e4b5700487a138f7a04f63
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-office-functionality-inside-of-visual-studio"></a>Použití funkcí systému Office v aplikaci Visual Studio
   Při vytváření projektu úrovni dokumentu dokumentu a přidružené aplikace jsou hostované v sadě Visual Studio, můžete navrhnout a pracovat přímo s dokumentu. Pokud máte aplikace Microsoft Office aplikace otevřete v sadě Visual Studio, obecně funguje podle očekávání. Některé z funkcí aplikace je však jinou nebo je nepřístupný.  

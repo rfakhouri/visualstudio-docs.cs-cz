@@ -1,27 +1,23 @@
 ---
-title: "Značky Vizualizéru souběžnosti | Microsoft Docs"
-ms.custom: 
+title: Značky Vizualizéru souběžnosti | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markersui
 ms.assetid: c4692d17-6cd2-4ad1-8590-d7275c771c70
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7baa202558b6bb7bc60a0bb27d42ae004933ddea
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 6706b7eca5600932b8fd78ea4d046f52f3b93fcf
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="concurrency-visualizer-markers"></a>Značky Vizualizéru souběžnosti
 Vizualizér souběžnosti značky jsou ikony, které představují události v aplikaci.  Obvykle se aplikace generuje těchto událostí k určení fáze nebo výskyty v aplikaci.  Události lze vygenerovat, aplikací nebo knihovny a moduly runtime, který používá aplikace.  

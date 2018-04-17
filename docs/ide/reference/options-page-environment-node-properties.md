@@ -1,26 +1,24 @@
 ---
-title: "Stránka Možnosti, vlastnosti uzlu prostředí | Microsoft Docs"
-ms.custom: 
+title: Stránka Možnosti, vlastnosti uzlu prostředí | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
-caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ddc53a84ca6cc09c5682bc874503849eee98eae8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3cd05ebf4c0161611789214295003eced4ca0d4f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-page-environment-node-properties"></a>Stránka Možnosti, vlastnosti uzlu prostředí
 Tento dokument popisuje stránky (nebo vlastnosti kolekce), jsou přidružené **prostředí** kategorie, `DTE.Properties("Environment", <Property Page>)`, z **možnosti** dialogové okno. Název každé část je hovoru, který se používá pro přístup ke kolekci vlastností a v tabulce v každou část jsou uvedeny vlastnosti v kolekci.  
@@ -54,7 +52,7 @@ Tento dokument popisuje stránky (nebo vlastnosti kolekce), jsou přidružené *
   
 |Název položky vlastnosti|Hodnota|Popis|  
 |------------------------|-----------|-----------------|  
-|ReuseSavedActiveDocWindow|Get/Set (Boolean)|Určuje, jestli otevřete nový soubor opětovně používá aktuální okna dokumentu Pokud je uloženo aktuálním dokumentu. `false`znamená to vždy otevřete nové okno dokument pro každý dokument otevřít.|  
+|ReuseSavedActiveDocWindow|Get/Set (Boolean)|Určuje, jestli otevřete nový soubor opětovně používá aktuální okna dokumentu Pokud je uloženo aktuálním dokumentu. `false` znamená to vždy otevřete nové okno dokument pro každý dokument otevřít.|  
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|Určuje, zda prostředí automaticky načte soubory otevřené v prostředí IDE, když se operační systém upozornění rozhraní IDE, že byl změněn soubory na disku.|  
 |AutoloadExternalChanges|Get/Set (Boolean)|Určuje, zda zjistil, že externí úpravy otevírat dokumenty automaticky znovu načtěte změněný soubor Pokud otevřete dokument se nemění. Pokud se mění otevřít dokument a tato vlastnost je `true`, potom zobrazí výzvu rozhraní IDE, jako kdyby byla tato vlastnost `false`.|  
 |InitializeOpenFileFromCurrentDocument|Get/Set (Boolean)|Určuje, zda <xref:EnvDTE.DTEClass.OpenFile%2A> příkaz doplňuje název adresáře a souboru z poslední aktivní dokument nebo v posledním místě můžete otevřít soubor.|  
@@ -158,7 +156,7 @@ Tento dokument popisuje stránky (nebo vlastnosti kolekce), jsou přidružené *
 |------------------------|-----------|-----------------|  
 |Domovská stránka|Get/Set (String)|Představuje adresu URL domovské stránky.|  
 |SearchPage|Get/Set (String)|Představuje adresu URL stránky vyhledávání.|  
-|ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource>(Externí zdroj, návrh,).|  
+|ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Externí zdroj, návrh,).|  
 |ViewSourceExternalProgram|Get/Set (String)|Cesta v prohlížeči externího zdroje.|  
   
 ## <a name="see-also"></a>Viz také  

@@ -1,5 +1,5 @@
 ---
-title: "Throw – Návrhář aktivity | Microsoft Docs"
+title: Throw – Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b41fb8fcbbb80f2f99558f07c5e5a4f9e4a85b
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 82080c7ebc03b863dcd1fbebe9eb9923ba4fae3c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="throw-activity-designer"></a>Throw – Návrhář aktivity
 **Throw** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Throw> aktivity.
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Určuje nepovinné popisný název <xref:System.Activities.Statements.Throw> aktivity. Výchozí hodnota je Throw.|
-|<xref:System.Activities.Statements.Throw.Exception%2A>|True|Výjimka, která má být vyvolána. Tato výjimka musí být odvozeny od <xref:System.Exception>. Pokud chcete zadat výjimku, zadejte výraz jazyka Visual Basic v tabulce vlastností.|
+|<xref:System.Activities.Statements.Throw.Exception%2A>|Hodnota TRUE|Výjimka, která má být vyvolána. Tato výjimka musí být odvozeny od <xref:System.Exception>. Pokud chcete zadat výjimku, zadejte výraz jazyka Visual Basic v tabulce vlastností.|
 
 ## <a name="see-also"></a>Viz také
 

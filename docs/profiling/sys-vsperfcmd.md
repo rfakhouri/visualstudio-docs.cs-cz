@@ -1,23 +1,21 @@
 ---
 title: Sys (VSPerfCmd) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2fa8b11d6f7ca080980234fde4fef5659f376a2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 81661358dbc000f871015099ab40ee8bbfb56195
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 VSPerfCmd.exe **Sys** možnost nastaví profilování událost, která je vzorků na volání události systému (funkce volání z aplikace PROFILOVANÉHO v operačním systému) a volitelně změny číslo systému volání v vzorky Interval z výchozí hodnotu 10.  
@@ -41,10 +39,10 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="required-options"></a>Požadované možnosti  
  **Sys** vyžaduje jednu z následujících možností.  
   
- **Spuštění:**`AppName`  
+ **Spusťte:** `AppName`  
  Spustí profileru a aplikace určeného `AppName`.  
   
- **Připojení:**`PID`  
+ **Připojení:** `PID`  
  Připojí k proces zadaný pomocí profileru `PID`.  
   
 ## <a name="invalid-options"></a>Neplatné možnosti  
@@ -59,7 +57,7 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
  **Čítač:** `Name`[`,Reload`[`,FriendlyName`]]  
  Nastaví událostí vzorkování na výkon procesoru čítač určeného `Name` a nastaví interval vzorkování na `Reload`.  
   
- **Globální Katalog**[**:**{**přidělení**&#124; **Doba platnosti**}]  
+ **Globální Katalog**[**:**{**přidělení**&#124;**životnost**}]  
  Shromažďuje data paměti .NET. Ve výchozím nastavení (**přidělení**), data jsou shromažďována v každé události přidělení paměti. Když **životnost** je zadán parametr, data jsou shromažďována také v každé události kolekce paměti.  
   
 ## <a name="example"></a>Příklad  

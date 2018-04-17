@@ -1,26 +1,24 @@
 ---
-title: "Nástroj konfigurace zobrazení okna | Microsoft Docs"
-ms.custom: 
+title: Nástroj konfigurace zobrazení okna | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, configuring
 - tool windows, appearance
 ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
-caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 585ea78e0591ad979d09a3e5b208635c3f75f903
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tool-window-display-configuration"></a>Konfigurace zobrazení okna nástrojů
 Když VSPackage zaregistruje okno nástroje, výchozí umístění, velikost, styl ukotvení a další informace, zda je zadáno v volitelné hodnoty. Další informace o nástroj registrace okna, najdete v části [nástroj Windows v registru](../extensibility/tool-windows-in-the-registry.md)  
@@ -44,7 +42,7 @@ HKEY_LOCAL_MACHINE\
 |Název|REG_SZ|"Krátký název místo"|Krátký název, který popisuje okno nástroje. Používá se jenom pro odkaz v registru.|  
 |Plovoucí desetinná čárka|REG_SZ|"X1, Y1, X2, Y2"|Čtyři hodnoty oddělené čárkami. X1, Y1 je souřadnice levého horního rohu okna nástroje. X2, Y2 je souřadnice pravého dolního rohu. Všechny hodnoty jsou v souřadnice obrazovky.|  
 |Styl|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Vazbu"<br /><br /> "– Záložkami"<br /><br /> "AlwaysFloat"|Klíčové slovo určující počáteční zobrazení stavu okno nástroje.<br /><br /> "MDI" = ukotven s okna MDI.<br /><br /> "Float" = číslo s plovoucí čárkou.<br /><br /> "Vazbu" = spojena se další okno (zadané v položce okno).<br /><br /> "– Záložkami" = v kombinaci s další okno nástroje.<br /><br /> "AlwaysFloat" = nelze ukotvit.<br /><br /> Další informace najdete v části komentáře níže.|  
-|Okno|REG_SZ|*\<IDENTIFIKÁTOR GUID >*|Identifikátor GUID časového období, do které okno nástroje propojený nebo na kartách. Identifikátor GUID může patřit k některé z oken, vlastní nebo jeden z windows v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
+|Okno|REG_SZ|*\<IDENTIFIKÁTOR GUID &GT;*|Identifikátor GUID časového období, do které okno nástroje propojený nebo na kartách. Identifikátor GUID může patřit k některé z oken, vlastní nebo jeden z windows v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.|  
 |orientace|REG_SZ|"Vlevo"<br /><br /> "Vpravo"<br /><br /> "Top"<br /><br /> "Dolů"|Projděte si část komentáře níže.|  
 |DontForceCreate|REG_DWORD|0 nebo 1|Pokud je tato položka a její hodnota není nula, okno je načtena, ale není ihned zobrazit.|  
   
@@ -91,7 +89,7 @@ HKEY_LOCAL_MACHINE\
 |Název|Typ|Data|Popis|  
 |----------|----------|----------|-----------------|  
 |(Výchozí)|REG_SZ|Žádné|Nechte pole prázdná.|  
-|*\<IDENTIFIKÁTOR GUID >*|REG_DWORD nebo REG_SZ|popisný řetězec nebo 0.|Volitelné. Název této položky musí být identifikátor GUID příkazu nutnosti viditelnosti. Hodnota obsahuje jenom informativní řetězec. Obvykle je hodnota `reg_dword` nastaven na hodnotu 0.|  
+|*\<IDENTIFIKÁTOR GUID &GT;*|REG_DWORD nebo REG_SZ|popisný řetězec nebo 0.|Volitelné. Název této položky musí být identifikátor GUID příkazu nutnosti viditelnosti. Hodnota obsahuje jenom informativní řetězec. Obvykle je hodnota `reg_dword` nastaven na hodnotu 0.|  
   
 ### <a name="example"></a>Příklad  
   

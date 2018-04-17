@@ -1,12 +1,10 @@
 ---
-title: "Postupy: připojení rozšíření spravovaného kódu k dokumentům | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: připojení rozšíření spravovaného kódu k dokumentům | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], managed code extensions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 1653b0e903fd931d5df4b1dcce4dcbd99fbbae37
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fe415cfb0635f133baf191f027ca7ae0111989a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Postupy: Připojení rozšíření spravovaného kódu k dokumentům
   Přizpůsobení sestavení může připojit k existující dokument aplikace Microsoft Office Word nebo sešitu aplikace Microsoft Office Excel. Tento dokument nebo sešitu může být v libovolném formátu souboru, která je podporována projektů Microsoft Office a nástroje pro vývoj v sadě Visual Studio. Další informace najdete v tématu [architektura z úpravy na úrovni dokumentů](../vsto/architecture-of-document-level-customizations.md).  

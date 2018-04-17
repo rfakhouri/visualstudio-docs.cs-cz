@@ -1,27 +1,23 @@
 ---
-title: "Zobrazení stromu volání – Data instrumentace | Microsoft Docs"
-ms.custom: 
+title: Zobrazení stromu volání – Data instrumentace | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d528c4161b2fcdf61a7357e74e64caa124f995de
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d9a95971c2c84d7a816446a4e6229d55f60e43de
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Zobrazení stromu volání – Data instrumentace
 Hodnoty pro funkci ve stromové struktuře volání označuje datum a čas pro instance funkce, které byly volá funkci nadřazené ve stromové struktuře volání. Procentní hodnoty se počítá srovnáním hodnotu instance funkce celkovou dobu uplynulá včetně všechny funkce v profilaci spustit.  
@@ -42,7 +38,7 @@ Hodnoty pro funkci ve stromové struktuře volání označuje datum a čas pro i
 |**Název procesu**|Název, který je přiřazen k procesu.|  
 |**Režijní náklady na čas výhradní testu**|Čas režie pro tuto funkci byl příčinou instrumentace. Režijní náklady na test odečtení od sebe výhradní.|  
 |**Režijní náklady na čas včetně testu**|Čas režie pro tuto funkci a jeho podřízené funkce, bylo způsobeno instrumentace. Test režie odečtení od sebe (včetně).|  
-|**Úroveň**|Hloubka funkce ve stromové struktuře volání. Pouze v [vsperfreport –](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
+|**úroveň**|Hloubka funkce ve stromové struktuře volání. Pouze v [vsperfreport –](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
   
 ## <a name="elapsed-inclusive-values"></a>Uplynulá (včetně) hodnot  
  Uplynulá (včetně) hodnot označuje datum a čas v zásobníku volání instancí funkce, které byly volá funkci nadřazené ve stromové struktuře volání. Čas zahrnuje času stráveného v podřízené funkce, které byly volá funkce a volání operačního systému, jako jsou přepínače kontextu a vstupně výstupní operace.  

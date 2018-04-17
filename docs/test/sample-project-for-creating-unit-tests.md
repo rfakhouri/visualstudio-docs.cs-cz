@@ -1,23 +1,23 @@
 ---
-title: "Ukázkový projekt testů jednotek v sadě Visual Studio | Microsoft Docs"
+title: Ukázkový projekt testů jednotek v sadě Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9edfd00b50442f03cda7d99fba87af6fb66ba5b7
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 46128b02e98e8fe20b16cc4a858a8782649f3f3d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="sample-project-for-creating-unit-tests"></a>Ukázkový projekt testů jednotek
+# <a name="sample-project-for-creating-unit-tests"></a>Ukázkový projekt testování částí
 
 Tento ukázkový kód je určen pro použití v následující kurzy:
 
@@ -124,11 +124,11 @@ namespace BankAccountNS
 
 / * Společností, organizací, produktů, názvů domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné spojení se skutečnou společností, organizace, produktu, název domény, e-mailovou adresu, logem, osoba, místech nebo události je určený nebo událostmi. \*/
 
-## <a name="working-with-the-code"></a>Práce s kódem
+## <a name="working-with-the-code"></a>Práce s kódem
 
 Pro práci s tímto kódem, musíte nejprve vytvořit projekt pro něj v sadě Visual Studio. Postupujte podle kroků v části "Příprava návodu" [návod: vytváření a spuštěné testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="see-also"></a>Viz také
 
-- [Návod: Vytváření a spouštění testů částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 - [Návod: použití nástroje testů z příkazového řádku](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

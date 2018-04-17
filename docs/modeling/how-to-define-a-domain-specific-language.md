@@ -1,10 +1,8 @@
 ---
-title: "Jak definovat jazyka domény | Microsoft Docs"
-ms.custom: 
+title: Jak definovat jazyka domény | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.domainrelationship
 - vs.dsltools.dsldesigner.domainclass
@@ -16,22 +14,22 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 57ae6465ec8d9fbbe85ff1f040d69b227c6a76fe
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5cff720949f6b521b35fb68154ff3b3b43f14a8d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Jak se definuje jazyk specifický pro doménu
 Definovat jazyk specifické pro doménu (DSL), řešení sady Visual Studio vytvořit ze šablony. Klíčovou součástí řešení je diagram definice DSL, která je uložena v DslDefinition.dsl. Definice DSL definuje třídy a obrazců DSL. Po úpravě a přidáte k těmto prvkům, můžete přidat kód programu k přizpůsobení DSL podrobněji.
 
 Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL nástroje Lab**, které můžete najít v této lokalitě: [Visualizaton a modelování SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-##  <a name="templates"></a>Výběr šablony řešení  
+##  <a name="templates"></a> Výběr šablony řešení  
  Pokud chcete definovat DSL, je třeba nainstalovat následující součásti:  
   
 |||  
@@ -123,7 +121,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
  Odstraňte nebo přejmenujte ostatní třídy podle svých potřeb.  
   
-##  <a name="patterns"></a>Vzory pro definování DSL  
+##  <a name="patterns"></a> Vzory pro definování DSL  
  Doporučujeme, abyste vývoji DSL přidávání nebo úpravě jedno nebo dvě funkce současně. Přidání funkce, spusťte DSL a otestovat ji a poté přidejte jeden nebo dva další funkce. Typické funkce vaší DSL, může být:  
   
 -   Třídu domény vnoření vztah, který připojí elementu k modelu, tvaru vyžadována k zobrazení elementy této třídy v diagramu a nástroj element, který umožňuje uživatelům vytvářet prvky.  
@@ -150,7 +148,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
 > [!NOTE]
 >  "Model" odkazuje na instanci vaše DSL, vytvoříte uživatele a obvykle se zobrazí jako diagram. Toto téma popisuje diagram DSL definice a modelu diagramy, které se zobrazí při vaší DSL se používá.  
   
-##  <a name="classes"></a>Definice tříd domény  
+##  <a name="classes"></a> Definice tříd domény  
  Třídy domény představují koncepty vaší DSL. Instance jsou *modelu elementy*. Například v **MusicLibrary** DSL může mít třídy domény s názvem **Album** a **skladbu**.  
   
  Pro vytvoření třídy domény, můžete přetáhnout z **třída s názvem domény** nástroje k diagramu a přejmenujte třídy.  
@@ -232,7 +230,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
 7.  **Uložení souboru, zavřete je a znovu ho otevřete**. Všechny instance, kterou jste vytvořili by měly jít vidět v Průzkumníku po rozbalte uzly.  
   
-##  <a name="shapes"></a>Definování tvarů diagram.  
+##  <a name="shapes"></a> Definování tvarů diagram.  
  Můžete definovat třídy elementů, které se zobrazují v diagramu jako obdélníky, symbol tří teček nebo ikon.  
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>Chcete-li definovat třídu elementů, které se zobrazují jako obrazce v diagramu  
@@ -328,7 +326,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
  Po dokončení testu nejprve obrazce, můžete upravit některé jeho vlastnosti a přidejte některé pokročilejší funkce. Další informace najdete v tématu [přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="references"></a>Definování relací odkaz  
+##  <a name="references"></a> Definování relací odkaz  
  Můžete definovat referenční vztah mezi všechny zdrojové domény třídy a všechny domény třídu cíle. Referenční relace se obvykle zobrazují v diagramu jako konektory, které jsou řádky mezi tvarů.  
   
  Například pokud Hudba alba a umělci jsou zobrazeny jako obrazce v diagramu, můžete třeba definovat relace s názvem ArtistsAppearedOnAlbums, který odkazuje na alb, na kterých už pracovali umělci. Podívejte se na příklad na obrázku.  
@@ -410,7 +408,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
  Po dokončení testu nejprve konektor, můžete upravit některé jeho vlastnosti a přidejte některé pokročilejší funkce. Další informace najdete v tématu [přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-##  <a name="compartments"></a>Definování tvarů, které obsahují seznamy: prostoru pro tvarů  
+##  <a name="compartments"></a> Definování tvarů, které obsahují seznamy: prostoru pro tvarů  
  Obrazce prostředí obsahuje jeden nebo více seznam položek. Například v DSL knihovna Hudba, můžete použít prostředí tvarů představují Hudba alb. V každé Album je seznam skladeb.  
   
  ![Prostoru pro tvar](../modeling/media/compartmentshape.png "CompartmentShape")  
@@ -538,7 +536,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
 7.  Vyberte odkaz nebo položky ve tvaru prostředí. Odkaz a položka má zmizí.  
   
-##  <a name="ports"></a>Definování porty na hranici jiného obrazce  
+##  <a name="ports"></a> Definování porty na hranici jiného obrazce  
  Port je tvar, který se nachází na hraniční jiného obrazce.  
   
  Porty lze také poskytnout pevné spojovací bod druhého obrazce, ke kterému může uživatel kreslení konektory. V takovém případě můžete nastavit port tvaru transparentní.  
@@ -561,7 +559,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
  Další informace najdete v tématu [vlastnosti portu tvarů](../modeling/properties-of-port-shapes.md).  
   
-##  <a name="swimlanes"></a>Definování DSL, který má plaveckých drah  
+##  <a name="swimlanes"></a> Definování DSL, který má plaveckých drah  
  Plaveckých drah jsou vodorovné nebo svislé oddílu diagram. Jednotlivé dráhy odpovídá element modelu. Vaše definice DSL vyžaduje jednu třídu domény pro dráha elementy.  
   
  Nejlepší způsob, jak vytvořit DSL s plaveckých drah je vytvořte nové řešení DSL a zvolte šablonu řešení tok úkolů. V definici DSL třídu objektu Actor je třída domény namapované na dráha. Přejmenujte tento a ostatní třídy tak, aby vyhovovala projektu.  
@@ -572,7 +570,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
  Další informace najdete v tématu [vlastnosti plaveckých drah](../modeling/properties-of-swimlanes.md).  
   
-##  <a name="addTypes"></a>Přidání typů vlastností  
+##  <a name="addTypes"></a> Přidání typů vlastností  
   
 ### <a name="domain-enumerations-and-literals"></a>Výčty domény a literály  
  Výčtu doména je typ literálu hodnotami.  
@@ -588,7 +586,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
  Přidání typu, klikněte pravým tlačítkem na kořen modelu v Průzkumníku DSL a pak klikněte na tlačítko **přidat nový externí typ**. V okně vlastností nastavte název na **barva** a oboru názvů **System.Drawing**. Tento typ se teď zobrazí v Průzkumníku DSL pod **domény typy**. Můžete jej kdykoliv nastavit typ vlastnosti domény.  
   
-##  <a name="custom"></a>Přizpůsobení DSL  
+##  <a name="custom"></a> Přizpůsobení DSL  
  Pomocí technik popsaných v tomto tématu, můžete rychle vytvořit DSL s graficky zápis, čitelné podoby XML a základní nástroje, které jsou požadovány pro generování kódu a další artefaktů.  
   
  Rozšíření definice DSL dvěma způsoby:  
@@ -608,7 +606,7 @@ Pokud jste ještě DSL, linky, doporučujeme pracovat prostřednictvím **DSL n�
   
  Viz také [postupy: Změna Namespace jazyka specifické pro doménu](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).  
   
-##  <a name="trouble"></a>Řešení potíží  
+##  <a name="trouble"></a> Řešení potíží  
  V následující tabulce jsou uvedeny některé nejčastější problémy, které jsou došlo při návrhu DSL, společně s návrhy pro jejich řešení. Další Rady, jak je k dispozici na [vizualizace nástroje Extensibililty fórum](http://go.microsoft.com/fwlink/?LinkId=186074).  
   
 |Problém|Návrh|  

@@ -1,12 +1,10 @@
 ---
-title: "Vytváření položek šablony a šablony projektů pro položky projektu služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: Vytváření položek šablony a šablony projektů pro položky projektu služby SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +17,14 @@ helpviewer_keywords:
 - project items [SharePoint development in Visual Studio], creating custom templates
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7f64abf2327d4e7702020a53c88d0d2c640e0756
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 3f71352dad7b77b2ce92816e84a7c90ec16710ed
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-item-templates-and-project-templates-for-sharepoint-project-items"></a>Vytváření šablon položek a projektů pro položky projektu služby SharePoint
   Když definujete vlastní typu položky projektu služby SharePoint, můžete přidružit pomocí šablony položky nebo šablona projektu tak, aby ostatní vývojáři mohou použít položka projektu v sadě Visual Studio. Můžete také vytvořit průvodce pro šablony.  
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
  Šablony položek a projektů jsou soubory .zip, které obsahují soubory, které se používají Visual Studio k vytvoření položky projektu nebo projektu. Další informace o základní informace o šablon položek a projektů najdete v tématu [vytváření projektů a šablon položek](/visualstudio/ide/creating-project-and-item-templates).  
   
-##  <a name="creatingitemtemplates"></a>Vytváření šablon položek  
+##  <a name="creatingitemtemplates"></a> Vytváření šablon položek  
  Když vytvoříte šablonu položky pro položky projektu služby SharePoint, nejsou některé soubory, které jsou vždy požadované a volitelné soubory, které by mohly používat určitých typů položek projektu. Návod, které ukazuje, jak k definování typu položky projektu služby SharePoint a vytvořit šablonu položky pro něj najdete v tématu [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  
   
  Následující tabulka uvádí požadované soubory k vytvoření šablony položky pro položky projektu služby SharePoint.  

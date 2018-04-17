@@ -1,21 +1,19 @@
 ---
-title: "Sdílení třídy mezi DSL, linky pomocí knihovny DSL | Microsoft Docs"
-ms.custom: 
+title: Sdílení třídy mezi DSL, linky pomocí knihovny DSL | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a58726bdc4e6e139963ae8cca2d12f26e0696246
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f1164b0a96a10e7fa9cda3f8082bb052a0b445e5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Sdílení tříd mezi DSL pomocí knihovny DSL
 V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK, můžete vytvořit nekompletní definice DSL, který můžete importovat do jiné DSL. Díky tomu můžete zohlednit běžné částí podobné modelů.  
@@ -44,7 +42,7 @@ V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelo
   
 6.  Sestavte projekt.  
   
-7.  Když distribuujete DSL pro ostatním používat, je nutné zadat kompilované sestavení (DLL) a soubor `DslDefinition.dsl`. Kompilované sestavení můžete najít ve složce v části`Dsl\bin\*`  
+7.  Když distribuujete DSL pro ostatním používat, je nutné zadat kompilované sestavení (DLL) a soubor `DslDefinition.dsl`. Kompilované sestavení můžete najít ve složce v části `Dsl\bin\*`  
   
 #### <a name="to-import-a-dsl-library"></a>Chcete-li importovat knihovnu DSL  
   

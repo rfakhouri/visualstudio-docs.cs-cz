@@ -1,20 +1,20 @@
 ---
-title: "Použít testovací prostředí pro devops v sadě Visual Studio | Microsoft Docs"
+title: Použít testovací prostředí pro devops v sadě Visual Studio | Microsoft Docs
 ms.date: 05/02/2017
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2d42c1d97f1d1d84e55a5ca91a9bd104a4bc6004
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 63fb02f0133055611ef18bbf9d5fe7888df7473f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Použít testovací prostředí pro vaše devops
 
@@ -116,7 +116,7 @@ Zde jsou některé další koncepty, které byste měli mít před pokračován�
 
 |Termín|Popis|
 |----------|-----------------|
-|Lab Center|Oblast nástroje Microsoft Test Manager kde můžete vytvořit a spravovat testovací prostředí.|
+|Center testovacího prostředí|Oblast nástroje Microsoft Test Manager kde můžete vytvořit a spravovat testovací prostředí.|
 |Laboratoře týmového projektu|Kolekce testovací prostředí, které byly nastavit, aby se mohli připojit k je a spustit své virtuální počítače.|
 |Knihovna týmového projektu|Archivované uložené virtuální počítače, šablony a uložené testovací prostředí, které byly naimportovány do skupiny hostitelů týmového projektu. Můžete použít položky v knihovně v prostředích SCVMM; nelze je však přidat přímo na standardní prostředí. Položky nelze spustit v knihovně; Místo toho je budete používat k nasazení nové prostředí.|
 |Nasazené prostředí|Testovacím prostředí, která byla nasazena do testovacího prostředí týmového projektu, které můžete k nim připojit a spustit jeho počítače.|

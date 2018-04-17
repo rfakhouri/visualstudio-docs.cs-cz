@@ -1,23 +1,21 @@
 ---
-title: "Vlastnosti Dekoratéry | Microsoft Docs"
-ms.custom: 
+title: Vlastnosti Dekoratéry | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, decorators
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95338b26019a2faf2afc2eb6be019ac33d6ece3c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 15df31a6bdfe7e93dd6c70ccf2ef4c6b3b946d69
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-decorators"></a>Vlastnosti dekorátorů
 Dekoratéry jsou ikony, text nebo dvojitou šipkou rozbalit nebo sbalit, které se mohou objevit na tvary nebo konektory v diagramu. Vlastnosti pro tři druhy dekoratéra naleznete v následujících tabulkách. Některé vlastnosti se zobrazí pouze na tvar dekoratéry nebo pouze na dekoratéry konektor.  
@@ -28,9 +26,9 @@ Dekoratéry jsou ikony, text nebo dvojitou šipkou rozbalit nebo sbalit, které 
   
 |Vlastnost|Popis|Výchozí|  
 |--------------|-----------------|-------------|  
-|DisplayName|Název dekoratéra, který se zobrazí v Návrháři vygenerovaný.|Rozbalte položku sbalit Dekoratéra|  
+|displayName|Název dekoratéra, který se zobrazí v Návrháři vygenerovaný.|Rozbalte položku sbalit Dekoratéra|  
 |Název|Název dekoratéra.|ExpandCollapseDecorator|  
-|Poznámky|Neformální poznámky, které jsou přidruženy tento dekoratéra.|\<none>|  
+|Poznámky|Neformální poznámky, které jsou přidruženy tento dekoratéra.|\<žádné >|  
 |HorizontalOffset|Vodorovný posun vzhledem k výchozí umístění dekoratéra, v palcích. (Na tvary pouze.)|0|  
 |VerticalOffset|Svislý posun vzhledem k výchozí umístění dekoratéra, v palcích. (Na tvary pouze.)|0|  
 |OffsetFromLine|Posun dekoratéra z řádku vzhledem ke své výchozí pozici v palcích. (Na konektory pouze.)|0|  
@@ -41,10 +39,10 @@ Dekoratéry jsou ikony, text nebo dvojitou šipkou rozbalit nebo sbalit, které 
   
 |Vlastnost|Popis|Výchozí|  
 |--------------|-----------------|-------------|  
-|DefaultIcon|Cesta souboru ikony nebo obrázku má být zobrazen.|\<none>|  
-|DisplayName|Název dekoratéra, který se má zobrazit v Návrháři vygenerovaný.|Ikona Dekoratéra|  
+|DefaultIcon|Cesta souboru ikony nebo obrázku má být zobrazen.|\<žádné >|  
+|displayName|Název dekoratéra, který se má zobrazit v Návrháři vygenerovaný.|Ikona Dekoratéra|  
 |Název|Název dekoratéra.|IconDecorator|  
-|Poznámky|Neformální poznámky, které jsou přidruženy dekoratéra.|\<none>|  
+|Poznámky|Neformální poznámky, které jsou přidruženy dekoratéra.|\<žádné >|  
 |HorizontalOffset|Vodorovný posun vzhledem k výchozí umístění dekoratéra, v palcích. (Na tvary pouze.)|0|  
 |VerticalOffset|Svislý posun vzhledem k výchozí umístění dekoratéra, v palcích. (Na tvary pouze.)|0|  
 |OffsetFromLine|Posun dekoratéra z řádku vzhledem ke své výchozí pozici v palcích. (Na konektory pouze.)|0|  
@@ -56,11 +54,11 @@ Dekoratéry jsou ikony, text nebo dvojitou šipkou rozbalit nebo sbalit, které 
 |Vlastnost|Popis|Výchozí|  
 |--------------|-----------------|-------------|  
 |DefaultText|Výchozí text, který se má zobrazit.|Popisek|  
-|DisplayName|Název dekoratéra, který se má zobrazit v Návrháři vygenerovaný.|Popisek|  
+|displayName|Název dekoratéra, který se má zobrazit v Návrháři vygenerovaný.|Popisek|  
 |Velikost písma|Velikost písma pro text, který se zobrazí v dekoratéra.|8|  
 |FontStyle|Písmo pro text, který se zobrazí v dekoratéra.|Regulární|  
 |Název|Název dekoratéra.|Popisek|  
-|Poznámky|Neformální poznámky, které jsou přidruženy dekoratéra.|\<none>|  
+|Poznámky|Neformální poznámky, které jsou přidruženy dekoratéra.|\<žádné >|  
 |HorizontalOffset|Vodorovný posun vzhledem k výchozí umístění dekoratéra, v palcích. (Na tvary pouze.)|0|  
 |VerticalOffset|Svislý posun vzhledem k výchozí umístění dekoratéra, v palcích. (Na tvary pouze.)|0|  
 |OffsetFromLine|Posun dekoratéra z řádku vzhledem ke své výchozí pozici v palcích. (Na konektory pouze.)|0|  

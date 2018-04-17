@@ -1,12 +1,10 @@
 ---
-title: "Postupy: načítání nepřečtených zpráv ze složky Doručená pošta prostřednictvím kódu programu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: načítání nepřečtených zpráv ze složky Doručená pošta prostřednictvím kódu programu | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,15 +15,16 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], unread mail
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 50952f10c22ed7b71f0a1d74af874f1ec52d3905
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ec08c95a0543ab6ec47c0bded8126c6c2030c87e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Postup: Načítání nepřečtených zpráv ze složky Doručená pošta prostřednictvím kódu programu
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>Postupy: načítání nepřečtených zpráv ze složky Doručená pošta prostřednictvím kódu programu
   Tento příklad načítá zprávy o nepřečtené e-maily z aplikace Outlook **doručené pošty** a zobrazuje počet položek.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
@@ -39,6 +38,6 @@ ms.lasthandoff: 01/10/2018
  [Začínáme programováním doplňků VSTO](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Postupy: vytváření položek e-mailu prostřednictvím kódu programu](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
  [Postupy: odeslání e-mailu prostřednictvím kódu programu](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [Postupy: Provádění akcí po přijetí e-mailové zprávy prostřednictvím kódu programu](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+ [Postupy: prostřednictvím kódu programu provádění akcí po přijetí e-mailové zprávy](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

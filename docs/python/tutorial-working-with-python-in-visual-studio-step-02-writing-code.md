@@ -1,27 +1,24 @@
 ---
-title: Práce s Python, krok 2, zápisu a spouštění kódu | Microsoft Docs
+title: Práce s Python, krok 2, zápisu a spouštění kódu
 description: Krok 2 ze základní kurz pro práci s Pythonem v sadě Visual Studio, pokrývajících jak upravit a spustit jednoduchý program Hello, World, a potom zajímavějšího kódem, který popisuje úpravy sady Visual Studio a funkcích IntelliSense.
 ms.custom: mvc
 ms.date: 01/16/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6045b385754eebfe7b754b9d213f860a199b1824
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: c49536b6592283b940aeff4ee4238cf7bfff92e0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-2-writing-and-running-code"></a>Krok 2: Psaní a spuštění kódu
 

@@ -1,30 +1,26 @@
 ---
-title: "Seznam zpětný překlad – příkaz | Microsoft Docs"
-ms.custom: 
+title: Seznam zpětný překlad – příkaz | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - debug.listdisassembly
 helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a704ac783f4efc300de26c2a5e987f82fc2e9c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 3007b5d675ab8e48406fdaaa69c4858554968920
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="list-disassembly-command"></a>Zobrazit zpětný překlad – příkaz
 Zahájí proces ladění a umožňuje vám určit způsob zpracování chyb.  
@@ -40,19 +36,19 @@ Debug.ListDisassembly [/count:number] [/endaddress:expression]
 ## <a name="switches"></a>Přepínače  
  Každý přepínač lze vyvolat pomocí jeho dokončení formuláře nebo zkrácené formě.  
   
- / count: `number` [nebo] / c: `number` [nebo] /length: `number` [nebo] l:`number`  
+ / count: `number` [nebo] / c: `number` [nebo] /length: `number` [nebo] l: `number`  
  Volitelné. Počet pokyny pro zobrazení. Výchozí hodnota je 8.  
   
- /endaddress: `expression` [nebo] / e:`expression`  
+ /endaddress: `expression` [nebo] / e: `expression`  
  Volitelné. Adresa, kam chcete zastavit zpětný překlad.  
   
- /codebytes:`yes`&#124;`no` [nebo] /bytes:`yes`&#124;`no` [nebo] / b:`yes`&#124;`no`  
+ /codebytes:`yes` &#124; `no` [nebo] /bytes:`yes` &#124; `no` [nebo] / b:`yes`&#124;`no`  
  Volitelné. Označuje, zda se mají zobrazovat kód bajty. Výchozí hodnota je `no`.  
   
- / source:`yes`&#124;`no` [nebo] / s:`yes`&#124;`no`  
+ / source:`yes` &#124; `no` [nebo] / s:`yes`&#124;`no`  
  Volitelné. Určuje, jestli se má zobrazit zdrojový kód. Výchozí hodnota je `no`.  
   
- /symbolnames:`yes`&#124;`no` [nebo] /names:`yes`&#124;`no` [nebo] / n:`yes`&#124;`no`  
+ /symbolnames:`yes` &#124; `no` [nebo] /names:`yes` &#124; `no` [nebo] / n:`yes`&#124;`no`  
  Volitelné. Označuje, zda chcete zobrazit názvy symbolů. Výchozí hodnota je `yes`.  
   
  [/ linenumbers:`yes`&#124;`no`]  

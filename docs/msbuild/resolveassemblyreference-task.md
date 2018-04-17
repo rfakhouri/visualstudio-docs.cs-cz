@@ -1,12 +1,9 @@
 ---
-title: "Resolveassemblyreference – úloha | Microsoft Docs"
-ms.custom: 
+title: Resolveassemblyreference – úloha | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ResolveAssemblyReference
 - MSBuild.ResolveAssemblyReference.TurnOnAutoGenerateBindingRedirects
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91585ea5e72bc2ceebf07d02c2398454f775b5b7
-ms.sourcegitcommit: a07b789cc41ed72664f2c700c1f114476e7b0ddd
+ms.openlocfilehash: 4d0481026169f7ddda1431a1f00f9f41d001ca9b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference – úloha
 Určuje, které jsou závislé na zadaná sestavení ve všech sestaveních. To zahrnuje sekundu a `n`tý pořadí závislostí.  
@@ -66,7 +62,7 @@ Určuje, které jsou závislé na zadaná sestavení ve všech sestaveních. To 
 |`LatestTargetFrameworkDirectories`|Volitelné `String[]` parametr.<br /><br /> Určuje seznam adresářů, které obsahují seznamy redist pro nejaktuálnější framework, který je možné cílit na počítači. Pokud to není nastaven se používá nejvyšší framework nainstalované na počítači pro danou cílovou framework identifikátor.|  
 |`ProfileName`|Volitelné `String` parametr.<br /><br /> -Určuje název profilu framework jako cíle. Například klienta, Web nebo síti.|  
 |`RelatedFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupní parametr.<br /><br /> Obsahuje soubory, jako jsou soubory XML a pdb, které mají stejné základní název jako odkaz.<br /><br /> Soubory uvedené v tomto parametru může volitelně obsahovat metadata následující položky:<br /><br /> -   `Primary`: `Boolean` hodnotu. Pokud `true`, potom položku Soubor byl předán do pole podle pomocí `Assemblies` parametr. Výchozí hodnota je `false`.<br />-   `CopyLocal`: `Boolean` hodnotu. Určuje, zda danému odkazu by se měl zkopírovat do výstupního adresáře.|  
-|`ResolvedDependencyFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupní parametr.<br /><br /> Obsahuje  *n* tý pořadí cest pro závislosti. Tento parametr nezahrnuje první pořadí primární odkazy, které jsou součástí `ResolvedFiles` parametr.<br /><br /> Položky v tomto parametru volitelně obsahovat metadata následující položky:<br /><br /> -   `CopyLocal`: `Boolean` hodnotu. Určuje, zda danému odkazu by se měl zkopírovat do výstupního adresáře.<br />-   `FusionName`: `String` hodnotu. Určuje název pro tuto závislost.<br />-   `ResolvedFrom`: `String` hodnotu. Určuje cestu literálu vyhledávání, který byl vyřešen z tohoto souboru.|  
+|`ResolvedDependencyFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupní parametr.<br /><br /> Obsahuje *n*tý pořadí cest pro závislosti. Tento parametr nezahrnuje první pořadí primární odkazy, které jsou součástí `ResolvedFiles` parametr.<br /><br /> Položky v tomto parametru volitelně obsahovat metadata následující položky:<br /><br /> -   `CopyLocal`: `Boolean` hodnotu. Určuje, zda danému odkazu by se měl zkopírovat do výstupního adresáře.<br />-   `FusionName`: `String` hodnotu. Určuje název pro tuto závislost.<br />-   `ResolvedFrom`: `String` hodnotu. Určuje cestu literálu vyhledávání, který byl vyřešen z tohoto souboru.|  
 |`ResolvedFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupní parametr.<br /><br /> Obsahuje seznam všech primární odkazy byl přeložen na úplné cesty.<br /><br /> Položky v tomto parametru volitelně obsahovat metadata následující položky:<br /><br /> -   `CopyLocal`: `Boolean` hodnotu. Určuje, zda danému odkazu by se měl zkopírovat do výstupního adresáře.<br />-   `FusionName`: `String` hodnotu. Určuje název pro tuto závislost.<br />-   `ResolvedFrom`: `String` hodnotu. Určuje cestu literálu vyhledávání, který byl vyřešen z tohoto souboru.|  
 |`SatelliteFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupní parametr.<br /><br /> Určuje nebyly nalezeny žádné soubory satelit. Budou to CopyLocal = true, pokud je odkaz nebo závislost, která způsobila tuto položku existovat CopyLocal = true.<br /><br /> Položky v tomto parametru volitelně obsahovat metadata následující položky:<br /><br /> -   `CopyLocal`: `Boolean` hodnotu. Určuje, zda danému odkazu by se měl zkopírovat do výstupního adresáře. Tato hodnota je `true` Pokud má odkaz nebo závislost, která způsobila tuto položku existovat `CopyLocal` hodnotu `true`.<br />-   `DestinationSubDirectory`: `String` hodnotu. Určuje relativní cílový adresář ke zkopírování této položky.|  
 |`ScatterFiles`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> `[]` jen pro čtení výstupní parametr.<br /><br /> Obsahuje bodové soubory spojené s jedním z daného sestavení.<br /><br /> Položky v tomto parametru volitelně obsahovat metadata následující položky:<br /><br /> -   `CopyLocal`: `Boolean` hodnotu. Určuje, zda danému odkazu by se měl zkopírovat do výstupního adresáře.|  

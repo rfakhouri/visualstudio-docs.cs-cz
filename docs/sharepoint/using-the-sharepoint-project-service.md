@@ -1,12 +1,10 @@
 ---
-title: "Použití služby projektu SharePoint | Microsoft Docs"
-ms.custom: 
+title: Použití služby projektu SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: aa1bc8d5853e8f8f3253273aff4dd8eb0d44e177
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: efe2e2073ead64bfbc697b9d6c824066af947580
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-sharepoint-project-service"></a>Použití služby projektu služby SharePoint
   Zahrnuje systému projektu služby SharePoint, můžete použít k provedení úlohy týkající se systému projektu služby projektu. Služba projektu je <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objektu.  
@@ -33,17 +32,17 @@ ms.lasthandoff: 01/10/2018
   
 |Úloha|Člen používat|  
 |----------|-------------------|  
-|Přístup k žádné projektu služby SharePoint, který je otevřen v sadě Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A>Vlastnost.|  
-|Přístup ke všem typů položek projektu služby SharePoint, které jsou k dispozici (včetně typů položek projektu předdefinované a vlastní).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A>Vlastnost.|  
-|Přístup ke všem kroky nasazení, které jsou k dispozici do projektů služby SharePoint (včetně kroky předdefinované a vlastní nasazení).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A>Vlastnost.|  
-|Přístup k události, které se vyvolá, když vývojář refactors kódu v projektu služby SharePoint.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A>Vlastnost.|  
-|Spuštění vlastní *příkazu SharePoint* , který volá do objektový model serveru SharePoint. Další informace o příkazech SharePoint, naleznete v části [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A>Vlastnost.|  
-|Převést typ v systému projektu služby SharePoint k typu v sadě Visual Studio automatizace objektový model nebo integrace objektový model a naopak. Další informace najdete v tématu [převádění mezi SharePoint systémovými typy projektů a ostatní typy projektů Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A>Metoda.|  
-|Zápis zpráv do **výstup** okno nebo **seznam chyb** oken v sadě Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A>Vlastnost.|  
-|Přístup k dalším službám, které jsou k dispozici v sadě Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A>Vlastnost.|  
-|Načtěte cestu ke složce instalace místního webu služby SharePoint, který se používá pro ladění řešení.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A>Vlastnost.|  
-|Určit, zda [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] nebo [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] je nainstalován v počítači.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.IsSharePointInstalled%2A>Vlastnost.|  
-|Ověřte funkce nebo balíček v řešení služby SharePoint.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.PackageValidationProvider%2A>Vlastnost.|  
+|Přístup k žádné projektu služby SharePoint, který je otevřen v sadě Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Projects%2A> Vlastnost.|  
+|Přístup ke všem typů položek projektu služby SharePoint, které jsou k dispozici (včetně typů položek projektu předdefinované a vlastní).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ProjectItemTypes%2A> Vlastnost.|  
+|Přístup ke všem kroky nasazení, které jsou k dispozici do projektů služby SharePoint (včetně kroky předdefinované a vlastní nasazení).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.DeploymentSteps%2A> Vlastnost.|  
+|Přístup k události, které se vyvolá, když vývojář refactors kódu v projektu služby SharePoint.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.CodeRefactoringEvents%2A> Vlastnost.|  
+|Spuštění vlastní *příkazu SharePoint* , který volá do objektový model serveru SharePoint. Další informace o příkazech SharePoint, naleznete v části [volání do objektových modelů služby SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointConnection%2A> Vlastnost.|  
+|Převést typ v systému projektu služby SharePoint k typu v sadě Visual Studio automatizace objektový model nebo integrace objektový model a naopak. Další informace najdete v tématu [převádění mezi SharePoint systémovými typy projektů a ostatní typy projektů Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> Metoda.|  
+|Zápis zpráv do **výstup** okno nebo **seznam chyb** oken v sadě Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Logger%2A> Vlastnost.|  
+|Přístup k dalším službám, které jsou k dispozici v sadě Visual Studio.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.ServiceProvider%2A> Vlastnost.|  
+|Načtěte cestu ke složce instalace místního webu služby SharePoint, který se používá pro ladění řešení.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.SharePointInstallPath%2A> Vlastnost.|  
+|Určit, zda [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] nebo [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] je nainstalován v počítači.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.IsSharePointInstalled%2A> Vlastnost.|  
+|Ověřte funkce nebo balíček v řešení služby SharePoint.|<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.PackageValidationProvider%2A> Vlastnost.|  
   
 ## <a name="see-also"></a>Viz také  
  [Převod mezi systémovými typy projektů SharePoint a jinými typy projektů Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   

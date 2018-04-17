@@ -1,7 +1,7 @@
 ---
-title: "Čítač testu zatížení nastaví v sadě Visual Studio | Microsoft Docs"
+title: Čítač testu zatížení nastaví v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.dialog.countersetmapping
 helpviewer_keywords:
@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 21f093187fa1c2405253cc60713a0dfbea384d53
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: b2ff43592819e5834f1e5f7b5088c00f61d8b1c4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Postupy: Správa sad čítačů pomocí editoru zátěžových testů
 
@@ -60,6 +60,6 @@ Správa sad čítačů zahrnuje výběr sadu počítačů, které chcete shroma�
 
 ## <a name="see-also"></a>Viz také
 
-- [Testovací kontrolery a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md)
+- [Kontrolery testů a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md)
 - [Určení sad čítačů a mezních pravidel pro počítače v zátěžovém testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Konfigurace běhu zátěžových testů](../test/configure-load-test-run-settings.md)

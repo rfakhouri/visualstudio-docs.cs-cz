@@ -1,12 +1,10 @@
 ---
-title: "Přehled modelu objektů v aplikaci Excel | Microsoft Docs"
-ms.custom: 
+title: Přehled modelu objektů v aplikaci Excel | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +19,14 @@ helpviewer_keywords:
 - Office object models
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: bbf76579baeebfabf3ec796498c20b32feed4cac
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="excel-object-model-overview"></a>Přehled modelu objektů aplikace Excel
   Pro vývoj řešení, které používají aplikace Microsoft Office Excel, můžete pracovat s objekty poskytované model objektů aplikace Excel. Toto téma představuje nejdůležitější objekty:  
@@ -48,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
  Toto téma obsahuje stručný přehled modelu objektů aplikace Excel. Zdroje, kde můžete další informace o celý model objektů aplikace Excel najdete v tématu [pomocí dokumentace modelu objektů aplikace Excel](#ExcelOMDocumentation).  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: použití obslužné rutiny událostí v aplikaci Excel 2007 doplňku?](http://go.microsoft.com/fwlink/?LinkID=130291), a [jak provést I: použití obrazce vytvořte bublinový Graf v aplikaci Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: použití obslužné rutiny událostí v aplikaci Excel 2007 doplňku?](http://go.microsoft.com/fwlink/?LinkID=130291), a [jak provést I: použití obrazce vytvořte bublinový graf v aplikaci Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
 ## <a name="accessing-objects-in-an-excel-project"></a>Přístup k objektům v projektu aplikace Excel  
  Při vytváření nového projektu doplňku VSTO pro Excel, Visual Studio automaticky vytvoří soubor ThisAddIn.vb nebo ThisAddIn.cs kódu. Máte přístup k objektu Application pomocí `Me.Application` nebo `this.Application`.  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/10/2018
 |Sheet2.vb|Sheet2.cs|  
 |Sheet3.vb|Sheet3.cs|  
   
- Můžete použít `Globals` třídy ve vašem projektu a přístup k `ThisWorkbook`, `Sheet1`, `Sheet2`, nebo `Sheet3` z mimo příslušné třídy. Další informace najdete v tématu [globální přístup k objektům v projektech Office](../vsto/global-access-to-objects-in-office-projects.md). Následující příklad volání <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> metodu `Sheet1` bez ohledu na to, zda kód je umístěn v jednom z `Sheet`  *n*  třídy nebo `ThisWorkbook` třídy.  
+ Můžete použít `Globals` třídy ve vašem projektu a přístup k `ThisWorkbook`, `Sheet1`, `Sheet2`, nebo `Sheet3` z mimo příslušné třídy. Další informace najdete v tématu [globální přístup k objektům v projektech Office](../vsto/global-access-to-objects-in-office-projects.md). Následující příklad volání <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> metodu `Sheet1` bez ohledu na to, zda kód je umístěn v jednom z `Sheet` *n* třídy nebo `ThisWorkbook` třídy.  
   
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]  
@@ -102,7 +101,7 @@ ms.lasthandoff: 01/10/2018
   
  Visual Studio rozšiřuje <xref:Microsoft.Office.Interop.Excel.Range> objekt tím, že poskytuje <xref:Microsoft.Office.Tools.Excel.NamedRange> a <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> typy. Tyto typy mají většinu stejné funkce jako <xref:Microsoft.Office.Interop.Excel.Range> objektu, jakož i nové funkce, jako je například funkce vazby dat a nové události. Další informace najdete v tématu [NamedRange – ovládací prvek](../vsto/namedrange-control.md) a [xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md).  
   
-##  <a name="ExcelOMDocumentation"></a>Pomocí dokumentace modelu objektů aplikace Excel  
+##  <a name="ExcelOMDocumentation"></a> Pomocí dokumentace modelu objektů aplikace Excel  
  Úplné informace o model objektů aplikace Excel najdete odkaz primární spolupracující sestavení (PIA) aplikace Excel a VBA objektu modelu.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odkaz sestavení primární spolupráce  

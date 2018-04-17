@@ -1,12 +1,10 @@
 ---
-title: "Postupy: vytváření rozšíření projektu služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: vytváření rozšíření projektu služby SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 04/28/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: fb0c28ee6f9408ed417f570ce4a3ab1dc500c295
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a47e7c4fbd78241d52b30ed80ab59eb548ab97d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Postupy: Vytváření rozšíření projektu služby SharePoint
   Vytváření rozšíření projektu, pokud chcete přidat další funkce žádné projektu služby SharePoint, který je otevřen v sadě Visual Studio. Další informace najdete v tématu [rozšíření systému projektu služby SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).  

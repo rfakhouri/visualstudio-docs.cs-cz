@@ -3,26 +3,24 @@ title: Automatizovat instalaci sady Visual Studio se souborem odpovědí | Micro
 description: Naučte se vytvořit soubor odpovědi JSON, která pomáhá automatizovat instalaci sady Visual Studio
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - response file
 - automate
 - installation
 - command-line
-author: tglee
+author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bbfff39dce34bfa8595f4e34222e3e61ac67fb5
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 66964de2fb915ab6fd7e6b1cd911e897dd5e691c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Jak definovat nastavení v souboru odpovědí
 Správci, kteří nasazují Visual Studio můžete zadat soubor odezvy pomocí `--in` parametru, jako v následujícím příkladu:

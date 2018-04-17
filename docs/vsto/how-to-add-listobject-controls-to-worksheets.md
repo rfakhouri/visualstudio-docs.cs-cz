@@ -1,12 +1,10 @@
 ---
-title: "Postupy: Přidání ovládacích prvků ListObject do listů | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Přidání ovládacích prvků ListObject do listů | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 23c309861b2e94a298f038e8c3aab7731363a01d
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 55d3a26f0fbf02556071dfc16d08357519b5cff9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků ListObject do listů
   Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu a za běhu v projekty na úrovni dokumentu.  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
   
  Další informace o <xref:Microsoft.Office.Tools.Excel.ListObject> najdete v části ovládací prvky, [ListObject – ovládací prvek](../vsto/listobject-control.md).  
   
-##  <a name="designtime"></a>Přidání ovládacích prvků ListObject v době návrhu  
+##  <a name="designtime"></a> Přidání ovládacích prvků ListObject v době návrhu  
  Existuje několik způsobů, jak přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků na list v projektech na úrovni dokumentu v době návrhu: Z aplikace Excel v sadě Visual Studio **sada nástrojů**a z **zdroje dat** okno.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
@@ -69,7 +68,7 @@ ms.lasthandoff: 01/10/2018
   
      Vázané na data <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek je přidán do listu. Další informace najdete v tématu [datové vazby a rozhraní Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
-##  <a name="runtimedoclevel"></a>Přidání ovládacích prvků ListObject za běhu v projektech na úrovni dokumentu  
+##  <a name="runtimedoclevel"></a> Přidání ovládacích prvků ListObject za běhu v projektech na úrovni dokumentu  
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> řízení dynamicky za běhu. To umožňuje vytvářet hostitelské ovládací prvky v reakci na události. Dynamicky vytvořený list – objekty nejsou trvalé do listu jako umisťování ovládacích prvků při uzavření listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Přidání ovládacího prvku ListObject do listu prostřednictvím kódu programu  
@@ -79,7 +78,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]  
   
-##  <a name="runtimeaddin"></a>Přidání ovládacích prvků ListObject za běhu v projektu doplňku VSTO  
+##  <a name="runtimeaddin"></a> Přidání ovládacích prvků ListObject za běhu v projektu doplňku VSTO  
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> řízení prostřednictvím kódu programu k žádné otevřete sešit v projektu doplňku VSTO. Dynamicky vytvořený list – objekty nejsou trvalé do listu jako umisťování ovládacích prvků, když je na listu uloženy a zavřeny. Další informace najdete v tématu [rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Přidání ovládacího prvku ListObject do listu prostřednictvím kódu programu  

@@ -1,15 +1,12 @@
 ---
-title: Možnosti a nastavení pro jazyk Python | Microsoft Docs
+title: Možnosti a nastavení pro jazyk Python
 description: Referenční dokumentace pro různá nastavení v sadě Visual Studio, které se vztahují na kód Python a projekty.
 ms.custom: ''
 ms.date: 03/05/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
@@ -21,15 +18,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 71c6e3424d93af2b3696f19193498ed6940cbc7a
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 0e8725005cb571b90a8e4857080d45bbd8ca6003
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-for-python-in-visual-studio"></a>Možnosti pro jazyk Python v sadě Visual Studio
 

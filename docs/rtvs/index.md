@@ -1,26 +1,23 @@
 ---
-title: R Tools pro Visual Studio | Microsoft Docs
-description: "R nástrojů pro Visual Studio (RTVS) je bezplatná, open-source příponu, která poskytuje mnoho funkcí jazyka, včetně technologii IntelliSense, ladění a vzdálené pracovní prostory."
-ms.custom: 
+title: R Tools for Visual Studio
+description: R nástrojů pro Visual Studio (RTVS) je bezplatná, open-source příponu, která poskytuje mnoho funkcí jazyka, včetně technologii IntelliSense, ladění a vzdálené pracovní prostory.
+ms.custom: ''
 ms.date: 11/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: hero-article
+ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 7e5fd1c6f2e2d33fe3841923f1b25728ad002f6e
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: ec4eb7c0b8eb00667283e9e7051ff03fcd5b2791
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Práce s R v sadě Visual Studio
 
@@ -41,7 +38,7 @@ Potom postupujte podle níže odkazy, které další informace o funkce souvisej
 | Funkce | Popis | Dokumentaci obecné Visual Studio | 
 | --- | --- | --- |
 | [Systém projektu Visual Studio](r-projects-in-visual-studio.md) | Uspořádání a správu související soubory ve struktuře pohodlný a využít užitečné šablony pro položky, jako je například kódu jazyka R, dokumentace R, R Markdownu, dotazy SQL a uložených procedur. Získejte také [Správce balíčků](r-package-manager-in-visual-studio.md) a [systému SQL Server integration](integrating-sql-server-with-r.md).  | [Řešení a projekty v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
-| [Workspace](r-workspaces-in-visual-studio.md) | RTVS můžete vytvořit vazbu na místní a vzdálené pracovní prostory, což umožňuje vytvořit kód R místně s menší sady dat, pak snadno spustit kód na výkonnější počítače založené na cloudu s mnohem větších datových sad. | není k dispozici |
+| [Pracovní prostor](r-workspaces-in-visual-studio.md) | RTVS můžete vytvořit vazbu na místní a vzdálené pracovní prostory, což umožňuje vytvořit kód R místně s menší sady dat, pak snadno spustit kód na výkonnější počítače založené na cloudu s mnohem větších datových sad. | není k dispozici |
 | [Možnosti nástrojů R](options-for-r-tools-in-visual-studio.md) | Ovládat různé aspekty RTVS. | [Dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md) |
 | [Bohaté úpravy, IntelliSense a fragmenty kódu](editing-r-code-in-visual-studio.md) | Zahrnuje zvýrazňování, syntaxe [IntelliSense](r-intellisense.md) ve všech váš kód a knihovny, kód formátování, podpis nápovědy, přechod na definici, najít všechny odkazy [výstřižky kódu](code-snippets-for-r.md)a další. | [Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown-with-r-in-visual-studio.md) | R Markdownu dokumenty můžete sdílet vaše data výsledky se integrované kódu jazyka R uvnitř bloky kódu markdownu. | není k dispozici |

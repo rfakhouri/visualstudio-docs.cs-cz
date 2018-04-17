@@ -1,13 +1,10 @@
 ---
-title: "Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření webové části Silverlight, která zobrazuje data OData pro službu SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.SPE.SilverlightWebPart
 dev_langs:
@@ -15,14 +12,14 @@ dev_langs:
 - CSharp
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3c2c66490e0eb46508fce0f346fe44563548b407
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 019c1d4b20f1d7a53fc68ef561d45989e93eee28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Postupy: Vytvoření webové části Silverlight, která zobrazuje data OData pro SharePoint
   SharePoint 2010 zveřejňuje data seznamu prostřednictvím OData. Ve službě SharePoint je služba RESTful ListData.svc implementováno službu OData. Tento návod ukazuje postup vytvoření webové části služby SharePoint, který je hostitelem aplikace Silverlight. Aplikace Silverlight zobrazí informace o seznamu oznámení služby SharePoint pomocí ListData.svc. Další informace najdete v tématu [rozhraní REST SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) a [protokol](http://go.microsoft.com/fwlink/?LinkId=226000).  
@@ -32,7 +29,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="prerequisites"></a>Požadavky  
  K dokončení tohoto návodu budete potřebovat následující komponenty:  
   
--   Podporované edice systému Microsoft Windows a služby SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)][Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   Podporované edice systému Microsoft Windows a služby SharePoint. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
 -   [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].  
   
@@ -82,7 +79,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  V poli Adresa **přidat odkaz na službu** dialogové okno pole, zadejte adresu URL webu služby SharePoint, jako **http://MySPSite**a potom zvolte **přejděte** tlačítko.  
   
-     Když Silverlight vyhledá službu SharePoint OData ListData.svc, nahradí adresu URL služby úplnou adresu. V tomto příkladu se stane http://myserver http://myserver/_vti_bin/ListData.svc.  
+     Když Silverlight vyhledá službu SharePoint OData ListData.svc, nahradí adresu URL služby úplnou adresu. V tomto příkladu http://myserver stane http://myserver/_vti_bin/ListData.svc.  
   
 4.  Vyberte **OK** tlačítko Přidat odkaz na službu do projektu a použít výchozí název služby, ServiceReference1.  
   

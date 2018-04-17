@@ -2,23 +2,19 @@
 title: Analýza využití paměti v sadě Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
-caps.latest.revision: 13
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 38f4457146f8373ad0e4ce3a5477c98a43424538
-ms.sourcegitcommit: 064f8678f4a918e1dce60285090a9803d37dc34b
+ms.openlocfilehash: 2b1c7f9420c2e5a9d3225ae0e8ab0d9023afb275
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>Profil využití paměti v sadě Visual Studio
 Najít nevracení paměti a neefektivní paměti při ladění pomocí integrované ladicí program **využití paměti** nástroj pro diagnostiku. Umožňuje nástroj využití paměti, proveďte jeden nebo více *snímky* spravovaná a nativní paměti haldy pro lepší porozumění tomu dopad využití paměti typy objektů. Můžete shromažďovat snímky .NET, nativní nebo smíšený režim (.NET a nativní) aplikace.  
@@ -135,7 +131,7 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
 ### <a name="native-type-reports"></a>Nativní typ sestavy  
  Vyberte aktuální odkaz **přidělení (rozdílové)** nebo **velikost haldy (rozdílové)** buňky v souhrnné tabulce využití paměti **diagnostické nástroje** okno.  
   
- ![Native Type View](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")  
+ ![Nativní typ zobrazení](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")  
   
  **Typy zobrazení** zobrazí počet a velikost typy ve snímku.  
   
@@ -143,7 +139,7 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
   
      **Instance** zobrazení zobrazí každou instanci daného typu. Výběr instance zobrazí, jejichž výsledkem vytvoření instance v zásobníku volání **přidělení zásobníku volání** podokně.  
   
-     ![Instances view](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")  
+     ![Zobrazení instancí](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")  
   
 -   Zvolte **zásobníky zobrazení** v **režimu zobrazení** seznamu zobrazíte přidělení zásobníku pro vybraný typ.  
   
@@ -161,7 +157,7 @@ Chcete-li analýza využití paměti, klikněte na jeden z odkazů, které se ot
   
  Sestava změn přidá sloupce (označené jako **(rozdílové)**) základní sestavy, které tento rozdíl mezi hodnotou základní snímku a porovnání snímku. Zde je, jak může vypadat sestavy rozdílové nativní typ zobrazení:  
   
- ![Native Types Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+ ![Nativní typy rozdílové Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>Blogy a videa  
 

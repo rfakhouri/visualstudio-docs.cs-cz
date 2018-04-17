@@ -1,20 +1,20 @@
 ---
-title: "Spouštění testů jednotek pomocí Průzkumníka testů | Microsoft Docs"
+title: Spouštění testů jednotek pomocí Průzkumníka testů | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ff1f101ba9c4335ca694d8bc13f6f17701d0974c
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: eda6a63b8d6e10b3eec3139ffa29143b0b5733ba
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Spouštění testů jednotek pomocí Průzkumníka testů
 
@@ -101,7 +101,7 @@ Průzkumníka testů umožňuje seskupení testů do předdefinovaných kategori
 |**Doba trvání**|Skupiny test čas spuštění: **Fast**, **střední**, a **pomalá**.|
 |**Výsledek**|Seskupí podle výsledků provedení testů: **testy se nezdařilo**, **přeskočen testy**, **předán testy**.|
 |**Vlastnosti**|Skupiny test dvojice kategorie/hodnota, že definujete. Přesvědčte se, zadejte znak kategorií a hodnoty je definována částí unit test framework.|
-|**Project**|Testovací skupiny podle názvu projektů.|
+|**Projekt**|Testovací skupiny podle názvu projektů.|
 
 ### <a name="group-by-traits"></a>Seskupit podle vlastnosti
 
@@ -142,7 +142,7 @@ Filtrovat podle různých kritérií:
 |Kvalifikátor|Popis|
 |---------------|-----------------|
 |**Znak**|Vyhledá odpovídá znak kategorie a hodnotu. Přesvědčte se, zadejte znak kategorií a hodnoty jsou definovány částí unit test framework.|
-|**Project**|Vyhledá názvy projektů testů pro odpovídající položky.|
+|**Projekt**|Vyhledá názvy projektů testů pro odpovídající položky.|
 |**Chybová zpráva**|Uživatelem definované chybové zprávy, které vrácený se nezdařilo hledání vyhodnotí pro odpovídající položky.|
 |**Cesta k souboru**|Plně kvalifikovaný název zdrojové soubory test vyhledá odpovídá.|
 |**Plně kvalifikovaný název**|Vyhledá soubor plně kvalifikovaný název testovací obory názvů, třídy a metody odpovídá.|

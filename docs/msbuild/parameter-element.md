@@ -1,12 +1,9 @@
 ---
-title: "Parameter – Element | Microsoft Docs"
-ms.custom: 
+title: Parameter – Element | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,24 +14,23 @@ helpviewer_keywords:
 - Parameter element [MSBuild]
 - <Parameter> element [MSBuild]
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ae8927c8a8f3a3fcd3f57075de281e3ee0679a1
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7816e859aebdbee6cb0765c76be4ebfb4906a8d5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="parameter-element"></a>Parameter – Element
 Obsahuje informace o určitém parametru pro úlohu, která je generován `UsingTask``TaskFactory`.  Název elementu je název parametru.  Chcete-li – další informace, najdete v tématu [usingtask – Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
 
  \<Project>  
  \<Usingtask – >  
- \<ParameterGroup>  
+ \<ParameterGroup >  
  \<Parametr >  
 
 ## <a name="syntax"></a>Syntaxe  

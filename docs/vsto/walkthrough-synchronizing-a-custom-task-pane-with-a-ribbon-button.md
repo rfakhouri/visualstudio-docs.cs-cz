@@ -1,12 +1,10 @@
 ---
-title: "Návod: Synchronizace vlastního podokna úloh s tlačítkem pásu karet | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Synchronizace vlastního podokna úloh s tlačítkem pásu karet | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +23,14 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7368c580d2f00d929bdeefd11665e9f579af17f7
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: ff3252a1ae234615cc4d4ed83a07d98a15092bee
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Návod: Synchronizace vlastního podokna úloh s tlačítkem na pásu karet
   Tento návod ukazuje postup vytvoření vlastního podokna úloh, uživatelé mohou zobrazit nebo skrýt kliknutím na tlačítko přepnutí na pásu karet. Vždy byste měli vytvořit prvek uživatelského rozhraní (UI), jako je tlačítko, které mohou uživatelé kliknout a zobrazit nebo skrýt vlastního podokna úloh, protože aplikace Microsoft Office neposkytují výchozí způsob, jak uživatelům zobrazit nebo skrýt vlastní podokna úloh.  
@@ -65,7 +64,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  Vytvoření projektu doplněk aplikace Excel s názvem **SynchronizeTaskPaneAndRibbon**, pomocí šablony projektu doplněk aplikace Excel. Další informace najdete v tématu [postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Otevře se **ThisAddIn.cs** nebo **ThisAddIn.vb** kód soubor a přidá **SynchronizeTaskPaneAndRibbon** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Otevře se **ThisAddIn.cs** nebo **ThisAddIn.vb** kód soubor a přidá **SynchronizeTaskPaneAndRibbon** projektu do **Průzkumníku řešení**.  
   
 ## <a name="adding-a-toggle-button-to-the-ribbon"></a>Přidání přepínače na pásu karet  
  Jedním z pokynů pro návrh aplikace Office je, že uživatelé by měli mít vždy řízení aplikace Office uživatelského rozhraní. Pokud chcete povolit uživatelům řídit vlastního podokna úloh, můžete přidat přepínací tlačítko pásu karet, který zobrazí a skryje do podokna úloh. Chcete-li vytvořit přepínací tlačítko, přidejte **pásu karet (vizuálního návrháře)** položku do projektu. Návrháře umožňuje přidat a umístěte ovládací prvky, nastavení vlastností ovládacího prvku a zpracování události ovládacího prvku. Další informace najdete v tématu [Návrhář pásu karet](../vsto/ribbon-designer.md).  

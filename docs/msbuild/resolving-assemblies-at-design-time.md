@@ -1,32 +1,28 @@
 ---
-title: "Překlad sestavení v době návrhu | Microsoft Docs"
-ms.custom: 
+title: Překlad sestavení v době návrhu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10c327995363b2064498f88d9ec1a02a18650970
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 37974c23c96b73ffc0ccdd174028fd8936d6b9bb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Překlad sestavení v době návrhu
 Po přidání odkazu na sestavení pomocí karty .NET dialogového okna Přidat odkaz bude odkaz ukazovat na zprostředkující referenční sestavení, což je sestavení, které obsahuje veškeré informace o typech a podpisech, ale nezbytně nemusí obsahovat žádný kód. Karta .NET obsahuje referenční sestavení, která odpovídají sestavením modulu runtime v rozhraní .NET Framework. Kromě toho obsahují referenční sestavení, jež odpovídají sestavením modulu runtime v registrovaných složkách AssemblyFoldersEx, které jsou používány třetími stranami.  
   
 ## <a name="multi-targeting"></a>Cílení na více verzí  
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] Umožňuje cílové verze rozhraní .NET Framework, který spustí buď na CLR Common Language Runtime () verze 2.0 nebo verze 4. Jedná se o rozhraní .NET Framework verze 2.0, 3.0, 3.5, 4, 4.5 a 4.5.1 a verze Silverlight 1.0, 2.0 a 3.0. Je-li vydána nová verze rozhraní .NET Framework založeného na modulu CLR verze 2.0 nebo verze 4, může být rozhraní nainstalováno pomocí sady cílů a automaticky zobrazeno jako cíl v sadě Visual Studio.  
+ Aplikace [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] umožňuje používat cílové verze rozhraní .NET Framework, které spouští modul CLR (Common Language Runtime) verze 2.0 nebo verze 4. Jedná se o rozhraní .NET Framework verze 2.0, 3.0, 3.5, 4, 4.5 a 4.5.1 a verze Silverlight 1.0, 2.0 a 3.0. Je-li vydána nová verze rozhraní .NET Framework založeného na modulu CLR verze 2.0 nebo verze 4, může být rozhraní nainstalováno pomocí sady cílů a automaticky zobrazeno jako cíl v sadě Visual Studio.  
   
 ## <a name="how-type-resolution-works"></a>Principy překladu typů  
  V době běhu překládá CLR typy v sestavení náhledem do GAC do adresáře bin a do všech definovaných cest. K tomuto účelu se používá zavaděč syntézy. Jak ale zavaděč syntézy ví, kde má hledat? To záleží na rozhodnutí, které je provedeno v době návrhu, při sestavování aplikace.  

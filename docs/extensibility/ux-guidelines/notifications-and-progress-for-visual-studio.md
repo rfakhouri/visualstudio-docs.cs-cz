@@ -1,28 +1,24 @@
 ---
-title: "Oznámení a postup pro sadu Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Oznámení a postup pro sadu Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00ab0622820777f556eff667e6de5f769196e6b0
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 237ed5c382a6ac880b0be59165a33ad338370976
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Oznámení a postup pro sadu Visual Studio
-##  <a name="BKMK_NotificationSystems"></a>Systémy oznámení  
+##  <a name="BKMK_NotificationSystems"></a> Systémy oznámení  
   
 ### <a name="overview"></a>Přehled  
  Informujte uživatele, co se děje v sadě Visual Studio týkající se softwaru vývoj úkoly několika způsoby.  
@@ -61,14 +57,14 @@ ms.lasthandoff: 02/01/2018
   
 ### <a name="notification-methods"></a>Metody oznámení  
   
-####  <a name="BKMK_ModalErrorMessageDialogs"></a>Zpráva Chyba modální dialogová okna  
+####  <a name="BKMK_ModalErrorMessageDialogs"></a> Zpráva Chyba modální dialogová okna  
  Dialogové okno modální chybová zpráva se používá k zobrazení chybovou zprávu, která vyžaduje potvrzení nebo akce uživatele.  
   
  ![Modální chybová zpráva](../../extensibility/ux-guidelines/media/0901-01_modalerrormessage.png "0901 01_ModalErrorMessage")  
   
  **Dialogové okno zprávy modální chyba výstrahy uživatele Neplatný připojovací řetězce k databázi**  
   
-####  <a name="BKMK_IDEStatusBar"></a>IDE stavového řádku  
+####  <a name="BKMK_IDEStatusBar"></a> IDE stavového řádku  
  Pravděpodobnost, že uživatelé, Všimněte si text stavového řádku koreluje s jejich počítače udělat prostředí a konkrétní zkušeností s platformou Windows. Základní sady Visual Studio zákazník obvykle být zkušeného v obou oblastech, i když i Pokročilí uživatelé Windows přijít o změny ve stavovém řádku. Proto stavový řádek je nejvhodnější pro informační účely nebo jako redundantní cue pro informace jsou uvedeny jinde. V dialogu nebo v okně nástroje oznámení třeba poskytnout jakýkoli druh důležitých informací, že uživatel se musí přeložit okamžitě.  
   
  Stavový řádek sady Visual Studio je navržena k umožnění pro několik typů informací, který se má zobrazit. Je rozdělený do oblasti pro zpětnou vazbu, Návrhář, indikátor průběhu, animace a klienta.  
@@ -81,24 +77,24 @@ ms.lasthandoff: 02/01/2018
   
  **Barev na panelu Stav IDE**  
   
-####  <a name="BKMK_EmbeddedInfobar"></a>Vložené informační panel  
+####  <a name="BKMK_EmbeddedInfobar"></a> Vložené informační panel  
  Informační panel můžete použít v horní části okna dokumentu nebo okno nástroje informovat uživatele o stavu nebo stavu. Příkazy může nabídnout také tak, aby uživatel může mít způsob, jak snadno provést akci. Informační panel je ovládací prvek standardní prostředí. Vyhněte se vytváření vlastní, který bude fungovat a zobrazí nekonzistentní s ostatními uživateli v prostředí IDE. V tématu [Infobars](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars) pro podrobné informace o nasazení a používání.  
   
  ![Vložené informační panel](../../extensibility/ux-guidelines/media/0901-03_embeddedinfobar.png "0901 03_EmbeddedInfobar")  
   
  **Informačního panelu vložených v okně dokumentu, zobrazení výstrah uživatele, který rozhraní IDE je v režimu historické ladění editor nebude odpovídat stejným způsobem jako ve standardním režimu ladění.**  
   
-####  <a name="BKMK_MouseCursorChanges"></a>Změny kurzor myši  
+####  <a name="BKMK_MouseCursorChanges"></a> Změny kurzor myši  
  Při změně myší, pomocí barev, které jsou svázané s službu VSColor a jsou už přidružené kurzor. Kurzor změny lze použít pro probíhající operaci, jakož i dosáhl zóny, kde je uživatel ukazatele myši na cíl, který lze přetáhnout, umístění na nebo použít k výběru objektu.  
   
  Používejte myší zaneprázdněných/čekání jenom v případě, že všechny dostupné čas procesoru musí být vyhrazeno pro operace, brání vyjadřující žádný další vstup uživatele. Ve většině případů se dobře vytvořené aplikace pomocí více vláken musí být výjimečných časy, kdy by uživatelé nebudou moci provádění dalších operací.  
   
  Mějte na paměti, že změny kurzor jsou užitečné redundantní cue informace uvedenou jinde. Nespoléhejte na změnu kurzoru jako komunikaci s uživatelem, zejména v případě, že při pokusu o předání informací o tom něco jediný způsob, jakým je velmi důležité, že uživatel musí vyřešit.  
   
-####  <a name="BKMK_NotSysProgressIndicators"></a>Indikátory průběhu  
+####  <a name="BKMK_NotSysProgressIndicators"></a> Indikátory průběhu  
  Indikátory průběhu jsou důležité pro poskytnutí zpětné vazby uživatele během procesů, které k dokončení více než pár sekund trvat. Indikátory průběhu lze zobrazit na místě (téměř spuštění bod akce v průběhu), na panelu embedded stav, v modální dialogové okno nebo ve stavovém řádku Visual Studio. Podle pokynů uvedených v [indikátory průběhu](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) o jejich používání a implementace.  
   
-####  <a name="BKMK_VSNotificationsToolWindow"></a>Visual Studio oznámení okna  
+####  <a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio oznámení okna  
  Okno Visual Studio oznámení upozorní vývojáře o licencování, prostředí (Visual Studio), rozšíření a aktualizace. Uživatele můžete zavřít jednotlivé oznámení nebo můžete ignorovat určitých typů oznámení. Seznam ignorovaných oznámení se spravuje přes **nástroje > Možnosti** stránky.  
   
  Okno oznámení není aktuálně extensible.  
@@ -107,33 +103,33 @@ ms.lasthandoff: 02/01/2018
   
  **Okno nástroje Visual Studio oznámení**  
   
-####  <a name="BKMK_ErrorList"></a>Seznam chyb  
+####  <a name="BKMK_ErrorList"></a> Seznam chyb  
  Oznámení v seznamu chyb označení chyb a upozornění, které došlo k chybě během kompilace a nebo proces sestavení a umožňuje uživatelům procházet kód pro tuto chybu konkrétního kódu.  
   
  ![Seznam chyb](../../extensibility/ux-guidelines/media/0901-08_errorlist.png "0901 08_ErrorList")  
   
  **Seznam chyb v sadě Visual Studio**  
   
-####  <a name="BKMK_EmbeddedStatusBars"></a>Vložené stavové řádky  
+####  <a name="BKMK_EmbeddedStatusBars"></a> Vložené stavové řádky  
  Protože IDE stavový řádek je dynamická, s jeho kontext oblast klienta nastavena na okno aktivního dokumentu a informace o aktualizaci v kontextu uživatele a/nebo odpovědí systému, je obtížné spravovat průběžné zobrazení informací o nebo mu dávat stav na dlouhodobé asynchronní procesy. Například stavového řádku IDE není vhodná pro oznámení o výsledky testu pro více spustí nebo okamžitě řešitelné položku Možnosti. Je důležité zachovat takové informace o stavu v kontextu okna dokumentu nebo nástroj, kde uživatel provede výběr nebo spustí proces.  
   
  ![Vložené stavový řádek](../../extensibility/ux-guidelines/media/0901-09_embeddedstatusbar.png "0901 09_EmbeddedStatusBar")  
   
  **Vložené stavového řádku v sadě Visual Studio**  
   
-####  <a name="BKMK_WindowsTray"></a>Oznámení panelu systému Windows  
+####  <a name="BKMK_WindowsTray"></a> Oznámení panelu systému Windows  
  Na hlavním panelu Windows taktovací oznamovací oblasti je u systému Windows. Mnoho nástrojů a softwarové součásti poskytují ikony v této oblasti tak, aby uživatel můžete získat z kontextové nabídky pro systémové úlohy, jako je změna rozlišení obrazovky nebo získávání aktualizací softwaru.  
   
  Oznámení na úrovni prostředí by měl být prezentované v centru oznámení Visual Studio, není oznamovací oblasti systému Windows.  
   
-####  <a name="BKMK_NotificationBubbles"></a>Oznámení bublinách  
+####  <a name="BKMK_NotificationBubbles"></a> Oznámení bublinách  
  Oznámení bublinách se může zobrazit jako informační v rámci editor nebo Návrhář nebo jako součást oznamovací oblasti systému Windows. Uživatel zjistí tyto bublinách jako problémy, které můžete vyřešit později, což je výhody Nekritická oznámení. Bublinách nejsou vhodná pro důležité informace, které uživatel musí vyřešit hned. Pokud používáte bublinách oznámení v sadě Visual Studio, postupujte podle kroků [Windows Desktop pokyny pro oznámení bublinách](https://msdn.microsoft.com/en-us/library/windows/desktop/dn742472\(v=vs.85\).aspx).  
   
  ![Oznámení bublin](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901 07_NotificationBubbles")  
   
  **Bublin oznámení v oznamovací oblasti systému Windows používá pro sadu Visual Studio**  
   
-##  <a name="BKMK_ProgressIndicators"></a>Indikátory průběhu  
+##  <a name="BKMK_ProgressIndicators"></a> Indikátory průběhu  
   
 ### <a name="overview"></a>Přehled  
  Indikátory průběhu jsou důležitou součástí oznámení systému pro poskytnutí zpětné vazby uživatele. Se informace pro uživatele, když se dokončí operace a procesy. Typy známé indikátor obsahují indikátory průběhu, roztočený kurzory a animovaný ikony. Typ a umístění indikátor průběhu, závisí na kontext, včetně obsah hlášení a jak dlouho proces nebo operace bude trvat dokončení.  
@@ -287,7 +283,7 @@ ms.lasthandoff: 02/01/2018
   
  **Výstup – okno stavem probíhající proces a počkejte, než zasílání zpráv**  
   
-##  <a name="BKMK_Infobars"></a>Infobars  
+##  <a name="BKMK_Infobars"></a> Infobars  
   
 ### <a name="overview"></a>Přehled  
  Infobars uživateli přidělit, slouží jako ukazatel blízko jejich bodu pozornost a pomocí ovládacího prvku sdílené informační panel zajišťuje konzistenci vzhled a interakce.  
@@ -476,13 +472,13 @@ public interface IVsInfoBarUIEvents
   
 ```  
   
-##  <a name="BKMK_ErrorValidation"></a>Chyba ověření  
+##  <a name="BKMK_ErrorValidation"></a> Chyba ověření  
  Když uživatel zadá informace, které není přijatelné, například když je povinné pole vynecháno nebo má nesprávný formát zadávání dat, je lepší ověření použijte ovládací prvek nebo připomínky téměř místo použití blokování dialogové okno chyby místní ovládacího prvku.  
   
 ### <a name="field-validation"></a>Ověření pole  
  Ověření formuláře a pole se skládá ze tří součástí: ovládací prvek, ikonu a popis tlačítka. Během několik typů ovládacích prvků můžete použít, použije se jako příklad textového pole.  
   
- ![Ověření pole &#40; prázdné &#41; ] (../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
+ ![Pole ověření &#40;prázdné&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905 01_FieldValidation")  
   
  Pokud pole je požadováno, měla by existovat vodoznaku s informacemi o tom text  **\<požadované >** a na pozadí pole by měl být light žlutý (VSColor: `Environment.ControlEditRequiredBackground`) a popředí by měl být šedá (VSColor: `Environment.ControlEditRequiredHintText`):  
   
@@ -515,7 +511,7 @@ public interface IVsInfoBarUIEvents
 #### <a name="in-place-warning-text"></a>Text upozornění na místě  
  Když je místo, které jsou k dispozici pro umístění chybová zpráva blízko ovládacího prvku ve stavu chyby, je to vhodnější než pomocí popisek samostatně.  
   
- ![V & č. 45; místní upozornění](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
+ ![V&#45;umístit upozornění](../../extensibility/ux-guidelines/media/0905-06_inplacewarning.png "0905 06_InPlaceWarning")  
   
  **Text upozornění na místě**  
   

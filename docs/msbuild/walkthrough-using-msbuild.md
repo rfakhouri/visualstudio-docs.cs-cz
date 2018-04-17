@@ -1,25 +1,22 @@
 ---
-title: "Návod: Použití nástroje MSBuild | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Použití nástroje MSBuild | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de0e5fe3d00f4f641fb2e7e28cae7802c32822de
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 16fdcaeb1750b822d71f753c95c915a14f9ed393
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-using-msbuild"></a>Návod: Použití nástroje MSBuild
 MSBuild je platforma sestavení pro Microsoft a Visual Studio. Tento návod vás seznámí s stavební bloky nástroje MSBuild a ukazuje, jak k zápisu, manipulaci a ladění projektů MSBuild. Co se dozvíte o:
@@ -496,7 +493,7 @@ $(PropertyName)
 
  Všimněte si, jak frázi "Compile.DependentUpon" zobrazuje několikrát. Používání metadat pomocí této syntaxe v rámci cíl způsobí, že "dávkování". Dávkování znamená po provedení úlohy v rámci cíle pro každou hodnotu jedinečný metadat. To je ekvivalentní skriptu MSBuild nejběžnější "smyčka" for programovací konstrukce. Další informace najdete v tématu [Batching](../msbuild/msbuild-batching.md).
 
-### <a name="well-known-metadata"></a>Well-Known Metadata
+### <a name="well-known-metadata"></a>Metadata známé
  Vždy, když je přidat položku do seznamu položek, že položka není přiřazen některé známé metadat. Například %(Filename) vrátí název souboru žádné položky. Úplný seznam známých metadata, najdete v části [Metadata známé položky](../msbuild/msbuild-well-known-item-metadata.md).
 
 ##### <a name="to-examine-well-known-metadata"></a>K prozkoumání dobře známé metadat

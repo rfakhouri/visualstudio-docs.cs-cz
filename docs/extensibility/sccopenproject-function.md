@@ -1,29 +1,25 @@
 ---
 title: Funkce SccOpenProject | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SccOpenProject
 helpviewer_keywords:
 - SccOpenProject function
 ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10afe84716153b67c419f4ddbd1a7b838b68cbf9
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 15d9cf6d5fa4533b5ee0ff65f8aeae86df3d571a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject – funkce
 Tato funkce otevře existující projekt řízení zdroje nebo vytvoří nový.  
@@ -70,7 +66,7 @@ SCCRTN SccOpenProject (
  [v] Volitelné zpětného volání funkce zobrazení textu výstup z modulu plug-in zdrojového kódu.  
   
  dwFlags  
- [v] Signály zda nový projekt musí být vytvořen, pokud projekt není znám ke zdroji řídit modulu plug-in. Hodnota může být kombinací `SCC_OP_CREATEIFNEW` a`SCC_OP_SILENTOPEN.`  
+ [v] Signály zda nový projekt musí být vytvořen, pokud projekt není znám ke zdroji řídit modulu plug-in. Hodnota může být kombinací `SCC_OP_CREATEIFNEW` a `SCC_OP_SILENTOPEN.`  
   
 ## <a name="return-value"></a>Návratová hodnota  
  Očekává se, že modul plug-in implementace zdroje řízení této funkce vrátí jednu z následujících hodnot:  
@@ -94,9 +90,9 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 >  Je první akcí integrovaného vývojového prostředí může být nutné provést může být volání `SccOpenProject` funkce nebo [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Z tohoto důvodu mít oba dva identická `lpUser` parametr.  
   
- `lpAuxProjPath`a`lpProjName` jsou čtení ze souboru řešení, nebo jsou vráceny z volání `SccGetProjPath` funkce. Tyto parametry obsahují řetězce, které modul plug-in správy zdroje přidruží projektu a mají smysl jenom pro modul plug-in. Pokud žádná taková řetězce v souboru řešení a uživatel nebyl byl vyzván, aby Procházet (což by vrátit řetězec prostřednictvím `SccGetProjPath` funkce), rozhraní IDE předá prázdné řetězce pro obě `lpAuxProjPath` a `lpProjName`a předpokládá, že tyto hodnoty aktualizovat pomocí modulu plug-in když funkce vrátí hodnotu.  
+ `lpAuxProjPath` a`lpProjName` jsou čtení ze souboru řešení, nebo jsou vráceny z volání `SccGetProjPath` funkce. Tyto parametry obsahují řetězce, které modul plug-in správy zdroje přidruží projektu a mají smysl jenom pro modul plug-in. Pokud žádná taková řetězce v souboru řešení a uživatel nebyl byl vyzván, aby Procházet (což by vrátit řetězec prostřednictvím `SccGetProjPath` funkce), rozhraní IDE předá prázdné řetězce pro obě `lpAuxProjPath` a `lpProjName`a předpokládá, že tyto hodnoty aktualizovat pomocí modulu plug-in když funkce vrátí hodnotu.  
   
- `lpTextOutProc`je zde ukazatel na funkci zpětného volání poskytované IDE pro modul plug-in pro účely zobrazení výstupu výsledek příkazu zdrojového kódu. Tato funkce zpětného volání je podrobně popsaná v [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
+ `lpTextOutProc` je zde ukazatel na funkci zpětného volání poskytované IDE pro modul plug-in pro účely zobrazení výstupu výsledek příkazu zdrojového kódu. Tato funkce zpětného volání je podrobně popsaná v [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
 > [!NOTE]
 >  Pokud modul plug-in zdrojového kódu se chtít využít výhody tohoto, musí mít nastavený `SCC_CAP_TEXTOUT` příznak v [SccInitialize](../extensibility/sccinitialize-function.md). Pokud nebyl nastaven tento příznak, nebo pokud rozhraní IDE nepodporuje tuto funkci `lpTextOutProc` bude `NULL`.  

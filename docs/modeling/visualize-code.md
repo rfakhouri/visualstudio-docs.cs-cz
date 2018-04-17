@@ -1,25 +1,23 @@
 ---
-title: "Vizualizace kódu | Microsoft Docs"
-ms.custom: 
+title: Vizualizace kódu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-modeling
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code, understanding
 - code, visualizing
 - code, exploring
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4b7729cb0541c6ef3feb007e99b9e532c6c361
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 229979e608198f6eeb3f68f6e9f31d4e3391dbc2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visualize-code"></a>Vizualizace kódu
 Vizualizace a modelování nástroje v sadě Visual Studio můžete použít k vám pomůžou pochopit stávající kód a popisují vaše aplikace. Díky tomu můžete vizuálně zjistěte, jak může ovlivnit změny kódu a nápovědy vyhodnocení práci a rizik, které jsou výsledkem tyto změny. Příklad:  
@@ -47,7 +45,7 @@ Vizualizace a modelování nástroje v sadě Visual Studio můžete použít k v
 |**Kategorie**|**Odkazy**|  
 |------------------|---------------|  
 |**Fóra**|-   [Visual Studio vizualizace a modelování nástroje](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio vizualizace a modelování SDK (nástroje DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
-|**Blogy**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
+|**Blogy**|[Visual Studio ALM a Team Foundation Server blogu](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Technické články a deníků**|[Architektura fórum MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>Viz také  

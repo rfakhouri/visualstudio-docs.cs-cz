@@ -1,13 +1,10 @@
 ---
-title: "Řešení potíží s balení a nasazení SharePoint | Microsoft Docs"
-ms.custom: 
+title: Řešení potíží s balení a nasazení SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VSTO.WorkflowDeployment.Troubleshooting
 - VS.SharePointTools.Project.PackageRetraction
@@ -26,14 +23,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b30c17b9b20c59085fc8a684e3b9735daa0e019c
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 95dfd93433fc70895baa9056ce1b1522845bf497
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-sharepoint-packaging-and-deployment"></a>Řešení potíží s balením a nasazením služby SharePoint
   Toto téma popisuje různé problémy, které se můžete setkat při zabalení a nasazení řešení služby SharePoint.
@@ -42,7 +39,7 @@ ms.lasthandoff: 03/02/2018
  Při diagnostice mezi další vrstvy, SharePoint a Visual Studio, můžete pomocí klíče registru EnableDiagnostics zobrazíte trasování zásobníku. Další informace najdete v tématu [ladění řešení služby SharePoint](../sharepoint/debugging-sharepoint-solutions.md).
 
 ## <a name="adding-project-output-to-the-solution-package"></a>Přidání výstupu projektu do balíčku řešení
- Výstup projektu můžete přidat do balíčku pomocí návrháře balíčků. Při přidání výstupu projektu @, ale ujistěte, že platformy projektu odpovídá platforma řešení služby SharePoint. Doporučujeme vám, že používáte **libovolný procesor** Cílová platforma pro sestavení, které chcete nasadit na server služby SharePoint. Další informace najdete v tématu [stránka kompilovat, Návrhář projektu &#40; Visual Basic &#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) a [Advanced dialogové okno nastavení kompilátoru &#40; Visual Basic &#41; ](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
+ Výstup projektu můžete přidat do balíčku pomocí návrháře balíčků. Při přidání výstupu projektu @, ale ujistěte, že platformy projektu odpovídá platforma řešení služby SharePoint. Doporučujeme vám, že používáte **libovolný procesor** Cílová platforma pro sestavení, které chcete nasadit na server služby SharePoint. Další informace najdete v tématu [stránka kompilovat, Návrhář projektu &#40;jazyka Visual Basic&#41; ](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) a [Advanced kompilátoru dialogové okno nastavení &#40;jazyka Visual Basic&#41;](/visualstudio/ide/reference/advanced-compiler-settings-dialog-box-visual-basic).
 
 ## <a name="validation-warnings-and-errors"></a>Upozornění a chyby při ověřování
  Nástroje pro vývoj pro SharePoint v sadě Visual Studio kroků ověření ověřte, zda je správně vytvořen balíčku řešení. Můžete také vytvořit vlastní ověření kroky pro funkce a balíčky. Další informace najdete v tématu [postupy: vytvoření vlastní funkce a pravidel ověřování balíčku pro řešení služby SharePoint](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md).

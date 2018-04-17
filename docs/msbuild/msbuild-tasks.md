@@ -2,26 +2,22 @@
 title: Úlohy nástroje MSBuild | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: msbuild
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: 18
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1de29741f11413d8829902635c1284aa6e5bce6
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: e1d95b4ba7b271fad528d3e70494d3aafb077aca
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-tasks"></a>Úlohy nástroje MSBuild
 Platformy sestavení musí být schopné provést libovolného počtu akcí během procesu vytváření. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] používá *úlohy* k provedení těchto akcí. Úkol je jednotka spustitelný kód, který se používá [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k provádění operací atomic sestavení.  
@@ -71,6 +67,6 @@ Platformy sestavení musí být schopné provést libovolného počtu akcí běh
   
 ## <a name="see-also"></a>Viz také  
  [Koncepty nástroje MSBuild](../msbuild/msbuild-concepts.md)   
- [MSBuild](../msbuild/msbuild.md)   
+ [Nástroje MSBuild](../msbuild/msbuild.md)   
  [Zápis úloh](../msbuild/task-writing.md)   
  [Vložené úlohy](../msbuild/msbuild-inline-tasks.md)

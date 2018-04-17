@@ -1,27 +1,25 @@
 ---
-title: "Příkazy sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Příkazy sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, commands
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: c4fc6746648e57903bd0da45bc15758b30a60801
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-commands"></a>Příkazy sady Visual Studio
 Příkazy sady Visual Studio umožňují vyvolat příkaz z **příkaz** okně **Immediate** okno, nebo **najít/příkaz** pole. V každém případě větší než přihlašovací (`>`) slouží k označení, že příkaz spíše než operace hledání nebo ladění je provést.  
@@ -71,7 +69,7 @@ Příkazy sady Visual Studio umožňují vyvolat příkaz z **příkaz** okně *
 |[Nastavit aktuální rámec zásobníku](../../ide/reference/set-current-stack-frame-command.md)|Umožňuje zobrazit konkrétní zásobníku.|  
 |[Nastavit aktuální vlákno](../../ide/reference/set-current-thread-command.md)|Umožňuje zobrazit konkrétní vlákno.|  
 |[Nastavit základ –](../../ide/reference/set-radix-command.md)|Určuje počet bajtů, které chcete zobrazit.|  
-|[Prostředí shell](../../ide/reference/shell-command.md)|Spustí programy uvnitř [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jako by byl proveden příkaz z příkazového řádku.|  
+|[prostředí shell](../../ide/reference/shell-command.md)|Spustí programy uvnitř [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] jako by byl proveden příkaz z příkazového řádku.|  
 |[Příkaz ShowWebBrowser (Zobrazit webový prohlížeč)](../../ide/reference/showwebbrowser-command.md)|Zobrazí adresu URL, zadejte v okně webového prohlížeče buď v rámci integrované vývojové prostředí (IDE) nebo externí k prostředí IDE.|  
 |[Start](../../ide/reference/start-command.md)|Zahájí proces ladění a umožňuje vám určit způsob zpracování chyb.|  
 |[Cesta](../../ide/reference/symbol-path-command.md)|Nastaví seznam adresářů v ladicím programu pro vyhledávání symbolů.|  

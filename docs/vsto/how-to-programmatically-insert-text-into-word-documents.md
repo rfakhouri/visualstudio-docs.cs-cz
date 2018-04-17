@@ -1,12 +1,10 @@
 ---
-title: "Postupy: programové vkládání textu do dokumentů aplikace Word | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: programové vkládání textu do dokumentů aplikace Word | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], replacing
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 3e54850bd4cdd66786474f3f823e5e73dc54d344
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: bbbcc0543ce6017ac83ed2d1fcc09fed201e466f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Postupy: Vkládání textu do dokumentů aplikace Word prostřednictvím kódu programu
   Vkládání textu do dokumentů aplikace Microsoft Office Word tři primární způsoby:  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
 ## <a name="inserting-text-using-typetext"></a>Vkládání textu s použitím TypeText  
- <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> Metoda vloží text ve výběru. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>pracuje odlišně v závislosti na možnostech nastavit v počítači uživatele. Kód v následujícím postupu deklaruje <xref:Microsoft.Office.Interop.Word.Selection> objektová proměnná a vypne zobrazování **přepisování** možnost, pokud je zapnutá. Pokud **přepisování** je aktivovaná možnost a potom se přepíše jakýkoli text vedle kurzor.  
+ <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> Metoda vloží text ve výběru. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> pracuje odlišně v závislosti na možnostech nastavit v počítači uživatele. Kód v následujícím postupu deklaruje <xref:Microsoft.Office.Interop.Word.Selection> objektová proměnná a vypne zobrazování **přepisování** možnost, pokud je zapnutá. Pokud **přepisování** je aktivovaná možnost a potom se přepíše jakýkoli text vedle kurzor.  
   
 #### <a name="to-insert-text-using-the-typetext-method"></a>Chcete-li vložit text pomocí metody TypeText  
   

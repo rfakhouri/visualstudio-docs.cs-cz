@@ -1,13 +1,10 @@
 ---
-title: "Postupy: přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: přizpůsobení balíčku řešení služby SharePoint pomocí cílů nástroje MSBuild | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ab9aa26efe3002c28ec031457d2732c828eca445
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: fea1719eb80515a97a1b18336f1653cb535359e9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Postupy: Přizpůsobení balíčku řešení SharePoint pomocí cílů nástroje MSBuild
   Pomocí cílů nástroje MSBuild v příkazovém řádku lze přizpůsobit, jak Visual Studio vytvoří soubory balíčku SharePoint (WSP). Například můžete upravit vlastnosti nástroje MSBuild Chcete-li změnit adresář zprostředkující balení a skupiny nástroje MSBuild položky, které zadat výčtové soubory.  
@@ -50,7 +47,7 @@ ms.lasthandoff: 01/10/2018
   
 3.  Otevřete projekt, otevřete jeho místní nabídce a potom zvolte **uvolnit projekt**.  
   
-4.  V **Průzkumníku řešení**, otevřete místní nabídky projektu a zvolte **upravit***ProjectName***.vbproj** nebo **Upravit***ProjectName***.csproj**.  
+4.  V **Průzkumníku řešení**, otevřete místní nabídky projektu a zvolte **upravit***ProjectName***.vbproj** nebo **upravit***název projektu*** .csproj**.  
   
 5.  Po `Import` řádek u konce souboru projektu, přidejte následující řádek.  
   

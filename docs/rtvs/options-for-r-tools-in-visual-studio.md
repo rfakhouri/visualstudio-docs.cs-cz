@@ -1,31 +1,28 @@
 ---
-title: "Možnosti nástrojů R v sadě Visual Studio | Microsoft Docs"
-description: "Referenční dokumentace pro možnosti v sadě Visual Studio pro jazyk R a související funkce."
-ms.custom: 
+title: Možnosti nástrojů R
+description: Referenční dokumentace pro možnosti v sadě Visual Studio pro jazyk R a související funkce.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.advanced
 - vs.toolsoptionspages.r_tools
 - vs.toolsoptionspages.r_tools.advanced
 - vs.toolsoptionspages.r_tools.#150
-ms.topic: article
+ms.topic: reference
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 2a2671c5a234d4a30d64823794880dc648d219b0
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 3a80b787d1d2631afbdac90092f9fd251758dcf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="r-tools-for-visual-studio-options"></a>R nástroje pro možnosti aplikace Visual Studio
 
@@ -105,7 +102,7 @@ Tyto možnosti určují způsob zpracování hodnot v [proměnné Explorer](vari
 
 | Možnost | Výchozí hodnota | Popis |
 | --- | --- | --- |
-| Prohlížeč stránky HTML | `External` | Určuje, kde je obsah, jako `ggvis` výkresu, nebo `shiny` aplikace je vykreslen. `Internal`zobrazuje výstup ve formátu HTML v okně nástroje v sadě Visual Studio; `External` zobrazí výstupu protokolu HTML ve výchozím prohlížeči. |
+| Prohlížeč stránky HTML | `External` | Určuje, kde je obsah, jako `ggvis` výkresu, nebo `shiny` aplikace je vykreslen. `Internal` zobrazuje výstup ve formátu HTML v okně nástroje v sadě Visual Studio; `External` zobrazí výstupu protokolu HTML ve výchozím prohlížeči. |
 
 ### <a name="logging"></a>protokolování
 
@@ -117,7 +114,7 @@ Tyto možnosti určují způsob zpracování hodnot v [proměnné Explorer](vari
 
 | Možnost | Výchozí hodnota | Popis |
 | --- | --- | --- |
-| Prohlížeče náhled markdownu | `External` | Určuje, kde se zobrazí výstup RMarkdown HTML. `Internal`Zobrazuje dokumentu RMarkdown HTML v okně nástroje v sadě Visual Studio; `External` zobrazí RMarkdown HTML pomocí výchozí prohlížeč. |
+| Prohlížeče náhled markdownu | `External` | Určuje, kde se zobrazí výstup RMarkdown HTML. `Internal` Zobrazuje dokumentu RMarkdown HTML v okně nástroje v sadě Visual Studio; `External` zobrazí RMarkdown HTML pomocí výchozí prohlížeč. |
 
 ### <a name="r-engine"></a>Modul R
 

@@ -1,28 +1,25 @@
 ---
-title: Šablona projektu webového rozhraní Django pro jazyk Python | Microsoft Docs
+title: Šablona projektu webového rozhraní Django pro jazyk Python
 description: Přehled šablony sady Visual Studio pro webové aplikace napsané v Pythonu pomocí rozhraní Django.
 ms.custom: ''
 ms.date: 07/13/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 941ec5191e440be95d66da983508de36cef6d4fd
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 27218e6c1774c1d6e75894da854ee8e34392d49b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="django-web-project-template"></a>Šablona projektu webového rozhraní Django
+# <a name="django-web-project-template"></a>Šablona webového projektu Django
 
 [Django](https://www.djangoproject.com/) je určená pro vývoj webů rychlé, zabezpečené a škálovatelné vysoké úrovně rozhraní Python. Podpora jazyka Python v sadě Visual Studio poskytuje šablona projektu nastavení struktury založené na rozhraní Django webové aplikace. Abyste mohli použít šablonu v sadě Visual Studio, vyberte **soubor > Nový > projekt**, vyhledejte "Django" a vyberte **webový projekt Django** šablony. Výsledný projekt zahrnuje často používaný kód a také výchozí databáze SQLite. **Prázdný webový projekt Django** šablony je podobné však nezahrnuje databázi.
 
@@ -38,7 +35,7 @@ Visual Studio poskytuje úplné IntelliSense pro projekty Django:
 
 - Pro vložených šablon stylů CSS a JavaScript zvýrazňování syntaxe:
 
-    ![CSS IntelliSense](media/template-django-intellisense-css.png)
+    ![IntelliSense šablon stylů CSS](media/template-django-intellisense-css.png)
 
     ![JavaScript IntelliSense](media/template-django-intellisense-js.png)
 

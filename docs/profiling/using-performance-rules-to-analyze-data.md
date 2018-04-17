@@ -1,23 +1,21 @@
 ---
-title: "Použití pravidel výkonu k analýze dat | Microsoft Docs"
-ms.custom: 
+title: Použití pravidel výkonu k analýze dat | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1deed23e-b31b-4714-982f-08ceebfc3096
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 09b7ca87e18a3c12a47c95ff8a0f4f5867b641e3
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f974a6aa2aff626a72aeefdb9dddfb76ec5e8396
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>Použití pravidel výkonu k analýze dat
 Upozornění výkonu z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci znamenat problémy v PROFILOVANÉHO aplikace, která může zpomalit spuštění programu. Upozornění taky může znamenat, že možná budete muset změnit metod kolekcí ke shromažďování dat užitečnější. Upozornění výkonu jsou automaticky generovány v relace profilování. Upozornění se zobrazí v **seznam chyb** okna při profilování souboru data v sadě Visual Studio. Z **seznam chyb** okno, můžete vyhledat zdrojový kód problém, a můžete zobrazit podrobné informace o této chybě, jsou to například informace o tom, jak problém vyřešit. Můžete také zakázat upozornění, ve kterých nejste také zajímat.  

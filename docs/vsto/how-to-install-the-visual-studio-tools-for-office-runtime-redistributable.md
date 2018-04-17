@@ -1,12 +1,10 @@
 ---
 title: 'Postupy: instalace sady Visual Studio Tools for Office Runtime Redistributable | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - installing Office development tools in Visual Studio
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 5f76191ca8b41f252e5009c0d3e7e09415f6f081
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 552ef84dc5b4bba8b9f63173d41a43a4efd82a14
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>Postupy: Instalace nástrojů Visual Studio Tools for Office runtime Redistributable
   Visual Studio 2010 Tools for Office Runtime musí být nainstalován na každém počítači, který spouští řešení, které jsou vytvořené pomocí nástroje Microsoft Office developer tools v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Modul runtime se nainstaluje automaticky při instalaci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]a Microsoft Office. Další informace najdete v tématu [Visual Studio Tools for Office Runtime instalace scénáře](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).  
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/10/2018
      [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]Obsahuje jazykové sady. Pokud vaše instalace systému Windows je nastavena na jiný jazyk než anglický, můžete zobrazit zprávy runtime ve stejném jazyce, který používáte pro Windows. Podobně pokud koncoví uživatelé instalovat [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] a poté spusťte řešení v instalaci systému Windows, které jsou nastaveny na jiný jazyk než anglický, runtime zprávy se zobrazí ve stejném jazyce jako Windows. V některých případech může být nutné další jazykové sady. Například může být nutné další jazykové sady, pokud vaše kopie systému Windows používá více než jedna jazyková nastavení nebo přepnutí na jiný jazyk po jste již nainstalovali [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Můžete najít jazykové sady v [Microsoft Visual Studio 2010 Tools pro sadu Microsoft Office System (verze 4.0 Runtime) Language Pack](http://go.microsoft.com/fwlink/?LinkId=140386).  
   
 ## <a name="see-also"></a>Viz také  
- [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
  [Postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)   
  [Postupy: instalace primární spolupracující sestavení sady Office](../vsto/how-to-install-office-primary-interop-assemblies.md)   

@@ -1,7 +1,7 @@
 ---
-title: "Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu | Microsoft Docs"
+title: Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.test.load.monitor.graph.view
 helpviewer_keywords:
@@ -14,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5087415c22d9fa772dbe4d2a742ac369b44149ed
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 3f2319fbfab37bb994c598416a379d4c2fdac3b2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analýza výsledků zátěžových testů v zobrazení grafů Analyzéru zátěžového testu
 
@@ -68,7 +68,7 @@ Následující tabulka uvádí předdefinované grafy, které jsou k dispozici p
 |Barva|Barva čáry v grafu.|
 |Rozsah|Označuje číslo, která je reprezentována 100 na graf pro tento čítač. Například pro rozsah, jehož horní hodnota je 10 000, 100 popisek v horní části grafu představuje 10 000.|
 |Min.|Určuje minimální hodnotu pro čítač v milisekundách.|
-|Max|Určuje maximální hodnotu pro čítač v milisekundách.|
+|maximální počet|Určuje maximální hodnotu pro čítač v milisekundách.|
 |průměr|Určuje průměrnou hodnotu pro čítač v milisekundách.|
 |poslední|Zobrazí hodnotu čítače během intervalu vzorkování nejnovější v milisekundách.|
 

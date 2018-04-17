@@ -1,12 +1,10 @@
 ---
-title: "Rozšíření projektů SharePoint | Microsoft Docs"
-ms.custom: 
+title: Rozšíření projektů SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 403ff3793dfd5ae4211444868af8c37dbd908672
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 622596249e92d73dd4f504a445d43405847e9629
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="extending-sharepoint-projects"></a>Rozšíření projektů SharePoint
   Vytváření rozšíření projektu, pokud chcete přizpůsobit funkce na úrovni projektu projektů SharePoint. Například můžete přidat vlastní vlastnosti projektu nebo reakce na události na úrovni projektu, které se vyvolá, když uživatel sama vyvinula řešení služby SharePoint v sadě Visual Studio.  
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/10/2018
  Návod, jak vytvořit, nasadit a testování rozšíření projektu najdete v tématu [návod: vytváření rozšíření projektu služby SharePoint](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md).  
   
 ## <a name="understanding-the-relationship-between-project-extensions-and-project-instances"></a>Vztah mezi rozšíření projektu a instance projektu  
- Při vytváření rozšíření projektu rozšíření načte, když jakýkoli druh projektu služby SharePoint je otevřen v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]obsahuje několik šablon projektu služby SharePoint, jako je například seznam definic, typů obsahu a přijímače událostí. Je však pouze jeden typ projektu služby SharePoint. Typy projektů, které se zobrazují v **nový projekt** dialogové okno jsou pouze šablony, které váže dohromady jeden nebo více položek projektu služby SharePoint. Vzhledem k tomu, že existuje pouze jeden typ projektu služby SharePoint, rozšíření, které jsou vytvořené pro jeden projekt platí pro všechny projekty SharePoint. Nelze například vytvořit rozšíření, které se vztahuje se jenom **typ obsahu** projektu.  
+ Při vytváření rozšíření projektu rozšíření načte, když jakýkoli druh projektu služby SharePoint je otevřen v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] obsahuje několik šablon projektu služby SharePoint, jako je například seznam definic, typů obsahu a přijímače událostí. Je však pouze jeden typ projektu služby SharePoint. Typy projektů, které se zobrazují v **nový projekt** dialogové okno jsou pouze šablony, které váže dohromady jeden nebo více položek projektu služby SharePoint. Vzhledem k tomu, že existuje pouze jeden typ projektu služby SharePoint, rozšíření, které jsou vytvořené pro jeden projekt platí pro všechny projekty SharePoint. Nelze například vytvořit rozšíření, které se vztahuje se jenom **typ obsahu** projektu.  
   
  Pro přístup k instanci konkrétního projektu se zpracovat jeden z <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> události *projectService* parametr ve vaší implementace nástroje <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> metoda. Například pokud chcete zjistit, kdy je projektu služby SharePoint do řešení, zpracování <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectAdded> událostí. Další informace najdete v tématu [postupy: vytváření rozšíření projektu služby SharePoint](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
   

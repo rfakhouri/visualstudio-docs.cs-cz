@@ -1,23 +1,21 @@
 ---
-title: "Spusťte | Microsoft Docs"
-ms.custom: 
+title: Spusťte | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3b8a584e8e024416ec9c3feca63297eed4497624
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 11f9e850c43c615b6878bd1ff9e18be313bf1a79
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="launch"></a>Spuštění
 **Spusťte** možnost spustí pomocí metody vzorkování profileru a začne zadané aplikace.  
@@ -37,7 +35,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="valid-options"></a>Platné možnosti.  
  Následující možnosti VSPerfCmd mohou být kombinovány s **spusťte** možnost na jednoho příkazového řádku.  
   
- **Začátek:**`Method`  
+ **Spusťte:** `Method`  
  Inicializuje relaci příkazového řádku profileru a nastaví zadanou metodu profilování.  
   
  **GlobalOn**a **GlobalOff**  
@@ -55,7 +53,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Console**  
  Spustí zadaný aplikace příkazového řádku v novém okně.  
   
- **Argumenty:**`ArgList`  
+ **Argumenty:** `ArgList`  
  Určuje seznam argumentů, které mají být předána do aplikace.  
   
  **LineOff**  
@@ -64,7 +62,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 ## <a name="sampling-options"></a>Možnosti vzorkování  
  Na možné zadat jednu z následujících možností intervalu vzorkování **spusťte** příkazového řádku. Výchozí interval vzorkování je 10 000 000 hodinových cyklů procesoru.  
   
- **Časovač**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`] **Čítač**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**přidělení**&#124; **Doba platnosti**]  
+ **Časovač**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`] **Čítač**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**přidělení** &#124;  **Doba platnosti**]  
  Určuje počet a typ intervalu vzorkování.  
   
 -   **Časovač** – ukázky každých `Cycles` cyklů procesoru Zastavit hodiny. Pokud `Cycles` není zadán, jsou používány 10 000 000 cykly.  

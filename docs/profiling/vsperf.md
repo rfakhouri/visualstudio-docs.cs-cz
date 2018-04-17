@@ -1,23 +1,21 @@
 ---
 title: VSPerf | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b5854e62-279e-4850-bfeb-0c6ef82f4805
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ea6214987e12b8c5cf7e563b666822989d3a7015
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 03d354476e0c822704d6fca619c5dca4cc109285
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="vsperf"></a>VSPerf
 Použití **VsPerf** nástroj příkazového řádku:  
@@ -28,7 +26,7 @@ Použití **VsPerf** nástroj příkazového řádku:
   
  Další informace o vytváření profilů možnosti najdete v tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a>V tomto tématu  
+##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
  Toto téma popisuje možnosti, které můžete použít s `vsperf.exe` nástroj pro příkazový řádek. Téma obsahuje následující části:  
   
  [Jenom aplikace UWP](#BKMK_windows_store_apps_only)  
@@ -37,7 +35,7 @@ Použití **VsPerf** nástroj příkazového řádku:
   
  [Všechny aplikace](#BKMK_All_applications)  
   
-##  <a name="BKMK_windows_store_apps_only"></a>Jenom aplikace UWP  
+##  <a name="BKMK_windows_store_apps_only"></a> Jenom aplikace UWP  
  Tyto možnosti platí pouze pro aplikace UWP.  
   
 |||  
@@ -48,7 +46,7 @@ Použití **VsPerf** nástroj příkazového řádku:
 |**/noclr**|Volitelné. Neshromažďují CLR data.<br /><br /> Použití pouze s /package nebo / připojit.<br /><br /> Optimalizace, bude vyřešen žádné spravované symboly.|  
 |**/listapps**|Seznam názvů nainstalovanou aplikaci a PackageFullNames.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>Aplikací klasické pracovní plochy Windows 8 a pouze aplikací systému Windows Server 2012  
+##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikací klasické pracovní plochy Windows 8 a pouze aplikací systému Windows Server 2012  
  Tyto možnosti pro aplikace UWP nefungují.  
   
 |||  
@@ -57,12 +55,12 @@ Použití **VsPerf** nástroj příkazového řádku:
 |**/args: {ExecutableArguments}**|Určuje argumenty příkazového řádku k předávání **/spusťte** cíl.|  
 |**/ Console**|Spustí **/spusťte** cíl v nové příkazové okno.|  
   
-##  <a name="BKMK_All_applications"></a>Všechny aplikace  
+##  <a name="BKMK_All_applications"></a> Všechny aplikace  
  Tato možnost platí pro všechny aplikace systému Windows 8 nebo Windows Server 2012.  
   
 |||  
 |-|-|  
-|**/ připojit: {PID &#124; Název_procesu} [, PID &#124; Název_procesu]...**|Shromažďuje data z určených procesů.<br /><br /> Pomocí Správce úloh můžete zobrazit identifikátor procesu (PID) a zpracovat názvy spuštěných aplikací.|  
+|**/ připojit: {PID&#124;název_procesu} [, PID&#124;název_procesu]...**|Shromažďuje data z určených procesů.<br /><br /> Pomocí Správce úloh můžete zobrazit identifikátor procesu (PID) a zpracovat názvy spuštěných aplikací.|  
 |**/ file:{ReportName}**|Volitelné. Určuje výstupní soubor (přepíše existující soubor).<br /><br /> Použití pouze s /package nebo / připojit.|  
 |**/ Pause**|Shromažďování dat pozastavení.|  
 |**/Resume**|Obnovte data kolekce.|  

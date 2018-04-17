@@ -1,29 +1,25 @@
 ---
-title: "Postupy: sestavení stejných zdrojových souborů s různými možnostmi | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: sestavení stejných zdrojových souborů s různými možnostmi | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - source files, building with different options
 - MSBuild, properties
 - project properties, modifying
 - Hello World example [Visual Studio]
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dfebbfe5507afe523a15cce99e0e1f47aa9183f
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f1105c9122d47e405ad309531abd4913484991fa
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Postupy: Sestavení stejných zdrojových souborů s různými možnostmi
 Při sestavování projektů zkompilujete často stejné komponenty s možnostmi jiné sestavení. Můžete například vytvořit sestavení ladicí verze informací o symbolu nebo sestavení pro vydání s bez informací o symbolu, ale s povolenými optimalizacemi. Nebo můžete vytvořit projekt ke spuštění na konkrétní platformu, jako je například x86 nebo [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]. V těchto případech většina možností sestavení zůstat stejné. změnily se jenom pár možností k řízení je konfigurace sestavení. S [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], použijte vlastnosti a podmínky k vytvoření konfigurace jiné sestavení.  
@@ -53,7 +49,7 @@ Při sestavování projektů zkompilujete často stejné komponenty s možnostmi
     ```  
   
 ## <a name="specifying-properties-on-the-command-line"></a>Zadání vlastnosti příkazového řádku  
- Jakmile souboru projektu je zapsán do přijmout více konfigurací, musíte mít možnost změnit tyto konfigurace vždy, když vytvoříte projekt. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]poskytuje možnost tím, že vlastnosti ho zadat na příkazovém řádku pomocí **/property** nebo **/p** přepínače.  
+ Jakmile souboru projektu je zapsán do přijmout více konfigurací, musíte mít možnost změnit tyto konfigurace vždy, když vytvoříte projekt. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje možnost tím, že vlastnosti ho zadat na příkazovém řádku pomocí **/property** nebo **/p** přepínače.  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Chcete-li nastavit vlastnost projektu na příkazovém řádku  
   

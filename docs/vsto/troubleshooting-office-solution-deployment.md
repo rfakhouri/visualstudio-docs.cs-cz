@@ -1,13 +1,10 @@
 ---
-title: "Řešení potíží s nasazením řešení Office | Microsoft Docs"
-ms.custom: 
+title: Řešení potíží s nasazením řešení Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,14 +14,14 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8940cd30b4e573b7438b45b13fdd30735a504809
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 29c3cfdcf31609eb5b6aec0111fe2297ba8c01ef
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshooting-office-solution-deployment"></a>Řešení potíží s nasazením řešení pro systém Office
   Toto téma obsahuje informace o tom, jak vyřešit nejčastější problémy, které se můžete setkat při nasazení řešení pro systém Office.  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
  Rozhraní .NET Framework, můžete přidat [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]a primární spolupracující sestavení Office na instalační balíček jako požadované součásti, které jsou nasazeny s vaším řešením Office. Informace o tom, jak nainstalovat primární spolupracující sestavení najdete v tématu [konfigurace počítače pro vývoj řešení pro Office](../vsto/configuring-a-computer-to-develop-office-solutions.md) a [postupy: Instalace sestavení sady Office primární zprostředkovatel komunikace s objekty](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
 ## <a name="publishing-using-localhost-can-cause-installation-problems"></a>Publikování pomocí "Localhost" může způsobit problémy s instalací  
- Pokud používáte "http://localhost" jako umístění instalace nebo publikování pro řešení na úrovni dokumentu, **Průvodci publikováním** není převést řetězec na název skutečné počítače. Řešení v takovém případě musí být nainstalována na vývojovém počítači. Chcete-li nasazené řešení, které používají službu IIS na vývojovém počítači, použijte plně kvalifikovaný název pro všechna umístění HTTP/HTTPS nebo FTP místo localhost.  
+ Při použití "http://localhost" jako umístění instalace nebo publikování pro řešení na úrovni dokumentu, **Průvodci publikováním** není převést řetězec na název skutečné počítače. Řešení v takovém případě musí být nainstalována na vývojovém počítači. Chcete-li nasazené řešení, které používají službu IIS na vývojovém počítači, použijte plně kvalifikovaný název pro všechna umístění HTTP/HTTPS nebo FTP místo localhost.  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>Načíst místo aktualizované sestavení jsou uložené v mezipaměti sestavení  
  Fusion, zavaděč sestavení rozhraní .NET Framework a načte kopii sestavení v mezipaměti, když výstupní cesta k projektu je v síťové sdílené složky, je podepsaný sestavení se silným názvem a verze sestavení přizpůsobení nemění. Pokud aktualizujete sestavení, které splňuje tyto podmínky, aktualizace se nezobrazí při příštím spuštění projektu, protože je načtena kopie uložené v mezipaměti.  
@@ -74,7 +71,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>Chcete-li stáhnout sestavení místo načítání kopie v mezipaměti  
   
-1.  Na řádku nabídek zvolte **projektu**, *ProjectName***vlastnosti**.  
+1.  Na řádku nabídek zvolte **projektu**, * ProjectName ***vlastnosti**.  
   
 2.  Na **aplikace** vyberte **informací o sestavení**.  
   
@@ -116,7 +113,7 @@ ms.lasthandoff: 01/10/2018
 ## <a name="reinstalling-office-solutions-causes-an-argument-out-of-range-exception"></a>Řešení Office přeinstalovat způsobí, že Argument výjimka mimo rozsah  
  Při přeinstalaci řešení Office, <xref:System.ArgumentOutOfRangeException> výjimka může zobrazují se následující chybová zpráva: Zadaný argument je mimo rozsah platných hodnot.  
   
- K této situaci dochází v případě velká a malá písmena pro adresu URL pro umístění instalace je odlišná. Tato chyba by například zobrazit, pokud jste nainstalovali řešení Office z [http://fabrikam.com/ExcelSolution.vsto](http://fabrikam.com/ExcelSolution.vsto) poprvé a pak se použije [http://fabrikam.com/excelsolution.vsto](http://fabrikam.com/excelsolution.vsto) ještě jednou.  
+ K této situaci dochází v případě velká a malá písmena pro adresu URL pro umístění instalace je odlišná. Tato chyba by například zobrazit, pokud jste nainstalovali řešení Office z [ http://fabrikam.com/ExcelSolution.vsto ](http://fabrikam.com/ExcelSolution.vsto) poprvé a pak se použije [ http://fabrikam.com/excelsolution.vsto ](http://fabrikam.com/excelsolution.vsto) druhém.  
   
  Chcete-li zabránit zobrazování zprávy, používejte při instalaci řešení pro systém Office stejné malá a velká písmena.  
   

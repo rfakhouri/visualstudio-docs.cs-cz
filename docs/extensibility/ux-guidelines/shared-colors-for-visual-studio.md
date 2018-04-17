@@ -1,23 +1,21 @@
 ---
-title: "Sdílené barvy pro sadu Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Sdílené barvy pro sadu Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 04/26/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-caps.latest.revision: "5"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 45bbff985a45ba4d04945ec95587c4c6c9cc448c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: b9093eef6166c86eb6e1ffdf602b4fb75841834d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="shared-colors-for-visual-studio"></a>Sdílené barvy pro sadu Visual Studio
 Při navrhování uživatelské rozhraní, které používá společné prvky prostředí sady Visual Studio, nebo chcete vaše rozhraní element konzistentní s podobné funkce, použijte existující token názvy v definičních souborech balíčku a vyberte a přiřaďte barvy. To zajišťuje, že vaše uživatelské prostředí zůstává konzistentní s celkovou prostředí Visual Studio a jeho aktualizace automaticky při přidávání nebo aktualizaci motivů.  
@@ -858,7 +856,7 @@ Vyhledávací pole rozevírací nabídky se může být složité něco víc ne�
 | Odkaz pozadí | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Ukončení přechodu pro tento token nepoužívá v motivu uživatelského rozhraní.) |
 | Popředí (text odkazu) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a>Zobrazení stromu  
+###  <a name="BKMK_TreeView"></a> Zobrazení stromu  
 Několik nástroj windows, včetně Průzkumníku řešení, Průzkumníka serveru a zobrazení tříd implementovat hierarchická organizace schéma jejichž barvy jsou řízeny názvy barev v `TreeView` kategorie. Všechny položky v zobrazení stromu mít barvy pozadí a text. Položky, které mít člověk vnořené podřízené elementy mají rovněž glyfů, které indikují rozbalit nebo sbalit položky.  
 
 ![Stromové zobrazení (červená značka)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Stromové zobrazení (červená značka)
@@ -1041,7 +1039,7 @@ Návrhář manifestu byla vytvořena jako způsob, jak bylo snazší upravit sou
 
 ## <a name="command-structures"></a>Příkaz struktury  
 
-###  <a name="BKMK_CommandMenus"></a>Nabídky  
+###  <a name="BKMK_CommandMenus"></a> Nabídky  
 Nabídky dochází na několika místech v sadě Visual Studio: panelu přejděte z hlavní nabídky, vložených v dokumentu nebo nástroj windows nebo na klikněte pravým tlačítkem na různých místech v celém rozhraní IDE. Implementace nabídky přidružené další prvky uživatelského rozhraní, jsou popsané v části pro odpovídající element. Vždy byste měli používat standardní nabídky implementace poskytované prostředí Visual Studio. Ve výjimečných případech však nemusí mít přístup k standardní nabídky Visual Studio. V těchto situacích používejte následující názvy tokenu zajistit, že uživatelské rozhraní je v souladu s jiné nabídky v sadě Visual Studio.  
 
 ![Visual Studio nabídky (červená značka)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Visual Studio nabídky (červená značka)
@@ -1282,7 +1280,7 @@ Skupinu příkazového řádku se skládá z sadu související ovládací prvky
 | Popředí (Text) | `Environment.CommandBarTextInactive` |
 | Ohraničení | Není k dispozici |
 
-####  <a name="BKMK_CommandComboBox"></a>Příkaz panelu pole se seznamem
+####  <a name="BKMK_CommandComboBox"></a> Příkaz panelu pole se seznamem
 
 > [!IMPORTANT]
 > Pole se seznamem jsou podobná rozevírací seznamy, ale zahrnout oblast upravovat text. Pokud vaše rozevíracího seznamu nezahrnuje oblast upravovat text, použijte tokeny barvu pro [příkazu panelu rozevírací seznamy](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).  
@@ -1307,7 +1305,7 @@ Skupinu příkazového řádku se skládá z sadu související ovládací prvky
 
 **Příkazového řádku rozevíracího seznamu tlačítka: výchozí stav**  
 
-![Pole se seznamem pole rozevírací & č. 45; dolů,](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Příkazového řádku rozevíracího seznamu tlačítka
+![Rozevírací pole se seznamem&#45;dolů tlačítko](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303 031_ComboBoxDropdownButton")<br />Příkazového řádku rozevíracího seznamu tlačítka
 
 | Prvek | Název tokenu: Category.color |
 | --- | --- |
@@ -1414,7 +1412,7 @@ Skupinu příkazového řádku se skládá z sadu související ovládací prvky
 | Pozadí | Žádné |
 | Popředí (glyfy) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a>Příkaz panelu rozevírací seznamy
+####  <a name="BKMK_CommandDropDown"></a> Příkaz panelu rozevírací seznamy
 
 > [!IMPORTANT]
 >  Rozevírací seznamy jsou podobné pole se seznamem, ale nemají upravovat text oblasti. Pokud se rozevírací seznam obsahuje oblast upravovat text, použijte tokeny barvu pro [příkazový řádek se seznamem](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).  
@@ -1489,7 +1487,7 @@ Skupinu příkazového řádku se skládá z sadu související ovládací prvky
 
  **Příkaz panelu rozevírací výběr pole: stisknutí stavu**  
 
-![Vyřaďte & č. 45; dolů výběr pole stisknutí](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Stisknutí příkaz panelu rozevírací výběr pole
+![Vyřaďte&#45;dolů výběr pole stisknutí](../../extensibility/ux-guidelines/media/0303-049_dropdownselectionfieldpressed.png "0303 049_DropdownSelectionFieldPressed")<br />Stisknutí příkaz panelu rozevírací výběr pole
 
 | Prvek | Název tokenu: Category.color |
 | --- | --- |

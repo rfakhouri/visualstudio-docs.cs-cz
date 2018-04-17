@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VS.SharePointTools.ListDesigner.GeneralMessageHelp
 - Microsoft.VisualStudio.SharePoint.Designers.ListDesigner.ViewModels.ListViewModel.SortingAndGrouping
@@ -23,13 +21,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4db9ed078131e7152f3987c80f4e6181f888e540
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint
   Následující postupy ukazují, jak vytvořit vlastní sloupců webu služby SharePoint – nebo *pole*– a také typ obsahu, který používá sloupců webu. Také ukazuje, jak můžete vytvořit seznam, který používá nový typ obsahu.  
@@ -55,7 +54,7 @@ ms.lasthandoff: 01/10/2018
   
 -   Visual Studio.  
   
-##  <a name="BKMK_CreatingCustSiteCols"></a>Vytváření sloupců vlastního webu  
+##  <a name="BKMK_CreatingCustSiteCols"></a> Vytváření sloupců vlastního webu  
  Tento příklad vytvoří seznam pro správu pacientů v nemocnice. Nejprve musíte vytvořit projektu služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a přidat sloupce webu, následujícím způsobem.  
   
 #### <a name="to-create-the-project"></a>Vytvoření projektu  
@@ -97,7 +96,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  Další dva sloupce webu pomocí stejného postupu, přidejte do projektu: **pacienta ID** (typ = "Celé číslo") a **Doctor název** (typ = "Text"). Nastavte na hodnotu jejich skupiny **sloupců webu Klinika**.  
   
-##  <a name="BKMK_CreateCustContType"></a>Vytváření vlastní typ obsahu.  
+##  <a name="BKMK_CreateCustContType"></a> Vytváření vlastní typ obsahu.  
  Dále vytvořte typ obsahu – na základě typu obsahu Kontakty – obsahující sloupce webu, které jste vytvořili v předchozím postupu. Typ obsahu založit na existující typ obsahu, můžete ušetřit čas, protože základní typ obsahu poskytuje několik sloupců webu pro použití v nový typ obsahu.  
   
 #### <a name="to-create-a-custom-content-type"></a>Chcete-li vytvořit vlastní typ obsahu.  
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 11. Na řádku nabídek zvolte **soubor**, **Uložit vše**a pak zavřete Editor typ obsahu.  
   
-##  <a name="BKMK_CreateList"></a>Vytvoření seznamu  
+##  <a name="BKMK_CreateList"></a> Vytvoření seznamu  
  Teď vytvořte seznam, který používá nové obsahu sloupce typu a lokality.  
   
 #### <a name="to-create-a-list"></a>Můžete vytvořit seznam  
@@ -205,7 +204,7 @@ ms.lasthandoff: 01/10/2018
   
 15. V **název sloupce** vyberte **pacienta název**, ujistěte se, že **Sorting** sloupec je nastavený na **vzestupné**a potom vyberte  **OK** tlačítko.  
   
-##  <a name="BKMK_TestApp"></a>Testování aplikace  
+##  <a name="BKMK_TestApp"></a> Testování aplikace  
  Teď, když sloupce vlastního webu, typu obsahu a seznamu jsou připravené, jejich nasazení do služby SharePoint a spusťte aplikaci otestovat.  
   
 #### <a name="to-test-the-application"></a>Testování aplikace  
@@ -231,6 +230,6 @@ ms.lasthandoff: 01/10/2018
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)   
  [Postupy: vytvoření vlastního pole typu](http://go.microsoft.com/fwlink/?LinkId=192079)   
  [Typy obsahu](http://go.microsoft.com/fwlink/?LinkId=192080)   
- [Sloupce](http://go.microsoft.com/fwlink/?LinkId=192081)  
+ [sloupce](http://go.microsoft.com/fwlink/?LinkId=192081)  
   
   

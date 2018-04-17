@@ -2,11 +2,8 @@
 title: Nainstalujte na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích | Microsoft Docs
 description: Popisuje, jak funguje instalační program sady Visual Studio v podmínkách nespolehlivé mezi sítě a vysvětluje, jak ke stažení instalačních souborů před zahájením instalace.
 ms.date: 01/17/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 helpviewer_keywords:
 - installing Visual Studio
@@ -16,11 +13,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a9a0263c79e1dd2c7d0aacc5f405185cad3c3e7
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: ca2f541328e43a0c7b8d08697d10a905b9eb2cc1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>Nainstalovat Visual Studio 2017 na malou šířkou pásma nebo nespolehlivé mezi sítě v prostředích
 
@@ -95,9 +92,9 @@ Použijte tento příkaz ke spuštění instalace:
 | cs-CZ | Čeština |
 | de-DE | Němčina |
 | en US | Angličtina |
-| es-ES | Španělština |
+| ES-ES | Španělština |
 | fr-FR | Francouzština |
-| it-IT | Italština |
+| IT-IT | Italština |
 | ja-JP | Japonština |
 | ko-KR | Korejština |
 | pl-PL | Polština |

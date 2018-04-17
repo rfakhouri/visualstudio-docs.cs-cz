@@ -1,23 +1,21 @@
 ---
-title: "Řazení, filtrování a seskupení (XML Schema Explorer) | Microsoft Docs"
-ms.custom: 
+title: Řazení, filtrování a seskupení (XML Schema Explorer) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b8fe3daa1c95169623a908307d4d6c81044d378f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ad8225ae325c453836f5c7bcf7fb6ac0c5fb04a8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Řazení, filtrování a seskupení (Explorer schématu XML)
 Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **možnosti seskupení, filtrování a řazení** nabídky na panelu nástrojů Explorer schématu XML.  
@@ -43,32 +41,32 @@ Toto téma popisuje možnosti, které jsou k dispozici prostřednictvím **možn
 ### <a name="sort-by-type"></a>Řazení podle typu  
  Když **seřadit podle typu** je vybraná možnost, globální uzly jsou seřazeny v uvedeném pořadí. Uzly se potom řadí abecedně v rámci jednotlivých skupin.  
   
-1.  `import`uzly.  
+1.  `import` uzly.  
   
-2.  `include`uzly.  
+2.  `include` uzly.  
   
-3.  `redefine`uzly.  
+3.  `redefine` uzly.  
   
-4.  `attribute`uzly.  
+4.  `attribute` uzly.  
   
-5.  `attributeGroup`uzly.  
+5.  `attributeGroup` uzly.  
   
-6.  `complexType`uzly.  
+6.  `complexType` uzly.  
   
-7.  `simpleType`uzly.  
+7.  `simpleType` uzly.  
   
-8.  `element`uzly.  
+8.  `element` uzly.  
   
-9. `group`uzly.  
+9. `group` uzly.  
   
 ### <a name="sort-by-name"></a>Řazení podle názvu  
  Když **řazení podle názvu** je vybraná možnost, globální uzly jsou seřazeny v následujícím pořadí:  
   
-1.  `import`uzly (v abecedním pořadí oborů názvů).  
+1.  `import` uzly (v abecedním pořadí oborů názvů).  
   
-2.  `include`uzly (v abecedním pořadí podle `schemaLocation` atributy).  
+2.  `include` uzly (v abecedním pořadí podle `schemaLocation` atributy).  
   
-3.  `redefine`uzly (v abecedním pořadí podle `schemaLocation` atributy).  
+3.  `redefine` uzly (v abecedním pořadí podle `schemaLocation` atributy).  
   
 4.  Jiné globální uzly v abecedním pořadí.  
   

@@ -1,18 +1,18 @@
 ---
-title: "Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky v sadě Visual Studio | Microsoft Docs"
+title: Povolení programového testování uživatelského rozhraní pro vaše ovládací prvky v sadě Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-test
-ms.topic: article
+ms.topic: conceptual
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c6ad93e71c4208fb4d9ce9abd75e2bac554ba238
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 7c3906b84995716072d4df0a1b518930a521cdb6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Povolit testování programového uživatelského rozhraní pro vaše ovládací prvky
 
@@ -33,7 +33,7 @@ Tvůrce programového testu uživatelského rozhraní zaznamená informace o ovl
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Pro podporu záznam a přehrávání, ověření vlastností a navigace pro ovládací prvek Windows Forms
  Implementace usnadnění pro ovládací prvek, jak je uvedeno v následujícím postupu a podrobně vysvětleny v <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")
+ ![CUIT&#95;přístupné](../test/media/cuit_accessible.png "CUIT_Accessible")
 
 1.  Implementovat třídu odvozenou od <xref:System.Windows.Forms.Control.ControlAccessibleObject>a přepsat <xref:System.Windows.Forms.Control.AccessibilityObject%2A> vlastnost, která má vrátit objekt vaší třídy.
 
@@ -161,7 +161,7 @@ Pokud jste implementovali vlastnost poskytovatele poskytnout přístup k vlastn�
 
 ### <a name="to-support-intent-aware-actions"></a>Pro podporu deklaracemi záměr akce
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")
+![CUIT&#95;akce](../test/media/cuit_actions.png "CUIT_Actions")
 
 1. Implementace třídy filtru akce, který je odvozený od <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, přepisování vlastnosti <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> a <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.
 

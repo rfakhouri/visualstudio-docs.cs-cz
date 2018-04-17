@@ -1,21 +1,21 @@
 ---
 title: V procesu sestavení v sadě Visual Studio generování kódu | Microsoft Docs
 ms.date: 03/22/2018
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5c79cc30e7619ddd02fe05d4f8911d4d9b81f330
-ms.sourcegitcommit: 768118d470da9c7164d2f23ca918dfe26a4be72f
+ms.openlocfilehash: 9c3a7d67b4e3652ea1e0a474aed174c9596012e4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="code-generation-in-a-build-process"></a>Generování kódu v procesu sestavení
 
@@ -41,11 +41,11 @@ Pokud [vašem serveru sestavení](http://msdn.microsoft.com/Library/788443c3-054
 
     -   Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+-   $(ProgramFiles) \Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
     -   Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)
+    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (několik souborů)
 
     -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 

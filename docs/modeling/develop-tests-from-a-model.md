@@ -1,23 +1,21 @@
 ---
-title: "Vývoj testů z modelu | Microsoft Docs"
-ms.custom: 
+title: Vývoj testů z modelu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2937edee2040d8e48938b9cbbf8e78e48780884
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0982bc72a98be6f015d580f3170a5790fe941867
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-tests-from-a-model"></a>Vývoj testů z modelu
 Požadavky a architektury modely můžete uspořádat testy systému a jeho součástí. Tento postup pomáhá, zajistěte, aby test požadavky, které jsou důležité pro uživatele a dalších zúčastněných osob a pomůže vám rychle aktualizovat testy při změně požadavky. Pokud používáte [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], můžete také zachovat propojení mezi modely a testy.  
@@ -131,7 +129,7 @@ Assert (countAfter == countBefore = 1);
   
  Z testování hlediska se dají považovat za sdruženou hodnotu pro testy model požadavky. Proto je důležité zachovat vztah mezi testy a modelu v rámci projektu.  
   
-##  <a name="Attaching"></a>Připojení testovacích případů pro modelování elementy  
+##  <a name="Attaching"></a> Připojení testovacích případů pro modelování elementy  
  Pokud váš projekt používá [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], můžete propojit testy elementy v modelu. To umožňuje rychle najít testy vliv na změny v požadavcích na a vám pomůže sledovat v rozsahu, ke kterému bylo dosaženo požadavek.  
   
  Testy můžete propojit všechny typy elementu. Následuje několik příkladů:  

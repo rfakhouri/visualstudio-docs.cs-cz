@@ -1,12 +1,10 @@
 ---
-title: "Vytváření stránek aplikací pro službu SharePoint | Microsoft Docs"
-ms.custom: 
+title: Vytváření stránek aplikací pro službu SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 0ae0580ed4f684f888175ae83afe21dbcd9bf42c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 68731e2a0c933f3f48f3a2211a9d17ca21e50242
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-application-pages-for-sharepoint"></a>Vytváření stránek aplikací pro službu SharePoint
   *Stránky aplikace* představuje stránku ASP.NET Web, který je určen k použití na webu služby SharePoint. Stránky aplikací se speciálním typem stránku ASP.NET. Hlavní rozdíl mezi stránky aplikace a standardní stránky ASP.NET je, že stránky aplikace obsahuje obsah, který je sloučen s hlavní stránku služby SharePoint. Na hlavní stránce umožňuje stránky aplikace sdílet stejný vzhled a chování jako ostatní stránky v lokalitě.  

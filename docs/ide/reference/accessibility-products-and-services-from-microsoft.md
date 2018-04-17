@@ -1,12 +1,10 @@
 ---
-title: "Produkty a služby od Microsoftu usnadnění | Microsoft Docs"
-ms.custom: 
+title: Produkty a služby od Microsoftu usnadnění | Microsoft Docs
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
 - documentation, recorded documentation
@@ -18,16 +16,16 @@ helpviewer_keywords:
 - TT/TDD services
 - recorded documentation
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
-caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: e6d59464050c3233e09e9d0d0844916ae3517408
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e058a4e501f49d58239c86e74157570fb854713
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produkty a služby usnadnění přístupu od společnosti Microsoft
 > [!TIP]
@@ -46,7 +44,7 @@ Společnosti Microsoft je poskytovat snadněji použitelné produkty a služby p
 > [!NOTE]
 >  Informace v této části mohou platit pouze pro uživatele, kteří licencují produkty společnosti Microsoft ve Spojených státech amerických. Pokud jste tento produkt získali mimo Spojené státy, můžete použít kartu informacemi o pobočce, která byla součástí vašeho softwarového balíčku, nebo navštívit [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) seznam Microsoft služby podpory telefonních čísel a adres. Obraťte se na vaší pobočky a zjistěte, jestli typ produktů a služeb popsaných v této části jsou k dispozici ve vaší oblasti. Informace o usnadnění jsou k dispozici v dalších jazycích včetně japonštiny a francouzštiny.  
 
-##  <a name="windows"></a>Funkce usnadnění systému Windows  
+##  <a name="windows"></a> Funkce usnadnění systému Windows  
  Operační systém Windows obsahuje mnoho vestavěných funkcí usnadnění, jsou užitečné pro uživatele, kteří mají potíže se psaním nebo používáním myši, pro osoby slepé nebo slabozraké a pro osoby neslyšící či s vadou sluchu. Tyto funkce jsou instalovány během instalace. Další informace o těchto funkcích naleznete v nápovědě ve Windows a [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
 
 ### <a name="free-step-by-step-tutorials"></a>Podrobné kurzy zdarma  
@@ -59,18 +57,18 @@ Společnosti Microsoft je poskytovat snadněji použitelné produkty a služby p
 
  Pokud používáte podpůrnou technologii, nezapomeňte před provedením upgradu softwaru či hardwaru zkontrolujte případné problémy s kompatibilitou, kontaktujte dodavatele technologie usnadnění.  
 
-##  <a name="altfortmats"></a>Dokumentace v alternativních formátech  
+##  <a name="altfortmats"></a> Dokumentace v alternativních formátech  
  Pokud máte potíže se čtením či používáním tištěných materiálů, můžete získat dokumentaci k různým produktům Microsoft v dostupnějších formátech. Můžete zobrazit indexu dostupné produktové dokumentace naleznete na [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
 
  Navíc lze získat další publikace společnosti Microsoft od společnosti Recording for the Blind & Dyslexic, Inc (RFB&D). Společnost RFB&D distribuuje tyto dokumenty registrovaným a kvalifikovaným členům své distribuční služby. Informace o dostupnosti dokumentace produktů společnosti Microsoft a knih od společnosti Microsoft Press obraťte se na:  
 
 |Recording for the Blind & Dyslexic, Inc.|  
 |----------------------------------------------|  
-|Silniční Roszel 20<br /><br /> Princeton, ni 08540<br /><br /> Telefonní číslo pro hovory v rámci USA: (800) 221-4792<br /><br /> Telefonní číslo pro hovory mimo USA a Kanadu: (609) 452-0606<br /><br /> Fax: (609) 987-8116<br /><br /> Záznam pro web the Blind & Dyslexic: [http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504).|  
+|Silniční Roszel 20<br /><br /> Princeton, ni 08540<br /><br /> Telefonní číslo pro hovory v rámci USA: (800) 221-4792<br /><br /> Telefonní číslo pro hovory mimo USA a Kanadu: (609) 452-0606<br /><br /> Fax: (609) 987-8116<br /><br /> Záznam pro web the Blind & Dyslexic: [ http://www.rfbd.org ](http://go.microsoft.com/fwlink/?LinkId=62504).|  
 
  Webové adresy se mohou změnit, a proto možná nebude možné se připojit k webovým stránkám nebo serverům.  
 
-##  <a name="hearing"></a>Zákaznický servis pro osoby s poškozením sluchu  
+##  <a name="hearing"></a> Zákaznický servis pro osoby s poškozením sluchu  
  Pokud jste neslyšící nebo uživatele, úplný přístup k produktům a službám společnosti Microsoft je k dispozici prostřednictvím služby textového telefonu (TTY/TDD):  
 
 -   Zákaznický servis Kontaktujte Microsoft Sales Information Center na (800) 892-5234 mezi 6:30:00 a 17:30:00 pacifického času, pracovní dny mimo svátků.  
@@ -79,7 +77,7 @@ Společnosti Microsoft je poskytovat snadněji použitelné produkty a služby p
 
  Služby Microsoft Support Services platí ceny, podmínky a ujednání v místě v době, kdy se používá služba.  
 
-##  <a name="moreinfo"></a>Další informace  
+##  <a name="moreinfo"></a> Další informace  
  Další informace o tom, jak počítačové technologie pro usnadnění pomáhají zlepšit život osobám s postižením, naleznete v části [webu Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  
 
 ## <a name="see-also"></a>Viz také  

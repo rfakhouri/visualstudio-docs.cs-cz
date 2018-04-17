@@ -1,26 +1,23 @@
 ---
-title: R Markdownu s R Tools pro sadu Visual Studio | Microsoft Docs
-description: "Postup vytvoření R Markdownu dokumenty v sadě Visual Studio k vytvoření vysoce kvalitní sestav, prezentací a řídicí panely."
-ms.custom: 
+title: R Markdownu
+description: Postup vytvoření R Markdownu dokumenty v sadě Visual Studio k vytvoření vysoce kvalitní sestav, prezentací a řídicí panely.
+ms.custom: ''
 ms.date: 11/16/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 982dc9a2fbcb8e6cb790ec64c07d83f02017c803
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: d7237238931db51d90d8e2699446bdae5b61a368
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-r-markdown-documents"></a>Vytváření dokumentů R Markdownu
 

@@ -1,23 +1,21 @@
 ---
 title: WinCounter | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 723b7a0eb4d01795853c3cf0144bfd17d3609891
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 354b2f5aedb21ae7f7ab55d6135f1525e03dc9e7
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wincounter"></a>WinCounter
 **WinCounter** možnost určuje Windows nebo čítač výkonu aplikace během spuštění profilu shromažďovat ve stanovených intervalech. Systém Windows a čítače výkonu aplikace jsou uvedeny jako značky v profilaci datového souboru. Můžete určit více čítačů výkonu ke shromažďování v samostatné možnosti.  
@@ -41,13 +39,13 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>Požadované možnosti  
  **WinCounter** možnost lze použít pouze s **spustit** možnost.  
   
- **Začátek:**`Method`  
+ **Spusťte:** `Method`  
  **Spustit** možnost inicializuje profileru pro zadanou metodu profilování.  
   
 ## <a name="exclusive-options"></a>Vylučující možnosti  
  **Pro automatické označování** možnost lze použít pouze s **WinCounter** možnost.  
   
- **Pro automatické označování:**`Milliseconds`  
+ **Pro automatické označování:** `Milliseconds`  
  Určuje počet milisekund, po mezi shromažďování dat čítačů výkonu systému Windows.  
   
 ## <a name="example"></a>Příklad  

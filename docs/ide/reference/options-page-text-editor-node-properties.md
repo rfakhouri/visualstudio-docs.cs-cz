@@ -1,26 +1,24 @@
 ---
-title: "Stránka Možnosti, vlastnosti uzlu textového editoru | Microsoft Docs"
-ms.custom: 
+title: Stránka Možnosti, vlastnosti uzlu textového editoru | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
 ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0c4e4021dd1d54013f10f8b4bd4e7da3e81d91d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 6678901da33593f8a73b9a0af42eabe721bf91d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="options-page-text-editor-node-properties"></a>Stránka Možnosti, vlastnosti uzlu textového editoru
 Tento dokument popisuje některé stránky (nebo vlastnosti kolekce), jsou přidružené **textového editoru** kategorie, `DTE.Properties("TextEditor", <Property Page>)`, z **možnosti** dialogové okno. Název každé část je hovoru, který se používá pro přístup k `Properties` kolekce a tabulkou v každou část jsou uvedeny vlastnosti v kolekci.  
@@ -32,7 +30,7 @@ Tento dokument popisuje některé stránky (nebo vlastnosti kolekce), jsou přid
   
 |Název položky vlastnosti|Hodnota|Popis|  
 |------------------------|-----------|-----------------|  
-|GoToAnchorAfterEscape|Get/Set (Boolean)|Pokud `True`, stisknutí řídicí při výběru způsobí, že bod vložení přesunout do kterého byla spuštěna akce, který vytvořili výběr. `False`Posune kurzor na konec výběru.|  
+|GoToAnchorAfterEscape|Get/Set (Boolean)|Pokud `True`, stisknutí řídicí při výběru způsobí, že bod vložení přesunout do kterého byla spuštěna akce, který vytvořili výběr. `False` Posune kurzor na konec výběru.|  
 |DragNDropTextEditing|Get/Set (Boolean)|Určuje, zda lze při operacích kopírování nebo vyjmutí a vložení vybranou oblast textu přetáhnout v dokumentu z jednoho místa do jiného.|  
 |HorizontalScrollBar|Get/Set (Boolean)|Určuje, zda se v oknech editoru zobrazuje vodorovný posuvník.|  
 |VerticalScrollBar|Get/Set (Boolean)|Určuje, zda se v oknech editoru zobrazuje svislý posuvník.|  

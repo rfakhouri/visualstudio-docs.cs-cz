@@ -1,32 +1,29 @@
 ---
-title: "Postupy: nastavení možnosti usnadnění přístupu IDE | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: nastavení možnosti usnadnění přístupu IDE | Microsoft Docs'
+ms.custom: ''
 ms.date: 08/22/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6881e90a0035ed7c918acab924832013d9b17088
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: b44f31b03dae1c553008685553548d886a8943a2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Postupy: nastavení možnosti usnadnění přístupu IDE
 > [!TIP]
 > Další informace o nejnovějších aktualizacích usnadnění přístupu najdete v tématu [vylepšení přístupnosti v Visual Studio 2017 verze 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) příspěvku na blogu.
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]obsahuje funkce, které bylo snazší pro osoby, slabým zrakem ke čtení a pro uživatele, kteří mají omezenou pohyblivostí k zápisu. Tyto funkce patří změna velikosti a barvy textu v editory Změna velikosti textu a tlačítka na panely nástrojů a automatické dokončování metod a parametrů, a další.  
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] obsahuje funkce, které bylo snazší pro osoby, slabým zrakem ke čtení a pro uživatele, kteří mají omezenou pohyblivostí k zápisu. Tyto funkce patří změna velikosti a barvy textu v editory Změna velikosti textu a tlačítka na panely nástrojů a automatické dokončování metod a parametrů, a další.  
 
  Kromě toho [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] podporuje rozložení programátorského rozložení klávesnice, což usnadňuje nejčastěji psaným znakům. Můžete také upravit výchozí klávesové zkratky, který je k dispozici [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Další informace najdete v tématu [identifikuje a přizpůsobení klávesových zkratek](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
 

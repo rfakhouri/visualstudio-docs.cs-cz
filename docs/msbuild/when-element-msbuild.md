@@ -1,12 +1,9 @@
 ---
-title: "Když – Element (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Když – Element (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#When
 dev_langs:
@@ -18,24 +15,23 @@ helpviewer_keywords:
 - <When> Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99da11e22b7e74feee4da4fa25b502bac563f0b2
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 87357fcd4b7ce9dfcc32f7bb19fea52e8c9afeb4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="when-element-msbuild"></a>When – prvek (MSBuild)
 Určuje možné blok kódu pro `Choose` elementu, který chcete vybrat.  
   
  \<Project>  
  \<Zvolte >  
- \<When>  
+ \<Když >  
  \<Zvolte >  
  ...  
  \<V opačném případě >  
@@ -67,7 +63,7 @@ Určuje možné blok kódu pro `Choose` elementu, který chcete vybrat.
 |-------------|-----------------|  
 |[Zvolte](../msbuild/choose-element-msbuild.md)|Volitelný element.<br /><br /> Vyhodnotí podřízené elementy a vyberte jeden oddíl vykonání kódu. Může být nula nebo více `Choose` elementů v `When` elementu.|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Volitelný element.<br /><br /> Obsahuje sadu uživatelem definované [položky](../msbuild/item-element-msbuild.md) elementy. Může být nula nebo více `ItemGroup` elementů v `When` elementu.|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Volitelný element.<br /><br /> Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-msbuild.md) elementy. Může být nula nebo více `PropertyGroup` elementů v `When` elementu.|  
+|[PropertyGroup –](../msbuild/propertygroup-element-msbuild.md)|Volitelný element.<br /><br /> Obsahuje sadu uživatelem definované [vlastnost](../msbuild/property-element-msbuild.md) elementy. Může být nula nebo více `PropertyGroup` elementů v `When` elementu.|  
 
 ### <a name="parent-elements"></a>Nadřazené elementy  
 

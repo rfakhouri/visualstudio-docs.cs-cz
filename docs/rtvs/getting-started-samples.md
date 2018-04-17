@@ -1,26 +1,23 @@
 ---
-title: Ukázkové projekty pro R nástroje pro sadu Visual Studio | Microsoft Docs
+title: Ukázkové R projekty
 description: Index kolekce ukázky začít pracovat s R a Visual Studio.
 ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6d09999f8dd0e53dc8ae3ae61537eb182eaeb6d4
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: 658146e390dbad2f97fcc82f5da1f33128fdfce3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>R Tools pro Visual Studio ukázkové projekty
 
@@ -59,7 +56,7 @@ Jako s všechny příklady, otevřete soubor, přesuňte kurzor na začátek a p
 - `Data_Exploration` obsahuje tři skriptů:
 
   - `Import Data from URL.R` ukazuje, jak načíst adresa URL identifikuje data do R.
-  - `Import Data from URL to xdf.R` ukazuje, jak načíst adresa URL identifikuje data do Microsoft R Server jako xdf. (Requires MRS.)
+  - `Import Data from URL to xdf.R` ukazuje, jak načíst adresa URL identifikuje data do Microsoft R Server jako xdf. (Vyžaduje paní.)
   - `Using ggplot2.R` je rozšířením `A First Look at R/2-Introduction to ggplot2.R` vzorku, s rozsáhlejší prohlídku funkcí na ggplot2 včetně interaktivní 3D vykreslení.
 
       ![Výstup pomocí ggplot2. Příklad R](media/samples-3d-interactive.png)

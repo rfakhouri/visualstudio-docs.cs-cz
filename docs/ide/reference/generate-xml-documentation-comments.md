@@ -1,21 +1,19 @@
 ---
-title: "Vložit dokumentační komentáře XML v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Vložit dokumentační komentáře XML v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/26/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a98373280aa789e3c2381c5afc7d6c60c53dd171
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0fae2411a77f405404e34c7a2357554c1e5398ab
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Postupy: vložení komentáře XML pro dokumentaci generování
 
@@ -36,7 +34,7 @@ Visual Studio může pomoct dokumentu elementy kódu, jako jsou třídy a metody
 
    - Z klikněte pravým tlačítkem nebo kontextové nabídky na nebo nad tento element kódu, zvolte **fragment kódu** > **Vložit komentář**
 
-   Šablona XML je vytvořena okamžitě výše element kódu. Například při psaní komentářů metodu, vygeneruje  **\<souhrnné\>**  elementu  **\<param\>**  element pro každý parametr a  **\<vrátí\>**  element dokumentu návratovou hodnotu.
+   Šablona XML je vytvořena okamžitě výše element kódu. Například při psaní komentářů metodu, vygeneruje **\<souhrnné\>** elementu **\<param\>** element pro každý parametr a **\<vrátí\>** element dokumentu návratovou hodnotu.
 
    ![Šablona komentáře XML - C#](media/doc-preview-cs.png)
 

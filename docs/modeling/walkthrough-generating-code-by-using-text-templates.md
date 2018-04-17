@@ -1,24 +1,22 @@
 ---
-title: "Návod: Vytvoření kódu pomocí textových šablon | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření kódu pomocí textových šablon | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 46cbf0c6a28b10434ed364dffd77c4c01620d6ea
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 7099edb08216cd91858a20e65c7bb2fede786977
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Návod: Vytvoření kódu pomocí textových šablon
 Generování kódu umožňuje vytvářet kód programu, který je silného typu a ještě jde snadno změnit, pokud změny modelu zdroje. Tento rozdíl oproti alternativní postup zápisu úplně obecné program, který přijímá konfigurační soubor, který je flexibilnější, ale má za následek kód, který je ani jeden z nich tak snadno přečíst a změnit, ani je takové dobrý výkon. Tento návod ukazuje této výhody.  
@@ -212,7 +210,7 @@ class Song {}
  Bohužel, i když tato šablona generuje kód, vyvolá deklaraci třídy pro každý uzel v souboru XML třeba tak, aby pokud máte několik instancí `<song>` uzlu, zobrazí se několik deklarace skladbu třídy.  
   
 ### <a name="read-the-model-file-then-generate-the-code"></a>Čtení souboru modelu a generování kódu  
- Mnoho textových šablon postupujte podle vzoru, ve kterém první část šablony přečte zdrojový soubor a druhou částí generuje šablony. Potřebujeme ke čtení všech příklad souboru ke shrnutí typy uzlů, které obsahuje a pak generovat deklarace tříd. Jiné `<#@import#>` je potřeba, aby můžeme použít`Dictionary<>:`  
+ Mnoho textových šablon postupujte podle vzoru, ve kterém první část šablony přečte zdrojový soubor a druhou částí generuje šablony. Potřebujeme ke čtení všech příklad souboru ke shrnutí typy uzlů, které obsahuje a pak generovat deklarace tříd. Jiné `<#@import#>` je potřeba, aby můžeme použít `Dictionary<>:`  
   
 ```  
 <#@ template debug="false" hostspecific="true" language="C#" #>  

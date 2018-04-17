@@ -1,13 +1,10 @@
 ---
-title: "ProjectItemFile – Element | Microsoft Docs"
-ms.custom: 
+title: ProjectItemFile – Element | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,14 +12,14 @@ helpviewer_keywords:
 - ProjectItemFile element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7c222c25417f9a33f28871c94d8dd0d9353e1e76
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: cc9aa921c83bfe26c424e73fd53ad577e1aa527e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile – element
   Představuje soubor SharePoint, jako je například soubor prvku funkce zahrnout s položkou projektu při nasazení do služby SharePoint.  
@@ -46,7 +43,7 @@ ms.lasthandoff: 01/10/2018
 |Atribut|Popis|  
 |---------------|-----------------|  
 |**Zdroj**|Požadované **xs:string** atribut.<br /><br /> Název souboru pro nasazení s položkou projektu.|  
-|**Cíl**|Volitelné **xs:string** atribut.<br /><br /> Cesta, kde bude nasazen soubor na webu služby SharePoint, relativní vzhledem ke kořenové složce nasazení. Nasazení kořenové složky je určen podle typu nasazení určeného **typ** atribut. Pokud **cíl** atribut nezadá, soubor se nasadí do složky s názvem zadaným v **zdroj** atribut.<br /><br /> Další informace najdete v popisech pro **Cesta nasazení** a **nasazení kořenové** projektu služby SharePoint položky v [vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**cíl**|Volitelné **xs:string** atribut.<br /><br /> Cesta, kde bude nasazen soubor na webu služby SharePoint, relativní vzhledem ke kořenové složce nasazení. Nasazení kořenové složky je určen podle typu nasazení určeného **typ** atribut. Pokud **cíl** atribut nezadá, soubor se nasadí do složky s názvem zadaným v **zdroj** atribut.<br /><br /> Další informace najdete v popisech pro **Cesta nasazení** a **nasazení kořenové** projektu služby SharePoint položky v [vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Typ**|Požadované **xs:string** atribut.<br /><br /> Typ nasazení pro soubor. Další informace o možných hodnot, viz popis **typ nasazení** vlastnosti položky projektu služby SharePoint v [vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
@@ -65,7 +62,7 @@ ms.lasthandoff: 01/10/2018
   
 |||  
 |-|-|  
-|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
+|**obor názvů**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**Název schématu**|Schéma položky projektu SharePoint|  
 |**Ověření souboru**|ProjectItemModelSchema.xsd|  
 |**Nesmí být prázdné**|Ne|  

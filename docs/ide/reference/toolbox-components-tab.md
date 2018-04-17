@@ -2,24 +2,21 @@
 title: Sada nástrojů, karta součásti | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Components tab
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa91db706d7e1236162ef69e6fd31e791ed44dbb
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 29fd00d6fdf6f973149f57a78eb1145274689a2b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="toolbox-components-tab"></a>Sada nástrojů, karta Součásti
 
@@ -27,10 +24,10 @@ Zobrazí součásti, které můžete přidat do jazyka Visual Basic a C# Designe
   
  Zobrazené na této kartě **zobrazení** nabídce vyberte možnost **sada nástrojů**. V **sada nástrojů**, vyberte **součásti** kartě.  
   
- **BackgroundWorker**  
+ **BackgroundWorker –**  
  Vytvoří `System.ComponentModel.BackgroundWorker` instanci komponenty, která se může spustit operací na vlákno oddělené, vyhrazené.  
   
- **DirectoryEntry**  
+ **Položka DirectoryEntry**  
  Vytvoří <xref:System.DirectoryServices.DirectoryEntry> instanci komponenty, který zapouzdřuje uzel nebo objekt z hierarchie služby Active Directory a slouží k interakci s poskytovatelé služeb Active Directory.  
   
  **DirectorySearcher**  
@@ -45,7 +42,7 @@ Zobrazí součásti, které můžete přidat do jazyka Visual Basic a C# Designe
  **FileSystemWatcher**  
  Vytvoří <xref:System.IO.FileSystemWatcher> instanci komponenty, které můžete použít k monitorování se změní na všechny adresář nebo soubor, ke které máte přístup.
   
- **HelpProvider**  
+ **HelpProvider –**  
  Vytvoří `System.Windows.Forms.HelpProvider` instanci komponenty, která poskytuje místní nebo online nápovědy pro ovládací prvky.  
   
  **ImageList**  
@@ -60,7 +57,7 @@ Zobrazí součásti, které můžete přidat do jazyka Visual Basic a C# Designe
  **Proces**  
  Vytvoří <xref:System.Diagnostics.Process> instance komponenty můžete použít k zastavení, spuštění a manipulaci data související s procesy ve vašem systému.
   
- **SerialPort**  
+ **Portu SerialPort**  
  Vytvoří `System.IO.Ports.SerialPort` instanci komponenty, která poskytuje synchronní a událostmi řízené vstupně-výstupních operací, přístup k PIN kódu a zalomení stav a přístup k vlastnostem sériového zařízení.  
   
  **ServiceController**  

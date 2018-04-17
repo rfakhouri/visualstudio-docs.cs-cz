@@ -1,27 +1,24 @@
 ---
-title: "Zobrazení interakce vrstvy | Microsoft Docs"
-ms.custom: 
+title: Zobrazení interakce vrstvy | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.tierinteraction
 helpviewer_keywords:
 - Tier Interactions view
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7246d9ac119885e8a6f736d853cf0b842b84f8c9
-ms.sourcegitcommit: 36ab8429333b31f03992a9fe8fc669db8e09c968
+ms.openlocfilehash: 31d425ce23e3987b0a57dc8228d1030fbdb80c9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="tier-interactions-view"></a>Zobrazení interakcí vrstev
 
@@ -43,7 +40,7 @@ Zobrazení interakcí zobrazí dat interakce vrstev v dvě podokna:
 
 |Sloupec|Popis|
 |------------|-----------------|
-|Jméno|-Pro řádek nejvyšší úrovně, název PROFILOVANÉHO procesu nebo webové stránky.<br />-Pro řádek připojení databáze, název serveru, který je hostitelem databáze.|
+|**Jméno**|-Pro řádek nejvyšší úrovně, název PROFILOVANÉHO procesu nebo webové stránky.<br />-Pro řádek připojení databáze, název serveru, který je hostitelem databáze.|
 |**Databáze**|Název databáze (pouze řádky připojení databáze).|
 |**Počet**|Celkový počet požadavků, které jsou generovány podle procesu, webovou stránku nebo připojení k databázi.|
 |**Celkem uběhlý čas**|Celková doba, která je potřebná k provedení jakékoli jeden požadavek z procesu, webovou stránku nebo připojení k databázi.|

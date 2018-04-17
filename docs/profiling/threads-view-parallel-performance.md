@@ -1,29 +1,25 @@
 ---
-title: "Vláken (paralelní výkon) zobrazení | Microsoft Docs"
-ms.custom: 
+title: Vláken (paralelní výkon) zobrazení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.threadblocking
 helpviewer_keywords:
 - Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2245ae466948122cbf39225043125b4feec8579
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: ec01b8a8ae937d442496a076ca47260eab6a92db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="threads-view-parallel-performance"></a>Zobrazení vláken (paralelní výkon)
 **Zobrazení vláken** je nejvíce bohaté a podrobné zobrazení v Concurrency Visualizer (zvolte **analyzovat** > **vizualizér souběžnosti** spuštění Vizualizér souběžnosti). Pomocí tohoto zobrazení, můžete zjistit, jestli jsou vláken provádění nebo blokování z důvodu synchronizace, vstupně-výstupních operací nebo z jiného důvodu.  
@@ -72,7 +68,7 @@ ms.lasthandoff: 02/27/2018
   
  Tady je ilustraci zobrazení vláken:  
   
- ![Threads View](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![Zobrazení vláken](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 Zobrazení vláken  
   
  Na začátku posloupnosti jsou řazeny v pořadí, ve kterém jsou vytvořeny, tak, aby se první hlavní vlákno aplikace. Možnost řazení v levém horním rohu zobrazení můžete použít k seřazení vláken podle jiného kritéria (například ve většině provádění práce).  

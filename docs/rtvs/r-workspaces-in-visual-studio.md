@@ -1,26 +1,23 @@
 ---
-title: "Pracovní prostory v R Tools pro Visual Studio | Microsoft Docs"
-description: "Tom, jak řídit, kde běží kód R pomocí pracovní prostory v sadě Visual Studio."
-ms.custom: 
+title: Pracovní prostory R
+description: Tom, jak řídit, kde běží kód R pomocí pracovní prostory v sadě Visual Studio.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bb520f317eb285bcc278ff9f37bb2dc25c91e950
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 5eb1ab76c41d82ae64457be192dccf7176843722
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="controlling-where-r-code-runs-with-workspaces"></a>Řízení, kde běží kód R s nimi
 

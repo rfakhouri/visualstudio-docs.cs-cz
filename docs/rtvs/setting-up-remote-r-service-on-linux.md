@@ -1,30 +1,24 @@
 ---
-title: "Nastavení vzdálené služby R v systému Linux | Microsoft Docs"
-description: "Postup nastavení vzdálené služby R na Ubuntu a subsystému Windows pro Linux."
-ms.custom: 
+title: Nastavení vzdálené služby R v systému Linux
+description: Postup nastavení vzdálené služby R na Ubuntu a subsystému Windows pro Linux.
+ms.custom: ''
 ms.date: 12/04/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
-author:
-- kraigb
-- karthiknadig
-ms.author:
-- kraigb
-- karthiknadig
-manager: ghogen
+ms.topic: conceptual
+author: kraigb
+ms.author: kraigb
+ms.reviewer: karthiknadig
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 80f7f82baf194070ff3e34bcbf8776f9109c925d
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ea41a192a5a39c0245bcb6d67f45331b7b021116
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remote-r-service-for-linux"></a>Služba vzdálené R pro Linux
 
@@ -100,7 +94,7 @@ V každém případě vzdálený počítač musí mít jednu z následujících 
 1. Přihlaste se k [portál Azure](https://portal.azure.com).
 1. Přejděte na virtuální počítače a pak vyberte **přidat**.
 1. V seznamu dostupných imagí virtuálních počítačů vyhledejte a vyberte jednu z následujících akcí:
-    - Ubuntu Server:`Ubuntu Server 16.04 LTS`
+    - Ubuntu Server: `Ubuntu Server 16.04 LTS`
     - Vědecké zpracování dat virtuálních počítačů: `Linux Data Science` (viz [datové vědy virtuální počítače](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) podrobnosti)
 1. Nastavit model nasazení na `Resource manager` a vyberte **vytvořit**.
 1. Zvolte název pro virtuální počítač, zadejte uživatelské jméno a heslo (je vyžadováno heslo, jako SSH není podporována veřejného klíče přihlášení).

@@ -1,25 +1,21 @@
 ---
-title: "Krok 6: Pojmenujte své ovládací prvky tlačítek | Microsoft Docs"
-ms.custom: 
+title: 'Krok 6: Pojmenujte své ovládací prvky tlačítek | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
-caps.latest.revision: 
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1981e8003941f14295cd137ba238808ec49229a
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 0d5c402439ccb30b4803a4b1863254287bc7c2dd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-6-name-your-button-controls"></a>Krok 6: Pojmenujte své ovládací prvky tlačítek
 Je pouze jeden PictureBox na daný formulář. Pokud jste ji přidali rozhraní IDE automaticky pojmenuje **pictureBox1**. Existuje pouze jeden CheckBox, která se nazývá **checkBox1**. Později, brzy bude napsat kód, a tento kód bude odkazovat na zaškrtávací políčko a PictureBox. Protože se nachází pouze jeden z těchto ovládacích prvků, budete vědět, co znamená až uvidíte **pictureBox1** nebo **checkBox1** ve vašem kódu.  
@@ -29,7 +25,7 @@ Je pouze jeden PictureBox na daný formulář. Pokud jste ji přidali rozhraní 
   
  Existují čtyři tlačítka ve formuláři a s názvem rozhraní IDE, je **button1**, **button2**, **button3**, a **button4**. Právě pohledem na jejich názvy nevíte, které tlačítko je **Zavřít** tlačítko a která je **zobrazit obrázek** tlačítko. To je důvod, proč poskytnutí vaše tlačítka informativnější názvy je užitečné.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) nebo [kurzu 1: vytvoření prohlížeče obrázků v C# - Video 3](http://go.microsoft.com/fwlink/?LinkId=205202). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+ ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 3](http://go.microsoft.com/fwlink/?LinkId=205213) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# – Video 3](http://go.microsoft.com/fwlink/?LinkId=205202). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-name-your-button-controls"></a>Chcete-li název své ovládací prvky tlačítek  
   
@@ -45,7 +41,7 @@ Vlastnosti – okno s názvem closeButton
   
 3.  Dvakrát klikněte **zobrazit obrázek** tlačítko ve formuláři. Jako alternativu, vyberte **zobrazit obrázek** tlačítko ve formuláři a potom vyberte klávesu ENTER. Pokud to uděláte, rozhraní IDE otevře další karta v hlavním okně názvem **Form1.cs** (**Form1.vb** Pokud používáte Visual Basic). Tato karta ukazuje soubor kódu pozadí formuláře, jak je znázorněno na následujícím obrázku.  
   
-     ![Karta Form1.cs s Visual C &#35; kód](../ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
+     ![Karta Form1.cs s Visual C&#35; kód](../ide/media/express_showbuttoncode.png "Express_ShowButtonCode")  
 Karta Form1.cs s kódem jazyka Visual C#  
   
 4.  Soustřeďte se na tuto část kódu. (Vyberte **VB** kartě níže, pokud používáte zobrazení jazyka Visual Basic verze kódu jazyka Visual Basic.)  

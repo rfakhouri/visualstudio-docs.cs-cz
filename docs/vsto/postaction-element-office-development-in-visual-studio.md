@@ -1,12 +1,10 @@
 ---
-title: "&lt;postAction&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: '&lt;postAction&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - postAction element
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 63e15e2a02ac58ee385e38d5ed2d435c0e80dddb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 2934b0ad761dcd512b21e2424515c06fb896dda5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;postAction&gt; – Element (vývoj pro Office v sadě Visual Studio)
   `postAction` Element `vstav3` obor názvů obsahuje `entrypoint` elementy a všechny `postActionData` prvky, které jsou spojeny s akcemi po nasazení, které se spustit po instalaci řešení pro systém Office.  
@@ -43,13 +42,13 @@ ms.lasthandoff: 01/10/2018
   
  `postAction` Element nemá žádné atributy.  
   
- `postAction`obsahuje následující prvky.  
+ `postAction` obsahuje následující prvky.  
   
 ### <a name="entrypoint"></a>Vstupní bod  
- Volitelné. Role `entryPoint` element v `vstav3` obor názvů je definován v [& č. 60; entryPoints & č. 62; Element &#40; vývoj pro Office v sadě Visual Studio &#41; ](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
+ Volitelné. Role `entryPoint` element v `vstav3` obor názvů je definován v [ &#60;entryPoints&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md).  
   
 ### <a name="postactiondata"></a>postactiondata –  
- Volitelné. Role `postActionData` element v `vstav3` obor názvů je definován v [& č. 60; postactiondata – & č. 62; Element &#40; vývoj pro Office v sadě Visual Studio &#41; ](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
+ Volitelné. Role `postActionData` element v `vstav3` obor názvů je definován v [ &#60;postactiondata –&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md).  
   
 ## <a name="post-deployment-action-example"></a>Příklad akce po nasazení  
   

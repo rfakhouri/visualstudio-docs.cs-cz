@@ -2,11 +2,8 @@
 title: Fragmenty kódu v C# | Microsoft Docs
 ms.custom: ''
 ms.date: 06/05/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [C#]
 - code snippets [C#]
@@ -14,14 +11,14 @@ helpviewer_keywords:
 - C#, code snippets
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0328ceb6c1420b038ca424c42dd408e36da6f891
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: 8ee8b5adc7d0c7c40f80cdfed7cc873b092d5eb1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-code-snippets"></a>Fragmenty kódu v C#
 
@@ -44,7 +41,7 @@ Ve výchozím nastavení jsou zahrnuty následující fragmenty kódu v sadě Vi
 |checked|Vytvoří [zaškrtnutí](/dotnet/csharp/language-reference/keywords/checked) bloku.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|
 |třída|Vytvoří deklaraci třídy.|V oboru názvů (včetně globálního oboru názvů), třídu nebo struktury.|
 |konstruktoru|Vytvoří konstruktor pro obsahující třídu.|Uvnitř třídy.|
-|cw|Vytvoří volání <xref:System.Console.WriteLine%2A>.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|
+|SH|Vytvoří volání <xref:System.Console.WriteLine%2A>.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|
 |do|Vytvoří [provést](/dotnet/csharp/language-reference/keywords/do) `while` smyčky.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|
 |else|Vytvoří [else](/dotnet/csharp/language-reference/keywords/if-else) bloku.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|
 |enum|Vytvoří [výčtu](/dotnet/csharp/language-reference/keywords/enum) deklarace.|V oboru názvů (včetně globálního oboru názvů), třídu nebo struktury.|

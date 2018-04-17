@@ -1,27 +1,23 @@
 ---
-title: "Přizpůsobení buildu | Microsoft Docs"
-ms.custom: 
+title: Přizpůsobení buildu | Microsoft Docs
+ms.custom: ''
 ms.date: 06/14/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b11acd4360aa86d4727a4c697a56eaa753d522c
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ed8497c937006d53bf6cd6f8f5b1a773fdf44137
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customize-your-build"></a>Přizpůsobení buildu
 Ve verzích nástroje MSBuild starší než verze 15 Pokud chcete zadat novou, vlastní vlastnost, která má projekty v řešení, museli jste ručně přidejte odkaz na tuto vlastnost pro každý soubor projektu v řešení. Nebo, jste měli k definování vlastností v *props* souboru a pak můžete importovat explicitně *props* souboru v všechny projekty v řešení, mimo jiné.
@@ -41,7 +37,7 @@ Například, pokud chcete povolit všechny projekty pro přístup k nové Roslyn
     </PropertyGroup>
   </Project>
   ```
-3. Run MSBuild. Importuje existující vašeho projektu z *Microsoft.Common.props* a *Microsoft.Common.targets* najít soubor a importujte ho.
+3. Spuštění nástroje MSBuild. Importuje existující vašeho projektu z *Microsoft.Common.props* a *Microsoft.Common.targets* najít soubor a importujte ho.
 
 ## <a name="search-scope"></a>Obor vyhledávání
 Při hledání *Directory.Build.props* adresářové struktury souboru MSBuild směrem nahoru provede z umístění vašeho projektu (`$(MSBuildProjectFullPath)`), zastavování po je možné vyhledat *Directory.Build.props* soubor. Například pokud vaše `$(MSBuildProjectFullPath)` byla *c:\users\username\code\test\case1*MSBuild by spusťte hledání existuje a pak hledání strukturu adresáře směrem nahoru, dokud se nachází *Directory.Build.props* souboru, jako následující adresářovou strukturu.
@@ -91,7 +87,7 @@ Souhrn MSBuild je obecný přístup je následující:
 - Pro daný projekt, MSBuild vyhledá první *Directory.Build.props* směrem nahoru ve struktuře řešení sloučí s výchozím nastavením a zastaví kontrolu Další informace
 - Pokud chcete, aby více úrovní najít a pak sloučit [ `<Import...>` ](../msbuild/property-functions.md#msbuild-getpathoffileabove) (viz výše) "vnější" soubor ze souboru "vnitřní"
 - Pokud soubor "vnější" nemá sám také importovat něco nad ním, pak kontrolu zastaví existuje
-- Chcete-li řídit proces kontrolu sloučení, použijte `$(DirectoryBuildPropsPath)` a`$(ImportDirectoryBuildProps)`
+- Chcete-li řídit proces kontrolu sloučení, použijte `$(DirectoryBuildPropsPath)` a `$(ImportDirectoryBuildProps)`
 
 Nebo jednodušeji: první *Directory.Build.props* který neimportuje nic, je, kde MSBuild zastaví.
 

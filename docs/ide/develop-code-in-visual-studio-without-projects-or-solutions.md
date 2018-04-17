@@ -1,30 +1,28 @@
 ---
-title: "Vývoj kódu v sadě Visual Studio bez projekty a řešení | Microsoft Docs"
+title: Vývoj kódu v sadě Visual Studio bez projekty a řešení | Microsoft Docs
 ms.date: 02/21/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c50a07992a1856ad0d5f45c0200e0b8a232cb7
-ms.sourcegitcommit: 3abca1c733af876c8146daa43a62e829833be280
+ms.openlocfilehash: 082e64d80080eec48c311254461b85812a969841
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Vývoj kódu v sadě Visual Studio bez projekty a řešení
 
 V 2017 Visual Studio můžete do sady Visual Studio bez nutnosti soubor řešení nebo produktu project otevřete kód z téměř jakéhokoli typu na základě adresáře projektu. To znamená, můžete, například klonování úložišti na Githubu, otevřete přímo do sady Visual Studio a začít vývoj, aniž by bylo nutné vytvořit projekt nebo řešení. V případě potřeby můžete zadat vlastní sestavovací úlohy a spusťte parametry prostřednictvím jednoduchého soubory JSON.
 
-Po otevření soubory s kódem v sadě Visual Studio, zobrazí se v Průzkumníku řešení všechny soubory ve složce. Kliknutím na libovolný soubor můžete začít s jeho úpravami. Na pozadí Visual Studio spustí indexování soubory, které chcete povolit technologii IntelliSense, navigace a refaktoringu funkce. Jak upravit, vytvořit, přesuňte nebo odstraňte soubory, Visual Studio automaticky sleduje změny a průběžně aktualizuje její IntelliSense index. Kód zobrazí s zabarvení syntaxe a v mnoha případech zahrnují základní dokončování IntelliSense.
+Po otevření soubory s kódem v sadě Visual Studio, **Průzkumníku řešení** zobrazí všechny soubory ve složce. Kliknutím na libovolný soubor můžete začít s jeho úpravami. Na pozadí Visual Studio spustí indexování soubory, které chcete povolit technologii IntelliSense, navigace a refaktoringu funkce. Jak upravit, vytvořit, přesuňte nebo odstraňte soubory, Visual Studio automaticky sleduje změny a průběžně aktualizuje její IntelliSense index. Kód zobrazí s zabarvení syntaxe a v mnoha případech zahrnují základní dokončování IntelliSense.
 
 ## <a name="open-any-code"></a>Otevřete žádný kód
 
@@ -32,7 +30,7 @@ Kód v sadě Visual Studio můžete otevřít v některém z následujících zp
 
 - Na panelu nabídek Visual Studio zvolte **soubor** > **otevřete** > **složky**a pak přejděte do umístění v kódu.
 - V nabídce kontextu (klikněte pravým tlačítkem) do složky obsahující kód zvolte **otevřete v sadě Visual Studio** příkaz.
-- Vyberte **otevřít složku** odkaz na Visual Studio – úvodní stránka.
+- Vyberte **otevřít složku** odkaz na sady Visual Studio **– úvodní stránka**.
 - Pokud se uživatel klávesnice, stiskněte klávesu **Ctrl**+**Shift**+**Alt**+**O** v aplikaci Visual Studio.
 - Otevřete kód z klonovaného úložiště GitHub.
 
@@ -46,7 +44,7 @@ Následující příklad ukazuje, jak klonovat úložiště GitHub a pak otevře
 
    ![Tlačítko klonování Githubu](./media/VSIDE_Code_Clone.png)
 
-1. Ve Visual Studiu zvolte **Team Explorer** otevřete Průzkumník týmových projektů. Pokud se nezobrazí na kartě, ho otevřete v **zobrazení** > **Team Explorer**.
+1. Ve Visual Studiu zvolte **Team Explorer** otevřete **Team Explorer**. Pokud se nezobrazí na kartě, ho otevřete v **zobrazení** > **Team Explorer**.
 
 1. V nástroji Team Explorer pod **místní úložiště Git** zvolte **klon** příkaz a vložte adresu URL stránky Githubu do textového pole.
 
@@ -54,11 +52,11 @@ Následující příklad ukazuje, jak klonovat úložiště GitHub a pak otevře
 
 1. Vyberte **klon** tlačítko klonovat soubory projektu do místního úložiště Git. V závislosti na velikosti úložiště tento proces může trvat několik minut.
 
-1. Po úložišti má klonování k vašemu systému, v nástroji Team Explorer klikněte **otevřete** příkazu v nabídce kontextu (klikněte pravým tlačítkem) nově naklonovaný úložišti.
+1. Po úložišti klonování k vašemu systému, v **Team Explorer**, vyberte **otevřete** příkazu v nabídce kontextu (klikněte pravým tlačítkem) nově naklonovaný úložišti.
 
    ![Klonovaný úložišti](./media/VSIDE_Code_Clone3.png)
 
-1. Vyberte **zobrazit zobrazení složky** příkaz k prohlížení souborů v Průzkumníku řešení
+1. Vyberte **zobrazit zobrazení složky** příkaz k zobrazení souborů v **Průzkumníku řešení**.
 
    ![Nastaví zobrazení složky](./media/VSIDE_Code_Clone3_show.png)
 

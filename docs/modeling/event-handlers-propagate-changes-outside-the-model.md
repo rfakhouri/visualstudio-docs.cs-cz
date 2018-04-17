@@ -1,24 +1,22 @@
 ---
-title: "Obslužné rutiny událostí rozšířit změny mimo modelu | Microsoft Docs"
-ms.custom: 
+title: Obslužné rutiny událostí rozšířit změny mimo modelu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 8b5c957fbc3ae5eb3e71f087c57cbf07188de2ff
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: c91264d459648315fa7ce2c0d58651383ea9edd2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Obslužné rutiny události šíří změny mimo model
 Vizualizace a modelování SDK, můžete definovat obslužné rutiny událostí úložiště rozšíří změny na prostředky mimo úložiště, jako je například proměnné bez úložiště, soubory, modely v jiných úložišť nebo jiné [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření. Obslužné rutiny událostí úložiště jsou spouštěny na konci transakce došlo k aktivační událost. Rovněž jsou prováděna v operaci zpět nebo znovu. Na rozdíl od úložiště pravidla jsou proto je nejvhodnější pro aktualizaci hodnoty, které jsou mimo úložišti události v úložišti. Na rozdíl od událostí rozhraní .NET, jsou obslužné rutiny událostí úložiště zaregistrované pro naslouchání na třídu: nemáte registraci samostatné obslužnou rutinu pro každou instanci. Další informace o tom, jak zvolit různé způsoby zpracování změn najdete v tématu [reakce na a šíření změny](../modeling/responding-to-and-propagating-changes.md).  
@@ -29,13 +27,13 @@ Vizualizace a modelování SDK, můžete definovat obslužné rutiny událostí 
   
 1.  Vyberte typ události, které chcete monitorovat. Úplný seznam, podívejte se na vlastnosti <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Každou vlastnost odpovídá typu události. Nejčastěji používané událostí, které typy jsou:  
   
-    -   `ElementAdded`-aktivuje, když element modelu, odkaz vztah, tvar nebo konektor je vytvořen.  
+    -   `ElementAdded` -aktivuje, když element modelu, odkaz vztah, tvar nebo konektor je vytvořen.  
   
     -   ElementPropertyChanged - aktivuje, když hodnota `Normal` mění vlastnost domain. Událost se aktivuje pouze v případě, že novém i starém hodnoty nejsou stejné. Událost nelze použít pro úložiště počítaný a vlastní vlastnosti.  
   
          Ji nelze použít pro vlastnosti role, které odpovídají vztah odkazy. Místo toho použijte `ElementAdded` ke sledování relace domény.  
   
-    -   `ElementDeleted`-spustí po element modelu, vztah, tvar nebo konektor byl odstraněn. Pořád přístup k elementu hodnoty vlastností, ale bude mít žádné relace pro další prvky.  
+    -   `ElementDeleted` -spustí po element modelu, vztah, tvar nebo konektor byl odstraněn. Pořád přístup k elementu hodnoty vlastností, ale bude mít žádné relace pro další prvky.  
   
 2.  Přidejte třídu definici *YourDsl *** DocData** v samostatném souboru kódu v **DslPackage** projektu.  
   
@@ -43,7 +41,7 @@ Vizualizace a modelování SDK, můžete definovat obslužné rutiny událostí 
   
 4.  Přepsání `OnDocumentLoaded()` pro registraci obslužné rutiny. Pokud máte více než jednu obslužnou rutinu, můžete je zaregistrovat na stejném místě.  
   
- Umístění kód registrace není důležité. `DocView.LoadView()`je alternativního umístění.  
+ Umístění kód registrace není důležité. `DocView.LoadView()` je alternativního umístění.  
   
 ```  
 using System;  
@@ -174,7 +172,7 @@ private static void AlbumTitleAdjuster(object sender,
 ## <a name="store-event-types"></a>Ukládání typů událostí  
  Každý typ události odpovídá kolekci v Store.EventManagerDirectory. Můžete přidat nebo odebrat obslužné rutiny událostí kdykoli, ale je obvykle je přidat při načtení dokumentu.  
   
-|`EventManagerDirectory`Název vlastnosti|Spuštěna při|  
+|`EventManagerDirectory` Název vlastnosti|Spuštěna při|  
 |-------------------------------------------|-------------------|  
 |ElementAdded|Instance třídy domény, relace domény, tvaru, konektoru nebo diagramu se vytvoří.|  
 |ElementDeleted|Element modelu byla odebrána z adresáře element úložiště a již není zdroje nebo cíle žádné relace. Element nebude odstraněn z paměti, ale se uchovávají v případě budoucí vrácení zpět.|  

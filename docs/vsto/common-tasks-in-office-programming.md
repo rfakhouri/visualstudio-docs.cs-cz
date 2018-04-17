@@ -1,12 +1,10 @@
 ---
-title: "Běžné úlohy při programování pro Office | Microsoft Docs"
-ms.custom: 
+title: Běžné úlohy při programování pro Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 65a20b5d65ba49789aea857459bd6a4d316195eb
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-tasks-in-office-programming"></a>Běžné úlohy při programování pro systém Office
   V tomto tématu slouží ke vám pomůžou najít odpovědi na časté otázky týkající se řešení pro systém Office programování pomocí sady Visual Studio následujících kategorií.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Úlohy nasazení](#deployment).  
   
-##  <a name="projects"></a>Instalační program a obecné úlohy  
+##  <a name="projects"></a> Instalační program a obecné úlohy  
   
 -   [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
@@ -63,7 +62,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Postupy: Zobrazit chyby doplňku uživatelského rozhraní](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
-##  <a name="ui"></a>Úkoly vlastního nastavení uživatelského rozhraní  
+##  <a name="ui"></a> Úkoly vlastního nastavení uživatelského rozhraní  
   
 ### <a name="controls-on-documents-and-worksheets"></a>Ovládací prvky na dokumenty a listů  
   
@@ -109,7 +108,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Postupy: přidávání příkazů do místních nabídek](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
-##  <a name="excel"></a>Úlohy automatizace aplikace Excel  
+##  <a name="excel"></a> Úlohy automatizace aplikace Excel  
   
 -   [Postupy: zobrazování v buňkách listů prostřednictvím kódu programu řetězec](../vsto/how-to-programmatically-display-a-string-in-a-worksheet-cell.md).  
   
@@ -143,7 +142,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Postupy: řazení dat na listech prostřednictvím kódu programu](../vsto/how-to-programmatically-sort-data-in-worksheets.md).  
   
-##  <a name="word"></a>Úlohy automatizace aplikace Word  
+##  <a name="word"></a> Úlohy automatizace aplikace Word  
   
 -   [Postupy: vytváření nových dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-create-new-documents.md).  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 -   [Postupy: programové počet znaků v dokumentech](../vsto/how-to-programmatically-count-characters-in-documents.md).  
   
-##  <a name="data"></a>Data úlohy  
+##  <a name="data"></a> Data úlohy  
   
 ### <a name="data-bound-controls"></a>Ovládací prvky vázané na data  
   
@@ -207,17 +206,17 @@ ms.lasthandoff: 01/10/2018
   
 -   [Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
-##  <a name="server"></a>Úlohy správy dokumentu na straně serveru  
+##  <a name="server"></a> Úlohy správy dokumentu na straně serveru  
   
 -   [Postupy: odebrání rozšíření spravovaného kódu z dokumentů](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
   
 -   [Postupy: připojení rozšíření spravovaného kódu k dokumentům](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
   
-##  <a name="security"></a>Zabezpečení úloh  
+##  <a name="security"></a> Zabezpečení úloh  
   
 -   [Postupy: podepisování řešení pro systém Office](../vsto/how-to-sign-office-solutions.md).  
   
-##  <a name="deployment"></a>Úlohy nasazení  
+##  <a name="deployment"></a> Úlohy nasazení  
   
 -   [Postupy: publikování řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).  
   
@@ -234,7 +233,7 @@ ms.lasthandoff: 01/10/2018
 -   [Postupy: Změňte cestu instalace řešení Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Viz také  
- [Začínáme &#40; vývoj pro Office v sadě Visual Studio &#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)  
   

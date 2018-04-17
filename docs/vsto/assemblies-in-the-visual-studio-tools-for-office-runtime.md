@@ -1,13 +1,10 @@
 ---
-title: "Sestavení v sadě Visual Studio Tools for Office Runtime | Microsoft Docs"
-ms.custom: 
+title: Sestavení v sadě Visual Studio Tools for Office Runtime | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,20 +12,20 @@ helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
+manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22750553e714c0aa02577ee95753e7d5b2bf13f4
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+ms.openlocfilehash: 34ce422757ad7e7f7152920252eff6e0c2277261
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Sestavení v nástrojích Visual Studio Tools for Office runtime
   Když vytvoříte projekt Office, Visual Studio automaticky přidá reference na [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] sestavení, které se používají pro typ projektu a cílové rozhraní .NET Framework projektu. V rozšíření Office pro rozhraní .NET Framework 3.5, existují různé sestavení [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Další informace o rozšířeních Office, najdete v části [Visual Studio Tools for Office Runtime přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md).  
   
-## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Sestavení v Office rozšíření pro rozhraní .NET Framework 4 a[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
- Následující tabulka uvádí sestavení, které jsou součástí Office rozšíření pro [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dokumentaci o obory názvů a typy v těchto sestavení najdete v tématu [spravované odkaz & #40; vývoj pro Office v sadě Visual Studio & #41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
+## <a name="assemblies-in-the-office-extensions-for-the-net-framework-4-and-the-includenetv45vstoincludesnet-v45-mdmd"></a>Sestavení v Office rozšíření pro rozhraní .NET Framework 4 a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+ Následující tabulka uvádí sestavení, které jsou součástí Office rozšíření pro [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dokumentaci o obory názvů a typy v těchto sestavení najdete v tématu [spravované odkaz &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/managed-reference-office-development-in-visual-studio.md).  
   
 |Název sestavení|Popis|  
 |-------------------|-----------------|  
@@ -51,7 +48,7 @@ ms.lasthandoff: 01/10/2018
 |Microsoft.Office.Tools.Word.v4.0.Utilities.dll|Poskytuje následující typy:<br /><br /> -Základní třídy pro generovaný objekt `ThisDocument` třídy v projekty na úrovni dokumentu ve Wordu.<br />– Ovládací prvky Windows Forms, které můžete použít na dokumenty v projekty aplikace Word.|  
   
 ## <a name="assemblies-in-the-office-extensions-for-the-net-framework-35"></a>Sestavení v Office rozšíření pro rozhraní .NET Framework 3.5  
- Následující tabulka uvádí sestavení, které jsou součástí rozšíření Office pro rozhraní .NET Framework 3.5. Dokumentaci k obory názvů a třídy v těchto sestavení, najdete v následujícím referenčním oddílu v dokumentaci k sadě Visual Studio 2008: [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ Následující tabulka uvádí sestavení, které jsou součástí rozšíření Office pro rozhraní .NET Framework 3.5. Dokumentaci k obory názvů a třídy v těchto sestavení, najdete v následujícím referenčním oddílu v dokumentaci k sadě Visual Studio 2008: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
 |Název sestavení|Popis|  
 |-------------------|-----------------|  

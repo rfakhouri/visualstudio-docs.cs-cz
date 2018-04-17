@@ -1,23 +1,21 @@
 ---
-title: "O jazycích specifické pro doménu | Microsoft Docs"
-ms.custom: 
+title: O jazycích specifické pro doménu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 9357c55b204d521eb5cd77af328636485c490ff4
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 89293e0b684881767b6357b88469dc69ddc71902
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="about-domain-specific-languages"></a>O jazycích specifických pro konkrétní domény
 
@@ -79,9 +77,9 @@ Grafické domény jazyka musí zahrnovat následující funkce:
 
 Jazyka domény musí mít přiměřené malého elementů, které se dají snadno definované a rozšířené představují konstrukce specifické pro doménu. Zápis se skládá z tvarů, které představují prvky, a konektory, které představují vztahy mezi elementy, na povrchu Grafický diagram. V [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], obrazce může být dále rozšiřována a vylepšení představují elementy jazyka specifické pro doménu.  
   
-### <a name="domain-model"></a>Domain Model
+### <a name="domain-model"></a>Model domény
 
-Jazyka domény musíte kombinovat sadu elementů a vztahů mezi nimi do souvislý gramatika. Musí také definovat, zda jsou platné kombinace elementů a vztahů. Například programovací jazyky obvykle zakázat cyklické dědičnosti, ve kterém je jednu třídu odvozenou od třídy sekundu a druhé třídy je odvozena od třídy první. Omezení slouží také k express obchodní logiky, například jedna osoba nelze závislé služby sám. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]pomocí omezení express druhy omezení, které vyžadují nejvíc jazyky specifické pro doménu.  
+Jazyka domény musíte kombinovat sadu elementů a vztahů mezi nimi do souvislý gramatika. Musí také definovat, zda jsou platné kombinace elementů a vztahů. Například programovací jazyky obvykle zakázat cyklické dědičnosti, ve kterém je jednu třídu odvozenou od třídy sekundu a druhé třídy je odvozena od třídy první. Omezení slouží také k express obchodní logiky, například jedna osoba nelze závislé služby sám. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] pomocí omezení express druhy omezení, které vyžadují nejvíc jazyky specifické pro doménu.  
   
 ### <a name="artifact-generation"></a>Generování artefaktů
 
@@ -89,7 +87,7 @@ Jedním z hlavní účely jazyka domény je ke generování artefakt, napříkla
   
 ### <a name="serialization"></a>Serializace
 
-Jazyk specifické pro doménu musí nastavit jako trvalý, v některých formulář, který lze upravovat, uložit, ukončeno a znovu načíst. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]používá formát XML, který umožňuje definovat a přizpůsobit, jak je jazyka specifické pro doménu serializován nebo trvalé.  
+Jazyk specifické pro doménu musí nastavit jako trvalý, v některých formulář, který lze upravovat, uložit, ukončeno a znovu načíst. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] používá formát XML, který umožňuje definovat a přizpůsobit, jak je jazyka specifické pro doménu serializován nebo trvalé.  
   
 ### <a name="integration-with-visual-studio"></a>Integrace se sadou Visual Studio
 

@@ -1,27 +1,24 @@
 ---
-title: Azure vzdálené ladění s Pythonem | Microsoft Docs
+title: Vzdálené ladění pomocí Python Azure
 description: Postup konfigurace Azure App Service pomocí sady Visual Studio pro vzdálené ladění aplikace Python.
 ms.custom: ''
 ms.date: 07/12/2017
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d74e4425bfcaefbd1bb13e368ee719acaa3bae80
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: c6666b16b2a00e505dcd6fe016a07ea896441bf1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Vzdálené ladění kódu jazyka Python v Azure
 

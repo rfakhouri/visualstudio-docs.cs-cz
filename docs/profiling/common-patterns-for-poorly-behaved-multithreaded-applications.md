@@ -1,27 +1,24 @@
 ---
-title: "Obecné vzory pro vícevláknové aplikace s nevhodným chováním | Microsoft Docs"
-ms.custom: 
+title: Obecné vzory pro vícevláknové aplikace s nevhodným chováním | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
 helpviewer_keywords:
 - Concurrency Visualizer, common patterns for poorly-behaved multithreaded applications
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b7b9ad17c4d0c16066b9c10e3cc5b51f152c9dc
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: 6896cdfd4257df55ce2e891bbfd9618b3c525e1c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Obecné vzory pro vícevláknové aplikace s nevhodným chováním
 
@@ -63,7 +60,7 @@ Při hodnocení tohoto problému je třeba zvážit následující:
 
 ## <a name="inefficient-io"></a>Neefektivní vstupně-výstupních operací
 
-![Inefficient I&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
+![Neefektivní I&#47;O](../profiling/media/inefficient_io.png "Inefficient_IO")
 
 Nadměrné využití nebo zneužití vstupně-výstupních operací je obvyklou příčinou toho umožňuje zvýšit efektivitu v aplikacích. Vezměte v úvahu na předchozím obrázku. Profil viditelné časové osy ukazuje, že 44 procent času viditelné vlákno spotřebovávají vstupně-výstupní operace. Časová osa ukazuje velké objemy vstupně-výstupních operací, které označuje, že aplikace PROFILOVANÉHO je často blokována vstupně-výstupní operace. Chcete-li zobrazit podrobnosti o typech vstupně-výstupních operací a kde je váš program zablokuje, zvětšení problematických oblastí, zkontrolujte profil viditelné časové osy a klikněte blok konkrétní vstupně-výstupních operací zobrazíte aktuální zásobníky volání.
 

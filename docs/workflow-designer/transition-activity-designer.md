@@ -1,20 +1,20 @@
 ---
-title: "Přechod Návrhář aktivity | Microsoft Docs"
+title: Přechod Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e245df7132075c0a7b691e5fee1069ebffd47ca0
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 25b00c38110e8a97d5e5465f3e170bef9c28bb88
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="transition-activity-designer"></a>Návrhář aktivity přechodu
 A <xref:System.Activities.Statements.Transition> představuje přechod mezi dvěma stavy.
@@ -29,10 +29,10 @@ A <xref:System.Activities.Statements.Transition> představuje přechod mezi dvě
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|Určuje popisný název <xref:System.Activities.Statements.Transition> Návrhář aktivity. Výchozí hodnota je **T1**. Hodnota se dá upravit v tabulce vlastností v hlavičce návrháře rozšířené přechod a v záhlaví části akce v Návrháři rozšířené přechodu. <xref:System.Activities.Activity.DisplayName%2A> Se používá v cestě, která se zobrazí v horní části návrháře pracovních postupů.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> striktně nevyžaduje, je osvědčeným postupem použít.|
 |<xref:System.Activities.Statements.Transition.Condition%2A>|False|Pokud je k dispozici, určuje výraz, který se musí vyhodnotit **True** před ovládací prvek předává do cílového stavu. Tento stav se dá upravit v tabulce vlastností a v Návrháři rozšířené přechodu. Více podmínek v sdílené přechod jsou vyhodnocovány v pořadí, ve kterém se zobrazí v Návrháři přechod. **Poznámka:** Všimněte si, že pokud <xref:System.Activities.Statements.Transition.Condition%2A> přechodu se vyhodnocuje **False** (nebo všechny podmínky přechod sdílené aktivační událost vyhodnocení **False**), nedojde k přechodu a bude ho přeplánovat všechny aktivační události pro všechny přechody ze stavu. V tomto kurzu, nemůže tato situace nastat z důvodu způsob, jak jsou nakonfigurované podmínky (máme konkrétní akce na tom, jestli odhad správný nebo nesprávné).|
-|**Zdroj**|True|Označuje stav, ze kterého pochází tento přechod. Kliknutím na jméno stavu zdroje přepínačů návrháře zobrazení rozšířené zobrazení tohoto stavu. Tato hodnota nastavena při přechodu je vytvořena a nelze je změnit.|
+|**Zdroj**|Hodnota TRUE|Označuje stav, ze kterého pochází tento přechod. Kliknutím na jméno stavu zdroje přepínačů návrháře zobrazení rozšířené zobrazení tohoto stavu. Tato hodnota nastavena při přechodu je vytvořena a nelze je změnit.|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|False|Určuje aktivity, jejichž dokončení zahájí přechodu. Pokud chcete nastavit tuto aktivitu, přetáhněte ji na aktivitu ze **sada nástrojů** a umístěte jej do **aktivační událost** části přechodu.|
 |<xref:System.Activities.Statements.Transition.Action%2A>|False|Určuje aktivity, která se spustí po dokončení aktivity aktivační události a <xref:System.Activities.Statements.Transition.Condition%2A>, pokud existuje, vyhodnotí jako **true**. Tato aktivita se spustí, až po přechodu do cílového stavu, <xref:System.Activities.Statements.State.Exit%2A> aktivita pro zdroj stavu, pokud existuje, je spuštěna. Po rozbalení návrháře přechod tato hodnota se dá nastavit tak, že přetáhnete aktivitu z **sada nástrojů** a vyřadit ho do **akce** části přechodu. Může existovat více akcí pro jediný přechod. Jednotlivé akce lze rozšířit a sjednané a můžete seřadit kliknutím na tlačítko nahoru nebo dolů šipka na akci pokud existuje více akcí v přechodu.|
-|**Cílový**|True|Označuje stav, která stavu počítač přejde do po dokončení přechodu. To odpovídá <xref:System.Activities.Statements.Transition.To%2A> vlastnost přechodu v objektovém modelu. Kliknutím na název cílového stavu přepínačů návrháře zobrazení rozšířené zobrazení tohoto stavu. Tato hodnota nastavena při přechodu je vytvořen a přetáhněte šipku, která se připojuje přechod do stavu cílového v Návrháři lze změnit.|
+|**Cílový**|Hodnota TRUE|Označuje stav, která stavu počítač přejde do po dokončení přechodu. To odpovídá <xref:System.Activities.Statements.Transition.To%2A> vlastnost přechodu v objektovém modelu. Kliknutím na název cílového stavu přepínačů návrháře zobrazení rozšířené zobrazení tohoto stavu. Tato hodnota nastavena při přechodu je vytvořen a přetáhněte šipku, která se připojuje přechod do stavu cílového v Návrháři lze změnit.|
 
 ### <a name="creating-transitions"></a>Vytváření přechody
  Přechody jsou vytvořeny tak, že přetáhnete řádku z jednoho stavu do jiného, nebo vyřazením stavu na trojúhelníčky, které se zobrazí při přetažení jeden stav přes jiný stav. K vytvoření přechodu přetažením, najeďte myší na hranu stavu zdroje a přetáhněte řádku ze zdrojového na cílový stav. K vytvoření přechodu pádem, stav cílového a pozastavte ukazatel myši nad stavu zdroje, přetažení ji na jeden z čtyři trojúhelníčky, které se zobrazují kolem stavu zdroje. Cílový stav může být buď nový stav přetažením z **sada nástrojů**, nebo existující stavu přetažením z Návrháře pracovních postupů.

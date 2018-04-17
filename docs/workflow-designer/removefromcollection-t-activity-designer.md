@@ -1,5 +1,5 @@
 ---
-title: "RemoveFromCollection&lt;T&gt; Návrhář aktivity | Microsoft Docs"
+title: RemoveFromCollection&lt;T&gt; Návrhář aktivity | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f097e0d826725d3e3aa899c6137164487cfc5685
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: 36e2407a7aa75547cf4669bd85814561869998d9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="removefromcollectionlttgt-activity-designer"></a>RemoveFromCollection&lt;T&gt; Návrhář aktivity
 **RemoveFromCollection\<T >** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.RemoveFromCollection%601> aktivity.
@@ -33,9 +33,9 @@ ms.lasthandoff: 03/12/2018
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Volitelné popisný název <xref:System.Activities.Statements.RemoveFromCollection%601> aktivity. Výchozí hodnota je RemoveFromCollection < Int32\>.<br /><br /> I když <xref:System.Activities.Activity.DisplayName%2A> striktně nevyžaduje, je osvědčeným postupem použít.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|Položka k přidání do **kolekce\<T >**. Tato položka je typu *T*, která je typu *TypeArgument*. Pokud chcete zadat položku, zadejte ve výrazu jazyka Visual Basic v tabulce vlastností.|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|Kolekce, do které by měla položka přidána. Tato kolekce je typu **ICollection < TypeArgument\>.** Chcete-li zadat kolekce, zadejte ve výrazu jazyka Visual Basic v tabulce vlastností.|
-|*TypeArgument*|True|Typ T položek, které jsou součástí <xref:System.Collections.Generic.ICollection%601>. Ve výchozím nastavení to *TypeArgument* je typ nastaven na **Int32**. Chcete-li změnit typ, změňte hodnotu *TypeArgument* do pole se seznamem v tabulce vlastností.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|Hodnota TRUE|Položka k přidání do **kolekce\<T >**. Tato položka je typu *T*, která je typu *TypeArgument*. Pokud chcete zadat položku, zadejte ve výrazu jazyka Visual Basic v tabulce vlastností.|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|Hodnota TRUE|Kolekce, do které by měla položka přidána. Tato kolekce je typu **ICollection < TypeArgument\>.** Chcete-li zadat kolekce, zadejte ve výrazu jazyka Visual Basic v tabulce vlastností.|
+|*TypeArgument*|Hodnota TRUE|Typ T položek, které jsou součástí <xref:System.Collections.Generic.ICollection%601>. Ve výchozím nastavení to *TypeArgument* je typ nastaven na **Int32**. Chcete-li změnit typ, změňte hodnotu *TypeArgument* do pole se seznamem v tabulce vlastností.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Hodnota, která označuje, zda zadaná položka byla odebrána z kolekce. Chcete-li zadat proměnnou pro vazbu na výsledek, zadejte v proměnné v tabulce vlastností|
 
 ## <a name="see-also"></a>Viz také

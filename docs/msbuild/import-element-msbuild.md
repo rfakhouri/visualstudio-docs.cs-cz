@@ -1,12 +1,9 @@
 ---
-title: "Import – Element (MSBuild) | Microsoft Docs"
-ms.custom: 
+title: Import – Element (MSBuild) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Import
 dev_langs:
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - Import element [MSBuild]
 - <Import> element [MSBuild]
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d13f376068d7f5f32a55768dbd02520152f0a30
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: f1a3ec67938bacf45adb0524cdb3ebe73fa3809a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="import-element-msbuild"></a>Import – element (MSBuild)
 Importuje obsah z jednoho souboru projektu do jiného souboru projektu.  
@@ -60,13 +56,13 @@ Importuje obsah z jednoho souboru projektu do jiného souboru projektu.
 
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
+|[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
 |[ImportGroup](../msbuild/importgroup-element.md)|Obsahuje kolekci `Import` elementy seskupené v rámci nepovinnou podmínku.|  
 
 ## <a name="remarks"></a>Poznámky  
  Pomocí `Import` elementu, můžete opakovaně použít kód, který je společný pro mnoho souborů projektu. Díky tomu je snadněji provádět údržbu kód, protože všechny aktualizace, které můžete provést sdíleného kódu získat rozšířen na všechny projekty, které ji importovat.  
 
- Podle konvence sdílený projekt importované soubory ukládají jako soubory .targets, ale jsou standardní [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]není zabránit vám v projektu, který má příponu názvu jiný soubor importu, ale doporučujeme použít rozšíření .targets konzistence.  
+ Podle konvence sdílený projekt importované soubory ukládají jako soubory .targets, ale jsou standardní [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory projektu. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] není zabránit vám v projektu, který má příponu názvu jiný soubor importu, ale doporučujeme použít rozšíření .targets konzistence.  
 
  Relativní cesty v importovaných projekty se interpretují relativní k adresáři Import projektu. Proto pokud soubor projektu je importovat do několika souborů projektu v různých umístěních, relativní cesty v souboru projektu importované, bude vyhodnocen odlišně pro každý importovaný projekt.  
 

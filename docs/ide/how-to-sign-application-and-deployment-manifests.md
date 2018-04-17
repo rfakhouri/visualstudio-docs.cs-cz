@@ -1,12 +1,10 @@
 ---
-title: "Postupy: podepsání manifestů aplikace a nasazení | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: podepsání manifestů aplikace a nasazení | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - code signing [Visual Studio], Authenticode
@@ -17,16 +15,16 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0ca5caa822108d5a6417e69f827e1ba754b0d105
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: a883995f95c5eaab86a14f07f9372614078d3c79
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Postupy: Podepsání manifestů aplikace a nasazení
 Pokud chcete publikovat aplikace pomocí ClickOnce – nasazení, manifestů aplikace a nasazení musí být podepsané páru veřejného a privátního klíče RSA a podepsaný pomocí technologie Authenticode. Manifesty můžete podepsat pomocí certifikátu z úložiště certifikátů Windows nebo soubor klíče.  
@@ -38,7 +36,7 @@ Pokud chcete publikovat aplikace pomocí ClickOnce – nasazení, manifestů apl
  Informace o vytváření soubory klíčů najdete v tématu [postupy: vytvoření pár veřejného a privátního klíče](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají příponu PFX. Nicméně můžete vybrat jiné typy certifikátů z úložiště certifikátů aktuálního uživatele systému Windows kliknutím **zvolit z úložiště** na **podpisování** stránky vlastností projektu.  
+>  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají příponu PFX. Nicméně můžete vybrat jiné typy certifikátů z úložiště certifikátů aktuálního uživatele systému Windows kliknutím **zvolit z úložiště** na **podpisování** stránky vlastností projektu.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>K podepsání aplikace a nasazení manifesty pomocí certifikátu  
   

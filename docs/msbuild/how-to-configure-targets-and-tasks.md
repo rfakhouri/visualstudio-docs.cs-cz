@@ -1,24 +1,20 @@
 ---
-title: "Postupy: konfigurace cílů a úloh | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: konfigurace cílů a úloh | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46cb7a1234e6fafe9c2f9f3b795e05424c25dfb7
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6b6416ae909d126ceafc83e9aa22eb872a8d619a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Postupy: Konfigurace cílů a úloh
 Vybrané úlohy nástroje MSBuild může být nastaveny na spouštění v prostředí, ve kterém se zaměřit, bez ohledu na prostředí vývojovém počítači. Například pokud používáte 64bitový počítač pro vytvoření této architektuře cíle 32bitové aplikace, vybrané úlohy se spouštějí v 32bitový proces.  
@@ -105,7 +101,7 @@ Vybrané úlohy nástroje MSBuild může být nastaveny na spouštění v prost�
  Na rozdíl od jiných parametry úlohy `MSBuildRuntime` a `MSBuildArchitecture` nejsou zřejmé, vlastní úloha.  Zápis úlohu, která má informace o kontextu, ve které běží, musíte otestovat kontextu voláním rozhraní .NET Framework nebo pomocí sestavení vlastností předávat informace o kontextu prostřednictvím jiné parametry úlohy.  
   
 > [!NOTE]
->  `UsingTask`atributy lze nastavit z vlastností sada nástrojů a prostředí.  
+>  `UsingTask` atributy lze nastavit z vlastností sada nástrojů a prostředí.  
   
  `MSBuildRuntime` a `MSBuildArchitecture` parametry představují nejpružnější způsob, jak nastavit cílový kontext, ale také nejvíc omezenou v oboru.  Na jedné straně protože jsou nastaveny v samotné instanci úlohy a nebudou vyhodnoceny, dokud není spuštěn úkol, jejich odvozovat jejich hodnota z úplné oboru vlastností, které jsou k dispozici v době vyhodnocení a čase vytvoření buildu.  Na druhé straně tyto parametry platí pouze pro konkrétní instanci úloha v konkrétní cílový.  
   

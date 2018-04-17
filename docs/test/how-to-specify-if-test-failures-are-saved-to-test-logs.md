@@ -1,20 +1,20 @@
 ---
-title: "Uložení zatížení testovací protokolu pro selhání při testu v sadě Visual Studio | Microsoft Docs"
+title: Uložení zatížení testovací protokolu pro selhání při testu v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd67bdbe2c6ecec9e5895619c5b5a446a4bca01
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: 17b8792a98473658ae6ac47cd418028ce2cfcf6f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Postupy: Určení, zda mají být selhání při testu ukládána do protokolů testování, pomocí editoru zátěžových testů
 
@@ -44,7 +44,7 @@ Po vytvoření vaší zátěžový test pomocí **načíst testování Průvodce
 ## <a name="see-also"></a>Viz také
 
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)
-- [Návod: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md)
+- [Návod: Vytvoření a spuštění zátěžového testu](../test/walkthrough-create-and-run-a-load-test.md)
 - [Úpravy scénářů zátěžových testů](../test/edit-load-test-scenarios.md)
 - [Postupy: nastavení shromažďování veškerých podrobností a zpřístupnění grafu aktivity virtuálního uživatele](../test/how-to-configure-load-tests-to-collect-full-details.md)
 - [Postupy: Zadejte, jak často ukládání protokolů testování](../test/how-to-specify-how-frequently-test-logs-are-saved.md)

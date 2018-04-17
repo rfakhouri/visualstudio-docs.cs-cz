@@ -1,12 +1,10 @@
 ---
-title: "Vytváření funkcí služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: Vytváření funkcí služby SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - features [SharePoint development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 9fa42efc654bd3835a4f1ec1a5002136813550a0
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: b0a8de8b36d41684e00c9b679672d90909540107
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-sharepoint-features"></a>Vytváření funkcí služby SharePoint
   Funkce služby SharePoint můžete použít k seskupení souvisejících položek projektu služby SharePoint pro snazší nasazení. Můžete vytvořit funkce, nastavení rozsahů a označit další funkce, jako závislosti pomocí návrháře funkce služby SharePoint. Návrhář vytvoří také manifestu, který je soubor XML, který popisuje každou funkci.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
   
 |Vlastnost|Popis|  
 |--------------|-----------------|  
-|Název|Volitelné. Výchozí název funkce je nastaven na *název řešení SolutionName**FeatureName*.|  
+|Název|Volitelné. Výchozí název funkce je nastaven na *název řešení SolutionName ** FeatureName*.|  
 |Popis|Volitelné. Popis funkce služby SharePoint.|  
 |Rozsah|Požadováno. Pokud funkce je vytvořená pomocí **Průzkumníku řešení**, na Web ve výchozím nastavení oboru.<br /><br /> -Farmy: Aktivace funkce pro farmu služby celý server.<br /><br /> -Site: Aktivace funkce pro všechny weby v kolekci webů.<br /><br /> -Webové: Aktivace funkce pro konkrétní web.<br /><br /> -WebApplication: Aktivujte funkci pro všechny webové servery ve webové aplikaci.|  
 |Položky v řešení|Všechny položky služby SharePoint, které mohou být přidány do funkce.|  

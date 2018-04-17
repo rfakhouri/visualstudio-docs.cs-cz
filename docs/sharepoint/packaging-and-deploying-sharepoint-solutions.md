@@ -1,12 +1,10 @@
 ---
-title: "Balení a nasazení řešení služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: Balení a nasazení řešení služby SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,13 +16,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging and deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: e25d0829305f414712590296b6121d62583736a2
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 8faeb21b7c32f1af91a9149b1b9f6bcadafeed7c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="packaging-and-deploying-sharepoint-solutions"></a>Balení a nasazení řešení služby SharePoint
   Obvykle řešení služby SharePoint je nasazený na serveru služby SharePoint pomocí souboru balíčku (WSP) řešení. Visual Studio můžete použít k uspořádání vaší SharePoint – položky projektu do funkcí a chcete-li vytvořit balíček pro nasazení vaší funkcí služby SharePoint.  
@@ -39,12 +38,12 @@ ms.lasthandoff: 01/10/2018
   
 -   [Nasazení souborů v řešení služby SharePoint](#DeployingFiles)  
   
-##  <a name="Creating"></a>Vytváření funkcí a balíčků  
+##  <a name="Creating"></a> Vytváření funkcí a balíčků  
  Visual Studio můžete použít k seskupení souvisejících prvků služby SharePoint do *funkce*. Funkce pro definici seznamu kontaktů může obsahovat třeba instanci seznamu a definice seznamu. Tyto dva prvky můžete zkombinovat do jednoho funkce pro účely nasazení. Další informace o funkcích najdete v tématu [stavebním blokem: funkce](http://go.microsoft.com/fwlink/?LinkID=169183).  
   
  Potom můžete vytvořit SharePoint balíčku řešení (WSP) sady více funkcí, definice webů, sestavení a dalších souborů do jednoho balíčku, který ukládá soubory ve formátu vyžaduje k nasazení soubory na server služby SharePoint. Další informace najdete v tématu [stavebním blokem: řešení](http://go.microsoft.com/fwlink/?LinkID=169186).  
   
-##  <a name="Tools"></a>Funkce a balení nástroj podpory  
+##  <a name="Tools"></a> Funkce a balení nástroj podpory  
  Nástroje pro vývoj pro SharePoint v sadě Visual Studio vám pomůže rychle uspořádání souborů služby SharePoint do funkcí a řešení balíčky pro nasazení jednodušší. Tyto nástroje můžete nakonfigurovat balíček funkcí a řešení.  
   
 -   Funkce Designer a návrháře balíčků.  
@@ -88,12 +87,12 @@ ms.lasthandoff: 01/10/2018
 ### <a name="solution-explorer"></a>Průzkumník řešení  
  Procházejte a otevřít soubory projektu služby SharePoint můžete Průzkumníku řešení. Použít místní nabídky v Průzkumníku řešení pro přidání funkcí, přijímačů událostí funkce a funkce prostředky. Kromě toho můžete otevřít funkce návrhářů a návrháři balíček ke konfiguraci funkce a balíčky pro nasazení.  
   
-##  <a name="Deploying"></a>Nasazení řešení služby SharePoint  
+##  <a name="Deploying"></a> Nasazení řešení služby SharePoint  
  Po přizpůsobení funkcí a balíčku v sadě Visual Studio, můžete vytvořit soubor WSP nasazení na servery služby SharePoint. Visual Studio můžete použít pro ladění a testování WSP pouze na serveru SharePoint na vývojovém počítači. Další informace o tom, jak nasadit řešení služby SharePoint na vzdálený server služby SharePoint, naleznete v části [nasazení řešení](http://go.microsoft.com/fwlink/?LinkID=169194).  
   
  Můžete také upravit jednotlivé kroky nasazení na vývojovém počítači. Další informace najdete v tématu [nasazení, publikování a upgradování balíčků řešení služby SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
   
-##  <a name="DeployingFiles"></a>Nasazení souborů v řešení služby SharePoint  
+##  <a name="DeployingFiles"></a> Nasazení souborů v řešení služby SharePoint  
  Obvykle když přidáte položky projektu služby SharePoint do řešení služby SharePoint, všechny požadované soubory jsou zahrnuty. Soubory, které mohou být zkompilovány (soubory kódu) jsou integrované ve výstupu sestavení řešení. Však může také musíte přidat-kompilační soubory, například XML, txt nebo soubory prostředků, do projektu služby SharePoint. Tyto soubory nejsou zabalené automaticky ve vašem řešení. Aby se zajistilo, že přitom se zabalí, buď přidejte soubory do mapované složky nebo do položky projektu služby SharePoint.  
   
  Soubory přidány do mapované složky se automaticky zkopírují do podregistr služby SharePoint, když je řešení nasazeno. Soubory přidané do položky projektu služby SharePoint se nasadí do umístění, které je zadáno v **umístění nasazení** na základě vlastnosti pro každý soubor, který je částečně nastaven **typ nasazení** vlastnost. Ve výchozím nastavení **typ nasazení** hodnota vlastnosti je **NoDeployment**, což znamená, že soubor není nasazený s řešením. Je nutné nastavit jinou hodnotu pro vlastnost, zahrnout soubor v balíčku.  

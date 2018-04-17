@@ -1,27 +1,24 @@
 ---
-title: Jak definovat vlastní nabídky příkazy pro projektů v jazyce Python | Microsoft Docs
+title: Jak definovat vlastní nabídky příkazy pro projektů v jazyce Python
 description: Demonstruje postup úpravy souborů projektu a cíle pro přidání vlastních příkazů do místní nabídky projektu Python v sadě Visual Studio. Příkazy můžete vyvolat na spustitelné programy, skripty, moduly, fragmenty kódu vloženého a pip.
 ms.custom: ''
 ms.date: 02/02/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 dev_langs:
 - python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a8e7f1f05ba6a93e696ee13e2f28305b8784d7c2
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: d4a0e9834678ebe8c1800381de67d95bebc5ad38
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>Definování vlastní příkazy pro projektů v jazyce Python
 

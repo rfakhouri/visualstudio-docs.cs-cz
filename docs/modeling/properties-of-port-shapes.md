@@ -1,25 +1,23 @@
 ---
-title: "Vlastnosti portu tvarů | Microsoft Docs"
-ms.custom: 
+title: Vlastnosti portu tvarů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.port
 helpviewer_keywords:
 - Domain-Specific Language, port shape
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 799a4d84a338f870a80ce1c3fe19581a775fa5dd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 5e00c77bc3abcef57bfd2ef5b047ee5e3f63bf37
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-port-shapes"></a>Vlastnosti obrazců portů
 Port tvarů můžete představují třídy domény v Návrháři vygenerovaný.  
@@ -39,7 +37,7 @@ Port tvarů můžete představují třídy domény v Návrháři vygenerovaný.
 |Tloušťka obrysu|Tloušťka obrysu tento tvar.|0.03125|  
 |Barva textu|Barva, který se používá pro dekoratéry textu, které jsou přidruženy tento tvar.|černé|  
 |Modifikátor přístupu|Úroveň přístupu třídy (`public` nebo `internal`).|Public|  
-|Vlastní atributy|Použít k přidání atributů do zdrojového kódu třídu, která se generují z tento tvar.|\<none>|  
+|Vlastní atributy|Použít k přidání atributů do zdrojového kódu třídu, která se generují z tento tvar.|\<žádné >|  
 |Generuje dvojitou odvozené|Pokud `True`, budou generovány základní třídu a částečné třídy (pro podporu přizpůsobení prostřednictvím přepsání). Další informace najdete v tématu [přepsání a rozšíření vygenerované třídy](../modeling/overriding-and-extending-the-generated-classes.md)|False|  
 |Má vlastní – konstruktor|Pokud `True`, bude k dispozici vlastní konstruktor v zdrojového kódu. Další informace najdete v tématu [přepsání a rozšíření třídy generované](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modifikátor dědičnosti|Popisuje typ dědičnosti zdrojovou třídu kódu, která se generují z port (`none`, `abstract` nebo `sealed`).|žádná|  
@@ -47,14 +45,14 @@ Port tvarů můžete představují třídy domény v Návrháři vygenerovaný.
 |Název|Název tohoto tvaru.|Aktuální název|  
 |Obor názvů|Obor názvů, který je přidružený tento tvar.|Aktuální obor názvů|  
 |Typ Tip pro nástroj|Jak popisek je definována (pevná, proměnné nebo žádný). Pokud odstraněna, pak hodnota `Fixed Tooltip Text` vlastnost se používá jako popisek; Pokud proměnné, pak popisek je definována v vlastní kód.|žádná|  
-|Poznámky|Neformální poznámky, které jsou přidruženy tento tvar.|\<none>|  
+|Poznámky|Neformální poznámky, které jsou přidruženy tento tvar.|\<žádné >|  
 |Počáteční výšku.|Úvodní výšce tohoto tvaru, v palcích.|1|  
 |Počáteční šířka|Počáteční šířka tohoto tvaru, v palcích.|1.5|  
 |Barva výplně zveřejněné jako vlastnost<br /><br /> Režim zveřejněné vyplnění přechodu<br /><br /> Zveřejněné obrysovou barvu jako vlastnost<br /><br /> Styl obrysu Dash zveřejněné jako vlastnost<br /><br /> Vystavený Tloušťka obrysu jako vlastnost<br /><br /> Barva textu zpřístupňuje|Pokud `True`, může uživatel nastavit vlastnost stanovené obrazce. Chcete-li tuto možnost nastavíte, klikněte pravým tlačítkem na definici tvar a klikněte na **přidat zveřejněné**.|False|  
-|Popis|Používá k dokumentu generovaný návrháře.|\<none>|  
-|Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro tento tvar.|\<none>|  
-|Text popisu pevné nástroje|Text, který se používá pro pevnou popisek.|\<none>|  
-|Nápověda – klíčové slovo|Klíčové slovo, které se používá k indexu F1 – Nápověda pro tento tvar.|\<none>|  
+|Popis|Používá k dokumentu generovaný návrháře.|\<žádné >|  
+|Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro tento tvar.|\<žádné >|  
+|Text popisu pevné nástroje|Text, který se používá pro pevnou popisek.|\<žádné >|  
+|Nápověda – klíčové slovo|Klíčové slovo, které se používá k indexu F1 – Nápověda pro tento tvar.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
  [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

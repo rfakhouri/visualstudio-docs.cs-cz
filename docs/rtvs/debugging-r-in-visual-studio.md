@@ -1,26 +1,23 @@
 ---
-title: "Ladění pomocí nástroje R pro sadu Visual Studio | Microsoft Docs"
-description: "Visual Studio poskytuje úplné ladění prostředí pro R včetně zarážky, připojení, volejte zásobníku a zkontrolujete proměnné."
-ms.custom: 
+title: Ladění kódu jazyka R
+description: Visual Studio poskytuje úplné ladění prostředí pro R včetně zarážky, připojení, volejte zásobníku a zkontrolujete proměnné.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 185896840be089c8a74e018e3fd66fa2816c5d76
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: ee8ed2cef9296b0d73be01f1bc5d2438c931d7eb
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-r-in-visual-studio"></a>Ladění R v sadě Visual Studio
 
@@ -69,6 +66,6 @@ Prohlížeč prostředí podporuje řadu příkazů, speciální:
 | Q | Ukončí: končí relaci ladění. |
 | kde | Zobrazit zásobník: zobrazí v okně interaktivní zásobníku volání. |
 | Nápověda | Zobrazit nápovědu: zobrazí v okně interaktivní dostupné příkazy. |
-| &lt;expr&gt; | vyhodnocení výrazu v *expr*. |
+| &lt;Expr&gt; | vyhodnocení výrazu v *expr*. |
 
 ![Prostředí prohlížeče v okně interaktivní](media/debugger-environment-browser.png)

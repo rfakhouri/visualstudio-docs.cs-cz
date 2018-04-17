@@ -1,12 +1,10 @@
 ---
-title: "Návody pro aplikaci Word | Microsoft Docs"
-ms.custom: 
+title: Návody pro aplikaci Word | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], Word
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: dc3f207fea1d8572bbd6df00e92a57fd0939222a
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1ce56d696cbab963f39b876027e27e8b1254a9a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthroughs-using-word"></a>Návody pro práci s aplikací Word
   Následující postupy ukazují způsoby použití přizpůsobení na úrovni dokumentu a doplňků VSTO automatizovat aplikace Microsoft Office Word a přizpůsobení uživatelského rozhraní (UI).  

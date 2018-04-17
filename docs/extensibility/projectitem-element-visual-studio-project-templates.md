@@ -1,30 +1,26 @@
 ---
-title: "ProjectItem – Element (šablony projektů Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: ProjectItem – Element (šablony projektů Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectItem
 helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca5143a3e5eaff488fee89b643a40adb60473bd8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 8a7dfbfd03df24c2968dc9dae141ffc7a300e8be
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem – element (šablony projektů Visual Studio)
 Určuje soubor, který je součástí projektu šablony.  
@@ -34,7 +30,7 @@ Určuje soubor, který je součástí projektu šablony.
   
  \<VSTemplate >  
  \<TemplateContent >  
- \<Projekt >  
+ \<Project>  
  \<ProjectItem – >  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -80,7 +76,7 @@ Určuje soubor, který je součástí projektu šablony.
  A `string` představující název nebo cesta k souboru v souboru ZIP šablony.  
   
 ## <a name="remarks"></a>Poznámky  
- `ProjectItem`je volitelné podřízeným `Project`.  
+ `ProjectItem` je volitelné podřízeným `Project`.  
   
  `TargetFileName` Atributu lze vytvořit liší od strukturu adresáře do struktury adresářů v souboru ZIP šablony. Například pokud soubor `MyFile.vb` existuje v kořenovém souboru .zip, šablony, ale chcete soubor umístit do adresáře s názvem `CustomFiles` na všechny projekty vytvořené ze šablony, byste použili následující kód XML:  
   

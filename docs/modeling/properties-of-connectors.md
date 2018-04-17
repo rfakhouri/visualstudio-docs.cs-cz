@@ -1,23 +1,21 @@
 ---
-title: "Vlastnosti konektorů | Microsoft Docs"
-ms.custom: 
+title: Vlastnosti konektorů | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, connectors
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 858ce6fd3d53cd580a2aaac1b6b5c160dffac517
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 804908f0d39050300f28685266b300965a311e28
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-connectors"></a>Vlastnosti konektorů
 Konektory představují vztahy domén v generované návrháře.  
@@ -35,21 +33,21 @@ Konektory představují vztahy domén v generované návrháře.
 |Barva textu|Barva, který se používá pro dekoratéry textu, které jsou přidruženy tento konektor.|černé|  
 |Tloušťka|Tloušťka čáry pro tento konektor se měří v palcích.|0.03125|  
 |Modifikátor přístupu|Úroveň přístupu třídy (`public` nebo `internal`).|Public|  
-|Vlastní atributy|Použít k přidání atributů do zdrojového kódu třídu, která se generují z tohoto konektoru.|\<none>|  
+|Vlastní atributy|Použít k přidání atributů do zdrojového kódu třídu, která se generují z tohoto konektoru.|\<žádné >|  
 |Generuje dvojitou odvozené|Pokud `True`, budou generovány základní třídu a částečné třídy (pro podporu přizpůsobení prostřednictvím přepsání). Další informace najdete v tématu [přepsání a rozšíření třídy generované](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Má vlastní – konstruktor|Pokud `True`, bude k dispozici vlastní konstruktor v zdrojového kódu. Další informace najdete v tématu [přepsání a rozšíření třídy generované](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modifikátor dědičnosti|Popisuje typ dědičnosti zdrojovou třídu kódu, která se generují z konektoru (`none`, `abstract` nebo `sealed`).|žádná|  
 |Základní konektoru|Základní třída tohoto konektoru.|(žádný)|  
 |Název|Název tohoto konektoru.|Aktuální název|  
 |Obor názvů|Obor názvů, který je přidružený tento konektor.|Aktuální obor názvů|  
-|ToolTip – typ|Jak popisek je definována (pevná, proměnné nebo žádný). Pokud odstraněna, pak hodnota `Fixed Tooltip Text` vlastnost se používá jako popisek; Pokud proměnné, pak popisek je definována v vlastní kód.|\<none>|  
-|Poznámky|Neformální poznámky, které jsou přidruženy tento konektor.|\<none>|  
+|ToolTip – typ|Jak popisek je definována (pevná, proměnné nebo žádný). Pokud odstraněna, pak hodnota `Fixed Tooltip Text` vlastnost se používá jako popisek; Pokud proměnné, pak popisek je definována v vlastní kód.|\<žádné >|  
+|Poznámky|Neformální poznámky, které jsou přidruženy tento konektor.|\<žádné >|  
 |Styl směrování|Styl, který se používá pro směrování konektor. A `Rectilinear` konektor umožňuje Pravoúhlá oplátku podle potřeby; `Straight` konektor neexistuje.|Lomené|  
 |Barva zveřejněné jako vlastnost<br /><br /> Zveřejněné přerušovaná čára jako vlastnost<br /><br /> Tloušťka zveřejněné jako vlastnost<br /><br /> Barva textu zpřístupňuje|Pokud `True`, může uživatel nastavit vlastnost stanovené obrazce. Chcete-li tuto možnost nastavíte, klikněte pravým tlačítkem na definici tvar a klikněte na **přidat zveřejněné**.|False|  
-|Popis|Používá k dokumentu generovaný návrháře.|\<none>|  
-|Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro tento konektor.|\<none>|  
-|Opravené Text popisku|Text, který se používá pro pevnou popisek.|\<none>|  
-|Nápověda – klíčové slovo|Klíčové slovo, které se používá k indexu F1 – Nápověda pro tento element.|\<none>|  
+|Popis|Používá k dokumentu generovaný návrháře.|\<žádné >|  
+|Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro tento konektor.|\<žádné >|  
+|Opravené Text popisku|Text, který se používá pro pevnou popisek.|\<žádné >|  
+|Nápověda – klíčové slovo|Klíčové slovo, které se používá k indexu F1 – Nápověda pro tento element.|\<žádné >|  
   
 ## <a name="see-also"></a>Viz také  
  [Glosář nástroje jazyka domény](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

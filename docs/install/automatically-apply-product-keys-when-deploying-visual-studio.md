@@ -3,10 +3,8 @@ title: Automatické použití kódů product key při nasazení sady Visual Stud
 ms.custom: ''
 ms.date: 08/14/2017
 ms.reviewer: tims
-ms.suite: ''
 ms.technology:
 - vs-acquisition
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 author: TerryGLee
@@ -14,11 +12,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e9bfd9f72162d354d7e606d65146f602393d286
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f6a8e00d15e49aeab990c797197fec445db45b59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Automatické použití kódů product key při nasazení sady Visual Studio
 Můžete použít kód product key prostřednictvím kódu programu jako součást skript, který slouží k automatizaci nasazení sady Visual Studio. Můžete nastavit kód product key na zařízení prostřednictvím kódu programu buď při instalaci sady Visual Studio nebo po dokončení instalace.

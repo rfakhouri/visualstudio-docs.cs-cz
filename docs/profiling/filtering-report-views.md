@@ -1,27 +1,23 @@
 ---
-title: "Filtrování zobrazení sestav | Microsoft Docs"
-ms.custom: 
+title: Filtrování zobrazení sestav | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, configuring
 ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 9a591f93c2cfb4cc744d8bde3a7d48a7c678d28a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filtering-report-views"></a>Filtrování zobrazení sestav
 Profilace datových souborů profilování data, která se zobrazí v zobrazení výkon sestav a exportují do souborů sestav omezit, můžete použít filtry. Můžete omezit sestavy pro data mezi hodnot časového razítka a můžete omezit data, která mají konkrétní procesy a vlákna. Můžete uložit filtrů do souboru a pak vytvořit filtr na jiný soubor dat profilování importováním filtr.  

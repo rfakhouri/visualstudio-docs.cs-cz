@@ -1,12 +1,10 @@
 ---
-title: "Postupy: přidávání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: přidávání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - shapes [Office development in Visual Studio], adding Visio shapes
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 4d73c59ac9ba89a5814a264bb8e8fe3c83b9789e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1cc4369977e1989960fe9448d4dd7d56e67ed7a9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Postupy: Přidávání obrazců do dokumentů aplikace Visio prostřednictvím kódu programu
   Tvary můžete přidat do dokumentu aplikace Microsoft Office Visio načítání je hlavní servery z vzorníku a umístěním obrazce na stránce active.  

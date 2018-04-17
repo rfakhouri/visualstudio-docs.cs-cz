@@ -1,28 +1,26 @@
 ---
-title: "Správa sestavení a podepsání manifestu | Microsoft Docs"
-ms.custom: 
+title: Správa sestavení a podepsání manifestu | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
 - signing manifests [Visual Studio]
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d8227a514887150e3477e026a238df608fe98d11
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2104ea0a86b351d0300bb7327c338dfcb0cd1818
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Správa sestavení a podepsání manifestu
 Softwarová součást podpis silného názvu poskytuje identitu globálně jedinečný. Silné názvy jsou použity zaručit, že sestavení nemůže být falešné jiným uživatelem a zajistit závislosti součástí a příkazy konfigurace, které se mapují na správný komponentu a verze komponenty.  
@@ -51,7 +49,7 @@ Následující typy asset, musíte se odhlásit:
   
 1.  Sestavení, pokud chcete nasadit do globální mezipaměti sestavení (GAC).  
   
-2.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]manifesty aplikace a nasazení. Visual Studio umožňuje podepisování ve výchozím nastavení pro tyto aplikace.  
+2.  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty aplikace a nasazení. Visual Studio umožňuje podepisování ve výchozím nastavení pro tyto aplikace.  
   
 3.  Primární spolupracující sestavení, které se používají pro interoperabilita modelů COM. Nástroj TLBIMP vynucuje silné názvy při vytváření primárních sestavení vzájemné spolupráce z knihovny typů COM.  
   

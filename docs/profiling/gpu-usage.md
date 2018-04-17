@@ -1,23 +1,20 @@
 ---
-title: "Využití GPU | Microsoft Docs"
-ms.custom: 
+title: Využití GPU | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdb367336d5e5a539f63fefbe97c04524bbdf6a
-ms.sourcegitcommit: ba29e4d37db92ec784d4acf9c6e120cf0ea677e9
+ms.openlocfilehash: a7c9ca5624ecdafb4079bb58d69ff72727104c1e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="gpu-usage"></a>Využití GPU
 Použijte nástroj využití GPU ve Visual Studio výkon a diagnostiku pro lepší pochopení využití základní hardware Direct3D – aplikace. Můžete ji určit, zda je vázané na procesor nebo GPU vazby a získat přehled o použití platforma hardwaru efektivněji výkon vaší aplikace. Využití GPU podporuje aplikace, které používají Direct3D – 12, Direct3D – 11 a Direct3D – 10; nepodporuje se jiné grafické rozhraní API, například Direct2D nebo OpenGL.  
@@ -68,11 +65,11 @@ Použijte nástroj využití GPU ve Visual Studio výkon a diagnostiku pro lepš
   
 2.  V horní části sestavy vyberte oddíl z jednoho z grafů, které zobrazuje problém, že který chcete prozkoumat. Výběr může být až 3 sekund; delší oddíly se zkrátí na začátku.  
   
-     ![Post & č. 45; kolekce, vybrat rozsah, chcete-li zobrazit podrobnosti o](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+     ![Post&#45;kolekce, vyberte rozsah zobrazíte podrobnosti](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
 3.  V dolní části sestavy, vyberte **zobrazit podrobnosti** na odkaz v **.. klikněte sem zobrazíte podrobnosti o využití GPU pro tento rozsah** zprávu zobrazíte podrobné časová osa vašeho výběru.  
   
-     ![Post & č. 45; kolekce s vybraný rozsah](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+     ![Post&#45;kolekce s vybraný rozsah](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
  Otevře se nové dokumentů s kartami, který obsahuje sestavu. Využití GPU sestava pomáhá při spuštění událostí grafiky na procesoru, až dorazí do GPU a jak dlouho trvalo grafický procesor s cílem provést. Tyto informace můžete identifikovat kritická místa a příležitosti pro vyšší paralelismus v kódu.  
 
@@ -104,7 +101,7 @@ Od verze Visual Studio 2017, tato data můžete otevřít pomocí [GPUView](/win
 |**Přístup z více vláken**|ID podprocesu, které vás zajímají. Vícevláknové aplikace to vám může pomoci identifikovat konkrétní vláken, které patří do procesu, který vás zajímá. Události spojené s vybranou posloupnost jsou vyznačené na každý časové osy.|  
 |**Zobrazení**|Počet zobrazení se zobrazí jejichž obnovovací frekvence **Poznámka:** některé ovladače lze nakonfigurovat, aby k dispozici více fyzických zobrazí jako jeden, velké virtuální zobrazení. Jedním zobrazení v seznamu uvedena, může se zobrazit i v případě, že tento počítač má několik zobrazí připojen.|  
 |**Filtr**|Klíčová slova, která vás zajímá. Události v dolní části sestavy bude obsahovat pouze ty, které odpovídají – klíčové slovo v celé nebo částečně. Více klíčových slov můžete určit jejich oddělením středníkem (;).|  
-|**Hierarchy Sort**|Zaškrtávací políčko, která určuje, zda jsou události hierarchií – definovat přes uživatele značek – zachovaná nebo ignorovat.|  
+|**Řazení hierarchie**|Zaškrtávací políčko, která určuje, zda jsou události hierarchií – definovat přes uživatele značek – zachovaná nebo ignorovat.|  
   
  Seznam událostí v dolní části sestavy využití GPU zobrazí podrobnosti o jednotlivých událostí.  
   
@@ -138,7 +135,7 @@ Od verze Visual Studio 2017, tato data můžete otevřít pomocí [GPUView](/win
   
  Při shromažďování informací a profilování odložení pomocí tohoto nastavení, k dispozici v dolní části okna nástroje využití GPU dodatečný odkaz, po spuštění aplikace v rámci nástroje využití GPU. Pokud chcete spustit shromažďování analytické informace, vyberte **spustit** odkaz v **spuštění shromažďování další podrobné údaje o využití GPU** zprávy.  
   
-##  <a name="hwsupport"></a>Podpora hardwaru a ovladače  
+##  <a name="hwsupport"></a> Podpora hardwaru a ovladače  
  Jsou podporovány následující hardwarové GPU a ovladače:  
   
 |Dodavatele|Popis GPU|Požadovaná verze ovladače|  

@@ -1,12 +1,10 @@
 ---
-title: "Postupy: Přidání ovládacích prvků do zobrazení Backstage | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Přidání ovládacích prvků do zobrazení Backstage | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -22,13 +20,14 @@ helpviewer_keywords:
 - Microsoft Office Menu
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 7a58b9b59dd3625b3b9b7d8e9e3e77964eb0f2a5
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1cdda3960363ba87e9434cd14077c7182a9f56c4
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Postupy: Přidání ovládacích prvků do zobrazení Backstage
   Návrhář pásu karet můžete použít k přidávání ovládacích prvků do nabídky, které se otevře po kliknutí na tlačítko **soubor** kartě při spuštění aplikace, ovládací prvky, které přidáte do **soubor** zobrazí karta skupinu s názvem  **Doplňky**.  
@@ -51,17 +50,17 @@ ms.lasthandoff: 01/10/2018
   
     -   Tlačítko  
   
-    -   CheckBox  
+    -   Zaškrtávací políčko  
   
     -   Galerie  
   
-    -   Nabídka  
+    -   Nabídky  
   
     -   Oddělovač  
   
     -   Tlačítko rozdělení  
   
-    -   ToggleButton  
+    -   Přepínací tlačítko  
   
 4.  Přetáhněte ovládací prvky přesunout do nového umístění v nabídce.  
   
@@ -70,6 +69,6 @@ ms.lasthandoff: 01/10/2018
  [Návrhář pásu karet](../vsto/ribbon-designer.md)   
  [Kódu XML pásu karet](../vsto/ribbon-xml.md)   
  [Postupy: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Návod: Vytvoření vlastní karty pomocí návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
+ [Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

@@ -1,12 +1,10 @@
 ---
-title: "Vlastní akce v aplikaci Outlook formuláři oblasti | Microsoft Docs"
-ms.custom: 
+title: Vlastní akce v aplikaci Outlook formuláři oblasti | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -15,13 +13,14 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 66a4d81728d438a749b46e42b003c02d08f13d67
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 1e81528aa5008b7d6f78f560d0bc0139a1e0799a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Vlastní akce v oblastech formulářů aplikace Outlook
   Akce zobrazení tlačítek, které umožní uživatelům reagovat na položku Microsoft Office Outlook. Například reagovat na položku e-mailu, uživatelé kliknout **odpověď**, **Odpovědět všem**, nebo **dál** tlačítka akce. Všechny tyto akce vytvoří novou položku e-mailu a naplní položky pole pomocí informací z původní položky.  
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/10/2018
 |--------------|-----------------|  
 |**AddressLike**|Určuje, jak bude řešit cílového formuláře.|  
 |**Text**|Určuje, jak je text původní položce připojí k cílového formuláře.|  
-|**Povoleno**|Určuje, zda je povoleno vlastní akci. Pokud je tato vlastnost nastavena na **false**, vlastní akce je zakázána.|  
+|**povoleno**|Určuje, zda je povoleno vlastní akci. Pokud je tato vlastnost nastavena na **false**, vlastní akce je zakázána.|  
 |**– Metoda**|Určuje typ odpovědi, které jsou k dispozici při provedení vlastní akce. Vlastní akce můžete odeslat formulář, otevřete formulář nebo výzvy, zda budou chtít poslat nebo otevřít formulář.|  
 |**Jméno**|Určuje vnitřní název, který můžete použít, chcete-li tato vlastní akce v kódu.|  
 |**ShowOnRibbon**|Určuje, jestli se má zobrazit na pásu karet původní položky vlastní akci.|  

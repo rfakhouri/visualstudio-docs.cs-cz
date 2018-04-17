@@ -1,26 +1,24 @@
 ---
-title: "Zobrazení stromu volání – Data vzorkování | Microsoft Docs"
-ms.custom: 
+title: Zobrazení stromu volání – Data vzorkování | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method,Call Tree view
 - Call Tree view
 ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 3759133ef7a2be2a7c4c7d04d1b2d444269b7005
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 59c3743784de3354d793dd382fd6a5402f911b59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view---sampling-data"></a>Zobrazení stromu volání – Data vzorkování
 Zobrazení stromu volání zobrazuje cesty provádění funkce, které byly provázán v PROFILOVANÉHO aplikaci.  
@@ -50,7 +48,7 @@ Zobrazení stromu volání zobrazuje cesty provádění funkce, které byly prov
 |**Název funkce**|Plně kvalifikovaný název funkce.|  
 |**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
 |**Adresa funkce**|Adresa funkce.|  
-|**Úroveň**|Hloubka této funkce ve stromové struktuře volání. Pouze v [vsperfreport –](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
+|**úroveň**|Hloubka této funkce ve stromové struktuře volání. Pouze v [vsperfreport –](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
 |**Výhradní ukázky**|Počet vzorků, které byly shromážděny v této funkci, pokud byla volána funkce nadřazené ve stromové struktuře volání. Toto číslo nezahrnuje vzorků, které byly shromážděny v funkce, které byly volá funkci.|  
 |**% Výhradní ukázky**|Procento všechny vzorky v profilaci spuštění, které byly výhradní ukázky této funkce, pokud byla volána funkce nadřazené ve stromové struktuře volání.|  
 |**Ukázky (včetně).**|Počet vzorků, které byly shromážděny v této funkci, pokud byla volána funkce nadřazené ve stromové struktuře volání. Toto číslo zahrnuje vzorků, které byly shromážděny v funkce, které byly volá funkci.|  

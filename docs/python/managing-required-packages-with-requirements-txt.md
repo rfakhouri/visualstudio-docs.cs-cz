@@ -1,26 +1,23 @@
 ---
-title: Použití souboru requirements.txt ke správě požadavků balíčku | Microsoft Docs
+title: Použití souboru requirements.txt ke správě požadavků balíčku
 description: Soubor requirements.txt můžete použít ke správě závislosti projektu. Pokud se zobrazí projekt, který obsahuje soubor requirements.txt, můžete snadno nainstalovat těchto závislostí v jednom kroku.
 ms.custom: ''
 ms.date: 02/20/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - devlang-python
 ms.devlang: python
-ms.tgt_pltfrm: ''
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b9d1a35d8ba34561c56ca14261591c7b80bacdb0
-ms.sourcegitcommit: 29ef88fc7d1511f05e32e9c6e7433e184514330d
+ms.openlocfilehash: dfc5525bdb59e54ded2eddfd622b29d455719b77
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="managing-required-packages-with-requirementstxt"></a>Správa požadované balíčky s requirements.txt
 

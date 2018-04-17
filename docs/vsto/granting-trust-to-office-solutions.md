@@ -1,12 +1,10 @@
 ---
-title: "Udělení důvěry pro řešení pro Office | Microsoft Docs"
-ms.custom: 
+title: Udělení důvěry pro řešení pro Office | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 41ecf50a7306025913f228500036d133918dd31b
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 4d3e89f9d864e80c3f3343b0d352105365e95e82
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="granting-trust-to-office-solutions"></a>Udělení důvěry řešením pro systém Office
   Udělení vztah důvěryhodnosti řešení pro systém Office znamená, úprava zásady zabezpečení o každém cílovém počítači tak, aby důvěřoval sestavení řešení, manifest aplikace, manifest nasazení a dokumentu. Vztah důvěryhodnosti lze udělit řešení Office vy nebo koncový uživatel.  
@@ -34,7 +33,7 @@ ms.lasthandoff: 01/10/2018
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-##  <a name="Signing"></a>Manifesty důvěřující řešení pomocí podepisování aplikace a nasazení  
+##  <a name="Signing"></a> Manifesty důvěřující řešení pomocí podepisování aplikace a nasazení  
  Všechny aplikace a nasazení manifesty pro Office řešení musí být podepsané certifikátem, který identifikuje vydavatele. Certifikáty poskytují základ pro rozhodování o vztahu důvěryhodnosti.  
   
  Dočasné certifikát je vytvořená a udělit vztah důvěryhodnosti v okamžiku sestavení tak, aby řešení spuštěno při ladění ho. Pokud publikujete řešení, který je podepsaný certifikátem dočasné, koncový uživatel se vyzve k rozhodnutí o vztahu důvěryhodnosti.  
@@ -43,8 +42,8 @@ ms.lasthandoff: 01/10/2018
   
  Pokud vývojář podepisuje řešení s certifikátem dočasné, může správce znovu podepsat pomocí generování manifestu a úpravy nástroj (mage.exe), který je jedním z nástrojů rozhraní Microsoft .NET Framework přizpůsobení s certifikátem známé a důvěryhodné. Další informace o podepisování řešení najdete v tématu [postupy: řešení pro systém Office přihlašování](../vsto/how-to-sign-office-solutions.md) a [postupy: přihlášení aplikace a manifesty nasazení](/visualstudio/ide/how-to-sign-application-and-deployment-manifests).  
   
-##  <a name="TrustPrompt"></a>Důvěřující řešení pomocí vztahu důvěryhodnosti ClickOnce  
- [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]vyzve k zadání koncového uživatele, aby rozhodnutí o vztahu důvěryhodnosti, pokud nejsou žádné zásady celé organizace, která důvěřuje certifikátu na řešení. Pokud koncový uživatel uděluje vztah důvěryhodnosti k řešení, se vytvoří položku seznamu povolených, který obsahuje adresu URL a veřejný klíč slouží k uložení tohoto vztahu důvěryhodnosti rozhodnutí. Když důvěryhodné přizpůsobení se spustí později, koncový uživatel se znovu zobrazí výzva.  
+##  <a name="TrustPrompt"></a> Důvěřující řešení pomocí vztahu důvěryhodnosti ClickOnce  
+ [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] vyzve k zadání koncového uživatele, aby rozhodnutí o vztahu důvěryhodnosti, pokud nejsou žádné zásady celé organizace, která důvěřuje certifikátu na řešení. Pokud koncový uživatel uděluje vztah důvěryhodnosti k řešení, se vytvoří položku seznamu povolených, který obsahuje adresu URL a veřejný klíč slouží k uložení tohoto vztahu důvěryhodnosti rozhodnutí. Když důvěryhodné přizpůsobení se spustí později, koncový uživatel se znovu zobrazí výzva.  
   
  Správci mohou zakázat [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] důvěryhodný dotaz nebo vyžadovat, aby řádku vzniknout jen pro řešení, které jsou podepsané certifikátem Authenticode. Další informace o tom, jak změnit toto nastavení pro tento počítač, LocalIntranet, Internet, TrustedSites a UntrustedSites zóny najdete v tématu [postupy: Konfigurace výzva chování vztahu důvěryhodnosti ClickOnce](/visualstudio/deployment/how-to-configure-the-clickonce-trust-prompt-behavior).  
   

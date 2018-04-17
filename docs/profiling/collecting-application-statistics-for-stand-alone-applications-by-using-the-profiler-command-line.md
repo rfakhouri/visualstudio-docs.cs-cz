@@ -1,26 +1,24 @@
 ---
-title: "Shromažďování statistik aplikace pro samostatné aplikace pomocí příkazového řádku profileru | Microsoft Docs"
-ms.custom: 
+title: Shromažďování statistik aplikace pro samostatné aplikace pomocí příkazového řádku profileru | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - sampling profiling method
 - profilng tools,sampling method
 ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: ce2cc34174131d1a8799d66381da0595d7ac4507
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 941e5abb669d121426ad0197fb75924109918971
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="collecting-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Shromažďování statistik aplikace pro samostatné aplikace pomocí příkazového řádku profileru
 Tato část popisuje postupy a možnosti pro shromažďování statistik výkonu pro klientskou aplikaci (samostatná) pomocí metody vzorkování z příkazového řádku.  

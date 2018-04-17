@@ -1,12 +1,10 @@
 ---
-title: "Postupy: Přidání vlastnosti do projektů služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Přidání vlastnosti do projektů služby SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a4318550e74d5324195de173659d96abaf952979
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: fe3b94d7f2072565b2adc2ab7c3c9825ca21ad57
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Postupy: Přidání vlastnosti do projektů služby SharePoint
   Přidání vlastnosti do jakéhokoli projektu služby SharePoint můžete použít rozšíření projektu. Vlastnost se zobrazí v **vlastnosti** okno, pokud je vybrána projektu v **Průzkumníku řešení**.  
@@ -48,9 +47,9 @@ ms.lasthandoff: 01/10/2018
   
  K zachování změn hodnot vlastností **nastavit** přistupující objekty pro vlastnosti, použijte následující rozhraní API:  
   
--   `CustomUserFileProperty`používá <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> vlastnost, která má v souboru projektu uživatele možnost uložte jeho hodnotu.  
+-   `CustomUserFileProperty` používá <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> vlastnost, která má v souboru projektu uživatele možnost uložte jeho hodnotu.  
   
--   `CustomProjectFileProperty`používá <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metoda uložení jeho hodnoty do souboru projektu.  
+-   `CustomProjectFileProperty` používá <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> metoda uložení jeho hodnoty do souboru projektu.  
   
  Další informace o zachování data v těchto souborech najdete v tématu [ukládání dat do rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   

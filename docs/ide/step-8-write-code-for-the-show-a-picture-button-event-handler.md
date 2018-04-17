@@ -1,23 +1,21 @@
 ---
-title: "Krok 8: Zapište kód pro zobrazení obslužné rutiny události obrázek tlačítka | Microsoft Docs"
-ms.custom: 
+title: 'Krok 8: Zapište kód pro zobrazení obslužné rutiny události obrázek tlačítka | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-acquisition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-acquisition
+ms.topic: conceptual
 ms.assetid: 07f4ec00-cda4-42f4-98bb-37edc7167de7
-caps.latest.revision: "24"
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b7c76492e3d07b0c32edb4ea91a5b3c152f1a206
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d72997e827db9842761aadbb70a7e464995d2d74
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Krok 8: Zapište kód pro obslužnou rutinu události zobrazení tlačítka s obrázkem
 V tomto kroku provedete **zobrazit obrázek** tlačítko funkční následujícím způsobem:  
@@ -28,7 +26,7 @@ V tomto kroku provedete **zobrazit obrázek** tlačítko funkční následujíc�
   
  Prostředí IDE má výkonný nástroj zvaný technologie IntelliSense, které vám pomůže psát kód. Při zadávání kódu rozhraní IDE otevře pole s navrhovaným dokončením pro částečné slova, která zadáte. Pokusí se zjistit, co chcete udělat dále a automaticky přejde na poslední položku, kterou vyberete ze seznamu. Můžete použít nahoru nebo dolů šipky přesunout v seznamu, nebo můžete pokračovat v psaní písmena tím zúžíte počet voleb. Pokud se zobrazí možnost, kterou chcete, vyberte klávesy TAB vyberte. Nebo můžete návrhy ignorovat, pokud nejsou potřebné.  
   
- ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) nebo [kurzu 1: vytvoření prohlížeče obrázků v C# - Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
+ ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [kurzu 1: vytvoření prohlížeče obrázků v jazyce Visual Basic – Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) nebo [kurzu 1: vytvoření prohlížeče obrázků v jazyce C# – Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio.  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>Psaní kódu pro zobrazení obslužné rutiny události obrázku tlačítka  
   
@@ -36,12 +34,12 @@ V tomto kroku provedete **zobrazit obrázek** tlačítko funkční následujíc�
   
 2.  Typ `i` na prázdný řádek mezi těmito dvěma složené závorky {}. (V jazyku Visual Basic, zadejte na prázdný řádek mezi Private Sub... a End Sub.) **IntelliSense** otevře okno, jak je znázorněno na následujícím obrázku.  
   
-     ![IntelliSense s Visual C &#35; kód](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
+     ![IntelliSense s Visual C&#35; kód](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
 IntelliSense s kódem jazyka Visual C#  
   
 3.  **IntelliSense** okno by mělo zvýrazňovat slova **Pokud**. (Pokud není, zadejte jedno malé písmeno `f`, a budou.) Všimněte si, jak malým *popisek* vedle pole **IntelliSense** s popisem, zobrazí se okno **fragment kódu pro Pokud příkaz**. (V jazyce Visual Basic popisek také uvádí, že to je fragment, ale poněkud liší mělo.) Chcete použít tento fragment, takže zvolte klávesy TAB můžete vložit **Pokud** do vašeho kódu. Zvolte Tabulátor znovu pro použití **Pokud** fragment kódu. (Pokud jste zvolili jinde a **IntelliSense** okno smazán, smažte vše přes **i** a ještě jednou a **IntelliSense** znovu otevře se okno.)  
   
-     ![Visual C &#35; kód](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
+     ![Visual C&#35; kód](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
 Visual C# – kód  
   
 4.  Pak zadejte další kód otevřete pomocí IntelliSense **otevřít soubor** dialogové okno. Pokud se uživatel rozhodl **OK** tlačítko PictureBox načte soubor, který uživatel vybral. Následující kroky ukazují, jak zadejte kód a i když je to mnoho kroků, je několika stisknutí kláves:  

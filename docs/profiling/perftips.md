@@ -1,23 +1,21 @@
 ---
 title: PerfTips | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
-caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cfcb4fdf488233a2be7ea55b57d041641f2ea882
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 301132b08e9d7cd6e1bedb12d8e92940e2615408
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="perftips"></a>PerfTips
 Ladicí program Visual Studio *PerfTips* a integrovaná s ladicím programem **diagnostické nástroje** umožňují monitorovat a analyzovat výkon aplikace při ladění.  
@@ -34,7 +32,7 @@ Ladicí program Visual Studio *PerfTips* a integrovaná s ladicím programem **d
   
  Následující obrázek ukazuje okno diagnostické nástroje ve Visual Studiu 2015 Update 1:  
   
- ![DiagnosticTools & č. 45; Aktualizaci1](../profiling/media/diagnostictools-update1.png "DiagnosticTools aktualizaci1")  
+ ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 -   **Rozdělit události** časová osa označit zarážky, které byly dosáhl v relaci ladění. Klikněte na událost, vyberte **ladicí program** podrobnosti seznamu.  
   

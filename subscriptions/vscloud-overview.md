@@ -1,19 +1,19 @@
 ---
 title: Jak koupit Cloudová předplatná Visual Studio Enterprise a Visual Studio Professional
-Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
-Ms.date: 3/2/2018
-Ms.topic: Get-Started-Article
-Description: Rent Visual Studio Professional or Visual Studio Enterprise on a month-to-month or annual basis, with no long-term contract.
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
-Searchscope: VS Subscription
-ms.openlocfilehash: 32b85d7d28dccf8a862848e692974561068186a9
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+author: evanwindom
+ms.author: jaunger
+manager: evelynp
+ms.date: 03/02/2018
+ms.topic: Get-Started-Article
+description: Pronajímat Visual Studio Professional nebo Visual Studio Enterprise na základě-měsíc nebo roční s žádné dlouhodobé kontrakt.
+ms.prod: vs-subscription
+ms.technology: vs-subscriptions
+searchscope: VS Subscription
+ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Kupte si Visual Studio Professional a Visual Studio Enterprise Cloudová předplatná
 
@@ -70,9 +70,9 @@ Nebudou se obnovit na začátku další fakturační období (první do následu
 ## <a name="buy-cloud-subscriptions-now"></a>Koupit Cloudová předplatná
 
 * [Visual Studio Professional každý měsíc](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-* [Visual Studio Professional annual](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
+* [Visual Studio Professional roční](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
 * [Visual Studio Enterprise každý měsíc](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
-* [Visual Studio Enterprise annual](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
+* [Visual Studio Enterprise roční](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
 
 ## <a name="related-resources"></a>Související informační zdroje
 

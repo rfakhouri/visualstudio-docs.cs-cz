@@ -1,23 +1,21 @@
 ---
-title: "Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: aspnet
-ms.openlocfilehash: 0c827df346b6521303d5d42c3423b513ed497086
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- aspnet
+ms.openlocfilehash: 427a0d0de82ba5957422fdd9b2db6067ece2f4f8
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET
 Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] metody instrumentace nástrojích pro profilaci ke shromažďování podrobných dat časování, data přidělení paměti .NET a životnosti objektů .NET z dynamicky kompilovat [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace.  
@@ -51,7 +49,7 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
-    |**Atribut xmlns**|**název urn: schémata-microsoft-com:asm.v1**|  
+    |**atribut xmlns**|**název urn: schémata-microsoft-com:asm.v1**|  
   
 4.  Přidat **dependentAssembly** prvku jako podřízeného prvku **assemblybinding –** elementu.  
   
@@ -65,7 +63,7 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
     |--------------------|---------------------|  
     |**Jméno**|**Microsoft.VisualStudio.Enterprise.ASPNetHelper**|  
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
-    |**jazyková verze**|**Neutrální**|  
+    |**Jazyková verze**|**Neutrální**|  
   
 7.  Přidat **základu kódu** jako podřízený element **dependentAssembly** elementu.  
   
@@ -73,10 +71,10 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
-    |**verze**|**10.0.0.0**|  
+    |**Verze**|**10.0.0.0**|  
     |**href**|`PathToASPNetHelperDll`|  
   
-     `PathToASPNetHelperDll`je adresa URL souboru Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována ve výchozím umístění, **href** hodnota by měla být`C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`  
+     `PathToASPNetHelperDll` je adresa URL souboru Microsoft.VisualStudio.Enterprise.ASPNetHelper.dll. Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována ve výchozím umístění, **href** hodnota by měla být `C:/Program%20Files/Microsoft%20Visual%20Studio%202010.0/Common7/IDE/PrivateAssemblies/Microsoft.VisualStudio.Enterprise.ASPNetHelper.DLL`  
   
 ```  
     <configuration>  
@@ -141,8 +139,8 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
-    |**klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
-    |**value**|`PerformanceToolsFolder`**\VSInstr.Exe**|  
+    |**Klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
+    |**value**|`PerformanceToolsFolder` **\VSInstr.exe**|  
   
 4.  Přidejte další **přidat** jako podřízený element **appSettings** elementu.  
   
@@ -150,10 +148,10 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
   
     |Název atributu|Hodnota atributu|  
     |--------------------|---------------------|  
-    |**klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
+    |**Klíč**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|  
     |**value**|`PerformanceToolsFolder`|  
   
-     `PerformanceToolsFolder`je cesta profileru spustitelné soubory. Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována ve výchozím umístění, bude hodnota **10.0\Team C:\Program Files\Microsoft Visual Studio Tools nástroje**  
+     `PerformanceToolsFolder` je cesta profileru spustitelné soubory. Pokud [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je nainstalována ve výchozím umístění, bude hodnota **10.0\Team C:\Program Files\Microsoft Visual Studio Tools nástroje**  
   
 ```  
     <configuration>  
@@ -223,5 +221,5 @@ Můžete použít [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] meto
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: instrumentace dynamicky kompilované aplikace ASP.NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Postupy: instrumentace dynamicky kompilované aplikace ASP.NET a shromažďování dat paměti](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)
+ [Postupy: instrumentace dynamicky kompilované aplikace ASP.NET a shromažďování podrobných dat časování](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler.md)   
+ [Postupy: instrumentace dynamicky kompilované aplikace ASP.NET a shromažďování dat paměti](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

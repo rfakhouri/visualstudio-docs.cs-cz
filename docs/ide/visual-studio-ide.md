@@ -1,25 +1,23 @@
 ---
-title: "Přehled Visual Studio 2017 | Microsoft Docs"
-ms.custom: 
+title: Přehled Visual Studio 2017 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/05/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-general
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
 - MSDNSTART
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd54f6f26a76f750454db06c16c3b04c08a873eb
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+ms.openlocfilehash: 6525b9d0bd0d5b394f09f0acd01b40a73bfc3bf2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Přehled Visual Studio IDE
 
@@ -249,7 +247,7 @@ Můžete zobrazit a spravovat prostředky na základě Azure cloud v sadě Visua
 
 **Průzkumník objektů systému SQL Server** v sadě Visual Studio poskytuje zobrazení objektů databáze podobně jako SQL Server Management Studio. Průzkumník objektů systému SQL Server můžete pro účely správy a návrh lehká databáze, včetně úpravy dat v tabulce, porovnání schémat, provádění dotazů pomocí kontextové nabídky přímo z Průzkumníka objektů systému SQL Server a další.
 
-![SQL Server Object Explorer](../ide/media/vs2015_sqlobjectexplorer.png)
+![Průzkumník objektů systému SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="extend-visual-studio"></a>Rozšíření sady Visual Studio
 

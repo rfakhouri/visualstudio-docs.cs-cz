@@ -1,5 +1,5 @@
 ---
-title: "Návrhář aktivity FlowDecision | Microsoft Docs"
+title: Návrhář aktivity FlowDecision | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b533bf037340fab0c70dfc5ca9e40c4443c9867
-ms.sourcegitcommit: 37c87118f6f41e832da96f21f6b4cc0cf8fee046
+ms.openlocfilehash: fccddd294b11b6d7c4eee7f48fa00b77b1148717
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="flowdecision-activity-designer"></a>Návrhář aktivity FlowDecision
 <xref:System.Activities.Statements.FlowDecision> Uzel je podmíněného uzel, který poskytuje větev pro tok řízení do jedné ze dvou alternativy založené na tom, jestli splňuje zadanou podmínku. Pokud toku vyžaduje více než dvě větve, použijte <xref:System.Activities.Statements.FlowSwitch%601> místo.
@@ -36,7 +36,7 @@ ms.lasthandoff: 03/12/2018
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|Podmínku, která určuje, které cesty přebírá řízení toku.|
+|<xref:System.Activities.Statements.FlowDecision.Condition%2A>|Hodnota TRUE|Podmínku, která určuje, které cesty přebírá řízení toku.|
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Cesta provedenou řízení toku, pokud <xref:System.Activities.Statements.FlowDecision.Condition%2A> je splněna.|
 |<xref:System.Activities.Statements.FlowDecision.False%2A>|False|Cesta provedenou řízení toku, pokud <xref:System.Activities.Statements.FlowDecision.Condition%2A> není splněna.|
 
@@ -44,4 +44,4 @@ ms.lasthandoff: 03/12/2018
 
 - [Vývojový diagram](../workflow-designer/flowchart-activity-designers.md)
 - [Vývojový diagram](../workflow-designer/flowchart-activity-designer.md)
-- [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)
+- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)

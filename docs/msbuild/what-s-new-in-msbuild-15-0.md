@@ -1,23 +1,20 @@
 ---
-title: "Jaký & č. 39; s nového v nástroji MSBuild 15 | Microsoft Docs"
-ms.custom: 
+title: Co&#39;s nového v nástroji MSBuild 15 | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ee5566181a96ef36e8ce8f1545a22964301198
-ms.sourcegitcommit: f219ef323b8e1c9b61f2bfd4d3fad7e3d5fb3561
+ms.openlocfilehash: 14a92dda7b9fe85f70fb6307410de91735cb9e43
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-msbuild-15"></a>Co je nového v nástroji MSBuild 15
 MSBuild je nyní k dispozici jako součást [.NET Core SDK](https://www.microsoft.com/net/download/core) a mohou vytvářet projekty .NET Core v systému Windows, systému macOS a Linux.  

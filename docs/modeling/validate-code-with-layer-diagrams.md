@@ -1,10 +1,8 @@
 ---
-title: "Ověřování kódu pomocí diagramů závislostí | Microsoft Docs"
-ms.custom: 
+title: Ověřování kódu pomocí diagramů závislostí | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, validating
 - validation, dependency diagrams
@@ -19,15 +17,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 484afcd70717162719e9eaf8ace294cb1f71cbcd
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: cd799e5114c64b075592ddbe35670907fc81fa9c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Ověřování kódu pomocí diagramů závislostí
 
@@ -92,21 +90,21 @@ V této verzi sady Visual Studio dojde k ověření závislostí v reálném ča
 
 * Přidání nové aktivační události závislosti projektu ověření projektu aktualizace. 
   
-##  <a name="SupportsValidation"></a>Pokud položku podporuje ověřování  
+##  <a name="SupportsValidation"></a> Pokud položku podporuje ověřování  
  Můžete propojit vrstvy weby, dokumentů Office, souborů ve formátu prostého textu a soubory v projektech, které jsou sdíleny mezi více aplikacemi, ale nesmí je zahrnovat proces ověření. Chyby ověřování se neobjeví pro odkazy na projekty nebo sestavení, které jsou připojeny k samostatným vrstvám a v případě, že se mezi těmito vrstvami neobjeví závislosti. Tyto odkazy jsou považovány za závislosti jen tehdy, pokud kód tyto odkazy používá.  
   
 1.  Diagram závislost, vyberte jednu nebo více vrstev, klikněte pravým tlačítkem na výběr a potom klikněte na **zobrazení odkazy**.  
   
 2.  V **vrstvy Explorer**, podívejte se na **podporuje ověřování** sloupce. Pokud je hodnota false, položka ověřování nepodporuje.  
   
-##  <a name="IncludeReferences"></a>Zahrnout další sestavení .NET a projektů pro ověření  
+##  <a name="IncludeReferences"></a> Zahrnout další sestavení .NET a projektů pro ověření  
  Při přetahování položek na diagram závislostí, odkazy na odpovídající sestavení .NET nebo projekty jsou automaticky přidáni do portálu **vrstvu odkazů** složky v projektu modelování. Tato složka obsahuje odkazy na sestavení a projekty, které jsou analyzovány během ověřování. Bez ručně je přetáhnete diagram závislostí můžete zahrnout další sestavení .NET a projektů pro ověření.  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt modelování nebo **vrstvu odkazů** složku a pak klikněte na tlačítko **přidat odkaz na**.  
   
 2.  V **přidat odkaz na** dialogové okno, vyberte sestavení nebo projekty a pak klikněte na tlačítko **OK**.  
   
-##  <a name="ValidateManually"></a>Ověření kódu ručně  
+##  <a name="ValidateManually"></a> Ověření kódu ručně  
  Pokud máte diagramu otevřete závislostí, propojené položky řešení, můžete spustit **ověřením** příkaz místní z diagramu. Do příkazového řádku můžete také použít ke spuštění **msbuild** s **/p:ValidateArchitecture** vlastní vlastnost nastavena na **True**. Například lze při provádění změn v kódu provádět pravidelně ověřování vrstvy, takže bude možné zachytit konflikty závislostí včas.  
   
 #### <a name="to-validate-code-from-an-open-dependency-diagram"></a>Ověření kódu z diagramu otevřete závislostí   
@@ -163,7 +161,7 @@ V této verzi sady Visual Studio dojde k ověření závislostí v reálném ča
   
  Další informace o chybách ověření najdete v tématu [Rady pro pochopení a řešení chyb při ověřování vrstvy](#UnderstandingValidationErrors).  
   
-###  <a name="ManageErrors"></a>Správa chyb při ověřování  
+###  <a name="ManageErrors"></a> Správa chyb při ověřování  
  Během procesu vývoje můžete chtít potlačit některé vykázané konflikty během ověřování. Například můžete chtít potlačit chyby, které již řešíte nebo které nejsou relevantní k danému scénáři. Pokud potlačíte chybu, je dobrým zvykem přihlásit pracovní položku [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].  
   
 > [!WARNING]
@@ -182,7 +180,7 @@ V této verzi sady Visual Studio dojde k ověření závislostí v reálném ča
 |Obnovit všechny Potlačená chyby v **seznam chyb** okna|Klikněte pravým tlačítkem na libovolné místo v **seznam chyb** okno, přejděte na příkaz **spravovat chyby ověření**a potom klikněte na **zobrazit všechny chyby potlačit**.|  
 |Skrýt všechny Potlačená chyby z **seznam chyb** okna|Klikněte pravým tlačítkem na libovolné místo v **seznam chyb** okno, přejděte na příkaz **spravovat chyby ověření**a potom klikněte na **skrýt všechny chyby potlačit**.|  
   
-##  <a name="ValidateAuto"></a>Ověření kódu automaticky  
+##  <a name="ValidateAuto"></a> Ověření kódu automaticky  
  Ověřování vrstev lze provádět při každém spuštění místního sestavení. Pokud váš tým používá proces Team Foundation Build, můžete provést ověření vrstev s ověřenými vráceními se změnami, které lze určit vytvořením vlastní úlohy MSBuild, a použít sestavy sestavení pro sběr chyb ověřování. Vytvoření sestavení ověřovaného vrácení se změnami, naleznete v části [ověřit změny pomocí procesu ověřované vrácení se změnami sestavení](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).  
   
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>Automatické ověřování kódu během místního sestavení  
@@ -193,7 +191,7 @@ V této verzi sady Visual Studio dojde k ověření závislostí v reálném ča
 <ValidateArchitecture>true</ValidateArchitecture>  
 ```  
   
- \-nebo –  
+ \- nebo –  
   
 1.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt modelování, který obsahuje diagram závislostí nebo diagramy a pak klikněte na tlačítko **vlastnosti**.  
   
@@ -229,14 +227,14 @@ V této verzi sady Visual Studio dojde k ověření závislostí v reálném ča
   
 -   [Monitorování průběhu spuštění sestavení](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)  
   
-##  <a name="TroubleshootingValidation"></a>Řešení potíží s problémy ověření vrstvy  
+##  <a name="TroubleshootingValidation"></a> Řešení potíží s problémy ověření vrstvy  
  Následující tabulka popisuje problémy s ověřením vrstvy a jejich řešení. Tyto problémy se liší od chyb, které vzniknou z konfliktů mezi kódem a návrhem. Další informace o těchto chybách naleznete v části [Rady pro pochopení a řešení chyb při ověřování vrstvy](#UnderstandingValidationErrors).  
   
 |**Problém**|**Možná příčina**|**Řešení**|  
 |---------------|------------------------|--------------------|  
 |Chyby ověřování se nezobrazí podle očekávání.|Ověření v diagramech závislostí, který jste zkopírovali z jiných diagramů závislostí v Průzkumníku řešení a které jsou ve stejném projektu modelování nefunguje. diagramy závislosti, které jste zkopírovali tímto způsobem obsahovat stejné odkazy jako původní diagram závislostí.|Přidání nového diagramu závislost na projekt modelování.<br /><br /> Zkopírujte elementy z diagram závislostí zdroje k novému diagramu.|  
   
-##  <a name="UnderstandingValidationErrors"></a>Pochopení a řešení chyb při ověřování vrstvy  
+##  <a name="UnderstandingValidationErrors"></a> Pochopení a řešení chyb při ověřování vrstvy  
  Když ověřujete kód proti diagram závislostí, dochází k chybám ověření, když kód je v konfliktu s návrhu. Chyby ověřování mohou způsobit například následující podmínky:  
   
 -   Artefakt je přiřazen nesprávné vrstvě. V tomto případě přesuňte artefakt.  

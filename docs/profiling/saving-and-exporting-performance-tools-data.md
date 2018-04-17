@@ -1,32 +1,28 @@
 ---
-title: "Ukládání a export výkonu nástrojů pro Data | Microsoft Docs"
-ms.custom: 
+title: Ukládání a export výkonu nástrojů pro Data | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, saving and exporting reports
 ms.assetid: 2e9b28fe-3ed2-4e1d-b9cb-0a5e384380b0
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37306636da74637cb950ca1502b94a750a51ccba
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: da2f15eee4e5fab64e0847f8e6d964c03b954833
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Ukládání a export výkonu nástrojů pro Data
 Toto téma popisuje, jak uložit a exportovat soubory dat výkonu.  
   
-##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a>Postupy: Uložit jako soubory analyzovaných sestav výkonu datových souborů  
+##  <a name="BKMK_Save_Profiler_Data_Files_As_Analyzed_Report_Files"></a> Postupy: Uložit jako soubory analyzovaných sestav výkonu datových souborů  
  Můžete uložit filtrované nebo nefiltrované zobrazení profilace soubory dat (.vsp) jako soubory analyzovaných sestav (.vsps). Soubor analyzovaných sestavy můžete zobrazit v okně zobrazení sestavy a je výrazně menší než původní soubor .vsp. Nelze však použít filtr na data .vsps souboru. Můžete vytvořit soubor analyzovaných sestavy z Průzkumníka výkonu bez otevření souboru v integrované vývojové prostředí (IDE), nebo můžete otevřít a filtrovat .vsp soubor a potom uložte výsledky.  
   
 #### <a name="to-save-an-analyzed-performance-report-from-the-performance-explorer"></a>Uložení zprávu o analyzovaných výkonu z prohlížeč výkonu  
@@ -71,7 +67,7 @@ Toto téma popisuje, jak uložit a exportovat soubory dat výkonu.
   
 6.  Klikněte na tlačítko **exportovat**.  
   
-     Každé zobrazení sestavy je uloženo do samostatného souboru, který je pojmenován \<předpony > _\<název zobrazení sestavy >.\< CSV &#124; xml >  
+     Každé zobrazení sestavy je uloženo do samostatného souboru, který je pojmenován \<předpony > _\<název zobrazení sestavy >.\< CSV&#124;xml >  
   
 #### <a name="to-export-performance-reports-from-the-report-view-window"></a>Export sestavy pro zvýšení výkonu v okně zobrazení sestavy  
   
@@ -91,7 +87,7 @@ Toto téma popisuje, jak uložit a exportovat soubory dat výkonu.
   
 8.  Klikněte na tlačítko **exportovat**.  
   
-     Každé zobrazení sestavy je uloženo do samostatného souboru, který je pojmenován \<předpony > _\<název zobrazení sestavy >.\< CSV &#124; xml >  
+     Každé zobrazení sestavy je uloženo do samostatného souboru, který je pojmenován \<předpony > _\<název zobrazení sestavy >.\< CSV&#124;xml >  
   
 ## <a name="see-also"></a>Viz také  
  [Prohlížeč výkonu](../profiling/performance-explorer.md)   

@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1 | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1 | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: dae92a4c20130425fa93a413856f3d2cb5a37387
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
   Systému projektu služby SharePoint v sadě Visual Studio můžete rozšířit vytvořením vlastní projektu typu položky. V tomto návodu vytvoříte položky projektu, který lze přidat do projektu služby SharePoint k vytvoření vlastní akce na web služby SharePoint. Vlastní akce přidá položku nabídky **Akce webu** nabídky Web služby SharePoint.  
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/10/2018
  Toto je samostatné návod. Po dokončení tohoto postupu můžete vylepšit položka projektu přidáním Průvodce pro šablony položky. Další informace najdete v tématu [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
->  Můžete si stáhnout ukázku, která obsahuje dokončené projekty, kódu a další soubory v tomto návodu z následujícího umístění: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Můžete si stáhnout ukázku, která obsahuje dokončené projekty, kódu a další soubory v tomto návodu z následujícího umístění: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
   
 ## <a name="prerequisites"></a>Požadavky  
  Následující součásti na vývojovém počítači k dokončení tohoto názorného postupu potřebujete:  
@@ -90,7 +89,7 @@ ms.lasthandoff: 01/10/2018
   
 6.  V **název** zadejte **CustomActionProjectItem**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **CustomActionProjectItem** projektu do **Průzkumníku řešení**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **CustomActionProjectItem** projektu do **Průzkumníku řešení**.  
   
 #### <a name="to-create-the-item-template-project"></a>Chcete-li vytvořit šablonu položky projektu  
   
@@ -104,7 +103,7 @@ ms.lasthandoff: 01/10/2018
   
 5.  V **název** zadejte **ItemTemplate**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **ItemTemplate** projektu k řešení.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **ItemTemplate** projektu k řešení.  
   
 #### <a name="to-create-the-extension-project"></a>Vytvoření projektu rozšíření  
   
@@ -112,11 +111,11 @@ ms.lasthandoff: 01/10/2018
   
 2.  V seznamu v horní části **nový projekt** dialogové okno pole, ujistěte se, že **rozhraní .NET Framework 4.5** je vybrána.  
   
-3.  V **nový projekt** dialogové okno, rozbalte seznam **Visual C#** nebo **jazyka Visual Basic** uzlů, zvolte **Windows** uzel a potom vyberte ** Třídy knihovny** šablona projektu.  
+3.  V **nový projekt** dialogové okno, rozbalte seznam **Visual C#** nebo **jazyka Visual Basic** uzlů, zvolte **Windows** uzel a potom vyberte  **Třídy knihovny** šablona projektu.  
   
 4.  V **název** zadejte **ProjectItemDefinition**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **ProjectItemDefinition** projektu a řešení a otevře soubor výchozího kódu Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **ProjectItemDefinition** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
 5.  Odstraňte soubor kódu Class1 z projektu.  
   
@@ -162,7 +161,7 @@ ms.lasthandoff: 01/10/2018
   
 #### <a name="to-create-a-custom-icon-for-the-project-item"></a>Chcete-li vytvořit vlastní ikonou pro položky projektu  
   
-1.  V **Průzkumníku řešení**, otevřete místní nabídku pro **ProjectItemDefinition** projektu, zvolte **přidat**a potom zvolte **novou položku... **.  
+1.  V **Průzkumníku řešení**, otevřete místní nabídku pro **ProjectItemDefinition** projektu, zvolte **přidat**a potom zvolte **novou položku...** .  
   
 2.  V seznamu položek projektu, vyberte **soubor ikony** položky.  
   
@@ -287,7 +286,7 @@ ms.lasthandoff: 01/10/2018
     </VSTemplate>  
     ```  
   
-     `OutputSubPath` Element určuje další složky v cestě, pod kterým šablony položky se vytvoří při sestavování projektu. Zde určené složky zajistí, že šablony položky bude k dispozici jenom v případě, že zákazníci otevřete **přidat novou položku** dialogové okno, rozbalte seznam **SharePoint** uzel a potom vyberte **2010 ** uzlu.  
+     `OutputSubPath` Element určuje další složky v cestě, pod kterým šablony položky se vytvoří při sestavování projektu. Zde určené složky zajistí, že šablony položky bude k dispozici jenom v případě, že zákazníci otevřete **přidat novou položku** dialogové okno, rozbalte seznam **SharePoint** uzel a potom vyberte **2010**  uzlu.  
   
 17. V **Průzkumníku řešení**, otevřete místní nabídku pro **ItemTemplate** projektu a potom vyberte **znovu načíst projekt**.  
   
@@ -357,7 +356,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  V experimentální instanci sady Visual Studio na řádku nabídek zvolte **soubor**, **nový**, **projektu**.  
   
-2.  Rozbalte položku **Visual C#** nebo **jazyka Visual Basic** (v závislosti na jazyce, který podporuje vaše šablony položky), rozbalte položku **SharePoint**a potom vyberte **2010 ** uzlu.  
+2.  Rozbalte položku **Visual C#** nebo **jazyka Visual Basic** (v závislosti na jazyce, který podporuje vaše šablony položky), rozbalte položku **SharePoint**a potom vyberte **2010**  uzlu.  
   
 3.  V seznamu šablon projektu, zvolte **projektu služby SharePoint 2010**.  
   
@@ -430,7 +429,7 @@ ms.lasthandoff: 01/10/2018
     > [!NOTE]  
     >  Pokud **ladění skriptů zakázáno** se zobrazí dialogové okno, vyberte **Ano** tlačítka pokračujte ladění projektu.  
   
-4.  Na **Akce webu** nabídce zvolte **SharePoint Developer Center**, ověřte, že prohlížeči se otevře http://msdn.microsoft.com/sharepoint/default.aspx webu a pak zavřete webový prohlížeč.  
+4.  Na **Akce webu** nabídce zvolte **SharePoint Developer Center**, ověřte, že prohlížeči se otevře web http://msdn.microsoft.com/sharepoint/default.aspxa pak zavřete webový prohlížeč.  
   
 ## <a name="cleaning-up-the-development-computer"></a>Čištění vývojovém počítači  
  Po dokončení testování položky projektu odeberte položku Šablona projektu z experimentální instanci sady Visual Studio.  
@@ -459,6 +458,6 @@ ms.lasthandoff: 01/10/2018
  [Použití služby projektu SharePoint](../sharepoint/using-the-sharepoint-project-service.md)   
  [Odkaz na schéma šablon sady Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)   
  [Editor obrázků pro ikony](/cpp/windows/image-editor-for-icons)   
- [Vytvoření ikony nebo jiného obrázku & #40; Editor obrázků pro ikony & #41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+ [Vytvoření ikony nebo jiného obrázku &#40;Editor obrázků pro ikony&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

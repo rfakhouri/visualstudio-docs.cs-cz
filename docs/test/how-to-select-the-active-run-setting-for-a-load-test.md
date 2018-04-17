@@ -1,19 +1,19 @@
 ---
-title: "Vyberte nastavení spouštění pro zátěžový Test v sadě Visual Studio | Microsoft Docs"
+title: Vyberte nastavení spouštění pro zátěžový Test v sadě Visual Studio | Microsoft Docs
 ms.date: 10/19/2016
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, active
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1add51256fa43a60640845ae418f7cc9f0a1bbf
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+ms.openlocfilehash: dc521cf8e0218fabd691493fdb65fb46471e05bd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Postupy: Výběr aktivních parametrů spouštění pro zátěžový test
 
@@ -48,11 +48,11 @@ V editoru zátěžových testů aktivní spustit nastavení je identifikován p�
 ## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Určení nastavení spuštění z příkazového řádku pro použití
  Můžete přepsat výchozí spusťte nastavení v zátěžovém testu nastavením proměnné prostředí z příkazového řádku:
 
- **Set Test.UseRunSetting=PreProdEnvironment**
+ **Nastavit Test.UseRunSetting=PreProdEnvironment**
 
  A spusťte test:
 
- **mstest /testcontainer:loadtest1.loadtest**
+ **/testcontainer:loadtest1.loadtest mstestu**
 
 ## <a name="see-also"></a>Viz také
 

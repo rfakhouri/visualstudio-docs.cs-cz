@@ -1,13 +1,10 @@
 ---
-title: "Třídy specifické pro jazykovou verzi pro globální formuláře systému Windows a webové formuláře | Microsoft Docs"
-ms.custom: 
+title: Třídy specifické pro jazykovou verzi pro globální formuláře systému Windows a webové formuláře | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Windows Forms], classes
 - Web applications [.NET Framework], globalization
@@ -26,28 +23,35 @@ helpviewer_keywords:
 - classes [Visual Studio], culture-specific
 - localization [Visual Studio], culture-specific classes
 ms.assetid: 0d06a0a4-f887-4f7c-bde7-1d543c06f803
-caps.latest.revision: 
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e7982b11ffba3cc48cd47488cf2258978168452
-ms.sourcegitcommit: b18844078a30d59014b48a9c247848dea188b0ee
+ms.openlocfilehash: 40ce8f0e60ae45bfe290ae806d3963dbd30cbb48
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Třídy pro globální formuláře systému Windows a webové formuláře specifické pro jazykovou verzi
+# <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Třídy specifické pro jazykovou verzi pro globální formuláře systému Windows a webové formuláře
 
-Každá jazyková verze má různých pravidel pro zobrazení data, času, čísla, měny a další informace. <xref:System.Globalization> Obor názvů obsahuje třídy, které lze použít k úpravě hodnoty jak specifické pro jazykovou verzi jsou zobrazeny, jako například <xref:System.Globalization.DateTimeFormatInfo>, **kalendáře**, a <xref:System.Globalization.NumberFormatInfo>.
+Každá jazyková verze má různých pravidel pro zobrazení data, času, čísla, měny a další informace. <xref:System.Globalization> Obor názvů obsahuje třídy, které lze použít k úpravě hodnoty jak specifické pro jazykovou verzi jsou zobrazeny, jako například:
+- <xref:System.Globalization.DateTimeFormatInfo>
+- **Kalendář**
+- <xref:System.Globalization.NumberFormatInfo>
 
 ## <a name="using-the-culture-setting"></a>Pomocí nastavení jazykové verze
 
-Použít nastavení jazykové verze, uložené v aplikaci nebo v **místní nastavení** ovládací panely, automaticky určete konvence jazykovou verzi v době běhu a informace o formátu odpovídajícím způsobem. Další informace o nastavení jazyková verze, najdete v části [postupy: nastavení jazykové verze a jazyková verze uživatelského rozhraní pro globalizaci webové stránky ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Třídy, které automaticky formátovat informace podle nastavení jazykové verze, se nazývají specifické pro jazykovou verzi. Některé metody specifické pro jazykovou verzi jsou <xref:System.IFormattable.ToString%2A?displayProperty=fullName>, <xref:System.Console.WriteLine%2A?displayProperty=fullName>, a <xref:System.String.Format%2A?displayProperty=fullName>. Některé funkce specifické pro jazykovou verzi (v jazyce Visual Basic) jsou `MonthName` a `WeekDayName`.
+Použít nastavení jazykové verze, uložené v aplikaci nebo v **místní nastavení** ovládací panely k určení názvů jazykovou verzi na dobu běhu a informace o formátu odpovídajícím způsobem. Další informace o nastavení jazyková verze, najdete v části [postupy: nastavení jazykové verze a jazyková verze uživatelského rozhraní pro globalizaci webové stránky ASP.NET](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Třídy, které automaticky formátovat informace podle nastavení jazykové verze, se nazývají *specifické pro jazykovou verzi*. Některé metody specifické pro jazykovou verzi 
+- <xref:System.IFormattable.ToString%2A?displayProperty=fullName>
+- <xref:System.Console.WriteLine%2A?displayProperty=fullName>
+- <xref:System.String.Format%2A?displayProperty=fullName>
+
+Některé funkce specifické pro jazykovou verzi (v jazyce Visual Basic) jsou `MonthName` a `WeekDayName`.
 
 Například následující kód ukazuje, jak můžete použít <xref:System.IFormattable.ToString%2A> metoda do formátu měny pro aktuální jazykovou verzi:
 
@@ -69,11 +73,11 @@ int myInt = 100;
 Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));  
 ```
 
-Pokud jazyková verze je nastavena na "fr-FR", zobrazí se to v okně výstupu:  
+Pokud jazyková verze je nastavena na "fr-FR", zobrazí se následující v okně výstupu:  
 
 `100,00`
 
-Pokud jazyková verze je nastavena na "en US", zobrazí se to v okně výstupu:  
+Pokud jazyková verze je nastavena na "en US", zobrazí se následující v okně výstupu:  
 
 `$100.00`
 

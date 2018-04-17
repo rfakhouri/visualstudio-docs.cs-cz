@@ -1,27 +1,25 @@
 ---
-title: "Přehled sestavy výkonu | Microsoft Docs"
-ms.custom: 
+title: Přehled sestavy výkonu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, about performance rerports
 - performance, reports
 - performance reports, about performance reports
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
-caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 915f7f3cbbee87f72c4643b8c5a2b4497bbd69dd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 132bac5164289c18fe0cd379686db7eb6213589a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="performance-report-overview"></a>Přehled sestavy výkonu
 Můžete zobrazit data profilování výkonu relace v **Sestava výkonu** okno Visual Studio Team System vývoj Edition integrované vývojové prostředí (IDE). Data profilování je uložen v .vsp a .vsps soubory. Zobrazení sestav systému windows umožňují zobrazit a analyzovat problémy s výkonem aplikace.  

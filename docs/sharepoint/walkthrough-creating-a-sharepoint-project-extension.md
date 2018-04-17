@@ -1,12 +1,10 @@
 ---
-title: "Návod: Vytváření rozšíření projektu služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Vytváření rozšíření projektu služby SharePoint | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,13 +14,14 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: a03dd09525d29aaea31ef5c376814bd09747f90e
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 17722233c5215858dce59a0d85a05f668de85446
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-sharepoint-project-extension"></a>Návod: Vytváření rozšíření projektu SharePoint
   Tento návod ukazuje postup vytvoření rozšíření pro projekty SharePoint. Můžete použít rozšíření projektu reakce na události na úrovni projektu například pokud je projekt přidat, odstranit nebo přejmenovat. Můžete také přidat vlastní vlastnosti nebo reagovat, když se změní hodnota vlastnosti. Na rozdíl od rozšíření položek projektu rozšíření nemůže být přidružena konkrétní typ projektu služby SharePoint. Při vytváření rozšíření projektu rozšíření načte, když jakýkoli druh projektu služby SharePoint je otevřen v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -86,7 +85,7 @@ ms.lasthandoff: 01/10/2018
   
 4.  V **název** zadejte **ProjectExtension**a potom zvolte **OK** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]Přidá **ProjectExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **ProjectExtension** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
 5.  Odstraňte soubor kódu Class1 z projektu.  
   
@@ -131,7 +130,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  V **Průzkumníku řešení**, otevřete místní nabídku pro soubor source.extension.vsixmanifest a potom zvolte **otevřete** tlačítko.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]soubor se otevře v návrháře manifestu. Informace, které se zobrazí v **Metadata** karta se zobrazí také v **rozšíření a aktualizace**. Všechny balíčky VSIX vyžadují soubor extension.vsixmanifest. Další informace o tento soubor najdete v tématu [VSIX rozšíření schématu 1.0 odkaz](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] soubor se otevře v návrháře manifestu. Informace, které se zobrazí v **Metadata** karta se zobrazí také v **rozšíření a aktualizace**. Všechny balíčky VSIX vyžadují soubor extension.vsixmanifest. Další informace o tento soubor najdete v tématu [VSIX rozšíření schématu 1.0 odkaz](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 2.  V **název produktu** zadejte **vlastní vlastnost projektu**.  
   
@@ -175,7 +174,7 @@ ms.lasthandoff: 01/10/2018
   
 2.  Spuštění ladění sestavení projektu buď tak, že zvolíte **F5** klíč, nebo v nabídce panelu Výběr **ladění**, **spustit ladění**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]nainstaluje rozšíření do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Project Property\1. 0 a spustí experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] nainstaluje rozšíření do %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Project Property\1. 0 a spustí experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
 3.  V experimentální instanci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], vytvoření projektu služby SharePoint pro řešení farmy a použít výchozí hodnoty pro ostatní hodnoty v průvodci.  
   

@@ -1,12 +1,9 @@
 ---
-title: "Podmínky nástroje MSBuild | Microsoft Docs"
-ms.custom: 
+title: Podmínky nástroje MSBuild | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,17 +13,16 @@ helpviewer_keywords:
 - MSBuild, conditions
 - conditions [MSBuild]
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37aaadd72bab46b74409848723c84baa83f574fc
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 9b265f00c9fd71b1d9d8c99b7a68e4917ddd7e50
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="msbuild-conditions"></a>Podmínky nástroje MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] podporuje konkrétní sadu podmínek, které lze použít kdekoli `Condition` atribut je povolen. Následující tabulka vysvětluje tyto podmínky.  
@@ -36,7 +32,7 @@ ms.lasthandoff: 02/09/2018
 |'`stringA`' == '`stringB`'|Vyhodnotí jako `true` Pokud `stringA` rovná `stringB`.<br /><br /> Příklad:<br /><br /> `Condition="'$(CONFIG)'=='DEBUG'"`<br /><br /> Jednoduchých uvozovek a jsou vyžadovány pro jednoduché alfanumerické řetězce nebo logické hodnoty. Jednoduché uvozovky jsou však nutná pro prázdné hodnoty.|  
 |'`stringA`' != '`stringB`'|Vyhodnotí jako `true` Pokud `stringA` se nerovná `stringB`.<br /><br /> Příklad:<br /><br /> `Condition="'$(CONFIG)'!='DEBUG'"`<br /><br /> Jednoduchých uvozovek a jsou vyžadovány pro jednoduché alfanumerické řetězce nebo logické hodnoty. Jednoduché uvozovky jsou však nutná pro prázdné hodnoty.|  
 |\<, >, \<=, >=|Vyhodnotí číselné hodnoty operandy. Vrátí `true` Pokud relační vyhodnocení má hodnotu true. Operandy se musí vyhodnotit desetinné nebo hexadecimální číslo. Hexadecimální číslice musí začínat řetězcem "0 x". **Poznámka:** v XML znaky `<` a `>` , je nutné uvést. Symbol `<` je reprezentován jako `&lt;`. Symbol `>` je reprezentován jako `&gt;`.|  
-|Exists('`stringA`')|Vyhodnotí jako `true` Pokud soubor nebo složku s názvem `stringA` existuje.<br /><br /> Příklad:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Jednoduchých uvozovek a jsou vyžadovány pro jednoduché alfanumerické řetězce nebo logické hodnoty. Jednoduché uvozovky jsou však nutná pro prázdné hodnoty.|  
+|Existuje ('`stringA`')|Vyhodnotí jako `true` Pokud soubor nebo složku s názvem `stringA` existuje.<br /><br /> Příklad:<br /><br /> `Condition="!Exists('$(builtdir)')"`<br /><br /> Jednoduchých uvozovek a jsou vyžadovány pro jednoduché alfanumerické řetězce nebo logické hodnoty. Jednoduché uvozovky jsou však nutná pro prázdné hodnoty.|  
 |HasTrailingSlash('`stringA`')|Vyhodnotí jako `true` Pokud zadaný řetězec obsahuje buď koncové zpětné lomítko (\\) nebo předávat lomítko (/).<br /><br /> Příklad:<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> Jednoduchých uvozovek a jsou vyžadovány pro jednoduché alfanumerické řetězce nebo logické hodnoty. Jednoduché uvozovky jsou však nutná pro prázdné hodnoty.|  
 |!|Vyhodnotí jako `true` Pokud je výsledkem operand `false`.|  
 |A|Vyhodnotí jako `true` Pokud oba operandy vyhodnocení `true`.|  

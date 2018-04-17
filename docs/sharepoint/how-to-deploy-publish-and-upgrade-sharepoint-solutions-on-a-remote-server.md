@@ -1,12 +1,10 @@
 ---
-title: "Postupy: nasazení, publikování a upgradování řešení služby SharePoint na vzdáleném serveru | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: nasazení, publikování a upgradování řešení služby SharePoint na vzdáleném serveru | Microsoft Docs'
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,13 +15,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 154af4ba9ac4a83c40c5d53a6b292c212aa71503
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 108474e725c95f495bf6eec0f9a2224ca971b3d2
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Postupy: Nasazení, publikování a upgradování řešení služby SharePoint na vzdáleném serveru
   Kromě nasazení řešení služby SharePoint do místního systému, můžete publikovat v izolovaném prostoru řešení služby SharePoint vzdálených lokalit nebo místních webů služby SharePoint. Vzdálený proces publikování zkopíruje soubor WSP server služby SharePoint, nainstaluje řešení a pak umožňuje aktivovat řešení. Rovněž lze upgradovat vzdálenou instalaci řešení služby SharePoint po provedení změn na ni.  
@@ -32,7 +31,7 @@ ms.lasthandoff: 01/10/2018
   
 1.  V **Průzkumníku řešení**, otevřete místní nabídky v izolovaném prostoru projektu služby SharePoint, kterou chcete publikovat a potom vyberte **publikovat**.  
   
-2.  V **publikovat** dialogovém okně vyberte **publikovat na webu služby SharePoint** možnost tlačítko a potom zadejte adresu URL online publikování webu, například v následujícím příkladu: **https:// mytestsite.SharePoint.microsoftonline.com**.  
+2.  V **publikovat** dialogovém okně vyberte **publikovat na webu služby SharePoint** možnost tlačítko a potom zadejte adresu URL online publikování webu, například v následujícím příkladu: **https://mytestsite.sharepoint.microsoftonline.com** .  
   
 3.  Vyberte **otevřete řešení Galerie stránku v prohlížeči po publikování** tlačítko Možnosti zobrazíte seznam řešení v **řešení Galerie** stránka po publikování.  
   

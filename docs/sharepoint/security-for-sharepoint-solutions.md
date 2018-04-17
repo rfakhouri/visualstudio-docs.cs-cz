@@ -1,12 +1,10 @@
 ---
-title: "Zabezpečení pro řešení služby SharePoint | Microsoft Docs"
-ms.custom: 
+title: Zabezpečení pro řešení služby SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -17,16 +15,17 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, security
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 6e9aff74a49f738f4a0ed0df68ffe2e9a5b33525
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 471de3ab69a969f5153723658c628d659038c3a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="security-for-sharepoint-solutions"></a>Zabezpečení pro řešení služby SharePoint
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]zahrnuje následující funkce pro zlepšení zabezpečení aplikací služby SharePoint.  
+  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zahrnuje následující funkce pro zlepšení zabezpečení aplikací služby SharePoint.  
   
 ## <a name="safe-control-entries"></a>Bezpečné ovládací prvek položky  
  Každá položka projektu služby SharePoint vytvořené v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] má **bezpečné položky řízení** vlastnost, která představuje sejfu ovládací prvky kolekce. Jeho **bezpečné** dílčí vlastnosti umožňuje určit ovládacích prvků, které považujete za bezpečné. Další informace najdete v tématu [poskytování balení a informace o nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) a [zadání bezpečné webové části](http://go.microsoft.com/fwlink/?LinkId=177521).  
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/10/2018
  *Skript vkládání* je vkládání potenciálně škodlivého kódu do ovládacích prvků nebo webové stránky. K ochraně weby SharePoint 2010 pro vložení skriptu, přispěvatelé nemůžete zobrazit nebo upravit webové části nebo jejich vlastnosti ve výchozím nastavení. Toto chování je řízena SafeControl – atribut nazvaný SafeAgainstScript. V [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], nastavte tento atribut v položce projektu **bezpečné položky řízení** dílčí vlastnosti **skriptu bezpečné proti**. Další informace najdete v tématu [poskytování balení a informace o nasazení v položkách projektu](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) a [postup: ovládací prvky označit jako bezpečné ovládací prvky](../sharepoint/how-to-mark-controls-as-safe-controls.md).  
   
 ## <a name="vista-and-windows-7-user-account-control"></a>Vista a Windows 7 nástroje Řízení uživatelských účtů  
- [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)]a [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] začlenit funkce zabezpečení známé jako řízení uživatelských účtů (UAC). Pro vývoj řešení služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] a [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systémy, nástroje Řízení uživatelských účtů vyžaduje, že spustíte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jako správce systému. Z **spustit** nabídce otevřete místní nabídku pro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]a potom zvolte **spustit jako správce**.  
+ [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] a [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] začlenit funkce zabezpečení známé jako řízení uživatelských účtů (UAC). Pro vývoj řešení služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na [!INCLUDE[windowsver](../sharepoint/includes/windowsver-md.md)] a [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] systémy, nástroje Řízení uživatelských účtů vyžaduje, že spustíte [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] jako správce systému. Z **spustit** nabídce otevřete místní nabídku pro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]a potom zvolte **spustit jako správce**.  
   
  Ke konfiguraci [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zástupce vždy spustit jako správce, otevřete jeho místní nabídky, zvolte **vlastnosti**, vyberte **Upřesnit** v tlačítko **vlastnosti**dialogové okno a potom vyberte **spustit jako správce** zaškrtávací políčko.  
   

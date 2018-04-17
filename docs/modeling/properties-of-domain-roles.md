@@ -1,21 +1,19 @@
 ---
-title: "Vlastnosti rolí domény | Microsoft Docs"
-ms.custom: 
+title: Vlastnosti rolí domény | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61537deec73a5da8d647639a588641d7cf773da3
-ms.sourcegitcommit: d16c6812b114a8672a58ce78e6988b967498c747
+ms.openlocfilehash: 00ed4a86f2a00f9317f198d925fddbbc7f115481
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="properties-of-domain-roles"></a>Vlastnosti rolí domény
 Vlastnosti v následující tabulce jsou přidružené k roli domény. Informace o rolích domény najdete v tématu [Principy modely, třídy a vztahy](../modeling/understanding-models-classes-and-relationships.md). Další informace o tom, jak používat tyto vlastnosti najdete v tématu [přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -38,7 +36,7 @@ Vlastnosti v následující tabulce jsou přidružené k roli domény. Informace
 |Kategorie|Kategorie, pod kterým generovaného vlastnost se zobrazí v **vlastnosti** okno v Návrháři vygenerovaný. Pokud je tato vlastnost prázdná, pak vlastnost generovaného se objeví pod uzlem **různé** kategorie|< žádné\>|
 |Popis|Popis, který se používá k dokumentu kódu a používá se v uživatelském rozhraní vygenerovaný návrháře.<br /><br /> Popis se zobrazí v popisu tlačítka technologie IntelliSense pro vlastnost vygenerovaný na třídě player role.|`Description for` *úplný název role*|
 |Zobrazovaný název|Název, který se zobrazí v Návrháři vygenerovaný pro role domény.|Upravená hodnota vlastnosti Name.|
-|Nápověda – klíčové slovo|Volitelné klíčové slovo, které se používá k indexu F1 – Nápověda pro role domény.|\<none>|
+|Nápověda – klíčové slovo|Volitelné klíčové slovo, které se používá k indexu F1 – Nápověda pro role domény.|\<žádné >|
 |Zobrazovaný název vlastnosti|Název, který se zobrazí v Návrháři generovaný pro vlastnost generovaného role.|Upravená hodnota vlastnosti název vlastnosti.|
 
 > [!NOTE]

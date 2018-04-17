@@ -1,26 +1,23 @@
 ---
-title: "Úpravy kódu s R Tools pro sadu Visual Studio | Microsoft Docs"
-description: "Visual Studio nabízí šité na míru úpravy prostředí R a přitom zachovat všechny funkce a umožňuje používat rozšíření."
-ms.custom: 
+title: Úpravy kódu jazyka R
+description: Visual Studio nabízí šité na míru úpravy prostředí R a přitom zachovat všechny funkce a umožňuje používat rozšíření.
+ms.custom: ''
 ms.date: 01/24/2018
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - devlang-r
 dev_langs:
 - R
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: ghogen
+manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: b318122163bf74035d19fd53c7da4be938b345f5
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 6c938f01785f660cbb7079df8fb73491dabe39c5
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="editing-r-code-in-visual-studio"></a>Úpravy R kódu v sadě Visual Studio
 

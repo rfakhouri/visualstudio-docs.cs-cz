@@ -1,29 +1,25 @@
 ---
-title: "Zobrazení kolizí prostředku – Data kolizí | Microsoft Docs"
-ms.custom: 
+title: Zobrazení kolizí prostředku – Data kolizí | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.resourcecontention
 helpviewer_keywords:
 - Resource Contentions view
 ms.assetid: 14a7f774-211f-4ef8-af05-94d1c8f65d2f
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b5cb6b102025591a6ef00ca594657dca511f5b8c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: cca582cf98e2801859a5f272a8e0164be76d51ae
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resource-contentions-view---contention-data"></a>Zobrazení kolizí prostředku – Data kolizí
 Zobrazení kolizí prostředku uvádí data kolizí pro prostředky, které byly zdroj kolizní události. Kolizní události nastane, když je funkce ve vlákně vynutit čekání na přístup k prostředku, protože funkce v jiné vlákno má získat výhradní přístup k prostředku. Každý prostředek je kořenový uzel stromu volání, která zobrazuje funkce cesty provádění, jejichž výsledkem kolizní události.  
@@ -56,7 +52,7 @@ Zobrazení kolizí prostředku uvádí data kolizí pro prostředky, které byly
 |**Včetně blokované čas: %**|-Pro prostředek, procento všech blokovaných času v profilaci data, která byla blokována času tento prostředek<br />-Pro funkci procento všech blokovaných času v profilaci spuštění, který byl včetně blokované čas instancí tyto funkce.|  
 |**Kolizí (včetně).**|-Pro prostředek byl celkový počet pokusů, které přístup k danému prostředku blokovaný a způsobila vlákno čekání.<br />-Pro funkci procento všech kolizní události v profilaci spuštění, které byly včetně kolizní události instancí tyto funkce pro nadřazený prostředek.|  
 |**% Kolizí (včetně).**|-Pro prostředek procento všech kolizní události v profilaci spuštění, které byly kolizní události pro přístup k tomuto prostředku.<br />-Pro funkce, počet pokusů, které tyto instance funkce měla přístup nadřazený prostředek při funkce provádění kódu v těle funkce zablokován. Blokování události v funkce, které byly volá funkci nejsou zahrnuty.|  
-|**Úroveň**|Hloubka této funkce ve stromové struktuře volání. Pouze v [vsperfreport –](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
+|**úroveň**|Hloubka této funkce ve stromové struktuře volání. Pouze v [vsperfreport –](../profiling/vsperfreport.md) příkazového řádku sestavy.|  
 |**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
 |**Název modulu**|Název modulu, který obsahuje funkci.|  
 |**Cesta modulu**|Cesta modul, který obsahuje funkce.|  

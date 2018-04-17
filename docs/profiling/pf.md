@@ -1,23 +1,21 @@
 ---
 title: PF | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
-caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 548a4cedf715faf998912500bf3e2390ac07070b
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: eb0f9088b5c5ac40c1edf96eaac14616891ba722
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="pf"></a>PF
 VSPerfCmd.exe **PF** možnost nastavuje profilování událost, která je vzorků chyb stránek a volitelně změny počtu chyb stránek v intervalu vzorkování z výchozí hodnotu 10.  
@@ -44,10 +42,10 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="required-options"></a>Požadované možnosti  
  **PF** lze zadat pouze na příkazový řádek, který obsahuje jeden z následujících možností.  
   
- **Spuštění:**`AppName`  
+ **Spusťte:** `AppName`  
  Spustí profileru a aplikace určeného AppName.  
   
- **Připojení:**`PID`  
+ **Připojení:** `PID`  
  Připojí profileru k proces zadaný pomocí AppName.  
   
 ## <a name="invalid-options"></a>Neplatné možnosti  
@@ -62,7 +60,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
  **Čítač:** `Name`[`,Reload`[`,FriendlyName`]]  
  Nastaví událostí vzorkování na výkon procesoru čítač určeného `Name` a nastaví interval vzorkování na `Reload`.  
   
- **Globální Katalog**[**:**{**přidělení**&#124; **Doba platnosti**}]  
+ **Globální Katalog**[**:**{**přidělení**&#124;**životnost**}]  
  Shromažďuje data paměti .NET. Ve výchozím nastavení (**přidělení**), data jsou shromažďována v každé události přidělení paměti. Když **životnost** je zadán parametr, data jsou shromažďována také v každé události kolekce paměti.  
   
 ## <a name="example"></a>Příklad  

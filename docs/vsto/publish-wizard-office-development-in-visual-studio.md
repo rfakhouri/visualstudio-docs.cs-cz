@@ -1,12 +1,10 @@
 ---
-title: "Publikování průvodce (vývoj pro Office v sadě Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: Publikování průvodce (vývoj pro Office v sadě Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 f1_keywords:
 - VST.ProjectProperties.PublishWizard
 - VST.PublishWizard.Publish.2007System
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Publish Wizard, Office solutions
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 43b4869435c34a29cac5fd18a13d2b4b140e8b6c
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: 67e3222c6f1deeca58b84aca4ba73d2826483b26
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Průvodce publikováním (vývoj pro Office v sadě Visual Studio)
   Použití **Průvodci publikováním** Pokud chcete kopírovat soubory řešení do zadaného umístění, vytvořte manifestu soubory a vytvořte instalační program.  
@@ -45,12 +44,12 @@ ms.lasthandoff: 01/10/2018
   
 -   Cestu Universal Naming Convention (UNC), jako například \\\ServerName\MyApplication\\.  
   
--   Adresa URL webové stránky, jako je například http://www.microsoft.com/MyApplication.  
+-   Adresu URL webu lokality, jako například http://www.microsoft.com/MyApplication.  
   
  Ve výchozím umístění pro publikování je *http://localhost/projectname/* Pokud máte nainstalovanou službu IIS, nebo adresáři publish\ v takovém případě ještě nainstalována služba IIS.  
   
 > [!NOTE]  
->  Existují další důležité informace, pokud má cílový počítač se systémem Windows Vista. Musíte být správce v počítači Windows Vista použít možnost místní publikovat. Kromě toho výchozí umístění je vždy *publikování\\ * adresář, bez ohledu na to, jestli máte nainstalovanou službu IIS.  
+>  Existují další důležité informace, pokud má cílový počítač se systémem Windows Vista. Musíte být správce v počítači Windows Vista použít možnost místní publikovat. Kromě toho výchozí umístění je vždy *publikování\\*  adresář, bez ohledu na to, jestli máte nainstalovanou službu IIS.  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>Co je výchozí cesty instalace na počítačích koncových uživatelů?  
  Cesta instalace je volitelný. Cesta instalace můžete nastavit později, pokud dáváte přednost. Podrobnosti najdete v tématu [postup: Změňte cestu instalace řešení Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
@@ -70,7 +69,7 @@ ms.lasthandoff: 01/10/2018
   
 ## <a name="see-also"></a>Viz také  
  [Nasazení řešení Office s použitím technologie ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Publikovat stránku, Návrhář projektu & #40; vývoj pro Office v sadě Visual Studio & #41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
+ [Publikovat stránku, Návrhář projektu &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)   
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)  
   
   

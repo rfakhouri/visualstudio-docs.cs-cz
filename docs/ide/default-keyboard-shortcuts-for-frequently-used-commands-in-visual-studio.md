@@ -1,23 +1,20 @@
 ---
-title: "Výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6389e5673f589f581818d68f5652dd9529da7500
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 1c4ffb78541f70809457b1266dafba2036da085f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Výchozí klávesové zkratky pro často používané příkazy v sadě Visual Studio
 
@@ -30,147 +27,147 @@ Výběrem těchto výchozích klávesových zkratek získáte snadno přístup k
 
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
-|Build.BuildSolution|Ctrl+Shift+B [Global]|  
-|Build.Cancel|Ctrl+Break [Global]|  
-|Build.Compile|Ctrl+F7 [Global]|  
-|Build.RunCodeAnalysisonSolution|Alt+F11 [Global]|  
+|Build.BuildSolution|**Ctrl + Shift + B** [globální]|  
+|Build.Cancel|**Ctrl + Break** [globální]|  
+|Build.Compile|**CTRL + F7** [globální]|  
+|Build.RunCodeAnalysisonSolution|**ALT + F11** [globální]|  
 
 ## <a name="debug"></a>Ladit
 
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
-|Debug.BreakatFunction|Ctrl+B [Global]|  
-|Debug.BreakAll|Ctrl+Alt+Break [Global]|  
-|Debug.DeleteAllBreakpoints|Ctrl+Shift+F9 [Global]|  
-|Debug.Exceptions|Ctrl+Alt+E [Global]|  
-|Debug.QuickWatch|Ctrl+Alt+Q [Global]<br /><br /> nebo Shift+F9 [Global]|  
-|Debug.Restart|Ctrl+Shift+F5 [Global]|  
-|Debug.RunToCursor|Ctrl+F10 [Global]|  
-|Debug.SetNextStatement|Ctrl+Shift+F10 [Global]|  
-|Debug.Start|F5 [Global]|  
-|Debug.StartWithoutDebugging|Ctrl+F5 [Global]|  
-|Debug.StepInto|F11 [globální]|  
-|Debug.StepOut|Shift+F11 [Global]|  
-|Debug.StepOver|F10 [globální]|  
-|Debug.StopDebugging|Shift+F5 [Global]|  
-|Debug.ToggleBreakpoint|F9 [globální]|  
+|Debug.BreakatFunction|**CTRL + B** [globální]|  
+|Debug.BreakAll|**Ctrl + Alt + Break** [globální]|  
+|Debug.DeleteAllBreakpoints|**Ctrl + Shift + F9** [globální]|  
+|Debug.Exceptions|**Ctrl + Alt + E** [globální]|  
+|Debug.QuickWatch|**Ctrl + Alt + Q** [globální]<br /><br /> nebo **Shift + F9** [globální]|  
+|Debug.Restart|**Ctrl + Shift + F5** [globální]|  
+|Debug.RunToCursor|**CTRL + F10** [globální]|  
+|Debug.SetNextStatement|**Ctrl + Shift + F10** [globální]|  
+|Debug.Start|**F5** [globální]|  
+|Debug.StartWithoutDebugging|**CTRL + F5** [globální]|  
+|Debug.StepInto|**F11** [globální]|  
+|Debug.StepOut|**SHIFT + F11** [globální]|  
+|Debug.StepOver|**F10** [globální]|  
+|Debug.StopDebugging|**SHIFT + F5** [globální]|  
+|Debug.ToggleBreakpoint|**F9** [globální]|  
 
 ## <a name="edit"></a>Upravit
 
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
-|Edit.BreakLine|Zadejte [Text Editor, Report Designer, Windows Forms Designer]<br /><br /> nebo Shift+Enter [Text Editor]|  
-|Edit.CollapsetoDefinitions|Ctrl+M, Ctrl+O [Text Editor]|  
-|Edit.CommentSelection|Ctrl+K, Ctrl+C [Text Editor]|  
-|Edit.CompleteWord|Alt + šipka doprava [Text Editor, Workflow Designer]<br /><br /> nebo Ctrl + mezerník [Text Editor, Workflow Designer]<br /><br /> nebo Ctrl+K, W [Workflow Designer]<br /><br /> nebo Ctrl+K, Ctrl+W [Workflow Designer]|  
-|Edit.Copy|Ctrl+C [Global]<br /><br /> nebo Ctrl+Insert [Global]|  
-|Edit.Cut|Ctrl+X [Global]<br /><br /> nebo Shift+Delete [Global]|  
-|Edit.Delete|Delete [Global, Team Explorer]<br /><br /> nebo Shift+Delete [Sequence Diagram, UML Activity Diagram, Layer Diagram]<br /><br /> nebo Ctrl+Delete [Class Diagram]|  
-|Edit.Find|Ctrl+F [Global]|  
-|Edit.FindAllReferences|Shift+F12 [Global]|  
-|Edit.FindinFiles|Ctrl+Shift+F [Global]|  
-|Edit.FindNext|F3 [globální]|  
-|Edit.FindNextSelected|Ctrl+F3 [Global]|  
-|Edit.FormatDocument|Ctrl+K, Ctrl+D [Text Editor]|  
-|Edit.FormatSelection|Ctrl+K, Ctrl+F [Text Editor]|  
-|Edit.GoTo|Ctrl+G [Global]|  
-|Edit.GoToDeclaration|Ctrl+F12 [Global]|  
-|Edit.GoToDefinition|F12|  
-|Edit.GoToFindCombo|Ctrl+D [Global]|  
-|Edit.GoToNextLocation|F8 [globální]|  
-|Edit.InsertSnippet|Ctrl+K, Ctrl+X [Global]|  
-|Edit.InsertTab|Tab [Report Designer, Windows Forms Designer, Text Editor]|  
-|Edit.LineCut|Ctrl+L [Text Editor]|  
-|Edit.LineDownExtendColumn|Shift + Alt + šipka dolů [Text Editor]|  
-|Edit.LineOpenAbove|Ctrl+Enter [Text Editor]|  
-|Edit.ListMembers|Ctrl+J [Text Editor, Workflow Designer]<br /><br /> nebo Ctrl+K, Ctrl+L [Workflow Designer]<br /><br /> nebo Ctrl+K, L [Workflow Designer]|  
-|Edit.NavigateTo|Ctrl+, [Global]|  
-|Edit.OpenFile|Ctrl+Shift+G [Global]|  
-|Edit.OvertypeMode|Insert [Text Editor]|  
-|Edit.ParameterInfo|Ctrl + Shift + mezerník [Text Editor, Workflow Designer]<br /><br /> nebo Ctrl+K, Ctrl+P [Workflow Designer]<br /><br /> nebo Ctrl+K, P [Workflow Designer]|  
-|Edit.Paste|Ctrl+V [Global]<br /><br /> nebo Shift+Insert [Global]|  
-|Edit.PeekDefinition|Alt+F12 [Text Editor]|  
-|Edit.Redo|Ctrl+Y [Global]<br /><br /> nebo Shift+Alt+Backspace [Global]<br /><br /> nebo Ctrl+Shift+Z [Global]|  
-|Edit.Replace|Ctrl+H [Global]|  
-|Edit.SelectAll|Ctrl+A [Global]|  
-|Edit.SelectCurrentWord|Ctrl+W [Text Editor]|  
-|Edit.SelectionCancel|Esc [Text Editor, Report Designer, Settings Designer, Windows Forms Designer, Managed Resources Editor]|  
-|Edit.SurroundWith|Ctrl+K, Ctrl+S [Global]|  
-|Edit.TabLeft|Shift+Tab [Text Editor, Report Designer, Windows Forms Editor]|  
-|Edit.ToggleAllOutlining|Ctrl+M, Ctrl+L [Text Editor]|  
-|Edit.ToggleBookmark|Ctrl+K, Ctrl+K [Text Editor]|  
-|Edit.ToggleCompletionMode|Ctrl + Alt + mezerník [Text Editor]|  
-|Edit.ToggleOutliningExpansion|Ctrl+M, Ctrl+M [Text Editor]|  
-|Edit.UncommentSelection|Ctrl+K, Ctrl+U [Text Editor]|  
-|Edit.Undo|Ctrl+Z [Global]<br /><br /> nebo Alt+Backspace [Global]|  
-|Edit.WordDeleteToEnd|Ctrl+Delete [Text Editor]|  
-|Edit.WordDeleteToStart|Ctrl+Backspace [Text Editor]|  
+|Edit.BreakLine|**Zadejte** [textový Editor, Návrhář sestav, Návrhář formulářů Windows]<br /><br /> nebo **Shift + Enter** [textového editoru]|  
+|Edit.CollapsetoDefinitions|**CTRL + M**, **Ctrl + O** [textového editoru]|  
+|Edit.CommentSelection|**CTRL + K**, **Ctrl + C** [textového editoru]|  
+|Edit.CompleteWord|**ALT + Šipka vpravo** [textový Editor, Návrhář postupu provádění]<br /><br /> nebo **Ctrl + mezerník** [textový Editor, Návrhář postupu provádění]<br /><br /> nebo **Ctrl + K**, **W** [Návrhář postupu provádění]<br /><br /> nebo **Ctrl + K, Ctrl + W** [Návrhář postupu provádění]|  
+|Edit.Copy|**CTRL + C** [globální]<br /><br /> nebo **Ctrl + Insert** [globální]|  
+|Edit.Cut|**CTRL + X** [globální]<br /><br /> nebo **Shift + Delete** [globální]|  
+|Edit.Delete|**Odstranit** [globální, Team Explorer]<br /><br /> nebo **Shift + Delete** [pořadí Diagram, Diagram činnosti UML, Diagram vrstev]<br /><br /> nebo **Ctrl + Delete** [třídy Diagram]|  
+|Edit.Find|**CTRL + F** [globální]|  
+|Edit.FindAllReferences|**SHIFT + F12** [globální]|  
+|Edit.FindinFiles|**Ctrl + Shift + F** [globální]|  
+|Edit.FindNext|**F3** [globální]|  
+|Edit.FindNextSelected|**CTRL + F3** [globální]|  
+|Edit.FormatDocument|**CTRL + K, Ctrl + D** [textového editoru]|  
+|Edit.FormatSelection|**CTRL + K, Ctrl + F** [textového editoru]|  
+|Edit.GoTo|**CTRL + G** [globální]|  
+|Edit.GoToDeclaration|**CTRL + F12** [globální]|  
+|Edit.GoToDefinition|**F12**|  
+|Edit.GoToFindCombo|**CTRL + D** [globální]|  
+|Edit.GoToNextLocation|**F8** [globální]|  
+|Edit.InsertSnippet|**CTRL + K**, **Ctrl + X** [globální]|  
+|Edit.InsertTab|**Karta** [sestavy textový Editor návrháře, Návrhář formulářů Windows]|  
+|Edit.LineCut|**CTRL + L** [textového editoru]|  
+|Edit.LineDownExtendColumn|**Shift + Alt + Šipka dolů** [textového editoru]|  
+|Edit.LineOpenAbove|**Ctrl + Enter** [textového editoru]|  
+|Edit.ListMembers|**CTRL + J** [textový Editor, Návrhář postupu provádění]<br /><br /> nebo **Ctrl + K, Ctrl + L** [Návrhář postupu provádění]<br /><br /> nebo **Ctrl + K, L** [Návrhář postupu provádění]|  
+|Edit.NavigateTo|**CTRL +** [globální]|  
+|Edit.OpenFile|**Ctrl + Shift + G** [globální]|  
+|Edit.OvertypeMode|**Vložit** [textového editoru]|  
+|Edit.ParameterInfo|**Ctrl + Shift + mezerník** [textový Editor, Návrhář postupu provádění]<br /><br /> nebo **Ctrl + K, Ctrl + P** [Návrhář postupu provádění]<br /><br /> nebo **Ctrl + K, P** [Návrhář postupu provádění]|  
+|Edit.Paste|**CTRL + V** [globální]<br /><br /> nebo **Shift + Insert** [globální]|  
+|Edit.PeekDefinition|**ALT + F12** [textového editoru]|  
+|Edit.Redo|**CTRL + Y** [globální]<br /><br /> nebo **Shift + Alt + Backspace** [globální]<br /><br /> nebo **Ctrl + Shift + Z** [globální]|  
+|Edit.Replace|**CTRL + H** [globální]|  
+|Edit.SelectAll|**CTRL + A** [globální]|  
+|Edit.SelectCurrentWord|**CTRL + W** [textového editoru]|  
+|Edit.SelectionCancel|**ESC** [textový Editor, Návrhář sestav, nastavení Designer, Návrhář formulářů Windows, spravované prostředky Editor]|  
+|Edit.SurroundWith|**CTRL + K, Ctrl + S** [globální]|  
+|Edit.TabLeft|**Shift + Tab** [Editor textový Editor, Návrhář sestav, Windows Forms]|  
+|Edit.ToggleAllOutlining|**CTRL + M, Ctrl + L** [textového editoru]|  
+|Edit.ToggleBookmark|**CTRL + K, Ctrl + K** [textového editoru]|  
+|Edit.ToggleCompletionMode|**Ctrl + Alt + mezerník** [textového editoru]|  
+|Edit.ToggleOutliningExpansion|**CTRL + M, Ctrl + M** [textového editoru]|  
+|Edit.UncommentSelection|**CTRL + K, Ctrl + U** [textového editoru]|  
+|Edit.Undo|**CTRL + Z** [globální]<br /><br /> nebo **Alt + Backspace** [globální]|  
+|Edit.WordDeleteToEnd|**CTRL + Delete** [textového editoru]|  
+|Edit.WordDeleteToStart|**Ctrl + Backspace** [textového editoru]|  
 
 ## <a name="file"></a>Soubor
 
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
-|File.Exit|Alt+F4 [Global]|  
-|File.NewFile|Ctrl+N [Global]|  
-|File.NewProject|Ctrl+Shift+N [Global]|  
-|File.NewWebSite|Shift+Alt+N [Global]|  
-|File.OpenFile|Ctrl+O [Global]|  
-|File.OpenProject|Ctrl+Shift+O [Global]|  
-|File.OpenWebSite|Shift+Alt+O [Global]|  
-|File.Rename|F2 [Team Explorer]|  
-|File.SaveAll|Ctrl+Shift+S [Global]|  
-|File.SaveSelectedItems|Ctrl+S [Global]|  
-|File.ViewinBrowser|Ctrl+Shift+W [Global]|  
+|File.Exit|**ALT + F4** [globální]|  
+|File.NewFile|**CTRL + N** [globální]|  
+|File.NewProject|**Ctrl + Shift + N** [globální]|  
+|File.NewWebSite|**Shift + Alt + N** [globální]|  
+|File.OpenFile|**CTRL + O** [globální]|  
+|File.OpenProject|**Ctrl + Shift + O** [globální]|  
+|File.OpenWebSite|**Shift + Alt + O** [globální]|  
+|File.Rename|**F2** [Team Explorer]|  
+|File.SaveAll|**Ctrl + Shift + S** [globální]|  
+|File.SaveSelectedItems|**CTRL + S** [globální]|  
+|File.ViewinBrowser|**Ctrl + Shift + W** [globální]|  
 
 ## <a name="project"></a>Projekt
 
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
-|Project.AddExistingItem|Shift+Alt+A [Global]|  
-|Project.AddNewItem|Ctrl+Shift+A [Global]|  
+|Project.AddExistingItem|**Shift + Alt + A** [globální]|  
+|Project.AddNewItem|**Ctrl + Shift + A** [globální]|  
 
 ## <a name="refactor"></a>Refaktorovat
 
-|Příkaz|Klávesová zkratka [Context]|  
+|Příkaz|Klávesové zkratky [kontext]|  
 |-------------|-----------------------------------|  
-|Refactor.ExtractMethod|Ctrl+R, Ctrl+M [Global]|  
+|Refactor.ExtractMethod|**CTRL + R, Ctrl + M** [globální]|  
 
 ## <a name="tools"></a>Nástroje
 
-|Příkaz|Klávesová zkratka [Context]|  
+|Příkaz|Klávesové zkratky [kontext]|  
 |-------------|-----------------------------------|  
-|Tools.AttachtoProcess|Ctrl+Alt+P [Global]|  
+|Tools.AttachtoProcess|**Ctrl + Alt + P** [globální]|  
 
 ## <a name="view"></a>Zobrazit
 
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
-|View.ClassView|Ctrl+Shift+C [Global]|  
-|View.EditLabel|F2 [globální]|  
-|View.ErrorList|CTRL +\\, Ctrl + E [globální]<br /><br /> nebo Ctrl +\\, E [globální]|  
-|View.NavigateBackward|Ctrl+- [Global]|  
-|View.NavigateForward|Ctrl+Shift+- [Global]|  
-|View.ObjectBrowser|Ctrl+Alt+J [Global]|  
-|View.Output|Ctrl+Alt+O [Global]|  
-|View.PropertiesWindow|F4|  
-|View.Refresh|F5 [Team Explorer, Team Foundation Build Detail Editor]|  
-|View.ServerExplorer|Ctrl+Alt+S [Global]|  
-|View.ShowSmartTag|Ctrl+. [Global]<br /><br /> nebo Shift+Alt+F10 [Global, HTML Editor Design View]|  
-|View.SolutionExplorer|Ctrl+Alt+L [Global]|  
-|View.TfsTeamExplorer|CTRL +\\, Ctrl + M [globální]|  
-|View.Toolbox|Ctrl+Alt+X [Global]|  
-|View.ViewCode|Enter [Class Diagram]<br /><br /> nebo F7 [Settings Designer]|  
-|View.ViewDesigner|Shift+F7 [HTML Editor Source View]|  
+|View.ClassView|**Ctrl + Shift + C** [globální]|  
+|View.EditLabel|**F2** [globální]|  
+|View.ErrorList|**CTRL +\\, Ctrl + E** [globální]<br /><br /> nebo **Ctrl +\\, E** [globální]|  
+|View.NavigateBackward|**CTRL +-** [globální]|  
+|View.NavigateForward|**Ctrl + Shift +-** [globální]|  
+|View.ObjectBrowser|**Ctrl + Alt + J** [globální]|  
+|View.Output|**Ctrl + Alt + O** [globální]|  
+|View.PropertiesWindow|**F4**|  
+|View.Refresh|**F5** [Team Explorer, Team Foundation sestavení podrobností Editor]|  
+|View.ServerExplorer|**Ctrl + Alt + S** [globální]|  
+|View.ShowSmartTag|**Ctrl+.** [Global]<br /><br /> nebo **kláves Shift + Alt + F10** [globální, HTML Editor návrhu]|  
+|View.SolutionExplorer|**Ctrl + Alt + L** [globální]|  
+|View.TfsTeamExplorer|**CTRL +\\, Ctrl + M** [globální]|  
+|View.Toolbox|**Ctrl + Alt + X** [globální]|  
+|View.ViewCode|**Zadejte** [třídy Diagram]<br /><br /> nebo **F7** [Návrhář nastavení]|  
+|View.ViewDesigner|**SHIFT + F7** [zobrazení zdroje HTML Editor]|  
 
 ## <a name="window"></a>Okno
 
 |Příkazy|Klávesové zkratky [kontexty]|  
 |--------------|-------------------------------------|  
-|Window.ActivateDocumentWindow|Esc [Global]|  
-|Window.CloseDocumentWindow|Ctrl+F4 [Global]|  
-|Window.NextDocumentWindow|Ctrl+F6 [Global]|  
-|Window.NextDocumentWindowNav|Ctrl+Tab [Global]|  
-|Window.NextSplitPane|F6 [globální]|
+|Window.ActivateDocumentWindow|**ESC** [globální]|  
+|Window.CloseDocumentWindow|**CTRL + F4** [globální]|  
+|Window.NextDocumentWindow|**CTRL + F6** [globální]|  
+|Window.NextDocumentWindowNav|**CTRL + Tab** [globální]|  
+|Window.NextSplitPane|**F6** [globální]|
 
 ## <a name="see-also"></a>Viz také
 

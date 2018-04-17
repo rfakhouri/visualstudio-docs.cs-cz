@@ -2,20 +2,18 @@
 title: Přizpůsobení chování kopie | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.topic: article
+ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8eba726c35b402e93bd1fd1b50048b8dce4bf2b
-ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
+ms.openlocfilehash: c46291a2827a673eaf597a8bb9fa738c3ab79b0b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="customizing-copy-behavior"></a>Přizpůsobení chování kopírování
 V jazyce specifické pro doménu (DSL) vytvořené pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vizualizace a modelování SDK, můžete změnit, co se stane, když uživatel zkopíruje a vloží elementy.  
@@ -219,7 +217,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 ##  <a name="customizeLinks"></a> Přizpůsobení chování Kopírovat odkaz  
  Když uživatel kopie elementu, standardní chování je, že jsou všechny vložené prvky také zkopírován. Standardní chování kopírování, můžete upravit. V definici DSL vybrat roli na jedné straně relace a v sadě okno Vlastnosti **rozšíří kopie** hodnotu.  
   
- ![Propagates Copy property of domain role](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
+ ![Rozšíří vlastnost kopírování role domény](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
   
  Existují tři hodnoty:  
   
@@ -229,7 +227,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
 -   Rozšíří kopie propojení a opačným role player - zkopírovaný skupina obsahuje kopii elementu na druhém konci odkazu.  
   
- ![Effect of copying with PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
+ ![Účinek kopírování s PropagateCopyToLinkOnly](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
   
  Elementy a bitovou kopii, která se zkopírují, bude mít vliv změny, které provedete.  
   

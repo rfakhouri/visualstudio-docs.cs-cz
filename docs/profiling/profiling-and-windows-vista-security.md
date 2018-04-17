@@ -1,26 +1,24 @@
 ---
-title: "Profilování a zabezpečení systému Windows Vista | Microsoft Docs"
-ms.custom: 
+title: Profilování a zabezpečení systému Windows Vista | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,security
 - performance tools, security
 ms.assetid: 842112fc-b886-4801-8cd7-a25b314b0393
-caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 0dad9e27eff76c36cadf132cb3a1b0aaec1e44da
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: f64483ff7c296e8a428d845018ac9630419c037e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="profiling-and-windows-vista-security"></a>Profilace a zabezpečení systému Windows Vista
 V závislosti na tom [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] nastavení přístupová oprávnění uživatelů, které správce počítače má k dispozici, jednotlivého uživatele může mít bezpečnostní oprávnění k profilu proces na tomto počítači. Následující příklady ilustrují možné rozdíly mezi uživateli:  
