@@ -1,29 +1,25 @@
 ---
-title: "Idiatable – | Microsoft Docs"
-ms.custom: 
+title: Idiatable – | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaTable interface
 ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f596d2c51c5d5e543ed67212662c5096ea2e4eb
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 93eedd9579f264b218e9c05c29dc3848fb3ceb9f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiatable"></a>IDiaTable
 Vytvoří výčet DIA data zdrojová tabulka.  
@@ -72,7 +68,7 @@ IDiaTable : IEnumUnknown
  První funkce `ShowTableNames`, zobrazuje názvy všechny tabulky v relaci. Funkce second `GetTable`, vyhledá všechny tabulky pro tabulku, která implementuje rozhraní je zadaný. Třetí funkce `UseTable`, ukazuje způsob použití `GetTable` funkce.  
   
 > [!NOTE]
->  `CDiaBSTR`je třída, která zabalí `BSTR` a automaticky zpracovává uvolnění řetězec při vytváření instance ocitne mimo rozsah.  
+>  `CDiaBSTR` je třída, která zabalí `BSTR` a automaticky zpracovává uvolnění řetězec při vytváření instance ocitne mimo rozsah.  
   
 ```C++  
 void ShowTableNames(IDiaSession *pSession)  

@@ -1,12 +1,10 @@
 ---
-title: "Nasazování aplikací ClickOnce pro testovací a produkční servery bez opětovného podpisu | Microsoft Docs"
-ms.custom: 
+title: Nasazování aplikací ClickOnce pro testovací a produkční servery bez opětovného podpisu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - deploymentProvider tag
 - manifests [ClickOnce]
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
-caps.latest.revision: "10"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: ec7265f91d5c202d5885b7f1994aa6f037d6d2ab
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 54474f0388ecbdbc9b1b1cb207544fd7091c1e96
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Nasazování aplikací ClickOnce pro testovací a produkční servery bez opětovného podepsání
 Toto téma popisuje nové funkce byla zavedená v rozhraní .NET Framework verze 3.5, která umožňuje nasazení aplikací ClickOnce z více umístění v síti bez opětovné podepisování nebo změna ClickOnce manifesty ClickOnce.  
@@ -54,11 +52,11 @@ Toto téma popisuje nové funkce byla zavedená v rozhraní .NET Framework verze
   
  Klíče bodu zapamatujte si je, že aplikace, které vyloučit `deploymentProvider` nelze změnit jejich umístění instalovat během aktualizace, dokud nebude dodána aktualizace, která zahrnuje `deploymentProvider` značky znovu.  
   
- Tady jsou dva příklady o vysvětlení, tento bod. V prvním příkladu, publikování aplikace ClickOnce, která nemá žádné `deploymentProvider` značky a požádejte uživatele k instalaci z http://www.adatum.com/MyApplication/. Pokud se rozhodnete, že chcete publikovat další aktualizace aplikace z http://subdomain.adatum.com/MyApplication/, budete mít žádný způsob, jak to zaznamenat v manifestu nasazení, který se nachází v http://www.adatum.com/MyApplication/. Můžete provést jednu ze dvou akcí:  
+ Tady jsou dva příklady o vysvětlení, tento bod. V prvním příkladu, publikování aplikace ClickOnce, která nemá žádné `deploymentProvider` značky a požádejte uživatele, aby nainstalujte ji z http://www.adatum.com/MyApplication/. Pokud je rozhodnout, kterou chcete publikovat další aktualizace aplikací z http://subdomain.adatum.com/MyApplication/, nebude se už to zaznamenat v manifestu nasazení, který se nachází v http://www.adatum.com/MyApplication/. Můžete provést jednu ze dvou akcí:  
   
 -   Uživatelům řekněte, aby odinstalujte předchozí verzi a nainstaluje novou verzi z nového umístění.  
   
--   Zahrnout aktualizaci v http://www.adatum.com/MyApplication/, která obsahuje `deploymentProvider` odkazující na http://www.adatum.com/MyApplication/. Uvolněte později další aktualizaci s `deploymentProvider` odkazující na http://subdomain.adatum.com/MyApplication/.  
+-   Zahrnout aktualizace na http://www.adatum.com/MyApplication/ , který obsahuje `deploymentProvider` odkazující na http://www.adatum.com/MyApplication/. Uvolněte později další aktualizaci s `deploymentProvider` odkazující na http://subdomain.adatum.com/MyApplication/.  
   
  V druhém příkladu publikujete ClickOnce aplikaci, která určuje `deploymentProvider`, a potom se rozhodnete ji odebrat. Jednou na novou verzi bez `deploymentProvider` byl stažen klientům, nebude možné přesměrovat cestu používané pro aktualizace, dokud vydání verze aplikace, který má `deploymentProvider` obnovit. Stejně jako v prvním příkladu, `deploymentProvider` původně musí odkazovat na aktuální umístění aktualizace, nikoliv do nového umístění. V tomto případě, pokud se pokusíte vložit `deploymentProvider` který odkazuje na http://subdomain.adatum.com/MyApplication/, že příští aktualizace se nezdaří.  
   

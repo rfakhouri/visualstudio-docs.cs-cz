@@ -1,27 +1,25 @@
 ---
-title: "Nasazení aplikací UWP ze sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Nasazení aplikací UWP ze sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/16/2018
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 28b1897fad45ae0c2bd174c39433645caf011f09
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: dec0b32b0be121e15c81b93f5ed7dd6aa0b9c324
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Nasazení aplikací UWP ze sady Visual Studio
   
@@ -39,7 +37,7 @@ ms.lasthandoff: 01/19/2018
   
 -   Nasazení aplikace, která bude ladit, když je spuštěna jiná aplikace nebo metoda.
   
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a>Postup nasazení aplikace pro UPW  
+##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Postup nasazení aplikace pro UPW  
  Ruční nasazení aplikace je jednoduchý proces:  
   
 1.  Pokud nasazujete na vzdáleném zařízení, zadejte název nebo IP adresa zařízení, na stránce vlastností projektu projektu po spuštění aplikace. (Kroky, jak provést toto jsou uvedeny níže v tomto tématu.).  
@@ -50,7 +48,7 @@ ms.lasthandoff: 01/19/2018
   
 3.  Na **sestavení** nabídce zvolte **nasadit**  
   
-##  <a name="BKMK_How_to_specify_a_remote_device"></a>Určení vzdáleném zařízení  
+##  <a name="BKMK_How_to_specify_a_remote_device"></a> Určení vzdáleném zařízení  
 
 **Požadavky**  
   
@@ -81,7 +79,7 @@ Nasazení použije síťový kanál vzdáleného ladicího programu k odeslání
   
  **Určení vzdáleného zařízení na stránce projektu JavaScript nebo Visual C++**  
   
- ![C & č. 43; & č. 43; vlastnosti pro vzdálené ladění projektu](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
+ ![C&#43; &#43; projektu vlastnosti pro vzdálené ladění](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")  
   
 1.  Zvolte **vzdáleného ladicího programu** z **ladicí program ke spuštění** seznamu.  
   
@@ -95,7 +93,7 @@ Nasazení použije síťový kanál vzdáleného ladicího programu k odeslání
   
 2.  Zadejte název vzdáleného zařízení v síti **vzdáleného počítače** pole nebo klikněte na tlačítko **najít** vybrat ze zařízení **vyberte připojení vzdáleného ladicího programu** dialogové okno.  
   
-##  <a name="BKMK_Deployment_options"></a>Možnosti nasazení  
+##  <a name="BKMK_Deployment_options"></a> Možnosti nasazení  
  Můžete nastavit následující možnosti nasazení na stránce vlastností ladění spouštěný projekt.  
   
  **Povolit zpětnou smyčku sítě**  

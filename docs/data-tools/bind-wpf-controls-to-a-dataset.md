@@ -1,11 +1,8 @@
 ---
-title: "Vytvoření vazby ovládacích prvků WPF k datové sadě | Microsoft Docs"
-ms.custom: 
+title: Vytvoření vazby ovládacích prvků WPF k datové sadě | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -14,17 +11,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: f4034651b68194906285c6d1911f7f650287074d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky vázané na data. Ovládací prvky jsou vázány na záznamy produktu, které jsou zapouzdřené v datové sadě. Taky se přidá tlačítka Procházet produkty a uložit změny do produktu, záznamů.  
@@ -183,11 +180,11 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 7.  V **vlastnosti** okno, zaškrtněte políčko vedle položky **IsReadOnly** vlastnost.  
   
 ## <a name="navigating-product-records"></a>Procházení záznamů produktu  
- Přidejte kód, který umožňuje uživatelům procházet záznamy produktu pomocí  **\<**  a  **>**  tlačítka.  
+ Přidejte kód, který umožňuje uživatelům procházet záznamy produktu pomocí **\<** a **>** tlačítka.  
   
 #### <a name="to-enable-users-to-navigate-product-records"></a>Chcete-li povolit uživatelům procházet záznamy produktu  
   
-1.  V návrháři, dvakrát klikněte  **<**  tlačítko na povrchu okno.  
+1.  V návrháři, dvakrát klikněte **<** tlačítko na povrchu okno.  
   
      Visual Studio otevře soubor kódu a vytvoří novou `backButton_Click` obslužné rutiny události pro <xref:System.Windows.Controls.Primitives.ButtonBase.Click> událostí.  
   
@@ -201,7 +198,7 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
      [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
      [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  Vrátí pro návrháře a dvojitým kliknutím  **>**  tlačítko.  
+4.  Vrátí pro návrháře a dvojitým kliknutím **>** tlačítko.  
   
 5.  Přidejte následující kód, který `nextButton_Click` obslužné rutiny události:  
   
@@ -236,7 +233,7 @@ Přidejte kód, který umožňuje uživatelům uložit změny do záznamů produ
   
     -   Do textových polí zobrazit data z první položky produktu, který má fotografie. Tento produkt má produkt ID 713 a název **dlouho obal Logo Jersey, S**.  
   
-    -   Můžete kliknout na  **>**  nebo  **<**  tlačítka Procházet další záznamy produktu.  
+    -   Můžete kliknout na **>** nebo **<** tlačítka Procházet další záznamy produktu.  
   
 2.  V jednom z záznamy produktů změnit **velikost** hodnotu a pak klikněte na **uložit změny**.  
   

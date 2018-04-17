@@ -1,29 +1,25 @@
 ---
-title: "Idiaenumsymbols – | Microsoft Docs"
-ms.custom: 
+title: Idiaenumsymbols – | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumSymbols interface
 ms.assetid: 649f7bfd-86ac-49a5-8533-aff77e1bc62e
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66d972ad65bd6ff3f4f9f5d7dd71893d9fe09c2c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e4e6384e6822c03190d3650d2a1371f7b9fffe59
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 Provede výčet různých symboly obsažené v datovém zdroji.  
@@ -63,7 +59,7 @@ IDiaEnumSymbols : IUnknown
  Tento příklad ukazuje, jak získat `IDiaEnumSymbols` rozhraní a pak používat tento výčet do seznamu uživatelem definované typy (UDT).  
   
 > [!NOTE]
->  `CDiaBSTR`je třída, která zabalí `BSTR` a automaticky zpracovává uvolnění řetězec při vytváření instance ocitne mimo rozsah.  
+>  `CDiaBSTR` je třída, která zabalí `BSTR` a automaticky zpracovává uvolnění řetězec při vytváření instance ocitne mimo rozsah.  
   
 ```C++  
 void ShowUDTs(IDiaSymbol *pGlobals)  

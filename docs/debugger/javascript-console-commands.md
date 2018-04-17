@@ -1,28 +1,25 @@
 ---
-title: "Příkazy konzoly pro JavaScript v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Příkazy konzoly pro JavaScript v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
 - debugging JavaScript, console [UWP apps]
-caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 1f2d6f356d4e886488f4b6558c6cfb92d7b9c974
-ms.sourcegitcommit: 5d43e9590e2246084670b79269cc9d99124bb3df
+ms.openlocfilehash: df4055790cf715b3a521b6ccc09d5c6920a47136
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Příkazy konzoly pro JavaScript v sadě Visual Studio
   
@@ -69,7 +66,7 @@ ms.lasthandoff: 01/19/2018
   
 |Příkaz|Popis|Příklad|  
 |-------------|-----------------|-------------|  
-|`$0`, `$1`, `$2`, `$3`, `$4`|Vrátí zadaný element v okně konzoly. `$0`Vrátí element v Průzkumníku modelu DOM. aktuálně vybranou `$1` vrátí prvek dříve vybraném v Průzkumníku modelu DOM. a tak dále, až čtvrté dříve vybraný prvek.|$3|  
+|`$0`, `$1`, `$2`, `$3`, `$4`|Vrátí zadaný element v okně konzoly. `$0` Vrátí element v Průzkumníku modelu DOM. aktuálně vybranou `$1` vrátí prvek dříve vybraném v Průzkumníku modelu DOM. a tak dále, až čtvrté dříve vybraný prvek.|$3|  
 |`$(id)`|Vrátí element podle ID. Jedná se o zástupce příkaz pro `document.getElementById(id)`, kde `id` je řetězec, který představuje ID elementu.|`$("contenthost")`|  
 |`$$(selector)`|Vrátí pole elementů, které odpovídají zadané selektor pomocí syntaxe selektor šablon stylů CSS. Jedná se o zástupce příkaz pro `document.querySelectorAll()`.|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|Umožňuje změnit kontext pro vyhodnocení výrazu z okna nejvyšší úrovně výchozí stránky do okna zadaného rámce. Volání metody `cd()` bez parametrů vrátí kontext do okna nejvyšší úrovně.|`cd();`<br /><br /> `cd(myframe);`|  
@@ -89,7 +86,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Prozkoumání objektů v okně konzoly jazyka JavaScript  
  Můžete používat libovolný objekt, který je v oboru, při použití okna konzoly jazyka JavaScript. Chcete-li prověřit objekt na více systémů oboru v okně konzoly, použijte `console.log` , `console.dir`, nebo jinými příkazy z vašeho kódu. Alternativně můžete pracovat s objektem z okna konzoly i když je v oboru nastavením zarážky v kódu (**zarážek** > **vložit zarážku**).  
   
-##  <a name="ConsoleLog"></a>Formátování console.log výstup  
+##  <a name="ConsoleLog"></a> Formátování console.log výstup  
  Pokud předáte více argumentů pro `console.log`, konzole bude považovat za pole argumentů a řetězení výstup.  
   
 ```javascript  
@@ -103,7 +100,7 @@ console.log(user.first, user.last);
   
 ```  
   
- `console.log`také podporuje vzory pro nahrazování "printf" k formátování výstupu. Pokud používáte vzory pro nahrazování v prvním argumentu, další argumenty se použije pro nahrazení zadaný vzorců v pořadí, ve kterém se používají.  
+ `console.log` také podporuje vzory pro nahrazování "printf" k formátování výstupu. Pokud používáte vzory pro nahrazování v prvním argumentu, další argumenty se použije pro nahrazení zadaný vzorců v pořadí, ve kterém se používají.  
   
  Podporovány jsou následující vzory pro nahrazování:  
   

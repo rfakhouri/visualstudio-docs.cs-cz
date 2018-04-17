@@ -1,25 +1,21 @@
 ---
 title: IDiaSymbol::get_isSingleInheritance | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4481fd4517db89867ca21b137af454980f60de26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+manager: douge
+ms.openlocfilehash: 205999966ceed0a8054fb6d004fb289a661ace29
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
 Určuje, zda `this` body ukazatele na člena s jedna dědičnost.  
@@ -39,4 +35,4 @@ HRESULT get_isSingleInheritance(
  V případě úspěchu vrátí `S_OK`, jinak vrátí `S_FALSE` nebo chybový kód.  
   
 ## <a name="see-also"></a>Viz také  
- [Idiasymbol –](../../debugger/debug-interface-access/idiasymbol.md)
+ [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

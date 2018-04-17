@@ -1,29 +1,25 @@
 ---
-title: "Idiasymbol::get_undecoratednameex – | Microsoft Docs"
-ms.custom: 
+title: Idiasymbol::get_undecoratednameex – | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d0b25b2306cc957015ec4c205a22cd44660357
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: d737ccfe9dbbcdf7a205fb847bb81344cd18ff0c
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Načte část nebo všechny bez upraveného název jazyka C++ dekorované název (propojení).  
@@ -69,7 +65,7 @@ HRESULT get_undecoratedNameEx(
 |UNDNAME_NO_THISTYPE|0x0060|Zakáže všechny modifikátory na `this` typu.|  
 |UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Zakáže rozšíření přístup ke specifikátorům pro členy.|  
 |UNDNAME_NO_THROW_SIGNATURES|0x0100|Zakáže rozšíření "throw-podpisů" pro funkce a ukazatelé na funkce.|  
-|UNDNAME_NO_MEMBER_TYPE|hodnotu 0x0200|Zakáže rozšíření `static` nebo `virtual` členy.|  
+|UNDNAME_NO_MEMBER_TYPE|0x0200|Zakáže rozšíření `static` nebo `virtual` členy.|  
 |UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Zakáže rozšíření Microsoft modelu pro UDT vrátí.|  
 |UNDNAME_32_BIT_DECODE|0x0800|Dekorované názvy 32-bit undecorates.|  
 |UNDNAME_NAME_ONLY|0x1000|Získá název pro primární deklaraci; Vrátí právě [oboru::] název.  Rozšíří parametry šablony.|  

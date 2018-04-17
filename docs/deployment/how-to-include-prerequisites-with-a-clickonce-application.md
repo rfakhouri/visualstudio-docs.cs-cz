@@ -1,23 +1,21 @@
 ---
-title: "Postupy: zahrnutí předpokladů s aplikací ClickOnce | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: zahrnutí předpokladů s aplikací ClickOnce | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: 4fbab9bacc8c5272588a4b2dfe819650bfc6110f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 7283ce590770c1ed2d14ffb79ec71d594c8b21f1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Postupy: Zahrnutí předpokladů s aplikací ClickOnce
 Před distribucí požadovaný software s [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, musíte nejprve stáhnout balíčky Instalační služby pro tyto požadavky na vývojovém počítači. Při publikování aplikace a zvolte **Stáhnout požadavky ze stejného umístění jako Moje aplikace**, dojde k chybě, pokud balíčky Instalační služby systému nejsou v **balíčky** složky.  
@@ -25,7 +23,7 @@ Před distribucí požadovaný software s [!INCLUDE[ndptecclick](../deployment/i
 > [!NOTE]
 >  Chcete-li přidat balíček Instalační služby pro rozhraní .NET Framework, najdete v části [rozhraní .NET Framework Průvodce nasazením pro vývojáře](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a>Chcete-li přidat balíček Instalační služby pomocí Package.xml  
+##  <a name="Package"></a> Chcete-li přidat balíček Instalační služby pomocí Package.xml  
   
 1.  V Průzkumníku souborů, otevřete **balíčky** složky.  
   
@@ -38,7 +36,7 @@ Před distribucí požadovaný software s [!INCLUDE[ndptecclick](../deployment/i
 4.  Vyhledejte **název** elementu, který obsahuje **http://go.microsoft.com/fwlink**a zkopírujte adresu URL. Zahrnout **LinkID** část.  
   
     > [!NOTE]
-    >  Pokud žádné **název** obsahuje element **http://go.microsoft.com/fwlink**, otevřete **Product.xml** souboru do kořenové složky pro požadované součásti a najděte  **fwlink** řetězec.  
+    >  Pokud žádné **název** obsahuje element **http://go.microsoft.com/fwlink**, otevřete **Product.xml** souboru do kořenové složky pro požadované součásti a najděte **fwlink** řetězec.  
   
     > [!IMPORTANT]
     >  Některé požadované softwarové programy mohou mít několik instalačních balíčků (například v 32bitových nebo 64bitových systémech). Pokud více **název** prvky obsahují **fwlink**, je nutné opakovat zbývající kroky pro každý z nich.  

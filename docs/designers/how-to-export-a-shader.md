@@ -1,23 +1,21 @@
 ---
 title: 'Postupy: Export shaderu | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
-caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 6b4c7cedd267ba02772db16e026803061933cf5d
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: d50a91184a364f9803a8dde6ebd9a60f05c1a1b1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-export-a-shader"></a>Postupy: Exportování shaderu
 Tento dokument ukazuje, jak používat návrháře shaderu export shaderu směrované grafu shaderu jazyk (DGSL), aby ho můžete používat ve vaší aplikaci.  

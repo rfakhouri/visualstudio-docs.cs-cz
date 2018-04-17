@@ -1,36 +1,32 @@
 ---
-title: "BuildProjectOnLoad (šablony sady Visual Studio) | Microsoft Docs"
-ms.custom: 
+title: BuildProjectOnLoad (šablony sady Visual Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#BuildOnLoad
 helpviewer_keywords:
 - <BuildOnLoad> element [Visual Studio Templates]
 - BuildOnLoad element [Visual Studio Templates]
 ms.assetid: 950f5fc1-d041-4090-9a5c-60844768a4cc
-caps.latest.revision: 
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
+manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b3fc7842e71ff1bff3bd3e362f0c12afcf4292f
-ms.sourcegitcommit: d6327b978661c0a745bf4b59f32d8171607803a3
+ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad (šablony sady Visual Studio)
 Určuje, jestli pro sestavení projektu ihned po jeho vytvoření.  
   
  \<VSTemplate >  
- \<TemplateData>  
+ \<TemplateData >  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -60,7 +56,7 @@ Určuje, jestli pro sestavení projektu ihned po jeho vytvoření.
  Text musí být buď `true` nebo `false`, která určuje, zda pro sestavení projektu ihned po jeho vytvoření.  
   
 ## <a name="remarks"></a>Poznámky  
- `BuildProjectOnLoad`je volitelný atribut. Výchozí hodnota je `false`.  
+ `BuildProjectOnLoad` je volitelný atribut. Výchozí hodnota je `false`.  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ilustruje metadata pro [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] šablony.  
@@ -91,6 +87,6 @@ Určuje, jestli pro sestavení projektu ihned po jeho vytvoření.
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [TemplateContent Element (Visual Studio Templates)](../extensibility/templatecontent-element-visual-studio-templates.md)   
+ [TemplateContent – Element (šablony sady Visual Studio)](../extensibility/templatecontent-element-visual-studio-templates.md)   
  [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)   
  [Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

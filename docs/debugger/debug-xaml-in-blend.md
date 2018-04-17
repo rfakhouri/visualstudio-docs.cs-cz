@@ -1,28 +1,26 @@
 ---
-title: "Ladění kódu XAML v programu Blend | Microsoft Docs"
-ms.custom: 
+title: Ladění kódu XAML v programu Blend | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 8406f07b6f74211b4df873c7eae054e9ab67749c
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: efcb38238bfc1d8001e99d6755da1f3e2f02edcd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debug-xaml-in-blend"></a>Ladění kódu XAML v programu Blend
 Můžete pomocí nástrojů v [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] k ladění kódu XAML v aplikaci. Při sestavování projektu se zobrazí nějaké chyby v **výsledky** panelu. Dvakrát klikněte na chybu zjistit kód týkající se chyby. Pokud potřebujete více místa k práci, můžete skrýt **výsledky** panely stisknutím klávesy F12.  
@@ -109,13 +107,13 @@ Můžete pomocí nástrojů v [!INCLUDE[blend_first](../debugger/includes/blend_
   
 1.  Dvakrát klikněte na první chyba v seznamu. Popis je "hodnota ' <' není platný v atributu." Když dvakrát kliknete chyby, ukazatele najde odpovídající umístění v kódu. `<` Předchozí `Button` je platný a není atribut dle pokynů v chybové zprávě. Pokud se podíváte na předchozí řádek kódu, můžete si všimnout, že je pro atribut označí uzavírací uvozovky `Top` chybí. Zadejte uzavírací uvozovky. Všimněte si, že chyba seznamu v **výsledky** panelu aktualizace, aby se projevily provedené změny.  
   
-2.  Klikněte dvakrát na popis "'0' není platný na začátku názvu." `Margin="0,149,0,0"`Zobrazí se ve správném formátu. Všimněte si však, že barevné kódování z `Margin` neodpovídá ostatní instance `Margin` v kódu. Protože předchozí dvojici název – hodnota chybí ukončovací uvozovky (`VerticalAlignment="Top`), `Margin="` je přečíst část hodnoty předchozí atribut a 0 je pro čtení jako začátek dvojici název/hodnota. Zadejte uzavírací uvozovky pro `Top`. V seznamu chyb v **výsledky** panelu aktualizace, aby se projevily provedené změny.  
+2.  Klikněte dvakrát na popis "'0' není platný na začátku názvu." `Margin="0,149,0,0"` Zobrazí se ve správném formátu. Všimněte si však, že barevné kódování z `Margin` neodpovídá ostatní instance `Margin` v kódu. Protože předchozí dvojici název – hodnota chybí ukončovací uvozovky (`VerticalAlignment="Top`), `Margin="` je přečíst část hodnoty předchozí atribut a 0 je pro čtení jako začátek dvojici název/hodnota. Zadejte uzavírací uvozovky pro `Top`. V seznamu chyb v **výsledky** panelu aktualizace, aby se projevily provedené změny.  
   
 3.  Dvakrát klikněte na zbývající chybu "je neshoda ukončovací značka XML pro dokumentaci, tlačítko"." Ukazatel myši nachází na ukončovací **mřížky** značky (`</Grid>`), které naznačují, který je chyba uvnitř `Grid` objektu. Všimněte si, že druhá `Button` objektu chybí uzavírací značku. Po přidání ukončovací `/`, **výsledky** panelu seznam se aktualizuje. Teď, když tyto počáteční chyby byly vyřešeny, byly zjištěny dva další chyby.  
   
 4.  Dvakrát klikněte na "člen 'content' není rozpoznaný nebo není přístupná." `c` v `content` musí být velkými písmeny. Malá "c" nahraďte elká "c".  
   
-5.  Dvakrát klikněte na "Vlastnosti 'Mame' neexistuje v oboru názvů 'http://schemas.microsoft.com/winfx/2006/xaml'." "M" v "Mame" by měla být "N" Nahraďte "M", "N" Teď můžete analyzovat XAML, zobrazí se na návrhovou plochu aplikace.  
+5.  Dvakrát klikněte na "vlastnost 'Mame' neexistuje v 'http://schemas.microsoft.com/winfx/2006/xaml' obor názvů." "M" v "Mame" by měla být "N" Nahraďte "M", "N" Teď můžete analyzovat XAML, zobrazí se na návrhovou plochu aplikace.  
   
      ![Ladění jazyka XAML v programu Blend for Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")  
   

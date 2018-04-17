@@ -1,23 +1,20 @@
 ---
-title: "Postupy: Změna návratový typ metody DataContext (Návrhář O-R) | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Změna návratový typ metody DataContext (Návrhář O-R) | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
-caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: douge
 ms.technology: vs-data-tools
-ms.workload: data-storage
-ms.openlocfilehash: e086747d859e1e3306d9f42fbe296d144954382f
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- data-storage
+ms.openlocfilehash: 0b9660433b357d6ec1ddead86611387e0cb5c11a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Postupy: Změna návratový typ metody DataContext (Návrhář relací objektů)
 Návratový typ <xref:System.Data.Linq.DataContext> (vytvořili podle uložená procedura nebo funkce) se liší v závislosti na tom, kde vyřadit uložená procedura nebo funkce v [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Pokud je vyřadit položku přímo do existující třídy entity, <xref:System.Data.Linq.DataContext> metodu, která má návratový typ třídy entita se vytvoří (Pokud je schéma dat vrácených uložená procedura nebo funkce odpovídá tvaru třídy entity). Pokud je položka vyřadit na prázdnou oblast [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], <xref:System.Data.Linq.DataContext> metoda, která vrátí typ automaticky generované se vytvoří. Můžete změnit návratový typ <xref:System.Data.Linq.DataContext> metoda po přidání do podokna metody. Zkontrolovat nebo změnit návratový typ <xref:System.Data.Linq.DataContext> metoda, vyberte ho a klikněte na tlačítko **návratového typu** vlastnost **vlastnosti** okno.  

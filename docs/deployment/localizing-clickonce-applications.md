@@ -1,12 +1,10 @@
 ---
-title: "Lokalizace aplikací ClickOnce | Microsoft Docs"
-ms.custom: 
+title: Lokalizace aplikací ClickOnce | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - Windows Forms, ClickOnce applications
 - console applications, ClickOnce applications
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
-caps.latest.revision: "16"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: multiple
-ms.openlocfilehash: e1b5b9697445b2d8cc35a73841526db0bd69b5f8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- multiple
+ms.openlocfilehash: 1e14305b9a1c45c5a050e83fbcc5d20e49ca2a5a
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="localizing-clickonce-applications"></a>Lokalizace aplikací ClickOnce
 Lokalizace je proces vytváření aplikace vhodné pro konkrétní jazykové verze. Tento proces zahrnuje překlad text v uživatelském rozhraní (UI) na oblast konkrétní jazyk pomocí správné datum a formátování měny, nastavení velikosti ovládacích prvků ve formuláři, a zrcadlení ovládacích prvků zprava doleva v případě potřeby.  
@@ -60,7 +58,7 @@ Lokalizace je proces vytváření aplikace vhodné pro konkrétní jazykové ver
 ## <a name="generate-one-deployment-for-each-culture"></a>Generovat jedno nasazení pro každou jazykovou verzi  
  V této strategie nasazení můžete generovat více nasazení. V každé nasazení zahrnete pouze satelitní sestavení pro konkrétní jazykové verze potřeba a označit nasazení jako specifické pro danou jazykovou verzi.  
   
- Chcete použít tuto metodu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nastavte **jazyk publikování** vlastnost **publikovat** kartě na požadovanou oblast. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]automaticky zahrne satelitní sestavení požadované pro oblast vyberete a vyloučí všechny ostatní satelitních sestavení z nasazení.  
+ Chcete použít tuto metodu v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], nastavte **jazyk publikování** vlastnost **publikovat** kartě na požadovanou oblast. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticky zahrne satelitní sestavení požadované pro oblast vyberete a vyloučí všechny ostatní satelitních sestavení z nasazení.  
   
  Totéž můžete provést pomocí nástroje MageUI.exe v Microsoft [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Použití **vyplnit** na tlačítko **soubory** kartě manifest aplikace chcete vyloučit jiných satelitních sestavení z adresáře aplikace a poté nastavte **jazykovou verzi**pole na **název** kartu pro manifest nasazení v MageUI.exe. Tyto kroky nejen zahrnují správné satelitní sestavení, ale také nastavit `language` atributu u `assemblyIdentity` element v manifestu nasazení na odpovídající jazykovou verzi.  
   

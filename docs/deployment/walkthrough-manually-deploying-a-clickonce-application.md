@@ -1,13 +1,10 @@
 ---
-title: "Návod: Ruční nasazení aplikace ClickOnce | Microsoft Docs"
-ms.custom: 
+title: 'Návod: Ruční nasazení aplikace ClickOnce | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,17 +18,16 @@ helpviewer_keywords:
 - manual ClickOnce deployments
 - manifests [ClickOnce]
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
-caps.latest.revision: 
 author: stevehoag
 ms.author: shoag
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0035641a8ed374892060dbaabe79d808150cc2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 001aa8f3436e1594b198a81779c77258ca829a21
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Návod: Ruční nasazení aplikace ClickOnce
 Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace, nebo budete muset použít nasazení pokročilé funkce, jako je například nasazení důvěryhodných aplikací by měl použít nástroj příkazového řádku Mage.exe k vytvoření vašeho [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesty. Tento návod popisuje, jak vytvořit [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí příkazového řádku verze (Mage.exe) nebo grafické verze (MageUI.exe) generování manifestu a nástroj pro úpravy.  
@@ -70,7 +66,7 @@ Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick
   
 -   Určí, zda aplikace vyžaduje splnění požadavků na klientském počítači.  
   
-     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]aplikace nasazené ze sady Visual Studio mohou zahrnovat zavaděč instalace nezbytné součásti (setup.exe) v rámci vašeho nasazení. Tento návod vytvoří dva manifesty požadované pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení. Zaváděcí můžete vytvořit pomocí [GenerateBootstrapper – úloha](../msbuild/generatebootstrapper-task.md).  
+     [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace nasazené ze sady Visual Studio mohou zahrnovat zavaděč instalace nezbytné součásti (setup.exe) v rámci vašeho nasazení. Tento návod vytvoří dva manifesty požadované pro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení. Zaváděcí můžete vytvořit pomocí [GenerateBootstrapper – úloha](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Nasazení aplikace pomocí nástroje příkazového řádku Mage.exe  
   
@@ -128,7 +124,7 @@ Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick
   
 10. Zkopírujte všechny soubory v adresáři pro nasazení do cíle nasazení nebo médium. To může být buď do složky na webu nebo serveru FTP, sdílené složky nebo disku CD-ROM.  
   
-11. Uživatelům poskytnout adresu URL, UNC nebo fyzická média, které jsou potřebné k instalaci vaší aplikace. Pokud zadáte adresu URL nebo název cesty UNC, je třeba uživatelům zadat úplnou cestu manifestu nasazení. Například pokud je AppToDeploy nasazena na http://webserver01/ v adresáři AppToDeploy, úplná cesta URL bude http://webserver01/AppToDeploy/AppToDeploy.application.  
+11. Uživatelům poskytnout adresu URL, UNC nebo fyzická média, které jsou potřebné k instalaci vaší aplikace. Pokud zadáte adresu URL nebo název cesty UNC, je třeba uživatelům zadat úplnou cestu manifestu nasazení. Například, pokud je AppToDeploy nasazena na http://webserver01/ v adresáři AppToDeploy by být úplná cesta URL http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Nasazení aplikace pomocí grafického rozhraní nástroje MageUI.exe  
   
@@ -203,7 +199,7 @@ Pokud nemůžete použít Visual Studio k nasazení vaší [!INCLUDE[ndptecclick
   
 28. Zkopírujte všechny soubory v adresáři pro nasazení do cíle nasazení nebo médium. To může být buď do složky na webu nebo serveru FTP, sdílené složky nebo disku CD-ROM.  
   
-29. Uživatelům poskytnout adresu URL, UNC nebo fyzická média, které jsou potřebné k instalaci vaší aplikace. Pokud zadáte adresu URL nebo název cesty UNC, je nutné zadat vaši uživatelé úplnou cestu manifest nasazení. Například pokud je AppToDeploy nasazena na http://webserver01/ v adresáři AppToDeploy, úplná cesta URL bude http://webserver01/AppToDeploy/AppToDeploy.application.  
+29. Uživatelům poskytnout adresu URL, UNC nebo fyzická média, které jsou potřebné k instalaci vaší aplikace. Pokud zadáte adresu URL nebo název cesty UNC, je nutné zadat vaši uživatelé úplnou cestu manifest nasazení. Například, pokud je AppToDeploy nasazena na http://webserver01/ v adresáři AppToDeploy by být úplná cesta URL http://webserver01/AppToDeploy/AppToDeploy.application.  
   
 ## <a name="next-steps"></a>Další kroky  
  Pokud potřebujete nasadit novou verzi aplikace, vytvořte nový adresář s názvem po na novou verzi – například 1.0.0.1 — a zkopírujte soubory nové aplikace do nového adresáře. Dále musíte postupujte podle předchozích kroků k vytvoření a podepsání manifestu, nové aplikace a aktualizovat a podepsání manifestu nasazení. Nezapomeňte zadat stejnou vyšší verzi v obou Mage.exe `-New` a `-Update` volání, jako [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aktualizuje s celým číslem nejvíce vlevo, která je nejdůležitější pouze vyšší verze. Pokud jste použili MageUI.exe, můžete aktualizovat manifest nasazení otevřením, vyberete **odkaz aplikace** kartě, kliknutím na **vyberte Manifest** tlačítko a pak vybrat aktualizaci manifest aplikace.  

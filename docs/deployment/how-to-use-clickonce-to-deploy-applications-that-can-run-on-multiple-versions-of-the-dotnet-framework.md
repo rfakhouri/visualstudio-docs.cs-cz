@@ -1,12 +1,10 @@
 ---
-title: "Postupy: použití ClickOnce k nasazení aplikace, které můžete spustit na více verzích rozhraní .NET Framework | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: použití ClickOnce k nasazení aplikace, které můžete spustit na více verzích rozhraní .NET Framework | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-deployment
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - ClickOnce deployment, multiple .NET Framework versions
 - deploying applications [ClickOnce], multiple .NET Framework versions
 ms.assetid: e0a8c330-21bc-4eb2-b936-fd0f3c3221f1
-caps.latest.revision: "17"
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.workload: dotnet
-ms.openlocfilehash: 2c3153b4c6808d2a79a89a10e35830ec81ba15fd
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.workload:
+- dotnet
+ms.openlocfilehash: 310f6a25dd0729845c2b5b6d6432f2027038780b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Postupy: Použití ClickOnce k nasazení aplikací, jež lze provozovat na více verzích rozhraní .NET Framework
 Můžete nasadit aplikaci, která se zaměřuje na více verzí rozhraní .NET Framework pomocí technologie ClickOnce nasazení. To vyžaduje generovat a aktualizovat manifestů aplikace a nasazení.  

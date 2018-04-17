@@ -2,25 +2,22 @@
 title: Visual Studio C++ základní pokyny kontrolu odkaz | Microsoft Docs
 ms.custom: ''
 ms.date: 03/22/2018
-ms.reviewer: ''
-ms.suite: ''
 ms.technology:
 - vs-ide-code-analysis
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: ghogen
+manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0825ea42ca74b224574299846504dfde7dd6f809
-ms.sourcegitcommit: 67374acb6d24019a434d96bf705efdab99d335ee
+ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ základní pokyny pro kontrolu odkaz
 
@@ -98,7 +95,7 @@ Výraz '% expr %': žádná pole pro decay ukazatel. V tématu [C++ základní p
 
 [C26426 NO_GLOBAL_INIT_CALLS](C26426.md) globální inicializátoru volá bez constexpr funkce "% symbol". V tématu [C++ základní pokyny I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
-[C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) Global initializer accesses extern object '%symbol%'. V tématu [C++ základní pokyny I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
+[C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) globální inicializátoru objektu extern % symbol %, má přístup k. V tématu [C++ základní pokyny I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
 [C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) nepoužívejte nepojmenované objekty s vlastní vytváření a odstraňování. V tématu [ES.84: (nedoporučujeme) deklarovat místní proměnné bez názvu](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 

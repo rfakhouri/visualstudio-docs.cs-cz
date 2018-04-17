@@ -1,12 +1,10 @@
 ---
-title: "Postupy: ladění se zdrojem webu Code Center Premium | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: ladění se zdrojem webu Code Center Premium | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - Code Center Premium
 - debugging [Visual Studio], Code Center Premium
 ms.assetid: 18b4769d-b007-4428-9dae-9e72c283ff0d
-caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: d7405deed95f14314215b869a02bcf8a1afddea2
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ef757e71f557febab74f4575635993cf77214250
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Postupy: Ladění se zdrojem webu Code Center Premium
 Pomocí [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] ladicí program, můžete ladit zabezpečené sdílené zdroje z Microsoft MSDN Code Center Premium.  
@@ -57,7 +55,7 @@ Pomocí [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] la
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Nezapomeňte zahrnout do adresy koncové lomítko **/**  na konci cesty.  
+    >  Nezapomeňte zahrnout do adresy koncové lomítko**/** na konci cesty.  
   
      Přesunete na začátek seznamu a ujistěte se, že tyto symboly jsou načtená nejprve těchto umístění.  
   
@@ -114,7 +112,7 @@ Pomocí [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] la
      `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
     > [!NOTE]
-    >  Nezapomeňte zahrnout do adresy koncové lomítko **/**  na konci cesty.  
+    >  Nezapomeňte zahrnout do adresy koncové lomítko**/** na konci cesty.  
   
 4.  Pro každý spravovaný projekt ve vašem řešení proveďte následující  
   
@@ -136,7 +134,7 @@ Pomocí [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] la
   
 1.  Připojte čtečky čipových karet a vložení karty, které jste získali v iniciativy sdílené zdroje.  
   
-2.  Spusťte Internet Exploreru zadejte následující adresu URL:`https://codepremium.msdn.microsoft.com`  
+2.  Spusťte Internet Exploreru zadejte následující adresu URL: `https://codepremium.msdn.microsoft.com`  
   
 3.  Procházet a najít požadovaný zdroj.  
   

@@ -1,28 +1,26 @@
 ---
-title: "Vytvoření uživatelského rozhraní pomocí návrháře XAML v sadě Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Vytvoření uživatelského rozhraní pomocí návrháře XAML v sadě Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
 - VS.XamlEditor
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: uwp
-ms.openlocfilehash: 9b628769c5945817aebd790820f1f16085f6564a
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- uwp
+ms.openlocfilehash: eee5da84104e559d8e95ef022e4496cd3942627f
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí Návrháře XAML v sadě Visual Studio
 Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomohou návrhu založených na XAML Windows a webové aplikace. Uživatelská rozhraní pro vaše aplikace můžete vytvořit tak, že přetáhnete ovládacích prvků z **sada nástrojů** a nastavení vlastností ve **vlastnosti** okno. Můžete taky upravit XAML přímo v zobrazení jazyka XAML.  
@@ -45,12 +43,12 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomoho
  Zarovnávací čáry jsou *zarovnání hranice* , zobrazovat jako řádky přerušovanou red zobrazíte, když je zarovnán okrajů ovládacích prvků, nebo když směrné plány text je zarovnán. Zarovnání hranice zobrazí pouze tehdy, když **přichycení k zarovnávací čáry** je povoleno.  
   
  **Které mřížky**  
- `Grid`které se používají ke správě řádků a sloupců v [mřížky](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) panelu. Můžete vytvářet a odstraňovat řádků a sloupců a jejich relativní šířky a výšky můžete upravit. Svislé mřížky liště, která se zobrazí na levé straně návrhové plochy, je použit pro řádky a vodorovné čáry, která se zobrazí v horní části, je použít pro sloupce.  
+ `Grid` které se používají ke správě řádků a sloupců v [mřížky](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) panelu. Můžete vytvářet a odstraňovat řádků a sloupců a jejich relativní šířky a výšky můžete upravit. Svislé mřížky liště, která se zobrazí na levé straně návrhové plochy, je použit pro řádky a vodorovné čáry, která se zobrazí v horní části, je použít pro sloupce.  
   
  **Ozdobného prvku mřížky**  
  A `Grid` adorner se zobrazí jako trojúhelníček, který má svislé nebo vodorovné čáry k němu připojen na `Grid` liště. Při přetažení `Grid` adorner, šířky nebo výšky sousedících sloupců a řádků aktualizovat jako pohybu myší.  
   
- `Grid`ozdobného prvku slouží k řízení šířka a Výška `Grid`na řádků a sloupců. Můžete přidat nový sloupec nebo řádek kliknutím v `Grid` které. Když přidáte nový řádek sloupce či řádku pro `Grid` panel, který má dvě nebo více sloupců nebo řádků, zkrácená panelu nástrojů zobrazí mimo liště, která umožňuje explicitně nastavená šířka a výška. Zkrácená nástrojů můžete nastavit nastavení velikosti možností pro `Grid` řádků a sloupců.  
+ `Grid` ozdobného prvku slouží k řízení šířka a Výška `Grid`na řádků a sloupců. Můžete přidat nový sloupec nebo řádek kliknutím v `Grid` které. Když přidáte nový řádek sloupce či řádku pro `Grid` panel, který má dvě nebo více sloupců nebo řádků, zkrácená panelu nástrojů zobrazí mimo liště, která umožňuje explicitně nastavená šířka a výška. Zkrácená nástrojů můžete nastavit nastavení velikosti možností pro `Grid` řádků a sloupců.  
   
  **Změnit velikost obslužných rutin**  
  Změnit velikost obslužné rutiny se zobrazují v vybrané ovládací prvky a umožňují změnit velikost ovládacího prvku. Při změně velikosti ovládacího prvku, šířku a výšku hodnoty se obvykle zobrazuje můžete velikost ovládacího prvku. Další informace o manipulace s ovládacím prvkům v zobrazení návrhu najdete v tématu [práce s prvky v Návrháři XAML](../designers/working-with-elements-in-xaml-designer.md).  
@@ -102,7 +100,7 @@ Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomoho
  **Zobrazení**  
  Určuje různé velikosti zobrazení a řešení pro aplikaci.  
   
- **Orientace**  
+ **orientace**  
  Určuje jinou orientace pro aplikaci: **na šířku** nebo **na výšku**.  
   
  **Edge**  

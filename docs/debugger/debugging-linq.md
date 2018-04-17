@@ -1,12 +1,10 @@
 ---
-title: "Ladění LINQ | Microsoft Docs"
-ms.custom: 
+title: Ladění LINQ | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -19,21 +17,21 @@ helpviewer_keywords:
 - LINQ, stepping
 - LINQ, edit and continue
 ms.assetid: dbae26cb-ac5f-4312-b474-b9f29714f4c6
-caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: b2e159e89fe1854f2d26267793e196aa91b570ff
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 3b08f98e7073ad1c0a42d596424d544d5624f272
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="debugging-linq"></a>Ladění LINQ
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]podporuje ladění jazyka integrované dotazu (LINQ) kód, s omezeními. Funkce nejvíce ladění pracovat s příkazy LINQ, včetně krokování, nastavení zarážek a zobrazení výsledků v ladicím programu windows. Toto téma popisuje hlavní omezení ladění LINQ.  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje ladění jazyka integrované dotazu (LINQ) kód, s omezeními. Funkce nejvíce ladění pracovat s příkazy LINQ, včetně krokování, nastavení zarážek a zobrazení výsledků v ladicím programu windows. Toto téma popisuje hlavní omezení ladění LINQ.  
   
-##  <a name="BKMK_ViewingLINQResults"></a>Zobrazení výsledků LINQ  
+##  <a name="BKMK_ViewingLINQResults"></a> Zobrazení výsledků LINQ  
  Výsledek příkazu LINQ můžete zobrazit pomocí datatips – okno kukátka a dialogové okno QuickWatch. Použijete-li okno zdroj, je možné pozastavit ukazatele na dotazu v okně zdroje a zobrazí datového tipu. Můžete zkopírovat proměnnou LINQ a vložte jej do kukátko – okno nebo QuickWatch – dialogové okno.  
   
  V technologii LINQ nebude hodnocen dotazu, pokud je vytvořen nebo deklarovat, ale jenom v případě, že se používá dotaz. Dotaz proto nemá hodnotu, dokud je vyhodnocena. Úplný popis vytvoření dotazu a zkušební, najdete v části [Úvod do dotazů LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries) nebo [zápis vaše první dotaz LINQ](/dotnet/visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query).  
@@ -44,7 +42,7 @@ ms.lasthandoff: 12/22/2017
   
 -   Vyhodnocení dotazu může mít za následek vedlejší účinky, které se změní na hodnotu data a stav vašeho programu. Ne všechny dotazy mají vedlejší účinky. Pokud chcete zjistit, zda dotaz může bezpečně vyhodnotit bez vedlejší účinky, musíte pochopit kód, který implementuje dotazu.  
   
-##  <a name="BKMK_SteppingAndLinq"></a>Krokování a LINQ  
+##  <a name="BKMK_SteppingAndLinq"></a> Krokování a LINQ  
  Při ladění kódu LINQ krokování má několik rozdílů chování, které byste měli vědět o.  
   
 ### <a name="linq-to-sql"></a>Technologie LINQ to SQL  
@@ -108,7 +106,7 @@ End Function
   
  Revidované dotaz volá funkci `IsEven` při každém průchodu přes `items`. Ladicí program windows můžete použít zda každá položka splňuje zadanou podmínku, a můžete krokovat kód v `IsEven`. Predikát v tomto příkladu je docela jednoduché. Ale pokud budete mít predikát obtížnější, které máte k ladění, tato technika může být velmi užitečné.  
   
-##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a>Upravit a pokračovat není podporována pro LINQ  
+##  <a name="BKMK_EditandContinueNotSupportedforLINQ"></a> Upravit a pokračovat není podporována pro LINQ  
  Upravit a pokračovat, podporuje změny dotazů LINQ s omezeními. Podrobnosti najdete v tématu [Šif podporované změny](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))
   
 ## <a name="see-also"></a>Viz také  

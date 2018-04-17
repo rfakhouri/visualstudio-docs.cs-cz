@@ -1,26 +1,22 @@
 ---
-title: "Sestavení aplikace OpenGL ES pro Android a iOS | Microsoft Docs"
-ms.custom: 
+title: Sestavení aplikace OpenGL ES pro Android a iOS | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: vs-ide-mobile
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 76a67886-df57-4a81-accb-2e3c2eaf607b
-caps.latest.revision: 
 author: corob-msft
 ms.author: corob
-manager: ghogen
+manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: af4a0a340589fcedd7121e164ffcd6ec2ed43e70
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 41d1a3a88230ed38d4d9688c2f07cdf099e2464b
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Sestavení aplikace OpenGL ES pro Android a iOS
 Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platformy možnost, můžete vytvořit řešení sady Visual Studio a projekty pro aplikace pro iOS a Android aplikace, které sdílejí společný kód. Toto téma vás provede řešení šablonu, která vytvoří aplikace pro jednoduché iOS a Android nativní aktivity aplikace. Aplikací mít C++ – kód společné používané OpenGL ES zobrazíte stejné animovaný rotační datové krychle na každé platformě. ES OpenGL (OpenGL pro Embedded Systems nebo GLES) je 2D a 3D grafické rozhraní API, která je podporována v mnoho mobilních zařízení.  
@@ -31,10 +27,10 @@ Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platfor
  [Sestavení a spuštění aplikace pro iOS](#BuildIOS)   
  [Přizpůsobení aplikací](#Customize)  
   
-##  <a name="req"></a>Požadavky  
+##  <a name="req"></a> Požadavky  
  Před vytvořením aplikace OpenGL ES pro iOS a Android, musí se zkontrolujte, zda že jste splněny všechny požadavky na systém. Je nutné nainstalovat Visual C++ pro možnost vývoj mobilních řešení pro různé platformy ve Visual Studiu 2015. Ujistěte se, že požadované nástroje třetích stran a sady SDK jsou součástí instalace a nainstalovanou emulátor sady Visual Studio pro Android. Další informace a podrobné pokyny najdete v tématu [nainstalovat Visual C++ pro vývoj mobilních řešení pro různé platformy](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Pro vytvoření a testování aplikace pro iOS, budete potřebovat Mac počítače, nastavení podle pokynů pro instalaci. Další informace o tom, jak nastavit pro vývoj pro iOS najdete v tématu [instalaci a konfiguraci nástroje pro sestavení pomocí iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
-##  <a name="Create"></a>Vytvoření nového projektu OpenGLES aplikace  
+##  <a name="Create"></a> Vytvoření nového projektu OpenGLES aplikace  
  V tomto kurzu nejprve vytvořit nový projekt aplikace OpenGL ES a následně vytvořit a spustit výchozí aplikace v emulátor sady Visual Studio pro Android. Vedle vytváření aplikace pro iOS a spusťte aplikaci v simulátoru iOS.  
   
 #### <a name="to-create-a-new-project"></a>Chcete-li vytvořit nový projekt  
@@ -65,7 +61,7 @@ Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platfor
   
 -   **MyOpenGLESApp.iOS.Application** obsahuje prostředky a kód jazyka Objective-C spojovací k vytvoření aplikace pro iOS, který odkazuje na statické knihovny kódu C++ v MyOpenGLESApp.iOS.StaticLibrary. Tento projekt vytvoří balíček sestavení, který se přenese do počítače Mac pomocí sady Visual Studio a vzdáleného agenta. Při sestavování projektu sady Visual Studio odešle soubory a příkazy pro sestavení a nasazení aplikace na Mac.  
   
-##  <a name="BuildAndroid"></a>Sestavení a spuštění aplikace pro Android  
+##  <a name="BuildAndroid"></a> Sestavení a spuštění aplikace pro Android  
  Řešení vytvořených šablonou nastaví jako výchozí projekt aplikace pro Android.  Můžete sestavit a spustit tuto aplikaci a ověření instalace a nastavení. Pro počáteční test spuštění aplikace na jeden z profilů zařízení nainstalovat pomocí emulátor sady Visual Studio pro Android. Pokud dáváte přednost k testování aplikace na jiný cíl, můžete načíst cílový emulátoru nebo připojení zařízení k počítači.  
   
 #### <a name="to-build-and-run-the-android-native-activity-app"></a>Sestavení a spuštění aplikace Android nativní aktivity  
@@ -78,7 +74,7 @@ Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platfor
   
 2.  V **Průzkumníku řešení**, otevřete místní nabídky pro MyOpenGLESApp.Android.Packaging projekt a zvolte **sestavení**.  
   
-     ![Build Android Packaging Project](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")  
+     ![Sestavení projektu Android balení](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")  
   
      Ve výstupním okně zobrazí výstup procesu sestavení pro systém Android sdílené knihovny a aplikace pro Android.  
   
@@ -106,7 +102,7 @@ Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platfor
   
  Visual Studio vytvoří pomocí Android NDK, který používá jako sada nástrojů platformy Clang projektů Android nativní aktivity. Visual Studio mapuje vlastnosti v projektu NativeActivity přepínače příkazového řádku a možnosti, které slouží ke kompilaci, propojit a ladění na cílové platformy. Podrobnosti, otevřete **stránky vlastností** dialogové okno pro projekt MyOpenGLESApp.Android.NativeActivity. Další informace o parametrech příkazového řádku najdete v tématu [Clang kompilátoru uživatelské příručce](http://clang.llvm.org/docs/UsersManual.html).  
   
-##  <a name="BuildIOS"></a>Sestavení a spuštění aplikace pro iOS  
+##  <a name="BuildIOS"></a> Sestavení a spuštění aplikace pro iOS  
  Projekt aplikace pro iOS je vytvořena a upravit v sadě Visual Studio, ale kvůli licenční omezení, musí být vytvořené a nasazené z macu. Visual Studio komunikuje s vzdáleného agenta spuštěného na Mac k přenosu souborů projektu a spuštění sestavení, nasazení a ladění příkazy. Musíte nastavit a nakonfigurovat Mac a Visual Studio pro komunikaci, než můžete vytvořit aplikaci pro iOS. Podrobné pokyny najdete v tématu [instalaci a konfiguraci nástroje pro sestavení pomocí iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Jakmile je spuštěna vzdáleného agenta a Visual Studio je spárován s počítači Mac, můžete sestavit a spustit aplikaci pro iOS k ověření instalace a nastavení.  
   
 #### <a name="to-build-and-run-the-ios-app"></a>Sestavení a spuštění aplikace pro iOS  
@@ -145,7 +141,7 @@ Když instalujete Visual C++ pro vývoj mobilních řešení pro různé platfor
   
  Visual Studio přenese soubory projektu a odešle příkazy ke vzdálenému klientovi k sestavení aplikace pomocí Xcode. Vzdálený klient odešle sestavení informace o stavu zpět do Visual Studio. Když aplikace má vytvořen úspěšně, můžete odeslat příkazy ke spouštění a ladění aplikace Visual Studio. V ladicím programu sady Visual Studio řídí spuštěné v simulátoru iOS běžícím v počítači Mac, nebo na zařízení s iOS připojené aplikace. Visual Studio mapuje vlastnosti v projektu StaticLibrary přepínače příkazového řádku a možnosti, které se používají k vytváření, propojení a ladění na cílové platformy iOS. Podrobnosti kompilátoru příkazového řádku, otevřete **stránky vlastností** dialogové okno pro projekt MyOpenGLESApp.iOS.StaticLibrary.  
   
-##  <a name="Customize"></a>Přizpůsobení aplikací  
+##  <a name="Customize"></a> Přizpůsobení aplikací  
  Můžete upravit sdíleného kódu C++ přidat nebo změnit běžné funkce. Je nutné změnit volání do sdíleného kódu v projektech MyOpenGLESApp.Android.NativeActivity a MyOpenGLESApp.iOS.Application tak, aby odpovídaly. Makra preprocesoru můžete použít k určení specifických pro platformy oddíly v společný kód. Makro preprocesoru `__ANDROID__` je předdefinovaná při vytváření pro Android. Makro preprocesoru `__APPLE__` je předdefinovaná při sestavení pro iOS.  
   
  Zobrazit IntelliSense pro konkrétní projekt platformu, vyberte projekt v rozevírací nabídce kontextu přepínači na navigačním panelu v horní části okna editoru.  

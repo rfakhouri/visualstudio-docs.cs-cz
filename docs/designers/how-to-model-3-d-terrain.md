@@ -1,23 +1,21 @@
 ---
-title: "Postupy: Model 3D geologické struktury | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Model 3D geologické struktury | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: cccd65c62d8b5a0f75052c3121e313507ad5d8b8
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: ec1cf2d86ddb052b1f12310fb80d192aee080596
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-model-3-d-terrain"></a>Postupy: Modelování 3D terénu
 Tento dokument ukazuje, jak použití editoru Model pro vytvoření modelu 3D geologické struktury.  
@@ -39,7 +37,7 @@ Tento dokument ukazuje, jak použití editoru Model pro vytvoření modelu 3D ge
   
  Jakmile budete hotovi, modelu by měl vypadat přibližně takto:  
   
- ![3 &#45; scény D, který znázorňuje model geologické struktury](../designers/media/digit-terrain-model.png "číslice. geologické struktury modelu")  
+ ![3&#45;scény D, který znázorňuje model geologické struktury](../designers/media/digit-terrain-model.png "číslice. geologické struktury modelu")  
   
  Než začnete, ujistěte se, že **vlastnosti** okno a **sada nástrojů** jsou zobrazeny.  
   
@@ -67,7 +65,7 @@ Tento dokument ukazuje, jak použití editoru Model pro vytvoření modelu 3D ge
   
  Model geologické struktury je dokončena. Tady je poslední model znovu s Phong stínování použít:  
   
- ![3 &#45; scény D, který znázorňuje model geologické struktury](../designers/media/digit-terrain-model.png "číslice. geologické struktury modelu")  
+ ![3&#45;scény D, který znázorňuje model geologické struktury](../designers/media/digit-terrain-model.png "číslice. geologické struktury modelu")  
   
  Tento model geologické struktury můžete použít k předvedení efektu barevného přechodu shaderu, která je popsána v [postupy: vytvoření přechodu shaderu na základě geometrie](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   

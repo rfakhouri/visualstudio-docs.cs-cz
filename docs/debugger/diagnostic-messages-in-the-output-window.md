@@ -1,12 +1,10 @@
 ---
-title: "Odeslat diagnostické zprávy do okna výstupu | Microsoft Docs"
-ms.custom: 
+title: Odeslat diagnostické zprávy do okna výstupu | Microsoft Docs
+ms.custom: ''
 ms.date: 04/25/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - debugging [Visual Studio], diagnostic messages in Output window
 - Debug class
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
-caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: df071834a6ae36da0156c527284f6ffbfcee0e4e
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 36b85d16fffe8ddf6e0523eecca09e044283b7e3
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-diagnostic-messages-to-the-output-window"></a>Odeslat diagnostické zprávy v okně Výstup
 Můžete napsat běhu zprávy a pokuste se **výstup** pomocí okna `Debug` – třída nebo `Trace` třídy, které jsou součástí z <xref:System.Diagnostics> knihovny tříd. Použití třídy ladění, pokud pouze výstup v ladicí verze vašeho programu. Používejte třídu trasování, pokud chcete, aby výstupu v ladění i vydání verze.  
@@ -45,7 +43,7 @@ Můžete napsat běhu zprávy a pokuste se **výstup** pomocí okna `Debug` – 
   
 -   Různé `Write` metody, které výstupem informací bez pozastavení provádění. Tyto metody nahradit `Debug.Print` metodu použitou v předchozích verzích jazyka Visual Basic.  
   
--   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>a <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, které rozdělit informace o provádění a výstupy, pokud je zadaná podmínka selže. Ve výchozím nastavení `Assert` metoda zobrazí informace v dialogovém okně. Další informace najdete v tématu [kontrolní výrazy ve spravovaného kódu](../debugger/assertions-in-managed-code.md).  
+-   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> a <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> metody, které rozdělit informace o provádění a výstupy, pokud je zadaná podmínka selže. Ve výchozím nastavení `Assert` metoda zobrazí informace v dialogovém okně. Další informace najdete v tématu [kontrolní výrazy ve spravovaného kódu](../debugger/assertions-in-managed-code.md).  
   
 -   <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> a <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> metody, které vždy dělí provádění a výstupy informace. Ve výchozím nastavení `Fail` metody zobrazení informací v dialogovém okně.  
   

@@ -1,30 +1,26 @@
 ---
-title: "Funcdebugstart – | Microsoft Docs"
-ms.custom: 
+title: Funcdebugstart – | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - FuncDebugStart symbol
 - debugging [DIA SDK], start point
 ms.assetid: 1cbc6ca5-87d0-4c30-a39e-0a9dc62ce1a9
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c303bf0da1c3f6e5728681d697d2eedb84357d5
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: e61fd3d519c12ef001ec6db42e0b3bfc36370371
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 Pokud funkci bod definované v ladění, která je začněte tím, že bodu je identifikována symbol s `SymTagFuncDebugStart` značky.  
@@ -36,18 +32,18 @@ Pokud funkci bod definované v ladění, která je začněte tím, že bodu je i
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Posunutí součástí umístění; Podrobnosti najdete v tématu [LocationType – výčet](../../debugger/debug-interface-access/locationtype.md).|  
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Část součástí umístění; Podrobnosti najdete v tématu [LocationType – výčet](../../debugger/debug-interface-access/locationtype.md).|  
-|[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE`Pokud funkce, která používá vlastní konvence volání (pouze v v8.0 DIA SDK nebo novější).|  
-|[IDiaSymbol::get_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE`Pokud funkce provádí daleko návratový (pouze v v8.0 DIA SDK nebo novější).|  
-|[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE`Pokud funkce obsahuje vrátit z přerušení (pouze v v8.0 DIA SDK nebo novější).|  
-|[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE`Pokud funkce je označena jako statické (pouze v v8.0 DIA SDK nebo novější).|  
+|[IDiaSymbol::get_customCallingConvention](../../debugger/debug-interface-access/idiasymbol-get-customcallingconvention.md)|`BOOL`|`TRUE` Pokud funkce, která používá vlastní konvence volání (pouze v v8.0 DIA SDK nebo novější).|  
+|[IDiaSymbol::get_farReturn](../../debugger/debug-interface-access/idiasymbol-get-farreturn.md)|`BOOL`|`TRUE` Pokud funkce provádí daleko návratový (pouze v v8.0 DIA SDK nebo novější).|  
+|[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` Pokud funkce obsahuje vrátit z přerušení (pouze v v8.0 DIA SDK nebo novější).|  
+|[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` Pokud funkce je označena jako statické (pouze v v8.0 DIA SDK nebo novější).|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Symbol pro nadřazených funkce.|  
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|ID nadřazené lexikální symbolu.|  
 |[IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md)|`DWORD`|Počáteční body mají statické umístění; Podrobnosti najdete v tématu [umístění symbolu](../../debugger/debug-interface-access/symbol-locations.md).|  
-|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|`BOOL`|`TRUE`Pokud zadaná funkce se [noinline](/cpp/cpp/noinline) atribut (pouze v v8.0 DIA SDK nebo novější).|  
-|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|`BOOL`|`TRUE`Pokud zadaná funkce se [noreturn](/cpp/cpp/noreturn) atribut (pouze v v8.0 DIA SDK nebo novější).|  
-|[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|`BOOL`|`TRUE`Pokud funkce je volána nikdy (pouze v v8.0 DIA SDK nebo novější).|  
+|[IDiaSymbol::get_noInline](../../debugger/debug-interface-access/idiasymbol-get-noinline.md)|`BOOL`|`TRUE` Pokud zadaná funkce se [noinline](/cpp/cpp/noinline) atribut (pouze v v8.0 DIA SDK nebo novější).|  
+|[IDiaSymbol::get_noReturn](../../debugger/debug-interface-access/idiasymbol-get-noreturn.md)|`BOOL`|`TRUE` Pokud zadaná funkce se [noreturn](/cpp/cpp/noreturn) atribut (pouze v v8.0 DIA SDK nebo novější).|  
+|[IDiaSymbol::get_notReached](../../debugger/debug-interface-access/idiasymbol-get-notreached.md)|`BOOL`|`TRUE` Pokud funkce je volána nikdy (pouze v v8.0 DIA SDK nebo novější).|  
 |[IDiaSymbol::get_offset](../../debugger/debug-interface-access/idiasymbol-get-offset.md)|`LONG`|Posun symbolu v paměti Podrobnosti najdete v tématu [LocationType – výčet](../../debugger/debug-interface-access/locationtype.md), `LocIsRegRel`.|  
-|[IDiaSymbol::get_optimizedCodeDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-optimizedcodedebuginfo.md)|`BOOL`|`TRUE`Pokud kód obsahuje informace o ladění optimalizovaného kódu (pouze v v8.0 DIA SDK nebo novější).|  
+|[IDiaSymbol::get_optimizedCodeDebugInfo](../../debugger/debug-interface-access/idiasymbol-get-optimizedcodedebuginfo.md)|`BOOL`|`TRUE` Pokud kód obsahuje informace o ladění optimalizovaného kódu (pouze v v8.0 DIA SDK nebo novější).|  
 |[IDiaSymbol::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasymbol-get-relativevirtualaddress.md)|`DWORD`|Relativní pozici funkce v jeho bloku.|  
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID indexu symbolu.|  
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Vrátí `SymTagFuncDebugStart` (jeden z [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md) hodnoty).|  

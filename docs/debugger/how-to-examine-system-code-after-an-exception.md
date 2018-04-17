@@ -1,12 +1,10 @@
 ---
-title: "Postupy: Kontrola systémového kódu po výjimce | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: Kontrola systémového kódu po výjimce | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
@@ -16,16 +14,16 @@ helpviewer_keywords:
 - debugging, exceptions
 - exceptions, debugging
 ms.assetid: a38ad49b-7cf3-483d-91c4-eb3116eba50c
-caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 2a24b96672c7677943fa7dfe7807c578bf4d64ce
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 2914aab911d3c700b38c58eac009b2e21e94420e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>Postupy: Kontrola systémového kódu po výjimce
 Když dojde k výjimce, můžete chtít Kontrola kódu uvnitř volání systému a zjistěte příčinu výjimku. Následující postup vysvětluje, jak to provést, pokud nemáte symboly načten pro kód systému nebo pokud je povoleno pouze můj kód.  
