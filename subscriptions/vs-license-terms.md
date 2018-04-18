@@ -1,19 +1,19 @@
 ---
-title: "Visual Studio odběry licenční podmínky"
+title: Visual Studio odběry licenční podmínky
 author: evanwindom
 ms.author: jaunger
-Manager: evelynp
-ms.date: 10/3/2017
+manager: evelynp
+ms.date: 10/03/2017
 ms.topic: Get-Started-Article
-description: "Visual Studio odběry licenční podmínky."
+description: Visual Studio odběry licenční podmínky.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 68e5a55156b3a5e67f047df585f20c83e808386a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/16/2018
 ---
 **LICENČNÍ PODMÍNKY PRO SOFTWARE SPOLEČNOSTI MICROSOFT PRO NÁSLEDUJÍCÍ PŘEDPLATNÁ SADY VISUAL STUDIO:**
 
@@ -45,11 +45,11 @@ POKUD BUDETE JEDNAT V SOULADU S TĚMITO LICENČNÍMI PODMÍNKAMI, MÁTE PRO KAŽ
 
    d. **Zahrnuté programy společnosti Microsoft.** S výjimkou jak je popsáno v této části 2.e a 2.f. tyto licenční podmínky se vztahují na všechny programy společnosti Microsoft součástí softwaru předplatného. Pokud s licenčními podmínkami s žádným z těchto programů udělit další práva, které nejsou v konfliktu výslovně s těmito licenčními podmínkami, máte také tato práva.
 
-   e. **Produkt IoT Windows 10.** Všechny produkty Windows IoT a služby zahrnuté do softwaru se řídí jejich vlastní licenční podmínky. Kromě toho pokud chcete distribuovat Runtime Image Windows 10 IoT Core ("Runtime Image) a pokud je distribuční pro komerční účel, musíte nejprve provést a splňovat podmínky a ujednání komerční licenci od společnosti Microsoft nebo Microsoft přidružená své zemi. Příklady obchodní účely by mělo zahrnovat systémem podnikové operace licencování, leasing nebo prodávané obsahující bitovou kopii modulu Runtime, distribuci Runtime Image v aplikaci pro zákazníky pro účely hodnocení, distribuce aplikace modul Runtime bitovou kopii pro komerční produkty pomocí bitové kopie Runtime v vytvoření nebo použití komerční produktů a dalších aktivit, které se používá k zakoupit komerční nárůst k vám či jiným. Další informace, přejděte do [http://go.microsoft.com/fwlink/?LinkID=614849](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409).
+   e. **Produkt IoT Windows 10.** Všechny produkty Windows IoT a služby zahrnuté do softwaru se řídí jejich vlastní licenční podmínky. Kromě toho pokud chcete distribuovat Runtime Image Windows 10 IoT Core ("Runtime Image) a pokud je distribuční pro komerční účel, musíte nejprve provést a splňovat podmínky a ujednání komerční licenci od společnosti Microsoft nebo Microsoft přidružená své zemi. Příklady obchodní účely by mělo zahrnovat systémem podnikové operace licencování, leasing nebo prodávané obsahující bitovou kopii modulu Runtime, distribuci Runtime Image v aplikaci pro zákazníky pro účely hodnocení, distribuce aplikace modul Runtime bitovou kopii pro komerční produkty pomocí bitové kopie Runtime v vytvoření nebo použití komerční produktů a dalších aktivit, které se používá k zakoupit komerční nárůst k vám či jiným. Další informace, přejděte do [ http://go.microsoft.com/fwlink/?LinkID=614849 ](http://go.microsoft.com/fwlink/?LinkID=614849&clcid=0x409).
 
    f. **Visual Studio balíčky funkcí, agentů pro Visual Studio 2015, kolekce IntelliTrace pro Visual Studio 2015, Software Development Kit (SDK), ovladač Development Kit (DDKs), verze Patterns and Practices a programy třetích stran.** Vaše předplatné může obsahovat také softwarové komponenty, které jsou klasifikovány jako "Sady Visual Studio funkce", "Agentů pro sadu Visual Studio 2015", "Kolekce IntelliTrace pro sadu Visual Studio 2015", "Vzdálené nástroje pro sadu Visual Studio 2015", předběžné verze a zkušební software, "Sady SDK" , "DDKs", "vzory & postupů" nebo programy třetích stran. Tyto jsou pro vás dostupné prostřednictvím stáhne Visual Studio odběratele. Pokud jiné podmínky se dodávají s programy softwaru nebo součásti, pak tyto podmínky se vztahují na užívání z nich.
 
-   G. **Předplatné služby.** Visual Studio předplatné služby, které mohou zahrnovat soubory ke stažení, kódy product key, výhody systému Windows Azure, e učení, technické podpory, výhody Windows Store a dalším službám, jsou k dispozici pouze při předplatného je nadále aktivní.
+   g. **Předplatné služby.** Visual Studio předplatné služby, které mohou zahrnovat soubory ke stažení, kódy product key, výhody systému Windows Azure, e učení, technické podpory, výhody Windows Store a dalším službám, jsou k dispozici pouze při předplatného je nadále aktivní.
 
    h. **Komponenty písma.** Když je spuštěný software, můžete použít jeho písem zobrazovat a tisknout obsah. Mohou pouze: (i) vložit písma v obsahu podle podmínek vnoření omezení v písem; a, (ii) je dočasně stáhnout tiskárnu nebo jiné výstupní zařízení na tiskový nápovědu.
 
@@ -82,7 +82,7 @@ POKUD BUDETE JEDNAT V SOULADU S TĚMITO LICENČNÍMI PODMÍNKAMI, MÁTE PRO KAŽ
 
    f. **Funkce založené na Internetu.** Při použití funkcí využívajících Internet tyto funkce nesmíte používat způsobem, který by mohl narušovat ovlivnit její užívání z nich, nebo možnost pokusit se získat přístup k nebo použít službu, data, účtu nebo síti, nedovoleným způsobem.
 
-   G. **Bing Maps.** Tento software může obsahovat použití služby Bing Maps. Žádný obsah zajišťováno prostřednictvím služby Bing Maps, včetně geocodes, dá použít jenom v rámci produktu, pomocí kterého je obsah k dispozici. Použití zákazníka služby Bing Maps se řídí Bing Maps koncový uživatel podmínky použití k dispozici na [http://go.microsoft.com/?linkid=9710837](http://go.microsoft.com/?linkid=9710837) a prohlášení o ochraně osobních údajů mapy Bing k dispozici na [http://go.microsoft.com/ fwlink /? LinkID = 248686](http://go.microsoft.com/fwlink/?LinkID=248686).
+   g. **Bing Maps.** Tento software může obsahovat použití služby Bing Maps. Žádný obsah zajišťováno prostřednictvím služby Bing Maps, včetně geocodes, dá použít jenom v rámci produktu, pomocí kterého je obsah k dispozici. Použití zákazníka služby Bing Maps se řídí Bing Maps koncový uživatel podmínky použití k dispozici na [ http://go.microsoft.com/?linkid=9710837 ](http://go.microsoft.com/?linkid=9710837) a prohlášení o ochraně osobních údajů mapy Bing k dispozici na [ http://go.microsoft.com/fwlink/?LinkID=248686 ](http://go.microsoft.com/fwlink/?LinkID=248686).
 
    h. **Komponenty třetích stran.** Software může zahrnovat komponenty třetích stran s samostatné právní upozornění nebo řídí jiných dohod, jak může být popsané v souboru ThirdPartyNotices doplňujícími software společnosti Microsoft. I když tyto součásti se řídí jiných dohod, upozornění a omezení na a vyloučení škod níže se rovněž vztahují.
 
@@ -97,9 +97,9 @@ POKUD BUDETE JEDNAT V SOULADU S TĚMITO LICENČNÍMI PODMÍNKAMI, MÁTE PRO KAŽ
        You may run, at any one time, only one instance of SQL Server 2014 Standard Edition in one physical or virtual operating system environment on one server solely to support the software. You do not need SQL Server CALs for this use.
 
 
-   b.  **Nástroje.** Tento software obsahuje některé položky v seznamu nástroje na [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Můžete kopírovat a nainstalovat do počítače či jiných třetích stran. Upozorňujeme, že nástroje jsou navrženy pro dočasné použití, že Microsoft nemusí být možné oprava nebo aktualizace nástrojů odděleně od ostatního softwaru, a že některé nástroje svou povahou může umožňují ostatním uživatelům přístup k počítačům, u kterých jsou nainstalovat. V důsledku toho byste měli odstranit všechny nástroje, které jste nainstalovali po dokončení ladění nebo nasazení aplikací a databází. Společnost Microsoft není zodpovědná za jakékoli použití třetích stran nebo přístup nástroje pro instalaci z jakéhokoli počítače.
+   b.  **Nástroje.** Tento software obsahuje některé položky v seznamu nástroje na [ http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Můžete kopírovat a nainstalovat do počítače či jiných třetích stran. Upozorňujeme, že nástroje jsou navrženy pro dočasné použití, že Microsoft nemusí být možné oprava nebo aktualizace nástrojů odděleně od ostatního softwaru, a že některé nástroje svou povahou může umožňují ostatním uživatelům přístup k počítačům, u kterých jsou nainstalovat. V důsledku toho byste měli odstranit všechny nástroje, které jste nainstalovali po dokončení ladění nebo nasazení aplikací a databází. Společnost Microsoft není zodpovědná za jakékoli použití třetích stran nebo přístup nástroje pro instalaci z jakéhokoli počítače.
 
-   c. **Vytvořte Server.** Tento software obsahuje některé položky na seznamu serverů sestavení v [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Můžete kopírovat a instalaci těchto položek, pokud součástí softwaru, do vašeho počítače sestavení. Vámi a jinými uživateli ve vaší organizaci mohou použít tyto položky na vašich počítačích sestavení výhradně pro účely kompilování, vytváření, ověřování a archivaci aplikace nebo kvality nebo výkonu testů spuštěna jako součást procesu sestavení.
+   c. **Vytvořte Server.** Tento software obsahuje některé položky na seznamu serverů sestavení v [ http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409.](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409)  Můžete kopírovat a instalaci těchto položek, pokud součástí softwaru, do vašeho počítače sestavení. Vámi a jinými uživateli ve vaší organizaci mohou použít tyto položky na vašich počítačích sestavení výhradně pro účely kompilování, vytváření, ověřování a archivaci aplikace nebo kvality nebo výkonu testů spuštěna jako součást procesu sestavení.
 
    d. **Rozsah licence.** Nemusí zpětnou analýzu, dekompilaci nebo převod ze strojového kódu softwaru nebo v opačném případě se pokusit odvodit zdrojový kód pro software s výjimkou a pouze v rozsahu: (i) povoleném rozhodným právem bez ohledu na toto omezení; nebo (ii) vyžaduje k ladění změny žádné knihovny licencováno v rámci GNU menší General Public License které jsou součástí a propojené s tímto softwarem.
 
@@ -107,7 +107,7 @@ POKUD BUDETE JEDNAT V SOULADU S TĚMITO LICENČNÍMI PODMÍNKAMI, MÁTE PRO KAŽ
 
    f. **Platformy Microsoft.** Tento software může obsahovat součásti ze systému Windows; Microsoft Windows Server. Microsoft SQL Server. Microsoft Exchange; Aplikace Microsoft Office; a Microsoft SharePoint. Tyto součásti se řídí samostatnou smlouvy a vlastní zásady podpory produktu, jak je popsáno v licenčních podmínek najdete v instalační adresář pro danou součást, nebo ve složce "Licence" dodávané se softwarem.
 
-   G. **Správce balíčků.** Software zahrnuje balíček správce, jako je NuGet, které získáte možnost stahování dalších balíčků softwaru společnosti Microsoft a třetích stran pro použití s softwaru nebo jste aplikaci. Tyto balíčky jsou ve své vlastní licence a není této smlouvy. Microsoft nemá distribuovat, licence nebo poskytovat žádné výslovné záruky pro všechny balíčky třetích stran.
+   g. **Správce balíčků.** Software zahrnuje balíček správce, jako je NuGet, které získáte možnost stahování dalších balíčků softwaru společnosti Microsoft a třetích stran pro použití s softwaru nebo jste aplikaci. Tyto balíčky jsou ve své vlastní licence a není této smlouvy. Microsoft nemá distribuovat, licence nebo poskytovat žádné výslovné záruky pro všechny balíčky třetích stran.
 
 5.  **DALŠÍ LICENČNÍ PODMÍNKY PRO OKNO SERVERU VZDÁLENÉ PLOCHY**
 
@@ -170,7 +170,7 @@ POKUD BUDETE JEDNAT V SOULADU S TĚMITO LICENČNÍMI PODMÍNKAMI, MÁTE PRO KAŽ
 
     a. **Práva k použití a distribuovat.** Níže uvedené kódu a textové soubory jsou "Distribuovatelný kód." 
 
-    - *REDISTRIBUCE. Soubory TXT*. Můžete kopírovat a distribuovat uvedené v souboru redist.txt souboru v softwaru a na seznam REDISTRIBUCE nacházející se v kódu v objektu kódu [http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) .
+    - *REDISTRIBUCE. Soubory TXT*. Můžete kopírovat a distribuovat uvedené v souboru redist.txt souboru v softwaru a na seznam REDISTRIBUCE nacházející se v kódu v objektu kódu [ http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409 ](http://go.microsoft.com/fwlink/?LinkId=523763&clcid=0x409) .
 
     - *Ukázkový kód, šablony a styly.* Můžete zkopírovat, upravit a distribuovat zdroj a objekt kódu kód označena jako "ukázkový", "Šablona", "jednoduché styly" a "načrtnout styly".
 
@@ -192,7 +192,7 @@ POKUD BUDETE JEDNAT V SOULADU S TĚMITO LICENČNÍMI PODMÍNKAMI, MÁTE PRO KAŽ
 
     a. **Software serveru.** Je nutné získat předchozího písemného souhlasu společnosti Microsoft zveřejnit třetí straně výsledky jakéhokoli srovnávacího testu serverového softwaru nebo další software, který se dodává s ním. To neplatí pro rozhraní .NET Framework (viz níže).
 
-    b. **Rozhraní Microsoft .NET srovnávací testy.** Tento software obsahuje jeden nebo více součásti rozhraní .NET Framework ("součásti rozhraní .NET"). Mohou provádět testování interní srovnávacího testu z těchto součástí. Výsledky jakéhokoli srovnávacího testu z těchto součástí, může předávat, za předpokladu, že budete jednat v souladu s podmínkami stanoveného v [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406). Bez ohledu na jakékoli jiné smlouvy, bude pravděpodobně se společností Microsoft, je-li zveřejnit takové srovnávacího testu výsledky testů, Microsoft má právo zveřejnit výsledků srovnávacího testu testy se provádí produktů, které pokouší s komponentou použít rozhraní .NET Pokud je v souladu s stejných podmínek uvedených na [http://go.microsoft.com/fwlink/?LinkID=66406](http://go.microsoft.com/fwlink/?LinkID=66406).
+    b. **Rozhraní Microsoft .NET srovnávací testy.** Tento software obsahuje jeden nebo více součásti rozhraní .NET Framework ("součásti rozhraní .NET"). Mohou provádět testování interní srovnávacího testu z těchto součástí. Výsledky jakéhokoli srovnávacího testu z těchto součástí, může předávat, za předpokladu, že budete jednat v souladu s podmínkami stanoveného v [ http://go.microsoft.com/fwlink/?LinkID=66406 ](http://go.microsoft.com/fwlink/?LinkID=66406). Bez ohledu na jakékoli jiné smlouvy, bude pravděpodobně se společností Microsoft, je-li zveřejnit takové srovnávacího testu výsledky testů, Microsoft má právo zveřejnit výsledků srovnávacího testu testy se provádí produktů, které pokouší s komponentou použít rozhraní .NET Pokud je v souladu s stejných podmínek uvedených na [ http://go.microsoft.com/fwlink/?LinkID=66406 ](http://go.microsoft.com/fwlink/?LinkID=66406).
 
 14. **ROZSAH LICENCE.** Software je licencována, nikoli prodávána. Tato smlouva vám dává pouze některá práva k používání softwaru. Společnost Microsoft si vyhrazuje všechna ostatní práva. Pokud vám rozhodné právo neuděluje můžete více práv navzdory tomuto omezení, můžete používat software jenom jak je výslovně povoleno v této smlouvě. V to uděláte, musíte v souladu se všemi technickými omezeními v softwaru, které umožňují pouze pomocí určitými způsoby. Další informace najdete v tématu [www.microsoft.com/licensing/userights](https://www.microsoft.com/licensing/userights). Nesmíte 
     - zveřejňovat výsledky jakéhokoli testu softwaru na třetí stranu bez předchozího společnosti Microsoft, zapisovat schválení, ale to neplatí pro rozhraní Microsoft .NET Framework (viz část 13b);
@@ -268,14 +268,14 @@ H. **OMEZENÍ A VYLOUČENÍ ŠKOD SPOJENÉ S JEJÍM PORUŠENÍM ZÁRUKY. OMEZEN�
 
 
 _____
-<div style="text-align:center"><span style="color:white;">PŘÍLOHY INTERNETOVÉ SLUŽBY</span></div>
-<div style="text-align:center"><span style="color:white;">PRO NÁSLEDUJÍCÍ SOFTWARE, ODBĚRY SADY VISUAL STUDIO</span></div> 
+<div style="text-align:center"><span style="color:white;">PŘÍLOHY INTERNETOVÉ SLUŽBY </span></div>
+<div style="text-align:center"><span style="color:white;">PRO NÁSLEDUJÍCÍ SOFTWARE, ODBĚRY SADY VISUAL STUDIO </span></div> 
 
   
 
 **Produktů Visual Studio 2015:** 
 
-**DATA.** Software může shromažďovat informace o vás a používání softwaru a který odesílat společnosti Microsoft. Microsoft může tyto informace slouží k poskytování služeb a zlepšování našich produktů a služeb. Vám může odhlásit mnoho z těchto scénářů, ale ne všechny, jak je popsáno v dokumentaci k produktu. V softwaru, které může vám umožní shromažďování dat od uživatelů aplikace existují také některé funkce. Pokud tyto funkce pro povolení shromažďování dat v aplikacích, musí splňovat rozhodné právo, včetně poskytnutí příslušné oznámení uživatelům vaší aplikace. Můžete získat další informace o shromažďování dat a použít v dokumentaci nápovědy a prohlášení o ochraně osobních údajů na adrese [http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409](http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409). Používání softwaru funguje jako svůj souhlas s tyto postupy.
+**DATA.** Software může shromažďovat informace o vás a používání softwaru a který odesílat společnosti Microsoft. Microsoft může tyto informace slouží k poskytování služeb a zlepšování našich produktů a služeb. Vám může odhlásit mnoho z těchto scénářů, ale ne všechny, jak je popsáno v dokumentaci k produktu. V softwaru, které může vám umožní shromažďování dat od uživatelů aplikace existují také některé funkce. Pokud tyto funkce pro povolení shromažďování dat v aplikacích, musí splňovat rozhodné právo, včetně poskytnutí příslušné oznámení uživatelům vaší aplikace. Můžete získat další informace o shromažďování dat a použít v dokumentaci nápovědy a prohlášení o ochraně osobních údajů na adrese [ http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409 ](http://go.microsoft.com/fwlink/?LinkId=528096&clcid=0x409). Používání softwaru funguje jako svůj souhlas s tyto postupy.
 
   
 

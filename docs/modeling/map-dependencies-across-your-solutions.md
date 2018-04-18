@@ -328,7 +328,7 @@ Když chcete pochopit závislosti mezi kódu, Vizualizujte je pomocí vytvářen
 
 -   Vypnout automatické přidání nadřazených položek s **zahrnují nadřazené položky** tlačítka na panelu nástrojů map kódu.  
 
--   Upravte soubor mapy kódu přímo pro odebrání uzlů a odkazy, které nepotřebujete. Změna mapy neovlivní kódu. V tématu [mapuje přizpůsobit kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+-   Upravte soubor mapy kódu přímo pro odebrání uzlů a odkazy, které nepotřebujete. Změna mapy neovlivní kódu. V tématu [Přizpůsobení map kódu úpravou souborů DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
 
  ![Přeskočit sestavení a zahrnují nadřazených prvků tlačítek](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
 

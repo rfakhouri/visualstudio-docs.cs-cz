@@ -1,12 +1,10 @@
 ---
-title: "Nasazení řešení Office s použitím Instalační služby systému Windows | Microsoft Docs"
-ms.custom: 
+title: Nasazení řešení Office s použitím Instalační služby systému Windows | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology: office-development
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- office-development
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,13 +18,14 @@ helpviewer_keywords:
 - Office applications [Office development in Visual Studio], MSI
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.workload: office
-ms.openlocfilehash: 68ec55b1096f9e4244213cf4faeef5b904dd8fed
-ms.sourcegitcommit: f9fbf1f55f9ac14e4e5c6ae58c30dc1800ca6cda
+manager: douge
+ms.workload:
+- office
+ms.openlocfilehash: f2c51b101b890a2aaf2ea63edfd1f55d05abe18e
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/10/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploying-an-office-solution-by-using-windows-installer"></a>Nasazení řešení Office s použitím Instalační služby systému Windows
 Naučte se vytvářet Instalační služby systému Windows pro řešení Office s použitím [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].  
@@ -225,7 +224,7 @@ Instalační program aplikace musí obsahovat pouze následující součásti, a
   
 4. V poznámkovém bloku, nahraďte text **zde bude vaše GUID** vložením identifikátor GUID na příslušné místo.  
   
-    **&lt;Vlastnosti&gt;**  element souboru podobá následující zprávě.  
+   **&lt;Vlastnosti&gt;** element souboru podobá následující zprávě.  
   
   
    ```xml  
@@ -237,7 +236,7 @@ Instalační program aplikace musí obsahovat pouze následující součásti, a
   
 6. V **uložit jako** dialogové okno, přejděte k vaší **plochy** složky.  
   
-7. V **uložit jako typ** vyberte **všechny soubory (&#42;. &#42;)**.  
+7. V **uložit jako typ** vyberte **všechny soubory (&#42;.&#42;)** .  
   
 8. V **název souboru** zadejte **Visual Studio 2010 Tools for Office Runtime.prq**a potom zvolte **Uložit** tlačítko.  
   
@@ -481,7 +480,7 @@ Chcete-li upravit vlastní vlastnosti, vytvořte program, který odebere přizp�
   
 11. V **vyhledejte cílový soubor** dialogové okno, procházet a **SetExcelDocumentProperties.Primary.output** souboru a potom vyberte **otevřete** tlačítko.  
   
-   Umístění tohoto souboru závisí na složku, která jste zadali pro **INSTALLDIR** vlastnosti projektu instalace. Například pokud nastavíte tuto vlastnost na složku s názvem **[PersonalFolder] DemoWorkbookApp**, můžete najít **SetExcelDocumentProperties.Primary.output** soubor procházením **[ ProgramFilesFolder] \DemoWorkbookApp**.  
+   Umístění tohoto souboru závisí na složku, která jste zadali pro **INSTALLDIR** vlastnosti projektu instalace. Například pokud nastavíte tuto vlastnost na složku s názvem **[PersonalFolder] DemoWorkbookApp**, můžete najít **SetExcelDocumentProperties.Primary.output** soubor procházením **[ProgramFilesFolder] \DemoWorkbookApp**.  
   
    V několika dalších krocích můžete získat ID řešení dokumentu a poté předat toto ID jako parametr konzolové aplikace. Budete také předat umístění dokumentu, manifest nasazení a sestavení dokumentu.  
   
@@ -491,7 +490,7 @@ Chcete-li upravit vlastní vlastnosti, vytvořte program, který odebere přizp�
   
 13. V poznámkovém bloku otevřete soubor projektu vašeho řešení. Projekty Visual Basic je název souboru ExcelWorkbook.vbproj. Pro projekty C# název souboru je ExcelWorkbook.csproj.  
   
-14. Vyhledejte v souboru projektu  **&lt;SolutionID&gt;**  elementu, zkopírujte jeho hodnotu do schránky a pak zavřete poznámkový blok.  
+14. Vyhledejte v souboru projektu **&lt;SolutionID&gt;** elementu, zkopírujte jeho hodnotu do schránky a pak zavřete poznámkový blok.  
   
    Předat tuto hodnotu do konzoly aplikace jako parametr.  
   
@@ -531,7 +530,7 @@ Chcete-li upravit vlastní vlastnosti, vytvořte program, který odebere přizp�
   
 9. Na řádku nabídek zvolte **sestavení**, **sestavení OfficeAddInSetup**.  
   
-   Po dokončení sestavení, můžete vyhledat soubor setup.exe **OfficeAddInSetup** projektu v následujícím umístění: *OfficeAddInSetupProjectRoot***\ OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   Po dokončení sestavení, můžete vyhledat soubor setup.exe **OfficeAddInSetup** projektu v následujícím umístění: *OfficeAddInSetupProjectRoot *** \OfficeAddInSetup\Express\SingleImage\DiskImages\ DISK 1\**  
   
   
 ## <a name="see-also"></a>Viz také  

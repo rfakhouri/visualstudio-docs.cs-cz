@@ -1,23 +1,21 @@
 ---
-title: "Klávesové zkratky v programu Blend | Microsoft Docs"
-ms.custom: 
+title: Klávesové zkratky v programu Blend | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-designers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 46fdb4f670bf6b893d721c01254ab780aa8ac405
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Klávesové zkratky v programu Blend
 ## <a name="project-shortcuts"></a>Zástupce projektu  
@@ -37,7 +35,7 @@ ms.lasthandoff: 12/22/2017
   
 |Uděláte to tak|Postup|  
 |----------------|-------------|  
-|Přepínání mezi otevřené dokumenty|CTRL + TAB|  
+|Přepínání mezi otevřené dokumenty|CTRL+TAB|  
 |Uloží aktivní dokument|CTRL+S|  
 |Uložit všechny dokumenty|CTRL + SHIFT + S|  
 |Zavře aktivní dokument.|CTRL + W|  
@@ -78,7 +76,7 @@ ms.lasthandoff: 12/22/2017
 |Přenese vybraný objekt dopředu|CTRL + SHIFT +]|  
 |Přenese dopředu|CTRL +]|  
 |Přenese vybraný objekt na stránce do pozadí|CTRL + SHIFT + [|  
-|Přenést dál|CTRL + [|  
+|Přenést dál|Ctrl+[|  
 |Zkontrolujte uživatelský ovládací prvek z vybrané objekty (WPF)|F8|  
 |Proporce objektů|Podržte stisknutou klávesu SHIFT a přetáhněte objekt|  
 |Otočení objektu po 15 stupních|Podržte stisknutou klávesu SHIFT a otáčení objektu|  

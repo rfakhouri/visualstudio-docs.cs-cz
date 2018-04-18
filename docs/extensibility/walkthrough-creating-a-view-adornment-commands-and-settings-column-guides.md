@@ -1,23 +1,21 @@
 ---
-title: "Vytvoření dalších úprav zobrazení, příkazy a nastavení | Microsoft Docs"
-ms.custom: 
+title: Vytvoření dalších úprav zobrazení, příkazy a nastavení | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: "7"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: c7b59afc8d32cefd8877d18d91556230aef9a284
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 57a7696eae0da92d88babf64c580a4767775dffd
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Návod: Vytvoření dalších úprav zobrazení, příkazy a nastavení (vodítka sloupců)
 Můžete rozšířit editor text/kódu Visual Studio s příkazy a zobrazit důsledky.  Toto téma ukazuje, jak začít pracovat s funkcí oblíbených rozšíření, vodítka sloupců.  Vodítka sloupce jsou vizuálně světla čáry vykreslené zobrazení textového editoru vám pomůžou spravovat svůj kód šířky konkrétní sloupců.  Konkrétně formátovaný kód může být důležité pro ukázky zahrnout v dokumentech, příspěvky blogu nebo chyb sestavy.  
@@ -54,13 +52,13 @@ Můžete rozšířit editor text/kódu Visual Studio s příkazy a zobrazit důs
   
 -   Došlo `ColumnGuideCommands` objekt, který implementuje příkazy uživatele a zachytí až obslužné rutiny příkazů pro příkazy deklarován v souboru .vsct.  
   
- **VSIX**.  Použití **soubor &#124; Nové...**  příkaz k vytvoření projektu.  V levém navigačním podokně vyberte uzel rozšiřitelnost v C# a zvolte **projektu VSIX** v pravém podokně.  Zadejte název ColumnGuides a zvolte **OK** a vytvořte tak projekt.  
+ **VSIX**.  Použití **soubor &#124; nové...**  příkaz k vytvoření projektu.  V levém navigačním podokně vyberte uzel rozšiřitelnost v C# a zvolte **projektu VSIX** v pravém podokně.  Zadejte název ColumnGuides a zvolte **OK** a vytvořte tak projekt.  
   
- **Zobrazení dalších úprav**.  Klikněte na tlačítko správné ukazatel na uzel projektu v Průzkumníku řešení.  Vyberte **Přidat &#124; Nová položka...**  příkaz pro přidání nové položky zobrazení dalších úprav.  Zvolte **rozšiřitelnost &#124; Editor** v levém navigačním podokně a zvolte **dalších úprav editoru zobrazení** v pravém podokně.  Zadejte název ColumnGuideAdornment jako název položky a zvolte **přidat** ho přidejte.  
+ **Zobrazení dalších úprav**.  Klikněte na tlačítko správné ukazatel na uzel projektu v Průzkumníku řešení.  Vyberte **přidat &#124; novou položku...**  příkaz pro přidání nové položky zobrazení dalších úprav.  Zvolte **rozšiřitelnost &#124; Editor** v levém navigačním podokně a zvolte **dalších úprav editoru zobrazení** v pravém podokně.  Zadejte název ColumnGuideAdornment jako název položky a zvolte **přidat** ho přidejte.  
   
  Uvidíte, tato šablona položku Přidat do projektu (a také odkazy a tak dále) dva soubory: ColumnGuideAdornment.cs a ColumnGuideAdornmentTextViewCreationListener.cs.  Šablony právě kreslení fialové obdélníku v zobrazení.  Níže změníte pár řádků v naslouchací proces vytváření zobrazení a nahraďte jeho obsah ColumnGuideAdornment.cs.  
   
- **Příkazy**.  Klikněte na tlačítko správné ukazatel na uzel projektu v Průzkumníku řešení.  Vyberte **Přidat &#124; Nová položka...**  příkaz pro přidání nové položky zobrazení dalších úprav.  Zvolte **rozšiřitelnost &#124; VSPackage** v levém navigačním podokně a zvolte **vlastní příkaz** v pravém podokně.  Zadejte název ColumnGuideCommands jako název položky a zvolte **přidat** ho přidejte.  Kromě několik odkazů přidávání příkazů a balíček přidat ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs a ColumnGuideCommandsPackage.vsct.  Níže nahradíte obsah první a poslední souborů vymezit a provádět příkazy.  
+ **Příkazy**.  Klikněte na tlačítko správné ukazatel na uzel projektu v Průzkumníku řešení.  Vyberte **přidat &#124; novou položku...**  příkaz pro přidání nové položky zobrazení dalších úprav.  Zvolte **rozšiřitelnost &#124; VSPackage** v levém navigačním podokně a zvolte **vlastní příkaz** v pravém podokně.  Zadejte název ColumnGuideCommands jako název položky a zvolte **přidat** ho přidejte.  Kromě několik odkazů přidávání příkazů a balíček přidat ColumnGuideCommands.cs, ColumnGuideCommandsPackage.cs a ColumnGuideCommandsPackage.vsct.  Níže nahradíte obsah první a poslední souborů vymezit a provádět příkazy.  
   
 ## <a name="setting-up-the-text-view-creation-listener"></a>Nastavení naslouchacího procesu vytváření zobrazení textu  
  ColumnGuideAdornmentTextViewCreationListener.cs otevře v editoru.  Tento kód implementuje obslužnou rutinu pro vždy, když Visual Studio vytvoří zobrazení textu.  Existují atributy, které řídí, kdy se nazývá obslužná rutina v závislosti na vlastnosti zobrazení.  
@@ -1214,7 +1212,7 @@ private int GetApplicableColumn(EventArgs e)
   
 ```  
   
- `GetCurrentEditorColumn`má prozkoumat malým získat <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> zobrazení kódu.  Pokud je trasování prostřednictvím `GetActiveTextView`, `GetActiveView`, a `GetTextViewFromVsTextView`, uvidíte, jak to provést.  Následuje odpovídající kód abstrahované, počínaje aktuální výběr a získávání rámce na výběr a potom vyberte získávání rámečku DocView jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, potom <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> z IVsTextView a pak hostitele, zobrazení, získávání a Nakonec IWpfTextView:  
+ `GetCurrentEditorColumn` má prozkoumat malým získat <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> zobrazení kódu.  Pokud je trasování prostřednictvím `GetActiveTextView`, `GetActiveView`, a `GetTextViewFromVsTextView`, uvidíte, jak to provést.  Následuje odpovídající kód abstrahované, počínaje aktuální výběr a získávání rámce na výběr a potom vyberte získávání rámečku DocView jako <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, potom <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> z IVsTextView a pak hostitele, zobrazení, získávání a Nakonec IWpfTextView:  
   
 ```csharp  
    IVsMonitorSelection selection =  
@@ -1288,7 +1286,7 @@ private static int GetCaretColumn(IWpfTextView textView)
  S aktuální sloupec v ručně tam, kde uživatel klikne, kód právě volá správce nastavení, které chcete přidat nebo odebrat sloupce.  Správce nastavení aktivuje událost na kterém jsou všechny `ColumnGuideAdornment` objekty naslouchat.  Po událost se aktivuje, tyto objekty aktualizovat zobrazení jejich přidružené text nových nastavení Průvodce sloupců.  
   
 ## <a name="invoking-command-from-the-command-window"></a>Volajícím příkazu v příkazovém okně  
- Ukázka příručky sloupec umožňuje uživatelům vyvolání dva příkazy v příkazovém okně jako formulář rozšíření.  Pokud použijete **zobrazení &#124; Další Windows &#124; Příkaz okno** příkaz, může se zobrazit příkazové okno.  Můžete pracovat s příkazové okno zadáním "upravit" a název dokončení příkazu a poskytnutí argument 120, máte následující:  
+ Ukázka příručky sloupec umožňuje uživatelům vyvolání dva příkazy v příkazovém okně jako formulář rozšíření.  Pokud použijete **zobrazení &#124; ostatní okna &#124; příkazové okno** příkaz, může se zobrazit příkazové okno.  Můžete pracovat s příkazové okno zadáním "upravit" a název dokončení příkazu a poskytnutí argument 120, máte následující:  
   
 ```  
 > Edit.AddColumnGuide 120  
@@ -1345,7 +1343,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="trying-your-extension"></a>Při rozšíření  
  Nyní můžete stisknout **F5** provést rozšíření vodítka sloupců.  Otevřete textový soubor a pomocí místní nabídky editoru přidejte řádky Průvodce, je odebrat a změnit jejich barvu.  Je třeba kliknout na text (předán není prázdné znaky konce řádku) Chcete-li přidat sloupec průvodce nebo editoru přidá ji do posledního sloupce v řádku.  Pokud používáte příkazové okno a volat příkazy s parametrem, můžete přidat sloupec příručky kdekoli.  
   
- Pokud chcete zkuste jiný příkaz umísťováním, změňte názvy, změňte ikony a tak dále, a máte problémy s zobrazující nejnovější kód v nabídkách sady Visual Studio, můžete resetovat experimentální hive, ve kterém jsou ladění.  Zprovoznit **nabídce Start Windows** a zadejte "obnovit".  Vyhledejte a vyvolání příkazu **resetovat další Visual Studio experimentální instanci.**.  Tím vyčistíte experimentální podregistru všech součástí rozšíření.  Tento název neexistuje vyčistit se nastavení ze součástí, takže všechny příručky jste měli při vypínání experimentální hive sady Visual Studio bude stále existovat při kód čte úložišti nastavení při dalším spuštění.  
+ Pokud chcete zkuste jiný příkaz umísťováním, změňte názvy, změňte ikony a tak dále, a máte problémy s zobrazující nejnovější kód v nabídkách sady Visual Studio, můžete resetovat experimentální hive, ve kterém jsou ladění.  Zprovoznit **nabídce Start Windows** a zadejte "obnovit".  Vyhledejte a vyvolání příkazu **resetovat další Visual Studio experimentální instanci**.  Tím vyčistíte experimentální podregistru všech součástí rozšíření.  Tento název neexistuje vyčistit se nastavení ze součástí, takže všechny příručky jste měli při vypínání experimentální hive sady Visual Studio bude stále existovat při kód čte úložišti nastavení při dalším spuštění.  
   
 ## <a name="finished-code-project"></a>Dokončený kód projektu  
  Brzy bude projektu githubu ukázky rozšiřitelnosti Visual Studio a dokončený projekt bude existovat.  Toto téma tak, aby odkazoval došlo, pokud k tomu dojde bude aktualizován.  Dokončené ukázkový projekt může mít různé identifikátory GUID a bude mít jiné bitmap pruhu pro příkaz ikony.  
