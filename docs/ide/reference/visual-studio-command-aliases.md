@@ -1,12 +1,10 @@
 ---
-title: "Aliasy příkazů sady Visual Studio | Microsoft Docs"
-ms.custom: 
+title: Aliasy příkazů sady Visual Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - aliases, Visual Studio commands
 - Visual Studio, commands
@@ -16,23 +14,23 @@ helpviewer_keywords:
 - pre-defined command aliases
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
-caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 48e849df1cb918682176befa25c688fe7b436460
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 05699b5791bf8493ac8dd19c6f3dbd28ab5b2ce1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="visual-studio-command-aliases"></a>Aliasy příkazů sady Visual Studio
 Aliasy umožňují pro zadání příkazu do **najít/příkaz** pole nebo **příkaz** okno zkrácením text potřebné k provedení příkazu. Například místo zadávání `>File.OpenFile` zobrazíte **otevření souboru** dialogové okno, můžete použít předdefinované alias `>of`.  
   
  Typ `alias` v **příkaz**okna zobrazte seznam aktuální aliasy a jejich definice. Typ `>cls` vymazat obsah **příkaz** okno. Pokud chcete zobrazit alias pro konkrétní příkaz, zadejte `alias <command name>`.  
   
- Můžete snadno vytvořit svůj vlastní alias pro jednu příkazy sady Visual Studio (s nebo bez argumentů). Příklad syntaxe pro aliasy `File.NewFile MyFile.txt` je `alias MyAlias File.NewFile MyFile.txt`. Můžete odstranit jedním z vaše aliasy s`alias <alias name> /delete`  
+ Můžete snadno vytvořit svůj vlastní alias pro jednu příkazy sady Visual Studio (s nebo bez argumentů). Příklad syntaxe pro aliasy `File.NewFile MyFile.txt` je `alias MyAlias File.NewFile MyFile.txt`. Můžete odstranit jedním z vaše aliasy s `alias <alias name> /delete`  
   
  Následující tabulka obsahuje seznam předdefinované aliasy příkazů sady Visual Studio. Některé názvy příkazů mít více než jeden předem definovaný alias. Kliknutím na odkazy pro názvy příkazů níže zobrazíte podrobné témat, která vysvětlují správnou syntaxi, argumentů a přepínačů pro tyto příkazy.  
   
@@ -95,7 +93,7 @@ Aliasy umožňují pro zadání příkazu do **najít/příkaz** pole nebo **př
 |[Příkaz Otevřít soubor](../../ide/reference/open-file-command.md)|z Open|File.OpenFile|  
 |[Příkaz Otevřít projekt](../../ide/reference/open-project-command.md)|OP|File.OpenProject|  
 |Sbalit pro definice a zastavení osnovy|OutlineDefs StopOutlining|Edit.CollapsetoDefinitions|  
-|Krok přes|P|Debug.StepOver|  
+|Krok přes|p|Debug.StepOver|  
 |Informace o parametrech|ParamInfo|Edit.ParameterInfo|  
 |Krok|Kód pr|Debug.StepOut|  
 |Předchozí záložek|PrevBook|Edit.PreviousBookmark|  

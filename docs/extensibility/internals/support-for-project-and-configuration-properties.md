@@ -1,26 +1,24 @@
 ---
 title: Podpora pro projekt a vlastnosti konfigurace | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties, supporting with Visual Studio SDK
 - configuration properties, suppporting with Visual Studio SDK
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
-caps.latest.revision: "25"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: e31f4feda55469d2740b32b0eac5d9cfba286d0c
-ms.sourcegitcommit: bd16e764134c436d2d2f46490f51234d5246ee50
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: 823bfa0453d3e33fea2daa51779b1fe4800a1a86
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Podpora pro projekt a vlastnosti konfigurace
 **Vlastnosti** okno v [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE) můžete zobrazit vlastnosti projektu a konfigurace. Stránky vlastností můžete zadat pro vlastní typ projektu, takže uživatel může nastavit vlastnosti pro vaši aplikaci.  
@@ -32,7 +30,7 @@ ms.lasthandoff: 01/22/2018
 ## <a name="persistence-of-project-and-configuration-properties"></a>Trvalost projektu a vlastnosti konfigurace  
  Vlastnosti projektu a konfigurace jsou ukládány v souboru projektu, který má příponu názvu souboru, například přidružený typ projektu, .csproj, .vbproj a .myproj. Soubor šablony projektů jazyka obvykle používají ke generování souboru projektu. Existují však ve skutečnosti několik způsobů, jak přidružit typy projektů a šablon. Další informace najdete v tématu [Directory popis šablony (. Soubory VSDIR)](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
   
- Vlastnosti projektu a konfigurace jsou vytvořené pomocí přidávání položek do souboru šablony. Tyto vlastnosti jsou pak k dispozici žádné vytvořených pomocí typu projektu, který používá tato šablona projektů. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]projekty a MPFProj používejte [není v sestavení: Přehled nástroje MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schématu pro soubory šablon. Tyto soubory obsahují PropertyGroup – část pro každou konfiguraci. Vlastnosti projekty jsou obvykle ukládány v první části PropertyGroup, který má argumentem konfigurace nastavena na hodnotu null. řetězec.  
+ Vlastnosti projektu a konfigurace jsou vytvořené pomocí přidávání položek do souboru šablony. Tyto vlastnosti jsou pak k dispozici žádné vytvořených pomocí typu projektu, který používá tato šablona projektů. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projekty a MPFProj používejte [není v sestavení: Přehled nástroje MSBuild](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schématu pro soubory šablon. Tyto soubory obsahují PropertyGroup – část pro každou konfiguraci. Vlastnosti projekty jsou obvykle ukládány v první části PropertyGroup, který má argumentem konfigurace nastavena na hodnotu null. řetězec.  
   
  Následující kód ukazuje základní soubor projektu nástroje MSBuild spuštění.  
   
@@ -62,9 +60,9 @@ ms.lasthandoff: 01/22/2018
   
  `SettingsPage` Třídy a `Microsoft.VisualStudio.Package.ProjectNode` třída nabízí tyto metody se zachovat vlastnosti projektu a konfigurace:  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty`a `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` zachovat vlastnosti projektu.  
+-   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` a `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` zachovat vlastnosti projektu.  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty`a `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` zachovat vlastnosti konfigurace.  
+-   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` a `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` zachovat vlastnosti konfigurace.  
   
     > [!NOTE]
     >  Implementace `Microsoft.VisualStudio.Package.SettingsPage` a `Microsoft.VisualStudio.Package.ProjectNode` třídy pomocí `Microsoft.Build.BuildEngine` metody (MSBuild) k získání a nastavení vlastností projektu a konfigurace ze souboru projektu.  

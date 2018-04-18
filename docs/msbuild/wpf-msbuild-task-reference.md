@@ -1,12 +1,9 @@
 ---
-title: "Referenční dokumentace úlohy nástroje MSBuild grafického subsystému WPF | Microsoft Docs"
-ms.custom: 
+title: Referenční dokumentace úlohy nástroje MSBuild grafického subsystému WPF | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology: msbuild
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -18,17 +15,16 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-caps.latest.revision: 
 author: Mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dbb779e7f9d12465aab5abf4051677948cb6d14
-ms.sourcegitcommit: 205d15f4558315e585c67f33d5335d5b41d0fcea
+ms.openlocfilehash: 914434b9b7083d52cb332696802d8c0cd88051db
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild – referenční dokumentace úlohy
 Proces sestavení Windows Presentation Foundation (WPF) rozšiřuje stroje Microsoft build engine (MSBuild) o další sadu sestavení úlohy, včetně úlohy kompilace kódu a zdroje procesu.  
@@ -49,7 +45,7 @@ Proces sestavení Windows Presentation Foundation (WPF) rozšiřuje stroje Micro
  [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)  
  Provádí značek druhého průchodu kompilace [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] soubory, které odkazují na typy ve stejném projektu.  
   
- [MergeLocalizationDirectives](../msbuild/mergelocalizationdirectives-task.md)  
+ [Mergelocalizationdirectives –](../msbuild/mergelocalizationdirectives-task.md)  
  Sloučí atributů lokalizace a komentáře jednoho nebo více [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] binární formát souborů do jediného souboru pro celou sestavení.  
   
  [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)  

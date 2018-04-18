@@ -1,12 +1,10 @@
 ---
-title: "Postupy: použití průvodců se šablonami projektů | Microsoft Docs"
-ms.custom: 
+title: 'Postupy: použití průvodců se šablonami projektů | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], wizards
 - Visual Studio templates, wizards
@@ -14,16 +12,16 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-caps.latest.revision: "23"
 author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.workload: vssdk
-ms.openlocfilehash: 8eef98d11f98e3db8216c69dcfacf478c676a837
-ms.sourcegitcommit: 5f436413bbb1e8aa18231eb5af210e7595401aa6
+manager: douge
+ms.workload:
+- vssdk
+ms.openlocfilehash: d29d2a1313bdb4e8a5e8654068984893578af4a0
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Postupy: Použití průvodců se šablonami projektů
 Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> rozhraní, pokud je implementována, umožňuje spouštět vlastní kód, když uživatel vytvoří projekt ze šablony.  
@@ -242,7 +240,7 @@ Visual Studio poskytuje <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> roz
   
      Nezapomeňte znovu, musí si uvozovky. Měli byste vidět řádek ve výstupu takto  
   
-     **Token veřejného klíče má<token>**  
+     **Token veřejného klíče má <token>**  
   
      Poznamenejte si tuto hodnotu.  
   

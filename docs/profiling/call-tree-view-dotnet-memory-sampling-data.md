@@ -1,27 +1,23 @@
 ---
-title: "Zobrazení stromu volání – Data vzorkování paměti .NET | Microsoft Docs"
-ms.custom: 
+title: Zobrazení stromu volání – Data vzorkování paměti .NET | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
 ms.technology:
 - vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
-caps.latest.revision: 
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
+manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c81f9b5ff7d0bad9c0a05bd4b43374ac9451cf1
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+ms.openlocfilehash: 0beae2d3f95fdf06120898eb7ec75731c69a35d1
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Zobrazení stromu volání – Data vzorkování paměti .NET
 Zobrazení stromu volání zobrazuje cesty provádění funkce, které byly provázán v PROFILOVANÉHO aplikaci. Kořen stromu je vstupním bodem do součást nebo aplikace. Každý uzel funkce jsou uvedeny všechny funkce, které ji volat a data přidělení paměti .NET o těchto volání funkcí.  
@@ -46,7 +42,7 @@ Zobrazení stromu volání zobrazuje cesty provádění funkce, které byly prov
 |**Název funkce**|Plně kvalifikovaný název funkce.|  
 |**Číslo řádku – funkce**|Číslo řádku spuštění této funkce ve zdrojovém souboru.|  
 |**Adresa funkce**|Adresa funkce.|  
-|**Úroveň**|Hloubka funkce ve stromové struktuře volání.|  
+|**úroveň**|Hloubka funkce ve stromové struktuře volání.|  
 |**Přidělení (včetně).**|Počet objektů, které byly přiděleny instancí této funkce, které byly volá funkci nadřazené ve stromové struktuře volání. Tato hodnota zahrnuje přidělení, které byly provedeny podle podřízené funkce.|  
 |**% Přidělení (včetně).**|Procento všech objektů, které byly vytvořeny v profilaci spuštění, které byly včetně přidělení této funkce.|  
 |**Výhradní přidělení**|Počet objektů, které byly přiděleny instancí této funkce, které byly volá funkci nadřazené ve stromové struktuře volání. Toto číslo nezahrnuje přidělení, které byly provedeny podle podřízené funkce.|  

@@ -1,12 +1,10 @@
 ---
-title: "Hledání a nahrazení textu | Microsoft Docs"
-ms.custom: 
+title: Hledání a nahrazení textu | Microsoft Docs
+ms.custom: ''
 ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.find
 - vs.findreplacecontrol
@@ -36,16 +34,16 @@ helpviewer_keywords:
 - find text
 - replacing text
 ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
-caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.workload: multiple
-ms.openlocfilehash: 72081f6c140c4634918e67098493cb37bb324848
-ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
+manager: douge
+ms.workload:
+- multiple
+ms.openlocfilehash: 8450d8700c5b6aa5f5c678f781c94af1a21d0b16
+ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="finding-and-replacing-text"></a>Hledání a nahrazení textu
 Můžete najít a nahradit text v editoru kódu v sadě Visual Studio a určité textový výstup windows, jako **výsledky hledání** systému windows, pomocí **najít a nahradit** ovládací prvek nebo **najít nebo Nahradit v souborech**. Můžete také hledat a nahradit v některé návrháře windows, například návrháře XAML a návrháři formulářů Windows a nástroj windows  
@@ -65,20 +63,20 @@ Můžete najít a nahradit text v editoru kódu v sadě Visual Studio a určité
  Chcete-li změnit barvu zvýraznění pro shody, vyberte **nástroje** nabídce vyberte možnost **možnosti**a potom zvolte **prostředí**a vyberte **písma a barev** . V **zobrazit nastavení pro** seznamu, vyberte **textového editoru**a potom v **zobrazení položek** seznamu, vyberte **najít zvýrazněte (rozšíření)**.  
   
 ### <a name="searching-tool-windows"></a>Hledání okna nástrojů  
- Můžete použít **najít** řízení v kódu nebo text systému windows, jako například **výstup** windows, a **Najít výsledky** windows tak, že zvolíte **najít a nahradit**na **upravit** nabídky nebo (CTRL + F).  
+ Můžete použít **najít** řízení v kódu nebo text systému windows, jako například **výstup** windows, a **Najít výsledky** windows tak, že zvolíte **najít a nahradit**na **upravit** nabídky (nebo **CTRL + F**).  
   
- Verzi najít ovládací prvek je k dispozici také v některé nástroje systému windows. Například můžete nyní filtrovat seznam ovládacích prvků v **sada nástrojů** okna tak, že zadáte text do vyhledávacího pole. Zahrnout další okna nástrojů, které teď umožňuje hledat jejich obsah **Průzkumníku řešení**, **vlastnosti** okně a **Team Explorer**, mimo jiné.  
+ Verzi **najít** ovládací prvek je k dispozici také v některé nástroje systému windows. Například můžete nyní filtrovat seznam ovládacích prvků v **sada nástrojů** okna tak, že zadáte text do vyhledávacího pole. Zahrnout další okna nástrojů, které teď umožňuje hledat jejich obsah **Průzkumníku řešení**, **vlastnosti** okně a **Team Explorer**, mimo jiné.  
   
 ## <a name="findreplace-in-files"></a>Vyhledání a nahrazení v souborech  
- **Vyhledání a nahrazení v souborech** funguje, jako **najít a nahradit** řídit, s tím rozdílem, že můžete definovat obor pro hledání. Nejenom můžete hledat aktuální soubor otevřete v editoru, ale můžete také prohledat všechny otevřené dokumenty, celé řešení, aktuální projekt a vybrané složky sad. Můžete také prohledat podle přípony názvu souboru. Pro přístup k **vyhledání a nahrazení v souborech** dialogovém okně vyberte **najít a nahradit** na **upravit** nabídky (nebo CTRL + SHIFT + F).  
+ **Vyhledání a nahrazení v souborech** funguje, jako **najít a nahradit** řídit, s tím rozdílem, že můžete definovat obor pro hledání. Nejenom můžete hledat aktuální soubor otevřete v editoru, ale můžete také prohledat všechny otevřené dokumenty, celé řešení, aktuální projekt a vybrané složky sad. Můžete také prohledat podle přípony názvu souboru. Pro přístup k **vyhledání a nahrazení v souborech** dialogovém okně vyberte **najít a nahradit** na **upravit** nabídky (nebo **CTRL + SHIFT + F**).  
   
  Pokud vyberete **najít všechny**, **Najít výsledky** se otevře okno a uvádí pro hledání shody. Výběr výsledek v seznamu zobrazí přidružený soubor a klade důraz na shodu. Pokud soubor již není otevřený pro úpravy, je otevřen v karta náhled na pravé straně karty dobře. Můžete použít **najít** řízení k hledání v **Najít výsledky** seznamu.  
   
-### <a name="creating-custom-search-folder-sets"></a>Vytváření vlastních vyhledávání složky sad  
+### <a name="creating-custom-search-folder-sets"></a>Vytváření vlastní složka výsledků hledání nastaví  
  Obor vyhledávání můžete definovat výběrem **zvolte složky výsledků hledání** tlačítko (to vypadá **...** ) vedle položky **Hledat v** pole. V **zvolte složky výsledků hledání** dialogové okno, můžete určit sadu složek, ve kterém se bude vyhledávat a specifikace můžete uložit tak, aby jej můžete znovu použít později. Složky na vzdáleném počítači můžete zadat pouze v případě, že jeho jednotce jsou namapovány na místním počítači.  
   
-### <a name="creating-custom-component-sets"></a>Vytváření vlastních součástí sad  
- Součást sady můžete definovat jako obor hledání tak, že zvolíte **upravit sadu součást vlastní** vedle položky **Hledat v** pole. Můžete zadat nainstalované rozhraní .NET nebo COM součásti, projektů sady Visual Studio, které jsou součástí vašeho řešení, nebo jakékoli sestavení nebo typ knihovny (.dll, .tlb, .olb, .exe nebo .ocx). Chcete-li vyhledávat odkazy, vyberte **vypadat v odkazech na** pole.  
+### <a name="creating-custom-component-sets"></a>Vytvoření vlastní komponenty nastaví  
+ Součást sady můžete definovat jako obor hledání tak, že zvolíte **upravit sadu součást vlastní** vedle položky **Hledat v** pole. Můžete zadat nainstalované rozhraní .NET nebo COM součásti, projektů sady Visual Studio, které jsou součástí vašeho řešení, nebo všechny sestavení nebo typ knihovny (*.dll*, *.tlb*, *.olb*, *.exe*, nebo *.ocx*). Chcete-li vyhledávat odkazy, vyberte **vypadat v odkazech na** pole.  
   
 ## <a name="see-also"></a>Viz také  
  [Používání regulárních výrazů v sadě Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
