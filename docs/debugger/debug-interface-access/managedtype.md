@@ -2,8 +2,7 @@
 title: Managedtype – | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -17,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3445cd572daa6097a6d4ee68445ec0e58e06bfe5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d7f9058c207ff7830a6e3580e0a5bc66759973ef
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="managedtype"></a>ManagedType
 Je identifikována spravovaného typu (všechny symbol definovaná metadata nebo nativní pro funkce správy paměti a prostředků jazyků, například C#) `SymTagManagedType` symbol.  

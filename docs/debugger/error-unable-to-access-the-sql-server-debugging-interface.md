@@ -2,9 +2,8 @@
 title: 'Chyba: Nelze získat přístup k rozhraní ladění SQL serveru | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.sqlde_debugging_not_enabled
 dev_langs:
@@ -18,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7996795934e372de86008c3e0ae8546860d8a465
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 338c2e0ab90fe6f518ad853dd6d4a0106c4af8b3
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Chyba: Nelze přistoupit k ladicímu prostředí serveru SQL Server.
 Tato zpráva nastane, když se pokusíte ladění SQL na počítači, kde není povoleno ladění SQL.  

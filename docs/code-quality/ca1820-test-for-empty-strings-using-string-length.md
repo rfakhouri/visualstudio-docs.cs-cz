@@ -1,10 +1,8 @@
 ---
-title: 'CA1820: Testujte prázdné řetězce pomocí délky řetězce | Microsoft Docs'
-ms.custom: ''
+title: 'CA1820: Testujte prázdné řetězce pomocí délky řetězce'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - TestForEmptyStringsUsingStringLength
 - CA1820
@@ -17,35 +15,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b70f2579a7c5afb0baa24cf1c6ad9b33ec5a47d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29af0d1ffacf3ec6b327228c242a0c6048e3216a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Testujte prázdné řetězce pomocí délky řetězce
-|||  
-|-|-|  
-|TypeName|TestForEmptyStringsUsingStringLength|  
-|CheckId|CA1820|  
-|Kategorie|Microsoft.Performance|  
-|Narušující změna|Nenarušující|  
-  
-## <a name="cause"></a>příčina  
- Řetězec se porovnává se prázdný řetězec pomocí <xref:System.Object.Equals%2A?displayProperty=fullName>.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Porovnávání řetězců pomocí <xref:System.String.Length%2A?displayProperty=fullName> vlastnost nebo <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> metoda je mnohem rychlejší než použití <xref:System.Object.Equals%2A>. Důvodem je, že <xref:System.Object.Equals%2A> spouští výrazně další instrukce MSIL než buď <xref:System.String.IsNullOrEmpty%2A> nebo počet pokyny provést načíst <xref:System.String.Length%2A> vlastnost hodnota a porovnávají ho na hodnotu nula.  
-  
- Je třeba si uvědomit, <xref:System.Object.Equals%2A> a <xref:System.String.Length%2A> == 0 chovat jinak pro řetězce null. Pokud se pokusíte získat hodnotu <xref:System.String.Length%2A> vlastnost na hodnotu null. řetězec, vyvolá modul common language runtime <xref:System.NullReferenceException?displayProperty=fullName>. Pokud provádíte srovnání řetězec null a prázdný řetězec, modul common language runtime nevyvolá výjimku; Porovnání vrátí `false`. Testování pro null neovlivňuje výrazně relativní výkon tyto dva přístupy. Pokud je cílem [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], použijte <xref:System.String.IsNullOrEmpty%2A> metoda. Jinak použijte <xref:System.String.Length%2A> == porovnání kdykoli je to možné.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení toto pravidlo, změňte porovnání používat <xref:System.String.Length%2A> vlastnost a test pro řetězec null. Pokud cílení na [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], použijte <xref:System.String.IsNullOrEmpty%2A> metoda.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Je bezpečné potlačit upozornění na toto pravidlo, pokud výkon není problém.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ilustruje různých technik, které se používají k vyhledejte prázdný řetězec.  
-  
+|||
+|-|-|
+|TypeName|TestForEmptyStringsUsingStringLength|
+|CheckId|CA1820|
+|Kategorie|Microsoft.Performance|
+|Narušující změna|Nenarušující|
+
+## <a name="cause"></a>příčina
+ Řetězec se porovnává se prázdný řetězec pomocí <xref:System.Object.Equals%2A?displayProperty=fullName>.
+
+## <a name="rule-description"></a>Popis pravidla
+ Porovnávání řetězců pomocí <xref:System.String.Length%2A?displayProperty=fullName> vlastnost nebo <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> metoda je mnohem rychlejší než použití <xref:System.Object.Equals%2A>. Důvodem je, že <xref:System.Object.Equals%2A> spouští výrazně další instrukce MSIL než buď <xref:System.String.IsNullOrEmpty%2A> nebo počet pokyny provést načíst <xref:System.String.Length%2A> vlastnost hodnota a porovnávají ho na hodnotu nula.
+
+ Je třeba si uvědomit, <xref:System.Object.Equals%2A> a <xref:System.String.Length%2A> == 0 chovat jinak pro řetězce null. Pokud se pokusíte získat hodnotu <xref:System.String.Length%2A> vlastnost na hodnotu null. řetězec, vyvolá modul common language runtime <xref:System.NullReferenceException?displayProperty=fullName>. Pokud provádíte srovnání řetězec null a prázdný řetězec, modul common language runtime nevyvolá výjimku; Porovnání vrátí `false`. Testování pro null neovlivňuje výrazně relativní výkon tyto dva přístupy. Pokud je cílem [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], použijte <xref:System.String.IsNullOrEmpty%2A> metoda. Jinak použijte <xref:System.String.Length%2A> == porovnání kdykoli je to možné.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení toto pravidlo, změňte porovnání používat <xref:System.String.Length%2A> vlastnost a test pro řetězec null. Pokud cílení na [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], použijte <xref:System.String.IsNullOrEmpty%2A> metoda.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Je bezpečné potlačit upozornění na toto pravidlo, pokud výkon není problém.
+
+## <a name="example"></a>Příklad
+ Následující příklad ilustruje různých technik, které se používají k vyhledejte prázdný řetězec.
+
  [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

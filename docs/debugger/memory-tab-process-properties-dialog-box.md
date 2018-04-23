@@ -2,8 +2,7 @@
 title: Karta paměť, dialogové okno Vlastnosti procesu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Process properties for Windows NT
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd450ecf1dc93344adc0eadfebb6df05ab880d25
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b43dd047e4ebdb145092dc3b9f37098b8db6322e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>Karta Paměť, dialogové okno vlastností procesu
 Použití **paměti** kartě Zobrazit, jak tento proces se používá paměti. Chcete-li zobrazit [dialogové okno Vlastnosti procesu](../debugger/process-properties-dialog-box.md), přesunout fokus na [zobrazení procesů](../debugger/processes-view.md) okno. Vyberte libovolný uzel procesu ve stromové struktuře, a potom vyberte **vlastnosti** z **zobrazení** nabídky.  

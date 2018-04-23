@@ -2,8 +2,7 @@
 title: 'Upozornění zabezpečení: Ladicí program musí spustit nedůvěryhodný příkaz | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.sourceserver.securityalert
@@ -18,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef10436ca2ee402bb0e8dfe5572d1c32944cccc8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77554795772a5a9e2ce5d9bbe9f620923bc20184
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="security-warning-debugger-must-execute-untrusted-command"></a>Upozornění zabezpečení: Ladicí program musí spustit nedůvěryhodný příkaz.
 Toto dialogové okno upozornění se zobrazí, když používáte zdrojového serveru. Znamená to, ladicího programu je potřeba provést k získání zdrojového kódu příkaz není v seznamu důvěryhodných příkazy pro zdrojový Server, které jsou obsažené v souboru srcsvr.ini. Pokud je to platný příkaz, můžete ho přidat do souboru srcsvr.ini. Jinak by neměl spustit ho. Další informace najdete v tématu [zadejte symbolu (.pdb) a zdrojových souborů](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  

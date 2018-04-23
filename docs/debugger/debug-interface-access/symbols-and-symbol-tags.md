@@ -2,8 +2,7 @@
 title: Symboly a značky symbolů | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 69d2f5c2182f32a95ca95d24c5319b164f27f1ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72f4cb4b6ed35e880e1cb26980420f4e951ffc16
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="symbols-and-symbol-tags"></a>Symboly a značky symbolů
 Informace o ladění o kompilované programu je uložené v souboru databáze (.pdb) program jako symboly, které jsou dostupné, pomocí rozhraní API sady SDK ladění rozhraní přístup (DIA). Mají všechny symboly [idiasymbol::get_symtag –](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) a [idiasymbol::get_symindexid –](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) vlastnost. `symTag` Vlastnost určuje typ symbolu podle definice [SymTagEnum – výčet](../../debugger/debug-interface-access/symtagenum.md) výčtu. `symIndexId` Vlastnost je `DWORD` hodnotu, která obsahuje jedinečný identifikátor pro všechny instance symbolu.  

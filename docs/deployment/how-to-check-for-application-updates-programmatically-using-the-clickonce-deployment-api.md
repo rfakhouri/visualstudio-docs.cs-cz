@@ -2,8 +2,7 @@
 title: 'Postupy: Kontrola aktualizací aplikace programově pomocí rozhraní API nasazení ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - ClickOnce deployment, updates
 - application updates
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2812a12541d71d29beff453c66344f85be904f5a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5953af7c6aafe914be409d8c3ab459b6b4261e54
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Postupy: Programová kontrola aktualizací aplikace pomocí rozhraní API nasazení ClickOnce
 ClickOnce nabízí dva způsoby, jak se aktualizace aplikace po nasazení. V metodě první můžete nakonfigurovat nasazení ClickOnce automaticky vyhledávat aktualizace v určitých intervalech. V druhé metody můžete napsat kód, který používá <xref:System.Deployment.Application.ApplicationDeployment> třídy ke kontrole aktualizací založené na události, jako je například požadavek uživatele.  

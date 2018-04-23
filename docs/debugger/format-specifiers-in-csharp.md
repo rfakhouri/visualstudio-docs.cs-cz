@@ -2,8 +2,7 @@
 title: Formátování specifikátory v ladicím programu (C#) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -28,11 +27,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4b238833ecf96a80c66d6751b9a9afa772e2fee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 447d1c1d9a60e1ff2a360790abe2c3c89f174fa6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Specifikátory formátu v jazyce C# v ladicím programu sady Visual Studio
 Formát, ve kterém je zobrazená hodnota v lze změnit **sledovat** okno použití specifikátorů formátu. Můžete také použít specifikátory formátu v **Immediate** okně **příkaz** okno v [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)a to i v systému windows zdroje. Pokud přesunutí ukazatele myši na výrazu v těchto windows, zobrazí se v datového tipu výsledek. Datatips – bude odrážet specifikace formátu v popis dat zobrazení.  

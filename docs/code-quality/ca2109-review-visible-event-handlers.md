@@ -1,10 +1,8 @@
 ---
-title: 'CA2109: Revize viditelných obslužných rutin událostí | Microsoft Docs'
-ms.custom: ''
+title: 'CA2109: Revize viditelných obslužných rutin událostí'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2109
 - ReviewVisibleEventHandlers
@@ -17,52 +15,50 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7949c7f0b1bfa535fea2c30fd3a473f5fe82fc37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf11564e7420231ac6ab65c6dc00762bb4077ef2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Revize viditelných obslužných rutin událostí
-|||  
-|-|-|  
-|TypeName|ReviewVisibleEventHandlers|  
-|CheckId|CA2109|  
-|Kategorie|Microsoft.Security|  
-|Narušující změna|Narušující|  
-  
-## <a name="cause"></a>příčina  
- Byla zjištěna veřejná nebo chráněná metoda zpracování událostí.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Zpracování událostí metodu externě viditelné uvede problém zabezpečení, která vyžaduje kontrolu.  
-  
- Metody zpracování událostí by neměly být vystaveny, pokud to není nezbytně nutné. Obslužné rutiny události, typem delegáta, která volá metodu zveřejněné lze přidat na libovolnou událost tak dlouho, dokud obslužné rutiny a událostí podpisů shodují. Události lze zvýšit potenciálně žádný kód a jsou často vydané kódem vysoce důvěryhodných systému v odpovědi na akce uživatele, jako je například kliknutí na tlačítko. Přidání kontrolu zabezpečení pro metodu zpracování událostí nezabrání kód registraci obslužné rutiny události, která volá metodu.  
-  
- Požadavek nelze chránit spolehlivě metodu vyvolat obslužnou rutinu události. Zabezpečení vyžaduje nápovědy chránit kód z nedůvěryhodného volající prověřením volající v zásobníku volání. Kód, který přidá obslužnou rutinu události pro událost se nutně nenachází v zásobníku volání při spuštění metody obslužné rutiny události. Proto zásobníku volání může mít pouze vysoce důvěryhodné volající při vyvolání metody obslužné rutiny události. To způsobí, že požadavky provedené obslužná rutina události proběhla úspěšně. Požadované oprávnění také, může se uplatní při vyvolání metody. Z těchto důvodů může riziko není oprava porušení toto pravidlo hodnoceno pouze po zkontrolování metodu zpracování událostí. Při kontrole kódu, zvažte následující skutečnosti:  
-  
--   Vaší obslužné rutiny událostí provádět žádné operace, které jsou nebezpečné nebo využitelných, jako je například potvrzující oprávnění nebo potlačení oprávnění nespravovaného kódu?  
-  
--   Co jsou bezpečnostní hrozby do a z vašeho kódu, protože ho můžete spustit kdykoli bez pouze vysoce důvěryhodné volající v zásobníku?  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení toto pravidlo, metoda kontrola a vyhodnocení následující:  
-  
--   Můžete provádět metodu zpracování událostí neveřejný?  
-  
--   Můžete přesunout všechny nebezpečné funkce mimo obslužné rutiny události?  
-  
--   Pokud je požadavek zabezpečení zařízení, můžete to udělat jiným způsobem?  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Potlačíte upozornění od tohoto pravidla až po kontrolu zabezpečení pozor, abyste měli jistotu, že kód není představovat ohrožení zabezpečení.  
-  
-## <a name="example"></a>Příklad  
- Následující kód ukazuje metodu zpracování událostí, která může došlo ke zneužití škodlivý kód.  
-  
- [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]  
-  
-## <a name="see-also"></a>Viz také  
- <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>   
- <xref:System.EventArgs?displayProperty=fullName>   
- 
+|||
+|-|-|
+|TypeName|ReviewVisibleEventHandlers|
+|CheckId|CA2109|
+|Kategorie|Microsoft.Security|
+|Narušující změna|Narušující|
+
+## <a name="cause"></a>příčina
+ Byla zjištěna veřejná nebo chráněná metoda zpracování událostí.
+
+## <a name="rule-description"></a>Popis pravidla
+ Zpracování událostí metodu externě viditelné uvede problém zabezpečení, která vyžaduje kontrolu.
+
+ Metody zpracování událostí by neměly být vystaveny, pokud to není nezbytně nutné. Obslužné rutiny události, typem delegáta, která volá metodu zveřejněné lze přidat na libovolnou událost tak dlouho, dokud obslužné rutiny a událostí podpisů shodují. Události lze zvýšit potenciálně žádný kód a jsou často vydané kódem vysoce důvěryhodných systému v odpovědi na akce uživatele, jako je například kliknutí na tlačítko. Přidání kontrolu zabezpečení pro metodu zpracování událostí nezabrání kód registraci obslužné rutiny události, která volá metodu.
+
+ Požadavek nelze chránit spolehlivě metodu vyvolat obslužnou rutinu události. Zabezpečení vyžaduje nápovědy chránit kód z nedůvěryhodného volající prověřením volající v zásobníku volání. Kód, který přidá obslužnou rutinu události pro událost se nutně nenachází v zásobníku volání při spuštění metody obslužné rutiny události. Proto zásobníku volání může mít pouze vysoce důvěryhodné volající při vyvolání metody obslužné rutiny události. To způsobí, že požadavky provedené obslužná rutina události proběhla úspěšně. Požadované oprávnění také, může se uplatní při vyvolání metody. Z těchto důvodů může riziko není oprava porušení toto pravidlo hodnoceno pouze po zkontrolování metodu zpracování událostí. Při kontrole kódu, zvažte následující skutečnosti:
+
+-   Vaší obslužné rutiny událostí provádět žádné operace, které jsou nebezpečné nebo využitelných, jako je například potvrzující oprávnění nebo potlačení oprávnění nespravovaného kódu?
+
+-   Co jsou bezpečnostní hrozby do a z vašeho kódu, protože ho můžete spustit kdykoli bez pouze vysoce důvěryhodné volající v zásobníku?
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení toto pravidlo, metoda kontrola a vyhodnocení následující:
+
+-   Můžete provádět metodu zpracování událostí neveřejný?
+
+-   Můžete přesunout všechny nebezpečné funkce mimo obslužné rutiny události?
+
+-   Pokud je požadavek zabezpečení zařízení, můžete to udělat jiným způsobem?
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Potlačíte upozornění od tohoto pravidla až po kontrolu zabezpečení pozor, abyste měli jistotu, že kód není představovat ohrožení zabezpečení.
+
+## <a name="example"></a>Příklad
+ Následující kód ukazuje metodu zpracování událostí, která může došlo ke zneužití škodlivý kód.
+
+ [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
+
+## <a name="see-also"></a>Viz také
+ <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName><xref:System.EventArgs?displayProperty=fullName>

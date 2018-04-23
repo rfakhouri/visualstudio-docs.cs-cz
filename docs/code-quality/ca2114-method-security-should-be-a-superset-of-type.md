@@ -1,10 +1,8 @@
 ---
-title: 'CA2114: Zabezpečení metody by měla být nadmnožinou typu | Microsoft Docs'
-ms.custom: ''
+title: 'CA2114: Zabezpečení metody by mělo být nadmnožinou typu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MethodSecurityShouldBeASupersetOfType
 - CA2114
@@ -17,50 +15,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a4924a6306b99fe2d2ead83442bca2ee1edb5219
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 915104e26f16005b8e0b8c4fa092be7c40d1ff7f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Zabezpečení metody by mělo být nadmnožinou typu
-|||  
-|-|-|  
-|TypeName|MethodSecurityShouldBeASupersetOfType|  
-|CheckId|CA2114|  
-|Kategorie|Microsoft.Security|  
-|Narušující změna|Narušující|  
-  
-## <a name="cause"></a>příčina  
- Typ má deklarativní zabezpečení a jeden z jeho metody má deklarativní zabezpečení pro stejnou akci zabezpečení a zabezpečení akce není [požadavky propojení](/dotnet/framework/misc/link-demands), a zkontrolovat nástrojem typ oprávnění nejsou podmnožinu oprávnění ověří pomocí metody.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Metody by neměla mít jak metoda úroveň a typ deklarativní zabezpečení pro stejnou akci. Dva kontroly se nekombinují; je použita pouze vyžádání úrovni metody. Například, pokud typ požaduje oprávnění `X`, a jeden z jeho metody požaduje oprávnění `Y`, kód nemá oprávnění k `X` provést metodu.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Zkontrolujte kód a ujistěte se, že obě akce jsou povinné. Pokud jsou požadovány obě akce, ujistěte se, že úrovni metody akce obsahuje zabezpečení zadané pro úroveň typu. Například, pokud typ vašeho požaduje oprávnění `X`, a jeho metoda musí také požadovat oprávnění `Y`, metoda by měla explicitně požadovat `X` a `Y`.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Je bezpečné potlačit upozornění na toto pravidlo, je-li metoda nevyžaduje zabezpečení určeného typu. To však není běžné scénáře a může znamenat potřebu kontrolu pečlivě návrhu.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad používá prostředí oprávnění k předvedení nebezpečích bychom při tom porušili toto pravidlo. V tomto příkladu kódu aplikace vytvoří instanci typu zabezpečené před odepřením oprávnění požadované podle typu. Ve scénáři skutečné hrozby by aplikace vyžadují jiný způsob, jak získat instanci objektu.  
-  
- V následujícím příkladu požadavky knihovny oprávnění pro typ zapisovat a oprávnění ke čtení pro metodu.  
-  
- [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]  
-  
-## <a name="example"></a>Příklad  
- Následující kód aplikace ukazuje ohrožení zabezpečení knihovny voláním metody, i když nesplňuje požadavek na zabezpečení na úrovni typu.  
-  
- [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]  
-  
- Tento příklad vytvoří následující výstup.  
-  
- **[Všechna oprávnění] Osobní údaje: 6/16/1964 12:00:00: 00**  
-**[Žádné oprávnění k zápisu (pro název typu)] Osobní údaje: 6/16/1964 12:00:00: 00**  
-**[Žádné oprávnění ke čtení (pro název metoda)] Nelze získat přístup k osobním údajům: žádost se nezdařila.**   
-## <a name="see-also"></a>Viz také  
- [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines)   
- [Požadavky na odkaz](/dotnet/framework/misc/link-demands)   
- [Data a modelování](/dotnet/framework/data/index)
+|||
+|-|-|
+|TypeName|MethodSecurityShouldBeASupersetOfType|
+|CheckId|CA2114|
+|Kategorie|Microsoft.Security|
+|Narušující změna|Narušující|
+
+## <a name="cause"></a>příčina
+ Typ má deklarativní zabezpečení a jeden z jeho metody má deklarativní zabezpečení pro stejnou akci zabezpečení a zabezpečení akce není [požadavky propojení](/dotnet/framework/misc/link-demands), a zkontrolovat nástrojem typ oprávnění nejsou podmnožinu oprávnění ověří pomocí metody.
+
+## <a name="rule-description"></a>Popis pravidla
+ Metody by neměla mít jak metoda úroveň a typ deklarativní zabezpečení pro stejnou akci. Dva kontroly se nekombinují; je použita pouze vyžádání úrovni metody. Například, pokud typ požaduje oprávnění `X`, a jeden z jeho metody požaduje oprávnění `Y`, kód nemá oprávnění k `X` provést metodu.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Zkontrolujte kód a ujistěte se, že obě akce jsou povinné. Pokud jsou požadovány obě akce, ujistěte se, že úrovni metody akce obsahuje zabezpečení zadané pro úroveň typu. Například, pokud typ vašeho požaduje oprávnění `X`, a jeho metoda musí také požadovat oprávnění `Y`, metoda by měla explicitně požadovat `X` a `Y`.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Je bezpečné potlačit upozornění na toto pravidlo, je-li metoda nevyžaduje zabezpečení určeného typu. To však není běžné scénáře a může znamenat potřebu kontrolu pečlivě návrhu.
+
+## <a name="example"></a>Příklad
+ Následující příklad používá prostředí oprávnění k předvedení nebezpečích bychom při tom porušili toto pravidlo. V tomto příkladu kódu aplikace vytvoří instanci typu zabezpečené před odepřením oprávnění požadované podle typu. Ve scénáři skutečné hrozby by aplikace vyžadují jiný způsob, jak získat instanci objektu.
+
+ V následujícím příkladu požadavky knihovny oprávnění pro typ zapisovat a oprávnění ke čtení pro metodu.
+
+ [!code-csharp[FxCop.Security.MethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_1.cs)]
+
+## <a name="example"></a>Příklad
+ Následující kód aplikace ukazuje ohrožení zabezpečení knihovny voláním metody, i když nesplňuje požadavek na zabezpečení na úrovni typu.
+
+ [!code-csharp[FxCop.Security.TestMethodLevelSecurity#1](../code-quality/codesnippet/CSharp/ca2114-method-security-should-be-a-superset-of-type_2.cs)]
+
+ Tento příklad vytvoří následující výstup.
+
+ **[Všechna oprávnění] Osobní údaje: 6/16/1964 12:00:00 AM**
+**[žádné oprávnění k zápisu (pro název typu)] osobní údaje: 6/16/1964 12:00:00 AM**
+**[ne číst oprávnění () pro název metoda)] nelze získat přístup k osobním údajům: žádost se nezdařila.**
+## <a name="see-also"></a>Viz také
+ [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines) [požadavky na propojení](/dotnet/framework/misc/link-demands) [Data a modelování](/dotnet/framework/data/index)

@@ -2,8 +2,7 @@
 title: Vyřešit nejednoznačnosti – dialogové okno | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.Disambig
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dcd6a9df3fb60dc61a0d9ed2e8586b77ba22e05f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 130f580c997cb5bc0e522d0fef57969788481273
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>Dialogové okno Vyřešit nejednoznačnosti
 `Resolve Ambiguity` Dialogové okno se zobrazí, když ladicí program nemůže vyberte umístění, k zobrazení. Například pokud používáte šablonami C++, můžete vytvořit víc funkcí z jedné funkce šablony. Pokud ladicí program zastaví v umístění zdroje v šabloně, a vy zvolíte `Go To Disassembly`, má více možností ladicího programu. Jednotlivé funkce z šablony má svou vlastní zpětný překlad kódu a ladicí program nebude vědět, který kód, který chcete zobrazit. `Resolve Ambiguity` Dialogové okno umožňuje vybrat umístění, bude ze seznamu všech odpovídajících umístění.  

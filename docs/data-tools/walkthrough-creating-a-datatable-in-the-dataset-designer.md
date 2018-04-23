@@ -1,6 +1,5 @@
 ---
-title: 'Návod: Vytváření DataTable v Návrháři Dataset | Microsoft Docs'
-ms.custom: ''
+title: 'Návod: Vytváření DataTable v Návrháři DataSet'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,103 +13,103 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 535dc8a0cc992d83523f14f491adc5925bc1c05d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5d359908a488e744a059f73a7ad058c249a6a40
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>Návod: Vytváření DataTable v Návrháři DataSet
 
-Tento návod popisuje, jak vytvořit <xref:System.Data.DataTable> (bez TableAdapter) pomocí **návrháře Dataset**. Informace o vytváření datových tabulek, které zahrnují TableAdapters najdete v tématu [vytvořit a nakonfigurovat TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
+Tento návod popisuje, jak vytvořit <xref:System.Data.DataTable> (bez TableAdapter) pomocí **návrháře Dataset**. Informace o vytváření datových tabulek, které zahrnují TableAdapters najdete v tématu [vytvořit a nakonfigurovat TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-Úkoly v tomto návodu zahrnují:  
+Úkoly v tomto návodu zahrnují:
 
--   Vytvoření nového projektu aplikace Windows Forms  
+-   Vytvoření nového projektu aplikace Windows Forms
 
--   Přidání nová datová sada pro aplikaci  
+-   Přidání nová datová sada pro aplikaci
 
--   Přidání nové tabulky dat k datové sadě  
+-   Přidání nové tabulky dat k datové sadě
 
--   Přidávání sloupců do tabulky dat  
+-   Přidávání sloupců do tabulky dat
 
--   Nastavení primární klíč pro tabulku  
+-   Nastavení primární klíč pro tabulku
 
 ## <a name="creating-a-new-windows-forms-application"></a>Vytvoření nové aplikace Windows Forms
 
-### <a name="to-create-a-new-windows-forms-application-project"></a>Chcete-li vytvořit nový projekt aplikace Windows Forms  
-  
-1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .  
-  
-2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Classic Desktop**.  
+### <a name="to-create-a-new-windows-forms-application-project"></a>Chcete-li vytvořit nový projekt aplikace Windows Forms
 
-3. V prostředním podokně, vyberte **aplikace pro Windows Forms** typ projektu.  
+1. V sadě Visual Studio na **soubor** nabídce vyberte možnost **nový**, **projektu...** .
 
-4. Název projektu **DataTableWalkthrough**a potom zvolte **OK**. 
-  
-     **DataTableWalkthrough** projekt je vytvořen a přidán do **Průzkumníku řešení**.  
+2. Rozbalte **Visual C#** nebo **jazyka Visual Basic** klikněte v levém podokně, pak vyberte **Windows Classic Desktop**.
+
+3. V prostředním podokně, vyberte **aplikace pro Windows Forms** typ projektu.
+
+4. Název projektu **DataTableWalkthrough**a potom zvolte **OK**.
+
+     **DataTableWalkthrough** projekt je vytvořen a přidán do **Průzkumníku řešení**.
 
 ## <a name="adding-a-new-dataset-to-the-application"></a>Přidání nová datová sada pro aplikaci
 
-### <a name="to-add-a-new-dataset-item-to-the-project"></a>Postup přidání nové položky datové sady do projektu  
-  
-1.  Na **projektu** nabídce vyberte možnost **přidat novou položku...** .  
-  
-     Zobrazí se dialogové okno Přidat novou položku.  
-  
-2.  V levém podokně vyberte **Data**, pak vyberte **datovou sadu** v prostředním podokně.  
-  
-3.  Zvolte **přidat**.  
-  
-     Visual Studio. přidá do souboru s názvem **DataSet1.xsd** do projektu a otevře ji v **návrháře Dataset**.  
+### <a name="to-add-a-new-dataset-item-to-the-project"></a>Postup přidání nové položky datové sady do projektu
 
-## <a name="adding-a-new-datatable-to-the-dataset"></a>Přidání nové DataTable k datové sadě  
+1.  Na **projektu** nabídce vyberte možnost **přidat novou položku...** .
 
-### <a name="to-add-a-new-data-table-to-the-dataset"></a>Chcete-li přidat novou tabulku dat k datové sadě  
-  
-1.  Přetáhněte **DataTable** z **datovou sadu** kartě **sada nástrojů** na **návrháře Dataset**.  
-  
-     Tabulka s názvem **DataTable1** se přidá do datové sady.  
-   
-2.  Klikněte na záhlaví okna **DataTable1** a přejmenujte ji `Music`.  
+     Zobrazí se dialogové okno Přidat novou položku.
+
+2.  V levém podokně vyberte **Data**, pak vyberte **datovou sadu** v prostředním podokně.
+
+3.  Zvolte **přidat**.
+
+     Visual Studio. přidá do souboru s názvem **DataSet1.xsd** do projektu a otevře ji v **návrháře Dataset**.
+
+## <a name="adding-a-new-datatable-to-the-dataset"></a>Přidání nové DataTable k datové sadě
+
+### <a name="to-add-a-new-data-table-to-the-dataset"></a>Chcete-li přidat novou tabulku dat k datové sadě
+
+1.  Přetáhněte **DataTable** z **datovou sadu** kartě **sada nástrojů** na **návrháře Dataset**.
+
+     Tabulka s názvem **DataTable1** se přidá do datové sady.
+
+2.  Klikněte na záhlaví okna **DataTable1** a přejmenujte ji `Music`.
 
 ## <a name="adding-columns-to-the-datatable"></a>Přidávání sloupců do DataTable
 
-### <a name="to-add-columns-to-the-datatable"></a>Přidání sloupců do DataTable  
-  
-1.  Klikněte pravým tlačítkem myši **Hudba** tabulky. Přejděte na příkaz **přidat**a potom klikněte na **sloupec**.  
-  
-2.  Název sloupce `SongID`.  
-  
-3.  V **vlastnosti** nastavte <xref:System.Data.DataColumn.DataType%2A> vlastnost <xref:System.Int16?displayProperty=fullName>.  
-  
-4.  Tento postup opakujte a přidejte následující sloupce:  
-  
-     `SongTitle`: <xref:System.String?displayProperty=fullName>  
-  
-     `Artist`: <xref:System.String?displayProperty=fullName>  
-  
-     `Genre`: <xref:System.String?displayProperty=fullName>  
-  
+### <a name="to-add-columns-to-the-datatable"></a>Přidání sloupců do DataTable
+
+1.  Klikněte pravým tlačítkem myši **Hudba** tabulky. Přejděte na příkaz **přidat**a potom klikněte na **sloupec**.
+
+2.  Název sloupce `SongID`.
+
+3.  V **vlastnosti** nastavte <xref:System.Data.DataColumn.DataType%2A> vlastnost <xref:System.Int16?displayProperty=fullName>.
+
+4.  Tento postup opakujte a přidejte následující sloupce:
+
+     `SongTitle`: <xref:System.String?displayProperty=fullName>
+
+     `Artist`: <xref:System.String?displayProperty=fullName>
+
+     `Genre`: <xref:System.String?displayProperty=fullName>
+
 ## <a name="setting-the-primary-key-for-the-table"></a>Nastavení primární klíč pro tabulku
 
-Všechny tabulky dat musí mít primární klíč. Primární klíč jednoznačně identifikuje konkrétní záznam v tabulce data.  
-  
+Všechny tabulky dat musí mít primární klíč. Primární klíč jednoznačně identifikuje konkrétní záznam v tabulce data.
+
 ### <a name="to-set-the-primary-key-of-the-data-table"></a>Chcete-li nastavit primární klíč tabulky dat
-  
--   Klikněte pravým tlačítkem myši **SongID** sloupec a pak klikněte na tlačítko **nastavit primární klíč**.  
-  
-     Ikona klíče se zobrazí vedle **SongID** sloupce.  
-  
-## <a name="saving-your-project"></a>Ukládání projektu  
-  
-### <a name="to-save-the-datatablewalkthrough-project"></a>K uložení projektu DataTableWalkthrough  
-  
--   Na **soubor** nabídky, klikněte na tlačítko **Uložit vše**.  
+
+-   Klikněte pravým tlačítkem myši **SongID** sloupec a pak klikněte na tlačítko **nastavit primární klíč**.
+
+     Ikona klíče se zobrazí vedle **SongID** sloupce.
+
+## <a name="saving-your-project"></a>Ukládání projektu
+
+### <a name="to-save-the-datatablewalkthrough-project"></a>K uložení projektu DataTableWalkthrough
+
+-   Na **soubor** nabídky, klikněte na tlačítko **Uložit vše**.
 
 ## <a name="see-also"></a>Viz také
 
-[Vytvoření a konfigurace datových sad v sadě Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
-[Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
-[Ověřování dat](../data-tools/validate-data-in-datasets.md)  
-[Ukládání dat](../data-tools/saving-data.md)
+- [Vytvoření a konfigurace datových sad v sadě Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
+- [Vytvoření vazby ovládacích prvků k datům v sadě Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+- [Ověřování dat](../data-tools/validate-data-in-datasets.md)
+- [Ukládání dat](../data-tools/saving-data.md)

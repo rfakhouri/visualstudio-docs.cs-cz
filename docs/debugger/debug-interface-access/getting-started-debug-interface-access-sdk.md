@@ -2,8 +2,7 @@
 title: Začínáme (přístup k rozhraní ladění SDK) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c3c6df3fc92370d939771a7e94334db7f2cfc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fdfe560f22374c0b46305d096bea32a784babe6
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>Začínáme (Přístup k rozhraní ladění SDK)
 Ladění rozhraní přístup (DIA) SDK poskytuje vám s instruktážní dokumentace a ukázky, která ukazuje, jak používat rozhraní API DIA. Použití rozhraní a metody v sadě DIA SDK k vývoji vlastních aplikací, které otevřete soubory PDB a dbg a vyhledat obsah pro symboly, hodnoty, atributy, adresy a další informace o ladění. Tato sada SDK poskytuje referenční tabulky pro vlastnosti přidružené k symboly v aplikací C++ nalezen.  

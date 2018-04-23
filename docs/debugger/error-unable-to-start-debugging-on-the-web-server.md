@@ -2,9 +2,8 @@
 title: 'Chyba: Nelze spustit ladění na webovém serveru | Microsoft Docs'
 ms.custom: ''
 ms.date: 05/23/2017
-ms.technology:
-- vs-ide-debug
-ms.topic: reference
+ms.technology: vs-ide-debug
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -29,11 +28,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 459df1ca9ffed246116c71adac8a38039b6602ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e58f8152d5c927271161bbf9615b1dfe3944e6dd
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Chyba: Nepodařilo se zahájit ladění na webovém serveru.
 
@@ -78,7 +77,7 @@ Této chybě dochází často, protože k chybě nebo konfigurace došlo ke změ
 ## <a name="msvsmon"></a> Microsoft visual studio vzdálené ladění monitor(msvsmon.exe) nezdá se být spuštěn ve vzdáleném počítači
 
 - Pokud ladíte ve vzdáleném počítači, ujistěte se, máte [nainstalovaná a spuštěná vzdáleného ladicího programu](../debugger/remote-debugging.md). Pokud zpráva uvádí brána firewall, ujistěte se, [opravte porty v bráně firewall](../debugger/remote-debugger-port-assignments.md) jsou otevřené, zvlášť pokud používáte firewall od jiného výrobce.
-- Pokud používáte souboru HOSTITELŮ, ujistěte se, zda že je správně nakonfigurována. Například, pokud ladění pomocí **F5** (místo **připojit k procesu**), hostitele soubor musí obsahovat stejnou adresu URL projektu jako vlastnosti projektu, **vlastnosti > Web > servery ** nebo **vlastnosti > ladění**, v závislosti na typu vašeho projektu.
+- Pokud používáte souboru HOSTITELŮ, ujistěte se, zda že je správně nakonfigurována. Například, pokud ladění pomocí **F5** (místo **připojit k procesu**), hostitele soubor musí obsahovat stejnou adresu URL projektu jako vlastnosti projektu, **vlastnosti > Web > servery**  nebo **vlastnosti > ladění**, v závislosti na typu vašeho projektu.
 
 ## <a name="server_error"></a> Vzdálený server vrátil chybu
 
@@ -121,7 +120,7 @@ Po převzetí kroky popsané v tomto poli se problém vyřešit a před dalším
 
     Fond aplikací může být nakonfigurován pro verzi technologie ASP.NET, která neodpovídá projektu sady Visual Studio. Aktualizovat verzi technologie ASP.NET ve fondu aplikací a restartujte ji. Podrobné informace najdete v tématu [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-    Navíc pokud se změnila oprávnění hesla, musíte je aktualizovat v fond aplikací nebo Web.  Ve fondu aplikací, aktualizujte přihlašovací údaje v **Upřesnit nastavení > Model procesu > Identity**. Pro webový server, aktualizujte přihlašovací údaje v **základní nastavení > připojte se jako... **. Restartujte fond aplikací.
+    Navíc pokud se změnila oprávnění hesla, musíte je aktualizovat v fond aplikací nebo Web.  Ve fondu aplikací, aktualizujte přihlašovací údaje v **Upřesnit nastavení > Model procesu > Identity**. Pro webový server, aktualizujte přihlašovací údaje v **základní nastavení > připojte se jako...** . Restartujte fond aplikací.
     
 * Zkontrolujte, že složce webové aplikace má správná oprávnění.
 

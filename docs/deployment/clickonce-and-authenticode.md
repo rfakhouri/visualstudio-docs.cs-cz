@@ -2,8 +2,7 @@
 title: ClickOnce a kód Authenticode | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,16 +15,16 @@ helpviewer_keywords:
 - ClickOnce deployment, certificates
 - ClickOnce deployment, security
 ms.assetid: ab5b6712-f32a-4e33-842f-e88ab4818ccf
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e4da37b0683b33396aae60a519fa4aa6b5c7e97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b79990cf41e69e2c175691e94b344d4de116691
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce a kód Authenticode
 *Authenticode* je technologie společnosti Microsoft, která používá standardní kryptografie k podepsání kódu aplikace s digitálními certifikáty, které ověření pravosti vydavatele. Pomocí Authenticode pro nasazení aplikace, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] snižuje riziko trojského koně. Trojský kůň, není virus nebo jiný škodlivý program, který třetí strana špatně rozpozná jako legitimní program pocházející z zavedeného důvěryhodného zdroje. Podepisování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nasazení pomocí digitálního certifikátu je volitelný krok, chcete-li ověřit, že sestavení a soubory nebylo manipulováno.  

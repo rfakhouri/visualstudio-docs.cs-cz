@@ -2,8 +2,7 @@
 title: 'Postupy: vytváření přidružení souborů pro aplikaci ClickOnce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-deployment
+ms.technology: vs-ide-deployment
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,16 +12,16 @@ helpviewer_keywords:
 - file associations, ClickOnce applications
 - ClickOnce deployment, file associations
 ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
-author: stevehoag
-ms.author: shoag
-manager: wpickett
+author: mikejo5000
+ms.author: mikejo
+manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 75215164de3aedfe1ea0168275280304dfd5def9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bf60327e622f8eb32757d29051e3dce94661722d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Postupy: Vytváření přidružení souborů pro aplikaci ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace může být přidružený jeden nebo více přípon souborů, takže aplikace se spustila automaticky, když uživatel otevře soubor z těchto typů. Přidání podpory přípony názvu souboru [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace je jednoduché.  

@@ -1,9 +1,7 @@
 ---
-title: Použití poznámek SAL k snížení míry výskytu závad kódu C/C++ | Microsoft Docs
-ms.custom: ''
+title: Použití poznámek SAL k snížení míry výskytu závad kódu C/C++
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 helpviewer_keywords:
 - annotations
@@ -12,54 +10,54 @@ helpviewer_keywords:
 ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2a9e0259640f0a5f32401e115dfe901250bb17e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4be29e09e58b54ee567514cd0dcbccf1c1c5434e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Použití poznámek SAL k snížení míry výskytu závad kódu C/C++
-SAL je jazyk poznámky Microsoft zdrojového kódu. Pomocí zdrojového kódu poznámky, můžete provést záměr za kódu explicitní. Tyto poznámky také povolit automatizované analýze statické nástrojů pro analýzu kódu přesněji, s výrazně méně falešně pozitivních a výsledkům.  
-  
- Články v této části dokumentace zabývat aspekty SAL, poskytují informace, které SAL syntaxe a poskytnout příkladů jeho použití.  
-  
--   [Porozumění SAL](../code-quality/understanding-sal.md)  
-  
-     Poskytuje informace a příklady, které se zobrazí základní poznámek SAL.  
-  
--   [Zadávání poznámek k parametrům funkcí a návratovým hodnotám](../code-quality/annotating-function-parameters-and-return-values.md)  
-  
-     Uvádí poznámek SAL pro funkce a parametry funkce.  
-  
--   [Zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)  
-  
-     Uvádí poznámek SAL pro funkce a chování funkce.  
-  
--   [Zadávání poznámek ke strukturám a třídám](../code-quality/annotating-structs-and-classes.md)  
-  
-     Uvádí poznámek SAL pro třídy a struktury.  
-  
--   [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)  
-  
-     Vysvětluje, jak pomocí zámku mechanismy poznámek SAL.  
-  
--   [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
-  
-     Uvádí poznámek SAL, určující podmínku nebo oboru (umístění) dalších poznámek SAL.  
-  
--   [Vnitřní funkce](../code-quality/intrinsic-functions.md)  
-  
-     Uvádí vnitřní poznámek SAL.  
-  
--   [Osvědčené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)  
-  
-     Obsahuje příklady, které ukazují, jak používat poznámek SAL. Také popisuje běžné nástrahy.  
-  
-## <a name="related-resources"></a>Související informační zdroje  
- [Blog týmu analýzy kódu](http://go.microsoft.com/fwlink/?LinkId=251197)  
-  
-## <a name="see-also"></a>Viz také  
+SAL je jazyk poznámky Microsoft zdrojového kódu. Pomocí zdrojového kódu poznámky, můžete provést záměr za kódu explicitní. Tyto poznámky také povolit automatizované analýze statické nástrojů pro analýzu kódu přesněji, s výrazně méně falešně pozitivních a výsledkům.
+
+ Články v této části dokumentace zabývat aspekty SAL, poskytují informace, které SAL syntaxe a poskytnout příkladů jeho použití.
+
+-   [Porozumění SAL](../code-quality/understanding-sal.md)
+
+     Poskytuje informace a příklady, které se zobrazí základní poznámek SAL.
+
+-   [Zadávání poznámek k parametrům funkcí a návratovým hodnotám](../code-quality/annotating-function-parameters-and-return-values.md)
+
+     Uvádí poznámek SAL pro funkce a parametry funkce.
+
+-   [Zadávání poznámek k chování funkcí](../code-quality/annotating-function-behavior.md)
+
+     Uvádí poznámek SAL pro funkce a chování funkce.
+
+-   [Zadávání poznámek ke strukturám a třídám](../code-quality/annotating-structs-and-classes.md)
+
+     Uvádí poznámek SAL pro třídy a struktury.
+
+-   [Zadávání poznámek o chování při zamykání](../code-quality/annotating-locking-behavior.md)
+
+     Vysvětluje, jak pomocí zámku mechanismy poznámek SAL.
+
+-   [Určení, kdy a kde se má poznámka použít](../code-quality/specifying-when-and-where-an-annotation-applies.md)
+
+     Uvádí poznámek SAL, určující podmínku nebo oboru (umístění) dalších poznámek SAL.
+
+-   [Vnitřní funkce](../code-quality/intrinsic-functions.md)
+
+     Uvádí vnitřní poznámek SAL.
+
+-   [Osvědčené postupy a příklady](../code-quality/best-practices-and-examples-sal.md)
+
+     Obsahuje příklady, které ukazují, jak používat poznámek SAL. Také popisuje běžné nástrahy.
+
+## <a name="related-resources"></a>Související informační zdroje
+ [Blog týmu analýzy kódu](http://go.microsoft.com/fwlink/?LinkId=251197)
+
+## <a name="see-also"></a>Viz také
  [SAL 2.0 poznámky pro ovladače systému Windows](http://go.microsoft.com/fwlink/?LinkId=250979)

@@ -1,13 +1,13 @@
 ---
 layout: LandingPage
-title: "Nasazení aplikací v sadě Visual Studio | Microsoft Docs"
-description: "Další informace o použití Visual Studio 2017 k nasazení aplikací, služeb a komponent."
-ms.technology: vs-ide-debug
-ms.openlocfilehash: fb23cf992a3474e9bf2d128bbfb384a283fd56df
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+title: Nasazení aplikací v sadě Visual Studio | Microsoft Docs
+description: Další informace o použití Visual Studio 2017 k nasazení aplikací, služeb a komponent.
+ms.technology: vs-ide-deployment
+ms.openlocfilehash: e711706666f3a9d3584c1adfee97f87907ecf3f3
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="deployment-in-visual-studio"></a>Nasazení v sadě Visual Studio
 

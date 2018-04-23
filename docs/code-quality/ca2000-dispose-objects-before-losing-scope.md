@@ -1,10 +1,8 @@
 ---
-title: 'CA2000: Uvolňujte objekty před ztrátou oboru | Microsoft Docs'
-ms.custom: ''
+title: 'CA2000: Uvolňujte objekty před ztrátou oboru'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -18,70 +16,70 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6771797128ba1f889f0639ea763a523353c8018
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 436dec37598aac31d0de2e7cb495f49b2a0bf41e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Uvolňujte objekty před ztrátou oboru
-|||  
-|-|-|  
-|TypeName|DisposeObjectsBeforeLosingScope|  
-|CheckId|CA2000|  
-|Kategorie|Microsoft.Reliability|  
-|Narušující změna|Nenarušující|  
-  
-## <a name="cause"></a>příčina  
- Je vytvořen místní objekt typu <xref:System.IDisposable>, který však není uvolněn před tím, než jsou všechny odkazy na objekt mimo rozsah.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Pokud není uvolnitelný objekt explicitně odstraněn před tím, než jsou všechny odkazy mimo rozsah, bude objekt odstraněn v době, kdy bude systémem uvolňování paměti spuštěna finalizační metoda objektu. Vzhledem k tomu, že může dojít k mimořádné události, která zabrání spuštění finalizační metody objektu, měl by namísto toho být objekt explicitně odstraněn.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li vyřešit porušení tohoto pravidla, musíte zavolat na objekt metodu <xref:System.IDisposable.Dispose%2A> před tím, než jsou všechny odkazy na něj mimo rozsah.  
-  
- Všimněte si, že příkaz `using` (`Using` v rámci [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) můžete použít pro zabalení objektů, které implementují vzor `IDisposable`. Objekty, které jsou zabaleny tímto způsobem, budou automaticky odstraněny při uzavření bloku `using`.  
-  
- Níže jsou uvedeny některé situace, ve kterých příkaz using nepostačuje pro ochranu objektů IDisposable a může způsobit výskyt upozornění CA2000.  
-  
--   Vracení uvolnitelného objektu vyžaduje, aby byl objekt zkonstruován v rámci bloku try/finally mimo blok using.  
-  
--   Inicializace členů uvolnitelného objektu by neměla být provedena v rámci konstruktoru příkazu using.  
-  
--   Vnořené konstruktory, které jsou chráněny pouze jednou obslužnou rutinou výjimky. Například  
-  
+|||
+|-|-|
+|TypeName|DisposeObjectsBeforeLosingScope|
+|CheckId|CA2000|
+|Kategorie|Microsoft.Reliability|
+|Narušující změna|Nenarušující|
+
+## <a name="cause"></a>příčina
+ Je vytvořen místní objekt typu <xref:System.IDisposable>, který však není uvolněn před tím, než jsou všechny odkazy na objekt mimo rozsah.
+
+## <a name="rule-description"></a>Popis pravidla
+ Pokud není uvolnitelný objekt explicitně odstraněn před tím, než jsou všechny odkazy mimo rozsah, bude objekt odstraněn v době, kdy bude systémem uvolňování paměti spuštěna finalizační metoda objektu. Vzhledem k tomu, že může dojít k mimořádné události, která zabrání spuštění finalizační metody objektu, měl by namísto toho být objekt explicitně odstraněn.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li vyřešit porušení tohoto pravidla, musíte zavolat na objekt metodu <xref:System.IDisposable.Dispose%2A> před tím, než jsou všechny odkazy na něj mimo rozsah.
+
+ Všimněte si, že příkaz `using` (`Using` v rámci [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) můžete použít pro zabalení objektů, které implementují vzor `IDisposable`. Objekty, které jsou zabaleny tímto způsobem, budou automaticky odstraněny při uzavření bloku `using`.
+
+ Níže jsou uvedeny některé situace, ve kterých příkaz using nepostačuje pro ochranu objektů IDisposable a může způsobit výskyt upozornění CA2000.
+
+-   Vracení uvolnitelného objektu vyžaduje, aby byl objekt zkonstruován v rámci bloku try/finally mimo blok using.
+
+-   Inicializace členů uvolnitelného objektu by neměla být provedena v rámci konstruktoru příkazu using.
+
+-   Vnořené konstruktory, které jsou chráněny pouze jednou obslužnou rutinou výjimky. Například
+
     ```csharp
-    using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
-    { ... }  
+    using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
+    { ... }
     ```
-  
-     způsobí výskyt upozornění CA2000, protože selhání vytvoření objektu StreamReader může vést k tomu, že objekt FileStream nebude nikdy uzavřen.  
-  
--   Dynamické objekty by k implementaci vzoru odstranění objektů IDisposable měly používat stínový objekt.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Nepotlačujte upozornění tohoto pravidla, pokud jste volali metodu na objekt, který volá metodu `Dispose`, jako například <xref:System.IO.Stream.Close%2A>, nebo pokud metoda, která vyvolala upozornění, vrátí objekt IDisposable zabalující objekt.  
-  
-## <a name="related-rules"></a>Související pravidla  
- [CA2213: Uvolnitelné pole by mělo být uvolněno](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
-  
- [CA2202: Neuvolňujte objekty několikrát](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
-  
-## <a name="example"></a>Příklad  
- Při implementaci metody, která vrací uvolnitelný objekt, je zapotřebí použít blok try/finally bez použití bloku catch. Jedině tak zajistíte, aby byl objekt uvolněn. Pomocí bloku try/finally lze povolit vyvolání výjimek v místě selhání a zajistit, aby byl objekt uvolněn.  
-  
- V metodě OpenPort1 se volání za účelem otevření objektu ISerializable SerialPort nebo volání metody SomeMethod nemusí zdařit. V této implementaci je vyvoláno upozornění CA2000.  
-  
- V metodě OpenPort2 jsou deklarovány dva objekty SerialPort a jsou nastaveny na hodnotu null:  
-  
--   Objekt `tempPort`, který se používá k testování toho, zda operace metody proběhly úspěšně.  
-  
--   Objekt `port`, který se používá pro návratovou hodnotu metody.  
-  
- Objekt `tempPort` je vytvořen a otevřen v rámci bloku `try` a jakákoli jiná požadovaná činnost je vykonána v rámci stejného bloku `try`. Na konci bloku `try` je otevřený port přiřazen objektu `port`, který bude vrácen, a objekt `tempPort` je nastaven na hodnotu `null`.  
-  
- Blok `finally` ověřuje hodnotu `tempPort`. Pokud hodnota není null, operace se v rámci metody nezdařila a blok `tempPort` je uzavřen, aby bylo možné zajistit uvolnění jakýchkoli prostředků. Vrácený objekt portu bude obsahovat otevřený objekt SerialPort, pokud byly operace metody úspěšné, nebo bude mít hodnotu null, pokud se operace nezdaří.  
+
+     způsobí výskyt upozornění CA2000, protože selhání vytvoření objektu StreamReader může vést k tomu, že objekt FileStream nebude nikdy uzavřen.
+
+-   Dynamické objekty by k implementaci vzoru odstranění objektů IDisposable měly používat stínový objekt.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Nepotlačujte upozornění tohoto pravidla, pokud jste volali metodu na objekt, který volá metodu `Dispose`, jako například <xref:System.IO.Stream.Close%2A>, nebo pokud metoda, která vyvolala upozornění, vrátí objekt IDisposable zabalující objekt.
+
+## <a name="related-rules"></a>Související pravidla
+ [CA2213: Uvolnitelné pole by mělo být uvolněno](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+
+ [CA2202: Neuvolňujte objekty několikrát](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+
+## <a name="example"></a>Příklad
+ Při implementaci metody, která vrací uvolnitelný objekt, je zapotřebí použít blok try/finally bez použití bloku catch. Jedině tak zajistíte, aby byl objekt uvolněn. Pomocí bloku try/finally lze povolit vyvolání výjimek v místě selhání a zajistit, aby byl objekt uvolněn.
+
+ V metodě OpenPort1 se volání za účelem otevření objektu ISerializable SerialPort nebo volání metody SomeMethod nemusí zdařit. V této implementaci je vyvoláno upozornění CA2000.
+
+ V metodě OpenPort2 jsou deklarovány dva objekty SerialPort a jsou nastaveny na hodnotu null:
+
+-   Objekt `tempPort`, který se používá k testování toho, zda operace metody proběhly úspěšně.
+
+-   Objekt `port`, který se používá pro návratovou hodnotu metody.
+
+ Objekt `tempPort` je vytvořen a otevřen v rámci bloku `try` a jakákoli jiná požadovaná činnost je vykonána v rámci stejného bloku `try`. Na konci bloku `try` je otevřený port přiřazen objektu `port`, který bude vrácen, a objekt `tempPort` je nastaven na hodnotu `null`.
+
+ Blok `finally` ověřuje hodnotu `tempPort`. Pokud hodnota není null, operace se v rámci metody nezdařila a blok `tempPort` je uzavřen, aby bylo možné zajistit uvolnění jakýchkoli prostředků. Vrácený objekt portu bude obsahovat otevřený objekt SerialPort, pokud byly operace metody úspěšné, nebo bude mít hodnotu null, pokud se operace nezdaří.
 
 ```csharp
 public SerialPort OpenPort1(string portName)
@@ -104,7 +102,7 @@ public SerialPort OpenPort2(string portName)
       //Add any other methods above this line
       port = tempPort;
       tempPort = null;
-      
+
    }
    finally
    {
@@ -153,16 +151,15 @@ Public Function OpenPort2(ByVal PortName As String) As SerialPort
 
 End Function
 ```
- 
-## <a name="example"></a>Příklad  
- Ve výchozím nastavení jsou všechny aritmetické operátory kompilátoru [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ověřovány v rámci přetečení. Proto může jakákoli aritmetická operace jazyka Visual Basic vyvolat výjimku <xref:System.OverflowException>. To může vést k neočekávaným případům porušování pravidel, jako je například CA2000. Například následující funkce CreateReader1 ohlásí porušení pravidla CA2000, protože kompilátor jazyka Visual Basic generuje dodatečnou instrukci kontroly přetečení, jež může vyvolat výjimku, která může způsobit, že StreamReader nebude odstraněn.  
-  
- Chcete-li tento problém vyřešit, můžete zakázat generování kontrol přetečení kompilátorem jazyka Visual Basic v rámci projektu nebo upravit kód tak, jak je tomu v následující funkci CreateReader2.  
-  
- Zakázat generování kontroly přetečení, klikněte pravým tlačítkem na název projektu v Průzkumníku řešení a potom klikněte na **vlastnosti**. Klikněte na tlačítko **zkompilovat**, klikněte na tlačítko **Upřesnit možnosti kompilace**a potom zkontrolujte **odebrat kontroly přetečení celých**.  
-  
+
+## <a name="example"></a>Příklad
+ Ve výchozím nastavení jsou všechny aritmetické operátory kompilátoru [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ověřovány v rámci přetečení. Proto může jakákoli aritmetická operace jazyka Visual Basic vyvolat výjimku <xref:System.OverflowException>. To může vést k neočekávaným případům porušování pravidel, jako je například CA2000. Například následující funkce CreateReader1 ohlásí porušení pravidla CA2000, protože kompilátor jazyka Visual Basic generuje dodatečnou instrukci kontroly přetečení, jež může vyvolat výjimku, která může způsobit, že StreamReader nebude odstraněn.
+
+ Chcete-li tento problém vyřešit, můžete zakázat generování kontrol přetečení kompilátorem jazyka Visual Basic v rámci projektu nebo upravit kód tak, jak je tomu v následující funkci CreateReader2.
+
+ Zakázat generování kontroly přetečení, klikněte pravým tlačítkem na název projektu v Průzkumníku řešení a potom klikněte na **vlastnosti**. Klikněte na tlačítko **zkompilovat**, klikněte na tlačítko **Upřesnit možnosti kompilace**a potom zkontrolujte **odebrat kontroly přetečení celých**.
+
   [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
-## <a name="see-also"></a>Viz také  
- <xref:System.IDisposable>   
- [Vzor pro metodu Dispose](/dotnet/standard/design-guidelines/dispose-pattern)
+## <a name="see-also"></a>Viz také
+ <xref:System.IDisposable> [Dispose – vzor](/dotnet/standard/design-guidelines/dispose-pattern)

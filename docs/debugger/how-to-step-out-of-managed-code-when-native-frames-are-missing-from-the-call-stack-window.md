@@ -2,8 +2,7 @@
 title: 'Postupy: vystoupení ze spravovaného kódu, pokud v okně zásobník volání chybějí nativní rámce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -25,11 +24,11 @@ manager: douge
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 5c64016f5ca0613a2986ec8a0bf305d88ecffd64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e21d45cd65fc6bc6a66f2f7c698952f0cdd788b9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Postupy: Vystoupení ze spravovaného kódu, pokud v okně Zásobník volání chybějí nativní rámce.
 Pokud má váš kód nativní rámce, které jsou v neviditelná **zásobníkem volání** okně krokování s mimo spravovaný kód může vést k neočekávaným výsledkům. Jako alternativní řešení, můžete použít zarážku místo **Krokovat s Vystoupením**.  

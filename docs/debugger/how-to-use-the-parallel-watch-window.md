@@ -2,8 +2,7 @@
 title: Nastavovat sledování na proměnné v paralelních vláken | Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelwatch
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7909553271e138ab3bddaa1f4d509a4f4b0b293d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>Nastavovat sledování na proměnné v paralelních vláken v sadě Visual Studio
 V okně paralelního sledování můžete současně zobrazit hodnoty, které obsahuje jeden výraz na více vláken. Každý řádek představuje vlákno, které běží v aplikaci, ale může být reprezentován vlákno ve více řádků. Přesněji řečeno každý řádek představuje volání funkce, jejíž funkce podpis odpovídá funkce na aktuální rámec zásobníku. Můžete řadit, změnit pořadí, odebrat a seskupit položky, které jsou ve sloupcích. Můžete příznak, odstranění označení, zmrazení (Pozastavit) a uvolnění vláken (pokračovat). V následujících sloupcích se zobrazují v **paralelního sledování** okno:  

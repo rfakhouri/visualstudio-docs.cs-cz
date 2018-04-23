@@ -2,8 +2,7 @@
 title: 'Postupy: zobrazení nástroje Spy ++ | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, viewing code
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ea33b65eb8c77aa2896066997d8707a32996b1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cd4643ab3bad401e05d46c5ec5505322ec760342
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-display-spy-views"></a>Postupy: Zobrazení nástroje Spy++
 Když nástroje Spy ++ spustí, otevře se v [zobrazení oken](../debugger/windows-view.md), je stromové zobrazení všech windows a ovládacích prvků k dispozici na váš počítač. Toto okno kořenové je s popisky "Windows 1." Existují také tři další zobrazení nástroje Spy ++ k dispozici: [zobrazení zpráv](../debugger/messages-view.md), [zobrazení procesů](../debugger/processes-view.md), a [zobrazení vláken](../debugger/threads-view.md). Požadované zobrazení můžete zobrazit **Spy** nabídky. Další informace najdete v tématu [zobrazení nástroje Spy ++](../debugger/spy-increment-views.md).  

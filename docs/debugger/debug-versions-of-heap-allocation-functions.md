@@ -2,8 +2,7 @@
 title: Ladění verzí funkcí přidělení haldy | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.crt
@@ -26,11 +25,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8e5d02c5bd0f85f36501a0938d020e458249bdb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e426da9491c13e0d6f9377814673ca41512e5e09
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Ladění verzí funkcí přidělení haldy
 Běhové knihovny jazyka C obsahuje speciální ladění verzí funkcí přidělení haldy. Tyto funkce mají stejné názvy jako vydání verze _dbg připojí k nim. Toto téma popisuje rozdíly mezi prodejní verze funkce CRT a verze _dbg pomocí `malloc` a `_malloc_dbg` jako příklady.  

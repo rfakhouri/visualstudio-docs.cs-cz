@@ -2,8 +2,7 @@
 title: Zobrazení procesů | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.processesview
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a92a65e4a10cd5321f513cb313035d8910022f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cd848f2e771a2207e89d67eddbead22d2180990
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="processes-view"></a>Zobrazení procesů
 Zobrazení procesů zobrazí strom všech aktivních procesů ve vašem systému. Název modulu a ID procesu jsou zobrazeny. Zobrazení procesů použijte, pokud chcete prozkoumat konkrétní systém procesu, který obvykle odpovídá provádění programu. Procesy, které jsou určeny názvy modulů, nebo se označují "systémových procesů."  

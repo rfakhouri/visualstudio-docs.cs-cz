@@ -2,8 +2,7 @@
 title: Použití samostatného kolektoru IntelliTrace | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.historicaldebug.collectdataoutsideVS
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9533c2a79a8fb692e970cf2f59d4be6feaaefc5f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 410b8a979334edd1c333a43851f996da2b69bd03
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Použití samostatného kolektoru IntelliTrace
 **Samostatné kolekce IntelliTrace** umožňuje shromažďování diagnostických dat technologie IntelliTrace pro vaše aplikace na produkční servery nebo jiných prostředích bez instalace sady Visual Studio na cílovém počítači a beze změny cílové prostředí systému. V aplikacích WPF a Windows Forms web, SharePoint, lze použít samostatné kolekce IntelliTrace. Po dokončení shromažďování dat, stačí odstraňte kolekce ho odinstalovat.  

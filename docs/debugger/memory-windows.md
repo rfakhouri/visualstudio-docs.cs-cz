@@ -2,8 +2,7 @@
 title: Zobrazit paměti pro proměnné v ladicím programu | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.memory
@@ -26,11 +25,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5e2c43f48a1a91c35c770f5f7150972bebb1a1a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 550c5ffe641fac5bb2d080a892143bf3ff9744b0
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Použití Windows paměti v ladicím programu sady Visual Studio
 **Paměti** okno poskytuje pohled na místo na paměti, které používá vaše aplikace. **Sledovat** okně **QuickWatch** dialogové okno, **automobily** okně a **místní hodnoty –** okno zobrazit, obsah proměnné, které jsou uložené na konkrétní umístění v paměti. Ale **paměti** v okně se zobrazí ve velkém měřítku obrázek. Toto zobrazení může být vhodné pro zkoumání velké částí data (vyrovnávací paměti nebo velké řetězce, např.), která nezobrazovat i v dalších oknech. Ale **paměti** není omezena na zobrazení dat okno. Se zobrazuje všechno, co v paměti, informaci, jestli obsah data, kódu nebo náhodné bitů paměti v nepřiřazené paměti.  

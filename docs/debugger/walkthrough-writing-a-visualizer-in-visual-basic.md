@@ -2,8 +2,7 @@
 title: 'Návod: Zápis Vizualizéru v jazyce Visual Basic | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7076e85701551e884c3126c7acd235b45a81aff5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70e1e42eee6003baabc0beec291795c6a1f74a1e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Návod: Zápis vizualizéru v jazyce Visual Basic
 Tento návod ukazuje, jak napsat Jednoduchý vizualizér pomocí [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Vizualizér, které vytvoříte v tomto návodu zobrazí obsah řetězce pomocí Windows Forms okno se zprávou. Tento jednoduchý řetězec vizualizér je základní příklad zobrazit, jak můžete vytvořit vizualizérech pro jiné datové typy hodí víc do vašich projektů.  

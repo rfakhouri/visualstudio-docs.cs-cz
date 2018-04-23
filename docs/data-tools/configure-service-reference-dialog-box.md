@@ -1,8 +1,7 @@
 ---
-title: Odkaz na službu – dialogové okno Konfigurace | Microsoft Docs
-ms.custom: ''
+title: Dialogové okno Nastavit odkaz na službu
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - msvse_wcf.dlg.ConfigureServiceReference
 helpviewer_keywords:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3e23070c5bd88f2e6f5dda72b6b10b2bd306aa9b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed20865726832b57d4d0624d6305daa6ba0fe6fa
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="configure-service-reference-dialog-box"></a>Dialogové okno Nastavit odkaz na službu
 
@@ -31,61 +30,75 @@ ms.lasthandoff: 04/16/2018
 
 Pro přístup k **nastavit odkaz na službu** dialogové okno, klikněte pravým tlačítkem na může služba odkaz v **Průzkumníku řešení** a zvolte **nastavit odkaz na službu**. Můžete také přístup k dialogu kliknutím **Upřesnit** tlačítka na **přidat služby odkaz dialogové okno**.
 
-## <a name="task-list"></a>Seznam úloh  
-  
--   Chcete-li změnit adresu, která je hostitelem služby WCF, zadejte nové adresy v **adresu** pole.  
-  
--   Pokud chcete změnit úroveň přístupu pro třídy v klientovi WCF, vyberte úroveň přístupu klíčové slovo v **přístup úroveň pro vygenerované třídy** seznamu.  
-  
--   Asynchronní volání metody služby WCF, vyberte **Generovat asynchronní operace** zaškrtávací políčko.  
-  
--   Chcete-li vygenerovat typy kontraktů zpráv v klienta WCF, vyberte **vždy generovat kontrakty zpráv** zaškrtávací políčko.  
-  
--   Typy kolekcí seznamu nebo slovník pro klienta WCF, vyberte typy z **– typ kolekce** a **– typ kolekce slovníku** uvádí.  
-  
--   Chcete-li vypnout sdílení typu, zrušte **znovu použít typy v odkazovaných sestaveních** zaškrtávací políčko. Chcete-li povolit sdílení typu pro podmnožinu odkazovaná sestavení, vyberte **znovu použít typy v odkazovaných sestaveních** zaškrtněte políčko **znovu použít typy v odkazovaných sestaveních**a vyberte požadovanou odkazy na v **odkazovaný seznam sestavení**.  
-  
-## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní  
- **Adresa**  
- Použít k aktualizaci webovou adresu, kde odkazu na službu hledá službu. Například během vývoje služby může být hostovaný na serveru vývoj pak později přesunout na provozním serveru vyžadující změnu adresy.  
-  
+## <a name="task-list"></a>Seznam úloh
+
+- Chcete-li změnit adresu, která je hostitelem služby WCF, zadejte nové adresy v **adresu** pole.
+
+- Pokud chcete změnit úroveň přístupu pro třídy v klientovi WCF, vyberte úroveň přístupu klíčové slovo v **přístup úroveň pro vygenerované třídy** seznamu.
+
+- Asynchronní volání metody služby WCF, vyberte **Generovat asynchronní operace** zaškrtávací políčko.
+
+- Chcete-li vygenerovat typy kontraktů zpráv v klienta WCF, vyberte **vždy generovat kontrakty zpráv** zaškrtávací políčko.
+
+- Typy kolekcí seznamu nebo slovník pro klienta WCF, vyberte typy z **– typ kolekce** a **– typ kolekce slovníku** uvádí.
+
+- Chcete-li vypnout sdílení typu, zrušte **znovu použít typy v odkazovaných sestaveních** zaškrtávací políčko. Chcete-li povolit sdílení typu pro podmnožinu odkazovaná sestavení, vyberte **znovu použít typy v odkazovaných sestaveních** zaškrtněte políčko **znovu použít typy v odkazovaných sestaveních**a vyberte požadovanou odkazy na v **odkazovaný seznam sestavení**.
+
+## <a name="uielement-list"></a>Seznam prvků uživatelského rozhraní
+
+ **Adresa**
+
+ Použít k aktualizaci webovou adresu, kde odkazu na službu hledá službu. Například během vývoje služby může být hostovaný na serveru vývoj pak později přesunout na provozním serveru vyžadující změnu adresy.
+
 > [!NOTE]
->  Address element není k dispozici při **nastavit odkaz na službu** dialogové okno se zobrazí z **přidat Service Reference Dialog Box**.  
-  
- **Úroveň přístupu pro vygenerované třídy**  
- Určuje úroveň přístupu třídy klienta WCF v kódu.  
-  
+> Address element není k dispozici při **nastavit odkaz na službu** dialogové okno se zobrazí z **přidat Service Reference Dialog Box**.
+
+ **Úroveň přístupu pro vygenerované třídy**
+
+ Určuje úroveň přístupu třídy klienta WCF v kódu.
+
 > [!NOTE]
->  Pro projekty webových stránek, je tato možnost vždycky nastavený na `Public` a nelze je změnit. Další informace najdete v tématu [řešení potíží s odkazy na službu](../data-tools/troubleshooting-service-references.md).  
-  
- **Generovat asynchronní operace**  
- Určuje, zda synchronně bude volat metody služby WCF (výchozí) nebo asynchronně.  
-  
- **Generování operací založený na úlohách**  
- Při psaní kódu pro asynchronní, tato možnost umožňuje využívat nástroje Task Parallel Library (TPL) byla zavedena s .net 4. V tématu [úkolů Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).  
-  
- **Vždy generovat kontrakty zpráv**  
- Určuje, zda typy kontraktů zpráv se budou generovat pro klienta WCF. Další informace o kontrakty zpráv najdete v tématu [pomocí kontrakty zpráv](/dotnet/framework/wcf/feature-details/using-message-contracts).  
-  
- **Typ kolekce**  
- Určuje typ kolekce seznamu pro klienta WCF. Je výchozím typem <xref:System.Array>.  
-  
- **Slovník – typ kolekce**  
- Určuje typ kolekce slovníku pro klienta WCF. Je výchozím typem <xref:System.Collections.Generic.Dictionary%602>.  
-  
- **Znovu použít typy v odkazovaných sestaveních**  
- Určuje, zda klienta WCF se pokusí znovu použít, již existuje v odkazovaných sestaveních namísto generování nových typů, když je služba přidán nebo aktualizován. Ve výchozím nastavení je toto políčko zaškrtnuto.  
-  
- **Znovu použít typy v odkazovaných sestaveních pro všechny**  
- Pokud vybraná, všechny typy v **odkazovaný seznam sestavení** bude znovu použita Pokud je to možné. Ve výchozím nastavení je tato možnost vybrána.  
-  
- **Znovu použít typy v odkazovaných sestaveních**  
- Při výběru pouze vybrané typy v **odkazovaný seznam sestavení** bude znovu použita.  
-  
- **Seznam odkazovaná sestavení**  
- Obsahuje seznam odkazovaná sestavení projektu nebo webu. Když **znovu použít typy v odkazovaných sestaveních** je vybraná, jednotlivá sestavení může být vybrána nebo vymazána.  
-  
- **Přidat odkaz na Web** zobrazí dialogové okno Přidat odkaz na Web.
+> Pro projekty webových stránek, je tato možnost vždycky nastavený na `Public` a nelze je změnit. Další informace najdete v tématu [řešení potíží s odkazy na službu](../data-tools/troubleshooting-service-references.md).
+
+ **Generovat asynchronní operace**
+
+ Určuje, zda synchronně bude volat metody služby WCF (výchozí) nebo asynchronně.
+
+ **Generování operací založený na úlohách**
+
+ Při psaní kódu pro asynchronní, tato možnost umožňuje využívat nástroje Task Parallel Library (TPL) byla zavedena s .net 4. V tématu [úkolů Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl).
+
+ **Vždy generovat kontrakty zpráv**
+
+ Určuje, zda typy kontraktů zpráv se budou generovat pro klienta WCF. Další informace o kontrakty zpráv najdete v tématu [pomocí kontrakty zpráv](/dotnet/framework/wcf/feature-details/using-message-contracts).
+
+ **Typ kolekce**
+
+ Určuje typ kolekce seznamu pro klienta WCF. Je výchozím typem <xref:System.Array>.
+
+ **Slovník – typ kolekce**
+
+ Určuje typ kolekce slovníku pro klienta WCF. Je výchozím typem <xref:System.Collections.Generic.Dictionary%602>.
+
+ **Znovu použít typy v odkazovaných sestaveních**
+
+ Určuje, zda klienta WCF se pokusí znovu použít, již existuje v odkazovaných sestaveních namísto generování nových typů, když je služba přidán nebo aktualizován. Ve výchozím nastavení je toto políčko zaškrtnuto.
+
+ **Znovu použít typy v odkazovaných sestaveních pro všechny**
+
+ Pokud vybraná, všechny typy v **odkazovaný seznam sestavení** bude znovu použita Pokud je to možné. Ve výchozím nastavení je tato možnost vybrána.
+
+ **Znovu použít typy v odkazovaných sestaveních**
+
+ Při výběru pouze vybrané typy v **odkazovaný seznam sestavení** bude znovu použita.
+
+ **Seznam odkazovaná sestavení**
+
+ Obsahuje seznam odkazovaná sestavení projektu nebo webu. Když **znovu použít typy v odkazovaných sestaveních** je vybraná, jednotlivá sestavení může být vybrána nebo vymazána.
+
+ **Přidat odkaz na Web**
+
+ Zobrazí dialogové okno Přidat odkaz na Web.
 
 > [!NOTE]
 > Tuto možnost byste měli použít pouze pro projekty, které používají verzi 2.0 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
@@ -95,5 +108,5 @@ Pro přístup k **nastavit odkaz na službu** dialogové okno, klikněte pravým
 
 ## <a name="see-also"></a>Viz také
 
-[Postupy: Přidání odkazu na webovou službu](how-to-add-update-or-remove-a-wcf-data-service-reference.md)  
-[Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/configure-service-reference-dialog-box.md)
+- [Postupy: Přidání odkazu na webovou službu](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Služby Windows Communication Foundation a služby WCF Data Services v sadě Visual Studio](../data-tools/configure-service-reference-dialog-box.md)

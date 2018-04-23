@@ -2,8 +2,7 @@
 title: Zastavte ladění v dialogové okno průběhu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
 - vs.debug.stopnow
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e97e6a7f2b9eddb5694956633bc5bd79d8e426
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe7eca0124869a9c636738c8641f5d2e97e63404
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>Dialogové okno Ukončit probíhající ladění
 Toto dialogové okno se zobrazí, když se při pokusu o zastavení ladicí relace je v ladicím programu, ale ukončení relace se blíží chvíli trvat. Zastavení ladicí relace je obvykle velmi rychlé a tohoto dialogového okna se nezobrazí. V některých případech ale trvá odpojení od všech procesů laděné dobu. Pokud zastavování relace trvá víc než několik sekund (nebo pokud dojde k chybě odpojení), zobrazí se toto dialogové okno. Pokud k tomu dochází často, může být kvůli internímu problému a můžete chtít obraťte se na oddělení technické podpory.  

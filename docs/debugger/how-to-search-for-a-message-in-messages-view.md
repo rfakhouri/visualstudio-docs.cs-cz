@@ -2,8 +2,7 @@
 title: 'Postupy: hledání zprávy v zobrazení zpráv | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ec04e45d1383e767e2fe1079ac8a38c8b4d7ec0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 368d10f2285c94f053e536da77966e9b2fb26da9
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Postupy: Hledání zprávy v zobrazení zpráv
 Můžete hledat konkrétní zprávy v zobrazení zpráv pomocí jeho popisovač, typ nebo ID zprávy jako kritéria vyhledávání. Kterákoli z těchto – nebo jejich kombinaci – bude platný vyhledávací kritéria. Můžete také zadat počáteční směr hledání. Atributy zprávu aktuálně vybranou se předem načtou pole v dialogovém okně.  

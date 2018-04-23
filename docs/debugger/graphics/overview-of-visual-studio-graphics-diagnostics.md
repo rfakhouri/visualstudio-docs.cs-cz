@@ -2,19 +2,18 @@
 title: Přehled diagnostiky grafiky sady Visual Studio | Microsoft Docs
 ms.custom: ''
 ms.date: 02/09/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9981fe267420a6bc364e23ab5d8e058c87089b98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08a942830893bc7a195c64765f5915df32b5ecfb
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Přehled diagnostiky grafiky sady Visual Studio
 Visual Studio *diagnostiky grafiky* je sada nástrojů pro záznam a pak analýza vykreslování a výkonu problémům v Direct3D – aplikace. Diagnostika grafiky lze použít na aplikace, které běží místně na vašem počítači s Windows nebo na vzdálený počítač nebo zařízení.  

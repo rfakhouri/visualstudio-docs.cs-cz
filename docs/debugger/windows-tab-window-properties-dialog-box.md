@@ -2,8 +2,7 @@
 title: Karta okna, dialogové okno Vlastnosti okna | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: reference
 helpviewer_keywords:
 - Window Properties dialog box, Windows Tab
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f52baf9572e4c39cc77ff171a3d0033310678634
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3589f3242c72002bf28e8aee135b2713c39fdb7
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="windows-tab-window-properties-dialog-box"></a>Karta Okna, dialogové okno vlastnosti okna
 Použití **Windows** karty zobrazíte informace o windows související s vybrané okno. Chcete-li zobrazit [dialogové okno Vlastnosti okna](../debugger/window-properties-dialog-box.md), přesunout fokus na [zobrazení oken](../debugger/windows-view.md) okno. Vyberte libovolný uzel okno ve stromové struktuře, a potom vyberte **vlastnosti** z **zobrazení** nabídky.  

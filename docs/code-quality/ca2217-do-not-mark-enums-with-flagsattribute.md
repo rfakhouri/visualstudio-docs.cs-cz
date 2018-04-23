@@ -1,10 +1,8 @@
 ---
-title: 'CA2217: Neoznačujte výčty pomocí FlagsAttribute | Microsoft Docs'
-ms.custom: ''
+title: 'CA2217: Neoznačujte výčty pomocí FlagsAttribute'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotMarkEnumsWithFlags
 - CA2217
@@ -17,48 +15,48 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a2cdfcf4014d00ca2d975a04a8bb81191a717e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1aaa080aaa238f15cbcedefd9302d23758948d77
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2217-do-not-mark-enums-with-flagsattribute"></a>CA2217: Neoznačujte výčty pomocí FlagsAttribute
-|||  
-|-|-|  
-|TypeName|DoNotMarkEnumsWithFlags|  
-|CheckId|CA2217|  
-|Kategorie|Microsoft.Usage|  
-|Narušující změna|Bez ukončování řádků|  
-  
-## <a name="cause"></a>příčina  
- Externě viditelné výčet je označené jako <xref:System.FlagsAttribute> a obsahuje jeden nebo více hodnot, které nejsou zajišťuje dvě nebo kombinaci dalších definované hodnoty na výčtu.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Výčet by měl mít <xref:System.FlagsAttribute> k dispozici pouze v případě, že každá hodnota definovaná ve výčtu je násobek dvou nebo kombinaci definované hodnoty.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení toto pravidlo, odeberte <xref:System.FlagsAttribute> z výčtu.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Nepotlačujte upozornění na toto pravidlo.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje výčet, barvu, která obsahuje hodnotu 3, která je druhou mocninou dva, ani kombinace definovaných hodnot. Barva výčtu by neměl být označen <xref:System.FlagsAttribute>.  
-  
+|||
+|-|-|
+|TypeName|DoNotMarkEnumsWithFlags|
+|CheckId|CA2217|
+|Kategorie|Microsoft.Usage|
+|Narušující změna|Bez ukončování řádků|
+
+## <a name="cause"></a>příčina
+ Externě viditelné výčet je označené jako <xref:System.FlagsAttribute> a obsahuje jeden nebo více hodnot, které nejsou zajišťuje dvě nebo kombinaci dalších definované hodnoty na výčtu.
+
+## <a name="rule-description"></a>Popis pravidla
+ Výčet by měl mít <xref:System.FlagsAttribute> k dispozici pouze v případě, že každá hodnota definovaná ve výčtu je násobek dvou nebo kombinaci definované hodnoty.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení toto pravidlo, odeberte <xref:System.FlagsAttribute> z výčtu.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Nepotlačujte upozornění na toto pravidlo.
+
+## <a name="example"></a>Příklad
+ Následující příklad ukazuje výčet, barvu, která obsahuje hodnotu 3, která je druhou mocninou dva, ani kombinace definovaných hodnot. Barva výčtu by neměl být označen <xref:System.FlagsAttribute>.
+
  [!code-cpp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_1.cpp)]
  [!code-csharp[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_1.cs)]
- [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje výčet, dnů, který splňuje požadavky pro označit s System.FlagsAttribute.  
-  
+ [!code-vb[FxCop.Usage.EnumNoFlags#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_1.vb)]
+
+## <a name="example"></a>Příklad
+ Následující příklad ukazuje výčet, dnů, který splňuje požadavky pro označit s System.FlagsAttribute.
+
  [!code-cpp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CPP/ca2217-do-not-mark-enums-with-flagsattribute_2.cpp)]
  [!code-csharp[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/CSharp/ca2217-do-not-mark-enums-with-flagsattribute_2.cs)]
- [!code-vb[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_2.vb)]  
-  
-## <a name="related-rules"></a>Související pravidla  
- [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
-  
-## <a name="see-also"></a>Viz také  
+ [!code-vb[FxCop.Usage.EnumNoFlags2#1](../code-quality/codesnippet/VisualBasic/ca2217-do-not-mark-enums-with-flagsattribute_2.vb)]
+
+## <a name="related-rules"></a>Související pravidla
+ [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+
+## <a name="see-also"></a>Viz také
  <xref:System.FlagsAttribute?displayProperty=fullName>

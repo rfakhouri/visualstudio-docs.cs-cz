@@ -2,8 +2,7 @@
 title: 'Postupy: ladění klientů a modelu COM pomocí ladění RPC servery | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
@@ -28,11 +27,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe212015b381a38ed1cf110189b6e4839fdf9f1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1404d81502aaa0579c20511f3eecafa86607df0d
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Postupy: Ladění klientů a serverů modelu COM pomocí ladění RPC
 Ladění vzdáleného volání (procedur RPC) slouží k ladění aplikací modelu COM klienta nebo serveru. Je nutné povolit RPC Ladění povoleno ji používat. S povoleným laděním RPC, když krok do volání serveru z klienta, ladicí program připojí k serveru a umožňuje ladění jeho kódu. Pokud je připojen ladicí program, můžete použít všechny funkce ladicího programu s procesy klient i server.  

@@ -2,8 +2,7 @@
 title: Dialogové okno upozornění kód zastaralých | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.ENC.stalecode
@@ -23,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2aa5d05695f56721a25d8a1b55c983e85f17356
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec80baa04529bcc6a9705d1c8df03e120e6bc64e
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="stale-code-warning-dialog-box"></a>Dialogové okno Upozornění na starý kód
 Toto dialogové okno se zobrazí, když jste udělali změny nativní kód, který **upravit a pokračovat** nebylo možno použít okamžitě. Výsledek, některé nativního kódu v aktuální rámec zásobníku je nyní zastaralý, který je zastaralých. Další informace najdete v tématu [postupy: práce s zastaralý kód](http://msdn.microsoft.com/en-us/c7536e95-66a6-44a0-995d-3fe5035250b4).  

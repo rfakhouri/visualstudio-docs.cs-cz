@@ -1,6 +1,5 @@
 ---
-title: 'Postupy: ukládání a upravování připojovacích řetězců | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Ukládání a upravování připojovacích řetězců'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
@@ -10,18 +9,19 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3d1da0eba7a113a1a7430b2a2685663dfbd4626
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 820808a79c8ed18c08c6c54ba416c0993aac06d5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Postupy: Ukládání a upravování připojovacích řetězců
 Připojovací řetězce v sadě Visual Studio aplikace můžete uložit v konfiguračním souboru aplikace (také označované jako nastavení aplikace) nebo pevně přímo v aplikaci. Ukládání připojovacích řetězců v konfiguračním souboru aplikace zjednodušuje správu vaší aplikace. Pokud je potřeba změnit připojovací řetězec, můžete ho aktualizovat v souboru nastavení aplikace (na rozdíl od nutnosti změnit ve zdrojovém kódu a překompilování aplikace).
 
 Ukládání citlivých informací (například heslo) v připojovacím řetězci může ovlivnit zabezpečení vaší aplikace. Připojovací řetězce, které jsou uloženy do konfiguračního souboru aplikace nejsou zašifrované nebo matoucí, takže je možné získat přístup k souboru a zobrazte její obsah. Pomocí integrované zabezpečení systému Windows je bezpečnější způsob, jak řídit přístup k databázi.
 
-Pokud není rozhodnete použít integrované zabezpečení systému Windows a vaše databáze vyžaduje zadání uživatelského jména a hesla, je možné vynechat z připojovacího řetězce, ale aplikace bude vyžadovat poskytnout tyto informace se úspěšně připojit k databázi. Můžete například vytvořit dialogové okno se zobrazí výzvu pro tyto informace a dynamicky vytvoří připojovací řetězec za běhu. Zabezpečení stále může být problém, pokud je zachycen informace na cestě k databázi. Další informace najdete v tématu [chrání informace o připojení](/dotnet/framework/data/adonet/protecting-connection-information).
+Pokud není rozhodnete použít integrované zabezpečení systému Windows a vaše databáze vyžaduje zadání uživatelského jména a hesla, je možné vynechat z připojovacího řetězce, ale aplikace bude vyžadovat poskytnout tyto informace se úspěšně připojit k databázi. Můžete například vytvořit dialogové okno se zobrazí výzvu pro tyto informace a dynamicky vytvoří připojovací řetězec za běhu. Zabezpečení stále může být problém, pokud je zachycen informace na cestě k databázi.
+Další informace najdete v tématu [chrání informace o připojení](/dotnet/framework/data/adonet/protecting-connection-information).
 
 ## <a name="to-save-a-connection-string-from-within-the-data-source-configuration-wizard"></a>Chcete-li uložit připojovacího řetězce z v rámci Průvodce konfigurací zdroje dat
 V **Průvodce konfigurací zdroje dat**, vyberte možnost pro uložení připojení na Uložit připojovací řetězec na stránku konfiguračního souboru aplikace.
@@ -32,19 +32,19 @@ V **Průvodce konfigurací zdroje dat**, vyberte možnost pro uložení připoje
 - Zadejte název připojovacího řetězce. Při přístupu k připojovací řetězec v kódu odkazovat tento název.
 - Nastavte typ, který má (připojovací řetězec).
 - Ponechte oboru nastavit na aplikaci.
-- Zadejte připojovací řetězec do pole hodnoty, nebo klikněte na tlačítko se třemi tečkami (...) v poli hodnota otevřete dialogové okno Vlastnosti připojení k sestavení připojovacího řetězce.  
+- Zadejte připojovací řetězec do pole hodnoty, nebo klikněte na tlačítko se třemi tečkami (...) v poli hodnota otevřete dialogové okno Vlastnosti připojení k sestavení připojovacího řetězce.
 
 ## <a name="editing-connection-strings-stored-in-application-settings"></a>Úpravy připojovací řetězce, které jsou uložené v nastavení aplikace
-Můžete upravit informace o připojení, který je uložený v nastavení aplikace pomocí Návrháře projektu.  
+Můžete upravit informace o připojení, který je uložený v nastavení aplikace pomocí Návrháře projektu.
 
 ### <a name="to-edit-a-connection-string-stored-in-application-settings"></a>Chcete-li upravit připojovací řetězec uložený v nastavení aplikace
 - V Průzkumníku řešení klikněte dvakrát klikněte na ikonu Moje projektu (Visual Basic) nebo ikonu vlastnosti (C#) Chcete-li otevřít v Návrháři projektu.
 - Vyberte kartu nastavení.
 - Vyhledejte připojení, které chcete upravit a vyberte text v poli hodnota.
-- Upravit připojovací řetězec v poli hodnota, nebo klikněte na tlačítko se třemi tečkami (...) v poli hodnota upravit připojení s dialogové okno Vlastnosti připojení.  
+- Upravit připojovací řetězec v poli hodnota, nebo klikněte na tlačítko se třemi tečkami (...) v poli hodnota upravit připojení s dialogové okno Vlastnosti připojení.
 
 ## <a name="editing-connection-strings-for-datasets"></a>Úpravy připojovací řetězce pro datové sady
-Můžete upravit informace o připojení pro každý TableAdapter v datové sadě.  
+Můžete upravit informace o připojení pro každý TableAdapter v datové sadě.
 
 ### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>Chcete-li upravit připojovací řetězec pro TableAdapter v datové sadě
 - V Průzkumníku řešení klikněte dvakrát na datové sady (.xsd soubor), který má připojení, které chcete upravit.
@@ -55,6 +55,7 @@ Můžete upravit informace o připojení pro každý TableAdapter v datové sad�
 ## <a name="security"></a>Zabezpečení
 Ukládání citlivých informací (například heslo) v připojovacím řetězci může ovlivnit zabezpečení vaší aplikace. Pomocí integrované zabezpečení systému Windows je bezpečnější způsob, jak řídit přístup k databázi.
 Další informace najdete v tématu [chrání informace o připojení](/dotnet/framework/data/adonet/protecting-connection-information).
-  
+
 ## <a name="see-also"></a>Viz také
-[Přidání připojení](../data-tools/add-new-connections.md)
+
+- [Přidání připojení](../data-tools/add-new-connections.md)

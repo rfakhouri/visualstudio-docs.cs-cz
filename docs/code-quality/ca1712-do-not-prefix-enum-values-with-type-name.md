@@ -1,10 +1,8 @@
 ---
-title: 'CA1712: Nezadávejte na hodnoty výčtu s názvem typu | Microsoft Docs'
-ms.custom: ''
+title: 'CA1712: Nezačínejte hodnoty výčtu s názvem typu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1712
 - DoNotPrefixEnumValuesWithTypeName
@@ -17,47 +15,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5858e29e680d33f3603ccc5a44bdf07d797b625
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5b6d8a5ebba4f746c7418fcfb28a61d98949441e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712: Nezačínejte hodnoty výčtu s názvem typu
-|||  
-|-|-|  
-|TypeName|DoNotPrefixEnumValuesWithTypeName|  
-|CheckId|CA1712|  
-|Kategorie|Microsoft.Naming|  
-|Narušující změna|Narušující|  
-  
-## <a name="cause"></a>příčina  
- Výčet obsahuje člena, jehož název začíná název typu výčtu.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Názvy členů výčtu nejsou předponu název typu, protože informace o typu je očekávána poskytované nástroje pro vývoj.  
-  
- Zásady vytváření názvů zadejte obecný vzhled pro knihovny cílené modul common language runtime. Tím se snižuje čas, který je vyžadován pro další nové knihovny softwaru a zvyšuje sebejistotu zákazníka, knihovny byla vyvinuta uživatelem s odbornými znalostmi v vývoj spravovaného kódu.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení toto pravidlo, odeberte z člen výčtu předpona názvu typu.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Nepotlačujte upozornění na toto pravidlo.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje správně pojmenované výčet následovaný opravené verze.  
-  
+|||
+|-|-|
+|TypeName|DoNotPrefixEnumValuesWithTypeName|
+|CheckId|CA1712|
+|Kategorie|Microsoft.Naming|
+|Narušující změna|Narušující|
+
+## <a name="cause"></a>příčina
+ Výčet obsahuje člena, jehož název začíná název typu výčtu.
+
+## <a name="rule-description"></a>Popis pravidla
+ Názvy členů výčtu nejsou předponu název typu, protože informace o typu je očekávána poskytované nástroje pro vývoj.
+
+ Zásady vytváření názvů zadejte obecný vzhled pro knihovny cílené modul common language runtime. Tím se snižuje čas, který je vyžadován pro další nové knihovny softwaru a zvyšuje sebejistotu zákazníka, knihovny byla vyvinuta uživatelem s odbornými znalostmi v vývoj spravovaného kódu.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení toto pravidlo, odeberte z člen výčtu předpona názvu typu.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Nepotlačujte upozornění na toto pravidlo.
+
+## <a name="example"></a>Příklad
+ Následující příklad ukazuje správně pojmenované výčet následovaný opravené verze.
+
  [!code-csharp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CSharp/ca1712-do-not-prefix-enum-values-with-type-name_1.cs)]
  [!code-cpp[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/CPP/ca1712-do-not-prefix-enum-values-with-type-name_1.cpp)]
- [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]  
-  
-## <a name="related-rules"></a>Související pravidla  
- [CA1711: Identifikátory by neměly mít nesprávnou příponu](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
-  
- [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
-  
- [CA2217: Neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
-  
-## <a name="see-also"></a>Viz také  
+ [!code-vb[FxCop.Naming.EnumValues#1](../code-quality/codesnippet/VisualBasic/ca1712-do-not-prefix-enum-values-with-type-name_1.vb)]
+
+## <a name="related-rules"></a>Související pravidla
+ [CA1711: Identifikátory by neměly mít nesprávnou příponu](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+
+ [CA1027: Označte výčty pomocí FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+
+ [CA2217: Neoznačujte výčty pomocí FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+
+## <a name="see-also"></a>Viz také
  <xref:System.Enum?displayProperty=fullName>

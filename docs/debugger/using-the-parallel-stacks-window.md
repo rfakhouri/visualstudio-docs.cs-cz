@@ -2,8 +2,7 @@
 title: Zobrazit použití okna paralelní zásobníky vlákna | Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.parallelstacks
@@ -20,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d0217cd245f619264f1dc0a051d0083ea2fb9f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d19e39ef16bddce9910a65c6833e79d9263fba97
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>Zobrazení vláken a úloh pomocí okna paralelní zásobníky
 **Paralelní zásobníky** je užitečná při ladění vícevláknové aplikace. Jeho **zobrazení vláken** zobrazí informace v zásobníku volání pro všechna vlákna ve vaší aplikaci. Umožňuje vám přecházet mezi vláken a rámce zásobníku na těchto vláken. Ve spravovaném kódu **zobrazení úlohy** ukáže zásobníky z volání <xref:System.Threading.Tasks.Task?displayProperty=fullName> objekty. V nativním kódu **zobrazení úlohy** ukáže zásobníky z volání [úkolů skupiny](/cpp/parallel/concrt/task-parallelism-concurrency-runtime), [paralelní algoritmy](/cpp/parallel/concrt/parallel-algorithms), [asynchronních agentů](/cpp/parallel/concrt/asynchronous-agents)a [prosté úlohy](/cpp/parallel/concrt/task-scheduler-concurrency-runtime).  

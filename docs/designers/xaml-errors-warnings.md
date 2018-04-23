@@ -1,5 +1,5 @@
 ---
-title: XAML chyby a upozornění | Microsoft Docs
+title: XAML chyby a upozornění
 ms.date: 03/06/2018
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -9,11 +9,11 @@ ms.author: karann
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 072792b224d72e0f733373d56457a7a7667573fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b252fe651355000f63c47c5b45cf6d0e9db4d776
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML chyby a upozornění
 
@@ -23,11 +23,11 @@ Při vytváření XAML, Visual Studio analyzuje kód při psaní. Vlnovku se zob
 
 Na pozadí několik nástrojů analyzovat XAML paralelně. Chyby jazyka XAML jsou rozdělené do jedné z následujících tří typů, založené na nástroj, který zjištěna chyba:
 
-|**Chyba detekovaných službou**|**Formát kódu chyby**|  
-|--------------------------------|-----------------|  
-|Služba jazyka XAML (XAML editor)|XLSxxxx|  
-|Návrhář XAML|XDGxxxx|  
-|XAML upravit a pokračovat|XECxxxx|  
+|**Chyba detekovaných službou**|**Formát kódu chyby**|
+|--------------------------------|-----------------|
+|Služba jazyka XAML (XAML editor)|XLSxxxx|
+|Návrhář XAML|XDGxxxx|
+|XAML upravit a pokračovat|XECxxxx|
 
 > [!Note]
 > Ne všechny chyby a varování mají odpovídající kód. Tyto chyby jsou obvykle chyby návrháře XAML.

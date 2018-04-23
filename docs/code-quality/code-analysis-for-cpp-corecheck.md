@@ -1,23 +1,21 @@
 ---
-title: Visual Studio C++ základní pokyny kontrolu odkaz | Microsoft Docs
-ms.custom: ''
+title: Visual Studio C++ základní pokyny pro kontrolu referenční informace
 ms.date: 03/22/2018
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0b657781981b6204bda42fcbf18f8945fb59004
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d68ed1d7002ac0e92d3a8c3e32226cb3a38c3f0
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="c-core-guidelines-checker-reference"></a>C++ základní pokyny pro kontrolu odkaz
 
@@ -170,7 +168,7 @@ V tématu [C++ základní pokyny: F.6: Pokud váš – funkce nemusí výjimku, 
 [C26474 NO_IMPLICIT_CAST](C26474.md) není mezi typy ukazatelů při převodu může být implicitní přetypování. V tématu [C++ základní pokyny Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
 [C26475 NO_FUNCTION_STYLE_CASTS](C26475.md) nepoužívejte styl funkce C-přetypování. V tématu [C++ základní pokyny ES.49](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es49-if-you-must-use-a-cast-use-a-named-cast).
- 
+
 [C26490 NO_REINTERPRET_CAST](c26490.md) nepoužívejte `reinterpret_cast`. V tématu [C++ základní pokyny Type.1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26491 NO_STATIC_DOWNCAST](c26490.md) nepoužívejte `static_cast` downcasts. V tématu [C++ základní pokyny Type.2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
@@ -178,7 +176,7 @@ V tématu [C++ základní pokyny: F.6: Pokud váš – funkce nemusí výjimku, 
 [C26492 NO_CONST_CAST](c26492.md) nepoužívejte `const_cast` přetypovat rychle `const`. V tématu [C++ základní pokyny Type.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26493 NO_CSTYLE_CAST](c26493.md) nepoužívejte přetypování ve stylu jazyka. V tématu [C++ základní pokyny Type.4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
- 
+
 [C26494 VAR_USE_BEFORE_INIT](c26494.md) proměnná % variable % není inicializován. Vždy inicializujte objekt. V tématu [C++ základní pokyny Type.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).
 
 [C26495 MEMBER_UNINIT](c26495.md) proměnná % variable % není inicializován. Vždy inicializace členské proměnné. V tématu [C++ základní pokyny Type.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-type).

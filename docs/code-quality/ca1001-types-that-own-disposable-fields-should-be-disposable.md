@@ -1,10 +1,8 @@
 ---
-title: 'CA1001: Typy, které vlastní uvolnitelné pole by měly být uvolnitelné | Microsoft Docs'
-ms.custom: ''
+title: 'CA1001: Typy, které vlastní uvolnitelné pole by měly být uvolnitelné'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1001
 - TypesThatOwnDisposableFieldsShouldBeDisposable
@@ -17,43 +15,43 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1306f594af4639d1b2af24d07e4654f8825cd3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3def21cf32dd45c006045a5301293da2a5d0f70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001: Typy, které vlastní uvolnitelné pole by měly být uvolnitelné
-|||  
-|-|-|  
-|TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|  
-|CheckId|CA1001|  
-|Kategorie|Microsoft.Design|  
-|Narušující změna|Non narušující – Pokud typ není viditelná mimo sestavení.<br /><br /> Ukončování řádků – Pokud je typ viditelné mimo sestavení.|  
-  
-## <a name="cause"></a>příčina  
- Třída deklaruje a implementuje na pole instance, který je <xref:System.IDisposable?displayProperty=fullName> typu a třída neimplementuje <xref:System.IDisposable>.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Implementuje třídu <xref:System.IDisposable> rozhraní k uvolnění nespravovaných prostředků, které vlastní. Na pole instance, která je <xref:System.IDisposable> typ označuje, že pole vlastní nespravovaných prostředků. Třídy, který deklaruje <xref:System.IDisposable> pole nepřímo vlastní nespravovaný prostředek a měly by implementovat <xref:System.IDisposable> rozhraní. Pokud třída přímo nevlastní žádné nespravovaných prostředků, by neměly implementovat finalizační metody.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Chcete-li opravit porušení tohoto pravidla, implementujte <xref:System.IDisposable> a z <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> volání metody <xref:System.IDisposable.Dispose%2A> metoda pole.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Nepotlačujte upozornění na toto pravidlo.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje třídu, která porušuje pravidlo a třídu, která splňuje pravidlo implementací <xref:System.IDisposable>. Třída neimplementuje finalizační metody, protože třída přímo nevlastní žádné nespravovaných prostředků.  
-  
+|||
+|-|-|
+|TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
+|CheckId|CA1001|
+|Kategorie|Microsoft.Design|
+|Narušující změna|Non narušující – Pokud typ není viditelná mimo sestavení.<br /><br /> Ukončování řádků – Pokud je typ viditelné mimo sestavení.|
+
+## <a name="cause"></a>příčina
+ Třída deklaruje a implementuje na pole instance, který je <xref:System.IDisposable?displayProperty=fullName> typu a třída neimplementuje <xref:System.IDisposable>.
+
+## <a name="rule-description"></a>Popis pravidla
+ Implementuje třídu <xref:System.IDisposable> rozhraní k uvolnění nespravovaných prostředků, které vlastní. Na pole instance, která je <xref:System.IDisposable> typ označuje, že pole vlastní nespravovaných prostředků. Třídy, který deklaruje <xref:System.IDisposable> pole nepřímo vlastní nespravovaný prostředek a měly by implementovat <xref:System.IDisposable> rozhraní. Pokud třída přímo nevlastní žádné nespravovaných prostředků, by neměly implementovat finalizační metody.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Chcete-li opravit porušení tohoto pravidla, implementujte <xref:System.IDisposable> a z <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> volání metody <xref:System.IDisposable.Dispose%2A> metoda pole.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Nepotlačujte upozornění na toto pravidlo.
+
+## <a name="example"></a>Příklad
+ Následující příklad ukazuje třídu, která porušuje pravidlo a třídu, která splňuje pravidlo implementací <xref:System.IDisposable>. Třída neimplementuje finalizační metody, protože třída přímo nevlastní žádné nespravovaných prostředků.
+
  [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
- [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]  
-  
-## <a name="related-rules"></a>Související pravidla  
- [CA2213: Uvolnitelné pole by mělo být uvolněno](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
-  
- [CA2216: Uvolnitelné typy by měly deklarovat finalizační metodu](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
-  
- [CA2215: Metody Dispose by měly volat uvolnění třídy Base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)  
-  
+ [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]
+
+## <a name="related-rules"></a>Související pravidla
+ [CA2213: Uvolnitelné pole by mělo být uvolněno](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+
+ [CA2216: Uvolnitelné typy by měly deklarovat finalizační metodu](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+
+ [CA2215: Metody Dispose by měly volat uvolnění třídy Base](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)
+
  [CA1049: Typy, které vlastní nativní prostředky by měly být uvolnitelné](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)

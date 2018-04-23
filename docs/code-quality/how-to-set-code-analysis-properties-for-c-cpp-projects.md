@@ -1,9 +1,7 @@
 ---
-title: 'Postupy: nastavení vlastností analýzy kódu pro projekty C/C++ | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native
@@ -18,39 +16,38 @@ helpviewer_keywords:
 ms.assetid: 7af52097-6d44-4785-9b9f-43b7a7d447d7
 author: mikeblome
 ms.author: mblome
-manager: douge
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89671da363d6079ad7a81dc41f1c6f82b713d32d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d072d6c00ad59d886fb713c2ac98886524371031
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Postupy: Nastavení vlastností analýzy kódu pro projekty C/C++
-Můžete nakonfigurovat pravidla, které používá nástroj pro analýzu kódu k analýze kódu v každé konfiguraci vašeho projektu. Kromě toho můžete nastavit analýzy kódu pro potlačení upozornění z kódu, které se generují a přidávají do projektu pomocí nástroje třetích stran.  
-  
-## <a name="code-analysis-property-page"></a>Stránka vlastností analýzy kódu  
- **Analýza kódu** stránka vlastností obsahuje všechna nastavení konfigurace analýzy kódu pro projekt. Otevřete stránku vlastností analýzy kódu pro projekt v **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a pak klikněte na tlačítko **vlastnosti**. Potom rozbalte **vlastnosti konfigurace** a vyberte **analýza kódu** kartě.  
-  
-## <a name="project-configuration-and-platform"></a>Konfigurace projektu a platforma  
- **Konfigurace** seznamu a **platformy** seznamu umožňují používat nastavení analýzy kódu pro různé kombinace parametrů konfigurace a platformy jiný projekt. Můžete například nastavit analýzy kódu pro použití jedné sady pravidel projektu pro ladění sestavení a jinou sadu pro verzi sestavení.  
-  
-## <a name="enabling-code-analysis"></a>Povolení analýza kódu  
- Můžete rozhodnout, jestli se má povolit analýzy kódu pro váš projekt tak, že vyberete **povolit kód analýzy pro C/C++ v sestavení**. V kombinaci s **konfigurace** seznamu, se může například rozhodnete zákaz analýzy kódu pro sestavení pro ladění a povolit ho pro verzi sestavení.  
-  
- Pokud projekt obsahuje spravovaného kódu, můžete se rozhodnout, zda chcete povolit nebo zakázat analýza kódu tak, že vyberete **povolit analýza kódu v sestavení**.  
-  
- Analýza kódu slouží ke zlepšení kvality kódu a vyhnout se běžné nástrahy. Proto pečlivě zvažte, jestli se má zákaz analýzy kódu. Je obvykle lepší zakázat sady pravidel nebo jednotlivých pravidel, které nechcete použít do projektu.  
-  
-## <a name="generated-code"></a>Generovaný kód  
- Vývojáři často pomocí nástroje vám pomůžou s vývojem aplikací rychle. Tyto nástroje mohou generovat kód, který je přidán do projektu. Můžete chtít najdete v části porušení pravidel, které zjistí analýza kódu generovaného kódu. Nemusí ale chcete zobrazovat v případě, že nechcete udržovat kód.  
-  
- **Potlačit výsledky z vygeneruje kód** v zaškrtávací políčko **Obecné** vlastnosti stránky lze vybrat, zda chcete zobrazit upozornění analýzy kódu ze spravovaného kódu, který je generovaný nástroj třetí strany .  
-  
-## <a name="rule-sets"></a>Sady pravidel  
- Pokud projekt obsahuje spravovaného kódu, můžete vybrat pravidla pro použití v analýza kódu tak, že vyberete sadu z pravidel **spuštění této sady pravidel** seznamu.  
-  
-## <a name="see-also"></a>Viz také  
- [Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
- [Upozornění Analýzy kódu pro C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)
+Můžete nakonfigurovat pravidla, které používá nástroj pro analýzu kódu k analýze kódu v každé konfiguraci vašeho projektu. Kromě toho můžete nastavit analýzy kódu pro potlačení upozornění z kódu, které se generují a přidávají do projektu pomocí nástroje třetích stran.
+
+## <a name="code-analysis-property-page"></a>Stránka vlastností analýzy kódu
+ **Analýza kódu** stránka vlastností obsahuje všechna nastavení konfigurace analýzy kódu pro projekt. Otevřete stránku vlastností analýzy kódu pro projekt v **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a pak klikněte na tlačítko **vlastnosti**. Potom rozbalte **vlastnosti konfigurace** a vyberte **analýza kódu** kartě.
+
+## <a name="project-configuration-and-platform"></a>Konfigurace projektu a platforma
+ **Konfigurace** seznamu a **platformy** seznamu umožňují používat nastavení analýzy kódu pro různé kombinace parametrů konfigurace a platformy jiný projekt. Můžete například nastavit analýzy kódu pro použití jedné sady pravidel projektu pro ladění sestavení a jinou sadu pro verzi sestavení.
+
+## <a name="enabling-code-analysis"></a>Povolení analýza kódu
+ Můžete rozhodnout, jestli se má povolit analýzy kódu pro váš projekt tak, že vyberete **povolit kód analýzy pro C/C++ v sestavení**. V kombinaci s **konfigurace** seznamu, se může například rozhodnete zákaz analýzy kódu pro sestavení pro ladění a povolit ho pro verzi sestavení.
+
+ Pokud projekt obsahuje spravovaného kódu, můžete se rozhodnout, zda chcete povolit nebo zakázat analýza kódu tak, že vyberete **povolit analýza kódu v sestavení**.
+
+ Analýza kódu slouží ke zlepšení kvality kódu a vyhnout se běžné nástrahy. Proto pečlivě zvažte, jestli se má zákaz analýzy kódu. Je obvykle lepší zakázat sady pravidel nebo jednotlivých pravidel, které nechcete použít do projektu.
+
+## <a name="generated-code"></a>Generovaný kód
+ Vývojáři často pomocí nástroje vám pomůžou s vývojem aplikací rychle. Tyto nástroje mohou generovat kód, který je přidán do projektu. Můžete chtít najdete v části porušení pravidel, které zjistí analýza kódu generovaného kódu. Nemusí ale chcete zobrazovat v případě, že nechcete udržovat kód.
+
+ **Potlačit výsledky z vygeneruje kód** v zaškrtávací políčko **Obecné** vlastnosti stránky lze vybrat, zda chcete zobrazit upozornění analýzy kódu ze spravovaného kódu, který je generovaný nástroj třetí strany .
+
+## <a name="rule-sets"></a>Sady pravidel
+ Pokud projekt obsahuje spravovaného kódu, můžete vybrat pravidla pro použití v analýza kódu tak, že vyberete sadu z pravidel **spuštění této sady pravidel** seznamu.
+
+## <a name="see-also"></a>Viz také
+ [Analýza kvality spravovaného kódu](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) [analýza kódu pro C/C++ upozornění](../code-quality/code-analysis-for-c-cpp-warnings.md)

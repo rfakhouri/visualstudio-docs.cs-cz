@@ -1,10 +1,8 @@
 ---
-title: 'CA1038: Enumerátory by měly být silného typu | Microsoft Docs'
-ms.custom: ''
+title: 'CA1038: Enumerátory by měly být silného typu'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - EnumeratorsShouldBeStronglyTyped
 - CA1038
@@ -17,50 +15,47 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01b194864f559ff095d8727ff11a4906377aa482
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0cd45f3d601b3bba1bdda795ff098b72e241ca28
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1038-enumerators-should-be-strongly-typed"></a>CA1038: Enumerátory by měly být silného typu
-|||  
-|-|-|  
-|TypeName|EnumeratorsShouldBeStronglyTyped|  
-|CheckId|CA1038|  
-|Kategorie|Microsoft.Design|  
-|Narušující změna|Narušující|  
-  
-## <a name="cause"></a>příčina  
- Implementuje typu veřejný nebo chráněného <xref:System.Collections.IEnumerator?displayProperty=fullName> neposkytuje verzi silného typu, ale <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> vlastnost. Vyloučí z tohoto pravidla jsou typy, které jsou odvozené z následujících typů:  
-  
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>  
-  
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Toto pravidlo vyžaduje <xref:System.Collections.IEnumerator> implementace také zadejte verzi silného typu <xref:System.Collections.IEnumerator.Current%2A> vlastnost tak, aby uživatelé nemusí při použití funkce, která je k dispozici rozhraní přetypovat návratovou hodnotu silného typu. Toto pravidlo se předpokládá, že typ, který implementuje <xref:System.Collections.IEnumerator> obsahuje kolekci instancí typu, který je vyšší než <xref:System.Object>.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Opravit porušení toto pravidlo, implementovat rozhraní vlastnost explicitně (deklarujte ji jako `IEnumerator.Current`). Přidejte veřejnou verzi silného typu vlastnost deklarován jako `Current`, a mějte ho vrátí objekt silného typu.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Potlačíte upozornění na toto pravidlo při implementaci enumerátor na základě objektů pro použití s kolekci na základě objektů jako binárního stromu. Typy, které rozšiřují nová kolekce bude definovat silného typu enumerátor a vystavit vlastnost silného typu.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje správný způsob implementace silného typu <xref:System.Collections.IEnumerator> typu.  
-  
- [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]  
-  
-## <a name="related-rules"></a>Související pravidla  
- [CA1035: Implementace ICollection mají členy silného typu](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)  
-  
- [CA1039: Seznamy jsou silného typu](../code-quality/ca1039-lists-are-strongly-typed.md)  
-  
-## <a name="see-also"></a>Viz také  
- <xref:System.Collections.IEnumerator?displayProperty=fullName>   
- <xref:System.Collections.CollectionBase?displayProperty=fullName>   
- <xref:System.Collections.DictionaryBase?displayProperty=fullName>   
- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+|||
+|-|-|
+|TypeName|EnumeratorsShouldBeStronglyTyped|
+|CheckId|CA1038|
+|Kategorie|Microsoft.Design|
+|Narušující změna|Narušující|
+
+## <a name="cause"></a>příčina
+ Implementuje typu veřejný nebo chráněného <xref:System.Collections.IEnumerator?displayProperty=fullName> neposkytuje verzi silného typu, ale <xref:System.Collections.IEnumerator.Current%2A?displayProperty=fullName> vlastnost. Vyloučí z tohoto pravidla jsou typy, které jsou odvozené z následujících typů:
+
+-   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+
+-   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+
+-   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+
+## <a name="rule-description"></a>Popis pravidla
+ Toto pravidlo vyžaduje <xref:System.Collections.IEnumerator> implementace také zadejte verzi silného typu <xref:System.Collections.IEnumerator.Current%2A> vlastnost tak, aby uživatelé nemusí při použití funkce, která je k dispozici rozhraní přetypovat návratovou hodnotu silného typu. Toto pravidlo se předpokládá, že typ, který implementuje <xref:System.Collections.IEnumerator> obsahuje kolekci instancí typu, který je vyšší než <xref:System.Object>.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Opravit porušení toto pravidlo, implementovat rozhraní vlastnost explicitně (deklarujte ji jako `IEnumerator.Current`). Přidejte veřejnou verzi silného typu vlastnost deklarován jako `Current`, a mějte ho vrátí objekt silného typu.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Potlačíte upozornění na toto pravidlo při implementaci enumerátor na základě objektů pro použití s kolekci na základě objektů jako binárního stromu. Typy, které rozšiřují nová kolekce bude definovat silného typu enumerátor a vystavit vlastnost silného typu.
+
+## <a name="example"></a>Příklad
+ Následující příklad ukazuje správný způsob implementace silného typu <xref:System.Collections.IEnumerator> typu.
+
+ [!code-csharp[FxCop.Design.IEnumeratorStrongTypes#1](../code-quality/codesnippet/CSharp/ca1038-enumerators-should-be-strongly-typed_1.cs)]
+
+## <a name="related-rules"></a>Související pravidla
+ [CA1035: Implementace ICollection mají členy silného typu](../code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md)
+
+ [CA1039: Seznamy jsou silného typu](../code-quality/ca1039-lists-are-strongly-typed.md)
+
+## <a name="see-also"></a>Viz také
+ <xref:System.Collections.IEnumerator?displayProperty=fullName> <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.DictionaryBase?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

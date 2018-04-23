@@ -2,8 +2,7 @@
 title: 'Postupy: nastavení názvu vlákna v nativním kódu | Microsoft Docs'
 ms.custom: ''
 ms.date: 04/27/2017
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,11 +21,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a85ad8a81046ca6bc2e602d5449ce7924ad7a4a0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a2b751451f1362c0ba82871b99b0dbb10434282b
+ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Postupy: Nastavení názvu vlákna v nativním kódu
 Názvy vláken je možné v libovolná edice sady Visual Studio. Názvy vláken je užitečné pro udržování přehledu o vláken v **vláken** okno.
