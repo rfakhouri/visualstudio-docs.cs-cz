@@ -33,7 +33,6 @@
 #### [Opsgility](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Školení na Xamarin University](vs-xamarin.md)
-#### [Microsoft E-Learning](vs-elearn.md)
 #### [Předplatné MSDN Magazine](vs-msdn.md)
 ### Výhody v oblasti podpory
 #### [Chat s poradcem pro Azure](vs-azure-advisory-chat.md)
