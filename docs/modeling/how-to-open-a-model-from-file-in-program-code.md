@@ -1,6 +1,5 @@
 ---
-title: 'Postupy: otevření modelu ze souboru v programovém kódu | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Otevření modelu ze souboru v kódu programu'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,129 +8,129 @@ manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: def58efd27dc87b35b50969630e3129b999fc98a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 832cd34b2461a07e895272816324e41508fdbbd5
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Postupy: Otevření modelu ze souboru v kódu programu
-Modely DSL můžete otevřít v libovolné aplikaci.  
-  
- Z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření, ModelBus můžete použít pro tento účel. ModelBus poskytuje standardní mechanismus pro odkazování na model nebo elementů ve model a hledání modelu, pokud se přesunul. Další informace najdete v tématu [integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).  
-  
-## <a name="target-framework"></a>Cílová architektura  
- Nastavte **cílové rozhraní** projektu aplikace pro **rozhraní .NET Framework 4**.  
-  
-#### <a name="to-set-the-target-framework"></a>Chcete-li nastavit cílové rozhraní  
-  
-1.  Otevřete [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt pro aplikace, ve kterém chcete číst DSL modelu.  
-  
-2.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a pak klikněte na tlačítko **vlastnosti**.  
-  
-3.  V okně Vlastnosti projektu na **aplikace** nastavte **cílové rozhraní** do **rozhraní .NET Framework 4**.  
-  
+Modely DSL můžete otevřít v libovolné aplikaci.
+
+ Z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] rozšíření, ModelBus můžete použít pro tento účel. ModelBus poskytuje standardní mechanismus pro odkazování na model nebo elementů ve model a hledání modelu, pokud se přesunul. Další informace najdete v tématu [integrace modelů pomocí Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+
+## <a name="target-framework"></a>Cílová architektura
+ Nastavte **cílové rozhraní** projektu aplikace pro **rozhraní .NET Framework 4**.
+
+#### <a name="to-set-the-target-framework"></a>Chcete-li nastavit cílové rozhraní
+
+1.  Otevřete [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt pro aplikace, ve kterém chcete číst DSL modelu.
+
+2.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a pak klikněte na tlačítko **vlastnosti**.
+
+3.  V okně Vlastnosti projektu na **aplikace** nastavte **cílové rozhraní** do **rozhraní .NET Framework 4**.
+
 > [!NOTE]
->  Možná budete muset provést i v případě, že jste vybrali **rozhraní .NET Framework 4** v dialogovém okně projekt vytvoření. Cílovém Frameworku, který by neměl být **rozhraní .NET Framework 4 Client Profile**.  
-  
-## <a name="references"></a>Odkazy  
- Je nutné přidat tyto odkazy na vaše [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt aplikace:  
-  
--   `Microsoft.VisualStudio.Modeling.Sdk.11.0`  
-  
-    -   Pokud nevidíte to v části **.NET** ve **přidat odkazy** dialogové okno, klikněte na tlačítko **Procházet** kartě a přejděte do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.  
-  
--   Sestavení vaší DSL, která je k dispozici ve složce Koš DSL projektu. Jeho název je obvykle ve formátu: *společnost*. *YourProject*`.Dsl.dll`.  
-  
-## <a name="important-classes-in-the-dsl"></a>Důležité třídy v DSL  
- Než napíšete kód, který čte vaší DSL, byste měli znát názvy některé třídy generované vaší DSL. V řešení DSL, otevřete **Dsl** projektu a hledat v **GeneratedCode** složky. Případně, dvakrát klikněte na sestavení DSL ve vašem projektu **odkazy**a otevřete DSL oboru názvů v **Prohlížeč objektů**.  
-  
- Toto jsou třídy, které byste měli určit:  
-  
--   *YourDslRootClass* -Toto je název kořenové třídy ve vaší `DslDefinition.dsl`.  
-  
--   *YourDslName* `SerializationHelper` -Tato třída je definována v `SerializationHelper.cs` ve vašem projektu DSL.  
-  
--   *YourDslName* `DomainModel` -Tato třída je definována v `DomainModel.cs` ve vašem projektu DSL.  
-  
-## <a name="reading-from-a-file"></a>Čtení ze souboru  
- Následující příklad je navržen pro čtení DSL, ve kterém jsou důležité třídy následujícím způsobem:  
-  
--   FamilyTreeModel  
-  
--   FamilyTreeSerializationHelper  
-  
--   FamilyTreeDomainModel  
-  
- Jiná třída domény v této DSL je osoba.  
-  
-```  
-using System;  
-using Microsoft.VisualStudio.Modeling;  
-using Company.FamilyTree; // Your DSL namespace  
-  
-namespace StandaloneReadDslConsole  
-{ class Program  
-  { static void Main(string[] args)  
-    {  
-      // The path of a DSL model file:  
-      string dslModel = @"C:\FamilyTrees\Tudor.ftree";  
-      // Set up the Store to read your type of model:  
-      Store store = new Store(  
-        typeof(Company.FamilyTree.FamilyTreeDomainModel));  
-      // The Model type generated by the DSL:  
-      FamilyTreeModel familyTree;  
-      // All Store changes must be in a Transaction:  
-      using (Transaction t =   
-        store.TransactionManager.BeginTransaction("Load model"))  
-      {  
-        familyTree =   
-           FamilyTreeSerializationHelper.Instance.  
-              LoadModel(store, dslModel, null, null, null);  
-        t.Commit(); // Don't forget this!  
-      }  
-      // Now we can read the model:  
-      foreach (Person p in familyTree.People)  
-      {  
-        Console.WriteLine(p.Name);   
-        foreach (Person child in p.Children)  
-        {  
-          Console.WriteLine("    " + child.Name);  
-        }  
-} } } }  
-```  
-  
-## <a name="saving-to-a-file"></a>Ukládání do souboru  
- Následujícím dodatkem k předchozí kód provede změny do modelu a pak ji uloží je do souboru.  
-  
-```  
-using (Transaction t =  
-  store.TransactionManager.BeginTransaction("update model"))  
-{  
-  // Create a new model element:  
-  Person p = new Person(store);  
-  // Set its embedding relationship:  
-  p.FamilyTreeModel = familyTree;  
-  // - same as: familyTree.People.Add(p);  
-  // Set its properties:  
-  p.Name = "Edward VI";  
-  t.Commit(); // Don't forget this!  
-}  
-// Save the model:  
-try  
-{  
-  SerializationResult result = new SerializationResult();  
-  FamilyTreeSerializationHelper.Instance  
-    .SaveModel(result, familyTree, @"C:\FamilyTrees\Tudor-upd.ftree");  
-  // Report any error:  
-  if (result.Failed)  
-  {  
-    foreach (SerializationMessage message in result)  
-    {  
-      Console.WriteLine(message);  
-    }  
-  }  
-}  
-catch (System.IO.IOException ex)  
-{ ... }  
+>  Možná budete muset provést i v případě, že jste vybrali **rozhraní .NET Framework 4** v dialogovém okně projekt vytvoření. Cílovém Frameworku, který by neměl být **rozhraní .NET Framework 4 Client Profile**.
+
+## <a name="references"></a>Odkazy
+ Je nutné přidat tyto odkazy na vaše [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekt aplikace:
+
+-   `Microsoft.VisualStudio.Modeling.Sdk.11.0`
+
+    -   Pokud nevidíte to v části **.NET** ve **přidat odkazy** dialogové okno, klikněte na tlačítko **Procházet** kartě a přejděte do `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
+
+-   Sestavení vaší DSL, která je k dispozici ve složce Koš DSL projektu. Jeho název je obvykle ve formátu: *společnost*. *YourProject*`.Dsl.dll`.
+
+## <a name="important-classes-in-the-dsl"></a>Důležité třídy v DSL
+ Než napíšete kód, který čte vaší DSL, byste měli znát názvy některé třídy generované vaší DSL. V řešení DSL, otevřete **Dsl** projektu a hledat v **GeneratedCode** složky. Případně, dvakrát klikněte na sestavení DSL ve vašem projektu **odkazy**a otevřete DSL oboru názvů v **Prohlížeč objektů**.
+
+ Toto jsou třídy, které byste měli určit:
+
+-   *YourDslRootClass* -Toto je název kořenové třídy ve vaší `DslDefinition.dsl`.
+
+-   *YourDslName* `SerializationHelper` -Tato třída je definována v `SerializationHelper.cs` ve vašem projektu DSL.
+
+-   *YourDslName* `DomainModel` -Tato třída je definována v `DomainModel.cs` ve vašem projektu DSL.
+
+## <a name="reading-from-a-file"></a>Čtení ze souboru
+ Následující příklad je navržen pro čtení DSL, ve kterém jsou důležité třídy následujícím způsobem:
+
+-   FamilyTreeModel
+
+-   FamilyTreeSerializationHelper
+
+-   FamilyTreeDomainModel
+
+ Jiná třída domény v této DSL je osoba.
+
+```
+using System;
+using Microsoft.VisualStudio.Modeling;
+using Company.FamilyTree; // Your DSL namespace
+
+namespace StandaloneReadDslConsole
+{ class Program
+  { static void Main(string[] args)
+    {
+      // The path of a DSL model file:
+      string dslModel = @"C:\FamilyTrees\Tudor.ftree";
+      // Set up the Store to read your type of model:
+      Store store = new Store(
+        typeof(Company.FamilyTree.FamilyTreeDomainModel));
+      // The Model type generated by the DSL:
+      FamilyTreeModel familyTree;
+      // All Store changes must be in a Transaction:
+      using (Transaction t =
+        store.TransactionManager.BeginTransaction("Load model"))
+      {
+        familyTree =
+           FamilyTreeSerializationHelper.Instance.
+              LoadModel(store, dslModel, null, null, null);
+        t.Commit(); // Don't forget this!
+      }
+      // Now we can read the model:
+      foreach (Person p in familyTree.People)
+      {
+        Console.WriteLine(p.Name);
+        foreach (Person child in p.Children)
+        {
+          Console.WriteLine("    " + child.Name);
+        }
+} } } }
+```
+
+## <a name="saving-to-a-file"></a>Ukládání do souboru
+ Následujícím dodatkem k předchozí kód provede změny do modelu a pak ji uloží je do souboru.
+
+```
+using (Transaction t =
+  store.TransactionManager.BeginTransaction("update model"))
+{
+  // Create a new model element:
+  Person p = new Person(store);
+  // Set its embedding relationship:
+  p.FamilyTreeModel = familyTree;
+  // - same as: familyTree.People.Add(p);
+  // Set its properties:
+  p.Name = "Edward VI";
+  t.Commit(); // Don't forget this!
+}
+// Save the model:
+try
+{
+  SerializationResult result = new SerializationResult();
+  FamilyTreeSerializationHelper.Instance
+    .SaveModel(result, familyTree, @"C:\FamilyTrees\Tudor-upd.ftree");
+  // Report any error:
+  if (result.Failed)
+  {
+    foreach (SerializationMessage message in result)
+    {
+      Console.WriteLine(message);
+    }
+  }
+}
+catch (System.IO.IOException ex)
+{ ... }
 ```

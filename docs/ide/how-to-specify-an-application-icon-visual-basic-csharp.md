@@ -14,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5e2984e9da7d3df4187c1a32b481ed0a70c876d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bd8616e1f16e12ab07bd30a2d88f728bc79212f6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Postupy: Určení ikony aplikace (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Postupy: určení ikony aplikace (Visual Basic, C#)
 
-`Icon` Pro projekt Určuje soubor ikony (.ico) se zobrazí, kompilované aplikace v Průzkumníku souborů a na hlavním panelu Windows.
+`Icon` Pro projekt Určuje soubor ikony (*.ico, který*), zobrazí se pro kompilované aplikace **Průzkumníka souborů** a na hlavním panelu Windows.
 
 `Icon` Vlastnost je přístupná v **aplikace** podokně **Návrhář projektu**; obsahuje seznam ikon, které byly přidány do projektu jako prostředky, nebo jako soubory obsahu.
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 04/16/2018
 
 1. Když **Návrhář projektu** se zobrazí, vyberte **aplikace** karta.
 
-1. **(Visual Basic)**  &mdash;v **ikonu** seznamu, vyberte soubor ikony (.ico).
+1. **(Visual Basic)**  &mdash;v **ikonu** vyberte ikonu (*.ico, který*) souboru.
 
     **C#**&mdash;v blízkosti **ikonu** seznam, vyberte  **\<Procházet... >** tlačítko a vyhledejte umístění souboru ikonu, který chcete.
 
 ## <a name="see-also"></a>Viz také
 
-[Stránka Aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
-[Stránka Aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)
+[Stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
+[Stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)

@@ -10,11 +10,11 @@ manager: douge
 ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: a87d48007abc08044d41d6bb65f5511b955c45bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eacb6ba97f79f2c66444bc79b11c51ef01a50672
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>Postup nahlásit problém s Visual Studio 2017
 
@@ -70,13 +70,13 @@ Trasování a haldy souborů výpisu paměti jsou užitečné v pomáhá nám di
 
 ### <a name="report-a-problem-by-using-the-visual-studio-installer"></a>Nahlásit problém s použitím instalační program Visual Studio
 
-Pokud nemůžete dokončit instalaci sady Visual Studio nebo nelze využít nástroj zpětné vazby v sadě Visual Studio, můžete pomocí Instalační program Visual Studio nahlásit problém. To pokud chcete udělat, zvolte ikonu zpětné vazby v pravém horním rohu instalační program Visual Studio.
+Pokud nemůžete dokončit instalaci sady Visual Studio nebo nelze využít nástroj zpětné vazby v sadě Visual Studio, můžete nahlásit problém pomocí **instalační program Visual Studio**. To pokud chcete udělat, zvolte ikonu zpětné vazby v pravém horním rohu **instalační program Visual Studio**.
 
  ![Můžete klikněte na tlačítko poskytnout zpětnou vazbu v instalačním programu Visual Studio otevřete nástroj zpětné vazby](../install/media/report-a-problem.png)
 
 ### <a name="search-for-problems-and-solutions-by-using-the-visual-studio-developer-community"></a>Vyhledejte problémy a řešení pomocí sady Visual Studio komunity vývojářů
 
-Pokud nechcete nebo nemůže používat Visual Studio k nahlásit problém, existuje riziko, že problém již oznámen a řešení ve Visual Studio community vývojáře odeslány. Další informace najdete v tématu [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/) stránky.
+Pokud nechcete nebo nemůže používat Visual Studio k nahlásit problém, existuje riziko, že problém již oznámen a řešení ve Visual Studio community vývojáře odeslány. Další informace najdete v tématu [komunity vývojářů v sadě Visual Studio](https://developercommunity.visualstudio.com/) stránky.
 
 #### <a name="provide-product-feedback-or-a-suggestion"></a>Poskytnutí zpětné vazby produktu nebo zlepšení
 

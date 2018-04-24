@@ -1,10 +1,10 @@
 ---
-title: Používání parametrů příkazového řádku pro instalaci sady Visual Studio | Microsoft Docs
+title: Používání parametrů příkazového řádku pro instalaci sady Visual Studio
+description: Další informace o použití parametrů příkazového řádku řízení nebo upravit instalace Visual Studia.
 ms.custom: ''
 ms.date: 01/17/2018
-ms.reviewer: tims
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3b347d257e5eeb5b5672223fc06941f5513583b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku
+
 Když instalujete Visual Studio 2017 z příkazového řádku, můžete řídit nebo upravit instalaci různých parametry příkazového řádku. Z příkazového řádku můžete provádět následující akce:
 
 - Spusťte instalaci pomocí určitých možností předem vybrali.
@@ -35,7 +36,8 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 * [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
 * [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
 
-## <a name="list-of-command-line-parameters"></a>Seznam parametrů příkazového řádku  
+## <a name="list-of-command-line-parameters"></a>Seznam parametrů příkazového řádku
+
  Parametry příkazového řádku Visual Studio jsou velká a malá písmena.
 
 > Syntaxe: `vs_enterprise.exe [command] <options>...`
@@ -101,9 +103,11 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `--noWeb` | **Novinka v 15.3, volitelné**: Instalační program nyní stáhnout veškerý obsah, který je instalace z Internetu.  Veškerý obsah, který se instaluje musí být k dispozici v offline rozložení.  Pokud rozložení chybí obsah, instalace se nezdaří.  Další informace najdete v tématu [nasazení z síťovou instalaci](create-a-network-installation-of-visual-studio.md). |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Seznam ID úlohy a ID součástí
+
 Seznam úloh a ID součástí, které jsou seřazené podle produktu Visual Studio, najdete v článku [zatížení 2017 Visual Studio a ID součástí](workload-and-component-ids.md) stránky.
 
 ## <a name="list-of-language-locales"></a>Seznam národní prostředí
+
 | **Národní prostředí** | **Jazyk** |
 | ----------------------- | --------------- |
 | cs-CZ | Čeština |
@@ -122,6 +126,7 @@ Seznam úloh a ID součástí, které jsou seřazené podle produktu Visual Stud
 | zh-TW | Tradiční čínština – |
 
 ## <a name="error-codes"></a>Kódy chyb
+
 V závislosti na výsledku operace `%ERRORLEVEL%` proměnné prostředí se nastaví na jednu z následujících hodnot:
 
 | **Hodnota** | **výsledek** |
@@ -136,16 +141,18 @@ V závislosti na výsledku operace `%ERRORLEVEL%` proměnné prostředí se nast
 Generuje několik souborů protokolu v každé operace `%TEMP%` adresář, který informace o průběhu instalace. Řazení podle data složce a hledat soubory, které začínají `dd_bootstrapper`, `dd_client`, a `dd_setup` pro zavaděč, instalační program aplikace a potom instalaci modul, v uvedeném pořadí.
 
 ## <a name="get-support"></a>Získat podporu
+
 V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
+
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
 
- * [Příklady parametr příkazového řádku pro instalaci Visual Studio 2017](command-line-parameter-examples.md)
- * [Vytvoření offline instalace Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
- * [Automatizace instalace sady Visual Studio souborem odpovědí](automated-installation-with-response-file.md)
+* [Příklady parametr příkazového řádku pro instalaci Visual Studio 2017](command-line-parameter-examples.md)
+* [Vytvoření offline instalace Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+* [Automatizace instalace sady Visual Studio souborem odpovědí](automated-installation-with-response-file.md)

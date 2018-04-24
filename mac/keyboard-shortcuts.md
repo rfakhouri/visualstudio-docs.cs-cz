@@ -1,16 +1,15 @@
 ---
-title: "Editor zdroj běžné klávesové zkratky"
-description: 
+title: Editor zdroj běžné klávesové zkratky
+description: ''
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 2e4d2794e60653f5c34c4bde2dfbe69b08e5da27
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ba0e1d7b5625dbe0b9bb86f43f5e402d6cf07043
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Běžné klávesové zkratky v sadě Visual Studio pro Mac
 
@@ -70,4 +69,4 @@ Přesune pomocí kurzoru na začátku nebo na konci řádku:
 
 Rozšíří word, dílčí výrazy, prohlášení a výběr členů řádku logickým způsobem:
 
-`alt + shift + up`Chcete-li vybrat `alt + shift + down` k zrušte výběr
+`alt + shift + up` Chcete-li vybrat `alt + shift + down` k zrušte výběr

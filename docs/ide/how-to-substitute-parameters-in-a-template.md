@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: be187dfca5f31e33d8f451177ba68b4288e29a53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0439ffd8e7994995dd3eaafed8e0b0fb2a57d282
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Postupy: nahrazení parametrů v šabloně
 
@@ -34,7 +34,7 @@ Následující části se dozvíte, jak upravit šablonu, která má nahradit n�
     namespace $safeprojectname$
     ```
 
-1. V souboru .vstemplate pro šablonu, vyhledejte `ProjectItem` element, který obsahuje tento soubor.
+1. V *.vstemplate* souboru šablony, vyhledejte `ProjectItem` element, který obsahuje tento soubor.
 
 1. Nastavte `ReplaceParameters` atribut `true` pro `ProjectItem` element:
 
@@ -46,5 +46,5 @@ Následující části se dozvíte, jak upravit šablonu, která má nahradit n�
 
 [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)  
 [Parametry šablony](../ide/template-parameters.md)  
-[Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
-[ProjectItem – element (šablony sady Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+[Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)  
+[ProjectItem – element (šablony sady Visual Studio položky)](../extensibility/projectitem-element-visual-studio-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: ID úlohy a součást Visual Studio Community 2017 | Microsoft Docs
+title: Visual Studio Community 2017 pracovního vytížení a součást ID
 description: Pomocí úloh a ID součástí k instalaci sady Visual Studio pomocí příkazového řádku nebo zadejte v závislosti na manifestu VSIX
 keywords: ''
 author: TerryGLee
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.service: ''
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.assetid: 58494fc3-12de-4761-bd4a-74b54f72bfb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 120d1a3e6d536660b1c829467f900282fea1efcf
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: 81ce49fed771ee0c59bbf036afb2076f9d237fd3
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-community-2017-workload-and-component-ids"></a>Visual Studio Community 2017 pracovního vytížení a součást ID
 
@@ -114,7 +114,7 @@ Microsoft.Net.Component.4.6.TargetingPack | Cílení na pack rozhraní .NET fram
 Microsoft.Net.Component.4.TargetingPack | Cílení na pack rozhraní .NET framework 4 | 15.6.27406.0 | Doporučeno
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Nástroje pro vývoj rozhraní .NET framework 4 – 4.6 | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.Component.AspNet45 | Pokročilé funkce ASP.NET | 15.6.27428.1 | Doporučeno
-Microsoft.VisualStudio.Component.Azure.MobileAppsSdk | Azure Mobile Apps SDK | 15.6.27428.1 | Doporučeno
+Microsoft.VisualStudio.Component.Azure.MobileAppsSdk | Azure SDK mobilní aplikace | 15.6.27428.1 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools | Základní nástroje Azure Resource Manager | 15.0.27005.2 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Nástroje Service Fabricu | 15.0.26208.0 | Doporučeno
 Microsoft.VisualStudio.Component.Azure.Waverton | Základní nástroje Azure Cloud Services | 15.6.27309.0 | Doporučeno
@@ -229,7 +229,7 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET a vývoje | 1
 Component.Anaconda2.x64 | Anaconda2 64-bit (5.0.0) | 5.0.0 | Nepovinné
 Component.Anaconda2.x86 | 32bitový Anaconda2 (5.0.0) | 5.0.0 | Nepovinné
 Component.Anaconda3.x86 | 32bitový Anaconda3 (5.0.0) | 5.0.0 | Nepovinné
-Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | Nepovinné
+Microsoft.Component.VC.Runtime.UCRTSDK | Sady Windows Universal CRT SDK | 15.6.27309.0 | Nepovinné
 Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Nástroje pro nativní vývoj Python | 15.0.27005.2 | Nepovinné
 Microsoft.VisualStudio.Component.Graphics.Tools | Ladicího programu grafiky a GPU profileru pro rozhraní DirectX | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.Graphics.Win81 | Grafické nástroje Windows 8.1 SDK | 15.6.27406.0 | Nepovinné
@@ -237,7 +237,7 @@ Microsoft.VisualStudio.Component.VC.140 | Sada nástrojů v140 VC ++ 2015.3 pro 
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ klíčových funkcí | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ nástroje pro profilaci | 15.0.26823.1 | Nepovinné
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Sada nástrojů v141 VC ++ 2017 (x86, x64) | 15.6.27406.0 | Nepovinné
-Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows10SDK | Prostředí Windows Universal C Runtime | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) pro plochy C++ [x86 a x64] | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK (10.0.16299.0) pro UPW: C++ | 15.6.27406.0 | Nepovinné
@@ -329,7 +329,7 @@ ID součásti | Název | Version | Typ závislosti
 --- | --- | --- | ---
 Component.MDD.Linux | Visual C++ vývoje pro Linux | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ klíčových funkcí | 15.6.27406.0 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | Požadováno
+Microsoft.VisualStudio.Component.Windows10SDK | Prostředí Windows Universal C Runtime | 15.6.27406.0 | Požadováno
 Component.Linux.CMake | Nástroje sady Visual C++ pro CMake a Linux | 15.0.27005.2 | Doporučeno
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statické analytické nástroje | 15.0.26208.0 | Doporučeno
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Sada nástrojů v141 VC ++ 2017 (x86, x64) | 15.6.27406.0 | Doporučeno
@@ -372,7 +372,7 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | Windows 10 SDK 
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET a vývoje | 15.0.27005.2 | Doporučeno
 Component.Incredibuild | IncrediBuild - akcelerace sestavení | 15.6.27406.0 | Nepovinné
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Nepovinné
-Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | Nepovinné
+Microsoft.Component.VC.Runtime.UCRTSDK | Sady Windows Universal CRT SDK | 15.6.27309.0 | Nepovinné
 Microsoft.Net.Component.4.6.1.SDK | Rozhraní .NET framework 4.6.1 SDK | 15.6.27406.0 | Nepovinné
 Microsoft.Net.Component.4.6.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.6.1 | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.VC.140 | Sada nástrojů v140 VC ++ 2015.3 pro plochu (x86, x64) | 15.6.27406.0 | Nepovinné
@@ -405,7 +405,7 @@ Microsoft.VisualStudio.Component.Static.Analysis.Tools | Statické analytické n
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ klíčových funkcí | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Aktualizace Visual C++ 2017 Redistributable | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Sada nástrojů v141 VC ++ 2017 (x86, x64) | 15.6.27406.0 | Požadováno
-Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | Požadováno
+Microsoft.VisualStudio.Component.Windows10SDK | Prostředí Windows Universal C Runtime | 15.6.27406.0 | Požadováno
 Microsoft.VisualStudio.Component.Graphics.Tools | Ladicího programu grafiky a GPU profileru pro rozhraní DirectX | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.Component.Graphics.Win81 | Grafické nástroje Windows 8.1 SDK | 15.6.27406.0 | Doporučeno
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ nástroje pro profilaci | 15.0.26823.1 | Doporučeno
@@ -422,7 +422,7 @@ Component.JavaJDK | Java SE Development Kit (8.0.1120.15) | 15.6.27406.0 | Nepov
 Component.MDD.Android | Nástroje pro vývoj C++ Android | 15.0.26606.0 | Nepovinné
 Component.Unreal | Instalační program Unreal Engine | 15.6.27406.0 | Nepovinné
 Component.Unreal.Android | Visual Studio pro Android, podporují pro Unreal Engine | 15.0.27005.2 | Nepovinné
-Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | Nepovinné
+Microsoft.Component.VC.Runtime.UCRTSDK | Sady Windows Universal CRT SDK | 15.6.27309.0 | Nepovinné
 Microsoft.Net.Component.4.5.1.TargetingPack | Cílovou sadu rozhraní .NET framework 4.5.1 | 15.6.27406.0 | Nepovinné
 Microsoft.Net.Component.4.5.2.TargetingPack | Cílovou sadu rozhraní .NET framework 4.5.2 | 15.6.27406.0 | Nepovinné
 Microsoft.Net.Component.4.5.TargetingPack | Cílení na pack rozhraní .NET framework 4.5 | 15.6.27406.0 | Nepovinné
@@ -789,7 +789,7 @@ Microsoft.Component.ClickOnce | Publikování ClickOnce | 15.0.27205.0 | Nepovin
 Microsoft.Component.MSBuild | MSBuild | 15.6.27309.0 | Nepovinné
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Nepovinné
 Microsoft.Component.PythonTools.UWP | Podpora Python IoT | 15.0.26606.0 | Nepovinné
-Microsoft.Component.VC.Runtime.UCRTSDK | Windows Universal CRT SDK | 15.6.27309.0 | Nepovinné
+Microsoft.Component.VC.Runtime.UCRTSDK | Sady Windows Universal CRT SDK | 15.6.27309.0 | Nepovinné
 Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Nástroje pro nativní vývoj Python | 15.0.27005.2 | Nepovinné
 Microsoft.Net.Component.4.5.2.TargetingPack | Cílovou sadu rozhraní .NET framework 4.5.2 | 15.6.27406.0 | Nepovinné
 Microsoft.Net.Component.4.5.TargetingPack | Cílení na pack rozhraní .NET framework 4.5 | 15.6.27406.0 | Nepovinné
@@ -829,7 +829,7 @@ Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ klíčových fun
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ nástroje pro profilaci | 15.0.26823.1 | Nepovinné
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | Sada nástrojů v141 VC ++ 2017 (x86, x64) | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.Web | ASP.NET a webové nástroje pro vývoj | 15.6.27323.2 | Nepovinné
-Microsoft.VisualStudio.Component.Windows10SDK | Windows Universal C Runtime | 15.6.27406.0 | Nepovinné
+Microsoft.VisualStudio.Component.Windows10SDK | Prostředí Windows Universal C Runtime | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | Windows 10 SDK (10.0.16299.0) pro plochy C++ [x86 a x64] | 15.6.27406.0 | Nepovinné
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | Windows 10 SDK (10.0.16299.0) pro UPW: C#, VB, JS | 15.6.27406.0 | Nepovinné
@@ -990,13 +990,15 @@ Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Kompilátory jazyka Visual C++
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | Windows 10 SDK (10.0.16299.0) pro plochy C++ [ARM a ARM64] | 15.6.27406.0
 
 ## <a name="get-support"></a>Získat podporu
+
 V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
+
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
 

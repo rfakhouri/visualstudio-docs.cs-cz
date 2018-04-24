@@ -1,12 +1,9 @@
 ---
 title: Přehled podpory Python v sadě Visual Studio v systému Windows
 description: Souhrn funkcí v sadě Visual Studio, takže je nejlepší Python IDE v systému Windows (také označované také jako Python Tools pro sadu Visual Studio, PTVS)
-ms.custom: ''
 ms.date: 04/06/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 799476fa7e9506ecb1a078e349ccb44c7426a944
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31ffd868eeab4638344cfafc2723b6a60608f232
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="working-with-python-in-visual-studio-windows"></a>Práce s Python v sadě Visual Studio (Windows)
 
@@ -300,6 +297,6 @@ Jsou k dispozici v sadě Visual Studio 2015 a starší [visualstudio.com/vs/olde
 
 ## <a name="additional-resources"></a>Další zdroje
 
-- [WFastCGI most mezi službou IIS a Python](https://pypi.python.org/pypi/wfastcgi) (python.org)
+- [WFastCGI most mezi službou IIS a Python](https://pypi.org/p/wfastcgi) (pypi.org)
 - [Volné kurzy Pythonu na webu Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
 - [Horní Python dotazy na Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

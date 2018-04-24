@@ -1,12 +1,9 @@
 ---
 title: Refaktoring kódu jazyka Python
 description: Jak na snadno refactor Python kódu v sadě Visual Studio přejmenováním identifikátory, extrahování metody, přidávání importech a odebírání nepoužívané importuje.
-ms.custom: ''
 ms.date: 07/12/2017
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 32d25159063930ba489bcc5fbb350a931c653d31
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bc06ba43261a90dcfe6677a73c8a267a7efdcb1c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="refactoring-python-code"></a>Refaktoring kódu jazyka Python
 

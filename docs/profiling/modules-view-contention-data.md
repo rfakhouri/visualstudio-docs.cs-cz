@@ -2,8 +2,7 @@
 title: Zobrazení modulů – Data kolizí | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d3377de12be205c2cab06f93ee707de0943de0f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 619e2a38c794a6823f7efcfb5606bd9fbe9f461c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---contention-data"></a>Zobrazení modulů – Data kolizí
 Moduly zobrazení dat kolizí zobrazí seskupené podle moduly, které byly v data profilování vzorků dat souběžnosti. Každý modul je kořenem hierarchickou stromovou strukturu. Funkce modulu došlo k kolizní události jsou uvedené pod uzlem modulu.  

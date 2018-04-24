@@ -1,8 +1,9 @@
 ---
-title: Na virtuálním počítači Azure pomocí sady Visual Studio | Microsoft Docs
+title: Pomocí sady Visual Studio na virtuální počítač Azure
 description: Další informace o použití sady Visual Studio na virtuální počítač Azure
 ms.date: 03/03/2018
 ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -14,26 +15,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a7e1a3646e2e30302548f2445b0ab657f8e3ec4
-ms.sourcegitcommit: efd8c8e0a9ba515d47efcc7bd370eaaf4771b5bb
+ms.openlocfilehash: f0c87d482c2bc7ad174f7074091767fb6127bf70
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a id="top"> </a> Visual Studio bitové kopie v Azure
+
 V předkonfigurovaných Azure virtuálního počítače (VM) pomocí sady Visual Studio je rychlý a snadný způsob, jak přechod od nic k prostředí vývoj nahoru a spuštěna. Bitové kopie systému s různými konfiguracemi sady Visual Studio jsou k dispozici v [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1).
 
 Nové do Azure? [Vytvořit bezplatný účet Azure](https://azure.microsoft.com/free).
 
 ## <a name="what-configurations-and-versions-are-available"></a>Jaké konfigurace a verzí jsou k dispozici?
+
 Bitové kopie pro nejnovější hlavní verze, Visual Studio 2017 a Visual Studio 2015, najdete v Azure Marketplace. Pro každou hlavní verzi uvidíte, původně vydaná verze (RTW) a nejnovější aktualizovaných verzí. Každý z těchto verzí nabízí Visual Studio Enterprise a edice Visual Studio Community. Tyto bitové kopie se aktualizovaly nejméně každý měsíc, aby obsahovaly nejnovější aktualizace Visual Studio a systému Windows. Při názvy imagí zůstávají stejné, obsahuje popis každé bitové kopie verze nainstalovaného produktu a datum "od" image.
 
 | Prodejní verze                                              | Edice                     |     Verze produktu     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017: Nejnovější (verze 15,6 operací)                    |    Enterprise, Community     |      Verze 15.6.4     |
-| Visual Studio 2017: Nejnovější verze Preview (verze 15.7 Preview 3) |    Enterprise, Community     |      Verze 15.7.0     |
-|         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Verze 15.0.10    |
-|   Visual Studio 2015: Nejnovější (Update 3)                      |    Enterprise, Community     |  Verze 14.0.25431.01  |
+| Visual Studio 2017: Nejnovější (verze 15,6 operací)                    |    Enterprise, komunity     |      Verze 15.6.4     |
+| Visual Studio 2017: Nejnovější verze Preview (verze 15.7 Preview 3) |    Enterprise, komunity     |      Verze 15.7.0     |
+|         Visual Studio 2017: RTW                              |    Enterprise, komunity     |      Verze 15.0.10    |
+|   Visual Studio 2015: Nejnovější (Update 3)                      |    Enterprise, komunity     |  Verze 14.0.25431.01  |
 |         Visual Studio 2015: RTW                              |             Žádné             | (Jeho platnost pro obsluhu) |
 
 > [!NOTE]
@@ -42,6 +45,7 @@ Bitové kopie pro nejnovější hlavní verze, Visual Studio 2017 a Visual Studi
 Další informace najdete v tématu [zásad údržby Visual Studio](/visualstudio/productinfo/vs-servicing-vs).
 
 ## <a name="what-features-are-installed"></a>Jaké funkce jsou nainstalovány?
+
 Každý image obsahuje funkci doporučené nastavení pro tento edicí sady Visual Studio. Obecně platí že instalační program obsahuje:
 
 * Všechny dostupné úlohy, včetně každé zatížení doporučená volitelné součásti
@@ -67,6 +71,7 @@ Jsme k instalaci sady Visual Studio, při vytváření bitové kopie použijte n
 Pokud obrázky neobsahují funkce sady Visual Studio, které budete potřebovat, poskytnout zpětnou vazbu prostřednictvím nástroje zpětné vazby v pravém horním rohu stránky.
 
 ## <a name="what-size-vm-should-i-choose"></a>Zvolte jakou velikost virtuálního počítače
+
 Azure nabízí celou řadu velikostí virtuálních počítačů. Protože Visual Studio je výkonný vícevláknové aplikace, budete chtít velikost virtuálního počítače, který obsahuje alespoň dva procesory a 7 GB paměti. Doporučujeme následující velikosti virtuálních počítačů pro bitové kopie sady Visual Studio:
 
    * Standard_D2_v3
@@ -82,6 +87,7 @@ Další informace o nejnovější velikosti počítačů najdete v tématu [veli
 S Azure můžete znovu vyvážit počáteční volbu změnou velikosti virtuálního počítače. Můžete zřídit nový virtuální počítač s více odpovídající velikost, nebo změnit velikost vašeho stávajícího virtuálního počítače na jiný základní hardware. Další informace najdete v tématu [změnit velikost virtuálního počítače Windows](/azure/virtual-machines/windows/resize-vm).
 
 ## <a name="after-the-vm-is-running-whats-next"></a>Jakmile je virtuální počítač spuštěný, co je další?
+
 Visual Studio odpovídá modelu "přineste vlastní licence" v Azure. Stejně jako u instalace na speciální hardware, jeden z první kroků je licencování instalace Visual Studia. Odemknout Visual Studio, buď:
 - Přihlaste se pomocí účtu Microsoft, který je spojen s předplatným Visual Studio
 - Odemknout Visual Studio s kódem product key, které byly dodány s počátečním nákupu
@@ -107,6 +113,7 @@ Další informace najdete v tématu [vytvořte bitovou kopii spravované zobecn�
 Kromě toho vývojářských úloh nebo technologie potřebovat další škálování, jako jsou typy konfigurací vývoj a konfigurací s více počítači. Azure DevTest Labs můžete použít k vytvoření _recepty_ který automatizovat vytváření vašeho "zlaté Image." DevTest Labs můžete také použít ke správě zásad pro virtuální počítače běžící vašeho týmu. [Pomocí Azure DevTest Labs pro vývojáře](/azure/devtest-lab/devtest-lab-developer-lab) je nejlepší zdroj pro další informace o DevTest Labs.
 
 ## <a name="next-steps"></a>Další kroky
+
 Teď, když víte o předkonfigurovaných bitové kopie sady Visual Studio, dalším krokem je vytvoření nového virtuálního počítače:
 
 * [Vytvoření virtuálního počítače prostřednictvím portálu Azure](/azure/virtual-machines/windows/quick-create-portal)

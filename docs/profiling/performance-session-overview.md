@@ -2,8 +2,7 @@
 title: Přehled výkonnostní relace | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, performance session
@@ -14,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0631838abf8ccea06661bbf381337d7aa62082d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="performance-session-overview"></a>Přehled výkonnostní relace
 Tento přehled popisuje základní informace o vytváření profilů. Vývojáři, kteří jsou pro nové pracovní výkonu zobrazí jak [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci mohou pomoci produktivitu rychle a zvýšit výkon svůj kód. Vývojáři, kteří mají zkušenosti v profilaci může získat přehled o konkrétní nástrojích pro profilaci funkce a procesy.  

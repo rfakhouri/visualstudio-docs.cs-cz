@@ -1,85 +1,83 @@
 ---
-title: Pokyny pro základní C++ upozornění | Microsoft Docs
-ms.custom: ''
+title: Pokyny pro základní C++ upozornění
 ms.date: 08/10/2017
 ms.topic: conceptual
 ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
 ms.author: mblome
-manager: douge
-ms.technology:
-- vs-ide-code-analysis
+manager: wpickett
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c7e5e9ee55785c1053a3d5c416529710b0b1c65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da68b1ea4783ca1bd35d29218960e1c616f7c32f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Pomocí kameny základní pokyny pro C++
 Základní pokyny C++ jsou přenosné sadu pokyny, pravidla a osvědčené postupy o kódování v jazyce C++ vytvořené odborníky C++ a návrháři. Visual Studio aktuálně podporuje podmnožinu tato pravidla v rámci jeho nástrojů pro analýzu kódu pro jazyk C++. Kameny platí základní jsou nainstalované ve výchozím nastavení v Visual Studio 2017 a [k dispozici jako balíčku NuGet pro Visual Studio 2015](#vs2015_corecheck).
-  
-## <a name="the-c-core-guidelines-project"></a>Pokyny k projektu C++ jádra  
- Vytvoření Bjarnem Stroustrupem a jinými uživateli pokyny základní C++ jsou návod, jak bezpečně a efektivně pomocí moderní verze jazyka C++. Podle pokynů zdůraznil statického typu zabezpečení a zabezpečení prostředků. Identifikovat způsoby, jak vyloučit nebo minimalizovat části nejvíce náchylné jazyka a navrhněte postupy, aby byl váš kód jednodušší a další původce spolehlivé způsobem. Tyto pokyny jsou zachována ve standardní C++ Foundation. Další informace najdete v dokumentaci [C++ základní pokyny](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)a přístup k souborům projektu C++ základní pokyny dokumentace [Githubu](https://github.com/isocpp/CppCoreGuidelines).  
-  
-## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Povolit podle pokynů zkontrolujte základní C++ v analýza kódu  
- Analýza kódu v projektu můžete povolit výběrem **povolit analýza kódu při sestavování** zaškrtnout políčko **analýza kódu** části **stránky vlastností** dialogové okno pro váš projekt.  
-  
- ![Stránka vlastností pro nastavení obecné analýzy kódu](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")  
-  
- Zkontrolujte základní C++ pravidla jsou rozšíření sad výchozí pravidlo, které spustit, když je povolena analýza kódu. Protože C++ základní zkontrolujte pravidla jsou ve vývoji, některá pravidla jsou dobře známou a některé nemusí být připraven k použití na všechny kód, ale stále může být informativní. Pravidla jsou rozděleny do dvou skupin: bylo uvolněno a experimentální. Můžete zvolit, jestli se má spustit vydaná nebo experimentální pravidla ve vlastnostech projektu.  
-  
- ![Stránka vlastností pro nastavení rozšíření analýzy kódu](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
-  
- Chcete-li povolit nebo zakázat sady pravidel C++ zkontrolujte jádra, otevřete **stránky vlastností** dialogové okno pro váš projekt. V části **vlastnosti konfigurace**, rozbalte položku **analýza kódu**, **rozšíření**. V rozevírací nabídce řízení vedle **povolit C++ základní zkontrolujte (vydané)** nebo **povolit C++ základní zkontrolujte (experimentální)**, zvolte **Ano** nebo **ne**. Zvolte **OK** nebo **použít** uložte provedené změny.  
-  
-## <a name="examples"></a>Příklady  
- Tady je příklad některých problémů, které můžete najít C++ základní zkontrolujte pravidla:  
-  
-```cpp  
-// CoreCheckExample.cpp  
-// Add CppCoreCheck package and enable code analysis in build for warnings.  
-  
-int main()  
-{  
-    int arr[10];           // warning C26494  
-    int* p = arr;          // warning C26485  
-  
-    [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1  
-    {  
-        int* q = p + 1;    // warning C26481 (suppressed)  
-        p = q++;           // warning C26481 (suppressed)  
-    }  
-  
-    return 0;  
-}  
-```  
-  
- Tento příklad ukazuje několik upozornění, které můžete najít C++ základní zkontrolujte pravidla:  
-  
--   C26494 je pravidlo Type.5: vždy inicializovat objekt.  
-  
--   C26485 je pravidlo Bounds.3: decay žádné pole ukazatele.  
-  
--   C26481 je pravidlo Bounds.1: Nepoužívejte aritmetika ukazatele. Místo nich se používá `span`.  
-  
- Pokud sady pravidel C++ základní zkontrolujte analýzy kódu nainstalované a povolené při kompilaci tento kód, první dva upozornění jsou výstupem, ale třetí potlačeno. Toto je výstup sestavení z ukázkového kódu:  
-  
+
+## <a name="the-c-core-guidelines-project"></a>Pokyny k projektu C++ jádra
+ Vytvoření Bjarnem Stroustrupem a jinými uživateli pokyny základní C++ jsou návod, jak bezpečně a efektivně pomocí moderní verze jazyka C++. Podle pokynů zdůraznil statického typu zabezpečení a zabezpečení prostředků. Identifikovat způsoby, jak vyloučit nebo minimalizovat části nejvíce náchylné jazyka a navrhněte postupy, aby byl váš kód jednodušší a další původce spolehlivé způsobem. Tyto pokyny jsou zachována ve standardní C++ Foundation. Další informace najdete v dokumentaci [C++ základní pokyny](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)a přístup k souborům projektu C++ základní pokyny dokumentace [Githubu](https://github.com/isocpp/CppCoreGuidelines).
+
+## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Povolit podle pokynů zkontrolujte základní C++ v analýza kódu
+ Analýza kódu v projektu můžete povolit výběrem **povolit analýza kódu při sestavování** zaškrtnout políčko **analýza kódu** části **stránky vlastností** dialogové okno pro váš projekt.
+
+ ![Stránka vlastností pro nastavení obecné analýzy kódu](../code-quality/media/cppcorecheck_codeanalysis_general.png "CPPCoreCheck_CodeAnalysis_General")
+
+ Zkontrolujte základní C++ pravidla jsou rozšíření sad výchozí pravidlo, které spustit, když je povolena analýza kódu. Protože C++ základní zkontrolujte pravidla jsou ve vývoji, některá pravidla jsou dobře známou a některé nemusí být připraven k použití na všechny kód, ale stále může být informativní. Pravidla jsou rozděleny do dvou skupin: bylo uvolněno a experimentální. Můžete zvolit, jestli se má spustit vydaná nebo experimentální pravidla ve vlastnostech projektu.
+
+ ![Stránka vlastností pro nastavení rozšíření analýzy kódu](../code-quality/media/cppcorecheck_codeanalysis_extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")
+
+ Chcete-li povolit nebo zakázat sady pravidel C++ zkontrolujte jádra, otevřete **stránky vlastností** dialogové okno pro váš projekt. V části **vlastnosti konfigurace**, rozbalte položku **analýza kódu**, **rozšíření**. V rozevírací nabídce řízení vedle **povolit C++ základní zkontrolujte (vydané)** nebo **povolit C++ základní zkontrolujte (experimentální)**, zvolte **Ano** nebo **ne**. Zvolte **OK** nebo **použít** uložte provedené změny.
+
+## <a name="examples"></a>Příklady
+ Tady je příklad některých problémů, které můžete najít C++ základní zkontrolujte pravidla:
+
+```cpp
+// CoreCheckExample.cpp
+// Add CppCoreCheck package and enable code analysis in build for warnings.
+
+int main()
+{
+    int arr[10];           // warning C26494
+    int* p = arr;          // warning C26485
+
+    [[gsl::suppress(bounds.1)]] // This attribute suppresses Bounds rule #1
+    {
+        int* q = p + 1;    // warning C26481 (suppressed)
+        p = q++;           // warning C26481 (suppressed)
+    }
+
+    return 0;
+}
+```
+
+ Tento příklad ukazuje několik upozornění, které můžete najít C++ základní zkontrolujte pravidla:
+
+-   C26494 je pravidlo Type.5: vždy inicializovat objekt.
+
+-   C26485 je pravidlo Bounds.3: decay žádné pole ukazatele.
+
+-   C26481 je pravidlo Bounds.1: Nepoužívejte aritmetika ukazatele. Místo nich se používá `span`.
+
+ Pokud sady pravidel C++ základní zkontrolujte analýzy kódu nainstalované a povolené při kompilaci tento kód, první dva upozornění jsou výstupem, ale třetí potlačeno. Toto je výstup sestavení z ukázkového kódu:
+
 ```Output
-1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------  
-1>  CoreCheckExample.cpp  
-1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.exe  
-1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)  
-c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(6): warning C26494: Variable 'arr' is uninitialized. Always initialize an object. (type.5: http://go.microsoft.com/fwlink/p/?LinkID=620421)  
-c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(7): warning C26485: Expression 'arr': No array to pointer decay. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)  
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========  
-```  
-  
-Pokyny pro základní C++ existují můžete napsat kód, lepší a bezpečnější. Pokud máte instanci, kde by neměl použito pravidlo nebo profil, je však snadno potlačit přímo v kódu. Můžete použít `gsl::suppress` atribut zachovat C++ základní zkontrolujte ze zjišťování a vytváření sestav nedodržení pravidla v následující blok kódu. Můžete označit jednotlivé příkazy k potlačení specifická pravidla. Celý rozsah profilu můžete potlačit i napsáním `[[gsl::suppress(bounds)]]` bez zahrnutí číslo konkrétní pravidlo.  
+1>------ Build started: Project: CoreCheckExample, Configuration: Debug Win32 ------
+1>  CoreCheckExample.cpp
+1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.exe
+1>  CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\Projects\CoreCheckExample\Debug\CoreCheckExample.pdb (Full PDB)
+c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(6): warning C26494: Variable 'arr' is uninitialized. Always initialize an object. (type.5: http://go.microsoft.com/fwlink/p/?LinkID=620421)
+c:\users\username\documents\visual studio 2015\projects\corecheckexample\corecheckexample\corecheckexample.cpp(7): warning C26485: Expression 'arr': No array to pointer decay. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+```
+
+Pokyny pro základní C++ existují můžete napsat kód, lepší a bezpečnější. Pokud máte instanci, kde by neměl použito pravidlo nebo profil, je však snadno potlačit přímo v kódu. Můžete použít `gsl::suppress` atribut zachovat C++ základní zkontrolujte ze zjišťování a vytváření sestav nedodržení pravidla v následující blok kódu. Můžete označit jednotlivé příkazy k potlačení specifická pravidla. Celý rozsah profilu můžete potlačit i napsáním `[[gsl::suppress(bounds)]]` bez zahrnutí číslo konkrétní pravidlo.
 
 ## <a name="supported-rule-sets"></a>Podporované sady pravidel
-Při přidávání nové pravidel pro kontrolu C++ základní pokyny, může zvýšit počet upozornění, které jsou vytvářeny pro existující kód. Sady předdefinovaných pravidel můžete použít k filtrování které typy pravidel se povolit. Od verze Visual Studio 2017 verze 15.3 sady podporované pravidel jsou: 
+Při přidávání nové pravidel pro kontrolu C++ základní pokyny, může zvýšit počet upozornění, které jsou vytvářeny pro existující kód. Sady předdefinovaných pravidel můžete použít k filtrování které typy pravidel se povolit. Od verze Visual Studio 2017 verze 15.3 sady podporované pravidel jsou:
   - **Vlastník ukazatel pravidla** vynutit [Správa prostředků kontroluje související s vlastníka<T> od základní pokynů C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
   - **Const pravidla** vynutit [související const kontroly od základní pokynů C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
@@ -126,8 +124,8 @@ Může sloužit k potlačení upozornění na výrazu a příkazy bloku uvnitř 
 
 // Supress all warnings from the 'r' rule group (resource management) in block.
 [[gsl::suppress(r)]]
-{ 
-    new int; 
+{
+    new int;
 }
 
 // Suppress only one specific warning number.
@@ -138,11 +136,11 @@ Může sloužit k potlačení upozornění na výrazu a příkazy bloku uvnitř 
 {
     int *p = new int;
 }
-```  
+```
 
 ## <a name="suppressing-analysis-by-using-command-line-options"></a>Potlačení analysis pomocí možnosti příkazového řádku
  Místo #pragmas můžete použít možnosti příkazového řádku na stránce vlastností souboru k potlačení upozornění pro projekt nebo jeden soubor. Chcete-li například zakázat upozornění 26400 pro soubor:
- 
+
  1) Pravým tlačítkem na soubor v **Průzkumníku řešení**
 
  2) Zvolte **vlastnosti | C / C++ | Příkazový řádek**
@@ -213,25 +211,25 @@ Musíte používat správné parametry příkazového řádku pro kompilátor a 
 
 
 
-## <a name="use-the-guideline-support-library"></a>V knihovně obecné zásady podpory  
+## <a name="use-the-guideline-support-library"></a>V knihovně obecné zásady podpory
  Knihovna podpory platí usnadňuje postupujte podle pokynů jádra. GSL obsahuje definice, které umožňují náchylné konstrukce nahraďte bezpečnějších alternativ. Například můžete nahradit `T*, length` pár parametrů s `span<T>` typu. Je k dispozici na GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). Knihovny je open source, takže můžete zobrazit zdroje, zadávání komentářů nebo přispívat. Projekt naleznete na adrese [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Postupujte podle pokynů zkontrolujte základní C++ v projektech Visual Studio 2015  
-  Pokud používáte Visual Studio 2015, sad pravidel C++ základní zkontrolujte analýzy kódu ve výchozím nastavení nenainstalují. Než můžete povolit C++ základní zkontrolujte nástrojů pro analýzu kódu v sadě Visual Studio 2015, musíte provést další kroky. Společnost Microsoft poskytuje podporu pro projekty Visual Studio 2015 pomocí balíčku Nuget. Balíček je s názvem Microsoft.CppCoreCheck a je k dispozici na [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Tento balíček vyžaduje, že abyste měli aspoň nainstalovanou sadu Visual Studio 2015 s Update 1.  
-  
- Balíček nainstaluje taky jiný balíček jako závislost, pouze záhlaví platí podpora knihovny (GSL). GSL je také k dispozici na webu GitHub na [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).  
+ ## <a name="vs2015_corecheck"></a> Postupujte podle pokynů zkontrolujte základní C++ v projektech Visual Studio 2015
+  Pokud používáte Visual Studio 2015, sad pravidel C++ základní zkontrolujte analýzy kódu ve výchozím nastavení nenainstalují. Než můžete povolit C++ základní zkontrolujte nástrojů pro analýzu kódu v sadě Visual Studio 2015, musíte provést další kroky. Společnost Microsoft poskytuje podporu pro projekty Visual Studio 2015 pomocí balíčku Nuget. Balíček je s názvem Microsoft.CppCoreCheck a je k dispozici na [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Tento balíček vyžaduje, že abyste měli aspoň nainstalovanou sadu Visual Studio 2015 s Update 1.
 
- Kvůli způsobu, kterým jsou načtena pravidel analýzy kódu je nutné nainstalovat balíček Microsoft.CppCoreCheck NuGet do každého projektu C++, který chcete zkontrolovat v sadě Visual Studio 2015.  
-  
-#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Chcete-li přidat balíček Microsoft.CppCoreCheck do projektu v sadě Visual Studio 2015  
-  
-1.  V **Průzkumníku**, klikněte pravým tlačítkem na otevření místní nabídky projektu v řešení, které chcete přidat balíček do. Zvolte **spravovat balíčky NuGet** otevřete **Správce balíčků NuGet**.  
-  
-2.  V **Správce balíčků NuGet** vyhledejte Microsoft.CppCoreCheck.  
-  
-     ![Okno Správce balíčků Nuget ukazuje CppCoreCheck balíček](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")  
-  
-3.  Vyberte balíček Microsoft.CppCoreCheck a potom zvolte **nainstalovat** tlačítko Přidat pravidla do projektu.  
-  
- Další soubor .targets MSBuild přidává balíček NuGet do projektu, která je volána, pokud povolíte analýza kódu v projektu. Tento soubor .targets přidá C++ základní zkontrolujte pravidla jako další rozšíření pro nástroj pro analýzu kódu sadě Visual Studio. Když je balíček nainstalován, můžete k povolení nebo zakázání pravidla vydaná a experimentální dialogové okno stránky vlastností.  
-  
+ Balíček nainstaluje taky jiný balíček jako závislost, pouze záhlaví platí podpora knihovny (GSL). GSL je také k dispozici na webu GitHub na [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+ Kvůli způsobu, kterým jsou načtena pravidel analýzy kódu je nutné nainstalovat balíček Microsoft.CppCoreCheck NuGet do každého projektu C++, který chcete zkontrolovat v sadě Visual Studio 2015.
+
+#### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Chcete-li přidat balíček Microsoft.CppCoreCheck do projektu v sadě Visual Studio 2015
+
+1.  V **Průzkumníku**, klikněte pravým tlačítkem na otevření místní nabídky projektu v řešení, které chcete přidat balíček do. Zvolte **spravovat balíčky NuGet** otevřete **Správce balíčků NuGet**.
+
+2.  V **Správce balíčků NuGet** vyhledejte Microsoft.CppCoreCheck.
+
+     ![Okno Správce balíčků Nuget ukazuje CppCoreCheck balíček](../code-quality/media/cppcorecheck_nuget_window.PNG "CPPCoreCheck_Nuget_Window")
+
+3.  Vyberte balíček Microsoft.CppCoreCheck a potom zvolte **nainstalovat** tlačítko Přidat pravidla do projektu.
+
+ Další soubor .targets MSBuild přidává balíček NuGet do projektu, která je volána, pokud povolíte analýza kódu v projektu. Tento soubor .targets přidá C++ základní zkontrolujte pravidla jako další rozšíření pro nástroj pro analýzu kódu sadě Visual Studio. Když je balíček nainstalován, můžete k povolení nebo zakázání pravidla vydaná a experimentální dialogové okno stránky vlastností.
+

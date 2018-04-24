@@ -1,23 +1,22 @@
 ---
-title: Visual Studio 2017 čísla sestavení a dat vydání | Microsoft Docs
+title: Visual Studio 2017 čísla sestavení a verze kalendářních dat
 description: Seznam vydaných verzí a čísla sestavení pro Visual Studio 2017, seřazený podle data.
 keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 04/10/2018
+ms.date: 04/18/2018
 ms.topic: reference
 helpviewer_keywords: ''
-ms.technology:
-- vs-acquisition
-ms.service: ''
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.workload:
 - multiple
-ms.openlocfilehash: 1874ab8f88f87546ceef12432e93ba03a65ad496
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f24a293e3efe40f2003bf0ba993f7896d2d93c52
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-2017-build-numbers-and-release-dates"></a>Visual Studio 2017 čísla sestavení a verze kalendářních dat
 
@@ -25,7 +24,9 @@ Následující tabulka uvádí kalendářních dat pro čísla a uvolnění sest
 
 | **Verze**| **Kanál** | **Datum vydání** | **Verze sestavení** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
-| 15.6.6 | Vydaná verze | 10. dubna 2018 | 15.6.27428.2037 | 
+| 15.7.0 náhled 4.0 | Náhled | 18. dubna 2018 | 15.7.27617.1 |
+| 15.6.6 | Vydaná verze | 10. dubna 2018 | 15.6.27428.2037 |
+| 15.0.12 | Vydaná verze | 10. dubna 2018 | 15.0.26228.30 |
 | 15.7.0 preview 3.0 | Náhled | 9 duben 2018 | 15.7.27604.0 |
 | 15.6.5 | Vydaná verze | 4. dubna 2018 | 15.6.27428.2027 |
 | 15.6.4 | Vydaná verze | 22. března 2018 | 15.6.27428.2015 |
@@ -126,8 +127,8 @@ Tady je několik další možnosti podpory:
 
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
 

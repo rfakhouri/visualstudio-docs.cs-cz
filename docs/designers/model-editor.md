@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ea9217e0b7025c2c802d1a632e16ca30d99336a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e7a388f14040cedd7fd05fd7ffdbb47ba7a8ff09
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="model-editor"></a>Editor modelu
 
 Tento dokument popisuje, jak pracovat s editoru Visual Studio modelu zobrazení, vytvoření a změna 3D modelů.
 
-Editor modelů můžete použít k vytvoření základních 3D modelů od začátku nebo k zobrazení a úpravám složitějších 3D modelů, které byly vytvořeny pomocí plnohodnotných nástrojů pro 3D modelování. Editor modelů podporuje několik formátů 3D modelů, které jsou používány při vývoji aplikace v rozhraní DirectX.
+Pomocí editoru Model pro vytvoření základní 3D modely od začátku, nebo zobrazovat a upravovat složitější 3D modely, které byly vytvořeny pomocí plné 3D modelování nástroje. Editor modelu podporuje několik 3D modelu formáty, které se používají v DirectX vývoj aplikací.
 
 ## <a name="supported-formats"></a>Podporované formáty
 
@@ -38,7 +38,7 @@ Editor modelu podporuje tyto formáty modelu:
 
 Tato část popisuje postup přidání 3D modelu do projektu sady Visual Studio a poskytuje základní informace, které potřebujete, abyste mohli začít.
 
-### <a name="to-add-a-3-d-model-to-your-project"></a>Přidání 3D modelu do projektu
+### <a name="to-add-a-3d-model-to-your-project"></a>Chcete-li přidat 3D modelu do projektu
 
 1. V **Průzkumníku řešení**, otevřete místní nabídku pro projekt, který chcete přidat do a potom vyberte **přidat** > **novou položku**.
 
@@ -59,17 +59,17 @@ Tato část popisuje postup přidání 3D modelu do projektu sady Visual Studio 
 
 Visual Studio podporuje každých orientaci 3D osy a načte informace orientace osy z modelu formáty souborů, které ji podporují. Pokud není zadaný žádný orientace osy, Visual Studio použije ve výchozím nastavení pravou rukou souřadnicový systém. **Osy indikátor** se zobrazí aktuální orientace osy v pravém horním rohu na návrhovou plochu. Na **indikátor osy**, red představuje osy x, zelená představuje osy y a blue představuje osy z.
 
-### <a name="begin-your-3-d-model"></a>Začněte 3D modelu
+### <a name="begin-your-3d-model"></a>Začněte 3D modelu
 
 V editoru modelu každý nový objekt začne vždy jako jednu ze základních tvarů 3D – nebo *primitiv*– které jsou integrovány do editoru modelu. Chcete-li vytvořit nové a jedinečné objekty, přidáte ke scéně primitiv a změníte jeho tvar úpravou vrcholů. U složitých tvarů přidáte další vrcholy pomocí vysunutí nebo dílčího dělení a následnou úpravou. Informace o tom, jak přidat primitivní objekt do vaší scény najdete v tématu [vytváření a import 3D objekty](#Adding3DObjects). Informace o tom, jak přidat další vrcholy k objektu, najdete v tématu [úprav objektů](#ModifyingObjects).
 
 ## <a name="work-with-the-model-editor"></a>Práce s editorem modelu
 
-Následující části popisují způsob použití editoru modelů pro práci s 3D modely.
+Následující části popisují způsob použití editoru modelu pro práci s 3D modelů.
 
 ### <a name="model-editor-toolbars"></a>Panely nástrojů editoru modelů
 
-Panely nástrojů Editoru modelů obsahují příkazy, které vám pomohou pracovat se 3D modely.
+Editor modelu panely nástrojů obsahovat příkazy, snadněji tak, se kterými můžete pracovat 3D modelů.
 
 Příkazy, které ovlivňují stav Editor modelu jsou umístěny na **modelu Editor režimu** panelu nástrojů v hlavním okně Visual Studio. Nástroje pro modelování a skriptované příkazy jsou umístěny na **modelu Editor** panelu nástrojů na návrhovou plochu Editor modelu.
 
@@ -82,7 +82,7 @@ Tato tabulka popisuje položky na **modelu Editor režimu** nástrojů, které j
 |Položka na panelu nástrojů|Popis|
 |------------------|-----------------|
 |**Vyberte**|Umožňuje výběr bodů, okrajů, ploch nebo objektů ve scéně podle aktivního režimu výběru.|
-|**Posouvání**|Umožňuje pohyb 3D scény relativně k rámu okna. K posouvání vyberte bod ve scéně a pohybujte jím.<br /><br /> V **vyberte** režimu, stiskněte a podržte klávesu Ctrl k aktivaci **Panoramování** dočasně režimu.|
+|**Posouvání**|Umožňuje přesun 3D scény relativně k rámce okna. K posouvání vyberte bod ve scéně a pohybujte jím.<br /><br /> V **vyberte** režimu, stiskněte a podržte klávesu Ctrl k aktivaci **Panoramování** dočasně režimu.|
 |**Přiblížení**|Umožňuje zobrazení více či méně detailů scény relativně k rámu okna. V **zvětšení** režimu, vyberte bod v scény a pak přesunout doprava dolů na přiblížit nebo doleva nebo až přiblížení out.<br /><br /> V **vyberte** režimu, můžete zvětšit nebo zmenšit pomocí kolečka myši, stiskněte a podržte klávesu Ctrl.|
 |**Obíhání**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:** tento režim neobsahuje žádné ovlivňuje při **pravoúhlé** projekce je povoleno.|
 |**Místní World**|Pokud je tato položka povolena, transformace na vybraném objektu pobíhají v globálním prostoru. Jinak transformace na vybraném objektu probíhají v místním prostoru.|
@@ -99,7 +99,7 @@ Tato tabulka popisuje položky na **modelu Editor režimu** nástrojů, které j
 |**Panel nástrojů**|Případně zobrazí nebo skryje **sada nástrojů**.|
 |**Osnova dokumentu**|Případně zobrazí nebo skryje **Osnova dokumentu** okno.|
 |**Vlastnosti**|Případně zobrazí nebo skryje **vlastnosti** okno.|
-|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Moduly grafiky**<br /><br /> **Vykreslení s D3D11**<br /> Používá rozhraní Direct3D 11 k vykreslení plochy návrhu editoru modelů.<br /><br /> **Vykreslení s D3D11WARP**<br /> Používá rozhraní Direct3D 11 WARP (Windows Advanced Rasterization Platform) k vykreslení plochy návrhu editoru modelů.<br /><br /> **Scény správy**<br /><br /> **Import**<br /> Importuje objekty z jiného souboru 3D modelu do aktuální scény.<br /><br /> **Připojení k nadřazené**<br /> Určí první z více vybraných objektů jako nadřazený objekt zbývajících vybraných objektů.<br /><br /> **Odpojení od nadřazeného**<br /> Odpojí vybraný objekt od nadřazeného objektu. Vybraný objekt stane *kořenový objekt* v scény. Kořenový objekt nemá nadřazený objekt.<br /><br /> **Vytvoření skupiny**<br /> Seskupí vybrané objekty na stejné úrovni.<br /><br /> **Merge – objekty**<br /> Kombinuje vybrané objekty do jednoho objektu.<br /><br /> **Vytvořit nový objekt z výběru mnohoúhelníku**<br /> Odebere vybrané plochy z aktuálního objektu a přidá na scénu nový objekt, který tyto plochy obsahuje.<br /><br /> **Nástroje**<br /><br /> **Překlopit zrušení mnohoúhelníku**<br /> Převrátí vybrané mnohoúhelníky tak, že jejich pořadí obtáčení a normála povrchu se převrátí.<br /><br /> **Odeberte všechny animace**<br /> Odebere data animace z objektů.<br /><br /> **Triangulovat**<br /> Převede vybraný objekt na trojúhelníky.<br /><br /> **Zobrazení**<br /><br /> Odstranění odvrácených stran<br /> Povolí nebo zakáže odstranění odvrácených stran.<br /><br /> **Obnovovací frekvence**<br /> Zobrazí frekvenci snímků v pravém horním rohu plochy návrhu. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu.<br /><br /> Tato možnost je užitečná, když povolíte **režimu vykreslování v reálném čase** možnost.<br /><br /> **Zobrazit vše**<br /> Zobrazí všechny objekty ve scéně. To obnoví **Hidden** vlastnosti každého objektu na **False**.<br /><br /> **Zobrazit vzhled normál**<br /> Zobrazí normály pro každou plochu.<br /><br /> **Zobrazit chybí materiály**<br /> Zobrazí speciální texturu u objektů, ke kterým není přiřazen materiál.<br /><br /> **Zobrazit Pivot**<br /> Povolí nebo zakáže zobrazení značky na osách 3D v bodě otáčení aktivního výběru.<br /><br /> **Zobrazit zástupný symbol uzly**<br /> Zobrazí zástupné uzly. Zástupný uzel je vytvořen při seskupení objektů.<br /><br /> **Zobrazit kolmice**<br /> Zobrazí normálu každého vrcholu. **Tip:** můžete **skripty** tlačítko Poslední skript znovu spustit.|
+|**Pokročilé**|Obsahuje pokročilé příkazy a možnosti.<br /><br /> **Moduly grafiky**<br /><br /> **Vykreslení s D3D11**<br /> Používá rozhraní Direct3D 11 k vykreslení plochy návrhu editoru modelů.<br /><br /> **Vykreslení s D3D11WARP**<br /> Používá rozhraní Direct3D 11 WARP (Windows Advanced Rasterization Platform) k vykreslení plochy návrhu editoru modelů.<br /><br /> **Scény správy**<br /><br /> **Import**<br /> Importuje objekty z jiného souboru 3D modelu aktuální scény.<br /><br /> **Připojení k nadřazené**<br /> Určí první z více vybraných objektů jako nadřazený objekt zbývajících vybraných objektů.<br /><br /> **Odpojení od nadřazeného**<br /> Odpojí vybraný objekt od nadřazeného objektu. Vybraný objekt stane *kořenový objekt* v scény. Kořenový objekt nemá nadřazený objekt.<br /><br /> **Vytvoření skupiny**<br /> Seskupí vybrané objekty na stejné úrovni.<br /><br /> **Merge – objekty**<br /> Kombinuje vybrané objekty do jednoho objektu.<br /><br /> **Vytvořit nový objekt z výběru mnohoúhelníku**<br /> Odebere vybrané plochy z aktuálního objektu a přidá na scénu nový objekt, který tyto plochy obsahuje.<br /><br /> **Nástroje**<br /><br /> **Překlopit zrušení mnohoúhelníku**<br /> Převrátí vybrané mnohoúhelníky tak, že jejich pořadí obtáčení a normála povrchu se převrátí.<br /><br /> **Odeberte všechny animace**<br /> Odebere data animace z objektů.<br /><br /> **Triangulovat**<br /> Převede vybraný objekt na trojúhelníky.<br /><br /> **Zobrazení**<br /><br /> Odstranění odvrácených stran<br /> Povolí nebo zakáže odstranění odvrácených stran.<br /><br /> **Obnovovací frekvence**<br /> Zobrazí frekvenci snímků v pravém horním rohu plochy návrhu. Frekvence snímků je počet snímků, které jsou zpracovány za sekundu.<br /><br /> Tato možnost je užitečná, když povolíte **režimu vykreslování v reálném čase** možnost.<br /><br /> **Zobrazit vše**<br /> Zobrazí všechny objekty ve scéně. To obnoví **Hidden** vlastnosti každého objektu na **False**.<br /><br /> **Zobrazit vzhled normál**<br /> Zobrazí normály pro každou plochu.<br /><br /> **Zobrazit chybí materiály**<br /> Zobrazí speciální texturu u objektů, ke kterým není přiřazen materiál.<br /><br /> **Zobrazit Pivot**<br /> Povolí nebo zakáže zobrazení značku 3D osy v okamžiku pivot active výběru.<br /><br /> **Zobrazit zástupný symbol uzly**<br /> Zobrazí zástupné uzly. Zástupný uzel je vytvořen při seskupení objektů.<br /><br /> **Zobrazit kolmice**<br /> Zobrazí normálu každého vrcholu. **Tip:** můžete **skripty** tlačítko Poslední skript znovu spustit.|
 
 Tady je **modelu Editor** nástrojů:
 
@@ -121,13 +121,13 @@ Následující tabulka popisuje položky na **modelu Editor** nástrojů, které
 
 ### <a name="control-the-view"></a>Ovládací prvek zobrazení
 
-3D scéna je vykreslena podle zobrazení, které si lze představit jako virtuální fotoaparát obsahující umístění a orientaci. Chcete-li změnit umístění a orientace, použijte ovládací prvky zobrazení na **modelu Editor režimu** panelu nástrojů.
+3D scény vykreslením podle zobrazení, která lze považovat za virtuální fotoaparát, který se má pozice a byla určena její orientace. Chcete-li změnit umístění a orientace, použijte ovládací prvky zobrazení na **modelu Editor režimu** panelu nástrojů.
 
 Následující tabulka popisuje primární ovládací prvky zobrazení.
 
 |Ovládací prvek zobrazení|Popis|
 |------------------|-----------------|
-|**Posouvání**|Umožňuje pohyb 3D scény relativně k rámu okna. K posouvání vyberte bod ve scéně a pohybujte jím.<br /><br /> V **vyberte** režimu, stiskněte a podržte klávesu Ctrl k aktivaci **Panoramování** dočasně režimu.|
+|**Posouvání**|Umožňuje přesun 3D scény relativně k rámce okna. K posouvání vyberte bod ve scéně a pohybujte jím.<br /><br /> V **vyberte** režimu, stiskněte a podržte klávesu Ctrl k aktivaci **Panoramování** dočasně režimu.|
 |**Přiblížení**|Umožňuje zobrazení více či méně detailů scény relativně k rámu okna. V **zvětšení** režimu, vyberte bod v scény a pak přesunout doprava dolů na přiblížit nebo doleva nebo až přiblížení out.<br /><br /> V **vyberte** režimu, můžete zvětšit nebo zmenšit pomocí kolečka myši, stiskněte a podržte klávesu Ctrl.|
 |**Obíhání**|Umístí zobrazení na kruhovou dráhu okolo vybraného objektu. Pokud není vybrán žádný objekt, středem trasy je počátek scény. **Poznámka:** tento režim neobsahuje žádné ovlivňuje při **pravoúhlé** projekce je povoleno.|
 |**Objekt rámce**|Orámuje vybraný objekt, aby se nacházel ve středu zobrazení.|
@@ -139,13 +139,13 @@ Zobrazení je vytvořeno virtuálním fotoaparátem, ale je také definováno pr
 |**Perspektivy**|V perspektivní projekci se objekty více vzdálené od bodu pozorování zdají být menší a sbíhají se k jednomu vzdálenému bodu.|
 |**Pravoúhlé**|V pravoúhlé projekci se objekty jeví jako stejně velké bez ohledu na jejich vzdálenost od bodu pozorování. Není zobrazena žádná konvergence. Když **pravoúhlé** projekce povoleno, nelze použít **obíhání** režimu na pozici zobrazení libovolně.|
 
-Může být užitečné zobrazit 3D scénu ze známého umístění a úhlu, například když chcete porovnat dvě podobné scény. V tomto scénáři editor modelů poskytuje několik předdefinovaných zobrazení. Používání předdefinovaných zobrazení, v **modelu Editor režimu** nástrojů vyberte **zobrazení**a potom zvolte předdefinovaných zobrazení, které chcete – přední zpět, vlevo, vpravo, nahoru nebo dolů. V těchto zobrazeních virtuální kamera snímá přímo počátek scény. Například pokud se rozhodnete **zobrazení horní**, kamera virtuální vypadá v původu scény z přímo nad ním.
+Vám může být užitečné k zobrazení 3D scény ze známé pozice a úhlu, například pokud chcete k porovnání dvou podobné scény. V tomto scénáři editor modelů poskytuje několik předdefinovaných zobrazení. Používání předdefinovaných zobrazení, v **modelu Editor režimu** nástrojů vyberte **zobrazení**a potom zvolte předdefinovaných zobrazení, které chcete – přední zpět, vlevo, vpravo, nahoru nebo dolů. V těchto zobrazeních virtuální kamera snímá přímo počátek scény. Například pokud se rozhodnete **zobrazení horní**, kamera virtuální vypadá v původu scény z přímo nad ním.
 
 ### <a name="view-additional-geometry-details"></a>Zobrazit podrobnosti o další geometrie
 
-Pro lepší pochopení 3D objektu nebo scény můžete zobrazit další podrobnosti geometrie, jako jsou normály pro každý vrchol, normály pro každou plochu, body otáčení aktivního výběru a další podrobnosti. Chcete povolit nebo zakázat, na **modelu Editor** nástrojů vyberte **skripty**, **zobrazení**a potom vyberte ten, který chcete.
+Abyste lépe pochopili 3D objekt nebo scény, můžete zobrazit podrobnosti o další geometrie například-za kolmice, normály za vzhled, pivot body aktivní výběr a další podrobnosti. Chcete povolit nebo zakázat, na **modelu Editor** nástrojů vyberte **skripty**, **zobrazení**a potom vyberte ten, který chcete.
 
-### <a name="create-and-import-3-d-objects"></a>Vytvoření a import 3D objektů
+### <a name="create-and-import-3d-objects"></a>Vytvoření a import 3D objektů
 
 Přidání předdefinovaný tvar 3D scény, v **sada nástrojů**, vyberte příslušnou možnost, chcete a poté ho přesuňte na plochu návrháře. Nové tvary jsou umístěny v počátku scény. Nabízí Editor modelu sedm tvarů: **kuželový**, **datové krychle**, **cylindr**, **disk**, **roviny**,  **Oblasti**, a **Teapot**.
 
@@ -192,7 +192,7 @@ Překlad a otočení může dojít v buď místní systém souřadnic (nebo *mí
 
 ### <a name="modify-objects"></a>Změnit objekty
 
-Tvar 3D objektu můžete změnit přesunutím nebo odstraněním jeho vrcholů, hran a ploch. Editor modelu je ve výchozím nastavení v *objekt režimu*, takže můžete vybrat a transformace celé objekty. Pokud chcete vybrat body, okraje nebo plochy, zvolte příslušný režim výběru. Na **modelu Editor režimu** nástrojů vyberte **režimy výběru**a potom zvolte režim, který chcete.
+Tvar 3D objektu můžete změnit přesunutí nebo odstranění jeho vrcholy, okraje a řezy. Editor modelu je ve výchozím nastavení v *objekt režimu*, takže můžete vybrat a transformace celé objekty. Pokud chcete vybrat body, okraje nebo plochy, zvolte příslušný režim výběru. Na **modelu Editor režimu** nástrojů vyberte **režimy výběru**a potom zvolte režim, který chcete.
 
  Vyloučením nebo dělením můžete vytvořit další vrcholy. Vyloučení duplikuje vrcholy plochy (koplanární sadu vrcholů), které zůstávají spojeny duplikovanými vrcholy. Dělení přidá vrcholy pro vytvoření několika ploch tam, kde byla dříve jen jedna. Pro vytvoření nových ploch se přidají nové vrcholy – jeden uprostřed původní plochy a jeden uprostřed každé hrany – které jsou poté spojeny s původními vrcholy. Počet přidaných ploch se rovná počtu hran původní plochy. V obou případech můžete nové vrcholy posunout, otočit a změnit jejich velikost, čímž změníte geometrii celého objektu.
 
@@ -256,7 +256,7 @@ V závislosti na tom, co materiál podporuje, můžete změnit jeho vlastnosti o
 
 K odebrání všech materiály objekt, na **modelu Editor** nástrojů vyberte **skripty**, **materiály**, **odebrat materiály**.
 
-Můžete použít **shaderu Návrhář** vytvořit vlastní shaderu materiály, které můžete použít pro objekty na vaše 3D scény. Informace o tom, jak vytvořit vlastní shaderu materiály najdete v tématu [shaderu Návrhář](../designers/shader-designer.md). Informace o tom, jak používat vlastní shaderu materiálech k objektu, najdete v tématu [postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Můžete použít **shaderu Návrhář** vytvořit vlastní shaderu materiály, které můžete použít pro objekty v 3D scény. Informace o tom, jak vytvořit vlastní shaderu materiály najdete v tématu [shaderu Návrhář](../designers/shader-designer.md). Informace o tom, jak používat vlastní shaderu materiálech k objektu, najdete v tématu [postupy: použití shaderu 3D modelu](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ### <a name="scene-management"></a>Správa scény
 
@@ -329,6 +329,6 @@ Odebrat přidružení nadřazený podřízený mezi dvěma objekty, vyberte pod�
 
 |Název|Popis|
 |-----------|-----------------|
-|[Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md)|Poskytuje přehled nástrojů Visual Studio, které můžete použít pro práci s prostředky grafiky například textury a bitové kopie, 3D modely a shaderu účinky.|
+|[Práce s 3D prostředky pro hry a aplikace](../designers/working-with-3-d-assets-for-games-and-apps.md)|Poskytuje přehled nástrojů Visual Studio, které můžete použít pro práci s prostředky grafiky například textury a bitové kopie, 3D modelů a shaderu účinky.|
 |[Editor obrázků](../designers/image-editor.md)|Popisuje způsob použití editoru Visual Studio bitové kopie pro práci s textury a bitové kopie.|
 |[Návrhář shaderů](../designers/shader-designer.md)|Popisuje, jak používat návrháře shaderu Visual Studio pro práci s shadery.|

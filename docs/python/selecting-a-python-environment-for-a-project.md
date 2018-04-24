@@ -1,11 +1,9 @@
 ---
 title: Výběr prostředí pro projekt
 description: V Průzkumníku řešení Visual Studio můžete přiřadit konkrétní překladač Pythonu (environment) k vždy použijte pro daný projekt, výchozí prostředí je ignorována. Můžete také vytvořit a spravovat virtuální prostředí.
-ms.custom: ''
 ms.date: 03/21/2018
-ms.technology:
-- devlang-python
-ms.devlang: python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -13,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 50be456682594b881671a63364f45745ebb85409
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Výběr překladač Pythonu a prostředí pro použití v projektu
 
@@ -108,7 +106,7 @@ V Průzkumníku řešení rozbalte uzel jakékoli konkrétní prostředí a rych
 
 Chcete-li nainstalovat nové balíčky, klikněte pravým tlačítkem na prostředí a vyberte **instalovat balíček Python...**  přepnout do **balíčky** ve **prostředí Python** okno. Zadejte hledání termín (obvykle název balíčku) a Visual Studio zobrazí odpovídající balíčky.
 
-V sadě Visual Studio, se stáhnou balíčky (a závislostí) z [indexu balíčků Pythonu (úložiště PyPI)](https://pypi.python.org/pypi), kde můžete také vyhledat dostupné balíčky. Stavový řádek sady Visual Studio a výstup – okno zobrazit informace o instalaci. Pro odinstalaci balíčku, klikněte pravým tlačítkem ji vyberte **odebrat**.
+V sadě Visual Studio, se stáhnou balíčky (a závislostí) z [indexu balíčků Pythonu (úložiště PyPI)](https://pypi.org), kde můžete také vyhledat dostupné balíčky. Stavový řádek sady Visual Studio a výstup – okno zobrazit informace o instalaci. Pro odinstalaci balíčku, klikněte pravým tlačítkem ji vyberte **odebrat**.
 
 Uvědomte si, že zobrazené položky nemusí být vždy přesné, a instalace a odinstalace nemusí být spolehlivé nebo nejsou k dispozici. Visual Studio používá Správce balíčků pip, pokud je k dispozici a stáhne a nainstaluje se vyžádání. Visual Studio můžete také použít easy_install Správce balíčků. Balíčky nainstalované pomocí `pip` nebo `easy_install` z příkazového řádku se také zobrazí.
 

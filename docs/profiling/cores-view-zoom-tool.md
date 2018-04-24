@@ -2,8 +2,7 @@
 title: Lupa zobrazení jader | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afe315ca892401e406e70a5f13b818fba53558fa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f8cb142fa56f739cae28367beda40a7c285145d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="cores-view-zoom-tool"></a>Lupa zobrazení jader
 Ovládací prvek Lupa je jezdce, která umožňuje přiblížení a oddálení na časové ose tak, aby se můžete soustředit na oblasti zvláštní zájem. Tento ovládací prvek zvětší v centru aktuálního zobrazení, takže upravte zobrazení předtím, než se můžete přiblížit.  

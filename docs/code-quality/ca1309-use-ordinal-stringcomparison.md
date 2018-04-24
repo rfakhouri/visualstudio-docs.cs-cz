@@ -1,10 +1,8 @@
 ---
-title: 'CA1309: Použijte Řadový StringComparison | Microsoft Docs'
-ms.custom: ''
+title: 'CA1309: Použijte řadový StringComparison'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOrdinalStringComparison
 - CA1309
@@ -17,34 +15,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 96718a9402b2bafcf8728004efb3df5e94da8126
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 964dfee8b8ed78de76ead4ee5eda63fe0a49a72c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Použijte řadový StringComparison
-|||  
-|-|-|  
-|TypeName|UseOrdinalStringComparison|  
-|CheckId|CA1309|  
-|Kategorie|Microsoft.Globalization|  
-|Narušující změna|Nenarušující|  
-  
-## <a name="cause"></a>příčina  
- Operace porovnání řetězců, které je nonlinguistic nenastaví <xref:System.StringComparison> buď parametr **pořadí** nebo **OrdinalIgnoreCase**.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Mnoho řetězec operace, nejdůležitější <xref:System.String.Compare%2A?displayProperty=fullName> a <xref:System.String.Equals%2A?displayProperty=fullName> metody, teď poskytují přetížení, které přijímá <xref:System.StringComparison?displayProperty=fullName> hodnota výčtu jako parametr.  
-  
- Pokud zadáte buď **StringComparison.Ordinal** nebo **StringComparison.OrdinalIgnoreCase**, porovnání řetězců bude nonlinguistic. To znamená funkce, které jsou specifické pro přirozeného jazyka ignorují při rozhodování porovnání. To znamená, že rozhodnutí, která jsou založená na porovnání jednotlivých bajtů a ignorovat velká a malá písmena nebo ekvivalenční tabulek, které jsou parametry podle jazykové verze. V důsledku toho podle explicitně nastavení parametru na buď **StringComparison.Ordinal** nebo **StringComparison.OrdinalIgnoreCase**, kódu často získá rychlost, zvyšuje správnost a stane spolehlivější.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Opravit porušení toto pravidlo, změňte metodu porovnání řetězce na přetížení, které přijímá <xref:System.StringComparison?displayProperty=fullName> výčet jako parametr a zadejte buď **pořadí** nebo **OrdinalIgnoreCase**. Můžete například změnit `String.Compare(str1, str2)` k `String.Compare(str1, str2, StringComparison.Ordinal)`.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Je bezpečné při knihovny nebo aplikací je určený pro omezené místní cílovou skupinu, nebo pokud sémantiku aktuální jazykové verze slouží potlačit upozornění na toto pravidlo.  
-  
-## <a name="see-also"></a>Viz také  
- [Upozornění globalizace](../code-quality/globalization-warnings.md)   
- [CA1307: Zadejte možnosti StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+|||
+|-|-|
+|TypeName|UseOrdinalStringComparison|
+|CheckId|CA1309|
+|Kategorie|Microsoft.Globalization|
+|Narušující změna|Nenarušující|
+
+## <a name="cause"></a>příčina
+ Operace porovnání řetězců, které je nonlinguistic nenastaví <xref:System.StringComparison> buď parametr **pořadí** nebo **OrdinalIgnoreCase**.
+
+## <a name="rule-description"></a>Popis pravidla
+ Mnoho řetězec operace, nejdůležitější <xref:System.String.Compare%2A?displayProperty=fullName> a <xref:System.String.Equals%2A?displayProperty=fullName> metody, teď poskytují přetížení, které přijímá <xref:System.StringComparison?displayProperty=fullName> hodnota výčtu jako parametr.
+
+ Pokud zadáte buď **StringComparison.Ordinal** nebo **StringComparison.OrdinalIgnoreCase**, porovnání řetězců bude nonlinguistic. To znamená funkce, které jsou specifické pro přirozeného jazyka ignorují při rozhodování porovnání. To znamená, že rozhodnutí, která jsou založená na porovnání jednotlivých bajtů a ignorovat velká a malá písmena nebo ekvivalenční tabulek, které jsou parametry podle jazykové verze. V důsledku toho podle explicitně nastavení parametru na buď **StringComparison.Ordinal** nebo **StringComparison.OrdinalIgnoreCase**, kódu často získá rychlost, zvyšuje správnost a stane spolehlivější.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Opravit porušení toto pravidlo, změňte metodu porovnání řetězce na přetížení, které přijímá <xref:System.StringComparison?displayProperty=fullName> výčet jako parametr a zadejte buď **pořadí** nebo **OrdinalIgnoreCase**. Můžete například změnit `String.Compare(str1, str2)` k `String.Compare(str1, str2, StringComparison.Ordinal)`.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Je bezpečné při knihovny nebo aplikací je určený pro omezené místní cílovou skupinu, nebo pokud sémantiku aktuální jazykové verze slouží potlačit upozornění na toto pravidlo.
+
+## <a name="see-also"></a>Viz také
+ [Upozornění globalizace](../code-quality/globalization-warnings.md) [CA1307: Zadejte možnosti StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

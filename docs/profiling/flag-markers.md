@@ -2,8 +2,7 @@
 title: Příznak značek | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.flag
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 291734a72c26fac5d23efcbb86ccff8c4ae0721e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76024adcc36a0925345025ac628e79c6e8b1b7bc
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="flag-markers"></a>Značky příznaků
 Příznak značku představuje něco, co došlo k chybě v okamžiku v čase v aplikaci. Příznak může představovat různé druhy událostí aplikace. Příznak může například zobrazovat naplánovaného konkrétní pracovní položky nebo pokud došlo k výjimce. Moduly runtime například Task Parallel Library můžete také vygenerovat příznaky.  

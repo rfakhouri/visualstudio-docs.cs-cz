@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d80c0a604455d8c6e76d9c55bdf3a0d2dacfe743
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fc494f7fa3134984ccb2330e835332fb3e711c19
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Postupy: vytváření šablon položek s více soubory
 
@@ -38,7 +38,7 @@ Můžete vytvořit šablonu položek s více soubory stejným způsobem, jako š
 
 1. Vytvoření šablony položky, jako jste by ručně vytvořit šablonu položky jedním souborem, ale zahrnout každý soubor, který představuje položek s více soubory.
 
-1. V souboru XML .vstemplate, přidejte `ProjectItem` element pro každého uživatele souboru a přidejte `TargetFileName` atributu do tohoto elementu. Nastavte hodnotu `TargetFileName` atribut $fileinputname$. *FileExtension*, kde *FileExtension* je příponu souboru, který bude zahrnut v šabloně. Příklad:
+1. V *.vstemplate* XML soubor, přidejte `ProjectItem` element pro každého uživatele souboru a přidejte `TargetFileName` atributu do tohoto elementu. Nastavte hodnotu `TargetFileName` atribut *$fileinputname$. FileExtension*, kde *FileExtension* je příponu souboru, který bude zahrnut v šabloně. Příklad:
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">
@@ -57,13 +57,13 @@ Můžete vytvořit šablonu položek s více soubory stejným způsobem, jako š
 
 1. Vyberte soubory, které chcete zahrnout v šabloně, klikněte pravým tlačítkem na výběr a zvolte **poslat** > **komprimované složky (ZIP)**.
 
-   Do souboru .zip jsou komprimované soubory, které jste vybrali.
+   Do jsou komprimované soubory, které jste vybrali *.zip* souboru.
 
-1. Zkopírujte soubor .zip do umístění šablony položky uživatele. Ve výchozím nastavení, adresář je %USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ItemTemplates. Další informace najdete v tématu [postupy: vyhledání a uspořádání šablony](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Kopírování *.zip* soubor do umístění šablony položky uživatele. Ve výchozím nastavení, adresář je *%USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ItemTemplates*. Další informace najdete v tématu [postupy: hledání a organizace šablon](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Zavřete Visual Studio a pak ho znovu otevřít.
 
-1. Vytvořte nový projekt nebo otevřít existující projekt a zvolte **projektu** > **přidat novou položku...**  nebo stiskněte klávesu **Ctrl** + **Shift** + **A**.
+1. Vytvořte nový projekt nebo otevřít existující projekt a zvolte **projektu** > **přidat novou položku** nebo stiskněte klávesu **Ctrl** +  **Posunutí**+**A**.
 
    Šablony položek s více soubory se zobrazí v **přidat novou položku** dialogové okno.
 
@@ -97,6 +97,6 @@ Následující příklad ukazuje šablonu Windows Forms. Při vytváření polo�
 ## <a name="see-also"></a>Viz také
 
 [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)  
-[Postupy: Vytváření šablon položek](../ide/how-to-create-item-templates.md)  
+[Postupy: vytváření šablon položek](../ide/how-to-create-item-templates.md)  
 [Parametry šablony](../ide/template-parameters.md)  
-[Postupy: Nahrazení parametrů v šabloně](../ide/how-to-substitute-parameters-in-a-template.md)
+[Postupy: nahrazení parametrů v šabloně](../ide/how-to-substitute-parameters-in-a-template.md)

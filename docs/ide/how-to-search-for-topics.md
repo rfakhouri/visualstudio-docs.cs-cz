@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e76a1e87da99d8504620ed2881dcc60b8ce99a57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 71b1de500398f9023bf63c5320fa4d92260a05ec
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-search-for-topics"></a>Postupy: vyhledávání témat
 Najít všechna témata, které obsahují určité slovo můžete použít funkci fulltextového vyhledávání. Také můžete upřesnit a přizpůsobit hledání pomocí zástupných znaků výrazy, logické operátory a operátory rozšířeného vyhledávání.  
   
-Chcete-li otevřít kartu vyhledávání, zvolte **vyhledávání** kartě v okně prohlížeče nápovědy, nebo pokud se uživatel klávesnice, zvolte **Ctrl + E**.  
+Otevřete **vyhledávání** , zvolte **vyhledávání** ve **Help Viewer** okno, nebo pokud se uživatel klávesnice, zvolte **Ctrl** + **E**.  
   
 ## <a name="to-perform-a-full-text-search"></a>K provedení fulltextové vyhledávání 
 1.  Do vyhledávacího pole zadejte slovo, které chcete najít.  

@@ -1,18 +1,19 @@
 ---
-title: "Výhody sady Visual Studio pro Mac přes Xamarin Studio | Microsoft Docs"
+title: Výhody sady Visual Studio pro Mac přes Xamarin Studio
+description: ''
+ms.topic: overview
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
-ms.openlocfilehash: 08e693e92d6d07da21f8230f9c1de49f071c05e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: db4a328bceb79c1b99fdea95da89cc6cc7451523
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Výhody sady Visual Studio pro Mac přes Xamarin Studio 
- 
+
 Visual Studio pro Mac nahradili Xamarin Studio jako plné IDE na macu. Poskytuje funkce, které vám umožní vyvíjet webové aplikace a služby, mobilních a desktopových aplikací pro různé platformy a hry. Kromě toho umožňuje integraci s Azure uloženy, jestli to znamená publikování v Azure nebo vytváření Azure Functions. Obsahuje všechny objekty, které očekáváte od moderní IDE, včetně editoru plné zdroje, výkonné ladicí program, přizpůsobitelné pracovní prostor, integrace gitu a bohaté rozšíření systému, navržená nativně pro Mac. 
 
 Mezi další funkce patří: 
@@ -48,7 +49,7 @@ Podpora .NET Core zahrnuje:
 
 ## <a name="web-development"></a>Vývoj webů  
 
-### <a name="aspnet-core"></a>Jádro ASP.NET 
+### <a name="aspnet-core"></a>ASP.NET Core 
 
 Visual Studio pro Mac zahrnuje ASP.NET Core šablon pro projekty MVC a webového rozhraní API z pole.
  
@@ -153,7 +154,7 @@ Při první třídy funkce Xamarin Studio byly vždy funkcí Xamarin a platformy
 
 ### <a name="ios-and-mac"></a>iOS a Mac 
 
-* [Aktualizace pracovního postupu podpisový iOS](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
+* [Aktualizace pracovního postupu podpisový iOS ](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
     * Vytvoření podpisového identit a instalují je do místní řetězce klíčů. 
     * Vytvořte profily zřizování. 
     * Přidejte do stávající profil podpisové identity.

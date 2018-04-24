@@ -2,8 +2,7 @@
 title: 'Postupy: shromažďování dat vzorkování na úrovni řádku | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, line-level sampling
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 582a17e0a373bde99f17a077c17313ea5b7dfe56
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4438e7967a15384887d00503bde93b7bbd40fe6c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Postupy: Shromažďování dat vzorkování na úrovni řádků
 Vzorkování na úrovni řádku je schopnost profileru určit procesoru v kódu náročná na výkon procesoru funkce, jako je například funkci, která má vysokou výhradní ukázky, kde má zatěžovat většinu času.  

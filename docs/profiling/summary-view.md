@@ -2,8 +2,7 @@
 title: Souhrnné zobrazení | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.summary
@@ -18,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d10c3c69cccfe6b91d15d6cac6e5a599c766481
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51747dca8e11f7a23b911bbfe8ddcdb81d275d69
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="summary-view"></a>Souhrnné zobrazení
 Souhrnné zobrazení zobrazí informace o výkonu nejnákladnější funkce nebo objekty v profilaci spustit. Toto zobrazení nabízí časová osa grafu a minimálně dva seznamy nejnákladnější funkce nebo objekty podle metriky výkonu profilování metody. Data v tomto zobrazení, závisí na profilování metoda, která byla použita (vzorkování, instrumentace nebo souběžnosti) a jestli byl shromážděn přidělení paměti .NET.  

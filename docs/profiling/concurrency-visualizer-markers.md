@@ -2,8 +2,7 @@
 title: Značky Vizualizéru souběžnosti | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.markersui
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6706b7eca5600932b8fd78ea4d046f52f3b93fcf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="concurrency-visualizer-markers"></a>Značky Vizualizéru souběžnosti
 Vizualizér souběžnosti značky jsou ikony, které představují události v aplikaci.  Obvykle se aplikace generuje těchto událostí k určení fáze nebo výskyty v aplikaci.  Události lze vygenerovat, aplikací nebo knihovny a moduly runtime, který používá aplikace.  

@@ -1,9 +1,9 @@
 ---
-title: Vytvořit síťovou instalaci sady Visual Studio | Microsoft Docs
-description: Popisuje postup vytvoření umístění síťové instalace pro nasazení sady Visual Studio v rámci organizace
+title: Vytvořit síťovou instalaci sady Visual Studio
+description: Naučte se vytvářet umístění síťové instalace pro nasazení sady Visual Studio v rámci organizace.
 ms.date: 10/17/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe10a67ccb62e41edec12f40db639b30bd2a3bc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>Vytvořit sítě instalaci sady Visual Studio 2017
 
@@ -47,7 +47,7 @@ Musí mít připojení k Internetu k dokončení tohoto kroku. Vytvoření offli
 
    > [!IMPORTANT]
    > Dokončení rozložení Visual Studio 2017 vyžaduje alespoň 35 GB místa na disku a může trvat nějakou dobu ke stažení.  Najdete v článku [přizpůsobení síťový diagram](#customizing-the-network-layout) část Podrobnosti o tom, jak vytvořit rozložení s pouze komponenty chcete nainstalovat.
-
+   >
    > [!TIP]
    > Ujistěte se, spusťte příkaz z adresáře ke stažení. Obvykle to je `C:\Users\<username>\Downloads` v počítači se systémem Windows 10.
 
@@ -110,7 +110,6 @@ Pokud chcete aktualizovat existující rozložení na úplné rozložení, použ
 
 ```vs_enterprise.exe --layout c:\VS2017Layout --all```
 
-
 ## <a name="deploying-from-a-network-installation"></a>Nasazení z instalace sítě
 
 Správci můžou nasadit sady Visual Studio na klientské pracovní stanice v rámci instalační skript. Nebo, uživatelé, kteří mají práva správce můžete spustit instalační program přímo ze sdílené složky pro instalaci sady Visual Studio na jejich počítače.
@@ -151,15 +150,18 @@ Pokud dojde k potížím s offline instalace, chceme vědět o něm. Nejlepší 
 Další možnosti podpory k dispozici, máme příliš. Seznam najdete v tématu naše [kontaktujte nás](../ide/how-to-report-a-problem-with-visual-studio-2017.md) stránky.
 
 ## <a name="get-support"></a>Získat podporu
+
 V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
+
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
+
 * [Instalace sady Visual Studio](install-visual-studio.md)
 * [Příručka správce Visual Studio](visual-studio-administrator-guide.md)
 * [Instalace sady Visual Studio s použitím parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)

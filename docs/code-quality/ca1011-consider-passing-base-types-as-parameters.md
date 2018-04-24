@@ -1,10 +1,8 @@
 ---
-title: 'CA1011: Zvažte předání základních typů jako parametrů | Microsoft Docs'
-ms.custom: ''
+title: 'CA1011: Zvažte předání základních typů jako parametrů'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ConsiderPassingBaseTypesAsParameters
 - CA1011
@@ -17,46 +15,46 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51271f3d6b2ced6fdf0229c18ac2a19ee06de36c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac73d2be980791d41b172ba0669387fd68a331fb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Zvažte předání základních typů jako parametrů
-|||  
-|-|-|  
-|TypeName|ConsiderPassingBaseTypesAsParameters|  
-|CheckId|CA1011|  
-|Kategorie|Microsoft.Design|  
-|Narušující změna|Narušující|  
-  
-## <a name="cause"></a>příčina  
- Deklarace metody obsahuje formální parametr, který je odvozený typ, a volá metodu pouze členové základní typ parametru.  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Je-li v deklaraci metody zadán jako parametr základní typ, lze jako příslušný argument k metodě předat kterýkoliv typ odvozený z tohoto základního typu. Pokud se použije argument uvnitř těla metody, konkrétní metody, která se spustí, závisí na typu argumentu. Pokud není potřeba další funkce, které poskytuje odvozený typ, použijte základní typ umožňuje širší využití metody.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Opravit porušení toto pravidlo, změňte typ parametru na jeho základní typ.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Je bezpečné potlačit upozornění od tohoto pravidla  
-  
--   Pokud metoda vyžaduje, aby určitých funkcí, které poskytuje odvozený typ  
-  
-     \- nebo –  
-  
--   vynutit pouze odvozený typ, nebo více odvozený typ, je předaná metodě.  
-  
- V těchto případech bude kód robustnější kvůli kontrola silné typ, který je poskytován kompilátoru a modulu runtime.  
-  
-## <a name="example"></a>Příklad  
- Následující příklad ukazuje metodu, `ManipulateFileStream`, který lze použít pouze s <xref:System.IO.FileStream> objekt, který je v rozporu toto pravidlo. Druhá metoda `ManipulateAnyStream`, splňuje pravidlo nahrazením <xref:System.IO.FileStream> parametr pomocí <xref:System.IO.Stream>.  
-  
+|||
+|-|-|
+|TypeName|ConsiderPassingBaseTypesAsParameters|
+|CheckId|CA1011|
+|Kategorie|Microsoft.Design|
+|Narušující změna|Narušující|
+
+## <a name="cause"></a>příčina
+ Deklarace metody obsahuje formální parametr, který je odvozený typ, a volá metodu pouze členové základní typ parametru.
+
+## <a name="rule-description"></a>Popis pravidla
+ Je-li v deklaraci metody zadán jako parametr základní typ, lze jako příslušný argument k metodě předat kterýkoliv typ odvozený z tohoto základního typu. Pokud se použije argument uvnitř těla metody, konkrétní metody, která se spustí, závisí na typu argumentu. Pokud není potřeba další funkce, které poskytuje odvozený typ, použijte základní typ umožňuje širší využití metody.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Opravit porušení toto pravidlo, změňte typ parametru na jeho základní typ.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Je bezpečné potlačit upozornění od tohoto pravidla
+
+-   Pokud metoda vyžaduje, aby určitých funkcí, které poskytuje odvozený typ
+
+     \- nebo –
+
+-   vynutit pouze odvozený typ, nebo více odvozený typ, je předaná metodě.
+
+ V těchto případech bude kód robustnější kvůli kontrola silné typ, který je poskytován kompilátoru a modulu runtime.
+
+## <a name="example"></a>Příklad
+ Následující příklad ukazuje metodu, `ManipulateFileStream`, který lze použít pouze s <xref:System.IO.FileStream> objekt, který je v rozporu toto pravidlo. Druhá metoda `ManipulateAnyStream`, splňuje pravidlo nahrazením <xref:System.IO.FileStream> parametr pomocí <xref:System.IO.Stream>.
+
  [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
  [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
- [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]  
-  
-## <a name="related-rules"></a>Související pravidla  
+ [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
+
+## <a name="related-rules"></a>Související pravidla
  [CA1059: Členové by neměli zveřejňovat určité konkrétní typy](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

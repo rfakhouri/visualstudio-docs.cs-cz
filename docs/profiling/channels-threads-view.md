@@ -2,8 +2,7 @@
 title: Kanály (zobrazení vláken) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.channelnames
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: debb1b6bfd9c40af247b39539896c7b447faabf1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92d7af966f171b4719e919bb15b279aff6951a7b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="channels-threads-view"></a>Kanály (Zobrazení vláken)
 Vizualizér souběžnosti znázorňuje čtyři typy kanály: vláken kanály, disku kanály, značky kanálů a kanály GPU.  

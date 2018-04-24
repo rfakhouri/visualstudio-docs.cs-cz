@@ -1,6 +1,5 @@
 ---
-title: 'Postupy: vytvoření nebo aktualizace zásad vrácení se změnami analýzy kódu standardní | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Vytváření nebo aktualizace standardních zásad vracení se změnami Analýzy kódu'
 ms.date: 11/04/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -13,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c9d6a28c5dd0ae8d72f11c76d33ff15268d4dda4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb0642828daa96d7904d4e4bb967afc5f1c563d9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Postupy: Vytváření nebo aktualizace standardních zásad vracení se změnami Analýzy kódu
 
@@ -50,10 +49,10 @@ Po zadání zásad vrácení se změnami pro spravovaný kód, můžete synchron
 
 Vyberte nebo zrušte zaškrtnutí následující možnosti:
 
-    |Možnost|Popis|  
-    |------------|-----------------|  
-    |**Vynuťte vrácení se změnami tak, aby obsahovala pouze soubory, které jsou součástí aktuální řešení.**|Analýza kódu lze spustit pouze na soubory zadané v konfiguračních souborech na řešení a projektu. Tato zásada zaručuje, že se analýza všech kód, který je součástí řešení.|  
-    |**Vynutit analýza kódu C/C++ (/ analyze)**|Vyžaduje, aby se všechny projekty C nebo C++ vytvořené s nástroji / analyze – možnost kompilátoru pro spuštění analýzy kódu, než se můžete vrátit se změnami.|  
+    |Možnost|Popis|
+    |------------|-----------------|
+    |**Vynuťte vrácení se změnami tak, aby obsahovala pouze soubory, které jsou součástí aktuální řešení.**|Analýza kódu lze spustit pouze na soubory zadané v konfiguračních souborech na řešení a projektu. Tato zásada zaručuje, že se analýza všech kód, který je součástí řešení.|
+    |**Vynutit analýza kódu C/C++ (/ analyze)**|Vyžaduje, aby se všechny projekty C nebo C++ vytvořené s nástroji / analyze – možnost kompilátoru pro spuštění analýzy kódu, než se můžete vrátit se změnami.|
     |**Vynutit analýzy kódu pro spravovaný kód**|Vyžaduje, aby všechny spravované projekty spuštění analýzy kódu a sestavení předtím, než se můžete vrátit se změnami.|
 
 ### <a name="to-specify-a-managed-rule-set"></a>Chcete-li určit sada pravidel spravovaná
@@ -62,7 +61,7 @@ Vyberte nebo zrušte zaškrtnutí následující možnosti:
 
     - Vyberte sadu Microsoft standardního pravidla.
 
-    - Chcete-li vybrat vlastní sady pravidel, klikněte na tlačítko  **\<vyberte pravidlo nastavené od správy zdrojového kódu... >**a pak zadejte cestu řízení verze pravidlo nastavené v prohlížeči zdroj ovládacího prvku. Syntaxe cesty řízení verze je:
+    - Chcete-li vybrat vlastní sady pravidel, klikněte na tlačítko  **\<vyberte pravidlo nastavené od správy zdrojového kódu... >** a pak zadejte cestu řízení verze pravidlo nastavené v prohlížeči zdroj ovládacího prvku. Syntaxe cesty řízení verze je:
 
     - **$/** `TeamProjectName` **/** `VersionControlPath`
 

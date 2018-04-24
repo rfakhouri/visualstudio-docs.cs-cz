@@ -1,10 +1,10 @@
 ---
 title: Instalace a použití sady Visual Studio a služby Azure za serverem brány firewall nebo proxy server | Microsoft Docs
-description: ''
+description: Zkontrolujte domény adresy URL, porty a protokoly, které může chcete seznamu povolených IP adres nebo otevřít, pokud vaše organizace používá Brána firewall nebo proxy server
 ms.custom: ''
 ms.date: 02/12/2018
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aca7e7ee5e7861028a5aa80fe54d02e71cf0458e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a použití sady Visual Studio a služby Azure za serverem brány firewall nebo proxy server
+
 Pokud vaše organizace používá bezpečnostní opatření, jako je například Brána firewall nebo proxy server, pak jsou domény adresy URL, které můžete chtít "povolených" a porty a protokoly, které můžete chtít otevřít tak, aby měli dosažení co nejlepších výsledků při instalaci a použití samostatného Visual dio a služby Azure.
 
 * **[Instalaci sady Visual Studio](#install-visual-studio)**: tyto tabulky obsahují domény adresy URL do seznamu povolených IP adres, aby měli přístup ke všem součásti a úlohy, které chcete.
@@ -31,10 +32,13 @@ Pokud vaše organizace používá bezpečnostní opatření, jako je například
 * **[Pomocí sady Visual Studio a služby Azure](#use-visual-studio-and-azure-services)**: Tato tabulka obsahuje domény adresy URL do seznamu povolených IP adres a portů a protokolů otevřete tak, aby měli přístup ke všem funkce a služby, které chcete.
 
 ## <a name="install-visual-studio"></a>Instalaci sady Visual Studio
+
 ### <a name="urls-to-whitelist"></a>Adresy URL do seznamu povolených IP adres
+
 Vzhledem k tomu, že instalační program Visual Studio stáhne soubory z různých domén a jejich stahování serverů, tady jsou uvedené adresy URL domény, které můžete chtít povolených jako důvěryhodné v uživatelském rozhraní nebo ve skriptech nasazení.
 
 #### <a name="microsoft-domains"></a>Microsoft domains
+
 | Domény | Účel |
 | ------ | ------- |
 | go.microsoft.com | Překlad adresy URL instalace |
@@ -54,6 +58,7 @@ Vzhledem k tomu, že instalační program Visual Studio stáhne soubory z různ�
 |  |  | |
 
 #### <a name="non-microsoft-domains"></a>Domény od jiných výrobců
+
 | Domény | Nainstaluje tyto úlohy |
 | ------ | ------- |
 | archive.apache.org |  Mobilní vývoj v jazyce JavaScript (Cordova) |
@@ -69,7 +74,9 @@ Vzhledem k tomu, že instalační program Visual Studio stáhne soubory z různ�
 |  |  | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Pomocí aplikace Visual Studio a službami Azure
+
 ### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>Adresy URL do seznamu povolených IP adres a portů a protokolů otevřete
+
 Pokud chcete mít jistotu, že máte přístup k vše potřebné při použití sady Visual Studio nebo služby Azure za serverem brány firewall nebo proxy, tady jsou uvedené adresy URL, měli byste seznamu povolených IP adres a porty a protokoly, které chcete otevřít.
 
 | Služba nebo scénáře | Koncový bod služby DNS | Protokol | port | Popis |
@@ -113,18 +120,21 @@ Pokud chcete mít jistotu, že máte přístup k vše potřebné při použití 
 |Balení služby | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> DIST.nuget.org <br/> Nuget.org | protokol HTTPS | 443 | *. Npmjs.org, *. nuget.org, a *. nodejs.org jsou jen požadovaná pro určité sestavení scénáře úkolu (např. Instalační program nástroje NuGet, instalační program nástroje uzlu), nebo pokud máte v úmyslu použít veřejné upstreams s informačních kanálů.  Tři domény jsou požadovány pro základní functinality Packaigng služby. |
 |||||||
 
-
 ## <a name="troubleshoot-network-related-errors"></a>Řešení chyb související se sítí
+
 V některých případech můžete spustit chyby související s sítí nebo proxy server při instalaci nebo použití sady Visual Studio za bránou firewall nebo proxy server. Další informace o řešení pro takový chybové zprávy, najdete v článku [řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md) stránky.
 
 ## <a name="get-support"></a>Získat podporu
+
 Zde jsou několik další možnosti podpory můžete:
+
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
+
 * [Řešení potíží s chybami související se sítí v sadě Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Nainstalovat Visual Studio 2017](install-visual-studio.md)

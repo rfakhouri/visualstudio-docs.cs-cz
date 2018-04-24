@@ -20,21 +20,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dfccc6fcbfbd3f5844421a97b6ad9e7c40bd0c0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc85686b9b60692a625e3e09403e0e7b571f2b2f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Postupy: Konfigurace projektů pro cílové platformy
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Umožňuje nastavit aplikací pro různé platformy, včetně 64bitové platformy. Další informace na 64bitové platformě podpoře v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], najdete v části [64bitové aplikace](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181).  
   
-## <a name="targeting-platforms-with-the-configuration-manager"></a>Cílení na platformy pomocí nástroje Configuration Manager  
+## <a name="target-platforms-with-the-configuration-manager"></a>Cílové platformy pomocí nástroje Configuration Manager  
  **Nástroje Configuration Manager** poskytuje způsob, jak můžete rychle přidat nová platforma k cíli s projektem. Pokud vyberete jednu z platformy součástí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], úpravě vlastností pro svůj projekt k sestavení projektu pro vybranou platformu.  
   
 #### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Ke konfiguraci projektu pro platformu 64-bit  
   
-1.  Na řádku nabídek zvolte **sestavení**, **nástroje Configuration Manager**.  
+1.  Na řádku nabídek zvolte **sestavení** > **nástroje Configuration Manager**.  
   
 2.  V **platforma Active řešení** seznam, vyberte 64bitovou platformu pro řešení k cíli a potom zvolte **Zavřít** tlačítko.  
   
@@ -51,8 +51,8 @@ ms.lasthandoff: 04/16/2018
   
  Jsou aktualizovány vlastnosti pro všechny projekty, které používají 64bitovou platformu, a další sestavení projektu se optimalizovaný pro 64bitové platformy.  
   
-## <a name="targeting-platforms-in-the-project-designer"></a>Cílení na platformy v Návrháři projektu  
- Návrhář projektu také poskytuje způsob, jak různé platformy s projektem. Pokud výběrem jedné z platforem zahrnuty v seznamu **nová platforma řešení** dialogové okno pro vaše řešení nefunguje, můžete vytvořit vlastní konfigurace název a upravit nastavení v **Návrhář projektu**  pro správné platformu.  
+## <a name="target-platforms-in-the-project-designer"></a>Cílové platformy v Návrháři projektu  
+ **Návrhář projektu** také poskytuje způsob, jak různé platformy s projektem. Pokud výběrem jedné z platforem zahrnuty v seznamu **nová platforma řešení** dialogové okno pro vaše řešení nefunguje, můžete vytvořit vlastní konfigurace název a upravit nastavení v **Návrhář projektu**  pro správné platformu.  
   
  Provedení tohoto úkolu se liší podle programovací jazyk, který používáte. V následujících tématech pro další informace:  
   
@@ -66,4 +66,4 @@ ms.lasthandoff: 04/16/2018
  [Principy platforem sestavení](../ide/understanding-build-platforms.md)   
  [/ Platform (možnosti kompilátoru C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
  [64bitové aplikace](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
+ [Visual Studio IDE 64-Bit support](../ide/visual-studio-ide-64-bit-support.md)

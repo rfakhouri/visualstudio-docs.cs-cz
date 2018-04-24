@@ -9,11 +9,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7e97185c6c494bc031d526915b547a5fd0fcd24d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7e952f8eb445787a2a574ae3431ba6ad8728248
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-troubleshoot-templates"></a>Postupy: řešení problémů se šablonami
 
@@ -21,38 +21,38 @@ Pokud šablonu se nepodaří načíst ve vývojovém prostředí, existuje něko
 
 ## <a name="validate-the-vstemplate-file"></a>Ověřit soubor .vstemplate
 
-Pokud soubor .vstemplate v šabloně nedrží schéma šablony sady Visual Studio, šablona se nemusí zobrazit v **nový projekt** dialogové okno.
+Pokud *.vstemplate* soubor v šabloně nedrží schéma šablony sady Visual Studio, šablona se nemusí zobrazit v **nový projekt** dialogové okno.
 
 ### <a name="to-validate-the-vstemplate-file"></a>K ověření souboru .vstemplate
 
-1. Vyhledejte soubor .zip, který obsahuje šablony.
+1. Vyhledejte *.zip* soubor, který obsahuje šablony.
 
-1. Rozbalte soubor .zip.
+1. Extrahování *.zip* souboru.
 
 1. Na **soubor** ve Visual Studiu zvolte v nabídce zvolte **otevřete** > **soubor**.
 
-1. Vyberte soubor .vstemplate pro šablonu a vyberte **otevřete**.
+1. Vyberte *.vstemplate* souboru šablony a vyberte **otevřete**.
 
-1. Ověřte, že XML soubor .vstemplate dodržuje schéma šablony. Další informace o schématu .vstemplate najdete v tématu [odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md).
+1. Ověřte, že soubor XML *.vstemplate* souboru dodržuje schéma šablony. Další informace o *.vstemplate* schématu, najdete v části [odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Chcete-li získat podporu technologie IntelliSense při vytváření souboru .vstemplate, přidejte `xmlns` atribut `VSTemplate` elementu a přiřaďte ho hodnotu http://schemas.microsoft.com/developer/vstemplate/2005.
+    > Získat podporu technologie IntelliSense při vytváření *.vstemplate* soubor, přidejte `xmlns` atribut `VSTemplate` elementu a přiřaďte ho hodnotu http://schemas.microsoft.com/developer/vstemplate/2005.
 
-1. Uložte a zavřete soubor .vstemplate.
+1. Uložte a zavřete *.vstemplate* souboru.
 
-1. Vyberte soubory obsažené v šabloně, klikněte pravým tlačítkem a zvolte **poslat** > **komprimované složky (ZIP)**. Do souboru .zip jsou komprimované soubory, které jste vybrali.
+1. Vyberte soubory obsažené v šabloně, klikněte pravým tlačítkem a zvolte **poslat** > **komprimované složky (ZIP)**. Do jsou komprimované soubory, které jste vybrali *.zip* souboru.
 
-1. Nový soubor .zip umístíte ve stejném adresáři jako starý soubor .zip.
+1. Umístěte nové *.zip* souboru ve stejném adresáři jako starý *.zip* souboru.
 
-1. Odstraňte extrahované soubory šablony a původní soubor .zip šablony.
+1. Odstranit extrahované soubory šablony a starou šablonu *.zip* souboru.
 
 ## <a name="enable-diagnostic-logging"></a>Povolit protokolování diagnostiky
 
-Můžete povolit protokolování diagnostiky pro zjišťování šablony podle kroků v [zjišťování Poradce při potížích s šablony (rozšíření)](../extensibility/troubleshooting-template-discovery.md).
+Můžete povolit protokolování diagnostiky pro zjišťování šablony podle kroků v [zjišťování Poradce při potížích šablony (rozšíření)](../extensibility/troubleshooting-template-discovery.md).
 
 ## <a name="see-also"></a>Viz také
 
 [Řešení potíží s zjišťování šablony (rozšíření)](../extensibility/troubleshooting-template-discovery.md)  
-[Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)  
+[Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)  
 [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)  
 [Odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)

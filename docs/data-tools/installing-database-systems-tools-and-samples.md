@@ -1,6 +1,5 @@
 ---
-title: Databáze Kompatibilita sady Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Databáze Kompatibilita sady Visual Studio
 ms.date: 09/06/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,11 +13,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c8cffef6144c188fd5f53e504f6065c4e7d0c1d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1415ec8166ae98d6178c036fec043cc473aca7d
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>Databázi kompatibilní se systémy pro sadu Visual Studio
 
@@ -56,5 +55,5 @@ Firebird je systém, databáze SQL open source. Si můžete stáhnout z [stránk
 
 ## <a name="see-also"></a>Viz také
 
-[Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
-[Jak určit verzi a edici systému SQL Server a jeho komponenty](http://support.microsoft.com/kb/321185)
+- [Přístup k datům v sadě Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+- [Jak určit verzi a edici systému SQL Server a jeho komponenty](http://support.microsoft.com/kb/321185)

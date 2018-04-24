@@ -14,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c21c31fc35bad9a9cfc0b75d41fd7df7de248345
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: abf75a29192c3c10dc754213779bb13b6aebac4e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Postupy: Změna velikosti písmen v editoru
 Příkazy nabídky nebo klávesové zkratky můžete použít všechny velká nebo malá všechny převést malá vybraný text.  
   
 > [!NOTE]
-> Dialogová okna a příkazy nabídky, které vidíte mohou lišit od těch popsaných v tomto článku, v závislosti na aktivním nastavení nebo edici. Chcete-li změnit nastavení, například k **Obecné** nebo **Visual C++** nastavení, vyberte **nástroje**, **nastavení importu a exportu**a potom Zvolte **obnovit nastavení**.
+> Dialogová okna a příkazy nabídky, které vidíte mohou lišit od těch popsaných v tomto článku, v závislosti na aktivním nastavení nebo edici. Chcete-li změnit nastavení, například k **Obecné** nebo **Visual C++** nastavení, vyberte **nástroje** > **nastavení importu a exportu**a potom zvolte **obnovit nastavení**.
   
 ## <a name="to-switch-text-to-upper-case"></a>Chcete-li přepnout text na velká písmena  
   
@@ -43,5 +43,5 @@ Příkazy nabídky nebo klávesové zkratky můžete použít všechny velká ne
   
 ## <a name="see-also"></a>Viz také
 [Přizpůsobení editoru](../ide/customizing-the-editor.md)   
-[Dialogové okno možností textového editoru pole](../ide/reference/text-editor-options-dialog-box.md)   
+[Dialogové okno Možnosti textového editoru](../ide/reference/text-editor-options-dialog-box.md)   
 [Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)

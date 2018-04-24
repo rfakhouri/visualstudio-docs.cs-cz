@@ -15,16 +15,16 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a278a2206d7d2c5791a441552f30f196e925e2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd9dd101508fc55ff6287af534ee57e53e95d4e8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integrace sady Visual Studio (MSBuild)
 Visual Studio hostitelů [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] k načtení a vytvoření spravované projekty. Protože [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] zodpovídá za projektu, téměř každý projekt v [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] můžete v úspěšně použít formát [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]i v případě projektu byla vytvořena pomocí různých nástrojů a má vlastní sestavení proces.  
@@ -143,7 +143,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4.  V **Průzkumníku řešení**, otevřete místní nabídky projektu není k dispozici a potom zvolte **znovu načíst projekt**.  
   
 ## <a name="intellisense-and-validation"></a>Technologie IntelliSense a ověřování  
- Pokud chcete upravit soubory projektu pomocí editoru XML, Funkce IntelliSense a ověřování vycházejí z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory schématu. Byly nainstalovány do mezipaměti schématu, která lze nalézt v  *\<Visual Studio Instalační adresář >*\Xml\Schemas\1033\MSBuild.  
+ Pokud chcete upravit soubory projektu pomocí editoru XML, Funkce IntelliSense a ověřování vycházejí z [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] soubory schématu. Byly nainstalovány do mezipaměti schématu, která lze nalézt v  *\<Visual Studio Instalační adresář >* \Xml\Schemas\1033\MSBuild.  
   
  Základní [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] typy jsou definované v Microsoft.Build.Core.xsd a běžné typy používané [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] jsou definovány v Microsoft.Build.CommonTypes.xsd. Schémata přizpůsobit tak, aby měli funkce IntelliSense a ověřování pro názvy typů vlastní položky, vlastnosti a úloh, můžete upravit Microsoft.Build.xsd nebo vytvořit vlastní schéma, které obsahuje schémata CommonTypes nebo Core. Pokud vytvoříte vlastní schéma, budete muset nasměrovat XML editor najít pomocí **vlastnosti** okno.  
   

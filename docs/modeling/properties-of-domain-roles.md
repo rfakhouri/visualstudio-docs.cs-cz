@@ -1,19 +1,18 @@
 ---
-title: Vlastnosti rolí domény | Microsoft Docs
-ms.custom: ''
+title: Vlastnosti rolí domény
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 00ed4a86f2a00f9317f198d925fddbbc7f115481
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ead7128c998b8c4ed97acac0f6da0f08113e7bef
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="properties-of-domain-roles"></a>Vlastnosti rolí domény
 Vlastnosti v následující tabulce jsou přidružené k roli domény. Informace o rolích domény najdete v tématu [Principy modely, třídy a vztahy](../modeling/understanding-models-classes-and-relationships.md). Další informace o tom, jak používat tyto vlastnosti najdete v tématu [přizpůsobení a rozšíření jazyka domény](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -40,7 +39,8 @@ Vlastnosti v následující tabulce jsou přidružené k roli domény. Informace
 |Zobrazovaný název vlastnosti|Název, který se zobrazí v Návrháři generovaný pro vlastnost generovaného role.|Upravená hodnota vlastnosti název vlastnosti.|
 
 > [!NOTE]
->  Výchozí hodnota zobrazovaný název vychází hodnotu přidružené vlastnosti vložením mezer před každý velká znak, který je malá znak a který není následnou jiné velké písmeno.
+> Výchozí hodnota zobrazovaný název vychází hodnotu přidružené vlastnosti vložením mezer před každý velká znak, který je malá znak a který není následnou jiné velké písmeno.
 
 ## <a name="see-also"></a>Viz také
- [Vlastnosti vztahů domény](../modeling/properties-of-domain-relationships.md)
+
+- [Vlastnosti vztahů domény](../modeling/properties-of-domain-relationships.md)

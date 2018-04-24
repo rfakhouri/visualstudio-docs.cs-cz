@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c97a2976f56ab4e5bb8273efc3da3adf9de6fa2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: db53125c30a2136500b6c99818b7143511bd2788
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Postupy: hledání témat v obsahu
 V **obsah** kartě obsahu (obsah) můžete použít k nalezení informací. Obsah je rozevírací seznam obsahující všechny témat v nainstalované knih. Usnadnění informace o tom, jak procházet obsahu najdete v tématu [klávesové zkratky (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
@@ -31,7 +31,7 @@ V **obsah** kartě obsahu (obsah) můžete použít k nalezení informací. Obsa
 >  Obor témat v obsahu k dispozici, závisí na filtr, který jste vybrali.  
   
 ## <a name="filter-the-toc"></a>Filtrování obsahu  
-Můžete filtrovat TOC Chcete-li zúžit rozsah témata, které se zobrazují v **obsah** kartě. Názvy se zobrazí v seznamu, pouze v případě, že obsahují kořenovém termín, který zadáte. Například pokud zadáte "řešení potíží" jako filtr, pouze tituly, které obsahují "řešení potíží s" nebo "řešení potíží" zobrazí. Uzly, jejichž názvy neobsahují termín jsou sbaleny do jednoho uzlu se třemi tečkami (...).  
+Můžete filtrovat TOC Chcete-li zúžit rozsah témata, které se zobrazují v **obsah** kartě. Názvy se zobrazí v seznamu, pouze v případě, že obsahují kořenovém termín, který zadáte. Například pokud zadáte "řešení potíží" jako filtr, pouze tituly, které obsahují "řešení potíží s" nebo "řešení potíží" zobrazí. Uzly, jejichž názvy neobsahují termín jsou sbaleny do jednoho uzlu se třemi tečkami (**...** ).  
   
 #### <a name="to-filter-the-toc"></a>Chcete-li filtrovat obsahu  
   
@@ -49,7 +49,7 @@ Pokud jste otevřeli pomocí indexu nebo funkce fulltextového vyhledávání t�
   
 1.  Zobrazte téma.  
   
-2.  Klikněte **tématu zobrazit v obsah** na panelu nástrojů nebo stiskněte tlačítko **Ctrl + S**.  
+2.  Klikněte **tématu zobrazit v obsah** na panelu nástrojů nebo stiskněte tlačítko **Ctrl**+**S**.  
   
      **Obsah** kartě otevře a zobrazí v tématu umístění v obsahu.  
   

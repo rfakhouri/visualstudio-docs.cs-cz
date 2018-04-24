@@ -1,9 +1,10 @@
 ---
-title: Rozšířené příklad pro kontejnery | Microsoft Docs
+title: Pokročilé příklad kontejnery
+description: ''
 ms.custom: ''
-ms.date: 10/18/2017
-ms.technology:
-- vs-acquisition
+ms.date: 04/18/2018
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
 author: heaths
@@ -11,54 +12,77 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4978bd6c1251d6b93339802e2b9d551ed38e72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c941928495dc39dc6b6ecbe9600f39dad969fec2
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="advanced-example-for-containers"></a>Pokročilé příklad kontejnery
 
-Ukázkový soubor Docker v [nainstalovat nástroje sestavení do kontejneru](build-tools-container.md) vždy používá nejnovější microsoft/windowsservercore bitové kopie a nejnovější verzi instalačního programu Visual Studio sestavení 2017 nástroje. Pokud publikujete, aby k této bitové kopie [Docker registru](https://azure.microsoft.com/services/container-registry) ostatním uživatelům pro vyžádání obsahu, může být tuto bitovou kopii pro mnoho scénářů v pořádku. V praxi, ale je dnes běžné specifické o jaké základní bitovou kopii, můžete použít, jaké binární soubory můžete stáhnout, a který nástroj verze instalaci.
+Ukázkový soubor Docker v [nainstalovat nástroje sestavení do kontejneru](build-tools-container.md) vždy používá [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) bitové kopie založené na bitovou kopii nejnovější microsoft/windowsservercore a nejnovější Visual Instalační program Studio 2017 nástroje pro sestavení. Pokud publikujete, aby k této bitové kopie [Docker registru](https://azure.microsoft.com/services/container-registry) ostatním uživatelům pro vyžádání obsahu, může být tuto bitovou kopii pro mnoho scénářů v pořádku. V praxi je však častější specifické o jaké základní bitovou kopii, můžete použít, jaké binární soubory můžete stáhnout, a který nástroj verze instalaci.
 
-Následující příklad soubor Docker používá značku určité verze microsoft/windowsservercore bitové kopie. Pomocí s konkrétní značkou tag pro základní bitovou kopii je maloobchodech a usnadňuje mějte na paměti, že vytváření nebo opětovné vytvoření bitové kopie vždycky má stejné základ.
+Následující příklad soubor Docker používá značku konkrétní verzi rozhraní microsoft/dotnet-framework bitové kopie. Pomocí s konkrétní značkou tag pro základní bitovou kopii je maloobchodech a usnadňuje mějte na paměti, že vytváření nebo opětovné vytvoření bitové kopie vždycky má stejné základ.
 
 > [!NOTE]
-> Visual Studio nelze nainstalovat do microsoft/windowsservercore:10.0.14393.1593, který obsahuje známé problémy, které spouští instalační program v kontejneru. Další informace najdete v tématu [známé problémy](build-tools-container-issues.md).
+> Visual Studio nelze nainstalovat do microsoft/windowsservercore:10.0.14393.1593 nebo žádný obrázek podle toho, který obsahuje známé problémy, které spouští instalační program v kontejneru. Další informace najdete v tématu [známé problémy](build-tools-container-issues.md).
 
-Tento příklad používá také 2017 nástroje pro sestavení zaváděcí nástroj, který instaluje konkrétní verzi vytvořené ve stejnou dobu jako zavaděč. Produkt může stále aktualizovat prostřednictvím kanálu verze, ale není praktické scénář pro kontejnery, které by obvykle znovu sestavit. Pokud chcete získat adresy URL pro určitou kanál, si můžete stáhnout z kanál https://aka.ms/vs/15/release/channel, otevřete soubor JSON a zkontrolujte zaváděcího nástroje adresy URL. Další informace najdete v tématu [vytvořit síťovou instalaci sady Visual Studio](create-a-network-installation-of-visual-studio.md).
+Následující příklad stáhne nejnovější verze 2017 nástroje pro sestavení. Pokud chcete použít starší verzi nástroje sestavení do kontejneru můžete nainstalovat později, musíte nejdřív [vytvořit](create-an-offline-installation-of-visual-studio.md) a [udržovat](update-a-network-installation-of-visual-studio.md) rozložení.
+
+## <a name="install-script"></a>Instalace skriptu
+
+Chcete-li shromažďovat protokoly, když dojde k chybě instalace, v pracovním adresáři vytvořte dávkový skript s názvem "Soubor Install.cmd" s následujícím obsahem:
+
+```shell
+@if not defined _echo echo off
+setlocal enabledelayedexpansion
+
+call %*
+if "%ERRORLEVEL%"=="3010" (
+    exit /b 0
+) else (
+    if not "%ERRORLEVEL%"=="0" (
+        set ERR=%ERRORLEVEL%
+        call C:\TEMP\collect.exe -zip:C:\vslogs.zip
+
+        exit /b !ERR!
+    )
+)
+```
+
+## <a name="dockerfile"></a>Soubor Docker
+
+V pracovním adresáři vytvořte soubor "Docker" s následujícím obsahem:
 
 ```dockerfile
+# escape=`
+
 # Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
-# You could also use the immutable tag @sha256:d841bd78721c74f9b88e2700f5f3c2d66b54cb855b8acb4ab2c627a76a46301d
-FROM microsoft/windowsservercore:10.0.14393.1770
+# You could also use the immutable tag @sha256:1a66e2b5f3a5b8b98ac703a8bfd4902ae60d307ed9842978df40dbc04ac86b1b
+ARG FROM_IMAGE=microsoft/dotnet-framework:4.7.1-20180410-windowsservercore-1709
+FROM ${FROM_IMAGE}
 
-# Use PowerShell commands to download, validate hashes, etc.
-SHELL ["powershell.exe", "-ExecutionPolicy", "Bypass", "-Command", "$ErrorActionPreference='Stop'; $ProgressPreference='SilentlyContinue'; $VerbosePreference = 'Continue';"]
+# Copy our Install script.
+COPY Install.cmd C:\TEMP\
 
-# Download Build Tools 15.4.27004.2005 and other useful tools.
-ENV VS_BUILDTOOLS_URI=https://aka.ms/vs/15/release/6e8971476/vs_buildtools.exe \
-    VS_BUILDTOOLS_SHA256=D482171C7F2872B6B9D29B116257C6102DBE6ABA481FAE4983659E7BF67C0F88 \
-    NUGET_URI=https://dist.nuget.org/win-x86-commandline/v4.1.0/nuget.exe \
-    NUGET_SHA256=4C1DE9B026E0C4AB087302FF75240885742C0FAA62BD2554F913BBE1F6CB63A0
+# Download collect.exe in case of an install failure.
+ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
 
-# Download tools to C:\Bin and install Build Tools excluding workloads and components with known issues.
-RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; \
-    [System.Environment]::SetEnvironmentVariable('PATH', "\"${env:PATH};C:\Bin\"", 'Machine'); \
-    function Fetch ([string] $Uri, [string] $Path, [string] $Hash) { \
-      Invoke-RestMethod -Uri $Uri -OutFile $Path; \
-      if ($Hash -and ((Get-FileHash -Path $Path -Algorithm SHA256).Hash -ne $Hash)) { \
-        throw "\"Download hash for '$Path' incorrect\""; \
-      } \
-    }; \
-    Fetch -Uri $env:NUGET_URI -Path C:\Bin\nuget.exe -Hash $env:NUGET_SHA256; \
-    Fetch -Uri $env:VS_BUILDTOOLS_URI -Path C:\TEMP\vs_buildtools.exe -Hash $env:VS_BUILDTOOLS_SHA256; \
-    Fetch -Uri 'https://aka.ms/vscollect.exe' -Path C:\TEMP\collect.exe; \
-    $p = Start-Process -Wait -PassThru -FilePath C:\TEMP\vs_buildtools.exe -ArgumentList '--quiet --wait --norestart --nocache --installPath C:\BuildTools --all --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 --remove Microsoft.VisualStudio.Component.Windows81SDK'; \
-    if (($ret = $p.ExitCode) -and ($ret -ne 3010)) { C:\TEMP\collect.exe; throw ('Install failed with exit code 0x{0:x}' -f $ret) }
+# Use the latest release channel. For more control, specify the location of an internal layout.
+ARG CHANNEL_URL=https://aka.ms/vs/15/release/channel
+ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
 
-# Restore default shell for Windows containers.
-SHELL ["cmd.exe", "/s", "/c"]
+# Download and install Build Tools excluding workloads and components with known issues.
+ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+    --installPath C:\BuildTools `
+    --channelUri C:\TEMP\VisualStudio.chman `
+    --installChannelUri C:\TEMP\VisualStudio.chman `
+    --all `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+    --remove Microsoft.VisualStudio.Component.Windows81SDK
 
 # Start developer command prompt with any other commands specified.
 ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
@@ -67,36 +91,44 @@ ENTRYPOINT C:\BuildTools\Common7\Tools\VsDevCmd.bat &&
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
 
+Spusťte následující příkaz k vytvoření bitové kopie v aktuálním pracovním adresáři:
+
+```shell
+docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
+```
+
+Volitelně můžete předat obojím `FROM_IMAGE` nebo `CHANNEL_URL` argumenty pomocí `--build-arg` přepínač příkazového řádku a zadejte jinou základní bitovou kopii nebo umístění interní rozložení udržovat pevné bitové kopie.
+
+## <a name="diagnosing-install-failures"></a>Diagnostikování selhání instalace
+
 Tento příklad stáhne konkrétních nástrojů a ověří, že se hodnoty hash shodují. Také stažení nejnovější sady Visual Studio a nástroj kolekce protokolu .NET tak, že pokud dojde k selhání instalace, můžete zkopírovat protokoly na hostitelském počítači k analýze selhání.
 
 ```shell
-> docker build -t buildtools:15.4.27004.2005 -t buildtools:latest -m 2GB .
+> docker build -t buildtools2017:15.6.27428.2037 -t buildtools2017:latest -m 2GB .
 Sending build context to Docker daemon
 ...
-Step 4/7 : RUN New-Item -Path C:\Bin, C:\TEMP -Type Directory | Out-Null; ...
+Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache ...
  ---> Running in 4b62b4ce3a3c
-Install failed with exit code 0x643
-At line:1 char:1
-+ throw ('Install failed with exit code 0x{0:x}' -f 1603)
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OperationStopped: (Install failed with exit code 0x643:String) [], RuntimeException
-    + FullyQualifiedErrorId : Install failed with exit code 0x643
+The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
 
-> docker cp 4b62b4ce3a3c:C:\Users\ContainerAdministrator\AppData\Local\TEMP\vslogs.zip "%TEMP%\vslogs.zip"
+> docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
 ```
 
-Po dokončení provádění poslední řádek otevřete "% TEMP%\vslogs.zip" na počítači nebo ohlásit problém na [komunity vývojářů](https://developercommunity.visualstudio.com) webu.
+Po dokončení provádění poslední řádek otevřete "% TEMP%\vslogs.zip" na počítači, nebo ohlásit problém na [komunity vývojářů](https://developercommunity.visualstudio.com) webu.
 
 ## <a name="get-support"></a>Získat podporu
-V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
+
+V některých případech může problémů. Pokud se nepovede instalaci Visual Studio, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
+
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
+
 * [Instalace Build Tools do kontejneru](build-tools-container.md)
 * [Známé problémy s kontejnery](build-tools-container-issues.md)
 * [ID úlohy a součást Visual Studio 2017 nástroje pro sestavení](workload-component-id-vs-build-tools.md)

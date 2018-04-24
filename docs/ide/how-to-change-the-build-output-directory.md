@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a0c4fe60d5092c9226a85ffa561c6fa55a1dfc3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1e60ed79adf8a7b0ff2f2d66d0773c85398dea8
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Postupy: Změna výstupního adresáře sestavení
 Umístění výstupu můžete zadat na základě za konfigurace (pro ladění, verzi nebo obě), vygenerovaných projektu.  
   
 > [!NOTE]
->  Pokud máte **instalace** projektu viz poznámka na konci tohoto článku.  
+>  Pokud máte **instalace** projektu, přečtěte si poznámku na konci tohoto článku.  
   
-## <a name="changing-the-build-output-directory"></a>Změna sestavení výstupního adresáře.  
+## <a name="change-the-build-output-directory"></a>Změna výstupního adresáře sestavení  
   
 #### <a name="to-change-the-build-output-directory"></a>Chcete-li změnit výstupního adresáře sestavení  
   
-1.  Na řádku nabídek zvolte **projektu**, *Appname* **vlastnosti**. Můžete také kliknout pravým tlačítkem na uzel projektu v **Průzkumníku řešení** a vyberte **vlastnosti**.  
+1.  Na řádku nabídek zvolte **projektu**  >   **<Appname> vlastnosti**. Můžete také kliknout pravým tlačítkem na uzel projektu v **Průzkumníku řešení** a vyberte **vlastnosti**.  
   
 2.  Pokud máte projektu jazyka Visual Basic, vyberte **zkompilovat** kartě. Pokud máte projekt C#, vyberte **sestavení** kartě. Pokud máte projektu jazyka C++ nebo projekt jazyka JavaScript, vyberte **Obecné** kartě.  
   
@@ -38,9 +38,9 @@ Umístění výstupu můžete zadat na základě za konfigurace (pro ladění, v
      Vyhledejte položku výstupní cesta (**sestavení výstupní cesta** v jazyce Visual Basic **výstupního adresáře** v jazyce Visual C++, **výstupní cesta** v JavaScript a C#). Zadejte nové výstupního adresáře sestavení relativně k adresáři projektu.  
   
 > [!NOTE]
->  V nastavení projektu **názvu výstupního souboru** pole změní jenom umístění souboru Setup.exe, ne však umístění souborů projektu. Další informace najdete v tématu **sestavení, vlastnosti konfigurace, dialogové okno Vlastnosti projektu nasazení**.  
+>  V nastavení projektu **názvu výstupního souboru** pole změní jenom umístění *Setup.exe* souboru, ne však umístění souborů projektu. Další informace najdete v tématu **sestavení, vlastnosti konfigurace, dialogové okno Vlastnosti projektu nasazení**.  
   
 ## <a name="see-also"></a>Viz také  
  [Stránka sestavení, Návrhář projektu (C#)](../ide/reference/build-page-project-designer-csharp.md)   
- [Obecná stránka vlastností (projekt)](/cpp/ide/general-property-page-project)   
+ [Stránka Obecné vlastností (projekt)](/cpp/ide/general-property-page-project)   
  [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

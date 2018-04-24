@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Správa konfigurací sestavení s použitými nastaveními vývojáře jazyka Visual Basic | Microsoft Docs'
+title: 'Postupy: Správa konfigurace sestavení s použitými nastaveními vývojáře jazyka Visual Basic | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f207a44aa195466cb19eef1ab13394202e5bd7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 954a968de9840e6f23c3e8ff5ab0ff4d0fa761cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Postupy: Správa konfigurací sestavení s použitými nastaveními vývojáře jazyka Visual Basic
+# <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Postupy: Správa konfigurace sestavení s použitými nastaveními vývojáře jazyka Visual Basic
 Ve výchozím nastavení jsou všechny možnosti konfigurace pokročilé sestavení skrytá s [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] použitými nastaveními vývojáře. Toto téma vysvětluje, jak povolit tato nastavení ručně.  
   
-## <a name="enabling-advanced-build-configurations"></a>Povolení upřesněné konfigurace sestavení  
+## <a name="enable-advanced-build-configurations"></a>Povolit upřesněné konfigurace sestavení  
  Ve výchozím nastavení [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] nastaveními vývojáře skrýt a možnost otevření **nástroje Configuration Manager** dialogové okno a **konfigurace** a **platformy** seznamů v [Návrhář projektu](..//ide/reference/application-page-project-designer-visual-basic.md).  
   
 #### <a name="to-enable-advanced-build-configurations"></a>Chcete-li povolit upřesněné konfigurace sestavení  
@@ -44,8 +44,8 @@ Ve výchozím nastavení jsou všechny možnosti konfigurace pokročilé sestave
   
 4.  Click **OK**.  
   
-     Na **sestavení** nabídce **nástroje Configuration Manager** je nyní k dispozici a **konfigurace** a **platformy** seznamy jsou viditelné v Návrhář projektu.  
+     Na **sestavení** nabídce **nástroje Configuration Manager** je nyní k dispozici a **konfigurace** a **platformy** seznamy jsou viditelné v **Návrhář projektu**.  
   
 ## <a name="see-also"></a>Viz také  
- [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)   
+ [Pochopení konfigurace sestavení](../ide/understanding-build-configurations.md)   
  [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

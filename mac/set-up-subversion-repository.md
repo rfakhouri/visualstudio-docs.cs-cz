@@ -1,16 +1,15 @@
 ---
-title: "Nastavení úložiště Subversion v sadě Visual Studio pro Mac | Microsoft Docs"
-description: "Pomocí Git a Subversion v sadě Visual Studio for Mac."
+title: Nastavení úložiště Subversion v sadě Visual Studio pro Mac
+description: Pomocí Git a Subversion v sadě Visual Studio for Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 0757ad29b8614a86f059f525f6ffe3100595d09b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: e6b6fd600d3f32c77651b9a4fbb0dff2cd754bcb
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setting-up-a-subversion-repository"></a>Nastavení úložiště Subversion
 

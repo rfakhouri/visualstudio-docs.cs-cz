@@ -2,8 +2,7 @@
 title: Zobrazení (IP) ukazatele na instrukce – Data vzorkování paměti .NET | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Instruction Pointers view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 035ddb85410b1b5d4b883425ecbb2af35c73c58f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 34d06b3223b6c0bea059c333bd107068fd0adcee
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>Zobrazení (IP) ukazatele na instrukce – Data vzorkování paměti .NET
 Zobrazení IP adres pro rozhraní .NET paměti přidělení profilování data, která nebyla shromážděna pomocí metody vzorkování uvádí pokyny sestavení, které přidělené paměti při spuštění profilování. Sloupce zobrazení taky seznam velikost a počet přidělení.  

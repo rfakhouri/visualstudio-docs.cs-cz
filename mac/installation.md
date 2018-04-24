@@ -1,17 +1,16 @@
 ---
-title: Instalaci sady Visual Studio pro Mac | Microsoft Docs
-description: "Pokyny k instalaci sady Visual Studio pro Mac a dalších komponent potřebných pro vývoj pro různé platformy."
+title: Instalaci sady Visual Studio pro Mac
+description: Pokyny k instalaci sady Visual Studio pro Mac a dalších komponent potřebných pro vývoj pro různé platformy.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 5de4760b001e82a0c95c593c1308746946b2c630
-ms.sourcegitcommit: 65f85389047c5a1938b6d5243ccba8d4f14362ba
+ms.openlocfilehash: 9069e85f5d0bf0d6b8031065619b48f7302b7411
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Instalační program a instalace sady Visual Studio pro Mac
 
@@ -27,7 +26,7 @@ Pro práci s iOS v sadě Visual Studio budete potřebovat následující:
 
 ## <a name="install"></a>Instalace
 
-1. Stažení sady Visual Studio pro Mac od [https://www.visualstudio.com/](https://www.visualstudio.com/)
+1. Stažení sady Visual Studio pro Mac z [https://www.visualstudio.com/](https://www.visualstudio.com/)
 
 2. Po stažení balíčku Instalační služby, klikněte na **VisualStudioInstaller.dmg** souboru připojit instalační program a pak spusťte dvojitým kliknutím na soubor logo, které jsou popsány v následující obrázek:
 
@@ -81,7 +80,7 @@ Pro práci s iOS v sadě Visual Studio budete potřebovat následující:
 
 10. Po úspěšné instalace můžete začít vyvíjet aplikace v sadě Visual Studio stisknutím **spustit**:
 
-  ![Open Visual Studio](media/installer-image11.png)
+  ![Otevřete Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
 Pokud jste vybrali instalaci není platformy nebo nástroj při původní instalaci (podle unselecting ho v kroku #6), musíte spustit [instalační program](https://www.visualstudio.com/vs/) znovu Pokud chcete přidat součásti později.
@@ -108,8 +107,8 @@ Instalace sady Visual Studio pro Mac, můžete zahájit zápis kódu pro vaše a
 ### <a name="android"></a>Android
 
 1. [Pomocí Xamarin Android SDK Manager](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
-2. [Emulátor sady SDK pro Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
-4. [Nastavit zařízení pro vývoj](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
+2. [Emulátor sady Android SDK](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
+4. [Nastavení zařízení pro vývoj](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikace .NET core, webové aplikace ASP.NET Core, vývoj her pro Unity
 

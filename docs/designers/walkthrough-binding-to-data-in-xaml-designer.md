@@ -1,6 +1,5 @@
 ---
-title: 'Návod: Vytvoření vazby na data v Návrháři XAML | Microsoft Docs'
-ms.custom: ''
+title: Vytvoření vazby na data v Návrháři XAML
 ms.date: 11/04/2016
 ms.technology: vs-ide-designers
 ms.topic: conceptual
@@ -14,13 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a770bd8224906ccd45a2d3f4be9e169368bb20cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a94f3c4637ab76b8b0d00d1899de5c475dc8e7e4
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Návod: Vytvoření vazby na data v Návrháři XAML
+# <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Návod: Vytvoření vazby na data v Návrháři XAML
 
 V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové plochy a v okně Vlastnosti. V příkladu v tomto průvodci ukazuje, jak k vytvoření vazby dat k ovládacímu prvku. Konkrétně návod ukazuje, jak vytvořit jednoduché nákupní košík třídy, která má [vlastnost DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) s názvem `ItemCount`a pak vytvořte vazbu `ItemCount` vlastnost, která má **Text** vlastnost nástroje [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock) ovládacího prvku.
 
@@ -100,5 +99,5 @@ V Návrháři XAML můžete nastavit vlastnosti datové vazby pomocí návrhové
 
 ## <a name="see-also"></a>Viz také
 
-[Vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)  
-[Převaděč hodnoty dialogové okno Přidat](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+- [Vytvoření uživatelského rozhraní pomocí Návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [Převaděč hodnoty dialogové okno Přidat](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

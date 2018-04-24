@@ -8,16 +8,16 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed8497c937006d53bf6cd6f8f5b1a773fdf44137
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dae51959313a7108c54466dff08b3641525818cd
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="customize-your-build"></a>Přizpůsobení buildu
 Ve verzích nástroje MSBuild starší než verze 15 Pokud chcete zadat novou, vlastní vlastnost, která má projekty v řešení, museli jste ručně přidejte odkaz na tuto vlastnost pro každý soubor projektu v řešení. Nebo, jste měli k definování vlastností v *props* souboru a pak můžete importovat explicitně *props* souboru v všechny projekty v řešení, mimo jiné.
@@ -76,7 +76,7 @@ Předpokládejme, že máte tato struktura standardní řešení:
     \Project2Tests
 ````
 
-Může být žádoucí, aby společných vlastností pro všechny projekty *(1)*, společných vlastností pro *src* projekty *(2-src)*a společných vlastností pro  *testování* projekty *(2-test)*.
+Může být žádoucí, aby společných vlastností pro všechny projekty *(1)*, společných vlastností pro *src* projekty *(2-src)* a společných vlastností pro  *testování* projekty *(2-test)*.
 
 Pro MSBuild správně sloučit "vnitřní" soubory (*2 src* a *2-test*) "vnější" souborem (*1*), je třeba vzít v úvahu, že jednou MSBuild vyhledá *Directory.Build.props* souboru, zastaví další kontrolu. Pokud chcete pokračovat, kontrolu a sloučení do vnějšího souboru, umístěte do obou vnitřní soubory toto:
 

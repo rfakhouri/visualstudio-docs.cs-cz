@@ -2,8 +2,7 @@
 title: Ovládací prvek Lupa (zobrazení využití) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.cpu.zoom
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf31f4711150bb7bd95bd0b17841ea9022c0ac42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07519bc95f696d395177056960ea5f42027739a6
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="zoom-control-utilization-view"></a>Ovládací prvek Lupa (Zobrazení využití)
 Ovládací prvek Lupa umožňuje přiblížit na graf využití procesoru Chcete-li se zaměřit na oblasti zvláštní zájem. Tento ovládací prvek zvětší středu zobrazení. Předtím, než se můžete přiblížit, proto by měl center oblast zájmu.  

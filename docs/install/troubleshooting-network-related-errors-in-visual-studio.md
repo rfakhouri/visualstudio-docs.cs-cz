@@ -1,10 +1,10 @@
 ---
-title: Řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio | Microsoft Docs
-description: ''
+title: Řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio
+description: Najít řešení chyby související s sítě nebo proxy, které se můžete setkat při instalaci nebo použití sady Visual Studio za bránou firewall nebo proxy server.
 ms.custom: ''
 ms.date: 02/12/2018
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a2bf89073549d794e13e5907d4044a24b653656
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41fed015f4ad80c3c3b74bc77ea3b9cc6ed8eb18
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Řešení potíží s chybami související se sítí, když instalujete nebo použijte sadu Visual Studio
+
 My jsme řešení nejčastější chyby související s sítě nebo proxy, které se můžete setkat při instalaci nebo použití sady Visual Studio za bránou firewall nebo proxy server.
 
 ## <a name="error-proxy-authorization-required"></a>Chyba: "Proxy autorizace požadované"
 
 Této chybě obvykle dochází, když jsou uživatelé připojeni k Internetu prostřednictvím proxy serveru a proxy server blokuje volání, které provádí některým síťovým prostředkům v sadě Visual Studio.
 
-### <a name="to-fix-this-error"></a>Chcete-li vyřešit tuto chybu:
+### <a name="to-fix-this-proxy-error"></a>Chcete-li vyřešit tuto chybu proxy
 
 - Restartujte sadu Visual Studio. By se zobrazit dialogové okno ověřování proxy serveru. Zadejte přihlašovací údaje po zobrazení výzvy v dialogovém okně.
 
@@ -77,7 +78,7 @@ Pokud používáte Visual Studio v privátní síti, která má brána firewall,
 
 Visual Studio používá k připojení k síťovým prostředkům protokol zabezpečení TLS (Transport Layer) 1.2. Zabezpečovací zařízení v některých soukromých sítích blokují některá serverová připojení, když Visual Studio používá TLS 1.2.
 
-### <a name="to-fix-this-error"></a>Chcete-li vyřešit tuto chybu:
+### <a name="to-fix-this-connection-error"></a>Odstranění této chyby připojení
 
 Povolte připojení pro následující adresy URL:
 
@@ -110,17 +111,19 @@ Povolte připojení pro následující adresy URL:
  > [!NOTE]
  > Soukromě vlastněných že URL serverů NuGet nemusejí být uvedené v tomto seznamu. Můžete zkontrolovat pro servery NuGet, které používáte ve % APPData%\Nuget\NuGet.Config.
 
-
 ## <a name="get-support"></a>Získat podporu
+
 Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud žádná z instalace při řešení potíží pomoci, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
+
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
+
 * [Instalace a používání sady Visual Studio za bránou firewall nebo proxy serverem](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Příručka správce sady Visual Studio](visual-studio-administrator-guide.md)
 * [Nainstalovat Visual Studio 2017](install-visual-studio.md)

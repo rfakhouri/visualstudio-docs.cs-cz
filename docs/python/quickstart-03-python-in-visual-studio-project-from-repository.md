@@ -1,12 +1,9 @@
 ---
 title: Rychlý start - klonování úložiště Python kódu
 description: V tento rychlý start vytvořte projekt Python v sadě Visual Studio klonováním Python koans úložiště pomocí sady Visual Studio Team Explorer.
-ms.custom: mvc
 ms.date: 03/21/2018
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: quickstart
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 80b840e14332498e86f7136f19ea6b7b106812b6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d66c3b5b62edc6963d92e27bcf6a94889741b27f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Rychlý úvod: klonovat úložiště Python kódu v sadě Visual Studio
 
@@ -28,7 +25,7 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 
 2. Spusťte sadu Visual Studio.
 
-3. Vyberte **zobrazení > Team Explorer...**  otevřete **Team Explorer** okno, ve kterém můžete připojit k webu GitHub nebo Visual Studio Team Services, nebo klonovat úložiště. (Pokud se nezobrazí **připojit** stránky uvedená níže, vyberte ikonu moduly na horním panelu nástrojů, které přejdete na této stránce.)
+3. Vyberte **zobrazení > Team Explorer** otevřete **Team Explorer** okno, ve kterém můžete připojit k webu GitHub nebo Visual Studio Team Services, nebo klonovat úložiště. (Pokud se nezobrazí **připojit** stránky uvedená níže, vyberte ikonu moduly na horním panelu nástrojů, které přejdete na této stránce.)
 
     ![Team explorer okno zobrazující Visual Studio Team Services, GitHub a klonování úložiště](media/team-explorer.png)
 
@@ -39,7 +36,7 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 
 5. Po dokončení klonování se zobrazí název úložiště v **místní úložiště Git** seznamu. Dvakrát klikněte na tento název přejděte na řídicím panelu úložiště v **Team Explorer**.
 
-6. V části **řešení**, vyberte **nový...** .
+6. V části **řešení**, vyberte **nový**.
 
     ![Okno Průzkumníka týmu, vytvoření nového projektu z klonu](media/team-explorer-new-project.png)
 
@@ -49,7 +46,7 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 
 9. V **Průzkumníku řešení**, rozbalte `python3` uzel, klikněte pravým tlačítkem na `contemplate_koans.py`a vyberte **nastavit jako spouštěcí soubor**. Tento krok informuje soubor, který se má používat při spuštění projektu sady Visual Studio.
 
-10. Vyberte **Projekt > Vlastnosti Koans...**  v nabídce vyberte **Obecné** kartě a nastavte **pracovní adresář** na "python3". Tento krok je nezbytný, protože ve výchozím nastavení sady Visual Studio nastavuje pracovní adresář na kořenu projektu a nikoli umístění souboru spuštění (`python3\contemplate_koans.py`, který se zobrazí ve vlastnostech projektu). Kód programu hledá soubor `koans.txt` pracovní složku, takže bez změnou této hodnoty se zobrazuje chyba za běhu.
+10. Vyberte **Projekt > Vlastnosti Koans** v nabídce vyberte **Obecné** kartě a nastavte **pracovní adresář** na "python3". Tento krok je nezbytný, protože ve výchozím nastavení sady Visual Studio nastavuje pracovní adresář na kořenu projektu a nikoli umístění souboru spuštění (`python3\contemplate_koans.py`, který se zobrazí ve vlastnostech projektu). Kód programu hledá soubor `koans.txt` pracovní složku, takže bez změnou této hodnoty se zobrazuje chyba za běhu.
 
     ![Nastavení pracovní adresář pro projekt Python](media/projects-set-working-directory.png)
 

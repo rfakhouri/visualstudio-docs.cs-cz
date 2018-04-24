@@ -13,15 +13,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96d3c84c926e399e6f873337e65f312726f1feb1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9465c098144f14db496bc1dbc382d6a30c8882cb
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-update-existing-templates"></a>Postupy: aktualizace existujících šablon
 
-Po vytvoření šablony a komprimovat soubory do souboru ZIP, můžete upravit šablonu. Můžete to provést ruční změnou soubory v šabloně, nebo tak, že vyexportujete novou šablonu z projektu, který je založený na šabloně.
+Po vytvoření šablony a komprimovat soubor do *.zip* souboru, můžete upravit šablonu. Můžete to provést ruční změnou soubory v šabloně, nebo tak, že vyexportujete novou šablonu z projektu, který je založený na šabloně.
 
 ## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>Pomocí Průvodce šablonou exportovat, a aktualizovat existující šablony projektu
 
@@ -33,44 +33,44 @@ Visual Studio poskytuje **Průvodce exportem šablony** , můžete použít k ak
 
 1. Změňte na projekt v sadě Visual Studio.
 
-1. Na **projektu** nabídce zvolte **exportovat šablonu...** .
+1. Na **projektu** nabídce zvolte **exportovat šablonu**.
 
     **Průvodce exportem šablony** otevře.
 
-1. Postupujte podle pokynů v Průvodci vyexportujte šablonu jako soubor ZIP.
+1. Postupujte podle pokynů v průvodci export šablony jako *.zip* souboru.
 
-1. (Volitelné) Chcete-li přidat šablonu, kterou chcete **nový projekt** dialogové okno pole, uložte soubor .zip v následujícím adresáři: %USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ProjectTemplates. Bude nutné tento krok proveďte, pokud jste nevybrali možnost **automaticky importovat šablonu do sady Visual Studio** v **Průvodce exportem šablony**.
+1. (Volitelné) Chcete-li přidat šablonu, kterou chcete **nový projekt** dialogové okno, místo *.zip* soubor v následujícím adresáři: *%USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ProjectTemplates*. Bude nutné tento krok proveďte, pokud jste nevybrali možnost **automaticky importovat šablonu do sady Visual Studio** v **Průvodce exportem šablony**.
 
-1. Odstraňte původní soubor .zip šablony.
+1. Odstranit starou šablonu *.zip* souboru.
 
-## <a name="manually-updating-an-existing-template"></a>Ruční aktualizace existující šablony
+## <a name="manually-update-an-existing-template"></a>Ručně aktualizovat existující šablony
 
-Můžete aktualizovat existující šablony bez použití **Průvodce exportem šablony**, úpravou soubory v komprimovaném souboru ZIP.
+Můžete aktualizovat existující šablony bez použití **Průvodce exportem šablony**, úpravou souborů komprimovaný *.zip* souboru.
 
 ### <a name="to-manually-update-an-existing-template"></a>Chcete-li ručně aktualizovat existující šablony
 
-1. Vyhledejte soubor .zip, který obsahuje šablony. Šablony projektů uživatele jsou obvykle umístěné na %USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ProjectTemplates.
+1. Vyhledejte *.zip* soubor, který obsahuje šablony. Šablony projektů uživatele jsou umístěny na *%USERPROFILE%\Documents\Visual Studio \<verze\>\Templates\ProjectTemplates*.
 
-1. Rozbalte soubor .zip.
+1. Extrahování *.zip* souboru.
 
 1. Upravit nebo odstranit aktuální soubory šablon nebo přidejte nové soubory do šablony.
 
-1. Otevřít, upravit a uložit .vstemplate soubor XML pro zpracování chování aktualizované nebo nové soubory.
+1. Otevřít, upravit a uložit *.vstemplate* soubor XML pro zpracování chování aktualizované nebo nové soubory.
 
-    Další informace o schématu .vstemplate najdete v tématu [odkaz na schéma šablon sady Visual Studio (rozšiřitelnost)](../extensibility/visual-studio-template-schema-reference.md). Další informace o můžete parametrizovat ve zdrojových souborech najdete v tématu [parametry šablony](../ide/template-parameters.md).
+    Další informace o *.vstemplate* schématu, najdete v části [odkaz na schéma šablon sady Visual Studio (rozšiřitelnost)](../extensibility/visual-studio-template-schema-reference.md). Další informace o můžete parametrizovat ve zdrojových souborech najdete v tématu [parametry šablony](../ide/template-parameters.md).
 
 1. Vyberte soubory v šabloně a v nabídce klikněte pravým tlačítkem nebo kontextu a zvolte **poslat** > **komprimované složky (ZIP)**.
 
-    Do souboru .zip jsou komprimované soubory, které jste vybrali.
+    Do jsou komprimované soubory, které jste vybrali *.zip* souboru.
 
-1. Nový soubor .zip umístěte do stejného adresáře jako starý soubor .zip.
+1. Uveďte nové *.zip* souboru ve stejném adresáři jako starý *.zip* souboru.
 
-1. Odstraňte extrahované soubory šablony a původní soubor .zip šablony.
+1. Odstranit extrahované soubory šablony a starou šablonu *.zip* souboru.
 
 ## <a name="see-also"></a>Viz také
 
-[Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)  
+[Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)  
 [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)  
-[Odkaz na schéma šablon sady Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
+[Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)  
 [Parametry šablony](../ide/template-parameters.md)  
-[Postupy: Vytváření startovních sad](../ide/how-to-create-starter-kits.md)
+[Postupy: vytváření Startovních sad](../ide/how-to-create-starter-kits.md)

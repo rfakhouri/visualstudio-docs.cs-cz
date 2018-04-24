@@ -1,12 +1,9 @@
 ---
 title: Ladění kódu jazyka Python na vzdálených počítačích systému Linux
 description: Jak používat k ladění kódu Pythonu spuštěný na vzdálených počítačích systému Linux, včetně nezbytné konfigurační kroky, zabezpečení a řešení potíží s Visual Studio.
-ms.custom: ''
 ms.date: 07/12/2017
-ms.technology:
-- devlang-python
-dev_langs:
-- python
+ms.prod: visual-studio-dev15
+ms.technology: vs-python
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
@@ -14,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 03a4f1e6dadb85a2ffdb451543e25fee9c6f0150
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1a5a4f5b0400c4bf3896e2d1c1ec7ec3e8664d31
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="remotely-debugging-python-code-on-linux"></a>Vzdálené ladění kódu jazyka Python v systému Linux
 

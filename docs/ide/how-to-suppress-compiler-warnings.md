@@ -9,17 +9,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08e224a25a30345cffc73bb5442d7fe6acd8b35b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 25fc8d4412410c2687593661760dcf94512c972b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Postupy: potlačení upozornění kompilátoru
 
-Pomocí filtrování na jeden nebo více druhů upozornění kompilátoru můžete declutter protokolu sestavení. Například můžete chtít zkontrolovat jenom některé z výstupu, který se vygeneruje, když nastavíte podrobností protokolu sestavení na normální, podrobnosti nebo diagnostiky. Další informace o podrobností najdete v tématu [postupy: zobrazení, uložit a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).
+Pomocí filtrování na jeden nebo více druhů upozornění kompilátoru můžete declutter protokolu sestavení. Například můžete chtít zkontrolovat jenom některé z výstupu, který se vygeneruje, když nastavíte podrobností protokolu sestavení na **normální**, **podrobné**, nebo **diagnostiky**. Další informace o podrobností najdete v tématu [postupy: zobrazení, uložit a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppressing-specific-warnings-for-visual-c-or-f"></a>Potlačení upozornění specifické pro Visual C# nebo F # #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Potlačení upozornění specifické pro Visual C# nebo F # #
 
 Použití **sestavení** na stránce vlastností potlačení konkrétní upozornění pro projekty C# a F #.
 
@@ -33,7 +33,7 @@ Použití **sestavení** na stránce vlastností potlačení konkrétní upozorn
 
 1. Znovu sestavte řešení.
 
-## <a name="suppressing-specific-warnings-for-visual-c"></a>Potlačení upozornění specifické pro Visual C++
+## <a name="suppress-specific-warnings-for-visual-c"></a>Potlačení upozornění specifické pro Visual C++
 
 Použití **vlastnosti konfigurace** potlačení konkrétní upozornění pro projekty C++ na stránce vlastností.
 
@@ -51,7 +51,7 @@ Použití **vlastnosti konfigurace** potlačení konkrétní upozornění pro pr
 
 1. Vyberte **OK** tlačítko a pak znovu sestavte řešení.
 
-## <a name="suppressing-warnings-for-visual-basic"></a>Potlačení upozornění v jazyce Visual Basic
+## <a name="suppress-warnings-for-visual-basic"></a>Potlačení upozornění v jazyce Visual Basic
 
 Upozornění konkrétní kompilátoru jazyka Visual Basic můžete skrýt, a to úpravou *.vbproj* soubor projektu. Potlačit upozornění podle *kategorie*, můžete použít [stránka vlastností kompilace](../ide/reference/compile-page-project-designer-visual-basic.md). Další informace najdete v tématu [Konfigurace upozornění v jazyce Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -63,7 +63,7 @@ Tento příklad ukazuje, jak upravit *.vbproj* potlačení upozornění kompilá
 
 1. Na řádku nabídek zvolte **projektu** > **uvolnit projekt**.
 
-1. V **Průzkumníku řešení**, otevřete v klikněte pravým tlačítkem nebo v místní nabídce pro projekt a zvolte **upravit** *ProjectName* **.vbproj**.
+1. V **Průzkumníku řešení**, otevřete v klikněte pravým tlačítkem nebo v místní nabídce pro projekt a zvolte **upravit <ProjectName>.vbproj**.
 
     Soubor XML projekt se otevře v editoru kódu.
 
@@ -112,7 +112,7 @@ Tento příklad ukazuje, jak upravit *.vbproj* potlačení upozornění kompilá
 
 Další informace najdete v tématu [/nowarn – možnost kompilátoru](/dotnet/visual-basic/reference/command-line-compiler/nowarn) pro Visual Basic – kompilátor příkazového řádku.
 
-## <a name="suppressing-warnings-for-nuget-packages"></a>Potlačení upozornění pro balíčky NuGet
+## <a name="suppress-warnings-for-nuget-packages"></a>Potlačení upozornění pro balíčky NuGet
 
 V některých případech můžete chtít potlačení upozornění kompilátoru NuGet pro jeden balíček NuGet, ne pro celý projekt. Upozornění slouží účelu, takže nechcete potlačit na úrovni projektu. Například jedna NuGet upozornění, zjistíte, balíček nemusí být plně kompatibilní s projektem. Pokud můžete potlačit na úrovni projektu a později přidat další balíčky NuGet, by nikdy vědět, pokud vyrábí kompatibility upozornění.
 
@@ -132,6 +132,6 @@ V některých případech můžete chtít potlačení upozornění kompilátoru 
 
 ## <a name="see-also"></a>Viz také
 
-[Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md)  
-[Postupy: Zobrazování, ukládání a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)  
+[Návod: Vytvoření aplikace](../ide/walkthrough-building-an-application.md)  
+[Postupy: zobrazení, uložit a konfigurace souborů protokolu sestavení](../ide/how-to-view-save-and-configure-build-log-files.md)  
 [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

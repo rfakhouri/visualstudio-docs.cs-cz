@@ -1,5 +1,5 @@
 ---
-title: Použití příkazu Obklopit s fragmenty kódu | Microsoft Docs
+title: Postup použití příkazu Obklopit s fragmenty kódu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0081d0d0e417f57a5fe9f0e2f52bb4f319e35e9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 044eb79eec4d0ee4ee4684c2e01ea73a94fef7ba
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Postupy: použití příkazu Obklopit s fragmenty kódu
 
@@ -26,7 +26,7 @@ Následující postupy popisují, jak používat obklopit fragmenty kódu. Obklo
 
 1. V prostředí Visual Studio IDE otevřete soubor, který chcete upravit.
 
-1. V editoru kódu, vyberte text, který má uzavřete.
+1. V **Editor kódu**, vyberte text, který má uzavřete.
 
 1. Typ **Ctrl**+**tisíc**, **Ctrl**+**S**.
 
@@ -36,7 +36,7 @@ Následující postupy popisují, jak používat obklopit fragmenty kódu. Obklo
 
 1. V prostředí Visual Studio IDE otevřete soubor, který chcete upravit.
 
-1. V editoru kódu, vyberte text, který má uzavřete.
+1. V **Editor kódu**, vyberte text, který má uzavřete.
 
 1. Z **upravit** nabídce vyberte možnost **IntelliSense** a pak vyberte **příkazu Obklopit s** příkaz.
 
@@ -48,7 +48,7 @@ Následující postupy popisují, jak používat obklopit fragmenty kódu. Obklo
 
 1. V prostředí Visual Studio IDE otevřete soubor, který chcete upravit.
 
-1. V editoru kódu, vyberte text, který má uzavřete.
+1. V **Editor kódu**, vyberte text, který má uzavřete.
 
 1. Klikněte pravým tlačítkem na vybraný text a pak vyberte **příkazu Obklopit s** příkaz v místní nabídce.
 

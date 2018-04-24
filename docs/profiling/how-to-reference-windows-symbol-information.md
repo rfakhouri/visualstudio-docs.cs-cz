@@ -2,8 +2,7 @@
 title: 'Postupy: referenční informace o symbolech Windows | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, symbol servers
@@ -16,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c781da02480bb09bce0f69eb92736df6fe83d50a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 247a152cd04a262115cbde78a7a06ad2e95f250c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Postupy: Referenční informace o symbolech Windows
 Visual Studio Tools profilace soubory symbolu (.pdb) použít k vyřešení symbolický názvy, například názvy funkcí v binárních souborech programu. Můžete provést tyto kroky automaticky stáhnout a aktualizovat soubory PDB správné pro verzi systému Windows v místním počítači.  

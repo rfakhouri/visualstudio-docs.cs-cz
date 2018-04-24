@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65aa95f5e4178805bc1b6d9cddbcd15fc9159c99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9dd1ce6aa91054ffee2f82386c016acc0fe5ba7c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Postupy: Změna písma a barev v sadě Visual Studio
 
@@ -33,7 +33,7 @@ Můžete přizpůsobit barvu IDE rámec a nástroj windows v sadě Visual Studio
 
 1. V seznamu možnosti vyberte **prostředí** > **Obecné**.
 
-1. V **barevný motiv** vyberte buď výchozí **Blue** motiv, **tmavý** nebo **Light**.
+1. V **barevný motiv** vyberte buď výchozí **Blue** motiv, **tmavý**, nebo **Light**.
 
 > [!NOTE]
 > Když změníte barvu motivu, text v prostředí IDE obnoví na výchozí hodnoty nebo dříve přizpůsobeno písem a velikosti.
@@ -43,7 +43,7 @@ Můžete přizpůsobit barvu IDE rámec a nástroj windows v sadě Visual Studio
 
 ## <a name="use-windows-high-contrast-colors"></a>Používat barvy systému Windows vysoký kontrast
 
-Vyberte **doleva Alt** + **posunutí doleva** + **PrtScn** klíče.
+Vyberte **doleva Alt**+**posunutí doleva**+**PrtScn** klíče.
 
 > [!WARNING]
 > Tento parametr nastaví vysoký kontrast pro všechny aplikace a uživatelského rozhraní v počítači.
@@ -61,7 +61,7 @@ Můžete změnit velikost písma a text pro všechna okna a dialogová okna v pr
 1. V **zobrazit nastavení pro** vyberte **prostředí písma**.
 
     > [!TIP]
-    > Pokud chcete změnit písmo pro nástroj windows pouze v **zobrazit nastavení pro** vyberte **[všechna okna textových nástrojů]**.
+    > Pokud chcete změnit písmo pro nástroj windows pouze v **zobrazit nastavení pro** vyberte **všechna okna textových nástrojů**.
 
 1. V **písma** vyberte písmo.
 
@@ -69,5 +69,6 @@ Můžete změnit velikost písma a text pro všechna okna a dialogová okna v pr
 
 ## <a name="see-also"></a>Viz také
 
-[Funkce pro usnadnění přístupu sady Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)
-[postupy: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+[Funkce pro usnadnění přístupu sady Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)  
+
+[Postupy: Změna písma a barev v editoru](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

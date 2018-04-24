@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bca2835a17ddf26245e00ea2e9217360a89ba15
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ff36af9a034f3a369369a0916f468826c053d05
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Postupy: přizpůsobení posuvník sledují kódu
 
@@ -23,7 +23,7 @@ Při práci se soubory dlouho kódu, může být obtížné všechno mějte na p
 
 1. Posuvník můžete nastavit pro zobrazení změn kódu, zarážky, chyb a záložky.
 
-    Otevřete **posuvníku** stránka Možnosti výběrem **nástroje** > **možnosti** > **textového editoru**  >  **Všechny jazyky** nebo konkrétní jazyk, nebo zadáním **posuvníku** v okně Snadné spuštění.
+    Otevřete **posuvníku** stránka Možnosti výběrem **nástroje** > **možnosti** > **textového editoru**  >  **Všechny jazyky** nebo konkrétní jazyk, nebo zadáním **posuvníku** v **Snadné spuštění** okno.
 
 2. Vyberte **zobrazit poznámky přes svislý posuvník**, pak vybrat poznámky, které chcete zobrazit.
 
@@ -45,7 +45,7 @@ Při práci se soubory dlouho kódu, může být obtížné všechno mějte na p
 
     Na **posuvníku** možnosti vyberte buď **použití panelu režim pro svislý posuvník** nebo **Map použití režimu pro svislý posuvník**. Šířka v můžete **zdroj přehled** rozevíracího seznamu.
 
-    Zde je, jak vypadá v příkladu vyhledávání když je režim mapy na a šířka je nastavena na hodnotu Střední:
+    Zde je, jak vypadá v příkladu vyhledávání map režim je na a šířka je nastavena na **střední**:
 
     ![Posuvník v režimu mapy](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")
 

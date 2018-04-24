@@ -2,8 +2,7 @@
 title: Vizualizace událostí EventSource v podobě značek | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 3a10022a-5c37-48b1-a833-dd35902176b6
 author: mikejo5000
@@ -11,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6d1e8ec1f6093a3979401f7fa0192dd9da97a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: acb8959aa18741c61e4a6719641645eb9be9ea70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Vizualizace událostí EventSource v podobě značek
 Vizualizér souběžnosti můžete zobrazit událostí EventSource jako značky a můžete řídit zobrazení značek. Chcete-li zobrazit EventSource značek, zaregistrujte zprostředkovatele trasování událostí pro Windows GUID pomocí [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno. Vizualizér souběžnosti má výchozích konvencí představují událostí EventSource jako [značky příznaků](../profiling/flag-markers.md), [značky Span](../profiling/span-markers.md), a [značky zpráv](../profiling/message-markers.md). Zobrazení událostí EventSource přidáním vlastních polí k událostem, které můžete přizpůsobit. Další informace o značkách najdete v části [značek Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md). Další informace o událostech EventSource najdete v tématu <xref:System.Diagnostics.Tracing>.  

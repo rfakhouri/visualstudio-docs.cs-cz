@@ -11,13 +11,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fcfe1170c3b5503baa1515227a954080d10ed09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a09f18ccb491474c5db20724ccea501fc94c14a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Postupy: Vyloučení projektů ze sestavení
+# <a name="how-to-exclude-projects-from-a-build"></a>Postupy: vyloučení projektů ze sestavení
 Můžete vytvořit řešení bez vytváření všechny projekty, které obsahuje. Například může vyloučit projekt, který dělí sestavení. Je pak sestavení projektu po byste prozkoumat a adresu problémy.  
   
  Pomocí následujících postupů můžete vyloučit projektu:  
@@ -26,11 +26,11 @@ Můžete vytvořit řešení bez vytváření všechny projekty, které obsahuje
   
 -   Vytvoření konfigurace řešení, která neobsahuje projekt.  
   
- Další informace najdete v tématu [Principy konfigurací sestavení](../ide/understanding-build-configurations.md).  
+ Další informace najdete v tématu [Rady pro pochopení konfigurace sestavení](../ide/understanding-build-configurations.md).  
   
 ### <a name="to-temporarily-remove-a-project-from-the-active-solution-configuration"></a>Dočasně odebrání konfigurace aktivního řešení projektu  
   
-1.  Na řádku nabídek zvolte **sestavení**, **nástroje Configuration Manager**.  
+1.  Na řádku nabídek zvolte **sestavení** > **nástroje Configuration Manager**.  
   
 2.  V **projektu kontexty** tabulky, vyhledejte projektu, které chcete vyloučit z buildu.  
   
@@ -40,7 +40,7 @@ Můžete vytvořit řešení bez vytváření všechny projekty, které obsahuje
   
 ### <a name="to-create-a-solution-configuration-that-excludes-a-project"></a>Pro vytvoření konfigurace řešení, které vylučuje projektu  
   
-1.  Na řádku nabídek zvolte **sestavení**, **nástroje Configuration Manager**.  
+1.  Na řádku nabídek zvolte **sestavení** > **nástroje Configuration Manager**.  
   
 2.  V **aktivní konfigurace řešení** vyberte  **\<nový >**.  
   
@@ -52,9 +52,9 @@ Můžete vytvořit řešení bez vytváření všechny projekty, které obsahuje
   
 6.  Na **standardní** nástrojů ověřte, zda se nová konfigurace řešení je aktivní konfigurace v **konfigurace řešení** pole.  
   
-7.  Na řádku nabídek zvolte **sestavení**, **znovu sestavit řešení**.  
+7.  Na řádku nabídek zvolte **sestavení** > **znovu sestavit řešení**.  
   
 ## <a name="see-also"></a>Viz také  
- [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)   
+ [Pochopení konfigurace sestavení](../ide/understanding-build-configurations.md)   
  [Postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)   
- [Postupy: Sestavení více konfigurací současně](../ide/how-to-build-multiple-configurations-simultaneously.md)
+ [Postupy: sestavení více konfigurací současně](../ide/how-to-build-multiple-configurations-simultaneously.md)

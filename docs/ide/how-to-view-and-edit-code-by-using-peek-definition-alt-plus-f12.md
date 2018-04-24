@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6881d7569e1d8052c6bdd9db1b521b848ab54df7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Postupy: zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)
 
@@ -73,18 +73,18 @@ Můžete použít tyto klávesové zkratky s **funkce Náhled definice** okno:
 
 |Funkce|Klávesová zkratka|
 |-------------------|:-----------------------:|
-|Otevřít okno definice|Alt+F12|
-|Zavřít okno definice|Esc|
-|Povýšit okno definice na běžnou kartu dokumentu|Shift+Alt+Home|
-|Navigace mezi okny definice|Ctrl+Alt+- a Ctrl+Alt+=|
-|Navigace mezi několika výsledky|F8 a Shift+F8|
-|Přepnout mezi oknem editoru kódu a oknem definice|Shift+Esc|
+|Otevřít okno definice|**ALT**+**F12**|
+|Zavřít okno definice|**ESC**|
+|Povýšit okno definice na běžnou kartu dokumentu|**Posunutí**+**Alt**+**Domů**|
+|Navigace mezi okny definice|**CTRL**+**Alt** + **-** a **Ctrl**+**Alt**+**=**|
+|Navigace mezi několika výsledky|**F8** a **Shift**+**F8**|
+|Přepnout mezi oknem editoru kódu a oknem definice|**Posunutí**+**Esc**|
 
 > [!NOTE]
 > Můžete také použít stejné klávesové zkratky úprav kódu v **funkce Náhled definice** okno jako můžete použít na jiném místě v sadě Visual Studio.
 
 ## <a name="see-also"></a>Viz také
 
-[Navigace v kódu](../ide/navigating-code.md)  
+[Přejděte kódu](../ide/navigating-code.md)  
 [Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)  
 [Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md)

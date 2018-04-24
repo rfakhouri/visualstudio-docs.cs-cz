@@ -2,8 +2,7 @@
 title: Navigátor využití | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.utilizationnavigator
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d970b8d8ddd599c9c8db383cfe46187d6890976
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb7829408a2cb4cee74c4059d03567c3fc7f6c8a
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="utilization-navigator"></a>Navigátor využití
 Navigátor využití v Concurrency Visualizer slouží k vyberte časový interval v trasování. Vizualizér souběžnosti znázorňuje využití jader procesoru procesem cíl v průběhu času. To usnadňuje zkontrolujte vzorů využití procesoru a také umožňuje srovnání data o využití a data v ostatních zobrazeních. Navigátor využití se zobrazí v horní části každé zobrazení v vizualizér souběžnosti. Následující obrázek znázorňuje Navigátor využití.  

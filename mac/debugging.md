@@ -1,17 +1,16 @@
 ---
-title: "Ladění pomocí Xamarin | Microsoft Docs"
-description: "Ladění je běžné a potřeby součástí programování. Visual Studio pro Mac jako vyspělá rozhraní IDE, obsahuje celou sadu funkcí, které usnadňují easy ladění. Z bezpečné ladění, k vizualizaci dat, tento článek vysvětluje, jak použít úplnou potenciálně ladění v sadě Visual Studio for Mac."
+title: Ladění pomocí Xamarinu
+description: Ladění je běžné a potřeby součástí programování. Visual Studio pro Mac jako vyspělá rozhraní IDE, obsahuje celou sadu funkcí, které usnadňují easy ladění. Z bezpečné ladění, k vizualizaci dat, tento článek vysvětluje, jak použít úplnou potenciálně ladění v sadě Visual Studio for Mac.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
-ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 6d85c318b60e065be86d242bf3199b3716c59ada
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 98ad12d43021b76f884e50826f09ddee2e1c765f
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="debugging-with-xamarin"></a>Ladění pomocí Xamarinu
 

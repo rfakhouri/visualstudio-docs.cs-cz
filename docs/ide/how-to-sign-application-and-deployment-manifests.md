@@ -20,34 +20,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a883995f95c5eaab86a14f07f9372614078d3c79
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d3696762d950c913effb10d1ce15f22bd2cfc075
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Postupy: Podepsání manifestů aplikace a nasazení
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Postupy: podepsání manifestů aplikace a nasazení
 Pokud chcete publikovat aplikace pomocí ClickOnce – nasazení, manifestů aplikace a nasazení musí být podepsané páru veřejného a privátního klíče RSA a podepsaný pomocí technologie Authenticode. Manifesty můžete podepsat pomocí certifikátu z úložiště certifikátů Windows nebo soubor klíče.  
   
  Další informace o nasazení pomocí technologie ClickOnce najdete v tématu [ClickOnce – zabezpečení a nasazení](../deployment/clickonce-security-and-deployment.md).  
   
- Podepisování manifestů ClickOnce je volitelný pro aplikace založené na .exe. Další informace najdete v části "Generování nepodepsaných manifestů" tohoto dokumentu.  
+ Podepisování manifestů ClickOnce je pro volitelné *.exe*– na základě aplikací. Další informace najdete v části "Generovat nepodepsané manifesty" tohoto dokumentu.  
   
- Informace o vytváření soubory klíčů najdete v tématu [postupy: vytvoření pár veřejného a privátního klíče](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
+ Informace o vytváření soubory klíčů najdete v tématu [postupy: vytvoření páru veřejného a privátního klíče RSA](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).  
   
 > [!NOTE]
->  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají příponu PFX. Nicméně můžete vybrat jiné typy certifikátů z úložiště certifikátů aktuálního uživatele systému Windows kliknutím **zvolit z úložiště** na **podpisování** stránky vlastností projektu.  
+>  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podporuje pouze soubory klíčů Personal Information Exchange (PFX), které mají *.pfx* rozšíření. Nicméně můžete vybrat jiné typy certifikátů z úložiště certifikátů aktuálního uživatele systému Windows kliknutím **zvolit z úložiště** na **podpisování** stránky vlastností projektu.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>K podepsání aplikace a nasazení manifesty pomocí certifikátu  
   
-1.  Přejděte do okna vlastností projektu (klikněte pravým tlačítkem na uzel projektu v **Průzkumníku řešení** a vyberte **vlastnosti**, nebo typ **projektu vlastnosti** v **Snadné spuštění** okno, nebo stiskněte klávesovou zkratku ALT + zadejte uvnitř **Průzkumníku řešení** okno). Na **podpisování** vyberte **podepsání manifestů ClickOnce** zaškrtávací políčko.  
+1.  Přejděte do okna vlastností projektu (klikněte pravým tlačítkem na uzel projektu v **Průzkumníku řešení** a vyberte **vlastnosti**, nebo typ **projektu vlastnosti** v **Snadné spuštění** okno, nebo klikněte na tlačítko **Alt**+**Enter** uvnitř **Průzkumníku řešení** okno). Na **podpisování** vyberte **podepsání manifestů ClickOnce** zaškrtávací políčko.  
   
 2.  Klikněte **zvolit z úložiště** tlačítko.  
   
      **Vyberte certifikát, který** se zobrazí dialogové okno a zobrazí obsah úložiště certifikátů systému Windows.  
   
     > [!TIP]
-    >  Pokud kliknete na tlačítko **kliknutím sem můžete zobrazit vlastnosti certifikátu**, **podrobnosti certifikátu** zobrazí se dialogové okno. Toto dialogové okno obsahuje podrobné informace o certifikátu a obsahuje další možnosti. Můžete kliknout na **certifikáty** chcete zobrazit další informace.  
+    >  Pokud kliknete na tlačítko **kliknutím sem můžete zobrazit vlastnosti certifikátu**, **podrobnosti certifikátu** zobrazí se dialogové okno. Toto dialogové okno obsahuje podrobné informace o certifikátu a obsahuje další možnosti. Můžete kliknout na **certifikáty** na zobrazení další informace nápovědy.  
   
 3.  Vyberte certifikát, který chcete použít k podepsání manifestů.  
   
@@ -61,14 +61,14 @@ Pokud chcete publikovat aplikace pomocí ClickOnce – nasazení, manifestů apl
   
      **Vyberte soubor** zobrazí se dialogové okno.  
   
-3.  V **dialogové okno Vybrat soubor** pole, přejděte do umístění souboru klíče (.pfx), kterou chcete použít a pak klikněte na **otevřete**.  
+3.  V **vyberte soubor** dialogové okno, přejděte do umístění souboru klíče (*.pfx*), kterou chcete použít a pak klikněte na **otevřete**.  
   
     > [!NOTE]
-    >  Tato volba podporuje jen soubory s příponou .pfx. Pokud máte soubor klíče nebo certifikát v jiném formátu, uložte ho v úložišti certifikátů systému Windows a vyberte certifikát, který je popsaný v předchozím postupu. Vybraný certifikát účel by měly obsahovat, podepisování kódu.  
+    >  Tato volba podporuje pouze soubory, které mají *.pfx* rozšíření. Pokud máte soubor klíče nebo certifikát v jiném formátu, uložte ho v úložišti certifikátů systému Windows a vyberte certifikát, který je popsaný v předchozím postupu. Vybraný certifikát účel by měly obsahovat, podepisování kódu.  
   
-     **Zadejte heslo k otevření souboru** zobrazí se dialogové okno. (Pokud soubor PFX je již uložen v úložišti certifikátů systému Windows, nebo není chráněn heslem, nezobrazí se výzva k zadání hesla.)  
+     **Zadejte heslo k otevření souboru** zobrazí se dialogové okno. (Pokud *.pfx* soubor je již uložen v úložišti certifikátů systému Windows, nebo není chráněn heslem, nezobrazí se výzva k zadání hesla.)  
   
-4.  Zadejte heslo pro přístup k souboru klíče a stiskněte klávesu ENTER.  
+4.  Zadejte heslo pro přístup k souboru s klíčem a stiskněte klávesu **Enter**.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>K podepsání aplikace a nasazení manifesty pomocí testovacího certifikátu  
   
@@ -78,8 +78,8 @@ Pokud chcete publikovat aplikace pomocí ClickOnce – nasazení, manifestů apl
   
 3.  V **vytvořit testovací certifikát** dialogovém okně zadejte heslo, které pomáhá zabezpečit váš testovací certifikát.  
   
-## <a name="generating-unsigned-manifests"></a>Generování nepodepsaných manifestů  
- Podepisování manifestů ClickOnce je volitelný pro aplikace založené na .exe. Následující postupy ukazují, jak vygenerovat nepodepsané manifesty ClickOnce.  
+## <a name="generate-unsigned-manifests"></a>Generovat nepodepsané manifesty  
+ Podepisování manifestů ClickOnce je pro volitelné *.exe*– na základě aplikací. Následující postupy ukazují, jak vygenerovat nepodepsané manifesty ClickOnce.  
   
 > [!IMPORTANT]
 >  Nepodepsané manifesty můžete zjednodušit vývoje a testování vaší aplikace. Nepodepsané manifesty však zavést významné bezpečnostní riziko v produkčním prostředí. Pouze na nabídnuté pomocí nepodepsané manifesty, pokud vaše aplikace ClickOnce běží na počítačích v rámci sítě intranet, který je naprosto izolované od Internetu, nebo jiné zdroje škodlivý kód.  
@@ -92,7 +92,7 @@ Pokud chcete publikovat aplikace pomocí ClickOnce – nasazení, manifestů apl
   
 2.  Na **podpisování** zrušte zaškrtnutí políčka **podepsání manifestů ClickOnce** zaškrtávací políčko.  
   
-3.  Resetujte verzi publikování, je k dispozici pouze jedna verze vaší aplikace. Ve výchozím nastavení Visual Studio automaticky zvýší číslo revize verze publikování pokaždé, když publikování aplikace. Další informace najdete v tématu [postupy: nastavení verze publikování ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3.  Resetujte verzi publikování, je k dispozici pouze jedna verze vaší aplikace. Ve výchozím nastavení Visual Studio automaticky zvýší číslo revize verze publikování pokaždé, když publikování aplikace. Další informace najdete v tématu [postupy: verze publikování ClickOnce sadu](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
 4.  Publikování aplikace.  
   

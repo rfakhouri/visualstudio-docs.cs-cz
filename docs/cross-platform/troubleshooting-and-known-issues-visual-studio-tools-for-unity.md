@@ -10,11 +10,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 03329be39ba94984424999c2878b060f01ccd6de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cb1da2ec2c41fcbec78864868d116bcd1684a5b2
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Odstraňování potíží a známé problémy (Visual Studio Tools for Unity)
 V této části najdete řešení pro běžné problémy s nástroji Visual Studio Tools for Unity, popisem známých problémů a zjistěte, jak můžete pomocí Visual Studio Tools for Unity zlepšit zasílání zpráv o chybách.
@@ -37,8 +37,11 @@ To by měl opravit příslušný problém. V případě, že se stále setkává
  devenv /setup
 ```
 
-### <a name="issues-with-vs2015-and-intellisense-or-code-coloration"></a>Problémy s zabarvení VS2015 a IntelliSense nebo kódu.
+### <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Problémy s zabarvení Visual Studio 2015 a IntelliSense nebo kódu.
 Pokuste se upgrade vaší Visual Studio 2015 s aktualizací 3.
+
+### <a name="shader-files-without-code-coloration-when-using-visual-studio-2017"></a>Soubory shaderu bez kódu zabarvení při použití Visual Studio 2017
+Ujistěte se, zda zatížení "Desktop vývoj s C++" je nainstalován v instanci aplikace Visual Studio 2017. Analyzátor jazyka C/C++ použitý pro kód zabarvení je instalován s tímto zatížením.
 
 ### <a name="visual-studio-hangs"></a>Visual Studio přestane reagovat.
 Několik modulů plug-in Unity jako analýzy, FMOD, JÍMKU (Universal Media Player), ZFBrowser nebo vložené prohlížeče používají nativní vláken. Problém je při ukončení modulů plug-in až nativní vlákno se připojuje k modul runtime, který poté provede blokování volání operačního systému. To znamená Unity nelze přerušení daném vláknu pro ladicí program (nebo opětovného načtení domény) a zablokuje.
@@ -53,6 +56,12 @@ Ujistěte se, že nikdy touch soubory projektu přímo z procesor asset nebo jak
 
 Pokud zaznamenáte navíc zavážky nebo pokud je ztráta Visual Studio všechna otevřená okna na znovu načíst, ujistěte se, zda máte správné .NET cílení nainstalovány sady. Zkontrolujte následující část o rozhraní pro další informace.
 
+###  <a name="the-debugger-does-not-break-on-exceptions"></a>Ladicí program nedochází k přerušení na výjimky
+Pokud používáte starší verzi modulu runtime Unity (ekvivalent rozhraní .NET 3.5), bude vždy rozdělit ladicí program po neošetřené výjimce (= mimo blok try/catch –). Pokud je výjimka ošetřena, použije ladicí program okno nastavení výjimky k určení, zda zalomení je vyžadován, nebo ne.
+
+Nový modul runtime (ekvivalent rozhraní .NET 4.6) Unity zavedl nový způsob, jak Správa výjimek uživatele a v důsledku toho jsou všechny výjimky považovány za "ošetřeno uživatelem" i když jsou mimo blok try/catch. Proto nyní je třeba explicitně je kontrolovat v okně Nastavení výjimek, pokud chcete, aby ladicí program na přerušení.
+
+V okně Nastavení výjimky (ladění > Windows > Nastavení výjimky), rozbalte uzel pro kategorii výjimek (například běžné výjimky modulu CLR, což znamená výjimky .NET) a zaškrtněte políčko pro konkrétní výjimky, které chcete catch v rámci této kategorie (například System.NullReferenceException). Můžete také vybrat celou kategorii výjimky.
 
 ### <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>V systému Windows Visual Studio požádá ke stažení cílové rozhraní Unity
 Visual Studio Tools for Unity vyžaduje rozhraní .NET framework 3.5, která není nainstalovaná ve výchozím nastavení v systému Windows 8 nebo 10. Chcete-li tento problém vyřešit, postupujte podle pokynů ke stažení a instalaci rozhraní .NET framework 3.5.

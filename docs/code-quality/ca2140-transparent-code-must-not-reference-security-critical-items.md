@@ -1,10 +1,8 @@
 ---
-title: 'CA2140: Transparentní kód nesmí odkazovat na položky kritické pro zabezpečení | Microsoft Docs'
-ms.custom: ''
+title: 'CA2140: Transparentní kód nesmí odkazovat na položky kritické pro zabezpečení'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-code-analysis
-ms.topic: conceptual
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2129
 - SecurityTransparentCodeShouldNotReferenceNonpublicSecurityCriticalCode
@@ -19,62 +17,58 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59fe9c1e88419a9bc0a5f0846e1857931919c213
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 779b26797dfda4b66b8b3941f76654590cff4843
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: Transparentní kód nesmí odkazovat na položky kritické pro zabezpečení
-|||  
-|-|-|  
-|TypeName|TransparentMethodsMustNotReferenceCriticalCode|  
-|CheckId|CA2140|  
-|Kategorie|Microsoft.Security|  
-|Narušující změna|Narušující|  
-  
-## <a name="cause"></a>příčina  
- Transparentní metody:  
-  
--   zpracovává typ zabezpečení zabezpečení kritické výjimky  
-  
--   má parametr, který je označen jako kritické typ zabezpečení  
-  
--   má obecný parametr s omezeními kritická zabezpečení  
-  
--   má místní proměnné kritické typu zabezpečení  
-  
--   odkazuje na typ, který je označený jako zabezpečení kritické  
-  
--   volá metodu, která je označena jako zabezpečení kritické  
-  
--   odkazuje na pole, která je označena jako zabezpečení kritické  
-  
--   Vrátí typ, který je označen jako zabezpečení kritické  
-  
-## <a name="rule-description"></a>Popis pravidla  
- Element kódu, který je označený <xref:System.Security.SecurityCriticalAttribute> atribut je kritické pro zabezpečení. Transparentní metoda nemůže použít prvek kritický pro zabezpečení. Pokud typu transparentní pokusí použít kritické typ zabezpečení <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , nebo <xref:System.FieldAccessException> je vyvolána.  
-  
-## <a name="how-to-fix-violations"></a>Jak vyřešit porušení  
- Opravit porušení toto pravidlo, proveďte jednu z následujících akcí:  
-  
--   Označit tento element kódu, která používá kód kritický pro zabezpečení s <xref:System.Security.SecurityCriticalAttribute> atribut  
-  
-     \- nebo –  
-  
--   Odeberte <xref:System.Security.SecurityCriticalAttribute> atribut z elementy kódu, které jsou označeny jako zabezpečení důležité a místo toho označit je pomocí <xref:System.Security.SecuritySafeCriticalAttribute> nebo <xref:System.Security.SecurityTransparentAttribute> atribut.  
-  
-## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění  
- Nepotlačujte upozornění na toto pravidlo.  
-  
-## <a name="example"></a>Příklad  
- V následujících příkladech transparentní metody pokusí odkazovat kritické obecnou kolekci zabezpečení, kritické položky zabezpečení a důležité metodu zabezpečení.  
-  
- [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]  
-  
-## <a name="see-also"></a>Viz také  
- <xref:System.Security.SecurityTransparentAttribute>   
- <xref:System.Security.SecurityCriticalAttribute>   
- <xref:System.Security.SecurityTransparentAttribute>   
- <xref:System.Security.SecurityTreatAsSafeAttribute>   
- <xref:System.Security?displayProperty=fullName>
+|||
+|-|-|
+|TypeName|TransparentMethodsMustNotReferenceCriticalCode|
+|CheckId|CA2140|
+|Kategorie|Microsoft.Security|
+|Narušující změna|Narušující|
+
+## <a name="cause"></a>příčina
+ Transparentní metody:
+
+-   zpracovává typ zabezpečení zabezpečení kritické výjimky
+
+-   má parametr, který je označen jako kritické typ zabezpečení
+
+-   má obecný parametr s omezeními kritická zabezpečení
+
+-   má místní proměnné kritické typu zabezpečení
+
+-   odkazuje na typ, který je označený jako zabezpečení kritické
+
+-   volá metodu, která je označena jako zabezpečení kritické
+
+-   odkazuje na pole, která je označena jako zabezpečení kritické
+
+-   Vrátí typ, který je označen jako zabezpečení kritické
+
+## <a name="rule-description"></a>Popis pravidla
+ Element kódu, který je označený <xref:System.Security.SecurityCriticalAttribute> atribut je kritické pro zabezpečení. Transparentní metoda nemůže použít prvek kritický pro zabezpečení. Pokud typu transparentní pokusí použít kritické typ zabezpečení <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , nebo <xref:System.FieldAccessException> je vyvolána.
+
+## <a name="how-to-fix-violations"></a>Jak vyřešit porušení
+ Opravit porušení toto pravidlo, proveďte jednu z následujících akcí:
+
+-   Označit tento element kódu, která používá kód kritický pro zabezpečení s <xref:System.Security.SecurityCriticalAttribute> atribut
+
+     \- nebo –
+
+-   Odeberte <xref:System.Security.SecurityCriticalAttribute> atribut z elementy kódu, které jsou označeny jako zabezpečení důležité a místo toho označit je pomocí <xref:System.Security.SecuritySafeCriticalAttribute> nebo <xref:System.Security.SecurityTransparentAttribute> atribut.
+
+## <a name="when-to-suppress-warnings"></a>Kdy potlačit upozornění
+ Nepotlačujte upozornění na toto pravidlo.
+
+## <a name="example"></a>Příklad
+ V následujících příkladech transparentní metody pokusí odkazovat kritické obecnou kolekci zabezpečení, kritické položky zabezpečení a důležité metodu zabezpečení.
+
+ [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
+
+## <a name="see-also"></a>Viz také
+ <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityTreatAsSafeAttribute> <xref:System.Security?displayProperty=fullName>

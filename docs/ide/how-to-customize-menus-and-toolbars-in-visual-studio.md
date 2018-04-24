@@ -30,21 +30,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8c28218f7dd2e695508fabb6410d05530438e94
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9de1cef61395e6b2fd4c1a38000ead2367143e4e
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Postupy: Přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Postupy: přizpůsobení nabídek a panelů nástrojů v sadě Visual Studio
 Visual Studio můžete přizpůsobit, nejen přidávání a odebírání nabídky v řádku nabídek a panelů nástrojů, ale také přidávání a odebírání příkazy na jakékoli dané nástrojů nebo nabídky.  
   
 > [!WARNING]
 >  Po přizpůsobení panelu nástrojů nebo nabídky, ujistěte se, že zůstane jejího políčka vybrané v **přizpůsobit** dialogové okno. V opačném případě se vaše změny po ukončení a opětovném spuštění sady Visual Studio nezachovají.
   
-## <a name="adding-removing-or-moving-a-menu-on-the-menu-bar"></a>Přidání, odebrání nebo přesunutí nabídky na řádku nabídek  
+## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Přidat, odebrat nebo přesunout nabídky v řádku nabídek  
   
-1.  Na řádku nabídek zvolte **nástroje**, **přizpůsobit**.  
+1.  Na řádku nabídek zvolte **nástroje** > **přizpůsobit**.  
   
      **Přizpůsobit** otevře se dialogové okno.  
   
@@ -58,9 +58,9 @@ Visual Studio můžete přizpůsobit, nejen přidávání a odebírání nabídk
   
     -   Chcete-li nabídky v panelu nabídek, zvolte v nabídce v **ovládací prvky** seznamu a potom vyberte **nahoru** nebo **přesunout dolů** tlačítko.  
   
-## <a name="adding-removing-or-moving-a-toolbar"></a>Přidání, odebrání nebo přesunutí panelu nástrojů  
+## <a name="add-remove-or-move-a-toolbar"></a>Přidat, odebrat nebo přesunout panelu nástrojů  
   
-1.  Na řádku nabídek zvolte **nástroje**, **přizpůsobit**.  
+1.  Na řádku nabídek zvolte **nástroje** > **přizpůsobit**.  
   
      **Přizpůsobit** otevře se dialogové okno.  
   
@@ -80,11 +80,11 @@ Visual Studio můžete přizpůsobit, nejen přidávání a odebírání nabídk
         Panel nástrojů můžete také přetáhnout pomocí jeho levého okraje na libovolné místo v hlavní oblasti ukotvení.  
   
         > [!NOTE]
-        >  Další informace o tom, jak zlepšit použitelnost a usnadnění panelů nástrojů najdete v tématu [postupy: nastavení možnosti usnadnění přístupu IDE](../ide/reference/how-to-set-ide-accessibility-options.md).  
+        >  Další informace o tom, jak zlepšit použitelnost a usnadnění panelů nástrojů najdete v tématu [postup: Možnosti usnadnění přístupu IDE nastavit](../ide/reference/how-to-set-ide-accessibility-options.md).  
   
 ## <a name="customizing_menu">Přizpůsobení nabídky nebo panelu nástrojů</a>
   
-1.  Na řádku nabídek zvolte **nástroje**, **přizpůsobit**.  
+1.  Na řádku nabídek zvolte **nástroje** > **přizpůsobit**.  
   
     **Přizpůsobit** otevře se dialogové okno.  
   
@@ -104,9 +104,9 @@ Visual Studio můžete přizpůsobit, nejen přidávání a odebírání nabídk
   
     -   Chcete skupinu příkazů v části na vodorovném řádku, zvolte první příkaz v **ovládací prvky** seznam, vyberte **změnit výběr** tlačítko a potom vyberte **začátek skupiny** v nabídka, která se zobrazí.  
   
-## <a name="resetting-a-menu-or-a-toolbar"></a>Obnovení nabídky nebo panelu nástrojů  
+## <a name="reset-a-menu-or-a-toolbar"></a>Obnovit z nabídky nebo panelu nástrojů  
   
-1.  Na řádku nabídek zvolte **nástroje**, **přizpůsobit**.  
+1.  Na řádku nabídek zvolte **nástroje** > **přizpůsobit**.  
   
     **Přizpůsobit** otevře se dialogové okno.  
   

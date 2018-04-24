@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6375852a76da633707c90538945339e438aac4a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 117f82cca454a4d82e6789c17486e808912387be
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Postupy: Ukládání a otevírání souborů se šifrováním
+# <a name="how-to-save-and-open-files-with-encoding"></a>Postupy: ukládání a otevírání souborů s kódováním
 Soubory lze ukládat s konkrétní znakem kódování pro podporu obousměrných jazycích. Můžete také zadat kódování při otevírání souboru, takže Visual Studio zobrazí soubor správně.  
   
 ### <a name="to-save-a-file-with-encoding"></a>Uložte soubor s kódováním  
@@ -58,6 +58,6 @@ Soubory lze ukládat s konkrétní znakem kódování pro podporu obousměrných
 3.  Postupujte podle kroků 2 a 3 v předchozím postupu.  
   
 ## <a name="see-also"></a>Viz také
-[Šifrování a zalomení řádků](encodings-and-line-breaks.md)  
-[Kódování a globalizace Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
+[Kódování a zalomení řádků](encodings-and-line-breaks.md)  
+[Globalizace kódování a systém Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)   
 [Globalizace a lokalizace aplikací](../ide/globalizing-and-localizing-applications.md)

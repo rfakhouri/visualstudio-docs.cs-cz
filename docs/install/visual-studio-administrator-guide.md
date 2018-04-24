@@ -1,10 +1,10 @@
 ---
-title: Příručka správce Visual Studio | Microsoft Docs
+title: Příručka správce Visual Studio
 description: Další informace o tom, jak nasadit sady Visual Studio v podnikovém prostředí.
 ms.custom: ''
 ms.date: 05/15/2017
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e202e28304ff19f93b085a74b191fe017601ec5a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
+ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/20/2018
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 Příručka správce
 
@@ -50,21 +50,25 @@ Visual Studio 2017 můžete nasadit do klientských pracovních stanic, dokud ka
 > Všimněte si, že instalace ze sítě sdílenou složku se "nezapomeňte" umístění zdroje, že pochází od. To znamená, že jejich opravy klientský počítač může být nutné se vraťte do sdílené síťové složce, které klient původně nainstalované z. Pečlivě zvolte umístění v síti tak, aby se nastavuje zarovnání životního cyklu, které budete mít Visual Studio 2017 klientů se systémy ve vaší organizaci.
 
 ## <a name="visual-studio-tools"></a>Nástroje sady Visual Studio
+
 Máme několik nástrojů, které vám pomůžou [zjišťovat a spravovat nainstalované sady Visual Studio instance](tools-for-managing-visual-studio-instances.md) na klientských počítačích.
 
 > [!TIP]
 > Kromě dokumentace v příručce správce, je dobré zdroj informací o instalaci Visual Studio 2017 [stavu Chmiela blog](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
 
 ## <a name="get-support"></a>Získat podporu
+
 V některých případech může problémů. Pokud se nezdaří instalace Visual Studia, najdete v článku [problémy instalace a upgrade řešení potíží s Visual Studio 2017](troubleshooting-installation-issues.md) stránky. Pokud se žádný z kroků pro řešení potíží, kontaktujte nás pomocí živé konverzace pro pomoc s instalací (pouze v angličtině). Podrobnosti najdete v tématu [stránky podpory sady Visual Studio](https://www.visualstudio.com/vs/support/#talktous).
 
 Tady je několik další možnosti podpory:
+
 * Můžete hlášení problémů produktu pro nás prostřednictvím [nahlásit problém](../ide/how-to-report-a-problem-with-visual-studio-2017.md) nástroj, který se zobrazí v instalačním programu Visual Studio i v integrovaném vývojovém prostředí sady Visual Studio.
 * Návrh produktu s námi můžete sdílet na [UserVoice](https://visualstudio.uservoice.com/forums/121579).
-* Můžete sledovat problémy produktu v [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/)a klást otázky a odpovědi.
-* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím našich [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio).  (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
+* Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
+* Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
 ## <a name="see-also"></a>Viz také
+
 * [Nainstalovat Visual Studio 2017](install-visual-studio.md)
 * [Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)
   * [Příklady parametrů příkazového řádku](command-line-parameter-examples.md)

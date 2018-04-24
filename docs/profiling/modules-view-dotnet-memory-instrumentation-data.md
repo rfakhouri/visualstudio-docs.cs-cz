@@ -2,8 +2,7 @@
 title: Zobrazení modulů – Data instrumentace paměti .NET | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d5282f5ef2bddaa505222b7622a3482b64e8122a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Zobrazení modulů – Data instrumentace paměti .NET
 Zobrazení modulů .NET paměti přidělení dat shromažďovaných pomocí metody instrumentace skupiny paměti a dat časování moduly, které byly provedeny v profilaci spustit. Profilace data pro funkce modulu je uvedena pod tímto uzlem modulu.  

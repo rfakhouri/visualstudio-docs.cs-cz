@@ -10,16 +10,16 @@ helpviewer_keywords:
 - MSBuild, extending Visual Studio builds
 - MSBuild, DependsOn properties
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
-author: Mikejo5000
+author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2799fff68fbbe1ee19e98364b83dd56eb375441f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6d373a6d5296e535069beeeb6ad551ad93a9444
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Postupy: Rozšíření procesu sestavení sady Visual Studio
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Procesu sestavení je definována řadu [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .TARGETS – soubory, které jsou importovány do souboru projektu. Mezi tyto importované soubory Microsoft.Common.targets, lze rozšířit a umožní vám při spouštění vlastní úlohy na několika místech v procesu sestavení. Toto téma popisuje dvě metody, které můžete použít k rozšíření [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proces sestavení:  

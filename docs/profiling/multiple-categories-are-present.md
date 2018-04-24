@@ -2,8 +2,7 @@
 title: Je přítomno více kategorií | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.timeline.multicategory
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce165520d4580b755ffae2fcd1fa5c4106039fee
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7362f0a7495a75bc1d34d7f839bf0397787b6173
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="multiple-categories-are-present"></a>Je přítomno více kategorií
 Je vybraný oddíl, který obsahuje více než jeden typ aktivity pro dané časové rozmezí. Všimněte si, že se zobrazují dvě barvy, jeden svisle skládaný na straně druhé. Tyto barvy představují právě nejvyšší dvěma nejčastějšími aktivitami v daném časovém rozsahu. Frekvence tyto dvě aktivity se zobrazí relativně k jinému jako třetin nebo polovina svislých pruhů. Pokud chcete zobrazit další podrobnosti, přibližte v této části zobrazení přístup z více vláken.  

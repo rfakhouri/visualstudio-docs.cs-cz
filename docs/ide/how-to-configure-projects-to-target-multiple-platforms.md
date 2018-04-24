@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2a945eb05703533c619c3dc1c8c31217dfe9f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f56928210eb251ea54205c435c721b62503857f
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Postupy: Konfigurace projektů pro více cílových platforem
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] poskytuje způsob, jak řešení cílit na několik různých architektury procesoru, nebo platformy, najednou. Chcete-li nastavit tyto vlastnosti jsou přístupné prostřednictvím **nástroje Configuration Manager** dialogové okno.  
   
-## <a name="targeting-a-platform"></a>Cílení platformy  
+## <a name="target-a-platform"></a>Platformu  
  **Nástroje Configuration Manager** dialogové okno umožňuje vytvořit a nastavit úroveň řešení a projektu konfigurace a platformy. Každou kombinaci řešení úrovni konfigurace a cíle může mít jedinečnou sadu vlastnosti související s, což umožňuje snadno přepínat mezi, například konfigurace verze s cílem [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)] platformy, konfigurace verze která se zaměřuje x86 platformy a konfiguraci ladění, která je cílena x86 platformy.  
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>Chcete-li nastavit konfiguraci pro jinou platformu  
@@ -32,8 +32,8 @@ ms.lasthandoff: 04/16/2018
   
 2.  V **aktivním řešení platformy pole**, vyberte platformu řešení k cíli, nebo vyberte  **\<nový >** k vytvoření nové platformě. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] bude vaše aplikace pro platformu, která je nastavena jako aktivní platformy v kompilaci **nástroje Configuration Manager** dialogové okno.  
   
-## <a name="removing-a-platform"></a>Odebrání platformu  
- Pokud si myslíte, že nemáte žádné požadavky pro platformu, můžete ho pomocí dialogového okna nástroje Configuration Manager odebrat. Tato akce odebere všechna nastavení řešení a projektů, které jste nakonfigurovali pro tuto kombinaci konfigurace a cíle.  
+## <a name="remove-a-platform"></a>Odebrat platformu  
+ Pokud si myslíte, že nemáte žádné požadavky pro platformu, můžete odebrat pomocí **nástroje Configuration Manager** dialogové okno. Tato akce odebere všechna nastavení řešení a projektů, které jste nakonfigurovali pro tuto kombinaci konfigurace a cíle.  
   
 #### <a name="to-remove-a-platform"></a>Chcete-li odebrat platformu  
   
@@ -43,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Klikněte na platformu, kterou chcete odebrat a klikněte na **odebrat**.  
   
-## <a name="targeting-multiple-platforms-with-one-solution"></a>Cílení na více platforem s jedno řešení  
+## <a name="target-multiple-platforms-with-one-solution"></a>Více cílových platforem s jedno řešení  
  Protože můžete změnit nastavení založené na kombinaci konfigurace a nastavení platformy, můžete nastavit řešení, který může cílit na více než jedné platformě.  
   
 #### <a name="to-target-multiple-platforms"></a>Pro více cílových platforem  
@@ -64,5 +64,5 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Viz také  
  [Postupy: vytvoření a úprava konfigurací](../ide/how-to-create-and-edit-configurations.md)   
- [Principy konfigurací sestavení](../ide/understanding-build-configurations.md)   
- [Sestavování a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+ [Pochopení konfigurace sestavení](../ide/understanding-build-configurations.md)   
+ [Sestavení a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)

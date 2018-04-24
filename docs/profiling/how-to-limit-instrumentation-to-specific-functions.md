@@ -2,8 +2,7 @@
 title: 'Postupy: omezení instrumentace na konkrétní funkce | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, limiting instrumentation to functions
@@ -13,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c5cc56dec707fadc30602fb1b912d17f1dc8f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>Postupy: Omezení instrumentace na konkrétní funkce
 Instrumentace a shromažďování dat pro jednu nebo více funkcí můžete omezit nastavením možností v **Upřesnit** stránky **výkonnostní relace** nebo cílení binární vlastnosti stránky:  

@@ -2,19 +2,18 @@
 title: Využití GPU | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c9ca5624ecdafb4079bb58d69ff72727104c1e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9926846ceaba3591a3e89f2eba0fa2d3888e9302
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="gpu-usage"></a>Využití GPU
 Použijte nástroj využití GPU ve Visual Studio výkon a diagnostiku pro lepší pochopení využití základní hardware Direct3D – aplikace. Můžete ji určit, zda je vázané na procesor nebo GPU vazby a získat přehled o použití platforma hardwaru efektivněji výkon vaší aplikace. Využití GPU podporuje aplikace, které používají Direct3D – 12, Direct3D – 11 a Direct3D – 10; nepodporuje se jiné grafické rozhraní API, například Direct2D nebo OpenGL.  

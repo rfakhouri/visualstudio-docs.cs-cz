@@ -1,6 +1,5 @@
 ---
-title: Zobrazení souvisejících dat v aplikacích WPF | Microsoft Docs
-ms.custom: ''
+title: Zobrazení souvisejících dat v aplikaci WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,11 +17,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5258f12a7ede6727736225e1e8308773db3c91c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b293656a0eeffeba304ef4692f9c021ae9639d22
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Zobrazení souvisejících dat v aplikaci WPF
 V některých aplikacích můžete chtít pracovat s daty, která pochází z více tabulek nebo entity, které se vztahují k sobě navzájem v relaci nadřazený podřízený. Například můžete chtít zobrazit tabulku, která zobrazuje zákazníky z `Customers` tabulky. Když uživatel vybere konkrétního zákazníka, jiné mřížky zobrazí objednávky tohoto zákazníka ze související `Orders` tabulky.
@@ -56,5 +55,6 @@ Můžete vytvořit ovládací prvky vázané na data, která zobrazení souvisej
      ![Okno zdroje dat, zobrazující vztah](../data-tools/media/datasources2.gif "DataSources2")
 
 ## <a name="see-also"></a>Viz také
-[Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
-[Vytváření vyhledávacích tabulek v aplikacích WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)
+
+- [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+- [Vytváření vyhledávacích tabulek v aplikacích WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)

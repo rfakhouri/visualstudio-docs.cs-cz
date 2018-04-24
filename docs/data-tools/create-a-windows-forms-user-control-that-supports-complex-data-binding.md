@@ -1,6 +1,5 @@
 ---
-title: Vytvoření uživatelského ovládacího prvku Windows Forms pomocí datové vazby | Microsoft Docs
-ms.custom: ''
+title: Vytvoření uživatelského ovládacího prvku Windows Forms pomocí datová vazba
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +15,11 @@ manager: douge
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7dac1b763e444349f741f72dae8c41fa8087a26
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b7431ca6f0d4ac73a07a51893fd0c17c4fada57
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Vytvoření uživatelského ovládacího prvku Windows Forms, který podporuje rozšířené datové vazby
 
@@ -111,7 +110,7 @@ Tento krok přidává <xref:System.Windows.Forms.DataGridView> do uživatelskéh
 ## <a name="add-the-required-data-binding-attribute"></a>Přidejte požadovaný atribut datová vazba
 
 Pro komplexní ovládací prvky vazbou podpora dat, můžete implementovat <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.
-  
+
 ### <a name="to-implement-the-complexbindingproperties-attribute"></a>K implementaci atribut ComplexBindingProperties
 
 1. Přepínač **ComplexDataGridView** řízení zobrazení kódu. (Na **zobrazení** nabídce vyberte možnost **kód**.)
@@ -173,7 +172,7 @@ Ovládací prvky vázané na data můžete vytvořit tak, že přetáhnete polo�
 
 ### <a name="to-create-data-bound-controls-on-the-form"></a>Vytvoření ovládacích prvků vázaných na data ve formuláři
 
-Přetáhněte hlavní **zákazníci** uzlu z **zdroje dat** window do formuláře. Ověřte, zda **ComplexDataGridView** řízení se používá k zobrazení dat v tabulce.  
+Přetáhněte hlavní **zákazníci** uzlu z **zdroje dat** window do formuláře. Ověřte, zda **ComplexDataGridView** řízení se používá k zobrazení dat v tabulce.
 
 ## <a name="running-the-application"></a>Spuštění aplikace
 
@@ -191,6 +190,6 @@ V závislosti na požadavcích vaší aplikace existuje několik kroků, které 
 
 ## <a name="see-also"></a>Viz také
 
-[Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)  
-[Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdrojů dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)  
-[Windows Forms – ovládací prvky](/dotnet/framework/winforms/controls/index)
+- [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
+- [Nastavení ovládacího prvku, který má být vytvořen při přetažení z okna zdrojů dat](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
+- [Windows Forms – ovládací prvky](/dotnet/framework/winforms/controls/index)

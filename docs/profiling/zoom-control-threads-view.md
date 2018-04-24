@@ -2,8 +2,7 @@
 title: Ovládací prvek Lupa (zobrazení vláken) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.zoom
@@ -15,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8bd60b1555148fd97b94e280d1d0a520ca4848b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d9a0392e13c74f36b3a9d30610cc101d3c078f9
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="zoom-control-threads-view"></a>Ovládací prvek Lupa (Zobrazení vláken)
 Ovládací prvek Lupa je jezdce, který vám umožní přiblížení a oddálení na časové ose tak, aby se můžete soustředit na oblasti zvláštní zájem. Vzhledem k tomu, že tento ovládací prvek zvětší středu zobrazení časové osy, center před zvětšení oblasti, které vás zajímají.  

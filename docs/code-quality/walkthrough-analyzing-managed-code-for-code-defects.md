@@ -1,6 +1,5 @@
 ---
 title: Návod analýza spravovaného kódu na výskyt závad v kódu | Microsoft Docs
-ms.custom: ''
 ms.date: 01/29/2018
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -12,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3af6d4f1580313457aa553ce11f920be5376641c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 98d1bbd347870bd704a0d17d7ae559da00e9adb5
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Návod: Analýza spravovaného kódu pro kód vady
 
@@ -30,7 +29,7 @@ Tento názorný postup vás provede procesem použití analýzy kódu pro analý
 
 1. Na **soubor** nabídce zvolte **nový** > **projektu...** .
 
-1. V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná** > **Visual C#**a potom zvolte **Windows Classic Desktop**.
+1. V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná** > **Visual C#** a potom zvolte **Windows Classic Desktop**.
 
 1. Vyberte **knihovny tříd (rozhraní .NET Framework)** šablony.
 
@@ -61,21 +60,21 @@ Tento názorný postup vás provede procesem použití analýzy kódu pro analý
 ### <a name="to-analyze-a-managed-project-for-code-defects"></a>K analýze spravovaný projekt pro defekty kódu
 
 1. Vyberte projekt CodeAnalysisManagedDemo v **Průzkumníku řešení**.
-  
+
 1. Na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.
-  
+
      Zobrazí se stránka vlastností CodeAnalysisManagedDemo.
-  
+
 1. Vyberte **analýza kódu** kartě.
-  
+
 1. Ujistěte se, že **povolit analýza kódu při sestavování** je zaškrtnuté.
-  
+
 1. Z **spuštění této sady pravidel** rozevíracího seznamu vyberte **všechna pravidla Microsoft**.
-  
+
 1. Na **soubor** nabídky, klikněte na tlačítko **uložit vybrané položky**a pak zavřete vlastnosti stránky.
-  
+
 1. Na **sestavení** nabídky, klikněte na tlačítko **sestavení CodeAnalysisManagedDemo**.
-  
+
     Upozornění sestavení projektu CodeAnalysisManagedDemo se zobrazují v **seznam chyb** a **výstup** systému windows.
 
 ## <a name="correct-the-code-analysis-issues"></a>Opravte problémy analýzy kódu

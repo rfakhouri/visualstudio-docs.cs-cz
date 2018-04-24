@@ -1,5 +1,5 @@
 ---
-title: Použití sady Visual Studio help viewer index | Microsoft Docs
+title: Použití Visual Studio Help Viewer index | Microsoft Docs
 ms.custom: ''
 ms.date: 11/02/2017
 ms.technology:
@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc1b096a161ebca394abe4626c42db2ced883c4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ee913682452e94bb0e973dff9e98e496b8cb3c70
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="finding-topics-by-using-the-help-viewer-index"></a>Témata týkající se hledání pomocí indexu Help Viewer
+# <a name="find-topics-by-using-the-help-viewer-index"></a>Hledání témat pomocí indexu Help Viewer
 Index obsahuje seznam klíčových slov, které jsou spojeny s tématy v nainstalované obsahu. Každého tématu může mít více než jeden – klíčové slovo přidruženo a každý – klíčové slovo může být přidružen k více než jedno téma. Pomocí tohoto indexu stejným způsobem jako v podobě knihy indexu.  
   
 ## <a name="to-find-a-topic-by-using-the-index"></a>Najít téma pomocí indexu  

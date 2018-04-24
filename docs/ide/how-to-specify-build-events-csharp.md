@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: určení událostí sestavení (C#) | Microsoft Docs'
+title: 'Postupy: určení sestavení událostí (C#) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,16 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9daf9de3790a9ba2b0700ceac39aaca12de5e3f9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7cf26e6f8565f08b7e272ec663e0db91ae3d545c
+ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="how-to-specify-build-events-c"></a>Postupy: Specifikace událostí sestavení (C#)
+# <a name="how-to-specify-build-events-c"></a>Postupy: určení sestavení událostí (C#)
 Použití událostí sestavení Pokud chcete zadat příkazy, které před zahájením sestavení nebo po dokončení sestavení. Události sestavení jsou spuštěny pouze v případě, že sestavení úspěšně dosáhne těchto bodů v procesu sestavení.  
   
- Když na projekt je sestavena, události před sestavením jsou přidány do souboru, který je pojmenován PreBuildEvent.bat a události po sestavení jsou přidány do souboru, který je pojmenován PostBuildEvent.bat. Pokud chcete zajistit kontrolu chyb, přidejte vlastní příkazy chyb kroky sestavení.  
+ Když je postaveno na projekt a události před sestavením se přidají do souboru, který je pojmenován *PreBuildEvent.bat* a události po sestavení jsou přidány do souboru, který je pojmenován *PostBuildEvent.bat*. Pokud chcete zajistit kontrolu chyb, přidejte vlastní příkazy chyb kroky sestavení.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -43,24 +43,25 @@ Použití událostí sestavení Pokud chcete zadat příkazy, které před zahá
 4.  V **příkazový řádek události před sestavením** zadejte syntaxe události sestavení.  
   
     > [!NOTE]
-    >  Události před sestavením se nespustí, pokud je aktuální projekt a není aktivováno žádné sestavení.  
+    > Události před sestavením se nespustí, pokud je aktuální projekt a není aktivováno žádné sestavení.  
   
 5.  V **události po sestavení příkazového řádku** zadejte syntaxe události sestavení.  
   
     > [!NOTE]
-    >  Přidat `call` příkaz před příkazy všechny po sestavení, které spouštějí .bat soubory. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Přidat `call` příkaz před všechny po sestavení příkazy, které spouštějí *.bat* soubory. Například `call C:\MyFile.bat` nebo `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
 6.  V **spustit události po sestavení** zadejte za jakých podmínek ke spuštění události po sestavení.  
   
     > [!NOTE]
-    >  Chcete přidat zdlouhavé syntaxe, nebo vyberte některý makra ze sestavení [před sestavením událostí/po sestavení příkazového řádku dialogové okno události](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), klikněte na tlačítko se třemi tečkami (**...** ) zobrazíte textové pole.  
+    > Chcete přidat zdlouhavé syntaxe, nebo vyberte některý makra ze sestavení [dialogové okno Příkazový řádek před sestavením událostí/po sestavení událostí](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), klikněte na tlačítko se třemi tečkami (**...** ) zobrazíte textové pole.  
   
-     Syntaxe událostí sestavení může obsahovat libovolný příkaz, který je platný, na příkazovém řádku nebo v souboru bat. Název souboru batch musí předcházet `call` k zkontrolujte, zda jsou všechny následné příkazy.  
+     Syntaxe událostí sestavení může obsahovat libovolný příkaz, který je platný, na příkazovém řádku nebo v *.bat* souboru. Název souboru batch musí předcházet `call` k zkontrolujte, zda jsou všechny následné příkazy.  
   
-     **Poznámka:** Pokud události před sestavením nebo po sestavení úspěšně nedokončí, můžete ukončit sestavení tak, že vaše akce události ukončit s kódem než nula (0), který označuje úspěšné akce.  
+    > [!NOTE]
+    > Pokud vaše události před sestavením nebo po sestavení úspěšně nedokončí, můžete ukončit sestavení tak, že vaše akce události ukončit s kódem než nula (0), který označuje úspěšné akce.  
   
 ## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Příklad: Jak změnit informace manifestu pomocí události po sestavení  
- Následující postup ukazuje, jak nastavit minimální verzi operačního systému v manifestu aplikace pomocí příkaz .exe, který se volá z události po sestavení (..exe soubor v adresáři projektu). Minimální verzi operačního systému je číslo jako 4.10.0.0. K tomuto účelu příkaz změní `<dependentOS>` oddíl manifestu:  
+ Následující postup ukazuje, jak nastavit minimální verzi operačního systému v manifestu aplikace pomocí *.exe* příkaz, který je volána z události po sestavení ( *. exe.manifest* v souboru adresář projektu). Minimální verzi operačního systému je číslo jako 4.10.0.0. K tomuto účelu příkaz změní `<dependentOS>` oddíl manifestu:  
   
 ```  
 <dependentOS>  
@@ -76,7 +77,7 @@ Použití událostí sestavení Pokud chcete zadat příkazy, které před zahá
   
 2.  V **nový projekt** dialogové okno, rozbalte seznam **Visual C#**, klikněte na tlačítko **Windows**a pak klikněte na tlačítko **konzolové aplikace** šablony. Název projektu `ChangeOSVersionCS`.  
   
-3.  V souboru Program.cs přidejte následující řádek na druhý `using` příkazy v horní části souboru:  
+3.  V *Program.cs*, přidejte následující řádek na druhý `using` příkazy v horní části souboru:  
   
     ```  
     using System.Xml;  
@@ -134,11 +135,11 @@ Použití událostí sestavení Pokud chcete zadat příkazy, které před zahá
     }  
     ```  
   
-     Příkaz přijímá dva argumenty: cesta manifest aplikace (to znamená, složka, ve kterém procesu sestavení vytvoří manifest, obvykle Projectname.publish) a nová verze operačního systému.  
+     Příkaz přijímá dva argumenty: cesta manifest aplikace (to znamená, složka, ve kterém procesu sestavení vytvoří manifest, obvykle *Projectname.publish*) a nová verze operačního systému.  
   
 5.  Sestavte projekt. Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.  
   
-6.  Zkopírujte soubor .exe do adresáře například `C:\TEMP\ChangeOSVersionVB.exe`.  
+6.  Kopírování *.exe* soubor do adresáře například *C:\TEMP\ChangeOSVersionVB.exe*.  
   
  V dalším kroku vyvolejte příkaz v události po sestavení upravte manifest aplikace.  
   
@@ -150,11 +151,11 @@ Použití událostí sestavení Pokud chcete zadat příkazy, které před zahá
   
 3.  S projekt vybraný v **Průzkumníku řešení**na **projektu** nabídky, klikněte na tlačítko **vlastnosti**.  
   
-4.  V Návrháři projektu, vyhledejte **publikovat** stránky a nastavte **umístění pro publikování** k `C:\TEMP\`.  
+4.  V **Návrhář projektu**, vyhledejte **publikovat** stránky a nastavte **umístění pro publikování** k *C:\TEMP*.  
   
 5.  Publikování tohoto projektu kliknutím **publikovat**.  
   
-     Soubor manifestu bude vytvořen a umístit do `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Chcete-li zobrazit manifest, klikněte pravým tlačítkem na soubor, klikněte na **Otevřít protokolem**, vyberte **vyberte program, ze seznamu**a potom klikněte na **Poznámkový blok**.  
+     Soubor manifestu bude vytvořen a umístit do *C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest*. Chcete-li zobrazit manifest, klikněte pravým tlačítkem na soubor, klikněte na **Otevřít protokolem**, vyberte **vyberte program, ze seznamu**a potom klikněte na **Poznámkový blok**.  
   
      Hledání v souboru `<osVersionInfo>` elementu. Může být například verze:  
   
@@ -162,7 +163,7 @@ Použití událostí sestavení Pokud chcete zadat příkazy, které před zahá
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  V Návrháři projektu, klikněte **události sestavení** a klikněte **upravit po sestavení** tlačítko.  
+6.  V **Návrhář projektu**, klikněte na tlačítko **události sestavení** a klikněte **upravit po sestavení** tlačítko.  
   
 7.  V **příkazový řádek události po sestavení** pole, zadejte následující příkaz:  
   
@@ -170,7 +171,7 @@ Použití událostí sestavení Pokud chcete zadat příkazy, které před zahá
   
      Při sestavování projektu se tento příkaz změní minimální verzi operačního systému v manifestu aplikace 5.1.2600.0.  
   
-     Protože `$(TargetPath)` makro vyjadřuje úplnou cestu pro vytvářený, spustitelný soubor `$(TargetPath)`manifest specifikujete manifest aplikace vytvořený v adresáři bin. Publikování zkopíruje tento manifest umístění pro publikování, které jste nastavili dříve.  
+     Protože `$(TargetPath)` makro vyjadřuje úplnou cestu pro vytvářený, spustitelný soubor `$(TargetPath)` *manifest* specifikujete manifest aplikace vytvořené v *bin* adresáře. Publikování zkopíruje tento manifest umístění pro publikování, které jste nastavili dříve.  
   
 8.  Projekt znovu publikujte. Přejděte na **publikovat** a klikněte na tlačítko **publikovat**.  
   
@@ -185,5 +186,5 @@ Použití událostí sestavení Pokud chcete zadat příkazy, které před zahá
 ## <a name="see-also"></a>Viz také  
  [Stránka události sestavení, Návrhář projektu (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
  [Dialogové okno Příkazový řádek události/po sestavení události před sestavením](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Postupy: určení událostí sestavení (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
+ [Postupy: určení sestavení události (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
  [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)
