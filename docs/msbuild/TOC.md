@@ -194,4 +194,6 @@
 ##### [UidManager – úloha](uidmanager-task.md)
 ##### [UpdateManifestForBrowserApplication – úloha](updatemanifestforbrowserapplication-task.md)
 ### [Speciální řídicí znaky](special-characters-to-escape.md)
+## [Používání MSBuildu prostřednictvím programu](msbuild-api.md)
+### [Aktualizace na MSBuild 15](updating-an-existing-application.md)
 ## [Slovníček nástroje MSBuild](msbuild-glossary.md)
