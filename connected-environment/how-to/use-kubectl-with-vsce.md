@@ -1,18 +1,19 @@
 ---
 title: Jak používat kubectl s prostředím připojené | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 03/12/2018
-ms.topic: article
-ms.technology: vsce-kubernetes
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Rychlý vývoj Kubernetes s kontejnery a mikroslužeb v Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, kontejnery
-manager: ghogen
-ms.openlocfilehash: 46c69f80e58a4265aa5e4320e731c3ad241a8116
-ms.sourcegitcommit: e01ccb5ca4504a327d54f33589911f5d8be9c35c
+manager: douge
+ms.openlocfilehash: 138dce09e0d53dc47703b9c6f56a7efda4adc255
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-kubectl-with-a-connected-environment"></a>Použití `kubectl` s připojeném prostředí
 
