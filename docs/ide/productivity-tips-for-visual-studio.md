@@ -1,7 +1,7 @@
 ---
-title: Tipy pro vyšší produktivitu pro sadu Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Tipy pro vyšší produktivitu pro sadu Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b79f7d36358a875b45b7a705674060b05969cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu pro sadu Visual Studio
 
 Toto téma obsahuje různé typy můžete zapsat, přejděte a rychle a efektivně ladit kód.
 
-Informace o běžných klávesových zkratek najdete v tématu [klávesové tipy](../ide/tips-and-tricks-for-visual-studio.md). Úplný seznam klávesové zkratky, naleznete v [identifikuje a přizpůsobení klávesových zkratek](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) a [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
+Informace o běžných klávesových zkratek najdete v tématu [klávesové tipy](../ide/tips-and-tricks-for-visual-studio.md). Úplný seznam klávesové zkratky, naleznete v [identifikace a přizpůsobení klávesových zkratek](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) a [výchozí klávesové zkratky](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-## <a name="writing-code"></a>Psaní kódu
+## <a name="write-code"></a>Psaní kódu
 
 Napište kód rychleji pomocí následující funkce.
 
@@ -45,7 +45,7 @@ Napište kód rychleji pomocí následující funkce.
 
 - **Použití ukázkové aplikace**. Vývoj aplikací můžete urychlit stahuje a instaluje ukázkové aplikace z [Microsoft Developer Network](https://code.msdn.microsoft.com/). Můžete si také přečíst určitou technologii nebo programovací koncept stažením a prohlížení sadu ukázka pro tuto oblast.
 
-## <a name="navigating-within-your-code"></a>Navigace v rámci vašeho kódu
+## <a name="navigate-within-your-code"></a>Přejděte v kódu
 
  Různé postupy můžete použít k vyhledání a přesunout do určitých umístění ve vašem kódu rychleji.
 
@@ -59,21 +59,21 @@ Napište kód rychleji pomocí následující funkce.
 
 - **Procházet celková struktura kódu**. V **Průzkumníku**, můžete vyhledat a procházet třídy a jejich typy a členy ve vašich projektů. Můžete také vyhledat symboly, zobrazení hierarchie volání metody, najít odkazy na symboly a provádět další úlohy. Pokud se rozhodnete element kódu v **Průzkumníku řešení**, související soubor se otevře v **Preview** kartě a přesune kurzor na element v souboru. Další informace najdete v tématu [zobrazení struktury kódu](../ide/viewing-the-structure-of-code.md).
 
-## <a name="finding-items-faster"></a>Hledání položek rychlejší
+## <a name="find-items-faster"></a>Hledání položek rychlejší
 
 Můžete hledat ve IDE pro příkazy, soubory a možnosti, kromě filtrování obsah nástroj Windows zobrazit pouze relevantní informace pro aktuální úlohu.
 
 - **Filtrovat obsah nástroj windows**. Můžete hledat v rámci obsah mnoho okna nástrojů, jako **sada nástrojů**, **vlastnosti** okně a **Průzkumníku řešení**, ale zobrazení pouze položek, jejichž názvy obsahovat znaky, které zadáte.
 
-- **Zobrazit pouze chyby, které chcete na adresu**. Pokud se rozhodnete **filtru** tlačítko **seznam chyb** nástrojů, můžete snížit počet chyb, které se zobrazují v **seznam chyb** okno. Pouze chyby můžete zobrazit v souborech, které jsou otevřeny v editoru pouze chyby v aktuální soubor, nebo pouze chyby v aktuálním projektu. Můžete také prohledat v okně Seznam chyb, k vyhledání konkrétní chyby.
+- **Zobrazit pouze chyby, které chcete na adresu**. Pokud se rozhodnete **filtru** tlačítko **seznam chyb** nástrojů, můžete snížit počet chyb, které se zobrazují v **seznam chyb** okno. Pouze chyby můžete zobrazit v souborech, které jsou otevřeny v editoru pouze chyby v aktuální soubor, nebo pouze chyby v aktuálním projektu. Můžete také prohledat v rámci **seznam chyb** okně najdete konkrétní chyby.
 
 - **Vyhledání dialogových oken, příkazy nabídky a možnosti**. V [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) zadejte klíčová slova nebo fráze pro položky, které se pokoušíte najít. Například se zobrazí následující možnosti, pokud zadáte `new project`:
 
     ![Rychlé spuštění výsledky pro 'nový projekt'](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-    **Snadné spuštění** zobrazí odkazy na **nový projekt** dialogové okno, **přidat novou položku** dialogové okno a stránce projekty a řešení v **možnosti** dialogové okno pole, mimo jiné. Rychlé spuštění výsledky mohou také obsahovat soubory projektu a nástroje systému windows.
+    **Snadné spuštění** zobrazí odkazy na **nový projekt** dialogové okno, **přidat novou položku** dialogové okno a **projekty a řešení** stránku **Možnosti** dialogové okno, mimo jiné. Rychlé spuštění výsledky mohou také obsahovat soubory projektu a nástroje systému windows.
 
-## <a name="debugging-code"></a>Ladění kódu
+## <a name="debug-code"></a>Ladění kódu
 
 Ladění může využívat velké množství času, ale následující tipy vám mohou pomoci urychlit proces.
 
@@ -81,11 +81,11 @@ Ladění může využívat velké množství času, ale následující tipy vám
 
     ![Vyberte možnosti ladění webové prohlížeče](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
-- **Nastavte zarážky dočasné**. Můžete vytvořit dočasný zarážek v aktuálního řádku kódu a současně spuštění ladicího programu. Při kliknutí na tento řádek kódu, ladicího programu vstupuje do režimu pozastavení. Další informace najdete v tématu [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
+- **Nastavte zarážky dočasné**. Můžete vytvořit dočasný zarážek v aktuálního řádku kódu a současně spuštění ladicího programu. Při kliknutí na tento řádek kódu, ladicího programu vstupuje do režimu pozastavení. Další informace najdete v tématu [přejděte prostřednictvím kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
 
     Chcete-li tuto funkci použít, zvolte **Ctrl**+**F10** klíče nebo otevřete místní nabídku pro řádek kódu, na kterém chcete rozdělit a potom vyberte **spustit kurzor** .
 
-- **Přesunout bod provádění během ladění**. Můžete přesunout aktuální bod spuštění pro různé části kódu a potom znovu spusťte ladění z tohoto bodu. Tato metoda je užitečná, pokud chcete ladit části kódu, aniž by museli znovu vytvořit všechny kroky, které jsou potřeba k dosažení této části. Další informace najdete v tématu [procházení kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
+- **Přesunout bod provádění během ladění**. Můžete přesunout aktuální bod spuštění pro různé části kódu a potom znovu spusťte ladění z tohoto bodu. Tato metoda je užitečná, pokud chcete ladit části kódu, aniž by museli znovu vytvořit všechny kroky, které jsou potřeba k dosažení této části. Další informace najdete v tématu [přejděte prostřednictvím kódu s ladicím programem](../debugger/navigating-through-code-with-the-debugger.md).
 
      Pokud chcete přesunout bodu spuštění, přetáhněte do umístění, ve které chcete nastavit další příkaz ve stejném souboru zdroje a potom vyberte žlutý šipku **F5** klíče a pokračujte ladění.
 
@@ -95,9 +95,9 @@ Ladění může využívat velké množství času, ale následující tipy vám
 
 - **Vymazání hodnot proměnných**. Můžete vymazat obsah [hodnot proměnných](../ide/reference/immediate-window.md) v době návrhu zadáním `>cls` nebo `>Edit.ClearAll`
 
-     Další informace o dalších příkazech najdete v tématu [aliasy příkazů Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+     Další informace o dalších příkazech najdete v tématu [aliasy příkazů sady Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
-## <a name="accessing-visual-studio-tools"></a>Přístup k nástroji Visual Studio
+## <a name="access-visual-studio-tools"></a>Přístup k nástrojům Visual Studio
 
 Příkazový řádek vývojáře nebo jiný nástroj Visual Studio, můžete přistupovat rychle Pokud připnete nabídky Start nebo na hlavním panelu.
 
@@ -105,7 +105,7 @@ Příkazový řádek vývojáře nebo jiný nástroj Visual Studio, můžete př
 
 1. Klikněte pravým tlačítkem myši nebo Otevřít kontextovou nabídku **příkazový řádek vývojáře**a potom zvolte **připnout na Start** nebo **připnout na hlavní panel**.
 
-## <a name="managing-files-toolbars-and-windows"></a>Správa souborů, panely nástrojů a systému windows
+## <a name="manage-files-toolbars-and-windows"></a>Spravovat soubory, panely nástrojů a systému windows
 
 Současně můžete být práce ve více souborech kódu a přesun mezi několik nástrojů, když budete vyvíjet aplikace. Můžete ponechat pomocí následující tipy uspořádány.
 

@@ -1,10 +1,9 @@
 ---
-title: Nový soubor – příkaz | Microsoft Docs
-ms.custom: ''
+title: Nový soubor – příkaz
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.newfile
 helpviewer_keywords:
@@ -16,60 +15,64 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9634d71954b51534dfabf2c77b4709687d46453d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 69e57e348692d57baabb0d4f13290913d45f814c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="new-file-command"></a>Nový soubor – příkaz
-Vytvoří nový soubor a otevře ji. Soubor se zobrazí ve složce různé soubory.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-File.NewFile [filename] [/t:templatename] [/editor:editorname]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `filename`  
- Volitelné. Název souboru. Pokud je zadaný název je zadaný výchozí název. Pokud je uvedený název žádné šablony, se vytvoří textový soubor.  
-  
-## <a name="switches"></a>Přepínače  
- / t:`templatename`  
- Volitelné. Určuje typ souboru, který se má vytvořit.  
-  
- / T:`templatename` argument syntaxe zrcadlí informace nalezené v dialogovém okně Nový soubor. Zadejte název kategorie, za nímž následuje zpětné lomítko (`\`) a šablonu název a uzavřete celý řetězec v uvozovkách.  
-  
- Chcete-li například vytvořit nový [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] zdrojový soubor, zadali byste následující pro / t:`templatename` argument.  
-  
-```  
-/t:"Visual C++\C++ File (.cpp)"  
-```  
-  
- V předchozím příkladu označuje, že šablona souboru C++ je umístěn v kategorii Visual C++ v **nový soubor** dialogové okno.  
-  
- / e:`editorname`  
- Volitelné. Název editoru, ve kterém bude soubor otevřít. Pokud je argument zadaný ale zadaný žádný název editoru, **otevřít v** zobrazí se dialogové okno.  
-  
- / E:`editorname` argument syntaxe používá názvy editor, jak se zobrazují v dialogovém okně Otevřít s, uzavřena v uvozovkách.  
-  
- Například by k otevření souboru v editoru zdrojového kódu, zadejte následující pro / e:`editorname` argument.  
-  
-```  
-/e:"Source Code (text) Editor"  
-```  
-  
-## <a name="example"></a>Příklad  
- Tento příklad vytvoří novou webovou stránku "test1.htm" a otevře v editoru zdrojového kódu.  
-  
-```  
->File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"  
-```  
-  
-## <a name="see-also"></a>Viz také  
- [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Příkazové okno](../../ide/reference/command-window.md)   
- [Příkazové podokno](../../ide/reference/immediate-window.md)   
- [Pole najít/příkaz](../../ide/find-command-box.md)   
- [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Vytvoří nový soubor a otevře ji. Soubor se zobrazí ve složce různé soubory.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+File.NewFile [filename] [/t:templatename] [/editor:editorname]
+```
+
+## <a name="arguments"></a>Arguments
+ `filename`
+
+ Volitelné. Název souboru. Pokud je zadaný název je zadaný výchozí název. Pokud je uvedený název žádné šablony, se vytvoří textový soubor.
+
+## <a name="switches"></a>Přepínače
+ / t:`templatename`
+
+ Volitelné. Určuje typ souboru, který se má vytvořit.
+
+ / T:`templatename` argument syntaxe zrcadlí informace nalezené v dialogovém okně Nový soubor. Zadejte název kategorie, za nímž následuje zpětné lomítko (`\`) a šablonu název a uzavřete celý řetězec v uvozovkách.
+
+ Chcete-li například vytvořit nový [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] zdrojový soubor, zadali byste následující pro / t:`templatename` argument.
+
+```
+/t:"Visual C++\C++ File (.cpp)"
+```
+
+ V předchozím příkladu označuje, že šablona souboru C++ je umístěn v kategorii Visual C++ v **nový soubor** dialogové okno.
+
+ / e:`editorname`
+
+ Volitelné. Název editoru, ve kterém bude soubor otevřít. Pokud je argument zadaný ale zadaný žádný název editoru, **otevřít v** zobrazí se dialogové okno.
+
+ / E:`editorname` argument syntaxe používá názvy editor, jak se zobrazují v dialogovém okně Otevřít s, uzavřena v uvozovkách.
+
+ Například by k otevření souboru v editoru zdrojového kódu, zadejte následující pro / e:`editorname` argument.
+
+```
+/e:"Source Code (text) Editor"
+```
+
+## <a name="example"></a>Příklad
+ Tento příklad vytvoří novou webovou stránku "test1.htm" a otevře v editoru zdrojového kódu.
+
+```
+>File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
+```
+
+## <a name="see-also"></a>Viz také
+
+- [Příkazy sady Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Příkazové okno](../../ide/reference/command-window.md)
+- [Příkazové podokno](../../ide/reference/immediate-window.md)
+- [Pole najít/příkaz](../../ide/find-command-box.md)
+- [Aliasy příkazů sady Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

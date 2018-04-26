@@ -36,11 +36,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f1ad8f7b3bc4ac1a93718943803d445aa6ca9a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 04834f335fd4c9a49a2ef4de6b55adf6443d6e7c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Použití zarážek v ladicím programu sady Visual Studio
 Pokud chcete zastavit provádění ladicí program, případně zobrazíte stav proměnných kódu nebo pro zobrazení v zásobníku volání, můžete nastavit zarážky. Jsou jedním z nejdůležitějších techniky ladění v sadě nástrojů pro vývojáře.  
@@ -247,8 +247,7 @@ Pokud chcete zastavit provádění ladicí program, případně zobrazíte stav 
 |**$PNAME**|Název procesu|  
 |**$TID**|Id podprocesu|  
 |**$TNAME**|Název vlákna|  
-|**$TICK**||  
-|**$TNAME**||  
+|**$TICK**|Počet směrování (ze systému Windows `GetTickCount`)|  
   
 ##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Popisky zarážek  
  Popisky zarážek se používají pouze v **zarážky** okno řadit a filtrovat seznam zarážky. Chcete-li přidat zarážky štítek, vyberte řádek zarážek a poté zvolte **popisek** v místní nabídce.  

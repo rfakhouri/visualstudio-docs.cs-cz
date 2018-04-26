@@ -17,14 +17,15 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 49f3aad9adf319c09097324a6c40a4aa7b8f6692
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 87639a4ebb123415014994dcc1bfa7af1d7fb301
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Vyplnění datové sady s použitím objektů TableAdapters
 Součást TableAdapter doplní datové sady daty z databáze, na základě jednoho nebo více dotazy nebo uložené procedury, které zadáte. Můžete také provést TableAdapters přidání, aktualizace a odstranění v databázi k zachování změn, které můžete provést na datovou sadu. Mohou také vystavovat globální příkazy, které se nevztahují žádné konkrétní tabulky.

@@ -1,9 +1,8 @@
 ---
-title: 'Postupy: Správa zalamování řádků v editoru | Microsoft Docs'
-ms.custom: ''
+title: 'Postupy: Správa zalamování řádků v editoru'
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - word wrap
@@ -15,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edd81a4c4168d7733b21ec84123e984e42b71063
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08fe7ac16eff2c7ebf398b0483034a324eb02d91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Postupy: Správa zalamování řádků v editoru
 
@@ -31,26 +30,26 @@ Můžete nastavit a vymazat **zalamování** možnost. Pokud je tato možnost na
 ## <a name="procedure"></a>Postup
 
 ### <a name="to-set-word-wrap-preferences"></a>Nastavit předvolby wrap slovo
-  
-1.  Na **nástroje** nabídce vyberte možnost **možnosti**.  
-  
-2.  V **textového editoru** složky, vyberte **Obecné** možnosti v **všechny jazyky** podsložky pro globální nastavení této možnosti.  
-  
-     – nebo –  
-  
-     Vyberte **Obecné** možnosti v podsložce pro jazyk, ve kterém jsou programování.  
-  
-3.  V části **nastavení**, zaškrtněte nebo zrušte **zalamování** možnost.  
-  
-     Když **zalamování** je vybraná možnost, **zobrazit vizuální glyfy pro zalamování řádků** je povolena možnost.  
-  
-4.  Vyberte **zobrazit vizuální glyfy pro zalamování** možnost, pokud chcete zobrazit vrátit šipku indikátor, kde je dlouhý řádek zalomen na druhém řádku. Pokud nechcete zobrazit šipky indikátoru, zrušte zaškrtnutí tohoto políčka.  
-  
+
+1.  Na **nástroje** nabídce vyberte možnost **možnosti**.
+
+2.  V **textového editoru** složky, vyberte **Obecné** možnosti v **všechny jazyky** podsložky pro globální nastavení této možnosti.
+
+     – nebo –
+
+     Vyberte **Obecné** možnosti v podsložce pro jazyk, ve kterém jsou programování.
+
+3.  V části **nastavení**, zaškrtněte nebo zrušte **zalamování** možnost.
+
+     Když **zalamování** je vybraná možnost, **zobrazit vizuální glyfy pro zalamování řádků** je povolena možnost.
+
+4.  Vyberte **zobrazit vizuální glyfy pro zalamování** možnost, pokud chcete zobrazit vrátit šipku indikátor, kde je dlouhý řádek zalomen na druhém řádku. Pokud nechcete zobrazit šipky indikátoru, zrušte zaškrtnutí tohoto políčka.
+
     > [!NOTE]
-    >  Tyto šipky připomenutí nejsou přidány do vašeho kódu: jsou pouze pro účely zobrazení.  
-  
+    >  Tyto šipky připomenutí nejsou přidány do vašeho kódu: jsou pouze pro účely zobrazení.
+
 ## <a name="see-also"></a>Viz také
 
-[Vlastní nastavení editoru](../../ide/customizing-the-editor.md)  
-[Textový editor, dialogové okno Možnosti](../../ide/reference/text-editor-options-dialog-box.md)  
-[Psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)
+- [Textový editor, dialogové okno Možnosti](../../ide/reference/text-editor-options-dialog-box.md)
+- [Psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md)

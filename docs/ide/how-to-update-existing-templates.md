@@ -1,9 +1,8 @@
 ---
-title: Aktualizace existujících šablon projektů a položek v sadě Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Aktualizace existujících šablon projektů a položek v sadě Visual Studio
 ms.date: 01/02/2018
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -13,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9465c098144f14db496bc1dbc382d6a30c8882cb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5cf764f76d72b17128c46f2b7ec16ffcf4153cf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-update-existing-templates"></a>Postupy: aktualizace existujících šablon
 
@@ -69,8 +68,8 @@ Můžete aktualizovat existující šablony bez použití **Průvodce exportem �
 
 ## <a name="see-also"></a>Viz také
 
-[Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)  
-[Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)  
-[Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)  
-[Parametry šablony](../ide/template-parameters.md)  
-[Postupy: vytváření Startovních sad](../ide/how-to-create-starter-kits.md)
+- [Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)
+- [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)
+- [Visual Studio odkaz na schéma šablon](../extensibility/visual-studio-template-schema-reference.md)
+- [Parametry šablony](../ide/template-parameters.md)
+- [Postupy: vytváření Startovních sad](../ide/how-to-create-starter-kits.md)

@@ -1,5 +1,6 @@
 ---
-title: Vytváření vlastních pohledů nativních objektů v ladicím programu | Microsoft Docs
+title: Vytváření vlastních pohledů nativních objektů
+description: Použití rozhraní Natvis přizpůsobit způsob, že sada Visual Studio zobrazí nativní typy v ladicím programu
 ms.custom: ''
 ms.date: 06/27/2017
 ms.technology: vs-ide-debug
@@ -14,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38656b9c5ce4165f2a04b5e6d76411ce7f005855
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 01f051faa03e80caa672aee25a6d4abe3104faad
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>Vytváření vlastních pohledů nativních objektů v ladicím programu sady Visual Studio
 Visual Studio Natvis framework umožňuje určit, jak se zobrazí nativní typy v proměnnými ladicího programu sady Visual Studio (například **sledovat** okně **místní hodnoty –** okno a v  **Datatips –**.

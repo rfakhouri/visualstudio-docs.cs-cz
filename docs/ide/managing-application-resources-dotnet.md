@@ -1,9 +1,8 @@
 ---
-title: Správa prostředků aplikace (.NET) | Microsoft Docs
-ms.custom: ''
+title: Správa prostředků aplikace (.NET)
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -20,19 +19,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5515796d34b12e95fe6c9a545e7a81e98a8f6a9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fe35a9a0e9b1e4b2e04e978f2b32cb38439b76cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-application-resources-net"></a>Správa prostředků aplikace (.NET)
+# <a name="manage-application-resources-net"></a>Správa prostředků aplikace (.NET)
 
 Soubory prostředků jsou soubory, které jsou součástí aplikace, ale nejsou kompilovány, pro soubory ikon příklad nebo zvukových souborů. Vzhledem k tomu, že tyto soubory nejsou součástí procesu kompilace, můžete je změnit bez nutnosti její kompilace vaší binární soubory. Pokud máte v úmyslu lokalizaci vaší aplikace, používejte zdrojové soubory pro všechny řetězce a další prostředky, které se musí změnit při lokalizaci berte vaší aplikace.
 
-Další informace o prostředcích v aplikacích klasické pracovní plochy rozhraní .NET najdete v tématu [prostředků v aplikacích plochy](/dotnet/framework/resources/index).
+Další informace o prostředcích v aplikacích klasické pracovní plochy rozhraní .NET najdete v tématu [prostředky v aplikacích klasické pracovní plochy](/dotnet/framework/resources/index).
 
-## <a name="working-with-resources"></a>Práci s prostředky
+## <a name="work-with-resources"></a>Pracovat s prostředky
 
 V projektu spravovaného kódu otevřete okno Vlastnosti projektu. Buď můžete otevřít okno Vlastnosti:
 
@@ -40,15 +39,15 @@ V projektu spravovaného kódu otevřete okno Vlastnosti projektu. Buď můžete
 - zadáním "projektu vlastnosti" v **Snadné spuštění** okna
 - Výběr **Alt**+**Enter** v **Průzkumníku řešení** okna
 
-Vyberte **prostředky** kartě. Pokud projekt není obsahovat jeden již, přidat a odstranit různé druhy prostředků a upravit stávající prostředky, můžete přidat souboru RESX.
+Vyberte **prostředky** kartě. Můžete přidat *RESX* souboru Pokud projekt není obsahovat jeden již, přidat a odstranit různé druhy prostředků a upravit existující prostředky.
 
 ## <a name="resources-in-other-project-types"></a>Prostředky v jiné typy projektu
 
 Prostředky se spravují jinak v rozhraní .NET projektů než jiné typy projektů. Další informace o prostředcích v:
 
 - Univerzální platformu Windows (UWP) aplikace, najdete v části [prostředky aplikace a systém správy prostředků](/windows/uwp/app-resources/)
-- Projekty C++, najdete v části [práce se zdrojovými soubory](/cpp/windows/working-with-resource-files) a [postupy: vytvoření prostředku](/cpp/windows/how-to-create-a-resource)
+- Projekty C++, najdete v části [pracovat se soubory prostředků](/cpp/windows/working-with-resource-files) a [postupy: vytvoření prostředku](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Viz také
 
-[Prostředky v aplikacích klasické pracovní plochy (rozhraní .NET Framework)](/dotnet/framework/resources/index)
+- [Prostředky v aplikacích klasické pracovní plochy (rozhraní .NET Framework)](/dotnet/framework/resources/index)

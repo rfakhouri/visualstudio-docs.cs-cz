@@ -1,9 +1,9 @@
 ---
-title: 'Tutoriál 1: Vytvoření prohlížeče obrázků | Microsoft Docs'
+title: 'Tutoriál 1: Vytvoření prohlížeče obrázků'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 author: TerryGLee
@@ -11,47 +11,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0061ca517fd75fbfe76fbb4c47431e3438a7f614
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5be14bf68f88bc058adf3685cc30e3ab545a6354
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriál 1: Vytvoření prohlížeče obrázků
 V tomto kurzu vytvoříte program, který načte obrázek ze souboru a zobrazí v okně. Zjistíte, jak přetáhněte ovládací prvky jako tlačítka a pole obrázků ve formuláři, nastavit jejich vlastnosti a použití kontejnerů plynule změnit velikost formuláře. Můžete také začít psát kód. Získáte informace o následujících postupech:  
-  
+
 -   Vytvořte nový projekt.  
-  
+
 -   Test (ladění) aplikace.  
-  
+
 -   Základní ovládací prvky jako tlačítka a zaškrtávací políčka přidejte do formuláře.  
-  
+
 -   Umístěte ovládací prvky ve formuláři pomocí rozložení.  
-  
+
 -   Přidat **otevření souboru** a **barva** dialogová okna do formuláře.  
-  
+
 -   Zápis kódu pomocí IntelliSense a fragmenty kódu.  
-  
+
 -   Zápis metody obslužná rutina události.  
-  
+
  Po dokončení, váš program bude vypadat jako na následujícím obrázku.  
-  
+
  ![Obrázek, který vytvoříte v tomto kurzu](../ide/media/express_pictureviewerdone.png "Express_PictureViewerDone")  
 Obrázek, který vytvoříte v tomto kurzu  
-  
+
  Si můžete stáhnout dokončené verzi příkladu [kurz ukázka dokončení Prohlížeč obrázků](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).  
-  
+
  ![odkaz na video](../data-tools/media/playvideo.gif "PlayVideo")video verzi tohoto tématu naleznete v části [jak I: vytvořit Prohlížeč obrázků v jazyce Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) nebo [jak I: vytvořit Prohlížeč obrázků v jazyce C#?](http://go.microsoft.com/fwlink/?LinkId=205198).  
-  
+
 > [!NOTE]
 >  Tyto videa pomocí starší verze sady Visual Studio, takže drobné rozdíly v některé příkazy a další prvky uživatelského rozhraní. Však koncepty a postupy fungují podobně jako v aktuální verzi sady Visual Studio. Visual C# a Visual Basic jsou obě popsané v tomto kurzu, proto soustředit se na informace specifické pro programovací jazyk, který používáte.  
 >   
 >  Zobrazit kód jazyka Visual Basic, vyberte **VB** v horní části bloky kódu a zobrazit kódu pro Visual C#, vyberte **C#** kartě. Pokud vás zajímá seznamovat Visual C++, přečtěte si téma [Začínáme](../ide/getting-started-with-cpp-in-visual-studio.md) a [kurzu jazyk C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
 >  Pokud vás zajímají informace o způsobu zápisu Visual C# nebo Visual Basic UWP aplikací najdete v tématu [aplikace UWP sestavení](https://developer.microsoft.com/windows/apps).
-  
+
 ## <a name="related-topics"></a>Související témata  
-  
+
 |Název|Popis|  
 |-----------|-----------------|  
 |[Krok 1: Vytvořte projekt formulářové aplikace Windows](../ide/step-1-create-a-windows-forms-application-project.md)|Začněte tím, že vytvoříte projekt aplikace Windows Forms.|  

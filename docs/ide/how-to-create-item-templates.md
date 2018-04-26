@@ -1,7 +1,7 @@
 ---
-title: Vytváření šablon položek pro Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Vytváření šablon položek pro Visual Studio
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,11 +9,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c5c29dde308c4e3720195924bd40db4e880e4b2e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 342b7ebd17280c47296fae43c6541a5e969ad5f3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-item-templates"></a>Postupy: vytváření šablon položek
 
@@ -126,6 +126,6 @@ V některých případech můžete ručně vytvořit šablonu položky od začá
 
 ## <a name="see-also"></a>Viz také
 
-[Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)  
-[Postupy: vytváření šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md)  
-[Visual Studio odkaz na schéma šablon (rozšíření)](../extensibility/visual-studio-template-schema-reference.md)
+- [Vytváření šablon projektů a položek](../ide/creating-project-and-item-templates.md)
+- [Postupy: vytváření šablon položek s více soubory](../ide/how-to-create-multi-file-item-templates.md)
+- [Visual Studio odkaz na schéma šablon (rozšíření)](../extensibility/visual-studio-template-schema-reference.md)

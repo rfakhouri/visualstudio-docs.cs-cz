@@ -1,21 +1,22 @@
 ---
-title: "Dokumentace k sadě Visual Studio | Microsoft Docs"
-description: "Zjistěte, jak Visual Studio umožňuje vyvíjet aplikace pomocí různých programovacích jazyků."
+title: Dokumentace k Visual Studio
+description: Zjistěte, jak Visual Studio umožňuje vyvíjet aplikace pomocí různých programovacích jazyků.
+ms.date: 01/01/2018
 layout: LandingPage
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5005e4aa6a41b2062f2dab62d577edb5f91674
-ms.sourcegitcommit: 342e5ec5cec4d07864d65379c2add5cec247f3d6
+ms.openlocfilehash: ed2caa7d2e70aa10ab9f8f4f37b08c1f59d6d325
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="visual-studio-documentation"></a>Dokumentace k sadě Visual Studio
+# <a name="visual-studio-documentation"></a>Dokumentace k Visual Studio
 
 Zjistěte, jak Visual Studio umožňuje vyvíjet aplikace pomocí různých programovacích jazyků.
 Kurzy, videa a další dokumentaci ukazují způsoby, jak vytvořit kód a aplikace pomocí sady Visual Studio.

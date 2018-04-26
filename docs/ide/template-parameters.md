@@ -1,9 +1,9 @@
 ---
-title: Visual Studio projektů a položek parametry šablony | Microsoft Docs
-ms.custom: ''
+title: Visual Studio projektů a položek parametry šablony
 ms.date: 01/02/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -12,15 +12,15 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c49514aeb164040ea374371cae6a61d1f7eb8948
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="template-parameters"></a>Parametry šablony
 
-Pomocí parametrů v šablonách lze při vytváření instance šablony nahradit hodnoty nejdůležitějších částí šablony, jako jsou názvy tříd a obory názvů. Tyto parametry jsou nahrazovány Průvodce šablonou, která běží na pozadí, když uživatel vybere **OK** nebo **přidat** v **nový projekt** nebo **přidat novou položku**  dialogová okna.
+V šabloně můžete nahradit hodnoty při vytváření instance šablony. Chcete-li tuto funkci nastavit, použijte *parametry šablony*. Parametry šablony můžete použít k nahrazení hodnot, jako jsou názvy tříd a obory názvů v šabloně. Průvodce šablonou, která se spouští na pozadí při přidání nové položky nebo projektu nahradí tyto parametry.
 
 ## <a name="declaring-and-enabling-template-parameters"></a>Deklarace a povolení parametry šablony
 
@@ -38,7 +38,7 @@ Parametry šablony jsou deklarovány ve formátu $*parametr*$. Příklad:
 
 1. Nastavte `ReplaceParameters` atribut `ProjectItem` element `true`.
 
-1. V souboru kódu pro položku projektu zahrňte odpovídající parametry. Například následující parametr určuje, že název bezpečné projektu používat pro obor názvů v souboru:
+1. V souboru kódu pro položku projektu zahrňte odpovídající parametry. Například následující parametr určuje, že je název bezpečné projektu používá pro obor názvů v souboru:
 
     ```csharp
     namespace $safeprojectname$
@@ -118,5 +118,5 @@ V souboru .vstemplate šablony projektu, zahrnují `ReplaceParameters="true"` at
 
 ## <a name="see-also"></a>Viz také
 
-[Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)  
-[Postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md)
+- [Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)
+- [Postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md)

@@ -16,12 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 97013072c58e15a185974bb3326309c35e2d245b
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: d6200e96e0c0715ef2a2bf2af00f84597d284a72
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Použití map kódu k ladění aplikací
 Mapy kódu vám může pomoct vyhnout ztratili v rozsáhlých základů kódu, neznámého kódu nebo starší verze kódu. Například při ladění, budete možná muset podívejte se na kód napříč mnoha soubory a projekty. Použití map kódu k navigaci částí kódu a pochopit vztahy mezi nimi. Tímto způsobem, nemáte k udržování přehledu o tento kód ve vaší head nebo kreslení samostatné diagram. Takže když dojde k přerušení práci, kód mapuje nápovědy aktualizace vaší paměti o kód, který právě pracujete.

@@ -1,9 +1,8 @@
 ---
-title: Zobrazení náhledu změn kódu v sadě Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Zobrazení náhledu změn kódu v sadě Visual Studio
 ms.date: 12/16/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
@@ -12,11 +11,11 @@ f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: cc838d55e83a5b606059acbf068639116ab012bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dfb9ff26ca20060a8df9a0b3a81783b60e0b46f3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="preview-changes-window"></a>Okno náhledu změny
 
@@ -32,5 +31,5 @@ Po zkontrolování změn, klikněte na tlačítko **použít** tlačítko tyto z
 
 ## <a name="see-also"></a>Viz také
 
-[Refaktoring v sadě Visual Studio](../ide/refactoring-in-visual-studio.md)  
-[Rychlé akce](../ide/quick-actions.md)
+- [Refaktoring v sadě Visual Studio](../ide/refactoring-in-visual-studio.md)
+- [Rychlé akce](../ide/quick-actions.md)

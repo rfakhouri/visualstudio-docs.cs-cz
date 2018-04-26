@@ -1,7 +1,7 @@
 ---
-title: Instalace sady Visual Studio offline Nápověda | Microsoft Docs
-ms.custom: ''
+title: Instalace sady Visual Studio offline nápovědy
 ms.date: 11/01/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-help-viewer
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b44a96bd0386fdcec7740b8cafdcd9f328b64892
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6eedfe24b1f7ff7243cb9856bd1ae1942b1dbc53
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalace Microsoft Help Viewer
 
@@ -24,7 +24,7 @@ Několik produktů můžete zobrazit obsah nápovědy v nápovědy společnosti 
 
 Volitelná instalace součástí sady Visual Studio je prohlížeč nápovědy. Chcete-li ji nainstalovat prostřednictvím Instalační program Visual Studio, postupujte takto:
 
-1. Otevřete **instalační program Visual Studio** z nabídky Start nebo, pokud máte Visual Studio otevřete, můžete vybrat **nástroje**, **funkcí a nástrojů pro získání...**  Chcete-li spustit instalační program Visual Studio.
+1. Otevřete **instalační program Visual Studio** z nabídky Start nebo, pokud máte Visual Studio otevřete, můžete vybrat **nástroje** > **funkcí a nástrojů pro získání** otevřete Visual Instalační program Studio.
 
 1. Vyberte **jednotlivých součástí** a potom vyberte **Help Viewer** pod **Code nástroje** části.
 
@@ -38,7 +38,7 @@ Jiný způsob, jak snadno nainstalovat Microsoft Help Viewer se prostřednictví
 
    ![Rychlé spuštění pole](media/help_viewer_quick_launch.png)
 
-1. Zvolte výsledek instalace názvem **Help Viewer (součást Indiviual)**.
+1. Zvolte výsledek názvem **Help Viewer (součást Indiviual)**.
 
 1. V dialogovém okně, které se otevře, vyberte **nainstalovat** tlačítko.
 
@@ -50,5 +50,5 @@ Jiný způsob, jak snadno nainstalovat Microsoft Help Viewer se prostřednictví
 
 ## <a name="see-also"></a>Viz také
 
-[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)  
-[Prohlížeč nápovědy a offline obsah pro SQL Server](/sql/sql-server/sql-server-help-installation)
+- [Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)
+- [Prohlížeč nápovědy a offline obsah pro SQL Server](/sql/sql-server/sql-server-help-installation)

@@ -1,9 +1,8 @@
 ---
-title: JavaScript IntelliSense | Microsoft Docs
-ms.custom: ''
+title: JavaScript IntelliSense
 ms.date: 06/28/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript]
@@ -27,11 +26,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4d95dcc53926f7ae8b0b295b7552185a4a934c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2aeabb8953d76b38dfa612e701eaeeb872cb64c3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -53,7 +52,7 @@ TypeScript pomocí několika zdrojů si tyto informace:
 - [Na základě souborů deklarace TypeScript IntelliSense](#TsDeclFiles)
 - [Automatické získání definice typu](#Auto)
 
-### <a name="TypeInference"></a>IntelliSense podle odvození typu
+### <a name="intellisense-based-on-type-inference"></a>IntelliSense podle odvození typu
 
 V jazyce JavaScript ve většině případů nejsou žádné explicitní typ informace k dispozici. Naštěstí je obvykle poměrně snadno zjistit typ zadaný kontext okolního kódu.
 Tento proces se nazývá odvození typu.
@@ -70,7 +69,7 @@ nextItem; // now we know nextItem is a string
 
 Pro funkci návratový typ lze odvodit z příkazech return.
 
-Pro parametry funkce v současné době není žádné odvození, ale existují způsoby, jak tento problém obejít pomocí JSDoc nebo TypeScript `.d.ts` soubory (viz další oddíly).
+Pro parametry funkce v současné době není žádné odvození, ale existují způsoby, jak tento problém obejít pomocí JSDoc nebo TypeScript *. d.ts* soubory (viz další oddíly).
 
 Kromě toho je speciální odvození pro následující:
 
@@ -89,7 +88,7 @@ exports.Foo = Foo;
 // Note that assigning a value to "module.exports" is also supported.
 ```
 
-### <a name="JsDoc"></a> IntelliSense podle JSDoc
+### <a name="intellisense-based-on-jsdoc"></a>IntelliSense podle JSDoc
 
 Kde odvození typu neposkytuje informace o požadovaného typu (nebo na podporu dokumentace), informace o typu mohou být k dispozici explicitně prostřednictvím poznámky JSDoc.  Umožnit objekt částečně deklarované konkrétního typu, například můžete použít `@type` značky, jak je uvedeno níže:
 
@@ -113,29 +112,29 @@ function Foo(param1) {
 }
 ```
 
-V tématu [tento doc](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) pro poznámky JsDoc aktuálně podporované.
+V tématu [JSDoc podpory v jazyce JavaScript](https://github.com/Microsoft/TypeScript/wiki/JsDoc-support-in-JavaScript) pro poznámky JsDoc aktuálně podporované.
 
-### <a name="TsDeclFiles"></a> Na základě souborů deklarace TypeScript IntelliSense
+### <a name="intellisense-based-on-typescript-declaration-files"></a>Na základě souborů deklarace TypeScript IntelliSense
 
-JavaScript a TypeScript jsou nyní založená na stejnou službu jazyk, budou se moci pracovat způsobem, bohatší. Například JavaScript IntelliSense lze zadat pro hodnoty deklarované v `.d.ts` souboru ([více informací o](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), a typy, jako je například rozhraní a třídy, které jsou deklarované v TypeScript jsou k dispozici pro použití jako typy v komentářů JsDoc. 
+JavaScript a TypeScript jsou nyní založená na stejnou službu jazyk, budou se moci pracovat způsobem, bohatší. Například JavaScript IntelliSense lze zadat pro hodnoty deklarované v *. d.ts* souboru (v tématu [TypeScript dokumentace](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)), a typy, jako je například rozhraní a třídy, které jsou deklarované v TypeScript k dispozici pro použití jako typy v komentářů JsDoc.
 
-Níže ukážeme jednoduchý příklad TypeScript definiční soubor, který poskytuje tyto informace o typu (přes rozhraní) do souboru jazyka JavaScript v rámci jednoho projektu (s použitím značku JsDoc).
+Níže ukážeme jednoduchý příklad TypeScript definiční soubor, který poskytuje tyto informace o typu (přes rozhraní) do souboru jazyka JavaScript v rámci jednoho projektu (pomocí `JsDoc` značka).
 
 <img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640"/>
 
-### <a name="Auto"></a> Automatické získání definice typu
+### <a name="automatic-acquisition-of-type-definitions"></a>Automatické získání definice typu
 
-Na světě TypeScript nejoblíbenější knihovny JavaScript mají příslušných rozhraní API popsaného `.d.ts` soubory a nejběžnější úložiště pro tyto definice je na [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
+Na světě TypeScript nejoblíbenější knihovny JavaScript mají příslušných rozhraní API popsaného *. d.ts* soubory a nejběžnější úložiště pro tyto definice je na [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped).
 
-Ve výchozím nastavení, služba jazyka Salsa pokusí zjistit, které knihovny JavaScript jsou používána a automaticky stáhnout a odkazu odpovídající `.d.ts` soubor, který popisuje knihovny, aby bylo možné poskytovat bohatší technologii IntelliSense. Stažení souborů do mezipaměti umístěný ve složce uživatele v `%LOCALAPPDATA%\Microsoft\TypeScript`.
+Ve výchozím nastavení, služba jazyka Salsa pokusí zjistit, které knihovny JavaScript jsou používána a automaticky stáhnout a odkazu k odpovídající položce *. d.ts* soubor, který popisuje knihovny, chcete-li poskytovat bohatší IntelliSense. Stažení souborů do mezipaměti umístěný ve složce uživatele na *%LOCALAPPDATA%\Microsoft\TypeScript*.
 
 > [!NOTE]
-> Tato funkce je **zakázáno** ve výchozím nastavení, pokud se používá `tsconfig.json` konfigurace souboru, ale může být nastaven na povoleno jako další popsané níže.
+> Tato funkce je **zakázáno** ve výchozím nastavení, pokud se používá *tsconfig.json* konfigurace souboru, ale může být nastaven na povoleno jako další popsané níže.
 
-Aktuálně automatické zjišťování funguje pro závislosti stažený z npm (načtením `package.json` soubor), Bower (načtením `bower.json` soubor) a pro přijít soubory v projektu, které odpovídají seznam zhruba horní části 400 nejoblíbenější knihoven jazyka JavaScript. Pokud máte například `jquery-1.10.min.js` ve vašem projektu soubor `jquery.d.ts` bude načtených a načíst, aby bylo možné zajistit lepší úpravy prostředí. To `.d.ts` soubor bude mít vliv na projekt.
+Aktuálně automatické zjišťování funguje pro závislosti stažený z npm (načtením *package.json* soubor), Bower (načtením *bower.json* soubor) a pro přijít soubory v projektu, které odpovídají seznamu knihoven zhruba horní 400 nejoblíbenější jazyk JavaScript. Pokud máte například *jquery 1.10.min.js* ve vašem projektu soubor *jquery.d.ts* bude načtených a načíst, aby bylo možné zajistit lepší úpravy prostředí. To *. d.ts* soubor bude mít vliv na projekt.
 
 Pokud nechcete použít automatické akvizice, zakažte ho přidáním konfiguračního souboru, jak je uvedeno níže. Můžete stále umístit definiční soubory pro použití přímo v rámci projektu ručně.
 
 ## <a name="see-also"></a>Viz také
 
-[Používání atributu IntelliSense](../ide/using-intellisense.md)
+- [Používání atributu IntelliSense](../ide/using-intellisense.md)

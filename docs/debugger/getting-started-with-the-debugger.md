@@ -1,6 +1,6 @@
 ---
-title: Další informace k ladění – Visual Studio | Microsoft Docs
-ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data
+title: Začínáme s ladicím programem
+ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: mvc
 ms.date: 03/16/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3501f3e94fdb9b98aefc96d7a1e2fe12b4117fbb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c62137422a4cbd7b85b4f7415e9b3fa85c2c0248
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="learn-to-debug-using-visual-studio"></a>Další informace k ladění pomocí sady Visual Studio
+# <a name="tutorial-learn-to-debug-using-visual-studio"></a>Kurz: Další informace k ladění pomocí sady Visual Studio
 
 Toto téma představuje funkce podrobný návod v ladicím programu sady Visual Studio. Pokud chcete vyšší úrovně zobrazení funkce ladicího programu, najdete v části [prohlídka funkce ladicího programu](../debugger/debugger-feature-tour.md).
 

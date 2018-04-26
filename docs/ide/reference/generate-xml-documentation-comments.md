@@ -1,19 +1,19 @@
 ---
-title: Vložit dokumentační komentáře XML v sadě Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Vložit dokumentační komentáře XML v sadě Visual Studio
 ms.date: 01/26/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.topic: conceptual
+ms.topic: reference
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0fae2411a77f405404e34c7a2357554c1e5398ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e3c38e46a5c73d1f8018f56f76b971939ba8c316
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Postupy: vložení komentáře XML pro dokumentaci generování
 
@@ -49,9 +49,9 @@ Visual Studio může pomoct dokumentu elementy kódu, jako jsou třídy a metody
 
 ## <a name="see-also"></a>Viz také
 
-[Dokumentační komentáře XML (C# Průvodce programováním)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)  
-[Dokumentace kódu s XML – komentáře (Průvodce C#)](/dotnet/csharp/codedoc)  
-[Postupy: vytvoření dokumentace XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)  
-[Komentáře v jazyce C++](/cpp/cpp/comments-cpp)  
-[Dokumentace XML (C++)](/cpp/ide/xml-documentation-visual-cpp)  
-[Generování kódu](../code-generation-in-visual-studio.md)
+- [Dokumentační komentáře XML (C# Průvodce programováním)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
+- [Dokumentace kódu s XML – komentáře (Průvodce C#)](/dotnet/csharp/codedoc)
+- [Postupy: vytvoření dokumentace XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Komentáře v jazyce C++](/cpp/cpp/comments-cpp)
+- [Dokumentace XML (C++)](/cpp/ide/xml-documentation-visual-cpp)
+- [Generování kódu](../code-generation-in-visual-studio.md)

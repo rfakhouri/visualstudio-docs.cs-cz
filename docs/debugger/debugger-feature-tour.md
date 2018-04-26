@@ -1,6 +1,6 @@
 ---
-title: Ladicího programu prohlídka funkce – Visual Studio | Microsoft Docs
-description: Prohlídka služby ladicího programu sady Visual Studio
+title: První pohled na ladicí program
+description: Rychlé prohlédněte různých funkcí ladicího programu sady Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84fbfa4b8916b963f3f3cc35e044593c5a47e1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-debugger"></a>Rychlý úvod: První pohled na Visual Studio Debugger
+# <a name="first-look-at-the-visual-studio-debugger"></a>První pohled na Visual Studio Debugger
 
 Toto téma představuje funkce ladicího programu sady Visual Studio. Pokud chcete sledovat otevřením vlastní aplikace v sadě Visual Studio, můžete to udělat, nebo můžete provést společně s ukázkové aplikace pomocí [začátečníka](../debugger/getting-started-with-the-debugger.md).
 
@@ -157,7 +157,7 @@ Při ladění, klikněte pravým tlačítkem na objekt a zvolte **Přidat kukát
 
 ![Okno kukátka](../debugger/media/dbg-tour-watch-window.png "kukátko – okno")
 
-V tomto příkladu máte sledovat, nastavte na `File` objekt a můžete zobrazit jeho hodnotu změnit, protože pohyb ladicího programu. Na rozdíl od jiných proměnných windows **sledovat** windows vždy zobrazovat proměnné se díváte (jejich jste šedě při mimo rozsah).
+V tomto příkladu máte sledovat, nastavte na `f` objekt a můžete zobrazit jeho hodnotu změnit, protože pohyb ladicího programu. Na rozdíl od jiných proměnných windows **sledovat** windows vždy zobrazovat proměnné se díváte (jejich jste šedě při mimo rozsah).
 
 Další informace najdete v tématu [nastavovat sledování pomocí sledování a QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
 
@@ -213,21 +213,9 @@ Můžete vyhledat a zobrazit snímky pomocí **krok zpětné** a **krok dál** t
 
 Další informace najdete v tématu [zobrazit snímky IntelliTrace zpětným krok pomocí](../debugger/how-to-use-intellitrace-step-back.md) stránky.
 
-## <a name="more-features-to-look-at"></a>Podívejte se na další funkcí
+## <a name="next-steps"></a>Další kroky
 
--   [Ladicího programu tipy a triky](../debugger/debugger-tips-and-tricks.md) zjistěte, jak zvýšit produktivitu s ladicím programem.
+V tomto kurzu jste měli rychlý přehled mnoho funkcí ladicí program. Může být vhodné podrobnější pohled na tyto funkce pomocí ukázkové aplikace
 
--   [Upravit a pokračovat](../debugger/edit-and-continue.md) funkce upravit a pokračovat pro určité podmnožiny jazyků (C#, C++, Visual Basic), umožňuje upravit kód uprostřed ladicí relace.
-
--   [Ladění vícevláknových aplikací](../debugger/debug-multithreaded-applications-in-visual-studio.md) popisuje postup ladění vícevláknových aplikací. 
-
--   [Vzdálené ladění](../debugger/remote-debugging.md) popisuje, jak k ladění aplikací běžících na další počítače nebo zařízení. 
-  
--   [IntelliTrace](../debugger/intellitrace.md) popisuje funkci IntelliTrace v nástroji Visual Studio Enterprise. Můžete ho na záznam a trasování historii spouštění vašeho kódu.
-
--   [Využívání sítě](../profiling/network-usage.md) popisuje profilování nástroj, který můžete použít k ladění webových služeb a jiným síťovým prostředkům v univerzální aplikace Windows (UWP). Pomocí nástroje pro zjištění datové části.
-
--   [Přístup k rozhraní SDK ladění](../debugger/debug-interface-access/debug-interface-access-sdk.md) popisuje Microsoft ladění rozhraní přístup Software Development Kit (DIA SDK). DIA SDK poskytuje přístup k ladění informace uložené v souborech databáze (.pdb) program generované postcompiler nástroje společnosti Microsoft.  
-
-## <a name="see-also"></a>Viz také  
- [Ladění v sadě Visual Studio](../debugger/index.md)
+> [!div class="nextstepaction"]
+> [Další informace k ladění pomocí sady Visual Studio](../debugger/getting-started-with-the-debugger.md)

@@ -1,6 +1,7 @@
 ---
 title: Vytvoření uživatelského rozhraní pomocí Návrháře XAML v sadě Visual Studio
 ms.date: 07/17/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 f1_keywords:
@@ -14,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9eadc306b0b2f7c53dffc01d27590bc5d4cf4b52
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 514bbd4b4b65a2f32b42a1f260368f219972e22c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Vytvoření uživatelského rozhraní pomocí Návrháře XAML v sadě Visual Studio
 Návrhář XAML v sadě Visual Studio poskytuje vizuální rozhraní vám pomohou návrhu založených na XAML Windows a webové aplikace. Uživatelská rozhraní pro vaše aplikace můžete vytvořit tak, že přetáhnete ovládacích prvků z **sada nástrojů** a nastavení vlastností ve **vlastnosti** okno. Můžete taky upravit XAML přímo v zobrazení jazyka XAML.

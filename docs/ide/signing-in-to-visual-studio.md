@@ -1,9 +1,9 @@
 ---
-title: Přihlaste se k sadě Visual Studio | Microsoft Docs
+title: Přihlaste se k sadě Visual Studio
 ms.custom: ''
 ms.date: 11/16/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e33d59be1be9049d8abdaf4f43dac221569cb7b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sign-in-to-visual-studio"></a>Přihlaste se k sadě Visual Studio
 
@@ -43,7 +43,7 @@ Tady je úplný seznam co můžete očekávat a co můžete dělat po přihláš
 
 Při prvním spuštění sady Visual studio, budete vyzváni k přihlášení a poskytují několik informací základní registrace. Měli byste vybrat účet Microsoft nebo pracovní nebo školní účet, je nejvhodnější představuje. Pokud nemáte žádné z těchto účtů, můžete zdarma vytvořit účet Microsoft. V tématu [jak přihlásím účet Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
-Dále zvolte nastavení uživatelského rozhraní a barevný motiv, který chcete použít v aplikaci Visual Studio. Visual Studio pamatuje tato nastavení a provede jejich synchronizaci mezi všechna prostředí sady Visual Studio, které jste se přihlásili k. Seznam nastavení, které jsou synchronizované, naleznete v části [synchronizovaná nastavení](../ide/synchronized-settings-in-visual-studio.md). Můžete změnit nastavení později otevřete-li **nástroje**, **možnosti** nabídky v sadě Visual Studio.
+Dále zvolte nastavení uživatelského rozhraní a barevný motiv, který chcete použít v aplikaci Visual Studio. Visual Studio pamatuje tato nastavení a provede jejich synchronizaci mezi všechna prostředí sady Visual Studio, které jste se přihlásili k. Seznam nastavení, které jsou synchronizované, naleznete v části [synchronizovat nastavení](../ide/synchronized-settings-in-visual-studio.md). Můžete změnit nastavení později otevřete-li **nástroje** > **možnosti** nabídky v sadě Visual Studio.
 
 Po zadání nastavení se spustí aplikace Visual Studio, přihlásíte se a budete připraveni začít. Pokud chcete ověřit, zda jste přihlášeni, vyhledejte název v pravém horním rohu prostředí Visual Studio.
 
@@ -53,7 +53,7 @@ Pokud se odhlásíte, budete automaticky přihlášení k sadě Visual Studio v�
 
 ## <a name="to-change-your-profile-information"></a>Změna informací v profilu
 
-1. Přejděte na **soubor**, **nastavení účtu** a zvolte **spravovat Visual Studio profil** odkaz.
+1. Přejděte na **soubor** > **nastavení účtu** a zvolte **spravovat Visual Studio profil** odkaz.
 
 1. V okně prohlížeče, zvolte **upravit profil** a nastavení, které chcete změnit.
 
@@ -61,9 +61,9 @@ Pokud se odhlásíte, budete automaticky přihlášení k sadě Visual Studio v�
 
 ## <a name="troubleshooting"></a>Poradce při potížích
 
-Pokud se vyskytnou potíže při přihlašování, přejděte na téma [účty podporují stránky](https://www.visualstudio.com/subscriptions/support/) jak získat nápovědu.
+Pokud se vyskytnou potíže při přihlašování, přejděte na téma [účty podporu](https://www.visualstudio.com/subscriptions/support/) stránky zobrazíte nápovědu.
 
 ## <a name="see-also"></a>Viz také
 
-[Jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md)  
-[Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)
+* [Jak odemknout Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [Integrované vývojové prostředí sady Visual Studio – přehled](../ide/visual-studio-ide.md)

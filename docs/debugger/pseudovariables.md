@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 256dd9ae424ffbfab08ec7e8a405528188bb756f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e1a674e854aaf587aca28f096883839ebd82e1e8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariables v ladicím programu sady Visual Studio
 Pseudovariables jsou podmínky, které slouží k zobrazení určité informace v okně proměnná nebo **QuickWatch** dialogové okno. Můžete zadat pseudovariable stejným způsobem, zadali byste normální proměnné. Pseudovariables není proměnné, ale a nemusí odpovídat názvy proměnných v programu.  
@@ -49,7 +49,7 @@ $handles
 |`$` *registername*<br /><br /> or<br /><br /> `@` *registername*|Zobrazí obsah registru *registername*.<br /><br /> Za normálních okolností můžete zobrazit obsah registrace právě zadáním názvu registrace. Je třeba tuto syntaxi používají je pouze při registraci názvu přetížení název proměnné. Pokud název registrace je stejný jako název proměnné v aktuálním oboru, ladicího programu název interpretovat jako název proměnné. Když se `$` *registername* nebo `@` *registername* hodit.|  
 |`$clk`|Zobrazí čas v hodinových cyklů.|  
 |`$user`|Zobrazí struktura s informací o účtu pro účet spuštění aplikace. Z bezpečnostních důvodů se nezobrazí, informace o hesle.|  
-|`$exceptionstack`|Zobrazí trasování zásobníku aktuální výjimky prostředí Windows Runtime. `$ exceptionstack` funguje pouze v aplikacích pro UPW. `$ exceptionstack` není podporováno pro výjimky C++ a SHE|  
+|`$exceptionstack`|Zobrazí trasování zásobníku aktuální výjimky prostředí Windows Runtime. `$ exceptionstack` funguje pouze v aplikacích pro UPW. `$ exceptionstack` není podporováno pro C++ a SEH výjimky|  
 |`$ReturnValue`|Zobrazí návratovou hodnotu metody rozhraní .NET Framework.|  
   
  V jazyce C# a Visual Basic můžete použít pseudovariables uvedené v této tabulce:  

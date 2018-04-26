@@ -1,7 +1,7 @@
 ---
-title: Použitím funkce Náhled definice v sadě Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Použitím funkce Náhled definice v sadě Visual Studio
 ms.date: 01/10/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 316b49a08d5a2cddf92a09e583f432db96ce730b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fc4cab55a20b6b820bbfc1af171f1bb0b45ce1e2
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Postupy: zobrazení a úpravy kódu s použitím funkce Náhled definice (Alt + F12)
 
@@ -65,7 +65,7 @@ Když spustíte upravit uvnitř **funkce Náhled definice** okno, soubor, který
 
 1. Klikněte na tlačítko **OK** zavřete **možnosti** dialogové okno.
 
-   ![Nastavení možnosti kliknutí myší funkce Náhled definice](../ide/media/editor_options_peek_view.png)  
+   ![Nastavení možnosti kliknutí myší funkce Náhled definice](../ide/media/editor_options_peek_view.png)
 
 ### <a name="keyboard-shortcuts-for-peek-definition"></a>Klávesové zkratky pro prohlížení definice
 
@@ -85,6 +85,6 @@ Můžete použít tyto klávesové zkratky s **funkce Náhled definice** okno:
 
 ## <a name="see-also"></a>Viz také
 
-[Přejděte kódu](../ide/navigating-code.md)  
-[Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)  
-[Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md)
+- [Přejděte kódu](../ide/navigating-code.md)
+- [Přejít k definici a Náhled definice](../ide/go-to-and-peek-definition.md)
+- [Tipy pro vyšší produktivitu](../ide/productivity-tips-for-visual-studio.md)

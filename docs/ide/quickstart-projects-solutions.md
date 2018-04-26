@@ -1,7 +1,7 @@
 ---
-title: Úvod do projektů a řešení v sadě Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Úvod do projektů a řešení v sadě Visual Studio
 ms.date: 12/11/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: quickstart
 author: gewarren
@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606b08608eea275a25a1a097ed75b7554a99f6a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-projects-and-solutions"></a>Rychlý úvod: Projekty a řešení
 
@@ -39,7 +39,7 @@ Naše zkoumání začneme vytvořením prázdného řešení. Po získání věd
 
    Otevře se Visual Studio, a pravděpodobně uvidíte **– úvodní stránka** zabírají většinu nemovitosti okna.
 
-1. Na řádku nabídek zvolte **soubor** > **nový** > **projektu...** .
+1. Na řádku nabídek zvolte **soubor** > **nový** > **projektu**.
 
    **Nový projekt** otevře se dialogové okno.
 
@@ -53,13 +53,13 @@ Naše zkoumání začneme vytvořením prázdného řešení. Po získání věd
 
 Nyní Pojďme přidat naše první projekt do řešení. Jsme budete začít s prázdným projektem a položky, které je třeba, přidejte do projektu.
 
-1. Klikněte pravým tlačítkem nebo kontextu nabídce **řešení 'QuickSolution'** v **Průzkumníku řešení**, zvolte **přidat** > **nový projekt...** .
+1. Klikněte pravým tlačítkem nebo kontextu nabídce **řešení 'QuickSolution'** v **Průzkumníku řešení**, zvolte **přidat** > **nový projekt**.
 
    **Přidat nový projekt** otevře se dialogové okno.
 
 1. V levém podokně rozbalte **Visual C#** a zvolte **Windows Classic Desktop**. Zvolte v prostředním podokně **prázdný projekt (rozhraní .NET Framework)**. Název projektu "QuickDate", a potom vyberte **OK** tlačítko.
 
-   Projekt s názvem "QuickDate" se zobrazí pod řešení v **Průzkumníku řešení**. Aktuálně obsahuje jednoho souboru s názvem **App.config**.
+   Projekt s názvem "QuickDate" se zobrazí pod řešení v **Průzkumníku řešení**. Aktuálně obsahuje jednoho souboru s názvem *App.config*.
 
    > [!NOTE]
    > Pokud nevidíte **Visual C#** v levém podokně dialogového okna, je potřeba nainstalovat **vývoj aplikací .NET** zatížení. Snadný způsob, jak to udělat je vybrat **otevřete instalační program Visual Studio** odkaz v levém dolním rohu dialogu. Po **instalační program Visual Studio** spustí, vyberte **vývoj aplikací .NET** zatížení a potom **upravit** tlačítko.
@@ -70,15 +70,15 @@ Nyní Pojďme přidat naše první projekt do řešení. Jsme budete začít s p
 
 Máme prázdný projekt&mdash;přidejme souboru kódu.
 
-1. Klikněte pravým tlačítkem nebo kontextu nabídce **QuickDate** v **Průzkumníku řešení**, zvolte **přidat** > **novou položku...** .
+1. Klikněte pravým tlačítkem nebo kontextu nabídce **QuickDate** v **Průzkumníku řešení**, zvolte **přidat** > **novou položku**.
 
    **Přidat novou položku** otevře se dialogové okno.
 
 1. Rozbalte položku **Visual C# položky**, zvolte **kód**. V prostředním podokně vyberte **třída**. Název třídy "Kalendář" a potom vyberte **přidat** tlačítko.
 
-   Soubor s názvem "Calendar.cs" se přidá do projektu. **.Cs** na konci je přípona souboru, který je na soubory kódu C#. Soubor se zobrazí v projektu visual hierarchie v **Průzkumníku**, a její obsah se otevře se v editoru.
+   Soubor s názvem *Calendar.cs* se přidá do projektu. *.Cs* na konci je přípona souboru, který je na soubory kódu C#. Soubor se zobrazí v projektu visual hierarchie v **Průzkumníku**, a její obsah se otevře se v editoru.
 
-1. Nahraďte obsah **Calendar.cs** soubor s následujícím kódem.
+1. Nahraďte obsah *Calendar.cs* soubor s následujícím kódem.
 
    ```csharp
    using System;
@@ -110,13 +110,13 @@ Je běžné pro řešení obsahovat více než jeden projekt a často tyto refer
 
 Umožňuje přidat projektu testů jednotek pro naše řešení. Tentokrát začneme ze šablony projektu, proto nemáme soubor další kód přidejte do projektu.
 
-1. Klikněte pravým tlačítkem nebo kontextu nabídce **řešení 'QuickSolution'** v **Průzkumníku řešení**, zvolte **přidat** > **nový projekt...** .
+1. Klikněte pravým tlačítkem nebo kontextu nabídce **řešení 'QuickSolution'** v **Průzkumníku řešení**, zvolte **přidat** > **nový projekt**.
 
    **Přidat nový projekt** otevře se dialogové okno.
 
 1. V levém podokně rozbalte **jazyka Visual Basic** a zvolte **Test** kategorie. V prostředním podokně vyberte **projektu testování částí (rozhraní .NET Framework)**. Název projektu "QuickTest" a potom vyberte **OK** tlačítko.
 
-   Druhý projekt je přidán do **Průzkumníku řešení**a soubor s názvem **UnitTest1.vb** otevře v editoru. **VB** je přípona souboru, který je na soubory s kódem jazyka Visual Basic.
+   Druhý projekt je přidán do **Průzkumníku řešení**a soubor s názvem *UnitTest1.vb* otevře v editoru. *VB* je přípona souboru, který je na soubory s kódem jazyka Visual Basic.
 
    ![Průzkumník řešení se dva projekty](media/quickstart-projects-solution-explorer.png)
 
@@ -124,7 +124,7 @@ Umožňuje přidat projektu testů jednotek pro naše řešení. Tentokrát zač
 
 Vytvoříme k otestování naší metoda v použít nového projektu testů jednotek **QuickDate** projektu, takže je potřeba přidat odkaz na tento projekt. Tím se vytvoří závislost sestavení mezi dva projekty, což znamená **QuickDate** budou vytvořeny před **QuickTest** když je integrované řešení.
 
-1. Vyberte **odkazy** uzel v **QuickTest** projektu a z nabídky klikněte pravým tlačítkem nebo kontextu, zvolte **přidat odkaz na...** .
+1. Vyberte **odkazy** uzel v **QuickTest** projektu a z nabídky klikněte pravým tlačítkem nebo kontextu, zvolte **přidat odkaz na**.
 
    ![Přidat odkaz nabídky](media/quickstart-projects-add-reference.png)
 
@@ -136,7 +136,7 @@ Vytvoříme k otestování naší metoda v použít nového projektu testů jedn
 
 ## <a name="add-test-code"></a>Přidat testovací kód
 
-1. Teď přidáme testovací kód do souboru kódu jazyka Visual Basic. Nahraďte obsah **UnitTest1.vb** následujícím kódem.
+1. Teď přidáme testovací kód do souboru kódu jazyka Visual Basic. Nahraďte obsah *UnitTest1.vb* následujícím kódem.
 
    ```vb
    <TestClass()> Public Class UnitTest1
@@ -150,7 +150,7 @@ Vytvoříme k otestování naší metoda v použít nového projektu testů jedn
 
    Zobrazí se zobrazí červený "vlnovkou" v části některé kódu. Jsme budete tuto chybu opravit tak, že k testovacímu projektu [přátelského sestavení](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies) k **QuickDate** projektu.
 
-1. Zpět v **QuickDate** projekt, otevřete **Calendar.cs** soubor, pokud ještě není otevřené a přidejte následující pomocí příkazu a <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atribut, chcete-li vyřešit chyby v k testovacímu projektu.
+1. Zpět v **QuickDate** projekt, otevřete *Calendar.cs* soubor, pokud ještě není otevřené a přidejte následující pomocí příkazu a <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atribut, chcete-li vyřešit chyby v k testovacímu projektu.
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -168,7 +168,7 @@ Vytvoříme k otestování naší metoda v použít nového projektu testů jedn
 
 1. V **Průzkumníku řešení**, vyberte **QuickTest** projektu. V nabídce klikněte pravým tlačítkem nebo kontextu vyberte **vlastnosti**, nebo stačí stisknout klávesu **Alt**+**Enter**.
 
-   Na stránkách vlastností projektu otevřete **aplikace** kartě. Všimněte si, že název sestavení **QuickTest** projektu, je skutečně "QuickTest". Pokud jste chtěli změnit, je to, kde by ho změnit. Potom při sestavování testovacího projektu název spustitelného souboru, výsledná změní z **QuickTest.exe** k jste zvolili.
+   Na stránkách vlastností projektu otevřete **aplikace** kartě. Všimněte si, že název sestavení **QuickTest** projektu, je skutečně "QuickTest". Pokud jste chtěli změnit, je to, kde by ho změnit. Potom při sestavování testovacího projektu název spustitelného souboru, výsledná změní z *QuickTest.exe* k jste zvolili.
 
    ![Vlastnosti projektu](media/quickstart-projects-properties.png)
 
@@ -178,7 +178,7 @@ Vytvoříme k otestování naší metoda v použít nového projektu testů jedn
 
 Pokud chcete zkontrolovat, že vaše testování částí funguje, zvolte **testování** > **spustit** > **všechny testy** z řádku nabídek. Volá se okno **Průzkumníka testů** otevře a to by měl vidět **TestGetCurrentDate** testování předává.
 
-Blahopřejeme k dokončení tento rychlý start! Potom můžete prozkoumávat některé z dalších quickstarts pro sadu Visual Studio nebo Další informace o [vytváření projektů a řešení](../ide/creating-solutions-and-projects.md).
+Blahopřejeme k dokončení tento rychlý start! Potom můžete prozkoumávat některé z dalších Quickstarts pro sadu Visual Studio nebo Další informace o tom, jak [vytváření projektů a řešení](../ide/creating-solutions-and-projects.md).
 
 ## <a name="see-also"></a>Viz také
 

@@ -1,6 +1,7 @@
 ---
-title: Visual Studio IDE 64-Bit podpora | Microsoft Docs
+title: Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio
 ms.date: 02/21/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 344e6067e3280a998f4b2296f880471080bd7bb6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b911a6529e3e32075ca8599c921ae8369afb691
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Podpora pro 64bitové integrované vývojové prostředí sady Visual Studio
 
@@ -32,5 +33,5 @@ Visual Studio umožňuje nastavení vaší aplikací pro různé platformy, vče
 
 ## <a name="debugging-a-64-bit-application"></a>Ladění aplikace 64-bit
 
-[Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)
-[použití souborů výpisu paměti](../debugger/using-dump-files.md)
+- [Ladění 64bitových aplikací](../debugger/debug-64-bit-applications.md)
+- [Použití souborů výpisu paměti](../debugger/using-dump-files.md)
