@@ -1,18 +1,19 @@
 ---
 title: Visual Studio připojené prostředí | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: overview
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Rychlý vývoj Kubernetes s kontejnery a mikroslužeb v Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, kontejnery
-manager: ghogen
-ms.openlocfilehash: c1ce010b6ab36c1577953ab527f3c17d5e68def8
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: f78a3afcf721cd9bfc5dbf3a98c932923536cffc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="vs-connected-environment-for-azure-container-service-aks-preview"></a>VS připojeném prostředí pro Azure Container Service (AKS) (Preview)
 Prostředí připojení VS pomáhá vyvíjet s rychlostí na Kubernetes. Vytvořte prostředí na základě Kubernetes, která je plně spravovaná v Azure a optimalizována pro vývoj a interaktivně vyvíjet kontejnery v cloudu pomocí známých nástrojů, jako je VS Code, Visual Studio nebo příkazového řádku.
