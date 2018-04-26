@@ -1,6 +1,7 @@
 ---
 title: Modifikační klávesy návrhové plochy v programu Blend
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
@@ -9,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74859e0a7655f45be26061d158e482255ad2855e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a6e48dea790b5cb3adb6396a2bdd74b4625e30ec
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Modifikační klávesy návrhové plochy v programu Blend
 Některé klávesové zkratky nejsou přidruženy položky nabídky, což znamená, že nelze použít [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] uživatelské rozhraní pro je zjišťovat. Následující tabulka uvádí zkratky, které akci, jako je například změna velikosti objektu.
@@ -42,5 +43,5 @@ Některé klávesové zkratky nejsou přidruženy položky nabídky, což znamen
 ## <a name="see-also"></a>Viz také
 
 - [Klávesové zkratky](../designers/keyboard-shortcuts-in-blend.md)
-- [Modifikační klávesy nástroje pero](../designers/pen-tool-modifier-keys-in-blend.md)
+- [Modifikační klávesy nástroje Pero](../designers/pen-tool-modifier-keys-in-blend.md)
 - [Modifikační klávesy nástroje přímý výběr](../designers/direct-selection-tool-modifier-keys-in-blend.md)

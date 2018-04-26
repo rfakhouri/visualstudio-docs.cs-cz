@@ -1,10 +1,9 @@
 ---
-title: Další informace o chybách návrháře tříd | Microsoft Docs
-ms.custom: ''
+title: Chyby Návrhář – třída
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: troubleshooting
 f1_keywords:
 - vs.classdesigner.CPlusPlusViewInDiagramNoTypeFound
 - vs.classdesigner.CPlusPlusNoTypeFound
@@ -31,22 +30,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cd6223786db06506c1fa4ac9b6bd3118eb5e3d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e0af8686af556ca24cdbc9e0a51206f4f0728206
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="additional-information-about-class-designer-errors"></a>Další informace o chybách návrháře tříd
-Návrhář tříd nesleduje umístění zdrojových souborů, takže úprava strukturu projektu nebo přesunutí zdrojové soubory v projektu může způsobit návrhář tříd ke ztrátě informací o typu (zejména typ zdroje typedef, základní třídy nebo přidružení typů). Může dojít chybě, jako **třída Návrhář nemůže zobrazit tento typ**. Pokud tak učiníte, přetáhněte upraveném nebo přemístěné zdrojový kód na diagramu tříd znovu a znovu ji zobrazit.  
-  
-Pomoc s další chyby a upozornění můžete najít v následujících zdrojích informací:  
-  
-[Práce s kódem jazyka Visual C++](working-with-visual-cpp-code.md)  
-Obsahuje informace o zobrazení C++ v diagramu tříd pro řešení potíží.  
-  
-[Fórum návrháře Visual Studio – třída](http://go.microsoft.com/fwlink/?LinkId=160754)  
-Poskytuje fórum pro otázky o návrháři tříd.  
-  
+# <a name="additional-information-about-class-designer-errors"></a>Další informace o chybách, návrhář tříd
+
+**Třídy návrháře** nesleduje umístění zdrojových souborů, takže změnou strukturu projektu nebo přesunutím zdrojové soubory v projektu může způsobit **návrhář tříd** ke ztrátě informací o typu (zejména typ zdroje definice typu, základní třídy nebo přidružení typy). Může dojít chybě, jako **třída Návrhář nemůže zobrazit tento typ**. Pokud tak učiníte, přetáhněte upraveném nebo přemístěné zdrojový kód na diagramu tříd znovu a znovu ji zobrazit.
+
+## <a name="resources"></a>Prostředky
+
+Pomoc s další chyby a upozornění můžete najít v následujících zdrojích informací:
+
+- [Práce s kódem jazyka Visual C++](working-with-visual-cpp-code.md) obsahuje pokyny k odstraňování informace o zobrazení C++ v diagramu tříd.
+- [Fórum pro Visual Studio návrhář tříd](http://go.microsoft.com/fwlink/?LinkId=160754) poskytuje fórum pro otázky o **návrhář tříd**.
+
 ## <a name="see-also"></a>Viz také
-[Navrhování a zobrazování tříd a typů](designing-and-viewing-classes-and-types.md)
+
+- [Navrhování a zobrazování tříd a typů](designing-and-viewing-classes-and-types.md)

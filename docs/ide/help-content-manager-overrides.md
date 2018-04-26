@@ -1,9 +1,8 @@
 ---
-title: Nápověda správce obsahu přepsání | Microsoft Docs
-ms.custom: ''
+title: Přepsání Help Content Manager
 ms.date: 11/01/2017
-ms.technology:
-- vs-help-viewer
+ms.prod: visual-studio-dev15
+ms.technology: vs-help-viewer
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
@@ -11,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a943724d10241b5f0d7abb236964be51c38b79c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="help-content-manager-overrides"></a>Přepsání Help Content Manager
+
 Můžete změnit výchozí chování Prohlížeč nápovědy a souvisejících s funkcí v prostředí Visual Studio IDE. Některé možnosti jsou určené vytváření [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) souboru nastavit různé hodnoty klíčů registru. Ostatní se nastavují přímo v registru.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Tom, jak řídit pomocí souboru .pkgdef chování Help Viewer
@@ -31,8 +31,9 @@ Můžete změnit výchozí chování Prohlížeč nápovědy a souvisejících s
 4. Spustit `devenv /updateconfiguration` v příkazovém řádku vývojáře.
 
 ### <a name="registry-key-values"></a>Hodnoty klíčů registru
-|Hodnota klíče registru|Typ|Data|Popis|  
-|------------------|----|----|-----------|  
+
+|Hodnota klíče registru|Typ|Data|Popis|
+|------------------|----|----|-----------|
 |NewContentAndUpdateService|odkazy řetězců|\<Adresa URL protokolu HTTP pro koncový bod služby\>|Definovat koncový bod jedinečné služby|
 |UseOnlineHelp|DWORD|`0` Chcete-li určit místní Nápověda `1` k určení online nápovědy|Definujte výchozího nápovědy online nebo offline.|
 |OnlineBaseUrl|odkazy řetězců|\<Adresa URL protokolu HTTP pro koncový bod služby\>|Definovat koncový bod jedinečný F1|
@@ -41,6 +42,7 @@ Můžete změnit výchozí chování Prohlížeč nápovědy a souvisejících s
 |DisableFirstRunHelpSelection|DWORD|`0` Chcete-li povolit nebo `1` zakázání funkce nápovědy, které jsou nakonfigurované při prvním spuštění sady Visual Studio|Zakázat instalace obsahu na první spuštění sady Visual Studio|
 
 ### <a name="example-pkgdef-file-contents"></a>Obsah souboru .pkgdef příklad
+
 ```
 [$RootKey$\Help]
 “NewContentAndUpdateService”=”https://some.service.endpoint”
@@ -51,16 +53,18 @@ Můžete změnit výchozí chování Prohlížeč nápovědy a souvisejících s
 “DisableFirstRunHelpSelection”=dword:00000001
 ```
 
-## <a name="using-registry-editor-to-change-help-viewer-behavior"></a>Pomocí Editoru registru změnit chování Help Viewer
-Následující dva chování lze řídit nastavením hodnoty klíčů registru v editoru registru.  
-  
-|Úloha|Klíč registru|Hodnota|Data|  
+## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Pomocí Editoru registru změnit chování Help Viewer
+
+Následující dva chování lze řídit nastavením hodnoty klíčů registru v editoru registru.
+
+|Úloha|Klíč registru|Hodnota|Data|
 |----------|-----|------|----|
 |Přepsání priority úloh služby BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (na 64-bit machine)\Microsoft\Help\v2.3|BITSPriority|**popředí**, **vysokou**, **normální**, nebo **nízkou**|
 |Přejděte na místní ukládání obsahu ve sdílené síťové složce|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
-  
+
 ## <a name="see-also"></a>Viz také
-[Příručka správce Help Viewer](../ide/help-viewer-administrator-guide.md)  
-[Argumenty příkazového řádku pro správce obsahu nápovědy](../ide/command-line-arguments-for-the-help-content-manager.md)  
-[Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)  
-[Úprava izolované prostředí pomocí souboru .pkgdef](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+
+- [Příručka správce Help Viewer](../ide/help-viewer-administrator-guide.md)
+- [Argumenty příkazového řádku pro správce obsahu nápovědy](../ide/command-line-arguments-for-the-help-content-manager.md)
+- [Microsoft Help Viewer 2.2](../ide/microsoft-help-viewer.md)
+- [Úprava izolované prostředí pomocí souboru .pkgdef](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

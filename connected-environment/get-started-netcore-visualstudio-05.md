@@ -1,18 +1,19 @@
 ---
 title: Vytvoření prostředí pro vývoj .NET Core s kontejnery pomocí Kubernetes v cloudu pomocí sady Visual Studio – krok 5 – volání jiného kontejneru | Microsoft Docs
-author: johnsta
-ms.author: johnsta
+author: ghogen
+ms.author: ghogen
 ms.date: 02/20/2018
-ms.topic: get-started-article
-ms.technology: vsce-kubernetes
+ms.topic: tutorial
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 description: Rychlý vývoj Kubernetes s kontejnery a mikroslužeb v Azure
 keywords: Docker, Kubernetes, Azure, AKS, Azure Container Service, kontejnery
-manager: ghogen
-ms.openlocfilehash: 8b0a0c78496b8f57764383d737e2a1cebb2dd6b9
-ms.sourcegitcommit: 900ed1e299cd5bba56249cef8f5cf3981b10cb1c
+manager: douge
+ms.openlocfilehash: ab3934e6f7f013dd21309dc8c98461983bdfe30a
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-on-connected-environment-with-net-core-and-visual-studio"></a>Začínáme v připojeném prostředí s .NET Core a Visual Studio
 
@@ -30,7 +31,7 @@ Z důvodu čas umožňuje stáhnout ukázkový kód z úložiště Githubu. Pře
 1. Otevřete projekt `mywebapi` v *samostatném okně Visual Studio*.
 1. Vyberte **připojené prostředí pro AKS** z rozevíracího seznamu nastavení spuštění jako jste provedli dříve `webfrontend` projektu. Spíše než tato doba pro vytvoření nové vývojové prostředí, vyberte stejný jako ten, jste již vytvořili. Stejně jako před ponechejte uvedena do výchozího stavu místo `mainline` a klikněte na tlačítko **OK**. V okně výstupu může dojít k sadě Visual Studio spustí "tedy" Tato nová služba ve vašem vývojovém prostředí k urychlení věcí až při spuštění ladění,
 1. Stiskněte F5 a počkejte, služby pro vytváření a nasazení. Budete vědět, že je připraven při stavového řádku sadě Visual Studio změní oranžová
-1. Poznamenejte si koncový bod adresy URL se zobrazí v **připojené prostředí pro AKS** v podokně **výstup** okně ho bude vypadat podobně jako http://localhost:\<ČísloPortu\>. To nemusí připadat jako kontejner běží místně, ale ve skutečnosti je spuštěna v našem vývojového prostředí v Azure.
+1. Poznamenejte si koncový bod adresy URL se zobrazí v **připojené prostředí pro AKS** v podokně **výstup** okně ho bude vypadat podobně jako http://localhost: \<ČísloPortu\>. To nemusí připadat jako kontejner běží místně, ale ve skutečnosti je spuštěna v našem vývojového prostředí v Azure.
 1. Když `mywebapi` je připravené, otevřete prohlížeč na adresu místního hostitele a připojit `/api/values` na adresu URL pro vyvolání výchozí GET rozhraní API služby `ValuesController`. 
 1. Pokud všechny kroky byly úspěšné, byste měli vidět odpovědi z `mywebapi` služba, která vypadá takto.
 

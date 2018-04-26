@@ -1,20 +1,19 @@
 ---
-title: Přizpůsobení sady Visual Studio IDE | Microsoft Docs
-ms.custom: ''
+title: Přizpůsobení sady Visual Studio IDE
 ms.date: 11/20/2017
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cecb3d9d1c221fc35f9a0c16ff7d5f685a85978e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Přizpůsobení sady Visual Studio IDE
 
@@ -24,7 +23,7 @@ Visual Studio si můžete přizpůsobit v různé způsoby, jak nejlépe podporu
 
 Mnoho možností pro přizpůsobení se zveřejňují přes [možnosti prostředí](../ide/reference/environment-options-dialog-box.md) dialogové okno. Pro přístup k tohoto dialogového okna dvěma způsoby:
 
-- Na řádku nabídek zvolte **nástroje**, **možnosti**a pokud je ještě není rozbalená, rozbalte **prostředí** uzlu.
+- Na řádku nabídek zvolte **nástroje** > **možnosti**a pokud je ještě není rozbalená, rozbalte **prostředí** uzlu.
 
 - Typ `environment` v **Snadné spuštění** pole a zvolte **prostředí--> Obecné** ze seznamu výsledků.
 
@@ -41,7 +40,7 @@ Chcete-li změnit možnosti zabarvení v editoru, zadejte `environment` v **Snad
 
 Můžete změnit hlavní nabídky malá a velká písmena mezi **první písmeno velké** ("soubor") a **velká písmena** ("soubor"). Typ `environment` v **Snadné spuštění** vyberte **prostředí--> Obecné**a poté změňte **použít název případu stylů na řádku nabídek** možnost.
 
-### <a name="customzing-menus-and-toolbars"></a>Přizpůsobení nabídek a panelů nástrojů
+### <a name="customze-menus-and-toolbars"></a>Customze nabídek a panelů nástrojů
 
 Chcete-li přidat nebo odebrat položky nabídky nebo panelu nástrojů, přečtěte si téma [postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
@@ -55,9 +54,9 @@ Můžete definovat a uložit více rozložení oken a mezi nimi přepínat. Mů�
 
 ## <a name="external-tools"></a>Externí nástroje
 
-Můžete přizpůsobit **nástroje** nabídky ke spuštění externích nástrojů pro další informace najdete v tématu [Správa externích nástrojů](../ide/managing-external-tools.md).
+Můžete přizpůsobit **nástroje** nabídky ke spuštění externích nástrojů. Další informace najdete v tématu [Správa externích nástrojů](../ide/managing-external-tools.md).
 
 ## <a name="see-also"></a>Viz také
 
-[Přehled Visual Studio IDE](../ide/visual-studio-ide.md)  
-[Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)
+- [Přehled Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Rychlý úvod: První pohled na Visual Studio IDE](../ide/quickstart-ide-orientation.md)

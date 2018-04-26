@@ -1,6 +1,7 @@
 ---
 title: 'CA2114: Zabezpečení metody by mělo být nadmnožinou typu'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 915104e26f16005b8e0b8c4fa092be7c40d1ff7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5d2fc6fb60dd837dd93de1db2758ee0e2c216850
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: Zabezpečení metody by mělo být nadmnožinou typu
 |||
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/19/2018
  Tento příklad vytvoří následující výstup.
 
  **[Všechna oprávnění] Osobní údaje: 6/16/1964 12:00:00 AM**
-**[žádné oprávnění k zápisu (pro název typu)] osobní údaje: 6/16/1964 12:00:00 AM**
-**[ne číst oprávnění () pro název metoda)] nelze získat přístup k osobním údajům: žádost se nezdařila.**
+ **[žádné oprávnění k zápisu (pro název typu)] osobní údaje: 6/16/1964 12:00:00 AM**
+ **[ne číst oprávnění () pro název metoda)] nelze získat přístup k osobním údajům: žádost se nezdařila.**
 ## <a name="see-also"></a>Viz také
  [Pokyny pro zabezpečené kódování](/dotnet/standard/security/secure-coding-guidelines) [požadavky na propojení](/dotnet/framework/misc/link-demands) [Data a modelování](/dotnet/framework/data/index)

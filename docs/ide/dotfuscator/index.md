@@ -1,9 +1,9 @@
 ---
-title: Dotfuscatoru Community Edition (CE) | Microsoft Docs
-ms.date: 2017-10-10
+title: Dotfuscatoru Community Edition (CE)
+ms.date: 10/10/2017
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscatoru, Dotfuscatoru CE, preemptivní, preemptivní řešení preemptivní ochrana, ochrana, edice community, maskováním, .NET, volná, Visual Studio 2017
 helpviewer_keywords:
@@ -16,12 +16,13 @@ helpviewer_keywords:
 description: Zjistěte, jak lze chránit aplikací .NET bezplatná edice Community Dotfuscatoru součástí Visual Studio 2017.
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e8e7fb56580e3b0b5a9db8e46d9b98b7c157f9f2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22243a8d837e584df64c9fabc28405951f481b26
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscatoru Community Edition (CE)
 
@@ -34,8 +35,8 @@ Dotfuscatoru funguje na kompilované sestavení bez nutnosti dalšího programov
 ## <a name="why-protection-matters"></a>Proč na záleží ochrany
 
 Je důležité **chránit duševní vlastnictví** (IP).
-Kód aplikace obsahuje informace o návrhu a implementace, které lze považovat za IP.
-Však aplikací postavené na rozhraní .NET Framework [zahrnují významné metadata a nejdůležitější zprostředkující kód][assemblies], což je velmi snadné provést zpětnou analýzu, právě pomocí jedné z mnoha volná, automatizované nástroje.
+Kód aplikace obsahuje informace návrhu a implementace, které lze považovat za IP.
+Ale aplikací postavené na rozhraní .NET Framework [zahrnují významné metadata a nejdůležitější zprostředkující kód][assemblies], přitom snadno provádět zpětnou analýzu, právě pomocí jedné z mnoha volná, automatizované nástroje.
 Přerušení a zastavení zpětnou vám může zabránit neoprávněným sdílením IP, stejně jako ukazují, že kód obsahuje obchodních tajemství.
 Můžete Dotfuscatoru [obfuskováním] [ obfuscation] vaše sestavení .NET bránit zpětnou, při zachování původní chování aplikace.
 
@@ -70,42 +71,42 @@ Informace o rozšíření Dotfuscatoru najdete v tématu [upgrady stránky][upgr
 
 Chcete-li začít používat Dotfuscatoru CE ze sady Visual Studio, zadejte `dotfuscator` do **Snadné spuštění** panelu Hledat (Ctrl + Q).
 
-* Pokud Dotfuscatoru CE je již nainstalován, tím se otevře *nabídky* možnost spustit uživatelské rozhraní Dotfuscatoru CE. Podrobnosti najdete v tématu [stránce Začínáme v úplné uživatelské příručce CE Dotfuscatoru][get-started].
-* Pokud ještě není nainstalovaná Dotfuscatoru CE, tím se otevře odpovídajícího *nainstalovat* možnost. Najdete v článku [instalační stránka] [ install] podrobnosti.
+* Pokud Dotfuscatoru CE je již nainstalován, **Snadné spuštění** otevře *nabídky* možnost spustit uživatelské rozhraní Dotfuscatoru CE. Podrobnosti najdete v tématu [stránce Začínáme v úplné uživatelské příručce CE Dotfuscatoru][get-started].
+* Pokud ještě není nainstalovaná Dotfuscatoru CE, **Snadné spuštění** vyvoláte odpovídajícího *nainstalovat* možnost. Najdete v článku [instalační stránka] [ install] podrobnosti.
 
 Můžete získat také **nejnovější verzi** z Dotfuscatoru CE z [Dotfuscatoru stáhne stránky na preemptive.com][download].
 
 ## <a name="full-documentation"></a>Úplnou dokumentaci
 
-Tato stránka a jeho podstránky poskytují přehled funkcí Dotfuscatoru CE, a také [pokyny k instalaci nástroje][install].
+Tato stránka a její podstránky poskytují přehled funkcí Dotfuscatoru CE, a také [pokyny k instalaci nástroje][install].
 
-Najdete v tématu [v úplné Dotfuscatoru CE uživatelské příručce na preemptive.com] [ full] podrobné pokyny k použití, včetně [spuštění pomocí uživatelského rozhraní Dotfuscatoru CE] [get-started].
+V tématu [v úplné Dotfuscatoru CE uživatelské příručce na preemptive.com] [ full] podrobné pokyny k použití, včetně [spuštění pomocí uživatelského rozhraní Dotfuscatoru CE] [ get-started].
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
-[software-protection]: https://www.preemptive.com/software-protection
-[obfuscation]: https://www.preemptive.com/obfuscation
-[app-protection]: https://www.preemptive.com/application-protection
-[sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
-[net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-[download]: https://www.preemptive.com/products/dotfuscator/downloads
+- [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+- [software-protection]: https://www.preemptive.com/software-protection
+- [obfuscation]: https://www.preemptive.com/obfuscation
+- [app-protection]: https://www.preemptive.com/application-protection
+- [sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
+- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
+- [download]: https://www.preemptive.com/products/dotfuscator/downloads
 
-[install]: install.md
-[capabilities]: capabilities.md
-[upgrades]: upgrades.md
+- [install]: install.md
+- [capabilities]: capabilities.md
+- [upgrades]: upgrades.md
 
-[get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-[renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
+- [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-[checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
-[tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
-[debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
-[shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
+- [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+- [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+- [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+- [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+- [exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+- [sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+- [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
+- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

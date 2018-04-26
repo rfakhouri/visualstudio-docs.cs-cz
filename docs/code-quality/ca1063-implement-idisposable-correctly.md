@@ -1,6 +1,7 @@
 ---
 title: 'CA1063: Implementuje správně IDisposable'
 ms.date: 02/12/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -15,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9205c20730681969550c3a2368e6ec889056648b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementuje správně IDisposable
 
@@ -60,21 +61,21 @@ Všechny typy IDisposable by měly správně implementovat vzor Dispose.
 
 Zkontrolujte v kódu a zjistěte, který z následujících řešení opraví tento porušení.
 
-- Rozhraní IDisposable odeberte ze seznamu rozhraní, které jsou implementované {0} a místo toho přepsat implementace metody Dispose základní třídy.
+- Odebrat ze seznamu rozhraní, které jsou implementované pomocí rozhraní IDisposable {0} a místo toho přepsat implementace metody Dispose základní třídy.
 
-- Odeberte finalizační metodu z typu {0}, přepsat metodu Dispose (bool uvolnění) a uveďte logiku finalizace v kódové cestě 'uvolnění, pokud má hodnotu false.
+- Odeberte finalizační metodu z typu {0}přepsat metodu Dispose (bool uvolnění) a uveďte logiku finalizace v kódové cestě 'uvolnění, pokud má hodnotu false.
 
-- Odeberte {0}, přepsat metodu Dispose (bool uvolnění) a uveďte logiku uvolnění v kódové cestě 'uvolnění, kde je true.
+- Odebrat {0}, přepsat metodu Dispose (bool uvolnění) a uveďte logiku uvolnění v kódové cestě 'uvolnění, kde je true.
 
-- Zkontrolujte, zda že tento {0} je deklarován jako veřejné a uzavřené.
+- Ujistěte se, že {0} je deklarován jako veřejné a zapečetěná.
 
-- Přejmenujte {0} 'uvolnění a ujistěte se, že je deklarován jako veřejné a uzavřené.
+- Přejmenujte {0} k 'uvolnění a ujistěte se, že je deklarován jako veřejné a uzavřené.
 
-- Ujistěte se, že tento {0} je deklarován jako chráněný, virtuální a nezapečetěné.
+- Ujistěte se, že {0} je deklarován jako chráněný, virtuální a nezapečetěné.
 
-- {0} upravte tak, aby volá Dispose(true) a potom volá GC. Funkce SuppressFinalize na aktuální instanci objektu ('this' nebo 'Mi' v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) a potom se vrátí.
+- Upravit {0} tak, aby zavolá Dispose(true), pak zavolá GC. Funkce SuppressFinalize na aktuální instanci objektu ('this' nebo 'Mi' v [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) a potom se vrátí.
 
-- {0} upravte tak, aby volá Dispose(false) a potom se vrátí.
+- Upravit {0} tak, aby volá Dispose(false) a potom se vrátí.
 
 - Pokud vytváříte nezapečetěných typ, který deklaruje a implementuje rozhraní IDisposable, ujistěte se, že implementace rozhraní IDisposable dodržuje vzor, který je popsán výše v této části.
 

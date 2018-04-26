@@ -1,25 +1,25 @@
 ---
-title: 'Chyba: Tento cílový proces byl ukončen při vyhodnocování funkce &#39;funkce&#39; | Microsoft Docs'
+title: 'Chyba: Tento cílový proces byl ukončen s kódem &#39;kód&#39; při vyhodnocování funkce &#39;funkce&#39; | Microsoft Docs'
 ms.custom: ''
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
-- vs.debug.error.process_exit_func_eval_abort
+- vs.debug.error.process_exit_during_func_eval
 ms.technology: vs-ide-debug
 author: mikejo5000
 ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ff03ef364c21e20151547effe8bfbf5935fe7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d5e9221ccf162180a89cc88b1ceebcf55be39eef
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="error-the-target-process-exited-while-evaluating-the-function-39function39"></a>Chyba: Tento cílový proces byl ukončen při vyhodnocování funkce &#39;– funkce&#39;
+# <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Chyba: Tento cílový proces byl ukončen s kódem &#39;kód&#39; při vyhodnocování funkce &#39;– funkce&#39;
 
-Úplný text zprávy: tento cílový proces byl ukončen při vyhodnocování funkce 'function'. Najdete v okně výstupu pro tento cílový proces ukončovací kód.
+Úplný text zprávy: tento cílový proces byl ukončen s kódem 'kódu' při vyhodnocování funkce 'function'.
 
 Aby bylo snazší ke kontrole stavu objektů .NET, ladicí program automaticky vynutit vyladěnou procesu spouštět další kód (obvykle vlastnost metody getter a `ToString` funkce). Ve většině případů tyto funkce úspěšně dokončit nebo generování výjimek, které může být zachycen ladicího programu. Existují však některých případech, ve kterých nelze zachycení výjimky, protože napříč hranicemi jádra, vyžadují čerpání zpráv uživatele nebo neopravitelné. Jako výsledek, metoda getter vlastnosti nebo metody ToString, který provede kód této buď ukončit proces (například volá `ExitProcess()`) nebo vyvolá výjimku, k neošetřené výjimce, která nemůže být zachycena (například `StackOverflowException`) bude ukončen ladit proces a end relace ladění. Pokud narazíte na tato chybová zpráva, došlo k to.
  

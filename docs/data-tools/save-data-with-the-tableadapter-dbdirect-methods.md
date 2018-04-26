@@ -14,14 +14,15 @@ ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: aae296898bfcddfa451875fe78b29f2ae95fc9df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 51f855cca05d2f9f7e6a86524da6bcf866eb0856
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Ukládání dat pomocí TableAdapter DBDirect metody
 Tento názorný postup obsahuje podrobné pokyny ke spouštění příkazů SQL přímo s databází pomocí metod TableAdapter DBDirect. Metod TableAdapter DBDirect zadejte jemné úroveň kontroly nad aktualizace vaší databáze. Můžete je použít ke spuštění konkrétních příkazů SQL a uložených procedur voláním jednotlivých `Insert`, `Update`, a `Delete` metody podle potřeby vaší aplikace (oproti přetížené `Update` metodu, která provede aktualizace INSERT a DELETE příkazy všechny v jednom volání).

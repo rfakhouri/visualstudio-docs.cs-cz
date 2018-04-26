@@ -1,7 +1,7 @@
 ---
-title: Cílová verze rozhraní .NET Framework v sadě Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Cílové verze rozhraní .NET Framework v sadě Visual Studio
 ms.date: 02/06/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c00c36bd9273423b4625ea67aa9875f9c49446c2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d0eef8a9563fdb6d74737f90cf184186142a672
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Postupy: cílení na verzi rozhraní .NET Framework
 
@@ -69,8 +69,8 @@ Informace o tom, jak změnit na cílovou verzi pro projekty C++ najdete v témat
 
 ## <a name="see-also"></a>Viz také
 
-[Přehled cílení na více Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
-[Řešení potíží s cílením rozhraní .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)  
-[Stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)  
-[Stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
-[Postupy: změnit cílový framework a platforma nástrojů (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Přehled cílení na více Visual Studio](../ide/visual-studio-multi-targeting-overview.md)
+- [Řešení potíží s cílením rozhraní .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
+- [Stránka aplikace, Návrhář projektu (C#)](../ide/reference/application-page-project-designer-csharp.md)
+- [Stránka aplikace, Návrhář projektu (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
+- [Postupy: změnit cílový framework a platforma nástrojů (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

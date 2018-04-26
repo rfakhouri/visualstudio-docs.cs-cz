@@ -1,6 +1,7 @@
 ---
 title: Chyby zásad Analýzy kódu
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 f1_keywords:
@@ -13,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 625b67972095728d1e9f5c0fd9fa9e5d8da60786
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ac981d51dd11b03d7ce35f2583f2c91274129714
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-analysis-policy-errors"></a>Chyby zásad Analýzy kódu
 Následující chyby dojít, pokud zásady pro analýzu kódu nesplněno při vrácení se změnami:
@@ -32,7 +33,7 @@ Následující chyby dojít, pokud zásady pro analýzu kódu nesplněno při vr
 
 3.  Sada zadaný v sadě Visual Studio pravidel neobsahuje všechna pravidla, které jsou uvedené v tomto pravidle nastavit zadaný v analýza kódu vrácení se změnami zásad pro týmový projekt.
 
- **Analýza kódu zásad se nezdařilo. V projektu {0} jsou chyby nebo sestavení není aktuální.**
+ **Analýza kódu zásad se nezdařilo. V projektu jsou chyby {0} nebo sestavení není aktuální.**
 
  Buď sestavení obsahuje chyby, nebo jsme vyřešili chyby, ale nebyla provedena analýza kódu po opravu.
 
@@ -44,15 +45,15 @@ Následující chyby dojít, pokud zásady pro analýzu kódu nesplněno při vr
 
  Zásady pro analýzu kódu vyžaduje, aby všechny soubory se změnami musí být v aktuálně otevřených řešení. Tato chyba se vyvolá, když je otevřete řešení, ale některé soubory v zobrazení "čeká na vrácení se změnami" nejsou součástí aktuálně otevřenou řešení. Chcete-li opravit tuto chybu, otevřete řešení, která obsahuje soubor se změnami.
 
- **{0}' verze není správná. Silného názvu určená v zásadách je objekt {1}..**
+ **Verze '{0}' není správný. Je silného názvu určená v zásadách '{1}'.**
 
  Tato chyba se vztahují na projekty rozhraní .NET. Pravidlo .dll, vyžadují zásady pro analýzu kódu existuje v místním počítači, ale verze nebo veřejný klíč neodpovídá. Chcete-li tuto chybu, musíte aktualizovat tvůrce zásad jeho spuštěním v *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules\\*  adresář na svém počítači.
 
- **{0}' sestavení určená v zásadách neexistuje.**
+ **'{0}' sestavení určená v zásadách neexistuje.**
 
  Tato chyba se vztahují na projekty rozhraní .NET. Pravidlo vyžadují zásady pro analýzu kódu nemá odpovídající knihovny dll, které jsou nainstalované v klientském počítači. Opravte tuto chybu, musíte aktualizovat zásady tvůrce knihovny dll v *C:\Program Files\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop\Rules\\*  adresář na svém počítači.
 
- **Nastavení projektu {0} pravidlo nejsou v souladu se zásadami analýza kódu.**
+ **Projekt {0} pravidla nastavení nejsou v souladu se zásadami analýza kódu.**
 
  Tato chyba se vztahují na projekty rozhraní .NET. Nastavení pravidel spravovaného kódu nejsou jako přísné jako zásady vyžaduje. Chcete-li tuto chybu, nastavení klienta musí být stejné nebo přísnější než požadavek zásady na serveru.
 
@@ -60,15 +61,15 @@ Následující chyby dojít, pokud zásady pro analýzu kódu nesplněno při vr
 
  V [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aktivní konfigurace nemá povoleno analýza kódu, ale existuje alespoň jeden kód analýza povolena.
 
- **Musíte povolit analýzy kódu pro spravovaný binárních souborů v okně Vlastnosti projektu {0} a sestavení před vrácením se změnami.**
+ **Je nutné povolit analýzy kódu pro spravovaný binární soubory v projektu {0} vlastnosti a sestavení před vrácením se změnami.**
 
  Tato chyba se týká [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] aplikací .NET. Zásady vyžaduje provést analýzu spravovaného kódu, ale není povolený v aktuálním projektu na straně klienta.
 
- **Musíte povolit analýza kódu v okně Vlastnosti projektu {0} a sestavení před vrácením se změnami.**
+ **Je nutné povolit analýza kódu v projektu {0} vlastnosti a sestavení před vrácením se změnami.**
 
  Tato chyba u [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projekty a webové projekty. Zásady vyžaduje provést analýzu spravovaného kódu, ale není povolený v aktuálním projektu na straně klienta.
 
- **Musíte povolit analýza kódu C/C++ v okně Vlastnosti projektu {0} a sestavení před vrácením se změnami.**
+ **Analýza kódu C/C++, musíte povolit v projektu {0} vlastnosti a sestavení před vrácením se změnami.**
 
  Tato chyba se vztahují na projekty nespravované. Zásady pro analýzu kódu vyžaduje analýzy kódu pro C/C++, ale není povolený v aktuálním projektu na straně klienta.
 

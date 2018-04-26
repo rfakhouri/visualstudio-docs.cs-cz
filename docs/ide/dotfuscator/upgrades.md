@@ -1,9 +1,9 @@
 ---
-title: Upgrade edice Community Dotfuscatoru (CE) | Microsoft Docs
-ms.date: 2017-02-08
+title: Upgrade edice Community Dotfuscatoru (CE)
+ms.date: 02/08/2017
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 keywords: Dotfuscatoru, Dotfuscatoru CE, preemptivní, preemptivní řešení preemptivní ochrana, ochrana, edice community, maskováním, .NET, volná, Visual Studio 2017, upgradu, příkazového řádku
 helpviewer_keywords:
@@ -23,12 +23,13 @@ helpviewer_keywords:
 description: Naučte se upgradovat bezplatná edice Community Dotfuscatoru součástí Visual Studio 2017.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
+ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 03fdaae7a152db2af4ca042d14748e6508185b78
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f842eb9573f2519525f122dd58d23559df37e54c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>Upgrade edice Community Dotfuscatoru (CE)
 
@@ -37,23 +38,21 @@ Však nejsou k dispozici pro uživatele, kteří upgrade jejich verzi Dotfuscato
 
 ## <a name="registering-dotfuscator-ce"></a>Registrace Dotfuscatoru CE
 
-Registrovaní uživatelé Dotfuscatoru CE získat přístup k dalším funkcím, jako například [podporu příkazového řádku][cli], což usnadňuje integraci Dotfuscatoru CE do procesu automatizované sestavení.
-Kromě toho registrace udělí přístup k Lucidator, integrované nástroj používaný pro [dekódování trasování zásobníku zkomolené][decode-obfuscated].
+Registrovaní uživatelé Dotfuscatoru CE získat přístup k dalším funkcím, jako například [podporu příkazového řádku][cli], což usnadňuje integraci Dotfuscatoru CE do procesu automatizované sestavení. Registrace také uděluje přístup k Lucidator, integrované nástroj používaný pro [dekódování trasování zásobníku zkomolené][decode-obfuscated].
 
 Registrace je rychlá, jednoduchá a zdarma.
 Chcete-li zaregistrovat Dotfuscatoru CE, přečtěte si téma [části registrace CE Dotfuscatoru na stránce Začínáme v úplné uživatelské příručce CE Dotfuscatoru][register-ce].
 
 ## <a name="dotfuscator-professional"></a>Dotfuscatoru Professional
 
-Zatímco Dotfuscatoru Community Edition poskytuje základní úroveň ochrany,  **_preemptivní ochrana – Dotfuscatoru_ Professional Edition** zahrnuje rozšířené maskováním transformací a ochrany Možnosti.
-Mezi ně patří:
+Zatímco Dotfuscatoru Community Edition poskytuje základní úroveň ochrany,  **_preemptivní ochrana – Dotfuscatoru_ Professional Edition** zahrnuje rozšířené maskováním transformací a ochrany Možnosti. Rozšířené transformací a možnosti patří:
 
 * *Ochrany duševního vlastnictví*
   * Další možnosti, včetně Enhanced Overload Induction™ a výběr náhodnou identifikátor přejmenování.
   * Nástroje pro dekódování matoucí trasování zásobníku.
   * Přístup k podnikové úrovni maskováním transformací, včetně [transformací zaměřený na narušen automatizované kód dekompilace][control-flow].
   * Schopnost [skrývat citlivé řetězce][string-encryption], což znemožňuje jednoduché hledání decompiled kódu.
-  * Schopnost [diskrétní vlastnictví a distribuci řetězce vložení do vaší sestavení] [ watermarking] (vodoznaků softwaru), umožňuje určit zdroj Neautorizováno nevracení softwaru.
+  * Schopnost [diskrétní vlastnictví a distribuci řetězce vložení do vaší sestavení][watermarking], díky tomu můžete určit zdroj Neautorizováno nevracení softwaru.
   * Schopnost [kombinovat více sestavení do jednoho][linking], znesnadňuje i pro útočníky určení rolí elementy kódu jako oddělené oblasti zájmu se odstranilo.
   * Schopnost [automaticky odstranit nepoužívané kód z vaší aplikace][pruning], snižuje množství citlivé kód, který je součástí.
 * *Ochrana Integrity aplikace*
@@ -73,31 +72,31 @@ Professional Dotfuscatoru je oborový standard [.NET Obfuscator] [ net-obfuscato
 Kromě toho Dotfuscatoru Professional nabízí užší integrace se sadou Visual Studio a má licenci pro komerční použití.
 
 Další informace o funkcí pokročilé aplikací ochrany Dotfuscatoru Professional, navštivte preemptivní řešení [stránku přehled Dotfuscatoru] [ product-about] a [porovnat s Edice Community][product-compare].
-[Zkušební plně podporované verze jsou k dispozici na žádost preemptive.com][eval].
+[Zkušební plně podporované verze jsou k dispozici na preemptive.com][eval].
 
 ## <a name="see-also"></a>Viz také
 
-[Toto téma v úplné Dotfuscatoru CE uživatelská příručka][full]
+[Tento článek v úplné Dotfuscatoru CE uživatelská příručka][full]
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[control-flow]: https://www.preemptive.com/products/dotfuscator/features#controlflow
-[string-encryption]: https://www.preemptive.com/products/dotfuscator/features#string
-[watermarking]: https://www.preemptive.com/products/dotfuscator/features#watermarking
-[linking]: https://www.preemptive.com/products/dotfuscator/features#linking
-[pruning]: https://www.preemptive.com/products/dotfuscator/features#pruning
+- [control-flow]: https://www.preemptive.com/products/dotfuscator/features#controlflow
+- [string-encryption]: https://www.preemptive.com/products/dotfuscator/features#string
+- [watermarking]: https://www.preemptive.com/products/dotfuscator/features#watermarking
+- [linking]: https://www.preemptive.com/products/dotfuscator/features#linking
+- [pruning]: https://www.preemptive.com/products/dotfuscator/features#pruning
 
-[check-actions]: https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]: https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
+- [check-actions]: https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
+- [features]: https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
-[net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-[eval]: https://www.preemptive.com/eval-request
+- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
+- [eval]: https://www.preemptive.com/eval-request
 
-[product-about]: https://www.preemptive.com/products/dotfuscator/overview
-[product-compare]: https://www.preemptive.com/products/dotfuscator/compare-editions
+- [product-about]: https://www.preemptive.com/products/dotfuscator/overview
+- [product-compare]: https://www.preemptive.com/products/dotfuscator/compare-editions
 
-[cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_cli.html
-[register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
+- [cli]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_cli.html
+- [register-ce]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html#register
 
-[full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
-[decode-obfuscated]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_decode_stack_trace.html
+- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_upgrades.html
+- [decode-obfuscated]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_decode_stack_trace.html
