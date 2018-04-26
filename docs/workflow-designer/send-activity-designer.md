@@ -1,7 +1,9 @@
 ---
-title: Odeslat Návrhář aktivity | Microsoft Docs
+title: Návrhář postupu provádění – Návrhář aktivity odesílání
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
@@ -10,30 +12,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cc79a498ca25e6aada15e4efd20c1928b4379a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 099a512bcbca7136541c9896e32f43b9e518ed8b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="send-activity-designer"></a>Odeslat Návrhář aktivity
 
 **Odeslat** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.ServiceModel.Activities.Send> aktivity.
 
 ## <a name="the-send-activity"></a>Aktivita odeslání
+
  A <xref:System.ServiceModel.Activities.Send> aktivita se používá k odeslání zprávy do služby. A <xref:System.ServiceModel.Activities.ReceiveReply> aktivity mohou být vázány na <xref:System.ServiceModel.Activities.Send> aktivity, která přijímá zprávy jako součást vzorce výměny zpráv požadavků a odpovědí na straně klienta.
 
 ### <a name="using-the-send-activity-designer"></a>Pomocí návrháře aktivity odesílání
- **Odeslat** Návrhář aktivity naleznete v **zasílání zpráv** kategorii **sada nástrojů**, který přistupuje kliknutím **sada nástrojů** v kartě [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+ **Odeslat** Návrhář aktivity naleznete v **zasílání zpráv** kategorii **sada nástrojů**, který přistupuje kliknutím **sada nástrojů** Karta v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **Odeslat** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kdekoli aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Send> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> o odeslání. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **odeslat** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
+ **Odeslat** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Send> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> o odeslání. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **odeslat** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
 
  K vytvoření <xref:System.ServiceModel.Activities.ReceiveReply> aktivity a navázat jej na vybrané <xref:System.ServiceModel.Activities.Send> aktivity, klikněte pravým tlačítkem myši **odeslat** návrháře, klikněte na aktivitu **vytvořit ReceiveReply** položka v místní nabídce a **ReceiveReplyForSend** designer se zobrazí pod **odeslat** designer. <xref:System.ServiceModel.Activities.ReceiveReply> Aktivity je aktivitou, která přijme zprávu o jako součást vzorce výměny zpráv požadavků a odpovědí na straně klienta. Můžete nakonfigurovat pomocí **ReceiveReplyForSend** designer.
 
  Případně **SendAndReceiveReply** návrhář šablony v **zasílání zpráv** kategorii **sada nástrojů** lze vytvořit pár předem nakonfigurovaná <xref:System.ServiceModel.Activities.Send>a <xref:System.ServiceModel.Activities.ReceiveReply> aktivity. Další informace o použití **SendAndReceiveReply** a **ReceiveReplyForSend** šablony, najdete v článku [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) tématu.
 
 ### <a name="the-send-activity-properties"></a>Vlastnosti aktivity odesílání
- Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.Send> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravovat vlastnosti mřížky nebo na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor.
+ Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.Send> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti se dá upravit v mřížce vlastnosti nebo na plochu návrháře pracovních postupů.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|

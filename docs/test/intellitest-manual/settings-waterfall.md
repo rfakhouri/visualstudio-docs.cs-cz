@@ -1,6 +1,7 @@
 ---
-title: Nastavení vodopádu | Nástroj pro testování Microsoft IntelliTest Developer | Microsoft Docs
+title: Nastavení vodopádu | Nástroj pro testování Microsoft IntelliTest Developer
 ms.date: 05/02/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,23 +11,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9265fd0ada4f966f5d5fba01591e10f5f0a4194f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1abe2192ab919d1519c0a95f4b58bdfe1d82aacb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="settings-waterfall"></a>Nastavení vodopádu
 
-Koncept vodopádu nastavení znamená, že může uživatel zadat nastavení na **sestavení**, **přípojka** a **zkoumání** úroveň: 
+Koncept vodopádu nastavení znamená, že může uživatel zadat nastavení na **sestavení**, **přípojka**, a **zkoumání** úroveň:
 
 * Sestavení – [PexAssemblySettings](attribute-glossary.md#pexassemblysettings)
 * Přípojka - [PexClass](attribute-glossary.md#pexclass)
 * Zkoumání - [PexExplorationAttributeBase](attribute-glossary.md#pexexplorationattributebase)
 
-Nastavení zadané **sestavení** úroveň ovlivní všechny příslušenství a zkoumání v rámci této položky assembly. Nastavení zadané **přípojka** úroveň ovlivní všechny explorations v rámci této přípojka. Podřízené nastavení win: Pokud je nastavení definované v **sestavení** a **přípojka** úrovně, **přípojka** nastavení budou použita.
+Nastavení zadané **sestavení** úroveň vliv na všechny příslušenství a zkoumání v rámci této položky assembly. Zadaný v nastavení **přípojka** úroveň vliv na všechny explorations v rámci této přípojka. Podřízené nastavení win&mdash;Pokud je nastavení definované v **sestavení** a **přípojka** úrovně, **přípojka** nastavení se používá.
 
-Všimněte si, že některá nastavení jsou specifické pro **sestavení** úroveň nebo **přípojka** úroveň. 
+Všimněte si, že některá nastavení jsou specifické pro **sestavení** úroveň nebo **přípojka** úroveň.
 
 **Příklad**
 
@@ -48,4 +49,4 @@ namespace MyTests
 
 ## <a name="got-feedback"></a>Zpětné vazby máte?
 
-Vystavení vašich nápadů a funkce požadavky na  **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)**.
+Vystavení vašich nápadů a funkce požadavky na [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest).

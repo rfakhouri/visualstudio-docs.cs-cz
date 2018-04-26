@@ -1,6 +1,7 @@
 ---
-title: Úpravy programových testů uživatelského rozhraní v sadě Visual Studio | Microsoft Docs
+title: Úpravy programových testů uživatelského rozhraní v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
@@ -12,11 +13,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 942d532aa2ee370b65ae8dfb81a5a383b8c68cc2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5d2ff297d5284bc10f01155b5bba47d5a9e62276
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Úpravy programových testů uživatelského rozhraní pomocí Editoru programových testů uživatelského rozhraní
 Editor programového testu uživatelského rozhraní lze snadno upravit programových testů uživatelského rozhraní. Pomocí editoru testování uživatelského rozhraní programového, můžete vyhledat, zobrazit a upravit vlastnosti testovací metody a akcí uživatelského rozhraní. Kromě toho můžete použít ovládací prvek mapy uživatelského rozhraní zobrazení a jejich odpovídající ovládacích prvcích pro úpravy.

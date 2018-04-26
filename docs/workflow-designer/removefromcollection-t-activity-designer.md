@@ -1,7 +1,9 @@
 ---
-title: RemoveFromCollection&lt;T&gt; Návrhář aktivity | Microsoft Docs
+title: Návrhář postupu provádění - RemoveFromCollection&lt;T&gt; Návrhář aktivity
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.RemoveFromCollection`1.UI
 ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
@@ -10,22 +12,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e2407a7aa75547cf4669bd85814561869998d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b6aedee945ab19201406ce26183db4e2f3519263
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="removefromcollectionlttgt-activity-designer"></a>RemoveFromCollection&lt;T&gt; Návrhář aktivity
+# <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > Návrhář aktivity
+
 **RemoveFromCollection\<T >** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.RemoveFromCollection%601> aktivity.
 
-## <a name="the-removefromcollectiont-activity"></a>RemoveFromCollection < T\> aktivity
+## <a name="the-removefromcollectiontactivity"></a>RemoveFromCollection\<T > aktivity
  <xref:System.Activities.Statements.RemoveFromCollection%601> Aktivity odebere určenou položku z konkrétní kolekce.
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>Pomocí RemoveFromCollection\<T > Návrhář aktivity
- **RemoveFromCollection\<T >** Návrhář aktivity naleznete v **kolekce** kategorii **sada nástrojů**, který přistupuje kliknutím **Sada nástrojů** na kartě [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+ **RemoveFromCollection\<T >** Návrhář aktivity naleznete v **kolekce** kategorii **sada nástrojů**, který přistupuje kliknutím **Sada nástrojů** kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **RemoveFromCollection\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kdekoli aktivity jsou obvykle umístěny, jako například uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.RemoveFromCollection%601> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z RemoveFromCollection < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **RemoveFromCollection < T\>**  Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností. Ostatní vlastnosti musí být upravit na mřížku vlastností.
+ **RemoveFromCollection\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a bez ohledu na aktivity jsou obvykle umístěny, jako například vyřadit na povrch Návrhář postupu provádění uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.RemoveFromCollection%601> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z RemoveFromCollection < Int32\>. <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **RemoveFromCollection < T\>**  Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností. Ostatní vlastnosti musí být upravit na mřížku vlastností.
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\> vlastnosti
  Následující tabulce je zobrazena <xref:System.Activities.Statements.RemoveFromCollection%601> vlastnosti a popisuje, jak se používají v návrháři.

@@ -1,7 +1,9 @@
 ---
-title: Přechod Návrhář aktivity | Microsoft Docs
+title: Návrhář postupu provádění – Návrhář aktivity přechodu
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Transition.UI
 ms.assetid: f6e8b5cc-7fb8-4699-9703-f3c9fc7cc316
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25b00c38110e8a97d5e5465f3e170bef9c28bb88
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f63369c67470378856133b912e6da48f924bb45
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="transition-activity-designer"></a>Návrhář aktivity přechodu
+
 A <xref:System.Activities.Statements.Transition> představuje přechod mezi dvěma stavy.
 
 ## <a name="using-the-transition-activity-designer"></a>Pomocí návrháře aktivity přechodu
- Návrhář aktivity přechod umožňuje nakonfigurovat přechod mezi dvěma stavy.
+
+Návrhář aktivity přechod umožňuje nakonfigurovat přechod mezi dvěma stavy.
 
 ### <a name="transition-properties-in-the-workflow-designer"></a>Vlastnosti přechodu v Návrháři pracovních postupů
- Následující tabulce je zobrazena <xref:System.Activities.Statements.Transition> vlastnosti, které se dá nastavit pomocí návrháře pracovních postupů a popisuje, jak se používají v návrháři.
+
+Následující tabulce je zobrazena <xref:System.Activities.Statements.Transition> vlastnosti, které se dá nastavit pomocí návrháře pracovních postupů a popisuje, jak se používají v návrháři.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|
@@ -35,12 +40,13 @@ A <xref:System.Activities.Statements.Transition> představuje přechod mezi dvě
 |**Cílový**|Hodnota TRUE|Označuje stav, která stavu počítač přejde do po dokončení přechodu. To odpovídá <xref:System.Activities.Statements.Transition.To%2A> vlastnost přechodu v objektovém modelu. Kliknutím na název cílového stavu přepínačů návrháře zobrazení rozšířené zobrazení tohoto stavu. Tato hodnota nastavena při přechodu je vytvořen a přetáhněte šipku, která se připojuje přechod do stavu cílového v Návrháři lze změnit.|
 
 ### <a name="creating-transitions"></a>Vytváření přechody
- Přechody jsou vytvořeny tak, že přetáhnete řádku z jednoho stavu do jiného, nebo vyřazením stavu na trojúhelníčky, které se zobrazí při přetažení jeden stav přes jiný stav. K vytvoření přechodu přetažením, najeďte myší na hranu stavu zdroje a přetáhněte řádku ze zdrojového na cílový stav. K vytvoření přechodu pádem, stav cílového a pozastavte ukazatel myši nad stavu zdroje, přetažení ji na jeden z čtyři trojúhelníčky, které se zobrazují kolem stavu zdroje. Cílový stav může být buď nový stav přetažením z **sada nástrojů**, nebo existující stavu přetažením z Návrháře pracovních postupů.
+
+Přechody jsou vytvořeny tak, že přetáhnete řádku z jednoho stavu do jiného, nebo vyřazením stavu na trojúhelníčky, které se zobrazí při přetažení jeden stav přes jiný stav. K vytvoření přechodu přetažením, najeďte myší na hranu stavu zdroje a přetáhněte řádku ze zdrojového na cílový stav. K vytvoření přechodu pádem, stav cílového a pozastavte ukazatel myši nad stavu zdroje, přetažení ji na jeden z čtyři trojúhelníčky, které se zobrazují kolem stavu zdroje. Cílový stav může být buď nový stav přetažením z **sada nástrojů**, nebo existující stavu přetažením z Návrháře pracovních postupů.
 
 > [!NOTE]
 > Jednoho stavu ve stavu počítač může mít až 76 přechody vytvořené pomocí návrháře pracovních postupů. Limit přechody stavu vytvořen vně návrháře pracovních postupů pro je omezena pouze systémové prostředky.
 
- Přechody sdílené aktivační události jsou sadu přechody, které sdílejí stejnou aktivační událost. Aktivační události sdílené umožňuje podmíněného postup k určení stavu na základě vyhodnocení výrazů, které jsou nakonfigurované pro více přechody, které sdílejí společné aktivační událost. Pokud chcete přidat další akce pro přechod a vytvořit sdílený přechodu, klikněte na kruh označující začátek požadované přechodu a přetáhněte ji do požadovaného stavu. Nový přechod budou sdílet stejnou aktivační událost jako počáteční přechodu, ale bude mít jedinečný podmínku a akce. Sdílené přechody můžete také vytvořit z v Návrháři přechod kliknutím **přidat sdílený aktivační událost přechod** v dolní části návrháře přechod a pak vybrat požadovanou cílového stavu z  **Dostupné stavy připojení** rozevíracího seznamu.
+Přechody sdílené aktivační události jsou sadu přechody, které sdílejí stejnou aktivační událost. Aktivační události sdílené umožňuje podmíněného postup k určení stavu na základě vyhodnocení výrazů, které jsou nakonfigurované pro více přechody, které sdílejí společné aktivační událost. Pokud chcete přidat další akce pro přechod a vytvořit sdílený přechodu, klikněte na kruh označující začátek požadované přechodu a přetáhněte ji do požadovaného stavu. Nový přechod budou sdílet stejnou aktivační událost jako počáteční přechodu, ale bude mít jedinečný podmínku a akce. Sdílené přechody můžete také vytvořit z v Návrháři přechod kliknutím **přidat sdílený aktivační událost přechod** v dolní části návrháře přechod a pak vybrat požadovanou cílového stavu z  **Dostupné stavy připojení** rozevíracího seznamu.
 
 ## <a name="see-also"></a>Viz také
 

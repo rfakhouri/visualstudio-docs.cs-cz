@@ -1,7 +1,9 @@
 ---
-title: Vytváření projektů pracovního postupu starší | Microsoft Docs
+title: Návrhář postupu provádění – vytváření projektů pracovního postupu starší verze
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflow projects, creating
 - projects, workflow
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51d78712ff91d92ef0f710dfbbef926f2a7b55e6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9988e85fe791e543b2b191b256e64099d5a3b658
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="creating-legacy-workflow-projects"></a>Vytváření projektů pracovního postupu starší verze
-Tato část popisuje postup vytvoření pracovního postupu projektů pomocí návrháře pracovních postupů Windows poskytované vs2010 starší verze. Starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] cíle [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)]. Obsahuje informace o tom, jak používat šablony projektu pracovního postupu, které jsou uvedeny v následující tabulce.
+
+Tato část popisuje postup vytvoření pracovního postupu projektů pomocí starší verze návrháře pracovních postupů Windows poskytované Visual Studio 2010. Starší verzi návrháře pracovních postupů cílem rozhraní .NET Framework verze 3.5 nebo WinFX. Obsahuje informace o tom, jak používat šablony projektu pracovního postupu, které jsou uvedeny v následující tabulce.
 
 |Šablona projektu|Popis|
 |----------------------|-----------------|
@@ -29,25 +32,6 @@ Tato část popisuje postup vytvoření pracovního postupu projektů pomocí n�
 |Stav počítače pracovního postupu konzolové aplikace|Projekt pro vytvoření konzolové aplikace stavu počítače pracovního postupu.|
 |Knihovna stavu počítačů pracovního postupu|Projekt pro vytvoření knihovny stavu počítače pracovního postupu.|
 |Pracovní postup prázdný projekt|Prázdný projekt pro vytvoření aplikace pracovního postupu.|
-
-## <a name="in-this-section"></a>V tomto oddílu
- [Postupy: Vytvoření projektů pracovních postupů (starší verze)](../workflow-designer/how-to-create-workflow-projects-legacy.md)
-
- [Postupy: Vytvoření konzolových aplikací sekvenčních pracovních postupů (starší verze)](../workflow-designer/how-to-create-sequential-workflow-console-applications-legacy.md)
-
- [Postupy: Vytvoření knihovny sekvenčních pracovních postupů (starší verze)](../workflow-designer/how-to-create-a-sequential-workflow-library-legacy.md)
-
- [Postupy: Vytvoření knihovny aktivit pracovních postupů (starší verze)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)
-
- [Postupy: Vytvoření konzolových aplikací pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)
-
- [Postupy: Vytvoření knihovny pracovních postupů stavového stroje (starší verze)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)
-
- [Postupy: Vytvoření prázdného projektu pracovního postupu (starší verze)](../workflow-designer/how-to-create-an-empty-workflow-project-legacy.md)
-
- [Postupy: Konfigurace vlastností projektu pracovního postupu (starší verze)](../workflow-designer/how-to-configure-workflow-project-properties-legacy.md)
-
- [Postupy: Přidání nové položky do projektu pracovního postupu (starší verze)](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project-legacy.md)
 
 ## <a name="see-also"></a>Viz také
 

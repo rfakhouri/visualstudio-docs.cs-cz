@@ -1,6 +1,7 @@
 ---
-title: Izolace testování částí aplikací pro Sharepoint 2010 s použitím emulátorů | Microsoft Docs
+title: Izolace testů jednotek aplikací pro SharePoint 2010 s použitím emulátorů
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 994e13d7155dd5490d3f3f02865b14845bae498b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 13f06279857897ba1562c157a7ffa1c76dd3c6c8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Izolace testů jednotek aplikací pro SharePoint 2010 s použitím emulátorů
 Balíček Microsoft.SharePoint.Emulators poskytuje sadu knihoven, které vám pomohou vytvořit testy izolované jednotek aplikací pro Microsoft SharePoint 2010. Použít emulátorů [překrytí](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md) z [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) izolace rámec vytvořit jednoduché objekty v paměti, které napodobují nejběžnější objekty a metody rozhraní API služby SharePoint. Pokud není emulovaných metoda služby SharePoint, nebo pokud chcete změnit výchozí chování emulátoru, můžete vytvořit překrytí Fakes výsledky, které chcete poskytnout.
@@ -302,7 +303,8 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  Tady je změna metody stávající testovací `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, která implementuje delegáta Fakes. Požadované změny jsou vyznačeny v komentářích:
 
 > [!IMPORTANT]
->  Test metody, které explicitně vytvořit Fakes throw překrytí `ShimNotSupported` výjimka při spuštění testu `EmulationMode.Passthrough` kontextu. K tomuto problému vyhnout, použijte proměnnou nastavit `EmulationMode` hodnotu a zabalení spuštěním kódu Fakes `if` příkaz, který testuje hodnota.
+> Test metody, které explicitně vytvořit Fakes throw překrytí `ShimNotSupported` výjimka při spuštění testu `EmulationMode.Passthrough` kontextu. K tomuto problému vyhnout, použijte proměnnou nastavit `EmulationMode` hodnotu a zabalení spuštěním kódu Fakes `if` příkaz, který testuje hodnota.
+
 
 ```csharp
 // class level field to set emulation mode

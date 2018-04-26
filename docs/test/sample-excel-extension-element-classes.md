@@ -1,18 +1,19 @@
 ---
-title: 'Ukázka rozšíření aplikace Excel: Třídy Element | Microsoft Docs'
+title: 'Ukázka rozšíření Excel: Třídy Element'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: sample
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1dce9745db1acf031c67d5221f6a176d94fb6f77
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a254f85a27c650bf8d8b64d2460ebad88e3befc1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sample-excel-extension-element-classes"></a>Ukázka rozšíření Excel: Třídy Element
 Používá rozšíření třídy, které jsou odvozeny od <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> a představují listu ovládací prvky a buňky v [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)].
@@ -44,7 +45,7 @@ Používá rozšíření třídy, které jsou odvozeny od <xref:Microsoft.Visual
 ## <a name="utilities-and-excelutilities-classes"></a>Nástroje a ExcelUtilities třídy
  Interní `ExcelUtilities` třída poskytuje konstantní hodnoty, jako je například název technologie a metodu, která určuje, pokud představuje popisovač zadaný okna listu aplikace Excel.
 
- `Utilities` Třída obsahuje pomocné metody, které vracejí různé informace o uživatelském rozhraní. Některé metody pomocí přímého volání do externího systému knihovny DLL, jako například **USER32. Knihovny DLL** a **OLEACC. Knihovny DLL**, abyste získali popisovače oken z uživatelského rozhraní**.**
+ `Utilities` Třída obsahuje pomocné metody, které vracejí různé informace o uživatelském rozhraní. Některé metody pomocí přímého volání do externího systému knihovny DLL, jako například **USER32. Knihovny DLL** a **OLEACC. Knihovny DLL**, abyste získali popisovače oken z uživatelského rozhraní **.**
 
 ## <a name="see-also"></a>Viz také
 

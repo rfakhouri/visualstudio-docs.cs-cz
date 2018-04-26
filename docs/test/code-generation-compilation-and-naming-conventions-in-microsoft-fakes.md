@@ -1,6 +1,7 @@
 ---
-title: Kód vytváření, kompilace a konvence pojmenování ve Microsoft Fakes Visual Studio | Microsoft Docs
+title: Generování kódu, kompilace a konvence pojmenování ve Fakes Microsoft pro sadu Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0c42c25f397a5906654dd5ef0115df921d60607f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 50b066020b04ce39dffa5c7267b89b889cf986e9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Vytváření, kompilace a konvence pojmenování kódu v Napodobeniny Microsoft
 
@@ -21,6 +22,10 @@ Tento článek popisuje možnosti a problémy v generování kódu v napodobenin
 **Požadavky**
 
 -   Visual Studio Enterprise
+-   Rozhraní .NET Framework projektu
+
+> [!NOTE]
+> .NET standard projekty nejsou podporované.
 
 ## <a name="code-generation-and-compilation"></a>Vytváření a kompilování kódu
 

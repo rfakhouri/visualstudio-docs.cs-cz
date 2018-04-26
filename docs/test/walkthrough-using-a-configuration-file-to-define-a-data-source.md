@@ -1,6 +1,7 @@
 ---
-title: 'Návod: Použití konfiguračního souboru k definování zdroje dat v sadě Visual Studio | Microsoft Docs'
+title: 'Návod: Použití konfiguračního souboru k definování zdroje dat v sadě Visual Studio'
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 569aa39e9c5c749ac4497e4e6e08a9d5b34c657f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fee742129d852ff3793b2a7dd367fc157367750
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Návod: Použití konfiguračního souboru k definování zdroje dat
 
@@ -71,7 +72,8 @@ Tento návod ukazuje, jak používat zdroj dat definované v *app.config* testov
 ```
 
 > [!NOTE]
->  Název sestavení musí odpovídat sestavení Microsoft Visual Studio .NET Framework, který používáte. Nastavte verzi na 9.0.0.0, pokud používáte Visual Studio .NET Framework 3.5. Pokud používáte Visual Studio .NET Framework 2.0, nastavte verzi na 8.0.0.0.
+> Název sestavení musí odpovídat sestavení Microsoft Visual Studio .NET Framework, který používáte. Nastavte verzi na 9.0.0.0, pokud používáte Visual Studio .NET Framework 3.5. Pokud používáte Visual Studio .NET Framework 2.0, nastavte verzi na 8.0.0.0.
+
 
 ## <a name="define-connection-strings"></a>Definujte připojovací řetězce
  Připojovací řetězce definovat informace specifické pro zprostředkovatele pro přístup k datové zdroje. Připojovací řetězce, které jsou definované v konfiguračních souborech poskytují informace zprostředkovatele opakovaně použitelné dat v aplikaci. V této části vytvoříte dva připojovací řetězce, které budou používat zdroje dat, které jsou definovány v části vlastní konfigurace.

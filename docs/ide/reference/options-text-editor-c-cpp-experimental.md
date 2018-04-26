@@ -1,8 +1,7 @@
 ---
-title: Možnosti, textový Editor, C/C++ experimentální | Microsoft Docs
-ms.custom: ''
+title: Možnosti, textový Editor, C/C++ experimentální
 ms.date: 08/02/2017
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
@@ -10,21 +9,21 @@ f1_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 205626b3778b056018d8803b41890fcd242a6015
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36826a998c579526487b440ebe9d3ddab228daab
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="options-text-editor-cc-experimental"></a>Možnosti, textový Editor, C/C++ experimentální
 
 Změníte-li tyto možnosti, můžete změnit chování související s IntelliSense a procházení databáze, když jste programování v C nebo C++. Tyto funkce jsou skutečně experimentální a může být upravena nebo v budoucí verzi odebrána ze sady Visual Studio. Toto téma popisuje možnosti v nástroji Visual Studio 2017. Visual Studio 2015, najdete v části [možnosti, textový Editor, C/C++, experimentální](https://msdn.microsoft.com/library/mt591979.aspx)
 
-Chcete-li získat přístup k této stránky vlastností, stiskněte **CTRL + Q** aktivovat `Quick Launch` a pak zadejte "experimentální". Snadné spuštění bude najděte stránku po první písmena. Můžete se k němu výběrem také získat **nástroje | Možnosti** a rozšiřování **textového editoru**, pak **C/C++**a pak vyberete **experimentální**.
+Chcete-li získat přístup k této stránky vlastností, stiskněte **CTRL + Q** aktivovat `Quick Launch` a pak zadejte "experimentální". Snadné spuštění bude najděte stránku po první písmena. Můžete se k němu výběrem také získat **nástroje | Možnosti** a rozšiřování **textového editoru**, pak **C/C++** a pak vyberete **experimentální**.
 
 Tyto funkce jsou dostupné v instalaci Visual Studio 2017.
 

@@ -1,5 +1,5 @@
 ---
-title: Vzory zátěže testování v sadě Visual Studio zátěže | Microsoft Docs
+title: Vzory zátěže testování v sadě Visual Studio zátěže
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +10,13 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a6d9054bb12290d29247c09263a3854f2ea0dad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Úpravy vzorů zatížení pro modelování aktivit virtuálních uživatelů
 
@@ -43,7 +44,8 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzorů de
  Například krok zatížení s **počáteční uživatele** , počet **maximální počet uživatelů** 100 **krok trvání (v sekundách)** 10 a **počet uživatelů krok** 1 vytvoří vzor zatížení uživatele, který začíná na 1, zvýší o 1 každých 10 sekund, dokud nebude dosaženo 100 uživatelů.
 
 > [!NOTE]
->  Pokud doba trvání celkový testu je kratší než čas, které jsou potřeba ke kroku až zatížení maximální uživatele, test přestane po uplynulá doba trvání a nedojde k dosažení maximální počet uživatelů cíl.
+> Pokud doba trvání celkový testu je kratší než čas, které jsou potřeba ke kroku až zatížení maximální uživatele, test přestane po uplynulá doba trvání a nedojde k dosažení maximální počet uživatelů cíl.
+
 
  Cílem kroku můžete zvýšit zatížení, dokud nebude server dosáhne bod, kde se výrazně snižuje výkon. Když se zátěž zvyšuje, server nakonec dostatek prostředků. Zatížení krok je vhodný způsob, jak určit počet uživatelů, na kterých k tomu dochází. S taktování zatížení máte také monitorovat agenta prostředky úzce a ujistěte se, že agentů můžete generovat požadované zatížení.
 
@@ -117,12 +119,14 @@ Vzor zatížení je součástí scénáře. Scénáře, spolu s jejich vzorů de
  Po vytvoření vaší zátěžový test pomocí **načíst testování Průvodce novým**, můžete použít **načíst Editor testů** ke změně vlastností vzor zatížení související se scénářem úrovní, které splňují vaše cíle test.
 
 > [!NOTE]
->  Úplný seznam vlastnosti scénáře zátěžového testu a jejich popisy najdete v tématu [načíst vlastnosti scénář otestovat](../test/load-test-scenario-properties.md).
+> Úplný seznam vlastnosti scénáře zátěžového testu a jejich popisy najdete v tématu [načíst vlastnosti scénář otestovat](../test/load-test-scenario-properties.md).
+
 
  Vzor zatížení určuje počet virtuálních uživatelů během zátěžového testu a rychlost, jakou se přidají nové uživatele aktivní. Můžete zvolit ze tří vzorů k dispozici: krok vzor, konstanta a na základě cíle. Další informace najdete v tématu [určující počet virtuálních uživatelů s vzorů zatížení ve scénáři zátěžového testu](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
->  Můžete také změnit vlastnosti vaše zatížení programově pomocí modulu plug-in zátěžový test. Další informace najdete v tématu [postupy: vytvoření modulu Plugin pro Test zatížení](../test/how-to-create-a-load-test-plug-in.md).
+> Můžete také změnit vlastnosti vaše zatížení programově pomocí modulu plug-in zátěžový test. Další informace najdete v tématu [postupy: vytvoření modulu Plugin pro Test zatížení](../test/how-to-create-a-load-test-plug-in.md).
+
 
 ### <a name="to-change-the-load-pattern"></a>Chcete-li změnit vzor zatížení
 

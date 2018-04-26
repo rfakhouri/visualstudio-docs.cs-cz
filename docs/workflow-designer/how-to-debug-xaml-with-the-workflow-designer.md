@@ -1,28 +1,31 @@
 ---
-title: 'Postupy: ladění kódu XAML pomocí návrháře pracovních postupů | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: ladění kódu XAML pomocí návrháře pracovních postupů'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c0ac923de3c5381add6f0a33612258e8b9d64824
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eac6294861080614cbdd46e6ac1cc9a05d7124ff
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Postupy: ladění kódu XAML pomocí návrháře pracovních postupů
-Pracovní postupy jsou definována v XAML. Reprezentace uživatelského rozhraní pracovního postupu je postavená na stromu XAML definice pracovního postupu. Ladění prostředí je podobná ladění pracovních postupů v Návrháři pracovních postupů Windows. Například při ladění XAML, místní, sledovat a vláken windows fungovat stejným způsobem jako ve [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] ladění. Kromě toho je zobrazení zásobníku volání při ladění jazyka XAML na základě řádku hierarchické zobrazení toku spuštění pracovního postupu.
+
+Pracovní postupy jsou definována v XAML. Reprezentace uživatelského rozhraní pracovního postupu je postavená na stromu XAML definice pracovního postupu. Ladění prostředí je podobná ladění pracovních postupů v Návrháři pracovních postupů Windows. Například při ladění XAML, místní, sledovat a vláken windows fungovat stejným způsobem jako ve ladění v Návrháři pracovních postupů. Kromě toho je zobrazení zásobníku volání při ladění jazyka XAML na základě řádku hierarchické zobrazení toku spuštění pracovního postupu.
 
 > [!NOTE]
 > Pokud XAML pro pracovní postup nachází ve stejném sestavení jako aktivity, část sestavení pro názvy tříd, které nejsou zahrnuty. Bez této část názvy tříd (aktivita) nelze načíst XAML za běhu. Není doporučeno definovat aktivity v o stejný obor názvů, jako je hlavní projekt; v opačném XAML bude nutné ručně upravovat po upravovaný v návrháři.
 
-### <a name="to-debug-workflow-xaml"></a>Chcete-li ladit pracovního postupu XAML
+## <a name="to-debug-workflow-xaml"></a>Chcete-li ladit pracovního postupu XAML
 
-1.  Otevřete projekt pracovního postupu nebo aktivity v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+1.  Otevřete projekt pracovního postupu nebo aktivity v sadě Visual Studio.
 
 2.  Nastavit zarážky aktivity nebo aktivity, kterou chcete ladit, jak je popsáno v [postupy: nastavení zarážek v pracovních postupech](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
 

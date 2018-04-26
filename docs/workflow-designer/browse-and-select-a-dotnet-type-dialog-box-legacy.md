@@ -1,7 +1,9 @@
 ---
-title: Procházet a vybrat .NET typ dialogové okno (zastaralé) | Microsoft Docs
+title: Návrhář postupu provádění - Procházet a vyberte dialogové typ rozhraní .NET (zastaralé)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.TypeBrowserDialog.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a283caa664bb208613a695cb4afb8873caba3645
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23e311aa8e87fe799bc8ea22a22ffd8e789b3dcd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="browse-and-select-a-net-type-dialog-box-legacy"></a>Procházet a vybrat .NET typ dialogové okno (zastaralé)
-Toto téma popisuje, jak používat **Procházet a vyberte typ formátu .NET** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+
+Toto téma popisuje, jak používat **Procházet a vyberte typ formátu .NET** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
 
  V **vlastnosti** okno, když vyberete vlastnosti, které trvat typ rozhraní .NET Framework v odkazovaném sestavení, třemi tečkami **[...]**  se zobrazí na konci vlastnosti textového pole. Kliknutím **[...]**  otevře **Procházet a vyberte typ formátu .NET** dialogové okno. V tomto dialogovém můžete vybrat typ z stromovou strukturu odkazované sestavení. Například při použití Návrhář aktivity v **vlastnosti** okně klikněte na tlačítko **základní třída** třemi tečkami **[...]**  a vyberte jiný základní třídu pro aktivitu ze stromu odkazovaná sestavení.
 

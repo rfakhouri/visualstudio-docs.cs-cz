@@ -1,7 +1,9 @@
 ---
-title: Zpoždění Návrhář aktivity | Microsoft Docs
+title: Návrhář postupu provádění – Návrhář aktivity zpoždění
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Delay.UI
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7159330588151d4845184fcb6688b20f8d13afd0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e22c80712bcb0c792fb929ae85b84912122a0bc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="delay-activity-designer"></a>Návrhář aktivity zpoždění
+
 **Zpoždění** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Delay> aktivity.
 
 ## <a name="the-delay-activity"></a>Zpoždění aktivity
- <xref:System.Activities.Statements.Delay> Aktivity zpozdí spuštění pracovního postupu pro zadanou dobu.
+
+<xref:System.Activities.Statements.Delay> Aktivity zpozdí spuštění pracovního postupu pro zadanou dobu.
 
 ### <a name="using-the-delay-activity-designer"></a>Pomocí návrháře prodlevy aktivity
- **Zpoždění** Návrhář aktivity naleznete v **primitiv** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů**kartě [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **Zpoždění** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kdekoli aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.Delay> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> zpoždění. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **zpoždění** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
+**Zpoždění** Návrhář aktivity naleznete v **primitiv** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů**kartě návrháře pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+
+**Zpoždění** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.Delay> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> zpoždění. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **zpoždění** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
 
 ### <a name="the-delay-properties"></a>Vlastnosti zpoždění
- Následující tabulce je zobrazena <xref:System.Activities.Statements.Delay> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravovat v tabulce vlastností a z nich můžete upravit některé na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]plochu návrháře.
+
+Následující tabulce je zobrazena <xref:System.Activities.Statements.Delay> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravit v tabulce vlastností a z nich můžete upravit některé na povrchu Designerdesigner pracovního postupu.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|

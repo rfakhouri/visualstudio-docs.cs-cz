@@ -1,5 +1,6 @@
 ---
-title: Port, migrace a Upgrade projektů sady Visual Studio
+title: Port, migrace a Upgrade projektů
+description: Referenční dokumentace pro podporu ve Visual Studio 2017 projektů vytvořených v dřívějších verzích sady Visual Studio a rozhodne se jak Visual Studio, když je potřeba migrovat projektu.
 ms.date: 03/14/2018
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -18,13 +19,13 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 82c92365d3e77631dd2cbbce4079ac982d80ef14
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2e7112794d0b7104c10b7130a96c76d73de46b52
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="port-migrate-and-upgrade-visual-studio-projects"></a>Port, migrace a Upgrade projektů sady Visual Studio
+# <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Odkaz migrace a upgrade projektu pro Visual Studio 2017
 
 Každá nová verze sady Visual Studio obecně podporuje většinu typů předchozí projekty, soubory a dalších prostředků. Můžete pracovat s nimi [jako budete mít vždy](../ide/solutions-and-projects-in-visual-studio.md), a za předpokladu, že nemáte závisí na novější funkce, Visual Studio se pokusí obecně zachování zpětné kompatibility s předchozími verzemi jako Visual Studio 2015, Visual Studio 2013, a Visual Studio 2012. (Viz [poznámky k verzi](https://www.visualstudio.com/vs/release-notes/) pro funkce, které jsou specifické pro jaké verze.)
 

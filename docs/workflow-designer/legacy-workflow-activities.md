@@ -1,7 +1,9 @@
 ---
-title: Aktivity pracovního postupu starší verze | Microsoft Docs
+title: Návrhář postupu provádění - starší aktivity pracovního postupu
 ms.date: 01/18/2017
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, activities
 - activities
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f31ff7ac208d4b06ce454ef309d35400cb79f97
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45c24c0be518e58ce87af11a38486818ca4a3ac7
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="legacy-workflow-activities"></a>Aktivity pracovního postupu starší verze
 
-[!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] zahrnuje výchozí sadu aktivit, které poskytují funkce pro tok řízení, podmínek, zpracování událostí, správu stavu a komunikaci s aplikacemi a službami. Při návrhu pracovních postupů, můžete použít poskytované systémem aktivity, které jsou poskytovány návrháře pracovních postupů Windows, nebo můžete vytvořit vlastní aktivitu.
+Windows Workflow Foundation (WF) zahrnuje výchozí sadu aktivit, které poskytují funkce pro tok řízení, podmínek, zpracování událostí, správu stavu a komunikaci s aplikacemi a službami. Při návrhu pracovních postupů, můžete použít poskytované systémem aktivity, které jsou poskytovány návrháře pracovních postupů Windows, nebo můžete vytvořit vlastní aktivitu.
 
- Následující tabulka uvádí [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] sadu aktivity out-of-box framework. Mnoho, ale ne všechny tyto aktivity jsou reprezentované pomocí návrháře aktivit, které lze přistupovat z **sada nástrojů** z [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Chcete-li vytvořit aktivitu, přetáhněte jeho designer z **sada nástrojů** na návrhovou plochu.
+Následující tabulka uvádí sadu Windows Workflow Foundation framework out-of-box aktivity. Mnoho, ale ne všechny tyto aktivity jsou reprezentované pomocí návrháře aktivit, které lze přistupovat z **sada nástrojů** Návrháře pracovního postupu. Chcete-li vytvořit aktivitu, přetáhněte jeho designer z **sada nástrojů** na návrhovou plochu.
 
 |Aktivita|Popis|
 |--------------|-----------------|
@@ -64,7 +66,7 @@ ms.lasthandoff: 04/16/2018
 |<xref:System.Workflow.Activities.WebServiceOutputActivity>|Odpoví na žádost o službu webové provedené v pracovním postupu. Další informace najdete v tématu [pomocí aktivity aktivita WebServiceOutputActivity](http://go.microsoft.com/fwlink?LinkID=65092).|
 |<xref:System.Workflow.Activities.WhileActivity>|Umožňuje pracovní postup opakovat až do splnění podmínky. Další informace najdete v tématu [pomocí aktivity aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65091).|
 
- Další informace o tom, jak vytvořit vlastní aktivity najdete v tématu [vývoj vlastních aktivit](http://go.microsoft.com/fwlink?LinkID=65023) a [pomocí návrháře starší aktivity](../workflow-designer/using-the-legacy-activity-designer.md).
+Další informace o tom, jak vytvořit vlastní aktivity najdete v tématu [vývoj vlastních aktivit](http://go.microsoft.com/fwlink?LinkID=65023) a [pomocí návrháře starší aktivity](../workflow-designer/using-the-legacy-activity-designer.md).
 
 ## <a name="see-also"></a>Viz také
 

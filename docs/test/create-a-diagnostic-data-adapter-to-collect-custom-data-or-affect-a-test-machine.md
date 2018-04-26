@@ -1,5 +1,5 @@
 ---
-title: Vytvoření adaptéru diagnostických dat pro testování v sadě Visual Studio | Microsoft Docs
+title: Vytvoření adaptéru diagnostických dat pro testování v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,24 +9,25 @@ ms.assetid: b0b53fae-7007-4ad9-a604-21685937622f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0410fd52e115e2c2c257811e088c46a831d0082d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a12cac4e3a0c7144fd2e2cca2044ad416ac966d0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>Vytvoření adaptéru diagnostických dat pro shromáždění vlastních dat nebo ovlivnění testovacího počítače
 
-Můžete chtít vytvořit vlastního adaptéru diagnostických dat pro shromáždění dat při spuštění testu, nebo můžete chtít ovlivnit testovací počítač jako součást svůj test. Například můžete chtít shromažďovat soubory protokolů, které jsou vytvořené pomocí aplikace testovaného a připojte je k si výsledky testu, nebo můžete chtít spustit testy, když je omezené místo na disku zbývající ve vašem počítači. Pomocí rozhraní API poskytované Visual Studio Enterprise, můžete napsat kód pro provádění úloh v určitých bodech v testu spustit. Například můžete provádět úlohy při spuštění spuštění testu, před a po každé jednotlivé testovací spuštění a po dokončení testu, spuštění.
+Může být vhodné vytvořit vlastní adaptér diagnostiky dat ke sběru dat při spuštění testu nebo v průběhu testu ovlivnit testovací počítač. Může být například užitečné shromáždit soubory protokolu, které jsou vytvářeny v testované aplikaci, a připojit je k výsledkům testu, nebo spustit testy, když máte málo zbývajícího místa na disku. Pomocí rozhraní API poskytované Visual Studio Enterprise, můžete napsat kód pro provádění úloh v určitých bodech v testu spustit. Lze například provádět úkoly při spuštění testovacího běhu, před spuštěním nebo po spuštění jednotlivých testů, a když se testovací běh dokončí.
 
-Můžete zadat výchozí vstup do vašeho vlastního adaptéru diagnostických dat pomocí souboru nastavení konfigurace. Například můžete zadat informace o umístění souboru, které chcete shromažďovat a připojte k si výsledky testu nebo kolik diskových místa, které chcete být ponecháno v systému. Tato data lze nakonfigurovat pro každé nastavení testů, které vytvoříte. Je možné zobrazit a upravená pomocí editoru výchozí součástí nástroje Microsoft Test Manager nebo můžete vytvořit vlastní uživatelský ovládací prvek použít jako editor. Všechny změny provedené v konfiguraci adaptéru ve svém editoru ukládají s testovacími nastaveními.
+Lze zadat výchozí vstup do vlastního adaptéru diagnostiky dat pomocí souboru konfiguračních nastavení. Lze například zadat informace o umístění souboru, který chcete shromáždit a připojit k výsledkům testu, nebo o tom, kolik by mělo na disku v systému zůstat místa. Tato data lze nakonfigurovat pro každé nastavení testu, které vytvoříte. Je možné zobrazit a upravená pomocí editoru výchozí součástí nástroje Microsoft Test Manager nebo můžete vytvořit vlastní uživatelský ovládací prvek použít jako editor. Jakékoli změny provedené v konfiguraci adaptéru v editoru jsou uloženy s nastavením testu.
 
 Pokud používáte testů ze sady Visual Studio, je nutné nastavit tyto otestovat nastavení jako aktivní. Další informace o nastavení testu najdete v tématu [shromažďování diagnostických informací pomocí Test nastavení](../test/collect-diagnostic-information-using-test-settings.md).
 
 ## <a name="tasks"></a>Úlohy
 
- Použijte následující témata vám pomohou vytvořit adaptérů diagnostických dat:
+ Následující témata vám pomohou s vytvořením Adaptérů diagnostiky dat:
 
 |Úlohy|Související témata|
 |-----------|-----------------------|

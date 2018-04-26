@@ -1,6 +1,7 @@
 ---
-title: Postup testování knihovny DLL Visual C++ pro aplikace UWP v sadě Visual Studio | Microsoft Docs
+title: Postup testování knihovny DLL Visual C++ pro aplikace UWP v sadě Visual Studio
 ms.date: 02/15/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 56bd0acf242f0fac4ccb2d73063e8ee73d234a0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 717786fea5d0ae355af5b8ea4993932a95d01196
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Postup testování knihovny DLL Visual C++
 
@@ -236,7 +237,8 @@ Toto téma popisuje jeden způsob, jak vytvářet testy částí pro knihovnu DL
      Oba testy byly úspěšné.
 
 > [!TIP]
->  Vývoj kódu přidáním testy jeden najednou. Ujistěte se, že všechny testy byly úspěšné po každé iteraci.
+> Vývoj kódu přidáním testy jeden najednou. Ujistěte se, že všechny testy byly úspěšné po každé iteraci.
+
 
 ##  <a name="Debug_a_failing_test"></a> Ladění selhání testu
 

@@ -1,27 +1,28 @@
 ---
-title: "Iterátory a generátory (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: Iterátory a generátory (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: article
 dev_langs:
 - JavaScript
 - TypeScript
 - DHTML
 ms.assetid: 68ef5b2f-0349-492b-b557-73ff2a2f90cf
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 85c27969609a38b87b15c727e9c8aef89ee77032
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 8a566e870c6e9589daed86d42e3fb933374cbb17
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="iterators-and-generators-javascript"></a>Iterátory a generátory (JavaScript)
 Iterátor je objekt, který se používá k procházení objektu kontejneru jako seznam. V jazyce JavaScript, není objekt jedinečné integrované iterator objekt, ale je objekt, který implementuje `next` metody přístup na další položku v objektu kontejneru.  
@@ -106,7 +107,7 @@ console.log(si.next().value);
   
 ```  
   
- V generátoru, operand výrazu yield ukončí volání `next` a vrátí `IteratorResult` objekt s dvě vlastnosti `done` (`done=false`) a `value` (`value=operand`). `operand`je volitelný a pokud je ponecháno chybějící potom její hodnota není definován.  
+ V generátoru, operand výrazu yield ukončí volání `next` a vrátí `IteratorResult` objekt s dvě vlastnosti `done` (`done=false`) a `value` (`value=operand`). `operand` je volitelný a pokud je ponecháno chybějící potom její hodnota není definován.  
   
  V generátoru `return` příkaz ukončí generátor vrácením `IteratorResult` s `done=true` společně s výsledek volitelné operand pro vlastnost value.  
   
@@ -134,13 +135,13 @@ console.log(si2.next().value);
 // b  
 ```  
   
- Můžete také vytvořit pokročilejší generátory předáním argumentu `next` a používá k úpravě stavu generátoru argument. `next`změní hodnotu výsledek dříve spuštění `yield` výraz. V následujícím příkladu, při předání hodnoty od 100 do `next` metody resetujete hodnotu Použití generátoru interní indexu.  
+ Můžete také vytvořit pokročilejší generátory předáním argumentu `next` a používá k úpravě stavu generátoru argument. `next` změní hodnotu výsledek dříve spuštění `yield` výraz. V následujícím příkladu, při předání hodnoty od 100 do `next` metody resetujete hodnotu Použití generátoru interní indexu.  
   
 ```  
 function* strIter() {  
     var str = "jobob";  
     var idx = 0;  
-    while(idx , str.length) {  
+    while(idx < str.length) {  
         var modify = yield str[idx++];  
         if(modify == 100) {  
             idx = 0;  

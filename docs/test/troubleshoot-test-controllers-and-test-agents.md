@@ -1,7 +1,7 @@
 ---
-title: Řešení potíží s testovacích Kontrolérů a testovacích agentů v sadě Visual Studio | Microsoft Docs
+title: Řešení potíží s testovacích Kontrolérů a testovacích agentů v sadě Visual Studio
 ms.date: 10/20/2016
-ms.topic: conceptual
+ms.topic: troubleshooting
 helpviewer_keywords:
 - load tests, test controllers
 - load tests, troubleshooting
@@ -11,12 +11,13 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d785a559ff59a96861798a7c96bfdcb4147b7ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Strategie řešení potíží s testovacími kontroléry a testovacími agenty v zátěžových testech
 
@@ -27,7 +28,8 @@ Tento článek popisuje některé běžné problémy, ke kterým může dojít p
  Když spustíte zátěžový test, může být, zobrazí se chyba při pokusu o připojení k na testovacím počítači agenta a shromažďování čítačů výkonu. Služba Remote Registry je služba zajišťuje data čítače výkonu ke vzdálenému počítači. U některých operačních systémů služba Remote Registry se nespustí automaticky. Chcete-li tento problém vyřešit, ručně spusťte službu Remote Registry.
 
 > [!NOTE]
->  Dostanete služba Remote Registry v **ovládací panely.** Zvolte **nástroje pro správu** a potom zvolte **služby**.
+> Dostanete služba Remote Registry v **ovládací panely.** Zvolte **nástroje pro správu** a potom zvolte **služby**.
+
 
  Další příčinou tohoto problému je, že nemáte dostatečná oprávnění ke čtení čítačů výkonu. Místní testovacích bězích účet uživatele, který spouští test musí být členem skupiny Power Users nebo vyšší nebo být členem skupiny Performance Monitor Users. Pro vzdálené test běží, účet, který kontroleru je nakonfigurovaná tak, aby spustit jako musí být členem skupiny Power Users nebo vyšší, nebo byl uživatel členem skupiny Performance Monitor Users.
 
@@ -87,7 +89,8 @@ Tento článek popisuje některé běžné problémy, ke kterým může dojít p
  Tato chyba může být způsobeno instalaci řadiče test na počítači, který má více než jeden síťový adaptér.
 
 > [!NOTE]
->  Je také možné úspěšně nainstalovat testovacích agentů a nejsou vidět tento problém, dokud pokusu o spuštění testu.
+> Je také možné úspěšně nainstalovat testovacích agentů a nejsou vidět tento problém, dokud pokusu o spuštění testu.
+
 
  Pokud chcete vyřešit tuto chybu, je třeba svázat testovací kontroler jeden ze síťových adaptérů. Budete muset nastavit `BindTo` vlastnost testovacího kontroléru a poté změňte agentem test agent k odkazování na testovací kontroler podle IP adresy místo podle názvu. Postup najdete v následujících postupech.
 

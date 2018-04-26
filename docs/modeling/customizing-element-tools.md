@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 566558390e29f9198b2328463dfce26327f76565
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: cf990ea206a299c72ec55150bf2e4935b80fb473
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="customizing-element-tools"></a>Přizpůsobení nástrojů elementu
 V některých z nich DSL představují jeden koncept jako skupinu elementů. Například pokud vytvoříte model, ve kterém součást má pevnou sadu portů, vždy chcete porty, které mají být vytvořeny ve stejnou dobu jako jejich nadřazené součásti. Proto musíte přizpůsobit nástroj pro vytváření element tak, aby vytvoří skupinu elementů ne o jeden. Jak toho docílit, můžete přizpůsobit, jak je nástroj pro vytváření element inicializován.

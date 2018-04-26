@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd3483a47946d51890708186a38fc05ae2576ed1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 61fa8f0f447bddcfb1c8e468ca6d88bbdf503f5c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="common-msbuild-project-properties"></a>Obecné vlastnosti projektu nástroje MSBuild
 V následující tabulce jsou uvedeny často používá vlastnosti, které jsou definovány v souborech projektu sady Visual Studio nebo součástí .TARGETS – soubory, které poskytuje nástroje MSBuild.  
@@ -69,9 +69,10 @@ V následující tabulce jsou uvedeny často používá vlastnosti, které jsou 
 |FileAlignment|Určuje, v bajtech, kde chcete-li zarovnat na části výstupní soubor. Platné hodnoty jsou 512, 1024, 2048, 4096, 8192. Tato vlastnost je ekvivalentní `/filealignment` přepínače kompilátoru.|  
 |FrameworkPathOverride|Určuje umístění mscorlib.dll a souboru microsoft.visualbasic.dll. Tento parametr je ekvivalentní `/sdkpath` přepínače kompilátoru vbc.exe.|  
 |GenerateDocumentation|(Jenom Visual Basic) Parametr typu boolean, která určuje, zda dokumentace je generován sestavení. Pokud `true`, sestavení generuje dokumentaci informace a vloží ho do souboru .xml společně s název spustitelného souboru nebo knihovny, která sestavení úloha vytvořena.|
-|IntermediateOutputPath|Úplné zprostředkující výstupní cesta odvozené z `BaseIntermediateOutputPath`, pokud není zadána žádná cesta. Například \obj\debug\\. Pokud je tato vlastnost přepsána, potom nastavení `BaseIntermediateOutputPath` nemá žádný vliv.|  
+|IntermediateOutputPath|Úplné zprostředkující výstupní cesta odvozené z `BaseIntermediateOutputPath`, pokud není zadána žádná cesta. Například \obj\debug\\.|  
 |KeyContainerName|Název kontejneru klíčů silného názvu.|  
 |KeyOriginatorFile|Název souboru klíče silného názvu.|  
+|MSBuildProjectExtensionsPath|Určuje cestu, kde se nachází rozšíření projektu. Ve výchozím nastavení, tato akce trvá stejnou hodnotu jako `BaseIntermediateOutputPath`.|  
 |ModuleAssemblyName|Název sestavení, které má být součástí kompilovaného modulu. Vlastnost je ekvivalentní `/moduleassemblyname` přepínače kompilátoru.|  
 |NoLogo|Logická hodnota, která určuje, zda chcete, aby logo kompilátoru vypnout. Tato vlastnost je ekvivalentní `/nologo` přepínače kompilátoru.|  
 |NoStdLib|Logická hodnota, která označuje, zda nedošlo odkazující na standardní knihovnu (mscorlib.dll). Výchozí hodnota je `false`.|  

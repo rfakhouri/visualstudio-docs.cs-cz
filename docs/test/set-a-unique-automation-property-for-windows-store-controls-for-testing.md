@@ -1,6 +1,7 @@
 ---
-title: Nastavení jedinečné vlastnosti automatizace pro ovládací prvky UWP pro testování v sadě Visual Studio | Microsoft Docs
+title: Nastavení jedinečné vlastnosti automatizace pro ovládací prvky UWP pro testování v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: a27b3472080f1b22f0b07b01e92d6a0e5326396e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce916f181a6694eabc91cdb7c6a7dec9a8f5e5ac
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>Nastavení jedinečné vlastnosti automatizace pro ovládací prvky UWP pro testování
 
@@ -75,7 +76,8 @@ Nastavte AutomationProperties.Name na **ButtonY** pomocí vlastnosti obsahu v XA
  **Blend for Visual Studio:** použijte jednu z následujících metod k tomu blendu pro Visual Studio.
 
 > [!NOTE]
->  Tuto metodu můžete použít pouze pro ovládací prvky, které jsou vytvořené pomocí staticky XAML.
+> Tuto metodu můžete použít pouze pro ovládací prvky, které jsou vytvořené pomocí staticky XAML.
+
 
  **Chcete-li zadejte jedinečný název stávající ovládací prvky**
 

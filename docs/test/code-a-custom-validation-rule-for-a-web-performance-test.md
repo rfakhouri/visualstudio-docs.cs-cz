@@ -1,5 +1,5 @@
 ---
-title: Vytvoření vlastního ověřovacího pravidla pro test výkonnosti webu v sadě Visual Studio | Microsoft Docs
+title: Vytvoření vlastního ověřovacího pravidla pro test výkonnosti webu v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,13 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0c2e3eb6d9b0411a078c5d7531105230dfc82457
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c95e461f99a78a3241a091f7b590137e4dbc7066
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="coding-a-custom-validation-rule-for-a-web-performance-test"></a>Vytvoření vlastního pravidla ověřování pro test výkonnosti webu
 
@@ -59,7 +60,7 @@ Můžete vytvořit vlastní pravidla ověřování. K tomu, odvozujete od tříd
 Následující kód ukazuje implementaci vlastního ověřovacího pravidla. Toto pravidlo ověření napodobuje chování předem definované pravidlo ověření požadované značky. Použijte tento příklad jako výchozí bod pro vlastní vlastní pravidla ověřování.
 
 > [!WARNING]
->  Veřejné vlastnosti v kódu pro vlastní validátor nemůže mít hodnoty null.
+> Veřejné vlastnosti v kódu pro vlastní validátor nemůže mít hodnoty null.
 
 ```csharp
 using System;

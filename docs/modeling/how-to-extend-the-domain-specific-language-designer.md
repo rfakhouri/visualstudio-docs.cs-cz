@@ -7,12 +7,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3b68345961e2209506b0c759d7197c1115083446
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: fc41a768b54ba3253b7dad6648b77aa8c03b0f49
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Postupy: Rozšíření návrháře jazyka specifického pro doménu
 Můžete provést rozšíření návrháře, který slouží k úpravám DSL definice. Typy rozšíření, které můžete provést zahrnují přidání příkazy nabídky, přidání obslužné rutiny pro přetažení a dvakrát klikněte na gesta a pravidel, které jsou aktivované, když konkrétní typy hodnot nebo vztahy změnit. Rozšíření můžete zabalené jako Visual Studio integrace rozšíření (VSIX) a distribuovat do jiných uživatelů.

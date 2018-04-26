@@ -1,5 +1,5 @@
 ---
-title: Dat technologie Intellitrace v sadě Visual Studio | Microsoft Docs
+title: Dat technologie Intellitrace v sadě Visual Studio
 ms.date: 10/13/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e1f36aefaad2e43d8875c9c0164ac938b004999d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6b34993e011a8bf539b6ec2dd70beddf9c96caf
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Postupy: Shromáždění dat technologie IntelliTrace pro snazší ladění složitých problémů
 
@@ -71,7 +72,7 @@ Před provedením kroků v tomto postupu, je nutné otevřít nastavení testu z
 
 5.  Vyberte **Obecné** kartě. Vyberte **pouze události IntelliTrace** k zaznamenání významné diagnostických událostí, které mají minimální dopad na výkon při testování.
 
-     **-**nebo –
+     **-** nebo –
 
      Vyberte **události IntelliTrace a volání informace** k zaznamenání diagnostických událostí a metoda úroveň trasování, který zobrazuje informace o volání. Tato úroveň trasování může mít vliv na výkon při spuštění testů.
 

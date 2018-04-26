@@ -1,7 +1,9 @@
 ---
-title: 'Postupy: vytvoření sadu pravidel aktivitě PolicyActivity (zastaralé) | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: vytvoření sadu pravidel aktivitě PolicyActivity (zastaralé)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - PolicyActivity activity, creating rule sets
 - Rule Set Editor dialog box
@@ -14,22 +16,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4911912aa46f5dc8a6aea9b9b20e87c1f83e576f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 57142fc21bc9db03a338f20a27e20b8af51b48cd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Postupy: vytvoření sadu pravidel aktivitě PolicyActivity (zastaralé)
 
-Toto téma popisuje, jak vytvořit pravidlo zásad aktivity, nastavit pomocí návrháře pracovních postupů starší verze Windows s cílem [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+Toto téma popisuje postup vytvoření pravidla zásad aktivity nastavit pomocí návrháře pracovních postupů starší verze Windows s cílem rozhraní .NET Framework verze 3.5 nebo WinFX.
 
  Po přetažení **zásad** aktivity položku z **sada nástrojů** na plochu návrháře pracovního postupu můžete vybrat existující pravidlo nebo vytvořit nové pravidlo, nastavte pro [aktivitě PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) aktivity. Vyberte existující pravidlo nastavit pomocí [vyberte pravidlo nastavte dialogové okno (zastaralé)](../workflow-designer/select-rule-set-dialog-box-legacy.md) a vytvoříte pomocí sady pravidel [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!NOTE]
 > Můžete otevřít [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) dialogové okno přímo poklepáním na [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) aktivity, který je na návrhovou plochu pracovního postupu.
 
-### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Vybrat nebo vytvořit sadu pravidel pro aktivitu aktivitě PolicyActivity
+## <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Vybrat nebo vytvořit sadu pravidel pro aktivitu aktivitě PolicyActivity
 
 1.  Klikněte pravým tlačítkem myši [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)a potom klikněte na **vlastnosti** otevřete **vlastnosti** okno.
 

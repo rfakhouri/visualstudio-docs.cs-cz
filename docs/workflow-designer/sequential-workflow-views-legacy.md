@@ -1,7 +1,9 @@
 ---
-title: Sekvenční pracovní postup zobrazení (zastaralé) | Microsoft Docs
+title: Návrhář postupu provádění - sekvenční pracovní postup zobrazení (zastaralé)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflow views
 - sequential workflows, views
@@ -11,20 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6b42ba9c1c9f7dbe2beb4a741501967e4968508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ce1217ea629ae0301b72b444161d61db4fe448b1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="sequential-workflow-views-legacy"></a>Sekvenční pracovní postup zobrazení (zastaralé)
-[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] poskytuje starší verze Návrháře pracovního postupu systému Windows, který lze použít k cíli [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Poskytuje způsob, jak vytvořit graficky [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace, které používají známé [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] uživatelské rozhraní. [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace se skládají z kroků procesu pracovního postupu nazývají aktivity. Pokud chcete vytvořit pracovní postup, tvoří aktivity na návrhovou plochu přetažením návrháře jejich odpovídajících aktivit z **sada nástrojů** na návrhovou plochu.
+Visual Studio 2010 zajišťuje starší verze Návrháře pracovního postupu systému Windows, které je možné cílit na rozhraní .NET Framework verze 3.5 nebo WinFX.
 
- Při vytváření sekvenční pracovní postup, který je [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), jsou k dispozici tři zobrazení pracovního postupu. Tato zobrazení jsou k dispozici **pracovního postupu** nabídky a v místní nabídce na návrhovou plochu.
+Návrhář postupu provádění poskytuje způsob, jak graficky vytvářet aplikace Windows Workflow Foundation (WF) pomocí uživatelského rozhraní známé Visual Studio. Aplikace Windows Workflow Foundation (WF) se skládají z kroků procesu pracovního postupu nazývají aktivity. Pokud chcete vytvořit pracovní postup, tvoří aktivity na návrhovou plochu přetažením návrháře jejich odpovídajících aktivit z **sada nástrojů** na návrhovou plochu.
 
- Následující tabulka uvádí název a popis jednotlivých zobrazení.
+Při vytváření sekvenční pracovní postup, který je [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040), jsou k dispozici tři zobrazení pracovního postupu. Tato zobrazení jsou k dispozici **pracovního postupu** nabídky a v místní nabídce na návrhovou plochu.
+
+Následující tabulka uvádí název a popis jednotlivých zobrazení.
 
 |Možnost nabídky nebo karty|Popis|
 |----------------------|-----------------|

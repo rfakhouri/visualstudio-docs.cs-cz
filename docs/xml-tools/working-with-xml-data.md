@@ -1,19 +1,19 @@
 ---
-title: Práce s daty XML | Microsoft Docs
-ms.custom: ''
+title: Práce s daty XML
 ms.date: 11/04/2016
-ms.technology: vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-xml-tools
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e92bd40eba56c486c95be4d85e376f80beffccf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43a58e9a0fd8522655aeed5f8539b7abefcb9cb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="working-with-xml-data"></a>Práce s daty XML
 
@@ -45,28 +45,16 @@ Návrhář schématu XML je integrovaná do sady Visual Studio a Editor souborů
 
 Visual Studio podporuje ladění stylů XSLT. Používání ladicího programu, můžete nastavit body rozdělení v šabloně stylů XSLT, krokování s vnořením stylů XSLT z kódu a tak dále.
 
-## <a name="in-this-section"></a>V tomto oddílu
-
-[Editor XML](../xml-tools/xml-editor.md)  
-Představuje editoru XML.
-
-[Návrhář schémat XML](../xml-tools/xml-schema-designer.md)  
-Popisuje Návrhář schématu XML a pracovat s schématu XML definition language (XSD) schématy.
-
 ## <a name="related-sections"></a>Související oddíly
 
-[Ladění XSLT](../xml-tools/debugging-xslt.md)  
-Popisuje postup ladění stylů pomocí ladicího programu sady Visual Studio.
+[Ladění XSLT](../xml-tools/debugging-xslt.md) popisuje, jak k ladění stylů pomocí ladicího programu sady Visual Studio.
 
-[Referenční dokumentace XML standardy](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
-Poskytuje informace o technologiích, XML, včetně XML, dokumentu typ definice (DTD), jazyk definice schématu XML (XSD) a XSLT.
+[Referenční dokumentace XML standardy](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) poskytuje informace o technologiích, XML, včetně XML, dokumentu typ definice (DTD), jazyk definice schématu XML (XSD) a XSLT.
 
-[Vytvoření a konfigurace datových sad v sadě Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
-Poskytuje vysvětlení návrhu nástrojů pro vytváření datových sad.
+[Vytvoření a konfigurace datové sady v sadě Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md) obsahuje vysvětlení návrhu nástrojů pro vytváření datových sad.
 
-[Webové služby XML ve spravovaném kódu](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
-Popisuje postup vytvoření a nasazení webové služby XML a pro přístup k webové služby XML.
+[Webové služby XML v spravovaného kódu](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196) popisuje postup vytvoření a nasazení webové služby XML a přístup k webové služby XML.
 
 ## <a name="see-also"></a>Viz také
 
-[Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+- [Nástroje XML v sadě Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

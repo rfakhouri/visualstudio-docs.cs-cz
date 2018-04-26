@@ -1,7 +1,9 @@
 ---
-title: InvokeDelegate | Microsoft Docs
+title: Návrhář postupu provádění - InvokeDelegate
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - InvokeDelegate Designer
 - System.Activities.Statements.InvokeDelegate.UI
@@ -11,25 +13,29 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93e41d98b156b6314158a1cc99e368092b0cf494
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d68fa1b777663ff8975f8ce99100d8eddc5f05d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
+
 **InvokeDelegate** designer se používá k vytvoření a konfigurace <xref:System.Activities.Statements.InvokeDelegate> aktivity.
 
 ## <a name="the-invokedelegate-activity"></a>InvokeDelegate aktivity
- <xref:System.Activities.Statements.InvokeDelegate> Volá veřejný delegát.
+
+<xref:System.Activities.Statements.InvokeDelegate> Volá veřejný delegát.
 
 ### <a name="using-the-invokedelegate-activity-designer"></a>Pomocí návrháře InvokeDelegate aktivity
- **InvokeDelegate** Návrhář aktivity naleznete v **primitiv** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů** kartě [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CRTL + ALT + X.)
 
- **InvokeDelegate** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kde je to aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.InvokeDelegate> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z InvokeDelegate. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **InvokeDelegate** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
+**InvokeDelegate** Návrhář aktivity naleznete v **primitiv** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů** kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CRTL + ALT + X.)
+
+**InvokeDelegate** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů, kde ever aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.InvokeDelegate> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z InvokeDelegate. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **InvokeDelegate** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
 
 ### <a name="the-invokedelegate-properties"></a>Vlastnosti InvokeDelegate
- Následující tabulce je zobrazena <xref:System.Activities.Statements.InvokeDelegate> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravit v tabulce vlastností a některé můžete upravit na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]plochu návrháře.
+
+Následující tabulce je zobrazena <xref:System.Activities.Statements.InvokeDelegate> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravit v tabulce vlastností a některé můžete upravit na povrchu Designerdesigner pracovního postupu.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|

@@ -1,5 +1,5 @@
 ---
-title: Instalace jazyka Python překladače a knihovny v Azure App Service
+title: Konfigurace Python v Azure App Service
 description: Postup instalace překladač Pythonu a knihovny v Azure App Service a konfiguraci webové aplikace správně odkazovat na tento překladač.
 ms.date: 09/13/2017
 ms.prod: visual-studio-dev15
@@ -12,13 +12,13 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: cd3be2ee5d62c687fab1c822e3469d9523624047
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e77c155565830827ff6c30e48aee89152e07a80e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="managing-python-on-azure-app-service"></a>Správa Pythonu ve službě Azure App Service
+# <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>Jak nastavit prostředí Python ve službě Azure App Service
 
 [Aplikační služba Azure](https://azure.microsoft.com/services/app-service/) je nabídku platforma jako služba pro webové aplikace, jestli jsou weby přístupných prostřednictvím prohlížeče, REST API, které používají vlastní klienti nebo událost aktivuje zpracování. App Service plně podporuje použití Python k implementaci aplikace.
 

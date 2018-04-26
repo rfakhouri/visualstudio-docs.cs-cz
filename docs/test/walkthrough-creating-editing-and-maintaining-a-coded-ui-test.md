@@ -1,6 +1,7 @@
 ---
-title: Vytvoření programového testu UI v sadě Visual Studio | Microsoft Docs
+title: Vytvoření programového testu UI v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1861915f50961bb3b07513d69d9799717694e1be
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 835d8fbefa778147f2397eefad055cb96fb82c90
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Návod: Vytváření, upravování a údržba programového testu UI
 
@@ -24,7 +25,7 @@ V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation
 
      **Nový projekt** zobrazí se dialogové okno.
 
-2.  V **nainstalovaná** podokně rozbalte **Visual C#**a potom vyberte **Windows Desktop**.
+2.  V **nainstalovaná** podokně rozbalte **Visual C#** a potom vyberte **Windows Desktop**.
 
 3.  Výše v prostředním podokně, ověřte, že cílový framework rozevíracího seznamu je nastavena na **rozhraní .NET Framework 4.5**.
 
@@ -120,7 +121,7 @@ V tomto návodu vytvoříte jednoduchou aplikaci Windows Presentation Foundation
 
      **Přidat nový projekt** zobrazí se dialogové okno.
 
-4.  V **nainstalovaná** podokně rozbalte **Visual C#**a potom vyberte **Test**.
+4.  V **nainstalovaná** podokně rozbalte **Visual C#** a potom vyberte **Test**.
 
 5.  V prostředním podokně, vyberte **programového uživatelského rozhraní testovacího projektu** šablony.
 

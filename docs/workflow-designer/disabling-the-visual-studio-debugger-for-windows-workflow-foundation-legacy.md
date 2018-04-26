@@ -1,7 +1,9 @@
 ---
-title: Zakázání ladicího programu sady Visual Studio pro Windows Workflow Foundation (zastaralé) | Microsoft Docs
+title: Návrhář postupu provádění - zakázání ladicího programu sady Visual Studio pro Windows Workflow Foundation (zastaralé)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, disabling debugger
 - debugging workflows, disabling debugger
@@ -12,17 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a609062f3f84538f7c1655cd5ca82971fc608f62
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473ee507e35f5ec5df902df64ee34326dcf90a2b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="disabling-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Zakázání ladicího programu sady Visual Studio pro Windows Workflow Foundation (zastaralé)
 
-Toto téma popisuje, jak zakázat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladicího programu pomocí konfiguračního souboru při sestavování [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+Toto téma popisuje, jak zakázat pomocí konfiguračního souboru, při vytváření aplikace Windows Workflow Foundation (WF) v Návrháři pracovních postupů starší verze Windows ladicí program Visual Studio. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
 
- Ve výchozím nastavení [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] ladicího programu pro [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] je povolený pro hostitelský proces. Zakázat ladění pracovního postupu, je nutné explicitně vypnout ho tak, že přidáte položku "DisableWorkflowDebugging"  **\<přepínače >** element v  **\<system.diagnostics >**oddíl konfiguračního souboru hostitele.
+ Ve výchozím nastavení je Visual Studio ladicí program pro Windows Workflow Foundation (WF) povoleno pro hostitelský proces. Zakázat ladění pracovního postupu, je nutné explicitně vypnout ho tak, že přidáte položku "DisableWorkflowDebugging"  **\<přepínače >** element v  **\<system.diagnostics >** oddíl konfiguračního souboru hostitele.
 
  Následující příklad ukazuje, jak upravit hostitele konfigurační soubor zakázat ladění pracovního postupu.
 

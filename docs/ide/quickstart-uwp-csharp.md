@@ -2,6 +2,7 @@
 title: 'Rychlý úvod: Vytvoření první aplikace pro univerzální platformu Windows v sadě Visual Studio s XAML a C# | Microsoft Docs'
 ms.custom: ''
 ms.date: 04/04/2018
+ms.prod: visual-studio-dev15
 ms.technology:
 - vs-acquisition
 ms.topic: quickstart
@@ -13,11 +14,11 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: d1263b752a27522b9a551d8015689f60422984ad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Rychlý úvod: Vytvoření první aplikace pro univerzální platformu Windows v sadě Visual Studio s XAML a C&#35;
 
@@ -31,9 +32,9 @@ Nejprve vytvořte projekt univerzální platformu Windows. Typ projektu se dodá
 
 1. Otevřete Visual Studio 2017.
 
-2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
+2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu**.
 
-3. V levém podokně **nový projekt** dialogové okno, rozbalte seznam **Visual C#**a potom zvolte **univerzální pro Windows**. V prostředním podokně vyberte **prázdná aplikace (univerzální pro Windows)**. Pojmenujte projekt *HelloWorld* a zvolte **OK**.
+3. V levém podokně **nový projekt** dialogové okno, rozbalte seznam **Visual C#** a potom zvolte **univerzální pro Windows**. V prostředním podokně vyberte **prázdná aplikace (univerzální pro Windows)**. Pojmenujte projekt *HelloWorld* a zvolte **OK**.
 
    ![Univerzální pro Windows šablona projektu v dialogovém okně Nový projekt v prostředí Visual Studio IDE](../ide/media/new-project-csharp-uwp-helloworld.png)
 
@@ -54,7 +55,7 @@ Je čas spuštění vývoj. Budete přidání ovládacího prvku tlačítko, na 
 
 ### <a name="add-a-button-to-the-design-canvas"></a>Přidání tlačítka na plátno návrhu
 
-1. V **Průzkumníku řešení**, dvakrát klikněte na **MainPage.xaml** otevření zobrazení rozdělení.
+1. V **Průzkumníku řešení**, dvakrát klikněte na *MainPage.xaml* otevření zobrazení rozdělení.
 
   ![Otevřete MainPage.xaml v Průzkumníku řešení ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
@@ -66,7 +67,7 @@ Je čas spuštění vývoj. Budete přidání ovládacího prvku tlačítko, na 
 
   ![Klikněte na panel nástrojů a otevřete okno rozevírací sada nástrojů](../ide/media/uwp-toolbox.png)
 
-  (Pokud nevidíte možnost sada nástrojů, můžete otevřít ho v řádku nabídek. Chcete-li tak učinit, zvolte **zobrazení** > **nástrojů**. Také můžete stisknout klávesu **Ctrl**+**Alt**+**X**.)
+  (Pokud se nezobrazí **sada nástrojů** možnost, který můžete otevřít z řádku nabídek. Chcete-li tak učinit, zvolte **zobrazení** > **nástrojů**. Také můžete stisknout klávesu **Ctrl**+**Alt**+**X**.)
 
 3. Klikněte **Pin** ikonu ukotvení panelu nástrojů okna.
 
@@ -76,17 +77,17 @@ Je čas spuštění vývoj. Budete přidání ovládacího prvku tlačítko, na 
 
    ![Klikněte na ovládací prvek tlačítko a přetáhněte ji na plátno návrhu](../ide/media/uwp-toolbox-add-button-control.png)
 
-  Pokud si prohlédnete kód v editoru XAML, uvidíte, že tlačítko byl přidán zde příliš:
+  Pokud si prohlédnete kód **editoru XAML**, uvidíte, že tlačítko byl přidán zde příliš:
 
   ![Klikněte na ovládací prvek tlačítko a přetáhněte ji na plátno návrhu](../ide/media/uwp-xaml-control-code-window.png)
 
 ### <a name="add-a-label-to-the-button"></a>Přidání štítku pro tlačítko
 
-1. V editoru XAML, změňte tlačítko obsahu hodnotu z "Button" na "Hello, World!"
+1. V **editoru XAML**, změňte tlačítko obsahu hodnotu z "Button" na "Hello, World!"
 
    ![Změňte hodnotu obsahu tlačítka na Hello World](../ide/media/uwp-change-button-text-in-xaml-code-window.png)
 
-2. Všimněte si, že se změní na tlačítko v Návrháři XAML, příliš.
+2. Všimněte si, že tlačítka na **návrháře XAML** příliš změny.
 
    ![Tlačítko změny Hello, World na plátně návrhu](../ide/media/uwp-button-text-change-in-design-canvas.png)
 
@@ -96,7 +97,7 @@ Komplikovanější, zvuků "obslužné rutiny události", ale je stejně jiný n
 
 1. Dvakrát klikněte tlačítko – ovládací prvek na plátně návrhu.
 
-2.  Upravit kód obslužné rutiny událostí v *MainPage.xaml.cs*, kódu stránky.
+2. Upravit kód obslužné rutiny událostí v *MainPage.xaml.cs*, kódu stránky.
 
  Toto je, kde získat zajímavé věcí. Výchozí obslužnou rutinu události vypadá takto:
 
@@ -121,7 +122,7 @@ Komplikovanější, zvuků "obslužné rutiny události", ale je stejně jiný n
 
 #### <a name="what-did-we-just-do"></a>Co jsme právě?
 
-Kód některé rozhraní API systému Windows používá k vytvoření objektu souhrnnou řeči a poté nastaví nějaký text. Tím vyjádříte. (Další informace o používání SpeechSynthesis najdete v tématu <xref:System.Speech.Synthesis>.)
+Kód některé rozhraní API systému Windows používá k vytvoření objektu souhrnnou řeči a poté nastaví nějaký text. Tím vyjádříte. (Další informace o používání `SpeechSynthesis`, najdete v části <xref:System.Speech.Synthesis>.)
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 

@@ -1,7 +1,9 @@
 ---
-title: 'Postupy: Nastavte zarážky v pracovních postupech (zastaralé) | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: Nastavte zarážky v pracovních postupech (zastaralé)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - breakpoints, setting in workflows
 - debugging, setting breakpoints in workflows
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d62395a4b719827cf33eacad46a650bd057c43
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c0c70b630404830fa8c733a7310e4700da8f08b3
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Postupy: Nastavte zarážky v pracovních postupech (zastaralé)
-Toto téma popisuje, jak nastavit zarážky [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] sestavení aplikace pomocí návrháře pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] při vaší [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] aplikace, musí cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Pokud používáte starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] v [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] k sestavení [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] aplikace, můžete nastavit zarážky v kódu jazyka C# a Visual Basic stejně jako v sadě Visual Studio. Podle očekávání, zastaví zpracování pracovního postupu u každé zarážky, který nastavíte.
+Toto téma popisuje, jak nastavit zarážky ve Windows Workflow Foundation (WF) sestavení aplikace pomocí návrháře pracovních postupů starší verze systému Windows. Pokud aplikace Windows Workflow Foundation musí cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
+
+ Pokud používáte starší verzi návrháře pracovních postupů v sadě Visual Studio 2010 sestavit aplikaci pro Windows Workflow Foundation, můžete nastavit zarážky v C# a kód jazyka Visual Basic stejně jako v sadě Visual Studio. Podle očekávání, zastaví zpracování pracovního postupu u každé zarážky, který nastavíte.
 
  Zarážku má tři stavy: *čekající*, *vázaný*, a *chyba*. Když nastavíte zarážku, čeká na vyřízení a je reprezentována dutý červenou ikonu. Když modul runtime načetl typ pracovního postupu, bude vázán a je reprezentován plnou červenou ikonou. Pokud zadáte nesprávný formát pro bod přerušení, jako s názvem aktivity, který není platný, zobrazí se okno s chyba. Zarážce přidána do okna zarážek, ale je označen s malým "x".
 

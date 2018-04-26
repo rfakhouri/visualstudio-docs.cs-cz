@@ -1,7 +1,9 @@
 ---
-title: Stav Návrhář aktivity | Microsoft Docs
+title: Návrhář postupu provádění – Návrhář stavu aktivity
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
@@ -10,20 +12,23 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 117479e00c8b27617c33a2cce422afe5ab3124aa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 41abc73cce121ae4ebc247e20c0fcd2c60b8ec56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="state-activity-designer"></a>Návrhář stavu aktivity
+
 A <xref:System.Activities.Statements.State> představuje stavu, ve kterém může být stav stavového stroje v.
 
 ## <a name="using-the-state-activity-designer"></a>Pomocí návrháře stavu aktivity
- Přidat <xref:System.Activities.Statements.State> do pracovního postupu, přetáhněte **stavu** Návrhář aktivity z **stavu počítače** části **sada nástrojů** a umístěte jej do <xref:System.Activities.Statements.StateMachine> aktivita na plochu návrháře pracovního postupu systému Windows. A <xref:System.Activities.Statements.State> aktivity může být přetažen na <xref:System.Activities.Statements.StateMachine> a přechody přidat později; nebo přechod se dá vytvořit jako <xref:System.Activities.Statements.State> aktivity se ukončí. Přidat <xref:System.Activities.Statements.State> aktivity a vytvoření přechodu v jednom kroku, přetáhněte **stavu** aktivity z **stavový stroj** části **sada nástrojů** a pozastavte ukazatel myši nad jiného Stav v Návrháři pracovních postupů. Když taženou <xref:System.Activities.Statements.State> je oproti jinému <xref:System.Activities.Statements.State>, kolem druhé se zobrazí čtyři trojúhelníčky <xref:System.Activities.Statements.State>. Pokud <xref:System.Activities.Statements.State> vyřazen na jednom ze čtyř trojúhelníčky, se přidá do stavu počítače a vytvoření přechodu ze zdroje <xref:System.Activities.Statements.State> vynechaných cílovou <xref:System.Activities.Statements.State>. Další informace najdete v tématu [přechod](../workflow-designer/transition-activity-designer.md).
+
+Přidat <xref:System.Activities.Statements.State> do pracovního postupu, přetáhněte **stavu** Návrhář aktivity z **stavu počítače** části **sada nástrojů** a umístěte jej do <xref:System.Activities.Statements.StateMachine> aktivita na plochu návrháře pracovního postupu systému Windows. A <xref:System.Activities.Statements.State> aktivity může být přetažen na <xref:System.Activities.Statements.StateMachine> a přechody přidat později; nebo přechod se dá vytvořit jako <xref:System.Activities.Statements.State> aktivity se ukončí. Přidat <xref:System.Activities.Statements.State> aktivity a vytvoření přechodu v jednom kroku, přetáhněte **stavu** aktivity z **stavový stroj** části **sada nástrojů** a pozastavte ukazatel myši nad jiného Stav v Návrháři pracovních postupů. Když taženou <xref:System.Activities.Statements.State> je oproti jinému <xref:System.Activities.Statements.State>, kolem druhé se zobrazí čtyři trojúhelníčky <xref:System.Activities.Statements.State>. Pokud <xref:System.Activities.Statements.State> vyřazen na jednom ze čtyř trojúhelníčky, se přidá do stavu počítače a vytvoření přechodu ze zdroje <xref:System.Activities.Statements.State> vynechaných cílovou <xref:System.Activities.Statements.State>. Další informace najdete v tématu [přechod](../workflow-designer/transition-activity-designer.md).
 
 ### <a name="state-activity-properties-in-the-workflow-designer"></a>Vlastnosti stavu aktivity v Návrháři pracovních postupů
- Následující tabulce je zobrazena <xref:System.Activities.Statements.State> vlastnosti, které se dá nastavit pomocí návrháře pracovních postupů a popisuje, jak se používají v návrháři. Některé z těchto vlastností můžete upravovat v tabulce vlastností a lze upravit některé na plochu návrháře.
+
+Následující tabulce je zobrazena <xref:System.Activities.Statements.State> vlastnosti, které se dá nastavit pomocí návrháře pracovních postupů a popisuje, jak se používají v návrháři. Některé z těchto vlastností můžete upravovat v tabulce vlastností a lze upravit některé na plochu návrháře.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|

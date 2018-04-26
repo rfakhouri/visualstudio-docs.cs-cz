@@ -1,6 +1,6 @@
 ---
 title: Instalace podpory Python
-description: Podrobné pokyny k instalaci nástroje Python Tools pro Visual Studio (PTVS) v aplikaci Visual Studio 2017, 2015, 2013, 2012 a 2010, včetně možnosti a umístění instalace.
+description: Postup instalace nástroje Python Tools pro Visual Studio (PTVS) v aplikaci Visual Studio 2017, 2015, 2013, 2012 a 2010, včetně možnosti a umístění instalace.
 ms.date: 02/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a998a2a62915d1ce998e30202f4b4fd0838975a3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="installing-python-support-in-visual-studio-on-windows"></a>Instalace podpory Python v sadě Visual Studio v systému Windows
+# <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak nainstalovat podporu jazyka Python v sadě Visual Studio v systému Windows
 
 Chcete-li nainstalovat podporu jazyka Python pro Visual Studio (také označované jako Python Tools pro Visual Studio nebo PTVS), postupujte podle pokynů v oddílu, který se shoduje s vaší verzí sady Visual Studio:
 

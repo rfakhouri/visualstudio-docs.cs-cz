@@ -15,12 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abe689021506ab71953e2d6556db8608c301f528
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Vytvoření kódu v době návrhu pomocí textových šablon T4
 Textové šablony T4 návrhu umožňují generování programovém kódu a další soubory v vaší [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projektu. Většinou se tak, aby se liší kód, který generují podle data z zápisu šablony *modelu*. Model je soubor nebo databáze, která obsahuje klíčové informace o požadavcích vaší aplikace.

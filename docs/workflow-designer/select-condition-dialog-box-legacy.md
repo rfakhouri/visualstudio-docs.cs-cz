@@ -1,7 +1,9 @@
 ---
-title: Vyberte podmínku dialogové (zastaralé) | Microsoft Docs
+title: Návrhář postupu provádění – dialogové okno Vyberte podmínku (zastaralé)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.ConditionBrowserDialog.UI
 helpviewer_keywords:
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5a48e423a012d9b69bc4d8f5ef990f3e937498
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 836cd63ecaa19be46617422d3cede2f04291992e
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Dialogové okno Vyberte podmínku (zastaralé)
-Toto téma popisuje, jak používat **vyberte podmínku** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- **Vyberte podmínku** dialogové okno slouží k výběru deklarativní pravidlo podmínku, kterou chcete přiřadit k vlastnosti stavu aktivity. Tyto podmínky pravidla jsou zveřejněné jako vlastnosti na následujících out-of-box aktivit programovacího modelu Windows Workflow Foundation:
+Toto téma popisuje, jak používat **vyberte podmínku** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
+
+**Vyberte podmínku** dialogové okno slouží k výběru deklarativní pravidlo podmínku, kterou chcete přiřadit k vlastnosti stavu aktivity. Tyto podmínky pravidla jsou zveřejněné jako vlastnosti na následujících out-of-box aktivit programovacího modelu Windows Workflow Foundation:
 
 -   [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -31,9 +34,9 @@ Toto téma popisuje, jak používat **vyberte podmínku** dialogové okno v Náv
 
 -   [Aktivita typu WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
 
- Informace o tom, jak získat přístup **vyberte podmínku** dialogové okno, najdete v části [postupy: vytvoření deklarativní podmínky pravidla (zastaralé)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
+Informace o tom, jak získat přístup **vyberte podmínku** dialogové okno, najdete v části [postupy: vytvoření deklarativní podmínky pravidla (zastaralé)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
- Následující tabulka popisuje prvky uživatelského rozhraní (UI) **vyberte podmínku** dialogové okno.
+Následující tabulka popisuje prvky uživatelského rozhraní (UI) **vyberte podmínku** dialogové okno.
 
 |Prvek uživatelského rozhraní (UI)|Popis|
 |----------------|-----------------|

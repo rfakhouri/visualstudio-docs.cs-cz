@@ -1,7 +1,9 @@
 ---
-title: AddToCollection&lt;T&gt; Návrhář aktivity | Microsoft Docs
+title: Návrhář postupu provádění - AddToCollection<T> Návrhář aktivity
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
 ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
@@ -10,25 +12,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c961c8ab893b1d8b4a2d519d8b9dce27fd6f93c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b32df48f79d60500cb23a40c5273ceeedfc9c56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; Návrhář aktivity
+# <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Návrhář aktivity
+
 **AddToCollection\<T >** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.AddToCollection%601> aktivity.
 
-## <a name="the-addtocollectiont-activity"></a>AddToCollection < T\> aktivity
- <xref:System.Activities.Statements.AddToCollection%601> Aktivita přidá položku do kolekce.
+## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T > aktivity
+
+<xref:System.Activities.Statements.AddToCollection%601> Aktivita přidá položku do kolekce.
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>Pomocí AddToCollection\<T > Návrhář aktivity
- **AddToCollection\<T >** Návrhář aktivity naleznete v **kolekce** kategorii **sada nástrojů**, což je dostat kliknutím  **Sada nástrojů** kartě [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **AddToCollection\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kdekoli aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.AddToCollection%601> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z AddToCollection < Int32\>. (Ve výchozím nastavení, *TypeArgument* je **Int32**. To lze změnit v tabulce vlastností.) <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **AddToCollection < T\>**  Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností. Ostatní vlastnosti musí být upravit na mřížku vlastností.
+**AddToCollection\<T >** Návrhář aktivity naleznete v **kolekce** kategorii **sada nástrojů**, což je dostat kliknutím  **Sada nástrojů** kartě návrháře pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
-### <a name="the-addtocollectiont-properties"></a>AddToCollection < T\> vlastnosti
- Následující tabulce je zobrazena <xref:System.Activities.Statements.AddToCollection%601> vlastnosti a popisuje, jak se používají v návrháři.
+**AddToCollection\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou umístěna, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Vyřazení **AddToCollection\<T >** vytvoří Návrhář aktivity <xref:System.Activities.Statements.AddToCollection%601> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z AddToCollection < Int32\>. (Ve výchozím nastavení, *TypeArgument* je **Int32**. TypeArgument lze změnit v tabulce vlastností.) <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **AddToCollection < T\>**  Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností. Ostatní vlastnosti musí být upravit na mřížku vlastností.
+
+### <a name="the-addtocollectiont-properties"></a>AddToCollection\<T > Vlastnosti
+
+Následující tabulce je zobrazena <xref:System.Activities.Statements.AddToCollection%601> vlastnosti a popisuje, jak se používají v návrháři.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|

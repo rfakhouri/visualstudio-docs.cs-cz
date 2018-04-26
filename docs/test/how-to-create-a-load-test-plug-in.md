@@ -1,5 +1,5 @@
 ---
-title: Vytvoření modulu Plugin v sadě Visual Studio pro zátěžový Test | Microsoft Docs
+title: Vytvoření modulu Plugin v sadě Visual Studio pro zátěžový Test
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,13 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6e585fe66bde573f8bb133b0c8cda0900b0d6d16
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 482336bca7c177b3c4fdcb0f16faf7ea96d6c34b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Postupy: Vytvoření modulu plugin pro zátěžový test
 
@@ -102,7 +103,8 @@ Lze vytvořit modul plug-in zátěžového testu pro spuštění kódu v různ�
 Následující kód ukazuje modul plug-in zátěžového testu, který spouští vlastní kód poté, co dojde k události LoadTestFinished. Pokud je tento kód spuštěn na testovacím agentu na vzdáleném počítači a tento testovací agent nemá službu SMTP localhost, zátěžový test zůstane ve stavu „Probíhá“, protože se otevře okno se zprávou.
 
 > [!NOTE]
->  Následující kód vyžaduje přidání odkazu na System.Windows.Forms.
+> Následující kód vyžaduje přidání odkazu na System.Windows.Forms.
+
 
 ```csharp
 using System;

@@ -1,7 +1,9 @@
 ---
-title: Použijte sadu Visual Studio k vytvoření webové aplikace ASP.NET Core v jazyce C# | Microsoft Docs
-ms.custom: ''
+title: Použijte sadu Visual Studio k vytvoření webové aplikace ASP.NET Core v jazyce C#
+description: Naučte se vytvářet webové aplikace ASP.NET Core v sadě Visual Studio pomocí C#, krok za krokem.
+ms.custom: mvc
 ms.date: 10/10/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
 author: TerryGLee
@@ -12,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 0f1a1397de407a4497961920762b0084069b3764
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první webové aplikace ASP.NET Core
 
@@ -30,7 +32,7 @@ Nejdřív vytvoříte projekt webové aplikace technologie ASP.NET Core. Typ pro
 
 1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
+1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu**.
 
 1. V **nový projekt** dialogové okno, v levém podokně rozbalte **Visual C#**, zvolte **.NET Core**. V prostředním podokně vyberte **webové aplikace ASP.NET Core**, zvolte **OK**.
 
@@ -40,7 +42,7 @@ Nejdřív vytvoříte projekt webové aplikace technologie ASP.NET Core. Typ pro
 
 1. V **nové webové aplikace ASP.NET Core** dialogové okno, vyberte **technologii ASP.NET 2.0 základní** v hlavní nabídce rozevíracího seznamu. (Pokud nevidíte **technologii ASP.NET 2.0 základní** v seznamu, nainstalujte ji podle **Stáhnout** odkaz, který by se měla objevit v žlutý pruh v horní části dialogové okno.) Zvolte **OK**.
 
-   ![Nové webové aplikace ASP.NET Core dialogbox](../ide/media/quickstart-aspnet-core20.png)
+   ![Dialogové okno nové webové aplikace ASP.NET Core](../ide/media/quickstart-aspnet-core20.png)
 
 ## <a name="explore-the-ide"></a>Prozkoumejte rozhraní IDE
 
@@ -68,7 +70,7 @@ Nejdřív vytvoříte projekt webové aplikace technologie ASP.NET Core. Typ pro
 
    ![Seznam chyb](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. V okně editoru umístěte kurzor na buď řádek, který obsahuje chybu, a potom vyberte žárovky rychlé akce na levém okraji. Z rozevírací nabídky vyberte **pomocí systému;** na začátek souboru přidejte tato direktiva a případné chyby opravte.
+1. V okně editoru umístěte kurzor na buď řádek, který obsahuje chybu, a potom vyberte **rychlé akce žárovky** na levém okraji. Z rozevírací nabídky vyberte **pomocí systému;** na začátek souboru přidejte tato direktiva a případné chyby opravte.
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 

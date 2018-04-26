@@ -1,7 +1,9 @@
 ---
-title: Vyberte dialogové okno nastavit pravidlo (zastaralé) | Microsoft Docs
+title: Návrhář postupu provádění – vyberte pravidlo nastavte dialogové okno (zastaralé)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetBrowserDialog.UI
 helpviewer_keywords:
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 376b76e93849e58ac2d26f5c9360dc7673f2a3f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b199f5cd0ee71d9b4a5ce0991e84660ee031fa59
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Dialogové okno nastavit vyberte pravidlo (zastaralé)
-Toto téma popisuje, jak používat **vyberte pravidlo nastavené** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- **Vyberte pravidlo nastavené** dialogové okno slouží k výběru sadu pravidel, můžete použít s [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) aktivity. Informace o tom, jak získat přístup **vyberte pravidlo nastavené** dialogové okno, najdete v části [postupy: vytvoření aktivitě PolicyActivity pravidlo sady (zastaralé)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Toto téma popisuje, jak používat **vyberte pravidlo nastavené** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
 
- Následující tabulka popisuje prvky uživatelského rozhraní (UI) **vyberte pravidlo nastavené** dialogové okno.
+**Vyberte pravidlo nastavené** dialogové okno slouží k výběru sadu pravidel, můžete použít s [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) aktivity. Informace o tom, jak získat přístup **vyberte pravidlo nastavené** dialogové okno, najdete v části [postupy: vytvoření aktivitě PolicyActivity pravidlo sady (zastaralé)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+
+Následující tabulka popisuje prvky uživatelského rozhraní (UI) **vyberte pravidlo nastavené** dialogové okno.
 
 |Prvek uživatelského rozhraní (UI)|Popis|
 |----------------|-----------------|
@@ -37,7 +40,7 @@ Toto téma popisuje, jak používat **vyberte pravidlo nastavené** dialogové o
  Další informace o tom, jak vytvářet a upravovat sady pravidel najdete v tématu [pravidlo nastavte dialogové okno Editor (zastaralé)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
-> Pravidla editoru starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] používané cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] nepodporuje cílení na více verzí.
+> Editor pravidla starší verzi Návrháře pracovního postupu, který se používá cílit na rozhraní .NET Framework verze 3.5 nebo WinFX nepodporuje cílení na více verzí.
 
  Další informace o podmínkách najdete v tématu [podmínky použití v pracovních postupech](http://go.microsoft.com/fwlink?LinkID=65009).
 

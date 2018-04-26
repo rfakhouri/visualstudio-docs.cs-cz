@@ -1,5 +1,5 @@
 ---
-title: Vytvoření výkonu webu a zatížení testovacího projektu v sadě Visual Studio | Microsoft Docs
+title: Vytvoření výkonu webu a zatížení testovacího projektu v sadě Visual Studio
 ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -7,12 +7,13 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dbd89b92ec3ca5059fbbf91680db660825cdec8f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Rychlý úvod: Vytvoření projektu testování zatížení
 
@@ -43,7 +44,7 @@ V této části vytvoříme projekt testu zatížení C#. Testovacího projektu 
 
    **Nový projekt** otevře se dialogové okno.
 
-1. V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná** a **Visual C#**a pak vyberte **Test** kategorie. Vyberte **výkonu webu a zatížení testovacího projektu** šablony.
+1. V **nový projekt** dialogové okno, rozbalte seznam **nainstalovaná** a **Visual C#** a pak vyberte **Test** kategorie. Vyberte **výkonu webu a zatížení testovacího projektu** šablony.
 
    ![Výkon webové a zatížení testovací šablona projektu](media/web-perf-load-test-project-template.png)
 

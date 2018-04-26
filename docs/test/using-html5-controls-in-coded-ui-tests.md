@@ -1,6 +1,7 @@
 ---
-title: Použití ovládacích prvků HTML5 v programových testů uživatelského rozhraní v sadě Visual Studio | Microsoft Docs
+title: Použití ovládacích prvků HTML5 v programových testů uživatelského rozhraní v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b440ce0a9f9cf935020ca7ddf0cf392a0d47ad54
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 918a2087635b88e018234f4c5dddff5e1f5f45d5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Použití ovládacích prvků HTML5 v programových testech UI
 
@@ -23,10 +24,12 @@ Programové testy uživatelského rozhraní zahrnují podporu pro některé z ov
 -   Visual Studio Enterprise
 
 > [!WARNING]
->  Ve verzích před Internet Explorer 10 bylo možné spustit programové testy uživatelského rozhraní v porovnání se u procesu aplikace Internet Explorer vyšší úrovni oprávnění. Při spuštění programových testů uživatelského rozhraní na Internet Explorer 10, programového testu uživatelského rozhraní a proces aplikace Internet Explorer musí být na stejné úrovni oprávnění. To je kvůli bezpečnější AppContainer funkce v Internet Exploreru 10.
+> Ve verzích před Internet Explorer 10 bylo možné spustit programové testy uživatelského rozhraní v porovnání se u procesu aplikace Internet Explorer vyšší úrovni oprávnění. Při spuštění programových testů uživatelského rozhraní na Internet Explorer 10, programového testu uživatelského rozhraní a proces aplikace Internet Explorer musí být na stejné úrovni oprávnění. To je kvůli bezpečnější AppContainer funkce v Internet Exploreru 10.
+
 
 > [!WARNING]
->  Pokud vytvoříte programového testu uživatelského rozhraní v Internet Exploreru 10, nemusí být možné ji spustit pomocí aplikace Internet Explorer 9 nebo Internet Explorer 8. Je to proto, že Internet Explorer 10 obsahuje ovládacích prvků HTML5 například zvuk, Video, ProgressBar a posuvníku. Tyto ovládací prvky jazyka HTML5 nejsou rozpoznány aplikací Internet Explorer 9 nebo Internet Explorer 8. Podobně váš programový test UI pomocí aplikace Internet Explorer 9 může zahrnovat některé ovládací prvky jazyka HTML5, které aplikace Internet Explorer 8 nerozpozná.
+> Pokud vytvoříte programového testu uživatelského rozhraní v Internet Exploreru 10, nemusí být možné ji spustit pomocí aplikace Internet Explorer 9 nebo Internet Explorer 8. Je to proto, že Internet Explorer 10 obsahuje ovládacích prvků HTML5 například zvuk, Video, ProgressBar a posuvníku. Tyto ovládací prvky jazyka HTML5 nejsou rozpoznány aplikací Internet Explorer 9 nebo Internet Explorer 8. Podobně váš programový test UI pomocí aplikace Internet Explorer 9 může zahrnovat některé ovládací prvky jazyka HTML5, které aplikace Internet Explorer 8 nerozpozná.
+
 
 ## <a name="supported-html5-controls"></a>Podporované HTML5 ovládací prvky
  Programové testy uživatelského rozhraní zahrnují podporu pro ověření následující ovládacích prvků HTML5, záznam a přehrávání:
@@ -80,7 +83,8 @@ string Volume
  **Vlastnosti filtrů:** vlastnosti filtru pro `HtmlAudio` jsou `Src`, `Class`, `ControlDefinition` a `TagInstance`.
 
 > [!NOTE]
->  Může být významné množství času pro hledání a pozastavení. Při přehrávání, bude programového testu UI počkejte okamžik v `(TimeSpan)` před pauzou zvukovém souboru. Pokud pomocí některé zvláštní okolnosti uplynutí zadané doby. před stiskne příkaz pozastavit, bude vyvolána výjimka.
+> Může být významné množství času pro hledání a pozastavení. Při přehrávání, bude programového testu UI počkejte okamžik v `(TimeSpan)` před pauzou zvukovém souboru. Pokud pomocí některé zvláštní okolnosti uplynutí zadané doby. před stiskne příkaz pozastavit, bude vyvolána výjimka.
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Video ovládací prvek
  **Video ovládacího prvku:** akce v ovládacím prvku HTML5 Video správně zaznamenána a přehrání.
@@ -110,7 +114,8 @@ string VideoWidth
  **Vlastnosti filtrů:** vlastnosti filtru pro `HtmlVideo` jsou `Src`, `Poster`, `Class`, `ControlDefinition` a `TagInstance`.
 
 > [!NOTE]
->  Pokud rewind nebo rychlé převinutí vpřed videa pomocí-30s nebo +30s popisky, to být agregován požadovat příslušnou dobu.
+> Pokud rewind nebo rychlé převinutí vpřed videa pomocí-30s nebo +30s popisky, to být agregován požadovat příslušnou dobu.
+
 
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Posuvník
  **Posuvník:** akce na ovládacího prvku posuvník HTML5 správně zaznamenána a přehrání.

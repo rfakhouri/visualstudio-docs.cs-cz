@@ -1,7 +1,9 @@
 ---
-title: Ladění pracovních starší | Microsoft Docs
+title: Návrhář postupu provádění – ladění pracovních starší verze
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - workflows, debugging
 - debugging, workflows
@@ -12,15 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2710266446e285d9107f4450c09ffe2e8e87e090
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 33a8358c5d62b938fc64d608c9b4546ab1745aaa
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="debugging-legacy-workflows"></a>Ladění pracovních starší verze
 
-Pokud používáte starší verzi návrháře pracovních postupů Windows v [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] k sestavení [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace target.NET Framework 3.0 nebo 3.5, můžete nastavení zarážek, připojení k procesům a zkoumání ladění vaše pracovní postupy jako jakýkoli jiný program vláken a zásobníku volání. Máte také možnost ladění vzdáleně.
+Pokud používáte starší verzi návrháře pracovních postupů Windows v sadě Visual Studio k vytvoření aplikace Windows Workflow Foundation (WF), že target.NET Framework 3.0 nebo 3.5, můžete ladit vaše pracovní postupy jako libovolné jiné programy nastavení zarážek, připojení k procesům, a prozkoumání vláken a zásobníku volání. Máte také možnost ladění vzdáleně.
 
 > [!NOTE]
 > Pokud bylo nainstalovat a odinstalovat na váš počítač více verzí sady Visual Studio, WF3 ladění neúspěšně s jedním z existují následující dvě možnosti:
@@ -32,7 +34,7 @@ Pokud používáte starší verzi návrháře pracovních postupů Windows v [!I
 >
 > Pokud některý z těchto scénářů dojde při ladění v rozhraní .NET Framework 3.0 nebo 3.5 pracovní postupy, provádění a opravit instalaci sady Visual Studio.
 
- [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] se integruje s následující standard [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladění windows:
+ Windows Workflow Foundation integruje se službou windows následující ladění standardní sady Visual Studio:
 
 -   **Breakpoint –**: funguje podle očekávání, můžete však zadat aktivitu pro název funkce.
 

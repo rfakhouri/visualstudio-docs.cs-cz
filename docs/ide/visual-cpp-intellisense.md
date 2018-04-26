@@ -1,20 +1,19 @@
 ---
-title: Visual C++ IntelliSense | Microsoft Docs
-ms.custom: ''
+title: Visual C++ IntelliSense
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfebee340a880cdef1b8721bd5f57e3be5db8e47
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
@@ -104,4 +103,4 @@ Ve výchozím nastavení jedním souborem IntelliSense pouze používá standard
 
 ## <a name="see-also"></a>Viz také
 
-[Používání atributu IntelliSense](../ide/using-intellisense.md)
+- [Používání atributu IntelliSense](../ide/using-intellisense.md)

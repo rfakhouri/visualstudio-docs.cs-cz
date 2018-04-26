@@ -1,7 +1,9 @@
 ---
-title: Vývoj aplikací pomocí návrháře pracovních postupů | Microsoft Docs
+title: Vývoj aplikací pomocí návrháře pracovních postupů
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -16,34 +18,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c48e7b43b23e7bfe8887f437cc17e6db077c0e4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ecc9e42146bfa7de259551ff1c90d27201db5725
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Vývoj aplikací pomocí návrháře pracovních postupů
 
-Návrháři pracovních postupů Windows je vizuálního návrháře a ladicí program pro grafické vytváření a ladění [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace v [!INCLUDE[netfx40_long](../workflow-designer/includes/netfx40_long_md.md)] který je hostován v [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] vývojové prostředí. Umožňuje vytvořit aplikace složené pracovního postupu, knihovna aktivit nebo [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] službu pomocí šablony a návrháře aktivit. Další informace o pracovních postupech najdete v tématu [modelu Windows Workflow Foundation &#91;rozhraní .NET Framework 4&#93;](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
+Návrháři pracovních postupů Windows je vizuálního návrháře a ladicí program pro grafické vytváření a ladění aplikace pro Windows Workflow Foundation (WF) v rozhraní .NET Framework 4, který je hostován ve vývojovém prostředí sady Visual Studio 2010. Umožňuje vytvořit aplikace složené pracovního postupu, knihovna aktivit nebo služby Windows Communication Foundation (WCF) pomocí šablony a návrháře aktivit. Další informace o pracovních postupech najdete v tématu [modelu Windows Workflow Foundation &#91;rozhraní .NET Framework 4&#93;](http://msdn.microsoft.com/Library/9a23ea6b-d600-483e-89cd-8889cfec5f66).
 
- Toto jsou některé nové funkce návrhu, které nastavit tuto novou verzi [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] vedle starších verzí [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]:
+ Tady jsou některé nové funkce návrhu, které nastavit tuto novou verzi návrháře pracovních postupů vedle starších verzí návrháře pracovních postupů:
 
--   [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Je sestaven pomocí [!INCLUDE[avalon1](../workflow-designer/includes/avalon1_md.md)]. To vylepšuje možnosti Návrhář aktivity a zvyšuje výkon pro rozsáhlé a složité pracovní postupy.
+-   Návrhář postupu provádění vytvořená s využitím Windows Presentation Foundation (WPF). To vylepšuje možnosti Návrhář aktivity a zvyšuje výkon pro rozsáhlé a složité pracovní postupy.
 
 -   Vlastní aktivity jsou nyní navrženy s [!INCLUDE[avalon2](../workflow-designer/includes/avalon2_md.md)], použití XAML a programovací model pro vytváření návrháře aktivit je jednodušší.
 
 -   Vývojový diagram aktivity byl implementován, takže můžete vizualizovat toku programu pomocí známých vývojový diagram modelování styl.
 
--   [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Má nové proměnné návrháře umožňující deklarace a obor proměnné v rámci vaše pracovní postupy, je vytvoření vazby na aktivity.
+-   Návrhář postupu provádění má nové proměnné návrháře umožňující deklarace a obor proměnné v rámci vaše pracovní postupy, vazba je pro aktivity.
 
--   V [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)], [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] nabízí úplné funkce IntelliSense, při vytváření výrazy jazyka Visual Basic v rámci vaší [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] pracovních postupů.
+-   V sadě Visual Studio 2010 návrháře pracovních postupů nabízí úplné funkce IntelliSense, při vytváření výrazy jazyka Visual Basic v rámci vaše pracovní postupy v rozhraní .NET Framework 4.
 
 -   Zkušenosti s laděním teď zasahuje do XAML, abyste mohli nastavit zarážky ve vaší definice pracovního postupu XAML a ke kroku do kódu XAML v modul runtime, který poskytuje podobné jako v spravovaného kódu.
 
--   Opětovné hostování [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] mimo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] je výrazně jednodušší porovnání s předchozími verzemi, současnosti vyžaduje jenom pár řádků kódu.
+-   Opětovného hostování návrháře pracovních postupů mimo Visual Studio je výrazně jednodušší porovnání s předchozími verzemi, současnosti vyžaduje jenom pár řádků kódu.
 
 -   Nové <xref:System.Activities.Statements.Flowchart> aktivita a její [vývojový diagram](../workflow-designer/flowchart-activity-designer.md) umožňují vizualizovat vaše toku programu pomocí známých vývojový diagram modelování stylu.
 
--   Zasílání zpráv aktivity vylepšily, což umožňuje zapsat plně deklarativního (žádný kód) [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] služby.
+-   Zasílání zpráv aktivity vylepšily, což umožňuje zapsat plně deklarativního (žádný kód) služby Windows Communication Foundation (WCF).
 
 -   **Přidat odkaz na službu...**  funkce vám umožní generovat aktivity, automaticky které přístup k webovým službám.

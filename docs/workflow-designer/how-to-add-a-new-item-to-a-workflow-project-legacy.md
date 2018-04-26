@@ -1,7 +1,9 @@
 ---
-title: 'Postupy: Přidání nové položky do projektu pracovního postupu (zastaralé) | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: Přidání nové položky do projektu pracovního postupu (zastaralé)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - sequential workflows, adding to workflow projects
 - workflows, adding new items
@@ -13,16 +15,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1699b3f2d16bb481a7efb744eed58d395dbc8773
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d6e9607f4924057568849fd7eabd4567130dc2f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Postupy: Přidání nové položky do projektu pracovního postupu (zastaralé)
-Po vytvoření pracovního postupu projekt pomocí starší verze návrháře pracovních postupů Windows poskytované [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] , která se zaměřuje buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], můžete přidat [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] položky a jiných známým rozhraním [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] položky mají vaše projekt.
 
- Následující tabulka uvádí [!INCLUDE[wf2](../workflow-designer/includes/wf2_md.md)] položky, které můžete přidat do projektu pracovního postupu.
+Po vytvoření projektu pracovního postupu pomocí starší verze poskytnuté Návrháři pracovních postupů Windows pomocí sady Visual Studio 2010, která používá verzi rozhraní .NET Framework 3.5 nebo WinFX, můžete přidat položky Windows Workflow Foundation (WF) a dalších známých Visual Studio položky do projektu.
+
+Následující tabulka uvádí položky modelu Windows Workflow Foundation, které můžete přidat do projektu pracovního postupu.
 
 |Položka|Popis|
 |----------|-----------------|
@@ -33,7 +36,7 @@ Po vytvoření pracovního postupu projekt pomocí starší verze návrháře pr
 |Stav počítače pracovního postupu (kód)|Stav počítače pracovního postupu s definice pracovního postupu v kódu návrháře kódu souboru a uživatele v samostatném souboru kódu.|
 |Stav počítače pracovního postupu (s oddělení kódu)|Stav počítače pracovního postupu s definice pracovního postupu, vyjádřené jako pracovní postup kódu značek a uživatele v samostatném souboru kódu.|
 
-### <a name="to-add-a-new-item-to-a-workflow-project"></a>Chcete-li přidat novou položku do projektu pracovního postupu
+## <a name="to-add-a-new-item-to-a-workflow-project"></a>Chcete-li přidat novou položku do projektu pracovního postupu
 
 1.  Na **projektu** nabídky, klikněte na tlačítko **přidat novou položku**.
 

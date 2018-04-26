@@ -1,6 +1,6 @@
 ---
 title: Správa projektů v jazyce Python aplikace
-description: Vysvětlující účel projekty v sadě Visual Studio, ukazuje, jak vytvořit a spravovat projekty pro kód Python a popisuje jiný projekt šablony dostupné pro jazyk Python.
+description: Účelem projekty v sadě Visual Studio, jak vytvořit a spravovat projekty pro kód Python a jiný projekt šablony dostupné pro jazyk Python.
 ms.date: 03/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7dcefe4a9d303c6d52fa88f478dc59c9c2cafe3d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f7425755f72929cbf2574d6420d9c2ec4c62dc20
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="python-projects"></a>Projekty Pythonu
+# <a name="python-projects-in-visual-studio"></a>Python projekty v sadě Visual Studio
 
 Aplikace Python jsou obvykle definovány pomocí pouze složky a soubory, ale může být tato struktura složitá, jak je aplikace, se zvětšit a případně zahrnují automaticky generovaný soubory JavaScript pro webové aplikace a tak dále. Projekt sady Visual Studio pomáhá spravovat Tato složitost. Projekt ( `.pyproj` souboru) identifikuje všechny zdroje a soubory obsahu přidružené k projektu, obsahuje informace o sestavení pro každý soubor, udržuje informace o integraci se systémy správy zdrojového kódu a pomáhá uspořádat vaší aplikace do logické součásti.
 

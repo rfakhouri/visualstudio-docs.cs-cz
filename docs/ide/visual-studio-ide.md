@@ -1,7 +1,7 @@
 ---
-title: Přehled Visual Studio 2017 | Microsoft Docs
-ms.custom: ''
+title: Přehled Visual Studio 2017
 ms.date: 02/05/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 author: gewarren
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6525b9d0bd0d5b394f09f0acd01b40a73bfc3bf2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 786077e4d02a430e78fe91aa1c405307325331eb
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Přehled Visual Studio IDE
 
@@ -83,7 +83,7 @@ Visual Studio je nyní jednodušší než kdy dřív. Modulární instalační p
 
 Další informace o nastavení v systému Visual Studia, najdete v části [nainstalovat Visual Studio 2017](../install/install-visual-studio.md). Podle pokynů pro [vytváření program](#create-a-program), je nutné vybrat **vývoj pro různé platformy .NET Core** zatížení během instalace.
 
-![Instalační program sady Visual Studio](../ide/media/overview-net-core-workload.png)
+![Instalační program pro Visual Studio](../ide/media/overview-net-core-workload.png)
 
 ## <a name="sign-in"></a>Přihlásit se
 
@@ -97,7 +97,7 @@ Další informace o něco jeden vhodný způsob je pro použití! Umožňuje pod
 
   ![Soubor > Nový projekt v řádku nabídek](../ide/media/VSIDE_Tour_NewProject1.png)
 
-1. **Nový projekt** dialogové okno zobrazí několik šablon projektu. Vyberte **.NET Core** kategorii v **Visual C#**a potom zvolte **konzolové aplikace (.NET Core)** šablony. V **název** textové pole, zadejte "Hello World". Vyberte **OK** tlačítko.
+1. **Nový projekt** dialogové okno zobrazí několik šablon projektu. Vyberte **.NET Core** kategorii v **Visual C#** a potom zvolte **konzolové aplikace (.NET Core)** šablony. V **název** textové pole, zadejte "Hello World". Vyberte **OK** tlačítko.
 
   ![Šablony aplikace .NET core](../ide/media/overview-new-project-dialog.png)
 

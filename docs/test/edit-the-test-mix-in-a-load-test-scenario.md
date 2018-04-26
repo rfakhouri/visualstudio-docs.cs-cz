@@ -1,5 +1,5 @@
 ---
-title: Poměr testů pro scénáře zátěžového testu v sadě Visual Studio | Microsoft Docs
+title: Poměr testů pro scénáře zátěžového testu v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,13 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9c7f0cb4c25c99c7ab68400d63e1ec52253a5f61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 228805d37f24e19a83b141ad2312ab60c29d5cf0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Úpravy poměru testů k určení, které výkonnosti webu, částí a programové testy uživatelského rozhraní mají být zahrnuty scénáře zátěžového testu
 
@@ -77,12 +78,14 @@ Pomocí editoru zátěžových testů, můžete přidat další výkon webové a
  **Distribuovat** tlačítko se používá k rozdělení procenta rovnoměrně mezi všechny položky. Například pokud máte tři položky, výběr **distribuovat** nastaví procentní hodnoty 34, 33 a 33.
 
 > [!WARNING]
->  **Distribuovat** tlačítko přepíše všechny položky, které jsou zamčené.
+> **Distribuovat** tlačítko přepíše všechny položky, které jsou zamčené.
+
 
  Je také možné zadejte procentní hodnoty přímo do **%** sloupec místo pomocí posuvníků. Pokud zadáte hodnotu v procentech přímo, nebude automaticky upravte ostatní položky.
 
 > [!NOTE]
->  Posuvníků jsou zakázané, když celkové nepřidá až o 100 %, nebo při procentní hodnoty do **%** sloupce jsou desetinných míst.
+> Posuvníků jsou zakázané, když celkové nepřidá až o 100 %, nebo při procentní hodnoty do **%** sloupce jsou desetinných míst.
+
 
  Když ručně zadáte procentní hodnoty, měli byste si ověřit, že součet všech položek je 100 %. Při ukládání kombinaci, pokud součet není 100 %, vyzve tak, aby přijímal procentní hodnoty, jako jsou, nebo se vrátit a jejich nastavení. Pokud zvolíte možnost je přijmout, protože se jedná o, bude poměrně rozložen na 100 %.  Například pokud máte dvě položky a je ručně nastavte na 80 % a 40 %, první položka bude nastavena pro 66.67 % (80 dělený 120) a druhá položka bude nastavena pro 33,33 % (40 dělený 120).
 

@@ -1,8 +1,9 @@
 ---
-title: Používání tříd Assert pro testování v sadě Visual Studio částí | Microsoft Docs
+title: Používání tříd Assert pro jednotku testování v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Assert classes
 - Assert statements
@@ -13,17 +14,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ff40f25e9beffa848185fe2c1f95df96928543d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2d56477822fa2d965902d9442d47e2c3ab24d656
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-the-assert-classes"></a>Používání tříd Assert
 
 Pomocí tříd Assert oboru názvů UnitTestingFramework ověřte specifické funkce. Metoda testování částí uplatňuje kód metody ve vašem kódu vývoj, ale sestavy správnost kódu na chování, pouze pokud zahrnete Assert – příkazy.
 
 ## <a name="kinds-of-asserts"></a>Typy z vyhodnotí
+
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> Obor názvů obsahuje několik druhů tříd Assert:
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
@@ -47,7 +49,7 @@ Pomocí tříd Assert oboru názvů UnitTestingFramework ověřte specifické fu
  AssertInconclusiveException je vyvolána při každém testu vytvoří výsledek Inconclusive. Obvykle přidejte příkaz Assert.Inconclusive do testu, stále můžete pracujete se indikovat, že ještě není připraven ke spuštění.
 
 > [!NOTE]
->  Alternativní strategie by k označení test, který není připraven ke spuštění s atributem ignorovat. To má však nevýhodou, že nelze snadno vygenerovat sestavu na počet testů, že jste opustili k implementaci.
+> Alternativní strategie je označit test, který není připraven ke spuštění s atributem ignorovat. To má však nevýhodou, že nelze snadno vygenerovat sestavu na počet testů, že jste opustili k implementaci.
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
 

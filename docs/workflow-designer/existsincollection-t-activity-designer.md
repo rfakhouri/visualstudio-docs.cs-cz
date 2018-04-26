@@ -1,7 +1,9 @@
 ---
-title: ExistsInCollection&lt;T&gt; Návrhář aktivity | Microsoft Docs
+title: Návrhář postupu provádění - ExistsInCollection&lt;T&gt; Návrhář aktivity
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
@@ -10,24 +12,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6175fdc9c0af417acb8bcfe9d4297172b31a2e3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c5625f42489752647da57fad9956cff8c64b8f5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="existsincollectionlttgt-activity-designer"></a>ExistsInCollection&lt;T&gt; Návrhář aktivity
+# <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > Návrhář aktivity
+
 **ExistsInCollection\<T >** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.ExistsInCollection%601> aktivity.
 
-## <a name="the-existsincollectiont-activity"></a>ExistsInCollection < T\> aktivity
+## <a name="the-existsincollectiont-activity"></a>ExistsInCollection\<T > aktivity
  <xref:System.Activities.Statements.ExistsInCollection%601> Aktivity Určuje, zda zadaná položka existuje v určité kolekci.
 
 ### <a name="using-the-existsincollectiont-activity-designer"></a>Pomocí ExistsInCollection\<T > Návrhář aktivity
- **ExistsInCollection\<T >** Návrhář aktivity naleznete v **kolekce** kategorii **sada nástrojů**, což je dostat kliknutím  **Sada nástrojů** kartě [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+ **ExistsInCollection\<T >** Návrhář aktivity naleznete v **kolekce** kategorii **sada nástrojů**, což je dostat kliknutím  **Sada nástrojů** karta Návrháře pracovního postupu (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **ExistsInCollection\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kdekoli aktivity jsou obvykle umístěny, jako například uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.ExistsInCollection%601> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z ExistsInCollection < Int32\>. (Ve výchozím nastavení, *TypeArgument* je **Int32**. Ho můžete změnit v tabulce vlastností.)  <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **ExistsInCollection < T\>**  Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností. Ostatní vlastnosti musí být upravit na mřížku vlastností.
+ **ExistsInCollection\<T >** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.ExistsInCollection%601> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z ExistsInCollection < Int32\>. (Ve výchozím nastavení, *TypeArgument* je **Int32**. Ho můžete změnit v tabulce vlastností.)  <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **ExistsInCollection < T\>**  Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností. Ostatní vlastnosti musí být upravit na mřížku vlastností.
 
-### <a name="the-existsincollectiont-properties"></a>ExistsInCollection < T\> vlastnosti
+### <a name="the-existsincollectiont-properties"></a>ExistsInCollection\<T > Vlastnosti
  Následující tabulce je zobrazena <xref:System.Activities.Statements.ExistsInCollection%601> vlastnosti a popisuje, jak se používají v návrháři.
 
 |Název vlastnosti|Požadováno|Použití|

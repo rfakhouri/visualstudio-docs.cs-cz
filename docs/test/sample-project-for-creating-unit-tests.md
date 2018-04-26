@@ -1,8 +1,9 @@
 ---
-title: Ukázkový projekt testů jednotek v sadě Visual Studio | Microsoft Docs
+title: Ukázkový projekt testů jednotek v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
@@ -11,13 +12,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46128b02e98e8fe20b16cc4a858a8782649f3f3d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f6ab04990292715932c652e2e275787447761ca
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="sample-project-for-creating-unit-tests"></a>Ukázkový projekt testování částí
+# <a name="sample-project-for-creating-unit-tests"></a>Ukázkový projekt testů jednotek
 
 Tento ukázkový kód je určen pro použití v následující kurzy:
 
@@ -124,11 +125,11 @@ namespace BankAccountNS
 
 / * Společností, organizací, produktů, názvů domén, e-mailové adresy, loga, osoby, místa a události použité v ukázkách jsou smyšlené. Žádné spojení se skutečnou společností, organizace, produktu, název domény, e-mailovou adresu, logem, osoba, místech nebo události je určený nebo událostmi. \*/
 
-## <a name="working-with-the-code"></a>Práce s kódem
+## <a name="working-with-the-code"></a>Práce s kódem
 
 Pro práci s tímto kódem, musíte nejprve vytvořit projekt pro něj v sadě Visual Studio. Postupujte podle kroků v části "Příprava návodu" [návod: vytváření a spuštěné testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="see-also"></a>Viz také
 
-- [Návod: Vytváření a spouštění testování částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Návod: Vytváření a spouštění testů částí pro spravovaný kód](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 - [Návod: použití nástroje testů z příkazového řádku](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

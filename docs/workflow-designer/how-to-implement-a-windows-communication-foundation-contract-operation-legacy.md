@@ -1,25 +1,28 @@
 ---
-title: 'Postupy: implementace Windows Communication Foundation kontrakt operace (zastaralé) | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: implementace Windows Communication Foundation kontrakt operace (zastaralé)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: d6aeb20e-fac8-4a9d-bd26-ae78bef96b41
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71bf4e4e6f5abc1d2984362396f21f3c613de795
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b069d8ca8c1adb72e2869eb59644e8abeff14ae
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Postupy: implementace Windows Communication Foundation kontrakt operace (zastaralé)
-Toto téma popisuje, jak implementovat [!INCLUDE[indigo1](../workflow-designer/includes/indigo1_md.md)] smlouvy operace pomocí starší verze návrháře pracovních postupů Windows, která je cílena [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Po přetahování **ReceiveActivity** aktivity z panelu nástrojů na plochu návrháře pracovního postupu, buď vytvoříte novou [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] smlouvy nebo importovat existující smlouvy a implementovat operace. Vyberte nebo vytvořte smlouva a jeho operací prostřednictvím [zvolte operaci dialogové okno (zastaralé)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+Toto téma popisuje, jak implementovat operaci kontraktu Windows Communication Foundation (WCF) pomocí návrháře pracovních postupů starší verze Windows s cílem rozhraní .NET Framework verze 3.5 nebo WinFX.
 
-### <a name="to-implement-a-wcf-contract-operation"></a>K implementaci kontraktu operace s WCF
+Po přetahování **ReceiveActivity** aktivity z panelu nástrojů na plochu návrháře pracovního postupu, buď vytvoříte novou [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] smlouvy nebo importovat existující smlouvy a implementovat operace. Vyberte nebo vytvořte smlouva a jeho operací prostřednictvím [zvolte operaci dialogové okno (zastaralé)](../workflow-designer/choose-operation-dialog-box-legacy.md).
+
+## <a name="to-implement-a-wcf-contract-operation"></a>K implementaci kontraktu operace s WCF
 
 1.  Dvakrát klikněte **ReceiveActivity** aktivity v Návrháři nebo klikněte na tlačítko se třemi tečkami vedle **ServiceOperationInfo** vlastnost v **vlastnosti** podokně.
 

@@ -1,10 +1,9 @@
 ---
-title: Obecné, prostředí, dialogové okno Možnosti | Microsoft Docs
-ms.custom: ''
+title: Obecné, prostředí, dialogové okno Možnosti
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-general
-ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -28,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c427752fa1b89acb2fa55afc7acd8c4535686c37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f12249cc8d0e8bd8396e1e1ebbbfefeddbb22b60
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="general-environment-options-dialog-box"></a>Obecné, prostředí, dialogové okno Možnosti
 
@@ -67,17 +66,27 @@ Použije hardwarovou akceleraci grafiky, pokud je k dispozici, nikoli akcelerace
 
 ## <a name="other"></a>Ostatní
 
-**Položky zobrazené v nabídce okno** přizpůsobí počet windows, které se zobrazují v seznamu Windows **okno** nabídky. Zadejte číslo mezi 1 a 24. Ve výchozím nastavení počet je 10.
+**V nabídce okno zobrazené položky**
 
-**Položky, které jsou uvedené v nedávno použity seznamy** přizpůsobí počet nedávno použité projekty a soubory, které se zobrazují na **souboru** nabídky. Zadejte číslo mezi 1 a 24. Ve výchozím nastavení počet je 10. Toto je snadný způsob, jak načíst nedávno použité projekty a soubory.
+Přizpůsobí počet windows, které se zobrazují v seznamu Windows **okno** nabídky. Zadejte číslo mezi 1 a 24. Ve výchozím nastavení počet je 10.
 
-**Zobrazit stavový řádek** zobrazí stavový řádek. Stavový řádek je umístěn v dolní části okna IDE a zobrazí informace o průběhu probíhající operace.
+**Položky zobrazené v seznamy naposledy použitých**
 
-**Tlačítko Zavřít ovlivňuje pouze okno active nástroje** Určuje, kdy **Zavřít** po kliknutí na tlačítko, panel nástrojů, který má právě fokus, je uzavřený a ne všechny pouze nástroj Windows v sadě ukotveného. Ve výchozím nastavení je tato možnost vybrána.
+Přizpůsobí počet nedávno použité projekty a soubory, které se zobrazují na **souboru** nabídky. Zadejte číslo mezi 1 a 24. Ve výchozím nastavení počet je 10. Toto je snadný způsob, jak načíst nedávno použité projekty a soubory.
 
-**Skrýt tlačítko automaticky ovlivňuje pouze okno nástroje active** Určuje, kdy **skrýt automaticky** po kliknutí na tlačítko, pouze panel nástrojů, který má právě fokus, je skrytý automaticky a není všechna okna nástrojů v sadě ukotveného. Ve výchozím nastavení tato možnost není vybraná.
+**Zobrazit stavový řádek**
+
+Zobrazí stavový řádek. Stavový řádek je umístěn v dolní části okna IDE a zobrazí informace o průběhu probíhající operace.
+
+**Tlačítko Zavřít ovlivňuje pouze okno active nástroje**
+
+Určuje, kdy **Zavřít** po kliknutí na tlačítko, panel nástrojů, který má právě fokus, je uzavřený a ne všechny pouze nástroj Windows v sadě ukotveného. Ve výchozím nastavení je tato možnost vybrána.
+
+**Skrýt tlačítko automaticky ovlivňuje pouze okno active nástroje**
+
+Určuje, kdy **skrýt automaticky** po kliknutí na tlačítko, pouze panel nástrojů, který má právě fokus, je skrytý automaticky a není všechna okna nástrojů v sadě ukotveného. Ve výchozím nastavení tato možnost není vybraná.
 
 ## <a name="see-also"></a>Viz také
 
-[Dialogové okno Možnosti prostředí](../../ide/reference/environment-options-dialog-box.md)
-[přizpůsobení rozložení oken](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Prostředí, dialogové okno Možnosti](../../ide/reference/environment-options-dialog-box.md)
+- [Přizpůsobení rozložení oken](../../ide/customizing-window-layouts-in-visual-studio.md)

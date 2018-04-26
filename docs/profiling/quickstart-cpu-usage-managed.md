@@ -1,6 +1,7 @@
 ---
-title: Analyzovat data o využití procesoru (spravovaný kód) | Microsoft Docs
-ms.custom: ''
+title: Analyzovat data o využití procesoru (spravovaný kód)
+description: Měřit výkon aplikace v C# a Visual Basic pomocí diagnostického nástroje využití CPU
+ms.custom: mvc
 ms.date: 12/05/2017
 ms.technology: vs-ide-debug
 ms.topic: quickstart
@@ -12,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: cac26376df6a5e7dc26b55e07fbebe240b1511de
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8381aacf45763a0d2436126957c8443085a563dc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Analyzovat data o využití procesoru v sadě Visual Studio (spravovaný kód)
+# <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Rychlý úvod: Analyzujte data o využití procesoru v sadě Visual Studio (spravovaný kód)
 
 Visual Studio poskytuje mnoho výkonné funkce, které vám pomůžou analyzovat problémy s výkonem v aplikaci. Toto téma poskytuje rychlý způsob, jak další některé základní funkce. Zde podíváme na nástroj, který identifikovat kritická místa výkonu z důvodu vysoké využití procesoru. Diagnostické nástroje jsou podporované pro .NET – vývoj v sadě Visual Studio, včetně ASP.NET a pro vývoj nativní/C++.
 

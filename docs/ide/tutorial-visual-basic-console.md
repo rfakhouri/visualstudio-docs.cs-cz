@@ -1,9 +1,9 @@
 ---
-title: Začínáme s jazykem Visual Basic v sadě Visual Studio | Microsoft Docs
+title: Začínáme s jazykem Visual Basic v sadě Visual Studio
 ms.custom: ''
 ms.date: 12/08/2017
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: tutorial
 ms.devlang: vb
 author: TerryGLee
@@ -13,32 +13,44 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c3fe8351196e11073e836d875e940a9ce17d36
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="getting-started-with-visual-basic-in-visual-studio"></a>Začínáme s jazykem Visual Basic v sadě Visual Studio
+
 V tomto kurzu pro Visual Basic (VB) budete používat Visual Studio k vytvoření a spuštění aplikace několik různých konzoly a prozkoumat některé funkce sady Visual Studio [integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
 
 Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
 
 ## <a name="before-you-begin"></a>Než začnete
+
 Zde je rychlý nejčastější dotazy k vám představí některé klíčové koncepty.
+
 ### <a name="what-is-visual-basic"></a>Novinky jazyka Visual Basic
+
 Visual Basic je bezpečnost typů programovací jazyk, který je navržená tak, aby se snadno Další. Je odvozen od BASIC, což znamená "Začátečníka všechny účely symbolický instrukce kódu".
+
 ### <a name="what-is-visual-studio"></a>Co je Visual Studio?
-Visual Studio je sada integrované vývojové kancelářské nástroje pro vývojáře. Považujte ho za programu, které můžete použít k vytvoření programy a aplikace.  
+
+Visual Studio je sada integrované vývojové kancelářské nástroje pro vývojáře. Považujte ho za programu, které můžete použít k vytvoření programy a aplikace.
+
 ### <a name="what-is-a-console-app"></a>Co je konzola aplikace?
+
 Konzolové aplikace přebírá vstup a také znám jako zobrazí výstup v okně příkazového řádku do konzoly.
+
 ### <a name="what-is-net-core"></a>Co je .NET Core?
+
 .NET core je dalším krokem evolučním rozhraní .NET Framework. Kde rozhraní .NET Framework povoleno, abyste sdílet kódu v rámci programovací jazyky .NET Core přidá možnost sdílet kód napříč platformami. I lépe je open source. (Rozhraní .NET Framework a .NET Core zahrnují knihovny předkompilované funkce, jakož i modul common language runtime (CLR), která funguje jako virtuální počítač, ve kterém pro spouštění vašeho kódu.)
 
 ## <a name="start-developing"></a>Začít vyvíjet
+
 Jste připravení začít vyvíjet? Jdeme!
 
 ### <a name="create-a-project"></a>Vytvoření projektu
+
 Nejdříve vytvoříme projekt aplikace Visual Basic. Typ projektu se dodává s všechny soubory šablony, které budete potřebovat, než jste přidali i nic!
 
 1. Otevřete Visual Studio 2017.
@@ -62,11 +74,13 @@ Pokud nevidíte **konzolové aplikace (.NET Core)** šablony projektu, můžete 
    ![Vývoj pro různé platformy zatížení .NET core v instalačním programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Pomocí nabídky panelu nástrojů
+
 1. Zrušit mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje** > **funkcí a nástrojů pro získání...** .
 
 2. Spustí instalační program Visual Studio. Vyberte **vývoj pro různé platformy .NET Core** zatížení a potom zvolte **upravit**.   
 
 ## <a name="create-a-what-is-your-name-application"></a>Vytvořit aplikaci "Co je název vašeho"
+
 Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom zobrazí společně s datum a čas. Tady je jak:
 
 1. Pokud již není otevřený, otevřete váš *WhatIsYourName* projektu.
@@ -93,6 +107,7 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
 5. Stisknutím libovolné klávesy zavřete okno konzoly.
 
 ## <a name="create-a-calculate-this-application"></a>Vytvořit aplikaci "Vypočítat to"
+
 1. Otevřete Visual Studio 2017 a potom vyberte z panelu horní nabídce **soubor** > **nový** > **projektu...** .
 
 2. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Potom zadejte název souboru *CalculateThis*.  
@@ -123,6 +138,7 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
     ![Okno konzoly zobrazující CaluculateThis aplikaci, která zahrnuje dotazování na jaké akce lze provést.](../ide/media/vb-console-calculate-this.png)
 
 ## <a name="next-steps"></a>Další kroky
+
 Blahopřejeme k dokončení tohoto kurzu! Další i informace o jazyka Visual Basic a Visual Studio IDE, najdete na následujících stránkách.
 
 * [Průvodce jazykem Visual Basic](/dotnet/visual-basic/index)

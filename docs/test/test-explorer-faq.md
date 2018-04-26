@@ -1,6 +1,7 @@
 ---
-title: Visual Studio Průzkumníka testů – nejčastější dotazy | Microsoft Docs
+title: Visual Studio Průzkumníka testů – nejčastější dotazy
 ms.date: 1/15/2018
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,11 +16,11 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 7612f13f71bed42b5ea416a74c50674ac028f42f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 151f60d21914168ea62bdb2d978d93839c8b859b
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio Průzkumníka testů – nejčastější dotazy
 
@@ -86,7 +87,7 @@ Funkce příznaky se používají pro odeslání experimentální nebo nedokonč
 Chcete-li zapnout funkci příznak prostřednictvím příkazového řádku vývojáře Visual Studia, použijte následující příkaz. Změňte cestu k nainstalovaným Visual Studio v počítači a změňte klíč registru pro příznak požadované funkce.
 
 ```shell
-vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise” HKLM FeatureFlags\TestingTools\UnitTesting\HierarchyView Value dword 1
+vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise" HKLM FeatureFlags\TestingTools\UnitTesting\HierarchyView Value dword 1
 ```
 
 > [!NOTE]

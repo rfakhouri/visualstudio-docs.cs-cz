@@ -1,7 +1,9 @@
 ---
-title: Pomocí Návrháře pracovního postupu starší stavu počítače | Microsoft Docs
+title: Návrhář postupu provádění - pomocí Návrháře pracovního postupu starší stav počítače
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - StateFinalizationActivity activity
 - StateActivity activity
@@ -17,16 +19,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16178d2f83ef9cc45ef7007350e30d2b36d6993a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6ad09c2e999d9432b3c4e1062cb3031eb20ff56
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Pomocí Návrháře pracovního postupu starší stav počítače
-Když vytvoříte nový projekt workflow stavu počítače v [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] , která se zaměřuje buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], můžete použít buď **stavu počítače pracovního postupu konzolové aplikace** nebo  **Stav pracovního postupu knihovna počítačů** šablona starší verze projektu. Pokud si zvolíte jednu z těchto šablon projektu stavu počítače, zobrazí se jako návrháře uživatelské rozhraní starší verze návrháře stav počítače. Informace o šablonách projektů starší verze stavu počítače najdete v tématu [postupy: vytvoření stavu počítače pracovního postupu konzolové aplikace (zastaralé)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) a [postupy: vytvoření stavu počítače pracovního postupu knihovny (starší)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
 
- Pracovní postup stavového stroje se skládá ze sady stavy. Jeden stav je označené jako počáteční stav. Každý stav, může přijímat sadu událostí. Založené na události, může být proveden přechod na jiný stav. Pracovní postup stavového stroje může mít do konečného stavu. Když je proveden přechod do konečného stavu, dokončení pracovního postupu.
+Při vytváření nového stavu počítače pracovního postupu projektu v sadě Visual Studio 2010 zacílený rozhraní .NET Framework verze 3.5 nebo WinFX, můžete použít buď **stavu počítače pracovního postupu konzolové aplikace** nebo  **Stav pracovního postupu knihovna počítačů** šablona starší verze projektu. Pokud si zvolíte jednu z těchto šablon projektu stavu počítače, zobrazí se jako návrháře uživatelské rozhraní starší verze návrháře stav počítače. Informace o šablonách projektů starší verze stavu počítače najdete v tématu [postupy: vytvoření stavu počítače pracovního postupu konzolové aplikace (zastaralé)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) a [postupy: vytvoření stavu počítače pracovního postupu knihovny (starší)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+
+Pracovní postup stavového stroje se skládá ze sady stavy. Jeden stav je označené jako počáteční stav. Každý stav, může přijímat sadu událostí. Založené na události, může být proveden přechod na jiný stav. Pracovní postup stavového stroje může mít do konečného stavu. Když je proveden přechod do konečného stavu, dokončení pracovního postupu.
 
 ## <a name="state-machine-designer-views"></a>Návrhář zobrazení stavu počítače
  Návrhář stavu počítače je volného tvaru návrháře, což znamená, že aktivity lze přesunout volně na návrhovou plochu. Návrhář počítač stav má dvě zobrazení: *stavu* zobrazení a *událostmi řízené* zobrazení.

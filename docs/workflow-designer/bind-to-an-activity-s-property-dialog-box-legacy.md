@@ -1,7 +1,9 @@
 ---
-title: Vytvořit vazbu k aktivitě&#39;dialogové okno vlastností s (zastaralé) | Microsoft Docs
+title: Návrhář postupu provádění - vytvořit vazbu k aktivitě&#39;dialogové okno vlastností s (zastaralé)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ActivityBindForm.UI
 helpviewer_keywords:
@@ -12,14 +14,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a799b57169116343f5d83e54ce5bd87dedfd801
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8922864a32c08d8feaed11e530314176557a785f
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Vytvořit vazbu k aktivitě&#39;dialogové okno vlastností s (zastaralé)
-Toto téma popisuje, jak používat **vazby pro vlastnost aktivity** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
+# <a name="bind-to-an-activitys-property-dialog-box-legacy"></a>Vytvořit vazbu na dialogové okno vlastností aktivity (zastaralé)
+
+Toto téma popisuje, jak používat **vazby pro vlastnost aktivity** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
 
  Typ instance vlastnosti závislosti mohou být vázány na jiné aktivity veřejná vlastnost nebo událost. Další informace o vazbě aktivity najdete v tématu [pomocí vlastností závislostí](http://go.microsoft.com/fwlink?LinkID=65007).
 

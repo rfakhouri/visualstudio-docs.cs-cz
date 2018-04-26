@@ -1,7 +1,9 @@
 ---
-title: Funkce pracovního postupu návrháře prostředí | Microsoft Docs
+title: Funkce pracovního postupu návrháře prostředí
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - WFDShellFeatures.UI
 ms.assetid: 14bfe312-9592-408e-92ce-e98585ad16e7
@@ -10,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf7d88b6436ba117b85c2ea6cc423520f9fd873
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4644d9bfa336b85b9ad124751db4f3fb0417475c
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="workflow-designer-shell-features"></a>Funkce pracovního postupu návrháře prostředí
 
@@ -27,7 +29,7 @@ Návrháři pracovních postupů Windows se skládá ze tří hlavních oblastí
  Přehled mapa zobrazuje malé verzi celý aktivity v aktuální kořenové s popisem cesty, včetně všech jejích podřízených a všemi podřízenými rozšířené. Je zobrazení, obdélníku s oranžové ohraničení, který označuje části aktivity zobrazené v editoru. Přetahování rámeček kolem mapu přehledu posune návrháře pracovních postupů a změní zobrazení editoru.
 
 > [!NOTE]
-> [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] Je virtualizované uživatelské rozhraní. Návrháře aktivit jsou vykreslovány pouze v případě potřeby. Část pracovní postup nebylo nikdy řádně na plochu návrháře, část se zobrazí jako bílé na mapu přehledu. Posouvání kolem mapu přehledu úplně nevykresluje pracovního postupu.
+> Návrhář postupu provádění uživatelské rozhraní je virtualizované. Návrháře aktivit jsou vykreslovány pouze v případě potřeby. Část pracovní postup nebylo nikdy řádně na plochu návrháře, část se zobrazí jako bílé na mapu přehledu. Posouvání kolem mapu přehledu úplně nevykresluje pracovního postupu.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Kopírování nebo uložení pracovních jako obrázky
  Pracovní postupy můžete zkopírovat ve formátu rastrového obrázku nebo uložit ve formátu rastrového obrázku nebo vektoru. Kopírování nebo uložení obrázku poskytuje způsob, jak exportovat zobrazení celý aktivity v aktuální kořenové s popisem cesty, včetně všech jejích podřízených a všemi podřízenými rozšířené na jiném programu.
@@ -36,4 +38,4 @@ Návrháři pracovních postupů Windows se skládá ze tří hlavních oblastí
 
 ## <a name="fonts-and-colors"></a>Písma a barev
 
-Písmo použité v [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] uvnitř [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] jsou řízeny písmo prostředí. Barvy zobrazené v [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] změnit, pokud používáte schéma s vysokým kontrastem barvu motivu operačního systému. Je nutné restartovat [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] po provedení změny nastavení písma a barev, než změny se projeví [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)].
+Písma použitá v Návrháři pracovních postupů v sadě Visual Studio 2010 jsou řízeny písmo prostředí. Pokud používáte schéma s vysokým kontrastem barvu motivu operačního systému změnit barev zobrazí v Návrháři pracovních postupů. Visual Studio 2010 je nutné restartovat po provedení změny nastavení písma a barev, než změny se projeví v Návrháři pracovních postupů.

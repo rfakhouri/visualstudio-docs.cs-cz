@@ -1,7 +1,9 @@
 ---
-title: Návrhář aktivity InvokeMethod | Microsoft Docs
+title: Návrhář postupu provádění - InvokeMethod Návrhář aktivity
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
 ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
@@ -10,25 +12,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2e1cbb097d86d0e13ba8581389d7356001ff92
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b612966da1244c745edbe8a5c92b1b300554a388
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invokemethod-activity-designer"></a>Návrhář aktivity InvokeMethod
+
 **InvokeMethod** designer se používá k vytvoření a konfigurace <xref:System.Activities.Statements.InvokeMethod> aktivity.
 
 ## <a name="the-invokemethod-activity"></a>InvokeMethod aktivity
- <xref:System.Activities.Statements.InvokeMethod> Volá veřejná metoda zadaný objekt nebo typu.
+
+<xref:System.Activities.Statements.InvokeMethod> Volá veřejná metoda zadaný objekt nebo typu.
 
 ### <a name="using-the-invokemethod-activity-designer"></a>Pomocí návrháře InvokeMethod aktivity
- **InvokeMethod** Návrhář aktivity naleznete v **primitiv** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů** kartě [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CRTL + ALT + X.)
+ **InvokeMethod** Návrhář aktivity naleznete v **primitiv** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů** kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CRTL + ALT + X.)
 
- **InvokeMethod** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kde je to aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.InvokeMethod> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z InvokeMethod. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **InvokeMethod** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
+ **InvokeMethod** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů, kde ever aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.InvokeMethod> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z InvokeMethod. <xref:System.Activities.Activity.DisplayName%2A> Lze upravit v hlavičce **InvokeMethod** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
 
 ### <a name="the-invokemethod-properties"></a>Vlastnosti InvokeMethod
- Následující tabulce je zobrazena <xref:System.Activities.Statements.InvokeMethod> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravit v tabulce vlastností a některé můžete upravit na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]plochu návrháře.
+ Následující tabulce je zobrazena <xref:System.Activities.Statements.InvokeMethod> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravit v tabulce vlastností a některé můžete upravit na povrchu Designerdesigner pracovního postupu.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|

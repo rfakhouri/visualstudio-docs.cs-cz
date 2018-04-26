@@ -1,5 +1,5 @@
 ---
-title: Webové rozhraní API testu výkonnosti v sadě Visual Studio | Microsoft Docs
+title: Testu výkonnosti webu rozhraní API v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +9,13 @@ ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ed7cbc7375cbf416d82a56c140479925569dad8d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Postupy: Použití rozhraní API testu výkonnosti webu
 
@@ -23,7 +24,8 @@ Můžete napsat kód pro vaše testy výkonnosti webu. Testu výkonnosti webu, k
  Můžete také Web API testu výkonu prostřednictvím kódu programu vytvoříte a uložíte deklarativní testy výkonnosti webu. Chcete-li to provést, použijte <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> a <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> třídy.
 
 > [!TIP]
->  Kontrola pomocí prohlížeče objektů <xref:Microsoft.VisualStudio.TestTools.WebTesting> oboru názvů. Editory jak Visual C# a Visual Basic nabízí podporu technologie IntelliSense pro psaní kódu s použitím třídy v oboru názvů.
+> Kontrola pomocí prohlížeče objektů <xref:Microsoft.VisualStudio.TestTools.WebTesting> oboru názvů. Editory jak Visual C# a Visual Basic nabízí podporu technologie IntelliSense pro psaní kódu s použitím třídy v oboru názvů.
+
 
  Můžete také vytvořit modulů Plugin pro zátěžové testy. Další informace najdete v tématu [postupy: použití rozhraní API testu zatížení](../test/how-to-use-the-load-test-api.md) a [postupy: vytvoření modulu Plugin pro Test zatížení](../test/how-to-create-a-load-test-plug-in.md).
 

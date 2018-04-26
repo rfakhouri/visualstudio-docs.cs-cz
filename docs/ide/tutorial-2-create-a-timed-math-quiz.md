@@ -1,9 +1,9 @@
 ---
-title: 'Tutoriál 2: Vytvoření matematického kvízu | Microsoft Docs'
+title: 'Tutoriál 2: Vytvoření matematického kvízu s časovým limitem'
 ms.custom: ''
 ms.date: 11/04/2016
-ms.technology:
-- vs-acquisition
+ms.prod: visual-studio-dev15
+ms.technology: vs-acquisition
 ms.topic: conceptual
 ms.assetid: d7165d08-ace3-457d-b57d-fb8f80760a6f
 author: TerryGLee
@@ -11,35 +11,35 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56466d91f336be679f2f82919c537a95e352a60d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 55142712972ce5d5fd44e76dbad042daca18edc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriál 2: Vytvoření matematického kvízu s časovým limitem
 V tomto kurzu vytvoříte kvízu, ve kterém příjemce kvízu s časovým limitem musí odpovědět na čtyři náhodné aritmetické úlohy v zadaném čase. Získáte informace o následujících postupech:  
-  
+
 -   Generovat náhodná čísla pomocí `Random` třídy.  
-  
+
 -   Aktivovat události dochází v určitém čase podle **časovače** ovládacího prvku.  
-  
+
 -   Řízení toku programu pomocí `if else` příkazy.  
-  
+
 -   Proveďte základní aritmetické operace v kódu.  
-  
+
  Po dokončení, vaše kvízu bude vypadat jako na následujícím obrázku, s výjimkou s různá čísla.  
-  
+
  ![Matematického kvízu s čtyři problémy](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
 Kvízu s časovým limitem, které vytvoříte v tomto kurzu  
-  
+
  Si můžete stáhnout dokončenou verzi kvízu [dokončení matematického kvízu kurz ukázka](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).  
-  
+
 > [!NOTE]
 >  Tento kurz popisuje, jak Visual C# a Visual Basic, takže zaměřit se na informace, které jsou specifické pro programovací jazyk, který používáte.  
-  
+
 ## <a name="related-topics"></a>Související témata  
-  
+
 |Název|Popis|  
 |-----------|-----------------|  
 |[Krok 1: Vytvořte projekt a přidejte do svého formuláře popisky](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)|Začněte tím, že vytváření projektu, změna vlastností a přidání `Label` ovládací prvky.|  

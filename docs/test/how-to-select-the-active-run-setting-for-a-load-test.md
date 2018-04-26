@@ -1,5 +1,5 @@
 ---
-title: Vyberte nastavení spouštění pro zátěžový Test v sadě Visual Studio | Microsoft Docs
+title: Vyberte nastavení spouštění pro zátěžový Test v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,12 +8,13 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dc521cf8e0218fabd691493fdb65fb46471e05bd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Postupy: Výběr aktivních parametrů spouštění pro zátěžový test
 
@@ -43,7 +44,8 @@ V editoru zátěžových testů aktivní spustit nastavení je identifikován p�
      Spuštění vybraným nastavením stane aktivní a zůstane aktivní, dokud nevyberete jinou spusťte nastavení jako aktivní.
 
 > [!NOTE]
->  Můžete přepsat active spustit nastavení podle nastavení proměnné prostředí s názvem `Test.UseRunSetting=<run setting name>`. To je užitečné v případě spuštění zátěžového testu z příkazového řádku nebo z dávkového souboru. Tímto způsobem můžete vybrat jiné nastavení spuštění bez otevření zátěžový test.
+> Můžete přepsat active spustit nastavení podle nastavení proměnné prostředí s názvem `Test.UseRunSetting=<run setting name>`. To je užitečné v případě spuštění zátěžového testu z příkazového řádku nebo z dávkového souboru. Tímto způsobem můžete vybrat jiné nastavení spuštění bez otevření zátěžový test.
+
 
 ## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>Určení nastavení spuštění z příkazového řádku pro použití
  Můžete přepsat výchozí spusťte nastavení v zátěžovém testu nastavením proměnné prostředí z příkazového řádku:

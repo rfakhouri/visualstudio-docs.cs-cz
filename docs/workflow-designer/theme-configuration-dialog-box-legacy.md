@@ -1,7 +1,9 @@
 ---
-title: Dialogové okno Konfigurace motiv (zastaralé) | Microsoft Docs
+title: Návrhář postupu provádění – dialogové okno Konfigurace motiv (zastaralé)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.ComponentModel.Design.ThemeConfigurationDialog.UI
 helpviewer_keywords:
@@ -13,20 +15,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ec33bbce8ee8ac770607d77918547fdbd705ec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07ae376a09afd73c5744f7d1587c637a4b55410d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="theme-configuration-dialog-box-legacy"></a>Dialogové okno Konfigurace motiv (zastaralé)
-Toto téma popisuje, jak používat **motiv konfigurace** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Motiv definuje barvy popředí a pozadí, styly, ikony a další vizuální prvky pracovního postupu. Motivy pro opakované použití můžete uložit pomocí jiných pracovních postupů.
+Toto téma popisuje, jak používat **motiv konfigurace** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
 
- Vytvoření a úprava motivů pomocí **motiv konfigurace** dialogové okno. Chcete-li otevřít dialogové okno, vyberte **vytvořit nový motiv** na **pracovního postupu** nabídky, nebo klikněte pravým tlačítkem na pracovní postup návrhu plochy a vyberte **vytvořit nový motiv**.
+Motiv definuje barvy popředí a pozadí, styly, ikony a další vizuální prvky pracovního postupu. Motivy pro opakované použití můžete uložit pomocí jiných pracovních postupů.
 
- Následující tabulka popisuje prvky uživatelského rozhraní (UI) **motiv konfigurace** dialogové okno.
+Vytvoření a úprava motivů pomocí **motiv konfigurace** dialogové okno. Chcete-li otevřít dialogové okno, vyberte **vytvořit nový motiv** na **pracovního postupu** nabídky, nebo klikněte pravým tlačítkem na pracovní postup návrhu plochy a vyberte **vytvořit nový motiv**.
+
+Následující tabulka popisuje prvky uživatelského rozhraní (UI) **motiv konfigurace** dialogové okno.
 
 |Prvek uživatelského rozhraní (UI)|Popis|
 |----------------|-----------------|

@@ -1,7 +1,9 @@
 ---
-title: 'Postupy: vytvoření podmínky deklarativní pravidla (zastaralé) | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: vytvoření podmínky deklarativní pravidla (zastaralé)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - declarative rule conditions
 - condition statements, declarative rule conditions
@@ -12,18 +14,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e8b1d1220f11d27ee193e3e82168f4c10558d86
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43b359040256788db240274f43f706b41f01d021
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Postupy: vytvoření podmínky deklarativní pravidla (zastaralé)
-Toto téma popisuje podmínku pravidla pomocí starší verze návrháře pracovních postupů Windows deklarovat s cílem [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Příkaz podmínky se vyhodnocuje **True** nebo **False**. Deklarativní pravidlo podmínku je příkaz podmínky, která je vytvořená pomocí [dialogové okno pravidla podmínku Editor (zastaralé)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) a uložit jako XML s pracovním postupem. Může zahrnovat predikáty, které porovnávají stav pracovního postupu a algebra logická hodnota, které se kombinuje několik predikáty.
+Toto téma popisuje, jak deklarace podmínku pravidla pomocí návrháře pracovních postupů starší verze Windows s cílem rozhraní .NET Framework verze 3.5 nebo WinFX.
 
- Podmínky deklarativní pravidla se používají v níže uvedených aktivit out-of-box modelu Windows Workflow Foundation:
+Příkaz podmínky se vyhodnocuje **True** nebo **False**. Deklarativní pravidlo podmínku je příkaz podmínky, která je vytvořená pomocí [dialogové okno pravidla podmínku Editor (zastaralé)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) a uložit jako XML s pracovním postupem. Může zahrnovat predikáty, které porovnávají stav pracovního postupu a algebra logická hodnota, které se kombinuje několik predikáty.
+
+Podmínky deklarativní pravidla se používají v níže uvedených aktivit out-of-box modelu Windows Workflow Foundation:
 
 -   [Skupina ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -37,7 +40,7 @@ Toto téma popisuje podmínku pravidla pomocí starší verze návrháře pracov
 
 -   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
 
-### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Chcete-li vytvořit podmínku deklarativní pravidla pomocí Editor podmínek pravidla
+## <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Chcete-li vytvořit podmínku deklarativní pravidla pomocí Editor podmínek pravidla
 
 1.  V rámci aktivity **vlastnosti** okně klikněte na tlačítko **podmínku** vlastnost nebo **UntilCondition** vlastnost, v závislosti na aktivity.
 

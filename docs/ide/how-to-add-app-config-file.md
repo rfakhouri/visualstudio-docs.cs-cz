@@ -1,7 +1,7 @@
 ---
-title: Postup přidání souboru app.config na projekt v sadě Visual Studio | Microsoft Docs
-ms.custom: ''
+title: Postup přidání souboru app.config na projekt v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22b9ed31621074e27cfa2d51502e44d508d6b424
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b2182b0175d57d7283e63bdf408249fa7566da00
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Postupy: Přidání konfiguračního souboru aplikace do projektu C#
 
@@ -42,6 +42,6 @@ Při sestavování projektu vývojového prostředí automaticky zkopíruje vaš
 
 ## <a name="see-also"></a>Viz také
 
-[Správa nastavení aplikace (.NET)](../ide/managing-application-settings-dotnet.md)  
-[Schéma konfiguračního souboru (rozhraní .NET Framework)](/dotnet/framework/configure-apps/file-schema/index)  
-[Konfigurace aplikací (rozhraní .NET Framework)](/dotnet/framework/configure-apps/index)
+- [Správa nastavení aplikace (.NET)](../ide/managing-application-settings-dotnet.md)
+- [Schéma konfiguračního souboru (rozhraní .NET Framework)](/dotnet/framework/configure-apps/file-schema/index)
+- [Konfigurace aplikací (rozhraní .NET Framework)](/dotnet/framework/configure-apps/index)

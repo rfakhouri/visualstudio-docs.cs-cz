@@ -1,7 +1,9 @@
 ---
-title: 'Postupy: přidání aktivit do sady nástrojů (zastaralé) | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: přidání aktivit do sady nástrojů (zastaralé)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - Toolbox, adding activities
 - activities, adding to Toolbox
@@ -11,16 +13,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 779735cb1d163db9e7b05e2892d01a991a4a4c2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99a8e1cef2ff5ddd526133355c608fa5218573d1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>Postupy: přidání aktivit do sady nástrojů (zastaralé)
-Při vytváření řešení pracovního postupu pomocí starší verze Návrháře pracovního postupu systému Windows s cílem [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)], vlastní aktivity mohou být přidány do projektu pracovního postupu a jejich designeru uložena v umístění **sada nástrojů** pro snadný přístup. Můžete také přidat aktivity přímo na **sada nástrojů** z dynamická knihovna (DLL).
 
-### <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Chcete-li přidat aktivity do sady nástrojů z knihovny DLL
+Při vytváření řešení pracovního postupu pomocí starší verze návrháře pracovních postupů Windows, která cílí rozhraní .NET Framework verze 3.5 nebo WinFX, vlastní aktivity mohou být přidány do projektu pracovního postupu a jejich designeru uložena v umístění **sada nástrojů** pro snadný přístup. Můžete také přidat aktivity přímo na **sada nástrojů** z dynamická knihovna (DLL).
+
+## <a name="to-add-an-activity-to-the-toolbox-from-a-dll"></a>Chcete-li přidat aktivity do sady nástrojů z knihovny DLL
 
 1.  Klikněte pravým tlačítkem na ploše okno sady nástrojů za **Windows Workflow**a potom klikněte na **zvolit položky**.
 

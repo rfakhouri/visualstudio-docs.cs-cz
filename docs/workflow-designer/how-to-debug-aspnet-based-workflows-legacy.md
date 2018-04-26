@@ -1,7 +1,9 @@
 ---
-title: 'Postupy: ladění pracovních založený na technologii ASP.NET (zastaralé) | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: ladění pracovních založený na technologii ASP.NET (zastaralé)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - ASP.NET, debugging workflows
 - debugging workflows, ASP.NET workflows
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ed3f4f23ff02291df33b2676bdb980de191b281b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bf16a6a88c5d4cd063f1c32ca846031d8b2588d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Postupy: ladění pracovních založený na technologii ASP.NET (zastaralé)
-Toto téma popisuje postup ladění [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]– na základě [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacích, které cílí buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] v Návrháři pracovních postupů starší verze systému Windows.
 
- Můžete ladit starší verze pracovní postupy, které jsou spuštěny v technologii ASP.NET nebo starší verze pracovní postupy, které jsou publikovány jako webovou službu se připojuje k procesu, ve kterém je hostovaná pracovního postupu.
+Toto téma popisuje, jak ladit aplikace založený na technologii ASP.NET Windows Workflow Foundation (WF), že cíl buď rozhraní .NET Framework verze 3.5 nebo WinFX v Návrháři pracovních postupů starší verze systému Windows.
 
-### <a name="to-debug-an-aspnet-based-workflow"></a>Chcete-li ladit pracovním postupu založený na technologii ASP.NET
+Můžete ladit starší verze pracovní postupy, které jsou spuštěny v technologii ASP.NET nebo starší verze pracovní postupy, které jsou publikovány jako webovou službu se připojuje k procesu, ve kterém je hostovaná pracovního postupu.
+
+## <a name="to-debug-an-aspnet-based-workflow"></a>Chcete-li ladit pracovním postupu založený na technologii ASP.NET
 
 1.  Povolení ladění pro aplikace ASP.NET nastavením **debug = true** v souboru web.config.
 

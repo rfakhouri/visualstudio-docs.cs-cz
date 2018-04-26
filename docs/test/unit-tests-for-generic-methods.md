@@ -1,6 +1,7 @@
 ---
-title: Testování částí pro obecné metody v sadě Visual Studio | Microsoft Docs
+title: Testování částí pro obecné metody v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +12,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e953af66f3b03d3d2e370513f3ed7462fc1484ce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4d752b66c65f10d46d57b69acc532d07ea8e2da
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testy jednotek pro obecné metody
 
@@ -115,7 +116,8 @@ public void SizeOfLinkedListTest()
 ```
 
 > [!NOTE]
->  Pokaždé, když SizeOfLinkedListTest testovací běhy, jeho TestHelper metoda je volána dvakrát. Příkaz assert musí vyhodnotit na hodnotu true, pokaždé, když pro test předat. Pokud se test nezdaří, nemusí být zrušte zda volání, který uveden `<int>` nebo volání, které zadané `<char>` způsobuje její neočekávané selhání. Pokud chcete najít odpověď, může zkontrolujte zásobníku volání, nebo můžete nastavit zarážky ve své metodě testu a pak ladění při spouštění testu. Další informace najdete v tématu [postupy: ladění během zpracování testu v řešení technologie ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+> Pokaždé, když SizeOfLinkedListTest testovací běhy, jeho TestHelper metoda je volána dvakrát. Příkaz assert musí vyhodnotit na hodnotu true, pokaždé, když pro test předat. Pokud se test nezdaří, nemusí být zrušte zda volání, který uveden `<int>` nebo volání, které zadané `<char>` způsobuje její neočekávané selhání. Pokud chcete najít odpověď, může zkontrolujte zásobníku volání, nebo můžete nastavit zarážky ve své metodě testu a pak ladění při spouštění testu. Další informace najdete v tématu [postupy: ladění během zpracování testu v řešení technologie ASP.NET](http://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
+
 
 ###  <a name="TypeConstraintNotSatisfied"></a> Příklad 2: Použití omezení typu.
  Tento příklad ukazuje testů jednotek pro obecné metody, která používá typ omezení, která není splněna. První část ukazuje kód z projektu kódu v rámci testu. Omezení typu zvýrazní.

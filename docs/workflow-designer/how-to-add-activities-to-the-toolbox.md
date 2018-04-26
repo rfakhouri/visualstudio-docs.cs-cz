@@ -1,18 +1,20 @@
 ---
-title: 'Postupy: přidání aktivit do sady nástrojů | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: přidání aktivit do sady nástrojů'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb101f5dff84f7e8d586ce33c63adbe30fa0dbf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4edb752ca64afd899ac9b3e463b9d29e4b3b68a1
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Postupy: přidání aktivit do sady nástrojů
 
@@ -27,7 +29,7 @@ Aktivity mohou být přidány do **sada nástrojů** ve vašem řešení v něko
 3.  Sestavte projekt. Pokud bylo úspěšné, sestavení novou kategorii v **sada nástrojů** s názvem "\<*název projektu*>" se zobrazí s vlastní aktivity, které jsou součástí této kategorie spadají.
 
     > [!NOTE]
-    > Pokud se resetuje sady nástrojů, vlastní aktivity se odebere, i v případě, že je řešení znovu sestaven. Znovu naplnit nástrojů vlastní aktivity po byla obnovena, restartujte [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)].
+    > Pokud se resetuje sady nástrojů, vlastní aktivity se odebere, i v případě, že je řešení znovu sestaven. Poté, co byla obnovena, znovu vyplnit nástrojů vlastních aktivit, restartujte Visual Studio 2010.
 
     > [!NOTE]
     > V panelu nástrojů můžete zobrazit pouze jednu aktivitu daného názvu. Pokud dvě aktivity z různých sestavení mají stejný název třídy, se zobrazí pouze jeden.

@@ -1,9 +1,10 @@
 ---
-title: Visual Studio 2017 pro vývojáře .NET | Microsoft Docs
+title: Visual Studio 2017 pro vývojáře .NET
 description: Přehled funkcí Visual Studio 2017 můžete napsat kód lepší .NET rychlejší.
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -11,15 +12,15 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31291814c2158c9aeb8d48b1b7b3073a4ccbcaf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b7625a074732949e9fb876627dbff1abf005982
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>Visual Studio 2017 produktivitu Příručka pro vývojáře .NET
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) umožňuje vývojářům zvýšit produktivitu než kdy dřív! Vylepšili výkon a spolehlivost pro spuštění řešení a zatížení, test zjišťování a zadáním latence. Také jsme přidali a pokročilé funkce, které umožňují rychlejší psaní lepší kódu. Mezi tyto funkce patří: navigace na decompiled sestavení, proměnné Název návrhy, jak budete zadávat, zobrazení hierarchie v Průzkumníka testů, přejděte na všechny (**Ctrl + T**) přejděte na soubor nebo typ/člen nebo symbol deklarace inteligentní pomocníka výjimka, konfigurace styl kódu a vynucení a opravy mnoha Refaktoring a kód. 
+[Visual Studio 2017](https://www.visualstudio.com/downloads/) umožňuje vývojářům zvýšit produktivitu než kdy dřív! Vylepšili výkon a spolehlivost pro spuštění řešení a zatížení, test zjišťování a zadáním latence. Také jsme přidali a pokročilé funkce, které umožňují rychlejší psaní lepší kódu. Mezi tyto funkce patří: navigace na decompiled sestavení, proměnné Název návrhy, jak budete zadávat, zobrazení hierarchie v Průzkumníka testů, přejděte na všechny (**Ctrl + T**) přejděte na soubor nebo typ/člen nebo symbol deklarace inteligentní pomocníka výjimka, konfigurace styl kódu a vynucení a opravy mnoha Refaktoring a kód.
 
 Postupujte podle tohoto průvodce k optimalizaci produktivitu.
 
@@ -31,7 +32,7 @@ Pokud jsou pocházejících z jiného IDE nebo kódování prostředí, může s
 - [Klávesové zkratky pro Visual Studio (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
-Tady jsou oblíbených zkratky v sadě Visual Studio: 
+Tady jsou oblíbených zkratky v sadě Visual Studio:
 
 | Zástupce (všechny profily) | Příkaz | Popis |
 |-|-|-|
@@ -61,7 +62,7 @@ Visual Studio 2017 má funkci _přejděte na všechny_ (**Ctrl + T**). Přejdět
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>Moje team vynucuje pravidla stylu kódu v našem základu kódu.
 Můžete použít soubor .editorconfig kodifikovat konvence psaní kódu a jejich přenášet společně s svůj zdroj.
-- Doporučujeme nainstalovat [EditorConfig jazyk služby rozšíření](https://aka.ms/editorconfig) pro přidání a úpravy souboru .editorconfig v sadě Visual Studio. 
+- Doporučujeme nainstalovat [EditorConfig jazyk služby rozšíření](https://aka.ms/editorconfig) pro přidání a úpravy souboru .editorconfig v sadě Visual Studio.
 - Podívejte se [dokumentace](https://aka.ms/editorconfigDocs) pro všechny .NET kódování konvence možnosti.
 - V tématu [tento gist](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8) pro .editorconfig příklad.
 
@@ -70,10 +71,10 @@ Můžete použít soubor .editorconfig kodifikovat konvence psaní kódu a jejic
 ## <a name="i-need-more-refactorings-and-code-fixes"></a>Potřebuji další Refaktoring a kód opravy.
 Visual Studio 2017 se dodává s velkým množstvím refaktoring, kód generování akcí a kód opravy. Podtržení vlnovkou Red představují chyby, zelená podtržení vlnovkou představují upozornění a tři tečky šedé představují návrhy kódu. Přístupový kód opravy můžete kliknutím na ikonu žárovek/šroubovák nebo stisknutím kombinace kláves **Ctrl +.** nebo **Alt + zadejte**. Jednotlivé opravy se dodává s preview okno, které ukazuje ukázku kódu rozdílové toho, jak funguje opravu.
 
-- Mezi oblíbené rychlé opravy a refaktoring patří: 
+- Mezi oblíbené rychlé opravy a refaktoring patří:
   - *Přejmenovat*
   - *Extrahování metody*
-  - *Podpis změny metod* 
+  - *Podpis změny metod*
   - *Generování konstruktoru*
   - *Generování metody*
   - *Přesunout do souboru, typu*
@@ -81,8 +82,8 @@ Visual Studio 2017 se dodává s velkým množstvím refaktoring, kód generová
   - *Přidání parametru*
   - *Odebrání nepotřebných direktiv Using*
   - V další informace naleznete v našem [dokumentace](https://aka.ms/refactorings)
-- Psát vlastní kód nebo refaktoring opravy s [Roslyn analyzátorů](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix). 
-- Několik členy komunity vytvořilo *volné* rozšíření, které přidat další kód kontroly: 
+- Psát vlastní kód nebo refaktoring opravy s [Roslyn analyzátorů](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix).
+- Několik členy komunity vytvořilo *volné* rozšíření, které přidat další kód kontroly:
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint pro sadu Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
@@ -93,10 +94,10 @@ Visual Studio 2017 se dodává s velkým množstvím refaktoring, kód generová
 Visual Studio 2017 obsahuje mnoho funkcí pro usnadnění hledání a přejděte vaší základu kódu. Další informace o [code vlastnosti navigace](../ide/navigating-code.md)
 
 | Funkce | Zástupce | Podrobnosti nebo vylepšení |
-|- | - | -| 
+|- | - | -|
 | Najít všechny odkazy | **Shift+F12**| Výsledky jsou obarvené a lze seskupovat podle projektu, definice atd. Je také možné "zamknout" výsledky. |
 | Přejít na implementaci | **Ctrl+F12** | Můžete přejít k definici na `override` – klíčové slovo a přejděte do přepsaného člena |
-| Přechod na definici | **F12** nebo **Ctrl + kliknutí**| Podržte **Ctrl** při kliknutí na k navgiate na definici | 
+| Přechod na definici | **F12** nebo **Ctrl + kliknutí**| Podržte **Ctrl** při kliknutí na k navgiate na definici |
 | Funkce Náhled definice | **ALT + F12** | Vložené zobrazení definice |
 | Struktura Vizualizéru | Šedé, s tečkami čáry mezi složené závorky | Pozastavte ukazatel myši zobrazíte strukturu kódu |
 | Navigace na decompiled sestavení | **F12** nebo **Ctrl + kliknutí** | Přejděte na externí zdroj (decompiled s ILSpy) povolením funkce: **nástroje > Možnosti > textový Editor > C# > Upřesnit > povolení navigace na decompiled zdroje**. |
@@ -112,8 +113,8 @@ V aplikaci Visual Studio 2017 jsme provedli mnoho vylepšení testování prost�
 ![Zobrazení hierarchie pro Explorer Text v sadě Visual Studio](../ide/media/VSGuide_Testing.png)
 
 ## <a name="i-want-to-debug-my-code"></a>Chci ladění můj kód.
-Přidali jsme tuny nové schopnosti ladění ve Visual Studio 2017. 
-- *Spustit a klikněte na tlačítko* umožňuje najeďte vedle řádek kódu, stiskněte tlačítko zelené ikony 'play', který se zobrazí, a spusťte svůj program, dokud nebude dosaženo daného řádku. 
+Přidali jsme tuny nové schopnosti ladění ve Visual Studio 2017.
+- *Spustit a klikněte na tlačítko* umožňuje najeďte vedle řádek kódu, stiskněte tlačítko zelené ikony 'play', který se zobrazí, a spusťte svůj program, dokud nebude dosaženo daného řádku.
 - Nové *pomocníka výjimka* PUT nejdůležitější informace, jako který proměnné je null v výjimky NullReferenceException na nejvyšší úrovni v dialogovém okně.
 - [Krok zpět](../debugger/how-to-use-intellitrace-step-back.md) ladění můžete přejít zpět na předchozí zarážky nebo kroky a zobrazení stavu aplikace, stejně jako tomu bylo v minulosti.
 - [Pořízení snímku ladění](/azure/application-insights/app-insights-snapshot-debugger) umožňuje prozkoumat stav za provozu webové aplikace se momentálně došlo k výjimce (musí být v Azure).
@@ -121,8 +122,8 @@ Přidali jsme tuny nové schopnosti ladění ve Visual Studio 2017.
 ![Nového pomocníka výjimka v VS2017](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>Chci použití správy verzí s projekty.
-Git nebo TFVC slouží k ukládání a aktualizujte kód v sadě Visual Studio. 
-- Uspořádání místní změny s *Team Explorer* a použít ke sledování čeká na potvrzení a změny stavový řádek. 
+Git nebo TFVC slouží k ukládání a aktualizujte kód v sadě Visual Studio.
+- Uspořádání místní změny s *Team Explorer* a použít ke sledování čeká na potvrzení a změny stavový řádek.
 - Nastavte průběžnou integraci a doručení pro projekty v sadě Visual Studio s naše [průběžné doručování Tools pro Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) rozšíření a přijmout, pracovní postup agile developer.
 
 ![Správa zdrojového kódu v sadě Visual Studio](../ide/media/VSIDE_Productivity_SourceControl.png)

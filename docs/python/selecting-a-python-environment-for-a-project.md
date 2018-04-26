@@ -1,6 +1,6 @@
 ---
-title: Výběr prostředí pro projekt
-description: V Průzkumníku řešení Visual Studio můžete přiřadit konkrétní překladač Pythonu (environment) k vždy použijte pro daný projekt, výchozí prostředí je ignorována. Můžete také vytvořit a spravovat virtuální prostředí.
+title: Výběr překladač Pythonu a prostředí pro projekt
+description: Jak přiřadit prostředí Python, který chcete použít pro projekt sady Visual Studio a navíc pokyny k vytvoření virtuálních prostředí.
 ms.date: 03/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
@@ -11,13 +11,13 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 72f07115aa323db15dd5680575871b8d4c4b20b4
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 85ac0ab5fe06db5af677290a99f914616e3ed064
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="selecting-a-python-interpreter-and-environment-for-use-in-a-project"></a>Výběr překladač Pythonu a prostředí pro použití v projektu
+# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>Tom, jak přiřadit prostředí Python, ve kterém se používá pro projekt
 
 Všechny kódu v projektu jazyka Python běží v kontextu konkrétní prostředí. Visual Studio také používá prostředí pro ladění, jejich import a dokončování člen, kontrola syntaxe a další úlohy, které vyžadují prostředí.
 

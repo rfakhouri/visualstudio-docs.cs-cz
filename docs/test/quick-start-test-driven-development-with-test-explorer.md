@@ -1,6 +1,7 @@
 ---
-title: Test řízené vývoj pomocí Průzkumníka testů v sadě Visual Studio | Microsoft Docs
+title: Testování vývoj řízený testy pomocí Průzkumníka testů v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b40ec7940e3c070bb1a29bd1753ed183bf67e22c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Rychlý úvod: Testování vývoj řízený testy pomocí Průzkumníka testů
 
@@ -37,7 +38,7 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
 
     1.  Vytvoření projektu testů.
 
-         V **nový projekt** dialogové okno, rozbalte seznam **jazyka Visual Basic**, **Visual C#**, nebo **Visual C++**a potom zvolte **Test**.
+         V **nový projekt** dialogové okno, rozbalte seznam **jazyka Visual Basic**, **Visual C#**, nebo **Visual C++** a potom zvolte **Test**.
 
          Vyberte **projektu testování částí**.
 
@@ -60,10 +61,12 @@ Doporučujeme vytvořit testování částí zajistit, aby byl váš kód funguj
  **Chcete-li ladit testu:** otevřete místní nabídku pro jeden nebo více testů a zvolte **ladění vybrané testy**.
 
 > [!IMPORTANT]
->  Výsledky, které se zobrazují pro nejnovější spouštějí. Panelu barevnou výsledků zobrazuje jenom výsledky testů, které byly spuštěny. Například pokud spustíte několik testů a některá z nich nezdaří a poté spusťte pouze ty testy úspěšné, pak na panelu výsledků se zobrazí všechny zelená.
+> Výsledky, které se zobrazují pro nejnovější spouštějí. Panelu barevnou výsledků zobrazuje jenom výsledky testů, které byly spuštěny. Například pokud spustíte několik testů a některá z nich nezdaří a poté spusťte pouze ty testy úspěšné, pak na panelu výsledků se zobrazí všechny zelená.
+
 
 > [!NOTE]
->  Pokud žádné testů se zobrazí, ujistěte se, nainstalovaný adaptér pro připojení k rozhraní test, který používáte testovací Explorer. Další informace najdete v tématu [pomocí různých systémů testů pomocí Průzkumníka testů](#frameworks).
+> Pokud žádné testů se zobrazí, ujistěte se, nainstalovaný adaptér pro připojení k rozhraní test, který používáte testovací Explorer. Další informace najdete v tématu [pomocí různých systémů testů pomocí Průzkumníka testů](#frameworks).
+
 
 ##  <a name="walkthrough"></a> Návod: Použití testování částí pro vývoj – metoda
  Tento návod ukazuje, jak vyvíjet otestované metoda v C# s použitím rozhraní testování částí Microsoft. Můžete snadno upravit ho pro jiné jazyky a použití jiných systémů testování například NUnit. Další informace najdete v tématu [pomocí různých systémů testování](#frameworks).

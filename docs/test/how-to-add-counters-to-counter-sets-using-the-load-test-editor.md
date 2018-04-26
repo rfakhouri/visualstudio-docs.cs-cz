@@ -1,5 +1,5 @@
 ---
-title: Přidání čítačů do sad čítačů pro zatížení testování v sadě Visual Studio | Microsoft Docs
+title: Přidání čítačů do sad čítačů pro zatížení testování v sadě Visual Studio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,19 +10,21 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: douge
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 153e7369397b961338b4c4c495cfd953f5271c0d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 871ba69d088e58ac1d662f254c72c406c79f86fd
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Postupy: Přidání čítačů do sad čítačů pomocí editoru zátěžových testů
 
 Když vytvoříte zátěžový test pomocí **načíst průvodce testovací**, přidejte počáteční sadu čítačů. Ty nabízejí sadu předdefinovaných sad čítačů pro zátěžové testy. Další informace najdete v tématu [určení sad čítačů a mezních pravidel pro počítače v zátěžovém testu](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
 > [!NOTE]
->  Pokud jsou zátěžové testy distribuovány napříč vzdálenými počítači, jsou čítače kontroléru a agentů namapovány na sady čítačů kontrolérů a agentů. Další informace o tom, jak používat vzdáleného počítače v zátěžovém testu najdete v tématu [testovací kontrolery a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md).
+> Pokud jsou zátěžové testy distribuovány napříč vzdálenými počítači, jsou čítače kontroléru a agentů namapovány na sady čítačů kontrolérů a agentů. Další informace o tom, jak používat vzdáleného počítače v zátěžovém testu najdete v tématu [testovací kontrolery a testovací agenti](configure-test-agents-and-controllers-for-load-tests.md).
+
 
  Spravovat vaše čítače v **editoru zátěžových testů**. Sady čítačů, které již byly přidány k testovací jsou viditelné v **nastaví čítač** pracovního zátěžového testu. Jakmile vytvoříte zátěžový test, můžete přidat nové čítače do existujících sad čítačů.
 

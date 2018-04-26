@@ -1,7 +1,9 @@
 ---
-title: Návrhář šablony ReceiveAndSendReply | Microsoft Docs
+title: Návrhář postupu provádění - ReceiveAndSendReply Template Designer
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.ServiceModel.Activities.ReceiveAndSendReply.UI
 - System.ServiceModel.Activities.SendReply.UI
@@ -11,18 +13,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81edeb04abacedb81ad52da17369759ba9f1f222
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 525b7deb0b40ee6952c803c9c98b212c6ed0d224
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="receiveandsendreply-template-designer"></a>Návrhář šablony ReceiveAndSendReply
 
 **ReceiveAndSendReply** šablona se používá k vytvoření pár předem nakonfigurovaná <xref:System.ServiceModel.Activities.Receive> a <xref:System.ServiceModel.Activities.SendReply> aktivity v rámci <xref:System.Activities.Statements.Sequence> aktivity, která jsou korelační jako součást systému exchange zprávu žádosti a odpovědi vzor na serveru.
 
 ## <a name="the-receiveandsendreply-template"></a>Šablona ReceiveAndSendReply
- Přidání **ReceiveAndSendReply** šablona nemá tři věci kromě vytvoření <xref:System.ServiceModel.Activities.Receive> a <xref:System.ServiceModel.Activities.SendReply> aktivity s <xref:System.Activities.Statements.Sequence> aktivity:
+
+Přidání **ReceiveAndSendReply** šablona nemá tři věci kromě vytvoření <xref:System.ServiceModel.Activities.Receive> a <xref:System.ServiceModel.Activities.SendReply> aktivity s <xref:System.Activities.Statements.Sequence> aktivity:
 
 1.  Nakonfiguruje <xref:System.ServiceModel.Activities.Receive.OperationName%2A>, <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> vlastnosti <xref:System.ServiceModel.Activities.Receive> aktivity.
 
@@ -31,16 +34,16 @@ ms.lasthandoff: 04/16/2018
 3.  Vytvoří <xref:System.ServiceModel.Activities.CorrelationHandle> jako proměnné v nadřazené aktivity.
 
 ### <a name="using-the-receiveandsendreply-template-designer"></a>Pomocí návrháře šablony ReceiveAndSendReply
- **ReceiveAndSendReply** Návrhář aktivity naleznete v **zasílání zpráv** kategorii **sada nástrojů**, který přistupuje kliknutím **sada nástrojů**  kartě v [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+ **ReceiveAndSendReply** Návrhář aktivity naleznete v **zasílání zpráv** kategorii **sada nástrojů**, který přistupuje kliknutím **sada nástrojů**  kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **ReceiveAndSendReply** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kdekoli aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Receive> aktivity, která se dá nakonfigurovat s **odeslat** Návrhář aktivity a korelační <xref:System.ServiceModel.Activities.SendReply> který lze nakonfigurovat pomocí návrháře SendReplyToReceive.
+ **ReceiveAndSendReply** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou obvykle umístěny. Tím se vytvoří <xref:System.ServiceModel.Activities.Receive> aktivity, která se dá nakonfigurovat s **odeslat** Návrhář aktivity a korelační <xref:System.ServiceModel.Activities.SendReply> který lze nakonfigurovat pomocí návrháře SendReplyToReceive.
 
  Další informace o používání **Receive** návrháře konfigurace <xref:System.ServiceModel.Activities.Receive> aktivity, najdete v článku [Receive](../workflow-designer/receive-activity-designer.md) tématu.
 
  Další informace o používání **SendReplyToReceive** návrháře konfigurace <xref:System.ServiceModel.Activities.SendReply> aktivity, najdete v následující části.
 
 ### <a name="properties-of-sendreply"></a>Vlastnosti SendReply
- Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.SendReply> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti lze upravovat v mřížce vlastnosti a lze upravit některé na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] plochu návrháře.
+ Následující tabulce je zobrazena <xref:System.ServiceModel.Activities.SendReply> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti můžete upravit v mřížce vlastnosti a některé můžete upravit na plochu návrháře návrháře pracovních postupů.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|

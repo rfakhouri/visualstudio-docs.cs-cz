@@ -1,7 +1,9 @@
 ---
-title: 'Postupy: vytvoření projektu prázdný pracovního postupu (zastaralé) | Microsoft Docs'
+title: 'Návrhář postupu provádění - postupy: vytvoření projektu prázdný pracovního postupu (zastaralé)'
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - projects, empty workflow
 - empty workflow projects
@@ -12,16 +14,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 961425eb7f3b4d412ddcb572bc21a91bdde6e957
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2aa51df35a1187c8d327a401d77c12e4532f4eb8
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-an-empty-workflow-project-legacy"></a>Postupy: vytvoření projektu prázdný pracovního postupu (zastaralé)
-Postupujte podle těchto kroků můžete vytvořit prázdný projekt pracovního postupu pomocí starší verze návrháře pracovních postupů Windows poskytované [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
-### <a name="to-create-an-empty-workflow-project"></a>Vytvoření projektu prázdný pracovního postupu
+Postupujte podle těchto kroků můžete vytvořit prázdný projekt pracovního postupu pomocí starší verze návrháře pracovních postupů Windows poskytované Visual Studio 2010. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
+
+## <a name="to-create-an-empty-workflow-project"></a>Vytvoření projektu prázdný pracovního postupu
 
 1.  Spuštění sady Visual Studio.
 
@@ -32,7 +35,7 @@ Postupujte podle těchto kroků můžete vytvořit prázdný projekt pracovního
 3.  Vyberte buď **rozhraní .NET Framework 3.0** možnost nebo **rozhraní .NET Framework 3.5** možnost v rozevíracím seznamu v horní části **nový projekt** okna pro přístup k návrháře starší verze.
 
     > [!NOTE]
-    > Výchozí možnost v [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] je **rozhraní .NET Framework 4**. Tato možnost slouží k vytvoření [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikacích, které cílí [!INCLUDE[netfx40_short](../workflow-designer/includes/netfx40_short_md.md)] a nepoužívá návrháře starší verze.
+    > Výchozí možnost v sadě Visual Studio 2010 je **rozhraní .NET Framework 4**. Tato možnost se používá k vytváření aplikací pro Windows Workflow Foundation (WF) cílených na rozhraní .NET Framework 4 a nepoužívá návrháře starší verze.
 
 4.  V **typy projektů** podokně, vyberte Visual C# nebo Visual Basic (v části **jiné jazyky**) a potom vyberte **pracovního postupu**.
 

@@ -1,7 +1,9 @@
 ---
-title: Dialogové okno Možnosti motivy, Návrháře pracovního postupu (zastaralé) | Microsoft Docs
+title: Pracovní postup Návrhář - motivy, Návrháře pracovního postupu dialogové okno Možnosti (zastaralé)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - VS.ToolsOptionsPages.WorkflowDesigner.Themes
 helpviewer_keywords:
@@ -13,18 +15,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95bda5a08871dd89b3600dd48b54f14e92f6640a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a603f8b0e6e001e3eb52f2e9fb145e52a41f3dc9
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="themes-workflow-designer-options-dialog-box-legacy"></a>Dialogové okno Možnosti motivy, Návrháře pracovního postupu (zastaralé)
-Toto téma popisuje, jak používat **motivy, Návrháře pracovního postupu možností** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Motiv definuje barvy popředí a pozadí, styly, ikony a další vizuální prvky pracovního postupu. Motivy pro opakované použití můžete uložit pomocí jiných pracovních postupů. Můžete vybrat výchozí a uložené vlastní motivy pomocí **motivy, Návrháře pracovního postupu možností** dialogové okno. Chcete-li otevřít toto dialogové okno, klikněte na tlačítko **vyberte vlastní motiv** na **pracovního postupu** nabídky. Nebo, klikněte pravým tlačítkem na návrhovou plochu pracovního postupu a klikněte na tlačítko **vyberte vlastní motiv**.
+Toto téma popisuje, jak používat **motivy, Návrháře pracovního postupu možností** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
 
- Následující tabulka popisuje prvky uživatelského rozhraní (UI) **motivy, Návrháře pracovního postupu možností** dialogové okno.
+Motiv definuje barvy popředí a pozadí, styly, ikony a další vizuální prvky pracovního postupu. Motivy pro opakované použití můžete uložit pomocí jiných pracovních postupů. Můžete vybrat výchozí a uložené vlastní motivy pomocí **motivy, Návrháře pracovního postupu možností** dialogové okno. Chcete-li otevřít toto dialogové okno, klikněte na tlačítko **vyberte vlastní motiv** na **pracovního postupu** nabídky. Nebo, klikněte pravým tlačítkem na návrhovou plochu pracovního postupu a klikněte na tlačítko **vyberte vlastní motiv**.
+
+Následující tabulka popisuje prvky uživatelského rozhraní (UI) **motivy, Návrháře pracovního postupu možností** dialogové okno.
 
 |Prvek uživatelského rozhraní (UI)|Popis|
 |----------------|-----------------|

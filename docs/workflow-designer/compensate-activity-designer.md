@@ -1,7 +1,9 @@
 ---
-title: Odpovídajícím způsobem Návrhář aktivity | Microsoft Docs
+title: Návrhář postupu provádění - odpovídajícím způsobem Návrhář aktivity
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Compensate.UI
 ms.assetid: 7347c947-bfff-4bad-becd-5cd23e7b24cd
@@ -10,13 +12,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ef289304338ea64a72c073711a287612d39bd1a8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8278066a12df0d195770391d0b2f3144ba16487d
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="compensate-activity-designer"></a>Odpovídajícím způsobem Návrhář aktivity
+
 **Compensate** Návrhář aktivity se používá k vytvoření a konfigurace <xref:System.Activities.Statements.Compensate> aktivity.
 
 ## <a name="the-compensate-activity"></a>Odpovídajícím způsobem aktivity
@@ -25,12 +28,12 @@ ms.lasthandoff: 04/16/2018
  <xref:System.Activities.Statements.CompensationToken> Určeným elementem <xref:System.Activities.Statements.Compensate.Target%2A> poskytuje prostředky ke explicitně potvrdit nebo odpovídajícím způsobem <xref:System.Activities.Statements.CompensableActivity> po <xref:System.Activities.Statements.CompensableActivity.Body%2A> z <xref:System.Activities.Statements.CompensableActivity> bylo úspěšně dokončeno.
 
 ### <a name="using-the-compensate-activity-designer"></a>Pomocí odpovídajícím způsobem Návrhář aktivity
- **Compensate** Návrhář aktivity naleznete v **transakce** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů** karty na levé straně [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
+ **Compensate** Návrhář aktivity naleznete v **transakce** kategorii **sada nástrojů**. Otevřete **sada nástrojů**, vyberte **sada nástrojů** karty na levé straně návrháře pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení**nabídky nebo CTRL + ALT + X.)
 
- **Compensate** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kdekoli aktivity jsou obvykle umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Tím se vytvoří <xref:System.Activities.Statements.Compensate> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z Compensate. <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **Compensate** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
+ **Compensate** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na aktivity jsou umístěny, například jako uvnitř <xref:System.Activities.Statements.Sequence>. Vyřazení Návrhář aktivity vytvoří <xref:System.Activities.Statements.Compensate> aktivitu výchozí <xref:System.Activities.Activity.DisplayName%2A> z Compensate. <xref:System.Activities.Activity.DisplayName%2A> Hodnota se dá upravit v hlavičce **Compensate** Návrhář aktivity nebo v **DisplayName** pole mřížku vlastností.
 
 ### <a name="the-compensate-properties"></a>Odpovídajícím způsobem vlastnosti
- Následující tabulce je zobrazena <xref:System.Activities.Statements.CancellationScope> vlastnosti a popisuje, jak se používají v návrháři. <xref:System.Activities.Activity.DisplayName%2A> Vlastnost lze upravit v mřížce vlastnost nebo na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor, ale <xref:System.Activities.Statements.Compensate.Target%2A> vlastnost musí upravit v tabulce vlastností.
+ Následující tabulce je zobrazena <xref:System.Activities.Statements.CancellationScope> vlastnosti a popisuje, jak se používají v návrháři. <xref:System.Activities.Activity.DisplayName%2A> Vlastnost lze upravit v mřížce vlastnost nebo na plochu návrháře pracovních postupů. Upravit <xref:System.Activities.Statements.Compensate.Target%2A> vlastnost v tabulce vlastností.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|

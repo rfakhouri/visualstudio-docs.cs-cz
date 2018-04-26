@@ -1,6 +1,7 @@
 ---
-title: Izolace testovaného kódu pomocí zástupného rozhraní Microsoft v sadě Visual Studio | Microsoft Docs
+title: Izolace testovaného kódu pomocí zástupného rozhraní Microsoft v sadě Visual Studio
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: gewarren
@@ -11,11 +12,11 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ed5e8844234f6dfde52408ecd4c814b725816eb7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af87fe6c71ceee98c54e2bd1dd6bae24bc58df97
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Izolace testovaného kódu pomocí zástupného rozhraní Microsoft
 
@@ -32,6 +33,10 @@ Jsou dva typy napodobenin:
 **Požadavky**
 
 -   Visual Studio Enterprise
+-   Rozhraní .NET Framework projektu
+
+> [!NOTE]
+> .NET standard projekty nejsou podporované.
 
 ## <a name="choosing-between-stub-and-shim-types"></a>Volba mezi zástupnou procedurou a překrytím
 Obvykle byste měli považovat projekt sady Visual Studio za součást, protože vytváříte a aktualizujete tyto třídy současně. Měli byste zvážit použití zástupných procedur a překrytí pro volání, která projekt provádí do jiných projektů v rámci vašeho řešení nebo do jiných sestavení, na která projekt odkazuje.

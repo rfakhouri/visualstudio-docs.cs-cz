@@ -1,7 +1,9 @@
 ---
-title: Pravidlo nastavte dialogové okno Editor (zastaralé) | Microsoft Docs
+title: Návrhář postupu provádění - pravidlo nastavte dialogové okno Editor (zastaralé)
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
 helpviewer_keywords:
@@ -12,26 +14,27 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7284b4a318f1d6c182f1d7d27e41f6c77092ad00
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77bb10e5237b33c60b0cd309c2d3c6c634182bc6
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Pravidlo nastavte dialogové okno Editor (zastaralé)
-Toto téma popisuje, jak používat **Editor nastavit pravidla** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- **Editor nastavit pravidla** dialogové okno se používá k vytvoření a změna [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) pravidla sad, které se serializují .rules souboru.
+Toto téma popisuje, jak používat **Editor nastavit pravidla** dialogové okno v Návrháři pracovních postupů starší verze systému Windows. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
+
+**Editor nastavit pravidla** dialogové okno se používá k vytvoření a změna [aktivitě PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) pravidla sad, které se serializují .rules souboru.
 
 > [!NOTE]
 > Pokud chcete otevřít soubor .rules s **Editor XML s kódováním**, nejprve je třeba nejprve zavřít okno přidružené návrháře pro pracovní postup nebo aktivity.
 
- Informace o tom, jak získat přístup **Editor nastavit pravidla** dialogové okno, najdete v části [postupy: vytvoření aktivitě PolicyActivity pravidlo sady (zastaralé)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+Informace o tom, jak získat přístup **Editor nastavit pravidla** dialogové okno, najdete v části [postupy: vytvoření aktivitě PolicyActivity pravidlo sady (zastaralé)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
 > [!WARNING]
-> Pravidla editoru starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] používané cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] nepodporuje cílení na více verzí.
+> Editor pravidla starší verzi Návrháře pracovního postupu, který se používá cílit na rozhraní .NET Framework verze 3.5 nebo WinFX nepodporuje cílení na více verzí.
 
- Následující tabulka popisuje prvky uživatelského rozhraní (UI) **Editor nastavit pravidla** dialogové okno.
+Následující tabulka popisuje prvky uživatelského rozhraní (UI) **Editor nastavit pravidla** dialogové okno.
 
 |Prvek uživatelského rozhraní (UI)|Popis|
 |----------------|-----------------|

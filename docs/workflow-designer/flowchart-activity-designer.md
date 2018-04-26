@@ -1,7 +1,9 @@
 ---
-title: Vývojový diagram Návrhář aktivity | Microsoft Docs
+title: Návrhář postupu provádění - vývojový diagram Návrhář aktivity
 ms.date: 11/04/2016
 ms.topic: reference
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
 - System.Activities.Statements.FlowStep.UI
@@ -12,27 +14,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f7db449f538f09a247bc3c67ee26f487a6c81eb0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 81af4a51da2bb15bafd17fc7ba98d676f7b0decc
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="flowchart-activity-designer"></a>Vývojový diagram Návrhář aktivity
-<xref:System.Activities.Statements.Flowchart> Aktivita se používá k vytváření pracovních postupů, které definovat a spravovat komplexní tok ovládací prvky. A <xref:System.Activities.Statements.Flowchart> může být vytvořené v kódu nebo pomocí [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]. Toto téma dokumenty [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostředí. Návrhář aktivity pracovního postupu Návrháře pracovního postupu systému Windows umožňuje vývojářům pro vytváření pracovních postupů přirozené způsobem.
+
+<xref:System.Activities.Statements.Flowchart> Aktivita se používá k vytváření pracovních postupů, které definovat a spravovat komplexní tok ovládací prvky. A <xref:System.Activities.Statements.Flowchart> může být vytvořené v kódu nebo pomocí návrháře pracovních postupů. Toto téma popisuje činnost návrháře pracovních postupů. Návrhář aktivity pracovního postupu Návrháře pracovního postupu systému Windows umožňuje vývojářům pro vytváření pracovních postupů přirozené způsobem.
 
 ## <a name="the-flowchart-activity"></a>Vývojový diagram aktivity
- <xref:System.Activities.Statements.Flowchart> Určuje jedinečný <xref:System.Activities.Statements.Flowchart.StartNode%2A> který se spustí při spuštění pracovního postupu a používá síť propojení <xref:System.Activities.Statements.Flowchart.Nodes%2A> můžete vytvořit libovolný smyčky nebo přesměrovat tok na kdekoliv jinde v pracovním postupu provedení v daném okamžiku.
+
+<xref:System.Activities.Statements.Flowchart> Určuje jedinečný <xref:System.Activities.Statements.Flowchart.StartNode%2A> který se spustí při spuštění pracovního postupu a používá síť propojení <xref:System.Activities.Statements.Flowchart.Nodes%2A> můžete vytvořit libovolný smyčky nebo přesměrovat tok na kdekoliv jinde v pracovním postupu provedení v daném okamžiku.
 
 ### <a name="using-the-flowchart-activity-designer"></a>Pomocí návrháře vývojový diagram aktivity
- **Vývojový diagram** Návrhář aktivity naleznete v **vývojový diagram** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů**na kartě [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- **Vývojový diagram** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vynechaných na [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor kdekoli návrháře aktivit jsou obvykle umístěny, jako kořenové aktivity nebo jako podřízený objekt jiné aktivity toku řízení. Pokud **vývojový diagram** Návrhář aktivity umístění na prázdné pole [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] prostor, vytvoří <xref:System.Activities.Statements.Flowchart> aktivity, který ve výchozím nastavení prezentuje v rozbalené zobrazení, ve kterém je počáteční uzel, který iniciuje provádění reprezentován jako zelená míč. Pokud **vývojový diagram** Návrhář aktivity je vyřazeno do další aktivity toku řízení, se prezentuje v minimalizovaném okně zobrazení, které lze rozšířit dvojitým kliknutím **vývojový diagram** Návrhář aktivity. Všechny aktivity v **sada nástrojů** může být přetažen přímo na **vývojový diagram** Návrhář aktivity, včetně další aktivity toku řízení.
+**Vývojový diagram** Návrhář aktivity naleznete v **vývojový diagram** kategorii **sada nástrojů**, který přistupuje kliknutím **sady nástrojů**kartě v Návrháři pracovních postupů (případně vyberte možnost **nástrojů** z **zobrazení** nabídky nebo CTRL + ALT + X.)
 
- Po přetahování různé návrháře aktivit do [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] plátno, <xref:System.Activities.Activity> lze propojit objekty, které představují společně k určení pořadí zpracování. Pokud chcete vytvořit vazbu mezi aktivitou zdrojové a cílové aktivitě, myši nad návrháře zdrojové aktivity a odmocnina obslužné rutiny zobrazí na každé straně je. Klikněte na jednu z odmocnina obslužné rutiny a přetáhněte jej podržte tlačítko myši na jednu z obslužných rutin, které se zobrazí podobným způsobem kolem cílová aktivita, když ukazatele myši ho pomocí myši. Uvolnění tlačítka myši a vytvoří propojení mezi tyto dvě aktivity, které je reprezentována jako šipka z Návrháře zdrojové do cílové návrháře.
+**Vývojový diagram** Návrhář aktivity můžete přetáhnout z **sada nástrojů** a vyřadit na povrch návrháře pracovních postupů bez ohledu na návrháře aktivit jsou obvykle umístěny, jako kořenové aktivity nebo jako podřízená jiné aktivity toku řízení. Pokud **vývojový diagram** Návrhář aktivity je vyřazeno na plochu návrháře pracovních postupů prázdné, vytvoří <xref:System.Activities.Statements.Flowchart> aktivity, který ve výchozím nastavení prezentuje v rozbalené zobrazení, ve kterém je počáteční uzel, který iniciuje provádění reprezentován jako zelená míč. Pokud **vývojový diagram** Návrhář aktivity je vyřazeno do další aktivity toku řízení, se prezentuje v minimalizovaném okně zobrazení, které lze rozšířit dvojitým kliknutím **vývojový diagram** Návrhář aktivity. Všechny aktivity v **sada nástrojů** může být přetažen přímo na **vývojový diagram** Návrhář aktivity, včetně další aktivity toku řízení.
+
+Po přetahování různé návrháře aktivit na plátno návrháře pracovních postupů <xref:System.Activities.Activity> lze propojit objekty, které představují společně k určení pořadí zpracování. Pokud chcete vytvořit vazbu mezi aktivitou zdrojové a cílové aktivitě, myši nad návrháře zdrojové aktivity a odmocnina obslužné rutiny zobrazí na každé straně je. Klikněte na jednu z odmocnina obslužné rutiny a přetáhněte jej podržte tlačítko myši na jednu z obslužných rutin, které se zobrazí podobným způsobem kolem cílová aktivita, když ukazatele myši ho pomocí myši. Uvolnění tlačítka myši a vytvoří propojení mezi tyto dvě aktivity, které je reprezentována jako šipka z Návrháře zdrojové do cílové návrháře.
 
 ### <a name="flowchart-activity-properties"></a>Vývojový diagram vlastnosti aktivit
- Následující tabulce je zobrazena <xref:System.Activities.Statements.Flowchart> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti se dá upravit v mřížce vlastnost nebo na plochu návrháře.
+
+Následující tabulce je zobrazena <xref:System.Activities.Statements.Flowchart> vlastnosti a popisuje, jak se používají v návrháři. Tyto vlastnosti se dá upravit v mřížce vlastnost nebo na plochu návrháře.
 
 |Název vlastnosti|Požadováno|Použití|
 |-------------------|--------------|-----------|

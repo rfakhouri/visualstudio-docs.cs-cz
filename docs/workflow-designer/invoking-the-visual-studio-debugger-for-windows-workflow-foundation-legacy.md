@@ -1,7 +1,9 @@
 ---
-title: Vyvolání ladicího programu sady Visual Studio pro Windows Workflow Foundation (zastaralé) | Microsoft Docs
+title: Návrhář postupu provádění – vyvolání ladicího programu sady Visual Studio pro Windows Workflow Foundation (zastaralé)
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: conceptual
+ms.prod: visual-studio-dev15
+ms.technology: vs-workflow-designer
 helpviewer_keywords:
 - stepping
 - Step Over command
@@ -19,23 +21,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e3563b175359e00a051138451292eb015958480
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a326f8b6dc482c2adfc2caba797c38094a99f8c5
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Vyvolání ladicího programu sady Visual Studio pro Windows Workflow Foundation (zastaralé)
-Toto téma popisuje, jak používat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ladicí program k ladění [!INCLUDE[wf](../workflow-designer/includes/wf_md.md)] aplikace v Návrháři pracovních postupů starší verze systému Windows. Pomocí starší verze [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] když potřebujete cílit buď [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] nebo [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].
 
- Obecně platí při ladění starší verze pracovních postupů, stejně jako při ladění programy vytvořené v jiné sadě Visual Studio programovací jazyky. Můžete spustit [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] ladicí program pro Windows Workflow Foundation následujícími způsoby:
+Toto téma popisuje, jak používat Visual Studio Debugger ladit aplikace Windows Workflow Foundation (WF) v Návrháři pracovních postupů starší verze systému Windows. Pokud budete potřebovat cílit na rozhraní .NET Framework verze 3.5 nebo WinFX, použijte starší verzi návrháře pracovních postupů.
+
+Obecně platí při ladění starší verze pracovních postupů, stejně jako při ladění programy vytvořené v jiné sadě Visual Studio programovací jazyky. Visual Studio ladicí program pro Windows Workflow Foundation můžete spustit těmito způsoby:
 
 -   Vyberte **připojit k procesu** na **ladění** nabídce vyberte z dostupných procesy spuštěné instance pracovního postupu.
 
 -   Stiskněte klávesu **F5** spustit instance pracovního postupu nebo chcete-li pokračovat, aby po zarážku narazil spustila.
 
 ## <a name="stepping-through-code"></a>Procházení kódu
- Ladicí program podporuje jeden z nejčastějších ladění postupů krokování s, který provádí jeden řádek kódu v čase. Existují tři příkazy pro procházení kódu:
+
+Ladicí program podporuje jeden z nejčastějších ladění postupů krokování s, který provádí jeden řádek kódu v čase. Existují tři příkazy pro procházení kódu:
 
 -   **Krok v**: můžete krok do aktivity pomocí **F11**. Ladicí program do jakékoli obslužná rutina, která je definována. Pokud je definována žádná obslužná rutina, krok přes aktivity nebo složený aktivitami, které obsahují další aktivity, krok do první provádění aktivity. Zanoříte se do obslužné rutiny kód z Návrháře není podporována pro následující činnosti: **IfElseActivity**, **aktivita typu WhileActivity**, **skupiny ConditionedActivityGroup**, nebo **ReplicatorActivity**. Chcete-li ladit obslužné rutiny související s tyto aktivity, musíte umístit explicitní zarážky v kódu.
 
@@ -51,7 +55,7 @@ Toto téma popisuje, jak používat [!INCLUDE[vsprvs](../code-quality/includes/v
 
  Pokud chcete nastavit spouštěný projekt v Průzkumníku řešení, klikněte pravým tlačítkem na název projektu a vyberte **nastavit jako spouštěný projekt**. Nastavit cestu k hostiteli v **externí program spustit** vlastnosti, klikněte dvakrát na projektu workflow **vlastnosti** uzlu v Průzkumníku řešení a vyberte **ladění** Karta. V části **spustit akci**, vyberte **počáteční vnějšímu programu** a zadejte cestu k souboru .exe, který je hostitelem pracovního postupu, kterou chcete ladit.
 
- Pokud hostitelskou aplikaci je nastavit jako spouštěný projekt, jenom ladicího programu sady Visual Studio je volána pro ladění. [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] není vyvolána ladicí program pro Windows Workflow Foundation. Pokud se používá ladicího programu sady Visual Studio, se setkají pouze jazyka C# nebo zarážky kód jazyka Visual Basic; nastavit v Návrháři pracovních postupů nejsou zarážky. Například zarážky nastavený na <xref:System.Workflow.Activities.ParallelActivity> aktivity v návrháři se průchodu, pokud [!INCLUDE[vs_current_long](../misc/includes/vs_current_long_md.md)] ladicí program pro Windows Workflow Foundation se používá, ale není při použití ladicího programu sady Visual Studio.
+ Pokud hostitelskou aplikaci je nastavit jako spouštěný projekt, jenom ladicího programu sady Visual Studio je volána pro ladění. Visual Studio ladicí program pro Windows Workflow Foundation není vyvolána. Pokud se používá ladicího programu sady Visual Studio, se setkají pouze jazyka C# nebo zarážky kód jazyka Visual Basic; nastavit v Návrháři pracovních postupů nejsou zarážky. Například zarážky nastavený na <xref:System.Workflow.Activities.ParallelActivity> aktivity v návrháři se průchodu, pokud se používá Visual Studio Debugger pro Windows Workflow Foundation, ale ne v případě, že používáte ladicího programu sady Visual Studio.
 
 ## <a name="see-also"></a>Viz také
 

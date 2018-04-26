@@ -1,6 +1,7 @@
 ---
-title: 'Postupy: zápis testů částí pro knihovny DLL C++ | Microsoft Docs'
+title: 'Postupy: zápis testů částí pro C++ – knihovny DLL'
 ms.date: 11/04/2017
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.author: mblome
@@ -8,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: e4ff7d931b614d6d3c243539efc42bf051878fb0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 290eebefbe02284222278fd665ce87fb0db0e010
+ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Postupy: zápis testů částí pro C++ – knihovny DLL
 
@@ -293,7 +294,8 @@ Tento návod popisuje, jak vyvíjet nativní knihovny DLL C++ pomocí metody vč
      ![Všechny testy byly úspěšné](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")
 
 > [!TIP]
->  Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
+> Pokud jednotlivé testy žádné závislosti, které je zabránit spouštění v libovolném pořadí, zapnout spuštění testu paralelní s ![UTE&#95;parallelicon&#45;malé](../test/media/ute_parallelicon-small.png "UTE_parallelicon malé") přepínací tlačítko na panelu nástrojů. To může výrazně snížit čas potřebný k spustit všechny testy.
+
 
 ##  <a name="refactor"></a> Refaktorovat kód beze změny testů
 
