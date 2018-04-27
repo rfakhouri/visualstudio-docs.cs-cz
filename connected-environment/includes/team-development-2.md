@@ -1,3 +1,11 @@
+---
+ms.topic: include
+ms.openlocfilehash: 9da28d29dc431f2f6ec92a01c397244147042f12
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.translationtype: MT
+ms.contentlocale: cs-CZ
+ms.lasthandoff: 04/27/2018
+---
 2. Stiskněte F5 (nebo typ `vsce up` v okně Terminálové) ke spuštění služby. Tato funkce se automaticky spustí ho v našem prostoru nově vybranou `scott`. 
 1. To může potvrdit, spuštěním `vsce list` znovu. První, můžete si všimnout instance `mywebapi` je nyní spuštěna v `scott` místa (verze provozován `mainline` je stále spuštěná, ale není uveden). Za druhé, přístup bodu adresy URL pro `webfrontend` je s předponou text "scott –". Tato adresa URL je jedinečná `scott` místo a označuje, že požadavky odeslané na adresu"scott" se pokusí o první trasy pro služby `scott` místo a vrátí ke službám v `mainline` místa.
 
