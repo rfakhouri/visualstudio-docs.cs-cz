@@ -295,6 +295,7 @@
 #### [Nelze se připojit k procesu](unable-to-attach-to-the-process.md)
 #### [Chybové zprávy operace Upravit a pokračovat – dialogové okno](edit-and-continue-error-message-dialog-box.md)
 #### [Chyba: Při vyhodnocování funkce vypršel časový limit a bylo nutné ho přerušit nebezpečným způsobem](error-evaluating-the-function-function-timed-out-and-needed-to-be-aborted-in-an-unsafe-way.md)
+#### [Chyba: Při vyhodnocování funkce „funkce“ byl cílový proces ukončen s kódem „kód“](error-evaluating-the-function-process-exited.md)
 #### [Chyba: Nepodařilo se připojit k serveru SQL Server na vzdáleném počítači.](error-unable-to-connect-to-sql-server-on-remote-machine.md)
 #### [Chyba: Nelze přistoupit k ladicímu prostředí serveru SQL Server.](error-unable-to-access-the-sql-server-debugging-interface.md)
 #### [Chyba: Příkaz SQL nemůže najít SSDEBUGPS.](error-sql-can-t-find-ssdebugps.md)
