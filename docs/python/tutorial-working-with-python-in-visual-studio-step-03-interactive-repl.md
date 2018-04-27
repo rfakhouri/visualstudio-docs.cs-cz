@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d5d0224c9f6d8d76f73c79feeaa363a6e0a954a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb52d2ac655c406121adb60a3b823bac22e89963
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>Krok 3: Použití okna interaktivní REPL
 
@@ -89,7 +89,7 @@ Visual Studio *interaktivních okna* pro jazyk Python poskytuje prostředí boha
 
 1. Co jste právě provedli je vycházejí z podrobností o malou část kódu pomocí rychlé prostředí REPL interaktivních okna a potom pohodlně přidat tento kód do vašeho projektu zdrojový soubor. Když nyní spustíte kód znovu pomocí kombinace kláves Ctrl + F5 (nebo **ladění > Spustit bez ladění**), najdete v části chtěli byste přesné výsledky.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-step"></a>Další krok
 
 > [!div class="nextstepaction"]
 > [Spuštěním kódu v ladicím programu](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)

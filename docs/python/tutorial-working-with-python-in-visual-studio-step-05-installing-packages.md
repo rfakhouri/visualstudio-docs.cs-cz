@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d37eedca42119fbe91080aa0c62a0f60b576790
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalace balíčků ve vašem prostředí Python
 
@@ -66,7 +66,7 @@ Komunity vývojářů Python má vytvořeného tisíce užitečné balíčky, kt
 
   ![Výstup matplotlib příklad](media/environments-add-matplotlib3.png)
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-step"></a>Další krok
 
 > [!div class="nextstepaction"]
 > [Práce s úložištěm Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)

@@ -2,8 +2,8 @@
 title: Přehled podokna akcí | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 902301021a698dfd0f6e9f09b000c1e4e403e029
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fa20f8be093ae064daba731833709fd8f54f551
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="actions-pane-overview"></a>Přehled podokna akcí
   Podokna akcí je nastavit vlastní **akcích dokumentu** podokna úloh, který je připojený ke konkrétní dokument aplikace Microsoft Office Word nebo sešitu aplikace Microsoft Office Excel. Je umístěn uvnitř do podokna úloh Office spolu s další podokna integrované úlohy, jako **zdroj dat XML** v aplikaci Excel nebo **styly a formátování** podokna úloh v aplikaci Word. Ovládací prvky Windows Forms nebo ovládacích prvků WPF slouží k návrhu uživatelské rozhraní podokna akce.  

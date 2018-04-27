@@ -11,15 +11,15 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5fc6004c17614620f4ba75fb13258a685536c28b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 11a624ec6582e5e07e51de6d4ab29b84dc53d4a1
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>Vzdálené ladění kódu jazyka Python v Azure
 
-[Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md) zahrnuje možnost vzdáleně ladění kódu Python, která běží na Azure App Service. Na rozdíl od jednoduchého vzdáleného ladění, cílový počítač v tomto scénáři není přímo přístupné přes protokol TCP, proto Visual Studio poskytuje proxy server, který zveřejňuje protokol ladicí program přes protokol HTTP. Projekty vytvořené pomocí šablony webového automaticky tento proxy server nakonfigurovat v vygenerovaného `web.debug.config` souboru. Vzdálené ladění je také povoleno, když publikujete konfiguraci ladění projektu, jak je popsáno na [publikování do služby Azure App Service](python-web-application-project-templates.md#publishing-to-azure-app-service).
+[Python podporují v sadě Visual Studio](installing-python-support-in-visual-studio.md) zahrnuje možnost vzdáleně ladění kódu Python, která běží na Azure App Service. Na rozdíl od jednoduchého vzdáleného ladění, cílový počítač v tomto scénáři není přímo přístupné přes protokol TCP, proto Visual Studio poskytuje proxy server, který zveřejňuje protokol ladicí program přes protokol HTTP. Projekty vytvořené pomocí šablony webového automaticky tento proxy server nakonfigurovat v vygenerovaného `web.debug.config` souboru. Vzdálené ladění je také povoleno, když publikujete konfiguraci ladění projektu, jak je popsáno na [publikování do služby Azure App Service] (publishing-python-web-applications-k-azure-from-visual-studio.md.
 
 Protože Azure vzdálené ladění používá webové sokety, sockets musí být povolen pro App Service pomocí [portál Azure](https://portal.azure.com) přechodem na **Nastavení > Nastavení aplikace** vypíná a zapíná  **Obecná nastavení > webové sokety** k **na**, pak výběrem **Uložit** na použití změny. (Všimněte si, že **ladění** nastavení se nevztahuje na ladění Python.)
 

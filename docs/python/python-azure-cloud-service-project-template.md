@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 2acaa7a8012d8ef411eed065d8b4e134b4e52c1e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projekty Azure cloudových služeb pro jazyk Python
 
 Visual Studio poskytuje šablony vám pomohou začít vytvářet Azure Cloud Services používá Python.
 
-A [Cloudová služba](https://docs.microsoft.com/en-us/azure/cloud-services/) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každá provádí koncepčně samostatná úloha, ale můžete samostatně replikaci podle potřeby pro škálování virtuálních počítačů. Webové role poskytují hostování pro front-end webové aplikace. Python jsou obavy, všechny webové rozhraní, které podporuje WSGI můžete použít pro zapsání takové aplikace (podporuje [šablona projektu webové](python-web-application-project-templates.md)). Role pracovního procesu jsou určeny k dlouho běžící procesy, které není komunikovat přímo s uživateli. Obvykle provádění pomocí balíčků v balíčku "azure", který se instaluje s [ `pip install azure` ](http://pypi.org/project/azure).
+A [Cloudová služba](https://docs.microsoft.com/azure/cloud-services/) se skládá z libovolného počtu *rolí pracovního procesu* a *webové role*, z nichž každá provádí koncepčně samostatná úloha, ale můžete samostatně replikaci podle potřeby pro škálování virtuálních počítačů. Webové role poskytují hostování pro front-end webové aplikace. Python jsou obavy, všechny webové rozhraní, které podporuje WSGI můžete použít pro zapsání takové aplikace (podporuje [šablona projektu webové](python-web-application-project-templates.md)). Role pracovního procesu jsou určeny k dlouho běžící procesy, které není komunikovat přímo s uživateli. Obvykle provádění pomocí balíčků v balíčku "azure", který se instaluje s [ `pip install azure` ](http://pypi.org/project/azure).
 
 Tento článek obsahuje podrobné informace o šabloně projektů a další podporu Visual Studio 2017 (starší verze jsou podobné, ale některé rozdíly). Další informace o práci s Azure z Python, přejděte [Azure střediska pro vývojáře Python](https://docs.microsoft.com/en-us/python/azure/?view=azure-python).
 

@@ -2,8 +2,8 @@
 title: Přístup k pásu karet za běhu | Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6129779b66406ffe24dbe65e03b289cb917c1ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c44e98a917b0df8f8a2760540333118cf8134d9c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="accessing-the-ribbon-at-run-time"></a>Přístup k pásu karet za běhu
   Můžete napsat kód pro zobrazení, skrytí a upravit na pásu karet a povolit uživatelům spustit kód z ovládacích prvků v vlastního podokna úloh, podokna akce nebo oblasti formuláře aplikace Outlook.  

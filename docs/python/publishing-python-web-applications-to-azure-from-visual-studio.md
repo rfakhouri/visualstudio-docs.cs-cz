@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4e8d28bb96fa17a82d758f5708fd592128296e7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="publishing-to-azure-app-service"></a>Publikování do služby Azure App Service
 
@@ -78,7 +78,7 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
 
 1. V sadě Visual Studio **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a vyberte **Přidat > novou položku...* . V dialogovém okně se zobrazí výběrem šablony "Azure web.config (rychlé CGI)" a vyberte možnost OK. Tím se vytvoří `web.config` souboru do kořenového adresáře projektu.
 
-1. Změnit `PythonHandler` položku v `web.config` tak, aby cesta odpovídá Python instalace na serveru. Příklad pro jazyk Python 3.6.1 x64 položky by měl vypadat takto:
+1. Změnit `PythonHandler` položku v `web.config` tak, aby cesta odpovídá Python instalace na serveru (najdete v části [odkaz Konfigurace služby IIS](https://www.iis.net/configreference) (iis.net) najdete přesné informace). Příklad pro jazyk Python 3.6.1 x64 položky by měl vypadat takto:
 
     ```xml
     <system.webServer>
@@ -106,7 +106,7 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
         <add key="WSGI_HANDLER" value="FlaskAzurePublishExample.app"/>
         ```
 
-    - **Django**: dvě změny jsou potřeba k `web.config` pro aplikace Django. Nejprve změnit `WSGI_HANDLER` hodnotu `django.core.wsgi.get_wsgi_application()` (objekt je ve `wsgi.py` souborů):
+    - **Django**: dvě změny jsou potřeba k `web.config` pro projekty Django. Nejprve změnit `WSGI_HANDLER` hodnotu `django.core.wsgi.get_wsgi_application()` (objekt je ve `wsgi.py` souborů):
 
         ```xml
         <!-- Django apps only -->
@@ -119,7 +119,7 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
         <add key="DJANGO_SETTINGS_MODULE" value="DjangoAzurePublishExample.settings" />
         ```
 
-1. **Jenom aplikace Django**: ve složce, která odpovídá názvu vašeho projektu, otevřete `settings.py` a přidejte domény adresy URL webu `ALLOWED_HOSTS` jak vidíte níže, nahraďte 'vspython-test-02.azurewebsites .net, adresa URL, samozřejmě:
+1. **Jenom aplikace Django**: projektu v Django `settings.py` soubor, přidejte domény adresy URL webu `ALLOWED_HOSTS` jak vidíte níže, nahraďte 'vspython-test-02.azurewebsites .net, adresa URL, samozřejmě:
 
     ```python
     # Change the URL to your specific site
@@ -128,9 +128,13 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
 
     Nepodařilo se přidat adresu URL do pole výsledků v chybě "DisallowedHost / neplatný HTTP_HOST záhlaví: '\<URL webů\>'. Budete muset přidat '\<URL webů\>' k ALLOWED_HOSTS. "
 
+    Upozorňujeme, že pokud je pole prázdné, Django umožňuje automaticky "localhost", ale přidání URL produkční odebere této možnosti. Pro tohoto důvodu můžete chtít udržovat samostatné vývoj a produkční zkopíruje z `settings.py`, nebo použít k řízení běhu hodnoty proměnné prostředí.
+
 1. V **Průzkumníku řešení**, rozbalte složku se stejným názvem jako projektu, klikněte pravým tlačítkem myši `static` složky, vyberte **Přidat > novou položku...** , vyberte šablonu, "Azure statické soubory web.config" a vyberte **OK**. Tato akce vytvoří jiné `web.config` v `static` složky, která zakáže Python zpracování pro tuto složku. Tato konfigurace zasílá požadavky pro statické soubory na webový server výchozí spíše než v aplikaci Python.
 
 1. Uložte projekt, pak v sadě Visual Studio **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt a vyberte **publikovat**.
+
+    ![Publikování příkaz na místní nabídku projektu](media/template-web-publish-command.png)
 
 1. V **publikovat** kartu, která se zobrazí, vyberte cíl publikování:
 
@@ -166,8 +170,8 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
 
     e. Zkuste restartovat App Service po instalaci nové balíčky. Restart je nezbytný, při změně `web.config`, jak služba aplikace nemá automatické restartování vždy, když `web.config` změny.
 
-    > [!Tip] 
-    > Pokud provedete změny do vaší aplikace `requirements.txt` souboru, je nutné znovu nainstalovat všechny balíčky, které jsou nyní uvedeny v tomto souboru pomocí konzole Kudu. 
+    > [!Tip]
+    > Pokud provedete změny do vaší aplikace `requirements.txt` souboru, je nutné znovu nainstalovat všechny balíčky, které jsou nyní uvedeny v tomto souboru pomocí konzole Kudu.
 
 1. Po dokončení konfigurace plně prostředí serveru, aktualizujte stránku v prohlížeči a webové aplikace by se měla objevit.
 
@@ -175,7 +179,7 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
 
 ## <a name="publishing-to-app-service---visual-studio-2015"></a>Publikování do služby App Service – Visual Studio 2015
 
-> [!Note] 
+> [!Note]
 > Krátké video tohoto procesu můžete najít na [kurzu Python Visual Studio: vytváření webu](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6) (webu youtube.com, 3m10s).
 
 1. V **Průzkumníku řešení**, klikněte pravým tlačítkem na projekt vyberte **publikovat**.
@@ -195,7 +199,7 @@ Publikování do služby Azure App Service z kopie Visual Studio 2017 pouze soub
 
 1. Vyberte **Další >** podle potřeby zkontrolovat další nastavení. Pokud máte v úmyslu [vzdáleně ladit kód Python ve službě Azure](debugging-remote-python-code-on-azure.md), je nutné nastavit **konfigurace** k **ladění**
 
-1. Vyberte **publikování**. Jakmile vaše aplikace je nasazená do Azure, výchozí prohlížeč otevře na daném webu. 
+1. Vyberte **publikování**. Jakmile vaše aplikace je nasazená do Azure, výchozí prohlížeč otevře na daném webu.
 
 Jako součást tohoto procesu Visual Studio také provede následující kroky:
 

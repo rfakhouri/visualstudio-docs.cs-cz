@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a23835ddeb143c723f4275ec337168dc783664b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Práce s Python v sadě Visual Studio v systému Windows
 
@@ -88,6 +88,7 @@ Visual Studio můžete spravovat složitost projektu růstem v čase. Projekt je
 Další informace:
 
 - Dokumenty: [Python Správa projektů](managing-python-projects-in-visual-studio.md)
+- Dokumenty: [položky templates – referenční informace](python-item-templates.md)
 - Dokumenty: [Python šablony projektu](managing-python-projects-in-visual-studio.md#project-templates)
 - Dokumenty: [práce s C++ a Python](working-with-c-cpp-python-in-visual-studio.md)
 - Funkce dokumentace obecné Visual Studio: [šablon projektů a položek](../ide/creating-project-and-item-templates.md#visual-studio-templates)

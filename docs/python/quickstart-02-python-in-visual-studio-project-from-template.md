@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 39e4b718ab7563e086f6ca2e85c31bd53b3c371c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e352f8a0fffb3972f326edc767b799295b2c802e
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Rychlý úvod: Vytvořte projekt Python ze šablony v sadě Visual Studio
 
@@ -59,7 +59,7 @@ Jakmile jste [nainstalována podpora v jazyce Python ve Visual Studio 2017](inst
 
 **Odpověď**: zatížením Python, který je nainstalován, Visual Studio poskytuje řadu šablon projektu, včetně těch, které jsou pro [webového rozhraní Django, Flask a Bottle](../python/python-web-application-project-templates.md), cloudových služeb Azure, jiný strojového učení scénáře a to i šablonu pro vytváření projektů z existující strukturu složky obsahující aplikace Python. Přístup prostřednictvím **soubor > Nový > projekt...**  dialogové okno výběrem **Python** jazyk uzel a jeho podřízené uzly.
 
-Visual Studio také poskytuje celou řadu souboru nebo *šablon položek* rychle vytvořit třídu Python, balíček Python, testování částí Python, soubory web.config a další. Až budete mít otevřít projekt Python, můžete přístup k šablon položek prostřednictvím **Projekt > Přidat novou položku...**  příkazu nabídky.
+Visual Studio také poskytuje celou řadu souboru nebo *šablon položek* rychle vytvořit třídu Python, balíček Python, testování částí Python, `web.config` soubory a další. Až budete mít otevřít projekt Python, můžete přístup k šablon položek prostřednictvím **Projekt > Přidat novou položku** příkazu nabídky. Najdete v článku [šablon položek](python-item-templates.md) odkaz.
 
 Pomocí šablon šetří důležité čas při vytváření projektu nebo vytváření souboru, a také jsou skvělý způsob, jak získat informace o různých typů aplikací a kódu struktury. Je užitečné trvat několik minut pro vytvoření projektů a položek z různých šablon se seznamte s co nabízejí.
 

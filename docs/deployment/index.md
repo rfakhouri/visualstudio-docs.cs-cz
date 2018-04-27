@@ -2,16 +2,22 @@
 layout: LandingPage
 title: Nasazení aplikací v sadě Visual Studio | Microsoft Docs
 description: Další informace o použití Visual Studio 2017 k nasazení aplikací, služeb a komponent.
+ms.topic: landing-page
 ms.technology: vs-ide-deployment
-ms.openlocfilehash: 269cf84fcb1a1928983c9a9c12f97dd616eae7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.author: mikejo
+author: mikejo5000
+manager: douge
+ms.openlocfilehash: 3f28c08519097c844655d77f3647d718cd852292
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="deployment-in-visual-studio"></a>Nasazení v sadě Visual Studio
 
 Visual Studio poskytuje několik různých nástrojů, které vám pomohou při nasazení aplikace.
+
+<h2>Prostředí sady Visual Studio nasazení s 5 minut "Quickstarts"</h2>
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -21,11 +27,11 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_road-map.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_road-map.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Přehled funkcí pro nasazení</h3>
+                        <h3>První pohled na možnosti nasazení</h3>
                     </div>
                 </div>
             </div>
@@ -39,7 +45,7 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +63,7 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,11 +81,88 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Nasazení do Azure App Service</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+<h2>Přejděte hlubší s kurzy</h2>
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/dotnet/core/deploying/deploy-with-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Nasazení .NET Core aplikace</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/windows/uwp/packaging/packaging-uwp-apps">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Balíček aplikace pro UPW pro Microsoft Store</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/aspnet/core/tutorials/publish-to-azure-webapp-using-vs">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Nasazení technologie ASP.NET do Azure</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/windows/uwp/porting/desktop-to-uwp-packaging-dot-net">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Balíček aplikace na ploše pro Microsoft Store (C#, C++)</h3>
                     </div>
                 </div>
             </div>
@@ -93,29 +176,11 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Python.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Nasazení do Azure Python</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="/cpp/ide/deployment-in-visual-cpp">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_learn-about.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Nasazení ve Visual C++</h3>
                     </div>
                 </div>
             </div>
@@ -129,11 +194,29 @@ Visual Studio poskytuje několik různých nástrojů, které vám pomohou při 
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/media/common/i_get-started.svg" alt="">
+                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>Nasazení aplikace na ploše použitím technologie ClickOnce</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Další informace o nasazení v jazyce Visual C++</h3>
                     </div>
                 </div>
             </div>

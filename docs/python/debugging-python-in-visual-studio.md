@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 576a8ffdd025667e811e96a712368de98bbe4cb4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="debugging-your-python-code"></a>Ladění kódu jazyka Python
 
@@ -125,7 +125,7 @@ V tomto okamžiku si můžete prohlédnout stav programu, včetně zásobníku v
 
 Zaškrtávací políčko pro každý ovládací prvky výjimka zda ladicího programu *vždy* dělí, když je aktivována. Toto políčko zaškrtněte, pokud chcete rozdělit častěji pro konkrétní výjimku.
 
-Ve výchozím nastavení většina výjimek přerušení při obslužnou rutinu výjimky nebyl nalezen ve zdrojovém kódu. Toto chování změnit, klikněte pravým tlačítkem na jakékoli výjimky a zaškrtněte nebo zrušte zaškrtnutí **pokračovat v případě neošetřené v uživatelském kódu**. Pokud chcete rozdělit méně často pro výjimku, zrušte zaškrtnutí tohoto políčka.
+Ve výchozím nastavení většina výjimek přerušení při obslužnou rutinu výjimky nebyl nalezen ve zdrojovém kódu. Toto chování změnit, klikněte pravým tlačítkem na jakékoli výjimky a upravovat **pokračovat v případě neošetřené v uživatelském kódu** možnost. Pokud chcete rozdělit méně často pro výjimku, zrušte zaškrtnutí tohoto políčka.
 
 Chcete-li konfigurovat výjimku, které nejsou uvedené v tomto seznamu, klikněte na tlačítko **přidat** tlačítko Přidat. Název musí odpovídat názvu úplné výjimky.
 

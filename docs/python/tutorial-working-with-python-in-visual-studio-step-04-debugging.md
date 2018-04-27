@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d76ed2511ae5b8b51a08baf1e0c638c2e0fae73f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="step-4-running-code-in-the-debugger"></a>Krok 4: Spuštění kódu v ladicím programu
 
@@ -100,7 +100,7 @@ Kromě správy projektů, zajištění s formátováním úpravy prostředí a o
 > [!Tip]
 > V některých situacích, jako je například selhání při spuštění překladač Pythonu, samostatně může ve výstupním okně zobrazí pouze stručně a pak zavřete automaticky bez s možností zobrazíte všechny chyby zprávy. Pokud k tomu dojde, klikněte pravým tlačítkem na projekt v Průzkumníku řešení, vyberte **vlastnosti**, vyberte **ladění** kartě a pak přidejte `-i` k **překladač argumenty** pole. Tento argument způsobí, že překladač uvést do režimu interaktivní po dokončení programu, a tím zprovozní okno Otevřít zadejte Ctrl + Z, zadejte ukončíte.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-step"></a>Další krok
 
 > [!div class="nextstepaction"]
 > [Instalace balíčků ve vašem prostředí Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)

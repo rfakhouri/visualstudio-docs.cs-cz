@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7425755f72929cbf2574d6420d9c2ec4c62dc20
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="python-projects-in-visual-studio"></a>Python projekty v sadě Visual Studio
 
@@ -41,9 +41,9 @@ Visual Studio poskytuje řadu šablon projektu Python rychle nastavit počet str
 
 ## <a name="adding-files-assigning-a-startup-file-and-setting-environments"></a>Přidávání souborů, přiřazení spouštění souborů a nastavení prostředí
 
-Když budete vyvíjet aplikace, musíte obvykle do projektu přidejte nové soubory různých typů. Přidání tyto soubory se provádí kliknutím pravým tlačítkem na projekt a výběrem **Přidat > existující položka...** . pomocí které můžete vyhledat soubor, který chcete přidat, nebo **Přidat > novou položku...** , který zobrazí dialogové okno s různými šablon položek. Šablony zahrnují soubory prázdný python, třídu python, testování částí a různé soubory vztahující se k webovým aplikacím. Tyto možnosti se testovacího projektu se dozvíte, co je k dispozici ve vaší verzi sady Visual Studio můžete prozkoumat.
+Když budete vyvíjet aplikace, musíte obvykle do projektu přidejte nové soubory různých typů. Přidání tyto soubory se provádí kliknutím pravým tlačítkem na projekt a výběrem **přidat** > **existující položka** s který vyhledáváte soubor, který chcete přidat, nebo **přidat**  >  **Nová položka**, který zobrazí dialogové okno s různými šablon položek. Jak je popsáno na [šablon položek](python-item-templates.md) odkaz, možnosti zahrnují soubory prázdný python, třídu python, testování částí a různé soubory vztahující se k webovým aplikacím. Tyto možnosti se testovacího projektu se dozvíte, co je k dispozici ve vaší verzi sady Visual Studio můžete prozkoumat.
 
-Každý projekt Python má jeden soubor přiřazené spuštění zobrazeny tučným v Průzkumníku řešení. Spouštěcí soubor je soubor, který se spustí při spuštění ladění (F5 nebo **ladění > Spustit ladění**) nebo při spuštění projektu v okně interaktivní (Shift + Alt + F5 nebo **ladění > spustit projekt v Pythonu Interaktivní**). Chcete-li ji změnit, klikněte pravým tlačítkem na nový soubor a vyberte **nastavit jako spouštěcí soubor**.
+Každý projekt Python má jeden soubor přiřazené spuštění zobrazeny tučným v Průzkumníku řešení. Spouštěcí soubor je soubor, který se spustí při spuštění ladění (F5 nebo **ladění** > **spustit ladění**) nebo při spuštění projektu v okně interaktivní (Shift + Alt + F5 nebo  **Ladění** > **spustit projekt v Pythonu interaktivní**). Chcete-li ji změnit, klikněte pravým tlačítkem na nový soubor a vyberte **nastavit jako spouštěcí soubor**.
 
 > [!Tip]
 > Když odeberete vybranou spouštěcí soubor z projektu a nevybírejte nový, Visual Studio nebude vědět, co Python souboru začínat při pokusu o spuštění projektu. V tomto případě Visual Studio 2017 verze 15.6 a novější zobrazuje chybu; starší verze buď otevřete okno výstup s překladač Pythonu systémem nebo se zobrazí ve výstupním okně se zobrazí, ale pak zmizí téměř okamžitě. Pokud dojde k některé z těchto projevů, zkontrolujte, že budete mít soubor přiřazené spuštění.
@@ -58,7 +58,7 @@ Nový projekt je vždy přidružen prostředí výchozí globální Python. Chce
 
 ## <a name="project-templates"></a>Šablony projektů
 
-Visual Studio poskytuje několik způsobů, jak nastavit projekt Python, od začátku, nebo z existujícího kódu. Chcete-li použít šablonu, vyberte **soubor > Nový > projekt...**  příkaz nabídky nebo klikněte pravým tlačítkem na řešení v Průzkumníku řešení a vyberte **Přidat > Nový projekt...** , které obě zprovoznit **nový projekt** dialogu níže. Specifické pro Python šablony zobrazíte hledání "Python" nebo vyberte **nainstalovaná > Python** uzlu:
+Visual Studio poskytuje několik způsobů, jak nastavit projekt Python, od začátku, nebo z existujícího kódu. Chcete-li použít šablonu, vyberte **soubor** > **nový** > **projektu** příkaz nabídky nebo klikněte pravým tlačítkem na řešení v Průzkumníku řešení a vyberte **Přidat** > **nový projekt**, které obě zprovoznit **nový projekt** dialogu níže. Specifické pro Python šablony zobrazíte hledání "Python" nebo vyberte **nainstalovaná** > **Python** uzlu:
 
 ![Dialogové okno Nový projekt se šablonami Python](media/projects-new-project-dialog.png)
 
@@ -69,7 +69,7 @@ Následující tabulka shrnuje šablony dostupné na Visual Studio 2017 (ne vše
 | [Z existujícího kódu jazyka Python](#creating-a-project-from-existing-files) | Projekt sady Visual Studio vytvoří z existujícího kódu Python ve struktuře složek.  |
 | Aplikace Python | Struktura základního projektu pro novou aplikaci Python s jeden, prázdný zdrojového souboru. Ve výchozím projektu spouští v konzole překladač výchozí globální prostředí, které můžete změnit [přiřazení do různých prostředí](selecting-a-python-environment-for-a-project.md). |
 | [Cloudové služby Azure](python-azure-cloud-service-project-template.md) | Projekt pro cloudové služby Azure napsané v Pythonu. |
-| [Webové projekty](python-web-application-project-templates.md) | Projekty pro webové servery založené na různé platformy, včetně charakteristické znaky Bottle, Flask a Django Flask/Jade. |
+| [Webové projekty](python-web-application-project-templates.md) | Projekty pro webové aplikace založené na různé platformy, včetně Bottle, Flask a Django. |
 | IronPython aplikace | Podobně jako šablona aplikací Python, ale používá IronPython ve výchozí povolení rozhraní .NET spolupráce a ve smíšeném režimu ladění s jazyky rozhraní .NET. |
 | Aplikace IronPython WPF | Struktura projektu pomocí IronPython soubory Windows Presentation Foundation XAML pro uživatelské rozhraní aplikace. Visual Studio poskytuje návrháře XAML uživatelského rozhraní, kódu může být napsané v Pythonu a spuštění aplikace bez zobrazení konzoly. |
 | IronPython Silverlight webové stránky | Projekt IronPython, který běží v prohlížeči pomocí programu Silverlight. Kód aplikace Python je součástí webové stránky jako skript. Vrátí značku skriptu standardní dolů určitý kód JavaScript, která inicializuje IronPython systémem uvnitř Silverlight, ze kterého může váš kód Python zasahovat modelu DOM. |
@@ -80,7 +80,7 @@ Následující tabulka shrnuje šablony dostupné na Visual Studio 2017 (ne vše
 > [!Note]
 > Protože Python je interpretovaný jazyk, Python projekty v sadě Visual Studio nepřispívají k samostatnému spustitelnému souboru jako další projekty kompilované jazyka (C#, např.). Další informace najdete v tématu [otázky a odpovědi](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-<a name="create-project-from-existing-files"</a>
+<a name="create-project-from-existing-files"></a>
 
 ### <a name="creating-a-project-from-existing-files"></a>Vytvoření projektu z existujících souborů
 

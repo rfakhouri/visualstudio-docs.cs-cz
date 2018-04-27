@@ -9,11 +9,11 @@ description: Zjistěte, jak mohou správci přiřadit licence odběratele
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 62336656e551a085c6c8753e6baea06730f49510
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4cce35d361e3a1f8af2c2268e2ef6cbd061710ea
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="assigning-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Přiřazování licencí na portálu správce předplatných Visual Studio
 
@@ -30,10 +30,10 @@ Pokud máte k dispozici licence pro předplatné sady Visual Studio, můžete p�
 
 3.  Zadejte informace do polí formuláře pro nové odběratele. Pokud vaše organizace používá Azure Active Directory, v tomto poli funguje jako funkce vyhledávání, která se v aktuálním adresáři najít účastníka, takže můžete vybrat správné uživatelské ve výsledcích hledání. Jakmile vyberete osoba, jeho název, přihlášení e-mailu a e-mailové oznámení bude automaticky vyplnit jak vidíte níže. 
 
-    Pokud má vaše organizace jiný e-mail pro příjem e-mailů než ten, který se má použít pro přihlášení, máte možnost pro zadání ho sem. Vyberte na odkaz, který označuje "Jinou e-mailovou komunikaci než přihlášení?". 
+    Pokud vaše organizace nepoužívá Azure Active Directory (Azure AD), ale má jiné e-mailu pro příjem e-mailů než ten, který se má použít pro přihlášení, máte možnost pro zadání ho sem. Vyberte hypertextový odkaz s označením "Přidat jinou e-mailovou pro přijímající komunikaci". 
 
     **Přístup ke stažení:**  
-    Pokud chcete mít přístupu pro stahování softwaru při zápisu do tohoto odběratele [Visual Studio odběry portál](https://my.visualstudio.com?wt.mc_id=o~msft~docs), ponechte zaškrtnutým políčkem stahování. Pokud zvolíte možnost zrušte zaškrtnutí tohoto políčka, uživatel nebude mít přístup k stažení softwaru, ale bude mít dál přístup k všechny další výhody, které jsou zahrnuty v rámci předplatného. 
+    Pokud chcete tohoto odběratele, tak, aby měl přístupu pro stahování softwaru při zápisu do [Visual Studio odběry portál](https://my.visualstudio.com?wt.mc_id=o~msft~docs), ponechte přepínač stahování povolena. Rozhodli jste se zakázat stahování, uživatel nebude mít přístup k stažení softwaru, ale bude mít dál přístup k všechny další výhody, které jsou zahrnuty v rámci předplatného. 
     
     Po dokončení výběru možnosti tohoto odběratele, klikněte na tlačítko **přidat**.
 
@@ -45,7 +45,7 @@ Pokud máte k dispozici licence pro předplatné sady Visual Studio, můžete p�
     ![Přidat odběratele](_img\assign-license-add\add-subscriber-complete.png)
 
 ## <a name="bulk-assignments"></a>Hromadné přiřazení
-1.  Chcete-li přidat více odběrateli, přejděte na **Odběratelé, kteří** kartě. Na pásu karet v horní části, klikněte na tlačítko **hromadné přidání**. 
+1.  Chcete-li přidat více odběrateli, přejděte na **spravovat odběratele** kartě. Na pásu karet v horní části, klikněte na tlačítko **hromadné přidání**. 
 
     ![Hromadné přidání](_img\assign-license-add\bulk-assign-add.png)
 
@@ -53,7 +53,7 @@ Pokud máte k dispozici licence pro předplatné sady Visual Studio, můžete p�
 
     ![Nahrát několik odběratele](_img\assign-license-add\bulk-assign-upload.png)
 
-3.  Vyplňte pole pomocí informací pro jednotlivce, které chcete přiřadit odběry v tabulce aplikace Excel. Odkaz je volitelné pole. Pokud jste vyplnili všechny součástí šablony nesprávně, měli byste vidět chybová zpráva s popisem problému. Uložte soubor na vašem pevném disku po dokončení.
+3.  Vyplňte pole pomocí informací pro jednotlivce, které chcete přiřadit odběry v tabulce aplikace Excel. Odkaz je volitelné pole. Pokud jste vyplnili všechny součástí šablony nesprávně, měli byste vidět chybová zpráva s popisem problému. Uložte soubor místně jednou provést.
 **K zajištění načtení smooth, sledujte následující osvědčené postupy:**
     - Ujistěte se, že žádná z pole formuláře obsahovat čárky.
     - Odebrání mezer před a po polí formuláře, jako jsou jména uživatelů.

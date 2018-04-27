@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6f6db6e33b100955c1819b037099f876b1da8014
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4c7c4f0174b81c8f527c02da951c7e58de8752ec
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="working-with-python-in-visual-studio"></a>Práce s Python v sadě Visual Studio
 
@@ -31,9 +31,7 @@ Visual Studio poskytuje prvotřídní podporu pro jazyk Python. Tento kurz vás 
 - [Krok 5: Instalace balíčků a správu prostředí Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Krok 6: Práce s Gitem](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-## <a name="prerequisites"></a>Požadavky
-
-- Visual Studio 2017 se zatížením Python, který je nainstalovaný. V tématu [krok 0](tutorial-working-with-python-in-visual-studio-step-00-installation.md) pokyny.
+[!INCLUDE[tutorial-prereqs](includes/tutorial-prereqs.md)]
 
 ## <a name="step-1-create-a-new-python-project"></a>Krok 1: Vytvořte nový projekt Python
 
@@ -69,7 +67,7 @@ V tomto kurzu začnete s Jednoduchý projekt obsahující soubor jeden, prázdn�
 
     Klikněte pravým tlačítkem na libovolný uzel nebo položky v Průzkumníku řešení pro přístup k nabídce použít příkazy. Například **přejmenovat** příkaz umožňuje změnit název libovolný uzel nebo položky, včetně projektu a řešení.
 
-## <a name="next-steps"></a>Další kroky
+## <a name="next-step"></a>Další krok
 
 > [!div class="nextstepaction"]
 > [Psaní a spuštění kódu](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)

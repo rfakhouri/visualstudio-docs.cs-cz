@@ -5,8 +5,6 @@ ms.date: 01/15/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
-dev_langs:
-- R
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
@@ -14,15 +12,15 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d8b88e327af895d39335695b16b44bf17efdb18b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e5494283fdf759ddc664207d62d40f7f83993632
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="linting-r-code-in-visual-studio"></a>Linting R kódu v sadě Visual Studio
 
-Linting je proces, který analyzuje kód na nich možné chyby, formátování problémů a obdobný kód například nesprávné prázdný znak. Linting také pomáhá podporovat určité konvence psaní kódu, například přidělování identifikátorů názvů, což je velmi užitečné v rámci týmů a jiných spolupráce situacích.
+Linting analyzuje kód na nich možné chyby, formátování problémů a obdobný kód například nesprávné prázdný znak. Linting také pomáhá podporovat určité konvence psaní kódu, například jak jsou pojmenované identifikátory. Takové konvence jsou užitečné v rámci týmů a jiných spolupráce situacích.
 
 R Tools pro Visual Studio (RTVS) poskytuje integrované linting pro R a chování, které jsou řízeny prostřednictvím nejrůznějších možností, které jsou popsané v tomto článku. Tyto možnosti se nacházejí v **nástroje > Možnosti > textový Editor > R > hadříkem**.
 
@@ -32,7 +30,7 @@ Když je povolené, linting se použije v editoru během psaní. Problémy se zo
 
 ![Příklady linting pro kód R](media/linting-01.png)
 
-Často mění linting možnosti v závislosti na potřebách projektu nebo souboru. Například může použít ukázkový kód z kurzu online `=` místo `<-` společně s pascalcase identifikátory. Takový kód by zobrazit časté linting upozornění, protože výchozí možnosti linting příznak těchto případech. Při práci s tímto kódem, pak je můžete jednoduše zakázat možnosti místo výdaje čas odstranění každá instance.
+Často mění linting možnosti v závislosti na potřebách projektu nebo souboru. Například může použít ukázkový kód z kurzu online `=` místo `<-` společně s pascalcase identifikátory. Takový kód by zobrazit časté linting upozornění, protože výchozí možnosti linting příznak těchto případech. Při práci s tímto kódem, pak můžete zakázat možnosti místo výdaje čas odstranění každá instance.
 
 ## <a name="assignment-group"></a>Přiřazení skupiny
 

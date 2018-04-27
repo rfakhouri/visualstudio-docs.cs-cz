@@ -9,11 +9,11 @@ description: Zjistěte, jak mohou správci najít jednotlivých odběratelů neb
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 45786b846cb62f5c02d6cc1e0e1c9fcb7dbb1993
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9e6d91ae6b7a2c77ab7a19dc9d689000fa866f17
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="searching-and-filtering-subscribers-in-visual-studio-subscriptions"></a>Vyhledávání a filtrování Odběratelé, kteří v sadě Visual Studio předplatných
 Visual Studio odběry portálu pro správu umožňuje vyhledat určitou dílčí sadu odběratelů na základě různých kritérií. Odběratel seznam podle názvu, e-mailovou adresu, úrovni předplatného a různé další informace můžete filtrovat. 
@@ -23,6 +23,5 @@ Visual Studio odběry portálu pro správu umožňuje vyhledat určitou dílčí
     ![Filtr odběratele](_img\edit-license\filter-list.png)
 
 2.  Zobrazí se zobrazí, že můžete použít jako kritéria vyhledávání mnoho polí. Vyberte požadovanou kritéria, kterou chcete použít jako základ pro hledání a potom klikněte na **filtru**. Pak uvidíte seznam odběratele, kteří splňují kritéria, které jste zvolili.
-
-    ![Najít odběratele](_img\search-filter\search-filter-find.png)
+![Najít odběratele](_img\search-filter\search-filter-find.png)
 

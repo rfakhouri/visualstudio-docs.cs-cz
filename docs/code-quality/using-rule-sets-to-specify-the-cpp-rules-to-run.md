@@ -1,6 +1,6 @@
 ---
 title: Použití sad pravidel k určování pravidel C++ pro spuštění
-ms.date: 11/04/2016
+ms.date: 04/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
@@ -9,15 +9,19 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 571d54bb6bdf3673da8e40d6075c5b961d248fe5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ccb64fba6a646de0974c9de6e35beb98738b7300
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Použití sad pravidel k určování pravidel C++ pro spuštění
 
-V sadě Visual Studio, můžete vytvořit a upravit vlastní *sadu pravidel* podle potřeb konkrétní projekt přidružené analýza kódu. Chcete-li vytvořit vlastní pravidlo C++ nastaven, projekt C/C++ musí být otevřený v prostředí Visual Studio IDE. Otevřete sadu standardních pravidel v nástroji editor sad pravidel a pak přidejte nebo odebrání specifická pravidla a volitelně změňte akci, která nastane, když analýza kódu určuje, že došlo k porušení pravidlo.
+V sadě Visual Studio, můžete vytvořit a upravit vlastní *sadu pravidel* podle potřeb konkrétní projekt přidružené analýza kódu. Výchozí pravidlo sady jsou uloženy v `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+
+**Visual Studio 2017 verze 15.7** můžete vytvořit vlastní pravidlo sady pomocí libovolného textového editoru a použít je v sestavení příkazového řádku bez ohledu na to, co sestavení systému, kterou používáte. Další informace najdete v tématu [/ analyze: ruleset](/cpp/build/reference/analyze-code-quality).
+
+Pokud chcete vytvořit vlastní pravidlo C++ nastavení v sadě Visual Studio, musí být projektu C/C++ otevřít v prostředí Visual Studio IDE. Otevřete sadu standardních pravidel v nástroji editor sad pravidel a pak přidejte nebo odebrání specifická pravidla a volitelně změňte akci, která nastane, když analýza kódu určuje, že došlo k porušení pravidlo.
 
 Chcete-li vytvořit nové vlastní pravidlo nastavte, ukládáte ji pomocí nový název souboru. Sadu vlastních pravidel se automaticky přiřadí do projektu.
 
@@ -72,3 +76,20 @@ Chcete-li vytvořit nové vlastní pravidlo nastavte, ukládáte ji pomocí nov�
 - Pro přepínání zobrazení a skrytí pravidla, které jsou přiřazeny **žádné** akce, zvolte **zobrazit pravidla, která nejsou povolené**.
 
 - Chcete-li přidat nebo odebrat Microsoft výchozí pravidlo nastaví aktuální sady pravidel, zvolte **přidat nebo odebrat sady pravidel podřízené**.
+
+## <a name="to-create-a-rule-set-in-a-text-editor"></a>K vytvoření pravidla, nastavte v textovém editoru
+
+Můžete vytvořit vlastní sady pravidel v textový editor, uložit do libovolného umístění s `.ruleset` rozšíření a vztahují se [/ analyze: ruleset](/cpp/build/reference/analyze-code-quality) – možnost kompilátoru.
+
+Následující příklad ukazuje, že soubor, který můžete použít jako východisko nastaveno základní pravidlo:
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```

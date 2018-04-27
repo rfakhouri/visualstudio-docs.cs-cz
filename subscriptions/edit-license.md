@@ -9,20 +9,18 @@ description: Zjistěte, jak správci můžete upravit přiřazení předplatnéh
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fa700e62f6491321aae2696739f85b7cfd4cecd3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9ea5f6bc562ce520be08728facfb6099df95ca4c
+ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="editing-visual-studio-subscription-assignments"></a>Úpravy přiřazení předplatné sady Visual Studio
 
-Jako správce předplatného máte možnost provést změny odběry přiřazeny uživatelům v rámci vaší organizace.  Tento článek popisuje typy změny, které můžete provést a poskytuje potřebné kroky. 
+Jako správce předplatného můžete provést změny odběry přiřazeny uživatelům v rámci vaší organizace.  Tento článek popisuje typy změn, můžete provést a poskytuje potřebné kroky. 
 
 ## <a name="making-changes-to-subscriber-information"></a>Provádění změn informace o odběru
 Můžete upravit informace odběratele opravte chyby nebo aktualizovat informace. 
-> [!NOTE]
-> Úpravy e-mailovou adresu odběratele způsobí, že všechny stávající výhody resetování.
 
 Chcete-li upravit odběratele, vyberte na výpustky (...), které se zobrazují vedle e-mailová adresa odběratele, při přesunutí ukazatele myši nad ním. Zobrazí se rozevírací seznam.  Vyberte **upravit** upravit podrobnosti odběratele. Můžete také dvakrát klikněte na řádek odběratele v mřížce a otevřete okno Upravit.
 
