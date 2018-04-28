@@ -11,16 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbeeca2e53addab923fa3f62c661543497ea1f35
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c3c89def201f0045d561b180bd3af521ba4c2de
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Krok 7: Přidejte problémy násobení a dělení
 V sedmého části tohoto kurzu budete přidejte problémy násobení a dělení, ale nejdřív myslíte o tom, jak tuto změnu provést. Zvažte počáteční krok, který zahrnuje ukládání hodnot.  
 
-### <a name="to-add-multiplication-and-division-problems"></a>Chcete-li přidat násobení a dělení  
+## <a name="to-add-multiplication-and-division-problems"></a>Chcete-li přidat násobení a dělení  
 
 1.  Přidejte do formuláře čtyři další proměnné celé číslo.  
 
@@ -38,9 +38,9 @@ V sedmého části tohoto kurzu budete přidejte problémy násobení a dělení
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]  
 
      Nelze snadno zadat znak násobení (x) a dělení přihlašovací (÷) pomocí klávesnice, takže Visual C# a Visual Basic přijměte hvězdičku (*) pro násobení a lomítko (/) pro dělení.  
-
-4.  Poslední část obslužné rutiny události časovače značek změňte tak, že vyplní správnou odpověď, když vyprší čas.  
-
+  
+4.  Poslední část časovače změnit <xref:System.Windows.Forms.Timer.Tick> obslužné rutiny události, které se vyplní správné odpovědi, když určité doby.  
+  
      [!code-vb[VbExpressTutorial3Step7#23](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_4.vb)]
      [!code-csharp[VbExpressTutorial3Step7#23](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_4.cs)]  
 
@@ -49,10 +49,10 @@ V sedmého části tohoto kurzu budete přidejte problémy násobení a dělení
      Píší kvízu s časovým limitem poznámky musí odpovědět na čtyři úlohy k dokončení kvízu, jak ukazuje následující obrázek.  
 
      ![Matematického kvízu s čtyři problémy](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
-Matematického kvízu s čtyři problémy  
-
-### <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
-
+**Matematického kvízu** čtyři problémů  
+  
+## <a name="to-continue-or-review"></a>Chcete-li pokračovat nebo přezkoumat  
+  
 -   Chcete-li přejít k dalšímu kroku kurzu, přečtěte si téma [krok 8: přizpůsobení kvízu](../ide/step-8-customize-the-quiz.md).  
-
+  
 -   Chcete-li vrátit k předchozímu kroku kurzu, přečtěte si téma [krok 6: přidejte problém odečtení](../ide/step-6-add-a-subtraction-problem.md).

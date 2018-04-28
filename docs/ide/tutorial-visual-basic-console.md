@@ -13,15 +13,15 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f0f5ed5049a0b7374aaf884f80b3d212330cc0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2348872baee6bfd073611b9e11d42295babedc37
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="getting-started-with-visual-basic-in-visual-studio"></a>Začínáme s jazykem Visual Basic v sadě Visual Studio
+# <a name="get-started-with-visual-basic-in-visual-studio"></a>Začínáme s jazykem Visual Basic v sadě Visual Studio
 
-V tomto kurzu pro Visual Basic (VB) budete používat Visual Studio k vytvoření a spuštění aplikace několik různých konzoly a prozkoumat některé funkce sady Visual Studio [integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
+V tomto kurzu pro Visual Basic (VB) budete používat Visual Studio k vytvoření a spuštění aplikace několik různých konzoly a prozkoumat některé funkce [Visual Studio integrované vývojové prostředí (IDE)](visual-studio-ide.md) při uděláte.
 
 Pokud jste ještě nenainstalovali Visual Studio, přejděte k [Visual Studio stáhne](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) stránky instalaci zdarma.
 
@@ -55,7 +55,7 @@ Nejdříve vytvoříme projekt aplikace Visual Basic. Typ projektu se dodává s
 
 1. Otevřete Visual Studio 2017.
 
-2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
+2. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu**.
 
 3. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Potom zadejte název souboru *HelloWorld*.  
 
@@ -74,8 +74,7 @@ Pokud nevidíte **konzolové aplikace (.NET Core)** šablony projektu, můžete 
    ![Vývoj pro různé platformy zatížení .NET core v instalačním programu Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
 
 ##### <a name="option-2-use-the-tools-menu-bar"></a>Možnost 2: Pomocí nabídky panelu nástrojů
-
-1. Zrušit mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje** > **funkcí a nástrojů pro získání...** .
+1. Zrušit mimo **nový projekt** dialogové okno a z panelu horní nabídce zvolte **nástroje** > **funkcí a nástrojů pro získání**.
 
 2. Spustí instalační program Visual Studio. Vyberte **vývoj pro různé platformy .NET Core** zatížení a potom zvolte **upravit**.   
 
@@ -107,8 +106,7 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
 5. Stisknutím libovolné klávesy zavřete okno konzoly.
 
 ## <a name="create-a-calculate-this-application"></a>Vytvořit aplikaci "Vypočítat to"
-
-1. Otevřete Visual Studio 2017 a potom vyberte z panelu horní nabídce **soubor** > **nový** > **projektu...** .
+1. Otevřete Visual Studio 2017 a potom vyberte z panelu horní nabídce **soubor** > **nový** > **projektu**.
 
 2. V **nový projekt** dialogové okno v levém podokně rozbalte **jazyka Visual Basic**a potom zvolte **.NET Core**. V prostředním podokně vyberte **konzolové aplikace (.NET Core)**. Potom zadejte název souboru *CalculateThis*.  
 
@@ -141,7 +139,7 @@ Umožňuje vytvořit aplikaci, která vás vyzve k zadání vaše jméno a potom
 
 Blahopřejeme k dokončení tohoto kurzu! Další i informace o jazyka Visual Basic a Visual Studio IDE, najdete na následujících stránkách.
 
-* [Průvodce jazykem Visual Basic](/dotnet/visual-basic/index)
+* [Příručka jazyka Visual Basic](/dotnet/visual-basic/index)
 * [Co je nového v jazyce Visual Basic](/dotnet/visual-basic/getting-started/whats-new)
 * [IntelliSense pro soubory s kódem jazyka Visual Basic](visual-basic-specific-intellisense.md)
 * [Referenční dokumentace jazyka Visual Basic](/dotnet/visual-basic/language-reference/index)

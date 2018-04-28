@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 609c1656fbea78bf23480f35e9f70802d5cb1098
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fd4f00313cbbb7f082934bddff338f77f117fd5c
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Přizpůsobení sady Visual Studio IDE
 
@@ -40,7 +40,7 @@ Chcete-li změnit možnosti zabarvení v editoru, zadejte `environment` v **Snad
 
 Můžete změnit hlavní nabídky malá a velká písmena mezi **první písmeno velké** ("soubor") a **velká písmena** ("soubor"). Typ `environment` v **Snadné spuštění** vyberte **prostředí--> Obecné**a poté změňte **použít název případu stylů na řádku nabídek** možnost.
 
-### <a name="customze-menus-and-toolbars"></a>Customze nabídek a panelů nástrojů
+### <a name="customize-menus-and-toolbars"></a>Přizpůsobení nabídek a panelů nástrojů
 
 Chcete-li přidat nebo odebrat položky nabídky nebo panelu nástrojů, přečtěte si téma [postupy: přizpůsobení nabídek a panelů nástrojů](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 

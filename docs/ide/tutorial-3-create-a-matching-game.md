@@ -1,5 +1,5 @@
 ---
-title: 'Kurz 3: Vytvoření odpovídající hry'
+title: 'Kurz 3: Vytvoření odpovídající herní'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
@@ -11,16 +11,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd560c6a3675617741f35f40d1fe23a70b482349
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f1517f66882ab793efad194c7cf0a76076c4993
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>Kurz 3: Vytvoření odpovídající hry
+# <a name="tutorial-3-create-a-matching-game"></a>Kurz 3: Vytvoření odpovídající herní
 V tomto tutoriálu vytvoříte porovnávací hru, ve které hráč musí porovnat dvojice skrytých ikon. Získáte informace o následujících postupech:  
 
--   Ukládání objektů, např. ikony, `List` objektu.  
+-   Ukládání objektů, např. ikony, <xref:System.Collections.Generic.List%601> objektu.  
 
 -   Použití `foreach` smyčky v jazyce Visual C# nebo `For Each` v jazyce Visual Basic k iteraci v rámci položky v seznamu.  
 
@@ -35,7 +35,9 @@ V tomto tutoriálu vytvoříte porovnávací hru, ve které hráč musí porovna
  ![Herní, který vytvoříte v tomto kurzu](../ide/media/express_finishedgame.png "Express_FinishedGame")  
 Hra, kterou vytvoříte v tomto tutoriálu  
 
- Si můžete stáhnout dokončené verzi příkladu [kurz ukázka dokončení odpovídající hra](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
+## <a name="tutorial-links"></a>Kurz odkazy
+
+ Si můžete stáhnout dokončené verzi příkladu [dokončení odpovídající herní kurz ukázka](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).  
 
 > [!NOTE]
 >  V tomto tutoriálu je zahrnut jazyk Visual C# i jazyk Visual Basic, takže se zaměřte na informace, které jsou specifické pro vámi používaný programovací jazyk.  
@@ -49,9 +51,9 @@ Hra, kterou vytvoříte v tomto tutoriálu
 |[Krok 1: Vytvořte projekt a přidejte do svého formuláře tabulku](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|Začněte vytvořením projektu a přidávání `TableLayoutPanel` řízení zachovat ovládací prvky zarovnán správně.|  
 |[Krok 2: Přidejte náhodný objekt a seznam ikon](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|Přidat `Random` objektu a `List` objekt k vytvoření seznamu ikon.|  
 |[Krok 3: Přiřaďte jednotlivým jmenovkám náhodné ikony](../ide/step-3-assign-a-random-icon-to-each-label.md)|Přiřadit náhodně na ikony `Label` ovládací prvky, tak, aby každá hra se liší.|  
-|[Krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události kliknutí](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Přidejte obslužnou rutinu události Click, která změní barvu popisku, na který jste klikli.|  
+|[Krok 4: Přidejte k jednotlivým jmenovkám obslužnou rutinu události kliknutí](../ide/step-4-add-a-click-event-handler-to-each-label.md)|Přidat `Click` obslužné rutiny události, které změní barvu popisku, který po kliknutí na.|  
 |[Krok 5: Přidejte odkazy na jmenovky](../ide/step-5-add-label-references.md)|Přidejte referenční proměnné k udržení přehledu o tom, na jaké popisky jste klikli.|  
 |[Krok 6: Přidejte časovač](../ide/step-6-add-a-timer.md)|Přidejte do formuláře časovač pro sledování času, který ve hře uběhl.|  
-|[Krok 7: Uchovejte páry ve viditelném stavu](../ide/step-7-keep-pairs-visible.md)|Ponechte dvojice ikon viditelné, pokud je vybrána odpovídající dvojice.|  
+|[Krok 7: Uchovejte páry viditelné](../ide/step-7-keep-pairs-visible.md)|Ponechte dvojice ikon viditelné, pokud je vybrána odpovídající dvojice.|  
 |[Krok 8: Přidejte metodu k ověření, zda hráč vyhrál](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Přidat `CheckForWinner()` metodu k ověření, zda hráč vyhrál.|  
 |[Krok 9: Vyzkoušejte jiné funkce](../ide/step-9-try-other-features.md)|Zkuste další funkce, jako je například změna ikon a barev, přidání mřížky a přidání zvuků. Zkuste zvětšit hrací plochu a nastavit časovač.|

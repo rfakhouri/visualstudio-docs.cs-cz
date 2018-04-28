@@ -12,11 +12,11 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7f3755e1bd397cf2eb06254c1913e1243dfce978
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
+ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="template-parameters"></a>Parametry šablony
 
@@ -34,7 +34,7 @@ Parametry šablony jsou deklarovány ve formátu $*parametr*$. Příklad:
 
 ### <a name="to-enable-parameter-substitution-in-templates"></a>Povolit nahrazení parametrů v šablonách
 
-1. V souboru .vstemplate šablony vyhledejte prvek `ProjectItem`, který odpovídá položce, pro kterou chcete povolit náhradu parametrů.
+1. V *.vstemplate* soubor šablony, vyhledejte `ProjectItem` element, který odpovídá položce, pro který chcete povolit nahrazení parametru.
 
 1. Nastavte `ReplaceParameters` atribut `ProjectItem` element `true`.
 
@@ -73,7 +73,7 @@ Následující tabulka uvádí parametry vyhrazené šablony, které můžete po
 
 Můžete zadat vlastní parametry šablony a hodnoty, kromě vyhrazené výchozí parametry šablony, které se používají při nahrazení parametru. Další informace najdete v tématu [CustomParameters – element (šablony sady Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-using-the-project-name-for-a-file-name"></a>Příklad: Pomocí názvu projektu k názvu souboru
+## <a name="example-use-the-project-name-for-a-file-name"></a>Příklad: Použití názvu projektu k názvu souboru
 
 Můžete zadat různé názvy souborů pro položky projektu pomocí parametru v `TargetFileName` atribut.
 
@@ -90,7 +90,7 @@ Následující příklad určuje, že název spustitelného souboru používá j
 </TemplateContent>
 ```
 
-## <a name="example-using-the-safe-project-name-for-the-namespace-name"></a>Příklad: Pomocí názvu bezpečné projektu pro obor názvů
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Příklad: Použijte název bezpečné projektu pro obor názvů
 
 Pokud chcete použít název bezpečné projektu pro obor názvů v souboru třídy jazyka C#, použijte následující syntaxi:
 
@@ -105,7 +105,7 @@ namespace $safeprojectname$
 }
 ```
 
-V souboru .vstemplate šablony projektu, zahrnují `ReplaceParameters="true"` atribut když odkazujete soubor:
+V *.vstemplate* souboru šablony projektu, zahrnují `ReplaceParameters="true"` atribut když odkazujete soubor:
 
 ```xml
 <TemplateContent>
@@ -118,5 +118,5 @@ V souboru .vstemplate šablony projektu, zahrnují `ReplaceParameters="true"` at
 
 ## <a name="see-also"></a>Viz také
 
-- [Přizpůsobení šablon](../ide/customizing-project-and-item-templates.md)
+- [Přizpůsobení šablony](../ide/customizing-project-and-item-templates.md)
 - [Postupy: vytváření šablon projektu](../ide/how-to-create-project-templates.md)
