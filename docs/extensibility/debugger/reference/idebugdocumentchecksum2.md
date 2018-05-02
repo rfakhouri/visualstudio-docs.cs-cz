@@ -29,7 +29,7 @@ IDebugDocumentChecksum2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Poznámky pro implementátory  
- Toto rozhraní může být implementováno komponentou, která zveřejňuje [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) rozhraní. Ale ho hlavně implementují moduly ladění tak, aby kontrolního součtu vložených v souboru symbol (uvedených) můžete předán zpět do integrovaného vývojového prostředí a použít při hledání zdroj.  
+ Toto rozhraní může být implementováno komponentou, která zveřejňuje [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) rozhraní. Ale ho hlavně implementují moduly ladění tak, aby kontrolního součtu vložených v souboru symbol (*.pdb) můžete předán zpět do integrovaného vývojového prostředí a použít při hledání zdroj.  
   
 ## <a name="methods"></a>Metody  
  Následující tabulka uvádí metody `IDebugDocumentChecksum2`.  
