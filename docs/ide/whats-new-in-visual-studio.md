@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a523933dbc18d6fdc107415c6f7faefa9fc5135
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5cb7d3ce6ec3fd743d8f332b8df2148c7b29fe0f
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s nového ve Visual Studio 2017
 #### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aktualizováno pro [15.6 verze](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
@@ -38,7 +38,7 @@ Zde je podrobný rekapitulace změny, které jsme provedli jsme od předchozí v
 * **Vývoj pro AI**. Pomocí nástrojů Visual Studio pro AI (**nové v 15,5**), funkce produktivitu sady Visual Studio můžete použít k urychlení AI inovace. Vytvoření, testování a nasazení hloubkové Learning / AI řešení, která bezproblémově integrovat s Azure Machine Learning robustní experimentování funkce, například odeslání dat přípravy a úlohy školení modelu transparentně pro různé výpočetní cíle. Visual Studio Tools for AI poskytuje podporu pro vlastní metriky a spustit sledování historie, která umožňují reprodukovatelnosti datové vědy a auditování.
 
 > [!NOTE]
-> Úplný seznam nových funkcí a funkcí v Visual Studio 2017, najdete v článku [aktuální poznámky k verzi](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes). A funkce Náhled na budoucí funkce nabídek, najdete v článku [poznámky k verzi Preview](https://www.visualstudio.com/news/releasenotes/vs2017-preview-relnotes).
+> Úplný seznam nových funkcí a funkcí v Visual Studio 2017, najdete v článku [poznámky k verzi aktuální](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes). A funkce Náhled na budoucí funkce nabídek, najdete v článku [poznámky k verzi Preview](https://www.visualstudio.com/news/releasenotes/vs2017-preview-relnotes).
 
 Zde uvádíme podrobnější informace o některých nejdůležitějším vylepšení a nové funkce v nástroji Visual Studio 2017.
 
@@ -68,20 +68,20 @@ Další informace najdete v tématu [vylepšení přístupnosti v Visual Studio 
 ### <a name="sign-in-across-multiple-accounts"></a>Přihlaste se napříč více účtů  
 Zavedli jsme nové identity služby v sadě Visual Studio, které můžete sdílet mezi Průzkumník týmových projektů, nástroje Azure, publikování Microsoft Store a další uživatelské účty.
 
-Abyste mohli zůstat přihlášeného déle příliš. Visual Studio nebude zeptá se přihlásit znovu každých 12 hodin. Další informace najdete v tématu [výzev k přihlášení méně Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) příspěvku na blogu.
+Abyste mohli zůstat přihlášeného déle příliš. Visual Studio nebude zeptá se přihlásit znovu každých 12 hodin. Další informace najdete v tématu [přihlášení méně Visual Studio vyzve](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) příspěvku na blogu.
 
 ### <a name="start-visual-studio-faster"></a>Rychlejší spuštění sady Visual Studio
 Nové centrum výkonu Visual Studio můžete optimalizovat čas spuštění IDE. Výkon Center uvádí všechny rozšíření a okna nástrojů, které může zpomalit spuštění IDE. Můžete ho použít ke zlepšení výkonu spuštění tak, že určíte při spuštění rozšíření, nebo zda jsou otevřené při spuštění nástroje windows.
 
 ### <a name="faster-on-demand-loading-of-extensions"></a>Rychlejší načítání na vyžádání rozšíření
-Visual Studio je přesunutí jeho rozšíření (a práci s rozšíření jiných výrobců příliš) tak, aby se zatížení na vyžádání, nikoli při spuštění IDE. Chcete zjistit, které rozšíření dopad spuštění, řešení zatížení a zadáním výkonu? Zobrazí se tyto informace v nápovědě -> Správa výkonu Visual Studio.
+Visual Studio je přesunutí jeho rozšíření (a práci s rozšíření jiných výrobců příliš) tak, aby se zatížení na vyžádání, nikoli při spuštění IDE. Chcete zjistit, které rozšíření dopad spuštění, řešení zatížení a zadáním výkonu? Zobrazí se tyto informace v **pomoci** > **Správa výkonu Visual Studio**.
 
   ![Dialogové okno Možnosti v aplikaci Visual Studio 2017](../ide/media/vs2017ide-manage-vs-perf.png "nápovědě k sadě Visual Studio dialogové okno-správu výkonu")
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>Správa rozšíření pomocí Správce rozšíření pro Roaming
 Je jednodušší a nastavte každý vývojového prostředí obsahovala vaše oblíbená rozšíření, když se přihlásíte k sadě Visual Studio. Nový Správce rozšíření Roaming uchovává informace o všechna vaše oblíbená rozšíření vytvořením synchronizovaného seznamu v cloudu.  
 
-Chcete-li zobrazit seznam rozšíření v sadě Visual Studio, klikněte na tlačítko nástroje > rozšíření a aktualizace a pak klikněte na tlačítko Správce rozšíření pro Roaming.
+Chcete-li zobrazit seznam rozšíření v sadě Visual Studio, klikněte na tlačítko **nástroje** > **rozšíření & aktualizace**a pak klikněte na tlačítko **Správce rozšíření pro Roaming**.
 
 ![Visual Studio 2017 – dialogové okno rozšíření a aktualizace](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017 - nástroje > dialogové okno rozšíření a aktualizace")
 
@@ -106,13 +106,13 @@ V aplikaci Visual Studio Enterprise 2017 za provozu poskytuje bydlíte výsledky
 
 Další informace najdete v tématu [představení Live jednotkové testování](../test/live-unit-testing-intro.md). Seznam nových funkcí v každé verzi Visual Studio Enterprise 2017 najdete v tématu [co je nového v za provozu testování částí](../test/live-unit-testing-whats-new.md).
 
-#### <a name="setting-up-a-cicd-pipeline"></a>Nastavení položky konfigurace nebo CD kanálu
+#### <a name="set-up-a-cicd-pipeline"></a>Nastavit kanál CI/CD
 #### <a name="automated-testing"></a>Automatizované testování
 Automatizované testování je klíčovou součástí žádné DevOps kanálu. Technická dokumentace umožňuje konzistentní a spolehlivě testování a verzí řešení na mnohem kratší cykly. Toky CI/CD (průběžnou integraci a nastavené průběžné doručování) můžete přispět k procesu efektivnější.
 
 Další informace o automatizované testy, najdete v článku [CI/CD kanálu pro automatizované testy v DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) příspěvku na blogu.
 
-A další informace o tom, co je nového [průběžné doručování Tools pro Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs rozšíření, najdete v článku [potvrzení s jistotou: potvrzení kvality kódu čas](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) příspěvku na blogu.
+A další informace o tom, co je nového [nastavené průběžné doručování tools pro Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) DevLabs rozšíření, najdete v článku [potvrzení s jistotou: potvrzení kvality kódu čas](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) příspěvku na blogu.
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE vylepšení
 #### <a name="use-new-refactorings"></a>Refaktoring pro nové použití
@@ -137,15 +137,15 @@ Když pracujete s projektem v sadě Visual Studio, můžete nastavit a rychle po
 #### <a name="experience-improved-navigation-controls"></a>Ovládací prvky pro navigaci vylepšené prostředí
 Navigace prostředí můžete získat z A a B s větší jistotou rušeni aktualizována.
 
-* **Novinka v 15.4**: **přejít k definici (Ctrl + klikněte na tlačítko nebo F12)** &ndash; myši uživatelé mají snadný způsob, jak přejít k definici člena stisknutím **Ctrl** a pak levým na člena . Stisknutím **Ctrl** a ukazatele myši na symbol kód bude underline ho a zapnout na odkaz. V tématu [přejít k definici a prohlížení definice](../ide/go-to-and-peek-definition.md) Další informace.  
+* **Novinka v 15.4**: **přejít k definici** (**Ctrl**+**klikněte na tlačítko** nebo **F12**) &ndash; myši uživatelů máte snadný způsob, jak přejít k definici člena stisknutím **Ctrl** a pak levým na člen. Stisknutím **Ctrl** a ukazatele myši na symbol kód bude underline ho a zapnout na odkaz. V tématu [přejít k definici a prohlížení definice](../ide/go-to-and-peek-definition.md) Další informace.  
 
-* **Přejít na implementaci (Ctrl + F12)** &ndash; přejde z jakékoli základní typ nebo člen na její různé implementace.
+* **Přejít na implementaci** (**Ctrl**+**F12**) &ndash; přejde z jakékoli základní typ nebo člen na její různé implementace.
 
-* **Přejděte na všechny (Ctrl + T nebo Ctrl +)** &ndash; přejde přímo na všechny deklarace souboru nebo typ/člen nebo symbol. Můžete si na seznam výsledků nebo filtrovat, použijte syntaxi dotazu (například "f searchTerm" pro soubory.), "t searchTerm" pro typy atd.
+* **Přejděte na všechny** (**Ctrl**+**T** nebo **Ctrl**+**,**) &ndash; přejděte přímo do každé prohlášení souboru nebo typ/člen nebo symbol. Můžete si na seznam výsledků nebo filtrovat, použijte syntaxi dotazu (například "f searchTerm" pro soubory.), "t searchTerm" pro typy atd.
 
  ![Vylepšené přejděte na všechny](../ide/media/vs2017ide-navigation-go-to.png "příklad vylepšené přejděte na všechny funkce")
 
-* **Najít všechny odkazy (Shift + F12)** &ndash; s zabarvení syntaxe, můžete najít všechny odkaz výsledky seskupovat podle kombinace projektu, definice a cestu. Je také možné "zamknout" výsledky, aby mohl pokračovat k nalezení dalších odkazů na bez ztráty původní výsledky.
+* **Najít všechny odkazy** (**Shift**+**F12**) &ndash; s zabarvení syntaxe, můžete najít všechny odkaz výsledky seskupovat podle kombinace projektu, definice a cestu. Je také možné "zamknout" výsledky, aby mohl pokračovat k nalezení dalších odkazů na bez ztráty původní výsledky.
 
  ![Nový nástroj Najít všechny odkazy](../ide/media/vs2017ide-find-all-references.png "příklad nový nástroj Najít všechny odkazy")
 
@@ -162,7 +162,7 @@ Taky jsme vyřešili více než 250 chyb a hlášené problémy v kompilátoru a
 
 Úplné podrobnosti najdete v tématu [co je nového pro Visual C++ v Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) stránky.  
 
-### <a name="debugging-and-diagnostics"></a>Ladění a diagnostika
+### <a name="debugging-and-diagnostics"></a>Ladění a Diagnostika
 #### <a name="run-to-click"></a>Spusťte kliknutím:
 Teď můžete snadno přeskočit během ladění bez nastavení boru přerušení na řádek, který chcete zastaví. Po zastavení v ladicím programu stačí kliknout na ikonu, která se zobrazí vedle řádek kódu. Váš kód bude spustit a zastavit na tomto řádku při příštím je dosáhl v kódové cestě.
 
@@ -178,7 +178,7 @@ Další informace najdete v tématu [pomocí nového pomocníka výjimka v sadě
 #### <a name="snapshots-and-intellitrace-step-back"></a>Snímky a zpětný krok IntelliTrace:
 **Novinka v 15,5**: zpětný krok IntelliTrace automaticky vytvoří snímek vaší aplikace v každé zarážek a ladicí program krok události. Zaznamenaná snímky umožňují přejděte zpět na předchozí zarážky nebo kroky a zobrazení stavu aplikace, stejně jako tomu bylo v minulosti. IntelliTrace zpětný krok vám může ušetřit čas když chcete zobrazit předchozí stav aplikace, ale nechcete, aby se znovu spustit ladění nebo znovu vytvořte stav požadované aplikace.
 
-Můžete vyhledat a zobrazit snímky pomocí **krok zpětné** a **krok dál** tlačítek na panelu nástrojů ladění. Tato tlačítka přejděte události, které se zobrazují v **události** ve **diagnostické nástroje** okno. Krokování zpětně nebo dopředu na událost automaticky aktivuje historické ladění na vybrané události.
+Můžete vyhledat a zobrazit snímky pomocí **krok zpětné** a **krok dál** tlačítka v **ladění** panelu nástrojů. Tato tlačítka přejděte události, které se zobrazují v **události** ve **diagnostické nástroje** okno. Krokování zpětně nebo dopředu na událost automaticky aktivuje historické ladění na vybrané události.
 
 ![Dialogové okno nového pomocníka výjimka v sadě Visual Studio](../debugger/media/intellitrace-step-back-icons-description.png  "krok zpět a jejich předávání tlačítka")
 
@@ -193,10 +193,10 @@ Kontejnery můžete poskytnout hustotu aplikace vyšší a nižší náklady na 
 * Když otevřete projekt, který podporuje Docker, bude Visual Studio ve výchozím nastavení automaticky vyžadovat, sestavovat a spouštět nezbytné kontejnerové image na pozadí. Tuto funkci můžete vypnout pomocí nastavení **Automaticky spustit kontejnery na pozadí** v sadě Visual Studio.
 
 ## <a name="cloud-app-development-with-azure"></a>Vývoj aplikací cloudu s Azure
-### <a name="azure-functions-tools"></a>Azure Functions nástroje
+### <a name="azure-functions-tools"></a>Nástroje Azure funkce
 Jako součást úlohy "Azure development" jsme zahrnuli nástroje umožňující vývoj Azure functions pomocí předem kompilovaném knihovny tříd jazyka C#. Nyní můžete vytvořit, spustit a ladění na místním vývojovém počítači a potom publikovat přímo do Azure ze sady Visual Studio.
 
-Další informace najdete v tématu [nástroje funkce Azure pro sadu Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) stránky.
+Další informace najdete v tématu [Azure Functions tools pro Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) stránky.
 
 ### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>Ladění za provozu aplikace ASP.NET pomocí snappoints a logpoints v za provozu aplikace Azure
 **Novinka v 15,5**: ladicím programu snímku pořídí snímek aplikací v provozním když provede kód, který vás zajímá. Dáte pokyn, aby ladicí program na pořízení snímku, nastavte snappoints a logpoints ve vašem kódu. Ladicí program umožňuje zobrazit přesně kde došlo k chybě, bez vlivu na provoz produkční aplikace. Ladicí program snímku můžete výrazně zkrátit dobu potřebnou k vyřešení problémů, ke kterým došlo v produkčním prostředí.
@@ -233,12 +233,12 @@ Jako součást úlohy "Mobilní vývoj s .NET" vývojáři, kteří znají C# .N
 Další informace najdete v tématu [Visual Studio a Xamarin](../cross-platform/visual-studio-and-xamarin.md) stránky.
 
 ### <a name="entitlements-editor"></a>Editor oprávnění
-**Novinka v 15.3**: pro vaše potřeby vývoj pro iOS, jsme přidali samostatné editor oprávnění. Obsahuje uživatelsky přívětivý uživatelské rozhraní, které lze snadno procházet. Chcete-li spustíte, dvakrát klikněte na soubor entitlements.plist.
+**Novinka v 15.3**: pro vaše potřeby vývoj pro iOS, jsme přidali samostatné editor oprávnění. Obsahuje uživatelsky přívětivý uživatelské rozhraní, které lze snadno procházet. Chcete-li jej spustit, dvakrát klikněte na vaše *entitlements.plist* souboru.
 
 ![Editor nároku pro Xamarin](../ide/media/xamarin-entitlements-editor.png "nárocích editor pro Xamarin")
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools pro Xamarin
-**Novinka v 15.4**: Xamarin Live umožňuje vývojářům nepřetržitě nasazení, testování a ladění své aplikace, přímo na zařízení iOS a Android. Po stažení Xamarin Live Player&mdash;dostupná v App Storu nebo na webu Google Play&mdash;můžete spárovat zařízení pomocí sady Visual Studio a mohla úplně změnit způsob sestavení mobilní aplikace. Tato funkce je nyní zahrnutá v sadě Visual Studio a lze je povolit přechodem na Nástroje > Možnosti > Xamarin > jiné > Povolit Player Xamarin za provozu.
+**Novinka v 15.4**: Xamarin Live umožňuje vývojářům nepřetržitě nasazení, testování a ladění své aplikace, přímo na zařízení iOS a Android. Po stažení Xamarin Live Player&mdash;dostupná v App Storu nebo na webu Google Play&mdash;můžete spárovat zařízení pomocí sady Visual Studio a mohla úplně změnit způsob sestavení mobilní aplikace. Tato funkce je teď zahrnutá v sadě Visual Studio a jde povolit v nabídce **Nástroje** > **Možnosti** > **Xamarin** > **Jiné** > **Povolit Xamarin Live Player**.
 
 ![Animace pár Xamarin Live Player, nasazení a režimy provozu úpravy](../ide/media/xamarinliveplayer.gif)
 
@@ -247,7 +247,7 @@ Další informace najdete v tématu [Visual Studio a Xamarin](../cross-platform/
 
   ![Centrum aplikace Visual Studio testovacího prostředí](../ide/media/app-center-test-env.png)
 
-Další informace najdete v tématu [Introducing aplikace Center: vytvoření, testování, distribuci a monitorování aplikací v cloudu](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) příspěvku na blogu.
+Další informace najdete v tématu [Introducing aplikace Center: vytváření, testování, distribuci a monitorování aplikací v cloudu](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) příspěvku na blogu.
 
 ## <a name="cross-platform-development"></a>Vývoj pro různé platformy
 ### <a name="redgate-data-tools"></a>Nástroje Redgate Data
@@ -297,11 +297,11 @@ Pokud chcete navrhnout zlepšení o tom, jak jsme můžete zlepšit Visual Studi
  V některých případech zprávu není dost pro vyjádření celkovému dopadu, který jste došlo k problému. Pokud dojde zablokování, havárie nebo jiné problémy s výkonem, můžete snadno sdílet zkopírujte kroky a podpůrné soubory (například snímky obrazovky a trasování a haldy soubory výpisů) s námi pomocí **nahlásit problém** nástroj. Další informace o tom, jak tento nástroj použít, najdete v článku [postup nahlásit problém](how-to-report-a-problem-with-visual-studio-2017.md) stránky.  
 
 ### <a name="track-your-issue-in-connect"></a>Sledovat problém v připojení  
- Pokud chcete sledovat stav vašich připomínek Visual Studio, přejděte na [Connect](http://connect.microsoft.com/) a hlášení chyb existuje. Po sestavu, můžete se vrátit k připojení ke sledování jeho stavu.  
+ Pokud chcete sledovat stav vašich připomínek Visual Studio, přejděte na [Connect](http://connect.microsoft.com/) a hlášení chyb existuje. Po sestavu, můžete se vrátit k **Connect** ke sledování jeho stavu.  
 
 ## <a name="see-also"></a>Viz také
-* [Poznámky k verzi 2017 Visual Studio](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
-* [Co je nového v jazyce Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+* [Poznámky k verzi Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+* [Co je nového ve Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Co je nového v jazyce C#](/dotnet/csharp/whats-new)  
 * [Co je nového pro Team Foundation Server](https://www.visualstudio.com/docs/whats-new)
 * [Co je nového v sadě Visual Studio pro Mac](https://www.visualstudio.com/vs/visual-studio-mac/)

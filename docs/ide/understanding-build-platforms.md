@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b3bc8bb2eddf756b238b88e79050552caef945d0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2f813f9181d54ab3363c5643710b5434457d1959
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-build-platforms"></a>Principy platforem sestavení
 
@@ -36,6 +36,6 @@ Můžete uložit různých verzích řešení a projektu vlastnosti, které plat
 
 ## <a name="see-also"></a>Viz také
 
-- [Návod: Sestavení aplikace](../ide/walkthrough-building-an-application.md)
-- [Sestavování a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [Návod: Vytvoření aplikace](../ide/walkthrough-building-an-application.md)
+- [Sestavení a čištění projektů a řešení v sadě Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Kompilace a sestavení](../ide/compiling-and-building-in-visual-studio.md)

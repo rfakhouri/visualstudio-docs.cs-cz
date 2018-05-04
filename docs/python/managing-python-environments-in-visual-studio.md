@@ -11,17 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f3a3fa14a2772171b2968514867d35ea4ad126f1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d66a61693497826117715be9a9f8b96ea0e4f7c3
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Python v sadě Visual Studio
 
 Python *prostředí* je kontext, ve kterém můžete spustit kód Python a zahrnuje globální, virtuální a conda prostředí. Prostředí se skládá z překladač knihovny (obvykle Python standardní knihovny) a sadu instalovaných balíčků. Tyto součásti společně určují, které jazykové konstrukty a syntaxe jsou platné, spouštění jaký operační systém funkce mají přístup a které balíčky, které můžete použít.
 
-V sadě Visual Studio v systému Windows [prostředí Python](#managing-python-environments-in-visual-studio) okno, jak je popsáno v tomto článku je kde spravovat těchto prostředí a vyberte jedno jako výchozí pro nové projekty. Pro daný projekt můžete také vyberte konkrétní prostředí místo použijte výchozí nastavení.
+V sadě Visual Studio v systému Windows [okno prostředí Python](#the-python-environments-window) okno, jak je popsáno v tomto článku je kde spravovat těchto prostředí a vyberte jedno jako výchozí pro nové projekty. Pro daný projekt můžete také vyberte konkrétní prostředí místo použijte výchozí nastavení.
 
 **Poznámka:**: Pokud jste ještě Python v sadě Visual Studio, najdete v následujících článcích pro potřeby pozadí:
 

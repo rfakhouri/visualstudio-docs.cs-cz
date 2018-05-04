@@ -11,18 +11,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d3f06eac67207209932073899ae0277f9a156b54
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 591bdaa84d143dc3b639990530a68246dc00385a
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="edit-text-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Úpravy modelů kombinací určení pravděpodobnosti spuštění testu virtuálním uživatelem
+# <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Úpravy modelů poměru testů určení pravděpodobnosti spuštění testu virtuálním uživatelem
 
 *Model kombinace testů* určuje pravděpodobnost spuštění testu dané ve scénáři zátěžového testu virtuálním uživatelem. To umožňuje více reálně simulovat zatížení. Místo nutnosti jenom jeden pracovní postup prostřednictvím aplikací, může mít několik pracovních postupů, která je blíž aproximace o tom, jak koncoví uživatelé komunikovat s vašimi aplikacemi.
 
 ## <a name="test-mix-model-options"></a>Možnosti Model kombinace testů
- Určete jednu z následujících možností model kombinace testů pro vaše scénáře zátěžového testu:
+
+Určete jednu z následujících možností model kombinace testů pro vaše scénáře zátěžového testu:
 
 -   **Na základě celkového počtu testů:** Určuje, které webového testu výkonu nebo jednotka se spustí při spuštění iterace testu virtuálním uživatelem. Počet pokusů, které konkrétní test byl spuštěn na konci zátěžový test, odpovídá rozdělení přiřazené testu. Tento model kombinace testů používejte při poměru testů jsou založenou na procenta transakce v protokolu služby IIS nebo v provozními daty.
 

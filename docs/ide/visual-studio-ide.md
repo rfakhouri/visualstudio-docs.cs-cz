@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 786077e4d02a430e78fe91aa1c405307325331eb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 86522beb978dee5722a919c4fa0e3a9030d5f3ad
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-ide-overview"></a>Přehled Visual Studio IDE
 
@@ -55,7 +55,7 @@ Můžete využít Azure services pro aplikace pomocí připojení služby, jako 
 
 Web jednotky naše moderní world a Visual Studio můžete usnadňuje psaní aplikací pro ni. Můžete vytvořit webové aplikace pomocí ASP.NET, Node.js, Python, JavaScript a TypeScript. Visual Studio rozumí webové platformy jako úhlová, jQuery, Express a další. Spuštěné na operačních systémech Windows, Mac a Linux .NET Core a ASP.NET Core. [ASP.NET Core](http://www.asp.net/core/overview) je hlavní aktualizace MVC, WebAPI a SignalR a běží na systému Windows, Mac a Linux.  ASP.NET Core má byly navrženy od základů až zajistit, že jste s .NET Štíhlá a bez možnosti složení zásobníku pro vytváření webových moderní cloudové aplikace a služby.
 
-Další informace najdete v tématu [moderních webových nástrojů](https://www.visualstudio.com/vs/modern-web-tooling/).
+Další informace najdete v tématu [moderní webové nástroje](https://www.visualstudio.com/vs/modern-web-tooling/).
 
 ### <a name="build-cross-platform-apps-and-games"></a>Vytváření aplikací pro různé platformy a hry
 
@@ -93,7 +93,7 @@ Při prvním spuštění sady Visual Studio, můžete volitelně Přihlaste se p
 
 Další informace o něco jeden vhodný způsob je pro použití! Umožňuje podrobné informace a vytvořit nové, jednoduchý program.
 
-1. Otevřete Visual Studio. V nabídce zvolte **soubor** > **nový** > **projektu...** .
+1. Otevřete Visual Studio. V nabídce zvolte **soubor** > **nový** > **projektu**.
 
   ![Soubor > Nový projekt v řádku nabídek](../ide/media/VSIDE_Tour_NewProject1.png)
 
@@ -181,7 +181,7 @@ Následující obrázek ukazuje tak, abyste získali visual Přehled sady Visual
 
 Toto jsou některé další běžné funkce produktivitu v sadě Visual Studio:
 
-- [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) vyhledávacího pole je skvělým způsobem, jak rychle najít, co je třeba v sadě Visual Studio. Stačí spustit zadáním názvu ať hledáte a Visual Studio zobrazí výsledky, které dostanete přesně, kde chcete přejít. Snadné spuštění také ukazuje odkazy, které spustit instalační program Visual Studio pro všechny úlohy nebo jednotlivých součástí.
+- [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) vyhledávacího pole je skvělým způsobem, jak rychle najít, co je třeba v sadě Visual Studio. Stačí spustit zadáním názvu ať hledáte a Visual Studio zobrazí výsledky, které dostanete přesně, kde chcete přejít. **Snadné spuštění** také ukazuje odkazy, které spustit instalační program Visual Studio pro všechny úlohy nebo jednotlivých součástí.
 
   ![Rychlé spuštění vyhledávacího pole](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
@@ -215,15 +215,15 @@ Toto jsou některé další běžné funkce produktivitu v sadě Visual Studio:
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Správa zdrojového kódu a spolupracovat s ostatními
 
-Můžete spravovat vašeho zdrojového kódu v hostované všechny zprostředkovatele, včetně Githubu úložiště Git. Nebo použijte [Visual Studio Team Services (VSTS)](/vsts/index) ke správě kód společně se chyby a pracovní položky pro celý projekt. V tématu [začít pracovat s Git a Team Services (služby VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) Další informace o správě úložiště Git v sadě Visual Studio pomocí Team Explorer. Visual Studio má také další funkce integrované zdroj ovládacího prvku. Další informace o nich najdete v tématu [nové funkce Git v nástroji Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+Můžete spravovat vašeho zdrojového kódu v hostované všechny zprostředkovatele, včetně Githubu úložiště Git. Nebo použijte [Visual Studio Team Services (VSTS)](/vsts/index) ke správě kód společně se chyby a pracovní položky pro celý projekt. V tématu [začít pracovat s Git a Team Services (služby VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) Další informace o správě úložiště Git v sadě Visual Studio pomocí Team Explorer. Visual Studio má také další funkce integrované zdroj ovládacího prvku. Další informace o nich najdete v tématu [Git nové funkce v aplikaci Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
 
 Visual Studio Team Services je Cloudová služba pro hostování projektů softwaru a povolení spolupráce v týmy. Služby VSTS podporuje systémy Git a Team Foundation zdrojového kódu, jakož i metodiky Scrum a Agile a CMMI vývoj. Team Foundation verze ovládacího prvku (TFVC) používá jedinou, centralizovanou server úložiště ke sledování a verze souborů. Místní změny jsou vždy změnami na centrálním serveru, kde můžete jinými vývojáři získání nejnovějších změn.
 
 Team Foundation Server (TFS) je Centrum správy životního cyklu aplikace Visual Studio. Umožňuje everyone spojené s procesu vývoje se zúčastnit pomocí jednoho řešení. TFS je užitečné pro správu heterogenní týmy a projekty, příliš.
 
-Pokud máte účet Visual Studio Team Services nebo Team Foundation Server v síti, připojujete se k němu pomocí okna Průzkumník týmových projektů v sadě Visual Studio. Z tohoto okna můžete zkontrolovat kód do nebo z zdrojového kódu, správě pracovních položek, sestavení a spuštění přístup týmové místnosti a pracovní prostory. Můžete otevřít Průzkumník týmových projektů z **Snadné spuštění** pole, nebo v hlavní nabídce z **zobrazení, Team Explorer** nebo z **tým, Správa připojení**.
+Pokud máte účet Visual Studio Team Services nebo Team Foundation Server v síti, můžete se připojit k němu prostřednictvím **Team Explorer** oken v sadě Visual Studio. Z tohoto okna můžete zkontrolovat kód do nebo z zdrojového kódu, správě pracovních položek, sestavení a spuštění přístup týmové místnosti a pracovní prostory. Můžete otevřít **Team Explorer** z **Snadné spuštění** pole, nebo v hlavní nabídce z **zobrazení** > **Team Explorer** nebo z **Team** > **Správa připojení**.
 
-Následující obrázek ukazuje okno Průzkumník týmových projektů pro řešení, který je hostován v služby VSTS.
+Na následujícím obrázku **Team Explorer** okna pro řešení, který je hostován v služby VSTS.
 
 ![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
 
@@ -235,13 +235,13 @@ Cloud je velmi důležitá pro dnešní online world a Visual Studio poskytuje z
 
 ![Připojených služeb](../ide/media/VSIDE_Tour_Connected_Services.png)
 
-Výběr služby na **připojené služby** spustí Průvodce připojené služby, který nakonfiguruje projektu a stahování nezbytných balíčků NuGet, které vám pomůžou spuštění kódování pro službu.
+Výběr služby na **připojené služby** stránka spustí **připojené služby** spuštění průvodce, který nakonfiguruje projektu a stahuje potřebné balíčky NuGet, které vám pomůžou kódování proti Služba.
 
-Můžete zobrazit a spravovat prostředky na základě Azure cloud v sadě Visual Studio pomocí [Průzkumník cloudu](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Průzkumník cloudu zobrazuje všechny účty, které jsou spravované v rámci předplatného Azure, ke kterému jste přihlášeni do prostředků Azure. Průzkumník cloudu můžete získat tak, že vyberete **Azure development** zatížení v instalačním programu sady Visual Studio.
+Můžete zobrazit a spravovat prostředky na základě Azure cloud v sadě Visual Studio pomocí [Průzkumník cloudu](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Průzkumník cloudu zobrazuje všechny účty, které jsou spravované v rámci předplatného Azure, ke kterému jste přihlášeni do prostředků Azure. Můžete získat **Průzkumník cloudu** výběrem **Azure development** zatížení v instalačním programu sady Visual Studio.
 
 ![Průzkumník cloudu](../ide/media/VSIDE_CloudExplorer.png)
 
-**V Průzkumníku serveru** vám pomůže Procházet a spravovat instance systému SQL Server a prostředky místně, vzdáleně a na Azure, Salesforce.com, Office 365 a weby. Chcete-li otevřít Průzkumníka serveru na hlavní nabídky, zvolte **zobrazení** > **Průzkumníka serveru**. V tématu [přidat nová připojení](../data-tools/add-new-connections.md) pro další informace o použití Průzkumníka serveru.
+**V Průzkumníku serveru** vám pomůže Procházet a spravovat instance systému SQL Server a prostředky místně, vzdáleně a na Azure, Salesforce.com, Office 365 a weby. Chcete-li otevřít **Průzkumníka serveru**, v hlavní nabídce zvolte **zobrazení** > **Průzkumníka serveru**. V tématu [přidat nová připojení](../data-tools/add-new-connections.md) pro další informace o použití Průzkumníka serveru.
 
 [SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) je výkonný vývojové prostředí pro SQL Server, databáze SQL Azure a Azure SQL Data Warehouse. Umožňuje vytvářet, ladit, udržovat a Refaktorovat databáze. Můžete pracovat s projektem databáze, nebo přímo s připojené databáze instance nebo vypnout místně.
 
@@ -261,7 +261,7 @@ Další informace o rozšíření sady Visual Studio najdete v tématu [rozší�
 
 ## <a name="learn-more-and-find-out-whats-new"></a>Další informace a zjistit, co je nového
 
-Pokud jste Visual Studio před nepoužívali, podívejte se na [získat spuštění vývoj pomocí sady Visual Studio](../ide/get-started-developing-with-visual-studio.md), nebo se podívejte se na bezplatné sady Visual Studio kurzy k dispozici na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Pokud chcete rezervovat nových funkcí v Visual Studio 2017, najdete v části [co je nového ve Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
+Pokud jste Visual Studio před nepoužívali, podívejte se na [začít s vývojem pomocí sady Visual Studio](../ide/get-started-developing-with-visual-studio.md), nebo se podívejte se na bezplatné sady Visual Studio kurzy k dispozici na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Pokud chcete rezervovat nových funkcí v Visual Studio 2017, najdete v části [co je nového ve Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
 
 Blahopřejeme k dokončení prohlídku Visual Studio IDE! Věříme, že jste se dozvěděli, něco užitečné informace o některých jeho hlavní funkce.
 

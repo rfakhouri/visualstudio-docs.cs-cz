@@ -1,5 +1,5 @@
 ---
-title: Rady a tipy pro zvýšení výkonu sady Visual Studio
+title: Rady a tipy pro zvýšení výkonu Visual Studio
 ms.date: 08/31/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac89442c7f0242fca3238a32bfb60d1cb2e1b4e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Rady a tipy pro zvýšení výkonu Visual Studio
 
@@ -29,7 +29,7 @@ Visual Studio výkonu doporučení jsou určené pro situace, nedostatek paměti
 
     Pokud upgradujete systém z 32bitové verze systému Windows na 64bitovou verzi, rozbalte velikost virtuální paměti, které jsou k dispozici pro Visual Studio z 2 GB do 4 GB. To umožňuje sadě Visual Studio pro zpracování podstatně větší zatížení, i když je 32bitový proces.
 
-    Další informace najdete v tématu [paměťová omezení](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) a [pomocí/LARGEADDRESSAWARE na 64bitovém systému Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+    Další informace najdete v tématu [paměťová omezení](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits) a [použít/LARGEADDRESSAWARE v 64bitovém systému Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="configure-solution-and-projects"></a>Konfigurace řešení a projekty
 
@@ -37,7 +37,7 @@ Pokud máte velké řešení s mnoha projektů, může mít užitek tím, že pr
 
 - **Uvolnění projekty**
 
-    Můžete ručně uvolnit zřídka používané jednotlivých projektů v Průzkumníku řešení pomocí místní nabídky klikněte pravým tlačítkem.
+    Můžete ručně uvolnění je používána zřídka jednotlivých projektů z **Průzkumníku řešení** pomocí místní nabídky klikněte pravým tlačítkem.
 
 - **Refaktorovat řešení**
 
@@ -51,23 +51,23 @@ Pokud jste se obvykle dostatek paměti během relace ladění, můžete optimali
 
     Nejjednodušší optimalizace je umožnit **pouze můj kód** funkci, která načte pouze symboly pro váš projekt. Povolení této funkce může způsobit velké paměti ukládání pro ladění spravované aplikace (.NET). Tato možnost je již povolená ve výchozím nastavení v některé typy projektů.
 
-    Chcete-li povolit **pouze můj kód**, zvolte **nástroje > Možnosti > ladění > Obecné**a potom vyberte **povolit volbu pouze vlastní kód**.
+    Chcete-li povolit **pouze můj kód**, zvolte **nástroje** > **možnosti** > **ladění**  >   **Obecné**a potom vyberte **povolit volbu pouze vlastní kód**.
 
 - **Zadejte symboly načíst**
 
-    Pro nativní ladění načítání souborů symbolu (.pdb) je nákladné z hlediska paměťových prostředků. Můžete nakonfigurovat nastavení ladicího programu symbol pro konzervaci paměti. Obvykle nakonfigurujte řešení jenom načíst moduly ze svého projektu.
+    Pro nativní ladění načítání soubory symbolů (*PDB*) je nákladné z hlediska paměťových prostředků. Můžete nakonfigurovat nastavení ladicího programu symbol pro konzervaci paměti. Obvykle nakonfigurujte řešení jenom načíst moduly ze svého projektu.
 
-    Chcete-li zadat symbol načítání, zvolte **nástroje > Možnosti > ladění > symboly**.
+    Chcete-li zadat symbol načítání, zvolte **nástroje** > **možnosti** > **ladění** > **symboly**.
 
-    Nastavit na **pouze zadané moduly** místo **všechny moduly** a pak zadejte které moduly, které jsou pro vás k načtení. Při ladění, můžete můžete také kliknout pravým tlačítkem v určitých modulech **moduly** okno explicitně zahrnout modul zatížení symbol. (Chcete-li otevřít okno při ladění, zvolte **ladění > Windows > moduly**.)
+    Nastavit na **pouze zadané moduly** místo **všechny moduly** a pak zadejte které moduly, které jsou pro vás k načtení. Při ladění, můžete můžete také kliknout pravým tlačítkem v určitých modulech **moduly** okno explicitně zahrnout modul zatížení symbol. (Chcete-li otevřít okno při ladění, zvolte **ladění** > **Windows** > **moduly**.)
 
-    Další informace najdete v tématu [pochopení soubory symbolů](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+    Další informace najdete v tématu [pochopit soubory symbolů](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
 
 - **Zakázat diagnostické nástroje**
 
     Doporučuje se zakázat procesoru profilace po použití. Tato funkce může využívat velké množství prostředků. Po povolení procesoru profilace tento stav je zachová pro následné ladicí relace, proto je vhodné explicitně vypnutí, pokud provádí. Některé prostředky, může uložit zakázáním diagnostické nástroje při ladění, pokud nepotřebujete funkce zadaná.
 
-    Chcete-li zakázat diagnostické nástroje, spustit relaci ladění, zvolte **nástroje > Možnosti > Povolit diagnostické nástroje**a zrušte výběr možnosti.
+    Zakázání **diagnostické nástroje**, spustit relaci ladění, zvolte **nástroje** > **možnosti** > **povolení diagnostiky Nástroje pro**a zrušte výběr možnosti.
 
     Další informace najdete v tématu [nástrojích pro profilaci](../profiling/profiling-tools.md).
 
@@ -86,13 +86,13 @@ Informace o aspektech týkajících se výkonu kompilátoru platformu .NET ("Ros
 
     Visual Studio provádí analýzu na celé řešení Chcete-li poskytovat bohaté prostředí o chybách před vyvoláním sestavení. Tato funkce je užitečná k identifikaci chyby co nejdříve. Pro velmi velká řešení, ale tato funkce spotřebovat významné paměťových prostředků. Pokud dojde k přetížení paměti nebo podobné problémy, můžete zakázat toto prostředí pro uvolnění těchto prostředků. Ve výchozím nastavení tato možnost je povolena v jazyce Visual Basic a zakázané pro jazyk C#.
 
-    Chcete-li zakázat **analýzy celého řešení**, zvolte **nástroje > Možnosti > textový Editor >< Visual Basic a C# >**. Zvolte **Upřesnit** a zrušte výběr **povolit úplnou analýzu řešení**.
+    Chcete-li zakázat **analýzy celého řešení**, zvolte **nástroje** > **možnosti** > **textového editoru**  >  **< Visual Basic a C# >**. Zvolte **Upřesnit** a zrušte výběr **povolit úplnou analýzu řešení**.
 
 - **Zakázat Codelensu**
 
-    Visual Studio provádí **najít všechny odkazy** úloh na každou metodu, jak je uvedeno. Codelensu poskytuje funkce, jako je například zobrazení vložený počet odkazů. Práce se provádí v samostatném procesu (například ServiceHub.RoslynCodeAnalysisService32). Ve velmi velkých řešeních nebo na systémech prostředků omezené tato funkce může mít významný dopad na výkon, i když se spustí s nízkou prioritou. Pokud dojde k vysoké využití procesoru v tomto procesu nebo paměti problémy (například při načítání velkých řešení na počítači, 4 GB), můžete zkusit zakázáním této funkce tím se uvolní prostředky.
+    Visual Studio provádí **najít všechny odkazy** úloh na každou metodu, jak je uvedeno. Codelensu poskytuje funkce, jako je například zobrazení vložený počet odkazů. Práce se provádí v samostatném procesu (například *ServiceHub.RoslynCodeAnalysisService32*). Ve velmi velkých řešeních nebo na systémech prostředků omezené tato funkce může mít významný dopad na výkon, i když se spustí s nízkou prioritou. Pokud dojde k vysoké využití procesoru v tomto procesu nebo paměti problémy (například při načítání velkých řešení na počítači, 4 GB), můžete zkusit zakázáním této funkce tím se uvolní prostředky.
 
-    Chcete-li zakázat Codelensu, zvolte **nástroje > Možnosti > textový Editor > všechny jazyky > Codelensu**a zrušit zaškrtnutí políčka funkci.
+    Chcete-li zakázat **Codelensu**, zvolte **nástroje** > **možnosti** > **textového editoru**  >   **Všechny jazyky** > **Codelensu**a zrušte výběr funkce.
 
     Tato funkce je k dispozici v aplikaci Visual Studio Professional a Visual Studio Enterprise.
 
@@ -106,9 +106,9 @@ Informace o aspektech týkajících se výkonu kompilátoru platformu .NET ("Ros
 
 - **Zakázat Návrhář XAML**
 
-    Návrhář XAML je ve výchozím nastavení povolené, ale pouze spotřebovává prostředky, pokud můžete otevřít. Souboru XAML. Pokud pracovat se soubory XAML, ale nechcete, aby používat návrháře funkce, zakažte tuto funkci, uvolněte část paměti.
+    Návrhář XAML je ve výchozím nastavení povolené, ale pouze spotřebovává prostředky, pokud můžete otevřít *XAML* souboru. Pokud pracovat se soubory XAML, ale nechcete, aby používat návrháře funkce, zakažte tuto funkci, uvolněte část paměti.
 
-    Chcete-li zakázat návrháře XAML, přejděte na **nástroje > Možnosti > návrháře XAML > Povolit Návrhář XAML**a zrušte výběr možnosti.
+    Chcete-li zakázat **návrháře XAML**, přejděte na **nástroje** > **možnosti** > **návrháře XAML**  >  **Povolit návrháře XAML**a zrušte výběr možnosti.
 
 - **Odebrat úlohy**
 
@@ -116,9 +116,9 @@ Informace o aspektech týkajících se výkonu kompilátoru platformu .NET ("Ros
 
 ## <a name="force-a-garbage-collection"></a>Vynutit kolekce paměti
 
-Modul CLR používá systém uvolňování paměti kolekce paměti správy. V tomto systému někdy paměti používá objekty, které už nejsou potřeba. Tento stav je dočasný; uvolňování paměti vydá tuto paměť na základě jejího výkonu a heuristiky využití prostředků. Můžete vynutit CLR ke shromažďování všech nevyužitou paměť pomocí klávesové zkratky v sadě Visual Studio. Pokud je významné množství paměti čekání kolekce a můžete vynutit uvolnění paměti, měli byste vidět využití paměti procesu devenv.exe vyřadit ve Správci úloh. Je občas nutné k použití této metody. Ale po dokončení náročná operace (například úplné sestavení, relaci ladění nebo řešení otevřete událost) může pomoct určit, kolik paměti je opravdu používá proces. Protože Visual Studio je přimíchán, spravované & (nativní), je někdy možné nativní přidělování a uvolňování pokouší o omezené paměťových prostředků. V podmínkách velké množství paměti může pomoct vynutit uvolňování paměti spusťte.
+Modul CLR používá systém uvolňování paměti kolekce paměti správy. V tomto systému někdy paměti používá objekty, které už nejsou potřeba. Tento stav je dočasný; uvolňování paměti vydá tuto paměť na základě jejího výkonu a heuristiky využití prostředků. Můžete vynutit CLR ke shromažďování všech nevyužitou paměť pomocí klávesové zkratky v sadě Visual Studio. Pokud je významné množství paměti čekání kolekce a můžete vynutit uvolnění paměti, měli byste vidět využití paměti *devenv.exe* proces vyřadit **Správce úloh**. Je občas nutné k použití této metody. Ale po dokončení náročná operace (například úplné sestavení, relaci ladění nebo řešení otevřete událost) může pomoct určit, kolik paměti je opravdu používá proces. Protože Visual Studio je přimíchán, spravované & (nativní), je někdy možné nativní přidělování a uvolňování pokouší o omezené paměťových prostředků. V podmínkách velké množství paměti může pomoct vynutit uvolňování paměti spusťte.
 
-Chcete-li vynutit uvolnění paměti, použijte klávesová zkratka: **Ctrl + Alt + Shift + F12**, **Ctrl + Alt + Shift + F12** (ho dvakrát stiskněte).
+Chcete-li vynutit uvolnění paměti, použijte klávesová zkratka: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12** (ho dvakrát stiskněte).
 
 Pokud vynucení uvolňování paměti spolehlivě provede váš scénář fungovat, soubor sestavy pomocí nástroje Visual Studio zpětnou vazbu, jak toto chování je pravděpodobné, že chyby.
 

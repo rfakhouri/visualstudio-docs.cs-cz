@@ -19,20 +19,36 @@
       href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: Kurzy
   items:
-    - name: 0 – Instalace podpory Pythonu
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: 1 – Vytvoření nového projektu Pythonu
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: 2 – Psaní a spouštění kódu
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: 3 – Používání interaktivního okna REPL
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: 4 – Spouštění kódu v ladicím programu
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: 5 – Instalace balíčků a správa prostředí Pythonu
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: 6 – Práce s úložištěm Git
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Python v sadě Visual Studio
+      items:
+        - name: 0 – Instalace podpory Pythonu
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: 1 – Vytvoření nového projektu Pythonu
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: 2 – Psaní a spouštění kódu
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: 3 – Používání interaktivního okna REPL
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: 4 – Spouštění kódu v ladicím programu
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: 5 – Instalace balíčků a správa prostředí Pythonu
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: 6 – Práce s úložištěm Git
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: Jak používat Django v sadě Visual Studio
+      items:
+        - name: 1 – Vytvoření projektu a řešení
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: 2 – Vytvoření aplikace Django
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: 3 – Doručování statických souborů a přidávání stránek
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: 4 – Použití šablony webového projektu Django
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: 5 – Ověřování uživatelů
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: 6 – Použití šablony webového projektu Django pro hlasování
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
 - name: Koncepty
   items:
     - name: Projekty Pythonu
@@ -106,5 +122,7 @@
       href: using-python-cookiecutter-templates.md
 - name: Odkaz
   items:
+    - name: Šablony položek
+      href: python-item-templates.md
     - name: Možnosti
       href: python-support-options-and-settings-in-visual-studio.md

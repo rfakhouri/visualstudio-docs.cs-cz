@@ -1,5 +1,5 @@
 ---
-title: Cílení na rozhraní .NET Framework v sadě Visual Studio
+title: Cílové rozhraní .NET Framework v sadě Visual Studio
 ms.date: 02/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e44ed988c15a77511d880f1877c1038579a360b5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cba93b86d6ecebf249e11d18bd6e4b6b86e59fda
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Přehled cílení na více Visual Studio
 
@@ -50,7 +50,7 @@ Pokud pracujete na projektu, jehož cílem dřívější verzi [!INCLUDE[dnprdns
 
 - Filtruje vlastní ovládací prvky v **sada nástrojů** odeberte ty, které nejsou k dispozici v cílové verzi a zobrazit pouze nejnovější ovládacích prvků, když jsou k dispozici více ovládacích prvků.
 
-- Filtruje technologii IntelliSense, která vynechejte jazykové funkce, které nejsou k dispozici v cílové verzi.
+- Filtruje **IntelliSense** vynechat jazykové funkce, které nejsou k dispozici v cílové verzi.
 
 - Filtruje vlastnosti v **vlastnosti** okno na ty, které nejsou k dispozici v cílové verzi vynechejte.
 
@@ -61,7 +61,7 @@ Pokud pracujete na projektu, jehož cílem dřívější verzi [!INCLUDE[dnprdns
 > [!NOTE]
 > Cílení na Framework nezaručuje, bude vaše aplikace správně spuštěn. Vaše aplikace a ujistěte se, že je spuštěna s cílovou verzi, musíte otestovat. Cílem nemůže framework verze starší než rozhraní .NET Framework 2.0.
 
-## <a name="selecting-a-target-framework-version"></a>Výběr cílové verze framework
+## <a name="select-a-target-framework-version"></a>Vyberte cílová verze framework
 
 Když vytvoříte projekt, vyberte cílová verze rozhraní .NET Framework v **nový projekt** dialogové okno. Seznam dostupných rozhraní obsahuje verze nainstalované framework, které platí pro typ vybrané šablony. Pro typy šablon, které nevyžadují rozhraní .NET Framework, například .NET Core šablony, **Framework** rozevíracího seznamu skryt.
 
@@ -69,19 +69,19 @@ Když vytvoříte projekt, vyberte cílová verze rozhraní .NET Framework v **n
 
 V existujícího projektu, můžete změnit cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi v dialogovém okně Vlastnosti projektu. Další informace najdete v tématu [postupy: cílení na verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-## <a name="resolving-system-and-user-assembly-references"></a>Řešení systému a uživatel odkazy na sestavení
+## <a name="resolve-system-and-user-assembly-references"></a>Vyřešit systému a uživatel odkazy na sestavení
 
 Chcete-li cílové verze rozhraní .NET Framework, musíte nejprve nainstalovat odkazy na příslušné sestavení. Si můžete stáhnout na vývojáře sady pro různé verze rozhraní .NET Framework [.NET stáhne](https://www.microsoft.com/net/download/windows) stránky.
 
-**Přidat odkaz na** dialogové okno zakáže sestavení systému, které se netýkají cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze tak, že není možné je přidat do projektu nechtěně. (Systém sestavení jsou soubory .dll, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi.) Odkazy, které patří do framework verzi, která je novější než verze cílové nevyřeší a ovládací prvky, které jsou závislé na takový odkaz nelze přidat. Pokud chcete povolit odkazu, obnovit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cíl, které obsahuje odkaz na projekt.  Další informace najdete v tématu [postupy: cílení na verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+**Přidat odkaz na** dialogové okno zakáže sestavení systému, které se netýkají cíl [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verze tak, že není možné je přidat do projektu nechtěně. (Sestavení systému *.dll* soubory, které jsou součástí [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] verzi.) Odkazy, které patří do framework verzi, která je novější než verze cílové nevyřeší a ovládací prvky, které jsou závislé na takový odkaz nelze přidat. Pokud chcete povolit odkazu, obnovit [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] cíl, které obsahuje odkaz na projekt.  Další informace najdete v tématu [postupy: cílení na verzi rozhraní .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-Další informace o odkazy na sestavení najdete v tématu [řešení sestavení v době návrhu](../msbuild/resolving-assemblies-at-design-time.md).
+Další informace o odkazy na sestavení najdete v tématu [přeložit sestavení v době návrhu](../msbuild/resolving-assemblies-at-design-time.md).
 
-## <a name="enabling-linq"></a>Povolení LINQ
+## <a name="enable-linq"></a>Povolit LINQ
 
-Když cílové rozhraní .NET Framework 3.5 nebo novější, odkaz na System.Core a import úrovni projektu pro System.Linq (v pouze v jazyce Visual Basic), se přidávají automaticky. Pokud chcete používat funkce LINQ, musíte také zapnout Option Infer (v pouze v jazyce Visual Basic). Referenční dokumentace a import se automaticky odeberou, když si změnit cíl na starší verzi rozhraní .NET Framework. Další informace najdete v tématu [práce s dotazy LINQ](/dotnet/csharp/tutorials/working-with-linq).
+Pokud cílíte rozhraní .NET Framework 3.5 nebo novější, odkaz na **System.Core** a import úrovni projektu pro <xref:System.Linq> (v jazyce Visual Basic pouze) se přidávají automaticky. Pokud chcete používat funkce LINQ, je nutné také aktivovat `Option Infer` na (v pouze v jazyce Visual Basic). Referenční dokumentace a import se automaticky odeberou, když si změnit cíl na starší verzi rozhraní .NET Framework. Další informace najdete v tématu [pracovat s dotazy LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
 ## <a name="see-also"></a>Viz také
 
 - [Cílení na více verzí (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Postupy: Změna cílové architektury a sady nástrojů (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Postupy: změnit cílový framework a platforma nástrojů (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

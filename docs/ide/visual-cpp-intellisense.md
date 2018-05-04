@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd4284e242f91525e14630375d5ea624968f60c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d82b40c7f0f06925be0fc6f55c5a01a4114946e
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 
-IntelliSense pro jazyk C++ je k dispozici pro samostatné soubory stejně jako u souborů, které jsou součástí projektu jazyka C++. V projektech pro různé platformy některé funkce IntelliSense jsou k dispozici v souborech sada a .c v projektu sdíleného kódu i v případě, že jste v kontextu Android nebo iOS.
+IntelliSense pro jazyk C++ je k dispozici pro samostatné soubory stejně jako u souborů, které jsou součástí projektu jazyka C++. V projektech pro různé platformy, jsou k dispozici v některé funkce IntelliSense *sada* a *.c* soubory v projektu sdíleného kódu i v případě, že jste v kontextu Android nebo iOS.
 
 ## <a name="intellisense-features-in-c"></a>Funkce technologie IntelliSense v jazyce C++
 
@@ -33,7 +33,7 @@ Položky nabídky a klávesové zkratky, viz následující obrázek můžete po
 
 Když začnete psát klíčové slovo, typ, funkce, název proměnné nebo jiného programu elementu, který rozpoznává kompilátor, editor nabízí dokončit slovo za vás.
 
-Seznam ikony a jejich významy, naleznete v části [zobrazení tříd a ikony v prohlížeči objekt](../ide/class-view-and-object-browser-icons.md).
+Seznam ikony a jejich významy, naleznete v části [ikony zobrazení třídy a prohlížeč objektů](../ide/class-view-and-object-browser-icons.md).
 
 ![Visual C&#43; &#43; dokončení Word okno](../ide/media/vs2015_cpp_complete_word.png "vs2015_cpp_complete_word")
 
@@ -73,34 +73,34 @@ Zde je aplikace OpenGLES nakonfigurovaný tak, aby sestavení pro Android a iOS.
 
 Všimněte si následujících akcí:
 
-- #Else větve na řádku 8 je zobrazeno šedě udávajících neaktivní oblast, protože __ANDROID\_ \_ je definována pro projekt pro Android.
+- `#else` Větve na řádku 8 je zobrazeno šedě udávajících neaktivní oblast, protože `__ANDROID__` je definována pro projekt pro Android.
 
-- S pozdravem proměnná na řádku 11 je inicializován s identifikátorem HELLO, který má fialové vlnovku. Je to proto, že žádný identifikátor HELLO je definována v projektu pro iOS teď neaktivní. Když v Android by kompilace projektu řádku 11, nebude v iOS. Vzhledem k tomu, že to je sdílené kód, který je něco byste měli změnit, i když se zkompiluje v konfiguraci aktivní.
+- S pozdravem proměnná na řádku 11 je inicializován s identifikátorem `HELLO`, který má fialové vlnovku. Důvodem je, že žádný identifikátor `HELLO` je definována v projektu pro iOS teď neaktivní. Když v Android by kompilace projektu řádku 11, nebude v iOS. Vzhledem k tomu, že to je sdílené kód, který je něco byste měli změnit, i když se zkompiluje v konfiguraci aktivní.
 
-- Řádek 12 obsahuje červenou vlnovkou identifikátor BYE; Tento identifikátor není definován v aktuálně vybraném aktivního projektu.
+- Řádek 12 obsahuje červenou vlnovkou identifikátor `BYE`; tento identifikátor není definovaný v aktuálně vybraném aktivního projektu.
 
-Nyní změňte aktivní projekt iOS.StaticLibrary a Všimněte si, jak podtržení vlnovkou změnit.
+Teď změňte aktivní projekt **iOS.StaticLibrary** a Všimněte si, jak podtržení vlnovkou změnit.
 
 ![iOS je vybrán jako aktivní projekt. ] (../ide/media/intellisensecppcrossplatform2.png "IntelliSenseCppCrossPlatform2")
 
 Všimněte si následujících akcí:
 
-- #Ifdef větev na řádku 6 je zobrazeno šedě udávajících neaktivní oblast, protože __ANDROID\_ \_ pro iOS projektu není definován.
+- `#ifdef` Větve na řádku 6 je zobrazeno šedě udávajících neaktivní oblast, protože `__ANDROID__` pro iOS projektu není definován.
 
-- S pozdravem proměnná na řádku 11 je inicializován s identifikátorem HELLO, která má nyní červenou vlnovkou. Je to proto, že žádný identifikátor HELLO je definován v projektu iOS momentálně aktivní.
+- S pozdravem proměnná na řádku 11 je inicializován s identifikátorem `HELLO`, které teď má červenou vlnovkou. Důvodem je, že žádný identifikátor `HELLO` je definována v projektu iOS momentálně aktivní.
 
-- Řádek 12 obsahuje fialové vlnovku identifikátor BYE; Tento identifikátor není definován v současné době neaktivní Android.NativeActivity projektu.
+- Řádek 12 obsahuje fialové vlnovku identifikátor `BYE`; tento identifikátor není definovaný v aktuálně neaktivní **Android.NativeActivity** projektu.
 
 ### <a name="intellisense-for-stand-alone-files"></a>IntelliSense pro samostatné soubory
 
-Když otevřete jeden soubor mimo žádného projektu, se stále objevuje IntelliSense. Můžete povolit nebo zakázat konkrétní funkce IntelliSense **možnosti** dialogovém **textového editoru** > **C/C++**  >  **Rozšířené**. Konfigurace technologie IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **IntelliSense a procházení pro soubory bez projektu** části.
+Když otevřete jeden soubor mimo žádného projektu, se stále objevuje IntelliSense. Můžete povolit nebo zakázat konkrétní funkce IntelliSense **možnosti** dialogovém **textového editoru** > **C/C++**  >  **Rozšířené**. Chcete-li nakonfigurovat IntelliSense pro jednotlivé soubory, které nejsou součástí projektu, vyhledejte **IntelliSense a procházení souborů jiný projekt** části.
 
 ![Visual C&#43; &#43; jeden soubor intellisense](../ide/media/vs2015_cpp_single_file_intellisense.png "vs2015_cpp_single_file_intellisense")
 
-Ve výchozím nastavení jedním souborem IntelliSense pouze používá standardní zahrnují adresáře, které chcete najít soubory hlaviček. Pokud chcete přidat další adresáře, otevřete místní nabídce na uzlu řešení a přidejte do adresáře **ladění zdrojového kódu** seznamu, jak ukazuje následující obrázek:
+Ve výchozím nastavení jedním souborem IntelliSense pouze používá standardní zahrnují adresáře, které chcete najít soubory hlaviček. Pokud chcete přidat další adresáře, otevřete v místní nabídce **řešení** uzel a přidejte do adresáře **ladění zdrojového kódu** seznamu, jak ukazuje následující obrázek:
 
 ![Přidání cesty do souboru záhlaví. ] (../ide/media/intellisensedebugyourcode.jpg "IntelliSenseDebugYourCode")
 
 ## <a name="see-also"></a>Viz také
 
-- [Používání atributu IntelliSense](../ide/using-intellisense.md)
+- [Používání technologie IntelliSense](../ide/using-intellisense.md)

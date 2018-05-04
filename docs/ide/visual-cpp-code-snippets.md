@@ -1,5 +1,5 @@
 ---
-title: Fragmenty kódu v jazyce Visual C++
+title: Fragmenty kódu Visual C++
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,11 +11,11 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0eca50a938312f6c463ff661c83fd90c9218b5ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bb091701384d36ca5aa8154701d94cda5fb34a5b
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-c-code-snippets"></a>Fragmenty kódu Visual C++
 
@@ -23,9 +23,9 @@ Fragmenty kódu v sadě Visual Studio, můžete použít přidat kód pro běžn
 
 Můžete přidat fragment kódu v konkrétních místech v kódu (vložení) nebo obklopit některé vybrané kódu pomocí fragmentu kódu.
 
-## <a name="inserting-a-code-snippet"></a>Vkládání fragmentu kódu
+## <a name="insert-a-code-snippet"></a>Vložit fragment kódu
 
-Pokud chcete vložit fragment kódu, otevřete soubor kódu C++ (sada nebo .h), klikněte na tlačítko někde v souboru a proveďte jednu z následujících akcí:
+Chcete-li vložit fragment kódu, otevřete soubor kódu C++ (*sada* nebo *.h*), klikněte na tlačítko někde v souboru a proveďte jednu z následujících akcí:
 
 - Klikněte pravým tlačítkem a získat v místní nabídce vyberte **Vložit fragment kódu**
 
@@ -41,9 +41,9 @@ Zobrazí seznam možností počínaje **#if**. Když vyberete **#if**, měli bys
 #endif // 0
 ```
 
-Pak můžete 0 nahradit správné podmínku.
+Potom můžete nahradit **0** správné podmínka.
 
-## <a name="using-a-code-snippet-to-surround-selected-code"></a>Obklopit vybraný úsek kódu pomocí fragmentu kódu
+## <a name="use-a-code-snippet-to-surround-selected-code"></a>Obklopit vybraný úsek kódu pomocí fragmentu kódu
 
 Chcete-li obklopit vybraný úsek kódu pomocí fragmentu kódu, vyberte řádek (nebo více řádků) a proveďte jednu z následujících:
 
@@ -51,7 +51,7 @@ Chcete-li obklopit vybraný úsek kódu pomocí fragmentu kódu, vyberte řádek
 
 - Z **upravit** > **IntelliSense** nabídce vyberte možnost **příkazu Obklopit s**
 
-- Použití klávesnice, stiskněte klávesu: **CTRL**+**tisíc**+**S**
+- Použití klávesnice, stiskněte klávesu: **Ctrl**+**tisíc**+**S**
 
 Vyberte **#if**. Měli byste vidět zhruba takhle:
 
@@ -71,7 +71,7 @@ Názvy většina fragmenty kódu jsou zřejmé, ale některé názvy může být
 
 ## <a name="class-vs-classi"></a>Třída oproti classi
 
-**Třída** fragment obsahuje definice třídy s názvem MyClass, s odpovídající výchozí konstruktor a destruktor, kde se nachází definice konstruktor a destruktor mimo třídy:
+**Třída** fragment obsahuje definice třídy s názvem `MyClass`, s odpovídající výchozí konstruktor a destruktor, kde se nachází definice konstruktor a destruktor mimo třídy:
 
 ```cpp
 class MyClass
@@ -93,7 +93,7 @@ MyClass::~MyClass()
 }
 ```
 
-**Classi** fragment kódu také obsahuje definice třídy s názvem MyClass, ale do definice třídy jsou definovány výchozí konstruktor a destruktor:
+**Classi** fragment kódu také obsahuje definice třídy s názvem `MyClass`, ale do definice třídy jsou definovány výchozí konstruktor a destruktor:
 
 ```cpp
 class MyClass
@@ -153,7 +153,7 @@ class SomeClass {
 };
 ```
 
-Pokud vložíte fragmentu destruktor, poskytuje destruktor pro SomeClass:
+V případě, že můžete vložit fragment kódu destruktor, poskytuje destruktor pro `SomeClass`:
 
 ```cpp
 class SomeClass {

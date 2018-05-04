@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d96d547c3558c9c1e5ce4d11904a0c8cce048e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-code-snippets"></a>Fragmenty kódu v C#
 
@@ -26,7 +26,7 @@ Fragmenty kódu jsou předem vytvořené fragmenty kódu, které lze rychle vlo�
 
  Můžete vložit fragment kódu v umístění kurzoru nebo vložit fragmentu kódu obklopit kolem aktuálně vybraný úsek kódu. Vkládací modul fragmentu kódu je vyvolána prostřednictvím **Vložit fragment kódu** nebo **příkazu Obklopit s** příkazy **IntelliSense** nabídky, nebo pomocí klávesové zkratky  **CTRL**+**tisíc**,**X** nebo **Ctrl**+**tisíc**,**S** v uvedeném pořadí.
 
- Vkládací modul fragmentu kódu zobrazuje název fragmentu kódu pro všechny fragmenty kódu k dispozici. Vkládací modul fragmentu kódu také zahrnuje vstupní dialogové okno zadává název fragmentu kódu nebo část názvu fragmentu kódu. Vkládací modul fragmentu kódu označuje nejvíce odpovídá název fragmentu kódu. Stisknutím **kartě** kdykoli bude zavřít Vkládací modul fragmentu kódu a vkládání aktuálně vybraný fragment kódu. Stisknutím **Esc** nebo kliknutím na tlačítko myši v editoru kódu se zavřít Vkládací modul fragmentu kódu bez vložení fragmentu kódu.
+ **Vkládací modul fragmentu kódu** zobrazí název fragmentu kódu pro všechny fragmenty kódu k dispozici. Vkládací modul fragmentu kódu také zahrnuje vstupní dialogové okno zadává název fragmentu kódu nebo část názvu fragmentu kódu. Vkládací modul fragmentu kódu označuje nejvíce odpovídá název fragmentu kódu. Stisknutím **kartě** kdykoli bude zavřít Vkládací modul fragmentu kódu a vkládání aktuálně vybraný fragment kódu. Stisknutím **Esc** nebo kliknutím na tlačítko myši v editoru kódu se zavřít Vkládací modul fragmentu kódu bez vložení fragmentu kódu.
 
 ## <a name="default-code-snippets"></a>Výchozí fragmenty kódu
 
@@ -57,7 +57,7 @@ Ve výchozím nastavení jsou zahrnuty následující fragmenty kódu v sadě Vi
 |iterátor|Vytvoří iterace.|Uvnitř třídy nebo struktury.|
 |iterindex|Vytvoří pár "s názvem" iterator a indexer pomocí vnořené třídy.|Uvnitř třídy nebo struktury.|
 |lock|Vytvoří [zámku](/dotnet/csharp/language-reference/keywords/lock-statement) bloku.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|
-|mbox|Vytvoří volání <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Možná budete muset přidat odkaz na System.Windows.Forms.dll.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|
+|mbox|Vytvoří volání <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Možná budete muset přidat odkaz na *System.Windows.Forms.dll*.|Uvnitř metody indexer, přistupujícího objektu vlastnosti nebo přístupového objektu události.|
 |– obor názvů|Vytvoří [obor názvů](/dotnet/csharp/language-reference/keywords/namespace) deklarace.|Uvnitř oboru názvů (včetně globálního oboru názvů).|
 |Prop|Vytvoří [automaticky implementované vlastnosti](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) deklarace.|Uvnitř třídy nebo struktury.|
 |propfull|Vytvoří deklarace vlastnosti se `get` a `set` přistupující objekty.|Uvnitř třídy nebo struktury.|
@@ -78,4 +78,4 @@ Ve výchozím nastavení jsou zahrnuty následující fragmenty kódu v sadě Vi
 - [Funkce fragmentu kódu](../ide/code-snippet-functions.md)
 - [Fragmenty kódu](../ide/code-snippets.md)
 - [Parametry šablony](../ide/template-parameters.md)
-- [Postupy: Použití příkazu Obklopit s fragmenty kódu](../ide/how-to-use-surround-with-code-snippets.md)
+- [Postupy: použití příkazu Obklopit s fragmenty kódu](../ide/how-to-use-surround-with-code-snippets.md)

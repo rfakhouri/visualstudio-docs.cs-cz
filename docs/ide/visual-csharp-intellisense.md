@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 353a5100337d295f7265fb376e363e2520e6c9e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -53,7 +53,7 @@ Seznam dokončení v jazyce C#, obsahuje rozšiřující metody, které jsou v o
 > [!NOTE]
 > Seznam dokončení nejsou zobrazeny všechny rozšiřující metody pro <xref:System.String> objekty.
 
-Metody rozšíření použití různých ikony než instance metody. Výpis seznamu ikon, najdete v části [zobrazení tříd a ikony v prohlížeči objekt](../ide/class-view-and-object-browser-icons.md). Pokud instanci metody a metoda rozšíření se stejným názvem jsou v oboru, zobrazí se seznam dokončení ikonu – metoda rozšíření.
+Metody rozšíření použití různých ikony než instance metody. Výpis seznamu ikon, najdete v části [ikony zobrazení třídy a prohlížeč objektů](../ide/class-view-and-object-browser-icons.md). Pokud instanci metody a metoda rozšíření se stejným názvem jsou v oboru, zobrazí se seznam dokončení ikonu – metoda rozšíření.
 
 ## <a name="filtered-completion-lists"></a>Filtrované seznamy dokončení
 
@@ -67,11 +67,11 @@ IntelliSense odebere nepotřebné členy ze seznamu dokončení pomocí filtrů.
 
 - **Inicializátory objektu**: pouze členové, které jde inicializovat se objeví v seznamu dokončení.
 
-- **New – klíčové slovo**: Pokud zadáte `new` a pak stiskněte MEZERNÍK, zobrazí se seznam dokončení. Automaticky se vybere položka v seznamu, na základě kontextu ve vašem kódu. Položky se automaticky vybrán v seznamu dokončení pro deklarace a příkazech return v metodách.
+- **New – klíčové slovo**: Pokud zadáte `new` a potom stiskněte klávesu **místo**, zobrazí se seznam dokončení. Automaticky se vybere položka v seznamu, na základě kontextu ve vašem kódu. Položky se automaticky vybrán v seznamu dokončení pro deklarace a příkazech return v metodách.
 
-- **enum – klíčové slovo**: když stiskněte MEZERNÍK po symbolem rovná pro přiřazení výčtu, zobrazí se seznam dokončení. Automaticky se vybere položka v seznamu, na základě kontextu ve vašem kódu. Například jsou automaticky vybrány položky v seznamu dokončení po zadání – klíčové slovo návratový, a pokud provedete deklaraci.
+- **enum – klíčové slovo**: po stisknutí klávesy **místo** po symbolem rovná pro přiřazení výčtu, zobrazí se seznam dokončení. Automaticky se vybere položka v seznamu, na základě kontextu ve vašem kódu. Například jsou automaticky vybrány položky v seznamu dokončení po zadání – klíčové slovo návratový, a pokud provedete deklaraci.
 
-- **jako a operátory**: seznam filtrované dokončení se zobrazí automaticky, když stiskněte MEZERNÍK po jste zadali `as` nebo `is` – klíčové slovo.
+- **jako a operátory**: po stisknutí klávesy se automaticky zobrazí seznam filtrované dokončení **místo** po zadání `as` nebo `is` – klíčové slovo.
 
 - **Události**: Pokud zadáte klíčové slovo `event`, seznamu dokončení obsahuje pouze typů delegátů.
 
@@ -83,7 +83,7 @@ IntelliSense pamatuje členů, které jste vybrali v místní nabídce nedávno 
 
 ## <a name="override"></a>override
 
-Pokud zadáte [přepsat](/dotnet/csharp/language-reference/keywords/override) a pak stiskněte MEZERNÍK, IntelliSense zobrazí všechny platnou třídu base členy, kteří v rozbalovací seznam se dá přepsat. Zadáním návratový typ metody za `override` vyzve IntelliSense, aby se zobrazily pouze metody, které vracejí stejného typu. Když IntelliSense nelze najít žádné shody, se zobrazí všechny členy základní třídy.
+Pokud zadáte [přepsat](/dotnet/csharp/language-reference/keywords/override) a potom stiskněte klávesu **místo**, IntelliSense zobrazí všechny platnou třídu base členy, kteří v rozbalovací seznam se dá přepsat. Zadáním návratový typ metody za `override` vyzve IntelliSense, aby se zobrazily pouze metody, které vracejí stejného typu. Když IntelliSense nelze najít žádné shody, se zobrazí všechny členy základní třídy.
 
 ## <a name="automatic-code-generation"></a>Automatické vytváření kódu
 
@@ -91,7 +91,7 @@ Pokud zadáte [přepsat](/dotnet/csharp/language-reference/keywords/override) a 
 
 **Přidat pomocí** IntelliSense operace automaticky přidá požadované `using` direktivy do souboru kódu. Tato funkce umožňuje udržovat vaše zaměřit se na kód zápis nechcete vyžadující, abyste posun vaší zaměření na jinou část kódu.
 
-Chcete-li iniciovat přidat pomocí operace, umístěte kurzor na odkaz na typ, který nelze vyřešit. Například když Vytvořte konzolovou aplikaci a poté přidejte `XmlTextReader` k tělu `Main` metody červenou vlnovkou se zobrazuje na tohoto řádku kódu protože odkaz na typ nelze přeložit. Potom můžete vyvolat přidat pomocí prostřednictvím rychlé akce. Rychlé akce je viditelná, pouze pokud kurzor je nastavený na nevázaný typ.
+K zahájení **přidat pomocí** operace, pozice, umístěte kurzor na typu odkaz, který nelze přeložit. Například když Vytvořte konzolovou aplikaci a poté přidejte `XmlTextReader` k tělu `Main` metody červenou vlnovkou se zobrazuje na tohoto řádku kódu protože odkaz na typ nelze přeložit. Potom může **přidat pomocí** prostřednictvím **rychlé akce**. **Rychlé akce** je viditelná jen při kurzor je nastavený na nevázaný typ.
 
 ![Přidat pomocí, rychlá rozšířené obrázek akce](../ide/media/addusing-quickaction.png "AddUsing QuickAction")
 
@@ -101,17 +101,17 @@ Klikněte na ikonu žárovky a potom zvolte **pomocí System.Xml;** a automatick
 
 **Odebrat a řazení direktiv Using** možnost seřadí a odebere `using` a `extern` deklarace bez změny chování zdrojového kódu. Zdrojové soubory v čase, může přestat opakovaném a obtížně se číst z důvodu nepotřebné a neuspořádaný `using` direktivy. **Odebrat a řazení direktiv Using** možnost odebráním nevyužité zkomprimuje zdrojového kódu `using` direktivy a lepší čitelnost seřazením. Na **upravit** nabídce zvolte **IntelliSense**a potom zvolte **uspořádání direktiv Using**.
 
-### <a name="implement-interface"></a>Implementovat rozhraní
+### <a name="implement-interface"></a>Implementace rozhraní
 
-IntelliSense nabízí možnost, která vám pomůže implementovat [rozhraní](/dotnet/csharp/language-reference/keywords/interface) při práci v editoru kódu. Za normálních okolností správně implementovat rozhraní, musíte vytvořit deklaraci metody pro každého člena rozhraní v třídě. Používání atributu IntelliSense, zadejte název rozhraní v deklaraci třídy po, zobrazí se žárovky rychlé akce. Žárovky vám dává možnost automaticky, toto rozhraní implementovat pomocí explicitní nebo implicitní názvy. V části explicitní názvy deklarace metoda provádění název rozhraní; v části implicitní pojmenování deklarace metoda neoznačují rozhraní, do které patří. Metodu explicitně rozhraní jsou přístupné pouze prostřednictvím instance rozhraní a ne prostřednictvím instance třídy. Další informace najdete v tématu [explicitní implementace rozhraní](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
+IntelliSense nabízí možnost, která vám pomůže implementovat [rozhraní](/dotnet/csharp/language-reference/keywords/interface) při práci v editoru kódu. Za normálních okolností správně implementovat rozhraní, musíte vytvořit deklaraci metody pro každého člena rozhraní v třídě. Používání atributu IntelliSense, zadejte název rozhraní v deklaraci třídy po **rychlé akce** žárovky se zobrazí. Žárovky vám dává možnost automaticky, toto rozhraní implementovat pomocí explicitní nebo implicitní názvy. V části explicitní názvy deklarace metoda provádění název rozhraní; v části implicitní pojmenování deklarace metoda neoznačují rozhraní, do které patří. Metodu explicitně rozhraní jsou přístupné pouze prostřednictvím instance rozhraní a ne prostřednictvím instance třídy. Další informace najdete v tématu [implementace explicitního rozhraní](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation).
 
 Implementovat rozhraní vygeneruje minimální počet zástupných procedur metoda, které je potřeba splnit rozhraní. Pokud základní třída implementuje části rozhraní, nejsou tyto zástupných procedur obnovovaly.
 
 ### <a name="implement-abstract-base-class"></a>Implementace třídy base abstraktu
 
-IntelliSense nabízí možnost, která vám pomůže implementovat členy abstraktní základní třídu automaticky při práci v editoru kódu. Za normálních okolností implementace členů abstraktní základní třída vyžaduje vytváření nové definice metoda abstraktní základní třída pro každou metodu v odvozené třídě. Používání atributu IntelliSense, po zadání názvu abstraktní základní třídy v deklaraci třídy, se zobrazí žárovky rychlé akce. Žárovky vám dává možnost automaticky implementovat metody třídy base.
+IntelliSense nabízí možnost, která vám pomůže implementovat členy abstraktní základní třídu automaticky při práci v editoru kódu. Za normálních okolností implementace členů abstraktní základní třída vyžaduje vytváření nové definice metoda abstraktní základní třída pro každou metodu v odvozené třídě. Používání atributu IntelliSense, po zadání názvu abstraktní základní třídy v deklaraci třídy **rychlé akce** žárovky se zobrazí. Žárovky vám dává možnost automaticky implementovat metody třídy base.
 
-Metoda zástupných procedur, vytvořených pomocí funkce abstraktní základní třída implementace jsou modelovány pomocí fragmentu kódu, který je definován v souboru MethodStub.snippet. Fragmenty kódu jsou změn. Další informace najdete v tématu [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md).
+Metoda zástupných procedur, které jsou generované **implementace abstraktní základní třída** funkce jsou modelovány pomocí fragmentu kódu, který je definován v souboru *MethodStub.snippet*. Fragmenty kódu jsou změn. Další informace najdete v tématu [návod: Vytvoření fragmentu kódu](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Generování před využitím
 
@@ -119,9 +119,9 @@ Metoda zástupných procedur, vytvořených pomocí funkce abstraktní základn�
 
 Red vlnovkou se zobrazí pod každý nedefinovaný identifikátor. Při umístění ukazatele myši na identifikátor, zobrazí se chybová zpráva v popisu tlačítka. Pokud chcete zobrazit příslušné možnosti, můžete použít jednu z následujících postupů:
 
-- Klikněte na tlačítko nedefinovaný identifikátor. Žárovky rychlé akce se zobrazí pod identifikátor. Klikněte na tlačítko žárovky.
+- Klikněte na tlačítko nedefinovaný identifikátor. A **rychlé akce** žárovky se zobrazí pod identifikátor. Klikněte na tlačítko žárovky.
 
-- Klikněte na nedefinovaný identifikátor a stiskněte klávesu **Ctrl** + **.** (Ctrl + tečka).
+- Klikněte na nedefinovaný identifikátor a stiskněte klávesu **Ctrl**+**.** (**Ctrl** + tečka).
 
 - Klikněte pravým tlačítkem na nedefinovaný identifikátor a pak klikněte na **rychlé akce a refaktoring**.
 
@@ -135,13 +135,13 @@ Možnosti, které se zobrazují patří:
 
 - **Generovat – třída**
 
-- **Vytvořit nový typ...**  (pro třída, struktura, rozhraní nebo výčtu)
+- **Vygenerovat nový typ** (pro třída, struktura, rozhraní nebo výčtu)
 
 ## <a name="generate-event-handlers"></a>Generovat obslužné rutiny událostí
 
 V editoru kódu technologie IntelliSense můžete spojit metody (obslužné rutiny událostí) na pole událostí.
 
-Pokud zadáte `+=` operátor po na pole událostí v souboru .cs IntelliSense zobrazí výzvu s možností stiskněte **kartě** klíč. Vloží novou instanci třídy delegáta, který odkazuje na metodu zpracování události.
+Pokud zadáte `+=` operátor po na pole událostí v *.cs* souboru, IntelliSense zobrazí výzvu s možností stiskněte **kartě** klíč. Vloží novou instanci třídy delegáta, který odkazuje na metodu zpracování události.
 
 ![Tlačítko automaticky háku až](../ide/media/vxautohookup.gif "vxAutoHookUp")
 
@@ -155,9 +155,9 @@ Pokud vyberete **kartě**, IntelliSense automaticky dokončení příkazu a odka
 Pokud vyberete **kartě**, IntelliSense zástupných procedur se metoda se správným podpisem a vloží kurzor v těle obslužné rutiny události.
 
 > [!NOTE]
-> Použití **přejděte zpětné** příkaz na **zobrazení** nabídky (**Ctrl** + **-**) se vrátíte k události příkaz spojení.
+> Použití **přejděte zpětné** příkaz na **zobrazení** nabídky (**Ctrl**+**-**) se vrátíte k události příkaz spojení.
 
 ## <a name="see-also"></a>Viz také
 
-- [Používání atributu IntelliSense](../ide/using-intellisense.md)
+- [Používání technologie IntelliSense](../ide/using-intellisense.md)
 - [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)

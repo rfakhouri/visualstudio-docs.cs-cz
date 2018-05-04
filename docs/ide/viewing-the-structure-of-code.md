@@ -27,11 +27,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e0d6527227dfb638452337d1978bcbede29ef4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f66d9972202005d1aa1ff102f105d99a82825713
+ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-structure-of-code"></a>Zobrazení struktury kódu
 
@@ -56,11 +56,11 @@ Pokud váš projekt se změnami do správy zdrojového kódu, každý **zobrazen
 
 ### <a name="class-view-toolbar"></a>Třídy nástrojů zobrazení
 
-Zobrazení tříd nástrojů obsahuje následující příkazy.
+**Zobrazení tříd** nástrojů obsahuje následující příkazy.
 
 |||
 |-|-|
-|**Nová složka**|Vytvoří virtuální složku nebo podsložku, ve kterém můžete uspořádat často používané elementy. Jsou uloženy v aktivním řešení (.suo) souboru. Po přejmenování nebo odstranění elementu v kódu, se může objevit ve složce virtuální jako uzel k chybě. Pokud chcete tento problém opravit, odstraňte uzlu chyby. Pokud jste přejmenovali element, můžete jej přesunout z hierarchie projektu do složky znovu.|
+|**Nová složka**|Vytvoří virtuální složku nebo podsložku, ve kterém můžete uspořádat často používané elementy. Jsou uloženy v aktivním řešení (*.suo*) souboru. Po přejmenování nebo odstranění elementu v kódu, se může objevit ve složce virtuální jako uzel k chybě. Pokud chcete tento problém opravit, odstraňte uzlu chyby. Pokud jste přejmenovali element, můžete jej přesunout z hierarchie projektu do složky znovu.|
 |**zpět**|Přejde na dříve vybranou položku.|
 |**Předat dál**|Přejde na další vybranou položku.|
 |**Zobrazení diagramu tříd** (spravovaných jenom projekty kódu)|K dispozici po vyberte obor názvů nebo zadejte v **zobrazení tříd**. Pokud je vybraný obor názvů, třídy diagram zobrazuje všechny typy v ní. Když vyberete typ diagramu tříd zobrazuje pouze typu.|
@@ -90,7 +90,7 @@ Místní nabídky v **zobrazení tříd** může obsahovat následující přík
 |**Přechod na definici**|Najde definici element ve zdrojovém kódu, nebo v **Prohlížeč objektů**, pokud element není definován v otevřeného projektu.|
 |**Procházet definice**|Zobrazí vybranou položku v **Prohlížeč objektů**.|
 |**Najít všechny odkazy**|Vyhledá položku aktuálně vybraného objektu a výsledky zobrazí v okně **Najít výsledky** okno.|
-|**Typ filtru** (spravovaný kód pouze)|Zobrazí vybraný typ nebo obor názvů. Filtr můžete odebrat výběrem **zrušte najít** (X) tlačítko Další **najít** pole.|
+|**Typ filtru** (spravovaný kód pouze)|Zobrazí vybraný typ nebo obor názvů. Filtr můžete odebrat výběrem **zrušte najít** (**X**) vedle položky **najít** pole.|
 |**Kopírování**|Zkopíruje plně kvalifikovaný název položky.|
 |**Seřadit podle abecedy**|Uvádí typy a členy abecedně podle názvu.|
 |**Řazení podle typ člena**|Uvádí typy a členy v pořadí podle typu (tak, aby třídy předcházet rozhraní, rozhraní předcházet delegáti, a metody předcházet vlastnosti).|
@@ -130,11 +130,11 @@ V místní nabídce **hierarchie volání** okno obsahuje následující příka
 
 **Prohlížeč objektů** okno zobrazí popisy kódu v projektech.
 
-Můžete filtrovat součásti, které chcete zobrazit pomocí rozevíracího seznamu v horní části okna. Vlastní komponenty mohou zahrnovat spravovaného kódu spustitelné soubory, knihovny sestavení, knihovny typů a .ocx soubory. Není možné přidat vlastní komponenty C++. Vlastní nastavení se ukládají v adresáři aplikace Visual Studio uživatele, % APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat.
+Můžete filtrovat součásti, které chcete zobrazit pomocí rozevíracího seznamu v horní části okna. Vlastní komponenty mohou obsahovat spustitelné soubory spravovaného kódu, sestavení knihovny, knihovny typů a *.ocx* soubory. Není možné přidat vlastní komponenty C++. Vlastní nastavení se ukládají v adresáři aplikace Visual Studio uživatele *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
 
 Levém podokně **Prohlížeč objektů** ukazuje sestavení. Můžete rozbalit sestavení, které chcete zobrazit obory názvů, které obsahují a potom rozbalte obory názvů do zobrazení, které obsahují typy. Když vyberete typ, její členy (například vlastnosti a metody) jsou uvedeny v pravém podokně. Pravém dolním podokně zobrazí podrobné informace o vybrané položce.
 
-Můžete vyhledat konkrétní položku pomocí **vyhledávání** pole v horní části okna. Hledání nerozlišují malá a velká písmena. V levém podokně se zobrazí výsledky hledání. Zrušte vyhledávání, vyberte **Smazat hledání** (X) tlačítko Další **vyhledávání** pole.
+Můžete vyhledat konkrétní položku pomocí **vyhledávání** pole v horní části okna. Hledání nerozlišují malá a velká písmena. V levém podokně se zobrazí výsledky hledání. Zrušte vyhledávání, vyberte **Smazat hledání** (**X**) vedle položky **vyhledávání** pole.
 
 **Prohlížeč objektů** sleduje výběr jste udělali a můžete přejít mezi vybrané položky pomocí **dál** a **zpět** tlačítek na panelu nástrojů.
 
@@ -185,7 +185,7 @@ V místní nabídce **Prohlížeč objektů** může obsahovat následující p�
 I když toto okno je jen pro čtení, můžete nastavit zarážky nebo záložky v ní. Chcete-li upravit definici zobrazených, zvolte **upravit definici** v místní nabídce. Tento zdrojový soubor se otevře v editoru kódu a Posune kurzor na řádek, kde začíná definici.
 
 > [!NOTE]
-> Spouštění v sadě Visual Studio 2015, okno Code Definition se použít jenom s C++ – kód.
+> Spouštění v sadě Visual Studio 2015 **definice kódu** okno lze použít pouze s kódem C++.
 
 ### <a name="code-definition-shortcut-menu"></a>Kód definice místní nabídky
 
@@ -193,8 +193,8 @@ V místní nabídce **definice kódu** okno může obsahovat následující př�
 
 |||
 |-|-|
-|**Rychlé akce a refaktoring...**||
-|**Přejmenování...**||
+|**Rychlé akce a refaktoring**||
+|**Přejmenovat**||
 |**Generování grafů zahrnout soubory**||
 |**Funkce Náhled definice**||
 |**Přechod na definici**|Najde definici (nebo definice pro částečné třídy) a zobrazí je v **Najít výsledky** okno.|

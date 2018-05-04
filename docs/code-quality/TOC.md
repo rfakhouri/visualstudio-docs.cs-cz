@@ -34,7 +34,7 @@
 #### [Určení, kdy a kde se má anotace použít](specifying-when-and-where-an-annotation-applies.md)
 #### [Vnitřní funkce](intrinsic-functions.md)
 #### [Doporučené postupy a příklady (poznámky SAL)](best-practices-and-examples-sal.md)
-### [Určení dalších informací o kódu pomocí __analysis_assume](how-to-specify-additional-code-information-by-using-analysis-assume.md)
+### [Určení dalších informací o kódu pomocí funkce _Analysis_assume](how-to-specify-additional-code-information-by-using-analysis-assume.md)
 ## [Sady pravidel](using-rule-sets-to-group-code-analysis-rules.md)
 ### [Sady pravidel pro spravovaný kód](how-to-configure-code-analysis-for-a-managed-code-project.md)
 #### [Konfigurace analýzy kódu pro webovou aplikaci ASP.NET](how-to-configure-code-analysis-for-an-aspnet-web-application.md)
