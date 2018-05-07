@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97e0b1e58a1a3a490d97d49410f04b4b08eb844b
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>Kurz – krok 6: použití šablony hlasovací webový projekt Django
 
@@ -361,7 +361,7 @@ Volání `admin.site.register` pak připojí k modelu třídy (`Poll`) a zahrnuj
 ## <a name="next-steps"></a>Další kroky
 
 > [!Note]
-> Pokud jste se potvrzení řešení sady Visual Studio do správy zdrojového kódu v rámci postupu v tomto kurzu, teď je vhodná doba udělat další potvrzení. Řešení by měl odpovídat kurz zdrojový kód na Githubu: [Microsoft nebo python – ukázka vs další django](https://github.com/Microsoft/python-sample-vs-learn-django).
+> Pokud jste se potvrzení řešení sady Visual Studio do správy zdrojového kódu v rámci postupu v tomto kurzu, teď je vhodná doba udělat další potvrzení. Řešení by měl odpovídat kurz zdrojový kód na Githubu: [Microsoft nebo python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Nyní jste prozkoumali celého šablony "Prázdný webový projekt Django", "Webový projekt Django" a "Hlasovací webový projekt Django" v sadě Visual Studio. Jste se naučili základy Django, například pomocí zobrazení a šablony a jste prozkoumali směrování, ověřování a použití modelů databáze. Teď by měla být moci vytvořit webovou aplikaci vlastní veškeré zobrazení a modelů, které potřebujete.
 

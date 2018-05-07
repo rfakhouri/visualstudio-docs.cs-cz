@@ -31,11 +31,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d62cc3aff0eb714f142502d30712c8cc289087cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ce62e2d2723c38d933c9efc4c8d910ac418dcb4f
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Vytváření a konfigurace členů typů (návrhář tříd)
 Můžete přidat diagram tito členové pro typy třídy a konfigurace členů v **podrobností třídy** okno:
@@ -57,8 +57,8 @@ Můžete přidat diagram tito členové pro typy třídy a konfigurace členů v
 
 |Úloha|Podpora obsahu|
 |----------|------------------------|
-|**Začínáme:** předtím, než vytvoříte a nakonfigurujete členy typu, je nutné otevřít **podrobností třídy** okno.|-   [Otevřete okno podrobností třídy](creating-and-configuring-type-members.md#OpenClassDetails)<br />-   [Poznámky pro použití podrobnosti – třída](creating-and-configuring-type-members.md#ClassDetailsUsageNotes)<br />-   [Zobrazení jen pro čtení informací](creating-and-configuring-type-members.md#ReadOnlyInfo)<br />-   [Klávesové zkratky a zkratky myši v okně diagramu tříd a podrobností třídy](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Vytvořit a upravit členy typu:** můžete vytvořit nové členy, upravit členy a přidat parametry do metody pomocí **podrobností třídy** okno.|-   [Vytváření členů](creating-and-configuring-type-members.md#CreateMembers)<br />-   [Úprava členy typu](creating-and-configuring-type-members.md#ModifyTypeMembers)<br />-   [Přidání parametrů do metod](creating-and-configuring-type-members.md#AddMethodParams)|
+|**Začínáme:** předtím, než vytvoříte a nakonfigurujete členy typu, je nutné otevřít **podrobností třídy** okno.|-   [Otevřete okno podrobností třídy](creating-and-configuring-type-members.md#open-the-class-details-window)<br />-   [Poznámky pro použití podrobnosti – třída](creating-and-configuring-type-members.md#class-details-usage-notes)<br />-   [Zobrazení jen pro čtení informací](creating-and-configuring-type-members.md#display-of-read-only-information)<br />-   [Klávesnice a myši zkratky v okně diagramu tříd a podrobností třídy](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Vytvořit a upravit členy typu:** můžete vytvořit nové členy, upravit členy a přidat parametry do metody pomocí **podrobností třídy** okno.|-   [Vytváření členů](creating-and-configuring-type-members.md#create-members)<br />-   [Upravit členy typu](creating-and-configuring-type-members.md#modify-type-members)<br />-   [Přidání parametrů do metody](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Otevřete okno podrobností třídy
 Ve výchozím nastavení **podrobností třídy** okno se zobrazí automaticky při otevření nové diagramu tříd (najdete v části [postupy: Přidání diagramů tříd do projektů](how-to-add-class-diagrams-to-projects.md)). Můžete také otevřít **podrobností třídy** okno explicitně, následujícím způsobem.
@@ -157,7 +157,7 @@ Každý řádek členu zobrazuje následující prvky:
 
 -   **\<Přidání člena >**
 
-     Poslední řádek v **podrobností třídy** okno obsahuje text  **\<přidat člena >** v **název** buňky. Pokud na tuto buňku klikněte, můžete vytvořit nový člen. Další informace najdete v tématu [vytváření členy](creating-and-configuring-type-members.md#CreateMembers).
+     Poslední řádek v **podrobností třídy** okno obsahuje text  **\<přidat člena >** v **název** buňky. Pokud na tuto buňku klikněte, můžete vytvořit nový člen. Další informace najdete v tématu [vytvořit členy](creating-and-configuring-type-members.md#create-members).
 
 -   **Vlastnosti člena v okně vlastností**
 
@@ -207,14 +207,14 @@ Přidání parametrů do metod pomocí **podrobností třídy** okno. Parametry 
 
 -   **\<Přidejte parametr >**
 
-     Poslední řádek parametr člena obsahuje text **<add parameter>** v **název** buňky. Kliknutím na tuto buňku vytvoříte nový parametr. Další informace najdete v tématu [přidání parametru k metodě](creating-and-configuring-type-members.md#HowToAddParameterToMethod).
+     Poslední řádek parametr člena obsahuje text **<add parameter>** v **název** buňky. Kliknutím na tuto buňku vytvoříte nový parametr. Další informace najdete v tématu [přidání parametru k metodě](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
 **Parametr vlastností v okně vlastností**
 
 V okně Vlastnosti se zobrazí stejný parametr vlastností zobrazených v **podrobností třídy** okno: **název**, **typ**, **modifikátor** , **Souhrn**, a taky **volitelné výchozí** vlastnost. Změnou vlastnosti na jednom místě aktualizujete hodnotu vlastnosti globálně, včetně zobrazení hodnoty v jiném umístění.
 
 > [!NOTE]
-> Pro přidání parametru s delegátem, najdete v části [vytváření členy](creating-and-configuring-type-members.md#CreateMembers).
+> Pro přidání parametru s delegátem, najdete v části [vytvořit členy](creating-and-configuring-type-members.md#create-members).
 
 
 > [!NOTE]
@@ -323,4 +323,4 @@ Nelze upravit nativní kód C++ pomocí návrháře tříd nebo **podrobností t
 ## <a name="see-also"></a>Viz také
 
 - [Zobrazování typů a vztahů](viewing-types-and-relationships.md)
-- [Refaktoring clases a typy](refactoring-classes-and-types.md)
+- [Refaktoring tříd a typů](refactoring-classes-and-types.md)

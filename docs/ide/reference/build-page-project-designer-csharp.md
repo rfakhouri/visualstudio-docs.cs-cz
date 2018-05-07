@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 153a297dea3b392031a07cdc1442070f9cdceba3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b003b3f965ab4f3857e2a532ae715d99533aa8e7
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="build-page-project-designer-c"></a>Stránka Sestavení, návrhář projektu (C#)
 Použití **sestavení** stránky **Návrhář projektu** zadat vlastnosti konfigurace sestavení projektu. Tato stránka se vztahuje na [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] pouze projekty.
@@ -32,7 +32,7 @@ Pro přístup k **sestavení** vyberte uzel projektu (ne **řešení** uzel) v *
 Následující možnosti vám umožňuje vybrat konfigurace a platformy můžete zobrazit nebo upravit.
 
 > [!NOTE]
-> S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. Proto tyto možnosti nezobrazí. Další informace najdete v tématu [postupy: nastavení ladění a konfigurace verze](/debugger/how-to-set-debug-and-release-configurations.md).
+> S konfigurací zjednodušené sestavení projektu systému určuje, zda sestavování ladění a vydání verze. Proto tyto možnosti nezobrazí. Další informace najdete v tématu [postupy: nastavení ladění a konfigurace verze](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Konfigurace** určuje nastavení konfigurace, které chcete zobrazit nebo změnit. Toto nastavení může být **aktivní (ladění)** (Toto je výchozí nastavení), **ladění**, **verze**, nebo **všechny konfigurace**.
 

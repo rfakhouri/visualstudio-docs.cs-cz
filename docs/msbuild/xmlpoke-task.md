@@ -18,28 +18,32 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05bef838c905b12ba76d22bec901ae4eb3382c5f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3295a5aee03badc52b980183e88f484e0d4bcc3a
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="xmlpoke-task"></a>XmlPoke – úloha
-Nastaví hodnoty podle specifikace dotaz XPath do souboru XML.  
+
+Nastaví hodnoty podle specifikace dotaz XPath do souboru XML.
+
+## <a name="parameters"></a>Parametry
+
+ Následující tabulka popisuje parametry `XmlPoke` úloh.
   
-## <a name="parameters"></a>Parametry  
- Následující tabulka popisuje parametry `XmlPoke` úloh.  
-  
-|Parametr|Popis|  
-|---------------|-----------------|  
-|`Namespaces`|Volitelné `String` parametr.<br /><br /> Určuje obor názvů pro předpony dotaz XPath.|  
-|`Query`|Volitelné `String` parametr.<br /><br /> Určuje dotaz XPath.|  
-|`Value`|Požadované <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Určuje výstupní soubor.|  
-|`XmlInputPath`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Určuje vstup XML jako cestu k souboru.|  
-  
-## <a name="remarks"></a>Poznámky  
- Kromě s parametry, které jsou uvedené v tabulce, zdědí tento úkol parametry z <xref:Microsoft.Build.Tasks.TaskExtension> třída, které dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrech a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Viz také  
+|Parametr|Popis|
+|---------------|-----------------|
+|`Namespaces`|Volitelné `String` parametr.<br /><br /> Určuje obor názvů pro předpony dotaz XPath.|
+|`Query`|Volitelné `String` parametr.<br /><br /> Určuje dotaz XPath.|
+|`Value`|Požadované <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Určuje hodnotu, která má být vložen do zadané cesty.|
+|`XmlInputPath`|Volitelné <xref:Microsoft.Build.Framework.ITaskItem> parametr.<br /><br /> Určuje vstup XML jako cestu k souboru.|
+
+## <a name="remarks"></a>Poznámky
+
+ Kromě s parametry, které jsou uvedené v tabulce, zdědí tento úkol parametry z <xref:Microsoft.Build.Tasks.TaskExtension> třída, které dědí z <xref:Microsoft.Build.Utilities.Task> třídy. Seznam těchto dalších parametrech a jejich popisy najdete v tématu [taskextension – základní třída](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Viz také
+
  [Úlohy](../msbuild/msbuild-tasks.md)   
  [Referenční dokumentace úlohy](../msbuild/msbuild-task-reference.md)

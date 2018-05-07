@@ -18,11 +18,11 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 22243a8d837e584df64c9fabc28405951f481b26
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: a81d640e2ecebe46a20f7a3661584cb5c7423691
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscatoru Community Edition (CE)
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 04/26/2018
 Použijte ho k posílení zabezpečení, ochraně a vyřadit plochy, mobilní, server a vložená aplikací do zabezpečené obchodního tajemství a jiné duševní vlastnictví (IP), snížit pirátství a padělání a chránit proti manipulaci a neoprávněným ladění.
 Dotfuscatoru funguje na kompilované sestavení bez nutnosti dalšího programování nebo i přístup ke zdrojovému kódu.
 
-![](media/header.svg)
+![Preemptivní ochrana – Dotfuscatoru](media/header.svg)
 
 ## <a name="why-protection-matters"></a>Proč na záleží ochrany
 

@@ -1,5 +1,5 @@
 ---
-title: 'Návod: Vytvoření vlastního zaváděcího nástroje zobrazíte ochrany osobních údajů výzva | Microsoft Docs'
+title: 'Návod: Vytvoření vlastního zaváděcího nástroje s výzvou o ochraně osobních údajů | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -21,13 +21,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc6b6e5b5a3c72a47f479f9b54fd5f4ba0d09c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73694df5b6e9e5d4c8b4ad40f16cf60998e9fc82
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Návod: Vytvoření vlastního zaváděcího nástroje pro zobrazení dotazu na osobní údaje
+# <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Návod: Vytvoření vlastního zaváděcího nástroje s výzvou o ochraně osobních údajů
 Můžete nakonfigurovat aplikace ClickOnce k automatické aktualizaci kdy sestavení pomocí novější verze souboru a verze sestavení k dispozici. Abyste měli jistotu, že vaši zákazníci souhlasí s tímto postupem, můžete zobrazit na osobní údaje k nim. Potom budou zvolit, zda chcete udělit oprávnění k aplikaci aktualizovat automaticky. Pokud aplikace není povoleno automatické aktualizace, není potřeba instalovat.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
@@ -37,7 +37,7 @@ Můžete nakonfigurovat aplikace ClickOnce k automatické aktualizaci kdy sestav
   
 -   Visual Studio 2010.  
   
-## <a name="creating-an-update-consent-dialog-box"></a>Vytváření dialogové okno souhlasu s aktualizace  
+## <a name="create-an-update-consent-dialog-box"></a>Aktualizaci souhlasu dialogové okno vytvořit  
  Pokud chcete zobrazit na osobní údaje, vytvořte aplikaci, která se čtenáře dotáže na souhlas s automatickými aktualizacemi pro aplikaci.  
   
 #### <a name="to-create-a-consent-dialog-box"></a>Chcete-li vytvořit dialogové okno souhlasu  
@@ -136,7 +136,7 @@ Můžete nakonfigurovat aplikace ClickOnce k automatické aktualizaci kdy sestav
   
 26. Na **sestavení** nabídky, klikněte na tlačítko **BuildSolution**.  
   
-## <a name="creating-the-custom-bootstrapper-package"></a>Vytváření zákaznický balíček zaváděcího nástroje  
+## <a name="create-the-custom-bootstrapper-package"></a>Vytvořte zákaznický balíček zaváděcího nástroje  
  Pokud chcete zobrazit řádku ochrany osobních údajů pro koncové uživatele, můžete vytvořit zákaznický balíček zaváděcího nástroje pro dialogové okno souhlasu aktualizace aplikace a její zahrnutí předpokladem je ve všech aplikacích ClickOnce.  
   
  Tento postup ukazuje, jak vytvořit zákaznický balíček zaváděcího nástroje vytvořením v následujících dokumentech:  
@@ -228,7 +228,7 @@ Můžete nakonfigurovat aplikace ClickOnce k automatické aktualizaci kdy sestav
   
 6.  V případě potřeby vytvořte nový soubor manifestu package.xml a nový dokument eula.rtf pro licenční podmínky pro každé národní prostředí. Například pokud jste vytvořili pro národní prostředí fr a de, vytvořte samostatné soubory manifestu package.xml a licenční podmínky pro software a uložit je do podadresáře fr a de.  
   
-## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Nastavení aplikace souhlasu aktualizace jako předpoklad  
+## <a name="set-the-update-consent-application-as-a-prerequisite"></a>Nastavení aplikace aktualizace souhlas s  
  V sadě Visual Studio můžete nastavit aplikaci souhlas aktualizace předpokladem je.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>K nastavení aplikace aktualizace souhlas s  
@@ -246,7 +246,7 @@ Můžete nakonfigurovat aplikace ClickOnce k automatické aktualizaci kdy sestav
   
 5.  Click **OK**.  
   
-## <a name="creating-and-testing-the-setup-program"></a>Vytvoření a testování instalačního programu  
+## <a name="create-and-test-the-setup-program"></a>Vytvoření a otestování instalační program  
  Po nastavení aplikace souhlasu aktualizace předpokladem je, můžete vygenerovat instalační program a zaváděcího nástroje pro vaši aplikaci.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Pro vytvoření a otestování instalační program není kliknutím souhlasím  

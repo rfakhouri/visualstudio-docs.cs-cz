@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17618aa39a5487ed90fc39f414b0f08233f48b2f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 966b51c0522a65641edc2f602bb27849bfabfe77
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Nastavení projektu VC++, projekty a řešení, dialogové okno Možnosti
 Toto dialogové okno umožňuje definovat [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] sestavení a nastavení související s protokolování, výkon a podporuje typy souborů projektu.
@@ -71,10 +71,10 @@ Toto dialogové okno umožňuje definovat [!INCLUDE[vcprvc](../../code-quality/i
 ## <a name="extensions-to-hide"></a>Rozšíření skrýt
   Určuje přípony názvů souborů, které se nezobrazí v **Průzkumníku řešení** při **zobrazit všechny soubory** je povoleno.
 
- ## <a name="build-customization-search-path"></a>Vytvořit vlastní nastavení – cesta hledání
+## <a name="build-customization-search-path"></a>Vytvořit vlastní nastavení – cesta hledání
   Určuje seznam adresářů, které obsahují .rules soubory, které vám pomohou definovat pravidla sestavení pro projekty.
 
-# <a name="solution-explorer-mode"></a>Režim Průzkumník řešení
+## <a name="solution-explorer-mode"></a>Režim Průzkumník řešení
  **Zobrazit pouze soubory v projektu**
 
   Nakonfiguruje **Průzkumníku řešení** můžete zobrazit jenom soubory v projektu.

@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0610178a6249d262169abbe32f3f6a93cdd0e935
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: 7a10004227a7979d72f167bcc51abdb741c0370d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="help-content-manager-overrides"></a>Přepsání Help Content Manager
 
@@ -60,7 +60,7 @@ Následující dva chování lze řídit nastavením hodnoty klíčů registru v
 |Úloha|Klíč registru|Hodnota|Data|
 |----------|-----|------|----|
 |Přepsání priority úloh služby BITS|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (na 64-bit machine)\Microsoft\Help\v2.3|BITSPriority|**popředí**, **vysokou**, **normální**, nebo **nízkou**|
-|Přejděte na místní ukládání obsahu ve sdílené síťové složce|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
+|Přejděte na místní ukládání obsahu ve sdílené síťové složce|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
 
 ## <a name="see-also"></a>Viz také
 

@@ -23,11 +23,11 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cfacf9f394e411cc89a6722aaf03ac74bc114f63
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: 8de8b8aaefbd49738864496c470aa9ffdbe07fcf
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>Nainstalujte Dotfuscatoru Community Edition (CE)
 
@@ -43,12 +43,12 @@ Je však snadno nainstalovat Dotfuscatoru CE i v případě, že jste již nains
 
 V prostředí Visual Studio IDE, můžete nainstalovat Dotfuscatoru CE:
 
-1. V **Snadné spuštění** panelu Hledat (Ctrl + Q), typ `dotfuscator`. <br/> <br/> ![](media/install_from_vs_12.png) <br/> <br/>
+1. V **Snadné spuštění** panelu Hledat (Ctrl + Q), typ `dotfuscator`. <br/> <br/> ![Snadné spuštění](media/install_from_vs_12.png) <br/> <br/>
 2. V rychlé spuštění výsledky zobrazené v části *nainstalovat* záhlaví, vyberte **preemptivní ochrana – Dotfuscatoru (jednotlivé součásti)**.
   * Pokud jste místo toho najdete v části *nabídky* záhlaví, **nástroje - preemptivní ochrana – Dotfuscatoru**, pak Dotfuscatoru CE je již nainstalován. Podrobnosti využití najdete v tématu [stránce Začínáme v úplné uživatelské příručce CE Dotfuscatoru][get-started].
 3. Visual Studio Instalační program, který se spustí okno, předem nakonfigurované s instalace Dotfuscatoru CE.
   * Může být nutné zadat přihlašovací údaje správce pokračujte.
-4. Zavřete všechny instance Visual Studio IDE. <br/> <br/> ![](media/install_from_vs_345.png) <br/> <br/>
+4. Zavřete všechny instance Visual Studio IDE. <br/> <br/> ![Kliknutím na tlačítko Instalovat](media/install_from_vs_345.png) <br/> <br/>
 5. V okně Instalační program Visual Studio klikněte na *nainstalovat*.
 
 Po dokončení instalace můžete začít používat Dotfuscatoru CE. Podrobnosti najdete v tématu [stránce Začínáme v úplné uživatelské příručce CE Dotfuscatoru][get-started].
@@ -58,13 +58,13 @@ Po dokončení instalace můžete začít používat Dotfuscatoru CE. Podrobnost
 Pokud jste ještě nenainstalovali Visual Studio 2017, můžete získat instalačního programu z [na webu sady Visual Studio][2017-install].
 Při spuštění, zobrazí se možnosti instalace pro vybrané edice sady Visual Studio.
 
-![](media/install_ui.png)
+![Možnosti instalace](media/install_ui.png)
 
 Dotfuscatoru CE můžete nainstalovat jako jednotlivé součást Visual Studio 2017:
 
 1. Vyberte **jednotlivých součástí** kartě.
-2. V části *Code nástroje*, zkontrolujte *preemptivní ochrana – Dotfuscatoru* položky.<br/> <br/> ![](media/install_individually_12.png) <br/> <br/>
-3. *Souhrn* panelu zobrazí *preemptivní ochrana – Dotfuscatoru* pod *jednotlivých součástí* části. <br/> <br/> ![](media/install_individually_3.png) <br/> <br/>
+2. V části *Code nástroje*, zkontrolujte *preemptivní ochrana – Dotfuscatoru* položky.<br/> <br/> ![Jednotlivé komponenty](media/install_individually_12.png) <br/> <br/>
+3. *Souhrn* panelu zobrazí *preemptivní ochrana – Dotfuscatoru* pod *jednotlivých součástí* části. <br/> <br/> ![Podokno Souhrn](media/install_individually_3.png) <br/> <br/>
 4. Nakonfigurujte jakákoli další nastavení instalace jako vhodné pro vaše prostředí.
 5. Až budete připraveni instalaci sady Visual Studio, klikněte na tlačítko *nainstalovat* tlačítko.
 
@@ -72,7 +72,7 @@ Po dokončení instalace můžete začít používat Dotfuscatoru CE. Podrobnost
 
 ## <a name="see-also"></a>Viz také
 
-[Toto téma v úplné Dotfuscatoru CE uživatelská příručka][full]
+[This topic in the full Dotfuscator CE User Guide]: https://www.preemptive.com/dotfuscator/ce/docs/help/
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 

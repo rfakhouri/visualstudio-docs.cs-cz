@@ -9,6 +9,7 @@
 ## [Další informace k ladění pomocí sady Visual Studio](getting-started-with-the-debugger.md)
 ## [Spouštění kódu Python v ladicím programu](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 ## [Ladění živé aplikace Azure](debug-live-azure-applications.md)
+## [Ladění spravovaného a nativního kódu](how-to-debug-managed-and-native-code.md)
 ## [Zobrazení snímků pomocí zpětného kroku IntelliTrace](how-to-use-intellitrace-step-back.md)
 # Návody
 ## [Procházení kódu s ladicím programem](navigating-through-code-with-the-debugger.md)

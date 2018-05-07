@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c854fabdc18337b806cd64733de1d0c88758c5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ce99a4e4c4899502bf1f63edf2dbc1ad0c93cd0
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="visual-c-typedefs-in-class-designer"></a>Visual C++ definice TypeDef v Návrháři tříd
 
@@ -49,7 +49,7 @@ typedef class coord
 };
 ```
 
-Další informace o používání `typedef` zadejte najdete v tématu [– definice TypeDef](/cpp/aliases-and-typedefs-cpp#typedefs).
+Další informace o používání `typedef` zadejte najdete v tématu [– definice TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs).
 
 Obrazec typedef C++ má tvar s typem zadaným v typedef. Například, pokud zdroj deklaruje `typedef class`, tvar, který má zaokrouhlené rozích a popisku **třída**. Pro `typedef struct`, tvar, který má hranatými rohy a popisku **struktura**.
 
@@ -199,6 +199,8 @@ Třída
 
 -> MyIntVect
 
-## <a name="see-also"></a>Viz také
+### <a name="see-also"></a>Viz také
 
-- [Práce s kódem jazyka Visual C++](working-with-visual-cpp-code.md)
+- [Práce s kódem jazyka Visual C++](working-with-visual-cpp-code.md)  
+- [Definice TypeDef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)
+

@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168fb9441080a9c8f61d703485b0274d91dc3189
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 08b12e09348a28276d0c5d2f375b26e75c1ac3c5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="user-permissions-and-visual-studio"></a>Oprávnění uživatele a Visual Studio
 
@@ -33,7 +33,7 @@ V režimu normálního uživatele lze v integrovaném vývojovém prostředí 
 |----------|----------|--------------------------|
 |Instalace|Nainstalujte Visual Studio.|[Instalace sady Visual Studio](../install/install-visual-studio.md)|
 ||Instalace, aktualizace nebo odebrání obsahu místní nápovědy|[Instalace a Správa místního obsahu](../ide/install-and-manage-local-content.md)|
-|Typy aplikací|Vývoj řešení pro službu SharePoint.|[Požadavky na vývoj řešení služby SharePoint](/office-dev/office-dev/requirements-for-developing-sharepoint-solutions)|
+|Typy aplikací|Vývoj řešení pro službu SharePoint.|[Požadavky na vývoj řešení služby SharePoint](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|  
 ||Získání licence pro vývojáře [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].|[Získat licenci vývojáře](http://go.microsoft.com/fwlink/?LinkID=241313)|
 |Sada nástrojů|Přidání klasického modelu COM ovládacích prvků do **sada nástrojů**.|[Panel nástrojů](../ide/reference/toolbox.md)|
 |Doplňky|Instalace a používání doplňků, které byly vytvořeny pomocí klasického modelu COM v rozhraní IDE|[Vytváření doplňků a průvodců](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
@@ -46,6 +46,7 @@ V režimu normálního uživatele lze v integrovaném vývojovém prostředí 
 ||Konfigurace brány firewall pro vzdálené ladění|[Vzdálené ladění](../debugger/remote-debugging.md)|
 |Nástroje pro měření výkonu|Profilace aplikace|[Průvodce začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md)|
 |Nasazení|Nasazení webové aplikace do Internetové informační služby (IIS) v místním počítači|[Nasadit webovou aplikaci ASP.NET do hostujícího zprostředkovatele pomocí sady Visual Studio nebo Visual Web Developer: nasazení do IIS jako testovacího prostředí](http://go.microsoft.com/fwlink/?LinkId=266478)|
+>>>>>>> 346075117af3d2bd1fddd9c3aca24516a39fa6a3
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Visual Studio spustit jako správce
 

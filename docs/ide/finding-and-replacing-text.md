@@ -33,15 +33,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8e0ec78153f7b6fdf0a9f673938a361619f2c2
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="find-and-replace-text"></a>Najít a nahradit text
 
-Můžete najít a nahradit text v editoru Visual Studio pomocí [najít a nahradit](#find-and-replace-control) nebo [vyhledání a nahrazení v souborech](#find-replace-in-files).
+Můžete najít a nahradit text v editoru Visual Studio pomocí [najít a nahradit](#find-and-replace-control) nebo [vyhledání a nahrazení v souborech](#find-in-files-and-replace-in-files).
 
 > [!TIP]
 > Pokud jste přejmenování kód symboly, například proměnné a metody, je lepší *[refactor](../ide/reference/rename.md)* je než chcete použijte hledání a nahrazování. Refaktoring je inteligentní a porozuměl jim oboru, zatímco hledání a nahrazování slepě nahradí všechny instance.

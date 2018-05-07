@@ -20,11 +20,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb3dfce4f4e1596e21853c1ef645bd4ef107186e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="work-with-visual-c-code-class-designer"></a>Práce s kódem jazyka Visual C++ (návrhář tříd)
 
@@ -73,7 +73,7 @@ Pokud diagramu tříd neaktualizuje se změny provedené v kódu, možná budete
 
 -   Typ nachází v knihovně odkazuje #import – direktiva. Možných řešení je ručně přidat generovaný kód (soubor .tlh) #include – direktiva do záhlaví souboru.
 
--   Ujistěte se, že **návrhář tříd** podporuje typ, který jste zadali. V tématu [omezení pro elementy kódu C++](#limitations).
+-   Ujistěte se, že **návrhář tříd** podporuje typ, který jste zadali. V tématu [omezení pro elementy kódu C++](#limitations-for-c-code-elements).
 
 Chyba se nejpravděpodobněji najdete v části řešení problému typ je **kód nebyl nalezen pro jeden nebo více obrazců v diagramu tříd '\<element >'**. Tato chybová zpráva nemusí znamenat, že váš kód došlo k chybě. Znamená, že pouze tento návrhář tříd se nepodařilo zobrazení vašeho kódu. Zkuste následující míry:
 

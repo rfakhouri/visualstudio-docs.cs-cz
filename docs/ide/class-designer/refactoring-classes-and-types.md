@@ -21,11 +21,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01a27861287bcc5fe419a9be1784177742cda815
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refaktoring tříd a typů (návrhář tříd)
 
@@ -40,8 +40,9 @@ Při zrefaktorujete kódu, které usnadňují pochopit, údržbu a efektivnějš
 |----------|------------------------|
 |**Refaktoring tříd:** refaktoringu operace můžete použít k rozdělení třídy na částečné třídy nebo k implementaci abstraktní základní třídu.|-   [Postupy: rozdělení třídy na částečné třídy](how-to-split-a-class-into-partial-classes.md)|
 |**Práce s rozhraní:** v Návrháři tříd můžete implementovat rozhraní v diagramu tříd propojením na třídu, která obsahuje kód pro metodu rozhraní.|-   [Postupy: implementace rozhraní](how-to-implement-an-interface.md)|
-|**Refaktoring typy, členy typu a parametry:** pomocí návrháře tříd můžete přejmenovat typy, přepsat členy typu nebo přesunuty z jednoho typu do jiného. Můžete také vytvořit typy s možnou hodnotou Null.|-   [Přejmenování typy a členy typu](refactoring-classes-and-types.md#RenamingTypesAndMembers)<br />-   [Přesunutí členy typu ze jeden typ](refactoring-classes-and-types.md#MovingTypeMembers)<br />-   [Postupy: vytvoření typu s povolenou hodnotou Null](how-to-create-a-nullable-type.md)|
+|**Refaktoring typy, členy typu a parametry:** pomocí návrháře tříd můžete přejmenovat typy, přepsat členy typu nebo přesunuty z jednoho typu do jiného. Můžete také vytvořit typy s možnou hodnotou Null.|-   [Přejmenování typy a členy typu](refactoring-classes-and-types.md#rename)<br />-   [Členy typu přesouvat z jednoho typu do jiného](refactoring-classes-and-types.md#move)<br />-   [Postupy: vytvoření typu s povolenou hodnotou Null](how-to-create-a-nullable-type.md)|
 
+<a name="rename"></a>
 ### <a name="rename-types-and-type-members"></a>Přejmenování typy a členy typu
 
 V Návrháři tříd můžete přejmenovat typ nebo člen typu v diagramu tříd nebo v okně Vlastnosti. V okně podrobností třídy můžete změnit název člena, ale není typu. Přejmenování typ nebo člen typu rozšíří na všechny windows a kód umístění, kde se objevil starý název.
@@ -77,6 +78,7 @@ V Návrháři tříd můžete přejmenovat typ nebo člen typu v diagramu tříd
 
      Nový název rozšíří na všechny windows a kód umístění v aktuálním projektu, kde se objevil starý název.
 
+<a name="move"></a>
 ### <a name="move-type-members-from-one-type-to-another"></a>Členy typu přesouvat z jednoho typu do jiného
 
 Pomocí **návrhář tříd**, můžete přesunout člena typu jeden typ na jiný typ, pokud jsou obě viditelné v aktuální diagramu tříd.

@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62a50f61debeb312f0da14e4d8aa848e50abc9cd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0762287c47494b0dd0d3f4d444d7143c8688ec2b
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Klávesnice a myši zkratky v okně diagramu tříd a podrobností třídy (návrhář tříd)
 
@@ -32,8 +32,8 @@ Podporovány jsou následující akce myši v diagramech tříd:
 |Kombinace myši|Kontext|Popis|
 |-----------------------|-------------|-----------------|
 |Dvakrát klikněte na|elementy obrazců|Otevře se editor kódu.|
-||Konektor typu Lupa|Rozbalit nebo sbalit typu Lupa.|
-||Popisek konektor typu Lupa|Vyvolá **zobrazit rozhraní** příkaz.|
+|Dvakrát klikněte na|Konektor typu Lupa|Rozbalit nebo sbalit typu Lupa.|
+|Dvakrát klikněte na|Popisek konektor typu Lupa|Vyvolá **zobrazit rozhraní** příkaz.|
 |Kolečka myši|Diagram – třída|Posuňte se svisle.|
 |SHIFT + kolečka myši|Diagram – třída|Posuňte se vodorovně.|
 |CTRL + kolečka myši|Diagram – třída|Přiblížení.|
@@ -60,12 +60,12 @@ Podporovány jsou následující akce klávesnice v diagramech tříd:
 |Key|Kontext|Popis|
 |---------|-------------|-----------------|
 |Klávesy se šipkami|Obrazce typu uvnitř|Navigační stromu stylu na obsah tvar (podporuje se zabalení kolem obrazce). Levý a pravý klíče rozbalit nebo sbalit aktuální položkou. Pokud je rozšíření a přejděte do nadřazené, pokud není (viz zobrazení stromu navigační podrobné chování).|
-||Nejvyšší úrovně tvarů|Přesunutí obrazce v diagramu.|
+|Klávesy se šipkami|Nejvyšší úrovně tvarů|Přesunutí obrazce v diagramu.|
 |SHIFT + ŠIPKA klíče|Obrazce typu uvnitř|Výběr průběžné vytváření skládající se z elementy obrazce například členové, vnořené typy nebo přihrádky. Tyto zástupce zabalení kolem nepodporují.|
 |DOMOVSKÉ|Obrazce typu uvnitř|Přejděte na název obrazec nejvyšší úrovně.|
-||Nejvyšší úrovně tvarů|Přejděte do první z nich v diagramu.|
+|DOMOVSKÉ|Nejvyšší úrovně tvarů|Přejděte do první z nich v diagramu.|
 |END|Obrazce typu uvnitř|Přejděte na posledním elementem viditelné do vnitřní oblasti tvaru.|
-||Nejvyšší úrovně tvarů|Přejděte k poslednímu obrazce v diagramu.|
+|END|Nejvyšší úrovně tvarů|Přejděte k poslednímu obrazce v diagramu.|
 |SHIFT + HOME|Obrazec uvnitř typu|Vybere elementů v rámci tvaru s aktuální položkou počáteční a koncovou s položkou nejvyšší na stejném tvaru.|
 |SHIFT + END|Obrazec uvnitř typu|Stejné jako SHIFT + HOME, ale ve směru osy shora dolů.|
 |ZADEJTE|Všechny kontexty|Vyvolá výchozí akci na tvar, který je taky dostupné prostřednictvím poklikejte na soubor. Ve většině případů to je kód zobrazení, ale některé prvky definovat jinak (cukroví, prostoru pro hlavičky, popisky typu Lupa).|
@@ -75,7 +75,7 @@ Podporovány jsou následující akce klávesnice v diagramech tříd:
 |ALT + SHIFT + L|Uvnitř obrazce typu + na obrazce typu.|Přejde na aktuálně vybrané obrazce typu Lupa, pokud je k dispozici.|
 |ALT + SHIFT + B|Uvnitř obrazce typu + na obrazce typu.|Pokud základní typ seznamu se zobrazí na obrazce typu a má více než jednu položku, to přepne stav rozšíření seznamu (nebo sbalení).|
 |DELETE|Na typ a nastavte komentář u tvarů|Vyvolá **odebrání Diagram** příkaz.|
-||Na nic jiného.|Vyvolá **odstranit z kódu** příkazu (členy, parametry, přidružení, dědičnosti, popisky typu Lupa).|
+|DELETE|Na nic jiného.|Vyvolá **odstranit z kódu** příkazu (členy, parametry, přidružení, dědičnosti, popisky typu Lupa).|
 |CTRL + DELETE|Všechny kontexty|Vyvolá **odstranit z kódu** na výběr.|
 |KARTA|Všechny kontexty|Přejde na další podřízené v rámci stejné nadřazené položky (podporuje zabalení).|
 |SHIFT + TAB|Všechny kontexty|Přejde na předchozí podřízenou v rámci stejné nadřazené položky (podporuje zabalení).|

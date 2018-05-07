@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97f801d111f7fcb2aaeb207c3f3fcf1784a04f30
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: ecd256084862d05f3cf3248913c5f3a1b093fd1d
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Kurz – krok 1: Začínáme s webového rozhraní Django v sadě Visual Studio
 
@@ -89,7 +89,7 @@ Vzhledem k tomu, že jste vybrali **vytvoření nového úložiště Git** v **n
 
     ![Team Explorer okno zobrazuje dostupné Git možnostech úložiště pro správy zdrojového kódu](media/django/step01-team-explorer.png)
 
-    Můžete použít kteroukoli služby, které chcete použít pro vlastní projekty. Tento kurz ukazuje použití Githubu, kde dokončené ukázkový kód pro tento kurz se udržuje v [Microsoft nebo python – ukázka vs další django](https://github.com/Microsoft/python-sample-vs-learn-django) úložiště.
+    Můžete použít kteroukoli služby, které chcete použít pro vlastní projekty. Tento kurz ukazuje použití Githubu, kde dokončené ukázkový kód pro tento kurz se udržuje v [Microsoft nebo python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django) úložiště.
 
 1. Při výběru některé z **publikovat** ovládací prvky, **Team Explorer** vás vyzve k zadání další informace. Například při publikování ukázky v tomto kurzu, úložiště, samotné bylo nutné vytvořit nejprve v takovém případě **Push do vzdáleného úložiště** možnost byl použit s adresou URL v úložišti.
 
@@ -206,4 +206,4 @@ V tomto okamžiku základní projekt Django neobsahuje žádné aplikace. Vytvo�
 
 - Kód projektu Django: [zápis první aplikace Django, část 1](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) (docs.djangoproject.com)
 - Nástroj pro správu: [správce django a manage.py](https://docs.djangoproject.com/en/2.0/ref/django-admin/) (docs.djangoproject.com)
-- Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs další django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)

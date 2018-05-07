@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8dba33c4ff90f3066c8333870c5d18c371b5fb2a
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
+ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Kurz – krok 3: statické soubory, přidat stránky a používat šablonu dědičnosti
 
@@ -283,4 +283,4 @@ Následující kroky ukazují dědičnosti:
 - [Zápis první aplikace Django, část 3 (zobrazení)](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - Další možnosti šablon Django, například tok řízení, najdete v části [jazyk šablony Django](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - Úplné podrobnosti o použití `{% url %}` značky najdete v tématu [url](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) v rámci [předdefinované šablony značky a filtry pro referenční informace k šablonám Django](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/) (docs.djangoproject.com)
-- Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs další django](https://github.com/Microsoft/python-sample-vs-learn-django)
+- Kurz zdrojového kódu na Githubu: [Microsoft nebo python – ukázka vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django)
