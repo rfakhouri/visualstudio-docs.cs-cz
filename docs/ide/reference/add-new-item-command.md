@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb238559cd59c03f134e781bc4beaf7ba7cb7893
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8084cdebf4cba1bf3bb79ac1fbf386837b977d97
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-new-item-command"></a>Přidat novou položku – příkaz
 Přidá novou položku řešení, například .htm, .css, txt nebo rámců k aktuálnímu řešení a otevře ji.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 ```
 
@@ -40,7 +40,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
  Chcete-li vytvořit nový textový soubor, by například zadejte následující pro / t:`templatename` argument.
 
-```
+```cmd
 /t:"General\Style Sheet"
 ```
 
@@ -50,14 +50,14 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 
  Chcete-li otevřít šablony stylů v editoru zdrojového kódu, by například zadejte následující pro / e:`editorname` argument.
 
-```
+```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>Příklad
  Tento příklad přidá novou položku řešení, MyHTMLpg, k aktuálnímu řešení.
 
-```
+```cmd
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"
 ```
 

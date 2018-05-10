@@ -15,13 +15,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f6c2dffe793928532d36b539ba73914ecf0c24dc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60d2e181d0438f6ce180efe1cec2dd64dd8f2f5e
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Přizpůsobení, jak Visual Studio vytváří titulky pro ovládací prvky vázané na data
+
 Když přetáhnete položky z [okno zdroje dat](add-new-data-sources.md) do návrháře, obzvláštní pozornost stává play: názvy sloupců v záhlaví popisky jsou naformátována do více čitelných řetězců, pokud dvě nebo více slova se zjistí zřetězen dohromady. Můžete upravit způsob, ve kterém jsou tyto popisky vytvořili, a nastavení **SmartCaptionExpression**, **SmartCaptionReplacement**, a **SmartCaptionSuffix** hodnoty v **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designer** klíč registru.
 
 > [!NOTE]
@@ -48,15 +49,15 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
 > [!CAUTION]
 > Měli byste být velmi opatrní při provádění nic v editoru registru. Před úpravou ji zálohujte registru. Pokud Editor registru používán správně, můžete způsobit vážné problémy, které mohou vyžadovat přeinstalaci operačního systému. Microsoft nezaručuje, že lze vyřešit problémy, které způsobí nesprávně pomocí Editoru registru. Editor registru používáte na vlastní nebezpečí.
 >
->  Obsahuje pokyny pro zálohování, úpravy a obnovení registru v následujícím článku Knowledge Base: [Popis registru systému Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> Obsahuje pokyny pro zálohování, úpravy a obnovení registru v následujícím článku Knowledge Base: [Popis registru systému Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Chcete-li upravit inteligentní titulků chování okna zdroje dat
+## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Upravit inteligentní titulků chování okna zdroje dat
 
 1.  Otevřete příkazové okno kliknutím **spustit** a potom **spustit**.
 
 2.  Typ `regedit` v **spustit** dialogové okno a klikněte na tlačítko **OK**.
 
-3.  Rozbalte **HKEY_CURRENT_USER**, **softwaru*, **Microsoft**, **Visual Studio** uzlu.
+3.  Rozbalte **HKEY_CURRENT_USER**, **softwaru**, **Microsoft**, **Visual Studio** uzlu.
 
 7.  Klikněte pravým tlačítkem myši **15.0** uzel a vytvořte novou **klíč** s názvem `Data Designers`.
 
@@ -80,7 +81,7 @@ Následující tabulka uvádí vnitřní výchozí nastavení pro tyto hodnoty r
 
     Při příštím přetáhnete položky z **zdroje dat** okně titulek popisky jsou vytvořené pomocí nové hodnoty registru zadané.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Chcete-li vypnout funkci inteligentního titulků
+## <a name="turn-off-the-smart-captioning-feature"></a>Vypnout funkci inteligentního titulků
 
 1.  Otevřete příkazové okno kliknutím **spustit** a potom **spustit**.
 

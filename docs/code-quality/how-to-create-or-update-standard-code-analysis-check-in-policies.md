@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Vytváření nebo aktualizace standardních zásad vracení se změnami Analýzy kódu'
+title: Vytvořit nebo aktualizovat zásad vrácení se změnami analýzy kódu standardní
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4897ec080bf5d268db6ac229785ac0b642753bc0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 96fa2dd75c590e0841d7479e4e071154add04857
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Postupy: Vytváření nebo aktualizace standardních zásad vracení se změnami Analýzy kódu
 
@@ -34,7 +34,7 @@ Zásad vrácení se změnami analýzy kódu se nastavují v nastavení projektu 
 
 Po zadání zásad vrácení se změnami pro spravovaný kód, můžete synchronizovat členové týmu jejich nastavení analýzy kódu pro kód projekty tak, aby nastavení zásad týmového projektu.
 
-### <a name="to-open-the-check-in-policy-editor"></a>Otevřete editor zásad vrácení se změnami
+## <a name="to-open-the-check-in-policy-editor"></a>Otevřete editor zásad vrácení se změnami
 
 1. V nástroji Team Explorer klikněte pravým tlačítkem na název týmového projektu, přejděte na **nastavení projektu Team**a potom klikněte na **správy zdrojového kódu**.
 
@@ -46,28 +46,28 @@ Po zadání zásad vrácení se změnami pro spravovaný kód, můžete synchron
 
     - Dvakrát klikněte na existující **analýza kódu** položky v **typ zásad** seznamu můžete změnit zásady.
 
-### <a name="to-set-policy-options"></a>Chcete-li nastavit možnosti zásad
+## <a name="to-set-policy-options"></a>Chcete-li nastavit možnosti zásad
 
 Vyberte nebo zrušte zaškrtnutí následující možnosti:
 
-    |Možnost|Popis|
-    |------------|-----------------|
-    |**Vynuťte vrácení se změnami tak, aby obsahovala pouze soubory, které jsou součástí aktuální řešení.**|Analýza kódu lze spustit pouze na soubory zadané v konfiguračních souborech na řešení a projektu. Tato zásada zaručuje, že se analýza všech kód, který je součástí řešení.|
-    |**Vynutit analýza kódu C/C++ (/ analyze)**|Vyžaduje, aby se všechny projekty C nebo C++ vytvořené s nástroji / analyze – možnost kompilátoru pro spuštění analýzy kódu, než se můžete vrátit se změnami.|
-    |**Vynutit analýzy kódu pro spravovaný kód**|Vyžaduje, aby všechny spravované projekty spuštění analýzy kódu a sestavení předtím, než se můžete vrátit se změnami.|
+|Možnost|Popis|
+|------------|-----------------|
+|**Vynuťte vrácení se změnami tak, aby obsahovala pouze soubory, které jsou součástí aktuální řešení.**|Analýza kódu lze spustit pouze na soubory zadané v konfiguračních souborech na řešení a projektu. Tato zásada zaručuje, že se analýza všech kód, který je součástí řešení.|
+|**Vynutit analýza kódu C/C++ (/ analyze)**|Vyžaduje, aby se všechny projekty C nebo C++ vytvořené s nástroji / analyze – možnost kompilátoru pro spuštění analýzy kódu, než se můžete vrátit se změnami.|
+|**Vynutit analýzy kódu pro spravovaný kód**|Vyžaduje, aby všechny spravované projekty spuštění analýzy kódu a sestavení předtím, než se můžete vrátit se změnami.|
 
-### <a name="to-specify-a-managed-rule-set"></a>Chcete-li určit sada pravidel spravovaná
+## <a name="to-specify-a-managed-rule-set"></a>Chcete-li určit sada pravidel spravovaná
 
-- Z **spuštění této sady pravidel** seznamu, použijte jednu z následujících metod:
+Z **spuštění této sady pravidel** seznamu, použijte jednu z následujících metod:
 
-    - Vyberte sadu Microsoft standardního pravidla.
+- Vyberte sadu Microsoft standardního pravidla.
 
-    - Chcete-li vybrat vlastní sady pravidel, klikněte na tlačítko  **\<vyberte pravidlo nastavené od správy zdrojového kódu... >** a pak zadejte cestu řízení verze pravidlo nastavené v prohlížeči zdroj ovládacího prvku. Syntaxe cesty řízení verze je:
+- Vyberte vlastní nastavení kliknutím na pravidlo  **\<vyberte pravidlo nastavené od správy zdrojového kódu... >**. Pak zadejte cestu řízení verze pravidlo nastavené v prohlížeči zdroj ovládacího prvku. Syntaxe cesty řízení verze je:
 
-    - **$/** `TeamProjectName` **/** `VersionControlPath`
+   **$/** `TeamProjectName` **/** `VersionControlPath`
 
-    - Další informace o tom, jak vytvořit a implementovat pravidlo vlastních zásad vrácení se změnami nastavení najdete [implementace vlastních zásad vrácení se změnami pro spravovaný kód](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
+Další informace o tom, jak vytvořit a implementovat pravidlo vlastních zásad vrácení se změnami nastavení najdete [implementace vlastních zásad vrácení se změnami pro spravovaný kód](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).
 
 ## <a name="see-also"></a>Viz také
 
-[Vytváření a používání zásad vrácení se změnami Analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)
+- [Vytváření a používání zásad vrácení se změnami analýzy kódu](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

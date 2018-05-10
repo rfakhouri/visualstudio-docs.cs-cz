@@ -1,15 +1,15 @@
 ---
 title: Přihlášení k sadě Visual Studio pro Mac
-description: ''
+description: Jak se přihlásit k sadě Visual Studio pro Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: 52727912877ddfa4a71ced858461083d924503b1
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
-ms.translationtype: MT
+ms.openlocfilehash: 60af04ec6a26e5f60ba2b1d95cf8e9e17e868e8a
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="signing-in-to-visual-studio-for-mac"></a>Přihlášení k sadě Visual Studio pro Mac
 
@@ -25,17 +25,17 @@ Chcete-li přihlásit se k sadě Visual Studio pro Mac, proveďte následující
 
 1. Klikněte na přihlašovací odkaz na úvodní stránce k zobrazení dialogu účty a stiskněte klávesu **přihlásit** tlačítko:
 
-    ![](media/signing-in-image12.png)
+    ![Dialogové okno účty v sadě Visual Studio pro Mac](media/signing-in-image12.png)
 
 2. Zadejte své přihlašovací údaje Microsoft:
 
-    ![](media/signing-in-image13.png)
+    ![Dialogové okno přihlašovací údaje Microsoft](media/signing-in-image13.png)
 
     Nelze použít pověření Xamarin pro přihlášení k sadě Visual Studio for Mac.
 
 3.  Jakmile budete mít úspěšně přihlášen, zobrazí se váš typ licence. Z tohoto dialogového okna můžete přidat další účty Microsoft, které byste mohli, že používáte:
 
-    ![](media/signing-in-image14.png)
+    ![Úspěšné přihlášení.](media/signing-in-image14.png)
 
 ## <a name="adding-multiple-user-accounts"></a>Přidání víc uživatelských účtů
 

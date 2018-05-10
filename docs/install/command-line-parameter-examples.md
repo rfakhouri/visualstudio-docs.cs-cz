@@ -1,7 +1,7 @@
 ---
 title: Příklady parametr příkazového řádku pro instalaci sady Visual Studio
 description: Přizpůsobte tyto příklady vytvořit vlastní instalace z příkazového řádku sady Visual Studio.
-ms.date: 05/06/2017
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,11 +11,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b542dbe3bdadb5c51cecc6b70a4a313b1dec55e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 96fee1d5174115d95718fd9468b2b5770275ae99
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Příklady parametr příkazového řádku pro instalaci Visual Studio 2017
 
@@ -29,76 +29,104 @@ V obou příkladech `vs_enterprise.exe`, `vs_professional.exe` a `vs_community.e
 > [!NOTE]
 >  Můžete použít `^` znak na konci příkazového řádku k řetězení více řádků do jednoho příkazu. Alternativně můžete jednoduše umístit tyto řádky společně na jednom řádku. V prostředí PowerShell, je ekvivalentem backtick (`` ` ``) znaků.
 
+## <a name="using---installpath"></a>Pomocí – installPath
+
 * Nainstalujte minimální instanci sady Visual Studio, s žádný interaktivní výzvy, ale zobrazí průběh:
 
-```cmd
-vs_enterprise.exe --installPath C:\minVS ^
+ ```cmd
+ vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
-```
+ ```
 
 * Aktualizace instance Visual Studio pomocí příkazového řádku s žádný interaktivní výzvy, ale zobrazí průběh:
 
-```cmd
-vs_enterprise.exe --update --quiet --wait
-vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
-```
+ ```cmd
+ vs_enterprise.exe --update --quiet --wait
+ vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
+ ```
 
  > [!NOTE]
  > Oba příkazy jsou povinné. První příkaz aktualizuje instalační program Visual Studio. V druhém příkazu aktualizuje instanci sady Visual Studio. Abyste se vyhnuli dialogové okno Řízení uživatelských účtů, příkazový řádek spustíte jako správce.
 
 * Instalaci bezobslužně, plochy instance sady Visual Studio s Francouzská jazyková sada, vrácení jenom v případě, že je nainstalovaný produkt.
 
-```cmd
-vs_enterprise.exe --installPath C:\desktopVS ^
+ ```cmd
+ vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --includeRecommended --quiet --wait
-```
+ ```
 
  > [!NOTE]
  > `--wait` Parametr je určen k použití v dávkovém souboru. V dávkovém souboru provádění dalšího příkazu nebude pokračovat až po dokončení instalace. `%ERRORLEVEL%` Proměnné prostředí bude obsahovat vrácenou hodnotu příkazu, jak je uvedeno v [používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md) stránky.
 
+## <a name="using---layout"></a>Pomocí--rozložení
+
 * Stáhněte si základní editoru Visual Studio (většina minimální konfigurace sady Visual Studio). Zahrnout pouze anglické jazykové sady:
 
-```cmd
-vs_community.exe --layout C:\VS2017
+ ```cmd
+ vs_community.exe --layout C:\VS2017
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
-```
+ ```
 
 * Stáhněte .NET plochy a .NET webové úlohy spolu se všechny doporučené součásti a rozšíření Githubu. Zahrnout pouze anglické jazykové sady:
 
-```cmd
-vs_community.exe --layout C:\VS2017 ^
+ ```cmd
+ vs_community.exe --layout C:\VS2017 ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
    --add Component.GitHub.VisualStudio ^
    --includeRecommended
-```
+ ```
+
+## <a name="using---includerecommended"></a>Pomocí – includeRecommended
 
 * Spusťte interaktivní instalaci všech úloh a součásti, které jsou k dispozici v edici Visual Studio 2017 Enterprise:
 
-```cmd
-vs_enterprise.exe --all --includeRecommended --includeOptional
-```
+ ```cmd
+ vs_enterprise.exe --all --includeRecommended --includeOptional
+ ```
 
 * Instalaci druhé, s názvem instance Visual Studio 2017 Professional na počítači s již nainstalován ve – podpora vývoje Node.js pro edice Visual Studio 2017 Community:
 
-```cmd
-vs_professional.exe --installPath C:\VSforNode ^
+ ```cmd
+ vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
-```
+ ```
+
+## <a name="using---remove"></a>Pomocí – odebrat
 
 * Odeberte komponentu nástrojích pro profilaci z výchozí nainstalována instance Visual Studio:
 
-```cmd
-vs_enterprise.exe modify ^
+ ```cmd
+ vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
-```
+ ```
+
+## <a name="using---path"></a>Pomocí – cesty
+
+Jsou tyto příkazového řádku datového **nové v 15.7**. Další informace o nich najdete v tématu [používání parametrů příkazového řádku pro instalaci sady Visual Studio](use-command-line-parameters-to-install-visual-studio.md) stránky.
+
+* Pomocí instalace, mezipaměti a sdílené cesty:
+
+ `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache" --path shared="C:\VS\shared"`
+
+* Používání jenom cesty instalace a mezipaměti:
+
+ `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path cache="C:\VS\cache"`
+
+* Pomocí instalace a sdílené cesty:
+
+ `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS" --path shared="C:\VS\shared"`
+
+* Pomocí instalační cestu:
+
+ `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
 
 ## <a name="get-support"></a>Získat podporu
 

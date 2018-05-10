@@ -1,20 +1,21 @@
 ---
 title: Akce sestavení
+description: Tento článek popisuje různé akce sestavení, které lze použít pro projekty C#
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 3e876bbc20f2f2e86ba7ec4806f67f4a2573a089
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 889414d391a4a894879399317d782df58a8bacb3
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="build-actions"></a>Akce sestavení
 
 Všechny soubory v sadě Visual Studio pro projekt Mac mají akce sestavení, která určuje, co se stane do souboru během sestavení. Ty lze nastavit tak, že kliknete pravým tlačítkem na libovolný soubor a procházení k **akce sestavení**, jak je uvedeno dále:
 
-![](media/projects-and-solutions-image1.png)
+![Výběr kompilace sestavení akce fom Průzkumníku](media/projects-and-solutions-image1.png)
 
 Některé nejběžnější pro akce sestavení pro projekty C# jsou:
 

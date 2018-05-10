@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7017ba7e91acc36b72c229cdf77ee7b604f6a920
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 96c177b48e594c7cec9f5dd026782f0d9541eb2b
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odkaz na prostředí Python okno karty
 
@@ -36,7 +36,7 @@ Poskytuje základní informace a příkazy pro prostředí:
 
 | Příkaz | Popis |
 | --- | --- |
-| Nastavit jako výchozí pro nové projekty toto prostředí | Nastaví active prostředí, které může způsobit, že Visual Studio se stručně přestane reagovat při načítání databázi IntelliSense. Prostředí s mnoha balíčky může být po delší dobu reagovat. |
+| Nastavit jako výchozí pro nové projekty toto prostředí | Nastaví active prostředí, které může způsobit, že Visual Studio (2017 verze 15,5 a starší) se stručně přestane reagovat při načítání databázi IntelliSense. Prostředí s mnoha balíčky může být po delší dobu reagovat. |
 | Navštívit webovou stránku distributorovi | Otevře prohlížeč na adresu URL od distribuci jazyka Python. Python 3.x, například přejde k python.org. |
 | Otevřete okno interaktivní | Otevře se [interaktivních okna (REPL)](python-interactive-repl-in-visual-studio.md) pro toto prostředí v sadě Visual Studio použití žádné [spouštěcí skripty (viz níže)](#startup-scripts). |
 | Prozkoumat interaktivní skripty | V tématu [spouštěcí skripty](#startup-scripts). |
@@ -75,7 +75,7 @@ Pokud je k dispozici, obsahuje podrobnosti, jak je popsáno v následující tab
 
 *Také s označením "pip" v dřívějších verzích.*
 
-Spravuje balíčky nainstalované v prostředí, což umožňuje hledat a instalovat nové (včetně závislostí).
+Spravuje balíčky nainstalované v prostředí pomocí nástroje pip, což umožňuje hledat a instalovat nové (včetně závislostí). V aplikaci Visual Studio 2017 verze 15.7 a novější **balíčky (Conda)** možnost se zobrazí, který používá Správce balíčků conda místo. (Pokud nevidíte tuto volbu, nastavte možnost **nástroje** > **možnosti** > **Python** > **experimentální**   >  **Použijte conda balíček správce, pokud je k dispozici (namísto pip)** a restartujte Visual Studio.)
 
 Balíčky, které jsou již nainstalovány, zobrazí se ovládacích prvků pro aktualizaci (šipka nahoru) a odinstalovat (X v kruh) balíček:
 
@@ -105,7 +105,8 @@ Ukazuje aktuální stav databáze doplňování IntelliSense:
 
 ![Karta IntelliSense prostředí Python](media/environments-intellisense-tab.png)
 
-V **Visual Studio 2017 verze 15,5** a starší, dokončování IntelliSense závisí na databázi, která je kompilovaná pro danou knihovnu. Vytváření databáze se provádí na pozadí při knihovny je nainstalován, ale může nějakou dobu trvat a nemusí být kompletní při spuštění psaní kódu. **Visual Studio 2017 verze 15,6 operací** a později použije rychlejší metoda zajistit dokončování operací, které nezávisí na databázi, pokud zvolíte povolit.
+- V **Visual Studio 2017 verze 15,5** a starší, dokončování IntelliSense závisí na databázi, která je kompilovaná pro danou knihovnu. Vytváření databáze se provádí na pozadí při knihovny je nainstalován, ale může nějakou dobu trvat a nemusí být kompletní při spuštění psaní kódu.
+- **Visual Studio 2017 verze 15,6 operací** a později použije rychlejší metoda zajistit dokončování operací, které nezávisí na databázi ve výchozím nastavení. Z tohoto důvodu je označený na kartě **IntelliSense [databázi zakázáno]**. Databázi můžete povolit tak, že smažete možnost **nástroje** > **možnosti** > **Python**  >   **Experimentální** > **používaly nový styl IntelliSense pro prostředí**.
 
 Když zjistí nového prostředí sady Visual Studio (nebo je přidat jeden), automaticky se začne při kompilaci databáze analýzou zdrojové soubory knihovny. Tento proces může trvat z minutu na hodinu nebo déle v závislosti na tom, co je nainstalované. (Anacondu, například se dodává s mnoha knihovny a při kompilaci databáze nějakou dobu trvá.) Po dokončení můžete získat podrobné IntelliSense a nemusíte znovu aktualizujte databázi (s **aktualizovat DB** tlačítko) až po instalaci dalších knihoven.
 

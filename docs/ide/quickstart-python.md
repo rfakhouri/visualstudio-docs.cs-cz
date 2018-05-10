@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c57dab3ac6ca4ee28b568a6fb8004f5559dfed2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: 9c21803f83baaac6a6a5d44764278d35e061d7d3
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý úvod: Vytvoření první webové aplikace Python pomocí sady Visual Studio
 
@@ -76,7 +76,7 @@ Zde tyto kroky použijete k instalaci knihovny Flask do výchozí "globální pr
 
 **Otázka: Kde I Další informace o dalších dostupných balíčků Python?**
 
-**Odpověď**: přejděte [indexu balíčků Pythonu](https://pypi.python.org/pypi).
+**Odpověď**: přejděte [indexu balíčků Pythonu](https://pypi.org/).
 
 ## <a name="add-a-code-file"></a>Přidání souboru kódu
 

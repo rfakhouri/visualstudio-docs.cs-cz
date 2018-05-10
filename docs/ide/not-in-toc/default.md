@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3856987971f74c8caa7210fa2284812f802c2b9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: adf65277f4ec7566464f737bf8b4ab5913043bcc
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # F1 – Nápověda
 
@@ -37,4 +37,4 @@ Pokud hledáte F1 – Nápověda na – klíčové slovo nebo název rozhraní A
 
 ## Pomozte nám vylepšit F1
 
-Pomozte nám vylepšit Nápověda F1 ponecháním zpětnou vazbu o co jste hledali po stisknutí klávesy **F1**. Například jaké symbol nebo okna se ukazatelem na? Použití **názor na dokumentaci** níže uvedené tlačítko. Děkuju!
+Pomozte nám vylepšit Nápověda F1. Protokolu nápovědy problému s produktem kliknutím **váš názor produktu** níže uvedené tlačítko. Zahrnout, co jste hledali nápovědu při stisknutí **F1**, například jaké symbol nebo kurzor byl na okno. Děkuju!

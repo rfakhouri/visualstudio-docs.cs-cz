@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 47cbba613461fac86b1e619e8164e9765c071975
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
-ms.translationtype: MT
+ms.openlocfilehash: 44d2e6c20173c075f1a3e5aac4881f12f5b46e1f
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Práce s Python v sadě Visual Studio v systému Windows
 
@@ -46,7 +46,7 @@ Další informace:
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Bohaté úpravy, IntelliSense a pochopení kódu
 
-Visual Studio poskytuje prvotřídní editor Python, včetně syntaxe zvýrazňování, automatické doplňování kódu a knihovny, formátování kódu, podpis nápovědy, refaktoring, pomocné parametry typu a linting (linting jsou uvedeny níže). Visual Studio také poskytuje jedinečné funkce, například zobrazení tříd, přejděte na definice, najít všechny odkazy a fragmenty kódu. Přímá integrace s [interaktivních okna](#interactive-window) vám pomůže rychle vytvořit kód Python, který je už uložený v souboru.
+Visual Studio poskytuje prvotřídní editor Python, včetně syntaxe zvýrazňování, automatické doplňování kódu a knihovny, formátování kódu, podpis pomoci, refaktoring linting (viz následující obrázek) a zadejte pomocné parametry. Visual Studio také poskytuje jedinečné funkce, například zobrazení tříd, přejděte na definice, najít všechny odkazy a fragmenty kódu. Přímá integrace s [interaktivních okna](#interactive-window) vám pomůže rychle vytvořit kód Python, který je už uložený v souboru.
 
 ![Dokončování kódu pro kód Python v sadě Visual Studio](media/code-editing-completions-simple.png)
 

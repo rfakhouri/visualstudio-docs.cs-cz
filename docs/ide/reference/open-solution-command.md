@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 652305e6d5d360169645e7801e788b39b8982400
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 576146e8bcbc20babff10f2a55d561f532a80723
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="open-solution-command"></a>Otevřít řešení – příkaz
 Otevře se do stávajícího řešení zavřít všechny otevřené řešení.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 File.OpenSolution filename
 ```
 
@@ -43,7 +43,7 @@ File.OpenSolution filename
 ## <a name="example"></a>Příklad
  Tento příklad otevře řešení, Test1.sln.
 
-```
+```cmd
 >File.OpenSolution "c:\MySolutions\Test1\Test1.sln"
 ```
 

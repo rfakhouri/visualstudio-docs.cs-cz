@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97890a84b7b44af818c91f28b486be2d54567213
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 173dc59190eb89517a4fb38f68299ae2e37064dd
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="editing-python-code"></a>Úpravy kódu jazyka Python
 
@@ -33,7 +33,7 @@ Můžete také použít Visual Studio prohlížeče objektů (**zobrazení > ost
 
 ## <a name="intellisense"></a>IntelliSense
 
-Poskytuje IntelliSense [dokončených](#completions), [podpis nápovědy](#signature-help), [rychlé informace](#quick-info), a [barevné zvýrazňování kódu](#code-coloring).
+Poskytuje IntelliSense [dokončených](#completions), [podpis nápovědy](#signature-help), [rychlé informace](#quick-info), a [barevné zvýrazňování kódu](#code-coloring). Visual Studio 2017 verze 15.7 a novější podporuje také [zadejte pomocné parametry](#type-hints).
 
 Pro zlepšení výkonu, IntelliSense v **Visual Studio 2017 verze 15,5** a dříve závisí na dokončení databáze, který se vygeneruje pro každé prostředí Python ve vašem projektu. Databáze může být potřeba aktualizovat, je-li přidat, odebrat nebo aktualizovat balíčky. Stav databáze se zobrazuje v **prostředí Python** okno (na stejné úrovni jako Průzkumník řešení) na **IntelliSense** karta (najdete v části [odkaz na okno prostředí](python-environments-window-tab-reference.md#intellisense-tab)).
 
@@ -77,6 +77,46 @@ Zadáním spustí dekoratéra a zobrazuje potenciální dekorátory. Mnoho z tě
 
 > [!Tip]
 > Můžete nakonfigurovat chování dokončených prostřednictvím **nástroje > Možnosti > textový Editor > Python > Upřesnit "**. Mezi tyto **seznam filtrů podle hledaný řetězec**: použije filtry dokončení návrhů při psaní (výchozím nastavení je zaškrtnuto), a **dokončení člen zobrazí průnik členů** se zobrazí pouze dokončování operací, které jsou podporovány všechny možné typy (výchozí nastavení je zaškrtnuté políčko). V tématu [možnosti - dokončení výsledky](python-support-options-and-settings-in-visual-studio.md#completion-results).
+
+### <a name="type-hints"></a>Pomocné parametry typu
+
+*Visual Studio 2017 verze 15.7 a novější.*
+
+"Zadejte pomocné parametry" v Pythonu 3.5 + ([období 484](https://www.python.org/dev/peps/pep-0484/) (python.org) je syntaxe poznámky pro funkce a třídy, které označují typy argumentů, návratové hodnoty a třídy atributů. IntelliSense zobrazí pomocné parametry typu po přesunutí ukazatele myši volání funkce, argumentů a proměnné, které mají tyto poznámky.
+
+V následujícím příkladu `Vector` třída je deklarován jako `List[float]`a `scale` funkce obsahuje typ odkazů pro jeho argumenty a návratovou hodnotu. Ukazatele myši volání této funkce se uvádí pomocné parametry typu:
+
+![Ukazatele myši volání funkce odhalit pomocné parametry typu](media/code-editing-type-hints1.png)
+
+V následujícím příkladu se zobrazí jak poznámkou atributy `Employee` třída zobrazí v překryvném doplňování IntelliSense pro atribut:
+
+![IntelliSense pomocné parametry typu znázorňující dokončení](media/code-editing-type-hints2.png)
+
+Je také užitečné k ověření typu pomocné parametry v rámci projektu, protože chyby se obvykle nezobrazí až při spuštění. Pro tento účel integruje Visual Studio industry standardní MyPy nástroj pomocí příkazu nabídky kontextu **Python > spustit Mypy** v **Průzkumníku řešení**:
+
+![Spusťte příkaz nabídky kontextu MyPy v Průzkumníku řešení](media/code-editing-type-hints-run-mypy.png)
+
+Spuštění příkazu pokynů k instalaci balíčku mypy, pokud potřeba. Visual Studio pak spustí mypy k ověření typu pomocné parametry každý soubor Python v projektu. V sadě Visual Studio se zobrazí chyby **seznam chyb** okno. Výběrem položky v okně přejde na odpovídající řádek v kódu.
+
+Jako jednoduchý příklad, obsahuje následující definice funkce typ nápovědu k označení, že `input` argument je typu `str`, zatímco volání této funkce se pokouší předat celé číslo:
+
+```python
+def commas_to_colons(input: str):
+    items = input.split(',')
+    items = [x.strip() for x in items]
+    return ':'.join(items)
+
+commas_to_colons(1)
+```
+
+Pomocí **spustit Mypy** příkaz na tento kód generuje následující chybu:
+
+![Příklad výsledek mypy ověřování pomocné parametry typu](media/code-editing-type-hints-validation-error.png)
+
+> [!Tip]
+> U verze jazyka Python před 3.5, Visual Studio také zobrazuje typ pomocné parametry, které zadáte pomocí *soubory zóny se zakázaným inzerováním* (`.pyi`). Můžete se zakázaným inzerováním soubory pokaždé, když nechcete obsahují typ poznámky přímo v kódu, nebo když chcete vytvořit odkazy na typ servery knihovny, který nepoužívá je přímo. Další informace najdete v tématu [vytvořit zástupných procedur pro moduly jazyka Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) na stránkách wiki mypy projektu.
+>
+> V současné době nepodporuje sady Visual Studio v komentářích pomocných parametrů typu.
 
 ### <a name="signature-help"></a>Podpis nápovědy
 

@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d989e3fea2d973999fba12aefd42f629bc6b3991
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6594b87ad313b7f452f579059af377e6128a887a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="command-window"></a>Příkazové okno
 **Příkaz** okno se používá k provedení příkazy nebo přímo v aliasy [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrované vývojové prostředí (IDE). Můžete spustit příkazy nabídek a příkazů, které se nezobrazí na žádné nabídky. K zobrazení **příkaz** okně zvolte **ostatní okna** z **zobrazení** nabídce a vyberte **příkazové okno**.
@@ -30,13 +30,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="displaying-the-values-of-variables"></a>Zobrazení hodnot proměnných
  Chcete-li zkontrolovat hodnotu proměnné `varA`, použijte [příkaz Tisk](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Otazník (?) je alias `Debug.Print`, takže můžete zapsat také tento příkaz:
 
-```
+```cmd
 >? varA
 ```
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/26/2018
 ## <a name="parameters-switches-and-values"></a>Parametry, přepínače a hodnoty
  Některé [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] příkazy vyžaduje příkazy a volitelné argumenty, přepínače a hodnoty. Při plánování práce s tyto příkazy platí určitá pravidla. Následuje příklad bohaté příkazu o vysvětlení, technologiím.
 
-```
+```cmd
 Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```
 
@@ -102,7 +102,7 @@ Pokud krátké formě přepínače jsou zkombinované do skupiny a -li zadána h
 ## <a name="escape-characters"></a>Řídicí znaky
  Šipka nahoru (^) znak v příkazovém řádku znamená, že znak okamžitě následující ho interpretována oznámena, nikoli jako řídicí znak. To slouží k vložení rovné uvozovky ("), mezery, úvodní lomítka, carets nebo jiných literály hodnotu parametru nebo přepínač, s výjimkou názvy přepínače. Například
 
-```
+```cmd
 >Edit.Find ^^t /regex
 ```
 

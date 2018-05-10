@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c93a0c4d8fd312c9b7b6367043fc35b183d022bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f4af615091751f1076a5fe8659a8749fc41ca37
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Jak nainstalovat podporu jazyka Python v sadě Visual Studio v systému Windows
 
@@ -95,7 +95,7 @@ Pokud narazíte na potíže instalaci nebo spuštění Python v sadě Visual Stu
 
     ![Možnost PTVS v instalační program sady Visual Studio 2015](media/installation-vs2015.png)
 
-1. Po dokončení instalačního programu sady Visual Studio [nainstalovat překladač Pythonu zvoleného](installing-python-interpreters.md). Pokud již máte překladač nainstalován a Visual Studio nebude automaticky rozpoznat najdete v tématu [ručně Identifikace stávajícího prostředí](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+1. Po dokončení instalačního programu sady Visual Studio [nainstalovat překladač Pythonu zvoleného](installing-python-interpreters.md). Pokud již máte překladač nainstalován a Visual Studio nebude automaticky rozpoznat najdete v tématu [ručně identifikovat stávajícího prostředí](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 a starší
 
@@ -105,7 +105,7 @@ Pokud narazíte na potíže instalaci nebo spuštění Python v sadě Visual Stu
     - Visual Studio 2012: [PTVS 2.1 pro sadu Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010: [PTVS 2.1 pro Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [Nainstalujte překladač Pythonu zvoleného](installing-python-interpreters.md). Pokud již máte překladač nainstalován a Visual Studio nebude automaticky rozpoznat najdete v tématu [ručně Identifikace stávajícího prostředí](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+1. [Nainstalujte překladač Pythonu zvoleného](installing-python-interpreters.md). Pokud již máte překladač nainstalován a Visual Studio nebude automaticky rozpoznat najdete v tématu [ručně identifikovat stávajícího prostředí](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 ## <a name="install-locations"></a>Umístění instalace
 

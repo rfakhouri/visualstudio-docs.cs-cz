@@ -20,18 +20,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 632c37ea2ee8afc0a8d3b45e0d3e208de6b76f9d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04ec2719b57f387633a7244d7089be963d3ba87c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="shell-command"></a>Prostředí – příkaz
 Spustí spustitelné programy uvnitř [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
@@ -66,13 +66,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 > Pokud `path` argument poskytuje cesta k adresáři, jakož i název souboru, by měl uzavřete celý název cesty do uvozovek a být literálu ("" "), protože v následujících tématech:
 
 
-```
+```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
  Každá sada tři dvojité uvozovky ("" ") je interpretována `Shell` procesoru jako jeden dvojité uvozovky. Proto v předchozím příkladu ve skutečnosti předá následující řetězec cesty `Shell` příkaz:
 
-```
+```cmd
 "C:\Program Files\SomeFile.exe"
 ```
 
@@ -83,7 +83,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 ## <a name="example"></a>Příklad
  Následující příkaz používá xcopy.exe při kopírování souboru `MyText.txt` do `Text` složky. Zobrazí se výstup z xcopy.exe v obou **příkazové okno** a **výstup** okno.
 
-```
+```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 

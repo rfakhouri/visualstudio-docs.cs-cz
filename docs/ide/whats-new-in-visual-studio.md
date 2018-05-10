@@ -1,7 +1,7 @@
 ---
 title: Co je nového ve Visual Studio 2017
 ms.custom: ''
-ms.date: 12/04/2017
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: conceptual
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cb7d3ce6ec3fd743d8f332b8df2148c7b29fe0f
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5ae8a0424f822b4b84aed01badc5bc625aacdde8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s nového ve Visual Studio 2017
-#### <a name="updated-for-the-156-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aktualizováno pro [15.6 verze](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
+#### <a name="updated-for-the-157-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>Aktualizováno pro [15.7 verze](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 Hledáte upgrade z předchozí verze sady Visual Studio? Tady je co Visual Studio 2017 nabízejí jste: bezkonkurenční produktivitu pro všechny vývojáře, všechny aplikace a libovolnou platformu. Použijte Visual Studio 2017 k vývoji aplikací pro Android, iOS, Windows, Linux, web a cloud. Svůj kód můžete rychle psát, snadno ladit a diagnostikovat, často testovat a bez obav vydávat. Navíc si můžete sadu Visual Studio rozšířit a přizpůsobit pomocí svých vlastních rozšíření. Použití správy verzí, být agilní a efektivně spolupracovat s touto verzí!
 
 Zde je podrobný rekapitulace změny, které jsme provedli jsme od předchozí verze sady Visual Studio 2015:
@@ -55,7 +55,11 @@ Vyberte úlohy, je třeba a změnit, pokud je potřeba.
 
  ![Dialogové okno nastavení Visual Studio 2017](../install/media/install-visual-studio-enterprise.png "obrazovky instalačního programu Visual Studio 2017")
 
-Chcete vybrat vlastní součásti místo použití úlohy? Vyberte **jednotlivých součástí** kartě z instalačního programu. Chcete nainstalovat jazykové sady bez nutnosti změnit možnost jazyk Windows? Vyberte **jazykové sady** kartě Instalační služby.  
+A máte k dispozici možnosti a systém doladit vaší instalace příliš:
+
+* Chcete vybrat vlastní součásti místo použití úlohy? Vyberte **jednotlivých součástí** kartě z instalačního programu.
+* Chcete nainstalovat jazykové sady bez nutnosti změnit možnost jazyk Windows? Vyberte **jazykové sady** kartě Instalační služby.
+* **Novinka v 15.7**: Chcete změnit umístění kde Visual Studio nainstaluje? Vyberte **možnosti instalace** kartě Instalační služby.
 
 Další informace o novém prostředí instalace, včetně podrobné pokyny, které vás provede procesem, najdete v článku [instalaci sady Visual Studio](../install/install-visual-studio.md) stránky.
 
@@ -288,7 +292,7 @@ Další informace najdete v tématu [Visual Studio Tools for Unity](../cross-pla
 Další informace najdete v tématu [Visual Studio Tools for AI](../ai/about-ai-tools.md) stránky.
 
 
-## <a name="talk-to-us"></a>Kontaktujte nás  
+## <a name="contact-us"></a>Kontaktujte nás  
  Proč odeslat zpětnou vazbu k sadě Visual Studio team? Vzhledem k tomu, vážně jsme trvat názory zákazníků. Jednotky většinu co můžeme udělat.  
 
 Pokud chcete navrhnout zlepšení o tom, jak jsme můžete zlepšit Visual Studio, nebo nahlásit problém, naleznete v tématu [kontaktujte nás](../ide/talk-to-us.md) stránky.  

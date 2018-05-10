@@ -1,20 +1,22 @@
 ---
+title: Zapsat a spravovat kódu
+description: Další informace o použití editoru kódu a další nástroje v sadě Visual Studio k zápisu, přejděte, spravovat a zlepšit váš kód.
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-title: Zápis a správu kódu pomocí sady Visual Studio | Microsoft Docs
-description: Další informace o použití editoru kódu a další nástroje v sadě Visual Studio k zápisu, přejděte, spravovat a zlepšit váš kód.
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
+f1_keywords:
+- vs.newproject
 ms.workload:
 - multiple
-ms.openlocfilehash: 413e5170310f3b80b5ea6ad032a113fd2d6de482
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
-ms.translationtype: HT
+ms.openlocfilehash: f9e010f82df5f9153fc5052606b82bf97bdb7cf0
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Zapsat a spravovat kódu pomocí sady Visual Studio
 
@@ -147,7 +149,7 @@ Vytvoření první aplikace v sadě Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Začínáme s C# a ASP.NET v sadě Visual Studio</h3>
+                        <h3>Začínáme s C# a ASP.NET Core v sadě Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -155,7 +157,7 @@ Vytvoření první aplikace v sadě Visual Studio.
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-cpp">
+        <a href="/visualstudio/ide/getting-started-with-cpp-in-visual-studio">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -165,7 +167,7 @@ Vytvoření první aplikace v sadě Visual Studio.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Začínáme s C++ v sadě Visual Studio</h3>
+                        <h3>Vytvořte aplikaci konzoly C++ v sadě Visual Studio</h3>
                     </div>
                 </div>
             </div>
@@ -238,6 +240,60 @@ Vytvoření první aplikace v sadě Visual Studio.
                     </div>
                     <div class="cardText">
                         <h3>Začínáme s R Tools pro sadu Visual Studio</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/visualstudio/ide/quickstart-uwp-csharp">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Windows.svg" alt="Create a UWP app with C#" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Vytvoření aplikace pro UPW v jazyce C#</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/dotnet/core/tutorials/with-visual-studio">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_NETcore.svg" alt="Create a .NET Core app in C#" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Vytvoření aplikace konzoly .NET Core v jazyce C#</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/azure/app-service/app-service-web-get-started-dotnet-framework?view=azure-dotnet">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Create an Azure web app" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Vytvoření webové aplikace Azure v sadě Visual Studio</h3>
                     </div>
                 </div>
             </div>

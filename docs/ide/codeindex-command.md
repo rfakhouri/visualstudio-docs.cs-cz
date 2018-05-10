@@ -14,11 +14,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc0e4172d73544f3fe22764505bbabf182fc4ec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="codeindex-command"></a>Codeindex – příkaz
 
@@ -33,7 +33,7 @@ Použít **codeindex –** příkaz, musíte být členem skupiny **Team Foundat
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /ignoreList:[ add | remove | removeAll | view ] ServerPath | /listLargeFiles [/fileCount:FileCount] [/minSize:MinSize] | /reindexAll | /destroyCodeIndex [/noPrompt] | /temporaryDataSizeLimit:[ view | <SizeInGBs> | disable ] | /indexHistoryPeriod:[ view | all | <NumberOfMonths> ] [/collectionName:CollectionName | /collectionId:CollectionId]
 ```
 
@@ -65,61 +65,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
  Pokud chcete zobrazit kód indexování stavu a konfiguraci:
 
-```
+```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Web Site"
 ```
 
  Spuštění indexování všech změn:
 
-```
+```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Web Site"
 ```
 
  Zastavení indexování dříve vytvořenou změn a spustit indexování pouze nové změn:
 
-```
+```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Web Site"
 ```
 
  Vyhledání až 50 souborů, které jsou větší než 10 KB:
 
-```
+```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Web Site"
 ```
 
  Vyloučit konkrétní soubor z indexování a přidejte do seznamu ignorovaných souboru:
 
-```
+```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Web Site/Catalog.cs" /collectionName:"Fabrikam Web Site"
 ```
 
  Pokud chcete zobrazit všechny soubory, které nejsou indexovány:
 
-```
+```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
  Zrušte dříve indexovaná data a restartujte indexování:
 
-```
+```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Web Site"
 ```
 
  Uložte veškerá historie změn:
 
-```
+```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Web Site"
 ```
 
  Odeberte limit velikosti na Codelensu dočasná data a pokračovat indexování bez ohledu na velikost dočasná data:
 
-```
+```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Web Site"
 ```
 
  Chcete-li odstranit kód index s potvrzení:
 
-```
+```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ```
 

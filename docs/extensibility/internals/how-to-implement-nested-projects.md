@@ -14,21 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90434fd8deae2f5f71c150759fc836b9ed43077
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dffef39d735b95cff01ead7087aa8b6286e39004
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-to-implement-nested-projects"></a>Postupy: implementace vnořené projekty
+
 Při vytváření jsou typu vnořené projektu existuje několik dalších kroků, které musí být implementována. Nadřazený projekt přebírá některé stejné odpovědnosti, které má řešení pro jeho vnořená projekty. Nadřazený projekt je kontejner projekty podobná řešení. Konkrétně existují několik událostí, které musí být vyvolány řešení a projekty nadřazené vytvořit hierarchii vnořené projekty. Tyto události jsou popsané v následující proces pro vytváření vnořených projektů.
 
-### <a name="to-create-nested-projects"></a>Chcete-li vytvořit vnořenou projekty
+## <a name="create-nested-projects"></a>Vytváření vnořených projektů
 
 1.  Integrované vývojové prostředí (IDE) načte informace o souboru a spuštění projektu nadřazený projekt voláním <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> rozhraní. Nadřazený projekt je vytvořen a přidán do řešení.
 
     > [!NOTE]
-    >  V tomto okamžiku je příliš stará v procesu pro nadřazený projekt vytvořit vnořený projekt, protože nadřazený projekt je nutné vytvořit před vytvořením podřízené projekty. Toto pořadí nadřazený projekt můžete použít nastavení pro projekty podřízené a podřízené projekty můžete získat informace z nadřazené projektů v případě potřeby. Toto pořadí je, pokud je to nezbytné na klienty, jako je například Správa zdrojového kódu (SCC) a Průzkumníku řešení.
+    > V tomto okamžiku je příliš stará v procesu pro nadřazený projekt vytvořit vnořený projekt, protože nadřazený projekt je nutné vytvořit před vytvořením podřízené projekty. Toto pořadí nadřazený projekt můžete použít nastavení pro projekty podřízené a podřízené projekty můžete získat informace z nadřazené projektů v případě potřeby. Toto pořadí je, pokud je to nezbytné na klienty, jako je například Správa zdrojového kódu (SCC) a Průzkumníku řešení.
 
      Nadřazený projekt musí počkat <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> metoda má být volána IDE před jeho vnořené (podřízená) může vytvořit projekt nebo projekty.
 
@@ -57,7 +58,7 @@ Při vytváření jsou typu vnořené projektu existuje několik dalších krok�
      Pokud již neexistuje, nadřazený projekt vytvoří identifikátor GUID pro každý projekt, vnořené voláním `CoCreateGuid`.
 
     > [!NOTE]
-    >  `CoCreateGuid` je rozhraní API modelu COM volána, když je vytvořen identifikátor GUID. Další informace najdete v tématu `CoCreateGuid` a identifikátory GUID v knihovně MSDN.
+    > `CoCreateGuid` je rozhraní API modelu COM volána, když je vytvořen identifikátor GUID. Další informace najdete v tématu `CoCreateGuid` a identifikátory GUID v knihovně MSDN.
 
      Nadřazený projekt ukládá tento identifikátor GUID v jeho souboru projektu mají být načteny příštím je otevřen v prostředí IDE. Podívejte se na krok 4 pro další informace týkající se volání z `AddVirtualProjectEX` načíst `guidProjectID` pro podřízené projekt.
 
@@ -66,7 +67,7 @@ Při vytváření jsou typu vnořené projektu existuje několik dalších krok�
      Protože nadřazené a podřízené projekty instance prostřednictvím kódu programu, můžete nastavit vlastnosti pro vnořené projekty v tomto okamžiku.
 
     > [!NOTE]
-    >  Pouze zobrazuje informace o kontextu z vnořené projektu, ale můžete také požádat, pokud nadřazený projekt má jakýkoliv kontext pro tuto položku kontrolou <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Tímto způsobem můžete přidat další atributy dynamické nápovědy a konkrétní možnosti nabídky do jednotlivých projektů vnořené.
+    > Pouze zobrazuje informace o kontextu z vnořené projektu, ale můžete také požádat, pokud nadřazený projekt má jakýkoliv kontext pro tuto položku kontrolou <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Tímto způsobem můžete přidat další atributy dynamické nápovědy a konkrétní možnosti nabídky do jednotlivých projektů vnořené.
 
 10. V hierarchii je vytvořené pro zobrazení v Průzkumníku řešení pomocí volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> metoda.
 
@@ -78,15 +79,12 @@ Při vytváření jsou typu vnořené projektu existuje několik dalších krok�
 
      Když je vnořený projekt zavřená, protože uživatel uzavřený řešení nebo konkrétní projektu samostatně, jinou metodu na `IVsParentProject`, <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.CloseChildren%2A>, je volána. Nadřazený projekt zabalí volání <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.RemoveVirtualProject%2A> metoda s <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnBeforeClosingChildren%2A> a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterClosingChildren%2A> metody pro naslouchací procesy pro řešení události upozornění, že dochází k uzavření vnořené projekty.
 
- V následujících tématech se zabývá několik konceptů, které je třeba zvážit při implementaci vnořené projekty:
+V následujících tématech se zabývá několik konceptů, které je třeba zvážit při implementaci vnořené projekty:
 
- [Důležité informace pro uvolnění a opětovné načtení vnořených projektů](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
-
- [Podpora průvodce pro vnořené projekty](../../extensibility/internals/wizard-support-for-nested-projects.md)
-
- [Implementace zpracování příkazů pro vnořené projekty](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
-
- [Filtrování dialogového okna Přidat položku pro vnořené projekty](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
+- [Důležité informace pro uvolnění a opětovné načtení vnořených projektů](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
+- [Podpora průvodce pro vnořené projekty](../../extensibility/internals/wizard-support-for-nested-projects.md)
+- [Implementace zpracování příkazů pro vnořené projekty](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
+- [Filtrování dialogového okna Přidat položku pro vnořené projekty](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
 
 ## <a name="see-also"></a>Viz také
 

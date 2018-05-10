@@ -12,21 +12,25 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 994a1b0677930128d36c4a3218f0231879b7a43e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 4b7df8a53cafda94922cc7b296f0ff52868335f5
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Návod: Připojení hostitele k procesoru vygenerovaných direktiv
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Návod: Připojení hostitele k generovaného procesoru direktiv
+
 Můžete napsat vlastního hostitele, který zpracovává textové šablony. Základní vlastní hostitel je znázorněn v [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md). Můžete rozšířit tohoto hostitele přidat funkce, jako je vytváření více výstupních souborů.
 
- V tomto návodu rozbalte vlastního hostitele tak, aby podporoval textové šablony, které volají procesory direktiv. Když definujete jazyk specifické pro doménu, generuje *procesoru direktiv* modelu domény. Procesoru direktiv usnadňuje uživatelům zapisovat šablony, které přístup k modelu, přičemž redukuje nutnost zápisu sestavení a importovat direktivy v šablonách.
+V tomto návodu rozbalte vlastního hostitele tak, aby podporoval textové šablony, které volají procesory direktiv. Když definujete jazyk specifické pro doménu, generuje *procesoru direktiv* modelu domény. Procesoru direktiv usnadňuje uživatelům zapisovat šablony, které přístup k modelu, přičemž redukuje nutnost zápisu sestavení a importovat direktivy v šablonách.
 
-> [!WARNING]
->  Tento názorný postup je založený na [návod: vytvoření vlastního hostitele textových šablony](../modeling/walkthrough-creating-a-custom-text-template-host.md). Tento postup proveďte jako první.
+> [!NOTE]
+> Tento názorný postup je založený na [návod: vytvoření vlastního hostitele textových šablony](../modeling/walkthrough-creating-a-custom-text-template-host.md). Tento postup proveďte jako první.
 
- Tento návod zahrnuje následující úlohy:
+Tento návod zahrnuje následující úlohy:
 
 -   Pomocí [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ke generování procesoru direktiv, která je založená na modelu domény.
 
@@ -35,7 +39,8 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
 -   Testování vlastního hostitele s generovaného procesoru direktiv.
 
 ## <a name="prerequisites"></a>Požadavky
- Pokud chcete definovat DSL, je třeba nainstalovat následující součásti:
+
+Pokud chcete definovat DSL, je třeba nainstalovat následující součásti:
 
 |||
 |-|-|
@@ -45,12 +50,11 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- Kromě toho musí mít vlastní text transformace šablony vytvořené v [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+Kromě toho musí mít vlastní text transformace šablony vytvořené v [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Pomocí nástroje jazyka domény ke generování procesoru direktiv
- V tomto návodu použijte Průvodce specifické pro doménu jazyk Designer pro vytvoření domény jazyka pro řešení DSLMinimalTest.
+## <a name="use-domain-specific-language-tools-to-generate-a-directive-processor"></a>Nástroje jazyka domény použít ke generování procesoru direktiv
 
-#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>Jazykové nástroje specifické pro doménu používat ke generování procesoru direktiv, která je založená na modelu domény
+V tomto návodu použijte Průvodce specifické pro doménu jazyk Designer pro vytvoření domény jazyka pro řešení DSLMinimalTest.
 
 1.  Vytvořte řešení jazyka domény, který má následující vlastnosti:
 
@@ -62,12 +66,12 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
 
     -   Název společnosti: Fabrikam
 
-     Další informace o vytváření řešení jazyka domény najdete v tématu [postupy: vytvoření řešení jazyk specifické pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).
+   Další informace o vytváření řešení jazyka domény najdete v tématu [postupy: vytvoření řešení jazyk specifické pro doménu](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
 2.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
 
     > [!IMPORTANT]
-    >  Tento krok generuje procesoru direktiv a přidá klíč pro něj v registru.
+    > Tento krok generuje procesoru direktiv a přidá klíč pro něj v registru.
 
 3.  Na **ladění** nabídky, klikněte na tlačítko **spustit ladění**.
 
@@ -81,10 +85,9 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
 
 6.  Uložte řešení a pak zavřete Editor jazyk specifické pro doménu.
 
-## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Připojování vlastního hostitele textových šablon do procesoru direktiv
- Po vygenerování procesoru direktiv připojíte procesoru direktiv a hostitele šablon vlastní text, který jste vytvořili v [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md).
+## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>Připojit vlastního hostitele textových šablon do procesoru direktiv
 
-#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>Pro připojení vlastního hostitele textových šablon pro generovaný procesoru direktiv
+Po vygenerování procesoru direktiv připojíte procesoru direktiv a hostitele šablon vlastní text, který jste vytvořili v [návod: vytvoření vlastního hostitele textových šablon](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
 1.  Otevřete CustomHost řešení.
 
@@ -119,7 +122,7 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
 5.  Vyhledejte kód pro vlastnost `StandardAssemblyReferences`a nahraďte ji následujícím kódem:
 
     > [!NOTE]
-    >  V tomto kroku přidáte odkazy na sestavení, které jsou vyžadované generovaného procesoru direktiv, která bude podporovat váš hostitel.
+    > V tomto kroku přidáte odkazy na sestavení, které jsou vyžadované generovaného procesoru direktiv, která bude podporovat váš hostitel.
 
     ```csharp
     //the host can provide standard assembly references
@@ -155,7 +158,7 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
 6.  Vyhledejte kód pro funkci `ResolveDirectiveProcessor`a nahraďte ji následujícím kódem:
 
     > [!IMPORTANT]
-    >  Tento kód obsahuje pevně zakódovaný odkazy na název generovaného procesoru direktiv, ke kterému se chcete připojit. Bylo možné snadno provádět to další obecné, v takovém případě hledá všechny procesory direktiv uvedený v registru a pokusí se najít shodu. V takovém případě by hostiteli spolupracovat s všechny vygenerované procesoru direktiv.
+    > Tento kód obsahuje pevně zakódovaný odkazy na název generovaného procesoru direktiv, ke kterému se chcete připojit. Bylo možné snadno provádět to další obecné, v takovém případě hledá všechny procesory direktiv uvedený v registru a pokusí se najít shodu. V takovém případě by hostiteli spolupracovat s všechny vygenerované procesoru direktiv.
 
     ```csharp
     //the engine calls this method based on the directives the user has
@@ -230,17 +233,18 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
 
 8.  Na **sestavení** nabídky, klikněte na tlačítko **sestavit řešení**.
 
-## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testování vlastního hostitele s procesoru direktiv
- K testování vlastního hostitele textových šablon, musíte nejprve napsat textové šablony, který volá generovaného procesoru direktiv. Potom můžete spustit vlastního hostitele, jí předat název textové šablony a ověřte, že je správně zpracovat direktivu.
+## <a name="test-the-custom-host-with-the-directive-processor"></a>Otestovat vlastní hostitele s procesoru direktiv
 
-#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Vytvoření textové šablony pro testování vlastního hostitele
+K testování vlastního hostitele textových šablon, musíte nejprve napsat textové šablony, který volá generovaného procesoru direktiv. Potom můžete spustit vlastního hostitele, jí předat název textové šablony a ověřte, že je správně zpracovat direktivu.
+
+### <a name="create-a-text-template-to-test-the-custom-host"></a>Vytvořit šablonu text k testování vlastního hostitele
 
 1.  Vytvořte textový soubor s názvem `TestTemplateWithDP.tt`. Textový editor, například Poznámkový blok, můžete použít k vytvoření souboru.
 
 2.  Do tohoto textového souboru přidejte následující text:
 
     > [!NOTE]
-    >  Programovací jazyk textové šablony nemusí odpovídat vlastního hostitele.
+    > Programovací jazyk textové šablony nemusí odpovídat vlastního hostitele.
 
     ```csharp
     Text Template Host Test
@@ -313,7 +317,7 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
 
 4.  Soubor uložte a zavřete.
 
-#### <a name="to-test-the-custom-host"></a>Testování vlastního hostitele
+### <a name="test-the-custom-host"></a>Testování vlastního hostitele
 
 1.  Otevřete okno příkazového řádku.
 
@@ -324,7 +328,7 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    >  Místo zadáte adresu, můžete vyhledat soubor CustomHost.exe v **Průzkumníka Windows**a pak přetáhněte soubor do okna příkazového řádku.
+    > Místo zadáte adresu, můžete vyhledat soubor CustomHost.exe v **Průzkumníka Windows**a pak přetáhněte soubor do okna příkazového řádku.
 
 3.  Zadejte mezeru.
 
@@ -335,7 +339,7 @@ Můžete napsat vlastního hostitele, který zpracovává textové šablony. Zá
      `<YOUR PATH>TestTemplateWithDP.txt`
 
     > [!NOTE]
-    >  Místo zadáte adresu, můžete vyhledat soubor TestTemplateWithDP.txt v **Průzkumníka Windows**a pak přetáhněte soubor do okna příkazového řádku.
+    > Místo zadáte adresu, můžete vyhledat soubor TestTemplateWithDP.txt v **Průzkumníka Windows**a pak přetáhněte soubor do okna příkazového řádku.
 
      Vlastní hostitel aplikace spuštěna a spouští proces transformace textových šablon.
 

@@ -1,8 +1,8 @@
 ---
-title: Zobrazit snímek pomocí kroku IntelliTrace-back - Visual Studio | Microsoft Docs
+title: Zobrazit snímek pomocí zpětný krok IntelliTrace
 ms.description: Learn how to take snapshots, and view snapshots with IntelliTrace step-back
 ms.custom: mvc
-ms.date: 12/06/2017
+ms.date: 05/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf930fce97b880703416481dabd4ee4eec1d0f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 68fec4e10d172f79908e57828c542a444d081b50
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>Zobrazení snímky IntelliTrace pomocí zpětným krok v sadě Visual Studio
 
@@ -38,9 +38,20 @@ V tomto kurzu provedete následující:
 
     ![Povolit režim události IntelliTrace a snímky](../debugger/media/intellitrace-enable-snapshots.png "režim povolit události IntelliTrace a snímky")
 
+1. Pokud chcete provést konfiguraci možností pro zobrazení snímky na výjimky, zvolte **IntelliTrace** > **Upřesnit** z **možnosti** dialogové okno.
+
+    Tyto možnosti jsou dostupné od verze Visual Studio Enterprise 2017 verze 15.7.
+
+    ![Konfigurace chování pro snímky na výjimky](../debugger/media/intellitrace-enable-snapshots-on-exceptions.png)
+
+    Když povolíte události a snímky, pořizování snímků na výjimky je rovněž povolena ve výchozím nastavení. Snímky na výjimky můžete zakázat pomocí zrušením výběru **shromažďování snímků na události výjimky**. Pokud je tato funkce povolena, pořizování snímků pro neošetřených výjimek. Pro zpracovávaný výjimky jsou snímky pořizovat pouze v případě, že je vyvolána výjimka, a pokud není znovu vyvolání dříve vyvolána výjimka. Výběrem hodnoty z rozevíracího seznamu můžete nastavit maximální počet snímků na výjimky. Maximální počet se vztahuje na každém přechodu vaší aplikace do režimu pozastavení (například když aplikace dotkne zarážku).
+
+    > [!NOTE]
+    > Snímky jsou převzaty pouze pro výjimečné události tohoto záznamy IntelliTrace. Jaké události IntelliTrace záznamy můžete zadat tak, že vyberete **nástroje** > **možnosti** > **události IntelliTrace**.
+
 1. V projektu, nastavte jeden nebo více zarážky a spuštění ladění (stiskněte **F5**), nebo spuštění ladění procházení kódu (**F10** nebo **F11**).
 
-    IntelliTrace pořídí snímek proces aplikace na každý ladicí program krok a zarážek událostí. Tyto události se zaznamenávají do **události** ve **diagnostické nástroje** okno, společně s další události IntelliTrace. Chcete-li otevřít toto okno, zvolte **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
+    IntelliTrace pořídí snímek proces aplikace na každý krok ladicí program, zarážek události a události neošetřené výjimky. Tyto události se zaznamenávají do **události** ve **diagnostické nástroje** okno, společně s další události IntelliTrace. Chcete-li otevřít toto okno, zvolte **ladění** > **Windows** > **zobrazit diagnostické nástroje**.
 
     Ikonu fotoaparátu se zobrazí vedle událostí, pro které snímky jsou k dispozici. 
 

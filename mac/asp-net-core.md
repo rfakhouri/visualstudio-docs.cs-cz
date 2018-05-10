@@ -1,14 +1,15 @@
 ---
 title: Začínáme s ASP.NET Core
+description: Tento článek popisuje, jak začít pracovat s technologií ASP.NET v sadě Visual Studio pro Mac, včetně instalace a vytvoření nového projektu.
 author: asb3993
 ms.author: amburns
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 998bd304f287fffdf53dd9c53cb3be1d83a407f3
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
-ms.translationtype: MT
+ms.openlocfilehash: a4f85c4efee469901088c89436f1021e13f5ca90
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="getting-started-with-aspnet-core"></a>Začínáme s ASP.NET Core
 

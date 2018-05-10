@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 205af005071c86b7e86dcc465918fccc7243690c
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>Krok 5: Instalace balíčků ve vašem prostředí Python
 
@@ -43,7 +43,7 @@ Komunity vývojářů Python má vytvořeného tisíce užitečné balíčky, kt
 
   ![Dokončení instalace matplotlib v prostředí](media/environments-add-matplotlib2.png)
 
-  Malé indikátor průběhu pod prostředí označuje, že Visual Studio vytváří svou databázi IntelliSense pro nově nainstalovaný balíček. **IntelliSense** kartě také ukazuje podrobnější informace. Všimněte si, že až do dokončení této databáze, IntelliSense funkce, jako jsou automatické doplňování a kontrolu syntaxe nebudou v editoru pro tento balíček aktivní.
+  Indikátor průběhu malé se mohou objevit pod prostředí k označení, že Visual Studio vytváří svou databázi IntelliSense pro nově nainstalovaný balíček. **IntelliSense** kartě také ukazuje podrobnější informace. Všimněte si, že až do dokončení této databáze, IntelliSense funkce, jako jsou automatické doplňování a kontrolu syntaxe nebudou v editoru pro tento balíček aktivní.
 
   Všimněte si, že **Visual Studio 2017 verze 15,6 operací** a později používá jiné a rychlejší metody pro práci s IntelliSense a zobrazí zprávu za tímto účelem on **IntelliSense** kartě.
 

@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f27b11142880f71ed653371bd23ae01e51f50b3b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="immediate-window"></a>Příkazové podokno
 **Immediate** okno slouží k ladění a vyhodnocení výrazů, spusťte příkazy, vytisknout hodnoty proměnných a tak dále. Umožňuje zadejte výrazy pro vyhodnocení nebo provedený jazyk vývoj během ladění. K zobrazení **Immediate** okno, otevřete projekt, a pak vyberte **Windows** z **ladění** nabídku a vyberte **Immediate**, nebo stiskněte kombinaci kláves CTRL + ALT + I.
@@ -32,13 +32,13 @@ ms.lasthandoff: 04/26/2018
 ## <a name="displaying-the-values-of-variables"></a>Zobrazení hodnot proměnných
  Toto okno může být užitečné při ladění aplikace. Chcete-li například zkontrolujte hodnotu proměnné `varA`, můžete použít [příkaz Tisk](../../ide/reference/print-command.md):
 
-```
+```cmd
 >Debug.Print varA
 ```
 
  Otazník (?) je alias `Debug.Print`, takže můžete zapsat také tento příkaz:
 
-```
+```cmd
 >? varA
 ```
 
@@ -100,7 +100,7 @@ Vyhodnocení výrazu pro dobu návrhu nelze použít v typy projektů, které vy
 
  V **Immediate** okně znak rovná se (=) interpretována jako operátor přiřazení. Tak například příkaz
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 
@@ -108,7 +108,7 @@ Vyhodnocení výrazu pro dobu návrhu nelze použít v typy projektů, které vy
 
  V **příkaz** okně naopak znak rovná se (=) interpretována jako operátor porovnání. Operace přiřazení v nelze použít **příkaz** okno. Ano, například pokud hodnoty proměnných `varA` a `varB` jsou různé a potom příkaz
 
-```
+```cmd
 >Debug.EvaluateStatement(varA=varB)
 ```
 

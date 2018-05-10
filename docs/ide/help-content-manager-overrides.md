@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a10004227a7979d72f167bcc51abdb741c0370d
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
-ms.translationtype: HT
+ms.openlocfilehash: 8baf096a0ead512cddf9f33801c4504c2a5a4502
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="help-content-manager-overrides"></a>Přepsání Help Content Manager
 
@@ -24,7 +24,7 @@ Můžete změnit výchozí chování Prohlížeč nápovědy a souvisejících s
 
 1. Vytvoření *.pkgdef* soubor s první řádek jako `[$RootKey$\Help]`.
 
-2. Přidat některé nebo všechny hodnoty klíče registru popsané v následující tabulce na samostatné řádky, například `“UseOnlineHelp”=dword:00000001`.
+2. Přidat některé nebo všechny hodnoty klíče registru popsané v následující tabulce na samostatné řádky, například `"UseOnlineHelp"=dword:00000001`.
 
 3. Zkopírujte soubor do *% ProgramFiles (x86) %\Microsoft Visual Studio\2017\\< edice\>\Common7\IDE\CommonExtensions*.
 
@@ -45,12 +45,12 @@ Můžete změnit výchozí chování Prohlížeč nápovědy a souvisejících s
 
 ```
 [$RootKey$\Help]
-“NewContentAndUpdateService”=”https://some.service.endpoint”
-“UseOnlineHelp”=dword:00000001
-“OnlineBaseUrl”=”https://some.service.endpoint”
-“OnlineHelpPreferenceDisabled”=dword:00000000
-“DisableManageContent”=dword:00000000
-“DisableFirstRunHelpSelection”=dword:00000001
+"NewContentAndUpdateService"="https://some.service.endpoint"
+"UseOnlineHelp"=dword:00000001
+"OnlineBaseUrl"="https://some.service.endpoint"
+"OnlineHelpPreferenceDisabled"=dword:00000000
+"DisableManageContent"=dword:00000000
+"DisableFirstRunHelpSelection"=dword:00000001
 ```
 
 ## <a name="use-registry-editor-to-change-help-viewer-behavior"></a>Pomocí Editoru registru změnit chování Help Viewer

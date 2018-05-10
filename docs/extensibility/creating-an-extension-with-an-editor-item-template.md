@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60f10479e0ce6fa08e888d92556ff47b5d82af66
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9fd58c1ada38f8d79402bb08564bf91de23fb086
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Vytváření rozšíření pomocí šablony položky editoru
 Můžete vytvořit šablony položek, které jsou zahrnuté v sadě Visual Studio SDK k vytvoření základní editor rozšíření, které přidat třídění, vylepšení a okraje do editoru. Šablony položek editor jsou k dispozici pro projekty Visual C# nebo Visual Basic VSIX.  
@@ -36,7 +36,7 @@ Můžete vytvořit šablony položek, které jsou zahrnuté v sadě Visual Studi
   
     -   Obsahuje EditorClassifier1.cs `EditorClassifier1` třídy.  
   
-    -   Obsahuje EditorClassifier1ClassificationDefinition.cs `OEditorClassifier1ClassificationDefinition` třídy.  
+    -   Obsahuje EditorClassifier1ClassificationDefinition.cs `EditorClassifier1ClassificationDefinition` třídy.  
   
     -   Obsahuje EditorClassifier1Format.cs `EditorClassifier1Format` třídy.  
   
@@ -57,7 +57,7 @@ Můžete vytvořit šablony položek, které jsou zahrnuté v sadě Visual Studi
   
     -   Obsahuje TextAdornment1.cs `TextAdornment1` třídy.  
   
-    -   obsahuje extAdornment1TextViewCreationListener.cs `TextAdornment1TextViewCreationListener` třídy.  
+    -   Obsahuje TextAdornment1TextViewCreationListener.cs `TextAdornment1TextViewCreationListener` třídy.  
   
 4.  Sestavte projekt a spusťte ladění. Zobrazí se experimentální instanci. Pokud otevřete textový soubor, jsou uvedeny všechny 'a' znaky v textu v červená modrá pozadí.  
   
@@ -88,7 +88,7 @@ Můžete vytvořit šablony položek, které jsou zahrnuté v sadě Visual Studi
   
 1.  V **nový projekt** dialogové okno, rozbalte seznam **Visual C#** nebo **jazyka Visual Basic** a pak klikněte na **rozšiřitelnost**. V **šablony** podokně, vyberte **projektu VSIX**. V **název** zadejte `MarginExtension`. Click **OK**.  
   
-2.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat / novou položku**. Přejděte k Visual C# **rozšiřitelnost** uzel a vyberte možnost **dalších úprav editoru zobrazení**. Ponechte výchozí název souboru (EditorMargin1.cs/vb).  
+2.  V **Průzkumníku řešení**, klikněte pravým tlačítkem na uzel projektu a vyberte **přidat / novou položku**. Přejděte k Visual C# **rozšiřitelnost** uzel a vyberte možnost **okraj editoru**. Ponechte výchozí název souboru (EditorMargin1.cs/vb).  
   
 3.  Existují dva soubory kódu, následujícím způsobem:  
   

@@ -1,15 +1,15 @@
 ---
 title: Představení Visual Studio pro Mac
-description: ''
+description: Tento článek představuje funkce sady Visual Studio pro Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/14/2017
+ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 4b4b8e9cb55e3a4cf2d81e7cf7234ea47ad06f0e
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Představení Visual Studio pro Mac
 
@@ -72,7 +72,7 @@ Visual Studio má svou vlastní integrované Android SDK manager.
 
 Pro aplikace pro Android, Visual Studio pro Mac obsahuje vlastní designer, který funguje s Android `.axml` soubory vizuálně vytvořit uživatelská rozhraní. Visual Studio pro Mac se otevřou tyto soubory v jeho Android designer, jak je znázorněno na následujícím obrázku:
 
-![](media/intro-image31.png)
+![Návrhář Android uživatelského rozhraní](media/intro-image31.png)
 
 Další informace o návrháři Android, najdete v článku [Návrhář přehled](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) dokumentu.
 
@@ -80,7 +80,7 @@ Další informace o návrháři Android, najdete v článku [Návrhář přehled
 
 IOS Designer jsou plně integrované s Visual Studio pro Mac a umožňuje úpravy s náhledem .xib a scénáře soubory a vytvořte iOS, tvOS a WatchOS uživatelská rozhraní a přechody. Celé uživatelské rozhraní se dají vytvářet pomocí přetahování myší funkce mezi sada nástrojů a návrhovou plochu, při použití intuitivní prostředí pro zpracování událostí. Návrhář také podporuje iOS [vlastní ovládací prvky](https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/) s výhodu v době návrhu vykreslování.
 
-![](media/intro-image30.png)
+![Návrhář Storyboard iOS](media/intro-image30.png)
 
 Další informace o použití iOS Designer, najdete v článku [Návrhář](https://developer.xamarin.com/guides/ios/user_interface/designer) dokumenty.
 
@@ -109,7 +109,7 @@ Xamarin profileru má tří nástrojů pro profilaci. [Úvod do profileru Xamari
 
 Xamarin Inspector poskytuje interaktivní C# konzole nástroje pro uživatele. Při kontrole aplikací pro živé, jako nástroj pro vyučující jako dokumentace nástroje nebo experimentování může sloužit jako podpora ladění nebo diagnostiky.
 
-![](media/intro-inspector.png)
+![Xamarin Inspector](media/intro-inspector.png)
 
 Skládá se z samostatná aplikace, která poskytuje bohaté C# konzolu, která můžete vybrat různé programovací platformy (Android, iOS, Mac a Windows) a také integraci do ladění pracovní postup vaší IDE.
 

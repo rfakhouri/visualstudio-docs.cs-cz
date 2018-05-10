@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 177a3c0c088e20b37172f6ff0a5b818dce24795c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a4cf5078bb16d90744b83dfd99cf0c1da663149a
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="find-in-files-command"></a>Najít v souborech – příkaz
 Hledání souborů pomocí podmnožinu dostupných na možnostech **hledání v souborech** kartě **najít a nahradit** okno.
 
 ## <a name="syntax"></a>Syntaxe
 
-```
+```cmd
 Edit.FindinFiles findwhat [/case] [/ext:extensions]
 [/lookin:searchpath] [/names] [/options] [/reset] [/stop] [/sub]
 [/text2] [/wild|/regex] [/word]
@@ -52,7 +52,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 
  / stop volitelné. Aktuální operace vyhledávání zastaví, pokud je v průběhu. Hledání ignoruje všechny další argumenty při `/stop` byla zadána. K zastavení aktuální vyhledávání. například by zadejte následující operace:
 
-```
+```cmd
 >Edit.FindinFiles /stop
 ```
 
@@ -67,7 +67,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ## <a name="example"></a>Příklad
  Tento příklad hledá btnCancel v všechny .cls soubory umístěné ve složce "Moje projektů sady Visual Studio" a zobrazí informace shoda v okně Najít 2 výsledky.
 
-```
+```cmd
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 

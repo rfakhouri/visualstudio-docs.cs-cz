@@ -12,15 +12,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b36162c14b07e90368b30e34137ea8e7da03d91a
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 5280dd0bffab2fb7c9797502e9d94e0589800c39
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="features-of-the-code-editor"></a>Funkce editoru kódu
 
-Editoru Visual Studio poskytuje řadu funkcí, které usnadňují můžete zapsat a spravovat kódu a text. Můžete rozbalit nebo sbalit různé bloky kódu pomocí osnovy. Další informace o kódu pomocí IntelliSense, **Prohlížeč objektů**a hierarchie volání. Kód můžete najít pomocí funkce, jako **přejít na**, **přejít k definici**, a **najít všechny odkazy**. Můžete vložit bloky kódu s fragmenty kódu a kódu můžete vygenerovat pomocí funkce **generování před využitím**. Pokud jste před editoru Visual Studio nikdy nepoužívali, projděte si téma [upravovat kód](https://www.visualstudio.com/features/ide-vs) rychlý přehled.
+Editoru Visual Studio poskytuje řadu funkcí, které usnadňují můžete zapsat a spravovat kódu a text. Můžete rozbalit nebo sbalit různé bloky kódu pomocí osnovy. Další informace o kódu pomocí IntelliSense, **Prohlížeč objektů**a hierarchie volání. Kód můžete najít pomocí funkce, jako **přejít na**, **přejít k definici**, a **najít všechny odkazy**. Můžete vložit bloky kódu s fragmenty kódu a kódu můžete vygenerovat pomocí funkce **generování před využitím**. Pokud jste před editoru Visual Studio nikdy nepoužívali, projděte si téma [upravovat kód](https://www.visualstudio.com/vs/features/ide/) rychlý přehled.
 
 Zobrazí se váš kód v několika různými způsoby. Ve výchozím nastavení **Průzkumníku řešení** ukazuje kódu uspořádané podle soubory. Kliknutím na **zobrazení tříd** karta v dolní části okna zobrazení kódu uspořádané podle třídy.
 

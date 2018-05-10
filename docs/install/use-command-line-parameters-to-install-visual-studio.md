@@ -2,7 +2,7 @@
 title: Používání parametrů příkazového řádku pro instalaci sady Visual Studio
 description: Další informace o použití parametrů příkazového řádku řízení nebo upravit instalace Visual Studia.
 ms.custom: ''
-ms.date: 01/17/2018
+ms.date: 05/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 566e662c55589424f04e93d0dd182faed8a4b757
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
-ms.translationtype: MT
+ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku
 
@@ -101,6 +101,10 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `--nocache` | **Novinka v 15.2 volitelné**: Pokud existuje, balíčky se odstraní poté, co byla nainstalována nebo opravit. Budou se znovu stáhnou jenom v případě potřeby a znovu za použití odstraní. Přepíše nastavení má být použit pro následné nainstaluje, opraví nebo úpravy globální zásady. Výchozí zásada je do mezipaměti balíčků. To je pro příkaz odinstalace ignorovat. Najdete v návodu k [zakázat nebo přesunout do mezipaměti balíček](disable-or-move-the-package-cache.md) Další informace. |
 | `--noUpdateInstaller` | **Novinka v 15.2 volitelné**: Pokud existuje, brání instalačnímu programu aktualizace samotné, pokud je zadán tichý. Instalační program se nezdaří příkazu a vrátí nenulový ukončovací kód, pokud noUpdateInstaller je definován s Tichý, když je nutná aktualizace Instalační služby. |
 | `--noWeb` | **Novinka v 15.3, volitelné**: Instalační program nyní stáhnout veškerý obsah, který je instalace z Internetu.  Veškerý obsah, který se instaluje musí být k dispozici v offline rozložení.  Pokud rozložení chybí obsah, instalace se nezdaří.  Další informace najdete v tématu [nasazení z síťovou instalaci](create-a-network-installation-of-visual-studio.md). |
+| `--path <name>=<path>` | **Novinka v 15.7, volitelné**: slouží k zadání vlastní instalační cesty pro instalaci. Podporované cesty, které jsou sdíleny názvy, mezipaměti a instalaci. |
+| `--path cache=<path>` | **Novinka v 15.7, volitelné**: používá umístění zadejte ke stažení instalačních souborů. Toto umístění lze nastavit pouze při prvním nainstalované sady Visual Studio. Příklad: `--path cache="C:\VS\cache"` |
+| `--path shared=<path>` | **Novinka v 15.7, volitelné**: obsahuje sdílené soubory pro instalaci sady Visual Studio vedle sebe. Některé nástroje a sady SDK nainstalovat do umístění na této jednotce, zatímco jiná může toto nastavení přepsat a nainstalovat na jinou jednotku. Příklad: `--path shared="C:\VS\shared"` |
+| `--path install=<path>` | **Novinka v 15.7, volitelné**: ekvivalentní `–-installPath`. Konkrétně `--installPath "C:\VS"` a `--path install="C:\VS"` odpovídají. Současně lze použít pouze jeden z nich. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Seznam ID úlohy a ID součástí
 

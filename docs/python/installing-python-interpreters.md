@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed5ac9e470b55281d1273bfe665be0813b37bf55
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4bf9c65d44739dd1b9164731f1097ce29050e6d8
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="installing-python-interpreters"></a>Instalace překladače Python
 
@@ -27,7 +27,7 @@ Pro **Visual Studio 2015 a starší**, je nutné ručně nainstalovat jeden z p�
 
 Visual Studio (všechny verze) automaticky rozpozná všechny nainstalované překladač Pythonu a jeho prostředí kontrolou registru (následující [období 514 - Python registrace v registru Windows](https://www.python.org/dev/peps/pep-0514/)).
 
-Pokud Visual Studio nerozpozná nainstalované prostředí, přečtěte si téma [ručně Identifikace stávajícího prostředí](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+Pokud Visual Studio nerozpozná nainstalované prostředí, přečtěte si téma [ručně identifikovat stávajícího prostředí](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 Zobrazuje všechny známé prostředí v sadě Visual Studio [okno prostředí Python](managing-python-environments-in-visual-studio.md)a automaticky zjišťuje aktualizace stávající překladače.
 
@@ -45,7 +45,7 @@ Vývojáři, které chcete přidat nové formuláře detekce prostředí Python,
 
 Pokud přesouváte existující překladač do nového umístění pomocí systému souborů, Visual Studio nerozpozná automaticky změnu.
 
-- Pokud jste původně zadali umístění překladač prostřednictvím **prostředí Python** okno, upravit jeho prostředí pomocí **konfigurace** kartě v okně pro určení nového umístění. V tématu [ručně Identifikace stávajícího prostředí](managing-python-environments-in-visual-studio.md#manually-identifying-an-existing-environment).
+- Pokud jste původně zadali umístění překladač prostřednictvím **prostředí Python** okno, upravit jeho prostředí pomocí **konfigurace** kartě v okně pro určení nového umístění. V tématu [ručně identifikovat stávajícího prostředí](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment).
 
 - Pokud jste nainstalovali překladač pomocí instalačního programu, použijte následující postup k opětovné instalaci překladač v novém umístění:
 

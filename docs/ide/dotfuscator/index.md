@@ -18,11 +18,11 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a81d640e2ecebe46a20f7a3661584cb5c7423691
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
-ms.translationtype: HT
+ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscatoru Community Edition (CE)
 
@@ -42,7 +42,7 @@ Můžete Dotfuscatoru [obfuskováním] [ obfuscation] vaše sestavení .NET brá
 
 Je také důležité **chránit integritu aplikace**.
 Kromě zpětnou nesprávnými účastníky můžou snažit pirate vaší aplikace, změnit chování aplikace za běhu nebo pracovat s daty.
-Dotfuscatoru může vložit vaše aplikace se schopností [zjišťovat, sestavy a reagovat na neoprávněným použitím][checks], včetně manipulaci s obsahem a ladění třetích stran.
+Dotfuscatoru může vložit vaše aplikace se schopností [zjišťovat, sestavy a reagovat na neoprávněným použitím][checks], včetně manipulaci, ladění třetích stran a zařízení s rootem.
 
 Další informace o jak Dotfuscatoru zapadá do životního cyklu zabezpečené softwaru najdete v tématu preemptivní řešení [SDL aplikaci ochrany stránky][sdl-protection].
 
@@ -57,6 +57,7 @@ Příklady [.NET maskováním] [ obfuscation] a dalších [Ochrana aplikace] [ a
 * *[Přejmenování] [ renaming]*  identifikátorů ztížit zpětnou kompilované sestavení.
 * *[Proti zfalšování] [ tamper]*  k detekci spuštění zmanipulovanou aplikací, přenášet incidentu výstrahy a ukončete zmanipulovanou relací.
 * *[Proti ladění] [ debug]*  ke zjištění připojení ladicí program k spuštěné aplikace, přenášet incidentu výstrahy a ukončete vyladěnou relací.
+* *[Proti rootování] [ root]*  detekce, zda je spuštěna aplikace na zařízení s rootem Android a ukončení relace v těchto zařízeních.
 * *[Chování vypršení platnosti aplikací] [ shelflife]*  , kódovat datum "end životnosti", přenášet výstrahy, když se aplikace spustí po vypršení jejich platnosti a ukončení relace vypršela platnost aplikace.
 * *[Sledování výjimek] [ exceptions]*  ke sledování neošetřených výjimek, které se vyskytují v rámci aplikace.
 * *[Relace] [ sessions] a [funkce] [ features] sledování využití* Chcete-li zjistit, co aplikace byly spustit, jaké verze těchto aplikací a jaké funkce se používají v těchto aplikacích.
@@ -84,29 +85,30 @@ V tématu [v úplné Dotfuscatoru CE uživatelské příručce na preemptive.com
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-- [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
-- [software-protection]: https://www.preemptive.com/software-protection
-- [obfuscation]: https://www.preemptive.com/obfuscation
-- [app-protection]: https://www.preemptive.com/application-protection
-- [sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
-- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-- [download]: https://www.preemptive.com/products/dotfuscator/downloads
+[assemblies]:  https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+[software-protection]:  https://www.preemptive.com/software-protection
+[obfuscation]:  https://www.preemptive.com/obfuscation
+[app-protection]:  https://www.preemptive.com/application-protection
+[sdl-protection]:  https://www.preemptive.com/solutions/SDL-App-Protection
+[net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
+[download]:  https://www.preemptive.com/products/dotfuscator/downloads
 
-- [install]: install.md
-- [capabilities]: capabilities.md
-- [upgrades]: upgrades.md
+[install]:  install.md
+[capabilities]:  capabilities.md
+[upgrades]:  upgrades.md
 
-- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+[get-started]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-- [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
+[renaming]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-- [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
-- [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
-- [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
-- [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
+[checks]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+[tamper]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+[debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+[root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
+[shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-- [exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-- [sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-- [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
-- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
+[full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

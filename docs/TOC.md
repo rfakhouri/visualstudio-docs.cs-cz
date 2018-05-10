@@ -62,7 +62,7 @@
 ## [Node.js v sadě ‏Visual Studio](nodejs/tutorial-nodejs.md)
 ## [C# v sadě Visual Studio](ide/tutorial-csharp-aspnet-core.md)
 ## [Visual Basic v sadě Visual Studio](ide/tutorial-visual-basic-console.md)
-## [Ladění v sadě Visual Studio](ide/getting-started-with-debugging-in-visual-studio.md)
+## [Ladění v sadě Visual Studio](debugger/getting-started-with-the-debugger.md?context=visualstudio/default)
 # Návody
 ## [Vývoj](ide/index-writing-code.md)
 ### [Pohyb v integrovaném vývojovém prostředí sady Visual Studio](ide/how-to-move-around-in-the-visual-studio-ide.md)
@@ -185,6 +185,7 @@
 #### [Nalezení změn kódu a další historie pomocí CodeLensu](ide/find-code-changes-and-other-history-with-codelens.md)
 ##### [CodeIndex – příkaz](ide/codeindex-command.md)
 #### [Podpora editoru pro jiné jazyky](ide/adding-visual-studio-editor-support-for-other-languages.md)
+### [Vylepšení vašeho kódu](ide/find-and-fix-code-errors.md)
 ### [Vývoj mobilních řešení napříč platformami](cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 ### [Vývoj pro Office a SharePoint](vsto/office-and-sharepoint-development-in-visual-studio.md)
 ### [Práce se soubory XML a XSLT](xml-tools/xml-tools-in-visual-studio.md)

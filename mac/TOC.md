@@ -3,6 +3,7 @@
 # [Prohlídka integrovaného vývojového prostředí (IDE)](ide-tour.md)
 
 # [Instalace](installation.md)
+## [Instalace verze Preview](install-preview.md)
 ## [Aktualizace](update.md)
 ## [Odinstalace](uninstall.md)
 
@@ -30,6 +31,7 @@
 ## [Fragmenty](snippets.md)
 ## [Blokový výběr](block-selection.md)
 ## [Motivy editoru](editor-themes.md)
+## [EditorConfig](editorconfig.md)
 ## [Běžné klávesové zkratky](keyboard-shortcuts.md)
 
 # [Ladění](debugging.md)
@@ -43,6 +45,7 @@
 ### [Vytvoření a úprava konfigurací](create-and-edit-configurations.md)
 
 # [Správa verzí](version-control.md)
+## [Správa verzí TF](tf-version-control.md)
 ## [Nastavení úložiště Git](set-up-git-repository.md)
 ## [Práce s úložištěm Git](working-with-git.md)
 ## [Nastavení úložiště Subversion](set-up-subversion-repository.md)
@@ -50,7 +53,11 @@
 
 # [Úlohy](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
+### [Razor](razor.md)
+### [JavaScript](javascript.md)
 ## [Azure](azure-workload.md)
+### [Úvod do Azure Functions](azure-functions.md)
+### [Kurz: Azure Functions](azure-functions-lab.md)
 ### [Připojené služby](connected-services.md)
 ## [Vývoj her pro Unity](unity-tools.md)
 ### [Instalace a nastavení](setup-vsmac-tools-unity.md)

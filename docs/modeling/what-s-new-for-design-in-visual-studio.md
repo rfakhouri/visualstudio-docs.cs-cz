@@ -13,11 +13,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2e36bbd95146f8a8b1095fefaa7882ff5f88d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c25d89ae3ab3d25e415b4407a46fc903b1c05266
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Novinky pro programátory ve Visual Studiu
 
@@ -64,18 +64,13 @@ Další podrobnosti najdete v tématu [tomto příspěvku na blogu](https://blog
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-<a name="VersionSupport"></a>
-## <a name="version-support-for-architecture-and-modeling-tools"></a>Podpora verzí pro architektura a modelování nástroje
+## <a name="a-nameversionsupport-version-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Podpora verzí pro architektura a modelování nástroje
 
-Visual Studio je k dispozici v několika verzích. Ne všechny z nich poskytovat podporu pro architektura a modelování nástroje. Následující tabulka uvádí dostupnost jednotlivých nástrojů.
+Je k dispozici v několika verzích sady Visual Studio 2015. Ne všechny z nich poskytovat podporu pro architekturu a modelování nástroje. Následující tabulka uvádí dostupnost jednotlivých nástrojů.
 
 |**Funkce**|**Enterprise**|**Professional**|**Community**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mapy kódu**|Ano|Další informace v poznámce (1)|-|-|
-|**Diagramy závislostí**|Ano|Další informace v poznámce (2)|Další informace v poznámce (2)|-|
+|**Mapy kódu**|Ano|Pouze filtrování kód mapuje podporuje čtení map kódu, přidávání nových obecné uzlů a vytvoření nového směrované graf z výběru.|-|-|
+|**Diagramy závislostí**|Ano|Podporuje čtení diagramy závislostí.|Podporuje čtení diagramy závislostí.|-|
 |**Přesměruje grafy** (diagramy DGML)|Ano|Ano|Ano|-|
 |**Klonování kódu**|Ano|-|-|-|
-
-Poznámka: (1): Podporuje pouze čtení map kódu, filtrování map kódu, přidávání nových obecné uzlů a vytvoření nového směrované graf z výběru.
-
-(2). Poznámka: Podporuje pouze čtení diagramy závislostí.

@@ -12,15 +12,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b638d7c2faf792da208cb1dbea153f24db25066
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="common-quick-actions"></a>Běžné rychlé akce
 
-V oddílech v tomto tématu jsou uvedeny některé běžné rychlé akce, která se vztahují na kódu jak C# a Visual Basic. Tyto akce jsou *code opravy* pro integrované [pravidla analyzátoru](../code-quality/roslyn-analyzers-overview.md) v sadě Visual Studio.
+V oddílech v tomto tématu jsou uvedeny některé nejběžnější **rychlé akce** , platí pro obě C# a Visual Basic kódu. Tyto akce jsou *code opravy* kompilátoru diagnostiky nebo integrované [platformy .NET kompilátoru analyzátorů](../code-quality/roslyn-analyzers-overview.md) v sadě Visual Studio.
 
 ## <a name="actions-that-fix-errors"></a>Akce, které opravte chyby
 

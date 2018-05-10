@@ -1,46 +1,43 @@
 ---
 title: Výhody sady Visual Studio pro Mac přes Xamarin Studio
-description: ''
-ms.topic: overview
+description: Tento článek vysvětluje funkce a výhody, které Visual Studio pro Mac nabízí v porovnání s Xamarin Studio
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
-ms.openlocfilehash: db4a328bceb79c1b99fdea95da89cc6cc7451523
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 63f8e0f03797f08383ad3a1ec2b9303a405ed236
+ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="benefits-of-visual-studio-for-mac-over-xamarin-studio"></a>Výhody sady Visual Studio pro Mac přes Xamarin Studio 
+ 
+Visual Studio pro Mac nahradili Xamarin Studio jako plné IDE na macu. Poskytuje funkce, které vám umožní vyvíjet webové aplikace a služby, mobilních a desktopových aplikací pro různé platformy a hry. Kromě toho umožňuje integraci s Azure uloženy, jestli to znamená publikování v Azure nebo vytváření Azure Functions. Obsahuje všechny objekty, které očekáváte od moderní IDE, včetně editoru plné zdroje, výkonné ladicí program, přizpůsobitelné pracovní prostor, integrace gitu a bohaté rozšíření systému, navržená nativně pro Mac.
 
-Visual Studio pro Mac nahradili Xamarin Studio jako plné IDE na macu. Poskytuje funkce, které vám umožní vyvíjet webové aplikace a služby, mobilních a desktopových aplikací pro různé platformy a hry. Kromě toho umožňuje integraci s Azure uloženy, jestli to znamená publikování v Azure nebo vytváření Azure Functions. Obsahuje všechny objekty, které očekáváte od moderní IDE, včetně editoru plné zdroje, výkonné ladicí program, přizpůsobitelné pracovní prostor, integrace gitu a bohaté rozšíření systému, navržená nativně pro Mac. 
+Mezi další funkce patří:
 
-Mezi další funkce patří: 
+* Na základě Roslyn C# technologii IntelliSense, refaktoring analyzátory a opravy kódu
+* Správy na základě NuGet balíčků
+* Formát kompatibilní projekt Visual Studio
+* Modul sestavení nástroje MSBuild
+* Integrované testování částí
+* Podpora pro F # out-of-the-box
 
-* Na základě Roslyn C# technologii IntelliSense, refaktoring analyzátory a opravy kódu 
-* Správy na základě NuGet balíčků 
-* Formát kompatibilní projekt Visual Studio 
-* Modul sestavení nástroje MSBuild 
-* Integrované testování částí 
-* Podpora pro F # out-of-the-box 
-
-Výhody uvedené v této příručce, která jsou označena jako **Preview** jsou dostupné jenom [alfa kanálu](https://docs.microsoft.com/visualstudio/mac/update#Changing_the_Updater_channel). 
-
-## <a name="language-support"></a>Jazyková podpora 
+## <a name="language-support"></a>Podpora jazyků
 
 Psaní kódu jazyka C# 7 v počítači Mac se nabízí pouze v sadě Visual Studio for Mac.
 
-## <a name="net-core"></a>.NET Core  
+## <a name="net-core"></a>.NET Core
 
-[.NET Core](https://www.microsoft.com/net/core#macos) je platforma pro vytváření aplikací, které běží na Windows, Linuxu a Macu. Visual Studio for Mac podporuje načítání, vytváření, používání a ladění projektů .NET Core. 
+[.NET Core](https://www.microsoft.com/net/core#macos) je platforma pro vytváření aplikací, které běží na Windows, Linuxu a Macu. Visual Studio for Mac podporuje načítání, vytváření, používání a ladění projektů .NET Core.
 
 .NET core je nainstalován pomocí sady Visual Studio pro Mac a funguje mimo pole.
 
-Podpora .NET Core zahrnuje: 
+Podpora .NET Core zahrnuje:
 
-* C# a F# IntelliSense 
-* Šablony projektu .NET Core pro konzolu, knihovnu a webové aplikace 
+* C# a F# IntelliSense
+* Šablony projektu .NET Core pro konzolu, knihovnu a webové aplikace
 * Úplnou podporu ladění, včetně zarážek, zásobníku volání, okna kukátka a dalších funkcí 
 * Odkazy na balíček NuGet a na základě MSBuild obnovení. 
 * Testování podporu pro spouštění a ladění testy s Visual Studio platforma testu, která je součástí rozhraní .NET Core SDK integrované částí. 
@@ -94,11 +91,11 @@ Pomocí sady Visual Studio pro Mac je možné publikovat ASP.NET Core webové ap
 
 ![Publikování v Azure](media/benefits-vsmac-over-xs-image1.png)
 
-### <a name="azure-functions-preview"></a>Azure Functions (**Preview**)
+### <a name="azure-functions"></a>Azure Functions
 
 Azure Functions je řešení umožňující snadno spouštět malé části kódu, nebo funkcí, v cloudu. Visual Studio pro Mac můžete kód a místně ladění Azure Functions. Chcete-li získat v dialogu Nový projekt spustit, podívejte se na Azure Functions v cloudu. 
 
-### <a name="docker-support-preview"></a>Podpora docker (**Preview**)
+### <a name="docker-support"></a>Podpora Dockeru
 
 Teď můžete publikovat aplikace ASP.NET Core Docker kontejnery a spustit z Azure App Service. 
 
@@ -164,6 +161,4 @@ Při první třídy funkce Xamarin Studio byly vždy funkcí Xamarin a platformy
 
 ### <a name="cross-platform"></a>Různé platformy 
 
-* [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/) (**Preview**) 
-* [Xamarin IoT](https://developer.xamarin.com/guides/cross-platform/iot/) (**Preview**) 
- 
+* [Xamarin Live Player](https://developer.xamarin.com/guides/cross-platform/live/)
