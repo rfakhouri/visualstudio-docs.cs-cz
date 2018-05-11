@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e4c0311f8e011b8cab3e189f309cd618a485bd71
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b0fa3f01d90e2a27a234cceba7b3821e7c46c9f6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v Visual Studio 2017
 K ladění aplikace ASP.NET, která byla nasazena do služby IIS, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace a pak připojte k běžící aplikaci ze sady Visual Studio.
@@ -56,6 +56,7 @@ V závislosti na nastavení zabezpečení se může ušetřit čas přidat násl
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 Pokud používáte Internet Explorer, můžete přidat důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Tyto kroky jsou u jiných prohlížečů. (Pokud budete muset stáhnout starší verze vzdáleného ladicího programu z my.visualstudio.com, některé další důvěryhodných serverů jsou nutné k přihlášení.)
 
@@ -78,7 +79,7 @@ Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke
 
 1. Otevřete Průzkumníka Windows a vytvořte novou složku, **C:\Publish**, kde později nasadíte projekt ASP.NET.
 
-2. Otevřete **Internetová informační služba (IIS) Manager**. (V levém podokně Správce serveru, vyberte **IIS**. Pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.)
+2. Pokud již není otevřený, otevřete **Správce Internetové informační služby (IIS)**. (V levém podokně Správce serveru, vyberte **IIS**. Pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.)
 
 3. V části **připojení** v levém podokně přejděte do **lokality**.
 

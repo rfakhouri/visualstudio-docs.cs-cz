@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: a4f85c4efee469901088c89436f1021e13f5ca90
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: 23a76b4d101acb0c917168515a27f2835c322415
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="getting-started-with-aspnet-core"></a>Začínáme s ASP.NET Core
 
@@ -143,7 +143,7 @@ Pokud chcete přidat řadič, postupujte takto:
 
 2. Přidejte následující kód na nový řadič:
 
-    ```
+    ```csharp
     using System;
     using Microsoft.AspNetCore.Mvc;
     using System.Text.Encodings.Web;
@@ -232,6 +232,6 @@ Ujistěte se, že všechny čtyři provést postup uvedený úspěšně zkontrol
 
 Tento průvodce vám Dal Úvod do ASP.NET Core. Popisuje, co je, kdy použít a poskytuje informace o používání v sadě Visual Studio for Mac.
 Další informace o dalších krocích zde naleznete následující příručky:
-- [ASP.NET Core](https://docs.microsoft.com/aspnet/core/#build-web-ui-and-web-apis-using-aspnet-core-mvc) dokumentace.
+- [ASP.NET Core](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) dokumentace.
 - [Vytváření služeb back-end pro nativních aplikací Mobile](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend), který ukazuje vytvoření služby REST pro aplikace na platformě Xamarin.Forms pomocí ASP.NET Core.
 - [ASP.NET Core praktické cvičení](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).

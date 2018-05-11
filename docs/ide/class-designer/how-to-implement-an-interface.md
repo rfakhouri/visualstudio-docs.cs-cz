@@ -13,13 +13,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ccfde67a46ac1ae1b74a031a9ec030942d12b3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8905fe471d022ff7772ded2e5e3e571b1b74968
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-implement-an-interface-class-designer"></a>Postupy: implementace rozhraní (návrhář tříd)
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Postupy: implementace rozhraní v Návrháři tříd
 
 V **návrhář tříd**, je možné implementovat rozhraní v diagramu tříd propojením na třídu, která obsahuje kód pro metody rozhraní. **Třídy návrháře** generuje implementace rozhraní a zobrazí se o vztah mezi rozhraní a třídy jako vztah dědičnosti. Kreslení řádku s dědičnosti mezi rozhraní a třídy nebo přetažením rozhraní ze zobrazení tříd můžete implementovat rozhraní.
 
@@ -34,7 +34,7 @@ V **návrhář tříd**, je možné implementovat rozhraní v diagramu tříd pr
 
      Typu Lupa se zobrazí připojené k třídě a štítek s názvem rozhraní identifikuje vztah dědičnosti. Visual Studio generuje zástupných procedur pro všechny členy rozhraní.
 
- Další informace najdete v tématu [postupy: vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md).
+Další informace najdete v tématu [postupy: vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>K implementaci rozhraní z okna zobrazení tříd
 

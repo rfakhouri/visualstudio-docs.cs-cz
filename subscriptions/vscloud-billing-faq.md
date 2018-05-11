@@ -9,11 +9,11 @@ description: Dotazy k fakturaci pro Cloudová předplatná.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 284b448c6c5eade7e85793c2d21196b83de9fdc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e77cebba49447dcab4d30979753357a64075b1f2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio Cloudová předplatná fakturace – nejčastější dotazy
 Zajistěte, abyste [porovnat výhody odběru cloudu a ceny](https://www.visualstudio.com/vs/pricing/) pochopit výhody sady každé sady Visual Studio předplatné s porovnání mezi cloudu a standardní sady Visual Studio odběry, podrobnosti na výhody pro předplatitele a další.
@@ -103,3 +103,9 @@ Odpověď: Ano, můžete, pokud váš prodejce, na které se účastní programu
 * [Visual Studio Professional roční](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual)
 * [Visual Studio Enterprise každý měsíc](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
 * [Visual Studio Enterprise roční](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual)
+
+## <a name="related-resources"></a>Související informační zdroje
+
+* [Visual Studio odběry správy portálu](https://manage.visualstudio.com/)
+* [Visual Studio – podpora předplatného](https://www.visualstudio.com/vs/support/)
+* [Visual Studio cloudové předplatné nákupu pro poskytovatele cloudových služeb](vscloud-csp.md)

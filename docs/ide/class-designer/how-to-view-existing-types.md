@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fc5180d770575ae92c65b4124d928da5a518799
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6f477f64188c9592db65d0a82c8a1b8b3ec5b776
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-existing-types-class-designer"></a>Postupy: zobrazení existujících typů (návrhář tříd)
+# <a name="how-to-view-existing-types-in-class-designer"></a>Postupy: zobrazení existujících typů v Návrháři tříd
 
 Pokud chcete zobrazit stávající typ a její členy, přidejte do diagramu tříd jeho tvaru.
 
@@ -36,13 +36,13 @@ Postup návrhu nové typy v diagramech tříd, najdete v [postupy: vytváření 
 
 2.  Z projektu v **Průzkumníku**, přetáhněte soubor zdrojového kódu do diagramu tříd.
 
-    > [!WARNING]
+    > [!NOTE]
     > Pokud má vaše řešení projekt, který sdílí kód mezi více aplikacemi, můžete přetáhnout soubory nebo kód na diagramu tříd pouze z těchto zdrojů:
     >
-    > -   Projekt aplikace, který obsahuje diagram
-    > -   Sdílený projekt, který byl importován pomocí projekt aplikace
-    > -   Odkazovaný projekt
-    > -   Sestavení
+    > - Projekt aplikace, který obsahuje diagram
+    > - Sdílený projekt, který byl importován pomocí projekt aplikace
+    > - Odkazovaný projekt
+    > - Sestavení
 
     Tvary, které představují typy definované v souboru zdrojového kódu, se zobrazí v diagramu na pozici, kam jste soubor přetáhli.
 
@@ -60,9 +60,7 @@ Při prvním zobrazení typu v diagramu se jeho tvar ve výchozím nastavení zo
 
 ### <a name="to-display-the-contents-of-a-project-in-a-class-diagram"></a>K zobrazení obsahu projektu v diagramu tříd
 
-- V **Průzkumníku řešení** nebo **zobrazení tříd**, klikněte pravým tlačítkem na projekt a vyberte možnost **zobrazení**, zvolte **zobrazení diagramu tříd**.
-
-     Vytvoří se automaticky vyplněný diagram tříd.
+V **Průzkumníku řešení** nebo **zobrazení tříd**, klikněte pravým tlačítkem na projekt a vyberte možnost **zobrazení**, zvolte **zobrazení diagramu tříd**. Vytvoří se automaticky vyplněný diagram tříd.
 
 ## <a name="see-also"></a>Viz také
 

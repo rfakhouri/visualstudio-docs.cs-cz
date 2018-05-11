@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f89a15b0ec734e29e27fe652ee7e71b791db50
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8151020294f4fd5574a1de886509c5b11f0a326
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-inheritance-between-types-class-designer"></a>Postupy: vytvoření dědičnosti mezi typy (návrhář tříd)
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Postupy: vytvoření dědičnosti mezi typy v Návrháři tříd
 
 Chcete-li vytvořit vztah dědičnosti mezi dvěma typy na diagram třídy pomocí **návrhář tříd**, základní typ připojení s jeho odvozený typ nebo typy. Můžete mít vztah dědičnosti mezi dvěma třídami, mezi třídy a rozhraní nebo mezi dvě rozhraní.
 

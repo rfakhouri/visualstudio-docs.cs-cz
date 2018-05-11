@@ -1,7 +1,7 @@
 ---
 title: Nasazení do místní složky - Visual Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 05/08/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 024d191628e413f07cd510595eac5c7d9fca085b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a3b54a8fa30ef5eafcc5ebce5c81cc7b80be6fb6
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-web-app-or-net-core-app-to-a-local-folder-using-the-visual-studio-publish-tool"></a>Nasazení do místní složky pomocí nástroje Visual Studio publikovat webovou aplikaci nebo aplikaci .NET Core
 
@@ -24,11 +24,17 @@ Můžete použít **publikovat** nástroj pro publikování aplikace do místní
 
 Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python aplikace v sadě Visual Studio. Pro platformu Node.js kroky jsou podporované, ale uživatelské rozhraní se liší.
 
+## <a name="prerequisites"></a>Požadavky
+
+* Musíte mít nainstalované Visual Studio 2017 a **rozhraní .NET Framework** a **.NET Core** vývoj zatížení nainstalována.
+
+    Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu 
 
 1. V sadě Visual Studio, vyberte **soubor > Nový projekt**.
 
-1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **.NET Core**a potom v prostředním podokně vyberte **konzolové aplikace (.NET Core)**.
+1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **.NET Core**a klikněte v prostředním podokně **konzolové aplikace (.NET Core)**.
 
 1. Zadejte název jako **MyLocalApp** a klikněte na tlačítko **OK**.
 
@@ -40,7 +46,9 @@ Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python ap
 
     ![Zvolte publikování](../deployment/media/quickstart-publish.png "zvolte publikování")
 
-1. V **publikovat** podokně vyberte **složky**.
+1. Pokud jste dříve nakonfigurovali žádné profily publikování **publikovat** podokně se zobrazí. Klikněte na tlačítko **vytvořit nový profil**.
+
+1. V **vyberte cíl publikování** dialogovém okně vyberte **složky**.
 
     ![Vyberte složku,](../deployment/media/quickstart-publish-folder.png "vyberte složku,")
 

@@ -13,15 +13,17 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 81b58a2162d7240e32e1fb2d45e462ec551155e7
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: c22ba73b464f91bf3036541304cdf94e8660970d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 05/10/2018
 ---
 1. Pokud máte v úmyslu nasadit aplikace pomocí nástroje nasazení webu v sadě Visual Studio, nainstalujte nejnovější verzi nástroje nasazení webu na serveru.
 
-    Instalovat nasazení webu, použijte [instalačního programu webové platformy (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). Na kartě aplikace najít nasazení webu. Můžete také získat instalační program přímo z [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
+    Instalovat nasazení webu, použijte [instalačního programu webové platformy (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx). (Odkaz Web Platform Installer ze služby IIS, vyberete **IIS** v levém podokně Správce serveru. Pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.)
+
+    Ve webové platformy zjistíte na kartě aplikací nasazení webu. Můžete také získat instalační program přímo z [Microsoft Download Center](https://www.microsoft.com/search/result.aspx?q=webdeploy&form=dlc). 
 
 2. Ověřte, zda Web Deploy je spuštěna správně otevřením **ovládací panely > systém a zabezpečení > Nástroje pro správu > služby** a ujistěte se, že **Služba agenta pro nasazení webu** běží (na název služby se liší v starší verze).
 

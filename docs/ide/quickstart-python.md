@@ -1,7 +1,7 @@
 ---
 title: 'Rychlý úvod: použijte sadu Visual Studio k vytvoření webové aplikace Python'
 description: V tento rychlý start vytvoříte pomocí sady Visual Studio a rozhraní Flask pro vytvoření jednoduché webové aplikace v Pythonu.
-ms.date: 03/21/2018
+ms.date: 05/07/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9c21803f83baaac6a6a5d44764278d35e061d7d3
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
-ms.translationtype: HT
+ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Rychlý úvod: Vytvoření první webové aplikace Python pomocí sady Visual Studio
 

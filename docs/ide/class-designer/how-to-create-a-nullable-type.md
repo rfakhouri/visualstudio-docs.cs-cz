@@ -11,15 +11,18 @@ ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1780fb0ce6d96cb516060437a4d3ea22dd86dba0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ef167e83bc8f27a53405ef6ab7a3f9271863b4d
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Postupy: vytvoření typu s povolenou hodnotou Null (návrhář tříd)
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Postupy: vytvoření typu s povolenou hodnotou Null v Návrháři tříd
 
 Některé typy hodnot vždy nějaké (nebo potřebujete) definovanou hodnotu. Toto je běžnou praxí v databázích, kde některá pole nemusí být přiřazeny žádnou hodnotu. Například můžete do pole databáze do označují, že je ještě nebyly přiřazeny hodnotu přiřadit hodnotu null.
 

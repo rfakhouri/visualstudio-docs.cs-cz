@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ff8408ecdf8036a6ec00bdbc3ec93f4b41a2a7fa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění technologie ASP.NET v počítači vzdálené služby IIS
 K ladění aplikace ASP.NET, která byla nasazena do služby IIS, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace a pak připojte k běžící aplikaci ze sady Visual Studio.
@@ -51,6 +51,7 @@ V závislosti na nastavení zabezpečení se může ušetřit čas přidat násl
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 Pokud používáte Internet Explorer, můžete přidat důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Tyto kroky jsou u jiných prohlížečů. (Pokud budete muset stáhnout starší verze vzdáleného ladicího programu z my.visualstudio.com, některé další důvěryhodných serverů jsou nutné k přihlášení.)
 
@@ -59,6 +60,8 @@ Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke
 ## <a name="BKMK_deploy_asp_net"></a> Instalace technologie ASP.NET 4.5 na Windows serveru
 
 Pokud potřebujete podrobnější informace k instalaci technologie ASP.NET ve službě IIS, najdete v části [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+
+1. V levém podokně Správce serveru, vyberte **IIS**. Pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.
 
 1. Instalace webové platformy (WebPI) použít k instalaci technologie ASP.NET 4.5 (z uzlu serveru v systému Windows Server 2012 R2, zvolte **získat nové komponenty webové platformy** a poté vyhledejte ASP.NET)
 
@@ -79,7 +82,7 @@ Pokud potřebujete podrobnější informace k instalaci technologie ASP.NET ve s
 
 1. Otevřete Průzkumníka Windows a vytvořte novou složku, **C:\Publish**, kde později nasadíte projekt ASP.NET.
 
-2. Otevřete **Internetová informační služba (IIS) Manager**. (V levém podokně Správce serveru, vyberte **IIS**. Pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.)
+2. Pokud již není otevřený, otevřete **Správce Internetové informační služby (IIS)**. (V levém podokně Správce serveru, vyberte **IIS**. Pravým tlačítkem na server a vyberte **Správce Internetové informační služby (IIS)**.)
 
 3. V části **připojení** v levém podokně přejděte do **lokality**.
 

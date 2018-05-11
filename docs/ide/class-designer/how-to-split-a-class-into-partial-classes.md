@@ -11,15 +11,18 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d0aa5b844b3743ab80c11971caa26340effe671
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: da7a14d781f4af79d6d1d68141c3d5de1c08d304
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Postupy: rozdělení třídy na částečné třídy (návrhář tříd)
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Postupy: rozdělení třídy na částečné třídy v Návrháři tříd
 
 Můžete použít `partial` – klíčové slovo (`Partial` v jazyce Visual Basic) k rozdělení deklaraci třídu nebo strukturu mezi několik deklarace. Můžete vytvořit tolik částečné deklarace podle potřeby.
 
@@ -36,30 +39,11 @@ Následující příklady rozdělení definice třídy `Employee` do dvou deklar
 > [!NOTE]
 > Visual Basic používá definice částečné třídy pro oddělení Visual Studio – generovaného kódu z uživatelem definovaných kódu. Kód je rozdělené na samostatné zdrojové soubory. Například **Windows Form Designer** definuje částečné třídy pro ovládací prvky, jako `Form`. Neměli upravovat generovaného kódu v těchto ovládacích prvků.
 
-
 Další informace o částečné typy v jazyce Visual Basic najdete v tématu [částečné](/dotnet/visual-basic/language-reference/modifiers/partial).
 
-## <a name="visual-basic-example"></a>Příklad jazyka Visual Basic
+## <a name="example"></a>Příklad
 
-Rozdělení definice třídy v jazyce Visual Basic, použijte `Partial` – klíčové slovo, jak je znázorněno v následujícím příkladu.
-
-```vb
-' First part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateWorkHours()
-    End Sub
-End Class
-
-' Second part of class definition.
-Partial Public Class Employee
-    Public Sub CalculateTaxes()
-    End Sub
-End Class
-```
-
-## <a name="c-example"></a>Příklad jazyka C#
-
-Rozdělení definice třídy v jazyce C#, použijte `partial` – klíčové slovo, jak je znázorněno v následujícím příkladu.
+Rozdělení definice třídy, použijte `partial` – klíčové slovo (`Partial` v jazyce Visual Basic), jak je znázorněno v následujícím příkladu:
 
 ```csharp
 // First part of class definition.
@@ -79,9 +63,23 @@ public partial class Employee
 }
 ```
 
+```vb
+' First part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateWorkHours()
+    End Sub
+End Class
+
+' Second part of class definition.
+Partial Public Class Employee
+    Public Sub CalculateTaxes()
+    End Sub
+End Class
+```
+
 ## <a name="see-also"></a>Viz také
 
 - [Částečné třídy a metody](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)
-- [partial (typ)](/dotnet/csharp/language-reference/keywords/partial-type)
+- [partial (typ) (referenční dokumentace jazyka C#)](/dotnet/csharp/language-reference/keywords/partial-type)
 - [partial (metoda) (referenční dokumentace jazyka C#)](/dotnet/csharp/language-reference/keywords/partial-method)
-- [Partial](/dotnet/visual-basic/language-reference/modifiers/partial)
+- [Partial (Visual Basic)](/dotnet/visual-basic/language-reference/modifiers/partial)

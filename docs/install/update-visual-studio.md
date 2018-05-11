@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d528c8ec235ceb1b9c8b23de0874ebe42c472ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c0a53ca3a5b7eb292a2b2bdd1e95b9319205bcf3
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="update-visual-studio-2017-to-the-most-recent-release"></a>Visual Studio 2017 aktualizovat na nejnovější verzi
 
@@ -54,7 +54,7 @@ Pokud dojde k aktualizaci, nebude odpovídající příznak oznámení v sadě V
      Vaše aktualizace pokračuje. Potom po dokončení restartování sady Visual Studio.
 
      > [!NOTE]
-     > Pokud Visual Studio spustit v režimu správce, musíte restartovat Visual Studio ručně po aktualizaci.    
+     > Při spuštění sady Visual Studio v režimu správce, musíte restartovat Visual Studio ručně po aktualizaci.
 
 ### <a name="use-the-ide"></a>Pomocí rozhraní IDE
 
@@ -71,7 +71,7 @@ Můžete si vyhledejte aktualizaci a potom nainstalovat aktualizace z řádku na
    Aktualizace bude pokračovat, jak je popsáno v předchozí části a pak Visual Studio restartování po úspěšném dokončení aktualizace.
 
    > [!NOTE]
-   > Pokud Visual Studio spustit v režimu správce, musíte restartovat Visual Studio ručně po aktualizaci.  
+   > Při spuštění sady Visual Studio v režimu správce, musíte restartovat Visual Studio ručně po aktualizaci.
 
 ### <a name="use-the-visual-studio-installer"></a>Použití instalačního programu sady Visual Studio
 

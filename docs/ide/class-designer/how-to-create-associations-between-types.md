@@ -18,13 +18,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18c8d1b484570f39c95bad9d07a94ef6d6b3027b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0b27530abeec1c01b5537fd91bfbe3e0e10448af
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>Postupy: vytvoření přidružení mezi typy (návrhář tříd)
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Postupy: vytvoření přidružení mezi typy v Návrháři tříd
 
 Přidružení řádků v **návrhář tříd** ukazují, jak jsou související třídy v diagramu. Asociační čára představuje třídu, která je typem vlastnosti nebo pole jiné třídy ve vašem projektu. Asociační čáry obecně slouží ke znázornění nejdůležitějších vztahů mezi třídami v projektu.
 
@@ -35,25 +35,25 @@ Ačkoli můžete zobrazit všechna pole a vlastnosti jako přidružení, je vhod
 
 ## <a name="to-define-an-association-line-in-the-class-diagram"></a>Definování asociační čáry v diagramu tříd
 
-1.  V panelu nástrojů v části **návrhář tříd**, vyberte **přidružení**.
+1. V panelu nástrojů v části **návrhář tříd**, vyberte **přidružení**.
 
-2.  Nakreslete čáru mezi dvěma tvary, které chcete propojit pomocí přidružení.
+2. Nakreslete čáru mezi dvěma tvary, které chcete propojit pomocí přidružení.
 
      V první třídě se vytvoří nová vlastnost. Tato vlastnost se zobrazí jako asociační čára (nikoli jako vlastnost v prostoru ve tvaru) s výchozím názvem. Její typ je tvar, na který asociační čára ukazuje.
 
 ## <a name="to-change-the-name-of-an-association"></a>Změna názvu přidružení
 
--   Na ploše diagramu klikněte na popisek asociační linky a upravte jej.
+Na ploše diagramu klikněte na popisek asociační linky a upravte jej.
 
- \- nebo –
+Případně postupujte takto:
 
-1.  Klikněte na tvar, který obsahuje vlastnost zobrazenou jako přidružení.
+1. Vyberte obrazec, který obsahuje vlastnost, která se zobrazí jako přidružení.
 
-     Tvar získá fokus a jeho členy se zobrazí v okně Detaily třídy a v okně Vlastnosti.
+   Tvar, který získá fokus a její členy zobrazit v **podrobností třídy** a **vlastnosti** systému windows.
 
-2.  V okně Detaily třídy, nebo v okně Vlastnosti upravte pole názvu vlastnosti a stiskněte klávesu Enter.
+2. Buď **podrobností třídy** nebo **vlastnosti** okně Upravit pole název pro tuto vlastnost a stiskněte klávesu **Enter**.
 
-     Název se aktualizuje v **podrobností třídy** okně na ose přidružení, v okně vlastností a v kódu.
+   Název se aktualizuje v **podrobností třídy** v okně na přidružení řádek **vlastnosti** okno a v kódu.
 
 ## <a name="see-also"></a>Viz také
 

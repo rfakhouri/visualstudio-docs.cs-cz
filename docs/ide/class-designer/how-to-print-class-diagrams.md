@@ -13,23 +13,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cd97ae6cd610931f4b55deafb878f6c6067b6ef
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8408eb638d8a8961e144c2e09da896817ae9bea2
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-print-class-diagrams-class-designer"></a>Postupy: tisk diagramů tříd (návrhář tříd)
+# <a name="how-to-print-class-diagrams"></a>Postupy: tisk diagramů tříd
 
 Můžete vytisknout diagram třídy pomocí tiskové funkce sady Visual Studio.
 
 ## <a name="to-print-a-class-diagram"></a>Chcete-li vytisknout diagram – třída
 
-1.  Zobrazení diagramu tříd. (V případě potřeby vyberte kartu Třída diagram můžete ho zobrazit.)
+1.  Otevřete diagramu tříd.
 
 2.  Klikněte na tlačítko **tiskových** na **souboru** nabídky.
 
-     Diagram celou třídu vytiskne. Potřebujete-upravte nastavení v dialogovém okně Stránka instalace k tisku na správnou velikost.
+Diagram celou třídu vytiskne. Budete muset upravit nastavení ve **vzhled stránky** dialogové okno pro tisk na správnou velikost.
 
 ## <a name="see-also"></a>Viz také
 

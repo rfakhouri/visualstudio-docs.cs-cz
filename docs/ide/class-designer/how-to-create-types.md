@@ -19,11 +19,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d59c158bf8f532fa73a4eb2c22309218f80718e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Postupy: vytváření typů pomocí návrháře tříd
 
@@ -76,7 +76,7 @@ Návrh nové typy pro C# a Visual Basic, projekty, vytvořte je v diagramu tří
 
 3.  Přidejte jeden nebo více uživatelských atributů, vždy jeden na řádek. Nevkládejte je do závorek.
 
-     Až skončíte, uživatelské atributy se použijí na typ.
+   Vlastní atributy jsou použity k typu.
 
 ##  <a name="CustAttributeMember"></a> Použít vlastní atribut u člena typu
 
@@ -86,7 +86,7 @@ Návrh nové typy pro C# a Visual Basic, projekty, vytvořte je v diagramu tří
 
 3.  Přidejte jeden nebo více uživatelských atributů, vždy jeden na řádek. Nevkládejte je do závorek.
 
-     Až skončíte, uživatelské atributy se použijí na typ.
+   Vlastní atributy jsou použity k typu.
 
 ## <a name="see-also"></a>Viz také
 

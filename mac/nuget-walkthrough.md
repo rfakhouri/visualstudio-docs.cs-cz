@@ -1,15 +1,15 @@
 ---
-title: Návod – včetně balíček NuGet do projektu
+title: Včetně balíček NuGet do projektu
 description: Tento dokument popisuje postupy zahrnutí balíček NuGet do projektu Xamarin. Provede hledání a stahování balíčku, a také představení funkcí pro integraci IDE.
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: 05762df8b06a69647c6c7a628db54ac499248374
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>Včetně balíček NuGet do projektu
 
@@ -26,8 +26,6 @@ K předvedení funkčnosti balíčku NuGet jsme budete se nejprve provede proces
 Nejprve vytvořte projekt s názvem `HelloNuget` jak je uvedeno dále. Tento příklad ukazuje šabloně jediné zobrazení aplikace iOS, ale žádný typ, podporované projekt by fungovat:
 
 ![Vytvořit nový iOS projektu](media/nuget-walkthrough-NewProject.png)
-
-<a name="Adding_a_Package" class="injected"></a>
 
 ## <a name="adding-a-package"></a>Přidání balíčku
 
@@ -50,9 +48,9 @@ Pomocí vyhledávacího pole v pravém horním rohu najít konkrétní balíček
 
 Po stažení balíčku přidá se do projektu. Řešení se změní následujícím způsobem:
 
-*   **Odkazy** uzlu bude obsahovat seznam všech sestavení, které jsou součástí balíčku NuGet.
-*   **Balíčky** uzlu zobrazí každý balíček NuGet, který jste si stáhli. Můžete aktualizovat nebo odebrat balíček z tohoto seznamu.
-*   A **packages.config** soubor bude přidán do projektu. Tento soubor XML se používá pomocí rozhraní IDE pro sledování jaké verze balíčku se odkazuje v tomto projektu. Tento soubor by neměl být ručně upravovat, ale byste měli mít ve správě verzí. Všimněte si, že soubor project.json jde použít místo souboru packages.config. Soubor project.json je nový formát souboru balíčku zavedené 3 NuGet, který podporuje přenositelné obnovení. Podrobnější informace o souboru project.json najdete v [NuGet dokumentaci](http://docs.microsoft.com/NuGet/Schema/Project-Json). Soubor project.json je nutné přidat ručně a projekt se zavře a znovu otevřít před souboru project.json se používá v sadě Visual Studio for Mac.
+* **Odkazy** uzlu bude obsahovat seznam všech sestavení, které jsou součástí balíčku NuGet.
+* **Balíčky** uzlu zobrazí každý balíček NuGet, který jste si stáhli. Můžete aktualizovat nebo odebrat balíček z tohoto seznamu.
+* A **packages.config** soubor bude přidán do projektu. Tento soubor XML se používá pomocí rozhraní IDE pro sledování jaké verze balíčku se odkazuje v tomto projektu. Tento soubor by neměl být ručně upravovat, ale byste měli mít ve správě verzí. Všimněte si, že soubor project.json jde použít místo souboru packages.config. Soubor project.json je nový formát souboru balíčku zavedené 3 NuGet, který podporuje přenositelné obnovení. Podrobnější informace o souboru project.json najdete v [NuGet dokumentaci](http://docs.microsoft.com/NuGet/Schema/Project-Json). Soubor project.json je nutné přidat ručně a projekt se zavře a znovu otevřít před souboru project.json se používá v sadě Visual Studio for Mac.
 
 ## <a name="using-nuget-packages"></a>Pomocí balíčků NuGet
 
@@ -60,8 +58,9 @@ Jakmile se přidal balíček NuGet a aktualizovat odkazy na projekt můžete ovl
 
 Zajistěte, aby přidal jakékoli požadované `using` direktivy do horní části souboru:
 
-
-    using Newtownsoft.json;
+```csharp
+using Newtownsoft.json;
+```
 
 Většina NuGet poskytují další informace, jako je například stránka odkaz README nebo produktu Project na zdrojové Nuget. Odkaz k tomuto obvykle naleznete v balíčku blurb na stránce Přidat balíčky:
 

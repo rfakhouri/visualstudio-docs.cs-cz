@@ -9,11 +9,11 @@ description: Další informace o předplatném školení Pluralsight součástí
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e3c640bff98f0ff8453ef1df62f594639b69c243
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b4782c1da48b21fffcb0ebc5abc05b56a8116ae0
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Výhody školení Pluralsight v sadě Visual Studio předplatných
 
@@ -82,7 +82,7 @@ Následující tabulka podrobnosti, jaké výhody Pluralsight předplatného jso
 | Visual Studio Enterprise (NFR<sup>1</sup> ) | Program                                       | Není k dispozici                                  |NÁ|
 <sup>1</sup>*zahrnuje: není pro prodej (NFR), Visual Studio Industry Partner (VSIP), BizSpark, MCT softwaru & vývojářů Services, MCT Software a služby, Microsoft s hodnotou partnera (MVP), oblast ředitel (RD), Partner společnosti Microsoft Představte si sítě (MPN), FTE.*
 
-<sup>2</sup>*po vypršení doby Pluralsight odběry, může být oprávněni přijímat 12 měsíců od přístup k 50 vybrané Pluralsight kurzy v jednom ze tří studie oblastí.  Výhodou Pluralsight je jedno použití pouze vázaný na jednotlivých.  Jakmile odběratele spotřebovává výhodou, neprovádí vynulování. Podrobnosti viz Nejčastější dotazy níže další podrobnosti.*
+<sup>2</sup>*Pluralsight výhodou je jedno použití pouze vázaný na jednotlivých.    Jakmile odběratele spotřebovává výhodou, neprovádí vynulování. Podrobnosti viz Nejčastější dotazy níže další podrobnosti.  Po vypršení doby Pluralsight odběry může být oprávněni přijímat 12 měsíců od přístup k 50 vybrané Pluralsight kurzy v jednom ze tří studie oblastí.*
 
 Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
 

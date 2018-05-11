@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: fc8e657f6fb67884bd12de3f8e65c78077fa9b2e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění jádra ASP.NET ve službě IIS v Azure v Visual Studio 2017
 
@@ -83,18 +83,19 @@ Ze sady Visual Studio můžete rychle publikovat a ladění aplikace do zcela z�
 
 Můžete vytvořit virtuální počítač Azure pro Windows Server a pak nainstalovat a nakonfigurovat službu IIS a ostatní součásti požadovaný software. To trvá déle než nasazení Azure App Service a vyžaduje proveďte zbývající kroky v tomto kurzu.
 
-První, postupujte podle pokynů popsaných v [instalace a spuštění služby IIS](/azure/virtual-machines/virtual-machines-windows-hero-role).
+První, postupujte podle pokynů popsaných v [instalace a spuštění služby IIS](/azure/virtual-machines/windows/quick-create-portal).
 
 Když otevřete port 80 ve skupině zabezpečení sítě, také otevřete port 4022 pro vzdáleného ladicího programu. Tímto způsobem, nebudete muset otevřít později.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Aktualizovat nastavení zabezpečení prohlížeče v systému Windows Server
 
-V závislosti na nastavení zabezpečení prohlížeče ho může ušetřit čas přidat následující důvěryhodných serverů na prohlížeč, abyste si můžete snadno stáhnout software popsané v tomto kurzu. Může být potřeba přístup k těchto lokalit:
+V závislosti na nastavení zabezpečení prohlížeče ho může ušetřit čas přidat následující důvěryhodných serverů na prohlížeč, abyste rychleji si můžete stáhnout software popsané v tomto kurzu. Může být potřeba přístup k těchto lokalit:
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
 - visualstudio.com
+- IIS.NET
 
 Pokud používáte Internet Explorer, můžete přidat důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Tyto kroky jsou u jiných prohlížečů. (Pokud budete muset stáhnout starší verze vzdáleného ladicího programu z my.visualstudio.com, některé další důvěryhodných serverů jsou nutné k přihlášení.)
 

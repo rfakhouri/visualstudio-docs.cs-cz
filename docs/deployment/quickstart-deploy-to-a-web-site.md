@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 176bb028d176ce789977149f9e0380bf1ca284fc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6fa914b1b6b353d4e15bd8293f1fc141dd0ae371
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-a-web-app-or-a-net-core-app-to-a-web-site-using-the-visual-studio-publish-tool"></a>Publikování webu pomocí nástroje Visual Studio publikovat webovou aplikaci nebo aplikaci .NET Core
 
@@ -24,13 +24,19 @@ Můžete použít **publikovat** nástroj pro publikování aplikací ASP.NET pr
 
 Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python aplikace v sadě Visual Studio. Pro platformu Node.js kroky jsou podporované, ale uživatelské rozhraní se liší.
 
+## <a name="prerequisites"></a>Požadavky
+
+* Musíte mít nainstalované Visual Studio 2017 a **ASP.NET** a **rozhraní .NET Framework** vývoj zatížení. Pro aplikace .NET Core, musíte taky **.NET Core** zatížení.
+
+    Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu 
 
 1. V sadě Visual Studio, vyberte **soubor > Nový projekt**.
 
-1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně vyberte buď **webové aplikace ASP.NET (rozhraní .NET Framework)**nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na **OK**.
+1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně vyberte buď **webové aplikace ASP.NET (rozhraní .NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na **OK**.
 
-1. Zvolte **MVC**, ujistěte se, že **bez ověřování** je vybrána a potom klikněte na **OK**.
+1. Zvolte **MVC** (nebo zvolte **webové aplikace (Model-View-Controller)** pro .NET Core), ujistěte se, že **bez ověřování** je vybrána a pak klikněte na tlačítko **OK** .
 
 1. Zadejte název jako **MyWebApp** a klikněte na tlačítko **OK**.
 
@@ -44,7 +50,9 @@ Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python ap
 
     ![Zvolte publikování](../deployment/media/quickstart-publish-aspnet.png "zvolte publikování")
 
-1. V **publikovat** podokně vyberte **služby IIS, FTP, atd**.
+1. Pokud jste dříve nakonfigurovali žádné profily publikování **publikovat** podokně se zobrazí. Klikněte na tlačítko **vytvořit nový profil**.
+
+1. V **vyberte cíl publikování** dialogovém okně vyberte **služby IIS, FTP, atd**.
 
     ![Zvolte služby IIS, FTP, atd.](../deployment/media/quickstart-publish-iis-ftp.png "zvolte služby IIS, FTP, atd.")
 
@@ -56,7 +64,7 @@ Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python ap
 
 1. V **metodu publikování** pole, jako například vybrat metodu **Web Deploy** nebo **FTP**.
 
-    Nastavení, která se zobrazí vedle odpovídají způsob publikování.
+    Nastavení, která se zobrazí vedle odpovídají způsob publikování. Nasazení webu zjednodušuje nasazení webové aplikace a weby pro servery služby IIS a musí být nainstalován jako aplikace na serveru. Použití [instalačního programu webové platformy](https://www.microsoft.com/web/downloads/platform.aspx) k její instalaci.
 
 1. Nakonfigurujte požadovaná nastavení pro metodu publikování a klikněte na tlačítko **ověřit připojení**.
 
@@ -74,4 +82,7 @@ Tento postup platí pro technologii ASP.NET, ASP.NET Core, .NET Core a Python ap
 
 ## <a name="next-steps"></a>Další kroky
 
-- [Nasazení technologie ASP.NET do služby IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+V tento rychlý start zjistili, jak pomocí sady Visual Studio k vytvoření profilu publikování. Můžete také konfigurovat publikování profil importem nastavení publikování.
+
+> [!div class="nextstepaction"]
+> [Import nastavení publikování a nasazení do služby IIS](tutorial-import-publish-settings-iis.md)

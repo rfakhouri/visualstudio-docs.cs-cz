@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdd9df0d7c5b88b3fc4f19170be8494437fb2b7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku
 
@@ -60,7 +60,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `--installPath <dir>` | Instalační adresář pro instanci k provedení akce. Pro příkaz instalace jde **volitelné** a nainstalovanou instanci. Pro jiné příkazy jde **požadované** a nainstalovanou dříve nainstalovanou instanci. |
 | `--addProductLang <language-locale>` | **Volitelné**: během instalace nebo upravte činnost, tato hodnota určuje jazykové sady uživatelského rozhraní, které jsou nainstalovány do produktu. Může se objevit vícekrát na příkazový řádek pro přidání více jazykových sad. Pokud není přítomný, instalace používá národní prostředí počítače. Další informace najdete v tématu [seznam národní prostředí](#list-of-language-locales) části na této stránce.|
 | `--removeProductLang <language-locale>` | **Volitelné**: během instalace nebo upravte činnost, tato hodnota určuje jazykové sady uživatelského rozhraní, které budou odebrány z produktu. Může se objevit vícekrát na příkazový řádek pro přidání více jazykových sad. Další informace najdete v tématu [seznam národní prostředí](#list-of-language-locales) části na této stránce.|
-| `--add <one or more workload or component IDs>` | **Volitelné**: jeden nebo více úloh nebo ID součástí, které chcete přidat. Artefaktu požadované součásti jsou nainstalovány, ale ne doporučené nebo volitelné součásti. Můžete řídit další součásti globálně pomocí `--includeRecommended` nebo `--includeOptional`. Pro řízení citlivější, můžete připojit `;includeRecommended` nebo `;includeOptional` ID (například `--add Workload1;includeRecommended` nebo `--add Workload2;includeRecommended;includeOptional`). Další informace najdete v tématu naše [zatížení a ID součástí](workload-and-component-ids.md) stránky. Tato možnost v případě potřeby můžete opakovat.|
+| `--add <one or more workload or component IDs>` | **Volitelné**: jeden nebo více úloh nebo ID součástí, které chcete přidat. Artefaktu požadované součásti jsou nainstalovány, ale ne doporučené nebo volitelné součásti. Můžete řídit další součásti globálně pomocí `--includeRecommended` nebo `--includeOptional`. Pro řízení citlivější, můžete připojit `;includeRecommended` nebo `;includeOptional` ID (například `--add Workload1;includeRecommended` nebo `--add Workload2;includeRecommended;includeOptional`). Další informace najdete v tématu [zatížení a ID součástí](workload-and-component-ids.md) stránky. Tato možnost v případě potřeby můžete opakovat.|
 | `--remove <one or more workload or component IDs>` | **Volitelné**: jeden nebo více úloh nebo ID součástí odebrat. Další informace najdete v tématu naše [zatížení a ID součástí](workload-and-component-ids.md) stránky. Tato možnost v případě potřeby můžete opakovat.|
 | `--in <path>` | **Volitelné**: URI nebo cestu k souboru odpovědí.  |
 | `--all` | **Volitelné**: jestli se mají nainstalovat všechny úlohy a součásti pro produkt. |
@@ -80,12 +80,12 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | ----------------------- | --------------- |
 | `--layout <dir>` | Určuje adresář, který chcete vytvořit offline instalovat mezipaměti. Další informace najdete v tématu [vytvořit síťovou instalaci sady Visual Studio](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **Volitelné**: použít s `--layout` Příprava offline nainstalovat mezipaměti s balíčků prostředků s zadaný jazyk(y). Další informace najdete v tématu [seznam národní prostředí](#list-of-language-locales) části na této stránce.|
-| `--add <one or more workload or component IDs>` | **Volitelné**: jeden nebo více úloh nebo ID součástí, které chcete přidat. Artefaktu požadované součásti jsou nainstalovány, ale ne doporučené nebo volitelné součásti. Můžete řídit další součásti globálně pomocí `--includeRecommended` nebo `--includeOptional`. Pro řízení citlivější, můžete připojit `;includeRecommended` nebo `;includeOptional` ID (například `--add Workload1;includeRecommended` nebo `--add Workload2;includeOptional`). Další informace najdete v tématu naše [zatížení a ID součástí](workload-and-component-ids.md) stránky. <br/>**Poznámka:**: Pokud `--add` je použít, pouze zadané úlohy a součásti a jejich závislosti se stáhnou. Pokud `--add` není zadán, všechny úlohy a součásti se stáhnou do rozložení.|
+| `--add <one or more workload or component IDs>` | **Volitelné**: jeden nebo více úloh nebo ID součástí, které chcete přidat. Artefaktu požadované součásti jsou nainstalovány, ale ne doporučené nebo volitelné součásti. Můžete řídit další součásti globálně pomocí `--includeRecommended` nebo `--includeOptional`. Pro řízení citlivější, můžete připojit `;includeRecommended` nebo `;includeOptional` ID (například `--add Workload1;includeRecommended` nebo `--add Workload2;includeOptional`). Další informace najdete v tématu [zatížení a ID součástí](workload-and-component-ids.md) stránky. <br/>**Poznámka:**: Pokud `--add` je použít, pouze zadané úlohy a součásti a jejich závislosti se stáhnou. Pokud `--add` není zadán, všechny úlohy a součásti se stáhnou do rozložení.|
 | `--includeRecommended` | **Volitelné**: obsahuje doporučené součásti pro všechny úlohy, které jsou nainstalovány, ale nikoli volitelné součásti. Úlohy jsou zadány buď pomocí `--allWorkloads` nebo `--add`. |
 | `--includeOptional` | **Volitelné**: obsahuje doporučené *a* volitelné součásti pro všechny úlohy, nebudou zahrnuty do rozložení. Úlohy zadávají s `--add`.  |
 | `--keepLayoutVersion` | **Novinka v 15.3, volitelné**: použít změny v rozložení bez aktualizace verze rozložení. |
-| `--verify` | **Novinka v 15.3, volitelné**: Ověřte obsah rozložení.  Jsou uvedeny všechny soubory poškozeno nebo chybí. |
-| `--fix` | **Novinka v 15.3, volitelné**: Ověřte obsah rozložení.  Pokud se zjistí, že všechny soubory poškozený nebo chybí, jsou znovu načtena.  Přístup k Internetu je potřeba opravit rozložení. |
+| `--verify` | **Novinka v 15.3, volitelné**: Ověřte obsah rozložení. Jsou uvedeny všechny soubory poškozeno nebo chybí. |
+| `--fix` | **Novinka v 15.3, volitelné**: Ověřte obsah rozložení.  Pokud se zjistí, že všechny soubory poškozený nebo chybí, jsou redownloaded. Přístup k Internetu je potřeba opravit rozložení. |
 | `--clean <one or more paths to catalogs>` | **Novinka v 15.3, volitelné**: Odebere staré verze součástí z rozložení, který byl aktualizován na novější verzi. |
 
 | **Instalace rozšířené možnosti** | **Popis** |
@@ -103,7 +103,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `--noWeb` | **Novinka v 15.3, volitelné**: Instalační program nyní stáhnout veškerý obsah, který je instalace z Internetu.  Veškerý obsah, který se instaluje musí být k dispozici v offline rozložení.  Pokud rozložení chybí obsah, instalace se nezdaří.  Další informace najdete v tématu [nasazení z síťovou instalaci](create-a-network-installation-of-visual-studio.md). |
 | `--path <name>=<path>` | **Novinka v 15.7, volitelné**: slouží k zadání vlastní instalační cesty pro instalaci. Podporované cesty, které jsou sdíleny názvy, mezipaměti a instalaci. |
 | `--path cache=<path>` | **Novinka v 15.7, volitelné**: používá umístění zadejte ke stažení instalačních souborů. Toto umístění lze nastavit pouze při prvním nainstalované sady Visual Studio. Příklad: `--path cache="C:\VS\cache"` |
-| `--path shared=<path>` | **Novinka v 15.7, volitelné**: obsahuje sdílené soubory pro instalaci sady Visual Studio vedle sebe. Některé nástroje a sady SDK nainstalovat do umístění na této jednotce, zatímco jiná může toto nastavení přepsat a nainstalovat na jinou jednotku. Příklad: `--path shared="C:\VS\shared"` |
+| `--path shared=<path>` | **Novinka v 15.7, volitelné**: obsahuje sdílené soubory pro instalaci sady Visual Studio vedle sebe. Některé nástroje a sady SDK nainstalovat do umístění na této jednotce, zatímco jiná může toto nastavení přepsat a nainstalovat na jinou jednotku. Příklad: `--path shared="C:\VS\shared"` <br><br>Důležité: To je možné nastavit jenom jednou a na první času, který je nainstalován nástroj Visual Studio. |
 | `--path install=<path>` | **Novinka v 15.7, volitelné**: ekvivalentní `–-installPath`. Konkrétně `--installPath "C:\VS"` a `--path install="C:\VS"` odpovídají. Současně lze použít pouze jeden z nich. |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Seznam ID úlohy a ID součástí
@@ -114,24 +114,24 @@ Seznam úloh a ID součástí, které jsou seřazené podle produktu Visual Stud
 
 | **Národní prostředí** | **Jazyk** |
 | ----------------------- | --------------- |
-| cs-CZ | Čeština |
-| de-DE | Němčina |
-| en US | Angličtina |
-| ES-ES | Španělština |
-| fr-FR | Francouzština |
-| IT-IT | Italština |
-| ja-JP | Japonština |
-| ko-KR | Korejština |
-| pl-PL | Polština |
-| pt-BR | Portugalština – Brazílie |
-| ru-RU | Ruština |
-| tr-TR | Turečtina |
-| zh-CN | -Čínština, zjednodušená čínština |
-| zh-TW | Tradiční čínština – |
+| Cs-cz | Čeština |
+| De-de | Němčina |
+| en-us | Angličtina |
+| ES-es | Španělština |
+| Fr-fr | Francouzština |
+| IT-it | Italština |
+| Ja-jp | Japonština |
+| Ko-kr | Korejština |
+| PL-pl | Polština |
+| Pt-br | Portugalština – Brazílie |
+| Ru-ru | Ruština |
+| TR-tr | Turečtina |
+| Zh-cn | -Čínština, zjednodušená čínština |
+| Zh-tw. | Tradiční čínština – |
 
 ## <a name="error-codes"></a>Kódy chyb
 
-V závislosti na výsledku operace `%ERRORLEVEL%` proměnné prostředí se nastaví na jednu z následujících hodnot:
+V závislosti na výsledku operace `%ERRORLEVEL%` proměnná prostředí je nastavená na jednu z následujících hodnot:
 
 | **Hodnota** | **výsledek** |
 | --------- | ---------- |

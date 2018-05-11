@@ -15,13 +15,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1aa969b3c40f4b653b45bbb0da0e5ad3d56bb5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bdb4f28fc367b309a015a3faa8f749e2512db879
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-class-designer"></a>Postupy: změna mezi zápisem člena a zápisem asociace (návrhář tříd)
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Postupy: změna mezi zápisem člena a zápisem asociace v Návrháři tříd
 
 V **návrhář tříd**, můžete změnit způsob diagramu tříd představuje relaci přidružení mezi dvěma typy z notace členů notace přidružení a naopak. Členy zobrazené jako Asociační čáry často poskytují užitečné vizualizaci jak typy souvisejí.
 
@@ -41,9 +41,7 @@ V **návrhář tříd**, můžete změnit způsob diagramu tříd představuje r
 
 ## <a name="to-change-association-notation-to-member-notation"></a>Chcete-li změnit notace přidružení k notace členů
 
--   Na diagramu tříd, klikněte pravým tlačítkem na ose přidružení a zvolte **zobrazit jako vlastnost** nebo **zobrazit jako pole** podle potřeby.
-
-     Přidružení řádku zmizí, a vlastnost zobrazí v příslušné prostředí v rámci jeho obrazce typu v diagramu.
+Na diagramu tříd, klikněte pravým tlačítkem na ose přidružení a zvolte **zobrazit jako vlastnost** nebo **zobrazit jako pole** podle potřeby. Přidružení řádku zmizí, a vlastnost zobrazí v příslušné prostředí v rámci jeho obrazce typu v diagramu.
 
 ## <a name="see-also"></a>Viz také
 

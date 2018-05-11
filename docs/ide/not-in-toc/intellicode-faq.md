@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: a077aae7104d1e8b96fdebffd70355a05daa19f4
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: bc58c1581ec074c7fe4c23db6d75485b6158e180
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/10/2018
 ---
 # Visual Studio IntelliCode – nejčastější dotazy
 
@@ -40,6 +40,13 @@ Mohou vývojáři [experimentální rozšíření Stáhnout](https://go.microsof
 
 S IntelliCode seznamu dokončení naznačuje, že že pravděpodobně Opravte rozhraní API pro vývojáře k použití, nikoli představuje jednoduchý abecední seznam členů. Používá aktuální kontext kódu pro vývojáře a vzory podle 2000 vysoké kvality, projekty jako open-source na Githubu každý s více než 100 hvězdiček, k poskytování tohoto dynamického seznamu. Výsledky formuláři model, který předpovídá nejpravděpodobnější a nejdůležitější volání rozhraní API.
 
+## Otázka: jak dobrý jsou návrhy dokončení IntelliCode?
+
+Jsme už používá pro IntelliCode doporučení interně v Microsoftu nějakou dobu a myslet, že jsou užitečné návrhy. Nakonec ale ověření bude v tom, jak užitečné tato doporučení jsou pro vás jako vám kód. Jsme rádi, kdybyste umožnit sady Visual Studio [IntelliCode rozšíření](https://go.microsoft.com/fwlink/?linkid=872707) zkuste to. Dejte nám vědět, jak to funguje pro vás a pošlete nám svůj názor. Také natrénujeme našeho modelu podle vyberte v našem doporučení a zlepšuje modelu jsme budete aktualizovat rozšíření.
+
+> [!NOTE]
+> Žádná z vašeho kódu uživatelem definované se shromažďují. Zobrazit na otázku na [o ochraně osobních údajů](#privacy).
+
 ## OTÁZKY. Co je budoucí IntelliCode?
 
 Nemůžeme se zkoumat řadu různých způsobů, jak zlepšit produktivitu vývojářů pomocí AI a další pokročilé techniky. V sestavení 2018 jsme vám ukázal časná zobrazení některého z následujících scénářů, kde myslíme AI může pomoci vývojářům, ale existuje mnoho další! Nemohli jsme zajímáte o získání informací od vývojářů, které experimentovat s co jsme jste uvedený, takže přihlašovací na novinky a aktualizace v [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
@@ -56,7 +63,7 @@ IntelliSense s asistencí AI IntelliCode je právě v jeho první experimentáln
 
 Prostředí se zobrazuje se v sestavení 2018 ve Visual Studio 2017 na codebase C#. Ale těšíme na rozšiřování IntelliCode do více jazyků a nástrojů v sadě Visual Studio rodiny v budoucnu.
 
-## Otázka: co o ochranu osobních údajů? Jsou odesílání vlastního kódu do cloudu? Jaká data zákazníků je odesílány společnosti Microsoft?
+## <a name="privacy"/> Otázka: co o ochranu osobních údajů? Jsou odesílání vlastního kódu do cloudu? Jaká data zákazníků je odesílány společnosti Microsoft?
 
 Vývojáři mohou prostředí Visual Studio IntelliCode jako rozšíření experimentální preview ještě dnes. Účelem rozšíření je a umožňuje vývojářům k testování IntelliCode na možnosti a k poskytnutí zpětné vazby k produktu team.
 

@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 29faeafb56c5c077602a3dbcba5ecbb6bb2ab118
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 234f89f2d0a28c0836ee06df4c49c3ab60f102ce
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-bootstrapper-packages"></a>Vytváření balíčků zaváděcího nástroje
-Instalační program je obecný instalační program, který je možné nakonfigurovat na zjištění a instalace distribuovatelné součásti, jako jsou soubory Instalační služby systému Windows (.msi) a spustitelné programy. Instalační program je také označován jako zaváděcí nástroj. Je naprogramovaný tak, pomocí sady manifesty XML, které určují metadata pro správu instalace součásti.  Každé distribuovatelné součásti nebo součásti, je balíček zaváděcího nástroje. Balíček zaváděcího nástroje je skupina adresářů a souborů, které obsahují manifestu soubory, které popisují, jak by měly být nainstalovány požadované součásti. 
+Instalační program je obecný instalační program, který je možné nakonfigurovat na zjištění a instalace distribuovatelné součásti, jako jsou soubory Instalační služby systému Windows (.msi) a spustitelné programy. Instalační program je také označován jako zaváděcí nástroj. Je naprogramovaný tak, pomocí sady manifesty XML, které určují metadata pro správu instalace součásti.  Každý distribuovatelné součásti, nebo požadovaných součástí, které se zobrazí v **požadavky** dialogové okno pro ClickOnce je balíček zaváděcího nástroje. Balíček zaváděcího nástroje je skupina adresářů a souborů, které obsahují manifestu soubory, které popisují, jak by měly být nainstalovány požadované součásti. 
   
 Zavaděč nejprve zjišťuje, jestli všechny požadované součásti jsou již nainstalovány. Pokud požadavky nejsou nainstalovány, nejprve zavaděč zobrazí licenční smlouvy. Druhý po koncový uživatel přijme podmínky licenční smlouvy, začne instalace požadavky. Jinak hodnota pokud jsou všechny požadované součásti zjištěny, zaváděcí nástroj se spustí instalační program aplikace.  
   

@@ -17,13 +17,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 472eef35c781c027c39b99326e097db7ca249c29
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24dc8b21fbdacb5da2795b215cd8503b08cf3449
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>Postupy: vizualizace asociace kolekce (návrhář tříd)
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Postupy: vizualizace asociace kolekce v Návrháři tříd
 
 Vlastnosti a pole, které jsou kolekce položek dalších typů lze zobrazit v diagramu tříd jako asociace kolekce. Na rozdíl od regulární přidružení, který zobrazí pole nebo vlastnost jako řádek propojení vlastnícím – třída typu pole, asociace kolekce se zobrazí jako řádek propojení vlastnícím třída shromážděných typu.
 
@@ -35,7 +35,7 @@ Vlastnosti a pole, které jsou kolekce položek dalších typů lze zobrazit v d
 
 3.  Ve třídě, klikněte pravým tlačítkem na pole nebo vlastnost a zvolte **zobrazit jako asociace kolekce**.
 
-     Vlastnost nebo pole se zobrazí jako propojení s shromážděných typ řádek přidružení.
+Vlastnost nebo pole se zobrazí jako propojení s shromážděných typ řádek přidružení.
 
 ## <a name="see-also"></a>Viz také
 

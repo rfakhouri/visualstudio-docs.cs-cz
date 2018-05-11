@@ -24,11 +24,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f47ac4ff9eee0a3e5cc1d339f5e5def1d6e3b175
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1ecd96b8541145cfd5d36686f7ceaf04e7544b1
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>Rychlý úvod: První pohled na nasazení v sadě Visual Studio
 
@@ -38,7 +38,7 @@ Najdete podrobné pokyny pro podrobné pokyny.
 
 ### <a name="deploy-to-local-folder"></a>Nasazení do místní složky
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, a **.NET Core**: použijte nástroj pro publikování pro nasazení do místní složky. Možnosti dostupné závisí na typu vaší aplikace. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**a potom zvolte **složky**. Další informace najdete v tématu [nasadit do místní složky](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, a **.NET Core**: použijte nástroj pro publikování pro nasazení do místní složky. Možnosti dostupné závisí na typu vaší aplikace. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, musíte pak kliknout na **vytvořit nový profil**.) V dalším kroku vyberte **složky**. Další informace najdete v tématu [nasadit do místní složky](quickstart-deploy-to-local-folder.md).
 
     ![Zvolte publikování](../deployment/media/quickstart-publish.png)
 
@@ -48,9 +48,11 @@ Najdete podrobné pokyny pro podrobné pokyny.
 
 - **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python**, a **.NET Core**: publikování nástroj slouží k nasazení Web, FTP nebo Webdeploy. Další informace najdete v tématu [nasadit na web](quickstart-deploy-to-a-web-site.md).
 
-    V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. V nástroji pro publikování zvolte možnost chcete a postupujte podle kroků konfigurace.
+    V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, musíte pak kliknout na **vytvořit nový profil**.) V nástroji pro publikování zvolte možnost chcete a postupujte podle kroků konfigurace.
 
     ![Zvolte služby IIS, FTP, atd.](../deployment/media/quickstart-publish-iis-ftp.png)
+
+    Informace o import profilu publikování v sadě Visual Studio najdete v tématu [importu nastavení publikování a nasazení do služby IIS](../deployment/tutorial-import-publish-settings-iis.md).
 
     Můžete také nasadit aplikace ASP.NET a služby v několika jiné způsoby. Další informace najdete v tématu [nasazení webových aplikací a služeb ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
@@ -60,18 +62,16 @@ Najdete podrobné pokyny pro podrobné pokyny.
 
 ### <a name="publish-to-azure"></a>Publikování v Azure
 
-- **Technologie ASP.NET, ASP.NET Core, Python, Node.js a .NET Core** webové aplikace: nástroj publikování můžete rychle nasadit aplikace do služby Azure App Service nebo pro virtuální počítač Azure. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. V dialogovém okně Publikovat zvolit buď **Microsoft Azure App Service** nebo **Microsoft Azure Virtual Machines**a pak postupujte podle kroků konfigurace.
+- **Technologie ASP.NET, ASP.NET Core, Python, Node.js a .NET Core** webové aplikace: nástroj publikování můžete rychle nasadit aplikace do služby Azure App Service nebo pro virtuální počítač Azure. V Průzkumníku řešení klikněte pravým tlačítkem na projekt a zvolte **publikovat**. (Pokud jste dříve nakonfigurovali žádné profily publikování, musíte pak kliknout na **vytvořit nový profil**.) V dialogovém okně Publikovat zvolit buď **Microsoft Azure App Service** nebo **Microsoft Azure Virtual Machines**a pak postupujte podle kroků konfigurace.
 
     ![Vyberte aplikační služba Azure](../deployment/media/quickstart-publish-azure.png "vyberte aplikační služba Azure")
 
-    Pokud chcete publikovat na virtuální počítač Azure, posuňte doprava a vyberte **Microsoft Azure Virtual Machines**.
+    Informace o import profilu publikování ze služby Azure App Service pro Visual Studio najdete v tématu [importu nastavení publikování a nasazení do Azure](../deployment/tutorial-import-publish-settings-azure.md).
 
     Rychlý úvod najdete v části [publikovat do Azure](quickstart-deploy-to-azure.md). Další informace naleznete v [publikovat aplikaci ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs). Nasazování pomocí Git, najdete v části [průběžné nasazování ASP.NET Core do Azure s Gitem](/aspnet/core/publishing/azure-continuous-deployment).
 
     > [!NOTE]
     > Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
-
-- Další **služby Azure**: najdete v části konkrétní [služba Azure](/azure/#pivot=products) dokumentaci k nasazení různé možnosti, které může být podporován Visual Studio.
 
 ### <a name="publish-to-microsoft-store"></a>Publikovat do úložiště Microsoft
 

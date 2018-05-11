@@ -20,31 +20,31 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0850fed22caf4b34fcb74aa11eb63f9338b0d5e5
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 109c2408e16c5ca4943855889191733234778761
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="work-with-visual-c-code-class-designer"></a>Práce s kódem jazyka Visual C++ (návrhář tříd)
+# <a name="work-with-visual-c-code-in-class-designer"></a>Práce s kódem jazyka Visual C++ v Návrháři tříd
 
 **Třídy návrháře** zobrazí návrhové ploše názvem *diagramu tříd* , který poskytuje vizuální reprezentace elementy kódu v projektu. Diagramy tříd můžete použít k návrhu a vizualizovat třídami a ostatními typy v projektu.
 
 **Třídy návrháře** podporuje následující elementy kódu C++:
 
--   Třídy (podobá obrazce spravované třídy, s tím rozdílem, že může mít více vztahů dědičnost)
+- Třídy (podobá obrazce spravované třídy, s tím rozdílem, že může mít více vztahů dědičnost)
 
--   Anonymní – třída (zobrazí se zobrazení tříd vygenerovaný název anonymního typu)
+- Anonymní – třída (zobrazí se zobrazení tříd vygenerovaný název anonymního typu)
 
--   Šablony třídy
+- Šablony třídy
 
--   Struktura
+- Struktura
 
--   Výčet
+- Výčet
 
--   Makro (zobrazí se po zpracování zobrazení makra)
+- Makro (zobrazí se po zpracování zobrazení makra)
 
--   Definice TypeDef
+- Definice TypeDef
 
 > [!NOTE]
 > To však není stejný jako diagramu tříd UML, který můžete vytvořit v projektu modelování. Další informace najdete v tématu [diagramů tříd UML: referenční dokumentace](../../modeling/uml-class-diagrams-reference.md).
@@ -65,23 +65,23 @@ Pokud diagramu tříd neaktualizuje se změny provedené v kódu, možná budete
 
 **Třídy návrháře** nemusí být schopen převést typy z následujících důvodů:
 
--   Typ je v projektu nebo sestavení, které není na něj odkazovat z projektu, který obsahuje diagramu tříd. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení, které obsahuje typ. Další informace najdete v tématu [Správa odkazů v projektu](../managing-references-in-a-project.md).
+- Typ je v projektu nebo sestavení, které není na něj odkazovat z projektu, který obsahuje diagramu tříd. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení, které obsahuje typ. Další informace najdete v tématu [Správa odkazů v projektu](../managing-references-in-a-project.md).
 
--   Typ není ve správném oboru, takže **návrhář tříd** nelze najít. Zkontrolujte, že kód není chybějící `using`, `imports`, nebo `#include` příkaz. Ujistěte se, že nebyly přesunut typ (nebo souvisejícího typu) mimo obor názvů, ve kterém byl původně nachází také.
+- Typ není ve správném oboru, takže **návrhář tříd** nelze najít. Zkontrolujte, že kód není chybějící `using`, `imports`, nebo `#include` příkaz. Ujistěte se, že nebyly přesunut typ (nebo souvisejícího typu) mimo obor názvů, ve kterém byl původně nachází také.
 
--   Typ neexistuje nebo byla změněna na komentář. A opravte tuto chybu, ujistěte se, že nejsou označené jako komentář nebo odstranit typ.
+- Typ neexistuje nebo byla změněna na komentář. A opravte tuto chybu, ujistěte se, že nejsou označené jako komentář nebo odstranit typ.
 
--   Typ nachází v knihovně odkazuje #import – direktiva. Možných řešení je ručně přidat generovaný kód (soubor .tlh) #include – direktiva do záhlaví souboru.
+- Typ nachází v knihovně odkazuje #import – direktiva. Možných řešení je ručně přidat generovaný kód (soubor .tlh) #include – direktiva do záhlaví souboru.
 
--   Ujistěte se, že **návrhář tříd** podporuje typ, který jste zadali. V tématu [omezení pro elementy kódu C++](#limitations-for-c-code-elements).
+- Ujistěte se, že **návrhář tříd** podporuje typ, který jste zadali. V tématu [omezení pro elementy kódu C++](#limitations-for-c-code-elements).
 
 Chyba se nejpravděpodobněji najdete v části řešení problému typ je **kód nebyl nalezen pro jeden nebo více obrazců v diagramu tříd '\<element >'**. Tato chybová zpráva nemusí znamenat, že váš kód došlo k chybě. Znamená, že pouze tento návrhář tříd se nepodařilo zobrazení vašeho kódu. Zkuste následující míry:
 
--   Zkontrolujte, zda typu. Zajistěte, aby mít není neúmyslně komentované a odstranit zdrojový kód.
+- Zkontrolujte, zda typu. Zajistěte, aby mít není neúmyslně komentované a odstranit zdrojový kód.
 
--   Došlo k pokusu o vyřešení typu. Typ může být v projektu nebo sestavení, které není na něj odkazovat z projektu, který obsahuje diagramu tříd. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení, které obsahuje typ. Další informace najdete v tématu [Správa odkazů v projektu](../managing-references-in-a-project.md).
+- Došlo k pokusu o vyřešení typu. Typ může být v projektu nebo sestavení, které není na něj odkazovat z projektu, který obsahuje diagramu tříd. Chcete-li opravit tuto chybu, přidejte odkaz na projekt nebo sestavení, které obsahuje typ. Další informace najdete v tématu [Správa odkazů v projektu](../managing-references-in-a-project.md).
 
--   Ujistěte se, že typ je ve správném oboru, aby ji mohli najít návrhář tříd. Ujistěte se, že kód není chybějící `using`, `imports`, nebo `#include` příkaz. Ujistěte se, že nebyly přesunut typ (nebo souvisejícího typu) mimo obor názvů, ve kterém byl původně nachází také.
+- Ujistěte se, že typ je ve správném oboru, aby ji mohli najít návrhář tříd. Ujistěte se, že kód není chybějící `using`, `imports`, nebo `#include` příkaz. Ujistěte se, že nebyly přesunut typ (nebo souvisejícího typu) mimo obor názvů, ve kterém byl původně nachází také.
 
 ### <a name="troubleshoot-other-error-messages"></a>Řešení potíží s další chybové zprávy
 
@@ -89,25 +89,25 @@ Pomoc při řešení potíží chyby a upozornění můžete najít ve veřejné
 
 ## <a name="limitations-for-c-code-elements"></a>Omezení pro elementy kódu C++
 
--   Při načtení projektu Visual C++ **návrhář tříd** funguje způsobem, jen pro čtení. Můžete změnit diagramu tříd, ale nemůže uložit změny z diagramu tříd zpátky do zdrojového kódu.
+- Při načtení projektu Visual C++ **návrhář tříd** funguje způsobem, jen pro čtení. Můžete změnit diagramu tříd, ale nemůže uložit změny z diagramu tříd zpátky do zdrojového kódu.
 
--   **Třídy návrháře** podporuje pouze nativní sémantiku C++. Pro projekty Visual C++, které jsou zkompilovány do spravovaného kódu **návrhář tříd** bude vizualizovat pouze elementy kódu, které jsou nativní typy. Proto můžete přidat diagramu tříd do projektu, ale **návrhář tříd** vám nedovolí vizualizovat elementy, ve kterém `IsManaged` je nastavena na `true` (to znamená, typů hodnot a odkazové typy).
+- **Třídy návrháře** podporuje pouze nativní sémantiku C++. Pro projekty Visual C++, které jsou zkompilovány do spravovaného kódu **návrhář tříd** bude vizualizovat pouze elementy kódu, které jsou nativní typy. Proto můžete přidat diagramu tříd do projektu, ale **návrhář tříd** vám nedovolí vizualizovat elementy, ve kterém `IsManaged` je nastavena na `true` (to znamená, typů hodnot a odkazové typy).
 
--   Pro projekty Visual C++ **návrhář tříd** čte pouze definici typu. Předpokládejme například, že můžete definovat typu v souboru hlavičky () a její členy v souboru implementace (sada). Pokud vyvolání "Zobrazení diagramu tříd" na soubor implementace (sada), **návrhář tříd** nic zobrazí. Jako další příklad – Pokud vyvolání "Zobrazení diagramu tříd" na sada souboru, který používá `#include` příkaz zahrnout další soubory, ale neobsahuje žádné skutečné – třída definice **návrhář tříd** znovu nic zobrazí.
+- Pro projekty Visual C++ **návrhář tříd** čte pouze definici typu. Předpokládejme například, že můžete definovat typu v souboru hlavičky () a její členy v souboru implementace (sada). Pokud vyvolání "Zobrazení diagramu tříd" na soubor implementace (sada), **návrhář tříd** nic zobrazí. Jako další příklad – Pokud vyvolání "Zobrazení diagramu tříd" na sada souboru, který používá `#include` příkaz zahrnout další soubory, ale neobsahuje žádné skutečné – třída definice **návrhář tříd** znovu nic zobrazí.
 
--   Soubory IDL (.idl), které definují rozhraní COM a knihovny typů, se nezobrazují v diagramech, pokud nejsou zkompilovány do nativního kódu C++.
+- Soubory IDL (.idl), které definují rozhraní COM a knihovny typů, se nezobrazují v diagramech, pokud nejsou zkompilovány do nativního kódu C++.
 
--   **Třídy návrháře** nepodporuje globální funkce a proměnné.
+- **Třídy návrháře** nepodporuje globální funkce a proměnné.
 
--   **Třídy návrháře** nepodporuje sjednocení. Toto je zvláštní druh třída, ve které je paměť přidělená pouze množství potřebné pro Evropské unie největší datový člen.
+- **Třídy návrháře** nepodporuje sjednocení. Toto je zvláštní druh třída, ve které je paměť přidělená pouze množství potřebné pro Evropské unie největší datový člen.
 
--   **Třídy návrháře** nezobrazí základní datové typy, jako `int` a `char`.
+- **Třídy návrháře** nezobrazí základní datové typy, jako `int` a `char`.
 
--   **Třídy návrháře** nezobrazí typy, které jsou definovány mimo aktuální projekt, pokud projekt nemá správné odkazy na tyto typy.
+- **Třídy návrháře** nezobrazí typy, které jsou definovány mimo aktuální projekt, pokud projekt nemá správné odkazy na tyto typy.
 
--   **Třídy návrháře** můžete zobrazit vnořené typy, ale není vztahy mezi vnořené typy a dalších typů.
+- **Třídy návrháře** můžete zobrazit vnořené typy, ale není vztahy mezi vnořené typy a dalších typů.
 
--   **Třídy návrháře** nelze zobrazit typy, které jsou neplatné nebo které jsou odvozeny od typu void.
+- **Třídy návrháře** nelze zobrazit typy, které jsou neplatné nebo které jsou odvozeny od typu void.
 
 ## <a name="see-also"></a>Viz také
 

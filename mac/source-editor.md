@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: c617ed1bae10569291b88d038e8d875ca966ad43
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: HT
+ms.openlocfilehash: 8660ee0de90813e95a221c3b4ea3a50528b4307a
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="source-editor"></a>Editor zdrojového kódu
 
@@ -24,7 +24,6 @@ Tento článek představuje některé klíčové funkce editoru zdroje a popisuj
 Zobrazení a efektivně přesunutí v rámci kódu je nedílnou součástí pracovní postup vývoje. Jakým způsobem se rozhodnete zobrazit a spravovat, že kód je osobní rozhodnutí, které se liší mezi vývojáři - a často mezi projekty.
 
 Visual Studio pro Mac nabízí mnoho výkonné funkce, aby vývoj pro různé platformy jako přístupné a co nejužitečnější. Následující části popisují některé z světla.
-
 
 ## <a name="code-folding"></a>Skládání kódu
 
@@ -62,25 +61,20 @@ K dispozici je také možnost Zobrazit karty, mezery a konce řádků:
 
  ![zobrazí prázdné znaky](media/source-editor-image22.png)
 
-
 ## <a name="ruler"></a>Pravítko
 
 Sloupec pravítka jsou užitečné pro určení řádku délky, zejména při práci na tým, který obsahuje pokynů délka řádku. Sloupec pravítka může být zapnout nebo vypnout tak, že přejdete do **Visual Studio > Předvolby... > textový Editor > značek a pravítek** a vyberete (nebo zrušením výběru) **pravítka zobrazit sloupec**, jak je popsáno v na následujícím obrázku:
 
- ![](media/source-editor-image5.png)
+ ![Dialogové okno Předvolby s "Zobrazit sloupce pravítka" zvýrazněná](media/source-editor-image5.png)
 
  Zobrazí se jako světla šedé svislice v editoru zdroje.
-
 
 ## <a name="highlight-identifier-references"></a>Zvýrazněte identifikátor odkazy
 
 "Zvýraznění identifikátor odkazy" je povolena možnost můžete vybrat libovolný symbol ve zdrojovém kódu a zdroj editor bude na poskytovat visual průvodce všechny odkazy v tomto souboru. Chcete-li tuto možnost zapnout, přejděte na **Visual Studio > Předvolby... > textový Editor > značek a pravítek** a vyberte _zvýrazněte identifikátor odkazy_, jak je znázorněno na následujícím obrázku:
 
-![](media/source-editor-image6.png)
+![Dialogové okno Předvolby s "Zvýraznění identifikátor odkazy" zvýrazněná](media/source-editor-image6.png)
 
 Barva zvýraznění je také užitečné, pro které označuje, že něco je probíhá přiřazené nebo je odkazované. Pokud je přiřazen něco, ho se zobrazí červeně; Pokud se odkazuje, je modře zvýrazněný:
 
-![](media/source-editor-image7.png)
-
-
-
+![Příklad zobrazuje barva higlight](media/source-editor-image7.png)

@@ -16,13 +16,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f44279baea33333c21bfadfd9fec21a2045aea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3398a5096934397556ae1b20845153bd45a78528
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Postupy: zobrazení dědičnosti mezi typy (návrhář tříd)
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Postupy: zobrazení dědičnosti mezi typy v Návrháři tříd
 
 Můžete najít vztah dědičnosti, pokud existuje, mezi základní typ a jeho odvozených typů v diagramu tříd v **návrhář tříd**. Chcete-li vytvořit vztah dědičnosti, pokud žádný neexistuje, mezi dvěma typy, přečtěte si téma [postupy: vytvoření dědičnosti mezi typy](how-to-create-inheritance-between-types.md).
 

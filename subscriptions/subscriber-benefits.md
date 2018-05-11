@@ -9,11 +9,11 @@ description: Informace o výhodách, které jsou součástí vašeho předplatn�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7e174253601de47de50f8abe17758d18466b236d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 6898ff004d9ab8a020ea17d90b97769d456e1553
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Výhody, které jsou součástí vašeho předplatného sady Visual Studio
 
@@ -40,5 +40,8 @@ Jako odběratel Visual Studio máte také přístup k různým typům podpory v 
 - Získáte pomoc od členy komunity ve fórech Priority nepodporují.  Pokud členy komunity nelze odpovídající vaší otázce, odborníky společnosti Microsoft vám poskytne odpověď. 
 - Máte otázky o Azure?  Podívejte se na službu Azure Community a Azure poradní Chat.  
 
-Další informace o výhodách, které jsou součástí vašeho předplatného najdete na stránce s cenami sady Visual Studio.  Informace o určité výhody, včetně, které odběry funkci, je k dispozici v **pomocí výhody pro předplatitele** tématu níže. 
+> [!NOTE] 
+> Vaše předplatné můžou také mít přístup k stažení softwaru.  Další informace o stahování, včetně jsou součástí vašeho předplatného, které soubory ke stažení najdete [ https://my.visualstudio.com/downloads ](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
+
+Další informace o výhodách, které jsou součástí vašeho předplatného, podívejte se [Visual Studio stránce s cenami](https://www.visualstudio.com/vs/pricing/).  Informace o určité výhody, včetně, které odběry funkci, je k dispozici v **pomocí výhody pro předplatitele** tématu níže. 
 

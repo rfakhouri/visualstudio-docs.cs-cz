@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: dd3fa975070656f54a48452a50e51c172d51c785
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c5c172ff3ec3033b50815efdb0b4ee293853ab1e
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>Publikování aplikace ASP.NET nebo ASP.NET Core Azure App Service pomocí sady Visual Studio
 
@@ -24,13 +24,19 @@ Můžete použít **publikovat** nástroj pro publikování aplikací ASP.NET, A
 
 Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio).
 
+## <a name="prerequisites"></a>Požadavky
+
+* Musíte mít nainstalované Visual Studio 2017 a **ASP.NET** a **rozhraní .NET Framework** vývoj zatížení. Pro aplikace .NET Core, musíte taky **.NET Core** zatížení.
+
+    Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
+
 ## <a name="create-a-new-project"></a>Vytvoření nového projektu 
 
 1. V sadě Visual Studio, vyberte **soubor > Nový projekt**.
 
 1. V části **Visual C#** nebo **jazyka Visual Basic**, zvolte **webové**a potom v prostředním podokně vyberte buď **webové aplikace ASP.NET (rozhraní .NET Framework)** nebo (C# pouze) **webové aplikace ASP.NET Core**a potom klikněte na **OK**.
 
-1. Zvolte **MVC**, ujistěte se, že **bez ověřování** je vybrána a potom klikněte na **OK**.
+1. Zvolte **MVC** (nebo zvolte **webové aplikace (Model-View-Controller)** pro .NET Core), ujistěte se, že **bez ověřování** je vybrána a pak klikněte na tlačítko **OK** .
 
 1. Zadejte název jako **MyWebApp** a klikněte na tlačítko **OK**.
 
@@ -44,7 +50,9 @@ Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.m
 
     ![Zvolte publikování](../deployment/media/quickstart-publish-aspnet.png "zvolte publikování")
 
-1. V **publikovat** podokně vyberte **Microsoft Azure App Service**.
+1. Pokud jste dříve nakonfigurovali žádné profily publikování **publikovat** podokně se zobrazí. Klikněte na tlačítko **vytvořit nový profil**.
+
+1. V **vyberte cíl publikování** dialogovém okně vyberte **služby App Service**.
 
     ![Vyberte aplikační služba Azure](../deployment/media/quickstart-publish-azure.png "vyberte aplikační služba Azure")
 
@@ -70,5 +78,7 @@ Pokud již účet Azure nemáte, můžete [zaregistrujte si zde](https://azure.m
 
 ## <a name="next-steps"></a>Další kroky
 
-- [Nasazení aplikace ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
-- [Průběžné nasazování ASP.NET Core do Azure s Gitem](/aspnet/core/publishing/azure-continuous-deployment)
+V tento rychlý start zjistili, jak vytvořit profil publikování pro nasazení do Azure pomocí sady Visual Studio. Můžete také konfigurovat publikování importováním profil publikování se nastavení na Azure App Service.
+
+> [!div class="nextstepaction"]
+> [Import nastavení publikování a nasazení do Azure](tutorial-import-publish-settings-azure.md)

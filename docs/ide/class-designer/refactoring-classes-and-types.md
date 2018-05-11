@@ -1,5 +1,5 @@
 ---
-title: Refaktoring tříd a typů (návrhář tříd)
+title: Přejmenování a přesunutí tříd a typů v Návrháři tříd
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -21,13 +21,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3104266e92bc05f82a4d97fb62fc20bc9e79c0eb
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ee534ca3c8b2a1cef441005586bc58601fb15ed7
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="refactoring-classes-and-types-class-designer"></a>Refaktoring tříd a typů (návrhář tříd)
+# <a name="refactor-classes-and-types-in-class-designer"></a>Refaktorovat tříd a typů v Návrháři tříd
 
 Při zrefaktorujete kódu, které usnadňují pochopit, údržbu a efektivnější změnou jeho interní struktuře a způsobu jeho objektů navržený, ne jeho externí chování. Použijte návrhář tříd a okně podrobností třídy ke snížení práci, kterou je nutné provést a riziko představení chyby při Refaktorovat kódu C#, Visual Basic nebo C++ v projektu sady Visual Studio.
 
@@ -40,52 +40,50 @@ Při zrefaktorujete kódu, které usnadňují pochopit, údržbu a efektivnějš
 |----------|------------------------|
 |**Refaktoring tříd:** refaktoringu operace můžete použít k rozdělení třídy na částečné třídy nebo k implementaci abstraktní základní třídu.|-   [Postupy: rozdělení třídy na částečné třídy](how-to-split-a-class-into-partial-classes.md)|
 |**Práce s rozhraní:** v Návrháři tříd můžete implementovat rozhraní v diagramu tříd propojením na třídu, která obsahuje kód pro metodu rozhraní.|-   [Postupy: implementace rozhraní](how-to-implement-an-interface.md)|
-|**Refaktoring typy, členy typu a parametry:** pomocí návrháře tříd můžete přejmenovat typy, přepsat členy typu nebo přesunuty z jednoho typu do jiného. Můžete také vytvořit typy s možnou hodnotou Null.|-   [Přejmenování typy a členy typu](refactoring-classes-and-types.md#rename)<br />-   [Členy typu přesouvat z jednoho typu do jiného](refactoring-classes-and-types.md#move)<br />-   [Postupy: vytvoření typu s povolenou hodnotou Null](how-to-create-a-nullable-type.md)|
+|**Refaktoring typy, členy typu a parametry:** pomocí návrháře tříd můžete přejmenovat typy, přepsat členy typu nebo přesunuty z jednoho typu do jiného. Můžete také vytvořit typy s možnou hodnotou Null.|-   [Přejmenování typy a členy typu](#rename-types-and-type-members)<br />-   [Členy typu přesouvat z jednoho typu do jiného](#move-type-members-from-one-type-to-another)<br />-   [Postupy: vytvoření typu s povolenou hodnotou Null](how-to-create-a-nullable-type.md)|
 
-<a name="rename"></a>
-### <a name="rename-types-and-type-members"></a>Přejmenování typy a členy typu
+## <a name="rename-types-and-type-members"></a>Přejmenování typy a členy typu
 
-V Návrháři tříd můžete přejmenovat typ nebo člen typu v diagramu tříd nebo v okně Vlastnosti. V okně podrobností třídy můžete změnit název člena, ale není typu. Přejmenování typ nebo člen typu rozšíří na všechny windows a kód umístění, kde se objevil starý název.
+V Návrháři tříd, můžete přejmenovat typ nebo člen v diagramu tříd nebo v typu **vlastnosti** okno. V **podrobností třídy** okno, můžete změnit název člena, ale není typu. Přejmenování typ nebo člen typu rozšíří na všechny windows a kód umístění, kde se objevil starý název.
 
-#### <a name="to-rename-a-name-in-the-class-designer"></a>Chcete-li přejmenovat název v Návrháři tříd
+### <a name="rename-in-the-class-designer"></a>Přejmenovat v Návrháři tříd
 
-1.  Na diagramu tříd vyberte typ nebo člen a klikněte na název.
+1. Na diagramu tříd vyberte typ nebo člen a vyberte název.
 
      Název člena možné upravovat.
 
-2.  Zadejte nový název pro typ nebo člen typu
+2. Zadejte nový název pro typ nebo člen typu
 
-#### <a name="to-rename-a-name-in-the-class-details-window"></a>Chcete-li přejmenovat název v okně podrobností třídy
+### <a name="rename-in-the-class-details-window"></a>Přejmenovat v okně podrobností třídy
 
-1.  Pokud chcete zobrazit okno podrobností třídy, klikněte pravým tlačítkem na typ nebo člen typu a potom klikněte na **podrobností třídy**.
+1. Chcete-li zobrazit **podrobností třídy** okno, typ nebo člen typu klikněte pravým tlačítkem a vyberte **podrobností třídy**.
 
-     Zobrazí se okno podrobností třídy.
+     **Podrobností třídy** se zobrazí v okně.
 
-2.  V **název** sloupce, změňte název člena typu
+2. V **název** sloupce, změňte název člena typu
 
-3.  Chcete-li přesunout fokus od buňky, stiskněte **ENTER** klíče nebo klikněte na tlačítko od buňky.
+3. Chcete-li přesunout fokus od buňky, stiskněte **Enter** klíče nebo klikněte na tlačítko od buňky.
 
     > [!NOTE]
-    > V okně podrobností třídy můžete změnit název člena, ale není typu.
+    > V **podrobností třídy** okno, můžete změnit název člena, ale není typu.
 
-#### <a name="to-rename-a-name-in-the-properties-window"></a>Chcete-li přejmenovat název v okně vlastností
+### <a name="rename-in-the-properties-window"></a>Přejmenovat v okně vlastností
 
-1.  V diagramu tříd nebo v okně podrobností třídy, klikněte pravým tlačítkem na typ nebo člen a pak klikněte na **vlastnosti**.
+1. Na diagramu tříd nebo **podrobností třídy** okna, klikněte pravým tlačítkem na typ nebo člen a pak vyberte **vlastnosti**.
 
-     Okno vlastností se zobrazí a zobrazí vlastnosti pro typ nebo člen typu.
+     **Vlastnosti** okno se zobrazí a zobrazí vlastnosti pro typ nebo člen typu.
 
-2.  V **název** vlastnost, změňte název typu nebo typ člena.
+2. V **název** vlastnost, změňte název typu nebo typ člena.
 
      Nový název rozšíří na všechny windows a kód umístění v aktuálním projektu, kde se objevil starý název.
 
-<a name="move"></a>
-### <a name="move-type-members-from-one-type-to-another"></a>Členy typu přesouvat z jednoho typu do jiného
+## <a name="move-type-members-from-one-type-to-another"></a>Členy typu přesouvat z jednoho typu do jiného
 
-Pomocí **návrhář tříd**, můžete přesunout člena typu jeden typ na jiný typ, pokud jsou obě viditelné v aktuální diagramu tříd.
+Pomocí **návrhář tříd**, typ člena můžete přesouvat z jednoho typu k jinému typu. Oba typy musí být viditelná v aktuální diagramu tříd.
 
-1.  V typu, který je viditelný na návrhovou plochu, klikněte pravým tlačítkem na člena, který chcete přesunout na jiný typ a pak klikněte na tlačítko **Vyjmout**.
+1. V typu, který je viditelný na návrhovou plochu, klikněte pravým tlačítkem na člena, který chcete přesunout na jiný typ a potom vyberte **Vyjmout**.
 
-2.  Klikněte pravým tlačítkem na typ cílového a pak klikněte na **vložení**.
+2. Klikněte pravým tlačítkem na typ cílového a vyberte **vložení**.
 
      Vlastnost se odebere z typ zdroje a zobrazí se v cílovém typu.
 

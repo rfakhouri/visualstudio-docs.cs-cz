@@ -9,11 +9,11 @@ description: Zjistěte, jak aktivovat výhody se na technickou podporu součást
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ef77e784ccaad30413ad81716b55df8e2de45fea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7c04132540477bcd94880cdb55b71493cbb1a347
+ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="activating-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Aktivace se na technickou podporu výhodou odběry Visual Studio
 
@@ -75,6 +75,20 @@ Pokud chcete používat vaše zvýhodněné předplatné se na technickou podpor
 3.  V části "Podpora" klikněte na tlačítko "Kontraktu podpory odkaz"
 4.  Zadejte zadejte "ID přístupu" a "ID smlouvy" součástí #1 výše.
 Po dokončení těchto kroků budete moci vybrat plán podpory, které jsou přidružené k vaší zvýhodněné předplatné sady Visual Studio.  (Název plánu může obsahovat "MSDN".)
+
+## <a name="eligibility"></a>Podmínky
+| Úrovni předplatného                                                 |     Kanály                                            | Výhody                                                          | Obnovitelných?    |
+|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
+| Visual Studio Enterprise (standardní, roční cloud)   | VL, Azure, prodejní, vybrané NFR<sup>1</sup> | 4 incidenty       |  Ano|
+| Visual Studio Professional (standardní, roční cloud) | VL, Azure, prodejní, vybrané NFR<sup>2</sup>                                        | 2 incidenty                                                          |Ano         |
+| Visual Studio Test Professional (standardní)                         | VL, prodejní                                              | 2 incidenty                                             |  Ano         |
+| MSDN platformy (standardní)                                          | VL, prodejní                                              | 2 incidenty                                               | Ano         |
+| Visual Studio Dev Essentials | NÁ  | Není k dispozici |NÁ|
+| Visual Studio Enterprise, Visual Studio Professional (měsíční cloud) | Azure                                       | Není k dispozici                                                           |NÁ|
+
+<sup>1</sup>*zahrnuje: Představte si Premium.   Vyloučí: Ne pro prodej (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT softwaru a služeb Developer, BizSpark, představte si Standard, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), MCT softwaru a služeb.*
+
+<sup>2</sup>*zahrnuje: Představte si Standard.* 
 
  
 
