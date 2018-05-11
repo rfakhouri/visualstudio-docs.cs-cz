@@ -40,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  V **přidat prostředek** dialogovém okně vyberte jazykovou verzi pro soubor prostředků, jako je angličtina (Spojené státy).  
   
-     Tento krok přidává globální soubor prostředků pro vaše řešení ve formátu, prostředků * x***.*** jazyková verze ***.** resx, jako je například Resource1.en-US.resx.  
+     Tento krok přidává globální soubor prostředků pro vaše řešení ve formátu, prostředků * x ***.*** jazyková verze ***.** resx, jako je například Resource1.en-US.resx.  
   
 5.  Když **Editor prostředků** se otevře v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], přidat prostředky do souboru prostředků.  
   
@@ -50,7 +50,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  V **Průzkumníku řešení**, otevřete místní nabídku pro název funkce v rámci **funkce** uzel a potom zvolte **přidat prostředek funkce**.  
   
-     Tento krok přidává funkce ve formátu souboru prostředků * ResourceFileName***.*** jazyková verze ***.** resx, jako je například Feature1.en-US.resx.  
+     Tento krok přidává funkce ve formátu souboru prostředků * ResourceFileName ***.*** jazyková verze ***.** resx, jako je například Feature1.en-US.resx.  
   
 3.  Když **Editor prostředků** se otevře v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], přidat prostředky do souboru prostředků.  
   

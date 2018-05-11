@@ -58,13 +58,13 @@ interface IManagedAddin : IUnknown
   
 1.  Aplikace zjistí doplňků VSTO tak, že vyhledá položky v následujícím klíči registru:  
   
-     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<název aplikace >*\Addins\  
+     HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<název aplikace >* \Addins\  
   
      Každá položka v tomto klíči registru je jedinečné ID doplňku VSTO. Obvykle je to názvu sestavení doplňku VSTO.  
   
 2.  Aplikace vyhledá `Manifest` položka pod položkou pro každý doplňku VSTO.  
   
-     Spravované doplňků VSTO můžete uložit úplnou cestu v manifestu `Manifest` položky v rámci HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<název aplikace >*\Addins\\  *\<ID doplněk >*. Manifest je soubor (obvykle soubor XML), který poskytuje informace, které se používají pro načtení doplňku VSTO.  
+     Spravované doplňků VSTO můžete uložit úplnou cestu v manifestu `Manifest` položky v rámci HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<název aplikace >* \Addins\\  *\<ID doplněk >*. Manifest je soubor (obvykle soubor XML), který poskytuje informace, které se používají pro načtení doplňku VSTO.  
   
 3.  Pokud aplikace vyhledá `Manifest` položku, aplikace se pokusí načíst spravované součásti zavaděč doplňku VSTO. Aplikace k tomu pokusu o vytvoření objektu COM, který implementuje imanagedaddin – rozhraní.  
   

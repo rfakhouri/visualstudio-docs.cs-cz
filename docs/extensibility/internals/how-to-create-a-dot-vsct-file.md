@@ -63,7 +63,7 @@ Soubor formátu XML .vsct můžete vytvořit z existující soubor zdroje tabulk
   
 1.  Získejte kopii souboru Perl jazyk.  
   
-2.  Získejte kopii souboru skriptu Perl ConvertCTCToVSCT.pl, obvykle nachází v  *\<cesta instalace Visual Studio SDK >*\VisualStudioIntegration\Tools\bin složky.  
+2.  Získejte kopii souboru skriptu Perl ConvertCTCToVSCT.pl, obvykle nachází v  *\<cesta instalace Visual Studio SDK >* \VisualStudioIntegration\Tools\bin složky.  
   
 3.  Získejte kopii souboru .ctc zdrojový soubor, který chcete převést.  
   
@@ -98,7 +98,7 @@ Můžete vytvořit soubor .vsct na základě XML z existujícího souboru binár
   
 3.  V aplikaci Visual Studio příkazovém řádku přejděte do adresáře, který obsahuje soubory .cto a .ctsym.  
   
-4.  Typ **vsct.exe** *ctofilename *** .cto** * vsctfilename***.vsct -S***symfilename ***.ctsym**.  
+4.  Typ **vsct.exe** *ctofilename *** .cto** * vsctfilename ***.vsct -S***symfilename ***.ctsym**.  
   
      `ctofilename` je název souboru .cto `vsctfilename` je název souboru vsct, kterou chcete vytvořit, a `symfilename` je název souboru .ctsym.  
   

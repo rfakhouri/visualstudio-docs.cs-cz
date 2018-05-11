@@ -49,7 +49,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|  
 |.Extension|ProductName. extension.versionMajor.versionMinor|  
   
- Můžete zaregistrovat jiné aplikace, které jsou možné otevřít konkrétní příponu přidáním verzí ProgID jako hodnoty HKEY_CLASSES_ROOT\\*\<rozšíření >*\OpenWithProgids klíč. Tento klíč registru, obsahuje seznam alternativní ProgID přidružené k příponě souboru. Aplikace přidružené k uvedené ProgID zobrazeny **otevřít v *** název produktu* podnabídky. Pokud stejná aplikace je zadána v obou `OpenWithList` a `OpenWithProgids` slučuje duplicitní hodnoty klíče, operační systém.  
+ Můžete zaregistrovat jiné aplikace, které jsou možné otevřít konkrétní příponu přidáním verzí ProgID jako hodnoty HKEY_CLASSES_ROOT\\*\<rozšíření >* \OpenWithProgids klíč. Tento klíč registru, obsahuje seznam alternativní ProgID přidružené k příponě souboru. Aplikace přidružené k uvedené ProgID zobrazeny **otevřít v *** název produktu* podnabídky. Pokud stejná aplikace je zadána v obou `OpenWithList` a `OpenWithProgids` slučuje duplicitní hodnoty klíče, operační systém.  
   
 > [!NOTE]
 >  `OpenWithProgids` Klíčů je podporovaná jen v systému Windows XP. Protože jinými operačními systémy Ignorovat tento klíč, nepoužívejte ho jako pouze registrace pro obslužné rutiny souborů. Tento klíč použijte zajistit lepší uživatelské prostředí v systému Windows XP.  
