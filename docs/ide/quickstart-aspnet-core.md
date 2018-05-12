@@ -14,11 +14,11 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e030a3e3870746cda7ae98f5c4b45d29c8ba4885
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b74f47201c706cbb4fe4a4f0eca647b350d9a72
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Rychlý úvod: Použití Visual Studio k vytvoření první webové aplikace ASP.NET Core
 
@@ -70,7 +70,7 @@ Nejdřív vytvoříte projekt webové aplikace technologie ASP.NET Core. Typ pro
 
    ![Seznam chyb](../ide/media/quickstart-aspnet-errorlist.png)
 
-1. V okně editoru umístěte kurzor na buď řádek, který obsahuje chybu, a potom vyberte **rychlé akce žárovky** na levém okraji. Z rozevírací nabídky vyberte **pomocí systému;** na začátek souboru přidejte tato direktiva a případné chyby opravte.
+1. V okně editoru umístěte kurzor na buď řádek, který obsahuje chybu, a potom vyberte žárovky rychlé akce na levém okraji. Z rozevírací nabídky vyberte **pomocí systému;** na začátek souboru přidejte tato direktiva a případné chyby opravte.
 
 ## <a name="run-the-application"></a>Spuštění aplikace
 

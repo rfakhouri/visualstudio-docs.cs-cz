@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 498eef4bac0a3f12735eccea2a15a5f4ab5975eb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a0116d16d98ed6a465b75527981f6a831da2b5d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Postupy: Instrumentace dynamicky kompilované webové aplikace ASP.NET a shromažďování dat paměti pomocí příkazového řádku profileru
 Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilace nástroje příkazového řádku nástroje ke shromažďování podrobné data paměti .NET přidělení a objekt doba platnosti pro dynamicky kompilované [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci pomocí metoda profilování instrumentace.  
@@ -32,7 +32,7 @@ Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/
   
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Ke konfiguraci aplikace ASP.NET Web a webový server  
   
-1.  Upravte soubor web.config cílová aplikace. V tématu [postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET](../profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md).  
+1.  Upravte soubor web.config cílová aplikace. V tématu [postupy: Úprava souborů Web.Config za účelem instrumentace a profilování dynamicky kompilovaných webových aplikací ASP.NET](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).  
   
 2.  Otevřete okno příkazového řádku na počítači, který je hostitelem webové aplikace.  
   

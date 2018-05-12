@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6abdd96f740d36b4f6806b16e6cdd9ba946cb95
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 17dc34cd030bf2eab430872a191424fb657d6cd0
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Ladění pomocí ladicího programu JIT v sadě Visual Studio
 Ladění za běhu spustí Visual Studio automaticky při výjimku nebo havárie v aplikaci, která běží mimo aplikaci Visual Studio. To umožňuje aplikaci otestovat, pokud neběží v sadě Visual Studio a zahájit ladění pomocí sady Visual Studio, když dojde k potížím.
@@ -178,4 +178,4 @@ static void Main(string[] args)
  [Zabezpečení ladicího programu](../debugger/debugger-security.md)   
  [Základy ladicího programu](../debugger/debugger-basics.md)   
  [V běhu, ladění, dialogové okno Možnosti](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Upozornění zabezpečení: Připojení k procesu, jehož vlastníkem je nedůvěryhodný uživatel, může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+ [Upozornění zabezpečení: Připojení k procesu, jehož vlastníkem je nedůvěryhodný uživatel, může být nebezpečné. Pokud následující údaje vypadají podezřele nebo si nejste jistí, k tomuto procesu se nepřipojujte.](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

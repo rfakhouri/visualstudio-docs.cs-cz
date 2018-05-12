@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0f0275e7123db9febaeaf05f231053818665df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cbd7e03ef5e8272d3decee9b6f7a344f5f659e67
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
-PROFILE_CURRENTID vrátí pseudo token pro přístup z více vláken id nebo id procesu, ve volání funkce NameProfile, StartProfile, StopProfile, SuspendProfile a ResumeProfile. Použijte ho, aby funkce pracovat na aktuální vlákno nebo proces, nikoli konkrétně uvedené jeden.  
+PROFILE_CURRENTID vrátí pseudo token pro ID procesu, ve volání funkce NameProfile, StartProfile, StopProfile, SuspendProfile a ResumeProfile nebo ID vlákna. Použijte ho, aby funkce pracovat na aktuální vlákno nebo proces, nikoli konkrétně uvedené jeden.  
   
 ## <a name="example"></a>Příklad  
  PROFILE_CURRENTID je definována v VSPerf.h jako:  
   
-```  
+```cpp  
 static const unsigned int PROFILE_CURRENTID = (unsigned int)-1;  
 ```  
   
 ## <a name="example"></a>Příklad  
  Následující příklad ilustruje PROFILE_CURRENTID. Tento příklad používá PROFILE_CURRENTID jako parametr identifikace aktuální vlákno ve volání [StartProfile](../profiling/startprofile.md) funkce.  
   
-```  
+```cpp  
 void ExerciseProfileCurrentID()  
 {  
     // Declare ProfileOperationResult enumeration   

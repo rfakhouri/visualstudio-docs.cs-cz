@@ -19,11 +19,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e3824bc4bc4f51baf822caee11a5fb4c106fa9e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3f0b97564c48255ea8b8f37e370402fa8f7499aa
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="debugger-security"></a>Zabezpečení ladicího programu
 Možnost ladění jiným procesem vám umožňuje velmi široký, které by jinak máte, zejména v případě, že ladění vzdáleně. Škodlivý ladicí program může způsobit poškození rozšířeným na počítači laděné.  
@@ -38,7 +38,7 @@ Možnost ladění jiným procesem vám umožňuje velmi široký, které by jina
 ### <a name="managed-debugging-security"></a>Spravované ladění zabezpečení  
  Tady jsou některé obecné doporučení, které platí pro všechny spravované ladění.  
   
--   Buďte opatrní při připojování k procesu nedůvěryhodné uživatele: Pokud tak učiníte, budete předpokládat, že je důvěryhodný. Při pokusu o připojení k procesu nedůvěryhodné uživatele pole potvrzovací dialogové okno upozornění zabezpečení zobrazí dotazem, zda chcete připojit k procesu. "Důvěryhodné uživatelé" můžete zahrnout, a sadu standardní uživatelé běžně definované na počítačích, které mají rozhraní .NET Framework nainstalované, jako například **aspnet**, **localsystem**, **networkservice**, a **localservice**. Další informace najdete v tématu [upozornění zabezpečení: připojení k procesu vlastněných nedůvěryhodné uživatelem může být nebezpečný. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
+-   Buďte opatrní při připojování k procesu nedůvěryhodné uživatele: Pokud tak učiníte, budete předpokládat, že je důvěryhodný. Při pokusu o připojení k procesu nedůvěryhodné uživatele pole potvrzovací dialogové okno upozornění zabezpečení zobrazí dotazem, zda chcete připojit k procesu. "Důvěryhodné uživatelé" můžete zahrnout, a sadu standardní uživatelé běžně definované na počítačích, které mají rozhraní .NET Framework nainstalované, jako například **aspnet**, **localsystem**, **networkservice**, a **localservice**. Další informace najdete v tématu [upozornění zabezpečení: připojení k procesu vlastněných nedůvěryhodné uživatelem může být nebezpečný. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
 -   Buďte opatrní při stahování projektu vypnout Internetu a načítání do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. To je velmi rizikové udělat i bez ladění. Když to uděláte, se za předpokladu, že projekt a kód, který obsahuje jsou důvěryhodné.  
   
@@ -81,5 +81,5 @@ Možnost ladění jiným procesem vám umožňuje velmi široký, které by jina
 ## <a name="see-also"></a>Viz také  
  [Nastavení ladicího programu a příprava](../debugger/debugger-settings-and-preparation.md)   
  [Základy ladicího programu](../debugger/debugger-basics.md)   
- [Upozornění zabezpečení: Připojení k procesu, jehož vlastníkem je nedůvěryhodný uživatel, může být nebezpečné. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)   
+ [Upozornění zabezpečení: Připojení k procesu, jehož vlastníkem je nedůvěryhodný uživatel, může být nebezpečné. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
  [Upozornění zabezpečení: Ladicí program musí spustit nedůvěryhodný příkaz.](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

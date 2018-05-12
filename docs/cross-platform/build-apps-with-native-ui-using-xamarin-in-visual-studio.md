@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: a8602915827c442fa2fc4cbddf4db2a25ef21749
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d813226dfa79a65da85a2b17e54306d12a4ed09
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Vývoj aplikací s nativní uživatelského rozhraní pomocí Xamarinu v sadě Visual Studio
 
@@ -69,7 +69,7 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
 
     Po kliknutí na tlačítko OK, **WeatherApp** řešení se skládá z jedné projektu s názvem **WeatherApp**. 
 
-2.  Pokud chcete cílový iOS, do řešení přidáte projektu pro iOS. Klikněte pravým tlačítkem na název řešení v **Průzkumníku řešení** a vyberte **přidat** a **nový projekt**.  V **nový projekt** dialogovém okně na levém vyberte **Visual C#**a potom **iOS** a **univerzální**. (Pokud tam není, možná budete muset nainstalovat Xamarin nebo Visual Studio 2017 funkci povolit, najdete v části [nastavení a instalaci](../cross-platform/setup-and-install.md).) V seznamu šablon, vyberte **jediné zobrazení aplikace (iOS)**. Pojmenujte ji **WeatherApp.iOS**.
+2.  Pokud chcete cílový iOS, do řešení přidáte projektu pro iOS. Klikněte pravým tlačítkem na název řešení v **Průzkumníku řešení** a vyberte **přidat** a **nový projekt**.  V **nový projekt** dialogovém okně na levém vyberte **Visual C#** a potom **iOS** a **univerzální**. (Pokud tam není, možná budete muset nainstalovat Xamarin nebo Visual Studio 2017 funkci povolit, najdete v části [nastavení a instalaci](../cross-platform/setup-and-install.md).) V seznamu šablon, vyberte **jediné zobrazení aplikace (iOS)**. Pojmenujte ji **WeatherApp.iOS**.
 
 3.  Pokud chcete zacílit Android, do řešení přidáte projektu pro Android. V **nový projekt** dialogovém okně na levém vyberte **Visual C#** a **Android**. Vyberte v seznamu šablony **prázdná aplikace (Android)**. Pojmenujte ji **WeatherApp.Android**. 
 
@@ -95,7 +95,7 @@ Visual Studio není k dispozici šablona řešení pro vytváření nativních a
   
     -   Klikněte na tlačítko **nainstalovat**.  
   
-7.  Opakujte krok 7 vyhledávat a instalovat **Microsoft.CSharp** balíček v .NET Standard projektu. Tato knihovna je nutné k použití jazyka C# `dynamic` typ dat v rozhraní .NET standardní knihovny.
+7.  Opakujte krok 6 vyhledávat a instalovat **Microsoft.CSharp** balíček v .NET Standard projektu. Tato knihovna je nutné k použití jazyka C# `dynamic` typ dat v rozhraní .NET standardní knihovny.
   
 8.  Sestavte řešení a ověřte, zda nejsou žádné chyby sestavení.  
   

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d84688198ff9d21a03923bf510676c7f620e4d12
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8271d28c21bc26c96c1481a114b2f5a322b148b4
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="waitstart"></a>WaitStart
 Možnost WaitStart způsobí, že se VSPerfCmd.exe počáteční dílčí příkaz vrátí jenom v případě, že byla inicializována profileru nebo po zadaném počtu sekund byla úspěšná. Ve výchozím nastavení vrátí příkaz ke spuštění okamžitě. Pokud nebyl zadán profileru vrátí dílčí příkaz ke spuštění, je vrácena chyba. Pokud není zadaný počet sekund, příkaz ke spuštění čeká neomezenou dobu zaseknout.  
@@ -23,7 +23,7 @@ Možnost WaitStart způsobí, že se VSPerfCmd.exe počáteční dílčí přík
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]  
 ```  
   
@@ -42,7 +42,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName[Options] /StartWait[:Seconds]
 ## <a name="example"></a>Příklad  
  V tomto příkladu souboru batch příkaz ke spuštění bude počkejte 5 sekund kvůli profileru k chybě při inicializaci.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WaitStart:5  
 if not %errorlevel% 0 goto :error_tag  
 VSPerfCmd.exe /Launch:TestApp.exe  

@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0013b9f7ae004b709a1651af0e32e36dd45f909c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 08025ed5d5e3806e04501c46a96e1df5f85b31fb
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Výběr strategie aktualizace ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] můžete zadat automatické aktualizace aplikace. A [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace pravidelně čte soubor manifestu nasazení, zda jsou k dispozici aktualizace pro aplikaci. Pokud je k dispozici nová verze aplikace, je stažena a spuštěna. Z důvodu efektivity budou staženy pouze soubory, které byly změněny.  
@@ -35,7 +35,7 @@ ms.lasthandoff: 04/19/2018
 >  Aktualizace aplikace vyžadují připojení k síti. Pokud není k dispozici síťové připojení, bude aplikace spuštěna bez kontroly aktualizací, bez ohledu na vybranou strategii aktualizace.  
   
 > [!NOTE]
->  V rozhraní .NET Framework 2.0 a rozhraní .NET Framework 3.0, kdykoli aplikace vyhledá aktualizace, před nebo po spuštění nebo pomocí <xref:System.Deployment.Application> rozhraní API, musíte nastavit `deploymentProvider` v manifestu nasazení. `deploymentProvider` Element odpovídá ve Visual Studiu **aktualizovat umístění** na **aktualizace** dialogové okno s **publikovat** karta. Toto pravidlo je v rozhraní .NET Framework 3.5 volné. Další informace najdete v tématu [nasazení ClickOnce aplikace pro testování a produkční servery bez Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+>  V rozhraní .NET Framework 2.0 a rozhraní .NET Framework 3.0, kdykoli aplikace vyhledá aktualizace, před nebo po spuštění nebo pomocí <xref:System.Deployment.Application> rozhraní API, musíte nastavit `deploymentProvider` v manifestu nasazení. `deploymentProvider` Element odpovídá ve Visual Studiu **aktualizovat umístění** na **aktualizace** dialogové okno s **publikovat** karta. Toto pravidlo je v rozhraní .NET Framework 3.5 volné. Další informace najdete v tématu [nasazení ClickOnce aplikace pro testování a produkční servery bez Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Kontrola aktualizací po spuštění aplikace  
  Pomocí této strategie se aplikace pokusí po spuštění vyhledat a přečíst soubor manifestu nasazení na pozadí. Pokud je k dispozici aktualizace, bude při dalším spuštění aplikace uživatel vyzván ke stažení a instalaci aktualizace.  

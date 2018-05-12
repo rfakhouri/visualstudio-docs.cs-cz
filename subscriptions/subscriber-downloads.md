@@ -9,11 +9,11 @@ description: Zjistěte, jak vyhledat a stáhnout produkty společnosti Microsoft
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 708a33c35739acc6f0742d778a51e635a35d9567
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 28239e7588e99573d709db08255c38142c907098
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Pomocí odběratele stáhne v sadě Visual Studio předplatných
 Jako součást výhody pro předplatitele máte přístup k široké škále stažení softwaru.  
@@ -24,7 +24,7 @@ Všechny obchodní a příjemce Microsoft produkty, které jsou relevantní pro 
 
 Tady je několik důvodů, proč nemusí být k dispozici pro odběratele konkrétní produkty:
 
-- **Produkt není součástí úrovni předplatného nebo program.** [Další informace](https://www.visualstudio.com/vs/pricing/) o softwaru a výhody, které jsou k dispozici ve vašem předplatném nebo [stáhnout úplný seznam](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx_) produktů podle úrovně předplatného. Některé programy, například [Microsoft Partner Network](https://partner.microsoft.com/), poskytovat odběry Visual Studio jako součást jejich výhody.  Tato předplatná nezahrnují všechny produkty, které jsou součástí zakoupené předplatné sady Visual Studio. Odběratele, kteří mají tyto programy by měli směrovat dotazy týkající se dostupnosti produktu stahování do týmy podpory pro tyto aplikace.
+- **Produkt není součástí úrovni předplatného nebo program.** [Další informace](https://www.visualstudio.com/vs/pricing/) o softwaru a výhody, které jsou k dispozici ve vašem předplatném nebo [stáhnout úplný seznam](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) produktů podle úrovně předplatného. Některé programy, například [Microsoft Partner Network](https://partner.microsoft.com/), poskytovat odběry Visual Studio jako součást jejich výhody.  Tato předplatná nezahrnují všechny produkty, které jsou součástí zakoupené předplatné sady Visual Studio. Odběratele, kteří mají tyto programy by měli směrovat dotazy týkající se dostupnosti produktu stahování do týmy podpory pro tyto aplikace.
 - **Předplatné není součástí produktu.** Některé produkty společnosti Microsoft nejsou součástí odběry z důvodu speciální licenční podmínky, technická omezení nebo developer relevance. Pokud chcete navrhovat produkt přidat do odběru, pošlete e-mail na Visual Studio [zákazníka Service Center](https://www.visualstudio.com/subscriptions/support/).
 - **Tento produkt je veřejně dostupný.** Některé nástroje, sady SDK, DDKs a aktualizace service Pack jsou veřejně dostupné z [Microsoft Download Center](https://www.microsoft.com/download). Některé tyto produkty nemusejí být publikovány na soubory ke stažení.
 - **Produktu ještě uvolněna.**  Mnoho předběžné verze (beta) verze a verze kandidáty jsou k dispozici na soubory ke stažení. Ne všechny beta však může být součástí; například některé beta vyžadovat zvláštní registraci nebo podmínky. Další informace o otevřete technické beta verze programů, navštivte [Microsoft Connect](http://connect.microsoft.com/).

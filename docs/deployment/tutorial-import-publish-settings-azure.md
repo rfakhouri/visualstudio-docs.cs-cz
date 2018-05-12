@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0fcc9f6ec4143a757139a9e013f1a1f4dbe666e
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby Azure App Service pomocí importu nastavení publikování v sadě Visual Studio
 
 Můžete použít **publikovat** nástroj k importu nastavení publikování a pak nasadíte aplikaci. V tomto článku používáme nastavení publikování pro služby Azure App Service, ale můžete podobný postup při importu nastavení publikování z [IIS](../deployment/tutorial-import-publish-settings-iis.md). V některých scénářích použití publikování, který profil nastavení může být rychlejší než ruční konfigurace nasazení se službou pro každou instalaci sady Visual Studio.
 
-Tento postup platí pro aplikace ASP.NET, .NET Core a ASP.NET Core v sadě Visual Studio. Kroky odpovídají Visual Studio 2017 verze 15,6 operací.
+Tento postup platí pro aplikace ASP.NET, .NET Core a ASP.NET Core v sadě Visual Studio. Můžete také importovat nastavení publikování pro [Python](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio) aplikace. Kroky odpovídají Visual Studio 2017 verze 15,6 operací.
 
 V tomto kurzu provedete následující:
 
@@ -30,10 +30,10 @@ V tomto kurzu provedete následující:
 > * Importovat soubor nastavení publikování do sady Visual Studio
 > * Nasazení aplikace do Azure App Service
 
-Soubor nastavení publikování (*.publishsettings) je jiný než profil publikování (*.pubxml) vytvořit v sadě Visual Studio. Soubor nastavení publikování se vytvoří ve službě Azure App Service, a poté mohou být naimportovány do sady Visual Studio.
+Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publikování (*\*.pubxml*) vytvořit v sadě Visual Studio. Soubor nastavení publikování se vytvoří ve službě Azure App Service, a poté mohou být naimportovány do sady Visual Studio.
 
 > [!NOTE]
-> Pokud potřebujete jenom Kopírovat sady Visual Studio publikování profilu (\*.pubxml souboru) z jedné instalace sady Visual Studio na jiný, můžete najít profil publikování,  *\<profilename\>.pubxml*, v  *\\< název projektu\>\Properties\PublishProfiles* složku pro spravovaný projekt typy. Pro weby, podívejte se do části *\App_Data* složky. Publikování profily jsou soubory nástroje MSBuild XML.
+> Pokud potřebujete jenom Kopírovat sady Visual Studio publikování profilu (*\*.pubxml* souboru) z jedné instalace sady Visual Studio na jiný, můžete najít profil publikování,  *\<profilename\>.pubxml*v  *\\< název projektu\>\Properties\PublishProfiles* složku pro spravovaný projekt typy. Pro weby, podívejte se do části *\App_Data* složky. Publikování profily jsou soubory nástroje MSBuild XML.
 
 ## <a name="prerequisites"></a>Požadavky
 

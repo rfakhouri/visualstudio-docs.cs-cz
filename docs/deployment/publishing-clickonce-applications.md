@@ -22,11 +22,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a5f0c04a23844664b5bbfa67a6e83809c250b8a9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c7c6e79f251120b9396d523112c717957817ad5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publishing-clickonce-applications"></a>Publikování aplikací ClickOnce
 Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace poprvé, publikovat vlastnosti se dá nastavit pomocí Průvodce publikování. Jen několik vlastností, které jsou k dispozici v Průvodci; všechny ostatní vlastnosti jsou nastavené na výchozí hodnoty.  
@@ -95,7 +95,7 @@ Při publikování [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.
 |[Návod: Stahování sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Vysvětluje, jak stáhnout sestavení aplikace pouze při prvním použití aplikací.|  
 |[Návod: Stahování satelitních sestavení na vyžádání pomocí rozhraní API nasazení ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Popisuje, jak označit vaše satelitní sestavení jako volitelné a stáhnout pouze sestavení, klientský počítač potřebuje pro jeho aktuální nastavení jazykové verze.|  
 |[Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Vysvětluje, jak pokud chcete nasadit aplikaci ClickOnce pomocí nástroje pro rozhraní .NET Framework.|  
-|[Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)|Vysvětluje, jak používat nástroje rozhraní .NET Framework pro nasazení aplikace ClickOnce bez opětovné podepisování manifestů.|  
+|[Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|Vysvětluje, jak používat nástroje rozhraní .NET Framework pro nasazení aplikace ClickOnce bez opětovné podepisování manifestů.|  
 |[Postupy: Konfigurace projektů pro cílové platformy](../ide/how-to-configure-projects-to-target-platforms.md)|Vysvětluje, jak publikovat pro 64bitový procesor změnou **cílový procesor** nebo **Cílová platforma** vlastnost ve vašem projektu.|  
 |[Návod: Povolení aplikace ClickOnce ke spuštění na více verzí rozhraní .NET Framework](http://msdn.microsoft.com/en-us/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Vysvětluje, jak povolit aplikaci ClickOnce k instalaci a spuštění na více verzích rozhraní NET Framework.|  
 |[Návod: Vytvoření vlastního instalátoru pro aplikaci ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Vysvětluje, jak vytvořit vlastní instalační program pro instalaci aplikace ClickOnce.|  

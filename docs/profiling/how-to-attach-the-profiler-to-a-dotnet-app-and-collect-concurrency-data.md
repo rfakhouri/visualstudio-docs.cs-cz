@@ -11,10 +11,10 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: 710c0a8bbfacc0e1edca3a1852cd8b51218a5ce3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-to-collect-concurrency-data-by-using-the-command-line"></a>Postupy: Připojení profileru k samostatné aplikaci .NET Framework ke shromažďování dat souběžnosti pomocí příkazového řádku
 Toto téma popisuje postup použití [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilace nástroje příkazového řádku nástroje pro připojení profileru k aplikaci spuštěné samostatné (klient) rozhraní .NET Framework a shromažďování dat souběžnosti proces a přístup z více vláken.  

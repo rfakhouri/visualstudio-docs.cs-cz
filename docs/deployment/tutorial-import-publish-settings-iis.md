@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db8ca68453cff105f2bbefcd384b8afa9efea9d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby IIS pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -31,7 +31,7 @@ V tomto kurzu provedete následující:
 > * Importovat soubor nastavení publikování do sady Visual Studio
 > * Nasaďte aplikaci do služby IIS
 
-Soubor nastavení publikování (\*.publishsettings) je jiný než profil publikování (\*.pubxml) vytvořit v sadě Visual Studio. Soubor nastavení publikování se vytvoří pomocí služby IIS nebo Azure App Service, nebo ji můžete ručně vytvořit a potom ji můžete importovat do sady Visual Studio.
+Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publikování (*\*.pubxml*) vytvořit v sadě Visual Studio. Soubor nastavení publikování se vytvoří pomocí služby IIS nebo Azure App Service, nebo ji můžete ručně vytvořit a potom ji můžete importovat do sady Visual Studio.
 
 > [!NOTE]
 > Pokud potřebujete jenom Kopírovat sady Visual Studio publikování profilu (\*.pubxml souboru) z jedné instalace sady Visual Studio na jiný, můžete najít profil publikování,  *\<profilename\>.pubxml*, v  *\\< název projektu\>\Properties\PublishProfiles* složku pro spravovaný projekt typy. Pro weby, podívejte se do části *\App_Data* složky. Publikování profily jsou soubory nástroje MSBuild XML.
@@ -44,7 +44,7 @@ Soubor nastavení publikování (\*.publishsettings) je jiný než profil publik
 
     Kroky v tomto článku jsou založeny na Visual Studio 2017
 
-* Chcete-li vygenerovat soubor nastavení publikování ze služby IIS, musíte mít jiný počítač se systémem Windows Server 2012 s roli webového serveru IIS 8.0 správně nakonfigurovaný a buď technologie ASP.NET 4.5 nebo nainstalovat ASP.NET Core. ASP.NET Core, najdete v části [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Technologie ASP.NET 4.5, najdete v části [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Generovat soubor nastavení publikování ze služby IIS, musíte mít počítač se systémem Windows Server 2012 s rolí webového serveru IIS 8.0 správně nakonfigurovaný a nainstalována technologie ASP.NET 4.5 nebo ASP.NET Core. ASP.NET Core, najdete v části [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Technologie ASP.NET 4.5, najdete v části [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Vytvořte nový projekt ASP.NET v sadě Visual Studio
 

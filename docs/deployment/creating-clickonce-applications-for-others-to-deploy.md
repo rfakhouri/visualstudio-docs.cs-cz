@@ -26,11 +26,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f7cf3b6069c80337213283eddd12bdd54e4b7d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cd6808ac38a67146e53438e5b8f6dc0e07fd0bc5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Vytváření aplikací ClickOnce k implementaci dalšími osobami
 Ne všechny vývojáře, kteří jsou vytvoření nasazení ClickOnce v plánu nasadit aplikace samotné. Řada z nich právě balíček své aplikace s použitím technologie ClickOnce a pak předá soubory na zákazníka, jako je například velké korporace. Zákazník bude ten, který je zodpovědný za hostování aplikace ve své síti. Toto téma popisuje některé potíže spočívající v takovýchto nasazeních ve verzích rozhraní .NET Framework verze 3.5. Popisuje pak zadaný v rozhraní .NET Framework 3.5 pomocí nové funkce "použití manifest pro vztah důvěryhodnosti" nové řešení. Nakonec dojde s doporučenou strategie pro vytvoření nasazení ClickOnce pro zákazníky, kteří stále používají starší verze rozhraní .NET Framework.  
@@ -57,7 +57,7 @@ Ne všechny vývojáře, kteří jsou vytvoření nasazení ClickOnce v plánu n
   
  Používá certifikát podepsaný svým držitelem pro manifest nasazení nabízí několik výhod. Odstraněním potřeby zákazníka získat nebo vytvořit svůj vlastní certifikát Authenticode `<useManifestForTrust>` zjednodušuje nasazení pro zákazníka, zatímco vývojáři udržovat vlastní identitu výrobce na aplikaci. Výsledkem je sada podepsaných nasazení, které jsou bezpečnější a mají jedinečné identity aplikace. Tím se eliminuje potenciální konflikt, který může nastat z nasazení stejné aplikace více zákazníků.  
   
- Podrobné informace o tom, jak vytvořit nasazení ClickOnce s `<useManifestForTrust>` povoleno, najdete v části [návod: Ruční nasazení aplikace ClickOnce této nemá není vyžadují Re-Signing a že zachovává Branding informace](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Podrobné informace o tom, jak vytvořit nasazení ClickOnce s `<useManifestForTrust>` povoleno, najdete v části [návod: Ruční nasazení aplikace ClickOnce této nemá není vyžadují Re-Signing a že zachovává Branding informace](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Jak Manifest aplikace pro vztah důvěryhodnosti pracuje za běhu  
  Chcete-li získat lepší pochopení, jak funguje manifest aplikace pomocí vztahu důvěryhodnosti v době běhu, zvažte následující příklad. Aplikace ClickOnce, která je cílena na rozhraní .NET Framework 3.5 je vytvořena společností Microsoft. Manifest aplikace používá `<useManifestForTrust>` elementu a je podepsán společností Microsoft. Společnosti Adventure Works podepíše manifest nasazení pomocí certifikát podepsaný svým držitelem. Adventure Works, které jsou klienti nakonfigurováni tak, aby důvěřoval všechny aplikace podepsané společností Microsoft.  
@@ -99,6 +99,6 @@ Ne všechny vývojáře, kteří jsou vytvoření nasazení ClickOnce v plánu n
  Nevýhodou této metody je, že vyžaduje zákazník instalace nástrojů pro rozhraní .NET Framework SDK a vývojáře nebo správce systému, který je kvalifikován k jejich použití. Někteří zákazníci mohou požadovat řešení, které vyžaduje žádné nebo téměř žádné technické úsilí z jejich strany.  
   
 ## <a name="see-also"></a>Viz také  
- [Nasazování aplikací ClickOnce pro testovací a produkční servery bez opětovného podpisu](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+ [Nasazování aplikací ClickOnce pro testovací a produkční servery bez opětovného podpisu](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)   
  [Návod: Ruční nasazení aplikace ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
+ [Návod: Ruční nasazení aplikace ClickOnce, jež nevyžaduje opětovné podepsání a které zachovává údaje o poskytovateli](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)

@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5280dd0bffab2fb7c9797502e9d94e0589800c39
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 854cfe64b446660e1327ffb511ebb577735dbd4b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="features-of-the-code-editor"></a>Funkce editoru kódu
 
@@ -33,7 +33,7 @@ Různé jazyky Visual Studio nabízejí různé sady funkcí a v některých př
 |||
 |-|-|
 |Barevné zvýrazňování syntaxe|Některé prvky syntaxe kódu a kódu souborů, abychom je odlišili se zobrazí odlišně. Například klíčová slova (, jako `using` v jazyce C# a `Imports` v jazyce Visual Basic) jedné barvy, ale typy (například `Console` a `Uri`) jsou jiné barvy. Další prvky syntaxe jsou také obarvené, například textové literály a komentáře. C++ pomocí barvy rozlišit mezi typy, výčty a makra mezi dalších tokenů.<br /><br /> Zobrazí se výchozí barvu pro každý typ, a můžete změnit barvu pro libovolný element specifickou syntaxi v [písma a barvy, prostředí, dialogové okno Možnosti](../ide/reference/fonts-and-colors-environment-options-dialog-box.md), které lze otevřít z **nástroje** nabídky.|
-|Chyby a upozornění značky|Při přidávání kódu a sestavení řešení, může se zobrazit (a) různě barevných podtržení vlnovkou (označované jako podtržení vlnovkou) nebo (b) žárovek zobrazovaných v kódu. Podtržení vlnovkou Red označují chyby syntaxe, modrá označuje chyby kompilátoru, zelená označuje upozornění a Fialová označuje jiné typy chyb. [Žárovek](../ide/perform-quick-actions-with-light-bulbs.md) navrhnout opravy problémů a usnadňují použití opravy.<br /><br /> Zobrazí se výchozí barvu pro každý vlnovku chyb a upozornění v **nástroje** > **možnosti** > **prostředí**  >   **Písma a barev** dialogové okno. Vyhledejte **Chyba syntaxe**, **Chyba kompilátoru**, **upozornění**, a **jiné chybě**.|
+|Chyby a upozornění značky|Při přidávání kódu a sestavení řešení, může se zobrazit (a) různě barevných podtržení vlnovkou (označované jako podtržení vlnovkou) nebo (b) žárovek zobrazovaných v kódu. Podtržení vlnovkou Red označují chyby syntaxe, modrá označuje chyby kompilátoru, zelená označuje upozornění a Fialová označuje jiné typy chyb. [Rychlé akce](../ide/quick-actions.md) navrhnout opravy problémů a usnadňují použití opravy.<br /><br /> Zobrazí se výchozí barvu pro každý vlnovku chyb a upozornění v **nástroje** > **možnosti** > **prostředí**  >   **Písma a barev** dialogové okno. Vyhledejte **Chyba syntaxe**, **Chyba kompilátoru**, **upozornění**, a **jiné chybě**.|
 |Související závorky|Kurzor je umístěn na otevřenou složenou závorku v souboru kódu, se zvýrazní ji a pravé složené závorce, které obsahuje. Tato funkce vám dává okamžitou zpětnou vazbu na nesprávně umístěny nebo chybějící složené závorky. Můžete zapnout závorky zapnout nebo vypnout pomocí **automatické zvýraznění oddělovač** nastavení (**nástroje** > **možnosti**  >   **Textový Editor**). Barva zvýraznění v můžete změnit **písma a barev** nastavení (**nástroje** > **možnosti** > **prostředí**). Vyhledejte **složených závorek odpovídající (zvýraznit)** nebo **složených závorek odpovídající (obdélníku)**.|
 |Struktura Vizualizéru|Řádky tečkovaná připojit odpovídající složené závorky v kódu soubory usnadnit zobrazíte otvírání a zavírání dvojice závorek. To vám může pomoci najít kód ve vaší codebase rychleji. Tyto řádky můžete zapnout nebo vypnout pomocí **zobrazit pokyny struktura** v **zobrazení** části **nástroje** > **možnosti**  >  **Textového editoru** > **Obecné** stránky.|
 |Čísla řádků|Čísla řádků lze zobrazit na levém okraji okna kódu. Ve výchozím nastavení nejsou zobrazeny. Můžete zapnout tato možnost **textový Editor, všechny jazyky** nastavení (**nástroje** > **možnosti** > **textovéhoeditoru**  >  **Všechny jazyky**). Čísla řádků pro jednotlivé programovací jazyky můžete zobrazit tak, že změníte nastavení pro tyto jazyky (**nástroje** > **možnosti** > **textového editoru**   >   **\<jazyk >**). Čísla řádků tisknout, musíte vybrat **zahrnout čísla řádků** v **tisku** dialogové okno.|

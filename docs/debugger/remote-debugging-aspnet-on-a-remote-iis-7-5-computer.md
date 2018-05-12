@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: ade15b950e5fc6ab0dd277a26640a7ecb7825e62
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: fec5b041a6fb0f16c35d0f9f16a8171c5e95224b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>Vzdálené ladění technologie ASP.NET v počítači vzdálené služby IIS
 K ladění aplikace ASP.NET, která byla nasazena do služby IIS, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace a pak připojte k běžící aplikaci ze sady Visual Studio.
@@ -74,11 +74,17 @@ Pokud potřebujete podrobnější informace k instalaci technologie ASP.NET ve s
 
 2. Restartování systému (nebo spuštění **net stop byl /y** následuje **net start w3svc** z příkazového řádku a pokračovat tam ke změně systému cesta).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Volitelné) Nasazení webu instalace 3.6 pro hostitelské servery v systému Windows Server
+
+V některých případech může být rychlejší k importu nastavení publikování v sadě Visual Studio místo ruční konfigurací možnosti nasazení. Pokud chcete importovat publikovat nastavení namísto konfigurace profil publikování v sadě Visual Studio naleznete v tématu [importu nastavení publikování a nasazení do služby IIS](../deployment/tutorial-import-publish-settings-iis.md). Jinak zůstane v tomto tématu a pokračovat ve čtení. Pokud dokončíte článek na Import nastavení publikování a nasazení aplikace úspěšně, a vraťte k tomuto tématu a spustit v části na [stahování nástrojů pro vzdálenou](#BKMK_msvsmon).
+
 ## <a name="BKMK_install_webdeploy"></a> (Volitelné) Nasazení webu instalace 3.6 v systému Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ## <a name="BKMK_deploy_asp_net"></a> Konfigurace webu ASP.NET na počítač s Windows serverem
+
+Při importu nastavení publikování, můžete tuto část přeskočit.
 
 1. Otevřete Průzkumníka Windows a vytvořte novou složku, **C:\Publish**, kde později nasadíte projekt ASP.NET.
 

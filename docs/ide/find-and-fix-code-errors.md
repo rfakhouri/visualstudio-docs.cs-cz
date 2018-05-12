@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa3d2412bfeabcaa3a66be7470367fcaaf0bfbc
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 320615daa95ba9fad69fe48490f83c19ccf8e1ce
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="make-code-work-in-visual-studio"></a>Ujistěte se, kód pracovat v sadě Visual Studio
 
@@ -91,17 +91,15 @@ Všechny nové nebo aktualizované upozornění se zobrazí v **seznam chyb** ka
 
 ## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Pomocí žárovek opravíte nebo Refaktorovat kódu
 
-[Žárovek](../ide/quick-actions.md) jsou relativně nové funkce pro sadu Visual Studio, která umožňují Refaktorovat vloženého kódu. Jsou snadný způsob, jak opravit běžné upozornění rychle a efektivně v kódu jazyka C#, C++ a Visual Basic. Chcete-li přistupovat k nim, klikněte pravým tlačítkem na vlnovku upozornění a vyberte **rychlé akce**, nebo stiskněte klávesu **Ctrl**+**.** Pokud je ukazatelem na řádku s barevnou vlnovka. Zobrazí se seznam možných opravy nebo refaktoring, které můžete provést u tohoto řádku kódu.
+[Rychlé akce](../ide/quick-actions.md), k dispozici z žárovky nebo šroubovák ikonu, umožňují Refaktorovat vloženého kódu. Jsou snadný způsob, jak opravit běžné upozornění rychle a efektivně v kódu jazyka C#, C++ a Visual Basic. Chcete-li přistupovat k nim, klikněte pravým tlačítkem na vlnovku upozornění a vyberte **rychlé akce a refaktoring**. Nebo, pokud je kurzor na řádku s barevnou vlnovka, stiskněte klávesu **Ctrl**+**.** nebo vyberte žárovky nebo ikonu šroubovák u okraje. Zobrazí se seznam možných opravy nebo refaktoring, které můžete provést u tohoto řádku kódu.
 
 ![Visual Studio žárovky preview](../ide/media/quick-actions-options.png)
 
-Žárovek lze použít bez ohledu na analyzátorů kódu určit, že je možnost pro opravu, refactor, nebo vylepšení vašeho kódu. Klikněte na každý řádek kódu, pravým tlačítkem a otevřete kontextu nabídku a vyberte **rychlé akce** (nebo znovu, pokud dáváte přednost efektivitu, stiskněte **Ctrl**+**.**). Refaktoring nebo zlepšování možnosti jsou k dispozici, jsou zobrazeny. Jinak zprávy **žádné rychlé možnosti k dispozici zde** zobrazí v levém dolním rohu okna IDE.
+Rychlé akce lze použít bez ohledu na analyzátorů kódu určit, že je možnost pro opravu, refactor, nebo vylepšení vašeho kódu. Klikněte na každý řádek kódu, pravým tlačítkem a otevřete kontextu nabídku a vyberte **rychlé akce a refaktoring**. Refaktoring nebo zlepšování možnosti jsou k dispozici, jsou zobrazeny. V opačném zprávu **zde k dispozici žádné rychlé akce** se zobrazí v levém dolním rohu okna IDE.
 
-![Visual Studio žárovky light – žádná možnost text](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
+![Žádný text k dispozici rychlé akce](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-V prostředí, můžete rychle použít klávesy se šipkami a **Ctrl**+**.** pro kontrolu rychlé možnosti refaktoring příležitostí a vyčistit kódu!
-
-Další informace o žárovek číst [rychlé akce](../ide/quick-actions.md).
+V prostředí, můžete rychle použít klávesy se šipkami a **Ctrl**+**.** pro kontrolu snadno refaktoringu příležitostí a vyčistit kódu!
 
 ## <a name="debug-your-running-code"></a>Ladění spuštěním kódu
 

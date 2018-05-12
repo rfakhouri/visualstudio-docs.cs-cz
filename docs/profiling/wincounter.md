@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b70914b24369095b29ee929ad79436fce6971bc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4751d44afc2f54ea57866e3674a5bc150444088b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="wincounter"></a>WinCounter
 **WinCounter** možnost určuje Windows nebo čítač výkonu aplikace během spuštění profilu shromažďovat ve stanovených intervalech. Systém Windows a čítače výkonu aplikace jsou uvedeny jako značky v profilaci datového souboru. Můžete určit více čítačů výkonu ke shromažďování v samostatné možnosti.  
@@ -27,7 +27,7 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]  
 ```  
   
@@ -50,7 +50,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="example"></a>Příklad  
  V následujícím příkladu nejsou zadány dvě čítačů výkonu systému Windows mají být vybrány v intervalu 1 000 milisekund.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /WinCounter:"\Processor(0)\% Processor Time" /WinCounter:"\System\Context Switches/sec" /AutoMark:1000  
 ```  
   

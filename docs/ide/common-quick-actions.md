@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 70de979f1af431b85bc9fb2f07feec93486624ee
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="common-quick-actions"></a>Běžné rychlé akce
 
@@ -24,9 +24,13 @@ V oddílech v tomto tématu jsou uvedeny některé nejběžnější **rychlé ak
 
 ## <a name="actions-that-fix-errors"></a>Akce, které opravte chyby
 
+Rychlé akce v této části opravte chyby v kódu, které by způsobily selhání sestavení. Rychlé akce jsou dostupné a opravte chybu na řádku kódu, ikonu, se zobrazí u okraje nebo pod červenou vlnovkou je žárovky s červenou 'x' na něm.
+
+![Ikona chyby rychlé akce a nabídky](media/error-light-bulb-with-code.png)
+
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Opravte Chybný symbol nebo – klíčové slovo
 
-Pokud píšete omylem typ nebo – klíčové slovo v sadě Visual Studio, tato rychlé akce bude automaticky opraven ho za vás. Uvidíte tyto položky v nabídce žárovky jako **"změnit"*nesprávně zadaných word*'do'*opravit slovo*'**.  Příklad:
+Pokud píšete omylem typ nebo – klíčové slovo v sadě Visual Studio, tím rychlé ho automaticky opraví za vás. Uvidíte tyto položky v nabídce žárovky jako **"změnit"*nesprávně zadaných word*'do'*opravit slovo*'**.  Příklad:
 
 ```csharp
 // Before
@@ -94,44 +98,6 @@ private void MyMethod()
 |  ID chyby | Použitelné jazyky |  Podporovaná verze |
 | ------- | -------------------- | ----------------  |
 | CS8300, BC37284  | C# a Visual Basic | Visual Studio 2017 verze 15.3 |
-
-### <a name="make-method-synchronous"></a>Vytvořte metodu synchronní
-
-Při použití `async` nebo `Async` – klíčové slovo na metodu, je očekávat, že někde uvnitř této metody `await` nebo `Await` – klíčové slovo bude použito.  Ale pokud to není tento případ, rychlé akce se zobrazí, umožní vám provádět metodu synchronní odebráním `async` nebo `Async` – klíčové slovo a změna návratový typ. Použití **vytvořte metodu synchronní** možnost v nabídce Rychlé akce.
-
-```csharp
-// Before
-async Task<int> MyAsyncMethod()
-{
-    return 3;
-}
-
-// Make method synchronous
-
-// After
-int MyAsyncMethod()
-{
-    return 3;
-}
-```
-
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-|  ID chyby | Použitelné jazyky |  Podporovaná verze |
-| ------- | -------------------- | ----------------  |
-| CS1998, BC42356 | C# a Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="make-method-asynchronous"></a>Vytvořte asynchronní metodu
 
@@ -953,6 +919,44 @@ Console.WriteLine($"{x} {y}");
 | ID diagnostiky | Použitelné jazyky | Podporovaná verze |
 | ------- | -------------------- | ----------------  |
 | IDE0042 | C# 7.0 + | Visual Studio 2017 v. 15.5 |
+
+### <a name="make-method-synchronous"></a>Vytvořte metodu synchronní
+
+Při použití `async` nebo `Async` – klíčové slovo na metodu, je očekávat, že někde uvnitř této metody `await` nebo `Await` – klíčové slovo bude použito.  Ale pokud to není tento případ, rychlé akce se zobrazí, umožní vám provádět metodu synchronní odebráním `async` nebo `Async` – klíčové slovo a změna návratový typ. Použití **vytvořte metodu synchronní** možnost v nabídce Rychlé akce.
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+|  ID chyby | Použitelné jazyky |  Podporovaná verze |
+| ------- | -------------------- | ----------------  |
+| CS1998, BC42356 | C# a Visual Basic | Visual Studio 2015 Update 2 |
 
 ## <a name="see-also"></a>Viz také
 

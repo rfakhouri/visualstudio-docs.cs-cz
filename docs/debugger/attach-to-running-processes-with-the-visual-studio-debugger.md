@@ -29,11 +29,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe345773cfa4a91789681969623e2174db60c54c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 314a559e4370f254af9473ec38c77d11287c575a
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Připojení ke spuštěným procesům pomocí ladicího programu sady Visual Studio
 Ladicí program Visual Studio můžete připojit k spuštěných procesů na místním nebo vzdáleném počítači. Jakmile je proces spuštěný, klikněte na tlačítko **ladění > připojit k procesu** (nebo stiskněte klávesu **CTRL + ALT + P**) otevřete **připojit k procesu** dialogové okno.
@@ -122,7 +122,7 @@ Ladicí program se znovu připojit při prvním pokusu shodovat s předchozí ID
 
 Můžete se dá připojit k více programy při ladění, ale pouze jeden program je aktivní v ladicím programu kdykoli. Můžete nastavit v aktivní aplikaci **ladění umístění** panelu nástrojů nebo **procesy** okno.  
   
-Pokud se pokusíte připojit k procesu vlastníkem nedůvěryhodné uživatelský účet, zobrazí se pole potvrzovací dialogové okno upozornění zabezpečení. Další informace najdete v části [upozornění zabezpečení: připojení k procesu vlastněných nedůvěryhodné uživatelem může být nebezpečný. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
+Pokud se pokusíte připojit k procesu vlastníkem nedůvěryhodné uživatelský účet, zobrazí se pole potvrzovací dialogové okno upozornění zabezpečení. Další informace najdete v části [upozornění zabezpečení: připojení k procesu vlastněných nedůvěryhodné uživatelem může být nebezpečný. Pokud tyto informace nezdá nebo si nejste jistí, nepřipojujte tohoto procesu](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).  
   
 V některých případech při ladění v relaci vzdálené plochy (Terminálové služby) **dostupné procesy** seznamu nezobrazí všechny dostupné procesy. Pokud používáte Visual Studio jako uživatel, který má omezená uživatelský účet, **dostupné procesy** seznamu nezobrazí procesy, které jsou spuštěné v relaci 0, který se používá pro služby a jiné procesy serveru, včetně w3wp.exe. Problém můžete vyřešit tak, že spustíte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pod účtem správce nebo spuštěním [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] v konzole serveru místo relaci Terminálové služby. Pokud ani jedno z těchto řešení je možné, třetí možnost je k připojení do procesu spuštěním `vsjitdebugger.exe -p` *ProcessId* z příkazového řádku systému Windows. Můžete určit pomocí tlist.exe id procesu. Pokud chcete získat tlist.exe, stáhněte a nainstalujte ladicích nástrojů pro systém Windows, k dispozici na [WDK a WinDbg stahování](http://go.microsoft.com/fwlink/?LinkId=168279).
 

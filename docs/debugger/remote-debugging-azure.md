@@ -12,11 +12,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 3a6e25d98c2560c9cfd6901d30a7a5252398f6fc
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c95a91ecd057bfec7af5e9b932d4326cdcab9270
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio-2017"></a>Vzdálené ladění jádra ASP.NET ve službě IIS v Azure v Visual Studio 2017
 
@@ -110,11 +110,17 @@ Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke
 
 3. Restartování systému (nebo spuštění **net stop byl /y** následuje **net start w3svc** z příkazového řádku a pokračovat tam ke změně systému cesta).
 
+## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Volitelné) Nasazení webu instalace 3.6 pro hostitelské servery v systému Windows Server
+
+V některých případech může být rychlejší k importu nastavení publikování v sadě Visual Studio místo ruční konfigurací možnosti nasazení. Pokud chcete importovat publikovat nastavení namísto konfigurace profil publikování v sadě Visual Studio naleznete v tématu [importu nastavení publikování a nasazení do služby IIS](../deployment/tutorial-import-publish-settings-iis.md). Jinak zůstane v tomto tématu a pokračovat ve čtení. Pokud dokončíte článek na Import nastavení publikování a nasazení aplikace úspěšně, a vraťte k tomuto tématu a spustit v části na [stahování nástrojů pro vzdálenou](#BKMK_msvsmon).
+
 ### <a name="BKMK_install_webdeploy"></a> (Volitelné) Nasazení webu instalace 3.6 v systému Windows Server
 
 [!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
 
 ### <a name="BKMK_deploy_asp_net"></a> Konfigurace webu ASP.NET na počítač s Windows serverem
+
+Při importu nastavení publikování, můžete tuto část přeskočit.
 
 1. Otevřete **Správce Internetové informační služby (IIS)** a přejděte na **lokality**.
 

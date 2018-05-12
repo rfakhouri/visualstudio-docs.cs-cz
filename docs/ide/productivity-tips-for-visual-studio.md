@@ -9,11 +9,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 34206b9c41802063cb1d29fd3bc5f8984a5581ca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4376b791e6d65a53069e1d483497009c94ed5
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Tipy pro vyšší produktivitu pro sadu Visual Studio
 
@@ -37,7 +37,7 @@ Napište kód rychleji pomocí následující funkce.
 
      Chcete-li vložit fragment kódu v řádku nabídek zvolte **upravit** > **IntelliSense** > **Vložit fragment** nebo **příkazu Obklopit s**, nebo otevřete místní nabídky v souboru a zvolte **fragment kódu** > **Vložit fragment** nebo **příkazu Obklopit s**. Další informace najdete v tématu [fragmenty kódu](../ide/code-snippets.md).
 
-- **Opravte chyby vloženého kódu**. Rychlé akce vám umožní snadno refactor, generovat nebo jinak změnit kód, který představuje jednu akci. Můžete použít tyto akce pomocí ikonou žárovky ![malé ikonou žárovky](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall"), nebo stisknutím kombinace kláves **Alt** +  **Zadejte** nebo **Ctrl**+**.** Pokud je ukazatelem na příslušný řádek kódu. V tématu [rychlé akce](quick-actions.md) Další informace.
+- **Opravte chyby vloženého kódu**. Rychlé akce vám umožní snadno refactor, generovat nebo jinak změnit kód, který představuje jednu akci. Můžete použít tyto akce pomocí šroubovák ![šroubovák ikonu](media/screwdriver-icon.png) nebo žárovky ![ikonou žárovky](media/light-bulb-icon.png) ikony, nebo stisknutím kombinace kláves **Alt** +  **Zadejte** nebo **Ctrl**+**.** Pokud je ukazatelem na příslušný řádek kódu. V tématu [rychlé akce](quick-actions.md) Další informace.
 
 - **Zobrazit a upravit definici element kódu**. Můžete rychle zobrazit a upravit modul, ve kterém je definovaný element kódu, jako je členem, proměnné nebo místní.
 

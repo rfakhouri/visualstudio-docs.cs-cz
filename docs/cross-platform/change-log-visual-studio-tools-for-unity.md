@@ -5,16 +5,16 @@ ms.date: 03/23/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
-author: dantogno
-ms.author: v-davian
+author: TerryGLee
+ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 4d7f965cd2a0cd34ea3cb889f25809d32bee2270
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
 Visual Studio Tools for Unity změnit protokolu.
@@ -84,7 +84,7 @@ Visual Studio Tools for Unity změnit protokolu.
 -   **Integrace:**
 
     -   Znovu načte pouze projektů externí změn (pomocí omezení).
- 
+
 ## <a name="3601"></a>3.6.0.1
  Vydaná 2018-01-24
 
@@ -93,9 +93,9 @@ Visual Studio Tools for Unity změnit protokolu.
 -   **Integrace:**
 
     -   Opravené automatické pdb do mdb ladění symbol převodu.
-    
+
     -   Opravené nepřímé volání EditorPrefs.GetBool při pokusu změnit velikost pole, které mají vliv inspector.
- 
+
 ## <a name="3600"></a>3.6.0.0
  Vydaná 2018-01-10
 
@@ -112,7 +112,7 @@ Visual Studio Tools for Unity změnit protokolu.
 -   **Ladicí program:**
 
     -   Byla přidána podpora pro atributy DebuggerHidden/DebuggerStepThrough se nový modul runtime Unity.
-    
+
 -   **Průvodci:**
 
     -   Zavést 'Nejnovější' verze pro průvodce.
@@ -126,7 +126,7 @@ Visual Studio Tools for Unity změnit protokolu.
 -   **Ladicí program:**
 
     -   Pevné soupeření při zpracování události ukončování řádků.
-    
+
 -   **Průvodci:**
 
     -   Před vložením metoda aktualizujte roslyn kontext.

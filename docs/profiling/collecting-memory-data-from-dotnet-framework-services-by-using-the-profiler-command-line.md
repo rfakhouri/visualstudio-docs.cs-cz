@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5857f0e64014ff6570bfddd087d7c3aafe33b713
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b03973767088951d62620cfb5846dda6fa7a5f82
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Shromažďování dat paměti ze služeb rozhraní .NET Framework pomocí příkazového řádku profileru
 Tato část popisuje postupy a možnosti pro shromažďování paměti přidělení a objekt dat doba platnosti pro [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] služby pomocí metody vzorkování z příkazového řádku.  
@@ -34,15 +34,15 @@ Tato část popisuje postupy a možnosti pro shromažďování paměti přiděle
 |Úloha|Související obsah|  
 |----------|---------------------|  
 |**Profilu pomocí metody vzorkování**|-   [Shromažďování statistik aplikace pomocí vzorkování](../profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method.md)|  
-|**Profilu pomocí metody instrumentace**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line.md)|  
+|**Profilu pomocí metody instrumentace**|-   [Shromažďování podrobných dat časování pomocí instrumentace](../profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md)|  
 |**Profil aktivita prostředku kolizí a přístup z více vláken**|-   [Shromažďování dat souběžnosti](../profiling/collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md)|  
   
 ### <a name="profiling-net-framework-memory-data"></a>Profilace dat paměti .NET Framework  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profil aplikace samostatné (klient)**|-   [Shromažďování dat paměti .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line.md)|  
-|**Profil webových aplikací ASP.NET**|-   [Shromažďování dat paměti](../profiling/collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line.md)|  
+|**Profil aplikace samostatné (klient)**|-   [Shromažďování dat paměti .NET Framework](../profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications.md)|  
+|**Profil webových aplikací ASP.NET**|-   [Shromažďování dat paměti](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|  
   
 ### <a name="analyzing-net-memory-data-views-and-reports"></a>Analýza dat paměti .NET zobrazeních a sestavách  
  [Zobrazení dat paměti .NET](../profiling/dotnet-memory-data-views.md)  

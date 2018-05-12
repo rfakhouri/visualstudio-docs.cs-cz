@@ -1,5 +1,5 @@
 ---
-title: Rychlé akce
+title: Rychlé akce, žárovek a šroubováky
 ms.date: 03/28/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,11 +12,11 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 43198f5722de1bd983991df8ff19b17fcaea9e83
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="quick-actions"></a>Rychlé akce
 
@@ -29,21 +29,27 @@ Rychlé akce umožňuje:
 - použít refaktoring (například [vložené dočasnou proměnnou](../ide/reference/inline-temporary-variable.md))
 - generování kódu (například [zavést místní proměnné](../ide/reference/introduce-local-variable.md))
 
-Můžete použít rychlé akce pomocí ikonou žárovky ![malé ikonou žárovky](media/vs2015_lightbulbsmall.png), nebo stisknutím kombinace kláves **Ctrl**+**.** Pokud je ukazatelem na řádek kódu, pro který je k dispozici. Uvidíte, že žárovky je červenou vlnovkou a Visual Studio má návrhy pro informace o vyřešení problému. Například pokud máte chybu označená červenou vlnovkou, žárovky se zobrazí, když jsou k dispozici pro tuto chybu opravy.
+Můžete použít rychlé akce pomocí žárovky ![ikonou žárovky](media/light-bulb-icon.png) nebo šroubovák ![šroubovák ikonu](media/screwdriver-icon.png) ikony, nebo stisknutím kombinace kláves **Ctrl** + **.** Pokud je ukazatelem na řádek kódu, pro který je k dispozici. Uvidíte žárovky k chybě ![ikonou žárovky chyba](media/error-light-bulb-icon.png) Pokud je červenou vlnovkou indikující chybu a má pro tuto chybu k dispozici oprava Visual Studio.
 
 Pro žádný jazyk třetím stranám můžete zadat vlastní diagnostiky a návrhy, například jako součást sady SDK a Visual Studio žárovek light na základě těchto pravidel.
 
-## <a name="to-see-a-light-bulb"></a>Chcete-li zobrazit žárovky
+## <a name="icons"></a>Ikony
 
-1. V mnoha případech žárovek samovolně zobrazit při přesunutí ukazatele myši v místě chybu nebo na levém okraji editoru při přesunout znak v souladu, který obsahuje chybu. Až uvidíte červenou vlnovkou, můžete zobrazit žárovky myší. Může také způsobit žárovky zobrazíte při použití myši a klávesnice pro přejděte na libovolné místo v řádku vyskytl problém.
+Ikona, která se zobrazí, když je k dispozici rychlé akce indikuje typ oprava nebo refaktoring, který je k dispozici. *Šroubovák* ![šroubovák ikonu](media/screwdriver-icon.png) ikona označuje pouze akce, které jsou k dispozici pro změnit kód, že byste neměli používat nutně je. *Žárovky žlutý* ![ikonou žárovky](media/light-bulb-icon.png) ikona označující, nejsou k dispozici akce, které *by měl* proveďte k vylepšení vašeho kódu. *Chyba žárovky* ![ikonou žárovky chyba](media/error-light-bulb-icon.png) ikona označuje, že je k dispozici akci, která řeší chybu v kódu.
 
-1. Stiskněte klávesu **Ctrl**+**.** kdekoli na řádek pro vyvolání žárovky a přejít přímo na seznam potenciálních opravy.
+## <a name="to-see-a-light-bulb-or-screwdriver"></a>Chcete-li zobrazit žárovky nebo šroubovák
+
+- Pokud oprava je k dispozici, žárovek samovolně se při přesunutí ukazatele myši v umístění k chybě.
 
    ![Žárovky s ukazatele myši](../ide/media/vs2015_lightbulb_hover.png)
 
+- Žárovek a šroubováky při přesunout znak do řádek kódu, pro který je k dispozici rychlé akce zobrazují na levém okraji editoru.
+
+- Stiskněte klávesu **Ctrl**+**.** kdekoli na řádku zobrazíte seznam dostupných rychlé akce a refaktoring.
+
 ## <a name="to-see-potential-fixes"></a>Chcete-li zobrazit potenciální opravy
 
-Buď klikněte na šipku dolů nebo **zobrazit potenciální opravy** odkaz zobrazíte seznam rychlé akce, které pro vás může trvat žárovky.
+Vyberte buď na šipku dolů vedle žárovky nebo **zobrazit potenciální opravy** odkaz zobrazíte seznam rychlé akce, které jsou k dispozici.
 
 ![Žárovky rozšířit](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

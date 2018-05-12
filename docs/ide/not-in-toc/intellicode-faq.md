@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: bc58c1581ec074c7fe4c23db6d75485b6158e180
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d351d94a6f7891481e5f04ce9be1d5502603104d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/11/2018
 ---
 # Visual Studio IntelliCode – nejčastější dotazy
 
@@ -59,9 +59,13 @@ Máme žádná oznámení o cenách v současné době.
 
 IntelliSense s asistencí AI IntelliCode je právě v jeho první experimentální preview. Budeme pokračovat v aktualizaci experimentální rozšíření a přidáme další možnosti v budoucnu. Máme žádný plán pro finální verzi, ale Vítáme zpětnou vazbu od vývojářů, takže jsme může poskytovat nejlepší možný prostředí. Můžete se přihlásit ke novinky a aktualizace v [ https://aka.ms/intellicode ](https://aka.ms/intellicode).
 
-## OTÁZKY. Je toto prostředí k dispozici pouze v sadě Visual Studio?
+## OTÁZKY. Je toto prostředí k dispozici pouze v sadě Visual Studio a pro jazyk C#?
 
 Prostředí se zobrazuje se v sestavení 2018 ve Visual Studio 2017 na codebase C#. Ale těšíme na rozšiřování IntelliCode do více jazyků a nástrojů v sadě Visual Studio rodiny v budoucnu.
+
+## OTÁZKY. Je toto prostředí k dispozici pouze v angličtině?
+
+IntelliCode je rozšíření preview ještě dnes, a snažíme se přes pochopit, jak užitečné tyto funkce jsou pro širokou škálu zákazníků. Když jsme IntelliCode vyřadit z verze preview, jistě popíšeme které národního prostředí nebo jazyk o podporu první a jejich balení, podle vaší zpětné vazby. 
 
 ## <a name="privacy"/> Otázka: co o ochranu osobních údajů? Jsou odesílání vlastního kódu do cloudu? Jaká data zákazníků je odesílány společnosti Microsoft?
 

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4aa07333385951ba2ffd2f1bcf86aa5e8442982
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 352feacc59a129d24575408776e9ec075b1294ac
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="events-vsperfcmd"></a>Události (VSPerfCmd)
 VSPerfCmd.exe **události** možnost řídí protokolování trasování událostí pro Windows (ETW). Data trasování událostí pro Windows je uložena na soubor .etl, která je oddělená od datový soubor profileru. Data lze zobrazit v sestavě pomocí [vsperfreport –](../profiling/vsperfreport.md) /summary:etw příkaz.  
@@ -23,7 +23,7 @@ VSPerfCmd.exe **události** možnost řídí protokolování trasování událos
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]  
 ```  
   
@@ -79,7 +79,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 > [!NOTE]
 >  Pokud jsou povolené CLR ETW – události, další spuštění data jsou shromažďována také v trasování zobrazit sestavu. Z uvedených v sestavě vyloučit události spuštění, použijte následující příkaz:  
   
-```  
+```cmd  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   

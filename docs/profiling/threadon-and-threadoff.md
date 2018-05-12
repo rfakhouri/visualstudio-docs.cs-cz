@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11038ebe930789967b2d0092805787a8d4f24f6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a55bcfd09a99d9808bc378e680c33594007661e1
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn a ThreadOff
 VSPerfCmd.exe **ThreadOff** a **ThreadOn** dílčích příkazů jsou dostupné jenom v příkazového řádku profilování relace, které používají metody instrumentace. **ThreadOff** a **ThreadOn** pozastavení a obnovení profilace pro zadaný vlákno. **ThreadOff** zastaví profilace vlákno a **ThreadOn** spustí profilace vlákno.  
@@ -33,7 +33,7 @@ VSPerfCmd.exe **ThreadOff** a **ThreadOn** dílčích příkazů jsou dostupné 
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]  
   
 ```  
@@ -57,7 +57,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 ## <a name="example"></a>Příklad  
  V tomto příkladu **ThreadOff** podpříkaz se používá k ukončení shromažďování data profilování tak, aby se shromažďují jenom data po spuštění aplikace.  
   
-```  
+```cmd  
 ; Initialize the profiler.  
 VSPerfCmd.exe /Start:Trace /Output:Instrument.vsp   
 ; Start the instrumented application.  

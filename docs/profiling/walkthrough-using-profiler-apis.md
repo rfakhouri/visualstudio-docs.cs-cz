@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bebc312858e16688598ba289e4c53d93010122b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
 Průvodce používá aplikace v jazyce C# k ukazují, jak používat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilace rozhraní API nástroje. Chcete-li omezit množství dat, které jsou shromážděny během profilace instrumentace použijete rozhraní API profileru.  
@@ -43,7 +43,7 @@ Průvodce používá aplikace v jazyce C# k ukazují, jak používat [!INCLUDE[v
   
  Ve výchozím nastavení když se spustí profileru profileru shromažďuje data na globální úrovni. Následující kód na začátku programu změní globální profilace vypnout.  
   
-```  
+```csharp  
 DataCollection.StopProfile(  
 ProfileLevel.Global,  
 DataCollection.CurrentId);  
@@ -62,7 +62,7 @@ DataCollection.CurrentId);
   
 2.  Zkopírujte a vložte následující kód do projektu:  
   
-    ```  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Text;  
@@ -131,7 +131,7 @@ DataCollection.CurrentId);
   
  Ve výchozím nastavení když se spustí profileru, bude profileru shromažďovat data na globální úrovni. Následující kód na začátku programu změní globální profilace vypnout.  
   
-```  
+```csharp  
 DataCollection.StopProfile(  
 ProfileLevel.Global,  
 DataCollection.CurrentId);  

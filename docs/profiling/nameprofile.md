@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b717882e943a37857bbdadf3d318f94b4900dc
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f7f3b6ddfd52863585e26a1972f00e55515996d
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` Funkce přiřadí řetězec zadaný proces nebo přístup z více vláken.  
@@ -26,7 +26,7 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(  
                                    LPCTSTR pszName,   
                                    PROFILE_CONTROL_LEVEL Level,  
@@ -44,7 +44,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 -   Řetězec data pszName obsahuje mezery  
   
--   Řetězec data pszName obsahuje některý z následujících znaků:,. ' ~! @# $% ^ & * () = [] {}&#124;\\? / <>  
+-   Řetězec data pszName obsahuje některý z následujících znaků:,. ' ~! @# $% ^ & * () = []{}&#124;\\? / <>  
   
  `Level`  
   
@@ -98,7 +98,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 ## <a name="example"></a>Příklad  
  Následující kód ukazuje volání funkce NameProfile. Příklad předpokládá použití Win32 řetězce makra a nastavení kompilátoru pro ANSI k určení, zda kód zavolá metodu ANSI povolený funkce.  
   
-```  
+```cpp  
 void ExerciseNameProfile()  
 {  
     // Variables used to print output.  

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e054cc07748e7503cb7410206c5ebff1408725b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6c202dbaec3ad1bf894d3892f4f89be75c3a7ad7
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 VSPerfCmd.exe **Sys** možnost nastaví profilování událost, která je vzorků na volání události systému (funkce volání z aplikace PROFILOVANÉHO v operačním systému) a volitelně změny číslo systému volání v vzorky Interval z výchozí hodnotu 10.  
@@ -27,7 +27,7 @@ VSPerfCmd.exe **Sys** možnost nastaví profilování událost, která je vzork�
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]  
 ```  
   
@@ -62,7 +62,7 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje, jak nastavit událostí vzorkování profileru na systémová volání a jak nastavit interval vzorkování na 20 volání za ukázka.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /Sys:20  
 ```  

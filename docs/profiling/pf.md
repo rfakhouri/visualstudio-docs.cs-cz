@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a872745208b1f97065cc073920273dd90f4fa60
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 523140a4ffdc8e1eae07e3ae7dcffee5709067a2
+ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="pf"></a>PF
 VSPerfCmd.exe **PF** možnost nastavuje profilování událost, která je vzorků chyb stránek a volitelně změny počtu chyb stránek v intervalu vzorkování z výchozí hodnotu 10.  
   
 > [!NOTE]
->  PF nelze použít v 64bitových systémech.  
+>  **PF** nelze použít na 64bitových systémech.  
   
- **Všimněte si, PF** nepodporuje v 64bitových počítačích. **PF** lze použít pouze v příkazovém řádku, který také obsahuje **spusťte** nebo **Attach** možnost.  
+**PF** lze použít pouze v příkazovém řádku, který také obsahuje **spusťte** nebo **Attach** možnost.  
   
  Ve výchozím nastavení událostí vzorkování nastavena na výkon procesoru Zastavit hodiny a interval vzorkování je nastaven na hodnotu 10 000 000. **Časovače**, **PF**, **Sys**, a **čítač** možnosti umožňují nastavit události a vzorkování intervalu vzorkování. **GC** možnost shromažďuje data paměti .NET v každé kolekci události přidělení a uvolňování paměti. Na příkazovém řádku lze zadat pouze jeden z těchto možností.  
   
@@ -30,7 +30,7 @@ VSPerfCmd.exe **PF** možnost nastavuje profilování událost, která je vzork�
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cmd  
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]  
 ```  
   
@@ -65,7 +65,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="example"></a>Příklad  
  Tento příklad ukazuje, jak nastavit profilování událost vzorku pro chyby stránky a nastavit interval vzorkování na 20 chyb stránek.  
   
-```  
+```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  
