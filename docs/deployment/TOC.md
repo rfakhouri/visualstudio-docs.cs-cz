@@ -14,6 +14,8 @@
 ### [Vytváření aplikací ClickOnce z příkazového řádku](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
 ### [Publikování aplikace ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Import nastavení publikování a nasazení do Azure](tutorial-import-publish-settings-azure.md)
+### [Import nastavení publikování a nasazení do služby IIS](tutorial-import-publish-settings-iis.md)
 ### [Průběžné nasazování ASP.NET Core do Azure s Gitem](/aspnet/core/publishing/azure-continuous-deployment)
 ### [Nasazení technologie ASP.NET do služby IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
 ## Nativní

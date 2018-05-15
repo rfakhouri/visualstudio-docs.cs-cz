@@ -381,7 +381,7 @@
 ##### [Systém Microsoft Office není v tomto počítači nainstalovaná.](microsoft-office-is-not-installed-on-this-computer.md)
 ##### [Sešit použitý k vytvoření tohoto projektu obsahuje ovládací prvky ActiveX, které návrhář nemůže načíst.](the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load.md)
 ##### [Jedna nebo více vlastností v souboru .ofs nejsou pro vybranou třídu zpráv platné.](one-or-more-properties-in-the-dot-ofs-file-are-not-valid-for-the-message-class-selected.md)
-##### [Před vytvořením nebo otevřením sady Visual Studio Tools pro projekt systému Microsoft Office je třeba explicitně povolit přístup k systému projektů Microsoft Office Visual Basic for Applications.](you-must-explicitly-enable-access-to-the-microsoft-office-visual-basic-for-applications-project-system-before-you-can-create-or-open-a-----for-the-microsoft-office-system-project.md)
+##### [Povolení přístupu k jazyku VBA za účelem vytvoření nebo otevření projektu sady Visual Studio Tools for the Microsoft Office System](enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-office-system-project.md)
 ### [Spravovaný odkaz (vývoj pro Office v sadě Visual Studio)](managed-reference-office-development-in-visual-studio.md)
 ### [Nespravovaná referenční dokumentace rozhraní API (vývoj pro Office v sadě Visual Studio)](unmanaged-api-reference-office-development-in-visual-studio.md)
 #### [EnsureVSTOComponent – funkce](ensurevstocomponent-function.md)
