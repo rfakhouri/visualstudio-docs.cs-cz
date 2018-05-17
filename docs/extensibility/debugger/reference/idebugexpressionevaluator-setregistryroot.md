@@ -46,7 +46,7 @@ int SetRegistryRoot(
  V případě úspěchu vrátí `S_OK`, jinak vrátí kód chyby.  
   
 ## <a name="remarks"></a>Poznámky  
- Kořenové registru se obvykle nastavuje při vyhodnocení výrazu při prvním vytvoření instance a bodů pro klíč registru pro určitou verzi sady Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y* , kde *X.Y* je číslo verze).  
+ Kořenové registru se obvykle nastavuje při vyhodnocení výrazu při prvním vytvoření instance a bodů pro klíč registru pro určitou verzi sady Visual Studio (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, kde *X.Y* je číslo verze).  
   
 ## <a name="see-also"></a>Viz také  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

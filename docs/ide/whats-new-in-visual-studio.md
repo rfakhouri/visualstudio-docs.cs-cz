@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb4e2324a58b319eee4d2e9b180350a2c8c66778
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Co&#39;s nového ve Visual Studio 2017
 
@@ -181,7 +181,7 @@ Další informace o nových funkcích produktivitu najdete v tématu [produktivi
 
 Se zobrazí několik vylepšení v sadě Visual Studio, jako je například distribuci základní pokyny C++ pomocí sady Visual Studio, aktualizace kompilátor přidáním rozšířenou podporu pro C ++ 11 a C++ funkce přidání a aktualizace funkcí knihovny jazyka C++. Vylepšili jsme také výkon C++ IDE, úlohy instalace a další.
 
-Taky jsme vyřešili více než 250 chyb a hlášené problémy v kompilátoru a nástroje, mnoho odeslané zákazníky pomocí [Microsoft Connect](https://connect.microsoft.com/VisualStudio "Microsoft Connect").
+Taky jsme vyřešili více než 250 chyb a hlášené problémy v kompilátoru a nástroje, mnoho odeslané zákazníky pomocí [komunity vývojářů pro jazyk C++](https://developercommunity.visualstudio.com/spaces/62/index.html "komunity vývojářů pro jazyk C++").
 
 Úplné podrobnosti najdete v tématu [co je nového pro Visual C++ v Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio) stránky.
 

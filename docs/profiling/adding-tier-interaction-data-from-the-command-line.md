@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35c99b9e75be50d00e560e9c8899420685f7f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>Přidání dat interakce vrstev z příkazového řádku
 
@@ -54,20 +54,20 @@ V následujícím příkladu je pomocí metody instrumentace profilovaným deskt
 
 2. Inicializujte profilace rozhraní .NET a proměnných prostředí TIP. Zadejte následující příkazy:
 
-    ```
+    ```cmd
     vsperfclrenv /traceon
     vsperfclrenv /interactionon
     ```
 
 3. Spusťte profileru. Zadejte následující příkaz:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp 
     ```
 
 4. Spusťte aplikaci s VSPerfCmd. Zadejte následující příkaz:
 
-    ```
+    ```cmd
     vsperfcmd /launch:DesktopApp.exe
     ```
 
@@ -75,7 +75,7 @@ V následujícím příkladu je pomocí metody instrumentace profilovaným deskt
 
 6. Zrušte zaškrtnutí proměnné prostředí TIP. Zadejte následující příkaz:
 
-    ```
+    ```cmd
     vsperfclrenv /off
     ```
 
@@ -97,13 +97,13 @@ V následujícím příkladu služby systému Windows je profilovaným pomocí m
 
 3. Inicializujte .NET profilace proměnné prostředí. Zadejte následující příkaz:
 
-    ```
+    ```cmd
     vsperfclrenv /globaltraceon
     ```
 
 4. Inicializace proměnných prostředí TIP. Zadejte následující příkaz
 
-    ```
+    ```cmd
     vsperfclrenv /globalinteractionon
     ```
 
@@ -113,7 +113,7 @@ V následujícím příkladu služby systému Windows je profilovaným pomocí m
 
 7. Spusťte profileru. Zadejte následující příkaz:
 
-    ```
+    ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -121,7 +121,7 @@ V následujícím příkladu služby systému Windows je profilovaným pomocí m
 
 9. Připojení profileru ke službě. Zadejte následující příkaz:
 
-    ```
+    ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession 
     ```
 
@@ -133,7 +133,7 @@ V následujícím příkladu služby systému Windows je profilovaným pomocí m
 
 12. Vymažte .NET a TIP profilace proměnné prostředí. Zadejte následující příkaz:
 
-    ```
+    ```cmd
     vsperfclrenv /globaloff
     ```
 
@@ -151,7 +151,7 @@ Nástroj příkazového řádku VSPerfASPNETCmd vám umožňuje snadno profil [!
 
 Pokud chcete přidat na data shromážděná pomocí VSPerfASPNETCmd profilace sledováním interakce vrstev, přidejte **/TIP** možnost příkazového řádku. Například použijte následující příkazový řádek ke shromažďování dat interakce vrstev pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webovou aplikaci pomocí metody instrumentace:
 
-```
+```cmd
 vsperfaspnetcmd /tip /trace http://localhost/MyWebApp
 ```
 

@@ -7,11 +7,11 @@ ms.topic: conceptual
 manager: douge
 author: markw-t
 ms.author: mwthomas
-ms.openlocfilehash: d351d94a6f7891481e5f04ce9be1d5502603104d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: df5ce60e9d7a05d8cc7c9ebbe173dd30a0a0edf4
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/14/2018
 ---
 # Visual Studio IntelliCode – nejčastější dotazy
 
@@ -62,6 +62,10 @@ IntelliSense s asistencí AI IntelliCode je právě v jeho první experimentáln
 ## OTÁZKY. Je toto prostředí k dispozici pouze v sadě Visual Studio a pro jazyk C#?
 
 Prostředí se zobrazuje se v sestavení 2018 ve Visual Studio 2017 na codebase C#. Ale těšíme na rozšiřování IntelliCode do více jazyků a nástrojů v sadě Visual Studio rodiny v budoucnu.
+
+## OTÁZKY. Jaké verze sady Visual Studio je nutné spustit tuto příponu?
+
+Visual Studio IntelliCode rozšíření není podporována v aplikaci Visual Studio 2017 verze 15.7 preview 5 a novější (všech skladových položek). Instalace rozšíření zastaven s "Toto rozšíření není instalovat na všechny produkty, nainstalovaný." Pokud nemáte nainstalované minimální požadovaná verze.
 
 ## OTÁZKY. Je toto prostředí k dispozici pouze v angličtině?
 

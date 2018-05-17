@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7dd31d94552895d42c803df81e1e66cd9a3947f0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analýza odezvy uživatelského rozhraní HTML v univerzálních aplikací pro Windows
 Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pomocí Profiler odezvy uživatelského rozhraní, nástroj výkonu k dispozici pro univerzální aplikace pro Windows.  
@@ -100,7 +100,7 @@ Toto téma popisuje, jak izolovat problémy s výkonem ve svých aplikacích pom
   
     -   Použití [zobrazení časové osy relace diagnostiky](#Ruler) zobrazíte [označit kód pro analýzu](#ProfileMark), události životního cyklu aplikace a související časovou osu pro tyto události a časovou osu pro data v jiných grafy.  
   
-    -   Použití [graf využití procesoru](#CPUutilization) Chcete-li zobrazit obecné informace o procesoru aktivitu a typu práce je zpracování během určitého časového období. Období aktivity nadměrnému využití procesoru pravděpodobně mít za následek odezvy problémy a vyřadit rámce.  
+    -   Použití [graf využití procesoru](#CPUUtilization) Chcete-li zobrazit obecné informace o procesoru aktivitu a typu práce je zpracování během určitého časového období. Období aktivity nadměrnému využití procesoru pravděpodobně mít za následek odezvy problémy a vyřadit rámce.  
   
     -   Pokud vyvíjíte herní nebo bohatý mediální aplikace, použijte [zobrazení visual propustnost (FPS)](#VisualThroughput) k určení období času, ve kterém vyřadit snímků za sekundu.  
   

@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae602e6f28fc30c20c5b1f3c466d2e7afe458b8f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fbe34a1ddb738b31c9362eb511a04ba970402ab
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` Funkce vloží číselné značku a textového řetězce v souboru .vsp. Značky a komentáře, které má být vložen, profilace podprocesu, který obsahuje `CommentMarkProfile` funkce musí být ON.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp  
 PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(  
                                    long lMarker,   
                                    LPCTSTR szComment);  
@@ -74,7 +74,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="example"></a>Příklad  
  Následující kód ukazuje volání funkce CommentMarkProfile. V příkladu se předpokládá použití Win32 řetězce makra a Unicode nastavení kompilátoru pro zjištění, zda kód volá [!INCLUDE[vcpransi](../profiling/includes/vcpransi_md.md)] volání funkce.  
   
-```  
+```cpp  
 void ExerciseCommentMarkProfile()  
 {  
     // Declare and initalize variables to pass to   

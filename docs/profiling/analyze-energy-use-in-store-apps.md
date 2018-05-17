@@ -15,11 +15,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 05b5b87afda20990f122597520b0e2cf7e9b7ac1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
-ms.translationtype: MT
+ms.openlocfilehash: 0efe4fe685a0a75438cb68590722ea6748a15f23
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analýza spotřeby energie v aplikacích pro UPW
 Visual Studio **spotřeba energie na** profileru pomáhá analyzovat power a spotřeby energie aplikací UWP do úsporného režimu tablet zařízení, která používají nebo jeho část čas na své vlastní baterie. Na zařízení napájeném z baterie může aplikace s příliš vysokou spotřebou energie způsobit tak velkou nespokojenost zákazníka, že ji může dokonce i odinstalovat. Optimalizace energie můžete zvýšit přijetí vaší aplikace a použít zákazníků.  
@@ -67,7 +67,7 @@ Visual Studio **spotřeba energie na** profileru pomáhá analyzovat power a spo
   
  Chcete-li přidat uživatelské značky, přidejte do míst v kódu, které chcete označit, následující kód:  
   
-```  
+```JavaScript  
 if (performance && performance.mark) {  
     performance.mark(markDescription);  
 }  

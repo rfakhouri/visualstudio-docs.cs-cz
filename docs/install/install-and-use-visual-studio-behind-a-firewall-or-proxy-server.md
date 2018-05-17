@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a3f866410afd0ca70080dcc15b1f01b78146890
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 304c31a9cfd389bb3a5af6b1a8191f41d881165b
+ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalace a použití sady Visual Studio a služby Azure za serverem brány firewall nebo proxy server
 
@@ -117,7 +117,7 @@ Pokud chcete mít jistotu, že máte přístup k vše potřebné při použití 
 | Snímek <br>Ladicí program | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. protokolu https <br>2. protokolu https  <br>3. http <br>4. protokolu https <br>5. protokol https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (závislé verze sady visual Studio) | 1. Dotaz na soubor .json pro velikost SKU služby aplikace <br>2. Různé volání Azure RM <br>3. Volání zahřívání lokality prostřednictvím  <br>4. Zákazník je cílem koncový bod služby Kudu aplikace <br>5. Verze rozšíření lokality dotazu publikované v nuget.org <br>6. Vzdálené ladění kanálu |
 |Azure Stream Analytics <br><br>HDInsight | Management.azure.com |protokol HTTPS|443 |Použít k zobrazení, odeslání, spouštět a spravovat úlohy ASA <br><br> Používá k procházení HDI clusterů a k odeslání, diagnostikovat a ladit HDI úlohy |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | protokol HTTPS | 443 | Používá ke kompilaci, odeslání, zobrazení, diagnostikovat a ladit úlohy; Umožňuje procházet soubory ADLS; použít k nahrávání a stahování souborů |
-|Balení služby | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> DIST.nuget.org <br/> Nuget.org | protokol HTTPS | 443 | *. Npmjs.org, *. nuget.org, a *. nodejs.org jsou jen požadovaná pro určité sestavení scénáře úkolu (např. Instalační program nástroje NuGet, instalační program nástroje uzlu), nebo pokud máte v úmyslu použít veřejné upstreams s informačních kanálů.  Tři domény jsou požadovány pro základní functinality Packaigng služby. |
+|Balení služby | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> DIST.nuget.org <br/> Nuget.org | protokol HTTPS | 443 | *. Npmjs.org, *. nuget.org, a *. nodejs.org jsou jenom požadovaná pro určité scénáře úloh sestavení (například: Instalační program nástroje NuGet, instalační program nástroje uzlu) nebo pokud máte v úmyslu použít veřejné upstreams s informačních kanálů. Tři domény jsou požadovány pro základní funkce služby balení. |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>Řešení chyb související se sítí
