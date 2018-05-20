@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO | Microsoft Docs'
+title: 'Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,13 +22,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d06918a9b1d2bf1bec3f39d3e58352665d07e5c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d652f0890b32197bb13a3f73221f9ee2a92bcfc8
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Návody: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO
+# <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO
   V následujících typech dokumentů můžete ukládat XML data tak, že vytvoříte vlastní část XML v doplňku VSTO:  
   
 -   Sešitu aplikace Microsoft Office Excel.  
@@ -39,7 +39,7 @@ ms.lasthandoff: 04/16/2018
   
  Další informace najdete v tématu [přehled částí XML vlastní](../vsto/custom-xml-parts-overview.md).  
   
- **Platí pro:** informace v tomto tématu se vztahují na projekty na úrovni aplikace pro aplikaci Excel, PowerPoint a Word. Další informace najdete v tématu [dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Platí pro:** informace v tomto tématu se vztahují na projekty na úrovni aplikace pro aplikaci Excel, PowerPoint a Word. Další informace najdete v tématu [dostupné funkce podle aplikace a projekt typu Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Chcete-li přidat vlastní část XML do sešitu aplikace Excel  
   

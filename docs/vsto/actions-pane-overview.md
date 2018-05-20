@@ -1,5 +1,5 @@
 ---
-title: Přehled podokna akcí | Microsoft Docs
+title: Přehled podokna akcí
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -18,33 +18,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 50f39b6fc292bba2081d8eb5c3bc87d6f9041b49
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 9e06bd8011c59d2cd6dd878d16cab57b51b8a845
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="actions-pane-overview"></a>Přehled podokna akcí
   Podokna akcí je nastavit vlastní **akcích dokumentu** podokna úloh, který je připojený ke konkrétní dokument aplikace Microsoft Office Word nebo sešitu aplikace Microsoft Office Excel. V podokně Akce hostován v podokně úloh Office spolu s další podokna integrované úlohy, jako **zdroj dat XML** v aplikaci Excel nebo **styly a formátování** podokna úloh v aplikaci Word. Ovládací prvky Windows Forms nebo ovládacích prvků WPF slouží k návrhu uživatelské rozhraní podokna akce.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
 
- Podokna akcí můžete vytvořit pouze v přizpůsobení na úrovni dokumentu pro Word či Excel. Podokna akcí nelze vytvořit v doplňku VSTO. Další informace najdete v tématu [dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md).  
+ Podokna akcí můžete vytvořit pouze v přizpůsobení na úrovni dokumentu pro Word či Excel. Podokna akcí nelze vytvořit v doplňku VSTO. Další informace najdete v tématu [dostupné funkce podle aplikace a projekt typu Office](../vsto/features-available-by-office-application-and-project-type.md).  
 
 > [!NOTE]  
 >  V podokně Akce se liší od vlastní podokna úloh. Vlastní podokna úloh jsou přidružené k aplikaci, ne určitého dokumentu. Vlastní podokna úloh můžete vytvořit v doplňcích VSTO pro některé aplikace Microsoft Office. Další informace najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md).  
 
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: použití WPF ovládací prvky uvnitř aplikaci Excel podokna akce?](http://go.microsoft.com/fwlink/?LinkId=132763).
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak ovládacích prvků WPF použití I: v podokně akcí aplikace Excel?](http://go.microsoft.com/fwlink/?LinkId=132763).
 
-## <a name="displaying-the-actions-pane"></a>Zobrazení podokna akce  
+## <a name="display-the-actions-pane"></a>Zobrazení podokna akce  
  V podokně Akce je reprezentována <xref:Microsoft.Office.Tools.ActionsPane> třídy. Když vytvoříte projekt na úrovni dokumentu a, instance této třídy je k dispozici kódu pomocí `ActionsPane` pole z `ThisWorkbook` (pro aplikaci Excel) nebo `ThisDocument` (pro aplikaci Word) třídy ve vašem projektu. Pokud chcete zobrazit v podokně Akce, přidání ovládacího prvku Windows Forms k <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> vlastnost `ActionsPane` pole. Následující příklad kódu přidá ovládací prvek s názvem `actions` do podokna akce.  
 
  [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]  
 
- V době běhu také explicitně přidat k němu ovládacího prvku se zobrazí v podokně Akce. Jakmile se zobrazí v podokně Akce, můžete dynamicky přidat nebo odebrat ovládací prvky v odpovědi na akce uživatele. Obvykle přidáte kód, který se zobrazí v podokně Akce v `Startup` obslužné rutiny události z `ThisDocument` nebo `ThisWorkbook` tak, aby v podokně Akce když uživatel poprvé otevře dokument. Můžete však zobrazení podokna akce jenom v odpovědi na akci uživatele v dokumentu. Například může přidáte kód, který `Click` události ovládacího prvku na dokumentu.  
+ V podokně Akce se zobrazí za běhu, jakmile explicitně přidat k němu ovládacího prvku. Jakmile se zobrazí v podokně Akce, můžete dynamicky přidat nebo odebrat ovládací prvky v odpovědi na akce uživatele. Obvykle přidáte kód, který se zobrazí v podokně Akce v `Startup` obslužné rutiny události z `ThisDocument` nebo `ThisWorkbook` tak, aby v podokně Akce když uživatel poprvé otevře dokument. Můžete však zobrazení podokna akce jenom v odpovědi na akci uživatele v dokumentu. Například může přidáte kód, který `Click` události ovládacího prvku na dokumentu.  
 
-### <a name="adding-multiple-controls-to-the-actions-pane"></a>Přidání více ovládacích prvků do podokna akce  
+### <a name="add-multiple-controls-to-the-actions-pane"></a>Přidání více ovládacích prvků do podokna akce  
  Při přidání více ovládacích prvků do podokna akce, měli byste seskupování ovládacích prvků v ovládacím prvku uživatele a pak přidat uživatelský ovládací prvek na <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> vlastnost. Tento proces zahrnuje následující kroky:  
 
 1.  Přidáním vytvořit uživatelské rozhraní (UI) v podokně Akce **ovládací prvek podokna akce** nebo **uživatelský ovládací prvek** položku do projektu. Oba tyto položky obsahují vlastní Windows Forms <xref:System.Windows.Forms.UserControl> třídy. **Ovládací prvek podokna akce** a **uživatelský ovládací prvek** položky jsou ekvivalentní; jediným rozdílem je jejich název.  
@@ -52,13 +52,13 @@ ms.lasthandoff: 04/28/2018
 2.  Přidání ovládacích prvků Windows Forms k <xref:System.Windows.Forms.UserControl> pomocí návrháře, nebo psaní kódu.  
 
     > [!NOTE]  
-    >  Můžete také přidat ovládacích prvků WPF do podokna akce přidáním WPF <xref:System.Windows.Controls.UserControl> do Windows Forms <xref:System.Windows.Forms.UserControl>. Další informace najdete v tématu [pomocí ovládacích prvků WPF v řešeních pro systém Office](../vsto/using-wpf-controls-in-office-solutions.md).  
+    >  Můžete také přidat ovládacích prvků WPF do podokna akce přidáním WPF <xref:System.Windows.Controls.UserControl> do Windows Forms <xref:System.Windows.Forms.UserControl>. Další informace najdete v tématu [řídí použití WPF v řešeních pro systém Office](../vsto/using-wpf-controls-in-office-solutions.md).  
 
 3.  Přidá instanci vlastního uživatelského ovládacího prvku na ovládací prvky, které jsou součástí `ActionsPane` pole z `ThisWorkbook` (pro aplikaci Excel) nebo `ThisDocument` (pro aplikaci Word) třídy ve vašem projektu.  
 
  Příklady, které ukazují, tento proces podrobněji najdete v tématu [postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
 
-## <a name="hiding-the-actions-pane"></a>Skrytí podokna akce  
+## <a name="hide-the-actions-pane"></a>Skrytí podokna akce  
  I když <xref:Microsoft.Office.Tools.ActionsPane> třída má <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metoda a <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> vlastnost, nelze odstranit podokna akce z uživatelského rozhraní pomocí jakékoli členy <xref:Microsoft.Office.Tools.ActionsPane> třídy sám sebe. Volání <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metoda nebo nastavení <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> vlastnost **false** skryje pouze ovládací prvky v podokně Akce; ji není skrytí podokna úloh.  
 
  Skrytí podokna úloh ve vašem řešení, máte několik možností:  
@@ -78,10 +78,10 @@ ms.lasthandoff: 04/28/2018
      [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]  
 
-### <a name="clearing-the-actions-pane-when-the-document-is-opened"></a>Vymazání akce podokně při dokumentu je otevřen.  
+### <a name="clear-the-actions-pane-when-the-document-is-opened"></a>V podokně Akce vymažte, při otevření dokumentu  
  Když uživatel uloží dokument, když je zobrazen v podokně Akce, v podokně Akce je viditelný pokaždé, když je otevřen v dokumentu, zda obsahuje všechny ovládací prvky v podokně Akce. Pokud chcete na ovládací prvek, když se objeví, zavolejte <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> metodu `ActionsPane` pole `Startup` obslužné rutiny události z `ThisDocument` nebo `ThisWorkbook` zajistit, že v podokně Akce není viditelná při otevření dokumentu.  
 
-### <a name="determining-when-the-actions-pane-is-closed"></a>Určení, když podokně akcí je uzavřený.  
+### <a name="determine-when-the-actions-pane-is-closed"></a>Určení při uzavření podokna akce  
  Neexistuje žádná událost, která se vyvolá při zavření v podokně Akce. I když <xref:Microsoft.Office.Tools.ActionsPane> třída má <xref:Microsoft.Office.Tools.ActionsPane.VisibleChanged> událost, tato událost se vyvolá, když koncový uživatel zavření v podokně Akce. Místo toho tato událost se vyvolá, když jsou voláním skrytý ovládací prvky v podokně Akce <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> metoda nebo nastavením <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> vlastnost **false**.  
 
  Při zavření v podokně Akce, může uživatel zobrazit ho znovu pomocí jedné z následujících postupů v uživatelském rozhraní (UI) aplikace.  
@@ -92,17 +92,17 @@ ms.lasthandoff: 04/28/2018
 
 2.  V **zobrazit či skrýt** klikněte na možnost **akcích dokumentu** přepínací tlačítko.  
 
-## <a name="programming-actions-pane-events"></a>Programování akce podokně události  
- Můžete přidat víc uživatelských ovládacích prvků do podokna akce a poté napsat kód pro reakce na události na dokumentu pomocí zobrazení a skrytí uživatelské ovládací prvky. Pokud namapujete prvky schématu XML do dokumentu, můžete zobrazit určité uživatelské ovládací prvky v podokně akce vždy, když je kurzor uvnitř jeden z elementů XML. Další informace najdete v tématu [postupy: mapování schémat Word dokumenty v sadě Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) a [postupy: mapování schémat na listy v sadě Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).  
+## <a name="program-actions-pane-events"></a>Program akce podokně události  
+ Můžete přidat víc uživatelských ovládacích prvků do podokna akce a poté napsat kód pro reakce na události na dokumentu pomocí zobrazení a skrytí uživatelské ovládací prvky. Pokud namapujete prvky schématu XML do dokumentu, můžete zobrazit určité uživatelské ovládací prvky v podokně akce vždy, když je kurzor uvnitř jeden z elementů XML. Další informace najdete v tématu [postupy: mapování schémat na dokumenty aplikace Word v sadě Visual Studio](../vsto/how-to-map-schemas-to-word-documents-inside-visual-studio.md) a [postupy: mapování schémat na listy v sadě Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md).  
 
- Také můžete napsat kód pro reakce na události z libovolného objektu, včetně hostitelského ovládacího prvku, aplikace nebo dokumentu události. Další informace najdete v tématu [návod: programování proti události ovládacího prvku NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
+ Také můžete napsat kód pro reakce na události z libovolného objektu, včetně hostitelského ovládacího prvku, aplikace nebo dokumentu události. Další informace najdete v tématu [návod: Program ošetření událostí ovládacího prvku NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).  
 
-## <a name="binding-data-to-controls-on-the-actions-pane"></a>Vazba dat s ovládacími prvky v podokně Akce  
- Ovládací prvky v podokně Akce měly stejné funkce vazby dat jako ve Windows Forms – ovládací prvky. Ovládací prvky můžete vázat na zdroje dat jako datové sady, typové datové sady a XML. Další informace najdete v tématu [datové vazby a rozhraní Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+## <a name="bind-data-to-controls-on-the-actions-pane"></a>Vytvoření vazby dat s ovládacími prvky v podokně Akce  
+ Ovládací prvky v podokně Akce měly stejné funkce vazby dat jako ve Windows Forms – ovládací prvky. Ovládací prvky můžete vázat na zdroje dat jako datové sady, typové datové sady a XML. Další informace najdete v tématu [datová vazba a systém Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
 
- V podokně Akce a ovládacích prvků na dokument můžete vázat na stejnou datovou sadu. Můžete například vytvořit hlavní a podrobný vztah mezi ovládacími prvky v podokně Akce a ovládacích prvků na list. Další informace najdete v tématu [návod: vytvoření vazby dat s ovládacími prvky v podokně akcí aplikace Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
+ V podokně Akce a ovládacích prvků na dokument můžete vázat na stejnou datovou sadu. Můžete například vytvořit hlavní a podrobný vztah mezi ovládacími prvky v podokně Akce a ovládacích prvků na list. Další informace najdete v tématu [návod: svázání dat s ovládacími prvky v podokně akcí aplikace Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md).  
 
-## <a name="validating-data-in-actions-pane-controls"></a>Ověřování dat v podokně Akce ovládací prvky  
+## <a name="validate-data-in-actions-pane-controls"></a>Ověření dat v podokně Akce ovládací prvky  
  Je-li zobrazit okno se zprávou v <xref:System.Windows.Forms.Control.Validating> obslužné rutiny události ovládacího prvku v podokně Akce, události může být vyvolána podruhé, když se aktivuje z ovládacího prvku do pole zpráva. Aby tento problém, použijte <xref:System.Windows.Forms.ErrorProvider> ovládacího prvku pro zobrazení všech chybových zpráv ověření.  
 
 ## <a name="user-control-stacking-order"></a>Uživatelský ovládací prvek pořadí překrývání  
@@ -123,10 +123,10 @@ ms.lasthandoff: 04/28/2018
  [!code-csharp[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#10)]
  [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]  
 
-## <a name="anchoring-controls"></a>Ukotvení – ovládací prvky  
- Pokud uživatel změní velikost podokna akce za běhu, ovládací prvky můžete změnit velikost se v podokně Akce. Můžete použít <xref:System.Windows.Forms.Control.Anchor%2A> vlastností ovládacího prvku Windows Forms do ovládacích prvků ukotvení do podokna akce. Ovládací prvky Windows Forms do uživatelského ovládacího prvku můžete také ukotvení stejným způsobem. Další informace najdete v tématu [postupy: ukotvení ovládacích prvků Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
+## <a name="anchor-controls"></a>Ovládací prvky ukotvení  
+ Pokud uživatel změní velikost podokna akce za běhu, ovládací prvky můžete změnit velikost se v podokně Akce. Můžete použít <xref:System.Windows.Forms.Control.Anchor%2A> vlastností ovládacího prvku Windows Forms do ovládacích prvků ukotvení do podokna akce. Ovládací prvky Windows Forms do uživatelského ovládacího prvku můžete také ukotvení stejným způsobem. Další informace najdete v tématu [postupy: Ukotvování ovládacích prvků ve Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
 
-## <a name="resizing-the-actions-pane"></a>Změna velikosti podokna akce  
+## <a name="resize-the-actions-pane"></a>Změna velikosti podokna akce  
  Nelze přímo změnit velikost <xref:Microsoft.Office.Tools.ActionsPane> protože <xref:Microsoft.Office.Tools.ActionsPane> vložené v podokně úloh. Však můžete programově změnit šířku do podokna úloh nastavením <xref:Microsoft.Office.Core.CommandBar.Width%2A> vlastnost <xref:Microsoft.Office.Core.CommandBar> představující do podokna úloh. Výška do podokna úloh můžete změnit, pokud jej ukotven vodorovně nebo je číslo s plovoucí čárkou.  
 
  Prostřednictvím kódu programu změnu velikosti podokna úloh není doporučeno, protože uživatel musí být schopni vybrat velikost podokna úloh, který nejlépe vyhovuje jejich potřebám. Ale pokud musíte změnit velikost šířku do podokna úloh, můžete použít následující kód k dosažení této úlohy.  
@@ -134,7 +134,7 @@ ms.lasthandoff: 04/28/2018
  [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
  [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]  
 
-## <a name="repositioning-the-actions-pane"></a>Přemístění podokna akce  
+## <a name="reposition-the-actions-pane"></a>Změna umístění podokna akce  
  Nelze změnit umístění přímo <xref:Microsoft.Office.Tools.ActionsPane> vzhledem k tomu, že je integrovaný v podokně úloh. Však můžete programově přesunout do podokna úloh nastavením <xref:Microsoft.Office.Core.CommandBar.Position%2A> vlastnost <xref:Microsoft.Office.Core.CommandBar> představující do podokna úloh.  
 
  Prostřednictvím kódu programu přemístění do podokna úloh obecně nedoporučuje, protože by mohli vybrat pozici podokně úloh na obrazovce, která nejlépe vyhovuje potřebám své uživatele. Ale pokud je nutné přesunout do podokna úloh na konkrétní pozici, můžete použít následující kód k dosažení této úlohy.  
@@ -153,7 +153,7 @@ ms.lasthandoff: 04/28/2018
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]  
 
 ## <a name="see-also"></a>Viz také  
- [Použití ovládacích prvků grafického subsystému WPF v řešeních pro systém Office](../vsto/using-wpf-controls-in-office-solutions.md)   
+ [Použití ovládacích prvků WPF v řešeních pro systém Office](../vsto/using-wpf-controls-in-office-solutions.md)   
  [Přizpůsobení uživatelského rozhraní sady Office](../vsto/office-ui-customization.md)   
  [Globální přístup k objektům v projektech pro systém Office](../vsto/global-access-to-objects-in-office-projects.md)   
  [Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
@@ -161,4 +161,4 @@ ms.lasthandoff: 04/28/2018
  [Návod: Svázání dat s ovládacími prvky v podokně akcí aplikace Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)   
  [Návod: Svázání dat s ovládacími prvky v podokně akcí aplikace Excel](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)   
  [Postupy: Správa rozložení ovládacích prvků v podoknech akcí](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Návod: Vložení textu do dokumentu z podokna akcí](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Návod: Vložení textu do dokumentu z podokna akcí](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  

@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffae38ca7fb57fcda26c87f3a8a866f8baf2827d
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: f229ea889a478281ee0db123da00cd67c82ec13a
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Výchozí nastavení pro nasazení v podnicích sady Visual Studio
 
@@ -50,7 +50,7 @@ Můžete nastavit následující hodnoty registru:
 
 | **Jméno** | **Typ** | **Default** | **Popis** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramData%\Microsoft\ VisualStudio\Packages | Jsou uložené adresáři, kde balíček manifesty a volitelně datové části. Najdete v návodu k [zakázat nebo přesunout do mezipaměti balíček](disable-or-move-the-package-cache.md) Další informace. |
+| `CachePath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | Jsou uložené adresáři, kde balíček manifesty a volitelně datové části. Najdete v návodu k [zakázat nebo přesunout do mezipaměti balíček](disable-or-move-the-package-cache.md) Další informace. |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Datové části balíčku zachovat i po jejich instalaci. Hodnota můžete kdykoli změnit. Zakázání zásady odebere všechny uložené v mezipaměti balíček datových částí pro instanci opravit nebo změnit. Najdete v návodu k [zakázat nebo přesunout do mezipaměti balíček](disable-or-move-the-package-cache.md) Další informace. |
 | `SharedInstallationPath` | `REG_SZ` Nebo `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | Adresář, kde jsou nainstalovány některé balíčky sdílené mezi verzemi instancí sady Visual Studio. Hodnota dají kdykoli měnit, ale mají vliv jenom budoucí nainstaluje. Všechny produkty již nainstalována do původního umístění nesmí být přesunuta, nebo se nemusí správně fungovat. |
 

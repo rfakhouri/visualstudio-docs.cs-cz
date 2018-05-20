@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a41e41b4448bcec34a24464f4f62e85d0765436d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1a74db80b0b13a01fbd58412666e66097971d467
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>Analýza využití sítě v aplikacích pro UPW
 Visual Studio **sítě** nástroj diagnostiky shromažďuje informace o síťových operací provést pomocí [Windows.Web.Http API](/uwp/api/windows.web.http). Analyzuje data vám může pomoct vyřešit problémy, jako je přístup a ověřování problémy, nesprávné použití mezipaměti a nízký zobrazení a stažení výkonu.  
@@ -24,12 +24,12 @@ Visual Studio **sítě** nástroj diagnostiky shromažďuje informace o síťov�
 > [!NOTE]
 >  Podrobnější popis nástroje sítě najdete v tématu [nástroj síťových představení sady Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx).  
   
-## <a name="collecting-network-tool-data"></a>Shromažďování dat nástroj sítě  
+## <a name="collect-network-tool-data"></a>Shromažďovat data nástroj sítě.  
  Byste měli spustit **sítě** nástroj s projektu sady Visual Studio otevřete v sadě Visual Studio počítači.  
   
 1.  Otevřete projekt v sadě Visual Studio.  
   
-2.  V nabídce klikněte na tlačítko **ladění nebo profileru výkonu...** . Zvolte **sítě**a potom zvolte **spustit**.  
+2.  V nabídce klikněte na tlačítko **ladění nebo výkonu profileru**. Zvolte **sítě**a potom zvolte **spustit**.  
   
 3.  Nástroj sítě začne shromažďovat informace o přenosech HTTP vaší aplikace.  
   
@@ -37,11 +37,11 @@ Visual Studio **sítě** nástroj diagnostiky shromažďuje informace o síťov�
   
 4.  Zvolte **Zastavit** aplikace se zavře.  
   
- Okno sestavy by měl vypadat přibližně takto:  
+ Okno sestavy by měla vypadat přibližně takto:  
   
  ![Okno sítě](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
-## <a name="analyzing-data"></a>Analýza dat  
+## <a name="analyze-data"></a>Analýza dat  
  Zachycená data protokolu HTTP můžete analyzovat, když aplikace běží, nebo i po zavření aplikace, vyberte některým ze sítě zobrazit na souhrnné zobrazení.  
   
  **Sítě** souhrnné zobrazení zobrazuje data pro každou operaci sítě při spuštění aplikace. Zvolte záhlaví sloupce seřadíte seznam, nebo zvolte typy obsahu k zobrazení v **typ obsahu** filtrovat zobrazení.  
@@ -63,11 +63,11 @@ Visual Studio **sítě** nástroj diagnostiky shromažďuje informace o síťov�
  Síť **souhrnné** panel zobrazuje počet síťových operací, které se zobrazují v libovolném časovém okamžiku, kolik dat se přenesl, jak dlouho trvalo a stahovat je a kolik chyby (požadavků s odpovědí 4xx nebo 5xx) jsou viditelné.  
   
 ### <a name="analysis-tips"></a>Tipy pro analýzu  
- Tento nástroj označuje, které určité oblasti, které mohou být užitečné, pokud používáte sítě související s analýzy:  
+ Tento nástroj upozorňuje určité oblasti, které mohou být užitečné, pokud používáte analysis související se sítí:  
   
 1.  Požadavky, které jsou plně obsluhovat z mezipaměti se zobrazují jako **(z mezipaměti)** v **přijaté** sloupce. Můžete určit, jestli používáte mezipaměti efektivně uložit uživatelskou šířku pásma, nebo zda omylem ukládání odpovědí do mezipaměti a poskytuje koncového uživatele vaší aplikace pomocí zastaralá data.  
   
-2.  Chybové odpovědi (4xx nebo 5xx) se zobrazí v v **výsledky** sloupec červený stav kódu a taky jsou vyznačené na panelu souhrnu. Díky tomu je snadné sledovat chyby mezi mnoho potenciální požadavků ve vaší aplikaci.  
+2.  Chybové odpovědi (4xx nebo 5xx) se zobrazí v **výsledky** sloupec červený stav kódu a taky jsou vyznačené na panelu souhrnu. Díky tomu je snadné sledovat chyby mezi mnoho potenciální požadavků ve vaší aplikaci.  
   
 3.  Tlačítko odpovědi poměrně tisk (uvnitř kartě textu) můžete analyzovat prostřednictvím formátu JSON, XML, HTML, CSS, JavaScript a TypeScript datové části odpovědi zvýšením čitelnost obsahu.  
   
@@ -76,4 +76,4 @@ Visual Studio **sítě** nástroj diagnostiky shromažďuje informace o síťov�
  [Visual Studio blog: inspector sítě představení sady Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Video Channel 9: VS diagnostické nástroje – nové sítě profileru](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)
+ [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)

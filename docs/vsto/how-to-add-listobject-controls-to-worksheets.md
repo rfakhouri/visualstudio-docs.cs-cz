@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přidání ovládacích prvků ListObject do listů | Microsoft Docs'
+title: 'Postupy: Přidání ovládacích prvků ListObject do listů'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,18 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 55d3a26f0fbf02556071dfc16d08357519b5cff9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ab95f3929b556f6ece0d3b44ee12bad6f21a361
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků ListObject do listů
-  Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu a za běhu v projekty na úrovni dokumentu.  
+  Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu a v době běhu projekty na úrovni dokumentu.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- Můžete také přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků za běhu v projekty doplňku VSTO.  
+ Můžete také přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvky v době běhu projekty doplňku VSTO.  
   
  Toto téma popisuje následující úlohy:  
   
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Přetáhněte tabulku ze **zdroje dat** okna do listu.  
   
-     Vázané na data <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek je přidán do listu. Další informace najdete v tématu [datové vazby a rozhraní Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+     Vázané na data <xref:Microsoft.Office.Tools.Excel.ListObject> ovládací prvek je přidán do listu. Další informace najdete v tématu [datová vazba a systém Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
   
 ##  <a name="runtimedoclevel"></a> Přidání ovládacích prvků ListObject za běhu v projektech na úrovni dokumentu  
  Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> řízení dynamicky za běhu. To umožňuje vytvářet hostitelské ovládací prvky v reakci na události. Dynamicky vytvořený list – objekty nejsou trvalé do listu jako umisťování ovládacích prvků při uzavření listu. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
@@ -79,7 +79,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]  
   
 ##  <a name="runtimeaddin"></a> Přidání ovládacích prvků ListObject za běhu v projektu doplňku VSTO  
- Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> řízení prostřednictvím kódu programu k žádné otevřete sešit v projektu doplňku VSTO. Dynamicky vytvořený list – objekty nejsou trvalé do listu jako umisťování ovládacích prvků, když je na listu uloženy a zavřeny. Další informace najdete v tématu [rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> řízení prostřednictvím kódu programu k žádné otevřete sešit v projektu doplňku VSTO. Dynamicky vytvořený list – objekty nejsou trvalé do listu jako umisťování ovládacích prvků, když je na listu uloženy a zavřeny. Další informace najdete v tématu [dokumentů rozšířit aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
   
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Přidání ovládacího prvku ListObject do listu prostřednictvím kódu programu  
   
@@ -95,7 +95,7 @@ ms.lasthandoff: 04/16/2018
  [Automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md)   
  [Přehled ovládacích prvků hostitele a hostitelské položky](../vsto/host-items-and-host-controls-overview.md)   
  [Postupy: Změna velikosti ovládacích prvků ListObject](../vsto/how-to-resize-listobject-controls.md)   
- [Vazba dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Vázání dat k ovládacím prvkům v řešeních pro systém Office](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [Programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

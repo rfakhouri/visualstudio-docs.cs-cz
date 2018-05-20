@@ -1,5 +1,5 @@
 ---
-title: IManagedAddin::Load | Microsoft Docs
+title: IManagedAddin::Load
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -14,23 +14,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 545560c5f02437925c2f93e9c6dc3113e1cddd0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5f8e94ebcd0aec8e17cac8d651017ed1565d2ec
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   Volá se při načtení spravované Add-in VSTO.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```c++
 HRESULT Load([in] BSTR bstrManifestURL,   
              [in] IDispatch *pdispApplication);  
 ```  
   
-#### <a name="parameters"></a>Parametry  
+### <a name="parameters"></a>Parametry  
   
 |Parametr|Popis|  
 |---------------|-----------------|  
@@ -43,7 +43,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="remarks"></a>Poznámky  
  Manifest je soubor (obvykle soubor XML), který poskytuje informace, které se používají pro načtení doplňku VSTO. Manifest můžete například zadat umístění doplňku VSTO sestavení a třída vstupní bod pro vytvoření instance při načítání doplňku VSTO.  
   
- *BstrManifestURL* parametr obsahuje hodnotu `Manifest` položky v rámci HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<název aplikace >*\Addins\\*\<ID doplněk >* klíč registru pro doplňku VSTO. Další informace najdete v tématu [imanagedaddin – rozhraní](../vsto/imanagedaddin-interface.md).  
+ *BstrManifestURL* parametr obsahuje hodnotu `Manifest` položka v části **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<název aplikace >_ \Addins\\_\<ID doplněk >_**  klíč registru pro doplňku VSTO. Další informace najdete v tématu [imanagedaddin – rozhraní](../vsto/imanagedaddin-interface.md).  
   
  Implementace [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) metoda k provádění úloh, jako je například konfigurace zásad domény a zabezpečení aplikací pro VSTO doplněk, který je právě načítán.  
   

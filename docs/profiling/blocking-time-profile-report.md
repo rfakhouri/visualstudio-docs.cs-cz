@@ -14,13 +14,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 860449ea4bd4d8aa3ea6c36ab7ff3572c2679488
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8d2b1c83a2954ca06385904f3a5e046f1c9ca50b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="blocking-time-profile-report"></a>Sestava profilu času blokace
+# <a name="blocking-time-profile-report"></a>Sestava profilu času blokování
 Profil sestavy poskytují agregační blokování časových dat pro zásobníky volání, které jsou specifické pro jednotlivé blokování kategorie (například "Vstupně-výstupních operací" nebo "Synchronizace"). Sestava přerušování obsahuje seznam procesů, které zrušené aktuální proces společně se počet instancí přerušení. Pokud chcete vytvořit blokování Sestava profilu, nástroj shromažďuje blokování volání rozhraní API a shromáždí je do stromu zásobníky volání. Data zobrazená na tyto sestavy se liší podle aktuální časové rozmezí, skrytý vláken a následující dva filtry, které mohou být použity:  
   
 -   Pokud je vybrána pouze můj kód, jsou uvedeny pouze rámce zásobníku, které mají uživatelského kódu, plus o jednu úroveň pod uživatelského kódu.  
@@ -34,18 +34,18 @@ Profil sestavy poskytují agregační blokování časových dat pro zásobníky
   
 |Název sloupce|Popis|  
 |-----------------|-----------------|  
-|Název|Název funkce pro každou úroveň zásobníku volání.|  
-|Instance|Počet instancí blokování volání pro viditelné časové období.|  
-|Čas včetně blokování|Celkový počet blokování času stráveného pro všechny balíčky, které jsou shrnuty na této úrovni stromu zásobníku volání. Číslo (včetně) je součet hodnot výhradní blokování čas pro tuto funkci a výhradní blokování čas pro všechny jeho podřízené uzly.|  
-|Výhradní blokování čas|Celkový počet blokování času stráveného při němž je tato funkce je nejnižší úroveň zásobníku volání. Položku zásobníku jedinečný volání, která má vysokou výhradní blokování čas může být funkce, které vás zajímají.|  
-|Rozhraní API nebo počkejte kategorie|Zobrazit pouze pro funkce na nejnižší úrovni zásobníku volání. Pokud se podpis blokování volání rozpozná, je zadaný název blokování rozhraní API. Pokud není rozpoznán podpisu, který je hlášen jádra informace jsou poskytovány.|  
-|Podrobnosti|Plně kvalifikovaný název funkce. To zahrnuje počet řádků, pokud je k dispozici.|  
+|**Jméno**|Název funkce pro každou úroveň zásobníku volání.|  
+|**Instance**|Počet instancí blokování volání pro viditelné časové období.|  
+|**Čas včetně blokování**|Celkový počet blokování času stráveného pro všechny balíčky, které jsou shrnuty na této úrovni stromu zásobníku volání. Číslo (včetně) je součet hodnot výhradní blokování čas pro tuto funkci a výhradní blokování čas pro všechny jeho podřízené uzly.|  
+|**Výhradní blokování čas**|Celkový počet blokování času stráveného při němž je tato funkce je nejnižší úroveň zásobníku volání. Položku zásobníku jedinečný volání, která má vysokou výhradní blokování čas může být funkce, které vás zajímají.|  
+|**Rozhraní API nebo počkejte kategorie**|Zobrazit pouze pro funkce na nejnižší úrovni zásobníku volání. Pokud se podpis blokování volání rozpozná, je zadaný název blokování rozhraní API. Pokud není rozpoznán podpisu, který je hlášen jádra informace jsou poskytovány.|  
+|**Podrobnosti**|Plně kvalifikovaný název funkce. To zahrnuje počet řádků, pokud je k dispozici.|  
   
 ### <a name="synchronization"></a>Synchronizace  
  Synchronizace sestava ukazuje volání, které jsou zodpovědní za segmentů, které blokují na synchronizaci a agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [čas synchronizace](../profiling/synchronization-time.md)  
   
 ### <a name="sleep"></a>Přejít do režimu spánku  
- Sestava režimu spánku zobrazí volání, které jsou zodpovědní za blokování dobu, po kterou byly připsány času stráveného v režimu spánku a agregační blokování doby každé zásobníku volání. Další informace najdete v tématu [doba režimu spánku](../profiling/sleep-time.md).  
+ Sestava režimu spánku zobrazí volání, které jsou zodpovědní za blokování dobu, po kterou byly připsány času stráveného v režimu spánku a agregační blokování doby každé zásobníku volání. Další informace najdete v tématu [doba spánku](../profiling/sleep-time.md).  
   
 ### <a name="io"></a>I/O  
  Sestava vstupně-výstupních operací obsahuje volání, které jsou zodpovědní za segmentů, které blokují na vstupně-výstupních operací a agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [čas vstupně-výstupních operací (zobrazení vláken)](../profiling/i-o-time-threads-view.md).  

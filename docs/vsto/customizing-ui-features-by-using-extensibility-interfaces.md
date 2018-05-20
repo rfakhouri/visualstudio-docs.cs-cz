@@ -1,5 +1,5 @@
 ---
-title: Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní | Microsoft Docs
+title: Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,13 +23,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59a2eb15dcb21158df33b2f4a8ae138c424795cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d9fd69cb747c235f78be8065d07f03f5b39d66b
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="customizing-ui-features-by-using-extensibility-interfaces"></a>Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní
+# <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Přizpůsobení funkcí uživatelského rozhraní pomocí rozšiřujících rozhraní
   Nástroje pro vývoj pro Office v sadě Visual Studio poskytují třídy a návrhářů, které zpracovávají mnoho podrobnosti implementace, když je budete používat k vytvoření vlastních podoken úloh, vlastních nastavení pásu karet a oblastí formulářů aplikace Outlook v doplňku VSTO. Ale můžete taky implementovat *rozšiřitelnost rozhraní* pro každou funkci sami, pokud máte speciální požadavky.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
@@ -39,9 +39,9 @@ ms.lasthandoff: 04/16/2018
   
  Když vytvoříte doplňku VSTO pomocí šablony projektů Office v sadě Visual Studio, nemáte implementovat rozhraní rozšíření k přizpůsobení funkcí, jako je na pásu karet. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Implementuje tyto rozhraní za vás. Místo toho můžete intuitivnější třídy a návrhářů, poskytované sadě Visual Studio. Ale můžete pořád implementovat rozhraní rozšíření přímo v doplňku VSTO Pokud budete chtít.  
   
- Další informace o třídách a návrhářů, které Visual Studio poskytuje pro tyto funkce najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md), [Návrhář pásu karet](../vsto/ribbon-designer.md), a [vytváření oblastí formulářů aplikace Outlook](../vsto/creating-outlook-form-regions.md).  
+ Další informace o třídách a návrhářů, které Visual Studio poskytuje pro tyto funkce najdete v tématu [vlastní podokna úloh](../vsto/custom-task-panes.md), [Návrhář pásu karet](../vsto/ribbon-designer.md), a [oblastí formulářů aplikace Outlook vytvořit](../vsto/creating-outlook-form-regions.md).  
   
-## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Rozšiřitelnost rozhraní, které můžete implementovat v doplňku VSTO  
+## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>Rozhraní rozšíření můžete implementovat v doplňku VSTO  
  Následující tabulka uvádí rozhraní rozšiřitelnosti, které můžete implementovat a aplikace, které je podporují.  
   
 |Rozhraní|Popis|Aplikace|  
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/16/2018
   
  Existuje několik dalších rozšiřitelnost rozhraní, které jsou definovány Microsoft Office, jako například <xref:Microsoft.Office.Core.IBlogExtensibility>, <xref:Microsoft.Office.Core.EncryptionProvider>, a <xref:Microsoft.Office.Core.SignatureProvider>. Visual Studio nepodporuje implementace těchto rozhraní VSTO Add-in vytvořen pomocí šablony projektů Office.  
   
-## <a name="using-extensibility-interfaces"></a>Pomocí rozšiřujících rozhraní  
+## <a name="use-extensibility-interfaces"></a>Pomocí rozšiřujících rozhraní  
  Chcete-li přizpůsobit funkce uživatelského rozhraní pomocí rozhraní rozšiřitelnosti, implementujte rozhraní odpovídající v projektu doplňku VSTO. Potom přepsat <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metoda vrátit instanci třídy, která implementuje rozhraní.  
   
  Pro ukázkovou aplikaci, která ukazuje, jak implementovat <xref:Microsoft.Office.Core.IRibbonExtensibility>, <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, a <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> rozhraní Add-in VSTO pro Outlook, naleznete v ukázce uživatelského rozhraní správce v [ukázky vývoje pro Office](../vsto/office-development-samples.md).  
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]  
   
- Další informace o implementaci <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, najdete v části [vytváření podokna úloh Vlastní v systému Office 2007](http://msdn.microsoft.com/en-us/256313db-18cc-496c-a961-381ed9ca94be) v dokumentaci k Microsoft Office.  
+ Další informace o implementaci <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>, najdete v části [vytvořit vlastní podokna úloh v systému Office 2007](http://msdn.microsoft.com/en-us/256313db-18cc-496c-a961-381ed9ca94be) v dokumentaci k Microsoft Office.  
   
 ### <a name="example-of-overriding-the-requestservice-method"></a>Příklad přepsání metody RequestService  
  Následující příklad kódu ukazuje, jak lze přepsat <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> metoda vrátí instanci `TaskPaneHelper` třídy z předchozího příkladu kódu. Zkontroluje hodnotu *serviceGuid* parametr k určení, které rozhraní je požadováno a vrátí objekt, který implementuje rozhraní.  
@@ -80,7 +80,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Viz také  
  [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)   
- [Programování doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
+ [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md)   
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
  [Volání kódu v doplňcích VSTO z jiných řešení pro systém Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   

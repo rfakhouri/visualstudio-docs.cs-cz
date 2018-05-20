@@ -1,5 +1,5 @@
 ---
-title: Další podpora pro chyby v řešeních pro systém Office | Microsoft Docs
+title: Další podpora pro chyby v řešeních pro systém Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -59,41 +59,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 13e0520df662b1a48c3f2a603356d46e21c2f4f2
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: bbb9c5676ec3d9f06802f071c842f9e2a396703e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="additional-support-for-errors-in-office-solutions"></a>Další podpora pro chyby v řešeních pro systém Office
+# <a name="additional-support-for-errors-in-office-solutions"></a>Další podpora pro chyby v řešeních pro systém Office
   Můžete použít následující prostředky vám pomůžou najít odpovědi na problémy, na které narazíte, jako je vytváření řešení pro systém Office v sadě Visual Studio.  
   
-## <a name="troubleshooting-specific-errors"></a>Řešení konkrétních chyb  
+## <a name="troubleshoot-specific-errors"></a>Řešení specifických chyb  
  O pomoc s některé běžné chyby v řešeních pro systém Office najdete v následujících tématech:  
   
--   [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
+-   [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)  
   
--   [Řešení potíží se zabezpečením řešení pro systém Office](../vsto/troubleshooting-office-solution-security.md)  
+-   [Odstraňování problémů se zabezpečením řešení Office](../vsto/troubleshooting-office-solution-security.md)  
   
--   [Řešení potíží s nasazením řešení pro systém Office](../vsto/troubleshooting-office-solution-deployment.md)  
+-   [Řešení potíží s nasazením řešení Office](../vsto/troubleshooting-office-solution-deployment.md)  
   
 ## <a name="other-resources"></a>Další zdroje  
- [Visual Studio Tools for Office fórum](http://go.microsoft.com/fwlink/?LinkId=149744)  
+ [Nástroje sady Visual Studio pro fórum Office](http://go.microsoft.com/fwlink/?LinkId=149744)  
  Poskytuje fórum pro dotazy týkající se nástroje Office developer tools v sadě Visual Studio.  
-  
- [Diskusní skupiny sady Office](http://go.microsoft.com/fwlink/?LinkId=63585)  
- Poskytuje diskusní skupiny pro dotazy týkající se aplikace Office. Programovací diskusní skupiny tady používejte pro dotazy týkající se určité úlohy související s modelem objektu aplikací Office.  
   
  [Nápovědu a podporu Microsoftu](http://go.microsoft.com/fwlink/?LinkID=108287)  
  Poskytuje přístup k článkům znalostní báze, souborům ke stažení a aktualizacím, webovému vysílání podpory a jiným službám.  
   
- [Další zdroje informací o vývoji řešení pro systém Office](../vsto/additional-resources-for-developing-office-solutions.md)  
+ [Další prostředky pro vývoj řešení pro systém Office](../vsto/additional-resources-for-developing-office-solutions.md)  
  Obsahuje odkazy na další zdroje informací o další informace o vývoji řešení pro systém Office a vývoj pro Office v prostředí Visual Studio.  
   
 ## <a name="see-also"></a>Viz také  
  [Řešení potíží s chybami v řešeních pro systém Office](../vsto/troubleshooting-errors-in-office-solutions.md)   
- [Řešení potíží se zabezpečením řešení Office](../vsto/troubleshooting-office-solution-security.md)   
+ [Odstraňování problémů se zabezpečením řešení Office](../vsto/troubleshooting-office-solution-security.md)   
  [Řešení potíží s nasazením řešení Office](../vsto/troubleshooting-office-solution-deployment.md)   
- [Další zdroje informací o vývoji řešení pro systém Office](../vsto/additional-resources-for-developing-office-solutions.md)  
+ [Další prostředky pro vývoj řešení pro systém Office](../vsto/additional-resources-for-developing-office-solutions.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kombinování VBA pro vytváření a úpravy na úrovni dokumentů | Microsoft Docs
+title: Kombinování VBA pro vytváření a úpravy na úrovni dokumentů
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -27,13 +27,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 01870498522ce138925fdaaf4c6ada9b13961f76
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5bc53512a93ad2af9fa30562e54a8419c70c813
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="combining-vba-and-document-level-customizations"></a>Kombinování přizpůsobení na úrovních VBA a dokumentu
+# <a name="combine-vba-and-document-level-customizations"></a>Kombinování VBA pro vytváření a úpravy na úrovni dokumentů
   Můžete vytvořit jazyka Visual Basic pro aplikace (VBA) kód v dokumentu, který je součástí přizpůsobení na úrovni dokumentu pro aplikace Microsoft Office Word nebo Microsoft Office Excel. VBA kód můžete volat v dokumentu z sestavení vlastní nastavení, nebo můžete nakonfigurovat projekt povolit VBA kód v dokumentu pro volání kódu v sestavení vlastní nastavení.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -43,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
  Když spustíte řešení, obslužné rutiny událostí v VBA pro vytváření a přizpůsobení sestavení odráželo události, které jsou vyvolány v dokumentu, a spusťte obě sady kódu. Nelze určit předem kód, který bude spuštěn před dalších; To je třeba určit prostřednictvím testování v jednotlivých případech. Pokud jsou dvě sady kód není pečlivě koordinované a otestovat, můžete získat neočekávané výsledky.  
   
-## <a name="calling-vba-code-from-the-customization-assembly"></a>Volání kódu VBA z přizpůsobení sestavení  
+## <a name="call-vba-code-from-the-customization-assembly"></a>VBA kód volání od přizpůsobení sestavení  
  Makra můžete volat v dokumentech aplikace Word a sešitů aplikace Excel můžete volat makra a funkce. K tomuto účelu použijte jednu z následujících metod:  
   
 -   Pro Word, volání <xref:Microsoft.Office.Interop.Word._Application.Run%2A>metodu <xref:Microsoft.Office.Interop.Word.Application> třídy.  
@@ -73,14 +73,14 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 > [!NOTE]  
 >  Informace o použití na globální `missing` najdete v části proměnná místo volitelné parametry v jazyce Visual C# [psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md).  
   
-## <a name="calling-code-in-document-level-customizations-from-vba"></a>Volání kódu v přizpůsobeních na úrovni dokumentu z jazyka VBA  
+## <a name="call-code-in-document-level-customizations-from-vba"></a>Volání kódu v přizpůsobeních na úrovni dokumentu z jazyka VBA  
  Projekt na úrovni dokumentu pro Word či Excel můžete nakonfigurovat tak, že kódu Visual Basic for Applications (VBA) v dokumentu můžete volat kód v sestavení vlastní nastavení. To je užitečné v následujících scénářích:  
   
 -   Chcete rozšířit existující VBA kód v dokumentu pomocí funkcí v přizpůsobení na úrovni dokumentu, který je přidružen ke stejnému dokumentu.  
   
 -   Chcete zpřístupnit služby, které vyvíjíte v přizpůsobení na úrovni dokumentu pro koncové uživatele, kteří mohou přístup ke službám pomocí psaní kódu jazyka VBA v dokumentu.  
   
- Nástroje pro vývoj pro Office v sadě Visual Studio poskytují podobné funkce pro doplňky VSTO. Pokud vyvíjíte doplňku VSTO, můžete volat kódu v doplňku VSTO z jiných řešení pro Microsoft Office. Další informace najdete v tématu [volání kódu v doplňcích VSTO z jiných řešení pro systém Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
+ Nástroje pro vývoj pro Office v sadě Visual Studio poskytují podobné funkce pro doplňky VSTO. Pokud vyvíjíte doplňku VSTO, můžete volat kódu v doplňku VSTO z jiných řešení pro Microsoft Office. Další informace najdete v tématu [volání kódu v doplňcích VSTO z jiných řešení pro Office](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md).  
   
 > [!NOTE]  
 >  Tuto funkci nelze použít v šabloně projekty aplikace Word. Může sloužit pouze v dokument aplikace Word, sešit aplikace Excel nebo projekty šablony aplikace Excel.  
@@ -90,9 +90,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
 -   V dokumentu musí mít jednu z následujících přípon souborů:  
   
-    -   Pro aplikaci Word: DOCM nebo .doc  
+    -   Pro aplikaci Word: *DOCM* nebo *.doc*  
   
-    -   Pro aplikaci Excel: .xlsm, XLTM, XLS nebo xlt  
+    -   Pro aplikaci Excel: *.xlsm*, *XLTM*, *.xls*, nebo *xlt*  
   
 -   Dokument musí obsahovat již VBA projekt, který se nachází VBA kód.  
   
@@ -100,9 +100,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
   
 -   Microsoft Office project musí obsahovat alespoň jednu veřejnou třídu, která obsahuje jeden nebo více veřejné členy, které jsou vystaveny pro jazyk VBA.  
   
-     Můžete vystavit metody, vlastnosti a události pro jazyk VBA. Třída, která vystavit může být třídu položky hostitele (například `ThisDocument` pro Word, nebo `ThisWorkbook` a `Sheet1` pro aplikaci Excel) nebo jiné třídy, která definujete ve vašem projektu. Další informace o hostitelských položkách najdete v tématu [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  
+     Můžete vystavit metody, vlastnosti a události pro jazyk VBA. Třída, která vystavit může být třídu položky hostitele (například `ThisDocument` pro Word, nebo `ThisWorkbook` a `Sheet1` pro aplikaci Excel) nebo jiné třídy, která definujete ve vašem projektu. Další informace o hostitelských položkách najdete v tématu [hostitele položky a hostitelem Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
   
-## <a name="enabling-vba-code-to-call-into-the-customization-assembly"></a>Povolení k volání do sestavení přizpůsobení VBA kód  
+## <a name="enable-vba-code-to-call-into-the-customization-assembly"></a>Povolit VBA kód provést volání do přizpůsobení sestavení  
  Existují dva různé způsoby, můžete vystavit členy v sestavení přizpůsobení VBA kód v dokumentu:  
   
 -   Můžou zpřístupnit členy třídy položky hostitele v [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projekt VBA pro vytváření. Chcete-li to provést, nastavte **EnableVbaCallers** vlastnosti položky hostitele k **True** v **vlastnosti** je okno při hostitelská položka (to znamená, dokument, listu nebo sešitu) Otevřít v návrháři. Visual Studio automaticky provede všechny práce potřebné k povolení VBA kód volat členové třídy.  
@@ -124,7 +124,7 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 > [!NOTE]  
 >  Pokud sešit nebo dokument už neobsahuje VBA kód nebo pokud VBA kód v dokumentu není důvěryhodný pro spuštění, zobrazí se chybová zpráva při nastavení **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject**  vlastnost **True**. Je to proto, že Visual Studio nelze změnit na projekt VBA v dokumentu v této situaci.  
   
-## <a name="using-members-in-vba-code-to-call-into-the-customization-assembly"></a>Používání členů v kódu jazyka VBA provést volání do přizpůsobení sestavení  
+## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>Volání do sestavení přizpůsobení pomocí členy v kódu jazyka VBA  
  Po dokončení konfigurace projektu povolit VBA kód provést volání do sestavení přizpůsobení, Visual Studio přidá následující členy do projektu VBA v dokumentu:  
   
 -   U všech projektů sady Visual Studio přidá globální metodu s názvem `GetManagedClass`.  
@@ -134,9 +134,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
  Můžete použít `CallVSTOAssembly` vlastnost nebo `GetManagedClass` metoda pro přístup k veřejné členy třídy, která vystaveni kódu jazyka VBA v projektu.  
   
 > [!NOTE]  
->  Při vývoji a nasazení řešení, je několik různých kopií dokumentu kterém můžete přidat VBA kód. Další informace najdete v tématu [pokyny pro přidání kódu jazyka VBA v dokumentu](#Guidelines).  
+>  Při vývoji a nasazení řešení, je několik různých kopií dokumentu kterém můžete přidat VBA kód. Další informace najdete v tématu [pokyny pro přidání VBA pro vytváření kódu v dokumentu](#Guidelines).  
   
-### <a name="using-the-callvstoassembly-property-in-a-visual-basic-project"></a>Pomocí vlastnosti CallVSTOAssembly v projektu jazyka Visual Basic  
+### <a name="use-the-callvstoassembly-property-in-a-visual-basic-project"></a>Použijte vlastnost CallVSTOAssembly v projektu jazyka Visual Basic  
  Použití `CallVSTOAssembly` vlastnost, která má přístup k veřejné členy, které jste přidali do položky třída hostitele. Například následující makro VBA volá metodu s názvem `MyVSTOMethod` definovaný v `Sheet1` – třída v projektu sešitu aplikace Excel.  
   
 ```  
@@ -155,7 +155,7 @@ Property Get CallVSTOAssembly() As ExcelWorkbook1.Sheet1
 End Property  
 ```  
   
-### <a name="using-the-getmanagedclass-method"></a>Pomocí metody GetManagedClass  
+### <a name="use-the-getmanagedclass-method"></a>Použijte metodu GetManagedClass  
  Použít na globální `GetManagedClass` metoda, předejte jí objekt VBA pro vytváření, která odpovídá k třídě položky hostitele, který obsahuje přepsání služby **GetAutomationObject** metoda. Pro přístup třídu, která vystavený pro jazyk VBA pak použijte vráceného objektu.  
   
  Například následující makro VBA volá metodu s názvem `MyVSTOMethod` definovaný v `Sheet1` třída položky v projektu sešitu aplikace Excel s názvem hostitele `ExcelWorkbook1`.  
@@ -181,7 +181,7 @@ GetManagedClass(pdispInteropObject Object) As Object
   
  Při vývoji a testování řešení, můžete napsat kód VBA v dokumentu, které se otevře při ladění a spustit projekt v sadě Visual Studio (tedy dokumentu v zadané výstupní složce sestavení). Ale kód jazyka VBA, které přidáte k tomuto dokumentu budou přepsány příštím sestavení projektu, protože Visual Studio nahradí kopii dokumentu ze složky hlavní projektu dokumentu do výstupní složky sestavení.  
   
- Pokud chcete uložit VBA kód, který přidáte do dokumentu při ladění nebo řešení spuštěna, zkopírujte kód VBA do dokumentu ve složce projektu. Další informace o procesu sestavení najdete v tématu [vytváření řešení pro systém Office](../vsto/building-office-solutions.md).  
+ Pokud chcete uložit VBA kód, který přidáte do dokumentu při ladění nebo řešení spuštěna, zkopírujte kód VBA do dokumentu ve složce projektu. Další informace o procesu sestavení najdete v tématu [sestavení řešení pro systém office](../vsto/building-office-solutions.md).  
   
  Jakmile budete připraveni k nasazení řešení, existují tři hlavní dokumentu umístění, ve které můžete přidat VBA kód.  
   
@@ -241,14 +241,14 @@ GetManagedClass(pdispInteropObject Object) As Object
   
 2.  Odebere knihovně vloženého typu ze sestavení.  
   
-## <a name="troubleshooting"></a>Poradce při potížích  
+## <a name="troubleshoot"></a>Řešení potíží
  Následující tabulka uvádí některé běžné chyby a návrhy řešení chyb.  
   
 |Chyba|Návrh|  
 |-----------|----------------|  
 |Jakmile nastavíte **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject** vlastnost chybovou zprávu stavy dokument neobsahuje projekt VBA, nebo nemáte oprávnění k přístupu Projekt VBA v dokumentu.|Zajistěte, aby dokument v projektu obsahuje alespoň jeden makro VBA pro vytváření, projekt VBA má dostatečná vztah důvěryhodnosti ke spuštění a projekt VBA není chráněn heslem.|  
-|Po nastavení **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject** vlastnost, chybová zpráva uvádí, že <xref:System.Runtime.InteropServices.GuidAttribute> deklarace je chybějící nebo poškozené.|Ujistěte se, že <xref:System.Runtime.InteropServices.GuidAttribute> deklarace se nachází v souboru AssemblyInfo.cs nebo AssemblyInfo.vb ve vašem projektu a že tento atribut je nastaven na platný identifikátor GUID.|  
-|Jakmile nastavíte **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject** stavy chybovou zprávu vlastnost, že číslo verze určeného <xref:System.Reflection.AssemblyVersionAttribute> není platný.|Ujistěte se, že <xref:System.Reflection.AssemblyVersionAttribute> deklarace v souboru AssemblyInfo.cs nebo AssemblyInfo.vb ve vašem projektu nastavena na číslo verze sestavení platný. Informace o platné sestavení čísla verzí, najdete v článku <xref:System.Reflection.AssemblyVersionAttribute> třídy.|  
+|Po nastavení **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject** vlastnost, chybová zpráva uvádí, že <xref:System.Runtime.InteropServices.GuidAttribute> deklarace je chybějící nebo poškozené.|Ujistěte se, že <xref:System.Runtime.InteropServices.GuidAttribute> deklarace se nachází v *AssemblyInfo.cs* nebo *AssemblyInfo.vb* soubor ve vašem projektu a že tento atribut je nastavena na platný identifikátor GUID.|  
+|Jakmile nastavíte **EnableVbaCallers** nebo **ReferenceAssemblyFromVbaProject** stavy chybovou zprávu vlastnost, že číslo verze určeného <xref:System.Reflection.AssemblyVersionAttribute> není platný.|Ujistěte se, že <xref:System.Reflection.AssemblyVersionAttribute> deklarace v *AssemblyInfo.cs* nebo *AssemblyInfo.vb* ve vašem projektu soubor pro číslo verze sestavení platný. Informace o platné sestavení čísla verzí, najdete v článku <xref:System.Reflection.AssemblyVersionAttribute> třídy.|  
 |Po přejmenování přizpůsobení sestavení VBA kód, který volá do sestavení přizpůsobení přestane fungovat.|Pokud změníte název sestavení, přizpůsobení po zveřejnění VBA kód, dojde k přerušení propojení mezi projekt VBA v dokumentu a vaše přizpůsobení sestavení. Chcete-li tento problém vyřešit, změňte **ReferenceFromVbaAssembly** vlastnost ve vašem projektu a **False** a pak zpátky na **True**a potom můžete nahradit všechny odkazy na staré sestavení název v VBA kód s novým názvem sestavení.|  
   
 ## <a name="see-also"></a>Viz také  
@@ -256,8 +256,8 @@ GetManagedClass(pdispInteropObject Object) As Object
  [Postupy: vystavení kódu do VBA v Visual C&#35; projektu](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)   
  [Návod: Volání kódu z jazyka VBA v projektu jazyka Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
  [Návod: Volání kódu z jazyka VBA v Visual C&#35; projektu](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [Návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
- [VBA a řešení pro systém Office v sadě Visual Studio porovnání](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
- [Programování přizpůsobení na úrovni dokumentu](../vsto/programming-document-level-customizations.md)  
+ [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)   
+ [Řešení VBA a Office v sadě Visual Studio porovnání](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)   
+ [Úpravy na úrovni dokumentů programu](../vsto/programming-document-level-customizations.md)  
   
   

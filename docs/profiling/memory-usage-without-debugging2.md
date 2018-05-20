@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b51d2be6e2ec45b55b04c906a9db71843c98f427
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>Analýza využití paměti bez ladicího programu sady Visual Studio
 Můžete použít **využití paměti** nástroje bez ladění proveďte následující  
@@ -35,7 +35,7 @@ Můžete použít **využití paměti** nástroje bez ladění proveďte násled
   
 1.  Otevřete projekt C# Universal Windows v sadě Visual Studio.  
   
-2.  Na řádku nabídek zvolte **ladění nebo profileru výkonu...** .  
+2.  Na řádku nabídek zvolte **ladění** > **výkonu profileru**.  
   
 3.  Vyberte **využití paměti** a potom zvolte **spustit** tlačítko v dolní části stránky.  
   
@@ -202,6 +202,6 @@ Můžete použít **využití paměti** nástroje bez ladění proveďte násled
 ## <a name="see-also"></a>Viz také  
  [Paměť jazyka JavaScript](../profiling/javascript-memory.md)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)  
+ [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)  
  [Osvědčené postupy z hlediska výkonu pro aplikace UWP pomocí C++, C# a Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnostika problémů paměti pomocí nástroje nové využití paměti v sadě Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)

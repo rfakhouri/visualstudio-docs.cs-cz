@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 606af4d08ffaec87c46c394f55ffe4e37b2a940d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 631b9fc17345d5d0c00d36e42a9d3b1db633c114
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projekty a řešení – dialogové okno Možnosti
 Nastaví [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] chování související s projekty a řešení. Chcete-li získat přístup k tyto možnosti, vyberte **nástroje > Možnosti** rozbalte **projekty a řešení**a klikněte na tlačítko **Obecné**.
@@ -70,6 +70,12 @@ Při výběru [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zobra
 **Výzvu před přesunutím soubory do nového umístění**
 
 Při výběru [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] zobrazí potvrzovací okno se zprávou, než jsou akcemi v Průzkumníku řešení změnit umístění souborů.
+
+**Znovu otevřít dokumenty na zatížení řešení (Visual Studio 2017 verze 15.8 verze preview 2 a novější)**
+ 
+Při načítání řešení automaticky znovu otevřete dokumenty, které byly otevřít v předchozí relace. Při výběru, jsou dokumenty, které byly otevřené předchozí době, kdy bylo ukončeno toto řešení automaticky otevře při načtení řešení.
+
+Znovu určité typy souborů nebo návrháři zpozdit zatížení řešení. Tuto možnost, chcete-li zvýšit výkon zatížení řešení, pokud nechcete obnovit předchozí kontext na řešení, zrušte zaškrtnutí.
 
 ## <a name="locations-tab-options"></a>Umístění karta Možnosti
 

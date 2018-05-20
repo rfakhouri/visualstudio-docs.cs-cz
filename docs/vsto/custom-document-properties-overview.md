@@ -1,5 +1,5 @@
 ---
-title: Přehled přizpůsobených vlastností dokumentu | Microsoft Docs
+title: Přehled přizpůsobených vlastností dokumentu
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c5ca93d7a761ca8757f0e43ab88cb6586c203160
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="custom-document-properties-overview"></a>Přehled přizpůsobených vlastností dokumentu
 
-Při sestavování projektu úrovni dokumentu sady Visual Studio přidá dva vlastní vlastnosti dokumentu v projektu: \_AssemblyLocation a \_AssemblyName. Když uživatel otevře dokument, zkontroluje tyto vlastní vlastnosti dokumentu aplikace Microsoft Office. Pokud existují v dokumentu načte aplikaci [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], který spustí přizpůsobení. Další informace najdete v tématu [architektura z řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
+Při sestavování projektu úrovni dokumentu sady Visual Studio přidá dva vlastní vlastnosti dokumentu v projektu: \_AssemblyLocation a \_AssemblyName. Když uživatel otevře dokument, zkontroluje tyto vlastní vlastnosti dokumentu aplikace Microsoft Office. Pokud existují v dokumentu načte aplikaci [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], který spustí přizpůsobení. Další informace najdete v tématu [řešení architektura systému Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -38,7 +38,7 @@ Tato vlastnost obsahuje CLSID rozhraní v řešení Office zavaděč součást [
 
 ## <a name="assemblylocation"></a>\_AssemblyLocation
 
-Tato vlastnost obsahuje řetězec, který poskytuje podrobnosti o manifest nasazení pro přizpůsobení. Další informace o manifesty najdete v tématu [aplikace a manifesty nasazení v řešeních pro systém Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
+Tato vlastnost obsahuje řetězec, který poskytuje podrobnosti o manifest nasazení pro přizpůsobení. Další informace o manifesty najdete v tématu [aplikace a nasazení manifesty v řešeních pro systém Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
 
  Hodnota vlastnosti The_AssemblyLocation může mít různých formátech, v závislosti na tom, jak je řešení nasazeno:
 
@@ -54,8 +54,8 @@ Tato vlastnost obsahuje řetězec, který poskytuje podrobnosti o manifest nasaz
 
 ## <a name="see-also"></a>Viz také
 
-[Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
-[architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)
-[aplikace a nasazení manifesty v řešeních pro systém Office ](../vsto/application-and-deployment-manifests-in-office-solutions.md) 
- [Postupy: publikování řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-[postupy: vytváření a změny přizpůsobených vlastností dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Architektura řešení pro systém Office v sadě Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [Architektura přizpůsobení na úrovni dokumentu](../vsto/architecture-of-document-level-customizations.md)
+- [Manifesty aplikace a nasazení v řešeních pro systém Office](../vsto/application-and-deployment-manifests-in-office-solutions.md)
+- [Postupy: publikování řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Postupy: vytváření a změny přizpůsobených vlastností dokumentu](../vsto/how-to-create-and-modify-custom-document-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu | Microsoft Docs'
+title: 'Postupy: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,11 +20,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5126e5ca6eb83df70ed03a7491fdd5d2a98912e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ad9e78d6b87f85e09cbba68a4fd4297e09acf18e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Postupy: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu
   Můžete uložit XML data v sešitu aplikace Microsoft Office Excel nebo dokument aplikace Microsoft Office Word tak, že vytvoříte vlastní část XML do přizpůsobení na úrovni dokumentu. Další informace najdete v tématu [přehled částí XML vlastní](../vsto/custom-xml-parts-overview.md).  
@@ -32,7 +32,7 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
 > [!NOTE]  
->  Visual Studio neposkytuje projekty na úrovni dokumentu pro aplikaci Microsoft Office PowerPoint. Informace o přidání na vlastní část XML do Powerpointovou prezentaci pomocí doplňku VSTO najdete v tématu [postupy: Přidání vlastních částí XML do dokumentů podle pomocí doplňků VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
+>  Visual Studio neposkytuje projekty na úrovni dokumentu pro aplikaci Microsoft Office PowerPoint. Informace o přidání na vlastní část XML do Powerpointovou prezentaci pomocí doplňku VSTO najdete v tématu [postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).  
   
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Chcete-li přidat vlastní část XML do sešitu aplikace Excel  
   
@@ -61,6 +61,6 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Viz také  
  [Přehled vlastních částí XML](../vsto/custom-xml-parts-overview.md)   
- [Návody: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
+ [Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
   
   

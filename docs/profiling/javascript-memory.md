@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e82ceb7879fcfca709ff6e94de81ae76ef908e07
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9c4ef7fa41cd9d4cdd0bfeda7d7745ad16d47536
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>Analýza využití paměti jazyka JavaScript v aplikacích pro UPW
 Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio vám pomohou pochopit, využití paměti a najít nevracení paměti v aplikace UWP vytvořená pro systém Windows pomocí jazyka JavaScript. Podporované aplikace patří aplikace pro univerzální aplikace pro Windows.
@@ -50,7 +50,7 @@ Analyzátor paměti jazyka JavaScript je k dispozici v sadě Visual Studio vám 
   
 2.  Pokud spouštíte aplikaci ze sady Visual Studio v **spustit ladění** seznam na **standardní** nástrojů, vyberte cíl ladění pro projekt: buď **místního počítače** nebo **Zařízení**.  
   
-3.  Na řádku nabídek zvolte **ladění**, **profileru výkonu...** .  
+3.  Na řádku nabídek zvolte **ladění** > **výkonu profileru**.  
   
      Ve výchozím nastavení se analyzují aktuální projekt po spuštění. Pokud chcete změnit cíl analýzy, zvolte **změnit cíl**.  
   
@@ -344,7 +344,7 @@ if (performance && performance.mark) {
   
  ![Pomocí profilu označit](../profiling/media/js_mem_performance_marks.png "JS_Mem_Performance_Marks")  
   
-##  <a name="Tips"></a> Tipy pro identifikaci problémů s pamětí  
+##  <a name="Tips"></a> Tipy k identifikaci problémů s pamětí  
   
 -   Pracovní postup popsaný v [izolovat nevrácená paměť systému](#Isolate) a použít **objekty zbyly ze snímku #\<číslo >** filtru v zobrazení rozdílů k identifikaci pravděpodobně kandidáty na nevracení paměti.  
   

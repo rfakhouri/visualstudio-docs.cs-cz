@@ -1,5 +1,5 @@
 ---
-title: Ukládání dat do mezipaměti | Microsoft Docs
+title: Data do mezipaměti
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 094a4e6c639007fcf09ce28f0be2e398b8245858
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77b92b721f2c8b47bcb878aaa9f4cbf411015ccc
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="caching-data"></a>Ukládaní dat do mezipaměti
+# <a name="cache-data"></a>Data do mezipaměti
   Datové objekty v přizpůsobení na úrovni dokumentu můžete mezipaměti, takže data jsou přístupné v režimu offline, nebo bez otevření aplikace Microsoft Office Word nebo Microsoft Office Excel. Pro ukládání do mezipaměti objekt, objekt musí mít datový typ, který splňuje určité požadavky. Mnoho běžné typy dat v rozhraní .NET Framework splňovat tyto požadavky, včetně <xref:System.String>, <xref:System.Data.DataSet>, a <xref:System.Data.DataTable>.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
  Existují dva způsoby, jak přidat objekt do mezipaměti dat:  
   
--   Přidání objektu do mezipaměti dat, když je integrované řešení, použít <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atribut deklarace objektu. Další informace najdete v tématu [postup: Data do mezipaměti pro použití v režimu Offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   Přidání objektu do mezipaměti dat, když je integrované řešení, použít <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atribut deklarace objektu. Další informace najdete v tématu [postupy: použití dat do mezipaměti v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   K přidání objektu do datové mezipaměti prostřednictvím kódu programu za běhu, použijte `StartCaching` metoda hostitele položky, jako `ThisDocument` nebo `ThisWorkbook` třídy. Další informace najdete v tématu [postup: mezipaměti prostřednictvím kódu programu zdroj dat v dokumentu systému Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/16/2018
   
  Když mezipaměti na datový objekt [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] serializuje do formátu řetězce XML, který je uložený v objektu *vlastní část XML* v dokumentu. Další informace najdete v tématu [přehled částí XML vlastní](../vsto/custom-xml-parts-overview.md).  
   
-## <a name="cached-data-size-limits"></a>Omezení velikosti Data uložená v mezipaměti  
+## <a name="cached-data-size-limits"></a>Omezení velikosti data uložená v mezipaměti  
  Existují některá omezení na celkovém množství dat, které můžete přidat do mezipaměti data v dokumentu a velikost všech jednotlivých objektu v datové mezipaměti. Pokud tato omezení překročí, aplikaci dojít k neočekávaném zavření při uložení dat do mezipaměti data.  
   
  Abyste se vyhnuli tyto limity, postupujte podle následujících pokynů:  
@@ -72,23 +72,23 @@ ms.lasthandoff: 04/16/2018
   
  Toto jsou přibližné hodnoty. Přesný omezení závisí na několika faktorech, jako dostupné paměti RAM a počet spuštěných procesů.  
   
-## <a name="controlling-the-behavior-of-cached-objects"></a>Řízení chování v mezipaměti objektů  
+## <a name="control-the-behavior-of-cached-objects"></a>Řídí chování v mezipaměti objektů  
  Získat lepší kontrolu nad chováním objektu v mezipaměti, můžete implementovat <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType> rozhraní pro typ objektu v mezipaměti. Například můžete implementovat toto rozhraní, pokud chcete řídit, jak je uživateli upozornění, když objektu se změnil. Příklady kódu, které ukazují, jak implementovat <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ICachedType>, najdete v článku `ControlCollection` třídy v ukázkové dynamické ovládací prvky aplikace Excel a ukázkové dynamické ovládací prvky aplikace Word v [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md).  
   
-## <a name="persisting-changes-to-cached-data-in-password-protected-documents"></a>Zachování změny Data uložená v mezipaměti v dokumentech chráněný heslem  
+## <a name="persist-changes-to-cached-data-in-password-protected-documents"></a>Zachování změn data uložená v mezipaměti v dokumentech chráněný heslem  
  Pokud jste do mezipaměti datové objekty v dokumentu, který je chráněný heslem, změny data uložená v mezipaměti nejsou uloženy. Přepsáním dvě metody můžete uložit změny do data uložená v mezipaměti. Přepsat tyto metody dočasně odebrat ochranu při ukládání dokumentu a poté znovu nastavte ochranu po uložení bylo dokončeno.  
   
- Další informace najdete v tématu [postup: Data do mezipaměti v dokumentu chráněná heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
+ Další informace najdete v tématu [postup: mezipaměti data v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
-## <a name="preventing-data-loss-when-adding-null-values-to-the-data-cache"></a>Prevence ztráty dat při přidávání hodnoty Null do mezipaměti dat  
+## <a name="prevent-data-loss-when-adding-null-values-to-the-data-cache"></a>Při přidávání hodnoty null do mezipaměti dat nedošlo ke ztrátě dat.  
  Při přidání objektů do mezipaměti dat, všech objektů v mezipaměti musí být inicializována tak, aby jinou hodnotu než**null** hodnotu předtím, než je dokument uložit a zavřít. Pokud má všechny objektu v mezipaměti **null** hodnoty, když je dokument uložit a zavřít, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] se automaticky odeberou všechny uložené v mezipaměti objektů z mezipaměti data.  
   
  Pokud přidáte objekt s **hodnotu null** hodnotu do mezipaměti dat pomocí <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atribut v době návrhu, můžete použít <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> třídě pro inicializaci data uložená v mezipaměti objektů před otevření dokumentu. To je užitečné, pokud chcete inicializovat data uložená v mezipaměti na serveru bez Word či Excel nainstalovaná, před otevření dokumentu koncového uživatele. Další informace najdete v tématu [přístup k datům v dokumentech na serveru](../vsto/accessing-data-in-documents-on-the-server.md).  
   
 ## <a name="see-also"></a>Viz také  
- [Postupy: ukládat Data do mezipaměti pro použití v režimu Offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [Postupy: použití dat do mezipaměti v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
  [Postupy: zdroji dat v dokumentu systému Office mezipaměti prostřednictvím kódu programu](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [Postupy: mezipaměti Data v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [Návod: Vytvoření vztahu seznam-podrobnosti s použitím datové sady v mezipaměti](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
+ [Postupy: mezipaměti data v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Návod: Vytvoření hlavního podrobný vztah, pomocí datové sady v mezipaměti](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
   
   

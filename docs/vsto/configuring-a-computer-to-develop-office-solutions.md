@@ -1,5 +1,5 @@
 ---
-title: Konfigurace počítače pro vývoj řešení pro systém Office | Microsoft Docs
+title: Konfigurace počítače pro vývoj řešení pro systém Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,13 +15,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 59c00639ce839962c06cacf3c036a5cd8f74b508
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58458b51115834b5b94e858676ee8039d5894c70
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="configuring-a-computer-to-develop-office-solutions"></a>Konfigurace počítače pro vývoj řešení pro systém Office
+# <a name="configure-a-computer-to-develop-office-solutions"></a>Konfigurace počítače pro vývoj řešení pro systém Office
 
 Pokud chcete vytvořit doplňků VSTO a vlastní nastavení pro Microsoft Office, nainstalujte podporovanou verzi sady Visual Studio, rozhraní .NET Framework a aplikace Microsoft Office.
 
@@ -31,7 +31,7 @@ Pokud chcete vytvořit doplňků VSTO a vlastní nastavení pro Microsoft Office
 |.NET Framework|-Rozhraní .NET Framework 4 nebo novější.|
 |Aplikace Microsoft Office|<ul><li>Všechny edice sady Office, včetně Office Professional Plus pro Office 365.</li><li>Některé z následujících samostatné aplikace:<br /><br /> <ul><li>Excel</li><li>InfoPath (Office 2013 a Office 2010 pouze)</li><li>Outlook</li><li>PowerPoint</li><li>Projekt</li><li>Visio</li><li>Word</li></ul></li></ul><br /> Visual Basic for Applications (VBA) musí být nainstalován jako součást sady Office. **Důležité:** klikněte na tlačítko spustit verze aplikací Office 2010 nejsou podporovány.|
 
-Instalace podrobné pokyny najdete v tématu [postupy: Konfigurace počítače pro vývoj řešení pro Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
+Instalace podrobné pokyny najdete v tématu [postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
 ## <a name="if-project-templates-dont-appear-or-they-dont-work-in-visual-studio"></a>Pokud se nezobrazí šablon projektu nebo nemáte fungují v sadě Visual Studio
 
@@ -53,6 +53,6 @@ Pokud budete pokračovat, dochází k potížím, najdete v části [další pod
 
 [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
 [Postupy: Konfigurace počítače pro vývoj řešení pro systém Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
-[Postupy: Instalace nástrojů Visual Studio Tools for Office runtime Redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
-[Postupy: Instalace primárních sestavení vzájemné spolupráce pro systém Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
-[Dostupné funkce podle aplikací systému Office a typů projektu](../vsto/features-available-by-office-application-and-project-type.md)
+[Postupy: instalace sady Visual Studio Tools for Office runtime redistributable](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)  
+[Postupy: Primární spolupracující sestavení Office instalace](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+[Zadejte dostupné funkce podle aplikace Office a projektu](../vsto/features-available-by-office-application-and-project-type.md)

@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 40b5dad29562d1b370f9988467183ef05c26fd85
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
-ms.translationtype: MT
+ms.openlocfilehash: 6c5b97460defeaa22ad20e9a1ff4be38514b020a
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>Profilace webových aplikací ASP.NET z příkazového řádku
 Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci z příkazového řádku.  
@@ -25,7 +25,7 @@ Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro [
 > [!NOTE]
 >  Funkce Rozšířené zabezpečení v systému Windows 8 a Windows Server 2012 vyžaduje významné změny ve způsobu, jakým Visual Studio profiler shromažďuje data na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. V tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="common-tasks"></a>Obecné úlohy  
+## <a name="common-tasks"></a>Běžné úlohy
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
@@ -36,9 +36,9 @@ Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro [
 |**Shromažďování dat souběžnosti:** použít metodu souběžného zpracování ke shromažďování dat kolizí prostředku. **Poznámka:** shromažďování vlákno aktivity a vizualizace dat není podporován pro webové aplikace.|-   [Shromažďování dat souběžnosti](../profiling/collecting-concurrency-data-for-an-aspnet-web-application.md)|  
 |**Přidání dat interakce vrstev:** můžete přidat data výkonu o synchronní [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] volá, který [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] provede webové aplikace Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] databáze.|-   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
-## <a name="related-tasks"></a>Související úlohy  
+## <a name="related-tasks"></a>Související úlohy
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profil aplikace samostatné (klient)**|-   [Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
-|**Profil služby**|-   [Profilace služeb](../profiling/command-line-profiling-of-services.md)|
+|**Profil aplikace samostatné (klient)**|-   [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
+|**Profil služby**|-   [Profil služby](../profiling/command-line-profiling-of-services.md)|

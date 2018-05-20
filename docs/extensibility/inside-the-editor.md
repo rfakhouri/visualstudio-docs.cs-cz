@@ -13,11 +13,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 181a414d4cf1b9def941f32560d41158c0ed92fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ace9e405b52873d08c578c2af8e7005249e7d58c
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="inside-the-editor"></a>V editoru
 Editor se skládá z několika různé subsystémy, které jsou navržené tak, aby editoru samostatné modelu text z textového zobrazení a uživatelské rozhraní.  
@@ -59,7 +59,7 @@ Editor se skládá z několika různé subsystémy, které jsou navržené tak, 
   
  Subsystém modelu textu je zdarma konceptů uživatelské rozhraní (UI). Například není zodpovědná za rozložení textu nebo formátování textu a žádná znalost visual vylepšení, které může být spojeno s textem.  
   
- Veřejné typy subsystém text modelu jsou obsažené v Microsoft.VisualStudio.Text.Data.dll a Microsoft.VisualStudio.CoreUtilitiy.dll, které závisí pouze na knihovně základní třídy rozhraní .NET Framework a Managed Extensibility Framework (MEF).  
+ Veřejné typy subsystém text modelu jsou obsažené v Microsoft.VisualStudio.Text.Data.dll a Microsoft.VisualStudio.CoreUtility.dll, které závisí pouze na knihovně základní třídy rozhraní .NET Framework a Managed Extensibility Framework (MEF).  
   
 ### <a name="text-view-subsystem"></a>Subsystém zobrazení textu  
  Subsystém zobrazení textu je zodpovědná za formátování a zobrazení textu. Typy v této subsystém se dál dělí na dvě vrstvy, v závislosti na tom, jestli typy spoléhají na Windows Presentation Foundation (WPF). Nejdůležitější typy <xref:Microsoft.VisualStudio.Text.Editor.ITextView> a <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>, které řídí sadu řádků textu, které se mají zobrazovat a také pomocí kurzoru, výběru a zařízení pro adorning text s použitím prvky uživatelského rozhraní grafického subsystému WPF. Tento subsystém obsahuje také okraje kolem text umožňuje zobrazit oblast. Tyto okraje lze rozšířit a může obsahovat různé druhy obsahu a vizuální efekty. Příkladem okraje jsou číslo řádky zobrazí a přejděte na řádek.  

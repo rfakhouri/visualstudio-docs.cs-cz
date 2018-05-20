@@ -1,5 +1,5 @@
 ---
-title: Vývoj osvědčených postupů pro COM, VSTO a VBA doplňky v sadě Office | Microsoft Docs
+title: Vývoj osvědčené postupy pro COM, VSTO a VBA doplňky v Office
 ms.custom: ''
 ms.date: 07/25/2017
 ms.technology:
@@ -14,13 +14,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6da083b12717606233d4c8dd9bc175b42722d53e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 020faeb330348049dcf12431fadfa6ab099d1584
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="development-best-practices-for-com-vsto-and-vba--add-ins-in-office"></a>Vývoj osvědčené postupy pro COM, VSTO a VBA doplňky v Office
+# <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Vývoj osvědčené postupy pro COM, VSTO a VBA doplňky v Office
   Pokud vyvíjíte COM, postupujte podle VSTO nebo VBA pro vytváření doplňků pro Office, vývoj osvědčené postupy, které jsou popsané v tomto článku.   To pomůže zajistit:
 
 -  Kompatibilita doplňky mezi různými verzemi a nasazení systému Office.
@@ -33,7 +33,7 @@ ms.lasthandoff: 04/16/2018
  Nedoporučujeme mít vaše add-in zjistit, zda je nainstalována Office během procesu instalace doplňku. Pokud není nainstalovaná Office, můžete nainstalovat doplněk a uživatel bude mít přístup k po dokončení instalace sady Office. 
   
 ## <a name="use-embedded-interop-types-nopia"></a>Použití vložené typy spolupráce (NoPIA)  
-Pokud řešení používá rozhraní .NET 4.0 nebo novější, použijte vložené typy spolupráce (NoPIA) místo v závislosti na Office primární zprostředkovatel komunikace s objekty sestavení (primární) redistributable. Pomocí typu vložení snižuje velikost instalace řešení a k zajištění budoucí kompatibility. Office 2010 byl poslední verzi systému Office, která odeslaná PIA redistributable. Další informace najdete v tématu [návod: vložení informací o typu ze sestavení sady Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) a [ekvivalence typů a vložené typy zprostředkovatel komunikace s objekty](/windows/uwp/porting/desktop-to-uwp-root).
+Pokud řešení používá rozhraní .NET 4.0 nebo novější, použijte vložené typy spolupráce (NoPIA) místo v závislosti na Office primární zprostředkovatel komunikace s objekty sestavení (primární) redistributable. Pomocí typu vložení snižuje velikost instalace řešení a k zajištění budoucí kompatibility. Office 2010 byl poslední verzi systému Office, která odeslaná PIA redistributable. Další informace najdete v tématu [návod: vložení informací o typu ze sestavení sady Microsoft Office](https://msdn.microsoft.com/en-us/library/ee317478.aspx) a [ekvivalence typů a vestavěné typy spolupráce](/windows/uwp/porting/desktop-to-uwp-root).
 
 Pokud řešení používá starší verzi rozhraní .NET, doporučujeme aktualizovat vaše řešení, aby používalo rozhraní .NET 4.0 nebo novější. Pomocí rozhraní .NET 4.0 nebo novější snižuje požadavky modulu runtime v novějších verzích systému Windows.
   
@@ -43,7 +43,7 @@ Pokud řešení používá funkce, které jsou k dispozici v novější verzi sy
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>Povolit 32bitové a 64bitové verze Office využití   
 Váš výchozí cíl sestavení by měly podporovat (x86) 32bitové i 64bitové (x64), pokud vaše řešení závisí na knihovny, které jsou dostupné pouze pro konkrétní počet bitů. Přijetí, zejména v prostředích velkých objemů dat roste 64bitová verze systému Office. Podpora 32bitových a 64-bit usnadňuje uživatelům přechod mezi 32bitové a 64bitové verze systému Office.
 
-Při psaní kódu pro jazyk VBA, použijte 64-bit bezpečné deklarovat příkazy a proveďte převod proměnné podle potřeby. Dále ověřte, že dokumenty lze sdílet mezi uživateli, kteří používají 32bitovou nebo 64bitovou verzí systému Office zadáním kódu pro každý počtu bitů. Další informace najdete v tématu [64-Bit Visual Basic pro aplikace – přehled](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
+Při psaní kódu pro jazyk VBA, použijte 64-bit bezpečné deklarovat příkazy a proveďte převod proměnné podle potřeby. Dále ověřte, že dokumenty lze sdílet mezi uživateli, kteří používají 32bitovou nebo 64bitovou verzí systému Office zadáním kódu pro každý počtu bitů. Další informace najdete v tématu [64-bit Visual Basic pro aplikace – přehled](https://msdn.microsoft.com/en-us/library/office/gg264421.aspx).
 
 ## <a name="support-restricted-environments"></a>Podpora prostředí s omezeným přístupem   
 Řešení by neměl vyžadovat zvýšení oprávnění účtu uživatele nebo správce oprávnění. Kromě toho by neměl řešení závisí na nastavení nebo změna:

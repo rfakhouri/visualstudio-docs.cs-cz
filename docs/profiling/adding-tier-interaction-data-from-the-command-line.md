@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb969201d484aabc01c7c5cc66e3656fbb29fb9
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
-ms.translationtype: HT
+ms.openlocfilehash: 42bc9219b3e1af5b1ae25ee2049b7293e2f4c344
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="adding-tier-interaction-data-from-the-command-line"></a>Přidání dat interakce vrstev z příkazového řádku
+# <a name="add-tier-interaction-data-from-the-command-line"></a>Přidání dat interakce vrstev z příkazového řádku
 
 Profilace interakce vrstvy poskytuje další informace o dobu provádění synchronní [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] volání funkcí víceúrovňových aplikací, které komunikují s jednu nebo více databází.
 
@@ -38,17 +38,17 @@ Shromažďování dat interakce vrstev ve vzdáleném počítači, je nutné zko
 
 Dat interakce vrstev lze zobrazit pouze ve Visual Studio Enterprise. Sledováním interakce vrstev založená na souborech sestavy prostřednictvím [vsperfreport –](../profiling/vsperfreport.md) nejsou k dispozici.
 
-## <a name="adding-tier-interaction-data-with-vsperfcmd"></a>Přidání dat interakce vrstev s VSPerfCmd
+## <a name="add-tier-interaction-data-with-vsperfcmd"></a>Přidání dat interakce vrstev s VSPerfCmd
 
 Nástroje příkazového řádku VSPerfASPNETCmd umožňuje přístup k dokončení funkce, která je k dispozici v nástrojích pro profilaci. Chcete-li profilace data shromážděná pomocí VSPerfCmd přidat sledováním interakce vrstev, je nutné použít **vsperfclrenv –** nástroj nastavit a odebrat proměnné prostředí, který umožňuje dat interakce vrstev. Možnosti, které zadáte a postupy potřebných ke shromažďování dat závisí na typu aplikace, která jsou profilace.
 
-## <a name="profiling-stand-alone-applications"></a>Profilace samostatných aplikací
+## <a name="profile-stand-alone-applications"></a>Profil samostatných aplikací
 
 Přidání dat interakce vrstev do aplikace, která se nespouští jiným procesem, jako je například aplikace plochy Windows, která umožňuje synchronní [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] pomocí volání do databáze SQL Server, **/InteractionOn vsperfclrenv –** možnost nastavení proměnných prostředí a **vsperfclrenv – /InteractionOff** možnost je odebrat.
 
 V následujícím příkladu je pomocí metody instrumentace profilovaným desktopová aplikace systému Windows a shromažďovaných dat interakce vrstev.
 
-### <a name="profiling-a-windows-desktop-application-example"></a>Profilace v příkladu aplikace pracovní plochy Windows
+### <a name="profile-a-windows-desktop-application-example"></a>Profil v příkladu aplikace pracovní plochy Windows
 
 1. Otevřete okno příkazového řádku s oprávněními správce. Klikněte na tlačítko **spustit**, přejděte na příkaz **všechny programy**a pak přejděte na **Příslušenství**. Klikněte pravým tlačítkem na **příkazového řádku**a potom klikněte na **spustit jako správce**.
 
@@ -79,9 +79,9 @@ V následujícím příkladu je pomocí metody instrumentace profilovaným deskt
     vsperfclrenv /off
     ```
 
-Další informace najdete v tématu [profilování aplikací samostatné](../profiling/command-line-profiling-of-stand-alone-applications.md).
+Další informace najdete v tématu [profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md).
 
-## <a name="profiling-services"></a>Profilace služeb
+## <a name="profile-services"></a>Profil služby
 
 Do profilu služby, včetně [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplikace, použijte **vsperfclrenv – /GlobalInteractionOn** možnost nastavení proměnných prostředí a **/GlobalInteractionOff vsperfclrenv –** možnost je odebrat.
 
@@ -89,7 +89,7 @@ Když jsou profilace služeb, včetně [!INCLUDE[vstecasp](../code-quality/inclu
 
 V následujícím příkladu služby systému Windows je profilovaným pomocí metody instrumentace a shromažďovaných dat interakce vrstev.
 
-### <a name="profiling-a-windows-service-example"></a>Profilace v příkladu služby systému Windows
+### <a name="profile-a-windows-service-example"></a>Profil v příkladu služby systému Windows
 
 1. V případě potřeby nainstalujte službu.
 
@@ -101,7 +101,7 @@ V následujícím příkladu služby systému Windows je profilovaným pomocí m
     vsperfclrenv /globaltraceon
     ```
 
-4. Inicializace proměnných prostředí TIP. Zadejte následující příkaz
+4. Inicializace proměnných prostředí TIP. Zadejte následující příkaz:
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -145,7 +145,7 @@ Další informace naleznete v jednom z následujících témat:
 
 [Profilace služeb](../profiling/command-line-profiling-of-services.md)
 
-## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>Přidání dat interakce vrstev pomocí VSPerfASPNETCmd
+## <a name="add-tier-interaction-data-with-vsperfaspnetcmd"></a>Přidání dat interakce vrstev pomocí VSPerfASPNETCmd
 
 Nástroj příkazového řádku VSPerfASPNETCmd vám umožňuje snadno profil [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace. Ve srovnání s **VSPerfCmd** nástroj příkazového řádku, jsou omezeny možnosti, musí být nastaveny žádné proměnné prostředí a není vyžadováno restartování počítače. Tyto funkce VSPerfASPNETCmd činí kolekce dat interakce vrstev velmi snadné.
 

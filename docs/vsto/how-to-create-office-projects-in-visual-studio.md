@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 50739bfde7578a49226e5396c8eeb78e56c4b0ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29e84c08241bba09ab7923fa5997333f2371270d
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Postupy: Vytváření projektů pro systém Office v prostředí Visual Studio
   Můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] vytvoření doplňku VSTO a na úrovni dokumentu vlastní nastavení pro aplikace Microsoft Office. Další informace o těchto typech projektů najdete v tématu [přehled vývoje řešení pro systém Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).  
@@ -61,29 +61,29 @@ ms.lasthandoff: 04/16/2018
   
      Umístění mít následujících formátů:  
   
-    -   [*jednotky*\]: \  
+      * [*jednotky*\]\:  
   
-    -   \\\\*Server*\\*sdílené složky*  
+      * \\\\*Server*\\*sdílené složky*  
   
      Nepoužívejte tyto znaky v umístění:  
   
-    -   Znak hvězdičky (*)  
+      * Znak hvězdičky (*)  
   
-    -   Svislé čáry (|)  
+      * Svislé čáry (|)  
   
-    -   Dvojtečkou (:) (S výjimkou následujících písmeno jednotky.)  
+      * Dvojtečkou (:) (S výjimkou následujících písmeno jednotky.)  
   
-    -   Dvojité uvozovky (") (cesty, které obsahují mezery se nemusí znaky uvozovek).  
+      * Dvojité uvozovky (") (cesty, které obsahují mezery se nemusí znaky uvozovek).  
   
-    -   Menší než (\<)  
+      * Menší než (\<)  
   
-    -   Větší než (>)  
+      * Větší než (>)  
   
-    -   Otazník (?)  
+      * Otazník (?)  
   
-    -   Znak procenta (%)  
+      * Znak procenta (%)  
   
-7.  Vyberte **OK** tlačítko.  
+7. Vyberte **OK** tlačítko.
   
     > [!NOTE]  
     >  Projekty doplňku ukládají vždy při jejich vytváření. Nemohou být vytvářeny jako dočasné projekty. Další informace o dočasné projekty najdete v tématu [dočasné projekty](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
@@ -123,7 +123,7 @@ ms.lasthandoff: 04/16/2018
   
      Umístění mít následujících formátů:  
   
-    -   [*jednotky*\]: \  
+    -   [*jednotky*\]\:  
   
     -   \\\\*Server*\\*sdílené složky*  
   

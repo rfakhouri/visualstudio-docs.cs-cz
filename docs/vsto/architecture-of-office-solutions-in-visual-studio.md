@@ -1,5 +1,5 @@
 ---
-title: Architektura řešení pro systém Office v sadě Visual Studio | Microsoft Docs
+title: Architektura řešení pro systém Office v sadě Visual Studio
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,13 +17,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3796ba362102f1628e218a730d10fc600c744262
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: b77990219d6b31d86a919ca1a33ab415a6a9ed86
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektura řešení pro systém Office v sadě Visual Studio
+# <a name="architecture-of-office-solutions-in-visual-studio"></a>Architektura řešení pro systém Office v sadě Visual Studio
   Témata v této části poskytují informace o fungování řešení vytvořená pomocí doplňku Office developer tools v sadě Visual Studio.  
   
 > [!NOTE]  
@@ -36,7 +36,7 @@ ms.lasthandoff: 04/28/2018
  [Architektura doplňků VSTO](../vsto/architecture-of-vsto-add-ins.md)  
  Popisuje součástí doplňků VSTO a jak jsou načteny aplikace.  
   
- [Přehled nástrojů Visual Studio Tools for Office runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
+ [Visual Studio Tools for Office Runtime – přehled](../vsto/visual-studio-tools-for-office-runtime-overview.md)  
  Popisuje různé verze modulu runtime, který se používá pro řešení pro systém Office.  
   
  [Položky registru pro doplňky VSTO](../vsto/registry-entries-for-vsto-add-ins.md)  
@@ -52,7 +52,7 @@ ms.lasthandoff: 04/28/2018
  [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  Obsahuje odkazy na informace o konfiguraci vývojovém počítači k vytvoření Office řešení, jak začít vytváření řešení a co se změnilo od předchozích verzí sady Office developer tools v sadě Visual Studio.  
   
- [Navrhování a tvorba řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
+ [Návrh a vytvoření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md)  
  Obsahuje odkazy na informace o vytváření řešení pro systém Office.  
   
  [Obecné referenční informace &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  

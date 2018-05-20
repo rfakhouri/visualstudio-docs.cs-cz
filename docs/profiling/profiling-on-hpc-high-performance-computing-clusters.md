@@ -21,15 +21,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e4542289e0d9dceeeadf972db714148d4e1bec4d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80f6d697cecdc63dd013ae91631b350c51fc0e90
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilace v klastrech HPC (High Performance Computing)
+# <a name="profile-on-hpc-high-performance-computing-clusters"></a>Clustery profilu v prostředí HPC (vysoký výkon computing)
 
-Pomocí metody vzorkování nástroje Visual Studio profilace, můžete se profil na výpočetní uzly clusterů Microsoft Windows HPC. Další informace o prostředí HPC naleznete v části [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) na webu společnosti Microsoft.
+Pomocí metody vzorkování nástroje Visual Studio profilace, můžete se profil na výpočetní uzly clusterů Microsoft Windows HPC. Další informace o prostředí HPC naleznete v části [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) na webu společnosti Microsoft.
 
 ## <a name="prerequisites"></a>Požadavky
 
@@ -57,7 +57,7 @@ Chcete-li profil na výpočetním uzlu HPC, musíte udělat následující:
 |*%FxPath%*|Cesta ke [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] Instalační služby. Na instalačním médiu nástroje Visual Studio je cesta: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|
 |*%ProfilerPath%*|Cesta k samostatnou verzi nástrojích pro profilaci Instalační služby. Na instalačním médiu nástroje Visual Studio je cesta: samostatné Profiler\x64\vs_profiler.exe|
 
-## <a name="profiling-on-an-hpc-compute-node"></a>Profilace do výpočetního uzlu HPC
+## <a name="profile-on-an-hpc-compute-node"></a>Profil do výpočetního uzlu HPC
 
 Relace profilování nakonfigurujete pomocí Průvodce výkonu HPC k zadání informací HPC, clusteru a cíle. Na stránkách vlastností relace výkonu můžete nastavit další možnosti. Nástroje pro profilaci automaticky nasadit binární soubory nutné cíl a spusťte profileru a aplikace prostředí HPC.
 
@@ -105,7 +105,7 @@ Relace profilování nakonfigurujete pomocí Průvodce výkonu HPC k zadání in
 
 10. Klikněte na tlačítko **Dokončit**.
 
-## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Nastavení vlastností HPC profilace pomocí stránky vlastností relace výkonu
+## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Nastavit HPC profilace vlastnosti pomocí stránky vlastností relace výkonu
 
 Můžete změnit vlastnosti výkonnostní relace, která jste nastavili v prostředí HPC profilace průvodci na stránce Vlastnosti spusťte HPC stránky vlastností relace výkonu. Můžete nastavit další možnosti na stránce HPC rozšířené vlastnosti.
 
@@ -134,7 +134,7 @@ Můžete změnit vlastnosti výkonnostní relace, která jste nastavili v prost�
 |**Vzdálené pracovní adresář**|Určuje cestu ke složce, který je používán instancí procesu na jednotlivých výpočetních uzlů.|
 |**Umístění nasazení**|Určuje cestu k adresáři, který používá HPC server do fáze bitových kopií pro nasazení.|
 
-### <a name="advanced-properties"></a>Upřesnit vlastnosti
+### <a name="advanced-properties"></a>Rozšířené vlastnosti
 
 |Vlastnost|Popis|
 |--------------|-----------------|

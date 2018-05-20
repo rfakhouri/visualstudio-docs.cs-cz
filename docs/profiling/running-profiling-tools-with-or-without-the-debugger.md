@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7208f687ea38475603b8bfcae7e9ee55ab3ae58
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="running-profiling-tools-with-or-without-the-debugger"></a>Spuštění nástroje pro profilaci s nebo bez ladicí program
+# <a name="run-profiling-tools-with-or-without-the-debugger"></a>Spustit profilování nástroje s nebo bez ladicí program
 Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (například **využití procesoru** a **využití paměti**) lze spustit s nebo bez něj. Nástroje pro sledování výkonu non-ladicí program slouží ke spuštění na verzi konfigurace, zatímco integrovaná s ladicím programem nástroje jsou určeny pro spuštění pro ladění konfigurace.  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>Měly být spuštěny s nebo bez ladicího programu nástroj?  
@@ -39,9 +39,9 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Shromažďovat data profilování při ladění  
  Následující část se zabývá ladění místně. Můžete zjistit o ladění na zařízení nebo vzdálené ladění, v pozdějších částech.  
   
-1.  Otevřete projekt, kterou chcete ladit, pak klikněte na tlačítko **ladění / spusťte ladění** (nebo **spustit** na panelu nástrojů nebo **F5**).  
+1.  Otevřete projekt, kterou chcete ladit, pak klikněte na tlačítko **ladění** > **spustit ladění** (nebo **spustit** na panelu nástrojů nebo **F5**).  
   
-2.  **Diagnostické nástroje** okno se automaticky zobrazí, pokud jste vypnuli ho. Zobrazte okno znovu, klikněte na tlačítko **ladění / Windows / zobrazit diagnostické nástroje**.  
+2.  **Diagnostické nástroje** okno se automaticky zobrazí, pokud jste vypnuli ho. Zobrazte okno znovu, klikněte na tlačítko **ladění** > **Windows** > **zobrazit diagnostické nástroje**.  
   
 3.  Spusťte scénáře, které chcete shromažďovat data.  
   
@@ -51,11 +51,11 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
   
      ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  Můžete vybrat, jestli chcete zobrazit **využití paměti** nebo **využití procesoru** (nebo obě) s **vyberte nástroje** nastavení na panelu nástrojů. Pokud používáte Visual Studio Enterprise, můžete povolit nebo zakázat IntelliTrace v **nástroje / Možnosti / IntelliTrace**.  
+4.  Můžete vybrat, jestli chcete zobrazit **využití paměti** nebo **využití procesoru** (nebo obě) s **vyberte nástroje** nastavení na panelu nástrojů. Pokud používáte Visual Studio Enterprise, můžete povolit nebo zakázat IntelliTrace v **nástroje** > **možnosti** > **IntelliTrace**.  
   
 5.  Relace diagnostiky skončí, když zastavíte ladění.  
   
- Ve Visual Studiu 2015 Update 1 **diagnostické nástroje** okno je jednodušší pro byste se zaměřit na události, které vás zajímají.   Názvy události se teď zobrazují s předponami kategorie (**gesto**, **výstup programu**, **zarážek**, **souboru** atd.), abyste mohli rychle Vyhledejte v seznamu pro danou kategorii nebo přeskočit kategorií, které vám nezáleží.  
+ Ve Visual Studiu 2015 Update 1 **diagnostické nástroje** okno je jednodušší pro byste se zaměřit na události, které vás zajímají.   Názvy události se teď zobrazují s předponami kategorie (**gesto**, **výstup programu**, **zarážek**, **souboru**atd), abyste mohli rychle Vyhledejte v seznamu pro danou kategorii nebo přeskočit kategorií, které vám nezáleží.  
   
  Okno teď má vyhledávací pole, aby mohli najít si konkrétní řetězec kdekoli v seznamu událostí. Následující obrázek zobrazuje výsledky hledání pro řetězec "instalaci" odpovídající čtyři události:  
   
@@ -72,7 +72,7 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
   
 1.  Otevřete projekt v sadě Visual Studio.  
   
-2.  Na **ladění** nabídce zvolte **profileru výkonu...** (Klávesovou zkratku: Alt + F2).  
+2.  Na **ladění** nabídce zvolte **výkonu profileru** (klávesovou zkratku: **Alt**+**F2**).  
   
 3.  Na stránce spuštění diagnostiky zvolte jeden nebo více nástroje ke spuštění v relaci. Zobrazí se pouze nástroje, které se vztahují na typu projektu, operační systém a programovací jazyk. Když zvolíte diagnostický nástroj, výběr nástroje, které nelze spustit ve stejné relaci diagnostiky jsou zakázány. Zde je, jak může vypadat vaše volby pro aplikace UWP C#:  
   
@@ -106,7 +106,7 @@ Visual Studio nyní nabízí možnost výkonu nástroje, z nichž některé (nap
 |![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|Pokud data zahrnují informace z několika nástrojů, podrobnosti pro tento nástroj se shromažďují na kartách.|  
 |![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|Nástroj může mít jeden nebo více zobrazení podrobností. Zobrazení je filtrovaná podle vybrané oblasti časové osy.|  
   
-## <a name="setting-the-analysis-target-to-another-device"></a>Nastavení cílového analysis na jiné zařízení.  
+## <a name="set-the-analysis-target-to-another-device"></a>Nastavit cíl analýzy na jiné zařízení.  
  Kromě toho aplikace od projekt Visual Studio, můžete také spustit diagnostické relací na alternativní cíle. Například můžete chtít diagnostikovat problémy s výkonem na verzi vaší aplikace, která byla nainstalována z obchodu s aplikacemi Windows.  
   
  ![Vyberte cíl analysis diagnostické nástroje](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  

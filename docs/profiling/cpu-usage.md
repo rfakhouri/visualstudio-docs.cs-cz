@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 267d0a55ae648c68ed4228b3ad4a206bad1f5148
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 Když potřebujete prozkoumat problémy s výkonem v aplikaci, je vhodné oddělení na zahájení pochopení, jak používá procesoru. **Využití procesoru** nástroj ukazuje, kde je procesoru výdaje čas provádění Visual C++, Visual C# nebo Visual Basic a kód jazyka JavaScript. Od verze Visual Studio 2015 Update 1, můžete zobrazit rozpis podle funkce využití procesoru bez opuštění ladicího programu. Můžete zapnout procesoru profilace zapnout a vypnout při ladění a zobrazit výsledky při spuštění je zastaveno, například zarážky.  
@@ -40,7 +40,7 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
   
     -   Pro aplikace Windows Phone, shromažďování dat přímo z **zařízení** poskytuje nejaktuálnější data.  
   
-2.  Na **ladění** nabídce zvolte **profileru výkonu...** .  
+2.  Na **ladění** nabídce zvolte **výkonu profileru**.  
   
 3.  Zvolte **využití procesoru** a potom zvolte **spustit**.  
   
@@ -56,7 +56,7 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
   
  ![Sestava CpuUsage](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
-## <a name="analyze-the-cpu-usage-report"></a>Analýza využití procesoru sestavy  
+## <a name="analyze-the-cpu-usage-report"></a>Analýza sestav o využití procesoru  
   
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Využití procesoru stromu volání  
  Pokud chcete začít, vysvětlení volání stromu informace, vyberte znovu `GetMaxNumberButton_Click` segmentovat a podívejte se na podrobnosti o stromu hovoru.  
@@ -96,7 +96,7 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
 |**Vlastního procesoru (ms)**|Počet milisekund, po stráví ve volání funkce v vybraný časový rozsah a funkce, které byly volá funkci.|  
 |**Modul**|Název modul, který obsahuje funkce, nebo počet modulů obsahující funkce v uzlu služby [externí kód].|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchronní funkce ve využití procesoru stromu volání  
+###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchronní funkce ve stromové struktuře volání využití procesoru  
  Když kompilátor narazí asynchronní metodu, vytvoří třídu skrytá k řízení provádění metody. Třída je koncepčně, stav počítač, který obsahuje seznam generované kompilátorem funkce, které volají operace původní metody asynchronně, a zpětná volání, Plánovač a iterátory potřeba správně spustit. Při původní metoda je volána metodou nadřazeného, modulu runtime odebere metodu z nadřazeného objektu kontextu spuštění a spustí metody třídy skryté v kontextu systému a framework kód, který řídí spuštění aplikace. Asynchronní metody jsou často, ale ne vždy provést na jeden nebo více různých vláknech. Tento kód se zobrazí ve stromové struktuře využití procesoru volání jako podřízené objekty **[externí kód]** uzlu bezprostředně pod na nejvyšší uzel stromu.  
   
  Pokud chcete zobrazit tento v našem příkladu, znovu vyberte `GetMaxNumberAsyncButton_Click` segmentu v časovou osu.  

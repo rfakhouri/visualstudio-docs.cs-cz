@@ -1,12 +1,13 @@
 ---
-title: "reduce – metoda (pole) (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: reduce – metoda (pole) (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - JavaScript
@@ -17,15 +18,15 @@ helpviewer_keywords:
 - arrays [JavaScript], reduce method
 - reduce method [JavaScript]
 ms.assetid: 48d069e0-e083-494f-86d5-d459d2377dc5
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76279f66f8e3180fdebd73b83eb31c7368cefc75
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: d99f92d90885f26b19392b476ee64ae17bd40aed
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="reduce-method-array-javascript"></a>reduce – metoda (Pole) (JavaScript)
 Volání funkce zadaný zpětného volání pro všechny elementy pole. Vrácená hodnota funkce zpětného volání je akumulovaný výsledek poskytnutý jako argument v dalším volání funkce zpětného volání.  
@@ -58,7 +59,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="remarks"></a>Poznámky  
  Pokud `initialValue` je k dispozici, `reduce` volání metod `callbackfn` funkce jednou pro každý prvek v poli ve vzestupném pořadí index. Pokud `initialValue` není k dispozici, `reduce` volání metod `callbackfn` funkce pro každý element, počínaje druhý prvkem.  
   
- Návratová hodnota funkce zpětného volání k dispozici jako `previousValue` argument na další volání funkce zpětného volání. Návratová hodnota poslední volání funkce zpětného volání se vrátí hodnotu, která `reduce` metoda.  
+ Návratová hodnota funkce zpětného volání k dispozici jako `accumulator` argument na další volání funkce zpětného volání. Návratová hodnota poslední volání funkce zpětného volání se vrátí hodnotu, která `reduce` metoda.  
   
  Funkce zpětného volání není volána pro chybějící prvky pole.  
   
@@ -68,7 +69,7 @@ array1.reduce(callbackfn[, initialValue])
 ## <a name="callback-function-syntax"></a>Syntaxe funkce zpětného volání  
  Syntaxe funkce zpětného volání je následující:  
   
- `function callbackfn(previousValue, currentValue, currentIndex, array1)`  
+ `function callbackfn(accumulator, currentValue, currentIndex, array1)`  
   
  Funkce zpětného volání můžou deklarovat pomocí až čtyři parametry.  
   
@@ -76,7 +77,7 @@ array1.reduce(callbackfn[, initialValue])
   
 |Argument zpětného volání|Definice|  
 |-----------------------|----------------|  
-|`previousValue`|Hodnota z předchozího volání funkce zpětného volání. Pokud `initialValue` zajišťuje `reduce` metody `previousValue` je `initialValue` prvním je tato funkce volána.|  
+|`accumulator`|Hodnota z předchozího volání funkce zpětného volání. Pokud `initialValue` zajišťuje `reduce` metody `accumulator` je `initialValue` prvním je tato funkce volána.|  
 |`currentValue`|Hodnota aktuálního pole elementu.|  
 |`currentIndex`|Číselný index aktuálního elementu pole.|  
 |`array1`|Objekt pole obsahující prvek.|  
@@ -86,13 +87,13 @@ array1.reduce(callbackfn[, initialValue])
   
  Pokud `initialValue` je poskytnutá metodě snižte:  
   
--   `previousValue` Argument je `initialValue`.  
+-   `accumulator` Argument je `initialValue`.  
   
 -   `currentValue` Argument je hodnota první prvek v poli.  
   
  Pokud `initialValue` není k dispozici:  
   
--   `previousValue` Argument je hodnota první prvek v poli.  
+-   `accumulator` Argument je hodnota první prvek v poli.  
   
 -   `currentValue` Argument je hodnota v poli druhý elementu.  
   
@@ -109,12 +110,12 @@ array1.reduce(callbackfn[, initialValue])
 |Prvek je odstraněn z pole.|Ne, pokud tento prvek již nebyl předán funkci zpětného volání.|  
   
 ## <a name="example"></a>Příklad  
- Následující příklad zřetězí pole hodnot do řetězce, hodnoty se oddělení "::". Protože je zadána žádná počáteční hodnota `reduce` metoda, první volání funkce zpětného volání má "abc" jako `previousValue` argument a "def" jako `currentValue` argument.  
+ Následující příklad zřetězí pole hodnot do řetězce, hodnoty se oddělení "::". Protože je zadána žádná počáteční hodnota `reduce` metoda, první volání funkce zpětného volání má "abc" jako `accumulator` argument a "def" jako `currentValue` argument.  
   
 ```JavaScript  
 // Define the callback function.  
-function appendCurrent (previousValue, currentValue) {  
-    return previousValue + "::" + currentValue;  
+function appendCurrent (accumulator, currentValue) {  
+    return accumulator + "::" + currentValue;  
     }  
   
 // Create an array.  
@@ -136,8 +137,8 @@ document.write(result);
   
 ```JavaScript  
 // Define the callback function.  
-function addRounded (previousValue, currentValue) {  
-    return previousValue + Math.round(currentValue);  
+function addRounded (accumulator, currentValue) {  
+    return accumulator + Math.round(currentValue);  
     }  
   
 // Create an array.  
@@ -154,10 +155,10 @@ document.write (result);
  Následující příklad přidá hodnoty v matici. `currentIndex` a `array1` parametry se používají ve funkci zpětného volání.  
   
 ```JavaScript  
-function addDigitValue(previousValue, currentDigit, currentIndex, array) {  
+function addDigitValue(accumulator, currentDigit, currentIndex, array) {  
     var exponent = (array.length - 1) - currentIndex;  
     var digitValue = currentDigit * Math.pow(10, exponent);  
-    return previousValue + digitValue;  
+    return accumulator + digitValue;  
     }  
   
 var digits = [4, 1, 2, 5];  
@@ -173,17 +174,17 @@ document.write (result);
  Následující příklad načte pole, které obsahuje pouze hodnoty, které jsou v rozmezí od 1 do 10 v jiné pole. Počáteční hodnota poskytnutá `reduce` metoda je prázdné pole.  
   
 ```JavaScript  
-function Process(previousArray, currentValue) {  
+function Process(accumulatedArray, currentValue) {  
     // If currentValue is between 1 and 10,   
     // append currentValue to the array.  
     var nextArray;  
     if (currentValue >= 1 && currentValue <= 10)  
-        nextArray = previousArray.concat(currentValue);  
+        nextArray = accumulatedArray.concat(currentValue);  
     else  
-        nextArray = previousArray;  
+        nextArray = accumulatedArray;  
   
     // If this is not the last call by the reduce method,  
-    // the returned array is previousArray on the next call.  
+    // the returned array is accumulatedArray on the next call.  
     // If this is the last call by the reduce method, the  
     // returned array is the return value of the reduce method.  
     return nextArray;  
@@ -206,4 +207,4 @@ document.write("result array=" + resultArray);
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
 ## <a name="see-also"></a>Viz také  
- [reduceright – metoda (pole)](../../javascript/reference/reduceright-method-array-javascript.md)
+ [reduceRight – metoda (Array)](../../javascript/reference/reduceright-method-array-javascript.md)

@@ -1,7 +1,7 @@
 ---
 title: Změnit protokolu (Visual Studio Tools for Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/23/2018
+ms.date: 05/07/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,14 +10,52 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 86ccb5f78f939fa617216fb84cb71a934e314b1d
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 80fdd724d9d5bca57e0d8dab44ac4a0bef7238f2
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Protokol změn (Visual Studio Tools for Unity, Windows)
 Visual Studio Tools for Unity změnit protokolu.
+
+## <a name="3701"></a>3.7.0.1
+ Vydaná 2018-05-07
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Instalační program:**
+
+    -   Opravené závislostí problém při použití experimentální sestavení.
+
+## <a name="3700"></a>3.7.0.0
+ Vydaná 2018-05-07
+
+### <a name="new-features"></a>Nové funkce
+
+-   **Ladění:**
+
+    -   Byla přidána podpora pro orchestrovat ladění (ladění více hráči nebo editor s stejné relace sady Visual Studio).
+    
+    -   Přidaná podpora pro Android USB player ladění.
+    
+    -   Přidaná podpora pro UPW nebo IL2CPP player ladění.
+
+-   **Vyhodnocení:**
+
+    -   Přidaná podpora pro šestnáctkové specifikátory.
+    
+    -   Vylepšené kukátko – okno hodnocení produktu.
+
+### <a name="bug-fixes"></a>Opravy chyb
+
+-   **Integrace:**
+
+    -   Opravené použití nastavení výjimky.
+
+-   **Generování projektu:**
+
+    -   Vylučte z generování balíček správce kompilačních jednotek.
 
 ## <a name="3605"></a>3.6.0.5
  Vydaná 2018-03-13
@@ -26,7 +64,7 @@ Visual Studio Tools for Unity změnit protokolu.
 
 -   **Generování projektu:**
 
-    -   Přidaná podpora pro nový generátor projektu v Unity 2018.1
+    -   Byla přidána podpora pro nový generátor projektu v Unity 2018.1.
 
 ### <a name="bug-fixes"></a>Opravy chyb
 

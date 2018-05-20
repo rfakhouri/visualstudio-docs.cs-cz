@@ -1,5 +1,5 @@
 ---
-title: Nasazení řešení Office s použitím technologie ClickOnce | Microsoft Docs
+title: Nasazení řešení Office s použitím technologie ClickOnce
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0b5e1b9437412f343874b8cca6513a551d9900d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29c0e6691f31c6092b9d2222064c59d7fb8839db
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="deploying-an-office-solution-by-using-clickonce"></a>Nasazení řešení Office s použitím technologie ClickOnce
-  Pokud používáte ClickOnce, můžete nasadit řešení pro Office v méně kroků. Když publikujete aktualizace, vaše řešení je automaticky rozpozná a nainstaluje. Technologie ClickOnce ale vyžaduje, aby bylo řešení nainstalováno zvlášť pro každého uživatele počítače. Proto byste měli zvážit použití Instalační služby systému Windows (souboru .msi), pokud vaše řešení bude používat více než jeden uživatel ve stejném počítači.  
+# <a name="deploy-an-office-solution-by-using-clickonce"></a>Nasazení řešení Office s použitím technologie ClickOnce
+  Pokud používáte ClickOnce, můžete nasadit řešení pro Office v méně kroků. Když publikujete aktualizace, vaše řešení je automaticky rozpozná a nainstaluje. Technologie ClickOnce ale vyžaduje, aby bylo řešení nainstalováno zvlášť pro každého uživatele počítače. Proto byste měli zvážit použití Instalační služby systému Windows (*.msi*) je-li více než jeden uživatel spustí řešení ve stejném počítači.  
   
 ## <a name="in-this-topic"></a>V tomto tématu  
   
@@ -45,10 +45,10 @@ ms.lasthandoff: 04/16/2018
   
 -   [Vrácení řešení starší verze](#Roll)  
   
- Další informace o nasazení řešení Office tak, že vytvoříte soubor Instalační služby systému Windows najdete v tématu [nasazení řešení Office pomocí Instalační služba systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
+ Další informace o nasazení řešení Office tak, že vytvoříte soubor Instalační služby systému Windows najdete v tématu [nasazení řešení Office s použitím Instalační služby systému Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
 ##  <a name="Publish"></a> Publikování řešení  
- Řešení můžete publikovat pomocí **Průvodci publikováním** nebo **Návrhář projektu**. V tomto postupu budete používat **Návrhář projektu** protože poskytuje kompletní sadu možnosti publikování. V tématu [Průvodce publikováním &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
+ Řešení můžete publikovat pomocí **Průvodci publikováním** nebo **Návrhář projektu**. V tomto postupu budete používat **Návrhář projektu** protože poskytuje kompletní sadu možnosti publikování. V tématu [Průvodce Publikovat &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
 #### <a name="to-publish-the-solution"></a>Publikování řešení  
   
@@ -85,7 +85,7 @@ ms.lasthandoff: 04/16/2018
 9. Pokud vaše řešení cílem rozhraní .NET Framework 4.5, vyberte také **Visual Studio 2010 Tools for Office Runtime** zaškrtávací políčko.  
   
     > [!NOTE]  
-    >  Ve výchozím nastavení toto zaškrtávací políčko se nezobrazuje. Aby se toto zaškrtávací políčko zobrazilo, je nutné vytvořit balíček zaváděcího nástroje. V tématu [vytváření balíčku zaváděcího nástroje pro Office 2013 VSTO doplňku sadou Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
+    >  Ve výchozím nastavení toto zaškrtávací políčko se nezobrazuje. Aby se toto zaškrtávací políčko zobrazilo, je nutné vytvořit balíček zaváděcího nástroje. V tématu [vytvořit balíček zaváděcího nástroje pro Office 2013 VSTO doplňku sadou Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
   
 10. V části **zadejte umístění instalace pro požadavky**, vyberte jednu z možností, které jsou uvedeny a potom zvolte **OK** tlačítko.  
   
@@ -131,14 +131,14 @@ ms.lasthandoff: 04/16/2018
      ![Struktura složky publikování](../vsto/media/publishfolderstructure.png "publikování struktura složek")  
   
     > [!NOTE]  
-    >  ClickOnce příponu .deploy připojí k sestavení tak, aby zabezpečené Instalace Internetové informační služby (IIS) se nebude blokovat soubory z důvodu nebezpečné rozšíření. Až uživatel řešení nainstaluje, technologie ClickOnce příponu .deploy odstraní.  
+    >  ClickOnce připojí *.deploy* rozšíření sestavení tak, aby zabezpečené Instalace Internetové informační služby (IIS) se nebude blokovat soubory z důvodu nebezpečné rozšíření. Když uživatel nainstaluje řešení, ClickOnce odebere *.deploy* rozšíření.  
   
 14. Zkopírujte soubory řešení do umístění instalace, které jste zadali v předchozím kroku tohoto postupu.  
   
 ##  <a name="Trust"></a> Rozhodněte, jak chcete udělit vztah důvěryhodnosti k řešení  
- Aby bylo možné řešení spustit v počítačích uživatelů, musíte buď zajistit jeho důvěryhodnost, nebo uživatelé musejí při instalaci řešení reagovat na výzvu k potvrzení jeho důvěryhodnosti. Pokud chcete zajistit důvěryhodnost řešení, podepište manifesty pomocí certifikátu, který určuje známého a důvěryhodného vydavatele. V tématu [důvěřující řešení pomocí podepisování aplikace a nasazení manifesty](../vsto/granting-trust-to-office-solutions.md#Signing).  
+ Aby bylo možné řešení spustit v počítačích uživatelů, musíte buď zajistit jeho důvěryhodnost, nebo uživatelé musejí při instalaci řešení reagovat na výzvu k potvrzení jeho důvěryhodnosti. Pokud chcete zajistit důvěryhodnost řešení, podepište manifesty pomocí certifikátu, který určuje známého a důvěryhodného vydavatele. V tématu [důvěřovat řešení pomocí podepisování manifestů aplikace a nasazení](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
- Pokud nasazujete přizpůsobení na úrovni dokumentu a chcete vložit dokument do složky v počítači uživatele nebo zpřístupnit dokument na webu služby SharePoint, ujistěte se, že Office důvěřuje umístění dokumentu. V tématu [udělení důvěry dokumentům](../vsto/granting-trust-to-documents.md).  
+ Pokud nasazujete přizpůsobení na úrovni dokumentu a chcete vložit dokument do složky v počítači uživatele nebo zpřístupnit dokument na webu služby SharePoint, ujistěte se, že Office důvěřuje umístění dokumentu. V tématu [udělit vztah důvěryhodnosti k dokumentům](../vsto/granting-trust-to-documents.md).  
   
 ##  <a name="Helping"></a> Pomoc uživatelům s instalací řešení  
  Uživatelé mohou řešení nainstalovat tak, že spustí instalační program, otevřou manifest nasazení nebo, v případě přizpůsobení na úrovni dokumentu, přímo otevřou dokument. Osvědčeným postupem je instalace řešení pomocí instalačního programu. Tyto dva přístupy nemáte zkontrolujte, zda je nainstalovaný požadovaný software. Pokud uživatelé chtějí otevřít dokument z umístění instalace, musejí jej přidat do seznamu důvěryhodných umístění v Centru zabezpečení aplikace Office.  
@@ -148,16 +148,16 @@ ms.lasthandoff: 04/16/2018
   
  Osvědčeným postupem je, že by uživatelé měli otevřít kopii dokumentu ve svém počítači, aby nemohla nastat situace, kdy se více uživatelů současně pokusí otevřít stejnou kopii. Pro vynucení tohoto postupu můžete nakonfigurovat instalační program tak, aby dokument zkopíroval do počítačů uživatelů. V tématu [do počítače koncového uživatele (pouze přizpůsobení na úrovni dokumentu) umístit dokumentu řešení](#Put).  
   
-### <a name="installing-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Instalace řešení pomocí otevření manifestu nasazení z webu služby IIS  
- Uživatelé mohou nainstalovat řešení pro Office tak, že z webu otevřou manifest nasazení. Zabezpečená instalace Internetové informační služby (IIS) ale bude blokovat soubory s příponou .vsto. Typ MIME musí být definován ve službě IIS před nasazením řešení pro Office pomocí služby IIS.  
+### <a name="install-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Nainstalovat řešení otevřením manifest nasazení z webu IIS  
+ Uživatelé mohou nainstalovat řešení pro Office tak, že z webu otevřou manifest nasazení. Ale zabezpečené Instalace Internetové informační služby (IIS) bude blokovat soubory, které mají *.vsto* rozšíření. Typ MIME musí být definován ve službě IIS před nasazením řešení pro Office pomocí služby IIS.  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>Přidání typu MIME .vsto do služby IIS 6.0  
   
-1.  Na serveru, který běží služby IIS 6.0, zvolte **spustit**, **všechny programy**, **nástroje pro správu**, **Správce Internetové informační služby (IIS)**.  
+1.  Na serveru, který běží služby IIS 6.0, zvolte **spustit** > **všechny programy** > **nástroje pro správu**  >   **Internetová informační služba (IIS) Manager**. 
   
 2.  Zvolte název počítače, **weby** složku nebo webový server, který konfigurujete.  
   
-3.  Na řádku nabídek zvolte **akce**, **vlastnosti**.  
+3.  Na řádku nabídek zvolte **akce** > **vlastnosti**.  
   
 4.  Na **hlavičky protokolu HTTP** , zvolte **typy MIME** tlačítko.  
   
@@ -166,28 +166,28 @@ ms.lasthandoff: 04/16/2018
 6.  V **typ MIME** okno, zadejte **.vsto** jako rozšíření, zadejte **application/x-ms-vsto** jako MIME zadejte a potom použijte nové nastavení.  
   
     > [!NOTE]  
-    >  Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Následně je nutné vyprázdnit diskovou mezipaměť prohlížeče. Poté zkuste soubor .vsto znovu otevřít.  
+    >  Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Musíte pak vyprázdnit mezipaměť v prohlížeči na disk a potom se pokusíte otevřít *.vsto* znovu.  
   
 ##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>Chcete-li přidat typ MIME .vsto pro službu IIS 7.0  
   
-1.  Na serveru, který běží služby IIS 7.0, zvolte **spustit**, **všechny programy**, **Příslušenství**.  
+1.  Na serveru, který běží služby IIS 7.0, zvolte **spustit** > **všechny programy** > **Příslušenství**.  
   
 2.  Otevřete místní nabídku pro **příkazového řádku**a potom zvolte **spustit jako správce.**  
   
 3.  V **otevřete** pole, zadejte následující cestu a potom zvolte **OK** tlačítko.  
   
-    ```  
+    ```cmd
     %windir%\system32\inetsrv   
     ```  
   
 4.  Zadejte následující příkaz a poté použijte nová nastavení.  
   
-    ```  
+    ```cmd
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']  
     ```  
   
     > [!NOTE]  
-    >  Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Následně je nutné vyprázdnit diskovou mezipaměť prohlížeče. Poté zkuste soubor .vsto znovu otevřít.  
+    >  Aby se změny projevily, je nutné restartovat službu Publikování na webu nebo počkat na recyklaci pracovního procesu. Musíte pak vyprázdnit mezipaměť v prohlížeči na disk a potom se pokusíte otevřít *.vsto* znovu.  
   
 ##  <a name="Put"></a> Vložit dokument řešení do počítače koncového uživatele (pouze úpravy na úrovni dokumentů)  
  Vytvořením akce po nasazení můžete zkopírovat dokumentu vašeho řešení do počítače koncového uživatele pro ně. Tímto způsobem uživatel nemá k dokumentu ručně zkopírovat z umístění instalace se svými počítači po instalaci vaše řešení. Budete muset vytvořit třídu, která definuje akce po nasazení, sestavení a publikování řešení, upravte manifest aplikace a manifest aplikace a nasazení znovu podepsat.  
@@ -196,7 +196,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Vytvoření třídy, která definuje akci po nasazení  
   
-1.  Na řádku nabídek zvolte **soubor**, **přidat**, **nový projekt**.  
+1.  Na řádku nabídek zvolte **soubor** > **přidat** > **nový projekt**.  
   
 2.  V **přidat nový projekt** v dialogovém **nainstalovaných šablonách** podokně, vyberte **Windows** složky.  
   
@@ -206,9 +206,9 @@ ms.lasthandoff: 04/16/2018
   
 5.  V **Průzkumníku řešení**, vyberte **FileCopyPDA** projektu.  
   
-6.  Na řádku nabídek zvolte **projektu**, **přidat odkaz na**.  
+6.  Na řádku nabídek zvolte **projektu** > **přidat odkaz na**.  
   
-7.  Na **.NET** přidejte odkazy na Microsoft.VisualStudio.Tools.Applications.Runtime a Microsoft.VisualStudio.Tools.Applications.ServerDocument.  
+7.  Na **.NET** přidejte odkazy na `Microsoft.VisualStudio.Tools.Applications.Runtime` a `Microsoft.VisualStudio.Tools.Applications.ServerDocument`.  
   
 8.  Přejmenujte třídy pro `FileCopyPDA`a poté nahraďte obsah souboru kódem. Tento kód provede následující:  
   
@@ -233,13 +233,13 @@ ms.lasthandoff: 04/16/2018
   
 5.  V **Průzkumníku řešení**, vyberte **ExcelWorkbook** projektu.  
   
-6.  V řádku nabídek zvolte **projektu**, **novou složku**.  
+6.  V řádku nabídek zvolte **projektu** > **novou složku**.  
   
-7.  Zadejte **Data**a potom vyberte klávesu Enter.  
+7.  Zadejte **Data**a potom zvolte **Enter** klíč.  
   
 8.  V **Průzkumníku řešení**, vyberte **Data** složky.  
   
-9. Na řádku nabídek zvolte **projektu**, **přidat existující položku**.  
+9. Na řádku nabídek zvolte **projektu** > **přidat existující položku**.  
   
 10. V **přidat existující položku** dialogové okno, přejděte do výstupního adresáře pro **ExcelWorkbook** projekt, vyberte **ExcelWorkbook.xlsx** souboru a potom vyberte  **Přidat** tlačítko.  
   
@@ -263,7 +263,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Po `</vstav3:update>` elementu, přidejte následující kód. Pro atribut třídy `<vstav3:entryPoint>` elementu, použijte následující syntaxi: *NamespaceName.ClassName*. V následujícím příkladu, názvy oboru názvů a třídy jsou stejné, takže je výsledný název vstupního bodu `FileCopyPDA.FileCopyPDA`.  
   
-    ```  
+    ```xml
     <vstav3:postActions>  
       <vstav3:postAction>  
         <vstav3:entryPoint  
@@ -288,7 +288,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Podepište upravený manifest aplikace spuštěním následujícího příkazu:  
   
-    ```  
+    ```cmd
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx  
     ```  
   
@@ -296,7 +296,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  Změnit na **c:\publish** složku a pak aktualizaci a přihlašovací nasazení manifest spuštěním následujícího příkazu:  
   
-    ```  
+    ```cmd
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex  
     celWorkbookMostRecentVersionNumber>\ExcelWorkbook.dll.manifest" -certfile "Application Files\ExcelWorkbookMostRecentVersionNumber>\ExcelWorkbook_TemporaryKey.pfx"  
     ```  
@@ -306,7 +306,7 @@ ms.lasthandoff: 04/16/2018
   
      Zobrazí se zpráva „ExcelWorkbook.vsto successfully signed“ („Soubor ExcelWorkbook.vsto byl úspěšně podepsán.“).  
   
-5.  Zkopírujte soubor ExcelWorkbook.vsto **c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ adresáře.  
+5.  Kopírování *ExcelWorkbook.vsto* do souboru **c:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ adresáře.  
   
 ##  <a name="SharePoint"></a> Vložit dokument řešení na serveru se systémem SharePoint (pouze úpravy na úrovni dokumentů)  
  Přizpůsobení na úrovni dokumentu můžete pro koncové uživatele publikovat pomocí služby SharePoint. Když uživatelé přejdou na web služby SharePoint a dokument otevřou, modul runtime automaticky nainstaluje řešení ze sdílené síťové složky do místního počítače uživatele. Jakmile je řešení nainstalováno místně, bude přizpůsobení nadále fungovat i v případě, že je dokument zkopírován do jiného umístění, například na plochu.  
@@ -331,7 +331,7 @@ ms.lasthandoff: 04/16/2018
   
         4.  V **cesta** zadejte adresu URL knihovny dokumentů Sharepointu, která obsahuje dokument, který jste nahráli (například *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
   
-             Název výchozí webové stránky, jako je například default.aspx nebo AllItems.aspx nepřidáte.  
+             Název výchozí webové stránky, jako například nepřidáte *default.aspx* nebo *AllItems.aspx*.  
   
         5.  Vyberte **podsložky toto umístění jsou také důvěryhodné** zaškrtněte políčko a potom vyberte **OK** tlačítko.  
   
@@ -340,13 +340,13 @@ ms.lasthandoff: 04/16/2018
 ##  <a name="Custom"></a> Vytvořit vlastní instalační program  
  Můžete vytvořit vlastní instalační program pro řešení Office, místo použití instalačního programu, který je pro vás vytvořen při publikování řešení. Můžete například spustit instalaci pomocí přihlašovacího skriptu nebo můžete řešení nainstalovat pomocí dávkového souboru bez zásahu uživatele. Tyto scénáře fungují nejlépe, pokud jsou požadované součásti již nainstalovány v počítačích koncových uživatelů.  
   
- Jako součást procesu vlastní instalace volejte instalační nástroj pro řešení pro Office (VSTOInstaller.exe), který je ve výchozím nastavení nainstalován v následujícím umístění:  
+ Jako součást procesu vlastní instalaci, volání instalační nástroj pro řešení Office (*VSTOInstaller.exe*), který je ve výchozím nastavení nainstalován v následujícím umístění:  
   
- %commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe  
+ *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*  
   
- Pokud se v tomto umístění nenachází, můžete cestu k tomuto nástroji vyhledat pomocí klíče registru HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath.  
+ Pokud nástroj není v tomto umístění, můžete použít **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** nebo **Setup\v4 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO modulu Runtime \InstallerPath** klíč registru se má najít cestu k tohoto nástroje.  
   
- Nástroj VSTOinstaller.exe podporuje následující parametry.  
+ Můžete použít následující parametry s *VSTOinstaller.exe*.  
   
 |Parametr|Definice|  
 |---------------|----------------|  
@@ -355,18 +355,18 @@ ms.lasthandoff: 04/16/2018
 |/Silent nebo /S|Při instalaci nebo odinstalaci se uživatelům nebudou zobrazovat výzvy k zadání vstupu ani žádné jiné zprávy. Pokud se požaduje výzvu vztahu důvěryhodnosti, přizpůsobení není nainstalovaná nebo aktualizovat.|  
 |/Help nebo /?|Zobrazí informace nápovědy.|  
   
- Po spuštění nástroje VSTOinstaller.exe se mohou zobrazit následující kódy chyb.  
+ Při spuštění *VSTOinstaller.exe*, se může objevit následující kódy chyb.  
   
 |Kód chyby|Definice|  
 |----------------|----------------|  
 |0|Řešení bylo úspěšně nainstalováno či odinstalováno nebo se zobrazila nápověda nástroje VSTOInstaller.|  
-|-100|Jeden nebo více parametrů příkazového řádku není platných nebo byly nastaveny více než jedenkrát. Další informace, zadejte "Instalační službě VSTO /?" nebo najdete [vytváření vlastní instalační program pro řešení Office ClickOnce](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-100|Jeden nebo více parametrů příkazového řádku není platných nebo byly nastaveny více než jedenkrát. Další informace, zadejte "Instalační službě VSTO /?" nebo najdete [vytvoření vlastního instalátoru pro řešení ClickOnce Office](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
 |-101|Jeden nebo více možností příkazového řádku jsou neplatné. Pokud chcete získat další informace, zadejte příkaz "vstoinstaller /?".|  
 |-200|Manifest nasazení identifikátor URI není platný. Pokud chcete získat další informace, zadejte příkaz "vstoinstaller /?".|  
 |-201|Řešení nelze nainstalovat, protože manifest nasazení není platná. V tématu [manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md).|  
-|-202|Řešení nelze nainstalovat, protože Visual Studio Tools for Office oddílu manifest aplikace není platný. V tématu [manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md).|  
+|-202|Řešení nelze nainstalovat, protože Visual Studio Tools for Office oddílu manifest aplikace není platný. V tématu [manifesty aplikací pro řešení Office](../vsto/application-manifests-for-office-solutions.md).|  
 |-203|Řešení nelze nainstalovat, protože došlo k chybě stahování. Zkontrolujte identifikátor URI nebo síťové umístění souboru manifestu nasazení a akci opakujte.|  
-|-300|Řešení nelze nainstalovat, protože došlo k výjimce zabezpečení. V tématu [zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md).|  
+|-300|Řešení nelze nainstalovat, protože došlo k výjimce zabezpečení. V tématu [řešení zabezpečení Office](../vsto/securing-office-solutions.md).|  
 |-400|Nelze nainstalovat, řešení.|  
 |-401|Nelze odinstalovat, řešení.|  
 |-500|Operace byla zrušena, protože řešení nelze nainstalovat nebo odinstalovat nebo nelze stáhnout manifest nasazení.|  
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
      Následující příklad ukazuje, jak změnit cestu instalace na umístění na webu společnosti Fabrikam. Tuto adresu URL můžete nahradit požadovanou cestou:  
   
-    ```  
+    ```cmd  
     setup.exe /url="http://www.fabrikam.com/newlocation"  
     ```  
   
@@ -441,7 +441,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Otevřete umístění instalace řešení.  
   
-2.  Na nejvyšší úrovni struktury složky pro publikování odstraňte manifest nasazení (soubor .vsto).  
+2.  Nejvyšší úrovně publikovat složky, odstraňte manifest nasazení ( *.vsto* souboru).  
   
 3.  Vyhledejte podsložku pro verzi, kterou chcete vrátit zpět.  
   
@@ -456,7 +456,7 @@ ms.lasthandoff: 04/16/2018
      Až uživatel příště otevře aplikaci nebo upravený dokument, bude detekována změna manifestu nasazení. Předchozí verze řešení pro Office se spustí z mezipaměti technologie ClickOnce.  
   
 > [!NOTE]  
->  Místní data jsou uložena pouze pro jednu předchozí verzi řešení. Pokud je tuto dvě verze, nezachovají se místní data. Další informace o místní data, najdete v části [přístup k místním a vzdáleným datům v aplikacích ClickOnce](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
+>  Místní data jsou uložena pouze pro jednu předchozí verzi řešení. Pokud je tuto dvě verze, nezachovají se místní data. Další informace o místní data, najdete v části [přístup k místním i vzdáleným datům v aplikacích ClickOnce](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
   
 ## <a name="see-also"></a>Viz také  
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
@@ -464,6 +464,6 @@ ms.lasthandoff: 04/16/2018
  [Postupy: publikování řešení Office s použitím technologie ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
  [Postupy: Instalace řešení ClickOnce Office](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
  [Postupy: publikování řešení úrovni dokumentu Office SharePoint Server s použitím technologie ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
- [Vytvoření vlastního instalátoru pro řešení ClickOnce Office](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [Vytvoření vlastního instalátoru pro řešení office ClickOnce](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
   
   

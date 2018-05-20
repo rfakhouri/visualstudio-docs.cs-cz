@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f95e09639e9236b64f9c18c9bd90e6850ee13d86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 486ca90ac2a8a4b3b289b0896e2cd81239502558
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask – element (MSBuild)
 Mapuje úloha, která odkazuje [úloh](../msbuild/task-element-msbuild.md) element na sestavení, které obsahuje implementaci úloh.  
@@ -68,10 +68,10 @@ Mapuje úloha, která odkazuje [úloh](../msbuild/task-element-msbuild.md) eleme
 |[Projekt](../msbuild/project-element-msbuild.md)|Požadovaný kořenový element [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] souboru projektu.|  
 
 ## <a name="remarks"></a>Poznámky  
- Proměnné prostředí, vlastnosti příkazového řádku a úrovni projektu vlastnosti může být odkazováno kdekoli v `UsingTask` elementu, pokud se zobrazí v souboru projektu explicitně nebo prostřednictvím importovaného souboru projektu. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  
+ Proměnné prostředí, vlastnosti příkazového řádku, vlastnosti na úrovni projektu a úrovni projektu položky může být odkazováno v `UsingTask` elementy, které jsou zahrnuty v souboru projektu, buď přímo nebo prostřednictvím projektu importovaný soubor. Další informace najdete v tématu [úlohy](../msbuild/msbuild-tasks.md).  
 
 > [!NOTE]
->  Vlastnosti projektu úrovni mít žádný význam, pokud `UsingTask` element pochází z jednoho z .tasks soubory, které jsou globálně registrované s modulem MSBuild. Vlastnosti projektu nejsou globální pro MSBuild.  
+>  Vlastnosti na úrovni projektu a položky mít žádný význam, pokud `UsingTask` element pochází z jednoho z .tasks soubory, které jsou globálně registrované s modulem MSBuild. Hodnoty úrovni projektu nejsou globální pro MSBuild.  
 
  V nástroji MSBuild 4.0 pomocí úloh lze načíst z .overridetask souborů.  
 

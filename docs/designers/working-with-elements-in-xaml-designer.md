@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3a3b45d8714c72e588f64cd5c1830cc97b9f136e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Práce s prvky v Návrháři XAML
 Můžete přidat prvky – ovládací prvky, rozložení a obrazců – do vaší aplikace v jazyce XAML, v kódu, nebo pomocí návrháře XAML. Toto téma popisuje, jak pracovat s prvky v Návrháři XAML v sadě Visual Studio nebo Blend for Visual Studio.
@@ -53,7 +53,7 @@ Můžete přidat prvky – ovládací prvky, rozložení a obrazců – do vaš�
 
         -   **Přenést do pozadí** odeslat element zcela na zadní straně pořadí.
 
-     Změna **ZIndex** vlastnost **rozložení** oddíl v okně Vlastnosti. Překrývajících se elementy, **ZIndex** vlastnost má přednost před pořadí prvků zobrazený v okně Osnova dokumentu. Element, který má nižší **ZIndex** se vyskytuje hodnota vpředu při prvky překrývat.
+     Změna **ZIndex** vlastnost **rozložení** oddíl v okně Vlastnosti. Překrývajících se elementy, **ZIndex** vlastnost má přednost před pořadí prvků zobrazený v okně Osnova dokumentu. Element, který má vyššího **ZIndex** se vyskytuje hodnota vpředu při prvky překrývat.
 
 ## <a name="changing-the-alignment-of-an-element"></a>Změna zarovnání elementu
  Elementy v kreslicí plochy můžete zarovnat pomocí příkazů nabídky nebo přetažením elementů na zarovnávací čáry.
@@ -74,7 +74,7 @@ Můžete přidat prvky – ovládací prvky, rozložení a obrazců – do vaš�
 
      Když je zarovnán okrajů, *zarovnání hranic* se zobrazí k označení zarovnání. Zarovnání hranic je red přerušovaná čára. Zarovnání hranice zobrazí pouze tehdy, když **přichycení k zarovnávací čáry** je povoleno. Pro ilustraci návrhové plochy, který ukazuje hranici zarovnání, najdete v části [vytvoření uživatelského rozhraní pomocí návrháře XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="changing-the-an-elements-margins"></a>Změna elementu okraje
+## <a name="changing-an-elements-margins"></a>Změna okrajů elementu
  Okraje v Návrháři XAML určují množství volné místo, které je kolem elementu na návrhové plochy. Například okraje zadejte velikost místa mezi mimo hran elementu a hranice `Grid` panel, který obsahuje element. Okraje také určit množství místa mezi elementy, které jsou součástí `StackPanel`.
 
 #### <a name="to-change-an-elements-margins-in-the-properties-window"></a>Chcete-li změnit okrajů elementu v okně vlastností

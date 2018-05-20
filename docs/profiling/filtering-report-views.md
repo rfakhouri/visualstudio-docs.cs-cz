@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c613e4b200df0153827fb10013416211a2eb2062
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="filtering-report-views"></a>Filtrování zobrazení sestav
+# <a name="filter-report-views"></a>Filtrování zobrazení sestav
 Profilace datových souborů profilování data, která se zobrazí v zobrazení výkon sestav a exportují do souborů sestav omezit, můžete použít filtry. Můžete omezit sestavy pro data mezi hodnot časového razítka a můžete omezit data, která mají konkrétní procesy a vlákna. Můžete uložit filtrů do souboru a pak vytvořit filtr na jiný soubor dat profilování importováním filtr.  
   
  Sestavy pro segment čas můžete také omezit pomocí grafického rozhraní časová osa zobrazení souhrnu. V tématu [postupy: filtrování zobrazení sestav ze souhrnné časové osy](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
@@ -42,7 +42,6 @@ Profilace datových souborů profilování data, která se zobrazí v zobrazení
     |**Operátor**|Vyberte operátor, který určuje vztah, který chcete v klauzuli mezi pole a hodnotu.<br /><br /> = Rovno<br /><br /> <> Nerovná se<br /><br /> < Menší než<br /><br /> > Větší než<br /><br /> < = menší než nebo rovno<br /><br /> > = větší než nebo rovno|  
     |**Hodnota**|Vyberte nebo zadejte hodnotu, která má být vyhledán. Některá pole seznamu dostupné hodnoty pro pole.|  
   
-3.  
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>K vytvoření filtru sestav profileru z zobrazení sestavy značky  
   

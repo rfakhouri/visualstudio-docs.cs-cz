@@ -1,5 +1,5 @@
 ---
-title: Běžné úlohy při programování pro Office | Microsoft Docs
+title: Běžné úlohy při programování pro Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 32e24833e77ffd6f178a70c5548e9bc1277b06b3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c095b6792b2cde9596e1d955a1ddffbc568c801
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="common-tasks-in-office-programming"></a>Běžné úlohy při programování pro systém Office
+# <a name="common-tasks-in-office-programming"></a>Běžné úlohy při programování pro Office
   V tomto tématu slouží ke vám pomůžou najít odpovědi na časté otázky týkající se řešení pro systém Office programování pomocí sady Visual Studio následujících kategorií.  
   
 -   [Instalační program a obecné úlohy](#projects).  
@@ -46,35 +46,35 @@ ms.lasthandoff: 04/16/2018
   
 -   [Postupy: vytváření projektů Office v sadě Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
--   [Postupy: upgradování řešení Office](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
+-   [Postupy: řešení pro systém Office upgradu](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e).  
   
--   [Postupy: instalace primární spolupracující sestavení Office](../vsto/how-to-install-office-primary-interop-assemblies.md).  
+-   [Postupy: Primární spolupracující sestavení Office instalace](../vsto/how-to-install-office-primary-interop-assemblies.md).  
   
--   [Postupy: cílení na aplikace Office prostřednictvím primární spolupracující sestavení](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
+-   [Postupy: Office cíl aplikací prostřednictvím primární spolupracující sestavení](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).  
   
 -   [Postupy: vytváření obslužných rutin událostí v projektech Office](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
--   [Postupy: otevření řešení pro systém Office bez spuštění kódu](../vsto/how-to-open-office-solutions-without-running-code.md).  
+-   [Postupy: řešení otevřete Office bez spuštění kódu](../vsto/how-to-open-office-solutions-without-running-code.md).  
   
 -   [Postupy: nastavení informací o konfiguraci pro řešení Office](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md).  
   
 -   [Postupy: zobrazení karty Vývojář na pásu karet](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
   
--   [Postupy: Zobrazit chyby doplňku uživatelského rozhraní](../vsto/how-to-show-add-in-user-interface-errors.md).  
+-   [Postupy: zobrazení Add-in chyby uživatelského rozhraní](../vsto/how-to-show-add-in-user-interface-errors.md).  
   
 ##  <a name="ui"></a> Úkoly vlastního nastavení uživatelského rozhraní  
   
 ### <a name="controls-on-documents-and-worksheets"></a>Ovládací prvky na dokumenty a listů  
   
--   [Postupy: Přidání ovládacích prvků do dokumentů Office Windows Forms](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+-   [Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
 -   [Postupy: Přidání ovládacích prvků NamedRange do listů](../vsto/how-to-add-namedrange-controls-to-worksheets.md).  
   
 -   [Postupy: Přidání ovládacích prvků ListObject do listů](../vsto/how-to-add-listobject-controls-to-worksheets.md).  
   
--   [Postupy: Přidání ovládacích prvků do dokumentů Office Windows Forms](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
+-   [Postupy: Přidání ovládacích prvků Windows Forms do dokumentů Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md).  
   
--   [Postupy: Přidání ovládacích prvků obsahu do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
+-   [Postupy: Přidání obsahu ovládacích prvků do dokumentů aplikace Word](../vsto/how-to-add-content-controls-to-word-documents.md).  
   
 -   [Postupy: Přidání ovládacích prvků záložek do dokumentů aplikace Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md).  
   
@@ -82,7 +82,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
   
-### <a name="task-panes-in-vsto-add-ins"></a>Podokna úloh v doplňcích VSTO  
+### <a name="task-panes-in-vsto-add-ins"></a>Podokna úloh v doplňků VSTO  
   
 -   [Postupy: Přidání vlastního podokna úloh do aplikace](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="outlook-form-regions"></a>Oblastí formulářů aplikace Outlook  
   
--   [Postupy: přidání oblasti formuláře do projektu doplňku aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
+-   [Postupy: přidání oblasti formuláře do projektu doplněk aplikace Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).  
   
 -   [Postupy: zabránění zobrazení oblasti formuláře aplikace Outlook](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md).  
   
@@ -156,7 +156,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Postupy: programové definování a výběr oblastí v dokumentech](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md).  
   
--   [Postupy: dokumentů prostřednictvím kódu programu. resetování oblastí v aplikaci Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
+-   [Postupy: programové resetování oblastí v dokumentech aplikace Word](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md).  
   
 -   [Postupy: formátování textu v dokumentech prostřednictvím kódu programu](../vsto/how-to-programmatically-format-text-in-documents.md).  
   
@@ -164,7 +164,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [Postupy: aktualizace textu záložek prostřednictvím kódu programu](../vsto/how-to-programmatically-update-bookmark-text.md).  
   
--   [Postupy: hledání prostřednictvím kódu programu a nahrazení textu v dokumentech](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
+-   [Postupy: programové hledání a nahrazení textu v dokumentech](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md).  
   
 -   [Postupy: tisk dokumentů prostřednictvím kódu programu](../vsto/how-to-programmatically-print-documents.md).  
   
@@ -194,13 +194,13 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="cached-data-in-document-level-solutions"></a>Data uložená v mezipaměti v řešeních na úrovni dokumentu  
   
--   [Postupy: ukládat Data do mezipaměti pro použití v režimu Offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
+-   [Postupy: použití dat do mezipaměti v režimu offline nebo na serveru](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
 -   [Postupy: mezipaměti prostřednictvím kódu programu zdroj dat v dokumentu systému Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md).  
   
--   [Postupy: mezipaměti Data v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
+-   [Postupy: mezipaměti data v dokumentu chráněném heslem](../vsto/how-to-cache-data-in-a-password-protected-document.md).  
   
-### <a name="custom-xml-data"></a>Vlastní XML dat  
+### <a name="custom-xml-data"></a>Vlastní data XML  
   
 -   [Postupy: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md).  
   
@@ -208,9 +208,9 @@ ms.lasthandoff: 04/16/2018
   
 ##  <a name="server"></a> Úlohy správy dokumentu na straně serveru  
   
--   [Postupy: odebrání rozšíření spravovaného kódu z dokumentů](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
+-   [Postupy: odebrání spravovaných rozšíření kódu z dokumentů](../vsto/how-to-remove-managed-code-extensions-from-documents.md).  
   
--   [Postupy: připojení rozšíření spravovaného kódu k dokumentům](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
+-   [Postupy: připojení spravovaných rozšíření kódu k dokumentům](../vsto/how-to-attach-managed-code-extensions-to-documents.md).  
   
 ##  <a name="security"></a> Zabezpečení úloh  
   
@@ -228,13 +228,13 @@ ms.lasthandoff: 04/16/2018
   
 -   [Postupy: Příprava služby IIS pro nasazení řešení pro systém Office](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4).  
   
--   [Postupy: aktualizovat řešení nasazené Office](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
+-   [Postupy: aktualizace nasazené řešení pro systém Office](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13).  
   
 -   [Postupy: Změňte cestu instalace řešení Office](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).  
   
 ## <a name="see-also"></a>Viz také  
  [Začínáme &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
- [Dostupné funkce podle aplikace Office a typu projektu](../vsto/features-available-by-office-application-and-project-type.md)   
+ [Zadejte dostupné funkce podle aplikace Office a projektu](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office Ukázky a návody vývoje](../vsto/office-development-samples-and-walkthroughs.md)  
   
   

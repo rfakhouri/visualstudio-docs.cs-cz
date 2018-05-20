@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52dd9ccce2d7ea2aab36895c186c25ad5207de7a
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 1e03abc331d59504b1b08136c8c81fe12c8ba2af
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` Funkce nastaví na hodnotu 0 (vypnuto) pro zadané úrovně profilování čítač.  
@@ -44,7 +44,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
   
  Identifikátor procesu nebo vlákno generované systémem.  
   
-## <a name="property-valuereturn-value"></a>Hodnota vlastnosti / návratová hodnota  
+## <a name="property-valuereturn-value"></a>Vlastnost Hodnota/Návratová hodnota  
  Funkce označuje úspěch či neúspěch pomocí **PROFILE_COMMAND_STATUS** výčtu. Vrácená hodnota může být jeden z následujících akcí:  
   
 |Enumerátor|Popis|  
@@ -62,7 +62,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
   
  Po spuštění a zastavení stav a stav pozastavení nebo obnovení se i na profilování stav pro úroveň je ON. Vlákna na profilovaným, proces globální, a úrovně stavy vláken pro vlákno musí být ON.  
   
-## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET Framework  
+## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET framework  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informace o funkci  
@@ -108,4 +108,4 @@ void ExerciseStopProfile()
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Referenční dokumentace rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Visual Studio profiler referenční dokumentace rozhraní API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)

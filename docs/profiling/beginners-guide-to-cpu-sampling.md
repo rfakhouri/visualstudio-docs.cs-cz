@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee85f9946e16b0ecaafa196e1b197304ccde3bd9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Průvodce začátečníka procesoru vzorkování
 Nástroje pro profilaci sady Visual Studio můžete použít k analýze problémy s výkonem v aplikaci. Tento postup ukazuje, jak používat **vzorkování** data.
@@ -35,7 +35,7 @@ Nástroje pro profilaci sady Visual Studio můžete použít k analýze problém
  Pokud **vzorkování** nezískáte data, která budete potřebovat, ostatní profilování kolekce metody nástroje poskytují různé druhy informace, které mohou být užitečné pro vás. Další informace o těchto dalších metod najdete v tématu [postupy: výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Pokud kód, který volá funkce systému Windows, profilu, měli byste si ověřit, že máte nejnovější soubory PDB. Bez těchto souborů v zobrazeních sestav zobrazí seznam názvů funkce Windows, které jsou jako nesrozumitelné a vzhledem k. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [postupy: odkaz na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+>  Pokud kód, který volá funkce systému Windows, profilu, měli byste si ověřit, že máte nejnovější soubory PDB. Bez těchto souborů v zobrazeních sestav zobrazí seznam názvů funkce Windows, které jsou jako nesrozumitelné a vzhledem k. Další informace o tom, abyste měli jistotu, že máte soubory, které potřebujete, najdete v části [postupy: odkaz na Windows symbolů informace](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ##  <a name="Step1"></a> Vytvoření a spuštění výkonnostní relace  
  Pokud chcete získat data, která potřebujete analyzovat, musíte nejprve vytvořit relaci výkonu a spusťte relaci. **Průvodce výkonu** umožňuje proveďte obojí.  
@@ -128,4 +128,4 @@ Nástroje pro profilaci sady Visual Studio můžete použít k analýze problém
  [Začínáme](../profiling/getting-started-with-performance-tools.md)   
  [Přehledy](../profiling/overviews-performance-tools.md)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)
+ [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)

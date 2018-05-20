@@ -12,11 +12,11 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5374001e63f83f13e0956314e9af88808d624dae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 272048215e6ac386e5724e2054f639ccdb608e63
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalace a konfigurace nástroje pro sestavení pomocí iOS
 Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použít k úpravám, ladění a nasazení iOS kódu simulátoru iOS nebo zařízení s iOS, ale kvůli licenční omezení, musí být kód vytvořené a spouštět vzdáleně na macu. Sestavení a spuštění aplikace pro iOS pomocí sady Visual Studio, budete muset nastavit a konfigurovat vzdáleného agenta [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), na vaše Mac. Obslužné rutiny vzdáleného agenta sestavení požadavky ze sady Visual Studio a spustí aplikace na zařízení s iOS připojené k počítači Mac, nebo v simulátoru na Mac. iOS  
@@ -69,6 +69,8 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
   
 -   [Node.js](http://nodejs.org/)  
   
+     Nainstalujte nejnovější verzi podporu dlouho termín (LTS) 8.x Node.js na vaše Mac. Upozorňujeme, že jiné nejnovější verze nemusí podporovat některé moduly používané v vcremote a může způsobit vcremote se instalace nezdaří.  
+  
 -   Aktualizovanou verzi npm  
   
      Verze npm, která se dodává s Node.js nemusí být dostatečně nová, aby instalace vcremote. Chcete-li aktualizovat npm, otevřete terminálu aplikace na počítači Mac a zadejte následující příkaz:  
@@ -88,7 +90,7 @@ Visual C++ pro vývoj mobilních řešení pro různé platformy můžete použ�
   
      Globální instalace (**-g**) přepínač je doporučená, ale není potřeba.  
   
-     Během instalace vcremote je nainstalován a režim vývojáře je aktivováno na vaše Mac. [Homebrew](http://brew.sh/) a jsou dva balíčky pro npm, vcremote-lib a vcremote utils, nainstalovány také.  
+     Během instalace vcremote je nainstalován a režim vývojáře je aktivováno na vaše Mac. [Homebrew](http://brew.sh/) a jsou dva balíčky pro npm, vcremote-lib a vcremote utils, nainstalovány také. Po dokončení instalace je bezpečně ignorovat všechna upozornění o přeskočené volitelné závislosti.  
   
     > [!NOTE]
     >  Pokud chcete nainstalovat Homebrew, musí mít sudo (správce) přístup. Pokud potřebujete nainstalovat vcremote bez sudo, můžete ručně nainstalovat Homebrew v umístění usr/místní a přidat jeho složky Bin přejít na cestu k. Další informace najdete v tématu [Homebrew dokumentaci](https://github.com/Homebrew/homebrew/wiki/Installation). Ručně povolit režim vývojáře, zadejte tento příkaz v terminálu aplikaci: `DevToolsSecurity -enable`  

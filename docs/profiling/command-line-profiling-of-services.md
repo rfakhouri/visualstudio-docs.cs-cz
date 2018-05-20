@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 277688d579d254da889c1f349a6a674ad5c5f955
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
-ms.translationtype: MT
+ms.openlocfilehash: 80e5c8d7a1edc7af76870f3d120d66365d2f1cf4
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="command-line-profiling-of-services"></a>Profilace služeb z příkazového řádku
 Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro služby systému Windows pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci z příkazového řádku.  
@@ -25,7 +25,7 @@ Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro s
 > [!NOTE]
 >  Funkce Rozšířené zabezpečení v systému Windows 8 a Windows Server 2012 vyžaduje významné změny ve způsobu, jakým Visual Studio profiler shromažďuje data na těchto platformách. Aplikace UWP také vyžadují nové techniky kolekce. V tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-## <a name="common-tasks"></a>Obecné úlohy  
+## <a name="common-tasks"></a>Běžné úlohy
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
@@ -39,5 +39,5 @@ Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro s
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profil aplikace samostatné (klient)**|-   [Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
-|**Profil aplikace ASP.NET**|-   [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|
+|**Profil aplikace samostatné (klient)**|-   [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)|  
+|**Profil aplikace ASP.NET**|-   [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)|

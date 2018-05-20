@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: d1b8a01671ed37d8e83ca97218a3666cad40c60b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analýza spotřeby prostředků a aktivita vláken uživatelského rozhraní (XAML)
-Použití **časová osa aplikace** profileru najít a opravit interakce aplikace související s problémy s výkonem v aplikacích XAML. Tento nástroj pomáhá zlepšit výkon aplikace XAML tím, že poskytuje podrobný přehled o spotřeby prostředků aplikace. Můžete analyzovat čas strávený aplikací Příprava rámce uživatelského rozhraní (rozložení a vykreslování), sítě a disku požadavky obsluhy a ve scénářích, jako je spuštění aplikace, načtení stránky a Windows změny velikosti.  
+Použití **časová osa aplikace** profileru najít a opravit interakce aplikace související s problémy s výkonem v aplikacích XAML. Tento nástroj pomáhá zlepšit výkon aplikace XAML tím, že poskytuje podrobný přehled o spotřeby prostředků aplikace. Čas strávený aplikací Příprava rámce uživatelského rozhraní (rozložení a vykreslování), sítě a disku požadavky obsluhy a ve scénářích, jako je spuštění aplikace, načítání stránky, můžete analyzovat a změňte velikost systému Windows.  
   
- **Časová osa aplikace** je jedním z nástrojů můžete začít s **ladění nebo profileru výkonu...**  příkaz.  
+ **Časová osa aplikace** je jedním z nástrojů můžete začít s **ladění** > **výkonu profileru** příkaz.  
   
  Tento nástroj nahradí **odezvy uživatelského rozhraní jazyka XAML** nástroj, který byl součástí diagnostických nástrojů pro Visual Studio 2013.  
   
@@ -46,7 +46,7 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
   
 1.  Otevřete aplikaci XAML.  
   
-2.  Klikněte na tlačítko **ladění nebo profileru výkonu...** . Zobrazí seznam profilace nástroje v okně .diagsession.  
+2.  Klikněte na tlačítko **ladění nebo výkonu profileru**. Zobrazí seznam profilace nástroje v okně .diagsession.  
   
 3.  Vyberte **časová osa aplikace** a pak klikněte na **spustit** v dolní části okna.  
   
@@ -96,7 +96,7 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 |||  
 |-|-|  
 |**Analýza**|Čas strávený analýzy soubory XAML a vytváření objektů.<br /><br /> Rozšiřování **Parsing** uzlu v **časová osa podrobnosti** zobrazí řetězec závislostí všechny soubory XAML, které byly analyzovat v důsledku události kořenové. To vám umožní identifikovat nepotřebných souborů analýzy a objekt vytvoření ve scénářích citlivé výkonu a optimalizovat je.|  
-|**Rozložení**|V velké aplikace může být uvedené na obrazovce tisíce elementy ve stejnou dobu. To může způsobit nízkou obnovovací frekvence uživatelského rozhraní a odezvu odpovídajícím způsobem nízký aplikací. Událost rozložení přesně určuje náklady rozložení jednotlivých prvků (tj. čas věnovaný uspořádat, míry, ApplyTemplate, ArrangeOverride a ArrangeOverride) a vytvoří visual stromy, které trvalo část při průchodu rozložení. Tuto vizualizaci můžete použít k určení, které vaše logické stromy musí vyřazení nebo vyhodnotit jiným mechanismem odložení za účelem optimalizace vaší průchodu rozložení.|  
+|**Rozložení**|V velké aplikace může být uvedené na obrazovce tisíce elementy ve stejnou dobu. To může způsobit nízkou obnovovací frekvence uživatelského rozhraní a odezvu odpovídajícím způsobem nízký aplikací. Událost rozložení přesně určuje náklady rozložení jednotlivých prvků (tj. čas věnovaný uspořádat, míry, ApplyTemplate, ArrangeOverride a ArrangeOverride) a vytvoří visual stromy, které trvalo část při průchodu rozložení. Tuto vizualizaci můžete použít k určení, které vaše logické stromy, chcete-li vyřadit nebo vyhodnotit jiným mechanismem odložení za účelem optimalizace vaší průchodu rozložení.|  
 |**Vykreslení**|Čas strávený vykreslení elementů XAML na obrazovku.|  
 |**I / 0**|Čas strávený načítání dat z místního disku nebo síťovým prostředkům, které jsou přístupné prostřednictvím [Microsoft Windows Internet (WinINet) rozhraní API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Kód aplikace**|Čas strávený provádění kódu aplikace (uživatel), která nesouvisí se analýza nebo rozložení.|  

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: cílení na aplikace Office prostřednictvím primárních sestavení vzájemné spolupráce | Microsoft Docs'
+title: 'Postupy: Office cíl aplikací prostřednictvím primární spolupráce – sestavení'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,13 +19,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bfe02a06403621c2429dd8be965b3ab1b5c41b2c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32ff157e3986836ac13472c4a9ed8a7b01f06e04
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Postupy: Cílení na aplikace Office v primárních sestaveních vzájemné spolupráce
+# <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Postupy: Office cíl aplikací prostřednictvím primární spolupráce – sestavení
   Když vytvoříte nový projekt Office, Visual Studio automaticky přidá odkazy na aplikace Microsoft Office primární spolupracující sestavení (PIA) požadovaná pro sestavení projektu. Odkazy na další PIA musíte přidat v následujících scénářích:  
   
 -   Chcete používat funkce jiné aplikace Microsoft Office ve vašem projektu. Například můžete chtít používat funkce aplikace Microsoft Office Excel v projektu pro aplikaci Microsoft Office Word.  
@@ -36,18 +36,18 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-### <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Chcete-li přidat odkaz na primární spolupracující sestavení  
+## <a name="to-add-a-reference-to-a-primary-interop-assembly"></a>Chcete-li přidat odkaz na primární spolupracující sestavení  
   
 1.  Otevřete Office projekt a vyberte název projektu v **Průzkumníku řešení**.  
   
 2.  Na **projektu** nabídky, klikněte na tlačítko **přidat odkaz na**.  
   
-3.  Na **Framework** vyberte PIA – chcete v **název komponenty** seznamu. Další informace o dostupných primární spolupracující sestavení aplikace Microsoft Office, najdete v části [primární zprostředkovatel komunikace s objekty sestavení sady Office](../vsto/office-primary-interop-assemblies.md).  
+3.  Na **Framework** vyberte PIA – chcete v **název komponenty** seznamu. Další informace o dostupných primární spolupracující sestavení aplikace Microsoft Office, najdete v části [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).  
   
-     Pokud cíle projektu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, **vložit zprostředkovatel komunikace s objekty typy** pro odkaz na sestavení je nastavena na **True** ve výchozím nastavení. Pomocí tohoto nastavení řešení nevyžaduje PIA na počítačích koncových uživatelů. Další informace najdete v tématu [návrh a vytváření řešení pro systém Office](../vsto/designing-and-creating-office-solutions.md).  
+     Pokud cíle projektu [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] nebo novější, **vložit zprostředkovatel komunikace s objekty typy** pro odkaz na sestavení je nastavena na **True** ve výchozím nastavení. Pomocí tohoto nastavení řešení nevyžaduje PIA na počítačích koncových uživatelů. Další informace najdete v tématu [návrhu a vytvářet řešení systému Office](../vsto/designing-and-creating-office-solutions.md).  
   
     > [!NOTE]  
-    >  V projektech Office vždy přidáte odkazy na PIA Office s použitím **.NET** kartě **přidat odkaz na** dialogové okno místo **COM** kartě. Další informace najdete v tématu [primární zprostředkovatel komunikace s objekty sestavení sady Office](../vsto/office-primary-interop-assemblies.md).  
+    >  V projektech Office vždy přidáte odkazy na PIA Office s použitím **.NET** kartě **přidat odkaz na** dialogové okno místo **COM** kartě. Další informace najdete v tématu [primární spolupracující sestavení Office](../vsto/office-primary-interop-assemblies.md).  
   
 4.  Click **OK**.  
   
@@ -57,6 +57,6 @@ ms.lasthandoff: 04/16/2018
  [Primární spolupracující sestavení sady Office](../vsto/office-primary-interop-assemblies.md)   
  [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)   
  [Vývoj řešení pro systém Office](../vsto/developing-office-solutions.md)   
- [Postupy: Instalace primárních sestavení vzájemné spolupráce pro systém Office](../vsto/how-to-install-office-primary-interop-assemblies.md)  
+ [Postupy: Primární spolupracující sestavení Office instalace](../vsto/how-to-install-office-primary-interop-assemblies.md)  
   
   

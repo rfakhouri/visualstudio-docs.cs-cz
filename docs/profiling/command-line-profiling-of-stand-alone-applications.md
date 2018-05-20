@@ -13,16 +13,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef57d2fb81ef88d15c3ad0fa3ebfc6f520fc674
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
-ms.translationtype: MT
+ms.openlocfilehash: 09e801bae6d832f15ea42e4c46f3c18012f85c05
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.translationtype: HT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>Profilace samostatných aplikací z příkazového řádku
 Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro samostatné (klient) aplikace pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci z příkazového řádku.  
   
-## <a name="common-tasks"></a>Obecné úlohy  
+## <a name="common-tasks"></a>Běžné úlohy  
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
@@ -37,5 +37,5 @@ Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro s
   
 |Úloha|Související obsah|  
 |----------|---------------------|  
-|**Profil aplikace ASP.NET**|-   [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
-|**Profil služby**|-   [Profilace služeb](../profiling/command-line-profiling-of-services.md)|
+|**Profil aplikace ASP.NET**|-   [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
+|**Profil služby**|-   [Profil služby](../profiling/command-line-profiling-of-services.md)|

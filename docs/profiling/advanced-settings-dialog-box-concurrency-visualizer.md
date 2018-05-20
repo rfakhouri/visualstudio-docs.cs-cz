@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0cde5d1ddd5dabfd42a6a7d31284736e24fa302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
+ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Dialogové okno Upřesnit nastavení (Vizualizér souběžnosti)
+# <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Dialogové okno Upřesnit nastavení (vizualizér souběžnosti)
 Pomocí **Upřesnit nastavení** dialogové okno vizualizér souběžnosti můžete řídit, jak se shromažďují trasování.  Dialogové okno obsahuje karty pro symboly, pouze můj kód, ukládání do vyrovnávací paměti, filtrování, CLR události, značek, zprostředkovatele a soubory.  
   
 ## <a name="symbols"></a>Symboly  
@@ -65,7 +65,7 @@ Pomocí **Upřesnit nastavení** dialogové okno vizualizér souběžnosti můž
   
  V seznamu úroveň důležitosti můžete vyfiltrovat události, které mají význam nebo úroveň trasování událostí pro Windows, která je menší než zadaná hodnota.  
   
-### <a name="configuring-an-existing-provider"></a>Konfigurace existujícího poskytovatele  
+### <a name="configure-an-existing-provider"></a>Konfigurace existujícího poskytovatele  
  Chcete-li upravit nastavení, které jsou přidruženy existujícího poskytovatele, vyberte ho v seznamu a poté zvolte **upravit poskytovatele** tlačítko.  Můžete změnit název, identifikátor GUID a filtrování nastavení.  
   
 ### <a name="filter-marker-data-out-of-concurrency-visualizer-reports"></a>Filtrování dat značky mimo sestavy vizualizér souběžnosti  
