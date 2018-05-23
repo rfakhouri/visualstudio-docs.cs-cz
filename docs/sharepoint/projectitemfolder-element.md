@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 25d126ab05edccf44642271ed7e379988defe212
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc63a3ac6d677da746823e101ca42d5765703907
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder – element
   Představuje mapované složky.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <ProjectItemFolder Target = "Path of SharePoint folder the mapped folder corresponds to"  
     Type = "Type of deployment for the mapped folder" />  
 ```  
@@ -41,7 +41,7 @@ ms.lasthandoff: 04/16/2018
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|**cíl**|Požadované **xs:string** atribut.<br /><br /> Cesta ke složce v instalaci služby SharePoint, které mapované složky odpovídá relativní vzhledem ke kořenové složce nasazení. Nasazení kořenové složky je určen podle typu nasazení určeného **typ** atribut.<br /><br /> Další informace najdete v popisech pro **Cesta nasazení** a **nasazení kořenové** projektu služby SharePoint položky v [vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
+|**cíl**|Požadované **xs: řetězec** atribut.<br /><br /> Cesta ke složce v instalaci služby SharePoint, které mapované složky odpovídá relativní vzhledem ke kořenové složce nasazení. Nasazení kořenové složky je určen podle typu nasazení určeného **typ** atribut.<br /><br /> Další informace najdete v popisech pro **Cesta nasazení** a **nasazení kořenové** projektu služby SharePoint položky v [vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
 |**Typ**|Požadované **xs:string** atribut.<br /><br /> Typ nasazení pro mapované složky. Další informace o možných hodnot, viz popis **typ nasazení** vlastnosti položky projektu služby SharePoint v [vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položky projektu služby SharePoint. Toto je požadovaný kořenový element .spdata souboru.|  
+|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položky projektu služby SharePoint. Tento element má požadovaný kořenový element `.spdata` souboru.|  
   
 ## <a name="remarks"></a>Poznámky  
  Další informace o mapované složky najdete v tématu [postupy: Přidání a odebrání mapované složky](../sharepoint/how-to-add-and-remove-mapped-folders.md).  

@@ -16,11 +16,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df1982f0f5f1739d514dcedd32291bd765a5680b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 86aada9d28300a2fdb2cd20072afa383c6f3f9e1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 **VSPerfCmd.exe** nástroj se používá ke spuštění a zastavení shromažďování dat výkonu. Používá následující syntaxi:  
@@ -54,7 +54,7 @@ VSPerfCmd [/U] [/options]
 |[ThreadOn a ThreadOff](../profiling/threadon-and-threadoff.md) **:** *tid*|Pozastaví profilace pro zadaný vlákno. Použití **ThreadOff** jenom v případě, že profilace pomocí metody instrumentace.|  
 |[Označit](../profiling/mark.md) **:** *MarkNum*[**,***MarkText***]**|Vloží značku do datového souboru profilování, volitelné textem.|  
   
-## <a name="sampling-method-options"></a>Možnosti metody vzorkování  
+## <a name="sample-method-options"></a>Možnosti ukázka metody  
  Tyto možnosti jsou k dispozici pouze při použití metoda profilování se vzorkováním.  
   
 |Možnost|Popis|  
@@ -66,7 +66,7 @@ VSPerfCmd [/U] [/options]
 |[Odpojení](../profiling/detach.md)[**: *** PID*[,*PID*]]|Zastaví profilace zadaný procesy. Procesy lze identifikovat podle id procesu nebo podle názvu procesu. Pokud není zadaný žádný proces, profilace je zastaveno pro všechny procesy.|  
 |[Globální Katalog](../profiling/gc-vsperfcmd.md)[**:**{**přidělení**`&#124;`**životnost**}]|Shromažďuje data paměti .NET přidělení a objekt životního cyklu. Použít pouze **VSPerfCmdLaunch** možnost.|  
   
-### <a name="sampling-interval-options"></a>Možnosti intervalu vzorkování  
+### <a name="sample-interval-options"></a>Možnosti interval vzorku  
  Následující možnosti zadat typ a doba vzorkování intervalech. Výchozí hodnota je **časovače**. Můžete také zadat čítačů procesoru jako interval pomocí **čítač** možnost. Tyto možnosti lze zadat pouze s **spusťte** nebo s prvním **Attach** profilování relace.  
   
 |Možnost|Popis|  
@@ -75,7 +75,7 @@ VSPerfCmd [/U] [/options]
 |[Sys](../profiling/sys-vsperfcmd.md)[**: *** n*]|Ukázky při každém volání n tý systému (výchozí = 10).|  
 |[Časovač](../profiling/timer.md)[**: *** n*]|Ukázky na každý procesor n tý cyklus (výchozí = 10000000).|  
   
-## <a name="service-component-and-kernel-mode-device-options"></a>Součást služby a možností zařízení režimu jádra  
+## <a name="service-component-and-kernel-mode-device-options"></a>Možnosti zařízení režimu služby pro součást a jádra  
  Následující možnosti správy podporovat profilování součásti služby nebo ovladačů zařízení v režimu jádra. Možnosti správy nastavení oprávnění profilování a řídit PROFILOVANÉHO služby nebo ovladače zařízení.  
   
  Možnosti správy, je třeba spustit na příkazovém řádku, která je spuštěna s přihlašovacími údaji správce.  

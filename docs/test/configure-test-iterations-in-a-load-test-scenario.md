@@ -12,11 +12,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a78921ff3415203a26da570a1966e41538ac5535
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 13d86d64d16fad085983fc45863fa81e88ea2ada
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Konfigurace iterací testů ve scénáři zátěžového testu
 
@@ -46,24 +46,24 @@ Můžete zadat maximální počet pokusů, které chcete spustit testy pro scén
 
 ### <a name="to-specify-the-maximum-test-iterations"></a>Chcete-li určit maximální testovacích iterací
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
-2.  Zobrazí se Editor zátěžového testu. Zobrazí se strom zátěžového testu.
+2. Zobrazí se Editor zátěžového testu. Zobrazí se strom zátěžového testu.
 
-3.  V zatížení testovat stromy **scénáře** složky, vyberte uzel scénář, pro který chcete určit maximální počet iterací testů.
+3. V zatížení testovat stromy **scénáře** složky, vyberte uzel scénář, pro který chcete určit maximální počet iterací testů.
 
-4.  Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
+4. Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
 
      Kategorií a vlastností scénáře jsou zobrazeny v okně Vlastnosti.
 
-5.  Do textového pole pro **maximální iterací testů** vlastnosti, typ a hodnotu, která určuje maximální počet testů ke spuštění pro tento scénář, při spuštění zátěžového testu.
+5. Do textového pole pro **maximální iterací testů** vlastnosti, typ a hodnotu, která určuje maximální počet testů ke spuštění pro tento scénář, při spuštění zátěžového testu.
 
     > [!NOTE]
     > Pomocí hodnoty 0 pro **maximální testovacích iterací** vlastnost určuje žádné maximální iterací.
 
-6.  Po dokončení změn vlastnosti, vyberte **Uložit** na **souboru** nabídky. Když pak spustíte zátěžový test pomocí nové **maximální iterací testů** hodnotu.
+6. Po dokončení změn vlastnosti, vyberte **Uložit** na **souboru** nabídky. Když pak spustíte zátěžový test pomocí nové **maximální iterací testů** hodnotu.
 
-## <a name="specifying-think-times-between-test-iterations-for-a-scenario"></a>Určení dob uvažování mezi testovacími iteracemi pro scénáře
+## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Zadejte dob uvažování mezi testovacími iteracemi pro scénáře
 
 **Vezměte v úvahu dobu mezi testování iterací** je nastavena pomocí okna Vlastnosti při úpravách vlastnosti scénáře zátěžového testu v editoru načíst otestovat.
 
@@ -72,21 +72,21 @@ Můžete zadat maximální počet pokusů, které chcete spustit testy pro scén
 > [!NOTE]
 > Úplný seznam vlastnosti scénáře zátěžového testu a jejich popisy najdete v tématu [načíst vlastnosti scénář otestovat](../test/load-test-scenario-properties.md).
 
-### <a name="to-specify-the-think-times-between-test-iterations"></a>K určení doby uvažování mezi testovacími iteracemi
+### <a name="to-specify-the-think-time-between-test-iterations"></a>K určení doby uvažování mezi testovacími iteracemi
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2.  V zatížení testovat stromy **scénáře** složky, vyberte uzel scénáři chcete určit agenty používat.
+2. V zatížení testovat stromy **scénáře** složky, vyberte uzel scénáři chcete určit uvažování dobu.
 
-3.  Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
+3. Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
 
      Tento scénář kategorií a vlastností se zobrazí v okně Vlastnosti.
 
-4.  V hodnotě pro **vezměte v úvahu dobu mezi testování iterací** vlastnost, zadejte číslo představující počet sekund pro čekání před spuštěním další iterace testu.
+4. V hodnotě pro **vezměte v úvahu dobu mezi testování iterací** vlastnost, zadejte číslo představující počet sekund pro čekání před spuštěním další iterace testu.
 
-5.  Po dokončení změn vlastnosti, vyberte **Uložit** na **souboru** nabídky. Potom můžete spustit vaší zátěžového testu pomocí nové **vezměte v úvahu dobu mezi testování iterací** hodnotu.
+5. Po dokončení změn vlastnosti, vyberte **Uložit** na **souboru** nabídky. Potom můžete spustit vaší zátěžového testu pomocí nové **vezměte v úvahu dobu mezi testování iterací** hodnotu.
 
 ## <a name="see-also"></a>Viz také
 

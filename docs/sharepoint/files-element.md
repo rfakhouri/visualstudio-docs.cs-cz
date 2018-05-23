@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d75041c1b0202eecd5769773efbcfce9c53ec4ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 15d771a53c0fb364aa363db8b6709257f41b9188
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="files-element"></a>Element Soubory
   Určuje soubory k nasazení s položkou projektu služby SharePoint, jako je například souborů funkcí a výstup závislé jiné-projektů služby SharePoint.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <Files>  
   <ProjectItemFile.../>  
   <ProjectOutputFile.../>  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
 |Prvek|Popis|  
 |-------------|-----------------|  
-|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položky projektu služby SharePoint. Toto je požadovaný kořenový element .spdata souboru.|  
+|[ProjectItem –](../sharepoint/projectitem-element.md)|Představuje položky projektu služby SharePoint. Tento element požadovaný kořenový element z `.spdata` souboru.|  
   
 ## <a name="element-information"></a>Informace o elementu  
   

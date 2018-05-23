@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 66b6ccc1d62cdbf163a67d5c76d310f896766819
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bf1c0ce47e96438df768776244cc26bc9ea8929
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Postupy: Určení procenta virtuálních uživatelů, kteří používají data ve webové mezipaměti
 
@@ -29,21 +29,21 @@ Po vytvoření vaší zátěžový test pomocí **načíst testování Průvodce
 
 Pokud jste zatížení testování webu, který má velký počet návratový uživatelů, kteří mohou mít obrázky a další obsah Uložitelný do mezipaměti místně, pak nastavení 100 % pro **procento nových uživatelů** vlastnost vygeneruje informace požadavky na stažení než by tomu bylo v reálného využití. V takovém případě by měl odhadnout procento návštěv na webové stránky, které jsou z první uživatelé webu a nastavte **procento nových uživatelů** vlastnost odpovídajícím způsobem.
 
-## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Chcete-li určit agenty používat pro scénáře
+## <a name="to-specify-the-percentage-of-new-users-for-a-scenario"></a>Chcete-li určit procento nových uživatelů pro scénáře
 
-1.  Otevřete zátěžový test.
+1. Otevřete zátěžový test.
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2.  V zatížení testovat stromy **scénáře** složky, vyberte uzel scénáři chcete určit agentů pro.
+2. V zatížení testovat stromy **scénáře** složky, vyberte uzel scénáři chcete změnit nové uživatele procentuální hodnotu pro.
 
-3.  Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
+3. Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
 
      Tento scénář kategorií a vlastností se zobrazí v okně Vlastnosti.
 
-4.  Nastavit hodnotu pro **procento nových uživatelů** vlastnost tak, že zadáte číslo pro procento nových uživatelů.
+4. Nastavit hodnotu pro **procento nových uživatelů** vlastnost tak, že zadáte číslo pro procento nových uživatelů.
 
-5.  Po dokončení změn vlastnosti, vyberte **Uložit** na **souboru** nabídky. Potom můžete spustit vaší zátěžového testu pomocí nové **procento nových uživatelů** hodnotu.
+5. Po dokončení změn vlastnosti, vyberte **Uložit** na **souboru** nabídky. Potom můžete spustit vaší zátěžového testu pomocí nové **procento nových uživatelů** hodnotu.
 
 ## <a name="see-also"></a>Viz také
 

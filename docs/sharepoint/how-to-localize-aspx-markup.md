@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9dd127fea21a53b9a29082f536ac8c0404299c63
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b43a8833ea84c4f6d191200bcf3af80815deb03a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-localize-aspx-markup"></a>Postupy: Lokalizace značek ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] stránky (.aspx) obvykle používají pevně řetězcové hodnoty. Chcete-li tyto řetězce pro lokalizaci, je nahradíte výrazy, které odkazují na lokalizované prostředky.  
@@ -52,13 +52,13 @@ ms.lasthandoff: 04/16/2018
   
 6.  V [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] kód pro stránky ASPX nebo ovládací prvek, nahraďte pevně řetězce s hodnotami, které použijte následující formát:  
   
-    ```  
+    ```aspx-csharp  
     <%$Resources:Resource File Name, String ID%>  
     ```  
   
      Například k lokalizaci text pro ovládací prvek popisek na stránku aplikace, změníte:  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
     <asp:Label ID="lbl" runat="server" Text="Label text"></asp:Label>  
     </asp:Content>  
@@ -66,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
      až  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
     <asp:Label ID="lbl" runat="server" Text="<%$Resources:MyAppResources,String1%>"></asp:Label>  
     </asp:Content>  

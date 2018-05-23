@@ -1,5 +1,5 @@
 ---
-title: Globální přístup k objektům v projektech Office | Microsoft Docs
+title: Globální přístup k objektům v projektech pro systém Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,13 +33,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fda3dee12cdea7442d0f92a2ba794551d76b14cc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d81d94c07345fa54c5758919b2a0c6dfde166503
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="global-access-to-objects-in-office-projects"></a>Globální přístup k objektům v projektech pro systém Office
+# <a name="global-access-to-objects-in-office-projects"></a>Globální přístup k objektům v projektech pro systém Office
   Když vytvoříte projekt Office, Visual Studio automaticky vygeneruje třídy s názvem `Globals` v projektu. Můžete použít `Globals` třídy pro přístup k několika jiný projekt položky v době běhu z jakékoli kódu v projektu.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
@@ -72,7 +72,7 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
-## <a name="initializing-the-globals-class"></a>Inicializace Globals – třída  
+## <a name="initialize-the-globals-class"></a>Inicializace Globals – třída  
  Kód, který se pokouší použít `Globals` výjimku době běhu může vyvolat třída před dokumentu nebo doplňku VSTO je zcela inicializován. Například pomocí `Globals` při deklarace proměnné úrovni třídy nemusí podařit, protože `Globals` – třída nemusí být inicializovaný s odkazy na všechny hostitele položky předtím, než dojde k vytvoření deklarované objektu.  
   
 > [!NOTE]  
@@ -85,6 +85,6 @@ ms.lasthandoff: 04/16/2018
  [Hostitelská položka Document](../vsto/document-host-item.md)   
  [Hostitelská položka Workbook](../vsto/workbook-host-item.md)   
  [Hostitelská položka Worksheet](../vsto/worksheet-host-item.md)   
- [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
+ [Psaní kódu v řešeních pro systém Office](../vsto/writing-code-in-office-solutions.md)  
   
   

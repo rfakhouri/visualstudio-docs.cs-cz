@@ -9,11 +9,11 @@ description: Další informace o předplatném školení DataCamp součástí vy
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 552e82651937be61e333f9fc07e9e47b9723b360
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67b79e711cb18f894cd9ae8ee23e049bf84bf9c3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Výhodou školení DataCamp odběry Visual Studio
 
@@ -74,7 +74,7 @@ Můžete kdykoli zastavit a obnovit vaše školení v další relaci.  Právě n
 
 
 
-<sup>1</sup>*zahrnuje: Představte si není pro prodej (NFR), FTE, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark,* 
+<sup>1</sup>*zahrnuje: Představte si není pro prodej (NFR), FTE, cenná Partner společnosti Microsoft (MVP), oblast ředitel (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark,*
 
 
 Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
@@ -83,6 +83,7 @@ Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.vi
 ## <a name="support-resources"></a>Podpora prostředky
 -  Potřebujete pomoc s používáním DataCamp?  Podívejte se na tyto prostředky:
     - [Komunita DataCamp](https://www.datacamp.com/community/tutorials), poskytuje funkci fóra a kurzy.
-    - [NEJČASTĚJŠÍ DOTAZY K](https://datacamp.groovehq.com/help_center).  Na stránce – Nejčastější dotazy máte také možnost odeslání žádosti o podporu e-mailu.
+    - [Centrum pro nápovědu DataCamp](https://support.datacamp.com/hc), kde hledání témata týkající se podpory a najdete v části otázky uživatelského požadavku.  
+    - [Odeslání žádosti o podporu](https://support.datacamp.com/hc/requests/new)
 -  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
 -  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 

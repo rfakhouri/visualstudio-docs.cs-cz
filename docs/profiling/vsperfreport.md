@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a26af4557d7422126aea805404674bf12630ca
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Vsperfreport – nástroj pro příkazový řádek se používá k vytváření sestav pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci profilace datové soubory. Výchozí formát sestavy je soubor .csv.  
@@ -45,7 +45,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 ## <a name="symbol-files"></a>Soubory symbolů  
  K zobrazení informací o symbolu například názvy funkcí a čísla řádků, vsperfreport – vyžaduje přístup k symbolu (. Soubory PDB) PROFILOVANÉHO součásti a soubory symbolů systému Windows. Další informace najdete v tématu [postupy: určení umístění souboru se symboly z příkazového řádku](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).  
   
-## <a name="general-report-options"></a>Obecná sestava možnosti  
+## <a name="general-report-options"></a>Možnosti Obecné sestavy  
  Následující tabulka popisuje obecné sestavy formátování možnosti a možnosti, které vyberte data, aby byly hlášené.  
   
 |Možnosti|Popis|  

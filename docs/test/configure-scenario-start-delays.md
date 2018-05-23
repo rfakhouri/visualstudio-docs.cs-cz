@@ -1,5 +1,5 @@
 ---
-title: Konfigurace zpoždění spuštění scénáře pro testování v sadě Visual Studio zatížení
+title: Konfigurace zpoždění spuštění scénář pro zátěžové testování
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 519efd059cbac4aca3ea281fe6c4ad042ee1ddea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Konfigurace zpoždění pro spuštění scénáře v zátěžových testech
 
@@ -72,11 +72,11 @@ Zpoždění před zahájením scénáři můžete zadat v zátěžovém testu po
 
      **Editoru zátěžových testů** se zobrazí. Zobrazí se strom zátěžového testu.
 
-2. V zatížení testovat stromy **scénáře** složky, vyberte uzlu scénář, který chcete určit agenty používat.
+2. V zatížení testovat stromy **scénáře** složky, vyberte uzel scénář, který chcete změnit chování zahřívání.
 
 3. Na **zobrazení** nabídce vyberte možnost **vlastnosti – okno**.
 
-     Tento scénář kategorií a vlastností se zobrazí v okně Vlastnosti.
+     Tento scénář kategorií a vlastností se zobrazují v **vlastnosti** okno.
 
      V **zakázat během zahřívání** vlastnosti, vyberte buď **True** nebo **False.**
 

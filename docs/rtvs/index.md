@@ -10,11 +10,11 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: d571252c34a286e26fbf97537c5fe4a527743d72
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9e34fd9c343261626e8296488acf55214cf539ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-r-in-visual-studio"></a>Práce s R v sadě Visual Studio
 
@@ -32,12 +32,12 @@ Chcete-li prostředí R v sadě Visual Studio:
 
 Potom postupujte podle níže odkazy, které další informace o funkce související s R a také obecné možnosti sady Visual Studio, sám sebe.
 
-| Funkce | Popis | Dokumentaci obecné Visual Studio | 
+| Funkce | Popis | Dokumentaci obecné Visual Studio |
 | --- | --- | --- |
 | [Systém projektu Visual Studio](r-projects-in-visual-studio.md) | Uspořádání a správu související soubory ve struktuře pohodlný a využít užitečné šablony pro položky, jako je například kódu jazyka R, dokumentace R, R Markdownu, dotazy SQL a uložených procedur. Získejte také [Správce balíčků](r-package-manager-in-visual-studio.md) a [systému SQL Server integration](integrating-sql-server-with-r.md).  | [Řešení a projekty v sadě Visual Studio](../ide/solutions-and-projects-in-visual-studio.md) |
 | [Pracovní prostor](r-workspaces-in-visual-studio.md) | RTVS můžete vytvořit vazbu na místní a vzdálené pracovní prostory, což umožňuje vytvořit kód R místně s menší sady dat, pak snadno spustit kód na výkonnější počítače založené na cloudu s mnohem větších datových sad. | není k dispozici |
 | [Možnosti nástrojů R](options-for-r-tools-in-visual-studio.md) | Ovládat různé aspekty RTVS. | [Dialogové okno Možnosti](../ide/reference/options-dialog-box-visual-studio.md) |
-| [Bohaté úpravy, IntelliSense a fragmenty kódu](editing-r-code-in-visual-studio.md) | Zahrnuje zvýrazňování, syntaxe [IntelliSense](r-intellisense.md) ve všech váš kód a knihovny, kód formátování, podpis nápovědy, přechod na definici, najít všechny odkazy [výstřižky kódu](code-snippets-for-r.md)a další. | [Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md) |
+| [Bohaté úpravy, IntelliSense a fragmenty kódu](editing-r-code-in-visual-studio.md) | Zahrnuje zvýrazňování, syntaxe [IntelliSense](r-intellisense.md) ve všech váš kód a knihovny, kód formátování, podpis nápovědy, přechod na definici, najít všechny odkazy [výstřižky kódu](code-snippets-for-r.md)a další. | [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md) |
 | [R Markdown](rmarkdown-with-r-in-visual-studio.md) | R Markdownu dokumenty můžete sdílet vaše data výsledky se integrované kódu jazyka R uvnitř bloky kódu markdownu. | není k dispozici |
 | [Interaktivní okno](interactive-repl-for-r-in-visual-studio.md) | Nabízí úplné REPL prostředí R a umožňuje snadno spouštění kódu ve zdrojovém souboru v okně interaktivní. | není k dispozici |
 | [Vizualizace dat](visualizing-data-with-r-in-visual-studio.md) | Vykreslení je nedílnou součástí prostředí R a RTVS podporuje více nezávislých výkresu windows, každou s vlastní historie a možnost přesunout ukazuje zeměpisný mezi windows. Pozemků můžete uložit do rastrového obrázku a soubory PDF nebo jako rastrový obrázek nebo metafile zkopírován do schránky.  | není k dispozici |

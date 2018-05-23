@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8ddfb73e6871a30cabcece0711b0cf5b4c63175
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8c6e4420b0466857177cad356de7bb4a737968f3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="vsperfaspnetcmd"></a>VSPerfASPNetCmd
-**VSPerfASPNetCmd.exe** nástroj příkazového řádku můžete do profilu webů ASP.Net bez nutnosti nastavení proměnných prostředí nebo restartovat počítač. Použití **VSPerfASPNetCmd.exe** místo [VSPerfCmd](../profiling/vsperfcmd.md) když jsou profilace webů ASP.NET a není nutné další funkce poskytované službou **VSPerfCmd**. Další informace o **VSPerfASPNetCmd**, najdete v části [rychlé profilace webu pomocí VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** je nástroj příkazového řádku upřednostňovaný používat při použití samostatných profileru profilu webu technologie ASP.NET.  
+**VSPerfASPNetCmd.exe** nástroj příkazového řádku můžete do profilu webů ASP.Net bez nutnosti nastavení proměnných prostředí nebo restartovat počítač. Použití **VSPerfASPNetCmd.exe** místo [VSPerfCmd](../profiling/vsperfcmd.md) když jsou profilace webů ASP.NET a není nutné další funkce poskytované službou **VSPerfCmd**. Další informace o **VSPerfASPNetCmd**, najdete v části [profilace rychlé webové stránky pomocí VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md). **VSPerfASPNetCmd** je nástroj příkazového řádku upřednostňovaný používat při použití samostatných profileru profilu webu technologie ASP.NET.  
   
 ## <a name="syntax"></a>Syntaxe  
  **vsperfaspnetcmd** [/*možnosti*] *webu*  
@@ -41,4 +41,4 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>Viz také  
  [Rychlé profilování webových stránek pomocí VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)   
- [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
+ [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)

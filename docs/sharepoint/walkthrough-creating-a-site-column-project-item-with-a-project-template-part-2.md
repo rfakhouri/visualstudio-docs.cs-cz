@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e080c981715e746b8d24e2b2959fa1d5bd97029b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0027b49cd371aaec00d2bcfb609a694f14dc4869
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružit ho pomocí šablony projektu v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce vám pomůže shromažďovat informace od uživatelů, když používat šablony pro vytvoření nového projektu, který obsahuje položky projektu. Informace, které slouží k inicializaci položky projektu.  
@@ -239,7 +239,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Pokud vyvíjíte projekt Visual Basic, odeberte `ProjectTemplateWizard` oboru názvů z `WizardWindow` název třídy v `x:Class` atribut `Window` elementu. Tento element má na prvním řádku XAML. Když jste hotovi, první řádek by měl vypadat jako v následujícím příkladu.  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -260,7 +260,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Pokud vyvíjíte projekt Visual Basic, odeberte `ProjectTemplateWizard` oboru názvů z `Page1` název třídy v `x:Class` atribut `UserControl` elementu. Toto je první řádek XAML. Až skončíte, první řádek by měla vypadat podobně jako tento.  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page1"  
     ```  
   
@@ -281,7 +281,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Pokud vyvíjíte projekt Visual Basic, odeberte `ProjectTemplateWizard` oboru názvů z `Page2` název třídy v `x:Class` atribut `UserControl` elementu. Toto je první řádek XAML. Až skončíte, první řádek by měla vypadat podobně jako tento.  
   
-    ```  
+    ```xml  
     <UserControl x:Class="Page2"  
     ```  
   
@@ -332,7 +332,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  V části **SiteColumnProjectTemplate** uzlu, otevřete soubor SiteColumnProjectTemplate.vstemplate a potom z něj odebrat následující element.  
   
-    ```  
+    ```xml  
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
     ```  
   
@@ -340,16 +340,16 @@ ms.lasthandoff: 04/16/2018
   
 5.  V části **SiteColumnProjectTemplate** uzlu, otevřete soubor ProjectTemplate.csproj nebo ProjectTemplate.vbproj a pak odeberte následující `PropertyGroup` element z něj.  
   
-    ```  
+    ```xml  
     <PropertyGroup>  
       <SignAssembly>true</SignAssembly>  
       <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>  
     </PropertyGroup>  
-    ```  
+    ``` 
   
 6.  Odebrat následující `None` elementu.  
   
-    ```  
+    ```xml  
     <None Include="key.snk" />  
     ```  
   
@@ -384,7 +384,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Spusťte následující příkaz, nahraďte *PathToWizardAssembly* s úplnou cestou integrovaný ProjectTemplateWizard.dll sestavení projektu ProjectTemplateWizard ve svém vývojovém počítači:  
   
-    ```  
+    ```cmd  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -398,7 +398,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  U konce souboru, přidejte následující `WizardExtension` element mezi `</TemplateContent>` a `</VSTemplate>` značky. Nahraďte *tokenu* hodnotu `PublicKeyToken` atributem, token veřejného klíče, který jste získali v předchozím postupu.  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ProjectTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=your token</Assembly>  
       <FullClassName>ProjectTemplateWizard.SiteColumnProjectWizard</FullClassName>  
@@ -418,7 +418,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  V projektu SiteColumnProjectTemplate nahraďte obsah souboru Elements.xml následující kód XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
       <Field ID="{$guid5$}"   

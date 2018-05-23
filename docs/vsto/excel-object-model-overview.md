@@ -1,5 +1,5 @@
 ---
-title: Přehled modelu objektů v aplikaci Excel | Microsoft Docs
+title: Přehled modelu objektů aplikace Excel
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b700d3834cf432ff9af2ec17e1daa3011763cac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="excel-object-model-overview"></a>Přehled modelu objektů aplikace Excel
   Pro vývoj řešení, které používají aplikace Microsoft Office Excel, můžete pracovat s objekty poskytované model objektů aplikace Excel. Toto téma představuje nejdůležitější objekty:  
@@ -43,14 +43,14 @@ ms.lasthandoff: 04/16/2018
   
  Objektový model přesně dodržuje uživatelské rozhraní. <xref:Microsoft.Office.Interop.Excel.Application> Objekt představuje celou aplikaci a všechny <xref:Microsoft.Office.Interop.Excel.Workbook> objektu obsahuje kolekci `Worksheet` objekty. Zde, je hlavní abstrakce, která představuje buněk <xref:Microsoft.Office.Interop.Excel.Range> objekt, který umožňuje pracovat s jednotlivých buněk nebo skupiny buněk.  
   
- Kromě model objektů aplikace Excel projektech pro systém Office v sadě Visual Studio poskytují *hostitele položky* a *hostování ovládacích prvků* , rozšířit některé objekty ve model objektů aplikace Excel. Hostitelských položek a hostitelských ovládacích prvků chovají jako objekty aplikace Excel, které budou rozšíření, ale mají také další funkce, jako je například funkce datové vazby a další události. Další informace najdete v tématu [automatizace aplikace Excel pomocí rozšířených objekty](../vsto/automating-excel-by-using-extended-objects.md) a [hostitelských položek a Přehled ovládacích prvků hostitele](../vsto/host-items-and-host-controls-overview.md).  
+ Kromě model objektů aplikace Excel projektech pro systém Office v sadě Visual Studio poskytují *hostitele položky* a *hostování ovládacích prvků* , rozšířit některé objekty ve model objektů aplikace Excel. Hostitelských položek a hostitelských ovládacích prvků chovají jako objekty aplikace Excel, které budou rozšíření, ale mají také další funkce, jako je například funkce datové vazby a další události. Další informace najdete v tématu [automatizace aplikace Excel s použitím rozšířených objektů](../vsto/automating-excel-by-using-extended-objects.md) a [hostitele položky a hostitelem Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
   
  Toto téma obsahuje stručný přehled modelu objektů aplikace Excel. Zdroje, kde můžete další informace o celý model objektů aplikace Excel najdete v tématu [pomocí dokumentace modelu objektů aplikace Excel](#ExcelOMDocumentation).  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: použití obslužné rutiny událostí v aplikaci Excel 2007 doplňku?](http://go.microsoft.com/fwlink/?LinkID=130291), a [jak provést I: použití obrazce vytvořte bublinový graf v aplikaci Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak I: použití obslužné rutiny událostí v aplikaci Excel 2007 doplňku?](http://go.microsoft.com/fwlink/?LinkID=130291), a [jak tvarů I: použijte k vytvoření bublinový graf v aplikaci Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).  
   
-## <a name="accessing-objects-in-an-excel-project"></a>Přístup k objektům v projektu aplikace Excel  
- Při vytváření nového projektu doplňku VSTO pro Excel, Visual Studio automaticky vytvoří soubor ThisAddIn.vb nebo ThisAddIn.cs kódu. Máte přístup k objektu Application pomocí `Me.Application` nebo `this.Application`.  
+## <a name="access-objects-in-an-excel-project"></a>Přístup k objektům v projektu aplikace Excel  
+ Při vytváření nového projektu doplňku VSTO pro Excel, Visual Studio automaticky vytvoří *ThisAddIn.vb* nebo *ThisAddIn.cs* souboru kódu. Máte přístup k objektu Application pomocí `Me.Application` nebo `this.Application`.  
   
  Když vytvoříte nový projekt na úrovni dokumentu pro Excel, máte možnost vytvořit nový projekt sešitu aplikace Excel nebo Excel šablony. Ve nový projekt aplikace Excel pro sešit a šablony projektů sady Visual Studio automaticky vytvoří následující soubory kódu.  
   
@@ -78,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
  Velká část práci v aplikaci Excel se soustředí kolem tyto čtyři objekty a jejich členové.  
   
-### <a name="application-object"></a>Objekt aplikace  
+### <a name="application-object"></a>objekt aplikace  
  Aplikace Excel <xref:Microsoft.Office.Interop.Excel.Application> objekt představuje vlastní aplikace Excel. <xref:Microsoft.Office.Interop.Excel.Application> Objekt poskytuje značnou část informace o běžící aplikaci, možnosti u dané instance, a otevřete aktuální uživatelské objekty v rámci instance.  
   
 > [!NOTE]  
@@ -89,14 +89,14 @@ ms.lasthandoff: 04/16/2018
   
  Nástroje pro vývoj pro Office v sadě Visual Studio rozšiřuje <xref:Microsoft.Office.Interop.Excel.Workbook> objekt tím, že poskytuje <xref:Microsoft.Office.Tools.Excel.Workbook> typu. Tento typ poskytuje přístup ke všem funkcím <xref:Microsoft.Office.Interop.Excel.Workbook> objektu. Další informace najdete v tématu [hostitelská položka Workbook](../vsto/workbook-host-item.md).  
   
-### <a name="worksheet-object"></a>List – objekt  
+### <a name="worksheet-object"></a>list – objekt  
  <xref:Microsoft.Office.Interop.Excel.Worksheet> Je členem objektu <xref:Microsoft.Office.Interop.Excel.Worksheets> kolekce. Mnoho vlastností, metod a události <xref:Microsoft.Office.Interop.Excel.Worksheet> jsou stejná nebo podobná členy poskytované <xref:Microsoft.Office.Interop.Excel.Application> nebo <xref:Microsoft.Office.Interop.Excel.Workbook> objekty.  
   
  Poskytuje aplikace Excel <xref:Microsoft.Office.Interop.Excel.Sheets> kolekci jako vlastnost <xref:Microsoft.Office.Interop.Excel.Workbook> objektu. Každý člen <xref:Microsoft.Office.Interop.Excel.Sheets> kolekce je buď <xref:Microsoft.Office.Interop.Excel.Worksheet> nebo <xref:Microsoft.Office.Interop.Excel.Chart> objektu.  
   
  Nástroje pro vývoj pro Office v sadě Visual Studio rozšiřují <xref:Microsoft.Office.Interop.Excel.Worksheet> objekt tím, že poskytuje <xref:Microsoft.Office.Tools.Excel.Worksheet> typu. Tento typ poskytuje přístup ke všem funkcím <xref:Microsoft.Office.Interop.Excel.Worksheet> objektu, jakož i nové funkce, jako je například schopnost hostitele spravované ovládací prvky a zpracovávat nové události. Další informace najdete v tématu [hostitelská položka Worksheet](../vsto/worksheet-host-item.md).  
   
-### <a name="range-object"></a>Objekt rozsahu  
+### <a name="range-object"></a>rozsah – objekt  
  <xref:Microsoft.Office.Interop.Excel.Range> Objektu je objekt, který budete používat většinu v rámci aplikace Excel. Předtím, než můžete upravit všechny oblasti v aplikaci Excel, musíte jej jako express <xref:Microsoft.Office.Interop.Excel.Range> objektu a pracovat s metody a vlastnosti rozsahu. A <xref:Microsoft.Office.Interop.Excel.Range> objekt představuje buňku, řádek, sloupec, výběr buněk, který obsahuje jeden nebo více bloků buněk, které nemusí nebo může být souvislý nebo dokonce i skupiny buněk na několik listů.  
   
  Visual Studio rozšiřuje <xref:Microsoft.Office.Interop.Excel.Range> objekt tím, že poskytuje <xref:Microsoft.Office.Tools.Excel.NamedRange> a <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> typy. Tyto typy mají většinu stejné funkce jako <xref:Microsoft.Office.Interop.Excel.Range> objektu, jakož i nové funkce, jako je například funkce vazby dat a nové události. Další informace najdete v tématu [NamedRange – ovládací prvek](../vsto/namedrange-control.md) a [xmlmappedrange – ovládací prvek](../vsto/xmlmappedrange-control.md).  
@@ -105,12 +105,12 @@ ms.lasthandoff: 04/16/2018
  Úplné informace o model objektů aplikace Excel najdete odkaz primární spolupracující sestavení (PIA) aplikace Excel a VBA objektu modelu.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odkaz sestavení primární spolupráce  
- PIA – Excel referenční dokumentaci k nástroji popisuje typy v sestavení primární spolupráce pro aplikaci Excel. Tato dokumentace je k dispozici z následujícího umístění: [odkaz na sestavení zprostředkovatel komunikace s objekty aplikace Excel 2010 primární](http://go.microsoft.com/fwlink/?LinkId=189585).  
+ PIA – Excel referenční dokumentaci k nástroji popisuje typy v sestavení primární spolupráce pro aplikaci Excel. Tato dokumentace je k dispozici z následujícího umístění: [odkaz na aplikaci Excel 2010 primární spolupracující sestavení](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
  Další informace o návrhu PIA aplikace Excel, jako jsou rozdíly mezi třídy a rozhraní v primární a jak jsou implementované události v primární, najdete v části [přehled třídy a rozhraní v Office primární zprostředkovatel komunikace s objekty sestavení](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>Odkaz na objekt modelu VBA  
- Reference objektu modelu VBA dokumenty model objektů aplikace Excel, jako je zpřístupněné pro Visual Basic pro aplikace (VBA) kód. Další informace najdete v tématu [odkaz na objekt modelu aplikace Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199768).  
+ Reference objektu modelu VBA dokumenty model objektů aplikace Excel, jako je zpřístupněné pro Visual Basic pro aplikace (VBA) kód. Další informace najdete v tématu [odkaz na aplikaci Excel 2010 objekt modelu](http://go.microsoft.com/fwlink/?LinkId=199768).  
   
  Všechny objekty a členy ve model odkaz na VBA odpovídají typy a členy v PIA aplikace Excel. Například odpovídá objektu listu ve model odkaz na VBA <xref:Microsoft.Office.Interop.Excel.Worksheet> objekt v PIA aplikace Excel. I když reference VBA objektu modelu poskytuje příklady kódu pro většinu vlastností, metod a událostí, musí překládat VBA kód v této referenci na Visual Basic a Visual C#, pokud chcete používat v projektu aplikace Excel, který vytvoříte pomocí sady Visual Studio.  
   
@@ -119,8 +119,8 @@ ms.lasthandoff: 04/16/2018
 |Název|Popis|  
 |-----------|-----------------|  
 |[Řešení pro aplikaci Excel](../vsto/excel-solutions.md)|Vysvětluje, jak můžete vytvořit přizpůsobení na úrovni dokumentu a doplňků VSTO pro aplikaci Microsoft Office Excel.|  
-|[Práce s oblastmi](../vsto/working-with-ranges.md)|Obsahuje příklady, které ukazují, jak provádět běžné úlohy s rozsahy.|  
-|[Práce s listy](../vsto/working-with-worksheets.md)|Obsahuje příklady, které ukazují, jak provádět běžné úkoly s listů.|  
+|[Práce s rozsahy](../vsto/working-with-ranges.md)|Obsahuje příklady, které ukazují, jak provádět běžné úlohy s rozsahy.|  
+|[Práce s listy](../vsto/working-with-worksheets.md)|Obsahuje příklady, které ukazují, jak provádět běžné úkoly s listů.|  
 |[Práce se sešity](../vsto/working-with-workbooks.md)|Obsahuje příklady, které ukazují, jak provádět běžné úkoly s sešity.|  
   
   

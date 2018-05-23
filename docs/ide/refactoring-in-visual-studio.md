@@ -11,11 +11,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf66eb2bc780d0e67bc51658eda062f620980c47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75945e1a3e66951021866370d043a645c8918541
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="refactor-code"></a>Refaktorovat kódu
 
@@ -29,5 +29,5 @@ Jiné operace refaktoringu jsou k dispozici pro různé programovací jazyky v s
 
 - [Rychlé akce](../ide/quick-actions.md)
 - [Integrované vývojové prostředí sady Visual Studio](../ide/visual-studio-ide.md)
-- [Psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Zobrazení náhledu změn](../ide/preview-changes.md)

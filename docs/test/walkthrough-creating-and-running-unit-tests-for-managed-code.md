@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 29472e2590a767c98c5674bce14712171f16fdbf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Návod: Vytváření a spouštění testování částí pro spravovaný kód
 
@@ -285,7 +285,7 @@ Spuštění tyto dvě metody testovací ukazuje testy fungovat správně.
 
 Poslední dva testovací metody jsou však také zneklidňují nové. Vám nemůže být určité která podmínka v metodě testovaného vyvolá výjimku při spuštění buď test. Nějakým způsobem rozlišení dvě podmínky, který je záporný MD částka nebo hodnota větší než zůstatek, by zvýšit vaši důvěru testy.
 
-Looki na metodu v rámci testu znovu a Všimněte si, že oba podmíněné příkazy použít `ArgumentOutOfRangeException` konstruktor, který právě přebírá název argumentu jako parametr:
+Podívejte se na metodu testovaného znovu a Všimněte si, že pomocí obou podmíněné příkazy `ArgumentOutOfRangeException` konstruktor, který právě přebírá název argumentu jako parametr:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

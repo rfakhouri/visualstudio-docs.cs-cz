@@ -10,13 +10,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb8959aa18741c61e4a6719641645eb9be9ea70
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="visualizing-eventsource-events-as-markers"></a>Vizualizace událostí EventSource v podobě značek
+# <a name="visualize-eventsource-events-as-markers"></a>Vizualizace událostí EventSource v podobě značek
 Vizualizér souběžnosti můžete zobrazit událostí EventSource jako značky a můžete řídit zobrazení značek. Chcete-li zobrazit EventSource značek, zaregistrujte zprostředkovatele trasování událostí pro Windows GUID pomocí [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno. Vizualizér souběžnosti má výchozích konvencí představují událostí EventSource jako [značky příznaků](../profiling/flag-markers.md), [značky Span](../profiling/span-markers.md), a [značky zpráv](../profiling/message-markers.md). Zobrazení událostí EventSource přidáním vlastních polí k událostem, které můžete přizpůsobit. Další informace o značkách najdete v části [značek Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md). Další informace o událostech EventSource najdete v tématu <xref:System.Diagnostics.Tracing>.  
   
 ## <a name="default-visualization-of-eventsource-events"></a>Výchozí vizualizace událostí EventSource  
@@ -52,7 +52,7 @@ Vizualizér souběžnosti můžete zobrazit událostí EventSource jako značky 
 ### <a name="text"></a>Text  
  Pokud formátovaná textová zpráva typu printf byl definován pro událost, zobrazí se jako popis značky. Popis, jinak je název události a hodnotu každé datové pole.  
   
-## <a name="customizing-visualization-of-eventsource-events"></a>Přizpůsobení vizualizace událostí EventSource  
+## <a name="customize-visualization-of-eventsource-events"></a>Přizpůsobení vizualizace událostí EventSource  
  Můžete přizpůsobit událostí EventSource zobrazení tak, že přidáte na odpovídající pole události, jak je popsáno v následujících částech.  
   
 ### <a name="marker-type"></a>Typ značky  
@@ -95,4 +95,4 @@ Vizualizér souběžnosti můžete zobrazit událostí EventSource jako značky 
 >  Použití SpanID lze vnořit rozsahy, mohly částečně překrývat ve stejném vlákně, nebo jejich spuštění na jedno vlákno povolíte a end na jiném není podporována.  
   
 ## <a name="see-also"></a>Viz také  
- [Značky Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md)
+ [Značky vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md)

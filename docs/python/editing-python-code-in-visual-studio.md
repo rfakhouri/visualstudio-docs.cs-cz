@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cd2de34baf390371c51c5d67ad4f060d2e5b06a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 90f73daad0c4ea9184337050d77a53b14e289614
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="editing-python-code"></a>Úpravy kódu jazyka Python
 
@@ -27,7 +27,7 @@ Editor integrována se interaktivních okna v sadě Visual Studio, což usnadňu
 |---|---|
 | ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) pro předvedení úpravy kódu Python (2 m 30s).|
 
-Obecné dokumentaci na úpravy kódu v sadě Visual Studio najdete v tématu [psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md). Viz také [osnovy v sadě Visual Studio](../ide/outlining.md), což vám usnadní zaměřené na konkrétní části kódu.
+Obecné dokumentaci na úpravy kódu v sadě Visual Studio najdete v tématu [funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md). Viz také [osnovy v sadě Visual Studio](../ide/outlining.md), což vám usnadní zaměřené na konkrétní části kódu.
 
 Můžete také použít Visual Studio prohlížeče objektů (**zobrazení > ostatní okna > Prohlížeč objektů** nebo Ctrl + W, J) pro zkontrolujete Python tříd definovaných v každé modulu a funkce definované v těchto tříd.
 

@@ -29,11 +29,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 078715380bb5ddc570d745d76fabe4d8a264eef0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0c12c01566011ed93d83cd9ecc0dd417edd0b1b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="providing-packaging-and-deployment-information-in-project-items"></a>Poskytování informací o balení a nasazení v položkách projektu
   Všechny položky projektu služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mají vlastnosti, které můžete použít k poskytnutí dalších údajů při nasazení projektu do služby SharePoint. Tyto vlastnosti jsou následující:  
@@ -53,7 +53,7 @@ ms.lasthandoff: 04/16/2018
   
  Přidáte-li hodnotu vlastnosti funkce položka projektu, hodnota se přidá jako element v manifestu funkce položky. V projektu model Business Data Connectivity (BDC) například vlastnost funkce ModelFileName vypadá takhle:  
   
-```  
+```xml  
 <Property Key="ModelFileName" Value="BdcModel1\BdcModel1.bdcm" />   
 ```  
   

@@ -18,11 +18,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cdc89faaebff31981e7cece07c8530600f32454
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: c4e4cf8e21f3f053783b1f7b70dcc51f2fd4ef2a
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Návrh a zobrazení tříd a typů pomocí návrháře tříd
 
@@ -58,5 +58,5 @@ Po mít upřesnění diagramy jeden nebo více tříd, zkopírujte je do dokumen
 
 ## <a name="see-also"></a>Viz také
 
-- [Psaní kódu v editoru](../writing-code-in-the-code-and-text-editor.md)
+- [Funkce editoru kódu](../writing-code-in-the-code-and-text-editor.md)
 - [Mapování závislostí napříč vaším řešením](../../modeling/map-dependencies-across-your-solutions.md)

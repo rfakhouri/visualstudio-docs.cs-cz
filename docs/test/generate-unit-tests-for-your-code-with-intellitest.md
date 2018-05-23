@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: af013fe81ca464f6433b35429e3bbf077f78e2f7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 28ba3f0abd948714e17ef0c69267eb7c1df9162e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generování testů částí kódu s IntelliTest
 Jsou zde popsány IntelliTest ke generování testovacích datech a sada testů částí kódu .NET. Pro každý příkaz v kódu, je generována testovací vstup, spustí tento příkaz. Case analýzy se provádí pro každou podmíněného větve v kódu. Například `if` příkazů, kontrolní výrazy a všechny operace, které můžete vyvolat výjimky jsou analyzovány. Této analýze slouží ke generování testovacích dat pro testování částí parametrizované pro každou z vaší metody vytváření testů jednotek s pokrytí vysoké kódu.
@@ -143,7 +143,7 @@ Zadejte obecné vztah mezi vstupy a výstupy, které chcete testů generovaného
 **Odpověď:** Ano, postupujte podle těchto kroků [najít a nainstalovat ostatní platformy](../test/install-third-party-unit-test-frameworks.md).
 Test framework – rozšíření jsou k dispozici také v Visual Studio Marketplace:
 
-* [Rozšíření NUnit pro Test generátory](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [Rozšíření NUnit pro Test generátory](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
 * [Rozšíření xUnit.net pro Test generátory](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
 
 

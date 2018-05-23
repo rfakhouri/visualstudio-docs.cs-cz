@@ -1,5 +1,5 @@
 ---
-title: Protokolování událostí pro řešení pro systém Office | Microsoft Docs
+title: Protokolování událostí pro řešení pro systém Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4b1319e906060a1fe4d94fbd2e6bb0a3f9d53eb9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ef1db4f88e13575f77a88d0e2ceee7ef0621b202
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="event-logging-for-office-solutions"></a>Protokolování události u řešení pro systém Office
+# <a name="event-logging-for-office-solutions"></a>Protokolování událostí pro řešení pro systém Office
   V prohlížeči událostí v systému Windows můžete použít zobrazíte zprávy výjimek, které jsou zachyceny [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] při instalaci nebo odinstalaci řešení Office. Tyto zprávy z protokoly událostí můžete použít k vyřešení instalace a nasazení problémy.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="reading-the-event-log"></a>Čtení protokol událostí  
+## <a name="read-the-event-log"></a>Přečtěte si protokol událostí  
  Otevřete **Prohlížeč událostí** a filtr pro události, které chcete zobrazit.  
   
-#### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Ke čtení protokol událostí v systému Windows Server 2003 a Windows XP  
+### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Ke čtení protokol událostí v systému Windows Server 2003 a Windows XP  
   
 1.  V Ovládacích panelech otevřete **nástroje pro správu**.  
   
@@ -76,15 +76,15 @@ ms.lasthandoff: 04/16/2018
   
  Po odinstalaci řešení Office zprávy výjimek zůstat v protokolu událostí.  
   
- Pokud chcete zobrazit nebo protokolu zprávy o výjimkách, když běží řešení Office, najdete v části [ladění projektů Office](../vsto/debugging-office-projects.md) a [ladění projektů Office](../vsto/debugging-office-projects.md).  
+ Pokud chcete zobrazit nebo protokolu zprávy o výjimkách, když běží řešení Office, najdete v části [projekty ladění Office](../vsto/debugging-office-projects.md) a [projekty ladění Office](../vsto/debugging-office-projects.md).  
   
 ### <a name="localization"></a>Lokalizace  
  Jazyk zpráva o výjimce je určen podle sady Visual Studio Tools for Office runtime language. Například pokud má počítač koncový uživatel japonská jazyková sada nainstalovaná, zpráva o výjimce se zapíšou do protokolu událostí v japonštině.  
   
-## <a name="disabling-the-event-logger"></a>Zakázání protokolování událostí  
+## <a name="disable-the-event-logger"></a>Zakázání protokolování událostí  
  Ve výchozím nastavení je protokolování událostí povolené při instalaci nebo odinstalaci řešení pro systém Office. Protokoly událostí můžete zakázat nastavením proměnné prostředí VSTO_EVENTLOGDISABLED "1" (jedna).  
   
-#### <a name="to-disable-the-event-log"></a>Chcete-li zakázat protokol událostí  
+### <a name="to-disable-the-event-log"></a>Chcete-li zakázat protokol událostí  
   
 1.  V Ovládacích panelech otevřete **systému**.  
   
@@ -100,6 +100,6 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>Viz také  
  [Nasazení řešení Office](../vsto/deploying-an-office-solution.md)   
- [Řešení potíží s nasazením řešení pro systém Office](../vsto/troubleshooting-office-solution-deployment.md)  
+ [Řešení potíží s nasazením řešení Office](../vsto/troubleshooting-office-solution-deployment.md)  
   
   

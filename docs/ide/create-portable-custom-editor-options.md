@@ -9,15 +9,15 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: ff3391023d9a863bd9f06b4608b327902a17f0ac
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Vytvořte nastavení editoru přenosné, vlastní s EditorConfig
 
-Ve Visual Studio 2017, můžete přidat [EditorConfig](http://editorconfig.org/) souboru do projektu nebo codebase vynutit konzistentní kódování styly pro všechny uživatele, který funguje v základu kódu. Nastavení EditorConfig mají přednost před globální text v sadě Visual Studio nastavení editoru. To znamená, které můžete přizpůsobit, každý základu kódu použít nastavení editoru textu, které jsou specifické pro daného projektu. V sadě Visual Studio, stále můžete nastavit vlastní předvolby osobní editor **možnosti** dialogové okno. Tato nastavení platí vždy, když pracujete v codebase bez *.editorconfig* souboru, nebo když *.editorconfig* soubor není přepsat příslušného nastavení. Příkladem takových předvoleb je odsazení styl&mdash;tabulátory, nebo mezery.
+Ve Visual Studio 2017, můžete přidat [EditorConfig](http://editorconfig.org/) souboru do projektu nebo codebase vynutit konzistentní kódování styly pro všechny uživatele, který funguje v základu kódu. Nastavení EditorConfig mají přednost před globální text v sadě Visual Studio nastavení editoru. To znamená, že můžete každý základ kódu přizpůsobit tak, aby se používala nastavení textového editoru, která jsou specifická pro daný projekt. V sadě Visual Studio, stále můžete nastavit vlastní předvolby osobní editor **možnosti** dialogové okno. Tato nastavení platí vždy, když pracujete v codebase bez *.editorconfig* souboru, nebo když *.editorconfig* soubor není přepsat příslušného nastavení. Příkladem takových předvoleb je odsazení styl&mdash;tabulátory, nebo mezery.
 
 Nastavení EditorConfig podporuje mnoho editory kódu a integrovaného vývojového prostředí, včetně sady Visual Studio. Je přenosné komponenty, která přenáší pomocí kódu a může vynutit kódování styly i mimo Visual Studio.
 
@@ -159,7 +159,7 @@ Obor názvů vaší EditorConfig můžete ovládat nastavením ```root=true``` v
 ## <a name="see-also"></a>Viz také
 
 - [Pravidla týkající se rozhraní .NET kódu stylu](../ide/editorconfig-code-style-settings-reference.md)
-- [Zásady vytváření názvů .NET](../ide/editorconfig-naming-conventions.md)
+- [Zásady vytváření názvů rozhraní .NET](../ide/editorconfig-naming-conventions.md)
 - [Podpora EditorConfig služby jazyk](../extensibility/supporting-editorconfig.md)
 - [EditorConfig.org](http://editorconfig.org/)
-- [Psaní kódu v editoru](writing-code-in-the-code-and-text-editor.md)
+- [Funkce editoru kódu](writing-code-in-the-code-and-text-editor.md)

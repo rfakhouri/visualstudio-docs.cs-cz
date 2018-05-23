@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e86f8f856963a979b8e64ba0e613cdb73685a9a0
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="working-with-python-in-visual-studio-on-windows"></a>Práce s Python v sadě Visual Studio v systému Windows
 
@@ -57,7 +57,7 @@ Další informace:
 - Dokumenty: [kódu, formátování](formatting-python-code.md)
 - Dokumenty: [refaktoring](refactoring-python-code.md)
 - Dokumenty: [Linting](linting-python-code.md)
-- Funkce dokumentace obecné Visual Studio: [psaní kódu v editoru kódu a textovém editoru](../ide/writing-code-in-the-code-and-text-editor.md)
+- Funkce dokumentace obecné Visual Studio: [funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>Interaktivní okno
 
@@ -191,7 +191,7 @@ Jsou k dispozici v sadě Visual Studio 2015 a starší [visualstudio.com/vs/olde
 | PIP, snadná instalace | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 <br/>
 
-| Systém projektu | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
+| Projektový systém | 2017 | 2015 | Comm – 2013 | Plocha 2013 | 2013 web | 2013 pro + | 2012 pro + | 2010 SP1 Pro + |
 | --- | --- | --- | --- | --- | --- | --- | --- | ---|
 | Nový projekt z existujícího kódu | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |
 | Zobrazit všechny soubory | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; |

@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b755e79daa0ebb48c8218252c78eb1a3675e6218
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Návod: Použití rozhraní API profileru
+# <a name="walkthrough-using-profiler-apis"></a>Návod: použití rozhraní API profileru
 Průvodce používá aplikace v jazyce C# k ukazují, jak používat [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] profilace rozhraní API nástroje. Chcete-li omezit množství dat, které jsou shromážděny během profilace instrumentace použijete rozhraní API profileru.  
   
  Kroky v tomto návodu se obecně používají na aplikace C/C++. Pro každý jazyk budete muset nakonfigurovat prostředí sestavení správně.  
   
  Obvykle se spustí při analýze výkonu aplikací pomocí profilace ukázka. Pokud ukázka profilace neposkytuje informace, které zjišťuje problémové místo, profilace instrumentace nabízejí vyšší úroveň podrobností. Profilace instrumentace je velmi užitečná pro zkoumání interakce přístup z více vláken.  
   
- Vyšší úroveň podrobností však znamená, že další data jsou shromažďována. Je možné, že profilace instrumentace vytvoří velké datové soubory. Navíc instrumentace je pravděpodobnější mít dopad na výkon aplikace. Další informace najdete v tématu [porozumění hodnotám dat instrumentace](../profiling/understanding-instrumentation-data-values.md) a [porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
+ Vyšší úroveň podrobností však znamená, že další data jsou shromažďována. Je možné, že profilace instrumentace vytvoří velké datové soubory. Navíc instrumentace je pravděpodobnější mít dopad na výkon aplikace. Další informace najdete v tématu [pochopit hodnotám dat instrumentace](../profiling/understanding-instrumentation-data-values.md) a [pochopit hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
   
  Visual Studio profiler umožňuje omezit shromažďování dat. Tento názorný postup nabízí příklad omezení shromažďování dat pomocí rozhraní API profileru. Visual Studio profiler poskytuje rozhraní API pro řízení shromažďování dat z některé aplikace.  
   
@@ -37,9 +37,9 @@ Průvodce používá aplikace v jazyce C# k ukazují, jak používat [!INCLUDE[v
 ## <a name="prerequisites"></a>Požadavky  
  Tento návod předpokládá, že vaši volbu vývojového prostředí je nakonfigurován pro podporu ladění a vzorkování. Základní informace o těchto nezbytných podmínkách naleznete v následujících tématech:  
   
- [Postupy: výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)  
+ [Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  
   
- [Postupy: referenční informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)  
+ [Postupy: Odkazování na informace o symbolech Windows](../profiling/how-to-reference-windows-symbol-information.md)  
   
  Ve výchozím nastavení když se spustí profileru profileru shromažďuje data na globální úrovni. Následující kód na začátku programu změní globální profilace vypnout.  
   
@@ -51,7 +51,7 @@ DataCollection.CurrentId);
   
  Shromažďování dat na příkazovém řádku můžete vypnout bez použití volání rozhraní API. Následující postup předpokládá, prostředí sestavení příkazového řádku je nakonfigurovaná pro spuštění nástrojů pro profilaci a jako vývojové nástroje. To zahrnuje nastavení požadovaná pro vsinstr – a VSPerfCmd. V tématu profilování nástroje příkazového řádku.  
   
-## <a name="limiting-data-collection-using-profiler-apis"></a>Omezení shromažďování dat pomocí rozhraní API profileru  
+## <a name="limit-data-collection-using-profiler-apis"></a>Omezení shromažďování dat pomocí rozhraní API profileru  
   
 #### <a name="to-create-the-code-to-profile"></a>Chcete-li vytvořit kód do profilu  
   
@@ -161,6 +161,6 @@ DataCollection.CurrentId);
   
 ## <a name="see-also"></a>Viz také  
  <xref:Microsoft.VisualStudio.Profiler>   
- [Referenční dokumentace rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)   
+ [Visual Studio profiler referenční dokumentace rozhraní API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [Začínáme](../profiling/getting-started-with-performance-tools.md)   
  [Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)

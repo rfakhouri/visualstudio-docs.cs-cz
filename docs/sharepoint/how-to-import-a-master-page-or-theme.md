@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e60977a44593953b4858ea0262befc61c3189cec
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d28d178e5592d9cdf6d4aba6f642a869c12cc78f
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Postupy: Import stránky předlohy nebo motivu
   Můžete udělit stránky na webu služby SharePoint konzistentní vzhled vytvořením a použitím hlavní stránky a motivů. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] neposkytuje šablon pro tyto elementy, ale můžete je vytvořit v seznamu služby SharePoint a pak je importovat do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Další informace najdete v tématu [stavebním blokem: stránek a uživatelské rozhraní](http://go.microsoft.com/fwlink/?LinkID=182095) na webu společnosti Microsoft.  
@@ -58,7 +58,7 @@ ms.lasthandoff: 04/16/2018
   
 10. Stránky předlohy nahradí existující značky modulu následující kód.  
   
-    ```  
+    ```xml  
     <Module Name="[Module Name]" Url="_catalogs/masterpage">  
         <File Path="[Module Name]\[Master Page Name].master"   
           Url="[Master Page Name].master" Type="GhostableInLibrary" />  
@@ -67,7 +67,7 @@ ms.lasthandoff: 04/16/2018
   
      Pro motiv nahradí existující značky modulu následující kód.  
   
-    ```  
+    ```xml  
     <Module Name="[Module Name]" Url="_catalogs/theme"   
         <File Path="[Module Name]\[Theme Name].thmx" Url="[Theme     
           Name].thmx" Type="GhostableInLibrary" />  

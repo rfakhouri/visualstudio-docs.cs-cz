@@ -17,11 +17,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 629b63b8645f1b5ebd84d25a04a4cec4e8bca6a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 392724510e3145450cbea8ee70d23037ded073a1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Postupy: Vytvoření balíčku řešení služby SharePoint pomocí úloh nástroje MSBuild
   Můžete sestavit, vyčistit a ověřit balíček služby SharePoint (WSP) pomocí příkazového řádku úlohy nástroje MSBuild na vývojovém počítači. Můžete také používat tyto příkazy pro automatizaci procesu sestavení pomocí serveru Team Foundation Server na počítači sestavení.  
@@ -36,13 +36,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Zadejte následující příkaz k vytvoření balíčku pro projekt. Nahraďte *ProjectFileName* s názvem projektu.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ProjectFileName  
     ```  
   
      Například můžete spustit jeden z následujících příkazů pro balíček názvem ListDefinition1 projektu služby SharePoint.  
   
-    ```  
+    ```cmd  
     msbuild /t:Package ListDefinition1.vbproj  
     msbuild /t:Package ListDefinition1.csproj  
     ```  
@@ -57,13 +57,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Zadejte následující příkaz k vyčištění balíčků pro projekt. Nahraďte *ProjectFileName* s názvem projektu.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ProjectFileName  
     ```  
   
      Například můžete spustit jeden z následujících příkazů pro čištění názvem ListDefinition1 projektu služby SharePoint.  
   
-    ```  
+    ```cmd  
     msbuild /t:CleanPackage ListDefinition1.vbproj  
     msbuild /t:CleanPackage ListDefinition1.csproj  
     ```  
@@ -78,13 +78,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Zadejte následující příkaz k ověření balíčků pro projekt. Nahraďte *ProjectFileName* s názvem projektu.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ProjectFileName  
     ```  
   
      Například můžete spustit jeden z následujících příkazů pro ověření názvem ListDefinition1 projektu služby SharePoint.  
   
-    ```  
+    ```cmd  
     msbuild /t:ValidatePackage ListDefinition1.vbproj  
     msbuild /t:ValidatePackage ListDefinition1.csproj  
     ```  
@@ -99,13 +99,13 @@ ms.lasthandoff: 04/16/2018
   
 3.  Zadejte následující příkaz pro nastavení vlastnosti v balíčku pro projekt. Nahraďte *PropertyName* s vlastností, které chcete nastavit.  
   
-    ```  
+    ```cmd  
     msbuild /property:PropertyName=Value  
     ```  
   
      Můžete například spustit následující příkaz pro nastavení úroveň pro upozornění.  
   
-    ```  
+    ```cmd  
     msbuild /property:WarningLevel = 2  
     ```  
   

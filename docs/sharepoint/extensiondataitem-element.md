@@ -15,18 +15,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8c991d3fece3e5997e8d470d168af9eba47c8663
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05ee17519019713b5e1bb89472dc06d5bc20ead1
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem – element
-  Představuje položku vlastní data, která je přidružená k položce projektu služby SharePoint, ve formátu klíč/hodnota. Klíč i hodnota musí být řetězce.  
+  Vlastní datová položka, která je přidružená k položce projektu služby SharePoint, ve formátu klíč/hodnota. Klíč i hodnota musí být řetězce.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <ExtensionDataItem Key = "Key of the data item"  
     Value = "Value of the data item" />  
 ```  
@@ -38,7 +38,7 @@ ms.lasthandoff: 04/16/2018
   
 |Atribut|Popis|  
 |---------------|-----------------|  
-|**Key**|Požadované **xs:string** atribut.<br /><br /> Klíč, který se používá k ukládání a načítání datová položka.|  
+|**Key**|Požadované **xs: řetězec** atribut.<br /><br /> Klíč, který se používá k ukládání a načítání datová položka.|  
 |**Hodnota**|Požadované **xs:string** atribut.<br /><br /> Hodnota datová položka.|  
   
 ### <a name="child-elements"></a>Podřízené elementy  
@@ -51,7 +51,7 @@ ms.lasthandoff: 04/16/2018
 |[ExtensionData –](../sharepoint/extensiondata-element.md)|Představuje kolekci vlastních datových položek, které jsou přidružené položky projektu služby SharePoint.|  
   
 ## <a name="remarks"></a>Poznámky  
- Když přidružení vlastních dat k položky projektu služby SharePoint pomocí <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objektu, Visual Studio uloží data do nové **ExtensionDataItem –** element v souboru .spdata pro položku projektu. Další informace najdete v tématu [ukládání dat do rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ Při přidružení vlastních dat k položky projektu služby SharePoint pomocí <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> vlastnost <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> objektu, Visual Studio uloží data do nové **ExtensionDataItem –** element v `.spdata` souboru Položka projektu. Další informace najdete v tématu [ukládání dat do rozšíření systému projektu služby SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
   
 ## <a name="element-information"></a>Informace o elementu  
   

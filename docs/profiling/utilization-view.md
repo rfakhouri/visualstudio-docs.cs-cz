@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb49d47dbd01b1d84228e1f01dc4cbf7f49dfc8d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9f730824c217e9909196b5889e2c032c66bb0001
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="utilization-view"></a>Zobrazení využití
 **Zobrazení využití** zobrazí informace o procesoru, GPU a jiné systémové prostředky, které jsou používány aktuální proces (zvolte **analyzovat** > **souběžnosti Vizualizér** zahájíte vizualizér souběžnosti). Zobrazuje průměrnou základní využití procesu analyzovaných, nečinného procesu, proces systému a další procesy, které běží na serveru v čase. Nezobrazí, které konkrétní základní je aktivní v daném okamžiku. Například pokud každé dvě jádra jsou spuštěné v 50 procent kapacity pro dané časové období, pak toto zobrazení uvádí jednoho logického jádra využívání. Zobrazení je generován dělení profilování čas na krátkou dobu segmenty. Pro každý segment graf ukazuje zeměpisný průměrný počet vláken procesů, které jsou prováděny logické jader na během tohoto intervalu.  

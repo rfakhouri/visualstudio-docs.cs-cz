@@ -28,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
  Použití **ladění** stránky **Návrhář projektu** pro nastavení vlastností pro ladění chování v projektu jazyka Visual Basic nebo C#.
 
- Abyste měli přístup **ladění** vyberte uzel projektu v **Průzkumníku řešení**. Na **projektu** nabídce zvolte * ProjectName ***vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **ladění** kartě.
+ Abyste měli přístup **ladění** vyberte uzel projektu v **Průzkumníku řešení**. Na **projektu** nabídce zvolte *ProjectName* **vlastnosti**. Když **Návrhář projektu** se zobrazí, klikněte na tlačítko **ladění** kartě.
 
 ## <a name="configuration-and-platform"></a>Konfigurace a platformy
  Následující možnosti vám umožňují vyberte konfigurace a platformy můžete zobrazit nebo upravit.

@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d79399ebea9fd5dedd645b148910d6a4ced47902
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 53c8caa101b51a9d26d555787e710408cf315a0e
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="visual-studio-profiler-api-reference-native"></a>Referenční dokumentace rozhraní API produktu Visual Studio Profiler (nativní)
+# <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio profiler referenční dokumentace rozhraní API (nativní)
 Rozhraní API profileru Visual Studio umožňují k programovému řízení množství shromažďovaných dat a vložení časové razítko a profil značky během vytváření profilů. Použití nativních rozhraní API, můžete zahrnout soubor hlaviček VSPerf.h a přidat VSPerf.lib ve vašem projektu.  
   
 > [!NOTE]
@@ -45,5 +45,5 @@ Rozhraní API profileru Visual Studio umožňují k programovému řízení mno�
  [PROFILE_CURRENTID](../profiling/profile-currentid.md)  
   
 ## <a name="see-also"></a>Viz také  
- [Rozhraní API nástrojů pro profilaci](../profiling/profiling-tools-apis.md)   
+ [Nástroje pro rozhraní API pro profilaci](../profiling/profiling-tools-apis.md)   
  [Návod: Použití rozhraní API profileru](../profiling/walkthrough-using-profiler-apis.md)

@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d54b3ea7c32230a683359ee466b03e8954fec2ab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77c8d2151380c48b80b53ec3f0ef671daa92dbaa
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Postupy: Vytvoření základního projektu definice webu
   Tento návod ukazuje, jak vytvořit definici základní lokality, který obsahuje vizuální webová část s některé ovládací prvky na něm. V zájmu přehlednosti visual webovou část, kterou vytvoříte má několik ovládacích prvků. Můžete však vytvořit sofistikovanější definice webů služby SharePoint, které obsahovaly další funkce.  
@@ -98,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 5.  V dolní části VisualWebPart1.ascx, přidejte následující kód k přidávání tři ovládacích prvků formuláře: textové pole, tlačítka a štítku:  
   
-    ```  
+    ```aspx-csharp  
     <table>  
       <tr>  
         <td>  
@@ -128,7 +128,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  Otevřete stránku default.aspx a potom přidejte následující řádek v části `WebPartPages` značky:  
   
-    ```  
+    ```aspx-csharp  
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>  
     ```  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  Po `</asp:Content>` elementu, nahraďte celou `ContentPlaceHolderId="PlaceHolderMain"` části a jeho obsah následujícím kódem:  
   
-    ```  
+    ```aspx-csharp  
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">  
         <MyWebPartControls:VisualWebPart1 runat="server" />      
     </asp:Content>  

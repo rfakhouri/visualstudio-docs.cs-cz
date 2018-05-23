@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f843133a31dd62129bb45e58337ca4a612cc01
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: a6a0b43916a9a37937de0665a591555de3e2f7ad
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Návod: Profilace z příkazového řádku s použitím vzorkování
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Návod: Profilace z příkazového řádku pomocí vzorkování
 
 Tento návod ukazuje, jak do profilu aplikace pomocí nástroje příkazového řádku a vzorkování identifikovat problémy s výkonem.
 
@@ -101,7 +101,7 @@ Vzorkování je profilování metoda, podle kterého je konkrétní proces pravi
 ## <a name="see-also"></a>Viz také
 
 [Přehled výkonnostní relace](../profiling/performance-session-overview.md)  
-[Profilace z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)  
+[Profil z příkazového řádku](../profiling/using-the-profiling-tools-from-the-command-line.md)  
 [VSPerfCmd](../profiling/vsperfcmd.md)  
-[Porozumění hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
+[Pochopení hodnotám dat vzorkování](../profiling/understanding-sampling-data-values.md)  
 [Zobrazení sestav výkonu](../profiling/performance-report-views.md)

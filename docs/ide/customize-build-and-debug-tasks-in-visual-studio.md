@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859a3687e2dde0d5bedb9f4084bb83b844ca28e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3c4b915f632179ff118247e8c046ce980a824ea2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Přizpůsobení sestavení a ladění úloh pro vývoj "Otevřít složku"
 
@@ -315,4 +315,4 @@ Nastavení číst z *.gitignore* souboru se použijí u nadřazeného adresáře
 - [Otevřete složku projektů jazyka C++](/cpp/ide/non-msbuild-projects)
 - [CMake projektů v jazyce C++](/cpp/ide/cmake-tools-for-visual-cpp)
 - [NMAKE – odkaz](/cpp/build/nmake-reference)
-- [Psaní kódu v editoru kódu a text.](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)

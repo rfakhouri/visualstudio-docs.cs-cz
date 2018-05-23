@@ -9,11 +9,11 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 227b12f2da07d3d610f3d043348dc59680fc17ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ea1253144c245c8706cf96e6cb5d1462e302afea
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Zápis testů částí pro C/C++ v sadě Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio zahrnuje tyto architektury testovací C++ s žádné další polo�
 
 Kromě nainstalované rozhraní můžete napsat vlastní test adaptéru pro libovolnou platformu chcete použít v sadě Visual Studio. Test adaptér můžete integrovat testování částí s **testování Explorer** okno. Několik adaptérů třetích stran, které jsou k dispozici na [Visual Studio Marketplace](https://marketplace.visualstudio.com). Další informace najdete v tématu [instalace systémů testů jednotek třetích stran](install-third-party-unit-test-frameworks.md).
 
-**Visual Studio 2017 verze 15,5**
+**Visual Studio 2017 verze 15.5**
 
 - **Adaptér testovací Google** je dodávána jako součást výchozí **vývoj aplikací s jazykem C++** zatížení. Má šablona projektu, který můžete přidat do řešení pomocí **přidat nový projekt** kontextové nabídky na uzlu řešení v **Průzkumníku řešení**a možnosti můžete nakonfigurovat přes **nástroje | Možnosti**. Další informace najdete v tématu [postupy: použití Google testu v sadě Visual Studio](how-to-use-google-test-for-cpp.md).
 
@@ -74,7 +74,7 @@ Ve vašem projektu testovacího souboru má třída se zakázaným inzerováním
 
 ![Přidání direktivy začlenění](media/cpp-write-test-methods.png "C++ testovací přidat zahrnuje pro soubory hlaviček")
 
-TEST_CLASS a TEST_METHOD jsou součástí [Microsoft nativní testovací Framework]((microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Testování Explorer** zjistí testovací metody v jiné podporované architektury podobným způsobem.
+TEST_CLASS a TEST_METHOD jsou součástí [Microsoft nativní Test Framework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). **Testování Explorer** zjistí testovací metody v jiné podporované architektury podobným způsobem.
 
 TEST_METHOD vrátí prázdnou hodnotu. Chcete-li vytvořit výsledků testů, použijte statických metod v `Assert` třídy proti očekávané skutečné výsledky testu. V následujícím příkladu se předpokládá `MyClass` má konstruktor, který, která má `std::string`. Abychom mohli otestovat, zda konstruktor inicializuje třídy podle očekávání takto:
 

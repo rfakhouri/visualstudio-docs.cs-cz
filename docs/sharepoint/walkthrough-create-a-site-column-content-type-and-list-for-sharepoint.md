@@ -24,11 +24,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a6fc193ba73c040042e7d19d5b86f0acf61e69ac
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0dfcf3166e3fe4aa5ce17f51d696187cc060639b
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Návod: Vytvoření sloupce webu, typu obsahu a seznamu pro službu SharePoint
   Následující postupy ukazují, jak vytvořit vlastní sloupců webu služby SharePoint – nebo *pole*– a také typ obsahu, který používá sloupců webu. Také ukazuje, jak můžete vytvořit seznam, který používá nový typ obsahu.  
@@ -83,7 +83,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  V souboru Elements.xml sloupec lokality, ponechte **typ** nastavení jako **Text**a změňte **skupiny** nastavení **sloupců webu Klinika**. Po dokončení soubor Elements.xml sloupec lokality by měl vypadat jako v následujícím příkladu.  
   
-    ```  
+    ```xml  
     <Field  
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"  
          Name="Clinic - Patient Name"  
@@ -143,7 +143,7 @@ ms.lasthandoff: 04/16/2018
   
 4.  V **šablony** podokně, vyberte **seznamu** šablony, změňte název **pacientů**a potom zvolte **přidat** tlačítko.  
   
-5.  Ponechte **přizpůsobit seznam na základě** nastavení jako **výchozí (prázdný)**a potom zvolte **Dokončit** tlačítko.  
+5.  Ponechte **přizpůsobit seznam na základě** nastavení jako **výchozí (prázdný)** a potom zvolte **Dokončit** tlačítko.  
   
 6.  V Návrháři seznamu zvolte **typy obsahu** tlačítko pro zobrazení **nastavení typu obsahu** dialogové okno.  
   

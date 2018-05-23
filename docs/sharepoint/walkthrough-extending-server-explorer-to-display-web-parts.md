@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 34975f93b719c759707110907a3c19dabbd661c1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 688c4d8d9193ec33f0dcb63923673826a453c9be
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Návod: Rozšíření průzkumníka serveru pro zobrazení částí webu
   V sadě Visual Studio, můžete použít **připojení služby SharePoint** uzlu **Průzkumníka serveru** zobrazíte součásti na webech služby SharePoint. Ale **Průzkumníka serveru** nezobrazí některé součásti ve výchozím nastavení. V tomto návodu budete rozšíříte **Průzkumníka serveru** tak, aby zobrazil galerii webových částí na každý z nich připojený web služby SharePoint.  
@@ -107,13 +107,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  V horní části dialogových oken, zvolte **rozhraní .NET Framework 3.5** v seznamu verze rozhraní .NET Framework.  
   
-4.  
-  
-5.  V seznamu šablon projektu, zvolte **knihovny tříd**, název projektu **WebPartCommands**a potom zvolte **OK** tlačítko.  
+4.  V seznamu šablon projektu, zvolte **knihovny tříd**, název projektu **WebPartCommands**a potom zvolte **OK** tlačítko.  
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Přidá **WebPartCommands** projektu a řešení a otevře soubor výchozího kódu Class1.  
   
-6.  Odstraňte soubor kódu Class1 z projektu.  
+5.  Odstraňte soubor kódu Class1 z projektu.  
   
 ## <a name="configuring-the-projects"></a>Konfigurace projektů  
  Než napíšete kód k vytvoření rozšíření, musíte přidat soubory kódu a odkazy na sestavení a nakonfigurovat nastavení projektu.  

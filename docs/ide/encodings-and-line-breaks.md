@@ -19,25 +19,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6c32fc1a7fbd82d1ac9604396dc2ea118efbad2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="encodings-and-line-breaks"></a>Kódování a zalomení řádků
+# <a name="encodings-and-line-endings"></a>Kódování a řádku zakončení
 
 Následující znaky se interpretují jako zalomení řádků v sadě Visual Studio:
 
--   Znaky CR LF: CR + řádku kanálu, 000 D + 000A znaky kódování Unicode
+- Znaky CR LF: CR + řádku kanálu, 000 D + 000A znaky kódování Unicode
 
--   LF: Informační kanál, znak Unicode 000A řádku
+- LF: Informační kanál, znak Unicode 000A řádku
 
--   Nastavit: Další řádek znak Unicode 0085
+- Nastavit: Další řádek znak Unicode 0085
 
--   LS: Oddělovač řádků, znak Unicode 2028
+- LS: Oddělovač řádků, znak Unicode 2028
 
--   PS: Oddělovač odstavců, znak Unicode 2029
+- PS: Oddělovač odstavců, znak Unicode 2029
 
 Text, který se zkopíruje z jiných aplikací zachová původní kódování a znaky konce řádku. Například při kopírování textu z Poznámkový blok a vložte ho do textového souboru v sadě Visual Studio, text má stejné nastavení, které měl v poznámkovém bloku.
 
@@ -56,4 +56,4 @@ Můžete použít **soubor** > **rozšířené možnosti ukládání** dialogov�
 
 ## <a name="see-also"></a>Viz také
 
-- [Psaní kódu v editoru](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)

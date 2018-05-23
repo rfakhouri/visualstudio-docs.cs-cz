@@ -1,6 +1,6 @@
 ---
-title: Povolení přístupu k VBA vytvořit nebo otevřít Visual Studio Tools pro systém Microsoft Office project
-decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office System project
+title: Povolení přístupu k VBA vytvořit nebo otevřít nástrojů sady Visual Studio pro projekt systému Microsoft Office
+decsprition: You must explicitly enable access to the Office VBA project system before you can create or open a Visual Studio Tools for Office system project
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 05c7296412ffd3f87433f4790617f4b27ca75ae3
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: f17c4e1481e7f33034e16d1e60a285b25c6f8230
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Povolení přístupu k VBA vytvořit nebo otevřít Visual Studio Tools pro systém Microsoft Office project
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Povolení přístupu k VBA vytvořit nebo otevřít nástrojů sady Visual Studio pro projekt systému Microsoft Office
 
-Předtím, než můžete vytvořit nebo otevřít Visual Studio Tools pro systém Microsoft Office project je potřeba explicitně povolit přístup k jazyka Visual Basic pro aplikace (VBA) systému projektu v Microsoft Office.
+Předtím, než můžete vytvořit nebo otevřít nástrojů sady Visual Studio pro projekt systému Microsoft Office je potřeba explicitně povolit přístup k jazyka Visual Basic pro aplikace (VBA) systému projektu v Microsoft Office.
 
  Přestože projektů jazyka Visual Basic pro aplikace nepoužívejte projekty vývoje aplikace Microsoft Office vyžadují přístup k jazyka Visual Basic pro aplikace (VBA) systému projektu v aplikaci Microsoft Office Word a Microsoft Office Excel. Podpora návrhu ovládacích prvků v projektech Visual Basic a C# závisí na Visual Basic pro aplikace systému projektu.
 

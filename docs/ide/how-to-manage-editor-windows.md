@@ -15,11 +15,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b10bb58420b09bc184ef447503ca90acc7574f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b3b90db0173275b984c63aa22018ba4ae37328ee
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-manage-editor-windows"></a>Postupy: Správa oken editoru
 
@@ -58,5 +58,5 @@ Můžete také vytvořit více instancí okna editoru. Tato funkce umožňuje, a
 ## <a name="see-also"></a>Viz také
 
 - [Přizpůsobení editoru](../ide/customizing-the-editor.md)
-- [Psaní kódu](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkce editoru kódu](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Přizpůsobení rozložení oken](../ide/customizing-window-layouts-in-visual-studio.md)

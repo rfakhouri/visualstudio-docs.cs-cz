@@ -1,5 +1,5 @@
 ---
-title: '&lt;formregions –&gt; – Element (vývoj pro Office v sadě Visual Studio) | Microsoft Docs'
+title: '&lt;formregions –&gt; – element (vývoj pro Office v sadě Visual Studio)'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c51b626c104d5342c00dbd45a2c565315c9c2225
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 36741e5e3bcd39dbb6e4ea0746e1877acc581e70
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formregions –&gt; – Element (vývoj pro Office v sadě Visual Studio)
+# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formregions –&gt; – element (vývoj pro Office v sadě Visual Studio)
   `formRegions` Element `vstov4` obor názvů obsahuje oblastí formulářů aplikace Microsoft Office Outlook, které jsou spojeny s doplňku VSTO.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```xml  
 <formRegions>  
   <formRegion>  
   </formRegion>  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
  `formRegions` Element má následující element.  
   
 ### <a name="formregion"></a>formRegion  
- Vyžaduje se pro aplikaci Outlook doplňků VSTO obsahující oblasti formulářů. `formRegion` Element je definována v [ &#60;formRegion&#62; Element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
+ Vyžaduje se pro aplikaci Outlook doplňků VSTO obsahující oblasti formulářů. `formRegion` Element je definována v [ &#60;formRegion&#62; element &#40;vývoj pro Office v sadě Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md).  
   
 ## <a name="vsto-add-in-example"></a>Příklad doplňku VSTO  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 04/16/2018
   
 ### <a name="code"></a>Kód  
   
-```  
+```xml  
 <vstov4:formRegions>  
   <vstov4:formRegion  
       name="OutlookAddIn1.FormRegion1">  
@@ -68,6 +68,6 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>Viz také  
  [Manifesty aplikace pro řešení pro systém Office](../vsto/application-manifests-for-office-solutions.md)   
  [Manifesty nasazení pro řešení Office](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce – manifest aplikace ](/visualstudio/deployment/clickonce-application-manifest)  
+ [ClickOnce – manifest aplikace](/visualstudio/deployment/clickonce-application-manifest)  
   
   

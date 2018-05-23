@@ -1,5 +1,5 @@
 ---
-title: Pokyny pro vytváření Outlook formuláři oblasti | Microsoft Docs
+title: Pokyny pro vytváření oblastí formulářů aplikace Outlook
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dae7f03c49223c9919dc67b1c6a13768c597698d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d00c0aac83714e3a0906c38d13a705158cdfea9c
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="guidelines-for-creating-outlook-form-regions"></a>Pokyny pro vytváření oblastí formulářů aplikace Outlook
   Následující informace vám může pomoct optimalizovat vaší oblasti formuláře a vyhnout se potenciální problémy:  
   
 -   [Pomocí názvů oblasti formuláře](#UsingFormRegions).  
   
--   [Zakázat dědičnost oblasti formuláře](#DisablingInheritance).  
+-   [Zakázat dědičnost formulářů oblast](#DisablingInheritance).  
   
--   [Principy typů a zpráva třídy názvy](#ClassNames).  
+-   [Rady pro pochopení typy a zpráv názvy tříd](#ClassNames).  
   
 -   [Navrhování sousedících oblasti formuláře podokna čtení](#ReadingPane).  
   

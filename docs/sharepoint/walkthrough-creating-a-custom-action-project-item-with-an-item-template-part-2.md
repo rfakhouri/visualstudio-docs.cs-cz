@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 264decc53d8ba2d818562a9513ecfa2aab6f882c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružit ho pomocí šablony položky v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce vám pomůže shromažďovat informace od uživatelů při použití šablony přidat novou instanci položky projektu do projektu. Informace, které slouží k inicializaci položky projektu.  
@@ -136,7 +136,7 @@ ms.lasthandoff: 04/16/2018
   
 3.  Pokud vyvíjíte projekt Visual Basic, odeberte `ItemTemplateWizard` oboru názvů z `WizardWindow` název třídy v `x:Class` atribut `Window` elementu. Tento element má na prvním řádku XAML. Když jste hotovi, první řádek by měl vypadat následující kód:  
   
-    ```  
+    ```xml  
     <Window x:Class="WizardWindow"  
     ```  
   
@@ -187,7 +187,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  V okně příkazového řádku Visual Studia, spusťte následující příkaz, nahraďte *PathToWizardAssembly* s úplnou cestou k integrovaný ItemTemplateWizard.dll pro ItemTemplateWizard projekt na váš vývojový počítač.  
   
-    ```  
+    ```xml  
     sn.exe -T PathToWizardAssembly  
     ```  
   
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
   
 2.  U konce souboru, přidejte následující `WizardExtension` element mezi `</TemplateContent>` a `</VSTemplate>` značky. Nahraďte *YourToken* hodnotu `PublicKeyToken` atributem, token veřejného klíče, který jste získali v předchozím postupu.  
   
-    ```  
+    ```xml  
     <WizardExtension>  
       <Assembly>ItemTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=YourToken</Assembly>  
       <FullClassName>ItemTemplateWizard.CustomActionWizard</FullClassName>  
@@ -221,7 +221,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  V projektu ItemTemplate nahraďte obsah souboru Elements.xml následující kód XML.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="$IdValue$"  

@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4d6d01b9f9ed0db8588124b71c982b2d37aa86ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e5c68db8d1c9809e487fc8f64159d8b385a96a2
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Postupy: Vytvoření přijímače událostí pro specifickou instanci seznamu
   Přijímač událostí instanci seznamu odpoví na události, které nastaly v žádné instanci definice seznamu. I když příjemce šablony události neumožňuje zaměření na specifickou instanci seznamu, můžete upravit přijímače událostí, které budou platit pro definice seznamu reakce na události v specifickou instanci seznamu.  
@@ -55,13 +55,13 @@ ms.lasthandoff: 04/16/2018
   
      Příjemce událostí aktuálně odkazuje definice seznamu oznámení pomocí následující řádek:  
   
-    ```  
+    ```xml  
     <Receivers ListTemplateId="104">  
     ```  
   
      Změňte tento řádek následujícím textem:  
   
-    ```  
+    ```xml  
     <Receivers ListUrl="Lists/TestAnnouncements">  
     ```  
   

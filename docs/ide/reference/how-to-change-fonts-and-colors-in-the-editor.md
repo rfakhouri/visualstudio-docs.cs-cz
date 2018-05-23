@@ -16,11 +16,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 201dd1a6562f7f5ed38d6a3cd8c462056b82475a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Postupy: Změna písma a barev v editoru
 Můžete změnit výchozí tučné písmo, upravit velikost písma a změnit barvy popředí a na pozadí pro různé text **zobrazení položek** v editoru kódu. Když změnu nastavení písma mějte na paměti následující informace:
@@ -56,5 +56,5 @@ Můžete změnit výchozí tučné písmo, upravit velikost písma a změnit bar
 
 - [Vlastní nastavení editoru](../../ide/customizing-the-editor.md)
 - [Textový editor, dialogové okno Možnosti](../../ide/reference/text-editor-options-dialog-box.md)
-- [Psaní kódu](../../ide/writing-code-in-the-code-and-text-editor.md)
+- [Funkce editoru kódu](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Postupy: Změna písma a barev](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Udělení důvěry dokumentům | Microsoft Docs
+title: Udělení důvěryhodnosti do dokumentů
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,13 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e8556f77b74ee1dab6a257f5ed3634da4bf798cd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f95887d5d540fd1acd95b8af1275c4b4054c8764
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
-# <a name="granting-trust-to-documents"></a>Udělení důvěry dokumentům
+# <a name="grant-trust-to-documents"></a>Udělení důvěryhodnosti do dokumentů
   Projekt na úrovni dokumentu a má stejné požadavky na zabezpečení jako projekty na úrovni aplikace: podepisování manifestů s certifikátem nebo kliknutím na výzvu vztahu důvěryhodnosti. Kromě toho dokumentu nebo sešitu musí být umístěny v adresáři, který je určený jako důvěryhodné umístění.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -39,15 +39,15 @@ ms.lasthandoff: 04/16/2018
   
 -   Místní složky jsou považovány za informace zabezpečení a jsou implicitně důvěryhodné. Vzdálených umístěních, jako jsou sdílené složky musí být určeny jako důvěryhodné umístění.  
   
--   Když přidáte do důvěryhodného umístění adresáře, tato akce udělí úplný vztah důvěryhodnosti, nejen pro řešení pro Office, ale také kvůli VBA a ActiveX kódu. Z tohoto důvodu kořenový adresář a složka Dokumenty složky by neměl být určen jako důvěryhodný.  
+-   Když přidáte do důvěryhodného umístění adresáře, tato akce udělí úplný vztah důvěryhodnosti, nejen pro řešení pro Office, ale také kvůli VBA a ActiveX kódu. Z tohoto důvodu kořenový adresář a *dokumenty* složky by neměl být určen jako důvěryhodné.  
   
--   I když je důvěryhodný samotného dokumentu pomocí důvěryhodného umístění, jsou potřeba další oprávnění tak, aby důvěřoval přizpůsobení. Úplný vztah důvěryhodnosti k přizpůsobení můžete udělit pomocí podepisování manifestů s certifikátem, kliknutím na výzvu vztahu důvěryhodnosti nebo instalace řešení Office na adresář Program Files.  
+-   I když je důvěryhodný samotného dokumentu pomocí důvěryhodného umístění, jsou potřeba další oprávnění tak, aby důvěřoval přizpůsobení. Úplný vztah důvěryhodnosti k přizpůsobení můžete udělit pomocí podepisování manifestů s certifikátem, kliknutím na výzvu vztahu důvěryhodnosti nebo instalace řešení Office *Program Files* adresáře.  
   
--   Můžete uložit dokumentu nebo sešitu řešení úrovni dokumentu ve stejném adresáři jako sestavení nebo v jiném adresáři. Například dokument může nacházet na serveru služby SharePoint a sestavení může být umístěna na síťové sdílené složky. Další informace najdete v tématu [postupy: publikování řešení úrovni dokumentu Office SharePoint Server aplikací ClickOnce pomocí](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
+-   Můžete uložit dokumentu nebo sešitu řešení úrovni dokumentu ve stejném adresáři jako sestavení nebo v jiném adresáři. Například dokument může nacházet na serveru služby SharePoint a sestavení může být umístěna na síťové sdílené složky. Další informace najdete v tématu [postupy: publikování řešení úrovni dokumentu Office SharePoint Server s použitím technologie ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58).  
   
 ## <a name="see-also"></a>Viz také  
- [Udělení důvěry pro řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md)   
- [Řešení potíží se zabezpečením řešení Office](../vsto/troubleshooting-office-solution-security.md)   
+ [Vztah důvěryhodnosti grant řešení pro systém Office](../vsto/granting-trust-to-office-solutions.md)   
+ [Odstraňování problémů se zabezpečením řešení Office](../vsto/troubleshooting-office-solution-security.md)   
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)  
   
   
