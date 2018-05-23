@@ -8,26 +8,26 @@
 ## [Nasazení do Azure](quickstart-deploy-to-azure.md)
 # Kurzy
 ## .NET
-### [Nasazení aplikace .NET Core pomocí nástroje Publish](/dotnet/core/deploying/deploy-with-vs)
-### [Balíček desktopové aplikace pro Microsoft Store (přemostění na desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
+### [Nasazení aplikace .NET Core pomocí nástroje Publish](/dotnet/core/deploying/deploy-with-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Balíček desktopové aplikace pro Microsoft Store (přemostění na desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Nasazení desktopové aplikace pomocí technologie ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 ### [Vytváření aplikací ClickOnce z příkazového řádku](building-clickonce-applications-from-the-command-line.md)
 ## ASP.NET
-### [Publikování aplikace ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)
+### [Publikování aplikace ASP.NET Core do Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ### [Import nastavení publikování a nasazení do Azure](tutorial-import-publish-settings-azure.md)
 ### [Import nastavení publikování a nasazení do služby IIS](tutorial-import-publish-settings-iis.md)
-### [Průběžné nasazování ASP.NET Core do Azure s Gitem](/aspnet/core/publishing/azure-continuous-deployment)
-### [Nasazení technologie ASP.NET do služby IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)
+### [Průběžné nasazování ASP.NET Core do Azure s Gitem](/aspnet/core/publishing/azure-continuous-deployment?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Nasazení technologie ASP.NET do služby IIS](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Nativní
-### [Nasazení ve Visual C++](/cpp/ide/deployment-in-visual-cpp)
-### [Balíček desktopové aplikace pro Microsoft Store (přemostění na desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
-### [Nasazení nativní aplikace pomocí technologie ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
+### [Nasazení ve Visual C++...](/cpp/ide/deployment-in-visual-cpp)
+### [Balíček desktopové aplikace pro Microsoft Store (přemostění na desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
+### [Nasazení nativní aplikace pomocí technologie ClickOnce...](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)
 ## UWP
-### [Balíček aplikace pro UPW pomocí sady Visual Studio](/windows/uwp/packaging/packaging-uwp-apps)
+### [Balíček aplikace pro UPW pomocí sady Visual Studio](/windows/uwp/packaging/packaging-uwp-apps?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Node.js
-### [Publikování na webu Azure pomocí Nasazení webu](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy)
+### [Publikování na webu Azure pomocí Nasazení webu](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 ## Python
-### [Publikování do Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio)
+### [Publikování do Azure App Service](/visualstudio/python/publishing-python-web-applications-to-azure-from-visual-studio?toc=/visualstudio/deployment/toc.json&bc=/visualstudio/deployment/_breadcrumb/toc.json)
 # Návody
 ## [ClickOnce – zabezpečení a nasazení](clickonce-security-and-deployment.md)
 ### [Výběr strategie nasazení ClickOnce](choosing-a-clickonce-deployment-strategy.md)
