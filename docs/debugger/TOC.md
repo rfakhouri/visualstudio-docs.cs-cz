@@ -81,7 +81,6 @@
 ##### [Postupy: Ladění ve smíšeném režimu](how-to-debug-in-mixed-mode.md)
 #### [Příprava ladění: projekty konzoly](debugging-preparation-console-projects.md)
 #### [Postupy: Ladění spustitelného souboru, který není součástí řešení sady Visual Studio.](how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)
-#### [Postupy: Ladění se zdrojem webu Code Center Premium](how-to-debug-with-code-center-premium-source.md)
 #### [Ladění a proces hostování](debugging-and-the-hosting-process.md)
 #### [Postupy: Určení verze rozhraní .NET Framework pro ladění](how-to-specify-a-dotnet-framework-version-for-debugging.md)
 ### [Vytváření vlastních zobrazení dat](viewing-data-in-the-debugger.md)
