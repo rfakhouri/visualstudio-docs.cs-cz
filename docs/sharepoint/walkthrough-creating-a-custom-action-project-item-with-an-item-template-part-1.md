@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e690d18bae72b59234f2f90cbcf903b9941df7d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6b1d81f200fde885a25aa367e700e61399af5bab
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
   Systému projektu služby SharePoint v sadě Visual Studio můžete rozšířit vytvořením vlastní projektu typu položky. V tomto návodu vytvoříte položky projektu, který lze přidat do projektu služby SharePoint k vytvoření vlastní akce na web služby SharePoint. Vlastní akce přidá položku nabídky **Akce webu** nabídky Web služby SharePoint.  
@@ -201,7 +201,7 @@ ms.lasthandoff: 04/16/2018
     > [!NOTE]  
     >  Následující kód XML je pro šablony položky Visual C#. Pokud vytváříte šablonu položky Visual Basic, nahraďte hodnotu `ProjectType` element s `VisualBasic`.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">  
       <TemplateData>  
@@ -230,7 +230,7 @@ ms.lasthandoff: 04/16/2018
   
 7.  Přidejte následující kód XML do souboru CustomAction.spdata a potom uložte a zavřete soubor.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8"?>  
     <ProjectItem Type="Contoso.CustomAction" DefaultFile="Elements.xml"   
      xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">  
@@ -250,7 +250,7 @@ ms.lasthandoff: 04/16/2018
   
 11. Nahraďte obsah souboru Elements.xml následující kód XML a potom uložte a zavřete soubor.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <Elements Id="$guid8$" xmlns="http://schemas.microsoft.com/sharepoint/">  
       <CustomAction Id="Replace this with a GUID or some other unique string"  
@@ -274,13 +274,13 @@ ms.lasthandoff: 04/16/2018
   
 15. Vyhledejte následující `VSTemplate` element v souboru projektu.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="ItemTemplate.vstemplate">  
     ```  
   
 16. Nahraďte ho `VSTemplate` element s následující kód XML a pak uložit a zavřít soubor.  
   
-    ```  
+    ```xml  
     <VSTemplate Include="ItemTemplate.vstemplate">  
       <OutputSubPath>SharePoint\SharePoint14</OutputSubPath>  
     </VSTemplate>  
@@ -400,25 +400,25 @@ ms.lasthandoff: 04/16/2018
   
     -   V `CustomAction` , nastavena `Id` atribut identifikátor GUID nebo jiný jedinečný řetězec jako na následujícím příkladu:  
   
-        ```  
+        ```xml  
         Id="cd85f6a7-af2e-44ab-885a-0c795b52121a"  
         ```  
   
     -   V `CustomAction` , nastavena `Title` atribut jako na následujícím příkladu:  
   
-        ```  
+        ```xml  
         Title="SharePoint Developer Center"  
         ```  
   
     -   V `CustomAction` , nastavena `Description` atribut jako na následujícím příkladu:  
   
-        ```  
+        ```xml  
         Description="Opens the SharePoint Developer Center Web site."  
         ```  
   
     -   V `UrlAction` , nastavena `Url` atribut jako na následujícím příkladu:  
   
-        ```  
+        ```xml  
         Url="http://msdn.microsoft.com/sharepoint/default.aspx"  
         ```  
   

@@ -20,17 +20,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 696388ca89102d588bd1a291b6f5689dc08e26a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
+ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/22/2018
 ---
 # <a name="replaceable-parameters"></a>Nahraditelné parametry
   Nahraditelné parametry, nebo *tokeny*, dá se použít uvnitř soubory projektu zadat hodnoty pro položky řešení služby SharePoint, jejichž skutečnými hodnotami nejsou známá v době návrhu. Jsou podobně jako u standardní [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokeny šablony. Další informace najdete v tématu [parametry šablony](/visualstudio/ide/template-parameters).  
   
 ## <a name="token-format"></a>Formát tokenu  
- Tokeny nezačíná a nekončí znak dolaru ($). Použití tokenů se nahradí skutečnými hodnotami, když na projekt je zabalené do souboru balíčku (WSP) řešení služby SharePoint v době nasazení. Například token **$SharePoint.Package.Name$** může vyřešit řetězec "Test SharePoint balíček."  
+ Tokeny nezačíná a nekončí znak dolaru ($). Při nasazení jsou všechny tokeny používány nahrazené skutečnými hodnotami při projektu je zabalené do balíčku řešení služby SharePoint (soubor WSP). Například token **$SharePoint.Package.Name$** může vyřešit řetězec "Test SharePoint balíček."  
   
 ## <a name="token-rules"></a>Token pravidla  
  Následující pravidla platí při tokenů:  
@@ -45,7 +45,7 @@ ms.lasthandoff: 04/16/2018
   
  Tokeny, které se neřídí tato pravidla se ignorují bez zadání upozornění nebo chyby.  
   
- Okamžitě po manifestu transformaci, což umožňuje manifestu šablony upravit uživatelem, aby používala tokeny se provádí nahrazení tokeny pomocí řetězcových hodnot.  
+ Okamžitě po transformaci manifestu se provádí nahrazení tokeny pomocí řetězcových hodnot. Tato nahrazení umožňuje uživateli upravit manifestu šablony s tokeny.  
   
 ### <a name="token-name-resolution"></a>Token překlad  
  Ve většině případů token přeloží na konkrétní hodnotu bez ohledu na to, kde se nachází. Ale pokud token je spojena s balíčku nebo funkce, je token hodnota závisí na kterém se nachází. Například pokud je funkce v balíčku pak se token `$SharePoint.Package.Name$` přeloží na hodnotu "Balíček A." Pokud stejné funkce je v balíčku B, pak `$SharePoint.Package.Name$` přeloží na "Balíček B."  
@@ -88,14 +88,14 @@ ms.lasthandoff: 04/16/2018
   
  Tato rozšíření jsou definovány `<TokenReplacementFileExtensions>` element v souboru Microsoft.VisualStudio.SharePoint.targets umístěný v... \\< soubory programu\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools složky.  
   
- Můžete ale přidat další přípony souborů do seznamu. Chcete-li to provést, přidejte `<TokenReplacementFileExtensions>` element pro všechny PropertyGroup v souboru projektu služby SharePoint, který je definován před \<Import > souboru cíle služby SharePoint.  
+ Můžete ale přidat další přípony souborů do seznamu. Přidat `<TokenReplacementFileExtensions>` element pro všechny PropertyGroup v souboru projektu služby SharePoint, který je definován před \<Import > souboru cíle služby SharePoint.  
   
 > [!NOTE]  
 >  Protože tokenu nahrazení dojde po kompiluje projektu, byste neměli přidávat přípony souborů pro typy souborů, které jsou kompilovány, třeba cs, vb nebo RESX. Tokeny nahrazená pouze v souborech, které nejsou zkompilovat.  
   
- Například by pokud chcete přidat do seznamu přípon názvů souborů tokenu nahrazení souboru název rozšíření ".myextension" a ".yourextension", přidejte následující do souboru .csproj:  
+ Pokud chcete přidat do seznamu přípon názvů souborů tokenu nahrazení souboru název rozšíření ".myextension" a ".yourextension", by například přidat následující `.csproj` souboru:  
   
-```  
+```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <PropertyGroup>  
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
@@ -108,7 +108,7 @@ ms.lasthandoff: 04/16/2018
 </PropertyGroup>  
 ```  
   
- Alternativně můžete přidat rozšíření přímo do souboru .targets. To však mění seznamu rozšíření pro všechny projekty SharePoint zabalené místního systému, ne jenom vlastní. To může být vhodné, pokud jste jediným vývojáře v systému, nebo pokud to vyžadují většina vašich projektů. Ale protože je specifické pro systém, tento přístup není úplně přenosný a proto se doporučuje, přidejte libovolná rozšíření, do souboru projektu místo.  
+ Přímo do souboru .targets můžete přidat rozšíření. To však mění seznamu rozšíření pro všechny projekty SharePoint zabalené místního systému, ne jenom vlastní. To může být vhodné, pokud jste jediným vývojáře v systému, nebo pokud to vyžadují většina vašich projektů. Ale protože je specifické pro systém, tento přístup není úplně přenosný a proto se doporučuje, přidejte libovolná rozšíření, do souboru projektu místo.  
   
 ## <a name="see-also"></a>Viz také  
  [Vývoj řešení služby SharePoint](../sharepoint/developing-sharepoint-solutions.md)  
