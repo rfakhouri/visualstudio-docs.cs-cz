@@ -1,7 +1,7 @@
 ---
 title: Odkaz na okno prostředí Python
 description: Údaje na každé kartě, které se zobrazují v okně prostředí Python v sadě Visual Studio.
-ms.date: 05/07/2018
+ms.date: 05/22/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ba46e41c8d6cd4feec4adc04f1470eed7744242
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: eaf64d0d7bde7b63359ba341a693a51051da6fc3
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="python-environments-window-tabs-reference"></a>Odkaz na prostředí Python okno karty
 
@@ -75,7 +75,7 @@ Pokud je k dispozici, obsahuje podrobnosti, jak je popsáno v následující tab
 
 *Také s označením "pip" v dřívějších verzích.*
 
-Spravuje balíčky nainstalované v prostředí pomocí nástroje pip, což umožňuje hledat a instalovat nové (včetně závislostí). V aplikaci Visual Studio 2017 verze 15.7 a novější **balíčky (Conda)** možnost se zobrazí, který používá Správce balíčků conda místo. (Pokud nevidíte tuto volbu, nastavte možnost **nástroje** > **možnosti** > **Python** > **experimentální**   >  **Použijte conda balíček správce, pokud je k dispozici (namísto pip)** a restartujte Visual Studio.)
+Spravuje balíčky nainstalované v prostředí pomocí nástroje pip, což umožňuje hledat a instalovat nové (včetně závislostí). V aplikaci Visual Studio 2017 verze 15.7 a novější **balíčky (Conda)** karta se zobrazí, který používá Správce balíčků conda místo. (Pokud nevidíte tuto volbu, nastavte možnost **nástroje** > **možnosti** > **Python** > **experimentální**   >  **Použijte conda balíček správce, pokud je k dispozici (namísto pip)** a restartujte Visual Studio.)
 
 Balíčky, které jsou již nainstalovány, zobrazí se ovládacích prvků pro aktualizaci (šipka nahoru) a odinstalovat (X v kruh) balíček:
 
@@ -85,7 +85,13 @@ Zadávat filtry hledání termín seznam balíčků nainstalovaných a také bal
 
 ![Karta balíčky prostředí Python s vyhledávání na "num"](media/environments-pip-tab.png)
 
-Můžete také přímo zadat libovolný `pip install` příkaz do vyhledávacího pole, včetně příznaky, jako například `--user` nebo `--no-deps`.
+Jak je vidět na předchozím obrázku, výsledky hledání zobrazit počet balíčků, které odpovídají hledaný termín; první položka v seznamu, je však příkaz ke spuštění `pip install <name>` přímo. Pokud jste na **balíčky (Conda)** místo vidíte `conda install <name>`:
+
+![Karta balíčky Conda zobrazující conda příkaz instalovat](media/environments-conda-tab-install.png)
+
+V obou případech můžete přizpůsobit přidáním argumenty do vyhledávacího pole za název balíčku pro instalaci. Když zahrnete argumenty, zobrazí výsledky vyhledávání `pip install` nebo `conda install` následuje obsah do vyhledávacího pole:
+
+![Pomocí argumenty pip a conda příkazy instalace](media/environments-pip-tab-arguments.png)
 
 Instalace balíčku vytvoří podsložky v rámci v prostředí `Lib` složku v systému souborů. Například pokud máte Python 3.6, které se instaluje v `c:\Python36`, balíčky jsou nainstalovány v `c:\Python36\Lib`; Pokud máte nainstalovaný v Anaconda3 `c:\Program Files\Anaconda3` pak balíčky jsou nainstalovány v `c:\Program Files\Anaconda3\Lib`.
 

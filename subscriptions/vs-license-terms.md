@@ -9,11 +9,11 @@ description: Visual Studio odběry licenční podmínky.
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5fe9b9f575379548efd4acc7fa9ba94ad94eb06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d6bb1e074b395d37547f33cd523f973fe9e79dba
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 **LICENČNÍ PODMÍNKY PRO SOFTWARE SPOLEČNOSTI MICROSOFT PRO NÁSLEDUJÍCÍ PŘEDPLATNÁ SADY VISUAL STUDIO:**
 
@@ -128,7 +128,7 @@ POKUD BUDETE JEDNAT V SOULADU S TĚMITO LICENČNÍMI PODMÍNKAMI, MÁTE PRO KAŽ
     (někdy označovány jako "multiplexní" nebo "sdílení"), nedochází ke snížení počtu licencí žádný typ, který potřebujete.
 
 
-8. **POVINNÉ AKTIVACE.** Aktivace přidruží použití softwaru s určitým zařízením. Během aktivace bude software odesílat informace o softwaru a zařízení společnosti Microsoft. Tyto informace zahrnují verze, jazyk a produktu klíč software, zařízení, a informace, které jsou odvozené z konfigurace hardwaru zařízení adresa. Další informace najdete v tématu [microsoft.com/piracy/activation.mspx. [(http://microsoft.com/piracy/activation.mspx)] Pomocí softwaru vyjadřujete svůj souhlas s přenosem těchto informací. Před aktivací, máte práva k použití verze softwaru nainstalovaného během procesu instalace. **Vaše právo na používání tohoto softwaru po dobu uvedenou v procesu instalace je omezená, pokud je aktivován.** To je, aby nedošlo k jeho použití bez licence. Nebudete moci pokračovat v používání softwaru po uplynutí této doby, pokud není ji aktivujete. Pokud zařízení je připojený k Internetu, může software automaticky připojit k Microsoftu pro aktivaci. Můžete také aktivovat software ručně pomocí sítě Internet nebo telefonicky. Pokud tak učiníte, mohou platit poplatky za služby Internet a telefon. Některé změny součástí počítače nebo software může vyžadovat opětovnou aktivaci softwaru. **Software připomene její aktivaci, dokud neprovedete.**
+8. **POVINNÉ AKTIVACE.** Aktivace přidruží použití softwaru s určitým zařízením. Během aktivace software odesílá společnosti Microsoft informace o softwaru a zařízení. Tyto informace zahrnují verze, jazyk a kód product key softwaru, zařízení, a informace, které jsou odvozené z konfigurace hardwaru zařízení adresa. Další informace najdete v tématu [aktivace produktů společnosti Microsoft](https://www.microsoft.com/en-us/piracy/mpa.aspx). Pomocí softwaru vyjadřujete svůj souhlas s přenosem těchto informací. Před aktivací, máte práva k použití verze softwaru nainstalovaného během procesu instalace. **Vaše právo na používání tohoto softwaru po dobu uvedenou v procesu instalace je omezená, pokud je aktivován.** To je, aby nedošlo k jeho použití bez licence. Nebudete moci pokračovat v používání softwaru po uplynutí této doby, pokud není ji aktivujete. Pokud zařízení je připojený k Internetu, může software automaticky připojit k Microsoftu pro aktivaci. Můžete také aktivovat software ručně pomocí sítě Internet nebo telefonicky. Pokud tak učiníte, mohou platit poplatky za služby Internet a telefon. Některé změny součástí počítače nebo software může vyžadovat opětovnou aktivaci softwaru. **Software připomene její aktivaci, dokud neprovedete.**
 
 9. **OVĚŘENÍ.**
 

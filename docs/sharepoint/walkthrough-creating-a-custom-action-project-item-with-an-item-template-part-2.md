@@ -14,11 +14,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b617230c7a30ee437ac1d1120793e567e14c7814
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 86e176ba2b6b4da026e5ecfc341ac535d9a32f84
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 2
   Po definování vlastního typu položky projektu služby SharePoint a přidružit ho pomocí šablony položky v sadě Visual Studio, můžete také poskytnout průvodce pro šablony. Průvodce vám pomůže shromažďovat informace od uživatelů při použití šablony přidat novou instanci položky projektu do projektu. Informace, které slouží k inicializaci položky projektu.  
@@ -36,7 +36,7 @@ ms.lasthandoff: 05/22/2018
 -   Ladění a testování průvodce.  
   
 > [!NOTE]  
->  Můžete si stáhnout ukázku, která obsahuje dokončené projekty, kódu a další soubory v tomto návodu z následujícího umístění: [soubory projektu pro návody pro rozšíření nástrojů SharePoint](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Můžete si stáhnout ukázku z [Githubu](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) který ukazuje, jak vytvořit vlastní aktivity pracovního postupu.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Chcete-li provést tento postup, musíte nejdřív vytvořit řešení CustomActionProjectItem provedením [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).  

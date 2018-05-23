@@ -11,11 +11,11 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: abeac53d6907603d6158c483095152d0f4ab2c5e
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 921faa49690b641fda0e864d27705040a1b97f1e
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Další informace o mobilní vývoj pomocí Xamarinu
 
@@ -101,7 +101,7 @@ K ladění aplikací pro různé platformy bez nutnosti použití fyzického za�
   
 ### <a name="microsofts-android-emulator"></a>Emulátoru Android od Microsoftu 
 
-Je doporučeno používat společnosti Microsoft [Visual Studio Emulator for Android](~/cross-platform/visual-studio-emulator-for-android.md), který je nainstalován pomocí sady Visual Studio.  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) video (Channel9, 5m55s) nabízí přehled a ukázka.  
+Je doporučeno používat společnosti Microsoft [Visual Studio Emulator for Android](visual-studio-emulator-for-android.md), který je nainstalován pomocí sady Visual Studio.  [Visual Studio Emulator for Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) video (Channel9, 5m55s) nabízí přehled a ukázka.  
   
 ### <a name="apples-ios-simulator"></a>Simulátoru iOS společnosti Apple
 

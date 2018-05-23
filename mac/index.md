@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 918c0532140369bfc6790be2306830b5f160ebdf
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 54f178a35d95819b13b1d477c3415fd02b8298f5
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Představení Visual Studio pro Mac
 
@@ -27,7 +27,7 @@ Tento článek zjišťování různých oddílů sady Visual Studio pro Mac, pos
 
 ## <a name="installation"></a>Instalace
 
-Postupujte podle kroků v [instalace](~/installation.md) Průvodce stahování a instalace Visual Studio for Mac.
+Postupujte podle kroků v [instalace](installation.md) Průvodce stahování a instalace Visual Studio for Mac.
 
 ## <a name="language-support"></a>Jazyková podpora
 
@@ -117,8 +117,8 @@ Další informace najdete v tématu [Xamarin Inspector](https://developer.xamari
 
 ## <a name="next-steps"></a>Další kroky
 
-* **Získat prohlídku** – Pokud chcete získat přehled o řadu hlavní funkce v sadě Visual Studio pro Mac, najdete v sadě Visual Studio pro Mac [IDE prohlídka](~/ide-tour.md).
-* **Nastavit** – Další informace o tom, jak stáhnout a nainstalovat Visual Studio naleznete [instalace](~/installation.md) průvodce.
+* **Získat prohlídku** – Pokud chcete získat přehled o řadu hlavní funkce v sadě Visual Studio pro Mac, najdete v sadě Visual Studio pro Mac [IDE prohlídka](ide-tour.md).
+* **Nastavit** – Další informace o tom, jak stáhnout a nainstalovat Visual Studio naleznete [instalace](installation.md) průvodce.
 * **Kurzy Xamarin** – Další informace o tom, jak vytvořit kód s Xamarin, přejděte na Xamarin [středisku pro vývojáře](https://developer.xamarin.com).
 * **Videa** – Pokud chcete další informace o dalších funkcích a aspekty sady Visual Studio pro Mac, podívejte se na videa na [Xamarin univerzity](https://university.xamarin.com) webu.
 * **Praktická cvičení** – Pokud chcete začít používat různé úlohy, které jsou zahrnuté v sadě Visual Studio pro Mac, podívejte se [praktická cvičení](https://github.com/Microsoft/vs4mac-labs).

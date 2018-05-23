@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f494ef7160d38365643f72cfd1dabfa6cb66d4c3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 04889d508903a80717f7055599a8b63b354e32ce
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Návod: Vytvoření položky projektu sloupce webu pomocí šablony projektu, část 1
   Projekty SharePoint jsou kontejnery pro jednu nebo více položek projektu služby SharePoint. Vytváření vlastních typů položek projektu služby SharePoint a poté je přidružení pomocí šablony projektu můžete rozšířit systému projektu služby SharePoint v sadě Visual Studio. V tomto návodu se definování typu položky projektu pro vytvoření sloupce webu a pak vytvoříte projekt šablonu, která slouží k vytvoření nového projektu, který obsahuje položky projektu sloupce webu.  
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/22/2018
  Toto je samostatné návod. Po dokončení tohoto postupu můžete vylepšit položka projektu přidáním průvodce do šablony projektu. Další informace najdete v tématu [návod: vytvoření položky projektu sloupce webu pomocí šablony projektu, část 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
   
 > [!NOTE]  
->  Můžete si stáhnout ukázku, která obsahuje dokončené projekty, kódu a další soubory v tomto návodu z následujícího umístění: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
+> Pro řadu ukázkový pracovní postupy, najdete v části [ukázky pracovního postupu služby SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/sharepoint-workflow-samples).  
   
 ## <a name="prerequisites"></a>Požadavky  
  Následující součásti na vývojovém počítači k dokončení tohoto názorného postupu potřebujete:  

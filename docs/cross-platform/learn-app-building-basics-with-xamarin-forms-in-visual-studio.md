@@ -10,11 +10,11 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 608eebc113c9df7a8978299cc69907e28d81a16f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e25f75d0a1cd5e1b9989172a76d8cf8139957e2c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Další informace základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio
 
@@ -22,7 +22,7 @@ Jakmile provedete kroky krok [nastavení a instalaci](../cross-platform/setup-an
 
 Je obvykle lepší používá knihovnu .NET Standard namísto sdílených projektů pro tento společný kód. .NET Standard knihovna obsahuje tyto API technologie .NET, které můžou běžet na všechny cílové platformy.  
 
-Zde je aplikace, která budete sestavení. (Zleva zápis) je spuštěn na iOS a Android telefony a Universal Windows Platform (UWP) Windows 10:
+Zde je aplikace, která budete sestavení. (Zleva doprava) je spuštěn na iOS a Android telefony a Universal Windows Platform (UWP) Windows 10:
   
 [![Ukázka počasí aplikace pro iOS, Android a UWP](../cross-platform/media/crossplat-xamarin-formsguide-1.png "CrossPlat Xamarin FormsGuide 1")](../cross-platform/media/crossplat-xamarin-formsguide-1-Large.png#lightbox)
   

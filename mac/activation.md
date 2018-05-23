@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: dcfaee4d086fd5cd9d8ce85f365e63fbb21f8a9e
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d1bb23d03ac613c12df54f1a11e19ee5a8c2edb0
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="enable-subscription"></a>Povolit odběr
 
@@ -19,7 +19,7 @@ Visual Studio pro Mac nabízí tři úrovně jiného předplatného můžete vyb
 * Visual Studio Professional pro Mac
 * Visual Studio Community pro Mac
 
-Pokud chcete začít používat předplatné, přihlaste se k sadě Visual Studio pro Mac podle pokynů v [přihlášení k sadě Visual Studio pro Mac](~/signing-in.md) průvodce. Přihlášení se aktivuje vašeho předplatného, který se zobrazí v dialogovém okně účty:
+Pokud chcete začít používat předplatné, přihlaste se k sadě Visual Studio pro Mac podle pokynů v [přihlášení k sadě Visual Studio pro Mac](signing-in.md) průvodce. Přihlášení se aktivuje vašeho předplatného, který se zobrazí v dialogovém okně účty:
 
 ![Zobrazit dialogové okno uživatelské licence](media/user-accounts-login.png)
 
@@ -29,11 +29,11 @@ Pokud vypršela platnost předplatného, máte dvě možnosti:
 
 1. Obnovte předplatné. Předplatné můžete procházením [ https://www.visualstudio.com/vs/pricing/ ](https://www.visualstudio.com/vs/pricing/).
 
-2. Pokud máte jiný účet s aktivní předplatné, můžete ho přidat do sady Visual Studio pro Mac podle popisu v [přidání víc uživatelských účtů](~/signing-in.md) článku. Visual Studio pro Mac zjistí nejlépe dostupnou licenci ze všech účtů, které jste přidali. 
+2. Pokud máte jiný účet s aktivní předplatné, můžete ho přidat do sady Visual Studio pro Mac podle popisu v [přidání víc uživatelských účtů](signing-in.md) článku. Visual Studio pro Mac zjistí nejlépe dostupnou licenci ze všech účtů, které jste přidali. 
 
 ## <a name="product-key-usage"></a>Použití kódů Product key
 
-V současné době neexistuje žádný způsob, jak využívat kód product key pro povolení Professional nebo Enterprise oprávnění pro Visual Studio for Mac. Chcete-li používat Visual Studio Enterprise pro Mac nebo Visual Studio Professional pro Mac, musíte mít příslušné [předplatné](https://www.visualstudio.com/subscriptions/) a být [přihlášení](~/signing-in.md) k prostředí IDE.
+V současné době neexistuje žádný způsob, jak využívat kód product key pro povolení Professional nebo Enterprise oprávnění pro Visual Studio for Mac. Chcete-li používat Visual Studio Enterprise pro Mac nebo Visual Studio Professional pro Mac, musíte mít příslušné [předplatné](https://www.visualstudio.com/subscriptions/) a být [přihlášení](signing-in.md) k prostředí IDE.
 
 ## <a name="offline-activation"></a>Offline aktivaci
 

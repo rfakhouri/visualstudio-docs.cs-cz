@@ -1,5 +1,5 @@
 ---
-title: Přístup k datům v sadě Visual Studio
+title: Přístup k datům a nástroje
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,19 +16,23 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b43463dc35fa3f9703162817f6a8d63f44a87b8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="accessing-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
+# <a name="access-data-in-visual-studio"></a>Přístup k datům v sadě Visual Studio
 
 V sadě Visual Studio, můžete vytvořit aplikace, které se připojují k datům v prakticky jakékoli databáze produkty nebo služby, v libovolném formátu kdekoli – v místním počítači, v místní síti nebo veřejné, privátní nebo hybridního cloudu.
 
 Pro aplikace v jazyce JavaScript, Python, PHP, Ruby nebo C++ můžete připojit k datům jako cokoliv jiného, proveďte získáním knihovny a psaní kódu. Pro aplikace .NET Visual Studio poskytuje nástroje, které můžete použít k prozkoumat zdroje dat, vytváření modelů objekt uložení a pracovat s daty v paměti a vytvoření vazby dat s uživatelským rozhraním. Microsoft Azure poskytuje sady SDK pro .NET, Java, Node.js, PHP, Python, Ruby a mobilní aplikace a nástroje v sadě Visual Studio pro připojení k Azure Storage.
 
-Následující seznamy shrnují jen některé z mnoha systémy databáze a úložiště, které lze použít ze sady Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) nabídky jsou data služby, které zahrnují všechny zřizování a správy služby příslušné úložiště dat.  [Nástroje Azure pro sadu Visual Studio](https://www.visualstudio.com/features/azure-tools-vs.aspx) je volitelná součást, která umožňuje pracovat s Azure datová úložiště přímo ze sady Visual Studio. Většina jiných SQL a NoSQL databáze produkty, které jsou zde uvedeny, může být hostovaný na místním počítači, v místní síti nebo v Microsoft Azure na virtuálním počítači. V tomto scénáři jsou zodpovědní za správu samotná databáze.
+Následující seznamy shrnují jen některé z mnoha systémy databáze a úložiště, které lze použít ze sady Visual Studio. [Microsoft Azure](https://azure.microsoft.com/) nabídky jsou data služby, které zahrnují všechny zřizování a správy služby příslušné úložiště dat. **Azure development** zatížení v [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) umožňuje pracovat s Azure datová úložiště přímo ze sady Visual Studio.
+
+![Vývoj pro Azure zatížení](media/azure-development-workload.png)
+
+Většina jiných SQL a NoSQL databáze produkty, které jsou zde uvedeny, může být hostovaný na místním počítači, v místní síti nebo v Microsoft Azure na virtuálním počítači. Pokud hostujete databázi ve virtuálním počítači Microsoft Azure, jste zodpovědní za správu samotná databáze.
 
 **Microsoft Azure**
 
@@ -68,7 +72,7 @@ Mnoho dodavatelů databáze a třetím stranám podporují integrace sady Visual
 
 Všechny .NET přístup k datům, včetně v .NET Core je založena na technologii ADO.NET, sadu třídy, která definuje rozhraní pro přístup k libovolného typu zdroje dat, relačních i nerelačních. Visual Studio obsahuje několik nástrojů a návrhářů, které pracují s ADO.NET za účelem připojení k databázím, zpracovaly data a data k dispozici pro uživatele. V dokumentaci v této části popisuje, jak pomocí těchto nástrojů. Můžete také programu přímo u objektů příkazu ADO.NET. Další informace o přímé volání rozhraní API technologie ADO.NET naleznete v tématu [ADO.NET](/dotnet/framework/data/adonet/index).
 
-Přístup k datům dokumentaci konkrétně související s technologií ASP.NET najdete v tématu [práci s daty](http://www.asp.net/web-forms/overview/presenting-and-managing-data) na webu technologie ASP.NET. Kurz použití rozhraní Entity Framework s architekturou ASP.NET MVC, najdete v části [Začínáme s Entity Framework 6 Code First pomocí MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+Přístup k datům dokumentace související s technologií ASP.NET, najdete v části [práci s daty](http://www.asp.net/web-forms/overview/presenting-and-managing-data) na webu technologie ASP.NET. Kurz použití rozhraní Entity Framework s architekturou ASP.NET MVC, najdete v části [Začínáme s Entity Framework 6 Code First pomocí MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
 Univerzální platformu Windows (UWP) aplikace v C# nebo Visual Basic můžete použít Microsoft Azure SDK pro .NET pro přístup k Azure Storage a jinými službami Azure. Třída Windows.Web.HttpClient umožňuje komunikaci s jakoukoli službu, RESTful. Další informace najdete v tématu [jak se připojit k serveru HTTP pomocí Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 

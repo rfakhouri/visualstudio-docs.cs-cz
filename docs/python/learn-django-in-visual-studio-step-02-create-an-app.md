@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4050694685302eb527b33d8810bc7f92974bc305
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 1a9d878ee8b5384784ba77cb6de2d9eee1289d0c
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-step-2-create-a-django-app-with-views-and-page-templates"></a>Kurz – krok 2: vytvoření aplikace Django s zobrazení a stránka šablony
 
@@ -206,7 +206,7 @@ Následující kroky ukazují použití šablon stránky:
         )
     ```
 
-    První argument `render`, jak můžete vidět, je objekt žádosti a relativní cesty k souboru šablony v rámci aplikace `templates` složky. Soubor šablony jmenuje pro zobrazení je podporuje, pokud je to vhodné. Třetí argument `render` je pak slovník proměnných, které odkazuje šablona. Může zahrnovat objekty ve slovníku, v takovém případě proměnné v šabloně, které mohou odkazovat na `{{ object.property }}`.
+    První argument `render`, jak můžete vidět, je objekt žádosti a relativní cesty k souboru šablony v rámci aplikace `templates` složky. Podle potřeby pro zobrazení, které podporuje, názvem souboru šablony. Třetí argument `render` je pak slovník proměnných, které odkazuje šablona. Může zahrnovat objekty ve slovníku, v takovém případě proměnné v šabloně, které mohou odkazovat na `{{ object.property }}`.
 
 1. Spusťte projekt a sledovat výstup. Měli byste vidět podobná zpráva k této zaznamenané kroku 2-2, což indikuje, že šablona funguje.
 

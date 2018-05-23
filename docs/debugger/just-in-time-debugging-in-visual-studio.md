@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c506e12fc8e6637e2b53852587e6a37c57cbf5ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b97e2d6b9ca269a86c3b66ffbcc4bb441051f29
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-respond-to-the-just-in-time-debugger"></a>Postupy: reakce na ladicí program za běhu
 
@@ -25,7 +25,7 @@ Akce, které byste měli vzít až uvidíte pouze v době dialogové okno ladic�
 
 #### <a name="if-you-want-to-fix-or-debug-the-error-visual-studio-users"></a>Pokud chcete opravit nebo ladění chyb (Visual Studio uživatelů)
 
-- Musíte mít [nainstalovanou sadu Visual Studio](https://www.microsoft.com/en-us/download/details.aspx?id=48146) Chcete-li zobrazit podrobné informace o chybě a pokusit se je ladění. Další informace najdete v tématu [ladění pomocí ladicího programu JIT](../debugger/debug-using-the-just-in-time-debugger.md). Pokud nelze vyřešit chyby a opravte aplikace, požádejte vlastníka aplikace opravte případné chyby.
+- Musíte mít [nainstalovanou sadu Visual Studio](http://www.visualstudio.com) Chcete-li zobrazit podrobné informace o chybě a pokusit se je ladění. Další informace najdete v tématu [ladění pomocí ladicího programu JIT](../debugger/debug-using-the-just-in-time-debugger.md). Pokud nelze vyřešit chyby a opravte aplikace, požádejte vlastníka aplikace opravte případné chyby.
 
 #### <a name="if-you-want-to-prevent-the-just-in-time-debugger-dialog-box-from-appearing"></a>Pokud chcete zabránit zobrazování dialogových oken ladicího programu JIT
 

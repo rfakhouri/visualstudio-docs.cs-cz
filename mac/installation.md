@@ -6,11 +6,11 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: db49b08f5a56a1a60e8f9c44d0e5b7630143b472
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>Instalační program a instalace sady Visual Studio pro Mac
 
@@ -58,7 +58,7 @@ Pro práci s iOS v sadě Visual Studio budete potřebovat následující:
       - Vyberte aplikace Xamarin plně napříč platformami – **Android**, **iOS**, a **systému macOS** platformy.
   * **Aplikace .NET core** – vyberte **.NET Core** platformy.
   * **Webové aplikace ASP.NET Core** – vyberte **.NET Core** platformy.
-  * **Vývoj pro různé platformy Unity herní** – žádné další platformy je potřeba nainstalovat překračuje Visual Studio for Mac. Odkazovat [Průvodce nastavením Unity](~/setup-vsmac-tools-unity.md) Další informace o instalaci rozšíření Unity.
+  * **Vývoj pro různé platformy Unity herní** – žádné další platformy je potřeba nainstalovat překračuje Visual Studio for Mac. Odkazovat [Průvodce nastavením Unity](setup-vsmac-tools-unity.md) Další informace o instalaci rozšíření Unity.
 
   Tato obrazovka instalace zobrazí verze a velikosti jednotlivých součástí. Můžete kliknutím na jednotlivé komponenty, chcete-li zobrazit seznam závislosti pro tuto součást (pro Android), najdete v části Další balíčky, které stáhne (pro .NET Core), nebo zobrazit žádné další aplikace, které jsou vyžadované (pro iOS a systému macOS):
 
@@ -112,4 +112,4 @@ Instalace sady Visual Studio pro Mac, můžete zahájit zápis kódu pro vaše a
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplikace .NET core, webové aplikace ASP.NET Core, vývoj her pro Unity
 
-Další úlohy, najdete v části [úlohy](~/workloads.md) stránky.
+Další úlohy, najdete v části [úlohy](workloads.md) stránky.

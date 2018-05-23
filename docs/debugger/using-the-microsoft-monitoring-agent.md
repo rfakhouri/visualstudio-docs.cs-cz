@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7df107cbf6170e603978358d49df167596208a4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2cf84975f96ca2d1935da7f750f5c120d72eb112
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Použití služby Microsoft Monitoring Agent
-Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a služby SharePoint 2010 nebo 2013 aplikací pro chyby, problémy s výkonem nebo jiné problémy pomocí **agenta Microsoft Monitoring Agent**. Diagnostické události od agenta můžete uložit do souboru protokolu (.iTrace) IntelliTrace. V protokolu pak můžete otevřít ve Visual Studio Enterprise (ale ne edice Professional nebo komunity) pro ladění problémů s všechny diagnostické nástroje sady Visual Studio. Může taky shromažďovat diagnostická data IntelliTrace a metoda data spuštěním agenta v **trasování** režimu. Microsoft Monitoring Agent lze integrovat s [Application Insights](http://www.visualstudio.com/get-started/find-performance-problems-vs.aspx) a [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent změnit prostředí cílového systému, když je nainstalovaná.  
+Místně můžete monitorovat webové aplikace ASP.NET hostované službou IIS a služby SharePoint 2010 nebo 2013 aplikací pro chyby, problémy s výkonem nebo jiné problémy pomocí **agenta Microsoft Monitoring Agent**. Diagnostické události od agenta můžete uložit do souboru protokolu (.iTrace) IntelliTrace. V protokolu pak můžete otevřít ve Visual Studio Enterprise (ale ne edice Professional nebo komunity) pro ladění problémů s všechny diagnostické nástroje sady Visual Studio. Může taky shromažďovat diagnostická data IntelliTrace a metoda data spuštěním agenta v **trasování** režimu. Microsoft Monitoring Agent lze integrovat s [Application Insights](/azure/application-insights/) a [System Center Operation Manager](http://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent změnit prostředí cílového systému, když je nainstalovaná.  
   
 > [!NOTE]
 >  Může taky shromažďovat data diagnostiky a metoda IntelliTrace pro webový server, SharePoint, WPF a formuláře aplikací pro Windows na vzdálených počítačích beze změny cílové prostředí pomocí **samostatné kolekce IntelliTrace**. Samostatné kolekce má dopad na vyšší výkon než Microsoft Monitoring Agent spuštěný **monitorování** režimu. V tématu [pomocí samostatného kolektoru IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  

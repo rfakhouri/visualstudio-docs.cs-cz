@@ -23,11 +23,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6eef7953a767e08febcb3e8dc42ad4f55e73889c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08daee9f9b8a7bdfbe71b4787eaaaeb3baa178d9
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-sharepoint-workflow-solutions"></a>Vytváření řešení pracovního postupu služby SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] poskytuje nástroje, které vám pomohou vytvořit vlastní pracovní postupy, které spravují životní cyklus dokumenty a vypisovat položky ve webovém serveru SharePoint. Zadat položky zahrnují návrháře, sadu ovládacích prvků aktivity a odkazy na sestavení nezbytné. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] zahrnuje také **Průvodce vlastním nastavením SharePoint**, vám pomůžou vytvořit a konfigurovat pracovní postupy.  
@@ -37,7 +37,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="workflows-in-sharepoint"></a>Pracovní postupy ve službě SharePoint  
  Když přidáte pracovní postup k seznamu nebo knihovny služby SharePoint, můžete vynutit obchodní proces na všechny položky v seznamu nebo knihovny. Pracovní postup popisuje akce, které systém nebo uživatelé musí provést na každou položku, například odeslání položku upravit a poté zkontrolovat. Tyto akce, označuje jako *aktivity*, představují stavební kameny pracovního postupu.  
   
- Můžete vytvořit pracovních postupů služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a nasadit je na webovém serveru SharePoint. Po nasazení pracovního postupu do služby SharePoint můžete přiřadit k do knihovny nebo seznamu. Ho můžete potom automaticky spustit, proces, nebo ručně uživatelem. Další informace o operaci pracovního postupu najdete v tématu [Správa procesů pomocí pracovních postupů](http://go.microsoft.com/fwlink/?LinkId=79757).  
+ Můžete vytvořit pracovních postupů služby SharePoint v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] a nasadit je na webovém serveru SharePoint. Po nasazení pracovního postupu do služby SharePoint můžete přiřadit k do knihovny nebo seznamu. Ho můžete potom automaticky spustit, proces, nebo ručně uživatelem. Další informace o operaci pracovního postupu najdete v tématu [pracovních postupů služby SharePoint vývoj pomocí sady Visual Studio](https://docs.microsoft.com/sharepoint/dev/general-development/develop-sharepoint-workflows-using-visual-studio).  
   
 ## <a name="creating-custom-sharepoint-workflows"></a>Vytváření pracovních postupů vlastní služby SharePoint  
  Dva projekty pracovního postupu služby SharePoint jsou k dispozici v [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]: **sekvenční pracovní postup** a **pracovní postup stavového stroje**.  

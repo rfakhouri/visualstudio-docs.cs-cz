@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: edc9b341a64d22876f52906f2ee92c33a22d420c
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 6e99103ee16b56712f8ec979fd8591a20c2feb3c
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="projects-and-solutions"></a>Projekty a řešení
 
@@ -17,8 +17,8 @@ Visual Studio pro Mac poskytuje _řešení Pad_ zobrazíte stromovou strukturu c
 
 ## <a name="using-projects-and-solutions"></a>Pomocí projekty a řešení
 
-Pokud chcete vytvořit nový projekt nebo řešení, najdete [vytváření nové projekty a řešení](~/create-new-projects.md) článku.
+Pokud chcete vytvořit nový projekt nebo řešení, najdete [vytváření nové projekty a řešení](create-new-projects.md) článku.
 
 ## <a name="project-and-solution-options"></a>Možnosti řešení a projektu
 
-Vlastnosti projekty a řešení můžete spravovat buď dvojitým kliknutím na název projekt nebo řešení, nebo kliknutím pravým tlačítkem myši a přejděte na **možnosti**. Další informace o těchto možnostech najdete v [řešení pro správu a vlastnosti projektu](~/managing-solutions-and-project-properties.md) článku.
+Vlastnosti projekty a řešení můžete spravovat buď dvojitým kliknutím na název projekt nebo řešení, nebo kliknutím pravým tlačítkem myši a přejděte na **možnosti**. Další informace o těchto možnostech najdete v [řešení pro správu a vlastnosti projektu](managing-solutions-and-project-properties.md) článku.

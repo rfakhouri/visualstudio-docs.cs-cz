@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6b1d81f200fde885a25aa367e700e61399af5bab
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 02f3311b96d8f1287f2c2f2a81f9b37e51d4f7f6
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1"></a>Návod: Vytvoření vlastní položky projektu akce pomocí šablony položky, část 1
   Systému projektu služby SharePoint v sadě Visual Studio můžete rozšířit vytvořením vlastní projektu typu položky. V tomto návodu vytvoříte položky projektu, který lze přidat do projektu služby SharePoint k vytvoření vlastní akce na web služby SharePoint. Vlastní akce přidá položku nabídky **Akce webu** nabídky Web služby SharePoint.  
@@ -46,7 +46,7 @@ ms.lasthandoff: 05/22/2018
  Toto je samostatné návod. Po dokončení tohoto postupu můžete vylepšit položka projektu přidáním Průvodce pro šablony položky. Další informace najdete v tématu [návod: vytvoření vlastní položky projektu akce pomocí šablony položky, část 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).  
   
 > [!NOTE]  
->  Můžete si stáhnout ukázku, která obsahuje dokončené projekty, kódu a další soubory v tomto návodu z následujícího umístění: [ http://go.microsoft.com/fwlink/?LinkId=191369 ](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  Můžete si stáhnout ukázku z [Githubu](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) který ukazuje, jak vytvořit vlastní aktivity pracovního postupu.  
   
 ## <a name="prerequisites"></a>Požadavky  
  Následující součásti na vývojovém počítači k dokončení tohoto názorného postupu potřebujete:  

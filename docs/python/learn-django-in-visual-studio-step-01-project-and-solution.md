@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 82f7de8649e36c03f1ae1004c01c93dd7580b3a1
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>Kurz – krok 1: Začínáme s webového rozhraní Django v sadě Visual Studio
 
@@ -116,7 +116,7 @@ Odpověď: Ano. Chcete-li zakázat automatické potvrzení, přejděte na **nast
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Krok 1 – 3: Vytvořte virtuální prostředí a vyloučit od správy zdrojového kódu
 
-Nyní, když jste nakonfigurovali zdrojového kódu pro svůj projekt, můžete vytvořit virtuální prostředí potřebné balíčky Django, které vyžaduje projekt. Pak můžete použít **Team Explorer** vyloučit složky v prostředí od správy zdrojového kódu.
+Nyní, když jste nakonfigurovali zdrojového kódu pro svůj projekt, můžete vytvořit virtuální prostředí, které obsahuje nezbytné Django balíčků pro projekt. Pak můžete použít **Team Explorer** vyloučit složky v prostředí od správy zdrojového kódu.
 
 1. V **Průzkumníku řešení**, klikněte pravým tlačítkem myši **prostředí Python** uzel a vyberte možnost **Přidání virtuálního prostředí**.
 

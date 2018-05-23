@@ -17,11 +17,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0bc8d7f2f6fb1515b8946d0fad9338733c5138
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b811f194e0496030e1f46d1448736fb21f9579b3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>Výběr strategie nasazení ClickOnce
 Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplikace; strategie, kterou zvolíte, závisí hlavně na typu aplikace, kterou nasazujete. Toto jsou zmíněné tři strategie nasazení:  
@@ -46,15 +46,6 @@ Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../deploym
   
  Toto je výchozí strategie nasazení.  
   
-## <a name="install-from-a-cd"></a>Instalace z disku CD  
- Použijete-li tuto strategii, vaše aplikace bude nasazena na vyměnitelné médium, jako je například disk CD-ROM nebo DVD. Stejně jako u předchozí možnost, když uživatel vybere možnost nainstalovat aplikaci, je nainstalována a spuštěna a položky budou přidány do **spustit** nabídky a **přidat nebo odebrat programy** v **ovládací prvek Panel**.  
-  
- Tato strategie je nejvhodnější pro aplikace, které budou nasazeny pro uživatele bez možnosti trvalého připojení k síti nebo s malou šířkou pásma připojení. Vzhledem k tomu, že aplikace se instaluje z vyměnitelných médií, není pro instalaci vyžadováno žádné síťové připojení. Možnost připojení k síti je však stále zapotřebí z důvodu aktualizací aplikace.  
-  
- Chcete-li povolit tuto strategii nasazení v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klikněte na tlačítko **z disku CD nebo DVD-ROM** na **instalovaných** stránce průvodce publikovat.  
-  
- Chcete-li povolit tuto strategii nasazení ručně, změňte **deploymentProvider** značky v manifestu nasazení. (V sadě Visual Studio, je tato vlastnost k dispozici jako **adresy URL instalace** na **publikovat** stránky v Návrháři projektu. V Mage.exe je **umístění spuštění**.)  
-  
 ## <a name="start-the-application-from-the-web-or-a-network-share"></a>Spuštění aplikace z webu nebo sdíleného síťového umístění  
  Tato strategie je stejná jako první zmíněná strategie, s výjimkou toho, že aplikace se chová jako webová aplikace. Pokud uživatel klikne na odkaz na webové stránce (nebo dvakrát klikne na ikonu ve sdíleném umístění), aplikace se spustí. Když uživatelé zavře se aplikace, již není k dispozici na místním počítači; nic není přidáno do **spustit** nabídky nebo **přidat nebo odebrat programy** v **ovládací panely**.  
   
@@ -66,6 +57,15 @@ Existují tři různé strategie pro nasazení [!INCLUDE[ndptecclick](../deploym
  Chcete-li povolit tuto strategii nasazení v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klikněte na tlačítko **neinstalujte aplikace** na **instalovat nebo spustit z webu** stránce průvodce publikovat.  
   
  Chcete-li povolit tuto strategii nasazení, ručně, změňte **nainstalovat** značky v manifestu nasazení. (Jeho hodnota může být **true** nebo **false**. V Mage.exe, použijte **Online pouze** možnost **typ aplikace** seznamu.)  
+
+## <a name="install-from-a-cd"></a>Instalace z disku CD  
+ Použijete-li tuto strategii, vaše aplikace bude nasazena na vyměnitelné médium, jako je například disk CD-ROM nebo DVD. Stejně jako u předchozí možnost, když uživatel vybere možnost nainstalovat aplikaci, je nainstalována a spuštěna a položky budou přidány do **spustit** nabídky a **přidat nebo odebrat programy** v **ovládací prvek Panel**.  
+  
+ Tato strategie je nejvhodnější pro aplikace, které budou nasazeny pro uživatele bez možnosti trvalého připojení k síti nebo s malou šířkou pásma připojení. Vzhledem k tomu, že aplikace se instaluje z vyměnitelných médií, není pro instalaci vyžadováno žádné síťové připojení. Možnost připojení k síti je však stále zapotřebí z důvodu aktualizací aplikace.  
+  
+ Chcete-li povolit tuto strategii nasazení v [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], klikněte na tlačítko **z disku CD nebo DVD-ROM** na **instalovaných** stránce průvodce publikovat.  
+  
+ Chcete-li povolit tuto strategii nasazení ručně, změňte **deploymentProvider** značky v manifestu nasazení. (V sadě Visual Studio, je tato vlastnost k dispozici jako **adresy URL instalace** na **publikovat** stránky v Návrháři projektu. V Mage.exe je **umístění spuštění**.)  
   
 ## <a name="web-browser-support"></a>Podpora webového prohlížeče  
  Aplikace určené pro platformu .NET Framework 3.5 mohou být nainstalovány pomocí libovolného prohlížeče.  

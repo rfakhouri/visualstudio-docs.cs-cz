@@ -15,11 +15,11 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ad565dfffd454eeca465aa4097c077fdc0a65
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName – element (šablony sady Visual Studio)
 Určuje, zda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] systému projektu vygeneruje název výchozí šablony do **přidat novou položku** nebo **nový projekt** dialogové okno.  
@@ -59,7 +59,7 @@ Určuje, zda [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] systému 
   
  Pokud `ProvideDefaultName` element je `false`, **název** políčka **přidat novou položku** a **nový projekt** dialogová okna obsahovat hodnotu `<Enter_name>`.  
   
- Použití [defaultname –](../extensibility/defaultname-element-visual-studio-templates.md) elementu, který chcete zadat výchozí název projektu nebo položku v **přidat novou položku** a **nový projekt** dialogová okna.  
+ Použití [defaultname –](../extensibility/defaultname-element-visual-studio-templates.md) elementu, který chcete zadat výchozí název projektu nebo položku v **přidat novou položku** a **nový projekt** dialogová okna. Při hodnotu `ProvideDefaultName` element je `true`, opomenutí `DefaultName` element pro projekty naplní dialogových oken s názvem šablony, který je hodnotou [název](../extensibility/name-element-visual-studio-templates.md) elementu.
   
 ## <a name="example"></a>Příklad  
  Následující příklad kódu nastaví `ProvideDefaultName` element `false`.  

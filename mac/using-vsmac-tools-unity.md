@@ -5,11 +5,11 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 4044169508b177ff5524ee024479244595661eab
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: ab605b3a8505ac189bc0f628b717c6863f9fd902
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Pomocí sady Visual Studio pro Mac Tools for Unity
 
@@ -17,7 +17,7 @@ V této části dozvíte, jak používat Visual Studio pro Mac nástroje pro int
 
 ## <a name="opening-unity-scripts-in-visual-studio-for-mac"></a>Otevření Unity skripty v sadě Visual Studio pro Mac
 
-Jakmile je Visual Studio pro Mac [nastavit jako editor externího skriptu pro Unity](/visualstudio/mac/setup-vsmac-tools-unity#configure-unity-for-use-with-visual-studio-for-mac), spuštění všech skriptů z editoru Unity automaticky spustí nebo přepínač tak, aby Visual Studio pro Mac, pomocí skriptu pro zvolený otevřete.
+Jakmile je Visual Studio pro Mac [nastavit jako editor externího skriptu pro Unity](setup-vsmac-tools-unity.md#configure-unity-for-use-with-visual-studio-for-mac), spuštění všech skriptů z editoru Unity automaticky spustí nebo přepínač tak, aby Visual Studio pro Mac, pomocí skriptu pro zvolený otevřete.
 
 Alternativně můžete otevřít Visual Studio pro Mac se žádný skript otevřete v editoru zdrojového výběrem **otevření projektu C#** z **prostředky** nabídky v Unity.
 

@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1be963dec8eee77efe4855c2e810af0fd1e72f1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acec4af35fd194007ec13724bd07ceb366fc044
+ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="debugging-sharepoint-solutions"></a>Ladění řešení služby SharePoint
   Můžete ladění řešení služby SharePoint pomocí [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ladicí program. Při spuštění ladění, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] na serveru SharePoint nasadí soubory projektu a pak otevře instanci web služby SharePoint ve webovém prohlížeči. Následující části popisují postup ladění aplikací služby SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
@@ -128,11 +128,11 @@ ms.lasthandoff: 04/16/2018
  Když ladíte projekty workflow [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] přidá šablonu pracovního postupu (v závislosti na jeho typu) do knihovny nebo do seznamu. Pracovní postup šablony potom můžete spustit ručně nebo pomocí přidání nebo aktualizace položku. Pak můžete použít [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] k ladění pracovního postupu.  
   
 > [!NOTE]  
->  Pokud přidáte odkazy na další sestavení, ujistěte se, že tyto sestavení nainstalované v globální mezipaměti sestavení ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Řešení pracovního postupu, jinak nebude úspěšná. Informace o tom, jak nainstalovat sestavení najdete v tématu [ručně spustit pracovní postup v dokumentu nebo položce](http://go.microsoft.com/fwlink/?LinkID=79938).  
+>  Pokud přidáte odkazy na další sestavení, ujistěte se, že tyto sestavení nainstalované v globální mezipaměti sestavení ([!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Řešení pracovního postupu, jinak nebude úspěšná. Informace o tom, jak nainstalovat sestavení najdete v tématu [ručně spustit pracovní postup v dokumentu nebo položce](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
  Proces nasazení ale nespustí pracovního postupu. Z webu služby SharePoint je nutné spustit pracovní postup. Pracovní postup můžete spustit také pomocí klientské aplikace jako je například Microsoft Office Word 2010 nebo pomocí samostatných kódu na straně serveru. Použijte jeden z přístupů, zadaný v **Průvodce vlastním nastavením SharePoint**.  
   
- Například pokud jste zadali, že pracovní postup lze spustit ručně, spusťte pracovní postup přímo z položky v seznamu nebo knihovny. Další informace o tom, jak ručně spustit pracovní postup najdete v tématu [ručně spustit pracovní postup na položku dokumentu](http://go.microsoft.com/fwlink/?LinkID=79938).  
+ Například pokud jste zadali, že pracovní postup lze spustit ručně, spusťte pracovní postup přímo z položky v seznamu nebo knihovny. Další informace o tom, jak ručně spustit pracovní postup najdete v tématu [ručně spustit pracovní postup na položku dokumentu](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).  
   
 ##  <a name="FeatureEvents"></a> Ladění přijímačů událostí funkce  
  Ve výchozím nastavení při spuštění [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] aplikace služby SharePoint, jeho funkce jsou automaticky aktivované pro vás na serveru SharePoint. Však dojde k potížím při ladění přijímačů událostí funkce, protože když je aktivován funkce [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], běží v jiném procesu než ladicího programu. To znamená, že některé funkce ladění, jako je například zarážky, nebudou fungovat správně.  

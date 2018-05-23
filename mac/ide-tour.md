@@ -5,11 +5,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: ffe295d6744af1ff6d91172b99575cf5eba97246
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 024e58c1c217652c489ad9fe9e568cd21f687ae8
+ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio pro Mac prohlídka
 
@@ -52,7 +52,7 @@ Uspořádá panelu řešení pro projekty v řešení:
 
 Toto je, kde soubory pro zdrojový kód, prostředky, uživatelské rozhraní a závislosti jsou uspořádány do projektů specifické pro platformu.
 
-Další informace o použití projekty a řešení v sadě Visual Studio pro Mac, najdete v článku [projekty a řešení](~/projects-and-solutions.md) článku.
+Další informace o použití projekty a řešení v sadě Visual Studio pro Mac, najdete v článku [projekty a řešení](projects-and-solutions.md) článku.
 
 ## <a name="assembly-references"></a>Odkazy na sestavení
  
@@ -64,7 +64,7 @@ Další odkazy jsou přidány, pomocí **upravit odkazy** dialog, který se zobr
  
 ![Odkazy na dialogové okno Upravit](media/ide-tour-image20.png)
 
-Další informace o použití odkazy v sadě Visual Studio pro Mac, najdete v článku [Správa odkazů v projektu](~/managing-references-in-a-project.md) článku.
+Další informace o použití odkazy v sadě Visual Studio pro Mac, najdete v článku [Správa odkazů v projektu](managing-references-in-a-project.md) článku.
 
 ## <a name="dependencies--packages"></a>Závislosti / balíčků
 
@@ -76,19 +76,19 @@ Pokud chcete přidat závislost do vaší aplikace, klikněte pravým tlačítke
 
 ![Přidání balíčku NuGet](media/ide-tour-image21.png)
 
-Informace o použití balíčku NuGet v aplikaci najdete v [projektu včetně NuGet ve vašem projektu](~/nuget-walkthrough.md) článku.
+Informace o použití balíčku NuGet v aplikaci najdete v [projektu včetně NuGet ve vašem projektu](nuget-walkthrough.md) článku.
 
 ## <a name="refactoring"></a>Refaktoring
 
-Visual Studio pro Mac nabízí dva způsoby užitečné Refaktorovat kódu: kontextu akce a analýzy zdroje. Další informace o nich [Refactoring](~/refactoring.md) článku.
+Visual Studio pro Mac nabízí dva způsoby užitečné Refaktorovat kódu: kontextu akce a analýzy zdroje. Další informace o nich [Refactoring](refactoring.md) článku.
 
 ## <a name="debugging"></a>Ladění
 
-Visual Studio pro Mac má nativní ladicí program povolení ladění podporu pro aplikace Xamarin.iOS, Xamarin.Mac a Xamarin.Android. Visual Studio pro Mac používá Mono logicky ladicího programu, které je implementované do Mono modulu runtime, což IDE k ladění spravovaného kódu pro všechny platformy. Další informace o ladění webu [ladění](~/debugging.md) článku.
+Visual Studio pro Mac má nativní ladicí program povolení ladění podporu pro aplikace Xamarin.iOS, Xamarin.Mac a Xamarin.Android. Visual Studio pro Mac používá Mono logicky ladicího programu, které je implementované do Mono modulu runtime, což IDE k ladění spravovaného kódu pro všechny platformy. Další informace o ladění webu [ladění](debugging.md) článku.
 
 Ladicí program obsahuje bohatou vizualizérech pro speciální typy například řetězce, barvy, adresy URL, jakož i velikostí, souřadnice a Bézierových křivek.
 
-Další informace o vizualizaci dat ladicího programu, přejděte [vizualizaci dat](~/data-visualizations.md) článku.
+Další informace o vizualizaci dat ladicího programu, přejděte [vizualizaci dat](data-visualizations.md) článku.
 
 ## <a name="version-control"></a>Správa verzí
 
@@ -100,4 +100,4 @@ Soubory s nepotvrzené změnit mají poznámky na jejich ikony v podokně řeše
 
 ![Nepotvrzené soubory v řešení odsazení](media/ide-tour-image23.png)
 
-Další informace o použití správy verzí v sadě Visual Studio, najdete v článku [verzí](~/version-control.md) článku.
+Další informace o použití správy verzí v sadě Visual Studio, najdete v článku [verzí](version-control.md) článku.
