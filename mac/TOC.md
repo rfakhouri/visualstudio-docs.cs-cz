@@ -66,4 +66,5 @@
 # [Usnadnění](accessibility.md)
 
 # [Odstraňování potíží](troubleshooting.md)
+## [Program Zlepšování softwaru a služeb na základě zkušeností uživatelů](visual-studio-experience-improvement-program.md)
 ## [Nahlášení problému](report-a-problem.md)
