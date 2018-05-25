@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c2bb1bcc13ad908b69a847662178cd6cd13aeec6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 650478a92ea2dabc9aeef239a68bdff428429cd7
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Postupy: Zkontrolujte modelu obsahu uzlů pomocí zobrazení modelu obsahu
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Postupy: Zkontrolujte modelu obsahu uzlů pomocí modelu zobrazení obsahu
 
 Toto téma popisuje, jak prozkoumat pomocí uzlů [zobrazení obsahu modelu](../xml-tools/content-model-view.md).
 
@@ -26,7 +26,7 @@ Toto téma popisuje, jak prozkoumat pomocí uzlů [zobrazení obsahu modelu](../
 
 2.  Klikněte na tlačítko **pomocí editoru XML k zobrazení a úpravě podkladový soubor schématu XML** zobrazení spustit.
 
-3.  Zkopírujte schématu XML ukázkový kód z [schématu XML ukázka: schéma pořadí nákupu](../xml-tools/sample-xsd-file-purchase-order-schema.md) a vložte jej nahradit kód, který byl přidán nový soubor XSD ve výchozím nastavení.
+3.  Zkopírujte schématu XML ukázkový kód z [schématu ukázka XML: zakoupit pořadí schématu](../xml-tools/sample-xsd-file-purchase-order-schema.md) a vložte jej nahradit kód, který byl přidán nový soubor XSD ve výchozím nastavení.
 
 4.  Vyberte `purchaseOrder` element v Průzkumníku schématu kliknutím pravým tlačítkem myši `purchaseOrder` element v editoru XML a výběrem **zobrazit v Průzkumníku XML**.
 

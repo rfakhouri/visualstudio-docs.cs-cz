@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0937af4a697b3cf789738d06b5e2ad0282a7d0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Obecné vzory pro vícevláknové aplikace s nevhodným chováním
 
@@ -31,7 +31,7 @@ Někdy parallelized aplikace stubbornly bude pokračovat v provádění sériov�
 
 Jak je znázorněno na následujícím obrázku, vizualizér souběžnosti můžete také zveřejnit tento příznak v zobrazení využití procesoru, kde, bez ohledu na přítomnost více vláken, aplikace využívá jenom jednoho logického jádra.
 
-Další informace najdete v tématu "Výkonu vzor 1: identifikace zámků" v Hazim Shafi [paralelní výkon nástroje pro systém Windows](http://go.microsoft.com/fwlink/?LinkID=160569) příspěvku na blogu webu MSDN.
+Další informace najdete v tématu "výkonu vzor 1: identifikace zámků" v Hazim Shafi [paralelní nástroje pro sledování výkonu pro systém Windows](http://go.microsoft.com/fwlink/?LinkID=160569) příspěvku na blogu webu MSDN.
 
 ![Zamknout kolizí](../profiling/media/lockcontention_2.png "LockContention_2")
 

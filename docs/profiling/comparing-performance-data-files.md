@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b56982cdef9c27beb4e5aeb82fa9d9741e87fbd7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5d13c05601d3e4e4b520de687216fccefaec4115
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="comparing-performance-data-files"></a>Porovnávání souborů dat výkonu
+# <a name="compare-performance-data-files"></a>Porovnání výkonu datových souborů
 Profilace funkce porovnání souborů nástrojů data vám umožní vybrat dvě souborů sestav (. / Nebo VSP. VSPS) souborů a vygenerovat sestavu, která zobrazuje rozdíly, výkon regresí a vylepšení, které došlo k jedné relace profilování na druhý.  
   
  Sestavy porovnání datových souborů z [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci porovná výsledky analýzu v jednom souboru profilování data na výsledky analýzy standardních hodnot v jiném datovém souboru. Oba soubory dat musí byl vytvořen pomocí stejné metody profilování. Sestava analyzovaných porovnání se uloží jako soubor .vsps.  
@@ -33,4 +33,4 @@ Profilace funkce porovnání souborů nástrojů data vám umožní vybrat dvě 
  Prahovou hodnotu lze nastavit pro snížení šumu a filtrovat všechna data v tabulce zobrazení porovnání řádků, které nebyly změněny o určenou hodnotu.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
- [Postupy: porovnání výkonu datových souborů](../profiling/how-to-compare-performance-data-files.md)
+ [Postupy: Porovnání datových souborů výkonu](../profiling/how-to-compare-performance-data-files.md)

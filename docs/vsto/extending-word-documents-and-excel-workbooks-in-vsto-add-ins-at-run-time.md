@@ -21,11 +21,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3dd4bd7c2b473b4bb48481fee6a991dde748eb26
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7b7461ba184850ba53099327fdad44e3103dcd87
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Rozšíření dokumentů aplikace Word a sešitů aplikace Excel v doplňcích VSTO za běhu
   Doplňku VSTO můžete použít k přizpůsobení dokumentů aplikace Word a sešitů aplikace Excel následujícími způsoby:  
@@ -36,9 +36,9 @@ ms.lasthandoff: 05/22/2018
   
 -   Přístup úrovni aplikace události, které jsou vystavené Word a Excel pro konkrétní dokumentům, sešitům a listů.  
   
- Chcete-li používat tuto funkci, vygenerovat objektu v době běhu, který rozšiřuje dokumentu nebo sešitu.  
+ Chcete-li používat tuto funkci, generovat objekt za běhu, který rozšiřuje dokumentu nebo sešitu.  
   
- **Platí pro:** informace v tomto tématu se vztahují na projekty doplňku VSTO pro následující aplikace: Excel a Word. Další informace najdete v tématu [dostupné funkce podle aplikace a projekt typu Office](../vsto/features-available-by-office-application-and-project-type.md).  
+ **Platí pro:** informace v tomto článku se vztahují na projekty doplňku VSTO pro následující aplikace: Excel a Word. Další informace najdete v tématu [dostupné funkce podle aplikace a projekt typu Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
 ## <a name="generate-extended-objects-in-vsto-add-ins"></a>Generování rozšířených objektů v doplňků VSTO  
  *Rozšířené objekty* jsou instancemi typů poskytované sady Visual Studio Tools pro systém Office runtime, které zajišťují funkce objekty, které nativně existovat v objektové modely Word či Excel (nazývá *nativních objektů Office*). Chcete-li vygenerovat rozšířené objektu pro objekt Word či Excel, použijte `GetVstoObject` metoda. Při prvním volání `GetVstoObject` metodu pro zadaný Word či Excel objektu, vrátí nový objekt, který rozšiřuje zadaný objekt. Pokaždé, když volat metodu a zadejte stejné aplikace Word nebo v aplikaci Excel na objekt, vrátí stejný objekt rozšířené.  
@@ -76,7 +76,7 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]  
   
 ### <a name="generate-listobject-host-controls"></a>Generovat ovládacích prvků ListObject hostitele  
- Při použití `GetVstoObject` metoda rozšířit <xref:Microsoft.Office.Interop.Excel.ListObject>, vrátí metoda <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Obsahuje všechny funkce původního <xref:Microsoft.Office.Interop.Excel.ListObject>, ale má také další funkce, například možnost bylo vázané na data pomocí vazby modelu Windows Forms data. Další informace najdete v tématu [ListObject – ovládací prvek](../vsto/listobject-control.md).  
+ Při použití `GetVstoObject` metoda rozšířit <xref:Microsoft.Office.Interop.Excel.ListObject>, vrátí metoda <xref:Microsoft.Office.Tools.Excel.ListObject>. <xref:Microsoft.Office.Tools.Excel.ListObject> Obsahuje všechny funkce původní <xref:Microsoft.Office.Interop.Excel.ListObject>. Také obsahuje další funkce a mohou být vázány na data pomocí vazby modelu Windows Forms data. Další informace najdete v tématu [ListObject – ovládací prvek](../vsto/listobject-control.md).  
   
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>Generovat hostitelského ovládacího prvku pro ListObject  
   
@@ -86,9 +86,9 @@ ms.lasthandoff: 05/22/2018
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]  
   
 ###  <a name="AddControls"></a> Přidání spravovaných ovládacích prvků do dokumentů a listů  
- Po vygenerování <xref:Microsoft.Office.Tools.Word.Document> nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>, můžete přidat ovládací prvky v dokumentu nebo listu, která tyto rozšířené objekty představují. K tomu použít vlastnost ovládacích prvků <xref:Microsoft.Office.Tools.Word.Document> nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ Po vygenerování <xref:Microsoft.Office.Tools.Word.Document> nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>, můžete přidat ovládací prvky v dokumentu nebo listu, která tyto rozšířené objekty představují. K přidávání ovládacích prvků, použijte `Controls` vlastnost <xref:Microsoft.Office.Tools.Word.Document> nebo <xref:Microsoft.Office.Tools.Excel.Worksheet>. Další informace najdete v tématu [přidání ovládacích prvků do dokumentů Office za běhu](../vsto/adding-controls-to-office-documents-at-run-time.md).  
   
- Můžete přidat ovládací prvky Windows Forms nebo *hostování ovládacích prvků*. Řízení hostitele je ovládací prvek poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] který zabalí odpovídající ovládacího prvku v Word či Excel primární spolupracující sestavení. Řízení hostitele zpřístupní všechny chování podkladového objektu nativní Office, ale také vyvolá události a mohou být vázány na data pomocí vazby modelu Windows Forms data. Další informace najdete v tématu [hostitele položky a hostitelem Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
+ Můžete přidat ovládací prvky Windows Forms nebo *hostování ovládacích prvků*. Řízení hostitele je ovládací prvek poskytované [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] který zabalí odpovídající ovládacího prvku v Word či Excel primární spolupracující sestavení. Řízení hostitele zpřístupní všechny chování podkladového objektu nativní Office. Také vyvolá události a mohou být vázány na data pomocí vazby modelu Windows Forms data. Další informace najdete v tématu [hostitele položky a hostitelem Přehled ovládacích prvků](../vsto/host-items-and-host-controls-overview.md).  
   
 > [!NOTE]  
 >  Nelze přidat <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> ovládacího prvku do listu, nebo <xref:Microsoft.Office.Tools.Word.XMLNode> nebo <xref:Microsoft.Office.Tools.Word.XMLNodes> ovládacího prvku do dokumentu pomocí doplňku VSTO. Tyto hostitelské ovládací prvky nelze přidat prostřednictvím kódu programu. Další informace najdete v tématu [programová omezení hostitelských položek a hostitelských ovládacích prvků](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).  
@@ -102,25 +102,25 @@ ms.lasthandoff: 05/22/2018
  Použijete-li v doplňku VSTO pouze nativní objektů Office, musíte zpracování těchto událostí na úrovni aplikace a pak zapsat další kód k určení, zda dokument, který vyvolá událost, je ten, který jste upravili. Hostitelské položky nabízí tyto události na úrovni dokumentu, takže je snazší zpracování událostí pro konkrétní dokument. Můžete vygenerovat položku hostitele a pak zpracovat událost pro tuto položku hostitele.  
   
 ### <a name="example-that-uses-native-word-objects"></a>Příklad, který používá nativních objektů aplikace Word  
- Následující příklad kódu ukazuje, jak zpracovat události úrovni aplikace pro dokumenty aplikace Word. `CreateDocument` Metoda vytvoří nový dokument a pak definuje <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> obslužné rutiny události, které zabrání ukládání tohoto dokumentu. Protože to je na úrovni aplikace událost, která se vyvolá pro <xref:Microsoft.Office.Interop.Word.Application> objektu, obslužné rutiny události musí porovnat `Doc` parametr s `document1` objekt, který chcete zjistit, jestli `document1` představuje uložený dokument.  
+ Následující příklad kódu ukazuje, jak zpracovat události úrovni aplikace pro dokumenty aplikace Word. `CreateDocument` Metoda vytvoří nový dokument a pak definuje <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> obslužné rutiny události, které zabrání ukládání tohoto dokumentu. Událost je na úrovni aplikace událost, která se vyvolá pro <xref:Microsoft.Office.Interop.Word.Application> objekt a obslužné rutiny události musí porovnat `Doc` parametr s `document1` objekt, který chcete zjistit, jestli `document1` představuje uložený dokument.  
   
- [!code-vb[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
+ [!code-vb[Trin_WordAddInDynamicControls #12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
  [!code-csharp[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#12)]  
   
 ### <a name="examples-that-use-a-host-item"></a>Příklady, které používají položku hostitele  
- Následující příklady kódu zjednodušit tento proces tak, že zpracování <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> události <xref:Microsoft.Office.Tools.Word.Document> hostitelská položka. `CreateDocument2` Metoda v těchto příkladech generovat <xref:Microsoft.Office.Tools.Word.Document> který rozšiřuje `document2` definuje objekt a poté <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> obslužné rutiny události, který brání dokument uloží. Protože této obslužné rutiny události se nazývá pouze tehdy, když `document2` je uložen, události obslužná rutina může uložení zrušit akci bez jakékoli další pracuje ověření, který dokument byl uložen.  
+ Následující příklady kódu zjednodušit tento proces tak, že zpracování <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> události <xref:Microsoft.Office.Tools.Word.Document> hostitelská položka. `CreateDocument2` Metoda v těchto příkladech generuje <xref:Microsoft.Office.Tools.Word.Document> který rozšiřuje `document2` definuje objekt a poté <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> obslužné rutiny události, který brání dokument uloží. Obslužné rutiny události se nazývá pouze tehdy, když `document2` je uloženo a uložení můžete zrušit akci bez jakékoli další pracuje ověření, který dokument byl uložen.  
   
  Následující příklad kódu ukazuje tuto úlohu.  
   
- [!code-vb[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
+ [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]  
   
 ##  <a name="HasVstoObject"></a> Určení, zda bylo rozšířeno objekt sady Office  
- Chcete-li zjistit, zda objekt rozšířené už je vygenerovaný pro konkrétní objekt nativní Office, použijte `HasVstoObject` metoda. Tato metoda vrátí hodnotu **true** Jestliže rozšířené objekt již byl vygenerován; jinak vrátí **false**.  
+ Chcete-li zjistit, zda objekt rozšířené už je vygenerovaný pro konkrétní objekt nativní Office, použijte `HasVstoObject` metoda. Tato metoda vrátí hodnotu **true** Jestliže rozšířené objekt již byl vygenerován.  
   
  Použití `Globals.Factory.HasVstoMethod` metoda. Předat do nativní Word či Excel objektu, například <xref:Microsoft.Office.Interop.Word.Document> nebo <xref:Microsoft.Office.Interop.Excel.Worksheet>, který chcete testovat pro objekt rozšířené.  
   
- `HasVstoObject` Metoda je užitečná, pokud chcete spustit kód jenom v případě, že zadaný objekt Office má rozšířené objekt. Například, pokud máte Add-in VSTO slova, která zpracovává <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> je uložen událost se má odebrat z dokumentu před ním spravované ovládací prvky, můžete použít `HasVstoObject` metoda k určení, zda bylo rozšířeno dokumentu. Pokud dokument nebylo rozšířeno, nemůže obsahovat spravované ovládací prvky, a proto obslužné rutiny události můžete jednoduše vraťte zpět bez pokusu o vyčištění ovládacích prvků na dokumentu.  
+ `HasVstoObject` Metoda je užitečná, pokud chcete spustit kód jenom v případě, že zadaný objekt Office má rozšířené objekt. Například, pokud máte Add-in VSTO slova, která zpracovává <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> událostí, které chcete odebrat z dokumentu spravované ovládací prvky, před uložením, použijte `HasVstoObject` metoda k určení, zda bylo rozšířeno dokumentu. Pokud dokument nebylo rozšířeno, nemůže mít spravovaných ovládacích prvků a obslužné rutiny události může vrátit bez pokusu o vyčištění ovládacích prvků na dokumentu.  
   
 ## <a name="see-also"></a>Viz také  
  [Program doplňků VSTO](../vsto/programming-vsto-add-ins.md)   

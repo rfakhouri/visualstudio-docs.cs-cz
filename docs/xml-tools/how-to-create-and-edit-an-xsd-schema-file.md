@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 298cb342b83dd512f591e03a6922a099c127cb3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db635a9bc18a00bcb723a7bf8b66a557434e3e9a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-create-and-edit-an-xsd-schema-file"></a>Postupy: vytvoření a úprava souboru schématu XSD
 
@@ -22,11 +22,11 @@ Toto téma popisuje postup vytvoření nového souboru schématu XML (XSD) a pak
 
 ## <a name="to-create-a-new-xml-schema-file"></a>Chcete-li vytvořit nový soubor schématu XML
 
-1. V sadě Visual Studio, otevřete **soubor** nabídku a vyberte **nový** > **soubor**. Nebo použijte klávesovou zkratku CTRL + N.
+1. V sadě Visual Studio, otevřete **soubor** nabídku a vyberte **nový** > **soubor**. Nebo použijte **Ctrl**+**N** klávesové zkratky.
 
 2. V **nový soubor** dialogové okno, vyberte **schématu XML** a pak vyberte **otevřete**.
 
-   K vytvoření nového souboru. V sadě Visual Studio se zobrazí zobrazení Start a prázdné okno Průzkumníka schématu XML.
+   K vytvoření nového souboru. Spuštění zobrazení a prázdnou **Explorer schématu XML** okno se zobrazí v sadě Visual Studio.
 
 ## <a name="to-edit-a-file"></a>Chcete-li upravit soubor
 
@@ -36,7 +36,7 @@ Toto téma popisuje postup vytvoření nového souboru schématu XML (XSD) a pak
 
 2. Zkopírujte schématu XML ukázkový kód z [nákupu pořadí schématu](../xml-tools/sample-xsd-file-simple-schema.md) a vložte jej nahradit kód, který byl přidán nový soubor XSD ve výchozím nastavení.
 
-   Průzkumník schématu XML je aktualizován nové sady schématu.
+   **Explorer schématu XML** sadou pro nové schéma se aktualizuje.
 
 ## <a name="see-also"></a>Viz také
 

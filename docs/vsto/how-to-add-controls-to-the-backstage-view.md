@@ -23,14 +23,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d72cd3371a1465faa1dd505f71c5fe8c9e2e181d
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6b775c7613b8cc0953e419b2546ec017c96e8454
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Postupy: Přidání ovládacích prvků do zobrazení Backstage
-  Návrhář pásu karet můžete použít k přidávání ovládacích prvků do nabídky, které se otevře po kliknutí na tlačítko **soubor** kartě při spuštění aplikace, ovládací prvky, které přidáte do **soubor** zobrazí karta skupinu s názvem  **Doplňky**.  
+  Návrhář pásu karet můžete použít k přidávání ovládacích prvků do nabídky, které se otevře po kliknutí **souboru** kartě. Při spuštění aplikace, ovládací prvky, které přidáte do **soubor** zobrazí karta skupinu s názvem **doplňky**.  
   
  Před nebo po integrované ovládací prvky nelze umisťování ovládacích prvků pomocí Návrháře pásu karet v sadě Visual Studio. Předdefinované řízení je ovládací prvek, který se již nachází v zobrazení Backstage. Pokud chcete umisťování ovládacích prvků před nebo po integrované ovládací prvky, musíte použít XML pásu karet. Další informace o **pásu karet (XML)**, najdete v části [XML karet](../vsto/ribbon-xml.md). Další informace o přizpůsobení zobrazení Backstage najdete v tématu [Úvod do zobrazení Office 2010 Backstage pro vývojáře](http://go.microsoft.com/fwlink/?LinkId=182189) a [přizpůsobit zobrazení Office 2010 Backstage pro vývojáře](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 05/17/2018
  [Přehled pásu karet](../vsto/ribbon-overview.md)   
  [Návrhář pásu karet](../vsto/ribbon-designer.md)   
  [Kódu XML pásu karet](../vsto/ribbon-xml.md)   
- [Postupy: Začínáme s přizpůsobením pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md)   
+ [Postupy: Začínáme přizpůsobení pásu karet](../vsto/how-to-get-started-customizing-the-ribbon.md)   
  [Návod: Vytvoření vlastní karty pomocí Návrháře pásu karet](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)  
   
   

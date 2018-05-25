@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 5f731e5d40205776682e706aa4e32d988a76f0f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b3cfe8d0af7bebac5bce48e82b4237de071a41d8
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Rychlý úvod: Ladění ASP.NET pomocí ladicího programu sady Visual Studio
 
@@ -41,7 +41,7 @@ Ladicí program Visual Studio poskytuje mnoho výkonné funkce, které vám pom�
 
 1. V Průzkumníku řešení otevřete About.cshtml.cs (v rámci Pages/About.cshtml) a nahraďte následujícím kódem
 
-    ```c#
+    ```csharp
     public void OnGet()
     {
         Message = "Your application description page.";
@@ -50,7 +50,7 @@ Ladicí program Visual Studio poskytuje mnoho výkonné funkce, které vám pom�
 
     s tímto kódem:
 
-    ```c#
+    ```csharp
     public void OnGet()
     {
         LinkedList<int> result = doWork();

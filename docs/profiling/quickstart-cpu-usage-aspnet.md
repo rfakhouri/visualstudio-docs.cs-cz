@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3309435600991db85540c95dc969206619438e51
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Rychlý úvod: Analyzujte data o využití procesoru v aplikaci Visual Studio (ASP.NET)
 
@@ -49,13 +49,13 @@ Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat r
 
 1. V Průzkumníku řešení otevřete `Models/Data.cs` a přidejte následující `using` příkaz do horní části souboru:
 
-    ```cs
+    ```csharp
     using System.Threading;
     ```
 
 1. V Data.cs nahraďte následujícím kódem:
 
-    ```cs
+    ```csharp
     public class Data
     {
     }
@@ -63,7 +63,7 @@ Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat r
 
     s tímto kódem:
 
-    ```cs
+    ```csharp
     public class ServerClass
     {
         const int MIN_ITERATIONS = int.MaxValue / 1000;
@@ -133,7 +133,7 @@ Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat r
 
 1. V Průzkumníku řešení otevřete Controller/HomeControllers.cs a nahraďte následujícím kódem:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         ViewBag.Message = "Your application description page.";
@@ -144,7 +144,7 @@ Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat r
 
     s tímto kódem:
 
-    ```cs
+    ```csharp
     public ActionResult About()
     {
         Models.Simple s = new Models.Simple();

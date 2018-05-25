@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 3fd57edf89210370fa05247afc55569c4401baf8
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku Vizualizéru souběžnosti (CVCollectionCmd)
+# <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Nástroj příkazového řádku ve Vizualizéru souběžnosti (CVCollectionCmd)
 Chcete-li shromažďovat trasování z příkazového řádku, takže lze zobrazit v Concurrency Visualizer pro sadu Visual Studio můžete použít nástroj příkazového řádku Vizualizéru souběžnosti (CVCollectionCmd.exe). Nástroje lze použít v počítačích, které nemají nainstalovanou sadu Visual Studio.  
   
 > [!NOTE]
->  Vizualizér souběžnosti spouštění v sadě Visual Studio 2013, je volitelné rozšíření. (Dříve se měl byl zahrnut v sadě Visual Studio.) Si můžete stáhnout [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) z webu Stažení softwaru.  
+>  Vizualizér souběžnosti spouštění v sadě Visual Studio 2013, je volitelné rozšíření. (Dříve se měl byl zahrnut v sadě Visual Studio.) Si můžete stáhnout [vizualizér souběžnosti kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) z webu Stažení softwaru.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Stáhněte si nástroj příkazového řádku Vizualizéru souběžnosti  
  Chcete-li stáhnout a nainstalovat nástroj příkazového řádku, přejděte na [Concurrency Visualizer kolekce nástrojů pro Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103) a postupujte podle pokynů. Ve výchozím nastavení je CVCollectionCmd.exe nainstalován v %ProgramFiles%\Microsoft Concurrency Visualizer kolekce Tools\ (% ProgramFiles (x86) %\Microsoft Concurrency Visualizer kolekce Tools\ na x64 počítače).  
@@ -51,7 +51,7 @@ Chcete-li shromažďovat trasování z příkazového řádku, takže lze zobraz
 |Proces|Určuje proces pro připojení k provedení příkazu připojit nebo proces v trasování pro analýzu, když se spustí příkaz analyzovat. Platí pro příkazy připojit a analyzovat.|Název procesu nebo PID.|Žádné|  
 |Konfigurace|Určuje cestu konfiguračního souboru, pokud chcete nastavení kolekce než výchozí hodnoty.   Platí pro spuštění, připojit a analyzovat příkazy.|Cesta k adresáři nebo relativní cesta ke konfiguračnímu souboru XML.|Žádné|  
   
-## <a name="customizing-configuration-settings"></a>Přizpůsobení nastavení konfigurace  
+## <a name="customize-configuration-settings"></a>Přizpůsobení nastavení konfigurace  
  Pokud používáte CVCollectionCmd shromažďovat trasování a chcete přizpůsobit nastavení kolekce a potom zadejte je pomocí konfiguračního souboru.  
   
 > [!NOTE]

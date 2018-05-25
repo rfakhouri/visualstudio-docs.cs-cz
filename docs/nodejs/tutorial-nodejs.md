@@ -13,11 +13,11 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 207d5941527d51c18c6690166ef751b4782b481c
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Kurz: Vytvoření Node.js a expresní aplikaci v sadě Visual Studio
 V tomto kurzu pro vývoj sady Visual Studio pomocí Node.js a Express vytvořit jednoduchou webovou aplikaci Node.js, přidat kód, prozkoumejte některé funkce integrovaného vývojového prostředí a spuštění aplikace. Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
@@ -49,9 +49,9 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
 1. Otevřete Visual Studio 2017.
 
-1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu...** .
+1. V horní nabídce vyberte příkaz **soubor** > **nový** > **projektu**.
 
-1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**a potom zvolte **Node.js**. V prostředním podokně vyberte **základní Azure Node.js Express 4 aplikační**a potom zvolte **OK**.
+1. V **nový projekt** dialogové okno, v levém podokně rozbalte **JavaScript**a potom zvolte **Node.js**. V prostředním podokně vyberte **základní Azure Node.js Express 4 aplikační** a potom zvolte **OK**.
 
      Pokud nevidíte **základní Azure Node.js Express 4 aplikační** šablony projektu, je nutné nainstalovat **Node.js vývoj** zatížení první.
 
@@ -194,7 +194,7 @@ Nejdřív vytvoříte projekt Node.js webové aplikace.
 
     V **služby App Service** dialogové okno, můžete přihlásit k účtu Azure a připojit k existující předplatných Azure.
 
-1. Postupujte podle zbývajících kroků a vyberte předplatné, zvolte nebo vytvořte skupinu prostředků, zvolte nebo vytvořte roviny aplikaci služby a potom postupujte podle kroků při zobrazení výzvy k publikování v Azure. Další podrobné pokyny naleznete v tématu [publikovat na webu Azure pomocí nástroje nasazení webu](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy).
+1. Postupujte podle zbývajících kroků a vyberte předplatné, zvolte nebo vytvořte skupinu prostředků, zvolte nebo vytvořte roviny aplikaci služby a potom postupujte podle kroků při zobrazení výzvy k publikování v Azure. Další podrobné pokyny naleznete v tématu [nasazení publikovat na webu Azure pomocí webových](https://github.com/Microsoft/nodejstools/wiki/Publish-to-Azure-Website-using-Web-Deploy).
 
 1. **Výstup** okně se zobrazí průběh na nasazení do Azure.
 
@@ -209,4 +209,4 @@ Blahopřejeme k dokončení tohoto kurzu!
 V tomto kurzu jste zjistili, jak pro vytvoření a spuštění aplikace Node.js pomocí expresního a stiskněte tlačítko zarážku používání ladicího programu.
 
 > [!div class="nextstepaction"]
-> [Node.js Tools for Visual Studio](https://github.com/Microsoft/nodejstools)
+> [Node.js tools pro Visual Studio](https://github.com/Microsoft/nodejstools)

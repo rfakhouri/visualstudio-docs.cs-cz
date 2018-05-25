@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec882cc5797eb99370beac5e28b87ca0b981cf2a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 524f6f575725fed754c3873af8a9ff62a3c3686f
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="understanding-instrumentation-data-values"></a>Porozumění hodnotám dat instrumentace
+# <a name="understand-instrumentation-data-values"></a>Pochopení hodnotám dat instrumentace
 
 *Instrumentace* metoda záznamy v sadě Visual Studio profilace podrobné informace o časování pro volání funkcí, řádky a pokyny v PROFILOVANÉHO aplikaci
 
-Metoda instrumentace vloží kód na začátku a konci funkce cíl v PROFILOVANÉHO binárního souboru a před a po každém volání pomocí těchto funkcí dalších funkcí. Vložený kód zaznamenává následující:
+Metoda instrumentace vloží kód na začátku a konci funkce cíl v PROFILOVANÉHO binárního souboru a před a po každém volání pomocí těchto funkcí dalších funkcí. Vložený kód zaznamenává následující informace:
 
 - Interval mezi tato událost kolekce a předchozí.
 
@@ -98,5 +98,5 @@ Procento celkové aplikace včetně hodnoty relace profilování které byly fun
 
 ## <a name="see-also"></a>Viz také
 
-[Analýza výkonu nástrojů pro Data](../profiling/analyzing-performance-tools-data.md)  
-[Postupy: výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)
+[Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)  
+[Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)

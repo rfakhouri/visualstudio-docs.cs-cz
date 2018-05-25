@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e35baa6d6d7c5cba696ab7b5e0bb57dd722b5d7b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3754bcf87d77a3a67801ef7f9df8e07dc687b052
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-edit-xml-files"></a>Postupy: úpravy souborů XML
 
-Editor souborů XML je nové editor souborů XML. Lze použít v samostatném souboru XML nebo na soubor přidružený k projektu sady Visual Studio. Editor souborů XML je přidružen následující přípony souborů: .config, DTD, XML, XSD, .xdr, XSL, XSLT a .vssettings. Editor souborů XML je taky přiřazený další soubor jakéhokoli typu, nemá žádné konkrétní editor registrován a který obsahuje XML DTD obsahu.
+Editor souborů XML je nové editor souborů XML. Lze použít v samostatném souboru XML nebo na soubor přidružený k projektu sady Visual Studio. Editor souborů XML je přidružen následující přípony souborů: *.config*, *DTD*, *.xml*, *XSD*, *.xdr*, *XSL*, *XSLT*, a *.vssettings*. Editor souborů XML je taky přiřazený další soubor jakéhokoli typu, nemá žádné konkrétní editor registrován a který obsahuje XML DTD obsahu.
 
 > [!NOTE]
 > XHTML dokumenty jsou zpracovávány HTML Editor.
@@ -70,5 +70,5 @@ Editor souborů XML je nové editor souborů XML. Lze použít v samostatném so
 ## <a name="see-also"></a>Viz také
 
 - [Editor XML](../xml-tools/xml-editor.md)
-- [Vlastnosti dokumentu XML, okno Vlastnosti](../xml-tools/xml-document-properties-properties-window.md)
-- [Postupy: Vytvoření schématu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Vlastnosti dokumentu XML, vlastnosti – okno](../xml-tools/xml-document-properties-properties-window.md)
+- [Postupy: vytvoření schématu XML z dokumentu XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

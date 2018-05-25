@@ -18,11 +18,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4d248727c5ebe54a86c2c006ca8bdd9342e208a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a1406e687a4d84fd2d6ebe0ac7b327afa2c9fffd
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Postupy: Odkazování na název nebo umístění souboru projektu
 Můžete použít název nebo umístění projektu v souboru projektu bez nutnosti vytvářet vlastní vlastnosti. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poskytuje rezervované vlastnosti, které odkazují na název souboru projektu a další vlastnosti související s projektem. Další informace o rezervované vlastnosti najdete v tématu [MSBuild vyhrazené a známé vlastnosti](../msbuild/msbuild-reserved-and-well-known-properties.md).  
@@ -49,7 +49,7 @@ Můžete použít název nebo umístění projektu v souboru projektu bez nutnos
  Následující příklad souboru projekt odkazuje na název projektu jako rezervované vlastnosti a zadejte název pro výstup.  
   
 ```xml  
-<Project xmlns="http://scheams.microsoft.com/developer/msbuild/2003"   
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"   
     DefaultTargets = "Compile">  
   
     <!-- Specify the inputs -->  

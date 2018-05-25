@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: edda7ab4875381b6213e893169fc8bc837427757
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d835a8592108b549a109f7bb7e128a8ae5b01611
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Postupy: Výběr schémat XML pro použití
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Postupy: Výběr schémat XML používat
 
-Nabízí XML Editor umístěný v adresáři %InstallDir%\Xml\Schemas mezipaměti schématu. Mezipaměti schématu zahrnuje dobře známými schématy XML, které se používají pro ověřování dokumentu IntelliSense a XML.
+Nabízí XML Editor nachází v mezipaměti schématu *%InstallDir%\Xml\Schemas* adresáře. Mezipaměti schématu zahrnuje dobře známými schématy XML, které se používají pro ověřování dokumentu IntelliSense a XML.
 
 **Schémata** vlastnost dokumentu se používá k vyberte jeden nebo více schématu XML schéma definition language (XSD). použít. Umožní vám vybrat schémata z mezipaměti schématu, nebo zadejte schéma, které se nenachází v mezipaměti.
 
-Schémata, které zadáte se ukládají do skrytého souboru (.suo), možnosti uživatele řešení spolu s všechny ostatní vlastnosti dokumentu XML. V důsledku toho nebude muset zadávat znovu tyto hodnoty při příštím otevření řešení.
+Schémata zadáte se ukládají do skrytého souboru možnosti uživatele řešení (. *suo –*), spolu s všechny ostatní XML vlastností dokumentu. V důsledku toho nebude muset zadávat znovu tyto hodnoty při příštím otevření řešení.
 
 > [!NOTE]
 > Editor můžete ověřit pomocí vložené schéma nebo schéma. odkazuje `xsd:schemaLocation` atribut. Další informace najdete v tématu [ověření dokumentu XML](../xml-tools/xml-document-validation.md).
@@ -33,7 +33,7 @@ Schémata, které zadáte se ukládají do skrytého souboru (.suo), možnosti u
 
 2.  V okně vlastností dokumentu klikněte na tlačítko **schémata** pole.
 
-     **Schémat XML** se zobrazí dialogové okno. Dialogové okno obsahuje seznam všech schémata s příponou XSD v mezipaměti schématu (včetně schémata odkaz v souboru catalog.xml), a také žádné schéma, který je v aktuálním řešení, otevřete v sadě Visual Studio, kterou se odkazuje v `xsd:schemaLocation` atribut, nebo je odkazované v **schémata** vlastnost.
+     **Schémat XML** se zobrazí dialogové okno. Dialogové okno obsahuje seznam všech schémata s. *xsd* rozšíření v mezipaměti schématu (včetně schémata v odkazuje *catalog.xml* soubor) a také žádné schéma, který se v aktuálním řešení, otevřete v sadě Visual Studio, odkazuje v `xsd:schemaLocation` atribut, nebo v odkazuje **schémata** vlastnost.
 
 3.  Vyberte schémata k ověření pomocí jedné z následujících akcí:
 
@@ -74,6 +74,6 @@ Schémata, které zadáte se ukládají do skrytého souboru (.suo), možnosti u
 
 ## <a name="see-also"></a>Viz také
 
-- [Mezipaměť schémat](../xml-tools/schema-cache.md)
-- [Dialogové okno Schémata XML](../xml-tools/xml-schemas-dialog-box.md)
+- [Mezipaměti schématu](../xml-tools/schema-cache.md)
+- [Dialogové okno schémat XML](../xml-tools/xml-schemas-dialog-box.md)
 - [Editor XML](../xml-tools/xml-editor.md)

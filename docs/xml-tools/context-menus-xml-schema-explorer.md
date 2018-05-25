@@ -10,17 +10,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f128968d810120c40b797715bd0df325116414
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: faf28fc44acd530cbc379c4a400c3488f98405ea
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Kontextové nabídky (Explorer schématu XML)
 
 Následující položky kontextové nabídky se používají k provádění schématu konkrétní hledání a dalších operací.
 
-## <a name="node-type-schema-set"></a>Typ uzlu: Schématu sady
+## <a name="node-type-schema-set"></a>Typ uzlu: schéma nastavení
 
 Následující tabulka popisuje možnosti, které jsou dostupné pro schéma nastavte uzel.
 
@@ -76,7 +76,7 @@ Následující tabulka popisuje možnosti, které jsou dostupné pro schéma nas
 |**Zobrazit substituční skupiny oznámení**|Pro globální prvky, které jsou členy skupiny nahrazení, vyhledá a označuje všechny přímé a nepřímé oznámení pro vybraný prvek, například následující:<br /><br /> -A nahrazování head skupiny zadáno u vybraného elementu.<br />-A nahrazování head skupiny zadané v jeho element head.|
 |**Generovat ukázkovém kódu XML**|K dispozici pouze pro globální elementy. Generuje a ukázkový soubor XML pro element globální.|
 
-## <a name="node-type-global-types"></a>Typ uzlu: Globální typy
+## <a name="node-type-global-types"></a>Typ uzlu: globální typy
  Kromě možností globální uzlu popsané výše kontextové nabídky pro uzly globální typ obsahuje následující možnosti:
 
 |Možnost|Popis|
@@ -95,7 +95,7 @@ Následující tabulka popisuje možnosti, které jsou dostupné pro schéma nas
 |**Přejděte do atribut původní**|Pro atribut odkazy přejde do skutečné definice atributu.|
 |**Zobrazit všechny odkazy**|Globálními atributy, vyhledá a zvýrazňuje všechny odkazy (Další atributy, které mají `ref="selectedAttribute"`) pro vybraný atribut.|
 
-## <a name="node-type-attribute-group"></a>Typ uzlu: Skupinu atributů
+## <a name="node-type-attribute-group"></a>Typ uzlu: Skupina atributů
  Kromě možností globální uzlu popsané výše kontextové nabídky pro uzly skupiny atribut obsahuje následující možnosti:
 
 |Možnost|Popis|
@@ -104,7 +104,7 @@ Následující tabulka popisuje možnosti, které jsou dostupné pro schéma nas
 |**Zobrazit všechny členy**|Vyhledá a označuje všechny členy skupiny atributů.|
 |**Zobrazit všechny odkazy**|Vyhledá a zvýrazňuje všechny odkazy (atribut skupiny, které mají `ref="selectedAttributeGroup"`) ke skupině vybraného atributu.|
 
-## <a name="node-type-named-group"></a>Typu uzlu: Skupina s názvem
+## <a name="node-type-named-group"></a>Typ uzlu: s názvem skupiny
  Kromě možností globální uzlu popsané výše kontextové nabídky pro uzly s názvem skupiny obsahuje následující možnosti:
 
 |Možnost|Popis|
@@ -116,4 +116,4 @@ Následující tabulka popisuje možnosti, které jsou dostupné pro schéma nas
 ## <a name="see-also"></a>Viz také
 
 - [Průzkumník schémat XML](../xml-tools/xml-schema-explorer.md)
-- [Hledání v sadě schémat](../xml-tools/searching-the-schema-set.md)
+- [Hledání sadu schématu](../xml-tools/searching-the-schema-set.md)

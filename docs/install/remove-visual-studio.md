@@ -21,11 +21,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a143502c875acabca7b36bdd3070e5a441b842bd
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b32fc71efadbf319f3d713c3eaf4d86f382646a5
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remove-visual-studio"></a>Odebrání Visual Studio
 
@@ -40,7 +40,7 @@ V níže uvedených pokynů můžete spustit nástroj s přepínače příkazov�
 
 1. Ukončete instalační program sady Visual Studio.
 2. Otevřete příkazový řádek správce. Chcete-li otevřít příkazový řádek správce, postupujte takto:
-   * Na **spustit** nabídky, klikněte na tlačítko **spustit** (Start + R).
+   * Klikněte **spustit** nabídky
    * Typ **cmd**.
    * Klikněte pravým tlačítkem na **příkazového řádku**a potom klikněte na **spustit jako správce**.
 3. Zadejte úplnou cestu `InstallCleanup.exe` nástroj a předejte kteroukoli přepínač příkazového řádku požadavky. Ve výchozím nastavení cestu nástroje je následující:

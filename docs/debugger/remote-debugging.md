@@ -1,7 +1,7 @@
 ---
 title: Vzdálené ladění v sadě Visual Studio | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -20,11 +20,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 422714c1180ef94d32d8d323c796ed2c84258bf3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: db20b62c5ef409f523253c5ba19e2c68213743be
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debugging"></a>Vzdálené ladění
 Můžete ladit aplikace z Visual Studia, která byla nasazena do jiného počítače. K tomu použít vzdáleného ladicího programu sady Visual Studio.
@@ -47,22 +47,63 @@ Pokud jste právě chcete stáhnout a nainstalovat vzdáleného ladicího progra
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 
+## <a name="unblock_msvsmon"></a> Odblokování stahování nástrojů pro vzdálenou v systému Windows Server
+
+Výchozí nastavení zabezpečení v aplikaci Internet Explorer v systému Windows Server může být časově náročná součásti, jako je například nástrojů pro vzdálenou ke stažení.
+
+* Je povoleno rozšířené nastavení zabezpečení v Internet Exploreru, což brání otevření weby a přístup k prostředkům webových, pokud je výslovně povoleno na doménu obsahující prostředku (který je důvěryhodný).
+
+* V systému Windows Server 2016, výchozí nastavení v **Možnosti Internetu** > **zabezpečení** > **Internet**  >   **Vlastní úroveň** > **stáhne** také zakáže souborů stahování. Pokud chcete stáhnout nástroje pro vzdálenou přímo v systému Windows Server, je nutné povolit stažení souboru.
+
+Pokud chcete stáhnout nástroje v systému Windows Server, doporučujeme jednu z těchto možností:
+
+* Stažení nástrojů pro vzdálenou do jiného počítače, jako je například jeden spuštěné Visual Studio a poté zkopírujte *.exe* souboru do systému Windows Server.
+
+* Spuštění vzdáleného ladicího programu [ze sdílené složky](#fileshare_msvsmon) na počítači pro Visual Studio.
+
+* Stažení nástrojů pro vzdálenou přímo v systému Windows Server a přijetí výzvy k přidání důvěryhodných serverů. Moderní weby často zahrnují mnoho prostředky třetích stran, tak to může vést k velkému množství výzev. Kromě toho jakékoli přesměrovaného odkazy muset přidat ručně. Můžete přidat některé z důvěryhodných serverů před zahájením stahování. Přejděte na **Možnosti Internetu > zabezpečení > Důvěryhodné servery > lokality** a přidejte následující weby.
+
+  * visualstudio.com
+  * download.visualstudio.microsoft.com
+  * o: prázdné
+
+  Pro starší verze ladicí program na my.visualstudio.com přidejte tyto další lokality a ujistěte se, že je tento přihlášení úspěšné:
+
+  * microsoft.com
+  * go.microsoft.com
+  * download.microsoft.com
+  * My.VisualStudio.com
+  * login.microsoftonline.com
+  * Login.live.com
+  * secure.aadcdn.microsoftonline-p.com
+  * MSFT.STS.microsoft.com
+  * auth.gfx.MS
+  * app.vssps.visualstudio.com
+  * vlscppe.microsoft.com
+  * Query.prod.CMS.RT.microsoft.com
+
+    Pokud jste se rozhodli přidat tyto domény při stahování nástrojů pro vzdálenou a pak zvolte **přidat** po zobrazení výzvy.
+
+    ![Blokované obsahu dialogové okno](../debugger/media/remotedbg-blocked-content.png)
+
+    Při stahování softwaru získáte některých dalších žádostí udělení oprávnění ke spouštění různých skripty webu a prostředky. Na my.visualstudio.com doporučujeme přidat další domény a ujistěte se, že je tento přihlášení úspěšné.
+
 ### <a name="fileshare_msvsmon"></a> (Volitelné) Ke spuštění vzdáleného ladicího programu ze sdílené složky
 
-Můžete najít vzdáleného ladicího programu (**msvsmon.exe**) na počítači s Visual Studio Community, Professional nebo Enterprise již nainstalován. V některých případech je nejjednodušší způsob, jak nastavení vzdáleného ladění spuštění vzdáleného ladicího programu (msvsmon.exe) ze sdílené složky. Omezení využití najdete v části stránky nápovědy vzdáleného ladicího programu (**pomoci > využití** v vzdáleného ladicího programu).
+Můžete najít vzdáleného ladicího programu (*msvsmon.exe*) na počítači s Visual Studio Community, Professional nebo Enterprise již nainstalován. V některých případech je nejjednodušší způsob, jak nastavení vzdáleného ladění spuštění vzdáleného ladicího programu (msvsmon.exe) ze sdílené složky. Omezení využití najdete v části stránky nápovědy vzdáleného ladicího programu (**pomoci > využití** v vzdáleného ladicího programu).
 
-1. Najít **msvsmon.exe** v adresáři odpovídající vaší verzí sady Visual Studio. Pro Visual Studio Enterprise 2017:
+1. Najít *msvsmon.exe* v adresáři odpovídající vaší verzí sady Visual Studio. Pro Visual Studio Enterprise 2017:
 
-      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe**
+      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
       
-      **Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe**
+      *Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
 
 2. Sdílené složky **vzdáleného ladicího programu** složky v počítači, Visual Studio.
 
-3. Na vzdáleném počítači, spusťte **msvsmon.exe**. Postupujte podle [pokyny](#bkmk_setup).
+3. Na vzdáleném počítači, spusťte *msvsmon.exe*. Postupujte podle [pokyny](#bkmk_setup).
 
 > [!TIP] 
-> Instalace pomocí příkazového řádku a odkaz na příkazový řádek najdete v tématu na stránce nápovědy pro **msvsmon.exe** zadáním ``msvsmon.exe /?`` v příkazovém řádku na počítači s nainstalovanou sadu Visual Studio (nebo na **pomoci > využití**v vzdáleného ladicího programu).
+> Instalace pomocí příkazového řádku a odkaz na příkazový řádek najdete v tématu na stránce nápovědy pro *msvsmon.exe* zadáním ``msvsmon.exe /?`` v příkazovém řádku na počítači s nainstalovanou sadu Visual Studio (nebo na **pomoci > využití**v vzdáleného ladicího programu).
   
 ## <a name="requirements_msvsmon"></a> Požadavky
 

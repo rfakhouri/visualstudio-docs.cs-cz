@@ -10,15 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f598f01116d7ce2aec5759c411e456083f6932b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ac437bbbe876d81acc917f011a3051c9c264b6a
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Postupy: generování fragmentu kódu XML z schématu XML
 
-Editor souborů XML má možnost k vygenerování XML fragmenty ze schématu schématu XML definition language (XSD). Například jako vytváření souboru XML, zatímco umístěný vedle názvu elementu, stisknete klávesu TAB k naplnění element s daty XML vygenerovat z informace o schématu pro daný element.
+Editor souborů XML má možnost k vygenerování XML fragmenty ze schématu schématu XML definition language (XSD). Například jako vytváření souboru XML, zatímco umístěný vedle názvu elementu, můžete stisknout **kartě** k naplnění element s daty XML vygenerovat z informace o schématu pro daný element.
 
 Tato funkce je dostupná u elementů jenom. Také platí následující pravidla:
 
@@ -44,7 +44,7 @@ Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Po
 
 ## <a name="example"></a>Příklad
 
- Kroky v této části ukazují, jak použijete generované schématu XML fragment kódu funkci editoru XML.
+ Kroky v této části ukazují, jak používat generované schématu XML fragment kódu funkci editoru XML.
 
 > [!NOTE]
 > Než zahájíte tyto postupy, uložte soubor schématu do místního počítače.
@@ -85,11 +85,11 @@ Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Po
 
      **Obraťte se na** přidat kořenový element.
 
-3.  Vyberte **kontaktujte** ze seznamu členů a stiskněte klávesu ENTER.
+3.  Vyberte **kontaktujte** ze seznamu členů a stiskněte klávesu **Enter**.
 
      Editor přidá počáteční značce `<Contact` a umisťuje kurzor po název elementu.
 
-4.  Stiskněte klávesu TAB pro generování kódu XML dat pro `Contact` element podle jeho informace o schématu.
+4.  Stiskněte klávesu **kartě** pro generování kódu XML dat pro `Contact` element podle jeho informace o schématu.
 
 ## <a name="input"></a>Vstup
 
@@ -157,5 +157,5 @@ Výchozí hodnoty jsou generovány a jsou uvedené jako upravitelné hodnoty. Po
 
 ## <a name="see-also"></a>Viz také
 
-- [Fragmenty XML](../xml-tools/xml-snippets.md)
-- [Postupy: Použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Fragmenty kódu XML](../xml-tools/xml-snippets.md)
+- [Postupy: použití XML fragmenty kódu](../xml-tools/how-to-use-xml-snippets.md)

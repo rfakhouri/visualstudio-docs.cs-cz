@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e844e2177d01d5b308472eae5661b25798f0838
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2cf6c17f3017bb1021423b19b32b36749fe0744d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby Azure App Service pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -37,7 +37,7 @@ Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publ
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalovanou sadu Visual Studio a **ASP.NET** a **rozhraní .NET Framework** vývoj zatížení. Pro aplikace .NET Core, musíte taky **.NET Core** zatížení.
+* Musíte mít nainstalované Visual Studio 2017 a **ASP.NET** a **rozhraní .NET Framework** vývoj zatížení. Pro aplikace .NET Core, musíte taky **.NET Core** zatížení.
 
     Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
 
@@ -92,21 +92,7 @@ Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publ
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Import nastavení publikování v sadě Visual Studio a nasazení
 
-1. V počítači, kde máte projekt ASP.NET, otevřete v sadě Visual Studio, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a zvolte **publikovat**.
-
-1. Pokud jste dříve nakonfigurovali žádné profily publikování **publikovat** podokně se zobrazí. Klikněte na tlačítko **vytvořit nový profil**.
-
-1. V **vyberte cíl publikování** dialogové okno, klikněte na tlačítko **importovat profil**.
-
-    ![Zvolte publikování](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Přejděte do umístění souboru nastavení publikování, který jste vytvořili v předchozí části.
-
-1. V **soubor nastavení publikování importu** dialogové okno, vyberte profil, který jste vytvořili v předchozí části a klikněte na tlačítko **otevřete**.
-
-1. Vyberte jednu ze dvou importované profily a klikněte na tlačítko **publikovat**.
-
-    Sada Visual Studio spustí proces nasazení a ve výstupním okně zobrazuje průběh a výsledky.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
 ## <a name="next-steps"></a>Další kroky
 

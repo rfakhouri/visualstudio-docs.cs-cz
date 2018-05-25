@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c2b87f9d1b850ce93851d78a8b43420ae473c41
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82d05e481d313a7ba9010fe253756d3f21c345e2
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="xml-editor-intellisense-features"></a>Funkce IntelliSense Editor XML
+# <a name="xml-editor-intellisense-features"></a>Funkce editoru XML IntelliSense
 
 Editor souborů XML poskytuje úplné funkce IntelliSense srovnatelná jiné editory jazyk zadaný v sadě Visual Studio. Tato část vysvětluje, jak můžete používat IntelliSense s jazyk definice schématu XML (XSD) a XSLT dokumenty.
 
@@ -80,7 +80,7 @@ Například, pokud jste vybrali `e:Book` element ze seznamu IntelliSense, kde p�
 `<e:Book xmlns:e="http://books"`
 
 ## <a name="brace-matching"></a>Související závorky
- Nabízí XML editor tak, abyste získali okamžitou zpětnou vazbu na prvky, které jste právě zavřeli zvýraznění závorek. Klávesové zkratky (CTRL +]) můžete také přejít z jednoho závorek odpovídajících složených závorek.
+ Nabízí XML editor tak, abyste získali okamžitou zpětnou vazbu na prvky, které jste právě zavřeli zvýraznění závorek. Můžete také použít klávesové zkratky (**Ctrl**+**]**) na přechod z jednoho závorek do odpovídajících složených závorek.
 
  Editor souborů XML k tomu pro následující položky:
 
@@ -98,8 +98,8 @@ Například, pokud jste vybrali `e:Book` element ze seznamu IntelliSense, kde p�
 
 -   Otvírání a zavírání uvozovky u atributů.
 
-## <a name="modifying-the-intellisense-options"></a>Úprava nastavení IntelliSense
- Ve výchozím nastavení jsou povoleny funkce IntelliSense a automatické dokončování. Můžete to však změnit změnou nastavení možnosti nástrojů.
+## <a name="modify-the-intellisense-options"></a>Změnit možnosti IntelliSense
+ Ve výchozím nastavení jsou povoleny funkce IntelliSense a automatické dokončování. Ale toto můžete změnit úpravou vaše **nástroje** > **možnosti** nastavení.
 
  **Automaticky vložit** části **různé** stránky řídí následující chování:
 
@@ -109,7 +109,7 @@ Například, pokud jste vybrali `e:Book` element ze seznamu IntelliSense, kde p�
 |Atribut uvozovky|Vloží uvozovky u hodnot atributů, když zadáte nový název atributu.|
 |Další kód|Dokončení komentáře, CDATA, DOCTYPE, pokyny pro zpracování a dalších deklarací značek.|
 
-#### <a name="to-change-the-auto-completion-behavior"></a>Chcete-li změnit nastavení automatického dokončování
+### <a name="to-change-the-auto-completion-behavior"></a>Chcete-li změnit nastavení automatického dokončování
 
 1.  Vyberte **možnosti** z **nástroje** nabídky.
 
@@ -119,6 +119,6 @@ Například, pokud jste vybrali `e:Book` element ze seznamu IntelliSense, kde p�
 
 ## <a name="see-also"></a>Viz také
 
-- [Editor XML](../xml-tools/xml-editor.md)
+- [XML editor](../xml-tools/xml-editor.md)
 - [Používání atributu IntelliSense](../ide/using-intellisense.md)
 - [Návod: Používání IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)

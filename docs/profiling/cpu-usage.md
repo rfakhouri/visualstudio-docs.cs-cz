@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: b372d3d76153b5f5c885a6987d898cf55254b413
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 Když potřebujete prozkoumat problémy s výkonem v aplikaci, je vhodné oddělení na zahájení pochopení, jak používá procesoru. **Využití procesoru** nástroj ukazuje, kde je procesoru výdaje čas provádění Visual C++, Visual C# nebo Visual Basic a kód jazyka JavaScript. Od verze Visual Studio 2015 Update 1, můžete zobrazit rozpis podle funkce využití procesoru bez opuštění ladicího programu. Můžete zapnout procesoru profilace zapnout a vypnout při ladění a zobrazit výsledky při spuštění je zastaveno, například zarážky.  
@@ -72,7 +72,7 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
 |![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Podřízené uzly metody obsahovat data jen pro volání metody nadřazené. Když **zobrazit externí kód** je zakázaná, metody aplikace může také obsahovat **[externí kód]** uzlu.|  
   
 ####  <a name="BKMK_External_Code"></a> Externí kódu  
- Externí kódu jsou funkcí v systému a framework komponenty, provedený kód napíšete. Externí kód zahrnují funkce, které spuštění a zastavení aplikace, vykreslení uživatelského rozhraní, řídit vlákna a poskytují jiných nízké úrovně služeb k aplikaci. Ve většině případů nebude zájem o externí kód, a tak využití procesoru volání stromu shromáždí externí funkce metody uživatele do jedné **[externí kód]** uzlu.  
+ Externí kódu jsou funkcí v systému a framework komponent, které se provádějí pomocí kódu, který můžete psát. Externí kód zahrnují funkce, které spuštění a zastavení aplikace, vykreslení uživatelského rozhraní, řídit vlákna a poskytují jiných nízké úrovně služeb k aplikaci. Ve většině případů nebude zájem o externí kód, a tak využití procesoru volání stromu shromáždí externí funkce metody uživatele do jedné **[externí kód]** uzlu.  
   
  Pokud chcete zobrazit cesty volání externí kódu, zvolte **zobrazit externí kód** z **filtrovat zobrazení** seznamu a potom zvolte **použít**.  
   
@@ -93,7 +93,7 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
 |**Celkové využití procesoru (%)**|![Celkový počet rovnice data %](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Procento procesoru aktivitu aplikace ve vybrané časové rozmezí, která byla použita ve volání funkce a funkce volané funkce. Všimněte si, že se to neliší od **využití procesoru** časová osa grafu, který porovnává celkovou aktivitu aplikace v časový rozsah a celkový počet dostupné kapacity procesoru.|  
 |**Vlastního procesoru (%)**|![Vlastní % rovnice](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Procento procesoru aktivitu aplikace ve vybrané časové rozmezí, která byla použita ve volání funkce, s výjimkou aktivitu funkce volané funkce.|  
 |**Celkové využití procesoru (ms)**|Počet milisekund, po stráví ve volání funkce v vybraný časový rozsah a funkce, které byly volá funkci.|  
-|**Vlastního procesoru (ms)**|Počet milisekund, po stráví ve volání funkce v vybraný časový rozsah a funkce, které byly volá funkci.|  
+|**Vlastního procesoru (ms)**|Počet milisekund, po stráví ve volání funkce v vybraný časový rozsah a funkce, které byly volá funkci, s výjimkou aktivitu funkce volané funkce.|  
 |**Modul**|Název modul, který obsahuje funkce, nebo počet modulů obsahující funkce v uzlu služby [externí kód].|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Asynchronní funkce ve stromové struktuře volání využití procesoru  

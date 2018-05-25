@@ -9,11 +9,11 @@ description: Zjistěte, jak aktivovat předplatné sady Visual Studio, které js
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: dea917758f643315b99f0ecd9c1890fd5ad32e74
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 751f2fb7931c2081be8c146b6bc3959cc60c2a85
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Jak lze aktivovat předplatné získali z Microsoft Store?
 Pokud jste zakoupili předplatné sady Visual Studio prostřednictvím Microsoft Store, kroky aktivace lze inicializovat z platebních "Potvrzovací stránku" nebo "Potvrzení e-mailu" se vám zobrazila po nákupu. 
@@ -32,7 +32,7 @@ Pokud jste zakoupili předplatné sady Visual Studio prostřednictvím Microsoft
 7. Po úspěšném přihlášení se zobrazí okno s "Aktivovat si Visual Studio předplatné".
 8. Zadejte produktu klíčových informací dostupných ze platebních "Potvrzovací stránku" nebo "Potvrzení e-mailu" a klikněte na tlačítko **aktivovat**.
 
-    ![Zadejte kód Product Key](_img/buy-retail/enter-product-key.png)
+    <img alt="Enter product key" src="_img/buy-retail/enter-product-key.png" style="border: 1px solid #CCCCCC" />
 
 9. Předplatné by teď měly být viditelné na [odběry](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) stránky a má přístup k všechny výhody předplatného. 
 

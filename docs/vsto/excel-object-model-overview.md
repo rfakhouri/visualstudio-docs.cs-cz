@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c1626b7f363c5b6d71e26d7b42d9a57d7b775ee
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f7f15cc3ce8396e4cd10a49a1427f1ba1be76b50
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="excel-object-model-overview"></a>Přehled modelu objektů aplikace Excel
   Pro vývoj řešení, které používají aplikace Microsoft Office Excel, můžete pracovat s objekty poskytované model objektů aplikace Excel. Toto téma představuje nejdůležitější objekty:  
@@ -107,7 +107,7 @@ ms.lasthandoff: 05/22/2018
 ### <a name="primary-interop-assembly-reference"></a>Odkaz sestavení primární spolupráce  
  PIA – Excel referenční dokumentaci k nástroji popisuje typy v sestavení primární spolupráce pro aplikaci Excel. Tato dokumentace je k dispozici z následujícího umístění: [odkaz na aplikaci Excel 2010 primární spolupracující sestavení](http://go.microsoft.com/fwlink/?LinkId=189585).  
   
- Další informace o návrhu PIA aplikace Excel, jako jsou rozdíly mezi třídy a rozhraní v primární a jak jsou implementované události v primární, najdete v části [přehled třídy a rozhraní v Office primární zprostředkovatel komunikace s objekty sestavení](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ Další informace o návrhu PIA aplikace Excel, jako jsou rozdíly mezi třídy a rozhraní v primární a jak jsou implementované události v primární, najdete v části [přehled třídy a rozhraní v primární spolupracující sestavení Office](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>Odkaz na objekt modelu VBA  
  Reference objektu modelu VBA dokumenty model objektů aplikace Excel, jako je zpřístupněné pro Visual Basic pro aplikace (VBA) kód. Další informace najdete v tématu [odkaz na aplikaci Excel 2010 objekt modelu](http://go.microsoft.com/fwlink/?LinkId=199768).  

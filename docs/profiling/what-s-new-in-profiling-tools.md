@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2da6c16aa0db88fefa1824d2ecabb35cc1539951
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: e53e9a29acf5258f3b225cde8211c4022b165bd7
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Co je nového v nástrojích pro profilaci v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 Nástroje pro diagnostiku zahrnují nové vizualizace můžete identifikovat problémy ve vaší aplikaci, potřebujete opravit. Diagnostické nástroje nyní zahrnují podporu pro aplikace ASP.NET.

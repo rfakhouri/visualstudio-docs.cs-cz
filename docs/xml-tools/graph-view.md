@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab09bec8f2fc7d75ab21c3635f34069ad613b3e3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5b95d8396cd96741187ae0146d2f727c3433b3ef
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="graph-view"></a>Zobrazení grafu
 
@@ -30,9 +30,9 @@ Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vz
 
  Dvakrát klikněte na uzel v zobrazení grafu se otevře se Editor XML.
 
- Pokud chcete odstranit vybrané uzly z pracovního prostoru, použijte panelu nástrojů programu XSD Designer nebo odstranění klíče.
+ Pokud chcete odstranit vybrané uzly z pracovního prostoru, použijte panelu nástrojů programu XSD Designer nebo **odstranit** klíč.
 
- Pokud návrhovou plochu, která je prázdné, zobrazí se Editor souborů XML, Explorer schématu XML a vodoznak. *Vodoznak* seznam obsahuje odkazy na všechna zobrazení XSD Designer.
+ Pokud návrhovou plochu, která je prázdné, editoru XML **Explorer schématu XML**, a jsou zobrazeny vodoznak. *Vodoznak* seznam obsahuje odkazy na všechna zobrazení XSD Designer.
 
  ![Návrhář XSD; Graf zobrazení](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")
 
@@ -54,9 +54,9 @@ Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vz
 |**Vymazat pracovního prostoru**|Vymaže pracovním prostoru a návrhovou plochu.|
 |**Odeberte z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a návrhovou plochu.|
 |**Odeberte všechny kromě výběr z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu.|
-|**Exportujte Diagram jako obrázek...**|Uloží na návrhovou plochu do soubor ve formátu XPS.|
+|**Exportovat Diagram jako obrázek**|Uloží na návrhovou plochu do soubor ve formátu XPS.|
 |**Vybrat vše**|Vybere všechny uzly na návrhovou plochu.|
-|**Zobrazení kódu**|Otevře se soubor, který obsahuje vybraný uzel v editoru XML. Položky vybrané v Průzkumníku schématu XML bude také vybrána v editoru XML.|
+|**Zobrazení kódu**|Otevře se soubor, který obsahuje vybraný uzel v editoru XML. Položky, který je vybraný v **Explorer schématu XML** , vybere se také v editoru XML.|
 |**Okno Vlastnosti**|Otevře se **vlastnosti** okno (pokud ještě není otevřený). Toto okno se zobrazí informace o uzlu.|
 
  Kromě běžných nastavení popsané výše kontextové nabídky pro globální elementy taky obsahuje následující možnosti:
@@ -90,7 +90,7 @@ Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vz
 |------------|-----------------|
 |**Přidejte všechny odkazy na**|Přidá všechny uzly, které odkazovat na tuto skupinu a nevykresluje šipky znázorňující vztahy mezi nimi.|
 
-## <a name="properties-window"></a>Okno vlastností
+## <a name="properties-window"></a>Vlastnosti – okno
 
  Pomocí místní nabídky původně otevřete **vlastnosti** okno. Ve výchozím nastavení **vlastnosti** okno se zobrazí v pravém dolním rohu Visual Studio. Při kliknutí na uzel, který se vykreslí v zobrazení obsahu modelu, vlastnosti tento uzel se zobrazí v **vlastnosti** okno.
 
@@ -102,20 +102,20 @@ Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vz
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Nastaví počáteční zobrazení**|Přepne do [spuštění zobrazení](../xml-tools/start-view.md). Toto zobrazení je přístupná pomocí klávesové zkratky: **CTRL + 1**.|
-|**Nastaví zobrazení modelu obsahu**|Přepne do [modelu zobrazení obsahu](../xml-tools/content-model-view.md). Toto zobrazení je přístupná pomocí klávesové zkratky: **CTRL + 2**.|
-|**Zobrazit zobrazení grafu**|Přepne do [graf zobrazení](../xml-tools/graph-view.md). Toto zobrazení je přístupná pomocí klávesové zkratky: **CTRL + 3**.|
+|**Nastaví počáteční zobrazení**|Přepne do [spuštění zobrazení](../xml-tools/start-view.md). Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**1**.|
+|**Nastaví zobrazení modelu obsahu**|Přepne do [modelu zobrazení obsahu](../xml-tools/content-model-view.md). Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**2**.|
+|**Zobrazit zobrazení grafu**|Přepne do [graf zobrazení](../xml-tools/graph-view.md). Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**3**.|
 |**Vymazat pracovního prostoru**|Vymaže pracovním prostoru a návrhovou plochu.|
-|**Odeberte z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a serface návrhu.|
-|**Odeberte všechny kromě výběr z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a serface návrhu. Tato možnost je povolená v zobrazení obsahu modelu a zobrazení grafu.|
-|**Zleva doprava**|Rozložení v zobrazení grafu se změní na znázornění zleva doprava hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt + šipka vpravo**.|
-|**Zleva doprava.**|Rozložení v zobrazení grafu se změní na znázornění zprava doleva hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt + šipka doleva**.|
-|**Shora dolů**|Rozložení v zobrazení grafu se změní na znázornění shora dolů hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt + Šipka dolů**.|
-|**Zdola nahoru**|Rozložení v zobrazení grafu se změní na znázornění dolní horní hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt + šipka nahoru**.|
+|**Odeberte z pracovního prostoru**|Odebere vybrané uzly z pracovního prostoru a návrhovou plochu.|
+|**Odeberte všechny kromě výběr z pracovního prostoru**|Odebere uzly, které nejsou vybrané z pracovního prostoru a návrhovou plochu. Tato možnost je povolená v zobrazení obsahu modelu a zobrazení grafu.|
+|**Zleva doprava**|Rozložení v zobrazení grafu se změní na znázornění zleva doprava hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt**+**šipku vpravo**.|
+|**Zleva doprava.**|Rozložení v zobrazení grafu se změní na znázornění zprava doleva hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt**+**šipku vlevo**.|
+|**Shora dolů**|Rozložení v zobrazení grafu se změní na znázornění shora dolů hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt**+**šipka dolů**.|
+|**Zdola nahoru**|Rozložení v zobrazení grafu se změní na znázornění dolní horní hierarchické uzlů. Tato možnost je přístupná pomocí klávesové zkratky: **Alt**+**šipka nahoru**.|
 
 ## <a name="panscroll"></a>Pan/posuvníku
 
- Na návrhovou plochu můžete posouvání pomocí některou z položek nebo tím, že podržíte klávesu CTRL a klikněte na tlačítko a přetáhněte myší. Pokud provádíte posun na návrhovou plochu, klikněte na tlačítko a přetáhněte, kurzor se změní na čtyři křížového šipky směřující v čtyři směrech.
+ Pomocí posuvníky nebo tím, že se můžete posunete zobrazení návrhovou plochu **Ctrl** klíče při klikněte a přetáhněte myší. Pokud provádíte posun na návrhovou plochu, klikněte na tlačítko a přetáhněte, kurzor se změní na čtyři křížového šipky směřující v čtyři směrech.
 
 ## <a name="undoredo"></a>Vrátit/opakovat
 
@@ -133,17 +133,17 @@ Zobrazení grafu poskytuje grafické reprezentace globální schématu uzly a vz
 
  Přiblížení se dá řídit následujícími způsoby:
 
--   Podržte klávesu CTRL a otáčí kolečka myši při ukazatele myši na povrchu zobrazení grafu.
+-   Tím, že se **Ctrl** klíč a otáčí myši kol při ukazatele myši na povrchu zobrazení grafu.
 
 -   Pomocí posuvníku. Posuvník zobrazuje aktuální úroveň přiblížení.
 
-Posuvník přiblížení se neprůhledné, když vyberte ho hover přes, nebo pomocí kombinace CTRL s kolečka myši pro přiblížení; v jinou dobu je transparentní.
+Posuvník přiblížení je plné krytí, pokud vyberte ho, při přechodu nebo používají **Ctrl** kolečka myši pro přiblížení; v jinou dobu je transparentní.
 
-## <a name="xml-editor-integration"></a>Integrace Editor XML
+## <a name="xml-editor-integration"></a>Integrace editor XML
 
  Můžete přepnout přepínat mezi zobrazení grafu a Editor souborů XML tak, že kliknete uzel pomocí místní nabídky zobrazení kódu.
 
- Pokud provedete změny schématu nastavení v editoru XML, změny budou synchronizovány v zobrazení grafu. Další informace najdete v tématu [integrace pomocí editoru XML](../xml-tools/integration-with-xml-editor.md).
+ Pokud provedete změny schématu nastavení v editoru XML, změny budou synchronizovány v zobrazení grafu. Další informace najdete v tématu [integrace s editoru XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Viz také
 

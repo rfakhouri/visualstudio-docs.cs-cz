@@ -9,11 +9,11 @@ description: Získejte maximum z vašich předplatných Visual Studio
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="managing-subscriptions"></a>Správa předplatných
 
@@ -118,3 +118,21 @@ Přidání alternativního účtu:
 ![Alternativní účet](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 Po přidání alternativního účtu, můžete aktualizovat nebo odebrat kdykoli klepnutím **odběry** kartě a vyberete příslušnou možnost v **související odkazy** části.  
+
+## <a name="frequently-asked-questions"></a>Nejčastější dotazy   
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Otázka: Pokud není obnovit odběr, jak dlouho bude Microsoft zachovat svá data?
+Odpověď: v závislosti na nákupu kanálu Microsoft udržuje zákaznická data pro různé délky času.
+
+| Kanál                                                | Doba trvání (dny) |
+|--------------------------------------------------------|-----------------|
+|    Prodejní (např. přes Microsoft Store)               |    360          |
+|    Volume Licensing Service Center (VLSC)              |    180          |
+|    Produkty společnosti Microsoft a smlouvou o poskytování služeb (MPSA)    |    180          |
+|    Cloudové předplatné sady Visual Studio                   |    180          |
+|    Program (například MCT, BizSpark, MPN, Imagine)          |    180          |
+|    Není pro prodej (např. MVP, MSP)                      |    180          |
+|    DevEssentials                                       |    30           |
+
+> [!NOTE]
+> - Pokud si zvolíte zavřete Microsoft Account nebo Azure AD, bude okamžitě anonymní vašich osobních údajů.  
+> - Jsme neodebere plně všechna vaše osobní data Pokud máte aktivní odběry. 

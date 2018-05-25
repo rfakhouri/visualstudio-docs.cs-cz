@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 74432b7807f901253646f28a3e1bf4664f673326
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 892f82d64bb022c20c786a996bf9f89cf557b4c2
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Postup: provedení transformace XSLT z editoru XML
 
 Editor souborů XML umožňuje přidružit stylů XSLT dokumentu XML provedení transformace a zobrazte výstup. Výsledný výstup transformace XSLT se zobrazí v novém okně dokumentu.
 
-**Výstup** vlastnost určuje název souboru pro výstup. Pokud **výstup** vlastnost je prázdná, název souboru je vygenerována v dočasném adresáři. Přípona souboru je založena na `xsl:output` element vaším stylem list a může být XML, txt nebo .htm.
+**Výstup** vlastnost určuje název souboru pro výstup. Pokud **výstup** vlastnost je prázdná, název souboru je vygenerována v dočasném adresáři. Přípona souboru je založena na `xsl:output` element vaším stylem list a může být. *XML*,. *txt* nebo. *htm*.
 
-Pokud **výstup** vlastnost určuje název souboru .htm nebo .html rozšíření, výstup XSLT zobrazení náhledu pomocí [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Jiné přípony souborů jsou otevřené pomocí editoru výchozí, kterou si zvolí [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Například pokud přípona souboru .xml, Visual Studio použije editoru XML.
+Pokud **výstup** vlastnost určuje název souboru s. *htm* nebo. *HTML* rozšíření, výstup XSLT je náhled pomocí [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Jiné přípony souborů jsou otevřené pomocí editoru výchozí, kterou si zvolí [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Pokud například přípona souboru. *xml*, Visual Studio použije editoru XML.
 
 ## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>K provedení transformace XSLT z dokumentu XML
 

@@ -20,11 +20,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad9e78d6b87f85e09cbba68a4fd4297e09acf18e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d29515e9e8a1320975fb343ae101db21924d9767
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Postupy: Přidání vlastních částí XML do přizpůsobení na úrovni dokumentu
   Můžete uložit XML data v sešitu aplikace Microsoft Office Excel nebo dokument aplikace Microsoft Office Word tak, že vytvoříte vlastní část XML do přizpůsobení na úrovni dokumentu. Další informace najdete v tématu [přehled částí XML vlastní](../vsto/custom-xml-parts-overview.md).  
@@ -62,5 +62,4 @@ ms.lasthandoff: 05/17/2018
 ## <a name="see-also"></a>Viz také  
  [Přehled vlastních částí XML](../vsto/custom-xml-parts-overview.md)   
  [Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)  
-  
   

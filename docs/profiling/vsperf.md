@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="vsperf"></a>VSPerf
 Použití **VsPerf** nástroj příkazového řádku:  
@@ -25,16 +25,7 @@ Použití **VsPerf** nástroj příkazového řádku:
   
  Další informace o vytváření profilů možnosti najdete v tématu [nástroje pro sledování výkonu v aplikacích pro Windows 8 a Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
-##  <a name="BKMK_In_this_topic"></a> V tomto tématu  
- Toto téma popisuje možnosti, které můžete použít s `vsperf.exe` nástroj pro příkazový řádek. Téma obsahuje následující části:  
-  
- [Jenom aplikace UWP](#BKMK_windows_store_apps_only)  
-  
- [Aplikací klasické pracovní plochy Windows 8 a pouze aplikací systému Windows Server 2012](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
-  
- [Všechny aplikace](#BKMK_All_applications)  
-  
-##  <a name="BKMK_windows_store_apps_only"></a> Jenom aplikace UWP  
+## <a name="uwp-apps-only"></a>Jenom aplikace UWP  
  Tyto možnosti platí pouze pro aplikace UWP.  
   
 |||  
@@ -45,7 +36,7 @@ Použití **VsPerf** nástroj příkazového řádku:
 |**/noclr**|Volitelné. Neshromažďují CLR data.<br /><br /> Použití pouze s /package nebo / připojit.<br /><br /> Optimalizace, bude vyřešen žádné spravované symboly.|  
 |**/listapps**|Seznam názvů nainstalovanou aplikaci a PackageFullNames.|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a> Aplikací klasické pracovní plochy Windows 8 a pouze aplikací systému Windows Server 2012  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>Aplikací klasické pracovní plochy Windows 8 a pouze aplikací systému Windows Server 2012  
  Tyto možnosti pro aplikace UWP nefungují.  
   
 |||  
@@ -54,7 +45,7 @@ Použití **VsPerf** nástroj příkazového řádku:
 |**/args: {ExecutableArguments}**|Určuje argumenty příkazového řádku k předávání **/spusťte** cíl.|  
 |**/ Console**|Spustí **/spusťte** cíl v nové příkazové okno.|  
   
-##  <a name="BKMK_All_applications"></a> Všechny aplikace  
+## <a name="all-applications"></a>Všechny aplikace  
  Tato možnost platí pro všechny aplikace systému Windows 8 nebo Windows Server 2012.  
   
 |||  

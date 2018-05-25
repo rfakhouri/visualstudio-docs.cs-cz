@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fbe34a1ddb738b31c9362eb511a04ba970402ab
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 3f18e8ab05cf6331049e71c552d7b72a6b9235e0
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` Funkce vloží číselné značku a textového řetězce v souboru .vsp. Značky a komentáře, které má být vložen, profilace podprocesu, který obsahuje `CommentMarkProfile` funkce musí být ON.  
@@ -39,7 +39,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
   
  Ukazatel na textový řetězec k vložení. Řetězec musí být kratší než 256 znaků včetně ukončení hodnotu NULL.  
   
-## <a name="property-valuereturn-value"></a>Hodnota vlastnosti / návratová hodnota  
+## <a name="property-valuereturn-value"></a>Vlastnost Hodnota/Návratová hodnota  
  Funkce označuje úspěch či neúspěch pomocí **PROFILE_COMMAND_STATUS** výčtu. Vrácená hodnota může být jeden z následujících akcí:  
   
 |Enumerátor|Popis|  
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 > [!IMPORTANT]
 >  CommentMarkProfile metodu můžete použít jenom s instrumentace.  
   
-## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET Framework  
+## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET framework  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informace o funkci  
@@ -111,4 +111,4 @@ void ExerciseCommentMarkProfile()
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Referenční dokumentace rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Visual Studio profiler referenční dokumentace rozhraní API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)

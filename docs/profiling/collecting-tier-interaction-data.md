@@ -16,13 +16,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 251dac9f457e1103173de01f0a9522c8199a9571
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5e86cd1318d4b0db35ce6fa0e0abd925100fe34
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="collecting-tier-interaction-data"></a>Shromažďování dat interakce vrstev
+# <a name="collect-tier-interaction-data"></a>Shromažďování dat interakce vrstev
 
 Profilace interakce vrstvy poskytuje další informace o dobu provádění funkcí víceúrovňových aplikací, které komunikují s databází prostřednictvím služeb ADO.NET. Data jsou shromažďována jenom pro funkce synchronní volání.
 

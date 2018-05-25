@@ -9,11 +9,11 @@ description: Přihlášení může selhat v případě aliasy nebo popisné náz
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 869835e53b1975d86501660b3e4ca34a41a1a7d4
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 765862efcd3b83be2d52767dbc81570da2e8f9d6
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Přihlášení k sadě Visual Studio odběry může selhat, pokud používáte aliasy
 
@@ -48,25 +48,26 @@ Postupujte podle těchto kroků pro přidání nové odběratele s účtem adres
 1. Přejděte [Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) a přihlaste se.
 2. Na stránce VLSC správce, klikněte na tlačítko **odběry** a potom **Visual Studio odběry**.
 
-    ![Odběry nabídky](_img//vlsc/vlsc-subscriptions.png)
+    <img alt="Subscriptions menu" src="_img//vlsc/vlsc-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
 3. Klikněte **číslo smlouvy** přidruženou k odběru Visual Studio.
 
-    ![Vyberte smlouvy](_img/vlsc/vlsc-agreement.png)
+    <img alt="Select agreement" src="_img/vlsc/vlsc-agreement.png" style="border: 1px solid #CCCCCC" />
 
 4. Klikněte na tlačítko **přiřadit předplatné**.
 
-    ![Přiřadit předplatného](_img/vlsc/vlsc-assign.png)
+    <img alt="Assign subscription" src="_img/vlsc/vlsc-assign.png" style="border: 1px solid #CCCCCC" />
+
 
 5. Vyberte požadovanou **úrovni předplatného**.
 
-    ![Úrovni předplatného](_img/vlsc/vlsc-subscription-level.png)
-    
+    <img alt="Subscription level" src="_img/vlsc/vlsc-subscription-level.png" style="border: 1px solid #CCCCCC" /> 
+
 6. Ověření je nutné přiřadit, a klikněte na dostupných předplatných **Další**.
 7.  Zadejte podrobnosti o odběrateli a directory adresu v poli e-mailovou adresu a klikněte na tlačítko **Další**.
 
-    ![E-mailová adresa](_img/vlsc/vlsc-email-address.png)
-    
+    <img alt="Email address" src="_img/vlsc/vlsc-email-address.png" style="border: 1px solid #CCCCCC" /> 
+        
 8. Ověřte informace o odběrateli a klikněte na tlačítko **Dokončit**.
 
 9. Oznámení odběrateli svoje předplatné se zřizují pomocí níže [šablony](#notifying-your-subscribers-with-directory-addresses).
@@ -97,7 +98,7 @@ Vzhledem k tomu, že Uvítacího e-mailu nebudou úspěšně dostat vaší odbě
 
 ---Kopie níže (Ctrl + C),
 
-Hello %SUBSCRIBER NAME%
+Hello % odběratele NAME %
 
 Jste byli přiřazeni předplatné sady Visual Studio.  Navštivte https://my.visualstudio.coma přihlaste se pomocí % % adresu umístění adresáře pro aktivaci a přístup k předplatnému. 
 
@@ -142,7 +143,7 @@ Ve scénáři uvedených výše vaše odběratele obdrží "Uvítací E-mail", a
 
 ---Kopie níže (Ctrl + C),
 
-Hello %SUBSCRIBER NAME%
+Hello % odběratele NAME %
 
 Byly přiřazeny předplatné sady Visual Studio a byl přesměrován k přihlášení do https://my.visualstudio.com podle Uvítacího e-mailu.  I když jde o správný webu pro použití výhody, naší organizace vyžaduje, abyste si před přístupem k webu provést několik kroků navíc.  Postupujte podle následující pokyny vám pomůže vytvořit "Account Microsoft", který je vázaný na našich podnikových e-mailovou adresu.  Po dokončení těchto kroků se použije pro přístup ke výhody odběr e-mailovou adresu.
 1. Navštivte https://my.visualstudio.com

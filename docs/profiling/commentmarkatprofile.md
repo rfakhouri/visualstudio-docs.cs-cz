@@ -13,11 +13,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 63bd01f6ad180c85e48c51925de094df94aaa335
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: fe58f2ac769a75ea6422a7877fe4846eefc918c3
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` Metoda vloží hodnoty časového razítka, číselné značky a komentáře řetězce v souboru .vsp. Hodnota časového razítka slouží k synchronizaci externí události. Značky a komentáře, které má být vložen profilace podprocesu, který obsahuje funkci CommentMarkAtProfile musí být ON.  
@@ -44,7 +44,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
  Ukazatel na textový řetězec k vložení. Řetězec musí být kratší než 256 znaků včetně ukončení hodnotu NULL.  
   
-## <a name="property-valuereturn-value"></a>Hodnota vlastnosti / návratová hodnota  
+## <a name="property-valuereturn-value"></a>Vlastnost Hodnota/Návratová hodnota  
  Funkce označuje úspěch či neúspěch pomocí **PROFILE_COMMAND_STATUS** výčtu. Vrácená hodnota může být jeden z následujících akcí:  
   
 |Enumerátor|Popis|  
@@ -63,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 > [!IMPORTANT]
 >  CommentMarkAtProfile metody musí být použit s pouze instrumentace.  
   
-## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET Framework  
+## <a name="net-framework-equivalent"></a>Ekvivalent v rozhraní .NET framework  
  Microsoft.VisualStudio.Profiler.dll  
   
 ## <a name="function-information"></a>Informace o funkci  
@@ -116,4 +116,4 @@ void ExerciseCommentMarkAtProfile(void)
 ```  
   
 ## <a name="see-also"></a>Viz také  
- [Referenční dokumentace rozhraní API sady Visual Studio Profiler (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)
+ [Referenční dokumentace jazyka Visual Studio Profiler API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)

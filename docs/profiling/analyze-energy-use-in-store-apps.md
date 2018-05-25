@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 8e7bd65e67af3a76eaf026e79c1153489b9d26a8
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: c6b319953f3d38814934b2fd8e80f06008f95013
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analýza spotřeby energie v aplikacích pro UPW
 Visual Studio **spotřeba energie na** profileru pomáhá analyzovat power a spotřeby energie aplikací UWP do úsporného režimu tablet zařízení, která používají nebo jeho část čas na své vlastní baterie. Na zařízení napájeném z baterie může aplikace s příliš vysokou spotřebou energie způsobit tak velkou nespokojenost zákazníka, že ji může dokonce i odinstalovat. Optimalizace energie můžete zvýšit přijetí vaší aplikace a použít zákazníků.  
   
-##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> Co je profileru spotřeba energie, jak to funguje a co měří  
+## <a name="what-the-energy-consumption-profiler-is-how-it-works-and-what-it-measures"></a>Co je profiler Spotřeba energie, jak funguje a co měří  
  Profiler Spotřeba energie shromažďuje údaje o činnosti displeje, procesoru a síťových připojení zařízení během relace profilování. Poté vygeneruje odhady množství energie použité pro tyto činnosti a celkové množství energie použité pro relaci profilování.  
   
 > [!NOTE]
@@ -44,7 +44,7 @@ Visual Studio **spotřeba energie na** profileru pomáhá analyzovat power a spo
   
  Například plně nabitá baterie v tabletu uchovává určité množství energie. Při využívání této energie pro provádění úloh, jako je například komunikace po síti, výpočty hodnot nebo zobrazování grafického obsahu, se výkon spotřebovává různou rychlostí. Pro libovolné časové období se celkové množství spotřebovaného výkonu poměřuje také energií.  
   
-##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Určit scénáře značkami, podle uživatele  
+## <a name="identify-scenarios-with-user-marks"></a>Scénáře s uživatelskými značkami  
  Můžete přidat *uživatele značky* k datům profilování, aby bylo možné identifikovat oblasti pravítka časové osy.  
   
  ![Značky uživatele v časové ose](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")  
@@ -75,7 +75,7 @@ if (performance && performance.mark) {
   
  *markDescription* je řetězec, který obsahuje zprávu zobrazíte v popisku označit uživatele.  
   
-##  <a name="BKMK_Configure_your_environment_for_profiling"></a> Konfigurace prostředí pro profilaci  
+## <a name="configure-your-environment-for-profiling"></a>Konfigurace prostředí pro profilaci  
  Pokud chcete získat odhad funkční, budete chtít profilu energie aplikace na zařízení úsporný, který používá technologii jeho baterie. Protože Visual Studio se nespouští na většinu těchto zařízení, budete muset počítač Visual Studio se připojte k zařízení pomocí nástrojů pro vzdálenou aplikaci Visual Studio. Pro připojení ke vzdálenému zařízení je třeba nakonfigurovat jak projekt aplikace Visual Studio, tak vzdálené zařízení. V tématu [aplikace UWP spustit na vzdáleném počítači](../debugger/run-windows-store-apps-on-a-remote-machine.md) Další informace.  
   
 > [!TIP]
@@ -83,7 +83,7 @@ if (performance && performance.mark) {
 > -   Provádějte profilaci na cílovém zařízení v době, kdy je zařízení napájeno bateriemi.  
 > -   Zavřete ostatní aplikace, které by mohly využívat stejné prostředky (síť, procesor nebo displej).  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Shromažďování dat profilu energie pro vaši aplikaci.  
+## <a name="collect-energy-profile-data-for-your-app"></a>Shromažďování dat o energetickém profilu vaší aplikace  
   
 1.  Na **ladění** nabídce zvolte **spustit diagnostiku bez ladění**.  
   
@@ -102,7 +102,7 @@ if (performance && performance.mark) {
   
      Aplikace Visual Studio analyzuje shromážděná data a zobrazuje výsledky.  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Shromažďovat data profilu energie pro nainstalovanou aplikaci  
+## <a name="collect-energy-profile-data-for-an-installed-app"></a>Shromažďování dat o energetickém profilu nainstalované aplikace  
  Spotřeba energie na nástroj lze spustit jen u aplikace UPW, které jsou spouštěny z řešení sady Visual Studio nebo jsou nainstalované ze služby Microsoft Store. Když je řešení otevřené v sadě Visual Studio, je výchozí cíl **spouštěný projekt**. Zacílení nainstalované aplikace:  
   
 1.  Zvolte **změnit cíl** a potom zvolte **nainstalované aplikace**.  
@@ -115,7 +115,7 @@ if (performance && performance.mark) {
   
  Zastavit profilování, přepněte zpět na Visual Studio (Alt + Tab) a zvolte **zastavit shromažďování** na stránce centra diagnostiky.  
   
-##  <a name="BKMK_Analyze_energy_profile_data"></a> Analýza dat profilu energie  
+## <a name="analyze-energy-profile-data"></a>Analýza dat energetického profilu  
  Data energetického profilu se zobrazují v okně dokumentu aplikace Visual Studio:  
   
  ![Stránka sestavy profileru energie](../profiling/media/energyprof_all.png "ENERGYPROF_All")  
@@ -133,7 +133,7 @@ if (performance && performance.mark) {
   
  Najděte oblast, kde výkon prostředku dosáhl vrcholu. Přiřaďte tuto oblast k funkci vaší aplikace. Pomocí ovládacích panelů časové osy můžete tuto oblast přiblížit. Pokud jsou zaměřené na využití sítě, rozbalte **sítě** uzel v **prostředky (On/vypnutém)** grafu se porovnat čas, který připojení k síti nebylo otevřete na dobu, která aplikace přijímala nebo přenosu data přes dané připojení. Zkrácení doby, po kterou je síť zbytečně otevřená, představuje velmi efektivní optimalizaci.  
   
-##  <a name="BKMK_Optimize_energy_use"></a> Optimalizace energie  
+## <a name="optimize-energy-use"></a>Optimalizace spotřeby energie  
  Kromě přenosu dat vynakládají síťová připojení energii také na inicializaci, udržování a ukončování připojení. Některé sítě udržují připojení po určitou dobu po odeslání nebo přijetí dat, aby umožnily přenos většího množství dat v rámci jednoho připojení. Můžete použít **prostředky (On/vypnutém)** podokně zkontrolujte způsob, jakým aplikace komunikuje s připojením.  
   
  ![Prostředky &#40;na&#47;vypnout&#41; podokně](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")  
@@ -144,14 +144,14 @@ if (performance && performance.mark) {
   
  Spotřebu energie displeje lze ovlivnit hůře. Většina obrazovek potřebuje více energie k zobrazení světlých barev než tmavších barev, takže jedním ze způsobů, jak snížit spotřebu, je použití tmavého pozadí.  
   
-##  <a name="BKMK_Other_resources"></a> Další prostředky  
+## <a name="other-resources"></a>Další zdroje  
   
 -   **Stav připojení a Správa nákladů** částech pro [C# / VB/C++ a XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) a [JavaScript a HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) ve službě Windows Dev Center popisují rozhraní API systému Windows, které poskytují síťové připojení informace, které aplikace můžete minimalizovat náklady na síťový provoz.  
   
      Simulátoru Visual Studio pro aplikace UWP můžete simulovat vlastnosti připojení dat informace o síťové rozhraní API. V tématu [aplikace UWP spustit v simulátoru](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
--   **Časování funkce JavaScript** a **využití procesoru** nástroje vám může pomoct snížit zatížení procesoru při je způsobena neefektivní funkce. V tématu [analýza využití procesoru](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+-   **Časování funkce JavaScript** a **využití procesoru** nástroje vám může pomoct snížit zatížení procesoru při je způsobena neefektivní funkce. V tématu [využití procesoru analyzovat](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
 
 ## <a name="see-also"></a>Viz také
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)
+ [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)

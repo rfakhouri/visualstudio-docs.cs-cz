@@ -9,11 +9,11 @@ description: Přečtěte si Opsgility cvičení výhody, které jsou součástí
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3e481dbf88c377d1d54cb404200872ae062a2e02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6cd992eb5eb7dcafbf99eb99207a8f823a97a54
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Výhodou Opsgility odběry Visual Studio
 
@@ -52,8 +52,6 @@ Vybrané předplatné sady Visual Studio zahrnují jeden rok přístup k školen
 Nejste si jistí jaké předplatné používáte?  Připojení k [ https://my.visualstudio.com/subscriptions ](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) zobrazíte všechny odběry, které jsou přiřazeny k e-mailovou adresu. Pokud nevidíte všechny odběry, můžete mít jeden nebo více přiřadit jinou e-mailovou adresu.  Musíte se přihlásit pomocí tohoto e-mailovou adresu zobrazíte těchto předplatných. 
 
 ## <a name="support-resources"></a>Podpora prostředky
--  Potřebujete pomoc s Opsgility?  Podívejte se na tyto prostředky:
-    - [NEJČASTĚJŠÍ DOTAZY](https://www.opsgility.com/Home/FAQ)
-    - Odeslat lístek podpory prostřednictvím [kontaktujte nás](https://www.opsgility.com/SupportTicket) stránky. 
+-  Potřebujete pomoc s Opsgility?  Odeslat lístek podpory prostřednictvím [kontaktujte nás](https://www.opsgility.com/SupportTicket) stránky. 
 -  Požádejte o pomoc s prodej, odběry, účtech a cenách pro Visual Studio předplatné sady Visual Studio [odběry podporu](https://www.visualstudio.com/subscriptions/support/).
 -  Máte dotaz týkající se Visual Studio IDE, Visual Studio Team Services nebo jiné produkty Visual Studio nebo službám?  Navštivte [Visual Studio – podpora](https://www.visualstudio.com/support/). 

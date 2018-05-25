@@ -10,29 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4feb40ba843da5c3f2e5f7de9b8d554debf6fcc6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8be2666316bdc4d64d4f3dd4ec52c5104a1af5cc
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Postupy: získání přehledu sady schématu pomocí zobrazení grafu
+# <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Postupy: získat přehled o schéma nastavit pomocí zobrazení grafu
 
 Toto téma popisuje postup použití [zobrazení grafu](../xml-tools/graph-view.md) zobrazíte souhrnné zobrazení uzlů ve schématu sady a vztahy mezi uzly.
 
 ## <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Vytvořte nový soubor XSD a zobrazte kořenový element v modelu zobrazení obsahu
 
-1.  Vytvoření nového souboru schématu XML a uložte soubor jako Relationships.xsd.
+1.  Vytvoření nového souboru schématu XML a soubor uložte jako *Relationships.xsd*.
 
 2.  Klikněte **pomocí editoru XML k zobrazení a úpravě podkladový soubor schématu XML** odkaz na zobrazení spustit.
 
-3.  Zkopírujte schématu XML ukázkový kód z [schématu XML ukázka: vztahy](../xml-tools/sample-xsd-file-relationships.md) a vložte jej nahradit kód, který byl přidán nový soubor XSD ve výchozím nastavení.
+3.  Zkopírujte schématu XML ukázkový kód z [schématu ukázka XML: vztahy](../xml-tools/sample-xsd-file-relationships.md) a vložte jej nahradit kód, který byl přidán nový soubor XSD ve výchozím nastavení.
 
 4.  Klikněte pravým tlačítkem na libovolné místo v editoru XML a vyberte **Návrhář zobrazení**.
 
-5.  Na panelu nástrojů XSD vyberte zobrazení grafu.
+5.  Vyberte zobrazení grafu z **XSD nástrojů**.
 
-6.  Vyberte **schématu nastavit** uzlu v Průzkumníku schématu XML a přetáhněte uzel návrhu suface zobrazení grafu. Měli byste vidět všechny uzly globální a šipky připojení uzly, které mají relace.
+6.  Vyberte **schématu nastavit** uzel v **Explorer schématu XML** a přetáhněte uzel k návrhu suface zobrazení grafu. Měli byste vidět všechny uzly globální a šipky připojení uzly, které mají relace.
 
      ![Graf zobrazení](../xml-tools/media/relationshipingraphview.gif "RelationshipInGraphView")
 

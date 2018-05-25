@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b820820a42814eb7169287408200bedd73435ff7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-create-xml-snippets"></a>Postupy: vytvoření fragmenty kódu XML
 
@@ -30,7 +30,7 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
 
 3.  Klikněte pravým tlačítkem v podokně editor a vyberte **Vložit fragment**.
 
-4.  Vyberte **fragment kódu** ze seznamu a potom stiskněte klávesu ENTER.
+4.  Vyberte **fragment kódu** ze seznamu a stiskněte klávesu **Enter**.
 
 5.  Žádné změny fragmentu nové.
 
@@ -40,13 +40,13 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
 
 7.  Zadejte název pro nový fragment kódu a vyberte **fragment kódu soubory** z **uložit jako typ** okno rozevíracího seznamu.
 
-8.  Použití **uložit v** rozevíracího seznamu změnit umístění souboru do složky Dokumenty\visual 2005\Code Snippets\XML\My fragmenty XML a potom stiskněte klávesu **Uložit**.
+8.  Použití **uložit v** rozevíracího seznamu můžete změnit umístění souboru *Dokumenty\visual 2005\Code Snippets\XML\My XML fragmenty* složku a potom stiskněte klávesu **Uložit**.
 
 ## <a name="snippet-description"></a>Popis fragmentu kódu
 
- Tato část popisuje některé klíčové prvky v tomto fragmentu kódu standardní. Další informace o schématu prvky používané fragmentů kódu XML, najdete v části [fragmenty kódu – odkaz schématu](../ide/code-snippets-schema-reference.md).
+ Tato část popisuje některé klíčové prvky v tomto fragmentu kódu standardní. Další informace o schématu prvky používané fragmentů kódu XML, najdete v části [referenční dokumentace schématu fragmenty kódu](../ide/code-snippets-schema-reference.md).
 
-### <a name="snippettype-element"></a>Element SnippetType
+### <a name="snippettype-element"></a>SnippetType element
 
  Editor podporuje dva typy fragment kódu:
 
@@ -59,7 +59,7 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
 
  `Expansion` Typ Určuje, zda se zobrazí fragmentu při vyvolání **Vložit fragment** příkaz. `SurroundsWith` Typ Určuje, zda se zobrazí fragmentu při vyvolání **okolí s** příkaz.
 
-### <a name="code-element"></a>Element Code
+### <a name="code-element"></a>Element kódu
 
  `Code` Element definuje textu XML, který bude vložen při vyvolání fragmentu.
 
@@ -83,7 +83,7 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
 
 -   vybrané $$ je předdefinovaná proměnná. Reprezentuje text, který byl vybrán v editoru XML před vyvoláním fragmentu. Umístění tato proměnná Určuje, kde se zobrazí vybraný text ve fragmentu kódu, která obklopuje výběr.
 
--   $end$ je předdefinovaná proměnná. Když uživatel stiskne klávesu ENTER a dokončete úpravu pole fragment kódu, tato proměnná Určuje, kde je šipka nahoru (^) přesunuta do.
+-   $end$ je předdefinovaná proměnná. Když uživatel stiskne **Enter** dokončíte úpravy polí fragment kódu, tato proměnná Určuje, kde je šipka nahoru (^) přesunuta do.
 
  Výše `Code` element vloží následující textu XML:
 
@@ -95,7 +95,7 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
 
  Hodnota elementu název je označena jako upravitelné oblasti.
 
-### <a name="literal-element"></a>Element Literal
+### <a name="literal-element"></a>Literál elementu
 
  `Literal` Element se používá k identifikaci Nahrazovací text, kterou lze přizpůsobit po vložení do souboru. Například literály, číselných hodnot a některé názvy proměnných lze deklarovat jako literály. Můžete definovat libovolný počet literály fragment XML a mohou odkazovat na je více než jednou. ze v tomto fragmentu kódu. Tady je příklad `Literal` element, který definuje proměnnou $name$, jejíž výchozí hodnota je "name".
 
@@ -119,6 +119,6 @@ XML Editor lze použít k vytvoření nové fragmenty kódu XML. Editor zahrnuje
 
 ## <a name="see-also"></a>Viz také
 
-- [Fragmenty XML](../xml-tools/xml-snippets.md)
-- [Postupy: Použití fragmentů XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Postupy: Generování fragmentu XML ze schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Fragmenty kódu XML](../xml-tools/xml-snippets.md)
+- [Postupy: použití XML fragmenty kódu](../xml-tools/how-to-use-xml-snippets.md)
+- [Postupy: generování fragmentu kódu XML z schématu XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

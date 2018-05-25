@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f90cd6b8d7fcb6a9eaf2d68f3eabe4b851979302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a6eb52273633e0b65aa4a7a7049198c49c20633d
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
-# <a name="understanding-sampling-data-values"></a>Porozumění hodnotám dat vzorkování
+# <a name="understand-sampling-data-values"></a>Pochopení hodnotám dat vzorkování
 
 *Vzorkování* metoda Visual Studio Tools profilace profilace přerušují procesor počítače v nastavených intervalech a shromažďuje zásobníku volání funkce. A *zásobník volání* je dynamická struktura, která ukládá informace o funkcích, které jsou prováděny na procesor.
 
@@ -52,5 +52,5 @@ Procento celkového počtu v profilaci spustit výhradní vzorků, které jsou v
 
 ## <a name="see-also"></a>Viz také
 
-[Postupy: výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)  
-[Analýza výkonu nástrojů pro Data](../profiling/analyzing-performance-tools-data.md)
+[Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  
+[Analýza dat nástrojů pro měření výkonu](../profiling/analyzing-performance-tools-data.md)

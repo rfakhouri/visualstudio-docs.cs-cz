@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a55bcfd09a99d9808bc378e680c33594007661e1
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: f9ef0bfc6c2030fc12d5743e91cb7b660cbe241f
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn a ThreadOff
 VSPerfCmd.exe **ThreadOff** a **ThreadOn** dílčích příkazů jsou dostupné jenom v příkazového řádku profilování relace, které používají metody instrumentace. **ThreadOff** a **ThreadOn** pozastavení a obnovení profilace pro zadaný vlákno. **ThreadOff** zastaví profilace vlákno a **ThreadOn** spustí profilace vlákno.  
@@ -29,7 +29,7 @@ VSPerfCmd.exe **ThreadOff** a **ThreadOn** dílčích příkazů jsou dostupné 
   
 -   **ThreadOn** okamžitě nastaví spuštění a zastavení počet vláken na 1 a proto obnoví profilace.  
   
- Další informace najdete v tématu [profilace rozhraní API nástroje](../profiling/profiling-tools-apis.md).  
+ Další informace najdete v tématu [rozhraní API nástrojů pro profil](../profiling/profiling-tools-apis.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -71,6 +71,6 @@ VSPerfCmd /Shutdown
   
 ## <a name="see-also"></a>Viz také  
  [Vsperfcmd –](../profiling/vsperfcmd.md)   
- [Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilace služeb](../profiling/command-line-profiling-of-services.md)
+ [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil služby](../profiling/command-line-profiling-of-services.md)

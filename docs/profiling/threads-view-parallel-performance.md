@@ -14,11 +14,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e63e208d0442b50d30ffd9e286dd92de4bb17610
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="threads-view-parallel-performance"></a>Zobrazení vláken (paralelní výkon)
 **Zobrazení vláken** je nejvíce bohaté a podrobné zobrazení v Concurrency Visualizer (zvolte **analyzovat** > **vizualizér souběžnosti** spuštění Vizualizér souběžnosti). Pomocí tohoto zobrazení, můžete zjistit, jestli jsou vláken provádění nebo blokování z důvodu synchronizace, vstupně-výstupních operací nebo z jiného důvodu.  
@@ -54,7 +54,7 @@ ms.lasthandoff: 04/19/2018
   
 -   Pochopení závislosti mezi pracovních vláken a kritické cesty provádění.  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>Zkoumání vláken a specifické časové intervaly  
+## <a name="examine-specific-time-intervals-and-threads"></a>Zkontrolujte vláken a specifické časové intervaly  
  Zobrazení vláken zobrazuje časové osy. Můžete přiblížení a posouvání v rámci časovou osu pro zjištění určitých intervalech a vláken vaší aplikace. Na ose x je čas a na ose y jsou několik kanály:  
   
 -   Pro každou jednotku disku na systém, jeden kanál pro čtení a jeden pro zápisy dva kanály vstupně-výstupní operace.  
@@ -78,7 +78,7 @@ Zobrazení vláken
   
  Pokud jste vybrali intervalu dobu a některé vláken v něm, můžete začít analýzy výkonu.  
   
-## <a name="analysis-tools"></a>Nástrojů pro analýzu  
+## <a name="analysis-tools"></a>nástrojů pro analýzu  
  Tato část popisuje, sestavy a jiných nástrojů pro analýzu.  
   
 ### <a name="thread-blocking-details"></a>Podrobnosti o blokování přístup z více vláken  
@@ -130,7 +130,7 @@ Zobrazení vláken
  Sestava vstupně-výstupních operací obsahuje volání, které jsou zodpovědní za bloky vstupně-výstupních operací, společně s agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [čas vstupně-výstupních operací (zobrazení vláken)](../profiling/i-o-time-threads-view.md).  
   
 #### <a name="sleep"></a>Přejít do režimu spánku  
- Sestava režimu spánku zobrazí volání, které jsou zodpovědní za bloky režimu spánku, společně s agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [doba režimu spánku](../profiling/sleep-time.md).  
+ Sestava režimu spánku zobrazí volání, které jsou zodpovědní za bloky režimu spánku, společně s agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [doba spánku](../profiling/sleep-time.md).  
   
 #### <a name="memory-management"></a>Správa paměti  
  Sestava správy paměti obsahuje volání, kde bloky správy paměti došlo k chybě, společně s agregace blokování časy každý zásobníku volání. Tyto informace můžete určit oblasti, které mají nadměrné stránkování nebo paměti kolekce problémy.  Další informace najdete v tématu [čas správy paměti](../profiling/memory-management-time.md).  
@@ -141,11 +141,11 @@ Zobrazení vláken
 #### <a name="ui-processing"></a>Zpracování uživatelského rozhraní  
  Sestava zpracování uživatelského rozhraní obsahuje volání, které jsou zodpovědní za uživatelského rozhraní, zpracování bloky, společně s agregace blokování časy každý zásobníku volání. Další informace najdete v tématu [doba zpracování uživatelského rozhraní](../profiling/ui-processing-time.md).  
   
-#### <a name="per-thread-summary"></a>Za souhrn přístup z více vláken  
- Na této kartě zobrazuje zobrazení barevně sloupec celkový čas, každé vlákno věnovaný spustit, blokované, vstupně-výstupních operací a ostatní stavy. Sloupce, které jsou označené dole. Při změně úrovně přiblížení v časová osa grafu na této kartě se automaticky aktualizuje. Na úrovních některé přiblížení nemusí být zobrazeny některé vláken. V takovém případě se zobrazí symbol tří teček vpravo. Pokud vlákno, které chcete nezobrazí, můžete skrýt, jiná vlákna. Další informace najdete v tématu [za přístup z více vláken souhrnnou sestavu](../profiling/per-thread-summary-report.md).  
+#### <a name="per-thread-summary"></a>Na vlákno souhrn  
+ Na této kartě zobrazuje zobrazení barevně sloupec celkový čas, každé vlákno věnovaný spustit, blokované, vstupně-výstupních operací a ostatní stavy. Sloupce, které jsou označené dole. Při změně úrovně přiblížení v časová osa grafu na této kartě se automaticky aktualizuje. Na úrovních některé přiblížení nemusí být zobrazeny některé vláken. V takovém případě se zobrazí symbol tří teček vpravo. Pokud vlákno, které chcete nezobrazí, můžete skrýt, jiná vlákna. Další informace najdete v tématu [sestava souhrnu podle vláken](../profiling/per-thread-summary-report.md).  
   
 #### <a name="disk-operations"></a>Diskových operací  
- Tato karta zobrazuje které procesy a vláken byly součástí diskové vstupně-výstupních operací jménem aktuální proces, které soubory se dotýkal (například knihovny DLL, které byly načteny), kolik bajtů byly čtení a další informace. Tato sestava slouží k vyhodnocení času stráveného v přístupu k souborům během provádění, zejména v případě, že je váš proces je pravděpodobně vázán vstupně-výstupní operace. Další informace najdete v tématu [sestava diskových operací](../profiling/disk-operations-report-threads-view.md).  
+ Tato karta zobrazuje které procesy a vláken byly součástí diskové vstupně-výstupních operací jménem aktuální proces, které soubory se dotýkal (například knihovny DLL, které byly načteny), kolik bajtů byly čtení a další informace. Tato sestava slouží k vyhodnocení času stráveného v přístupu k souborům během provádění, zejména v případě, že je váš proces je pravděpodobně vázán vstupně-výstupní operace. Další informace najdete v tématu [disku sestava operací](../profiling/disk-operations-report-threads-view.md).  
   
 ## <a name="see-also"></a>Viz také  
  [Vizualizér souběžnosti](../profiling/concurrency-visualizer.md)

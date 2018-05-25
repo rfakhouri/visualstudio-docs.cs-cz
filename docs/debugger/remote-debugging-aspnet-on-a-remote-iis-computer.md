@@ -1,7 +1,7 @@
 ---
 title: Vzdálené ladění ASP.NET Core v počítači vzdálené služby IIS | Microsoft Docs
 ms.custom: remotedebugging
-ms.date: 08/14/2017
+ms.date: 05/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
@@ -11,11 +11,11 @@ manager: douge
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 952b4e4cdff2f5620870cad5903d6e20f61a862e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: cb1898c9e46de7669bc727884055f847abb0ce6e
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio-2017"></a>Vzdálené ladění ASP.NET Core na počítači vzdálené služby IIS v Visual Studio 2017
 K ladění aplikace ASP.NET, která byla nasazena do služby IIS, instalaci a spuštění nástrojů pro vzdálenou na počítači, kde jste nasadili aplikace a pak připojte k běžící aplikaci ze sady Visual Studio.
@@ -31,6 +31,14 @@ Tyto postupy jsme otestovali na tyto konfigurace serveru:
 ## <a name="requirements"></a>Požadavky
 
 Mezi dvěma počítači připojené prostřednictvím proxy serveru se nepodporuje ladění. Ladění nad vysokou latencí nebo připojení s malou šířkou pásma, například telefonického Internetu, nebo přes Internet napříč zemích se nedoporučuje a může selhat nebo být příliš pomalé. Úplný seznam požadavků, najdete v části [požadavky](../debugger/remote-debugging.md#requirements_msvsmon).
+
+## <a name="app-already-running-in-iis"></a>Aplikace už běží ve službě IIS?
+
+Tento článek obsahuje kroky nastavení základní konfiguraci služby IIS v systému Windows server a nasazení aplikace z Visual Studia. Tyto kroky jsou zahrnuty a ujistěte se, že server má požadované součásti nainstalovat aplikaci spuštěním správně a že jste připravení vzdáleného ladění.
+
+* Pokud vaše aplikace běží ve službě IIS a chcete stáhnout vzdáleného ladicího programu a spusťte ladění, přejděte na [stáhněte a nainstalujte nástroje pro vzdálenou v systému Windows Server](#BKMK_msvsmon).
+
+* Pokud chcete zobrazit nápovědu k Ujistěte se, že aplikace je nastavena, nasazení a správně fungovat ve službě IIS tak, aby můžete ladit, postupujte podle pokynů v tomto tématu.
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>Vytvoření aplikace ASP.NET Core v počítači Visual Studio 2017 
 
@@ -50,17 +58,14 @@ Mezi dvěma počítači připojené prostřednictvím proxy serveru se nepodporu
 
 ## <a name="update-browser-security-settings-on-windows-server"></a>Aktualizovat nastavení zabezpečení prohlížeče v systému Windows Server
 
-V závislosti na nastavení zabezpečení se může ušetřit čas přidat následující důvěryhodných serverů na prohlížeč, abyste si můžete snadno stáhnout software popsané v tomto kurzu. Může být potřeba přístup k těchto lokalit:
+Pokud je konfigurace rozšířeného zabezpečení aplikace je povoleno v aplikaci Internet Explorer (je povolená ve výchozím nastavení), budete muset přidat některé domény jako důvěryhodných serverů, abyste mohli stáhnout některé součásti webového serveru. Přidání důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Přidejte následující domény.
 
 - microsoft.com
 - go.microsoft.com
 - download.microsoft.com
-- visualstudio.com
 - IIS.NET
 
-Pokud používáte Internet Explorer, můžete přidat důvěryhodných serverů přechodem na **Možnosti Internetu > zabezpečení > důvěryhodných serverů > lokality**. Tyto kroky jsou u jiných prohlížečů. (Pokud budete muset stáhnout starší verze vzdáleného ladicího programu z my.visualstudio.com, některé další důvěryhodných serverů jsou nutné k přihlášení.)
-
-Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke spouštění různých skripty webu a prostředky. Ve většině případů není tyto další prostředky nutné k instalaci softwaru.
+Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke spouštění různých skripty webu a prostředky. Některé z těchto prostředků nejsou vyžadovány, ale chcete zjednodušit proces, klikněte na tlačítko **přidat** po zobrazení výzvy.
 
 ## <a name="install-aspnet-core-on-windows-server"></a>Instalace jádra ASP.NET v systému Windows Server
 
@@ -71,17 +76,47 @@ Při stahování softwaru, může dojít k žádosti o udělení oprávnění ke
 
 3. Restartování systému (nebo spuštění **net stop byl /y** následuje **net start w3svc** z příkazového řádku a pokračovat tam ke změně systému cesta).
 
-## <a name="optional-install-web-deploy-36-for-hosting-servers-on-windows-server"></a>(Volitelné) Nasazení webu instalace 3.6 pro hostitelské servery v systému Windows Server
+## <a name="choose-a-deployment-option"></a>Vyberte možnost nasazení
 
-V některých případech může být rychlejší k importu nastavení publikování v sadě Visual Studio místo ruční konfigurací možnosti nasazení. Pokud chcete importovat publikovat nastavení namísto konfigurace profil publikování v sadě Visual Studio naleznete v tématu [importu nastavení publikování a nasazení do služby IIS](../deployment/tutorial-import-publish-settings-iis.md). Jinak zůstane v tomto tématu a pokračovat ve čtení. Pokud dokončíte článek na Import nastavení publikování a nasazení aplikace úspěšně, a vraťte k tomuto tématu a spustit v části na [stahování nástrojů pro vzdálenou](#BKMK_msvsmon).
+Pokud pomoc při nasazení aplikace do služby IIS, zvažte tyto možnosti:
 
-## <a name="BKMK_install_webdeploy"></a> (Volitelné) Nasazení webu instalace 3.6 v systému Windows Server
+* Nasaďte vytvořením soubor nastavení publikování ve službě IIS a importu nastavení v sadě Visual Studio. V některých scénářích to je rychlý způsob, jak nasadit vaši aplikaci. Když vytvoříte soubor nastavení publikování, oprávnění se nastaví automaticky ve službě IIS.
 
-[!INCLUDE [remote-debugger-install-web-deploy](../debugger/includes/remote-debugger-install-web-deploy.md)]
+* Nasaďte publikování do místní složky a kopírování výstupu upřednostňovanou metodou do složky připravené aplikace ve službě IIS.
 
-## <a name="BKMK_deploy_asp_net"></a> Konfigurace webu ASP.NET na počítač s Windows serverem
+## <a name="optional-deploy-using-a-publish-settings-file"></a>(Volitelné) Nasazení pomocí soubor nastavení publikování
 
-Při importu nastavení publikování, můžete tuto část přeskočit.
+Tuto možnost můžete vytvořit soubor nastavení publikování a importujte ho do sady Visual Studio.
+
+> [!NOTE]
+> Tato metoda nasazení používá nasazení webu. Pokud chcete nakonfigurovat nasazení webu ručně v sadě Visual Studio místo importu nastavení, můžete nainstalovat webové nasazení 3.6 místo 3.6 nasazení webové pro hostování servery. Ale pokud ručně nakonfigurujete nasazení webu, budete muset Ujistěte se, že je aplikaci složky na serveru nakonfigurovat pomocí správné hodnoty a oprávnění (viz [nakonfigurovat web ASP.NET s](#BKMK_deploy_asp_net)).
+
+### <a name="install-and-configure-web-deploy-for-hosting-servers-on-windows-server"></a>Instalace a konfigurace nasazení webu pro hostování servery v systému Windows Server
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/install-web-deploy-with-hosting-server.md)]
+
+### <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Vytvořte soubor nastavení publikování ve službě IIS v systému Windows Server
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
+
+### <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Import nastavení publikování v sadě Visual Studio a nasazení
+
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
+
+Po aplikaci nasadí úspěšně, by se měl spustit automaticky. Pokud aplikace se nespustí ze sady Visual Studio, spusťte aplikaci ve službě IIS. Pro ASP.NET Core, musíte zajistit, že fond aplikací pole pro **DefaultAppPool** je nastaven na **bez spravovaného kódu**.
+
+1. V **nastavení** dialogové okno, povolte ladění kliknutím **Další**, vyberte **ladění** konfigurace a potom zvolte **odebrat další soubory v Cílový** pod **publikování souboru** možnosti.
+
+    > [!NOTE]
+    > Pokud si zvolíte konfigurace verze, můžete zakázat ladění v *web.config* souboru při publikování.
+
+1. Klikněte na tlačítko **Uložit** a poté jej znovu publikovat aplikace.
+
+## <a name="optional-deploy-by-publishing-to-a-local-folder"></a>(Volitelné) Nasazení pomocí publikování do místní složky
+
+Tuto možnost můžete použít k nasazení své aplikace, pokud chcete kopírovat aplikace do služby IIS pomocí prostředí Powershell, RoboCopy, nebo chcete ručně zkopírovat soubory.
+
+### <a name="BKMK_deploy_asp_net"></a> Konfigurace webu ASP.NET na počítač s Windows serverem
 
 1. Otevřete Průzkumníka Windows a vytvořte novou složku, **C:\Publish**, kde později nasadíte projekt ASP.NET.
 
@@ -101,17 +136,17 @@ Při importu nastavení publikování, můžete tuto část přeskočit.
 
     Pokud nevidíte jeden z těchto uživatelů s přístupem, projít kroky k přidání IUSR jako uživatel s právy ke čtení a spouštění.
 
-## <a name="bkmk_webdeploy"></a> (Volitelné) Publikujte a nasaďte aplikace pomocí nasazení webu ze sady Visual Studio
-
-[!INCLUDE [remote-debugger-deploy-app-web-deploy](../debugger/includes/remote-debugger-deploy-app-web-deploy.md)]
-
-## <a name="optional-publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>(Volitelné) Publikujte a nasaďte aplikaci pomocí publikování do místní složky ze sady Visual Studio
+### <a name="publish-and-deploy-the-app-by-publishing-to-a-local-folder-from-visual-studio"></a>Publikujte a nasaďte aplikaci pomocí publikování do místní složky ze sady Visual Studio
 
 Můžete také publikovat a nasazení aplikace pomocí systému souborů nebo jiných nástrojů.
 
 [!INCLUDE [remote-debugger-deploy-app-local](../debugger/includes/remote-debugger-deploy-app-local.md)]
 
 ## <a name="BKMK_msvsmon"></a> Stáhněte a nainstalujte nástroje pro vzdálenou v systému Windows Server
+
+V tomto kurzu používáme Visual Studio 2017.
+
+Pokud máte potíže při otevření stránky s stahování vzdáleného ladicího programu, najdete v části [odblokovat stahování souboru](../debugger/remote-debugging.md#unblock_msvsmon) nápovědu.
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
 

@@ -10,11 +10,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 8d5eca01cc5a9f910c16685f4aec36cd69f37a94
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analýza spotřeby prostředků a aktivita vláken uživatelského rozhraní (XAML)
 Použití **časová osa aplikace** profileru najít a opravit interakce aplikace související s problémy s výkonem v aplikacích XAML. Tento nástroj pomáhá zlepšit výkon aplikace XAML tím, že poskytuje podrobný přehled o spotřeby prostředků aplikace. Čas strávený aplikací Příprava rámce uživatelského rozhraní (rozložení a vykreslování), sítě a disku požadavky obsluhy a ve scénářích, jako je spuštění aplikace, načítání stránky, můžete analyzovat a změňte velikost systému Windows.  
@@ -36,7 +36,7 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 > [!NOTE]
 >  Můžete shromažďovat a analyzovat data o využití procesoru a datům o spotřebě energie spolu s **ApplicationTimeline** data. V tématu [spuštění nástroje pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Shromažďování dat časová osa aplikace  
+## <a name="collect-application-timeline-data"></a>Shromažďování dat časová osa aplikace  
  Profil rychlost reakce aplikace na místním počítači, připojeného zařízení, Visual Studio simulátoru nebo emulátorů nebo vzdáleném zařízení V tématu [spuštění nástroje pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
@@ -61,7 +61,7 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
   
      ![Časová osa sestav profileru](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analýza dat profilaci časové osy  
+## <a name="analyze-timeline-profiling-data"></a>Analýza dat profilaci časové osy  
  Chcete-li spustit analýzu, řiďte se po shromáždění profilačních dat těmito kroky:  
   
 1.  Zkontrolujte informace v **využití vlákna uživatelského rozhraní** a **Visual propustnost (FPS)** grafech a pak vyberte časový rozsah, který chcete analyzovat pomocí časová osa navigační panely.  
@@ -116,8 +116,8 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 |![Upravit podrobnosti informací časová osa](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Umožňuje zadat poznámky k událostem.|  
   
 ## <a name="see-also"></a>Viz také  
- [Blog týmu WPF: Nové uživatelské rozhraní nástroj pro analýzu výkonu aplikace WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
+ [Blog týmu WPF: nástroj pro analýzu výkonu nové uživatelské rozhraní pro aplikace WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [Osvědčené postupy z hlediska výkonu pro aplikace UWP pomocí C++, C# a Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Optimalizace výkonu aplikace WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [Profilace v sadě Visual Studio](../profiling/index.md)  
- [Prohlídka funkce profilace](../profiling/profiling-feature-tour.md)
+ [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)

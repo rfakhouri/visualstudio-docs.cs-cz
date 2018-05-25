@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ec095bd3228eb2291f77bf9fadceb0b74d8a37
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d3da2e6b5b0c9ea2701524c0fb2fde1e1313687
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Postupy: vytvoření dokumentu XML na základě schématu XSD
 
@@ -46,7 +46,7 @@ Rovněž Pamatujte, že `xs:base64Binary` pouze v případě, že dojde k výčt
 
 2.  V [Explorer schématu XML](../xml-tools/xml-schema-explorer.md), klikněte pravým tlačítkem myši `PurchaseOrder` globálním elementem. Vyberte **generovat ukázka XML**.
 
-     Když vyberete tuto možnost, soubor PurchaseOrder.xml s následujícím obsahem XML Ukázka bude vygenerována a otevřít v editoru XML:
+     Když vyberete tuto možnost, PurchaseOrder. *xml* soubor s následujícím obsahem XML Ukázka bude vygenerována a otevřít v editoru XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

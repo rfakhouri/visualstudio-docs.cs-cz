@@ -13,13 +13,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411face8be5bbb26a3f95b353916a797f9bf488
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="caller--callee-view---sampling-data"></a>Volající / volaný – zobrazení – data vzorkování
+# <a name="callercallee-view---sampling-data"></a>Zobrazení volající/volaný – vzorkování dat
 Zobrazení volající/volaný zobrazí profilování informace o vybrané funkce a její nadřazené a podřízené funkce. Zobrazení volající/volaný obsahuje tři mřížky.  
   
  **Funkci Current** se zobrazí v prostředním mřížky a ukazuje profilace informace o vybrané funkce. Hodnoty zahrnují u všech vybraných volání funkce.  

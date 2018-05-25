@@ -12,13 +12,13 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91013c0f9a6f213b70710d29d9102efc04db2821
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat o alokaci paměti a době platnosti objektů .NET
+# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat paměti přidělení a dobu života rozhraní .NET
 
 Profilace nástroje sady Visual Studio podporují kolekci přidělení paměti .NET a dat doba platnosti objektů, které vám pomůže zjistit problémy s výkonem souvisejících s pamětí ve vaší aplikaci.
 
@@ -60,12 +60,12 @@ Můžete zadat další možnosti v *výkonnostní relace *** stránky vlastnost�
 
 |Úloha|Související obsah|
 |----------|---------------------|
-|Na **Obecné** zadejte pojmenování podrobnosti vygenerovaný soubor profilování dat (.vsp).|- [Shromažďování dat životnost a přidělení paměti .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Postupy: nastavení možností názvu datového souboru výkonu](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Na **Obecné** zadejte pojmenování podrobnosti vygenerovaný soubor profilování dat (.vsp).|- [Shromažďování dat paměti přidělení a dobu života rozhraní .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Postupy: nastavení možností názvu datového souboru výkonu](../profiling/how-to-set-performance-data-file-name-options.md)|
 |Na **spusťte** vyberte aplikaci spustit, pokud máte více .exe projekty v řešení pro kód.|- [Shromažďování dat interakce vrstev](../profiling/collecting-tier-interaction-data.md)|
 |Na **sledováním interakce vrstev** přidejte ADO.NET data volání do profilace spustit.|- [Shromažďování dat interakce vrstev](../profiling/collecting-tier-interaction-data.md)|
-|Na **události systému Windows** zadejte jeden nebo více událostí trasování událostí pro Windows (ETW) ke shromažďování dat vzorkování.|- [Postupy: shromažďování trasování událostí pro Windows (ETW) dat](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
+|Na **události systému Windows** zadejte jeden nebo více událostí trasování událostí pro Windows (ETW) ke shromažďování dat vzorkování.|- [Postupy: shromažďování dat trasování událostí pro Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
 |Na **čítačů systému Windows** stránky, zadejte jeden nebo více čítačů výkonu operačního systému pro přidání do data profilování jako značky.|- [Postupy: shromažďování dat čítačů Windows](../profiling/how-to-collect-windows-counter-data.md)|
-|Na **Upřesnit** určete verzi modulu runtime rozhraní .NET Framework profilu, pokud vaše aplikace moduly pomocí více verzí. Ve výchozím nastavení je první verze načíst profilovaným.|- [Postupy: Zadejte modul Runtime rozhraní .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|Na **Upřesnit** určete verzi modulu runtime rozhraní .NET Framework profilu, pokud vaše aplikace moduly pomocí více verzí. Ve výchozím nastavení je první verze načíst profilovaným.|- [Postupy: Zadejte modul runtime rozhraní .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
 
 ## <a name="instrumentation-tasks"></a>Instrumentace úlohy
 
@@ -81,5 +81,5 @@ Můžete zadat další možnosti v *výkonnostní relace *** stránky vlastnost�
 ## <a name="see-also"></a>Viz také
 
 [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
-[Postupy: výběr metod kolekcí](../profiling/how-to-choose-collection-methods.md)  
+[Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  
 [Vlastnosti výkonnostní relace](../profiling/performance-session-properties.md)

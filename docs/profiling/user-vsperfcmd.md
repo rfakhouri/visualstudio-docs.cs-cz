@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b96005f0935f0d1a50233196aa01bf157b6e0cd
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 128fe1f59cc652d0879e346689c9e84f1c1d9e82
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="user-vsperfcmd"></a>Uživatel (VSPerfCmd)
-**Uživatele** možnost určuje, doména a uživatelské jméno účtu, který vlastní PROFILOVANÉHO proces. Tato možnost je vyžaduje jenom v případě, že je proces spuštěný jako uživatel, než je přihlášený uživatel. Vlastník proces je uvedena ve sloupci uživatelské jméno na kartě procesy ve Správci úloh systému Windows.  
+**Uživatele** možnost určuje, doména a uživatelské jméno účtu, který vlastní PROFILOVANÉHO proces. Tato možnost je vyžaduje jenom v případě, že je proces spuštěný jako uživatel, než je přihlášený uživatel. Vlastník proces je uvedena ve sloupci uživatelské jméno na **procesy** karty Správce úloh systému Windows.  
   
  **Uživatele** možnost lze zadat pouze na příkazový řádek, který obsahuje také **spustit** možnost.  
   
@@ -49,6 +49,6 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /User:SYSTEM
   
 ## <a name="see-also"></a>Viz také  
  [Vsperfcmd –](../profiling/vsperfcmd.md)   
- [Profilace samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [Profilace webových aplikací ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [Profilace služeb](../profiling/command-line-profiling-of-services.md)
+ [Profil samostatných aplikací](../profiling/command-line-profiling-of-stand-alone-applications.md)   
+ [Webové aplikace ASP.NET profilu](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [Profil služby](../profiling/command-line-profiling-of-services.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel | Microsoft Docs'
+title: 'Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,11 +18,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aeb6fa198f7e7c82e96a97382befc41a2f016d53
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ebf4896411a46b2c75edd8216bd61623bc9b728f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Postupy: Přidání podokna akcí do dokumentů aplikace Word nebo sešitů aplikace Excel
   Chcete-li přidat podokna akcí do dokumentu aplikace Microsoft Office Word nebo sešitu aplikace Microsoft Excel, nejdřív vytvořte uživatelského ovládacího prvku Windows Forms. Pak přidat uživatelský ovládací prvek na <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> vlastnost `ThisDocument.ActionsPane` pole (Word) nebo `ThisWorkbook.ActionsPane` pole (aplikace Excel) ve vašem projektu.  
@@ -62,10 +62,10 @@ ms.lasthandoff: 04/16/2018
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]  
   
-## <a name="adding-the-user-control-to-the-actions-pane"></a>Přidání uživatelského ovládacího prvku do podokna akce  
+## <a name="add-the-user-control-to-the-actions-pane"></a>Přidat uživatelský ovládací prvek do podokna akce  
  Pokud chcete zobrazit v podokně Akce, přidat uživatelský ovládací prvek na <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> vlastnost `ThisDocument.ActionsPane` pole (Word) nebo `ThisWorkbook.ActionsPane` pole (aplikace Excel).  
   
-#### <a name="to-add-the-user-control-to-the-actions-pane"></a>Chcete-li přidat uživatelský ovládací prvek do podokna akce  
+### <a name="to-add-the-user-control-to-the-actions-pane"></a>Chcete-li přidat uživatelský ovládací prvek do podokna akce  
   
 1.  Přidejte následující kód, který `ThisDocument` nebo `ThisWorkbook` třída jako deklaraci úrovni třídy (nepřidávejte tento kód do metody).  
   
@@ -81,6 +81,6 @@ ms.lasthandoff: 04/16/2018
  [Přehled podokna akcí](../vsto/actions-pane-overview.md)   
  [Návod: Vložení textu do dokumentu z podokna akcí](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
  [Postupy: Správa rozložení ovládacích prvků v podoknech akcí](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [Návod: Vložení textu do dokumentu z podokna akcí](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+ [Návod: Vložení textu do dokumentu z podokna akcí](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

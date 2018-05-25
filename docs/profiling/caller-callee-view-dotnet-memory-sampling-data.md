@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5a67bff623ce3cfa55e89057e918d19f4ba5868
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: e2115f2f5c23d244d3a8650b46fff1f0f74689ec
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Zobrazení volající/volaný – data vzorkování paměti .NET
 Zobrazení volající/volaný zobrazí data pro vybrané funkce a její nadřazené a podřízené funkce profilace sledováním využívání paměti .NET. Zobrazení volající/volaný obsahuje tři mřížky.  

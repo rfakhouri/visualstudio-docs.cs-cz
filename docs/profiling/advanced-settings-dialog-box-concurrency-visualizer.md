@@ -12,11 +12,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e06d85d879a99386c5e2e4894a56e52918cd964f
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: fc9df99b2d3cf28f5c548f1b794ad3f565f4d8b7
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Dialogové okno Upřesnit nastavení (vizualizér souběžnosti)
 Pomocí **Upřesnit nastavení** dialogové okno vizualizér souběžnosti můžete řídit, jak se shromažďují trasování.  Dialogové okno obsahuje karty pro symboly, pouze můj kód, ukládání do vyrovnávací paměti, filtrování, CLR události, značek, zprostředkovatele a soubory.  
@@ -54,12 +54,12 @@ Pomocí **Upřesnit nastavení** dialogové okno vizualizér souběžnosti můž
  Události vstupně-výstupní soubor představují přístupů na disk jménem aktuálním procesu.  Pokud zakážete vstupně-výstupní soubor události, se snižuje velikost trasování, ale zobrazení vláken nebudou podávat žádné informace o disku kanály nebo diskových operací.  
   
 ## <a name="markers"></a>Značky  
- Na kartě značek můžete nakonfigurovat sadu zprostředkovatelů trasování událostí pro Windows, které jsou zobrazeny jako značky v vizualizér souběžnosti.  Můžete také filtrovat značky kolekce na základě úroveň důležitosti a kategorie trasování událostí pro Windows.  Pokud používáte [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md) a jsou pomocí vlastního zprostředkovatele značky, můžete ji zaregistrovat zde tak, aby se zobrazí v zobrazení vláken.  
+ Na **značek** kartě, můžete nakonfigurovat sadu zprostředkovatelů trasování událostí pro Windows, které jsou zobrazeny jako značky v vizualizér souběžnosti.  Můžete také filtrovat značky kolekce na základě úroveň důležitosti a kategorie trasování událostí pro Windows.  Pokud používáte [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md) a jsou pomocí vlastního zprostředkovatele značky, můžete ji zaregistrovat zde tak, aby se zobrazí v zobrazení vláken.  
   
 ### <a name="adding-a-new-provider"></a>Přidání nového poskytovatele  
  Pokud váš kód používá [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md) nebo generuje události trasování událostí pro Windows, které následují <xref:System.Diagnostics.Tracing.EventSource> konvence, zobrazí se tyto události v Concurrency Visualizer tak, že je zaregistrujete v tomto dialogovém.  
   
- V poli Název zadejte název, který popisuje typy událostí, které jsou generovány zprostředkovatelem.  Do pole identifikátor GUID zadejte identifikátor GUID, která souvisí s tímto poskytovatelem. (Identifikátor GUID je přidružen každých zprostředkovatel trasování událostí pro Windows.)  
+ V **název** pole, zadejte název, který popisuje typy událostí, které jsou generovány zprostředkovatelem.  V **GUID** zadejte identifikátor GUID, která souvisí s tímto poskytovatelem. (Identifikátor GUID je přidružen každých zprostředkovatel trasování událostí pro Windows.)  
   
  Volitelně můžete zadat, jestli se má filtrovat události z tohoto zprostředkovatele, podle kategorie nebo důležitost.  Můžete použít kategorii pole, které chcete filtrovat podle kategorie SDK Vizualizéru souběžnosti.  K tomu, zadejte řetězec s položkami oddělenými čárkou kategorií nebo rozsahy kategorií.  Určuje kategorie události v rámci aktuálního zprostředkovatele k zobrazení.  Chcete-li přidat <xref:System.Diagnostics.Tracing.EventSource> poskytovatele, kategorie pole můžete použít k filtrování podle klíčového slova trasování událostí pro Windows.  Klíčové slovo je bitová maska, a proto můžete zadat, které bitů v masce nastaveny řetězec celých čísel oddělených čárkou. Například "1,2" Nastaví bits první a druhý, a to znamená, že do 6 v desítkové soustavě.  
   

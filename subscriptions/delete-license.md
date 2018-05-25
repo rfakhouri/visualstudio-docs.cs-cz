@@ -9,11 +9,11 @@ description: Zjistěte, jak můžou správci odstranit odběr přiřazení
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1d96cc46a43e945f4ff59ba02ea6c132385f5908
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: e759733738d35ea71cd8133179ccca1ee1037d22
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>Odstranění přiřazení v sadě Visual Studio předplatných
 
@@ -22,4 +22,4 @@ Pokud odběratel už vyžaduje předplatné sady Visual Studio, například poku
 2.  Pokud chcete odstranit vybrané subscriber(s), klikněte na tlačítko **odstranit**. 
 3.  Po zobrazení zprávy s žádostí o potvrzení odstranění, klikněte na tlačítko **OK**. 
 
-![Odstranit odběratele](_img\delete-license\delete-subscribers.png)
+    <img alt="Delete subscribers" src="_img\delete-license\delete-subscribers.png" style="border: 1px solid #CCCCCC" />

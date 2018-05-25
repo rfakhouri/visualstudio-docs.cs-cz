@@ -10,13 +10,13 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a7d850f8045ce70166bec3324470abaf61b6de
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 72f224e91f72d2fa751ddc8b170f78b8859c43f4
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
-# <a name="editing-xslt-style-sheets"></a>Úpravy XSLT šablony stylů
+# <a name="edit-xslt-style-sheets"></a>Upravit XSLT šablony stylů
 
 Editor souborů XML lze také upravit XSLT šablony stylů. Můžete využít výhod výchozí funkce editoru, jako je technologie IntelliSense, osnovy, fragmenty kódu XML a tak dále. Kromě toho existují také nové funkce, které usnadňují vývoj v XSLT.
 
@@ -29,7 +29,7 @@ Editor souborů XML lze také upravit XSLT šablony stylů. Můžete využít v�
 
  **Podtržení vlnovkami**
 
- Editor souborů XML soubor nainstalované xslt.xsd používá k ověření XSLT šablony stylů. Jako modré podtržení vlnovkami zobrazí chyby ověření. Editor souborů XML také zkompiluje šablony stylů v pozadí a sestavy kompilátoru chyby nebo upozornění s příslušnou podtržení vlnovkami.
+ Editor souborů XML používá nainstalovaného *xslt.xsd* soubor pro ověření XSLT šablony stylů. Jako modré podtržení vlnovkami zobrazí chyby ověření. Editor souborů XML také zkompiluje šablony stylů v pozadí a sestavy kompilátoru chyby nebo upozornění s příslušnou podtržení vlnovkami.
 
  **Podpora pro blocích skriptu**
 

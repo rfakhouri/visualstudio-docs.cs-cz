@@ -11,11 +11,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b023349454f71835e13e7cc891b8be92b90c153f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 907fecd348dba46f6d3375d2d994b04ec1cf1eb5
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publikování aplikace do služby IIS pomocí importu nastavení publikování v sadě Visual Studio
 
@@ -38,13 +38,11 @@ Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publ
 
 ## <a name="prerequisites"></a>Požadavky
 
-* Musíte mít nainstalovanou sadu Visual Studio a **ASP.NET** a **rozhraní .NET Framework** vývoj zatížení. Pro aplikace .NET Core, musíte taky **.NET Core** zatížení.
+* Musíte mít nainstalované Visual Studio 2017 a **ASP.NET** a **rozhraní .NET Framework** vývoj zatížení. Pro aplikace .NET Core, musíte taky **.NET Core** zatížení.
 
     Pokud jste ještě nenainstalovali Visual Studio, nainstalovat zdarma [zde](http://www.visualstudio.com).
 
-    Kroky v tomto článku jsou založeny na Visual Studio 2017
-
-* Generovat soubor nastavení publikování ze služby IIS, musíte mít počítač se systémem Windows Server 2012 s rolí webového serveru IIS 8.0 správně nakonfigurovaný a nainstalována technologie ASP.NET 4.5 nebo ASP.NET Core. ASP.NET Core, najdete v části [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Technologie ASP.NET 4.5, najdete v části [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
+* Generovat soubor nastavení publikování ze služby IIS, musíte mít počítač se systémem Windows Server 2012 nebo Windows Server 2016 a musí mít roli Webový Server IIS správně nakonfigurovaný. Také musí být nainstalována technologie ASP.NET 4.5 nebo ASP.NET Core. ASP.NET Core, najdete v části [publikování do služby IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration). Technologie ASP.NET 4.5, najdete v části [IIS 8.0 pomocí technologie ASP.NET 3.5 a technologii ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Vytvořte nový projekt ASP.NET v sadě Visual Studio
 
@@ -68,62 +66,13 @@ Soubor nastavení publikování (*\*.publishsettings*) je jiný než profil publ
 
 ## <a name="create-the-publish-settings-file-in-iis-on-windows-server"></a>Vytvořte soubor nastavení publikování ve službě IIS v systému Windows Server
 
-1. Ve službě IIS, klikněte pravým tlačítkem myši **Default Web Site**, zvolte **nasadit** > **konfigurace nasazení publikování na webu**.
-
-    ![Nakonfigurujte konfiguraci nasazení webu](../deployment/media/tutorial-configure-web-deploy-publishing.png)
-
-1. V **konfigurace nasazení publikování na webu** dialogové okno pole, zkontrolujte nastavení.
-
-1. Klikněte na tlačítko **instalační program**.
-
-    V **výsledky** panelu ukazuje výstup, které přístupová práva byl udělen zadaného uživatele a že soubor s *.publishsettings* přípona souboru byla vygenerována v uvedeném v umístění Dialogové okno.
-
-    ```xml
-    <?xml version="1.0" encoding="utf-8"?>
-    <publishData>
-      <publishProfile
-        publishUrl="https://myhostname:8172/msdeploy.axd"
-        msdeploySite="Default Web Site"
-        destinationAppUrl="http://myhostname:80/"
-        mySQLDBConnectionString=""
-        SQLServerDBConnectionString=""
-        profileName="Default Settings"
-        publishMethod="MSDeploy"
-        userName="myhostname\myusername" />
-    </publishData>
-    ```
-
-    V závislosti na konfiguraci vašeho systému Windows Server a službu IIS zobrazí se různé hodnoty. Zde jsou několik podrobnosti o hodnoty, které se zobrazí:
-
-    * *Msdeploy.axd* souboru v odkazuje `publishUrl` atribut je dynamicky generované soubor obslužné rutiny HTTP pro nasazení webu. (Pro účely testování `http://myhostname:8172` budou obecně fungovat také.)
-    * `publishUrl` Port je obvykle nastavený na port 8172, což je výchozí nastavení pro nasazení webu.
-    * `destinationAppUrl` Port je obvykle nastavený na portu 80, což výchozí nastavení pro službu IIS.
-    * Pokud není možné se připojit ke vzdálenému hostiteli v sadě Visual Studio pomocí názvu hostitele (v následujících krocích), otestujte IP adresu místo názvu hostitele.
-
-    > [!NOTE]
-    > Pokud publikujete do IIS a běžící na virtuálním počítači Azure, nasazení webu a porty IIS musí být otevřeno ve skupině zabezpečení sítě. Podrobné informace najdete v tématu [instalace a spuštění služby IIS](/azure/virtual-machines/windows/quick-create-portal#open-port-80-for-web-traffic).
-
-1. Zkopírujte tento soubor do počítače, kde je spuštěn nástroj Visual Studio.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/create-publish-settings-iis.md)]
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Import nastavení publikování v sadě Visual Studio a nasazení
 
-1. V počítači, kde máte projekt ASP.NET, otevřete v sadě Visual Studio, klikněte pravým tlačítkem na projekt v Průzkumníku řešení a zvolte **publikovat**.
+[!INCLUDE [install-web-deploy-with-hosting-server](../deployment/includes/import-publish-settings-vs.md)]
 
-1. Pokud jste dříve nakonfigurovali žádné profily publikování **publikovat** podokně se zobrazí. Klikněte na tlačítko **vytvořit nový profil**.
-
-1. V **vyberte cíl publikování** dialogové okno, klikněte na tlačítko **importovat profil**.
-
-    ![Zvolte publikování](../deployment/media/tutorial-publish-tool-import-profile.png)
-
-1. Přejděte do umístění souboru nastavení publikování, který jste vytvořili v předchozí části.
-
-1. V **soubor nastavení publikování importu** dialogové okno, přejděte do a vyberte profil, který jste vytvořili v předchozí části a klikněte na tlačítko **otevřete**.
-
-    Sada Visual Studio spustí proces nasazení a ve výstupním okně zobrazuje průběh a výsledky.
-
-    Pokud žádné nasazení dojde k chybám, klikněte na tlačítko **nastavení** úprava nastavení. Upravit nastavení a klikněte na tlačítko **ověřením** k testování nových nastavení.
-
-    ![Upravit nastavení v nástroji pro publikování](../deployment/media/tutorial-configure-publish-settings-in-tool.png)
+Po aplikaci nasadí úspěšně, by se měl spustit automaticky. Pokud se nespustí ze sady Visual Studio, spusťte aplikaci ve službě IIS. Pro ASP.NET Core, musíte zajistit, že fond aplikací pole pro **DefaultAppPool** je nastaven na **bez spravovaného kódu**.
 
 ## <a name="next-steps"></a>Další kroky
 

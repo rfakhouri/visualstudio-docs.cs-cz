@@ -10,21 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9b260c6b0e63801134c3f15eabab5b13e2926e2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6629aef7549a78f7cfdb73bb6d7ee0be3ac7412
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Postupy: přidání schématu sady vyhledávání výsledek uzlů do pracovního prostoru
 
-Toto téma vysvětluje, jak přidat uzly, kteří jsou zvýrazněni v Průzkumníku schématu XML jako výsledky hledání – klíčové slovo v pracovním prostoru.
+Toto téma vysvětluje, jak přidat uzly, které jsou vyznačené na **Explorer schématu XML** jako výsledky hledání – klíčové slovo v pracovním prostoru.
 
 > [!NOTE]
 > Pouze globální uzly mohou být přidány do [prostoru](../xml-tools/xml-schema-designer-workspace.md).
 
 
- Tento příklad používá vzorku [nákupu pořadí schématu](../xml-tools/sample-xsd-file-purchase-order-schema.md).
+ Tento příklad používá vzorku [zakoupit pořadí schématu](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 
 ## <a name="to-add-schema-set-result-nodes"></a>Chcete-li přidat schématu nastavit výsledek uzly
 
@@ -34,7 +34,7 @@ Toto téma vysvětluje, jak přidat uzly, kteří jsou zvýrazněni v Průzkumn�
 
      ![Hledání klíčových slov Explorer schématu XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
 
-     Výsledky hledání jsou zvýrazněných v Průzkumníku schématu XML a označeny rysky svislém posuvníku.
+     Výsledky hledání jsou vyznačené na **Explorer schématu XML** a označeny rysky svislém posuvníku.
 
 3.  Výsledky hledání přidat do pracovního prostoru kliknutím **přidat zvýrazněné uzly do pracovního prostoru** stisknutí tlačítka na panelu shrnutí výsledků.
 

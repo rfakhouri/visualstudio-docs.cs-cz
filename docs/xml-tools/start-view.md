@@ -10,11 +10,11 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1638e888f1185df63b1c536a0c63b374587d7b4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4932f6761ecb8c915d9d919318af6403680eedaf
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="start-view"></a>Spuštění zobrazení
 
@@ -26,9 +26,9 @@ Spuštění zobrazení obsahuje dvě hlavní části, *vodoznak* a **podrobnosti
 
 ## <a name="watermark"></a>Vodoznak
 
-V podokně vodoznak obsahuje seznam odkazů na všechna XSD Návrhář zobrazení, editoru XML a Explorer schématu XML. Pokud sada schéma obsahuje chyby, zobrazí se následující text na konci seznamu: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."
+V podokně vodoznak obsahuje seznam odkazů na všechna XSD Návrhář zobrazení, editoru XML a **Explorer schématu XML**. Pokud sada schéma obsahuje chyby, zobrazí se následující text na konci seznamu: "K zobrazení a opravte chyby v sadě pomocí seznamu chyb."
 
-## <a name="schema-set-details"></a>Informace o schématu sady
+## <a name="schema-set-details"></a>Podrobnosti sady schématu
 
 **Podrobnosti o nastavení schématu** podokně jsou uvedeny typy uzlu globální schématu a kolik instancí každého typu existují ve schématu. Můžete použít **přidat** odkazy vedle typy uzlů pro přidání nových uzlů do pracovního prostoru.
 
@@ -42,9 +42,9 @@ Následující tlačítka jsou povolené v panelu nástrojů Návrhář XSD při
 
 |Možnost|Popis|
 |------------|-----------------|
-|**Nastaví počáteční zobrazení**|Přepne do zobrazení Start. Toto zobrazení je přístupná pomocí klávesové zkratky: **CTRL + 1**.|
-|**Nastaví zobrazení modelu obsahu**|Přepne do zobrazení modelu obsahu. Toto zobrazení je přístupná pomocí klávesové zkratky: **CTRL + 2**.|
-|**Zobrazit zobrazení grafu**|Přepne do zobrazení grafu. Toto zobrazení je přístupná pomocí klávesové zkratky: **CTRL + 3**.|
+|**Nastaví počáteční zobrazení**|Přepne do zobrazení Start. Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**1**.|
+|**Nastaví zobrazení modelu obsahu**|Přepne do zobrazení modelu obsahu. Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**2**.|
+|**Zobrazit zobrazení grafu**|Přepne do zobrazení grafu. Toto zobrazení je přístupná pomocí klávesové zkratky: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Viz také
 

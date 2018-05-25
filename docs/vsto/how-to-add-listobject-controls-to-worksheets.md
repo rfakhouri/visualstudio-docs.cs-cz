@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ab95f3929b556f6ece0d3b44ee12bad6f21a361
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 5af88022529263446c82fc27aee9d781d7da945f
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Postupy: Přidání ovládacích prvků ListObject do listů
   Můžete přidat <xref:Microsoft.Office.Tools.Excel.ListObject> ovládacích prvků na list aplikace Microsoft Office Excel v době návrhu a v době běhu projekty na úrovni dokumentu.  
@@ -44,7 +44,7 @@ ms.lasthandoff: 05/17/2018
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-#### <a name="to-use-the-ribbon-in-excel"></a>Používání pásu karet v aplikaci Excel  
+### <a name="to-use-the-ribbon-in-excel"></a>Používání pásu karet v aplikaci Excel  
   
 1.  Na **vložit** ve **tabulky** klikněte na možnost **tabulky**.  
   

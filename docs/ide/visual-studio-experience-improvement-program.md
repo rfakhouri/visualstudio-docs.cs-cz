@@ -10,15 +10,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4558e086ec53aa0e264fd55a322d4b5acaac7aa
-ms.sourcegitcommit: cc88ccc6aacebe497899fab05d243a65053e194c
+ms.openlocfilehash: 57338d465710e608079bf289db4516de46a88277
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programu zlepšování zkušeností zákazníků v sadě Visual Studio
 
-Visual Studio zákazníka prostředí zlepšování Program (VSCEIP) je program pomáhá společnosti Microsoft zlepšovat Visual Studio v čase. Tento program shromažďuje informace o hardwaru počítače a jak lidé použijte sadu Visual Studio, aniž by to ovlivnilo uživatelům v jejich úlohy v počítači. Shromažďované informace pomáhají společnosti Microsoft určit funkce, které ke zlepšení. Tento dokument popisuje, jak přidat nebo zrušit VSCEIP.
+Visual Studio zákazníka prostředí zlepšování Program (VSCEIP) usnadňuje společnosti Microsoft zlepšovat Visual Studio v čase. Tento program [shromažďuje informace o chybách](../ide/diagnostic-data-collection.md), hardwaru počítače a jak lidé použijte sadu Visual Studio, aniž by to ovlivnilo uživatelům v jejich úlohy v počítači. Shromažďované informace pomáhají společnosti Microsoft určit funkce, které ke zlepšení. Tento dokument popisuje, jak přidat nebo zrušit VSCEIP.
 
 ## <a name="opt-in-or-out"></a>OPT příchozí nebo odchozí
 
@@ -58,6 +58,7 @@ Další informace o informacích shromažďovaných, zpracovávaných a přená�
 
 ## <a name="see-also"></a>Viz také
 
+* [Diagnostické údaje shromážděné pomocí sady Visual Studio](diagnostic-data-collection.md)
 * [Kontaktujte nás](../ide/talk-to-us.md)
 * [Postup nahlásit problém pomocí sady Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
 * [Komunity vývojářů v sadě Visual Studio](https://developercommunity.visualstudio.com/)

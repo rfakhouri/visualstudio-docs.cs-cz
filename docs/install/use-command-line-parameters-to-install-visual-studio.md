@@ -16,11 +16,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3369fde3a9363951bf08b7af04ed35afc38a45c5
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: a27148619879ea90dba21704a0aa57fdf5f04551
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku
 
@@ -60,7 +60,7 @@ Možnosti příkazového řádku se používají ve spojení s zaváděcí nást
 | `--installPath <dir>` | Instalační adresář pro instanci k provedení akce. Pro příkaz instalace jde **volitelné** a nainstalovanou instanci. Pro jiné příkazy jde **požadované** a nainstalovanou dříve nainstalovanou instanci. |
 | `--addProductLang <language-locale>` | **Volitelné**: během instalace nebo upravte činnost, tato hodnota určuje jazykové sady uživatelského rozhraní, které jsou nainstalovány do produktu. Může se objevit vícekrát na příkazový řádek pro přidání více jazykových sad. Pokud není přítomný, instalace používá národní prostředí počítače. Další informace najdete v tématu [seznam národní prostředí](#list-of-language-locales) části na této stránce.|
 | `--removeProductLang <language-locale>` | **Volitelné**: během instalace nebo upravte činnost, tato hodnota určuje jazykové sady uživatelského rozhraní, které budou odebrány z produktu. Může se objevit vícekrát na příkazový řádek pro přidání více jazykových sad. Další informace najdete v tématu [seznam národní prostředí](#list-of-language-locales) části na této stránce.|
-| `--add <one or more workload or component IDs>` | **Volitelné**: jeden nebo více úloh nebo ID součástí, které chcete přidat. Artefaktu požadované součásti jsou nainstalovány, ale ne doporučené nebo volitelné součásti. Můžete řídit další součásti globálně pomocí `--includeRecommended` nebo `--includeOptional`. Pro řízení citlivější, můžete připojit `;includeRecommended` nebo `;includeOptional` ID (například `--add Workload1;includeRecommended` nebo `--add Workload2;includeRecommended;includeOptional`). Další informace najdete v tématu [zatížení a ID součástí](workload-and-component-ids.md) stránky. Tato možnost v případě potřeby můžete opakovat.|
+| `--add <one or more workload or component IDs>` | **Volitelné**: jeden nebo více úloh nebo ID součástí, které chcete přidat. Artefaktu požadované součásti jsou nainstalovány, ale ne doporučené nebo volitelné součásti. Můžete řídit další součásti globálně pomocí `--includeRecommended` nebo `--includeOptional`. Chcete-li zahrnout více úloh nebo součásti, opakujte `--add` příkazu (například `--add Workload1 --add Workload2`). Pro řízení citlivější, můžete připojit `;includeRecommended` nebo `;includeOptional` ID (například `--add Workload1;includeRecommended` nebo `--add Workload2;includeRecommended;includeOptional`). Další informace najdete v tématu [zatížení a ID součástí](workload-and-component-ids.md) stránky. Tato možnost v případě potřeby můžete opakovat.|
 | `--remove <one or more workload or component IDs>` | **Volitelné**: jeden nebo více úloh nebo ID součástí odebrat. Další informace najdete v tématu naše [zatížení a ID součástí](workload-and-component-ids.md) stránky. Tato možnost v případě potřeby můžete opakovat.|
 | `--in <path>` | **Volitelné**: URI nebo cestu k souboru odpovědí.  |
 | `--all` | **Volitelné**: jestli se mají nainstalovat všechny úlohy a součásti pro produkt. |

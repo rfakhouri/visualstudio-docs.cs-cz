@@ -23,11 +23,11 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b153f5e411cabc8975ad1a2dca1ed212372b63ee
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d49d2b2b4f69cb20a87c50a0a7e0dc9791eb42ec
+ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="general-debugging-options-dialog-box"></a>Obecné, ladění, dialogové okno Možnosti
 **Nástroje > Možnosti > ladění > Obecné** stránce můžete nastavit následující možnosti:  
@@ -94,11 +94,11 @@ Informuje ladicího programu sady Visual Studio získat zdrojové soubory ze zdr
 - **Povolit zdrojového serveru pro částečnou důvěryhodností sestavení (pouze spravované)**  
     Pokud je povolená podpora zdrojového serveru, toto nastavení přepisuje výchozí chování není načítají se zdroje pro sestavení s částečnou důvěryhodností.  
 
-- **Povolit podporu odkaz zdroje**  
+**Povolit podporu odkaz na zdroj**  
     Informuje ladicího programu sady Visual Studio ke stažení zdrojových souborů pro soubory PDB, které obsahují informace o propojení zdroje. Další informace o odkaz na zdroj, najdete v článku [zadání odkazu zdroje](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
     > [!IMPORTANT]
-    >  Vzhledem k tomu, že odkaz na zdroj bude stáhnout soubory pomocí protokolu http nebo https, ujistěte se, že důvěřujete na soubor .pdb.  
+    >  Because Source Link will download files using http or https, make sure you trust the .pdb file.  
   
 **Zvýrazněte celý řádek pro zarážky a aktuální příkaz (pouze C++)**  
 Když ladicího programu označuje bod přerušení nebo aktuální příkaz, označuje celý řádek.  

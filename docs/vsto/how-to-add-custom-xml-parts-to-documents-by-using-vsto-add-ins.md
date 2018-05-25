@@ -22,11 +22,11 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d652f0890b32197bb13a3f73221f9ee2a92bcfc8
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 803a0c146bbf17ee79f79fe5de95fdf2ee2151da
+ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>Postupy: Přidání vlastních částí XML do dokumentů s použitím doplňků VSTO
   V následujících typech dokumentů můžete ukládat XML data tak, že vytvoříte vlastní část XML v doplňku VSTO:  
@@ -41,7 +41,7 @@ ms.lasthandoff: 05/17/2018
   
  **Platí pro:** informace v tomto tématu se vztahují na projekty na úrovni aplikace pro aplikaci Excel, PowerPoint a Word. Další informace najdete v tématu [dostupné funkce podle aplikace a projekt typu Office](../vsto/features-available-by-office-application-and-project-type.md).  
   
-### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Chcete-li přidat vlastní část XML do sešitu aplikace Excel  
+## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Chcete-li přidat vlastní část XML do sešitu aplikace Excel  
   
 1.  Přidejte nový <xref:Microsoft.Office.Core.CustomXMLPart> do objektu <xref:Microsoft.Office.Interop.Excel._Workbook.CustomXMLParts%2A> kolekce v sešitu. <xref:Microsoft.Office.Core.CustomXMLPart> Obsahuje řetězec XML, který chcete uložit v sešitu.  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 05/17/2018
   
 3.  Volejte metodu z jiných kódu v projektu. Například pokud chcete vytvořit vlastní část XML, když uživatel otevře sešitu, volat z obslužné rutiny události pro metodu <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> událostí.  
   
-### <a name="to-add-a-custom-xml-part-to-a-word-document"></a>Přidat na vlastní část XML do dokumentů aplikace Word  
+## <a name="to-add-a-custom-xml-part-to-a-word-document"></a>Přidat na vlastní část XML do dokumentů aplikace Word  
   
 1.  Přidejte nový <xref:Microsoft.Office.Core.CustomXMLPart> do objektu <xref:Microsoft.Office.Interop.Word._Document.CustomXMLParts%2A> kolekce v dokumentu. <xref:Microsoft.Office.Core.CustomXMLPart> Obsahuje řetězec XML, který chcete uložit v dokumentu.  
   
@@ -67,7 +67,7 @@ ms.lasthandoff: 05/17/2018
   
 3.  Volejte metodu z jiných kódu v projektu. Například pokud chcete vytvořit vlastní část XML, když uživatel otevře dokument, volat z obslužné rutiny události pro metodu <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> událostí.  
   
-### <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Přidat na vlastní část XML do Powerpointovou prezentaci.  
+## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>Přidat na vlastní část XML do Powerpointovou prezentaci.  
   
 1.  Přidejte nový <xref:Microsoft.Office.Core.CustomXMLPart> do objektu <xref:Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts%2A> kolekce v prezentaci. <xref:Microsoft.Office.Core.CustomXMLPart> Obsahuje řetězec XML, který chcete uložit v prezentaci.  
   
