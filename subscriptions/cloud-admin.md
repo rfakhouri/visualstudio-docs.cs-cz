@@ -9,11 +9,12 @@ description: Nastavení správci Cloudová předplatná
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3c48c89a729f7eeb26680163c997669f3976e417
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335681"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>Nastavení správce pro Visual Studio Cloudová předplatná
 
@@ -46,5 +47,5 @@ Odběrateli, kterou jste určili, se nyní zobrazí v Centru pro stránky a jej�
 Nový správce teď může přihlásit k [portálu pro správu](https://manage.visualstudio.com), vyberte stejné předplatné Azure, která se použila k nákupu předplatných cloud ze seznamu v horní levého horního rohu stránky a začít spravovat ty odběry. 
 
 
-Informace o předplatných cloudové služby Visual Studio najdete v tématu [přehled](/vscloud-overview/) pod kdybyste kupovali Cloudová předplatná. Chcete-li zakoupit Visual Studio Cloudová předplatná, navštivte Visual Studio Marketplace v [ https://marketplace.visualstudio.com/subscriptions ](https://marketplace.visualstudio.com/subscription). 
+Informace o předplatných cloudové služby Visual Studio najdete v tématu [přehled](vscloud-overview.md) pod kdybyste kupovali Cloudová předplatná. Chcete-li zakoupit Visual Studio Cloudová předplatná, navštivte Visual Studio Marketplace v [ https://marketplace.visualstudio.com/subscriptions ](https://marketplace.visualstudio.com/subscription). 
 

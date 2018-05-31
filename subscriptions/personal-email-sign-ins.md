@@ -9,11 +9,12 @@ description: Visual Studio odběry – Proč se zobrazuje Hotmail nebo z Gmailu 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 3ac8a86bae706b4a68b8e3ccde94a9ee84d608a9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a9b0e02acd0c362759997938cec91983a5d48547
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335717"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Visual Studio odběry – Proč se zobrazuje Hotmail nebo z Gmailu adres pro moje odběratele? 
 
@@ -34,6 +35,6 @@ Vzhledem k tomu, že Správce migrace trvá data z webu VLSC týkající se odb�
 
 ## <a name="solution"></a>Řešení
 
-K odstranění problému, budete muset upravit informace o odběru k aktualizaci jejich přihlášení e-mailové adresy.  Můžete provedeny úpravy, u jednotlivých odběratelů nebo hromadně. Úplné informace, navštivte [úpravou odběru](/visualstudio/subscriptions/edit-license).  
+K odstranění problému, budete muset upravit informace o odběru k aktualizaci jejich přihlášení e-mailové adresy.  Můžete provedeny úpravy, u jednotlivých odběratelů nebo hromadně. Úplné informace, navštivte [úpravou odběru](edit-license.md).  
 
 Jakmile jste aktualizovali subscriber(s) e-mailové adresy, můžete s upozorněním, že došlo ke změně jejich přihlašovací údaje.  Také uživatelé obdrží e-mail s aktualizované informace.   

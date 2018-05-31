@@ -9,11 +9,12 @@ description: Zjistěte, jak znovu odeslat přiřazení předplatné odběratelů
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ee41426aa845f8a6c7ae2b414bec7bc3a814bcfe
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2edabf44637672f45241299703cb3d3f88348b6c
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335954"
 ---
 # <a name="how-to-resend-subscription-assignment-emails-in-the-visual-studio-subscription-management-portal"></a>Postup opětovné odeslání odběr e-mailů přiřazení v portálu pro správu předplatného sady Visual Studio
 
@@ -21,7 +22,7 @@ ms.lasthandoff: 04/27/2018
 Proces pro odešlete přiřazení e-mailů z portálu manage.visualstudio.com je velmi jednoduchý:
 
 1. Přejděte [manage.visualstudio.com](https://manage.visualstudio.com) portál a přihlaste se. 
-2. Použití **filtru** karta používá k hledání pro odběratele, do kterého chcete znovu odeslat e-mail přiřazení. (Další informace o filtrování, najdete v tématu [vyhledejte předplatné](/visualstudio/subscriptions/search-license).)
+2. Použití **filtru** karta používá k hledání pro odběratele, do kterého chcete znovu odeslat e-mail přiřazení. (Další informace o filtrování, najdete v tématu [vyhledejte předplatné](search-license.md).)
 3. Klikněte na subscriber(s).  Můžete pomocí kombinace Ctrl + klikněte na tlačítko nebo Shift + kliknutí myši a vyberte více odběrateli.
 4. Klikněte na tlačítko **znovu odeslal** v horní části výsledků vyhledávání.  
 
