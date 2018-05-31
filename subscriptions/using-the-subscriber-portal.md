@@ -9,17 +9,18 @@ description: Další informace o celou řadu výhod, které jsou k dispozici na 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: cb6e33e442a5b4d63f4c1950df382da9a439643f
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 1fc8c77e71f32e2bb559426b3447d0bbc293e785
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335928"
 ---
 # <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Pomocí portálu odběratele - Moje. <span> </span>Visual Studio<span></span>.com
 
 Visual Studio odběry portálu, [ https://my.visualstudio.com ](https://my.visualstudio.com?wt.mc_id=o~msft~docs), je vše v jednom prostředku umožní využít celou řadu výhod, které jsou poskytované prostřednictvím předplatné sady Visual Studio. 
 
-Pomocí portálu vyžaduje přihlásit identita spojená s vaším předplatným.  Důvodem může být váš účet Microsoft (MSA) nebo e-mailovou adresu, které jste získali od organizace, jako je například váš zaměstnavatel nebo škola.  Další informace o [přihlášení](/visualstudio/subscriptions/signing-in).
+Pomocí portálu vyžaduje přihlásit identita spojená s vaším předplatným.  Důvodem může být váš účet Microsoft (MSA) nebo e-mailovou adresu, které jste získali od organizace, jako je například váš zaměstnavatel nebo škola.  Další informace o [přihlášení](signing-in.md).
 
 Na portálu jsou uspořádána do šesti stránek.  Každé stránce vám poskytne přístup k jiné produkty nebo služby, které jsou součástí vašeho předplatného.  Šest stránky jsou výhody, soubory ke stažení, kódy Product Key, odběry, podpory a Marketplace.  
 
@@ -51,5 +52,5 @@ Kromě jednotlivých výhody nalezeny v kategorii podpory na stránce výhody st
 - Prozkoumejte [nejčastější dotazy](https://www.visualstudio.com/my/myvsfaq)
 - Přístup k [podporovat prostředky](https://www.visualstudio.com/subscriptions/support/) řešení technických problémů nebo dotazy týkající se prodeje odběry, účty a fakturace.
 
-## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
+## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace.](https://marketplace.visualstudio.com/)
 Je třeba obnovit cloudové předplatné sady Visual Studio?  Chcete stáhnout nejnovější rozšíření pro Visual Studio rodinu produktů?  Na webu Marketplace pomáhá uživatelům najít rozšíření, nástroje a služby, které bylo Visual Studio Team Services, Team Foundation Server a Visual Studio Code ještě lepší. Můžete i stane vydavatel a publikování vlastní rozšíření na webu Marketplace. 

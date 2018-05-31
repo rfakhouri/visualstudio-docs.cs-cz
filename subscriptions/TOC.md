@@ -74,10 +74,9 @@
 #### [Správa předplatných pro MPN](manage-mpn-subscriptions.md)
 #### [Microsoft pro startupy](program-startups.md)
 ## Prostředky
-### [Licenční podmínky pro Visual Studio](vs-license-terms.md)
 ### [White paper k licencování sady Visual Studio](http://aka.ms/vslicensing)
 ### [Porovnání možností a cen předplatného](https://www.visualstudio.com/vs/pricing)
 ### [Porovnání funkcí integrovaných vývojových prostředí (IDE) sady Visual Studio](https://www.visualstudio.com/vs/compare)
 ### [Podpora správy a předplatných sady Visual Studio](https://www.visualstudio.com/support/support-overview-vs)
-### [Multilicence a práva k používání produktů (PUR)](http://www.microsoft.com/licensing/product-licensing/products.aspx)
+### [Podmínky multilicenčních programů](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Smlouva o produktech a službách společnosti Microsoft](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

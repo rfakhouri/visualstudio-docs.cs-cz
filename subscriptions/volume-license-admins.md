@@ -9,11 +9,12 @@ description: Zjistěte, jak mohou správci předplatného přístup k portálu p
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 mearchscope: VS Subscription
-ms.openlocfilehash: 33ed7f26e146efffb66b7fabde65dc45276d085d
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e403e1d8282b3f0a18058105bca0150938a956cf
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335889"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Přístup k portálu a správu správců - odběrů získaných prostřednictvím webu Volume Licensing (VL)
 
@@ -36,7 +37,7 @@ Pokud vaše organizace je připravené k zařazený, nemá pro Visual Studio odb
 
      a. V e-mailu, primárním serverem a kontakty oznámení jsou jedinečný odkaz a za poslední tři číslice z jejich veřejné zákaznické číslo (kontrolního čísla výrobku).  (Pokud primární server nebo oznámení kontakty zobrazí více než jeden e-mailu, to znamená, že mají více než jeden kontrolního čísla výrobku. Budou potřebovat k dokončení procesu pomocí jedinečný odkaz pro kontrolního čísla výrobku odkazuje v každém e-mailu.)
 
-     b. Chcete-li získat celý kontrolního čísla výrobku, primárního kontaktu muset přihlásit k webu VLSC. [Pokyny týkající se umísťování kontrolního čísla výrobku](/find-pcn/) 
+     b. Chcete-li získat celý kontrolního čísla výrobku, primárního kontaktu muset přihlásit k webu VLSC. [Pokyny týkající se umísťování kontrolního čísla výrobku](find-pcn.md) 
 
      c. Po získání kontrolního čísla výrobku, budete potřebovat k výběru jejich jedinečný odkaz, který se výzva k přihlášení. Bude moct přihlásit pomocí pracovní nebo školní účet (Pokud je vaše organizace na AAD) nebo účet Microsoft (MSA), pokud vaše organizace není v AAD. 
 
@@ -46,6 +47,6 @@ Pokud vaše organizace je připravené k zařazený, nemá pro Visual Studio odb
 
 3.  Přístup k portálu pro správu nové předplatné. Po migraci vaší organizace, odešle e-mailů pro nově přidaného super správci a správci pozváním pro přístup k portálu nový a začít spravovat odběry.  
 
-Pokud potřebujete přidat do nové Visual Studio odběry portálu pro správu a nejste si jisti, který je primární nebo oznámení kontaktu, můžete najít tyto informace po přihlášení k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Podívejte se [najít vaše primárního kontaktu](/find-primary-contact/) tématu kroky, jak najít kontakt primární nebo oznámení v na webu VLSC.
+Pokud potřebujete přidat do nové Visual Studio odběry portálu pro správu a nejste si jisti, který je primární nebo oznámení kontaktu, můžete najít tyto informace po přihlášení k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Podívejte se [najít vaše primárního kontaktu](find-primary-contact.md) tématu kroky, jak najít kontakt primární nebo oznámení v na webu VLSC.
 
 Pokud jste již byla nastavili jako správce, pak můžete přejít přímo na odběry v sadě Visual Studio na portálu pro správu: [ https://manage.visualstudio.com ](https://manage.visualstudio.com). 

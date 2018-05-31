@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6c5b97460defeaa22ad20e9a1ff4be38514b020a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
-ms.translationtype: HT
+ms.openlocfilehash: 032a2084ea70d6afb22de63d829a89362ad72dd7
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34335655"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>Profilace webových aplikací ASP.NET z příkazového řádku
 Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] webové aplikace pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci z příkazového řádku.  
@@ -37,6 +38,7 @@ Tato část popisuje postupy a možnosti pro shromažďování dat výkonu pro [
 |**Přidání dat interakce vrstev:** můžete přidat data výkonu o synchronní [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] volá, který [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] provede webové aplikace Microsoft [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] databáze.|-   [Shromažďování dat interakce vrstev](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>Související úlohy
+
   
 |Úloha|Související obsah|  
 |----------|---------------------|  

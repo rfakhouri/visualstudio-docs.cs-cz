@@ -9,11 +9,12 @@ description: Svazek licence Service Center Správce migrace nejčastější dota
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 014564880dcc7587a1f94e3815d6f36edb36cee3
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: e4dda4264ae48903e98166346f9e2569ab1e4da0
+ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 05/19/2018
+ms.locfileid: "34336123"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Visual Studio odběry správy migrace
 
@@ -78,7 +79,7 @@ Bude pokračovat, Správa předplatných prostřednictvím webu VLSC, dokud obdr
 Přihlaste se k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) a přejděte následující cestě: **odběry** > **Visual Studio odběry**. Níže se nachází kontrolního čísla výrobku **smlouvy nebo veřejné zákaznické číslo výsledky**. Získat pokyny krok za krokem k vyhledání vaší kontrolního čísla výrobku v tomto [článek nápovědy](/find-pcn/). 
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>Jak zjistím, kdo je můj primární nebo kontaktujte oznámení?
-Přihlaste se k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) a přejděte následující cestě: **licencí > vztah Souhrn** vyberte vaše **licencování ID > kontakty**. Získat pokyny krok za krokem k hledání vaši primární nebo kontaktujte oznámení v tomto [článek nápovědy](/find-primary-contact/). 
+Přihlaste se k [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) a přejděte následující cestě: **licencí > vztah Souhrn** vyberte vaše **licencování ID > kontakty**. Získat pokyny krok za krokem k hledání vaši primární nebo kontaktujte oznámení v tomto [článek nápovědy](find-primary-contact.md). 
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>Co když můj primární nebo kontaktujte oznámení zmizel, už ve společnosti nebo není k dispozici k dokončení registrace?
 Budete muset [obraťte se na podporu](https://www.visualstudio.com/subscriptions/support/#talktous) a zadejte e-mailu, který jste použili na webu VLSC pro správu předplatných. Po ověření, nebudou podporu pomoc při procesu registrace. 
@@ -106,8 +107,8 @@ Pro většinu aktuální informace týkající se této migrace, navštivte naš
 
 - Visual Studio odběry a správu [podporu](https://www.visualstudio.com/subscriptions/support/) 
 
-- [Jak najít Můj kontrolního čísla výrobku](/find-pcn/)
+- [Jak najít Můj kontrolního čísla výrobku](find-pcn.md)
 
-- [Jak najít mé primární nebo kontaktujte oznámení](/find-primary-contact/) 
+- [Jak najít mé primární nebo kontaktujte oznámení](find-primary-contact.md) 
 
 - [Video](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) pro registraci vaší organizace a Správa správců 
