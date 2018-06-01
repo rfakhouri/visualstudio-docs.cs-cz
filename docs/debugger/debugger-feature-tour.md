@@ -1,6 +1,6 @@
 ---
-title: První pohled na ladicí program
-description: Rychlé prohlédněte různých funkcí ladicího programu sady Visual Studio.
+title: První seznámení s ladicím programem
+description: Prohlédněte si rychlý různých funkcí ladicího programu sady Visual Studio.
 ms.custom: mvc
 ms.date: 03/27/2018
 ms.technology: vs-ide-debug
@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d93994c9a0b9521049070048ec2cc38a03e9c91
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de27a6b3fd5b182ac2fa0ad12ed04e4d1105d9ac
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691089"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>První pohled na Visual Studio Debugger
 
@@ -76,7 +77,7 @@ V ladicím programu, najeďte myší na řádek kódu až **spustit kliknutím**
 
 ![Spustit kliknutím](../debugger/media/dbg-tour-run-to-click-2.png "spustit kliknutím")
 
->  [!NOTE] 
+> [!NOTE]
 > **Spustit kliknutím** tlačítko (Spustit provádění sem) je nového v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Klikněte **spustit kliknutím** tlačítko (Spustit provádění sem). Ladicí program přejde na řádek kódu, kde jste klikli na.
@@ -104,7 +105,6 @@ Pokud jste nastavili zarážky, ladicí program se pozastaví na první zarážc
 Stisknutím klávesy F5, dokud se nedostanete na řádek kódu, kde jste vybrali **spustit ke kurzoru**.
 
 Tento příkaz je užitečné, pokud jsou úpravy kódu a chcete rychle zarážku dočasné a spuštění ladicího programu.
-
 
 > [!NOTE]
 > Můžete použít **spustit ke kurzoru** v **zásobníkem volání** okno při ladění.
@@ -179,7 +179,7 @@ Můžete také klikněte pravým tlačítkem na nabídky z **zásobníkem volán
 ## <a name="examine-an-exception"></a>Zkontrolujte výjimku
 
 Pokud vaše aplikace vyvolá výjimku, ladicího programu přejdete na řádek kódu, která vrátila výjimku.
-     
+
 ![Pomocníka výjimka](../debugger/media/dbg-tour-exception-helper.png "pomocníka výjimka")
 
 V tomto příkladu **pomocníka výjimka** se dozvíte `System.Argument` výjimku a chybová zpráva s upozorněním, že cesta není právní formuláře. Ano víme, že k chybě došlo na argumentu metody nebo funkce.
@@ -188,7 +188,7 @@ V tomto příkladu `DirectoryInfo` uvedl chyba na prázdný řetězec uložený 
 
 Pomocníka výjimka je skvělé funkce, která vám může pomoct ladění chyb. Můžete také provádět akce podobně jako zobrazení Podrobnosti o chybě a přidat kukátko z pomocníka výjimka. Nebo v případě potřeby můžete změnit podmínky pro vyvolání konkrétní výjimka.
 
->  [!NOTE] 
+>  [!NOTE]
 > Pomocníka výjimka nahrazuje Pomocníka pro výjimky v [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Rozbalte **nastavení výjimky** uzlu zobrazíte další možnosti o tom, jak zpracovávat tento typ výjimky, ale nebudete muset změnit všechno u této ukázky!
@@ -209,7 +209,7 @@ Další informace najdete v tématu [ladění za provozu aplikace ASP.NET pomoc�
 
 Můžete vyhledat a zobrazit snímky pomocí **krok zpětné** a **krok dál** tlačítek na panelu nástrojů ladění. Tato tlačítka přejděte události, které se zobrazují v **události** ve **diagnostické nástroje** okno.
 
-![Krok tlačítka vpřed a zpět](../debugger/media/intellitrace-step-back-icons-description.png  "krok zpět a jejich předávání tlačítka")  
+![Krok tlačítka vpřed a zpět](../debugger/media/intellitrace-step-back-icons-description.png  "krok zpět a jejich předávání tlačítka")
 
 Další informace najdete v tématu [zobrazit snímky IntelliTrace zpětným krok pomocí](../debugger/how-to-use-intellitrace-step-back.md) stránky.
 

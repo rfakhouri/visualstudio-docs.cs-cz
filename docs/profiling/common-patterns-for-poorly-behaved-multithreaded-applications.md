@@ -14,10 +14,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9929fc5acfe58d51de9142abc7addd539cf2b74e
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34549003"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Obecné vzory pro vícevláknové aplikace s nevhodným chováním
 
@@ -69,6 +70,6 @@ Nadměrné využití nebo zneužití vstupně-výstupních operací je obvyklou 
 
 Při zámky v pořadí dřív přijde, dřív získá aplikace, a jestliže je míra přijetí na zámek vyšší než počet pořízení dojde k uzamčení sestavy. Kombinace těchto dvou případů způsobí, že žádosti o zámek spusťte zálohování. Jedním ze způsobů boje proti tomuto problému se má používat "nekalé" zámky nebo zámky, která umožňují přístup k první vlákno, kde je najít v odemknout stavy. Toto chování convoy na předchozím obrázku. Chcete-li problém vyřešit, zkuste zmenšit kolizí pro objekty synchronizace a zkuste to pomocí nekalé zámky.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Zobrazení vláken](../profiling/threads-view-parallel-performance.md)

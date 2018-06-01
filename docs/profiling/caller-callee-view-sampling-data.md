@@ -14,10 +14,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b9b740689175f91f4bc69396121da0bed336532
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548707"
 ---
 # <a name="callercallee-view---sampling-data"></a>Zobrazení volající/volaný – vzorkování dat
 Zobrazení volající/volaný zobrazí profilování informace o vybrané funkce a její nadřazené a podřízené funkce. Zobrazení volající/volaný obsahuje tři mřížky.  
@@ -48,7 +49,7 @@ Zobrazení volající/volaný zobrazí profilování informace o vybrané funkce
 |**Výhradní ukázky**|-Pro funkci aktuální počet vzorků v profilaci spuštění, které byly shromážděny při tato funkce byla přímo provádění; To znamená, když tato funkce byla v horní části zásobníku volání. Ukázky, které byly shromážděny při podřízené funkce této funkce jsou prováděny nejsou v výhradní počty zahrnuty.<br />-Pro volající funkce počet výhradní vzorků aktuální funkce, které byly shromážděny při volání této funkce aktuální funkce.<br />-Pro funkci volaný, počet výhradní ukázky této funkce, které byly shromážděny při funkci current volání této funkce.|  
 |**% Výhradní ukázky**|Procento všechny ukázky v profilaci spuštění, které byly výhradní ukázky této funkce.|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Zobrazení volající/volaný – data vzorkování paměti .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Zobrazení volající/volaný – data instrumentace paměti .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Zobrazení volající/volaný – data instrumentace](../profiling/caller-callee-view-instrumentation-data.md)

@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5735c1c4cd1ec5521b9eea00bdc31ab53e67b325
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: df9ba88809303e5d093c4fb644e4b936dfbcf1f0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692197"
 ---
 # <a name="configure-performance-sessions"></a>Konfigurace výkonnostních relací
 Pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích pro profilaci, můžete shromáždit celou řadu údaje o výkonu pro velký počet typů aplikací. V této části se dozvíte, jak pomocí výkonu Wizardand vlastnosti výkonnostní relace a cílový binární soubor konfigurace nástrojů profilace ke shromažďování dat, které vás zajímají. Vlastnosti konfigurace nástroje pro profilaci můžete použít také k řízení množství dat, které se shromažďují v profilaci spustit. Další informace najdete v tématu [řízení shromažďování dat](../profiling/controlling-data-collection.md).  
@@ -38,5 +39,5 @@ Pomocí [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nástrojích p
 ## <a name="related-sections"></a>Související oddíly  
  [Řízení shromažďování dat](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Prohlížeč výkonu](../profiling/performance-explorer.md)

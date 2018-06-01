@@ -1,6 +1,6 @@
 ---
 title: Přehled Visual Studio 2017
-ms.date: 02/05/2018
+ms.date: 06/01/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,104 +13,101 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fdc6acd2c14331d34ccb3f3435b1ee5fcc44a14
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 4a7667cac2a26a3e98d2e92dfeb13cee36d870e9
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691157"
 ---
 # <a name="visual-studio-ide-overview"></a>Přehled Visual Studio IDE
 
-Visual Studio interaktivní vývojové prostředí (IDE) je tvůrčí odrazový můstek, můžete zobrazit a upravit téměř všechny typy kódu a pak ladění, vytvářet a publikovat aplikace pro Android, iOS, Windows, na webu a cloudem. Nejsou k dispozici pro Mac a Windows verze. Toto téma vás seznámí s funkcí Visual Studio IDE. Projdeme některé věci, můžete pomocí sady Visual Studio a jak nainstalovat a používat ji, vytvoření jednoduché projektu, získání ukazatele na nasazení a ladění kódu a prohlídka různé nástroje Windows.
+Visual Studio interaktivní vývojové prostředí (IDE) je tvůrčí odrazový můstek, můžete použít k zobrazení a úpravy kódu a pak ladění, vytvoření a publikování aplikace.
 
-## <a name="what-can-you-do-with-the-visual-studio-ide"></a>Co se děje s Visual Studio IDE?
+Visual Studio je k dispozici pro systém Windows a macu. [Visual Studio pro Mac](/visualstudio/mac/) obsahuje řadu stejných funkcí jako Visual Studio 2017 a je optimalizovaná pro vývoj napříč platformami a mobilních aplikací.
 
-Chcete vytvořit aplikaci pro Android phone? Můžete to udělat. O tom, jak vytvořit špičkových hry s použitím C++? Můžete to udělat příliš a mnohem, mnohem víc. Visual Studio poskytuje šablony, které vám pomohou provést weby, hry, aplikace klasické pracovní plochy, mobilní aplikace, aplikace pro Office a další.
-
-![Projekty Visual Studio](../ide/media/VSIDE_Tour_Projects_List.png)
-
-Nebo můžete jednoduše otevřít některé kódu můžete získat z téměř odkudkoli a získat práce. Zobrazit projektu na Githubu, která se vám líbí? Právě klonovat úložiště, otevřete v sadě Visual Studio a psaní!
-
-### <a name="create-mobile-apps"></a>Vytvoření mobilní aplikace
-
-Můžete vytvořit nativní mobilních aplikací pro různé platformy pomocí jazyka C# a Xamarin nebo Visual C++, nebo hybridní aplikace pomocí jazyka JavaScript pomocí Apache Cordova. Můžete napsat mobilní hry pro Unity, nerealiz, DirectX, Kokosové a další. Visual Studio obsahuje emulátoru Androidu můžete spustit a ladění aplikací pro Android.
-
-Výkon cloudu můžete využít pro své mobilní aplikace tak, že vytvoříte Azure aplikace služby. Azure app services povolit vaše aplikace ukládat data do cloudu, bezpečně ověřování uživatelů a automaticky škálovat své prostředky nebo dolů na vyhovovaly potřebám vaší aplikace a firmu. Další informace najdete v tématu [vývoj mobilních aplikací](https://www.visualstudio.com/vs/mobile-app-development/).
-
-### <a name="create-cloud-apps-for-azure"></a>Vytvoření cloudové aplikace pro Azure.
-
-Visual Studio nabízí sadu nástrojů, které vám umožní snadno vytvářet aplikace s povolenou podporu cloudu používá technologii Microsoft Azure. Můžete nakonfigurovat, vytvářet, ladit, balíčku a nasazení aplikací a služeb Microsoft Azure přímo z prostředí IDE. Chcete-li získat nástroje Azure pro .NET, vyberte **Azure development** zatížení při instalaci sady Visual Studio. Další informace najdete v tématu [Visual Studio Tools for Azure](https://www.visualstudio.com/vs/azure-tools/).
-
-Můžete využít Azure services pro aplikace pomocí připojení služby, jako třeba:
-
-- [Azure Mobile Services](http://azure.microsoft.com/documentation/services/mobile-services/)
-
-- [Azure Storage](http://azure.microsoft.com/documentation/services/storage/)
-
-[HockeyApp](https://www.visualstudio.com/hockey-app/) pomáhá distribuovat beta verze, shromažďování sestavy havárií za provozu a získávat zpětnou vazbu od skutečné uživatele. Kromě toho můžete integrovat rozhraní REST API Office 365 do vlastní aplikace pro připojení k data uložená v cloudu. Další informace najdete v tématu [tyto ukázky Githubu](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
-
-[Application Insights](https://marketplace.visualstudio.com/items?itemName=VisualStudioOnlineApplicationInsights.application-insights) pomáhá rozpoznat a diagnostikovat problémy kvality ve svých aplikacích a webové služby. Application Insights také pomáhá pochopit, co uživatelé ve skutečnosti provádějí s vaší aplikací, takže můžete optimalizovat uživatelské prostředí.
-
-### <a name="create-apps-for-the-web"></a>Vytvoření aplikace pro web
-
-Web jednotky naše moderní world a Visual Studio můžete usnadňuje psaní aplikací pro ni. Můžete vytvořit webové aplikace pomocí ASP.NET, Node.js, Python, JavaScript a TypeScript. Visual Studio rozumí webové platformy jako úhlová, jQuery, Express a další. Spuštěné na operačních systémech Windows, Mac a Linux .NET Core a ASP.NET Core. [ASP.NET Core](http://www.asp.net/core/overview) je hlavní aktualizace MVC, WebAPI a SignalR a běží na systému Windows, Mac a Linux.  ASP.NET Core má byly navrženy od základů až zajistit, že jste s .NET Štíhlá a bez možnosti složení zásobníku pro vytváření webových moderní cloudové aplikace a služby.
-
-Další informace najdete v tématu [moderní webové nástroje](https://www.visualstudio.com/vs/modern-web-tooling/).
-
-### <a name="build-cross-platform-apps-and-games"></a>Vytváření aplikací pro různé platformy a hry
-
-Visual Studio můžete použít k vytvoření aplikace a hry pro systému macOS, Linux a Windows, a také pro Android, iOS a jiných mobilních zařízení.
-
-- Sestavení [.NET Core](/dotnet/core/) aplikace, které běží na systému Windows, systému macOS a Linux.
-
-- Vytvoření mobilní aplikace pro iOS, Android a Windows v C# a F # pomocí [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/).
-
-- Použijte standardní webové technologie&mdash;HTML, CSS a JavaScript&mdash;k vytváření mobilních aplikací pro iOS, Android a Windows pomocí [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/).
-
-- Sestavení 2D a 3D hry v jazyce C# s použitím [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md).
-
-- Sestavení nativní C++ aplikace pro iOS, Android a Windows zařízení a společný kód sdílené složky v knihovnách vytvořené pro iOS, Android a Windows, a to pomocí [C++ pro vývoj pro různé platformy](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
-
-- Nasazení, testování a ladění aplikací pro Android pomocí [emulátoru Android](../cross-platform/visual-studio-emulator-for-android.md).
-
-Visual Studio, můžete to udělat celou řadu věcí další pomoc. Získat úplný seznam najdete v tématu [www.visualstudio.com](https://www.visualstudio.com/vs/).
+Tento článek se zaměřuje na Visual Studio 2017 pro Windows. Ho vás seznámí s základní funkce rozhraní IDE. Projdeme některé věci, které můžete provést pomocí sady Visual Studio, včetně vytvoření jednoduché projektu, jako kódování podpory pomocí IntelliSense a ladění aplikace a zobrazit tak hodnotu proměnné během provádění tohoto programu. Také provedeme prohlídka různé nástroje Windows.
 
 ## <a name="install-the-visual-studio-ide"></a>Instalace sady Visual Studio IDE
 
-Pokud chcete začít, stáhněte si Visual Studio a nainstalujte ho do systému. Tuto součást můžete stáhnout na [Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs).
+Abyste mohli začít, [Stáhnout Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) a nainstalujte ho v systému.
 
-Visual Studio je nyní jednodušší než kdy dřív. Modulární instalační program vám umožňuje vybrat a nainstalovat *úlohy*, což jsou skupiny součástí, které jsou potřebné pro programovací jazyk nebo platformu dáváte přednost. Tato strategie pomáhá udržovat nároků instalace Visual Studia, která je menší než kdy dřív, což znamená, nainstaluje se a aktualizuje rychlejší příliš. Kromě instalace lepší výkon má Visual Studio 2017 také kratší spuštění IDE a načíst dobu řešení.
-
-Další informace o nastavení v systému Visual Studia, najdete v části [nainstalovat Visual Studio 2017](../install/install-visual-studio.md). Podle pokynů pro [vytváření program](#create-a-program), je nutné vybrat **vývoj pro různé platformy .NET Core** zatížení během instalace.
+Modulární instalační program vám umožňuje vybrat a nainstalovat *úlohy*, což jsou skupiny součástí, které jsou potřebné pro programovací jazyk nebo platformu dáváte přednost. Podle pokynů pro [vytváření program](#create-a-program), je nutné vybrat **vývoj pro různé platformy .NET Core** zatížení během instalace. Témata rychlý start, jako například [Začínáme s C++ v sadě Visual Studio](getting-started-with-cpp-in-visual-studio.md), obsahovat pokyny k instalaci dalších zatížení.
 
 ![Instalační program pro Visual Studio](../ide/media/overview-net-core-workload.png)
 
-## <a name="sign-in"></a>Přihlásit se
+Při prvním spuštění sady Visual Studio, můžete volitelně Přihlaste se pomocí účtu Microsoft nebo váš pracovní nebo školní účet.
 
-Při prvním spuštění sady Visual Studio, můžete volitelně Přihlaste se pomocí účtu Microsoft nebo váš pracovní nebo školní účet. Probíhá přihlašování umožňuje synchronizovat nastavení sady Visual Studio, například rozložení oken v různých zařízeních. Je také jste se automaticky připojí k služby může být nutné, jako je například předplatných Azure a [Visual Studio Team Services](/vsts/).
+## <a name="tour-of-the-ide"></a>Přehled používání prostředí IDE
+
+Následující obrázek ukazuje tak, abyste získali visual Přehled sady Visual Studio, Visual Studio s otevřít projekt spolu s několika okna klíče nástrojů, které budou s největší pravděpodobností používat:
+
+![Visual Studio IDE](../ide/media/visualstudioide.png)
+
+- [Průzkumník řešení](../ide/solutions-and-projects-in-visual-studio.md) umožňuje zobrazit, přejděte a spravovat soubory s kódem. Průzkumník řešení pomáhá organizovat kód seskupením soubory do řešení a projekty.
+
+- [Editor](../ide/writing-code-in-the-code-and-text-editor.md) okno, kde budete pravděpodobně tráví většinu doby, zobrazuje kódu a umožní vám upravit zdrojový kód a návrh uživatelského rozhraní.
+
+- [Výstup – okno](../ide/reference/output-window.md) je, kde Visual Studio odešle jeho oznámení, jako je ladění a chybové zprávy, upozornění kompilátoru, publikování stavové zprávy a další. Každý zdroj zpráva má vlastní kartě.
+
+- [Team Explorer (VSTS)](/vsts/user-guide/work-team-explorer) slouží ke sledování pracovní položky a sdílet s ostatními kódu pomocí technologie pro řízení verzí, jako třeba [Git](https://git-scm.com/) a [Team Foundation verze ovládacího prvku (TFVC)](/vsts/tfvc/overview).
+
+Toto jsou některé další funkce oblíbených produktivitu v sadě Visual Studio:
+
+- [Refaktoring](../ide/refactoring-in-visual-studio.md) zahrnuje operace, jako je inteligentního přejmenování proměnných Přesun vybrané řádky kódu do samostatné funkce, přesunutí kódu do jiných umístění, způsob parametry funkce a další.
+
+   ![Refaktoring](../ide/media/VSIDE_refactor.png)
+
+- [IntelliSense](../ide/using-intellisense.md) je také souhrnný název pro sadu oblíbených funkcí, které zobrazují informace o typu o kódu přímo v editoru a v některých případech zápisu malých bits kódu pro vás. Je to jako mít základní dokumentace vložené v editoru ušetří práci s k vyhledání informací o typu v okně samostatné nápovědy. Funkce IntelliSense se liší podle jazyka. Další informace najdete v tématu [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), a [jazyka Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Některé funkce IntelliSense v práci na následujícím obrázku:
+
+   ![Seznam členů v sadě Visual Studio](../ide/media/vs2017_Intellisense.png)
+
+- [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) vyhledávacího pole je skvělým způsobem, jak rychle najít, co je třeba v sadě Visual Studio. Právě začněte psát název ať hledáte a Visual Studio zobrazí výsledky, které dostanete přesně, kde chcete přejít. **Snadné spuštění** taky obsahuje odkazy ukazuje, že počáteční **instalační program Visual Studio** pro všechny úlohy nebo jednotlivých součástí.
+
+   ![Rychlé spuštění vyhledávacího pole](../ide/media/VSIDE_Tour_QuickLaunch.png)
+
+- **Podtržení vlnovkou** jsou podtržení vlnovkami, které vás upozorní na chyby nebo potenciální problémy ve vašem kódu v reálném čase během psaní. To umožňuje opravit okamžitě bez čekání na chyby zjištěné při kompilaci nebo čas spuštění. Pokud je ukazatel myši nad vlnovka, zobrazí další informace o této chybě. Žárovky může zobrazit i na levém okraji s akcemi pro chybu ověřování opravte. Další informace najdete v tématu [rychlé akce](../ide/quick-actions.md).
+
+   ![Podtržení vlnovkou](../ide/media/vs2017_squiggle.png)
+
+- [Hierarchie volání](../ide/reference/call-hierarchy.md) okno můžete otevřít v místní nabídce textového editoru zobrazíte metody, které volání a jsou volány, metoda pod pomocí kurzoru (bod vložení).
+
+   ![Hierarchie volání – okno](../ide/media/VSIDE_call_hierarchy.png)
+
+- [Codelensu](../ide/find-code-changes-and-other-history-with-codelens.md) umožňuje najít odkazy a změny provedené v kódu, propojené chyby, pracovní položky, kód recenze a testování částí všechny bez opuštění editoru.
+
+   ![Codelensu](../ide/media/codelensoverview.png)
+
+- [Funkce Náhled definice](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) v okně se zobrazí vložené definice metoda nebo typ bez nutnosti opustit váš aktuální kontext.
+
+   ![Funkce Náhled definice](../ide/media/VSIDE_peek_definition.png)
+
+- [Přejít k definici](../ide/go-to-and-peek-definition.md) možnost místní nabídky přejdete přímo na místě, kde je definována funkce nebo objektu. Další příkazy navigace jsou k dispozici také kliknutím pravým tlačítkem myši v editoru.
+
+   ![Přechod na definici](../ide/media/VSIDE_go_to_definition.png)
 
 ## <a name="create-a-program"></a>Vytvořit program
 
-Další informace o něco jeden vhodný způsob je pro použití! Umožňuje podrobné informace a vytvořit nové, jednoduchý program.
+Umožňuje podrobné informace a vytvořit nové, jednoduchý program.
 
 1. Otevřete Visual Studio. V nabídce zvolte **soubor** > **nový** > **projektu**.
 
   ![Soubor > Nový projekt v řádku nabídek](../ide/media/VSIDE_Tour_NewProject1.png)
 
-1. **Nový projekt** dialogové okno zobrazí několik šablon projektu. Vyberte **.NET Core** kategorii v **Visual C#** a potom zvolte **konzolové aplikace (.NET Core)** šablony. V **název** textové pole, zadejte "Hello World". Vyberte **OK** tlačítko.
+1. **Nový projekt** dialogové okno zobrazí několik projektu *šablony*. Šablona obsahuje základní soubory a nastavení potřebné pro typ daného projektu. Vyberte **.NET Core** kategorii v **Visual C#** a potom zvolte **konzolové aplikace (.NET Core)** šablony. V **název** textového pole, typ **HelloWorld**a pak vyberte **OK** tlačítko.
 
   ![Šablony aplikace .NET core](../ide/media/overview-new-project-dialog.png)
 
+   Visual Studio vytvoří projekt. Je jednoduchou aplikaci "Hello World", která volá <xref:System.Console.WriteLine?displayProperty=nameWithType> metodu pro zobrazení řetězcového literálu "Hello, World!" v okně konzoly.
+
   > [!NOTE]
-  > Pokud nevidíte **.NET Core** kategorie, je třeba nainstalovat **vývoj pro různé platformy .NET Core** zatížení. To pokud chcete udělat, vyberte **otevřete instalační program Visual Studio** odkaz na spodní levé straně **nový projekt** dialogové okno. Po **instalační program Visual Studio** otevře, posuňte se dolů a vyberte **vývoj pro různé platformy .NET Core** zatížení a potom zvolte **upravit**.
+  > Pokud nevidíte **.NET Core** kategorie, je třeba nainstalovat **vývoj pro různé platformy .NET Core** zatížení. To pokud chcete udělat, vyberte **otevřete instalační program Visual Studio** odkaz na spodní levé straně **nový projekt** dialogové okno. Po **instalační program Visual Studio** otevře, posuňte se dolů a vyberte **vývoj pro různé platformy .NET Core** zatížení a potom vyberte **upravit**.
 
-   Visual Studio používá šablonu pro vytvoření projektu. Je jednoduchou aplikaci "Hello World", která volá <xref:System.Console.WriteLine> metodu pro zobrazení řetězcového literálu "Hello, World!" v okně konzoly.
+   Zanedlouho byste měli vidět přibližně takto:
 
-1. Zanedlouho byste měli vidět něco podobného jako na následujícím snímku obrazovky:
+   ![Visual Studio – sada IDE](../ide/media/overview-ide-console-app.png)
 
-  ![Visual Studio – sada IDE](../ide/media/overview-ide-console-app.png)
-
-   Kód jazyka C# pro vaši aplikaci se zobrazí v okně editor, které zabírají většina místa. Všimněte si, že syntaxe kódu je automaticky obarvené udávajících různé typy kódu, jako jsou klíčová slova a typy. Kromě toho malé, svislá přerušované čáry v kódu označují, které složené závorky odpovídat navzájem a čísla řádků vám pomohou vyhledat kód později. Můžete použít znaky minus malé, zabalené sbalit nebo rozbalte kódu. Tento kód osnovy funkce umožňuje skrýt kódu, které nepotřebujete, pomáhá minimalizovat zbytečné soubory na obrazovce.
+   Kód jazyka C# pro vaši aplikaci se zobrazí v okně editor, které zabírají většina místa. Všimněte si, že je text automaticky obarvené k označení různých aspektů kód, jako jsou klíčová slova a typy. Kromě toho malé, svislá přerušované čáry v kódu označují, které složené závorky odpovídat navzájem a čísla řádků vám pomohou vyhledat kód později. Můžete použít znaky minus malé, zabalené sbalit nebo rozbalte kódu. Tento kód osnovy funkce umožňuje skrýt kódu, které nepotřebujete, pomáhá minimalizovat zbytečné soubory na obrazovce.
 
    Soubory projektu, které jsou uvedené na pravé straně v okně názvem **Průzkumníku řešení**.
 
@@ -122,7 +119,7 @@ Další informace o něco jeden vhodný způsob je pro použití! Umožňuje pod
 
   ![Ladění > Spustit bez ladění nabídky](../ide/media/overview-start-without-debugging.png)
 
-  Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou "Hello, World!". Nyní máte spuštěné aplikaci!
+  Visual Studio vytvoří aplikaci a otevře se okno konzoly se zprávou **Hello, World!**. Nyní máte spuštěné aplikaci!
 
   ![Okno konzoly](../ide/media/overview-console-window.png)
 
@@ -135,9 +132,9 @@ Další informace o něco jeden vhodný způsob je pro použití! Umožňuje pod
    var name = Console.ReadLine();
    ```
 
-   Tento kód zobrazí "Jaký je název vaší?" v konzole okno a počká, dokud uživatel nezadá nějaký text následuje **Enter** klíč.
+   Tento kód zobrazí **jaké je vaše jméno?** okno konzoly a potom počká, dokud uživatel nezadá nějaký text, za nímž následuje **Enter** klíč.
 
-1. Teď změňte řádek, která uvádí, že `Console.WriteLine("Hello World!");` na následující kód:
+1. Změňte řádek, která uvádí, že `Console.WriteLine("Hello World!");` na následující kód:
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
@@ -151,124 +148,113 @@ Další informace o něco jeden vhodný způsob je pro použití! Umožňuje pod
 
    ![Vstup okna konzoly](media/overview-console-input.png)
 
-1. Stisknutím libovolné klávesy zavřete okno konzoly.
+1. Stisknutím libovolné klávesy zavřete okno konzoly a zastavit spuštěný program.
 
-## <a name="debug-test-and-improve-your-code"></a>Ladění, testování a zlepšit váš kód
+## <a name="use-refactoring-and-intellisense"></a>Refaktoring a IntelliSense
 
-Nic spustí perfektně vždy. Při psaní kódu, budete muset spustit a otestovat ho chyb a výkonu. Visual Studio špičkových ladění systému umožňuje ladit kód spuštěný ve vašem místním projektu, na vzdáleném zařízení nebo na emulátoru, jako [pro zařízení se systémem Android](../cross-platform/visual-studio-emulator-for-android.md). Můžete krok prostřednictvím kódu jeden příkaz v čase a průběžně kontrolovat proměnné. Můžete nastavit zarážky, které jsou pouze dosáhl při splnění zadané podmínky. Můžete sledovat hodnoty proměnných, jako je kód spuštěn a další. Všechny tyto se dají spravovat editoru kódu, samostatně, takže nemusíte opustit váš kód. Chcete-li získat další informace o ladění v sadě Visual Studio, najdete v části [ladicího programu prohlídka funkce](../debugger/debugger-feature-tour.md).
+Podívejme se na několik způsobů, jak který [refaktoring](refactoring-in-visual-studio.md) a [IntelliSense](using-intellisense.md) může pomoci používáte kódové efektivněji.
 
-Pro testování, Visual Studio nabízí testování, IntelliTest, zátěže a testování výkonu a další jednotky. Další informace o testování najdete v tématu [testování nástroje a scénáře](../test/developer-testing-scenarios.md). Další informace o zvýšení výkonu aplikací, najdete v části [profilace prohlídka funkce](../profiling/profiling-feature-tour.md).
+Nejprve umožňuje přejmenovat `name` proměnné:
 
-## <a name="deploy-your-finished-application"></a>Nasazení aplikace bylo dokončeno
+1. Dvakrát klikněte `name` proměnná ji vyberte.
 
-Když je aplikace připravená k nasazení na uživatele nebo zákazníků, Visual Studio poskytuje nástroje k tomu, jestli nasazujete na Microsoft Store, na web služby SharePoint, nebo s technologiemi InstallShield nebo instalační služba systému Windows. Je přístupné pomocí rozhraní IDE. Další informace najdete v tématu [nasazení aplikací, služeb a komponent](../deployment/deploying-applications-services-and-components.md).
+1. Zadejte nový název pro proměnnou, `username`.
 
-## <a name="quick-tour-of-the-ide"></a>Stručný přehled prostředí IDE
+   Všimněte si, že se kolem proměnnou a žárovky zobrazí šedé pole se zobrazí u okraje.
 
-Následující obrázek ukazuje tak, abyste získali visual Přehled sady Visual Studio, Visual Studio s otevřít projekt spolu s několika okna klíče nástrojů, které budou s největší pravděpodobností používat:
+1. Vyberte ikonu žárovky k zobrazení dostupných [rychlé akce](quick-actions.md). Vyberte **přejmenovat (name) k 'uživatelského jména'**.
 
-- [Průzkumník řešení](../ide/solutions-and-projects-in-visual-studio.md) umožňuje zobrazit, přejděte a spravovat soubory s kódem. Průzkumník řešení pomáhá organizovat kód seskupením soubory do řešení a projekty.
+   ![Přejmenujte akce v sadě Visual Studio](media/rename-quick-action.png)
 
-- [Editor](../ide/writing-code-in-the-code-and-text-editor.md) okno, kde budete pravděpodobně tráví většinu doby, zobrazuje kódu a umožní vám upravit zdrojový kód a návrh uživatelského rozhraní.
+   Proměnná se přejmenuje v projektu, který je v našem případě pouze dvě místech.
 
-- [Výstup](../ide/reference/output-window.md) je okno, kde Visual Studio odešle jeho oznámení, jako je ladění a chybové zprávy, upozornění kompilátoru, publikování stavové zprávy a další. Každý zdroj zpráva má vlastní kartě.
+   ![Animovaný gif zobrazující přejmenování refaktoring v sadě Visual Studio](media/rename-refactoring.gif)
 
-- [Team Explorer (VSTS)](/vsts/user-guide/work-team-explorer) slouží ke sledování pracovní položky a sdílet s ostatními kódu pomocí technologie pro řízení verzí, jako třeba [Git](https://git-scm.com/) a [Team Foundation verze ovládacího prvku (TFVC)](/vsts/tfvc/overview).
+1. Nyní Podívejme se na technologii IntelliSense. Níže na řádku, která uvádí, že `Console.WriteLine($"\nHello {username}!");`, typ **data a času nyní = data a času.**.
 
-- [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) umožňuje zobrazení a správě prostředků Azure, jako je například virtuální počítače, tabulek, databází SQL a další. Pokud konkrétní operace vyžaduje, aby na portálu Azure, Průzkumník cloudu poskytuje odkazy, které vás zavedou na místě v portálu Azure, které budete muset přejít.
+   Pole zobrazuje členů <xref:System.DateTime> třídy. Kromě toho zobrazí popis aktuálně vybraného člena v samostatném poli.
 
-![Visual Studio IDE](../ide/media/visualstudioide.png)
+   ![IntelliSense seznam členů v sadě Visual Studio](media/intellisense-list-members.png)
 
-Toto jsou některé další běžné funkce produktivitu v sadě Visual Studio:
+1. Vyberte člena s názvem **nyní**, což je vlastnost třídy, dvojitým kliknutím na něm nebo stisknutím **kartě**. Dokončení řádek kódu přidáním středníkem **;**.
 
-- [Snadné spuštění](../ide/reference/quick-launch-environment-options-dialog-box.md) vyhledávacího pole je skvělým způsobem, jak rychle najít, co je třeba v sadě Visual Studio. Stačí spustit zadáním názvu ať hledáte a Visual Studio zobrazí výsledky, které dostanete přesně, kde chcete přejít. **Snadné spuštění** také ukazuje odkazy, které spustit instalační program Visual Studio pro všechny úlohy nebo jednotlivých součástí.
+1. Níže, napište nebo zkopírujte následující řádky kódu:
 
-  ![Rychlé spuštění vyhledávacího pole](../ide/media/VSIDE_Tour_QuickLaunch.png)
+   ```csharp
+   int dayOfYear = now.DayOfYear;
 
-- [Refaktoring](../ide/refactoring-in-visual-studio.md) zahrnuje operace, jako je inteligentního přejmenování proměnných Přesun vybrané řádky kódu do samostatné funkce, přesunutí kódu do jiných umístění, způsob parametry funkce a další.
+   Console.Write("Day of year: ");
+   Console.WriteLine(dayOfYear);
+   ```
 
- ![Refaktoring](../ide/media/VSIDE_refactor.png)
+   > [!TIP]
+   > <xref:System.Console.Write%2A?displayProperty=nameWithType> mírně liší na <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> v, že po vytiskne nepřidá ukončení řádku. To znamená, že další část textu, které je odesláno výstup bude tisk na stejném řádku. V každé z těchto metod můžete podržet ve vašem kódu jejich popis.
 
-- **IntelliSense** je také souhrnný název pro sadu oblíbených funkcí, které zobrazují informace o typu o kódu přímo v editoru a v některých případech zápisu malých bits kódu pro vás. Je to jako mít základní dokumentace vložené v editoru ušetří práci s k vyhledání informací o typu v okně samostatné nápovědy. Funkce IntelliSense se liší podle jazyka. Další informace najdete v tématu [C# IntelliSense](../ide/visual-csharp-intellisense.md), [Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md), [JavaScript IntelliSense](../ide/javascript-intellisense.md), a [jazyka Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md). Některé funkce IntelliSense v práci na následujícím obrázku:
+1. V dalším kroku použijeme refaktoring znovu Chcete-li další stručným kód. Klikněte na proměnnou `now` v řádku `DateTime now = DateTime.Now;`.
 
-  ![Seznam členů v sadě Visual Studio](../ide/media/vs2017_Intellisense.png)
+   Všimněte si, že se málo šroubovák zobrazí ikona rozpětí z daného řádku.
 
-- **Podtržení vlnovkou** jsou podtržení vlnovkami red, které vás upozorní na chyby nebo potenciální problémy ve vašem kódu v reálném čase během psaní. To umožňuje opravit okamžitě bez čekání na chyby zjištěné při kompilaci nebo čas spuštění. Pokud je ukazatel myši nad vlnovka, zobrazí další informace o této chybě. Žárovky může zobrazit i na levém okraji s návrhy, jak chybu opravit. Další informace najdete v tématu [rychlé akce](../ide/quick-actions.md).
+1. Klikněte na ikonu šroubovák a počkejte, Visual Studio je k dispozici. V takovém případě se zobrazuje [dočasné vloženou proměnnou](reference/inline-temporary-variable.md) refaktoringu bez změny chování celkové odebrat řádek kódu:
 
- ![Podtržení vlnovkou](../ide/media/vs2017_squiggle.png)
+   ![Vložené dočasné proměnné refaktoring v sadě Visual Studio](media/inline-temporary-variable-refactoring.png)
 
-- [Hierarchie volání](../ide/reference/call-hierarchy.md) okno můžete otevřít v místní nabídce textového editoru zobrazíte metody, které volání a jsou volány, metoda pod pomocí kurzoru (bod vložení).
+1. Klikněte na tlačítko **dočasné vloženou proměnnou** Refaktorovat kód.
 
- ![Hierarchie volání – okno](../ide/media/VSIDE_call_hierarchy.png)
+1. Spusťte program znovu stisknutím **Ctrl**+**F5**. Výstup bude vypadat přibližně takto:
 
-- [Codelensu](../ide/find-code-changes-and-other-history-with-codelens.md) umožňuje najít odkazy a změny provedené v kódu, propojené chyby, pracovní položky, kód recenze a testování částí všechny bez opuštění editoru.
+   ![Okno konzoly s výstupem programu](../ide/media/overview-console-final.png)
 
- ![Codelensu](../ide/media/codelensoverview.png)
+## <a name="debug-code"></a>Ladění kódu
 
-- [Funkce Náhled definice](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) v okně se zobrazí vložené definice metoda nebo typ bez nutnosti opustit váš aktuální kontext.
+Při psaní kódu, budete muset spustit a otestovat ji pro chyby. Ladění systému Visual Studio umožňuje krok prostřednictvím kódu jeden příkaz v čase a zkontrolovat proměnné narazíte. Můžete nastavit zarážky, které jsou pouze dosáhl při splnění zadané podmínky. Můžete sledovat hodnoty proměnných, jako je kód spuštěn a další.
 
- ![Funkce Náhled definice](../ide/media/VSIDE_peek_definition.png)
+Umožňuje nastavit zarážky zobrazíte hodnotu `username` proměnná při "v cestě" program.
 
-- **Přejít k definici** možnost místní nabídky přejdete přímo na místě, kde je definována funkce nebo objektu. Další příkazy navigace jsou k dispozici také kliknutím pravým tlačítkem myši v editoru.
+1. Najít řádek kódu, která uvádí, že `Console.WriteLine($"\nHello {username}!");`. Chcete-li nastavit zarážky tento řádek kódu, který je nastavit, aby program pozastavit provádění na tomto řádku, klikněte na tlačítko na levém okraji editoru. Můžete také kliknout na tlačítko kdekoli na řádek kódu a stiskněte klávesu **F9**.
 
- ![Přechod na definici](../ide/media/VSIDE_go_to_definition.png)
+   Červené kolečko se zobrazí v daleko levým okrajem a kód se zobrazí červeně.
 
-## <a name="manage-your-source-code-and-collaborate-with-others"></a>Správa zdrojového kódu a spolupracovat s ostatními
+   ![Breakpoint – na řádek kódu v sadě Visual Studio](media/breakpoint.png)
 
-Můžete spravovat vašeho zdrojového kódu v hostované všechny zprostředkovatele, včetně Githubu úložiště Git. Nebo použijte [Visual Studio Team Services (VSTS)](/vsts/index) ke správě kód společně se chyby a pracovní položky pro celý projekt. V tématu [začít pracovat s Git a Team Services (služby VSTS)](/vsts/git/gitquickstart?tabs=visual-studio) Další informace o správě úložiště Git v sadě Visual Studio pomocí Team Explorer. Visual Studio má také další funkce integrované zdroj ovládacího prvku. Další informace o nich najdete v tématu [Git nové funkce v aplikaci Visual Studio 2017 (blog)](https://blogs.msdn.microsoft.com/visualstudioalm/2017/03/06/new-git-features-in-visual-studio-2017/).
+1. Spuštění ladění výběrem **ladění** > **spustit ladění** nebo stisknutím kombinace kláves **F5**.
 
-Visual Studio Team Services je Cloudová služba pro hostování projektů softwaru a povolení spolupráce v týmy. Služby VSTS podporuje systémy Git a Team Foundation zdrojového kódu, jakož i metodiky Scrum a Agile a CMMI vývoj. Team Foundation verze ovládacího prvku (TFVC) používá jedinou, centralizovanou server úložiště ke sledování a verze souborů. Místní změny jsou vždy změnami na centrálním serveru, kde můžete jinými vývojáři získání nejnovějších změn.
+1. Když v okně konzoly se zobrazí a požádá o název, zadejte ho a stiskněte klávesu **Enter**.
 
-Team Foundation Server (TFS) je Centrum správy životního cyklu aplikace Visual Studio. Umožňuje everyone spojené s procesu vývoje se zúčastnit pomocí jednoho řešení. TFS je užitečné pro správu heterogenní týmy a projekty, příliš.
+   Všimněte si, že se fokus vrátí do editoru kódu v sadě Visual Studio a řádek kódu se zarážkou zvýrazněn žlutě. Znamená to, že je na další řádek kódu, který spustí program.
 
-Pokud máte účet Visual Studio Team Services nebo Team Foundation Server v síti, můžete se připojit k němu prostřednictvím **Team Explorer** oken v sadě Visual Studio. Z tohoto okna můžete zkontrolovat kód do nebo z zdrojového kódu, správě pracovních položek, sestavení a spuštění přístup týmové místnosti a pracovní prostory. Můžete otevřít **Team Explorer** z **Snadné spuštění** pole, nebo v hlavní nabídce z **zobrazení** > **Team Explorer** nebo z **Team** > **Správa připojení**.
+1. Umístěte ukazatel myši nad `username` proměnné zobrazíte jeho hodnotu. Alternativně můžete můžete kliknout pravým tlačítkem na `username` a vyberte **Přidat kukátko** přidat proměnnou **sledovat** okno, kde můžete také sledovat jeho hodnotu.
 
-Na následujícím obrázku **Team Explorer** okna pro řešení, který je hostován v služby VSTS.
+   ![Hodnota proměnné během ladění v sadě Visual Studio](media/debugging-variable-value.png)
 
-![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)
+1. Chcete-li to program dokončen, stiskněte **F5** znovu.
 
-Můžete také automatizovat vašeho procesu sestavení vytvářet kód, který jste zkontrolovali devs ve vašem týmu do správy verzí. Lze například sestavit jeden nebo více projektů v noci nebo pokaždé, když je kód vrácen se změnami. Další informace najdete v tématu [sestavení a verze (služby VSTS a sady TFS)](/vsts/build-release/index).
+Chcete-li získat další informace o ladění v sadě Visual Studio, najdete v části [ladicího programu prohlídka funkce](../debugger/debugger-feature-tour.md).
 
-## <a name="connect-to-services-databases-and-cloud-based-resources"></a>Připojení ke službám, databází a cloudové prostředky
+## <a name="customize-visual-studio"></a>Přizpůsobení sady Visual Studio
 
-Cloud je velmi důležitá pro dnešní online world a Visual Studio poskytuje způsob, jak využít. Například funkce připojené Services umožňuje připojení aplikace ke službám. Aplikace můžete ukládat data na úložiště Azure, mimo jiné.
+Můžete přizpůsobit integrovaného vývojového prostředí, včetně změny výchozího Barva motivu. Ke změně **tmavý** motivu:
 
-![Připojených služeb](../ide/media/VSIDE_Tour_Connected_Services.png)
+1. Na řádku nabídek zvolte **nástroje** > **možnosti** otevřete **možnosti** dialogové okno.
 
-Výběr služby na **připojené služby** stránka spustí **připojené služby** spuštění průvodce, který nakonfiguruje projektu a stahuje potřebné balíčky NuGet, které vám pomůžou kódování proti Služba.
+1. Na **prostředí** > **Obecné** stránka Možnosti, změny **barevný motiv** výběr **tmavý**a potom vyberte **OK**.
 
-Můžete zobrazit a spravovat prostředky na základě Azure cloud v sadě Visual Studio pomocí [Průzkumník cloudu](/azure/vs-azure-tools-resources-managing-with-cloud-explorer). Průzkumník cloudu zobrazuje všechny účty, které jsou spravované v rámci předplatného Azure, ke kterému jste přihlášeni do prostředků Azure. Můžete získat **Průzkumník cloudu** výběrem **Azure development** zatížení v instalačním programu sady Visual Studio.
+   Barva motivu pro celý IDE změny **tmavý**.
 
-![Průzkumník cloudu](../ide/media/VSIDE_CloudExplorer.png)
+   ![VS v tmavý motiv](media/quickstart-personalize-dark-theme.png)
 
-**V Průzkumníku serveru** vám pomůže Procházet a spravovat instance systému SQL Server a prostředky místně, vzdáleně a na Azure, Salesforce.com, Office 365 a weby. Chcete-li otevřít **Průzkumníka serveru**, v hlavní nabídce zvolte **zobrazení** > **Průzkumníka serveru**. V tématu [přidat nová připojení](../data-tools/add-new-connections.md) pro další informace o použití Průzkumníka serveru.
+Další informace o další způsoby, můžete přizpůsobit integrovaného vývojového prostředí najdete v tématu [přizpůsobení sady Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-[SQL Server Data Tools (SSDT)](/sql/ssdt/download-sql-server-data-tools-ssdt) je výkonný vývojové prostředí pro SQL Server, databáze SQL Azure a Azure SQL Data Warehouse. Umožňuje vytvářet, ladit, udržovat a Refaktorovat databáze. Můžete pracovat s projektem databáze, nebo přímo s připojené databáze instance nebo vypnout místně.
+## <a name="learn-more"></a>Víc se uč
 
-**Průzkumník objektů systému SQL Server** v sadě Visual Studio poskytuje zobrazení objektů databáze podobně jako SQL Server Management Studio. Průzkumník objektů systému SQL Server můžete pro účely správy a návrh lehká databáze, včetně úpravy dat v tabulce, porovnání schémat, provádění dotazů pomocí kontextové nabídky přímo z Průzkumníka objektů systému SQL Server a další.
+Chcete vytvořit aplikaci pro Android nebo iOS phone? Co 3D hry nebo aplikace povolenou podporu cloudu? Další informace o těchto a dalších funkcí sady Visual Studio najdete v tématu [funkcí nástroje Visual Studio 2017](../ide/advanced-feature-overview.md).
 
-![Průzkumník objektů systému SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
+Pokud jste právě připravení začít nyní kódování, vyberte jednu z rychlý start témata z obsahu, jako například [vytvoření první webové aplikace ASP.NET Core](quickstart-aspnet-core.md).
 
-## <a name="extend-visual-studio"></a>Rozšíření sady Visual Studio
+Můžete se taky podívat na bezplatné sady Visual Studio kurzy k dispozici na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033).
 
-Pokud Visual Studio nemá přesný funkce, které potřebujete, můžete ho přidat! Přizpůsobení integrovaného vývojového prostředí na základě vašeho pracovního postupu a styl, přidat podporu pro externí nástroje ještě integrované pomocí sady Visual Studio a upravit stávající funkce zvyšuje produktivitu. Nejnovější verzi Visual Studio Extensibility Tools (VS SDK), najdete v tématu [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+## <a name="see-also"></a>Viz také:
 
-Kompilátoru platformu .NET ("Roslyn") můžete použít k zápisu vlastní analyzátorů kódu a generátory kódu. Najít všechno, co potřebujete v [Roslyn](https://github.com/dotnet/Roslyn).
-
-Najít [existující rozšíření](https://marketplace.visualstudio.com/vs) pro sadu Visual Studio vytvořené vývojáři Microsoftu a také naše komunita vývoj.
-
-Další informace o rozšíření sady Visual Studio najdete v tématu [rozšíření Visual Studio IDE](https://www.visualstudio.com/vs/extend/).
-
-## <a name="learn-more-and-find-out-whats-new"></a>Další informace a zjistit, co je nového
-
-Pokud jste Visual Studio před nepoužívali, podívejte se na [začít s vývojem pomocí sady Visual Studio](../ide/get-started-developing-with-visual-studio.md), nebo se podívejte se na bezplatné sady Visual Studio kurzy k dispozici na [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033). Pokud chcete rezervovat nových funkcí v Visual Studio 2017, najdete v části [co je nového ve Visual Studio 2017](../ide/whats-new-in-visual-studio.md).
-
-Blahopřejeme k dokončení prohlídku Visual Studio IDE! Věříme, že jste se dozvěděli, něco užitečné informace o některých jeho hlavní funkce.
-
-## <a name="see-also"></a>Viz také
-
-* [Integrované vývojové prostředí sady Visual Studio](https://www.visualstudio.com/vs/)
-* [Soubory ke stažení sady Visual Studio](https://www.visualstudio.com/downloads/)
+* [Další funkce sady Visual Studio](../ide/advanced-feature-overview.md)
+* [www.VisualStudio.com](https://www.visualstudio.com/vs/)
 * [Blog Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Fóra Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio%2Cvsarch%2Cvsdbg%2Cvstest%2Cvstfs%2Cvsdata%2Cvsappdev%2Cvisualbasic%2Cvisualcsharp%2Cvisualc)
-* [Microsoft Virtual Academy](https://mva.microsoft.com/)
+* [Soubory ke stažení sady Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

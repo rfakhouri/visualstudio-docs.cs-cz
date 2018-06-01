@@ -13,14 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f18e8ab05cf6331049e71c552d7b72a6b9235e0
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: aaae7a6ce1185426f23a8182ddcdf0c969f39a4b
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691040"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
-`CommentMarkProfile` Funkce vloží číselné značku a textového řetězce v souboru .vsp. Značky a komentáře, které má být vložen, profilace podprocesu, který obsahuje `CommentMarkProfile` funkce musí být ON.  
+`CommentMarkProfile` Funkce vloží číselné značku a textového řetězce v. *Vsp* souboru. Značky a komentáře, které má být vložen, profilace podprocesu, který obsahuje `CommentMarkProfile` funkce musí být ON.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -55,7 +56,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
 ## <a name="remarks"></a>Poznámky  
  Profilování stavu podprocesu, který obsahuje funkci profilu značky musí být v značky a komentáře vložit příkaz vsinstr – označit nebo s funkcí (CommentMarkAtProfile, CommentMarkProfile nebo MarkProfile).  
   
- Profil značky jsou globální v oboru. Například profil značka vložen do jedno vlákno slouží k označení počáteční nebo koncové segmentu dat v jakékoli vlákno v souboru .vsp.  
+ Profil značky jsou globální v oboru. Například profil značka vložen do jedno vlákno slouží k označení počáteční nebo koncové segmentu dat v jakékoli vlákno v. *vsp* souboru.  
   
 > [!IMPORTANT]
 >  CommentMarkProfile metodu můžete použít jenom s instrumentace.  
@@ -110,5 +111,5 @@ void ExerciseCommentMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Visual Studio profiler referenční dokumentace rozhraní API (nativní)](../profiling/visual-studio-profiler-api-reference-native.md)

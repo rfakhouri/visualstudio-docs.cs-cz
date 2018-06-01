@@ -1,6 +1,6 @@
 ---
-title: Visual Studio IntelliSense
-ms.date: 11/04/2016
+title: Informace o parametrech, vypsat členy a rychlé informace
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -17,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0afa66a9085c16700306330acdbfba3b9667fc03
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: c4960e1f829e2f5d673b1e7069b5813b68ab7bdb
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690936"
 ---
-# <a name="using-intellisense-in-visual-studio"></a>Používání atributu IntelliSense v sadě Visual Studio
+# <a name="intellisense-in-visual-studio"></a>IntelliSense v sadě Visual Studio
 
-IntelliSense je obecný termín pro několik funkcí: seznamy členů, informace o parametrech, rychlé informace a dokončování slov. Tyto funkce umožňují získat další informace o kódu, který používáte, zachovat si přehled o parametrech, které píšete, a přidávat volání vlastností a metod s pomocí několika klávesových úhozů.
+IntelliSense je podpory doplňování kódu, který zahrnuje celou řadu funkcí: seznam členů, informace o parametrech, rychlé informace a úplný Word. Tyto funkce umožňují získat další informace o kód, který používáte, udržování přehledu o parametry při psaní a přidejte volání metody s jenom pár stisknutí kláves a vlastnosti.
 
 Mnoho aspektů technologie IntelliSense je specifických pro jazyk. Další informace o technologii IntelliSense pro různé jazyky, najdete v tématech uvedených v [viz také](#see-also) části.
 
@@ -97,7 +98,7 @@ MessageBox( hWnd, "String literal|")
 
 **Možnosti automatického jsou vypnuté.** Ve výchozím nastavení IntelliSense funguje automaticky, ale můžete ji zakázat. Použít funkci IntelliSense můžete i v případě, že je zakázáno automatické dokončování.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)

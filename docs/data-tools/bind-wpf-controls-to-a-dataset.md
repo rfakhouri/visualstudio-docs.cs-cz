@@ -17,11 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bd0aa9ae269da4cfd4ae5ab3dfb45e96052d75fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 917bf166057ef304f3d045898838b7074d76c467
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690715"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Vytvoření vazby ovládacích prvků WPF k datové sadě
 V tomto návodu vytvoříte aplikaci WPF, která obsahuje ovládací prvky vázané na data. Ovládací prvky jsou vázány na záznamy produktu, které jsou zapouzdřené v datové sadě. Taky se přidá tlačítka Procházet produkty a uložit změny do produktu, záznamů.
@@ -116,7 +117,7 @@ Předchozí znalosti následující koncepty je také užitečné, ale není nut
 
 3.  V **zadejte příkazu jazyka SQL** přidejte následující klauzule WHERE po `SELECT` příkaz v textovém poli.
 
-    ```
+    ```sql
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
@@ -250,7 +251,7 @@ Přidejte kód, který umožňuje uživatelům uložit změny do záznamů produ
 
 -   Další informace o použití **zdroje dat** oken v sadě Visual Studio pro zobrazení souvisejících dat (tj. data v relaci nadřazený podřízený) v ovládacích prvků WPF. Další informace najdete v tématu [návod: zobrazení souvisejících dat v aplikaci WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků WPF k datům v sadě Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

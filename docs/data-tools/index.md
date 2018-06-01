@@ -10,11 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03f82da87bc546eea7d2b20100e11ca32ab72aad
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 87a928f1d987d496bee40c4236f53b5e14cb034d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691063"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Pomocí nástrojů data v sadě Visual Studio pro vývoj řešení pro data
 
@@ -28,7 +29,7 @@ Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_VS.svg" alt="" />
+                            <img src="../data-tools/media/logo_VS.svg" alt="Use Visual Studio and .NET framework tooling to develop your data applications" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -46,7 +47,7 @@ Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-sql-database.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-sql-database.svg" alt="Use SQL Server Data Tools to design, deploy, and maintain your databases" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -64,7 +65,7 @@ Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-datalake.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-datalake.svg" alt="Use Azure Data Lake to develop Big Data applications with U-SQL and .NET" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -82,7 +83,7 @@ Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-hd-insight.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-hd-insight.svg" alt="Run Hive queries on Azure HDInsight with Hadoop" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -100,7 +101,7 @@ Další informace o použití nástrojů data v sadě Visual Studio pro vývoj a
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="../data-tools/media/logo_azure-stream-analytics.svg" alt="" />
+                            <img src="../data-tools/media/logo_azure-stream-analytics.svg" alt="Use Azure Streaming Analytics to develop near-real time, big data solutions" />
                         </div>
                     </div>
                     <div class="cardText">

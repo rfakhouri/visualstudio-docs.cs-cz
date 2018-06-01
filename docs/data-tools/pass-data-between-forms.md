@@ -19,11 +19,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4b8a1865dc6fce56f11faa453a4786ae799af7e3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: db1d993d745ea4dd1861dd086cea73cb16a08c81
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691209"
 ---
 # <a name="pass-data-between-forms"></a>Předávání dat mezi formuláři
 Tento názorný postup obsahuje podrobné pokyny pro předávání dat z jednoho formátu do druhého. Pomocí zákazníků a tabulky objednávky z Northwind, jeden formulář umožňuje vybrat zákazníka a druhý formulář obsahuje objednávky vybraného zákazníka. Tento návod ukazuje postup vytvoření metody na druhý formulář, který přijímá data z první formulář.
@@ -145,7 +146,7 @@ Tento návod používá SQL Server Express LocalDB a ukázková databáze Northw
 
 5.  Přidejte klauzuli WHERE dotazu, vrátit `Orders` na základě `CustomerID`. Dotaz by měl vypadat přibližně takto:
 
-    ```
+    ```sql
     SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry
     FROM Orders
     WHERE CustomerID = @CustomerID
@@ -206,6 +207,6 @@ V závislosti na požadavcích vaší aplikace existuje několik kroků, které 
 
 -   Přidání funkce k uložení dat zpět do databáze. Další informace najdete v tématu [uložit data zpět do databáze](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Vytvoření vazby ovládacích prvků Windows Forms k datům v sadě Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

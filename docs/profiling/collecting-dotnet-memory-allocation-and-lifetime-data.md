@@ -13,12 +13,13 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548632"
 ---
-# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat paměti přidělení a dobu života rozhraní .NET
+# <a name="collect-net-memory-allocation-and-lifetime-data"></a>Shromažďování dat o alokaci paměti a době platnosti objektů .NET
 
 Profilace nástroje sady Visual Studio podporují kolekci přidělení paměti .NET a dat doba platnosti objektů, které vám pomůže zjistit problémy s výkonem souvisejících s pamětí ve vaší aplikaci.
 
@@ -78,7 +79,7 @@ Můžete zadat další možnosti v *výkonnostní relace *** stránky vlastnost�
 |Na **čítače CPU** stránky, zadejte jeden nebo více čítače výkonu procesoru pro přidání do data profilování.|- [Postupy: shromažďování dat čítačů procesoru](../profiling/how-to-collect-cpu-counter-data.md)|
 |Na **Upřesnit** zadejte jakékoli další VSInstr.exe požadované možnosti, jako jsou možnosti, které chcete zahrnout nebo vyloučit konkrétní funkce. Další informace o možnostech vsinstr – najdete v tématu [vsinstr –](../profiling/vsinstr.md)|- [Postupy: určení dalších možností instrumentace](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Postupy: omezení instrumentace na konkrétní funkce](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Konfigurace výkonnostních relací](../profiling/configuring-performance-sessions.md)  
 [Postupy: Výběr metod shromažďování](../profiling/how-to-choose-collection-methods.md)  

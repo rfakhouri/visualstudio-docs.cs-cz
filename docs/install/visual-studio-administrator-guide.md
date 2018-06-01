@@ -2,7 +2,7 @@
 title: Příručka správce Visual Studio
 description: Další informace o tom, jak nasadit sady Visual Studio v podnikovém prostředí.
 ms.custom: ''
-ms.date: 05/15/2017
+ms.date: 05/29/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,17 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691115"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 Příručka správce
 
 V podnikových prostředích je běžné pro správce systému pro nasazení instalace pro koncové uživatele v síťové sdílené složce nebo pomocí softwaru pro správu systému. Jsme jste chtěli modul Instalační program sady Visual Studio pro podporu podnikové nasazení umožňuje správcům systému schopnost vytvářet síťové umístění instalovat předem nakonfigurovat výchozí nastavení instalace, nasazení kódy product key během procesu instalace a po úspěšné zavedení spravovat aktualizace produktu. Tato příručka pro správce poskytuje pokyny na základě scénáře pro podnikové nasazení v síťovém prostředí.
 
-## <a name="deploying-visual-studio-2017-in-an-enterprise-environment"></a>Nasazení v prostředí Visual Studio 2017
+## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Nasazení v prostředí Visual Studio 2017
 
 Visual Studio 2017 můžete nasadit do klientských pracovních stanic, dokud každý cílový počítač splňuje [minimální požadavky na instalaci](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs). Jestli nasazujete prostřednictvím softwaru, třeba System Center nebo dávkového souboru, budete obvykle chtít projít následující kroky:
 
@@ -49,12 +50,26 @@ Visual Studio 2017 můžete nasadit do klientských pracovních stanic, dokud ka
 > [!IMPORTANT]
 > Všimněte si, že instalace ze sítě sdílenou složku se "nezapomeňte" umístění zdroje, že pochází od. To znamená, že jejich opravy klientský počítač může být nutné se vraťte do sdílené síťové složce, které klient původně nainstalované z. Pečlivě zvolte umístění v síti tak, aby se nastavuje zarovnání životního cyklu, které budete mít Visual Studio 2017 klientů se systémy ve vaší organizaci.
 
-## <a name="visual-studio-tools"></a>Nástroje sady Visual Studio
+## <a name="use-visual-studio-tools"></a>Pomocí nástrojů Visual Studio
 
 Máme několik nástrojů, které vám pomůžou [zjišťovat a spravovat nainstalované sady Visual Studio instance](tools-for-managing-visual-studio-instances.md) na klientských počítačích.
 
 > [!TIP]
 > Kromě dokumentace v příručce správce, je dobré zdroj informací o instalaci Visual Studio 2017 [stavu Chmiela blog](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/).
+
+## <a name="specify-customer-feedback-settings"></a>Zadejte nastavení zpětné vazby zákazníka
+
+Ve výchozím nastavení povoluje instalaci sady Visual Studio názory zákazníků. Když povolíte zásad skupiny, můžete nakonfigurovat Visual Studio zakázat názory zákazníků na jednotlivých počítačích. Uděláte to tak nastavte zásady založenou na registru na následující klíč:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM**
+
+Položka = **OptIn**
+
+Hodnota = (DWORD)
+* **0** je používání
+* **1** bude poskytnut souhlas
+
+Další informace o nastavení zpětné vazby zákazníka najdete v tématu [programu zlepšování zkušeností zákazníků sady Visual Studio](../ide/visual-studio-experience-improvement-program.md) stránky.
 
 ## <a name="get-support"></a>Získat podporu
 
@@ -67,7 +82,7 @@ Tady je několik další možnosti podpory:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Nainstalovat Visual Studio 2017](install-visual-studio.md)
 * [Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku](use-command-line-parameters-to-install-visual-studio.md)

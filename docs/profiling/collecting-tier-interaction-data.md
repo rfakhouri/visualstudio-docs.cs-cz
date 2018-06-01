@@ -17,10 +17,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: f5e86cd1318d4b0db35ce6fa0e0abd925100fe34
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548434"
 ---
 # <a name="collect-tier-interaction-data"></a>Shromažďování dat interakce vrstev
 
@@ -46,6 +47,6 @@ Z důvodu chyb v Průvodci výkonu je nutné přidat možnost kolekce dat intera
 
 3. V Průzkumníku výkonu, vyberte **cíle** uzel a pak zadejte projektu, spustitelný soubor nebo webový server, který chcete profil.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 [Zobrazení interakcí vrstev](../profiling/tier-interactions-view.md)

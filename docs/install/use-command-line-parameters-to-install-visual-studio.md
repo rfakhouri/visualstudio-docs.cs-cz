@@ -1,5 +1,5 @@
 ---
-title: Používání parametrů příkazového řádku pro instalaci sady Visual Studio
+title: Instalace sady Visual Studio s použitím parametrů příkazového řádku
 description: Další informace o použití parametrů příkazového řádku řízení nebo upravit instalace Visual Studia.
 ms.custom: ''
 ms.date: 05/07/2018
@@ -17,10 +17,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a27148619879ea90dba21704a0aa57fdf5f04551
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477363"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Nainstalujte Visual Studio 2017 pomocí parametrů příkazového řádku
 
@@ -155,7 +156,7 @@ Tady je několik další možnosti podpory:
 * Můžete sledovat problémy produktu a najít v odpovědi [Visual Studio Community vývojáře](https://developercommunity.visualstudio.com/).
 * Můžete také použít s námi a jinými vývojáři Visual Studio prostřednictvím [Visual Studio konverzace v komunitě Gitter](https://gitter.im/Microsoft/VisualStudio). (Tato možnost vyžaduje [Githubu](https://github.com/) účtu.)
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 * [Příklady parametr příkazového řádku pro instalaci Visual Studio 2017](command-line-parameter-examples.md)
 * [Vytvoření offline instalace Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)

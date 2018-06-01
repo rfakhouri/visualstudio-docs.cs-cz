@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc9df99b2d3cf28f5c548f1b794ad3f565f4d8b7
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690790"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Dialogové okno Upřesnit nastavení (vizualizér souběžnosti)
 Pomocí **Upřesnit nastavení** dialogové okno vizualizér souběžnosti můžete řídit, jak se shromažďují trasování.  Dialogové okno obsahuje karty pro symboly, pouze můj kód, ukládání do vyrovnávací paměti, filtrování, CLR události, značek, zprostředkovatele a soubory.  
@@ -25,9 +26,9 @@ Pomocí **Upřesnit nastavení** dialogové okno vizualizér souběžnosti můž
  Vizualizér souběžnosti používá stejné nastavení symbol jako Visual Studio Debugger. Vizualizér souběžnosti používá nastavení pro určení zásobníky volání, které jsou přidruženy údaje o výkonu.  Při zpracování trasování, přistupuje k Concurrency Visualizer symbol servery, které jsou zadány na stránce nastavení.  Při přístupu k těmto datům přes síť, zpracování trasování zpomalí.  Ke snížení množství času, které je nutné pro vyřešení symboly, můžete mezipaměti symboly místně. Pokud byly staženy symboly, Visual Studio je načíst z místní mezipaměti.  
   
 ## <a name="just-my-code"></a>Pouze můj kód  
- Ve výchozím nastavení je pouze můj kód sadu souborů .exe a .dll, které jsou spojeny s aktuálním řešení v sadě Visual Studio. Vizualizér souběžnosti vyhodnotí tuto sadu souborů při použití funkce pouze můj kód pro filtrování zásobníky volání. Na kartě pouze můj kód můžete přidat adresáře, které obsahují soubory .exe a .dll do umístění, která používá vizualizér souběžnosti pro pouze můj kód.  
+ Ve výchozím nastavení je sada pouze můj kód. *exe* a. *knihovny DLL* soubory, které jsou spojeny s aktuálním řešení v sadě Visual Studio. Vizualizér souběžnosti vyhodnotí tuto sadu souborů při použití funkce pouze můj kód pro filtrování zásobníky volání. Na kartě pouze můj kód můžete přidat adresáře, které obsahují. *exe* a. *knihovny DLL* soubory do umístění, která používá vizualizér souběžnosti pro pouze můj kód.  
   
- Cesty souborů .exe a .dll jsou uloženy v trasovacím souboru, když jsou shromažďována trasování.  Změna tohoto nastavení nemá vliv na všechny dříve shromážděná trasování.  
+ Cesty. *exe* a. *knihovny DLL* soubory jsou uloženy v trasovacím souboru, když jsou shromažďována trasování.  Změna tohoto nastavení nemá vliv na všechny dříve shromážděná trasování.  
   
 ## <a name="buffering"></a>Ukládání do vyrovnávací paměti  
  Vizualizér souběžnosti používá trasování událostí pro Windows (ETW), když shromáždí trasování.  Trasování událostí pro Windows používá různé vyrovnávací paměti jako ukládá události.  Výchozí nastavení vyrovnávací paměti ETW nemusí být optimální ve všech případech a v některých případech, může dojít k problémům, jako je například ke ztrátě událostí.  Karta ukládání do vyrovnávací paměti ke konfiguraci nastavení vyrovnávací paměti ETW. Další informace najdete v tématu [trasování událostí](http://go.microsoft.com/fwlink/?LinkId=234579) a [EVENT_TRACE_PROPERTIES struktura](http://go.microsoft.com/fwlink/?LinkId=234580).  
@@ -56,7 +57,7 @@ Pomocí **Upřesnit nastavení** dialogové okno vizualizér souběžnosti můž
 ## <a name="markers"></a>Značky  
  Na **značek** kartě, můžete nakonfigurovat sadu zprostředkovatelů trasování událostí pro Windows, které jsou zobrazeny jako značky v vizualizér souběžnosti.  Můžete také filtrovat značky kolekce na základě úroveň důležitosti a kategorie trasování událostí pro Windows.  Pokud používáte [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md) a jsou pomocí vlastního zprostředkovatele značky, můžete ji zaregistrovat zde tak, aby se zobrazí v zobrazení vláken.  
   
-### <a name="adding-a-new-provider"></a>Přidání nového poskytovatele  
+### <a name="add-a-new-provider"></a>Přidat nového poskytovatele  
  Pokud váš kód používá [SDK Vizualizéru souběžnosti](../profiling/concurrency-visualizer-sdk.md) nebo generuje události trasování událostí pro Windows, které následují <xref:System.Diagnostics.Tracing.EventSource> konvence, zobrazí se tyto události v Concurrency Visualizer tak, že je zaregistrujete v tomto dialogovém.  
   
  V **název** pole, zadejte název, který popisuje typy událostí, které jsou generovány zprostředkovatelem.  V **GUID** zadejte identifikátor GUID, která souvisí s tímto poskytovatelem. (Identifikátor GUID je přidružen každých zprostředkovatel trasování událostí pro Windows.)  
@@ -74,16 +75,16 @@ Pomocí **Upřesnit nastavení** dialogové okno vizualizér souběžnosti můž
 ## <a name="files"></a>Soubory  
  Na **soubory** kartě můžete zadat shromažďovaných adresáři, pod které trasování soubory se ukládají pokaždé, když trasování.  Vizualizér souběžnosti generuje čtyři soubory pro každý trasování, které shromáždí:  
   
--   Soubor protokolu (ETL) trasování událostí režimu jádra (*. kernel.etl)  
+-   Soubor protokolu (ETL) trasování událostí režimu jádra (*.* Kernel.etl*)  
   
--   Soubor protokolu trasování událostí uživatelském režimu (*. user.etl)  
+-   Soubor protokolu trasování událostí uživatelském režimu (*.* User.etl*)  
   
--   Soubor dat Vizualizéru souběžnosti (*. CVData)  
+-   Soubor dat Vizualizéru souběžnosti (*.* CVData*)  
   
--   Soubor trasování Vizualizéru souběžnosti (*. CVTrace)  
+-   Soubor trasování Vizualizéru souběžnosti (*.* CVTrace*)  
   
  Dva soubory ETL ukládání dat trasování a dva soubory vizualizér souběžnosti uložení zpracovaná data.  Nezpracovaná souborů ETL se nepoužívají, obvykle po zpracování trasování.  Výběr **soubory odstranit událost trasování protokolu (ETL) po dokončení analýzy** políčko snižuje množství dat trasování, která je uložená na disku.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Pouze můj kód](../profiling/just-my-code-threads-view.md)   
  [Značky Vizualizéru souběžnosti](../profiling/concurrency-visualizer-markers.md)

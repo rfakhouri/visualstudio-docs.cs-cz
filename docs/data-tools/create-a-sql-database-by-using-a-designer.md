@@ -14,11 +14,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c0cefc826c26e1f981866a3ceb16fc16d2d522b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 433a8bc7cae982b5ec8106966ec8c6ca0af45076
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690923"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Vytvoření databáze a přidání tabulek v sadě Visual Studio
 Visual Studio můžete použít k vytváření a aktualizaci místního databázového souboru v SQL serveru Express LocalDB. Můžete také vytvořit databázi spuštěním příkazů Transact-SQL v **Průzkumník objektů systému SQL Server** okno nástroje v sadě Visual Studio. V tomto tématu jsme vytvoříte soubor MDF a přidání tabulek a klíče pomocí Návrháře tabulky.
@@ -88,7 +89,7 @@ V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a 
 
 6.  Pojmenujte tabulku Zákazníci prostřednictvím aktualizace prvního řádku v podokně se skriptem tak, aby odpovídala následující ukázce:
 
-    ```
+    ```sql
     CREATE TABLE [dbo].[Customers]
     ```
 
@@ -168,6 +169,6 @@ V této části vytvoříte dvě tabulky, primární klíč v každé tabulce a 
 
 7.  Na panelu nabídek vyberte **soubor**, **Uložit vše**.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Přístup k datům v sadě Visual Studio](accessing-data-in-visual-studio.md)

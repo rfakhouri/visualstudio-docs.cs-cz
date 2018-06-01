@@ -1,5 +1,5 @@
 ---
-title: Uložit data zpět do databáze
+title: Ukládání dat zpět do databáze
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,13 +22,14 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee004af6cb130167789cac022ae1c04beef8dbe6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ef60be5002c5d99f8947bfa770665fa3535a20e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691131"
 ---
-# <a name="save-data-back-to-the-database"></a>Uložit data zpět do databáze
+# <a name="save-data-back-to-the-database"></a>Ukládání dat zpět do databáze
 Datová sada je kopie v paměti data. Pokud změníte data, je dobrým zvykem uložit tyto změny zpět do databáze. Můžete to udělat jedním ze tří způsobů:
 
 -   Při volání jedné z metod aktualizace TableAdapter
@@ -221,7 +222,7 @@ Poté, co byly provedeny změny v datové sadě, může přenášet změny ke zd
 
  Jako obrázek o tom, jak jsou provedeny aktualizace Předpokládejme, že vaše aplikace používá datovou sadu, která obsahuje do jedné tabulky datového. Aplikace načte dva řádky z databáze. Po načtení tabulka v paměti dat vypadat třeba takto:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Unchanged)    c400         Nancy Buchanan    Pending
@@ -229,7 +230,7 @@ Poté, co byly provedeny změny v datové sadě, může přenášet změny ke zd
 
  Aplikace změní stav Nancy Kocián na "Preferované." V důsledku této změny, hodnota <xref:System.Data.DataRow.RowState%2A> změny vlastností pro tento řádek z <xref:System.Data.DataRowState.Unchanged> k <xref:System.Data.DataRowState.Modified>. Hodnota <xref:System.Data.DataRow.RowState%2A> vlastnost pro první řádek zůstane <xref:System.Data.DataRowState.Unchanged>. Datová tabulka nyní vypadat třeba takto:
 
-```
+```sql
 (RowState)     CustomerID   Name             Status
 (Unchanged)    c200         Robert Lyon      Good
 (Modified)     c400         Nancy Buchanan    Preferred
@@ -260,7 +261,7 @@ Poté, co byly provedeny změny v datové sadě, může přenášet změny ke zd
 > [!NOTE]
 > Můžete také nastavit hodnoty v `Parameters` kolekce sami v kódu, což by obvykle provést v obslužné rutiny události pro adaptér dat <xref:System.Data.DataTable.RowChanging> událostí.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Datové sady nástrojů v sadě Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Vytvoření a konfigurace TableAdapters](create-and-configure-tableadapters.md)

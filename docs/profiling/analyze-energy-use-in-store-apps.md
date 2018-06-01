@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: c6b319953f3d38814934b2fd8e80f06008f95013
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 4ad28707c6f90a84d69734959f783851e3bc783c
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692132"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analýza spotřeby energie v aplikacích pro UPW
 Visual Studio **spotřeba energie na** profileru pomáhá analyzovat power a spotřeby energie aplikací UWP do úsporného režimu tablet zařízení, která používají nebo jeho část čas na své vlastní baterie. Na zařízení napájeném z baterie může aplikace s příliš vysokou spotřebou energie způsobit tak velkou nespokojenost zákazníka, že ji může dokonce i odinstalovat. Optimalizace energie můžete zvýšit přijetí vaší aplikace a použít zákazníků.  
@@ -92,7 +93,7 @@ if (performance && performance.mark) {
 2.  Zvolte **spotřeba energie na** a potom zvolte **spustit**.  
   
     > [!NOTE]
-    >  Při spuštění **spotřeba energie na** profileru, může dojít **řízení uživatelských účtů** okno požadující vaše oprávnění ke spuštění VsEtwCollector.exe. Zvolte **Ano**.  
+    >  Při spuštění **spotřeba energie na** profileru, může dojít **řízení uživatelských účtů** okno požadující vaše oprávnění ke spuštění *VsEtwCollector.exe*. Zvolte **Ano**.  
   
 3.  Spusťte v aplikaci shromažďování dat.  
   
@@ -122,10 +123,10 @@ if (performance && performance.mark) {
   
 |||  
 |-|-|  
-|![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Soubor sestavy má název sestavy*RRRRMMDD hh: mm*.diagsession. Pokud se rozhodnete sestavu uložit, můžete název změnit.|  
-|![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Časová osa ukazuje délku relace profilace, aktivační události životního cyklu aplikace a uživatelské značky.|  
-|![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Přetažením modrých panelů můžete vybrat určitou oblast časové osy a omezit tak sestavu jen na tuto část časové osy.|  
-|![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|**Spotřeby energie** grafu je Víceřádkový graf, který zobrazuje změny ve výkonu způsobený prostředků zařízení během relace profilování. Profiler Spotřeba energie sleduje výkon využívaný procesorem, síťovou aktivitou a displejem.|  
+|![1. krok](../profiling/media/procguid_1.png "ProcGuid_1")|Soubor sestavy má název sestavy*RRRRMMDD hh: mm*.diagsession. Pokud se rozhodnete sestavu uložit, můžete název změnit.|  
+|![2. krok](../profiling/media/procguid_2.png "ProcGuid_2")|Časová osa ukazuje délku relace profilace, aktivační události životního cyklu aplikace a uživatelské značky.|  
+|![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Přetažením modrých panelů můžete vybrat určitou oblast časové osy a omezit tak sestavu jen na tuto část časové osy.|  
+|![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|**Spotřeby energie** grafu je Víceřádkový graf, který zobrazuje změny ve výkonu způsobený prostředků zařízení během relace profilování. Profiler Spotřeba energie sleduje výkon využívaný procesorem, síťovou aktivitou a displejem.|  
 |![Krok 5](../profiling/media/procguid_6.png "ProcGuid_6")|**Prostředky (On/vypnutém)** graf obsahuje podrobnosti o síti náklady na energii. **Sítě** panelu představuje čas, který síťové připojení není otevřené. **Přenos dat** podřízené panelu je čas, aby byla aplikace příjem nebo odeslání dat přes síť.|  
 |![Krok 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|**Energie využití: Souhrn** ukazuje přímo úměrná množství celkovou spotřebu, která byla použita ve vybrané časové osy procesoru, síťové aktivity a zobrazení na obrazovce.|  
   
@@ -152,6 +153,6 @@ if (performance && performance.mark) {
   
 -   **Časování funkce JavaScript** a **využití procesoru** nástroje vám může pomoct snížit zatížení procesoru při je způsobena neefektivní funkce. V tématu [využití procesoru analyzovat](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
  [Profilace v sadě Visual Studio](../profiling/index.md)  
  [Průvodce funkcí profilování](../profiling/profiling-feature-tour.md)

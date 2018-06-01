@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e713292421613e835697037d5298a4a2c854f6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4f59167b356f4a04b4b37e699fbe49f1ea82943e
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34692298"
 ---
 # <a name="concurrency-visualizer-markers"></a>Značky Vizualizéru souběžnosti
 Vizualizér souběžnosti značky jsou ikony, které představují události v aplikaci.  Obvykle se aplikace generuje těchto událostí k určení fáze nebo výskyty v aplikaci.  Události lze vygenerovat, aplikací nebo knihovny a moduly runtime, který používá aplikace.  
@@ -59,9 +60,9 @@ Vizualizér souběžnosti značky jsou ikony, které představují události v a
  Můžete použít kartu značek v [Upřesnit nastavení](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) dialogové okno pro zobrazení nebo skrytí značek z různých zdrojů v Concurrency Visualizer a vy můžete filtrovat podle značky, na základě důležitosti a kategorie.  
   
 ## <a name="markers-from-eventsource"></a>Značky z EventSource  
- Vizualizér souběžnosti lze také zobrazit událostí EventSource.  Další informace najdete v tématu [vizualizace událostí EventSource v podobě značek](../profiling/visualizing-eventsource-events-as-markers.md).  
+ Vizualizér souběžnosti lze také zobrazit událostí EventSource.  Další informace najdete v tématu [událostí EventSource vizualizovat jako značky](../profiling/visualizing-eventsource-events-as-markers.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Značky příznaků](../profiling/flag-markers.md)   
  [Značky zpráv](../profiling/message-markers.md)   
  [Značky rozpětí](../profiling/span-markers.md)   

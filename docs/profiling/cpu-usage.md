@@ -11,10 +11,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: b372d3d76153b5f5c885a6987d898cf55254b413
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477519"
 ---
 # <a name="analyze-cpu-usage"></a>Analýza využití procesoru
 Když potřebujete prozkoumat problémy s výkonem v aplikaci, je vhodné oddělení na zahájení pochopení, jak používá procesoru. **Využití procesoru** nástroj ukazuje, kde je procesoru výdaje čas provádění Visual C++, Visual C# nebo Visual Basic a kód jazyka JavaScript. Od verze Visual Studio 2015 Update 1, můžete zobrazit rozpis podle funkce využití procesoru bez opuštění ladicího programu. Můžete zapnout procesoru profilace zapnout a vypnout při ladění a zobrazit výsledky při spuštění je zastaveno, například zarážky.  
@@ -24,7 +25,7 @@ Máte několik možností pro spouštění a správu relace diagnostiky. Napří
 Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi sestavení. Analýza využití procesoru při ladění, najdete v tématu [začátečníka profilací výkonu](../profiling/beginners-guide-to-performance-profiling.md). 
 
 > [!NOTE]
-> Pro .NET Core a ASP.NET Core nástroje využití CPU aktuálně neposkytuje přesné výsledky s přenosné PBDs. Místo toho použijte úplný soubory PDB.
+> U platforem .NET Core a ASP.NET Core nástroj Využití procesoru v současnosti neposkytuje přesné výsledky o přenosných souborech PDB. Proto raději použijte celé soubory PDB.
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> Shromažďování údajů o využití procesoru  
   
@@ -66,19 +67,19 @@ Zde jsme ukazují, jak shromažďovat a analyzovat využití procesoru s verzi s
   
 |||  
 |-|-|  
-|![Krok 1](../profiling/media/procguid_1.png "ProcGuid_1")|Uzel na nejvyšší úrovni ve stromech volání využití procesoru je pseudo uzel|  
-|![Krok 2](../profiling/media/procguid_2.png "ProcGuid_2")|Ve většině aplikací když **zobrazit externí kód** možnost je vypnuta, je uzel druhé úrovně **[externí kód]** uzlu, který obsahuje systém a architektura kód, který spustí a ukončí aplikaci a nevykresluje uživatelského rozhraní, ovládací prvky plánování vláken a poskytuje jiných nízké úrovně služeb k aplikaci.|  
-|![Krok 3](../profiling/media/procguid_3.png "ProcGuid_3")|Podřízené objekty daného uzlu druhé úrovně jsou metody uživatelského kódu a asynchronní rutiny, které jsou volány, nebo vytvořené druhé úrovně systému a framework kódu.|  
-|![Krok 4](../profiling/media/procguid_4.png "ProcGuid_4")|Podřízené uzly metody obsahovat data jen pro volání metody nadřazené. Když **zobrazit externí kód** je zakázaná, metody aplikace může také obsahovat **[externí kód]** uzlu.|  
+|![1. krok](../profiling/media/procguid_1.png "ProcGuid_1")|Nejvyšší uzel ve stromech volání Využití procesoru je fiktivní.|  
+|![2. krok](../profiling/media/procguid_2.png "ProcGuid_2")|Ve většině aplikací, ve kterých zakážete možnost **Zobrazit externí kód**, je v druhé úrovni uzel **[Externí kód]**, který obsahuje systémový kód a kód architektury, který spouští a zastavuje aplikaci, vykresluje uživatelské rozhraní, řídí plánování podprocesů a na nejnižší úrovni zajišťuje pro aplikaci další služby.|  
+|![3. krok](../profiling/media/procguid_3.png "ProcGuid_3")|Uzlu druhé úrovně jsou podřízeny metody uživatelského kódu a asynchronní rutiny, které volá nebo vytváří systémový kód a kód architektury druhé úrovně.|  
+|![4. krok](../profiling/media/procguid_4.png "ProcGuid_4")|Podřízené uzly metody obsahují jenom data pro volání nadřízené metody. Pokud zakážete **Zobrazit externí kód**, mohou metody aplikace obsahovat také uzel **[Externí kód]**.|  
   
 ####  <a name="BKMK_External_Code"></a> Externí kódu  
- Externí kódu jsou funkcí v systému a framework komponent, které se provádějí pomocí kódu, který můžete psát. Externí kód zahrnují funkce, které spuštění a zastavení aplikace, vykreslení uživatelského rozhraní, řídit vlákna a poskytují jiných nízké úrovně služeb k aplikaci. Ve většině případů nebude zájem o externí kód, a tak využití procesoru volání stromu shromáždí externí funkce metody uživatele do jedné **[externí kód]** uzlu.  
+ Externím kódem se rozumí funkce systémových komponent a komponent architektury, které jsou spouštěné vámi napsaným kódem. Externí kód zahrnuje funkce, které spouštějí a zastavují aplikaci, vykreslují uživatelské rozhraní, řídí dělení na podprocesy a na nejnižší úrovni zajišťuje pro aplikaci další služby. Ve většině případů nebude zájem o externí kód, a tak využití procesoru volání stromu shromáždí externí funkce metody uživatele do jedné **[externí kód]** uzlu.  
   
  Pokud chcete zobrazit cesty volání externí kódu, zvolte **zobrazit externí kód** z **filtrovat zobrazení** seznamu a potom zvolte **použít**.  
   
  ![Zvolte zobrazení filtru, a zobrazit externí kód](../profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
   
- Mějte na paměti, že jsou vnořeny hluboko mnoho řetězy volání externí kód, tak, aby šířka sloupce název funkce může být vyšší než šířka zobrazení všech ale největší monitorování počítače. V takovém případě se zobrazují názvy funkcí jako **[...]** :  
+ Myslete na to, že řetězy volání externího kódu je většinou hluboko vnořené, takže šířka sloupce Název funkce může na většině počítačových monitorů – s výjimkou těch největších – přesáhnout šířku zobrazení. V takovém případě se zobrazují názvy funkcí jako **[...]** :  
   
  ![Vnořené externí kódu ve stromové struktuře volání](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
   
