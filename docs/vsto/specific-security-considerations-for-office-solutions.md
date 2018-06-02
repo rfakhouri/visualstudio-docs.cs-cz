@@ -1,5 +1,5 @@
 ---
-title: Specifické aspekty zabezpečení pro řešení Office | Microsoft Docs
+title: Specifické aspekty zabezpečení pro řešení Office
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,18 +21,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f799a0ef393def5c77249f51a26278bd419ac523
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7da9446a4a5e4538164b09d1f11733f7bde3de24
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693354"
 ---
-# <a name="specific-security-considerations-for-office-solutions"></a>Specifické aspekty zabezpečení u řešení pro systém Office
+# <a name="specific-security-considerations-for-office-solutions"></a>Specifické aspekty zabezpečení pro řešení Office
   Funkce zabezpečení poskytuje rozhraní Microsoft .NET Framework a aplikace Microsoft Office může pomoct chránit vaše řešení pro systém Office před možnými hrozbami. Toto téma popisuje některé z těchto hrozeb a poskytuje doporučení, která pomáhá chránit proti. Zahrnuje také informace o vlivu řešení pro systém Office nastavení zabezpečení aplikace Microsoft Office.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>Důvěryhodné, že kód je znovu použít v nový Kyberzločinci dokument  
+## <a name="trusted-code-is-repurposed-in-a-new-malicious-document"></a>Důvěryhodný kód je znovu použít v nový kyberzločinci dokument  
  Útočník může trvat důvěryhodný kód, který je určená pro jeden konkrétní účel, například stahování osobní údaje pro jejich zaměstnání aplikaci, a opakovaně ji používat do jiného dokumentu, jako je například na listu. Kód nebude vědět, že není spuštěn původního dokumentu a může otevře dalšími hrozbami, jako je například získat osobní údaje nebo provádění kódu s použitím zvýšená oprávnění, když je otevřen jiným uživatelem. Alternativně útočník můžete jednoduše změňte dat v listu tak, aby, odeslání do napadeného chová neočekávaně. Změnou hodnoty, vzorce nebo prezentace charakteristiky sešitu spojené s kódem se zlými úmysly k útoku na odesláním změněný soubor jiným uživatelem. Je také možné uživatelům přístup k informacím, které by neměl zobrazíte změnou hodnoty v listu.  
   
  Vzhledem k tomu, že umístění sestavení a umístění dokumentu musí mít dostatečně průkaznými materiály provést, není tento útok snadno připojit. Například dokumenty v e-mailových příloh, nebo v nedůvěryhodné intranetových serverů nemají dostatečná oprávnění ke spuštění.  
@@ -58,19 +59,19 @@ ms.lasthandoff: 04/16/2018
   
 -   Pokud se serverem Exchange se používá aplikace Outlook, správce můžete povolit nebo zakázat ochrana modelů objektů pro všechny doplňků VSTO na počítači nebo může správce určit, že určité doplňků VSTO můžete spouštět bez zjištění ochrana modelů objektu. Správci mohou také upravit chování ochrana modelů objektů v určité oblasti objektový model. Například mohou správci automaticky povolit doplňků VSTO pro odeslání e-mailu prostřednictvím kódu programu, i když je povolená ochrana modelů objektu.  
   
- Spuštění v aplikaci Outlook 2007, chování ochrana modelů objektu se změnil na zlepšení uživatelského rozhraní pro vývojáře a uživatel současně pomáhá zabezpečit aplikace Outlook. Další informace najdete v tématu [zabezpečení změn kódu v aplikaci Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
+ Spuštění v aplikaci Outlook 2007, chování ochrana modelů objektu se změnil na zlepšení uživatelského rozhraní pro vývojáře a uživatel současně pomáhá zabezpečit aplikace Outlook. Další informace najdete v tématu [Code změny zabezpečení v aplikaci Outlook 2007](http://go.microsoft.com/fwlink/?LinkId=73429).  
   
-### <a name="minimizing-object-model-guard-warnings"></a>Minimalizace objektu modelu ochrana upozornění  
- Abyste se vyhnuli upozornění zabezpečení při použití s omezeným přístupem vlastnosti a metody, ujistěte se, že vaše doplňku VSTO získává Outlook objekty z `Application` pole z `ThisAddIn` třídy ve vašem projektu. Další informace o tomto poli najdete v tématu [programování doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
+### <a name="minimize-object-model-guard-warnings"></a>Minimalizovat objektu modelu ochrana upozornění  
+ Abyste se vyhnuli upozornění zabezpečení při použití s omezeným přístupem vlastnosti a metody, ujistěte se, že vaše doplňku VSTO získává Outlook objekty z `Application` pole z `ThisAddIn` třídy ve vašem projektu. Další informace o tomto poli najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
   
- Ochrana modelů objektu může být důvěryhodný pouze objekty aplikace Outlook získat z tohoto objektu. Naproti tomu objekty, které jsou získávány z nový objekt Microsoft.Office.Interop.Outlook.Application nejsou důvěryhodné, a s omezeným přístupem vlastnosti a metody se vyvolat upozornění zabezpečení, pokud je povolená ochrana modelů objektu.  
+ Ochrana modelů objektu může být důvěryhodný pouze objekty aplikace Outlook získat z tohoto objektu. Naproti tomu objekty, které jsou získávány z nové `Microsoft.Office.Interop.Outlook.Application` objekt nejsou důvěryhodné, a s omezeným přístupem vlastnosti a metody se vyvolat upozornění zabezpečení, pokud je povolená ochrana modelů objektu.  
   
- Následující příklad kódu zobrazuje upozornění zabezpečení, pokud je povolená ochrana modelů objektu. Ochrana modelů objektu je omezený na vlastnosti třídy Microsoft.Office.Interop.Outlook.MailItem. Objekt Microsoft.Office.Interop.Outlook.MailItem není důvěryhodný, protože kód získá z Microsoft.Office.Interop.Outlook.Application, která je vytvořena pomocí **nové** operátor místo získání z `Application` pole.  
+ Následující příklad kódu zobrazuje upozornění zabezpečení, pokud je povolená ochrana modelů objektu. `To` Vlastnost `Microsoft.Office.Interop.Outlook.MailItem` třída je omezené na základě ochrana modelů objektu. `Microsoft.Office.Interop.Outlook.MailItem` Objekt není důvěryhodný, protože kód získá z `Microsoft.Office.Interop.Outlook.Application` vytvořený pomocí **nové** operátor místo získání z `Application` pole.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
  [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]  
   
- Následující příklad kódu ukazuje, jak používat s omezeným přístupem k vlastnosti Microsoft.Office.Interop.Outlook.MailItem objektu, který je důvěryhodný ochrana modelů objektu. Kód používá důvěryhodné `Application` pro získání Microsoft.Office.Interop.Outlook.MailItem.  
+ Následující příklad kódu ukazuje, jak používat s omezeným přístupem k vlastnosti `Microsoft.Office.Interop.Outlook.MailItem` objektu, která je důvěryhodná ochrana modelů objektu. Kód používá důvěryhodné `Application` pro získání `Microsoft.Office.Interop.Outlook.MailItem`.  
   
  [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]  
@@ -78,17 +79,17 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  Pokud se serverem Exchange se používá aplikace Outlook, získávání všechny objekty aplikace Outlook z `ThisAddIn.Application` není zaručeno, že vaše doplňku VSTO bude mít přístup k celé objektový model aplikace Outlook. Například pokud správce Exchange Outlook automaticky nastaví na hodnotu Odepřít všechny pokusy o informace o adrese přístup pomocí objektového modelu aplikace Outlook, potom aplikace Outlook nebude povolovat předchozí příklad kódu pro přístup na vlastnost, i když příklad kódu používá důvěryhodných `ThisAddIn.Application` pole.  
   
-### <a name="specifying-which-add-ins-to-trust-when-using-exchange"></a>Určení které doplňky do vztahu důvěryhodnosti při používání systému Exchange  
+### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Zadejte které doplňků důvěřovat při používání systému Exchange  
  Pokud používají Outlook se Exchange, správci mohou určit, že určité doplňků VSTO můžete spouštět bez zjištění ochrana modelů objektu. Outlook doplňků VSTO vytvořili pomocí řešení pro systém Office v sadě Visual Studio nemůže být důvěryhodný samostatně. může být pouze důvěryhodné jako skupina.  
   
- Outlook důvěřuje VSTO doplňku založené na hodnotu hash souboru vstupní bod DLL doplňku VSTO. Všechny aplikace Outlook doplňků VSTO cílených [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] použít stejnou knihovnu vstupní bod DLL (VSTOLoader.dll). To znamená, že pokud správce důvěřuje žádné Add-in VSTO, která je cílena [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] běžet bez zjištění ochrana modelů objektu, pak všechny ostatní doplňků VSTO které cílí [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jsou důvěryhodné. Další informace o důvěřující konkrétní doplňků VSTO běžet bez zjištění ochrana modelů objektů najdete v tématu [zadat metodu Outlook používá ke správě funkce prevence virů](http://go.microsoft.com/fwlink/?LinkId=128773).  
+ Outlook důvěřuje VSTO doplňku založené na hodnotu hash souboru vstupní bod DLL doplňku VSTO. Všechny aplikace Outlook doplňků VSTO cílených [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] použít stejnou knihovnu DLL vstupního bodu (*VSTOLoader.dll*). To znamená, že pokud správce důvěřuje žádné Add-in VSTO, která je cílena [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] běžet bez zjištění ochrana modelů objektu, pak všechny ostatní doplňků VSTO které cílí [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] jsou důvěryhodné. Další informace o důvěřující konkrétní doplňků VSTO běžet bez zjištění ochrana modelů objektů najdete v tématu [zadat metodu Outlook používá ke správě funkce prevence virů](http://go.microsoft.com/fwlink/?LinkId=128773).  
   
 ## <a name="permission-changes-do-not-take-effect-immediately"></a>Oprávnění změny se projeví okamžitě  
  Pokud správce upraví oprávnění pro dokument nebo sestavení, musí uživatelé ukončete a restartujte všechny aplikace Office pro tyto změny, která budou vynucena.  
   
  Jiné aplikace, které jsou hostiteli aplikace Microsoft Office může bránit také nová oprávnění z vynucení. Uživatelé musí ukončit všechny aplikace, které používají Office, hostované nebo samostatný, pokud došlo ke změně zásady zabezpečení.  
   
-## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Centrum zabezpečení pro nastavení v systému Microsoft Office nemá vliv na doplňky nebo úpravy na úrovni dokumentů  
+## <a name="trust-center-settings-in-the-microsoft-office-system-do-not-affect-add-ins-or-document-level-customizations"></a>Nastavení centra vztah důvěryhodnosti v systému Microsoft Office neovlivní doplňky nebo úpravy na úrovni dokumentů  
  Uživatelé mohou zabránit doplňků VSTO načítání nastavením možnost v **Centrum zabezpečení**. Však nejsou doplňků VSTO a úpravy na úrovni dokumentů vytvořené pomocí řešení pro systém Office v sadě Visual Studio ovlivněny tato nastavení vztahu důvěryhodnosti.  
   
  Pokud uživatel brání doplňků VSTO z načítání pomocí **Centrum zabezpečení**, následující typy doplňků VSTO nenačte:  
@@ -117,7 +118,7 @@ ms.lasthandoff: 04/16/2018
   
 6.  V podokně podrobností vyberte **aplikace vyžadují doplňků být podepsané důvěryhodným vydavatelem** nebo **zakažte všechny aplikace doplňků**.  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Zabezpečení řešení pro systém Office](../vsto/securing-office-solutions.md)  
   
   

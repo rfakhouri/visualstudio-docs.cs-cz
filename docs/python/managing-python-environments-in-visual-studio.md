@@ -12,10 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d8c500b5f10f424cf60d92fd75a77e0ccb55866e
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477571"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Jak vytvořit a spravovat prostředí Python v sadě Visual Studio
 
@@ -104,7 +105,7 @@ Napravo od jednotlivých uvedených prostředí je ovládací prvek, které se o
 
 |   |   |
 |---|---|
-| ![film ikonu fotoaparátu pro video](../install/media/video-icon.png "přehrát video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) na prostředí Python v sadě Visual Studio (2 m 35s).|
+| ![Ikona filmové kamery pro video](../install/media/video-icon.png "Sledovat video") | [Podívejte se na video (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) na prostředí Python v sadě Visual Studio (2 m 35s).|
 
 ### <a name="what-if-no-environments-appear"></a>Co dělat, když se zobrazí žádné prostředí?
 
@@ -159,7 +160,7 @@ Prostředí, který je nainstalován v nestandardním umístění (včetně cond
 
 1. Chcete-li instalovat balíčky v prostředí, použijte [balíčky karta](python-environments-window-tab-reference.md#packages-tab).
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Instalace překladače Python](installing-python-interpreters.md)
 - [Výběr interpretu pro projekt](selecting-a-python-environment-for-a-project.md)

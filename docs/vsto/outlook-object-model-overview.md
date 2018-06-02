@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9dbf629961a72bc1294da4f3abea563476922716
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e2d0141611a13e7b1ee9b20b8988466c92f3ce2
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693043"
 ---
 # <a name="outlook-object-model-overview"></a>Přehled modelu objektů aplikace Outlook
   K vývoji doplňků VSTO pro aplikaci Microsoft Office Outlook, můžete pracovat s objekty, které jsou k dispozici ve model objektu aplikace. Objektový model aplikace Outlook poskytuje třídy a rozhraní, které představují položky v uživatelském rozhraní. Například <xref:Microsoft.Office.Interop.Outlook.Application> objekt představuje celou aplikaci <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> objekt představuje složku obsahující e-mailových zpráv nebo jiných položek a <xref:Microsoft.Office.Interop.Outlook.MailItem> objekt představuje e-mailové zprávy.  
@@ -34,9 +35,9 @@ ms.lasthandoff: 04/16/2018
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak provést I: pomocí aplikace Outlook vytvořit vlastní sestavu úkolů?](http://go.microsoft.com/fwlink/?LinkID=130315).  
+ ![odkaz na video](../vsto/media/playvideo.gif "odkaz na video") související Videoukázka, najdete v části [jak I: použití Outlook vytvořit vlastní sestavu úkolů?](http://go.microsoft.com/fwlink/?LinkID=130315).  
   
-## <a name="accessing-objects-in-an-outlook-project"></a>Přístup k objektům v projektech Outlook  
+## <a name="access-objects-in-an-outlook-project"></a>Přístup k objektům v projektech Outlook  
  Outlook poskytuje mnoho objektů, se kterými můžete pracovat. Objektový model efektivně používat, musí být obeznámeni s nejvyšší úrovně následující objekty:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.Application>  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.Office.Interop.Outlook.ContactItem>  
   
-### <a name="application-object"></a>Objekt aplikace  
+### <a name="application-object"></a>objekt aplikace  
  <xref:Microsoft.Office.Interop.Outlook.Application> Objekt představuje v aplikaci Outlook a je nejvyšší objekt v modelu objektů aplikace Outlook. Mezi nejdůležitější členů tohoto objektu, patří:  
   
 -   [Createitem –](http://msdn.microsoft.com/en-us/771707fb-5f34-473d-9fdf-09a6a7f55ece) metodu, která vám pomůže vytvořit novou položku například e-mailová zpráva, úlohy nebo schůzku.  
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/16/2018
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> Vlastnosti, která můžete použít pro přístup k systému windows, které zobrazení obsahu jednu položku, například e-mailové zprávy nebo žádost o schůzku.  
   
- Získat instanci <xref:Microsoft.Office.Interop.Outlook.Application> objektu, použijte pole aplikace `ThisAddIn` třídy ve vašem projektu. Další informace najdete v tématu [programování doplňků VSTO](../vsto/programming-vsto-add-ins.md).  
+ Získat instanci <xref:Microsoft.Office.Interop.Outlook.Application> objektu, použijte pole aplikace `ThisAddIn` třídy ve vašem projektu. Další informace najdete v tématu [doplňků Program VSTO](../vsto/programming-vsto-add-ins.md).  
   
 > [!NOTE]  
 >  Abyste se vyhnuli upozornění zabezpečení při použití vlastnosti a metody, která jsou blokovaná ochrana modelů objektů aplikace Outlook, získat z pole s aplikací Outlook objekty `ThisAddIn` třídy. Další informace najdete v tématu [specifické aspekty zabezpečení pro řešení Office](../vsto/specific-security-considerations-for-office-solutions.md).  
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Použití <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> metodu <xref:Microsoft.Office.Interop.Outlook.Application> objekt, který chcete získat <xref:Microsoft.Office.Interop.Outlook.Explorer> , má právě fokus.  
   
--   Použijte metodu GetExplorer <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> objekt, který chcete získat <xref:Microsoft.Office.Interop.Outlook.Explorer> pro aktuální složku.  
+-   Použití `GetExplorer` metodu <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> objekt, který chcete získat <xref:Microsoft.Office.Interop.Outlook.Explorer> pro aktuální složku.  
   
 ### <a name="inspector-object"></a>Objekt Inspector  
  <xref:Microsoft.Office.Interop.Outlook.Inspector> Objekt představuje okno, které zobrazí jednu položku například e-mailová zpráva, úlohy nebo schůzku. <xref:Microsoft.Office.Interop.Outlook.Inspector> Objekt obsahuje metody a vlastnosti, které můžete použít k úpravě okna a události, které se vyvolá, když okno změní.  
@@ -89,7 +90,7 @@ ms.lasthandoff: 04/16/2018
   
 -   Použití <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> metodu <xref:Microsoft.Office.Interop.Outlook.Application> objekt, který chcete získat <xref:Microsoft.Office.Interop.Outlook.Inspector> , má právě fokus.  
   
--   Použít metodu GetInspector konkrétní položky, jako například <xref:Microsoft.Office.Interop.Outlook.MailItem> nebo <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, k načtení Inspector, který je k ní přidružena.  
+-   Použití `GetInspector` metoda konkrétní položky, jako například <xref:Microsoft.Office.Interop.Outlook.MailItem> nebo <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>, k načtení Inspector, který je k ní přidružena.  
   
 ### <a name="mapifolder-object"></a>Objekt MAPIFolder  
  <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> Objekt představuje složku obsahující e-mailových zpráv, kontakty, úkoly a další položky. Outlook poskytuje 16 výchozí <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> objekty.  
@@ -98,17 +99,17 @@ ms.lasthandoff: 04/16/2018
   
  Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox odpovídá **doručené pošty** složky aplikace Outlook.  
   
- Pro příklad, který ukazuje, jak pro přístup k výchozí <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> a vytvořte novou <xref:Microsoft.Office.Interop.Outlook.MAPIFolder>, najdete v části [postupy: Programové vytvoření vlastní položky složek](../vsto/how-to-programmatically-create-custom-folder-items.md).  
+ Pro příklad, který ukazuje, jak pro přístup k výchozí <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> a vytvořte novou <xref:Microsoft.Office.Interop.Outlook.MAPIFolder>, najdete v části [postupy: vytváření vlastních položek složek prostřednictvím kódu programu](../vsto/how-to-programmatically-create-custom-folder-items.md).  
   
 ### <a name="mailitem-object"></a>Objekt MailItem  
  <xref:Microsoft.Office.Interop.Outlook.MailItem> Objekt představuje e-mailové zprávy. <xref:Microsoft.Office.Interop.Outlook.MailItem> objekty jsou obvykle ve složkách, jako například **doručené pošty**, **Odeslaná pošta**, a **pošta k odeslání**. <xref:Microsoft.Office.Interop.Outlook.MailItem> Zpřístupní vlastnosti a metody, které slouží k vytvoření a odeslání e-mailových zpráv.  
   
- Příklad, který ukazuje, jak vytvořit e-mailu, najdete v části [postupy: vytváření položek e-mailu prostřednictvím kódu programu](../vsto/how-to-programmatically-create-an-e-mail-item.md).  
+ Příklad, který ukazuje, jak vytvořit e-mailu, najdete v části [postupy: Programové vytvoření položky e-mailu](../vsto/how-to-programmatically-create-an-e-mail-item.md).  
   
 ### <a name="appointmentitem-object"></a>Objekt částí AppointmentItem  
  <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> Objekt představuje schůzek, schůzku jednorázové nebo opakované události nebo meeting v **kalendáře** složky. <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> Objekt obsahuje metody, které provedení akcí, například neodpovídá na požadavky nebo předávání žádosti o schůzku a vlastnosti, které zadejte podrobné informace o schůzce jako je například umístění a čas.  
   
- Příklad, který ukazuje, jak vytvořit událost, naleznete v části [postupy: vytváření požadavku na schůzku prostřednictvím kódu programu](../vsto/how-to-programmatically-create-a-meeting-request.md).  
+ Příklad, který ukazuje, jak vytvořit událost, naleznete v části [postupy: vytváření žádostí o schůzku prostřednictvím kódu programu](../vsto/how-to-programmatically-create-a-meeting-request.md).  
   
 ### <a name="taskitem-object"></a>Objekt TaskItem  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> Objekt představuje úlohu provést v rámci zadaného časového rámce. <xref:Microsoft.Office.Interop.Outlook.TaskItem> objekty umístěné ve **úlohy** složky.  
@@ -118,18 +119,18 @@ ms.lasthandoff: 04/16/2018
 ### <a name="contactitem-object"></a>AssistantTelephoneNumber objektu  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>Objekt představuje kontakt v **kontakty** složky. <xref:Microsoft.Office.Interop.Outlook.ContactItem> objekty obsahují celou řadu kontaktní informace pro osoby, které představují, například poštovní adresu, e-mailových adres a telefonních čísel.  
   
- Příklad, který ukazuje, jak vytvořit nový kontakt, naleznete v části [postupy: přidávání ke kontaktům aplikace Outlook prostřednictvím kódu programu položku](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Příklad, který ukazuje, jak k vyhledání existujícího kontaktu, naleznete v části [postupy: hledání prostřednictvím kódu programu pro konkrétní kontakt](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
+ Příklad, který ukazuje, jak vytvořit nový kontakt, naleznete v části [postupy: přidávání ke kontaktům aplikace Outlook prostřednictvím kódu programu položku](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md). Příklad, který ukazuje, jak k vyhledání existujícího kontaktu, naleznete v části [postupy: hledání konkrétního kontaktu prostřednictvím kódu programu](../vsto/how-to-programmatically-search-for-a-specific-contact.md).  
   
 ##  <a name="refdoc"></a> Pomocí dokumentace modelu objektů aplikace Outlook  
  Úplné informace o modelu objektů aplikace Outlook může být odkaz primární spolupracující sestavení (PIA) Outlook a VBA objektu modelu.  
   
 ### <a name="primary-interop-assembly-reference"></a>Odkaz sestavení primární spolupráce  
- Odkaz na aplikaci Outlook PIA dokumenty typy v sestavení primární spolupráce pro aplikaci Outlook 2010. Další informace najdete v tématu [odkaz sestavení aplikace Outlook 2010 primární zprostředkovatel komunikace s objekty](http://go.microsoft.com/fwlink/?LinkId=189580).  
+ Odkaz na aplikaci Outlook PIA dokumenty typy v sestavení primární spolupráce pro aplikaci Outlook 2010. Další informace najdete v tématu [referenční primární spolupracující sestavení Outlook 2010](http://go.microsoft.com/fwlink/?LinkId=189580).  
   
  Kromě poskytování informací o pro všechny typy v PIA, tato dokumentace obsahuje také další informace o struktuře PIA a příklady kódu pro běžné úlohy automatizace aplikace Outlook.  
   
 ### <a name="vba-object-model-reference"></a>Odkaz na objekt modelu VBA  
- Reference objektu modelu VBA pro vytváření dokumenty objektový model aplikace Outlook, jako je zpřístupněné pro Visual Basic pro aplikace (VBA) kód. Další informace najdete v tématu [odkaz na objekt modelu Outlook 2010](http://go.microsoft.com/fwlink/?LinkId=199769).  
+ Reference objektu modelu VBA pro vytváření dokumenty objektový model aplikace Outlook, jako je zpřístupněné pro Visual Basic pro aplikace (VBA) kód. Další informace najdete v tématu [Outlook 2010 odkaz na objekt modelu](http://go.microsoft.com/fwlink/?LinkId=199769).  
   
  Všechny objekty a členy ve model odkaz na VBA odpovídají typy a členy v PIA aplikace Outlook. Například odpovídá objektu Inspector ve model odkaz na VBA <xref:Microsoft.Office.Interop.Outlook.Inspector> objekt v PIA aplikace Outlook. I když reference VBA objektu modelu poskytuje příklady kódu pro většinu vlastností, metod a událostí, pokud chcete používat v projektu doplňku VSTO Outlook, který vytvoříte pomocí musí překládat VBA kód v této referenci na Visual Basic a Visual C# Visual Studio.  
   
@@ -137,9 +138,9 @@ ms.lasthandoff: 04/16/2018
   
 |Název|Popis|  
 |-----------|-----------------|  
-|[Práce s položkami kontaktů](../vsto/working-with-contact-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s kontakty.|  
-|[Práce s položkami pošty](../vsto/working-with-mail-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s položkami pošty.|  
+|[Práce s položkami kontaktu](../vsto/working-with-contact-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s kontakty.|  
+|[Práce s položkami pošty](../vsto/working-with-mail-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s položkami pošty.|  
 |[Práce se složkami](../vsto/working-with-folders.md)|Obsahuje témata, která ukazují, jak provádět úlohy s složek.|  
-|[Práce s položkami kalendáře](../vsto/working-with-calendar-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s položkami kalendáře.|  
-|[Postupy: Určení aktuální položky aplikace Outlook prostřednictvím kódu programu](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Ukazuje, jak zobrazit název v aktuální složce a některé informace o vybrané položce.|  
+|[Práce s položkami kalendáře](../vsto/working-with-calendar-items.md)|Obsahuje témata, která ukazují, jak provádět úlohy s položkami kalendáře.|  
+|[Postupy: programové určení aktuální položky aplikace Outlook](../vsto/how-to-programmatically-determine-the-current-outlook-item.md)|Ukazuje, jak zobrazit název v aktuální složce a některé informace o vybrané položce.|  
   

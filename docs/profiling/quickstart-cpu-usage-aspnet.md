@@ -14,19 +14,20 @@ manager: douge
 ms.workload:
 - aspnet
 ms.openlocfilehash: 00704c236e8e0c0453a36add4cb4603b76c31bd9
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477285"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Rychlý úvod: Analyzujte data o využití procesoru v aplikaci Visual Studio (ASP.NET)
 
-Visual Studio poskytuje mnoho výkonné funkce, které vám pomůžou analyzovat problémy s výkonem v aplikaci. Toto téma poskytuje rychlý způsob, jak další některé základní funkce. Zde podíváme na nástroj, který identifikovat kritická místa výkonu z důvodu vysoké využití procesoru. Diagnostické nástroje jsou podporované pro .NET – vývoj v sadě Visual Studio, včetně ASP.NET a pro vývoj nativní/C++.
+Visual Studio poskytuje mnoho výkonné funkce, které vám pomůžou analyzovat problémy s výkonem v aplikaci. Toto téma poskytuje rychlý způsob, jak další některé základní funkce. Zde podíváme na nástroj, který identifikovat kritická místa výkonu z důvodu vysoké využití procesoru. Diagnostické nástroje jsou podporované pro vývoj rozhraní .NET v sadě Visual Studio, včetně ASP.NET, nativního vývoje a vývoje v jazyce C++.
 
-Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat relace diagnostiky. Pokud **využití procesoru** nástroj zde popsané nezískáte data, která budete potřebovat, [jiných nástrojů pro profilaci](../profiling/Profiling-Tools.md) poskytují různé druhy informace, které mohou být užitečné pro vás. V mnoha případech kritická místa výkonu aplikace může být způsobeno něco jiného než procesoru, jako je například paměť, vykreslování uživatelského rozhraní nebo doba požadavku sítě.
+Diagnostické centrum nabízí řadu dalších možností, jak spustit a spravovat diagnostické relace. Pokud **využití procesoru** nástroj zde popsané nezískáte data, která budete potřebovat, [jiných nástrojů pro profilaci](../profiling/Profiling-Tools.md) poskytují různé druhy informace, které mohou být užitečné pro vás. V řadě případů může být kritickým bodem aplikace něco jiného než procesor, třeba paměť, vykreslování uživatelského rozhraní nebo dlouhá odezva síťového požadavku.
 
 > [!NOTE]
-> Pro .NET Core a ASP.NET Core nástroje využití CPU aktuálně neposkytuje přesné výsledky s přenosné PBDs. Místo toho použijte úplný soubory PDB.
+> U platforem .NET Core a ASP.NET Core nástroj Využití procesoru v současnosti neposkytuje přesné výsledky o přenosných souborech PDB. Proto raději použijte celé soubory PDB.
 
 ## <a name="create-a-project"></a>Vytvoření projektu
 
@@ -155,7 +156,7 @@ Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat r
     }
     ```
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Krok 1: Shromáždění data profilování 
+##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>1. krok: Shromáždění profilačních dat 
   
 1.  Nejdřív nastavit zarážky ve vaší aplikaci tento řádek kódu `Simple` konstruktor:
 
@@ -168,11 +169,11 @@ Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat r
      ![Nastavit zarážky pro profilaci](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
-    > Nastavením dvě zarážky můžete omezit shromažďování dat na části kódu, který chcete analyzovat.
+    > Nastavením dvou zarážek omezíte shromažďování dat jenom na analyzovanou část kódu.
   
-1.  **Diagnostické nástroje** okno již viditelné, pokud jste vypnuli ho. Zobrazte okno znovu, klikněte na tlačítko **ladění / Windows / zobrazit diagnostické nástroje**.
+1.  **Diagnostické nástroje** okno již viditelné, pokud jste vypnuli ho. Pokud ho chcete znovu zobrazit, klikněte na **Ladit / Okna / Zobrazit diagnostické nástroje**.
 
-1.  Klikněte na tlačítko **ladění / spusťte ladění** (nebo **spustit** na panelu nástrojů nebo **F5**).
+1.  Klikněte na **Ladit / Spustit ladění** (nebo na panelu nástrojů stiskněte **Start** nebo **F5**).
 
 1.  Když aplikace dokončí načítání, klikněte na **o** odkaz v horní části webové stránky spustit nový kód.
 
@@ -186,26 +187,26 @@ Centrum diagnostiky nabízí mnoho dalších možností spouštět a spravovat r
 
      Pokud vyberete **záznam procesoru profil**, Visual Studio bude nahráváním funkcí a jak dlouho budou chtít provést a také poskytuje časová osa grafu, můžete se zaměřit na konkrétní segmenty relace vzorkování. Tato shromážděná data můžete zobrazit, jenom když aplikace se zastavilo na zarážce.
 
-6.  Stiskněte F5 a spusťte aplikaci k vaší zarážce druhý.
+6.  Stiskněte klávesu F5, kterou spustíte aplikaci až ke druhé zarážce.
 
-     Nyní nyní máte údaje o výkonu pro vaši aplikaci speciálně pro oblast kód, který běží mezi dvěma zarážky.
+     Teď máte údaje o výkonu aplikace přesně pro oblast kódu spuštěnou mezi dvěma zarážkami.
 
-     Profileru začne přípravu dat přístup z více vláken. Počkejte na její dokončení.
+     Profiler začne připravovat údaje o vlákně. Počkejte, až skončí.
   
-     Zobrazí sestavu v nástroj využití procesoru **využití procesoru** kartě.
+     V nástroji Využití procesoru se na kartě **Využití procesoru** zobrazí sestava.
 
-     V tomto okamžiku můžete začít analyzovat data.
+     Teď můžete začít analyzovat data.
 
-## <a name="Step2"></a> Krok 2: Analyzovat data o využití procesoru
+## <a name="Step2"></a> 2. krok: Analýza dat o využití procesoru
 
-Doporučujeme začít analýza dat kontrolou seznamu funkcí podle využití procesoru, určení funkcí, které pracujeme na maximum a pak trvá bližší pohled na každé z nich.
+Analýzu dat doporučujeme začít tím, že zkontrolujete seznam funkcí na kartě Využití procesoru. Zjistěte nejaktivnější funkce a pak se na každou z nich podívejte podrobněji.
 
-1. V seznamu funkce zkontrolujte funkce, které pracujeme na maximum.
+1. V seznamu funkcí se podívejte, jaké funkce vykonávají většinu práce.
 
      ![Diagnostické nástroje karta využití procesoru](../profiling/media/quickstart-cpu-usage-cpu-aspnet.png)
 
     > [!TIP]
-    > Funkce jsou uvedeny v pořadí od těch, které nejvíce pracuje (nejsou v pořadí volání). Díky tomu můžete rychle zjistit nejdelší spuštěné funkce.
+    > Funkce jsou seřazené od nejvíce pracujících po nejméně pracující (nejsou seřazené podle pořadí, v jakém byly volány). Pomůže vám to rychle identifikovat funkce, které běží nejdéle.
 
 2. V seznamu funkce dvakrát klikněte `MyProfilingApp_MVC.Models.ServerClass::GetNumber` funkce.
 
@@ -213,14 +214,14 @@ Doporučujeme začít analýza dat kontrolou seznamu funkcí podle využití pro
 
     ![Diagnostické nástroje volající volaný – zobrazení](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
-    V tomto zobrazení vybrané funkce se zobrazí v záhlaví a v **aktuální funkce** pole (`ServerClass::GetNumber`, v tomto příkladu). Funkce, která volá funkci current se zobrazí na levé straně v části **volání funkce**, a všechny funkce volá funkci current se zobrazují v **volat funkce** pole na pravé straně. (Můžete vybrat buď použijte ke změně aktuální funkce.)
+    V tomto zobrazení vybrané funkce se zobrazí v záhlaví a v **aktuální funkce** pole (`ServerClass::GetNumber`, v tomto příkladu). Funkce, která volala aktuální funkci, se zobrazí vlevo v části **Volající funkce** a všechny funkce volané aktuální funkcí se zobrazí vpravo v poli **Volané funkce**. (Pokud chcete aktuální funkci změnit, vyberte libovolné pole.)
 
-    Toto zobrazení uvádí celkový čas (ms) a procento celkového aplikaci spuštěnou dobu, po kterou funkce provedlo v návaznosti na Dokončit.
+    V tomto zobrazení vidíte celkový čas (ms) a procento z celkové doby spuštění aplikace, kterou funkce potřebovala k dokončení.
 
-    **Funkce text** také ukazuje celkové množství času (a procentuální hodnotu času) věnovaný tělo funkce bez doby věnovaný volání a funkce s názvem. (V tomto obrázku byly tělo funkce a zbývající čas strávený 2220 mimo 2235 ms (< 20 ms) byl stráven v externí kódu volaného pomocí této funkce). Skutečné hodnoty se liší v závislosti na vašem prostředí.
+    **Tělo funkce** také zobrazuje celkovou dobu (a procento času) spotřebovanou tělem funkce, ale bez doby spotřebované volajícími a volanými funkcemi. (V tomto obrázku byly tělo funkce a zbývající čas strávený 2220 mimo 2235 ms (< 20 ms) byl stráven v externí kódu volaného pomocí této funkce). Skutečné hodnoty se liší v závislosti na vašem prostředí.
 
     > [!TIP]
-    > Vysoce hodnoty v **tělo funkce** může znamenat přetížení v rámci funkce sám sebe.
+    > Vysoké hodnoty v **těle funkce** pravděpodobně znamenají kritické místo výkonu samotné funkce.
 
 ## <a name="next-steps"></a>Další kroky
 

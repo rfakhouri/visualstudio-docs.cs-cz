@@ -11,12 +11,13 @@ manager: crdun
 ms.workload:
 - xamarin
 ms.openlocfilehash: 67d8b2147426a048f2af92b0525fd6c8139b4558
-ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34477602"
 ---
-# <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Vývoj aplikací s nativní uživatelského rozhraní pomocí Xamarinu v sadě Visual Studio
+# <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Vytváření aplikací s nativním uživatelským rozhraním pomocí Xamarinu v sadě Visual Studio
 
 Většina vývojářů, kteří se rozhodnou Xamarinu a C# pro zápis mobilních aplikací a platformy používají Xamarin.Forms. Xamarin.Forms definuje uživatelské rozhraní, která se mapuje na nativní ovládací prvky v iOS, Android a univerzální platformu Windows (UWP). Xamarin.Forms je popsána v článku [další základy vytváření aplikací s Xamarin.Forms v sadě Visual Studio](learn-app-building-basics-with-xamarin-forms-in-visual-studio.md).
 

@@ -33,11 +33,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e2eb30d50be7348802518b7cc1b945aa88a26bd
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ae43c5cab67d79450cea1dc024da98fe25c5375
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34690663"
 ---
 # <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>Postupy: nastavení ladění a vydání konfigurace v sadě Visual Studio
 Projekty Visual Studio mít samostatné verze a konfigurace pro váš program ladění. Jak je určeno, názvy, sestavení ladicí verze pro ladění a vydání verze pro distribuci finální verzi.  
@@ -60,7 +61,7 @@ Můžete změnit konfiguraci sestavení z **sestavení** nabídky panelu nástro
   
      Tento panel nástrojů není k dispozici v edicích Express. Můžete použít **sestavení řešení F6** a **F5 spusťte ladění** položky nabídky zvolte konfigurace.
 
-## <a name="BKMK_symbols_release"></a>Generovat soubory symbolů (.pbd) pro sestavení
+## <a name="BKMK_symbols_release"></a>Generování souborů symbolu (.pdb) pro sestavení
 
 U většiny typů projektu soubory PDB se generují ve výchozím nastavení pro obě ladění a sestavení pro vydání, ale výchozí nastavení se liší v závislosti na typu vaše konkrétní projektu a verzi sady Visual Studio. Můžete nakonfigurovat jestli kompilátor generuje soubory PDB a jaký druh informací ladění zahrnout.
 

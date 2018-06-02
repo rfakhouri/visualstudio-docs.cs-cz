@@ -13,10 +13,11 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: e2115f2f5c23d244d3a8650b46fff1f0f74689ec
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548114"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Zobrazení volající/volaný – data vzorkování paměti .NET
 Zobrazení volající/volaný zobrazí data pro vybrané funkce a její nadřazené a podřízené funkce profilace sledováním využívání paměti .NET. Zobrazení volající/volaný obsahuje tři mřížky.  
@@ -50,7 +51,7 @@ Zobrazení volající/volaný zobrazí data pro vybrané funkce a její nadřaze
 |**Výhradní bajtů**|-Pro aktuální funkci Počet bajtů paměti, které byly přiděleny funkcí v profilaci spustit. Toto číslo nezahrnuje paměti, která byla přidělena funkce, které byly volá funkci aktuální.<br />-Pro volající funkce počet bajtů výhradní aktuální funkce, které byly vygenerovány volání z volající funkce.<br />-Pro funkci volaný, počet bajtů, které byly přiděleny instancemi funkce, které byly vygenerovány volání z aktuální funkce. Počet bajtů, které byly přiděleny podle funkce, které byly volá funkci volaný neobsahuje.|  
 |**% Výhradní bajtů**|Procento všech bajtů paměti, které byly přiděleny v profilaci spuštění, které byly výhradní přidělení této funkce.|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Postupy: přizpůsobení sloupců zobrazení sestavy](../profiling/how-to-customize-report-view-columns.md)   
  [Zobrazení volající/volaný – data instrumentace paměti .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Zobrazení volající/volaný – vzorkování dat](../profiling/caller-callee-view-sampling-data.md)   

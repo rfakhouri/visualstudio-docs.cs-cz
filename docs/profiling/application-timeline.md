@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 8d5eca01cc5a9f910c16685f4aec36cd69f37a94
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691021"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analýza spotřeby prostředků a aktivita vláken uživatelského rozhraní (XAML)
 Použití **časová osa aplikace** profileru najít a opravit interakce aplikace související s problémy s výkonem v aplikacích XAML. Tento nástroj pomáhá zlepšit výkon aplikace XAML tím, že poskytuje podrobný přehled o spotřeby prostředků aplikace. Čas strávený aplikací Příprava rámce uživatelského rozhraní (rozložení a vykreslování), sítě a disku požadavky obsluhy a ve scénářích, jako je spuštění aplikace, načítání stránky, můžete analyzovat a změňte velikost systému Windows.  
@@ -34,10 +35,10 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 5.  Windows 7  
   
 > [!NOTE]
->  Můžete shromažďovat a analyzovat data o využití procesoru a datům o spotřebě energie spolu s **ApplicationTimeline** data. V tématu [spuštění nástroje pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+>  Můžete shromažďovat a analyzovat data o využití procesoru a datům o spotřebě energie spolu s **ApplicationTimeline** data. V tématu [spustit profilování nástroje s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 ## <a name="collect-application-timeline-data"></a>Shromažďování dat časová osa aplikace  
- Profil rychlost reakce aplikace na místním počítači, připojeného zařízení, Visual Studio simulátoru nebo emulátorů nebo vzdáleném zařízení V tématu [spuštění nástroje pro profilaci s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+ Profil rychlost reakce aplikace na místním počítači, připojeného zařízení, Visual Studio simulátoru nebo emulátorů nebo vzdáleném zařízení V tématu [spustit profilování nástroje s nebo bez ladicího programu](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
   
 > [!TIP]
 >  Pokud je to možné spusťte aplikaci přímo v zařízení. Výkon aplikace dodržet v simulátoru, nebo prostřednictvím připojení ke vzdálené ploše nemusí být stejný jako skutečný výkon v zařízení. Na druhé straně shromažďování dat pomocí nástrojů pro vzdálenou Visual Studio nemá vliv data výkonu.  
@@ -51,7 +52,7 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 3.  Vyberte **časová osa aplikace** a pak klikněte na **spustit** v dolní části okna.  
   
     > [!NOTE]
-    >  Může se zobrazit okno Řízení uživatelských účtů vyžaduje vaše oprávnění ke spuštění VsEtwCollector.exe. Klikněte na tlačítko **Ano**.  
+    >  Může se zobrazit okno Řízení uživatelských účtů vyžaduje vaše oprávnění ke spuštění *VsEtwCollector.exe*. Klikněte na tlačítko **Ano**.  
   
 4.  Spusťte tento scénář vás zajímá profilace ve vaší aplikaci ke shromažďování dat výkonu.  
   
@@ -96,7 +97,7 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 |||  
 |-|-|  
 |**Analýza**|Čas strávený analýzy soubory XAML a vytváření objektů.<br /><br /> Rozšiřování **Parsing** uzlu v **časová osa podrobnosti** zobrazí řetězec závislostí všechny soubory XAML, které byly analyzovat v důsledku události kořenové. To vám umožní identifikovat nepotřebných souborů analýzy a objekt vytvoření ve scénářích citlivé výkonu a optimalizovat je.|  
-|**Rozložení**|V velké aplikace může být uvedené na obrazovce tisíce elementy ve stejnou dobu. To může způsobit nízkou obnovovací frekvence uživatelského rozhraní a odezvu odpovídajícím způsobem nízký aplikací. Událost rozložení přesně určuje náklady rozložení jednotlivých prvků (tj. čas věnovaný uspořádat, míry, ApplyTemplate, ArrangeOverride a ArrangeOverride) a vytvoří visual stromy, které trvalo část při průchodu rozložení. Tuto vizualizaci můžete použít k určení, které vaše logické stromy, chcete-li vyřadit nebo vyhodnotit jiným mechanismem odložení za účelem optimalizace vaší průchodu rozložení.|  
+|**Rozložení**|V velké aplikace může být uvedené na obrazovce tisíce elementy ve stejnou dobu. To může způsobit nízkou obnovovací frekvence uživatelského rozhraní a odezvu odpovídajícím způsobem nízký aplikací. Událost rozložení přesně určuje náklady rozložení jednotlivých prvků (tedy časem stráveným uspořádat, míry, ApplyTemplate, ArrangeOverride a ArrangeOverride) a vytvoří visual stromy, které trvalo část při průchodu rozložení. Tuto vizualizaci můžete použít k určení, které vaše logické stromy, chcete-li vyřadit nebo vyhodnotit jiným mechanismem odložení za účelem optimalizace vaší průchodu rozložení.|  
 |**Vykreslení**|Čas strávený vykreslení elementů XAML na obrazovku.|  
 |**I / 0**|Čas strávený načítání dat z místního disku nebo síťovým prostředkům, které jsou přístupné prostřednictvím [Microsoft Windows Internet (WinINet) rozhraní API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx).|  
 |**Kód aplikace**|Čas strávený provádění kódu aplikace (uživatel), která nesouvisí se analýza nebo rozložení.|  
@@ -115,7 +116,7 @@ Použití **časová osa aplikace** profileru najít a opravit interakce aplikac
 |![Seznam filtrů časová osa podrobnosti](../profiling/media/timeline_filter.png "TIMELINE_Filter")|Filtruje seznam podle vybraných kategorií a délka události.|  
 |![Upravit podrobnosti informací časová osa](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|Umožňuje zadat poznámky k událostem.|  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:  
  [Blog týmu WPF: nástroj pro analýzu výkonu nové uživatelské rozhraní pro aplikace WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [Osvědčené postupy z hlediska výkonu pro aplikace UWP pomocí C++, C# a Visual Basic](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Optimalizace výkonu aplikace WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  

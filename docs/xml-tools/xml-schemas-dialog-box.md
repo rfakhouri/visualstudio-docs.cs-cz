@@ -1,5 +1,5 @@
 ---
-title: Dialogové okno schémat XML
+title: Dialogové okno Schémata XML
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-xml-tools
@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeea4b015cf728b2b6b40375ce87bcd3c1dd2b89
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5357f762d2a7027db92ad1916acb279abdf23157
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34693637"
 ---
 # <a name="xml-schemas-dialog-box"></a>Dialogové okno schémat XML
 
@@ -49,8 +50,8 @@ Otevře se **otevřete schématu XSD** dialog, který vám umožní vybrat dalš
 
 Odebere aktuálně vybrané schéma ze sady schématu. Schéma budou odebrány z mezipaměti v paměti schématu, ale není ze systému souborů.
 
-## <a name="see-also"></a>Viz také
+## <a name="see-also"></a>Viz také:
 
 - [Součásti editoru XML](../xml-tools/xml-editor-components.md)
-- [Postupy: Výběr schémat XML pro použití](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
-- [Mezipaměť schémat](../xml-tools/schema-cache.md)
+- [Postupy: Výběr schémat XML používat](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
+- [Mezipaměti schématu](../xml-tools/schema-cache.md)

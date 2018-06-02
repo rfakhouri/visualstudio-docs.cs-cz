@@ -28,18 +28,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 088afa321e5f4026735e88c3068900b0bfc8c07c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 11469e76464cf4177d581705004bf640d71c43a1
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34691476"
 ---
-# <a name="bdc-model-design-tools-overview"></a>Přehled nástrojů pro navrhování modelů služby BDC
+# <a name="bdc-model-design-tools-overview"></a>Přehled nástrojů pro navrhování modelu služby BDC
   Business Data Connectivity (BDC) modelu můžete navrhnout pomocí návrháře BDC **podrobnosti o metodě BDC** okně a **Průzkumník modelu BDC**.  
   
  **Průzkumník modelu BDC** umožňuje procházet modelu, hledání modelu a definovat typ popisovače.  
   
-## <a name="bdc-designer"></a>Návrhář BDC  
+## <a name="bdc-designer"></a>Návrhář BDC
  Návrhář BDC umožňuje definovat entity v modelu a vizuálně uspořádat jejich vztahů s jednu na druhou. Použijte Návrháře BDC k provádění následujících úloh:  
   
 -   Přidání entity do modelu.  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/16/2018
   
  Otevřete návrháře BDC, poklikejte na soubor modelu ve vašem projektu nebo otevřete místní nabídky souboru modelu a potom zvolte **otevřete**. Přidání entity do modelu přetažením nebo kopírování **Entity** z **sada nástrojů** do návrháře. K vytvoření přidružení mezi dvěma entitami, vyberte **přidružení** řídit ve **sada nástrojů**, zvolte první entity a potom vyberte druhý entity.  
   
-## <a name="bdc-method-details-window"></a>Okno podrobností BDC – metoda  
+## <a name="bdc-method-details-window"></a>Okno podrobností BDC – metoda
  Použití **podrobnosti o metodě BDC** okno Definovat parametry, instance, a filtrovat popisovačů metody.  
   
  Můžete rychle vytvořit metody vyhledávací, specifická metoda Finder, Creator, aktualizační a metoda odstranění v **podrobnosti o metodě BDC** okno. Při generování těchto metod, Visual Studio přidá metadata, například parametry, instancí a typ popisovače metodě. Tato metadata pro uspokojení konkrétní scénář, můžete upravit.  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
  Rozbalit nebo sbalit uzly v **podrobnosti o metodě BDC** okno Definovat parametry, instance, a filtrovat popisovače. Použití **Průzkumník modelu BDC** zadat typ popisovače.  
   
-## <a name="bdc-explorer"></a>Průzkumník modelu BDC  
+## <a name="bdc-explorer"></a>Průzkumník modelu BDC
  **Průzkumník modelu BDC** zobrazí prvky, které tvoří modelu. Chcete-li otevřít **Průzkumník modelu BDC**, na řádku nabídek zvolte **zobrazení**, **ostatní okna**, **Průzkumník modelu BDC**. Chcete-li procházet modelu, rozbalte uzly v **Průzkumník modelu BDC**. Každý uzel reprezentuje element v souboru XML souboru modelu.  
   
  Jako zvolte uzly v **Průzkumník modelu BDC**, vlastnosti každého uzlu, který zvolíte, se zobrazí v **vlastnosti** okno. Mnoho z těchto vlastností odpovídají atributy v souboru modelu. Pomocí vyhledávacího pole v horní části lze vyhledat modelu **Průzkumník modelu BDC**.  
@@ -69,7 +70,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]  
 >  **Průzkumník modelu BDC** není zobrazit identifikátory, vlastní vlastnosti, lokalizované řetězce, přidružení skupiny, akce, deskriptory filtrů, seznamy řízení akce a výchozí hodnoty parametrů.  
   
-### <a name="defining-type-descriptors"></a>Definování popisovače typu  
+### <a name="define-type-descriptors"></a>Zadejte typ popisovače
  Použití **Průzkumník modelu BDC** zadat typ popisovače. Průzkumník modelu BDC umožňuje definovat popisovač typu jednou a potom budou používat tento popisovač typu jinde v modelu. K tomu, popisovač typu zkopírujte a vložte jej do druhý parametr nebo zadejte popisovač.  
   
 > [!NOTE]  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/16/2018
   
  Další informace najdete v tématu [postupy: definování deskriptoru typu pro parametr](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).  
   
-## <a name="see-also"></a>Viz také  
+## <a name="see-also"></a>Viz také:
  [Postupy: vytvoření modelu služby BDC](../sharepoint/how-to-create-a-bdc-model.md)   
  [Postupy: Přidání Entity do modelu](../sharepoint/how-to-add-an-entity-to-a-model.md)   
  [Postupy: přidání vyhledávací metody](../sharepoint/how-to-add-a-finder-method.md)   
@@ -91,4 +92,4 @@ ms.lasthandoff: 04/16/2018
  [Vytvoření modelu připojení obchodních dat](../sharepoint/creating-a-business-data-connectivity-model.md)   
  [Navrhování modelu připojení obchodních dat](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
-  
+ 
