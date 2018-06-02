@@ -11,12 +11,13 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: f1ed732e33706defed975a3a05986f53081b4337
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: MT
 ms.contentlocale: cs-CZ
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34548177"
 ---
-# <a name="command-line-profiling-tools-reference"></a>Profilování nástroje pro příkazový řádek
+# <a name="command-line-profiling-tools-reference"></a>Referenční dokumentace nástrojů příkazového řádku pro profilaci
 Nástroje příkazového řádku výkonu umožňuje programátorům profilu svých aplikací na příkazovém řádku. Následující příkazový řádek nástrojů pro profilaci umožňují profil kódu na příkazovém řádku.  
   
 ## <a name="in-this-section"></a>V tomto oddílu  
